@@ -95,9 +95,9 @@
     <div class="bs-header">
       <div class="bs-title">Study Desk</div>
       <div class="bs-nav">
-        <button class="bs-btn active" type="button" role="tab" aria-controls="view-reader" aria-selected="true" onclick="switchView('reader',this)">Reader</button>
-        <button class="bs-btn" type="button" role="tab" aria-controls="view-compare" aria-selected="false" onclick="switchView('compare',this)">Compare</button>
-        <button class="bs-btn" type="button" role="tab" aria-controls="view-plan" aria-selected="false" onclick="switchView('plan',this)">Plan</button>
+        <button class="bs-btn active" type="button" aria-controls="view-reader" aria-selected="true" onclick="switchView('reader',this)">Reader</button>
+        <button class="bs-btn" type="button" aria-controls="view-compare" aria-selected="false" onclick="switchView('compare',this)">Compare</button>
+        <button class="bs-btn" type="button" aria-controls="view-plan" aria-selected="false" onclick="switchView('plan',this)">Plan</button>
         <button class="bs-btn" type="button" aria-controls="fsOverlay" onclick="toggleFullscreen()">Fullscreen</button>
       </div>
     </div>
@@ -106,7 +106,7 @@
       <div class="bs-view active" id="view-reader">
         <div class="selector-row">
           <label class="sr-only" for="bookSelect">Bible book</label>
-          <select id="bookSelect" aria-label="Bible book" onchange="loadPassage()">
+          <select id="bookSelect" onchange="loadPassage()">
             <option value="john">John</option>
             <option value="psalms">Psalms</option>
             <option value="romans">Romans</option>
@@ -115,7 +115,7 @@
             <option value="philippians">Philippians</option>
           </select>
           <label class="sr-only" for="chapterSelect">Chapter</label>
-          <select id="chapterSelect" aria-label="Chapter" onchange="loadPassage()">
+          <select id="chapterSelect" onchange="loadPassage()">
             <option>1</option><option>2</option><option>3</option>
           </select>
         </div>
@@ -129,7 +129,7 @@
       <div class="bs-view" id="view-compare">
         <div class="selector-row">
           <label class="sr-only" for="compareBook">Passage to compare</label>
-          <select id="compareBook" aria-label="Passage to compare" onchange="loadCompare()">
+          <select id="compareBook" onchange="loadCompare()">
             <option value="john3">John 3:16-18</option>
             <option value="psalm23">Psalm 23</option>
             <option value="romans8">Romans 8:28-30</option>
@@ -217,6 +217,8 @@
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="foot-grid">
     <div>
@@ -248,8 +250,6 @@
     <span>Last updated July 2026</span>
   </div>
 </footer>
-</main>
-
 <div id="tray" aria-hidden="true" role="dialog" aria-labelledby="savedVersesTitle" style="position:fixed;top:0;right:-360px;width:340px;height:100%;background:var(--vellum-card);
   border-left:1px solid var(--line);box-shadow:-8px 0 30px rgba(27,42,68,0.15);transition:right .3s ease;z-index:100;padding:30px 26px;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">

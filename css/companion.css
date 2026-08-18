@@ -73,7 +73,6 @@
     vertical-align:super;margin-right:4px;font-weight:600;
     cursor:pointer;font-family:'Inter',sans-serif;
     transition:background .15s;padding:1px 3px;border-radius:2px;
-    font-family:'Inter',sans-serif;
   }
   .reader-passage .vnum:hover{color:var(--gold);background:rgba(184,134,43,0.1);}
   .reader-passage .vnum.highlighted{background:var(--highlight);}
