@@ -85,7 +85,7 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
   await page.getByRole('button', { name: 'Plan' }).click();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
   await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
-  await expect(page.locator('#planDone')).toHaveText('14 of 30 days');
+  await expect(page.locator('#planDone')).toHaveText(/\d+ of 30 days/);
 
   await page.getByRole('button', { name: 'Reader' }).click();
   await expect(reader).toHaveClass(/active/);

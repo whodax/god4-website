@@ -30,5 +30,5 @@ for (const file of javascript) {
   }
 }
 
-console.log(`Validated ${references.length} local and external asset references.`);
+console.log(`Parsed ${references.length} asset reference(s); checked local files for existence.`);
 console.log(`Checked JavaScript syntax for ${javascript.length} file(s).`);
