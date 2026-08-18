@@ -25,7 +25,7 @@ for (const file of javascript) {
   try {
     cp.execFileSync(process.execPath, ['--check', file], { stdio: 'pipe' });
   } catch (error) {
-    console.error(`JavaScript syntax error in ${path.relative(root, file)}\n${error.stderr}`);
+    console.error(`JavaScript syntax error in ${path.relative(root, file)}\n${error.stderr.toString()}`);
     process.exit(1);
   }
 }

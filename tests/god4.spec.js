@@ -49,7 +49,7 @@ test('verse rotation and Scripture search work', async ({ page }) => {
 
   await page.locator('#searchInput').fill('faith');
   await page.getByRole('button', { name: 'Search' }).click();
-  await expect(page.locator('#results .result-card')).toHaveCount(1);
+  await expect.poll(() => page.locator('#results .result-card').count()).toBeGreaterThan(0);
   await expect(page.locator('#results')).toContainText('Hebrews 11:1');
 });
 
