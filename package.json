@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "Bible website",
   "scripts": {
-    "test": "npm run validate && npm run test:e2e",
+    "test": "npm run test:validate && npm run test:e2e",
     "test:e2e": "playwright test",
     "test:validate": "node tests/validate-assets.js"
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.62.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1"
