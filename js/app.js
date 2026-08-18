@@ -111,6 +111,12 @@ function toggleTray(){
   tray.style.right = trayOpen ? '0' : '-360px';
   tray.setAttribute('aria-hidden', trayOpen ? 'false' : 'true');
   if(savedPill) savedPill.setAttribute('aria-expanded', trayOpen ? 'true' : 'false');
+  if(trayOpen){
+    var closeButton = tray.querySelector('button');
+    if(closeButton) closeButton.focus();
+  } else if(savedPill){
+    savedPill.focus();
+  }
 }
 
 /* ===== INIT ===== */

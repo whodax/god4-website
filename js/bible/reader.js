@@ -8,9 +8,9 @@ function switchView(view, btn){
   if(!target || !btn) return;
   target.classList.add('active');
   document.querySelectorAll('.bs-btn').forEach(function(b){ b.classList.remove('active'); });
-  document.querySelectorAll('.bs-btn').forEach(function(b){ b.setAttribute('aria-selected', 'false'); });
+  document.querySelectorAll('.bs-btn[aria-pressed]').forEach(function(b){ b.setAttribute('aria-pressed', 'false'); });
   btn.classList.add('active');
-  btn.setAttribute('aria-selected', 'true');
+  btn.setAttribute('aria-pressed', 'true');
 }
 
 function populateChapters(){
