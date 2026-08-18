@@ -1,0 +1,10 @@
+  body{
+    margin:0;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(184,134,43,0.16), transparent 60%),
+      var(--vellum);
+    color:var(--ink);
+    font-family:'EB Garamond', serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
