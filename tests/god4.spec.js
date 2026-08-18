@@ -36,7 +36,7 @@ test('hero verse can be saved, unsaved, and shown in the saved-verses tray', asy
   await expect(page.locator('#tray')).toHaveCSS('right', '0px');
   await expect(page.locator('#trayList')).toContainText('John 3:16');
 
-  await page.locator('#tray button').first().click();
+  await page.locator('#tray button[onclick="toggleTray()"]').click();
   await saveButton.click();
   await expect(page.locator('#savedCount')).toHaveText('0');
 });
