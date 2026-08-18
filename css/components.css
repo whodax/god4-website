@@ -1,0 +1,104 @@
+  .saved-pill{
+    font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.05em;
+    display:flex;align-items:center;gap:6px;
+    background:var(--ink);color:var(--vellum-card);
+    padding:7px 14px;border-radius:20px;cursor:pointer;border:none;
+  }
+  .btn-primary, .btn-secondary{
+    font-family:'Inter',sans-serif;font-size:13px;letter-spacing:0.04em;
+    padding:14px 26px;border-radius:2px;text-decoration:none;cursor:pointer;
+    display:inline-flex;align-items:center;gap:8px;transition:.2s;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--ink);color:var(--vellum-card);}
+  .btn-primary:hover{background:var(--oxblood);}
+  .btn-secondary{border-color:var(--ink);color:var(--ink);}
+  .btn-secondary:hover{border-color:var(--oxblood);color:var(--oxblood);}
+
+  .leaf-wrap{position:relative;}
+  .leaf{
+    background:var(--vellum-card);
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+    padding:44px 38px 34px;
+    position:relative;
+    min-height:290px;
+    transition:opacity .5s ease;
+  }
+  .leaf::before, .leaf::after{
+    content:"";position:absolute;width:26px;height:26px;
+    border-top:2px solid var(--gold);border-left:2px solid var(--gold);
+    top:12px;left:12px;
+  }
+  .leaf::after{
+    top:auto;left:auto;bottom:12px;right:12px;
+    border:none;border-bottom:2px solid var(--gold);border-right:2px solid var(--gold);
+  }
+  .dropcap{
+    float:left;font-family:'Cormorant Garamond',serif;font-size:64px;line-height:0.8;
+    font-weight:600;color:var(--oxblood);padding:6px 10px 0 0;
+  }
+  .verse-text{font-size:21px;line-height:1.55;font-style:italic;color:var(--ink);}
+  .verse-ref{
+    display:block;margin-top:18px;text-align:right;
+    font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .leaf-controls{
+    display:flex;justify-content:space-between;align-items:center;
+    margin-top:16px;
+  }
+  .refresh-btn{
+    font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.05em;
+    background:none;border:none;color:var(--ink-soft);cursor:pointer;
+    display:flex;align-items:center;gap:6px;padding:0;
+  }
+  .refresh-btn:hover{color:var(--oxblood);}
+  .fav-btn{
+    background:none;border:none;cursor:pointer;font-size:20px;color:var(--gold);
+    transition:transform .15s;
+  }
+  .fav-btn:hover{transform:scale(1.15);}
+  .fav-btn.active{color:var(--oxblood);}
+  .search-box{
+    display:flex;gap:0;border:1px solid var(--ink);background:var(--vellum-card);
+    max-width:560px;
+  }
+  .search-box input{
+    flex:1;border:none;background:none;padding:15px 18px;
+    font-family:'EB Garamond',serif;font-size:17px;color:var(--ink);outline:none;
+  }
+  .search-box button{
+    background:var(--ink);color:var(--vellum-card);border:none;padding:0 24px;
+    font-family:'Inter',sans-serif;font-size:13px;cursor:pointer;
+  }
+  .search-box button:hover{background:var(--oxblood);}
+  .search-hint{font-family:'Inter',sans-serif;font-size:12px;color:var(--ink-soft);opacity:.7;margin-top:10px;}
+  .results{margin-top:24px;display:grid;gap:14px;}
+  .result-card{
+    background:var(--vellum-card);border:1px solid var(--line);padding:18px 22px;
+    display:flex;justify-content:space-between;align-items:flex-start;gap:20px;
+    opacity:0;transform:translateY(6px);animation:rise .4s forwards;
+  }
+  @keyframes rise{to{opacity:1;transform:translateY(0);}}
+  .result-card .txt{font-size:17px;font-style:italic;line-height:1.5;}
+  .result-card .ref{font-family:'Inter',sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;margin-top:3px;}
+  .result-card .fav-btn{font-size:17px;}
+  .no-results{color:var(--ink-soft);font-style:italic;padding:14px 0;}
+  .res-card{
+    background:var(--vellum-card);padding:26px 24px;
+    display:flex;gap:16px;align-items:flex-start;
+    text-decoration:none;color:var(--ink);
+    transition:.2s;
+  }
+  .res-card:hover{background:#fff9ea;}
+  .res-badge{
+    width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--vellum-card);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    font-family:'Cormorant Garamond',serif;font-weight:600;font-size:17px;
+  }
+  .res-card h3{margin:0 0 5px;font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;}
+  .res-card p{margin:0;font-size:14px;color:var(--ink-soft);line-height:1.4;}
+  .res-tag{
+    display:inline-block;margin-top:8px;font-family:'Inter',sans-serif;font-size:10px;
+    letter-spacing:.06em;text-transform:uppercase;color:var(--gold);
+  }

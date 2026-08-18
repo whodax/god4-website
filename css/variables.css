@@ -1,0 +1,13 @@
+  :root{
+    --ink:#1B2A44;
+    --ink-soft:#33456A;
+    --vellum:#EDE3C8;
+    --vellum-card:#F7F1DE;
+    --gold:#B8862B;
+    --gold-bright:#D4A13C;
+    --oxblood:#7A2E2E;
+    --line:rgba(27,42,68,0.16);
+    --shadow: 0 10px 30px rgba(27,42,68,0.12);
+    --verse-num:#8B7355;
+    --highlight:#FFF3CD;
+  }
