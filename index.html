@@ -250,11 +250,11 @@
     <span>Last updated July 2026</span>
   </div>
 </footer>
-<div id="tray" aria-hidden="true" role="dialog" aria-labelledby="savedVersesTitle" style="position:fixed;top:0;right:-360px;width:340px;height:100%;background:var(--vellum-card);
+<div id="tray" aria-hidden="true" aria-modal="true" role="dialog" aria-labelledby="savedVersesTitle" style="position:fixed;top:0;right:-360px;width:340px;height:100%;background:var(--vellum-card);
   border-left:1px solid var(--line);box-shadow:-8px 0 30px rgba(27,42,68,0.15);transition:right .3s ease;z-index:100;padding:30px 26px;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
     <h3 id="savedVersesTitle" style="font-family:'Cormorant Garamond',serif;font-size:20px;margin:0;">Saved Verses</h3>
-    <button type="button" aria-label="Close saved verses" onclick="toggleTray()" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--ink-soft);">✕</button>
+    <button id="closeTray" type="button" aria-label="Close saved verses" onclick="toggleTray()" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--ink-soft);">✕</button>
   </div>
   <div id="trayList" style="display:flex;flex-direction:column;gap:14px;"></div>
   <p id="trayEmpty" style="color:var(--ink-soft);font-style:italic;font-size:14px;">Tap the ♡ on any verse to save it here — no account needed.</p>
