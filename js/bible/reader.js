@@ -73,7 +73,10 @@ function highlightVerse(el){
 
 function toggleFullscreen(){
   var overlay = document.getElementById('fsOverlay');
+  var fullscreenButton = document.querySelector('.bs-btn[aria-pressed]');
   if(!overlay) return;
   overlay.classList.toggle('active');
-  overlay.setAttribute('aria-hidden', overlay.classList.contains('active') ? 'false' : 'true');
+  var isActive = overlay.classList.contains('active');
+  overlay.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+  if(fullscreenButton) fullscreenButton.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 }
