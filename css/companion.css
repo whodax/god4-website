@@ -68,10 +68,12 @@
   }
   .reader-passage p{margin-bottom:14px;text-indent:0;}
   .reader-passage .vnum{
+    background:none;border:0;
     color:var(--verse-num);font-size:11px;
     vertical-align:super;margin-right:4px;font-weight:600;
     cursor:pointer;font-family:'Inter',sans-serif;
     transition:background .15s;padding:1px 3px;border-radius:2px;
+    font-family:'Inter',sans-serif;
   }
   .reader-passage .vnum:hover{color:var(--gold);background:rgba(184,134,43,0.1);}
   .reader-passage .vnum.highlighted{background:var(--highlight);}
@@ -142,6 +144,8 @@
     max-width:520px;margin:0 auto;
   }
   .plan-day{
+    font:inherit;color:inherit;text-align:center;
+    border-style:solid;
     aspect-ratio:1;border-radius:2px;border:1px solid var(--line);
     display:flex;flex-direction:column;align-items:center;justify-content:center;
     cursor:pointer;transition:all .2s;
