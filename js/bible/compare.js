@@ -100,6 +100,10 @@ const compareData = {
     ]
   }
 };
+
+let leftTrans = 'niv';
+let rightTrans = 'esv';
+
 function loadCompare(){
   var key = document.getElementById('compareBook').value;
   var data = compareData[key];

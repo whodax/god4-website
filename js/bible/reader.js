@@ -1,8 +1,6 @@
 /* ===== SCRIPTURE COMPANION STATE & FUNCTIONS ===== */
 let currentBook = 'john';
 let currentChapter = 1;
-let leftTrans = 'niv';
-let rightTrans = 'esv';
 
 function switchView(view, btn){
   document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
