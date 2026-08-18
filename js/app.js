@@ -17,12 +17,18 @@ let saved = [];
 
 function renderLeaf(){
   const v = verses[idx];
+  const dropcap = document.getElementById('dropcap');
+  const verseText = document.getElementById('verseText');
+  const verseRef = document.getElementById('verseRef');
+  const heroFav = document.getElementById('heroFav');
+  if(!v || !dropcap || !verseText || !verseRef || !heroFav) return;
   const first = v.text.charAt(0);
-  document.getElementById('dropcap').textContent = first;
-  document.getElementById('verseText').textContent = v.text.slice(1);
-  document.getElementById('verseRef').textContent = v.ref;
-  document.getElementById('heroFav').classList.toggle('active', isSaved(v.ref));
-  document.getElementById('heroFav').textContent = isSaved(v.ref) ? '♥' : '♡';
+  dropcap.textContent = first;
+  verseText.textContent = v.text.slice(1);
+  verseRef.textContent = v.ref;
+  heroFav.classList.toggle('active', isSaved(v.ref));
+  heroFav.textContent = isSaved(v.ref) ? '♥' : '♡';
+  heroFav.setAttribute('aria-pressed', isSaved(v.ref) ? 'true' : 'false');
 }
 
 function nextVerse(){
@@ -43,12 +49,14 @@ function toggleFav(ref, text, btnEl){
   } else {
     saved.push({ref:ref, text:text});
   }
-  document.getElementById('savedCount').textContent = saved.length;
+  var savedCount = document.getElementById('savedCount');
+  if(savedCount) savedCount.textContent = saved.length;
   renderTray();
   renderLeaf();
   if(btnEl){
     btnEl.classList.toggle('active');
     btnEl.textContent = isSaved(ref) ? '♥' : '♡';
+    btnEl.setAttribute('aria-pressed', isSaved(ref) ? 'true' : 'false');
   }
 }
 
@@ -97,14 +105,25 @@ function renderTray(){
 var trayOpen = false;
 function toggleTray(){
   trayOpen = !trayOpen;
-  document.getElementById('tray').style.right = trayOpen ? '0' : '-360px';
+  var tray = document.getElementById('tray');
+  var savedPill = document.querySelector('.saved-pill');
+  if(!tray) return;
+  tray.style.right = trayOpen ? '0' : '-360px';
+  tray.setAttribute('aria-hidden', trayOpen ? 'false' : 'true');
+  if(savedPill) savedPill.setAttribute('aria-expanded', trayOpen ? 'true' : 'false');
+  if(trayOpen){
+    var closeButton = document.getElementById('closeTray');
+    if(closeButton) closeButton.focus();
+  } else if(savedPill){
+    savedPill.focus();
+  }
 }
 
 /* ===== INIT ===== */
 window.addEventListener('DOMContentLoaded', function(){
-  populateChapters();
-  loadPassage();
-  loadCompare();
-  renderPlan();
+  if(typeof populateChapters === 'function') populateChapters();
+  if(typeof loadPassage === 'function') loadPassage();
+  if(typeof loadCompare === 'function') loadCompare();
+  if(typeof renderPlan === 'function') renderPlan();
   renderLeaf();
 });

@@ -105,8 +105,12 @@ let leftTrans = 'niv';
 let rightTrans = 'esv';
 
 function loadCompare(){
-  var key = document.getElementById('compareBook').value;
+  var compareBook = document.getElementById('compareBook');
+  var grid = document.getElementById('compareGrid');
+  if(!compareBook || !grid) return;
+  var key = compareBook.value;
   var data = compareData[key];
+  if(!data) return;
   var translations = {niv:'NIV', esv:'ESV', kjv:'KJV', msg:'The Message'};
   var html = '';
   ['left','right'].forEach(function(side){
@@ -115,7 +119,7 @@ function loadCompare(){
     html += '<div class="compare-col">';
     html += '<div class="compare-col-header">';
     html += '<span>' + translations[transKey] + '</span>';
-    html += '<select onchange="changeTrans(\'' + side + '\', this.value)">';
+    html += '<select aria-label="' + (side === 'left' ? 'Left' : 'Right') + ' translation" onchange="changeTrans(\'' + side + '\', this.value)">';
     html += '<option value="' + transKey + '">' + translations[transKey] + '</option>';
     otherOptions.forEach(function(o){
       html += '<option value="' + o + '">' + translations[o] + '</option>';
@@ -126,7 +130,7 @@ function loadCompare(){
     }
     html += '</div></div>';
   });
-  document.getElementById('compareGrid').innerHTML = html;
+  grid.innerHTML = html;
 }
 
 function changeTrans(side, val){

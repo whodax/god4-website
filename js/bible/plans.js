@@ -37,10 +37,10 @@ function renderPlan(){
   container.innerHTML = plan.map(function(day){
     if(day.done) doneCount++;
     var cls = day.done ? 'past completed' : (day.d === 8 ? 'today' : 'future');
-    return '<div class="plan-day ' + cls + '" onclick="toggleDay(' + day.d + ')">' +
+    return '<button type="button" class="plan-day ' + cls + '" aria-label="Day ' + day.d + ': ' + day.ref + '" aria-pressed="' + (day.done ? 'true' : 'false') + '" onclick="toggleDay(' + day.d + ')">' +
       '<div class="day-num">' + day.d + '</div>' +
       '<div class="day-ref">' + day.ref + '</div>' +
-      '</div>';
+      '</button>';
   }).join('');
   var pct = Math.round((doneCount / 30) * 100);
   document.getElementById('planFill').style.width = pct + '%';
