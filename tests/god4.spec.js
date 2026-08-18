@@ -1,8 +1,9 @@
 const { test, expect } = require('@playwright/test');
 
-test('homepage and primary navigation load without browser errors', async ({ page }) => {
+test('homepage and primary navigation load without browser errors', async ({ page }, testInfo) => {
   const errors = [];
   const failedLocalRequests = [];
+  const localOrigin = new URL(testInfo.project.use.baseURL).origin;
   page.on('console', (message) => {
     if (message.type() === 'error' && !message.text().includes('Failed to load resource')) {
       errors.push(`console: ${message.text()}`);
@@ -10,7 +11,7 @@ test('homepage and primary navigation load without browser errors', async ({ pag
   });
   page.on('pageerror', (error) => errors.push(`page: ${error.message}`));
   page.on('requestfailed', (request) => {
-    if (request.url().startsWith('http://127.0.0.1:4173/')) {
+    if (request.url().startsWith(`${localOrigin}/`)) {
       failedLocalRequests.push(`${request.url()}: ${request.failure().errorText}`);
     }
   });

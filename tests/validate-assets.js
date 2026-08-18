@@ -19,6 +19,7 @@ if (missing.length) {
 }
 
 const javascript = references
+  .filter((reference) => !external.test(reference))
   .filter((reference) => /\.js$/i.test(reference))
   .map((reference) => path.join(root, reference));
 for (const file of javascript) {
