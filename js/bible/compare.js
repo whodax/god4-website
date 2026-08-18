@@ -117,7 +117,7 @@ function loadCompare(){
     html += '<span>' + translations[transKey] + '</span>';
     html += '<select onchange="changeTrans(\'' + side + '\', this.value)">';
     html += '<option value="' + transKey + '">' + translations[transKey] + '</option>';
-       otherOptions.forEach(function(o){
+    otherOptions.forEach(function(o){
       html += '<option value="' + o + '">' + translations[o] + '</option>';
     });
     html += '</select></div><div class="compare-text">';
