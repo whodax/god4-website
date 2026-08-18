@@ -80,3 +80,13 @@
     margin-top:40px;padding-top:20px;border-top:1px solid var(--line);
     display:flex;justify-content:space-between;font-family:'Inter',sans-serif;font-size:12px;color:var(--ink-soft);
   }
+
+  @media (max-width:860px){
+    nav{padding:18px 22px;}
+    .navlinks{display:none;}
+    .hero{grid-template-columns:1fr;padding:50px 22px;}
+    .search-section,.resources,footer{padding:0 22px;}
+    .eth-inner{grid-template-columns:1fr;}
+    .ethiopian{padding:48px 22px;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
