@@ -1,7 +1,7 @@
 /* ===== SCRIPTURE COMPANION STATE & FUNCTIONS ===== */
 let currentBook = 'john';
 let currentChapter = 1;
-const currentTranslation = 'demo-local';
+let currentTranslation = 'demo-local';
 
 function escapeHtml(value){
   return String(value).replace(/[&<>"']/g, function(character){
@@ -30,6 +30,35 @@ function populateBooks(){
     option.textContent = book.name;
     bookSelect.appendChild(option);
   });
+}
+
+function populateTranslations(){
+  var translationSelect = document.getElementById('readerTranslation');
+  if(!translationSelect || typeof BibleData === 'undefined') return;
+  translationSelect.innerHTML = '';
+  BibleData.listTranslations().forEach(function(translation){
+    var option = document.createElement('option');
+    option.value = translation.id;
+    option.textContent = translation.abbreviation + ' — ' + translation.name;
+    translationSelect.appendChild(option);
+  });
+  translationSelect.value = currentTranslation;
+}
+
+function changeTranslation(translationId){
+  if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return;
+  var bookSelect = document.getElementById('bookSelect');
+  if(bookSelect && bookSelect.value) currentBook = bookSelect.value;
+  currentTranslation = translationId;
+  populateBooks();
+  if(!bookSelect || !BibleData.getChapterCount(currentTranslation, currentBook)){
+    currentBook = BibleData.listBooks(currentTranslation)[0].id;
+    bookSelect.value = currentBook;
+  } else {
+    bookSelect.value = currentBook;
+  }
+  populateChapters();
+  loadPassage();
 }
 
 function populateChapters(){

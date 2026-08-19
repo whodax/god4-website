@@ -1,10 +1,4 @@
-/* ===== BIBLE DATA ACCESS =====
- * The current library is a small local/demo dataset. It is not a complete
- * Bible, and its source and licensing status still require verification.
- *
- * A future provider can implement the same methods for static files, a
- * permitted API, or offline application storage without changing reader code.
- */
+/* ===== BIBLE DATA ACCESS ===== */
 const BibleData = (function createBibleDataAccess(){
   const translations = [{
     id: 'demo-local',
@@ -17,6 +11,17 @@ const BibleData = (function createBibleDataAccess(){
     licensingNotes: 'Do not treat this dataset as public domain or as a complete Bible.',
     offlineAllowed: null,
     provider: 'demo-library'
+  }, {
+    id: 'web',
+    name: 'World English Bible Protestant Edition',
+    abbreviation: 'WEB',
+    language: 'English',
+    source: 'eBible.org — https://ebible.org/engwebp/',
+    copyrightStatus: 'Public domain',
+    attribution: 'World English Bible Protestant Edition (WEBP), eBible.org',
+    licensingNotes: 'The text is public domain. “World English Bible” is a trademark of eBible.org.',
+    offlineAllowed: true,
+    provider: 'web-library'
   }];
 
   function getTranslation(translationId){
@@ -27,8 +32,10 @@ const BibleData = (function createBibleDataAccess(){
 
   function getLibrary(translationId){
     var translation = getTranslation(translationId);
-    if(!translation || translation.provider !== 'demo-library' || typeof library === 'undefined') return null;
-    return library;
+    if(!translation) return null;
+    if(translation.provider === 'demo-library' && typeof library !== 'undefined') return library;
+    if(translation.provider === 'web-library' && typeof webLibrary !== 'undefined') return webLibrary;
+    return null;
   }
 
   function listTranslations(){

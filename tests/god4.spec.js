@@ -62,11 +62,40 @@ test('Bible data interface exposes the current local dataset', async ({ page }) 
     chapterCount: BibleData.getChapterCount('demo-local', 'john'),
     verse: BibleData.getVerse('demo-local', 'john', 1, 1).text
   }))).toEqual({
-    translations: ['demo-local'],
+    translations: ['demo-local', 'web'],
     books: ['john', 'psalms', 'romans', 'genesis', 'matthew', 'philippians'],
     chapterCount: 3,
     verse: 'In the beginning was the Word, and the Word was with God, and the Word was God.'
   });
+});
+
+test('WEB data is complete, attributed, searchable, and selectable', async ({ page }) => {
+  await page.goto('/');
+  expect(await page.evaluate(() => ({
+    metadata: BibleData.listTranslations().find((translation) => translation.id === 'web'),
+    bookCount: BibleData.listBooks('web').length,
+    chapterCount: BibleData.getChapterCount('web', 'john'),
+    verse: BibleData.getVerse('web', 'john', 3, 16).text,
+    searchMatch: BibleData.search('web', 'only born Son').some((match) => match.bookId === 'john' && match.chapter === 3 && match.verse === 16)
+  }))).toMatchObject({
+    metadata: {
+      abbreviation: 'WEB',
+      copyrightStatus: 'Public domain',
+      provider: 'web-library'
+    },
+    bookCount: 66,
+    chapterCount: 21,
+    verse: 'For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal life.',
+    searchMatch: true
+  });
+
+  await page.locator('#readerTranslation').selectOption('web');
+  await expect(page.locator('#readerContent')).toContainText('John 1');
+  await expect(page.locator('#readerContent')).toContainText('In the beginning was the Word');
+
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareGrid select').first().selectOption('web');
+  await expect(page.locator('#compareGrid .compare-col').first()).toContainText('For God so loved the world');
 });
 
 test('reader controls, highlighting, fullscreen, compare, and plan views work', async ({ page }) => {

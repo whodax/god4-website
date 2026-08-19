@@ -104,6 +104,25 @@ const compareData = {
 let leftTrans = 'niv';
 let rightTrans = 'esv';
 
+const webComparePassages = {
+  john3: { book: 'john', chapter: 3, start: 16, end: 18 },
+  psalm23: { book: 'psalms', chapter: 23, start: 1, end: 6 },
+  romans8: { book: 'romans', chapter: 8, start: 28, end: 30 },
+  phil4: { book: 'philippians', chapter: 4, start: 6, end: 7 }
+};
+
+function getCompareVerses(translationId, passageKey, data){
+  if(translationId !== 'web') return data[translationId];
+  var passage = webComparePassages[passageKey];
+  if(!passage || typeof BibleData === 'undefined') return [];
+  var verses = [];
+  for(var verseNumber = passage.start; verseNumber <= passage.end; verseNumber++){
+    var verse = BibleData.getVerse('web', passage.book, passage.chapter, verseNumber);
+    if(verse) verses.push(verse.text);
+  }
+  return verses;
+}
+
 function loadCompare(){
   var compareBook = document.getElementById('compareBook');
   var grid = document.getElementById('compareGrid');
@@ -111,7 +130,7 @@ function loadCompare(){
   var key = compareBook.value;
   var data = compareData[key];
   if(!data) return;
-  var translations = {niv:'NIV', esv:'ESV', kjv:'KJV', msg:'The Message'};
+  var translations = {niv:'NIV', esv:'ESV', kjv:'KJV', msg:'The Message', web:'WEB'};
   var html = '';
   ['left','right'].forEach(function(side){
     var transKey = side === 'left' ? leftTrans : rightTrans;
@@ -125,8 +144,9 @@ function loadCompare(){
       html += '<option value="' + o + '">' + translations[o] + '</option>';
     });
     html += '</select></div><div class="compare-text">';
-    for(var i = 0; i < data[transKey].length; i++){
-      html += '<p><span class="vnum">' + (i+1) + '</span>' + data[transKey][i] + '</p>';
+    var verses = getCompareVerses(transKey, key, data);
+    for(var i = 0; i < verses.length; i++){
+      html += '<p><span class="vnum">' + (i+1) + '</span>' + verses[i] + '</p>';
     }
     html += '</div></div>';
   });

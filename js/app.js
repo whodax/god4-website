@@ -121,6 +121,7 @@ function toggleTray(){
 
 /* ===== INIT ===== */
 window.addEventListener('DOMContentLoaded', function(){
+  if(typeof populateTranslations === 'function') populateTranslations();
   if(typeof populateBooks === 'function') populateBooks();
   if(typeof populateChapters === 'function') populateChapters();
   if(typeof loadPassage === 'function') loadPassage();

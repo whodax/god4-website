@@ -105,6 +105,8 @@
       <!-- READER -->
       <div class="bs-view active" id="view-reader">
         <div class="selector-row">
+          <label class="sr-only" for="readerTranslation">Bible translation</label>
+          <select id="readerTranslation" onchange="changeTranslation(this.value)"></select>
           <label class="sr-only" for="bookSelect">Bible book</label>
           <select id="bookSelect" onchange="loadPassage()">
             <option value="john">John</option>
@@ -262,6 +264,7 @@
 
 <noscript><p class="noscript-message">GOD4.us requires JavaScript for the interactive reader, search, and saved verses.</p></noscript>
 <script defer src="js/bible/library.js"></script>
+<script defer src="js/bible/web.js"></script>
 <script defer src="js/bible/data.js"></script>
 <script defer src="js/bible/reader.js"></script>
 <script defer src="js/bible/compare.js"></script>

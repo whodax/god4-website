@@ -29,9 +29,18 @@ treated as the current local/demo dataset only; it is not a complete Bible.
 The repository does not document its original source, copyright status, or
 permission for reuse, so those details remain unknown and require verification.
 
-Future legally permitted translations can be connected through the same data
-interface from local static files, an approved Bible API, or offline storage.
-No new provider or complete Bible import is included in this step.
+## Phase 2, Step 2: World English Bible
+
+The World English Bible Protestant Edition (WEBP, `engwebp`) is included as a
+complete 66-book local dataset in `js/bible/web.js`. It was generated from the
+official eBible.org HTML archive at https://ebible.org/engwebp/. The WEB text is
+public domain; “World English Bible” is a trademark of eBible.org, so the
+application preserves the source and attribution metadata in `js/bible/data.js`.
+
+WEB is registered alongside the legacy demo provider and supports the same
+book, chapter, verse, and search methods. It is available in the Reader and
+Compare translation selectors. The existing demo and legacy comparison data
+remain in place for compatibility.
 
 ## Phase 1 foundation and workflow
 
