@@ -49,12 +49,13 @@ const BibleData = (function createBibleDataAccess(){
 
   function getChapter(translationId, bookId, chapterNumber){
     var source = getLibrary(translationId);
-    var chapter = source && source[bookId] && source[bookId][chapterNumber];
+    var chapterKey = Number(chapterNumber);
+    var chapter = source && source[bookId] && source[bookId][chapterKey];
     if(!chapter) return null;
     return {
       bookId: bookId,
       bookName: source[bookId].name,
-      chapter: Number(chapterNumber),
+      chapter: chapterKey,
       title: chapter.title,
       subtitle: chapter.subtitle,
       verses: chapter.verses.slice()

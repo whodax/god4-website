@@ -54,7 +54,7 @@ test('verse rotation and Scripture search work', async ({ page }) => {
   await expect(page.locator('#results')).toContainText('Hebrews 11:1');
 });
 
-test('reader controls, highlighting, fullscreen, compare, and plan views work', async ({ page }) => {
+test('Bible data interface exposes the current local dataset', async ({ page }) => {
   await page.goto('/');
   expect(await page.evaluate(() => ({
     translations: BibleData.listTranslations().map((translation) => translation.id),
@@ -67,6 +67,10 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
     chapterCount: 3,
     verse: 'In the beginning was the Word, and the Word was with God, and the Word was God.'
   });
+});
+
+test('reader controls, highlighting, fullscreen, compare, and plan views work', async ({ page }) => {
+  await page.goto('/');
   const reader = page.locator('#view-reader');
   await expect(reader).toHaveClass(/active/);
 
