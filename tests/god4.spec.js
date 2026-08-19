@@ -56,6 +56,17 @@ test('verse rotation and Scripture search work', async ({ page }) => {
 
 test('reader controls, highlighting, fullscreen, compare, and plan views work', async ({ page }) => {
   await page.goto('/');
+  expect(await page.evaluate(() => ({
+    translations: BibleData.listTranslations().map((translation) => translation.id),
+    books: BibleData.listBooks('demo-local').map((book) => book.id),
+    chapterCount: BibleData.getChapterCount('demo-local', 'john'),
+    verse: BibleData.getVerse('demo-local', 'john', 1, 1).text
+  }))).toEqual({
+    translations: ['demo-local'],
+    books: ['john', 'psalms', 'romans', 'genesis', 'matthew', 'philippians'],
+    chapterCount: 3,
+    verse: 'In the beginning was the Word, and the Word was with God, and the Word was God.'
+  });
   const reader = page.locator('#view-reader');
   await expect(reader).toHaveClass(/active/);
 
