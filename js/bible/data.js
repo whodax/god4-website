@@ -16,7 +16,7 @@ const BibleData = (function createBibleDataAccess(){
     attribution: 'Not documented in this repository',
     licensingNotes: 'Do not treat this dataset as public domain or as a complete Bible.',
     offlineAllowed: null,
-    provider: 'local'
+    provider: 'demo-library'
   }];
 
   function getTranslation(translationId){
@@ -26,7 +26,8 @@ const BibleData = (function createBibleDataAccess(){
   }
 
   function getLibrary(translationId){
-    if(!getTranslation(translationId) || translationId !== 'demo-local') return null;
+    var translation = getTranslation(translationId);
+    if(!translation || translation.provider !== 'demo-library') return null;
     return library;
   }
 
