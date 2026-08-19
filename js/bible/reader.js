@@ -1,6 +1,13 @@
 /* ===== SCRIPTURE COMPANION STATE & FUNCTIONS ===== */
 let currentBook = 'john';
 let currentChapter = 1;
+const currentTranslation = 'demo-local';
+
+function escapeHtml(value){
+  return String(value).replace(/[&<>"']/g, function(character){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character];
+  });
+}
 
 function switchView(view, btn){
   document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
@@ -13,26 +20,38 @@ function switchView(view, btn){
   btn.setAttribute('aria-pressed', 'true');
 }
 
+function populateBooks(){
+  var bookSelect = document.getElementById('bookSelect');
+  if(!bookSelect || typeof BibleData === 'undefined') return;
+  bookSelect.innerHTML = '';
+  BibleData.listBooks(currentTranslation).forEach(function(book){
+    var option = document.createElement('option');
+    option.value = book.id;
+    option.textContent = book.name;
+    bookSelect.appendChild(option);
+  });
+}
+
 function populateChapters(){
   var bookSelect = document.getElementById('bookSelect');
   var sel = document.getElementById('chapterSelect');
-  if(!bookSelect || !sel || !library[bookSelect.value]) return;
+  if(!bookSelect || !sel || typeof BibleData === 'undefined') return;
   var book = bookSelect.value;
   sel.innerHTML = '';
-  for(var i = 1; i <= library[book].chapters; i++){
+  for(var i = 1; i <= BibleData.getChapterCount(currentTranslation, book); i++){
     sel.innerHTML += '<option>' + i + '</option>';
   }
 }
 
 function renderPassage(bookKey, chapterNum, containerId){
-  if(!library[bookKey] || !library[bookKey][chapterNum]) return;
-  var data = library[bookKey][chapterNum];
-  var bookName = library[bookKey].name;
-  var html = '<h2>' + bookName + ' ' + chapterNum + '</h2>';
-  if(data.subtitle) html += '<div class="subtitle">' + data.subtitle + '</div>';
-  html += '<div style="text-align:center;color:var(--ink-soft);font-size:14px;margin-bottom:20px;font-style:italic;">' + data.title + '</div>';
+  var data = BibleData.getChapter(currentTranslation, bookKey, chapterNum);
+  if(!data) return;
+  var bookName = escapeHtml(data.bookName);
+  var html = '<h2>' + bookName + ' ' + escapeHtml(chapterNum) + '</h2>';
+  if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
+  html += '<div style="text-align:center;color:var(--ink-soft);font-size:14px;margin-bottom:20px;font-style:italic;">' + escapeHtml(data.title) + '</div>';
   for(var i = 0; i < data.verses.length; i++){
-    html += '<button type="button" class="vnum" aria-label="Highlight verse ' + (i+1) + '" onclick="highlightVerse(this)">' + (i+1) + '</button>' + data.verses[i] + ' ';
+    html += '<button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '" onclick="highlightVerse(this)">' + escapeHtml(i+1) + '</button>' + escapeHtml(data.verses[i]) + ' ';
   }
   var container = document.getElementById(containerId);
   var fsTitle = document.getElementById('fsTitle');
@@ -45,10 +64,10 @@ function renderPassage(bookKey, chapterNum, containerId){
 function loadPassage(){
   var bookSelect = document.getElementById('bookSelect');
   var chapterSelect = document.getElementById('chapterSelect');
-  if(!bookSelect || !chapterSelect || !library[bookSelect.value]) return;
+  if(!bookSelect || !chapterSelect || typeof BibleData === 'undefined') return;
   currentBook = bookSelect.value;
   currentChapter = parseInt(chapterSelect.value, 10);
-  if(!library[currentBook][currentChapter]) return;
+  if(!BibleData.getChapter(currentTranslation, currentBook, currentChapter)) return;
   renderPassage(currentBook, currentChapter, 'readerContent');
 }
 
@@ -60,7 +79,7 @@ function prevChapter(){
   }
 }
 function nextChapter(){
-  if(currentChapter < library[currentBook].chapters){
+  if(currentChapter < BibleData.getChapterCount(currentTranslation, currentBook)){
     currentChapter++;
     document.getElementById('chapterSelect').value = currentChapter;
     loadPassage();
