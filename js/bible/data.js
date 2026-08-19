@@ -65,7 +65,7 @@ const BibleData = (function createBibleDataAccess(){
 
   function getVerse(translationId, bookId, chapterNumber, verseNumber){
     var chapter = getChapter(translationId, bookId, chapterNumber);
-    if(!chapter || !chapter.verses[verseNumber - 1]) return null;
+    if(!chapter || verseNumber < 1 || verseNumber > chapter.verses.length) return null;
     return {
       translationId: translationId,
       bookId: bookId,
