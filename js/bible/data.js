@@ -81,7 +81,7 @@ const BibleData = (function createBibleDataAccess(){
     if(!source || !normalizedQuery) return [];
     return listBooks(translationId).reduce(function(matches, book){
       for(var chapterNumber = 1; chapterNumber <= source[book.id].chapters; chapterNumber++){
-        var chapter = getChapter(translationId, book.id, chapterNumber);
+        var chapter = source[book.id][chapterNumber];
         if(!chapter) continue;
         chapter.verses.forEach(function(text, index){
           if(text.toLowerCase().indexOf(normalizedQuery) !== -1){

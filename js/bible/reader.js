@@ -47,11 +47,11 @@ function renderPassage(bookKey, chapterNum, containerId){
   var data = BibleData.getChapter(currentTranslation, bookKey, chapterNum);
   if(!data) return;
   var bookName = escapeHtml(data.bookName);
-  var html = '<h2>' + bookName + ' ' + chapterNum + '</h2>';
+  var html = '<h2>' + bookName + ' ' + escapeHtml(chapterNum) + '</h2>';
   if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
   html += '<div style="text-align:center;color:var(--ink-soft);font-size:14px;margin-bottom:20px;font-style:italic;">' + escapeHtml(data.title) + '</div>';
   for(var i = 0; i < data.verses.length; i++){
-    html += '<button type="button" class="vnum" aria-label="Highlight verse ' + (i+1) + '" onclick="highlightVerse(this)">' + (i+1) + '</button>' + escapeHtml(data.verses[i]) + ' ';
+    html += '<button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '" onclick="highlightVerse(this)">' + escapeHtml(i+1) + '</button>' + escapeHtml(data.verses[i]) + ' ';
   }
   var container = document.getElementById(containerId);
   var fsTitle = document.getElementById('fsTitle');
