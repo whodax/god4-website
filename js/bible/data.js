@@ -27,7 +27,7 @@ const BibleData = (function createBibleDataAccess(){
 
   function getLibrary(translationId){
     var translation = getTranslation(translationId);
-    if(!translation || translation.provider !== 'demo-library') return null;
+    if(!translation || translation.provider !== 'demo-library' || typeof library === 'undefined') return null;
     return library;
   }
 
