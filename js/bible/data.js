@@ -26,7 +26,7 @@ const BibleData = (function createBibleDataAccess(){
   }
 
   function getLibrary(translationId){
-    if(!getTranslation(translationId)) return null;
+    if(translationId !== 'demo-local' || !getTranslation(translationId)) return null;
     return library;
   }
 

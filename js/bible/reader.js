@@ -17,9 +17,13 @@ function switchView(view, btn){
 function populateBooks(){
   var bookSelect = document.getElementById('bookSelect');
   if(!bookSelect || typeof BibleData === 'undefined') return;
-  bookSelect.innerHTML = BibleData.listBooks(currentTranslation).map(function(book){
-    return '<option value="' + book.id + '">' + book.name + '</option>';
-  }).join('');
+  bookSelect.innerHTML = '';
+  BibleData.listBooks(currentTranslation).forEach(function(book){
+    var option = document.createElement('option');
+    option.value = book.id;
+    option.textContent = book.name;
+    bookSelect.appendChild(option);
+  });
 }
 
 function populateChapters(){
