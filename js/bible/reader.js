@@ -2,6 +2,113 @@
 let currentBook = 'john';
 let currentChapter = 1;
 let currentTranslation = 'demo-local';
+let voiceRecognition = null;
+let voiceCommandsListening = false;
+
+function getReaderControls(){
+  return document.querySelectorAll('[data-reader-controls]');
+}
+
+function setVoiceStatus(message){
+  document.querySelectorAll('.voice-status').forEach(function(status){ status.textContent = message; });
+}
+
+function updateReaderControls(){
+  var chapterCount = typeof BibleData === 'undefined' ? 0 : BibleData.getChapterCount(currentTranslation, currentBook);
+  document.querySelectorAll('[data-reader-action="previous"]').forEach(function(button){
+    button.disabled = currentChapter <= 1;
+  });
+  document.querySelectorAll('[data-reader-action="next"]').forEach(function(button){
+    button.disabled = !chapterCount || currentChapter >= chapterCount;
+  });
+}
+
+function setVoiceButtonState(isListening){
+  document.querySelectorAll('[data-voice-command-button]').forEach(function(button){
+    button.setAttribute('aria-pressed', isListening ? 'true' : 'false');
+    button.title = isListening ? 'Stop listening for voice commands' : 'Start voice commands';
+  });
+}
+
+function getReaderText(){
+  var passage = document.getElementById('readerContent');
+  return passage ? passage.innerText : '';
+}
+
+function playReader(){
+  if(!('speechSynthesis' in window)){
+    setVoiceStatus('Read-aloud is not supported in this browser');
+    return;
+  }
+  window.speechSynthesis.cancel();
+  var utterance = new SpeechSynthesisUtterance(getReaderText());
+  utterance.onend = function(){ setVoiceStatus(voiceCommandsListening ? 'Listening...' : 'Voice commands off'); };
+  window.speechSynthesis.speak(utterance);
+}
+
+function pauseReader(){
+  if('speechSynthesis' in window) window.speechSynthesis.pause();
+}
+
+function resumeReader(){
+  if('speechSynthesis' in window) window.speechSynthesis.resume();
+}
+
+function stopReader(){
+  if('speechSynthesis' in window) window.speechSynthesis.cancel();
+}
+
+function getVoiceRecognition(){
+  return window.SpeechRecognition || window.webkitSpeechRecognition;
+}
+
+function handleVoiceCommand(transcript){
+  var command = transcript.toLowerCase().trim();
+  setVoiceStatus('Recognized: ' + transcript);
+  if(/^(play|read)( the passage)?$/.test(command)) playReader();
+  else if(command === 'pause') pauseReader();
+  else if(command === 'resume') resumeReader();
+  else if(command === 'stop') stopReader();
+  else if(command === 'next chapter') nextChapter();
+  else if(command === 'previous chapter') prevChapter();
+  else setVoiceStatus('Unrecognized command: ' + transcript);
+}
+
+function finishVoiceCommands(){
+  voiceCommandsListening = false;
+  setVoiceButtonState(false);
+}
+
+function toggleVoiceCommands(){
+  var Recognition = getVoiceRecognition();
+  if(!Recognition){
+    setVoiceStatus('Voice commands are not supported in this browser');
+    return;
+  }
+  if(voiceCommandsListening){
+    voiceRecognition.stop();
+    return;
+  }
+  if(!voiceRecognition){
+    voiceRecognition = new Recognition();
+    voiceRecognition.continuous = false;
+    voiceRecognition.interimResults = false;
+    voiceRecognition.lang = 'en-US';
+    voiceRecognition.onresult = function(event){
+      handleVoiceCommand(event.results[0][0].transcript);
+    };
+    voiceRecognition.onerror = function(event){
+      var message = event.error === 'not-allowed' ? 'Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.' : 'Voice command error: ' + event.error;
+      setVoiceStatus(message);
+      finishVoiceCommands();
+    };
+    voiceRecognition.onend = finishVoiceCommands;
+  }
+  voiceCommandsListening = true;
+  setVoiceButtonState(true);
+  setVoiceStatus('Listening...');
+  voiceRecognition.start();
+}
 
 function escapeHtml(value){
   return String(value).replace(/[&<>"']/g, function(character){
@@ -99,6 +206,7 @@ function loadPassage(){
   currentChapter = parseInt(chapterSelect.value, 10);
   if(!BibleData.getChapter(currentTranslation, currentBook, currentChapter)) return;
   renderPassage(currentBook, currentChapter, 'readerContent');
+  updateReaderControls();
 }
 
 function readCurrentChapterAloud(){
