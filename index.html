@@ -121,6 +121,12 @@
             <option>1</option><option>2</option><option>3</option>
           </select>
         </div>
+        <div class="reader-audio-controls" role="group" aria-label="Read chapter aloud">
+          <button id="readAloudPlay" type="button" onclick="readCurrentChapterAloud()">Play</button>
+          <button id="readAloudPause" type="button" onclick="pauseResumeReadAloud()">Pause</button>
+          <button id="readAloudStop" type="button" onclick="stopReadAloud()">Stop</button>
+        </div>
+        <div id="readAloudStatus" class="reader-audio-status" role="status" aria-live="polite"></div>
         <div class="reader-passage" id="readerContent"></div>
         <div class="reader-controls">
           <button type="button" onclick="prevChapter()">← Previous</button>
@@ -266,6 +272,7 @@
 <script defer src="js/bible/library.js"></script>
 <script defer src="js/bible/web.js"></script>
 <script defer src="js/bible/data.js"></script>
+<script defer src="js/bible/speech.js"></script>
 <script defer src="js/bible/reader.js"></script>
 <script defer src="js/bible/compare.js"></script>
 <script defer src="js/bible/plans.js"></script>

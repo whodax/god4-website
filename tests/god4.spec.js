@@ -98,6 +98,69 @@ test('WEB data is complete, attributed, searchable, and selectable', async ({ pa
   await expect(page.locator('#compareGrid .compare-col').first()).toContainText('For God so loved the world');
 });
 
+test('reader read-aloud controls speak only chapter verses and manage playback', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [], pauses: 0, resumes: 0, cancels: 0 };
+    const utterance = function(text) {
+      this.text = text;
+    };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: utterance });
+    const synthesis = {
+      speaking: false,
+      paused: false,
+      speak(utterance) {
+        this.speaking = true;
+        this.lastUtterance = utterance;
+        window.__speech.spoken.push(utterance.text);
+      },
+      pause() {
+        this.paused = true;
+        window.__speech.pauses++;
+      },
+      resume() {
+        this.paused = false;
+        window.__speech.resumes++;
+      },
+      cancel() {
+        this.speaking = false;
+        this.paused = false;
+        window.__speech.cancels++;
+      }
+    };
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
+  });
+  await page.goto('/');
+
+  await page.getByRole('button', { name: 'Play' }).click();
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+  expect(await page.evaluate(() => window.__speech.spoken[0])).toBe('In the beginning was the Word, and the Word was with God, and the Word was God.');
+  expect(await page.evaluate(() => window.__speech.spoken[0])).not.toContain('John 1');
+
+  await page.getByRole('button', { name: 'Pause reading aloud' }).click();
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
+  await page.getByRole('button', { name: 'Resume reading aloud' }).click();
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+  await page.getByRole('button', { name: 'Stop' }).click();
+  await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
+
+  await page.getByRole('button', { name: 'Play' }).click();
+  const cancelsBeforeNavigation = await page.evaluate(() => window.__speech.cancels);
+  await page.locator('#chapterSelect').selectOption('2');
+  expect(await page.evaluate(() => window.__speech.cancels)).toBeGreaterThan(cancelsBeforeNavigation);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
+});
+
+test('reader read-aloud controls are disabled when Web Speech API is unavailable', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: undefined });
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: undefined });
+  });
+  await page.goto('/');
+  await expect(page.locator('#readAloudStatus')).toHaveText('Read aloud is unavailable in this browser.');
+  await expect(page.getByRole('button', { name: 'Play' })).toBeDisabled();
+  await expect(page.getByRole('button', { name: 'Stop' })).toBeDisabled();
+});
+
 test('reader controls, highlighting, fullscreen, compare, and plan views work', async ({ page }) => {
   await page.goto('/');
   const reader = page.locator('#view-reader');
