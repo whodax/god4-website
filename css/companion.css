@@ -84,19 +84,23 @@
     margin:0 auto 24px;padding:0 0 12px;border-top:0;border-bottom:1px solid var(--line);
   }
   .reader-controls-top button{padding:7px 14px;font-size:11px;}
-  .reader-controls button{
+  .reader-controls button,.reader-audio-controls button{
     background:var(--vellum);border:1px solid var(--line);
     border-radius:2px;padding:9px 20px;
     font-family:'Inter',sans-serif;font-size:12px;letter-spacing:0.04em;
     cursor:pointer;color:var(--ink-soft);transition:.2s;
   }
-  .reader-controls button:hover{border-color:var(--gold);color:var(--gold);}
+  .reader-controls button:hover,.reader-audio-controls button:hover{border-color:var(--gold);color:var(--gold);}
   .reader-controls button:disabled{cursor:not-allowed;opacity:.45;}
   .reader-controls button:disabled:hover{border-color:var(--line);color:var(--ink-soft);}
   .voice-status{
     color:var(--ink-soft);font-family:'Inter',sans-serif;font-size:11px;
     letter-spacing:0.04em;text-align:center;margin-top:12px;min-height:16px;
   }
+  .reader-audio-controls{display:flex;justify-content:center;gap:8px;margin:0 auto 20px;}
+  .reader-audio-status{flex-basis:100%;text-align:center;color:var(--ink-soft);font:italic 13px 'EB Garamond',serif;}
+  .reader-controls button:disabled,.reader-audio-controls button:disabled{opacity:.5;cursor:not-allowed;}
+  .reader-controls button:disabled:hover,.reader-audio-controls button:disabled:hover{border-color:var(--line);color:var(--ink-soft);}
 
   /* Compare */
   .compare-grid{

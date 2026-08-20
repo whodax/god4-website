@@ -201,11 +201,26 @@ function loadPassage(){
   var bookSelect = document.getElementById('bookSelect');
   var chapterSelect = document.getElementById('chapterSelect');
   if(!bookSelect || !chapterSelect || typeof BibleData === 'undefined') return;
+  if(typeof BibleSpeech !== 'undefined') BibleSpeech.stop();
   currentBook = bookSelect.value;
   currentChapter = parseInt(chapterSelect.value, 10);
   if(!BibleData.getChapter(currentTranslation, currentBook, currentChapter)) return;
   renderPassage(currentBook, currentChapter, 'readerContent');
   updateReaderControls();
+}
+
+function readCurrentChapterAloud(){
+  if(typeof BibleSpeech === 'undefined') return;
+  var chapter = BibleData.getChapter(currentTranslation, currentBook, currentChapter);
+  BibleSpeech.playChapter(chapter);
+}
+
+function pauseResumeReadAloud(){
+  if(typeof BibleSpeech !== 'undefined') BibleSpeech.pauseResume();
+}
+
+function stopReadAloud(){
+  if(typeof BibleSpeech !== 'undefined') BibleSpeech.stop();
 }
 
 function prevChapter(){
