@@ -8,6 +8,7 @@
     "test:validate": "node tests/validate-assets.js"
   },
   "devDependencies": {
-    "@playwright/test": "^1.62.1"
+    "@playwright/test": "^1.62.1",
+    "http-server": "^14.1.1"
   }
 }
