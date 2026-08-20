@@ -107,9 +107,9 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
   await expect(page.locator('#readerContent')).toContainText('Psalms 1');
   await page.locator('#chapterSelect').selectOption('2');
   await expect(page.locator('#readerContent')).toContainText('Psalms 2');
-  await page.getByRole('button', { name: 'Next' }).click();
+  await page.locator('.reader-controls-bottom').getByRole('button', { name: 'Next' }).click();
   await expect(page.locator('#readerContent')).toContainText('Psalms 3');
-  await page.getByRole('button', { name: 'Previous' }).click();
+  await page.locator('.reader-controls-bottom').getByRole('button', { name: 'Previous' }).click();
   await expect(page.locator('#readerContent')).toContainText('Psalms 2');
 
   const verseNumber = page.locator('#readerContent .vnum').first();
@@ -134,4 +134,45 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
 
   await page.getByRole('button', { name: 'Reader' }).click();
   await expect(reader).toHaveClass(/active/);
+});
+
+test('top and bottom Reader controls stay synchronized', async ({ page }) => {
+  await page.goto('/');
+  const topControls = page.locator('.reader-controls-top');
+  const bottomControls = page.locator('.reader-controls-bottom');
+
+  await expect(page.locator('[data-reader-controls]')).toHaveCount(2);
+  await expect(topControls.getByRole('button', { name: 'Previous' })).toBeDisabled();
+  await expect(bottomControls.getByRole('button', { name: 'Previous' })).toBeDisabled();
+  await topControls.getByRole('button', { name: 'Next' }).click();
+  await expect(page.locator('#readerContent')).toContainText('John 2');
+  await expect(topControls.getByRole('button', { name: 'Previous' })).toBeEnabled();
+  await expect(bottomControls.getByRole('button', { name: 'Previous' })).toBeEnabled();
+
+  await page.evaluate(() => {
+    window.SpeechRecognition = function FakeRecognition() {};
+    window.SpeechRecognition.prototype.start = function() {};
+    window.SpeechRecognition.prototype.stop = function() {};
+  });
+  await topControls.getByRole('button', { name: 'Voice Commands' }).click();
+  await expect(topControls.getByRole('button', { name: 'Voice Commands' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(bottomControls.getByRole('button', { name: 'Voice Commands' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Listening...');
+  await expect(page.locator('#voiceStatus')).toHaveText('Listening...');
+});
+
+test('blocked microphone access is reported without breaking the Reader', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => {
+    function FakeRecognition() { window.fakeRecognition = this; }
+    FakeRecognition.prototype.start = function() {};
+    FakeRecognition.prototype.stop = function() {};
+    Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
+    Object.defineProperty(window, 'webkitSpeechRecognition', { configurable: true, value: FakeRecognition });
+  });
+  await page.locator('.reader-controls-top').getByRole('button', { name: 'Voice Commands' }).click();
+  await page.evaluate(() => window.eval("voiceRecognition.onerror({ error: 'not-allowed' })"));
+  await expect(page.locator('#voiceStatus')).toHaveText('Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.');
+  await page.locator('#bookSelect').selectOption('psalms');
+  await expect(page.locator('#readerContent')).toContainText('Psalms 1');
 });
