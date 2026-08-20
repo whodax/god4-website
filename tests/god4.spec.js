@@ -199,6 +199,45 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
   await expect(reader).toHaveClass(/active/);
 });
 
+test('Compare supports passage and independent version changes with aligned verses', async ({ page }) => {
+  const errors = [];
+  page.on('console', (message) => {
+    if (message.type() === 'error' && !message.text().includes('Failed to load resource')) {
+      errors.push(message.text());
+    }
+  });
+  page.on('pageerror', (error) => errors.push(error.message));
+
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('#view-compare')).toHaveClass(/active/);
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+  await expect(page.locator('#compareGrid select')).toHaveCount(2);
+  await expect(page.locator('#compareGrid select').first()).toHaveAccessibleName('Left translation');
+  await expect(page.locator('#compareGrid select').nth(1)).toHaveAccessibleName('Right translation');
+
+  await page.locator('#compareBook').selectOption('romans8');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['28', '29', '30']);
+
+  await page.locator('#compareGrid select').first().selectOption('web');
+  await expect(page.locator('#compareGrid .compare-col').first()).toContainText('all things work together for good');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['28', '29', '30']);
+
+  await page.locator('#compareGrid select').nth(1).selectOption('kjv');
+  await expect(page.locator('#compareGrid .compare-col').nth(1)).toContainText('all things work together for good');
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['28', '29', '30']);
+  expect(errors).toEqual([]);
+});
+
+test('Compare versions stack on smaller screens', async ({ page }) => {
+  await page.setViewportSize({ width: 600, height: 800 });
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect.poll(() => page.locator('#compareGrid').evaluate((grid) => {
+    return getComputedStyle(grid).gridTemplateColumns.trim().split(/\s+/).length;
+  })).toBe(1);
+});
+
 test('top and bottom Reader controls stay synchronized', async ({ page }) => {
   await page.goto('/');
   const topControls = page.locator('.reader-controls-top');

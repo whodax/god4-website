@@ -112,13 +112,15 @@ const webComparePassages = {
 };
 
 function getCompareVerses(translationId, passageKey, data){
-  if(translationId !== 'web') return data[translationId];
   var passage = webComparePassages[passageKey];
+  if(translationId !== 'web') return data[translationId].map(function(text, index){
+    return { number: (passage ? passage.start : 1) + index, text: text };
+  });
   if(!passage || typeof BibleData === 'undefined') return [];
   var verses = [];
   for(var verseNumber = passage.start; verseNumber <= passage.end; verseNumber++){
     var verse = BibleData.getVerse('web', passage.book, passage.chapter, verseNumber);
-    if(verse) verses.push(verse.text);
+    if(verse) verses.push({ number: verse.verse, text: verse.text });
   }
   return verses;
 }
@@ -146,7 +148,7 @@ function loadCompare(){
     html += '</select></div><div class="compare-text">';
     var verses = getCompareVerses(transKey, key, data);
     for(var i = 0; i < verses.length; i++){
-      html += '<p><span class="vnum">' + (i+1) + '</span>' + verses[i] + '</p>';
+      html += '<p><span class="vnum">' + verses[i].number + '</span>' + escapeHtml(verses[i].text) + '</p>';
     }
     html += '</div></div>';
   });
