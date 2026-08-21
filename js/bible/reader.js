@@ -36,26 +36,19 @@ function getReaderText(){
 }
 
 function playReader(){
-  if(!('speechSynthesis' in window)){
-    setVoiceStatus('Read-aloud is not supported in this browser');
-    return;
-  }
-  window.speechSynthesis.cancel();
-  var utterance = new SpeechSynthesisUtterance(getReaderText());
-  utterance.onend = function(){ setVoiceStatus(voiceCommandsListening ? 'Listening...' : 'Voice commands off'); };
-  window.speechSynthesis.speak(utterance);
+  readCurrentChapterAloud();
 }
 
 function pauseReader(){
-  if('speechSynthesis' in window) window.speechSynthesis.pause();
+  pauseResumeReadAloud();
 }
 
 function resumeReader(){
-  if('speechSynthesis' in window) window.speechSynthesis.resume();
+  pauseResumeReadAloud();
 }
 
 function stopReader(){
-  if('speechSynthesis' in window) window.speechSynthesis.cancel();
+  stopReadAloud();
 }
 
 function getVoiceRecognition(){
@@ -187,7 +180,7 @@ function renderPassage(bookKey, chapterNum, containerId){
   if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
   html += '<div style="text-align:center;color:var(--ink-soft);font-size:14px;margin-bottom:20px;font-style:italic;">' + escapeHtml(data.title) + '</div>';
   for(var i = 0; i < data.verses.length; i++){
-    html += '<button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '" onclick="highlightVerse(this)">' + escapeHtml(i+1) + '</button>' + escapeHtml(data.verses[i]) + ' ';
+    html += '<button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '" onclick="highlightVerse(this)">' + escapeHtml(i+1) + '</button>' + escapeHtml(data.verses[i]) + ' <button type="button" class="verse-speak" data-verse-speech="' + escapeHtml(i+1) + '" aria-label="Read verse ' + escapeHtml(i+1) + ' aloud" onclick="readVerseAloud(' + escapeHtml(i+1) + ')">Read aloud</button> ';
   }
   var container = document.getElementById(containerId);
   var fsTitle = document.getElementById('fsTitle');
@@ -213,6 +206,12 @@ function readCurrentChapterAloud(){
   if(typeof BibleSpeech === 'undefined') return;
   var chapter = BibleData.getChapter(currentTranslation, currentBook, currentChapter);
   BibleSpeech.playChapter(chapter);
+}
+
+function readVerseAloud(verseNumber){
+  if(typeof BibleSpeech === 'undefined' || typeof BibleData === 'undefined') return;
+  var verse = BibleData.getVerse(currentTranslation, currentBook, currentChapter, verseNumber);
+  if(verse) BibleSpeech.playVerse(verse.text);
 }
 
 function pauseResumeReadAloud(){

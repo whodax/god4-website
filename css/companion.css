@@ -99,6 +99,10 @@
   }
   .reader-audio-controls{display:flex;justify-content:center;gap:8px;margin:0 auto 20px;}
   .reader-audio-status{flex-basis:100%;text-align:center;color:var(--ink-soft);font:italic 13px 'EB Garamond',serif;}
+  .reader-speech-preferences{display:flex;align-items:center;gap:6px;color:var(--ink-soft);font:11px 'Inter',sans-serif;letter-spacing:.04em;}
+  .reader-speech-preferences select{background:var(--vellum);border:1px solid var(--line);border-radius:2px;color:var(--ink-soft);font:11px 'Inter',sans-serif;padding:7px 22px 7px 7px;}
+  .verse-speak{background:none;border:0;color:var(--ink-soft);font:10px 'Inter',sans-serif;padding:0 3px;cursor:pointer;}
+  .verse-speak:hover{color:var(--gold);}
   .reader-controls button:disabled,.reader-audio-controls button:disabled{opacity:.5;cursor:not-allowed;}
   .reader-controls button:disabled:hover,.reader-audio-controls button:disabled:hover{border-color:var(--line);color:var(--ink-soft);}
 
