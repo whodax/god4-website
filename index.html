@@ -124,9 +124,9 @@
         <div class="reader-controls reader-controls-top" data-reader-controls>
           <button type="button" data-reader-action="previous" onclick="prevChapter()">← Previous</button>
           <button type="button" data-reader-action="next" onclick="nextChapter()">Next →</button>
-          <button type="button" onclick="playReader()">Play</button>
-          <button type="button" onclick="pauseReader()">Pause</button>
-          <button type="button" onclick="stopReader()">Stop</button>
+          <button type="button" aria-label="Play chapter aloud" onclick="playReader()">Play</button>
+          <button type="button" aria-label="Pause chapter aloud" onclick="pauseReader()">Pause</button>
+          <button type="button" aria-label="Stop chapter aloud" onclick="stopReader()">Stop</button>
           <button type="button" data-voice-command-button aria-pressed="false" onclick="toggleVoiceCommands()" title="Start voice commands">Voice Commands</button>
         </div>
         <div class="voice-status" id="voiceStatusTop" role="status" aria-live="polite">Voice commands off</div>
@@ -134,15 +134,33 @@
           <button id="readAloudPlay" type="button" onclick="readCurrentChapterAloud()">Play</button>
           <button id="readAloudPause" type="button" onclick="pauseResumeReadAloud()">Pause</button>
           <button id="readAloudStop" type="button" onclick="stopReadAloud()">Stop</button>
+          <div class="reader-speech-preferences">
+            <label for="readAloudVoice">Voice:</label>
+            <select id="readAloudVoice" onchange="BibleSpeech.setVoice(this.value)">
+              <option value="">Automatic</option>
+            </select>
+            <label for="readAloudSpeed">Speed:</label>
+            <select id="readAloudSpeed" onchange="BibleSpeech.setSpeed(this.value)">
+              <option value="0.5">50%</option>
+              <option value="0.75">75%</option>
+              <option value="1" selected>100%</option>
+              <option value="1.25">125%</option>
+              <option value="1.5">150%</option>
+              <option value="1.75">175%</option>
+              <option value="2">200%</option>
+              <option value="2.25">225%</option>
+              <option value="2.5">250%</option>
+            </select>
+          </div>
         </div>
         <div id="readAloudStatus" class="reader-audio-status" role="status" aria-live="polite"></div>
         <div class="reader-passage" id="readerContent"></div>
         <div class="reader-controls reader-controls-bottom" data-reader-controls>
           <button type="button" data-reader-action="previous" onclick="prevChapter()">← Previous</button>
           <button type="button" data-reader-action="next" onclick="nextChapter()">Next →</button>
-          <button type="button" onclick="playReader()">Play</button>
-          <button type="button" onclick="pauseReader()">Pause</button>
-          <button type="button" onclick="stopReader()">Stop</button>
+          <button type="button" aria-label="Play chapter aloud" onclick="playReader()">Play</button>
+          <button type="button" aria-label="Pause chapter aloud" onclick="pauseReader()">Pause</button>
+          <button type="button" aria-label="Stop chapter aloud" onclick="stopReader()">Stop</button>
           <button type="button" data-voice-command-button aria-pressed="false" onclick="toggleVoiceCommands()" title="Start voice commands">Voice Commands</button>
         </div>
         <div class="voice-status" id="voiceStatus" role="status" aria-live="polite">Voice commands off</div>

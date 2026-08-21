@@ -131,7 +131,7 @@ test('reader read-aloud controls speak only chapter verses and manage playback',
   });
   await page.goto('/');
 
-  await page.getByRole('button', { name: 'Play' }).click();
+  await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
   expect(await page.evaluate(() => window.__speech.spoken[0])).toBe('In the beginning was the Word, and the Word was with God, and the Word was God.');
   expect(await page.evaluate(() => window.__speech.spoken[0])).not.toContain('John 1');
@@ -140,10 +140,10 @@ test('reader read-aloud controls speak only chapter verses and manage playback',
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
   await page.getByRole('button', { name: 'Resume reading aloud' }).click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
-  await page.getByRole('button', { name: 'Stop' }).click();
+  await page.locator('#readAloudStop').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
 
-  await page.getByRole('button', { name: 'Play' }).click();
+  await page.locator('#readAloudPlay').click();
   const cancelsBeforeNavigation = await page.evaluate(() => window.__speech.cancels);
   await page.locator('#chapterSelect').selectOption('2');
   expect(await page.evaluate(() => window.__speech.cancels)).toBeGreaterThan(cancelsBeforeNavigation);
@@ -157,8 +157,105 @@ test('reader read-aloud controls are disabled when Web Speech API is unavailable
   });
   await page.goto('/');
   await expect(page.locator('#readAloudStatus')).toHaveText('Read aloud is unavailable in this browser.');
-  await expect(page.getByRole('button', { name: 'Play' })).toBeDisabled();
-  await expect(page.getByRole('button', { name: 'Stop' })).toBeDisabled();
+  await expect(page.locator('#readAloudPlay')).toBeDisabled();
+  await expect(page.locator('#readAloudStop')).toBeDisabled();
+});
+
+test('verse read-aloud shares chapter speech and applies persisted speed and voice', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [], cancels: 0, voices: [
+      { name: 'Samantha', lang: 'en-US', localService: true },
+      { name: 'Daniel', lang: 'en-GB', localService: true },
+      { name: 'Extra One', lang: 'en-US', localService: true },
+      { name: 'Extra Two', lang: 'en-US', localService: true },
+      { name: 'Extra Three', lang: 'en-US', localService: true },
+      { name: 'Extra Four', lang: 'en-US', localService: true },
+      { name: 'Extra Five', lang: 'en-US', localService: true }
+    ] };
+    const utterance = function(text) {
+      this.text = text;
+    };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: utterance });
+    const synthesis = {
+      getVoices() { return window.__speech.voices; },
+      addEventListener(type, handler) { this.voiceChangedHandler = handler; },
+      speak(value) { this.lastUtterance = value; window.__speech.spoken.push(value); },
+      pause() {},
+      resume() {},
+      cancel() { window.__speech.cancels++; }
+    };
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
+  });
+  await page.goto('/');
+
+  await expect(page.locator('#readAloudSpeed option')).toHaveText(['50%', '75%', '100%', '125%', '150%', '175%', '200%', '225%', '250%']);
+  await expect(page.locator('#readAloudSpeed')).toHaveValue('1');
+  await expect(page.locator('#readAloudVoice option')).toHaveCount(7);
+  await page.evaluate(() => {
+    window.__speech.voices = [
+      { name: 'Samantha', lang: 'en-US', localService: true },
+      { name: 'Daniel', lang: 'en-GB', localService: true },
+      { name: 'Refreshed Voice', lang: 'en-US', localService: true },
+      { name: 'Extra One', lang: 'en-US', localService: true },
+      { name: 'Extra Two', lang: 'en-US', localService: true },
+      { name: 'Extra Three', lang: 'en-US', localService: true },
+      { name: 'Extra Four', lang: 'en-US', localService: true }
+    ];
+    window.speechSynthesis.voiceChangedHandler();
+  });
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Automatic', 'Samantha', 'Daniel', 'Refreshed Voice', 'Extra One', 'Extra Two', 'Extra Three']);
+  await page.locator('#readAloudVoice').selectOption('Samantha');
+  await page.locator('#readAloudSpeed').selectOption('1.5');
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => ({ text: window.__speech.spoken[0].text, rate: window.__speech.spoken[0].rate, voice: window.__speech.spoken[0].voice.name }))).toEqual({
+    text: 'In the beginning was the Word, and the Word was with God, and the Word was God.',
+    rate: 1.5,
+    voice: 'Samantha'
+  });
+
+  const cancelsBeforeVerse = await page.evaluate(() => window.__speech.cancels);
+  await page.locator('#readerContent [data-verse-speech="2"]').click();
+  expect(await page.evaluate(() => ({
+    utterance: window.__speech.spoken[1],
+    cancels: window.__speech.cancels,
+    storedSpeed: localStorage.getItem('god4.speech.speed'),
+    storedVoice: localStorage.getItem('god4.speech.voice')
+  }))).toEqual({
+    utterance: expect.objectContaining({ text: 'He was with God in the beginning.' }),
+    cancels: cancelsBeforeVerse + 1,
+    storedSpeed: '1.5',
+    storedVoice: 'Samantha'
+  });
+  expect(await page.evaluate(() => window.__speech.spoken[1].text)).not.toContain('Read aloud');
+  await page.locator('#readAloudStop').click();
+  await page.locator('#readAloudSpeed').selectOption('0.5');
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => window.__speech.spoken[2].rate)).toBe(0.5);
+  await page.locator('#readAloudSpeed').selectOption('2.5');
+  await page.locator('#readerContent [data-verse-speech="1"]').click();
+  expect(await page.evaluate(() => window.__speech.spoken[3].rate)).toBe(2.5);
+});
+
+test('voice commands use the shared BibleSpeech engine', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [], pauses: 0, resumes: 0, cancels: 0 };
+    const utterance = function(text) { this.text = text; };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: utterance });
+    const synthesis = {
+      speak(value) { this.lastUtterance = value; window.__speech.spoken.push(value); },
+      pause() { window.__speech.pauses++; },
+      resume() { window.__speech.resumes++; },
+      cancel() { window.__speech.cancels++; }
+    };
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
+  });
+  await page.goto('/');
+  await page.evaluate(() => handleVoiceCommand('read'));
+  await page.evaluate(() => handleVoiceCommand('pause'));
+  await page.evaluate(() => handleVoiceCommand('resume'));
+  await page.evaluate(() => handleVoiceCommand('stop'));
+  expect(await page.evaluate(() => window.__speech.spoken[0].text)).toContain('In the beginning was the Word');
+  expect(await page.evaluate(() => ({ pauses: window.__speech.pauses, resumes: window.__speech.resumes, cancels: window.__speech.cancels }))).toEqual({ pauses: 1, resumes: 1, cancels: 3 });
 });
 
 test('reader controls, highlighting, fullscreen, compare, and plan views work', async ({ page }) => {
