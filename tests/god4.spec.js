@@ -56,6 +56,8 @@ test('verse rotation and Scripture search work', async ({ page }) => {
 
 test('Bible data interface exposes the current local dataset', async ({ page }) => {
   await page.goto('/');
+  await expect(page.locator('#readerTranslation')).toHaveValue('demo-local');
+  await expect(page.locator('#readerTranslation option:checked')).not.toHaveText('');
   expect(await page.evaluate(() => ({
     translations: BibleData.listTranslations().map((translation) => translation.id),
     books: BibleData.listBooks('demo-local').map((book) => book.id),
@@ -67,6 +69,16 @@ test('Bible data interface exposes the current local dataset', async ({ page }) 
     chapterCount: 3,
     verse: 'In the beginning was the Word, and the Word was with God, and the Word was God.'
   });
+});
+
+test('translation selector keeps a visible label when changed', async ({ page }) => {
+  await page.goto('/');
+  const translation = page.locator('#readerTranslation');
+  await translation.selectOption('web');
+  await expect(translation).toHaveValue('web');
+  await expect(translation.locator('option:checked')).toHaveText(/WEB.*World English Bible Protestant Edition/);
+  await translation.selectOption('demo-local');
+  await expect(translation.locator('option:checked')).toHaveText(/DEMO.*Current Demo Bible/);
 });
 
 test('WEB data is complete, attributed, searchable, and selectable', async ({ page }) => {
@@ -267,9 +279,9 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
   await expect(page.locator('#readerContent')).toContainText('Psalms 1');
   await page.locator('#chapterSelect').selectOption('2');
   await expect(page.locator('#readerContent')).toContainText('Psalms 2');
-  await page.locator('.reader-controls-bottom').getByRole('button', { name: 'Next' }).click();
+  await page.locator('.reader-controls-top').getByRole('button', { name: 'Next' }).click();
   await expect(page.locator('#readerContent')).toContainText('Psalms 3');
-  await page.locator('.reader-controls-bottom').getByRole('button', { name: 'Previous' }).click();
+  await page.locator('.reader-controls-top').getByRole('button', { name: 'Previous' }).click();
   await expect(page.locator('#readerContent')).toContainText('Psalms 2');
 
   const verseNumber = page.locator('#readerContent .vnum').first();
@@ -338,15 +350,11 @@ test('Compare versions stack on smaller screens', async ({ page }) => {
 test('top and bottom Reader controls stay synchronized', async ({ page }) => {
   await page.goto('/');
   const topControls = page.locator('.reader-controls-top');
-  const bottomControls = page.locator('.reader-controls-bottom');
-
-  await expect(page.locator('[data-reader-controls]')).toHaveCount(2);
+  await expect(page.locator('[data-reader-controls]')).toHaveCount(1);
   await expect(topControls.getByRole('button', { name: 'Previous' })).toBeDisabled();
-  await expect(bottomControls.getByRole('button', { name: 'Previous' })).toBeDisabled();
   await topControls.getByRole('button', { name: 'Next' }).click();
   await expect(page.locator('#readerContent')).toContainText('John 2');
   await expect(topControls.getByRole('button', { name: 'Previous' })).toBeEnabled();
-  await expect(bottomControls.getByRole('button', { name: 'Previous' })).toBeEnabled();
 
   await page.evaluate(() => {
     window.SpeechRecognition = function FakeRecognition() {};
@@ -357,7 +365,7 @@ test('top and bottom Reader controls stay synchronized', async ({ page }) => {
   await voiceButton.click();
   await expect(voiceButton).toHaveAttribute('aria-pressed', 'true');
   await expect(page.locator('#voiceStatusTop')).toHaveText('Listening for a command...');
-  await expect(page.locator('#voiceStatus')).toHaveText('Listening for a command...');
+  await expect(page.locator('.voice-status')).toHaveCount(1);
 });
 
 test('blocked microphone access is reported without breaking the Reader', async ({ page }) => {
@@ -371,7 +379,7 @@ test('blocked microphone access is reported without breaking the Reader', async 
   });
   await page.locator('.reader-audio-controls [data-voice-command-button]').click();
   await page.evaluate(() => window.eval("voiceRecognition.onerror({ error: 'not-allowed' })"));
-  await expect(page.locator('#voiceStatus')).toHaveText('Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.');
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.');
   await page.locator('#bookSelect').selectOption('psalms');
   await expect(page.locator('#readerContent')).toContainText('Psalms 1');
 });
@@ -607,6 +615,18 @@ test('Reader exposes one unified chapter audio control group', async ({ page }) 
   await expect(reader.getByRole('button', { name: 'Voice Commands', exact: true })).toHaveCount(1);
   await expect(reader.locator('#readAloudVoice')).toBeVisible();
   await expect(reader.locator('#readAloudSpeed')).toBeVisible();
+});
+
+test('Reader keeps one navigation group and one voice status through repeated navigation', async ({ page }) => {
+  await page.goto('/');
+  for (let index = 0; index < 3; index++) {
+    await page.evaluate(() => handleVoiceCommand('next chapter'));
+    await page.evaluate(() => handleVoiceCommand('previous chapter'));
+  }
+  await expect(page.locator('[data-reader-controls]')).toHaveCount(1);
+  await expect(page.locator('.voice-status')).toHaveCount(1);
+  await expect(page.locator('.reader-audio-controls')).toHaveCount(1);
+  await expect(page.locator('#readerContent')).toContainText('John 1');
 });
 
 test('unified Reader audio controls fit the narrow viewport without horizontal overflow', async ({ page }) => {
