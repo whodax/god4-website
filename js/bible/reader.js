@@ -4,6 +4,10 @@ let currentChapter = 1;
 let currentTranslation = 'demo-local';
 let voiceRecognition = null;
 let voiceCommandsListening = false;
+let voiceCommandsStopping = false;
+let voiceCommandTimer = null;
+let voiceCommandStatusTimer = null;
+let voiceCommandResultReceived = false;
 
 function getReaderControls(){
   return document.querySelectorAll('[data-reader-controls]');
@@ -55,31 +59,97 @@ function getVoiceRecognition(){
   return window.SpeechRecognition || window.webkitSpeechRecognition;
 }
 
+function getVoiceRecognitionErrorMessage(error){
+  var messages = {
+    'not-allowed': 'Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.',
+    'service-not-allowed': 'Voice recognition is blocked by the browser or operating system.',
+    'audio-capture': 'No microphone was detected. Check your microphone and try again.',
+    'no-speech': 'No speech was detected. Try again.',
+    'network': 'Voice recognition could not connect. Check your internet connection or try again.'
+  };
+  return messages[error] || 'Voice command error: ' + error;
+}
+
+function normalizeBookName(value){
+  return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function navigateToSpokenBook(bookText, chapterNumber){
+  if(typeof BibleData === 'undefined') return false;
+  var requestedBook = normalizeBookName(bookText);
+  var book = BibleData.listBooks(currentTranslation).find(function(candidate){
+    return normalizeBookName(candidate.name) === requestedBook || normalizeBookName(candidate.id) === requestedBook;
+  });
+  if(!book) return false;
+  var chapter = chapterNumber ? Number(chapterNumber) : 1;
+  if(!Number.isInteger(chapter) || chapter < 1 || chapter > BibleData.getChapterCount(currentTranslation, book.id)) return false;
+  var bookSelect = document.getElementById('bookSelect');
+  var chapterSelect = document.getElementById('chapterSelect');
+  if(!bookSelect || !chapterSelect) return false;
+  bookSelect.value = book.id;
+  currentBook = book.id;
+  populateChapters();
+  chapterSelect.value = String(chapter);
+  loadPassage();
+  return true;
+}
+
+function handleSpokenBookCommand(command){
+  var match = /^(play|read|open|go to)\s+(.+?)(?:\s+(\d+))?$/.exec(command);
+  if(!match) return false;
+  if(!navigateToSpokenBook(match[2], match[3])){
+    setVoiceStatus('Book or chapter not found.');
+    return true;
+  }
+  if(match[1] === 'play' || match[1] === 'read') readCurrentChapterAloud();
+  return true;
+}
+
 function handleVoiceCommand(transcript){
-  var command = transcript.toLowerCase().trim();
-  setVoiceStatus('Recognized: ' + transcript);
+  var command = transcript.toLowerCase().trim().replace(/[.!?]+$/, '');
+  setVoiceStatus('Command recognized: ' + transcript);
   if(/^(play|read)( the passage)?$/.test(command)) playReader();
   else if(command === 'pause') pauseReader();
   else if(command === 'resume') resumeReader();
   else if(command === 'stop') stopReader();
-  else if(command === 'next chapter') nextChapter();
-  else if(command === 'previous chapter') prevChapter();
+  else if(/^(next chapter|next|go to next chapter)$/.test(command)) nextChapter();
+  else if(/^(previous chapter|previous|go to previous chapter)$/.test(command)) prevChapter();
+  else if(handleSpokenBookCommand(command)) return;
   else setVoiceStatus('Unrecognized command: ' + transcript);
 }
 
-function finishVoiceCommands(){
+function clearVoiceCommandTimers(){
+  if(voiceCommandTimer){
+    clearTimeout(voiceCommandTimer);
+    voiceCommandTimer = null;
+  }
+  if(voiceCommandStatusTimer){
+    clearTimeout(voiceCommandStatusTimer);
+    voiceCommandStatusTimer = null;
+  }
+}
+
+function finishVoiceCommands(showReadyStatus){
+  clearVoiceCommandTimers();
   voiceCommandsListening = false;
+  voiceCommandsStopping = false;
   setVoiceButtonState(false);
+  if(showReadyStatus) setVoiceStatus('Ready for a voice command.');
 }
 
 function toggleVoiceCommands(){
   var Recognition = getVoiceRecognition();
   if(!Recognition){
-    setVoiceStatus('Voice commands are not supported in this browser');
+    setVoiceStatus('Voice commands are not supported in this browser. Read Aloud is still available.');
     return;
   }
   if(voiceCommandsListening){
-    voiceRecognition.stop();
+    voiceCommandsStopping = true;
+    if(voiceRecognition && typeof voiceRecognition.stop === 'function'){
+      voiceRecognition.stop();
+    } else {
+      finishVoiceCommands(true);
+    }
     return;
   }
   if(!voiceRecognition){
@@ -88,19 +158,49 @@ function toggleVoiceCommands(){
     voiceRecognition.interimResults = false;
     voiceRecognition.lang = 'en-US';
     voiceRecognition.onresult = function(event){
-      handleVoiceCommand(event.results[0][0].transcript);
+      var resultIndex = Number.isInteger(event.resultIndex) ? event.resultIndex : event.results.length - 1;
+      var result = event.results && event.results[resultIndex];
+      if(!result || result.isFinal === false || !result[0] || !result[0].transcript) return;
+      voiceCommandResultReceived = true;
+      handleVoiceCommand(result[0].transcript);
+      finishVoiceCommands(false);
+      voiceCommandStatusTimer = setTimeout(function(){ setVoiceStatus('Ready for a voice command.'); }, 1200);
     };
     voiceRecognition.onerror = function(event){
-      var message = event.error === 'not-allowed' ? 'Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.' : 'Voice command error: ' + event.error;
-      setVoiceStatus(message);
-      finishVoiceCommands();
+      var intentionalStop = event.error === 'aborted' || voiceCommandsStopping;
+      if(!intentionalStop) setVoiceStatus(getVoiceRecognitionErrorMessage(event.error));
+      finishVoiceCommands(intentionalStop);
+      if(!intentionalStop) voiceCommandStatusTimer = setTimeout(function(){ setVoiceStatus('Ready for a voice command.'); }, 1200);
     };
-    voiceRecognition.onend = finishVoiceCommands;
+    voiceRecognition.onend = function(){
+      if(voiceCommandsStopping){
+        finishVoiceCommands(true);
+        return;
+      }
+      if(voiceCommandResultReceived) return;
+    };
   }
+  if(voiceCommandsListening) return;
+  voiceCommandsStopping = false;
+  voiceCommandResultReceived = false;
   voiceCommandsListening = true;
   setVoiceButtonState(true);
-  setVoiceStatus('Listening...');
-  voiceRecognition.start();
+  setVoiceStatus('Listening for a command...');
+  voiceCommandTimer = setTimeout(function(){
+    if(!voiceCommandsListening) return;
+    finishVoiceCommands(true);
+  }, 6000);
+  try {
+    voiceRecognition.start();
+  } catch(error){
+    if(error && error.name !== 'InvalidStateError'){
+      setVoiceStatus('Voice command error: ' + error.message);
+      finishVoiceCommands(false);
+      voiceCommandStatusTimer = setTimeout(function(){ setVoiceStatus('Ready for a voice command.'); }, 1200);
+    } else {
+      finishVoiceCommands(true);
+    }
+  }
 }
 
 function escapeHtml(value){

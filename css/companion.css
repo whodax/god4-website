@@ -97,9 +97,9 @@
     color:var(--ink-soft);font-family:'Inter',sans-serif;font-size:11px;
     letter-spacing:0.04em;text-align:center;margin-top:12px;min-height:16px;
   }
-  .reader-audio-controls{display:flex;justify-content:center;gap:8px;margin:0 auto 20px;}
+  .reader-audio-controls{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px;width:100%;box-sizing:border-box;margin:0 auto 20px;padding:0 8px;}
   .reader-audio-status{flex-basis:100%;text-align:center;color:var(--ink-soft);font:italic 13px 'EB Garamond',serif;}
-  .reader-speech-preferences{display:flex;align-items:center;gap:6px;color:var(--ink-soft);font:11px 'Inter',sans-serif;letter-spacing:.04em;}
+  .reader-speech-preferences{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;max-width:100%;color:var(--ink-soft);font:11px 'Inter',sans-serif;letter-spacing:.04em;}
   .reader-speech-preferences select{background:var(--vellum);border:1px solid var(--line);border-radius:2px;color:var(--ink-soft);font:11px 'Inter',sans-serif;padding:7px 22px 7px 7px;}
   .verse-speak{background:none;border:0;color:var(--ink-soft);font:10px 'Inter',sans-serif;padding:0 3px;cursor:pointer;}
   .verse-speak:hover{color:var(--gold);}

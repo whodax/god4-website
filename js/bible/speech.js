@@ -67,10 +67,14 @@ var BibleSpeech = (function createBibleSpeech(){
     available.forEach(function(voice){
       var option = document.createElement('option');
       option.value = voice.name;
-      option.textContent = voice.name;
+      option.textContent = formatVoiceDisplayName(voice.name);
       select.appendChild(option);
     });
     select.value = available.some(function(voice){ return voice.name === voiceName; }) ? voiceName : '';
+  }
+
+  function formatVoiceDisplayName(name){
+    return String(name || '').replace(/^Microsoft\s+/i, '').trim();
   }
 
   function selectedVoice(){
