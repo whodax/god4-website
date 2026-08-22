@@ -120,6 +120,10 @@
           <select id="chapterSelect" onchange="loadPassage()">
             <option>1</option><option>2</option><option>3</option>
           </select>
+          <label class="sr-only" for="verseSelect">Verse</label>
+          <select id="verseSelect" onchange="selectReaderVerse(this.value)">
+            <option value="">Verse</option>
+          </select>
         </div>
         <div class="reader-controls reader-controls-top" data-reader-controls>
           <button type="button" data-reader-action="previous" onclick="prevChapter()">← Previous</button>

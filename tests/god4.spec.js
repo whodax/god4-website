@@ -1,5 +1,10 @@
 const { test, expect } = require('@playwright/test');
 
+test.beforeEach(async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => localStorage.removeItem('god4.translation'));
+});
+
 test('homepage and primary navigation load without browser errors', async ({ page }, testInfo) => {
   const errors = [];
   const failedLocalRequests = [];
@@ -56,7 +61,7 @@ test('verse rotation and Scripture search work', async ({ page }) => {
 
 test('Bible data interface exposes the current local dataset', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('#readerTranslation')).toHaveValue('demo-local');
+  await expect(page.locator('#readerTranslation')).toHaveValue('web');
   await expect(page.locator('#readerTranslation option:checked')).not.toHaveText('');
   expect(await page.evaluate(() => ({
     translations: BibleData.listTranslations().map((translation) => translation.id),
@@ -81,12 +86,18 @@ test('translation selector keeps a visible label when changed', async ({ page })
   await expect(translation.locator('option:checked')).toHaveText(/DEMO.*Current Demo Bible/);
 });
 
-test('translation selector safely selects the first option when state is invalid', async ({ page }) => {
+test('translation preference persists across reloads', async ({ page }) => {
   await page.goto('/');
-  await page.evaluate(() => {
-    currentTranslation = 'missing-translation';
-    populateTranslations();
-  });
+  const translation = page.locator('#readerTranslation');
+  await translation.selectOption('demo-local');
+  await page.reload();
+  await expect(translation).toHaveValue('demo-local');
+  await expect(translation.locator('option:checked')).toHaveText(/DEMO.*Current Demo Bible/);
+});
+
+test('translation selector safely selects the first option when state is invalid', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('god4.translation', 'missing-translation'));
+  await page.goto('/');
   const translation = page.locator('#readerTranslation');
   await expect(translation).toHaveValue('demo-local');
   await expect(translation.locator('option:checked')).not.toHaveText('');
@@ -153,6 +164,7 @@ test('reader read-aloud controls speak only chapter verses and manage playback',
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
   });
   await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('demo-local');
 
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
@@ -210,6 +222,7 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
   });
   await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('demo-local');
 
   await expect(page.locator('#readAloudSpeed option')).toHaveText(['50%', '75%', '100%', '125%', '150%', '175%', '200%', '225%', '250%']);
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1');
@@ -260,6 +273,7 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
 });
 
 test('voice commands use the shared BibleSpeech engine', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('god4.translation', 'demo-local'));
   await page.addInitScript(() => {
     window.__speech = { spoken: [], pauses: 0, resumes: 0, cancels: 0 };
     const utterance = function(text) { this.text = text; };
@@ -565,7 +579,173 @@ test('spoken book commands navigate deterministically and only play when request
   expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(speechCountBeforeOpen);
 
   await page.evaluate(() => handleVoiceCommand('open NotABook'));
-  await expect(page.locator('#voiceStatusTop')).toHaveText('Book or chapter not found.');
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Book, chapter, or verse not found.');
+});
+
+test('natural chapter and verse references navigate and focus data-backed verses', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [] };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.spoken.push(utterance.text); },
+      cancel() {}, pause() {}, resume() {}
+    } });
+  });
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+
+  await page.evaluate(() => handleVoiceCommand('John 3:16'));
+  await expect(page.locator('#readerContent')).toContainText('John 3');
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#readerContent [data-verse-number="16"]')).toHaveClass(/verse-focused/);
+  await expect(page.locator('#verseSelect')).toHaveValue('16');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(0);
+
+  await page.evaluate(() => handleVoiceCommand('John 3 verse 16'));
+  await expect(page.locator('#readerContent [data-verse-number="16"]')).toHaveClass(/verse-focused/);
+
+  await page.evaluate(() => handleVoiceCommand('Read John 3:16'));
+  await expect(page.locator('#readerContent')).toContainText('John 3');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(1);
+  expect(await page.evaluate(() => window.__speech.spoken[0])).toBe(await page.evaluate(() => BibleData.getVerse('web', 'john', 3, 16).text));
+
+  await page.evaluate(() => handleVoiceCommand('Open Genesis 1'));
+  await expect(page.locator('#readerContent')).toContainText('Genesis 1');
+  await expect(page.locator('#verseSelect option')).toHaveCount(32);
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(1);
+
+  await page.evaluate(() => handleVoiceCommand('Go to Romans 8 verse 28'));
+  await expect(page.locator('#readerContent')).toContainText('Romans 8');
+  await expect(page.locator('#readerContent [data-verse-number="28"]')).toHaveClass(/verse-focused/);
+});
+
+test('natural chapter words work for navigation and Read commands', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [] };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.spoken.push(utterance.text); },
+      cancel() {}, pause() {}, resume() {}
+    } });
+  });
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+
+  await page.evaluate(() => handleVoiceCommand('Colossians chapter 2 verse 1'));
+  await expect(page.locator('#bookSelect')).toHaveValue('colossians');
+  await expect(page.locator('#chapterSelect')).toHaveValue('2');
+  await expect(page.locator('#verseSelect')).toHaveValue('1');
+  await expect(page.locator('#readerContent')).toContainText('Colossians 2');
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(0);
+
+  await page.evaluate(() => handleVoiceCommand('Colossians chapter 2'));
+  await expect(page.locator('#chapterSelect')).toHaveValue('2');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(0);
+
+  await page.evaluate(() => handleVoiceCommand('John chapter 3 verse 16'));
+  await expect(page.locator('#bookSelect')).toHaveValue('john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#readerContent [data-verse-number="16"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(0);
+
+  await page.evaluate(() => handleVoiceCommand('1 Corinthians chapter 13 verse 4'));
+  await expect(page.locator('#bookSelect')).toHaveValue('1-corinthians');
+  await expect(page.locator('#chapterSelect')).toHaveValue('13');
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(0);
+
+  await page.evaluate(() => handleVoiceCommand('Read Colossians chapter 2 verse 1'));
+  await expect(page.locator('#readerContent')).toContainText('Colossians 2');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(1);
+  expect(await page.evaluate(() => window.__speech.spoken[0])).toBe(await page.evaluate(() => BibleData.getVerse('web', 'colossians', 2, 1).text));
+});
+
+test('ordinal Bible book names normalize to numbered metadata books', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [] };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.spoken.push(utterance.text); },
+      cancel() {}, pause() {}, resume() {}
+    } });
+  });
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+
+  await page.evaluate(() => handleVoiceCommand('First Corinthians chapter 13 verse 4'));
+  await expect(page.locator('#bookSelect')).toHaveValue('1-corinthians');
+  await expect(page.locator('#chapterSelect')).toHaveValue('13');
+  await expect(page.locator('#verseSelect')).toHaveValue('4');
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(0);
+
+  await page.evaluate(() => handleVoiceCommand('1 Corinthians chapter 13 verse 4'));
+  await expect(page.locator('#bookSelect')).toHaveValue('1-corinthians');
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
+
+  await page.evaluate(() => handleVoiceCommand('Read First Corinthians chapter 13 verse 4'));
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(1);
+  expect(await page.evaluate(() => window.__speech.spoken[0])).toBe(await page.evaluate(() => BibleData.getVerse('web', '1-corinthians', 13, 4).text));
+
+  await page.locator('#readAloudStop').click();
+  await page.evaluate(() => handleVoiceCommand('Play Second Samuel chapter 3'));
+  await expect(page.locator('#bookSelect')).toHaveValue('2-samuel');
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(2);
+
+  await page.locator('#readAloudStop').click();
+  await page.evaluate(() => handleVoiceCommand('Open First John chapter 4 verse 8'));
+  await expect(page.locator('#bookSelect')).toHaveValue('1-john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('4');
+  await expect(page.locator('#readerContent [data-verse-number="8"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(2);
+
+  await page.evaluate(() => handleVoiceCommand('Go to Third John chapter 1 verse 2'));
+  await expect(page.locator('#bookSelect')).toHaveValue('3-john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('1');
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(2);
+});
+
+test('manual verse selector updates with the chapter and focuses the selected verse', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('demo-local');
+  await page.locator('#bookSelect').selectOption('genesis');
+  await page.locator('#chapterSelect').selectOption('1');
+
+  const chapterOneVerseOptionCount = await page.evaluate(() =>
+    BibleData.getChapter('demo-local', 'genesis', 1).verses.length + 1
+  );
+  await expect(page.locator('#verseSelect option')).toHaveCount(chapterOneVerseOptionCount);
+
+  await page.locator('#verseSelect').selectOption('2');
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-focused/);
+
+  await page.locator('#chapterSelect').selectOption('2');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+
+  const chapterTwoVerseOptionCount = await page.evaluate(() =>
+    BibleData.getChapter('demo-local', 'genesis', 2).verses.length + 1
+  );
+  await expect(page.locator('#verseSelect option')).toHaveCount(chapterTwoVerseOptionCount);
+});
+
+test('numbered Bible book references resolve from BibleData metadata', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  await page.evaluate(() => handleVoiceCommand('Open 1 Samuel 1'));
+  await expect(page.locator('#bookSelect')).toHaveValue('1-samuel');
+  await expect(page.locator('#readerContent')).toContainText('1 Samuel 1');
+});
+
+test('invalid chapter and verse references report a concise status', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  await page.evaluate(() => handleVoiceCommand('John 999'));
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Book, chapter, or verse not found.');
+  await page.evaluate(() => handleVoiceCommand('John 3:999'));
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Book, chapter, or verse not found.');
 });
 
 test('recognized navigation commands execute Reader actions through the recognition callback', async ({ page }) => {
