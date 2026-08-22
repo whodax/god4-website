@@ -235,14 +235,19 @@ function populateBooks(){
 function populateTranslations(){
   var translationSelect = document.getElementById('readerTranslation');
   if(!translationSelect || typeof BibleData === 'undefined') return;
+  var translations = BibleData.listTranslations();
   translationSelect.innerHTML = '';
-  BibleData.listTranslations().forEach(function(translation){
+  translations.forEach(function(translation){
     var option = document.createElement('option');
     option.value = translation.id;
     option.textContent = translation.abbreviation + ' — ' + translation.name;
     translationSelect.appendChild(option);
   });
-  translationSelect.value = currentTranslation;
+  var selectedTranslation = translations.some(function(translation){ return translation.id === currentTranslation; }) ? currentTranslation : translations[0] && translations[0].id;
+  if(selectedTranslation){
+    currentTranslation = selectedTranslation;
+    translationSelect.value = selectedTranslation;
+  }
 }
 
 function changeTranslation(translationId){
