@@ -353,11 +353,11 @@ test('top and bottom Reader controls stay synchronized', async ({ page }) => {
     window.SpeechRecognition.prototype.start = function() {};
     window.SpeechRecognition.prototype.stop = function() {};
   });
-  await topControls.getByRole('button', { name: 'Voice Commands' }).click();
-  await expect(topControls.getByRole('button', { name: 'Voice Commands' })).toHaveAttribute('aria-pressed', 'true');
-  await expect(bottomControls.getByRole('button', { name: 'Voice Commands' })).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('#voiceStatusTop')).toHaveText('Listening...');
-  await expect(page.locator('#voiceStatus')).toHaveText('Listening...');
+  const voiceButton = page.locator('.reader-audio-controls [data-voice-command-button]');
+  await voiceButton.click();
+  await expect(voiceButton).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Listening for a command...');
+  await expect(page.locator('#voiceStatus')).toHaveText('Listening for a command...');
 });
 
 test('blocked microphone access is reported without breaking the Reader', async ({ page }) => {
@@ -369,9 +369,255 @@ test('blocked microphone access is reported without breaking the Reader', async 
     Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
     Object.defineProperty(window, 'webkitSpeechRecognition', { configurable: true, value: FakeRecognition });
   });
-  await page.locator('.reader-controls-top').getByRole('button', { name: 'Voice Commands' }).click();
+  await page.locator('.reader-audio-controls [data-voice-command-button]').click();
   await page.evaluate(() => window.eval("voiceRecognition.onerror({ error: 'not-allowed' })"));
   await expect(page.locator('#voiceStatus')).toHaveText('Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.');
   await page.locator('#bookSelect').selectOption('psalms');
   await expect(page.locator('#readerContent')).toContainText('Psalms 1');
+});
+
+test('Voice Commands reports clear recognition errors and handles intentional stops', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__recognition = { starts: 0, stops: 0 };
+    function FakeRecognition() { window.fakeRecognition = this; }
+    FakeRecognition.prototype.start = function() { window.__recognition.starts++; };
+    FakeRecognition.prototype.stop = function() { window.__recognition.stops++; };
+    Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
+    Object.defineProperty(window, 'webkitSpeechRecognition', { configurable: true, value: FakeRecognition });
+  });
+  await page.goto('/');
+  const button = page.locator('.reader-audio-controls [data-voice-command-button]');
+  const status = page.locator('#voiceStatusTop');
+
+  await button.click();
+  await expect(button).toHaveAttribute('aria-pressed', 'true');
+  await expect(status).toHaveText('Listening for a command...');
+  await button.click();
+  expect(await page.evaluate(() => window.__recognition.starts)).toBe(1);
+  await page.evaluate(() => window.fakeRecognition.onerror({ error: 'aborted' }));
+  await page.evaluate(() => window.fakeRecognition.onend());
+  await expect(button).toHaveAttribute('aria-pressed', 'false');
+  await expect(status).toHaveText('Ready for a voice command.');
+
+  const expectedMessages = {
+    'not-allowed': 'Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.',
+    'service-not-allowed': 'Voice recognition is blocked by the browser or operating system.',
+    'audio-capture': 'No microphone was detected. Check your microphone and try again.',
+    'no-speech': 'No speech was detected. Try again.',
+    'network': 'Voice recognition could not connect. Check your internet connection or try again.'
+  };
+  for (const [error, message] of Object.entries(expectedMessages)) {
+    await button.click();
+    await page.evaluate((value) => window.fakeRecognition.onerror({ error: value }), error);
+    await expect(status).toHaveText(message);
+    await expect(button).toHaveAttribute('aria-pressed', 'false');
+  }
+
+  await button.click();
+  await page.evaluate(() => window.fakeRecognition.onerror({ error: 'unexpected-error' }));
+  await expect(status).toHaveText('Voice command error: unexpected-error');
+});
+
+test('Voice Commands stays available independently from Read Aloud when recognition is unsupported', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: undefined });
+    Object.defineProperty(window, 'webkitSpeechRecognition', { configurable: true, value: undefined });
+    window.__speech = { spoken: [] };
+    const utterance = function(text) { this.text = text; };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: utterance });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(value) { window.__speech.spoken.push(value.text); },
+      cancel() {},
+      pause() {},
+      resume() {}
+    } });
+  });
+  await page.goto('/');
+  await page.locator('.reader-audio-controls [data-voice-command-button]').click();
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Voice commands are not supported in this browser. Read Aloud is still available.');
+  await expect(page.locator('#readAloudPlay')).toBeEnabled();
+  await page.locator('#readAloudPlay').click();
+  await expect.poll(() => page.evaluate(() => window.__speech.spoken.length)).toBeGreaterThan(0);
+});
+
+test('Voice Commands handles safe chapter aliases and recognition end', async ({ page }) => {
+  await page.addInitScript(() => {
+    function FakeRecognition() { window.fakeRecognition = this; }
+    FakeRecognition.prototype.start = function() {};
+    FakeRecognition.prototype.stop = function() {};
+    Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
+  });
+  await page.goto('/');
+  await page.evaluate(() => handleVoiceCommand('next'));
+  await expect(page.locator('#readerContent')).toContainText('John 2');
+  await page.evaluate(() => handleVoiceCommand('go to previous chapter'));
+  await expect(page.locator('#readerContent')).toContainText('John 1');
+  const button = page.locator('.reader-audio-controls [data-voice-command-button]');
+  await button.click();
+  await expect(button).toHaveAttribute('aria-pressed', 'true');
+  await page.evaluate(() => toggleVoiceCommands());
+  await page.evaluate(() => window.fakeRecognition.onend());
+  await expect(button).toHaveAttribute('aria-pressed', 'false');
+});
+
+test('Voice Commands waits through an early end event and accepts one final result', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__recognition = { starts: 0, stops: 0 };
+    function FakeRecognition() { window.fakeRecognition = this; }
+    FakeRecognition.prototype.start = function() { window.__recognition.starts++; };
+    FakeRecognition.prototype.stop = function() { window.__recognition.stops++; };
+    Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak() {}, cancel() {}, pause() {}, resume() {}
+    } });
+  });
+  await page.goto('/');
+  const button = page.locator('.reader-audio-controls [data-voice-command-button]');
+  const status = page.locator('#voiceStatusTop');
+  await button.click();
+  await expect(status).toHaveText('Listening for a command...');
+  await page.evaluate(() => window.fakeRecognition.onend());
+  await page.waitForTimeout(100);
+  await expect(button).toHaveAttribute('aria-pressed', 'true');
+  await expect(status).toHaveText('Listening for a command...');
+  await page.evaluate(() => toggleVoiceCommands());
+  await page.evaluate(() => window.fakeRecognition.onend());
+  expect(await page.evaluate(() => window.__recognition.starts)).toBe(1);
+
+  await button.click();
+  await page.evaluate(() => window.fakeRecognition.onresult({ results: [Object.assign([{ transcript: 'read' }], { isFinal: true })] }));
+  await expect(status).toHaveText('Command recognized: read');
+  await expect(button).toHaveAttribute('aria-pressed', 'false');
+  await page.waitForTimeout(1300);
+  await expect(status).toHaveText('Ready for a voice command.');
+});
+
+test('speech voice labels shorten Microsoft display names but retain full voice objects', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [] };
+    const availableVoices = [
+      { name: 'Microsoft Mark', lang: 'en-US', localService: true },
+      { name: 'Microsoft Zira', lang: 'en-US', localService: true },
+      { name: 'Microsoft David', lang: 'en-US', localService: true }
+    ];
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      getVoices() { return availableVoices; },
+      speak(utterance) { window.__speech.spoken.push(utterance); },
+      cancel() {}, pause() {}, resume() {}, addEventListener() {}
+    } });
+  });
+  await page.goto('/');
+  expect(await page.locator('#readAloudVoice option').allTextContents()).toEqual(expect.arrayContaining(['Automatic', 'Mark', 'Zira', 'David']));
+  await page.locator('#readAloudVoice').selectOption({ label: 'Mark' });
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => window.__speech.spoken[0].voice.name)).toBe('Microsoft Mark');
+});
+
+test('spoken book commands navigate deterministically and only play when requested', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [] };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.spoken.push(utterance.text); },
+      cancel() {}, pause() {}, resume() {}
+    } });
+  });
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  await page.evaluate(() => handleVoiceCommand('play Matthew'));
+  await expect(page.locator('#readerContent')).toContainText('Matthew 1');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBeGreaterThan(0);
+
+  await page.locator('#readAloudStop').click();
+  await page.evaluate(() => handleVoiceCommand('read John 3'));
+  await expect(page.locator('#readerContent')).toContainText('John 3');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBeGreaterThan(1);
+
+  await page.locator('#readAloudStop').click();
+  const speechCountBeforeOpen = await page.evaluate(() => window.__speech.spoken.length);
+  await page.evaluate(() => handleVoiceCommand('open Genesis 1'));
+  await expect(page.locator('#readerContent')).toContainText('Genesis 1');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(speechCountBeforeOpen);
+
+  await page.evaluate(() => handleVoiceCommand('go to Romans 8'));
+  await expect(page.locator('#readerContent')).toContainText('Romans 8');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(speechCountBeforeOpen);
+
+  await page.evaluate(() => handleVoiceCommand('open NotABook'));
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Book or chapter not found.');
+});
+
+test('recognized navigation commands execute Reader actions through the recognition callback', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { spoken: [] };
+    function FakeRecognition() { window.fakeRecognition = this; }
+    FakeRecognition.prototype.start = function() {};
+    FakeRecognition.prototype.stop = function() {};
+    Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.spoken.push(utterance.text); },
+      cancel() {}, pause() {}, resume() {}
+    } });
+  });
+  await page.goto('/');
+  const voiceButton = page.locator('.reader-audio-controls [data-voice-command-button]');
+  const recognize = async (transcript) => {
+    await voiceButton.click();
+    await page.evaluate((value) => window.fakeRecognition.onresult({
+      resultIndex: 0,
+      results: [Object.assign([{ transcript: value }], { isFinal: true })]
+    }), transcript);
+  };
+
+  await recognize('Next chapter');
+  await expect(page.locator('#bookSelect')).toHaveValue('john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('2');
+  await expect(page.locator('#readerContent')).toContainText('John 2');
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Command recognized: Next chapter');
+
+  await recognize('previous');
+  await expect(page.locator('#chapterSelect')).toHaveValue('1');
+  await expect(page.locator('#readerContent')).toContainText('John 1');
+
+  await page.locator('#readerTranslation').selectOption('web');
+  await recognize('read John 3');
+  await expect(page.locator('#bookSelect')).toHaveValue('john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#readerContent')).toContainText('John 3');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBeGreaterThan(0);
+
+  await page.locator('#readAloudStop').click();
+  const speechCountBeforeOpen = await page.evaluate(() => window.__speech.spoken.length);
+  await recognize('open Genesis 1');
+  await expect(page.locator('#bookSelect')).toHaveValue('genesis');
+  await expect(page.locator('#chapterSelect')).toHaveValue('1');
+  await expect(page.locator('#readerContent')).toContainText('Genesis 1');
+  expect(await page.evaluate(() => window.__speech.spoken.length)).toBe(speechCountBeforeOpen);
+});
+
+test('Reader exposes one unified chapter audio control group', async ({ page }) => {
+  await page.goto('/');
+  const reader = page.locator('#view-reader');
+  await expect(reader.getByRole('button', { name: 'Play', exact: true })).toHaveCount(1);
+  await expect(reader.getByRole('button', { name: 'Pause reading aloud', exact: true })).toHaveCount(1);
+  await expect(reader.getByRole('button', { name: 'Stop', exact: true })).toHaveCount(1);
+  await expect(reader.getByRole('button', { name: 'Voice Commands', exact: true })).toHaveCount(1);
+  await expect(reader.locator('#readAloudVoice')).toBeVisible();
+  await expect(reader.locator('#readAloudSpeed')).toBeVisible();
+});
+
+test('unified Reader audio controls fit the narrow viewport without horizontal overflow', async ({ page }) => {
+  await page.setViewportSize({ width: 600, height: 800 });
+  await page.goto('/');
+  const reader = page.locator('#view-reader');
+  await expect(reader.getByRole('button', { name: 'Play', exact: true })).toBeVisible();
+  await expect(reader.getByRole('button', { name: 'Pause reading aloud', exact: true })).toBeVisible();
+  await expect(reader.getByRole('button', { name: 'Stop', exact: true })).toBeVisible();
+  await expect(reader.getByRole('button', { name: 'Voice Commands', exact: true })).toBeVisible();
+  await expect(reader.locator('#readAloudVoice')).toBeVisible();
+  await expect(reader.locator('#readAloudSpeed')).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(600);
 });
