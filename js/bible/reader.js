@@ -243,10 +243,11 @@ function populateTranslations(){
     option.textContent = translation.abbreviation + ' — ' + translation.name;
     translationSelect.appendChild(option);
   });
-  var selectedTranslation = translations.some(function(translation){ return translation.id === currentTranslation; }) ? currentTranslation : translations[0] && translations[0].id;
-  if(selectedTranslation){
-    currentTranslation = selectedTranslation;
-    translationSelect.value = selectedTranslation;
+  var selectedIndex = translations.findIndex(function(translation){ return translation.id === currentTranslation; });
+  if(selectedIndex < 0) selectedIndex = translations.length ? 0 : -1;
+  if(selectedIndex >= 0){
+    currentTranslation = translations[selectedIndex].id;
+    translationSelect.selectedIndex = selectedIndex;
   }
 }
 
@@ -255,6 +256,8 @@ function changeTranslation(translationId){
   var bookSelect = document.getElementById('bookSelect');
   if(bookSelect && bookSelect.value) currentBook = bookSelect.value;
   currentTranslation = translationId;
+  var translationSelect = document.getElementById('readerTranslation');
+  if(translationSelect) translationSelect.value = currentTranslation;
   populateBooks();
   if(!bookSelect || !BibleData.getChapterCount(currentTranslation, currentBook)){
     currentBook = BibleData.listBooks(currentTranslation)[0].id;

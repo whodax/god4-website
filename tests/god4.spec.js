@@ -81,6 +81,17 @@ test('translation selector keeps a visible label when changed', async ({ page })
   await expect(translation.locator('option:checked')).toHaveText(/DEMO.*Current Demo Bible/);
 });
 
+test('translation selector safely selects the first option when state is invalid', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => {
+    currentTranslation = 'missing-translation';
+    populateTranslations();
+  });
+  const translation = page.locator('#readerTranslation');
+  await expect(translation).toHaveValue('demo-local');
+  await expect(translation.locator('option:checked')).not.toHaveText('');
+});
+
 test('WEB data is complete, attributed, searchable, and selectable', async ({ page }) => {
   await page.goto('/');
   expect(await page.evaluate(() => ({
