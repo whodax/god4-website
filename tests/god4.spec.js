@@ -55,13 +55,13 @@ test('header cross mark includes an activated heart and four motion rays', async
   expect(initial.rayCount).toBe(4);
   expect(initial.heartCenter.x).toBeCloseTo(36, 1);
   expect(initial.heartCenter.y).toBeCloseTo(36, 1);
-  expect(initial.heartAnimation).toBe('2s');
-  expect(initial.raysAnimation).toBe('2s');
+    expect(initial.heartAnimation).toBe('3s');
+    expect(initial.raysAnimation).toBe('3s');
   await expect(mark).toHaveClass(/brand-mark--pulse/);
 
   await mark.click();
   await expect(mark).toHaveClass(/brand-mark--pulse/);
-  await expect.poll(() => mark.evaluate((element) => ({ heart: getComputedStyle(element.querySelector('.brand-heart')).animationDuration, rays: getComputedStyle(element.querySelector('.brand-rays')).animationDuration }))).toEqual({ heart: '2s', rays: '2s' });
+  await expect.poll(() => mark.evaluate((element) => ({ heart: getComputedStyle(element.querySelector('.brand-heart')).animationDuration, rays: getComputedStyle(element.querySelector('.brand-rays')).animationDuration }))).toEqual({ heart: '3s', rays: '3s' });
 
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await mark.click();
