@@ -906,7 +906,9 @@ test('Compare follows the Reader current passage and translation choices from Bi
   await page.locator('#compareGrid [data-compare-side="left"]').selectOption('web');
   await expect(page.locator('#compareGrid [data-compare-side="right"]')).toHaveValue(rightBefore);
 
+  await page.getByRole('button', { name: 'Reader' }).click();
   await page.locator('#chapterSelect').selectOption('2');
+  await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#compareSummary')).toContainText('Comparing John 2');
   await expect(page.locator('#compareGrid .compare-col').first()).not.toContainText('Passage unavailable in this translation.');
 });
@@ -992,6 +994,42 @@ test('Compare selector block keeps the reference above balanced centered control
   expect(layout.sameRow).toBeTruthy();
   expect(layout.arrowPairs).toBe(2);
   expect(layout.oldButtons).toBe(0);
+});
+
+test('Study Desk panes use document scrolling instead of inner vertical scrollbars', async ({ page }) => {
+  await page.goto('/');
+  const readerFlow = await page.locator('#bibleApp').evaluate((app) => ({
+    containerOverflow: getComputedStyle(app).overflowY,
+    mainOverflow: getComputedStyle(app.querySelector('.bs-main')).overflowY,
+    activePaneOverflow: getComputedStyle(app.querySelector('.bs-view.active')).overflowY,
+    activePanePosition: getComputedStyle(app.querySelector('.bs-view.active')).position
+  }));
+  expect(readerFlow.containerOverflow).not.toMatch(/auto|scroll/);
+  expect(readerFlow.mainOverflow).not.toMatch(/auto|scroll/);
+  expect(readerFlow.activePaneOverflow).not.toMatch(/auto|scroll/);
+  expect(readerFlow.activePanePosition).toBe('relative');
+
+  const before = await page.evaluate(() => document.documentElement.scrollHeight);
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('1');
+  const readerHeight = await page.evaluate(() => ({ pageHeight: document.documentElement.scrollHeight, passageHeight: document.getElementById('readerContent').scrollHeight }));
+  expect(readerHeight.passageHeight).toBeGreaterThan(0);
+  expect(readerHeight.pageHeight).toBeGreaterThanOrEqual(before);
+
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('psalms');
+  await page.locator('#compareChapter').selectOption('23');
+  const compareFlow = await page.locator('#view-compare').evaluate((view) => ({
+    pageHeight: document.documentElement.scrollHeight,
+    paneOverflow: getComputedStyle(view).overflowY,
+    cardOverflows: [...view.querySelectorAll('.compare-col')].map((card) => getComputedStyle(card).overflowY)
+  }));
+  expect(compareFlow.paneOverflow).not.toMatch(/auto|scroll/);
+  expect(compareFlow.cardOverflows.every((overflow) => !/auto|scroll/.test(overflow))).toBeTruthy();
+  expect(compareFlow.pageHeight).toBeGreaterThanOrEqual(readerHeight.pageHeight);
+
+  await page.getByRole('button', { name: 'Fullscreen' }).click();
+  await expect(page.locator('#fsOverlay')).toHaveClass(/active/);
 });
 
 test('Compare edition count sits compactly beneath the Compare tab', async ({ page }) => {
