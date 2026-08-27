@@ -93,7 +93,9 @@
     <label class="sr-only" for="searchTranslation">Search translation</label>
     <span class="search-translation-control">
       <span id="searchTranslationLabel" aria-hidden="true">WEB</span>
-      <select id="searchTranslation" aria-label="Search translation"></select>
+      <button id="searchTranslationToggle" type="button" aria-label="Search translation" aria-haspopup="listbox" aria-expanded="false">WEB <span aria-hidden="true">▼</span></button>
+      <select id="searchTranslation" aria-hidden="true" tabindex="-1"></select>
+      <div id="searchTranslationMenu" class="search-translation-menu" role="listbox" aria-label="Search translations" hidden></div>
     </span>
     <button type="button" onclick="doSearch()">Search</button>
     <button id="searchClear" type="button" aria-label="Clear search" onclick="clearSearch()">×</button>

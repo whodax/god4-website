@@ -80,6 +80,8 @@ function getSearchTranslations(){
 function populateSearchTranslations(){
   var select = document.getElementById('searchTranslation');
   var label = document.getElementById('searchTranslationLabel');
+  var toggle = document.getElementById('searchTranslationToggle');
+  var menu = document.getElementById('searchTranslationMenu');
   var translations = getSearchTranslations();
   if(!select || !translations.length) return;
   select.innerHTML = '';
@@ -91,7 +93,42 @@ function populateSearchTranslations(){
   });
   searchTranslationId = translations.some(function(translation){ return translation.id === currentTranslation; }) ? currentTranslation : translations[0].id;
   select.value = searchTranslationId;
-  if(label) label.textContent = translations.find(function(translation){ return translation.id === searchTranslationId; }).abbreviation;
+  var selectedTranslation = translations.find(function(translation){ return translation.id === searchTranslationId; });
+  if(label) label.textContent = selectedTranslation.abbreviation;
+  if(toggle) toggle.innerHTML = escapeHtml(selectedTranslation.abbreviation) + ' <span aria-hidden="true">▼</span>';
+  if(menu){
+    menu.innerHTML = '';
+    translations.forEach(function(translation){
+      var option = document.createElement('button');
+      option.type = 'button';
+      option.className = 'search-translation-option';
+      option.setAttribute('role', 'option');
+      option.setAttribute('data-translation-id', translation.id);
+      option.setAttribute('aria-selected', translation.id === searchTranslationId ? 'true' : 'false');
+      option.textContent = translation.abbreviation;
+      option.addEventListener('click', function(){
+        select.value = translation.id;
+        select.dispatchEvent(new Event('change', { bubbles: true }));
+        closeSearchTranslationMenu();
+      });
+      menu.appendChild(option);
+    });
+  }
+}
+
+function closeSearchTranslationMenu(){
+  var menu = document.getElementById('searchTranslationMenu');
+  var toggle = document.getElementById('searchTranslationToggle');
+  if(menu) menu.hidden = true;
+  if(toggle) toggle.setAttribute('aria-expanded', 'false');
+}
+
+function toggleSearchTranslationMenu(){
+  var menu = document.getElementById('searchTranslationMenu');
+  var toggle = document.getElementById('searchTranslationToggle');
+  if(!menu || !toggle) return;
+  menu.hidden = !menu.hidden;
+  toggle.setAttribute('aria-expanded', menu.hidden ? 'false' : 'true');
 }
 
 function getSearchTranslation(){
@@ -256,8 +293,23 @@ window.addEventListener('DOMContentLoaded', function(){
     searchTranslationId = searchTranslation.value;
     var translation = getSearchTranslations().find(function(item){ return item.id === searchTranslationId; });
     var label = document.getElementById('searchTranslationLabel');
+    var toggle = document.getElementById('searchTranslationToggle');
+    var menu = document.getElementById('searchTranslationMenu');
     if(label && translation) label.textContent = translation.abbreviation;
+    if(toggle && translation) toggle.innerHTML = escapeHtml(translation.abbreviation) + ' <span aria-hidden="true">▼</span>';
+    if(menu) menu.querySelectorAll('[data-translation-id]').forEach(function(option){ option.setAttribute('aria-selected', option.getAttribute('data-translation-id') === searchTranslationId ? 'true' : 'false'); });
     if(searchInput && searchInput.value.trim()) doSearch();
+  });
+  var searchTranslationToggle = document.getElementById('searchTranslationToggle');
+  if(searchTranslationToggle){
+    searchTranslationToggle.addEventListener('click', toggleSearchTranslationMenu);
+    searchTranslationToggle.addEventListener('keydown', function(event){
+      if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); toggleSearchTranslationMenu(); }
+      if(event.key === 'Escape') closeSearchTranslationMenu();
+    });
+  }
+  document.addEventListener('click', function(event){
+    if(!event.target.closest('.search-translation-control')) closeSearchTranslationMenu();
   });
   var brandMark = document.getElementById('brandMark');
   if(brandMark){
