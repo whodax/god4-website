@@ -282,7 +282,10 @@ function toggleTray(){
 }
 
 /* ===== INIT ===== */
-window.addEventListener('DOMContentLoaded', function(){
+var appInitialized = false;
+function initializeApp(){
+  if(appInitialized) return;
+  appInitialized = true;
   var searchInput = document.getElementById('searchInput');
   if(searchInput) searchInput.addEventListener('input', function(){
     if(!searchInput.value.trim()) clearSearch();
@@ -328,4 +331,7 @@ window.addEventListener('DOMContentLoaded', function(){
   if(typeof loadCompare === 'function') loadCompare();
   if(typeof renderPlan === 'function') renderPlan();
   renderLeaf();
-});
+}
+
+if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeApp, { once: true });
+else initializeApp();
