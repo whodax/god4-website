@@ -228,7 +228,7 @@ window.addEventListener('DOMContentLoaded', function(){
       brandMark.classList.add('brand-mark--pulse');
     };
     brandMark.addEventListener('click', pulseBrandMark);
-    pulseBrandMark();
+    requestAnimationFrame(function(){ pulseBrandMark(); });
   }
   if(typeof populateTranslations === 'function') populateTranslations();
   if(typeof populateBooks === 'function') populateBooks();
