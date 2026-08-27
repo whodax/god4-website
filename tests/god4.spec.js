@@ -272,6 +272,17 @@ test('Custom Search translation dropdown visibly selects and refreshes DBY', asy
   await expect(toggle).toContainText('▼');
   await toggle.click();
   await expect(menu).toBeVisible();
+  const menuGeometry = await page.evaluate(() => {
+    const menuRect = document.getElementById('searchTranslationMenu').getBoundingClientRect();
+    const toggleRect = document.getElementById('searchTranslationToggle').getBoundingClientRect();
+    const searchBoxRect = document.querySelector('.search-box').getBoundingClientRect();
+    return { menuRect: { top: menuRect.top, bottom: menuRect.bottom, height: menuRect.height }, toggleBottom: toggleRect.bottom, searchBoxBottom: searchBoxRect.bottom };
+  });
+  expect(menuGeometry.menuRect.height).toBeGreaterThan(0);
+  expect(menuGeometry.menuRect.top).toBeGreaterThanOrEqual(menuGeometry.toggleBottom);
+  expect(menuGeometry.menuRect.bottom).toBeGreaterThan(menuGeometry.searchBoxBottom);
+  await expect(menu.locator('[data-translation-id="dby"]')).toBeVisible();
+  await expect(menu.locator('[data-translation-id="dby"]')).toBeEnabled();
   await expect(menu.locator('[role="option"]')).toHaveCount(8);
   await expect(menu.locator('[data-translation-id="demo-local"]')).toHaveCount(0);
   await search.fill('fear');
