@@ -90,6 +90,8 @@
   <div class="search-box">
     <label class="sr-only" for="searchInput">Search Scripture</label>
     <input id="searchInput" type="search" placeholder='Try "faith" or "Psalm 23"' onkeydown="if(event.key==='Enter')doSearch(); if(event.key==='Escape')clearSearch()">
+    <label class="sr-only" for="searchTranslation">Search translation</label>
+    <select id="searchTranslation" aria-label="Search translation"></select>
     <button type="button" onclick="doSearch()">Search</button>
     <button id="searchClear" type="button" aria-label="Clear search" onclick="clearSearch()">×</button>
   </div>

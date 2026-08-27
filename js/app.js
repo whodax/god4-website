@@ -18,6 +18,7 @@ const SEARCH_BATCH_SIZE = 10;
 let searchMatches = [];
 let searchVisibleCount = 0;
 let searchStatus = '';
+let searchTranslationId = '';
 
 function renderLeaf(){
   const v = verses[idx];
@@ -69,12 +70,34 @@ function toggleFavFromHero(){
   toggleFav(v.ref, v.text, document.getElementById('heroFav'));
 }
 
-function getSearchTranslation(){
+function getSearchTranslations(){
   var translations = typeof BibleData === 'undefined' ? [] : BibleData.listTranslations().filter(function(translation){
     return translation.provider !== 'demo-library' && BibleData.listBooks(translation.id).length > 0;
   });
+  return translations;
+}
+
+function populateSearchTranslations(){
+  var select = document.getElementById('searchTranslation');
+  var translations = getSearchTranslations();
+  if(!select || !translations.length) return;
+  select.innerHTML = '';
+  translations.forEach(function(translation){
+    var option = document.createElement('option');
+    option.value = translation.id;
+    option.textContent = translation.abbreviation;
+    select.appendChild(option);
+  });
+  searchTranslationId = translations.some(function(translation){ return translation.id === currentTranslation; }) ? currentTranslation : translations[0].id;
+  select.value = searchTranslationId;
+}
+
+function getSearchTranslation(){
+  var translations = getSearchTranslations();
   if(!translations.length) return null;
-  return translations.find(function(translation){ return translation.id === currentTranslation; }) || translations[0];
+  var selected = document.getElementById('searchTranslation');
+  searchTranslationId = selected && translations.some(function(translation){ return translation.id === selected.value; }) ? selected.value : searchTranslationId;
+  return translations.find(function(translation){ return translation.id === searchTranslationId; }) || translations.find(function(translation){ return translation.id === currentTranslation; }) || translations[0];
 }
 
 function parseSearchReference(query, translationId){
@@ -92,8 +115,10 @@ function parseSearchReference(query, translationId){
 
 function navigateSearchResult(result){
   if(!result) return;
-  var book = BibleData.listBooks(currentTranslation).find(function(item){ return item.id === result.bookId; });
+  var book = BibleData.listBooks(result.translationId || currentTranslation).find(function(item){ return item.id === result.bookId; });
   if(!book || typeof navigateToSpokenBook !== 'function') return;
+  var previousTranslation = currentTranslation;
+  if(result.translationId && result.translationId !== currentTranslation && typeof changeTranslation === 'function') changeTranslation(result.translationId);
   navigateToSpokenBook(book.name, result.chapter, result.isChapter ? undefined : result.verse);
   document.getElementById('companion').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -104,7 +129,7 @@ function createSearchResultCard(result, index){
   card.className = 'result-card result-card-button';
   card.style.animationDelay = (index * 0.03) + 's';
   var reference = result.isChapter ? result.bookName + ' ' + result.chapter : result.bookName + ' ' + result.chapter + ':' + result.verse;
-  card.innerHTML = '<span><span class="txt">&quot;' + escapeHtml(result.text) + '&quot;</span><span class="ref">' + escapeHtml(reference) + '</span></span><span class="result-open">Open</span>';
+  card.innerHTML = '<span><span class="txt">&quot;' + escapeHtml(result.text) + '&quot;</span><span class="ref">' + escapeHtml(reference) + ' <small>' + escapeHtml(result.translationAbbreviation || '') + '</small></span></span><span class="result-open">Open</span>';
   card.addEventListener('click', function(){ navigateSearchResult(result); });
   return card;
 }
@@ -162,16 +187,19 @@ function doSearch(){
   if(reference){
     var chapter = BibleData.getChapter(translation.id, reference.bookId, reference.chapter);
     if(chapter && reference.verse === null){
-      matches = chapter.verses.map(function(text, index){ return { bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: index + 1, isChapter: index === 0, text: text }; });
+      matches = chapter.verses.map(function(text, index){ return { translationId: translation.id, translationAbbreviation: translation.abbreviation, bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: index + 1, isChapter: index === 0, text: text }; });
     } else if(chapter && BibleData.getVerse(translation.id, reference.bookId, reference.chapter, reference.verse)){
       var verse = BibleData.getVerse(translation.id, reference.bookId, reference.chapter, reference.verse);
-      matches = [{ bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: reference.verse, text: verse.text }];
+      matches = [{ translationId: translation.id, translationAbbreviation: translation.abbreviation, bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: reference.verse, text: verse.text }];
     }
   } else {
     var keyword = query.replace(/^(?:show me|what does|tell me about)\s+/i, '').replace(/\s+(?:say|please)$/i, '').trim();
     matches = BibleData.search(translation.id, keyword).sort(function(first, second){
       var exactPattern = new RegExp('(^|[^a-z])' + keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z]|$)', 'i');
       return Number(exactPattern.test(second.text)) - Number(exactPattern.test(first.text));
+    }).map(function(match){
+      match.translationAbbreviation = translation.abbreviation;
+      return match;
     });
   }
   if(!matches.length){
@@ -220,6 +248,9 @@ window.addEventListener('DOMContentLoaded', function(){
   if(searchInput) searchInput.addEventListener('input', function(){
     if(!searchInput.value.trim()) clearSearch();
   });
+  populateSearchTranslations();
+  var searchTranslation = document.getElementById('searchTranslation');
+  if(searchTranslation) searchTranslation.addEventListener('change', function(){ searchTranslationId = searchTranslation.value; });
   var brandMark = document.getElementById('brandMark');
   if(brandMark){
     var pulseBrandMark = function(){

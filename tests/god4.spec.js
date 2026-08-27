@@ -199,6 +199,39 @@ test('Search results progressively reveal broad matches and clear cleanly', asyn
   await expect(results.locator('.result-card')).toHaveCount(1);
 });
 
+test('Search translation selection is independent and drives exact results and OPEN', async ({ page }) => {
+  await page.goto('/');
+  const searchTranslation = page.locator('#searchTranslation');
+  await expect(searchTranslation).toBeVisible();
+  const options = await searchTranslation.locator('option').evaluateAll((items) => items.map((item) => ({ value: item.value, text: item.textContent })));
+  expect(options.some((option) => option.value === 'web')).toBeTruthy();
+  expect(options.some((option) => option.value === 'asv')).toBeTruthy();
+  expect(options.some((option) => option.value === 'demo-local')).toBeFalsy();
+
+  await expect(searchTranslation).toHaveValue('web');
+  const readerTranslation = page.locator('#readerTranslation');
+  await expect(readerTranslation).toHaveValue('web');
+  await searchTranslation.selectOption('asv');
+  await expect(searchTranslation).toHaveValue('asv');
+  await expect(readerTranslation).toHaveValue('web');
+  await page.locator('#searchInput').fill('John 3:16');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await expect(page.locator('#results .result-card')).toHaveCount(1);
+  await expect(page.locator('#results .ref')).toContainText('ASV');
+  await expect(page.locator('#results .txt')).toContainText('For God so loved the world');
+  await page.locator('#results .result-card').click();
+  await expect(readerTranslation).toHaveValue('asv');
+  await expect(page.locator('#bookSelect')).toHaveValue('john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('16');
+
+  await searchTranslation.selectOption('web');
+  await page.locator('#searchInput').fill('beginning');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await expect(page.locator('#results .result-card')).toHaveCount(10);
+  await expect(page.locator('#results .ref').first()).toContainText('WEB');
+});
+
 test('Bible data interface exposes the current local dataset', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('#readerTranslation')).toHaveValue('web');
