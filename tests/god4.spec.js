@@ -203,12 +203,14 @@ test('Search translation selection is independent and drives exact results and O
   await page.goto('/');
   const searchTranslation = page.locator('#searchTranslation');
   await expect(searchTranslation).toBeVisible();
+  await expect(searchTranslation).toHaveValue('web');
+  await expect(searchTranslation.locator('option:checked')).toHaveText('WEB');
+  await expect.poll(() => searchTranslation.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThanOrEqual(74);
   const options = await searchTranslation.locator('option').evaluateAll((items) => items.map((item) => ({ value: item.value, text: item.textContent })));
   expect(options.some((option) => option.value === 'web')).toBeTruthy();
   expect(options.some((option) => option.value === 'asv')).toBeTruthy();
   expect(options.some((option) => option.value === 'demo-local')).toBeFalsy();
 
-  await expect(searchTranslation).toHaveValue('web');
   const readerTranslation = page.locator('#readerTranslation');
   await expect(readerTranslation).toHaveValue('web');
   await searchTranslation.selectOption('asv');
