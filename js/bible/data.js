@@ -22,6 +22,83 @@ const BibleData = (function createBibleDataAccess(){
     licensingNotes: 'The text is public domain. “World English Bible” is a trademark of eBible.org.',
     offlineAllowed: true,
     provider: 'web-library'
+  }, {
+    id: 'asv',
+    name: 'American Standard Version (1901)',
+    abbreviation: 'ASV',
+    language: 'English',
+    source: 'eBible.org — https://ebible.org/eng-asv/',
+    copyrightStatus: 'Public domain',
+    attribution: 'American Standard Version (1901), eBible.org',
+    licensingNotes: 'The American Standard Version (1901) is public domain. Source archive: eng-asv_usfm.zip.',
+    offlineAllowed: true,
+    provider: 'asv-library'
+  }, {
+    id: 'kjv',
+    name: 'King James Version',
+    abbreviation: 'KJV',
+    language: 'English',
+    source: 'eBible.org / CrossWire Bible Society — https://ebible.org/eng-kjv/',
+    copyrightStatus: 'Public domain outside the United Kingdom',
+    attribution: 'King James Version, standardized 1769 text, eBible.org / CrossWire Bible Society',
+    licensingNotes: 'eBible.org identifies this text as public domain outside the UK. The source edition includes Apocrypha; this repository imports the canonical 66 Protestant books only.',
+    offlineAllowed: true,
+    provider: 'kjv-library'
+  }, {
+    id: 'ylt',
+    name: 'Young’s Literal Translation',
+    abbreviation: 'YLT',
+    language: 'English',
+    source: 'eBible.org — https://ebible.org/engylt/',
+    copyrightStatus: 'Public domain',
+    attribution: 'Young’s Literal Translation, eBible.org',
+    licensingNotes: 'eBible.org identifies the Young’s Literal Translation as public domain. Source archive: engylt_usfm.zip.',
+    offlineAllowed: true,
+    provider: 'ylt-library'
+  }, {
+    id: 'dby',
+    name: 'Darby Translation',
+    abbreviation: 'DBY',
+    language: 'English',
+    source: 'eBible.org — https://ebible.org/engDBY/',
+    copyrightStatus: 'Public domain',
+    attribution: 'The Holy Scriptures, a New Translation from the Original Languages by J. N. Darby, eBible.org',
+    licensingNotes: 'eBible.org identifies the Darby Translation as public domain. Source archive: engDBY_usfm.zip.',
+    offlineAllowed: true,
+    provider: 'dby-library'
+  }, {
+    id: 'webster',
+    name: 'Webster Bible (1833)',
+    abbreviation: 'WBS',
+    language: 'English',
+    source: 'eBible.org — https://ebible.org/engwebster/',
+    copyrightStatus: 'Public domain',
+    attribution: 'The Holy Bible, with amendments of the language by Noah Webster, eBible.org',
+    licensingNotes: 'eBible.org identifies the Noah Webster Bible as public domain. Source archive: engwebster_vpl.zip.',
+    offlineAllowed: true,
+    provider: 'webster-library'
+  }, {
+    id: 'rv',
+    name: 'Revised Version (1895)',
+    abbreviation: 'RV',
+    language: 'English',
+    source: 'eBible.org — https://ebible.org/eng-rv/',
+    copyrightStatus: 'Public domain',
+    attribution: 'Revised Version (1895), eBible.org',
+    licensingNotes: 'eBible.org identifies the Revised Version as public domain. Source archive: eng-rv_usfm.zip. GOD4.us imports only the canonical 66 Protestant books from the larger distribution.',
+    offlineAllowed: true,
+    provider: 'rv-library'
+  }, {
+    id: 'gnv',
+    name: 'Geneva Bible 1599',
+    abbreviation: 'GNV',
+    language: 'English',
+    source: 'eBible.org — https://ebible.org/enggnv/',
+    copyrightStatus: 'Public domain',
+    attribution: 'Geneva Bible 1599, eBible.org',
+    licensingNotes: 'eBible.org identifies this digital copy as public domain and freely available worldwide. Source archive: enggnv_usfm.zip. GOD4.us preserves the original historical spelling.',
+    offlineAllowed: true,
+    provider: 'gnv-library'
   }];
 
   function getTranslation(translationId){
@@ -35,6 +112,14 @@ const BibleData = (function createBibleDataAccess(){
     if(!translation) return null;
     if(translation.provider === 'demo-library' && typeof library !== 'undefined') return library;
     if(translation.provider === 'web-library' && typeof webLibrary !== 'undefined') return webLibrary;
+    if(translation.provider === 'asv-library' && typeof asvLibrary !== 'undefined') return asvLibrary;
+    if(translation.provider === 'kjv-library' && typeof kjvLibrary !== 'undefined') return kjvLibrary;
+    if(translation.provider === 'ylt-library' && typeof yltLibrary !== 'undefined') return yltLibrary;
+    if(translation.provider === 'dby-library' && typeof dbyLibrary !== 'undefined') return dbyLibrary;
+    if(translation.provider === 'webster-library' && typeof websterLibrary !== 'undefined') return websterLibrary;
+    if(translation.provider === 'rv-library' && typeof rvLibrary !== 'undefined') return rvLibrary;
+    if(translation.provider === 'gnv-library' && typeof gnvLibrary !== 'undefined') return gnvLibrary;
+    if(translation.provider === 'gnv-library' && typeof gnvLibrary !== 'undefined') return gnvLibrary;
     return null;
   }
 

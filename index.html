@@ -28,7 +28,18 @@
 
 <nav aria-label="Main navigation">
   <div class="brand">
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v20M4 8h16" stroke="#B8862B" stroke-width="1.6"/></svg>
+    <button class="brand-mark" id="brandMark" type="button" aria-label="Activate cross heart">
+      <svg viewBox="0 0 72 72" fill="none" aria-hidden="true">
+        <path class="brand-cross" d="M36 5v62M13 25h46"/>
+        <g class="brand-rays" aria-hidden="true">
+          <path d="M36 23v-13"/>
+          <path d="M36 49v13"/>
+          <path d="M23 36h-13"/>
+          <path d="M49 36h13"/>
+        </g>
+        <path class="brand-heart" d="M36 46.75s-12-7.1-12-14.8c0-4 2.8-6.7 6.2-6.7 2.4 0 4.5 1.4 5.8 3.5 1.3-2.1 3.4-3.5 5.8-3.5 3.4 0 6.2 2.7 6.2 6.7C48 39.65 36 46.75 36 46.75Z"/>
+      </svg>
+    </button>
     GOD4.us
   </div>
   <div class="navlinks">
@@ -78,10 +89,11 @@
   </div>
   <div class="search-box">
     <label class="sr-only" for="searchInput">Search Scripture</label>
-    <input id="searchInput" type="search" placeholder='Try "faith" or "Psalm 23"' onkeydown="if(event.key==='Enter')doSearch()">
+    <input id="searchInput" type="search" placeholder='Try "faith" or "Psalm 23"' onkeydown="if(event.key==='Enter')doSearch(); if(event.key==='Escape')clearSearch()">
     <button type="button" onclick="doSearch()">Search</button>
+    <button id="searchClear" type="button" aria-label="Clear search" onclick="clearSearch()">×</button>
   </div>
-  <div class="search-hint">Searching a small demo set of public-domain verses for this prototype.</div>
+  <div class="search-hint">Searches the complete Bible text in the current translation.</div>
   <div class="results" id="results"></div>
 </section>
 
@@ -96,7 +108,15 @@
       <div class="bs-title">Study Desk</div>
       <div class="bs-nav">
         <button class="bs-btn active" type="button" aria-controls="view-reader" aria-pressed="true" onclick="switchView('reader',this)">Reader</button>
-        <button class="bs-btn" type="button" aria-controls="view-compare" aria-pressed="false" onclick="switchView('compare',this)">Compare</button>
+        <div class="compare-tab-control">
+          <button class="bs-btn" type="button" aria-controls="view-compare" aria-pressed="false" onclick="switchView('compare',this)">Compare</button>
+          <div class="compare-edition-control" aria-label="Number of editions to compare">
+            <span class="sr-only">Compare:</span>
+            <button type="button" data-compare-count="2" aria-label="2 editions" aria-pressed="true">2</button>
+            <button type="button" data-compare-count="3" aria-label="3 editions" aria-pressed="false">3</button>
+            <button type="button" data-compare-count="4" aria-label="4 editions" aria-pressed="false">4</button>
+          </div>
+        </div>
         <button class="bs-btn" type="button" aria-controls="view-plan" aria-pressed="false" onclick="switchView('plan',this)">Plan</button>
         <button class="bs-btn" id="fullscreenBtn" type="button" aria-pressed="false" onclick="toggleFullscreen()">Fullscreen</button>
       </div>
@@ -159,14 +179,26 @@
       </div>
       <!-- COMPARE -->
       <div class="bs-view" id="view-compare">
-        <div class="selector-row">
-          <label class="sr-only" for="compareBook">Passage to compare</label>
-          <select id="compareBook" onchange="loadCompare()">
-            <option value="john3">John 3:16-18</option>
-            <option value="psalm23">Psalm 23</option>
-            <option value="romans8">Romans 8:28-30</option>
-            <option value="phil4">Philippians 4:6-7</option>
-          </select>
+        <div id="compareSummary" class="compare-summary" aria-live="polite"></div>
+        <div class="selector-row compare-selector-row">
+          <label class="sr-only" for="compareBook">Book to compare</label>
+          <select id="compareBook"></select>
+          <label class="sr-only" for="compareChapter">Chapter to compare</label>
+          <div class="compare-selector-with-nav">
+            <select id="compareChapter"></select>
+            <div class="compare-arrow-pair" aria-label="Chapter navigation">
+              <button id="compareChapterPrevious" type="button" aria-label="Previous chapter" title="Previous chapter" onclick="navigateCompareChapter(-1)">←</button>
+              <button id="compareChapterNext" type="button" aria-label="Next chapter" title="Next chapter" onclick="navigateCompareChapter(1)">→</button>
+            </div>
+          </div>
+          <label class="sr-only" for="compareVerse">Verse to compare</label>
+          <div class="compare-selector-with-nav">
+            <select id="compareVerse"></select>
+            <div class="compare-arrow-pair" aria-label="Verse navigation">
+              <button id="compareVersePrevious" type="button" aria-label="Previous verse" title="Previous verse" onclick="navigateCompareVerse(-1)">←</button>
+              <button id="compareVerseNext" type="button" aria-label="Next verse" title="Next verse" onclick="navigateCompareVerse(1)">→</button>
+            </div>
+          </div>
         </div>
         <div class="compare-grid" id="compareGrid"></div>
       </div>
@@ -295,6 +327,13 @@
 <noscript><p class="noscript-message">GOD4.us requires JavaScript for the interactive reader, search, and saved verses.</p></noscript>
 <script defer src="js/bible/library.js"></script>
 <script defer src="js/bible/web.js"></script>
+<script defer src="js/bible/asv.js"></script>
+<script defer src="js/bible/kjv.js"></script>
+<script defer src="js/bible/ylt.js"></script>
+<script defer src="js/bible/dby.js"></script>
+<script defer src="js/bible/webster.js"></script>
+<script defer src="js/bible/rv.js"></script>
+<script defer src="js/bible/gnv.js"></script>
 <script defer src="js/bible/data.js"></script>
 <script defer src="js/bible/speech.js"></script>
 <script defer src="js/bible/reader.js"></script>

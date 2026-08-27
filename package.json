@@ -5,7 +5,13 @@
   "scripts": {
     "test": "npm run test:validate && npm run test:e2e",
     "test:e2e": "playwright test",
-    "test:validate": "node tests/validate-assets.js"
+    "test:validate": "node tests/validate-assets.js",
+    "import:kjv": "node tools/import-kjv.js",
+    "import:ylt": "node tools/import-ylt.js",
+    "import:dby": "node tools/import-dby.js",
+    "import:webster": "node tools/import-webster.js",
+    "import:rv": "node tools/import-rv.js",
+    "import:gnv": "node tools/import-gnv.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",

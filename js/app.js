@@ -14,6 +14,10 @@ const verses = [
 
 let idx = 0;
 let saved = [];
+const SEARCH_BATCH_SIZE = 10;
+let searchMatches = [];
+let searchVisibleCount = 0;
+let searchStatus = '';
 
 function renderLeaf(){
   const v = verses[idx];
@@ -65,27 +69,118 @@ function toggleFavFromHero(){
   toggleFav(v.ref, v.text, document.getElementById('heroFav'));
 }
 
-function doSearch(){
-  var q = document.getElementById('searchInput').value.trim().toLowerCase();
+function getSearchTranslation(){
+  var translations = typeof BibleData === 'undefined' ? [] : BibleData.listTranslations().filter(function(translation){
+    return translation.provider !== 'demo-library' && BibleData.listBooks(translation.id).length > 0;
+  });
+  if(!translations.length) return null;
+  return translations.find(function(translation){ return translation.id === currentTranslation; }) || translations[0];
+}
+
+function parseSearchReference(query, translationId){
+  var cleaned = String(query || '').trim().replace(/[()]/g, '').replace(/[?!.]+$/g, '').replace(/^\s*(?:show me|what does|tell me about|open|go to)\s+/i, '').replace(/\s+(?:say|please)$/i, '').trim();
+  var books = BibleData.listBooks(translationId).sort(function(first, second){ return second.name.length - first.name.length; });
+  for(var index = 0; index < books.length; index++){
+    var book = books[index];
+    var match = new RegExp('^' + book.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s+(?:chapter\\s+)?(\\d+)(?:(?:\\s*:\\s*|\\s+verse\\s+|\\s+)(\\d+))?$', 'i').exec(cleaned);
+    if(match){
+      return { bookId: book.id, bookName: book.name, chapter: Number(match[1]), verse: match[2] ? Number(match[2]) : null };
+    }
+  }
+  return null;
+}
+
+function navigateSearchResult(result){
+  if(!result) return;
+  var book = BibleData.listBooks(currentTranslation).find(function(item){ return item.id === result.bookId; });
+  if(!book || typeof navigateToSpokenBook !== 'function') return;
+  navigateToSpokenBook(book.name, result.chapter, result.isChapter ? undefined : result.verse);
+  document.getElementById('companion').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function createSearchResultCard(result, index){
+  var card = document.createElement('button');
+  card.type = 'button';
+  card.className = 'result-card result-card-button';
+  card.style.animationDelay = (index * 0.03) + 's';
+  var reference = result.isChapter ? result.bookName + ' ' + result.chapter : result.bookName + ' ' + result.chapter + ':' + result.verse;
+  card.innerHTML = '<span><span class="txt">&quot;' + escapeHtml(result.text) + '&quot;</span><span class="ref">' + escapeHtml(reference) + '</span></span><span class="result-open">Open</span>';
+  card.addEventListener('click', function(){ navigateSearchResult(result); });
+  return card;
+}
+
+function renderSearchResults(){
   var box = document.getElementById('results');
+  if(!box) return;
   box.innerHTML = '';
-  if(!q){ return; }
-  var matches = verses.filter(function(v){ return v.text.toLowerCase().indexOf(q) !== -1 || v.ref.toLowerCase().indexOf(q) !== -1; });
-  if(matches.length === 0){
-    box.innerHTML = '<div class="no-results">No verses matched in this demo set — the live version would search the full Bible text.</div>';
+  var visibleMatches = searchMatches.slice(0, searchVisibleCount);
+  visibleMatches.forEach(function(match, index){ box.appendChild(createSearchResultCard(match, index)); });
+  if(searchMatches.length){
+    var status = document.createElement('div');
+    status.className = 'search-status';
+    status.textContent = 'Showing ' + visibleMatches.length + ' of ' + searchMatches.length + ' matches';
+    box.appendChild(status);
+  }
+  if(searchVisibleCount < searchMatches.length){
+    var more = document.createElement('button');
+    more.type = 'button';
+    more.className = 'search-more';
+    more.textContent = 'Show more';
+    more.addEventListener('click', function(){
+      searchVisibleCount = Math.min(searchVisibleCount + SEARCH_BATCH_SIZE, searchMatches.length);
+      renderSearchResults();
+    });
+    box.appendChild(more);
+  }
+}
+
+function clearSearch(){
+  var input = document.getElementById('searchInput');
+  var box = document.getElementById('results');
+  if(input) input.value = '';
+  searchMatches = [];
+  searchVisibleCount = 0;
+  searchStatus = '';
+  if(box) box.innerHTML = '';
+}
+
+function doSearch(){
+  var query = document.getElementById('searchInput').value.trim();
+  var box = document.getElementById('results');
+  if(!query){ clearSearch(); return; }
+  searchMatches = [];
+  searchVisibleCount = 0;
+  searchStatus = '';
+  box.innerHTML = '';
+  var translation = getSearchTranslation();
+  if(!translation){
+    box.innerHTML = '<div class="no-results">Search is unavailable because no complete translation is loaded.</div>';
     return;
   }
-  matches.forEach(function(v, i){
-    var card = document.createElement('div');
-    card.className = 'result-card';
-    card.style.animationDelay = (i*0.05)+'s';
-    var favChar = isSaved(v.ref) ? '♥' : '♡';
-    var favClass = isSaved(v.ref) ? 'fav-btn active' : 'fav-btn';
-    var safeRef = v.ref.replace(/'/g, "\\'");
-    var safeText = v.text.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-    card.innerHTML = '<div><div class="txt">"' + v.text + '"</div><div class="ref">' + v.ref + '</div></div><button class="' + favClass + '" onclick="toggleFav(\'' + safeRef + '\', \'' + safeText + '\', this)">' + favChar + '</button>';
-    box.appendChild(card);
-  });
+  var reference = parseSearchReference(query, translation.id);
+  var matches = [];
+  if(reference){
+    var chapter = BibleData.getChapter(translation.id, reference.bookId, reference.chapter);
+    if(chapter && reference.verse === null){
+      matches = chapter.verses.map(function(text, index){ return { bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: index + 1, isChapter: index === 0, text: text }; });
+    } else if(chapter && BibleData.getVerse(translation.id, reference.bookId, reference.chapter, reference.verse)){
+      var verse = BibleData.getVerse(translation.id, reference.bookId, reference.chapter, reference.verse);
+      matches = [{ bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: reference.verse, text: verse.text }];
+    }
+  } else {
+    var keyword = query.replace(/^(?:show me|what does|tell me about)\s+/i, '').replace(/\s+(?:say|please)$/i, '').trim();
+    matches = BibleData.search(translation.id, keyword).sort(function(first, second){
+      var exactPattern = new RegExp('(^|[^a-z])' + keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z]|$)', 'i');
+      return Number(exactPattern.test(second.text)) - Number(exactPattern.test(first.text));
+    });
+  }
+  if(!matches.length){
+    box.innerHTML = '<div class="no-results">No verses matched in ' + escapeHtml(translation.abbreviation) + '.</div>';
+    return;
+  }
+  searchMatches = matches;
+  searchVisibleCount = Math.min(SEARCH_BATCH_SIZE, searchMatches.length);
+  renderSearchResults();
 }
 
 function renderTray(){
@@ -121,6 +216,20 @@ function toggleTray(){
 
 /* ===== INIT ===== */
 window.addEventListener('DOMContentLoaded', function(){
+  var searchInput = document.getElementById('searchInput');
+  if(searchInput) searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()) clearSearch();
+  });
+  var brandMark = document.getElementById('brandMark');
+  if(brandMark){
+    var pulseBrandMark = function(){
+      brandMark.classList.remove('brand-mark--pulse');
+      void brandMark.offsetWidth;
+      brandMark.classList.add('brand-mark--pulse');
+    };
+    brandMark.addEventListener('click', pulseBrandMark);
+    pulseBrandMark();
+  }
   if(typeof populateTranslations === 'function') populateTranslations();
   if(typeof populateBooks === 'function') populateBooks();
   if(typeof populateChapters === 'function') populateChapters();

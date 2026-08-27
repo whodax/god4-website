@@ -1,161 +1,373 @@
-const compareData = {
-  john3: {
-    ref: 'John 3:16-18',
-    niv: [
-      'For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.',
-      'For God did not send his Son into the world to condemn the world, but to save the world through him.',
-      'Whoever believes in him is not condemned, but whoever does not believe stands condemned already because they have not believed in the name of God\'s one and only Son.'
-    ],
-    esv: [
-      'For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.',
-      'For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him.',
-      'Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God.'
-    ],
-    kjv: [
-      'For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.',
-      'For God sent not his Son into the world to condemn the world; but that the world through him might be saved.',
-      'He that believeth on him is not condemned: but he that believeth not is condemned already, because he hath not believed in the name of the only begotten Son of God.'
-    ],
-    msg: [
-      'This is how much God loved the world: He gave his Son, his one and only Son. And this is why: so that no one need be destroyed; by believing in him, anyone can have a whole and lasting life.',
-      'God didn\'t go to all the trouble of sending his Son merely to point an accusing finger, telling the world how bad it was. He came to help, to put the world right again.',
-      'Anyone who trusts in him is acquitted; anyone who refuses to trust him has long since been under the death sentence without knowing it.'
-    ]
-  },
-  psalm23: {
-    ref: 'Psalm 23',
-    niv: [
-      'The LORD is my shepherd, I lack nothing.',
-      'He makes me lie down in green pastures, he leads me beside quiet waters,',
-      'he refreshes my soul. He guides me along the right paths for his name\'s sake.',
-      'Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff, they comfort me.',
-      'You prepare a table before me in the presence of my enemies. You anoint my head with oil; my cup overflows.',
-      'Surely your goodness and love will follow me all the days of my life, and I will dwell in the house of the LORD forever.'
-    ],
-    esv: [
-      'The LORD is my shepherd; I shall not want.',
-      'He makes me lie down in green pastures. He leads me beside still waters.',
-      'He restores my soul. He leads me in paths of righteousness for his name\'s sake.',
-      'Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.',
-      'You prepare a table before me in the presence of my enemies; you anoint my head with oil; my cup overflows.',
-      'Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the LORD forever.'
-    ],
-    kjv: [
-      'The LORD is my shepherd; I shall not want.',
-      'He maketh me to lie down in green pastures: he leadeth me beside the still waters.',
-      'He restoreth my soul: he leadeth me in the paths of righteousness for his name\'s sake.',
-      'Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.',
-      'Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.',
-      'Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.'
-    ],
-    msg: [
-      'GOD, my shepherd! I don\'t need a thing.',
-      'You have bedded me down in lush meadows, you find me quiet pools to drink from.',
-      'True to your word, you let me catch my breath and send me in the right direction.',
-      'Even when the way goes through Death Valley, I\'m not afraid when you walk at my side. Your trusty shepherd\'s crook makes me feel secure.',
-      'You serve me a six-course dinner right in front of my enemies. You revive my drooping head; my cup brims with blessing.',
-      'Your beauty and love chase after me every day of my life. I\'m back home in the house of GOD for the rest of my life.'
-    ]
-  },
-  romans8: {
-    ref: 'Romans 8:28-30',
-    niv: [
-      'And we know that in all things God works for the good of those who love him, who have been called according to his purpose.',
-      'For those God foreknew he also predestined to be conformed to the image of his Son, that he might be the firstborn among many brothers and sisters.',
-      'And those he predestined, he also called; those he called, he also justified; those he justified, he also glorified.'
-    ],
-    esv: [
-      'And we know that for those who love God all things work together for good, for those who are called according to his purpose.',
-      'For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers.',
-      'And those whom he predestined he also called, and those whom he called he also justified, and those whom he justified he also glorified.'
-    ],
-    kjv: [
-      'And we know that all things work together for good to them that love God, to them who are the called according to his purpose.',
-      'For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he might be the firstborn among many brethren.',
-      'Moreover whom he did predestinate, them he also called: and whom he called, them he also justified: and whom he justified, them he also glorified.'
-    ],
-    msg: [
-      'That\'s why we can be so sure that every detail in our lives of love for God is worked into something good.',
-      'God knew what he was doing from the very beginning. He decided from the outset to shape the lives of those who love him along the same lines as the life of his Son.',
-      'After God made that decision of what his children should be like, he followed it up by calling people by name. After he called them by name, he set them on a solid basis with himself. And then, after getting them established, he stayed with them to the end, gloriously completing what he had begun.'
-    ]
-  },
-  phil4: {
-    ref: 'Philippians 4:6-7',
-    niv: [
-      'Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.',
-      'And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.'
-    ],
-    esv: [
-      'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
-      'And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.'
-    ],
-    kjv: [
-      'Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.',
-      'And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.'
-    ],
-    msg: [
-      'Don\'t fret or worry. Instead of worrying, pray. Let petitions and praises shape your worries into prayers, letting God know your concerns.',
-      'Before you know it, a sense of God\'s wholeness, everything coming together for good, will come and settle you down. It\'s wonderful what happens when Christ displaces worry at the center of your life.'
-    ]
-  }
-};
+const COMPARE_STATE_KEY = 'god4.compare';
+const compareState = { count: 2, selections: ['', '', '', ''], persisted: false };
+const compareReference = { bookId: '', chapter: 1, verse: null };
 
-let leftTrans = 'niv';
-let rightTrans = 'esv';
+function loadCompareState(){
+  try {
+    var stored = JSON.parse(localStorage.getItem(COMPARE_STATE_KEY) || '{}');
+    if([2, 3, 4].indexOf(stored.count) !== -1) compareState.count = stored.count;
+    if(Array.isArray(stored.selections)) stored.selections.slice(0, 4).forEach(function(value, index){ compareState.selections[index] = value; });
+    compareState.persisted = stored.persisted === true;
+  } catch(error) {}
+}
 
-const webComparePassages = {
-  john3: { book: 'john', chapter: 3, start: 16, end: 18 },
-  psalm23: { book: 'psalms', chapter: 23, start: 1, end: 6 },
-  romans8: { book: 'romans', chapter: 8, start: 28, end: 30 },
-  phil4: { book: 'philippians', chapter: 4, start: 6, end: 7 }
-};
+function saveCompareState(){
+  localStorage.setItem(COMPARE_STATE_KEY, JSON.stringify(compareState));
+}
 
-function getCompareVerses(translationId, passageKey, data){
-  var passage = webComparePassages[passageKey];
-  if(translationId !== 'web') return data[translationId].map(function(text, index){
-    return { number: (passage ? passage.start : 1) + index, text: text };
+function syncCompareDefaultTranslation(){
+  var compareView = document.getElementById('view-compare');
+  if(compareState.persisted || (compareView && compareView.classList.contains('active'))) return;
+  var translations = getCompareTranslations();
+  if(!translations.some(function(translation){ return translation.id === currentTranslation; })) return;
+  compareState.selections[0] = currentTranslation;
+  var alternate = translations.find(function(translation){ return translation.id !== currentTranslation; });
+  if(alternate) compareState.selections[1] = alternate.id;
+  ensureCompareSelections();
+}
+
+function getCompareTranslations(){
+  if(typeof BibleData === 'undefined') return [];
+  return BibleData.listTranslations().filter(function(translation){
+    return translation.provider !== 'demo-library' && BibleData.listBooks(translation.id).length > 0;
+  }).map(function(translation){
+    return { id: translation.id, abbreviation: translation.abbreviation || translation.id.toUpperCase(), name: translation.name };
   });
-  if(!passage || typeof BibleData === 'undefined') return [];
-  var verses = [];
-  for(var verseNumber = passage.start; verseNumber <= passage.end; verseNumber++){
-    var verse = BibleData.getVerse('web', passage.book, passage.chapter, verseNumber);
-    if(verse) verses.push({ number: verse.verse, text: verse.text });
+}
+
+function getCompareBooks(){
+  if(typeof BibleData === 'undefined') return [];
+  var books = [];
+  getCompareTranslations().forEach(function(translation){
+    BibleData.listBooks(translation.id).forEach(function(book){
+      if(!books.some(function(existing){ return existing.id === book.id; })) books.push(book);
+    });
+  });
+  return books;
+}
+
+function getCompareChapter(translationId, bookId, chapter){
+  var result = BibleData.getChapter(translationId, bookId, chapter);
+  if(result) return result;
+  var fallback = getCompareTranslations().find(function(translation){
+    return translation.id !== translationId && BibleData.getChapter(translation.id, bookId, chapter);
+  });
+  return fallback ? BibleData.getChapter(fallback.id, bookId, chapter) : null;
+}
+
+function getCompareChapterCount(bookId){
+  return getCompareTranslations().reduce(function(maximum, translation){
+    return Math.max(maximum, BibleData.getChapterCount(translation.id, bookId));
+  }, 0);
+}
+
+function getReaderCompareReference(){
+  var verseSelect = document.getElementById('verseSelect');
+  var selectedVerse = verseSelect && verseSelect.value ? Number(verseSelect.value) : null;
+  return { bookId: currentBook, chapter: Number(currentChapter) || 1, verse: Number.isInteger(selectedVerse) ? selectedVerse : null };
+}
+
+function getCompareReference(){
+  return { bookId: compareReference.bookId, chapter: compareReference.chapter, verse: compareReference.verse };
+}
+
+function getReferenceBookName(reference){
+  var book = getCompareBooks().find(function(item){ return item.id === reference.bookId; });
+  return book ? book.name : reference.bookId;
+}
+
+function getReferenceLabel(reference){
+  var label = getReferenceBookName(reference) + ' ' + reference.chapter;
+  return reference.verse ? label + ':' + reference.verse : label;
+}
+
+function setCompareReference(reference){
+  var books = getCompareBooks();
+  var book = books.find(function(item){ return item.id === reference.bookId; }) || books[0];
+  if(!book) return;
+  var chapterCount = getCompareChapterCount(book.id);
+  var chapter = Number(reference.chapter);
+  if(!Number.isInteger(chapter) || chapter < 1 || chapter > chapterCount) chapter = 1;
+  var chapterData = getCompareChapter(currentTranslation, book.id, chapter);
+  var verse = reference.verse;
+  if(verse !== null){
+    if(!Number.isInteger(verse) || !chapterData) verse = null;
+    else verse = Math.min(Math.max(verse, 1), chapterData.verses.length);
   }
-  return verses;
+  compareReference.bookId = book.id;
+  compareReference.chapter = chapter;
+  compareReference.verse = verse;
+}
+
+function populateCompareBooks(){
+  var select = document.getElementById('compareBook');
+  if(!select) return;
+  select.innerHTML = '';
+  getCompareBooks().forEach(function(book){
+    var option = document.createElement('option');
+    option.value = book.id;
+    option.textContent = book.name;
+    select.appendChild(option);
+  });
+  select.value = compareReference.bookId;
+}
+
+function populateCompareChapters(){
+  var select = document.getElementById('compareChapter');
+  if(!select) return;
+  var chapterCount = getCompareChapterCount(compareReference.bookId);
+  select.innerHTML = '';
+  for(var chapter = 1; chapter <= chapterCount; chapter++){
+    var option = document.createElement('option');
+    option.value = String(chapter);
+    option.textContent = 'Chapter ' + chapter;
+    select.appendChild(option);
+  }
+  select.value = String(compareReference.chapter);
+}
+
+function populateCompareVerses(){
+  var select = document.getElementById('compareVerse');
+  if(!select) return;
+  var chapter = getCompareChapter(currentTranslation, compareReference.bookId, compareReference.chapter);
+  select.innerHTML = '<option value="">Whole chapter</option>';
+  if(!chapter) return;
+  chapter.verses.forEach(function(_, index){
+    var option = document.createElement('option');
+    option.value = String(index + 1);
+    option.textContent = 'Verse ' + (index + 1);
+    select.appendChild(option);
+  });
+  select.value = compareReference.verse ? String(compareReference.verse) : '';
+}
+
+function syncCompareControls(){
+  populateCompareBooks();
+  populateCompareChapters();
+  populateCompareVerses();
+}
+
+function initializeCompareReference(){
+  setCompareReference(getReaderCompareReference());
+  syncCompareControls();
+}
+
+function syncCompareFromReader(){
+  var compareView = document.getElementById('view-compare');
+  if(!compareView || !compareView.classList.contains('active')) return;
+  initializeCompareReference();
+  loadCompare();
+}
+
+function ensureCompareSelections(){
+  var translations = getCompareTranslations();
+  if(!translations.length) return;
+  for(var index = 0; index < 4; index++){
+    var valid = translations.some(function(translation){ return translation.id === compareState.selections[index]; });
+    var duplicate = compareState.selections.slice(0, index).indexOf(compareState.selections[index]) !== -1;
+    if(!valid || duplicate){
+      var alternate = translations.find(function(translation){ return compareState.selections.indexOf(translation.id) === -1; });
+      compareState.selections[index] = alternate ? alternate.id : translations[index % translations.length].id;
+    }
+  }
+  saveCompareState();
+}
+
+function getCompareVerses(translationId){
+  if(typeof BibleData === 'undefined') return null;
+  var reference = getCompareReference();
+  var chapter = BibleData.getChapter(translationId, reference.bookId, reference.chapter);
+  if(!chapter) return null;
+  if(reference.verse){
+    var verse = BibleData.getVerse(translationId, reference.bookId, reference.chapter, reference.verse);
+    return verse ? [{ number: verse.verse, text: verse.text }] : null;
+  }
+  return chapter.verses.map(function(text, index){ return { number: index + 1, text: text }; });
+}
+
+function updateCompareSummary(){
+  var summary = document.getElementById('compareSummary');
+  if(summary) summary.textContent = 'Comparing ' + getReferenceLabel(getCompareReference());
+}
+
+function getCompareChapterReference(bookIndex, chapter){
+  var books = getCompareBooks();
+  if(bookIndex < 0 || bookIndex >= books.length) return null;
+  var book = books[bookIndex];
+  var chapterCount = getCompareChapterCount(book.id);
+  if(chapter < 1 || chapter > chapterCount) return null;
+  return { bookIndex: bookIndex, bookId: book.id, chapter: chapter };
+}
+
+function getAdjacentCompareChapter(direction){
+  var books = getCompareBooks();
+  var bookIndex = books.findIndex(function(book){ return book.id === compareReference.bookId; });
+  if(bookIndex < 0) return null;
+  var chapter = compareReference.chapter + direction;
+  var nextBookIndex = bookIndex;
+  if(chapter < 1){
+    nextBookIndex--;
+    if(nextBookIndex < 0) return null;
+    chapter = getCompareChapterCount(books[nextBookIndex].id);
+  } else if(chapter > getCompareChapterCount(books[bookIndex].id)){
+    nextBookIndex++;
+    if(nextBookIndex >= books.length) return null;
+    chapter = 1;
+  }
+  var reference = getCompareChapterReference(nextBookIndex, chapter);
+  if(!reference || !compareReference.verse) return reference;
+  var destination = getCompareChapter(currentTranslation, reference.bookId, reference.chapter);
+  if(!destination) return reference;
+  reference.verse = Math.min(compareReference.verse, destination.verses.length);
+  return reference;
+}
+
+function getAdjacentCompareVerse(direction){
+  var books = getCompareBooks();
+  var bookIndex = books.findIndex(function(book){ return book.id === compareReference.bookId; });
+  if(bookIndex < 0 || !compareReference.verse) return null;
+  var chapter = getCompareChapter(currentTranslation, compareReference.bookId, compareReference.chapter);
+  var verse = compareReference.verse + direction;
+  if(verse < 1){
+    var previousChapter = getAdjacentCompareChapter(-1);
+    if(!previousChapter) return null;
+    var previousData = getCompareChapter(currentTranslation, previousChapter.bookId, previousChapter.chapter);
+    return { bookId: previousChapter.bookId, chapter: previousChapter.chapter, verse: previousData.verses.length };
+  }
+  if(!chapter || verse > chapter.verses.length){
+    var nextChapter = getAdjacentCompareChapter(1);
+    if(!nextChapter) return null;
+    return { bookId: nextChapter.bookId, chapter: nextChapter.chapter, verse: 1 };
+  }
+  return { bookId: compareReference.bookId, chapter: compareReference.chapter, verse: verse };
+}
+
+function updateCompareNavigation(){
+  var chapterPrevious = document.getElementById('compareChapterPrevious');
+  var chapterNext = document.getElementById('compareChapterNext');
+  var versePrevious = document.getElementById('compareVersePrevious');
+  var verseNext = document.getElementById('compareVerseNext');
+  if(!chapterPrevious || !chapterNext || !versePrevious || !verseNext) return;
+  var isVerseMode = Boolean(compareReference.verse);
+  chapterPrevious.disabled = !Boolean(getAdjacentCompareChapter(-1));
+  chapterNext.disabled = !Boolean(getAdjacentCompareChapter(1));
+  versePrevious.disabled = !isVerseMode || !Boolean(getAdjacentCompareVerse(-1));
+  verseNext.disabled = !isVerseMode || !Boolean(getAdjacentCompareVerse(1));
+}
+
+function navigateCompareReference(target){
+  if(!target) return;
+  setCompareReference(target);
+  syncCompareControls();
+  loadCompare();
+}
+
+function navigateCompareChapter(direction){
+  navigateCompareReference(getAdjacentCompareChapter(direction));
+}
+
+function navigateCompareVerse(direction){
+  if(!compareReference.verse) return;
+  navigateCompareReference(getAdjacentCompareVerse(direction));
+}
+
+function renderCompareColumn(translationId, index){
+  var translation = getCompareTranslations().find(function(item){ return item.id === translationId; });
+  if(!translation) return '';
+  var verses = getCompareVerses(translationId);
+  var content = '<div class="compare-col"><div class="compare-col-header">';
+  var label = index === 0 ? 'Left translation' : index === 1 ? 'Right translation' : 'Comparison edition ' + (index + 1);
+  var side = index === 0 ? 'left' : index === 1 ? 'right' : '';
+  content += '<select aria-label="' + label + '" data-compare-index="' + index + '"' + (side ? ' data-compare-side="' + side + '"' : '') + '>';
+  getCompareTranslations().forEach(function(item){
+    var selected = item.id === translationId ? ' selected' : '';
+    content += '<option value="' + escapeHtml(item.id) + '"' + selected + '>' + escapeHtml(item.abbreviation + ' - ' + item.name) + '</option>';
+  });
+  content += '</select></div><div class="compare-text">';
+  if(!verses){
+    content += '<p class="compare-unavailable">Passage unavailable in this translation.</p>';
+  } else {
+    verses.forEach(function(verse){
+      content += '<p><span class="vnum">' + escapeHtml(verse.number) + '</span>' + escapeHtml(verse.text) + '</p>';
+    });
+  }
+  return content + '</div></div>';
 }
 
 function loadCompare(){
-  var compareBook = document.getElementById('compareBook');
   var grid = document.getElementById('compareGrid');
-  if(!compareBook || !grid) return;
-  var key = compareBook.value;
-  var data = compareData[key];
-  if(!data) return;
-  var translations = {niv:'NIV', esv:'ESV', kjv:'KJV', msg:'The Message', web:'WEB'};
-  var html = '';
-  ['left','right'].forEach(function(side){
-    var transKey = side === 'left' ? leftTrans : rightTrans;
-    var otherOptions = Object.keys(translations).filter(function(t){ return t !== transKey; });
-    html += '<div class="compare-col">';
-    html += '<div class="compare-col-header">';
-    html += '<span>' + translations[transKey] + '</span>';
-    html += '<select aria-label="' + (side === 'left' ? 'Left' : 'Right') + ' translation" onchange="changeTrans(\'' + side + '\', this.value)">';
-    html += '<option value="' + transKey + '">' + translations[transKey] + '</option>';
-    otherOptions.forEach(function(o){
-      html += '<option value="' + o + '">' + translations[o] + '</option>';
+  if(!grid) return;
+  ensureCompareSelections();
+  updateCompareSummary();
+  updateCompareNavigation();
+  var columns = [];
+  for(var index = 0; index < compareState.count; index++) columns.push(renderCompareColumn(compareState.selections[index], index));
+  grid.innerHTML = columns.join('');
+  grid.classList.remove('compare-grid--3', 'compare-grid--4');
+  if(compareState.count > 2) grid.classList.add('compare-grid--' + compareState.count);
+  updateCompareEditionControl();
+  grid.querySelectorAll('[data-compare-index]').forEach(function(select){
+    select.addEventListener('change', function(){
+      var index = Number(select.getAttribute('data-compare-index'));
+      var otherIndex = compareState.selections.indexOf(select.value);
+      if(otherIndex !== -1 && otherIndex !== index){
+        compareState.selections[otherIndex] = compareState.selections[index];
+      }
+      compareState.selections[index] = select.value;
+      compareState.persisted = true;
+      saveCompareState();
+      loadCompare();
     });
-    html += '</select></div><div class="compare-text">';
-    var verses = getCompareVerses(transKey, key, data);
-    for(var i = 0; i < verses.length; i++){
-      html += '<p><span class="vnum">' + verses[i].number + '</span>' + escapeHtml(verses[i].text) + '</p>';
-    }
-    html += '</div></div>';
   });
-  grid.innerHTML = html;
 }
 
-function changeTrans(side, val){
-  if(side === 'left') leftTrans = val; else rightTrans = val;
+function updateCompareEditionControl(){
+  document.querySelectorAll('[data-compare-count]').forEach(function(button){
+    var count = Number(button.getAttribute('data-compare-count'));
+    button.setAttribute('aria-pressed', count === compareState.count ? 'true' : 'false');
+    button.disabled = count > getCompareTranslations().length;
+  });
+}
+
+function setCompareEditionCount(count){
+  if([2, 3, 4].indexOf(count) === -1 || count > getCompareTranslations().length) return;
+  compareState.count = count;
+  compareState.persisted = true;
+  ensureCompareSelections();
+  saveCompareState();
   loadCompare();
 }
+
+function updateCompareReferenceFromControls(changedId){
+  var book = document.getElementById('compareBook');
+  var chapter = document.getElementById('compareChapter');
+  var verse = document.getElementById('compareVerse');
+  if(changedId === 'compareBook'){
+    compareReference.bookId = book.value;
+  } else if(changedId === 'compareChapter'){
+    compareReference.chapter = Number(chapter.value);
+  } else if(changedId === 'compareVerse'){
+    compareReference.verse = verse.value ? Number(verse.value) : null;
+  }
+  setCompareReference(getCompareReference());
+  syncCompareControls();
+  loadCompare();
+}
+
+window.addEventListener('DOMContentLoaded', function(){
+  loadCompareState();
+  initializeCompareReference();
+  ensureCompareSelections();
+  loadCompare();
+  ['compareBook', 'compareChapter', 'compareVerse'].forEach(function(id){
+    var element = document.getElementById(id);
+    if(element) element.addEventListener('change', function(){ updateCompareReferenceFromControls(id); });
+  });
+  document.querySelectorAll('[data-compare-count]').forEach(function(button){
+    button.addEventListener('click', function(){ setCompareEditionCount(Number(button.getAttribute('data-compare-count'))); });
+  });
+  ['bookSelect', 'chapterSelect', 'verseSelect', 'readerTranslation'].forEach(function(id){
+    var element = document.getElementById(id);
+    if(element) element.addEventListener('change', id === 'readerTranslation' ? function(){ syncCompareDefaultTranslation(); syncCompareFromReader(); } : syncCompareFromReader);
+  });
+});

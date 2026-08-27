@@ -72,6 +72,8 @@
     font-family:'Inter',sans-serif;font-size:13px;cursor:pointer;
   }
   .search-box button:hover{background:var(--oxblood);}
+  .search-box #searchClear{background:transparent;color:var(--ink-soft);padding:0 12px;font-size:20px;}
+  .search-box #searchClear:hover{background:transparent;color:var(--oxblood);}
   .search-hint{font-family:'Inter',sans-serif;font-size:12px;color:var(--ink-soft);opacity:.7;margin-top:10px;}
   .results{margin-top:24px;display:grid;gap:14px;}
   .result-card{
@@ -83,6 +85,11 @@
   .result-card .txt{font-size:17px;font-style:italic;line-height:1.5;}
   .result-card .ref{font-family:'Inter',sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;margin-top:3px;}
   .result-card .fav-btn{font-size:17px;}
+  .result-card-button{width:100%;text-align:left;cursor:pointer;font:inherit;}
+  .result-card-button .result-open{font-family:'Inter',sans-serif;font-size:10px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;}
+  .search-status{grid-column:1/-1;text-align:center;color:var(--ink-soft);font:11px 'Inter',sans-serif;}
+  .search-more{grid-column:1/-1;justify-self:center;border:1px solid var(--line);border-radius:2px;background:var(--vellum-card);color:var(--ink-soft);padding:7px 14px;font:11px 'Inter',sans-serif;cursor:pointer;}
+  .search-more:hover{border-color:var(--gold);color:var(--gold);}
   .no-results{color:var(--ink-soft);font-style:italic;padding:14px 0;}
   .res-card{
     background:var(--vellum-card);padding:26px 24px;
