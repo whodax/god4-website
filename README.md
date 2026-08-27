@@ -42,6 +42,81 @@ book, chapter, verse, and search methods. It is available in the Reader and
 Compare translation selectors. The existing demo and legacy comparison data
 remain in place for compatibility.
 
+## Phase 2, Step 4: King James Version
+
+The King James Version (`kjv`) is included as a complete 66-book local dataset
+in `js/bible/kjv.js`. It was imported from the official eBible.org
+`eng-kjv_vpl.zip` archive using `tools/import-kjv.js`. The source identifies
+the standardized 1769 KJV text as public domain outside the United Kingdom and
+credits eBible.org and the CrossWire Bible Society. The source archive also
+contains Apocrypha; the importer retains only the canonical 66 Protestant
+books in the repository's existing order.
+
+To regenerate the library from the official archive, extract the VPL archive
+and run `npm run import:kjv -- path/to/eng-kjv_vpl.txt`.
+
+## Phase 2, Step 5: Young's Literal Translation
+
+The Young's Literal Translation (`ylt`) is included as a complete 66-book
+local dataset in `js/bible/ylt.js`. It was imported from the official
+eBible.org `engylt_usfm.zip` archive using `tools/import-ylt.js`, which keeps
+the source book, chapter, and verse records and removes only USFM formatting
+markers. eBible.org identifies YLT as public domain.
+
+To regenerate the library from the official archive, extract the USFM archive
+and run `npm run import:ylt -- path/to/extracted/usfm`.
+
+## Phase 2, Step 6: Darby Translation
+
+The Darby Translation (`dby`) is included as a complete 66-book local dataset
+in `js/bible/dby.js`. It was imported from the official eBible.org
+`engDBY_usfm.zip` archive using `tools/import-dby.js`. The importer filters to
+the canonical 66 book IDs, preserves source chapter and verse positions, and
+removes only USFM formatting markers. eBible.org identifies the translation,
+*The Holy Scriptures, a New Translation from the Original Languages by J. N.
+Darby*, as public domain.
+
+To regenerate the library from the official archive, extract the USFM archive
+and run `npm run import:dby -- path/to/extracted/usfm`.
+
+## Phase 2, Step 7: Webster Bible
+
+The Webster Bible (`webster`) is included as a complete 66-book local dataset
+in `js/bible/webster.js`. It was imported from the official eBible.org
+`engwebster_vpl.zip` archive using `tools/import-webster.js`. VPL was selected
+because it provides one unambiguous book/chapter/verse record per line, so the
+conversion requires no inline markup parsing. eBible.org identifies the
+Webster Bible, with amendments by Noah Webster, as public domain.
+
+To regenerate the library from the official archive, extract the VPL archive
+and run `npm run import:webster -- path/to/engwebster_vpl.txt`.
+
+## Phase 2, Step 8: Revised Version
+
+The Revised Version (`rv`) is included as a complete 66-book local dataset in
+`js/bible/rv.js`. It was imported from the official eBible.org
+`eng-rv_usfm.zip` archive using `tools/import-rv.js`. The importer filters to
+the canonical 66 Protestant book IDs, preserves chapter and verse positions,
+and removes only USFM formatting markers. eBible.org identifies the Revised
+Version as public domain. The larger distribution includes Apocrypha, which
+is excluded from this application.
+
+To regenerate the library from the official archive, extract the USFM archive
+and run `npm run import:rv -- path/to/extracted/usfm`.
+
+## Phase 2, Step 9: Geneva Bible 1599
+
+The Geneva Bible 1599 (`gnv`) is included as a complete 66-book local dataset
+in `js/bible/gnv.js`. It was imported from the official eBible.org
+`enggnv_usfm.zip` archive using `tools/import-gnv.js`. The importer uses an
+explicit canonical 66-book allowlist, preserves source chapter and verse
+positions, and removes only USFM formatting and note markers. eBible.org
+identifies this digital copy as public domain and notes that its original
+historical spelling is intentionally retained.
+
+To regenerate the library from the official archive, extract the USFM archive
+and run `npm run import:gnv -- path/to/extracted/usfm`.
+
 ## Phase 1 foundation and workflow
 
 GOD4.us remains a static site served from `index.html`. Presentation is split

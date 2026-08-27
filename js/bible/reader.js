@@ -282,6 +282,10 @@ function switchView(view, btn){
   document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
   var target = document.getElementById('view-' + view);
   if(!target || !btn) return;
+  if(view === 'compare'){
+    if(typeof initializeCompareReference === 'function') initializeCompareReference();
+    if(typeof loadCompare === 'function') loadCompare();
+  }
   target.classList.add('active');
   document.querySelectorAll('.bs-btn').forEach(function(b){ b.classList.remove('active'); });
   document.querySelectorAll('.bs-btn[aria-pressed]').forEach(function(b){ b.setAttribute('aria-pressed', 'false'); });

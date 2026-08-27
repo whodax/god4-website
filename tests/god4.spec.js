@@ -3,6 +3,8 @@ const { test, expect } = require('@playwright/test');
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
   await page.evaluate(() => localStorage.removeItem('god4.translation'));
+  await page.evaluate(() => localStorage.removeItem('god4.compare'));
+  await page.reload();
 });
 
 test('homepage and primary navigation load without browser errors', async ({ page }, testInfo) => {
@@ -30,6 +32,42 @@ test('homepage and primary navigation load without browser errors', async ({ pag
   expect([...errors, ...failedLocalRequests], [...errors, ...failedLocalRequests].join('\n')).toEqual([]);
 });
 
+test('header cross mark includes an activated heart and four motion rays', async ({ page }) => {
+  await page.goto('/');
+  const mark = page.locator('#brandMark');
+  await expect(mark).toHaveAccessibleName('Activate cross heart');
+  const initial = await mark.evaluate((element) => ({
+    width: element.getBoundingClientRect().width,
+    height: element.getBoundingClientRect().height,
+    crossWidth: getComputedStyle(element.querySelector('.brand-cross')).strokeWidth,
+    crossColor: getComputedStyle(element.querySelector('.brand-cross')).stroke,
+    heartCount: element.querySelectorAll('.brand-heart').length,
+    rayCount: element.querySelectorAll('.brand-rays path').length,
+    heartCenter: (() => { const box = element.querySelector('.brand-heart').getBBox(); return { x: box.x + box.width / 2, y: box.y + box.height / 2 }; })(),
+    heartAnimation: getComputedStyle(element.querySelector('.brand-heart')).animationDuration,
+    raysAnimation: getComputedStyle(element.querySelector('.brand-rays')).animationDuration
+  }));
+  expect(initial.width).toBe(60);
+  expect(initial.height).toBe(60);
+  expect(Number.parseFloat(initial.crossWidth)).toBeGreaterThanOrEqual(5);
+  expect(initial.crossColor).toBe('rgb(184, 134, 43)');
+  expect(initial.heartCount).toBe(1);
+  expect(initial.rayCount).toBe(4);
+  expect(initial.heartCenter.x).toBeCloseTo(36, 1);
+  expect(initial.heartCenter.y).toBeCloseTo(36, 1);
+  expect(initial.heartAnimation).toBe('2s');
+  expect(initial.raysAnimation).toBe('2s');
+  await expect(mark).toHaveClass(/brand-mark--pulse/);
+
+  await mark.click();
+  await expect(mark).toHaveClass(/brand-mark--pulse/);
+  await expect.poll(() => mark.evaluate((element) => ({ heart: getComputedStyle(element.querySelector('.brand-heart')).animationDuration, rays: getComputedStyle(element.querySelector('.brand-rays')).animationDuration }))).toEqual({ heart: '2s', rays: '2s' });
+
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await mark.click();
+  await expect.poll(() => mark.evaluate((element) => ({ heart: getComputedStyle(element.querySelector('.brand-heart')).animationName, rays: getComputedStyle(element.querySelector('.brand-rays')).animationName }))).toEqual({ heart: 'none', rays: 'none' });
+});
+
 test('hero verse can be saved, unsaved, and shown in the saved-verses tray', async ({ page }) => {
   await page.goto('/');
   const saveButton = page.locator('#heroFav');
@@ -54,9 +92,111 @@ test('verse rotation and Scripture search work', async ({ page }) => {
   await expect(reference).not.toHaveText(initial);
 
   await page.locator('#searchInput').fill('faith');
-  await page.getByRole('button', { name: 'Search' }).click();
-  await expect.poll(() => page.locator('#results .result-card').count()).toBeGreaterThan(0);
-  await expect(page.locator('#results')).toContainText('Hebrews 11:1');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await expect(page.locator('#results .result-card')).toHaveCount(10);
+  await expect(page.locator('#results .search-status')).toContainText(/Showing 10 of \d+ matches/);
+});
+
+test('Search the Word searches complete BibleData and opens references', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  const search = page.locator('#searchInput');
+  const results = page.locator('#results');
+  const runSearch = async (query) => {
+    await search.fill(query);
+    await page.getByRole('button', { name: 'Search', exact: true }).click();
+    if(!(await results.locator('.result-card').count())) throw new Error(`No result for query: ${query}`);
+    await expect(results.locator('.result-card').first()).toBeVisible();
+  };
+
+  await runSearch('Genesis 1');
+  await expect(results).toContainText('Genesis 1');
+  await results.locator('.result-card').first().click();
+  await expect(page.locator('#readerContent')).toContainText('Genesis 1');
+
+  await runSearch('John 1:1');
+  await expect(results).toContainText('John 1:1');
+  await results.locator('.result-card').first().click();
+  await expect(page.locator('#readerContent')).toContainText('John 1');
+  await expect(page.locator('#verseSelect')).toHaveValue('1');
+
+  await runSearch('(John 1:1)');
+  await runSearch('John chapter 1');
+  await runSearch('John chapter 1 verse 1');
+  await runSearch('Romans 8 verse 28');
+  await runSearch('show me John 3:16');
+  await runSearch('what does John 3:16 say');
+
+  for (const reference of ['Genesis 1:1', 'Psalms 23:1', 'Isaiah 1:1', 'Matthew 1:1', 'John 1:1', 'Romans 1:1', '1 Corinthians 1:1', 'Revelation 1:1']) {
+    await runSearch(reference);
+    await expect(results.locator('.ref').first()).toContainText(reference);
+  }
+
+  await runSearch('Revelation 22:21');
+  await expect(results).toContainText('Revelation 22:21');
+  await search.fill('NotABook 999:999');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await expect(results).toContainText('No verses matched');
+});
+
+test('Search exact verse references returns one result and opens that verse', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  const search = page.locator('#searchInput');
+  const results = page.locator('#results .result-card');
+  for (const query of ['Genesis 1:26', '(Genesis 1:26)', 'Genesis chapter 1 verse 26', 'John 3:16', 'show me John 3:16', 'Revelation 22:21']) {
+    await search.fill(query);
+    await page.getByRole('button', { name: 'Search', exact: true }).click();
+    await expect(results).toHaveCount(1);
+  }
+  await search.fill('Genesis 1:26');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await results.first().click();
+  await expect(page.locator('#bookSelect')).toHaveValue('genesis');
+  await expect(page.locator('#chapterSelect')).toHaveValue('1');
+  await expect(page.locator('#verseSelect')).toHaveValue('26');
+  await expect(page.locator('#readerContent .verse-focused')).toHaveAttribute('data-verse-number', '26');
+});
+
+test('Search results progressively reveal broad matches and clear cleanly', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  const search = page.locator('#searchInput');
+  const results = page.locator('#results');
+  const searchButton = page.getByRole('button', { name: 'Search', exact: true });
+  await search.fill('faith');
+  await searchButton.click();
+  await expect(results.locator('.result-card')).toHaveCount(10);
+  await expect(results.locator('.search-status')).toContainText(/Showing 10 of \d+ matches/);
+  await expect(results.locator('.search-more')).toBeVisible();
+  await results.locator('.search-more').click();
+  await expect(results.locator('.result-card')).toHaveCount(20);
+
+  await search.fill('John 3:16');
+  await searchButton.click();
+  await expect(results.locator('.result-card')).toHaveCount(1);
+  await search.fill('');
+  await expect(results.locator('.result-card')).toHaveCount(0);
+  await expect(results.locator('.search-more, .search-status, .no-results')).toHaveCount(0);
+
+  await search.fill('faith');
+  await searchButton.click();
+  await page.locator('#searchClear').click();
+  await expect(search).toHaveValue('');
+  await expect(results.locator('.result-card, .search-more, .search-status, .no-results')).toHaveCount(0);
+
+  await search.fill('faith');
+  await searchButton.click();
+  await search.press('Escape');
+  await expect(search).toHaveValue('');
+  await expect(results.locator('.result-card')).toHaveCount(0);
+
+  await search.fill('Genesis 1:26');
+  await searchButton.click();
+  await expect(results.locator('.result-card')).toHaveCount(1);
+  await search.fill('Revelation 22:21');
+  await searchButton.click();
+  await expect(results.locator('.result-card')).toHaveCount(1);
 });
 
 test('Bible data interface exposes the current local dataset', async ({ page }) => {
@@ -69,11 +209,334 @@ test('Bible data interface exposes the current local dataset', async ({ page }) 
     chapterCount: BibleData.getChapterCount('demo-local', 'john'),
     verse: BibleData.getVerse('demo-local', 'john', 1, 1).text
   }))).toEqual({
-    translations: ['demo-local', 'web'],
+    translations: ['demo-local', 'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'],
     books: ['john', 'psalms', 'romans', 'genesis', 'matthew', 'philippians'],
     chapterCount: 3,
     verse: 'In the beginning was the Word, and the Word was with God, and the Word was God.'
   });
+});
+
+test('ASV is complete and available through BibleData', async ({ page }) => {
+  await page.goto('/');
+  const result = await page.evaluate(() => ({
+    metadata: BibleData.listTranslations().find((translation) => translation.id === 'asv'),
+    bookCount: BibleData.listBooks('asv').length,
+    genesis: BibleData.getChapter('asv', 'genesis', 1),
+    psalm23: BibleData.getChapter('asv', 'psalms', 23),
+    john3: BibleData.getChapter('asv', 'john', 3),
+    romans8: BibleData.getChapter('asv', 'romans', 8),
+    firstCorinthians13: BibleData.getChapter('asv', '1-corinthians', 13)
+  }));
+  expect(result.metadata).toMatchObject({ abbreviation: 'ASV', name: 'American Standard Version (1901)', copyrightStatus: 'Public domain' });
+  expect(result.bookCount).toBe(66);
+  expect(result.genesis.verses.length).toBeGreaterThan(0);
+  expect(result.psalm23.verses.length).toBeGreaterThan(0);
+  expect(result.john3.verses.length).toBeGreaterThan(0);
+  expect(result.romans8.verses.length).toBeGreaterThan(0);
+  expect(result.firstCorinthians13.verses.length).toBeGreaterThan(0);
+  expect(await page.evaluate(() => BibleData.getVerse('asv', '1-corinthians', 13, 4).text)).toBeTruthy();
+});
+
+test('Reader switches between WEB and ASV and persists ASV', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('asv');
+  await page.locator('#bookSelect').selectOption('genesis');
+  await expect(page.locator('#readerTranslation')).toHaveValue('asv');
+  await expect(page.locator('#readerContent')).toContainText('Genesis 1');
+  await page.reload();
+  await expect(page.locator('#readerTranslation')).toHaveValue('asv');
+  await page.locator('#readerTranslation').selectOption('web');
+  await expect(page.locator('#readerTranslation')).toHaveValue('web');
+});
+
+test('Compare renders WEB and ASV for the same current reference and excludes DEMO', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3:16');
+  await expect(page.locator('#compareGrid [data-compare-side="left"]')).toHaveValue('web');
+  await expect(page.locator('#compareGrid [data-compare-side="right"]')).toHaveValue('asv');
+  await expect(page.locator('#compareGrid [data-compare-side="left"] option[value="demo-local"]')).toHaveCount(0);
+  await expect(page.locator('#compareGrid [data-compare-side="right"] option[value="demo-local"]')).toHaveCount(0);
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['16']);
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['16']);
+  await page.locator('#compareGrid [data-compare-side="left"]').selectOption('asv');
+  await expect(page.locator('#compareGrid [data-compare-side="right"]')).toHaveValue('web');
+});
+
+test('KJV is complete and preserves the imported source wording', async ({ page }) => {
+  await page.goto('/');
+  const result = await page.evaluate(() => ({
+    metadata: BibleData.listTranslations().find((translation) => translation.id === 'kjv'),
+    bookCount: BibleData.listBooks('kjv').length,
+    genesis: BibleData.getChapter('kjv', 'genesis', 1),
+    psalm23: BibleData.getChapter('kjv', 'psalms', 23),
+    john3: BibleData.getChapter('kjv', 'john', 3),
+    romans8: BibleData.getChapter('kjv', 'romans', 8),
+    firstCorinthians13: BibleData.getChapter('kjv', '1-corinthians', 13),
+    john316: BibleData.getVerse('kjv', 'john', 3, 16).text
+  }));
+  expect(result.metadata).toMatchObject({ abbreviation: 'KJV', name: 'King James Version' });
+  expect(result.bookCount).toBe(66);
+  expect(result.genesis.verses.length).toBeGreaterThan(0);
+  expect(result.psalm23.verses.length).toBeGreaterThan(0);
+  expect(result.john3.verses.length).toBeGreaterThan(0);
+  expect(result.romans8.verses.length).toBeGreaterThan(0);
+  expect(result.firstCorinthians13.verses.length).toBeGreaterThan(0);
+  expect(result.john316).toBe('For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.');
+});
+
+test('Compare independently selects WEB, ASV, and KJV without exposing DEMO', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+
+  const left = page.locator('#compareGrid [data-compare-side="left"]');
+  const right = page.locator('#compareGrid [data-compare-side="right"]');
+  await expect(left).toHaveValue('web');
+  await expect(right).toHaveValue('asv');
+  await expect(left.locator('option[value="demo-local"]')).toHaveCount(0);
+  await expect(right.locator('option[value="demo-local"]')).toHaveCount(0);
+  await expect(left.locator('option[value="kjv"]')).toHaveCount(1);
+  await expect(right.locator('option[value="kjv"]')).toHaveCount(1);
+
+  await left.selectOption('kjv');
+  await expect(left).toHaveValue('kjv');
+  await expect(right).toHaveValue('asv');
+  await right.selectOption('web');
+  await expect(right).toHaveValue('web');
+  await expect(left).toHaveValue('kjv');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['16']);
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['16']);
+});
+
+test('YLT is complete and Compare keeps all real translations independent', async ({ page }) => {
+  await page.goto('/');
+  const result = await page.evaluate(() => ({
+    metadata: BibleData.listTranslations().find((translation) => translation.id === 'ylt'),
+    bookCount: BibleData.listBooks('ylt').length,
+    chapters: ['genesis', 'psalms', 'john', 'romans', '1-corinthians'].map((bookId, index) => BibleData.getChapter('ylt', bookId, [1, 23, 3, 8, 13][index]).verses.length),
+    john316: BibleData.getVerse('ylt', 'john', 3, 16).text
+  }));
+  expect(result.metadata).toMatchObject({ abbreviation: 'YLT', name: 'Young’s Literal Translation', copyrightStatus: 'Public domain' });
+  expect(result.bookCount).toBe(66);
+  expect(result.chapters.every((count) => count > 0)).toBeTruthy();
+  expect(result.john316).toBe('for God did so love the world, that His Son — the only begotten — He gave, that every one who is believing in him may not perish, but may have life age-during.');
+
+  await page.locator('#readerTranslation').selectOption('web');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  const left = page.locator('#compareGrid [data-compare-side="left"]');
+  const right = page.locator('#compareGrid [data-compare-side="right"]');
+  await expect(left).toHaveValue('web');
+  await expect(right).toHaveValue('asv');
+  for (const selector of [left, right]) {
+    await expect(selector.locator('option[value="demo-local"]')).toHaveCount(0);
+    await expect(selector.locator('option[value="ylt"]')).toHaveCount(1);
+  }
+  await left.selectOption('ylt');
+  await expect(left).toHaveValue('ylt');
+  await expect(right).toHaveValue('asv');
+  await right.selectOption('kjv');
+  await expect(right).toHaveValue('kjv');
+  await expect(left).toHaveValue('ylt');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['16']);
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['16']);
+});
+
+test('DBY is complete and independently available in Reader and Compare', async ({ page }) => {
+  await page.goto('/');
+  const result = await page.evaluate(() => ({
+    metadata: BibleData.listTranslations().find((translation) => translation.id === 'dby'),
+    bookCount: BibleData.listBooks('dby').length,
+    chapters: ['genesis', 'psalms', 'john', 'romans', '1-corinthians'].map((bookId, index) => BibleData.getChapter('dby', bookId, [1, 23, 3, 8, 13][index]).verses.length),
+    john316: BibleData.getVerse('dby', 'john', 3, 16).text
+  }));
+  expect(result.metadata).toMatchObject({ abbreviation: 'DBY', name: 'Darby Translation', copyrightStatus: 'Public domain' });
+  expect(result.bookCount).toBe(66);
+  expect(result.chapters.every((count) => count > 0)).toBeTruthy();
+  expect(result.john316).toBe('For God so loved the world, that he gave his only-begotten Son, that whosoever believes on him may not perish, but have life eternal.');
+
+  await page.locator('#readerTranslation').selectOption('dby');
+  await expect(page.locator('#readerTranslation')).toHaveValue('dby');
+  await page.reload();
+  await expect(page.locator('#readerTranslation')).toHaveValue('dby');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  const left = page.locator('#compareGrid [data-compare-side="left"]');
+  const right = page.locator('#compareGrid [data-compare-side="right"]');
+  await expect(left).toHaveValue('dby');
+  await expect(right).toHaveValue('web');
+  await expect(left.locator('option[value="demo-local"]')).toHaveCount(0);
+  await expect(right.locator('option[value="demo-local"]')).toHaveCount(0);
+  await left.selectOption('asv');
+  await expect(left).toHaveValue('asv');
+  await expect(right).toHaveValue('web');
+  await right.selectOption('ylt');
+  await expect(right).toHaveValue('ylt');
+  await expect(left).toHaveValue('asv');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['16']);
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['16']);
+});
+
+test('WBS is complete and independently available in Reader and Compare', async ({ page }) => {
+  await page.goto('/');
+  const result = await page.evaluate(() => ({
+    metadata: BibleData.listTranslations().find((translation) => translation.id === 'webster'),
+    bookCount: BibleData.listBooks('webster').length,
+    chapters: ['genesis', 'psalms', 'john', 'romans', '1-corinthians'].map((bookId, index) => BibleData.getChapter('webster', bookId, [1, 23, 1, 8, 13][index]).verses.length),
+    johnOne: BibleData.getChapter('webster', 'john', 1),
+    johnThree: BibleData.getChapter('webster', 'john', 3)
+  }));
+  expect(result.metadata).toMatchObject({ abbreviation: 'WBS', name: 'Webster Bible (1833)', copyrightStatus: 'Public domain' });
+  expect(result.bookCount).toBe(66);
+  expect(result.chapters.every((count) => count > 0)).toBeTruthy();
+  expect(result.johnOne.verses.length).toBeGreaterThan(0);
+  expect(result.johnThree.verses.length).toBeGreaterThan(0);
+  await page.locator('#readerTranslation').selectOption('webster');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('1');
+  await expect(page.locator('#readerTranslation')).toHaveValue('webster');
+  await page.reload();
+  await expect(page.locator('#readerTranslation')).toHaveValue('webster');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  const left = page.locator('#compareGrid [data-compare-side="left"]');
+  const right = page.locator('#compareGrid [data-compare-side="right"]');
+  await expect(left).toHaveValue('webster');
+  await expect(right).not.toHaveValue('webster');
+  await expect(left.locator('option[value="demo-local"]')).toHaveCount(0);
+  await expect(right.locator('option[value="demo-local"]')).toHaveCount(0);
+  await left.selectOption('web');
+  await expect(left).toHaveValue('web');
+  await expect(right).not.toHaveValue('web');
+  await right.selectOption('webster');
+  await expect(right).toHaveValue('webster');
+  await expect(left).toHaveValue('web');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['16']);
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['16']);
+});
+
+test('RV is complete and independently available in Reader and Compare', async ({ page }) => {
+  await page.goto('/');
+  const result = await page.evaluate(() => ({
+    metadata: BibleData.listTranslations().find((translation) => translation.id === 'rv'),
+    bookCount: BibleData.listBooks('rv').length,
+    chapters: ['genesis', 'psalms', 'john', 'romans', '1-corinthians'].map((bookId, index) => BibleData.getChapter('rv', bookId, [1, 23, 1, 8, 13][index]).verses.length),
+    john316: BibleData.getVerse('rv', 'john', 3, 16).text
+  }));
+  expect(result.metadata).toMatchObject({ abbreviation: 'RV', name: 'Revised Version (1895)', copyrightStatus: 'Public domain' });
+  expect(result.bookCount).toBe(66);
+  expect(result.chapters.every((count) => count > 0)).toBeTruthy();
+  await page.locator('#readerTranslation').selectOption('rv');
+  await expect(page.locator('#readerTranslation')).toHaveValue('rv');
+  await page.reload();
+  await expect(page.locator('#readerTranslation')).toHaveValue('rv');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  const left = page.locator('#compareGrid [data-compare-side="left"]');
+  const right = page.locator('#compareGrid [data-compare-side="right"]');
+  await expect(left).toHaveValue('rv');
+  await expect(right).not.toHaveValue('rv');
+  await expect(left.locator('option[value="demo-local"]')).toHaveCount(0);
+  await expect(right.locator('option[value="demo-local"]')).toHaveCount(0);
+  const johnThreeVerseCount = await page.evaluate(() => BibleData.getChapter('rv', 'john', 3).verses.length);
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveCount(johnThreeVerseCount);
+  await page.locator('#compareVerse').selectOption('16');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3:16');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['16']);
+  await left.selectOption('web');
+  await expect(left).toHaveValue('web');
+  await expect(right).not.toHaveValue('web');
+  await right.selectOption('rv');
+  await expect(right).toHaveValue('rv');
+  await expect(left).toHaveValue('web');
+});
+
+test('GNV preserves historical spelling and works independently in Reader and Compare', async ({ page }) => {
+  await page.goto('/');
+  const result = await page.evaluate(() => ({
+    metadata: BibleData.listTranslations().find((translation) => translation.id === 'gnv'),
+    bookCount: BibleData.listBooks('gnv').length,
+    chapters: ['genesis', 'psalms', 'john', 'romans', '1-corinthians'].map((bookId, index) => BibleData.getChapter('gnv', bookId, [1, 23, 1, 8, 13][index]).verses.length),
+    johnOne: BibleData.getVerse('gnv', 'john', 1, 1).text,
+    john316: BibleData.getVerse('gnv', 'john', 3, 16).text,
+    residual: BibleData.listBooks('gnv').flatMap((book) => {
+      const matches = [];
+      for(let chapter = 1; chapter <= BibleData.getChapterCount('gnv', book.id); chapter++){
+        BibleData.getChapter('gnv', book.id, chapter).verses.forEach((text, index) => {
+          if(/\\[A-Za-z+]|strong=\"/i.test(text)) matches.push(`${book.id} ${chapter}:${index + 1}`);
+        });
+      }
+      return matches;
+    })
+  }));
+  expect(result.metadata).toMatchObject({ abbreviation: 'GNV', name: 'Geneva Bible 1599', copyrightStatus: 'Public domain' });
+  expect(result.bookCount).toBe(66);
+  expect(result.chapters.every((count) => count > 0)).toBeTruthy();
+  expect(result.johnOne).toContain('In the beginning was that Word');
+  expect(result.john316).toContain('loued');
+  expect(result.john316).toContain('whosoeuer beleeueth');
+  expect(result.residual).toEqual([]);
+  await page.locator('#readerTranslation').selectOption('gnv');
+  await expect(page.locator('#readerTranslation')).toHaveValue('gnv');
+  await page.reload();
+  await expect(page.locator('#readerTranslation')).toHaveValue('gnv');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  const left = page.locator('#compareGrid [data-compare-side="left"]');
+  const right = page.locator('#compareGrid [data-compare-side="right"]');
+  await expect(left).toHaveValue('gnv');
+  await expect(right).not.toHaveValue('gnv');
+  await expect(left.locator('option[value="demo-local"]')).toHaveCount(0);
+  await expect(right.locator('option[value="demo-local"]')).toHaveCount(0);
+  await left.selectOption('web');
+  await expect(left).toHaveValue('web');
+  await expect(right).not.toHaveValue('web');
+  await right.selectOption('gnv');
+  await expect(right).toHaveValue('gnv');
+  await expect(left).toHaveValue('web');
+});
+
+test('DBY strips inline USFM markup without losing verse words', async ({ page }) => {
+  await page.goto('/');
+  const result = await page.evaluate(() => {
+    const residual = [];
+    BibleData.listBooks('dby').forEach((book) => {
+      for (let chapterNumber = 1; chapterNumber <= BibleData.getChapterCount('dby', book.id); chapterNumber++) {
+        const chapter = BibleData.getChapter('dby', book.id, chapterNumber);
+        chapter.verses.forEach((text, index) => {
+          if (/\\\+?w(?:\*|\s)|strong="/i.test(text)) residual.push(`${book.id} ${chapterNumber}:${index + 1}`);
+        });
+      }
+    });
+    return {
+      johnOne: BibleData.getVerse('dby', 'john', 1, 1).text,
+      plusWordVerse: BibleData.getVerse('dby', 'matthew', 1, 21).text,
+      residual
+    };
+  });
+  expect(result.johnOne).toContain('In [the] beginning was the Word');
+  expect(result.plusWordVerse).toContain('he shall save his people from their sins');
+  expect(result.johnOne).not.toMatch(/\\\+?w|strong="/i);
+  expect(result.plusWordVerse).not.toMatch(/\\\+?w|strong="/i);
+  expect(result.residual).toEqual([]);
 });
 
 test('translation selector keeps a visible label when changed', async ({ page }) => {
@@ -128,8 +591,37 @@ test('WEB data is complete, attributed, searchable, and selectable', async ({ pa
   await expect(page.locator('#readerContent')).toContainText('In the beginning was the Word');
 
   await page.getByRole('button', { name: 'Compare' }).click();
-  await page.locator('#compareGrid select').first().selectOption('web');
-  await expect(page.locator('#compareGrid .compare-col').first()).toContainText('For God so loved the world');
+  await expect(page.locator('#compareSummary')).toContainText('Comparing John 1');
+  await expect(page.locator('#compareGrid .compare-col').first()).toContainText('In the beginning was the Word');
+});
+
+test('Compare opens from the live Reader reference with and without a selected verse', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('1');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 1');
+  await expect(page.locator('#compareGrid .compare-col').first()).toContainText('In the beginning was the Word');
+  await expect(page.locator('#compareGrid .compare-col').first()).not.toContainText('For God so loved the world');
+
+  await page.getByRole('button', { name: 'Reader' }).click();
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3:16');
+});
+
+test('Compare follows a selected verse in another Reader book', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#bookSelect').selectOption('colossians');
+  await page.locator('#chapterSelect').selectOption('2');
+  await page.locator('#verseSelect').selectOption('1');
+  await page.getByRole('button', { name: 'Compare' }).click();
+
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Colossians 2:1');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['1']);
 });
 
 test('reader read-aloud controls speak only chapter verses and manage playback', async ({ page }) => {
@@ -320,9 +812,10 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
 
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#view-compare')).toHaveClass(/active/);
-  await page.locator('#compareBook').selectOption('psalm23');
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('1');
   await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
-  await expect(page.locator('#compareGrid')).toContainText('The LORD is my shepherd');
+  await expect(page.locator('#compareGrid')).toContainText('In the beginning was the Word');
 
   await page.getByRole('button', { name: 'Plan' }).click();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
@@ -333,7 +826,37 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
   await expect(reader).toHaveClass(/active/);
 });
 
-test('Compare supports passage and independent version changes with aligned verses', async ({ page }) => {
+test('Compare follows the Reader current passage and translation choices from BibleData', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#readerTranslation').selectOption('web');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('#view-compare')).toHaveClass(/active/);
+  await expect(page.locator('#compareSummary')).toContainText('Comparing John 3:16');
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+  await expect(page.locator('#compareGrid [data-compare-side]')).toHaveCount(2);
+  await expect(page.locator('#compareGrid [data-compare-side="left"]')).toHaveAccessibleName('Left translation');
+  await expect(page.locator('#compareGrid [data-compare-side="right"]')).toHaveAccessibleName('Right translation');
+
+  const translations = await page.locator('#compareGrid [data-compare-side="left"]').locator('option').allTextContents();
+  expect(translations.some((label) => label.startsWith('WEB'))).toBeTruthy();
+  expect(translations.some((label) => label.startsWith('DEMO'))).toBeFalsy();
+  const rightTranslations = await page.locator('#compareGrid [data-compare-side="right"]').locator('option').allTextContents();
+  expect(rightTranslations.some((label) => label.startsWith('DEMO'))).toBeFalsy();
+
+  const rightBefore = await page.locator('#compareGrid [data-compare-side="right"]').inputValue();
+  await page.locator('#compareGrid [data-compare-side="left"]').selectOption('web');
+  await expect(page.locator('#compareGrid [data-compare-side="right"]')).toHaveValue(rightBefore);
+
+  await page.locator('#chapterSelect').selectOption('2');
+  await expect(page.locator('#compareSummary')).toContainText('Comparing John 2');
+  await expect(page.locator('#compareGrid .compare-col').first()).not.toContainText('Passage unavailable in this translation.');
+});
+
+test('Compare supports full chapters, specific verses, independent translations, and changing books', async ({ page }) => {
   const errors = [];
   page.on('console', (message) => {
     if (message.type() === 'error' && !message.text().includes('Failed to load resource')) {
@@ -346,20 +869,33 @@ test('Compare supports passage and independent version changes with aligned vers
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#view-compare')).toHaveClass(/active/);
   await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
-  await expect(page.locator('#compareGrid select')).toHaveCount(2);
-  await expect(page.locator('#compareGrid select').first()).toHaveAccessibleName('Left translation');
-  await expect(page.locator('#compareGrid select').nth(1)).toHaveAccessibleName('Right translation');
+  await expect(page.locator('#compareGrid [data-compare-side]')).toHaveCount(2);
+  await expect(page.locator('#compareGrid [data-compare-side="left"]')).toHaveAccessibleName('Left translation');
+  await expect(page.locator('#compareGrid [data-compare-side="right"]')).toHaveAccessibleName('Right translation');
 
-  await page.locator('#compareBook').selectOption('romans8');
-  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['28', '29', '30']);
+  await page.locator('#compareBook').selectOption('romans');
+  await page.locator('#compareChapter').selectOption('8');
+  await expect(page.locator('#compareVerse')).toHaveValue('');
+  const chapterVerseCount = await page.evaluate(() => BibleData.getChapter('web', 'romans', 8).verses.length);
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveCount(chapterVerseCount);
 
-  await page.locator('#compareGrid select').first().selectOption('web');
-  await expect(page.locator('#compareGrid .compare-col').first()).toContainText('all things work together for good');
-  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['28', '29', '30']);
+  await page.locator('#compareVerse').selectOption('28');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Romans 8:28');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['28']);
 
-  await page.locator('#compareGrid select').nth(1).selectOption('kjv');
-  await expect(page.locator('#compareGrid .compare-col').nth(1)).toContainText('all things work together for good');
-  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['28', '29', '30']);
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['28']);
+  const compareOptions = await page.locator('#compareGrid [data-compare-side] option').allTextContents();
+  expect(compareOptions.some((label) => label.startsWith('DEMO'))).toBeFalsy();
+  const rightBeforeSelection = await page.locator('#compareGrid [data-compare-side="right"]').inputValue();
+  await page.locator('#compareGrid [data-compare-side="left"]').selectOption('web');
+  await expect(page.locator('#compareGrid [data-compare-side="right"]')).toHaveValue(rightBeforeSelection);
+  await page.locator('#compareBook').selectOption('colossians');
+  await page.locator('#compareChapter').selectOption('2');
+  await page.locator('#compareVerse').selectOption('1');
+  await expect(page.locator('#compareGrid .compare-col').first()).not.toContainText('Passage unavailable in this translation.');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['1']);
+  await expect(page.locator('#compareGrid .compare-col').nth(1)).not.toContainText('Passage unavailable in this translation.');
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['1']);
   expect(errors).toEqual([]);
 });
 
@@ -370,6 +906,314 @@ test('Compare versions stack on smaller screens', async ({ page }) => {
   await expect.poll(() => page.locator('#compareGrid').evaluate((grid) => {
     return getComputedStyle(grid).gridTemplateColumns.trim().split(/\s+/).length;
   })).toBe(1);
+});
+
+test('Compare selector block keeps the reference above balanced centered controls', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  const layout = await page.locator('#view-compare').evaluate((view) => {
+    const summary = document.getElementById('compareSummary');
+    const row = view.querySelector('.compare-selector-row');
+    const controls = [document.getElementById('compareBook'), document.getElementById('compareChapter'), document.getElementById('compareVerse')];
+    const sizes = controls.map((control) => ({ width: control.getBoundingClientRect().width, height: control.getBoundingClientRect().height }));
+    const rowTops = controls.map((control) => control.getBoundingClientRect().top);
+    return {
+      summaryBelowRow: summary.getBoundingClientRect().top > row.getBoundingClientRect().bottom,
+      summaryAboveRow: summary.getBoundingClientRect().bottom < row.getBoundingClientRect().top,
+      sizes,
+      textAlignments: controls.map((control) => getComputedStyle(control).textAlign),
+      gridColumns: getComputedStyle(row).gridTemplateColumns.split(/\s+/).length,
+      sameRow: Math.max(...rowTops) - Math.min(...rowTops) < 1,
+      arrowPairs: view.querySelectorAll('.compare-arrow-pair').length,
+      oldButtons: view.querySelectorAll('#comparePrevious, #compareNext').length
+    };
+  });
+  expect(layout.summaryAboveRow).toBeTruthy();
+  expect(layout.summaryBelowRow).toBeFalsy();
+  expect(layout.sizes[0]).toEqual(layout.sizes[1]);
+  expect(layout.sizes[1]).toEqual(layout.sizes[2]);
+  expect(layout.textAlignments).toEqual(['center', 'center', 'center']);
+  expect(layout.gridColumns).toBe(3);
+  expect(layout.sameRow).toBeTruthy();
+  expect(layout.arrowPairs).toBe(2);
+  expect(layout.oldButtons).toBe(0);
+});
+
+test('Compare edition count sits compactly beneath the Compare tab', async ({ page }) => {
+  await page.goto('/');
+  const compareButton = page.locator('.compare-tab-control > .bs-btn');
+  const countControl = page.locator('.compare-tab-control .compare-edition-control');
+  await expect(countControl).toBeVisible();
+  const layout = await page.locator('.compare-tab-control').evaluate((wrapper) => {
+    const button = wrapper.querySelector('.bs-btn').getBoundingClientRect();
+    const control = wrapper.querySelector('.compare-edition-control').getBoundingClientRect();
+    return { below: control.top >= button.bottom, centered: Math.abs((control.left + control.width / 2) - (button.left + button.width / 2)) < 1, height: control.height, inCompareView: Boolean(wrapper.closest('#view-compare')) };
+  });
+  await expect(compareButton).toHaveText('Compare');
+  expect(layout.below).toBeTruthy();
+  expect(layout.centered).toBeTruthy();
+  expect(layout.height).toBeLessThan(30);
+  expect(layout.inCompareView).toBeFalsy();
+  await expect(countControl).toContainText('2');
+  await expect(countControl).toContainText('3');
+  await expect(countControl).toContainText('4');
+});
+
+test('Compare navigation advances verses and preserves both translations', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('1');
+  await page.locator('#verseSelect').selectOption('1');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 1:1');
+  const left = page.locator('#compareGrid [data-compare-side="left"]');
+  const right = page.locator('#compareGrid [data-compare-side="right"]');
+  const leftTranslation = await left.inputValue();
+  const rightTranslation = await right.inputValue();
+  await page.locator('#compareVerseNext').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 1:2');
+  await expect(page.locator('#compareVerse')).toHaveValue('2');
+  await expect(left).toHaveValue(leftTranslation);
+  await expect(right).toHaveValue(rightTranslation);
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['2']);
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['2']);
+});
+
+test('Compare navigation crosses chapter and book boundaries in verse mode', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('1');
+  const johnOneLastVerse = await page.evaluate(() => BibleData.getChapter('web', 'john', 1).verses.length);
+  await page.locator('#compareVerse').selectOption(String(johnOneLastVerse));
+  await page.locator('#compareVerseNext').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 2:1');
+  await page.locator('#compareBook').selectOption('genesis');
+  await page.locator('#compareChapter').selectOption('50');
+  const genesisLastVerse = await page.evaluate(() => BibleData.getChapter('web', 'genesis', 50).verses.length);
+  await page.locator('#compareVerse').selectOption(String(genesisLastVerse));
+  await page.locator('#compareVerseNext').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Exodus 1:1');
+  await page.locator('#compareBook').selectOption('exodus');
+  await page.locator('#compareChapter').selectOption('1');
+  await page.locator('#compareVerse').selectOption('1');
+  await page.locator('#compareVersePrevious').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Genesis 50:26');
+});
+
+test('Compare navigation moves whole chapters and disables at canonical endpoints', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('genesis');
+  await page.locator('#compareChapter').selectOption('1');
+  await expect(page.locator('#compareVerse')).toHaveValue('');
+  await expect(page.locator('#compareChapterPrevious')).toBeDisabled();
+  await expect(page.locator('#compareVersePrevious')).toBeDisabled();
+  await expect(page.locator('#compareVerseNext')).toBeDisabled();
+  await page.locator('#compareChapterNext').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Genesis 2');
+  await expect(page.locator('#compareVerse')).toHaveValue('');
+  await page.locator('#compareBook').selectOption('revelation');
+  await page.locator('#compareChapter').selectOption('22');
+  await expect(page.locator('#compareChapterNext')).toBeDisabled();
+  await expect(page.locator('#compareVersePrevious')).toBeDisabled();
+  await expect(page.locator('#compareVerseNext')).toBeDisabled();
+  await page.locator('#compareVerse').selectOption('21');
+  await expect(page.locator('#compareVerseNext')).toBeDisabled();
+});
+
+test('Compare switches between 2, 3, and 4 independently selected editions', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => localStorage.removeItem('god4.compare'));
+  await page.reload();
+  await page.getByRole('button', { name: 'Compare' }).click();
+  const countControl = page.locator('.compare-edition-control');
+  await expect(countControl).toBeVisible();
+  await expect(countControl).toContainText('Compare:');
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+
+  const selectors = () => page.locator('#compareGrid [data-compare-index]');
+  const firstTwo = [await selectors().nth(0).inputValue(), await selectors().nth(1).inputValue()];
+  expect(firstTwo[0]).not.toBe(firstTwo[1]);
+  await countControl.locator('[data-compare-count="3"]').click();
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(3);
+  expect(await selectors().nth(0).inputValue()).toBe(firstTwo[0]);
+  expect(await selectors().nth(1).inputValue()).toBe(firstTwo[1]);
+  await expect(selectors().nth(2)).toHaveValue(/.+/);
+
+  await countControl.locator('[data-compare-count="4"]').click();
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(4);
+  const values = await selectors().evaluateAll((items) => items.map((item) => item.value));
+  expect(new Set(values).size).toBe(4);
+  expect(values.every((value) => value !== 'demo-local')).toBeTruthy();
+
+  await page.locator('#compareGrid [data-compare-index="0"]').selectOption('asv');
+  await expect(page.locator('#compareGrid [data-compare-index="1"]')).not.toHaveValue('asv');
+  await page.locator('#compareGrid [data-compare-index="3"]').selectOption('kjv');
+  await expect(page.locator('#compareGrid [data-compare-index="0"]')).toHaveValue('asv');
+  await expect(page.locator('#compareGrid [data-compare-index="3"]')).toHaveValue('kjv');
+
+  await countControl.locator('[data-compare-count="2"]').click();
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+  await countControl.locator('[data-compare-count="4"]').click();
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(4);
+  await expect(page.locator('#compareGrid [data-compare-index="0"]')).toHaveValue('asv');
+  await expect(page.locator('#compareGrid [data-compare-index="3"]')).toHaveValue('kjv');
+});
+
+test('Compare edition count and translation slots persist with the shared reference', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => localStorage.removeItem('god4.compare'));
+  await page.reload();
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('.compare-edition-control [data-compare-count="3"]').click();
+  await page.locator('#compareGrid [data-compare-index="2"]').selectOption('kjv');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3:16');
+  await expect(page.locator('#compareGrid .compare-col .vnum')).toHaveCount(3);
+  await page.reload();
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('.compare-edition-control [data-compare-count="3"]')).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(3);
+  await expect(page.locator('#compareGrid [data-compare-index="2"]')).toHaveValue('kjv');
+  await page.getByRole('button', { name: 'Reader' }).click();
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3:16');
+  await page.locator('#compareChapterNext').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 4:16');
+  await expect(page.locator('#compareGrid .compare-col .vnum')).toHaveText(['16', '16', '16']);
+});
+
+test('Compare Chapter arrows preserve verse mode forward and backward', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('1');
+  await page.locator('#compareVerse').selectOption('3');
+  await page.locator('#compareChapterNext').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 2:3');
+  await expect(page.locator('#compareVerse')).toHaveValue('3');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['3']);
+  await page.locator('#compareChapterPrevious').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 1:3');
+  await expect(page.locator('#compareVerse')).toHaveValue('3');
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveText(['3']);
+});
+
+test('Compare Chapter arrows clamp verse mode in shorter destination chapters', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('matthew');
+  await page.locator('#compareChapter').selectOption('1');
+  await page.locator('#compareVerse').selectOption('25');
+  await page.locator('#compareChapterNext').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Matthew 2:23');
+  await expect(page.locator('#compareVerse')).toHaveValue('23');
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveText(['23']);
+});
+
+test('Compare Chapter arrows keep explicitly selected Whole chapter mode', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('1');
+  await page.locator('#compareVerse').selectOption('');
+  await page.locator('#compareChapterNext').click();
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 2');
+  await expect(page.locator('#compareVerse')).toHaveValue('');
+  await expect(page.locator('#compareVerseNext')).toBeDisabled();
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveCount(await page.evaluate(() => BibleData.getChapter('web', 'john', 2).verses.length));
+});
+
+test('Compare Chapter dropdown preserves verse mode and synchronized panels', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('1');
+  await page.locator('#compareVerse').selectOption('3');
+  await page.locator('#compareChapter').selectOption('2');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 2:3');
+  await expect(page.locator('#compareVerse')).toHaveValue('3');
+  await expect(page.locator('#compareGrid .compare-col .vnum')).toHaveText(['3', '3']);
+});
+
+test('Compare Chapter dropdown clamps a preserved verse in a shorter chapter', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('matthew');
+  await page.locator('#compareChapter').selectOption('1');
+  await page.locator('#compareVerse').selectOption('25');
+  await page.locator('#compareChapter').selectOption('2');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Matthew 2:23');
+  await expect(page.locator('#compareVerse')).toHaveValue('23');
+});
+
+test('Compare Chapter dropdown preserves Whole chapter mode when explicitly selected', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('1');
+  await page.locator('#compareVerse').selectOption('');
+  await page.locator('#compareChapter').selectOption('2');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing John 2');
+  await expect(page.locator('#compareVerse')).toHaveValue('');
+  await expect(page.locator('#compareVerseNext')).toBeDisabled();
+});
+
+test('Compare Book dropdown preserves chapter and verse mode across panels', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('3');
+  await page.locator('#compareVerse').selectOption('16');
+  await page.locator('#compareBook').selectOption('luke');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Luke 3:16');
+  await expect(page.locator('#compareChapter')).toHaveValue('3');
+  await expect(page.locator('#compareVerse')).toHaveValue('16');
+  await expect(page.locator('#compareGrid .compare-col .vnum')).toHaveText(['16', '16']);
+});
+
+test('Compare Book dropdown clamps chapter and verse for a shorter destination', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('21');
+  const johnLastVerse = await page.evaluate(() => BibleData.getChapter('web', 'john', 21).verses.length);
+  await page.locator('#compareVerse').selectOption(String(johnLastVerse));
+  await page.locator('#compareBook').selectOption('philemon');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Philemon 1:25');
+  await expect(page.locator('#compareChapter')).toHaveValue('1');
+  await expect(page.locator('#compareVerse')).toHaveValue('25');
+  await page.locator('#compareBook').selectOption('genesis');
+  await page.locator('#compareChapter').selectOption('50');
+  await page.locator('#compareVerse').selectOption('26');
+  await page.locator('#compareBook').selectOption('philemon');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Philemon 1:25');
+});
+
+test('Compare Book dropdown preserves explicitly selected Whole chapter mode', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await page.locator('#compareBook').selectOption('john');
+  await page.locator('#compareChapter').selectOption('3');
+  await page.locator('#compareVerse').selectOption('');
+  await page.locator('#compareBook').selectOption('luke');
+  await expect(page.locator('#compareSummary')).toHaveText('Comparing Luke 3');
+  await expect(page.locator('#compareVerse')).toHaveValue('');
+  await expect(page.locator('#compareVerseNext')).toBeDisabled();
+});
+
+test('Compare panels use only their translation dropdown for identity', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Compare' }).click();
+  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+  await expect(page.locator('#compareGrid .compare-col .compare-translation-meta')).toHaveCount(0);
+  await expect(page.locator('#compareGrid [data-compare-index]')).toHaveCount(2);
 });
 
 test('top and bottom Reader controls stay synchronized', async ({ page }) => {
