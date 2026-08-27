@@ -202,11 +202,12 @@ test('Search results progressively reveal broad matches and clear cleanly', asyn
 test('Search translation selection is independent and drives exact results and OPEN', async ({ page }) => {
   await page.goto('/');
   const searchTranslation = page.locator('#searchTranslation');
-  const searchTranslationLabel = page.locator('#searchTranslationLabel');
+  const searchTranslationToggle = page.locator('#searchTranslationToggle');
   await expect(searchTranslation).toBeVisible();
   await expect(searchTranslation).toHaveValue('web');
-  await expect(searchTranslationLabel).toBeVisible();
-  await expect(searchTranslationLabel).toHaveText('WEB');
+  await expect(searchTranslationToggle).toBeVisible();
+  await expect(searchTranslationToggle).toContainText('WEB');
+  await expect(searchTranslationToggle).toContainText('▼');
   await expect(searchTranslation.locator('option:checked')).toHaveText('WEB');
   await expect.poll(() => searchTranslation.locator('xpath=..').evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThanOrEqual(74);
   const options = await searchTranslation.locator('option').evaluateAll((items) => items.map((item) => ({ value: item.value, text: item.textContent })));
@@ -218,7 +219,7 @@ test('Search translation selection is independent and drives exact results and O
   await expect(readerTranslation).toHaveValue('web');
   await searchTranslation.selectOption('asv');
   await expect(searchTranslation).toHaveValue('asv');
-  await expect(searchTranslationLabel).toHaveText('ASV');
+  await expect(searchTranslationToggle).toContainText('ASV');
   await expect(readerTranslation).toHaveValue('web');
   await page.locator('#searchInput').fill('John 3:16');
   await page.getByRole('button', { name: 'Search', exact: true }).click();
@@ -257,6 +258,39 @@ test('Changing Search translation immediately refreshes the current query', asyn
 
   await search.fill('');
   await translation.selectOption('asv');
+  await expect(results.locator('.result-card, .search-more, .search-status, .no-results')).toHaveCount(0);
+});
+
+test('Custom Search translation dropdown visibly selects and refreshes DBY', async ({ page }) => {
+  await page.goto('/');
+  const toggle = page.locator('#searchTranslationToggle');
+  const menu = page.locator('#searchTranslationMenu');
+  const search = page.locator('#searchInput');
+  const results = page.locator('#results');
+  await expect(toggle).toBeVisible();
+  await expect(toggle).toContainText('WEB');
+  await expect(toggle).toContainText('▼');
+  await toggle.click();
+  await expect(menu).toBeVisible();
+  await expect(menu.locator('[role="option"]')).toHaveCount(8);
+  await expect(menu.locator('[data-translation-id="demo-local"]')).toHaveCount(0);
+  await search.fill('fear');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await expect(results.locator('.result-card')).toHaveCount(10);
+  await toggle.click();
+  await expect(menu).toBeVisible();
+  await menu.locator('[data-translation-id="dby"]').click();
+  await expect(toggle).toContainText('DBY');
+  await expect(toggle).toContainText('▼');
+  await expect(menu).toBeHidden();
+  await expect(results.locator('.result-card')).toHaveCount(10);
+  await expect(results.locator('.ref small').first()).toHaveText('DBY');
+  await page.locator('h2').filter({ hasText: 'Search the Word' }).click();
+  await expect(menu).toBeHidden();
+
+  await search.fill('');
+  await toggle.click();
+  await menu.locator('[data-translation-id="asv"]').click();
   await expect(results.locator('.result-card, .search-more, .search-status, .no-results')).toHaveCount(0);
 });
 
