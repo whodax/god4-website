@@ -79,6 +79,7 @@ function getSearchTranslations(){
 
 function populateSearchTranslations(){
   var select = document.getElementById('searchTranslation');
+  var label = document.getElementById('searchTranslationLabel');
   var translations = getSearchTranslations();
   if(!select || !translations.length) return;
   select.innerHTML = '';
@@ -90,6 +91,7 @@ function populateSearchTranslations(){
   });
   searchTranslationId = translations.some(function(translation){ return translation.id === currentTranslation; }) ? currentTranslation : translations[0].id;
   select.value = searchTranslationId;
+  if(label) label.textContent = translations.find(function(translation){ return translation.id === searchTranslationId; }).abbreviation;
 }
 
 function getSearchTranslation(){
@@ -252,6 +254,9 @@ window.addEventListener('DOMContentLoaded', function(){
   var searchTranslation = document.getElementById('searchTranslation');
   if(searchTranslation) searchTranslation.addEventListener('change', function(){
     searchTranslationId = searchTranslation.value;
+    var translation = getSearchTranslations().find(function(item){ return item.id === searchTranslationId; });
+    var label = document.getElementById('searchTranslationLabel');
+    if(label && translation) label.textContent = translation.abbreviation;
     if(searchInput && searchInput.value.trim()) doSearch();
   });
   var brandMark = document.getElementById('brandMark');

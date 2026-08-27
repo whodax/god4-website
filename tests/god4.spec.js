@@ -202,10 +202,13 @@ test('Search results progressively reveal broad matches and clear cleanly', asyn
 test('Search translation selection is independent and drives exact results and OPEN', async ({ page }) => {
   await page.goto('/');
   const searchTranslation = page.locator('#searchTranslation');
+  const searchTranslationLabel = page.locator('#searchTranslationLabel');
   await expect(searchTranslation).toBeVisible();
   await expect(searchTranslation).toHaveValue('web');
+  await expect(searchTranslationLabel).toBeVisible();
+  await expect(searchTranslationLabel).toHaveText('WEB');
   await expect(searchTranslation.locator('option:checked')).toHaveText('WEB');
-  await expect.poll(() => searchTranslation.evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThanOrEqual(74);
+  await expect.poll(() => searchTranslation.locator('xpath=..').evaluate((element) => element.getBoundingClientRect().width)).toBeGreaterThanOrEqual(74);
   const options = await searchTranslation.locator('option').evaluateAll((items) => items.map((item) => ({ value: item.value, text: item.textContent })));
   expect(options.some((option) => option.value === 'web')).toBeTruthy();
   expect(options.some((option) => option.value === 'asv')).toBeTruthy();
@@ -215,6 +218,7 @@ test('Search translation selection is independent and drives exact results and O
   await expect(readerTranslation).toHaveValue('web');
   await searchTranslation.selectOption('asv');
   await expect(searchTranslation).toHaveValue('asv');
+  await expect(searchTranslationLabel).toHaveText('ASV');
   await expect(readerTranslation).toHaveValue('web');
   await page.locator('#searchInput').fill('John 3:16');
   await page.getByRole('button', { name: 'Search', exact: true }).click();
