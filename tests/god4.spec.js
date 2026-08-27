@@ -232,6 +232,28 @@ test('Search translation selection is independent and drives exact results and O
   await expect(page.locator('#results .ref').first()).toContainText('WEB');
 });
 
+test('Changing Search translation immediately refreshes the current query', async ({ page }) => {
+  await page.goto('/');
+  const search = page.locator('#searchInput');
+  const translation = page.locator('#searchTranslation');
+  const results = page.locator('#results');
+  await translation.selectOption('web');
+  await search.fill('fear');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await expect(results.locator('.result-card')).toHaveCount(10);
+  await expect(results.locator('.ref small').first()).toHaveText('WEB');
+  const webFirst = await results.locator('.result-card').first().innerText();
+
+  await translation.selectOption('dby');
+  await expect(results.locator('.result-card')).toHaveCount(10);
+  await expect(results.locator('.ref small').first()).toHaveText('DBY');
+  await expect(results.locator('.result-card').first()).not.toHaveText(webFirst);
+
+  await search.fill('');
+  await translation.selectOption('asv');
+  await expect(results.locator('.result-card, .search-more, .search-status, .no-results')).toHaveCount(0);
+});
+
 test('Bible data interface exposes the current local dataset', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('#readerTranslation')).toHaveValue('web');

@@ -250,7 +250,10 @@ window.addEventListener('DOMContentLoaded', function(){
   });
   populateSearchTranslations();
   var searchTranslation = document.getElementById('searchTranslation');
-  if(searchTranslation) searchTranslation.addEventListener('change', function(){ searchTranslationId = searchTranslation.value; });
+  if(searchTranslation) searchTranslation.addEventListener('change', function(){
+    searchTranslationId = searchTranslation.value;
+    if(searchInput && searchInput.value.trim()) doSearch();
+  });
   var brandMark = document.getElementById('brandMark');
   if(brandMark){
     var pulseBrandMark = function(){
