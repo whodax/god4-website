@@ -30,6 +30,40 @@ test('homepage and primary navigation load without browser errors', async ({ pag
   expect([...errors, ...failedLocalRequests], [...errors, ...failedLocalRequests].join('\n')).toEqual([]);
 });
 
+test('header cross animation centers a heart and emits four diagonal rays', async ({ page }) => {
+  await page.goto('/');
+  const mark = page.locator('#brandMark');
+  const state = await mark.evaluate((element) => {
+    const heart = element.querySelector('.brand-heart').getBBox();
+    return {
+      width: element.getBoundingClientRect().width,
+      height: element.getBoundingClientRect().height,
+      cross: getComputedStyle(element.querySelector('.brand-cross')),
+      heartCenter: { x: heart.x + heart.width / 2, y: heart.y + heart.height / 2 },
+      rays: element.querySelectorAll('.brand-rays path').length,
+      heartDuration: getComputedStyle(element.querySelector('.brand-heart')).animationDuration,
+      rayDuration: getComputedStyle(element.querySelector('.brand-rays')).animationDuration,
+      pulse: element.classList.contains('brand-mark--pulse')
+    };
+  });
+  await expect(mark).toHaveAccessibleName('Activate cross heart');
+  expect(state.width).toBe(60);
+  expect(state.height).toBe(60);
+  expect(state.cross.stroke).toBe('rgb(184, 134, 43)');
+  expect(Number.parseFloat(state.cross.strokeWidth)).toBeGreaterThanOrEqual(5);
+  expect(state.heartCenter.x).toBeCloseTo(36, 1);
+  expect(state.heartCenter.y).toBeCloseTo(36, 1);
+  expect(state.rays).toBe(4);
+  expect(state.heartDuration).toBe('3s');
+  expect(state.rayDuration).toBe('3s');
+  expect(state.pulse).toBeTruthy();
+  await mark.click();
+  await expect(mark).toHaveClass(/brand-mark--pulse/);
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await mark.click();
+  await expect.poll(() => mark.evaluate((element) => ({ heart: getComputedStyle(element.querySelector('.brand-heart')).animationName, rays: getComputedStyle(element.querySelector('.brand-rays')).animationName }))).toEqual({ heart: 'none', rays: 'none' });
+});
+
 test('hero verse can be saved, unsaved, and shown in the saved-verses tray', async ({ page }) => {
   await page.goto('/');
   const saveButton = page.locator('#heroFav');

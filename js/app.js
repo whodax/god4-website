@@ -121,6 +121,16 @@ function toggleTray(){
 
 /* ===== INIT ===== */
 window.addEventListener('DOMContentLoaded', function(){
+  var brandMark = document.getElementById('brandMark');
+  if(brandMark){
+    var pulseBrandMark = function(){
+      brandMark.classList.remove('brand-mark--pulse');
+      void brandMark.offsetWidth;
+      brandMark.classList.add('brand-mark--pulse');
+    };
+    brandMark.addEventListener('click', pulseBrandMark);
+    pulseBrandMark();
+  }
   if(typeof populateTranslations === 'function') populateTranslations();
   if(typeof populateBooks === 'function') populateBooks();
   if(typeof populateChapters === 'function') populateChapters();
