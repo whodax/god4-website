@@ -354,7 +354,7 @@ function updateCompareReferenceFromControls(changedId){
   loadCompare();
 }
 
-window.addEventListener('DOMContentLoaded', function(){
+function initializeCompare(){
   loadCompareState();
   initializeCompareReference();
   ensureCompareSelections();
@@ -370,4 +370,7 @@ window.addEventListener('DOMContentLoaded', function(){
     var element = document.getElementById(id);
     if(element) element.addEventListener('change', id === 'readerTranslation' ? function(){ syncCompareDefaultTranslation(); syncCompareFromReader(); } : syncCompareFromReader);
   });
-});
+}
+
+if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeCompare, { once: true });
+else initializeCompare();
