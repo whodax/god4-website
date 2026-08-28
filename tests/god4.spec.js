@@ -1,10 +1,14 @@
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ page }) => {
+  const resetKey = `god4.testReset.${Date.now()}.${Math.random()}`;
+  await page.addInitScript((key) => {
+    if (sessionStorage.getItem(key)) return;
+    localStorage.removeItem('god4.translation');
+    localStorage.removeItem('god4.compare');
+    sessionStorage.setItem(key, 'true');
+  }, resetKey);
   await page.goto('/');
-  await page.evaluate(() => localStorage.removeItem('god4.translation'));
-  await page.evaluate(() => localStorage.removeItem('god4.compare'));
-  await page.reload();
 });
 
 test('homepage and primary navigation load without browser errors', async ({ page }, testInfo) => {
