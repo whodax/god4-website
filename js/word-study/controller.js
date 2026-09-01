@@ -9,6 +9,7 @@ var WordStudyController = (function createWordStudyController(){
       panel: document.getElementById('wordStudyPanel'),
       word: document.getElementById('wordStudyWord'),
       reference: document.getElementById('wordStudyReference'),
+      partOfSpeech: document.getElementById('wordStudyPartOfSpeech'),
       verse: document.getElementById('wordStudyVerse'),
       definition: document.getElementById('wordStudyDefinition'),
       related: document.getElementById('wordStudyRelated'),
@@ -25,6 +26,7 @@ var WordStudyController = (function createWordStudyController(){
     view.panel.setAttribute('data-word-study-state', state);
     view.word.textContent = context.displayWord;
     view.reference.textContent = context.bookName + ' ' + context.chapter + ':' + context.verse;
+    view.partOfSpeech.textContent = state === 'available' && result.partOfSpeech ? result.partOfSpeech : '';
     view.verse.textContent = context.verseText;
     view.definition.textContent = state === 'loading' ? 'Looking up this word...' : state === 'available' ? result.definition : result.message;
     view.related.textContent = state === 'available' && result.relatedWords.length ? 'Related words: ' + result.relatedWords.join(', ') : '';
@@ -53,7 +55,7 @@ var WordStudyController = (function createWordStudyController(){
     activatingWord = word;
     var activeRequest = ++requestId;
     setPanelState('loading', context, {});
-    LocalWordStudyProvider.lookup(context).then(function(result){
+    WordStudyProvider.lookup(context).then(function(result){
       if(activeRequest !== requestId) return;
       setPanelState(result.status, context, result);
       var heading = document.getElementById('wordStudyHeading');
