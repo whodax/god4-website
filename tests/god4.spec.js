@@ -1,4 +1,8 @@
 const { test, expect } = require('@playwright/test');
+const fs = require('fs');
+const os = require('os');
+const path = require('path');
+const { execFileSync } = require('child_process');
 
 test.beforeEach(async ({ page }) => {
   const resetKey = `god4.testReset.${Date.now()}.${Math.random()}`;
@@ -1826,6 +1830,48 @@ test('Word Study opens from a Reader word with exact local verse context and res
   await page.locator('#wordStudyClose').click();
   await expect(panel).toBeHidden();
   await expect(word).toBeFocused();
+});
+
+test('Word Study importer creates deterministic two-character fixture shards', async () => {
+  const outputDirectory = fs.mkdtempSync(path.join(os.tmpdir(), 'god4-word-study-'));
+  try {
+    const result = execFileSync(process.execPath, ['tools/import-word-study.js', 'tests/fixtures/word-study/webster.txt', 'tests/fixtures/word-study/moby.txt', outputDirectory], { cwd: path.resolve(__dirname, '..'), encoding: 'utf8' });
+    expect(result).toContain('Imported 6 Webster entries and 6 Moby records into 6 shard(s).');
+    const beginning = JSON.parse(fs.readFileSync(path.join(outputDirectory, 'be.json'), 'utf8'));
+    expect(beginning.entries.beginning).toEqual({ word: 'Beginning', definitions: [{ text: 'The first part, point, or origin of something.', partOfSpeech: 'noun' }], relatedWords: ['commencement', 'origin', 'start'] });
+    expect(fs.existsSync(path.join(outputDirectory, 'un.json'))).toBeFalsy();
+  } finally {
+    fs.rmSync(outputDirectory, { recursive: true, force: true });
+  }
+});
+
+test('Word Study loads static Webster and Moby shard data once per shard', async ({ page }) => {
+  let shardRequests = 0;
+  await page.route('**/data/word-study/be.json', async (route) => {
+    shardRequests++;
+    await route.fulfill({ path: path.resolve(__dirname, '..', 'data/word-study/be.json'), contentType: 'application/json' });
+  });
+  await page.goto('/');
+  const word = page.getByRole('button', { name: 'Study word beginning' }).first();
+  await word.click();
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+  await expect(page.locator('#wordStudyPartOfSpeech')).toHaveText('noun');
+  await expect(page.locator('#wordStudyRelated')).toContainText('commencement');
+  await page.locator('#wordStudyClose').click();
+  await word.click();
+  await expect(page.locator('#wordStudyPanel')).toBeVisible();
+  expect(shardRequests).toBe(1);
+});
+
+test('Word Study falls back safely when a static shard is missing or malformed', async ({ page }) => {
+  await page.route('**/data/word-study/li.json', (route) => route.fulfill({ status: 404 }));
+  await page.route('**/data/word-study/be.json', (route) => route.fulfill({ contentType: 'application/json', body: '{bad json' }));
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Study word light' }).first().click();
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('Brightness that makes things visible; a source of illumination.');
+  await page.locator('#wordStudyClose').click();
+  await page.getByRole('button', { name: 'Study word beginning' }).first().click();
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
 });
 
 test('Word Study supports keyboard activation, unavailable words, Escape close, and Reader changes', async ({ page }) => {

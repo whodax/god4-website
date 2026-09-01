@@ -114,6 +114,7 @@
   .word-study-header button{background:var(--vellum-card);border:1px solid var(--line);border-radius:2px;padding:6px 10px;color:var(--ink-soft);font:11px 'Inter',sans-serif;cursor:pointer;}
   .word-study-header button:hover{border-color:var(--gold);color:var(--gold);}
   .word-study-definition{font:18px/1.55 'EB Garamond',serif;margin:8px 0;color:var(--ink);}
+  .word-study-part-of-speech{font:italic 14px 'EB Garamond',serif;margin:6px 0;color:var(--ink-soft);}
   .word-study-related{font:italic 15px/1.4 'EB Garamond',serif;margin:8px 0;color:var(--ink-soft);}
   .word-study-verse{border-top:1px solid var(--line);margin:12px 0 8px;padding-top:10px;font:italic 15px/1.5 'EB Garamond',serif;color:var(--ink-soft);}
   .word-study-source{margin:0;}
