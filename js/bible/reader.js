@@ -278,6 +278,14 @@ function escapeHtml(value){
   });
 }
 
+function renderStudyWordTokens(text){
+  return String(text).split(/([A-Za-z0-9]+(?:['\u2019-][A-Za-z0-9]+)*)/g).map(function(token){
+    if(!/^[A-Za-z0-9]/.test(token)) return escapeHtml(token);
+    var lookupTerm = typeof WordStudyProvider === 'undefined' ? token.toLowerCase() : WordStudyProvider.normalizeLookupTerm(token);
+    return '<span class="word-study-token" role="button" tabindex="0" aria-label="Study word ' + escapeHtml(token) + '" data-word-study-display="' + escapeHtml(token) + '" data-word-study-term="' + escapeHtml(lookupTerm) + '">' + escapeHtml(token) + '</span>';
+  }).join('');
+}
+
 function switchView(view, btn){
   document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
   var target = document.getElementById('view-' + view);
@@ -365,7 +373,7 @@ function renderPassage(bookKey, chapterNum, containerId){
   if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
   html += '<div style="text-align:center;color:var(--ink-soft);font-size:14px;margin-bottom:20px;font-style:italic;">' + escapeHtml(data.title) + '</div>';
   for(var i = 0; i < data.verses.length; i++){
-    html += '<span class="reader-verse" data-verse-number="' + escapeHtml(i+1) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '" onclick="highlightVerse(this)">' + escapeHtml(i+1) + '</button>' + escapeHtml(data.verses[i]) + ' <button type="button" class="verse-speak" data-verse-speech="' + escapeHtml(i+1) + '" aria-label="Read verse ' + escapeHtml(i+1) + ' aloud" onclick="readVerseAloud(' + escapeHtml(i+1) + ')">Read aloud</button></span> ';
+    html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '" onclick="highlightVerse(this)">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + ' <button type="button" class="verse-speak" data-verse-speech="' + escapeHtml(i+1) + '" aria-label="Read verse ' + escapeHtml(i+1) + ' aloud" onclick="readVerseAloud(' + escapeHtml(i+1) + ')">Read aloud</button></span> ';
   }
   var container = document.getElementById(containerId);
   var fsTitle = document.getElementById('fsTitle');
@@ -438,3 +446,5 @@ function toggleFullscreen(){
   overlay.setAttribute('aria-hidden', isActive ? 'false' : 'true');
   if(fullscreenButton) fullscreenButton.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 }
+
+if(typeof WordStudyController !== 'undefined') WordStudyController.initialize();
