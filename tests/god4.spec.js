@@ -1812,6 +1812,42 @@ test('Reader keeps one navigation group and one voice status through repeated na
   await expect(page.locator('#readerContent')).toContainText('John 1');
 });
 
+test('Word Study opens from a Reader word with exact local verse context and restores focus on close', async ({ page }) => {
+  await page.goto('/');
+  const word = page.getByRole('button', { name: 'Study word beginning' }).first();
+  await word.click();
+  const panel = page.locator('#wordStudyPanel');
+  await expect(panel).toBeVisible();
+  await expect(page.locator('#wordStudyWord')).toHaveText('beginning');
+  await expect(page.locator('#wordStudyReference')).toHaveText('John 1:1');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+  await expect(page.locator('#wordStudyRelated')).toContainText('origin');
+  expect(await page.locator('#readerContent [data-verse-number="1"]').evaluate((verse) => Array.from(verse.childNodes).filter((node) => node.nodeType === Node.TEXT_NODE || (node.nodeType === Node.ELEMENT_NODE && node.hasAttribute('data-word-study-term'))).map((node) => node.textContent).join('').trim())).toBe(await page.evaluate(() => BibleData.getVerse('demo-local', 'john', 1, 1).text));
+  await page.locator('#wordStudyClose').click();
+  await expect(panel).toBeHidden();
+  await expect(word).toBeFocused();
+});
+
+test('Word Study supports keyboard activation, unavailable words, Escape close, and Reader changes', async ({ page }) => {
+  await page.goto('/');
+  const knownWord = page.getByRole('button', { name: 'Study word beginning' }).first();
+  await knownWord.focus();
+  await knownWord.press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+  await page.locator('#wordStudyHeading').press('Escape');
+  await expect(page.locator('#wordStudyPanel')).toBeHidden();
+  const unknownWord = page.getByRole('button', { name: 'Study word was' }).first();
+  await unknownWord.focus();
+  await unknownWord.press(' ');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('Definition not available yet.');
+  await page.locator('#wordStudyClose').click();
+  await page.locator('#chapterSelect').selectOption('2');
+  await expect(page.locator('#readerContent')).toContainText('John 2');
+  await page.locator('#readerTranslation').selectOption('web');
+  await expect(page.locator('#readerTranslation')).toHaveValue('web');
+  await expect(page.locator('#readerContent')).toContainText('John 1');
+});
+
 test('unified Reader audio controls fit the narrow viewport without horizontal overflow', async ({ page }) => {
   await page.setViewportSize({ width: 600, height: 800 });
   await page.goto('/');
@@ -1822,5 +1858,7 @@ test('unified Reader audio controls fit the narrow viewport without horizontal o
   await expect(reader.getByRole('button', { name: 'Voice Commands', exact: true })).toBeVisible();
   await expect(reader.locator('#readAloudVoice')).toBeVisible();
   await expect(reader.locator('#readAloudSpeed')).toBeVisible();
+  await page.getByRole('button', { name: 'Study word beginning' }).first().click();
+  await expect(page.locator('#wordStudyPanel')).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(600);
 });
