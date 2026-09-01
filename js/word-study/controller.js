@@ -30,7 +30,7 @@ var WordStudyController = (function createWordStudyController(){
     view.verse.textContent = context.verseText;
     view.definition.textContent = state === 'loading' ? 'Looking up this word...' : state === 'available' ? result.definition : result.message;
     view.related.textContent = state === 'available' && result.relatedWords.length ? 'Related words: ' + result.relatedWords.join(', ') : '';
-    view.source.textContent = state === 'available' ? result.source : '';
+    view.source.textContent = state === 'available' ? 'Public Domain Word Study' : '';
     view.status.textContent = state === 'loading' ? 'Looking up ' + context.displayWord + '.' : 'Studying ' + context.displayWord + ', ' + context.bookName + ' ' + context.chapter + ':' + context.verse + '.';
   }
 
