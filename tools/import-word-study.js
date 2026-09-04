@@ -8,8 +8,10 @@ function normalizeWord(value) {
 function stripGutenbergBoilerplate(source) {
   const start = source.indexOf('*** START OF THE PROJECT GUTENBERG EBOOK');
   const end = source.indexOf('*** END OF THE PROJECT GUTENBERG EBOOK');
-  if (start < 0 || end < 0 || end <= start) return source.trim();
-  return source.slice(source.indexOf('\n', start) + 1, end).trim();
+  if (start < 0) return source.trim();
+  const contentStart = source.indexOf('\n', start);
+  if (contentStart < 0) return '';
+  return source.slice(contentStart + 1, end > contentStart ? end : undefined).trim();
 }
 
 function normalizePartOfSpeech(value) {
@@ -21,22 +23,74 @@ function parseWebster(source) {
   const lines = stripGutenbergBoilerplate(source).replace(/\r/g, '').split('\n');
   const entries = new Map();
   let current = null;
+  let skippedEntries = 0;
+  let mergedEntries = 0;
+
   function saveCurrent() {
     if (!current) return;
-    const text = current.lines.join(' ').replace(/\s+/g, ' ').trim();
-    const definitions = text.replace(/^\d+\.\s*/, '').split(/\s+(?=\d+\.\s)/).map((definition) => definition.trim()).filter(Boolean);
-    if (current.key && definitions.length) entries.set(current.key, { word: current.word, definitions: definitions.map((text) => ({ text, partOfSpeech: current.partOfSpeech })) });
+    const definitions = current.definitions.map((definition) => definition.replace(/\s+/g, ' ').trim()).filter(Boolean);
+    if (!current.key || !definitions.length) {
+      skippedEntries++;
+      return;
+    }
+    const existing = entries.get(current.key);
+    if (existing) {
+      existing.definitions.push(...definitions.map((text) => ({ text, partOfSpeech: current.partOfSpeech })));
+      mergedEntries++;
+    } else {
+      entries.set(current.key, { word: current.word, definitions: definitions.map((text) => ({ text, partOfSpeech: current.partOfSpeech })) });
+    }
   }
-  for (const line of lines) {
-    const match = /^([A-Za-z][A-Za-z' -]{0,60})\s+\\[^\\]*\\,?\s*((?:v\.t\.|v\.i\.|n\.|v\.|a\.|adv\.|pron\.|prep\.|conj\.|interj\.))?\s*(.*)$/.exec(line.trim());
-    if (match) {
-      saveCurrent();
-      current = { word: match[1].trim(), key: normalizeWord(match[1]), partOfSpeech: normalizePartOfSpeech(match[2]), lines: [match[3]] };
-    } else if (current && line.trim()) {
-      current.lines.push(line.trim());
+
+  function startEntry(word, partOfSpeech, definition) {
+    saveCurrent();
+    current = { word, key: normalizeWord(word), partOfSpeech: normalizePartOfSpeech(partOfSpeech), definitions: definition ? [definition] : [], definitionIndex: definition ? 0 : -1, awaitingSourceLine: !definition };
+  }
+
+  function nextNonEmptyLine(index) {
+    for (let next = index + 1; next < lines.length; next++) {
+      if (lines[next].trim()) return lines[next].trim();
+    }
+    return '';
+  }
+
+  function looksLikeHeading(value, followingValue) {
+    if (!/^[A-Za-z][A-Za-z0-9 .,';:&!?()/-]{0,80}$/.test(value)) return false;
+    if (/^[A-Z][A-Z0-9 .,';:&!?()/-]{0,80}$/.test(value)) return true;
+    return /(?:^|,\s*)(v\.t\.|v\.i\.|n\.|v\.|a\.|adv\.|pron\.|prep\.|conj\.|interj\.)/i.test(followingValue);
+  }
+
+  for (let index = 0; index < lines.length; index++) {
+    const line = lines[index];
+    const trimmed = line.trim();
+    const inlineMatch = /^([A-Za-z][A-Za-z' -]{0,60})\s+\\[^\\]*\\,?\s*((?:v\.t\.|v\.i\.|n\.|v\.|a\.|adv\.|pron\.|prep\.|conj\.|interj\.))?\s*(.*)$/.exec(trimmed);
+    const headingMatch = looksLikeHeading(trimmed, nextNonEmptyLine(index));
+    if (inlineMatch) {
+      startEntry(inlineMatch[1].trim(), inlineMatch[2], inlineMatch[3].replace(/^\d+\.\s*/, ''));
+      continue;
+    }
+    if (headingMatch) {
+      startEntry(trimmed, '', '');
+      continue;
+    }
+    if (!current || !trimmed) continue;
+    if (current.awaitingSourceLine) {
+      const partOfSpeech = /(?:^|,\s*)(v\.t\.|v\.i\.|n\.|v\.|a\.|adv\.|pron\.|prep\.|conj\.|interj\.)/i.exec(trimmed);
+      if (partOfSpeech) current.partOfSpeech = normalizePartOfSpeech(partOfSpeech[1]);
+      current.awaitingSourceLine = false;
+      continue;
+    }
+    const numbered = /^\d+\.\s+(.+)$/.exec(trimmed);
+    const definition = /^Defn:\s*(.+)$/i.exec(trimmed);
+    if (numbered || definition) {
+      current.definitions.push((numbered || definition)[1]);
+      current.definitionIndex = current.definitions.length - 1;
+    } else if (current.definitionIndex >= 0 && !/^(?:Syn\.|Note:|Etym:|\[Obs\.\]|--)/.test(trimmed)) {
+      current.definitions[current.definitionIndex] += ' ' + trimmed;
     }
   }
   saveCurrent();
+  Object.defineProperty(entries, 'stats', { value: { skippedEntries, mergedEntries } });
   return entries;
 }
 
@@ -70,7 +124,7 @@ function importWordStudy(websterFile, mobyFile, outputDirectory) {
   const shards = buildShards(webster, moby);
   fs.mkdirSync(outputDirectory, { recursive: true });
   shards.forEach((data, shard) => fs.writeFileSync(path.join(outputDirectory, `${shard}.json`), `${JSON.stringify(data, null, 2)}\n`));
-  return { websterEntries: webster.size, mobyEntries: moby.size, shards: [...shards.keys()].sort() };
+  return { websterEntries: webster.size, mobyEntries: moby.size, shards: [...shards.keys()].sort(), websterStats: webster.stats };
 }
 
 if (require.main === module) {
@@ -78,6 +132,7 @@ if (require.main === module) {
   if (!websterFile || !mobyFile) throw new Error('Usage: node tools/import-word-study.js <webster-file> <moby-file> [output-directory]');
   const result = importWordStudy(path.resolve(websterFile), path.resolve(mobyFile), path.resolve(outputDirectory));
   console.log(`Imported ${result.websterEntries} Webster entries and ${result.mobyEntries} Moby records into ${result.shards.length} shard(s).`);
+  console.log(`Webster merged ${result.websterStats.mergedEntries} repeated entries and skipped ${result.websterStats.skippedEntries} entries without definitions.`);
 }
 
 module.exports = { normalizeWord, stripGutenbergBoilerplate, parseWebster, parseMoby, buildShards, importWordStudy };

@@ -3,6 +3,7 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 const { execFileSync } = require('child_process');
+const wordStudyImporter = require('../tools/import-word-study');
 
 test.beforeEach(async ({ page }) => {
   const resetKey = `god4.testReset.${Date.now()}.${Math.random()}`;
@@ -1843,6 +1844,23 @@ test('Word Study importer creates deterministic two-character fixture shards', a
   } finally {
     fs.rmSync(outputDirectory, { recursive: true, force: true });
   }
+});
+
+test('Word Study importer parses real Webster heading blocks and merges repeated senses', () => {
+  const source = fs.readFileSync(path.join(__dirname, 'fixtures', 'word-study', 'webster-real-format.txt'), 'utf8');
+  const entries = wordStudyImporter.parseWebster(source);
+  expect(entries.get('beginning')).toEqual({
+    word: 'BEGINNING',
+    definitions: [
+      { text: 'The first act or state of a succession of acts.', partOfSpeech: 'noun' },
+      { text: 'That which begins or originates something; the first cause.', partOfSpeech: 'noun' },
+      { text: 'Enterprise. [Obs.]', partOfSpeech: 'noun' }
+    ]
+  });
+  expect(entries.get('earthshine')).toEqual({ word: 'EARTH SHINE', definitions: [{ text: 'See Earth light, under Earth.', partOfSpeech: '' }] });
+  expect(entries.get('a')).toEqual({ word: 'A-', definitions: [{ text: 'A prefix used in obsolete forms.', partOfSpeech: '' }] });
+  expect(entries.get('abovementionedabovenamed')).toEqual({ word: 'ABOVE-MENTIONED; ABOVE-NAMED', definitions: [{ text: 'Named earlier.', partOfSpeech: 'adjective' }] });
+  expect(entries.stats).toEqual({ skippedEntries: 0, mergedEntries: 1 });
 });
 
 test('Word Study loads static Webster and Moby shard data once per shard', async ({ page }) => {
