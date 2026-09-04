@@ -1846,6 +1846,22 @@ test('Word Study importer creates deterministic two-character fixture shards', a
   }
 });
 
+test('Word Study importer adaptively splits only oversized parent shards without duplicating entries', () => {
+  const entry = (word, text) => ({ word, definitions: [{ text, partOfSpeech: 'noun' }] });
+  const webster = new Map([
+    ['beginning', entry('Beginning', 'A short definition.')],
+    ['co', entry('Co', 'A short definition.')],
+    ['coast', entry('Coast', 'A'.repeat(400))],
+    ['copy', entry('Copy', 'A short definition.')],
+    ['covenant', entry('Covenant', 'B'.repeat(400))]
+  ]);
+  const shards = wordStudyImporter.buildShards(webster, new Map(), 300, 350);
+  expect([...shards.keys()].sort()).toEqual(['be', 'co', 'coas', 'cop', 'cove']);
+  const keys = [...shards.values()].flatMap((shard) => Object.keys(shard.entries));
+  expect(keys.sort()).toEqual(['beginning', 'co', 'coast', 'copy', 'covenant']);
+  expect(new Set(keys).size).toBe(keys.length);
+});
+
 test('Word Study importer parses real Webster heading blocks and merges repeated senses', () => {
   const source = fs.readFileSync(path.join(__dirname, 'fixtures', 'word-study', 'webster-real-format.txt'), 'utf8');
   const entries = wordStudyImporter.parseWebster(source);
@@ -1879,6 +1895,41 @@ test('Word Study loads static Webster and Moby shard data once per shard', async
   await word.click();
   await expect(page.locator('#wordStudyPanel')).toBeVisible();
   expect(shardRequests).toBe(1);
+});
+
+test('Word Study dictionary provider resolves adaptive shards and caches concurrent requests', async ({ page }) => {
+  const requests = {};
+  const entry = (word) => ({ version: 'v1', entries: { [word]: { word, definitions: [{ text: `${word} definition`, partOfSpeech: 'noun' }], relatedWords: [] } } });
+  await page.route('**/data/word-study/**', async (route) => {
+    const shard = new URL(route.request().url()).pathname.split('/').pop().replace('.json', '');
+    requests[shard] = (requests[shard] || 0) + 1;
+    if (shard === 'be') return route.fulfill({ contentType: 'application/json', body: JSON.stringify(entry('beginning')) });
+    if (shard === 'li') return route.fulfill({ status: 404 });
+    if (shard === 'lig') return route.fulfill({ contentType: 'application/json', body: JSON.stringify(entry('light')) });
+    if (shard === 'co' || shard === 'con') return route.fulfill({ status: 404 });
+    if (shard === 'cont') return route.fulfill({ contentType: 'application/json', body: JSON.stringify(entry('context')) });
+    if (shard === 'ma') return route.fulfill({ contentType: 'application/json', body: '{bad json' });
+    return route.fulfill({ status: 404 });
+  });
+  await page.goto('/');
+  const result = await page.evaluate(async () => {
+    const context = (word) => ({ lookupTerm: word, displayWord: word });
+    const beginning = await DictionaryWordStudyProvider.lookup(context('beginning'));
+    const repeatBeginning = await DictionaryWordStudyProvider.lookup(context('beginning'));
+    const lights = await Promise.all([DictionaryWordStudyProvider.lookup(context('light')), DictionaryWordStudyProvider.lookup(context('light'))]);
+    const fourthPrefix = await DictionaryWordStudyProvider.lookup(context('context'));
+    const missing = await DictionaryWordStudyProvider.lookup(context('missing'));
+    const malformed = await DictionaryWordStudyProvider.lookup(context('malformed'));
+    return { beginning, repeatBeginning, lights, fourthPrefix, missing, malformed, names: DictionaryWordStudyProvider.getShardNames('light') };
+  });
+  expect(result.beginning.status).toBe('available');
+  expect(result.repeatBeginning.status).toBe('available');
+  expect(result.lights.map((item) => item.status)).toEqual(['available', 'available']);
+  expect(result.fourthPrefix.status).toBe('available');
+  expect(result.missing.status).toBe('unavailable');
+  expect(result.malformed.status).toBe('unavailable');
+  expect(result.names).toEqual(['li', 'lig', 'ligh']);
+  expect(requests).toEqual({ be: 1, li: 1, lig: 1, co: 1, con: 1, cont: 1, ma: 1, mal: 1, malf: 1, mi: 1, mis: 1, miss: 1 });
 });
 
 test('Word Study falls back safely when a static shard is missing or malformed', async ({ page }) => {
