@@ -7,6 +7,14 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
     return normalized.slice(0, 2);
   }
 
+  function getShardNames(term){
+    var normalized = WordStudyProvider.normalizeLookupTerm(term);
+    var parent = normalized.slice(0, 2);
+    var child = normalized.slice(0, 3);
+    var grandchild = normalized.slice(0, 4);
+    return [parent, child, grandchild].filter(function(shard, index, shards){ return shard && shards.indexOf(shard) === index; });
+  }
+
   function unavailable(context, reason){
     return { status: 'unavailable', word: context.displayWord, reason: reason };
   }
@@ -47,10 +55,16 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
 
   function lookup(context){
     var term = WordStudyProvider.normalizeLookupTerm(context.lookupTerm);
-    return loadShard(getShardName(term)).then(function(data){
-      return data ? normalizeEntry(data.entries[term], context) : unavailable(context, 'shard-unavailable');
-    });
+    var shards = getShardNames(term);
+    function lookupShard(index){
+      if(index >= shards.length) return unavailable(context, 'shard-unavailable');
+      return loadShard(shards[index]).then(function(data){
+        if(data && data.entries[term]) return normalizeEntry(data.entries[term], context);
+        return lookupShard(index + 1);
+      });
+    }
+    return lookupShard(0);
   }
 
-  return { getShardName: getShardName, lookup: lookup };
+  return { getShardName: getShardName, getShardNames: getShardNames, lookup: lookup };
 }());
