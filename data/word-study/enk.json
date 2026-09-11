@@ -1,0 +1,39 @@
+{
+  "version": "v1",
+  "entries": {
+    "enkennel": {
+      "word": "ENKENNEL",
+      "definitions": [
+        {
+          "text": "To put into a kennel.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enkerchiefed": {
+      "word": "ENKERCHIEFED",
+      "definitions": [
+        {
+          "text": "Bound with a kerchief; draped; hooded; covered. Milton. That soft, enkerchiefed hair. M. Arnold.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enkindle": {
+      "word": "ENKINDLE",
+      "definitions": [
+        {
+          "text": "To set on fire; to inflame; to kindle. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To excite; to rouse into action; to incite. To enkindle the enthusiasm of an artist. Talfourd.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

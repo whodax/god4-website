@@ -1,0 +1,856 @@
+{
+  "version": "v1",
+  "entries": {
+    "exuberance": {
+      "word": "EXUBERANCE",
+      "definitions": [
+        {
+          "text": "The state of being exuberant; an overflowing quantity; a copious or excessive production or supply; superabundance; richness; as, an exuberance of joy, of fancy, or of foliage. profusion; richness; overflow; overgrowth; rankness; wantonness. See Abundance.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abandon",
+        "abundance",
+        "affluence",
+        "ample sufficiency",
+        "ampleness",
+        "amplitude",
+        "animal spirits",
+        "animation",
+        "ardor",
+        "avalanche",
+        "beatification",
+        "beatitude",
+        "bewitchment",
+        "blessedness",
+        "bliss",
+        "blissfulness",
+        "bonanza",
+        "bountifulness",
+        "bountiousness",
+        "bumper crop",
+        "buoyancy",
+        "capersomeness",
+        "cheer",
+        "cheerfulness",
+        "cloud nine",
+        "cloud of words",
+        "coltishness",
+        "copiousness",
+        "delectation",
+        "delight",
+        "diffuseness",
+        "diffusion",
+        "diffusiveness",
+        "ecstasy",
+        "ecstatics",
+        "effervescence",
+        "effusion",
+        "effusiveness",
+        "elan",
+        "elation",
+        "enchantment",
+        "esprit",
+        "exaltation",
+        "exhilaration",
+        "extravagance",
+        "fecundity",
+        "felicity",
+        "fertility",
+        "flood",
+        "flow",
+        "fluency",
+        "foison",
+        "formlessness",
+        "friskiness",
+        "frolicsomeness",
+        "fructiferousness",
+        "fruitfulness",
+        "full measure",
+        "fullness",
+        "gaiety",
+        "gamesomeness",
+        "gayness",
+        "generosity",
+        "generousness",
+        "gladness",
+        "glee",
+        "great abundance",
+        "great plenty",
+        "gush",
+        "gushing",
+        "gusto",
+        "happiness",
+        "heartiness",
+        "heaven",
+        "high spirits",
+        "intoxication",
+        "joy",
+        "joyance",
+        "joyfulness",
+        "landslide",
+        "lavishness",
+        "liberality",
+        "liberalness",
+        "life",
+        "liveliness",
+        "logorrhea",
+        "lots",
+        "lushness",
+        "luxuriance",
+        "macrology",
+        "maximum",
+        "more than enough",
+        "much",
+        "myriad",
+        "myriads",
+        "numerousness",
+        "opulence",
+        "opulency",
+        "outpour",
+        "outpouring",
+        "overflow",
+        "overhappiness",
+        "overjoyfulness",
+        "palilogy",
+        "paradise",
+        "piss and vinegar",
+        "playfulness",
+        "plenitude",
+        "plenteousness",
+        "plentifulness",
+        "plenty",
+        "pleonasm",
+        "pregnancy",
+        "prevalence",
+        "procreativeness",
+        "prodigality",
+        "productive capacity",
+        "productiveness",
+        "productivity",
+        "profuseness",
+        "profusion",
+        "prolificacy",
+        "prolificity",
+        "quantities",
+        "rampancy",
+        "rankness",
+        "rapture",
+        "ravishment",
+        "redundancy",
+        "reiteration",
+        "reiterativeness",
+        "repetition for effect",
+        "repetitiveness",
+        "repleteness",
+        "repletion",
+        "rich harvest",
+        "rich vein",
+        "richness",
+        "riot",
+        "riotousness",
+        "rollicksomeness",
+        "rompishness",
+        "scads",
+        "seventh heaven",
+        "shower",
+        "skittishness",
+        "spate",
+        "spirit",
+        "spiritedness",
+        "spirits",
+        "sportiveness",
+        "sprightliness",
+        "stream",
+        "substantiality",
+        "substantialness",
+        "sunshine",
+        "superabundance",
+        "superfluity",
+        "superflux",
+        "swarmingness",
+        "talkativeness",
+        "tautology",
+        "teeming womb",
+        "teemingness",
+        "tirade",
+        "transport",
+        "unalloyed happiness",
+        "verve",
+        "vigor",
+        "vim",
+        "vitality",
+        "vivacity",
+        "wealth",
+        "zest",
+        "zestfulness",
+        "zip"
+      ]
+    },
+    "exuberancy": {
+      "word": "EXUBERANCY",
+      "definitions": [
+        {
+          "text": ", . Exuberance.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuberant": {
+      "word": "EXUBERANT",
+      "definitions": [
+        {
+          "text": "Characterized by abundance or superabundance; plenteous; rich; overflowing; copious or excessive in production; as, exuberant goodness; an exuberant intellect; exuberant foliage. \"Exuberant spring.\" Thomson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ablaze",
+        "abounding",
+        "abundant",
+        "affluent",
+        "afire",
+        "all-sufficing",
+        "ample",
+        "animated",
+        "antic",
+        "aplenty",
+        "ardent",
+        "balmy",
+        "blooming",
+        "blossoming",
+        "boiling over",
+        "booming",
+        "bottomless",
+        "bounteous",
+        "bountiful",
+        "brash",
+        "breathless",
+        "burning",
+        "bursting",
+        "bursting out",
+        "capersome",
+        "clear",
+        "coltish",
+        "copious",
+        "cordial",
+        "creative",
+        "delirious",
+        "dense",
+        "diffuse",
+        "diffusive",
+        "drunk",
+        "ebullient",
+        "effervescent",
+        "effuse",
+        "effusive",
+        "enthusiastic",
+        "epidemic",
+        "excited",
+        "exhaustless",
+        "extravagant",
+        "fair",
+        "fat",
+        "febrile",
+        "fecund",
+        "fertile",
+        "fervent",
+        "fervid",
+        "fevered",
+        "feverish",
+        "fiery",
+        "flaming",
+        "flourishing",
+        "flowering",
+        "flush",
+        "flushed",
+        "formless",
+        "frisky",
+        "frolicsome",
+        "fructiferous",
+        "fruitful",
+        "fruiting",
+        "full",
+        "full of beans",
+        "galore",
+        "gamesome",
+        "gay",
+        "generous",
+        "glowing",
+        "going strong",
+        "gross",
+        "gushing",
+        "gushy",
+        "halcyon",
+        "hearty",
+        "heated",
+        "heavy",
+        "high-spirited",
+        "hot",
+        "impassioned",
+        "impenetrable",
+        "in full swing",
+        "in good case",
+        "in plenty",
+        "in quantity",
+        "inexhaustible",
+        "intense",
+        "intoxicated",
+        "jungled",
+        "jungly",
+        "keen",
+        "lavish",
+        "liberal",
+        "lively",
+        "lush",
+        "luxuriant",
+        "many",
+        "maximal",
+        "much",
+        "numerous",
+        "on fire",
+        "opulent",
+        "overflowing",
+        "overgrown",
+        "overrun",
+        "palmy",
+        "passionate",
+        "piping",
+        "playful",
+        "plenitudinous",
+        "plenteous",
+        "plentiful",
+        "plenty",
+        "pleonastic",
+        "pregnant",
+        "prevailing",
+        "prevalent",
+        "prodigal",
+        "productive",
+        "profuse",
+        "profusive",
+        "proliferous",
+        "prolific",
+        "prospering",
+        "rampant",
+        "rank",
+        "red-hot",
+        "redundant",
+        "reiterative",
+        "repetitive",
+        "replete",
+        "rich",
+        "rife",
+        "riotous",
+        "rollicking",
+        "rollicksome",
+        "rompish",
+        "rosy",
+        "running over",
+        "seminal",
+        "skittish",
+        "sleek",
+        "spirited",
+        "sportive",
+        "sprightly",
+        "steaming",
+        "steamy",
+        "superabundant",
+        "swarming",
+        "tautologous",
+        "teeming",
+        "thick",
+        "thriving",
+        "uberous",
+        "unrestrained",
+        "unweeded",
+        "vigorous",
+        "vital",
+        "vivacious",
+        "warm",
+        "wealthy",
+        "weed-choked",
+        "weed-ridden",
+        "weedy",
+        "well-found",
+        "well-furnished",
+        "well-provided",
+        "well-stocked",
+        "wholesale",
+        "zealous",
+        "zestful",
+        "zippy"
+      ]
+    },
+    "exuberate": {
+      "word": "EXUBERATE",
+      "definitions": [
+        {
+          "text": "To abound; to be in great abundance. [Obs.] Boyle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuccous": {
+      "word": "EXUCCOUS",
+      "definitions": [
+        {
+          "text": "See Exsuccous. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exudate": {
+      "word": "EXUDATE",
+      "definitions": [
+        {
+          "text": "To exude. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exudation": {
+      "word": "EXUDATION",
+      "definitions": [
+        {
+          "text": "The act of exuding; sweating; a discharge of humors, moisture, juice, or gum, as through pores or incisions; also, the substance exuded. Resins, a class of proximate principles, existing in almost all plants and appearing on the external surface of many of them in the form of exudations. Am. Cyc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exude": {
+      "word": "EXUDE",
+      "definitions": [
+        {
+          "text": "To discharge through pores or incisions, as moisture or other liquid matter; to give out. Our forests exude turpentine in . . . abundance. Dr. T. Dwight.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To flow from a body through the pores, or by a natural discharge, as juice.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "bleed",
+        "discharge",
+        "drip",
+        "effuse",
+        "egest",
+        "eliminate",
+        "emanate",
+        "emit",
+        "excrete",
+        "exfiltrate",
+        "extravasate",
+        "exudate",
+        "filter",
+        "filtrate",
+        "give off",
+        "leach",
+        "lixiviate",
+        "ooze",
+        "pass",
+        "percolate",
+        "perspire",
+        "reek",
+        "secrete",
+        "seep",
+        "sew",
+        "strain",
+        "sweat",
+        "swelter",
+        "transpire",
+        "transude",
+        "trickle",
+        "weep",
+        "wilt"
+      ]
+    },
+    "exulcerate": {
+      "word": "EXULCERATE",
+      "definitions": [
+        {
+          "text": "To ulcerate. [Obs.] \"To exulcerate the lungs.\" Evelyn.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To corrode; to fret; to chafe; to inflame. [Obs.] Minds exulcerated in themselves. Hooker.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Very sore; ulcerated. [Obs.] Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exulceration": {
+      "word": "EXULCERATION",
+      "definitions": [
+        {
+          "text": "Ulceration. Quincy.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fretting; a festering; soreness. Hooker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exulcerative": {
+      "word": "EXULCERATIVE",
+      "definitions": [
+        {
+          "text": "Tending to cause ulcers; exulceratory. Holland.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exulceratory": {
+      "word": "EXULCERATORY",
+      "definitions": [
+        {
+          "text": "Having a tendency to form ulcers; rendering ulcerous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exult": {
+      "word": "EXULT",
+      "definitions": [
+        {
+          "text": "To be in high spirits; figuratively, to leap for joy; to rejoice in triumph or exceedingly; to triumph; as, an exulting heart. \"An exulting countenance.\" Bancroft. The dumb shall sing, the lame his crutch forego, And leap exulting like the bounding roe. Pope.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "be proud of",
+        "boast",
+        "brag",
+        "caper",
+        "caracole",
+        "carol",
+        "celebrate",
+        "chirp",
+        "chirrup",
+        "clap hands",
+        "crow",
+        "crow over",
+        "dance",
+        "delight",
+        "exult in",
+        "frisk",
+        "frolic",
+        "gambol",
+        "gloat",
+        "gloat over",
+        "glory",
+        "glory in",
+        "joy",
+        "jubilate",
+        "lilt",
+        "make merry",
+        "rejoice",
+        "revel",
+        "rollick",
+        "romp",
+        "show off",
+        "sing",
+        "skip",
+        "skip for joy",
+        "take pride in",
+        "triumph",
+        "whistle"
+      ]
+    },
+    "exultanceexultancy": {
+      "word": "EXULTANCE; EXULTANCY",
+      "definitions": [
+        {
+          "text": "Exultation. [Obs.] Burton. Hammond.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exultant": {
+      "word": "EXULTANT",
+      "definitions": [
+        {
+          "text": "Inclined to exult; characterized by, or expressing, exultation; rejoicing triumphantly. Break away, exultant, from every defilement. I. Tay;or.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bursting with happiness",
+        "carried away",
+        "cock-a-hoop",
+        "crowing",
+        "delighted",
+        "delighting",
+        "ecstatic",
+        "elate",
+        "elated",
+        "enchanted",
+        "enraptured",
+        "enravished",
+        "entranced",
+        "exalted",
+        "exuberant",
+        "exulting",
+        "flushed",
+        "freaked out",
+        "glad",
+        "gleeful",
+        "gloating",
+        "happy",
+        "high",
+        "imparadised",
+        "in ecstasies",
+        "in heaven",
+        "in high feather",
+        "in paradise",
+        "in raptures",
+        "in seventh heaven",
+        "joyful",
+        "joyous",
+        "jubilant",
+        "on cloud nine",
+        "overjoyed",
+        "overjoyful",
+        "possessed",
+        "rapt",
+        "raptured",
+        "rapturous",
+        "ravished",
+        "rejoicing",
+        "rhapsodic",
+        "sent",
+        "transported",
+        "triumphal",
+        "triumphant"
+      ]
+    },
+    "exultation": {
+      "word": "EXULTATION",
+      "definitions": [
+        {
+          "text": "The act of exulting; lively joy at success or victory, or at any advantage gained; rapturous delight; triumph. His bosom swelled with exultation. Prescott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exundate": {
+      "word": "EXUNDATE",
+      "definitions": [
+        {
+          "text": "To overflow; to inundate. [Obs.] Bailey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exundation": {
+      "word": "EXUNDATION",
+      "definitions": [
+        {
+          "text": "An overflow, or overflowing abundance. [R.] Ray.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exungulate": {
+      "word": "EXUNGULATE",
+      "definitions": [
+        {
+          "text": "To pare off, as nails, the hoof, etc. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuperable": {
+      "word": "EXUPERABLE",
+      "definitions": [
+        {
+          "text": "Surmountable; superable. [Obs.] Johnson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuperance": {
+      "word": "EXUPERANCE",
+      "definitions": [
+        {
+          "text": "Superiority; superfluity. [Obs.] Sir K. Digby.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuperant": {
+      "word": "EXUPERANT",
+      "definitions": [
+        {
+          "text": "Surpassing; exceeding; surmounting. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuperate": {
+      "word": "EXUPERATE",
+      "definitions": [
+        {
+          "text": "To excel; to surmount. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuperation": {
+      "word": "EXUPERATION",
+      "definitions": [
+        {
+          "text": "The act of rising or coming into view. [Obs.] Baxter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exurgent": {
+      "word": "EXURGENT",
+      "definitions": [
+        {
+          "text": "Arising; coming to light. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuscitate": {
+      "word": "EXUSCITATE",
+      "definitions": [
+        {
+          "text": "See Exsuscitate [Obs.] T. Adams.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exustion": {
+      "word": "EXUSTION",
+      "definitions": [
+        {
+          "text": "The act or operation of burning up. Bailey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exutory": {
+      "word": "EXUTORY",
+      "definitions": [
+        {
+          "text": "An issue.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuvia": {
+      "word": "EXUVIA",
+      "definitions": [
+        {
+          "text": "n. sing. of Exuviæ.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuviability": {
+      "word": "EXUVIABILITY",
+      "definitions": [
+        {
+          "text": "Capability of shedding the skin periodically. Craig.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuviable": {
+      "word": "EXUVIABLE",
+      "definitions": [
+        {
+          "text": "Capable of being cast off in the form of exuviæ.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuviae": {
+      "word": "EXUVIAE",
+      "definitions": [
+        {
+          "text": "(Zoöl)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Cast skins, shells, or coverings of animals; any parts of animals which are shed or cast off, as the skins of snakes, the shells of lobsters, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fossil shells and other remains which animals have left in the strata of the earth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuvial": {
+      "word": "EXUVIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to exuviæ. \"Exuvial layers.\" \"Exuvial deposits.\"",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuviate": {
+      "word": "EXUVIATE",
+      "definitions": [
+        {
+          "text": "To shed an old covering or condition preliminary to taking on a new one; to molt. There is reason to suppose that very old crayfish do not exuviate every year. Huxley.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exuviation": {
+      "word": "EXUVIATION",
+      "definitions": [
+        {
+          "text": "The rejecting or casting off of some part, more particularly, the outer cuticular layer, as the shells of crustaceans, skins of snakes, etc.; molting; ecdysis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

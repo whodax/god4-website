@@ -1,0 +1,45 @@
+{
+  "version": "v1",
+  "entries": {
+    "faecal": {
+      "word": "FAECAL",
+      "definitions": [
+        {
+          "text": "See Fecal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "faeces": {
+      "word": "FAECES",
+      "definitions": [
+        {
+          "text": "Excrement; ordure; also, settlings; sediment after infusion or distillation. [Written also feces.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "faecula": {
+      "word": "FAECULA",
+      "definitions": [
+        {
+          "text": "See Fecula.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "faery": {
+      "word": "FAERY",
+      "definitions": [
+        {
+          "text": "Fairy. [Archaic] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

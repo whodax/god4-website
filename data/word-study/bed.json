@@ -1,0 +1,2224 @@
+{
+  "version": "v1",
+  "entries": {
+    "bed": {
+      "word": "BED",
+      "definitions": [
+        {
+          "text": "An article of furniture to sleep or take rest in or on; a couch. Specifically: A sack or mattress, filled with some soft material, in distinction from the bedstead on which it is placed (as, a feather bed), or this with the bedclothes added. In a general sense, any thing or place used for sleeping or reclining on or in, as a quantity of hay, straw, leaves, or twigs. And made for him [a horse] a leafy bed. Byron. I wash, wring, brew, bake, . . . make the beds. Shak. In bed he slept not for my urging it. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Used as the symbol of matrimony) Marriage. George, the eldest son of his second bed. Clarendon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plat or level piece of ground in a garden, usually a little raised above the adjoining ground. \"Beds of hyacinth and roses.\" Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mass or heap of anything arranged like a bed; as, a bed of ashes or coals.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The bottom of a watercourse, or of any body of water; as, the bed of a river. So sinks the daystar in the ocean bed. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A layer or seam, or a horizontal stratum between layers; as, a bed of coal, iron, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Gun.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Gun carriage, and Mortar bed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Masonry) (a) The horizontal surface of a building stone; as, the upper and lower beds. (b) A course of stone or brick in a wall. (c) The place or material in which a block or brick is laid. (d) The lower surface of a brick, slate, or tile. Knight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The foundation or the more solid and fixed part or framing of a machine; or a part on which something is laid or supported; as, the bed of an engine.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The superficial earthwork, or ballast, of a railroad.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Printing)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The flat part of the press, on which the form is laid. bedkey; bed wrench or bedwrench; bedchamber; bedmaker, etc. Bed of justice (French Hist.), the throne (F. lit bed) occupied by the king when sitting in one of his parliaments (judicial courts); hence, a session of a refractory parliament, at which the king was present for the purpose of causing his decrees to be registered. followed by of; as, to be brought to bed of a son. and its bedding. partial divorce of man and wife, without dissolving the bonds of matrimony. If such a divorce (now commonly called a judicial separation) be granted at the instance of the wife, she may have alimony.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To place in a bed. [Obs.] Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make partaker of one's bed; to cohabit with. I'll to the Tuscan wars, and never bed her. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To furnish with a bed or bedding.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To plant or arrange in beds; to set, or cover, as in a bed of soft earth; as, to bed the roots of a plant in mold.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lay or put in any hollow place, or place of rest and security, surrounded or inclosed; to embed; to furnish with or place upon a bed or foundation; as, to bed a stone; it was bedded on a rock. Among all chains or clusters of mountains where large bodies of still water are bedded. Wordsworth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Masonry)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To dress or prepare the surface of stone) so as to serve as a bed.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lay flat; to lay in order; to place in a horizontal or recumbent position. \"Bedded hair.\" Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To go to bed; to cohabit. If he be married, and bed with his wife. Wiseman.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Colonial bed",
+        "Hollywood bed",
+        "Japanese garden",
+        "a world-without-end bargain",
+        "accommodation",
+        "accommodations",
+        "alliance",
+        "alpine garden",
+        "aqueduct",
+        "arboretum",
+        "arroyo",
+        "band",
+        "base",
+        "basement",
+        "basin",
+        "basis",
+        "bassinet",
+        "bearing wall",
+        "bed and board",
+        "bed down",
+        "bed in",
+        "bed on",
+        "bed-davenport",
+        "bedding",
+        "bedrock",
+        "bedstead",
+        "belly",
+        "belt",
+        "berth",
+        "billet",
+        "board",
+        "board and room",
+        "bog garden",
+        "bond of matrimony",
+        "border",
+        "botanical garden",
+        "bottom",
+        "bottom on",
+        "bottom side",
+        "break",
+        "breech",
+        "bridebed",
+        "bridle",
+        "broadcast",
+        "brush",
+        "build on",
+        "bunk",
+        "bunk bed",
+        "buttocks",
+        "camp bed",
+        "canal",
+        "channel",
+        "cohabitation",
+        "confirm",
+        "conjugal bond",
+        "conjugal knot",
+        "cot",
+        "couch",
+        "couche",
+        "coulee",
+        "course",
+        "coverture",
+        "cradle",
+        "creek bed",
+        "crib",
+        "culvert",
+        "curl up",
+        "curry",
+        "currycomb",
+        "cylinder press",
+        "day bed",
+        "deck",
+        "deep-dye",
+        "define",
+        "dibble",
+        "disseminate",
+        "domicile",
+        "domiciliate",
+        "donga",
+        "door bed",
+        "doss",
+        "double bed",
+        "double bunk",
+        "downside",
+        "drench",
+        "drill",
+        "dry bed",
+        "dry garden",
+        "duplex bed",
+        "embed",
+        "engraft",
+        "engrave",
+        "entrench",
+        "establish",
+        "etch",
+        "facilities",
+        "feather bed",
+        "feed",
+        "fix",
+        "flatbed cylinder press",
+        "floor",
+        "flooring",
+        "flop",
+        "flower bed",
+        "flower garden",
+        "flume",
+        "fodder",
+        "fold-away bed",
+        "fond",
+        "footing",
+        "forest",
+        "found",
+        "found on",
+        "foundation",
+        "four-poster",
+        "fundament",
+        "fundamental",
+        "gallery",
+        "garden",
+        "garden spot",
+        "gentle",
+        "go beddy-bye",
+        "go night-night",
+        "go to bed",
+        "go to rest",
+        "grape ranch",
+        "grapery",
+        "ground",
+        "ground on",
+        "grounds",
+        "groundwork",
+        "gulch",
+        "gully",
+        "gullyhole",
+        "gurney",
+        "hammock",
+        "handle",
+        "harbor",
+        "hardpan",
+        "harness",
+        "headrace",
+        "herbarium",
+        "hitch",
+        "holy matrimony",
+        "holy wedlock",
+        "hortus siccus",
+        "hospital bed",
+        "house",
+        "husbandhood",
+        "ill-assorted marriage",
+        "impact",
+        "implant",
+        "impress",
+        "imprint",
+        "infix",
+        "ingrain",
+        "inlay",
+        "inscribe",
+        "inseminate",
+        "inset",
+        "intermarriage",
+        "interracial marriage",
+        "irrigation ditch",
+        "jam",
+        "jardin",
+        "keep",
+        "king-size bed",
+        "kip",
+        "kitchen garden",
+        "layer",
+        "ledge",
+        "level",
+        "lie down",
+        "litter",
+        "lodge",
+        "lodgings",
+        "loll",
+        "lounge",
+        "lower berth",
+        "lower side",
+        "lowest layer",
+        "lowest level",
+        "makeready",
+        "manage",
+        "market garden",
+        "marriage",
+        "marriage bed",
+        "marriage sacrament",
+        "match",
+        "matrimonial union",
+        "matrimony",
+        "measures",
+        "mesalliance",
+        "milk",
+        "misalliance",
+        "miscegenation",
+        "mixed marriage",
+        "nestle",
+        "nether side",
+        "nethermost level",
+        "nullah",
+        "nuptial bond",
+        "ocean bottom",
+        "ornamental garden",
+        "overlayer",
+        "overstory",
+        "pack",
+        "pallet",
+        "panel bed",
+        "paradise",
+        "pavement",
+        "pile",
+        "pinetum",
+        "pipe berth",
+        "plant",
+        "platen",
+        "platen press",
+        "poster bed",
+        "pot",
+        "press",
+        "presswork",
+        "principle",
+        "print",
+        "printing machine",
+        "printing press",
+        "put in",
+        "put to bed",
+        "put up",
+        "quarter",
+        "quarter berth",
+        "queen-size bed",
+        "race",
+        "radical",
+        "recline",
+        "reforest",
+        "repose",
+        "reset",
+        "rest",
+        "retimber",
+        "retire",
+        "riprap",
+        "river bed",
+        "riverway",
+        "rock bottom",
+        "rock garden",
+        "roll in",
+        "roll-away bed",
+        "roof garden",
+        "room",
+        "root",
+        "rotary press",
+        "rotogravure press",
+        "rub down",
+        "rudiment",
+        "runnel",
+        "sacrament of matrimony",
+        "saddle",
+        "scatter seed",
+        "seam",
+        "seat",
+        "seed",
+        "seed down",
+        "seminate",
+        "set",
+        "set in",
+        "set on",
+        "settle",
+        "settle to rest",
+        "shelf",
+        "shelter",
+        "shrubbery",
+        "sill",
+        "single bed",
+        "sluice",
+        "snug down",
+        "sofa",
+        "sofa-bed",
+        "solid ground",
+        "solid rock",
+        "sow",
+        "sow broadcast",
+        "spillbox",
+        "spillway",
+        "spousehood",
+        "sprawl",
+        "stable",
+        "stage",
+        "stamp",
+        "step",
+        "stereobate",
+        "stereotype",
+        "story",
+        "stratum",
+        "stream bed",
+        "streamway",
+        "stretcher",
+        "stylobate",
+        "subsistence",
+        "substratum",
+        "substruction",
+        "substructure",
+        "sunken garden",
+        "superstratum",
+        "swash",
+        "swash channel",
+        "tailrace",
+        "take it easy",
+        "take life easy",
+        "tame",
+        "tea garden",
+        "tend",
+        "terra firma",
+        "tester bed",
+        "the hay",
+        "the sack",
+        "thickness",
+        "three-quarter bed",
+        "tier",
+        "topsoil",
+        "train",
+        "transplant",
+        "truck garden",
+        "truckle bed",
+        "trundle bed",
+        "tuck in",
+        "turn in",
+        "underbelly",
+        "underbuilding",
+        "undercarriage",
+        "undergird",
+        "undergirding",
+        "underlayer",
+        "underlie",
+        "underneath",
+        "underpinning",
+        "underside",
+        "understory",
+        "understratum",
+        "understruction",
+        "understructure",
+        "union",
+        "vegetable garden",
+        "victory garden",
+        "vinery",
+        "vineyard",
+        "wadi",
+        "water",
+        "water carrier",
+        "water channel",
+        "water furrow",
+        "water gap",
+        "water gate",
+        "watercourse",
+        "waterway",
+        "waterworks",
+        "web",
+        "web press",
+        "wedded bliss",
+        "wedded state",
+        "weddedness",
+        "wedding knot",
+        "wedge",
+        "wedlock",
+        "wifehood",
+        "yoke",
+        "zone"
+      ]
+    },
+    "bedabble": {
+      "word": "BEDABBLE",
+      "definitions": [
+        {
+          "text": "To dabble; to sprinkle or wet. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedaff": {
+      "word": "BEDAFF",
+      "definitions": [
+        {
+          "text": "To make a daff or fool of. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedagat": {
+      "word": "BEDAGAT",
+      "definitions": [
+        {
+          "text": "The sacred books of the Buddhists in Burmah. Malcom.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedaggle": {
+      "word": "BEDAGGLE",
+      "definitions": [
+        {
+          "text": "To daggle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedash": {
+      "word": "BEDASH",
+      "definitions": [
+        {
+          "text": "To wet by dashing or throwing water or other liquid upon; to bespatter. \"Trees bedashed with rain.\" Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedaub": {
+      "word": "BEDAUB",
+      "definitions": [
+        {
+          "text": "To daub over; to besmear or soil with anything thick and dirty. Bedaub foul designs with a fair varnish. Barrow.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "apply paint",
+        "attaint",
+        "bedizen",
+        "begild",
+        "besmear",
+        "besmirch",
+        "besmoke",
+        "besmutch",
+        "besoil",
+        "bestain",
+        "black",
+        "blacken",
+        "blur",
+        "brand",
+        "brush on paint",
+        "butter",
+        "calcimine",
+        "coat",
+        "color",
+        "complexion",
+        "cover",
+        "dab",
+        "darken",
+        "daub",
+        "deep-dye",
+        "dip",
+        "dirty",
+        "discolor",
+        "distemper",
+        "double-dye",
+        "dye",
+        "emblazon",
+        "enamel",
+        "engild",
+        "face",
+        "fast-dye",
+        "fresco",
+        "gild",
+        "glaze",
+        "gloss",
+        "grain",
+        "hue",
+        "illuminate",
+        "imbue",
+        "ingrain",
+        "japan",
+        "lacquer",
+        "lay on",
+        "lay on color",
+        "mark",
+        "paint",
+        "parget",
+        "pigment",
+        "plaster",
+        "prime",
+        "scorch",
+        "sear",
+        "shade",
+        "shadow",
+        "shellac",
+        "singe",
+        "slap on",
+        "slather",
+        "slop on paint",
+        "slubber",
+        "slur",
+        "smarm",
+        "smear",
+        "smear on",
+        "smirch",
+        "smoke",
+        "smouch",
+        "smudge",
+        "smut",
+        "smutch",
+        "soil",
+        "spot",
+        "spread on",
+        "spread with",
+        "stain",
+        "stigmatize",
+        "stipple",
+        "sully",
+        "taint",
+        "tar",
+        "tarnish",
+        "tinct",
+        "tincture",
+        "tinge",
+        "tint",
+        "tone",
+        "undercoat",
+        "varnish",
+        "wash",
+        "whitewash"
+      ]
+    },
+    "bedazzle": {
+      "word": "BEDAZZLE",
+      "definitions": [
+        {
+          "text": "To dazzle or make dim by a strong light. \"Bedazzled with the sun.\" Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "addle",
+        "addle the wits",
+        "amaze",
+        "astonish",
+        "astound",
+        "awe",
+        "awestrike",
+        "ball up",
+        "bandage",
+        "be bright",
+        "beacon",
+        "beam",
+        "becloud",
+        "bedaze",
+        "befuddle",
+        "benight",
+        "bewilder",
+        "blaze",
+        "blind",
+        "blind the eyes",
+        "blindfold",
+        "boggle",
+        "bother",
+        "bowl down",
+        "bowl over",
+        "bug",
+        "burn",
+        "cloud",
+        "confound",
+        "confuse",
+        "darken",
+        "daze",
+        "dazzle",
+        "deprive of sight",
+        "diffuse light",
+        "dim",
+        "discombobulate",
+        "discomfit",
+        "discompose",
+        "disconcert",
+        "disorganize",
+        "disorient",
+        "disturb",
+        "dumbfound",
+        "dumbfounder",
+        "eclipse",
+        "embarrass",
+        "entangle",
+        "excecate",
+        "flabbergast",
+        "flame",
+        "flare",
+        "flash",
+        "flummox",
+        "flurry",
+        "fluster",
+        "flutter",
+        "fog",
+        "fuddle",
+        "fulgurate",
+        "fuss",
+        "give light",
+        "glance",
+        "glare",
+        "gleam",
+        "glint",
+        "glow",
+        "gouge",
+        "hoodwink",
+        "incandesce",
+        "luster",
+        "make blind",
+        "maze",
+        "mist",
+        "mix up",
+        "moider",
+        "muddle",
+        "obscure",
+        "overwhelm",
+        "paralyze",
+        "perplex",
+        "perturb",
+        "petrify",
+        "pother",
+        "put out",
+        "radiate",
+        "raise hell",
+        "rattle",
+        "ruffle",
+        "send out rays",
+        "shine",
+        "shine brightly",
+        "shoot",
+        "shoot out rays",
+        "snow-blind",
+        "stagger",
+        "startle",
+        "strike blind",
+        "strike dead",
+        "strike dumb",
+        "strike with wonder",
+        "stun",
+        "stupefy",
+        "surprise",
+        "throw into confusion",
+        "unsettle",
+        "upset"
+      ]
+    },
+    "bedbug": {
+      "word": "BEDBUG",
+      "definitions": [
+        {
+          "text": "A wingless, bloodsucking, hemipterous insect (Cimex Lectularius), sometimes infesting houses and especially beds. See Illustration in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedchair": {
+      "word": "BEDCHAIR",
+      "definitions": [
+        {
+          "text": "A chair with adjustable back, for the sick, to support them while sitting up in bed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedchamber": {
+      "word": "BEDCHAMBER",
+      "definitions": [
+        {
+          "text": "A chamber for a bed; an apartment form sleeping in. Shak. Lords of the bedchamber, eight officers of the royal household, all of noble families, who wait in turn a week each. [Eng.] -- Ladies of the bedchamber, eight ladies, all titled, holding a similar official position in the royal household, during the reign of a queen. [Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedclothes": {
+      "word": "BEDCLOTHES",
+      "definitions": [
+        {
+          "text": "Blankets, sheets, coverlets, etc., for a bed. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "afghan",
+        "bed linen",
+        "bedcover",
+        "bedding",
+        "bedsheet",
+        "bedspread",
+        "blanket",
+        "buffalo robe",
+        "case",
+        "clothes",
+        "comfort",
+        "comforter",
+        "contour sheet",
+        "counterpane",
+        "cover",
+        "coverlet",
+        "coverlid",
+        "eiderdown",
+        "fitted sheet",
+        "lap robe",
+        "linen",
+        "patchwork quilt",
+        "pillow slip",
+        "pillowcase",
+        "quilt",
+        "robe",
+        "rug",
+        "sheet",
+        "sheeting",
+        "slip",
+        "spread"
+      ]
+    },
+    "bedcord": {
+      "word": "BEDCORD",
+      "definitions": [
+        {
+          "text": "A cord or rope interwoven in a bedstead so as to support the bed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedded": {
+      "word": "BEDDED",
+      "definitions": [
+        {
+          "text": "Provided with a bed; as, double-bedded room; placed or arranged in a bed or beds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedding": {
+      "word": "BEDDING",
+      "definitions": [
+        {
+          "text": "A bed and its furniture; the materials of a bed, whether for man or beast; bedclothes; litter.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state or position of beds and layers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "afghan",
+        "air mattress",
+        "band",
+        "base",
+        "basement",
+        "basis",
+        "bearing wall",
+        "bed",
+        "bed linen",
+        "bedclothes",
+        "bedcover",
+        "bedrock",
+        "bedsheet",
+        "bedspread",
+        "belt",
+        "blanket",
+        "bolster",
+        "buffalo robe",
+        "case",
+        "clothes",
+        "comfort",
+        "comforter",
+        "contour sheet",
+        "couche",
+        "counterpane",
+        "course",
+        "cover",
+        "coverlet",
+        "coverlid",
+        "cushion",
+        "deck",
+        "eiderdown",
+        "fitted sheet",
+        "floor",
+        "flooring",
+        "fond",
+        "footing",
+        "foundation",
+        "fundament",
+        "fundamental",
+        "gallery",
+        "ground",
+        "grounds",
+        "groundwork",
+        "hardpan",
+        "innerspring mattress",
+        "lap robe",
+        "layer",
+        "ledge",
+        "level",
+        "linen",
+        "litter",
+        "mat",
+        "mattress",
+        "measures",
+        "overlayer",
+        "overstory",
+        "pad",
+        "pallet",
+        "patchwork quilt",
+        "pavement",
+        "pillow",
+        "pillow slip",
+        "pillowcase",
+        "principle",
+        "quilt",
+        "radical",
+        "riprap",
+        "robe",
+        "rock bottom",
+        "rudiment",
+        "rug",
+        "seam",
+        "seat",
+        "sheet",
+        "sheeting",
+        "shelf",
+        "sill",
+        "sleeping bag",
+        "slip",
+        "solid ground",
+        "solid rock",
+        "spread",
+        "springs",
+        "stage",
+        "step",
+        "stereobate",
+        "story",
+        "stratum",
+        "stylobate",
+        "substratum",
+        "substruction",
+        "substructure",
+        "superstratum",
+        "terra firma",
+        "thickness",
+        "tier",
+        "topsoil",
+        "underbed",
+        "underbedding",
+        "underbuilding",
+        "undercarriage",
+        "undergirding",
+        "underlayer",
+        "underpinning",
+        "understory",
+        "understratum",
+        "understruction",
+        "understructure",
+        "zone"
+      ]
+    },
+    "bede": {
+      "word": "BEDE",
+      "definitions": [
+        {
+          "text": "To pray; also, to offer; to proffer. [Obs.] R. of Gloucester. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A kind of pickax.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedeck": {
+      "word": "BEDECK",
+      "definitions": [
+        {
+          "text": "To deck, ornament, or adorn; to grace. Bedecked with boughs, flowers, and garlands. Pennant.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adorn",
+        "apparel",
+        "array",
+        "attire",
+        "beautify",
+        "bedaub",
+        "bedizen",
+        "bedrape",
+        "blazon",
+        "bundle up",
+        "clothe",
+        "color",
+        "dandify",
+        "deck",
+        "deck out",
+        "decorate",
+        "dight",
+        "dizen",
+        "doll up",
+        "drape",
+        "dress",
+        "dress up",
+        "dud",
+        "embellish",
+        "emblazon",
+        "embroider",
+        "enclothe",
+        "endue",
+        "enrich",
+        "enrobe",
+        "enshroud",
+        "envelop",
+        "enwrap",
+        "fig out",
+        "fix up",
+        "furbish",
+        "garb",
+        "garment",
+        "garnish",
+        "grace",
+        "gussy up",
+        "habilitate",
+        "invest",
+        "lap",
+        "muffle up",
+        "ornament",
+        "paint",
+        "prank",
+        "prank up",
+        "preen",
+        "prettify",
+        "primp",
+        "primp up",
+        "prink",
+        "prink up",
+        "rag out",
+        "raiment",
+        "redecorate",
+        "redo",
+        "refurbish",
+        "robe",
+        "set off",
+        "set out",
+        "sheathe",
+        "shroud",
+        "smarten",
+        "smarten up",
+        "spruce up",
+        "swaddle",
+        "swathe",
+        "tire",
+        "titivate",
+        "trick out",
+        "trick up",
+        "trim",
+        "wrap",
+        "wrap up"
+      ]
+    },
+    "bedeguarbedegar": {
+      "word": "BEDEGUAR; BEDEGAR",
+      "definitions": [
+        {
+          "text": "A gall produced on rosebushes, esp. on the sweetbrier or eglantine, by a puncture from the ovipositor of a gallfly (Rhodites rosæ). It was once supposed to have medicinal properties.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedehouse": {
+      "word": "BEDEHOUSE",
+      "definitions": [
+        {
+          "text": ",n.Same as Beadhouse.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedelbedell": {
+      "word": "BEDEL; BEDELL",
+      "definitions": [
+        {
+          "text": ",n.Same as Beadle.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedelry": {
+      "word": "BEDELRY",
+      "definitions": [
+        {
+          "text": "Beadleship. [Obs.] Blount.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "beden": {
+      "word": "BEDEN",
+      "definitions": [
+        {
+          "text": "The Abyssinian or Arabian ibex (Capra Nubiana). It is probably the wild goat of the Bible.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedesman": {
+      "word": "BEDESMAN",
+      "definitions": [
+        {
+          "text": "Same as Beadsman. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedevil": {
+      "word": "BEDEVIL",
+      "definitions": [
+        {
+          "text": "To throw into utter disorder and confusion, as if by the agency of evil spirits; to bring under diabolical influence; to torment. Bedeviled and used worse than St. Bartholomew. Sterne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To spoil; to corrupt. Wright.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "aggravate",
+        "annoy",
+        "badger",
+        "bait",
+        "be at",
+        "beset",
+        "bewitch",
+        "bother",
+        "bristle",
+        "brown off",
+        "bug",
+        "bullyrag",
+        "burn up",
+        "chivy",
+        "demonize",
+        "devil",
+        "devilize",
+        "diabolize",
+        "discompose",
+        "distemper",
+        "disturb",
+        "dog",
+        "exasperate",
+        "exercise",
+        "fash",
+        "get",
+        "gripe",
+        "harass",
+        "harry",
+        "heckle",
+        "hector",
+        "hex",
+        "hoodoo",
+        "hound",
+        "irk",
+        "jinx",
+        "miff",
+        "molest",
+        "nag",
+        "needle",
+        "nettle",
+        "nudzh",
+        "obsess",
+        "overlook",
+        "peeve",
+        "persecute",
+        "pester",
+        "pick on",
+        "pique",
+        "plague",
+        "pluck the beard",
+        "possess",
+        "pother",
+        "provoke",
+        "ride",
+        "rile",
+        "roil",
+        "ruffle",
+        "tantalize",
+        "tease",
+        "torment",
+        "try the patience",
+        "tweak the nose",
+        "vex",
+        "voodoo",
+        "witch",
+        "worry"
+      ]
+    },
+    "bedevilment": {
+      "word": "BEDEVILMENT",
+      "definitions": [
+        {
+          "text": "The state of being bedeviled; bewildering confusion; vexatious trouble. [Colloq.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedew": {
+      "word": "BEDEW",
+      "definitions": [
+        {
+          "text": "To moisten with dew, or as with dew. \"Falling tears his face bedew.\" Dryden.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedewer": {
+      "word": "BEDEWER",
+      "definitions": [
+        {
+          "text": "One who, or that which, bedews.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedewy": {
+      "word": "BEDEWY",
+      "definitions": [
+        {
+          "text": "Moist with dew; dewy. [Obs.] Night with her bedewy wings. A. Brewer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedfellow": {
+      "word": "BEDFELLOW",
+      "definitions": [
+        {
+          "text": "One who lies with another in the same bed; a person who shares one's couch.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ace",
+        "adjunct",
+        "ally",
+        "amigo",
+        "associate",
+        "bedmate",
+        "bosom buddy",
+        "brother",
+        "brother-in-arms",
+        "buddy",
+        "bunkie",
+        "bunkmate",
+        "butty",
+        "camarade",
+        "chamberfellow",
+        "chum",
+        "classmate",
+        "coadjutor",
+        "cohort",
+        "colleague",
+        "comate",
+        "companion",
+        "company",
+        "compatriot",
+        "compeer",
+        "comrade",
+        "confederate",
+        "confrere",
+        "consociate",
+        "consort",
+        "copartner",
+        "crony",
+        "fellow",
+        "fellow member",
+        "fellow student",
+        "girl friend",
+        "gossip",
+        "mate",
+        "messmate",
+        "old crony",
+        "pal",
+        "pard",
+        "pardner",
+        "partner",
+        "playfellow",
+        "playmate",
+        "roommate",
+        "schoolfellow",
+        "schoolmate",
+        "shipmate",
+        "side partner",
+        "sidekick",
+        "teammate",
+        "workfellow",
+        "yokefellow",
+        "yokemate"
+      ]
+    },
+    "bedferebedphere": {
+      "word": "BEDFERE; BEDPHERE",
+      "definitions": [
+        {
+          "text": "A bedfellow. [Obs.] Chapman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedgown": {
+      "word": "BEDGOWN",
+      "definitions": [
+        {
+          "text": "A nightgown.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedight": {
+      "word": "BEDIGHT",
+      "definitions": [
+        {
+          "text": "To bedeck; to array or equip; to adorn. [Archaic] Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedim": {
+      "word": "BEDIM",
+      "definitions": [
+        {
+          "text": "To make dim; to obscure or darken. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedizen": {
+      "word": "BEDIZEN",
+      "definitions": [
+        {
+          "text": "To dress or adorn tawdrily or with false taste. Remnants of tapestried hangings, . . . and shreds of pictures with which he had bedizened his tatters. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adorn",
+        "apply paint",
+        "array",
+        "beautify",
+        "bedaub",
+        "bedeck",
+        "begild",
+        "besmear",
+        "blazon",
+        "brush on paint",
+        "calcimine",
+        "coat",
+        "color",
+        "complexion",
+        "cover",
+        "dab",
+        "dandify",
+        "daub",
+        "deck",
+        "deck out",
+        "decorate",
+        "deep-dye",
+        "dip",
+        "distemper",
+        "dizen",
+        "doll up",
+        "double-dye",
+        "dress",
+        "dress up",
+        "dye",
+        "embellish",
+        "emblazon",
+        "embroider",
+        "enamel",
+        "engild",
+        "enrich",
+        "face",
+        "fancy up",
+        "fast-dye",
+        "fig out",
+        "fix up",
+        "fresco",
+        "furbish",
+        "garnish",
+        "get up",
+        "gild",
+        "glaze",
+        "gloss",
+        "grace",
+        "grain",
+        "gussy up",
+        "hue",
+        "illuminate",
+        "imbue",
+        "ingrain",
+        "japan",
+        "lacquer",
+        "lay on color",
+        "ornament",
+        "overdress",
+        "paint",
+        "parget",
+        "pigment",
+        "prank",
+        "prank up",
+        "preen",
+        "prettify",
+        "pretty up",
+        "prime",
+        "primp",
+        "primp up",
+        "prink",
+        "prink up",
+        "rag out",
+        "redecorate",
+        "redo",
+        "refurbish",
+        "set off",
+        "set out",
+        "shade",
+        "shadow",
+        "shellac",
+        "slick up",
+        "slop on paint",
+        "smarten",
+        "smarten up",
+        "smear",
+        "spruce up",
+        "stain",
+        "stipple",
+        "tinct",
+        "tincture",
+        "tinge",
+        "tint",
+        "titivate",
+        "tone",
+        "trick out",
+        "trick up",
+        "trim",
+        "undercoat",
+        "varnish",
+        "wash",
+        "whitewash"
+      ]
+    },
+    "bedizenment": {
+      "word": "BEDIZENMENT",
+      "definitions": [
+        {
+          "text": "That which bedizens; the act of dressing, or the state of being dressed, tawdrily.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedkey": {
+      "word": "BEDKEY",
+      "definitions": [
+        {
+          "text": "An instrument for tightening the parts of a bedstead.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedlam": {
+      "word": "BEDLAM",
+      "definitions": [
+        {
+          "text": "A place appropriated to the confinement and care of the insane; a madhouse. Abp. Tillotson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An insane person; a lunatic; a madman. [Obs.] Let's get the bedlam to lead him. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any place where uproar and confusion prevail.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Belonging to, or fit for, a madhouse. \"The bedlam, brainsick duchess.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Babel",
+        "Bedlam let loose",
+        "asylum",
+        "blast",
+        "bobbery",
+        "brawl",
+        "brouhaha",
+        "bughouse",
+        "cacophony",
+        "chaos",
+        "charivari",
+        "chirm",
+        "clamor",
+        "clangor",
+        "clap",
+        "clatter",
+        "commotion",
+        "confusion",
+        "confusion of tongues",
+        "din",
+        "discord",
+        "donnybrook",
+        "drunken brawl",
+        "dustup",
+        "flap",
+        "fracas",
+        "free-for-all",
+        "hell",
+        "hell broke loose",
+        "howl",
+        "hubbub",
+        "hue and cry",
+        "hullabaloo",
+        "insane asylum",
+        "jangle",
+        "loud noise",
+        "lunatic asylum",
+        "madhouse",
+        "mental home",
+        "mental hospital",
+        "mental institution",
+        "noise",
+        "noise and shouting",
+        "nuthouse",
+        "outcry",
+        "padded cell",
+        "pandemonium",
+        "psychiatric ward",
+        "psychopathic hospital",
+        "racket",
+        "rattle",
+        "rhubarb",
+        "roar",
+        "row",
+        "ruckus",
+        "ruction",
+        "rumble",
+        "rumpus",
+        "shindy",
+        "shivaree",
+        "static",
+        "thunder",
+        "thunderclap",
+        "tintamarre",
+        "tumult",
+        "turmoil",
+        "uproar"
+      ]
+    },
+    "bedlamite": {
+      "word": "BEDLAMITE",
+      "definitions": [
+        {
+          "text": "An inhabitant of a madhouse; a madman. \"Raving bedlamites.\" Beattie.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedmaker": {
+      "word": "BEDMAKER",
+      "definitions": [
+        {
+          "text": "One who makes beds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedmoldingbedmoulding": {
+      "word": "BED-MOLDING; BED-MOULDING",
+      "definitions": [
+        {
+          "text": "The molding of a cornice immediately below the corona. Oxf. Gloss.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedote": {
+      "word": "BEDOTE",
+      "definitions": [
+        {
+          "text": "To cause to dote; to deceive. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedouin": {
+      "word": "BEDOUIN",
+      "definitions": [
+        {
+          "text": "One of the nomadic Arabs who live in tents, and are scattered",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to the Bedouins; nomad.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedpan": {
+      "word": "BEDPAN",
+      "definitions": [
+        {
+          "text": "A pan for warming beds. Nares.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A shallow chamber vessel, so constructed that it can be used by a sick person in bed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "can",
+        "chamber",
+        "chamber pot",
+        "chemical closet",
+        "chemical toilet",
+        "commode",
+        "crapper",
+        "jerry",
+        "john",
+        "johnny",
+        "jordan",
+        "latrine",
+        "piss pot",
+        "potty",
+        "potty-chair",
+        "stool",
+        "throne",
+        "thunder mug",
+        "toilet",
+        "urinal",
+        "water closet"
+      ]
+    },
+    "bedphere": {
+      "word": "BEDPHERE",
+      "definitions": [
+        {
+          "text": "See Bedfere. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedpiecebedplate": {
+      "word": "BEDPIECE; BEDPLATE",
+      "definitions": [
+        {
+          "text": "The foundation framing or piece, by which the other parts are supported and held in place; the bed; -- called also baseplate and soleplate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedpost": {
+      "word": "BEDPOST",
+      "definitions": [
+        {
+          "text": "One of the four standards that support a bedstead or the canopy over a bedstead.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anciently, a post or pin on each side of the bed to keep the clothes from falling off. See Bedstaff. Brewer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedquilt": {
+      "word": "BEDQUILT",
+      "definitions": [
+        {
+          "text": "A quilt for a bed; a coverlet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedrabble": {
+      "word": "BEDRABBLE",
+      "definitions": [
+        {
+          "text": "To befoul with rain and mud; to drabble.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedraggle": {
+      "word": "BEDRAGGLE",
+      "definitions": [
+        {
+          "text": "To draggle; to soil, as garments which, in walking, are suffered to drag in dust, mud, etc. Swift.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedrench": {
+      "word": "BEDRENCH",
+      "definitions": [
+        {
+          "text": "To drench; to saturate with moisture; to soak. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedribble": {
+      "word": "BEDRIBBLE",
+      "definitions": [
+        {
+          "text": "To dribble upon.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedridbedridden": {
+      "word": "BEDRID; BEDRIDDEN",
+      "definitions": [
+        {
+          "text": "Confined to the bed by sickness or infirmity. \"Her decrepit, sick, and bedrid father.\" Shak. \"The estate of a bedridden old gentleman.\" Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedrightbedrite": {
+      "word": "BEDRIGHT; BEDRITE",
+      "definitions": [
+        {
+          "text": "The duty or privilege of the marriage bed. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedrizzle": {
+      "word": "BEDRIZZLE",
+      "definitions": [
+        {
+          "text": "To drizzle upon.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedrock": {
+      "word": "BED ROCK",
+      "definitions": [
+        {
+          "text": "The solid rock underlying superficial formations. Also Fig.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "aa",
+        "abyssal rock",
+        "basalt",
+        "base",
+        "basement",
+        "basic",
+        "basis",
+        "bearing wall",
+        "bed",
+        "bedding",
+        "belly",
+        "block lava",
+        "bottom",
+        "bottom side",
+        "bottommost",
+        "brash",
+        "breccia",
+        "breech",
+        "buttocks",
+        "central",
+        "conglomerate",
+        "crag",
+        "deepest",
+        "downside",
+        "druid stone",
+        "essential",
+        "festooned pahoehoe",
+        "floor",
+        "flooring",
+        "focal",
+        "fond",
+        "footing",
+        "foundation",
+        "fundament",
+        "fundamental",
+        "gneiss",
+        "granite",
+        "ground",
+        "grounds",
+        "groundwork",
+        "hardpan",
+        "igneous rock",
+        "indispensable",
+        "infrastructure",
+        "lava",
+        "life-and-death",
+        "life-or-death",
+        "limestone",
+        "living rock",
+        "lower side",
+        "lower strata",
+        "lowest",
+        "lowest layer",
+        "lowest level",
+        "lowest point",
+        "magma",
+        "mantlerock",
+        "material",
+        "metamorphic rock",
+        "monolith",
+        "nadir",
+        "nether side",
+        "nethermost",
+        "nethermost level",
+        "of vital importance",
+        "pahoehoe",
+        "pavement",
+        "pillar",
+        "pillow lava",
+        "porphyry",
+        "principle",
+        "pudding stone",
+        "radical",
+        "regolith",
+        "riprap",
+        "rock",
+        "rock bottom",
+        "rock-bottom",
+        "root",
+        "ropy lava",
+        "rubble",
+        "rubblestone",
+        "rudiment",
+        "sandstone",
+        "sarsen",
+        "schist",
+        "scoria",
+        "scree",
+        "seat",
+        "sedimentary rock",
+        "shelly pahoehoe",
+        "sill",
+        "solid ground",
+        "solid rock",
+        "stereobate",
+        "stone",
+        "stylobate",
+        "substantive",
+        "substratum",
+        "substruction",
+        "substructure",
+        "talus",
+        "terra firma",
+        "tower",
+        "tufa",
+        "tuff",
+        "underbelly",
+        "underbuilding",
+        "undercarriage",
+        "undergirding",
+        "underlayer",
+        "underlying level",
+        "undermost",
+        "underneath",
+        "underpinning",
+        "underside",
+        "understruction",
+        "understructure",
+        "vital"
+      ]
+    },
+    "bedroom": {
+      "word": "BEDROOM",
+      "definitions": [
+        {
+          "text": "A room or apartment intended or used for a bed; a lodging room.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Room in a bed. Then by your side no bed room me deny. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedrop": {
+      "word": "BEDROP",
+      "definitions": [
+        {
+          "text": "To sprinkle, as with drops. The yellow carp, in scales bedropped with gold. Pope.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedrug": {
+      "word": "BEDRUG",
+      "definitions": [
+        {
+          "text": "To drug abundantly or excessively.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedscrew": {
+      "word": "BED SCREW",
+      "definitions": [
+        {
+          "text": "(Naut.) A form of jack screw for lifting large bodies, and assisting in launching.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A long screw formerly used to fasten a bedpost to one of the adjacent side pieces.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedside": {
+      "word": "BEDSIDE",
+      "definitions": [
+        {
+          "text": "The side of a bed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedsite": {
+      "word": "BEDSITE",
+      "definitions": [
+        {
+          "text": "A recess in a room for a bed. Of the three bedrooms, two have fireplaces, and all are of fair size, with windows and bedsite well placed. Quart. Rev.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedsore": {
+      "word": "BEDSORE",
+      "definitions": [
+        {
+          "text": "A sore on the back or hips caused by lying for a long time in bed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedspread": {
+      "word": "BEDSPREAD",
+      "definitions": [
+        {
+          "text": "A bedquilt; a counterpane; a coverlet. [U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "afghan",
+        "bed linen",
+        "bedclothes",
+        "bedcover",
+        "bedding",
+        "bedsheet",
+        "blanket",
+        "buffalo robe",
+        "case",
+        "clothes",
+        "comfort",
+        "comforter",
+        "contour sheet",
+        "counterpane",
+        "cover",
+        "coverlet",
+        "coverlid",
+        "eiderdown",
+        "fitted sheet",
+        "lap robe",
+        "linen",
+        "patchwork quilt",
+        "pillow slip",
+        "pillowcase",
+        "quilt",
+        "robe",
+        "rug",
+        "sheet",
+        "sheeting",
+        "slip",
+        "spread"
+      ]
+    },
+    "bedstaff": {
+      "word": "BEDSTAFF",
+      "definitions": [
+        {
+          "text": "\"A wooden pin stuck anciently on the sides of the bedstead, to hold the clothes from slipping on either side.\" Johnson. Hostess, accommodate us with a bedstaff. B. Jonson. Say there is no virtue in cudgels and bedstaves. Brome.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedstead": {
+      "word": "BEDSTEAD",
+      "definitions": [
+        {
+          "text": "A framework for supporting a bed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedsteps": {
+      "word": "BED STEPS",
+      "definitions": [
+        {
+          "text": "Steps for mounting a bed of unusual height.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedstock": {
+      "word": "BEDSTOCK",
+      "definitions": [
+        {
+          "text": "The front or the back part of the frame of a bedstead. [Obs. or Dial. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedstraw": {
+      "word": "BEDSTRAW",
+      "definitions": [
+        {
+          "text": "Straw put into a bed. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A genus of slender herbs, usually with square stems, whorled leaves, and small white flowers. Our Lady's bedstraw, which has yellow flowers, is Galium verum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedswerver": {
+      "word": "BEDSWERVER",
+      "definitions": [
+        {
+          "text": "One who swerves from and is unfaithful to the marriage vow. [Poetic] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedtick": {
+      "word": "BEDTICK",
+      "definitions": [
+        {
+          "text": "A tick or bag made of cloth, used for inclosing the materials of a bed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedtime": {
+      "word": "BEDTIME",
+      "definitions": [
+        {
+          "text": "The time to go to bed. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "beauty sleep",
+        "beddy-bye",
+        "blanket drill",
+        "bye-bye",
+        "curfew",
+        "doze",
+        "dreamland",
+        "drowse",
+        "eleventh hour",
+        "fitful sleep",
+        "hibernation",
+        "land of Nod",
+        "light sleep",
+        "repose",
+        "shut-eye",
+        "silken repose",
+        "sleep",
+        "sleepland",
+        "sleepwalking",
+        "slumber",
+        "slumberland",
+        "snoozle",
+        "somnambulism",
+        "somniloquy",
+        "somnus",
+        "unconsciousness",
+        "winter sleep"
+      ]
+    },
+    "beduck": {
+      "word": "BEDUCK",
+      "definitions": [
+        {
+          "text": "To duck; to put the head under water; to immerse. \"Deep himself beducked.\" Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "beduin": {
+      "word": "BEDUIN",
+      "definitions": [
+        {
+          "text": "See Bedouin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedung": {
+      "word": "BEDUNG",
+      "definitions": [
+        {
+          "text": "To cover with dung, as for manuring; to bedaub or defile, literally or figuratively. Bp. Hall.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedust": {
+      "word": "BEDUST",
+      "definitions": [
+        {
+          "text": "To sprinkle, soil, or cover with dust. Sherwood.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedward": {
+      "word": "BEDWARD",
+      "definitions": [
+        {
+          "text": "Towards bed.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedwarf": {
+      "word": "BEDWARF",
+      "definitions": [
+        {
+          "text": "To make a dwarf of; to stunt or hinder the growth of; to dwarf. Donne.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedye": {
+      "word": "BEDYE",
+      "definitions": [
+        {
+          "text": "To dye or stain. Briton fields with Sarazin blood bedyed. Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,3891 @@
+{
+  "version": "v1",
+  "entries": {
+    "crib": {
+      "word": "CRIB",
+      "definitions": [
+        {
+          "text": "A manger or rack; a feeding place for animals. The steer lion at one crib shall meet. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stall for oxen or other cattle. Where no oxen are, the crib is clean. Prov. xiv. 4.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small inclosed bedstead or cot for a child.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A box or bin, or similar wooden structure, for storing grain, salt, etc.; as, a crib for corn or oats.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hovel; a hut; a cottage. Why rather, Sleep, liest thou in smoky cribs, . . . Than in the perfumed chambers of the great Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A structure or frame of timber for a foundation, or for supporting a roof, or for lining a shaft.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A structure of logs to be anchored with stones; -- used for docks, pier, dams, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small raft of timber. [Canada]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small theft; anything purloined;; a plagiaris [Colloq.] The Latin version technically called a crib. Ld. Lytton. Occasional perusal of the Pagan writers, assisted by a crib. Wilkie Collins.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A miner's luncheon. [Cant] Raymond.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Card Playing)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The discarded cards which the dealer can use in scoring points in cribbage.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To shut up or confine in a narrow habitation; to cage; to cramp. If only the vital energy be not cribbed or cramped. I. Taylor. Now I am cabin'd, cribbed, confined. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pilfer or purloin; hence, to steal from an author; to appropriate; to plagiarize; as, to crib a line from Milton. [Colloq.] Child, being fond of toys, cribbed the necklace. Dickens.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To crowd together, or to be confined, as in a crib or in narrow accommodations. [R.] Who sought to make . . . bishops to crib in a Presbyterian trundle bed. Gauden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make notes for dishonest use in recitation or examination. [College Cant]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To seize the manger or other solid object with the teeth and draw in wind; -- said of a horse.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Colonial bed",
+        "Hollywood bed",
+        "Nissen hut",
+        "Quonset hut",
+        "abiding place",
+        "abode",
+        "abstract",
+        "act like",
+        "address",
+        "affect",
+        "amplification",
+        "and",
+        "annex",
+        "appropriate",
+        "archives",
+        "armory",
+        "arsenal",
+        "assume",
+        "attic",
+        "bag",
+        "bagnio",
+        "bank",
+        "basement",
+        "bassinet",
+        "bawdy house",
+        "bawdyhouse",
+        "bay",
+        "beat",
+        "bed-davenport",
+        "beef",
+        "beguile of",
+        "bellyache",
+        "berth",
+        "betting house",
+        "betting parlor",
+        "bilingual text",
+        "bilk",
+        "bin",
+        "blast",
+        "blow off",
+        "bonded warehouse",
+        "bookcase",
+        "boost",
+        "booth",
+        "bordello",
+        "borrow",
+        "bottle up",
+        "box",
+        "box in",
+        "box up",
+        "brothel",
+        "bunco",
+        "bunk",
+        "bunk bed",
+        "bunker",
+        "burn",
+        "buttery",
+        "cabin",
+        "cage",
+        "camp bed",
+        "cantonment",
+        "cargo dock",
+        "casino",
+        "casket",
+        "cathouse",
+        "cavity",
+        "cell",
+        "cellar",
+        "cellule",
+        "chamber",
+        "cheat",
+        "check",
+        "chest",
+        "chisel",
+        "chorus",
+        "chouse",
+        "chouse out of",
+        "clavis",
+        "cloister",
+        "closet",
+        "coffin",
+        "cog",
+        "cog the dice",
+        "compartment",
+        "con",
+        "confine",
+        "conservatory",
+        "constrain",
+        "coop",
+        "coop in",
+        "coop up",
+        "cop",
+        "copy",
+        "cork up",
+        "cot",
+        "counterfeit",
+        "cozen",
+        "crab",
+        "cradle",
+        "cramp",
+        "crash pad",
+        "crate",
+        "crypt",
+        "cupboard",
+        "day bed",
+        "decipherment",
+        "decoding",
+        "defraud",
+        "den",
+        "den of vice",
+        "depository",
+        "depot",
+        "detain",
+        "diddle",
+        "disorderly house",
+        "ditto",
+        "dive",
+        "do",
+        "do in",
+        "do like",
+        "do out of",
+        "dock",
+        "domicile",
+        "domus",
+        "door bed",
+        "double bed",
+        "double bunk",
+        "drawer",
+        "dump",
+        "duplex bed",
+        "dwelling",
+        "dwelling place",
+        "echo",
+        "elevator",
+        "embezzle",
+        "encage",
+        "encase",
+        "enclose",
+        "enclosed space",
+        "entomb",
+        "euchre",
+        "exchequer",
+        "extort",
+        "faithful translation",
+        "fake",
+        "feather bed",
+        "fence in",
+        "filch",
+        "finagle",
+        "flam",
+        "flat",
+        "fleece",
+        "flimflam",
+        "fob",
+        "fold-away bed",
+        "forge",
+        "four-poster",
+        "free translation",
+        "fudge",
+        "fuss",
+        "gambling den",
+        "gambling hall",
+        "gambling hell",
+        "gambling house",
+        "gaming house",
+        "garner",
+        "gatehouse",
+        "glory hole",
+        "gloss",
+        "glossary",
+        "go like",
+        "godown",
+        "gouge",
+        "grain bin",
+        "grain elevator",
+        "granary",
+        "gull",
+        "gyp",
+        "habitation",
+        "hammock",
+        "have",
+        "hayloft",
+        "haymow",
+        "hayrick",
+        "hell",
+        "hem in",
+        "hocus",
+        "hocus-pocus",
+        "hoke",
+        "hoke up",
+        "hold",
+        "hold in custody",
+        "hold in restraint",
+        "hole",
+        "hollow",
+        "hook",
+        "hospital bed",
+        "house of assignation",
+        "house of joy",
+        "house of prostitution",
+        "hut",
+        "hutch",
+        "imitate",
+        "immure",
+        "impound",
+        "infringe a copyright",
+        "inhibit",
+        "interlinear",
+        "interlinear translation",
+        "joint",
+        "keep in",
+        "keep in custody",
+        "keep in detention",
+        "key",
+        "king-size bed",
+        "kiosk",
+        "lean-to",
+        "library",
+        "lift",
+        "locker",
+        "lodging",
+        "lodging place",
+        "lodgment",
+        "loose translation",
+        "lower berth",
+        "lumber room",
+        "lumberyard",
+        "magasin",
+        "magazine",
+        "make like",
+        "make off with",
+        "manger",
+        "metaphrase",
+        "mew",
+        "mew up",
+        "mirror",
+        "mow",
+        "mulct",
+        "nest",
+        "nip",
+        "outbuilding",
+        "outhouse",
+        "pack the deal",
+        "pad",
+        "pallet",
+        "palm",
+        "panel bed",
+        "panel den",
+        "panel house",
+        "paraphrase",
+        "pavilion",
+        "pen",
+        "pen up",
+        "pew",
+        "pigeon",
+        "pilfer",
+        "pinch",
+        "pipe berth",
+        "pirate",
+        "place",
+        "place to live",
+        "plagiarize",
+        "poach",
+        "pony",
+        "poolroom",
+        "poster bed",
+        "pound",
+        "practice fraud upon",
+        "purloin",
+        "quarter berth",
+        "queen-size bed",
+        "rack",
+        "rail in",
+        "red-light district",
+        "reecho",
+        "reflect",
+        "repeat",
+        "repertory",
+        "repository",
+        "reservoir",
+        "residence",
+        "restatement",
+        "restrain",
+        "restrict",
+        "rewording",
+        "rick",
+        "roll-away bed",
+        "roof",
+        "rook",
+        "run away with",
+        "rustle",
+        "scam",
+        "screw",
+        "scrounge",
+        "seal up",
+        "seat",
+        "sell gold bricks",
+        "sentry box",
+        "shack",
+        "shackle",
+        "shanty",
+        "shave",
+        "shed",
+        "shelf",
+        "shoplift",
+        "shortchange",
+        "shut in",
+        "shut up",
+        "silo",
+        "simulate",
+        "single bed",
+        "sink of iniquity",
+        "snare",
+        "snatch",
+        "snitch",
+        "sofa-bed",
+        "sporting house",
+        "squawk",
+        "stack",
+        "stack room",
+        "stack the cards",
+        "stall",
+        "steal",
+        "stew",
+        "stews",
+        "stick",
+        "sting",
+        "stock room",
+        "storage",
+        "store",
+        "storehouse",
+        "storeroom",
+        "straiten",
+        "supply base",
+        "supply depot",
+        "swindle",
+        "swipe",
+        "take",
+        "take a dive",
+        "tank",
+        "tenderloin",
+        "tester bed",
+        "thieve",
+        "thimblerig",
+        "three-quarter bed",
+        "throw a fight",
+        "tollbooth",
+        "tollhouse",
+        "transcription",
+        "translation",
+        "transliteration",
+        "treasure house",
+        "treasure room",
+        "treasury",
+        "trot",
+        "truckle bed",
+        "trundle bed",
+        "vat",
+        "vault",
+        "victimize",
+        "walk off with",
+        "wall in",
+        "warehouse",
+        "whorehouse",
+        "wine cellar",
+        "yammer"
+      ]
+    },
+    "cribbage": {
+      "word": "CRIBBAGE",
+      "definitions": [
+        {
+          "text": "A game of cards, played by two or four persons, in which there is a crib. (See Crib, 11.) It is characterized by a great variety of chances. A man's fancy would be summed up in cribbage. John Hall. Cribbage board, a board with holes and pegs, used by cribbage players to score their game.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribbercribbiter": {
+      "word": "CRIBBER; CRIB-BITER",
+      "definitions": [
+        {
+          "text": "A horse that has the habit of cribbing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribbing": {
+      "word": "CRIBBING",
+      "definitions": [
+        {
+          "text": "The act of inclosing or confining in a crib or in close quarters.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Purloining; stealing; plagiarizing. [Colloq.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A framework of timbers and plank backing for a shaft lining, to prevent caving, percolation of water, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A vicious habit of a horse; crib-biting. The horse lays hold of the crib or manger with his teeth and draws air into the stomach with a grunting sound.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribbiting": {
+      "word": "CRIB-BITING",
+      "definitions": [
+        {
+          "text": "Same as Cribbing, 4.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribble": {
+      "word": "CRIBBLE",
+      "definitions": [
+        {
+          "text": "A coarse sieve or screen.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Coarse flour or meal. [Obs.] Johnson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cause to pass through a sieve or riddle; to sift.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Coarse; as, cribble bread. [Obs.] Huloet.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribellum": {
+      "word": "CRIBELLUM",
+      "definitions": [
+        {
+          "text": "A peculiar perforated organ of certain spiders (Ciniflonidæ), used for spinning a special kind of silk.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribrate": {
+      "word": "CRIBRATE",
+      "definitions": [
+        {
+          "text": "Cribriform.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribration": {
+      "word": "CRIBRATION",
+      "definitions": [
+        {
+          "text": "The act or process of separating the finer parts of drugs from the coarser by sifting.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribriform": {
+      "word": "CRIBRIFORM",
+      "definitions": [
+        {
+          "text": "Resembling, or having the form of, a sieve; pierced with hokes; as, the cribriform plate of the ethmoid bone; a cribriform compress. Cribriform cells (Bot.), those which have here and there oblique or transverse sieve plates, or places perforated with many holes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cribrose": {
+      "word": "CRIBROSE",
+      "definitions": [
+        {
+          "text": "Perforated like a sieve; cribriform.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cric": {
+      "word": "CRIC",
+      "definitions": [
+        {
+          "text": "The ring which turns inward and condenses the flame of a lamp. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crick": {
+      "word": "CRICK",
+      "definitions": [
+        {
+          "text": "The creaking of a door, or a noise resembling it. [Obs.] Johnson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A painful, spasmodic affection of the muscles of some part of the body, as of the neck or back, rendering it difficult to move the part. To those also that, with a crick or cramp, have thei necks drawn backward. Holland.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. F. cric.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small jackscrew. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acute pain",
+        "bite",
+        "boring pain",
+        "branch",
+        "brook",
+        "charley horse",
+        "chirk",
+        "chirking",
+        "chirp",
+        "chirrup",
+        "cramp",
+        "cramps",
+        "creak",
+        "darting pain",
+        "fulgurant pain",
+        "gill",
+        "girdle pain",
+        "gnawing",
+        "griping",
+        "hitch",
+        "jumping pain",
+        "kink",
+        "lancinating pain",
+        "nip",
+        "pang",
+        "paroxysm",
+        "pinch",
+        "prick",
+        "race",
+        "rivulet",
+        "run",
+        "runnel",
+        "seizure",
+        "sharp pain",
+        "shoot",
+        "shooting",
+        "shooting pain",
+        "spasm",
+        "stab",
+        "stabbing pain",
+        "stitch",
+        "stream",
+        "stridulate",
+        "stridulation",
+        "thrill",
+        "throes",
+        "tormen",
+        "tweak",
+        "twinge",
+        "twitch",
+        "wrench"
+      ]
+    },
+    "cricket": {
+      "word": "CRICKET",
+      "definitions": [
+        {
+          "text": "An orthopterous insect of the genus Gryllus, and allied genera. The males make chirping, musical notes by rubbing together the basal parts of the veins of the front wings. large black crickets of America are G. niger, G. neglectus, and others. Balm cricket. See under Balm. called also grasshopper warbler. called from its chirping.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A low stool.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A game much played in England, and sometimes in America, with a ball, bats, and wickets, the players being arranged in two contesting parties or sides.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small false roof, or the raising of a portion of a roof, so as to throw off water from behind an obstacle, such as a chimney.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To play at cricket. Tennyson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Klaxon",
+        "boiler factory",
+        "boiler room",
+        "bull-roarer",
+        "candor",
+        "catcall",
+        "cherry bomb",
+        "cicada",
+        "cicala",
+        "clack",
+        "clacker",
+        "clapper",
+        "cracker",
+        "dog-day cicada",
+        "fair play",
+        "fair shake",
+        "fair-mindedness",
+        "fairness",
+        "firecracker",
+        "good sportsmanship",
+        "grasshopper",
+        "hopper",
+        "hoppergrass",
+        "horn",
+        "locust",
+        "noisemaker",
+        "rattle",
+        "rattlebox",
+        "siren",
+        "snapper",
+        "sportsmanlikeness",
+        "sportsmanliness",
+        "sportsmanship",
+        "square deal",
+        "steam whistle",
+        "the fair thing",
+        "the handsome thing",
+        "the proper thing",
+        "ticktack",
+        "whistle",
+        "whizgig",
+        "whizzer"
+      ]
+    },
+    "cricketer": {
+      "word": "CRICKETER",
+      "definitions": [
+        {
+          "text": "One who plays at cricket.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cricoid": {
+      "word": "CRICOID",
+      "definitions": [
+        {
+          "text": "Resembling a ring; -- said esp. of the cartilage at the larynx, and the adjoining parts.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cricothyroid": {
+      "word": "CRICOTHYROID",
+      "definitions": [
+        {
+          "text": "Of or pertaining both to the cricoid and the thyroid cartilages.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cried": {
+      "word": "CRIED",
+      "definitions": [
+        {
+          "text": "imp. & p. p. of Cry.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "crier": {
+      "word": "CRIER",
+      "definitions": [
+        {
+          "text": "One who cries; one who makes proclamation. Specifically, an officer who proclams the orders or directions of a court, or who gives public notice by loud proclamation; as, a town-crier. He openeth his mouth like a crier. Ecclus. xx. 15.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crime": {
+      "word": "CRIME",
+      "definitions": [
+        {
+          "text": "Any violation of law, either divine or human; an omission of a duty commanded, or the commission of an act forbidden by law.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Gross violation of human law, in distinction from a misdemeanor or trespass, or other slight offense. Hence, also, any aggravated offense against morality or the public welfare; any outrage or great wrong. \"To part error from crime.\" Tennyson. were originally capitally punished (murder, rape, robbery, arson, burglary, and larceny), as distinguished from misdemeanors, which are offenses of a lighter grade. See Misdemeanors.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any great wickedness or sin; iniguity. Nocrime was thine, if 'tis no crime to love. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which occasion crime. [Obs.] The tree of life, the crime of our first father's fall. Spenser. Capital crime, a crime punishable with death. every kind, but specifically denoting an offense as committed against God. Crime is strictly a violation of law either human or divine; but in present usage the term is commonly applied to actions contrary to the laws of the State. Vice is more distinctively that which springs from the inordinate indulgence of the natural appetites, which are in themselves innocent. Thus intemperance, unchastity, duplicity, etc., are vices; while murder, forgery, etc., which spring from the indulgence of selfish passions, are crimes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "atrocity",
+        "breach",
+        "break",
+        "crime against humanity",
+        "criminal tendency",
+        "criminality",
+        "criminosis",
+        "deadly sin",
+        "delict",
+        "delinquency",
+        "dereliction",
+        "enormity",
+        "error",
+        "evil",
+        "evil courses",
+        "evildoing",
+        "failure",
+        "fault",
+        "feloniousness",
+        "felony",
+        "genocide",
+        "guilty act",
+        "heavy sin",
+        "illegality",
+        "impropriety",
+        "indiscretion",
+        "inexpiable sin",
+        "infringement",
+        "iniquity",
+        "injury",
+        "injustice",
+        "lapse",
+        "lawbreaking",
+        "lawlessness",
+        "malefaction",
+        "malfeasance",
+        "malpractice",
+        "malum",
+        "malversation",
+        "minor wrong",
+        "misconduct",
+        "misdeed",
+        "misdemeanor",
+        "misdoing",
+        "misfeasance",
+        "misprision",
+        "misprision of treason",
+        "mortal sin",
+        "nonfeasance",
+        "offense",
+        "omission",
+        "outrage",
+        "peccadillo",
+        "peccancy",
+        "positive misprision",
+        "sin",
+        "sin of commission",
+        "sin of omission",
+        "sinful act",
+        "slip",
+        "thou scarlet sin",
+        "tort",
+        "transgression",
+        "trespass",
+        "trip",
+        "unutterable sin",
+        "venial sin",
+        "vice",
+        "viciousness",
+        "violation",
+        "wrong",
+        "wrong conduct",
+        "wrongdoing"
+      ]
+    },
+    "crimeful": {
+      "word": "CRIMEFUL",
+      "definitions": [
+        {
+          "text": "Criminal; wicked; contrary to law, right, or dury. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crimeless": {
+      "word": "CRIMELESS",
+      "definitions": [
+        {
+          "text": "Free from crime; innocent. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criminal": {
+      "word": "CRIMINAL",
+      "definitions": [
+        {
+          "text": "Guilty of crime or sin. The neglect of any of the relative duties renders us criminal in the sight of God. Rogers.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Involving a crime; of the nature of a crime; -- said of an act or of conduct; as, criminal carelessness. Foppish and fantastic ornaments are only indications of vice, not criminal in themselves. Addison.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Relating to crime; -- opposed to civil; as, the criminal code. The officers and servants of the crown, violating the personal liberty, or other right of the subject . . . were in some cases liable to criminal process. Hallam. Criminal action (Law), an action or suit instituted to secure conviction and punishment for a crime. woman; adultery; -- usually abbreviated, crim. con.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One who has commited a crime; especially, one who is found guilty by verdict, confession, or proof; a malefactor; a felon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Judas",
+        "Mafioso",
+        "aberrant",
+        "abnormal",
+        "abominable",
+        "actionable",
+        "against the law",
+        "amoral",
+        "anarchic",
+        "anarchistic",
+        "anomic",
+        "arraignable",
+        "arrant",
+        "at fault",
+        "atrocious",
+        "bad",
+        "bad guy",
+        "bad person",
+        "base",
+        "betrayer",
+        "black",
+        "black-market",
+        "blackguard",
+        "blamable",
+        "blameworthy",
+        "bootleg",
+        "censurable",
+        "chargeable",
+        "conscienceless",
+        "contraband",
+        "contrary to law",
+        "convict",
+        "corrupt",
+        "corrupted",
+        "crook",
+        "crooked",
+        "culpable",
+        "culprit",
+        "damnable",
+        "dark",
+        "deceiver",
+        "delinquent",
+        "depraved",
+        "desperado",
+        "desperate criminal",
+        "deviant",
+        "devious",
+        "disgraceful",
+        "dishonest",
+        "dishonorable",
+        "double-dealer",
+        "doubtful",
+        "dubious",
+        "evasive",
+        "evil",
+        "evildoer",
+        "evildoing",
+        "execrable",
+        "faulty",
+        "felon",
+        "felonious",
+        "fishy",
+        "flagitious",
+        "flagrant",
+        "flawed",
+        "foul",
+        "fraudulent",
+        "fugitive",
+        "gallows bird",
+        "gangster",
+        "gaolbird",
+        "guilty",
+        "hardly the thing",
+        "heinous",
+        "hood",
+        "hoodlum",
+        "hooligan",
+        "ignominious",
+        "ill-got",
+        "ill-gotten",
+        "illegal",
+        "illegitimate",
+        "illicit",
+        "immoral",
+        "impeachable",
+        "impermissible",
+        "implicated",
+        "improper",
+        "inappropriate",
+        "incorrect",
+        "inculpated",
+        "indecorous",
+        "indictable",
+        "indirect",
+        "infamous",
+        "iniquitous",
+        "insidious",
+        "involved",
+        "irregular",
+        "jailbird",
+        "justiciable",
+        "knave",
+        "knavish",
+        "lawbreaker",
+        "lawless",
+        "low",
+        "malefactor",
+        "malefactory",
+        "malevolent",
+        "malfeasant",
+        "malfeasor",
+        "miscreant",
+        "misfeasor",
+        "mobster",
+        "monstrous",
+        "naughty",
+        "nefarious",
+        "nonconstitutional",
+        "nonlegal",
+        "nonlicit",
+        "not done",
+        "not kosher",
+        "not the thing",
+        "off-base",
+        "off-color",
+        "offender",
+        "out-of-line",
+        "outlaw",
+        "outlawed",
+        "peccant",
+        "public enemy",
+        "punishable",
+        "questionable",
+        "quisling",
+        "racketeer",
+        "rank",
+        "reprehensible",
+        "reproachable",
+        "reprobate",
+        "reprovable",
+        "rotten",
+        "roughneck",
+        "ruffian",
+        "sacrilegious",
+        "scandalous",
+        "scofflaw",
+        "scoundrel",
+        "shady",
+        "shameful",
+        "shameless",
+        "shifty",
+        "sinful",
+        "sinister",
+        "sinner",
+        "slippery",
+        "suspicious",
+        "swindler",
+        "terrible",
+        "terrorist",
+        "thief",
+        "thug",
+        "to blame",
+        "tough",
+        "traitor",
+        "transgressor",
+        "trespasser",
+        "triable",
+        "tricky",
+        "two-timer",
+        "unallowed",
+        "unauthorized",
+        "unconscienced",
+        "unconscientious",
+        "unconscionable",
+        "unconstitutional",
+        "under-the-counter",
+        "under-the-table",
+        "underhand",
+        "underhanded",
+        "undue",
+        "unethical",
+        "unfit",
+        "unfitting",
+        "unforgivable",
+        "unlawful",
+        "unofficial",
+        "unpardonable",
+        "unprincipled",
+        "unrighteous",
+        "unsavory",
+        "unscrupulous",
+        "unseemly",
+        "unspeakable",
+        "unstatutory",
+        "unstraightforward",
+        "unsuitable",
+        "unwarrantable",
+        "unwarranted",
+        "unworthy",
+        "vicious",
+        "vile",
+        "villain",
+        "villainous",
+        "wicked",
+        "without remorse",
+        "without shame",
+        "worker of ill",
+        "wrong",
+        "wrongdoer",
+        "wrongdoing",
+        "wrongful"
+      ]
+    },
+    "criminalist": {
+      "word": "CRIMINALIST",
+      "definitions": [
+        {
+          "text": "One versed in criminal law. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criminality": {
+      "word": "CRIMINALITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being criminal; that which constitutes a crime; guiltiness; guilt. This is by no means the only criterion of criminality. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criminally": {
+      "word": "CRIMINALLY",
+      "definitions": [
+        {
+          "text": "In violation of law; wickedly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criminalness": {
+      "word": "CRIMINALNESS",
+      "definitions": [
+        {
+          "text": "Criminality. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criminate": {
+      "word": "CRIMINATE",
+      "definitions": [
+        {
+          "text": "To accuse of, or charge with, a crime. To criminate, with the heavy and ungrounded charge of disloyalty and disaffection, an uncorrupt, independent, and reforming parliament. Burke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To involve in a crime or in its consequences; to render liable to a criminal charge. Impelled by the strongest pressure of hope and fear to criminate him. Macaulay.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crimination": {
+      "word": "CRIMINATION",
+      "definitions": [
+        {
+          "text": "The act of accusing; accusation; charge; complaint. The criminations and recriminations of the adverse parties. Macaulay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criminative": {
+      "word": "CRIMINATIVE",
+      "definitions": [
+        {
+          "text": "Charging with crime; accusing; criminatory. R. North.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criminatory": {
+      "word": "CRIMINATORY",
+      "definitions": [
+        {
+          "text": "Relating to, or involving, crimination; accusing; as, a criminatory conscience.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criminous": {
+      "word": "CRIMINOUS",
+      "definitions": [
+        {
+          "text": "Criminal; involving great crime or grave charges; very wicked; heinous. [Obs.] Holland.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crimosin": {
+      "word": "CRIMOSIN",
+      "definitions": [
+        {
+          "text": "See Crimson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crimp": {
+      "word": "CRIMP",
+      "definitions": [
+        {
+          "text": "To fold or plait in regular undulation in such a way that the material will retain the shape intended; to give a wavy apperance to; as, to crimp the border of a cap; to crimp a ruffle. Cf. Crisp. The comely hostess in a crimped cap. W. Irving.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pinch and hold; to seize.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Hence, to entrap into the military or naval service; as, to crimp seamen. Coaxing and courting with intent to crimp him. Carlyle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Cookery)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to contract, or to render more crisp, as the flesh of a fish, by gashing it, when living, with a knife; as, to crimp skate, etc. Crimping house, a low lodging house, into which men are decoyed and plied with drink, to induce them to ship or enlist as sailors or soldiers. the hair. (b) A crimping machine. crimping ruffles leather, iron, etc. of a lady's cap.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Easily crumbled; friable; brittle. [R.] Now the fowler . . . treads the crimp earth. J. Philips.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Weak; inconsistent; contradictory. [R.] The evidance is crimp; the witnesses swear backward and forward, and contradict themselves. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A coal broker. [Prov. Eng.] De Foe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who decoys or entraps men into the military or naval service. Marryat.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A keeper of a low lodging house where sailors and emigrants are entrapped and fleeced.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hair which has been crimped; -- usually in pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A game at cards. [Obs.] B. Jonson. Boot crimp. See under Boot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Vandyke",
+        "abduce",
+        "abduct",
+        "abductor",
+        "aqueduct",
+        "bar",
+        "bit",
+        "blaze",
+        "bollix",
+        "bridle",
+        "bunco artist",
+        "bunco steerer",
+        "canal",
+        "canalization",
+        "canalize",
+        "cardsharp",
+        "cardsharper",
+        "carpetbagger",
+        "carry away",
+        "carry off",
+        "carve",
+        "chamfer",
+        "channel",
+        "check",
+        "chisel",
+        "chop",
+        "cocker",
+        "cockle",
+        "coil",
+        "con artist",
+        "con man",
+        "confidence man",
+        "constrain",
+        "corrugate",
+        "corrugation",
+        "crab",
+        "crack",
+        "cramp",
+        "crankle",
+        "crease",
+        "creasing",
+        "crenellate",
+        "crenulate",
+        "crimper",
+        "crimple",
+        "crinkle",
+        "crisp",
+        "crumbly",
+        "crumple",
+        "curl",
+        "cut",
+        "dado",
+        "dike",
+        "ditch",
+        "dog-ear",
+        "double",
+        "double over",
+        "doubling",
+        "duplicature",
+        "enfold",
+        "engrave",
+        "entrenchment",
+        "flection",
+        "flexure",
+        "flounce",
+        "flute",
+        "fold",
+        "fold over",
+        "fosse",
+        "foul up",
+        "friable",
+        "frill",
+        "frizz",
+        "frizzle",
+        "furrow",
+        "gash",
+        "gather",
+        "goffer",
+        "gouge",
+        "groove",
+        "gully",
+        "gum",
+        "gum up",
+        "gutter",
+        "ha-ha",
+        "hamper",
+        "hold back",
+        "hold down",
+        "hold for ransom",
+        "hold in",
+        "horse coper",
+        "horse trader",
+        "hurdle",
+        "impediment",
+        "impress",
+        "incise",
+        "indent",
+        "infold",
+        "inhibit",
+        "interfold",
+        "jackleg",
+        "jag",
+        "kennel",
+        "kidnap",
+        "kidnapper",
+        "kink",
+        "knit",
+        "knot",
+        "knurl",
+        "land pirate",
+        "land shark",
+        "land-grabber",
+        "lap over",
+        "lapel",
+        "lappet",
+        "lock",
+        "louse up",
+        "machicolate",
+        "mill",
+        "moat",
+        "mortgage shark",
+        "mountain",
+        "nick",
+        "notch",
+        "obstruction",
+        "pettifogger",
+        "picot",
+        "pink",
+        "pitchman",
+        "plait",
+        "plat",
+        "pleat",
+        "plica",
+        "plicate",
+        "plication",
+        "plicature",
+        "plow",
+        "ply",
+        "ponytail",
+        "pucker",
+        "pulverizable",
+        "pulverulent",
+        "purse",
+        "queer",
+        "quill",
+        "rabbet",
+        "ridge",
+        "rifle",
+        "rimple",
+        "ringlet",
+        "ripple",
+        "rivel",
+        "rub",
+        "ruche",
+        "ruching",
+        "ruck",
+        "ruckle",
+        "ruff",
+        "ruffle",
+        "rumple",
+        "run away with",
+        "rut",
+        "scallop",
+        "scarify",
+        "score",
+        "scotch",
+        "scratch",
+        "screw",
+        "scrunch",
+        "serrate",
+        "shanghai",
+        "shanghaier",
+        "shark",
+        "sharp",
+        "sharper",
+        "sharpie",
+        "shirr",
+        "shortchanger",
+        "shyster",
+        "skyjack",
+        "slash",
+        "slicker",
+        "slit",
+        "snafu",
+        "snag",
+        "snatch",
+        "spieler",
+        "spirit away",
+        "streak",
+        "striate",
+        "sunk fence",
+        "tooth",
+        "trench",
+        "triturable",
+        "trough",
+        "tuck",
+        "turn over",
+        "twill",
+        "wimple",
+        "withhold",
+        "wrinkle"
+      ]
+    },
+    "crimpage": {
+      "word": "CRIMPAGE",
+      "definitions": [
+        {
+          "text": "The act or practice of crimping; money paid to a crimp for shipping or enlisting men.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crimper": {
+      "word": "CRIMPER",
+      "definitions": [
+        {
+          "text": "One who, or that which, crimps; as: (a) A curved board or frame over which the upper of a boot or shoe is stretched to the required shape. (b) A device for giving hair a wavy apperance. (c) A machine for crimping or ruffling textile fabrics.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crimple": {
+      "word": "CRIMPLE",
+      "definitions": [
+        {
+          "text": "To cause to shrink or draw together; to contract; to curl. [R.] Wiseman.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crimpy": {
+      "word": "CRIMPY",
+      "definitions": [
+        {
+          "text": "Having a crimped appearance; frizzly; as, the crimpy wool of the Saxony sheep.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crimson": {
+      "word": "CRIMSON",
+      "definitions": [
+        {
+          "text": "A deep red color tinged with blue; also, red color in general. Theugh jour be as scarlet, they shall be as white as snow; though they be red like crimson, they shall be as wool. Is. i. 18. A maid jet rosed over with the virgin crimson of modesty. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of a deep red color tinged with blue; deep red. \"A crimson tide.\" Mrs. Hemans. The blushing poppy with a crimson hue. Prior.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To dye with crimson or deep red; to redden. Signed in thy spoil and crimsoned in thy lethe. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become crimson; to blush. Ancient towers . . . beginning to crimson with the radiant luster of a cloudless July morning. De Quincey.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "Titian",
+        "Titian-red",
+        "blanch",
+        "blush",
+        "bricky",
+        "cardinal",
+        "carmine",
+        "carnation",
+        "carnelian",
+        "cerise",
+        "change color",
+        "cherry",
+        "cherry-colored",
+        "cherry-red",
+        "color",
+        "color up",
+        "damask",
+        "darken",
+        "ferruginous",
+        "fiery",
+        "fire-red",
+        "flame",
+        "flame-colored",
+        "flame-red",
+        "flaming",
+        "flush",
+        "glow",
+        "glowing",
+        "grow red",
+        "gules",
+        "henna",
+        "hot",
+        "incarmined",
+        "incarnadine",
+        "inflame",
+        "inflamed",
+        "infrared",
+        "iron-red",
+        "lake-colored",
+        "laky",
+        "lateritious",
+        "lipstick",
+        "lobster-red",
+        "look black",
+        "lurid",
+        "madder",
+        "mantle",
+        "maroon",
+        "miniate",
+        "pale",
+        "pink",
+        "port-wine",
+        "puce",
+        "red",
+        "red-dyed",
+        "red-ink",
+        "red-looking",
+        "redden",
+        "reddened",
+        "reddish",
+        "reddish-amber",
+        "reddish-brown",
+        "rose",
+        "rouge",
+        "rubicund",
+        "rubify",
+        "rubiginous",
+        "rubric",
+        "rubricose",
+        "ruby",
+        "ruby-colored",
+        "ruby-red",
+        "ruddied",
+        "ruddle",
+        "ruddy",
+        "rufescent",
+        "rufous",
+        "rust",
+        "rust-red",
+        "rusty",
+        "scarlet",
+        "squirm with self-consciousness",
+        "stammel",
+        "stammer",
+        "tile-red",
+        "turn color",
+        "turn pale",
+        "turn red",
+        "vermilion",
+        "vinaceous",
+        "warm",
+        "whiten",
+        "wine",
+        "wine-colored",
+        "wine-red"
+      ]
+    },
+    "crinal": {
+      "word": "CRINAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the hair. [R.] Blount.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinated": {
+      "word": "CRINATED",
+      "definitions": [
+        {
+          "text": "Having hair; hairy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinatory": {
+      "word": "CRINATORY",
+      "definitions": [
+        {
+          "text": "Crinitory. Craig.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crincum": {
+      "word": "CRINCUM",
+      "definitions": [
+        {
+          "text": "A twist or bend; a turn; a whimsey. [Colloq.] Hudibras.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crincumcrancum": {
+      "word": "CRINCUM-CRANCUM",
+      "definitions": [
+        {
+          "text": "A twist; a whimsey or whim. [Colloq.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crined": {
+      "word": "CRINED",
+      "definitions": [
+        {
+          "text": "Having the hair of a different tincture from the rest of the body; as, a charge crined of a red tincture.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinelcrinet": {
+      "word": "CRINEL; CRINET",
+      "definitions": [
+        {
+          "text": "A very fine, hairlike feather. Booth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cringe": {
+      "word": "CRINGE",
+      "definitions": [
+        {
+          "text": "To draw one's self together as in fear or servility; to bend or crouch with base humility; to wince; hence; to make court in a degrading manner; to fawn. When they were come up to the place where the lions were, the boys that went before were glad to cringe behind, for they were afraid of the lions. Bunyan. Sly hypocrite, . . . who more than thou Once fawned and cringed, and servilely adored Heaven's awful monarch Milton. Flatterers . . . are always bowing and cringing. Arbuthnot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To contract; to draw together; to cause to shrink or wrinkle; to distort. [Obs.] Till like a boy you see him cringe his face, And whine aloud for mercy. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Servile civility; fawning; a shrinking or bowing, as in fear or servility. \"With cringe and shrug, and bow obsequious.\" Cowper.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "apple-polish",
+        "avoid",
+        "bend",
+        "bend the knee",
+        "bend the neck",
+        "bend to",
+        "blench",
+        "blink",
+        "bootlick",
+        "bow",
+        "bow and scrape",
+        "bow down",
+        "bow to",
+        "brown-nose",
+        "cower",
+        "crawl",
+        "creep",
+        "cringe to",
+        "croodle",
+        "crouch",
+        "crouch before",
+        "curtsy",
+        "defer",
+        "do homage",
+        "do obeisance",
+        "dodge",
+        "draw back",
+        "draw in",
+        "duck",
+        "eat dirt",
+        "evade",
+        "fade",
+        "fall back",
+        "fawn",
+        "flatter",
+        "flinch",
+        "funk",
+        "genuflect",
+        "get down",
+        "grovel",
+        "hang back",
+        "hunch",
+        "hunch down",
+        "jib",
+        "kneel",
+        "kneel to",
+        "knuckle to",
+        "kowtow",
+        "lick the dust",
+        "lickspittle",
+        "pull back",
+        "pull in",
+        "pull out",
+        "quail",
+        "quiver",
+        "recoil",
+        "reel back",
+        "retract",
+        "retreat",
+        "scrouch down",
+        "sheer off",
+        "shrink",
+        "shrink back",
+        "shy",
+        "sidestep",
+        "skulk",
+        "slaver",
+        "slink",
+        "sneak",
+        "squat",
+        "start aside",
+        "start back",
+        "stoop",
+        "swerve",
+        "toadeat",
+        "toady",
+        "tremble",
+        "truckle",
+        "truckle to",
+        "turn aside",
+        "wallow",
+        "weasel",
+        "weasel out",
+        "welter",
+        "wince",
+        "withdraw"
+      ]
+    },
+    "cringeling": {
+      "word": "CRINGELING",
+      "definitions": [
+        {
+          "text": "One who cringes meanly; a fawner.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cringer": {
+      "word": "CRINGER",
+      "definitions": [
+        {
+          "text": "One who cringes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cringingly": {
+      "word": "CRINGINGLY",
+      "definitions": [
+        {
+          "text": "In a cringing manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cringle": {
+      "word": "CRINGLE",
+      "definitions": [
+        {
+          "text": "A withe for fastening a gate.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An iron or pope thimble or grommet worked into or attached to the edges and corners of a sail; -- usually in the plural. The cringles are used for making fast the bowline bridles, earings, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "air hole",
+        "armhole",
+        "blowhole",
+        "boltrope",
+        "bullet-hole",
+        "bunghole",
+        "canvas",
+        "clew",
+        "cloth",
+        "crowd of sail",
+        "deadeye",
+        "earing",
+        "eye",
+        "eyelet",
+        "foot",
+        "fore-and-aft sail",
+        "gasket",
+        "grommet",
+        "guide",
+        "head",
+        "keyhole",
+        "knothole",
+        "leech",
+        "loop",
+        "loophole",
+        "luff",
+        "manhole",
+        "mousehole",
+        "muslin",
+        "peephole",
+        "pigeonhole",
+        "pinhole",
+        "placket",
+        "placket hole",
+        "plain sail",
+        "porthole",
+        "press of sail",
+        "punch-hole",
+        "rag",
+        "reduced sail",
+        "reef point",
+        "reefed sail",
+        "sail",
+        "spiracle",
+        "square sail",
+        "tap",
+        "vent",
+        "venthole"
+      ]
+    },
+    "crinicultural": {
+      "word": "CRINICULTURAL",
+      "definitions": [
+        {
+          "text": "Relating to the growth of hair. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinigerous": {
+      "word": "CRINIGEROUS",
+      "definitions": [
+        {
+          "text": "Bearing hair; hairy. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinital": {
+      "word": "CRINITAL",
+      "definitions": [
+        {
+          "text": "Same as Crinite, 1. He the star crinital adoreth. Stanyhurst.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinite": {
+      "word": "CRINITE",
+      "definitions": [
+        {
+          "text": "Having the appearance of a tuft of hair; having a hairlike tail or train. \"Comate, crinite, caudate stars.\"",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Bearded or tufted with hairs. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinitory": {
+      "word": "CRINITORY",
+      "definitions": [
+        {
+          "text": "Of or relating to hair; as, a crinitory covering. T. Hook.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinkle": {
+      "word": "CRINKLE",
+      "definitions": [
+        {
+          "text": "To form with short turns, bends, or wrinkles; to mold into inequalites or sinuosities; to cause to wrinkle or curl. The houscrinkled to and fro. Chaucer. Her face all bowsy, Comely crinkled, Wondrously wrinkled. Skelton. The flames through all the casements pushing forth, Like red-not devils crinkled into snakes. Mrs. Browning.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To turn or wind; ti run in and out in many short bends or turns; to curl; to run in wavws; to wrinkle; also, to rustle, as stiff cloth when moved. The green wheat crinkles like a lake. L. T. Trowbridge. And all the rooms Were full of crinkling silks. Mrs. Browning.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A winding or turn; wrinkle; sinuosity. The crinkles in this glass, making objects appear double. A. Tucker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ambages",
+        "anfractuosity",
+        "bristle",
+        "circuitousness",
+        "circumambages",
+        "circumbendibus",
+        "circumlocution",
+        "circumvolution",
+        "cocker",
+        "cockle",
+        "contort",
+        "convolution",
+        "corkscrew",
+        "corrugate",
+        "corrugation",
+        "crankle",
+        "crease",
+        "crimp",
+        "crimple",
+        "crinkling",
+        "crumple",
+        "flexuosity",
+        "flexuousness",
+        "fold",
+        "furrow",
+        "intorsion",
+        "intort",
+        "involution",
+        "knit",
+        "knot",
+        "meander",
+        "meandering",
+        "plica",
+        "pucker",
+        "purse",
+        "ridge",
+        "rimple",
+        "ripple",
+        "rivel",
+        "rivulation",
+        "ruck",
+        "ruckle",
+        "ruffle",
+        "rumple",
+        "rustle",
+        "scallop",
+        "screw",
+        "scrunch",
+        "serpentine",
+        "set on edge",
+        "shirr",
+        "sinuation",
+        "sinuosity",
+        "sinuousness",
+        "slink",
+        "slinkiness",
+        "snake",
+        "snakiness",
+        "swirl",
+        "swish",
+        "torsion",
+        "tortility",
+        "tortuosity",
+        "tortuousness",
+        "turn",
+        "turning",
+        "twine",
+        "twirl",
+        "twist",
+        "twist and turn",
+        "twisting",
+        "undulation",
+        "wave",
+        "waving",
+        "whirl",
+        "whish",
+        "whorl",
+        "wimple",
+        "wind",
+        "winding",
+        "worm",
+        "wring",
+        "wrinkle"
+      ]
+    },
+    "crinkled": {
+      "word": "CRINKLED",
+      "definitions": [
+        {
+          "text": "Having short bends, turns, or wrinkles; wrinkled; wavy; zigzag. \"The crinkled lightning.\" Lowell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinkly": {
+      "word": "CRINKLY",
+      "definitions": [
+        {
+          "text": "Having crinkles; wavy; wrinkly.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinoid": {
+      "word": "CRINOID",
+      "definitions": [
+        {
+          "text": "Crinoidal.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the Crinoidea.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinoidal": {
+      "word": "CRINOIDAL",
+      "definitions": [
+        {
+          "text": "Of pertaining to crinoids; consisting of, or containing, crinoids.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinoidea": {
+      "word": "CRINOIDEA",
+      "definitions": [
+        {
+          "text": "A large class of Echinodermata, including numerous extinct families and genera, but comparatively few living ones. Most of the fossil species, like some that are recent, were attached by a jointed stem. See Blastoidea, Cystoidea, Comatula.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinoidean": {
+      "word": "CRINOIDEAN",
+      "definitions": [
+        {
+          "text": "One of the Crinoidea.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinoline": {
+      "word": "CRINOLINE",
+      "definitions": [
+        {
+          "text": "A kind of stiff cloth, used chiefly by women, for underskirts, to expand the gown worn over it; -- so called because originally made of hair.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A lady's skirt made of any stiff material; latterly, a hoop skirt.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinose": {
+      "word": "CRINOSE",
+      "definitions": [
+        {
+          "text": "Hairy. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinosity": {
+      "word": "CRINOSITY",
+      "definitions": [
+        {
+          "text": "Hairiness. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crinum": {
+      "word": "CRINUM",
+      "definitions": [
+        {
+          "text": "A genus of bulbous plants, of the order Amaryllidace, cultivated as greenhouse plants on account of their beauty.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criosphinx": {
+      "word": "CRIOSPHINX",
+      "definitions": [
+        {
+          "text": "A sphinx with the head of a ram.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cripple": {
+      "word": "CRIPPLE",
+      "definitions": [
+        {
+          "text": "One who creeps, halts, or limps; one who has lost, or never had, the use of a limb or limbs; a lame person; hence, one who is partially disabled. I am a cripple in my limbs; but what decays are in my mind, the reader must determine. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Lame; halting. [R.] \"The cripple, tardy-gaited night.\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To deprive of the use of a limb, particularly of a leg or foot; to lame. He had crippled the joints of the noble child. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deprive of strength, activity, or capability for service or use; to disable; to deprive of resources; as, to be financially crippled. More serious embarrassments . . . were crippling the energy of the settlement in the Bay. Palfrey. An incumbrance which would permanently cripple the body politic. Macaulay.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abate",
+        "amputee",
+        "attenuate",
+        "blunt",
+        "bugger",
+        "burden",
+        "castrate",
+        "cramp",
+        "cumber",
+        "damage",
+        "damp",
+        "dampen",
+        "de-energize",
+        "deaden",
+        "debilitate",
+        "defective",
+        "deformity",
+        "devitalize",
+        "disable",
+        "disarm",
+        "disenable",
+        "dismember",
+        "drain",
+        "dull",
+        "emasculate",
+        "embarrass",
+        "encumber",
+        "enervate",
+        "enfeeble",
+        "enmesh",
+        "ensnarl",
+        "entangle",
+        "entoil",
+        "entrammel",
+        "entrap",
+        "entwine",
+        "eviscerate",
+        "exhaust",
+        "extenuate",
+        "fetter",
+        "gruel",
+        "hamper",
+        "hamstring",
+        "handicap",
+        "handicapped person",
+        "hobble",
+        "hors de combat",
+        "idiot",
+        "imbecile",
+        "immobilize",
+        "impair",
+        "impede",
+        "inactivate",
+        "incapable",
+        "incapacitate",
+        "involve",
+        "kibosh",
+        "lame",
+        "lay low",
+        "lime",
+        "lumber",
+        "maim",
+        "mayhem",
+        "mitigate",
+        "mutilate",
+        "net",
+        "paralytic",
+        "paraplegic",
+        "press down",
+        "prostrate",
+        "put",
+        "quadriplegic",
+        "queer",
+        "queer the works",
+        "rattle",
+        "reduce",
+        "sabotage",
+        "saddle with",
+        "sap",
+        "shackle",
+        "shake",
+        "shake up",
+        "snarl",
+        "soften up",
+        "spike",
+        "tangle",
+        "the crippled",
+        "the handicapped",
+        "toil",
+        "trammel",
+        "unbrace",
+        "undermine",
+        "unfit",
+        "unman",
+        "unnerve",
+        "unstrengthen",
+        "unstring",
+        "weaken",
+        "weigh down",
+        "wing",
+        "wreck"
+      ]
+    },
+    "crippled": {
+      "word": "CRIPPLED",
+      "definitions": [
+        {
+          "text": "Lamed; lame; disabled; impeded. \"The crippled crone.\" Longfellow.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bad",
+        "castrated",
+        "damaged",
+        "debilitated",
+        "disabled",
+        "disarmed",
+        "disqualified",
+        "emasculated",
+        "game",
+        "halt",
+        "halting",
+        "hamstrung",
+        "handicapped",
+        "hobbling",
+        "hog-tied",
+        "incapacitated",
+        "inoperative",
+        "invalidated",
+        "lame",
+        "limping",
+        "maimed",
+        "paralyzed",
+        "prostrate",
+        "spavined",
+        "weak",
+        "weakened"
+      ]
+    },
+    "crippleness": {
+      "word": "CRIPPLENESS",
+      "definitions": [
+        {
+          "text": "Lameness. [R.] Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crippler": {
+      "word": "CRIPPLER",
+      "definitions": [
+        {
+          "text": "A wooden tool used in graining leather. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crippling": {
+      "word": "CRIPPLING",
+      "definitions": [
+        {
+          "text": "Spars or timbers set up as a support against the side of a building.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cripply": {
+      "word": "CRIPPLY",
+      "definitions": [
+        {
+          "text": "Lame; disabled; in a crippled condition. [R.] Mrs. Trollope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crisis": {
+      "word": "CRISIS",
+      "definitions": [
+        {
+          "text": "The point of time when it is to be decided whether any affair or course of action must go on, or be modified or terminate; the decisive moment; the turning point. This hour's the very crisis of your fate. Dryden. The very times of crisis for the fate of the country. Brougham.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That change in a disease which indicates whether the result is to be recovery or death; sometimes, also, a striking change of symptoms attended by an outward manifestation, as by an eruption or sweat. Till some safe crisis authorize their skill. Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bench mark",
+        "boom",
+        "bottoming out",
+        "breakers ahead",
+        "business cycle",
+        "business fluctuations",
+        "bust",
+        "calamity",
+        "cardhouse",
+        "cardinal point",
+        "catastrophe",
+        "cause for alarm",
+        "chief thing",
+        "climacteric",
+        "climax",
+        "clutch",
+        "contingency",
+        "convergence of events",
+        "cooling off",
+        "core",
+        "cornerstone",
+        "critical juncture",
+        "critical moment",
+        "critical point",
+        "crossroads",
+        "crucial period",
+        "crunch",
+        "crux",
+        "danger",
+        "dangerous ground",
+        "depression",
+        "disaster",
+        "dollar crisis",
+        "dollar gap",
+        "downturn",
+        "economic cycle",
+        "economic expansion",
+        "economic growth",
+        "emergency",
+        "endangerment",
+        "essence",
+        "essential",
+        "essential matter",
+        "exigency",
+        "expanding economy",
+        "expansion",
+        "extremity",
+        "financial crisis",
+        "fundamental",
+        "gaping chasm",
+        "gathering clouds",
+        "gist",
+        "gravamen",
+        "great point",
+        "growth",
+        "hazard",
+        "heart",
+        "high growth rate",
+        "high point",
+        "high pressure",
+        "hinge",
+        "house of cards",
+        "imperativeness",
+        "imperilment",
+        "important thing",
+        "issue",
+        "jeopardy",
+        "kernel",
+        "keystone",
+        "landmark",
+        "low",
+        "main point",
+        "main thing",
+        "market expansion",
+        "material point",
+        "meat",
+        "menace",
+        "milestone",
+        "nub",
+        "pass",
+        "peak",
+        "peaking",
+        "peril",
+        "pinch",
+        "pith",
+        "pivot",
+        "plight",
+        "predicament",
+        "press",
+        "pressure",
+        "prosperity",
+        "push",
+        "quicksand",
+        "real issue",
+        "recession",
+        "recovery",
+        "risk",
+        "rocks ahead",
+        "rub",
+        "salient point",
+        "sine qua non",
+        "slowdown",
+        "slump",
+        "storm clouds",
+        "strait",
+        "stress",
+        "substance",
+        "substantive point",
+        "tension",
+        "the bottom line",
+        "the point",
+        "thin ice",
+        "threat",
+        "turn",
+        "turning point",
+        "upturn",
+        "urgency",
+        "zero hour"
+      ]
+    },
+    "crisp": {
+      "word": "CRISP",
+      "definitions": [
+        {
+          "text": "Curling in stiff curls or ringlets; as, crisp hair.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Curled with the ripple of the water. [Poetic] You numphs called Naiads, of the winding brooks . . . Leave jour crisp channels. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Brittle; friable; in a condition to break with a short, sharp fracture; as, crisp snow. The cakes at tea ate short and crisp. Goldsmith.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Possessing a certain degree of firmness and freshness; in a fresh, unwilted condition. It [laurel] has been plucked nine months, and yet looks as hale and crisp as if it would last ninety years. Leigh Hunt.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lively; sparking; effervescing. Your neat crisp claret. Beau & Fl.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Brisk; crackling; cheerful; lively. The snug, small room, and the crisp fire. Dickens.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To curl; to form into ringlets, as hair, or the nap of cloth; to interweave, as the branches of trees.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to undulate irregularly, as crape or water; to wrinkle; to cause to ripple. Cf. Crimp. The lover with the myrtle sprays Adorns his crisped tresses. Drayton. Along the crisped shades and bowers. Milton. The crisped brooks, Rolling on orient pearl and sands of gold. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make crisp or brittle, as in cooking. Crisping iron, an instrument by which hair or any textile fabric is crisped.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "That which is crisp or brittle; the state of being crisp or brittle; as, burned to a crisp; specifically, the rind of roasted pork; crackling.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Siberian",
+        "Spartan",
+        "abbreviated",
+        "abridged",
+        "algid",
+        "aphoristic",
+        "aposiopestic",
+        "arctic",
+        "axiomatic",
+        "below zero",
+        "biting",
+        "bitter",
+        "bitterly cold",
+        "bleak",
+        "boreal",
+        "bracing",
+        "breakable",
+        "brief",
+        "brisk",
+        "brittle",
+        "brittle as glass",
+        "brumal",
+        "brusque",
+        "cheering",
+        "chip",
+        "clean-cut",
+        "clear",
+        "clear as crystal",
+        "clear as day",
+        "clear-cut",
+        "clipped",
+        "close",
+        "coherent",
+        "coil",
+        "cold",
+        "cold as charity",
+        "cold as death",
+        "cold as ice",
+        "cold as marble",
+        "compact",
+        "compendious",
+        "compressed",
+        "concise",
+        "condensed",
+        "connected",
+        "consistent",
+        "contracted",
+        "cordial",
+        "crackable",
+        "crease",
+        "crimp",
+        "crinkly",
+        "crisped",
+        "crispy",
+        "crumbly",
+        "crump",
+        "crushable",
+        "crystal-clear",
+        "crystalline",
+        "curl",
+        "curled",
+        "curly",
+        "curt",
+        "cut",
+        "cutting",
+        "defined",
+        "definite",
+        "delicate",
+        "direct",
+        "distinct",
+        "docked",
+        "dog-ear",
+        "double",
+        "double over",
+        "elliptic",
+        "energizing",
+        "enfold",
+        "epigrammatic",
+        "exhilarating",
+        "explicit",
+        "express",
+        "fissile",
+        "flimsy",
+        "flounce",
+        "flute",
+        "fold",
+        "fold over",
+        "formulaic",
+        "formulistic",
+        "fracturable",
+        "fragile",
+        "frail",
+        "frangible",
+        "freezing",
+        "freezing cold",
+        "fresh",
+        "friable",
+        "frigid",
+        "frill",
+        "frizzed",
+        "frizzly",
+        "frizzy",
+        "gather",
+        "gelid",
+        "glacial",
+        "gnomic",
+        "hibernal",
+        "hiemal",
+        "hyperborean",
+        "ice-cold",
+        "ice-encrusted",
+        "icelike",
+        "icy",
+        "inclement",
+        "infold",
+        "ingoing",
+        "interfold",
+        "invigorating",
+        "keen",
+        "kink",
+        "kinked",
+        "kinky",
+        "lacerable",
+        "laconic",
+        "lap over",
+        "limpid",
+        "loud and clear",
+        "lucid",
+        "luminous",
+        "nipping",
+        "nippy",
+        "numbing",
+        "pellucid",
+        "penetrating",
+        "perspicuous",
+        "piercing",
+        "pinching",
+        "pithy",
+        "plain",
+        "plait",
+        "plat",
+        "platitudinous",
+        "pleat",
+        "plicate",
+        "ply",
+        "pointed",
+        "proverbial",
+        "provoking",
+        "pruned",
+        "pulverizable",
+        "pulverulent",
+        "pungent",
+        "quill",
+        "raw",
+        "refreshful",
+        "refreshing",
+        "regaling",
+        "reserved",
+        "rigorous",
+        "rousing",
+        "ruff",
+        "ruffle",
+        "scissile",
+        "sententious",
+        "severe",
+        "sharp",
+        "shatterable",
+        "shattery",
+        "shivery",
+        "short",
+        "short and sweet",
+        "shortened",
+        "simple",
+        "sleety",
+        "slushy",
+        "snappy",
+        "splintery",
+        "stimulating",
+        "stone-cold",
+        "straightforward",
+        "subzero",
+        "succinct",
+        "summary",
+        "supercooled",
+        "synopsized",
+        "taciturn",
+        "terse",
+        "tight",
+        "to the point",
+        "tonic",
+        "translucent",
+        "transparent",
+        "transpicuous",
+        "trenchant",
+        "triturable",
+        "truncated",
+        "tuck",
+        "turn over",
+        "twill",
+        "unambiguous",
+        "unconfused",
+        "unequivocal",
+        "univocal",
+        "unmistakable",
+        "vulnerable",
+        "well-defined",
+        "winterbound",
+        "winterlike",
+        "wintery",
+        "wintry",
+        "zestful",
+        "zesty"
+      ]
+    },
+    "crispatecrispated": {
+      "word": "CRISPATE; CRISPATED",
+      "definitions": [
+        {
+          "text": "Having a crisped appearance; irregularly curled or twisted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crispation": {
+      "word": "CRISPATION",
+      "definitions": [
+        {
+          "text": "The act or process of curling, or the state of being curled. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A very slight convulsive or spasmodic contraction of certain muscles, external or internal. Few men can look down from a great height without creepings and crispations. O. W. Holmes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crispature": {
+      "word": "CRISPATURE",
+      "definitions": [
+        {
+          "text": "The state of being crispate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crisper": {
+      "word": "CRISPER",
+      "definitions": [
+        {
+          "text": "One who, or that which, crisps or curls; an instrument for making little curls in the nap of cloth, as in chinchilla.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crispin": {
+      "word": "CRISPIN",
+      "definitions": [
+        {
+          "text": "A shoemaker; -- jocularly so called from the patron sant of the craft.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of a union or association of shoemakers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crisply": {
+      "word": "CRISPLY",
+      "definitions": [
+        {
+          "text": "In a crisp manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crispness": {
+      "word": "CRISPNESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being crisp.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crispy": {
+      "word": "CRISPY",
+      "definitions": [
+        {
+          "text": "Formed into short, close ringlets; frizzed; crisp; as, crispy locks.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Crisp; brittle; as. a crispy pie crust.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crissal": {
+      "word": "CRISSAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the crissum; as, crissal feathers.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having highly colored under tail coverts; as, the crissal thrasher.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crisscross": {
+      "word": "CRISSCROSS",
+      "definitions": [
+        {
+          "text": "A mark or cross, as the signature of a person who is unable to write.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A child's game played on paper or on a slate, consisting of lines arranged in the form of a cross.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To mark or cover with cross lines; as, a paper was crisscrossed with red marks.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "In opposite directions; in a way to cross something else; crossing one another at various angles and in various ways. Logs and tree luing crisscross in utter confusion. W. E. Boardman.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "With opposition or hindrance; at cross purposes; contrarily; as, things go crisscross.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "Calvary cross",
+        "Christogram",
+        "Greek cross",
+        "Jerusalem cross",
+        "Latin cross",
+        "Maltese cross",
+        "Russian cross",
+        "T",
+        "X",
+        "across",
+        "across the grain",
+        "ankh",
+        "athwart",
+        "athwartships",
+        "avellan cross",
+        "bar",
+        "chi",
+        "chi-rho",
+        "chiasmal",
+        "chiasmic",
+        "chiastic",
+        "christcross",
+        "contrariwise",
+        "contrawise",
+        "cross",
+        "cross ancre",
+        "cross botonee",
+        "cross bourdonee",
+        "cross fitche",
+        "cross fleury",
+        "cross formee",
+        "cross fourchee",
+        "cross grignolee",
+        "cross moline",
+        "cross of Cleves",
+        "cross of Lorraine",
+        "cross patee",
+        "cross recercelee",
+        "cross-crosslet",
+        "cross-grained",
+        "crossbar",
+        "crossbones",
+        "crosscut",
+        "crossed",
+        "crossing",
+        "crosslet",
+        "crossway",
+        "crossways",
+        "crosswise",
+        "cruciate",
+        "crucifix",
+        "cruciform",
+        "crux",
+        "crux ansata",
+        "crux capitata",
+        "crux decussata",
+        "crux gammata",
+        "crux immissa",
+        "crux ordinaria",
+        "cut across",
+        "dagger",
+        "decussate",
+        "decussated",
+        "ex",
+        "exing",
+        "fork cross",
+        "gammadion",
+        "intercross",
+        "intersect",
+        "intersected",
+        "intersecting",
+        "inverted cross",
+        "lie across",
+        "long cross",
+        "obliquely",
+        "overthwart",
+        "papal cross",
+        "pectoral cross",
+        "potent cross",
+        "rood",
+        "saltire",
+        "secant",
+        "sideways",
+        "sidewise",
+        "swastika",
+        "tau",
+        "thwart",
+        "thwartly",
+        "thwartways",
+        "transverse",
+        "transversely",
+        "traverse",
+        "trefled cross",
+        "voided cross"
+      ]
+    },
+    "crisscrossrow": {
+      "word": "CRISSCROSS-ROW",
+      "definitions": [
+        {
+          "text": "See Christcross-row.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crissum": {
+      "word": "CRISSUM",
+      "definitions": [
+        {
+          "text": "That part of a bird, or the feathers, surrounding the cloacal opening; the under tail coverts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cristate": {
+      "word": "CRISTATE",
+      "definitions": [
+        {
+          "text": "Crested.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criterion": {
+      "word": "CRITERION",
+      "definitions": [
+        {
+          "text": "A standard of judging; any approved or established rule or test, by which facts, principles opinions, and conduct are tried in forming a correct judgment respecting them. Of the diseases of the mind there is no criterion. Donne. Inferences founded on such enduring criteria. Sir G. C. Lewis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Procrustean law",
+        "acid test",
+        "adjudgment",
+        "antetype",
+        "antitype",
+        "archetype",
+        "assay",
+        "barometer",
+        "benchmark",
+        "biotype",
+        "blank determination",
+        "brouillon",
+        "canon",
+        "check",
+        "classic example",
+        "code",
+        "crucial test",
+        "crucible",
+        "degree",
+        "determination",
+        "docimasy",
+        "epitome",
+        "essay",
+        "feeling out",
+        "first draft",
+        "form",
+        "formality",
+        "formula",
+        "formulary",
+        "fugleman",
+        "fugler",
+        "gauge",
+        "genotype",
+        "graduated scale",
+        "guideline",
+        "imitatee",
+        "judgment",
+        "kiteflying",
+        "law",
+        "law of nature",
+        "lead",
+        "maxim",
+        "measure",
+        "mirror",
+        "model",
+        "norm",
+        "norma",
+        "ordeal",
+        "order of nature",
+        "original",
+        "paradigm",
+        "parameter",
+        "pattern",
+        "precedent",
+        "prescribed form",
+        "prescription",
+        "principle",
+        "probation",
+        "proof",
+        "prototype",
+        "quantity",
+        "reading",
+        "readout",
+        "regulation",
+        "representative",
+        "rough draft",
+        "rough sketch",
+        "rule",
+        "scale",
+        "set form",
+        "sounding out",
+        "standard",
+        "standing order",
+        "test",
+        "test case",
+        "touchstone",
+        "trial",
+        "try",
+        "type",
+        "type species",
+        "type specimen",
+        "universal law",
+        "urtext",
+        "value",
+        "verification",
+        "yardstick"
+      ]
+    },
+    "crith": {
+      "word": "CRITH",
+      "definitions": [
+        {
+          "text": "The unit for estimating the weight of a",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crithomancy": {
+      "word": "CRITHOMANCY",
+      "definitions": [
+        {
+          "text": "A kind of divination by means of the dough of the cakes offered in the ancient sacrifices, and the meal strewed over the victims.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "critic": {
+      "word": "CRITIC",
+      "definitions": [
+        {
+          "text": "One skilled in judging of the merits of literary or artistic works; a connoisseur; an adept; hence, one who examines literary or artistic works, etc., and passes judgment upon them; a reviewer. The opininon of the most skillful critics was, that nothing finer [than Goldsmith's \"Traveler\"] had appeared in verse since the fourth book of the \"Dunciad.\" Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who passes a rigorous or captious judgment; one who censures or finds fault; a harsh examiner or judge; a caviler; a carper. When an author has many beauties consistent with virtue, piety, and truth, let not little critics exalt themselves, and shower down their ill nature. I. Watts. You know who the critics are the men who have failed in literature and art. Beaconsfield.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The art of criticism. [Obs.] Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An act of criticism; a critique. [Obs.] And make each day a critic on the last. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to critics or criticism; critical. [Obs.] \"Critic learning.\" Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To criticise; to play the critic. [Obs.] Nay, if you begin to critic once, we shall never have done. A. Brewer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "advertising writer",
+        "aficionado",
+        "allegorist",
+        "amateur",
+        "annalist",
+        "annotator",
+        "arbiter",
+        "arbiter elegantiarum",
+        "arbiter of taste",
+        "art critic",
+        "author",
+        "authoress",
+        "authority",
+        "belittler",
+        "belletrist",
+        "bibliographer",
+        "bon vivant",
+        "book reviewer",
+        "buff",
+        "captious",
+        "captious critic",
+        "carper",
+        "carping",
+        "caviler",
+        "caviling",
+        "censor",
+        "censorious",
+        "censurer",
+        "cicerone",
+        "clarifier",
+        "coauthor",
+        "cognoscente",
+        "collaborator",
+        "collector",
+        "columnist",
+        "commentator",
+        "commenter",
+        "common scold",
+        "compiler",
+        "complainer",
+        "composer",
+        "connaisseur",
+        "connoisseur",
+        "copywriter",
+        "creative writer",
+        "criticaster",
+        "criticizer",
+        "critickin",
+        "criticule",
+        "cryptanalyst",
+        "cryptographer",
+        "cryptologist",
+        "dance critic",
+        "decoder",
+        "definer",
+        "demonstrator",
+        "demythologizer",
+        "diarist",
+        "diaskeuast",
+        "dilettante",
+        "disparager",
+        "dragoman",
+        "drama critic",
+        "dramatist",
+        "editor",
+        "editorial writer",
+        "editorialist",
+        "emendator",
+        "emender",
+        "encyclopedist",
+        "epicure",
+        "epicurean",
+        "essayist",
+        "euhemerist",
+        "exegesist",
+        "exegete",
+        "exegetist",
+        "expert",
+        "explainer",
+        "explicator",
+        "exponent",
+        "expositor",
+        "expounder",
+        "fan",
+        "faultfinder",
+        "faultfinding",
+        "freak",
+        "free lance",
+        "free-lance writer",
+        "frondeur",
+        "ghost",
+        "ghostwriter",
+        "glossarist",
+        "glossographer",
+        "go-between",
+        "good judge",
+        "gourmand",
+        "gourmet",
+        "guide",
+        "hermeneut",
+        "humorist",
+        "hypercritical",
+        "inditer",
+        "interpreter",
+        "judge",
+        "knocker",
+        "leader writer",
+        "lexicographer",
+        "literary artist",
+        "literary craftsman",
+        "literary critic",
+        "literary man",
+        "litterateur",
+        "logographer",
+        "magazine writer",
+        "man of letters",
+        "maven",
+        "metaphrast",
+        "momus",
+        "monographer",
+        "muckraker",
+        "mudslinger",
+        "music critic",
+        "news analyst",
+        "newspaperman",
+        "nitpicker",
+        "novelettist",
+        "novelist",
+        "nut",
+        "oneirocritic",
+        "overcritical",
+        "pamphleteer",
+        "paraphrast",
+        "penwoman",
+        "pettifogger",
+        "poet",
+        "prose writer",
+        "publicist",
+        "pundit",
+        "quibbler",
+        "refined palate",
+        "reviewer",
+        "savant",
+        "scenario writer",
+        "scenarist",
+        "scholar",
+        "scholiast",
+        "scold",
+        "scribe",
+        "scriptwriter",
+        "short-story writer",
+        "smellfungus",
+        "social critic",
+        "specialist",
+        "storyteller",
+        "technical expert",
+        "technical writer",
+        "technician",
+        "textual critic",
+        "translator",
+        "virtuoso",
+        "word painter",
+        "wordsmith",
+        "writer"
+      ]
+    },
+    "critical": {
+      "word": "CRITICAL",
+      "definitions": [
+        {
+          "text": "Qualified to criticise, or pass judgment upon, literary or artistic productions. It is submitted to the judgment of more critical ears to direct and determine what is graceful and what is not. Holder.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to criticism or the critic's art; of the nature of a criticism; accurate; as, critical knowledge; a critical dissertation.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Inclined to make nice distinctions, or to exercise careful judgment and selection; exact; nicely judicious. Virgil was so critical in the rites of religion. that he would never have brought in such prayers as these, if they had not been agreeable to the Roman customs. Bp. Stillingfleet.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Inclined to criticise or find fault; fastidious; captious; censorious; exacting. O gentle lady, do not put me to 't, For I am nothing, if not critical. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Characterized by thoroughness and a reference to principles, as becomes a critic; as, a critical analysis of a subject.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Etym: [See Crisis.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to, or indicating, a crisis, turning point, or specially important juncture; important as regards consequences; hence, of doubtful issue; attended with risk; dangerous; as, the critical stage of a fever; a critical situation. Our circumstances are indeed critical. Burke. The small moment, the exact point, the critical minute, on which every good work so much depends. South. Critical angle (Optics), that angle of incidence of a luminous ray at which it is wholly reflected, and no portion of it transmitted. The sine of this angle is the reciprocal of the refractive index of the medium. called from his most important work, the \"Critique of Pure Reason.\" - - Critical point (Physics), a certain temperature, different for different gases, but always the same for each gas, regarded as the limit above which no amount of pressure can produce condensation to a liquid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Herculean",
+        "abstruse",
+        "accurate",
+        "acute",
+        "alarming",
+        "allegorizing",
+        "annotative",
+        "appreciative",
+        "arduous",
+        "attentive",
+        "bad",
+        "basic",
+        "belittling",
+        "brutal",
+        "captious",
+        "carping",
+        "caviling",
+        "censorious",
+        "charged",
+        "choicy",
+        "choosy",
+        "clamorous",
+        "clarifying",
+        "climacteric",
+        "close",
+        "commentative",
+        "commentatorial",
+        "compelling",
+        "complex",
+        "conclusive",
+        "conscientious",
+        "consequential",
+        "correct",
+        "critic",
+        "crucial",
+        "crying",
+        "cynical",
+        "dangerous",
+        "dangersome",
+        "decisive",
+        "delicate",
+        "demanding",
+        "demeaning",
+        "demonstrative",
+        "demythologizing",
+        "deprecating",
+        "deprecative",
+        "deprecatory",
+        "depreciating",
+        "depreciative",
+        "depreciatory",
+        "desperate",
+        "detailed",
+        "determinative",
+        "differential",
+        "difficile",
+        "difficult",
+        "dire",
+        "discerning",
+        "discoursive",
+        "discriminate",
+        "discriminating",
+        "discriminative",
+        "disparaging",
+        "disquisitional",
+        "dissertational",
+        "distinctive",
+        "distinguishing",
+        "editorial",
+        "elucidative",
+        "emergent",
+        "enlightening",
+        "essayistic",
+        "essential",
+        "euhemeristic",
+        "exact",
+        "exacting",
+        "exegetic",
+        "exemplificative",
+        "exigent",
+        "explaining",
+        "explanatory",
+        "explicative",
+        "explicatory",
+        "explosive",
+        "expositive",
+        "expositorial",
+        "expository",
+        "exquisite",
+        "fastidious",
+        "faultfinding",
+        "fine",
+        "finical",
+        "finicking",
+        "finicky",
+        "formidable",
+        "fraught with danger",
+        "fussy",
+        "glossarial",
+        "grave",
+        "hairsplitting",
+        "hairy",
+        "hard",
+        "hard-earned",
+        "hard-fought",
+        "high-pressure",
+        "high-priority",
+        "humbling",
+        "hypercritical",
+        "illuminating",
+        "illuminative",
+        "illustrative",
+        "imperative",
+        "imperious",
+        "important",
+        "insistent",
+        "instant",
+        "intricate",
+        "jawbreaking",
+        "jeopardous",
+        "judgemental",
+        "judgmental",
+        "judicative",
+        "judicial",
+        "judiciary",
+        "judicious",
+        "juridic",
+        "juristic",
+        "kairotic",
+        "key",
+        "knotted",
+        "knotty",
+        "laborious",
+        "loaded",
+        "lowering",
+        "mean",
+        "menacing",
+        "meticulous",
+        "minute",
+        "momentous",
+        "monographic",
+        "nagging",
+        "narrow",
+        "nice",
+        "niggling",
+        "no picnic",
+        "not easy",
+        "on slippery ground",
+        "on thin ice",
+        "operose",
+        "overcritical",
+        "parlous",
+        "particular",
+        "penetrating",
+        "perfectionistic",
+        "periculous",
+        "perilous",
+        "pettifogging",
+        "picky",
+        "pivotal",
+        "precarious",
+        "precise",
+        "precisianistic",
+        "precisionistic",
+        "pregnant",
+        "pressing",
+        "priggish",
+        "prudish",
+        "punctilious",
+        "punctual",
+        "puristic",
+        "puritanic",
+        "quibbling",
+        "rationalistic",
+        "rationalizing",
+        "refined",
+        "religious",
+        "rigid",
+        "rigorous",
+        "rough",
+        "rugged",
+        "scholiastic",
+        "scrupulous",
+        "scrutinizing",
+        "selective",
+        "sensitive",
+        "serious",
+        "set with thorns",
+        "severe",
+        "significant",
+        "slippery",
+        "slippy",
+        "spiny",
+        "steep",
+        "strenuous",
+        "strict",
+        "subtle",
+        "tactful",
+        "thorny",
+        "threatening",
+        "ticklish",
+        "toilsome",
+        "touch-and-go",
+        "touchy",
+        "tough",
+        "trichoschistic",
+        "tricky",
+        "ugly",
+        "ultracritical",
+        "uncertain",
+        "uphill",
+        "urgent",
+        "vital",
+        "weighty",
+        "wicked"
+      ]
+    },
+    "critically": {
+      "word": "CRITICALLY",
+      "definitions": [
+        {
+          "text": "In a critical manner; with nice discernment; accurately; exactly. Critically to discern good writers from bad. Dryden.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "At a crisis; at a critical time; in a situation. place, or condition of decisive consequence; as, a fortification critically situated. Coming critically the night before the session. Bp. Burnet.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criticalness": {
+      "word": "CRITICALNESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being critical, or of occurring at a critical time.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Accuracy in examination or decision; exactness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criticaster": {
+      "word": "CRITICASTER",
+      "definitions": [
+        {
+          "text": "A contemptible or vicious critic. The rancorous and reptile crew of poeticules, who decompose into criticasters. Swinburne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criticisable": {
+      "word": "CRITICISABLE",
+      "definitions": [
+        {
+          "text": "Capable of being criticised.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criticise": {
+      "word": "CRITICISE",
+      "definitions": [
+        {
+          "text": "To examine and judge as a critic; to pass literary or artistic judgment upon; as, to criticise an author; to criticise a picture.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To express one's views as to the merit or demerit of; esp., to animadvert upon; to find fault with; as, to criticise conduct. Blackwood's Mag.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act as a critic; to pass literary or artistic judgment; to play the critic; -- formerly used with on or upon. Several of these ladies, indeed, criticised upon the form of the association. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To discuss the merits or demerits of a thing or person; esp., to find fault. Cavil you may, but never criticise. Pope.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criticiser": {
+      "word": "CRITICISER",
+      "definitions": [
+        {
+          "text": "One who criticises; a critic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "criticism": {
+      "word": "CRITICISM",
+      "definitions": [
+        {
+          "text": "The rules and principles which regulate the practice of the critic; the art of judging with knowledge and propriety of the beauties and faults of a literary performance, or of a production in the fine arts; as, dramatic criticism. The elements ofcriticism depend on the two principles of Beauty and Truth, one of which is the final end or object of study in every one of its pursuits: Beauty, in letters and the arts; Truth, in history and sciences. Brande & C. By criticism, as it was first instituted by Aristotle, was meant a standard of judging well. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of criticising; a critical judgment passed or expressed; a critical observation or detailed examination and review; a critique; animadversion; censure. About the plan of \"Rasselas\" little was said by the critics; and yet the faults of the plan might seem to invite severe criticism. Macaulay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "adverse criticism",
+        "analysis",
+        "animadversion",
+        "appraisal",
+        "approval",
+        "aspersion",
+        "assessment",
+        "bad notices",
+        "bad press",
+        "book review",
+        "captiousness",
+        "carping",
+        "cavil",
+        "caviling",
+        "censoriousness",
+        "censure",
+        "comment",
+        "commentary",
+        "commentation",
+        "condemnation",
+        "critical bibliography",
+        "critical journal",
+        "critical notice",
+        "critical review",
+        "critique",
+        "cryptanalysis",
+        "cryptography",
+        "cryptology",
+        "diagnostics",
+        "disapproval",
+        "disparagement",
+        "editorial",
+        "epigraphy",
+        "estimate",
+        "estimation",
+        "evaluation",
+        "examination",
+        "exception",
+        "exegetics",
+        "faultfinding",
+        "flak",
+        "gloss",
+        "hairsplitting",
+        "hermeneutics",
+        "hit",
+        "home thrust",
+        "hostile criticism",
+        "hypercriticalness",
+        "hypercriticism",
+        "imputation",
+        "judgement",
+        "knock",
+        "leader",
+        "leading article",
+        "lexicography",
+        "literary criticism",
+        "metoposcopy",
+        "nagging",
+        "niggle",
+        "niggling",
+        "nit",
+        "nit-picking",
+        "notice",
+        "obloquy",
+        "observation",
+        "oneirology",
+        "opinion",
+        "overcriticalness",
+        "paleography",
+        "pathognomy",
+        "pestering",
+        "pettifogging",
+        "physiognomics",
+        "physiognomy",
+        "priggishness",
+        "quibble",
+        "quibbling",
+        "rap",
+        "rating",
+        "reflection",
+        "remark",
+        "renew",
+        "report",
+        "reproachfulness",
+        "review",
+        "running commentary",
+        "semeiology",
+        "semeiotics",
+        "slam",
+        "stricture",
+        "study",
+        "swipe",
+        "symptomatology",
+        "taking exception",
+        "textual criticism",
+        "trichoschistism",
+        "tropology",
+        "valuation",
+        "write-up"
+      ]
+    },
+    "critique": {
+      "word": "CRITIQUE",
+      "definitions": [
+        {
+          "text": "The art of criticism. [Written also critic.] [R.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A critical examination or estimate of a work of literature or art; a critical dissertation or essay; a careful and through analysis of any subject; a criticism; as, Kant's \"Critique of Pure Reason.\" I should as soon expect to see a critique on the poesy of a ring as on the inscription of a medal. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A critic; one who criticises. [Obs.] A question among critiques in the ages to come. Bp. Lincoln.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To criticise or pass judgment upon. [Obs.] Pope.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "analysis",
+        "approval",
+        "book review",
+        "censure",
+        "comment",
+        "commentary",
+        "commentation",
+        "copy",
+        "critical bibliography",
+        "critical journal",
+        "critical notice",
+        "critical review",
+        "criticism",
+        "dwelling upon",
+        "editorial",
+        "elaboration",
+        "gloss",
+        "going over",
+        "iteration",
+        "leader",
+        "leading article",
+        "literary criticism",
+        "notice",
+        "practicing",
+        "reaffirmation",
+        "recap",
+        "recapitulation",
+        "recital",
+        "recountal",
+        "recounting",
+        "rehash",
+        "rehearsal",
+        "reissue",
+        "reiteration",
+        "remark",
+        "report",
+        "reprint",
+        "restatement",
+        "resume",
+        "retelling",
+        "review",
+        "running commentary",
+        "summary",
+        "summing up",
+        "write-up"
+      ]
+    },
+    "crizzel": {
+      "word": "CRIZZEL",
+      "definitions": [
+        {
+          "text": "A kind of roughness on the surface of glass, which clouds its transparency. [Written also crizzeling and crizzle.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

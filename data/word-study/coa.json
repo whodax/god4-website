@@ -1,0 +1,3289 @@
+{
+  "version": "v1",
+  "entries": {
+    "coacervate": {
+      "word": "COACERVATE",
+      "definitions": [
+        {
+          "text": "Raised into a pile; collected into a crowd; heaped. [R.] Bacon.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To heap up; to pile. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coacervation": {
+      "word": "COACERVATION",
+      "definitions": [
+        {
+          "text": "A heaping together. [R.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coach": {
+      "word": "COACH",
+      "definitions": [
+        {
+          "text": "A large, closed, four-wheeled carriage, having doors in the sides, and generally a front and back seat inside, each for two persons, and an elevated outside seat in front for the driver. number of persons they can carry. Mail coaches and tallyho coaches often have three or more seats inside, each for two or three persons, and seats outside, sometimes for twelve or more.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A special tutor who assists in preparing a student for examination; a trainer; esp. one who trains a boat's crew for a race. [Colloq.] Wareham was studying for India with a Wancester coach. G. Eliot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cabin on the after part of the quarterdeck, usually occupied by the captain. [Written also couch.] [Obs.] The commanders came on board and the council sat in the coach. Pepys.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Railroad)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A first-class passenger car, as distinguished from a drawing- room car, sleeping car, etc. It is sometimes loosely applied to any passenger car.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To convey in a coach. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To prepare for public examination by private instruction; to train by special instruction. [Colloq.] I coached him before he got his scholarship. G. Eliot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To drive or to ride in a coach; -- sometimes used with it. [Colloq.] \"Coaching it to all quarters.\" E. Waterhouse.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Privatdocent",
+        "Privatdozent",
+        "Pullman",
+        "Pullman car",
+        "advise",
+        "advocate",
+        "amateur athlete",
+        "archer",
+        "athlete",
+        "athletic coach",
+        "baggage car",
+        "ballplayer",
+        "barge",
+        "baseballer",
+        "baseman",
+        "batter",
+        "battery",
+        "blocking back",
+        "boat",
+        "bowman",
+        "boxcar",
+        "brief",
+        "bus",
+        "caboose",
+        "car",
+        "carriage",
+        "cart",
+        "catcher",
+        "center",
+        "chair car",
+        "coacher",
+        "coal car",
+        "competitor",
+        "confer",
+        "consult with",
+        "counsel",
+        "covered waggon",
+        "cram",
+        "cram with facts",
+        "crammer",
+        "cricketer",
+        "day coach",
+        "defensive lineman",
+        "diner",
+        "dinghy",
+        "dining car",
+        "direct",
+        "drawing room",
+        "dray",
+        "drill",
+        "driller",
+        "drillmaster",
+        "end",
+        "exercise",
+        "ferry",
+        "flat",
+        "flatcar",
+        "float",
+        "footballer",
+        "forerunner",
+        "games-player",
+        "gamester",
+        "gondola",
+        "groomer",
+        "guard",
+        "guide",
+        "infielder",
+        "instruct",
+        "instructor",
+        "jock",
+        "jumper",
+        "kibitz",
+        "lighter",
+        "lineman",
+        "local",
+        "luggage van",
+        "mail car",
+        "mail van",
+        "meddle",
+        "mentor",
+        "motor coach",
+        "offensive lineman",
+        "omnibus",
+        "outfield",
+        "outfielder",
+        "palace car",
+        "parlor car",
+        "passenger car",
+        "pathfinder",
+        "player",
+        "poloist",
+        "preparationist",
+        "preparator",
+        "prepare",
+        "preparer",
+        "prescribe",
+        "prime",
+        "private instructor",
+        "professional athlete",
+        "prompt",
+        "propose",
+        "pugilist",
+        "quarterback",
+        "racer",
+        "raft",
+        "railway car",
+        "recommend",
+        "reefer",
+        "refrigerator car",
+        "roomette",
+        "school",
+        "ship",
+        "skater",
+        "sled",
+        "sledge",
+        "sleeper",
+        "smoker",
+        "smoking car",
+        "sport",
+        "sportsman",
+        "stockcar",
+        "stuff with knowledge",
+        "submit",
+        "suggest",
+        "tackle",
+        "tailback",
+        "tank",
+        "teacher",
+        "tender",
+        "toxophilite",
+        "trailblazer",
+        "train",
+        "trainer",
+        "truck",
+        "tutor",
+        "tutorer",
+        "van",
+        "waggon",
+        "wagon",
+        "wheelbarrow",
+        "wingback",
+        "wrestler"
+      ]
+    },
+    "coachbox": {
+      "word": "COACHBOX",
+      "definitions": [
+        {
+          "text": "The seat of a coachman.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "coachdog": {
+      "word": "COACHDOG",
+      "definitions": [
+        {
+          "text": "One of a breed of dogs trained to accompany carriages; the Dalmatian dog.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "coachee": {
+      "word": "COACHEE",
+      "definitions": [
+        {
+          "text": "A coachman [Slang]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coacher": {
+      "word": "COACHER",
+      "definitions": [
+        {
+          "text": "A coachman. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A coach horse.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who coaches; specif. (Baseball),",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "one of the side at the bat posted near first or third base to direct a base runner.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coachfellow": {
+      "word": "COACHFELLOW",
+      "definitions": [
+        {
+          "text": "One of a pair of horses employed to draw a coach; hence (Fig.), a comrade. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coachman": {
+      "word": "COACHMAN",
+      "definitions": [
+        {
+          "text": "A man whose business is to drive a coach or carriage.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tropical fish of the Atlantic ocean (Dutes auriga); -- called also charioteer. The name refers to a long, lashlike spine of the dorsal fin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Jehu",
+        "boy",
+        "bullwhacker",
+        "butler",
+        "cabby",
+        "cabdriver",
+        "cabman",
+        "cameleer",
+        "carter",
+        "cartman",
+        "charioteer",
+        "chauffeur",
+        "coachy",
+        "cocher",
+        "cochero",
+        "drayman",
+        "driver",
+        "elephant driver",
+        "equerry",
+        "gardener",
+        "gentleman",
+        "gharry-wallah",
+        "gillie",
+        "hack",
+        "hackman",
+        "hacky",
+        "harness racer",
+        "houseboy",
+        "houseman",
+        "lord-in-waiting",
+        "mahout",
+        "man",
+        "manservant",
+        "mule skinner",
+        "muleteer",
+        "reinsman",
+        "skinner",
+        "stage coachman",
+        "teamster",
+        "truckman",
+        "valet",
+        "valet de chambre",
+        "vetturino",
+        "voiturier",
+        "wagoner",
+        "wagonman",
+        "whip"
+      ]
+    },
+    "coachmanship": {
+      "word": "COACHMANSHIP",
+      "definitions": [
+        {
+          "text": "Skill in driving a coach.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coachwhipsnake": {
+      "word": "COACHWHIP SNAKE",
+      "definitions": [
+        {
+          "text": "A large, slender, harmless snake of the southern United States (Masticophis flagelliformis). colored as to give it a braided appearance, whence the name.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "coact": {
+      "word": "COACT",
+      "definitions": [
+        {
+          "text": "To force; to compel; to drive. [Obs.] The faith and service of Christ ought to be voluntary and not coacted. Foxe.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act together; to work in concert; to unite. [Obs.] But if I tell you how these two did coact. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accord",
+        "act in concert",
+        "act together",
+        "affiliate",
+        "agree",
+        "ally",
+        "amalgamate",
+        "associate",
+        "band",
+        "band together",
+        "be in cahoots",
+        "be in league",
+        "club together",
+        "coadunate",
+        "coalesce",
+        "coincide",
+        "collaborate",
+        "collude",
+        "combine",
+        "concert",
+        "concord",
+        "concur",
+        "confederate",
+        "conjoin",
+        "connive",
+        "consolidate",
+        "conspire",
+        "cooperate",
+        "correspond",
+        "do business with",
+        "dovetail",
+        "engage",
+        "federate",
+        "fuse",
+        "get heads together",
+        "get together",
+        "go partners",
+        "hang together",
+        "happen together",
+        "harmonize",
+        "hold together",
+        "hook up",
+        "interact",
+        "interchange",
+        "interlace",
+        "intermesh",
+        "interplay",
+        "intertwine",
+        "interweave",
+        "interwork",
+        "join",
+        "join in",
+        "join together",
+        "keep together",
+        "league",
+        "league together",
+        "make common cause",
+        "merge",
+        "mesh",
+        "mortise",
+        "partner",
+        "play ball",
+        "pull together",
+        "put heads together",
+        "reciprocate",
+        "stand together",
+        "synchronize",
+        "synergize",
+        "team up",
+        "throw in together",
+        "tie in",
+        "tie up",
+        "unite",
+        "unite efforts",
+        "work together"
+      ]
+    },
+    "coactaretoconstrainfromcogerecoactumtocompelcfcogent": {
+      "word": "coactare to constrain, from cogere, coactum, to compel. Cf. Cogent,",
+      "definitions": [
+        {
+          "text": "To beat or press into pulp or a flat mass; to crush.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coaction": {
+      "word": "COACTION",
+      "definitions": [
+        {
+          "text": "Force; compulsion, either in restraining or impelling. Sojth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coactive": {
+      "word": "COACTIVE",
+      "definitions": [
+        {
+          "text": "Serving to compel or constrain; compulsory; restrictive. Any coactive power or the civil kind. Bp. Warburton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Acting in concurrence; united in action. With what's unreal thou coactive art. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coactively": {
+      "word": "COACTIVELY",
+      "definitions": [
+        {
+          "text": "In a coactive manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coactivity": {
+      "word": "COACTIVITY",
+      "definitions": [
+        {
+          "text": "Unity of action.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadaptation": {
+      "word": "COADAPTATION",
+      "definitions": [
+        {
+          "text": "Mutual adaption. R. Owen.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadapted": {
+      "word": "COADAPTED",
+      "definitions": [
+        {
+          "text": "Adapted one to another; as, coadapted pulp and tooth. R. Owen.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjument": {
+      "word": "COADJUMENT",
+      "definitions": [
+        {
+          "text": "Mutual help; coöperation. [R.] Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjust": {
+      "word": "COADJUST",
+      "definitions": [
+        {
+          "text": "To adjust by mutual adaptations. R. Owen.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjustment": {
+      "word": "COADJUSTMENT",
+      "definitions": [
+        {
+          "text": "Mutual adjustment.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjutant": {
+      "word": "COADJUTANT",
+      "definitions": [
+        {
+          "text": "Mutually assisting or operating; helping. J. Philips.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An assistant. R. North.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aid",
+        "aide",
+        "aide-de-camp",
+        "coacting",
+        "coactive",
+        "coadjutor",
+        "coadjuvant",
+        "coefficient",
+        "collaborative",
+        "collective",
+        "collectivist",
+        "collectivistic",
+        "collusive",
+        "combine",
+        "combined",
+        "commensal",
+        "common",
+        "communal",
+        "communalist",
+        "communalistic",
+        "communist",
+        "communistic",
+        "communitarian",
+        "concerted",
+        "concordant",
+        "concur",
+        "concurrent",
+        "concurring",
+        "conjoin",
+        "conniving",
+        "cooperant",
+        "cooperate",
+        "cooperating",
+        "cooperative",
+        "ecumenic",
+        "fellow",
+        "harmonious",
+        "harmonized",
+        "joint",
+        "league",
+        "lieutenant",
+        "mutual",
+        "noncompetitive",
+        "reciprocal",
+        "symbiotic",
+        "synergetic",
+        "synergic",
+        "synergistic",
+        "uncompetitive"
+      ]
+    },
+    "coadjuting": {
+      "word": "COADJUTING",
+      "definitions": [
+        {
+          "text": "Mutually assisting. [Obs.] Drayton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjutive": {
+      "word": "COADJUTIVE",
+      "definitions": [
+        {
+          "text": "Rendering mutual aid; coadjutant. Feltham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjutor": {
+      "word": "COADJUTOR",
+      "definitions": [
+        {
+          "text": "One who aids another; an assistant; a coworker. Craftily outwitting her perjured coadjutor. Sheridan.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(R. C. Ch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The assistant of a bishop or of a priest holding a benefice.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Grand Penitentiary",
+        "Holy Father",
+        "abuna",
+        "acolyte",
+        "adjunct",
+        "adjutant",
+        "agent",
+        "aid",
+        "aide",
+        "aide-de-camp",
+        "aider",
+        "ally",
+        "antipope",
+        "archbishop",
+        "archdeacon",
+        "archpriest",
+        "assistant",
+        "associate",
+        "attendant",
+        "auxiliary",
+        "bedfellow",
+        "best man",
+        "bishop",
+        "bishop coadjutor",
+        "brother",
+        "brother-in-arms",
+        "canon",
+        "cardinal",
+        "cardinal bishop",
+        "cardinal deacon",
+        "cardinal priest",
+        "chaplain",
+        "coadjutant",
+        "coadjutress",
+        "coadjutrix",
+        "cohort",
+        "colleague",
+        "companion",
+        "compatriot",
+        "compeer",
+        "comrade",
+        "confederate",
+        "confrere",
+        "consociate",
+        "consort",
+        "crony",
+        "curate",
+        "dean",
+        "deputy",
+        "diocesan",
+        "ecclesiarch",
+        "exarch",
+        "executive officer",
+        "fellow",
+        "fellow member",
+        "help",
+        "helper",
+        "helpmate",
+        "helpmeet",
+        "hierarch",
+        "high priest",
+        "lieutenant",
+        "metropolitan",
+        "papa",
+        "paranymph",
+        "paraprofessional",
+        "patriarch",
+        "penitentiary",
+        "pontiff",
+        "pope",
+        "prebendary",
+        "prelate",
+        "primate",
+        "rector",
+        "rural dean",
+        "second",
+        "servant",
+        "sideman",
+        "subdean",
+        "suffragan",
+        "supporting actor",
+        "supporting instrumentalist",
+        "vicar"
+      ]
+    },
+    "coadjutorship": {
+      "word": "COADJUTORSHIP",
+      "definitions": [
+        {
+          "text": "The state or office of a coadjutor; joint assistance. Pope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjutresscoadjutrix": {
+      "word": "COADJUTRESS; COADJUTRIX",
+      "definitions": [
+        {
+          "text": "A female coadjutor or assistant. Holland. Smollett.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjuvancy": {
+      "word": "COADJUVANCY",
+      "definitions": [
+        {
+          "text": "Joint help; coöperation. Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjuvant": {
+      "word": "COADJUVANT",
+      "definitions": [
+        {
+          "text": "Coöperating.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An adjuvant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadunate": {
+      "word": "COADUNATE",
+      "definitions": [
+        {
+          "text": "United at the base, as contiguous lobes of a leaf.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadunation": {
+      "word": "COADUNATION",
+      "definitions": [
+        {
+          "text": "Union, as in one body or mass; unity. Jer. Taylor. The coadunation of all the civilized provinces. Coleridge.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadunition": {
+      "word": "COADUNITION",
+      "definitions": [
+        {
+          "text": "Coadunation. [R.] Sir M. Hale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadventure": {
+      "word": "COADVENTURE",
+      "definitions": [
+        {
+          "text": "An adventure in which two or more persons are partakers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To share in a venture. Howell.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadventurer": {
+      "word": "COADVENTURER",
+      "definitions": [
+        {
+          "text": "A fellow adventurer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coafforest": {
+      "word": "COAFFOREST",
+      "definitions": [
+        {
+          "text": "To convert into, or add to, a forest. Howell.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coag": {
+      "word": "COAG",
+      "definitions": [
+        {
+          "text": "See Coak, a kind of tenon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagency": {
+      "word": "COAGENCY",
+      "definitions": [
+        {
+          "text": "Agency in common; joint agency or agent. Coleridge.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagent": {
+      "word": "COAGENT",
+      "definitions": [
+        {
+          "text": "An associate in an act; a coworker. Drayton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagment": {
+      "word": "COAGMENT",
+      "definitions": [
+        {
+          "text": "To join together. [Obs.] Glanvill.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagmentation": {
+      "word": "COAGMENTATION",
+      "definitions": [
+        {
+          "text": "The act of joining, or the state of being joined, together; union. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulability": {
+      "word": "COAGULABILITY",
+      "definitions": [
+        {
+          "text": "The quality of being coagulable; capacity of being coagulated. Ure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulable": {
+      "word": "COAGULABLE",
+      "definitions": [
+        {
+          "text": "Capable of being coagulated. Boyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulant": {
+      "word": "COAGULANT",
+      "definitions": [
+        {
+          "text": "That which produces coagulation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulate": {
+      "word": "COAGULATE",
+      "definitions": [
+        {
+          "text": "Coagulated. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To cause (a liquid) to change into a curdlike or semisolid state, not by evaporation but by some kind of chemical reaction; to curdle; as, rennet coagulates milk; heat coagulates the white of an egg.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To undergo coagulation. Boyle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Devonshire cream",
+        "adhere",
+        "agglomerate",
+        "beat up",
+        "blood clot",
+        "bonnyclabber",
+        "bunch",
+        "cake",
+        "casein",
+        "churn",
+        "clabber",
+        "clasp",
+        "cleave",
+        "clinch",
+        "cling",
+        "cling to",
+        "clot",
+        "clotted cream",
+        "clump",
+        "cluster",
+        "coagulum",
+        "coalesce",
+        "cohere",
+        "colloid",
+        "colloidize",
+        "compact",
+        "concentrate",
+        "concrete",
+        "condense",
+        "congeal",
+        "conglomerate",
+        "consolidate",
+        "crassamentum",
+        "cream",
+        "curd",
+        "curdle",
+        "dehydrate",
+        "dry",
+        "embolus",
+        "embrace",
+        "emulsify",
+        "emulsionize",
+        "freeze",
+        "freeze to",
+        "gel",
+        "gelatinate",
+        "gelatinize",
+        "grasp",
+        "grow together",
+        "grume",
+        "hang on",
+        "hang together",
+        "harden",
+        "hold",
+        "hold on",
+        "hold together",
+        "hug",
+        "incrassate",
+        "inspissate",
+        "jell",
+        "jellify",
+        "jelly",
+        "knot",
+        "legumin",
+        "lopper",
+        "loppered milk",
+        "lump",
+        "mass",
+        "paracasein",
+        "persist",
+        "set",
+        "solidify",
+        "stay",
+        "stay put",
+        "stick",
+        "stick together",
+        "take hold of",
+        "thick",
+        "thicken",
+        "thrombus",
+        "whip"
+      ]
+    },
+    "coagulated": {
+      "word": "COAGULATED",
+      "definitions": [
+        {
+          "text": "Changed into, or contained in, a coagulum or a curdlike mass; curdled. Coagulated proteid (Physiol. Chem.), one of a class of bodies formed in the coagulation of a albuminous substance by heat, acids, or other agents.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulation": {
+      "word": "COAGULATION",
+      "definitions": [
+        {
+          "text": "The change from a liquid to a thickened, curdlike, insoluble state, not by evaporation, but by some kind of chemical reaction; as, the spontaneous coagulation of freshly drawn blood; the coagulation of milk by rennet, or acid, and the coagulation of egg albumin by heat. Coagulation is generally the change of an albuminous body into an insoluble modification.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The substance or body formed by coagulation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulative": {
+      "word": "COAGULATIVE",
+      "definitions": [
+        {
+          "text": "Having the power to cause coagulation; as, a coagulative agent. Boyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulator": {
+      "word": "COAGULATOR",
+      "definitions": [
+        {
+          "text": "That which causes coagulation. Hixley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulatory": {
+      "word": "COAGULATORY",
+      "definitions": [
+        {
+          "text": "Serving to coagulate; produced by coagulation; as, coagulatory effects. Boyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coagulum": {
+      "word": "COAGULUM",
+      "definitions": [
+        {
+          "text": "The thick, curdy precipitate formed by the coagulation of albuminous matter; any mass of coagulated matter, as a clot of bloot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coaita": {
+      "word": "COAITA",
+      "definitions": [
+        {
+          "text": "The native name of certain South American monkeys of the genus Ateles, esp. A. paniscus. The black-faced coaita is Ateles ater. See Illustration in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coak": {
+      "word": "COAK",
+      "definitions": [
+        {
+          "text": "(Carp.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of tenon connecting the face of a scarfed timber with the face of another timber, or a dowel or pin of hard wood or iron uniting timbers. [Also spelt coag.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A metallic bushing or strengthening piece in the center of a wooden block sheve.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To unite, as timbers, by means of tenons or dowels in the edges or face. Totten.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coal": {
+      "word": "COAL",
+      "definitions": [
+        {
+          "text": "A thoroughly charred, and extinguished or still ignited, fragment from wood or other combustible substance; charcoal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A black, or brownish black, solid, combustible substance, dug from beds or veins in the earth to be used for fuel, and consisting, like charcoal, mainly of carbon, but more compact, and often affording, when heated, a large amount of volatile matter. self-explaining compounds; as, coal-black; coal formation; coal scuttle; coal ship. etc. coal burned in grates, etc.; as, to put coals on the fire. In the United States the singular in a collective sense is the customary usage; as, a hod of coal. Age of coal plants. See Age of Acrogens, under Acrogen. or semi-viscid when heated. On increasing the heat, the volatile products are driven off, and a coherent, grayish black, cellular mass of coke is left. dull luster. See Cannel coal. adapted for crushing, cleansing, and assorting coal. Such regions have often a basinlike structure, and are hence called coal basins. See Basin. bituminous coal, used in lighting streets, houses, etc., and for cooking and heating. it in, and discharging it from, ships. rocks. (b) A subdivision of the carboniferous formation, between the millstone grit below and the Permian formation above, and including nearly all the workable coal beds of the world. found in the strata of the coal formation. [Colloq.] -- Wood coal. See Lignite.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To burn to charcoal; to char. [R.] Charcoal of roots, coaled into great pieces. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark or delineate with charcoal. Camden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To supply with coal; as, to coal a steamer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take in coal; as, the steaer coaled at Southampton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "alcohol",
+        "anthracite",
+        "ash",
+        "ashes",
+        "benzine",
+        "blaze",
+        "blister",
+        "brand",
+        "briquette",
+        "brown coal",
+        "bunker",
+        "burn",
+        "burn in",
+        "burn off",
+        "burnable",
+        "burning ember",
+        "butane",
+        "calx",
+        "carbon",
+        "cast",
+        "cater",
+        "cauterize",
+        "char",
+        "charcoal",
+        "cinder",
+        "clinker",
+        "coke",
+        "combustible",
+        "coom",
+        "crack",
+        "crow",
+        "cupel",
+        "detonate",
+        "dope",
+        "dross",
+        "ebon",
+        "ebony",
+        "ember",
+        "ethane",
+        "ethanol",
+        "explode",
+        "feed",
+        "fill up",
+        "fireball",
+        "firebrand",
+        "firing",
+        "flame",
+        "flammable",
+        "flammable material",
+        "forage",
+        "found",
+        "fuel",
+        "fuel additive",
+        "fuel dope",
+        "fuel up",
+        "fulminate",
+        "fume",
+        "gas",
+        "gas carbon",
+        "gas up",
+        "gasoline",
+        "heptane",
+        "hexane",
+        "inflammable",
+        "inflammable material",
+        "ink",
+        "isooctane",
+        "jet",
+        "jet fuel",
+        "kerosene",
+        "lava",
+        "lignite",
+        "live coal",
+        "methane",
+        "methanol",
+        "natural gas",
+        "night",
+        "octane",
+        "oil",
+        "oxidate",
+        "oxidize",
+        "paraffin",
+        "parch",
+        "peat",
+        "pentane",
+        "pitch",
+        "propane",
+        "propellant",
+        "provender",
+        "provision",
+        "purvey",
+        "pyrolyze",
+        "raven",
+        "reek",
+        "refuel",
+        "rocket fuel",
+        "scorch",
+        "scoria",
+        "sea coal",
+        "sear",
+        "sell",
+        "singe",
+        "slag",
+        "sloe",
+        "smoke",
+        "smudge",
+        "smut",
+        "solder",
+        "soot",
+        "stoke",
+        "sullage",
+        "swinge",
+        "tar",
+        "top off",
+        "torrefy",
+        "turf",
+        "vesicate",
+        "victual",
+        "vulcanize",
+        "weld"
+      ]
+    },
+    "coalblack": {
+      "word": "COAL-BLACK",
+      "definitions": [
+        {
+          "text": "As black as coal; jet black; very black. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalery": {
+      "word": "COALERY",
+      "definitions": [
+        {
+          "text": "See Colliery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalesce": {
+      "word": "COALESCE",
+      "definitions": [
+        {
+          "text": "To grow together; to unite by growth into one body; as, the parts separated by a wound coalesce.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To unite in one body or product; to combine into one body or community; as, vapors coalesce. The Jews were incapable of coalescing with other nations. Campbell. Certain combinations of ideas that, once coalescing, could not be shaken loose. De Quincey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "act in concert",
+        "act together",
+        "add",
+        "adhere",
+        "admix",
+        "affiliate",
+        "alloy",
+        "ally",
+        "amalgamate",
+        "assimilate",
+        "associate",
+        "band",
+        "band together",
+        "be in league",
+        "bemingle",
+        "blend",
+        "bracket",
+        "cleave",
+        "cling",
+        "club together",
+        "coact",
+        "collaborate",
+        "collude",
+        "combine",
+        "come together",
+        "commingle",
+        "commix",
+        "compose",
+        "compound",
+        "comprise",
+        "concert",
+        "concoct",
+        "concord",
+        "concur",
+        "confederate",
+        "conglomerate",
+        "conjoin",
+        "connect",
+        "consolidate",
+        "conspire",
+        "cooperate",
+        "do business with",
+        "embody",
+        "emulsify",
+        "encompass",
+        "federate",
+        "flux",
+        "fuse",
+        "get heads together",
+        "get together",
+        "go partners",
+        "hang together",
+        "harmonize",
+        "hash",
+        "hold together",
+        "homogenize",
+        "hook up",
+        "identify",
+        "immingle",
+        "immix",
+        "include",
+        "incorporate",
+        "integrate",
+        "interblend",
+        "interfuse",
+        "interlace",
+        "interlard",
+        "intermingle",
+        "intermix",
+        "intertwine",
+        "interweave",
+        "join",
+        "join in",
+        "join together",
+        "jumble",
+        "keep together",
+        "knead",
+        "league",
+        "league together",
+        "link",
+        "lump together",
+        "make common cause",
+        "make one",
+        "meld",
+        "melt into one",
+        "merge",
+        "mingle",
+        "mingle-mangle",
+        "mix",
+        "mix up",
+        "partner",
+        "play ball",
+        "pull together",
+        "put heads together",
+        "put together",
+        "reciprocate",
+        "reembody",
+        "relate",
+        "roll into one",
+        "scramble",
+        "shade into",
+        "shuffle",
+        "solidify",
+        "stand together",
+        "stick",
+        "stir up",
+        "syncretize",
+        "syndicate",
+        "synthesize",
+        "team up",
+        "throw in together",
+        "throw together",
+        "tie in",
+        "tie up",
+        "toss together",
+        "unify",
+        "unite",
+        "unite efforts",
+        "wed",
+        "work",
+        "work together"
+      ]
+    },
+    "coalescence": {
+      "word": "COALESCENCE",
+      "definitions": [
+        {
+          "text": "The act or state of growing together, as similar parts; the act of uniting by natural affinity or attraction; the state of being united; union; concretion.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalescent": {
+      "word": "COALESCENT",
+      "definitions": [
+        {
+          "text": "Growing together; cohering, as in the organic cohesion of similar parts; uniting.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalgoose": {
+      "word": "COALGOOSE",
+      "definitions": [
+        {
+          "text": "The cormorant; -- so called from its black color.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalite": {
+      "word": "COALITE",
+      "definitions": [
+        {
+          "text": "To unite or coalesce. [Obs.] Let them continue to coalite. Bolingbroke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to unite or coalesce. [Obs.] Time has by degrees blended . . . and coalited the conquered with the conquerors. Burke.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalition": {
+      "word": "COALITION",
+      "definitions": [
+        {
+          "text": "The act of coalescing; union into a body or mass, as of separate bodies or parts; as, a coalition of atoms. Bentley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A combination, for temporary purposes, of persons, parties, or states, having different interests. A coalition of the puritan and the blackleg. J. Randolph. The coalition between the religious and worldly enemies of popery. Macaulay. conjunction; conspiracy; union.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Anschluss",
+        "Bund",
+        "Rochdale cooperative",
+        "addition",
+        "affiliation",
+        "agglomeration",
+        "aggregation",
+        "agreement",
+        "alignment",
+        "alliance",
+        "amalgamation",
+        "anschluss",
+        "assemblage",
+        "assimilation",
+        "association",
+        "axis",
+        "band",
+        "blend",
+        "blending",
+        "bloc",
+        "body",
+        "cabal",
+        "cahoots",
+        "cartel",
+        "centralization",
+        "coadunation",
+        "coalescence",
+        "colleagueship",
+        "college",
+        "collegialism",
+        "collegiality",
+        "combination",
+        "combine",
+        "combo",
+        "common market",
+        "communist front",
+        "composition",
+        "comradeship",
+        "confederacy",
+        "confederation",
+        "confraternity",
+        "congeries",
+        "conglomeration",
+        "conjugation",
+        "conjunction",
+        "consolidation",
+        "conspiracy",
+        "consumer cooperative",
+        "cooperative",
+        "cooperative society",
+        "copartnership",
+        "copartnery",
+        "corps",
+        "council",
+        "credit union",
+        "customs union",
+        "economic community",
+        "ecumenism",
+        "embodiment",
+        "encompassment",
+        "enosis",
+        "faction",
+        "federalization",
+        "federation",
+        "fellowship",
+        "fraternalism",
+        "fraternity",
+        "fraternization",
+        "free trade area",
+        "freemasonry",
+        "front",
+        "fusion",
+        "gang",
+        "grass-roots movement",
+        "ground swell",
+        "group",
+        "grouping",
+        "hookup",
+        "inclusion",
+        "incorporation",
+        "integration",
+        "junction",
+        "junta",
+        "league",
+        "machine",
+        "marriage",
+        "meld",
+        "melding",
+        "mergence",
+        "merger",
+        "merging",
+        "mob",
+        "movement",
+        "package",
+        "package deal",
+        "partnership",
+        "party",
+        "political front",
+        "political machine",
+        "popular front",
+        "ring",
+        "society",
+        "sodality",
+        "solidification",
+        "sorority",
+        "syncretism",
+        "syndication",
+        "syneresis",
+        "synthesis",
+        "tie-in",
+        "tie-up",
+        "unification",
+        "union",
+        "wedding"
+      ]
+    },
+    "coalitioner": {
+      "word": "COALITIONER",
+      "definitions": [
+        {
+          "text": "A coalitionist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalitionist": {
+      "word": "COALITIONIST",
+      "definitions": [
+        {
+          "text": "One who joins or promotes a coalition; one who advocates coalition.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coally": {
+      "word": "CO-ALLY",
+      "definitions": [
+        {
+          "text": "A joint ally. Kent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalmeter": {
+      "word": "COAL-METER",
+      "definitions": [
+        {
+          "text": "A licensed or official coal measurer in London. See Meter. Simmonds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalmouse": {
+      "word": "COALMOUSE",
+      "definitions": [
+        {
+          "text": "A small species of titmouse, with a black head; the coletit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalpit": {
+      "word": "COALPIT",
+      "definitions": [
+        {
+          "text": "A pit where coal is dug.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A place where charcoal is made. [U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalsack": {
+      "word": "COALSACK",
+      "definitions": [
+        {
+          "text": "Any one of the spaces in the Milky Way which are very black, owing to the nearly complete absence of stars; esp., the large space near the Southern Cross sometimes called the Black Magellanic Cloud.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coaltar": {
+      "word": "COAL TAR",
+      "definitions": [
+        {
+          "text": "A thick, black, tarry liquid, obtained by the distillation of bituminous coal in the manufacture of illuminating gas; used for making printer's ink, black varnish, etc. It is a complex mixture from which many substances have been obtained, especially hydrocarbons of the benzene or aromatic series. naphtalene, anthracene, etc., which are respectively typical of many dye stuffs, as the aniline dyes, the phthaleïns, indigo, alizarin, and many flavoring extracts whose artificial production is a matter of great commercial importance.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalwhipper": {
+      "word": "COAL-WHIPPER",
+      "definitions": [
+        {
+          "text": "One who raises coal out of the hold of a ship. [Eng.] Dickens.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coalworks": {
+      "word": "COAL WORKS",
+      "definitions": [
+        {
+          "text": "A place where coal is dug, including the machinery for raising the coal.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "coaly": {
+      "word": "COALY",
+      "definitions": [
+        {
+          "text": "Pertaining to, or resembling, coal; containing coal; of the nature of coal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coamings": {
+      "word": "COAMINGS",
+      "definitions": [
+        {
+          "text": "Raised pieces of wood of iron around a hatchway, skylight, or other opening in the deck, to prevent water from running bellow; esp. the fore-and-aft pieces of a hatchway frame as distinguished from the transverse head ledges. [Written also combings.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coannex": {
+      "word": "COANNEX",
+      "definitions": [
+        {
+          "text": "To annex with something else.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coaptation": {
+      "word": "COAPTATION",
+      "definitions": [
+        {
+          "text": "The adaptation or adjustment of parts to each other, as of a broken bone or dislocated joint.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coarctate": {
+      "word": "COARCTATE",
+      "definitions": [
+        {
+          "text": "Pressed together; closely connected; -- applied to insects having the abdomen separated from the thorax only by a constriction. Coarctate pupa (Zoöl.), a pupa closely covered by the old larval skin, as in most Diptera.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coarctation": {
+      "word": "COARCTATION",
+      "definitions": [
+        {
+          "text": "Confinement to a narrow space. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pressure; that which presses. [Obs.] Ray.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stricture or narrowing, as of a canal, cavity, or orifice.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coarctcoarctate": {
+      "word": "COARCT; COARCTATE",
+      "definitions": [
+        {
+          "text": "To press together; to crowd; to straiten; to confine closely.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To restrain; to confine. [Obs.] Ayliffe.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coarse": {
+      "word": "COARSE",
+      "definitions": [
+        {
+          "text": "Large in bulk, or composed of large parts or particles; of inferior quality or appearance; not fine in material or close in texture; gross; thick; rough; -- opposed to fine; as, coarse sand; coarse thread; coarse cloth; coarse bread.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not refined; rough; rude; unpolished; gross; indelicate; as, coarse manners; coarse language. I feel Of what coarse metal ye are molded. Shak. To copy, in my coarse English, his beautiful expressions. Dryden. inelegant; indelicate; vulgar.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Adamic",
+        "Circean",
+        "Doric",
+        "Mickey Mouse",
+        "acerb",
+        "acerbic",
+        "acrid",
+        "amaroidal",
+        "animal",
+        "animalistic",
+        "arrested",
+        "astringent",
+        "backward",
+        "barbaric",
+        "barbarous",
+        "base",
+        "bawdy",
+        "beastlike",
+        "beastly",
+        "bestial",
+        "bitter",
+        "bitter as gall",
+        "blustering",
+        "blustery",
+        "bodily",
+        "boorish",
+        "brassy",
+        "brazen",
+        "bristly",
+        "broad",
+        "broad-bodied",
+        "broken",
+        "brutal",
+        "brute",
+        "brutish",
+        "bulky",
+        "bullnecked",
+        "bumpy",
+        "cacophonous",
+        "caddish",
+        "caked",
+        "cakey",
+        "carnal",
+        "carnal-minded",
+        "caustic",
+        "cheap",
+        "cheesy",
+        "choked",
+        "choppy",
+        "clumsy",
+        "coarse-grained",
+        "common",
+        "corpulent",
+        "corrugated",
+        "cracked",
+        "crass",
+        "croaking",
+        "croaky",
+        "cross-grained",
+        "crude",
+        "dense",
+        "dirty",
+        "doggerel",
+        "dry",
+        "dysphemistic",
+        "earthy",
+        "embryonic",
+        "fallen",
+        "fat",
+        "filthy",
+        "fleshly",
+        "foul",
+        "foul-mouthed",
+        "fourth-class",
+        "frank",
+        "full",
+        "full-bodied",
+        "furious",
+        "gaudy",
+        "graceless",
+        "grained",
+        "grainy",
+        "granular",
+        "granulated",
+        "gritty",
+        "gross",
+        "gruff",
+        "gutter",
+        "guttural",
+        "hard",
+        "harsh",
+        "harsh-sounding",
+        "heavy",
+        "heavyset",
+        "hoarse",
+        "homespun",
+        "horripilant",
+        "husky",
+        "ill-bred",
+        "ill-mannered",
+        "impolite",
+        "improper",
+        "impure",
+        "in bad taste",
+        "in embryo",
+        "in ovo",
+        "in the rough",
+        "inconcinnate",
+        "inconcinnous",
+        "inconsiderate",
+        "incorrect",
+        "indecent",
+        "indecorous",
+        "indelicate",
+        "inelegant",
+        "inequal",
+        "inexpert",
+        "infelicitous",
+        "inferior",
+        "insensitive",
+        "irregular",
+        "jolty",
+        "kitschy",
+        "lapsed",
+        "lascivious",
+        "lewd",
+        "linsey-woolsey",
+        "loud",
+        "loutish",
+        "louty",
+        "low",
+        "low-class",
+        "low-grade",
+        "low-quality",
+        "low-test",
+        "lumpy",
+        "massive",
+        "material",
+        "materialistic",
+        "mean",
+        "meretricious",
+        "metallic",
+        "nasty",
+        "nonspiritual",
+        "obscene",
+        "offensive",
+        "orgiastic",
+        "outlandish",
+        "oversimple",
+        "paltry",
+        "physical",
+        "pimply",
+        "pitted",
+        "pocky",
+        "poor",
+        "postlapsarian",
+        "potholed",
+        "prentice",
+        "prickly",
+        "pungent",
+        "punk",
+        "raffish",
+        "ragged",
+        "raging",
+        "rank",
+        "raucid",
+        "raucous",
+        "raunchy",
+        "raw",
+        "reductionistic",
+        "reductive",
+        "ribald",
+        "ripply",
+        "rough",
+        "rough-cast",
+        "rough-grained",
+        "rough-hewn",
+        "roughcast",
+        "roughhewn",
+        "roughneck",
+        "roupy",
+        "rowdy",
+        "rude",
+        "rudimental",
+        "rudimentary",
+        "ruffled",
+        "rutted",
+        "rutty",
+        "scatological",
+        "scratchy",
+        "second-best",
+        "second-class",
+        "second-rate",
+        "seedy",
+        "shabby",
+        "shagged",
+        "shaggy",
+        "sharp",
+        "shoddy",
+        "simplistic",
+        "smutty",
+        "sour",
+        "squawking",
+        "squawky",
+        "stertorous",
+        "stormy",
+        "strangled",
+        "stunted",
+        "swinish",
+        "tacky",
+        "tactless",
+        "tart",
+        "tasteless",
+        "tawdry",
+        "tempestuous",
+        "textured",
+        "thick",
+        "thick-bodied",
+        "thickset",
+        "third-class",
+        "third-rate",
+        "three-dimensional",
+        "throaty",
+        "tinny",
+        "trashy",
+        "turbulent",
+        "unblown",
+        "uncivil",
+        "uncourtly",
+        "uncouth",
+        "uncultivated",
+        "uncultured",
+        "uncut",
+        "underdeveloped",
+        "undeveloped",
+        "undignified",
+        "uneuphonious",
+        "uneven",
+        "unfashioned",
+        "unfelicitous",
+        "unfeminine",
+        "unfinished",
+        "unformed",
+        "ungenteel",
+        "ungentle",
+        "ungentlemanly",
+        "ungraceful",
+        "unhewn",
+        "unkempt",
+        "unlabored",
+        "unladylike",
+        "unlevel",
+        "unlicked",
+        "unpolished",
+        "unprocessed",
+        "unrefined",
+        "unseemly",
+        "unsmooth",
+        "unsolicitous",
+        "unspiritual",
+        "untreated",
+        "ununiform",
+        "unworked",
+        "unwrought",
+        "viscous",
+        "vulgar",
+        "vulgarian",
+        "wimpled"
+      ]
+    },
+    "coarsegrained": {
+      "word": "COARSE-GRAINED",
+      "definitions": [
+        {
+          "text": "Having a coarse grain or texture, as wood; hence, wanting in refinement.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coarsely": {
+      "word": "COARSELY",
+      "definitions": [
+        {
+          "text": "In a coarse manner; roughly; rudely; inelegantly; uncivilly; meanly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coarsen": {
+      "word": "COARSEN",
+      "definitions": [
+        {
+          "text": "To make coarse or vulgar; as, to coarsen one's character. [R.] Graham.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adulterate",
+        "alloy",
+        "boss",
+        "brutify",
+        "canker",
+        "carnalize",
+        "cheapen",
+        "confound",
+        "contaminate",
+        "corrupt",
+        "debase",
+        "debauch",
+        "defile",
+        "deflower",
+        "degenerate",
+        "degrade",
+        "denature",
+        "deprave",
+        "desecrate",
+        "despoil",
+        "devalue",
+        "distort",
+        "gnarl",
+        "grain",
+        "granulate",
+        "horripilate",
+        "infect",
+        "knob",
+        "misuse",
+        "pervert",
+        "pimple",
+        "poison",
+        "pollute",
+        "popularize",
+        "prostitute",
+        "ravage",
+        "ravish",
+        "rough",
+        "rough up",
+        "roughen",
+        "smooth",
+        "stud",
+        "taint",
+        "tooth",
+        "twist",
+        "ulcerate",
+        "violate",
+        "vitiate",
+        "vulgarize",
+        "warp"
+      ]
+    },
+    "coarseness": {
+      "word": "COARSENESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being coarse; roughness; melegance; vulgarity; grossness; as, coarseness of food, texture, manners, or language. \"The coarseness of the sackcloth.\" Dr. H. More. Pardon the coarseness of the illustration. L'Estrange. A coarseness and vulgarity in all the proceedings. Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Adam",
+        "Gothicism",
+        "animalism",
+        "animality",
+        "bad manners",
+        "bad taste",
+        "barbarism",
+        "barbarousness",
+        "baseness",
+        "beastliness",
+        "bestiality",
+        "bodily size",
+        "body",
+        "bombasticness",
+        "brutality",
+        "brutishness",
+        "bulk",
+        "cacology",
+        "cacophony",
+        "caddishness",
+        "callowness",
+        "carnal nature",
+        "carnal-mindedness",
+        "carnality",
+        "clumsiness",
+        "coarse-grainedness",
+        "commonness",
+        "corpulence",
+        "cracked voice",
+        "crassness",
+        "crudeness",
+        "crudity",
+        "cumbrousness",
+        "depth",
+        "discord",
+        "discourteousness",
+        "discourtesy",
+        "distance through",
+        "dryness",
+        "dysphemism",
+        "earthiness",
+        "fallen nature",
+        "fallen state",
+        "fatness",
+        "flesh",
+        "fleshliness",
+        "fourth-rateness",
+        "frankness",
+        "gaudiness",
+        "gracelessness",
+        "graininess",
+        "granularity",
+        "granulation",
+        "greenness",
+        "grittiness",
+        "gross behavior",
+        "grossness",
+        "gruffness",
+        "gutturalism",
+        "gutturality",
+        "gutturalness",
+        "hardness",
+        "harshness",
+        "heaviness",
+        "hoarseness",
+        "humbleness",
+        "huskiness",
+        "ill breeding",
+        "ill manners",
+        "ill-balanced sentences",
+        "immatureness",
+        "immaturity",
+        "impoliteness",
+        "impropriety",
+        "impurity",
+        "incivility",
+        "inconcinnity",
+        "inconsiderateness",
+        "incorrectness",
+        "indecorousness",
+        "inelegance",
+        "inelegancy",
+        "infelicity",
+        "inferiority",
+        "inferiorness",
+        "insensitivity",
+        "inurbanity",
+        "lack of finish",
+        "lack of polish",
+        "lapsed state",
+        "leadenness",
+        "loudness",
+        "loutishness",
+        "lowliness",
+        "mannerlessness",
+        "mass",
+        "materialism",
+        "meanness",
+        "meretriciousness",
+        "nondevelopment",
+        "nonspirituality",
+        "obscenity",
+        "offensiveness",
+        "oversimplicity",
+        "oversimplification",
+        "pompousness",
+        "ponderousness",
+        "poor diction",
+        "poorness",
+        "postlapsarian state",
+        "raciness",
+        "rankness",
+        "raspiness",
+        "raucity",
+        "rawness",
+        "reductionism",
+        "ribaldry",
+        "roughness",
+        "rudeness",
+        "saltiness",
+        "scrapiness",
+        "scratchiness",
+        "second-rateness",
+        "sesquipedalianism",
+        "sesquipedality",
+        "simplism",
+        "slipshod construction",
+        "spiciness",
+        "stertorousness",
+        "stiltedness",
+        "swinishness",
+        "tactlessness",
+        "tastelessness",
+        "the Old Adam",
+        "the beast",
+        "the flesh",
+        "the offending Adam",
+        "the rough",
+        "the third dimension",
+        "thickness",
+        "third-rateness",
+        "throatiness",
+        "turgidity",
+        "ugliness",
+        "uncourtliness",
+        "uncouthness",
+        "uncultivation",
+        "undevelopment",
+        "uneuphoniousness",
+        "unfinish",
+        "unfinishedness",
+        "unfledgedness",
+        "ungallantness",
+        "ungentlemanliness",
+        "ungracefulness",
+        "ungraciousness",
+        "unmannerliness",
+        "unpoliteness",
+        "unrefinement",
+        "unripeness",
+        "unseemliness",
+        "unsolicitousness",
+        "unspirituality",
+        "unwieldiness",
+        "vulgarism",
+        "vulgarity"
+      ]
+    },
+    "coarticulation": {
+      "word": "COARTICULATION",
+      "definitions": [
+        {
+          "text": "The unoin or articulation of bones to form a joint.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coassessor": {
+      "word": "CO-ASSESSOR",
+      "definitions": [
+        {
+          "text": "A joint assessor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coast": {
+      "word": "COAST",
+      "definitions": [
+        {
+          "text": "The side of a thing. [Obs.] Sir I. Newton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The exterior line, limit, or border of a country; frontier border. From the river, the river Euphrates, even to the uttermost sea, shall your coast be. Deut. xi. 24.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The seashore, or land near it. He sees in English ships the Holland coast. Dryden. We the Arabian coast do know At distance, when the species blow. Waller. The coast is clear, the danger is over; no enemy in sight. Dryden. Fig.: There are no obstacles. \"Seeing that the coast was clear, Zelmane dismissed Musidorus.\" Sir P. Sidney. Coast guard. (a) A body of men originally employed along the coast to prevent smuggling; now, under the control of the admiralty, drilled as a naval reserve. [Eng.] (b) The force employed in lifesaving stations along the seacoast. [U. S.] -- Coast rat (Zoöl.), a South African mammal (Bathyergus suillus), about the size of a rabbit, remarkable for its extensive burrows; -- called also sand mole. or shipping of goods for the coast trade. [Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To draw or keep near; to approach. [Obs.] Anon she hears them chant it lustily, And all in haste she coasteth to the cry. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sail by or near the shore. The ancients coasted only in their navigation. Arbuthnot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sail from port to port in the same country.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Etym: [Cf. OF. coste, F. côte, hill, hillside.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To slide down hill; to slide on a sled, upon snow or ice. [Local, U. S.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To draw near to; to approach; to keep near, or by the side of.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sail by or near; to follow the coast line of. Nearchus, . . . not knowing the compass, was fain to coast that shore. Sir T. Browne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To conduct along a coast or river bank. [Obs.] The Indians . . . coasted me along the river. Hakluyt.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abide",
+        "avalanche",
+        "bank",
+        "be a sideliner",
+        "be effortless",
+        "be painless",
+        "be still",
+        "beach",
+        "beam",
+        "berm",
+        "board",
+        "boat",
+        "border",
+        "bordure",
+        "brim",
+        "brink",
+        "broadside",
+        "brow",
+        "canoe",
+        "carry sail",
+        "cheek",
+        "chop",
+        "circumnavigate",
+        "coastland",
+        "coastline",
+        "cross",
+        "cruise",
+        "delay",
+        "do nothing",
+        "drift",
+        "edge",
+        "embankment",
+        "featheredge",
+        "flange",
+        "flank",
+        "flit",
+        "flow",
+        "fly",
+        "foreshore",
+        "frame",
+        "freeze",
+        "fringe",
+        "give no trouble",
+        "glide",
+        "glissade",
+        "glissando",
+        "go by ship",
+        "go easily",
+        "go like clockwork",
+        "go on shipboard",
+        "go to sea",
+        "hand",
+        "handedness",
+        "hang fire",
+        "haunch",
+        "hem",
+        "hibernate",
+        "hip",
+        "hug the shore",
+        "ice-skate",
+        "idle",
+        "ironbound coast",
+        "jowl",
+        "keep quiet",
+        "labellum",
+        "labium",
+        "labrum",
+        "landslide",
+        "landslip",
+        "laterality",
+        "ledge",
+        "lido",
+        "lie dormant",
+        "lie still",
+        "limb",
+        "limbus",
+        "lip",
+        "list",
+        "littoral",
+        "make a passage",
+        "many-sidedness",
+        "marge",
+        "margin",
+        "mark time",
+        "motorboat",
+        "multilaterality",
+        "navigate",
+        "not breathe",
+        "not budge",
+        "not stir",
+        "plage",
+        "planking",
+        "playa",
+        "ply",
+        "present no difficulties",
+        "profile",
+        "quarter",
+        "ragged edge",
+        "range the coast",
+        "remain",
+        "remain motionless",
+        "repose",
+        "rest",
+        "rim",
+        "riverside",
+        "riviera",
+        "rockbound coast",
+        "roll",
+        "roller-skate",
+        "row",
+        "run",
+        "run smoothly",
+        "sail",
+        "sail coast-wise",
+        "sail round",
+        "sail the sea",
+        "sands",
+        "scull",
+        "sea margin",
+        "seabank",
+        "seabeach",
+        "seaboard",
+        "seacliff",
+        "seacoast",
+        "seafare",
+        "seashore",
+        "seaside",
+        "selvage",
+        "shingle",
+        "shore",
+        "shoreline",
+        "side",
+        "sideline",
+        "sideslip",
+        "siding",
+        "sit back",
+        "sit it out",
+        "skate",
+        "skateboard",
+        "ski",
+        "skid",
+        "skim",
+        "skirt",
+        "skirt the shore",
+        "sled",
+        "sleigh",
+        "slidder",
+        "slide",
+        "slide down",
+        "slip",
+        "slippage",
+        "slither",
+        "snowslide",
+        "snowslip",
+        "stagnate",
+        "stand",
+        "stand fast",
+        "stand firm",
+        "stand still",
+        "stay",
+        "stay in soundings",
+        "stay put",
+        "steam",
+        "steamboat",
+        "stick",
+        "stick fast",
+        "strand",
+        "submerged coast",
+        "subsidence",
+        "sweep",
+        "take a voyage",
+        "take it easy",
+        "tarry",
+        "temple",
+        "tidewater",
+        "toboggan",
+        "traverse",
+        "tread water",
+        "unilaterality",
+        "vegetate",
+        "verge",
+        "voyage",
+        "wait and see",
+        "watch and wait",
+        "waterfront",
+        "waterside",
+        "work well",
+        "yacht"
+      ]
+    },
+    "coastal": {
+      "word": "COASTAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a cast.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bordering",
+        "borderline",
+        "boundary",
+        "bounding",
+        "determinant",
+        "determinative",
+        "determining",
+        "extreme",
+        "fringing",
+        "frontier",
+        "limbic",
+        "liminal",
+        "limit",
+        "limiting",
+        "littoral",
+        "marginal",
+        "rimming",
+        "riparial",
+        "riparian",
+        "riparious",
+        "riverside",
+        "seaside",
+        "shore",
+        "shoreside",
+        "shoreward",
+        "skirting",
+        "terminal",
+        "threshold"
+      ]
+    },
+    "coastandgeodeticsurvey": {
+      "word": "COAST AND GEODETIC SURVEY",
+      "definitions": [
+        {
+          "text": "A bureau of the United States government charged with the topographic and hydrographic survey of the coast and the execution of belts of primary triangulation and lines of precise leveling in the interior. It now belongs to the Department of Commerce and Labor.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "coaster": {
+      "word": "COASTER",
+      "definitions": [
+        {
+          "text": "A vessel employed in sailing along a coast, or engaged in the coasting trade.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who sails near the shore.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coasting": {
+      "word": "COASTING",
+      "definitions": [
+        {
+          "text": "Sailing along or near a coast, or running between ports along a coast. Coasting trade, trade carried on by water between neighboring ports of the same country, as distinguished fron foreign trade or trade involving long voyages.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A sailing along a coast, or from port to port; a carrying on a coasting trade.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sliding down hill; sliding on a sled upon snow or ice. [Local, U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coastwisecoastways": {
+      "word": "COASTWISE; COASTWAYS",
+      "definitions": [
+        {
+          "text": "By way of, or along, the coast.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coat": {
+      "word": "COAT",
+      "definitions": [
+        {
+          "text": "An outer garment fitting the upper part of the body; especially, such a garment worn by men. Let each His adamantine coat gird well. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A petticoat. [Obs.] \"A child in coats.\" Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The habit or vesture of an order of men, indicating the order or office; cloth. Men of his coat should be minding their prayers. Swift. She was sought by spirits of richest coat. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An external covering like a garment, as fur, skin, wool, husk, or bark; as, the horses coats were sleek. Fruit of all kinds, in coat Rough or smooth rined, or bearded husk, or shell. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A layer of any substance covering another; a cover; a tegument; as, the coats of the eye; the coats of an onion; a coat of tar or varnish.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Coat of arms. See below. Hark, countrymen! either renew the fight, Or tear the lions out of England's coat. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A coat card. See below. [Obs.] Here's a trick of discarded cards of us! We were ranked with coats as long as old master lived. Massinger. Coat armor. See under Armor. garment of light material worn over the armor in the 15th and 16th centuries. This was often charged with the heraldic bearings of the wearer. Hence, an heraldic achievement; the bearings of any person, taken together. knave of playing cards. \"`I am a coat card indeed.' `Then thou must needs be a knave, for thou art neither king nor queen.'\" Rowley. together the lappels of a double-breasted coat; or a button with a loop for a single-breasted coat. under Chain. it passes through the deck, to prevent water from getting below. the like, to keep them dry and clean.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cover with a coat or outer garment.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cover with a layer of any substance; as, to coat a jar with tin foil; to coat a ceiling.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Eton jacket",
+        "Leatherette",
+        "Leatheroid",
+        "Mao jacket",
+        "anorak",
+        "apply paint",
+        "bedaub",
+        "bedizen",
+        "begild",
+        "besmear",
+        "blanket",
+        "blazer",
+        "blouse",
+        "body coat",
+        "bolero",
+        "bomber jacket",
+        "bonnet",
+        "boot",
+        "breech",
+        "bristle",
+        "brush on paint",
+        "butter",
+        "calcimine",
+        "cap",
+        "capillament",
+        "capuchin",
+        "car coat",
+        "chaqueta",
+        "chesterfield",
+        "chromogen",
+        "cilium",
+        "claw hammer",
+        "claw-hammer coat",
+        "cloak",
+        "coat of paint",
+        "coating",
+        "coif",
+        "collop",
+        "color",
+        "color filter",
+        "color gelatin",
+        "colorant",
+        "coloring",
+        "complexion",
+        "cover",
+        "coverage",
+        "covering",
+        "covert",
+        "coverture",
+        "cowl",
+        "cowling",
+        "curtain",
+        "cut",
+        "cutaway coat",
+        "cuticle",
+        "dab",
+        "daub",
+        "dead-color",
+        "deal",
+        "deep-dye",
+        "dermis",
+        "dinner jacket",
+        "dip",
+        "disk",
+        "distemper",
+        "double-dye",
+        "doublet",
+        "drape",
+        "drapery",
+        "dress coat",
+        "drier",
+        "duffel",
+        "dye",
+        "dyestuff",
+        "emblazon",
+        "enamel",
+        "engild",
+        "exterior paint",
+        "face",
+        "facing",
+        "fast-dye",
+        "fell",
+        "feuille",
+        "film",
+        "fingertip coat",
+        "fitted coat",
+        "flap",
+        "flat coat",
+        "flat wash",
+        "fleece",
+        "flesh",
+        "floor enamel",
+        "foil",
+        "fold",
+        "fresco",
+        "frock",
+        "frock coat",
+        "fur",
+        "furring",
+        "gild",
+        "glaze",
+        "gloss",
+        "gown",
+        "grain",
+        "greatcoat",
+        "ground",
+        "guise",
+        "hair",
+        "hanging",
+        "hat",
+        "hide",
+        "hood",
+        "horsehair",
+        "housing",
+        "hue",
+        "illuminate",
+        "imbue",
+        "imitation fur",
+        "imitation leather",
+        "ingrain",
+        "integument",
+        "interior paint",
+        "jacket",
+        "japan",
+        "jerkin",
+        "jumper",
+        "jupe",
+        "lacquer",
+        "lamella",
+        "lamina",
+        "laminated glass",
+        "laminated wood",
+        "lap",
+        "lay on",
+        "lay on color",
+        "layer",
+        "leaf",
+        "leather",
+        "leather paper",
+        "loden coat",
+        "mackinaw",
+        "mane",
+        "mantle",
+        "mask",
+        "medium",
+        "membrane",
+        "mess jacket",
+        "midicoat",
+        "monkey jacket",
+        "opaque color",
+        "outer layer",
+        "outer skin",
+        "overcoat",
+        "overlay",
+        "paint",
+        "pall",
+        "pane",
+        "panel",
+        "parget",
+        "parka",
+        "patina",
+        "pea jacket",
+        "peel",
+        "pellicle",
+        "pelt",
+        "peltry",
+        "pigment",
+        "pile",
+        "plait",
+        "plank",
+        "plate",
+        "plating",
+        "ply",
+        "plywood",
+        "prime",
+        "prime coat",
+        "primer",
+        "priming",
+        "pubescence",
+        "pubic hair",
+        "rasher",
+        "rawhide",
+        "reefer",
+        "revetment",
+        "rind",
+        "sack",
+        "safety glass",
+        "san benito",
+        "scale",
+        "screen",
+        "scum",
+        "setula",
+        "shade",
+        "shadow",
+        "shag",
+        "sheath",
+        "sheet",
+        "shellac",
+        "shelter",
+        "shield",
+        "shirt",
+        "shoe",
+        "shroud",
+        "ski jacket",
+        "skin",
+        "skins",
+        "slab",
+        "slap on",
+        "slat",
+        "slather",
+        "sleeve waistcoat",
+        "slice",
+        "slop on paint",
+        "smear",
+        "smear on",
+        "smoking jacket",
+        "sock",
+        "spiketail coat",
+        "spread",
+        "spread on",
+        "spread with",
+        "stain",
+        "stipple",
+        "stocking",
+        "swallowtail",
+        "tabard",
+        "table",
+        "tablet",
+        "tail coat",
+        "tails",
+        "tar",
+        "tegument",
+        "tempera",
+        "thinner",
+        "tinct",
+        "tinction",
+        "tincture",
+        "tinge",
+        "tint",
+        "tone",
+        "topcoat",
+        "transparent color",
+        "turpentine",
+        "turps",
+        "undercoat",
+        "undercoating",
+        "vair",
+        "varnish",
+        "vehicle",
+        "veil",
+        "veneer",
+        "vestment",
+        "wafer",
+        "wash",
+        "wash coat",
+        "watch coat",
+        "whitewash",
+        "windbreaker",
+        "wool",
+        "woolly"
+      ]
+    },
+    "coatee": {
+      "word": "COATEE",
+      "definitions": [
+        {
+          "text": "A coat with short flaps.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coati": {
+      "word": "COATI",
+      "definitions": [
+        {
+          "text": "A mammal of tropical America of the genus Nasua, allied to the raccoon, but with a longer body, tail, and nose. Mexico and Central America. The brown coati (N. narica) is found in Surinam and Brazil.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coating": {
+      "word": "COATING",
+      "definitions": [
+        {
+          "text": "A coat or covering; a layer of any substance, as a cover or protection; as, the coating of a retort or vial.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Cloth for coats; as, an assortment of coatings.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "blanketing",
+        "blocking",
+        "blotting out",
+        "calcimining",
+        "cementwork",
+        "chromogen",
+        "cloaking",
+        "clouding",
+        "coat",
+        "coat of paint",
+        "collop",
+        "color",
+        "color filter",
+        "color gelatin",
+        "colorant",
+        "coloring",
+        "coverage",
+        "covering",
+        "curtaining",
+        "cut",
+        "dead-color",
+        "deal",
+        "disk",
+        "distemper",
+        "drier",
+        "dye",
+        "dyestuff",
+        "eclipse",
+        "eclipsing",
+        "enamel",
+        "enameling",
+        "enveloping",
+        "envelopment",
+        "enwrapment",
+        "enwrapping",
+        "exterior paint",
+        "facing",
+        "feuille",
+        "film",
+        "flap",
+        "flat coat",
+        "flat wash",
+        "floor enamel",
+        "foil",
+        "fold",
+        "fresco",
+        "fur",
+        "gilding",
+        "glazing",
+        "glossing",
+        "ground",
+        "hiding",
+        "incrustation",
+        "interior paint",
+        "japanning",
+        "lacquer",
+        "lamella",
+        "lamina",
+        "laminated glass",
+        "laminated wood",
+        "lap",
+        "laying on",
+        "leaf",
+        "mantling",
+        "masking",
+        "medium",
+        "membrane",
+        "obduction",
+        "obscuring",
+        "occultation",
+        "opaque color",
+        "overlaying",
+        "overspreading",
+        "paint",
+        "painting",
+        "pane",
+        "panel",
+        "pargeting",
+        "patina",
+        "peel",
+        "pellicle",
+        "pigment",
+        "plait",
+        "plank",
+        "plasterwork",
+        "plate",
+        "plating",
+        "ply",
+        "plywood",
+        "prime coat",
+        "primer",
+        "priming",
+        "rasher",
+        "revetment",
+        "safety glass",
+        "scale",
+        "screening",
+        "scum",
+        "sheathing",
+        "sheet",
+        "shellacking",
+        "shielding",
+        "shrouding",
+        "skin",
+        "slab",
+        "slat",
+        "slice",
+        "stain",
+        "staining",
+        "stippling",
+        "stuccowork",
+        "superimposition",
+        "superposition",
+        "table",
+        "tablet",
+        "tempera",
+        "thinner",
+        "tinction",
+        "tincture",
+        "transparent color",
+        "turpentine",
+        "turps",
+        "undercoat",
+        "undercoating",
+        "upholstering",
+        "upholstery",
+        "varnish",
+        "varnishing",
+        "vehicle",
+        "veiling",
+        "veneer",
+        "wafer",
+        "wash",
+        "wash coat",
+        "whitewashing",
+        "wrapping"
+      ]
+    },
+    "coatless": {
+      "word": "COATLESS",
+      "definitions": [
+        {
+          "text": "Not wearing a coat; also, not possessing a coat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coax": {
+      "word": "COAX",
+      "definitions": [
+        {
+          "text": "To persuade by gentle, insinuating courtesy, flattering, or fondling; to wheedle; to soothe.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A simpleton; a dupe. [Obs.] Beau & Fl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "advocate",
+        "allure",
+        "apply pressure",
+        "bait",
+        "bait the hook",
+        "banter",
+        "barter",
+        "beguile",
+        "beset",
+        "besiege",
+        "blandish",
+        "blarney",
+        "bug",
+        "butter up",
+        "buttonhole",
+        "cajole",
+        "call on",
+        "call upon",
+        "charm",
+        "con",
+        "decoy",
+        "draw",
+        "draw in",
+        "draw on",
+        "dun",
+        "ensnare",
+        "entice",
+        "exert pressure",
+        "exhort",
+        "flirt",
+        "flirt with",
+        "get",
+        "give the come-on",
+        "high-pressure",
+        "importune",
+        "induce",
+        "insist",
+        "insist upon",
+        "inveigle",
+        "jawbone",
+        "jolly",
+        "lead on",
+        "lobby",
+        "lure",
+        "manipulate",
+        "nag",
+        "nag at",
+        "offer bait to",
+        "persuade",
+        "pester",
+        "plague",
+        "plead with",
+        "ply",
+        "press",
+        "pressure",
+        "prevail",
+        "push",
+        "recommend",
+        "rope in",
+        "seduce",
+        "soft-soap",
+        "suck in",
+        "sweet-talk",
+        "tease",
+        "tempt",
+        "urge",
+        "wheedle",
+        "woo",
+        "work on"
+      ]
+    },
+    "coaxation": {
+      "word": "COAXATION",
+      "definitions": [
+        {
+          "text": "The act of croaking. [R] Dr. H. More.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coaxer": {
+      "word": "COAXER",
+      "definitions": [
+        {
+          "text": "One who coaxes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coaxingly": {
+      "word": "COAXINGLY",
+      "definitions": [
+        {
+          "text": "In a coaxing manner; by coaxing.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

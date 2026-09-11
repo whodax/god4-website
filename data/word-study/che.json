@@ -1,0 +1,6233 @@
+{
+  "version": "v1",
+  "entries": {
+    "cheap": {
+      "word": "CHEAP",
+      "definitions": [
+        {
+          "text": "Having a low price in market; of small cost or price, as compared with the usual price or the real value. Where there are a great sellers to a few buyers, there the thing to be sold will be cheap. Locke.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of comparatively small value; common; mean. You grow cheap in every subject's eye. Dryden. Dog cheap, very cheap, -- a phrase formed probably by the catachrestical transposition of good cheap. [Colloq.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Cheaply. Milton.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "To buy; to bargain. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Mickey Mouse",
+        "NG",
+        "at cost",
+        "avaricious",
+        "bad",
+        "base",
+        "beggarly",
+        "beneath contempt",
+        "beneath one",
+        "brummagem",
+        "budget",
+        "cheapjack",
+        "cheaply",
+        "cheesy",
+        "chintzy",
+        "close",
+        "closefisted",
+        "coarse",
+        "common",
+        "contemptible",
+        "crummy",
+        "debasing",
+        "degrading",
+        "demeaning",
+        "deplorable",
+        "despicable",
+        "disgraceful",
+        "easily",
+        "easy",
+        "economic",
+        "economical",
+        "economy",
+        "fake",
+        "flashy",
+        "for a song",
+        "fourth-class",
+        "frugal",
+        "garish",
+        "gaudy",
+        "gimcracky",
+        "good-for-naught",
+        "good-for-nothing",
+        "gutter",
+        "hardfisted",
+        "humiliating",
+        "humiliative",
+        "illiberal",
+        "inexpensive",
+        "inexpensively",
+        "inferior",
+        "infra dig",
+        "infra indignitatem",
+        "irregular",
+        "junk",
+        "junky",
+        "lousy",
+        "low",
+        "low-class",
+        "low-grade",
+        "low-priced",
+        "low-quality",
+        "low-test",
+        "manageable",
+        "mean",
+        "measly",
+        "meretricious",
+        "miserable",
+        "miserly",
+        "moderate",
+        "modest",
+        "near",
+        "niggardly",
+        "no-account",
+        "no-good",
+        "nominal",
+        "not worth having",
+        "not worth mentioning",
+        "not worthwhile",
+        "nugacious",
+        "nugatory",
+        "on the cheap",
+        "opprobrious",
+        "ornery",
+        "outrageous",
+        "paltry",
+        "pathetic",
+        "penny-pinching",
+        "penurious",
+        "petty",
+        "phony",
+        "pinchfisted",
+        "pinching",
+        "pitiable",
+        "pitiful",
+        "poor",
+        "popular",
+        "punk",
+        "reasonable",
+        "reasonably",
+        "reduced",
+        "rotten",
+        "rubbishy",
+        "sad",
+        "save-all",
+        "scandalous",
+        "scrubby",
+        "scruffy",
+        "scummy",
+        "scurvy",
+        "scuzzy",
+        "second-best",
+        "second-class",
+        "second-rate",
+        "seedy",
+        "sensible",
+        "shabby",
+        "sham",
+        "shameful",
+        "shocking",
+        "shoddy",
+        "sleazy",
+        "sorry",
+        "stingy",
+        "tacky",
+        "tatty",
+        "tawdry",
+        "terrible",
+        "third-class",
+        "third-rate",
+        "tight",
+        "tight-fisted",
+        "tightfisted",
+        "tinny",
+        "token",
+        "too bad",
+        "trashy",
+        "trifling",
+        "trivial",
+        "trumpery",
+        "two-bit",
+        "two-for-a-cent",
+        "two-for-a-penny",
+        "twopenny",
+        "twopenny-halfpenny",
+        "unbecoming",
+        "unexpensive",
+        "ungenerous",
+        "unworthy of one",
+        "valueless",
+        "vile",
+        "within means",
+        "worth the money",
+        "worthless",
+        "wretched",
+        "wrong"
+      ]
+    },
+    "cheapen": {
+      "word": "CHEAPEN",
+      "definitions": [
+        {
+          "text": "To ask the price of; to bid, bargain, or chaffer for. [Obsoles.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adulterate",
+        "alloy",
+        "bargain",
+        "beat down",
+        "bid",
+        "bid for",
+        "break",
+        "canker",
+        "chaffer",
+        "coarsen",
+        "confound",
+        "contaminate",
+        "corrupt",
+        "cut",
+        "cut prices",
+        "debase",
+        "debauch",
+        "decline",
+        "decry",
+        "defile",
+        "deflate",
+        "deflower",
+        "degenerate",
+        "degrade",
+        "denature",
+        "deprave",
+        "depreciate",
+        "desecrate",
+        "despoil",
+        "devaluate",
+        "devalue",
+        "dicker",
+        "distort",
+        "dive",
+        "downgrade",
+        "drive a bargain",
+        "fall",
+        "fall in price",
+        "give way",
+        "haggle",
+        "higgle",
+        "huckster",
+        "infect",
+        "jew down",
+        "lower",
+        "mark down",
+        "misuse",
+        "negotiate",
+        "nose-dive",
+        "outbid",
+        "pare",
+        "pervert",
+        "plummet",
+        "plunge",
+        "poison",
+        "pollute",
+        "prostitute",
+        "ravage",
+        "ravish",
+        "reduce",
+        "sag",
+        "shave",
+        "slash",
+        "slump",
+        "taint",
+        "trim",
+        "twist",
+        "ulcerate",
+        "underbid",
+        "undervalue",
+        "violate",
+        "vitiate",
+        "vulgarize",
+        "warp",
+        "write down",
+        "write off"
+      ]
+    },
+    "cheapener": {
+      "word": "CHEAPENER",
+      "definitions": [
+        {
+          "text": "One who cheapens.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheapjackcheapjohn": {
+      "word": "CHEAP-JACK; CHEAP-JOHN",
+      "definitions": [
+        {
+          "text": "A seller of low-priced or second goods; a hawker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheaply": {
+      "word": "CHEAPLY",
+      "definitions": [
+        {
+          "text": "At a small price; at a low value; in a common or inferior manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheapness": {
+      "word": "CHEAPNESS",
+      "definitions": [
+        {
+          "text": "Lowness in price, considering the usual price, or real value.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chear": {
+      "word": "CHEAR",
+      "definitions": [
+        {
+          "text": "See Cheer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheat": {
+      "word": "CHEAT",
+      "definitions": [
+        {
+          "text": "An act of deception or fraud; that which is the means of fraud or deception; a fraud; a trick; imposition; imposture. When I consider life, 'tis all a cheat. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who cheats or deceives; an impostor; a deceiver; a cheater. Airy wonders, which cheats interpret. Johnson",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A troublesome grass, growing as a weed in grain fields; -- called also chess. See Chess.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The obtaining of property from another by an intentional active distortion of the truth. tokens which may affect the public at large and against which common prudence could not have guarded, they are indictable at common law. Wharton. deceit; guile; finesse; stratagem.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To deceive and defraud; to impose upon; to trick; to swindle. I am subject to a tyrant, a sorcerer, that by his cunning hath cheated me of this island. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To beguile. Sir W. Scott. To cheat winter of its dreariness. W. Irving. mislead; dupe; swindle; defraud; overreach; delude; hoodwink; deceive; bamboozle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To practice fraud or trickery; as, to cheat at cards.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Wheat, or bread made from wheat. [Obs.] Drayton. Their purest cheat, Thrice bolted, kneaded, and subdued in paste. Chapman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ballot-box stuffing",
+        "bamboozle",
+        "bamboozlement",
+        "beat",
+        "befool",
+        "beguile",
+        "beguile of",
+        "bilk",
+        "blackleg",
+        "boodle",
+        "bunco",
+        "burn",
+        "cardsharping",
+        "charlatan",
+        "cheater",
+        "cheating",
+        "chicane",
+        "chicanery",
+        "chisel",
+        "chiseler",
+        "chouse",
+        "chouse out of",
+        "clinquant",
+        "cog",
+        "cog the dice",
+        "con",
+        "con man",
+        "confidence man",
+        "counterfeit",
+        "cozen",
+        "cozenage",
+        "cozener",
+        "crib",
+        "crook",
+        "deceit",
+        "deceive",
+        "deceiver",
+        "deception",
+        "defraud",
+        "defrauder",
+        "delude",
+        "diddle",
+        "diddler",
+        "diddling",
+        "dishonesty",
+        "do",
+        "do in",
+        "do out of",
+        "dodge",
+        "doodle",
+        "double-cross",
+        "double-dealer",
+        "double-dealing",
+        "duff",
+        "dummy",
+        "dupe",
+        "euchre",
+        "evade",
+        "fake",
+        "fakement",
+        "faker",
+        "falsify",
+        "fiddle",
+        "finagle",
+        "fishy transaction",
+        "flam",
+        "fleece",
+        "flimflam",
+        "flimflam man",
+        "flimflammer",
+        "fob",
+        "fool",
+        "forgery",
+        "frame-up",
+        "fraud",
+        "fraudulence",
+        "fraudulency",
+        "fudge",
+        "gerrymandering",
+        "gouge",
+        "graft",
+        "grift",
+        "gull",
+        "gyp",
+        "gyp artist",
+        "gyp joint",
+        "gypper",
+        "hanky-panky",
+        "have",
+        "hoax",
+        "hocus",
+        "hocus-pocus",
+        "hoodwink",
+        "humbug",
+        "illicit business",
+        "imitation",
+        "imposition",
+        "impostor",
+        "imposture",
+        "juggler",
+        "junk",
+        "lie",
+        "mace",
+        "mislead",
+        "mock",
+        "mountebank",
+        "mulct",
+        "operator",
+        "overreach",
+        "pack the deal",
+        "paste",
+        "phony",
+        "pigeon",
+        "pinchbeck",
+        "practice fraud upon",
+        "put-on",
+        "put-up job",
+        "racket",
+        "ream",
+        "rip off",
+        "rip-off",
+        "rogue",
+        "rook",
+        "scam",
+        "screw",
+        "sell",
+        "sell gold bricks",
+        "sham",
+        "shark",
+        "sharp practice",
+        "sharper",
+        "sharpie",
+        "shave",
+        "shift",
+        "shift about",
+        "shoddy",
+        "short",
+        "shortchange",
+        "simulacrum",
+        "skin",
+        "slick",
+        "stack the cards",
+        "stick",
+        "sting",
+        "sucker",
+        "swindle",
+        "swindler",
+        "take",
+        "take a dive",
+        "take in",
+        "thimblerig",
+        "throw a fight",
+        "tinsel",
+        "trick",
+        "trickery",
+        "trickster",
+        "two-timer",
+        "victimize",
+        "whited sepulcher"
+      ]
+    },
+    "cheatable": {
+      "word": "CHEATABLE",
+      "definitions": [
+        {
+          "text": "Capable of being cheated.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheatableness": {
+      "word": "CHEATABLENESS",
+      "definitions": [
+        {
+          "text": "Capability of being cheated.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheater": {
+      "word": "CHEATER",
+      "definitions": [
+        {
+          "text": "One who cheats.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An escheator. [R.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chebacco": {
+      "word": "CHEBACCO",
+      "definitions": [
+        {
+          "text": "A narrow-sterned boat formerly much used in the Newfoundland fisheries; -- called also pinkstern and chebec. Bartlett.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chebec": {
+      "word": "CHEBEC",
+      "definitions": [
+        {
+          "text": "See Chebacco.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small American bird (Empidonax minimus); the least flycatcher.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "check": {
+      "word": "CHECK",
+      "definitions": [
+        {
+          "text": "(Chess)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A word of warning denoting that the king is in danger; such a menace of a player's king by an adversary's move as would, if it were any other piece, expose it to immediate capture. A king so menaced is said to be in check, and must be made safe at the next move.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A condition of interrupted or impeded progress; arrest; stop; delay; as, to hold an enemy in check. Which gave a remarkable check to the first progress of Christianity. Addison. No check, no stay, this streamlet fears. Wordsworth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Whatever arrests progress, or limits action; an obstacle, guard, restraint, or rebuff. Useful check upon the administration of government. Washington. A man whom no check could abash. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mark, certificate, or token, by which, errors may be prevented, or a thing or person may be identified; as, checks placed against items in an account; a check given for baggage; a return check on a railroad.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A written order directing a bank or banker to pay money as therein stated. See Bank check, below.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A woven or painted design in squares resembling the patten of a checkerboard; one of the squares of such a design; also, cloth having such a figure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Falconry)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The forsaking by a hawk of its proper game to follow other birds.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Small chick or crack. Bank check, a written order on a banker or broker to pay money in his keeping belonging to the signer. checkrein is looped. or on which they may be checked. primary nut to secure it. Knight. prevent the return of the feed water. censure; rebuke; reproof; repulse; rebuff; tally; counterfoil; counterbalance; ticket; draft.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chess)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make a move which puts an adversary's piece, esp. his king, in check; to put in check.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put a sudden restraint upon; to stop temporarily; to hinder; to repress; to curb. So many clogs to check and retard the headlong course of violence and oppression. Burke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To verify, to guard, to make secure, by means of a mark, token, or other check; to distinguish by a check; to put a mark against (an item) after comparing with an original or a counterpart in order to secure accuracy; as, to check an account; to check baggage.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To chide, rebuke, or reprove. The good king, his master, will check him for it. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To slack or ease off, as a brace which is too stiffly extended.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make checks or chinks in; to cause to crack; as, the sun checks timber. obstruct; interrupt; tally; rebuke; reprove; rebuff.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make a stop; to pause; -- with at. The mind, once jaded by an attempt above its power, either is disabled for the future, or else checks at any vigorous undertaking ever after. Locke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To clash or interfere. [R.] Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act as a curb or restraint. It [his presence] checks too strong upon me. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To crack or gape open, as wood in drying; or to crack in small checks, as varnish, paint, etc.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Falconry)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To turn, when in pursuit of proper game, and fly after other birds. And like the haggard, check at every feather That comes before his eye. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Checkered; designed in checks.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "CD",
+        "IOU",
+        "MO",
+        "X",
+        "a reckoning of",
+        "abrade",
+        "abrasion",
+        "abysm",
+        "abyss",
+        "acceptance",
+        "acceptance bill",
+        "accord",
+        "account",
+        "account of",
+        "agree",
+        "allophone",
+        "alveolar",
+        "answer to",
+        "aperture",
+        "apico-alveolar",
+        "apico-dental",
+        "arrest",
+        "arrestation",
+        "arrestment",
+        "arrive",
+        "arroyo",
+        "articulation",
+        "ascertainment",
+        "aspiration",
+        "assent",
+        "assimilation",
+        "assort with",
+        "assurance",
+        "audit",
+        "authenticate",
+        "authentication",
+        "autopsy",
+        "backpedal",
+        "backset",
+        "backwater",
+        "baffle",
+        "bafflement",
+        "baggage check",
+        "balance",
+        "balance the books",
+        "balk",
+        "balking",
+        "band",
+        "bank acceptance",
+        "bank check",
+        "bar",
+        "bark",
+        "barometer",
+        "be consistent",
+        "be of one",
+        "be uniform with",
+        "bearing rein",
+        "beat off",
+        "bell",
+        "bespangle",
+        "bespeckle",
+        "bespot",
+        "bilabial",
+        "bill",
+        "bill of account",
+        "bill of draft",
+        "bill of exchange",
+        "bill of lading",
+        "billhead",
+        "birthmark",
+        "bit",
+        "blackhead",
+        "blank check",
+        "blaze",
+        "blaze a trail",
+        "bleb",
+        "blemish",
+        "blister",
+        "block",
+        "blockage",
+        "blocking",
+        "bloody",
+        "blotch",
+        "book stamp",
+        "bookplate",
+        "bottle up",
+        "box canyon",
+        "box up",
+        "brake",
+        "brand",
+        "breach",
+        "break",
+        "bridle",
+        "bring to",
+        "bring up short",
+        "broaching",
+        "broad arrow",
+        "bulla",
+        "burn",
+        "burst",
+        "bust",
+        "cachet",
+        "cacuminal",
+        "cage",
+        "caging",
+        "canon",
+        "canvass",
+        "canyon",
+        "caste mark",
+        "cavity",
+        "cease",
+        "cerebral",
+        "certificate",
+        "certificate of deposit",
+        "certification",
+        "certified check",
+        "cessation",
+        "chafe",
+        "chain",
+        "chalk",
+        "chalk up",
+        "chap",
+        "charges",
+        "chasm",
+        "check",
+        "check and doublecheck",
+        "check in",
+        "check of",
+        "check off",
+        "check out",
+        "check over",
+        "check up on",
+        "checkbook",
+        "checker",
+        "checkerboard",
+        "checkerwork",
+        "checking",
+        "checkmark",
+        "checkmate",
+        "checkrein",
+        "checkup",
+        "cheque",
+        "chessboard",
+        "chime",
+        "chimney",
+        "chink",
+        "chip",
+        "chit",
+        "chock",
+        "cicatrix",
+        "cicatrize",
+        "circumvent",
+        "claw",
+        "clearing",
+        "cleave",
+        "cleft",
+        "cleuch",
+        "clip the wings",
+        "clog",
+        "clogging",
+        "cloister",
+        "closing up",
+        "closure",
+        "clough",
+        "cohere",
+        "coincide",
+        "col",
+        "collate",
+        "collation",
+        "colophon",
+        "colors in patches",
+        "comedo",
+        "comedown",
+        "commercial paper",
+        "comparative scrutiny",
+        "compare",
+        "concur",
+        "concussion",
+        "confine",
+        "confinement",
+        "confirm",
+        "confirmation",
+        "conform",
+        "conform with",
+        "confounding",
+        "confusion",
+        "consist with",
+        "consonant",
+        "constrain",
+        "constraint",
+        "constriction",
+        "contain",
+        "continuant",
+        "control",
+        "cool",
+        "cool off",
+        "cooling",
+        "cooling down",
+        "cooling off",
+        "coop",
+        "coop in",
+        "coop up",
+        "cooperate",
+        "cork up",
+        "correspond",
+        "corroborate",
+        "corroboration",
+        "coulee",
+        "couloir",
+        "count of",
+        "counter",
+        "countercheck",
+        "counterfoil",
+        "countermark",
+        "coupon",
+        "crack",
+        "crackle",
+        "cramp",
+        "cranny",
+        "crater",
+        "craze",
+        "crazy-work",
+        "crevasse",
+        "crevice",
+        "crib",
+        "criterion",
+        "croak",
+        "cross-check",
+        "curb",
+        "curb bit",
+        "curtail",
+        "curtailment",
+        "cut",
+        "cut apart",
+        "cut short",
+        "cutoff",
+        "cwm",
+        "dam",
+        "dam up",
+        "damage",
+        "damp",
+        "dampen",
+        "damper",
+        "dapple",
+        "dash",
+        "dead stop",
+        "deadlock",
+        "debenture",
+        "decelerate",
+        "deceleration",
+        "deface",
+        "defacement",
+        "defeat",
+        "defect",
+        "defile",
+        "define",
+        "deform",
+        "deformation",
+        "deformity",
+        "degree",
+        "delay",
+        "delimit",
+        "dell",
+        "demand bill",
+        "demand draft",
+        "demarcate",
+        "demonstrate",
+        "dental",
+        "depart",
+        "descent",
+        "desist",
+        "detain",
+        "detainment",
+        "detention",
+        "determination",
+        "determine",
+        "dike",
+        "diphthong",
+        "disclosure",
+        "discolor",
+        "discoloration",
+        "discomfiture",
+        "disconcertion",
+        "discontinuance",
+        "discontinuation",
+        "discontinue",
+        "discontinuity",
+        "discover",
+        "disfiguration",
+        "disfigure",
+        "disfigurement",
+        "dissimilation",
+        "distort",
+        "distortion",
+        "ditch",
+        "docket",
+        "dompt",
+        "donga",
+        "doorstop",
+        "dot",
+        "double-check",
+        "dovetail",
+        "down",
+        "draft",
+        "drag",
+        "drag sail",
+        "draw",
+        "draw rein",
+        "drift anchor",
+        "drift sail",
+        "drive back",
+        "drogue",
+        "due bill",
+        "dun",
+        "earmark",
+        "ease off",
+        "ease up",
+        "ease-off",
+        "ease-up",
+        "encage",
+        "enclose",
+        "end",
+        "endgame",
+        "ending",
+        "engrave",
+        "engraving",
+        "enjoin",
+        "ensuring",
+        "epenthetic vowel",
+        "establishment",
+        "examination",
+        "examine",
+        "excavation",
+        "exchequer bill",
+        "exfoliate",
+        "explore",
+        "explosive",
+        "fall in together",
+        "fault",
+        "fence in",
+        "fend",
+        "fend off",
+        "fenestra",
+        "fetter",
+        "final whistle",
+        "find out",
+        "fissure",
+        "fistula",
+        "fit",
+        "fit together",
+        "fixation",
+        "flagging",
+        "flake",
+        "flash burn",
+        "flaw",
+        "fleck",
+        "flick",
+        "flume",
+        "foil",
+        "foiling",
+        "fontanel",
+        "foot-dragging",
+        "foramen",
+        "fracture",
+        "fray",
+        "frazzle",
+        "freckle",
+        "freeze",
+        "fret",
+        "frustrate",
+        "frustration",
+        "full stop",
+        "furrow",
+        "gall",
+        "gap",
+        "gape",
+        "gash",
+        "gat",
+        "gauge",
+        "give an examination",
+        "glide",
+        "glottal",
+        "glottalization",
+        "go",
+        "go over",
+        "go together",
+        "go with",
+        "gorge",
+        "govern",
+        "government mark",
+        "government stamp",
+        "graduated scale",
+        "graving",
+        "grinding halt",
+        "groove",
+        "guard",
+        "gulch",
+        "gulf",
+        "gully",
+        "gun",
+        "guttural",
+        "hack",
+        "hallmark",
+        "halt",
+        "hamper",
+        "hampering",
+        "hang together",
+        "harlequin",
+        "harmonize",
+        "hat check",
+        "hatch",
+        "hem in",
+        "hemangioma",
+        "hesitation",
+        "hiatus",
+        "hickey",
+        "hinder",
+        "hindering",
+        "hindrance",
+        "hit",
+        "hold",
+        "hold at bay",
+        "hold back",
+        "hold down",
+        "hold fast",
+        "hold in",
+        "hold in check",
+        "hold in custody",
+        "hold in leash",
+        "hold in restraint",
+        "hold off",
+        "hold together",
+        "hold up",
+        "holdback",
+        "holdup",
+        "hole",
+        "hollow",
+        "hurt",
+        "immure",
+        "impede",
+        "impediment",
+        "impound",
+        "impoundment",
+        "impress",
+        "imprint",
+        "incise",
+        "incision",
+        "inhibit",
+        "inhibition",
+        "injunction",
+        "injure",
+        "injury",
+        "inlet",
+        "inspect",
+        "inspection",
+        "intercept",
+        "interdict",
+        "interfere",
+        "interference",
+        "interlock",
+        "intermeddle",
+        "interrupt",
+        "interruption",
+        "intersect",
+        "interval",
+        "intervene",
+        "inventory",
+        "investigate",
+        "invoice",
+        "iris",
+        "itemized bill",
+        "jibe",
+        "joint",
+        "jot",
+        "keep",
+        "keep at bay",
+        "keep back",
+        "keep from",
+        "keep in",
+        "keep in check",
+        "keep in custody",
+        "keep in detention",
+        "keep off",
+        "keep under control",
+        "keloid",
+        "kick the bucket",
+        "kink",
+        "kloof",
+        "label",
+        "labial",
+        "labialization",
+        "labiodental",
+        "labiovelar",
+        "lacerate",
+        "laceration",
+        "lacuna",
+        "lag",
+        "laryngeal",
+        "lateral",
+        "lay under restraint",
+        "laying open",
+        "leak",
+        "leave",
+        "legal restraint",
+        "lentigo",
+        "lesion",
+        "let",
+        "let down",
+        "let up",
+        "letdown",
+        "letter of credit",
+        "letterhead",
+        "letup",
+        "limit",
+        "limitation",
+        "line",
+        "lingual",
+        "liquid",
+        "lock",
+        "lockout",
+        "lockup",
+        "logo",
+        "logotype",
+        "look at",
+        "look into",
+        "look over",
+        "lose ground",
+        "lose momentum",
+        "lose speed",
+        "macula",
+        "maculate",
+        "maim",
+        "make a mark",
+        "make late",
+        "make mincemeat of",
+        "make sure of",
+        "manifest",
+        "manner of articulation",
+        "mar",
+        "marble",
+        "marbleize",
+        "mark",
+        "mark off",
+        "mark out",
+        "marking",
+        "marquetry",
+        "martingale",
+        "masthead",
+        "match",
+        "maul",
+        "measure",
+        "meddle",
+        "mesh",
+        "mew",
+        "mew up",
+        "milium",
+        "minus acceleration",
+        "moat",
+        "model",
+        "moderate",
+        "modification",
+        "mole",
+        "money order",
+        "monitor",
+        "monophthong",
+        "monopoly",
+        "morphophoneme",
+        "mortal wound",
+        "mosaic",
+        "motley",
+        "mottle",
+        "mute",
+        "mutilate",
+        "mutilation",
+        "nasal",
+        "needle scar",
+        "negativism",
+        "negotiable instrument",
+        "nevus",
+        "nick",
+        "norm",
+        "notch",
+        "note",
+        "note of hand",
+        "nuisance value",
+        "nullah",
+        "observe",
+        "obstruct",
+        "obstruction",
+        "obstructionism",
+        "occlusion",
+        "occlusive",
+        "open",
+        "opening",
+        "opening up",
+        "oppose",
+        "opposition",
+        "orifice",
+        "outlet",
+        "overhaul",
+        "overlap",
+        "overlook",
+        "painstakingly match",
+        "palatal",
+        "paper",
+        "parallel",
+        "parameter",
+        "parasitic vowel",
+        "parquet",
+        "parquetry",
+        "parry",
+        "pass",
+        "pass muster",
+        "pass over",
+        "pass under review",
+        "passage",
+        "passageway",
+        "patch",
+        "patchwork",
+        "pattern",
+        "pause",
+        "peak",
+        "peer at",
+        "pelham",
+        "pen",
+        "pen up",
+        "pencil",
+        "penning",
+        "pepper",
+        "peruse",
+        "pharyngeal",
+        "pharyngealization",
+        "phone",
+        "phoneme",
+        "physical",
+        "physical examination",
+        "pierce",
+        "pimple",
+        "pit",
+        "plaid",
+        "plate",
+        "plosive",
+        "pock",
+        "pockmark",
+        "point",
+        "polka dot",
+        "polychrome",
+        "polychromize",
+        "pore",
+        "pore over",
+        "port-wine mark",
+        "port-wine stain",
+        "postal order",
+        "postmortem",
+        "pound",
+        "preclude",
+        "prevent",
+        "price tag",
+        "prick",
+        "print",
+        "probe",
+        "prohibit",
+        "prohibition",
+        "promissory note",
+        "protection",
+        "protectionism",
+        "protective tariff",
+        "prothetic vowel",
+        "prove",
+        "pull",
+        "pull in",
+        "pull up",
+        "punch",
+        "punctuate",
+        "puncture",
+        "push back",
+        "pustule",
+        "put back",
+        "put paid to",
+        "quantity",
+        "rail in",
+        "rainbow",
+        "rationing",
+        "ravine",
+        "reading",
+        "readout",
+        "reassurance",
+        "reassurement",
+        "rebuff",
+        "receipt",
+        "recheck",
+        "reckoning",
+        "reef",
+        "register",
+        "register with",
+        "registered trademark",
+        "rein",
+        "rein in",
+        "relax",
+        "remora",
+        "rend",
+        "rent",
+        "repel",
+        "report",
+        "repress",
+        "repression",
+        "repulse",
+        "research",
+        "resist",
+        "resistance",
+        "respond to",
+        "restrain",
+        "restraint",
+        "restraint of trade",
+        "restrict",
+        "restriction",
+        "retard",
+        "retardation",
+        "retardment",
+        "retrench",
+        "retrenchment",
+        "retroflex",
+        "reversal",
+        "reverse",
+        "reverse of fortune",
+        "review",
+        "riddle",
+        "rift",
+        "rime",
+        "rip",
+        "rive",
+        "rout",
+        "rule",
+        "run",
+        "run over",
+        "running head",
+        "running title",
+        "rupture",
+        "savage",
+        "scab",
+        "scald",
+        "scale",
+        "scan",
+        "scar",
+        "scarification",
+        "scarify",
+        "scissure",
+        "scorch",
+        "score",
+        "scotch",
+        "scrape",
+        "scratch",
+        "scratching",
+        "scrip",
+        "scrutinize",
+        "scrutiny",
+        "scuff",
+        "sea anchor",
+        "seal",
+        "seal up",
+        "seam",
+        "sebaceous cyst",
+        "second-degree burn",
+        "segmental phoneme",
+        "self-control",
+        "semivowel",
+        "set an examination",
+        "set back",
+        "setback",
+        "severe check",
+        "shackle",
+        "shut in",
+        "shut up",
+        "sight bill",
+        "sight draft",
+        "sigil",
+        "sign in",
+        "sign on",
+        "signet",
+        "sing in chorus",
+        "sit-down strike",
+        "size",
+        "size up",
+        "skin",
+        "slack off",
+        "slack up",
+        "slack-up",
+        "slacken",
+        "slackening",
+        "slash",
+        "slit",
+        "slot",
+        "slow",
+        "slow down",
+        "slow up",
+        "slowdown",
+        "slowing",
+        "slowing down",
+        "slowup",
+        "slug",
+        "snaffle",
+        "snap",
+        "snub",
+        "sonant",
+        "sonority",
+        "sore",
+        "sort with",
+        "space",
+        "spangle",
+        "speck",
+        "speckle",
+        "speech sound",
+        "splash",
+        "split",
+        "splotch",
+        "spoke",
+        "spot",
+        "spot check",
+        "sprain",
+        "sprinkle",
+        "square",
+        "square with",
+        "squeeze",
+        "stab",
+        "stab wound",
+        "stain",
+        "stalemate",
+        "stall",
+        "stamp",
+        "stand",
+        "stand together",
+        "standard",
+        "standoff",
+        "standstill",
+        "statement",
+        "stave off",
+        "stay",
+        "stem",
+        "stem the tide",
+        "stick",
+        "sticker",
+        "stigma",
+        "stigmatize",
+        "stipple",
+        "stoma",
+        "stop",
+        "stop cold",
+        "stop dead",
+        "stop short",
+        "stoppage",
+        "stopping",
+        "strain",
+        "straiten",
+        "stranglehold",
+        "strawberry mark",
+        "streak",
+        "striate",
+        "stricture",
+        "strike",
+        "stripe",
+        "stub",
+        "stud",
+        "study",
+        "sty",
+        "substantiate",
+        "substantiation",
+        "suppress",
+        "suppression",
+        "surcease",
+        "surd",
+        "survey",
+        "suspension",
+        "syllabic nucleus",
+        "syllabic peak",
+        "syllable",
+        "tab",
+        "tabs of",
+        "tag",
+        "take in sail",
+        "take stock",
+        "take stock of",
+        "take the measure",
+        "tally",
+        "tally of",
+        "tariff wall",
+        "tartan",
+        "tattoo",
+        "tattoo mark",
+        "tear",
+        "tessellate",
+        "tessellation",
+        "tesserae",
+        "test",
+        "third-degree burn",
+        "thought control",
+        "throttle down",
+        "throwback",
+        "throwing open",
+        "thwart",
+        "thwarting",
+        "tick",
+        "tick off",
+        "ticket",
+        "time bill",
+        "time draft",
+        "title page",
+        "tittle",
+        "token",
+        "trace",
+        "track",
+        "track of",
+        "trade acceptance",
+        "trade name",
+        "trademark",
+        "trademark name",
+        "trammel",
+        "transition sound",
+        "trauma",
+        "traumatize",
+        "treasury bill",
+        "trench",
+        "triphthong",
+        "triple-check",
+        "try",
+        "turn aside",
+        "twist",
+        "type",
+        "uncorking",
+        "underline",
+        "underscore",
+        "unstopping",
+        "upset",
+        "validate",
+        "validation",
+        "valley",
+        "value",
+        "variegate",
+        "variegated pattern",
+        "velar",
+        "verification",
+        "verify",
+        "verruca",
+        "vesicle",
+        "vocable",
+        "vocalic",
+        "vocoid",
+        "voice",
+        "voiced sound",
+        "voiceless sound",
+        "voicing",
+        "void",
+        "voucher",
+        "vowel",
+        "wadi",
+        "wale",
+        "walkout",
+        "wall in",
+        "ward off",
+        "warp",
+        "warrant",
+        "wart",
+        "watermark",
+        "weal",
+        "welt",
+        "wen",
+        "whitehead",
+        "withhold",
+        "work stoppage",
+        "wound",
+        "wounds immedicable",
+        "wrench",
+        "yardstick",
+        "yawn"
+      ]
+    },
+    "checkage": {
+      "word": "CHECKAGE",
+      "definitions": [
+        {
+          "text": "The act of checking; as, the checkage of a name or of an item in a list.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The items, or the amount, to which attention is called by a check or checks.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checker": {
+      "word": "CHECKER",
+      "definitions": [
+        {
+          "text": "One who checks.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To mark with small squares like a checkerboard, as by crossing stripes of different colors.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To variegate or diversify with different qualities, color, scenes, or events; esp., to subject to frequent alternations of prosterity and adversity. Our minds are, as it were, checkered with truth and falsehood. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A piece in the game of draughts or checkers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pattern in checks; a single check.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Checkerwork.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "alter",
+        "ameliorate",
+        "band",
+        "bar",
+        "be changed",
+        "be converted into",
+        "be renewed",
+        "bespangle",
+        "bespeckle",
+        "bespot",
+        "blotch",
+        "bottom out",
+        "break",
+        "change",
+        "check",
+        "chop",
+        "chop and change",
+        "come about",
+        "come around",
+        "come round",
+        "dapple",
+        "degenerate",
+        "deteriorate",
+        "deviate",
+        "diverge",
+        "diversify",
+        "dot",
+        "flake",
+        "fleck",
+        "flop",
+        "freckle",
+        "harlequin",
+        "haul around",
+        "improve",
+        "iris",
+        "jibe",
+        "maculate",
+        "marble",
+        "marbleize",
+        "meliorate",
+        "mitigate",
+        "modulate",
+        "motley",
+        "mottle",
+        "mutate",
+        "pepper",
+        "polychrome",
+        "polychromize",
+        "rainbow",
+        "revive",
+        "shift",
+        "spangle",
+        "speck",
+        "speckle",
+        "splotch",
+        "spot",
+        "sprinkle",
+        "stigmatize",
+        "stipple",
+        "streak",
+        "striate",
+        "stripe",
+        "stud",
+        "swerve",
+        "tack",
+        "take a turn",
+        "tattoo",
+        "tessellate",
+        "turn",
+        "turn aside",
+        "turn into",
+        "turn the corner",
+        "undergo a change",
+        "variegate",
+        "vary",
+        "veer",
+        "vein",
+        "warp",
+        "worsen"
+      ]
+    },
+    "checkerberry": {
+      "word": "CHECKERBERRY",
+      "definitions": [
+        {
+          "text": "A spicy plant and its bright red berry; the wintergreen (Gaultheria procumbens). Also incorrectly applied to the partridge berry (Mitchella repens).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checkerboard": {
+      "word": "CHECKERBOARD",
+      "definitions": [
+        {
+          "text": "A board with sixty-four squares of alternate color, used for playing checkers or draughts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "agate",
+        "ball",
+        "baseball bat",
+        "bat",
+        "battledore",
+        "bauble",
+        "blocks",
+        "check",
+        "checker",
+        "checkerwork",
+        "chessboard",
+        "club",
+        "cockhorse",
+        "colors in patches",
+        "crazy-work",
+        "cricket bat",
+        "cue",
+        "doll",
+        "doll carriage",
+        "gewgaw",
+        "gimcrack",
+        "golf club",
+        "harlequin",
+        "hobbyhorse",
+        "jack-in-the-box",
+        "jacks",
+        "jackstones",
+        "jackstraws",
+        "kickshaw",
+        "knickknack",
+        "marble",
+        "marionette",
+        "marquetry",
+        "mig",
+        "mosaic",
+        "paper doll",
+        "parquet",
+        "parquetry",
+        "patchwork",
+        "pick-up sticks",
+        "pinwheel",
+        "plaid",
+        "plaything",
+        "puppet",
+        "racket",
+        "rag doll",
+        "rocking horse",
+        "sport",
+        "steelie",
+        "tartan",
+        "taw",
+        "teetotum",
+        "tessellation",
+        "tesserae",
+        "top",
+        "toy",
+        "toy soldier",
+        "trinket",
+        "variegated pattern",
+        "whim-wham"
+      ]
+    },
+    "checkered": {
+      "word": "CHECKERED",
+      "definitions": [
+        {
+          "text": "Marked with alternate squares or checks of different color or material. Dancing in the checkered shade. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Diversified or variegated in a marked manner, as in appearance, character, circumstances, etc. This checkered narrative. Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "able to adapt",
+        "adaptable",
+        "adjustable",
+        "alterable",
+        "alterative",
+        "changeable",
+        "check",
+        "checked",
+        "ever-changing",
+        "flexible",
+        "fluid",
+        "impermanent",
+        "kaleidoscopic",
+        "malleable",
+        "many-sided",
+        "metamorphic",
+        "mobile",
+        "modifiable",
+        "mosaic",
+        "movable",
+        "mutable",
+        "nonuniform",
+        "permutable",
+        "plaid",
+        "plastic",
+        "protean",
+        "proteiform",
+        "resilient",
+        "rubbery",
+        "supple",
+        "tessellate",
+        "tessellated",
+        "transient",
+        "transitory",
+        "variable"
+      ]
+    },
+    "checkers": {
+      "word": "CHECKERS",
+      "definitions": [
+        {
+          "text": "A game, called also daughts, played on a checkerboard by two persons, each having twelve men (counters or checkers) which are moved diagonally. The game is ended when either of the players has lost all his men, or can not move them.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Monopoly",
+        "Ping-Pong",
+        "Rugby",
+        "Scrabble",
+        "archery",
+        "association football",
+        "backgammon",
+        "badminton",
+        "bagatelle",
+        "ball",
+        "bandy",
+        "baseball",
+        "basketball",
+        "battledore and shuttlecock",
+        "beano",
+        "billiards",
+        "bingo",
+        "bowling",
+        "bowls",
+        "boxing",
+        "cat",
+        "catch",
+        "charades",
+        "chess",
+        "climbing",
+        "crambo",
+        "cricket",
+        "croquet",
+        "curling",
+        "discus",
+        "dominoes",
+        "draughts",
+        "fencing",
+        "fishing",
+        "fives",
+        "football",
+        "ghost",
+        "gliding",
+        "go",
+        "golf",
+        "handball",
+        "hide-and-seek",
+        "hiking",
+        "hockey",
+        "hopscotch",
+        "horseshoes",
+        "hunting",
+        "hurdling",
+        "ice hockey",
+        "jacks",
+        "jackstones",
+        "jackstraws",
+        "keno",
+        "lacrosse",
+        "lawn tennis",
+        "leapfrog",
+        "lotto",
+        "luging",
+        "marbles",
+        "merels",
+        "motorcycling",
+        "mountaineering",
+        "mumble-the-peg",
+        "ninepins",
+        "pall-mall",
+        "pallone",
+        "pelota",
+        "polo",
+        "pool",
+        "post office",
+        "pushball",
+        "pyramids",
+        "quintain",
+        "quoits",
+        "racquets",
+        "riding",
+        "roller skating",
+        "rounders",
+        "rowing",
+        "sailing",
+        "sailplaning",
+        "sculling",
+        "shinny",
+        "shooting",
+        "shot-put",
+        "shuffleboard",
+        "skating",
+        "skeet",
+        "skeet shooting",
+        "ski-jumping",
+        "skiing",
+        "skin-diving",
+        "skittles",
+        "sledding",
+        "snooker",
+        "snorkel diving",
+        "snowmobiling",
+        "soccer",
+        "softball",
+        "sports",
+        "squash",
+        "stickball",
+        "surfing",
+        "table tennis",
+        "tennis",
+        "tenpins",
+        "tent pegging",
+        "tetherball",
+        "ticktacktoe",
+        "tiddlywinks",
+        "tilting",
+        "tipcat",
+        "tivoli",
+        "tobogganing",
+        "trapshooting",
+        "tug of war",
+        "volleyball",
+        "water polo",
+        "waterskiing",
+        "wrestling"
+      ]
+    },
+    "checkerwork": {
+      "word": "CHECKERWORK",
+      "definitions": [
+        {
+          "text": "Work consisting of or showing checkers varied alternately as to colors or materials.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any aggregate of varied vicissitudes. How strange a checkerwork of Providence is the life of man. De Foe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checklaton": {
+      "word": "CHECKLATON",
+      "definitions": [
+        {
+          "text": "Ciclatoun. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Gilded leather. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checkless": {
+      "word": "CHECKLESS",
+      "definitions": [
+        {
+          "text": "That can not be checked or restrained.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checkmate": {
+      "word": "CHECKMATE",
+      "definitions": [
+        {
+          "text": "The position in the game of chess when a king is in check and cannot be released, -- which ends the game.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A complete check; utter defeat or overthrow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chess)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To check (an adversary's king) in such a manner that escape in impossible; to defeat (an adversary) by putting his king in check from which there is no escape.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To defeat completely; to terminate; to thwart. To checkmate and control my just demands. Ford.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "arrest",
+        "baffle",
+        "bafflement",
+        "balk",
+        "balking",
+        "bell",
+        "blast",
+        "block",
+        "brake",
+        "brave",
+        "bring to",
+        "bring up short",
+        "challenge",
+        "check",
+        "circumvent",
+        "confound",
+        "confounding",
+        "confront",
+        "confusion",
+        "contravene",
+        "counter",
+        "counteract",
+        "countermand",
+        "counterwork",
+        "cross",
+        "cut short",
+        "cutoff",
+        "dam",
+        "dash",
+        "dead stop",
+        "deadlock",
+        "defeat",
+        "defy",
+        "destroy",
+        "discomfit",
+        "discomfiture",
+        "disconcert",
+        "disconcertion",
+        "discountenance",
+        "dish",
+        "disrupt",
+        "draw rein",
+        "elude",
+        "end",
+        "endgame",
+        "ending",
+        "final whistle",
+        "flummox",
+        "foil",
+        "foiling",
+        "freeze",
+        "frustrate",
+        "frustration",
+        "full stop",
+        "grinding halt",
+        "gun",
+        "halt",
+        "knock the chocks",
+        "lockout",
+        "nonplus",
+        "perplex",
+        "pull up",
+        "put paid to",
+        "rebuff",
+        "repulse",
+        "reversal",
+        "reverse",
+        "rout",
+        "ruin",
+        "sabotage",
+        "scotch",
+        "setback",
+        "sit-down strike",
+        "spike",
+        "spoil",
+        "stalemate",
+        "stall",
+        "stand",
+        "standoff",
+        "standstill",
+        "stay",
+        "stem",
+        "stem the tide",
+        "stonewall",
+        "stop",
+        "stop cold",
+        "stop dead",
+        "stop short",
+        "stoppage",
+        "strike",
+        "stump",
+        "thwart",
+        "thwarting",
+        "upset",
+        "walkout",
+        "work stoppage"
+      ]
+    },
+    "checkrein": {
+      "word": "CHECKREIN",
+      "definitions": [
+        {
+          "text": "A short rein looped over the check hook to prevent a horse from lowering his head; -- called also a bearing rein.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A branch rein connecting the driving rein of one horse of a span or pair with the bit of the other horse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checkroll": {
+      "word": "CHECKROLL",
+      "definitions": [
+        {
+          "text": "A list of servants in a household; -- called also chequer roll.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checkstring": {
+      "word": "CHECKSTRING",
+      "definitions": [
+        {
+          "text": "A cord by which a person in a carriage or horse car may signal to the driver.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checkwork": {
+      "word": "CHECKWORK",
+      "definitions": [
+        {
+          "text": "Anything made so as to form alternate squares lke those of a checkerboard.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "checky": {
+      "word": "CHECKY",
+      "definitions": [
+        {
+          "text": "Divided into small alternating squares of two tinctures; -- said of the field or of an armorial bearing. [Written also checquy, cheguy.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheddar": {
+      "word": "CHEDDAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or made at, Cheddar, in England; as, Cheddar cheese.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheek": {
+      "word": "CHEEK",
+      "definitions": [
+        {
+          "text": "The side of the face below the eye.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The cheek bone. [Obs.] Caucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Those pieces of a machine, or of any timber, or stone work, which form corresponding sides, or which are similar and in pair; as, the cheeks (jaws) of a vise; the cheeks of a gun carriage, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The branches of a bridle bit. Knight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Founding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A section of a flask, so made that it can be moved laterally, to permit the removal of the pattern from the mold; the middle part of a flask.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Cool confidence; assurance; impudence. [Slang] Cheek of beef. See Illust. of Beef. malar bone. monkeys and rodents, used for holding food. which the trestletrees rest.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To be impudent or saucy to. [Slang.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "arse",
+        "ass",
+        "backside",
+        "bank",
+        "beam",
+        "behind",
+        "border",
+        "bottom",
+        "brashness",
+        "brass",
+        "brazen boldness",
+        "breech",
+        "broadside",
+        "bum",
+        "butt",
+        "can",
+        "cheeks",
+        "chop",
+        "chutzpah",
+        "coast",
+        "confidence",
+        "crust",
+        "derriere",
+        "duff",
+        "face",
+        "fanny",
+        "flank",
+        "gall",
+        "hand",
+        "handedness",
+        "haunch",
+        "heroics",
+        "hip",
+        "hubris",
+        "improvidence",
+        "imprudence",
+        "impudence",
+        "indiscretion",
+        "injudiciousness",
+        "insolence",
+        "jowl",
+        "keister",
+        "laterality",
+        "many-sidedness",
+        "multilaterality",
+        "nerve",
+        "overboldness",
+        "overcarelessness",
+        "overconfidence",
+        "oversureness",
+        "overweeningness",
+        "planking",
+        "prat",
+        "presumption",
+        "profile",
+        "quarter",
+        "rashness",
+        "rusty-dusty",
+        "shore",
+        "side",
+        "siding",
+        "stern",
+        "tail",
+        "temerariousness",
+        "temerity",
+        "temple",
+        "tuchis",
+        "tush",
+        "tushy",
+        "unchariness",
+        "unilaterality",
+        "unwariness"
+      ]
+    },
+    "cheeked": {
+      "word": "CHEEKED",
+      "definitions": [
+        {
+          "text": "Having a cheek; -- used in composition. \"Rose-cheeked Adonis.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheeky": {
+      "word": "CHEEKY",
+      "definitions": [
+        {
+          "text": "a Brazen-faced; impudent; bold. [Slang.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "arrogant",
+        "audacious",
+        "biggety",
+        "bluff",
+        "bold",
+        "brash",
+        "brassy",
+        "brazen",
+        "bumptious",
+        "challenging",
+        "chutzpadik",
+        "cocky",
+        "contemptuous",
+        "crusty",
+        "daring",
+        "defiant",
+        "defying",
+        "derisive",
+        "disdainful",
+        "disregardful",
+        "disrespectful",
+        "facy",
+        "flip",
+        "flippant",
+        "forward",
+        "fresh",
+        "gally",
+        "gratuitous",
+        "greatly daring",
+        "impertinent",
+        "impudent",
+        "insolent",
+        "malapert",
+        "nervy",
+        "pert",
+        "regardless of consequences",
+        "rude",
+        "sassy",
+        "saucy",
+        "smart",
+        "smart-alecky",
+        "smart-ass",
+        "uncalled-for",
+        "uncivil",
+        "wise-ass"
+      ]
+    },
+    "cheep": {
+      "word": "CHEEP",
+      "definitions": [
+        {
+          "text": "To chirp, as a young bird.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To give expression to in a chirping tone. Cheep and twitter twenty million loves. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A chirp, peep, or squeak, as of a young bird or mousse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "cackle",
+        "call",
+        "carol",
+        "caw",
+        "chatter",
+        "chip",
+        "chipper",
+        "chirk",
+        "chirm",
+        "chirp",
+        "chirr",
+        "chirrup",
+        "chitter",
+        "chuck",
+        "clack",
+        "cluck",
+        "cock-a-doodle-doo",
+        "coo",
+        "croak",
+        "cronk",
+        "crow",
+        "cuckoo",
+        "drum",
+        "gabble",
+        "gaggle",
+        "gobble",
+        "guggle",
+        "honk",
+        "hoo",
+        "hoot",
+        "peep",
+        "pip",
+        "pipe",
+        "quack",
+        "roll",
+        "scold",
+        "sing",
+        "squawk",
+        "trill",
+        "tweedle",
+        "tweet",
+        "twit",
+        "twitter",
+        "warble",
+        "whistle"
+      ]
+    },
+    "cheer": {
+      "word": "CHEER",
+      "definitions": [
+        {
+          "text": "The face; the countenance or its expression. [Obs.] \"Sweat of thy cheer.\" Wyclif.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Feeling; spirit; state of mind or heart. Be of good cheer. Matt. ix. 2. The parents . . . fled away with heavy cheer. Holland.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Gayety; mirth; cheerfulness; animation. I have not that alacrity of spirit, Nor cheer of mind, that I was wont to have. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which promotes good spirits or cheerfulness; provisions prepared for a feast; entertainment; as, a table loaded with good cheer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A shout, hurrah, or acclamation, expressing joy enthusiasm, applause, favor, etc. Welcome her, thundering cheer of the street. Tennyson. Whzt cheer Now do you fare What is there that is cheering",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cause to rejoice; to gladden; to make cheerful; -- often with up. Cowpe.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To infuse life, courage, animation, or hope, into; to inspirit; to solace or comfort. The proud he tamed, the penitent he cheered. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To salute or applaud with cheers; to urge on by cheers; as, to cheer hounds in a chase. To cheer ship, to salute a passing ship by cheers of sailors stationed in the rigging. refresh; exhilarate; animate; applaud.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To grow cheerful; to become gladsome or joyous; -- usually with up. At sight of thee my gloomy soul cheers up. A. Philips.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be in any state or temper of mind. [Obs.] How cheer'st thou, Jessica Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To utter a shout or shouts of applause, triumph, etc. And even the ranks of Tusculum Could scare forbear to cheer. Macaulay.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abide by",
+        "accede",
+        "accept",
+        "acclaim",
+        "acclamation",
+        "acquiesce",
+        "acquiesce in",
+        "afford hope",
+        "agree",
+        "agree to",
+        "agree with",
+        "alleluia",
+        "animate",
+        "applaud",
+        "applause",
+        "assent",
+        "assure",
+        "augur well",
+        "bark",
+        "battle cry",
+        "bawl",
+        "bear up",
+        "beatification",
+        "beatitude",
+        "bellow",
+        "bewitchment",
+        "bid fair",
+        "big hand",
+        "blessedness",
+        "bliss",
+        "blissfulness",
+        "blitheness",
+        "blithesomeness",
+        "board",
+        "bolster",
+        "boost",
+        "brace",
+        "brace up",
+        "bread",
+        "bread and butter",
+        "brighten",
+        "brightness",
+        "brisk",
+        "brisken",
+        "buck up",
+        "buoy up",
+        "buoyancy",
+        "burst of applause",
+        "buy",
+        "call",
+        "caterwaul",
+        "cheer on",
+        "cheer up",
+        "cheerfulness",
+        "cheeriness",
+        "cheery vein",
+        "chirk up",
+        "chorus of cheers",
+        "clap",
+        "clap the hands",
+        "clapping",
+        "clapping of hands",
+        "cloud nine",
+        "comestibles",
+        "comfort",
+        "comply",
+        "condole with",
+        "consent",
+        "consolation",
+        "console",
+        "conviviality",
+        "creature comfort",
+        "cry",
+        "cry for joy",
+        "cuisine",
+        "daily bread",
+        "delectation",
+        "delight",
+        "disposition",
+        "drive on",
+        "ease",
+        "eatables",
+        "eclat",
+        "ecstasy",
+        "ecstatics",
+        "edibles",
+        "egg on",
+        "elate",
+        "elation",
+        "embolden",
+        "enchantment",
+        "encore",
+        "encourage",
+        "encouragement",
+        "enliven",
+        "eupeptic mien",
+        "exaltation",
+        "exhilarate",
+        "exhilaration",
+        "exuberance",
+        "fare",
+        "fast food",
+        "feast",
+        "felicity",
+        "festivity",
+        "food",
+        "food and drink",
+        "foodstuff",
+        "fortify",
+        "frame of mind",
+        "fresh up",
+        "freshen",
+        "freshen up",
+        "gaiety",
+        "geniality",
+        "give a cheer",
+        "give a hand",
+        "give a lift",
+        "give comfort",
+        "give hope",
+        "give the nod",
+        "gladden",
+        "gladness",
+        "gladsomeness",
+        "glee",
+        "goad on",
+        "good cheer",
+        "hail",
+        "hallelujah",
+        "halloo",
+        "hand",
+        "handclap",
+        "handclapping",
+        "happiness",
+        "hasten on",
+        "have good prospects",
+        "health food",
+        "hear it for",
+        "hearten",
+        "heartiness",
+        "heaven",
+        "hie on",
+        "high spirits",
+        "hold out hope",
+        "hold out promise",
+        "hold with",
+        "holler",
+        "hollo",
+        "hooray",
+        "hoot",
+        "hopefulness",
+        "hosanna",
+        "hound on",
+        "howl",
+        "hurrah",
+        "hurray",
+        "hurry on",
+        "huzzah",
+        "in toto",
+        "ingesta",
+        "inspire",
+        "inspire hope",
+        "inspirit",
+        "intoxication",
+        "invigorate",
+        "jollity",
+        "joviality",
+        "joy",
+        "joyance",
+        "joyfulness",
+        "junk food",
+        "justify hope",
+        "kitchen stuff",
+        "lift up",
+        "liven",
+        "make fair promise",
+        "meat",
+        "merriment",
+        "merrymaking",
+        "mirth",
+        "nerve",
+        "nod",
+        "nod assent",
+        "optimism",
+        "ovation",
+        "overhappiness",
+        "overjoyfulness",
+        "paean",
+        "paradise",
+        "perk up",
+        "pick up",
+        "plaudit",
+        "pleasantness",
+        "popularity",
+        "promise",
+        "provender",
+        "provision",
+        "put at ease",
+        "quicken",
+        "radiance",
+        "rah",
+        "raise expectations",
+        "raise hope",
+        "rallying cry",
+        "rapture",
+        "ravishment",
+        "reanimate",
+        "reassure",
+        "receive",
+        "recreate",
+        "refresh",
+        "refreshen",
+        "regale",
+        "reinvigorate",
+        "rejoice",
+        "rejoice the heart",
+        "relieve",
+        "renew",
+        "revelry",
+        "revive",
+        "revivify",
+        "roar",
+        "root",
+        "root for",
+        "root on",
+        "rosy expectation",
+        "round of applause",
+        "sanguine humor",
+        "sanguineness",
+        "scream",
+        "screech",
+        "set at ease",
+        "set up",
+        "seventh heaven",
+        "shout",
+        "shout hosanna",
+        "shriek",
+        "solace",
+        "speed on",
+        "spirit",
+        "spread",
+        "spur on",
+        "squall",
+        "squawk",
+        "squeal",
+        "steel",
+        "stimulate",
+        "strengthen",
+        "subscribe to",
+        "sunniness",
+        "sunshine",
+        "support",
+        "sustenance",
+        "sympathize with",
+        "table",
+        "take kindly to",
+        "thunder of applause",
+        "transport",
+        "tucker",
+        "unalloyed happiness",
+        "uplift",
+        "urge on",
+        "viands",
+        "victuals",
+        "vitalize",
+        "vittles",
+        "vivify",
+        "vote for",
+        "war cry",
+        "war whoop",
+        "warm",
+        "welcome",
+        "whip on",
+        "whoop",
+        "winsomeness",
+        "yammer",
+        "yap",
+        "yawl",
+        "yawp",
+        "yell",
+        "yelp",
+        "yes",
+        "yield assent",
+        "yippee",
+        "yo-ho",
+        "yowl"
+      ]
+    },
+    "cheerer": {
+      "word": "CHEERER",
+      "definitions": [
+        {
+          "text": "One who cheers; one who, or that which, gladdens. \"Thou cheerer of our days.\" Wotton. \"Prime cheerer, light.\" Thomson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheerful": {
+      "word": "CHEERFUL",
+      "definitions": [
+        {
+          "text": "Having or showing good spirits or joy; cheering; cheery; contented; happy; joyful; lively; animated; willing. To entertain a cheerful disposition. Shak. The cheerful birds of sundry kind Do chant sweet music. Spenser. A cheerful confidence in the mercy of God. Macaulay. This general applause and cheerful shout. Shak. sprightly; jocund; jolly; joyous; vivacious; buoyant; sunny; happy; hopeful.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Leibnizian",
+        "affable",
+        "agreeable",
+        "airy",
+        "amiable",
+        "amicable",
+        "animated",
+        "animating",
+        "beaming",
+        "beatific",
+        "beatified",
+        "blessed",
+        "blissful",
+        "blithe",
+        "blithesome",
+        "bright",
+        "bright and sunny",
+        "buoyant",
+        "capering",
+        "carefree",
+        "cheering",
+        "cheery",
+        "chiliastic",
+        "chirk",
+        "chirping",
+        "chirpy",
+        "chirrupy",
+        "comfortable",
+        "compatible",
+        "complaisant",
+        "congenial",
+        "cordial",
+        "corky",
+        "couleur de rose",
+        "cozy",
+        "dancing",
+        "debonair",
+        "desirable",
+        "dulcet",
+        "elated",
+        "en rapport",
+        "encouraging",
+        "enjoyable",
+        "enlivening",
+        "eupeptic",
+        "euphoric",
+        "exalted",
+        "exhilarated",
+        "exhilarating",
+        "exuberant",
+        "fair",
+        "fair and pleasant",
+        "felicific",
+        "felicitous",
+        "fine",
+        "flushed",
+        "flushed with joy",
+        "friendly",
+        "gay",
+        "genial",
+        "glad",
+        "gladdening",
+        "gladsome",
+        "gleeful",
+        "glowing",
+        "good",
+        "goodly",
+        "gracious",
+        "grateful",
+        "gratifying",
+        "happy",
+        "harmonious",
+        "heart-warming",
+        "heartening",
+        "high",
+        "homelike",
+        "homely",
+        "homey",
+        "homish",
+        "honeyed",
+        "hopeful",
+        "in good spirits",
+        "in high spirits",
+        "inspiring",
+        "inspiriting",
+        "intimate",
+        "invigorating",
+        "irrepressible",
+        "jaunty",
+        "jolly",
+        "joyful",
+        "joyous",
+        "jubilant",
+        "laughing",
+        "leaping",
+        "light-hearted",
+        "lighthearted",
+        "lightsome",
+        "likable",
+        "lively",
+        "mellifluous",
+        "mellow",
+        "merry",
+        "millenarian",
+        "millennialistic",
+        "nice",
+        "of good cheer",
+        "optimistic",
+        "peaceful",
+        "perfectibilitarian",
+        "perfectionist",
+        "plain",
+        "pleasant",
+        "pleasing",
+        "pleasurable",
+        "pleasure-giving",
+        "pleasureful",
+        "purring",
+        "radiant",
+        "rewarding",
+        "riant",
+        "rose-colored",
+        "roseate",
+        "rosy",
+        "sanguine",
+        "sanguineous",
+        "satisfying",
+        "simple",
+        "singing",
+        "smiling",
+        "smirking",
+        "snug",
+        "sparkling",
+        "starry-eyed",
+        "sunny",
+        "sweet",
+        "thrice happy",
+        "unpretending",
+        "upbeat",
+        "utopian",
+        "vivacious",
+        "welcome",
+        "winsome"
+      ]
+    },
+    "cheerfully": {
+      "word": "CHEERFULLY",
+      "definitions": [
+        {
+          "text": "In a cheerful manner, gladly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "affably",
+        "agreeably",
+        "airily",
+        "amiably",
+        "amicably",
+        "blissfully",
+        "blithely",
+        "cheerily",
+        "confidently",
+        "cordially",
+        "enjoyably",
+        "expectantly",
+        "fair",
+        "fondly",
+        "genially",
+        "gladly",
+        "graciously",
+        "gratifyingly",
+        "happily",
+        "hopefully",
+        "hopingly",
+        "irrepressibly",
+        "jauntily",
+        "joyfully",
+        "kindly",
+        "lightly",
+        "optimistically",
+        "pleasantly",
+        "pleasingly",
+        "pleasurably",
+        "sanguinely",
+        "satisfyingly",
+        "smilingly",
+        "with good cheer"
+      ]
+    },
+    "cheerfulness": {
+      "word": "CHEERFULNESS",
+      "definitions": [
+        {
+          "text": "Good spirits; a state of moderate joy or gayety; alacrity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Leibnizian optimism",
+        "Pollyannaism",
+        "auspiciousness",
+        "beatification",
+        "beatitude",
+        "beneficence",
+        "benevolence",
+        "benignancy",
+        "benignity",
+        "bewitchment",
+        "blessedness",
+        "bliss",
+        "blissfulness",
+        "bright outlook",
+        "bright side",
+        "brightness",
+        "cheer",
+        "cheeriness",
+        "cloud nine",
+        "delectation",
+        "delight",
+        "ecstasy",
+        "ecstatics",
+        "elation",
+        "enchantment",
+        "exaltation",
+        "exhilaration",
+        "exuberance",
+        "fair weather",
+        "favorableness",
+        "felicity",
+        "fortunateness",
+        "gaiety",
+        "gladness",
+        "glee",
+        "good auspices",
+        "good omen",
+        "happiness",
+        "heaven",
+        "high spirits",
+        "intoxication",
+        "joy",
+        "joyance",
+        "joyfulness",
+        "luckiness",
+        "millennialism",
+        "optimism",
+        "optimisticalness",
+        "overhappiness",
+        "overjoyfulness",
+        "paradise",
+        "perfectibilism",
+        "perfectionism",
+        "philosophical optimism",
+        "propitiousness",
+        "prosperousness",
+        "rapture",
+        "ravishment",
+        "rosy outlook",
+        "seventh heaven",
+        "silver lining",
+        "sunniness",
+        "sunny side",
+        "sunshine",
+        "transport",
+        "unalloyed happiness",
+        "utopianism"
+      ]
+    },
+    "cheerily": {
+      "word": "CHEERILY",
+      "definitions": [
+        {
+          "text": "In a cheery manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheeriness": {
+      "word": "CHEERINESS",
+      "definitions": [
+        {
+          "text": "The state of being cheery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheeringly": {
+      "word": "CHEERINGLY",
+      "definitions": [
+        {
+          "text": "In a manner to cheer or encourage.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheerisness": {
+      "word": "CHEERISNESS",
+      "definitions": [
+        {
+          "text": "Cheerfulness. [Obs.] There is no Christian duty that is not to be seasoned and set off with cheerishness. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheerly": {
+      "word": "CHEERLY",
+      "definitions": [
+        {
+          "text": "Gay; cheerful. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Cheerily. [Archaic] Tennyson.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheerry": {
+      "word": "CHEERRY",
+      "definitions": [
+        {
+          "text": "Cheerful; lively; gay; bright; pleasant; as, a cheery person. His cheery little study, where the sunshine glimmered so pleasantly. Hawthorne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheese": {
+      "word": "CHEESE",
+      "definitions": [
+        {
+          "text": "The curd of milk, coagulated usually with rennet, separated from the whey, and pressed into a solid mass in a hoop or mold.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mass of pomace, or ground apples, pressed togehter in the form of a cheese.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The flat, circuliar, mucilaginous fruit of the dwarf mallow (Malva rotundifolia). [Colloq.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A low courtesy; -- so called on account of the cheese form assumed by a woman's dress when she stoops after extending the skirts by a rapid gyration. De Quincey. Thackeray. Cheese cake, a cake made of or filled with, a composition of soft curds, sugar, and butter. Prior. which the larvæ or maggots, called ckippers or hoppers, live in cheese. and other articles of food. from the curd, and to press the curd into a mold. or yellow bedstraw), sometimes used to coagulate milk. The roots are used as a substitute for madder. broken, in cheese making.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Alentejo",
+        "Alise Sainte Reine",
+        "American cheese",
+        "Amou",
+        "Arrigny",
+        "Asco",
+        "Asio",
+        "Augelot",
+        "Aurore",
+        "Autun",
+        "Backstein",
+        "Battelmatt",
+        "Beaufort",
+        "Beaumont",
+        "Bel Paese",
+        "Bitto",
+        "Bleu de Bassilac",
+        "Bleu de Salers",
+        "Blue Dorset",
+        "Boursin",
+        "Bra",
+        "Brie",
+        "Brie de Coulommiers",
+        "Brie de Meaux",
+        "Brillat-Savarin",
+        "Broccio",
+        "Cacciocavallo",
+        "Caerphilly",
+        "Camembert",
+        "Canestrato",
+        "Cantal",
+        "Cardiga",
+        "Castelo Branco",
+        "Chabichou",
+        "Chaingy",
+        "Champenois",
+        "Chaource",
+        "Chaumont",
+        "Cheddar",
+        "Chevret",
+        "Chevrotin",
+        "Cierp de Luchon",
+        "Cotherstone",
+        "Coulommiers",
+        "Crema Danica",
+        "Danish blue",
+        "Dauphin",
+        "Decize",
+        "Dunlop",
+        "Edam",
+        "Emmental",
+        "Epoisses",
+        "Erce",
+        "Ervy",
+        "Evarglice",
+        "Excelsior",
+        "Feuille de Dreux",
+        "Fontainebleau",
+        "Fontina",
+        "Fourme de Salers",
+        "Friesche Kaas",
+        "Gammelost",
+        "Gaperon",
+        "Gerome",
+        "Gloucester",
+        "Glux",
+        "Gournay",
+        "Grana Lombardo",
+        "Harze",
+        "Herve",
+        "Kackavalj",
+        "Kasseri",
+        "Kaunas",
+        "Kefalotir",
+        "Kummel",
+        "La Bouille",
+        "Laguiole",
+        "Les Aydes",
+        "Les Laumes",
+        "Leyden",
+        "Liederkranz",
+        "Liptauer",
+        "Livarot",
+        "Mainauer",
+        "Manicamp",
+        "Manuri",
+        "Maroilles",
+        "Marolles",
+        "Mascherone",
+        "Metton",
+        "Mizitra",
+        "Monceau",
+        "Mont-Cenis",
+        "Morbier",
+        "Muenster",
+        "Murols",
+        "Nantais",
+        "New York cheese",
+        "Niolo",
+        "Olivet",
+        "Oloron",
+        "Oxfordshire",
+        "Paladru",
+        "Parmesan",
+        "Paski",
+        "Pave de Moyaux",
+        "Pelardon de Rioms",
+        "Persille de Savoie",
+        "Petit Suisse",
+        "Petit-Moule",
+        "Pommel",
+        "Poona",
+        "Port-Salut",
+        "Promessi",
+        "Provature",
+        "Provolone",
+        "Puant Macere",
+        "Ramadoux",
+        "Reblochon",
+        "Reggiano",
+        "Remoudou",
+        "Rocamadur",
+        "Rokadur",
+        "Rollot",
+        "Roma",
+        "Romadur",
+        "Romano",
+        "Roquefort",
+        "Rouennais",
+        "Saint-Florentin",
+        "Saint-Marcellin",
+        "Saint-Maure",
+        "Salame",
+        "Sardo",
+        "Sassenage",
+        "Schabzieger",
+        "Septmoncel",
+        "Serra da Estrella",
+        "Sjenicki",
+        "Slipcote",
+        "Somborski",
+        "Sorbais",
+        "Sposi",
+        "Steppe",
+        "Stilton",
+        "Stracchino",
+        "Suffolk",
+        "Taffel",
+        "Tomme",
+        "Travnicki",
+        "Troyes",
+        "Truckles",
+        "Vacherin",
+        "Velveeta",
+        "Vermont cheese",
+        "Vic-en-Bigorre",
+        "Vize",
+        "Volvet",
+        "Wensleydale",
+        "Wisconsin cheese",
+        "aettekees",
+        "appetitost",
+        "brick cheese",
+        "butter",
+        "buttermilk",
+        "certified milk",
+        "clabber",
+        "condensed milk",
+        "cottage cheese",
+        "cream",
+        "cream cheese",
+        "dairy products",
+        "demi-sel",
+        "etuve",
+        "farmer cheese",
+        "fromage blanc",
+        "getmesost",
+        "ghee",
+        "gjetost",
+        "goat cheese",
+        "gras",
+        "grated cheese",
+        "half-and-half",
+        "heavy cream",
+        "jack cheese",
+        "kumminost",
+        "light cream",
+        "margarine",
+        "mesost",
+        "milk",
+        "mozzarella",
+        "mysost",
+        "nonfat dry milk",
+        "oka cheese",
+        "oleo",
+        "oleomargarine",
+        "primost",
+        "pultost",
+        "raw milk",
+        "ricotta",
+        "sapsago",
+        "skim milk",
+        "smaltost",
+        "smearcase",
+        "sour cream",
+        "store cheese",
+        "whey",
+        "whipping cream",
+        "yogurt"
+      ]
+    },
+    "cheesecloth": {
+      "word": "CHEESE CLOTH",
+      "definitions": [
+        {
+          "text": "A thin, loosewoven cotton cloth, such as is used in pressing cheese curds.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheeselep": {
+      "word": "CHEESELEP",
+      "definitions": [
+        {
+          "text": "A bag in which rennet is kept.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheesemonger": {
+      "word": "CHEESEMONGER",
+      "definitions": [
+        {
+          "text": "One who deals incheese. B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheeseparing": {
+      "word": "CHEESEPARING",
+      "definitions": [
+        {
+          "text": "A thin portion of the rind of a cheese.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Scrimping; mean; as, cheeseparing economy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Scotch",
+        "canny",
+        "careful",
+        "chary",
+        "cheap",
+        "chinchy",
+        "chintzy",
+        "close",
+        "closefisted",
+        "conserving",
+        "cooling",
+        "cooling down",
+        "cooling off",
+        "curtailment",
+        "cutback",
+        "economic",
+        "economization",
+        "economizing",
+        "economy",
+        "economy of assumption",
+        "economy of means",
+        "elegance",
+        "exiguous",
+        "forehanded",
+        "frugal",
+        "frugal to excess",
+        "frugality",
+        "grudging",
+        "illiberal",
+        "infrequent",
+        "labor-saving",
+        "law of parsimony",
+        "low growth rate",
+        "meager",
+        "mean",
+        "miserly",
+        "money-saving",
+        "niggardly",
+        "overfrugal",
+        "parsimonious",
+        "parsimoniousness",
+        "parsimony",
+        "penny-pinching",
+        "penny-wise",
+        "penny-wise and pound-foolish",
+        "penurious",
+        "piddling",
+        "pinching",
+        "poor",
+        "provident",
+        "prudent",
+        "prudential",
+        "rare",
+        "reduction of expenses",
+        "reduction of spending",
+        "retrenchment",
+        "saving",
+        "scamping",
+        "scant",
+        "scanty",
+        "scarce",
+        "scattered",
+        "scraping",
+        "scrimping",
+        "scrimpy",
+        "seldom met with",
+        "seldom seen",
+        "shabby",
+        "skimping",
+        "skimpy",
+        "slim",
+        "slowdown",
+        "spare",
+        "sparing",
+        "sparse",
+        "spotty",
+        "sprinkled",
+        "stingy",
+        "stinting",
+        "thin",
+        "thrifty",
+        "tight",
+        "tightfisted",
+        "time-saving",
+        "too frugal",
+        "unwasteful"
+      ]
+    },
+    "cheesiness": {
+      "word": "CHEESINESS",
+      "definitions": [
+        {
+          "text": "The quality of being cheesy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheesy": {
+      "word": "CHEESY",
+      "definitions": [
+        {
+          "text": "Having the nature, qualities, taste, form, consistency, or appearance of cheese.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Mickey Mouse",
+        "abject",
+        "abominable",
+        "arrant",
+        "atrocious",
+        "barfy",
+        "base",
+        "beggarly",
+        "beneath contempt",
+        "bum",
+        "cheap",
+        "coarse",
+        "common",
+        "contemptible",
+        "crappy",
+        "creepy",
+        "crummy",
+        "debased",
+        "degraded",
+        "depraved",
+        "despicable",
+        "dirty",
+        "disgusting",
+        "execrable",
+        "flagrant",
+        "foul",
+        "fourth-class",
+        "fulsome",
+        "gaudy",
+        "gimcracky",
+        "godawful",
+        "goshawful",
+        "grave",
+        "grim",
+        "gross",
+        "hairy",
+        "heinous",
+        "icky",
+        "inferior",
+        "irregular",
+        "little",
+        "low",
+        "low-class",
+        "low-down",
+        "low-grade",
+        "low-quality",
+        "low-test",
+        "lumpen",
+        "mangy",
+        "mean",
+        "measly",
+        "meretricious",
+        "miserable",
+        "monstrous",
+        "nefarious",
+        "obnoxious",
+        "odious",
+        "ornery",
+        "paltry",
+        "pathetic",
+        "petty",
+        "pitiable",
+        "pitiful",
+        "poky",
+        "poor",
+        "punk",
+        "putrid",
+        "rank",
+        "reptilian",
+        "rubbishy",
+        "sad",
+        "scabby",
+        "scrubby",
+        "scruffy",
+        "scummy",
+        "scurvy",
+        "scuzzy",
+        "second-best",
+        "second-class",
+        "seedy",
+        "shabby",
+        "shitty",
+        "shoddy",
+        "sleazy",
+        "small",
+        "sorry",
+        "squalid",
+        "stinking",
+        "stinky",
+        "tacky",
+        "tatty",
+        "third-class",
+        "third-rate",
+        "tinny",
+        "trashy",
+        "trumpery",
+        "two-for-a-cent",
+        "two-for-a-penny",
+        "twopenny",
+        "twopenny-halfpenny",
+        "unmentionable",
+        "valueless",
+        "vile",
+        "vomity",
+        "worthless",
+        "wretched",
+        "yecchy"
+      ]
+    },
+    "cheetah": {
+      "word": "CHEETAH",
+      "definitions": [
+        {
+          "text": "A species of leopard (Cynælurus jubatus) tamed and used for hunting in India. The woolly cheetah of South Africa is C. laneus. [Written also chetah.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Leo",
+        "Siberian tiger",
+        "bobcat",
+        "cat-a-mountain",
+        "catamount",
+        "cougar",
+        "jaguar",
+        "leopard",
+        "lion",
+        "lynx",
+        "mountain lion",
+        "ocelot",
+        "painter",
+        "panther",
+        "puma",
+        "simba",
+        "tiger",
+        "wildcat"
+      ]
+    },
+    "chef": {
+      "word": "CHEF",
+      "definitions": [
+        {
+          "text": "A chief of head person.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The head cook of large establishment, as a club, a family, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Chief.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "baker",
+        "boss",
+        "bwana",
+        "chef de cuisine",
+        "chief",
+        "chief cook",
+        "church dignitary",
+        "cook",
+        "culinarian",
+        "culinary artist",
+        "ecclesiarch",
+        "elder",
+        "employer",
+        "fry cook",
+        "goodman",
+        "guru",
+        "husband",
+        "kitchener",
+        "liege",
+        "liege lord",
+        "lord",
+        "lord paramount",
+        "master",
+        "overlord",
+        "padrone",
+        "paramount",
+        "pastry chef",
+        "pastrycook",
+        "paterfamilias",
+        "patriarch",
+        "patron",
+        "rabbi",
+        "sahib",
+        "seigneur",
+        "seignior",
+        "short-order cook",
+        "starets",
+        "teacher"
+      ]
+    },
+    "chefd'oeuvre": {
+      "word": "CHEF-D'OEUVRE",
+      "definitions": [
+        {
+          "text": "A masterpiece; a capital work in art, literature, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chegoechegre": {
+      "word": "CHEGOE; CHEGRE",
+      "definitions": [
+        {
+          "text": "See Chigoe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheiloplasty": {
+      "word": "CHEILOPLASTY",
+      "definitions": [
+        {
+          "text": "The process of forming an artificial tip or part of a lip, by using for the purpose a piece of healthy tissue taken from some neighboring part.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheilopoda": {
+      "word": "CHEILOPODA",
+      "definitions": [
+        {
+          "text": "See Ch.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheiropter": {
+      "word": "CHEIROPTER",
+      "definitions": [
+        {
+          "text": "One of the Cheiroptera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheiroptera": {
+      "word": "CHEIROPTERA",
+      "definitions": [
+        {
+          "text": "An order of mammalia, including the bats, having four toes of each of the anterior limbs elongated and connected by a web, so that they can be used like wings in flying. See Bat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheiropterous": {
+      "word": "CHEIROPTEROUS",
+      "definitions": [
+        {
+          "text": "Belonging to the Cheiroptera, or Bat family.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheiropterygium": {
+      "word": "CHEIROPTERYGIUM",
+      "definitions": [
+        {
+          "text": "The typical pentadactyloid limb of the higher vertebrates.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheirotherium": {
+      "word": "CHEIROTHERIUM",
+      "definitions": [
+        {
+          "text": "A genus of extinct animals, so named from fossil footprints rudely resembling impressions of the human hand, and believed to have been made by labyrinthodont reptiles. See Illustration in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chekelatoun": {
+      "word": "CHEKELATOUN",
+      "definitions": [
+        {
+          "text": "See Ciclatoun. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chekmak": {
+      "word": "CHEKMAK",
+      "definitions": [
+        {
+          "text": "A turkish fabric of silk and cotton, with gold thread interwoven.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chela": {
+      "word": "CHELA",
+      "definitions": [
+        {
+          "text": "The pincherlike claw of Crustacea and Arachnida.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelate": {
+      "word": "CHELATE",
+      "definitions": [
+        {
+          "text": "Same as Cheliferous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelerythrine": {
+      "word": "CHELERYTHRINE",
+      "definitions": [
+        {
+          "text": "Am alkaloidal principle obtained from the celandine, and named from the red color of its salts, It is a coloriess crystalline substance, and acts as an acrid narcotic poison. It is identical with sanguinarine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelicera": {
+      "word": "CHELICERA",
+      "definitions": [
+        {
+          "text": "One of the anterior pair of mouth organs, terminated by a pincherlike claw, in scorpions and allied Arachnida. They are homologous with the falcers of spiders, and probably with the mandibles of insects.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelidon": {
+      "word": "CHELIDON",
+      "definitions": [
+        {
+          "text": "The hollow at the flexure of the arm.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelidonic": {
+      "word": "CHELIDONIC",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or derived from, the celandine. Cheidonic acid, a weak acid extracted fron the celandine (Chelidonium majus), as a white crystalline substance.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelidonius": {
+      "word": "CHELIDONIUS",
+      "definitions": [
+        {
+          "text": "A small stone taken from the gizzard of a young swallow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelifer": {
+      "word": "CHELIFER",
+      "definitions": [
+        {
+          "text": "See Book scorpion, under Book.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheliferous": {
+      "word": "CHELIFEROUS",
+      "definitions": [
+        {
+          "text": "Having cheliform claws, like a crab.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheliform": {
+      "word": "CHELIFORM",
+      "definitions": [
+        {
+          "text": "Having a movable joint or finger closing againts a preceding joint or a projecting part of it, so that the whole may be ised for grasping, as the claw of a crab; pincherlike.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelone": {
+      "word": "CHELONE",
+      "definitions": [
+        {
+          "text": "A genus of hardy perennial flowering plants, of the order Scrophulariaceaæ., natives of North America; -- called also snakehead, turtlehead, shellflower, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelonia": {
+      "word": "CHELONIA",
+      "definitions": [
+        {
+          "text": "An order of reptiles, including the tortoises and turtles, perculiar in having a part of the vertebræ, ribs, and sternum united with the dermal plates so as to form a firm shell. The jaws are covered by a horny beak. See Reptilia; also, Illust. in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelonian": {
+      "word": "CHELONIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to animals of the tortoise kind.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the Chelonia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chelura": {
+      "word": "CHELURA",
+      "definitions": [
+        {
+          "text": "A genus of marine amphipod crustacea, which bore into and sometimes destroy timber.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chely": {
+      "word": "CHELY",
+      "definitions": [
+        {
+          "text": "A claw. See Chela. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemic": {
+      "word": "CHEMIC",
+      "definitions": [
+        {
+          "text": "A chemist; an alchemist. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bleaching)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A solution of chloride of line.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Chemical. Blackw. Mag.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemical": {
+      "word": "CHEMICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to chemistry; characterized or produced by the forces and operations of chemistry; employed in the processes of chemistry; as, chemical changes; chemical comnbinations. Chemical attraction or affinity. See under Attraction.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A substance used for producing a chemical effect; a reagent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Chile saltpeter",
+        "absolute alcohol",
+        "acetate",
+        "acetone",
+        "acid",
+        "acidity",
+        "agent",
+        "alcohol",
+        "aldehyde",
+        "alkali",
+        "alkalinity",
+        "alloisomer",
+        "amine",
+        "ammonia",
+        "amyl alcohol",
+        "anhydride",
+        "anion",
+        "antacid",
+        "arsenate",
+        "arsenite",
+        "atom",
+        "base",
+        "basic",
+        "basic anhydride",
+        "benzoate",
+        "bicarbonate",
+        "bicarbonate of soda",
+        "bichloride of mercury",
+        "biochemical",
+        "bisulfate",
+        "borate",
+        "borax",
+        "bromide",
+        "calcium carbonate",
+        "calcium hydroxide",
+        "carbide",
+        "carbohydrate",
+        "carbon dioxide",
+        "carbon monoxide",
+        "carbonate",
+        "cation",
+        "chemical element",
+        "chemicals",
+        "chemicobiological",
+        "chemicoengineering",
+        "chemicomineralogical",
+        "chemicophysical",
+        "chemurgic",
+        "chlorate",
+        "chlorite",
+        "chromate",
+        "chromoisomer",
+        "citrate",
+        "compound",
+        "copolymer",
+        "copolymeric",
+        "copolymerous",
+        "copperas",
+        "cyanide",
+        "dehydrated alcohol",
+        "dichromate",
+        "dimer",
+        "dimeric",
+        "dimerous",
+        "dioxide",
+        "disulfide",
+        "electrochemical",
+        "element",
+        "elemental",
+        "elementary",
+        "ester",
+        "ethanol",
+        "ether",
+        "ethyl",
+        "ethyl alcohol",
+        "fluoride",
+        "formaldehyde",
+        "fulminate",
+        "halide",
+        "halogen",
+        "heavy chemicals",
+        "heteromerous",
+        "high polymer",
+        "homopolymer",
+        "hydracid",
+        "hydrate",
+        "hydride",
+        "hydrocarbon",
+        "hydroxide",
+        "hypochlorite",
+        "inorganic chemical",
+        "inorganic chemistry",
+        "iodide",
+        "ion",
+        "isomer",
+        "isomerous",
+        "isopropyl alcohol",
+        "ketone",
+        "lactate",
+        "macrochemical",
+        "macromolecule",
+        "metamer",
+        "metameric",
+        "methane",
+        "methanol",
+        "methyl",
+        "methyl alcohol",
+        "molecule",
+        "monomer",
+        "monomerous",
+        "monoxide",
+        "neutralizer",
+        "niter",
+        "nitrate",
+        "nitride",
+        "nitrite",
+        "nonacid",
+        "organic chemical",
+        "oxalate",
+        "oxide",
+        "oxyacid",
+        "permanganate",
+        "peroxide",
+        "petrochemical",
+        "phosphate",
+        "phosphide",
+        "photochemical",
+        "physicochemical",
+        "phytochemical",
+        "polymer",
+        "polymeric",
+        "potash",
+        "potassium nitrate",
+        "pseudoisomer",
+        "radical",
+        "radiochemical",
+        "reagent",
+        "sal ammoniac",
+        "salt",
+        "saltpeter",
+        "silicate",
+        "sodium bicarbonate",
+        "sodium bromide",
+        "sodium chloride",
+        "sodium hypochlorite",
+        "sulfacid",
+        "sulfate",
+        "sulfide",
+        "sulfite",
+        "tartrate",
+        "thermochemical",
+        "trimer"
+      ]
+    },
+    "chemically": {
+      "word": "CHEMICALLY",
+      "definitions": [
+        {
+          "text": "According to chemical principles; by chemical process or operation.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemiglyphic": {
+      "word": "CHEMIGLYPHIC",
+      "definitions": [
+        {
+          "text": "Engraved by a voltaic battary.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemigraphy": {
+      "word": "CHEMIGRAPHY",
+      "definitions": [
+        {
+          "text": "Any mechanical engraving process depending upon chemical",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemiloon": {
+      "word": "CHEMILOON",
+      "definitions": [
+        {
+          "text": "A garment for women, consisting of chemise and drawers united in one. [U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemise": {
+      "word": "CHEMISE",
+      "definitions": [
+        {
+          "text": "A shift, or undergarment, worn by women.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A wall that lines the face of a bank or earthwork.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemisette": {
+      "word": "CHEMISETTE",
+      "definitions": [
+        {
+          "text": "An under-garment, worn by women, usually covering the neck, shoulders, and breast.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemism": {
+      "word": "CHEMISM",
+      "definitions": [
+        {
+          "text": "The force exerted between the atoms of elementary substance whereby they unite to form chemical compounds; chemical attaction; affinity; -- sometimes used as a general expression for chemical activity or relationship.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemist": {
+      "word": "CHEMIST",
+      "definitions": [
+        {
+          "text": "A person versed in chemistry or given to chemical investigation; an analyst; a maker or seller of chemicals or drugs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "antique store",
+        "apothecary",
+        "automobile showroom",
+        "bookstore",
+        "bootery",
+        "candy store",
+        "cigar store",
+        "clothiers",
+        "clothing store",
+        "confectionery",
+        "dispensary",
+        "dispensatory",
+        "dispenser",
+        "dress shop",
+        "druggist",
+        "drugstore",
+        "dry goods store",
+        "florists",
+        "fur salon",
+        "furniture store",
+        "gallipot",
+        "gift shop",
+        "haberdashery",
+        "hardware store",
+        "hat shop",
+        "hobby shop",
+        "ironmongery",
+        "jewelers",
+        "jewelry store",
+        "leather goods store",
+        "liquor store",
+        "luggage shop",
+        "milliners",
+        "novelty shop",
+        "package store",
+        "pharmaceutist",
+        "pharmacist",
+        "pharmacy",
+        "posologist",
+        "saddlery",
+        "schlock house",
+        "schlock shop",
+        "secondhand shop",
+        "secondhand store",
+        "shoe store",
+        "smoke shop",
+        "specialty shop",
+        "sporting goods store",
+        "stationers",
+        "stationery store",
+        "sweater shop",
+        "sweet shop",
+        "thrift shop",
+        "tobacco store",
+        "tobacconists",
+        "toy shop",
+        "trimming store",
+        "used-car lot"
+      ]
+    },
+    "chemistry": {
+      "word": "CHEMISTRY",
+      "definitions": [
+        {
+          "text": "That branch of science which treats of the composition of substances, and of the changes which they undergo in consequence of alterations in the constitution of the molecules, which depend upon variations of the number, kind, or mode of arrangement, of the constituent atoms. These atoms are not assumed to be indivisible, but merely the finest grade of subdivision hitherto attained. Chemistry deals with the changes in the composition and constitution of molecules. See Atom, Molecule. alchemistry), with which it was anciently identified.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An application of chemical theory and method to the consideration of some particular subject; as, the chemistry of iron; the chemistry of indigo.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A treatise on chemistry. sometimes with i, instead of e, in the first syllable, chymistry, chymist, chymical, etc., or chimistry, chimist, chimical, etc.; and the pronunciation was conformed to the orthography. Inorganic chemistry, that which treats of inorganic or mineral substances. the structure of organized beings and their products, whether animal or vegetable; -- called also chemistry of the carbon compounds. There is no fundamental difference between organic and inorganic chemistry. of the body, and of the various physiological processes incident to life. the modes of manufacturing the products of chemistry that are useful in the arts, of their applications to economical purposes, and of the conditions essential to their best use. chemistry in their purely scientific relations, without necessary reference to their practical applications or mere utility.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "alchemy",
+        "applied chemistry",
+        "astrochemistry",
+        "biochemistry",
+        "biogeochemistry",
+        "chemicobiology",
+        "chemicoengineering",
+        "chemurgy",
+        "colloid chemistry",
+        "crystallochemistry",
+        "cytochemistry",
+        "electrochemistry",
+        "engineering chemistry",
+        "geochemistry",
+        "geological chemistry",
+        "hydrochemistry",
+        "iatrochemistry",
+        "immunochemistry",
+        "inorganic chemistry",
+        "lithochemistry",
+        "macrochemistry",
+        "mineralogical chemistry",
+        "nuclear chemistry",
+        "pathochemistry",
+        "petrochemistry",
+        "pharmacochemistry",
+        "physical chemistry",
+        "physicochemistry",
+        "phytochemistry",
+        "psychobiochemistry",
+        "radiochemistry",
+        "soil chemistry",
+        "theoretical chemistry",
+        "thermochemistry",
+        "topochemistry",
+        "ultramicrochemistry",
+        "zoochemistry",
+        "zymochemistry",
+        "zymurgy"
+      ]
+    },
+    "chemitype": {
+      "word": "CHEMITYPE",
+      "definitions": [
+        {
+          "text": "One of a number of processes by which an impression from an engraved plate is obtained in relief, to be used for printing on an ordinary printing press.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemolysis": {
+      "word": "CHEMOLYSIS",
+      "definitions": [
+        {
+          "text": "A term sometimes applied to the decomposition of organic substance into more simple bodies, by the use of chemical agents alone. Thudichum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemosmosis": {
+      "word": "CHEMOSMOSIS",
+      "definitions": [
+        {
+          "text": "Chemical action taking place through an intervening membrane.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemosmotic": {
+      "word": "CHEMOSMOTIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or produced by, chemosmosis. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemosynthesis": {
+      "word": "CHEMOSYNTHESIS",
+      "definitions": [
+        {
+          "text": "Synthesis of organic compounds by energy derived from chemical changes or reactions. Chemosynthesis of carbohydrates occurs in the nitrite bacteria through the oxidation of ammonia to nitrous acid,",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemotaxischemiotaxis": {
+      "word": "CHEMOTAXIS; CHEMIOTAXIS",
+      "definitions": [
+        {
+          "text": "The sensitiveness exhibited by small free-swimming organisms, as bacteria, zoöspores of algæ, etc., to chemical substances held in",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemungperiod": {
+      "word": "CHEMUNG PERIOD",
+      "definitions": [
+        {
+          "text": "A subdivision in the upper part of the Devonian system in America, so named from the Chemung River, along which the rocks are well developed. It includes the Portage and Chemung groups or epochs. See the Diagram under Geology.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheng": {
+      "word": "CHENG",
+      "definitions": [
+        {
+          "text": "A chinese reed instrument, with tubes, blown by the mouth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chenille": {
+      "word": "CHENILLE",
+      "definitions": [
+        {
+          "text": "Tufted cord, of silk or worsted, for the trimimg of ladies' dresses, for embroidery and fringes, and for the weft of chenille rugs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chenomorphae": {
+      "word": "CHENOMORPHAE",
+      "definitions": [
+        {
+          "text": "An order of birds, including the swans, ducks, geese, flamingoes and screamers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chepster": {
+      "word": "CHEPSTER",
+      "definitions": [
+        {
+          "text": "The European starling. [Local, Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheque": {
+      "word": "CHEQUE",
+      "definitions": [
+        {
+          "text": "See Check.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chequer": {
+      "word": "CHEQUER",
+      "definitions": [
+        {
+          "text": "Same as Checker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chequing": {
+      "word": "CHEQUING",
+      "definitions": [
+        {
+          "text": "A coin. See Sequin. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chequy": {
+      "word": "CHEQUY",
+      "definitions": [
+        {
+          "text": "Same as Checky.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherif": {
+      "word": "CHERIF",
+      "definitions": [
+        {
+          "text": "See Cherif.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherimoyer": {
+      "word": "CHERIMOYER",
+      "definitions": [
+        {
+          "text": "A small downy-leaved tree (Anona Cherimolia), with fragrant flowers. It is a native of Peru.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Its delicious fruit, which is succulent, dark purple, and similar to the custard apple of the West Indies.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherish": {
+      "word": "CHERISH",
+      "definitions": [
+        {
+          "text": "To treat with tenderness and affection; to nurture with care; to protect and aid. We were gentle among you, even as a nurse cherisheth her children. 1 Thess. ii. 7.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hold dear; to embrace with interest; to indulge; to encourage; to foster; to promote; as, to cherish religious principle. To cherish virtue and humanity. Burke. comfort; protect; support; See Nurture.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "admire",
+        "adore",
+        "appreciate",
+        "apprize",
+        "attend to",
+        "baby-sit",
+        "bear",
+        "bear in mind",
+        "bosom",
+        "brood over",
+        "care for",
+        "chaperon",
+        "cling to",
+        "clip",
+        "coddle",
+        "conserve",
+        "cosset",
+        "cradle",
+        "cultivate",
+        "dearly love",
+        "defend",
+        "delight in",
+        "dry-nurse",
+        "dwell on",
+        "dwell upon",
+        "embosom",
+        "embrace",
+        "entertain",
+        "esteem",
+        "fan the embers",
+        "feed",
+        "fondle",
+        "foster",
+        "guard",
+        "harbor",
+        "have",
+        "have and hold",
+        "have in mind",
+        "hold",
+        "hold dear",
+        "hold in mind",
+        "hold on to",
+        "hug",
+        "idolize",
+        "keep",
+        "keep in memory",
+        "keep in mind",
+        "keep in view",
+        "keep watch over",
+        "lavish care on",
+        "look after",
+        "look out for",
+        "look to",
+        "love to distraction",
+        "matronize",
+        "mind",
+        "minister to",
+        "mother",
+        "nourish",
+        "nurse",
+        "nurture",
+        "pamper",
+        "preserve",
+        "prize",
+        "protege",
+        "provide for",
+        "regard",
+        "relish",
+        "retain",
+        "revere",
+        "reverence",
+        "ride herd on",
+        "safeguard",
+        "save",
+        "see after",
+        "see to",
+        "shelter",
+        "shepherd",
+        "shield",
+        "spoon-feed",
+        "suckle",
+        "support",
+        "sustain",
+        "take care of",
+        "take charge of",
+        "tend",
+        "treasure",
+        "treasure up",
+        "value",
+        "venerate",
+        "watch",
+        "watch out for",
+        "watch over",
+        "wet-nurse",
+        "worship"
+      ]
+    },
+    "cherisher": {
+      "word": "CHERISHER",
+      "definitions": [
+        {
+          "text": "One who cherishes. The cherisher of my flesh and blood. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherishment": {
+      "word": "CHERISHMENT",
+      "definitions": [
+        {
+          "text": "Encouragement; comfort. [Obs.] Rich bounty and dear cherishment. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chermes": {
+      "word": "CHERMES",
+      "definitions": [
+        {
+          "text": "See Kermes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherogril": {
+      "word": "CHEROGRIL",
+      "definitions": [
+        {
+          "text": "See Cony.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherokees": {
+      "word": "CHEROKEES",
+      "definitions": [
+        {
+          "text": "An Appalachian tribe of Indians, formerly inhabiting the region about the head waters of the Tennessee River. They are now mostly settled in the Indian Territory, and have become one of the most civilized of the Indian Tribes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheroot": {
+      "word": "CHEROOT",
+      "definitions": [
+        {
+          "text": "A kind of cigar, originally brought from Mania, in the Philippine Islands; now often made of inferior or adulterated tabacco.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherry": {
+      "word": "CHERRY",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tree or shrub of the genus Prunus (Which also includes the plum) bearing a fleshy drupe with a bony stone; (a) The common garden cherry (Prunus Cerasus), of which several hundred varieties are cultivated for the fruit, some of which are, the begarreau, blackheart, black Tartarian, oxheart, morelle or morello, May-duke (corrupted from Médoc in France). (b) The wild cherry; as, prunus serotina (wild black cherry), valued for its timber; P. Virginiana (choke cherry), an American shrub which bears astringent fruit; P. avium and P. Padus, European trees (bird cherry).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fruit of the cherry tree, a drupe of various colors and flavors.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The timber of the cherry tree, esp. of the black cherry, used in cabinetmaking, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A peculiar shade of red, like that of a cherry. Barbadoes cherry. See under Barbadoes. called from its fondness for cherries. common in shrubberies, the poisonous leaves of which have a flavor like that of bitter almonds. with small, scarlet, intensely piquant cherry-shaped fruit. a hole. Shak. (b) A cherry stone. grisola); -- called also cherry chopper cherry snipe. Cherry tree, a tree that bears cherries.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Like a red cherry in color; ruddy; blooming; as, a cherry lip; cherry cheeks.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chersonese": {
+      "word": "CHERSONESE",
+      "definitions": [
+        {
+          "text": "A peninsula; a tract of land nearly surrounded by water, but united to a larger tract by a neck of land or isthmus; as, the Cimbric Chersonese, or Jutland; the Tauric Chersonese, or Crimea.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chert": {
+      "word": "CHERT",
+      "definitions": [
+        {
+          "text": "An impure, massive, flintlike quartz or hornstone, of a dull color.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherty": {
+      "word": "CHERTY",
+      "definitions": [
+        {
+          "text": "Like chert; containing chert; flinty.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherub": {
+      "word": "CHERUB",
+      "definitions": [
+        {
+          "text": "A mysterious composite being, the winged footstool and chariot of the Almighty, described in Ezekiel i. and x. I knew that they were the cherubim. Ezek. x. 20. He rode upon a cherub and did fly. Ps. xviii. 10.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A symbolical winged figure of unknown form used in connection with the mercy seat of the Jewish Ark and Temple. Ez. xxv. 18.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of a order of angels, variously represented in art. In European painting the cherubim have been shown as blue, to denote knowledge, as distinguished from the seraphim (see Seraph), and in later art the children's heads with wings are generally called cherubs.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A beautiful child; -- so called because artists have represented cherubs as beautiful children.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "angel",
+        "angel of light",
+        "angel of love",
+        "archangel",
+        "babe",
+        "baby",
+        "baby-doll",
+        "bairn",
+        "beatified soul",
+        "buttercup",
+        "canonized mortal",
+        "celestial",
+        "cherubim",
+        "chick",
+        "chickabiddy",
+        "child",
+        "chit",
+        "darling",
+        "dear",
+        "deary",
+        "doll",
+        "duck",
+        "duckling",
+        "heavenly being",
+        "hon",
+        "honey",
+        "honey bunch",
+        "honey child",
+        "innocent",
+        "kid",
+        "kitten",
+        "lamb",
+        "lambkin",
+        "little bugger",
+        "little fellow",
+        "little guy",
+        "little innocent",
+        "little one",
+        "little tad",
+        "little tot",
+        "love",
+        "lover",
+        "martyr",
+        "messenger of God",
+        "mite",
+        "nipper",
+        "offspring",
+        "patron saint",
+        "peewee",
+        "pet",
+        "petkins",
+        "precious",
+        "precious heart",
+        "principality",
+        "recording angel",
+        "saint",
+        "saved soul",
+        "seraph",
+        "seraphim",
+        "shaver",
+        "snookums",
+        "soul in glory",
+        "sugar",
+        "sweet",
+        "sweetheart",
+        "sweetie",
+        "sweetkins",
+        "sweets",
+        "tad",
+        "tot",
+        "wee tot"
+      ]
+    },
+    "cherubiccherubical": {
+      "word": "CHERUBIC; CHERUBICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to cherubs; angelic. \"The cherubic host.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherubim": {
+      "word": "CHERUBIM",
+      "definitions": [
+        {
+          "text": "The Hebrew plural of Cherub.. Cf. Seraphim. incorrect form, made by adding the English plural termination to the Hebrew plural cherubim instead of to the singular cherub.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherubin": {
+      "word": "CHERUBIN",
+      "definitions": [
+        {
+          "text": "Cherubic; angelic. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A cherub. [Obs.] Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherup": {
+      "word": "CHERUP",
+      "definitions": [
+        {
+          "text": "To make a short, shrill, cheerful sound; to chirp. See Chirrup. \"Cheruping birds.\" Drayton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To excite or urge on by making a short, shrill, cheerful sound; to cherup to. See Chirrup. He cherups brisk ear-erecting steed. Cowper.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A short, sharp, cheerful noise; a chirp; a chirrup; as, the cherup of a cricket.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chervil": {
+      "word": "CHERVIL",
+      "definitions": [
+        {
+          "text": "A plant (Anthriscus cerefolium) with pinnately divided aromatic leaves, of which several curled varieties are used in soups and salads.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ches": {
+      "word": "CHES",
+      "definitions": [
+        {
+          "text": "pret. of Chese. [Obs.] Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "chese": {
+      "word": "CHESE",
+      "definitions": [
+        {
+          "text": "To choose [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chesible": {
+      "word": "CHESIBLE",
+      "definitions": [
+        {
+          "text": "See Chasuble.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheslip": {
+      "word": "CHESLIP",
+      "definitions": [
+        {
+          "text": "The wood louse. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chess": {
+      "word": "CHESS",
+      "definitions": [
+        {
+          "text": "A game played on a chessboard, by two persons, with two differently colored sets of men, sixteen in each set. Each player has a king, a queen, two bishops, two knights, two castles or rooks, and eight pawns.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A species of brome grass (Bromus secalinus) which is a troublesome weed in wheat flelds, and is often erroneously regarded as degenerate or changed wheat; it bears a very slight resemblance to oats, and if reaped and ground up with wheat, so as to be used for food, is said to produce narcotic effects; -- called also cheat and Willard's bromus. [U. S.] chess, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Monopoly",
+        "Ping-Pong",
+        "Rugby",
+        "Scrabble",
+        "archery",
+        "association football",
+        "backgammon",
+        "badminton",
+        "bagatelle",
+        "ball",
+        "bandy",
+        "baseball",
+        "basketball",
+        "battledore and shuttlecock",
+        "beano",
+        "billiards",
+        "bingo",
+        "bowling",
+        "bowls",
+        "boxing",
+        "cat",
+        "catch",
+        "charades",
+        "checkers",
+        "climbing",
+        "crambo",
+        "cricket",
+        "croquet",
+        "curling",
+        "discus",
+        "dominoes",
+        "draughts",
+        "fencing",
+        "fishing",
+        "fives",
+        "football",
+        "ghost",
+        "gliding",
+        "go",
+        "golf",
+        "handball",
+        "hide-and-seek",
+        "hiking",
+        "hockey",
+        "hopscotch",
+        "horseshoes",
+        "hunting",
+        "hurdling",
+        "ice hockey",
+        "jacks",
+        "jackstones",
+        "jackstraws",
+        "keno",
+        "lacrosse",
+        "lawn tennis",
+        "leapfrog",
+        "lotto",
+        "luging",
+        "marbles",
+        "merels",
+        "motorcycling",
+        "mountaineering",
+        "mumble-the-peg",
+        "ninepins",
+        "pall-mall",
+        "pallone",
+        "pelota",
+        "polo",
+        "pool",
+        "post office",
+        "pushball",
+        "pyramids",
+        "quintain",
+        "quoits",
+        "racquets",
+        "riding",
+        "roller skating",
+        "rounders",
+        "rowing",
+        "sailing",
+        "sailplaning",
+        "sculling",
+        "shinny",
+        "shooting",
+        "shot-put",
+        "shuffleboard",
+        "skating",
+        "skeet",
+        "skeet shooting",
+        "ski-jumping",
+        "skiing",
+        "skin-diving",
+        "skittles",
+        "sledding",
+        "snooker",
+        "snorkel diving",
+        "snowmobiling",
+        "soccer",
+        "softball",
+        "sports",
+        "squash",
+        "stickball",
+        "surfing",
+        "table tennis",
+        "tennis",
+        "tenpins",
+        "tent pegging",
+        "tetherball",
+        "ticktacktoe",
+        "tiddlywinks",
+        "tilting",
+        "tipcat",
+        "tivoli",
+        "tobogganing",
+        "trapshooting",
+        "tug of war",
+        "volleyball",
+        "water polo",
+        "waterskiing",
+        "wrestling"
+      ]
+    },
+    "chessapple": {
+      "word": "CHESS-APPLE",
+      "definitions": [
+        {
+          "text": "The wild service of Europe (Purus torminalis).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chessboard": {
+      "word": "CHESSBOARD",
+      "definitions": [
+        {
+          "text": "The board used in the game of chess, having eight rows of alternate light and dark squares, eight in each row. See Checkerboard.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chessel": {
+      "word": "CHESSEL",
+      "definitions": [
+        {
+          "text": "The wooden mold in which cheese is pressed. Simmonds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chesses": {
+      "word": "CHESSES",
+      "definitions": [
+        {
+          "text": "The platforms, consisting of two or more planks doweled together, for the flooring of a temporary military bridge. Wilhelm. A singular, chess, is sometimes used. \"Each chess consists of three planks.\" Farrow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chessil": {
+      "word": "CHESSIL",
+      "definitions": [
+        {
+          "text": "Gravel or pebbles. Halliwell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chessman": {
+      "word": "CHESSMAN",
+      "definitions": [
+        {
+          "text": "A piece used in the game of chess.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chessom": {
+      "word": "CHESSOM",
+      "definitions": [
+        {
+          "text": "Mellow earth; mold. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chesstree": {
+      "word": "CHESSTREE",
+      "definitions": [
+        {
+          "text": "A piece of oak bolted perpendicularly on the side of a vessel, to aid in drawing down and securing the clew of the mainsail.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chessycopper": {
+      "word": "CHESSY COPPER",
+      "definitions": [
+        {
+          "text": "The mineral azurite, found in fine crystallization at Chessy, near Lyons; called also chessylite.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "chest": {
+      "word": "CHEST",
+      "definitions": [
+        {
+          "text": "A large box of wood, or other material, having, like a trunk, a lid, but no covering of skin, leather, or cloth. Heaps of money crowded in the chest. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A coffin. [Obs.] He is now dead and mailed in his cheste. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The part of the body inclosed by the ribs and breastbone; the thorax.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Com.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A case in which certain goods, as tea, opium, etc., are transported; hence, the quantity which such a case contains.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tight receptacle or box, usually for holding gas, steam, liguids, etc.; as, the steam chest of an engine; the wind chest of an organ. Bomb chest, See under Bomb.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To deposit in a chest; to hoard.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To place in a coffin. [Obs.] He dieth and is chested. Gen. 1. 26 (heading).",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Strife; contention; controversy. [Obs.] P. Plowman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Fort Knox",
+        "archives",
+        "armory",
+        "arsenal",
+        "attic",
+        "bag",
+        "bank",
+        "basement",
+        "bay",
+        "bin",
+        "bonded warehouse",
+        "boobs",
+        "bookcase",
+        "bosom",
+        "box",
+        "breast",
+        "breasts",
+        "brisket",
+        "bunker",
+        "bursary",
+        "bust",
+        "buttery",
+        "caddy",
+        "cargo dock",
+        "case",
+        "cash register",
+        "cashbox",
+        "casket",
+        "cellar",
+        "closet",
+        "coffer",
+        "coin box",
+        "conservatory",
+        "crate",
+        "crib",
+        "crop",
+        "cupboard",
+        "depository",
+        "depot",
+        "dock",
+        "drawer",
+        "dug",
+        "dump",
+        "exchequer",
+        "fisc",
+        "glory hole",
+        "godown",
+        "gold depository",
+        "hold",
+        "hutch",
+        "knockers",
+        "library",
+        "locker",
+        "lumber room",
+        "lumberyard",
+        "magasin",
+        "magazine",
+        "mama",
+        "mamelon",
+        "mamelonation",
+        "mammary gland",
+        "mammilla",
+        "mammillation",
+        "money chest",
+        "nenes",
+        "nipple",
+        "pap",
+        "papilla",
+        "penny bank",
+        "pigeon breast",
+        "piggy bank",
+        "pork barrel",
+        "public crib",
+        "public till",
+        "public treasury",
+        "public trough",
+        "rack",
+        "repertory",
+        "repository",
+        "reservoir",
+        "rick",
+        "safe",
+        "safe-deposit box",
+        "shelf",
+        "stack",
+        "stack room",
+        "stock room",
+        "storage",
+        "store",
+        "storehouse",
+        "storeroom",
+        "strong room",
+        "strongbox",
+        "subtreasury",
+        "supply base",
+        "supply depot",
+        "tank",
+        "teat",
+        "thorax",
+        "till",
+        "tit",
+        "tits",
+        "titties",
+        "titty",
+        "treasure house",
+        "treasure room",
+        "treasure-house",
+        "treasury",
+        "trunk",
+        "udder",
+        "vat",
+        "vault",
+        "warehouse",
+        "wine cellar"
+      ]
+    },
+    "chested": {
+      "word": "CHESTED",
+      "definitions": [
+        {
+          "text": "Having (such) a chest; -- in composition; as, broad-chested; narrow-chested.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chesterlite": {
+      "word": "CHESTERLITE",
+      "definitions": [
+        {
+          "text": "A variety of feldspar found in crystals in the county of Chester, Pennsylvania.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chesteyn": {
+      "word": "CHESTEYN",
+      "definitions": [
+        {
+          "text": "The chestnut tree. [Obs.] Wilwe, elm, plane, assch, box, chesteyn. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chestfounder": {
+      "word": "CHEST FOUNDER",
+      "definitions": [
+        {
+          "text": "A rheumatic affection of the muscles of the breast and fore legs of a horse, affecting motion and respiration.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "chestnut": {
+      "word": "CHESTNUT",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The edible nut of a forest tree (Castanea vesce) of Europe and America. Commonly two or more of the nuts grow in a prickly bur.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The tree itself, or its light, coarse-grained timber, used for ornamental work, furniture, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bright brown color, like that of the nut.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The horse chestnut (often so used in England).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the round, or oval, horny plates on the inner sides of the legs of the horse, and allied animals.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An old joke or story. [Slang] Chestnut tree, a tree that bears chestnuts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining of a chestnut; of a reddish brown color; as, chestnut curls.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Joe Miller",
+        "Titian",
+        "adust",
+        "auburn",
+        "banality",
+        "bay",
+        "bay-colored",
+        "bayard",
+        "brazen",
+        "bromide",
+        "bronze",
+        "bronze-colored",
+        "bronzed",
+        "brownish-red",
+        "buckskin",
+        "calico pony",
+        "carroty",
+        "castaneous",
+        "chestnut-brown",
+        "cliche",
+        "commonplace",
+        "commonplace expression",
+        "copper",
+        "copper-colored",
+        "coppery",
+        "corn",
+        "cupreous",
+        "dapple-gray",
+        "dun",
+        "erythristic",
+        "familiar tune",
+        "ferruginous",
+        "foxy",
+        "gray",
+        "grizzle",
+        "hackneyed saying",
+        "henna",
+        "joke with whiskers",
+        "lieu commun",
+        "liver-brown",
+        "liver-colored",
+        "livid-brown",
+        "locus communis",
+        "mahogany",
+        "old joke",
+        "old saw",
+        "old song",
+        "old story",
+        "old turkey",
+        "old wheeze",
+        "paint",
+        "painted pony",
+        "piebald",
+        "pinto",
+        "platitude",
+        "prosaicism",
+        "prosaism",
+        "prose",
+        "red-crested",
+        "red-haired",
+        "red-polled",
+        "red-tufted",
+        "reddish-brown",
+        "reiteration",
+        "retold story",
+        "roan",
+        "rubiginous",
+        "rufous",
+        "russet",
+        "russety",
+        "rust",
+        "rust-colored",
+        "rusty",
+        "skewbald",
+        "sorrel",
+        "stereotyped saying",
+        "sunburned",
+        "terra-cotta",
+        "trite joke",
+        "trite saying",
+        "triticism",
+        "twice-told tale",
+        "warmed-over cabbage",
+        "xanthous"
+      ]
+    },
+    "chetah": {
+      "word": "CHETAH",
+      "definitions": [
+        {
+          "text": "See Cheetah.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chetvert": {
+      "word": "CHETVERT",
+      "definitions": [
+        {
+          "text": "A measure of grain equal to 0.7218 of an imperial quarter, or 5.95 Winchester bushels. [Russia]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevachie": {
+      "word": "CHEVACHIE",
+      "definitions": [
+        {
+          "text": "See Chivachie. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevage": {
+      "word": "CHEVAGE",
+      "definitions": [
+        {
+          "text": "See Chiefage. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheval": {
+      "word": "CHEVAL",
+      "definitions": [
+        {
+          "text": "A horse; hence, a support or frame. Cheval glass, a mirror swinging in a frame, and large enough to reflect the full leght figure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevaldefrise": {
+      "word": "CHEVAL-DE-FRISE",
+      "definitions": [
+        {
+          "text": "A piece of timber or an iron barrel traversed with iron-pointed spikes or spears, five or six feet long, used to defend a passage, stop a breach, or impede the advance of cavalry, etc. Obstructions of chain, boom, and cheval-de-frise. W. Irving.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevalier": {
+      "word": "CHEVALIER",
+      "definitions": [
+        {
+          "text": "A horseman; a knight; a gallant young man. \"Mount, chevaliers; to arms.\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of certain orders of knighthood. Chevalier d'industrie ( sharper. Stuart (son of James II.), called \"The Pretender.\" -- The Young Chevalier, Charles Edward Stuart, son of the Chevalier St. George.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Bayard",
+        "Don Quixote",
+        "Gawain",
+        "Lancelot",
+        "Ritter",
+        "Sidney",
+        "Sir Galahad",
+        "bachelor",
+        "banneret",
+        "baronet",
+        "broncobuster",
+        "buckaroo",
+        "caballero",
+        "cavalier",
+        "cavalryman",
+        "circus rider",
+        "companion",
+        "cowboy",
+        "cowgirl",
+        "cowpuncher",
+        "equestrian",
+        "equestrienne",
+        "gallant",
+        "gaucho",
+        "horse soldier",
+        "horseback rider",
+        "horsebacker",
+        "horseman",
+        "horsewoman",
+        "jockey",
+        "knight",
+        "knight bachelor",
+        "knight banneret",
+        "knight baronet",
+        "knight-errant",
+        "mounted policeman",
+        "postboy",
+        "postilion",
+        "puncher",
+        "rider",
+        "roughrider",
+        "steeplechaser",
+        "trick rider",
+        "vaquero"
+      ]
+    },
+    "chevaux": {
+      "word": "CHEVAUX",
+      "definitions": [
+        {
+          "text": "See Cheval.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheve": {
+      "word": "CHEVE",
+      "definitions": [
+        {
+          "text": "To come to an issue; to turn out; to succed; as, to cheve well in a enterprise. [Prov. or Obs.] Holland.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevelure": {
+      "word": "CHEVELURE",
+      "definitions": [
+        {
+          "text": "A hairlike envelope. The nucleus and chevelure of nebulous star. Sir. W. Hershel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheven": {
+      "word": "CHEVEN",
+      "definitions": [
+        {
+          "text": "A river fish; the chub. Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheventein": {
+      "word": "CHEVENTEIN",
+      "definitions": [
+        {
+          "text": "A variant of Chieftain. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheveril": {
+      "word": "CHEVERIL",
+      "definitions": [
+        {
+          "text": "Soft leather made of kid skin. Fig.: Used as a symbol of flexibility. [Obs.] Here's wit of cheveril, that stretches from an inch narrow to an ell broad. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Made of cheveril; pliant. [Obs.] A cheveril conscience and a searching wit. Drayton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheverliize": {
+      "word": "CHEVERLIIZE",
+      "definitions": [
+        {
+          "text": "To make as pliable as kid leather. [Obs.] Br. Montagu.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevet": {
+      "word": "CHEVET",
+      "definitions": [
+        {
+          "text": "The extreme end of the chancel or choir; properly the round or polygonal part.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheviot": {
+      "word": "CHEVIOT",
+      "definitions": [
+        {
+          "text": "A valuable breed of mountain sheep in Scotland, which takes its name from the Cheviot hills.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A woolen fabric, for men's clothing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevisance": {
+      "word": "CHEVISANCE",
+      "definitions": [
+        {
+          "text": "Achievement; deed; performance. [Obs.] Fortune, the foe of famous chevisance. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bargain; profit; gain. [Obs.] Piers Plowman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(O. Eng. Law) (a) A making of contracts. (b) A bargain or contract; an agreement about a matter in dispute, such as a debt; a business compact. (c) An unlawful agreement or contract.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevrette": {
+      "word": "CHEVRETTE",
+      "definitions": [
+        {
+          "text": "A machine for raising guns or mortar into their carriages.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevron": {
+      "word": "CHEVRON",
+      "definitions": [
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the nine honorable ordinaries, consisting of two broad bands of the width of the bar, issuing, respectively from the dexter and sinister bases of the field and conjoined at its center.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A distinguishing mark, above the elow, on the sleeve of a noncommisioned officer's coat.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A zigzag molding, or group of moldings, common in Norman architecture. Chevron bones (Anat.), The V-shaped subvertebral arches which inclose the caudal blood vessels in some animals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Hershey bar",
+        "L",
+        "achievement",
+        "alerion",
+        "angle",
+        "animal charge",
+        "annulet",
+        "apex",
+        "argent",
+        "armorial bearings",
+        "armory",
+        "arms",
+        "aviation badge",
+        "azure",
+        "badge",
+        "bandeau",
+        "bar",
+        "bar sinister",
+        "baton",
+        "bearings",
+        "bend",
+        "bend sinister",
+        "bifurcation",
+        "bight",
+        "billet",
+        "blazon",
+        "blazonry",
+        "bordure",
+        "broad arrow",
+        "cadency mark",
+        "cant",
+        "canton",
+        "chaplet",
+        "charge",
+        "chicken",
+        "chief",
+        "coat of arms",
+        "cockatrice",
+        "coin",
+        "corner",
+        "coronet",
+        "crank",
+        "crankiness",
+        "crescent",
+        "crest",
+        "crook",
+        "crookedness",
+        "cross",
+        "cross moline",
+        "crotchet",
+        "crown",
+        "deflection",
+        "device",
+        "difference",
+        "differencing",
+        "dogleg",
+        "eagle",
+        "elbow",
+        "ell",
+        "epaulet",
+        "ermine",
+        "ermines",
+        "erminites",
+        "erminois",
+        "escutcheon",
+        "falcon",
+        "fess",
+        "fess point",
+        "field",
+        "file",
+        "flanch",
+        "fleur-de-lis",
+        "flexuosity",
+        "fork",
+        "fret",
+        "fur",
+        "furcation",
+        "fusil",
+        "garland",
+        "griffin",
+        "gules",
+        "gyron",
+        "hairpin",
+        "hash mark",
+        "hatchment",
+        "helmet",
+        "heraldic device",
+        "honor point",
+        "hook",
+        "impalement",
+        "impaling",
+        "inescutcheon",
+        "inflection",
+        "insignia of branch",
+        "knee",
+        "label",
+        "lion",
+        "lozenge",
+        "mantling",
+        "marshaling",
+        "martlet",
+        "mascle",
+        "metal",
+        "motto",
+        "mullet",
+        "nombril point",
+        "nook",
+        "oak leaf",
+        "octofoil",
+        "or",
+        "ordinary",
+        "organization insignia",
+        "orle",
+        "overseas bar",
+        "pale",
+        "paly",
+        "parachute badge",
+        "patch",
+        "pean",
+        "pheon",
+        "pip",
+        "point",
+        "purpure",
+        "quarter",
+        "quartering",
+        "quoin",
+        "rose",
+        "sable",
+        "saltire",
+        "scutcheon",
+        "service stripe",
+        "shield",
+        "shoulder patch",
+        "shoulder sleeve insignia",
+        "spread eagle",
+        "star",
+        "stripe",
+        "submarine badge",
+        "subordinary",
+        "swerve",
+        "switchback",
+        "tenne",
+        "tincture",
+        "torse",
+        "tressure",
+        "unicorn",
+        "vair",
+        "veer",
+        "vert",
+        "vertex",
+        "wreath",
+        "yale",
+        "zag",
+        "zig",
+        "zigzag",
+        "zigzaggery"
+      ]
+    },
+    "chevroned": {
+      "word": "CHEVRONED",
+      "definitions": [
+        {
+          "text": "Having a chevron; decorated with an ornamental figure of a zigzag from. [A garment] whose nether parts, with their bases, were of watchet cloth of silver, chevroned all over with lace. B. Jonson.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevronel": {
+      "word": "CHEVRONEL",
+      "definitions": [
+        {
+          "text": "A bearing like a chevron, but of only half its width.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevronwise": {
+      "word": "CHEVRONWISE",
+      "definitions": [
+        {
+          "text": "In the manner of a chevron; as, the field may be divided chevronwise.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevrotain": {
+      "word": "CHEVROTAIN",
+      "definitions": [
+        {
+          "text": "A small ruminant of the family Tragulidæ a allied to the musk deer. It inhabits Africa and the East Indies. See Kanchil.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chevy": {
+      "word": "CHEVY",
+      "definitions": [
+        {
+          "text": "See Chivy, v. t. [Slang, Eng.] One poor fellow was chevied about among the casks in the storm for ten minutes. London Times.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chew": {
+      "word": "CHEW",
+      "definitions": [
+        {
+          "text": "To bite and grind with the teeth; to masticate.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To ruminate mentally; to meditate on. He chews revenge, abjuring his offense. Prior. To chew the cud, to chew the food ocer again, as a cow; to ruminate; hence, to meditate. Every beast the parteth the hoof, and cleaveth the cleft into two claws, and cheweth the cud among the beasts, that ye shall eat. Deut. xxiv. 6.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To perform the action of biting and grinding with the teeth; to ruminate; to meditate. old politicians chew wisdom past. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "That which is chewed; that which is held in the mouth at once; a cud. [Law]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bawl out",
+        "bite",
+        "bolus",
+        "bullshit",
+        "carpet",
+        "cavendish",
+        "chain-smoke",
+        "champ",
+        "chat",
+        "chaw",
+        "chew ass",
+        "chew out",
+        "chew over",
+        "chew the cud",
+        "chew up",
+        "chewing tobacco",
+        "chomp",
+        "chump",
+        "consider",
+        "consume",
+        "converse",
+        "crunch",
+        "crush",
+        "cud",
+        "cuss out",
+        "cut plug",
+        "devour",
+        "drag",
+        "draw",
+        "eat",
+        "eating tobacco",
+        "fid",
+        "give a going-over",
+        "give hail Columbia",
+        "give hell",
+        "give the deuce",
+        "give what-for",
+        "gnash",
+        "gnaw",
+        "gob",
+        "gossip",
+        "grind",
+        "gum",
+        "inhale",
+        "inhale snuff",
+        "jack up",
+        "jaw",
+        "lambaste",
+        "macerate",
+        "mash",
+        "masticate",
+        "morsel",
+        "mouth",
+        "mouthful",
+        "mumble",
+        "munch",
+        "navy",
+        "navy plug",
+        "nibble",
+        "nip",
+        "palaver",
+        "pigtail",
+        "ponder",
+        "puff",
+        "pull",
+        "pulp",
+        "pulpify",
+        "quid",
+        "ream",
+        "ream ass",
+        "ream out",
+        "rebuke",
+        "reprimand",
+        "review",
+        "revile",
+        "ruminate",
+        "scold",
+        "scrunch",
+        "sit on",
+        "smash",
+        "smoke",
+        "snap",
+        "squash",
+        "swallow",
+        "take snuff",
+        "talk",
+        "tell off",
+        "tobacco juice",
+        "tongue-lash",
+        "twist",
+        "vituperate",
+        "wig"
+      ]
+    },
+    "chewer": {
+      "word": "CHEWER",
+      "definitions": [
+        {
+          "text": "One who chews.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chewet": {
+      "word": "CHEWET",
+      "definitions": [
+        {
+          "text": "A kind of meat pie. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chewink": {
+      "word": "CHEWINK",
+      "definitions": [
+        {
+          "text": "An american bird (Pipilo erythrophthalmus) of the Finch family, so called from its note; -- called also towhee bunting and ground robin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheyennes": {
+      "word": "CHEYENNES",
+      "definitions": [
+        {
+          "text": "A warlike tribe of indians, related to the blackfeet, formerly inhabiting the region of Wyoming, but now mostly on reservations in the Indian Territory. They are noted for their horsemanship.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

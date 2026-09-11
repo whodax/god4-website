@@ -1,0 +1,877 @@
+{
+  "version": "v1",
+  "entries": {
+    "hep": {
+      "word": "HEP",
+      "definitions": [
+        {
+          "text": "See Hip, the fruit of the dog-rose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "alive to",
+        "appreciative of",
+        "apprised of",
+        "awake to",
+        "aware of",
+        "behind the curtain",
+        "behind the scenes",
+        "canny",
+        "cognizant of",
+        "conscious of",
+        "hep to",
+        "in the know",
+        "in the secret",
+        "informed of",
+        "knowing",
+        "let into",
+        "mindful of",
+        "nimble-witted",
+        "no stranger to",
+        "on to",
+        "privy to",
+        "quick",
+        "quick-witted",
+        "seized of",
+        "sensible of",
+        "sensible to",
+        "sharp",
+        "sharp-witted",
+        "slick",
+        "smart",
+        "streetwise",
+        "undeceived",
+        "wise to"
+      ]
+    },
+    "hepar": {
+      "word": "HEPAR",
+      "definitions": [
+        {
+          "text": "(Old Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Liver of sulphur; a substance of a liver-brown color, sometimes used in medicine. It is formed by fusing sulphur with carbonates of the alkalies (esp. potassium), and consists essentially of alkaline sulphides. Called also hepar sulphuris (.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any substance resembling hepar proper, in appearance; specifically, in homeopathy, calcium sulphide, called also hepar sulphuris calcareum ( Hepar antimonii ( (Old Chem.), a substance, of a liver-brown color, obtained by fusing together antimony sulphide with alkaline sulphides, and consisting of sulphantimonites of the alkalies; -- called also liver of antimony.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatic": {
+      "word": "HEPATIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the liver; as, hepatic artery; hepatic diseases.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Resembling the liver in color or in form; as, hepatic cinnabar.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to, or resembling, the plants called Hepaticæ, or scale mosses and liverworts. Hepatic duct (Anat.), any biliary duct; esp., the duct, or one of the ducts, which carries the bile from the liver to the cystic and common bile ducts. See Illust., under Digestive.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatica": {
+      "word": "HEPATICA",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A genus of pretty spring flowers closely related to Anemone; squirrel cup.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any plant, usually procumbent and mosslike, of the cryptogamous class Hepaticæ; -- called also scale moss and liverwort. See Hepaticæ, in the Supplement.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatical": {
+      "word": "HEPATICAL",
+      "definitions": [
+        {
+          "text": "Hepatic. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatite": {
+      "word": "HEPATITE",
+      "definitions": [
+        {
+          "text": "A variety of barite emitting a fetid odor when rubbed or heated.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatitis": {
+      "word": "HEPATITIS",
+      "definitions": [
+        {
+          "text": "Inflammation of the liver.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "African lethargy",
+        "Asiatic cholera",
+        "Chagres fever",
+        "German measles",
+        "Haverhill fever",
+        "acute articular rheumatism",
+        "adenoiditis",
+        "adrenitis",
+        "ague",
+        "alkali disease",
+        "amebiasis",
+        "amebic dysentery",
+        "anthrax",
+        "appendicitis",
+        "arteritis",
+        "arthritis deformans",
+        "arthritis fungosa",
+        "arthritis pauperum",
+        "atrophic arthritis",
+        "atrophic inflammation",
+        "bacillary dysentery",
+        "bastard measles",
+        "black death",
+        "black fever",
+        "blackwater fever",
+        "blennorrhagic arthritis",
+        "brain fever",
+        "breakbone fever",
+        "bronchitis",
+        "brucellosis",
+        "bubonic plague",
+        "bunion",
+        "bursitis",
+        "cachectic fever",
+        "capillaritis",
+        "carditis",
+        "catarrh",
+        "catarrhal inflammation",
+        "cerebellitis",
+        "cerebral meningitis",
+        "cerebral rheumatism",
+        "cerebritis",
+        "cerebrospinal meningitis",
+        "chicken pox",
+        "cholangitis",
+        "cholecystitis",
+        "cholera",
+        "chronic infectious arthritis",
+        "chronic inflammation",
+        "cirrhosis",
+        "cirrhotic inflammation",
+        "climactic arthritis",
+        "clitoritis",
+        "colitis",
+        "collagen disease",
+        "conjunctivitis",
+        "cowpox",
+        "cystitis",
+        "dandy fever",
+        "deer fly fever",
+        "degenerative arthritis",
+        "dengue",
+        "dengue fever",
+        "diffuse inflammation",
+        "diphtheria",
+        "dumdum fever",
+        "dysentery",
+        "elephantiasis",
+        "encephalitis",
+        "encephalitis lethargica",
+        "endocarditis",
+        "enteric fever",
+        "enteritis",
+        "equine encephalomyelitis",
+        "erysipelas",
+        "exudative inflammation",
+        "famine fever",
+        "fibroid inflammation",
+        "five-day fever",
+        "flu",
+        "focal inflammation",
+        "frambesia",
+        "gastritis",
+        "gingivitis",
+        "glandular fever",
+        "glossitis",
+        "gonococcal arthritis",
+        "gonorrheal arthritis",
+        "gonorrheal rheumatism",
+        "gout",
+        "gouty arthritis",
+        "grippe",
+        "hansenosis",
+        "hemophilic arthritis",
+        "hepatoma",
+        "herpes",
+        "herpes simplex",
+        "herpes zoster",
+        "histoplasmosis",
+        "hookworm",
+        "hydrophobia",
+        "hyperplastic inflammation",
+        "hypertrophic arthritis",
+        "hypertrophic inflammation",
+        "icterus",
+        "infantile paralysis",
+        "infectional arthritis",
+        "infectious hepatitis",
+        "infectious mononucleosis",
+        "inflammation",
+        "inflammatory rheumatism",
+        "influenza",
+        "irritable bowel syndrome",
+        "jail fever",
+        "jaundice",
+        "jungle rot",
+        "kala azar",
+        "kissing disease",
+        "laryngitis",
+        "lepra",
+        "leprosy",
+        "leptospirosis",
+        "loa loa",
+        "loaiasis",
+        "lockjaw",
+        "lumbago",
+        "madness",
+        "malaria",
+        "malarial fever",
+        "marsh fever",
+        "mastoiditis",
+        "measles",
+        "meningitis",
+        "menopausal arthritis",
+        "metastatic inflammation",
+        "metritis",
+        "milk leg",
+        "milzbrand",
+        "mucous colitis",
+        "mumps",
+        "mumps meningitis",
+        "myelitis",
+        "necrotic inflammation",
+        "nephritis",
+        "neuritis",
+        "obliterative inflammation",
+        "ophthalitis",
+        "ophthalmia",
+        "orchitis",
+        "ornithosis",
+        "osseous rheumatism",
+        "osteitis",
+        "osteoarthritis",
+        "osteomyelitis",
+        "otitis",
+        "ovaritis",
+        "paradental pyorrhea",
+        "paratyphoid fever",
+        "parotitis",
+        "parrot fever",
+        "penitis",
+        "pericarditis",
+        "periodontitis",
+        "peritonitis",
+        "pertussis",
+        "pharyngitis",
+        "phlebitis",
+        "pneumonia",
+        "podagra",
+        "polio",
+        "poliomyelitis",
+        "polyarthritis rheumatism",
+        "ponos",
+        "proliferative arthritis",
+        "prostatitis",
+        "psittacosis",
+        "pyonephritis",
+        "pyorrhea",
+        "pyorrhea alveolaris",
+        "rabbit fever",
+        "rabies",
+        "rat-bite fever",
+        "reactive inflammation",
+        "relapsing fever",
+        "rheumatic fever",
+        "rheumatism",
+        "rheumatiz",
+        "rheumatoid arthritis",
+        "rhinitis",
+        "rickettsialpox",
+        "ringworm",
+        "rubella",
+        "rubeola",
+        "scarlatina",
+        "scarlet fever",
+        "schistosomiasis",
+        "sclerosing inflammation",
+        "septic sore throat",
+        "seroplastic inflammation",
+        "serous inflammation",
+        "serum hepatitis",
+        "shingles",
+        "simple inflammation",
+        "sinusitis",
+        "sleeping sickness",
+        "sleepy sickness",
+        "smallpox",
+        "snail fever",
+        "spastic colon",
+        "specific inflammation",
+        "splenic fever",
+        "spotted fever",
+        "strep throat",
+        "subacute rheumatism",
+        "suppurative arthritis",
+        "suppurative inflammation",
+        "swamp fever",
+        "syphilitic arthritis",
+        "tennis elbow",
+        "testitis",
+        "tetanus",
+        "thrombophlebitis",
+        "thrush",
+        "tinea",
+        "tonsilitis",
+        "torticollis",
+        "toxic inflammation",
+        "traumatic inflammation",
+        "trench fever",
+        "trench mouth",
+        "tuberculosis",
+        "tuberculous arthritis",
+        "tuberculous rheumatism",
+        "tularemia",
+        "typhoid",
+        "typhoid fever",
+        "typhus",
+        "typhus fever",
+        "ulcerative colitis",
+        "undulant fever",
+        "uratic arthritis",
+        "ureteritis",
+        "urethral arthritis",
+        "urethritis",
+        "uteritis",
+        "vaccinia",
+        "vaginitis",
+        "varicella",
+        "variola",
+        "venereal disease",
+        "vertebral arthritis",
+        "viral dysentery",
+        "visceral rheumatism",
+        "vulvitis",
+        "whooping cough",
+        "wryneck",
+        "yaws",
+        "yellow fever",
+        "yellow jack",
+        "zona",
+        "zoster"
+      ]
+    },
+    "hepatization": {
+      "word": "HEPATIZATION",
+      "definitions": [
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Impregnating with sulphureted hydrogen gas. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. F. hépatisation.] (Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Conversion into a substance resembling the liver; a state of the lungs when gorged with effused matter, so that they are no longer pervious to the air.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatize": {
+      "word": "HEPATIZE",
+      "definitions": [
+        {
+          "text": "To impregnate with sulphureted hydrogen gas, formerly called hepatic gas. On the right . . . were two wells of hepatized water. Barrow.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To gorge with effused matter, as the lungs.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatocele": {
+      "word": "HEPATOCELE",
+      "definitions": [
+        {
+          "text": "Hernia of the liver.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatocystic": {
+      "word": "HEPATOCYSTIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the liver and gall bladder; as, the hepatocystic ducts.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatogastric": {
+      "word": "HEPATOGASTRIC",
+      "definitions": [
+        {
+          "text": "See Gastrohepatic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatogenichepatogenous": {
+      "word": "HEPATOGENIC; HEPATOGENOUS",
+      "definitions": [
+        {
+          "text": "Arising from the liver; due to a condition of the liver; as, hepatogenic jaundice.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatology": {
+      "word": "HEPATOLOGY",
+      "definitions": [
+        {
+          "text": "The science which treats of the liver; a treatise on the liver.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatopancreas": {
+      "word": "HEPATO-PANCREAS",
+      "definitions": [
+        {
+          "text": "A digestive gland in Crustacea, Mollusca, etc., usually called the liver, but different from the liver of vertebrates.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatorenal": {
+      "word": "HEPATORENAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the liver and kidneys; as, the hepatorenal ligament.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepatoscopy": {
+      "word": "HEPATOSCOPY",
+      "definitions": [
+        {
+          "text": "Divination by inspecting the liver of animals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heppelwhite": {
+      "word": "HEPPELWHITE",
+      "definitions": [
+        {
+          "text": "Designating a light and elegant style developed in England under George III., chiefly by Messrs. A.Heppelwhite & Co.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heppen": {
+      "word": "HEPPEN",
+      "definitions": [
+        {
+          "text": "Neat; fit; comfortable. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepper": {
+      "word": "HEPPER",
+      "definitions": [
+        {
+          "text": "A young salmon; a parr.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hepta": {
+      "word": "HEPTA",
+      "definitions": [
+        {
+          "text": "A combining form from Gr. \"epta`, seven.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptachord": {
+      "word": "HEPTACHORD",
+      "definitions": [
+        {
+          "text": "(Anc. Mus.) (a) A system of seven sounds. (b) A lyre with seven chords.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anc. Poet.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A composition sung to the sound of seven chords or tones. Moore (Encyc. of Music).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptad": {
+      "word": "HEPTAD",
+      "definitions": [
+        {
+          "text": "An atom which has a valence of seven, and which can be theoretically combined with, substituted for, or replaced by, seven monad atoms or radicals; as, iodine is a heptad in iodic acid. Also used as an adjective.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptade": {
+      "word": "HEPTADE",
+      "definitions": [
+        {
+          "text": "The sum or number of seven.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptaglot": {
+      "word": "HEPTAGLOT",
+      "definitions": [
+        {
+          "text": "A book in seven languages.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptagon": {
+      "word": "HEPTAGON",
+      "definitions": [
+        {
+          "text": "A plane figure consisting of seven sides and having seven angles.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptagonal": {
+      "word": "HEPTAGONAL",
+      "definitions": [
+        {
+          "text": "Having seven angles or sides. Heptagonal numbers (Arith.), the numbers of the series 1, 7, 18, 34, 55, etc., being figurate numbers formed by adding successively the terms of the arithmetical series 1, 6, 11, 16, 21, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptagynia": {
+      "word": "HEPTAGYNIA",
+      "definitions": [
+        {
+          "text": "A Linnæan order of plants having seven pistils.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptagynianheptagynous": {
+      "word": "HEPTAGYNIAN; HEPTAGYNOUS",
+      "definitions": [
+        {
+          "text": "Having seven pistils.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptahedron": {
+      "word": "HEPTAHEDRON",
+      "definitions": [
+        {
+          "text": "A solid figure with seven sides.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptamerous": {
+      "word": "HEPTAMEROUS",
+      "definitions": [
+        {
+          "text": "Consisting of seven parts, or having the parts in sets of sevens. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptandria": {
+      "word": "HEPTANDRIA",
+      "definitions": [
+        {
+          "text": "A Linnæan class of plants having seven stamens.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptandrianheptandrous": {
+      "word": "HEPTANDRIAN; HEPTANDROUS",
+      "definitions": [
+        {
+          "text": "Having seven stamens.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptane": {
+      "word": "HEPTANE",
+      "definitions": [
+        {
+          "text": "Any one of several isometric hydrocarbons, C7H16, of the paraffin series (nine are possible, four are known); -- so called because the molecule has seven carbon atoms. Specifically, a colorless liquid, found as a constituent of petroleum, in the tar oil of cannel coal, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptangular": {
+      "word": "HEPTANGULAR",
+      "definitions": [
+        {
+          "text": "Having seven angles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptaphyllous": {
+      "word": "HEPTAPHYLLOUS",
+      "definitions": [
+        {
+          "text": "Having seven leaves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptarch": {
+      "word": "HEPTARCH",
+      "definitions": [
+        {
+          "text": "Same as Heptarchist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptarchic": {
+      "word": "HEPTARCHIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a heptarchy; constituting or consisting of a heptarchy. T. Warton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptarchist": {
+      "word": "HEPTARCHIST",
+      "definitions": [
+        {
+          "text": "A ruler of one division of a heptarchy. [Written also heptarch.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptarchy": {
+      "word": "HEPTARCHY",
+      "definitions": [
+        {
+          "text": "A government by seven persons; also, a country under seven rulers. divided into seven kingdoms; as, the Saxon heptachy, which consisted of Kent, the South Saxons (Sussex), West Saxons (Wessex), East Saxons (Essex), the East Angles, Mercia, and Northumberland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptaspermous": {
+      "word": "HEPTASPERMOUS",
+      "definitions": [
+        {
+          "text": "Having seven seeds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptastich": {
+      "word": "HEPTASTICH",
+      "definitions": [
+        {
+          "text": "A composition consisting of seven lines or verses.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptateuch": {
+      "word": "HEPTATEUCH",
+      "definitions": [
+        {
+          "text": "The first seven books of the Testament.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptavalent": {
+      "word": "HEPTAVALENT",
+      "definitions": [
+        {
+          "text": "Having seven units of attractive force or affinity; -- said of heptad elements or radicals.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptene": {
+      "word": "HEPTENE",
+      "definitions": [
+        {
+          "text": "Same as Heptylene.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptine": {
+      "word": "HEPTINE",
+      "definitions": [
+        {
+          "text": "Any one of a series of unsaturated metameric hydrocarbons, C7H12, of the acetylene series.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptoic": {
+      "word": "HEPTOIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or derived from, heptane; as, heptoic acid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptone": {
+      "word": "HEPTONE",
+      "definitions": [
+        {
+          "text": "A liquid hydrocarbon, C7H10, of the valylene series.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptree": {
+      "word": "HEP TREE",
+      "definitions": [
+        {
+          "text": "The wild dog-rose.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptyl": {
+      "word": "HEPTYL",
+      "definitions": [
+        {
+          "text": "A compound radical, C7H15, regarded as the essential radical of heptane and a related series of compounds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptylene": {
+      "word": "HEPTYLENE",
+      "definitions": [
+        {
+          "text": "A colorless liquid hydrocarbon, C7H14, of the ethylene series; also, any one of its isomers. Called also heptene.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heptylic": {
+      "word": "HEPTYLIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or derived from, heptyl or heptane; as, heptylic alcohol. Cf. .",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,814 @@
+{
+  "version": "v1",
+  "entries": {
+    "fossa": {
+      "word": "FOSSA",
+      "definitions": [
+        {
+          "text": "A pit, groove, cavity, or depression, of greater or less depth; as, the temporal fossa on the side of the skull; the nasal fossæ containing the nostrils in most birds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossane": {
+      "word": "FOSSANE",
+      "definitions": [
+        {
+          "text": "A species of civet (Viverra fossa) resembling the genet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fosse": {
+      "word": "FOSSE",
+      "definitions": [
+        {
+          "text": "(Fort.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ditch or moat.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Fossa. Fosse road. See Fosseway.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abri",
+        "approach trench",
+        "aqueduct",
+        "bunker",
+        "canal",
+        "canalization",
+        "channel",
+        "communication trench",
+        "countermine",
+        "coupure",
+        "crimp",
+        "cut",
+        "dike",
+        "ditch",
+        "double sap",
+        "dugout",
+        "entrenchment",
+        "fire trench",
+        "flying sap",
+        "fortified tunnel",
+        "foxhole",
+        "gallery",
+        "goffer",
+        "gutter",
+        "ha-ha",
+        "kennel",
+        "mine",
+        "moat",
+        "parallel",
+        "pleat",
+        "sap",
+        "slit trench",
+        "sunk fence",
+        "trench",
+        "trough",
+        "tunnel"
+      ]
+    },
+    "fosset": {
+      "word": "FOSSET",
+      "definitions": [
+        {
+          "text": "A faucet. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossette": {
+      "word": "FOSSETTE",
+      "definitions": [
+        {
+          "text": "A little hollow; hence, a dimple.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small, deep-centered ulcer of the transparent cornea.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fosseway": {
+      "word": "FOSSEWAY",
+      "definitions": [
+        {
+          "text": "One of the great military roads constructed by the Romans in England and other parts of Europe; -- so called from the fosse or ditch on each side for keeping it dry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossick": {
+      "word": "FOSSICK",
+      "definitions": [
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To search for gold by picking at stone or earth or among roots in isolated spots, picking over abandoned workings, etc.; hence, to steal gold or auriferous matter from another's claim. [Australia]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To search about; to rummage. A man who has fossicked in nature's byways. D. Macdonald.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossil": {
+      "word": "FOSSIL",
+      "definitions": [
+        {
+          "text": "Dug out of the eart; as, fossil coal; fossil salt.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Paleon.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Like or pertaining to fossils; contained in rocks. whether petrified or not; as, fossil plants, shells. Fossil copal, a resinous substance, first found in the blue clay at Highgate, near London, and apparently a vegetable resin, partly changed by remaining in the earth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A substance dug from the earth. [Obs.] restricted to express the remains of animals and plants found buried in the earth. Ure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Paleon.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The remains of an animal or plant found in stratified rocks. Most fossils belong to extinct species, but many of the later ones belong to species still living.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A person whose views and opinions are extremely antiquated; one whose sympathies are with a former time rather than with the present. [Colloq.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Methuselah",
+        "afterglow",
+        "afterimage",
+        "ancient manuscript",
+        "antediluvian",
+        "antique",
+        "antiquity",
+        "archaism",
+        "artifact",
+        "back number",
+        "balance",
+        "butt",
+        "butt end",
+        "candle ends",
+        "cave painting",
+        "chaff",
+        "conservative",
+        "dad",
+        "debris",
+        "detritus",
+        "dodo",
+        "elder",
+        "end",
+        "eolith",
+        "fag end",
+        "filings",
+        "fogy",
+        "fud",
+        "fuddy-duddy",
+        "granny",
+        "has-been",
+        "holdover",
+        "husks",
+        "leavings",
+        "leftovers",
+        "longhair",
+        "matriarch",
+        "mezzolith",
+        "microlith",
+        "mid-Victorian",
+        "mossback",
+        "neolith",
+        "odds and ends",
+        "offscourings",
+        "old believer",
+        "old crock",
+        "old dodo",
+        "old fogy",
+        "old liner",
+        "old man",
+        "old poop",
+        "old woman",
+        "old-timer",
+        "orts",
+        "paleolith",
+        "parings",
+        "patriarch",
+        "petrification",
+        "petrified forest",
+        "petrified wood",
+        "petroglyph",
+        "plateaulith",
+        "pop",
+        "pops",
+        "rags",
+        "reactionary",
+        "refuse",
+        "regular old fogy",
+        "relic",
+        "relics",
+        "reliquiae",
+        "remainder",
+        "remains",
+        "remnant",
+        "residue",
+        "residuum",
+        "rest",
+        "roach",
+        "rubbish",
+        "ruin",
+        "ruins",
+        "rump",
+        "sawdust",
+        "scourings",
+        "scraps",
+        "shadow",
+        "shavings",
+        "square",
+        "starets",
+        "stick-in-the-mud",
+        "straw",
+        "stubble",
+        "stump",
+        "survival",
+        "sweepings",
+        "trace",
+        "traditionalist",
+        "vestige",
+        "waste"
+      ]
+    },
+    "fossiliferous": {
+      "word": "FOSSILIFEROUS",
+      "definitions": [
+        {
+          "text": "Containing or composed of fossils.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossilification": {
+      "word": "FOSSILIFICATION",
+      "definitions": [
+        {
+          "text": "The process of becoming fossil.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossilism": {
+      "word": "FOSSILISM",
+      "definitions": [
+        {
+          "text": "The science or state of fossils. Coleridge.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being extremely antiquated in views and opinions.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossilist": {
+      "word": "FOSSILIST",
+      "definitions": [
+        {
+          "text": "One who is versed in the science of fossils; a paleontologist. Joseph Black.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossilization": {
+      "word": "FOSSILIZATION",
+      "definitions": [
+        {
+          "text": "The process of converting, or of being converted, into a fossil.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossilize": {
+      "word": "FOSSILIZE",
+      "definitions": [
+        {
+          "text": "To convert into a fossil; to petrify; as, to fossilize bones or wood.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to become antiquated, rigid, or fixed, as by fossilization; to mummify; to deaden. Ten layers of birthdays on a woman's head Are apt to fossilize her girlish mirth. Mrs. Browning.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become fossil.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become antiquated, rigid, or fixed, beyond the influence of change or progress.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "age",
+        "anneal",
+        "antiquate",
+        "become extinct",
+        "become obsolete",
+        "calcify",
+        "callous",
+        "case harden",
+        "cornify",
+        "date",
+        "fade",
+        "firm",
+        "fust",
+        "grow old",
+        "harden",
+        "indurate",
+        "lapidify",
+        "lithify",
+        "lose currency",
+        "molder",
+        "obsolesce",
+        "ossify",
+        "outdate",
+        "perish",
+        "petrify",
+        "rust",
+        "steel",
+        "superannuate",
+        "temper",
+        "toughen",
+        "vitrify"
+      ]
+    },
+    "fossilized": {
+      "word": "FOSSILIZED",
+      "definitions": [
+        {
+          "text": "Converted into a fossil; antiquated; firmly fixed in views or opinions. A fossilized sample of confused provincialism. Earle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Gothic",
+        "Victorian",
+        "anile",
+        "antediluvian",
+        "antiquated",
+        "antique",
+        "archaic",
+        "backed",
+        "calcified",
+        "callous",
+        "calloused",
+        "case-hardened",
+        "classical",
+        "crabbed",
+        "crusted",
+        "crusty",
+        "crystallized",
+        "debilitated",
+        "decrepit",
+        "doddered",
+        "doddering",
+        "doddery",
+        "feeble",
+        "fossil",
+        "gerontal",
+        "gerontic",
+        "granulated",
+        "grown old",
+        "hardened",
+        "hornified",
+        "incrusted",
+        "indurate",
+        "indurated",
+        "infirm",
+        "lapidified",
+        "medieval",
+        "mid-Victorian",
+        "mossbacked",
+        "moth-eaten",
+        "mummylike",
+        "of other times",
+        "old-world",
+        "ossified",
+        "palsied",
+        "papery-skinned",
+        "petrified",
+        "ravaged with age",
+        "reinforced",
+        "rickety",
+        "rigidified",
+        "run to seed",
+        "rusty",
+        "sclerotic",
+        "senile",
+        "set",
+        "shaky",
+        "shriveled",
+        "solidified",
+        "steeled",
+        "stiffened",
+        "strengthened",
+        "stricken in years",
+        "superannuated",
+        "timeworn",
+        "tottering",
+        "tottery",
+        "toughened",
+        "vitrified",
+        "weak",
+        "withered",
+        "wizened"
+      ]
+    },
+    "fossores": {
+      "word": "FOSSORES",
+      "definitions": [
+        {
+          "text": "A group of hymenopterous insects including the sand wasps. They excavate cells in earth, where they deposit their eggs, with the bodies of other insects for the food of the young when hatched. [Written also Fossoria.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossoria": {
+      "word": "FOSSORIA",
+      "definitions": [
+        {
+          "text": "See Fossores.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossorial": {
+      "word": "FOSSORIAL",
+      "definitions": [
+        {
+          "text": "Fitted for digging, adapted for burrowing or digging; as, a fossorial foot; a fossorial animal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossorious": {
+      "word": "FOSSORIOUS",
+      "definitions": [
+        {
+          "text": "Adapted for digging; -- said of the legs of certain insects.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fossulate": {
+      "word": "FOSSULATE",
+      "definitions": [
+        {
+          "text": "Having, or surrounded by, long, narrow depressions or furrows.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foster": {
+      "word": "FOSTER",
+      "definitions": [
+        {
+          "text": "To feed; to nourish; to support; to bring up. Some say that ravens foster forlorn children. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cherish; to promote the growth of; to encourage; to sustain and promote; as, to foster genius.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be nourished or trained up together. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Relating to nourishment; affording, receiving, or sharing nourishment or nurture; -- applied to father, mother, child, brother, etc., to indicate that the person so called stands in the relation of parent, child, brother, etc., as regards sustenance and nurture, but not by tie of blood. Foster babe, or child, an infant of child nursed by a woman not its mother, or bred by a man not its father. the same breast, or brought up by the same nurse as another, but is not of the same parentage. native soil. J. Philips. for a child. Bacon. remuneration fixed for the rearing of a foster child; also, the jointure of a wife. [Obs.] Wharton. and care of a child; a nurse.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A forester. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who, or that which, fosters.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abet",
+        "accommodate",
+        "acculturate",
+        "actuate",
+        "advance",
+        "affiliated",
+        "agnate",
+        "aid",
+        "aid and abet",
+        "akin",
+        "aliment",
+        "allied",
+        "ameliorate",
+        "amend",
+        "animate",
+        "apprentice",
+        "ask for",
+        "assist",
+        "attend to",
+        "avuncular",
+        "baby-sit",
+        "back",
+        "bear",
+        "better",
+        "boost",
+        "bosom",
+        "break",
+        "break in",
+        "breast-feed",
+        "breed",
+        "bring forward",
+        "bring up",
+        "care for",
+        "champion",
+        "chaperon",
+        "cherish",
+        "civilize",
+        "cling to",
+        "clip",
+        "closely related",
+        "coddle",
+        "cognate",
+        "collateral",
+        "compel",
+        "condition",
+        "congeneric",
+        "consanguine",
+        "consanguinean",
+        "consanguineous",
+        "conserve",
+        "contribute to",
+        "cosset",
+        "countenance",
+        "cradle",
+        "cultivate",
+        "develop",
+        "discipline",
+        "distantly related",
+        "drill",
+        "dry-nurse",
+        "edify",
+        "educate",
+        "elevate",
+        "embosom",
+        "embrace",
+        "emend",
+        "enate",
+        "encourage",
+        "energize",
+        "enhance",
+        "enlighten",
+        "enrich",
+        "entertain",
+        "exercise",
+        "fatten",
+        "fatten up",
+        "favor",
+        "feed",
+        "fetch up",
+        "fit",
+        "fondle",
+        "force",
+        "force-feed",
+        "form",
+        "forward",
+        "further",
+        "galvanize",
+        "german",
+        "germane",
+        "give encouragement",
+        "go straight",
+        "groom",
+        "harbor",
+        "hasten",
+        "have",
+        "have and hold",
+        "help",
+        "hold",
+        "hold on to",
+        "house",
+        "house-train",
+        "housebreak",
+        "hug",
+        "impel",
+        "improve",
+        "improve upon",
+        "invite",
+        "keep",
+        "keep in countenance",
+        "keep watch over",
+        "kindred",
+        "lactate",
+        "lard",
+        "lavish care on",
+        "lick into shape",
+        "lift",
+        "lodge",
+        "look after",
+        "look out for",
+        "look to",
+        "maintain",
+        "make an improvement",
+        "matrilateral",
+        "matrilineal",
+        "matroclinous",
+        "matronize",
+        "meliorate",
+        "mend",
+        "mind",
+        "minister to",
+        "mother",
+        "motivate",
+        "move",
+        "move to action",
+        "nourish",
+        "novercal",
+        "nurse",
+        "nurture",
+        "nutrify",
+        "oblige",
+        "of the blood",
+        "pamper",
+        "patrilateral",
+        "patrilineal",
+        "patroclinous",
+        "patronize",
+        "practice",
+        "prepare",
+        "preserve",
+        "promote",
+        "propel",
+        "protege",
+        "provide for",
+        "put in tune",
+        "put to school",
+        "raise",
+        "ready",
+        "rear",
+        "refine upon",
+        "reform",
+        "rehearse",
+        "related",
+        "ride herd on",
+        "see after",
+        "see to",
+        "send to school",
+        "serve",
+        "set in motion",
+        "shelter",
+        "shepherd",
+        "sib",
+        "sibling",
+        "socialize",
+        "spark",
+        "spoon-feed",
+        "stimulate",
+        "straighten out",
+        "stuff",
+        "succor",
+        "suckle",
+        "support",
+        "sustain",
+        "take care of",
+        "take charge of",
+        "take in hand",
+        "tend",
+        "train",
+        "transfigure",
+        "transform",
+        "treasure",
+        "treasure up",
+        "upgrade",
+        "uphold",
+        "uplift",
+        "uterine",
+        "watch",
+        "watch out for",
+        "watch over",
+        "wet-nurse"
+      ]
+    },
+    "fosterage": {
+      "word": "FOSTERAGE",
+      "definitions": [
+        {
+          "text": "The care of a foster child; the charge of nursing. Sir W. Raleigh.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abetment",
+        "advocacy",
+        "aegis",
+        "auspices",
+        "backing",
+        "care",
+        "championship",
+        "charity",
+        "countenance",
+        "encouragement",
+        "favor",
+        "goodwill",
+        "guidance",
+        "interest",
+        "patronage",
+        "seconding",
+        "sponsorship",
+        "sympathy",
+        "tutelage"
+      ]
+    },
+    "fosterer": {
+      "word": "FOSTERER",
+      "definitions": [
+        {
+          "text": "One who, or that which, fosters.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fosterling": {
+      "word": "FOSTERLING",
+      "definitions": [
+        {
+          "text": "A foster child.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fosterment": {
+      "word": "FOSTERMENT",
+      "definitions": [
+        {
+          "text": "Food; nourishment. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fostress": {
+      "word": "FOSTRESS",
+      "definitions": [
+        {
+          "text": "A woman who feeds and cherishes; a nurse. B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

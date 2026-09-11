@@ -1,0 +1,1022 @@
+{
+  "version": "v1",
+  "entries": {
+    "famble": {
+      "word": "FAMBLE",
+      "definitions": [
+        {
+          "text": "To stammer. [Obs.] Nares.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A hand [Slang & Obs.] \"We clap our fambles.\" Beau. & Fl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fame": {
+      "word": "FAME",
+      "definitions": [
+        {
+          "text": "Public report or rumor. The fame thereof was heard in Pharaoh's house. Gen. xlv. 16.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Report or opinion generally diffused; renown; public estimation; celebrity, either favorable or unfavorable; as, the fame of Washington. I find thou art no less than fame hath bruited. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To report widely or honorably. The field where thou art famed To have wrought such wonders. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make famous or renowned. Those Hesperian gardens famed of old. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "PR",
+        "acclaim",
+        "acclamation",
+        "acknowledgment",
+        "applause",
+        "ballyhoo",
+        "blurb",
+        "bright light",
+        "celebrity",
+        "character",
+        "common knowledge",
+        "consequence",
+        "conspicuousness",
+        "cry",
+        "currency",
+        "daylight",
+        "dignity",
+        "distinction",
+        "eclat",
+        "eminence",
+        "esteem",
+        "exposure",
+        "famousness",
+        "figure",
+        "glare",
+        "glory",
+        "greatness",
+        "heroism",
+        "honor",
+        "hoopla",
+        "hue and cry",
+        "illustriousness",
+        "kudos",
+        "limelight",
+        "loftiness",
+        "magnanimity",
+        "majesty",
+        "maximum dissemination",
+        "memorability",
+        "name",
+        "nobility",
+        "notability",
+        "note",
+        "noteworthiness",
+        "notoriety",
+        "notoriousness",
+        "plug",
+        "popularity",
+        "preeminence",
+        "press notice",
+        "prestige",
+        "prominence",
+        "public eye",
+        "public knowledge",
+        "public relations",
+        "public report",
+        "publicity",
+        "publicity story",
+        "publicness",
+        "puff",
+        "reclame",
+        "recognition",
+        "remarkableness",
+        "renown",
+        "rep",
+        "report",
+        "reputation",
+        "repute",
+        "salience",
+        "spotlight",
+        "stardom",
+        "sublimity",
+        "superiority",
+        "the bubble reputation",
+        "vogue",
+        "write-up"
+      ]
+    },
+    "familiar": {
+      "word": "FAMILIAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a family; domestic. \"Familiar feuds.\" Byron.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Closely acquainted or intimate, as a friend or companion; well versed in, as any subject of study; as, familiar with the Scriptures.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Characterized by, or exhibiting, the manner of an intimate friend; not formal; unconstrained; easy; accessible. \"In loose, familiar strains.\" Addison. Be thou familiar, but by no means vulgar. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Well known; well understood; common; frequent; as, a familiar illustration. That war, or peace, or both at once, may be As things acquainted and familiar to us. Shak. There is nothing more familiar than this. Locke.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Improperly acquainted; wrongly intimate. Camden. Familiar spirit, a demon or evil spirit supposed to attend at call. 1 Sam. xxviii. 3, 7-9.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An intimate; a companion. All my familiars watched for my halting. Jer. xx. 10.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An attendant demon or evil spirit. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Court of Inquisition)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A confidential officer employed in the service of the tribunal, especially in apprehending and imprisoning the accused.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Bohemian",
+        "abreast",
+        "accepted",
+        "accustomed",
+        "acquaintance",
+        "acquainted",
+        "acquainted with",
+        "advocate",
+        "affable",
+        "alter ego",
+        "amicable",
+        "amigo",
+        "ancestral spirits",
+        "angel",
+        "arrogant",
+        "attendant godling",
+        "au courant",
+        "au fait",
+        "audacious",
+        "average",
+        "aware",
+        "back-number",
+        "backer",
+        "banal",
+        "best friend",
+        "bewhiskered",
+        "bold",
+        "boon",
+        "bosom friend",
+        "bromidic",
+        "brother",
+        "buddy-buddy",
+        "bumptious",
+        "casual",
+        "casual acquaintance",
+        "chatty",
+        "chummy",
+        "close",
+        "close acquaintance",
+        "close friend",
+        "cognizant",
+        "cold",
+        "colloquial",
+        "comfortable",
+        "common",
+        "commonly known",
+        "commonplace",
+        "confidant",
+        "confidante",
+        "confidential",
+        "conformable",
+        "conscious",
+        "consuetudinary",
+        "control",
+        "contumelious",
+        "conventional",
+        "conversant",
+        "conversant with",
+        "conversational",
+        "cool",
+        "cordial",
+        "corny",
+        "cozy",
+        "current",
+        "customary",
+        "cut-and-dried",
+        "daemon",
+        "degage",
+        "demon",
+        "disdainful",
+        "disrespectful",
+        "easy",
+        "easygoing",
+        "established",
+        "everyday",
+        "fade",
+        "fairy godmother",
+        "familiar spirit",
+        "familiar with",
+        "favorer",
+        "fellow",
+        "fellow creature",
+        "fellowman",
+        "folksy",
+        "forward",
+        "free",
+        "free and easy",
+        "frequent",
+        "fresh",
+        "friend",
+        "friendly",
+        "fusty",
+        "generally accepted",
+        "genial",
+        "genius",
+        "genius domus",
+        "genius loci",
+        "good angel",
+        "good genius",
+        "gracious",
+        "guardian",
+        "guardian angel",
+        "guardian spirit",
+        "guide",
+        "habitual",
+        "hackney",
+        "hackneyed",
+        "hand and glove",
+        "hand-in-hand",
+        "haymish",
+        "homely",
+        "homey",
+        "household",
+        "household gods",
+        "hubristic",
+        "impertinent",
+        "impudent",
+        "informal",
+        "informed",
+        "informed of",
+        "inseparable",
+        "inseparable friend",
+        "insolent",
+        "insulting",
+        "intimate",
+        "intrusive",
+        "invisible helper",
+        "irregular",
+        "lares and penates",
+        "lares compitales",
+        "lares familiaris",
+        "lares permarini",
+        "lares praestites",
+        "lares viales",
+        "loose",
+        "lover",
+        "manes",
+        "mate",
+        "mindful",
+        "ministering angel",
+        "moth-eaten",
+        "musty",
+        "natural",
+        "near",
+        "neighbor",
+        "neighborly",
+        "no stranger to",
+        "nonstandard",
+        "normal",
+        "normative",
+        "notorious",
+        "numen",
+        "obtaining",
+        "obtrusive",
+        "offhand",
+        "offhanded",
+        "officious",
+        "old hat",
+        "ordinary",
+        "other self",
+        "overpresumptuous",
+        "overweening",
+        "palsy-walsy",
+        "partisan",
+        "penates",
+        "pickup",
+        "plain",
+        "platitudinous",
+        "popular",
+        "predominating",
+        "prescribed",
+        "prescriptive",
+        "presuming",
+        "presumptuous",
+        "prevailing",
+        "prevalent",
+        "privy to",
+        "procacious",
+        "prosaic",
+        "proverbial",
+        "public",
+        "pushy",
+        "received",
+        "regular",
+        "regulation",
+        "relaxed",
+        "repository",
+        "routine",
+        "set",
+        "simple",
+        "snug",
+        "sociable",
+        "social",
+        "special providence",
+        "spoken",
+        "square",
+        "stale",
+        "standard",
+        "stereotyped",
+        "stock",
+        "substandard",
+        "supporter",
+        "sympathizer",
+        "talked-about",
+        "talked-of",
+        "tete-a-tete",
+        "thick",
+        "thick as thieves",
+        "threadbare",
+        "time-honored",
+        "timeworn",
+        "totem",
+        "traditional",
+        "trite",
+        "truistic",
+        "tutelar god",
+        "tutelary",
+        "unaffected",
+        "unassuming",
+        "unceremonious",
+        "unconstrained",
+        "unconventional",
+        "uneducated",
+        "universal",
+        "universally admitted",
+        "universally recognized",
+        "unliterary",
+        "unofficial",
+        "unoriginal",
+        "unreserved",
+        "unrestrained",
+        "unstudied",
+        "up",
+        "up on",
+        "uppish",
+        "uppity",
+        "usual",
+        "vernacular",
+        "versed",
+        "warmed-over",
+        "well-kenned",
+        "well-known",
+        "well-recognized",
+        "well-understood",
+        "well-wisher",
+        "well-worn",
+        "widely known",
+        "widespread",
+        "wonted",
+        "worn",
+        "worn thin"
+      ]
+    },
+    "familiarity": {
+      "word": "FAMILIARITY",
+      "definitions": [
+        {
+          "text": "The state of being familiar; intimate and frequent converse, or association; unconstrained intercourse; freedom from ceremony and constraint; intimacy; as, to live in remarkable familiarity.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything said or done by one person to another unceremoniously and without constraint; esp., in the pl., such actions and words as propriety and courtesy do not warrant; liberties.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Bohemianism",
+        "acquaintance",
+        "affability",
+        "affinity",
+        "amiability",
+        "assumption",
+        "awareness",
+        "boldness",
+        "casualness",
+        "chumminess",
+        "civility",
+        "closeness",
+        "clubbability",
+        "clubbishness",
+        "clubbism",
+        "cognition",
+        "cognizance",
+        "common touch",
+        "communicativeness",
+        "companionability",
+        "compatibility",
+        "comprehension",
+        "congeniality",
+        "cordiality",
+        "corpus",
+        "courtesy",
+        "data",
+        "datum",
+        "ease",
+        "easiness",
+        "easygoingness",
+        "experience",
+        "expertise",
+        "facts",
+        "factual base",
+        "fellowship",
+        "folksiness",
+        "fondness for society",
+        "friendliness",
+        "geniality",
+        "graciousness",
+        "grasp",
+        "gregariousness",
+        "homeliness",
+        "homeyness",
+        "hospitality",
+        "hubris",
+        "impertinence",
+        "imposition",
+        "impropriety",
+        "impudence",
+        "informality",
+        "informalness",
+        "information",
+        "inseparableness",
+        "insolence",
+        "intelligence",
+        "intimacy",
+        "intimate acquaintance",
+        "inwardness",
+        "irregularity",
+        "ken",
+        "know-how",
+        "knowing",
+        "knowledge",
+        "lawlessness",
+        "liberties",
+        "liberty abused",
+        "license",
+        "licentiousness",
+        "looseness",
+        "mateyness",
+        "naturalness",
+        "nearness",
+        "offhandedness",
+        "openness",
+        "palliness",
+        "plainness",
+        "practical knowledge",
+        "presumption",
+        "presumptuousness",
+        "private knowledge",
+        "privity",
+        "ratio cognoscendi",
+        "relaxedness",
+        "self-knowledge",
+        "simplicity",
+        "sociability",
+        "sociableness",
+        "social grace",
+        "sociality",
+        "special affinity",
+        "technic",
+        "technics",
+        "technique",
+        "unaffectedness",
+        "unceremoniousness",
+        "unconstrainedness",
+        "unconstraint",
+        "unconventionality",
+        "understanding",
+        "undue liberty",
+        "unpretentiousness",
+        "urbanity"
+      ]
+    },
+    "familiarization": {
+      "word": "FAMILIARIZATION",
+      "definitions": [
+        {
+          "text": "The act or process of making familiar; the result of becoming familiar; as, familiarization with scenes of blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "familiarize": {
+      "word": "FAMILIARIZE",
+      "definitions": [
+        {
+          "text": "To make familiar or intimate; to habituate; to accustom; to make well known by practice or converse; as, to familiarize one's self with scenes of distress.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make acquainted, or skilled, by practice or study; as, to familiarize one's self with a business, a book, or a science.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "acclimate",
+        "acclimatize",
+        "accommodate",
+        "accustom",
+        "acquaint",
+        "adapt",
+        "adjust",
+        "advertise",
+        "advertise of",
+        "advise",
+        "apprise",
+        "break",
+        "break in",
+        "brief",
+        "bring word",
+        "case harden",
+        "communicate",
+        "condition",
+        "confirm",
+        "disclose",
+        "domesticate",
+        "domesticize",
+        "enlighten",
+        "establish",
+        "fix",
+        "gentle",
+        "give notice",
+        "give the facts",
+        "give word",
+        "habituate",
+        "harden",
+        "housebreak",
+        "inform",
+        "instruct",
+        "inure",
+        "leave word",
+        "let know",
+        "mention to",
+        "naturalize",
+        "notify",
+        "orient",
+        "orientate",
+        "report",
+        "season",
+        "send word",
+        "serve notice",
+        "speak",
+        "tame",
+        "tell",
+        "train",
+        "use",
+        "verse",
+        "wont"
+      ]
+    },
+    "familiarly": {
+      "word": "FAMILIARLY",
+      "definitions": [
+        {
+          "text": "In a familiar manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "familiarness": {
+      "word": "FAMILIARNESS",
+      "definitions": [
+        {
+          "text": "Familiarity. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "familiary": {
+      "word": "FAMILIARY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a family or household; domestic. [Obs.] Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "familism": {
+      "word": "FAMILISM",
+      "definitions": [
+        {
+          "text": "The tenets of the Familists. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "familist": {
+      "word": "FAMILIST",
+      "definitions": [
+        {
+          "text": "One of afanatical Antinomian sect originating in Holland, and existing in England about 1580, called the Family of Love, who held that religion consists wholly in love.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "familistery": {
+      "word": "FAMILISTERY",
+      "definitions": [
+        {
+          "text": "A community in which many persons unite as in one family, and are regulated by certain communistic laws and customs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "familisticfamilistical": {
+      "word": "FAMILISTIC; FAMILISTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to Familists. Baxter.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "famine": {
+      "word": "FAMINE",
+      "definitions": [
+        {
+          "text": "General scarcity of food; dearth; a want of provisions; destitution. \"Worn with famine.\" Milton. There was a famine in the land. Gen. xxvi. 1. Famine fever (Med.), typhus fever.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "absence",
+        "aridity",
+        "barrenness",
+        "beggary",
+        "birth control",
+        "contraception",
+        "dearth",
+        "defectiveness",
+        "deficiency",
+        "deficit",
+        "deprivation",
+        "destitution",
+        "drought",
+        "dry womb",
+        "dryness",
+        "exiguity",
+        "family planning",
+        "imperfection",
+        "impotence",
+        "impoverishment",
+        "incompleteness",
+        "ineffectualness",
+        "infecundity",
+        "infertility",
+        "lack",
+        "need",
+        "omission",
+        "paucity",
+        "planned parenthood",
+        "scarcity",
+        "shortage",
+        "shortcoming",
+        "shortfall",
+        "starvation",
+        "sterileness",
+        "sterility",
+        "unfertileness",
+        "unfruitfulness",
+        "unproductiveness",
+        "want",
+        "wantage",
+        "withered loins"
+      ]
+    },
+    "famish": {
+      "word": "FAMISH",
+      "definitions": [
+        {
+          "text": "To starve, kill, or destroy with hunger. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To exhaust the strength or endurance of, by hunger; to distress with hanger. And when all the land of Egypt was famished, the people cried to Pharaoh for bread. Cen. xli. 55. The pains of famished Tantalus he'll feel. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To kill, or to cause to suffer extremity, by deprivation or denial of anything necessary. And famish him of breath, if not of bread. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To force or constrain by famine. He had famished Paris into a surrender. Burke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To die of hunger; to starve.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To suffer extreme hunger or thirst, so as to be exhausted in strength, or to come near to perish. You are all resolved rather to die than to famish Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To suffer extremity from deprivation of anything essential or necessary. The Lord will not suffer the soul of the righteous to famish. Prov. x. 3.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "famishment": {
+      "word": "FAMISHMENT",
+      "definitions": [
+        {
+          "text": "State of being famished.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "famosity": {
+      "word": "FAMOSITY",
+      "definitions": [
+        {
+          "text": "The state or quality of being famous. [Obs.] Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "famous": {
+      "word": "FAMOUS",
+      "definitions": [
+        {
+          "text": "Celebrated in fame or public report; renowned; mach talked of; distinguished in story; -- used in either a good or a bad sense, chiefly the former; often followed by for; as, famous for erudition, for eloquence, for military skill; a famous pirate. Famous for a scolding tongue. Shak. illustrious; eminent; transcendent; excellent. thing widely spoken of as extraordinary; renowned is applied to those who are named again and again with honor; illustrious, to those who have dazzled the world by the splendor of their deeds or their virtues. See Distinguished.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "acclaimed",
+        "advantageous",
+        "august",
+        "auspicious",
+        "beneficial",
+        "benevolent",
+        "bon",
+        "bonny",
+        "braw",
+        "bueno",
+        "capital",
+        "celebrated",
+        "cogent",
+        "commendable",
+        "conspicuous",
+        "dandy",
+        "distinguished",
+        "elegant",
+        "elevated",
+        "eminent",
+        "estimable",
+        "exalted",
+        "excellent",
+        "expedient",
+        "fabled",
+        "fair",
+        "famed",
+        "far-famed",
+        "far-heard",
+        "favorable",
+        "fine",
+        "first",
+        "first-class",
+        "first-string",
+        "glorious",
+        "godlike",
+        "good",
+        "goodly",
+        "grand",
+        "great",
+        "healthy",
+        "held in esteem",
+        "helpful",
+        "heroic",
+        "high",
+        "honorable",
+        "honored",
+        "illustrious",
+        "kind",
+        "laudable",
+        "lauded",
+        "legendary",
+        "lionized",
+        "lofty",
+        "magnanimous",
+        "magnificent",
+        "majestic",
+        "marked",
+        "much acclaimed",
+        "mythical",
+        "nice",
+        "noble",
+        "notable",
+        "noted",
+        "notorious",
+        "of mark",
+        "of note",
+        "pleasant",
+        "popular",
+        "praiseworthy",
+        "prestigious",
+        "profitable",
+        "prominent",
+        "rate",
+        "redoubtable",
+        "regal",
+        "renowned",
+        "reputable",
+        "respectable",
+        "royal",
+        "skillful",
+        "soaring",
+        "sound",
+        "splendid",
+        "sublime",
+        "superb",
+        "superior",
+        "talked-about",
+        "talked-of",
+        "top",
+        "top-notch",
+        "towering",
+        "useful",
+        "valid",
+        "venerable",
+        "very good",
+        "virtuous",
+        "well-known",
+        "well-thought-of"
+      ]
+    },
+    "famoused": {
+      "word": "FAMOUSED",
+      "definitions": [
+        {
+          "text": "Renowned. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "famously": {
+      "word": "FAMOUSLY",
+      "definitions": [
+        {
+          "text": "In a famous manner; in a distinguished degree; greatly; splendidly. Then this land was famously enriched With politic grave counsel. Shak.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "abundantly",
+        "acutely",
+        "amazingly",
+        "amply",
+        "aright",
+        "astonishingly",
+        "awesomely",
+        "capitally",
+        "celebratedly",
+        "conspicuously",
+        "copiously",
+        "eminently",
+        "emphatically",
+        "excellently",
+        "exceptionally",
+        "exquisitely",
+        "extraordinarily",
+        "exuberantly",
+        "fine",
+        "finely",
+        "generously",
+        "glaringly",
+        "gloriously",
+        "impressively",
+        "incredibly",
+        "intensely",
+        "magically",
+        "magnanimously",
+        "magnificently",
+        "markedly",
+        "marvelously",
+        "nicely",
+        "nobly",
+        "notably",
+        "notedly",
+        "notoriously",
+        "outstandingly",
+        "particularly",
+        "peculiarly",
+        "pointedly",
+        "popularly",
+        "preeminently",
+        "profusely",
+        "prominently",
+        "pronouncedly",
+        "remarkably",
+        "richly",
+        "right",
+        "royally",
+        "signally",
+        "singularly",
+        "spectacularly",
+        "splendidly",
+        "strikingly",
+        "superbly",
+        "superlatively",
+        "surpassingly",
+        "surprisingly",
+        "uncommonly",
+        "unusually",
+        "very well",
+        "well",
+        "wonderfully",
+        "wondrous",
+        "worthily"
+      ]
+    },
+    "famousness": {
+      "word": "FAMOUSNESS",
+      "definitions": [
+        {
+          "text": "The state of being famous.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "famular": {
+      "word": "FAMULAR",
+      "definitions": [
+        {
+          "text": "Domestic; familiar. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "famulate": {
+      "word": "FAMULATE",
+      "definitions": [
+        {
+          "text": "To serve. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "famulist": {
+      "word": "FAMULIST",
+      "definitions": [
+        {
+          "text": "A collegian of inferior rank or position, corresponding to the sizar at Cambridge. [Oxford Univ., Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,589 @@
+{
+  "version": "v1",
+  "entries": {
+    "box": {
+      "word": "BOX",
+      "definitions": [
+        {
+          "text": "A tree or shrub, flourishing in different parts of the world. The common box (Buxus sempervirens) has two varieties, one of which, the dwaft box (B.suffruticosa), is much used for borders in gardens. The wood of the tree varieties, being very hard and smooth, is extensively used in the arts, as by turners, engravers, mathematical instrument makers, etc. Box elder, the ash-leaved maple (Negundo aceroides), of North America.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A receptacle or case of any firm material and of various shapes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The quantity that a box contain.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A space with a few seats partitioned off in a theater, or other place of public amusement. Laughed at by the pit, box, galleries, nay, stage. Dorset. The boxes and the pit are sovereign judges. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A chest or any receptacle for the deposit of money; as, a poor box; a contribution box. Yet since his neighbors give, the churl unlocks, Damning the poor, his tripple-bolted box. J. Warton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small country house. \"A shooting box.\" Wilson. Tight boxes neatly sashed. Cowper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A boxlike shed for shelter; as, a sentry box.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mach) (a) An axle box, journal box, journal bearing, or bushing. (b) A chamber or section of tube in which a valve works; the bucket of a lifting pump.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The driver's seat on a carriage or coach.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A present in a box; a present; esp. a Christmas box or gift. \"A Christmas box.\" Dickens.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Baseball)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The square in which the pitcher stands.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A Mediterranean food fish; the bogue. maker, box circle, etc.; also with modifying substantives; as money box, letter box, bandbox, hatbox or hat box, snuff box or snuffbox. Box beam (Arch.), a beam made of metal plates so as to have the form of a long box. inclosed on the sides to protect its contents. preserve its proper position. cape to carry off the rain. parts in machinery. rest with the legs retracted, resembles a box. with flat top and bottom. formed by a collar on one roll fitting between collars on another. R. W. Raymond. antimony, for the bearings of journals, etc. the genera Cistudo and Emys; -- so named because it can withdraw entirely within its shell, which can be closed by hinged joints in the lower shell. Also, humorously, an exceedingly reticent person. Emerson. difficulty. (Colloq.) -- In the wrong box, out of one's place; out of one's element; awkwardly situated. (Colloq.) Ridley (1554)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To inclose in a box.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To furnish with boxes, as a wheel.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To inclose with boarding, lathing, etc., so as to bring to a required form. To box a tree, to make an incision or hole in a tree for the purpose of procuring the sap. boxed up twelve score pounds. (b) To confine; as, to be boxed up in narrow quarters.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A blow on the head or ear with the hand. A good-humored box on the ear. W. Irving.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To fight with the fist; to combat with, or as with, the hand or fist; to spar.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To strike with the hand or fist, especially to strike on the ear, or on the side of the head.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To boxhaul. To box off (Naut.), to turn the head of a vessel either way by bracing the headyards aback. compass in their order.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Christmas present",
+        "archives",
+        "armory",
+        "arsenal",
+        "attic",
+        "auditorium",
+        "award",
+        "bag",
+        "balcony",
+        "bank",
+        "barrel",
+        "basement",
+        "basket",
+        "battle",
+        "bay",
+        "bin",
+        "birthday present",
+        "blind alley",
+        "blip",
+        "blockhouse",
+        "blow",
+        "bonded warehouse",
+        "bookcase",
+        "booth",
+        "bottle",
+        "box in",
+        "box seat",
+        "box the ears",
+        "box up",
+        "brawl",
+        "broil",
+        "buffet",
+        "bungalow",
+        "bunker",
+        "burden",
+        "burial case",
+        "buttery",
+        "cabin",
+        "caboose",
+        "cadeau",
+        "camp",
+        "can",
+        "capsule",
+        "cargo dock",
+        "carton",
+        "case",
+        "cask",
+        "casket",
+        "cavity",
+        "cell",
+        "cellar",
+        "cellule",
+        "chalet",
+        "chamber",
+        "chest",
+        "chop",
+        "circumscribe",
+        "clash",
+        "close",
+        "closet",
+        "clout",
+        "coffin",
+        "collide",
+        "combat",
+        "come to blows",
+        "compartment",
+        "confine",
+        "conservatory",
+        "contend",
+        "contest",
+        "corner",
+        "cot",
+        "cote",
+        "cottage",
+        "cramp",
+        "crate",
+        "crib",
+        "crypt",
+        "cuff",
+        "cul-de-sac",
+        "cupboard",
+        "cut",
+        "cut and thrust",
+        "dead end",
+        "dead-end street",
+        "deadlock",
+        "depository",
+        "depot",
+        "dock",
+        "drawer",
+        "dress circle",
+        "duel",
+        "dump",
+        "embox",
+        "embrace",
+        "encapsulate",
+        "encase",
+        "enclosed space",
+        "encyst",
+        "enfold",
+        "enshroud",
+        "envelop",
+        "enwrap",
+        "exchange blows",
+        "exchequer",
+        "extremity",
+        "fairing",
+        "fauteuil",
+        "fence",
+        "feud",
+        "fight",
+        "fight a duel",
+        "fill",
+        "fix",
+        "flap",
+        "freight",
+        "gallery",
+        "gift",
+        "give and take",
+        "give satisfaction",
+        "glory hole",
+        "godown",
+        "grapple",
+        "grapple with",
+        "halt",
+        "hamper",
+        "handsel",
+        "haymaker",
+        "heap",
+        "heap up",
+        "hem",
+        "hem in",
+        "hold",
+        "hole",
+        "hollow",
+        "hutch",
+        "impasse",
+        "invest",
+        "jam",
+        "jar",
+        "jostle",
+        "joust",
+        "keep from spreading",
+        "keep within bounds",
+        "kist",
+        "lade",
+        "lap",
+        "lash",
+        "library",
+        "limit",
+        "load",
+        "localize",
+        "locker",
+        "lodge",
+        "log cabin",
+        "loge",
+        "love nest",
+        "lumber room",
+        "lumberyard",
+        "magasin",
+        "magazine",
+        "manger",
+        "mass",
+        "mix it up",
+        "mummy case",
+        "narrow",
+        "nigger heaven",
+        "oblation",
+        "offering",
+        "orchestra",
+        "orchestra circle",
+        "pack",
+        "pack away",
+        "package",
+        "paradise",
+        "parcel",
+        "parquet",
+        "parquet circle",
+        "parterre",
+        "paste",
+        "peace offering",
+        "peanut gallery",
+        "pew",
+        "pickle",
+        "pied-a-terre",
+        "pile",
+        "pit",
+        "plight",
+        "pocket",
+        "pot",
+        "present",
+        "presentation",
+        "proscenium boxes",
+        "punch",
+        "qualify",
+        "quarrel",
+        "rack",
+        "rassle",
+        "repertory",
+        "repository",
+        "reservoir",
+        "restrict",
+        "rick",
+        "riot",
+        "run a tilt",
+        "sack",
+        "sarcophagus",
+        "scramble",
+        "scrape",
+        "scuffle",
+        "shack",
+        "shanty",
+        "sheathe",
+        "shelf",
+        "ship",
+        "shroud",
+        "skirmish",
+        "slap",
+        "slap the face",
+        "smack",
+        "smother",
+        "snuggery",
+        "sock",
+        "spank",
+        "spar",
+        "spot",
+        "stack",
+        "stack room",
+        "stalemate",
+        "stall",
+        "stand",
+        "standing room",
+        "standstill",
+        "stint",
+        "stock room",
+        "stop",
+        "storage",
+        "store",
+        "storehouse",
+        "storeroom",
+        "stow",
+        "strike",
+        "stripe",
+        "strive",
+        "struggle",
+        "supply base",
+        "supply depot",
+        "surround",
+        "swaddle",
+        "swathe",
+        "tank",
+        "theatre stall",
+        "thrust and parry",
+        "tighten",
+        "tilt",
+        "tin",
+        "token punishment",
+        "tourney",
+        "treasure house",
+        "treasure room",
+        "treasury",
+        "tribute",
+        "tussle",
+        "vat",
+        "vault",
+        "wage war",
+        "war",
+        "warehouse",
+        "whack",
+        "whip",
+        "white elephant",
+        "whomp",
+        "wine cellar",
+        "wrap",
+        "wrap about",
+        "wrap up",
+        "wrestle"
+      ]
+    },
+    "boxberry": {
+      "word": "BOXBERRY",
+      "definitions": [
+        {
+          "text": "The wintergreern. (Gaultheria procumbens). [Local, U.S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxen": {
+      "word": "BOXEN",
+      "definitions": [
+        {
+          "text": "Made of boxwood; pertaining to, or resembling, the box (Buxus). [R.] The faded hue of sapless boxen leaves. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxer": {
+      "word": "BOXER",
+      "definitions": [
+        {
+          "text": "One who packs boxes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who boxes; a pugilist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Chinese boxer",
+        "bantamweight",
+        "black belt",
+        "brown belt",
+        "bruiser",
+        "featherweight",
+        "fighter",
+        "fisticuffer",
+        "flyweight",
+        "heavyweight",
+        "karate expert",
+        "light heavyweight",
+        "lightweight",
+        "middleweight",
+        "palooka",
+        "prizefighter",
+        "pug",
+        "pugilist",
+        "savate expert",
+        "sparrer",
+        "welterweight"
+      ]
+    },
+    "boxfish": {
+      "word": "BOXFISH",
+      "definitions": [
+        {
+          "text": "The trunkfish.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxhaul": {
+      "word": "BOXHAUL",
+      "definitions": [
+        {
+          "text": "To put (a vessel) on the other tack by veering her short round on her heel; -- so called from the circumstance of bracing the head yards abox (i. e., sharp aback, on the wind). Totten.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxhauling": {
+      "word": "BOXHAULING",
+      "definitions": [
+        {
+          "text": "A method of going from one tack to another. See Boxhaul.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxing": {
+      "word": "BOXING",
+      "definitions": [
+        {
+          "text": "The act of inclosing (anything) in a box, as for storage or transportation.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Material used in making boxes or casings.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any boxlike inclosure or recess; a casing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The external case of thin material used to bring any member to a required form.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of fighting with the fist; a combat with the fist; sparring. Blackstone. Boxing glove, a large padded mitten or glove used in sparring for exercise or amusement.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Chinese boxing",
+        "bottling",
+        "bout",
+        "boxing match",
+        "canning",
+        "close fighting",
+        "crating",
+        "encasement",
+        "fighting",
+        "fisticuffs",
+        "infighting",
+        "package",
+        "packaging",
+        "packing",
+        "prizefight",
+        "prizefighting",
+        "pugilism",
+        "ring",
+        "savate",
+        "shadowboxing",
+        "spar",
+        "the clinches",
+        "the fights",
+        "the ring",
+        "tinning"
+      ]
+    },
+    "boxingday": {
+      "word": "BOXING DAY",
+      "definitions": [
+        {
+          "text": "The first week day after Christmas, a legal holiday on which Christmas boxes are given to postmen, errand boys, employees, etc. The night of this day is boxing night. [Eng.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxiron": {
+      "word": "BOX-IRON",
+      "definitions": [
+        {
+          "text": "A hollow smoothing iron containing a heater within.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxkeeper": {
+      "word": "BOXKEEPER",
+      "definitions": [
+        {
+          "text": "An attendant at a theater who has charge of the boxes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxkite": {
+      "word": "BOX KITE",
+      "definitions": [
+        {
+          "text": "A kite, invented by Lawrence Hargrave, of Sydney, Australia, which consist of two light rectangular boxes, or cells open on two sides, and fastened together horizontally. Called also Hargrave, or cellular, kite.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxtail": {
+      "word": "BOX TAIL",
+      "definitions": [
+        {
+          "text": "In a flying machine, a tail or rudder, usually fixed, resembling a box kite.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxthorn": {
+      "word": "BOXTHORN",
+      "definitions": [
+        {
+          "text": "A plant of the genus Lycium, esp. Lycium barbarum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boxwood": {
+      "word": "BOXWOOD",
+      "definitions": [
+        {
+          "text": "The wood of the box (Buxus).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,629 @@
+{
+  "version": "v1",
+  "entries": {
+    "heddle": {
+      "word": "HEDDLE",
+      "definitions": [
+        {
+          "text": "One of the sets of parallel doubled threads which, with mounting, compose the harness employed to guide the warp threads to the lathe or batten in a loom.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To draw (the warp thread) through the heddle-eyes, in weaving.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heddleeye": {
+      "word": "HEDDLE-EYE",
+      "definitions": [
+        {
+          "text": "The eye or loop formed in each heddle to receive a warp thread.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heddling": {
+      "word": "HEDDLING",
+      "definitions": [
+        {
+          "text": "The act of drawing the warp threads through the heddle-eyes of a weaver's harness; the harness itself. Knight.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hederaceous": {
+      "word": "HEDERACEOUS",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or resembling, ivy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hederal": {
+      "word": "HEDERAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to ivy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hederic": {
+      "word": "HEDERIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or derived from, the ivy (Hedera); as, hederic acid, an acid of the acetylene series.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hederiferous": {
+      "word": "HEDERIFEROUS",
+      "definitions": [
+        {
+          "text": "Producing ivy; ivy-bearing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hederose": {
+      "word": "HEDEROSE",
+      "definitions": [
+        {
+          "text": "Pertaining to, or of, ivy; full of ivy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedge": {
+      "word": "HEDGE",
+      "definitions": [
+        {
+          "text": "A thicket of bushes, usually thorn bushes; especially, such a thicket planted as a fence between any two portions of land; and also any sort of shrubbery, as evergreens, planted in a line or as a fence; particularly, such a thicket planted round a field to fence it, or in rows to separate the parts of a garden. The roughest berry on the rudest hedge. Shak. Through the verdant maze Of sweetbrier hedges I pursue my walk. Thomson. rustic, outlandish, illiterate, poor, or mean; as, hedge priest; hedgeborn, etc. Hedge bells, Hedge bindweed (Bot.), a climbing plant related to the morning-glory (Convolvulus sepium). mustard, under Garlic. leaves of which are emetic and purgative. performed by a hedge priest. [Eng.] -- Hedge mustard (Bot.), a plant of the genus Sisymbrium, belonging to the Mustard family. Stachys, belonging to the Mint family. It has a nettlelike appearance, though quite harmless. writing. [Obs.] Dryden. Ireland; a school for rustics. which frequents hedges. Its color is reddish brown, and ash; the wing coverts are tipped with white. Called also chanter, hedge warbler, dunnock, and doney. scurrilous stuff. [Obs.] Swift. of money hangs in the hedge.\" Pepys.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To inclose or separate with a hedge; to fence with a thickly set line or thicket of shrubs or small trees; as, to hedge a field or garden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To obstruct, as a road, with a barrier; to hinder from progress or success; -- sometimes with up and out. I will hedge up thy way with thorns. Hos. ii. 6. Lollius Urbius . . . drew another wall . . . to hedge out incursions from the north. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To surround for defense; to guard; to protect; to hem (in). \"England, hedged in with the main.\" Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To surround so as to prevent escape. That is a law to hedge in the cuckoo. Locke. To hedge a bet, to bet upon both sides; that is, after having bet on one side, to bet also on the other, thus guarding against loss.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To shelter one's self from danger, risk, duty, responsibility, etc., as if by hiding in or behind a hedge; to skulk; to slink; to shirk obligations. I myself sometimes, leaving the fear of God on the left hand and hiding mine honor in my necessity, am fain to shuffle, to hedge and to lurch. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Betting)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To reduce the risk of a wager by making a bet against the side or chance one has bet on.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To use reservations and qualifications in one's speech so as to avoid committing one's self to anything definite. The Heroic Stanzas read much more like an elaborate attempt to hedge between the parties than . . . to gain favor from the Roundheads. Saintsbury.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abate",
+        "about the bush",
+        "adjust to",
+        "allowance",
+        "alter",
+        "around the bush",
+        "assuage",
+        "bar",
+        "beat about",
+        "beat around",
+        "beg the question",
+        "bicker",
+        "boggle",
+        "border line",
+        "bound",
+        "boundary",
+        "boundary condition",
+        "boundary line",
+        "bourn",
+        "box in",
+        "break boundary",
+        "breakoff point",
+        "bulkhead in",
+        "cage",
+        "calculation",
+        "canniness",
+        "care",
+        "careful consideration",
+        "carefulness",
+        "caution",
+        "cautiousness",
+        "cavil",
+        "ceiling",
+        "cession",
+        "choplogic",
+        "circumscribe",
+        "circumscription",
+        "circumspection",
+        "clear the decks",
+        "compass",
+        "concession",
+        "condition",
+        "confine",
+        "consider every angle",
+        "contain",
+        "coop",
+        "copyright",
+        "corral",
+        "cutoff",
+        "cutoff point",
+        "deadline",
+        "deliberate stages",
+        "deliberateness",
+        "deliberation",
+        "delimitation",
+        "determinant",
+        "diminish",
+        "discipline",
+        "discretion",
+        "division line",
+        "dodge",
+        "draw the line",
+        "duck",
+        "end",
+        "equivocate",
+        "evade",
+        "evade the issue",
+        "exception",
+        "exemption",
+        "extenuating circumstances",
+        "extremity",
+        "fence",
+        "finish",
+        "floor",
+        "forearm",
+        "frontier",
+        "gingerliness",
+        "grain of salt",
+        "grant",
+        "guard against",
+        "guardedness",
+        "hedge about",
+        "hedging",
+        "heed",
+        "heedfulness",
+        "hem",
+        "hem and haw",
+        "hesitation",
+        "high-water mark",
+        "immure",
+        "interface",
+        "judiciousness",
+        "leave out nothing",
+        "leaven",
+        "limen",
+        "limit",
+        "limitation",
+        "limiting factor",
+        "line",
+        "line of demarcation",
+        "low-water mark",
+        "lower limit",
+        "make sure",
+        "make sure against",
+        "march",
+        "mark",
+        "mental reservation",
+        "mete",
+        "mew",
+        "mindfulness",
+        "mitigate",
+        "moderate",
+        "modification",
+        "modify",
+        "modulate",
+        "mystify",
+        "narrow",
+        "nitpick",
+        "obscure",
+        "overlook no possibility",
+        "pale",
+        "palisade",
+        "palliate",
+        "palter",
+        "parry",
+        "patent",
+        "pawkiness",
+        "pen",
+        "pick nits",
+        "picket",
+        "play safe",
+        "prepare for",
+        "prevaricate",
+        "prior consultation",
+        "provide a hedge",
+        "provide against",
+        "provide for",
+        "prudence",
+        "prudentialness",
+        "pull away",
+        "pull back",
+        "pussyfoot",
+        "put off",
+        "qualification",
+        "qualify",
+        "quibble",
+        "rail",
+        "recoil",
+        "reduce",
+        "reef down",
+        "regardfulness",
+        "register",
+        "regulate by",
+        "reservation",
+        "restrain",
+        "restrict",
+        "restriction",
+        "safeness",
+        "safety first",
+        "salvo",
+        "scant",
+        "season",
+        "set conditions",
+        "set limits",
+        "sheer off",
+        "shift",
+        "shift off",
+        "shorten sail",
+        "shrink",
+        "shuffle",
+        "shy",
+        "shy away",
+        "shy off",
+        "sidestep",
+        "slowness to act",
+        "soften",
+        "solicitude",
+        "special case",
+        "special treatment",
+        "specialize",
+        "specialness",
+        "specification",
+        "split hairs",
+        "start",
+        "starting line",
+        "starting point",
+        "step aside",
+        "stint",
+        "straiten",
+        "swerve",
+        "take measures",
+        "take precautions",
+        "take steps",
+        "target date",
+        "temper",
+        "tentativeness",
+        "tergiversate",
+        "term",
+        "terminal date",
+        "terminus",
+        "thoroughness",
+        "threshold",
+        "time allotment",
+        "uncommunicativeness",
+        "unprecipitateness",
+        "upper limit",
+        "waiver",
+        "wall",
+        "ward off",
+        "weasel"
+      ]
+    },
+    "hedgeborn": {
+      "word": "HEDGEBORN",
+      "definitions": [
+        {
+          "text": "Born under a hedge; of low birth. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedgebote": {
+      "word": "HEDGEBOTE",
+      "definitions": [
+        {
+          "text": "Same as Haybote.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedgehog": {
+      "word": "HEDGEHOG",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small European insectivore (Erinaceus Europæus), and other allied species of Asia and Africa, having the hair on the upper part of its body mixed with prickles or spines. It is able to roll itself into a ball so as to present the spines outwardly in every direction. It is nocturnal in its habits, feeding chiefly upon insects.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The Canadian porcupine.[U.S]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A species of Medicago (M. intertexta), the pods of which are armed with short spines; -- popularly so called. Loudon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A form of dredging machine. Knight. Hedgehog caterpillar (Zoöl.), the hairy larvæ of several species of bombycid moths, as of the Isabella moth. It curls up like a hedgehog when disturbed. See Woolly bear, and Isabella moth. genus Diodon; the porcupine fish. sandy shores; burgrass (Cenchrus tribuloides). to the porcupines, but with ratlike tails, and few quills, or only stiff bristles. The hedgehog rats belong to Capromys, Plagiodon, and allied genera. the genus Murex. in form, and covered with spines (Echinocactus).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedgeless": {
+      "word": "HEDGELESS",
+      "definitions": [
+        {
+          "text": "Having no hedge.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedgepig": {
+      "word": "HEDGEPIG",
+      "definitions": [
+        {
+          "text": "A young hedgehog. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedger": {
+      "word": "HEDGER",
+      "definitions": [
+        {
+          "text": "One who makes or mends hedges; also, one who hedges, as, in betting.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedgerow": {
+      "word": "HEDGEROW",
+      "definitions": [
+        {
+          "text": "A row of shrubs, or trees, planted for inclosure or separation of fields. By hedgerow elms and hillocks green. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedgingbill": {
+      "word": "HEDGING BILL",
+      "definitions": [
+        {
+          "text": "A hedge bill. See under Hedge.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedonic": {
+      "word": "HEDONIC",
+      "definitions": [
+        {
+          "text": "Pertaining to pleasure.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or relating to Hedonism or the Hedonic sect.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedonics": {
+      "word": "HEDONICS",
+      "definitions": [
+        {
+          "text": "That branch of moral philosophy which treats of the relation of duty to pleasure; the science of practical, positive enjoyment or pleasure. J. Grote.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hedonism": {
+      "word": "HEDONISM",
+      "definitions": [
+        {
+          "text": "The doctrine of the Hedonic sect.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ethical theory which finds the explanation and authority of duty in its tendency to give pleasure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Christian ethics",
+        "Cyrenaic hedonism",
+        "Cyrenaicism",
+        "Stoicism",
+        "altruistic ethics",
+        "appetite",
+        "appetitiveness",
+        "aretaics",
+        "casuistry",
+        "categorical imperative",
+        "comparative ethics",
+        "deontology",
+        "egoistic ethics",
+        "empiricism",
+        "epicureanism",
+        "epicurism",
+        "ethical formalism",
+        "ethical hedonism",
+        "ethical philosophy",
+        "ethology",
+        "ethonomics",
+        "eudaemonics",
+        "eudaemonism",
+        "evolutionism",
+        "golden rule",
+        "hedonic calculus",
+        "hedonics",
+        "intuitionism",
+        "luxuriousness",
+        "luxury",
+        "moral philosophy",
+        "perfectionism",
+        "pleasure principle",
+        "pleasure-loving",
+        "pleasure-seeking",
+        "psychological hedonism",
+        "sensualism",
+        "sensuality",
+        "sensualness",
+        "situation ethics",
+        "sybaritism",
+        "unchastity",
+        "utilitarianism",
+        "voluptuousness"
+      ]
+    },
+    "hedonist": {
+      "word": "HEDONIST",
+      "definitions": [
+        {
+          "text": "One who believes in hedonism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Cyrenaic",
+        "Heliogabalus",
+        "Sardanapalus",
+        "bon vivant",
+        "carpet knight",
+        "debauchee",
+        "epicure",
+        "epicurean",
+        "gourmand",
+        "gourmet",
+        "libertine",
+        "man-about-town",
+        "pleasure-seeker",
+        "rake",
+        "sensualist",
+        "sensuist",
+        "swine",
+        "sybarite",
+        "voluptuary"
+      ]
+    },
+    "hedonistic": {
+      "word": "HEDONISTIC",
+      "definitions": [
+        {
+          "text": "Same as Hedonic, 2.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Cyrenaic",
+        "Eleatic",
+        "Epicurean",
+        "Megarian",
+        "Stoic",
+        "animist",
+        "animistic",
+        "appetitive",
+        "atomistic",
+        "bent on pleasure",
+        "cosmotheistic",
+        "eclectic",
+        "empirical",
+        "epicurean",
+        "eudaemonic",
+        "eudaemonistic",
+        "existential",
+        "fun-loving",
+        "hedonic",
+        "hedonist",
+        "humanist",
+        "humanistic",
+        "idealistic",
+        "instrumentalist",
+        "luxurious",
+        "luxury-loving",
+        "materialistic",
+        "mechanistic",
+        "metaphysical",
+        "monistic",
+        "naturalistic",
+        "nominalist",
+        "panlogistical",
+        "pantheistic",
+        "pleasure-bent",
+        "pleasure-loving",
+        "pleasure-seeking",
+        "positivist",
+        "positivistic",
+        "pragmatic",
+        "pragmatist",
+        "rationalistic",
+        "realist",
+        "realistic",
+        "scholastic",
+        "self-indulgent",
+        "sensationalistic",
+        "sensual",
+        "sybaritic",
+        "syncretistic",
+        "theistic",
+        "transcendentalist",
+        "transcendentalistic",
+        "unchaste",
+        "utilitarian",
+        "vitalistic",
+        "voluntarist",
+        "voluntaristic",
+        "voluptuous"
+      ]
+    }
+  }
+}

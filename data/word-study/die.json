@@ -1,0 +1,805 @@
+{
+  "version": "v1",
+  "entries": {
+    "die": {
+      "word": "DIE",
+      "definitions": [
+        {
+          "text": "To pass from an animate to a lifeless state; to cease to live; to suffer a total and irreparable loss of action of the vital functions; to become dead; to expire; to perish; -- said of animals and vegetables; often with of, by, with, from, and rarely for, before the cause or occasion of death; as, to die of disease or hardships; to die by fire or the sword; to die with horror at the thought. To die by the roadside of grief and hunger. Macaulay. She will die from want of care. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To suffer death; to lose life. In due time Christ died for the ungodly. Rom. v. 6.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To perish in any manner; to cease; to become lost or extinct; to be extinguished. Letting the secret die within his own breast. Spectator. Great deeds can not die. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sink; to faint; to pine; to languish, with weakness, discouragement, love, etc. His heart died within, and he became as a stone. 1 Sam. xxv. 37. The young men acknowledged, in love letters, that they died for Rebecca. Tatler.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become indifferent; to cease to be subject; as, to die to pleasure or to sin.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To recede and grow fainter; to become imperceptible; to vanish; -- often with out or away. Blemishes may die away and disappear amidst the brightness. Spectator.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To disappear gradually in another surface, as where moldings are lost in a sloped or curved face.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become vapid, flat, or spiritless, as liquor. To die in the last ditch, to fight till death; to die rather than surrender. \"There is one certain way,\" replied the Prince [William of Orange] \" by which I can be sure never to see my country's ruin, -- I will die in the last ditch.\" Hume (Hist. of Eng. ).",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A small cube, marked on its faces with spots from one to six, and used in playing games by being shaken in a box and thrown from it. See Dice.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any small cubical or square body. Words . . . pasted upon little flat tablets or dies. Watts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is, or might be, determined, by a throw of the die; hazard; chance. Such is the die of war. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That part of a pedestal included between base and cornice; the dado.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mach.) (a) A metal or plate (often one of a pair) so cut or shaped as to give a certain desired form to, or impress any desired device on, an object or surface, by pressure or by a blow; used in forging metals, coining, striking up sheet metal, etc. (b) A perforated block, commonly of hardened steel used in connection with a punch, for punching holes, as through plates, or blanks from plates, or for forming cups or capsules, as from sheet metal, by drawing. (c) A hollow internally threaded screw-cutting tool, made in one piece or composed of several parts, for forming screw threads on bolts, etc.; one of the separate parts which make up such a tool. Cutting die (Mech.), a thin, deep steel frame, sharpened to a cutting edge, for cutting out articles from leather, cloth, paper, etc. it is too late to draw back; the last chance is taken.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "baluster",
+        "balustrade",
+        "banister",
+        "base",
+        "be all over",
+        "be annihilated",
+        "be consumed",
+        "be destroyed",
+        "be done for",
+        "be gone",
+        "be lost",
+        "be no more",
+        "be past",
+        "be wiped out",
+        "become extinct",
+        "become void",
+        "bird cage",
+        "blow over",
+        "bones",
+        "burin",
+        "burn out",
+        "caryatid",
+        "cash in",
+        "cast",
+        "cease",
+        "cease to be",
+        "cease to exist",
+        "cease to live",
+        "check out",
+        "colonnade",
+        "column",
+        "come to naught",
+        "come to nothing",
+        "conk",
+        "conk out",
+        "cop out",
+        "crap game",
+        "crap shooting",
+        "craps",
+        "croak",
+        "crooked dice",
+        "cubes",
+        "dado",
+        "decease",
+        "decline",
+        "dematerialize",
+        "demise",
+        "depart",
+        "depart this life",
+        "dice",
+        "die away",
+        "die out",
+        "disappear",
+        "dispel",
+        "disperse",
+        "dissipate",
+        "dissolve",
+        "do a fade-out",
+        "drop",
+        "dwindle",
+        "ebb",
+        "elapse",
+        "end",
+        "engraving tool",
+        "erode",
+        "etching ball",
+        "etching ground",
+        "etching needle",
+        "etching point",
+        "evanesce",
+        "evaporate",
+        "exit",
+        "expire",
+        "fade",
+        "fade away",
+        "fade out",
+        "fail",
+        "fall",
+        "fall asleep",
+        "fall away",
+        "fall off",
+        "fizzle",
+        "fizzle out",
+        "flame out",
+        "flee",
+        "fly",
+        "footstalk",
+        "form",
+        "go",
+        "go away",
+        "go dead",
+        "go down",
+        "go downhill",
+        "go off",
+        "go out",
+        "graver",
+        "have it",
+        "have its time",
+        "have run out",
+        "hide",
+        "hit a slump",
+        "hit rock bottom",
+        "hit the skids",
+        "intaglio",
+        "ivories",
+        "jack",
+        "kick in",
+        "kick off",
+        "lapse",
+        "last",
+        "leave no trace",
+        "leave the scene",
+        "loaded dice",
+        "matrix",
+        "melt",
+        "melt away",
+        "mint",
+        "mold",
+        "needle",
+        "negative",
+        "newel-post",
+        "part",
+        "pass",
+        "pass away",
+        "pass on",
+        "pass out",
+        "pass over",
+        "pedestal",
+        "pedicel",
+        "peduncle",
+        "peg out",
+        "perish",
+        "peter out",
+        "pier",
+        "pilaster",
+        "pile",
+        "piling",
+        "pillar",
+        "pip",
+        "plaything",
+        "plinth",
+        "point",
+        "poker dice",
+        "pole",
+        "pop",
+        "post",
+        "pretty",
+        "punch",
+        "put off mortality",
+        "queen-post",
+        "quit this world",
+        "reach the depths",
+        "retire from sight",
+        "return to dust",
+        "rocker",
+        "run down",
+        "run its course",
+        "run out",
+        "scorper",
+        "seal",
+        "shaft",
+        "shoe last",
+        "sink",
+        "sink away",
+        "slide",
+        "slip",
+        "slump",
+        "socle",
+        "sputter and stop",
+        "staff",
+        "stalk",
+        "stall",
+        "stamp",
+        "stanchion",
+        "stand",
+        "standard",
+        "stem",
+        "stick",
+        "stop breathing",
+        "style",
+        "subbase",
+        "subside",
+        "succumb",
+        "suffer an eclipse",
+        "surbase",
+        "teeth",
+        "template",
+        "touch bottom",
+        "toy",
+        "trunk",
+        "up and die",
+        "upright",
+        "vanish",
+        "vanish from sight",
+        "wane",
+        "waste",
+        "waste away",
+        "wear away",
+        "wear off",
+        "yield the ghost"
+      ]
+    },
+    "dieciandiecious": {
+      "word": "DIECIAN; DIECIOUS",
+      "definitions": [
+        {
+          "text": "See Dioecian, and Dioecious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diedral": {
+      "word": "DIEDRAL",
+      "definitions": [
+        {
+          "text": "The same as Dihedral.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diegesis": {
+      "word": "DIEGESIS",
+      "definitions": [
+        {
+          "text": "A narrative or history; a recital or relation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dielectric": {
+      "word": "DIELECTRIC",
+      "definitions": [
+        {
+          "text": "Any substance or medium that transmits the electric force by a process different from conduction, as in the phenomena of induction; a nonconductor. separating a body electrified by induction, from the electrifying body.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "conductance",
+        "conduction",
+        "conductivity",
+        "conductor",
+        "electric conduction",
+        "gas conduction",
+        "insulator",
+        "ionic conduction",
+        "liquid conduction",
+        "metallic conduction",
+        "mho",
+        "nonconducting",
+        "nonconductive",
+        "nonconductor",
+        "photoconduction",
+        "semiconductor",
+        "superconductivity",
+        "superconductor"
+      ]
+    },
+    "dielytra": {
+      "word": "DIELYTRA",
+      "definitions": [
+        {
+          "text": "See Dicentra.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diencephalon": {
+      "word": "DIENCEPHALON",
+      "definitions": [
+        {
+          "text": "The interbrain or thalamencephalon; -- sometimes abbreviated to dien. See Thalamencephalon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dieresis": {
+      "word": "DIERESIS",
+      "definitions": [
+        {
+          "text": "Same as Diæresis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dieselenginedieselmotor": {
+      "word": "DIESEL ENGINE; DIESEL MOTOR",
+      "definitions": [
+        {
+          "text": "A type of internal-combustion engine in which the air drawn in by the suction stroke is so highly compressed that the heat generated ignites the fuel (usually crude oil), the fuel being automatically sprayed into the cylinder under pressure. The Diesel engine has a very high thermal efficiency.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "diesinker": {
+      "word": "DIESINKER",
+      "definitions": [
+        {
+          "text": "An engraver of dies for stamping coins, medals, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diesinking": {
+      "word": "DIESINKING",
+      "definitions": [
+        {
+          "text": "The process of engraving dies.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diesirae": {
+      "word": "DIES IRAE",
+      "definitions": [
+        {
+          "text": "Day of wrath; -- the name and beginning of a famous mediæval Latin hymn on the Last Judgment.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "diesis": {
+      "word": "DIESIS",
+      "definitions": [
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small interval, less than any in actual practice, but used in the mathematical calculation of intervals.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The mark ||; -- called also double dagger.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diesjuridicus": {
+      "word": "DIES JURIDICUS",
+      "definitions": [
+        {
+          "text": "A court day.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "diesnon": {
+      "word": "DIES NON",
+      "definitions": [
+        {
+          "text": "A day on which courts are not held, as Sunday or any legal holiday.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "diestock": {
+      "word": "DIESTOCK",
+      "definitions": [
+        {
+          "text": "A stock to hold the dies used for cutting screws.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diet": {
+      "word": "DIET",
+      "definitions": [
+        {
+          "text": "Course of living or nourishment; what is eaten and drunk habitually; food; victuals; fare. \"No inconvenient diet.\" Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A course of food selected with reference to a particular state of health; prescribed allowance of food; regimen prescribed. To fast like one that takes diet. Shak. Diet kitchen, a kitchen in which diet is prepared for invalids; a charitable establishment that provides proper food for the sick poor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cause to take food; to feed. [R.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to eat and drink sparingly, or by prescribed rules; to regulate medicinally the food of. She diets him with fasting every day. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To eat; to take one's meals. [Obs.] Let him . . . diet in such places, where there is good company of the nation, where he traveleth. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To eat according to prescribed rules; to ear sparingly; as, the doctor says he must diet.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A legislative or administrative assembly in Germany, Poland, and some other countries of Europe; a deliberative convention; a council; as, the Diet of Worms, held in 1521.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "British Cabinet",
+        "Sanhedrin",
+        "US Cabinet",
+        "abstain",
+        "acid-ash diet",
+        "advisory body",
+        "aliment",
+        "allergy diet",
+        "assemblee",
+        "assembly",
+        "assignation",
+        "association",
+        "at home",
+        "ball",
+        "bench",
+        "bicameral legislature",
+        "bland diet",
+        "board",
+        "board of aldermen",
+        "body of advisers",
+        "borough council",
+        "brain trust",
+        "brawl",
+        "break bread",
+        "cabinet",
+        "calorie chart",
+        "calorie counter",
+        "camarilla",
+        "caucus",
+        "chamber",
+        "chamber of deputies",
+        "city board",
+        "city council",
+        "colloquium",
+        "commission",
+        "committee",
+        "common council",
+        "conclave",
+        "concourse",
+        "conference",
+        "congregation",
+        "congress",
+        "consultative assembly",
+        "conventicle",
+        "convention",
+        "convocation",
+        "council",
+        "council fire",
+        "council of ministers",
+        "council of state",
+        "council of war",
+        "count calories",
+        "county council",
+        "court",
+        "dance",
+        "date",
+        "deliberative assembly",
+        "diabetic diet",
+        "diet book",
+        "dietary",
+        "dietetics",
+        "dieting",
+        "directory",
+        "divan",
+        "eat",
+        "eisteddfod",
+        "fall to",
+        "fare",
+        "fast",
+        "federal assembly",
+        "feed",
+        "festivity",
+        "fete",
+        "food",
+        "forgathering",
+        "forum",
+        "gathering",
+        "general assembly",
+        "get-together",
+        "high-protein diet",
+        "high-vitamin diet",
+        "house",
+        "house of assembly",
+        "housewarming",
+        "hunger",
+        "intake",
+        "junta",
+        "kitchen cabinet",
+        "legislative assembly",
+        "legislative body",
+        "legislative chamber",
+        "legislature",
+        "levee",
+        "lose flesh",
+        "lose weight",
+        "low-carbohydrate diet",
+        "low-salt diet",
+        "lower chamber",
+        "lower house",
+        "macrobiotic diet",
+        "meet",
+        "meeting",
+        "national assembly",
+        "nourishment",
+        "nutriment",
+        "panel",
+        "pap",
+        "parish council",
+        "parliament",
+        "partake",
+        "partake of",
+        "party",
+        "pitch in",
+        "plenum",
+        "privy council",
+        "prom",
+        "provincial legislature",
+        "provincial parliament",
+        "quorum",
+        "rally",
+        "reception",
+        "reduce",
+        "reduce weight",
+        "regime",
+        "regimen",
+        "relish",
+        "rendezvous",
+        "representative town meeting",
+        "salt-free diet",
+        "savor",
+        "seance",
+        "session",
+        "shindig",
+        "sit-in",
+        "sitting",
+        "slenderize",
+        "slim",
+        "slim down",
+        "soft diet",
+        "soiree",
+        "soviet",
+        "spoon victuals",
+        "staff",
+        "state assembly",
+        "state legislature",
+        "subsistence",
+        "sustenance",
+        "symposium",
+        "syndicate",
+        "synod",
+        "take",
+        "take off weight",
+        "taste",
+        "thin down",
+        "town meeting",
+        "tribunal",
+        "turnout",
+        "ulcer diet",
+        "unicameral legislature",
+        "upper chamber",
+        "upper house",
+        "vegetarianism",
+        "victuals",
+        "vitamin-deficiency diet",
+        "weight-watch"
+      ]
+    },
+    "dietarian": {
+      "word": "DIETARIAN",
+      "definitions": [
+        {
+          "text": "One who lives in accordance with prescribed rules for diet; a dieter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dietary": {
+      "word": "DIETARY",
+      "definitions": [
+        {
+          "text": "Pertaining to diet, or to the rules of diet.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A rule of diet; a fixed allowance of food, as in workhouse, prison, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dieter": {
+      "word": "DIETER",
+      "definitions": [
+        {
+          "text": "One who diets; one who prescribes, or who partakes of, food, according to hygienic rules.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dietetically": {
+      "word": "DIETETICALLY",
+      "definitions": [
+        {
+          "text": "In a dietetical manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dieteticdietetical": {
+      "word": "DIETETIC; DIETETICAL",
+      "definitions": [
+        {
+          "text": "Of or performance to diet, or to the rules for regulating the kind and quantity of food to be eaten.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dietetics": {
+      "word": "DIETETICS",
+      "definitions": [
+        {
+          "text": "That part of the medical or hygienic art which relates to diet or food; rules for diet. To suppose that the whole of dietetics lies in determining whether or not bread is more nutritive than potatoes. H. Spencer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acid-ash diet",
+        "allergy diet",
+        "bland diet",
+        "calorie chart",
+        "calorie counter",
+        "diabetic diet",
+        "diet",
+        "diet book",
+        "dietary",
+        "dieting",
+        "dietotherapy",
+        "enzymology",
+        "high-protein diet",
+        "high-vitamin diet",
+        "low-carbohydrate diet",
+        "low-salt diet",
+        "macrobiotic diet",
+        "pap",
+        "regime",
+        "regimen",
+        "salt-free diet",
+        "soft diet",
+        "spoon victuals",
+        "ulcer diet",
+        "vegetarianism",
+        "vitamin-deficiency diet",
+        "vitaminology"
+      ]
+    },
+    "dietetist": {
+      "word": "DIETETIST",
+      "definitions": [
+        {
+          "text": "A physician who applies the rules of dietetics to the cure of diseases. Dunglison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diethylamine": {
+      "word": "DIETHYLAMINE",
+      "definitions": [
+        {
+          "text": "A colorless, volatile, alkaline liquid, NH(C2H5)2, having a strong fishy odor resembling that of herring or sardines. Cf. Methylamine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dietic": {
+      "word": "DIETIC",
+      "definitions": [
+        {
+          "text": "Dietetic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dietical": {
+      "word": "DIETICAL",
+      "definitions": [
+        {
+          "text": "Dietetic. [R.] Ferrand.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dietine": {
+      "word": "DIETINE",
+      "definitions": [
+        {
+          "text": "A subordinate or local assembly; a diet of inferior rank.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dietistdietitian": {
+      "word": "DIETIST; DIETITIAN",
+      "definitions": [
+        {
+          "text": "One skilled in dietetics. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "version": "v1",
+  "entries": {
+    "fib": {
+      "word": "FIB",
+      "definitions": [
+        {
+          "text": "A falsehood; a lie; -- used euphemistically. They are very serious; they don't tell fibs. H. James.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To speak falsely. [Colloq.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To tell a fib to. [R.] De Quincey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "be untruthful",
+        "blague",
+        "bouncer",
+        "canard",
+        "cock-and-bull story",
+        "concoct",
+        "deceive",
+        "draw the longbow",
+        "equivocate",
+        "equivocation",
+        "evasiveness",
+        "exaggerate",
+        "exaggeration",
+        "fabricate",
+        "fairy tale",
+        "falsehood",
+        "falsify",
+        "falsity",
+        "farfetched story",
+        "farrago",
+        "fiction",
+        "fish story",
+        "flam",
+        "flimflam",
+        "ghost story",
+        "half-truth",
+        "legal fiction",
+        "lie",
+        "lie flatly",
+        "little white lie",
+        "make up",
+        "mendacity",
+        "mislead",
+        "palter",
+        "pious fiction",
+        "prevaricate",
+        "prevarication",
+        "slight stretching",
+        "speak falsely",
+        "story",
+        "stretch the truth",
+        "tale",
+        "tall story",
+        "tall tale",
+        "taradiddle",
+        "tell a lie",
+        "trump up",
+        "trumped-up story",
+        "untruth",
+        "untruthfulness",
+        "white lie",
+        "yarn"
+      ]
+    },
+    "fibber": {
+      "word": "FIBBER",
+      "definitions": [
+        {
+          "text": "One who tells fibs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fiberedfibred": {
+      "word": "FIBERED; FIBRED",
+      "definitions": [
+        {
+          "text": "Having fibers; made up of fibers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fiberfacedfibrefaced": {
+      "word": "FIBER-FACED; FIBRE-FACED",
+      "definitions": [
+        {
+          "text": "Having a visible fiber embodied in the surface of; -- applied esp. to a kind of paper for checks, drafts, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fiberfibre": {
+      "word": "FIBER; FIBRE",
+      "definitions": [
+        {
+          "text": "One of the delicate, threadlike portions of which the tissues of plants and animals are in part constituted; as, the fiber of flax or of muscle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any fine, slender thread, or threadlike substance; as, a fiber of spun glass; especially, one of the slender rootlets of a plant.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sinew; strength; toughness; as, a man of real fiber. Yet had no fibers in him, nor no force. Chapman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A general name for the raw material, such as cotton, flax, hemp, etc., used in textile manufactures. Fiber gun, a kind of steam gun for converting, wood, straw, etc., into fiber. The material is shut up in the gun with steam, air, or gas at a very high pressure which is afterward relieved suddenly by letting a lid at the muzzle fly open, when the rapid expansion separates the fibers. the arts, as hemp, flax, ramie, agave, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fiberlessfibreless": {
+      "word": "FIBERLESS; FIBRELESS",
+      "definitions": [
+        {
+          "text": "Having no fibers; destitute of fibers or fiber.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibriform": {
+      "word": "FIBRIFORM",
+      "definitions": [
+        {
+          "text": "Having the form of a fiber or fibers; resembling a fiber.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibril": {
+      "word": "FIBRIL",
+      "definitions": [
+        {
+          "text": "A small fiber; the branch of a fiber; a very slender thread; a fibrilla. Cheyne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrilla": {
+      "word": "FIBRILLA",
+      "definitions": [
+        {
+          "text": "A minute thread of fiber, as one of the fibrous elements of a muscular fiber; a fibril.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrillar": {
+      "word": "FIBRILLAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to fibrils or fibers; as, fibrillar twitchings.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrillary": {
+      "word": "FIBRILLARY",
+      "definitions": [
+        {
+          "text": "Of of pertaining to fibrils.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrillated": {
+      "word": "FIBRILLATED",
+      "definitions": [
+        {
+          "text": "Furnished with fibrils; fringed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrillation": {
+      "word": "FIBRILLATION",
+      "definitions": [
+        {
+          "text": "The state of being reduced to fibers. Carpenter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abscess",
+        "ague",
+        "anemia",
+        "ankylosis",
+        "anoxia",
+        "apnea",
+        "arrhythmia",
+        "asphyxiation",
+        "asthma",
+        "ataxia",
+        "atrophy",
+        "backache",
+        "bleeding",
+        "blennorhea",
+        "brokenness",
+        "cachexia",
+        "cachexy",
+        "capriciousness",
+        "chill",
+        "chills",
+        "choppiness",
+        "colic",
+        "constipation",
+        "convulsion",
+        "coughing",
+        "cyanosis",
+        "desultoriness",
+        "diarrhea",
+        "disconnectedness",
+        "discontinuity",
+        "dizziness",
+        "dropsy",
+        "dysentery",
+        "dyspepsia",
+        "dyspnea",
+        "eccentricity",
+        "edema",
+        "emaciation",
+        "erraticness",
+        "fainting",
+        "fatigue",
+        "fever",
+        "fitfulness",
+        "fits and starts",
+        "fluctuation",
+        "flux",
+        "growth",
+        "hemorrhage",
+        "high blood pressure",
+        "hydrops",
+        "hypertension",
+        "hypotension",
+        "icterus",
+        "inconstancy",
+        "indigestion",
+        "inflammation",
+        "insomnia",
+        "intermittence",
+        "irregularity",
+        "itching",
+        "jaundice",
+        "jerkiness",
+        "labored breathing",
+        "low blood pressure",
+        "lumbago",
+        "marasmus",
+        "nasal discharge",
+        "nausea",
+        "necrosis",
+        "nonuniformity",
+        "pain",
+        "paralysis",
+        "patchiness",
+        "pruritus",
+        "rash",
+        "rheum",
+        "roughness",
+        "sclerosis",
+        "seizure",
+        "shock",
+        "skin eruption",
+        "sneezing",
+        "sore",
+        "spasm",
+        "spasticity",
+        "sporadicity",
+        "sporadicness",
+        "spottiness",
+        "stagger",
+        "tabes",
+        "tachycardia",
+        "tumor",
+        "uncertainty",
+        "unevenness",
+        "unmethodicalness",
+        "unpredictability",
+        "unsteadiness",
+        "unsystematicness",
+        "upset stomach",
+        "variability",
+        "vertigo",
+        "vomiting",
+        "wasting",
+        "whimsicality",
+        "wobble"
+      ]
+    },
+    "fibrillose": {
+      "word": "FIBRILLOSE",
+      "definitions": [
+        {
+          "text": "Covered with hairlike appendages, as the under surface of some lichens; also, composed of little strings or fibers; as, fibrillose appendages.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrillous": {
+      "word": "FIBRILLOUS",
+      "definitions": [
+        {
+          "text": "Pertaining to, or composed of, fibers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrin": {
+      "word": "FIBRIN",
+      "definitions": [
+        {
+          "text": "A white, albuminous, fibrous substance, formed in the coagulation of the blood either by decomposition of fibrinogen, or from the union of fibrinogen and paraglobulin which exist separately in the blood. It is insoluble in water, but is readily digestible in gastric and pancreatic juice.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The white, albuminous mass remaining after washing lean beef or other meat with water until all coloring matter is removed; the fibrous portion of the muscle tissue; flesh fibrin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An albuminous body, resembling animal fibrin in composition, found in cereal grains and similar seeds; vegetable fibrin. Fibrin factors (Physiol.), the albuminous bodies, paraglobulin and fibrinigen in the blood, which, by the action of the fibrin ferment, are changed into fibrin, in coagulation. appearance in the blood shortly after it is shed, and is supposed to be the active agent in causing coagulation of the blood, with formation of fibrin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrination": {
+      "word": "FIBRINATION",
+      "definitions": [
+        {
+          "text": "The state of acquiring or having an excess of fibrin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrine": {
+      "word": "FIBRINE",
+      "definitions": [
+        {
+          "text": "Belonging to the fibers of plants.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrinogen": {
+      "word": "FIBRINOGEN",
+      "definitions": [
+        {
+          "text": "An albuminous substance existing in the blood, and in other animal fluids, which either alone or with fibrinoplastin or paraglobulin forms fibrin, and thus causes coagulation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrinogenous": {
+      "word": "FIBRINOGENOUS",
+      "definitions": [
+        {
+          "text": "Possessed of properties similar to fibrinogen; capable of forming fibrin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrinoplastic": {
+      "word": "FIBRINOPLASTIC",
+      "definitions": [
+        {
+          "text": "Like fibrinoplastin; capable of forming fibrin when brought in contact with fibrinogen.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrinoplastin": {
+      "word": "FIBRINOPLASTIN",
+      "definitions": [
+        {
+          "text": "An albuminous substance, existing in the blood, which in combination with fibrinogen forms fibrin; -- called also paraglobulin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrinous": {
+      "word": "FIBRINOUS",
+      "definitions": [
+        {
+          "text": "Having, or partaking of the properties of, fibrin; as, fibrious exudation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrocartilage": {
+      "word": "FIBROCARTILAGE",
+      "definitions": [
+        {
+          "text": "A kind of cartilage with a fibrous matrix and approaching",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrochondrosteal": {
+      "word": "FIBROCHONDROSTEAL",
+      "definitions": [
+        {
+          "text": "Partly fibrous, partly cartilaginous, and partly osseous. St. George Mivart.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibroid": {
+      "word": "FIBROID",
+      "definitions": [
+        {
+          "text": "Resembling or forming fibrous tissue; made up of fibers; as, fibroid tumors.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A fibroid tumor; a fibroma. Fibroid degeneration, a form of degeneration in which organs or tissues are converted into fibroid tissue. the formation of fibrous tissue in the lungs, and the gradual atrophy of the lungs, from the pressure due to the contraction of this tissue.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibroin": {
+      "word": "FIBROIN",
+      "definitions": [
+        {
+          "text": "A variety of gelatin; the chief ingredient of raw silk, extracted as a white amorphous mass.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrolite": {
+      "word": "FIBROLITE",
+      "definitions": [
+        {
+          "text": "A silicate of alumina, of fibrous or columnar structure. It is like andalusite in composition; -- called also sillimanite, and bucholizite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibroma": {
+      "word": "FIBROMA",
+      "definitions": [
+        {
+          "text": "A tumor consisting mainly of fibrous tissue, or of same modification of such tissue.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrospongiae": {
+      "word": "FIBROSPONGIAE",
+      "definitions": [
+        {
+          "text": "An order of sponges having a fibrous skeleton, including the commercial sponges.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrous": {
+      "word": "FIBROUS",
+      "definitions": [
+        {
+          "text": "Containing, or consisting of, fibers; as, the fibrous coat of",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "capillary",
+        "cartilaginous",
+        "chewy",
+        "cirrose",
+        "cirrous",
+        "cohesive",
+        "coriaceous",
+        "durable",
+        "fibered",
+        "fibroid",
+        "flagelliform",
+        "flossy",
+        "funicular",
+        "gossamery",
+        "gristly",
+        "hairlike",
+        "hairy",
+        "hard",
+        "hardy",
+        "lasting",
+        "leatherlike",
+        "leathery",
+        "ligamental",
+        "resistant",
+        "ropy",
+        "silky",
+        "sinewy",
+        "stiff",
+        "stringy",
+        "strong",
+        "stubborn",
+        "taeniate",
+        "taeniform",
+        "tenacious",
+        "threadlike",
+        "thready",
+        "tough",
+        "tough as leather",
+        "untiring",
+        "vigorous",
+        "viscid",
+        "wiry"
+      ]
+    },
+    "fibrovascular": {
+      "word": "FIBROVASCULAR",
+      "definitions": [
+        {
+          "text": "Containing woody fiber and ducts, as the stems of all flowering plants and ferns; -- opposed to cellular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibster": {
+      "word": "FIBSTER",
+      "definitions": [
+        {
+          "text": "One who tells fibs. [Jocular]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibula": {
+      "word": "FIBULA",
+      "definitions": [
+        {
+          "text": "A brooch, clasp, or buckle. Mere fibulæ, without a robe to clasp. Wordsworth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The outer and usually the smaller of the two bones of the leg, or hind limb, below the knee.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Surg.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A needle for sewing up wounds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibular": {
+      "word": "FIBU-LAR",
+      "definitions": [
+        {
+          "text": "Pertaining to the fibula.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibulare": {
+      "word": "FIBULARE",
+      "definitions": [
+        {
+          "text": "The bone or cartilage of the tarsus, which articulates with the fibula, and corresponds to the calcaneum in man and most mammals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,3362 @@
+{
+  "version": "v1",
+  "entries": {
+    "ava": {
+      "word": "AVA",
+      "definitions": [
+        {
+          "text": "Same as Kava. Johnston.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avadavat": {
+      "word": "AVADAVAT",
+      "definitions": [
+        {
+          "text": "Same as Amadavat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avail": {
+      "word": "AVAIL",
+      "definitions": [
+        {
+          "text": "To turn to the advantage of; to be of service to; to profit; to benefit; to help; as, artifices will not avail the sinner in the day of judgment. O, what avails me now that honor high ! Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To promote; to assist. [Obs.] Pope. To avail one's self of, to make use of; take advantage of. Then shall they seek to avail themselves of names. Milton. I have availed myself of the very first opportunity. Dickens.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be of use or advantage; to answer the purpose; to have strength, force, or efficacy sufficient to accomplish the object; as, the plea in bar must avail, that is, be sufficient to defeat the suit; this scheme will not avail; medicines will not avail to check the disease. \"What signs avail \" Milton. Words avail very little with me, young man. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Profit; advantage toward success; benefit; value; as, labor, without economy, is of little avail. The avail of a deathbed repentance. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Proceeds; as, the avails of a sale by auction. The avails of their own industry. Stoddard.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Avale, v. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abet",
+        "account",
+        "advance",
+        "advantage",
+        "aid",
+        "answer",
+        "applicability",
+        "appositeness",
+        "appropriateness",
+        "assist",
+        "bail out",
+        "be equal to",
+        "be handy",
+        "be of use",
+        "bear",
+        "bear a hand",
+        "befriend",
+        "behalf",
+        "behoof",
+        "benefit",
+        "benison",
+        "bestead",
+        "blessing",
+        "boon",
+        "break no bones",
+        "comfort",
+        "convenience",
+        "do",
+        "do good",
+        "do it",
+        "do no harm",
+        "do the trick",
+        "doctor",
+        "ease",
+        "favor",
+        "fill",
+        "fill the bill",
+        "fitness",
+        "fulfill",
+        "gain",
+        "get by",
+        "give a boost",
+        "give a hand",
+        "give a lift",
+        "give good returns",
+        "give help",
+        "go around",
+        "good",
+        "hack it",
+        "help",
+        "hold",
+        "interest",
+        "just do",
+        "lend a hand",
+        "lend one aid",
+        "make the grade",
+        "meet",
+        "meet requirements",
+        "pass",
+        "pass muster",
+        "pay",
+        "pay off",
+        "percentage",
+        "point",
+        "proffer aid",
+        "profit",
+        "protect",
+        "qualify",
+        "rally",
+        "reach",
+        "reclaim",
+        "redeem",
+        "relevance",
+        "relieve",
+        "remedy",
+        "render assistance",
+        "rescue",
+        "restore",
+        "resuscitate",
+        "revive",
+        "satisfy",
+        "save",
+        "serve",
+        "serve the purpose",
+        "service",
+        "serviceability",
+        "set up",
+        "stand",
+        "stand up",
+        "stretch",
+        "succor",
+        "suffice",
+        "suitability",
+        "take in tow",
+        "take it",
+        "use",
+        "usefulness",
+        "value",
+        "welfare",
+        "well-being",
+        "work",
+        "work for",
+        "world of good",
+        "worth",
+        "yield a profit"
+      ]
+    },
+    "availability": {
+      "word": "AVAILABILITY",
+      "definitions": [
+        {
+          "text": "The quality of being available; availableness. availableness,\" or capability of success without regard to worthiness. He was . . . nominated for his availability. Lowell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is available.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "access",
+        "accessibility",
+        "actual presence",
+        "applicability",
+        "approachability",
+        "being here",
+        "being there",
+        "come-at-ableness",
+        "effectiveness",
+        "efficacy",
+        "efficiency",
+        "existence",
+        "functionality",
+        "getatableness",
+        "gettableness",
+        "helpfulness",
+        "hereness",
+        "immanence",
+        "immediacy",
+        "indwellingness",
+        "inherence",
+        "obtainability",
+        "obtainableness",
+        "occurrence",
+        "openness",
+        "operability",
+        "penetrability",
+        "perviousness",
+        "physical presence",
+        "practicability",
+        "practical utility",
+        "practicality",
+        "presence",
+        "procurability",
+        "procurableness",
+        "profitability",
+        "reachableness",
+        "securableness",
+        "serviceability",
+        "spiritual presence",
+        "thereness",
+        "ubiety",
+        "usability",
+        "use",
+        "usefulness",
+        "utility",
+        "utilizability",
+        "whereness"
+      ]
+    },
+    "available": {
+      "word": "AVAILABLE",
+      "definitions": [
+        {
+          "text": "Having sufficient power, force, or efficacy, for the object; effectual; valid; as, an available plea. [Obs.] Laws human are available by consent. Hooker.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Such as one may avail one's self of; capable of being used for the accomplishment of a purpose; usable; profitable; advantageous; convertible into a resource; as, an available measure; an available candidate. Struggling to redeem, as he did, the available months and days out of so many that were unavailable. Carlyle. Having no available funds with which to pay the calls on new shares. H. Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abandoned",
+        "accessible",
+        "adaptable",
+        "all-around",
+        "approachable",
+        "at hand",
+        "at leisure",
+        "at liberty",
+        "at loose ends",
+        "attainable",
+        "attendant",
+        "close by",
+        "come-at-able",
+        "convenient",
+        "deserted",
+        "disengaged",
+        "fallow",
+        "findable",
+        "forsaken",
+        "free",
+        "getatable",
+        "gettable",
+        "godforsaken",
+        "handy",
+        "idle",
+        "immanent",
+        "immediate",
+        "in view",
+        "indwelling",
+        "inherent",
+        "jobless",
+        "leisure",
+        "leisured",
+        "lumpen",
+        "nearby",
+        "obtainable",
+        "of all work",
+        "off",
+        "off duty",
+        "off work",
+        "on board",
+        "on call",
+        "on deck",
+        "on hand",
+        "on tap",
+        "open",
+        "open to",
+        "otiose",
+        "out of employ",
+        "out of harness",
+        "out of work",
+        "penetrable",
+        "pervious",
+        "present",
+        "procurable",
+        "reachable",
+        "ready",
+        "securable",
+        "tenantless",
+        "to be had",
+        "to hand",
+        "unemployable",
+        "unemployed",
+        "unfilled",
+        "uninhabited",
+        "unmanned",
+        "unoccupied",
+        "unpeopled",
+        "unpopulated",
+        "unstaffed",
+        "untaken",
+        "untenanted",
+        "untended",
+        "vacant",
+        "versatile",
+        "within call",
+        "within reach",
+        "within sight"
+      ]
+    },
+    "availableness": {
+      "word": "AVAILABLENESS",
+      "definitions": [
+        {
+          "text": "Competent power; validity; efficacy; as, the availableness of a title. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Quality of being available; capability of being used for the purpose intended. Sir M. Hale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "availably": {
+      "word": "AVAILABLY",
+      "definitions": [
+        {
+          "text": "In an available manner; profitably; advantageously; efficaciously.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "availment": {
+      "word": "AVAILMENT",
+      "definitions": [
+        {
+          "text": "Profit; advantage. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avalanche": {
+      "word": "AVALANCHE",
+      "definitions": [
+        {
+          "text": "A large mass or body of snow and ice sliding swiftly down a mountain side, or falling down a precipice.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fall of earth, rocks, etc., similar to that of an avalanche of snow or ice.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sudden, great, or irresistible descent or influx of anything.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abundance",
+        "affluence",
+        "ample sufficiency",
+        "ampleness",
+        "amplitude",
+        "blizzard",
+        "bonanza",
+        "bountifulness",
+        "bountiousness",
+        "bumper crop",
+        "coast",
+        "copiousness",
+        "crystal",
+        "deluge",
+        "driven snow",
+        "embarras de richesses",
+        "enough",
+        "extravagance",
+        "extravagancy",
+        "exuberance",
+        "fertility",
+        "flake",
+        "flood",
+        "flow",
+        "flurry",
+        "foison",
+        "full measure",
+        "fullness",
+        "generosity",
+        "generousness",
+        "glide",
+        "glissade",
+        "glissando",
+        "granular snow",
+        "great abundance",
+        "great plenty",
+        "gush",
+        "igloo",
+        "inundation",
+        "landslide",
+        "landslip",
+        "lavishness",
+        "liberality",
+        "liberalness",
+        "lots",
+        "luxuriance",
+        "mantle of snow",
+        "maximum",
+        "mogul",
+        "money to burn",
+        "more than enough",
+        "much",
+        "myriad",
+        "myriads",
+        "numerousness",
+        "opulence",
+        "opulency",
+        "outpouring",
+        "overabundance",
+        "overaccumulation",
+        "overbounteousness",
+        "overcopiousness",
+        "overdose",
+        "overflow",
+        "overlavishness",
+        "overluxuriance",
+        "overmeasure",
+        "overmuchness",
+        "overnumerousness",
+        "overplentifulness",
+        "overplenty",
+        "overpopulation",
+        "overprofusion",
+        "oversufficiency",
+        "oversupply",
+        "plenitude",
+        "plenteousness",
+        "plentifulness",
+        "plenty",
+        "plethora",
+        "prevalence",
+        "prodigality",
+        "productiveness",
+        "profuseness",
+        "profusion",
+        "quantities",
+        "redundancy",
+        "repleteness",
+        "repletion",
+        "rich harvest",
+        "rich vein",
+        "richness",
+        "riot",
+        "riotousness",
+        "scads",
+        "shower",
+        "sideslip",
+        "skid",
+        "slide",
+        "slip",
+        "slippage",
+        "slither",
+        "slosh",
+        "slush",
+        "snow",
+        "snow banner",
+        "snow bed",
+        "snow blanket",
+        "snow blast",
+        "snow fence",
+        "snow flurry",
+        "snow roller",
+        "snow slush",
+        "snow squall",
+        "snow wreath",
+        "snow-crystal",
+        "snowball",
+        "snowbank",
+        "snowbridge",
+        "snowcap",
+        "snowdrift",
+        "snowfall",
+        "snowfield",
+        "snowflake",
+        "snowland",
+        "snowman",
+        "snowscape",
+        "snowshed",
+        "snowslide",
+        "snowslip",
+        "snowstorm",
+        "spate",
+        "stream",
+        "subsidence",
+        "substantiality",
+        "substantialness",
+        "superabundance",
+        "superflux",
+        "teemingness",
+        "wealth",
+        "wet snow"
+      ]
+    },
+    "avale": {
+      "word": "AVALE",
+      "definitions": [
+        {
+          "text": "To cause to descend; to lower; to let fall; to doff. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bring low; to abase. [Obs.] Sir H. Wotton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(v. i.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To descend; to fall; to dismount. [Obs.] And from their sweaty courses did avale. Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avant": {
+      "word": "AVANT",
+      "definitions": [
+        {
+          "text": "The front of an army. [Obs.] See Van.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avantcourier": {
+      "word": "AVANT-COURIER",
+      "definitions": [
+        {
+          "text": "A person dispatched before another person or company, to give notice of his or their approach.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avantguard": {
+      "word": "AVANT-GUARD",
+      "definitions": [
+        {
+          "text": "The van or advanced body of an army. See Vanguard.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avarice": {
+      "word": "AVARICE",
+      "definitions": [
+        {
+          "text": "An excessive or inordinate desire of gain; greediness after wealth; covetousness; cupidity. To desire money for its own sake, and in order to hoard it up, is avarice. Beattie.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An inordinate desire for some supposed good. All are taught an avarice of praise. Goldsmith.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acedia",
+        "acquisitiveness",
+        "anger",
+        "avariciousness",
+        "avaritia",
+        "avidity",
+        "avidness",
+        "cheapness",
+        "closefistedness",
+        "closeness",
+        "covetousness",
+        "craving",
+        "cupidity",
+        "deadly sin",
+        "desire",
+        "envy",
+        "frenzy of desire",
+        "frugality",
+        "fury of desire",
+        "gluttony",
+        "grasping",
+        "graspingness",
+        "greed",
+        "greediness",
+        "gula",
+        "hardfistedness",
+        "hoarding",
+        "hoggishness",
+        "illiberality",
+        "incontinence",
+        "inordinate desire",
+        "insatiability",
+        "insatiable desire",
+        "intemperateness",
+        "invidia",
+        "ira",
+        "itching palm",
+        "lust",
+        "luxuria",
+        "meanness",
+        "miserliness",
+        "nearness",
+        "niggardliness",
+        "overgreediness",
+        "parsimoniousness",
+        "parsimony",
+        "penny-pinching",
+        "penuriousness",
+        "piggishness",
+        "pride",
+        "rapaciousness",
+        "rapacity",
+        "ravenousness",
+        "selfishness",
+        "sloth",
+        "sordidness",
+        "stinginess",
+        "superbia",
+        "swinishness",
+        "thrift",
+        "tight purse strings",
+        "tightfistedness",
+        "tightness",
+        "ungenerosity",
+        "voraciousness",
+        "voracity",
+        "wolfishness",
+        "wrath"
+      ]
+    },
+    "avaricious": {
+      "word": "AVARICIOUS",
+      "definitions": [
+        {
+          "text": "Actuated by avarice; greedy of gain; immoderately desirous of accumulating property. Niggardly. The avaricious eagerly grasp after it at the expense of others, though not of necessity with a design to save, since a man may be covetous and yet a spendthrift. The penurious, parsimonious, and miserly save money by disgraceful self-denial, and the niggardly by meanness in their dealing with others. We speak of persons as covetous in getting, avaricious in retaining, parsimonious in expending, penurious or miserly in modes of living, niggardly in",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "a hog for",
+        "acquisitive",
+        "all-devouring",
+        "avid",
+        "bottomless",
+        "cheap",
+        "close",
+        "closefisted",
+        "coveting",
+        "covetous",
+        "devouring",
+        "esurient",
+        "gluttonous",
+        "gobbling",
+        "grabby",
+        "grasping",
+        "greedy",
+        "hardfisted",
+        "hoggish",
+        "illiberal",
+        "insatiable",
+        "insatiate",
+        "limitless",
+        "mean",
+        "mercenary",
+        "miserly",
+        "money-hungry",
+        "money-mad",
+        "near",
+        "niggardly",
+        "omnivorous",
+        "overgreedy",
+        "parsimonious",
+        "penny-pinching",
+        "penurious",
+        "piggish",
+        "pinchfisted",
+        "pinching",
+        "quenchless",
+        "rapacious",
+        "ravening",
+        "ravenous",
+        "save-all",
+        "selfish",
+        "slakeless",
+        "sordid",
+        "stingy",
+        "swinish",
+        "tight",
+        "tight-fisted",
+        "tightfisted",
+        "unappeasable",
+        "unappeased",
+        "ungenerous",
+        "unquenchable",
+        "unsated",
+        "unsatisfied",
+        "unslakeable",
+        "unslaked",
+        "venal",
+        "voracious"
+      ]
+    },
+    "avarous": {
+      "word": "AVAROUS",
+      "definitions": [
+        {
+          "text": "Avaricious. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avast": {
+      "word": "AVAST",
+      "definitions": [
+        {
+          "text": "Cease; stop; stay. \"Avast heaving.\" Totten.",
+          "partOfSpeech": "interjection"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avatar": {
+      "word": "AVATAR",
+      "definitions": [
+        {
+          "text": "(Hindoo Myth.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The descent of a deity to earth, and his incarnation as a man or an animal; -- chiefly associated with the incarnations of Vishnu.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Incarnation; manifestation as an object of worship or admiration.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Buddha",
+        "Christophany",
+        "Jagannath",
+        "Juggernaut",
+        "Kurma",
+        "Matsya",
+        "Narsinh",
+        "Parshuram",
+        "Rama",
+        "Satanophany",
+        "Vaman",
+        "Varah",
+        "angelophany",
+        "apparition",
+        "appearance",
+        "appearing",
+        "arising",
+        "catabolism",
+        "catalysis",
+        "coming",
+        "coming into being",
+        "coming-forth",
+        "consubstantiation",
+        "disclosure",
+        "displacement",
+        "dissemination",
+        "embodiment",
+        "emergence",
+        "epiphany",
+        "evidence",
+        "evincement",
+        "exposure",
+        "expression",
+        "forthcoming",
+        "heterotopia",
+        "incarnation",
+        "indication",
+        "issuance",
+        "manifestation",
+        "materialization",
+        "materializing",
+        "metabolism",
+        "metagenesis",
+        "metamorphism",
+        "metamorphosis",
+        "metastasis",
+        "metathesis",
+        "metempsychosis",
+        "mutant",
+        "mutated form",
+        "mutation",
+        "occurrence",
+        "opening",
+        "permutation",
+        "pneumatophany",
+        "presentation",
+        "proof",
+        "publication",
+        "realization",
+        "reincarnation",
+        "revelation",
+        "rise",
+        "rising",
+        "showing",
+        "showing forth",
+        "sport",
+        "theophany",
+        "transanimation",
+        "transfiguration",
+        "transfigurement",
+        "transformation",
+        "transformism",
+        "translation",
+        "translocation",
+        "transmigration",
+        "transmogrification",
+        "transmutation",
+        "transposition",
+        "transubstantiation",
+        "unfolding",
+        "unfoldment"
+      ]
+    },
+    "avaunce": {
+      "word": "AVAUNCE",
+      "definitions": [
+        {
+          "text": "To advance; to profit. Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avaunt": {
+      "word": "AVAUNT",
+      "definitions": [
+        {
+          "text": "Begone; depart; -- a word of contempt or abhorrence, equivalent to the phrase \"Get thee gone.\"",
+          "partOfSpeech": "interjection"
+        },
+        {
+          "text": "To advance; to move forward; to elevate. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To depart; to move away. [Obs.] Coverdale.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To vaunt; to boast. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A vaunt; to boast. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avauntour": {
+      "word": "AVAUNTOUR",
+      "definitions": [
+        {
+          "text": "A boaster. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ave": {
+      "word": "AVE",
+      "definitions": [
+        {
+          "text": "An ave Maria. He repeated Aves and Credos. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A reverential salutation. Their loud applause and aves vehement. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avel": {
+      "word": "AVEL",
+      "definitions": [
+        {
+          "text": "To pull away. [Obs.] Yet are not these parts avelled. Sir T. Browne.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avellane": {
+      "word": "AVELLANE",
+      "definitions": [
+        {
+          "text": "In the form of four unhusked filberts; as, an avellane cross.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avemariaavemary": {
+      "word": "AVE MARIA; AVE MARY",
+      "definitions": [
+        {
+          "text": "A salutation and prayer to the Virgin Mary, as mother of God; -- used in the Roman Catholic church. To number Ave Maries on his beads. Shak.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A particular time (as in Italy, at the ringing of the bells about half an hour after sunset, and also at early dawn), when the people repeat the Ave Maria. Ave Maria ! blessed be the hour ! Byron.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "avena": {
+      "word": "AVENA",
+      "definitions": [
+        {
+          "text": "A genus of grasses, including the common oat (Avena sativa); the oat grasses.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avenaceous": {
+      "word": "AVENACEOUS",
+      "definitions": [
+        {
+          "text": "Belonging to, or resembling, oats or the oat grasses.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avenage": {
+      "word": "AVENAGE",
+      "definitions": [
+        {
+          "text": "A quantity of oats paid by a tenant to a landlord in lieu of rent. Jacob.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avenalin": {
+      "word": "AVENALIN",
+      "definitions": [
+        {
+          "text": "A crystalline globulin, contained in oat kernels, very similar in composition to excelsin, but different in reactions and crystalline form.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avener": {
+      "word": "AVENER",
+      "definitions": [
+        {
+          "text": "An officer of the king's stables whose duty it was to provide oats for the horses. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avenge": {
+      "word": "AVENGE",
+      "definitions": [
+        {
+          "text": "To take vengeance for; to exact satisfaction for by punishing the injuring party; to vindicate by inflicting pain or evil on a wrongdoer. He will avenge the blood of his servants. Deut. xxxii. 43. Avenge, O Lord, thy slaughtered saints, whose bones Lie scattered on the Alpine mountains cold. Milton. He had avenged himself on them by havoc such as England had never before seen. Macaulay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To treat revengefully; to wreak vengeance on. [Obs.] Thy judgment in avenging thine enemies. Bp. Hall. doers in behalf of ourselves, or others for whom we act; as, to avenge one's wrongs; to avenge the injuries of the suffering and innocent. It is to inflict pain for the sake of vindication, or retributive justice. To revenge is to inflict pain or injury for the indulgence of resentful and malicious feelings. The former may at times be a duty; the latter is one of the worst exhibitions of human character. I avenge myself upon another, or I avenge another, or I avenge a wrong. I revenge only myself, and that upon another. C. J. Smith.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take vengeance. Levit. xix. 18.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Vengeance; revenge. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "avengement",
+        "avenging",
+        "chasten",
+        "chastise",
+        "compensate",
+        "correct",
+        "counterblow",
+        "even the score",
+        "get even with",
+        "launch a vendetta",
+        "pay back",
+        "pay out",
+        "punish",
+        "recompense",
+        "redress",
+        "repay",
+        "reprisal",
+        "requital",
+        "requite",
+        "retaliate",
+        "retribution",
+        "revanche",
+        "revenge",
+        "right",
+        "take revenge",
+        "vengeance",
+        "vindicate",
+        "wreckage"
+      ]
+    },
+    "avengeance": {
+      "word": "AVENGEANCE",
+      "definitions": [
+        {
+          "text": "Vengeance. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avengeful": {
+      "word": "AVENGEFUL",
+      "definitions": [
+        {
+          "text": "Vengeful. [Obs.] Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avengement": {
+      "word": "AVENGEMENT",
+      "definitions": [
+        {
+          "text": "The inflicting of retributive punishment; satisfaction taken. [R.] Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avenger": {
+      "word": "AVENGER",
+      "definitions": [
+        {
+          "text": "One who avenges or vindicates; as, an avenger of blood.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who takes vengeance. [Obs.] Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avengeress": {
+      "word": "AVENGERESS",
+      "definitions": [
+        {
+          "text": "A female avenger. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avenious": {
+      "word": "AVENIOUS",
+      "definitions": [
+        {
+          "text": "Being without veins or nerves, as the leaves of certain plants.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avenor": {
+      "word": "AVENOR",
+      "definitions": [
+        {
+          "text": "See Avener. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avens": {
+      "word": "AVENS",
+      "definitions": [
+        {
+          "text": "A plant of the genus Geum, esp. Geum urbanum, or herb bennet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aventail": {
+      "word": "AVENTAIL",
+      "definitions": [
+        {
+          "text": "The movable front to a helmet; the ventail.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aventine": {
+      "word": "AVENTINE",
+      "definitions": [
+        {
+          "text": "Pertaining to Mons Aventinus, one of the seven hills on which Rome stood. Bryant.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A post of security or defense. [Poetic] Into the castle's tower, The only Aventine that now is left him. Beau. & Fl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aventre": {
+      "word": "AVENTRE",
+      "definitions": [
+        {
+          "text": "To thrust forward (at a venture), as a spear. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aventure": {
+      "word": "AVENTURE",
+      "definitions": [
+        {
+          "text": "Accident; chance; adventure. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Old Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mischance causing a person's death without felony, as by drowning, or falling into the fire.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aventurine": {
+      "word": "AVENTURINE",
+      "definitions": [
+        {
+          "text": "A kind of glass, containing gold-colored spangles. It was produced in the first place by the accidental (par aventure) dropping of some brass filings into a pot of melted glass.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A variety of translucent quartz, spangled throughout with scales of yellow mica. ~= feldspar, a variety of oligoclase with internal firelike reflections due to the presence of minute crystals, probably of hematite; sunstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avenue": {
+      "word": "AVENUE",
+      "definitions": [
+        {
+          "text": "A way or opening for entrance into a place; a passage by which a place may by reached; a way of approach or of exit. \"The avenues leading to the city by land.\" Macaulay. On every side were expanding new avenues of inquiry. Milman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The principal walk or approach to a house which is withdrawn from the road, especially, such approach bordered on each side by trees; any broad passageway thus bordered. An avenue of tall elms and branching chestnuts. W. Black.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A broad street; as, the Fifth Avenue in New York.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Autobahn",
+        "US highway",
+        "access",
+        "aisle",
+        "alley",
+        "alleyway",
+        "ambulatory",
+        "aperture",
+        "arcade",
+        "arterial",
+        "arterial highway",
+        "arterial street",
+        "artery",
+        "autoroute",
+        "autostrada",
+        "belt highway",
+        "blind alley",
+        "blowhole",
+        "boulevard",
+        "bypass",
+        "byway",
+        "camino real",
+        "carriageway",
+        "causeway",
+        "causey",
+        "channel",
+        "chaussee",
+        "chute",
+        "circumferential",
+        "cloister",
+        "close",
+        "colonnade",
+        "communication",
+        "conduit",
+        "connection",
+        "corduroy road",
+        "corridor",
+        "county road",
+        "court",
+        "covered way",
+        "crescent",
+        "cul-de-sac",
+        "dead-end street",
+        "debouch",
+        "defile",
+        "dike",
+        "dirt road",
+        "door",
+        "drag",
+        "drive",
+        "driveway",
+        "egress",
+        "emunctory",
+        "escape",
+        "estuary",
+        "exhaust",
+        "exit",
+        "expressway",
+        "ferry",
+        "floodgate",
+        "flume",
+        "ford",
+        "freeway",
+        "gallery",
+        "gravel road",
+        "highroad",
+        "highway",
+        "highways and byways",
+        "inlet",
+        "interchange",
+        "intersection",
+        "interstate highway",
+        "junction",
+        "lane",
+        "local road",
+        "loophole",
+        "main drag",
+        "main road",
+        "mews",
+        "motorway",
+        "opening",
+        "out",
+        "outcome",
+        "outfall",
+        "outgate",
+        "outgo",
+        "outlet",
+        "overpass",
+        "parkway",
+        "pass",
+        "passage",
+        "passageway",
+        "path",
+        "pave",
+        "paved road",
+        "pike",
+        "place",
+        "plank road",
+        "pore",
+        "port",
+        "portico",
+        "primary highway",
+        "private road",
+        "railroad tunnel",
+        "right-of-way",
+        "ring road",
+        "road",
+        "roadbed",
+        "roadway",
+        "route nationale",
+        "row",
+        "royal road",
+        "sally port",
+        "secondary road",
+        "sluice",
+        "speedway",
+        "spiracle",
+        "spout",
+        "state highway",
+        "street",
+        "superhighway",
+        "tap",
+        "terrace",
+        "thoroughfare",
+        "through street",
+        "thruway",
+        "toll road",
+        "township road",
+        "track",
+        "traject",
+        "trajet",
+        "tunnel",
+        "turnpike",
+        "underpass",
+        "vent",
+        "ventage",
+        "venthole",
+        "vomitory",
+        "way out",
+        "weir",
+        "wynd"
+      ]
+    },
+    "aver": {
+      "word": "AVER",
+      "definitions": [
+        {
+          "text": "A work horse, or working ox. [Obs. or Dial. Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To assert, or prove, the truth of. [Obs.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To avouch or verify; to offer to verify; to prove or justify. See Averment.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To affirm with confidence; to declare in a positive manner, as in confidence of asserting the truth. It is sufficient that the very fact hath its foundation in truth, as I do seriously aver is the case. Fielding. Then all averred I had killed the bird. Coleridge.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "acknowledge",
+        "affirm",
+        "allege",
+        "announce",
+        "annunciate",
+        "argue",
+        "assert",
+        "assever",
+        "asseverate",
+        "attest",
+        "avouch",
+        "avow",
+        "bear witness",
+        "certify",
+        "contend",
+        "declare",
+        "defend",
+        "depone",
+        "depose",
+        "disclose",
+        "enunciate",
+        "express",
+        "give evidence",
+        "have",
+        "hold",
+        "insist",
+        "issue a manifesto",
+        "justify",
+        "lay down",
+        "maintain",
+        "manifesto",
+        "nuncupate",
+        "predicate",
+        "proclaim",
+        "profess",
+        "pronounce",
+        "protest",
+        "put",
+        "put it",
+        "quote",
+        "recite",
+        "relate",
+        "say",
+        "set down",
+        "speak",
+        "speak out",
+        "speak up",
+        "stand for",
+        "stand on",
+        "state",
+        "submit",
+        "swear",
+        "testify",
+        "vouch",
+        "warrant",
+        "witness"
+      ]
+    },
+    "average": {
+      "word": "AVERAGE",
+      "definitions": [
+        {
+          "text": "Pertaining to an average or mean; medial; containing a mean proportion; of a mean size, quality, ability, etc.; ordinary; usual; as, an average rate of profit; an average amount of rain; the average Englishman; beings of the average stamp.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "According to the laws of averages; as, the loss must be made good by average contribution.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To find the mean of, when sums or quantities are unequal; to reduce to a mean.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To divide among a number, according to a given proportion; as, to average a loss.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To do, accomplish, get, etc., on an average.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To form, or exist in, a mean or medial sum or quantity; to amount to, or to be, on an ~; as, the losses of the owners will average twenty five dollars each; these spars average ten feet in length.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Everyman",
+        "Public",
+        "accustomed",
+        "amidships",
+        "as a rule",
+        "average man",
+        "average out",
+        "avoid extremes",
+        "balance",
+        "banal",
+        "besetting",
+        "bisect",
+        "bourgeois",
+        "center",
+        "central",
+        "common",
+        "common man",
+        "common run",
+        "commonplace",
+        "conventional",
+        "core",
+        "current",
+        "customarily",
+        "customary",
+        "dominant",
+        "double",
+        "epidemic",
+        "equatorial",
+        "equidistant",
+        "everyday",
+        "everyman",
+        "everywoman",
+        "fair",
+        "fairish",
+        "familiar",
+        "fold",
+        "garden",
+        "garden-variety",
+        "general",
+        "generality",
+        "generally",
+        "girl next door",
+        "golden mean",
+        "habitual",
+        "halfway",
+        "happy medium",
+        "homme moyen sensuel",
+        "household",
+        "in the main",
+        "indifferent",
+        "interior",
+        "intermediary",
+        "intermediate",
+        "juste-milieu",
+        "mean",
+        "medial",
+        "median",
+        "mediocre",
+        "mediocrity",
+        "mediterranean",
+        "medium",
+        "mesial",
+        "mezzo",
+        "mid",
+        "middle",
+        "middle course",
+        "middle ground",
+        "middle point",
+        "middle position",
+        "middle state",
+        "middle-class",
+        "middle-of-the-road",
+        "middlemost",
+        "middling",
+        "midland",
+        "midmost",
+        "midpoint",
+        "midships",
+        "midway",
+        "moderate",
+        "no great shakes",
+        "norm",
+        "normal",
+        "normally",
+        "normative",
+        "nuclear",
+        "ordinarily",
+        "ordinary",
+        "ordinary Joe",
+        "ordinary run",
+        "pair off",
+        "pandemic",
+        "par",
+        "plastic",
+        "popular",
+        "predominant",
+        "predominating",
+        "prescriptive",
+        "prevailing",
+        "prevalent",
+        "rampant",
+        "regnant",
+        "regular",
+        "regulation",
+        "reigning",
+        "rife",
+        "routine",
+        "ruck",
+        "rule",
+        "ruling",
+        "run",
+        "run-of-mine",
+        "run-of-the-mill",
+        "running",
+        "so so",
+        "so-so",
+        "split the difference",
+        "standard",
+        "stereotyped",
+        "stock",
+        "strike a balance",
+        "suburban",
+        "take the average",
+        "typical",
+        "typically",
+        "undistinguished",
+        "unexceptional",
+        "universal",
+        "unnoteworthy",
+        "unremarkable",
+        "unspectacular",
+        "usual",
+        "usually",
+        "vernacular",
+        "via media",
+        "wonted"
+      ]
+    },
+    "avercorn": {
+      "word": "AVERCORN",
+      "definitions": [
+        {
+          "text": "A reserved rent in corn, formerly paid to religious houses by their tenants or farmers. Kennet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averment": {
+      "word": "AVERMENT",
+      "definitions": [
+        {
+          "text": "The act of averring, or that which is averred; affirmation; positive assertion. Signally has this averment received illustration in the course of recent events. I. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Verification; establishment by evidence. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A positive statement of facts; an allegation; an offer to justify or prove what is alleged. matter, he avers it to be true, by using this form of words: \"and this he is ready to verify.\" This was formerly called an averment. It modern pleading, it is termed a verification. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avernalavernian": {
+      "word": "AVERNAL; AVERNIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Avernus, a lake of Campania, in Italy, famous for its poisonous vapors, which ancient writers fancied were so malignant as to kill birds flying over it. It was represented by the poets to be connected with the infernal regions.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averpenny": {
+      "word": "AVERPENNY",
+      "definitions": [
+        {
+          "text": "Money paid by a tenant in lieu of the service of average.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averroism": {
+      "word": "AVERROISM",
+      "definitions": [
+        {
+          "text": "The tenets of the Averroists.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averroist": {
+      "word": "AVERROIST",
+      "definitions": [
+        {
+          "text": "One of a sect of peripatetic philosophers, who appeared in Italy before the restoration of learning; so denominated from Averroes, or Averrhoes, a celebrated Arabian philosopher. He held the doctrine of monopsychism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averruncate": {
+      "word": "AVERRUNCATE",
+      "definitions": [
+        {
+          "text": "To avert; to ward off. [Obs.] Hudibras.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To root up. [Obs.] Johnson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averruncation": {
+      "word": "AVERRUNCATION",
+      "definitions": [
+        {
+          "text": "The act of averting. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Eradication. [R.] De Quincey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averruncator": {
+      "word": "AVERRUNCATOR",
+      "definitions": [
+        {
+          "text": "An instrument for pruning trees, consisting of two blades, or a blade and a hook, fixed on the end of a long rod.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aversation": {
+      "word": "AVERSATION",
+      "definitions": [
+        {
+          "text": "A turning from with dislike; aversion. [Obs.or Archaic] Some men have a natural aversation to some vices or virtues, and a natural affection to others. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averse": {
+      "word": "AVERSE",
+      "definitions": [
+        {
+          "text": "Turned away or backward. [Obs.] The tracks averse a lying notice gave, And led the searcher backward from the cave. Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having a repugnance or opposition of mind; disliking; disinclined; unwilling; reluctant. Averse alike to flatter, or offend. Pope. Men who were averse to the life of camps. Macaulay. Pass by securely as men averse from war. Micah ii. 8. derivatives rather than from, as was formerly the usage. In this the word is in agreement with its kindred terms, hatred, dislike, dissimilar, contrary, repugnant, etc., expressing a relation or an affection of the mind to an object. not of necessity a very strong, dislike; as, averse to active pursuits; averse to study. Reluctant, a term of the of the will, implies an internal struggle as to making some sacrifice of interest or feeling; as, reluctant to yield; reluctant to make the necessary arrangements; a reluctant will or consent. Adverse denotes active opposition or hostility; as, adverse interests; adverse feelings, plans, or movements; the adverse party.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To turn away. [Obs.] B. Jonson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abhorrent",
+        "afraid",
+        "allergic",
+        "anti",
+        "antipathetic",
+        "at odds",
+        "averse to",
+        "backward",
+        "balky",
+        "contrary",
+        "cursory",
+        "differing",
+        "disaffected",
+        "disagreeing",
+        "disenchanted",
+        "disgusted",
+        "disinclined",
+        "disobedient",
+        "displeased",
+        "forced",
+        "fractious",
+        "hating",
+        "hesitant",
+        "hostile",
+        "ill-disposed",
+        "indisposed",
+        "indocile",
+        "involuntary",
+        "loath",
+        "loathing",
+        "mutinous",
+        "not charmed",
+        "opposed",
+        "perfunctory",
+        "perverse",
+        "put off",
+        "quailing",
+        "recalcitrant",
+        "recoiling",
+        "refractory",
+        "reluctant",
+        "resistant",
+        "shrinking",
+        "sulky",
+        "sullen",
+        "uncongenial",
+        "unconsenting",
+        "uneager",
+        "unfriendly",
+        "unsympathetic",
+        "unwilling"
+      ]
+    },
+    "aversely": {
+      "word": "AVERSELY",
+      "definitions": [
+        {
+          "text": "Backward; in a backward direction; as, emitted aversely.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "With repugnance or aversion; unwillingly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averseness": {
+      "word": "AVERSENESS",
+      "definitions": [
+        {
+          "text": "The quality of being averse; opposition of mind; unwillingness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aversion": {
+      "word": "AVERSION",
+      "definitions": [
+        {
+          "text": "A turning away. [Obs.] Adhesion to vice and aversion from goodness. Bp. Atterbury.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Opposition or repugnance of mind; fixed dislike; antipathy; disinclination; reluctance. Mutual aversion of races. Prescott. His rapacity had made him an object of general aversion. Macaulay. Averse.] Sometimes towards and for are found; from is obsolete. A freeholder is bred with an aversion to subjection. Addison. His aversion towards the house of York. Bacon. It is not difficult for a man to see that a person has conceived an aversion for him. Spectator. The Khasias . . . have an aversion to milk. J. D. Hooker.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The object of dislike or repugnance. Pain their aversion, pleasure their desire. Pope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Anglophobia",
+        "Russophobia",
+        "abhorrence",
+        "abomination",
+        "allergy",
+        "anathema",
+        "animosity",
+        "antagonism",
+        "anti-Semitism",
+        "antipathy",
+        "averseness",
+        "backwardness",
+        "bad books",
+        "bigotry",
+        "cold sweat",
+        "creeping flesh",
+        "cursoriness",
+        "despitefulness",
+        "detestation",
+        "disagreement",
+        "disfavor",
+        "disgust",
+        "disinclination",
+        "dislike",
+        "disliking",
+        "disobedience",
+        "displeasure",
+        "disrelish",
+        "dissatisfaction",
+        "dissent",
+        "distaste",
+        "dread",
+        "enmity",
+        "execration",
+        "fear",
+        "foot-dragging",
+        "fractiousness",
+        "grudging consent",
+        "grudgingness",
+        "hate",
+        "hatred",
+        "horror",
+        "hostility",
+        "indisposedness",
+        "indisposition",
+        "indocility",
+        "intractableness",
+        "lack of enthusiasm",
+        "lack of zeal",
+        "loathing",
+        "malevolence",
+        "malice",
+        "malignity",
+        "misandry",
+        "misanthropy",
+        "misogyny",
+        "mortal horror",
+        "mutinousness",
+        "nausea",
+        "nolition",
+        "obstinacy",
+        "odium",
+        "opposition",
+        "peeve",
+        "perfunctoriness",
+        "pet peeve",
+        "phobia",
+        "race hatred",
+        "racism",
+        "recalcitrance",
+        "recalcitrancy",
+        "refractoriness",
+        "refusal",
+        "reluctance",
+        "renitence",
+        "renitency",
+        "repellency",
+        "repugnance",
+        "repulsion",
+        "resistance",
+        "revulsion",
+        "shuddering",
+        "slowness",
+        "spite",
+        "spitefulness",
+        "stubbornness",
+        "sulk",
+        "sulkiness",
+        "sulks",
+        "sullenness",
+        "unenthusiasm",
+        "unwillingness",
+        "vials of hate",
+        "vials of wrath",
+        "xenophobia"
+      ]
+    },
+    "avert": {
+      "word": "AVERT",
+      "definitions": [
+        {
+          "text": "To turn aside, or away; as, to avert the eyes from an object; to ward off, or prevent, the occurrence or effects of; as, how can the danger be averted \"To avert his ire.\" Milton. When atheists and profane persons do hear of so many discordant and contrary opinions in religion, it doth avert them from the church. Bacon. Till ardent prayer averts the public woe. Prior.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To turn away. [Archaic] Cold and averting from our neighbor's good. Thomson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "about-face",
+        "anticipate",
+        "balk",
+        "bar",
+        "bear off",
+        "check",
+        "debar",
+        "deflect",
+        "deter",
+        "discourage",
+        "dishearten",
+        "divert",
+        "draw aside",
+        "ease off",
+        "edge off",
+        "estop",
+        "exclude",
+        "face about",
+        "fend",
+        "fend off",
+        "fly off",
+        "foil",
+        "forbid",
+        "foreclose",
+        "forestall",
+        "frustrate",
+        "gee",
+        "glance",
+        "glance off",
+        "go off",
+        "halt",
+        "haw",
+        "head off",
+        "help",
+        "jib",
+        "keep from",
+        "keep off",
+        "make way for",
+        "move aside",
+        "obviate",
+        "pivot",
+        "preclude",
+        "prevent",
+        "prohibit",
+        "remove",
+        "repel",
+        "right-about-face",
+        "rule out",
+        "save",
+        "sheer",
+        "sheer off",
+        "shove aside",
+        "shunt",
+        "shy",
+        "shy off",
+        "side",
+        "sidestep",
+        "sidetrack",
+        "sidle",
+        "stave off",
+        "stay",
+        "steer clear of",
+        "step aside",
+        "stop",
+        "switch",
+        "thwart",
+        "transfer",
+        "turn aside",
+        "turn away",
+        "turn back",
+        "veer",
+        "veer off",
+        "volte-face",
+        "ward",
+        "ward off",
+        "wheel",
+        "whip",
+        "whirl"
+      ]
+    },
+    "averted": {
+      "word": "AVERTED",
+      "definitions": [
+        {
+          "text": "Turned away, esp. as an expression of feeling; also, offended; unpropitious. Who scornful pass it with averted eye. Keble.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "averter": {
+      "word": "AVERTER",
+      "definitions": [
+        {
+          "text": "One who, or that which, averts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avertible": {
+      "word": "AVERTIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being averted; preventable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avertiment": {
+      "word": "AVERTIMENT",
+      "definitions": [
+        {
+          "text": "Advertisement. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aves": {
+      "word": "AVES",
+      "definitions": [
+        {
+          "text": "The class of Vertebrata that includes the birds. reproduction, front limbs peculiarly modified as wings; and they bear feathers. All existing birds have a horny beak, without teeth; but some Mesozoic fossil birds (Odontornithes) had conical teeth inserted in both jaws. The principal groups are: Carinatæ, including all existing flying birds; Ratitæ, including the ostrich and allies, the apteryx, and the extinct moas; Odontornithes, or fossil birds with teeth. the beak and feet, which are in direct relating to their habits. See Beak, Bird, Odontonithes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avesta": {
+      "word": "AVESTA",
+      "definitions": [
+        {
+          "text": "The Zoroastrian scriptures. See Zend-Avesta.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avestan": {
+      "word": "AVESTAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Avesta or the language of the Avesta. - -n.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The language of the Avesta; -- less properly called Zend.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aviado": {
+      "word": "AVIADO",
+      "definitions": [
+        {
+          "text": "One who works a mine with means provided by another. [Sp. Amer. & Southwestern U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avian": {
+      "word": "AVIAN",
+      "definitions": [
+        {
+          "text": "Of or instrument to birds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "altricial",
+        "anserine",
+        "anserous",
+        "aquiline",
+        "avicular",
+        "birdlike",
+        "birdy",
+        "columbine",
+        "dovelike",
+        "goosy",
+        "hawklike",
+        "nesting",
+        "nidicolous",
+        "nidificant",
+        "oscine",
+        "passerine",
+        "psittacine",
+        "rasorial"
+      ]
+    },
+    "aviary": {
+      "word": "AVIARY",
+      "definitions": [
+        {
+          "text": "A house, inclosure, large cage, or other place, for keeping birds confined; a bird house. Lincolnshire may be termed the aviary of England. Fuller.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aviate": {
+      "word": "AVIATE",
+      "definitions": [
+        {
+          "text": "To fly, or navigate the air, in an aëroplane or heavier-than- air flying machine. [Colloq.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aviation": {
+      "word": "AVIATION",
+      "definitions": [
+        {
+          "text": "The art or science of flying.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aviatressaviatrix": {
+      "word": "AVIATRESS; AVIATRIX",
+      "definitions": [
+        {
+          "text": "A woman aviator.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avicula": {
+      "word": "AVICULA",
+      "definitions": [
+        {
+          "text": "A genus of marine bivalves, having a pearly interior, allied to the pearl oyster; -- so called from a supposed resemblance of the typical species to a bird.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avicular": {
+      "word": "AVICULAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a bird or to birds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avicularia": {
+      "word": "AVICULARIA",
+      "definitions": [
+        {
+          "text": "See prehensile processes on the cells of some Bryozoa, often having the shape of a bird's bill.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aviculture": {
+      "word": "AVICULTURE",
+      "definitions": [
+        {
+          "text": "Rearing and care of birds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avid": {
+      "word": "AVID",
+      "definitions": [
+        {
+          "text": "Longing eagerly for; eager; greedy. \"Avid of gold, yet greedier of renown.\" Southey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "a hog for",
+        "acquisitive",
+        "agog",
+        "alacritous",
+        "all agog",
+        "all-devouring",
+        "animated",
+        "anxious",
+        "ardent",
+        "athirst",
+        "avaricious",
+        "bottomless",
+        "breathless",
+        "bursting to",
+        "coveting",
+        "covetous",
+        "craving",
+        "desirous",
+        "devouring",
+        "eager",
+        "esurient",
+        "forward",
+        "full of life",
+        "gluttonous",
+        "gobbling",
+        "grabby",
+        "grasping",
+        "greedy",
+        "hoggish",
+        "impatient",
+        "importunate",
+        "insatiable",
+        "insatiate",
+        "insistent",
+        "keen",
+        "limitless",
+        "lively",
+        "mercenary",
+        "miserly",
+        "money-hungry",
+        "money-mad",
+        "omnivorous",
+        "overgreedy",
+        "panting",
+        "piggish",
+        "pressing",
+        "prompt",
+        "quenchless",
+        "quick",
+        "rapacious",
+        "raring to",
+        "ravening",
+        "ravenous",
+        "ready",
+        "ready and willing",
+        "slakeless",
+        "sordid",
+        "spirited",
+        "swinish",
+        "thirsty",
+        "unappeasable",
+        "unappeased",
+        "unquenchable",
+        "unsated",
+        "unsatisfied",
+        "unslakeable",
+        "unslaked",
+        "urgent",
+        "venal",
+        "vital",
+        "vivacious",
+        "vivid",
+        "voracious",
+        "wanting",
+        "wishful",
+        "zestful"
+      ]
+    },
+    "avidious": {
+      "word": "AVIDIOUS",
+      "definitions": [
+        {
+          "text": "Avid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avidiously": {
+      "word": "AVIDIOUSLY",
+      "definitions": [
+        {
+          "text": "Eagerly; greedily.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avidity": {
+      "word": "AVIDITY",
+      "definitions": [
+        {
+          "text": "Greediness; strong appetite; eagerness; intenseness of desire; as, to eat with avidity. His books were received and read with avidity. Milward.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acquisitiveness",
+        "alacrity",
+        "animation",
+        "anxiety",
+        "anxiousness",
+        "appetite",
+        "avarice",
+        "avariciousness",
+        "avidness",
+        "breathless impatience",
+        "cheerful readiness",
+        "covetousness",
+        "cupidity",
+        "eagerness",
+        "elan",
+        "forwardness",
+        "frenzy of desire",
+        "fury of desire",
+        "gluttony",
+        "grasping",
+        "graspingness",
+        "greed",
+        "greediness",
+        "gust",
+        "gusto",
+        "hoggishness",
+        "impatience",
+        "incontinence",
+        "inordinate desire",
+        "insatiability",
+        "insatiable desire",
+        "intemperateness",
+        "itching palm",
+        "keen desire",
+        "keenness",
+        "life",
+        "liveliness",
+        "lust",
+        "overgreediness",
+        "piggishness",
+        "promptness",
+        "quickness",
+        "rapaciousness",
+        "rapacity",
+        "ravenousness",
+        "readiness",
+        "sordidness",
+        "spirit",
+        "swinishness",
+        "verve",
+        "vitality",
+        "vivacity",
+        "voraciousness",
+        "voracity",
+        "wolfishness",
+        "zest",
+        "zestfulness"
+      ]
+    },
+    "avie": {
+      "word": "AVIE",
+      "definitions": [
+        {
+          "text": "Emulously. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aviette": {
+      "word": "AVIETTE",
+      "definitions": [
+        {
+          "text": "A heavier-than-air flying machine in which the motive power is furnished solely by the aviator.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avifauna": {
+      "word": "AVIFAUNA",
+      "definitions": [
+        {
+          "text": "The birds, or all the kinds of birds, inhabiting a region.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avigato": {
+      "word": "AVIGATO",
+      "definitions": [
+        {
+          "text": "See Avocado.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avignonberry": {
+      "word": "AVIGNON BERRY",
+      "definitions": [
+        {
+          "text": "The fruit of the Rhamnus infectorius, eand of other species of the same genus; -- so called from the city of Avignon, in France. It is used by dyers and painters for coloring yellow. Called also French berry.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "avile": {
+      "word": "AVILE",
+      "definitions": [
+        {
+          "text": "To abase or debase; to vilify; to depreciate. [Obs.] Want makes us know the price of what we avile. B. Jonson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avis": {
+      "word": "AVIS",
+      "definitions": [
+        {
+          "text": "Advice; opinion; deliberation. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avise": {
+      "word": "AVISE",
+      "definitions": [
+        {
+          "text": "To look at; to view; to think of. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To advise; to counsel. [Obs.] Shak. To avise one's self, to consider with one's self, to reflect, to deliberate. [Obs.] Chaucer. Now therefore, if thou wilt enriched be, Avise thee well, and change thy willful mood. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To consider; to reflect. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aviseful": {
+      "word": "AVISEFUL",
+      "definitions": [
+        {
+          "text": "Watchful; circumspect. [Obs.] With sharp, aviseful eye. Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avisely": {
+      "word": "AVISELY",
+      "definitions": [
+        {
+          "text": "Advisedly. [Obs.] Chaucer.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avisement": {
+      "word": "AVISEMENT",
+      "definitions": [
+        {
+          "text": "Advisement; observation; deliberation. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avision": {
+      "word": "AVISION",
+      "definitions": [
+        {
+          "text": "Vision. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aviso": {
+      "word": "AVISO",
+      "definitions": [
+        {
+          "text": "Information; advice.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An advice boat, or dispatch boat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avocado": {
+      "word": "AVOCADO",
+      "definitions": [
+        {
+          "text": "The pulpy fruit of Persea gratissima, a tree of tropical America. It is about the size and shape of a large pear; -- called also avocado pear, alligator pear, midshipman's butter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avocat": {
+      "word": "AVOCAT",
+      "definitions": [
+        {
+          "text": "An advocate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avocate": {
+      "word": "AVOCATE",
+      "definitions": [
+        {
+          "text": "To call off or away; to withdraw; to transfer to another tribunal. [Obs. or Archaic] One who avocateth his mind from other occupations. Barrow. He, at last, . . . avocated the cause to Rome. Robertson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avocation": {
+      "word": "AVOCATION",
+      "definitions": [
+        {
+          "text": "A calling away; a diversion. [Obs. or Archaic] Impulses to duty, and powerful avocations from sin. South.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which calls one away from one's regular employment or vocation. Heaven is his vocation, and therefore he counts earthly employments avocations. Fuller. By the secular cares and avocations which accompany marriage the clergy have been furnished with skill in common life. Atterbury. life, or occasional calls which summon a person to leave his ordinary or principal business. Avocation (in the singular) for vocation is usually avoided by good writers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pursuits; duties; affairs which occupy one's time; usual employment; vocation. There are professions, among the men, no more favorable to these studies than the common avocations of women. Richardson. In a few hours, above thirty thousand men left his standard, and returned to their ordinary avocations. Macaulay. An irregularity and instability of purpose, which makes them choose the wandering avocations of a shepherd, rather than the more fixed pursuits of agriculture. Buckle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avocative": {
+      "word": "AVOCATIVE",
+      "definitions": [
+        {
+          "text": "Calling off. [Obs.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "That which calls aside; a dissuasive.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avocetavoset": {
+      "word": "AVOCET; AVOSET",
+      "definitions": [
+        {
+          "text": "A grallatorial bird, of the genus Recurvirostra; the scooper. The bill is long and bend upward toward the tip. The American species is R. Americana. [Written also avocette.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoid": {
+      "word": "AVOID",
+      "definitions": [
+        {
+          "text": "To empty. [Obs.] Wyclif.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To emit or throw out; to void; as, to avoid excretions. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To quit or evacuate; to withdraw from. [Obs.] Six of us only stayed, and the rest avoided the room. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make void; to annul or vacate; to refute. How can these grants of the king's be avoided Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To keep away from; to keep clear of; to endeavor no to meet; to shun; to abstain from; as, to avoid the company of gamesters. What need a man forestall his date of grief. And run to meet what he would most avoid Milton. He carefully avoided every act which could goad them into open hostility. Macaulay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To get rid of. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Pleading)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To defeat or evade; to invalidate. Thus, in a replication, the plaintiff may deny the defendant's plea, or confess it, and avoid it by stating new matter. Blackstone. of, an extension of the meaning, to withdraw one's self from. It denotes care taken not to come near or in contact; as, to avoid certain persons or places. Shun is a stronger term, implying more prominently the idea of intention. The words may, however, in many cases be interchanged. No man can pray from his heart to be kept from temptation, if the take no care of himself to avoid it. Mason. So Chanticleer, who never saw a fox, Yet shunned him as a sailor shuns the rocks. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To retire; to withdraw. [Obs.] David avoided out of his presence. 1 Sam. xviii. 11.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become void or vacant. [Obs.] Ayliffe.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abstain",
+        "abstain from",
+        "avert",
+        "be stuck-up",
+        "bilk",
+        "blench",
+        "blink",
+        "circumvent",
+        "cringe",
+        "debar",
+        "deflect",
+        "divert",
+        "do without",
+        "dodge",
+        "double",
+        "draw back",
+        "duck",
+        "elude",
+        "escape",
+        "eschew",
+        "evade",
+        "exclude",
+        "fade",
+        "fall back",
+        "fight shy of",
+        "flinch",
+        "forbear",
+        "forbid",
+        "forgo",
+        "give place to",
+        "hang back",
+        "hold aloof",
+        "hold aloof from",
+        "hold back",
+        "jib",
+        "keep aloof",
+        "keep away from",
+        "keep clear of",
+        "keep from",
+        "keep hands off",
+        "keep off",
+        "keep remote from",
+        "leave alone",
+        "let alone",
+        "let go by",
+        "make way for",
+        "never touch",
+        "not meddle with",
+        "not touch",
+        "obviate",
+        "pass up",
+        "preclude",
+        "prevent",
+        "prohibit",
+        "pull back",
+        "quail",
+        "recoil",
+        "reel back",
+        "refrain",
+        "refrain from",
+        "retreat",
+        "sheer off",
+        "shrink",
+        "shrink back",
+        "shun",
+        "shy",
+        "sidestep",
+        "spare",
+        "stand aloof",
+        "stand aloof from",
+        "start aside",
+        "start back",
+        "stay detached from",
+        "steer clear of",
+        "swerve",
+        "turn aside",
+        "turn away from",
+        "ward off",
+        "weasel",
+        "weasel out",
+        "wince",
+        "withhold"
+      ]
+    },
+    "avoidable": {
+      "word": "AVOIDABLE",
+      "definitions": [
+        {
+          "text": "Capable of being vacated; liable to be annulled or made invalid; voidable. The charters were not avoidable for the king's nonage. Hale.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Capable of being avoided, shunned, or escaped.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoidance": {
+      "word": "AVOIDANCE",
+      "definitions": [
+        {
+          "text": "The act of annulling; annulment.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of becoming vacant, or the state of being vacant; -- specifically used for the state of a benefice becoming void by the death, deprivation, or resignation of the incumbent. Wolsey, . . . on every avoidance of St. Peter's chair, was sitting down therein, when suddenly some one or other clapped in before him. Fuller.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A dismissing or a quitting; removal; withdrawal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of avoiding or shunning; keeping clear of. \"The avoidance of pain.\" Beattie.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The courts by which anything is carried off. Avoidances and drainings of water. Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Encratism",
+        "Friday",
+        "Lenten fare",
+        "Pythagoreanism",
+        "Pythagorism",
+        "Rechabitism",
+        "Shakerism",
+        "Spartan fare",
+        "Stoicism",
+        "abstainment",
+        "abstemiousness",
+        "abstention",
+        "abstinence",
+        "asceticism",
+        "banyan day",
+        "celibacy",
+        "chastity",
+        "continence",
+        "cringe",
+        "dodge",
+        "duck",
+        "elusion",
+        "eschewal",
+        "evasion",
+        "fallback",
+        "fast",
+        "fish day",
+        "flinch",
+        "fruitarianism",
+        "gymnosophy",
+        "nephalism",
+        "plain living",
+        "pullback",
+        "pullout",
+        "recoil",
+        "refraining",
+        "refrainment",
+        "retreat",
+        "runaround",
+        "sexual abstinence",
+        "shunning",
+        "shy",
+        "sidestep",
+        "sidestepping",
+        "simple diet",
+        "spare diet",
+        "teetotalism",
+        "the pledge",
+        "total abstinence",
+        "vegetarianism",
+        "wince"
+      ]
+    },
+    "avoider": {
+      "word": "AVOIDER",
+      "definitions": [
+        {
+          "text": "The person who carries anything away, or the vessel in which things are carried away. Johnson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who avoids, shuns, or escapes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoidless": {
+      "word": "AVOIDLESS",
+      "definitions": [
+        {
+          "text": "Unavoidable; inevitable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoke": {
+      "word": "AVOKE",
+      "definitions": [
+        {
+          "text": "To call from or back again. [Obs.] Bp. Burnet.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avolate": {
+      "word": "AVOLATE",
+      "definitions": [
+        {
+          "text": "To fly away; to escape; to exhale. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avolation": {
+      "word": "AVOLATION",
+      "definitions": [
+        {
+          "text": "The act of flying; flight; evaporation. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoset": {
+      "word": "AVOSET",
+      "definitions": [
+        {
+          "text": "Same as Avocet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avouch": {
+      "word": "AVOUCH",
+      "definitions": [
+        {
+          "text": "To appeal to; to cite or claim as authority. [Obs.] They avouch many successions of authorities. Coke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To maintain a just or true; to vouch for. We might be disposed to question its authencity, it if were not avouched by the full evidence. Milman.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To declare or assert positively and as matter of fact; to affirm openly. If this which he avouches does appear. Shak. Such antiquities could have been avouched for the Irish. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To acknowledge deliberately; to admit; to confess; to sanction. Thou hast avouched the Lord this day to be thy God. Deut. xxvi. 17.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Evidence; declaration. [Obs.] The sensible and true avouch Of mine own eyes. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acknowledge",
+        "admit",
+        "affirm",
+        "allege",
+        "announce",
+        "annunciate",
+        "argue",
+        "assert",
+        "assever",
+        "asseverate",
+        "assure",
+        "attest",
+        "aver",
+        "avow",
+        "bear witness",
+        "certify",
+        "confess",
+        "confirm",
+        "contend",
+        "corroborate",
+        "countersign",
+        "declare",
+        "depone",
+        "depose",
+        "disclose",
+        "enunciate",
+        "express",
+        "express the belief",
+        "give evidence",
+        "guarantee",
+        "have",
+        "hold",
+        "insist",
+        "issue a manifesto",
+        "lay down",
+        "maintain",
+        "make a promise",
+        "manifesto",
+        "own",
+        "pledge",
+        "plight",
+        "predicate",
+        "proclaim",
+        "profess",
+        "promise",
+        "pronounce",
+        "protest",
+        "put",
+        "put it",
+        "say",
+        "set down",
+        "speak",
+        "speak out",
+        "speak up",
+        "stand for",
+        "stand on",
+        "state",
+        "submit",
+        "swear",
+        "testify",
+        "troth",
+        "underwrite",
+        "vouch",
+        "vow",
+        "warrant",
+        "witness"
+      ]
+    },
+    "avouchable": {
+      "word": "AVOUCHABLE",
+      "definitions": [
+        {
+          "text": "Capable of being avouched.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoucher": {
+      "word": "AVOUCHER",
+      "definitions": [
+        {
+          "text": "One who avouches.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avouchment": {
+      "word": "AVOUCHMENT",
+      "definitions": [
+        {
+          "text": "The act of avouching; positive declaration. [Obs.] Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoutrer": {
+      "word": "AVOUTRER",
+      "definitions": [
+        {
+          "text": "See Advoutrer. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoutrie": {
+      "word": "AVOUTRIE",
+      "definitions": [
+        {
+          "text": "Adultery. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avow": {
+      "word": "AVOW",
+      "definitions": [
+        {
+          "text": "To declare openly, as something believed to be right; to own or acknowledge frankly; as, a man avows his principles or his crimes. Which I to be the of Israel's God Avow, and challenge Dagon to the test. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To acknowledge and justify, as an act done. See Avowry. Blackstone.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Avowal. [Obs.] Dryden.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "To bind, or to devote, by a vow. [Obs.] Wyclif.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A vow or determination. [Archaic]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accept",
+        "acknowledge",
+        "admit",
+        "admit everything",
+        "affirm",
+        "agree provisionally",
+        "allege",
+        "allow",
+        "announce",
+        "annunciate",
+        "argue",
+        "assent grudgingly",
+        "assert",
+        "assever",
+        "asseverate",
+        "attest",
+        "aver",
+        "avouch",
+        "bear witness",
+        "certify",
+        "claim",
+        "come clean",
+        "concede",
+        "confess",
+        "contend",
+        "cop a plea",
+        "declare",
+        "defend",
+        "depone",
+        "depose",
+        "disclose",
+        "enunciate",
+        "express",
+        "express general agreement",
+        "express the belief",
+        "give evidence",
+        "go along with",
+        "grant",
+        "have",
+        "hold",
+        "insist",
+        "issue a manifesto",
+        "lay down",
+        "let on",
+        "maintain",
+        "manifesto",
+        "not oppose",
+        "open up",
+        "out with it",
+        "own",
+        "own up",
+        "plead guilty",
+        "predicate",
+        "pretend",
+        "pretext",
+        "proclaim",
+        "profess",
+        "pronounce",
+        "protest",
+        "protest too much",
+        "purport",
+        "put",
+        "put it",
+        "recognize",
+        "say",
+        "set down",
+        "speak",
+        "speak out",
+        "speak up",
+        "spill",
+        "spill it",
+        "spit it out",
+        "stand for",
+        "stand on",
+        "state",
+        "submit",
+        "swear",
+        "tell all",
+        "tell the truth",
+        "testify",
+        "vindicate",
+        "vouch",
+        "vow",
+        "warrant",
+        "witness",
+        "yield"
+      ]
+    },
+    "avowable": {
+      "word": "AVOWABLE",
+      "definitions": [
+        {
+          "text": "Capable of being avowed, or openly acknowledged, with confidence. Donne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avowal": {
+      "word": "AVOWAL",
+      "definitions": [
+        {
+          "text": "An open declaration; frank acknowledgment; as, an avowal of such principles. Hume.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acceptance",
+        "acknowledgment",
+        "admission",
+        "affidavit",
+        "affirmance",
+        "affirmation",
+        "allegation",
+        "allowance",
+        "announcement",
+        "annunciation",
+        "appreciation",
+        "assertion",
+        "asseveration",
+        "attest",
+        "attestation",
+        "averment",
+        "avouchment",
+        "compurgation",
+        "concession",
+        "conclusion",
+        "confession",
+        "creed",
+        "declaration",
+        "deposition",
+        "dictum",
+        "disclosure",
+        "enunciation",
+        "instrument in proof",
+        "ipse dixit",
+        "legal evidence",
+        "manifesto",
+        "owning",
+        "owning up",
+        "position",
+        "position paper",
+        "positive declaration",
+        "predicate",
+        "predication",
+        "proclamation",
+        "profession",
+        "pronouncement",
+        "proposition",
+        "protest",
+        "protestation",
+        "recognition",
+        "rite of confession",
+        "say",
+        "say-so",
+        "saying",
+        "shrift",
+        "stance",
+        "stand",
+        "statement",
+        "sworn evidence",
+        "sworn statement",
+        "sworn testimony",
+        "testimonial",
+        "testimonium",
+        "testimony",
+        "unbosoming",
+        "utterance",
+        "vouch",
+        "witness",
+        "word"
+      ]
+    },
+    "avowance": {
+      "word": "AVOWANCE",
+      "definitions": [
+        {
+          "text": "Act of avowing; avowal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Upholding; defense; vindication. [Obs.] Can my avowance of king-murdering be collected from anything here written by me Fuller.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avowant": {
+      "word": "AVOWANT",
+      "definitions": [
+        {
+          "text": "The defendant in replevin, who avows the distress of the goods, and justifies the taking. Cowell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avowee": {
+      "word": "AVOWEE",
+      "definitions": [
+        {
+          "text": "The person who has a right to present to a benefice; the patron; an advowee. See Advowson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avower": {
+      "word": "AVOWER",
+      "definitions": [
+        {
+          "text": "One who avows or asserts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avowry": {
+      "word": "AVOWRY",
+      "definitions": [
+        {
+          "text": "An advocate; a patron; a patron saint. [Obs.] Let God alone be our avowry. Latimer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of the distrainer of goods, who, in an action of replevin, avows and justifies the taking in his own right. Blackstone. makes avowry, that is, avours taking the distress in his own right, or the right of his wife, and states the reason if it, as for arrears of rent, damage done, or the like; or makes cognizance, that is, acknowledges the taking, but justifies in an another's right, as his bailiff or servant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avowtry": {
+      "word": "AVOWTRY",
+      "definitions": [
+        {
+          "text": "Adultery. See Advoutry.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avoyer": {
+      "word": "AVOYER",
+      "definitions": [
+        {
+          "text": "A chief magistrate of a free imperial city or canton of Switzerland. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avulse": {
+      "word": "AVULSE",
+      "definitions": [
+        {
+          "text": "To pluck or pull off. Shenstone.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avulsion": {
+      "word": "AVULSION",
+      "definitions": [
+        {
+          "text": "A tearing asunder; a forcible separation. The avulsion of two polished superficies. Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fragment torn off. J. Barlow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The sudden removal of lands or soil from the estate of one man to that of another by an inundation or a current, or by a sudden change in the course of a river by which a part of the estate of one man is cut off and joined to the estate of another. The property in the part thus separated, or cut off, continues in the original owner. Wharton. Burrill.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "avuncular": {
+      "word": "AVUNCULAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an uncle. In these rare instances, the law of pedigree, whether direct or avuncular, gives way. I. Taylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

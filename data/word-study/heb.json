@@ -1,0 +1,403 @@
+{
+  "version": "v1",
+  "entries": {
+    "hebdomad": {
+      "word": "HEBDOMAD",
+      "definitions": [
+        {
+          "text": "A week; a period of seven days. [R.] Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebdomadalhebdomadary": {
+      "word": "HEBDOMADAL; HEBDOMADARY",
+      "definitions": [
+        {
+          "text": "Consisting of seven days, or occurring at intervals of seven days; weekly.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebdomadally": {
+      "word": "HEBDOMADALLY",
+      "definitions": [
+        {
+          "text": "In periods of seven days; weekly. Lowell.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebdomadary": {
+      "word": "HEBDOMADARY",
+      "definitions": [
+        {
+          "text": "A member of a chapter or convent, whose week it is to officiate in the choir, and perform other services, which, on extraordinary occasions, are performed by the superiors.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebdomatical": {
+      "word": "HEBDOMATICAL",
+      "definitions": [
+        {
+          "text": "Weekly; hebdomadal. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebe": {
+      "word": "HEBE",
+      "definitions": [
+        {
+          "text": "(Class. Myth.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The goddess of youth, daughter of Jupiter and Juno. She was believed to have the power of restoring youth and beauty to those who had lost them.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An African ape; the hamadryas.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heben": {
+      "word": "HEBEN",
+      "definitions": [
+        {
+          "text": "Ebony. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebenon": {
+      "word": "HEBENON",
+      "definitions": [
+        {
+          "text": "See Henbane. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebetate": {
+      "word": "HEBETATE",
+      "definitions": [
+        {
+          "text": "To render obtuse; to dull; to blunt; to stupefy; as, to hebetate the intellectual faculties. Southey",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Obtuse; dull.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having a dull or blunt and soft point. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebetation": {
+      "word": "HEBETATION",
+      "definitions": [
+        {
+          "text": "The act of making blunt, dull, or stupid.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being blunted or dulled.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebete": {
+      "word": "HEBETE",
+      "definitions": [
+        {
+          "text": "Dull; stupid. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebetude": {
+      "word": "HEBETUDE",
+      "definitions": [
+        {
+          "text": "Dullness; stupidity. Harvey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acedia",
+        "aloofness",
+        "apathy",
+        "asininity",
+        "ataraxia",
+        "ataraxy",
+        "benumbedness",
+        "blah",
+        "blahs",
+        "blockishness",
+        "boobishness",
+        "boorishness",
+        "boredom",
+        "bovinity",
+        "cloddishness",
+        "coma",
+        "comatoseness",
+        "crassness",
+        "crudeness",
+        "denseness",
+        "density",
+        "detachment",
+        "dim-wittedness",
+        "dimness",
+        "disinterest",
+        "dispassion",
+        "doltishness",
+        "drowsiness",
+        "dull-wittedness",
+        "dullardism",
+        "dullness",
+        "dumbness",
+        "duncery",
+        "enervation",
+        "ennui",
+        "fatigue",
+        "grossness",
+        "heartlessness",
+        "heaviness",
+        "hopelessness",
+        "inanimation",
+        "inappetence",
+        "indifference",
+        "insouciance",
+        "jadedness",
+        "lack of appetite",
+        "lackadaisicalness",
+        "languidness",
+        "languishment",
+        "languor",
+        "languorousness",
+        "lassitude",
+        "lenitude",
+        "lentor",
+        "lethargicalness",
+        "lethargy",
+        "lifelessness",
+        "listlessness",
+        "loutishness",
+        "lumpishness",
+        "ninnyism",
+        "nonchalance",
+        "numbness",
+        "oafdom",
+        "oafishness",
+        "obtuseness",
+        "opacity",
+        "oscitancy",
+        "passiveness",
+        "passivity",
+        "phlegm",
+        "phlegmaticalness",
+        "phlegmaticness",
+        "plucklessness",
+        "resignation",
+        "resignedness",
+        "satedness",
+        "simpletonianism",
+        "sleep",
+        "sleepiness",
+        "sloth",
+        "slothfulness",
+        "slowness",
+        "sluggishness",
+        "slumber",
+        "somnolence",
+        "sopor",
+        "soporifousness",
+        "sottishness",
+        "spiritlessness",
+        "spunklessness",
+        "stolidity",
+        "stupefaction",
+        "stupidity",
+        "stupor",
+        "supineness",
+        "thick-headedness",
+        "thick-wittedness",
+        "torpidity",
+        "torpidness",
+        "torpitude",
+        "torpor",
+        "unconcern",
+        "unteachability",
+        "weariness",
+        "withdrawnness",
+        "world-weariness",
+        "wrongheadedness",
+        "yokelism"
+      ]
+    },
+    "hebraic": {
+      "word": "HEBRAIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Hebrews, or to the language of the Hebrews.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebraically": {
+      "word": "HEBRAICALLY",
+      "definitions": [
+        {
+          "text": "After the manner of the Hebrews or of the Hebrew language.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebraism": {
+      "word": "HEBRAISM",
+      "definitions": [
+        {
+          "text": "A Hebrew idiom or custom; a peculiar expression or manner of speaking in the Hebrew language. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The type of character of the Hebrews. The governing idea of Hebraism is strictness of conscience. M. Arnold.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebraist": {
+      "word": "HEBRAIST",
+      "definitions": [
+        {
+          "text": "One versed in the Hebrew language and learning.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebraistic": {
+      "word": "HEBRAISTIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or resembling, the Hebrew language or idiom.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebraistically": {
+      "word": "HEBRAISTICALLY",
+      "definitions": [
+        {
+          "text": "In a Hebraistic sense or form. Which is Hebraistically used in the New Testament. Kitto.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebraize": {
+      "word": "HEBRAIZE",
+      "definitions": [
+        {
+          "text": "To convert into the Hebrew idiom; to make Hebrew or Hebraistic. J. R. Smith.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To speak Hebrew, or to conform to the Hebrew idiom, or to Hebrew customs.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebrew": {
+      "word": "HEBREW",
+      "definitions": [
+        {
+          "text": "An appellative of Abraham or of one of his descendants, esp. in the line of Jacob; an Israelite; a Jew. There came one that had escaped and told Abram the Hebrew. Gen. xiv. 13.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The language of the Hebrews; -- one of the Semitic family of languages.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the Hebrews; as, the Hebrew language or rites.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebrewcalendar": {
+      "word": "HEBREW CALENDAR",
+      "definitions": [
+        {
+          "text": "= Jewish calendar.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebrewess": {
+      "word": "HEBREWESS",
+      "definitions": [
+        {
+          "text": "An Israelitish woman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebrician": {
+      "word": "HEBRICIAN",
+      "definitions": [
+        {
+          "text": "A Hebraist. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebrideanhebridian": {
+      "word": "HEBRIDEAN; HEBRIDIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the islands called Hebrides, west of Scotland.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or inhabitant of the Hebrides.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

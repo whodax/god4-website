@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "entries": {
+    "anubis": {
+      "word": "ANUBIS",
+      "definitions": [
+        {
+          "text": "An Egyptian deity, the conductor of departed spirits, represented by a human figure with the head of a dog or fox.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anura": {
+      "word": "ANURA",
+      "definitions": [
+        {
+          "text": "One of the orders of amphibians characterized by the absence of a tail, as the frogs and toads. [Written also anoura.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anurous": {
+      "word": "ANUROUS",
+      "definitions": [
+        {
+          "text": "Destitute of a tail, as the frogs and toads. [Also written anourous.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anury": {
+      "word": "ANURY",
+      "definitions": [
+        {
+          "text": "Nonsecretion or defective secretion of urine; ischury.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anus": {
+      "word": "ANUS",
+      "definitions": [
+        {
+          "text": "The posterior opening of the alimentary canal, through which the excrements are expelled.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abdomen",
+        "appendix",
+        "asshole",
+        "blind gut",
+        "bowels",
+        "brain",
+        "bung",
+        "bunghole",
+        "cecum",
+        "colon",
+        "duodenum",
+        "endocardium",
+        "entrails",
+        "foregut",
+        "giblets",
+        "gizzard",
+        "guts",
+        "heart",
+        "hindgut",
+        "innards",
+        "inner mechanism",
+        "insides",
+        "internals",
+        "intestine",
+        "inwards",
+        "jejunum",
+        "kidney",
+        "kishkes",
+        "large intestine",
+        "liver",
+        "liver and lights",
+        "lung",
+        "midgut",
+        "perineum",
+        "pump",
+        "pylorus",
+        "rectum",
+        "small intestine",
+        "spleen",
+        "stomach",
+        "ticker",
+        "tripes",
+        "vermiform appendix",
+        "viscera",
+        "vitals",
+        "works"
+      ]
+    }
+  }
+}

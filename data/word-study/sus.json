@@ -1,0 +1,785 @@
+{
+  "version": "v1",
+  "entries": {
+    "susceptibility": {
+      "word": "SUSCEPTIBILITY",
+      "definitions": [
+        {
+          "text": "The state or quality of being susceptible; the capability of receiving impressions, or of being affected.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Specifically, capacity for deep feeling or emotional excitement; sensibility, in its broadest acceptation; impressibility; sensitiveness. Magnetic susceptibility (Physics), the intensity of magnetization of a body placed in a uniform megnetic field of unit strength. Sir W. Thomson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susceptible": {
+      "word": "SUSCEPTIBLE",
+      "definitions": [
+        {
+          "text": "Capable of admitting anything additional, or any change, affection, or influence; readily acted upon; as, a body susceptible of color or of alteration. It sheds on souls susceptible of light, The glorious dawn of our eternal day. Young.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Capable of impression; having nice sensibility; impressible; tender; sensitive; as, children are more susceptible than adults; a man of a susceptible heart. Candidates are . . . not very susceptible of affronts. Cowper.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susception": {
+      "word": "SUSCEPTION",
+      "definitions": [
+        {
+          "text": "The act of taking; reception.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susceptivity": {
+      "word": "SUSCEPTIVITY",
+      "definitions": [
+        {
+          "text": "Capacity for receiving; susceptibility. [R.] Wollaston.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susceptor": {
+      "word": "SUSCEPTOR",
+      "definitions": [
+        {
+          "text": "One who undertakes anything; specifically, a godfather; a sponsor; a guardian. Puller. Shipley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suscipiency": {
+      "word": "SUSCIPIENCY",
+      "definitions": [
+        {
+          "text": "Admission. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suscipient": {
+      "word": "SUSCIPIENT",
+      "definitions": [
+        {
+          "text": "Receiving; admitting. [R.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One who takes or admits; one who receives. [R.] Jer. Taylor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suscitability": {
+      "word": "SUSCITABILITY",
+      "definitions": [
+        {
+          "text": "Capability of being suscitated; excitability. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suscitate": {
+      "word": "SUSCITATE",
+      "definitions": [
+        {
+          "text": "To rouse; to excite; to call into life and action. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suscitation": {
+      "word": "SUSCITATION",
+      "definitions": [
+        {
+          "text": "The act of raising or exciting. [R.] A mere suscitation or production of a thing. South.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suslik": {
+      "word": "SUSLIK",
+      "definitions": [
+        {
+          "text": "A ground squirrel (Spermophilus citillus) of Europe and Asia. It has large cheek pouches. [Written also souslik.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspect": {
+      "word": "SUSPECT",
+      "definitions": [
+        {
+          "text": "Suspicious; inspiring distrust. [Obs.] Suspect [was] his face, suspect his word also. Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Suspected; distrusted. [Obs.] What I can do or offer is suspect. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Suspicion. [Obs.] Chaucer. So with suspect, with fear and grief, dismayed. Fairfax.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who, or that which, is suspected; an object of suspicion; -- formerly applied to persons and things; now, only to persons suspected of crime. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To imagine to exist; to have a slight or vague opinion of the existence of, without proof, and often upon weak evidence or no evidence; to mistrust; to surmise; -- commonly used regarding something unfavorable, hurtful, or wrong; as, to suspect the presence of disease. Nothing makes a man suspect much, more than to know little; and therefore men should remedy suspicion by producing to know more. Bacon. From her hand I could suspect no ill. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To imagine to be guilty, upon slight evidence, or without proof; as, to suspect one of equivocation.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hold to be uncertain; to doubt; to mistrust; to distruct; as, to suspect the truth of a story. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To look up to; to respect. [Obs.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To imagine guilt; to have a suspicion or suspicions; to be suspicious. If I suspect without cause, why then make sport at time. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspectable": {
+      "word": "SUSPECTABLE",
+      "definitions": [
+        {
+          "text": "That may be suspected.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspecter": {
+      "word": "SUSPECTER",
+      "definitions": [
+        {
+          "text": "One who suspects.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspectful": {
+      "word": "SUSPECTFUL",
+      "definitions": [
+        {
+          "text": "Apt to suspect or mistrust; full of suspicion; suspicious; as,",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspection": {
+      "word": "SUSPECTION",
+      "definitions": [
+        {
+          "text": "Suspicion. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspectiousness": {
+      "word": "SUSPECTIOUSNESS",
+      "definitions": [
+        {
+          "text": "Suspiciousness; cause for suspicion. [Obs. & R.] Ld. Berners.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspectless": {
+      "word": "SUSPECTLESS",
+      "definitions": [
+        {
+          "text": "Not suspecting; having no suspicion. [R.] Sir T. Herbert.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not suspected; not mistrusted. [R.] Beau. & Fl.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspend": {
+      "word": "SUSPEND",
+      "definitions": [
+        {
+          "text": "To cease from operation or activity; esp., to stop payment, or be unable to meet obligations or engagements (said of a commercial firm or a bank).",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspender": {
+      "word": "SUSPENDER",
+      "definitions": [
+        {
+          "text": "One who, or that which, suspends; esp., one of a pair of straps or braces worn over the shoulders, for holding up the trousers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspensation": {
+      "word": "SUSPENSATION",
+      "definitions": [
+        {
+          "text": "The act of suspending, or the state of being suspended, especially for a short time; temporary suspension.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspense": {
+      "word": "SUSPENSE",
+      "definitions": [
+        {
+          "text": "Held or lifted up; held or prevented from proceeding. [Obs.] [The great light of day] suspense in heaven. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Expressing, or proceeding from, suspense or doubt. [Obs.] \"Expectation held his look suspense.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The state of being suspended; specifically, a state of uncertainty and expectation, with anxiety or apprehension; indetermination; indecision; as, the suspense of a person waiting for the verdict of a jury. Ten days the prophet in suspense remained. Denham. Upon the ticklish balance of suspense. Cowper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Cessation for a time; stop; pause. A cool suspense from pleasure and from pain. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. F. suspense.] (Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A temporary cessation of one's right; suspension, as when the rent or other profits of land cease by unity of possession of land and rent. Suspense account (Bookkeeping), an account in which receipts or disbursements are temporarily entered until their proper position in the books is determined.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspensely": {
+      "word": "SUSPENSELY",
+      "definitions": [
+        {
+          "text": "In suspense. [Obs.] Hales.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspensibility": {
+      "word": "SUSPENSIBILITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being suspensible.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspensible": {
+      "word": "SUSPENSIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being suspended; capable of being held from sinking.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspension": {
+      "word": "SUSPENSION",
+      "definitions": [
+        {
+          "text": "The act of suspending, or the state of being suspended; pendency; as, suspension from a hook.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Especially, temporary delay, interruption, or cessation; as: (a) Of labor, study, pain, etc. (b) Of decision, determination, judgment, etc.; as, to ask a suspension of judgment or opinion in view of evidence to be produced. (c) Of the payment of what is due; as, the suspension of a mercantile firm or of a bank. (d) Of punishment, or sentence of punishment. (e) Of a person in respect of the exercise of his office, powers, prerogative, etc.; as, the suspension of a student or of a clergyman. (f) Of the action or execution of law, etc.; as, the suspension of the habeas corpus act.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A conditional withholding, interruption, or delay; as, the suspension of a payment on the performance of a condition.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of a solid when its particles are mixed with, but undissolved in, a fluid, and are capable of separation by straining; also, any substance in this state.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Rhet.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A keeping of the hearer in doubt and in attentive expectation of what is to follow, or of what is to be the inference or conclusion from the arguments or observations employed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Scots Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stay or postponement of execution of a sentence condemnatory by means of letters of suspension granted on application to the lord ordinary.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The prolongation of one or more tones of a chord into the chord which follows, thus producing a momentary discord, suspending the concord which the ear expects. Cf. Retardation. Pleas in suspension (Law), pleas which temporarily abate or suspend a suit. of a balance, at which the weights act, or from which they are suspended. which usually pass over high piers or columns at each end, and are secured in the ground beyond. operations agreed on by the commanders of contending armies, as for burying the dead, making proposal for surrender or for peace, etc. from the weighing apparatus instead of resting upon it.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspensive": {
+      "word": "SUSPENSIVE",
+      "definitions": [
+        {
+          "text": "Tending to suspend, or to keep in suspense; causing interruption or delay; uncertain; doubtful. \"In suspensive thoughts.\" Beaumont. \"A suspensive veto.\" Macaulay. The provisional and suspensive attitude. J. Morley. Suspensive condition (Scots Law), a condition precedent, or a condition without the performance of which the contract can not be completed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspensor": {
+      "word": "SUSPENSOR",
+      "definitions": [
+        {
+          "text": "A suspensory.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The cord which suspends the embryo; and which is attached to the radicle in the young state; the proembryo.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspensorium": {
+      "word": "SUSPENSORIUM",
+      "definitions": [
+        {
+          "text": "Anything which suspends or holds up a part: especially, the mandibular suspensorium (a series of bones, or of cartilages representing them) which connects the base of the lower jaw with the skull in most vertebrates below mammals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspensory": {
+      "word": "SUSPENSORY",
+      "definitions": [
+        {
+          "text": "Suspended; hanging; depending.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fitted or serving to suspend; suspending; as, a suspensory muscle. Ray.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a suspensorium.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "That which suspends, or holds up, as a truss; specifically (Med.),",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "a bandage or bag for supporting the scrotum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspicable": {
+      "word": "SUSPICABLE",
+      "definitions": [
+        {
+          "text": "Liable to suspicion; suspicious. [Obs.] It is a very suspicable business. Dr. H. more.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspiciency": {
+      "word": "SUSPICIENCY",
+      "definitions": [
+        {
+          "text": "Suspiciousness; suspicion. [Obs.] Hopkins.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspicion": {
+      "word": "SUSPICION",
+      "definitions": [
+        {
+          "text": "The act of suspecting; the imagination or apprehension of the existence of something (esp. something wrong or hurtful) without proof, or upon very slight evidence, or upon no evidence. Suspicions among thoughts are like bats among birds, they ever fly by twilight. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Slight degree; suggestion; hint. [Colloq.] The features are mild but expressive, with just a suspicion . . . of saturnine or sarcastic humor. A. W. Ward.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To view with suspicion; to suspect; to doubt. [Obs. or Low] South.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspicious": {
+      "word": "SUSPICIOUS",
+      "definitions": [
+        {
+          "text": "Inclined to suspect; given or prone to suspicion; apt to imagine without proof. Nature itself, after it has done an injury, will ever be suspicious; and no man can love the person he suspects. South. Many mischievous insects are daily at work to make men of merit suspicious of each other. Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Indicating suspicion, mistrust, or fear. We have a suspicious, fearful, constrained countenance. Swift.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Liable to suspicion; adapted to raise suspicion; giving reason to imagine ill; questionable; as, an author of suspicious innovations; suspicious circumstances. I spy a black, suspicious, threatening could. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspiral": {
+      "word": "SUSPIRAL",
+      "definitions": [
+        {
+          "text": "A breathing hole; a vent or ventiduct.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spring of water passing under ground toward a cistern or conduit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspiration": {
+      "word": "SUSPIRATION",
+      "definitions": [
+        {
+          "text": "The act of sighing, or fetching a long and deep breath; a deep respiration; a sigh. Windy suspiration of forced breath. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspire": {
+      "word": "SUSPIRE",
+      "definitions": [
+        {
+          "text": "To fetch a long, deep breath; to sigh; to breathe. Shak. Fireflies that suspire In short, soft lapses of transported flame. Mrs. Browning.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A long, deep breath; a sigh. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suspired": {
+      "word": "SUSPIRED",
+      "definitions": [
+        {
+          "text": "Ardently desired or longed for; earnestly coveted. [Obs.] Sir H. Wotton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustain": {
+      "word": "SUSTAIN",
+      "definitions": [
+        {
+          "text": "To keep from falling; to bear; to uphold; to support; as, a foundation sustains the superstructure; a beast sustains a load; a rope sustains a weight. Every pillar the temple to sustain. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Hence, to keep from sinking, as in despondence, or the like; to support. No comfortable expectations of another life to sustain him under the evils in this world. Tillotson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To maintain; to keep alive; to support; to subsist; to nourish; as, provisions to sustain an army.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To aid, comfort, or relieve; to vindicate. Shak. His sons, who seek the tyrant to sustain. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To endure without failing or yielding; to bear up under; as, to sustain defeat and disappointment.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To suffer; to bear; to undergo. Shall Turnus, then, such endless toil sustain Dryden. You shall sustain more new disgraces. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To allow the prosecution of; to admit as valid; to sanction; to continue; not to dismiss or abate; as, the court sustained the action or suit.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To prove; to establish by evidence; to corroborate or confirm; to be conclusive of; as, to sustain a charge, an accusation, or a proposition.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "One who, or that which, upholds or sustains; a sustainer. I waked again, for my sustain was the Lord. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustainable": {
+      "word": "SUSTAINABLE",
+      "definitions": [
+        {
+          "text": "Capable of being sustained or maintained; as, the action is not sustainable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustained": {
+      "word": "SUSTAINED",
+      "definitions": [
+        {
+          "text": "Held up to a certain pitch, degree, or level; uniform; as, sustained pasion; a sustained style of writing; a sustained note in music.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustainer": {
+      "word": "SUSTAINER",
+      "definitions": [
+        {
+          "text": "One who, or that which, sustains. Waterland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustainment": {
+      "word": "SUSTAINMENT",
+      "definitions": [
+        {
+          "text": "The act of sustaining; maintenance; support. Milton. Lowell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustaltic": {
+      "word": "SUSTALTIC",
+      "definitions": [
+        {
+          "text": "Mournful; -- said of a species of music among the ancient Greeks. Busby.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustenance": {
+      "word": "SUSTENANCE",
+      "definitions": [
+        {
+          "text": "The act of sustaining; support; maintenance; subsistence; as, the sustenance of the body; the sustenance of life.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which supports life; food; victuals; provisions; means of living; as, the city has ample sustenance. \"A man of little sustenance.\" Chaucer. For lying is thy sustenance, thy food. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustentacle": {
+      "word": "SUSTENTACLE",
+      "definitions": [
+        {
+          "text": "Sustenance. [Obs.] Dr. H. More.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustentacular": {
+      "word": "SUSTENTACULAR",
+      "definitions": [
+        {
+          "text": "Supporting; sustaining; as, a sustentacular tissue.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustentate": {
+      "word": "SUSTENTATE",
+      "definitions": [
+        {
+          "text": "To sustain. [R.] C. Reade.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustentation": {
+      "word": "SUSTENTATION",
+      "definitions": [
+        {
+          "text": "The act of sustaining, or the state of being sustained; preservation from falling; support; sustenance; maintenance.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Physiol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The aggregate of the functions by which a living organism is maintained in a normal condition of weight and growth. Sustentation fund (Eccl.), a fund of a religious body for support of its ministers, chapels, etc.; as, the sustentation fund of the Free Church of Scotland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustentative": {
+      "word": "SUSTENTATIVE",
+      "definitions": [
+        {
+          "text": "Adapted to sustain, strengthen, or corroborate; as, sustentative citations or quotations. Sustentative functions (Physiol.), those functions of the body which affect its material composition and thus determine its mass.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustention": {
+      "word": "SUSTENTION",
+      "definitions": [
+        {
+          "text": "Sustentation. [R. or Colloq.] In fine images, in sustention, in irony, they surpass anything that Burke ever wrote. J. Morley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustersustre": {
+      "word": "SUSTER; SUSTRE",
+      "definitions": [
+        {
+          "text": "Sister. [Obs.] Chaucer. There are seven sustren, that serve truth ever. Piers Plowman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susu": {
+      "word": "SUSU",
+      "definitions": [
+        {
+          "text": "See Soosoo.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susurrant": {
+      "word": "SUSURRANT",
+      "definitions": [
+        {
+          "text": "Whispering. [R.] \"The soft susurrant sigh.\" Poetry of Anti- Jacobin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susurration": {
+      "word": "SUSURRATION",
+      "definitions": [
+        {
+          "text": "A whispering; a soft murmur. \"Soft susurrations of the trees.\" Howell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susurringly": {
+      "word": "SUSURRINGLY",
+      "definitions": [
+        {
+          "text": "In the manner of a whisper. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susurrous": {
+      "word": "SUSURROUS",
+      "definitions": [
+        {
+          "text": "Whispering; rustling; full of whispering sounds. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susurrus": {
+      "word": "SUSURRUS",
+      "definitions": [
+        {
+          "text": "The act of whispering; a whisper; a murmur. De Quincey. The soft susurrus and sighs of the branches. Longfellow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

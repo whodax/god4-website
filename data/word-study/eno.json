@@ -1,0 +1,600 @@
+{
+  "version": "v1",
+  "entries": {
+    "enodal": {
+      "word": "ENODAL",
+      "definitions": [
+        {
+          "text": "Without a node. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enodation": {
+      "word": "ENODATION",
+      "definitions": [
+        {
+          "text": "The act or operation of clearing of knots, or of untying; hence, also, the solution of a difficulty. [R.] Bailey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enode": {
+      "word": "ENODE",
+      "definitions": [
+        {
+          "text": "To clear of knots; to make clear. [Obs.] Cockeram.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enoint": {
+      "word": "ENOINT",
+      "definitions": [
+        {
+          "text": "Anointed. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enomotarch": {
+      "word": "ENOMOTARCH",
+      "definitions": [
+        {
+          "text": "The commander of an enomoty. Mitford.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enomoty": {
+      "word": "ENOMOTY",
+      "definitions": [
+        {
+          "text": "A band of sworn soldiers; a division of the Spartan army ranging from twenty-five to thirty-six men, bound together by oath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enopla": {
+      "word": "ENOPLA",
+      "definitions": [
+        {
+          "text": "One of the orders of Nemertina, characterized by the presence of a peculiar armature of spines or plates in the proboscis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enoptomancy": {
+      "word": "ENOPTOMANCY",
+      "definitions": [
+        {
+          "text": "Divination by the use of a mirror.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enorm": {
+      "word": "ENORM",
+      "definitions": [
+        {
+          "text": "Enormous. [Obs.] Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enormity": {
+      "word": "ENORMITY",
+      "definitions": [
+        {
+          "text": "The state or quality of exceeding a measure or rule, or of being immoderate, monstrous, or outrageous. The enormity of his learned acquisitions. De Quincey.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is enormous; especially, an exceeding offense against order, right, or decency; an atrocious crime; flagitious villainy; an atrocity. These clamorous enormities which are grown too big and strong for law or shame. South.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abjectness",
+        "abominableness",
+        "affront",
+        "ampleness",
+        "amplitude",
+        "aspersion",
+        "atrociousness",
+        "atrocity",
+        "barbarity",
+        "baseness",
+        "beggarliness",
+        "bigness",
+        "boundlessness",
+        "breach",
+        "brickbat",
+        "bulk",
+        "contempt",
+        "contemptibility",
+        "contemptibleness",
+        "contumely",
+        "crime",
+        "crime against humanity",
+        "crumminess",
+        "cut",
+        "deadly sin",
+        "debasement",
+        "degradation",
+        "delinquency",
+        "depravity",
+        "dereliction",
+        "despicableness",
+        "despite",
+        "dump",
+        "enormousness",
+        "error",
+        "evil",
+        "execrableness",
+        "expanse",
+        "failure",
+        "fault",
+        "felony",
+        "flagitiousness",
+        "flagrancy",
+        "flout",
+        "flouting",
+        "formidableness",
+        "foulness",
+        "fullness",
+        "fulsomeness",
+        "genocide",
+        "gibe",
+        "gigantism",
+        "grandeur",
+        "grandness",
+        "graveness",
+        "great scope",
+        "greatness",
+        "grossness",
+        "guilty act",
+        "heavy sin",
+        "heinousness",
+        "horribleness",
+        "horridness",
+        "horror",
+        "hugeness",
+        "humiliation",
+        "immensity",
+        "impropriety",
+        "indignity",
+        "indiscretion",
+        "inexpiable sin",
+        "infinity",
+        "iniquity",
+        "injury",
+        "injustice",
+        "insult",
+        "intensity",
+        "jeer",
+        "jeering",
+        "lapse",
+        "largeness",
+        "littleness",
+        "lowness",
+        "magnitude",
+        "malefaction",
+        "malfeasance",
+        "malum",
+        "massiveness",
+        "meanness",
+        "might",
+        "mightiness",
+        "minor wrong",
+        "misdeed",
+        "misdemeanor",
+        "miserableness",
+        "misfeasance",
+        "mock",
+        "mockery",
+        "monstrosity",
+        "monstrousness",
+        "mortal sin",
+        "muchness",
+        "nefariousness",
+        "nonfeasance",
+        "obnoxiousness",
+        "odiousness",
+        "offense",
+        "omission",
+        "outrage",
+        "outrageousness",
+        "paltriness",
+        "peccadillo",
+        "peccancy",
+        "pettiness",
+        "plenitude",
+        "pokiness",
+        "poorness",
+        "power",
+        "prodigiousness",
+        "put-down",
+        "rankness",
+        "savagery",
+        "scabbiness",
+        "scoff",
+        "scrubbiness",
+        "scruffiness",
+        "scumminess",
+        "scurrility",
+        "scurviness",
+        "seriousness",
+        "shabbiness",
+        "shoddiness",
+        "sin",
+        "sin of commission",
+        "sin of omission",
+        "sinful act",
+        "slip",
+        "smallness",
+        "squalor",
+        "strength",
+        "stupendousness",
+        "taunt",
+        "tort",
+        "transgression",
+        "tremendousness",
+        "trespass",
+        "trip",
+        "uncomplimentary remark",
+        "unutterable sin",
+        "vastness",
+        "venial sin",
+        "viciousness",
+        "vileness",
+        "weightiness",
+        "wickedness",
+        "wretchedness",
+        "wrong"
+      ]
+    },
+    "enormous": {
+      "word": "ENORMOUS",
+      "definitions": [
+        {
+          "text": "Exceeding the usual rule, norm, or measure; out of due proportion; inordinate; abnormal. \"Enormous bliss.\" Milton. \"This enormous state.\" Shak. \"The hoop's enormous size.\" Jenyns. Wallowing unwieldy, enormous in their gait. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Exceedingly wicked; outrageous; atrocious; monstrous; as, an enormous crime. That detestable profession of a life so enormous. Bale. monstrous. when it overpasses its ordinary law of existence or far exceeds its proper average or standard, and becomes -- so to speak -- abnormal in its magnitude, degree, etc.; as, a man of enormous strength; a deed of enormous wickedness. Immense expresses somewhat indefinitely an immeasurable quantity or extent. Excessive is applied to what is beyond a just measure or amount, and is always used in an evil; as, enormous size; an enormous crime; an immense expenditure; the expanse of ocean is immense. \"Excessive levity and indulgence are ultimately excessive rigor.\" V. Knox. \"Complaisance becomes servitude when it is excessive.\" La Rochefoucauld (Trans).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Atlantean",
+        "Brobdingnagian",
+        "Cyclopean",
+        "Gargantuan",
+        "Herculean",
+        "Homeric",
+        "a bit much",
+        "abandoned",
+        "abominable",
+        "abysmal",
+        "amplitudinous",
+        "arrant",
+        "astronomic",
+        "astronomical",
+        "atrocious",
+        "awesome",
+        "awful",
+        "base",
+        "beastly",
+        "beneath contempt",
+        "blameworthy",
+        "boundless",
+        "brutal",
+        "bulky",
+        "colossal",
+        "contemptible",
+        "cosmic",
+        "deplorable",
+        "despicable",
+        "detestable",
+        "dire",
+        "disgusting",
+        "dreadful",
+        "egregious",
+        "elephantine",
+        "epic",
+        "exaggerated",
+        "excessive",
+        "exorbitant",
+        "extensive",
+        "extravagant",
+        "extreme",
+        "fabulous",
+        "fancy",
+        "fetid",
+        "filthy",
+        "flagrant",
+        "foul",
+        "fulsome",
+        "galactic",
+        "gargantuan",
+        "giant",
+        "giantlike",
+        "gigantic",
+        "gluttonous",
+        "grievous",
+        "gross",
+        "hateful",
+        "heinous",
+        "heroic",
+        "high",
+        "horrible",
+        "horrid",
+        "huge",
+        "hyperbolic",
+        "hypertrophied",
+        "immeasurable",
+        "immense",
+        "immoderate",
+        "incontinent",
+        "infamous",
+        "infinite",
+        "inordinate",
+        "intemperate",
+        "jumbo",
+        "king-size",
+        "lamentable",
+        "large",
+        "loathsome",
+        "lousy",
+        "mammoth",
+        "massive",
+        "massy",
+        "mighty",
+        "monster",
+        "monstrous",
+        "monumental",
+        "mountainous",
+        "nasty",
+        "nefarious",
+        "noisome",
+        "notorious",
+        "obnoxious",
+        "odious",
+        "offensive",
+        "out of bounds",
+        "out of sight",
+        "outrageous",
+        "outsize",
+        "overbig",
+        "overdeveloped",
+        "overgreat",
+        "overgrown",
+        "overlarge",
+        "overmuch",
+        "overweening",
+        "pitiable",
+        "pitiful",
+        "prodigious",
+        "profound",
+        "rank",
+        "regrettable",
+        "reprehensible",
+        "repulsive",
+        "rotten",
+        "sad",
+        "scandalous",
+        "schlock",
+        "scurvy",
+        "shabby",
+        "shameful",
+        "shocking",
+        "shoddy",
+        "sizable",
+        "sordid",
+        "spacious",
+        "squalid",
+        "steep",
+        "stiff",
+        "stupendous",
+        "terrible",
+        "titanic",
+        "too bad",
+        "too much",
+        "towering",
+        "tremendous",
+        "unbridled",
+        "unclean",
+        "unconscionable",
+        "undue",
+        "unreasonable",
+        "unrestrained",
+        "vast",
+        "vile",
+        "villainous",
+        "voluminous",
+        "weighty",
+        "woeful",
+        "worst",
+        "worthless",
+        "wretched"
+      ]
+    },
+    "enormously": {
+      "word": "ENORMOUSLY",
+      "definitions": [
+        {
+          "text": "In an enormous degree.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enormousness": {
+      "word": "ENORMOUSNESS",
+      "definitions": [
+        {
+          "text": "The state of being enormous.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enorthotrope": {
+      "word": "ENORTHOTROPE",
+      "definitions": [
+        {
+          "text": "An optical toy; a card on which confused or imperfect figures are drawn, but which form to the eye regular figures when the card is rapidly revolved. See Thaumatrope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enough": {
+      "word": "ENOUGH",
+      "definitions": [
+        {
+          "text": "Satisfying desire; giving content; adequate to meet the want; sufficient; -- usually, and more elegantly, following the noun to which it belongs. How many hired servants of my father's have bread enough and to spare! Luke xv. 17.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "In a degree or quantity that satisfies; to satisfaction; sufficiently.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Fully; quite; -- used to express slight augmentation of the positive degree, and sometimes equivalent to very; as, he is ready enough to embrace the offer. I know you well enough; you are Signior Antonio. Shak. Thou knowest well enough . . . that this is no time to lend money. Shak.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "In a tolerable degree; -- used to express mere acceptableness or acquiescence, and implying a degree or quantity rather less than is desired; as, the song was well enough.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "A sufficiency; a quantity which satisfies desire, is adequate to the want, or is equal to the power or ability; as, he had enough to do take care of himself. \"Enough is as good as a feast.\" And Esau said, I have enough, my brother. Gen. xxxiii. 9.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An exclamation denoting sufficiency, being a shortened form of it is enough.",
+          "partOfSpeech": "interjection"
+        }
+      ],
+      "relatedWords": [
+        "abundance",
+        "abundantly",
+        "acceptably",
+        "adequacy",
+        "adequate",
+        "adequate supply",
+        "adequately",
+        "adequateness",
+        "admissibly",
+        "agreeably",
+        "ample",
+        "ampleness",
+        "amply",
+        "bare minimum",
+        "bare sufficiency",
+        "barely sufficient",
+        "comfortable",
+        "commensurate",
+        "commensurately",
+        "competence",
+        "competency",
+        "competent",
+        "competently",
+        "corresponding",
+        "decent",
+        "decently",
+        "due",
+        "enrage",
+        "equal to",
+        "exact measure",
+        "fairly",
+        "fit",
+        "good",
+        "good enough",
+        "incense",
+        "infuriate",
+        "ire",
+        "just enough",
+        "mad",
+        "madden",
+        "minimal",
+        "minimally",
+        "minimum",
+        "moderately",
+        "passably",
+        "plenty",
+        "plenty good enough",
+        "proportionate",
+        "proportionately",
+        "rather",
+        "reasonably",
+        "right amount",
+        "satisfaction",
+        "satisfactorily",
+        "satisfactoriness",
+        "satisfactory",
+        "satisfactory amount",
+        "satisfyingly",
+        "so-so",
+        "steam up",
+        "substantial",
+        "substantially",
+        "sufficiency",
+        "sufficient",
+        "sufficient for",
+        "sufficiently",
+        "sufficientness",
+        "sufficing",
+        "suitable",
+        "tolerably",
+        "umbrage",
+        "up to"
+      ]
+    },
+    "enounce": {
+      "word": "ENOUNCE",
+      "definitions": [
+        {
+          "text": "To announce; to declare; to state, as a proposition or argument. Sir W. Hamilton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To utter; to articulate. The student should be able to enounce these [sounds] independently. A. M. Bell.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enouncement": {
+      "word": "ENOUNCEMENT",
+      "definitions": [
+        {
+          "text": "Act of enouncing; that which is enounced.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enow": {
+      "word": "ENOW",
+      "definitions": [
+        {
+          "text": "A form of Enough. [Archaic] Shak.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

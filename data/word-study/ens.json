@@ -1,0 +1,1395 @@
+{
+  "version": "v1",
+  "entries": {
+    "ens": {
+      "word": "ENS",
+      "definitions": [
+        {
+          "text": "(Metaph.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Entity, being, or existence; an actually existing being; also, God, as the Being of Beings.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Something supposed to condense within itself all the virtues and qualities of a substance from which it is extracted; essence.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensafe": {
+      "word": "ENSAFE",
+      "definitions": [
+        {
+          "text": "To make safe. [Obs.] Hall.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensample": {
+      "word": "ENSAMPLE",
+      "definitions": [
+        {
+          "text": "An example; a pattern or model for imitation. [Obs.] Tyndale. Being ensamples to the flock.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To exemplify, to show by example. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensanguine": {
+      "word": "ENSANGUINE",
+      "definitions": [
+        {
+          "text": "To stain or cover with blood; to make bloody, or of a blood-red color; as, an ensanguined hue. \"The ensanguined field.\" Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensate": {
+      "word": "ENSATE",
+      "definitions": [
+        {
+          "text": "Having sword-shaped leaves, or appendages; ensiform.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enscale": {
+      "word": "ENSCALE",
+      "definitions": [
+        {
+          "text": "To cover with scales.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enschedule": {
+      "word": "ENSCHEDULE",
+      "definitions": [
+        {
+          "text": "To insert in a schedule. See Schedule. [R.] Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensconce": {
+      "word": "ENSCONCE",
+      "definitions": [
+        {
+          "text": "To cover or shelter, as with a sconce or fort; to place or hide securely; to conceal. She shall not see me: I will ensconce me behind the arras. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "anchor",
+        "becloud",
+        "befog",
+        "billet at",
+        "bivouac",
+        "blanket",
+        "blind",
+        "burrow",
+        "bury",
+        "cache",
+        "camouflage",
+        "camp",
+        "cloak",
+        "cloud",
+        "colonize",
+        "come to anchor",
+        "conceal",
+        "cover",
+        "cover up",
+        "curtain",
+        "disguise",
+        "dissemble",
+        "distract attention from",
+        "ditch",
+        "domesticate",
+        "drop anchor",
+        "eclipse",
+        "enshroud",
+        "envelop",
+        "establish",
+        "establish residence",
+        "fix",
+        "gloss over",
+        "hide",
+        "hive",
+        "inhabit",
+        "install",
+        "keep house",
+        "keep under cover",
+        "live at",
+        "locate",
+        "mask",
+        "moor",
+        "move",
+        "nest",
+        "obfuscate",
+        "obscure",
+        "occult",
+        "park",
+        "people",
+        "perch",
+        "place",
+        "plant",
+        "populate",
+        "relocate",
+        "reside",
+        "roost",
+        "screen",
+        "seat",
+        "secrete",
+        "set",
+        "set up housekeeping",
+        "set up shop",
+        "settle",
+        "settle down",
+        "shade",
+        "shroud",
+        "sit down",
+        "situate",
+        "slur over",
+        "squat",
+        "stand",
+        "stash",
+        "station",
+        "stay at",
+        "strike root",
+        "take residence at",
+        "take root",
+        "take up residence",
+        "varnish",
+        "veil",
+        "whitewash"
+      ]
+    },
+    "enseal": {
+      "word": "ENSEAL",
+      "definitions": [
+        {
+          "text": "To impress with a seal; to mark as with a seal; hence, to ratify. [Obs.] This deed I do enseal. Piers Plowman.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enseam": {
+      "word": "ENSEAM",
+      "definitions": [
+        {
+          "text": "To sew up; to inclose by a seam; hence, to include; to contain. Camden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cover with grease; to defile; to pollute. [Obs.] In the rank sweat of an enseamed bed. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensear": {
+      "word": "ENSEAR",
+      "definitions": [
+        {
+          "text": "To sear; to dry up. [Obs.] Ensear thy fertile and conceptious womb. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensearch": {
+      "word": "ENSEARCH",
+      "definitions": [
+        {
+          "text": "To make search; to try to find something. [Obs.] -- v. t.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To search for. [Obs.] Sir T. Elyot.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enseel": {
+      "word": "ENSEEL",
+      "definitions": [
+        {
+          "text": "To close eyes of; to seel; -- said in reference to a hawk.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enseint": {
+      "word": "ENSEINT",
+      "definitions": [
+        {
+          "text": "With child; pregnant. See Enceinte. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensemble": {
+      "word": "ENSEMBLE",
+      "definitions": [
+        {
+          "text": "The whole; all the parts taken together.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "All at once; together.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "German band",
+        "Liederkranz",
+        "Liedertafel",
+        "Philharmonic",
+        "a cappella",
+        "acting company",
+        "admixture",
+        "agglomeration",
+        "aggregate",
+        "all at once",
+        "alloy",
+        "amalgam",
+        "apparel",
+        "assemblage",
+        "attire",
+        "band",
+        "big band",
+        "blend",
+        "brass",
+        "brass band",
+        "brass choir",
+        "brass quintet",
+        "brass section",
+        "brasses",
+        "callithumpian band",
+        "cast",
+        "cast of characters",
+        "chamber chorus",
+        "chamber orchestra",
+        "characters",
+        "choir",
+        "choral group",
+        "choral society",
+        "choral symphony",
+        "chorale",
+        "chorus",
+        "circus troupe",
+        "clothes",
+        "clothing",
+        "collection",
+        "collectively",
+        "combination",
+        "combo",
+        "commixture",
+        "communally",
+        "company",
+        "composite",
+        "composition",
+        "compound",
+        "concert band",
+        "concoction",
+        "confection",
+        "conglomeration",
+        "conjointly",
+        "coordinates",
+        "corporately",
+        "corps de ballet",
+        "costume",
+        "desks",
+        "dixieland band",
+        "dramatis personae",
+        "en masse",
+        "entirety",
+        "gamelan orchestra",
+        "garb",
+        "garments",
+        "glee club",
+        "group",
+        "immixture",
+        "in a body",
+        "in association",
+        "in company",
+        "in conjunction",
+        "intermixture",
+        "jazz band",
+        "jointly",
+        "jug band",
+        "magma",
+        "military band",
+        "mixed chorus",
+        "mixture",
+        "mutually",
+        "oratorio society",
+        "orchestra",
+        "outfit",
+        "paste",
+        "quartet",
+        "quintet",
+        "ragtime band",
+        "repertory company",
+        "rock-and-roll group",
+        "set",
+        "sextet",
+        "singing club",
+        "skiffle band",
+        "steel band",
+        "stock company",
+        "street band",
+        "string band",
+        "string choir",
+        "string orchestra",
+        "string quartet",
+        "strings",
+        "supporting cast",
+        "swing band",
+        "symphony",
+        "symphony orchestra",
+        "together",
+        "totality",
+        "trio",
+        "troupe",
+        "unitedly",
+        "voices",
+        "waits",
+        "whole",
+        "woodwind",
+        "woodwind choir",
+        "woodwind quartet",
+        "woodwinds"
+      ]
+    },
+    "enshelter": {
+      "word": "ENSHELTER",
+      "definitions": [
+        {
+          "text": "To shelter. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enshield": {
+      "word": "ENSHIELD",
+      "definitions": [
+        {
+          "text": "To defend, as with a shield; to shield. [Archaic] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Shielded; enshielded. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enshrine": {
+      "word": "ENSHRINE",
+      "definitions": [
+        {
+          "text": "To inclose in a shrine or chest; hence, to preserve or cherish as something sacred; as, to enshrine something in memory. We will enshrine it as holy relic. Massinger.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "aggrandize",
+        "apotheose",
+        "apotheosize",
+        "beatify",
+        "beleaguer",
+        "beset",
+        "besiege",
+        "bless",
+        "blockade",
+        "bound",
+        "box in",
+        "bury",
+        "cage",
+        "canonize",
+        "chamber",
+        "cleanse",
+        "close in",
+        "coffin",
+        "compass",
+        "conduct a funeral",
+        "consecrate",
+        "contain",
+        "coop",
+        "coop in",
+        "coop up",
+        "cordon",
+        "cordon off",
+        "corral",
+        "crown",
+        "dedicate",
+        "deify",
+        "devote",
+        "elevate",
+        "encircle",
+        "enclose",
+        "encoffin",
+        "encompass",
+        "ennoble",
+        "ensepulcher",
+        "enthrone",
+        "entomb",
+        "exalt",
+        "fence in",
+        "glamorize",
+        "glorify",
+        "hallow",
+        "hearse",
+        "hedge in",
+        "hem in",
+        "house in",
+        "immortalize",
+        "impound",
+        "imprison",
+        "incarcerate",
+        "include",
+        "inearth",
+        "inhume",
+        "inter",
+        "inurn",
+        "jail",
+        "kennel",
+        "lay to rest",
+        "leaguer",
+        "lionize",
+        "magnify",
+        "make legendary",
+        "mew",
+        "mew up",
+        "pen",
+        "pen in",
+        "pocket",
+        "purify",
+        "quarantine",
+        "rail in",
+        "raise",
+        "saint",
+        "sanctify",
+        "sepulture",
+        "set apart",
+        "set up",
+        "shrine",
+        "shut in",
+        "shut up",
+        "stable",
+        "surround",
+        "throne",
+        "tomb",
+        "uplift",
+        "wall in",
+        "wrap",
+        "yard",
+        "yard up"
+      ]
+    },
+    "enshroud": {
+      "word": "ENSHROUD",
+      "definitions": [
+        {
+          "text": "To cover with, or as with, a shroud; to shroud. Churchill.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "apparel",
+        "array",
+        "attire",
+        "becloud",
+        "bedeck",
+        "bedrape",
+        "befog",
+        "blanket",
+        "blind",
+        "box",
+        "bundle up",
+        "camouflage",
+        "case",
+        "cloak",
+        "clothe",
+        "cloud",
+        "conceal",
+        "cover",
+        "cover up",
+        "crate",
+        "curtain",
+        "deck",
+        "dight",
+        "disguise",
+        "dissemble",
+        "distract attention from",
+        "drape",
+        "dress",
+        "dud",
+        "eclipse",
+        "embox",
+        "embrace",
+        "encapsulate",
+        "encase",
+        "enclose",
+        "enclothe",
+        "endue",
+        "enfold",
+        "enrobe",
+        "ensconce",
+        "envelop",
+        "enwrap",
+        "garb",
+        "garment",
+        "gloss over",
+        "habilitate",
+        "hide",
+        "invest",
+        "keep under cover",
+        "lap",
+        "mask",
+        "muffle up",
+        "obfuscate",
+        "obscure",
+        "occult",
+        "pack",
+        "package",
+        "rag out",
+        "raiment",
+        "robe",
+        "screen",
+        "shade",
+        "sheathe",
+        "shroud",
+        "slur over",
+        "smother",
+        "surround",
+        "swaddle",
+        "swathe",
+        "tire",
+        "varnish",
+        "veil",
+        "whitewash",
+        "wrap",
+        "wrap about",
+        "wrap up"
+      ]
+    },
+    "ensiferous": {
+      "word": "ENSIFEROUS",
+      "definitions": [
+        {
+          "text": "Bearing a sword.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensiform": {
+      "word": "ENSIFORM",
+      "definitions": [
+        {
+          "text": "Having the form of a sword blade; sword-shaped; as, an ensiform leaf. Ensiform cartilage, and Ensiform process. (Anat.) See Xiphisternum.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensign": {
+      "word": "ENSIGN",
+      "definitions": [
+        {
+          "text": "A flag; a banner; a standard; esp., the national flag, or a banner indicating nationality, carried by a ship or a body of soldiers; -- as distinguished from flags indicating divisions of the army, rank of naval officers, or private signals, and the like. Hang up your ensigns, let your drums be still. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A signal displayed like a standard, to give notice. He will lift an ensign to the nations from far. Is. v. 26.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sign; badge of office, rank, or power; symbol. The ensigns of our power about we bear. Waller. 4. (a) Formerly, a commissioned officer of the army who carried the ensign or flag of a company or regiment. (b) A commissioned officer of the lowest grade in the navy, corresponding to the grade of second lieutenant in the army. Ham. Nav. Encyc. In the United States army the rank is not recognized; the regimental flags being carried by a sergeant called the color sergeant. Ensign bearer, one who carries a flag; an ensign.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To designate as by an ensign. [Obs.] Henry but joined the roses that ensigned Particular families. B. Jonson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To distinguish by a mark or ornament; esp. (Her.), by a crown; thus, any charge which has a crown immediately above or upon it, is said to be ensigned.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Dannebrog",
+        "Jolly Roger",
+        "Old Glory",
+        "Star-Spangled Banner",
+        "Stars and Stripes",
+        "Union Flag",
+        "Union Jack",
+        "admiral",
+        "and blue",
+        "armory",
+        "badge",
+        "badge of office",
+        "badges",
+        "banderole",
+        "banner",
+        "banneret",
+        "baton",
+        "black flag",
+        "blazonry",
+        "blue ensign",
+        "brassard",
+        "bunting",
+        "burgee",
+        "button",
+        "cap and gown",
+        "captain",
+        "chain",
+        "chain of office",
+        "chief petty officer",
+        "class ring",
+        "coachwhip",
+        "cockade",
+        "collar",
+        "color",
+        "colors",
+        "commander",
+        "commodore",
+        "cross",
+        "decoration",
+        "dress",
+        "eagle",
+        "emblems",
+        "ensigns",
+        "fasces",
+        "figurehead",
+        "flag",
+        "fleet admiral",
+        "fleur-de-lis",
+        "gonfalon",
+        "gonfanon",
+        "guidon",
+        "hammer and sickle",
+        "heraldry",
+        "house flag",
+        "insignia",
+        "jack",
+        "lapel pin",
+        "lieutenant",
+        "lieutenant commander",
+        "lieutenant junior grade",
+        "livery",
+        "long pennant",
+        "mace",
+        "mantle",
+        "markings",
+        "medal",
+        "merchant flag",
+        "mortarboard",
+        "national flag",
+        "naval officer",
+        "navarch",
+        "old school tie",
+        "oriflamme",
+        "pennant",
+        "pennon",
+        "pennoncel",
+        "petty officer",
+        "pin",
+        "rear admiral",
+        "red",
+        "red ensign",
+        "regalia",
+        "ring",
+        "rose",
+        "royal standard",
+        "school ring",
+        "shamrock",
+        "sigillography",
+        "signal flag",
+        "skipper",
+        "skull and crossbones",
+        "sphragistics",
+        "staff",
+        "standard",
+        "streamer",
+        "swallowtail",
+        "swastika",
+        "tartan",
+        "thistle",
+        "tie",
+        "tricolor",
+        "uniform",
+        "verge",
+        "vexillum",
+        "vice admiral",
+        "wand",
+        "warrant officer",
+        "white"
+      ]
+    },
+    "ensigncy": {
+      "word": "ENSIGNCY",
+      "definitions": [
+        {
+          "text": "The rank or office of an ensign.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensignship": {
+      "word": "ENSIGNSHIP",
+      "definitions": [
+        {
+          "text": "The state or rank of an ensign.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensilage": {
+      "word": "ENSILAGE",
+      "definitions": [
+        {
+          "text": "The process of preserving fodder (such as cornstalks, rye, oats, millet, etc.) by compressing it while green and fresh in a pit or vat called a silo, where it is kept covered from the air; as the ensilage of fodder.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fodder preserved in a silo.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To preserve in a silo; as, to ensilage cornstalks.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "barley",
+        "bird seed",
+        "bran",
+        "cat food",
+        "chicken feed",
+        "chop",
+        "corn",
+        "dog food",
+        "eatage",
+        "feed",
+        "fodder",
+        "forage",
+        "grain",
+        "hay",
+        "mash",
+        "meal",
+        "oats",
+        "pasturage",
+        "pasture",
+        "pet food",
+        "provender",
+        "scratch",
+        "scratch feed",
+        "silage",
+        "slops",
+        "straw",
+        "swill",
+        "wheat"
+      ]
+    },
+    "ensky": {
+      "word": "ENSKY",
+      "definitions": [
+        {
+          "text": "To place in the sky or in heaven. [R.] \"A thing enskied and sainted.\" Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enslave": {
+      "word": "ENSLAVE",
+      "definitions": [
+        {
+          "text": "To reduce to slavery; to make a slave of; to subject to a dominant influence. The conquer'd, also, and enslaved by war, Shall, with their freedom lost, all virtue lose. Milton. Pleasure admitted in undue degree Enslaves the will. Cowper.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adopt",
+        "appropriate",
+        "arrogate",
+        "assume",
+        "beat down",
+        "bind",
+        "break",
+        "browbeat",
+        "bulldoze",
+        "bully",
+        "castrate",
+        "clamp down on",
+        "coerce",
+        "colonize",
+        "compel",
+        "conquer",
+        "cow",
+        "daunt",
+        "deprive of freedom",
+        "despotize",
+        "disenfranchise",
+        "disfranchise",
+        "dominate",
+        "domineer",
+        "domineer over",
+        "enchain",
+        "enthrall",
+        "fetter",
+        "grind",
+        "grind down",
+        "henpeck",
+        "hog",
+        "hold captive",
+        "hold down",
+        "hold in bondage",
+        "hold in captivity",
+        "hold in leash",
+        "hold in subjection",
+        "indent",
+        "indenture",
+        "intimidate",
+        "jump a claim",
+        "keep down",
+        "keep under",
+        "lead captive",
+        "lord it over",
+        "make dependent",
+        "make free with",
+        "make use of",
+        "monopolize",
+        "occupy",
+        "oppress",
+        "overawe",
+        "overbear",
+        "overmaster",
+        "override",
+        "overrun",
+        "peonize",
+        "preempt",
+        "preoccupy",
+        "prepossess",
+        "press heavy on",
+        "repress",
+        "requisition",
+        "ride over",
+        "ride roughshod over",
+        "shackle",
+        "sit on",
+        "squat on",
+        "subject",
+        "subjugate",
+        "subordinate",
+        "suppress",
+        "take all of",
+        "take captive",
+        "take it all",
+        "take over",
+        "take possession of",
+        "take up",
+        "terrorize",
+        "trammel",
+        "trample down",
+        "trample upon",
+        "tread down",
+        "tread upon",
+        "tyrannize",
+        "tyrannize over",
+        "unman",
+        "usurp",
+        "vassalize",
+        "walk all over",
+        "walk over",
+        "weigh heavy on",
+        "yoke"
+      ]
+    },
+    "enslavedness": {
+      "word": "ENSLAVEDNESS",
+      "definitions": [
+        {
+          "text": "State of being enslaved.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enslavement": {
+      "word": "ENSLAVEMENT",
+      "definitions": [
+        {
+          "text": "The act of reducing to slavery; state of being enslaved; bondage; servitude. A fresh enslavement to their enemies. South.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enslaver": {
+      "word": "ENSLAVER",
+      "definitions": [
+        {
+          "text": "One who enslaves. Swift.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensnare": {
+      "word": "ENSNARE",
+      "definitions": [
+        {
+          "text": "To catch in a snare. See Insnare.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "allure",
+        "bag",
+        "bait",
+        "bait the hook",
+        "birdlime",
+        "blandish",
+        "cajole",
+        "capture",
+        "catch",
+        "catch out",
+        "catch up",
+        "coax",
+        "decoy",
+        "draw",
+        "draw in",
+        "draw on",
+        "enmesh",
+        "ensnarl",
+        "entangle",
+        "entice",
+        "entoil",
+        "entrap",
+        "enweb",
+        "flirt",
+        "flirt with",
+        "foul",
+        "gin",
+        "give the come-on",
+        "harpoon",
+        "hook",
+        "hook in",
+        "inveigle",
+        "land",
+        "lasso",
+        "lead on",
+        "lime",
+        "lure",
+        "mesh",
+        "nail",
+        "net",
+        "noose",
+        "offer bait to",
+        "rope",
+        "rope in",
+        "sack",
+        "seduce",
+        "snag",
+        "snare",
+        "snarl",
+        "sniggle",
+        "spear",
+        "spread the toils",
+        "suck in",
+        "take",
+        "tangle",
+        "tangle up with",
+        "trap",
+        "trip",
+        "wind",
+        "woo"
+      ]
+    },
+    "ensnarl": {
+      "word": "ENSNARL",
+      "definitions": [
+        {
+          "text": "To entangle. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "allure",
+        "bait the hook",
+        "birdlime",
+        "burden",
+        "catch",
+        "catch out",
+        "cramp",
+        "cripple",
+        "cumber",
+        "decoy",
+        "embarrass",
+        "embrangle",
+        "encumber",
+        "enmesh",
+        "ensnare",
+        "entangle",
+        "entoil",
+        "entrammel",
+        "entrap",
+        "entwine",
+        "enweb",
+        "fetter",
+        "gin",
+        "hamper",
+        "hamstring",
+        "handicap",
+        "hobble",
+        "hook",
+        "hook in",
+        "impede",
+        "inveigle",
+        "involve",
+        "lame",
+        "lime",
+        "lumber",
+        "lure",
+        "mesh",
+        "net",
+        "noose",
+        "perplex",
+        "press down",
+        "saddle with",
+        "shackle",
+        "snare",
+        "snarl",
+        "sniggle",
+        "spread the toils",
+        "tangle",
+        "toil",
+        "trammel",
+        "trap",
+        "trip",
+        "weigh down",
+        "wind"
+      ]
+    },
+    "ensober": {
+      "word": "ENSOBER",
+      "definitions": [
+        {
+          "text": "To make sober. [Obs.] Sad accidents to ensober his spirits. Jer. Taylor.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensoul": {
+      "word": "ENSOUL",
+      "definitions": [
+        {
+          "text": "To indue or imbue (a body) with soul. [R.] Emerson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensphere": {
+      "word": "ENSPHERE",
+      "definitions": [
+        {
+          "text": "To place in a sphere; to envelop. His ample shoulders in a cloud ensphered. Chapman.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To form into a sphere.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enstamp": {
+      "word": "ENSTAMP",
+      "definitions": [
+        {
+          "text": "To stamp; to mark as It is the motive . . . which enstamps the character. Gogan.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enstate": {
+      "word": "ENSTATE",
+      "definitions": [
+        {
+          "text": "See Instate.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enstatite": {
+      "word": "ENSTATITE",
+      "definitions": [
+        {
+          "text": "A mineral of the pyroxene group, orthorhombic in crystallization; often fibrous and massive; color grayish white or greenish. It is a silicate of magnesia with some iron. Bronzite is a ferriferous variety.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enstatitic": {
+      "word": "ENSTATITIC",
+      "definitions": [
+        {
+          "text": "Relating to enstatite.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enstore": {
+      "word": "ENSTORE",
+      "definitions": [
+        {
+          "text": "To restore. [Obs.] Wyclif.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enstyle": {
+      "word": "ENSTYLE",
+      "definitions": [
+        {
+          "text": "To style; to name. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensuable": {
+      "word": "ENSUABLE",
+      "definitions": [
+        {
+          "text": "Ensuing; following.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensue": {
+      "word": "ENSUE",
+      "definitions": [
+        {
+          "text": "To follow; to pursue; to follow and overtake. [Obs.] \"Seek peace, and ensue it.\" 1 Pet. iii. 11. To ensue his example in doing the like mischief. Golding.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To follow or come afterward; to follow as a consequence or in chronological succession; to result; as, an ensuing conclusion or effect; the year ensuing was a cold one. So spoke the Dame, but no applause ensued. Pope. Damage to the mind or the body, or to both, ensues, unless the exciting cause be presently removed. I. Taylor.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "attend",
+        "become of",
+        "c",
+        "come about",
+        "come after",
+        "come next",
+        "come of",
+        "come on",
+        "come out",
+        "derive",
+        "develop",
+        "displace",
+        "emanate",
+        "end",
+        "eventuate",
+        "fall out",
+        "fare",
+        "follow",
+        "follow after",
+        "follow up",
+        "go after",
+        "inherit",
+        "issue",
+        "overtake",
+        "pan out",
+        "proceed",
+        "prove",
+        "prove to be",
+        "replace",
+        "result",
+        "stem",
+        "succeed",
+        "supervene",
+        "terminate",
+        "track",
+        "trail",
+        "turn out",
+        "unfold",
+        "work out"
+      ]
+    },
+    "ensure": {
+      "word": "ENSURE",
+      "definitions": [
+        {
+          "text": "To make sure. See Insure.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To betroth. [Obs.] Sir T. More.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "arm",
+        "armor",
+        "arrange",
+        "ascertain",
+        "assure",
+        "attest",
+        "back",
+        "be sponsor for",
+        "bless",
+        "bond",
+        "certify",
+        "champion",
+        "cinch",
+        "clear up",
+        "clinch",
+        "cloak",
+        "compass about",
+        "confirm",
+        "copyright",
+        "countersecure",
+        "cover",
+        "cushion",
+        "decide",
+        "defend",
+        "determine",
+        "dismiss all doubt",
+        "effect",
+        "endorse",
+        "establish",
+        "fence",
+        "fend",
+        "find out",
+        "fix",
+        "get at",
+        "guarantee",
+        "guaranty",
+        "guard",
+        "harbor",
+        "haven",
+        "insure",
+        "keep",
+        "keep from harm",
+        "make certain",
+        "make no doubt",
+        "make no mistake",
+        "make safe",
+        "make sure",
+        "make sure of",
+        "nail down",
+        "nestle",
+        "patent",
+        "police",
+        "protect",
+        "provide",
+        "reassure",
+        "register",
+        "remove all doubt",
+        "ride shotgun for",
+        "safeguard",
+        "screen",
+        "secure",
+        "see that",
+        "see to it",
+        "set at rest",
+        "set out",
+        "settle",
+        "shelter",
+        "shield",
+        "shroud",
+        "sign",
+        "sign for",
+        "sort out",
+        "sponsor",
+        "stand behind",
+        "stand up for",
+        "subscribe to",
+        "undersign",
+        "underwrite",
+        "warrant"
+      ]
+    },
+    "ensurer": {
+      "word": "ENSURER",
+      "definitions": [
+        {
+          "text": "See Insurer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enswathe": {
+      "word": "ENSWATHE",
+      "definitions": [
+        {
+          "text": "To swathe; to envelop, as in swaddling clothes. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enswathement": {
+      "word": "ENSWATHEMENT",
+      "definitions": [
+        {
+          "text": "The act of enswathing, or the state of being enswathed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ensweep": {
+      "word": "ENSWEEP",
+      "definitions": [
+        {
+          "text": "To sweep over or across; to pass over rapidly. [R.] Thomson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

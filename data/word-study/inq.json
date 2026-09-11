@@ -1,0 +1,936 @@
+{
+  "version": "v1",
+  "entries": {
+    "inquartation": {
+      "word": "INQUARTATION",
+      "definitions": [
+        {
+          "text": "Quartation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquest": {
+      "word": "INQUEST",
+      "definitions": [
+        {
+          "text": "Inquiry; quest; search. [R.] Spenser. The laborious and vexatious inquest that the soul must make after science. South.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law) (a) Judicial inquiry; official examination, esp. before a jury; as, a coroner's inquest in case of a sudden death. (b) A body of men assembled under authority of law to inquire into any matterm civil or criminal, particularly any case of violent or sudden death; a jury, particularly a coroner's jury. The grand jury is sometimes called the grand inquest. See under Grand. (c) The finding of the jury upon such inquiry. Coroner's inquest, an inquest held by a coroner to determine the cause of any violent, sudden, or mysterious death. See Coroner. proper officer, into matters affecting the rights and interests of the crown or of the state. Craig. Bouvier.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "analysis",
+        "assize",
+        "autopsy",
+        "blue-ribbon jury",
+        "change of venue",
+        "coroner",
+        "country",
+        "court-martial",
+        "cross-examination",
+        "delving",
+        "examination",
+        "grand jury",
+        "hearing",
+        "hung jury",
+        "inquirendo",
+        "inquiring",
+        "inquiring mind",
+        "inquiry",
+        "inquisition",
+        "investigation",
+        "jury",
+        "jury list",
+        "jury of inquest",
+        "jury of matrons",
+        "jury panel",
+        "jury trial",
+        "medical examiner",
+        "mistrial",
+        "mortality committee",
+        "necropsy",
+        "necroscopy",
+        "panel",
+        "petit jury",
+        "police jury",
+        "postmortem",
+        "postmortem examination",
+        "probe",
+        "probing",
+        "quest",
+        "research",
+        "sessions",
+        "special jury",
+        "trial",
+        "trial by jury",
+        "trial jury",
+        "venire"
+      ]
+    },
+    "inquiet": {
+      "word": "INQUIET",
+      "definitions": [
+        {
+          "text": "To disquiet. [Obs.] Joye.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquietation": {
+      "word": "INQUIETATION",
+      "definitions": [
+        {
+          "text": "Disturbance. [Obs.] Sir T. Elyot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquietness": {
+      "word": "INQUIETNESS",
+      "definitions": [
+        {
+          "text": "Unquietness. [Obs.] Joye.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquietude": {
+      "word": "INQUIETUDE",
+      "definitions": [
+        {
+          "text": "Disturbed state; uneasiness either of body or mind; restlessness; disquietude. Sir H. Wotton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "agitation",
+        "ailment",
+        "all-overs",
+        "angst",
+        "anguish",
+        "anxiety",
+        "anxiety hysteria",
+        "anxiety neurosis",
+        "anxious bench",
+        "anxious concern",
+        "anxious seat",
+        "anxiousness",
+        "apprehension",
+        "apprehensiveness",
+        "bluster",
+        "bobbery",
+        "boil",
+        "boiling",
+        "boredom",
+        "brouhaha",
+        "bustle",
+        "cankerworm of care",
+        "care",
+        "cheerlessness",
+        "chills of fear",
+        "churn",
+        "cold creeps",
+        "cold shivers",
+        "cold sweat",
+        "commotion",
+        "concern",
+        "concernment",
+        "conturbation",
+        "creeps",
+        "didder",
+        "discomfort",
+        "discomposure",
+        "discontent",
+        "dislike",
+        "disorder",
+        "displeasure",
+        "disquiet",
+        "disquietude",
+        "dissatisfaction",
+        "distress",
+        "disturbance",
+        "dithers",
+        "dread",
+        "dullness",
+        "ebullition",
+        "embroilment",
+        "emptiness",
+        "ennui",
+        "excitement",
+        "existential woe",
+        "fear",
+        "fear and trembling",
+        "ferment",
+        "fermentation",
+        "fever",
+        "feverishness",
+        "fidgetiness",
+        "fidgets",
+        "flap",
+        "flatness",
+        "flurry",
+        "fluster",
+        "flutter",
+        "flutteration",
+        "foment",
+        "foreboding",
+        "forebodingness",
+        "fume",
+        "fuss",
+        "goose bumps",
+        "gooseflesh",
+        "grimness",
+        "heartquake",
+        "heaving",
+        "horripilation",
+        "hubbub",
+        "hurly-burly",
+        "jimjams",
+        "jitters",
+        "joylessness",
+        "jumpiness",
+        "lack of pleasure",
+        "maelstrom",
+        "malaise",
+        "misgiving",
+        "moil",
+        "nausea",
+        "nerviness",
+        "nervosity",
+        "nervous strain",
+        "nervous tension",
+        "nervousness",
+        "nongratification",
+        "nonsatisfaction",
+        "overanxiety",
+        "painfulness",
+        "palpitation",
+        "panting",
+        "perturbation",
+        "pins and needles",
+        "pitapat",
+        "pitter-patter",
+        "pucker",
+        "quaking",
+        "quaver",
+        "quavering",
+        "quiver",
+        "quiver of terror",
+        "quivering",
+        "restiveness",
+        "restlessness",
+        "roil",
+        "rout",
+        "row",
+        "savorlessness",
+        "seethe",
+        "seething",
+        "shakes",
+        "shaking",
+        "shiver",
+        "shivers",
+        "shudder",
+        "solicitude",
+        "spleen",
+        "staleness",
+        "stew",
+        "stir",
+        "strain",
+        "suspense",
+        "sweat",
+        "swirl",
+        "tastelessness",
+        "tediousness",
+        "tedium",
+        "tension",
+        "thrill of fear",
+        "throb",
+        "throbbing",
+        "to-do",
+        "tremble",
+        "trembling",
+        "tremor",
+        "trepidation",
+        "trepidity",
+        "trouble",
+        "tumult",
+        "tumultuation",
+        "turbidity",
+        "turbulence",
+        "turmoil",
+        "twitter",
+        "uncomfortableness",
+        "unease",
+        "uneasiness",
+        "unhappiness",
+        "unpleasure",
+        "unquietness",
+        "unrest",
+        "unsatisfaction",
+        "upset",
+        "vexation",
+        "vexation of spirit",
+        "zeal"
+      ]
+    },
+    "inquiline": {
+      "word": "INQUILINE",
+      "definitions": [
+        {
+          "text": "A gallfly which deposits its eggs in galls formed by other insects.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquinate": {
+      "word": "INQUINATE",
+      "definitions": [
+        {
+          "text": "To defile; to pollute; to contaminate; to befoul. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquination": {
+      "word": "INQUINATION",
+      "definitions": [
+        {
+          "text": "A defiling; pollution; stain. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquirable": {
+      "word": "INQUIRABLE",
+      "definitions": [
+        {
+          "text": "Capable of being inquired into; subject or liable to inquisition or inquest. Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquirance": {
+      "word": "INQUIRANCE",
+      "definitions": [
+        {
+          "text": "Inquiry. [Obs.] Latimer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquire": {
+      "word": "INQUIRE",
+      "definitions": [
+        {
+          "text": "To ask a question; to seek for truth or information by putting queries. We will call the damsel, and inquire. Gen. xxiv. 57. Then David inquired of the Lord yet again. And the Lord answered him. 1 Sam. xxiii. 4.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To seek to learn anything by recourse to the proper means of knoledge; to make examination. And inquire Gladly into the ways of God with man. Miltom. inquire of a neighbor. It is followed by concerning, after, or about, before the subject of inquiry; as, his friends inquired about or concerning his welfare. \"Thou dost not inquire wisely concerning this.\" Eccl. vii. 10. It is followed by into when search is made for particular knowledge or information; as, to inquire into the cause of a sudden death. It is followed by for or after when a place or person is sought, or something is missing. \"Inquire in the house of Judas for one called Saul of Tarsus.\" Acts ix. 11.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To ask about; to seek to know by asking; to make examination or inquiry respecting. Having thus at length inquired the truth concerning law and dispense. Milton. And all obey and few inquire his will. Byron.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To call or name. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "ask",
+        "ask a question",
+        "ask about",
+        "ask questions",
+        "be curious",
+        "bring into question",
+        "burn with curiosity",
+        "catechize",
+        "demand",
+        "dig around for",
+        "dig up",
+        "enquire",
+        "examine",
+        "explore",
+        "gape",
+        "gawk",
+        "inquire into",
+        "inquire of",
+        "inspect",
+        "interpellate",
+        "interrogate",
+        "investigate",
+        "look into",
+        "make inquiry",
+        "nose around for",
+        "nose out",
+        "peer",
+        "probe",
+        "propose a question",
+        "propound a question",
+        "put queries",
+        "query",
+        "question",
+        "quiz",
+        "require an answer",
+        "research",
+        "rubber",
+        "rubberneck",
+        "scrutinize",
+        "search",
+        "seek",
+        "stare",
+        "study",
+        "survey",
+        "want to know"
+      ]
+    },
+    "inquirent": {
+      "word": "INQUIRENT",
+      "definitions": [
+        {
+          "text": "Making inquiry; inquiring; questioning. [Obs.] Shenstone.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquirer": {
+      "word": "INQUIRER",
+      "definitions": [
+        {
+          "text": "One who inquires or examines; questioner; investigator. Locke. Expert inquirers after truth. Cowper.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Paul Pry",
+        "Peeping Tom",
+        "asker",
+        "auditor",
+        "autodidact",
+        "busybody",
+        "catechist",
+        "cross-interrogator",
+        "cross-questioner",
+        "detective",
+        "eavesdropper",
+        "educatee",
+        "examiner",
+        "gossip",
+        "inquisitionist",
+        "inquisitive",
+        "inquisitor",
+        "interlocutor",
+        "interpellator",
+        "interrogator",
+        "interrogatrix",
+        "interviewer",
+        "learner",
+        "monitor",
+        "nosy Parker",
+        "opinion-sampler",
+        "poller",
+        "pollster",
+        "praepostor",
+        "prefect",
+        "prober",
+        "pry",
+        "pupil",
+        "querier",
+        "querist",
+        "questioner",
+        "questionist",
+        "quidnunc",
+        "quizzer",
+        "rubberneck",
+        "rubbernecker",
+        "sampler",
+        "scholar",
+        "scopophiliac",
+        "secret agent",
+        "self-taught person",
+        "sightseer",
+        "snoop",
+        "snooper",
+        "student",
+        "studier",
+        "trainee",
+        "voyeur",
+        "yenta"
+      ]
+    },
+    "inquiring": {
+      "word": "INQUIRING",
+      "definitions": [
+        {
+          "text": "Given to inquiry; disposed to investigate causes; curious; as, an inquiring mind.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Socratic method",
+        "agape",
+        "agog",
+        "all agog",
+        "analysis",
+        "asking",
+        "bringing into question",
+        "burning with curiosity",
+        "catechetical method",
+        "catechistic",
+        "catechization",
+        "catechizing",
+        "challenge",
+        "consumed with curiosity",
+        "curious",
+        "dispute",
+        "examination",
+        "ghoulish",
+        "gossipy",
+        "inquest",
+        "inquirendo",
+        "inquiring mind",
+        "inquiry",
+        "inquisition",
+        "inquisitional",
+        "inquisitive",
+        "inquisitorial",
+        "interested",
+        "interpellation",
+        "interrogation",
+        "interrogational",
+        "interrogative",
+        "interrogatory",
+        "investigative",
+        "itchy",
+        "morbid",
+        "morbidly curious",
+        "open-eyed",
+        "openmouthed",
+        "overcurious",
+        "probing",
+        "prurient",
+        "pumping",
+        "querying",
+        "questioning",
+        "quiz",
+        "quizzical",
+        "quizzing",
+        "scopophiliac",
+        "seeking",
+        "supercurious",
+        "voyeuristic"
+      ]
+    },
+    "inquiringly": {
+      "word": "INQUIRINGLY",
+      "definitions": [
+        {
+          "text": "In an inquiring manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquiry": {
+      "word": "INQUIRY",
+      "definitions": [
+        {
+          "text": "The act of inquiring; a seeking for information by asking questions; interrogation; a question or questioning. He could no path nor track of foot descry, Nor by inquiry learn, nor guess by aim. Spenser. The men which were sent from Cornelius had made inquiry for Simon's house, and stood before the gate. Acts x. 17.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Search for truth, information, or knoledge; examination into facts or principles; research; invextigation; as, physical inquiries. All that is wanting to the perfection of this art will undoubtedly be found, if able men . . . will make inquiry into it. Dryden. Court of inquiry. See under Court. the defendant has suffered judgment to pass against him by default, in order to ascertain and assess the plaintiff's damages, where they can not readily be ascertained by mere calculation. Burrill. investigation; research; examination.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "amassing evidence",
+        "assize",
+        "audit",
+        "bone of contention",
+        "canvass",
+        "catechism",
+        "catechizing",
+        "change of venue",
+        "check",
+        "close inquiry",
+        "consumer research",
+        "consumer-preference survey",
+        "court-martial",
+        "cross-examination",
+        "cross-interrogatory",
+        "cross-question",
+        "debating point",
+        "delving",
+        "demand",
+        "department of investigation",
+        "detection",
+        "detective work",
+        "enquiry",
+        "examination",
+        "exhaustive study",
+        "exploration",
+        "feeler",
+        "hearing",
+        "indagation",
+        "inquest",
+        "inquirendo",
+        "inquisition",
+        "inspection",
+        "interrogation",
+        "interrogative",
+        "interrogatory",
+        "investigation",
+        "investigative bureau",
+        "issue",
+        "jury trial",
+        "leader",
+        "leading question",
+        "legislative investigation",
+        "legwork",
+        "mistrial",
+        "moot point",
+        "opinion poll",
+        "perscrutation",
+        "point at issue",
+        "point in question",
+        "poll",
+        "probe",
+        "probing",
+        "problem",
+        "public-opinion poll",
+        "query",
+        "querying",
+        "quest",
+        "question",
+        "question at issue",
+        "question mark",
+        "questionary",
+        "questioning",
+        "questionnaire",
+        "quodlibet",
+        "research",
+        "scrutiny",
+        "search",
+        "sifting",
+        "sleuthing",
+        "study",
+        "survey",
+        "topic",
+        "trial",
+        "trial balloon",
+        "trial by jury",
+        "vexed question",
+        "witch-hunt"
+      ]
+    },
+    "inquisible": {
+      "word": "INQUISIBLE",
+      "definitions": [
+        {
+          "text": "Admitting judicial inquiry. [Obs.] Sir M. Hale.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquisition": {
+      "word": "INQUISITION",
+      "definitions": [
+        {
+          "text": "The act of inquiring; inquiry; search; examination; inspection; investigation. As I could learn through earnest inquisition. Latimer. Let not search and inquisition quail To bring again these foolish runaways. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law) (a) Judicial inquiry; official examination; inquest. (b) The finding of a jury, especially such a finding under a writ of inquiry. Bouvier. The justices in eyre had it formerly in charge to make inquisition concerning them by a jury of the county. Blackstone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(R. C. Ch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A court or tribunal for the examination and punishment of heretics, fully established by Pope Gregory IX. in 1235. Its operations were chiefly confined to Spain, Portugal, and their dependencies, and a part of Italy.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make inquisistion concerning; to inquire into. [Obs.] Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Areopagus",
+        "analysis",
+        "assize",
+        "board",
+        "change of venue",
+        "council",
+        "court-martial",
+        "cross-examination",
+        "cross-interrogation",
+        "cross-questioning",
+        "curia",
+        "delving",
+        "direct examination",
+        "examination",
+        "forum",
+        "grilling",
+        "hearing",
+        "inquest",
+        "inquirendo",
+        "inquiring",
+        "inquiring mind",
+        "inquiry",
+        "investigation",
+        "judicatory",
+        "judicature",
+        "judiciary",
+        "jury trial",
+        "mistrial",
+        "police interrogation",
+        "probe",
+        "probing",
+        "quest",
+        "redirect examination",
+        "research",
+        "the Inquisition",
+        "the grill",
+        "third-degree",
+        "trial",
+        "trial by jury",
+        "tribunal"
+      ]
+    },
+    "inquisitional": {
+      "word": "INQUISITIONAL",
+      "definitions": [
+        {
+          "text": "Relating to inquiry or inquisition; inquisitorial; also, of or pertaining to, or characteristic of, the Inquisition. All the inquisitional rigor . . . executed upon books. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquisitionary": {
+      "word": "INQUISITIONARY",
+      "definitions": [
+        {
+          "text": "Inquisitional.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquisitive": {
+      "word": "INQUISITIVE",
+      "definitions": [
+        {
+          "text": "Disposed to ask questions, especially in matters which do not concern the inquirer. A wise man is not inquisitive about things impertinent. Broome.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Given to examination, investigation, or research; searching; curious. A young, inquisitive, and sprightly genius. I. Watts. inquisitive a habit. We are curious when we desire to learn something new; we are inquisitive when we set ourselves to gain it by inquiry or research. Prying implies inquisitiveness, and is more commonly used in a bad sense, as indicating a desire to penetrate into the secrets of others. [We] curious are to hear, What happens new. Milton. This folio of four pages [a newspaper], happy work! Which not even critics criticise; that holds Inquisitive attention, while I read. Cowper. Nor need we with a prying eye survey The distant skies, to find the Milky Way. Creech.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A person who is inquisitive; one curious in research. Sir W. Temple.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "agape",
+        "agog",
+        "all agog",
+        "analytical",
+        "burning with curiosity",
+        "busy",
+        "busybody",
+        "consumed with curiosity",
+        "curious",
+        "exploring",
+        "forward",
+        "ghoulish",
+        "gossipy",
+        "impertinent",
+        "inquiring",
+        "inquisitorial",
+        "interested",
+        "intrusive",
+        "investigative",
+        "itchy",
+        "meddlesome",
+        "meddling",
+        "morbid",
+        "morbidly curious",
+        "nosy",
+        "officious",
+        "open-eyed",
+        "openmouthed",
+        "overcurious",
+        "presumptuous",
+        "probing",
+        "prurient",
+        "prying",
+        "pushing",
+        "pushy",
+        "questioning",
+        "quizzical",
+        "scopophiliac",
+        "searching",
+        "self-appointed",
+        "snooping",
+        "snoopy",
+        "supercurious",
+        "voyeuristic"
+      ]
+    },
+    "inquisitively": {
+      "word": "INQUISITIVELY",
+      "definitions": [
+        {
+          "text": "In an inquisitive manner. The occasion that made him afterwards so inquisitively apply himself to the study of physic. Boyle.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquisitiveness": {
+      "word": "INQUISITIVENESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being inquisitive; the disposition to seek explanation and information; curiosity to learn what is unknown; esp., uncontrolled and impertinent curiosity. Mr. Boswell, whose inquisitiveness is seconded by great activity, scrambled in at a high window. Johnson. Curiosity in children nature has provided, to remove that ignorance they were born with; which, without this busy inquisitiveness, will make them dull. Locke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquisitor": {
+      "word": "INQUISITOR",
+      "definitions": [
+        {
+          "text": "An inquisitive person; one fond of asking questions. [R.] \"Inquisitors are tatlers.\" Feltham.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One whose official duty it is to examine and inquire, as coroners, sheriffs, etc. Mozley & W.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(R.C.Ch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of the Court of Inquisition.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Paul Pry",
+        "Peeping Tom",
+        "asker",
+        "busybody",
+        "catechist",
+        "cross-interrogator",
+        "cross-questioner",
+        "detective",
+        "eavesdropper",
+        "examiner",
+        "gossip",
+        "inquirer",
+        "inquisitionist",
+        "inquisitive",
+        "interlocutor",
+        "interpellator",
+        "interrogator",
+        "interrogatrix",
+        "interviewer",
+        "nosy Parker",
+        "opinion-sampler",
+        "poller",
+        "pollster",
+        "prober",
+        "pry",
+        "querier",
+        "querist",
+        "questioner",
+        "questionist",
+        "quidnunc",
+        "quizzer",
+        "rubberneck",
+        "rubbernecker",
+        "sampler",
+        "scopophiliac",
+        "secret agent",
+        "sightseer",
+        "snoop",
+        "snooper",
+        "voyeur",
+        "yenta"
+      ]
+    },
+    "inquisitorial": {
+      "word": "INQUISITORIAL",
+      "definitions": [
+        {
+          "text": "Pertaining to inquisition; making rigorous and unfriendly inquiry; searching; as, inquisitorial power. \"Illiberal and inquisitorial abuse.\" F. Blackburne. He conferred on it a kind of inquisitorial and censorious power even over the laity, and directed it to inquire into all matters of conscience. Hume.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the Court of Inquisition or resembling its practices. \"Inquisitorial robes.\" C. Buchanan.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquisitorially": {
+      "word": "INQUISITORIALLY",
+      "definitions": [
+        {
+          "text": "In an inquisitorial manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquisitorious": {
+      "word": "INQUISITORIOUS",
+      "definitions": [
+        {
+          "text": "Making strict inquiry; inquisitorial. [Obs.] Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inquisiturient": {
+      "word": "INQUISITURIENT",
+      "definitions": [
+        {
+          "text": "Inquisitorial. [Obs.] \"Our inquisiturient bishops.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

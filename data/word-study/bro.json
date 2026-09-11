@@ -1,0 +1,5629 @@
+{
+  "version": "v1",
+  "entries": {
+    "broach": {
+      "word": "BROACH",
+      "definitions": [
+        {
+          "text": "A spit. [Obs.] He turned a broach that had worn a crown. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An awl; a bodkin; also, a wooden rod or pin, sharpened at each end, used by thatchers. [Prov. Eng.] Forby.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.) (a) A tool of steel, generally tapering, and of a polygonal form, with from four to eight cutting edges, for smoothing or enlarging holes in metal; sometimes made smooth or without edges, as for burnishing pivot holes in watches; a reamer. The broach for gun barrels is commonly square and without taper. (b) A straight tool with file teeth, made of steel, to be pressed through irregular holes in metal that cannot be dressed by revolving tools; a drift.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Masonry)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A broad chisel for stonecutting.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spire rising from a tower. [Local, Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A clasp for fastening a garment. See Brooch.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spitlike start, on the head of a young stag.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The stick from which candle wicks are suspended for dipping. Knight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The pin in a lock which enters the barrel of the key.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To spit; to pierce as with a spit. I'll broach the tadpole on my rapier's point. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To tap; to pierce, as a cask, in order to draw the liquor. Hence: To let out; to shed, as blood. Whereat with blade, with bloody blameful blade, He bravely broached his boiling bloody breast. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To open for the first time, as stores. You shall want neither weapons, victuals, nor aid; I will open the old armories, I will broach my store, and will bring forth my stores. Knolles.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make public; to utter; to publish first; to put forth; to introduce as a topic of conversation. Those very opinions themselves had broached. Swift.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to begin or break out. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Masonry)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To shape roughly, as a block of stone, by chiseling with a coarse tool. [Scot. & North of Eng.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To enlarge or dress (a hole), by using a broach. To broach to (Naut.), to incline suddenly to windward, so as to lay the sails aback, and expose the vessel to the danger of oversetting.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "advance",
+        "air",
+        "auger",
+        "bite",
+        "bleed",
+        "blue",
+        "bore",
+        "bring before",
+        "bring forward",
+        "bring in",
+        "bring up",
+        "chink",
+        "christen",
+        "cleave",
+        "clip",
+        "commend to attention",
+        "countersink",
+        "crack",
+        "crevasse",
+        "cut",
+        "cut open",
+        "decant",
+        "dispart",
+        "display",
+        "divaricate",
+        "divide",
+        "divulge",
+        "draft",
+        "draft off",
+        "drain",
+        "draw",
+        "draw from",
+        "draw off",
+        "drill",
+        "empierce",
+        "empty",
+        "establish",
+        "exhaust",
+        "expansive",
+        "extended",
+        "fissure",
+        "fix",
+        "float",
+        "fly open",
+        "found",
+        "give out",
+        "gore",
+        "gouge",
+        "gouge out",
+        "hint at",
+        "hole",
+        "honeycomb",
+        "impale",
+        "inaugurate",
+        "incise",
+        "induct",
+        "initiate",
+        "install",
+        "institute",
+        "interject",
+        "interpose",
+        "introduce",
+        "lance",
+        "launch",
+        "lay before",
+        "lay open",
+        "let",
+        "let blood",
+        "let out",
+        "lift up",
+        "make a motion",
+        "make known",
+        "make public",
+        "mention",
+        "milk",
+        "moot",
+        "move",
+        "needle",
+        "off-color",
+        "offer a resolution",
+        "ope",
+        "open",
+        "open up",
+        "part",
+        "penetrate",
+        "perforate",
+        "phlebotomize",
+        "pierce",
+        "pin",
+        "pink",
+        "pipette",
+        "pose",
+        "postulate",
+        "prefer",
+        "prick",
+        "propose",
+        "proposition",
+        "propound",
+        "pump",
+        "pump out",
+        "punch",
+        "puncture",
+        "purple",
+        "put forth",
+        "put forward",
+        "put it to",
+        "put out",
+        "racy",
+        "raise",
+        "ream",
+        "ream out",
+        "recommend",
+        "rent",
+        "riddle",
+        "rift",
+        "ring in",
+        "rip",
+        "risque",
+        "rive",
+        "run through",
+        "salty",
+        "scopic",
+        "separate",
+        "set agoing",
+        "set before",
+        "set forth",
+        "set on foot",
+        "set up",
+        "shady",
+        "siphon off",
+        "skewer",
+        "slit",
+        "spear",
+        "spicy",
+        "spike",
+        "spit",
+        "split",
+        "spread",
+        "spread out",
+        "spring open",
+        "stab",
+        "start",
+        "start going",
+        "start up",
+        "stick",
+        "submit",
+        "suck",
+        "suck out",
+        "suggest",
+        "suggestive",
+        "swing open",
+        "talk about",
+        "tap",
+        "tear",
+        "tear open",
+        "throw open",
+        "touch on",
+        "touch upon",
+        "transfix",
+        "transpierce",
+        "trepan",
+        "trephine",
+        "turn on",
+        "usher in",
+        "venesect",
+        "ventilate",
+        "wicked",
+        "wide"
+      ]
+    },
+    "broacher": {
+      "word": "BROACHER",
+      "definitions": [
+        {
+          "text": "A spit; a broach. On five sharp broachers ranked, the roast they turned. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who broaches, opens, or utters; a first publisher or promoter. Some such broacher of heresy. Atterbury.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broad": {
+      "word": "BROAD",
+      "definitions": [
+        {
+          "text": "Wide; extend in breadth, or from side to side; -- opposed to narrow; as, a broad street, a broad table; an inch broad.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Extending far and wide; extensive; vast; as, the broad expanse of ocean.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Extended, in the sense of diffused; open; clear; full. \"Broad and open day.\" Bp. Porteus.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fig.: Having a large measure of any thing or quality; not limited; not restrained; -- applied to any subject, and retaining the literal idea more or less clearly, the precise meaning depending largely on the substantive. A broad mixture of falsehood. Locke.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Comprehensive; liberal; enlarged. The words in the Constitution are broad enough to include the case. D. Daggett. In a broad, statesmanlike, and masterly way. E. Everett.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Plain; evident; as, a broad hint.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Free; unrestrained; unconfined. As broad and general as the casing air. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Fine Arts)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Characterized by breadth. See Breadth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Cross; coarse; indelicate; as, a broad compliment; a broad joke; broad humor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Strongly marked; as, a broad Scotch accent. as, broad-chested, broad-shouldered, broad-spreading, broad-winged. Broad acres. See under Acre. Arrow. the same one way as another; coming to the same result by different ways or processes. It is as broad as long, whether they rise to others, or bring others down to them. L'Estrange. Broad pennant. See under Pennant. comprehensive; liberal.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The broad part of anything; as, the broad of an oar.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The spread of a river into a sheet of water; a flooded fen. [Local, Eng.] Southey.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A lathe tool for turning down the insides and bottoms of cylinders. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Jane",
+        "Jezebel",
+        "abstract",
+        "accented",
+        "aleatoric",
+        "aleatory",
+        "alveolar",
+        "amorphous",
+        "ample",
+        "amplitudinous",
+        "apical",
+        "apico-alveolar",
+        "apico-dental",
+        "approximate",
+        "articulated",
+        "artless",
+        "assimilated",
+        "babe",
+        "baby",
+        "back",
+        "bad woman",
+        "baggage",
+        "barytone",
+        "biddy",
+        "bilabial",
+        "bimbo",
+        "bird",
+        "bitch",
+        "bland",
+        "blobby",
+        "blue",
+        "bluff",
+        "blunt",
+        "blurred",
+        "blurry",
+        "bright",
+        "broad-based",
+        "broad-gauged",
+        "broad-minded",
+        "broad-shouldered",
+        "brusque",
+        "burlesque",
+        "cacuminal",
+        "candid",
+        "capacious",
+        "catholic",
+        "central",
+        "cerebral",
+        "chance",
+        "chancy",
+        "chaotic",
+        "checked",
+        "chick",
+        "chippy",
+        "clear",
+        "clitoromaniac",
+        "close",
+        "coarse",
+        "cocotte",
+        "collective",
+        "colleen",
+        "comic",
+        "comical",
+        "commodious",
+        "comprehensive",
+        "confused",
+        "consonant",
+        "consonantal",
+        "continuant",
+        "cookie",
+        "copious",
+        "cosmopolitan",
+        "cutie",
+        "dame",
+        "damoiselle",
+        "damsel",
+        "deep",
+        "demoiselle",
+        "dental",
+        "diffuse",
+        "direct",
+        "dirty",
+        "disordered",
+        "dissimilated",
+        "doll",
+        "dorsal",
+        "downright",
+        "drab",
+        "earthy",
+        "easy lay",
+        "easy woman",
+        "ecumenical",
+        "ecumenistic",
+        "emphatic",
+        "evident",
+        "expansive",
+        "explicit",
+        "extended",
+        "extending",
+        "extensive",
+        "far-embracing",
+        "far-extending",
+        "far-flung",
+        "far-flying",
+        "far-going",
+        "far-ranging",
+        "far-reaching",
+        "farcical",
+        "featureless",
+        "filly",
+        "filthy",
+        "flat",
+        "floozy",
+        "foggy",
+        "forthright",
+        "frail",
+        "frail sister",
+        "frank",
+        "frankhearted",
+        "free",
+        "free-speaking",
+        "free-spoken",
+        "free-tongued",
+        "front",
+        "full",
+        "fuzzy",
+        "gal",
+        "general",
+        "generalized",
+        "generic",
+        "generous",
+        "genuine",
+        "girl",
+        "girlie",
+        "glide",
+        "glossal",
+        "glottal",
+        "grisette",
+        "gross",
+        "gutter",
+        "guttural",
+        "hard",
+        "harridan",
+        "hazy",
+        "heart-to-heart",
+        "heavy",
+        "heifer",
+        "hen",
+        "high",
+        "hit-or-miss",
+        "hoyden",
+        "hussy",
+        "hysteromaniac",
+        "ill-defined",
+        "imprecise",
+        "improper",
+        "inaccurate",
+        "inchoate",
+        "inclusive",
+        "incoherent",
+        "indecent",
+        "indecisive",
+        "indefinable",
+        "indefinite",
+        "indelicate",
+        "indeterminable",
+        "indeterminate",
+        "indiscriminate",
+        "indistinct",
+        "inelegant",
+        "inexact",
+        "infinite",
+        "ingenuous",
+        "intonated",
+        "jade",
+        "jeune fille",
+        "jill",
+        "junior miss",
+        "labial",
+        "labiodental",
+        "labiovelar",
+        "large",
+        "large-scale",
+        "lascivious",
+        "lass",
+        "lassie",
+        "lateral",
+        "latitudinarian",
+        "lax",
+        "lewd",
+        "liberal",
+        "light",
+        "lingual",
+        "liquid",
+        "little missy",
+        "loose",
+        "loose woman",
+        "low",
+        "mademoiselle",
+        "maid",
+        "maiden",
+        "main",
+        "mid",
+        "minx",
+        "miss",
+        "missy",
+        "mock-heroic",
+        "monophthongal",
+        "muted",
+        "narrow",
+        "nasal",
+        "nasalized",
+        "nebulous",
+        "neutral",
+        "noninsular",
+        "nonspecific",
+        "number",
+        "nymphet",
+        "nympho",
+        "nymphomaniac",
+        "obscene",
+        "obscure",
+        "obvious",
+        "occlusive",
+        "off color",
+        "open",
+        "openhearted",
+        "orderless",
+        "outspoken",
+        "oxytone",
+        "palatal",
+        "palatalized",
+        "pharyngeal",
+        "pharyngealized",
+        "phonemic",
+        "phonetic",
+        "phonic",
+        "pickup",
+        "piece",
+        "pitch",
+        "pitched",
+        "plain",
+        "plain-spoken",
+        "pornographic",
+        "posttonic",
+        "pronounced",
+        "quean",
+        "random",
+        "rank",
+        "raw",
+        "retroflex",
+        "romp",
+        "roomy",
+        "rough",
+        "round",
+        "rounded",
+        "rude",
+        "schoolgirl",
+        "schoolmaid",
+        "schoolmiss",
+        "semivowel",
+        "shadowed forth",
+        "shadowy",
+        "shapeless",
+        "sincere",
+        "skirt",
+        "slapstick",
+        "slip",
+        "slut",
+        "soft",
+        "sonant",
+        "spacious",
+        "spacious of mind",
+        "spread out",
+        "spreading",
+        "stochastic",
+        "stopped",
+        "straight",
+        "straight-out",
+        "straightforward",
+        "stressed",
+        "strong",
+        "strumpet",
+        "subdeb",
+        "subdebutante",
+        "subteen",
+        "subteener",
+        "surd",
+        "sweeping",
+        "syllabic",
+        "tart",
+        "teenybopper",
+        "tense",
+        "thick",
+        "throaty",
+        "titillating",
+        "tolerant",
+        "tomato",
+        "tomboy",
+        "tonal",
+        "tonic",
+        "tragicomic",
+        "transparent",
+        "trollop",
+        "trull",
+        "twangy",
+        "unaccented",
+        "unbigoted",
+        "uncharacterized",
+        "unchecked",
+        "unclear",
+        "unconcealed",
+        "unconstrained",
+        "uncouth",
+        "undefined",
+        "undestined",
+        "undetermined",
+        "undifferentiated",
+        "undisguised",
+        "unequivocal",
+        "unfanatical",
+        "ungentlemanly",
+        "unguarded",
+        "unhidebound",
+        "unladylike",
+        "unparochial",
+        "unplain",
+        "unprovincial",
+        "unrefined",
+        "unreserved",
+        "unrestrained",
+        "unrounded",
+        "unshaded",
+        "unspecific",
+        "unspecified",
+        "unstressed",
+        "unsubtle",
+        "uteromaniac",
+        "vague",
+        "vast",
+        "veiled",
+        "velar",
+        "virgin",
+        "vocalic",
+        "vocoid",
+        "voiced",
+        "voiceless",
+        "voluminous",
+        "vowel",
+        "vowellike",
+        "vulgar",
+        "wanton",
+        "weak",
+        "wench",
+        "wholesale",
+        "whore",
+        "wide",
+        "wide-banked",
+        "wide-bottomed",
+        "wide-branched",
+        "wide-breasted",
+        "wide-brimmed",
+        "wide-eared",
+        "wide-extended",
+        "wide-extending",
+        "wide-faced",
+        "wide-framed",
+        "wide-hipped",
+        "wide-leaved",
+        "wide-lipped",
+        "wide-minded",
+        "wide-nosed",
+        "wide-petaled",
+        "wide-ranging",
+        "wide-reaching",
+        "wide-rimmed",
+        "wide-roving",
+        "wide-set",
+        "wide-spaced",
+        "wide-spanned",
+        "wide-streeted",
+        "wide-stretching",
+        "wide-tracked",
+        "wide-wayed",
+        "wide-winged",
+        "widespread",
+        "woman",
+        "young creature",
+        "young thing"
+      ]
+    },
+    "broadaxbroadaxe": {
+      "word": "BROADAX; BROADAXE",
+      "definitions": [
+        {
+          "text": "An ancient military weapon; a battle-ax.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An ax with a broad edge, for hewing timber.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadbill": {
+      "word": "BROADBILL",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A wild duck (Aythya, or Fuligula, marila), which appears in large numbers on the eastern coast of the United States, in autumn; - - called also bluebill, blackhead, raft duck, and scaup duck. See Scaup duck.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The shoveler. See Shoveler.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadbrim": {
+      "word": "BROADBRIM",
+      "definitions": [
+        {
+          "text": "A hat with a very broad brim, like those worn by men of the society of Friends.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of the society of Friends; a Quaker. [Sportive]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadbrimmed": {
+      "word": "BROAD-BRIMMED",
+      "definitions": [
+        {
+          "text": "Having a broad brim. A broad-brimmed flat silver plate. Tatler.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadcast": {
+      "word": "BROADCAST",
+      "definitions": [
+        {
+          "text": "A casting or throwing seed in all directions, as from the hand in sowing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Cast or dispersed in all directions, as seed from the hand in sowing; widely diffused.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Scattering in all directions (as a method of sowing); -- opposed to planting in hills, or rows.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "So as to scatter or be scattered in all directions; so as to spread widely, as seed from the hand in sowing, or news from the press.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "accessible",
+        "advertise",
+        "advertisement",
+        "affirmed",
+        "air",
+        "airing",
+        "announce",
+        "announced",
+        "announcement",
+        "annunciate",
+        "attenuation",
+        "bandying",
+        "beam",
+        "bed",
+        "bestrew",
+        "blazon",
+        "book",
+        "broadcasting",
+        "brought to notice",
+        "bruit about",
+        "bruiting",
+        "bruiting about",
+        "canned show",
+        "circulated",
+        "circulation",
+        "circumfuse",
+        "circumfusion",
+        "commercial",
+        "commercial program",
+        "common knowledge",
+        "common property",
+        "communicate",
+        "convey",
+        "current",
+        "deal out",
+        "declared",
+        "dibble",
+        "diffract",
+        "diffraction",
+        "diffuse",
+        "diffused",
+        "diffusion",
+        "dilution",
+        "discrete",
+        "dispensation",
+        "dispense",
+        "dispersal",
+        "disperse",
+        "dispersed",
+        "dispersion",
+        "display",
+        "dispread",
+        "disseminate",
+        "disseminated",
+        "dissemination",
+        "dissipated",
+        "dissipation",
+        "distribute",
+        "distributed",
+        "distribution",
+        "diverge",
+        "divergence",
+        "drill",
+        "electrical transcription",
+        "evaporation",
+        "evulgation",
+        "expansion",
+        "fan out",
+        "forest",
+        "fragmentation",
+        "get across",
+        "get over",
+        "give",
+        "give word",
+        "hand on",
+        "impart",
+        "implant",
+        "in circulation",
+        "in print",
+        "inseminate",
+        "insemination",
+        "issuance",
+        "issue",
+        "leave word",
+        "made public",
+        "make known",
+        "network show",
+        "newscast",
+        "open",
+        "overscatter",
+        "oversow",
+        "overspread",
+        "pass",
+        "pass along",
+        "pass on",
+        "peppering",
+        "periodical",
+        "plant",
+        "planting",
+        "pot",
+        "printing",
+        "proclaim",
+        "proclaimed",
+        "proclamation",
+        "promulgate",
+        "promulgation",
+        "pronouncement",
+        "pronunciamento",
+        "propagate",
+        "propagated",
+        "propagation",
+        "public",
+        "publication",
+        "publish",
+        "published",
+        "publishing",
+        "put in",
+        "radiate",
+        "radiation",
+        "radio",
+        "radio fare",
+        "radiobroadcast",
+        "rebroadcast",
+        "reforest",
+        "reforestation",
+        "relay",
+        "render",
+        "report",
+        "reported",
+        "rerun",
+        "reset",
+        "resetting",
+        "retail",
+        "retimber",
+        "retimbering",
+        "scatter",
+        "scatter seed",
+        "scattered",
+        "scattering",
+        "scatterment",
+        "seed",
+        "seed down",
+        "seeding",
+        "seminate",
+        "semination",
+        "send",
+        "send word",
+        "serial",
+        "set",
+        "setting",
+        "share",
+        "share with",
+        "shortwave",
+        "shotgun pattern",
+        "show",
+        "sign off",
+        "sign on",
+        "signal",
+        "soap opera",
+        "sound effects",
+        "sow",
+        "sow broadcast",
+        "sowing",
+        "sparse",
+        "spattering",
+        "splay",
+        "sporadic",
+        "sportscast",
+        "spread",
+        "spread out",
+        "spreading",
+        "spreading abroad",
+        "sprinkling",
+        "stated",
+        "straggling",
+        "straggly",
+        "straw",
+        "strew",
+        "strewing",
+        "strewn",
+        "strown",
+        "sustainer",
+        "taped program",
+        "telecast",
+        "telecasting",
+        "televise",
+        "televised",
+        "tell",
+        "transfer",
+        "transmission",
+        "transmit",
+        "transplant",
+        "transplantation",
+        "utter",
+        "ventilation",
+        "volatilization",
+        "widespread",
+        "wireless"
+      ]
+    },
+    "broadchurch": {
+      "word": "BROAD CHURCH",
+      "definitions": [
+        {
+          "text": "A portion of the Church of England, consisting of persons who claim to hold a position, in respect to doctrine and fellowship, intermediate between the High Church party and the Low Church, or evangelical, party. The term has been applied to otherbodies of men holding liberal or comprehensive views of Christian doctrine and fellowship. Side by side with these various shades of High and Low Church, another party of a different character has always existed in the Church of England. It is called by different names: Moderate, Catholic, or Broad Church, by its friends; Latitudinarian or Indifferent, by its enemies. Its distinctive character is the desire of comprehension. Its watch words are charity and toleration. Conybeare.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadcloth": {
+      "word": "BROADCLOTH",
+      "definitions": [
+        {
+          "text": "A fine smooth-faced woolen cloth for men's garments, usually of double width (i.e., a yard and a half); -- so called in distinction from woolens three quarters of a yard wide.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broaden": {
+      "word": "BROADEN",
+      "definitions": [
+        {
+          "text": "To grow broad; to become broader or wider. The broadening sun appears. Wordsworth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make broad or broader; to render more broad or comprehensive.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accrue",
+        "accumulate",
+        "add to",
+        "advance",
+        "aggrandize",
+        "amplify",
+        "appreciate",
+        "augment",
+        "balloon",
+        "bloat",
+        "blow up",
+        "boom",
+        "boost",
+        "breed",
+        "build",
+        "build up",
+        "bulk",
+        "bulk out",
+        "crescendo",
+        "deal in generalities",
+        "deepen",
+        "develop",
+        "dilate",
+        "distend",
+        "ecumenicize",
+        "enlarge",
+        "exalt",
+        "expand",
+        "extend",
+        "fatten",
+        "fill out",
+        "gain",
+        "gain strength",
+        "generalize",
+        "get ahead",
+        "globalize",
+        "go up",
+        "greaten",
+        "grow",
+        "hike",
+        "hike up",
+        "huff",
+        "increase",
+        "inflate",
+        "intensify",
+        "jack up",
+        "jump up",
+        "lengthen",
+        "magnify",
+        "make a generalization",
+        "maximize",
+        "mount",
+        "multiply",
+        "open",
+        "outspread",
+        "outstretch",
+        "parlay",
+        "proliferate",
+        "puff",
+        "puff up",
+        "pump",
+        "pump up",
+        "put up",
+        "pyramid",
+        "raise",
+        "rarefy",
+        "rise",
+        "run up",
+        "shoot up",
+        "snowball",
+        "spread",
+        "spread out",
+        "strengthen",
+        "stretch",
+        "sufflate",
+        "swell",
+        "thicken",
+        "tumefy",
+        "universalize",
+        "up",
+        "wax",
+        "widen"
+      ]
+    },
+    "broadgauge": {
+      "word": "BROAD GAUGE",
+      "definitions": [
+        {
+          "text": "A wider distance between the rails than the \"standard\" gauge of four feet eight inches and a half. See Gauge.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadhorned": {
+      "word": "BROAD-HORNED",
+      "definitions": [
+        {
+          "text": "Having horns spreading widely.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadish": {
+      "word": "BROADISH",
+      "definitions": [
+        {
+          "text": "Rather broad; moderately broad.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadleaf": {
+      "word": "BROADLEAF",
+      "definitions": [
+        {
+          "text": "A tree (Terminalia latifolia) of Jamaica, the wood of which is used for boards, scantling, shingles, etc; -- sometimes called the almond tree, from the shape of its fruit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadleavedbroadleafed": {
+      "word": "BROAD-LEAVED; BROAD-LEAFED",
+      "definitions": [
+        {
+          "text": "Having broad, or relatively broad, leaves. Keats.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadly": {
+      "word": "BROADLY",
+      "definitions": [
+        {
+          "text": "In a broad manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "abroad",
+        "absurdly",
+        "all in all",
+        "all joking aside",
+        "all things considered",
+        "altogether",
+        "amusingly",
+        "as a rule",
+        "as a whole",
+        "as an approximation",
+        "at large",
+        "bizarrely",
+        "bluffly",
+        "bluntly",
+        "broadly speaking",
+        "brusquely",
+        "by and large",
+        "candidly",
+        "chiefly",
+        "comically",
+        "commonly",
+        "directly",
+        "distantly and broadly",
+        "drolly",
+        "eccentrically",
+        "extensively",
+        "far and near",
+        "far and wide",
+        "farcically",
+        "frankly",
+        "funnily",
+        "generally",
+        "generally speaking",
+        "genuinely",
+        "humorously",
+        "in all conscience",
+        "in all seriousness",
+        "in general",
+        "in plain English",
+        "in plain words",
+        "incongruously",
+        "indecisively",
+        "indefinably",
+        "indefinitely",
+        "indeterminably",
+        "indistinctly",
+        "infinitely",
+        "laughably",
+        "mainly",
+        "mostly",
+        "normally",
+        "obscurely",
+        "on all sides",
+        "on balance",
+        "on every side",
+        "on the whole",
+        "openheartedly",
+        "openly",
+        "ordinarily",
+        "outspokenly",
+        "overall",
+        "plain-spokenly",
+        "plainly",
+        "predominantly",
+        "prevailingly",
+        "quaintly",
+        "ridiculously",
+        "right and left",
+        "roughly",
+        "roughly speaking",
+        "roundly",
+        "routinely",
+        "sincerely",
+        "speaking generally",
+        "straightforwardly",
+        "unconstrainedly",
+        "unreservedly",
+        "unrestrainedly",
+        "usually",
+        "vaguely",
+        "vastly",
+        "whimsically",
+        "wide",
+        "widely",
+        "with no nonsense",
+        "wittily"
+      ]
+    },
+    "broadmouth": {
+      "word": "BROADMOUTH",
+      "definitions": [
+        {
+          "text": "One of the Eurylaimidæ, a family of East Indian passerine birds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadness": {
+      "word": "BROADNESS",
+      "definitions": [
+        {
+          "text": "The condition or quality of being broad; breadth; coarseness; grossness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadpiece": {
+      "word": "BROADPIECE",
+      "definitions": [
+        {
+          "text": "An old English gold coin, broader than a guinea, as a Carolus or Jacobus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadseal": {
+      "word": "BROAD SEAL",
+      "definitions": [
+        {
+          "text": "The great seal of England; the public seal of a country or state.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "To stamp with the broad seal; to make sure; to guarantee or warrant. [Obs.] Thy presence broadseals our delights for pure. B. Jonson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadside": {
+      "word": "BROADSIDE",
+      "definitions": [
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The side of a ship above the water line, from the bow to the quarter.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A discharge of or from all the guns on one side of a ship, at the same time.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A volley of abuse or denunciation. [Colloq.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sheet of paper containing one large page, or printed on one side only; -- called also broadsheet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "antiaircraft barrage",
+        "aside",
+        "askance",
+        "askant",
+        "asquint",
+        "bank",
+        "barrage",
+        "beam",
+        "bombardment",
+        "border",
+        "box barrage",
+        "breadthwise",
+        "broad side foremost",
+        "broadside on",
+        "broadways",
+        "broadwise",
+        "burst",
+        "cannonade",
+        "cannonry",
+        "cheek",
+        "chop",
+        "coast",
+        "crabwise",
+        "creeping barrage",
+        "depthwise",
+        "drumfire",
+        "edgeway",
+        "edgeways",
+        "edgewise",
+        "emergency barrage",
+        "enfilade",
+        "flank",
+        "fusillade",
+        "glancingly",
+        "hail",
+        "hand",
+        "handedness",
+        "haunch",
+        "hip",
+        "jowl",
+        "laterad",
+        "laterality",
+        "laterally",
+        "many-sidedness",
+        "mortar barrage",
+        "multilaterality",
+        "normal barrage",
+        "on its side",
+        "on the beam",
+        "planking",
+        "profile",
+        "quarter",
+        "right and left",
+        "salvo",
+        "shore",
+        "shower",
+        "side",
+        "sideling",
+        "sidelong",
+        "sideward",
+        "sidewards",
+        "sideway",
+        "sideways",
+        "sidewise",
+        "siding",
+        "sidling",
+        "spray",
+        "standing barrage",
+        "storm",
+        "temple",
+        "through",
+        "unilaterality",
+        "volley",
+        "widthways",
+        "widthwise"
+      ]
+    },
+    "broadspread": {
+      "word": "BROADSPREAD",
+      "definitions": [
+        {
+          "text": "Widespread.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadspreading": {
+      "word": "BROADSPREADING",
+      "definitions": [
+        {
+          "text": "Spreading widely.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadsword": {
+      "word": "BROADSWORD",
+      "definitions": [
+        {
+          "text": "A sword with a broad blade and a cutting edge; a claymore. I heard the broadsword's deadly clang. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadwise": {
+      "word": "BROADWISE",
+      "definitions": [
+        {
+          "text": "Breadthwise. [Archaic]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brob": {
+      "word": "BROB",
+      "definitions": [
+        {
+          "text": "A peculiar brad-shaped spike, to be driven alongside the end of an abutting timber to prevent its slipping.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brobdingnagian": {
+      "word": "BROBDINGNAGIAN",
+      "definitions": [
+        {
+          "text": "Colossal' of extraordinary height; gigantic.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A giant. [Spelt often Brobdignagian.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brocade": {
+      "word": "BROCADE",
+      "definitions": [
+        {
+          "text": "Silk stuff, woven with gold and silver threads, or ornamented with raised flowers, foliage, etc.; -- also applied to other stuffs thus wrought and enriched. A gala suit of faded brocade. W. Irving.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brocaded": {
+      "word": "BROCADED",
+      "definitions": [
+        {
+          "text": "Woven or worked, as brocade, with gold and silver, or with raised flowers, etc. Brocaded flowers o'er the gay mantua shine. Gay.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Dressed in brocade.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brocage": {
+      "word": "BROCAGE",
+      "definitions": [
+        {
+          "text": "See Brokkerage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brocard": {
+      "word": "BROCARD",
+      "definitions": [
+        {
+          "text": "An elementary principle or maximum; a short, proverbial rule, in law, ethics, or metaphysics. The legal brocard, \"Falsus in uno, falsus in omnibus,\" is a rule not more applicable to other witness than to consciousness. Sir W. Hamilton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brocatel": {
+      "word": "BROCATEL",
+      "definitions": [
+        {
+          "text": "A kind of coarse brocade, or figured fabric, used chiefly for tapestry, linings for carriages, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A marble, clouded and veined with white, gray, yellow, and red, in which the yellow usually prevails. It is also called Siena marble, from its locality.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brocatello": {
+      "word": "BROCATELLO",
+      "definitions": [
+        {
+          "text": "Same as Brocatel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broccoli": {
+      "word": "BROCCOLI",
+      "definitions": [
+        {
+          "text": "A plant of the Cabbage species (Brassica oleracea) of many varieties, resembling the cauliflower. The \"curd,\" or flowering head, is the part used for food.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brochantite": {
+      "word": "BROCHANTITE",
+      "definitions": [
+        {
+          "text": "A basic sulphate of copper, occurring in emerald-green crystals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broche": {
+      "word": "BROCHE",
+      "definitions": [
+        {
+          "text": "Woven with a figure; as, broché goods.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Broach, n.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brochette": {
+      "word": "BROCHETTE",
+      "definitions": [
+        {
+          "text": "A small spit or skewer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brochure": {
+      "word": "BROCHURE",
+      "definitions": [
+        {
+          "text": "A printed and stitched book containing only a few leaves; a pamphlet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brock": {
+      "word": "BROCK",
+      "definitions": [
+        {
+          "text": "A badger. Or with pretense of chasing thence the brock. B. Jonson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A brocket. Bailey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brockenspecterbrockenspectre": {
+      "word": "BROCKEN SPECTER; BROCKEN SPECTRE",
+      "definitions": [
+        {
+          "text": "A mountain specter (which see), esp. that observed on the Brocken, in the Harz Mountains.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brocket": {
+      "word": "BROCKET",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A male red deer two years old; -- sometimes called brock.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small South American deer, of several species (Coassus superciliaris, C. rufus, and C. auritus).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brockish": {
+      "word": "BROCKISH",
+      "definitions": [
+        {
+          "text": "Beastly; brutal. [Obs.] Bale.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brodekin": {
+      "word": "BRODEKIN",
+      "definitions": [
+        {
+          "text": "A buskin or half-boot. [Written also brodequin.] [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brog": {
+      "word": "BROG",
+      "definitions": [
+        {
+          "text": "A pointed instrument, as a joiner's awl, a brad awl, a needle, or a small ship stick.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To prod with a pointed instrument, as a lance; also, to broggle. [Scot. & Prov.] Sir W. Scott.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brogan": {
+      "word": "BROGAN",
+      "definitions": [
+        {
+          "text": "A stout, coarse shoe; a brogue.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broggle": {
+      "word": "BROGGLE",
+      "definitions": [
+        {
+          "text": "To sniggle, or fish with a brog. [Prov. Eng.] Wright.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brogue": {
+      "word": "BROGUE",
+      "definitions": [
+        {
+          "text": "A stout, coarse shoe; a brogan. horsehide or deerskin, untanned or tenned with the hair on, gathered round the ankle with a thong. The name was afterward given to any",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brogues": {
+      "word": "BROGUES",
+      "definitions": [
+        {
+          "text": "Breeches. [Obs.] Shenstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broid": {
+      "word": "BROID",
+      "definitions": [
+        {
+          "text": "To braid. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broider": {
+      "word": "BROIDER",
+      "definitions": [
+        {
+          "text": "To embroider. [Archaic] They shall make a broidered coat. Ex. xxviii. 4.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broiderer": {
+      "word": "BROIDERER",
+      "definitions": [
+        {
+          "text": "One who embroiders. [Archaic]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broidery": {
+      "word": "BROIDERY",
+      "definitions": [
+        {
+          "text": "Embroidery. [Archaic] The golden broidery tender Milkah wove. Tickell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broil": {
+      "word": "BROIL",
+      "definitions": [
+        {
+          "text": "A tumult; a noisy quarrel; a disturbance; a brawl; contention; discord, either between individuals or in the state. I will own that there is a haughtiness and fierceness in human nature which will which will cause innumerable broils, place men in what situation you please. Burke. discord; contest; conflict; brawl; uproar.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cook by direct exposure to heat over a fire, esp. upon a gridiron over coals.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To subject to great (commonly direct) heat.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be subjected to the action of heat, as meat over the fire; to be greatly heated, or to be made uncomfortable with heat. The planets and comets had been broiling in the sun. Cheyne.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "ado",
+        "affray",
+        "agitation",
+        "altercate",
+        "altercation",
+        "argument",
+        "bake",
+        "baking",
+        "barbecue",
+        "barbecuing",
+        "baste",
+        "basting",
+        "battle",
+        "be in heat",
+        "bicker",
+        "blanch",
+        "blaze",
+        "blood feud",
+        "bloom",
+        "bluster",
+        "bobbery",
+        "boil",
+        "boiling",
+        "bother",
+        "box",
+        "braise",
+        "braising",
+        "brawl",
+        "brew",
+        "brewing",
+        "broiling",
+        "brouhaha",
+        "brown",
+        "burn",
+        "cacophony",
+        "casserole",
+        "catering",
+        "chaos",
+        "choke",
+        "clash",
+        "close",
+        "coddle",
+        "collide",
+        "combat",
+        "combust",
+        "come to blows",
+        "commotion",
+        "contend",
+        "contention",
+        "contest",
+        "controversy",
+        "cook",
+        "cookery",
+        "cooking",
+        "course",
+        "cover",
+        "cuisine",
+        "culinary masterpiece",
+        "culinary preparation",
+        "culinary science",
+        "curry",
+        "cut and thrust",
+        "devil",
+        "differ",
+        "dish",
+        "dispute",
+        "disturbance",
+        "do",
+        "do to perfection",
+        "domestic science",
+        "donnybrook",
+        "donnybrook fair",
+        "duel",
+        "dustup",
+        "ebullition",
+        "embroilment",
+        "entree",
+        "exchange blows",
+        "fanaticism",
+        "fence",
+        "ferment",
+        "feud",
+        "fight",
+        "fight a duel",
+        "fire",
+        "flame",
+        "flame up",
+        "flap",
+        "flare",
+        "flare up",
+        "flicker",
+        "flite",
+        "fliting",
+        "flush",
+        "fomentation",
+        "foofaraw",
+        "fracas",
+        "fray",
+        "free-for-all",
+        "frenzy",
+        "fricassee",
+        "frizz",
+        "frizzle",
+        "fry",
+        "frying",
+        "fume",
+        "furor",
+        "furore",
+        "fury",
+        "fuss",
+        "gasp",
+        "give and take",
+        "give satisfaction",
+        "glow",
+        "grapple",
+        "grapple with",
+        "griddle",
+        "grill",
+        "grilling",
+        "hassle",
+        "have words",
+        "heat",
+        "helter-skelter",
+        "home economics",
+        "hubbub",
+        "imbroglio",
+        "incandesce",
+        "join issue",
+        "jostle",
+        "joust",
+        "knock-down-and-drag-out",
+        "logomachy",
+        "main dish",
+        "melee",
+        "melt",
+        "mix it up",
+        "nutrition",
+        "open quarrel",
+        "oven-bake",
+        "pan",
+        "pan-broil",
+        "pan-broiling",
+        "pandemonium",
+        "pant",
+        "parboil",
+        "parch",
+        "passion",
+        "pell-mell",
+        "poach",
+        "poaching",
+        "polemic",
+        "pother",
+        "prepare",
+        "prepare food",
+        "quarrel",
+        "racket",
+        "radiate heat",
+        "rage",
+        "rampage",
+        "rassle",
+        "riot",
+        "roast",
+        "roasting",
+        "rough-and-tumble",
+        "roughhouse",
+        "row",
+        "ruckus",
+        "ruction",
+        "rumpus",
+        "run a tilt",
+        "saute",
+        "sauteing",
+        "scald",
+        "scallop",
+        "scorch",
+        "scramble",
+        "scrimmage",
+        "scuffle",
+        "sear",
+        "searing",
+        "seethe",
+        "set to",
+        "sharp words",
+        "shimmer with heat",
+        "shindy",
+        "shirr",
+        "shirring",
+        "side dish",
+        "simmer",
+        "simmering",
+        "skirmish",
+        "slanging match",
+        "smolder",
+        "smother",
+        "snarl",
+        "spar",
+        "spark",
+        "spat",
+        "squabble",
+        "steam",
+        "steeping",
+        "stew",
+        "stewing",
+        "stifle",
+        "stir",
+        "stir-fry",
+        "storminess",
+        "strife",
+        "strive",
+        "struggle",
+        "suffocate",
+        "sweat",
+        "swelter",
+        "tempestuousness",
+        "thrust and parry",
+        "tiff",
+        "tilt",
+        "to-do",
+        "toast",
+        "toasting",
+        "tourney",
+        "trouble",
+        "tumult",
+        "tumultuousness",
+        "turbulence",
+        "turmoil",
+        "tussle",
+        "uproar",
+        "upset",
+        "vendetta",
+        "wage war",
+        "war",
+        "wildness",
+        "words",
+        "wrangle",
+        "wrestle",
+        "zeal",
+        "zealousness"
+      ]
+    },
+    "broiler": {
+      "word": "BROILER",
+      "definitions": [
+        {
+          "text": "One who excites broils; one who engages in or promotes noisy quarrels. What doth he but turn broiler, . . . make new libels against the church Hammond.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who broils, or cooks by broiling.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A gridiron or other utensil used in broiling.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A chicken or other bird fit for broiling. [Colloq.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Bantam",
+        "Cornish hen",
+        "Dutch oven",
+        "alcohol stove",
+        "baker",
+        "banty",
+        "barbecue",
+        "barn-door fowl",
+        "barnyard fowl",
+        "biddy",
+        "boiler",
+        "brooder",
+        "broody hen",
+        "caille",
+        "camp stove",
+        "canard",
+        "caneton",
+        "capon",
+        "chafer",
+        "chafing dish",
+        "chanticleer",
+        "chapon",
+        "chick",
+        "chickabiddy",
+        "chicken",
+        "chicky",
+        "cock",
+        "cockerel",
+        "cook stove",
+        "dindon",
+        "domestic fowl",
+        "drake",
+        "duck",
+        "duckling",
+        "dunghill fowl",
+        "faisan",
+        "fowl",
+        "fryer",
+        "game fowl",
+        "gander",
+        "gobbler",
+        "goose",
+        "gosling",
+        "grill",
+        "griller",
+        "grouse",
+        "guinea cock",
+        "guinea fowl",
+        "guinea hen",
+        "hen",
+        "hen turkey",
+        "hot day",
+        "infrared cooker",
+        "oie",
+        "pans",
+        "partlet",
+        "partridge",
+        "percolator",
+        "pheasant",
+        "pigeon",
+        "pigeonneau",
+        "poulard",
+        "poulet",
+        "poult",
+        "poultry",
+        "pullet",
+        "quail",
+        "roaster",
+        "rooster",
+        "samovar",
+        "scorcher",
+        "setting hen",
+        "sizzler",
+        "spring chicken",
+        "squab",
+        "stewing chicken",
+        "stove",
+        "summer day",
+        "toaster",
+        "tom",
+        "tom turkey",
+        "turkey",
+        "turkey gobbler",
+        "turkey-cock",
+        "volaille",
+        "wild duck"
+      ]
+    },
+    "broiling": {
+      "word": "BROILING",
+      "definitions": [
+        {
+          "text": "Excessively hot; as, a broiling sun.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The act of causing anything to broil.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokage": {
+      "word": "BROKAGE",
+      "definitions": [
+        {
+          "text": "See Brokerage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broke": {
+      "word": "BROKE",
+      "definitions": [
+        {
+          "text": "To transact business for another. [R.] Brome.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act as procurer in love matters; to pimp. [Obs.] We do want a certain necessary woman to broke between them, Cupid said. Fanshawe. And brokes with all that can in such a suit Corrupt the tender honor of a maid. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "imp. & p. p. of Break.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "bankrupt",
+        "beat",
+        "beggared",
+        "broken",
+        "busted",
+        "dead",
+        "destitute",
+        "down-and-out",
+        "failed",
+        "flat",
+        "flat broke",
+        "hard up",
+        "impoverished",
+        "in receivership",
+        "indigent",
+        "insolvent",
+        "needy",
+        "on the rocks",
+        "on the skids",
+        "oofless",
+        "penniless",
+        "penurious",
+        "poor",
+        "poverty-stricken",
+        "ruined",
+        "short",
+        "stone-broke",
+        "stony",
+        "strapped",
+        "up against it"
+      ]
+    },
+    "broken": {
+      "word": "BROKEN",
+      "definitions": [
+        {
+          "text": "Separated into parts or pieces by violence; divided into fragments; as, a broken chain or rope; a broken dish.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Disconnected; not continuous; also, rough; uneven; as, a broken surface.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fractured; cracked; disunited; sundered; strained; apart; as, a broken reed; broken friendship.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Made infirm or weak, by disease, age, or hardships. The one being who remembered him as he been before his mind was broken. G. Eliot. The broken soldier, kindly bade to stay, Sat by his fire, and talked the night away. Goldsmith.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Subdued; humbled; contrite. The sacrifices of God are a broken spirit. Ps. li. 17.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Subjugated; trained for use, as a horse.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Crushed and ruined as by something that destroys hope; blighted. \"Her broken love and life.\" G. Eliot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not carried into effect; not adhered to; violated; as, a broken promise, vow, or contract; a broken law.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Ruined financially; incapable of redeeming promises made, or of paying debts incurred; as, a broken bank; a broken tradesman.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Imperfectly spoken, as by a foreigner; as, broken English; imperfectly spoken on account of emotion; as, to say a few broken words at parting. Amidst the broken words and loud weeping of those grave senators. Macaulay. Broken ground. (a) (Mil.) Rough or uneven ground; as, the troops were retarded in their advance by broken ground. (b) Ground recently opened with the plow. given points taken in some specified order.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "aggravated",
+        "aloof",
+        "ausgespielt",
+        "bankrupt",
+        "beaten",
+        "blasted",
+        "blighted",
+        "broke",
+        "broken off",
+        "broken-down",
+        "brought low",
+        "bumpy",
+        "burned",
+        "burst",
+        "busted",
+        "capricious",
+        "careening",
+        "catchy",
+        "chastened",
+        "checked",
+        "chipped",
+        "chopped-off",
+        "choppy",
+        "coarse",
+        "coarse-grained",
+        "conditioned",
+        "conquered",
+        "corrugated",
+        "cracked",
+        "crazed",
+        "cross-grained",
+        "crushed",
+        "cut",
+        "damaged",
+        "debilitated",
+        "decousu",
+        "defeated",
+        "defied",
+        "dejected",
+        "demoralized",
+        "desolated",
+        "destitute",
+        "destroyed",
+        "desultory",
+        "detached",
+        "deteriorated",
+        "devastated",
+        "deviative",
+        "disciplined",
+        "disconnected",
+        "discontinued",
+        "discontinuous",
+        "discouraged",
+        "discrete",
+        "disintegrated",
+        "disjointed",
+        "disjunctive",
+        "disobeyed",
+        "dispirited",
+        "disregarded",
+        "disturbed",
+        "docile",
+        "domesticated",
+        "done for",
+        "done in",
+        "dovelike",
+        "down-and-out",
+        "eccentric",
+        "embittered",
+        "enfeebled",
+        "episodic",
+        "erratic",
+        "exacerbated",
+        "failed",
+        "fallen",
+        "felled",
+        "finished",
+        "fitful",
+        "flattened",
+        "flickering",
+        "fluctuating",
+        "fractured",
+        "fragmentary",
+        "fragmented",
+        "gapped",
+        "gentle",
+        "gone to pot",
+        "grainy",
+        "granulated",
+        "guttering",
+        "halting",
+        "harmed",
+        "haywire",
+        "herky-jerky",
+        "heteroclite",
+        "homespun",
+        "horripilant",
+        "housebroke",
+        "housebroken",
+        "humble",
+        "humbled",
+        "humiliated",
+        "hurt",
+        "ignored",
+        "immethodical",
+        "impaired",
+        "imperfect",
+        "in bits",
+        "in disrepair",
+        "in pieces",
+        "in receivership",
+        "in ruins",
+        "in shards",
+        "incoherent",
+        "inconsistent",
+        "inconstant",
+        "inequal",
+        "infringed",
+        "injured",
+        "inoperative",
+        "insolvent",
+        "intermittent",
+        "intermitting",
+        "interrupted",
+        "irregular",
+        "irremediable",
+        "irritated",
+        "jagged",
+        "jerky",
+        "jolty",
+        "kaput",
+        "lacerated",
+        "lamblike",
+        "licked",
+        "linsey-woolsey",
+        "lurching",
+        "made to grovel",
+        "mangled",
+        "mastered",
+        "meek",
+        "mild",
+        "mutilated",
+        "nonadherent",
+        "nonadhesive",
+        "noncoherent",
+        "noncohesive",
+        "noncontinuous",
+        "nonlinear",
+        "nonsequential",
+        "nonserial",
+        "nonuniform",
+        "obedient",
+        "on the blink",
+        "on the fritz",
+        "on the rocks",
+        "open",
+        "out of commission",
+        "out of condition",
+        "out of gear",
+        "out of joint",
+        "out of kelter",
+        "out of kilter",
+        "out of order",
+        "out of repair",
+        "out of tune",
+        "out of whack",
+        "overthrown",
+        "pacific",
+        "parenthetic",
+        "patchy",
+        "peaceable",
+        "pimply",
+        "pitted",
+        "pocky",
+        "potholed",
+        "pulverized",
+        "put down",
+        "quelled",
+        "quiet",
+        "rambling",
+        "rank",
+        "ravaged",
+        "reduced",
+        "rent",
+        "ripply",
+        "rough",
+        "rough-cast",
+        "rough-grained",
+        "rough-hewn",
+        "ruffled",
+        "ruined",
+        "ruinous",
+        "ruptured",
+        "rutted",
+        "rutty",
+        "scalded",
+        "scorched",
+        "scrappy",
+        "shagged",
+        "shaggy",
+        "shattered",
+        "shivered",
+        "slashed",
+        "slit",
+        "smashed",
+        "snatchy",
+        "spasmatic",
+        "spasmic",
+        "spasmodic",
+        "spastic",
+        "splintered",
+        "split",
+        "spoiled",
+        "sporadic",
+        "spotty",
+        "sprung",
+        "staggering",
+        "subdued",
+        "subjugated",
+        "suppressed",
+        "suspended",
+        "tame",
+        "tamed",
+        "tenuous",
+        "textured",
+        "the worse for",
+        "torn",
+        "trained",
+        "transgressed",
+        "unadhesive",
+        "uncertain",
+        "uncoherent",
+        "uncohesive",
+        "unconnected",
+        "undone",
+        "unequal",
+        "uneven",
+        "unjoined",
+        "unkempt",
+        "unlevel",
+        "unmethodical",
+        "unmetrical",
+        "unpolished",
+        "unrefined",
+        "unregular",
+        "unrhythmical",
+        "unsettled",
+        "unsmooth",
+        "unsteady",
+        "unsuccessive",
+        "unsystematic",
+        "untenacious",
+        "ununiform",
+        "vanquished",
+        "variable",
+        "veering",
+        "violated",
+        "wandering",
+        "wasted",
+        "wavering",
+        "weakened",
+        "wimpled",
+        "wobbling",
+        "wobbly",
+        "worse",
+        "worse off",
+        "worsened",
+        "wrecked"
+      ]
+    },
+    "brokenbacked": {
+      "word": "BROKEN-BACKED",
+      "definitions": [
+        {
+          "text": "Having a broken back; as, a broken-backed chair.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Hogged; so weakened in the frame as to droop at each end; -- said of a ship. Totten.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokenbellied": {
+      "word": "BROKEN-BELLIED",
+      "definitions": [
+        {
+          "text": "Having a ruptured belly. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokenbreast": {
+      "word": "BROKEN BREAST",
+      "definitions": [
+        {
+          "text": "Abscess of the mammary gland.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokenhearted": {
+      "word": "BROKEN-HEARTED",
+      "definitions": [
+        {
+          "text": "Having the spirits depressed or crushed by grief or despair. She left her husband almost broken-hearted. Macaulay. begone; forlorn.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "cheerless",
+        "crushed",
+        "dejected",
+        "depressed",
+        "devastated",
+        "disconsolate",
+        "doleful",
+        "dolorous",
+        "down",
+        "downcast",
+        "downhearted",
+        "forlorn",
+        "gloomy",
+        "glum",
+        "grief-stricken",
+        "heartsick",
+        "inconsolable",
+        "melancholy",
+        "miserable",
+        "morose",
+        "overwhelmed",
+        "sad",
+        "sorrowful",
+        "upset",
+        "woebegone",
+        "woeful",
+        "wretched"
+      ]
+    },
+    "brokenly": {
+      "word": "BROKENLY",
+      "definitions": [
+        {
+          "text": "In a broken, interrupted manner; in a broken state; in broken language. The pagans worship God . . . as it were brokenly and by piecemeal. Cudworth.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokenness": {
+      "word": "BROKENNESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being broken; unevenness. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Contrition; as, brokenness of heart.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokenwind": {
+      "word": "BROKEN WIND",
+      "definitions": [
+        {
+          "text": "The heaves.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokenwinded": {
+      "word": "BROKEN-WINDED",
+      "definitions": [
+        {
+          "text": "Having short breath or disordered respiration, as a horse.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokerage": {
+      "word": "BROKERAGE",
+      "definitions": [
+        {
+          "text": "The business or employment of a broker. Burke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fee, reward, or commission, given or changed for transacting business as a broker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "admission",
+        "admission fee",
+        "agency",
+        "anchorage",
+        "barter",
+        "bartering",
+        "boiler room",
+        "brokerage house",
+        "brokerage office",
+        "bucket shop",
+        "buying and selling",
+        "carfare",
+        "cellarage",
+        "charge",
+        "charges",
+        "cover charge",
+        "dealing",
+        "demand",
+        "dockage",
+        "doing business",
+        "dues",
+        "entrance fee",
+        "exaction",
+        "exactment",
+        "exchange",
+        "fare",
+        "fee",
+        "give-and-take",
+        "hire",
+        "horse trading",
+        "interchange",
+        "jobbing",
+        "legal bucketing",
+        "license fee",
+        "merchandising",
+        "pilotage",
+        "portage",
+        "retailing",
+        "salvage",
+        "scot",
+        "scot and lot",
+        "shot",
+        "stockbrokerage",
+        "stockbroking",
+        "stockjobbery",
+        "stockjobbing",
+        "storage",
+        "swapping",
+        "toll",
+        "towage",
+        "trade",
+        "trading",
+        "trafficking",
+        "wharfage",
+        "wheeling and dealing",
+        "wholesaling"
+      ]
+    },
+    "brokerly": {
+      "word": "BROKERLY",
+      "definitions": [
+        {
+          "text": "Mean; servile. [Obs.] B. Jonson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brokery": {
+      "word": "BROKERY",
+      "definitions": [
+        {
+          "text": "The business of a broker. [Obs.] And with extorting, cozening, forfeiting, And tricks belonging unto brokery. Marlowe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broking": {
+      "word": "BROKING",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a broker or brokers, or to brokerage. Redeem from broking pawn the blemished crown. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broma": {
+      "word": "BROMA",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Aliment; food. Dunglison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A light form of prepared cocoa (or cacao), or the drink made from it.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromal": {
+      "word": "BROMAL",
+      "definitions": [
+        {
+          "text": "An oily, colorless fluid, CBr",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromalin": {
+      "word": "BROMALIN",
+      "definitions": [
+        {
+          "text": "A colorless or white crystalline compound, (CH2)6N4C2H5Br, used as a sedative in epilepsy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromanil": {
+      "word": "BROMANIL",
+      "definitions": [
+        {
+          "text": "A substance analogous to chloranil but containing bromine in place of chlorine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromate": {
+      "word": "BROMATE",
+      "definitions": [
+        {
+          "text": "A salt of bromic acid.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To combine or impregnate with bromine; as, bromated camphor.",
+          "partOfSpeech": "transitive verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromatologist": {
+      "word": "BROMATOLOGIST",
+      "definitions": [
+        {
+          "text": "One versed in the science of foods.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromatology": {
+      "word": "BROMATOLOGY",
+      "definitions": [
+        {
+          "text": "The science of aliments. Dunglison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brome": {
+      "word": "BROME",
+      "definitions": [
+        {
+          "text": "See Bromine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromegrass": {
+      "word": "BROME GRASS",
+      "definitions": [
+        {
+          "text": "A genus (Bromus) of grasses, one species of which is the chess or cheat.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromeliaceous": {
+      "word": "BROMELIACEOUS",
+      "definitions": [
+        {
+          "text": "Pertaining to, or resembling, a family of endogenous and mostly epiphytic or saxicolous plants of which the genera Tillandsia and Billbergia are examples. The pineapple, though terrestrial, is also of this family.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromic": {
+      "word": "BROMIC",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or containing, bromine; -- said of those compounds of bromine in which this element has a valence of five, or the next to its highest; as, bromic acid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromide": {
+      "word": "BROMIDE",
+      "definitions": [
+        {
+          "text": "A compound of bromine with a positive radical.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abstraction",
+        "banality",
+        "chestnut",
+        "cliche",
+        "commonplace",
+        "commonplace expression",
+        "corn",
+        "familiar tune",
+        "general idea",
+        "generalization",
+        "generalized proposition",
+        "glittering generality",
+        "hackneyed expression",
+        "hackneyed saying",
+        "lieu commun",
+        "locus communis",
+        "old joke",
+        "old saw",
+        "old song",
+        "old story",
+        "platitude",
+        "prosaicism",
+        "prosaism",
+        "prose",
+        "reiteration",
+        "retold story",
+        "rubber stamp",
+        "shibboleth",
+        "stereotyped saying",
+        "sweeping statement",
+        "tag",
+        "tired cliche",
+        "trite saying",
+        "triticism",
+        "truism",
+        "twice-told tale"
+      ]
+    },
+    "bromidepaperbromidpaper": {
+      "word": "BROMIDE PAPER; BROMID PAPER",
+      "definitions": [
+        {
+          "text": "A sensitized paper coated with gelatin impregnated with bromide of silver, used in contact printing and in enlarging.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromidiom": {
+      "word": "BROMIDIOM",
+      "definitions": [
+        {
+          "text": "A conventional comment or saying, such as those characteristic of bromides. [Slang]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brominate": {
+      "word": "BROMINATE",
+      "definitions": [
+        {
+          "text": "See Bromate, v. t.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromine": {
+      "word": "BROMINE",
+      "definitions": [
+        {
+          "text": "One of the elements, related in its chemical qualities to chlorine and iodine. Atomic weight 79.8. Symbol Br. It is a deep reddish brown liquid of a very disagreeable odor, emitting a brownish vapor at the ordinary temperature. In combination it is found in minute quantities in sea water, and in many saline springs. It occurs also in the mineral bromyrite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromism": {
+      "word": "BROMISM",
+      "definitions": [
+        {
+          "text": "A diseased condition produced by the excessive use of bromine or one of its compounds. It is characterized by mental dullness and muscular weakness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromize": {
+      "word": "BROMIZE",
+      "definitions": [
+        {
+          "text": "To prepare or treat with bromine; as, to bromize a silvered plate.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromlife": {
+      "word": "BROMLIFE",
+      "definitions": [
+        {
+          "text": "A carbonate of baryta and lime, intermediate between witherite and strontianite; -- called also alstonite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromoform": {
+      "word": "BROMOFORM",
+      "definitions": [
+        {
+          "text": "A colorless liquid, CHBr3, having an agreeable odor and sweetish taste. It is produced by the simultaneous action of bromine and caustic potash upon wood spirit, alcohol, or acetone, as also by certain other reactions. In composition it is the same as chloroform, with the substitution of bromine for chlorine. It is somewhat similar to chloroform in its effects. Watts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromogelatin": {
+      "word": "BROMOGELATIN",
+      "definitions": [
+        {
+          "text": "Designating or pertaining to, a process of preparing dry plates with an emulsion of bromides and silver nitrate in gelatin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromoiodism": {
+      "word": "BROMOIODISM",
+      "definitions": [
+        {
+          "text": "Poisoning induced by large doses of bromine and iodine or of their compounds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromoiodized": {
+      "word": "BROMOIODIZED",
+      "definitions": [
+        {
+          "text": "Treated with bromides and iodides.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromol": {
+      "word": "BROMOL",
+      "definitions": [
+        {
+          "text": "A crystalline substance (chemically, tribromophenol, C6H2Br3OH), used as an antiseptic and disinfectant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brompicrin": {
+      "word": "BROMPICRIN",
+      "definitions": [
+        {
+          "text": "A pungent colorless explosive liquid, CNO2Br3, analogous to and resembling chlorpicrin. [Spelt also brompikrin.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromuret": {
+      "word": "BROMURET",
+      "definitions": [
+        {
+          "text": "See Bromide. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromyrite": {
+      "word": "BROMYRITE",
+      "definitions": [
+        {
+          "text": "Silver bromide, a rare mineral; -- called also bromargyrite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchi": {
+      "word": "BRONCHI",
+      "definitions": [
+        {
+          "text": "See Bronchus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchia": {
+      "word": "BRONCHIA",
+      "definitions": [
+        {
+          "text": "The bronchial tubes which arise from the branching of the trachea, esp. the subdivision of the bronchi. Dunglison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchial": {
+      "word": "BRONCHIAL",
+      "definitions": [
+        {
+          "text": "Belonging to the bronchi and their ramifications in the lungs. Bronchial arteries, branches of the descending aorta, accompanying the bronchia in all their ramifications. along the bronchia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchic": {
+      "word": "BRONCHIC",
+      "definitions": [
+        {
+          "text": "Bronchial.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchiole": {
+      "word": "BRONCHIOLE",
+      "definitions": [
+        {
+          "text": "A minute bronchial tube.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchitic": {
+      "word": "BRONCHITIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to bronchitis; as, bronchitic inflammation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchitis": {
+      "word": "BRONCHITIS",
+      "definitions": [
+        {
+          "text": "Inflammation, acute or chronic, of the bronchial tubes or any part of them.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Asiatic flu",
+        "Hong Kong flu",
+        "acute bronchitis",
+        "adenoiditis",
+        "adrenitis",
+        "aluminosis",
+        "amygdalitis",
+        "anthracosilicosis",
+        "anthracosis",
+        "appendicitis",
+        "arteritis",
+        "arthritis deformans",
+        "arthritis fungosa",
+        "arthritis pauperum",
+        "asbestosis",
+        "asthma",
+        "atrophic arthritis",
+        "atrophic inflammation",
+        "atypical pneumonia",
+        "bituminosis",
+        "black lung",
+        "blennorrhagic arthritis",
+        "brain fever",
+        "bronchial pneumonia",
+        "bronchiectasis",
+        "bronchiolitis",
+        "bronchopneumonia",
+        "bunion",
+        "bursitis",
+        "capillaritis",
+        "carditis",
+        "catarrh",
+        "catarrhal inflammation",
+        "cerebellitis",
+        "cerebral meningitis",
+        "cerebritis",
+        "cerebrospinal meningitis",
+        "chalicosis",
+        "chronic bronchitis",
+        "chronic infectious arthritis",
+        "chronic inflammation",
+        "cirrhotic inflammation",
+        "climactic arthritis",
+        "clitoritis",
+        "cold",
+        "colitis",
+        "collagen disease",
+        "collapsed lung",
+        "common cold",
+        "coniosis",
+        "conjunctivitis",
+        "coryza",
+        "croup",
+        "croupous pneumonia",
+        "cystitis",
+        "degenerative arthritis",
+        "diffuse inflammation",
+        "double pneumonia",
+        "dry pleurisy",
+        "emphysema",
+        "empyema",
+        "encephalitis",
+        "endocarditis",
+        "enteritis",
+        "epidemic pleurodynia",
+        "equine encephalomyelitis",
+        "exudative inflammation",
+        "fibrinous pneumonia",
+        "fibroid inflammation",
+        "flu",
+        "focal inflammation",
+        "gastritis",
+        "gingivitis",
+        "glossitis",
+        "gonococcal arthritis",
+        "gonorrheal arthritis",
+        "gonorrheal rheumatism",
+        "gout",
+        "gouty arthritis",
+        "grippe",
+        "hay fever",
+        "hemophilic arthritis",
+        "hepatitis",
+        "hyperplastic inflammation",
+        "hypertrophic arthritis",
+        "hypertrophic inflammation",
+        "infectional arthritis",
+        "infectious hepatitis",
+        "inflammation",
+        "influenza",
+        "irritable bowel syndrome",
+        "la grippe",
+        "laryngitis",
+        "lipoid pneumonia",
+        "lobar pneumonia",
+        "lumbago",
+        "lumbar rheumatism",
+        "lung cancer",
+        "lung fever",
+        "mastoiditis",
+        "meningitis",
+        "menopausal arthritis",
+        "metastatic inflammation",
+        "metritis",
+        "milk leg",
+        "mucous colitis",
+        "mumps meningitis",
+        "myelitis",
+        "necrotic inflammation",
+        "nephritis",
+        "neuritis",
+        "obliterative inflammation",
+        "ophthalitis",
+        "ophthalmia",
+        "orchitis",
+        "osseous rheumatism",
+        "osteitis",
+        "osteoarthritis",
+        "osteomyelitis",
+        "otitis",
+        "ovaritis",
+        "paradental pyorrhea",
+        "penitis",
+        "pericarditis",
+        "periodontitis",
+        "peritonitis",
+        "pharyngitis",
+        "phlebitis",
+        "pleurisy",
+        "pleuritis",
+        "pneumococcal pneumonia",
+        "pneumoconiosis",
+        "pneumonia",
+        "pneumonic fever",
+        "pneumothorax",
+        "podagra",
+        "proliferative arthritis",
+        "prostatitis",
+        "pyonephritis",
+        "pyorrhea",
+        "pyorrhea alveolaris",
+        "quinsy",
+        "reactive inflammation",
+        "rheum",
+        "rheumatism",
+        "rheumatiz",
+        "rheumatoid arthritis",
+        "rhinitis",
+        "sclerosing inflammation",
+        "seroplastic inflammation",
+        "serous inflammation",
+        "serum hepatitis",
+        "siderosis",
+        "silicosis",
+        "simple inflammation",
+        "sinusitis",
+        "sore throat",
+        "spastic colon",
+        "specific inflammation",
+        "subacute rheumatism",
+        "suppurative arthritis",
+        "suppurative inflammation",
+        "swine flu",
+        "syphilitic arthritis",
+        "tennis elbow",
+        "testitis",
+        "the sniffles",
+        "the snuffles",
+        "thrombophlebitis",
+        "tonsilitis",
+        "torticollis",
+        "toxic inflammation",
+        "traumatic inflammation",
+        "tuberculous arthritis",
+        "tuberculous rheumatism",
+        "ulcerative colitis",
+        "uratic arthritis",
+        "ureteritis",
+        "urethral arthritis",
+        "urethritis",
+        "uteritis",
+        "vaginitis",
+        "vertebral arthritis",
+        "virus pneumonia",
+        "visceral rheumatism",
+        "vulvitis",
+        "wet pleurisy",
+        "whooping cough",
+        "wryneck"
+      ]
+    },
+    "broncho": {
+      "word": "BRONCHO",
+      "definitions": [
+        {
+          "text": "A native or a Mexican horse of small size. [Western U.S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchocele": {
+      "word": "BRONCHOCELE",
+      "definitions": [
+        {
+          "text": "See Goiter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchophony": {
+      "word": "BRONCHOPHONY",
+      "definitions": [
+        {
+          "text": "A modification of the voice sounds, by which they are intensified and heightened in pitch; -- observed in auscultation of the chest in certain cases of intro-thoracic disease.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchopneumonia": {
+      "word": "BRONCHO-PNEUMONIA",
+      "definitions": [
+        {
+          "text": "Inflammation of the bronchi and lungs; catarrhal pneumonia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchotome": {
+      "word": "BRONCHOTOME",
+      "definitions": [
+        {
+          "text": "An instrument for cutting into the bronchial tubes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchotomy": {
+      "word": "BRONCHOTOMY",
+      "definitions": [
+        {
+          "text": "An incision into the windpipe or larynx, including the operations of tracheotomy and laryngotomy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronchus": {
+      "word": "BRONCHUS",
+      "definitions": [
+        {
+          "text": "One of the subdivisions of the trachea or windpipe; esp. one of the two primary divisions.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronco": {
+      "word": "BRONCO",
+      "definitions": [
+        {
+          "text": "Same as Broncho.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brond": {
+      "word": "BROND",
+      "definitions": [
+        {
+          "text": "A sword. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brontolitebrontolith": {
+      "word": "BRONTOLITE; BRONTOLITH",
+      "definitions": [
+        {
+          "text": "An aërolite. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brontology": {
+      "word": "BRONTOLOGY",
+      "definitions": [
+        {
+          "text": "A treatise upon thunder.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brontometer": {
+      "word": "BRONTOMETER",
+      "definitions": [
+        {
+          "text": "An instrument for noting or recording phenomena attendant on thunderstorms.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brontosaurus": {
+      "word": "BRONTOSAURUS",
+      "definitions": [
+        {
+          "text": "A genus of American jurassic dinosaurs. A length of sixty feet is believed to have been attained by these reptiles.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brontotherium": {
+      "word": "BRONTOTHERIUM",
+      "definitions": [
+        {
+          "text": "A genus of large extinct mammals from the miocene strata of western North America. They were allied to the rhinoceros, but the skull bears a pair of powerful horn cores in front of the orbits, and the fore feet were four-toed. See Illustration in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brontozoum": {
+      "word": "BRONTOZOUM",
+      "definitions": [
+        {
+          "text": "An extinct animal of large size, known from its three-toed footprints in Mesozoic sandstone. length, and were formerly referred to gigantic birds; but the discovery of large bipedal three-toed dinosaurs has suggested that they were made by those reptiles.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronze": {
+      "word": "BRONZE",
+      "definitions": [
+        {
+          "text": "An alloy of copper and tin, to which small proportions of other metals, especially zinc, are sometimes added. It is hard and sonorous, and is used for statues, bells, cannon, etc., the proportions of the ingredients being varied to suit the particular purposes. The varieties containing the higher proportions of tin are brittle, as in bell metal and speculum metal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A statue, bust, etc., cast in bronze. A print, a bronze, a flower, a root. Prior.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A yellowish or reddish brown, the color of bronze; also, a pigment or powder for imitating bronze.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Boldness; impudence; \"brass.\" Imbrowned with native bronze, lo! Henley stands. Pope. Aluminium bronze. See under Aluminium. was characterized by the use of implements and ornaments of copper or bronze. combination with painting, to give the appearance of bronze, gold, or other metal, to any surface. adding phosphorus and silicon respectively to ordinary bronze, and are characterized by great tenacity.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To give an appearance of bronze to, by a coating of bronze powder, or by other means; to make of the color of bronze; as, to bronze plaster casts; to bronze coins or medals. The tall bronzed black-eyed stranger. W. Black.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make hard or unfeeling; to brazen. The lawer who bronzes his bosom instead of his forehead. Sir W. Scott. Bronzed skin disease. (Pathol.) See Addison's disease.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Titian",
+        "adust",
+        "auburn",
+        "aureate",
+        "bay",
+        "bay-colored",
+        "bayard",
+        "brass",
+        "brassy",
+        "brazen",
+        "bronze-colored",
+        "bronzed",
+        "bronzy",
+        "brown",
+        "brownish-red",
+        "burn",
+        "cast",
+        "castaneous",
+        "chestnut",
+        "chestnut-brown",
+        "copper",
+        "copper-colored",
+        "coppery",
+        "cupreous",
+        "cuprous",
+        "embrown",
+        "ferrous",
+        "ferruginous",
+        "foxy",
+        "gilt",
+        "gold",
+        "gold-filled",
+        "gold-plated",
+        "golden",
+        "henna",
+        "infuscate",
+        "iron",
+        "ironlike",
+        "lead",
+        "leaden",
+        "liver-brown",
+        "liver-colored",
+        "livid-brown",
+        "mahogany",
+        "marble",
+        "mercurial",
+        "mercurous",
+        "mobile",
+        "nickel",
+        "nickelic",
+        "nickeline",
+        "pewter",
+        "pewtery",
+        "quicksilver",
+        "reddish-brown",
+        "roan",
+        "rubiginous",
+        "rufous",
+        "russet",
+        "russety",
+        "rust",
+        "rust-colored",
+        "rusty",
+        "sculpture",
+        "silver",
+        "silver-plated",
+        "silvery",
+        "stabile",
+        "statue",
+        "steel",
+        "steely",
+        "sunburn",
+        "sunburned",
+        "suntan",
+        "tan",
+        "terra cotta",
+        "terra-cotta",
+        "tin",
+        "tinny"
+      ]
+    },
+    "bronzesteel": {
+      "word": "BRONZE STEEL",
+      "definitions": [
+        {
+          "text": "A hard tough alloy of tin, copper, and iron, which can be used for guns.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronzewing": {
+      "word": "BRONZEWING",
+      "definitions": [
+        {
+          "text": "An Australian pigeon of the genus Phaps, of several species; -- so called from its bronze plumage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronzine": {
+      "word": "BRONZINE",
+      "definitions": [
+        {
+          "text": "A metal so prepared as to have the appearance of bronze.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Made of bronzine; resembling bronze; bronzelike.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronzing": {
+      "word": "BRONZING",
+      "definitions": [
+        {
+          "text": "The act or art of communicating to articles in metal, wood, clay, plaster, etc., the appearance of bronze by means of bronze powders, or imitative painting, or by chemical processes. Tomlinson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A material for bronzing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronzist": {
+      "word": "BRONZIST",
+      "definitions": [
+        {
+          "text": "One who makes, imitates, collects, or deals in, bronzes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronzite": {
+      "word": "BRONZITE",
+      "definitions": [
+        {
+          "text": "A variety of enstatite, often having a bronzelike luster. It is a silicate of magnesia and iron, of the pyroxene family.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bronzy": {
+      "word": "BRONZY",
+      "definitions": [
+        {
+          "text": "Like bronze.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brooch": {
+      "word": "BROOCH",
+      "definitions": [
+        {
+          "text": "An ornament, in various forms, with a tongue, pin, or loop for attaching it to a garment; now worn at the breast by women; a breastpin. Formerly worn by men on the hat. Honor 's a good brooch to wear in a man's hat. B. Jonson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Paint.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A painting all of one color, as a sepia painting, or an India painting.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To adorn as with a brooch. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "anklet",
+        "armlet",
+        "bangle",
+        "beads",
+        "bijou",
+        "bracelet",
+        "breastpin",
+        "broach",
+        "chain",
+        "chaplet",
+        "charm",
+        "chatelaine",
+        "circle",
+        "clasp",
+        "clip",
+        "coronet",
+        "crown",
+        "diadem",
+        "earring",
+        "fastening",
+        "fob",
+        "gem",
+        "jewel",
+        "locket",
+        "necklace",
+        "nose ring",
+        "pin",
+        "precious stone",
+        "rhinestone",
+        "ring",
+        "stickpin",
+        "stone",
+        "tiara",
+        "torque",
+        "wampum",
+        "wristband",
+        "wristlet"
+      ]
+    },
+    "brood": {
+      "word": "BROOD",
+      "definitions": [
+        {
+          "text": "The young birds hatched at one time; a hatch; as, a brood of chicken. As a hen doth gather her brood under her wings. Luke xiii. 34. A hen followed by a brood of ducks. Spectator.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The young from the same dam, whether produced at the same time or not; young children of the same mother, especially if nearly of the same age; offspring; progeny; as, a woman with a brood of children. The lion roars and gluts his tawny brood. Wordsworth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is bred or produced; breed; species. Flocks of the airy brood, (Cranes, geese or long-necked swans). Chapman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Heavy waste in tin and copper ores. To sit on brood, to ponder. [Poetic] Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sitting or inclined to sit on eggs.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Kept for breeding from; as, a brood mare; brood stock; having young; as, a brood sow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To sit on and cover eggs, as a fowl, for the purpose of warming them and hatching the young; or to sit over and cover young, as a hen her chickens, in order to warm and protect them; hence, to sit quietly, as if brooding. Birds of calm sir brooding on the charmed wave. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have the mind dwell continuously or moodily on a subject; to think long and anxiously; to be in a state of gloomy, serious thought; -- usually followed by over or on; as, to brood over misfortunes. Brooding on unprofitable gold. Dryden. Brooding over all these matters, the mother felt like one who has evoked a spirit. Hawthorne. When with downcast eyes we muse and brood. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sit over, cover, and cherish; as, a hen broods her chickens.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cherish with care. [R.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To think anxiously or moodily upon. You'll sit and brood your sorrows on a throne. Dryden.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "agonize",
+        "animal kingdom",
+        "be abstracted",
+        "be gravid",
+        "be knocked up",
+        "be pregnant",
+        "be with child",
+        "blood",
+        "breed",
+        "carry",
+        "carry young",
+        "chew the cud",
+        "children",
+        "clan",
+        "class",
+        "clock",
+        "clutch",
+        "consider",
+        "contemplate",
+        "cover",
+        "debate",
+        "deliberate",
+        "deme",
+        "descendants",
+        "descent",
+        "despair",
+        "despond",
+        "digest",
+        "family",
+        "farrow",
+        "folk",
+        "folks",
+        "fret",
+        "fruit",
+        "fry",
+        "gens",
+        "gestate",
+        "get",
+        "grandchildren",
+        "great-grandchildren",
+        "hatch",
+        "hearth",
+        "heirs",
+        "homefolks",
+        "hostages to fortune",
+        "house",
+        "household",
+        "incubate",
+        "inheritors",
+        "introspect",
+        "issue",
+        "kids",
+        "kind",
+        "line",
+        "lineage",
+        "litter",
+        "little ones",
+        "matriclan",
+        "meditate",
+        "menage",
+        "mope",
+        "muse",
+        "muse on",
+        "muse over",
+        "nation",
+        "nest",
+        "new generation",
+        "offspring",
+        "order",
+        "patriclan",
+        "people",
+        "perpend",
+        "phratry",
+        "phyle",
+        "pine",
+        "plant kingdom",
+        "play around with",
+        "play with",
+        "ponder",
+        "ponder over",
+        "posterity",
+        "pout",
+        "progeniture",
+        "progeny",
+        "race",
+        "reflect",
+        "rising generation",
+        "ruminate",
+        "ruminate over",
+        "seed",
+        "sept",
+        "set",
+        "sit",
+        "sons",
+        "spat",
+        "spawn",
+        "species",
+        "speculate",
+        "stem",
+        "stirps",
+        "stock",
+        "strain",
+        "study",
+        "succession",
+        "sulk",
+        "totem",
+        "toy with",
+        "treasures",
+        "tribe",
+        "weigh",
+        "worry",
+        "young",
+        "younglings",
+        "youngsters"
+      ]
+    },
+    "broody": {
+      "word": "BROODY",
+      "definitions": [
+        {
+          "text": "Inclined to brood. Ray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brook": {
+      "word": "BROOK",
+      "definitions": [
+        {
+          "text": "To use; to enjoy. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bear; to endure; to put up with; to tolerate; as, young men can not brook restraint. Spenser. Shall we, who could not brook one lord, Crouch to the wicked ten Macaulay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deserve; to earn. [Obs.] Sir J. Hawkins.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abide",
+        "abide with",
+        "accept",
+        "adolescent stream",
+        "allow",
+        "arroyo",
+        "be big",
+        "be content with",
+        "be easy with",
+        "bear",
+        "bear with",
+        "beck",
+        "bide",
+        "blink at",
+        "bourn",
+        "braided stream",
+        "branch",
+        "brave",
+        "brooklet",
+        "burn",
+        "channel",
+        "condone",
+        "connive at",
+        "countenance",
+        "creek",
+        "crick",
+        "disregard",
+        "endure",
+        "flowing stream",
+        "fluviation",
+        "fresh",
+        "freshet",
+        "gill",
+        "go",
+        "hang in",
+        "hang in there",
+        "hang tough",
+        "have",
+        "hear of",
+        "ignore",
+        "indulge",
+        "judge not",
+        "kill",
+        "lazy stream",
+        "lean over backwards",
+        "listen to reason",
+        "live with",
+        "lump",
+        "lump it",
+        "meandering stream",
+        "midchannel",
+        "midstream",
+        "millstream",
+        "moving road",
+        "navigable river",
+        "not write off",
+        "overlook",
+        "persevere",
+        "put up with",
+        "race",
+        "racing stream",
+        "rill",
+        "river",
+        "rivulet",
+        "run",
+        "rundle",
+        "runlet",
+        "runnel",
+        "see both sides",
+        "sike",
+        "spill stream",
+        "stand",
+        "stand for",
+        "stick",
+        "stomach",
+        "stream",
+        "stream action",
+        "streamlet",
+        "subterranean river",
+        "suffer",
+        "support",
+        "suspend judgment",
+        "sustain",
+        "swallow",
+        "take",
+        "take up with",
+        "tolerate",
+        "view with indulgence",
+        "wadi",
+        "watercourse",
+        "waterway",
+        "wink at"
+      ]
+    },
+    "brookite": {
+      "word": "BROOKITE",
+      "definitions": [
+        {
+          "text": "A mineral consisting of titanic oxide, and hence identical with rutile and octahedrite in composition, but crystallizing in the orthorhombic system.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brooklet": {
+      "word": "BROOKLET",
+      "definitions": [
+        {
+          "text": "A small brook.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brooklime": {
+      "word": "BROOKLIME",
+      "definitions": [
+        {
+          "text": "A plant (Veronica Beccabunga), with flowers, usually blue, in axillary racemes. The American species is V. Americana. [Formerly written broklempe or broklympe.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brookmint": {
+      "word": "BROOK MINT",
+      "definitions": [
+        {
+          "text": "See Water mint.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brookside": {
+      "word": "BROOKSIDE",
+      "definitions": [
+        {
+          "text": "The bank of a brook.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brookweed": {
+      "word": "BROOKWEED",
+      "definitions": [
+        {
+          "text": "A small white-flowered herb (Samolus Valerandi) found usually in wet places; water pimpernel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broom": {
+      "word": "BROOM",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plant having twigs suitable for making brooms to sweep with when bound together; esp., the Cytisus scoparius of Western Europe, which is a low shrub with long, straight, green, angular branches, mintue leaves, and large yellow flowers. No gypsy cowered o'er fires of furze and broom. Wordsworth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An implement for sweeping floors, etc., commonly made of the panicles or tops of broom corn, bound together or attached to a long wooden handle; -- so called because originally made of the twigs of the broom. Butcher's broom, a plant (Ruscus aculeatus) of the Smilax family, used by butchers for brooms to sweep their blocks; -- called also knee holly. See Cladophyll. dyeing yellow; dyer's weed; dyer's rocket.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Bream.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "autoclave",
+        "brush",
+        "carpet sweeper",
+        "comb",
+        "currycomb",
+        "dishcloth",
+        "dishwasher",
+        "doormat",
+        "duster",
+        "dustpan",
+        "facecloth",
+        "hackle",
+        "hairbrush",
+        "handkerchief",
+        "holystone",
+        "hose",
+        "mop",
+        "napkin",
+        "pumice stone",
+        "rake",
+        "scraper",
+        "scrub brush",
+        "scrubber",
+        "serviette",
+        "sponge",
+        "sudarium",
+        "swab",
+        "toothbrush",
+        "toothpick",
+        "towel",
+        "vacuum cleaner",
+        "washboard",
+        "washer",
+        "washing machine",
+        "whisk",
+        "wisp",
+        "wringer"
+      ]
+    },
+    "broomcorn": {
+      "word": "BROOM CORN",
+      "definitions": [
+        {
+          "text": "A variety of Sorghum vulgare, having a joined stem, like maize, rising to the height of eight or ten feet, and bearing its seeds on a panicle with long branches, of which brooms are made.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "broomrape": {
+      "word": "BROOM RAPE",
+      "definitions": [
+        {
+          "text": "A genus (Orobanche) of parasitic plants of Europe and Asia. They are destitute of chlorophyll, have scales instead of leaves, and spiked flowers, and grow attached to the roots of other plants, as furze, clover, flax, wild carrot, etc. The name is sometimes applied to other plants related to this genus, as Aphyllon uniflorumand A. Ludovicianum.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "broomstaff": {
+      "word": "BROOMSTAFF",
+      "definitions": [
+        {
+          "text": "A broomstick. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broomstick": {
+      "word": "BROOMSTICK",
+      "definitions": [
+        {
+          "text": "A stick used as a handle of a broom.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broomy": {
+      "word": "BROOMY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to broom; overgrowing with broom; resembling broom or a broom. If land grow mossy or broomy. Mortimer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brose": {
+      "word": "BROSE",
+      "definitions": [
+        {
+          "text": "Pottage made by pouring some boiling liquid on meal (esp. oatmeal), and stirring it. It is called beef brose, water brose, etc., according to the name of the liquid (beef broth, hot water, etc.) used. [Scot.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brotel": {
+      "word": "BROTEL",
+      "definitions": [
+        {
+          "text": "Brittle. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brotelness": {
+      "word": "BROTELNESS",
+      "definitions": [
+        {
+          "text": "Brittleness. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broth": {
+      "word": "BROTH",
+      "definitions": [
+        {
+          "text": "Liquid in which flesh (and sometimes other substances, as barley or rice) has been boiled; thin or simple soup. I am sure by your unprejudiced discourses that you love broth better than soup. Addison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bisque",
+        "borscht",
+        "bouillabaisse",
+        "bouillon",
+        "burgoo",
+        "chicken soup",
+        "chowder",
+        "clam chowder",
+        "clear soup",
+        "consomme",
+        "decoction",
+        "egg drop soup",
+        "fish soup",
+        "gazpacho",
+        "gravy soup",
+        "gumbo",
+        "julienne",
+        "matzo ball soup",
+        "minestrone",
+        "misoshiru soup",
+        "mock turtle soup",
+        "mulligatawny",
+        "oxtail soup",
+        "pot-au-feu",
+        "potage",
+        "potage au tomate",
+        "potato soup",
+        "pottage",
+        "puree",
+        "soup",
+        "stock",
+        "thick soup",
+        "thin soup",
+        "tomato soup",
+        "turtle soup",
+        "vegetable soup",
+        "vichyssoise",
+        "won ton soup"
+      ]
+    },
+    "brothel": {
+      "word": "BROTHEL",
+      "definitions": [
+        {
+          "text": "A house of lewdness or ill fame; a house frequented by prostitutes; a bawdyhouse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Babylon",
+        "Gomorrah",
+        "Sodom",
+        "bagnio",
+        "bawdy house",
+        "bawdyhouse",
+        "bordello",
+        "cathouse",
+        "clip joint",
+        "crib",
+        "den",
+        "den of iniquity",
+        "den of thieves",
+        "den of vice",
+        "disorderly house",
+        "dive",
+        "dump",
+        "fancy house",
+        "fleshpots",
+        "gyp joint",
+        "harem",
+        "hellhole",
+        "hole",
+        "house of assignation",
+        "house of joy",
+        "house of prostitution",
+        "joint",
+        "lair",
+        "panel den",
+        "panel house",
+        "red-light district",
+        "seraglio",
+        "sink",
+        "sink of corruption",
+        "sink of iniquity",
+        "sporting house",
+        "stew",
+        "stews",
+        "tenderloin",
+        "whorehouse"
+      ]
+    },
+    "brotheler": {
+      "word": "BROTHELER",
+      "definitions": [
+        {
+          "text": "One who frequents brothels.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brothelry": {
+      "word": "BROTHELRY",
+      "definitions": [
+        {
+          "text": "Lewdness; obscenity; a brothel. B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brother": {
+      "word": "BROTHER",
+      "definitions": [
+        {
+          "text": "A male person who has the same father and mother with another person, or who has one of them only. In the latter case he is more definitely called a half brother, or brother of the half blood. Two of us in the churchyard lie, My sister and my brother. Wordsworth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One related or closely united to another by some common tie or interest, as of rank, profession, membership in a society, toil, suffering, etc.; -- used among judges, clergymen, monks, physicians, lawers, professors of religion, etc. \"A brother of your order.\" Shak. We few, we happy few, we band of brothers, For he to-day that sheds his blood with me Shall be my brother. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who, or that which, resembles another in distinctive qualities or traits of character. He also that is slothful in his work is brother to him that is a great waster. Prov. xviii. 9. That April morn Of this the very brother. Wordsworth. more remote than a son of the same parents, as in the case of Abraham and Lot, Jacob and Laban. In a more general sense, brother or brethren is used for fellow-man or fellow-men. For of whom such massacre Make they but of their brethren, men of men Milton. Brother Jonathan, a humorous designation for the people of the United States collectively. The phrase is said to have originated from Washington's referring to the patriotic Jonathan Trumbull, governor of Connecticut, as \"Brother Jonathan.\" -- Blood brother. See under Blood.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make a brother of; to call or treat as a brother; to admit to a brotherhood. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Greek",
+        "abbacomes",
+        "abbot",
+        "acquaintance",
+        "adjunct",
+        "advocate",
+        "affiliate",
+        "ally",
+        "alter ego",
+        "analogon",
+        "analogue",
+        "ascetic",
+        "associate",
+        "aunt",
+        "auntie",
+        "backer",
+        "beadsman",
+        "bedfellow",
+        "belonger",
+        "best friend",
+        "blood brother",
+        "bosom friend",
+        "brethren",
+        "brother-in-arms",
+        "bub",
+        "bubba",
+        "bud",
+        "buddy",
+        "caloyer",
+        "card-carrier",
+        "card-carrying member",
+        "cardholder",
+        "casual acquaintance",
+        "catechumen",
+        "celibate",
+        "cenobite",
+        "charter member",
+        "chum",
+        "church member",
+        "churchman",
+        "churchwoman",
+        "close acquaintance",
+        "close copy",
+        "close friend",
+        "close match",
+        "clubber",
+        "clubman",
+        "clubwoman",
+        "coadjutor",
+        "cognate",
+        "cohort",
+        "colleague",
+        "committeeman",
+        "communicant",
+        "companion",
+        "compatriot",
+        "compeer",
+        "complement",
+        "comrade",
+        "confederate",
+        "confidant",
+        "confidante",
+        "confrere",
+        "congenator",
+        "congener",
+        "consociate",
+        "consort",
+        "conventioneer",
+        "conventioner",
+        "conventionist",
+        "conventual",
+        "conventual prior",
+        "coordinate",
+        "correlate",
+        "correlative",
+        "correspondent",
+        "counterpart",
+        "country cousin",
+        "cousin",
+        "cousin once removed",
+        "cousin twice removed",
+        "crony",
+        "daughter",
+        "dues-paying member",
+        "enlistee",
+        "enrollee",
+        "equivalent",
+        "familiar",
+        "father",
+        "favorer",
+        "fellow",
+        "fellow creature",
+        "fellow member",
+        "fellowman",
+        "first cousin",
+        "foster brother",
+        "frater",
+        "fraternity man",
+        "friar",
+        "friend",
+        "grand prior",
+        "grandnephew",
+        "grandniece",
+        "granduncle",
+        "great-aunt",
+        "great-uncle",
+        "guildsman",
+        "half brother",
+        "hermit",
+        "hieromonach",
+        "honorary member",
+        "image",
+        "initiate",
+        "inseparable friend",
+        "insider",
+        "intimate",
+        "joiner",
+        "kid brother",
+        "kin",
+        "kindred spirit",
+        "kinsman",
+        "laic",
+        "lay abbot",
+        "lay brother",
+        "lay sister",
+        "layman",
+        "laywoman",
+        "life member",
+        "like",
+        "likeness",
+        "lover",
+        "mate",
+        "member",
+        "mendicant",
+        "monastic",
+        "monk",
+        "mother",
+        "near duplicate",
+        "neighbor",
+        "nephew",
+        "niece",
+        "nuncle",
+        "nunks",
+        "nunky",
+        "obverse",
+        "one of us",
+        "other self",
+        "pal",
+        "palmer",
+        "parallel",
+        "parishioner",
+        "partisan",
+        "pendant",
+        "pickup",
+        "picture",
+        "pilgrim",
+        "pillar saint",
+        "pillarist",
+        "pledge",
+        "prior",
+        "reciprocal",
+        "relation",
+        "relative",
+        "religieux",
+        "religious",
+        "repository",
+        "second cousin",
+        "second self",
+        "secular",
+        "sibling",
+        "similitude",
+        "simulacrum",
+        "sis",
+        "sissy",
+        "sister",
+        "sister-german",
+        "sistern",
+        "socius",
+        "son",
+        "sorority girl",
+        "sorority woman",
+        "soul mate",
+        "stepbrother",
+        "stepsister",
+        "stylite",
+        "such",
+        "suchlike",
+        "supporter",
+        "sympathizer",
+        "tally",
+        "the like of",
+        "the likes of",
+        "twin",
+        "unc",
+        "uncle",
+        "uncs",
+        "uterine brother",
+        "well-wisher"
+      ]
+    },
+    "brothergerman": {
+      "word": "BROTHER GERMAN",
+      "definitions": [
+        {
+          "text": "A brother by both the father's and mother's side, in contradistinction to a uterine brother, one by the mother only. Bouvier.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brotherhood": {
+      "word": "BROTHERHOOD",
+      "definitions": [
+        {
+          "text": "The state of being brothers or a brother.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An association for any purpose, as a society of monks; a fraternity.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The whole body of persons engaged in the same business, -- especially those of the same profession; as, the legal or medical brotherhood.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Persons, and, poetically, things, of a like kind. A brotherhood of venerable trees. Wordsworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "affectionateness",
+        "affiliation",
+        "agnation",
+        "alliance",
+        "ancestry",
+        "association",
+        "benignancy",
+        "benignity",
+        "blood",
+        "blood relationship",
+        "boon companionship",
+        "brotherliness",
+        "brothership",
+        "camaraderie",
+        "chumship",
+        "circle",
+        "clique",
+        "club",
+        "cognation",
+        "colleagueship",
+        "common ancestry",
+        "common descent",
+        "community",
+        "community of interest",
+        "companionship",
+        "compassion",
+        "comradeship",
+        "confraternity",
+        "confrerie",
+        "connection",
+        "consanguinity",
+        "consortship",
+        "country club",
+        "cousinhood",
+        "cousinship",
+        "enation",
+        "esprit de corps",
+        "fatherhood",
+        "feeling of kinship",
+        "fellow feeling",
+        "fellowship",
+        "filiation",
+        "fraternal feeling",
+        "fraternal order",
+        "fraternalism",
+        "fraternity",
+        "freemasonry",
+        "friendship",
+        "goodness",
+        "goodness of heart",
+        "graciousness",
+        "guild",
+        "heart of gold",
+        "humaneness",
+        "humanity",
+        "kindheartedness",
+        "kindliness",
+        "kindly disposition",
+        "kindness",
+        "kindred",
+        "kinship",
+        "league",
+        "loving kindness",
+        "maternity",
+        "matrilineage",
+        "matriliny",
+        "matrisib",
+        "matrocliny",
+        "motherhood",
+        "niceness",
+        "order",
+        "organization",
+        "paternity",
+        "patrilineage",
+        "patriliny",
+        "patrisib",
+        "patrocliny",
+        "propinquity",
+        "relation",
+        "relationship",
+        "secret society",
+        "set",
+        "sibship",
+        "sisterhood",
+        "sisterliness",
+        "sistership",
+        "society",
+        "sodality",
+        "softheartedness",
+        "sorority",
+        "soul of kindness",
+        "sympathy",
+        "tenderheartedness",
+        "ties of blood",
+        "union",
+        "warmheartedness",
+        "warmth",
+        "warmth of heart"
+      ]
+    },
+    "brotherinlaw": {
+      "word": "BROTHER-IN-LAW",
+      "definitions": [
+        {
+          "text": "The brother of one's husband or wife; also, the husband of one's sister; sometimes, the husband of one's wife's sister.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brotherliness": {
+      "word": "BROTHERLINESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being brotherly.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brotherly": {
+      "word": "BROTHERLY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to brothers; such as is natural for brothers; becoming to brothers; kind; affectionate; as, brotherly love.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Like a brother; affectionately; kindly. \"I speak but brotherly of him.\" Shak.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "Christian",
+        "Christlike",
+        "Christly",
+        "affectionate",
+        "agreeable",
+        "amiable",
+        "amicable",
+        "benign",
+        "benignant",
+        "compassionate",
+        "congenial",
+        "cordial",
+        "decent",
+        "devoted",
+        "favorable",
+        "fraternal",
+        "friendlike",
+        "friendly",
+        "good",
+        "gracious",
+        "harmonious",
+        "human",
+        "humane",
+        "kind",
+        "kindhearted",
+        "kindly",
+        "kindly-disposed",
+        "loving",
+        "loyal",
+        "neighborlike",
+        "neighborly",
+        "nice",
+        "peaceable",
+        "pleasant",
+        "simpatico",
+        "sisterly",
+        "sociable",
+        "softhearted",
+        "sympathetic",
+        "sympathique",
+        "sympathizing",
+        "tender",
+        "tenderhearted",
+        "unhostile",
+        "warm",
+        "warmhearted",
+        "well-affected",
+        "well-disposed",
+        "well-intentioned",
+        "well-meaning",
+        "well-meant"
+      ]
+    },
+    "brouded": {
+      "word": "BROUDED",
+      "definitions": [
+        {
+          "text": "Braided; broidered. [Obs.] Alle his clothes brouded up and down. Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brougham": {
+      "word": "BROUGHAM",
+      "definitions": [
+        {
+          "text": "A light, close carriage, with seats inside for two or four, and the fore wheels so arranged as to turn short.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brow": {
+      "word": "BROW",
+      "definitions": [
+        {
+          "text": "The prominent ridge over the eye, with the hair that covers it, forming an arch above the orbit. And his arched brow, pulled o'er his eyes, With solemn proof proclaims him wise. Churchill.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The hair that covers the brow (ridge over the eyes); the eyebrow. 'T is not your inky brows, your brack silk hair. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The forehead; as, a feverish brow. Beads of sweat have stood upon thy brow. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The general air of the countenance. To whom thus Satan with contemptuous brow. Milton. He told them with a masterly brow. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The edge or projecting upper aprt of a steep place; as, the brow of a precipice; the brow of a hill. To bend the brow, To knit the brows, to frown; to scowl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To bound to limit; to be at, or form, the edge of. [R.] Tending my flocks hard by i' the hilly crofts That brow this bottom glade. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "acme",
+        "air",
+        "apex",
+        "apogee",
+        "bank",
+        "bean",
+        "bearing",
+        "board",
+        "border",
+        "bordure",
+        "brim",
+        "brink",
+        "cap",
+        "carriage",
+        "cast",
+        "cast of countenance",
+        "cilia",
+        "climax",
+        "cloud nine",
+        "coast",
+        "color",
+        "complexion",
+        "countenance",
+        "crest",
+        "crown",
+        "culmen",
+        "culmination",
+        "demeanor",
+        "dome",
+        "edge",
+        "extreme limit",
+        "extremity",
+        "face",
+        "facial appearance",
+        "favor",
+        "featheredge",
+        "feature",
+        "features",
+        "flange",
+        "forehead",
+        "frame",
+        "fringe",
+        "front",
+        "garb",
+        "guise",
+        "head",
+        "headpiece",
+        "heaven",
+        "heavens",
+        "height",
+        "hem",
+        "high noon",
+        "highest pitch",
+        "highest point",
+        "labellum",
+        "labium",
+        "labrum",
+        "ledge",
+        "limb",
+        "limbus",
+        "limit",
+        "lineaments",
+        "lines",
+        "lip",
+        "list",
+        "looks",
+        "marge",
+        "margin",
+        "maximum",
+        "meridian",
+        "mien",
+        "mountaintop",
+        "ne plus ultra",
+        "no place higher",
+        "noddle",
+        "noggin",
+        "noodle",
+        "noon",
+        "pate",
+        "peak",
+        "physiognomy",
+        "pinnacle",
+        "pitch",
+        "point",
+        "pole",
+        "poll",
+        "port",
+        "posture",
+        "presence",
+        "ragged edge",
+        "ridge",
+        "rim",
+        "sconce",
+        "selvage",
+        "seventh heaven",
+        "shore",
+        "side",
+        "sideline",
+        "skirt",
+        "sky",
+        "spire",
+        "stance",
+        "summit",
+        "tip",
+        "tip-top",
+        "top",
+        "traits",
+        "turn",
+        "upmost",
+        "upper extremity",
+        "uppermost",
+        "utmost",
+        "verge",
+        "vertex",
+        "very top",
+        "visage",
+        "zenith"
+      ]
+    },
+    "browbeat": {
+      "word": "BROWBEAT",
+      "definitions": [
+        {
+          "text": "To depress or bear down with haughty, stern looks, or with arrogant speech and dogmatic assertions; to abash or disconcert by impudent or abusive words or looks; to bully; as, to browbeat witnesses. My grandfather was not a man to be browbeaten. W. Irving.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "badger",
+        "beat down",
+        "bludgeon",
+        "bluster",
+        "bluster out of",
+        "bounce",
+        "break",
+        "bulldoze",
+        "bully",
+        "bullyrag",
+        "castrate",
+        "clamp down on",
+        "coerce",
+        "compel",
+        "cow",
+        "daunt",
+        "demoralize",
+        "despotize",
+        "discourage",
+        "dominate",
+        "domineer",
+        "domineer over",
+        "dragoon",
+        "enslave",
+        "frighten",
+        "grind",
+        "grind down",
+        "harass",
+        "hassle",
+        "hector",
+        "henpeck",
+        "huff",
+        "intimidate",
+        "keep down",
+        "keep under",
+        "lord it over",
+        "nag",
+        "oppress",
+        "overawe",
+        "overbear",
+        "overmaster",
+        "override",
+        "press heavy on",
+        "repress",
+        "ride over",
+        "ride roughshod over",
+        "subjugate",
+        "suppress",
+        "systematically terrorize",
+        "terrorize",
+        "threaten",
+        "trample down",
+        "trample upon",
+        "tread down",
+        "tread upon",
+        "tyrannize",
+        "tyrannize over",
+        "unman",
+        "walk all over",
+        "walk over",
+        "weigh heavy on"
+      ]
+    },
+    "browbeating": {
+      "word": "BROWBEATING",
+      "definitions": [
+        {
+          "text": "The act of bearing down, abashing, or disconcerting, with stern looks, suspercilious manners, or confident assertions. The imperious browbeating and scorn of great men. L'Estrange.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browbound": {
+      "word": "BROWBOUND",
+      "definitions": [
+        {
+          "text": "Crowned; having the head encircled as with a diadem. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browdyng": {
+      "word": "BROWDYNG",
+      "definitions": [
+        {
+          "text": "Embroidery. [Obs.] Of goldsmithrye, of browdying, and of steel. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browed": {
+      "word": "BROWED",
+      "definitions": [
+        {
+          "text": "Having (such) a brow; -- used in composition; as, dark-browed, stern-browed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browless": {
+      "word": "BROWLESS",
+      "definitions": [
+        {
+          "text": "Without shame. L. Addison.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brown": {
+      "word": "BROWN",
+      "definitions": [
+        {
+          "text": "Of a dark color, of various shades between black and red or yellow. Cheeks brown as the oak leaves. Longfellow. Brown Bess, the old regulation flintlock smoothbore musket, with bronzed barrel, formerly used in the British army. wheat flour, sometimes called in the United States Graham bread. \"He would mouth with a beggar though she smelt brown bread and garlic.\" Shak. (b) Dark colored bread made of rye meal and Indian meal, or of wheat and rye or Indian; rye and Indian bread. [U.S.] -- Brown coal, wood coal. See Lignite. limonite, which has a brown streak. See Limonite. of unbleached materials. identical with ankerite. Irving.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A dark color inclining to red or yellow, resulting from the mixture of red and black, or of red, black, and yellow; a tawny, dusky hue.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make brown or dusky. A trembling twilight o'er welkin moves,Browns the dim void and darkens deep the groves. Barlow.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make brown by scorching slightly; as, to brown meat or flour.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To give a bright brown color to, as to gun barrels, by forming a thin coat of oxide on their surface. Ure.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become brown.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Argos brown",
+        "Bordeaux",
+        "Cologne brown",
+        "Mexican red",
+        "Roman umber",
+        "Saint Benoit",
+        "Turkey umber",
+        "acorn",
+        "alesan",
+        "alizarin brown",
+        "anthracene brown",
+        "anthragallol",
+        "antique brown",
+        "antique gold",
+        "autumn leaf",
+        "bake",
+        "barbecue",
+        "baste",
+        "becloud",
+        "bedarken",
+        "bedim",
+        "begloom",
+        "beige",
+        "biscuit",
+        "bister",
+        "black",
+        "black out",
+        "blacken",
+        "blanch",
+        "block the light",
+        "blot out",
+        "boil",
+        "bone brown",
+        "bracken",
+        "braise",
+        "brew",
+        "broil",
+        "bronze",
+        "brown race",
+        "browning",
+        "brownish",
+        "brownish-yellow",
+        "brownness",
+        "brunet",
+        "bunny brown",
+        "burn",
+        "burnt almond",
+        "cafe noir",
+        "cast a shadow",
+        "chocolate",
+        "cinnamon",
+        "cloud",
+        "cloud over",
+        "cocoa",
+        "cocoa-brown",
+        "coconut",
+        "coddle",
+        "coffee",
+        "coffee-brown",
+        "cook",
+        "curry",
+        "darken",
+        "darken over",
+        "dead leaf",
+        "devil",
+        "dim",
+        "dim out",
+        "do",
+        "do to perfection",
+        "doeskin",
+        "drab",
+        "dun",
+        "dun-brown",
+        "dun-drab",
+        "eclipse",
+        "ecru",
+        "embrown",
+        "encloud",
+        "encompass with shadow",
+        "fawn",
+        "fawn-colored",
+        "fire",
+        "foliage brown",
+        "fox",
+        "fricassee",
+        "frizz",
+        "frizzle",
+        "fry",
+        "fuscous",
+        "gloom",
+        "grege",
+        "griddle",
+        "grill",
+        "hazel",
+        "heat",
+        "infuscate",
+        "infuscation",
+        "khaki",
+        "leather",
+        "lurid",
+        "maple sugar",
+        "mummy",
+        "murk",
+        "negro",
+        "nut-brown",
+        "obfuscate",
+        "obnubilate",
+        "obscure",
+        "obumbrate",
+        "occult",
+        "occultate",
+        "olive brown",
+        "olive-brown",
+        "olive-drab",
+        "oriole",
+        "otter brown",
+        "oven-bake",
+        "overcast",
+        "overcloud",
+        "overshadow",
+        "pan",
+        "pan-broil",
+        "parboil",
+        "partridge",
+        "philamot",
+        "poach",
+        "prepare",
+        "prepare food",
+        "raw sienna",
+        "raw umber",
+        "resorcin dark brown",
+        "roast",
+        "rust",
+        "saute",
+        "scallop",
+        "seal",
+        "seal-brown",
+        "sear",
+        "sepia",
+        "shade",
+        "shadow",
+        "shirr",
+        "simmer",
+        "snuff-colored",
+        "somber",
+        "sorrel",
+        "steam",
+        "stew",
+        "stir-fry",
+        "sunburn",
+        "suntan",
+        "tan",
+        "taupe",
+        "tawny",
+        "tenne",
+        "terra sienna",
+        "terra umbra",
+        "toast",
+        "toast-brown",
+        "topaz",
+        "umber",
+        "umber-colored",
+        "walnut",
+        "walnut-brown",
+        "yellowish-brown"
+      ]
+    },
+    "brownback": {
+      "word": "BROWNBACK",
+      "definitions": [
+        {
+          "text": "The dowitcher or red-breasted snipe. See Dowitcher.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownbill": {
+      "word": "BROWN BILL",
+      "definitions": [
+        {
+          "text": "A bill or halberd of the 16th and 17th centuries. See 4th Bill. Many time, but for a sallet, my brainpan had been cleft with a brown bill. Shak. kind of halberd, the cutting part hooked like a woodman's bill, from the back of which projected a spike, and another from the head. Grose.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownian": {
+      "word": "BROWNIAN",
+      "definitions": [
+        {
+          "text": "Pertaining to Dr. Robert Brown, who first demonstrated (about 1827) the commonness of the motion described below. Brownian movement, the peculiar, rapid, vibratory movement exhibited by the microscopic particles of substances when suspended in water or other fluids.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownie": {
+      "word": "BROWNIE",
+      "definitions": [
+        {
+          "text": "An imaginary good-natured spirit, who was supposed often to perform important services around the house by night, such as thrashing, churning, sweeping. [Scot.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Ariel",
+        "Befind",
+        "Corrigan",
+        "Finnbeara",
+        "Lilliputian",
+        "Mab",
+        "Oberon",
+        "Titania",
+        "Tom Thumb",
+        "apple-polisher",
+        "ass-licker",
+        "backscratcher",
+        "backslapper",
+        "banshee",
+        "biscuit",
+        "bootlick",
+        "bootlicker",
+        "brown-nose",
+        "clawback",
+        "cluricaune",
+        "cookie",
+        "courtier",
+        "creature",
+        "cringer",
+        "date bar",
+        "dupe",
+        "dwarf",
+        "elf",
+        "fairy",
+        "fairy queen",
+        "fawner",
+        "fay",
+        "flatterer",
+        "flunky",
+        "footlicker",
+        "fruit bar",
+        "ginger snap",
+        "gingerbread man",
+        "gnome",
+        "goblin",
+        "gremlin",
+        "groveler",
+        "handshaker",
+        "helot",
+        "hob",
+        "homunculus",
+        "imp",
+        "instrument",
+        "jackal",
+        "kobold",
+        "kowtower",
+        "lackey",
+        "ladyfinger",
+        "led captain",
+        "leprechaun",
+        "lickspit",
+        "lickspittle",
+        "macaroon",
+        "manikin",
+        "mealymouth",
+        "midge",
+        "midget",
+        "minion",
+        "ouphe",
+        "peewee",
+        "peon",
+        "peri",
+        "pip-squeak",
+        "pixie",
+        "pooka",
+        "puca",
+        "puppet",
+        "pwca",
+        "pygmy",
+        "runt",
+        "serf",
+        "shortbread",
+        "shrimp",
+        "slave",
+        "spaniel",
+        "sprite",
+        "stooge",
+        "suck",
+        "sugar cookie",
+        "sycophant",
+        "sylph",
+        "sylphid",
+        "timeserver",
+        "toad",
+        "toady",
+        "tool",
+        "truckler",
+        "tufthunter",
+        "wart",
+        "yes-man"
+      ]
+    },
+    "browning": {
+      "word": "BROWNING",
+      "definitions": [
+        {
+          "text": "The act or operation of giving a brown color, as to gun barrels, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Masonry)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A smooth coat of brown mortar, usually the second coat, and the preparation for the finishing coat of plaster.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownish": {
+      "word": "BROWNISH",
+      "definitions": [
+        {
+          "text": "Somewhat brown.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownism": {
+      "word": "BROWNISM",
+      "definitions": [
+        {
+          "text": "The views or teachings of Robert Brown of the Brownists. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The doctrines of the Brunonian system of medicine. See Brunonian.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownist": {
+      "word": "BROWNIST",
+      "definitions": [
+        {
+          "text": "A follower of Robert Brown, of England, in the 16th century, who taught that every church is complete and independent in itself when organized, and consists of members meeting in one place, having full power to elect and depose its officers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who advocates the Brunonian system of medicine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownness": {
+      "word": "BROWNNESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being brown. Now like I brown (O lovely brown thy hair); Only in brownness beauty dwelleth there. Drayton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownpolishfbrunirfrfbrunbrownfrohgbrcfmhg": {
+      "word": "brown, polish, F. brunir, fr. F. brun brown, fr. OHG. br; cf. MHG.",
+      "definitions": [
+        {
+          "text": "To cause to shine; to make smooth and bright; to polish; specifically, to polish by rubbing with something hard and smooth; as, to burnish brass or paper. The frame of burnished steel, that east a glare From far, and seemed to thaw the freezing air. Dryden. Now the village windows blaze, Burnished by the setting sun. Cunningham. Burnishing machine, a machine for smoothing and polishing by compression, as in making paper collars.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownrace": {
+      "word": "BROWN RACE",
+      "definitions": [
+        {
+          "text": "The Malay or Polynesian race; -- loosely so called.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownstone": {
+      "word": "BROWNSTONE",
+      "definitions": [
+        {
+          "text": "A dark variety of sandstone, much used for building purposes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownthrush": {
+      "word": "BROWN THRUSH",
+      "definitions": [
+        {
+          "text": "A common American singing bird (Harporhynchus rufus), allied to the mocking bird; -- also called brown thrasher.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brownwort": {
+      "word": "BROWNWORT",
+      "definitions": [
+        {
+          "text": "A species of figwort or Scrophularia (S. vernalis), and other species of the same genus, mostly perennials with inconspicuous coarse flowers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browny": {
+      "word": "BROWNY",
+      "definitions": [
+        {
+          "text": "Brown or, somewhat brown. \"Browny locks.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browpost": {
+      "word": "BROWPOST",
+      "definitions": [
+        {
+          "text": "A beam that goes across a building.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browse": {
+      "word": "BROWSE",
+      "definitions": [
+        {
+          "text": "To eat or nibble off, as the tender branches of trees, shrubs, etc.; -- said of cattle, sheep, deer, and some other animals. Yes, like the stag, when snow the plasture sheets, The barks of trees thou browsedst. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To feed on, as pasture; to pasture on; to graze. Fields . . . browsed by deep-uddered kine. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To feed on the tender branches or shoots of shrubs or trees, as do cattle, sheep, and deer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pasture; to feed; to nibble. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "batten upon",
+        "crop",
+        "dip into",
+        "fatten on",
+        "fatten upon",
+        "feast on",
+        "feast upon",
+        "feed on",
+        "flip through",
+        "glance at",
+        "glance over",
+        "glance through",
+        "go marketing",
+        "go over",
+        "go shopping",
+        "graze",
+        "live on",
+        "look over",
+        "look through",
+        "market",
+        "pasture on",
+        "peruse",
+        "prey on",
+        "run over",
+        "run through",
+        "scan",
+        "shop",
+        "skim",
+        "thumb over",
+        "thumb through",
+        "window-shop"
+      ]
+    },
+    "browser": {
+      "word": "BROWSER",
+      "definitions": [
+        {
+          "text": "An animal that browses.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browsewood": {
+      "word": "BROWSEWOOD",
+      "definitions": [
+        {
+          "text": "Srubs and bushes upon which animals browse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browsewoodprobfrohgburstgborstebristlecfalsoarmor": {
+      "word": "browsewood, prob. fr. OHG. burst, G. borste, bristle; cf. also Armor.",
+      "definitions": [
+        {
+          "text": "The tender branches or twigs of trees and shrubs, fit for the food of cattle and other animals; green food. Spenser. Sheep, goats, and oxen, and the nobler steed, On browse, and corn, and flowery meadows feed. Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browsing": {
+      "word": "BROWSING",
+      "definitions": [
+        {
+          "text": "Browse; also, a place abounding with shrubs where animals may browse. Browsings for the deer. Howell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "browspot": {
+      "word": "BROWSPOT",
+      "definitions": [
+        {
+          "text": "A rounded organ between the eyes of the frog; the interocular gland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

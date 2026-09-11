@@ -1,0 +1,593 @@
+{
+  "version": "v1",
+  "entries": {
+    "bob": {
+      "word": "BOB",
+      "definitions": [
+        {
+          "text": "To cause to move in a short, jerking manner; to move (a thing) with a bob. \"He bobbed his head.\" W. Irving.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To strike with a quick, light blow; to tap. If any man happened by long sitting to sleep . . . he was suddenly bobbed on the face by the servants. Elyot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cheat; to gain by fraud or cheating; to filch. Gold and jewels that I bobbed from him. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mock or delude; to cheat. To play her pranks, and bob the fool, The shrewish wife began. Turbervile.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cut short; as, to bob the hair, or a horse's tail.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have a short, jerking motion; to play to and fro, or up and down; to play loosely against anything. \"Bobbing and courtesying.\"",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Carling float",
+        "T square",
+        "abbreviate",
+        "abridge",
+        "abscind",
+        "abstract",
+        "accost",
+        "address",
+        "amputate",
+        "angle",
+        "annihilate",
+        "bait the hook",
+        "balsa",
+        "balsa raft",
+        "ban",
+        "bar",
+        "barber",
+        "bawbee",
+        "bend",
+        "bend the knee",
+        "bend the neck",
+        "bending the knee",
+        "bis",
+        "bob a curtsy",
+        "bob down",
+        "bobble",
+        "boil down",
+        "boom",
+        "bounce",
+        "bow",
+        "bow and scrape",
+        "bow down",
+        "bow the head",
+        "bowing and scraping",
+        "bump",
+        "buoy",
+        "burden",
+        "caper",
+        "capriole",
+        "capsulize",
+        "caracole",
+        "careen",
+        "cavort",
+        "chant",
+        "chatter",
+        "chorus",
+        "clam",
+        "clip",
+        "coggle",
+        "coif",
+        "coiffure",
+        "compress",
+        "condense",
+        "conk",
+        "contract",
+        "cork",
+        "crop",
+        "crouch",
+        "crown",
+        "cull",
+        "curtail",
+        "curtsy",
+        "curvet",
+        "cut",
+        "cut a dido",
+        "cut away",
+        "cut back",
+        "cut capers",
+        "cut down",
+        "cut off",
+        "cut off short",
+        "cut out",
+        "cut short",
+        "dangle",
+        "dap",
+        "dib",
+        "dibble",
+        "didder",
+        "dipping the colors",
+        "dither",
+        "ditto",
+        "dock",
+        "dollar",
+        "drive",
+        "duck",
+        "elide",
+        "eliminate",
+        "embrace",
+        "enucleate",
+        "epitomize",
+        "eradicate",
+        "except",
+        "excise",
+        "exclude",
+        "extinguish",
+        "extirpate",
+        "fall down before",
+        "falter",
+        "farthing",
+        "fish",
+        "fiver",
+        "flick",
+        "flip",
+        "flirt",
+        "float",
+        "florin",
+        "flounce",
+        "fluctuate",
+        "flutter",
+        "fly-fish",
+        "foreshorten",
+        "fourpence",
+        "fourpenny",
+        "frisk",
+        "gambado",
+        "gambol",
+        "genuflect",
+        "genuflection",
+        "gig",
+        "go fishing",
+        "greeting",
+        "grig",
+        "grimace",
+        "groat",
+        "guddle",
+        "guinea",
+        "hail",
+        "half crown",
+        "half dollar",
+        "halfpenny",
+        "hand-clasp",
+        "handshake",
+        "have an ague",
+        "hello",
+        "hitch",
+        "homage",
+        "how-do-you-do",
+        "hug",
+        "hustle",
+        "inclination",
+        "isolate",
+        "jack",
+        "jacklight",
+        "jactitate",
+        "jar",
+        "jerk",
+        "jig",
+        "jigget",
+        "jiggle",
+        "jog",
+        "joggle",
+        "jolt",
+        "jostle",
+        "jounce",
+        "jump",
+        "jump about",
+        "kiss",
+        "kneel",
+        "kneeling",
+        "knock",
+        "knock off",
+        "kowtow",
+        "lead",
+        "librate",
+        "life buoy",
+        "life preserver",
+        "life raft",
+        "lop",
+        "lurch",
+        "mag",
+        "make a leg",
+        "make a reverence",
+        "make obeisance",
+        "making a leg",
+        "meg",
+        "mite",
+        "monkey",
+        "mow",
+        "mutilate",
+        "net",
+        "new pence",
+        "nip",
+        "nod",
+        "np",
+        "nutate",
+        "obeisance",
+        "obsequiousness",
+        "oscillate",
+        "p",
+        "pare",
+        "peel",
+        "pence",
+        "pendulate",
+        "penny",
+        "pick out",
+        "pitch",
+        "pluck",
+        "plumb",
+        "plumb bob",
+        "plumb line",
+        "plumb rule",
+        "plummet",
+        "poll",
+        "pollard",
+        "pompadour",
+        "pontoon",
+        "pony",
+        "pound",
+        "prance",
+        "presenting arms",
+        "process",
+        "prostration",
+        "prune",
+        "quake",
+        "quaver",
+        "quid",
+        "quiver",
+        "raft",
+        "ramp",
+        "rap",
+        "reap",
+        "recap",
+        "recapitulate",
+        "reduce",
+        "reel",
+        "refrain",
+        "repeat",
+        "repetend",
+        "resonate",
+        "retrench",
+        "reverence",
+        "rictus",
+        "ritornello",
+        "rock",
+        "roll",
+        "romp",
+        "root out",
+        "rule out",
+        "salaam",
+        "salutation",
+        "salute",
+        "sandbag",
+        "scrape",
+        "seine",
+        "servility",
+        "set apart",
+        "set aside",
+        "set square",
+        "shake",
+        "shave",
+        "shear",
+        "shilling",
+        "shingle",
+        "shiver",
+        "shock",
+        "shorten",
+        "shrimp",
+        "shudder",
+        "sinker",
+        "sixpence",
+        "skip",
+        "smile",
+        "smile of recognition",
+        "snatch",
+        "snub",
+        "spin",
+        "square",
+        "squat",
+        "stamp out",
+        "standing at attention",
+        "start",
+        "still-fish",
+        "stoop",
+        "strike off",
+        "strip",
+        "strip off",
+        "stunt",
+        "submission",
+        "submissiveness",
+        "sudden pull",
+        "sum up",
+        "summarize",
+        "supination",
+        "surfboard",
+        "swag",
+        "sway",
+        "swing",
+        "synopsize",
+        "take in",
+        "take off",
+        "take out",
+        "telescope",
+        "tenner",
+        "threepence",
+        "threepenny bit",
+        "thrippence",
+        "tic",
+        "torch",
+        "toss",
+        "trawl",
+        "tremble",
+        "tremor",
+        "trim",
+        "trip",
+        "troll",
+        "truncate",
+        "try square",
+        "tunk",
+        "tuppence",
+        "tweak",
+        "twitch",
+        "twitter",
+        "twopence",
+        "undersong",
+        "vacillate",
+        "vibrate",
+        "wag",
+        "waggle",
+        "wave",
+        "waver",
+        "weight",
+        "whale",
+        "wipe out",
+        "wobble",
+        "wrench",
+        "yank",
+        "yerk"
+      ]
+    },
+    "bobac": {
+      "word": "BOBAC",
+      "definitions": [
+        {
+          "text": "The Poland marmot (Arctomys bobac).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobance": {
+      "word": "BOBANCE",
+      "definitions": [
+        {
+          "text": "A boasting. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobber": {
+      "word": "BOBBER",
+      "definitions": [
+        {
+          "text": "One who, or that which, bobs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobbery": {
+      "word": "BOBBERY",
+      "definitions": [
+        {
+          "text": "A squabble; a tumult; a noisy disturbance; as, to raise a bobbery. [Low] Halliwell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobbin": {
+      "word": "BOBBIN",
+      "definitions": [
+        {
+          "text": "A small pin, or cylinder, formerly of bone, now most commonly of wood, used in the making of pillow lace. Each thread is wound on a separate bobbin which hangs down holding the thread at a slight tension.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spool or reel of various material and construction, with a head at one or both ends, and sometimes with a hole bored through its length by which it may be placed on a spindle or pivot. It is used to hold yarn or thread, as in spinning or warping machines, looms, sewing machines, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The little rounded piece of wood, at the end of a latch string, which is pulled to raise the latch.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Haberdashery)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fine cord or narrow braid.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Elec.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cylindrical or spool-shaped coil or insulated wire, usually containing a core of soft iron which becomes magnetic when the wire is traversed by an electrical current. Bobbin and fly frame, a roving machine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobbinet": {
+      "word": "BOBBINET",
+      "definitions": [
+        {
+          "text": "A kind of cotton lace which is wrought by machines, and not by hand. [Sometimes written bobbin net.]The English machine-made net is now confined to point net, warp net, and bobbin net, so called from the peculiar construction of the machines by which they are produced. Tomlinsom.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobbinwork": {
+      "word": "BOBBINWORK",
+      "definitions": [
+        {
+          "text": "Work woven with bobbins.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobbish": {
+      "word": "BOBBISH",
+      "definitions": [
+        {
+          "text": "Hearty; in good spirits. [Low, Eng.] Dickens.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobby": {
+      "word": "BOBBY",
+      "definitions": [
+        {
+          "text": "A nickname for a policeman; -- from Sir Robert Peel, who remodeled the police force. See Peeler. [Slang, Eng.] Dickens.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Dogberry",
+        "John Law",
+        "bluebottle",
+        "bluecoat",
+        "bull",
+        "constable",
+        "cop",
+        "copper",
+        "dick",
+        "flatfoot",
+        "flattie",
+        "gendarme",
+        "gumshoe",
+        "officer",
+        "paddy",
+        "peeler",
+        "pig",
+        "shamus",
+        "the cops",
+        "the fuzz",
+        "the law"
+      ]
+    },
+    "bobcherry": {
+      "word": "BOB-CHERRY",
+      "definitions": [
+        {
+          "text": "A play among children, in which a cherry, hung so as to bob against the mouth, is to be caught with the teeth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobfly": {
+      "word": "BOBFLY",
+      "definitions": [
+        {
+          "text": "The fly at the end of the leader; an end fly.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobolink": {
+      "word": "BOBOLINK",
+      "definitions": [
+        {
+          "text": "An American singing bird (Dolichonyx oryzivorus). The male is black and white; the female is brown; -- called also, ricebird, reedbird, and Boblincoln. The happiest bird of our spring is the bobolink. W. Irving.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobsledbobsleigh": {
+      "word": "BOBSLED; BOBSLEIGH",
+      "definitions": [
+        {
+          "text": "A short sled, mostly used as one of a pair connected by a reach or coupling; also, the compound sled so formed. [U. S.] The long wagon body set on bobsleds. W. D. Howells.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobstay": {
+      "word": "BOBSTAY",
+      "definitions": [
+        {
+          "text": "A rope or chain to confine the bowsprit of a ship downward to the stem or cutwater; -- usually in the pl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobtail": {
+      "word": "BOBTAIL",
+      "definitions": [
+        {
+          "text": "An animal (as a horse or dog) with a short tail. Rag, tag, and bobtail, the rabble.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Bobtailed. \"Bobtail cur.\" Marryat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobtailed": {
+      "word": "BOBTAILED",
+      "definitions": [
+        {
+          "text": "Having the tail cut short, or naturally short; curtailed; as, a bobtailed horse or dog; a bobtailed coat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobwhite": {
+      "word": "BOBWHITE",
+      "definitions": [
+        {
+          "text": "The common qua(Colinus, or Ortyx, Virginianus); -- so called from its note.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bobwig": {
+      "word": "BOB WIG",
+      "definitions": [
+        {
+          "text": "A short wig with bobs or short curls; -- called also bobtail wig. Spectator.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

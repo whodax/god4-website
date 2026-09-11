@@ -1,0 +1,580 @@
+{
+  "version": "v1",
+  "entries": {
+    "bub": {
+      "word": "BUB",
+      "definitions": [
+        {
+          "text": "Strong malt liquor. [Cant] Prior.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A young brother; a little boy; -- a familiar term of address of a small boy.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To throw out in bubbles; to bubble. [Obs.] Sackville.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "aunt",
+        "auntie",
+        "blood brother",
+        "boy",
+        "brethren",
+        "brother",
+        "bubba",
+        "buck",
+        "bud",
+        "buddy",
+        "colt",
+        "country cousin",
+        "cousin",
+        "cousin once removed",
+        "cousin twice removed",
+        "cub",
+        "daughter",
+        "father",
+        "fellow",
+        "first cousin",
+        "fledgling",
+        "foster brother",
+        "frater",
+        "grandnephew",
+        "grandniece",
+        "granduncle",
+        "great-aunt",
+        "great-uncle",
+        "half brother",
+        "hobbledehoy",
+        "kid brother",
+        "lad",
+        "laddie",
+        "manchild",
+        "master",
+        "mother",
+        "muchacho",
+        "nephew",
+        "niece",
+        "nuncle",
+        "nunks",
+        "nunky",
+        "pup",
+        "puppy",
+        "schoolboy",
+        "second cousin",
+        "sis",
+        "sissy",
+        "sister",
+        "sister-german",
+        "sistern",
+        "son",
+        "sonny",
+        "sonny boy",
+        "stepbrother",
+        "stepsister",
+        "unc",
+        "uncle",
+        "uncs",
+        "uterine brother",
+        "whelp",
+        "young man",
+        "youth"
+      ]
+    },
+    "bubale": {
+      "word": "BUBALE",
+      "definitions": [
+        {
+          "text": "A large antelope (Alcelaphus bubalis) of Egypt and the Desert of Sahara, supposed by some to be the fallow deer of the Bible.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubaline": {
+      "word": "BUBALINE",
+      "definitions": [
+        {
+          "text": "Resembling a buffalo. Bubaline antelope (Zoöl.), the bubale.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubble": {
+      "word": "BUBBLE",
+      "definitions": [
+        {
+          "text": "A thin film of liquid inflated with air or gas; as, a soap bubble; bubbles on the surface of a river. Beads of sweat have stood upon thy brow, Like bubbles in a late disturbed stream. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small quantity of air or gas within a liquid body; as, bubbles rising in champagne or aërated waters.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A globule of air, or globular vacuum, in a transparent solid; as, bubbles in window glass, or in a lens.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small, hollow, floating bead or globe, formerly used for testing the strength of spirits.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The globule of air in the spirit tube of a level.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything that wants firmness or solidity; that which is more specious than real; a false show; a cheat or fraud; a delusive scheme; an empty project; a dishonest speculation; as, the South Sea bubble. Then a soldier . . . Seeking the bubble reputation Even in the cannon's mouth. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A person deceived by an empty project; a gull. [Obs.] \"Ganny's a cheat, and I'm a bubble.\" Prior.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To rise in bubbles, as liquids when boiling or agitated; to contain bubbles. The milk that bubbled in the pail. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To run with a gurdling noise, as if forming bubbles; as, a bubbling stream. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sing with a gurgling or warbling sound. At mine ear Bubbled the nightingale and heeded not. Tennyson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "air",
+        "air pocket",
+        "airy hope",
+        "airy nothing",
+        "apparition",
+        "autism",
+        "babble",
+        "ball",
+        "balloon",
+        "be enthusiastic",
+        "bilge",
+        "bladder",
+        "blain",
+        "bleb",
+        "blister",
+        "blob",
+        "blubber",
+        "boil",
+        "boil over",
+        "boll",
+        "bolus",
+        "boss",
+        "bow",
+        "brainchild",
+        "bubble over",
+        "bubble up",
+        "bubbles",
+        "bulb",
+        "bulbil",
+        "bulblet",
+        "bulge",
+        "bulla",
+        "bump",
+        "bunch",
+        "burble",
+        "burl",
+        "button",
+        "cahot",
+        "carbonation",
+        "carry on over",
+        "chaff",
+        "chimera",
+        "china",
+        "chine",
+        "chip",
+        "churn",
+        "clump",
+        "cobweb",
+        "condyle",
+        "convex",
+        "cork",
+        "daydream",
+        "deception",
+        "delirium",
+        "deluded belief",
+        "delusion",
+        "dereism",
+        "dowel",
+        "down",
+        "dream",
+        "dream vision",
+        "dreamland",
+        "dreamworld",
+        "droplet",
+        "dust",
+        "ear",
+        "effervesce",
+        "effervescence",
+        "eggshell",
+        "eidolon",
+        "ellipsoid",
+        "enthuse",
+        "ephemera",
+        "ephemeral",
+        "ephemerid",
+        "ephemerides",
+        "ephemeris",
+        "ether",
+        "fairy",
+        "false belief",
+        "fancy",
+        "fantasque",
+        "fantasy",
+        "feather",
+        "ferment",
+        "fiction",
+        "figment",
+        "fizz",
+        "fizzle",
+        "flange",
+        "flap",
+        "flue",
+        "fluff",
+        "foam",
+        "froth",
+        "fuzz",
+        "gall",
+        "geoid",
+        "glass",
+        "glass house",
+        "globe",
+        "globelet",
+        "globoid",
+        "globule",
+        "glomerulus",
+        "gnarl",
+        "go on over",
+        "gob",
+        "gobbet",
+        "golden dream",
+        "gossamer",
+        "guggle",
+        "gurgle",
+        "gush",
+        "gush over",
+        "hallucination",
+        "handle",
+        "hill",
+        "hiss",
+        "house of cards",
+        "hump",
+        "hunch",
+        "ice",
+        "idle fancy",
+        "ignis fatuus",
+        "illusion",
+        "imagery",
+        "imagination",
+        "imagining",
+        "insubstantial image",
+        "invention",
+        "jog",
+        "joggle",
+        "knob",
+        "knot",
+        "knur",
+        "knurl",
+        "lap",
+        "lather",
+        "lip",
+        "loop",
+        "lump",
+        "maggot",
+        "make much of",
+        "make-believe",
+        "matchwood",
+        "mayfly",
+        "misbelief",
+        "misconception",
+        "mist",
+        "moil",
+        "mole",
+        "mote",
+        "mountain",
+        "myth",
+        "nevus",
+        "nub",
+        "nubbin",
+        "nubble",
+        "oblate spheroid",
+        "old paper",
+        "orb",
+        "orbit",
+        "orblet",
+        "papilloma",
+        "parchment",
+        "peg",
+        "pellet",
+        "phantasm",
+        "phantom",
+        "piecrust",
+        "pipe",
+        "pipe dream",
+        "plash",
+        "plop",
+        "prolate spheroid",
+        "purl",
+        "quixotic ideal",
+        "rainbow",
+        "rave",
+        "rave about",
+        "rhapsodize",
+        "rib",
+        "ridge",
+        "ring",
+        "ripple",
+        "romance",
+        "rondure",
+        "seethe",
+        "self-deceit",
+        "self-deception",
+        "self-delusion",
+        "shadow",
+        "shoulder",
+        "sick fancy",
+        "simmer",
+        "slosh",
+        "smoke",
+        "smolder",
+        "snows of yesteryear",
+        "sparkle",
+        "sphere",
+        "spheroid",
+        "spherule",
+        "spine",
+        "spirit",
+        "splash",
+        "sponge",
+        "spume",
+        "stir",
+        "straw",
+        "stud",
+        "style",
+        "suds",
+        "swash",
+        "swish",
+        "tab",
+        "take on over",
+        "thick-coming fancies",
+        "thin air",
+        "thistledown",
+        "trick",
+        "trill",
+        "trip",
+        "tubercle",
+        "tubercule",
+        "unreal hope",
+        "utopia",
+        "vapor",
+        "verruca",
+        "vesicle",
+        "vision",
+        "wale",
+        "wart",
+        "wash",
+        "welt",
+        "whim",
+        "whimsy",
+        "wildest dreams",
+        "work",
+        "wrong impression"
+      ]
+    },
+    "bubbler": {
+      "word": "BUBBLER",
+      "definitions": [
+        {
+          "text": "To cheat; to deceive. She has bubbled him out of his youth. Addison. The great Locke, who was seldom outwitted by false sounds, was nevertheless bubbled here. Sterne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "One who cheats. All the Jews, jobbers, bubblers, subscribers, projectors, etc. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fish of the Ohio river; -- so called from the noise it makes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubbleshell": {
+      "word": "BUBBLE SHELL",
+      "definitions": [
+        {
+          "text": "A marine univalve shell of the genus Bulla and allied genera, belonging to the Tectibranchiata.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubblingjock": {
+      "word": "BUBBLING JOCK",
+      "definitions": [
+        {
+          "text": "The male wild turkey, the gobbler; -- so called in allusion to its notes.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubbly": {
+      "word": "BUBBLY",
+      "definitions": [
+        {
+          "text": "Abounding in bubbles; bubbling. Nash.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "active",
+        "activist",
+        "activistic",
+        "airy",
+        "alive",
+        "animated",
+        "beaten",
+        "blebby",
+        "blistered",
+        "blistering",
+        "blistery",
+        "bouncing",
+        "bouncy",
+        "breezy",
+        "brisk",
+        "bubbling",
+        "burbling",
+        "burbly",
+        "carbonated",
+        "champagne",
+        "cheerful",
+        "cheery",
+        "chiffon",
+        "chipper",
+        "downy",
+        "ebullient",
+        "effervescent",
+        "energetic",
+        "ethereal",
+        "excited",
+        "feathery",
+        "fizzy",
+        "fluffy",
+        "foamy",
+        "frisky",
+        "frothy",
+        "full of go",
+        "full of life",
+        "full of pep",
+        "gossamery",
+        "imponderous",
+        "leger",
+        "light",
+        "light as air",
+        "lighter than vanity",
+        "live",
+        "lively",
+        "mercurial",
+        "merry",
+        "militant",
+        "mousse",
+        "peppy",
+        "perky",
+        "pert",
+        "puffed",
+        "quicksilver",
+        "smacking",
+        "snappy",
+        "souffle",
+        "souffleed",
+        "spanking",
+        "sparkling",
+        "sparkling wine",
+        "spirited",
+        "sprightly",
+        "spry",
+        "spumescent",
+        "unheavy",
+        "vesicant",
+        "vesicated",
+        "vesicatory",
+        "vesicular",
+        "vivacious",
+        "volatile",
+        "weightless",
+        "whipped",
+        "yeasty",
+        "zingy"
+      ]
+    },
+    "bubby": {
+      "word": "BUBBY",
+      "definitions": [
+        {
+          "text": "A woman's breast. [Low]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Bub; -- a term of familiar or affectionate address to a small boy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubo": {
+      "word": "BUBO",
+      "definitions": [
+        {
+          "text": "An inflammation, with enlargement, of a limphatic gland, esp. in the groin, as in syphilis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubonic": {
+      "word": "BUBONIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a bubo or buboes; characterized by buboes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubonocele": {
+      "word": "BUBONOCELE",
+      "definitions": [
+        {
+          "text": "An inguinal hernia; esp. that incomplete variety in which the hernial pouch descends only as far as the groin, forming a swelling there like a bubo.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bubukle": {
+      "word": "BUBUKLE",
+      "definitions": [
+        {
+          "text": "A red pimple. [R.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

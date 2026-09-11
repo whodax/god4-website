@@ -2,6 +2,16 @@ const fs = require('fs');
 const path = require('path');
 const PREFERRED_SHARD_BYTES = 500 * 1024;
 const MAX_SHARD_BYTES = 1024 * 1024;
+const WINDOWS_RESERVED_SHARD_NAMES = new Set([
+  'con','prn','aux','nul','com1','com2','com3','com4','com5','com6','com7','com8','com9',
+  'lpt1','lpt2','lpt3','lpt4','lpt5','lpt6','lpt7','lpt8','lpt9'
+]);
+
+function normalizeShardName(shard) {
+  const normalized = String(shard || '').toLowerCase();
+  if (!normalized || normalized.endsWith('_')) return normalized;
+  return WINDOWS_RESERVED_SHARD_NAMES.has(normalized) ? `${normalized}_` : normalized;
+}
 
 function normalizeWord(value) {
   return String(value || '').toLowerCase().replace(/[^a-z0-9']/g, '').replace(/^'+|'+$/g, '');
@@ -158,9 +168,12 @@ function importWordStudy(websterFile, mobyFile, outputDirectory) {
   const moby = parseMoby(fs.readFileSync(mobyFile, 'utf8'));
   const shards = buildShards(webster, moby);
   fs.mkdirSync(outputDirectory, { recursive: true });
-  shards.forEach((data, shard) => fs.writeFileSync(path.join(outputDirectory, `${shard}.json`), `${JSON.stringify(data, null, 2)}\n`));
-  const oversizedShards = [...shards.entries()].filter(([, data]) => shardSize(data) > MAX_SHARD_BYTES).map(([shard]) => shard);
-  return { websterEntries: webster.size, mobyEntries: moby.size, shards: [...shards.keys()].sort(), oversizedShards, websterStats: webster.stats };
+  shards.forEach((data, shard) => {
+    const safeShardName = normalizeShardName(shard);
+    fs.writeFileSync(path.join(outputDirectory, `${safeShardName}.json`), `${JSON.stringify(data, null, 2)}\n`);
+  });
+  const oversizedShards = [...shards.entries()].filter(([, data]) => shardSize(data) > MAX_SHARD_BYTES).map(([shard]) => normalizeShardName(shard));
+  return { websterEntries: webster.size, mobyEntries: moby.size, shards: [...shards.keys()].sort().map(normalizeShardName), oversizedShards, websterStats: webster.stats };
 }
 
 if (require.main === module) {

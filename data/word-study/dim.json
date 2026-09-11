@@ -1,0 +1,1679 @@
+{
+  "version": "v1",
+  "entries": {
+    "dim": {
+      "word": "DIM",
+      "definitions": [
+        {
+          "text": "Not bright or distinct; wanting luminousness or clearness; obscure in luster or sound; dusky; darkish; obscure; indistinct; overcast; tarnished. The dim magnificence of poetry. Whewell. How is the gold become dim! Lam. iv. 1. I never saw The heavens so dim by day. Shak. Three sleepless nights I passed in sounding on, Through words and things, a dim and perilous way. Wordsworth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of obscure vision; not seeing clearly; hence, dull of apprehension; of weak perception; obtuse. Mine eye also is dim by reason of sorrow. Job xvii. 7. The understanding is dim. Rogers. tarnished.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To render dim, obscure, or dark; to make less bright or distinct; to take away the luster of; to darken; to dull; to obscure; to eclipse. A king among his courtiers, who dims all his attendants. Dryden. Now set the sun, and twilight dimmed the ways. Cowper.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deprive of distinct vision; to hinder from seeing clearly, either by dazzling or clouding the eyes; to darken the senses or understanding of. Her starry eyes were dimmed with streaming tears. C. Pitt.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To grow dim. J. C. Shairp.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "achromatic",
+        "achromatize",
+        "achromic",
+        "amorphous",
+        "anemic",
+        "ashen",
+        "ashy",
+        "banausic",
+        "bandage",
+        "barely audible",
+        "becloud",
+        "bedarken",
+        "bedazzle",
+        "bedim",
+        "befog",
+        "begloom",
+        "benight",
+        "black",
+        "black out",
+        "blacken",
+        "blah",
+        "blanch",
+        "bleach",
+        "blear",
+        "blear-eyed",
+        "bleared",
+        "bleary",
+        "bleary-eyed",
+        "bled white",
+        "blind",
+        "blind the eyes",
+        "blindfold",
+        "block the light",
+        "bloodless",
+        "blot out",
+        "blunt",
+        "blunt-witted",
+        "blur",
+        "blurred",
+        "blurry",
+        "brown",
+        "cadaverous",
+        "caliginous",
+        "cast a shadow",
+        "chloranemic",
+        "clear as mud",
+        "cloud",
+        "cloud over",
+        "cloudy",
+        "colorless",
+        "confused",
+        "dark",
+        "dark-colored",
+        "darken",
+        "darken over",
+        "darkish",
+        "darkle",
+        "darksome",
+        "daze",
+        "dazzle",
+        "dead",
+        "deadly pale",
+        "deathly pale",
+        "decolor",
+        "decolorize",
+        "decrescendo",
+        "defocus",
+        "deprive of sight",
+        "dim out",
+        "dim-eyed",
+        "dim-sighted",
+        "dim-witted",
+        "dimmed",
+        "dimmish",
+        "dimpsy",
+        "dingy",
+        "discolor",
+        "discolored",
+        "distant",
+        "dopey",
+        "drain",
+        "drain of color",
+        "dreary",
+        "dull",
+        "dull of mind",
+        "dull-headed",
+        "dull-pated",
+        "dull-sighted",
+        "dull-witted",
+        "dusk",
+        "dusky",
+        "eclipse",
+        "encloud",
+        "encompass with shadow",
+        "etiolate",
+        "etiolated",
+        "excecate",
+        "exsanguinated",
+        "exsanguine",
+        "exsanguineous",
+        "fade",
+        "faded",
+        "faint",
+        "faint-voiced",
+        "fallow",
+        "fat-witted",
+        "feeble",
+        "feeble-eyed",
+        "film",
+        "filmy",
+        "filmy-eyed",
+        "flat",
+        "fog",
+        "foggy",
+        "fume",
+        "fuzzy",
+        "gentle",
+        "ghastly",
+        "glare",
+        "gloam",
+        "gloom",
+        "gloomy",
+        "gouge",
+        "gravel-blind",
+        "gray",
+        "gross-headed",
+        "grow dark",
+        "grow dim",
+        "haggard",
+        "half-blind",
+        "half-heard",
+        "half-seen",
+        "half-visible",
+        "haze",
+        "hazy",
+        "heavy",
+        "hebetudinous",
+        "hoodwink",
+        "hueless",
+        "humdrum",
+        "hypochromic",
+        "ill-defined",
+        "inconspicuous",
+        "indefinite",
+        "indeterminate",
+        "indistinct",
+        "indistinguishable",
+        "lackluster",
+        "leaden",
+        "livid",
+        "lose resolution",
+        "low",
+        "low-profile",
+        "lower",
+        "lurid",
+        "lusterless",
+        "make blind",
+        "mat",
+        "mealy",
+        "merely glimpsed",
+        "mist",
+        "misty",
+        "mole-eyed",
+        "monotone",
+        "monotonous",
+        "muddy",
+        "murk",
+        "murksome",
+        "murky",
+        "murmured",
+        "muted",
+        "nebulous",
+        "neutral",
+        "obfuscate",
+        "obnubilate",
+        "obscure",
+        "obtuse",
+        "obumbrate",
+        "occult",
+        "occultate",
+        "opaque",
+        "out of focus",
+        "overcast",
+        "overcloud",
+        "overshadow",
+        "pale",
+        "pale as death",
+        "pale-faced",
+        "pallid",
+        "pasty",
+        "pedestrian",
+        "peroxide",
+        "pianissimo",
+        "piano",
+        "poky",
+        "purblind",
+        "sallow",
+        "sand-blind",
+        "scarcely heard",
+        "semidark",
+        "semivisible",
+        "shade",
+        "shadow",
+        "shadowy",
+        "shapeless",
+        "sickly",
+        "slow",
+        "slow-witted",
+        "sluggish",
+        "snow-blind",
+        "soft",
+        "soft-sounding",
+        "soft-voiced",
+        "soften",
+        "somber",
+        "stodgy",
+        "strike blind",
+        "subaudible",
+        "subdued",
+        "subfusc",
+        "tallow-faced",
+        "tarnish",
+        "tenebrous",
+        "thick-brained",
+        "thick-headed",
+        "thick-pated",
+        "thick-witted",
+        "thickskulled",
+        "tone down",
+        "toneless",
+        "transcendent",
+        "uncertain",
+        "unclear",
+        "uncolored",
+        "undefined",
+        "undetermined",
+        "unilluminated",
+        "unplain",
+        "unrecognizable",
+        "vague",
+        "wan",
+        "wash out",
+        "washed-out",
+        "waxen",
+        "weak",
+        "weak-eyed",
+        "weak-voiced",
+        "whey-faced",
+        "whispered",
+        "white",
+        "whiten",
+        "wooden"
+      ]
+    },
+    "dimble": {
+      "word": "DIMBLE",
+      "definitions": [
+        {
+          "text": "A bower; a dingle. [Obs.] Drayton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dime": {
+      "word": "DIME",
+      "definitions": [
+        {
+          "text": "A silver coin of the United States, of the value of ten cents; the tenth of a dollar. Dime novel, a novel, commonly sensational and trashy, which is sold for a dime, or ten cents.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "C",
+        "C-note",
+        "G",
+        "G-note",
+        "buck",
+        "cartwheel",
+        "cent",
+        "century",
+        "copper",
+        "dollar",
+        "dollar bill",
+        "fifty cents",
+        "fin",
+        "fish",
+        "five cents",
+        "five hundred dollars",
+        "five-dollar bill",
+        "five-hundred-dollar bill",
+        "five-spot",
+        "fiver",
+        "four bits",
+        "frogskin",
+        "grand",
+        "half G",
+        "half a C",
+        "half dollar",
+        "half grand",
+        "hundred-dollar bill",
+        "iron man",
+        "mill",
+        "nickel",
+        "penny",
+        "quarter",
+        "red cent",
+        "sawbuck",
+        "silver dollar",
+        "skin",
+        "smacker",
+        "ten cents",
+        "ten-spot",
+        "tenner",
+        "thousand dollars",
+        "thousand-dollar bill",
+        "twenty-dollar bill",
+        "twenty-five cents",
+        "two bits",
+        "two-dollar bill",
+        "two-spot",
+        "yard"
+      ]
+    },
+    "dimension": {
+      "word": "DIMENSION",
+      "definitions": [
+        {
+          "text": "Measure in a single line, as length, breadth, height, thickness, or circumference; extension; measurement; -- usually, in the plural, measure in length and breadth, or in length, breadth, and thickness; extent; size; as, the dimensions of a room, or of a ship; the dimensions of a farm, of a kingdom. Gentlemen of more than ordinary dimensions. W. Irving. Space of dimension, extension that has length but no breadth or thickness; a straight or curved line. but no thickness; a plane or curved surface. and thickness; a solid. is assumed to have length, breadth, thickness, and also a fourth imaginary dimension. Space of five or six, or more dimensions is also sometimes assumed in mathematics.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Extent; reach; scope; importance; as, a project of large dimensions.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The degree of manifoldness of a quantity; as, time is quantity having one dimension; volume has three dimensions, relative to extension.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Alg.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A literal factor, as numbered in characterizing a term. The term dimensions forms with the cardinal numbers a phrase equivalent to degree with the ordinal; thus, a2b2c is a term of five dimensions, or of the fifth degree.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Phys.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The manifoldness with which the fundamental units of time, length, and mass are involved in determining the units of other physical quantities. Thus, since the unit of velocity varies directly as the unit of length and inversely as the unit of time, the dimensions of velocity are said to be length ÷ time; the dimensions of work are mass × (length)2 ÷ (time)2; the dimensions of density are mass ÷ (length)3. Dimension lumber, Dimension scantling, or Dimension stock (Carp.), lumber for building, etc., cut to the sizes usually in demand, or to special sizes as ordered. brought to such sizes as are requisite for cutting to dimensions given.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acreage",
+        "ambit",
+        "amplitude",
+        "area",
+        "bigness",
+        "body",
+        "breadth",
+        "bulk",
+        "caliber",
+        "circle",
+        "compass",
+        "confines",
+        "continuum",
+        "coverage",
+        "depth",
+        "diameter",
+        "dimensions",
+        "emptiness",
+        "empty space",
+        "expanse",
+        "expansion",
+        "extension",
+        "extent",
+        "field",
+        "galactic space",
+        "gauge",
+        "girth",
+        "greatness",
+        "height",
+        "infinite space",
+        "interstellar space",
+        "largeness",
+        "length",
+        "magnitude",
+        "mass",
+        "measure",
+        "measurement",
+        "nothingness",
+        "outer space",
+        "proportion",
+        "proportions",
+        "radius",
+        "range",
+        "reach",
+        "scale",
+        "scope",
+        "size",
+        "space",
+        "spatial extension",
+        "sphere",
+        "spread",
+        "superficial extension",
+        "surface",
+        "tract",
+        "void",
+        "volume",
+        "width"
+      ]
+    },
+    "dimensional": {
+      "word": "DIMENSIONAL",
+      "definitions": [
+        {
+          "text": "Pertaining to dimension.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimensioned": {
+      "word": "DIMENSIONED",
+      "definitions": [
+        {
+          "text": "Having dimensions. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimensionless": {
+      "word": "DIMENSIONLESS",
+      "definitions": [
+        {
+          "text": "Without dimensions; having no appreciable or noteworthy extent. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimensity": {
+      "word": "DIMENSITY",
+      "definitions": [
+        {
+          "text": "Dimension. [R.] Howell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimensive": {
+      "word": "DIMENSIVE",
+      "definitions": [
+        {
+          "text": "Without dimensions; marking dimensions or the limits. Who can draw the soul's dimensive lines Sir J. Davies.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimeran": {
+      "word": "DIMERAN",
+      "definitions": [
+        {
+          "text": "One of the Dimera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimerous": {
+      "word": "DIMEROUS",
+      "definitions": [
+        {
+          "text": "Composed of, or having, two parts of each kind. two pistils.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimeter": {
+      "word": "DIMETER",
+      "definitions": [
+        {
+          "text": "Having two poetical measures or meters.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A verse of two meters.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimethyl": {
+      "word": "DIMETHYL",
+      "definitions": [
+        {
+          "text": "Ethane; -- sometimes so called because regarded as consisting of two methyl radicals. See Ethane.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimetric": {
+      "word": "DIMETRIC",
+      "definitions": [
+        {
+          "text": "Same as Tetragonal. Dana.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimfrrondforsense2cffrondellearoundaroundshield": {
+      "word": "dim. fr. rond; for sense 2, cf. F. rondelle a round, a round shield.",
+      "definitions": [
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A rondelay. \"Sung all the roundel lustily.\" Chaucer. Come, now a roundel and a fairy song. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Anything having a round form; a round figure; a circle. The Spaniards, casting themselves into roundels, . . . made a flying march to Calais. Bacon. Specifically: (a) A small circular shield, sometimes not more than a foot in diameter, used by soldiers in the fourteenth and fifteenth centuries. (b) (Her.) A circular spot; a sharge in the form of a small circle. (c) (Fort.) A bastion of a circular form.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimication": {
+      "word": "DIMICATION",
+      "definitions": [
+        {
+          "text": "A fight; contest. [Obs.] Bp. Hall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimidiate": {
+      "word": "DIMIDIATE",
+      "definitions": [
+        {
+          "text": "Divided into two equal parts; reduced to half in shape or form.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Biol.) (a) Consisting of only one half of what the normal condition requires; having the appearance of lacking one half; as, a dimidiate leaf, which has only one side developed. (b) Having the organs of one side, or half, different in function from the corresponding organs on the other side; as, dimidiate hermaphroditism.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To divide into two equal parts. [Obs.] Cockeram.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To represent the half of; to halve.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimidiation": {
+      "word": "DIMIDIATION",
+      "definitions": [
+        {
+          "text": "The act of dimidiating or halving; the state of being dimidiate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminish": {
+      "word": "DIMINISH",
+      "definitions": [
+        {
+          "text": "To make smaller in any manner; to reduce in bulk or amount; to lessen; -- opposed to augment or increase. Not diminish, but rather increase, the debt. Barrow.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lessen the authority or dignity of; to put down; to degrade; to abase; to weaken. This doth nothing diminish their opinion. Robynson (More's Utopia). I will diminish them, that they shall no more rule over the nations. Ezek. xxix. 15. O thou . . . at whose sight all the stars Hide their diminished heads. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make smaller by a half step; to make (an interval) less than minor; as, a diminished seventh.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take away; to subtract. Neither shall ye diminish aught from it. Deut. iv. 2. Diminished column, one whose upper diameter is less than the lower. finding the different points for drawing the spiral curve of the volute. Gwilt. fixing the entasis and curvature of a shaft. than in another, as in many glazed doors. degrade. See Decrease.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become or appear less or smaller; to lessen; as, the apparent size of an object diminishes as we recede from it.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abase",
+        "abash",
+        "abate",
+        "abbreviate",
+        "ablate",
+        "abrade",
+        "abridge",
+        "abstract",
+        "abuse",
+        "adjust to",
+        "allay",
+        "alleviate",
+        "allow for",
+        "alter",
+        "anesthetize",
+        "appease",
+        "assuage",
+        "attemper",
+        "attenuate",
+        "bank the fire",
+        "bate",
+        "be eaten away",
+        "belittle",
+        "benumb",
+        "blunt",
+        "boil down",
+        "box in",
+        "bring down",
+        "bring low",
+        "chasten",
+        "cheapen",
+        "circumscribe",
+        "clip",
+        "close",
+        "color",
+        "compress",
+        "condense",
+        "condition",
+        "confine",
+        "constrain",
+        "constrict",
+        "consume",
+        "consume away",
+        "contract",
+        "control",
+        "corrode",
+        "crop",
+        "crumble",
+        "crush",
+        "curtail",
+        "cushion",
+        "cut",
+        "cut back",
+        "cut down",
+        "damp",
+        "dampen",
+        "de-emphasize",
+        "deaden",
+        "deaden the pain",
+        "debase",
+        "decline",
+        "decrease",
+        "deduct",
+        "deflate",
+        "degrade",
+        "deliquesce",
+        "demean",
+        "deprecate",
+        "depreciate",
+        "depress",
+        "derogate",
+        "desiccate",
+        "detract",
+        "detract from",
+        "devalue",
+        "die away",
+        "die out",
+        "discredit",
+        "dismiss",
+        "disparage",
+        "dispraise",
+        "dive",
+        "dock",
+        "downgrade",
+        "downplay",
+        "drain",
+        "draw in",
+        "drift away",
+        "droop",
+        "drop",
+        "drop off",
+        "dry up",
+        "dull",
+        "dump",
+        "dump on",
+        "dwindle",
+        "ease",
+        "ease matters",
+        "ease off",
+        "eat away",
+        "ebb",
+        "erode",
+        "extenuate",
+        "extract",
+        "fade",
+        "fade away",
+        "fall",
+        "fall away",
+        "fall off",
+        "file away",
+        "flag",
+        "foment",
+        "give relief",
+        "gloss over",
+        "go",
+        "go away",
+        "go in",
+        "hedge",
+        "hedge about",
+        "humiliate",
+        "ignore",
+        "impair",
+        "keep within bounds",
+        "languish",
+        "lay",
+        "leach",
+        "leaven",
+        "lenify",
+        "lessen",
+        "let up",
+        "lighten",
+        "limit",
+        "lop",
+        "lower",
+        "lull",
+        "make allowance for",
+        "melt away",
+        "mince",
+        "minify",
+        "minimize",
+        "mitigate",
+        "moderate",
+        "modify",
+        "modulate",
+        "mollify",
+        "move away",
+        "move off",
+        "narrow",
+        "numb",
+        "obtund",
+        "pad",
+        "palliate",
+        "pare",
+        "peter out",
+        "pine",
+        "play down",
+        "plummet",
+        "plunge",
+        "poultice",
+        "pour balm into",
+        "pour oil on",
+        "prune",
+        "pull away",
+        "purify",
+        "put down",
+        "qualify",
+        "recede",
+        "reduce",
+        "reduce the temperature",
+        "refine",
+        "regulate by",
+        "reject",
+        "relieve",
+        "remove",
+        "restrain",
+        "restrict",
+        "retire",
+        "retreat",
+        "retrench",
+        "retrocede",
+        "roll back",
+        "rub away",
+        "run low",
+        "sag",
+        "salve",
+        "scale down",
+        "sear",
+        "season",
+        "set conditions",
+        "set down",
+        "set limits",
+        "shorten",
+        "shrink",
+        "shrivel",
+        "simplify",
+        "sink",
+        "slacken",
+        "slake",
+        "slow down",
+        "slur over",
+        "smother",
+        "snape",
+        "sober",
+        "sober down",
+        "soft-pedal",
+        "soften",
+        "soothe",
+        "stand off",
+        "step down",
+        "stifle",
+        "straiten",
+        "stupe",
+        "subduct",
+        "subdue",
+        "subside",
+        "subtract",
+        "suppress",
+        "tail off",
+        "take away",
+        "take down",
+        "take from",
+        "tame",
+        "taper",
+        "taper off",
+        "temper",
+        "thin",
+        "thin out",
+        "tone down",
+        "trip up",
+        "truncate",
+        "tune down",
+        "underplay",
+        "varnish",
+        "vitiate",
+        "wane",
+        "waste",
+        "waste away",
+        "weaken",
+        "wear",
+        "wear away",
+        "weed",
+        "whitewash",
+        "widen the distance",
+        "wilt",
+        "wind down",
+        "withdraw",
+        "wither",
+        "wizen",
+        "write off"
+      ]
+    },
+    "diminishable": {
+      "word": "DIMINISHABLE",
+      "definitions": [
+        {
+          "text": "Capable of being diminished or lessened.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminisher": {
+      "word": "DIMINISHER",
+      "definitions": [
+        {
+          "text": "One who, or that which, diminishes anything. Clerke (1637).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminishingly": {
+      "word": "DIMINISHINGLY",
+      "definitions": [
+        {
+          "text": "In a manner to diminish.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminishment": {
+      "word": "DIMINISHMENT",
+      "definitions": [
+        {
+          "text": "Diminution. [R.] Cheke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminuendo": {
+      "word": "DIMINUENDO",
+      "definitions": [
+        {
+          "text": "In a gradually diminishing manner; with abatement of tone; decrescendo; -- expressed on the staff by Dim., or Dimin., or the sign.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminuent": {
+      "word": "DIMINUENT",
+      "definitions": [
+        {
+          "text": "Lessening. Bp. Sanderson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminutal": {
+      "word": "DIMINUTAL",
+      "definitions": [
+        {
+          "text": "Indicating or causing diminution. Earle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminute": {
+      "word": "DIMINUTE",
+      "definitions": [
+        {
+          "text": "Small; diminished; diminutive. [Obs.] Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminutely": {
+      "word": "DIMINUTELY",
+      "definitions": [
+        {
+          "text": "Diminutively. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminution": {
+      "word": "DIMINUTION",
+      "definitions": [
+        {
+          "text": "The act of diminishing, or of making or becoming less; state of being diminished; reduction in size, quantity, or degree; -- opposed to augmentation or increase.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of lessening dignity or consideration, or the state of being deprived of dignity; a lowering in estimation; degradation; abasement. The world's opinion or diminution of me. Eikon Basilike. Nor thinks it diminution to be ranked In military honor next. Philips.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Omission, inaccuracy, or defect in a record.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In counterpoint, the imitation of, or reply to, a subject, in notes of half the length or value of those the subject itself.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abatement",
+        "abridgment",
+        "allayment",
+        "alleviation",
+        "analgesia",
+        "anesthesia",
+        "anesthetizing",
+        "appeasement",
+        "assuagement",
+        "attenuation",
+        "attrition",
+        "blunting",
+        "calming",
+        "concavity",
+        "contraction",
+        "curtailment",
+        "cut",
+        "cutting",
+        "dampening",
+        "damping",
+        "de-escalation",
+        "deadening",
+        "debasement",
+        "decrease",
+        "decrement",
+        "decrescence",
+        "deduction",
+        "deflation",
+        "degradation",
+        "demotion",
+        "demulsion",
+        "depletion",
+        "depreciation",
+        "depression",
+        "derogation",
+        "descent",
+        "detraction",
+        "detrusion",
+        "diminishment",
+        "dip",
+        "disparagement",
+        "ducking",
+        "dulcification",
+        "dulling",
+        "dying",
+        "dying off",
+        "ease",
+        "easement",
+        "easing",
+        "extenuation",
+        "extraction",
+        "fade-out",
+        "falling-off",
+        "hauling down",
+        "hollowness",
+        "hushing",
+        "impairment",
+        "languishment",
+        "leniency",
+        "lessening",
+        "letdown",
+        "letup",
+        "lightening",
+        "loosening",
+        "lowering",
+        "lulling",
+        "miniaturization",
+        "mitigation",
+        "modulation",
+        "mollification",
+        "numbing",
+        "pacification",
+        "palliation",
+        "quietening",
+        "quieting",
+        "reduction",
+        "relaxation",
+        "relief",
+        "remedy",
+        "remission",
+        "retraction",
+        "retrenchment",
+        "sagging",
+        "salving",
+        "scaling down",
+        "shortening",
+        "shrinkage",
+        "simplicity",
+        "sinking",
+        "slackening",
+        "softening",
+        "soothing",
+        "subduement",
+        "submergence",
+        "subtraction",
+        "tempering",
+        "thrusting under",
+        "tranquilization",
+        "truncation",
+        "weakening"
+      ]
+    },
+    "diminutival": {
+      "word": "DIMINUTIVAL",
+      "definitions": [
+        {
+          "text": "Indicating diminution; diminutive. \"Diminutival forms\" [of words]. Earle.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A diminutive. Earle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminutive": {
+      "word": "DIMINUTIVE",
+      "definitions": [
+        {
+          "text": "Below the average size; very small; little.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Expressing diminution; as, a diminutive word.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Tending to diminish. [R.] Diminutive of liberty. Shaftesbury.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Something of very small size or value; an insignificant thing. Such water flies, diminutives of nature. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Gram.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A derivative from a noun, denoting a small or a young object of the same kind with that denoted by the primitive; as, gosling, eaglet, lambkin. Babyisms and dear diminutives. Tennyson. diminutive or petty form of the action, as scribble.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Lilliputian",
+        "affectionate name",
+        "baby",
+        "baby-sized",
+        "bantam",
+        "banty",
+        "button",
+        "byname",
+        "chit",
+        "cognomen",
+        "cognominal",
+        "compact",
+        "duodecimo",
+        "elfin",
+        "epithetic",
+        "featherweight",
+        "fingerling",
+        "formal",
+        "handy",
+        "honorific",
+        "hypocoristic",
+        "in name only",
+        "infinitesimal",
+        "lightweight",
+        "lilliputian",
+        "little",
+        "micro",
+        "microscopic",
+        "midget",
+        "mini",
+        "miniature",
+        "miniaturized",
+        "minikin",
+        "minimal",
+        "minnow",
+        "minny",
+        "minuscule",
+        "minute",
+        "mouse",
+        "nickname",
+        "nominal",
+        "nominative",
+        "nubbin",
+        "peewee",
+        "pet name",
+        "petite",
+        "pocket",
+        "pocket-sized",
+        "pony",
+        "pygmy",
+        "quasi",
+        "runt",
+        "self-called",
+        "self-christened",
+        "self-styled",
+        "shrimp",
+        "slip",
+        "small",
+        "small fry",
+        "small-scale",
+        "snip",
+        "snippet",
+        "so-called",
+        "sobriquet",
+        "soi-disant",
+        "subminiature",
+        "teensy-weensy",
+        "teeny",
+        "teeny-weeny",
+        "tiny",
+        "tit",
+        "titular",
+        "toy",
+        "twelvemo",
+        "undersized",
+        "vest-pocket",
+        "wart",
+        "wee",
+        "weeny",
+        "wisp",
+        "would-be"
+      ]
+    },
+    "diminutively": {
+      "word": "DIMINUTIVELY",
+      "definitions": [
+        {
+          "text": "In a diminutive manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diminutiveness": {
+      "word": "DIMINUTIVENESS",
+      "definitions": [
+        {
+          "text": "The quality of being diminutive; smallness; littleness; minuteness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimish": {
+      "word": "DIMISH",
+      "definitions": [
+        {
+          "text": "See Dimmish.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimission": {
+      "word": "DIMISSION",
+      "definitions": [
+        {
+          "text": "Leave to depart; a dismissing. [Obs.] Barrow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimissory": {
+      "word": "DIMISSORY",
+      "definitions": [
+        {
+          "text": "Sending away; dismissing to another jurisdiction; granting leave to depart. Letters dimissory (Eccl.), letters given by a bishop dismissing a person who is removing into another diocese, and recommending him for reception there. Hook.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimit": {
+      "word": "DIMIT",
+      "definitions": [
+        {
+          "text": "To dismiss, let go, or release. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimity": {
+      "word": "DIMITY",
+      "definitions": [
+        {
+          "text": "A cotton fabric employed for hangings and furniture coverings, and formerly used for women's under-garments. It is of many patterns, both plain and twilled, and occasionally is printed in colors.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimly": {
+      "word": "DIMLY",
+      "definitions": [
+        {
+          "text": "In a dim or obscure manner; not brightly or clearly; with imperfect sight.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimmishdimmy": {
+      "word": "DIMMISH; DIMMY",
+      "definitions": [
+        {
+          "text": "Somewhat dim; as, dimmish eyes. \"Dimmy clouds.\" Sir P. Sidney.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimness": {
+      "word": "DIMNESS",
+      "definitions": [
+        {
+          "text": "The state or quality",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Dullness, or want of clearness, of vision or of intellectual perception. Dr. H. More.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "adiaphanousness",
+        "anemia",
+        "ashiness",
+        "asininity",
+        "bad light",
+        "bleariness",
+        "blockishness",
+        "bloodlessness",
+        "blur",
+        "blurriness",
+        "boobishness",
+        "boorishness",
+        "bovinity",
+        "cadaverousness",
+        "chloranemia",
+        "cloddishness",
+        "cloudiness",
+        "crassness",
+        "crudeness",
+        "darkishness",
+        "darkness",
+        "darksomeness",
+        "deadness",
+        "deathly hue",
+        "deathly pallor",
+        "decrescendo",
+        "defocus",
+        "denseness",
+        "density",
+        "dim",
+        "dim light",
+        "dim-wittedness",
+        "doltishness",
+        "drabness",
+        "dull-wittedness",
+        "dullardism",
+        "dullness",
+        "dumbness",
+        "duncery",
+        "dusk",
+        "duskiness",
+        "duskness",
+        "exsanguination",
+        "fadedness",
+        "faintness",
+        "fairness",
+        "feebleness",
+        "filminess",
+        "flatness",
+        "fogginess",
+        "fuzziness",
+        "gentleness",
+        "ghastliness",
+        "gloaming",
+        "grossness",
+        "haggardness",
+        "half-light",
+        "half-visibility",
+        "haziness",
+        "hebetude",
+        "hypochromia",
+        "hypochromic anemia",
+        "imperviousness to light",
+        "indefiniteness",
+        "indistinctness",
+        "indistinguishability",
+        "intransparency",
+        "lack of sparkle",
+        "lackluster",
+        "lethargy",
+        "lifelessness",
+        "lightness",
+        "lividness",
+        "loutishness",
+        "low profile",
+        "lowness",
+        "lumpishness",
+        "lusterlessness",
+        "mat",
+        "mat finish",
+        "mistiness",
+        "muddiness",
+        "murk",
+        "murkiness",
+        "ninnyism",
+        "oafdom",
+        "oafishness",
+        "obscurity",
+        "obtuseness",
+        "opacity",
+        "opaque",
+        "opaqueness",
+        "paleness",
+        "pallidity",
+        "pallidness",
+        "pallor",
+        "partial darkness",
+        "pastiness",
+        "prison pallor",
+        "roil",
+        "roiledness",
+        "sallowness",
+        "semidark",
+        "semivisibility",
+        "shadowiness",
+        "sickliness",
+        "sickly hue",
+        "simpletonianism",
+        "slowness",
+        "sluggishness",
+        "soft focus",
+        "softness",
+        "somberness",
+        "sottishness",
+        "stolidity",
+        "stupidity",
+        "subaudibility",
+        "subduedness",
+        "thick-headedness",
+        "thick-wittedness",
+        "turbidity",
+        "turbidness",
+        "twilight",
+        "uncertainty",
+        "unclearness",
+        "unplainness",
+        "unteachability",
+        "vague appearance",
+        "vagueness",
+        "wanness",
+        "weakness",
+        "wrongheadedness",
+        "yokelism"
+      ]
+    },
+    "dimofblancwhiteblanquetteakindofwhitepearfrblanc": {
+      "word": "dim. of blanc white; blanquette a kind of white pear, fr. blanc",
+      "definitions": [
+        {
+          "text": "A heavy, loosely woven fabric, usually of wool, and having a nap, used in bed clothing; also, a similar fabric used as a robe; or any fabric used as a cover for a horse.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A piece of rubber, felt, or woolen cloth, used in the tympan to make it soft and elastic.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A streak or layer of blubber in whales. the following figure of Shakespeare. Nares. Nor heaven peep through the blanket of the dark To cry, \"Hold, hold!\" Shak. Blanket sheet, a newspaper of folio size. discour",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimorph": {
+      "word": "DIMORPH",
+      "definitions": [
+        {
+          "text": "Either one of the two forms of a dimorphous substance; as, calcite and aragonite are dimorphs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimorphic": {
+      "word": "DIMORPHIC",
+      "definitions": [
+        {
+          "text": "Having the property of dimorphism; dimorphous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimorphism": {
+      "word": "DIMORPHISM",
+      "definitions": [
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Difference of form between members of the same species, as when a plant has two kinds of flowers, both hermaphrodite (as in the partridge berry), or when there are two forms of one or both sexes of the same species of butterfly. Dimorphism is the condition of the appearance of the same species under two dissimilar forms. Darwin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Crystallog.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Crystallization in two independent forms of the same chemical compound, as of calcium carbonate as calcite and aragonite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimorphous": {
+      "word": "DIMORPHOUS",
+      "definitions": [
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Characterized by dimorphism; occurring under two distinct forms, not dependent on sex; dimorphic.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Crystallog.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Crystallizing under two forms fundamentally different, while having the same chemical composition.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimple": {
+      "word": "DIMPLE",
+      "definitions": [
+        {
+          "text": "A slight natural depression or indentation on the surface of some part of the body, esp. on the cheek or chin. Milton. The dimple of her chin. Prior.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A slight indentation on any surface. The garden pool's dark surface . . . Breaks into dimples small and bright. Wordsworth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To form dimples; to sink into depressions or little inequalities. And smiling eddies dimpled on the main. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark with dimples or dimplelike depressions. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "alveolation",
+        "alveolus",
+        "cockle",
+        "dent",
+        "depress",
+        "dint",
+        "engrave",
+        "fret",
+        "furrow",
+        "gouge",
+        "honeycomb",
+        "impress",
+        "impression",
+        "imprint",
+        "indent",
+        "indentation",
+        "indention",
+        "indenture",
+        "notch",
+        "pit",
+        "pock",
+        "pockmark",
+        "press in",
+        "print",
+        "punch",
+        "punch in",
+        "recess",
+        "riffle",
+        "set back",
+        "set in",
+        "stamp",
+        "sunken part",
+        "tamp"
+      ]
+    },
+    "dimplement": {
+      "word": "DIMPLEMENT",
+      "definitions": [
+        {
+          "text": "The state of being dimpled, or marked with gentle depressions. [R.] The ground's most gentle dimplement. Mrs. Browning.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimply": {
+      "word": "DIMPLY",
+      "definitions": [
+        {
+          "text": "Full of dimples, or small depressions; dimpled; as, the dimply pool. Thomson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimyadimyaria": {
+      "word": "DIMYA; DIMYARIA",
+      "definitions": [
+        {
+          "text": "An order of lamellibranchiate mollusks having an anterior and posterior adductor muscle, as the common clam. See Bivalve.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimyarian": {
+      "word": "DIMYARIAN",
+      "definitions": [
+        {
+          "text": "Like or pertaining to the Dimya.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the Dimya.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimyary": {
+      "word": "DIMYARY",
+      "definitions": [
+        {
+          "text": "Same as Dimyarian.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

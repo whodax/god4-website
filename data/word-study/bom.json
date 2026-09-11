@@ -1,0 +1,775 @@
+{
+  "version": "v1",
+  "entries": {
+    "bom": {
+      "word": "BOM",
+      "definitions": [
+        {
+          "text": "A large American serpent, so called from the sound it makes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bomb": {
+      "word": "BOMB",
+      "definitions": [
+        {
+          "text": "A great noise; a hollow sound. [Obs.] A pillar of iron . . . which if you had struck, would make . . . a great bomb in the chamber beneath. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A shell; esp. a spherical shell, like those fired from mortars. See Shell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bomb ketch. Bomb chest (Mil.), a chest filled with bombs, or only with gunpowder, placed under ground, to cause destruction by its explosion. strongly built, on which mortars are mounted to be used in naval bombardments; -- called also mortar vessel. whale fishing. noticed volcanic bombs.\" Darwin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To bombard. [Obs.] Prior.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sound; to boom; to make a humming or buzzing sound. [Obs.] B. Jonson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "A-bomb",
+        "Grand Guignol",
+        "H-bomb",
+        "Passion play",
+        "Tom show",
+        "aerial bomb",
+        "antimasque",
+        "antipersonnel bomb",
+        "astonishment",
+        "atom-bomb",
+        "atomic bomb",
+        "audience success",
+        "ballet",
+        "batter",
+        "be a gas",
+        "be a hit",
+        "bill",
+        "blast",
+        "blitz",
+        "blockbuster",
+        "blow",
+        "blow to pieces",
+        "blow up",
+        "bombard",
+        "bombshell",
+        "broadcast drama",
+        "burlesque show",
+        "bust",
+        "cannonade",
+        "carcass",
+        "catch",
+        "charade",
+        "cliff hanger",
+        "closet drama",
+        "comedy drama",
+        "concussion grenade",
+        "crap out",
+        "critical success",
+        "daytime serial",
+        "depth bomb",
+        "depth charge",
+        "dialogue",
+        "dive-bomb",
+        "documentary drama",
+        "drama",
+        "dramalogue",
+        "dramatic play",
+        "dramatic series",
+        "dramatize",
+        "draw a blank",
+        "drop a bomb",
+        "drop the ball",
+        "dud",
+        "dull thud",
+        "duodrama",
+        "duologue",
+        "earthshaker",
+        "epic theater",
+        "experimental theater",
+        "explosive",
+        "extravaganza",
+        "eye-opener",
+        "fail",
+        "failure",
+        "fall flat",
+        "fan",
+        "feature",
+        "fire bomb",
+        "fireball",
+        "fizzle",
+        "flat failure",
+        "flop",
+        "floperoo",
+        "flummox",
+        "fold",
+        "fold up",
+        "frost",
+        "fusion bomb",
+        "gas grenade",
+        "gasser",
+        "get left",
+        "giveaway",
+        "glide-bomb",
+        "grenade",
+        "hand grenade",
+        "happening",
+        "headline",
+        "hit",
+        "hit show",
+        "hydrobomb",
+        "hydrogen bomb",
+        "improvisational drama",
+        "incendiary",
+        "incendiary bomb",
+        "incendiary grenade",
+        "infernal machine",
+        "joker",
+        "kicker",
+        "lay an egg",
+        "legitimate drama",
+        "lemon",
+        "lose out",
+        "loser",
+        "make a hit",
+        "masque",
+        "melodrama",
+        "melodramatize",
+        "mine",
+        "minstrel show",
+        "miracle",
+        "miracle play",
+        "monodrama",
+        "monologue",
+        "morality",
+        "morality play",
+        "mount",
+        "music drama",
+        "musical revue",
+        "mystery",
+        "mystery play",
+        "not hack it",
+        "not make it",
+        "open",
+        "open a show",
+        "opera",
+        "pageant",
+        "panel show",
+        "pantomime",
+        "pastoral",
+        "pastoral drama",
+        "peripeteia",
+        "petard",
+        "piece",
+        "pipe bomb",
+        "play",
+        "playlet",
+        "plutonium bomb",
+        "premiere",
+        "present",
+        "preview",
+        "problem play",
+        "produce",
+        "psychodrama",
+        "put on",
+        "quiz show",
+        "radio drama",
+        "razon bomb",
+        "revelation",
+        "review",
+        "revue",
+        "robot bomb",
+        "roc",
+        "rocket bomb",
+        "satchel charge",
+        "scenarize",
+        "sensational play",
+        "serial",
+        "set the stage",
+        "shell",
+        "shocker",
+        "show",
+        "sitcom",
+        "situation comedy",
+        "sketch",
+        "skip-bomb",
+        "skit",
+        "smoke bomb",
+        "soap",
+        "soap opera",
+        "sociodrama",
+        "spectacle",
+        "spring",
+        "stage",
+        "stage play",
+        "stage show",
+        "staggerer",
+        "star",
+        "startler",
+        "stench bomb",
+        "stink bomb",
+        "straight drama",
+        "strike out",
+        "succeed",
+        "success",
+        "surprisal",
+        "surprise",
+        "surprise ending",
+        "surprise package",
+        "surprise party",
+        "suspense drama",
+        "switch",
+        "tableau",
+        "tableau vivant",
+        "take the count",
+        "talk show",
+        "tear-gas bomb",
+        "tear-gas grenade",
+        "teleplay",
+        "television drama",
+        "television play",
+        "theater of cruelty",
+        "theatricalize",
+        "thermonuclear bomb",
+        "thunderbolt",
+        "thunderclap",
+        "time bomb",
+        "total loss",
+        "total theater",
+        "try out",
+        "turkey",
+        "variety show",
+        "vaudeville",
+        "vaudeville show",
+        "vehicle",
+        "wall grenade",
+        "washout",
+        "wear thin",
+        "whiff",
+        "word-of-mouth success",
+        "work"
+      ]
+    },
+    "bombace": {
+      "word": "BOMBACE",
+      "definitions": [
+        {
+          "text": "Cotton; padding. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombard": {
+      "word": "BOMBARD",
+      "definitions": [
+        {
+          "text": "(Gun.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece of heavy ordnance formerly used for throwing stones and other ponderous missiles. It was the earliest kind of cannon. They planted in divers places twelve great bombards, wherewith they threw huge stones into the air, which, falling down into the city, might break down the houses. Knolles.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bombardment. [Poetic & R.] J. Barlow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A large drinking vessel or can, or a leather bottle, for carrying liquor or beer. [Obs.] Yond same black cloud, yond huge one, looks like a foul bombard that would shed his liquor. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Padded breeches. [Obs.] Bombard phrase, inflated language; bombast. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Bombardo. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To attack with bombards or with artillery; especially, to throw shells, hot shot, etc., at or into. Next, she means to bombard Naples. Burke. His fleet bombarded and burnt down Dieppe. Wood.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accelerate",
+        "activate",
+        "aim at",
+        "assail",
+        "assault",
+        "atomize",
+        "attack",
+        "barrage",
+        "batter",
+        "besiege",
+        "blast",
+        "blitz",
+        "blow to pieces",
+        "blow up",
+        "bomb",
+        "cannon",
+        "cannonade",
+        "cleave",
+        "commence firing",
+        "cross-bombard",
+        "enfilade",
+        "fire a volley",
+        "fire at",
+        "fire upon",
+        "fission",
+        "fusillade",
+        "mine",
+        "mortar",
+        "nucleize",
+        "open fire",
+        "open up on",
+        "pepper",
+        "pop at",
+        "rake",
+        "set upon",
+        "shell",
+        "shoot",
+        "shoot at",
+        "smash the atom",
+        "snipe",
+        "snipe at",
+        "spring",
+        "strafe",
+        "strike",
+        "take aim at",
+        "torpedo",
+        "zero in on"
+      ]
+    },
+    "bombardman": {
+      "word": "BOMBARDMAN",
+      "definitions": [
+        {
+          "text": "One who carried liquor or beer in a can or bombard. [Obs.] They . . . made room for a bombardman that brought bouge for a country lady. B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombardment": {
+      "word": "BOMBARDMENT",
+      "definitions": [
+        {
+          "text": "An attack upon a fortress or fortified town, with shells, hot shot, rockets, etc.; the act of throwing bombs and shot into a town or fortified place.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "air raid",
+        "alpha decay",
+        "atom-chipping",
+        "atom-smashing",
+        "atomic disintegration",
+        "atomic reaction",
+        "atomization",
+        "beta decay",
+        "blitz",
+        "blitzkrieg",
+        "breeding",
+        "broadside",
+        "bullet",
+        "burst",
+        "cannonade",
+        "chain reaction",
+        "cleavage",
+        "disintegration series",
+        "dissociation",
+        "drumfire",
+        "exchange reaction",
+        "fission",
+        "fission reaction",
+        "fusillade",
+        "gamma decay",
+        "hail",
+        "ionization",
+        "lightning attack",
+        "lightning war",
+        "neutron reaction",
+        "nonreversible reaction",
+        "nuclear fission",
+        "nucleization",
+        "photodisintegration",
+        "proton gun",
+        "proton reaction",
+        "reversible reaction",
+        "salvo",
+        "shower",
+        "splitting the atom",
+        "stimulation",
+        "strafe",
+        "strafing",
+        "target",
+        "thermonuclear reaction",
+        "volley"
+      ]
+    },
+    "bombardobombardon": {
+      "word": "BOMBARDO; BOMBARDON",
+      "definitions": [
+        {
+          "text": "Originally, a deep-toned instrument of the oboe or bassoon family; thence, a bass reed stop on the organ. The name bombardon is now given to a brass instrument, the lowest of the saxhorns, in tone resembling the ophicleide. Grove.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombasine": {
+      "word": "BOMBASINE",
+      "definitions": [
+        {
+          "text": "Same as Bombazine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombast": {
+      "word": "BOMBAST",
+      "definitions": [
+        {
+          "text": "Originally, cotton, or cotton wool. [Obs.] A candle with a wick of bombast. Lupton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Cotton, or any soft, fibrous material, used as stuffing for garments; stuffing; padding. [Obs.] How now, my sweet creature of bombast! Shak. Doublets, stuffed with four, five, or six pounds of bombast at least. Stubbes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fig.: High-sounding words; an inflated style; language above the dignity of the occasion; fustian. Yet noisy bombast carefully avoid. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "High-sounding; inflated; big without meaning; magniloquent; bombastic. [He] evades them with a bombast circumstance, Horribly stuffed with epithets of war. Shak. Nor a tall metaphor in bombast way. Cowley.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To swell or fill out; to pad; to inflate. [Obs.] Not bombasted with words vain ticklish ears to feed. Drayton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "absurdity",
+        "amphigory",
+        "babble",
+        "babblement",
+        "balderdash",
+        "bibble-babble",
+        "blabber",
+        "blather",
+        "bluster",
+        "boast",
+        "boastfulness",
+        "boasting",
+        "bombastry",
+        "brag",
+        "braggadocio",
+        "braggartism",
+        "bragging",
+        "bravado",
+        "claptrap",
+        "conceit",
+        "double-talk",
+        "drivel",
+        "drool",
+        "fanfaronade",
+        "fiddle-faddle",
+        "fiddledeedee",
+        "flatulence",
+        "flummery",
+        "folderol",
+        "fudge",
+        "fustian",
+        "gabble",
+        "galimatias",
+        "gammon",
+        "gasconade",
+        "gasconism",
+        "gibber",
+        "gibberish",
+        "gibble-gabble",
+        "gobbledygook",
+        "grandiloquence",
+        "heroics",
+        "highfalutin",
+        "hocus-pocus",
+        "hot air",
+        "humbug",
+        "jabber",
+        "jactation",
+        "jactitation",
+        "jargon",
+        "lexiphanicism",
+        "magniloquence",
+        "mumbo jumbo",
+        "narrishkeit",
+        "niaiserie",
+        "nonsense",
+        "orotundity",
+        "pack of nonsense",
+        "palaver",
+        "prate",
+        "prattle",
+        "puffery",
+        "pyrotechnics",
+        "rant",
+        "rhapsody",
+        "rhetoric",
+        "rigamarole",
+        "rigmarole",
+        "rodomontade",
+        "rubbish",
+        "sesquipedality",
+        "show",
+        "side",
+        "skimble-skamble",
+        "stuff and nonsense",
+        "stultiloquence",
+        "swagger",
+        "trash",
+        "trumpery",
+        "tumidity",
+        "turgidity",
+        "twaddle",
+        "twattle",
+        "twiddle-twaddle",
+        "vanity",
+        "vaporing",
+        "vaunt",
+        "vauntery",
+        "vaunting",
+        "waffling"
+      ]
+    },
+    "bombastry": {
+      "word": "BOMBASTRY",
+      "definitions": [
+        {
+          "text": "Swelling words without much meaning; bombastic language; fustian. Bombastry and buffoonery, by nature lofty and light, soar highest of all. Swift.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombax": {
+      "word": "BOMBAX",
+      "definitions": [
+        {
+          "text": "A genus of trees, called also the silkcotton tree; also, a tree of the genus Bombax.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombazetbombazette": {
+      "word": "BOMBAZET; BOMBAZETTE",
+      "definitions": [
+        {
+          "text": "A sort of thin woolen cloth. It is of various colors, and may be plain or twilled.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombazine": {
+      "word": "BOMBAZINE",
+      "definitions": [
+        {
+          "text": "A twilled fabric for dresses, of which the warp is silk, and the weft worsted. Black bombazine has been much used for mourning garments. [Sometimes spelt bombasin, and bombasine.] Tomlinson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombic": {
+      "word": "BOMBIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or obtained from, the silkworm; as, bombic acid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombilate": {
+      "word": "BOMBILATE",
+      "definitions": [
+        {
+          "text": "To hum; to buzz. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombilation": {
+      "word": "BOMBILATION",
+      "definitions": [
+        {
+          "text": "A humming sound; a booming. To . . . silence the bombilation of guns. Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombinate": {
+      "word": "BOMBINATE",
+      "definitions": [
+        {
+          "text": "To hum; to boom.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombination": {
+      "word": "BOMBINATION",
+      "definitions": [
+        {
+          "text": "A humming or buzzing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombolo": {
+      "word": "BOMBOLO",
+      "definitions": [
+        {
+          "text": "A thin spheroidal glass retort or flask, used in the sublimation of camphor. [Written also bumbelo, and bumbolo.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombproof": {
+      "word": "BOMBPROOF",
+      "definitions": [
+        {
+          "text": "Secure against the explosive force of bombs.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A structure which heavy shot and shell will not penetrate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombshell": {
+      "word": "BOMBSHELL",
+      "definitions": [
+        {
+          "text": "A bomb. See Bomb, n.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aerial bomb",
+        "antipersonnel bomb",
+        "astonishment",
+        "blockbuster",
+        "blow",
+        "bomb",
+        "carcass",
+        "catch",
+        "concussion grenade",
+        "depth bomb",
+        "depth charge",
+        "earthshaker",
+        "eye-opener",
+        "fire bomb",
+        "gas grenade",
+        "grenade",
+        "hand grenade",
+        "incendiary bomb",
+        "incendiary grenade",
+        "infernal machine",
+        "joker",
+        "kicker",
+        "peripeteia",
+        "petard",
+        "revelation",
+        "shock",
+        "shocker",
+        "staggerer",
+        "startler",
+        "surprisal",
+        "surprise",
+        "surprise ending",
+        "surprise package",
+        "surprise party",
+        "switch",
+        "tear-gas grenade",
+        "thunderbolt",
+        "thunderclap",
+        "time bomb",
+        "wall grenade"
+      ]
+    },
+    "bombycid": {
+      "word": "BOMBYCID",
+      "definitions": [
+        {
+          "text": "Like or pertaining to the genus Bombyx, or the family Bombycidæ.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombycinous": {
+      "word": "BOMBYCINOUS",
+      "definitions": [
+        {
+          "text": "Silken; made of silk. [Obs.] Coles.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Being of the color of the silkworm; transparent with a yellow tint. E. Darwin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombylious": {
+      "word": "BOMBYLIOUS",
+      "definitions": [
+        {
+          "text": "Buzzing, like a bumblebee; as, the bombylious noise of the horse fly. [Obs.] Derham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bombyx": {
+      "word": "BOMBYX",
+      "definitions": [
+        {
+          "text": "A genus of moths, which includes the silkworm moth. See Silkworm.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

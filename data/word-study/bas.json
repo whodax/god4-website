@@ -1,0 +1,4111 @@
+{
+  "version": "v1",
+  "entries": {
+    "basal": {
+      "word": "BASAL",
+      "definitions": [
+        {
+          "text": "Relating to, or forming, the base. Basal cleavage. See under Cleavage. horizontal axis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ab ovo",
+        "aboriginal",
+        "basic",
+        "basilar",
+        "beginning",
+        "bottom",
+        "bottommost",
+        "central",
+        "constituent",
+        "constitutive",
+        "crucial",
+        "elemental",
+        "elementary",
+        "embryonic",
+        "essential",
+        "foundational",
+        "fundamental",
+        "generative",
+        "genetic",
+        "germinal",
+        "gut",
+        "in embryo",
+        "in ovo",
+        "lowermost",
+        "lowest",
+        "material",
+        "nethermost",
+        "of the essence",
+        "original",
+        "pregnant",
+        "primal",
+        "primary",
+        "primeval",
+        "primitive",
+        "primordial",
+        "pristine",
+        "protogenic",
+        "radical",
+        "rudimental",
+        "rudimentary",
+        "seminal",
+        "substantial",
+        "substantive",
+        "underlying",
+        "undermost"
+      ]
+    },
+    "basalnerved": {
+      "word": "BASAL-NERVED",
+      "definitions": [
+        {
+          "text": "Having the nerves radiating from the base; -- said of leaves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basalt": {
+      "word": "BASALT",
+      "definitions": [
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rock of igneous origin, consisting of augite and triclinic feldspar, with grains of magnetic or titanic iron, and also bottle- green particles of olivine frequently disseminated. shade, or black. It constitutes immense beds in some regions, and also occurs in veins or dikes cutting through other rocks. It has often a prismatic structure as at the Giant's Causeway, in Ireland, where the columns are as regular as if the work of art. It is a very tough and heavy rock, and is one of the best materials for macadamizing roads.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An imitation, in pottery, of natural basalt; a kind of black porcelain.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aa",
+        "abyssal rock",
+        "bedrock",
+        "block lava",
+        "brash",
+        "breccia",
+        "conglomerate",
+        "crag",
+        "druid stone",
+        "festooned pahoehoe",
+        "gneiss",
+        "granite",
+        "igneous rock",
+        "lava",
+        "limestone",
+        "living rock",
+        "magma",
+        "mantlerock",
+        "metamorphic rock",
+        "monolith",
+        "pahoehoe",
+        "pillow lava",
+        "porphyry",
+        "pudding stone",
+        "regolith",
+        "rock",
+        "ropy lava",
+        "rubble",
+        "rubblestone",
+        "sandstone",
+        "sarsen",
+        "schist",
+        "scoria",
+        "scree",
+        "sedimentary rock",
+        "shelly pahoehoe",
+        "stone",
+        "talus",
+        "tufa",
+        "tuff"
+      ]
+    },
+    "basaltic": {
+      "word": "BASALTIC",
+      "definitions": [
+        {
+          "text": "Pertaining to basalt; formed of, or containing, basalt; as basaltic lava.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basaltiform": {
+      "word": "BASALTIFORM",
+      "definitions": [
+        {
+          "text": "In the form of basalt; columnar.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basaltoid": {
+      "word": "BASALTOID",
+      "definitions": [
+        {
+          "text": "Formed like basalt; basaltiform.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basan": {
+      "word": "BASAN",
+      "definitions": [
+        {
+          "text": "Same as Basil, a sheepskin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basanite": {
+      "word": "BASANITE",
+      "definitions": [
+        {
+          "text": "Lydian stone, or black jasper, a variety of siliceous or flinty slate, of a grayish or bluish black color. It is employed to test the purity of gold, the amount of alloy being indicated by the color left on the stone when rubbed by the metal.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basbleu": {
+      "word": "BASBLEU",
+      "definitions": [
+        {
+          "text": "A bluestocking; a literary woman. [Somewhat derisive]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bascinet": {
+      "word": "BASCINET",
+      "definitions": [
+        {
+          "text": "A light helmet, at first open, but later made with a visor. [Written also basinet, bassinet, basnet.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bascule": {
+      "word": "BASCULE",
+      "definitions": [
+        {
+          "text": "In mechanics an apparatus on the principle of the seesaw, in which one end rises as the other falls. Bascule bridge, a counterpoise or balanced drawbridge, which is opened by sinking the counterpoise and thus lifting the footway into the air.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "base": {
+      "word": "BASE",
+      "definitions": [
+        {
+          "text": "Of little, or less than the usual, height; of low growth; as, base shrubs. [Archaic] Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Low in place or position. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of humble birth; or low degree; lowly; mean. [Archaic] \"A pleasant and base swain.\" Bacon.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Illegitimate by birth; bastard. [Archaic] Why bastard wherefore base Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of little comparative value, as metal inferior to gold and silver, the precious metals.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Alloyed with inferior metal; debased; as, base coin; base bullion.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Morally low. Hence: Low-minded; unworthy; without dignity of sentiment; ignoble; mean; illiberal; menial; as, a base fellow; base motives; base occupations. \"A cruel act of a base and a cowardish mind.\" Robynson (More's Utopia). \"Base ingratitude.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not classical or correct. \"Base Latin.\" Fuller.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Deep or grave in sound; as, the base tone of a violin. [In this sense, commonly written bass.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not held by honorable service; as, a base estate, one held by services not honorable; held by villenage. Such a tenure is called base, or low, and the tenant, a base tenant. Base fee, formerly, an",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The bottom of anything, considered as its support, or that on which something rests for support; the foundation; as, the base of a statue. \"The base of mighty mountains.\" Prescott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fig.: The fundamental or essential part of a thing; the essential principle; a groundwork.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.) (a) The lower part of a wall, pier, or column, when treated as a separate feature, usually in projection, or especially ornamented. (b) The lower part of a complete architectural design, as of a monument; also, the lower part of any elaborate piece of furniture or decoration.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That extremity of a leaf, fruit, etc., at which it is attached to its support.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The positive, or non-acid component of a salt; a substance which, combined with an acid, neutralizes the latter and forms a salt; -- applied also to the hydroxides of the positive elements or radicals, and to certain organic bodies resembling them in their property of forming salts with acids.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Pharmacy)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The chief ingredient in a compound.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Dyeing)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A substance used as a mordant. Ure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Fort.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The exterior side of the polygon, or that imaginary line which connects the salient angles of two adjacent bastions.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geom.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The line or surface constituting that part of a figure on which it is supposed to stand.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The number from which a mathematical table is constructed; as, the base of a system of logarithms.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [See Base low.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A low, or deep, sound. (Mus.) (a) The lowest part; the deepest male voice. (b) One who sings, or the instrument which plays, base. [Now commonly written bass.] The trebles squeak for fear, the bases roar. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A place or tract of country, protected by fortifications, or by natural advantages, from which the operations of an army proceed, forward movements are made, supplies are furnished, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The smallest kind of cannon. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That part of an organ by which it is attached to another more central organ.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Crystallog.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The basal plane of a crystal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ground mass of a rock, especially if not distinctly crystalline.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The lower part of the field. See Escutcheon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The housing of a horse. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of skirt ( often of velvet or brocade, but sometimes of mailed armor) which hung from the middle to about the knees, or lower. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The lower part of a robe or petticoat. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An apron. [Obs.] \"Bakers in their linen bases.\" Marston.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The point or line from which a start is made; a starting place or a goal in various games. To their appointed base they went. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Surv.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A line in a survey which, being accurately determined in length and position, serves as the origin from which to compute the distances and positions of any points or objects connected with it by a system of triangles. Lyman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rustic play; -- called also prisoner's base, prison base, or bars. \"To run the country base.\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Baseball)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any one of the four bounds which mark the circuit of the infield. Altern base. See under Altern. foundation wall, made of large stones of a mass of concrete; -- called also foundation course. (b) The architectural member forming the transition between the basement and the wall above. error on the part of his opponents, is able to reach the first base without being put out. military operations. (b) A line traced round a cannon at the rear of the vent. steam engine; the bed plate. breech, connected with the body of the gun by a concave molding. H. L. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To put on a base or basis; to lay the foundation of; to found, as an argument or conclusion; -- used with on or upon. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To abase; to let, or cast, down; to lower. [Obs.] If any . . . based his pike. Sir T. North.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To reduce the value of; to debase. [Obs.] Metals which we can not base. Bacon.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "CP",
+        "GHQ",
+        "HQ",
+        "Mickey Mouse",
+        "abhorrent",
+        "abject",
+        "abominable",
+        "acid",
+        "acidity",
+        "agent",
+        "alkali",
+        "alkalinity",
+        "alloisomer",
+        "anchor",
+        "angle",
+        "anion",
+        "antacid",
+        "antecedents",
+        "arrant",
+        "atom",
+        "atrocious",
+        "awful",
+        "background",
+        "bad",
+        "baluster",
+        "balustrade",
+        "banister",
+        "base of operations",
+        "base-minded",
+        "baseboard",
+        "baseborn",
+        "basement",
+        "basis",
+        "bearing wall",
+        "beastly",
+        "bed",
+        "bed on",
+        "bedding",
+        "bedrock",
+        "beggarly",
+        "below contempt",
+        "beneath contempt",
+        "biochemical",
+        "black",
+        "blackguardly",
+        "blamable",
+        "blameworthy",
+        "bolster",
+        "bottom",
+        "bottom on",
+        "brutal",
+        "build",
+        "build in",
+        "build on",
+        "buttress",
+        "caitiff",
+        "call",
+        "camp",
+        "caryatid",
+        "cation",
+        "causation",
+        "cause",
+        "cause and effect",
+        "center of authority",
+        "central administration",
+        "central office",
+        "central station",
+        "chassis",
+        "cheap",
+        "cheesy",
+        "chemical",
+        "chemical element",
+        "chromoisomer",
+        "clown white",
+        "coarse",
+        "cold cream",
+        "collector",
+        "colonnade",
+        "column",
+        "command post",
+        "common",
+        "compact",
+        "company headquarters",
+        "compound",
+        "construct",
+        "contemptible",
+        "copolymer",
+        "core",
+        "corrupt",
+        "cosmetics",
+        "counterfeit",
+        "cowardly",
+        "craven",
+        "criminal",
+        "crude",
+        "crummy",
+        "dado",
+        "damnable",
+        "dark",
+        "dastard",
+        "dastardly",
+        "debased",
+        "deficient",
+        "degraded",
+        "degrading",
+        "deplorable",
+        "depraved",
+        "derive",
+        "despicable",
+        "determinant",
+        "determinative",
+        "detestable",
+        "die",
+        "dimer",
+        "dire",
+        "dirty",
+        "disgraceful",
+        "disgusting",
+        "dishonorable",
+        "disreputable",
+        "distance",
+        "downtrodden",
+        "draw",
+        "dreadful",
+        "drugstore complexion",
+        "dunghill",
+        "dunghilly",
+        "egregious",
+        "element",
+        "emitter",
+        "enormous",
+        "establish",
+        "etiology",
+        "evil",
+        "evil-minded",
+        "execrable",
+        "eye shadow",
+        "eyebrow pencil",
+        "factor",
+        "fake",
+        "fetid",
+        "filamentary transistor",
+        "filthy",
+        "fix",
+        "flagitious",
+        "flagrant",
+        "floor",
+        "flooring",
+        "fond",
+        "foot",
+        "footing",
+        "footstalk",
+        "forbidding",
+        "forged",
+        "form",
+        "foul",
+        "found",
+        "found on",
+        "foundation",
+        "foundation cream",
+        "fourth-class",
+        "frame",
+        "framework",
+        "fraudulent",
+        "fulsome",
+        "fundament",
+        "fundamental",
+        "general headquarters",
+        "germanium crystal triode",
+        "grave",
+        "greasepaint",
+        "grievous",
+        "gross",
+        "ground",
+        "ground on",
+        "grounds",
+        "groundwork",
+        "hand cream",
+        "hand lotion",
+        "hardpan",
+        "hateful",
+        "headquarters",
+        "heavy chemicals",
+        "heinous",
+        "high polymer",
+        "hinge",
+        "home",
+        "homopolymer",
+        "hook-collector transistor",
+        "horrible",
+        "horrid",
+        "humble",
+        "humiliating",
+        "hydracid",
+        "ignoble",
+        "ignominious",
+        "imperfect",
+        "improper",
+        "inadequate",
+        "incompetent",
+        "indecent",
+        "infamous",
+        "inferior",
+        "infra dig",
+        "infrastructure",
+        "iniquitous",
+        "inorganic chemical",
+        "install",
+        "insufferable",
+        "insufficient",
+        "invest",
+        "ion",
+        "irregular",
+        "isomer",
+        "jack",
+        "keel",
+        "knavish",
+        "lamentable",
+        "lascivious",
+        "lay the foundation",
+        "lewd",
+        "line of departure",
+        "lip rouge",
+        "lipstick",
+        "little",
+        "loathsome",
+        "lousy",
+        "low",
+        "low-class",
+        "low-down",
+        "low-grade",
+        "low-minded",
+        "low-quality",
+        "low-test",
+        "lowborn",
+        "lower strata",
+        "lowest level",
+        "lowest point",
+        "lowly",
+        "lumpen",
+        "macromolecule",
+        "main office",
+        "makeup",
+        "maladroit",
+        "malodorous",
+        "mangy",
+        "mascara",
+        "mean",
+        "measly",
+        "mediocre",
+        "menial",
+        "mephitic",
+        "metamer",
+        "miasmal",
+        "miasmic",
+        "miserable",
+        "molecule",
+        "monomer",
+        "monstrous",
+        "mopboard",
+        "mudpack",
+        "nadir",
+        "nail polish",
+        "nasty",
+        "naughty",
+        "nauseating",
+        "nefarious",
+        "neutralizer",
+        "newel-post",
+        "noisome",
+        "nonacid",
+        "not comparable",
+        "not in it",
+        "notorious",
+        "noxious",
+        "objectionable",
+        "obnoxious",
+        "obscene",
+        "occasion",
+        "odious",
+        "offensive",
+        "organic chemical",
+        "ornery",
+        "out of it",
+        "outrageous",
+        "oxyacid",
+        "paint",
+        "paltry",
+        "pavement",
+        "peccant",
+        "pedestal",
+        "pedicel",
+        "peduncle",
+        "perspective",
+        "petty",
+        "pier",
+        "pilaster",
+        "pile",
+        "piling",
+        "pillar",
+        "pinchbeck",
+        "pitch",
+        "pitiable",
+        "pitiful",
+        "place",
+        "plant",
+        "plebeian",
+        "plinth",
+        "point of departure",
+        "point-contact transistor",
+        "poky",
+        "pole",
+        "poltroon",
+        "poltroonish",
+        "polymer",
+        "poor",
+        "pornographic",
+        "port of embarkation",
+        "position",
+        "post",
+        "powder",
+        "powder puff",
+        "predicate",
+        "principle",
+        "profane",
+        "prop",
+        "pseudoisomer",
+        "puff",
+        "punk",
+        "pusillanimous",
+        "put in",
+        "put up",
+        "queen-post",
+        "radical",
+        "rank",
+        "rascally",
+        "reagent",
+        "rebarbative",
+        "recreant",
+        "regrettable",
+        "repellent",
+        "reprehensible",
+        "reprobate",
+        "reptilian",
+        "repugnant",
+        "repulsive",
+        "rest",
+        "revolting",
+        "ribald",
+        "riprap",
+        "rock bottom",
+        "roguish",
+        "root",
+        "rotten",
+        "rouge",
+        "rubbishy",
+        "rude",
+        "rudiment",
+        "sad",
+        "scabby",
+        "scampish",
+        "scandalous",
+        "schlock",
+        "scoundrelly",
+        "scrubby",
+        "scruffy",
+        "scummy",
+        "scurrilous",
+        "scurvy",
+        "seat",
+        "seating",
+        "second-best",
+        "second-class",
+        "secure",
+        "seedy",
+        "selfish",
+        "servile",
+        "set",
+        "set on",
+        "set up",
+        "shabby",
+        "shaft",
+        "shameful",
+        "shocking",
+        "shoddy",
+        "shoemold",
+        "sickening",
+        "sill",
+        "sinful",
+        "slavish",
+        "sleazy",
+        "small",
+        "socle",
+        "sole",
+        "solid ground",
+        "solid rock",
+        "sordid",
+        "sorry",
+        "spacistor",
+        "spurious",
+        "squalid",
+        "staff",
+        "stalk",
+        "stanchion",
+        "stand",
+        "standard",
+        "standing",
+        "start",
+        "starting gate",
+        "starting place",
+        "starting point",
+        "starting post",
+        "station",
+        "status",
+        "stay",
+        "stem",
+        "stereobate",
+        "stimulus",
+        "stinking",
+        "stylobate",
+        "subbase",
+        "submissive",
+        "subservient",
+        "substratum",
+        "substruction",
+        "substructure",
+        "sulfacid",
+        "support",
+        "surbase",
+        "tacky",
+        "takeoff",
+        "talcum",
+        "talcum powder",
+        "tatty",
+        "terra firma",
+        "terrible",
+        "tetrode transistor",
+        "theme",
+        "third-class",
+        "third-rate",
+        "tinny",
+        "toe",
+        "too bad",
+        "transistor",
+        "trashy",
+        "trimer",
+        "trivial",
+        "trunk",
+        "ugly",
+        "unclean",
+        "underbuilding",
+        "undercarriage",
+        "undergird",
+        "undergirding",
+        "underlie",
+        "underlying level",
+        "underpinning",
+        "understruction",
+        "understructure",
+        "undignified",
+        "unforgivable",
+        "unipolar transistor",
+        "unmentionable",
+        "unpardonable",
+        "unseemly",
+        "unskillful",
+        "unspeakable",
+        "unwashed",
+        "unworthy",
+        "upright",
+        "vanishing cream",
+        "vanity case",
+        "venue",
+        "vest",
+        "vicious",
+        "viewpoint",
+        "vile",
+        "villainous",
+        "vulgar",
+        "wainscot",
+        "war paint",
+        "warrant",
+        "wicked",
+        "woeful",
+        "worst",
+        "worthless",
+        "wretched",
+        "wrong"
+      ]
+    },
+    "baseball": {
+      "word": "BASEBALL",
+      "definitions": [
+        {
+          "text": "A game of ball, so called from the bases or bounds ( four in number) which designate the circuit which each player must endeavor to make after striking the ball.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ball used in this game.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baseboard": {
+      "word": "BASEBOARD",
+      "definitions": [
+        {
+          "text": "A board, or other woodwork, carried round the walls of a room and touching the floor, to form a base and protect the plastering; -- also called washboard (in England), mopboard, and scrubboard.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baseborn": {
+      "word": "BASEBORN",
+      "definitions": [
+        {
+          "text": "Born out of wedlock. Gay.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Born of low parentage.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Vile; mean. \"Thy baseborn heart.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "base",
+        "bastard",
+        "below the salt",
+        "cockney",
+        "common",
+        "commonplace",
+        "false",
+        "fatherless",
+        "homely",
+        "humble",
+        "illegitimate",
+        "low",
+        "lowborn",
+        "lowbred",
+        "lowly",
+        "mean",
+        "misbegotten",
+        "miscreated",
+        "natural",
+        "nonclerical",
+        "ordinary",
+        "plain",
+        "plebeian",
+        "rude",
+        "shabby-genteel",
+        "spurious",
+        "supposititious",
+        "third-estate",
+        "ungenteel",
+        "unwashed",
+        "vulgar"
+      ]
+    },
+    "baseburner": {
+      "word": "BASE-BURNER",
+      "definitions": [
+        {
+          "text": "A furnace or stove in which the fuel is contained in a hopper or chamber, and is fed to the fire as the lower stratum is consumed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basecourt": {
+      "word": "BASE-COURT",
+      "definitions": [
+        {
+          "text": "The secondary, inferior, or rear courtyard of a large house; the outer court of a castle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An inferior court of law, not of record.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "based": {
+      "word": "BASED",
+      "definitions": [
+        {
+          "text": "Having a base, or having as a base; supported; as, broad-based.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Etym: [See Base, n., 18-21.]",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Wearing, or protected by, bases. [Obs.] \"Based in lawny velvet.\" E. Hall.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "basedow'sdisease": {
+      "word": "BASEDOW'S DISEASE",
+      "definitions": [
+        {
+          "text": "A disease characterized by enlargement of the thyroid gland, prominence of the eyeballs, and inordinate action of the heart; -- called also exophthalmic goiter. Flint.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "baselard": {
+      "word": "BASELARD",
+      "definitions": [
+        {
+          "text": "A short sword or dagger, worn in the fifteenth century. [Written also baslard.] Fairholt.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baseless": {
+      "word": "BASELESS",
+      "definitions": [
+        {
+          "text": "Without a base; having no foundation or support. \"The baseless fabric of this vision.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bottomless",
+        "built on sand",
+        "empty",
+        "false",
+        "gratuitous",
+        "groundless",
+        "idle",
+        "ill-founded",
+        "indefensible",
+        "needless",
+        "not well-founded",
+        "pointless",
+        "reasonless",
+        "senseless",
+        "unbased",
+        "uncalled-for",
+        "unfounded",
+        "ungrounded",
+        "unjustifiable",
+        "unnecessary",
+        "unneeded",
+        "unsolid",
+        "unsupportable",
+        "unsupported",
+        "unsustainable",
+        "unsustained",
+        "untenable",
+        "unwarranted",
+        "vain",
+        "without basis",
+        "without foundation",
+        "wrong"
+      ]
+    },
+    "basely": {
+      "word": "BASELY",
+      "definitions": [
+        {
+          "text": "In a base manner; with despicable meanness; dishonorably; shamefully.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Illegitimately; in bastardy. [Archaic] Knolles.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basement": {
+      "word": "BASEMENT",
+      "definitions": [
+        {
+          "text": "The outer wall of the ground story of a building, or of a part",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "WC",
+        "archives",
+        "armory",
+        "arsenal",
+        "attic",
+        "backhouse",
+        "bank",
+        "base",
+        "baseboard",
+        "basis",
+        "bathroom",
+        "bay",
+        "bearing wall",
+        "bed",
+        "bedding",
+        "bedrock",
+        "bin",
+        "bonded warehouse",
+        "bookcase",
+        "bottom",
+        "box",
+        "bunker",
+        "buttery",
+        "can",
+        "cargo dock",
+        "cellar",
+        "cellarage",
+        "chassis",
+        "chest",
+        "closet",
+        "coal bin",
+        "comfort station",
+        "conservatory",
+        "convenience",
+        "crapper",
+        "crate",
+        "crib",
+        "cupboard",
+        "cyclone cellar",
+        "dado",
+        "depository",
+        "depot",
+        "dock",
+        "drawer",
+        "dump",
+        "earth closet",
+        "exchequer",
+        "floor",
+        "flooring",
+        "fond",
+        "foot",
+        "footing",
+        "foundation",
+        "frame",
+        "fundament",
+        "fundamental",
+        "glory hole",
+        "godown",
+        "ground",
+        "grounds",
+        "groundwork",
+        "hardpan",
+        "head",
+        "hold",
+        "hole",
+        "hutch",
+        "john",
+        "johnny",
+        "johnny house",
+        "keel",
+        "latrine",
+        "lavatory",
+        "library",
+        "locker",
+        "lumber room",
+        "lumberyard",
+        "magasin",
+        "magazine",
+        "mopboard",
+        "nadir",
+        "necessary",
+        "outhouse",
+        "pavement",
+        "potato cellar",
+        "powder room",
+        "principle",
+        "privy",
+        "rack",
+        "radical",
+        "repertory",
+        "repository",
+        "reservoir",
+        "rest room",
+        "rick",
+        "riprap",
+        "rock bottom",
+        "rudiment",
+        "seat",
+        "shelf",
+        "shoemold",
+        "sill",
+        "sole",
+        "solid ground",
+        "solid rock",
+        "stack",
+        "stack room",
+        "stereobate",
+        "stock room",
+        "storage",
+        "store",
+        "storehouse",
+        "storeroom",
+        "storm cellar",
+        "stylobate",
+        "subbasement",
+        "substratum",
+        "substruction",
+        "substructure",
+        "supply base",
+        "supply depot",
+        "tank",
+        "terra firma",
+        "toe",
+        "toilet",
+        "toilet room",
+        "treasure house",
+        "treasure room",
+        "treasury",
+        "underbuilding",
+        "undercarriage",
+        "undergirding",
+        "underpinning",
+        "understruction",
+        "understructure",
+        "urinal",
+        "vat",
+        "vault",
+        "wainscot",
+        "warehouse",
+        "washroom",
+        "water closet",
+        "wine cellar"
+      ]
+    },
+    "baseness": {
+      "word": "BASENESS",
+      "definitions": [
+        {
+          "text": "The quality or condition of being base; degradation; vileness. I once did hold it a baseness to write fair. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abjectness",
+        "abominability",
+        "abominableness",
+        "arrantness",
+        "atrociousness",
+        "awfulness",
+        "badness",
+        "beastliness",
+        "beggarliness",
+        "bestiality",
+        "brutality",
+        "chicanery",
+        "coarseness",
+        "commonness",
+        "commonplaceness",
+        "contemptibility",
+        "contemptibleness",
+        "contrariety",
+        "cravenness",
+        "crudeness",
+        "crumminess",
+        "dastardliness",
+        "debasement",
+        "deficiency",
+        "degradation",
+        "depravity",
+        "desertion under fire",
+        "despicability",
+        "despicableness",
+        "detestableness",
+        "devilishness",
+        "devilry",
+        "deviltry",
+        "direness",
+        "disgustingness",
+        "dreadfulness",
+        "egregiousness",
+        "enormity",
+        "evilness",
+        "execrableness",
+        "failure",
+        "fewness",
+        "fiendishness",
+        "filth",
+        "flagitiousness",
+        "foulness",
+        "fourth-rateness",
+        "fulsomeness",
+        "grossness",
+        "harshness",
+        "hatefulness",
+        "heinousness",
+        "hellishness",
+        "helotism",
+        "helotry",
+        "homeliness",
+        "horribleness",
+        "humbleness",
+        "ignobility",
+        "imperfection",
+        "inadequacy",
+        "incompetence",
+        "infamousness",
+        "inferiority",
+        "inferiorness",
+        "iniquitousness",
+        "insufficiency",
+        "knavery",
+        "knavishness",
+        "littleness",
+        "loathsomeness",
+        "lousiness",
+        "lowliness",
+        "lowness",
+        "maladroitness",
+        "meanness",
+        "mediocrity",
+        "menialness",
+        "miserableness",
+        "monstrousness",
+        "moral turpitude",
+        "nastiness",
+        "naughtiness",
+        "nauseousness",
+        "nefariousness",
+        "noisomeness",
+        "notoriousness",
+        "noxiousness",
+        "objectionability",
+        "objectionableness",
+        "obnoxiousness",
+        "obscenity",
+        "odiousness",
+        "offensiveness",
+        "ordinariness",
+        "outrageousness",
+        "paltriness",
+        "peonage",
+        "pettiness",
+        "plebeianism",
+        "pokiness",
+        "poltroonery",
+        "poltroonishness",
+        "poltroonism",
+        "poorness",
+        "pusillanimity",
+        "pusillanimousness",
+        "putridity",
+        "putridness",
+        "rankness",
+        "rascality",
+        "rascalry",
+        "rebarbativeness",
+        "repellence",
+        "repellency",
+        "reprobacy",
+        "repugnance",
+        "repulsiveness",
+        "roguery",
+        "roguishness",
+        "rottenness",
+        "scabbiness",
+        "scampishness",
+        "scandalousness",
+        "scoundrelism",
+        "scrubbiness",
+        "scruffiness",
+        "scumminess",
+        "scurviness",
+        "second-rateness",
+        "serfdom",
+        "servility",
+        "shabbiness",
+        "shamefulness",
+        "shoddiness",
+        "sinfulness",
+        "skedaddling",
+        "slavery",
+        "slavishness",
+        "smallness",
+        "sordidness",
+        "squalidness",
+        "squalor",
+        "submissiveness",
+        "subnormality",
+        "subservience",
+        "subserviency",
+        "terribleness",
+        "the pits",
+        "third-rateness",
+        "triviality",
+        "turpitude",
+        "uncleanness",
+        "unskillfulness",
+        "unspeakableness",
+        "viciousness",
+        "vileness",
+        "villainousness",
+        "villainy",
+        "vulgarity",
+        "wickedness",
+        "worthlessness",
+        "wretchedness"
+      ]
+    },
+    "basenet": {
+      "word": "BASENET",
+      "definitions": [
+        {
+          "text": "See Bascinet. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baseswilledwiththewildandwastefuloceanshak": {
+      "word": "base, Swilled with the wild and wasteful ocean. Shak.",
+      "definitions": [
+        {
+          "text": "To drink in great draughts; to swallow greedily. Well-dressed people, of both sexes, . . . devouring sliced beef, and swilling pork, and punch, and cider. Smollett.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To inebriate; to fill with drink. I should be loth To meet the rudeness and swilled insolence Of such late wassailers. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baseviol": {
+      "word": "BASE VIOL",
+      "definitions": [
+        {
+          "text": "See Bass viol.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bash": {
+      "word": "BASH",
+      "definitions": [
+        {
+          "text": "To abash; to disconcert or be disconcerted or put out of countenance. [Obs.] His countenance was bold and bashed not. Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "bang",
+        "bat",
+        "batter",
+        "beat",
+        "beating",
+        "belt",
+        "biff",
+        "blow",
+        "blowout",
+        "bonk",
+        "bruise",
+        "buffet",
+        "bung",
+        "bung up",
+        "chop",
+        "clap",
+        "clip",
+        "clobber",
+        "clout",
+        "clump",
+        "coldcock",
+        "contuse",
+        "crack",
+        "cut",
+        "dash",
+        "deal",
+        "deal a blow",
+        "deck",
+        "dig",
+        "dint",
+        "drub",
+        "drubbing",
+        "drumming",
+        "fetch",
+        "fetch a blow",
+        "fusillade",
+        "hit",
+        "hit a clip",
+        "jab",
+        "knock",
+        "knock cold",
+        "knock down",
+        "knock out",
+        "let have it",
+        "lick",
+        "maul",
+        "paste",
+        "pelt",
+        "plunk",
+        "poke",
+        "pound",
+        "punch",
+        "rap",
+        "shindy",
+        "slam",
+        "slog",
+        "slug",
+        "smack",
+        "smash",
+        "smite",
+        "snap",
+        "soak",
+        "sock",
+        "strike",
+        "strike at",
+        "stroke",
+        "swat",
+        "swing",
+        "swipe",
+        "tattoo",
+        "thump",
+        "thwack",
+        "wallop",
+        "whack",
+        "wham",
+        "whop",
+        "yerk"
+      ]
+    },
+    "bashaw": {
+      "word": "BASHAW",
+      "definitions": [
+        {
+          "text": "A Turkish title of honor, now written pasha. See Pasha.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fig.: A magnate or grandee.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A very large siluroid fish (Leptops olivaris) of the Mississippi valley; -- also called goujon, mud cat, and yellow cat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bashful": {
+      "word": "BASHFUL",
+      "definitions": [
+        {
+          "text": "Abashed; daunted; dismayed. [Obs.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Very modest, or modest excess; constitutionally disposed to shrink from public notice; indicating extreme or excessive modesty; shy; as, a bashful person, action, expression.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Olympian",
+        "abashed",
+        "aloof",
+        "autistic",
+        "awkward",
+        "backward",
+        "blank",
+        "blushful",
+        "boggling",
+        "chilled",
+        "chilly",
+        "close",
+        "cold",
+        "confused",
+        "conscious",
+        "constrained",
+        "cool",
+        "cowardly",
+        "coy",
+        "demure",
+        "demurring",
+        "detached",
+        "diffident",
+        "discreet",
+        "dissociable",
+        "distant",
+        "embarrassed",
+        "expressionless",
+        "faltering",
+        "fearful",
+        "fearing",
+        "fearsome",
+        "forbidding",
+        "frigid",
+        "frosty",
+        "goosy",
+        "guarded",
+        "hesitant",
+        "hesitating",
+        "icy",
+        "ill at ease",
+        "impassive",
+        "impersonal",
+        "in a tizzy",
+        "in fear",
+        "inaccessible",
+        "inarticulate",
+        "incompatible",
+        "insociable",
+        "introverted",
+        "jumpy",
+        "meek",
+        "modest",
+        "mopey",
+        "mopish",
+        "morose",
+        "mousy",
+        "nervous",
+        "nongregarious",
+        "offish",
+        "qualmish",
+        "rabbity",
+        "recoiling",
+        "remote",
+        "removed",
+        "repressed",
+        "reserved",
+        "restrained",
+        "reticent",
+        "retiring",
+        "scary",
+        "scrupulous",
+        "self-conscious",
+        "self-contained",
+        "self-effacing",
+        "self-sufficient",
+        "shaky",
+        "shamefaced",
+        "shamefast",
+        "sheepish",
+        "shivery",
+        "shrinking",
+        "shy",
+        "skittery",
+        "skittish",
+        "snug",
+        "socially incompatible",
+        "squeamish",
+        "stammering",
+        "standoff",
+        "standoffish",
+        "startlish",
+        "stickling",
+        "subdued",
+        "sullen",
+        "suppressed",
+        "timid",
+        "timorous",
+        "trembling",
+        "tremulous",
+        "trepidant",
+        "trigger-happy",
+        "unaffable",
+        "unapproachable",
+        "unassertive",
+        "unassuming",
+        "unassured",
+        "unclubbable",
+        "uncomfortable",
+        "uncommunicative",
+        "uncompanionable",
+        "unconfident",
+        "uncongenial",
+        "undemonstrative",
+        "uneasy",
+        "unexpansive",
+        "unfriendly",
+        "ungenial",
+        "unostentatious",
+        "unsociable",
+        "unsocial",
+        "withdrawn"
+      ]
+    },
+    "bashfully": {
+      "word": "BASHFULLY",
+      "definitions": [
+        {
+          "text": "In a bashful manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bashfulness": {
+      "word": "BASHFULNESS",
+      "definitions": [
+        {
+          "text": "The quality of being bashful. low estimate of ourselves; bashfulness is an abashment or agitation of the spirits at coming into contact with others; diffidence is produced by an undue degree of self-distrust; shyness usually arises from an excessive self-consciousness, and a painful impression that every one is looking at us. Modesty of deportment is becoming at all; bashfulness often gives rise to mistakes and blundering; diffidence is society frequently makes a man a burden to himself; shyness usually produces a reserve or distance which is often mistaken for haughtiness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bashibazouk": {
+      "word": "BASHI-BAZOUK",
+      "definitions": [
+        {
+          "text": "A soldier belonging to the irregular troops of the Turkish army.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bashless": {
+      "word": "BASHLESS",
+      "definitions": [
+        {
+          "text": "Shameless; unblushing. [Obs.] Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bashyle": {
+      "word": "BASHYLE",
+      "definitions": [
+        {
+          "text": "See Basyle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basi": {
+      "word": "BASI-",
+      "definitions": [
+        {
+          "text": "A combining form, especially in anatomical and botanical words, to indicate the base or position at or near a base; forming a base; as, basibranchials, the most ventral of the cartilages or bones of the branchial arches; basicranial, situated at the base of the cranium; basifacial, basitemporal, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "basic": {
+      "word": "BASIC",
+      "definitions": [
+        {
+          "text": "(Chem.) (a) Relating to a base; performing the office of a base in a salt. (b) Having the base in excess, or the amount of the base atomically greater than that of the acid, or exceeding in proportion that of the related neutral salt. (c) Apparently alkaline, as certain normal salts which exhibit alkaline reactions with test paper.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Said of crystalline rocks which contain a relatively low percentage of silica, as basalt. Basic salt (Chem.), a salt formed from a base or hydroxide by the partial replacement of its hydrogen by a negative or acid element or radical.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ab ovo",
+        "aboriginal",
+        "acid",
+        "alkali",
+        "austere",
+        "bare",
+        "basal",
+        "basilar",
+        "bedrock",
+        "biochemical",
+        "bottom",
+        "capital",
+        "central",
+        "chaste",
+        "chemical",
+        "chemicobiological",
+        "chemicoengineering",
+        "chemicomineralogical",
+        "chemicophysical",
+        "chemurgic",
+        "chief",
+        "constituent",
+        "constitutive",
+        "copolymeric",
+        "copolymerous",
+        "crucial",
+        "dimeric",
+        "dimerous",
+        "electrochemical",
+        "element",
+        "elemental",
+        "elementary",
+        "embryonic",
+        "essential",
+        "focal",
+        "foundational",
+        "fundamental",
+        "generative",
+        "genetic",
+        "germinal",
+        "gut",
+        "heteromerous",
+        "homely",
+        "homespun",
+        "homogeneous",
+        "in embryo",
+        "in ovo",
+        "indispensable",
+        "indivisible",
+        "irreducible",
+        "isomerous",
+        "key",
+        "life-and-death",
+        "life-or-death",
+        "macrochemical",
+        "main",
+        "material",
+        "mere",
+        "metameric",
+        "monolithic",
+        "monomerous",
+        "nonacid",
+        "of a piece",
+        "of the essence",
+        "of vital importance",
+        "original",
+        "part and parcel",
+        "photochemical",
+        "physicochemical",
+        "phytochemical",
+        "plain",
+        "polymeric",
+        "pregnant",
+        "primal",
+        "primary",
+        "prime",
+        "primeval",
+        "primitive",
+        "primordial",
+        "principal",
+        "pristine",
+        "protogenic",
+        "pure",
+        "pure and simple",
+        "radical",
+        "radiochemical",
+        "root",
+        "rudiment",
+        "rudimentary",
+        "seminal",
+        "severe",
+        "simon-pure",
+        "simple",
+        "single",
+        "spare",
+        "stark",
+        "substantial",
+        "substantive",
+        "thermochemical",
+        "unadorned",
+        "uncluttered",
+        "underlying",
+        "undifferenced",
+        "undifferentiated",
+        "uniform",
+        "vital"
+      ]
+    },
+    "basicerite": {
+      "word": "BASICERITE",
+      "definitions": [
+        {
+          "text": "The second joint of the antennæ of crustaceans.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basicprocess": {
+      "word": "BASIC PROCESS",
+      "definitions": [
+        {
+          "text": "A Bessemer or open-hearth steel-making process in which a lining that is basic, or not siliceous, is used, and additions of basic material are made to the molten charge during treatment. Opposed to acid process, above. Called also Thomas process.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "basicslag": {
+      "word": "BASIC SLAG",
+      "definitions": [
+        {
+          "text": "A by-product from the manufacture of steel by the basic process, used as a fertilizer. It is rich in lime and contains 14 to 20 per cent of phosphoric acid. Called also Thomas slag, phosphatic slag, and odorless phosphate.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "basicsteel": {
+      "word": "BASIC STEEL",
+      "definitions": [
+        {
+          "text": "Steel produced by the basic process.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "basidiomycetes": {
+      "word": "BASIDIOMYCETES",
+      "definitions": [
+        {
+          "text": "A large subdivision of fungi coördinate with the Ascomycetes, characterized by having the spores borne on a basidium. It embraces those fungi best known to the public, such as mushrooms, toadstools, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basidium": {
+      "word": "BASIDIUM",
+      "definitions": [
+        {
+          "text": "A special oblong or pyriform cell, with slender branches, which bears the spores in that division of fungi called Basidiomycetes, of which the common mushroom is an example.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basifier": {
+      "word": "BASIFIER",
+      "definitions": [
+        {
+          "text": "That which converts into a salifiable base.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basifugal": {
+      "word": "BASIFUGAL",
+      "definitions": [
+        {
+          "text": "Tending or proceeding away from the base; as, a basifugal growth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basify": {
+      "word": "BASIFY",
+      "definitions": [
+        {
+          "text": "To convert into a salifiable base.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basigynium": {
+      "word": "BASIGYNIUM",
+      "definitions": [
+        {
+          "text": "The pedicel on which the ovary of certain flowers, as the passion flower, is seated; a carpophore or thecaphore.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basihyal": {
+      "word": "BASIHYAL",
+      "definitions": [
+        {
+          "text": "Noting two small bones, forming the body of the inverted hyoid arch.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basihyoid": {
+      "word": "BASIHYOID",
+      "definitions": [
+        {
+          "text": "The central tongue bone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basil": {
+      "word": "BASIL",
+      "definitions": [
+        {
+          "text": "The slope or angle to which the cutting edge of a tool, as a plane, is ground. Grier.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To grind or form the edge of to an angle. Moxon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The name given to several aromatic herbs of the Mint family, but chiefly to the common or sweet basil (Ocymum basilicum), and the bush basil, or lesser basil (O. minimum), the leaves of which are used in cookery. The name is also given to several kinds of mountain mint (Pycnanthemum). Basil thyme, a name given to the fragrant herbs Calamintha Acinos and C. Nepeta.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The skin of a sheep tanned with bark.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilarbasilary": {
+      "word": "BASILAR; BASILARY",
+      "definitions": [
+        {
+          "text": "Relating to, or situated at, the base.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lower; inferior; applied to impulses or springs of action. [R.] \"Basilar instincts.\" H. W. Beecher.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilic": {
+      "word": "BASILIC",
+      "definitions": [
+        {
+          "text": "Basilica.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilica": {
+      "word": "BASILICA",
+      "definitions": [
+        {
+          "text": "Originally, the place of a king; but afterward, an apartment provided in the houses of persons of importance, where assemblies were held for dispensing justice; and hence, any large hall used for this purpose.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.) (a) A building used by the Romans as a place of public meeting, with court rooms, etc., attached. (b) A church building of the earlier centuries of Christianity, the plan of which was taken from the basilica of the Romans. The name is still applied to some churches by way of honorary distinction.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A digest of the laws of Justinian, translated from the original Latin into Greek, by order of Basil I., in the ninth century. P. Cyc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilican": {
+      "word": "BASILICAN",
+      "definitions": [
+        {
+          "text": "Of, relating to, or resembling, a basilica; basilical. There can be no doubt that the first churches in Constantinople were in the basilican form. Milman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilicbasilical": {
+      "word": "BASILIC; BASILICAL",
+      "definitions": [
+        {
+          "text": "Royal; kingly; also, basilican.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to certain parts, anciently supposed to have a specially important function in the animal economy, as the middle vein of the right arm.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilicok": {
+      "word": "BASILICOK",
+      "definitions": [
+        {
+          "text": "The basilisk. [Obs.] Chaucer",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilicon": {
+      "word": "BASILICON",
+      "definitions": [
+        {
+          "text": "An ointment composed of wax, pitch, resin, and olive oil, lard, or other fatty substance.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilisk": {
+      "word": "BASILISK",
+      "definitions": [
+        {
+          "text": "A fabulous serpent, or dragon. The ancients alleged that its hissing would drive away all other serpents, and that its breath, and even its look, was fatal. See Cockatrice. Make me not sighted like the basilisk. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A lizard of the genus Basiliscus, belonging to the family Iguanidæ. occiput, which can be filled with air at pleasure; also for an elevated crest along the back, that can be raised or depressed at will.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A large piece of ordnance, so called from its supposed resemblance to the serpent of that name, or from its size. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basin": {
+      "word": "BASIN",
+      "definitions": [
+        {
+          "text": "A hollow vessel or dish, to hold water for washing, and for various other uses.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The quantity contained in a basin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hollow vessel, of various forms and materials, used in the arts or manufactures, as that used by glass grinders for forming concave glasses, by hatters for molding a hat into shape, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hollow place containing water, as a pond, a dock for ships, a little bay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Physical Geog.) (a) A circular or oval valley, or depression of the surface of the ground, the lowest part of which is generally occupied by a lake, or traversed by a river. (b) The entire tract of country drained by a river, or sloping towards a sea or lake.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An isolated or circumscribed formation, particularly where the strata dip inward, on all sides, toward a center; -- especially applied to the coal formations, called coal basins or coal fields.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "alkali flat",
+        "alluvial plain",
+        "alveolation",
+        "alveolus",
+        "anchorage",
+        "anchorage ground",
+        "antrum",
+        "aquamanile",
+        "armpit",
+        "automatic dishwasher",
+        "bath",
+        "bathtub",
+        "bed",
+        "berth",
+        "bidet",
+        "bottom",
+        "bottomland",
+        "bowl",
+        "breakwater",
+        "bulkhead",
+        "bushveld",
+        "campo",
+        "catch basin",
+        "cavity",
+        "cereal bowl",
+        "champaign",
+        "champaign country",
+        "channel",
+        "cistern",
+        "coastal plain",
+        "concave",
+        "concavity",
+        "coulee",
+        "crater",
+        "crypt",
+        "cup",
+        "delta",
+        "depression",
+        "desert",
+        "dip",
+        "dishpan",
+        "dishwasher",
+        "dock",
+        "dockage",
+        "dockyard",
+        "down",
+        "downs",
+        "dry dock",
+        "embankment",
+        "ewer",
+        "fell",
+        "finger bowl",
+        "flat",
+        "flat country",
+        "flatland",
+        "flats",
+        "floor",
+        "fold",
+        "follicle",
+        "funnel chest",
+        "grass veld",
+        "grassland",
+        "gravy boat",
+        "groin",
+        "ground",
+        "harbor",
+        "harborage",
+        "haven",
+        "heath",
+        "hip bath",
+        "hole",
+        "hollow",
+        "hollow shell",
+        "jetty",
+        "jutty",
+        "kitchen sink",
+        "lacuna",
+        "lande",
+        "landing",
+        "landing place",
+        "landing stage",
+        "lavabo",
+        "lavatory",
+        "level",
+        "llano",
+        "lowland",
+        "lowlands",
+        "lunar mare",
+        "mare",
+        "marina",
+        "mesa",
+        "mesilla",
+        "mole",
+        "moor",
+        "moorings",
+        "moorland",
+        "ocean bottom",
+        "open country",
+        "pampa",
+        "pampas",
+        "peneplain",
+        "pier",
+        "piscina",
+        "pit",
+        "plain",
+        "plains",
+        "plateau",
+        "playa",
+        "pocket",
+        "porringer",
+        "port",
+        "prairie",
+        "protected anchorage",
+        "punch bowl",
+        "quay",
+        "road",
+        "roads",
+        "roadstead",
+        "sag",
+        "salad bowl",
+        "salt flat",
+        "salt marsh",
+        "salt pan",
+        "sauce boat",
+        "savanna",
+        "scoop",
+        "seaport",
+        "seawall",
+        "sebkha",
+        "shell",
+        "shipyard",
+        "shower",
+        "shower bath",
+        "shower curtain",
+        "shower head",
+        "shower room",
+        "shower stall",
+        "showers",
+        "sink",
+        "sinkage",
+        "sinkhole",
+        "sinus",
+        "sitz bath",
+        "slip",
+        "socket",
+        "steppe",
+        "table",
+        "tableland",
+        "terrine",
+        "tree veld",
+        "trough",
+        "tub",
+        "tundra",
+        "tureen",
+        "upland",
+        "vat",
+        "vega",
+        "veld",
+        "vug",
+        "wash barrel",
+        "wash boiler",
+        "washbasin",
+        "washbowl",
+        "washdish",
+        "washer",
+        "washing machine",
+        "washing pot",
+        "washpot",
+        "washstand",
+        "washtub",
+        "weald",
+        "wharf",
+        "wide-open spaces",
+        "wold"
+      ]
+    },
+    "basined": {
+      "word": "BASINED",
+      "definitions": [
+        {
+          "text": "Inclosed in a basin. \"Basined rivers.\" Young.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basinet": {
+      "word": "BASINET",
+      "definitions": [
+        {
+          "text": "Same as Bascinet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basioccipital": {
+      "word": "BASIOCCIPITAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the bone in the base of the cranium, frequently forming a part of the occipital in the adult, but usually distinct in the young.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The basioccipital bone.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basion": {
+      "word": "BASION",
+      "definitions": [
+        {
+          "text": "The middle of the anterior margin of the great foramen of the skull.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basipodite": {
+      "word": "BASIPODITE",
+      "definitions": [
+        {
+          "text": "The basal joint of the legs of Crustacea.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basipterygium": {
+      "word": "BASIPTERYGIUM",
+      "definitions": [
+        {
+          "text": "A bar of cartilage at the base of the embryonic fins of some",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basipterygoid": {
+      "word": "BASIPTERYGOID",
+      "definitions": [
+        {
+          "text": "Applied to a protuberance of the base of the sphenoid bone.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basis": {
+      "word": "BASIS",
+      "definitions": [
+        {
+          "text": "The foundation of anything; that on which a thing rests. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The pedestal of a column, pillar, or statue. [Obs.] If no basis bear my rising name. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ground work the first or fundamental principle; that which supports. The basis of public credit is good faith. A. Hamilton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The principal component part of a thing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Anschauung",
+        "a priori principle",
+        "affirmation",
+        "ambition",
+        "angle",
+        "angle of vision",
+        "antecedents",
+        "apriorism",
+        "aspiration",
+        "assertion",
+        "assumed position",
+        "assumption",
+        "axiom",
+        "base",
+        "basement",
+        "bearing wall",
+        "bed",
+        "bedding",
+        "bedrock",
+        "bottom",
+        "burden",
+        "call",
+        "calling",
+        "case",
+        "categorical proposition",
+        "causation",
+        "cause",
+        "cause and effect",
+        "chapter",
+        "concern",
+        "consideration",
+        "data",
+        "determinant",
+        "determinative",
+        "element",
+        "essence",
+        "etiology",
+        "eye",
+        "factor",
+        "first principles",
+        "floor",
+        "flooring",
+        "focus of attention",
+        "focus of interest",
+        "fond",
+        "footing",
+        "foundation",
+        "frame of reference",
+        "framework",
+        "fundament",
+        "fundamental",
+        "gist",
+        "goal",
+        "good reason",
+        "ground",
+        "grounds",
+        "groundwork",
+        "guiding light",
+        "guiding star",
+        "hardpan",
+        "head",
+        "heading",
+        "heart",
+        "hypothesis",
+        "hypothesis ad hoc",
+        "ideal",
+        "infrastructure",
+        "inspiration",
+        "intention",
+        "issue",
+        "justification",
+        "law",
+        "lemma",
+        "light",
+        "line of departure",
+        "living issue",
+        "lodestar",
+        "main point",
+        "mainspring",
+        "major premise",
+        "material basis",
+        "matter",
+        "matter in hand",
+        "meat",
+        "mental outlook",
+        "minor premise",
+        "motif",
+        "motive",
+        "occasion",
+        "outlook",
+        "pavement",
+        "philosopheme",
+        "philosophical proposition",
+        "place",
+        "point",
+        "point at issue",
+        "point in question",
+        "point of departure",
+        "point of view",
+        "port of embarkation",
+        "position",
+        "postulate",
+        "postulation",
+        "postulatum",
+        "premise",
+        "presumption",
+        "presupposition",
+        "principle",
+        "problem",
+        "proposition",
+        "propositional function",
+        "question",
+        "radical",
+        "reason",
+        "reference system",
+        "regard",
+        "respect",
+        "rest",
+        "right",
+        "riprap",
+        "rock bottom",
+        "root",
+        "rubric",
+        "rudiment",
+        "sake",
+        "score",
+        "seat",
+        "side",
+        "sight",
+        "sill",
+        "situation",
+        "slant",
+        "solid ground",
+        "solid rock",
+        "source",
+        "spring",
+        "stand",
+        "standpoint",
+        "start",
+        "starting gate",
+        "starting place",
+        "starting point",
+        "starting post",
+        "statement",
+        "stereobate",
+        "stimulus",
+        "stylobate",
+        "subject",
+        "subject matter",
+        "subject of thought",
+        "substance",
+        "substratum",
+        "substruction",
+        "substructure",
+        "sumption",
+        "supposal",
+        "system",
+        "takeoff",
+        "terra firma",
+        "text",
+        "theme",
+        "theorem",
+        "thesis",
+        "topic",
+        "truth table",
+        "truth-function",
+        "truth-value",
+        "ulterior motive",
+        "underbuilding",
+        "undercarriage",
+        "undergirding",
+        "underpinning",
+        "understruction",
+        "understructure",
+        "universe",
+        "view",
+        "viewpoint",
+        "vocation",
+        "warrant"
+      ]
+    },
+    "basisolute": {
+      "word": "BASISOLUTE",
+      "definitions": [
+        {
+          "text": "Prolonged at the base, as certain leaves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basisphenoid": {
+      "word": "BASISPHENOID",
+      "definitions": [
+        {
+          "text": "The basisphenoid bone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basisphenoidbasisphenoidal": {
+      "word": "BASISPHENOID; BASISPHENOIDAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to that part of the base of the cranium between the basioccipital and the presphenoid, which usually ossifies separately in the embryo or in the young, and becomes a part of the sphenoid in the adult.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bask": {
+      "word": "BASK",
+      "definitions": [
+        {
+          "text": "To warm by continued exposure to heat; to warm with genial heat. Basks at the fire his hairy strength. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adore",
+        "appreciate",
+        "bask in",
+        "be pleased with",
+        "delight in",
+        "derive pleasure from",
+        "devour",
+        "eat up",
+        "enjoy",
+        "feast on",
+        "freak out on",
+        "get high on",
+        "gloat over",
+        "groove on",
+        "indulge",
+        "indulge in",
+        "insolate",
+        "like",
+        "love",
+        "luxuriate",
+        "luxuriate in",
+        "rejoice in",
+        "relish",
+        "revel",
+        "revel in",
+        "riot in",
+        "roll",
+        "rollick",
+        "savor",
+        "smack the lips",
+        "sun",
+        "sun-dry",
+        "sunbathe",
+        "swim in",
+        "take pleasure in",
+        "wallow in",
+        "welter"
+      ]
+    },
+    "basket": {
+      "word": "BASKET",
+      "definitions": [
+        {
+          "text": "A vessel made of osiers or other twigs, cane, rushes, splints, or other flexible material, interwoven. \"Rude baskets . . . woven of the flexile willow.\" Dyer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The contents of a basket; as much as a basket contains; as, a basket of peaches.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The bell or vase of the Corinthian capital. [Improperly so used.] Gwilt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The two back seats facing one another on the outside of a stagecoach. [Eng.] Goldsmith. Basket fish (Zoöl.), an ophiuran of the genus Astrophyton, having the arms much branched. See Astrophyton. protect the hand. Hudibras. Hence, Baskethilted, a. Thyridopteryx and allied genera, esp. T. ephemeræformis. The larva makes and carries about a bag or basket-like case of silk and twigs, which it afterwards hangs up to shelter the pupa and wingless adult females.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To put into a basket. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "bag",
+        "ballocks",
+        "balls",
+        "barrel",
+        "bassinet",
+        "beard",
+        "bottle",
+        "box",
+        "box up",
+        "breadbasket",
+        "breasts",
+        "bushel",
+        "can",
+        "capsule",
+        "carton",
+        "case",
+        "cask",
+        "cervix",
+        "clitoris",
+        "clothesbasket",
+        "cod",
+        "cods",
+        "crane",
+        "crate",
+        "creel",
+        "cullions",
+        "encase",
+        "encyst",
+        "family jewels",
+        "female organs",
+        "frail",
+        "fruit basket",
+        "genitalia",
+        "genitals",
+        "gonads",
+        "hamper",
+        "jar",
+        "labia",
+        "labia majora",
+        "labia minora",
+        "lingam",
+        "lips",
+        "male organs",
+        "meat",
+        "nuts",
+        "nymphae",
+        "ovary",
+        "pack",
+        "package",
+        "pannier",
+        "parcel",
+        "penis",
+        "phallus",
+        "picnic basket",
+        "pot",
+        "private parts",
+        "privates",
+        "privy parts",
+        "pubic hair",
+        "pudenda",
+        "punnet",
+        "reed basket",
+        "reproductive organs",
+        "rocks",
+        "rush basket",
+        "sack",
+        "scrotum",
+        "secondary sex characteristic",
+        "sewing basket",
+        "sex organs",
+        "spermary",
+        "tank",
+        "testes",
+        "testicles",
+        "tin",
+        "trug",
+        "uterus",
+        "vagina",
+        "vulva",
+        "wastebasket",
+        "wastepaper basket",
+        "wicker basket",
+        "wire basket",
+        "womb",
+        "wooden basket",
+        "yoni"
+      ]
+    },
+    "basketball": {
+      "word": "BASKET BALL",
+      "definitions": [
+        {
+          "text": "A game, usually played indoors, in which two parties of players contest with each other to toss a large inflated ball into opposite goals resembling baskets.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "basketful": {
+      "word": "BASKETFUL",
+      "definitions": [
+        {
+          "text": "As much as a basket will contain.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basketry": {
+      "word": "BASKETRY",
+      "definitions": [
+        {
+          "text": "The art of making baskets; also, baskets, taken collectively.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baskingshark": {
+      "word": "BASKING SHARK",
+      "definitions": [
+        {
+          "text": "One of the largest species of sharks (Cetorhinus maximus), so called from its habit of basking in the sun; the liver shark, or bone shark. It inhabits the northern seas of Europe and America, and grows to a length of more than forty feet. It is a harmless species.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "basnet": {
+      "word": "BASNET",
+      "definitions": [
+        {
+          "text": "Same as Bascinet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basommatophora": {
+      "word": "BASOMMATOPHORA",
+      "definitions": [
+        {
+          "text": "A group of Pulmonifera having the eyes at the base of the tentacles, including the common pond snails.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bason": {
+      "word": "BASON",
+      "definitions": [
+        {
+          "text": "A basin. [Obs. or Special form]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basque": {
+      "word": "BASQUE",
+      "definitions": [
+        {
+          "text": "Pertaining to Biscay, its people, or their language.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of a race, of unknown origin, inhabiting a region on the Bay of Biscay in Spain and France.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The language spoken by the Basque people.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A part of a lady's dress, resembling a jacket with a short skirt; Basques.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basquish": {
+      "word": "BASQUISH",
+      "definitions": [
+        {
+          "text": "Pertaining to the country, people, or language of Biscay; Basque [Obs.] Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basrelief": {
+      "word": "BAS-RELIEF",
+      "definitions": [
+        {
+          "text": "Low relief; sculpture, the figures of which project less than half of their true proportions; -- called also bassrelief and basso- rilievo. See Alto-rilievo.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "anaglyph",
+        "bellying",
+        "boldness",
+        "boss",
+        "bulging",
+        "cameo",
+        "cameo glass",
+        "cavo-rilievo",
+        "cut glass",
+        "embossment",
+        "eminence",
+        "excrescence",
+        "excrescency",
+        "extrusion",
+        "gibbosity",
+        "gibbousness",
+        "glyph",
+        "glyptograph",
+        "high relief",
+        "intaglio",
+        "intaglio rilevato",
+        "intaglio rilievo",
+        "low relief",
+        "mask",
+        "medal",
+        "medallion",
+        "plaquette",
+        "projection",
+        "prominence",
+        "protrusion",
+        "protuberance",
+        "protuberancy",
+        "relief",
+        "relievo",
+        "salience",
+        "salient",
+        "sculptured glass",
+        "tuberosity",
+        "tuberousness"
+      ]
+    },
+    "bass": {
+      "word": "BASS",
+      "definitions": [
+        {
+          "text": "; pl. Bass, and sometimes Basses. Etym: [A corruption of barse.] (Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An edible, spiny-finned fish, esp. of the genera Roccus, Labrax, and related genera. There are many species. the striped bass (Roccus lineatus); white or silver bass of the lakes. (R. chrysops); brass or yellow bass (R. interruptus).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The two American fresh-water species of black bass (genus Micropterus). See Black bass.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Species of Serranus, the sea bass and rock bass. See Sea bass.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The southern, red, or channel bass (Sciæna ocellata). See Redfish. under Calico.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The linden or lime tree, sometimes wrongly called whitewood; also, its bark, which is used for making mats. See Bast.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Pron.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hassock or thick mat.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bass, or deep, sound or tone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.) (a) The lowest part in a musical composition. (b) One who sings, or the instrument which plays, bass. [Written also base.] Thorough bass. See Thorough bass.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Deep or grave in tone. Bass clef (Mus.), the character placed at the beginning of the staff containing the bass part of a musical composition. [See Illust. under Clef.] -- Bass voice, a deepsounding voice; a voice fitted for singing bass.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To sound in a deep tone. [R.] Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "A string",
+        "Amati",
+        "Cremona",
+        "D string",
+        "E string",
+        "G string",
+        "Heldentenor",
+        "Meistersinger",
+        "Strad",
+        "Stradivari",
+        "Stradivarius",
+        "accompaniment",
+        "alto",
+        "aria singer",
+        "baritenor",
+        "baritone",
+        "bass viol",
+        "basso",
+        "basso buffo",
+        "basso cantante",
+        "basso continuo",
+        "basso ostinato",
+        "basso profundo",
+        "bassus",
+        "blues singer",
+        "bourdon",
+        "bow",
+        "bravura",
+        "bridge",
+        "bull fiddle",
+        "burden",
+        "canary",
+        "cantatrice",
+        "canto",
+        "cantor",
+        "cantus",
+        "cantus figuratus",
+        "cantus planus",
+        "caroler",
+        "cello",
+        "chanter",
+        "chantress",
+        "chest voice",
+        "choral",
+        "choric",
+        "coloratura",
+        "coloratura soprano",
+        "comic bass",
+        "continuo",
+        "contrabass",
+        "contralto",
+        "countertenor",
+        "crooner",
+        "crowd",
+        "deep",
+        "deep bass",
+        "deep-echoing",
+        "deep-pitched",
+        "deep-toned",
+        "deepmouthed",
+        "descant",
+        "diva",
+        "double bass",
+        "dramatic",
+        "dramatic soprano",
+        "drone",
+        "drone bass",
+        "falsetto",
+        "fiddle",
+        "fiddlebow",
+        "fiddlestick",
+        "figured bass",
+        "fingerboard",
+        "grave",
+        "ground bass",
+        "head voice",
+        "heavy",
+        "heroic",
+        "heroic tenor",
+        "hollow",
+        "hymnal",
+        "hymner",
+        "improvisator",
+        "kit",
+        "kit fiddle",
+        "kit violin",
+        "lead singer",
+        "lieder singer",
+        "line",
+        "liturgical",
+        "low",
+        "low-pitched",
+        "lyric",
+        "melodist",
+        "mezzo-soprano",
+        "opera singer",
+        "operatic",
+        "part",
+        "plain chant",
+        "plain song",
+        "prick song",
+        "prima donna",
+        "psalm singer",
+        "psalmic",
+        "psalmodial",
+        "psalmodic",
+        "rock-and-roll singer",
+        "sacred",
+        "scroll",
+        "sepulchral",
+        "singer",
+        "singing",
+        "singstress",
+        "songbird",
+        "songster",
+        "songstress",
+        "soprano",
+        "soundboard",
+        "string",
+        "tenor",
+        "tenor violin",
+        "thorough bass",
+        "torch singer",
+        "treble",
+        "tuning peg",
+        "undersong",
+        "viola",
+        "violin",
+        "violinette",
+        "violoncello",
+        "violoncello piccolo",
+        "violone",
+        "violotta",
+        "vocal",
+        "vocalist",
+        "vocalizer",
+        "voce",
+        "voce di petto",
+        "voce di testa",
+        "voice",
+        "voice part",
+        "warbler",
+        "yodeler"
+      ]
+    },
+    "bassabassaw": {
+      "word": "BASSA; BASSAW",
+      "definitions": [
+        {
+          "text": "See Bashaw.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basset": {
+      "word": "BASSET",
+      "definitions": [
+        {
+          "text": "A game at cards, resembling the modern faro, said to have been invented at Venice. Some dress, some dance, some play, not to forget Your piquet parties, and your dear basset. Rowe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Inclined upward; as, the basset edge of strata. Lyell.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The edge of a geological stratum at the surface of the ground; the outcrop.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To inclined upward so as to appear at the surface; to crop out; as, a vein of coal bassets.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassethorn": {
+      "word": "BASSET HORN",
+      "definitions": [
+        {
+          "text": "An instrument blown with a reed, and resembling a clarinet, but of much greater compass, embracing nearly four octaves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassethound": {
+      "word": "BASSET HOUND",
+      "definitions": [
+        {
+          "text": "A small kind of hound with a long body and short legs, used as an earth dog.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "basseting": {
+      "word": "BASSETING",
+      "definitions": [
+        {
+          "text": "The upward direction of a vein in a mine; the emergence of a stratum at the surface.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassetto": {
+      "word": "BASSETTO",
+      "definitions": [
+        {
+          "text": "A tenor or small bass viol.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basshorn": {
+      "word": "BASS HORN",
+      "definitions": [
+        {
+          "text": "A modification of the bassoon, much deeper in tone.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassinet": {
+      "word": "BASSINET",
+      "definitions": [
+        {
+          "text": "A wicker basket, with a covering or hood over one end, in which young children are placed as in a cradle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Bascinet. Lord Lytton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassock": {
+      "word": "BASSOCK",
+      "definitions": [
+        {
+          "text": "A hassock. See 2d Bass, 2.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassoon": {
+      "word": "BASSOON",
+      "definitions": [
+        {
+          "text": "A wind instrument of the double reed kind, furnished with holes, which are stopped by the fingers, and by keys, as in flutes. It forms the natural bass to the oboe, clarinet, etc. carriage it is divided into two parts; whence it is also called a fagot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "English horn",
+        "Pandean pipe",
+        "aulos",
+        "basset horn",
+        "basset oboe",
+        "block flute",
+        "bombard",
+        "bourdon",
+        "cello",
+        "claribel",
+        "clarinet",
+        "clarion",
+        "concert flute",
+        "contrabassoon",
+        "contrafagotto",
+        "cornet",
+        "cornopean",
+        "cromorna",
+        "cromorne",
+        "cymbel",
+        "diapason",
+        "double bassoon",
+        "double reed",
+        "dulciana",
+        "fife",
+        "fipple flute",
+        "flageolet",
+        "flute",
+        "flute stop",
+        "foundation stop",
+        "fourniture",
+        "gamba",
+        "gedeckt",
+        "gemshorn",
+        "harmonic flute",
+        "hautboy",
+        "heckelphone",
+        "hornpipe",
+        "hybrid stop",
+        "koppel flute",
+        "larigot",
+        "licorice stick",
+        "melodia",
+        "mixture",
+        "musette",
+        "mutation stop",
+        "nazard",
+        "oaten reed",
+        "oboe",
+        "oboe da caccia",
+        "ocarina",
+        "octave",
+        "organ stop",
+        "panpipe",
+        "penny-whistle",
+        "piccolo",
+        "pipe",
+        "plein jeu",
+        "pommer",
+        "posaune",
+        "principal",
+        "quint",
+        "quintaten",
+        "rank",
+        "ranket",
+        "recorder",
+        "reed",
+        "reed instrument",
+        "reed stop",
+        "register",
+        "rohr flute",
+        "sax",
+        "saxophone",
+        "sesquialtera",
+        "shawm",
+        "single reed",
+        "single-reed instrument",
+        "sonorophone",
+        "spitz flute",
+        "stop",
+        "stopped diapason",
+        "stopped flute",
+        "string diapason",
+        "string stop",
+        "sweet potato",
+        "syrinx",
+        "tabor pipe",
+        "tenoroon",
+        "tierce",
+        "tin-whistle",
+        "tremolo",
+        "trombone",
+        "trumpet",
+        "twelfth",
+        "unda maris",
+        "vibrato",
+        "viola",
+        "voix celeste",
+        "vox angelica",
+        "vox humana",
+        "whistle",
+        "woods",
+        "woodwind",
+        "woodwind choir",
+        "woodwind instrument"
+      ]
+    },
+    "bassoonist": {
+      "word": "BASSOONIST",
+      "definitions": [
+        {
+          "text": "A performer on the bassoon. Busby.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassorilievobassorelievo": {
+      "word": "BASSO-RILIEVO; BASSO-RELIEVO",
+      "definitions": [
+        {
+          "text": "Same as Bas-relief.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassorin": {
+      "word": "BASSORIN",
+      "definitions": [
+        {
+          "text": "A constituent part of a species of gum from Bassora, as also of gum tragacanth and some gum resins. It is one of the amyloses. Ure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassrelief": {
+      "word": "BASS-RELIEF",
+      "definitions": [
+        {
+          "text": "Some as Bas-relief.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basswood": {
+      "word": "BASSWOOD",
+      "definitions": [
+        {
+          "text": "The bass (Tilia) or its wood; especially, T. Americana. See Bass, the lime tree. All the bowls were made of basswood, White and polished very smoothly. Longfellow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bast": {
+      "word": "BAST",
+      "definitions": [
+        {
+          "text": "The inner fibrous bark of various plants; esp. of the lime tree; hence, matting, cordage, etc., made therefrom.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thick mat or hassock. See 2d Bass, 2.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basta": {
+      "word": "BASTA",
+      "definitions": [
+        {
+          "text": "Enough; stop. Shak.",
+          "partOfSpeech": "interjection"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bastard": {
+      "word": "BASTARD",
+      "definitions": [
+        {
+          "text": "A \"natural\" child; a child begotten and born out of wedlock; an illegitimate child; one born of an illicit union. United States, a bastard becomes a legitimate child by the intermarriage of the parents at any subsequent time. But by those of England, and of some states of the United States, a child, to be legitimate, must at least be born after the lawful marriage. Kent. Blackstone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Sugar Refining) (a) An inferior quality of soft brown sugar, obtained from the sirups that (b) A large size of mold, in which sugar is drained.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sweet Spanish wine like muscadel in flavor. Brown bastard is your only drink. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A writing paper of a particular size. See Paper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Begotten and born out of lawful matrimony; illegitimate. See Bastard, n., note.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lacking in genuineness; spurious; false; adulterate; -- applied to things which resemble those which are genuine, but are really not so. That bastard self-love which is so vicious in itself, and productive of so many vices. Barrow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of an unusual make or proportion; as, a bastard musket; a bastard culverin. [Obs.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Abbreviated, as the half title in a page preceding the full title page of a book. Bastard ashlar (Arch.), stones for ashlar work, roughly squared at the quarry. second cut. smaller size than the body; e.g., a nonpareil face on a brevier body. joint corresponding to the thumb in some mam malia; the alula.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To bastardize. [Obs.] Bacon.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "SOB",
+        "affected",
+        "apocryphal",
+        "artificial",
+        "assumed",
+        "bantling",
+        "bar sinister",
+        "baseborn",
+        "bastard child",
+        "bastardy",
+        "bird",
+        "blackguard",
+        "bogus",
+        "brummagem",
+        "bugger",
+        "by-blow",
+        "cat",
+        "chap",
+        "character",
+        "colorable",
+        "colored",
+        "counterfeit",
+        "counterfeited",
+        "creep",
+        "criminal",
+        "cross",
+        "crossbred",
+        "crossbreed",
+        "devil",
+        "distorted",
+        "dressed up",
+        "duck",
+        "dummy",
+        "embellished",
+        "embroidered",
+        "enfant terrible",
+        "ersatz",
+        "evildoer",
+        "factitious",
+        "fake",
+        "faked",
+        "false",
+        "falsified",
+        "fart",
+        "fatherless",
+        "feigned",
+        "feller",
+        "fellow",
+        "fictitious",
+        "fictive",
+        "garbled",
+        "guy",
+        "half blood",
+        "half-breed",
+        "heel",
+        "hood",
+        "hooligan",
+        "illegitimacy",
+        "illegitimate",
+        "illegitimate child",
+        "imitation",
+        "jasper",
+        "jerk",
+        "joker",
+        "junky",
+        "knave",
+        "lad",
+        "limb",
+        "louse",
+        "love child",
+        "lowlife",
+        "make-believe",
+        "malefactor",
+        "man-made",
+        "meanie",
+        "misbegotten",
+        "mischief",
+        "miscreant",
+        "miscreated",
+        "mock",
+        "mongrel",
+        "mother",
+        "mule",
+        "natural",
+        "offender",
+        "perverted",
+        "phony",
+        "pill",
+        "pinchbeck",
+        "pretended",
+        "pseudo",
+        "put-on",
+        "quasi",
+        "queer",
+        "rapscallion",
+        "rascal",
+        "rat",
+        "reprobate",
+        "rogue",
+        "scalawag",
+        "scoundrel",
+        "self-styled",
+        "sham",
+        "shit",
+        "shithead",
+        "shitheel",
+        "shoddy",
+        "simulated",
+        "sinner",
+        "so-called",
+        "soi-disant",
+        "spurious",
+        "stinkard",
+        "stinker",
+        "stud",
+        "supposititious",
+        "synthetic",
+        "tin",
+        "tinsel",
+        "titivated",
+        "turd",
+        "twisted",
+        "unauthentic",
+        "ungenuine",
+        "unnatural",
+        "unreal",
+        "warped"
+      ]
+    },
+    "bastardism": {
+      "word": "BASTARDISM",
+      "definitions": [
+        {
+          "text": "The state of being a bastard; bastardy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bastardize": {
+      "word": "BASTARDIZE",
+      "definitions": [
+        {
+          "text": "To make or prove to be a bastard; to stigmatize as a bastard; to declare or decide legally to be illegitimate. The law is so indulgent as not to bastardize the child, if born, though not begotten, in lawful wedlock. Blackstone.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To beget out of wedlock. [R.] Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adulterate",
+        "brutalize",
+        "contaminate",
+        "corrupt",
+        "cut",
+        "debase",
+        "debauch",
+        "demoralize",
+        "denaturalize",
+        "denature",
+        "deprave",
+        "dilute",
+        "doctor",
+        "doctor up",
+        "fortify",
+        "lace",
+        "pervert",
+        "pollute",
+        "spike",
+        "tamper with",
+        "vitiate",
+        "warp",
+        "water",
+        "water down"
+      ]
+    },
+    "bastardly": {
+      "word": "BASTARDLY",
+      "definitions": [
+        {
+          "text": "Bastardlike; baseborn; spuripous; corrupt. [Obs.] -- adv.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "In the manner of a bastard; spuriously. [Obs.] Shak. Donne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bastardy": {
+      "word": "BASTARDY",
+      "definitions": [
+        {
+          "text": "The state of being a bastard; illegitimacy.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The procreation of a bastard child. Wharton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baste": {
+      "word": "BASTE",
+      "definitions": [
+        {
+          "text": "To beat with a stick; to cudgel. One man was basted by the keeper for carrying some people over on his back through the waters. Pepys.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Cookery)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sprinkle flour and salt and drip butter or fat on, as on meat in roasting.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark with tar, as sheep. [Prov. Eng.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sew loosely, or with long stitches; -- usually, that the work may be held in position until sewed more firmly. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "bake",
+        "bang",
+        "barbecue",
+        "bastinado",
+        "batter",
+        "bawl out",
+        "beat",
+        "belabor",
+        "belt",
+        "berate",
+        "birch",
+        "blanch",
+        "boil",
+        "braise",
+        "brew",
+        "broil",
+        "brown",
+        "buffet",
+        "cane",
+        "chew out",
+        "clobber",
+        "club",
+        "coddle",
+        "cook",
+        "cowhide",
+        "cudgel",
+        "curry",
+        "cut",
+        "devil",
+        "do",
+        "do to perfection",
+        "drub",
+        "fire",
+        "flagellate",
+        "flail",
+        "flap",
+        "flog",
+        "fricassee",
+        "frizz",
+        "frizzle",
+        "fry",
+        "fustigate",
+        "give a whipping",
+        "give the stick",
+        "griddle",
+        "grill",
+        "hammer",
+        "heat",
+        "horsewhip",
+        "knock",
+        "knout",
+        "lace",
+        "lambaste",
+        "larrup",
+        "lash",
+        "lay on",
+        "maul",
+        "mill",
+        "oven-bake",
+        "pan",
+        "pan-broil",
+        "parboil",
+        "paste",
+        "patter",
+        "pelt",
+        "pistol-whip",
+        "poach",
+        "pommel",
+        "pound",
+        "prepare",
+        "prepare food",
+        "pulverize",
+        "pummel",
+        "rail",
+        "rap",
+        "rawhide",
+        "roast",
+        "saute",
+        "scallop",
+        "scourge",
+        "sear",
+        "shirr",
+        "simmer",
+        "sledgehammer",
+        "smite",
+        "spank",
+        "steam",
+        "stew",
+        "stir-fry",
+        "strap",
+        "stripe",
+        "swinge",
+        "switch",
+        "tell off",
+        "thrash",
+        "thresh",
+        "thump",
+        "toast",
+        "tongue-lash",
+        "trounce",
+        "truncheon",
+        "wallop",
+        "whale",
+        "whip",
+        "whop",
+        "wig"
+      ]
+    },
+    "bastilebastille": {
+      "word": "BASTILE; BASTILLE",
+      "definitions": [
+        {
+          "text": "(Feud. Fort.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tower or an elevated work, used for the defense, or in the siege, of a fortified place. The high bastiles . . . which overtopped the walls. Holland.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "\"The Bastille\", formerly a castle or fortress in Paris, used as a prison, especially for political offenders; hence, a rhetorical name for a prison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bastinade": {
+      "word": "BASTINADE",
+      "definitions": [
+        {
+          "text": "See Bastinado, n.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To bastinado. [Archaic]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bastinado": {
+      "word": "BASTINADO",
+      "definitions": [
+        {
+          "text": "A blow with a stick or cudgel.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sound beating with a stick or cudgel. Specifically: A form of punishment among the Turks, Chinese, and others, consisting in beating an offender on the soles of his feet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To beat with a stick or cudgel, especially on the soles of the feet.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bastion": {
+      "word": "BASTION",
+      "definitions": [
+        {
+          "text": "A work projecting outward from the main inclosure of a fortification, consisting of two faces and two flanks, and so constructed that it is able to defend by a flanking fire the adjacent curtain, or wall which extends from one bastion to another. Two adjacent bastions are connected by the curtain, which joins the flank of one with the adjacent flank of the other. The distance between the flanks of a bastion is called the gorge. A lunette is a detached bastion. See Ravelin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abatis",
+        "acropolis",
+        "advanced work",
+        "balistraria",
+        "bank",
+        "banquette",
+        "barbed-wire entanglement",
+        "barbican",
+        "barricade",
+        "barrier",
+        "bartizan",
+        "battlement",
+        "beachhead",
+        "blockhouse",
+        "breastwork",
+        "bridgehead",
+        "bulwark",
+        "bunker",
+        "casemate",
+        "castle",
+        "cheval-de-frise",
+        "circumvallation",
+        "citadel",
+        "contravallation",
+        "counterscarp",
+        "curtain",
+        "demibastion",
+        "dike",
+        "donjon",
+        "drawbridge",
+        "earthwork",
+        "enclosure",
+        "entanglement",
+        "escarp",
+        "escarpment",
+        "fasthold",
+        "fastness",
+        "fence",
+        "fieldwork",
+        "fort",
+        "fortalice",
+        "fortification",
+        "fortress",
+        "garrison",
+        "garrison house",
+        "glacis",
+        "hold",
+        "keep",
+        "loophole",
+        "lunette",
+        "machicolation",
+        "mantelet",
+        "martello",
+        "martello tower",
+        "merlon",
+        "mote",
+        "motte",
+        "mound",
+        "outwork",
+        "palisade",
+        "parados",
+        "parapet",
+        "peel",
+        "peel tower",
+        "pillbox",
+        "portcullis",
+        "post",
+        "postern gate",
+        "rampart",
+        "rath",
+        "ravelin",
+        "redan",
+        "redoubt",
+        "safehold",
+        "sally port",
+        "scarp",
+        "sconce",
+        "stockade",
+        "strong point",
+        "stronghold",
+        "tenaille",
+        "tower",
+        "tower of strength",
+        "vallation",
+        "vallum",
+        "ward",
+        "work"
+      ]
+    },
+    "bastioned": {
+      "word": "BASTIONED",
+      "definitions": [
+        {
+          "text": "Furnished with a bastion; having bastions.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basto": {
+      "word": "BASTO",
+      "definitions": [
+        {
+          "text": "The ace of clubs in qua Pope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baston": {
+      "word": "BASTON",
+      "definitions": [
+        {
+          "text": "A staff or cudgel. [Obs.] \"To fight with blunt bastons.\" Holland.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Baton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An officer bearing a painted staff, who formerly was in attendance upon the king's court to take into custody persons committed by the court. Mozley & W.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basutos": {
+      "word": "BASUTOS",
+      "definitions": [
+        {
+          "text": "A warlike South African people of the Bantu stock, divided into many tribes, subject to the English. They formerly practiced cannibalism, but have now adopted many European customs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basyle": {
+      "word": "BASYLE",
+      "definitions": [
+        {
+          "text": "A positive or nonacid constituent of compound, either elementary, or, if compound, performing the functions of an element.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basylous": {
+      "word": "BASYLOUS",
+      "definitions": [
+        {
+          "text": "Pertaining to, or having the nature of, a basyle; electro- positive; basic; -- opposed to chlorous. Graham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

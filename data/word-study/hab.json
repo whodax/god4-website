@@ -1,0 +1,996 @@
+{
+  "version": "v1",
+  "entries": {
+    "habeascorpus": {
+      "word": "HABEAS CORPUS",
+      "definitions": [
+        {
+          "text": "A writ having for its object to bring a party before a court or judge; especially, one to inquire into the cause of a person's imprisonment or detention by another, with the view to protect the right to personal liberty; also, one to bring a prisoner into court to testify in a pending trial. Bouvier.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "habendum": {
+      "word": "HABENDUM",
+      "definitions": [
+        {
+          "text": "That part of a deed which follows the part called the premises, and determines the extent of the interest or estate granted; -- so called because it begins with the word Habendum. Kent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "haberdash": {
+      "word": "HABERDASH",
+      "definitions": [
+        {
+          "text": "To deal in small wares. [R.] To haberdash in earth's base ware. Quarles.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "haberdasher": {
+      "word": "HABERDASHER",
+      "definitions": [
+        {
+          "text": "A dealer in small wares, as tapes, pins, needles, and thread; also, a hatter. [Obs.] The haberdasher heapeth wealth by hats. Gascoigne.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A dealer in drapery goods of various descriptions, as laces, silks, trimmings, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "baker",
+        "bookdealer",
+        "bookseller",
+        "butcher",
+        "chandler",
+        "clothier",
+        "clothing merchant",
+        "confectioner",
+        "costumer",
+        "costumier",
+        "draper",
+        "dry goods dealer",
+        "drysalter",
+        "fishmonger",
+        "fishwife",
+        "florist",
+        "footwear merchant",
+        "fruiterer",
+        "furnisher",
+        "furrier",
+        "glover",
+        "greengrocer",
+        "grocer",
+        "groceryman",
+        "hardwareman",
+        "hosier",
+        "ironmonger",
+        "jeweler",
+        "liquor merchant",
+        "mercer",
+        "newsdealer",
+        "perfumer",
+        "poulterer",
+        "saddler",
+        "stationer",
+        "tobacconist",
+        "vintner",
+        "wine merchant"
+      ]
+    },
+    "haberdashery": {
+      "word": "HABERDASHERY",
+      "definitions": [
+        {
+          "text": "The goods and wares sold by a haberdasher; also (Fig.), trifles. Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "antique store",
+        "apothecary",
+        "automobile showroom",
+        "bookstore",
+        "bootery",
+        "candy store",
+        "chemist",
+        "cigar store",
+        "clothiers",
+        "clothing store",
+        "confectionery",
+        "dress shop",
+        "drugstore",
+        "dry goods store",
+        "florists",
+        "fur salon",
+        "furniture store",
+        "gift shop",
+        "hardware store",
+        "hat shop",
+        "hobby shop",
+        "ironmongery",
+        "jewelers",
+        "jewelry store",
+        "leather goods store",
+        "liquor store",
+        "luggage shop",
+        "milliners",
+        "novelty shop",
+        "package store",
+        "pharmacy",
+        "saddlery",
+        "schlock house",
+        "schlock shop",
+        "secondhand shop",
+        "secondhand store",
+        "shoe store",
+        "smoke shop",
+        "specialty shop",
+        "sporting goods store",
+        "stationers",
+        "stationery store",
+        "sweater shop",
+        "sweet shop",
+        "thrift shop",
+        "tobacco store",
+        "tobacconists",
+        "toy shop",
+        "trimming store",
+        "used-car lot"
+      ]
+    },
+    "haberdine": {
+      "word": "HABERDINE",
+      "definitions": [
+        {
+          "text": "A cod salted and dried. Ainsworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habergeon": {
+      "word": "HABERGEON",
+      "definitions": [
+        {
+          "text": "Properly, a short hauberk, but often used loosely for the hauberk. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habilatory": {
+      "word": "HABILATORY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to clothing; wearing clothes. Ld. Lytton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habile": {
+      "word": "HABILE",
+      "definitions": [
+        {
+          "text": "Fit; qualified; also, apt. [Obs.] Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habiliment": {
+      "word": "HABILIMENT",
+      "definitions": [
+        {
+          "text": "A garment; an article of clothing. Camden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Dress, in general. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habilimented": {
+      "word": "HABILIMENTED",
+      "definitions": [
+        {
+          "text": "Clothed. Taylor (1630).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habilitate": {
+      "word": "HABILITATE",
+      "definitions": [
+        {
+          "text": "Qualified or entitled. [Obs.] Bacon.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To fit out; to equip; to qualify; to entitle. Johnson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habilitation": {
+      "word": "HABILITATION",
+      "definitions": [
+        {
+          "text": "Equipment; qualification. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hability": {
+      "word": "HABILITY",
+      "definitions": [
+        {
+          "text": "Ability; aptitude. [Obs.] Robynson. (More's Utopia).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habit": {
+      "word": "HABIT",
+      "definitions": [
+        {
+          "text": "The usual condition or state of a person or thing, either natural or acquired, regarded as something had, possessed, and firmly retained; as, a religious habit; his habit is morose; elms have a spreading habit; esp., physical temperament or constitution; as, a full habit of body.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "The general appearance and manner of life of a living organism.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Fixed or established custom; ordinary course of conduct; practice; usage; hence, prominently, the involuntary tendency or aptitude to perform certain actions which is acquired by their frequent repetition; as, habit is second nature; also, peculiar ways of acting; characteristic forms of behavior. A man of very shy, retired habits. W. Irving.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Outward appearance; attire; dress; hence, a garment; esp., a closely fitting garment or dress worn by ladies; as, a riding habit. Costly thy habit as thy purse can buy. Shak. There are, among the states, several of Venus, in different habits. Addison. do easily, naturally, and with growing certainty, what we do often; custom is external, being habitual use or the frequent repetition of the same act. The two operate reciprocally on each other. The custom of giving produces a habit of liberality; habits of devotion promote the custom of going to church. Custom also supposes an act of the will, selecting given modes of procedure; habit is a law of our being, a kind of \"second nature\" which grows up within us. How use doth breed a habit in a man ! Shak. He who reigns . . . upheld by old repute, Consent, or custom. Milton.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "a habit",
+        "accouter",
+        "acquired tolerance",
+        "acute alcoholism",
+        "addictedness",
+        "addiction",
+        "alcoholism",
+        "amphetamine withdrawal symptoms",
+        "apparel",
+        "array",
+        "attire",
+        "attitude",
+        "automatism",
+        "bad habit",
+        "barbiturate addiction",
+        "barbiturism",
+        "bedizenment",
+        "bent",
+        "bib and tucker",
+        "body-build",
+        "brand",
+        "caparison",
+        "cast",
+        "chain smoking",
+        "character",
+        "characteristic",
+        "characteristics",
+        "chronic alcoholism",
+        "clothes",
+        "clothing",
+        "cocainism",
+        "complexion",
+        "composition",
+        "compulsion",
+        "constituents",
+        "constitution",
+        "convention",
+        "costume",
+        "crash",
+        "crasis",
+        "craving",
+        "creature of habit",
+        "custom",
+        "dependence",
+        "dharma",
+        "diathesis",
+        "dipsomania",
+        "disguise",
+        "disposition",
+        "drapery",
+        "dress",
+        "dressing",
+        "drug addiction",
+        "drug culture",
+        "drug dependence",
+        "duds",
+        "equip",
+        "ethos",
+        "fashion",
+        "fatigues",
+        "feathers",
+        "fiber",
+        "fig",
+        "fit",
+        "fit out",
+        "force of habit",
+        "frame",
+        "frame of mind",
+        "frock",
+        "garb",
+        "garments",
+        "gear",
+        "genius",
+        "grain",
+        "guise",
+        "habiliment",
+        "habiliments",
+        "habit pattern",
+        "habituation",
+        "habitude",
+        "hue",
+        "humor",
+        "humors",
+        "idiosyncrasy",
+        "ilk",
+        "inclination",
+        "investiture",
+        "investment",
+        "kind",
+        "linen",
+        "livery",
+        "makeup",
+        "manner",
+        "mannerism",
+        "masquerade",
+        "minauderie",
+        "mode",
+        "mold",
+        "nature",
+        "nicotine addiction",
+        "outfit",
+        "pattern",
+        "peculiar trait",
+        "peculiarity",
+        "penchant",
+        "physical dependence",
+        "physique",
+        "policy",
+        "practice",
+        "praxis",
+        "predisposition",
+        "proclivity",
+        "propensity",
+        "property",
+        "psychological dependence",
+        "quality",
+        "quirk",
+        "rags",
+        "raiment",
+        "regalia",
+        "rig",
+        "rig out",
+        "rig up",
+        "robes",
+        "routine",
+        "rule",
+        "second nature",
+        "somatotype",
+        "sort",
+        "spirit",
+        "sportswear",
+        "stamp",
+        "stereotype",
+        "stereotyped behavior",
+        "streak",
+        "stripe",
+        "style",
+        "suchness",
+        "suit",
+        "system",
+        "temper",
+        "temperament",
+        "tendency",
+        "tenor",
+        "threads",
+        "togs",
+        "toilette",
+        "tolerance",
+        "tone",
+        "trademark",
+        "trick",
+        "trick of behavior",
+        "trim",
+        "turn out",
+        "type",
+        "uniform",
+        "usage",
+        "use",
+        "vein",
+        "vestment",
+        "vestments",
+        "vesture",
+        "way",
+        "wear",
+        "wearing apparel",
+        "withdrawal sickness",
+        "withdrawal symptoms",
+        "wont"
+      ]
+    },
+    "habitability": {
+      "word": "HABITABILITY",
+      "definitions": [
+        {
+          "text": "Habitableness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitable": {
+      "word": "HABITABLE",
+      "definitions": [
+        {
+          "text": "Capable of being inhabited; that may be inhabited or dwelt in;",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A dwelling place. Chaucer. Southey.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitan": {
+      "word": "HABITAN",
+      "definitions": [
+        {
+          "text": "Same as Habitant, 2. General met an emissary . . . sent . . . to ascertain the feelings of the habitans or French yeomanry. W. Irwing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitance": {
+      "word": "HABITANCE",
+      "definitions": [
+        {
+          "text": "Dwelling; abode; residence. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitancy": {
+      "word": "HABITANCY",
+      "definitions": [
+        {
+          "text": "Same as Inhabitancy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitant": {
+      "word": "HABITANT",
+      "definitions": [
+        {
+          "text": "An inhabitant; a dweller. Milton. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [F. pron. (]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An inhabitant or resident; -- a name applied to and denoting farmers of French descent or origin in Canada, especially in the Province of Quebec; -- usually in plural. The habitants or cultivators of the soil. Parkman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitat": {
+      "word": "HABITAT",
+      "definitions": [
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The natural abode, locality or region of an animal or plant.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Place where anything is commonly found. This word has its habitat in Oxfordshire. Earle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abode",
+        "alentours",
+        "ambience",
+        "ambit",
+        "bailiwick",
+        "borderlands",
+        "circle",
+        "circuit",
+        "circumambiencies",
+        "circumjacencies",
+        "circumstances",
+        "compass",
+        "context",
+        "domain",
+        "element",
+        "entourage",
+        "environing circumstances",
+        "environment",
+        "environs",
+        "gestalt",
+        "haunt",
+        "home",
+        "locale",
+        "locality",
+        "milieu",
+        "native environment",
+        "neighborhood",
+        "outposts",
+        "outskirts",
+        "perimeter",
+        "periphery",
+        "precincts",
+        "purlieus",
+        "range",
+        "realm",
+        "site",
+        "situation",
+        "stamping ground",
+        "suburbs",
+        "surroundings",
+        "terrain",
+        "territory",
+        "total environment",
+        "vicinage",
+        "vicinity"
+      ]
+    },
+    "habitation": {
+      "word": "HABITATION",
+      "definitions": [
+        {
+          "text": "The act of inhabiting; state of inhabiting or dwelling, or of being inhabited; occupancy. Denham.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Place of abode; settled dwelling; residence; house. The Lord . . . blesseth the habitation of the just. Prov. iii. 33.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abiding place",
+        "abode",
+        "address",
+        "apartment",
+        "cantonment",
+        "colonization",
+        "commorancy",
+        "crash pad",
+        "crib",
+        "digs",
+        "domicile",
+        "domiciliation",
+        "domus",
+        "dwelling",
+        "dwelling place",
+        "fireside",
+        "flat",
+        "haunt",
+        "haven",
+        "hearth",
+        "hearthstone",
+        "home",
+        "homestead",
+        "house",
+        "housing",
+        "inhabitancy",
+        "inhabitation",
+        "lodging",
+        "lodging place",
+        "lodgment",
+        "nest",
+        "nook",
+        "occupancy",
+        "occupation",
+        "pad",
+        "peopling",
+        "place",
+        "place to live",
+        "quarters",
+        "residence",
+        "residency",
+        "roof",
+        "rooftree",
+        "roost",
+        "seat",
+        "settlement",
+        "sojourning",
+        "tenement"
+      ]
+    },
+    "habitator": {
+      "word": "HABITATOR",
+      "definitions": [
+        {
+          "text": "A dweller; an inhabitant. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habited": {
+      "word": "HABITED",
+      "definitions": [
+        {
+          "text": "Clothed; arrayed; dressed; as, he was habited like a shepherd.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Fixed by habit; accustomed. [Obs.] So habited he was in sobriety. Fuller.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Inhabited. [Archaic] Another world, which is habited by the ghosts of men and women. Addison.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitentodwellfhabiterfrlhabitaretohavefrequentlyto": {
+      "word": "habiten to dwell, F. habiter, fr. L. habitare to have frequently, to",
+      "definitions": [
+        {
+          "text": "To inhabit. [Obs.] In thilke places as they [birds] habiten. Rom. of R.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To dress; to clothe; to array. They habited themselves lite those rural deities. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To accustom; to habituate. [Obs.] Chapman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitual": {
+      "word": "HABITUAL",
+      "definitions": [
+        {
+          "text": "Formed or acquired by habit or use. An habitual knowledge of certain rules and maxims. South.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "According to habit; established by habit; customary; constant; as, the habiual practice of sin. It is the distinguishing mark of habitual piety to be grateful for the most common and ordinary blessings. Buckminster.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "accepted",
+        "accustomed",
+        "addicted",
+        "arranged",
+        "automatic",
+        "average",
+        "beaten",
+        "businesslike",
+        "chronic",
+        "common",
+        "commonplace",
+        "confirmed",
+        "constant",
+        "continual",
+        "conventional",
+        "current",
+        "customary",
+        "established",
+        "everyday",
+        "familiar",
+        "fixed",
+        "formal",
+        "frequent",
+        "frequentative",
+        "habituated",
+        "hackneyed",
+        "hardened",
+        "harmonious",
+        "household",
+        "in hand",
+        "ingrained",
+        "instinctive",
+        "inveterate",
+        "involuntary",
+        "many",
+        "many times",
+        "methodical",
+        "natural",
+        "normal",
+        "normative",
+        "not rare",
+        "of common occurrence",
+        "oft-repeated",
+        "oftentime",
+        "ordered",
+        "orderly",
+        "ordinary",
+        "perpetual",
+        "persistent",
+        "popular",
+        "predominating",
+        "prescriptive",
+        "prevailing",
+        "prevalent",
+        "recurrent",
+        "recurring",
+        "regular",
+        "regulation",
+        "repetitive",
+        "ritual",
+        "rooted",
+        "routine",
+        "set",
+        "settled",
+        "standard",
+        "steady",
+        "stereotyped",
+        "stock",
+        "symmetrical",
+        "systematic",
+        "thick-coming",
+        "traditional",
+        "trite",
+        "uniform",
+        "universal",
+        "usual",
+        "vernacular",
+        "well-ordered",
+        "well-regulated",
+        "well-trodden",
+        "well-worn",
+        "wonted"
+      ]
+    },
+    "habituate": {
+      "word": "HABITUATE",
+      "definitions": [
+        {
+          "text": "To make accustomed; to accustom; to familiarize. Our English dogs, who were habituated to a colder clime. Sir K. Digby. Men are first corrupted . . . and next they habituate themselves to their vicious practices. Tillotson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To settle as an inhabitant. [Obs.] Sir W. Temple.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Firmly established by custom; formed by habit; habitual. [R.] Hammond.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "acclimate",
+        "acclimatize",
+        "accommodate",
+        "accustom",
+        "adapt",
+        "addict",
+        "adjust",
+        "bear",
+        "break",
+        "break in",
+        "case harden",
+        "condition",
+        "confirm",
+        "domesticate",
+        "domesticize",
+        "endure",
+        "establish",
+        "familiarize",
+        "fix",
+        "gentle",
+        "harden",
+        "housebreak",
+        "inure",
+        "naturalize",
+        "orient",
+        "orientate",
+        "season",
+        "support",
+        "take to",
+        "tame",
+        "tolerate",
+        "train",
+        "use",
+        "wont"
+      ]
+    },
+    "habituation": {
+      "word": "HABITUATION",
+      "definitions": [
+        {
+          "text": "The act of habituating, or accustoming; the state of being habituated.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "a habit",
+        "acclimation",
+        "acclimatization",
+        "accommodation",
+        "accustoming",
+        "acquired tolerance",
+        "acute alcoholism",
+        "adaption",
+        "addictedness",
+        "addiction",
+        "adjustment",
+        "alcoholism",
+        "amphetamine withdrawal symptoms",
+        "barbiturate addiction",
+        "barbiturism",
+        "breaking",
+        "breaking-in",
+        "case hardening",
+        "chain smoking",
+        "chronic alcoholism",
+        "cocainism",
+        "conditioning",
+        "crash",
+        "craving",
+        "dependence",
+        "dipsomania",
+        "domestication",
+        "drug addiction",
+        "drug culture",
+        "drug dependence",
+        "familiarization",
+        "hardening",
+        "housebreaking",
+        "inurement",
+        "naturalization",
+        "nicotine addiction",
+        "orientation",
+        "physical dependence",
+        "psychological dependence",
+        "seasoning",
+        "taming",
+        "tolerance",
+        "training",
+        "withdrawal sickness",
+        "withdrawal symptoms"
+      ]
+    },
+    "habitude": {
+      "word": "HABITUDE",
+      "definitions": [
+        {
+          "text": "Habitual attitude; usual or accustomed state with reference to something else; established or usual relations. South. The same ideas having immutably the same habitudes one to another. Locke. The verdict of the judges was biased by nothing else than habitudes of thinking. Landor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Habitual association, intercourse, or familiarity. To write well, one must have frequent habitudes with the best company. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Habit of body or of action. Shak. It is impossible to gain an exact habitude without an infinite Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitue": {
+      "word": "HABITUE",
+      "definitions": [
+        {
+          "text": "One who habitually frequents a place; as, an habitué of a theater.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aficionado",
+        "attender",
+        "audience",
+        "buff",
+        "caller",
+        "company",
+        "customer",
+        "denizen",
+        "devotee",
+        "employer",
+        "fan",
+        "freeloader",
+        "frequenter",
+        "gate-crasher",
+        "guest",
+        "haunter",
+        "hound",
+        "lover",
+        "moocher",
+        "patron",
+        "regular",
+        "regular customer",
+        "sojourner",
+        "spectator",
+        "theatergoer",
+        "uninvited guest",
+        "user",
+        "visitant",
+        "visitor",
+        "votary"
+      ]
+    },
+    "habiture": {
+      "word": "HABITURE",
+      "definitions": [
+        {
+          "text": "Habitude. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habitus": {
+      "word": "HABITUS",
+      "definitions": [
+        {
+          "text": "Habitude; mode of life; general appearance.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hable": {
+      "word": "HABLE",
+      "definitions": [
+        {
+          "text": "See Habile. [Obs.] Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "habnab": {
+      "word": "HABNAB",
+      "definitions": [
+        {
+          "text": "By chance. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

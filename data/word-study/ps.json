@@ -1,0 +1,1377 @@
+{
+  "version": "v1",
+  "entries": {
+    "psalm": {
+      "word": "PSALM",
+      "definitions": [
+        {
+          "text": "A sacred song; a poetical composition for use in the praise or worship of God. Humus devout and holy psalms Singing everlastingly. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Especially, one of the hymns by David and others, collected into one book of the Old Testament, or a modern metrical version of such a hymn for public worship.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To extol in psalms; to sing; as, psalming his praises. Sylvester.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmist": {
+      "word": "PSALMIST",
+      "definitions": [
+        {
+          "text": "A writer or composer of sacred songs; -- a title particularly applied to David and the other authors of the Scriptural psalms.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(R. C. Ch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A clerk, precentor, singer, or leader of music, in the church.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmistry": {
+      "word": "PSALMISTRY",
+      "definitions": [
+        {
+          "text": "The use of psalms in devotion; psalmody.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmodicpsalmodical": {
+      "word": "PSALMODIC; PSALMODICAL",
+      "definitions": [
+        {
+          "text": "Relating to psalmody.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmodist": {
+      "word": "PSALMODIST",
+      "definitions": [
+        {
+          "text": "One who sings sacred songs; a psalmist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmodize": {
+      "word": "PSALMODIZE",
+      "definitions": [
+        {
+          "text": "To practice psalmody. \" The psalmodizing art.\" J. G. Cooper.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmody": {
+      "word": "PSALMODY",
+      "definitions": [
+        {
+          "text": "The act, practice, or art of singing psalms or sacred songs; also, psalms collectively, or a collection of psalms.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmograph": {
+      "word": "PSALMOGRAPH",
+      "definitions": [
+        {
+          "text": "A writer of psalms; a psalmographer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmographerpsalmographist": {
+      "word": "PSALMOGRAPHER; PSALMOGRAPHIST",
+      "definitions": [
+        {
+          "text": "A writer of psalms, or sacred songs and hymns.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmography": {
+      "word": "PSALMOGRAPHY",
+      "definitions": [
+        {
+          "text": "The act or practice of writing psalms, or sacred songs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalter": {
+      "word": "PSALTER",
+      "definitions": [
+        {
+          "text": "The Book of Psalms; -- often applied to a book containing the Psalms separately printed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Specifically, the Book of Psalms as printed in the Book of Common Prayer; among the Roman Catholics, the part of the Breviary which contains the Psalms arranged for each day of the week.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(R. C. Ch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rosary, consisting of a hundred and fifty beads, corresponding to the number of the psalms.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalterial": {
+      "word": "PSALTERIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the psalterium.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psaltery": {
+      "word": "PSALTERY",
+      "definitions": [
+        {
+          "text": "A stringed instrument of music used by the Hebrews, the form of which is not known. Praise the Lord with harp; sing unto him with the psaltery and an instrument of ten strings. Ps. xxxiii. 2.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psarolite": {
+      "word": "PSAROLITE",
+      "definitions": [
+        {
+          "text": "A silicified stem of tree fern, found in abundance in the Triassic sandstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psellism": {
+      "word": "PSELLISM",
+      "definitions": [
+        {
+          "text": "Indistinct pronunciation; stammering.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psephism": {
+      "word": "PSEPHISM",
+      "definitions": [
+        {
+          "text": "A proposition adopted by a majority of votes; especially, one adopted by vote of the Athenian people; a statute. J. P. Mahaffy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudaesthesia": {
+      "word": "PSEUDAESTHESIA",
+      "definitions": [
+        {
+          "text": "False or imaginary feeling or sense perception such as occurs in hypochondriasis, or such as is referred to an organ that has been removed, as an amputated foot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudepigraphicpseudepigraphic": {
+      "word": "PSEUDEPIGRAPHIC; PSEUDEPIGRAPHIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pseudepigraphy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudepigraphous": {
+      "word": "PSEUDEPIGRAPHOUS",
+      "definitions": [
+        {
+          "text": "Inscribed with a false name. Cudworth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudepigraphy": {
+      "word": "PSEUDEPIGRAPHY",
+      "definitions": [
+        {
+          "text": "The ascription of false names of authors to works.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudhaemal": {
+      "word": "PSEUDHAEMAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the vascular system of annelids. Pseudhæmal fluid, the circulatory fluid, or blood, of annelids, analogous to the blood of vertebrates. It is often red, but is sometimes green or colorless.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudo": {
+      "word": "PSEUDO-",
+      "definitions": [
+        {
+          "text": "A combining form or prefix signifying false, counterfeit, pretended, spurious; as, pseudo-apostle, a false apostle; pseudo- clergy, false or spurious clergy; pseudo-episcopacy, pseudo-form, pseudo-martyr, pseudo-philosopher. Also used adjectively.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudobacteria": {
+      "word": "PSEUDOBACTERIA",
+      "definitions": [
+        {
+          "text": "Microscopic organic particles, molecular granules, powdered inorganic substances, etc., which in form, size, and grouping resemble bacteria. organized beings; when this does not occur, we are dealing with pseudobacteria. Sternberg.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoblepsis": {
+      "word": "PSEUDOBLEPSIS",
+      "definitions": [
+        {
+          "text": "False or depraved sight; imaginary vision of objects. Forsyth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudobranch": {
+      "word": "PSEUDOBRANCH",
+      "definitions": [
+        {
+          "text": "Same as Pseudobranchia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudobulb": {
+      "word": "PSEUDO-BULB",
+      "definitions": [
+        {
+          "text": "An aërial corm, or thickened stem, as of some epiphytic orchidaceous plants.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudocarp": {
+      "word": "PSEUDOCARP",
+      "definitions": [
+        {
+          "text": "That portion of an anthocarpous fruit which is not derived from the ovary, as the soft part of a strawberry or of a fig.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudochina": {
+      "word": "PSEUDO-CHINA",
+      "definitions": [
+        {
+          "text": "The false china root, a plant of the genus Smilax (S. Pseudo- china), found in America.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudocoele": {
+      "word": "PSEUDOCOELE",
+      "definitions": [
+        {
+          "text": "Same as Pseudocoelia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudocoelia": {
+      "word": "PSEUDOCOELIA",
+      "definitions": [
+        {
+          "text": "The fifth ventricle in the mammalian brain. See Ventricle. B. G. Wilder.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudocone": {
+      "word": "PSEUDO-CONE",
+      "definitions": [
+        {
+          "text": "One of the soft gelatinous cones found in the compound eyes of certain insects, taking the place of the crystalline cones of others.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudocumene": {
+      "word": "PSEUDO-CUMENE",
+      "definitions": [
+        {
+          "text": "A hydrocarbon of the aromatic series, metameric with mesitylene and cumene, found in coal tar, and obtained as a colorless liquid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudodipteral": {
+      "word": "PSEUDO-DIPTERAL",
+      "definitions": [
+        {
+          "text": "Falsely or imperfectly dipteral, as a temple with the inner range of columns surrounding the cella omitted, so that the space between the cella wall and the columns is very great, being equal to two intercolumns and one column.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A pseudo-dipteral temple.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudodox": {
+      "word": "PSEUDODOX",
+      "definitions": [
+        {
+          "text": "Not true in opinion or doctrine; false.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A false opinion or doctrine. \"To maintain the atheistical pseudodox which judgeth evil good, and darkness light.\" T. Adams.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudofilaria": {
+      "word": "PSEUDOFILARIA",
+      "definitions": [
+        {
+          "text": "One of the two elongated vibratile young formed by fission of the embryo during the development of certain Gregarinæ.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudogalena": {
+      "word": "PSEUDO-GALENA",
+      "definitions": [
+        {
+          "text": "False galena, or blende. See Blende (a).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudograph": {
+      "word": "PSEUDOGRAPH",
+      "definitions": [
+        {
+          "text": "A false writing; a spurious document; a forgery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudography": {
+      "word": "PSEUDOGRAPHY",
+      "definitions": [
+        {
+          "text": "False writing; forgery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudohalter": {
+      "word": "PSEUDOHALTER",
+      "definitions": [
+        {
+          "text": "One of the rudimentary front wings of certain insects (Stylops). They resemble the halteres, or rudimentary hind wings, of Diptera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoheart": {
+      "word": "PSEUDO-HEART",
+      "definitions": [
+        {
+          "text": "Any contractile vessel of invertebrates which is not of the nature of a real heart, especially one of those pertaining to the excretory system.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudohyperthophic": {
+      "word": "PSEUDO-HYPERTHOPHIC",
+      "definitions": [
+        {
+          "text": "Falsely hypertrophic; as, pseudo-hypertrophic paralysis, a variety of paralysis in which the muscles are apparently enlarged, but are really degenerated and replaced by fat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudologist": {
+      "word": "PSEUDOLOGIST",
+      "definitions": [
+        {
+          "text": "One who utters falsehoods; a liar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudology": {
+      "word": "PSEUDOLOGY",
+      "definitions": [
+        {
+          "text": "Falsehood of speech. Arbuthnot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudometallic": {
+      "word": "PSEUDO-METALLIC",
+      "definitions": [
+        {
+          "text": "Falsely or imperfectly metallic; -- said of a kind of luster, as in minerals.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudomonocotyledonous": {
+      "word": "PSEUDO-MONOCOTYLEDONOUS",
+      "definitions": [
+        {
+          "text": "Having two coalescent cotyledons, as the live oak and the horse-chestnut.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudomorph": {
+      "word": "PSEUDOMORPH",
+      "definitions": [
+        {
+          "text": "An irregular or deceptive form.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Crystallog.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pseudomorphous crystal, as a crystal consisting of quartz, but having the cubic form of fluor spar, the fluor crystal having been changed to quartz by a process of substitution.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudomorphism": {
+      "word": "PSEUDOMORPHISM",
+      "definitions": [
+        {
+          "text": "The state of having, or the property of taking, a crystalline form unlike that which belongs to the species.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudomorphous": {
+      "word": "PSEUDOMORPHOUS",
+      "definitions": [
+        {
+          "text": "Not having the true form. Pseudomorphous crystal, one which has a form that does not result from its own powers of crystallization.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudonavicella": {
+      "word": "PSEUDONAVICELLA",
+      "definitions": [
+        {
+          "text": "Same as Pseudonavicula.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudonavicula": {
+      "word": "PSEUDONAVICULA",
+      "definitions": [
+        {
+          "text": "One of the minute spindle-shaped embryos of Gregarinæ and some other Protozoa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoneuroptera": {
+      "word": "PSEUDONEUROPTERA",
+      "definitions": [
+        {
+          "text": "division of insects (Zoöl.) reticulated wings, as in the Neuroptera, but having an active pupa state. It includes the dragon flies, May flies, white ants, etc. By some zoölogists they are classed with the Orthoptera; by others, with the Neuroptera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoneuropterous": {
+      "word": "PSEUDONEUROPTEROUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Pseudoneuroptera.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudonym": {
+      "word": "PSEUDONYM",
+      "definitions": [
+        {
+          "text": "A fictitious name assumed for the time, as by an author; a pen name. [Written also pseudonyme.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudonymity": {
+      "word": "PSEUDONYMITY",
+      "definitions": [
+        {
+          "text": "The using of fictitious names, as by authors.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoperipteral": {
+      "word": "PSEUDO-PERIPTERAL",
+      "definitions": [
+        {
+          "text": "Falsely or imperfectly peripteral, as a temple having the columns at the sides attached to the walls, and an ambulatory only at the ends or only at one end.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A pseudo-peripteral temple. Oxf. Gloss.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Falsely or imperfectly peripteral, as a temple having the columns at the sides attached to the walls, and an ambulatory only at the ends or only at one end. -- n.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A pseudo-peripteral temple. Oxf. Gloss.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudopod": {
+      "word": "PSEUDOPOD",
+      "definitions": [
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any protoplasmic filament or irregular process projecting from any unicellular organism, or from any animal or plant call.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rhizopod.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudopodial": {
+      "word": "PSEUDOPODIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a pseudopod, or to pseudopodia. See Illust. of Heliozoa.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudopodium": {
+      "word": "PSEUDOPODIUM",
+      "definitions": [
+        {
+          "text": "Same as Pseudopod.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudopupa": {
+      "word": "PSEUDOPUPA",
+      "definitions": [
+        {
+          "text": "A stage intermediate between the larva and pupa of bees and certain other hymenopterous insects.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudorhabdite": {
+      "word": "PSEUDORHABDITE",
+      "definitions": [
+        {
+          "text": "One of the peculiar rodlike corpuscles found in the integument of certain Turbellaria. They are filled with a soft granular substance.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoromantic": {
+      "word": "PSEUDO-ROMANTIC",
+      "definitions": [
+        {
+          "text": "Falsely romantic. The false taste, the pseudo-romantic rage. De Quincey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoscope": {
+      "word": "PSEUDOSCOPE",
+      "definitions": [
+        {
+          "text": "An instrument which exhibits objects with their proper relief reversed; -- an effect opposite to that produced by the stereoscope. Wheatstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoscopic": {
+      "word": "PSEUDOSCOPIC",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or formed by, a pseudoscope; having its parts appearing with the relief reversed; as, a pseudoscopic image.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoscorpiones": {
+      "word": "PSEUDOSCORPIONES",
+      "definitions": [
+        {
+          "text": "An order of Arachnoidea having the palpi terminated by large claws, as in the scorpions, but destitute of a caudal sting; the false scorpions. Called also Pseudoscorpii, and Pseudoscorpionina. See Illust. of Book scorpion, under Book.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudosphere": {
+      "word": "PSEUDOSPHERE",
+      "definitions": [
+        {
+          "text": "The surface of constant negative curvature generated by the revolution of a tractrix. This surface corresponds in non-Euclidian space to the sphere in ordinary space. An important property of the surface is that any figure drawn upon it can be displaced in any way without tearing it or altering in size any of its elements.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudospore": {
+      "word": "PSEUDOSPORE",
+      "definitions": [
+        {
+          "text": "A peculiar reproductive cell found in some fungi.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudostella": {
+      "word": "PSEUDOSTELLA",
+      "definitions": [
+        {
+          "text": "Any starlike meteor or phenomenon. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudostoma": {
+      "word": "PSEUDOSTOMA",
+      "definitions": [
+        {
+          "text": "A group of cells resembling a stoma, but without any true aperture among them.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudosymmetric": {
+      "word": "PSEUDO-SYMMETRIC",
+      "definitions": [
+        {
+          "text": "Exhibiting pseudo-symmetry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudosymmetry": {
+      "word": "PSEUDO-SYMMETRY",
+      "definitions": [
+        {
+          "text": "A kind of symmetry characteristic of certain crystals which from twinning, or other causes, come to resemble forms of a system other than that to which they belong, as the apparently hexagonal prisms of aragonite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudotetramera": {
+      "word": "PSEUDOTETRAMERA",
+      "definitions": [
+        {
+          "text": "A division of beetles having the fifth tarsal joint minute and",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudotinea": {
+      "word": "PSEUDOTINEA",
+      "definitions": [
+        {
+          "text": "The bee moth, or wax moth (Galleria).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudoturbinal": {
+      "word": "PSEUDOTURBINAL",
+      "definitions": [
+        {
+          "text": "See under Turbinal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudovary": {
+      "word": "PSEUDOVARY",
+      "definitions": [
+        {
+          "text": "The organ in which pseudova are produced; -- called also pseudovarium.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudovum": {
+      "word": "PSEUDOVUM",
+      "definitions": [
+        {
+          "text": "An egglike germ produced by the agamic females of some insects and other animals, and by the larvæ of certain insects. It is capable of development without fertilization. See Illust. of Pædogenesis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pshaw": {
+      "word": "PSHAW",
+      "definitions": [
+        {
+          "text": "Pish! pooch! -- an exclamation used as an expression of contempt, disdain, dislike, etc. [Written also psha.]",
+          "partOfSpeech": "interjection"
+        },
+        {
+          "text": "To express disgust or contemptuous disapprobation, as by the exclamation \" Pshaw!\" The goodman used regularly to frown and pshaw wherever this topic was touched upon. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilanthropic": {
+      "word": "PSILANTHROPIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or embodying, psilanthropy. \"A psilanthropic explanation.\" Coleridge.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilanthropism": {
+      "word": "PSILANTHROPISM",
+      "definitions": [
+        {
+          "text": "Psilanthropy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilanthropist": {
+      "word": "PSILANTHROPIST",
+      "definitions": [
+        {
+          "text": "One who believes that Christ was a mere man. Smart.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilanthropy": {
+      "word": "PSILANTHROPY",
+      "definitions": [
+        {
+          "text": "The doctrine of the merely human existence of Christ.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilology": {
+      "word": "PSILOLOGY",
+      "definitions": [
+        {
+          "text": "Love of empty of empty talk or noise. Coleridge.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilomelane": {
+      "word": "PSILOMELANE",
+      "definitions": [
+        {
+          "text": "A hydrous oxide of manganese, occurring in smooth, botryoidal forms, and massive, and having an iron-black or steel-gray color.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilopaedes": {
+      "word": "PSILOPAEDES",
+      "definitions": [
+        {
+          "text": "birds whose young at first have down on the pterylæ only; -- called also Gymnopædes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilopaedic": {
+      "word": "PSILOPAEDIC",
+      "definitions": [
+        {
+          "text": "Having down upon the pterylæ only; -- said of the young of certain birds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psilosopher": {
+      "word": "PSILOSOPHER",
+      "definitions": [
+        {
+          "text": "A superficial or narrow pretender to philosophy; a sham philosopher.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psittaceouspsittacid": {
+      "word": "PSITTACEOUS; PSITTACID",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the parrots, or the Psittaci.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the Psittaci.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psittaci": {
+      "word": "PSITTACI",
+      "definitions": [
+        {
+          "text": "The order of birds which comprises the parrots.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psittacofulvine": {
+      "word": "PSITTA-CO-FULVINE",
+      "definitions": [
+        {
+          "text": "A yellow pigment found in the feathers of certain parrots.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psoas": {
+      "word": "PSOAS",
+      "definitions": [
+        {
+          "text": "An internal muscle arising from the lumbar vertebræ and inserted into the femur. In man there are usually two on each side, and the larger one, or great psoas, forms a part of the iliopsoas.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psora": {
+      "word": "PSORA",
+      "definitions": [
+        {
+          "text": "A cutaneous disease; especially, the itch.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psoric": {
+      "word": "PSORIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to psora.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psorosperm": {
+      "word": "PSOROSPERM",
+      "definitions": [
+        {
+          "text": "A minute parasite, usually the young of Gregarinæ, in the pseudonavicula stage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychagogic": {
+      "word": "PSYCHAGOGIC",
+      "definitions": [
+        {
+          "text": "Attractive; persuasive. J. Morley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychagogue": {
+      "word": "PSYCHAGOGUE",
+      "definitions": [
+        {
+          "text": "A necromancer. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychal": {
+      "word": "PSYCHAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the soul; psychical. Bayne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychanalysis": {
+      "word": "PSYCHANALYSIS",
+      "definitions": [
+        {
+          "text": "A method or process of psychotherapeutic analysis based on the work of Dr. Sigmund Freud (1856- --) of Vienna. The method rests upon the theory that hysteria is characteristically due to repression of desires consciously rejected but subconsciously persistent; it consists in a close analysis of the patient's mental history, stress",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psyche": {
+      "word": "PSYCHE",
+      "definitions": [
+        {
+          "text": "(Class Myth.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A lovely maiden, daughter of a king and mistress of Eros, or Cupid. She is regarded as the personification of the soul.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The soul; the vital principle; the mind.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [F. psyché.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cheval glass.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychian": {
+      "word": "PSYCHIAN",
+      "definitions": [
+        {
+          "text": "Any small moth of the genus Psyche and allied genera (family Psychidæ). The larvæ are called basket worms. See Basket worm, under Basket.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychiatriapsychiatry": {
+      "word": "PSYCHIATRIA; PSYCHIATRY",
+      "definitions": [
+        {
+          "text": "The application of the healing art to mental diseases. Dunglison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychiatric": {
+      "word": "PSYCHIATRIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to psychiatria.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychicpsychical": {
+      "word": "PSYCHIC; PSYCHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the human soul, or to the living principle in man. psychological. Recent metaphysicians, however, have employed it to mark the difference between psychh` the living principle in man, and pney^ma the rational or spiritual part of his nature. In this use, the word describes the human soul in its relation to sense, appetite, and the outer visible world, as distinguished from spiritual or rational faculties, which have to do with the supersensible world. Heyse.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the mind, or its functions and diseases; mental; -- contrasted with physical. Psychical blindness, Psychical deafness (Med.), forms of nervous disease in which, while the senses of sight and hearing remain unimpaired, the mind fails to appreciate the significance of the sounds heard or the images seen. functional nervous disease, by mere force of example. mental diseases.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychics": {
+      "word": "PSYCHICS",
+      "definitions": [
+        {
+          "text": "Psychology.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychism": {
+      "word": "PSYCHISM",
+      "definitions": [
+        {
+          "text": "The doctrine of Quesne, that there is a fluid universally diffused, end equally animating all living beings, the difference in their actions being due to the difference of the individual organizations. Fleming.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psycho": {
+      "word": "PSYCHO-",
+      "definitions": [
+        {
+          "text": "A combining form from Gr. the soul, the mind, the understanding; as, psychology.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychoanalysispsychoanalytic": {
+      "word": "PSYCHOANALYSIS; PSYCHOANALYTIC",
+      "definitions": [
+        {
+          "text": "= Psychanalysis, Psychanalytic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychogenesis": {
+      "word": "PSYCHOGENESIS",
+      "definitions": [
+        {
+          "text": "Genesis through an internal force, as opposed to natural selection.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychography": {
+      "word": "PSYCHOGRAPHY",
+      "definitions": [
+        {
+          "text": "A description of the phenomena of mind.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Spiritualism)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Spirit writing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychologist": {
+      "word": "PSYCHOLOGIST",
+      "definitions": [
+        {
+          "text": "One who is versed in, devoted to, psychology.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychologue": {
+      "word": "PSYCHOLOGUE",
+      "definitions": [
+        {
+          "text": "A psychologist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychology": {
+      "word": "PSYCHOLOGY",
+      "definitions": [
+        {
+          "text": "The science of the human soul; specifically, the systematic or scientific knowledge of the powers and functions of the human soul, so far as they are known by consciousness; a treatise on the human soul. Psychology, the science conversant about the phenomena of the mind, or conscious subject, or self. Sir W. Hamilton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychomachy": {
+      "word": "PSYCHOMACHY",
+      "definitions": [
+        {
+          "text": "A conflict of the soul with the body.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychomancy": {
+      "word": "PSYCHOMANCY",
+      "definitions": [
+        {
+          "text": "Necromancy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychometry": {
+      "word": "PSYCHOMETRY",
+      "definitions": [
+        {
+          "text": "The art of measuring the duration of mental processes, or of",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychomotor": {
+      "word": "PSYCHO-MOTOR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to movement produced by action of the mind or will.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychopannychism": {
+      "word": "PSYCHOPANNYCHISM",
+      "definitions": [
+        {
+          "text": "The doctrine that the soul falls asleep at death, and does not",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychophysical": {
+      "word": "PSYCHOPHYSICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to psychophysics; involving the action or mutual relations of the psychical and physical in man. Psychophysical time (Physiol.), the time required for the mind to transform a sensory impression into a motor impulse. It is an important part of physiological or reaction time. See under Reaction.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychophysics": {
+      "word": "PSYCHOPHYSICS",
+      "definitions": [
+        {
+          "text": "The science of the connection between nerve action and consciousness; the science which treats of the relations of the psychical and physical in their conjoint operation in man; the doctrine of the relation of function or dependence between body and soul.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychopomp": {
+      "word": "PSYCHOPOMP",
+      "definitions": [
+        {
+          "text": "A leader or guide of souls . J. Fiske.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychosis": {
+      "word": "PSYCHOSIS",
+      "definitions": [
+        {
+          "text": "Any vital action or activity. Mivart.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A disease of the mind; especially, a functional mental disorder, that is, one unattended with evident organic changes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychotherapeutics": {
+      "word": "PSYCHOTHERAPEUTICS",
+      "definitions": [
+        {
+          "text": "The treatment of disease by acting on the mind, as by suggestion; mind cure; psychotherapy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychotherapy": {
+      "word": "PSYCHOTHERAPY",
+      "definitions": [
+        {
+          "text": "Psychotherapeutics.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychozoic": {
+      "word": "PSYCHOZOIC",
+      "definitions": [
+        {
+          "text": "Designating, or applied to the Era of man; as, the psychozoic era.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychrometer": {
+      "word": "PSYCHROMETER",
+      "definitions": [
+        {
+          "text": "An instrument for measuring the tension of the aqueous vapor in the atmosphere, being essentially a wet and dry bulb hygrometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychrometrical": {
+      "word": "PSYCHROMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the psychrometer or psychrometry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychrometry": {
+      "word": "PSYCHROMETRY",
+      "definitions": [
+        {
+          "text": "Hygrometry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psylla": {
+      "word": "PSYLLA",
+      "definitions": [
+        {
+          "text": "Any leaping plant louse of the genus Psylla, or family Psyllidæ.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,799 @@
+{
+  "version": "v1",
+  "entries": {
+    "bewail": {
+      "word": "BEWAIL",
+      "definitions": [
+        {
+          "text": "To express deep sorrow for, as by wailing; to lament; to wail over. Hath widowed and unchilded many a one, Which to this hour bewail the injury. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To express grief; to lament. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "be sorry for",
+        "bemoan",
+        "deplore",
+        "dirge",
+        "elegize",
+        "give sorrow words",
+        "grieve",
+        "keen",
+        "knell",
+        "lament",
+        "moan",
+        "mourn",
+        "regret",
+        "repine",
+        "rue",
+        "rue the day",
+        "sigh",
+        "sing the blues",
+        "sorrow",
+        "weep",
+        "weep over"
+      ]
+    },
+    "bewailable": {
+      "word": "BEWAILABLE",
+      "definitions": [
+        {
+          "text": "Such as may, or ought to, be bewailed; lamentable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewailer": {
+      "word": "BEWAILER",
+      "definitions": [
+        {
+          "text": "One who bewails or laments.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewailment": {
+      "word": "BEWAILMENT",
+      "definitions": [
+        {
+          "text": "The act of bewailing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewake": {
+      "word": "BEWAKE",
+      "definitions": [
+        {
+          "text": "To keep watch over; to keep awake. [Obs.] Gower.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "beware": {
+      "word": "BEWARE",
+      "definitions": [
+        {
+          "text": "To be on one's guard; to be cautious; to take care; -- commonly followed by of or lest before the thing that is to be avoided. Beware of all, but most beware of man ! Pope. Beware the awful avalanche. Longfellow.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have a special regard; to heed. [Obs.] Behold, I send an Angel before thee. . . . Beware of him, and obey his voice. Ex. xxiii. 20, 21. wary, which is an adjective. \"Be ye war of false prophetis.\" Wyclif, Matt. vii. 15. It is used commonly in the imperative and infinitive modes, and with such auxiliaries (shall, should, must, etc.) as go with the infinitive.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To avoid; to take care of; to have a care for. [Obs.] \"Priest, beware your beard.\" Shak. To wish them beware the son. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewash": {
+      "word": "BEWASH",
+      "definitions": [
+        {
+          "text": "To drench or souse with water. \"Let the maids bewash the men.\" Herrick.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "beweep": {
+      "word": "BEWEEP",
+      "definitions": [
+        {
+          "text": "To weep over; to deplore; to bedew with tears. \"His timeless death beweeping.\" Drayton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To weep. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewet": {
+      "word": "BEWET",
+      "definitions": [
+        {
+          "text": "To wet or moisten. Gay.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewhore": {
+      "word": "BEWHORE",
+      "definitions": [
+        {
+          "text": "To corrupt with regard to chastity; to make a whore of. J. Fletcher.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pronounce or characterize as a whore. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewig": {
+      "word": "BEWIG",
+      "definitions": [
+        {
+          "text": "To cover (the head) with a wig. Hawthorne.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewilder": {
+      "word": "BEWILDER",
+      "definitions": [
+        {
+          "text": "To lead into perplexity or confusion, as for want of a plain path; to perplex with mazes; or in general, to perplex or confuse greatly. Lost and bewildered in the fruitless search. Addison. embarrass; lead astray.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abash",
+        "addle",
+        "addle the wits",
+        "amaze",
+        "astonish",
+        "astound",
+        "awe",
+        "awestrike",
+        "baffle",
+        "ball up",
+        "becloud",
+        "bedaze",
+        "bedazzle",
+        "befog",
+        "befuddle",
+        "bemuse",
+        "boggle",
+        "bother",
+        "bowl down",
+        "bowl over",
+        "bug",
+        "cap",
+        "cloud",
+        "confound",
+        "confuse",
+        "daze",
+        "dazzle",
+        "discombobulate",
+        "discomfit",
+        "discompose",
+        "disconcert",
+        "dismay",
+        "disorganize",
+        "disorient",
+        "distract",
+        "disturb",
+        "dumbfound",
+        "dumbfounder",
+        "embarrass",
+        "entangle",
+        "flabbergast",
+        "flummox",
+        "flurry",
+        "fluster",
+        "flutter",
+        "fog",
+        "fuddle",
+        "fuss",
+        "maze",
+        "mist",
+        "mix up",
+        "moider",
+        "muddle",
+        "mystify",
+        "overwhelm",
+        "paralyze",
+        "perplex",
+        "perturb",
+        "petrify",
+        "pose",
+        "pother",
+        "put out",
+        "puzzle",
+        "raise hell",
+        "rattle",
+        "ruffle",
+        "stagger",
+        "startle",
+        "strike dead",
+        "strike dumb",
+        "strike with wonder",
+        "stumble",
+        "stun",
+        "stupefy",
+        "surprise",
+        "throw into confusion",
+        "unsettle",
+        "upset"
+      ]
+    },
+    "bewildered": {
+      "word": "BEWILDERED",
+      "definitions": [
+        {
+          "text": "Greatly perplexed; as, a bewildered mind.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abashed",
+        "abroad",
+        "adrift",
+        "agape",
+        "aghast",
+        "agog",
+        "all agog",
+        "amazed",
+        "astonished",
+        "astounded",
+        "astray",
+        "at a loss",
+        "at a nonplus",
+        "at a stand",
+        "at a standstill",
+        "at an impasse",
+        "at gaze",
+        "at sea",
+        "awed",
+        "awestruck",
+        "baffled",
+        "beguiled",
+        "bewitched",
+        "bothered",
+        "breathless",
+        "captivated",
+        "clueless",
+        "confounded",
+        "confused",
+        "discomposed",
+        "disconcerted",
+        "dismayed",
+        "disoriented",
+        "distracted",
+        "distraught",
+        "disturbed",
+        "dumbfounded",
+        "dumbstruck",
+        "embarrassed",
+        "enchanted",
+        "enraptured",
+        "enravished",
+        "enthralled",
+        "entranced",
+        "fascinated",
+        "flabbergasted",
+        "gaping",
+        "gauping",
+        "gazing",
+        "guessing",
+        "hypnotized",
+        "in a fix",
+        "in a maze",
+        "in a pickle",
+        "in a scrape",
+        "in a stew",
+        "in awe",
+        "in awe of",
+        "lost",
+        "lost in wonder",
+        "marveling",
+        "mazed",
+        "mesmerized",
+        "mystified",
+        "nonplussed",
+        "off the track",
+        "open-eyed",
+        "openmouthed",
+        "overwhelmed",
+        "perplexed",
+        "perturbed",
+        "popeyed",
+        "put-out",
+        "puzzled",
+        "rapt in wonder",
+        "spellbound",
+        "staggered",
+        "staring",
+        "stuck",
+        "stumped",
+        "stupefied",
+        "surprised",
+        "thunderstruck",
+        "turned around",
+        "under a charm",
+        "upset",
+        "wide-eyed",
+        "without a clue",
+        "wonder-struck",
+        "wondering"
+      ]
+    },
+    "bewilderedness": {
+      "word": "BEWILDEREDNESS",
+      "definitions": [
+        {
+          "text": "The state of being bewildered; bewilderment. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewilderedvillatobewildercfaswildorawildanimalsee": {
+      "word": "bewildered, villa to bewilder; cf. AS. wildor a wild animal. See",
+      "definitions": [
+        {
+          "text": "To bewilder; to perplex. Long lost and wildered in the maze of fate. Pope. Again the wildered fancy dreams Of spouting fountains, frozen as they rose. Bryant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewildering": {
+      "word": "BEWILDERING",
+      "definitions": [
+        {
+          "text": "Causing bewilderment or great perplexity; as, bewildering",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "baffling",
+        "beguiling",
+        "bothering",
+        "confounding",
+        "confusing",
+        "discomposing",
+        "disconcerting",
+        "dismaying",
+        "distracting",
+        "disturbing",
+        "embarrassing",
+        "enigmatic",
+        "exceptional",
+        "extraordinary",
+        "fabulous",
+        "fantastic",
+        "fascinating",
+        "incomprehensible",
+        "inconceivable",
+        "incredible",
+        "intricate",
+        "marvelous",
+        "miraculous",
+        "mysterious",
+        "mystifying",
+        "outlandish",
+        "passing strange",
+        "perplexing",
+        "perturbing",
+        "phenomenal",
+        "problematic",
+        "prodigious",
+        "puzzling",
+        "rare",
+        "remarkable",
+        "sensational",
+        "strange",
+        "striking",
+        "stupendous",
+        "unheard-of",
+        "unimaginable",
+        "unique",
+        "unprecedented",
+        "upsetting",
+        "wonderful",
+        "wondrous"
+      ]
+    },
+    "bewilderment": {
+      "word": "BEWILDERMENT",
+      "definitions": [
+        {
+          "text": "The state of being bewildered.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bewildering tangle or confusion. He . . . soon lost all traces of it amid bewilderment of tree trunks and underbrush. Hawthorne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewinter": {
+      "word": "BEWINTER",
+      "definitions": [
+        {
+          "text": "To make wintry. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewit": {
+      "word": "BEWIT",
+      "definitions": [
+        {
+          "text": "A double slip of leather by which bells are fastened to a hawk's legs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewitch": {
+      "word": "BEWITCH",
+      "definitions": [
+        {
+          "text": "To gain an ascendency over by charms or incantations; to affect (esp. to injure) by witchcraft or sorcery. See how I am bewitched; behold, mine arm Is like a blasted sapling withered up. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To charm; to fascinate; to please to such a degree as to take away the power of resistance; to enchant. The charms of poetry our souls bewitch. Dryden.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abuse",
+        "afflict",
+        "aggrieve",
+        "allure",
+        "attract",
+        "becharm",
+        "bedevil",
+        "befoul",
+        "beguile",
+        "blight",
+        "captivate",
+        "carry away",
+        "cast a spell",
+        "charm",
+        "condemn",
+        "corrupt",
+        "crucify",
+        "curse",
+        "damage",
+        "dazzle",
+        "defile",
+        "delectate",
+        "delight",
+        "demonize",
+        "deprave",
+        "despoil",
+        "destroy",
+        "devilize",
+        "diabolize",
+        "disadvantage",
+        "disserve",
+        "distress",
+        "do a mischief",
+        "do evil",
+        "do ill",
+        "do wrong",
+        "do wrong by",
+        "doom",
+        "draw",
+        "draw on",
+        "enamor",
+        "enchant",
+        "endear",
+        "enrapture",
+        "enravish",
+        "enthrall",
+        "entrance",
+        "envenom",
+        "fascinate",
+        "freak out",
+        "get into trouble",
+        "harass",
+        "harm",
+        "hex",
+        "hold in thrall",
+        "hoodoo",
+        "hurt",
+        "hypnotize",
+        "impair",
+        "imparadise",
+        "infatuate",
+        "infect",
+        "inflame with love",
+        "injure",
+        "intrigue",
+        "jinx",
+        "knock dead",
+        "knock out",
+        "magnetize",
+        "maltreat",
+        "menace",
+        "mesmerize",
+        "mistreat",
+        "molest",
+        "obsess",
+        "outrage",
+        "overlook",
+        "persecute",
+        "play havoc with",
+        "play hob with",
+        "poison",
+        "pollute",
+        "possess",
+        "prejudice",
+        "ravish",
+        "savage",
+        "scathe",
+        "seduce",
+        "send",
+        "slay",
+        "snow",
+        "sorcerize",
+        "spell",
+        "spellbind",
+        "taint",
+        "take",
+        "tantalize",
+        "tempt",
+        "threaten",
+        "thrill",
+        "tickle",
+        "tickle pink",
+        "titillate",
+        "torment",
+        "torture",
+        "transport",
+        "trick",
+        "vamp",
+        "violate",
+        "voodoo",
+        "wile",
+        "witch",
+        "wound",
+        "wow",
+        "wreak havoc on",
+        "wrong"
+      ]
+    },
+    "bewitchedness": {
+      "word": "BEWITCHEDNESS",
+      "definitions": [
+        {
+          "text": "The state of being bewitched. Gauden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewitcher": {
+      "word": "BEWITCHER",
+      "definitions": [
+        {
+          "text": "One who bewitches.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewitchery": {
+      "word": "BEWITCHERY",
+      "definitions": [
+        {
+          "text": "The power of bewitching or fascinating; bewitchment; charm; fascination. There is a certain bewitchery or fascination in words. South.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewitching": {
+      "word": "BEWITCHING",
+      "definitions": [
+        {
+          "text": "Having power to bewitch or fascinate; enchanting; captivating;",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Circean",
+        "alluring",
+        "appealing",
+        "appetizing",
+        "attractive",
+        "beguiling",
+        "blandishing",
+        "cajoling",
+        "captivating",
+        "catching",
+        "charismatic",
+        "charming",
+        "coaxing",
+        "come-hither",
+        "coquettish",
+        "delightful",
+        "enchanting",
+        "engaging",
+        "enravishing",
+        "enthralling",
+        "enticing",
+        "entrancing",
+        "exciting",
+        "exotic",
+        "exquisite",
+        "fascinating",
+        "fetching",
+        "flirtatious",
+        "glamorous",
+        "heart-robbing",
+        "hypnotic",
+        "illusionary",
+        "illusive",
+        "illusory",
+        "interesting",
+        "intriguing",
+        "inviting",
+        "irresistible",
+        "lovely",
+        "luxurious",
+        "magnetic",
+        "mesmeric",
+        "mouth-watering",
+        "piquant",
+        "prepossessing",
+        "provocative",
+        "provoquant",
+        "ravishing",
+        "seducing",
+        "seductive",
+        "sensuous",
+        "siren",
+        "sirenic",
+        "spellbinding",
+        "spellful",
+        "taking",
+        "tantalizing",
+        "teasing",
+        "tempting",
+        "thrilling",
+        "tickling",
+        "titillating",
+        "titillative",
+        "voluptuous",
+        "winning",
+        "winsome",
+        "witching"
+      ]
+    },
+    "bewitchment": {
+      "word": "BEWITCHMENT",
+      "definitions": [
+        {
+          "text": "The act of bewitching, or the state of being bewitched. Tylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The power of bewitching or charming. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewonder": {
+      "word": "BEWONDER",
+      "definitions": [
+        {
+          "text": "To fill with wonder. [Obs.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To wonder at; to admire. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewrap": {
+      "word": "BEWRAP",
+      "definitions": [
+        {
+          "text": "To wrap up; to cover. Fairfax.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewray": {
+      "word": "BEWRAY",
+      "definitions": [
+        {
+          "text": "To soil. See Beray.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To expose; to reveal; to disclose; to betray. [Obs. or Archaic] The murder being once done, he is in less fear, and in more hope that the deed shall not be bewrayed or known. Robynson (More's Utopia. ) Thy speech bewrayeth thee. Matt. xxvi. 73.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewrayer": {
+      "word": "BEWRAYER",
+      "definitions": [
+        {
+          "text": "One who, or that which, bewrays; a revealer. [Obs. or Archaic] Addison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewrayment": {
+      "word": "BEWRAYMENT",
+      "definitions": [
+        {
+          "text": "Betrayal. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewreck": {
+      "word": "BEWRECK",
+      "definitions": [
+        {
+          "text": "To wreck. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewreke": {
+      "word": "BEWREKE",
+      "definitions": [
+        {
+          "text": "To wreak; to avenge. [Obs.] Ld. Berners.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bewrought": {
+      "word": "BEWROUGHT",
+      "definitions": [
+        {
+          "text": "Embroidered. [Obs.] B. Jonson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,1161 @@
+{
+  "version": "v1",
+  "entries": {
+    "bab": {
+      "word": "BAB",
+      "definitions": [
+        {
+          "text": "Lit., gate; -- a title given to the founder of Babism, and taken from that of Bab-ud-Din, assumed by him.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baba": {
+      "word": "BABA",
+      "definitions": [
+        {
+          "text": "A kind of plum cake.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babbitt": {
+      "word": "BABBITT",
+      "definitions": [
+        {
+          "text": "To line with Babbitt metal.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Middle American",
+        "Philistine",
+        "anal character",
+        "arriviste",
+        "boeotian",
+        "boob",
+        "boor",
+        "bounder",
+        "bourgeois",
+        "burgher",
+        "cad",
+        "churl",
+        "clown",
+        "compulsive character",
+        "conformer",
+        "conformist",
+        "conventionalist",
+        "epicier",
+        "formalist",
+        "groundling",
+        "guttersnipe",
+        "hooligan",
+        "ill-bred fellow",
+        "looby",
+        "lout",
+        "low fellow",
+        "methodologist",
+        "middle-class type",
+        "middlebrow",
+        "model child",
+        "mucker",
+        "nouveau riche",
+        "organization man",
+        "parrot",
+        "parvenu",
+        "peasant",
+        "pedant",
+        "perfectionist",
+        "plastic person",
+        "precisian",
+        "precisianist",
+        "ribald",
+        "rough",
+        "roughneck",
+        "rowdy",
+        "ruffian",
+        "sheep",
+        "square",
+        "teenybopper",
+        "trimmer",
+        "upstart",
+        "vulgarian",
+        "vulgarist",
+        "yes-man",
+        "yokel"
+      ]
+    },
+    "babbittmetal": {
+      "word": "BABBITT METAL",
+      "definitions": [
+        {
+          "text": "A soft white alloy of variable composition (as a nine parts of tin to one of copper, or of fifty parts of tin to five of antimony and one of copper) used in bearings to diminish friction.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "babble": {
+      "word": "BABBLE",
+      "definitions": [
+        {
+          "text": "To utter words indistinctly or unintelligibly; to utter inarticulate sounds; as a child babbles.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To talk incoherently; to utter unmeaning words.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To talk much; to chatter; to prate.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make a continuous murmuring noise, as shallow water running over stones. In every babbling he finds a friend. Wordsworth. noisy after having found a good scent.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To utter in an indistinct or incoherent way; to repeat,as words, in a childish way without understanding. These [words] he used to babble in all companies. Arbuthnot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To disclose by too free talk, as a secret.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Idle talk; senseless prattle; gabble; twaddle. \"This is mere moral babble.\" Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Inarticulate speech; constant or confused murmur. The babble of our young children. Darwin. The babble of the stream. Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Aesopian language",
+        "Babel",
+        "Greek",
+        "absurdity",
+        "amphigory",
+        "argot",
+        "babblement",
+        "baffle",
+        "balderdash",
+        "bavardage",
+        "be Greek to",
+        "be beyond one",
+        "be indiscreet",
+        "be insane",
+        "be too deep",
+        "be unguarded",
+        "beat one",
+        "betray",
+        "betray a confidence",
+        "bibble-babble",
+        "blab",
+        "blabber",
+        "blah-blah",
+        "blather",
+        "blether",
+        "blethers",
+        "blurt",
+        "blurt out",
+        "bombast",
+        "bubble",
+        "bull",
+        "bullshit",
+        "burble",
+        "cackle",
+        "cant",
+        "caquet",
+        "caqueterie",
+        "chat",
+        "chatter",
+        "chattering",
+        "chitchat",
+        "chitter-chatter",
+        "cipher",
+        "clack",
+        "claptrap",
+        "clatter",
+        "code",
+        "cryptogram",
+        "disclose",
+        "dither",
+        "divulge",
+        "dote",
+        "double Dutch",
+        "double-talk",
+        "drivel",
+        "drool",
+        "escape one",
+        "fiddle-faddle",
+        "fiddledeedee",
+        "flummery",
+        "folderol",
+        "fudge",
+        "fustian",
+        "gab",
+        "gabble",
+        "galimatias",
+        "gammon",
+        "garble",
+        "gas",
+        "gibber",
+        "gibberish",
+        "gibble-gabble",
+        "gift of tongues",
+        "give away",
+        "glossolalia",
+        "go on",
+        "gobbledygook",
+        "gossip",
+        "guff",
+        "guggle",
+        "gurgle",
+        "gush",
+        "have a demon",
+        "haver",
+        "hocus-pocus",
+        "hot air",
+        "hubbub",
+        "humbug",
+        "idle talk",
+        "inform",
+        "inform on",
+        "jabber",
+        "jabberwocky",
+        "jargon",
+        "jaw",
+        "jumble",
+        "lap",
+        "leak",
+        "let drop",
+        "let fall",
+        "let slip",
+        "lose one",
+        "mere talk",
+        "mumbo jumbo",
+        "murmur",
+        "narrishkeit",
+        "natter",
+        "need explanation",
+        "niaiserie",
+        "noise",
+        "nonsense",
+        "nonsense talk",
+        "not make sense",
+        "not penetrate",
+        "pack of nonsense",
+        "palaver",
+        "pass comprehension",
+        "patter",
+        "peach",
+        "perplex",
+        "piffle",
+        "plash",
+        "pour forth",
+        "prate",
+        "prating",
+        "prattle",
+        "prittle-prattle",
+        "purl",
+        "rabbit",
+        "rage",
+        "ramble",
+        "ramble on",
+        "rant",
+        "rat",
+        "rattle",
+        "rattle on",
+        "rave",
+        "reel off",
+        "repeat",
+        "reveal",
+        "reveal a secret",
+        "riddle",
+        "rigamarole",
+        "rigmarole",
+        "ripple",
+        "rodomontade",
+        "rubbish",
+        "run amok",
+        "run mad",
+        "run on",
+        "scramble",
+        "secret language",
+        "sing",
+        "skimble-skamble",
+        "slang",
+        "slaver",
+        "slobber",
+        "slosh",
+        "speak in tongues",
+        "spill",
+        "spill the beans",
+        "splash",
+        "spout",
+        "spout off",
+        "squeal",
+        "stool",
+        "stuff and nonsense",
+        "stultiloquence",
+        "swash",
+        "swish",
+        "talk",
+        "talk away",
+        "talk double Dutch",
+        "talk nonsense",
+        "talk on",
+        "talkee-talkee",
+        "tattle",
+        "tattle on",
+        "tell",
+        "tell on",
+        "tell secrets",
+        "tell tales",
+        "tittle-tattle",
+        "trash",
+        "trill",
+        "trumpery",
+        "twaddle",
+        "twattle",
+        "twiddle-twaddle",
+        "vapor",
+        "vaporing",
+        "waffle",
+        "waffling",
+        "wander",
+        "wash",
+        "yak",
+        "yakkety-yak",
+        "yammer",
+        "yap"
+      ]
+    },
+    "babblement": {
+      "word": "BABBLEMENT",
+      "definitions": [
+        {
+          "text": "Babble. Hawthorne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babbler": {
+      "word": "BABBLER",
+      "definitions": [
+        {
+          "text": "An idle talker; an irrational prater; a teller of secrets. Great babblers, or talkers, are not fit for trust. L'Estrange.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hound too noisy on finding a good scent.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A name given to any one of family (Timalinæ) of thrushlike birds, having a chattering note.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babblery": {
+      "word": "BABBLERY",
+      "definitions": [
+        {
+          "text": "Babble. [Obs.] Sir T. More",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babe": {
+      "word": "BABE",
+      "definitions": [
+        {
+          "text": "An infant; a young child of either sex; a baby.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A doll for children. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "angel",
+        "baby",
+        "baby bunting",
+        "baby-doll",
+        "bambino",
+        "bantling",
+        "broad",
+        "buttercup",
+        "cherub",
+        "chick",
+        "chickabiddy",
+        "child",
+        "child of nature",
+        "colleen",
+        "cutie",
+        "dame",
+        "damoiselle",
+        "damsel",
+        "darling",
+        "dear",
+        "deary",
+        "demoiselle",
+        "doll",
+        "dove",
+        "duck",
+        "duckling",
+        "dupe",
+        "filly",
+        "frail",
+        "gal",
+        "girl",
+        "girlie",
+        "heifer",
+        "hick",
+        "hon",
+        "honey",
+        "honey bunch",
+        "honey child",
+        "hoyden",
+        "incubator baby",
+        "infant",
+        "ingenue",
+        "innocent",
+        "jeune fille",
+        "jill",
+        "junior miss",
+        "lamb",
+        "lambkin",
+        "lass",
+        "lassie",
+        "little angel",
+        "little darling",
+        "little missy",
+        "lout",
+        "love",
+        "lover",
+        "mademoiselle",
+        "maid",
+        "maiden",
+        "mere child",
+        "mewling infant",
+        "miss",
+        "missy",
+        "neonate",
+        "newborn",
+        "newborn babe",
+        "noble savage",
+        "nursling",
+        "nymphet",
+        "oaf",
+        "papoose",
+        "pet",
+        "petkins",
+        "piece",
+        "precious",
+        "precious heart",
+        "preemie",
+        "premature baby",
+        "preschooler",
+        "puling infant",
+        "romp",
+        "rube",
+        "schoolgirl",
+        "schoolmaid",
+        "schoolmiss",
+        "simple soul",
+        "skirt",
+        "slip",
+        "snookums",
+        "subdeb",
+        "subdebutante",
+        "subteen",
+        "subteener",
+        "suckling",
+        "sugar",
+        "sweet",
+        "sweetheart",
+        "sweetie",
+        "sweetkins",
+        "sweets",
+        "teenybopper",
+        "toddler",
+        "tomato",
+        "tomboy",
+        "unsophisticate",
+        "virgin",
+        "weanling",
+        "wench",
+        "yearling",
+        "yokel",
+        "young creature",
+        "young thing"
+      ]
+    },
+    "babehood": {
+      "word": "BABEHOOD",
+      "definitions": [
+        {
+          "text": "Babyhood. [R.] Udall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babel": {
+      "word": "BABEL",
+      "definitions": [
+        {
+          "text": "The city and tower in the land of Shinar, where the confusion of languages took place. Therefore is the name of it called Babel. Gen. xi. 9.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence: A place or scene of noise and confusion; a confused mixture of sounds, as of voices or languages. That babel of strange heathen languages. Hammond. The grinding babel of the street. R. L. Stevenson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Aesopian language",
+        "Greek",
+        "argot",
+        "babble",
+        "bedlam",
+        "cacophony",
+        "cant",
+        "cipher",
+        "clamor",
+        "clash",
+        "code",
+        "confusion of tongues",
+        "cryptogram",
+        "double Dutch",
+        "garble",
+        "gibberish",
+        "gift of tongues",
+        "glossolalia",
+        "gobbledygook",
+        "harshness",
+        "hell",
+        "jangle",
+        "jar",
+        "jargon",
+        "jumble",
+        "mere noise",
+        "noise",
+        "pandemonium",
+        "racket",
+        "scramble",
+        "secret language",
+        "slang",
+        "static"
+      ]
+    },
+    "babery": {
+      "word": "BABERY",
+      "definitions": [
+        {
+          "text": "Finery of a kind to please a child. [Obs.] \"Painted babery.\" Sir P. Sidney.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babianbabion": {
+      "word": "BABIAN; BABION",
+      "definitions": [
+        {
+          "text": "A baboon. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babillard": {
+      "word": "BABILLARD",
+      "definitions": [
+        {
+          "text": "The lesser whitethroat of Europe; -- called also babbling warbler.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babingtonite": {
+      "word": "BABINGTONITE",
+      "definitions": [
+        {
+          "text": "A mineral occurring in triclinic crystals approaching pyroxene in angle, and of a greenish black color. It is a silicate of iron, manganese, and lime.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babiroussababirussa": {
+      "word": "BABIROUSSA; BABIRUSSA",
+      "definitions": [
+        {
+          "text": "A large hoglike quadruped (Sus, or Porcus, babirussa) of the East Indies, sometimes domesticated; the Indian hog. Its upper canine teeth or tusks are large and recurved.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babish": {
+      "word": "BABISH",
+      "definitions": [
+        {
+          "text": "Like a babe; a childish; babyish. [R.] \"Babish imbecility.\"",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babism": {
+      "word": "BABISM",
+      "definitions": [
+        {
+          "text": "The doctrine of a modern religious sect, which originated in Persia in 1843, being a mixture of Mohammedan, Christian, Jewish and Parsee elements.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babismbabiism": {
+      "word": "BABISM; BABIISM",
+      "definitions": [
+        {
+          "text": "The doctrine of a modern religious pantheistical sect in Persia, which was founded, about 1844, by Mirza Ali Mohammed ibn Rabhik (1820 -- 1850), who assumed the title of Bab-ed-Din (Per., Gate of the Faith). Babism is a mixture of Mohammedan, Christian, Jewish, and Parsi elements. This doctrine forbids concubinage and polygamy, and frees women from many of the degradations imposed upon them among the orthodox Mohammedans. Mendicancy, the use of",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babist": {
+      "word": "BABIST",
+      "definitions": [
+        {
+          "text": "A believer in Babism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bablah": {
+      "word": "BABLAH",
+      "definitions": [
+        {
+          "text": "The ring of the fruit of several East Indian species of acacia; neb-neb. It contains gallic acid and tannin, and is used for dyeing drab.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baboobabu": {
+      "word": "BABOO; BABU",
+      "definitions": [
+        {
+          "text": "A Hindoo gentleman; native clerk who writes English; also, a Hindoo title answering to Mr. or Esquire. Whitworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baboon": {
+      "word": "BABOON",
+      "definitions": [
+        {
+          "text": "One of the Old World Quadrumana, of the genera Cynocephalus and Papio; the dog-faced ape. Baboons have dog-like muzzles and large canine teeth, cheek pouches, a short tail, and naked callosities on the buttocks. They are mostly African. See Mandrill, and Chacma, and Drill an ape.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baboonery": {
+      "word": "BABOONERY",
+      "definitions": [
+        {
+          "text": "Baboonish behavior. Marryat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baboonish": {
+      "word": "BABOONISH",
+      "definitions": [
+        {
+          "text": "Like a baboon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babulbabool": {
+      "word": "BABUL; BABOOL",
+      "definitions": [
+        {
+          "text": "Any one of several species of Acacia, esp. A. Arabica, which yelds a gum used as a substitute for true gum arabic. In place of Putney's golden gorse The sickly babul blooms. Kipling.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baby": {
+      "word": "BABY",
+      "definitions": [
+        {
+          "text": "An infant or young child of either sex; a babe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small image of an infant; a doll. Babies in the eyes, the minute reflection which one sees of one's self in the eyes of another. She clung about his neck, gave him ten kisses, Toyed with his locks, looked babies in his eyes. Heywood.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, or resembling, an infant; young or little; as, baby swans. \"Baby figure\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To treat like a young child; to keep dependent; to humor; to fondle. Young.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Elzevir",
+        "Milquetoast",
+        "adolescent",
+        "angel",
+        "apprentice",
+        "babe",
+        "babish",
+        "baby bunting",
+        "baby-doll",
+        "baby-sized",
+        "babyish",
+        "bambino",
+        "bantam",
+        "bantling",
+        "banty",
+        "beginner",
+        "big baby",
+        "broad",
+        "buttercup",
+        "catechumen",
+        "cater to",
+        "cherub",
+        "chick",
+        "chickabiddy",
+        "chicken",
+        "chicken liver",
+        "child",
+        "cocker",
+        "coddle",
+        "colleen",
+        "compact",
+        "cosset",
+        "cotton",
+        "coward",
+        "crybaby",
+        "cutie",
+        "dame",
+        "damoiselle",
+        "damsel",
+        "darling",
+        "dear",
+        "deary",
+        "deb",
+        "debutant",
+        "demoiselle",
+        "diminutive",
+        "doll",
+        "doll-like",
+        "dollish",
+        "doormat",
+        "dote",
+        "dry-nurse",
+        "duck",
+        "duckling",
+        "dull tool",
+        "duodecimo",
+        "entrant",
+        "favor",
+        "filly",
+        "flame",
+        "fledgling",
+        "fraid-cat",
+        "fraidy-cat",
+        "frail",
+        "freshman",
+        "funk",
+        "funker",
+        "gal",
+        "girl",
+        "girlie",
+        "gratify",
+        "greenhorn",
+        "greeny",
+        "gutless wonder",
+        "handy",
+        "heifer",
+        "hon",
+        "honey",
+        "honey bunch",
+        "honey child",
+        "hopeful",
+        "hoyden",
+        "humor",
+        "in arms",
+        "in diapers",
+        "in nappies",
+        "in swaddling clothes",
+        "in the cradle",
+        "inamorata",
+        "incubator baby",
+        "indulge",
+        "infant",
+        "infantile",
+        "infantine",
+        "invertebrate",
+        "jellyfish",
+        "jeune fille",
+        "jill",
+        "junior",
+        "junior miss",
+        "juvenal",
+        "juvenile",
+        "kittenish",
+        "ladylove",
+        "lamb",
+        "lambkin",
+        "lass",
+        "lassie",
+        "learner",
+        "lightweight",
+        "lily liver",
+        "little angel",
+        "little darling",
+        "little missy",
+        "little one",
+        "love",
+        "lover",
+        "mademoiselle",
+        "maid",
+        "maiden",
+        "meek soul",
+        "mewling infant",
+        "microcosm",
+        "milksop",
+        "mini",
+        "miniature",
+        "miniaturized",
+        "minikin",
+        "minimal",
+        "minny",
+        "minor",
+        "minuscule",
+        "miss",
+        "missy",
+        "mollycoddle",
+        "mouse",
+        "namby-pamby",
+        "nebbish",
+        "neonatal",
+        "neonate",
+        "neophyte",
+        "nestling",
+        "newborn",
+        "newcomer",
+        "nonentity",
+        "novice",
+        "novitiate",
+        "nursling",
+        "nymphet",
+        "pamper",
+        "pansy",
+        "pantywaist",
+        "papoose",
+        "pet",
+        "petkins",
+        "piece",
+        "please",
+        "pocket",
+        "pocket-sized",
+        "pony",
+        "precious",
+        "precious heart",
+        "preemie",
+        "premature baby",
+        "preschooler",
+        "probationer",
+        "pubescent",
+        "puling infant",
+        "puppet",
+        "pushover",
+        "raw recruit",
+        "recruit",
+        "romp",
+        "rookie",
+        "sad sack",
+        "sapling",
+        "satisfy",
+        "scaredy-cat",
+        "schoolgirl",
+        "schoolmaid",
+        "schoolmiss",
+        "sissy",
+        "skirt",
+        "slip",
+        "small-scale",
+        "snookums",
+        "softling",
+        "softy",
+        "sop",
+        "spoil",
+        "sprig",
+        "steady",
+        "stripling",
+        "subdeb",
+        "subdebutante",
+        "subminiature",
+        "subteen",
+        "subteener",
+        "suckling",
+        "sugar",
+        "sweet",
+        "sweetheart",
+        "sweetie",
+        "sweetkins",
+        "sweets",
+        "teenager",
+        "teener",
+        "teenybopper",
+        "tenderfoot",
+        "toddler",
+        "tomato",
+        "tomboy",
+        "tot",
+        "toy",
+        "trainee",
+        "truelove",
+        "twelvemo",
+        "tyro",
+        "vest-pocket",
+        "virgin",
+        "weak sister",
+        "weakling",
+        "weanling",
+        "wench",
+        "wet-nurse",
+        "white feather",
+        "white liver",
+        "yearling",
+        "young creature",
+        "young hopeful",
+        "young person",
+        "young thing",
+        "younger",
+        "youngest",
+        "youngling",
+        "youngster",
+        "youth"
+      ]
+    },
+    "babyfarm": {
+      "word": "BABY FARM",
+      "definitions": [
+        {
+          "text": "A place where the nourishment and care of babies are offered for hire.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyfarmer": {
+      "word": "BABY FARMER",
+      "definitions": [
+        {
+          "text": "One who keeps a baby farm.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyfarming": {
+      "word": "BABY FARMING",
+      "definitions": [
+        {
+          "text": "The business of keeping a baby farm.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyhood": {
+      "word": "BABYHOOD",
+      "definitions": [
+        {
+          "text": "The state or period of infancy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyhouse": {
+      "word": "BABYHOUSE",
+      "definitions": [
+        {
+          "text": "A place for children's dolls and dolls' furniture. Swift.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyism": {
+      "word": "BABYISM",
+      "definitions": [
+        {
+          "text": "The state of being a baby.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A babyish manner of acting or speaking.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyjumper": {
+      "word": "BABY JUMPER",
+      "definitions": [
+        {
+          "text": "A hoop suspended by an elastic strap, in which a young child may be held secure while amusing itself by jumping on the floor.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "babylonian": {
+      "word": "BABYLONIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the real or to the mystical Babylon, or to the ancient kingdom of Babylonia; Chaldean.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An inhabitant of Babylonia (which included Chaldea); a Chaldean.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An astrologer; -- so called because the Chaldeans were remarkable for the study of astrology.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Corinthian",
+        "awe-inspiring",
+        "awful",
+        "barbaric",
+        "deluxe",
+        "elaborate",
+        "elegant",
+        "extravagant",
+        "fancy",
+        "fine",
+        "glorious",
+        "grand",
+        "grandiose",
+        "imposing",
+        "impressive",
+        "luxurious",
+        "magnificent",
+        "majestic",
+        "noble",
+        "palatial",
+        "plush",
+        "posh",
+        "princely",
+        "proud",
+        "ritzy",
+        "splendacious",
+        "splendid",
+        "splendiferous",
+        "stately",
+        "sumptuous",
+        "superb",
+        "superfancy",
+        "superfine",
+        "swank",
+        "swanky",
+        "swell"
+      ]
+    },
+    "babylonicbabylonical": {
+      "word": "BABYLONIC; BABYLONICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to Babylon, or made there; as Babylonic garments,carpets, or hangings.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Tumultuous; disorderly. [Obs.] Sir J. Harrington.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babylonish": {
+      "word": "BABYLONISH",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or made in, Babylon or Babylonia. \"A Babylonish garment.\" Josh. vii. 21.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to the Babylon of Revelation xiv.8.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to Rome and papal power. [Obs.] The . . . injurious nickname of Babylonish. Gape.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Confused; Babel-like.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyroussababyrussa": {
+      "word": "BABYROUSSA; BABYRUSSA",
+      "definitions": [
+        {
+          "text": "See Babyroussa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyship": {
+      "word": "BABYSHIP",
+      "definitions": [
+        {
+          "text": "The quality of being a baby; the personality of an infant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

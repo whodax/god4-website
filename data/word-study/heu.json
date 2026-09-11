@@ -1,0 +1,84 @@
+{
+  "version": "v1",
+  "entries": {
+    "heugh": {
+      "word": "HEUGH",
+      "definitions": [
+        {
+          "text": "A crag; a cliff; a glen with overhanging sides. [Scot. & Prov. Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A shaft in a coal pit; a hollow in a quarry. [Scot.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heuk": {
+      "word": "HEUK",
+      "definitions": [
+        {
+          "text": "Variant of Huke. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heulandite": {
+      "word": "HEULANDITE",
+      "definitions": [
+        {
+          "text": "A mineral of the Zeolite family, often occurring in amygdaloid, in foliated masses, and also in monoclinic crystals with pearly luster on the cleavage face. It is a hydrous silicate of alumina and lime.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heuristic": {
+      "word": "HEURISTIC",
+      "definitions": [
+        {
+          "text": "Serving to discover or find out.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "analytic",
+        "cut-and-try",
+        "empirical",
+        "examinational",
+        "examinatorial",
+        "examining",
+        "experimental",
+        "explorational",
+        "explorative",
+        "exploratory",
+        "fact-finding",
+        "feeling",
+        "groping",
+        "hit-or-miss",
+        "indagative",
+        "inspectional",
+        "inspectorial",
+        "investigational",
+        "investigative",
+        "investigatory",
+        "pilot",
+        "probationary",
+        "probative",
+        "probatory",
+        "proving",
+        "provisional",
+        "tentative",
+        "test",
+        "testing",
+        "trial",
+        "trial-and-error",
+        "trying",
+        "verificatory",
+        "zetetic"
+      ]
+    }
+  }
+}

@@ -1,0 +1,912 @@
+{
+  "version": "v1",
+  "entries": {
+    "cod": {
+      "word": "COD",
+      "definitions": [
+        {
+          "text": "A husk; a pod; as, a peascod. [Eng.] Mortimer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small bag or pouch. [Obs.] Halliwell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The scortum. Dunglison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pillow or cushion. [Prov. Eng.] Halliwell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An important edible fish (Gadus morrhua), Taken in immense numbers on the northern coasts of Europe and America. It is especially abundant and large on the Grand Bank of Newfoundland. It is salted and dried in large quantities. bank cod, from the distant banks; and rock cod, which is found among ledges, and is often dark brown or mottled with red. The tomcod is a distinct species of small size. The bastard, blue, buffalo, or cultus cod of the Pacific coast belongs to a distinct family. See Buffalo cod, under Buffalo. Cod fishery, the business of fishing for cod. McElrath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coda": {
+      "word": "CODA",
+      "definitions": [
+        {
+          "text": "A few measures added beyond the natural termination of a composition.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "PS",
+        "Parthian shot",
+        "Z",
+        "accession",
+        "accessory",
+        "accompaniment",
+        "addenda",
+        "addendum",
+        "additament",
+        "addition",
+        "additive",
+        "additory",
+        "additum",
+        "adjunct",
+        "adjuvant",
+        "affix",
+        "afterthought",
+        "allonge",
+        "anacrusis",
+        "annex",
+        "annexation",
+        "apodosis",
+        "appanage",
+        "appendage",
+        "appendant",
+        "appendix",
+        "appurtenance",
+        "appurtenant",
+        "attachment",
+        "augment",
+        "augmentation",
+        "back matter",
+        "bass passage",
+        "bourdon",
+        "bridge",
+        "burden",
+        "cadence",
+        "catastrophe",
+        "ceasing",
+        "cessation",
+        "chorus",
+        "codicil",
+        "colophon",
+        "commentary",
+        "complement",
+        "conclusion",
+        "concomitant",
+        "consequence",
+        "consummation",
+        "continuance",
+        "continuation",
+        "corollary",
+        "crack of doom",
+        "culmination",
+        "curtain",
+        "curtains",
+        "death",
+        "decease",
+        "denouement",
+        "destination",
+        "destiny",
+        "development",
+        "division",
+        "doom",
+        "double take",
+        "dying words",
+        "effect",
+        "enclitic",
+        "end",
+        "end point",
+        "ending",
+        "envoi",
+        "epilogue",
+        "eschatology",
+        "expiration",
+        "exposition",
+        "extension",
+        "extrapolation",
+        "fate",
+        "figure",
+        "final solution",
+        "final twitch",
+        "final words",
+        "finale",
+        "finality",
+        "finis",
+        "finish",
+        "fixture",
+        "folderol",
+        "follow-through",
+        "follow-up",
+        "goal",
+        "harmonic close",
+        "increase",
+        "increment",
+        "infix",
+        "interlineation",
+        "interlude",
+        "intermezzo",
+        "interpolation",
+        "introductory phrase",
+        "izzard",
+        "last",
+        "last breath",
+        "last gasp",
+        "last things",
+        "last trumpet",
+        "last words",
+        "latter end",
+        "marginalia",
+        "measure",
+        "movement",
+        "musical phrase",
+        "musical sentence",
+        "note",
+        "offshoot",
+        "omega",
+        "ornament",
+        "part",
+        "parting shot",
+        "passage",
+        "payoff",
+        "pendant",
+        "period",
+        "peroration",
+        "phrase",
+        "postface",
+        "postfix",
+        "postlude",
+        "postscript",
+        "prefix",
+        "proclitic",
+        "quietus",
+        "refrain",
+        "reinforcement",
+        "resolution",
+        "response",
+        "resting place",
+        "rider",
+        "ritornello",
+        "scholia",
+        "second thought",
+        "section",
+        "sequel",
+        "sequela",
+        "sequelae",
+        "sequelant",
+        "sequent",
+        "sequitur",
+        "side effect",
+        "side issue",
+        "stanza",
+        "statement",
+        "stoppage",
+        "stopping place",
+        "strain",
+        "subscript",
+        "suffix",
+        "supplement",
+        "swan song",
+        "tag",
+        "tail",
+        "tailpiece",
+        "term",
+        "terminal",
+        "termination",
+        "terminus",
+        "tutti",
+        "tutti passage",
+        "undergirding",
+        "variation",
+        "verse",
+        "windup"
+      ]
+    },
+    "codder": {
+      "word": "CODDER",
+      "definitions": [
+        {
+          "text": "A gatherer of cods or peas. [Obs. or Prov.] Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codding": {
+      "word": "CODDING",
+      "definitions": [
+        {
+          "text": "Lustful. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coddle": {
+      "word": "CODDLE",
+      "definitions": [
+        {
+          "text": "To parboil, or soften by boiling. It [the guava fruit] may be coddled. Dampier.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To treat with excessive tenderness; to pamper. How many of our English princes have been coddled at home by their fond papas and mammas! Thackeray. He [Lord Byron] never coddled his reputation. Southey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "baby",
+        "bake",
+        "barbecue",
+        "baste",
+        "bay",
+        "blanch",
+        "boil",
+        "braise",
+        "brew",
+        "broil",
+        "brown",
+        "care for",
+        "caress",
+        "cater to",
+        "cherish",
+        "cocker",
+        "cook",
+        "cosset",
+        "cotton",
+        "cradle",
+        "cultivate",
+        "curry",
+        "dandle",
+        "devil",
+        "do",
+        "do to perfection",
+        "dry-nurse",
+        "favor",
+        "feed",
+        "fire",
+        "fondle",
+        "foster",
+        "fricassee",
+        "frizz",
+        "frizzle",
+        "fry",
+        "give way to",
+        "gratify",
+        "griddle",
+        "grill",
+        "heat",
+        "humor",
+        "indulge",
+        "lavish care on",
+        "mollycoddle",
+        "mother",
+        "much",
+        "nourish",
+        "nurse",
+        "nurture",
+        "oblige",
+        "oven-bake",
+        "pamper",
+        "pan",
+        "pan-broil",
+        "parboil",
+        "pat",
+        "pet",
+        "please",
+        "poach",
+        "prepare",
+        "prepare food",
+        "roast",
+        "satisfy",
+        "saute",
+        "scallop",
+        "sear",
+        "shirr",
+        "simmer",
+        "spoil",
+        "spoon-feed",
+        "steam",
+        "stew",
+        "stir-fry",
+        "suckle",
+        "sustain",
+        "toast",
+        "wet-nurse",
+        "yield to"
+      ]
+    },
+    "coddymoddy": {
+      "word": "CODDYMODDY",
+      "definitions": [
+        {
+          "text": "A gull in the plumage of its first year.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "code": {
+      "word": "CODE",
+      "definitions": [
+        {
+          "text": "A body of law, sanctioned by legislation, in which the rules of law to be specifically applied by the courts are set forth in systematic form; a compilation of laws by public authority; a digest. sometimes called, by way of eminence. \"The Code\" Wharton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any system of rules or regulations relating to one subject; as, the medical code, a system of rules for the regulation of the professional conduct of physicians; the naval code, a system of rules for making communications at sea means of signals. Code civil or Code Napoleon, a code enacted in France in 1803 and 1804, embodying the law of rights of persons and of property generally. Abbot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Aesopian language",
+        "Babel",
+        "Code Napoleon",
+        "Greek",
+        "Napoleonic code",
+        "Procrustean law",
+        "TelAutography",
+        "Teletype",
+        "Teletype network",
+        "Teletyping",
+        "Ten Commandments",
+        "Zeitgeist",
+        "argot",
+        "axiology",
+        "babble",
+        "behavioral norm",
+        "body of law",
+        "business ethics",
+        "canon",
+        "cant",
+        "capitulary",
+        "census",
+        "cipher",
+        "closed-circuit telegraphy",
+        "code of ethics",
+        "code of laws",
+        "code of morals",
+        "coded message",
+        "codification",
+        "commandment",
+        "convention",
+        "conventions",
+        "corpus juris",
+        "criterion",
+        "cryptoanalysis",
+        "cryptoanalytics",
+        "cryptogram",
+        "cryptograph",
+        "cryptographer",
+        "cryptography",
+        "customs",
+        "cypher",
+        "decalogue",
+        "dictum",
+        "digest",
+        "digest of law",
+        "double Dutch",
+        "duplex telegraphy",
+        "electricity",
+        "encipher",
+        "encode",
+        "encrypt",
+        "equity",
+        "ethic",
+        "ethical system",
+        "ethics",
+        "ethos",
+        "facsimile telegraph",
+        "form",
+        "formality",
+        "formula",
+        "formulary",
+        "garble",
+        "general principle",
+        "gibberish",
+        "gift of tongues",
+        "glossolalia",
+        "gobbledygook",
+        "golden rule",
+        "guideline",
+        "guiding principle",
+        "imperative",
+        "index",
+        "interrupter",
+        "inventory",
+        "invisible ink",
+        "jargon",
+        "jumble",
+        "jurisprudence",
+        "key",
+        "law",
+        "law of nature",
+        "laws",
+        "legal ethics",
+        "maxim",
+        "medical ethics",
+        "mitzvah",
+        "moral",
+        "moral climate",
+        "moral code",
+        "moral principles",
+        "morals",
+        "multiplex telegraphy",
+        "new morality",
+        "news ticker",
+        "noise",
+        "norm",
+        "norma",
+        "normative system",
+        "order of nature",
+        "ordinance",
+        "organization",
+        "orthodoxy",
+        "pandect",
+        "penal code",
+        "practices",
+        "prescribed form",
+        "prescription",
+        "principium",
+        "principle",
+        "principles",
+        "professional ethics",
+        "protocol",
+        "quadruplex telegraphy",
+        "railroad telegraphy",
+        "receiver",
+        "regulation",
+        "regulations",
+        "rubric",
+        "rule",
+        "scramble",
+        "secret language",
+        "secret writing",
+        "sender",
+        "set form",
+        "settled principle",
+        "simplex telegraphy",
+        "single-current telegraphy",
+        "slang",
+        "social ethics",
+        "sounder",
+        "standard",
+        "standards",
+        "standing order",
+        "stock ticker",
+        "structure",
+        "submarine telegraphy",
+        "sympathetic ink",
+        "system",
+        "table",
+        "table of organization",
+        "telegraphics",
+        "telegraphy",
+        "teleprinter",
+        "teletypewriter",
+        "teletypewriting",
+        "telex",
+        "tenet",
+        "ticker",
+        "traditions",
+        "transmitter",
+        "typotelegraph",
+        "typotelegraphy",
+        "universal law",
+        "value system",
+        "wire service",
+        "working principle",
+        "working rule"
+      ]
+    },
+    "codefendant": {
+      "word": "CODEFENDANT",
+      "definitions": [
+        {
+          "text": "A joint defendant. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codeine": {
+      "word": "CODEINE",
+      "definitions": [
+        {
+          "text": "One of the opium alkaloids; a white crystalline substance, C18H21NO3, similar to and regarded as a derivative of morphine, but much feebler in its action; -- called also codeia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Amytal",
+        "Amytal pill",
+        "Demerol",
+        "Dolophine",
+        "H",
+        "Luminal",
+        "Luminal pill",
+        "M",
+        "Mickey Finn",
+        "Nembutal",
+        "Nembutal pill",
+        "Seconal",
+        "Seconal pill",
+        "Tuinal",
+        "Tuinal pill",
+        "alcohol",
+        "amobarbital sodium",
+        "analgesic",
+        "anodyne",
+        "barb",
+        "barbiturate",
+        "barbiturate pill",
+        "black stuff",
+        "blue",
+        "blue angel",
+        "blue devil",
+        "blue heaven",
+        "blue velvet",
+        "calmative",
+        "chloral hydrate",
+        "codeine cough syrup",
+        "depressant",
+        "depressor",
+        "dolly",
+        "downer",
+        "goofball",
+        "hard stuff",
+        "heroin",
+        "hop",
+        "horse",
+        "hypnotic",
+        "junk",
+        "knockout drops",
+        "laudanum",
+        "liquor",
+        "lotus",
+        "meperidine",
+        "methadone",
+        "morphia",
+        "morphine",
+        "narcotic",
+        "opiate",
+        "opium",
+        "pacifier",
+        "pain killer",
+        "paregoric",
+        "pen yan",
+        "phenobarbital",
+        "phenobarbital sodium",
+        "purple heart",
+        "quietener",
+        "rainbow",
+        "red",
+        "scag",
+        "secobarbital sodium",
+        "sedative",
+        "shit",
+        "sleep-inducer",
+        "sleeper",
+        "sleeping draught",
+        "sleeping pill",
+        "smack",
+        "sodium thiopental",
+        "somnifacient",
+        "soother",
+        "soothing syrup",
+        "soporific",
+        "tar",
+        "tranquilizer",
+        "turps",
+        "white stuff",
+        "yellow",
+        "yellow jacket"
+      ]
+    },
+    "codetta": {
+      "word": "CODETTA",
+      "definitions": [
+        {
+          "text": "A short passage connecting two sections, but not forming part of either; a short coda.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codex": {
+      "word": "CODEX",
+      "definitions": [
+        {
+          "text": "A book; a manuscript.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A collection or digest of laws; a code. Burrill.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An ancient manuscript of the Sacred Scriptures, or any part of them, particularly the New Testament.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A collection of canons. Shipley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codfish": {
+      "word": "CODFISH",
+      "definitions": [
+        {
+          "text": "A kind of fish. Same as Cod.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codger": {
+      "word": "CODGER",
+      "definitions": [
+        {
+          "text": "A miser or mean person.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A singular or odd person; -- a familiar, humorous, or depreciatory appellation. [Colloq.] A few of us old codgers met at the fireside. Emerson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codical": {
+      "word": "CODICAL",
+      "definitions": [
+        {
+          "text": "Ralating to a codex, or a code.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codicil": {
+      "word": "CODICIL",
+      "definitions": [
+        {
+          "text": "A clause added to a will.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "PS",
+        "Parthian shot",
+        "addendum",
+        "affix",
+        "afterthought",
+        "allonge",
+        "appendix",
+        "attested copy",
+        "back matter",
+        "bequeathal",
+        "bequest",
+        "chorus",
+        "coda",
+        "colophon",
+        "commentary",
+        "conclusion",
+        "consequence",
+        "continuance",
+        "continuation",
+        "devise",
+        "double take",
+        "dying words",
+        "enclitic",
+        "envoi",
+        "epilogue",
+        "follow-through",
+        "follow-up",
+        "infix",
+        "inheritance",
+        "interlineation",
+        "interpolation",
+        "last words",
+        "legacy",
+        "marginalia",
+        "note",
+        "parting shot",
+        "peroration",
+        "postface",
+        "postfix",
+        "postlude",
+        "postscript",
+        "prefix",
+        "probate",
+        "proclitic",
+        "refrain",
+        "rider",
+        "scholia",
+        "second thought",
+        "sequel",
+        "sequela",
+        "sequelae",
+        "sequelant",
+        "sequent",
+        "sequitur",
+        "subscript",
+        "suffix",
+        "supplement",
+        "swan song",
+        "tag",
+        "tail",
+        "testament",
+        "will"
+      ]
+    },
+    "codicillary": {
+      "word": "CODICILLARY",
+      "definitions": [
+        {
+          "text": "Of the nature of a codicil.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codification": {
+      "word": "CODIFICATION",
+      "definitions": [
+        {
+          "text": "The act or process of codifying or reducing laws to a code.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codifier": {
+      "word": "CODIFIER",
+      "definitions": [
+        {
+          "text": "One who codifies.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codify": {
+      "word": "CODIFY",
+      "definitions": [
+        {
+          "text": "To reduce to a code, as laws.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adjust",
+        "alphabetize",
+        "analyze",
+        "arrange",
+        "assort",
+        "break down",
+        "catalog",
+        "categorize",
+        "chart",
+        "class",
+        "classify",
+        "coordinate",
+        "digest",
+        "divide",
+        "file",
+        "fix",
+        "formalize",
+        "grade",
+        "group",
+        "harmonize",
+        "index",
+        "list",
+        "methodize",
+        "normalize",
+        "order",
+        "organize",
+        "pigeonhole",
+        "place",
+        "plan",
+        "range",
+        "rank",
+        "rate",
+        "rationalize",
+        "regularize",
+        "regulate",
+        "routinize",
+        "settle",
+        "sort",
+        "standardize",
+        "subdivide",
+        "synchronize",
+        "systematize",
+        "tabulate",
+        "tune",
+        "tune up",
+        "type"
+      ]
+    },
+    "codilla": {
+      "word": "CODILLA",
+      "definitions": [
+        {
+          "text": "The coarse tow of flax and hemp. McElrath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codille": {
+      "word": "CODILLE",
+      "definitions": [
+        {
+          "text": "A term at omber, signifying that the game is won. Pope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codist": {
+      "word": "CODIST",
+      "definitions": [
+        {
+          "text": "A codifier; a maker of codes. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codle": {
+      "word": "CODLE",
+      "definitions": [
+        {
+          "text": "See Coddle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codling": {
+      "word": "CODLING",
+      "definitions": [
+        {
+          "text": "A young cod; also, a hake.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codliver": {
+      "word": "COD LIVER",
+      "definitions": [
+        {
+          "text": "The liver of the common cod and allied species. Cod-liver oil, an oil obtained fron the liver of the codfish, and used extensively in medicine as a means of supplying the body with fat in cases of malnutrition.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "codpiece": {
+      "word": "CODPIECE",
+      "definitions": [
+        {
+          "text": "A part of male dress in front of the breeches, formerly made very conspicuous. Shak. Fosbroke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

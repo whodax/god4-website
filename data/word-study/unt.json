@@ -1,0 +1,921 @@
+{
+  "version": "v1",
+  "entries": {
+    "untack": {
+      "word": "UNTACK",
+      "definitions": [
+        {
+          "text": "To separate, as what is tacked; to disjoin; to release. being untacked from honest cares. Barrow.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untackle": {
+      "word": "UNTACKLE",
+      "definitions": [
+        {
+          "text": "To unbitch; to unharness. [Colloq.] Tusser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untalked": {
+      "word": "UNTALKED",
+      "definitions": [
+        {
+          "text": "Not talked; not mentioned; -- often with of. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untangibility": {
+      "word": "UNTANGIBILITY",
+      "definitions": [
+        {
+          "text": "Intangibility.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untangible": {
+      "word": "UNTANGIBLE",
+      "definitions": [
+        {
+          "text": "Intangible. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untangibly": {
+      "word": "UNTANGIBLY",
+      "definitions": [
+        {
+          "text": "Intangibly. [R.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untangle": {
+      "word": "UNTANGLE",
+      "definitions": [
+        {
+          "text": "To loose from tangles or intricacy; to disentangle; to resolve; as, to untangle thread. Untangle but this cruel chain. Prior.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untappice": {
+      "word": "UNTAPPICE",
+      "definitions": [
+        {
+          "text": "to come out of concealment. [Obs.] Massinger.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untaste": {
+      "word": "UNTASTE",
+      "definitions": [
+        {
+          "text": "To deprive of a taste for a thing. [R.] Daniel.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unteach": {
+      "word": "UNTEACH",
+      "definitions": [
+        {
+          "text": "To cause to forget, or to lose from memory, or to disbelieve what has been taught. Experience will unteach us. Sir T. Browne. One breast laid open were a school Which would unteach mankind the lust to shine or rule. Byron.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to be forgotten; as, to unteach what has been learned. Dryden.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unteam": {
+      "word": "UNTEAM",
+      "definitions": [
+        {
+          "text": "To unyoke a team from. [R.] Jer. Taylor.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untemper": {
+      "word": "UNTEMPER",
+      "definitions": [
+        {
+          "text": "To deprive of temper, or of the proper degree of temper; to make soft.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untemperate": {
+      "word": "UNTEMPERATE",
+      "definitions": [
+        {
+          "text": "Intemperate. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untemperately": {
+      "word": "UNTEMPERATELY",
+      "definitions": [
+        {
+          "text": "Intemperately. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untempter": {
+      "word": "UNTEMPTER",
+      "definitions": [
+        {
+          "text": "One who does not tempt, or is not a tempter. [Obs.] Wyclif.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untenant": {
+      "word": "UNTENANT",
+      "definitions": [
+        {
+          "text": "To remove a tenant from. [R.] Coleridge.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untent": {
+      "word": "UNTENT",
+      "definitions": [
+        {
+          "text": "To bring out of a tent. [R.] Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untented": {
+      "word": "UNTENTED",
+      "definitions": [
+        {
+          "text": "Having no tent or tents, as a soldier or a field.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not tended; not dressed. See 4th Tent. The untented woundings of a father's curse Pierce every sense about thee! Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthank": {
+      "word": "UNTHANK",
+      "definitions": [
+        {
+          "text": "No thanks; ill will; misfortune. [Obs.] Unthank come on his head that bound him so. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthink": {
+      "word": "UNTHINK",
+      "definitions": [
+        {
+          "text": "To recall or take back, as something thought. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthinker": {
+      "word": "UNTHINKER",
+      "definitions": [
+        {
+          "text": "A person who does not think, or does not think wisely.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthinking": {
+      "word": "UNTHINKING",
+      "definitions": [
+        {
+          "text": "Not thinking; not heedful; thoughtless; inconsiderate; as, unthinking youth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not indicating thought or reflection; thoughtless. With earnest eyes, and round unthinking face, He first the snuffbox",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthread": {
+      "word": "UNTHREAD",
+      "definitions": [
+        {
+          "text": "To draw or take out a thread from; as, to unthread a needle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deprive of ligaments; to loose the ligaments of. He with his bare wand can unthread thy joints. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make one's way through; to traverse; as, to unthread a devious path. De Quincey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthrift": {
+      "word": "UNTHRIFT",
+      "definitions": [
+        {
+          "text": "Want of thrift; untriftiness; prodigality.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An unthrifty. [Obs.] Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Unthrifty. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthriftfully": {
+      "word": "UNTHRIFTFULLY",
+      "definitions": [
+        {
+          "text": "Not thriftily. [Obs.] \"Unthriftfully spent.\" Sir J. Cheke.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthriftiheadunthriftihood": {
+      "word": "UNTHRIFTIHEAD; UNTHRIFTIHOOD",
+      "definitions": [
+        {
+          "text": "Untriftiness. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthriftily": {
+      "word": "UNTHRIFTILY",
+      "definitions": [
+        {
+          "text": "Not thriftily.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Improperly; unbecomingly. [Obs.] Chaucer.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthriftiness": {
+      "word": "UNTHRIFTINESS",
+      "definitions": [
+        {
+          "text": "The quality or state or being unthrifty; profuseness; lavishness. Udall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthrifty": {
+      "word": "UNTHRIFTY",
+      "definitions": [
+        {
+          "text": "Not thrifty; profuse. Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthrone": {
+      "word": "UNTHRONE",
+      "definitions": [
+        {
+          "text": "To remove from, or as from, a throne; to dethrone. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untidy": {
+      "word": "UNTIDY",
+      "definitions": [
+        {
+          "text": "Unseasonable; untimely. [Obs.] \"Untidy tales.\" Piers Plowman.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not tidy or neat; slovenly.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untie": {
+      "word": "UNTIE",
+      "definitions": [
+        {
+          "text": "To loosen, as something interlaced or knotted; to disengage the parts of; as, to untie a knot. Sacharissa's captive fain Would untie his iron chain. Waller. Her snakes untied, sulphurous waters drink. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To free from fastening or from restraint; to let loose; to unbind. Though you untie the winds, and let them fight Against the churches. Shak. All the evils of an untied tongue we put upon the accounts of drunkenness. Jer. Taylor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To resolve; to unfold; to clear. They quicken sloth, perplexities untie. Denham.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become untied or loosed.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untighten": {
+      "word": "UNTIGHTEN",
+      "definitions": [
+        {
+          "text": "To make less tight or tense; to loosen.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "until": {
+      "word": "UNTIL",
+      "definitions": [
+        {
+          "text": "To; unto; towards; -- used of material objects. Chaucer. Taverners until them told the same. Piers Plowman. He roused himself full blithe, and hastened them until. Spenser.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "To; up to; till; before; -- used of time; as, he staid until evening; he will not come back until the end of the month. He and his sons were priests to the tribe of Dan until the day of the captivity. Judg. xviii. 30. of the date mentioned unless it was the manifest intent of the parties to include it.",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untile": {
+      "word": "UNTILE",
+      "definitions": [
+        {
+          "text": "To take the tiles from; to uncover by removing the tiles.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untime": {
+      "word": "UNTIME",
+      "definitions": [
+        {
+          "text": "An unseasonable time. [Obs.] A man shall not eat in untime. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untimeliness": {
+      "word": "UNTIMELINESS",
+      "definitions": [
+        {
+          "text": "Unseasonableness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untimely": {
+      "word": "UNTIMELY",
+      "definitions": [
+        {
+          "text": "Not timely; done or happening at an unnatural, unusual, or improper time; unseasonable; premature; inopportune; as, untimely frosts; untimely remarks; an untimely death.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Out of the natural or usual time; inopportunely; prematurely; unseasonably. \"Let them know . . . what's untimely done.\" Shak.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untimeous": {
+      "word": "UNTIMEOUS",
+      "definitions": [
+        {
+          "text": "Untimely. [R.] Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untimeously": {
+      "word": "UNTIMEOUSLY",
+      "definitions": [
+        {
+          "text": "Untimely; unseasonably. [R.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untithed": {
+      "word": "UNTITHED",
+      "definitions": [
+        {
+          "text": "Not subjected tithes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untitled": {
+      "word": "UNTITLED",
+      "definitions": [
+        {
+          "text": "Not titled; having no title, or appellation of dignity or distinction. Spenser.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Being without title or right; not entitled. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unto": {
+      "word": "UNTO",
+      "definitions": [
+        {
+          "text": "To; -- now used only in antiquated, formal, or scriptural style. See To.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "Until; till. [Obs.] \"He shall abide it unto the death of the priest.\" Num. xxxv. 25.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "Until; till. [Obs.] \"Unto this year be gone.\" Chaucer.",
+          "partOfSpeech": "conjunction"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untold": {
+      "word": "UNTOLD",
+      "definitions": [
+        {
+          "text": "Not told; not related; not revealed; as, untold secrets.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not numbered or counted; as, untold money.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untolerable": {
+      "word": "UNTOLERABLE",
+      "definitions": [
+        {
+          "text": "Intolerable. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untomb": {
+      "word": "UNTOMB",
+      "definitions": [
+        {
+          "text": "To take from the tomb; to exhume; to disinter. Fuller.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untongue": {
+      "word": "UNTONGUE",
+      "definitions": [
+        {
+          "text": "To deprive of a tongue, or of voice. [Obs.] Fuller.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untooth": {
+      "word": "UNTOOTH",
+      "definitions": [
+        {
+          "text": "To take out the teeth of. Cowper.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untoward": {
+      "word": "UNTOWARD",
+      "definitions": [
+        {
+          "text": "Toward. [Obs.] Gower.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "Froward; perverse. \"Save yourselves from this untoward generation.\" Acts ii. 40.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Awkward; ungraceful. \"Untoward words.\" Creech. \"Untoward manner.\" Swift.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Inconvenient; troublesome; vexatious; unlucky; unfortunate; as, an",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untowardly": {
+      "word": "UNTOWARDLY",
+      "definitions": [
+        {
+          "text": "Perverse; froward; untoward. \"Untowardly tricks and vices.\" Locke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untraded": {
+      "word": "UNTRADED",
+      "definitions": [
+        {
+          "text": "Not dealt with in trade; not visited for purposes of trade. [Obs.] Hakluyt",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Unpracticed; inexperienced. [Obs.] Udall.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not traded in or bartered; hence, not hackneyed; unusual; not common. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrained": {
+      "word": "UNTRAINED",
+      "definitions": [
+        {
+          "text": "Not trained. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not trainable; indocile. [Obs.] Herbert.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrammeled": {
+      "word": "UNTRAMMELED",
+      "definitions": [
+        {
+          "text": "Not hampered or impeded; free. [Written also untrammelled.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untraveled": {
+      "word": "UNTRAVELED",
+      "definitions": [
+        {
+          "text": "Not traveled; not trodden by passengers; as, an untraveled forest.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having never visited foreign countries; not having gained knowledge or experience by travel; as, an untraveled Englishman. Addison.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untread": {
+      "word": "UNTREAD",
+      "definitions": [
+        {
+          "text": "To tread back; to retrace. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untreasure": {
+      "word": "UNTREASURE",
+      "definitions": [
+        {
+          "text": "To bring forth or give up, as things previously treasured. \"The quaintness with which he untreasured, as by rote, the stores of his memory.\" J. Mitford.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untreasured": {
+      "word": "UNTREASURED",
+      "definitions": [
+        {
+          "text": "Etym: [Properly p. p. of untreasure.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Deprived of treasure. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Etym: [Pref. un- not + treasured.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not treasured; not kept as treasure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untreatable": {
+      "word": "UNTREATABLE",
+      "definitions": [
+        {
+          "text": "Incapable of being treated; not practicable. [R.] Dr. H. More.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrenched": {
+      "word": "UNTRENCHED",
+      "definitions": [
+        {
+          "text": "Being without trenches; whole; intact. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untressed": {
+      "word": "UNTRESSED",
+      "definitions": [
+        {
+          "text": "Not tied up in tresses; unarranged; -- said of the hair. Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrowable": {
+      "word": "UNTROWABLE",
+      "definitions": [
+        {
+          "text": "Incredible. [Obs.] \"Untrowable fairness.\" Wyclif.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrue": {
+      "word": "UNTRUE",
+      "definitions": [
+        {
+          "text": "Not true; false; contrary to the fact; as, the story is untrue.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not faithful; inconstant; false; disloyal. Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Untruly. [Obs. or Poetic] Chaucer.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untruism": {
+      "word": "UNTRUISM",
+      "definitions": [
+        {
+          "text": "Something not true; a false statement. [Recent & R.] A. Trollope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrunked": {
+      "word": "UNTRUNKED",
+      "definitions": [
+        {
+          "text": "Separated from its trunk or stock. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untruss": {
+      "word": "UNTRUSS",
+      "definitions": [
+        {
+          "text": "To loose from a truss, or as from a truss; to untie or unfasten; to let out; to undress. [R.] Dryden.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrussuntrusser": {
+      "word": "UNTRUSS; UNTRUSSER",
+      "definitions": [
+        {
+          "text": "One who untrussed persons for the purpose of flogging them; a public whipper. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrust": {
+      "word": "UNTRUST",
+      "definitions": [
+        {
+          "text": "Distrust. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untrustful": {
+      "word": "UNTRUSTFUL",
+      "definitions": [
+        {
+          "text": "Not trustful or trusting.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not to be trusted; not trusty. [R.] Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untruth": {
+      "word": "UNTRUTH",
+      "definitions": [
+        {
+          "text": "The quality of being untrue; contrariety to truth; want of veracity; also, treachery; faithlessness; disloyalty. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is untrue; a false assertion; a falsehood; a lie; also, an act of treachery or disloyalty. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untuck": {
+      "word": "UNTUCK",
+      "definitions": [
+        {
+          "text": "To unfold or undo, as a tuck; to release from a tuck or fold.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untune": {
+      "word": "UNTUNE",
+      "definitions": [
+        {
+          "text": "To make incapable of harmony, or of harmonious action; to put out of tune. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unturn": {
+      "word": "UNTURN",
+      "definitions": [
+        {
+          "text": "To turn in a reserve way, especially so as to open something; as, to unturn a key. Keats.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unturned": {
+      "word": "UNTURNED",
+      "definitions": [
+        {
+          "text": "Not turned; not revolved or reversed. To leave no stone unturned, to leave nothing untried for accomplishing one's purpose. [He] left unturned no stone To make my guilt appear, and hide his own. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untwain": {
+      "word": "UNTWAIN",
+      "definitions": [
+        {
+          "text": "To rend in twain; to tear in two. [Obs.] Skelton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untwine": {
+      "word": "UNTWINE",
+      "definitions": [
+        {
+          "text": "To untwist; to separate, as that which is twined or twisted; to disentangle; to untie. It requires a long and powerful counter sympathy in a nation to untwine the ties of custom which bind a people to the established and the old. Sir W. Hamilton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become untwined. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untwirl": {
+      "word": "UNTWIRL",
+      "definitions": [
+        {
+          "text": "To untwist; to undo. Ash.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untwist": {
+      "word": "UNTWIST",
+      "definitions": [
+        {
+          "text": "To separate and open, as twisted threads; to turn back, as that which is twisted; to untwine. If one of the twines of the twist do untwist, The twine that untwisteth, untwisteth the twist. Wallis.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To untie; to open; to disentangle. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unty": {
+      "word": "UNTY",
+      "definitions": [
+        {
+          "text": "To untie. [Archaic] Young.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}
