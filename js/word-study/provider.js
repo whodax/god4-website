@@ -23,8 +23,14 @@ var WordStudyProvider = (function createWordStudyProvider(){
     });
   }
 
+  function lookupOriginalLanguage(context){
+    if(typeof OriginalLanguageWordStudyProvider === 'undefined') return Promise.resolve(unavailable(context));
+    return OriginalLanguageWordStudyProvider.lookup(context);
+  }
+
   return {
     normalizeLookupTerm: normalizeLookupTerm,
-    lookup: lookup
+    lookup: lookup,
+    lookupOriginalLanguage: lookupOriginalLanguage
   };
 }());
