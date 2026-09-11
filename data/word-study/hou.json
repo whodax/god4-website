@@ -1,0 +1,1899 @@
+{
+  "version": "v1",
+  "entries": {
+    "houdah": {
+      "word": "HOUDAH",
+      "definitions": [
+        {
+          "text": "See Howdah.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hough": {
+      "word": "HOUGH",
+      "definitions": [
+        {
+          "text": "Same as Hock, a joint.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Hock, to hamstring.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "An adz; a hoe. [Obs.] Bp. Stillingfleet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cut with a hoe. [Obs.] Johnson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houlet": {
+      "word": "HOULET",
+      "definitions": [
+        {
+          "text": "An owl. See Howlet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hoult": {
+      "word": "HOULT",
+      "definitions": [
+        {
+          "text": "A piece of woodland; a small wood. [Obs.] See Holt.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hound": {
+      "word": "HOUND",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A variety of the domestic dog, usually having large, drooping ears, esp. one which hunts game by scent, as the foxhound, bloodhound, deerhound, but also used for various breeds of fleet hunting dogs, as the greyhound, boarhound, etc. Hounds and greyhounds, mongrels, spaniels, curs. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A despicable person. \"Boy! false hound!\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A houndfish.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Projections at the masthead, serving as a support for the trestletrees and top to rest on.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A side bar used to strengthen portions of the running gear of a vehicle. To follow the hounds, to hunt with hounds.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To set on the chase; to incite to pursuit; as, to hounda dog at a hare; to hound on pursuers. Abp. Bramhall.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hunt or chase with hounds, or as with hounds. L'Estrange.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Afghan hound",
+        "Alaskan malamute",
+        "Bedlington terrier",
+        "Border terrier",
+        "Boston bull",
+        "Cairn terrier",
+        "Chihuahua",
+        "Dalmatian",
+        "Doberman pinscher",
+        "English toy spaniel",
+        "Eskimo dog",
+        "Gordon setter",
+        "Great Dane",
+        "Great Pyrenees",
+        "Kerry blue terrier",
+        "Labrador retriever",
+        "Maltese",
+        "Newfoundland",
+        "Norwegian elkhound",
+        "Norwich terrier",
+        "Pekingese",
+        "Rhodesian ridgeback",
+        "Rottweiler",
+        "Saluki",
+        "Samoyed",
+        "Scottish deerhound",
+        "Siberian husky",
+        "Welsh corgi",
+        "Welsh terrier",
+        "Yorkshire terrier",
+        "addict",
+        "affenpinscher",
+        "aficionado",
+        "aggravate",
+        "animal",
+        "annoy",
+        "badger",
+        "badger dog",
+        "bait",
+        "barbet",
+        "basset",
+        "basset hound",
+        "be at",
+        "beagle",
+        "beast",
+        "beat",
+        "bedevil",
+        "bedog",
+        "beset",
+        "bloodhound",
+        "boarhound",
+        "borzoi",
+        "bother",
+        "bowwow",
+        "boxer",
+        "bristle",
+        "browbeat",
+        "brown off",
+        "buff",
+        "bug",
+        "bull",
+        "bull terrier",
+        "bulldog",
+        "bully",
+        "bullyrag",
+        "burn up",
+        "canine",
+        "chase",
+        "cheer on",
+        "chivy",
+        "chow",
+        "coach dog",
+        "collector",
+        "collie",
+        "come after",
+        "come behind",
+        "coonhound",
+        "course",
+        "cur",
+        "dachshund",
+        "deerhound",
+        "demon",
+        "devil",
+        "devotee",
+        "discompose",
+        "distemper",
+        "disturb",
+        "dog",
+        "drive",
+        "drive on",
+        "eager beaver",
+        "egg on",
+        "energumen",
+        "enthusiast",
+        "exasperate",
+        "exercise",
+        "faddist",
+        "falcon",
+        "fan",
+        "fanatic",
+        "fash",
+        "fiend",
+        "flat-coated retriever",
+        "flush",
+        "follow",
+        "follow the hounds",
+        "follow up",
+        "fowl",
+        "fox terrier",
+        "foxhound",
+        "freak",
+        "fret",
+        "get",
+        "giant schnauzer",
+        "give chase",
+        "go after",
+        "go behind",
+        "go hunting",
+        "goad on",
+        "golden retriever",
+        "great one for",
+        "greyhound",
+        "griffon",
+        "gripe",
+        "gun",
+        "habitue",
+        "harass",
+        "harrier",
+        "harry",
+        "hasten on",
+        "haunt",
+        "hawk",
+        "heckle",
+        "hector",
+        "heel",
+        "hie on",
+        "hobbyist",
+        "hollo after",
+        "hound on",
+        "hunt",
+        "hunt down",
+        "hurry on",
+        "husky",
+        "hyena",
+        "infatuate",
+        "insect",
+        "irk",
+        "jack",
+        "jacklight",
+        "lakeland terrier",
+        "lover",
+        "make after",
+        "malamute",
+        "mastiff",
+        "miff",
+        "molest",
+        "mongrel",
+        "move behind",
+        "nag",
+        "needle",
+        "nettle",
+        "nudzh",
+        "nut",
+        "oppress",
+        "otterhound",
+        "papillon",
+        "peeve",
+        "persecute",
+        "pester",
+        "pick on",
+        "pig",
+        "pique",
+        "plague",
+        "pluck the beard",
+        "pointer",
+        "polecat",
+        "pooch",
+        "poodle",
+        "pother",
+        "prosecute",
+        "provoke",
+        "prowl after",
+        "pug",
+        "puli",
+        "pursue",
+        "pursuer",
+        "quest",
+        "quest after",
+        "raise the hunt",
+        "rat terrier",
+        "reptile",
+        "retriever",
+        "rhapsodist",
+        "ride",
+        "ride to hounds",
+        "rile",
+        "roil",
+        "root on",
+        "ruffle",
+        "run",
+        "run after",
+        "search",
+        "seek",
+        "seek out",
+        "serpent",
+        "setter",
+        "shadow",
+        "shikar",
+        "shoot",
+        "skunk",
+        "sleuth",
+        "sleuthhound",
+        "snake",
+        "spaniel",
+        "speed on",
+        "sport",
+        "spur on",
+        "staghound",
+        "stalk",
+        "start",
+        "still-hunt",
+        "string along",
+        "sucker for",
+        "swine",
+        "tag",
+        "tag after",
+        "tag along",
+        "tail",
+        "tailgate",
+        "take out after",
+        "tease",
+        "terrier",
+        "torment",
+        "track",
+        "trail",
+        "trail after",
+        "tread close upon",
+        "try the patience",
+        "turnspit",
+        "tweak the nose",
+        "tyke",
+        "urge on",
+        "varmint",
+        "vermin",
+        "vex",
+        "victimize",
+        "viper",
+        "visionary",
+        "votary",
+        "whelp",
+        "whip on",
+        "whippet",
+        "wire-haired terrier",
+        "wolfhound",
+        "worm",
+        "worry",
+        "zealot"
+      ]
+    },
+    "hound'stongue": {
+      "word": "HOUND'S-TONGUE",
+      "definitions": [
+        {
+          "text": "A biennial weed (Cynoglossum officinale), with soft tongue- shaped leaves, and an offensive odor. It bears nutlets covered with barbed or hooked prickles. Called also dog's-tongue.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houndfish": {
+      "word": "HOUNDFISH",
+      "definitions": [
+        {
+          "text": "Any small shark of the genus Galeus or Mustelus, of which there are several species, as the smooth houndfish (G. canis), of Europe and America; -- called also houndshark, and dogfish. canicula; the rough houndfish, or large-spotted dogfish, is S. catulus. The name has also sometimes been applied to the bluefish (Pomatomus saltatrix), and to the silver gar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hounding": {
+      "word": "HOUNDING",
+      "definitions": [
+        {
+          "text": "The act of one who hounds.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The part of a mast below the hounds and above the deck.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houp": {
+      "word": "HOUP",
+      "definitions": [
+        {
+          "text": "See Hoopoe. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hour": {
+      "word": "HOUR",
+      "definitions": [
+        {
+          "text": "The twenty-fourth part of a day; sixty minutes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The time of the day, as expressed in hours and minutes, and indicated by a timepiece; as, what is the hour At what hour shall we meet",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fixed or appointed time; conjuncture; a particular time or occasion; as, the hour of greatest peril; the man for the hour. Woman, . . . mine hour is not yet come. John ii. 4. This is your hour, and the power of darkness. Luke xxii. 53.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (R. C. Ch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Certain prayers to be repeated at stated times of the day, as matins and vespers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A measure of distance traveled. Vilvoorden, three hours from Brussels. J. P. Peters. After hours, after the time appointed for one's regular labor. through a given body, and the meridian of a place. through the two poles of the equator; esp., one of the circles drawn on an artificial globe through the poles, and dividing the equator into spaces of 15º, or one hour, each. (b) A circle upon an equatorial telescope lying parallel to the plane of the earth's equator, and graduated in hours and subdivisions of hours of right ascension. (c) A small brass circle attached to the north pole of an artificial globe, and divided into twenty-four parts or hours. It is used to mark differences of time in working problems on the globe. (Dialing) A line on which the shadow falls at a given hour; the intersection of an hour circle which the face of the dial. marked; the dial. Locke. two o'clock, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abundant year",
+        "academic year",
+        "annum",
+        "bell",
+        "bissextile year",
+        "calendar month",
+        "calendar year",
+        "century",
+        "common year",
+        "day",
+        "decade",
+        "decennary",
+        "decennium",
+        "defective year",
+        "fateful moment",
+        "fiscal year",
+        "fortnight",
+        "instant",
+        "interval",
+        "juncture",
+        "kairos",
+        "leap year",
+        "lunar month",
+        "lunar year",
+        "lunation",
+        "luster",
+        "lustrum",
+        "man-hour",
+        "microsecond",
+        "millennium",
+        "millisecond",
+        "minute",
+        "moment",
+        "moment of truth",
+        "month",
+        "moon",
+        "period",
+        "point",
+        "pregnant moment",
+        "psychological moment",
+        "quarter",
+        "quinquennium",
+        "regular year",
+        "season",
+        "second",
+        "semester",
+        "session",
+        "sidereal year",
+        "solar year",
+        "space",
+        "span",
+        "spell",
+        "stage",
+        "stretch",
+        "sun",
+        "term",
+        "the time",
+        "time",
+        "time lag",
+        "time of day",
+        "time signal",
+        "trimester",
+        "twelvemonth",
+        "week",
+        "weekday",
+        "while",
+        "year"
+      ]
+    },
+    "hourglass": {
+      "word": "HOURGLASS",
+      "definitions": [
+        {
+          "text": "An instrument for measuring time, especially the interval of an hour. It consists of a glass vessel having two compartments, from the uppermost of which a quantity of sand, water, or mercury occupies an hour in running through a small aperture unto the lower. its name from the interval measured; as, a half-hour glass, a half- minute glass. A three-minute glass is sometimes called an egg-glass, from being used to time the boiling of eggs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abbreviation",
+        "astriction",
+        "astringency",
+        "bottleneck",
+        "cervix",
+        "circumscription",
+        "coarctation",
+        "compactedness",
+        "compaction",
+        "compression",
+        "compressure",
+        "concentration",
+        "condensation",
+        "consolidation",
+        "constriction",
+        "constringency",
+        "contraction",
+        "contracture",
+        "curtailment",
+        "decrease",
+        "diminuendo",
+        "hourglass figure",
+        "isthmus",
+        "knitting",
+        "narrow place",
+        "narrowing",
+        "neck",
+        "puckering",
+        "pursing",
+        "reduction",
+        "shortening",
+        "solidification",
+        "stranglement",
+        "strangulation",
+        "striction",
+        "stricture",
+        "systole",
+        "wasp waist",
+        "wrinkling"
+      ]
+    },
+    "houri": {
+      "word": "HOURI",
+      "definitions": [
+        {
+          "text": "A nymph of paradise; -- so called by the Mohammedans.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Adonis",
+        "Aphrodite",
+        "Apollo",
+        "Apollo Belvedere",
+        "Aspasia",
+        "Astarte",
+        "Balder",
+        "Cleopatra",
+        "Delilah",
+        "Freya",
+        "Hebe",
+        "Hyperion",
+        "Jezebel",
+        "Messalina",
+        "Narcissus",
+        "Phryne",
+        "Thais",
+        "Venus",
+        "Venus de Milo",
+        "adventuress",
+        "courtesan",
+        "demimondaine",
+        "demimonde",
+        "demirep",
+        "femme fatale",
+        "harem girl",
+        "hetaera",
+        "odalisque",
+        "peri",
+        "seductress",
+        "temptress",
+        "the Graces",
+        "vamp",
+        "vampire"
+      ]
+    },
+    "hourly": {
+      "word": "HOURLY",
+      "definitions": [
+        {
+          "text": "Happening or done every hour; occurring hour by hour; frequent; often repeated; renewed hour by hour; continual. In hourly expectation of a martyrdom. Sharp.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Every hour; frequently; continually. Great was their strife, which hourly was renewed. Dryden.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "always",
+        "annual",
+        "at all times",
+        "biannual",
+        "biennial",
+        "bimonthly",
+        "biweekly",
+        "catamenial",
+        "ceaselessly",
+        "centenary",
+        "centennial",
+        "constantly",
+        "continually",
+        "cyclically",
+        "daily",
+        "daily and hourly",
+        "day after day",
+        "day and night",
+        "day by day",
+        "decennial",
+        "diurnal",
+        "epochally",
+        "ever",
+        "ever and anon",
+        "every day",
+        "every hour",
+        "every moment",
+        "fortnightly",
+        "hebdomadal",
+        "hour after hour",
+        "hour by hour",
+        "in time",
+        "incessantly",
+        "menstrual",
+        "momentary",
+        "momently",
+        "month after month",
+        "monthly",
+        "night and day",
+        "on and on",
+        "on the beat",
+        "perennially",
+        "periodically",
+        "perpetually",
+        "quarterly",
+        "quotidian",
+        "rapidly",
+        "recurrently",
+        "regularly",
+        "rhythmically",
+        "right along",
+        "seasonally",
+        "secular",
+        "semestral",
+        "semiannual",
+        "semimonthly",
+        "semiweekly",
+        "semiyearly",
+        "steadily",
+        "sustainedly",
+        "synchronously",
+        "tertian",
+        "triennial",
+        "unceasingly",
+        "unintermittently",
+        "uninterruptedly",
+        "unvaryingly",
+        "weekly",
+        "without cease",
+        "without letup",
+        "without stopping",
+        "year after year",
+        "yearly"
+      ]
+    },
+    "hours": {
+      "word": "HOURS",
+      "definitions": [
+        {
+          "text": "Goddess of the seasons, or of the hours of the day. Lo! where the rosy-blosomed Hours, Fair Venus' train, appear. Gray.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housage": {
+      "word": "HOUSAGE",
+      "definitions": [
+        {
+          "text": "A fee for keeping goods in a house. [R.] Chambers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "house": {
+      "word": "HOUSE",
+      "definitions": [
+        {
+          "text": "A structure intended or used as a habitation or shelter for animals of any kind; but especially, a building or edifice for the habitation of man; a dwelling place, a mansion. Houses are built to live in; not to look on. Bacon. Bees with smoke and doves with noisome stench Are from their hives and houses driven away. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Household affairs; domestic concerns; particularly in the phrase to keep house. See below.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Those who dwell in the same house; a household. One that feared God with all his house. Acts x. 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A family of ancestors, descendants, and kindred; a race of persons from the same stock; a tribe; especially, a noble family or an illustrious race; as, the house of Austria; the house of Hanover; the house of Israel. The last remaining pillar of their house, The one transmitter of their ancient name. Tennyson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the estates of a kingdom or other government assembled in parliament or legislature; a body of men united in a legislative capacity; as, the House of Lords; the House of Commons; the House of Representatives; also, a quorum of such a body. See Congress, and Parliament.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Com.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A firm, or commercial establishment.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A public house; an inn; a hotel.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Astrol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A twelfth part of the heavens, as divided by six circles intersecting at the north and south points of the horizon, used by astrologers in noting the positions of the heavenly bodies, and casting horoscopes or nativities. The houses were regarded as fixed in respect to the horizon, and numbered from the one at the eastern horizon, called the ascendant, first house, or house of life, downward, or in the direction of the earth's revolution, the stars and planets passing through them in the reverse order every twenty- four hours.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A square on a chessboard, regarded as the proper place of a piece.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An audience; an assembly of hearers, as at a lecture, a theater, etc.; as, a thin or a full house.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The body, as the habitation of the soul. This mortal house I'll ruin, Do Cæsar what he can. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "[With an adj., as narrow, dark, etc.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The grave. \"The narrow house.\" Bryant. compounds. The sense is usually obvious; as, house cricket, housemaid, house painter, housework. House ant (Zoöl.), a very small, yellowish brown ant (Myrmica molesta), which often infests houses, and sometimes becomes a great pest. composing a general convertion, the other being House of Clerical and Lay Deputies. connected with a particular trade assemble when out of work, ready for the call of employers. [Eng.] Simonds. roof; a box car. which frequently lives in houses, between the bricks of chimneys and fireplaces. It is noted for the loud chirping or stridulation of the males. merchant vessel belongs. infests houses both in Europe and America. Its larva is a maggot which lives in decaying substances or excrement, about sink drains, etc. It has feathered feet, and builds its nests of mud against the walls of buildings. Called also house swallow, and window martin. other public institution. domesticus). It has recently been introduced into America, where it has become very abundant, esp. in cities. Called also thatch sparrow. houses. Among the most common species are Theridium tepidariorum and Tegenaria domestica. (Troglodytes aëdon). It is common about houses and in gardens, and is noted for its vivacity, and loud musical notes. See Wren. United States; -- hence, colloquially, the office of President.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To take or put into a house; to shelter under a roof; to cover from the inclemencies of the weather; to protect by covering; as, to house one's family in a comfortable home; to house farming utensils; to house cattle. At length have housed me in a humble shed. Young. House your choicest carnations, or rather set them under a penthouse. Evelyn.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To drive to a shelter. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To admit to residence; to harbor. Palladius wished him to house all the Helots. Sir P. Sidney.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deposit and cover, as in the grave. Sandys.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To stow in a safe place; to take down and make safe; as, to house the upper spars.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take shelter or lodging; to abide to dwell; to lodge. You shall not house with me. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Astrol.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have a position in one of the houses. See House, n.,",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "\"Where Saturn houses.\" Dryden.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Aktiengesellschaft",
+        "Dymaxion house",
+        "Elizabethan theater",
+        "Globe Theatre",
+        "Greek theater",
+        "White House",
+        "abbey",
+        "abode",
+        "accommodate",
+        "adobe house",
+        "affiliation",
+        "agency",
+        "aktiebolag",
+        "amphitheater",
+        "ancestry",
+        "animal kingdom",
+        "apparentation",
+        "architecture",
+        "arena theater",
+        "as a gift",
+        "aspect",
+        "assembly",
+        "astrodiagnosis",
+        "astrology",
+        "astromancy",
+        "atelier",
+        "audience",
+        "auditorium",
+        "auditory",
+        "bagnio",
+        "barbershop",
+        "beauty parlor",
+        "beauty shop",
+        "bed",
+        "beleaguer",
+        "bench",
+        "berth",
+        "beset",
+        "besiege",
+        "bestow",
+        "billet",
+        "birth",
+        "blockade",
+        "blood",
+        "bloodline",
+        "board",
+        "body corporate",
+        "bordello",
+        "bound",
+        "boutique",
+        "box in",
+        "branch",
+        "breed",
+        "brood",
+        "brothel",
+        "building",
+        "bunk",
+        "business",
+        "business establishment",
+        "butcher shop",
+        "cabaret",
+        "cabin",
+        "cage",
+        "cartel",
+        "casa",
+        "chain store",
+        "chamber",
+        "chamber of commerce",
+        "children",
+        "circle theater",
+        "clan",
+        "class",
+        "cliff dwelling",
+        "cloister",
+        "close in",
+        "club",
+        "co-op",
+        "combine",
+        "commercial enterprise",
+        "common ancestry",
+        "commorancy",
+        "compagnie",
+        "company",
+        "compass",
+        "concern",
+        "concert hall",
+        "concession",
+        "conglomerate",
+        "conglomerate corporation",
+        "congregation",
+        "congress",
+        "consanguinity",
+        "consolidating company",
+        "consortium",
+        "construct",
+        "construction",
+        "consulate",
+        "contain",
+        "convent",
+        "coop",
+        "coop in",
+        "coop up",
+        "cooperative",
+        "copartnership",
+        "cordon",
+        "cordon off",
+        "corporate body",
+        "corporation",
+        "corral",
+        "council",
+        "countinghouse",
+        "country house",
+        "country seat",
+        "country store",
+        "crib",
+        "cuddy",
+        "dacha",
+        "deanery",
+        "deckhouse",
+        "deme",
+        "department store",
+        "derivation",
+        "descendants",
+        "descent",
+        "desk",
+        "diet",
+        "dime store",
+        "direct line",
+        "discount house",
+        "discount store",
+        "distaff side",
+        "diversified corporation",
+        "domicile",
+        "domiciliate",
+        "dwelling",
+        "dwelling house",
+        "dynasty",
+        "edifice",
+        "embassy",
+        "emporium",
+        "encircle",
+        "enclose",
+        "encompass",
+        "enshrine",
+        "enterprise",
+        "entertain",
+        "erection",
+        "establishment",
+        "extraction",
+        "fabric",
+        "facility",
+        "family",
+        "farm",
+        "farmhouse",
+        "female line",
+        "fence in",
+        "filiation",
+        "firm",
+        "five-and-ten",
+        "folk",
+        "folks",
+        "for nothing",
+        "forebears",
+        "free",
+        "friary",
+        "gallery",
+        "general store",
+        "genethliac astrology",
+        "genethliacism",
+        "genethliacs",
+        "genethlialogy",
+        "gens",
+        "get",
+        "gratis",
+        "groundling",
+        "hall",
+        "harbor",
+        "haven",
+        "hearth",
+        "hedge in",
+        "hem in",
+        "holding company",
+        "home",
+        "homefolks",
+        "homestead",
+        "horoscope",
+        "horoscopy",
+        "house in",
+        "houseboat",
+        "household",
+        "hut",
+        "impound",
+        "imprison",
+        "incarcerate",
+        "include",
+        "industry",
+        "installation",
+        "institution",
+        "issue",
+        "jail",
+        "joint-stock association",
+        "joint-stock company",
+        "kennel",
+        "kind",
+        "kindred",
+        "lake dwelling",
+        "lamasery",
+        "leaguer",
+        "legislative body",
+        "legislature",
+        "line",
+        "line of descent",
+        "lineage",
+        "little theater",
+        "living machine",
+        "lodge",
+        "lodgings",
+        "loft",
+        "magasin",
+        "mail-order house",
+        "male line",
+        "manor house",
+        "manse",
+        "mansion",
+        "market",
+        "mart",
+        "matriclan",
+        "menage",
+        "mew",
+        "mew up",
+        "monastery",
+        "mundane astrology",
+        "mundane house",
+        "music hall",
+        "nation",
+        "nativity",
+        "natural astrology",
+        "night spot",
+        "nightclub",
+        "nunnery",
+        "offspring",
+        "on the house",
+        "opera",
+        "opera house",
+        "operating company",
+        "orchestra",
+        "order",
+        "organization",
+        "outdoor theater",
+        "outfit",
+        "packaged house",
+        "parliament",
+        "parlor",
+        "parsonage",
+        "partnership",
+        "patriclan",
+        "pen",
+        "pen in",
+        "penthouse",
+        "people",
+        "phratry",
+        "phyle",
+        "phylum",
+        "pile",
+        "pit",
+        "planetary house",
+        "plant kingdom",
+        "playhouse",
+        "plunderbund",
+        "pocket",
+        "pool",
+        "post",
+        "prefab",
+        "prefabricated house",
+        "prefabrication",
+        "presidential palace",
+        "priorate",
+        "priory",
+        "public utility",
+        "put up",
+        "pyramid",
+        "quarantine",
+        "quarter",
+        "quarters",
+        "race",
+        "rail in",
+        "ranch house",
+        "rectory",
+        "residence",
+        "residency",
+        "retail store",
+        "roof",
+        "room",
+        "salon",
+        "saloon",
+        "seed",
+        "sept",
+        "shelter",
+        "shelter cabin",
+        "shield",
+        "shop",
+        "showboat",
+        "shrine",
+        "shut in",
+        "shut up",
+        "side",
+        "skyscraper",
+        "sod house",
+        "spear side",
+        "species",
+        "spectator",
+        "spindle side",
+        "split-level",
+        "sporting house",
+        "stable",
+        "stargazing",
+        "stateroom",
+        "stem",
+        "stirps",
+        "stock",
+        "stock company",
+        "store",
+        "strain",
+        "structure",
+        "studio",
+        "succession",
+        "supermarket",
+        "superstructure",
+        "surround",
+        "sweatshop",
+        "sword side",
+        "syndicate",
+        "take in",
+        "theater",
+        "theater-in-the-round",
+        "theatre",
+        "theatron",
+        "totem",
+        "tower",
+        "town house",
+        "trade association",
+        "trading post",
+        "tribe",
+        "trust",
+        "undertaking",
+        "utility",
+        "variety shop",
+        "variety store",
+        "vicarage",
+        "wall in",
+        "warehouse",
+        "wareroom",
+        "wholesale house",
+        "work site",
+        "work space",
+        "workbench",
+        "workhouse",
+        "working space",
+        "workplace",
+        "workroom",
+        "workshop",
+        "worktable",
+        "wrap",
+        "yard",
+        "yard up",
+        "zodiac"
+      ]
+    },
+    "housebote": {
+      "word": "HOUSEBOTE",
+      "definitions": [
+        {
+          "text": "Wood allowed to a tenant for repairing the house and for fuel. This latter is often called firebote. See Bote.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housebreaker": {
+      "word": "HOUSEBREAKER",
+      "definitions": [
+        {
+          "text": "One who is guilty of the crime of housebreaking.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housebreaking": {
+      "word": "HOUSEBREAKING",
+      "definitions": [
+        {
+          "text": "The act of breaking open and entering, with a felonious purpose, the dwelling house of another, whether done by day or night. See Burglary, and To break a house, under Break.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housebuilder": {
+      "word": "HOUSEBUILDER",
+      "definitions": [
+        {
+          "text": "One whose business is to build houses; a housewright.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housecarl": {
+      "word": "HOUSECARL",
+      "definitions": [
+        {
+          "text": "A household servant; also, one of the bodyguard of King Canute.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "household": {
+      "word": "HOUSEHOLD",
+      "definitions": [
+        {
+          "text": "Those who dwell under the same roof and compose a family. And calls, without affecting airs, His household twice a day to prayers. Swift.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A line of ancestory; a race or house. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Belonging to the house and family; domestic; as, household furniture; household affairs. Household bread, bread made in the house for common use; hence, bread that is not of the finest quality. house and family; the Lares and Penates; hence, all objects endeared by association with home. sovereign or his residence.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Attic",
+        "accustomed",
+        "ancestral halls",
+        "average",
+        "brood",
+        "chaste",
+        "children",
+        "chimney corner",
+        "classic",
+        "classical",
+        "common",
+        "commonly known",
+        "commonplace",
+        "conventional",
+        "current",
+        "customary",
+        "domal",
+        "domestic",
+        "domiciliary",
+        "everyday",
+        "familiar",
+        "family",
+        "family homestead",
+        "fireplace",
+        "fireside",
+        "folks",
+        "foyer",
+        "garden",
+        "garden-variety",
+        "get",
+        "habitual",
+        "hackneyed",
+        "hearth",
+        "hearth and home",
+        "hearthstone",
+        "home",
+        "home place",
+        "home roof",
+        "home sweet home",
+        "homefolks",
+        "homely",
+        "homespun",
+        "homestead",
+        "house",
+        "ingle",
+        "inglenook",
+        "ingleside",
+        "issue",
+        "manorial",
+        "mansional",
+        "matter-of-fact",
+        "menage",
+        "nondescript",
+        "normative",
+        "notorious",
+        "offspring",
+        "ordinary",
+        "palatial",
+        "paternal roof",
+        "people",
+        "plain",
+        "platitudinous",
+        "popular",
+        "predominating",
+        "prescriptive",
+        "prevailing",
+        "prosaic",
+        "prosy",
+        "proverbial",
+        "public",
+        "pure",
+        "pure and simple",
+        "regular",
+        "regulation",
+        "residential",
+        "residentiary",
+        "roof",
+        "rooftree",
+        "simple",
+        "standard",
+        "stock",
+        "talked-about",
+        "talked-of",
+        "toft",
+        "trite",
+        "truistic",
+        "universal",
+        "universally admitted",
+        "universally recognized",
+        "usual",
+        "vernacular",
+        "well-kenned",
+        "well-known",
+        "well-recognized",
+        "well-understood",
+        "widely known",
+        "wonted",
+        "workaday",
+        "workday"
+      ]
+    },
+    "householder": {
+      "word": "HOUSEHOLDER",
+      "definitions": [
+        {
+          "text": "The master or head of a family; one who occupies a house with his family. Towns in which almost every householder was an English Protestant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "beneficiary",
+        "cestui",
+        "cestui que trust",
+        "cestui que use",
+        "cottager",
+        "cotter",
+        "cottier",
+        "crofter",
+        "deedholder",
+        "feoffee",
+        "feudatory",
+        "freeholder",
+        "head of household",
+        "laird",
+        "landlady",
+        "landlord",
+        "lord",
+        "master",
+        "mesne",
+        "mesne lord",
+        "mistress",
+        "owner",
+        "proprietary",
+        "proprietor",
+        "proprietress",
+        "proprietrix",
+        "rentier",
+        "squire",
+        "titleholder"
+      ]
+    },
+    "housekeeper": {
+      "word": "HOUSEKEEPER",
+      "definitions": [
+        {
+          "text": "One who occupies a house with his family; a householder; the master or mistress of a family. Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who does, or oversees, the work of keeping house; as, his wife is a good housekeeper; often, a woman hired to superintend the servants of a household and manage the ordinary domestic affairs.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who exercises hospitality, or has plentiful and hospitable household. [Obs.] Sir H. Wotton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who keeps or stays much at home. [R.] You are manifest housekeeper. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A house dog. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "MC",
+        "attorney",
+        "bailiff",
+        "butler",
+        "chamberlain",
+        "croupier",
+        "curator",
+        "custodian",
+        "emcee",
+        "factor",
+        "guardian",
+        "house steward",
+        "landreeve",
+        "librarian",
+        "majordomo",
+        "master of ceremonies",
+        "proctor",
+        "procurator",
+        "seneschal",
+        "steward"
+      ]
+    },
+    "housekeeping": {
+      "word": "HOUSEKEEPING",
+      "definitions": [
+        {
+          "text": "The state of being occupying a dwelling house as a householder.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Care of domestic concerns; management of a house and home affairs.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hospitality; a liberal and hospitable table; a supply of provisions. [Obs.] Tell me, softly and hastly, what's in the pantry Small housekeeping enough, said Phoebe. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Domestic; used in a family; as, housekeeping commodities.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housel": {
+      "word": "HOUSEL",
+      "definitions": [
+        {
+          "text": "The eucharist. [Archaic] Rom. of R. Tennyson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To administer the eucharist to. [Archaic] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houseleek": {
+      "word": "HOUSELEEK",
+      "definitions": [
+        {
+          "text": "A succulent plant of the genus Sempervivum (S. tectorum), originally a native of subalpine Europe, but now found very generally on old walls and roofs. It is very tenacious of life under drought and heat; -- called also ayegreen.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houseless": {
+      "word": "HOUSELESS",
+      "definitions": [
+        {
+          "text": "Destitute of the shelter of a house; shelterless; homeless; as, a houseless wanderer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houselessness": {
+      "word": "HOUSELESSNESS",
+      "definitions": [
+        {
+          "text": "The state of being houseless.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houseline": {
+      "word": "HOUSELINE",
+      "definitions": [
+        {
+          "text": "A small line of three strands used for seizing; -- called also housing. Totten.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houseling": {
+      "word": "HOUSELING",
+      "definitions": [
+        {
+          "text": "Same as Housling.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housemaid": {
+      "word": "HOUSEMAID",
+      "definitions": [
+        {
+          "text": "A female servant employed to do housework, esp. to take care of the rooms. Housemaid's knee (Med.), a swelling over the knee, due to an enlargement of the bursa in the front of the kneepan; -- so called because frequently occurring in servant girls who work upon their knees.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housemate": {
+      "word": "HOUSEMATE",
+      "definitions": [
+        {
+          "text": "One who dwells in the same house with another. R. Browning.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houseroom": {
+      "word": "HOUSEROOM",
+      "definitions": [
+        {
+          "text": "Room or place in a house; as, to give any one houseroom.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housewarming": {
+      "word": "HOUSEWARMING",
+      "definitions": [
+        {
+          "text": "A feast or merry-making made by or for a family or business firm on taking possession of a new house or premises. Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Kaffeeklatsch",
+        "assemblee",
+        "assembly",
+        "assignation",
+        "at home",
+        "ball",
+        "blowout",
+        "brawl",
+        "caucus",
+        "cocktail party",
+        "coffee klatch",
+        "colloquium",
+        "commission",
+        "committee",
+        "conclave",
+        "concourse",
+        "congregation",
+        "congress",
+        "conventicle",
+        "convention",
+        "convocation",
+        "costume party",
+        "council",
+        "dance",
+        "date",
+        "diet",
+        "dinner",
+        "dinner party",
+        "donation party",
+        "eisteddfod",
+        "entertainment",
+        "festivity",
+        "fete",
+        "forgathering",
+        "forum",
+        "garden party",
+        "gathering",
+        "get-together",
+        "hen party",
+        "house party",
+        "house-raising",
+        "lawn party",
+        "levee",
+        "mask",
+        "masque",
+        "masquerade",
+        "masquerade party",
+        "meet",
+        "meeting",
+        "panel",
+        "party",
+        "plenum",
+        "prom",
+        "quorum",
+        "rally",
+        "reception",
+        "rendezvous",
+        "seance",
+        "session",
+        "shindig",
+        "shindy",
+        "shower",
+        "sit-in",
+        "sitting",
+        "smoker",
+        "soiree",
+        "stag",
+        "stag party",
+        "surprise party",
+        "symposium",
+        "synod",
+        "turnout"
+      ]
+    },
+    "housewife": {
+      "word": "HOUSEWIFE",
+      "definitions": [
+        {
+          "text": "The wife of a householder; the mistress of a family; the female head of a household. Shak. He a good husband, a good housewife she. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Usually pronounced Etym: [See Hussy, in this sense.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A little case or bag for materials used in sewing, and for other articles of female work; -- called also hussy. [Written also huswife.] P. Skelton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hussy. [R.] [Usually written huswife.] Shak. Sailor's housewife, a ditty-bag.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housewifehousewive": {
+      "word": "HOUSEWIFE; HOUSEWIVE",
+      "definitions": [
+        {
+          "text": "To manage with skill and economy, as a housewife or other female manager; to economize. Conferred those moneys on the nuns, which since they have well housewived. Fuller.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housewifely": {
+      "word": "HOUSEWIFELY",
+      "definitions": [
+        {
+          "text": "Pertaining or appropriate to a housewife; domestic; economical; prudent. A good sort of woman, ladylike and housewifely. Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housewifery": {
+      "word": "HOUSEWIFERY",
+      "definitions": [
+        {
+          "text": "The business of the mistress of a family; female management of domestic concerns.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housework": {
+      "word": "HOUSEWORK",
+      "definitions": [
+        {
+          "text": "The work belonging to housekeeping; especially, kitchen work, sweeping, scrubbing, bed making, and the like.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housewright": {
+      "word": "HOUSEWRIGHT",
+      "definitions": [
+        {
+          "text": "A builder of houses.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housing": {
+      "word": "HOUSING",
+      "definitions": [
+        {
+          "text": "The act of putting or receiving under shelter; the state of dwelling in a habitation.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which shelters or covers; houses, taken collectively. Fabyan.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.) (a) The space taken out of one solid, to admit the insertion of part of another, as the end of one timber in the side of another. (b) A niche for a statue.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mach.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A frame or support for holding something in place, as journal boxes, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.) (a) That portion of a mast or bowsprit which is beneath the deck or within the vessel. (b) A covering or protection, as an awning over the deck of a ship when laid up. (c) A houseline. See Houseline.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cover or cloth for a horse's saddle, as an ornamental or military appendage; a saddlecloth; a horse cloth; in plural, trappings.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An appendage to the hames or collar of a harness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accommodation",
+        "accommodations",
+        "architectonic",
+        "architectural",
+        "assembly-line housing",
+        "berth",
+        "billeting",
+        "blanket",
+        "box",
+        "building",
+        "cabinet",
+        "caparison",
+        "case",
+        "casing",
+        "chassis",
+        "cloak",
+        "coat",
+        "console",
+        "constructional",
+        "container",
+        "cover",
+        "coverage",
+        "covering",
+        "covert",
+        "coverture",
+        "cowl",
+        "cowling",
+        "curtain",
+        "diggings",
+        "digs",
+        "dock",
+        "domiciliation",
+        "doss",
+        "drape",
+        "drapery",
+        "dwelling",
+        "edificial",
+        "enclosure",
+        "guise",
+        "habitation",
+        "hangar",
+        "hanging",
+        "home",
+        "homes",
+        "hood",
+        "horse blanket",
+        "horsecloth",
+        "hospitality",
+        "houses",
+        "housing bill",
+        "housing development",
+        "housing problem",
+        "living",
+        "living quarters",
+        "lodging",
+        "lodgings",
+        "lodgment",
+        "lower-income housing",
+        "mantle",
+        "mask",
+        "pall",
+        "protection",
+        "quartering",
+        "quarters",
+        "radio",
+        "radio receiver",
+        "radio set",
+        "radio telescope",
+        "receiver",
+        "receiving set",
+        "rooms",
+        "roost",
+        "saddle blanket",
+        "saddlecloth",
+        "screen",
+        "set",
+        "shed",
+        "shelter",
+        "shield",
+        "shroud",
+        "sleeping place",
+        "slum clearance",
+        "structural",
+        "subdivision",
+        "tract",
+        "transient lodging",
+        "urban renewal",
+        "veil",
+        "vestment",
+        "wireless",
+        "wireless set"
+      ]
+    },
+    "housling": {
+      "word": "HOUSLING",
+      "definitions": [
+        {
+          "text": "Sacramental; as, housling fire. [R.] Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houss": {
+      "word": "HOUSS",
+      "definitions": [
+        {
+          "text": "A saddlecloth; a housing. [Obs.] Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houstonia": {
+      "word": "HOUSTONIA",
+      "definitions": [
+        {
+          "text": "A genus of small rubiaceous herbs, having tetramerous salveform blue or white flower. There are about twenty species, natives of North America. Also, a plant of this genus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houtou": {
+      "word": "HOUTOU",
+      "definitions": [
+        {
+          "text": "A beautiful South American motmot. Waterton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houve": {
+      "word": "HOUVE",
+      "definitions": [
+        {
+          "text": "A head covering of various kinds; a hood; a coif; a cap. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "houyhnhnm": {
+      "word": "HOUYHNHNM",
+      "definitions": [
+        {
+          "text": "One of the race of horses described by Swift in his imaginary travels of Lemuel Gulliver. The Houyhnhnms were endowed with reason and noble qualities; subject to them were Yahoos, a race of brutes having the form and all the worst vices of men.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

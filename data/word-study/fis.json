@@ -1,0 +1,1811 @@
+{
+  "version": "v1",
+  "entries": {
+    "fisc": {
+      "word": "FISC",
+      "definitions": [
+        {
+          "text": "A public or state treasury. Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fiscal": {
+      "word": "FISCAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the public treasury or revenue. The fiscal arreangements of government. A. Hamilton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The income of a prince or a state; revenue; exchequer. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A treasurer. H. Swinburne.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A public officer in Scotland who prosecutes in petty criminal cases; -- called also procurator fiscal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The solicitor in Spain and Portugal; the attorney-general.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fisetic": {
+      "word": "FISETIC",
+      "definitions": [
+        {
+          "text": "Pertaining to fustet or fisetin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fisetin": {
+      "word": "FISETIN",
+      "definitions": [
+        {
+          "text": "A yellow crystalline substance extracted from fustet, and regarded as its essential coloring principle; -- called also fisetic acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fish": {
+      "word": "FISH",
+      "definitions": [
+        {
+          "text": "A counter, used in various games.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A name loosely applied in popular usage to many animals of diverse characteristics, living in the water.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An oviparous, vertebrate animal usually having fins and a covering scales or plates. It breathes by means of gills, and lives almost entirely in the water. See Pisces. Dipnoi, and Elasmobranchii or Selachians (sharks and skates). Formerly the leptocardia and Marsipobranciata were also included, but these are now generally regarded as two distinct classes, below the fishes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The twelfth sign of the zodiac; Pisces.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The flesh of fish, used as food.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.) (a) A purchase used to fish the anchor. (b) A piece of timber, somewhat in the form of a fish, used to strengthen a mast or yard.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To attempt to catch fish; to be employed in taking fish, by any means, as by angling or drawing a net.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To seek to obtain by artifice, or indirectly to seek to draw forth; as, to fish for compliments. Any other fishing question. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To catch; to draw out or up; as, to fish up an anchor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To search by raking or sweeping. Swift.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To try with a fishing rod; to catch fish in; as, to fish a stream. Thackeray.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To strengthen (a beam, mast, etc.), or unite end to end (two timbers, railroad rails, etc.) by bolting a plank, timber, or plate",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "C",
+        "C-note",
+        "Chinook salmon",
+        "G",
+        "G-note",
+        "Loch Ness monster",
+        "Sunapee trout",
+        "aerial torpedo",
+        "albacore",
+        "alevin",
+        "alewife",
+        "alligator gar",
+        "amber jack",
+        "anchovy",
+        "angel fish",
+        "angle",
+        "anguille",
+        "archerfish",
+        "argusfish",
+        "babe",
+        "bait the hook",
+        "bangalore torpedo",
+        "barbel",
+        "barn door skate",
+        "barracuda",
+        "basking shark",
+        "bass",
+        "benthon",
+        "benthos",
+        "bill",
+        "black bass",
+        "black sea bass",
+        "blackfish",
+        "bleak",
+        "blind fish",
+        "blue fish",
+        "blue shark",
+        "bluegill",
+        "bob",
+        "bone",
+        "bonito",
+        "boob",
+        "bowfin",
+        "bream",
+        "brook trout",
+        "brown trout",
+        "buck",
+        "buffalo fish",
+        "bullhead",
+        "burbot",
+        "butt",
+        "butterfish",
+        "candlefish",
+        "capelin",
+        "carp",
+        "cartwheel",
+        "catfish",
+        "caviar",
+        "cent",
+        "century",
+        "cetacean",
+        "channel bass",
+        "char",
+        "chimaera",
+        "chub",
+        "chump",
+        "cichlid",
+        "cinch",
+        "cisco",
+        "clam",
+        "cobia",
+        "cod",
+        "codfish",
+        "coelacanth",
+        "conger",
+        "conger eel",
+        "copper",
+        "crappie",
+        "credulous person",
+        "croaker",
+        "cull",
+        "cutlass fish",
+        "cutthroat trout",
+        "dace",
+        "dap",
+        "darter",
+        "devilfish",
+        "dib",
+        "dibble",
+        "dime",
+        "doctor fish",
+        "dogfish",
+        "dollar",
+        "dollar bill",
+        "dolphin",
+        "dorado",
+        "dragon fish",
+        "drive",
+        "drum",
+        "drumfish",
+        "dupe",
+        "easy mark",
+        "easy pickings",
+        "eel",
+        "eelpout",
+        "electric ray",
+        "fall guy",
+        "fifty cents",
+        "filefish",
+        "fin",
+        "fingerling",
+        "fish",
+        "fish eggs",
+        "five cents",
+        "five hundred dollars",
+        "five-dollar bill",
+        "five-hundred-dollar bill",
+        "five-spot",
+        "fiver",
+        "flame tetra",
+        "flounder",
+        "fluke",
+        "fly-fish",
+        "fool",
+        "four bits",
+        "frogskin",
+        "fry",
+        "game fish",
+        "gar",
+        "gig",
+        "globefish",
+        "go fishing",
+        "goatfish",
+        "gobe-mouches",
+        "goby",
+        "goldfish",
+        "grand",
+        "greener",
+        "greenhorn",
+        "greeny",
+        "grig",
+        "grilse",
+        "grouper",
+        "grunt",
+        "guddle",
+        "gudgeon",
+        "gull",
+        "gunnel",
+        "haddock",
+        "hake",
+        "half G",
+        "half a C",
+        "half dollar",
+        "half grand",
+        "halibut",
+        "herring",
+        "hippocampus",
+        "hogfish",
+        "homing torpedo",
+        "horse mackerel",
+        "hundred-dollar bill",
+        "innocent",
+        "iron man",
+        "jack",
+        "jacklight",
+        "jewfish",
+        "jig",
+        "kingfish",
+        "kipper",
+        "kippered salmon",
+        "lake trout",
+        "lamprey",
+        "lantern fish",
+        "leadpipe cinch",
+        "ling",
+        "loach",
+        "lung fish",
+        "mackerel",
+        "mako shark",
+        "man-eater",
+        "man-eating shark",
+        "manta",
+        "marine animal",
+        "marlin",
+        "menhaden",
+        "mill",
+        "minnow",
+        "minny",
+        "monkey",
+        "moray eel",
+        "mudfish",
+        "muskellunge",
+        "nekton",
+        "net",
+        "nickel",
+        "oquassa",
+        "paddlefish",
+        "panfish",
+        "papagallo",
+        "patsy",
+        "penny",
+        "perch",
+        "permit",
+        "pickerel",
+        "pigeon",
+        "pike",
+        "pike perch",
+        "pilchard",
+        "pilot fish",
+        "piranha",
+        "plaice",
+        "plankton",
+        "plaything",
+        "poisson",
+        "pollack",
+        "pompano",
+        "porbeagle",
+        "porgy",
+        "porpoise",
+        "prize sap",
+        "puffer",
+        "pushover",
+        "quarter",
+        "rainbow trout",
+        "ray",
+        "red cent",
+        "red herring",
+        "redfin",
+        "redfish",
+        "roach",
+        "rocket torpedo",
+        "roe",
+        "roosterfish",
+        "salmon",
+        "salmon trout",
+        "sap",
+        "saphead",
+        "sardine",
+        "sawbuck",
+        "sawfish",
+        "schlemiel",
+        "scup",
+        "sea bass",
+        "sea horse",
+        "sea monster",
+        "sea pig",
+        "sea serpent",
+        "sea snake",
+        "seafood",
+        "seine",
+        "sergeant fish",
+        "shark",
+        "shiner",
+        "shrimp",
+        "silver dollar",
+        "sitting duck",
+        "skate",
+        "skin",
+        "smacker",
+        "smelt",
+        "smoked herring",
+        "smolt",
+        "snapper",
+        "snook",
+        "sole",
+        "spar torpedo",
+        "speckled trout",
+        "spin",
+        "sponge",
+        "sprat",
+        "steelhead",
+        "stickleback",
+        "still-fish",
+        "stooge",
+        "striped bass",
+        "sturgeon",
+        "submarine torpedo",
+        "sucker",
+        "sunfish",
+        "swordfish",
+        "tarpon",
+        "ten cents",
+        "ten-spot",
+        "tenner",
+        "thornback ray",
+        "thousand dollars",
+        "thousand-dollar bill",
+        "thresher",
+        "toadfish",
+        "tope",
+        "torch",
+        "torpedo fish",
+        "toy",
+        "trawl",
+        "triggerfish",
+        "troll",
+        "tropical fish",
+        "trout",
+        "trusting soul",
+        "tuna",
+        "tunny",
+        "turbot",
+        "twenty-dollar bill",
+        "twenty-five cents",
+        "two bits",
+        "two-dollar bill",
+        "two-spot",
+        "veiltail",
+        "victim",
+        "wahoo",
+        "walleye",
+        "walleyed pike",
+        "weakfish",
+        "whale",
+        "whitefish",
+        "whiting",
+        "yard",
+        "yellowtail"
+      ]
+    },
+    "fishbellied": {
+      "word": "FISH-BELLIED",
+      "definitions": [
+        {
+          "text": "Bellying or swelling out on the under side; as, a fish-bellied rail. Knight.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishblock": {
+      "word": "FISH-BLOCK",
+      "definitions": [
+        {
+          "text": "See Fish-tackle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fisher": {
+      "word": "FISHER",
+      "definitions": [
+        {
+          "text": "One who fishes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A carnivorous animal of the Weasel family (Mustela Canadensis); the pekan; the \"black cat.\"",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fisherman": {
+      "word": "FISHERMAN",
+      "definitions": [
+        {
+          "text": "One whose occupation is to catch fish.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ship or vessel employed in the business of taking fish, as in the cod fishery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "AB",
+        "Ancient Mariner",
+        "Argonaut",
+        "Dylan",
+        "Flying Dutchman",
+        "Neptune",
+        "OD",
+        "Poseidon",
+        "Varuna",
+        "able seaman",
+        "able-bodied seaman",
+        "angler",
+        "bluejacket",
+        "buccaneer",
+        "deep-sea man",
+        "dibber",
+        "dibbler",
+        "drift netter",
+        "drifter",
+        "fair-weather sailor",
+        "fisher",
+        "guddler",
+        "hearty",
+        "jack",
+        "jack afloat",
+        "jack-tar",
+        "jacker",
+        "jacky",
+        "jigger",
+        "limey",
+        "lobsterman",
+        "mariner",
+        "matelot",
+        "navigator",
+        "pirate",
+        "piscator",
+        "piscatorialist",
+        "piscatorian",
+        "privateer",
+        "sailor",
+        "salt",
+        "sea dog",
+        "sea rover",
+        "seafarer",
+        "seafaring man",
+        "seaman",
+        "shipman",
+        "tar",
+        "the compleat angler",
+        "trawler",
+        "troller",
+        "viking",
+        "water dog",
+        "whaler",
+        "windjammer",
+        "windsailor"
+      ]
+    },
+    "fishery": {
+      "word": "FISHERY",
+      "definitions": [
+        {
+          "text": "The business or practice of catching fish; fishing. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A place for catching fish.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The right to take fish at a certain place, or in particular waters. Abbott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishful": {
+      "word": "FISHFUL",
+      "definitions": [
+        {
+          "text": "Abounding with fish. [R.] \"My fishful pond.\" R. Carew.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishgig": {
+      "word": "FISHGIG",
+      "definitions": [
+        {
+          "text": "A spear with barbed prongs used for harpooning fish. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishhawk": {
+      "word": "FISHHAWK",
+      "definitions": [
+        {
+          "text": "The osprey (Pandion haliaëtus), found both in Europe and America; -- so called because it plunges into the water and seizes fishes in its talons. Called also fishing eagle, and bald buzzard.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishhook": {
+      "word": "FISHHOOK",
+      "definitions": [
+        {
+          "text": "A hook for catching fish.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hook with a pendant, to the end of which the fish-tackle is hooked. Dana.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bait",
+        "birdlime",
+        "bola",
+        "cobweb",
+        "dragnet",
+        "fly",
+        "gill net",
+        "ground bait",
+        "hook",
+        "jig",
+        "lariat",
+        "lasso",
+        "lime",
+        "lure",
+        "meshes",
+        "net",
+        "noose",
+        "plug",
+        "pound net",
+        "purse seine",
+        "seine",
+        "snare",
+        "sniggle",
+        "spinner",
+        "springe",
+        "squid",
+        "toils",
+        "trawl",
+        "wobbler"
+      ]
+    },
+    "fishify": {
+      "word": "FISHIFY",
+      "definitions": [
+        {
+          "text": "To change to fish. [R.] Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishiness": {
+      "word": "FISHINESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being fishy or fishlike. Pennant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishing": {
+      "word": "FISHING",
+      "definitions": [
+        {
+          "text": "The act, practice, or art of one who fishes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fishery. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to fishing; used in fishery; engaged in fishing; as, fishing boat; fishing tackle; fishing village. Fishing fly, an artificial fly for fishing. the bag net, casting net, drag net, landing net, seine, shrimping net, trawl, etc. for angling. etc. object in a fluid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "angling",
+        "casting",
+        "cynegetic",
+        "delving",
+        "digging",
+        "fishery",
+        "fly fishing",
+        "following",
+        "guddling",
+        "halieutic",
+        "harpooning",
+        "hunting",
+        "in full cry",
+        "in hot pursuit",
+        "in pursuit",
+        "in search of",
+        "jigging",
+        "loaded for bear",
+        "looking for",
+        "nosy",
+        "out for",
+        "out for bear",
+        "piscation",
+        "piscatorial",
+        "piscatory",
+        "poking",
+        "probing",
+        "prying",
+        "pursuant",
+        "pursuing",
+        "questing",
+        "rod and reel",
+        "searching",
+        "seeking",
+        "still-fishing",
+        "trawling",
+        "trolling",
+        "whaling"
+      ]
+    },
+    "fishlike": {
+      "word": "FISHLIKE",
+      "definitions": [
+        {
+          "text": "Like fish; suggestive of fish; having some of the qualities of fish. A very ancient and fishlike smell. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishmonger": {
+      "word": "FISHMONGER",
+      "definitions": [
+        {
+          "text": "A dealer in fish.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "baker",
+        "bookdealer",
+        "bookseller",
+        "butcher",
+        "chandler",
+        "clothing merchant",
+        "confectioner",
+        "draper",
+        "drysalter",
+        "fishwife",
+        "florist",
+        "footwear merchant",
+        "fruiterer",
+        "furnisher",
+        "furrier",
+        "greengrocer",
+        "grocer",
+        "groceryman",
+        "haberdasher",
+        "hardwareman",
+        "ironmonger",
+        "jeweler",
+        "liquor merchant",
+        "newsdealer",
+        "perfumer",
+        "poulterer",
+        "saddler",
+        "stationer",
+        "tobacconist",
+        "vintner",
+        "wine merchant"
+      ]
+    },
+    "fishskin": {
+      "word": "FISHSKIN",
+      "definitions": [
+        {
+          "text": "The skin of a fish (dog fish, shark, etc.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Ichthyosis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishtackle": {
+      "word": "FISH-TACKLE",
+      "definitions": [
+        {
+          "text": "A tackle or purchase used to raise the flukes of the anchor up to the gunwale. The block used is called the fish-block.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishtail": {
+      "word": "FISH-TAIL",
+      "definitions": [
+        {
+          "text": "Like the of a fish; acting, or producing something, like the tail of a fish. Fish-tail burner, a gas burner that gives a spreading flame shaped somewhat like the tail of a fish. that oscillates like the tail of a fish when swimming.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishwife": {
+      "word": "FISHWIFE",
+      "definitions": [
+        {
+          "text": "A fishwoman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Xanthippe",
+        "amazon",
+        "baker",
+        "battle-ax",
+        "beldam",
+        "bitch",
+        "bookdealer",
+        "bookseller",
+        "butcher",
+        "cat",
+        "chandler",
+        "clothing merchant",
+        "common scold",
+        "confectioner",
+        "draper",
+        "drysalter",
+        "fishmonger",
+        "florist",
+        "footwear merchant",
+        "fruiterer",
+        "furnisher",
+        "furrier",
+        "fury",
+        "greengrocer",
+        "grocer",
+        "groceryman",
+        "haberdasher",
+        "hardwareman",
+        "harpy",
+        "ironmonger",
+        "jeweler",
+        "liquor merchant",
+        "newsdealer",
+        "ogress",
+        "perfumer",
+        "poulterer",
+        "saddler",
+        "scold",
+        "she-devil",
+        "she-wolf",
+        "shrew",
+        "spitfire",
+        "stationer",
+        "termagant",
+        "tigress",
+        "tobacconist",
+        "vintner",
+        "virago",
+        "vixen",
+        "wine merchant",
+        "witch"
+      ]
+    },
+    "fishwoman": {
+      "word": "FISHWOMAN",
+      "definitions": [
+        {
+          "text": "A woman who retails fish.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fishy": {
+      "word": "FISHY",
+      "definitions": [
+        {
+          "text": "Consisting of fish; fishlike; having the qualities or taste of fish; abounding in fish. Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Extravagant, like some stories about catching fish; improbable; also, rank or foul. [Colloq.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ambiguous",
+        "amoral",
+        "beguiling",
+        "blank",
+        "catchy",
+        "conscienceless",
+        "corrupt",
+        "corrupted",
+        "criminal",
+        "crooked",
+        "dark",
+        "deadpan",
+        "deceiving",
+        "deceptive",
+        "delusive",
+        "delusory",
+        "devious",
+        "dishonest",
+        "dishonorable",
+        "doubtable",
+        "doubtful",
+        "dubious",
+        "dubitable",
+        "eellike",
+        "empty",
+        "equivocal",
+        "evasive",
+        "expressionless",
+        "fallacious",
+        "false",
+        "felonious",
+        "fraudulent",
+        "funny",
+        "glassy",
+        "hallucinatory",
+        "ill-got",
+        "ill-gotten",
+        "illusive",
+        "illusory",
+        "immoral",
+        "impassive",
+        "implausible",
+        "improbable",
+        "indirect",
+        "inexpressive",
+        "insidious",
+        "misleading",
+        "not kosher",
+        "odd",
+        "peculiar",
+        "piscatorial",
+        "piscatory",
+        "pisciform",
+        "piscine",
+        "poker-faced",
+        "problematic",
+        "queer",
+        "questionable",
+        "rotten",
+        "selachian",
+        "shady",
+        "shameless",
+        "sharkish",
+        "shifty",
+        "sinister",
+        "slippery",
+        "strange",
+        "suspect",
+        "suspicious",
+        "trickish",
+        "tricksy",
+        "tricky",
+        "uncertain",
+        "unconscienced",
+        "unconscientious",
+        "unconscionable",
+        "underhand",
+        "underhanded",
+        "unethical",
+        "unexpressive",
+        "unlikely",
+        "unprincipled",
+        "unsavory",
+        "unscrupulous",
+        "unstraightforward",
+        "vacant",
+        "without remorse",
+        "without shame",
+        "wooden"
+      ]
+    },
+    "fisk": {
+      "word": "FISK",
+      "definitions": [
+        {
+          "text": "To run about; to frisk; to whisk. [Obs.] He fisks abroad, and stirreth up erroneous opinions. Latimer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissigemmation": {
+      "word": "FISSIGEMMATION",
+      "definitions": [
+        {
+          "text": "A process of reproduction intermediate between fission and gemmation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissile": {
+      "word": "FISSILE",
+      "definitions": [
+        {
+          "text": "Capable of being split, cleft, or divided in the direction of the grain, like wood, or along natural planes of cleavage, like crystals. This crystal is a pellucid, fissile stone. Sir I. Newton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "alienable",
+        "breakable",
+        "brittle",
+        "brittle as glass",
+        "crackable",
+        "crisp",
+        "crispy",
+        "crumbly",
+        "crushable",
+        "delicate",
+        "dissoluble",
+        "dissolvable",
+        "divisible",
+        "fissionable",
+        "flimsy",
+        "fracturable",
+        "fragile",
+        "frail",
+        "frangible",
+        "friable",
+        "lacerable",
+        "scissile",
+        "separable",
+        "severable",
+        "shatterable",
+        "shattery",
+        "shivery",
+        "splintery",
+        "vulnerable"
+      ]
+    },
+    "fissilingual": {
+      "word": "FISSILINGUAL",
+      "definitions": [
+        {
+          "text": "Having the tongue forked.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissilinguia": {
+      "word": "FISSILINGUIA",
+      "definitions": [
+        {
+          "text": "A group of Lacertilia having the tongue forked, including the common lizards. [Written also Fissilingues.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissility": {
+      "word": "FISSILITY",
+      "definitions": [
+        {
+          "text": "Quality of being fissile.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fission": {
+      "word": "FISSION",
+      "definitions": [
+        {
+          "text": "A cleaving, splitting, or breaking up into parts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A method of asexual reproduction among the lowest (unicellular) organisms by means of a process of self-division, consisting of gradual division or cleavage of the into two parts, each of which then becomes a separate and independent organisms; as when a cell in an animal or plant, or its germ, undergoes a spontaneous division, and the parts again subdivide. See Segmentation, and Cell division, under Division.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A process by which certain coral polyps, echinoderms, annelids, etc., spontaneously subdivide, each individual thus forming two or more new ones. See Strobilation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ablate",
+        "abscission",
+        "accelerate",
+        "activate",
+        "alpha decay",
+        "amputation",
+        "atom-chipping",
+        "atom-smashing",
+        "atomic disintegration",
+        "atomic reaction",
+        "atomization",
+        "atomize",
+        "beta decay",
+        "bifurcate",
+        "bisect",
+        "bombard",
+        "bombardment",
+        "branch",
+        "break into pieces",
+        "break to pieces",
+        "break up",
+        "breeding",
+        "bullet",
+        "butchering",
+        "by two",
+        "catalysis",
+        "catalyst",
+        "chain reaction",
+        "chopping",
+        "cleavage",
+        "cleave",
+        "come apart",
+        "consume",
+        "corrode",
+        "crack up",
+        "crash",
+        "cross-bombard",
+        "crumble",
+        "crumble into dust",
+        "crunch",
+        "crush",
+        "cut in two",
+        "cut to pieces",
+        "cutting",
+        "decay",
+        "decompose",
+        "demolish",
+        "dialysis",
+        "dichotomize",
+        "dichotomy",
+        "diffuse",
+        "dimidiate",
+        "disintegrate",
+        "disintegration series",
+        "disjoin",
+        "disorganize",
+        "disperse",
+        "disrupt",
+        "dissociation",
+        "dissolve",
+        "divide",
+        "enucleation",
+        "erode",
+        "exchange reaction",
+        "excision",
+        "fall to pieces",
+        "fission reaction",
+        "fork",
+        "fragment",
+        "gamma decay",
+        "grind",
+        "halve",
+        "hydrolysis",
+        "hydrolyst",
+        "in half",
+        "ionization",
+        "laceration",
+        "make mincemeat of",
+        "mince",
+        "molder",
+        "mutilation",
+        "neutron reaction",
+        "nonreversible reaction",
+        "nuclear fission",
+        "nucleization",
+        "nucleize",
+        "photodisintegration",
+        "photolysis",
+        "proton gun",
+        "proton reaction",
+        "pulverize",
+        "ramify",
+        "rending",
+        "resection",
+        "reversible reaction",
+        "ripping",
+        "scatter",
+        "scission",
+        "section",
+        "severance",
+        "shatter",
+        "shiver",
+        "slashing",
+        "slicing",
+        "smash",
+        "smash the atom",
+        "smash up",
+        "splinter",
+        "split",
+        "split in two",
+        "splitting",
+        "splitting the atom",
+        "squash",
+        "squish",
+        "stimulation",
+        "subdivide",
+        "surgery",
+        "target",
+        "tearing",
+        "thermolysis",
+        "thermonuclear reaction",
+        "transect",
+        "waste away",
+        "wear away"
+      ]
+    },
+    "fissipalmate": {
+      "word": "FISSIPALMATE",
+      "definitions": [
+        {
+          "text": "Semipalmate and loboped, as a grebe's foot. See Illust. under Aves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissipara": {
+      "word": "FISSIPARA",
+      "definitions": [
+        {
+          "text": "Animals which reproduce by fission.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissiparism": {
+      "word": "FISSIPARISM",
+      "definitions": [
+        {
+          "text": "Reproduction by spontaneous fission.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissiparity": {
+      "word": "FISSIPARITY",
+      "definitions": [
+        {
+          "text": "Quality of being fissiparous; fissiparism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissipation": {
+      "word": "FISSIPATION",
+      "definitions": [
+        {
+          "text": "Reproduction by fission; fissiparism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissiped": {
+      "word": "FISSIPED",
+      "definitions": [
+        {
+          "text": "One of the Fissipedia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissipedfissipedal": {
+      "word": "FISSIPED; FISSIPEDAL",
+      "definitions": [
+        {
+          "text": "Having the toes separated to the base. [See Aves.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissipedia": {
+      "word": "FISSIPEDIA",
+      "definitions": [
+        {
+          "text": "A division of the Carnivora, including the dogs, cats, and bears, in which the feet are not webbed; -- opposed to Pinnipedia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissirostral": {
+      "word": "FISSIROSTRAL",
+      "definitions": [
+        {
+          "text": "Having the bill cleft beyond the horny part, as in the case of swallows and goatsuckers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissirostres": {
+      "word": "FISSIROSTRES",
+      "definitions": [
+        {
+          "text": "A group of birds having the bill deeply cleft.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissural": {
+      "word": "FISSURAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a fissure or fissures; as, the fissural pattern of a brain.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissuration": {
+      "word": "FISSURATION",
+      "definitions": [
+        {
+          "text": "The act of dividing or opening; the state of being fissured.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fissure": {
+      "word": "FISSURE",
+      "definitions": [
+        {
+          "text": "A narrow opening, made by the parting of any substance; a cleft; as, the fissure of a rock. Cerebral fissures (Anat.), the furrows or clefts by which the surface of the cerebrum is divided; esp., the furrows first formed by the infolding of the whole wall of the cerebrum. gaping lips of wounds. Knight. from the parietal lobe in the cerebrum. the frontal from the temporal lobe. See Illust. under Brain. mineral matter. Raymond.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cleave; to divide; to crack or fracture.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abysm",
+        "abyss",
+        "amputate",
+        "arachnoid",
+        "arbor vitae",
+        "archipallium",
+        "arroyo",
+        "ax",
+        "between brain",
+        "bisect",
+        "box canyon",
+        "brain stem",
+        "breach",
+        "break",
+        "break open",
+        "break up",
+        "breakage",
+        "broach",
+        "burst",
+        "bust",
+        "butcher",
+        "caesura",
+        "canyon",
+        "carve",
+        "cavity",
+        "cerebellar hemispheres",
+        "cerebellum",
+        "cerebral cortex",
+        "cerebrospinal fluid",
+        "cerebrum",
+        "cessation",
+        "chap",
+        "chasm",
+        "check",
+        "chimney",
+        "chink",
+        "chip",
+        "chop",
+        "cleave",
+        "cleft",
+        "cleuch",
+        "clough",
+        "col",
+        "come apart",
+        "come unstuck",
+        "convolution",
+        "corpus callosum",
+        "corpus striatum",
+        "coulee",
+        "couloir",
+        "crack",
+        "cranny",
+        "crevasse",
+        "crevice",
+        "cut",
+        "cut away",
+        "cut in two",
+        "cut off",
+        "cut open",
+        "cwm",
+        "defile",
+        "dell",
+        "dichotomize",
+        "diencephalon",
+        "dike",
+        "disintegrate",
+        "dispart",
+        "dissever",
+        "ditch",
+        "divaricate",
+        "divide",
+        "donga",
+        "draw",
+        "dura mater",
+        "endbrain",
+        "excavation",
+        "excise",
+        "exfoliate",
+        "fall to pieces",
+        "fault",
+        "flaw",
+        "flume",
+        "fly open",
+        "folia",
+        "forebrain",
+        "fornix",
+        "fracture",
+        "frontal lobe",
+        "furrow",
+        "gap",
+        "gape",
+        "gash",
+        "give away",
+        "give way",
+        "glial cells",
+        "globus pallidus",
+        "gorge",
+        "gray matter",
+        "groove",
+        "gulch",
+        "gulf",
+        "gully",
+        "gyrus",
+        "hack",
+        "halve",
+        "hew",
+        "hiatus",
+        "hindbrain",
+        "hippocampus",
+        "hole",
+        "hypothalamus",
+        "incise",
+        "incision",
+        "interim",
+        "intermission",
+        "interruption",
+        "interval",
+        "jigsaw",
+        "joint",
+        "kloof",
+        "lacuna",
+        "lance",
+        "lay open",
+        "leak",
+        "lenticular nucleus",
+        "letup",
+        "limbic lobe",
+        "little brain",
+        "lobe",
+        "lull",
+        "mantle",
+        "medulla oblongata",
+        "meninges",
+        "mesencephalon",
+        "metencephalon",
+        "midbrain",
+        "moat",
+        "myelencephalon",
+        "neopallium",
+        "notch",
+        "nullah",
+        "occipital lobe",
+        "ope",
+        "open",
+        "open up",
+        "opening",
+        "optic chiasm",
+        "pallium",
+        "pare",
+        "parietal lobe",
+        "part",
+        "pass",
+        "passage",
+        "pause",
+        "pia mater",
+        "pineal body",
+        "pituitary body",
+        "pons",
+        "prune",
+        "ravine",
+        "rend",
+        "rent",
+        "reticular system",
+        "rhombencephalon",
+        "rift",
+        "rime",
+        "rip",
+        "rive",
+        "rupture",
+        "saw",
+        "scale",
+        "schism",
+        "scissor",
+        "scissure",
+        "seam",
+        "separate",
+        "sever",
+        "slash",
+        "slice",
+        "slit",
+        "slot",
+        "snap",
+        "snip",
+        "splinter",
+        "split",
+        "spread",
+        "spread out",
+        "spring a leak",
+        "spring open",
+        "start",
+        "subthalamus",
+        "sunder",
+        "suspension",
+        "swing open",
+        "tap",
+        "tear",
+        "tear open",
+        "telencephalon",
+        "temporal lobe",
+        "thalamus",
+        "throw open",
+        "trench",
+        "valley",
+        "ventricle",
+        "vermis",
+        "void",
+        "wadi",
+        "white matter",
+        "whittle"
+      ]
+    },
+    "fissurella": {
+      "word": "FISSURELLA",
+      "definitions": [
+        {
+          "text": "A genus of marine gastropod mollusks, having a conical or limpetlike shell, with an opening at the apex; -- called also keyhole limpet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fist": {
+      "word": "FIST",
+      "definitions": [
+        {
+          "text": "The hand with the fingers doubled into the palm; the closed hand, especially as clinched tightly for the purpose of striking a blow. Who grasp the earth and heaven with my fist. Herbert.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The talons of a bird of prey. [Obs.] More light than culver in the falcon's fist. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "the index mark [], used to direct special attention to the passage which follows. Hand over fist (Naut.), rapidly; hand over hand.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To strike with the fist. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To gripe with the fist. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "arrow",
+        "autography",
+        "blaze",
+        "calligraphy",
+        "chirography",
+        "compass needle",
+        "direction",
+        "direction post",
+        "finger post",
+        "graphanalysis",
+        "graphology",
+        "graphometry",
+        "guide",
+        "guideboard",
+        "guidepost",
+        "hand",
+        "handwriting",
+        "hour hand",
+        "index",
+        "index finger",
+        "lead",
+        "lubber line",
+        "manuscript",
+        "milepost",
+        "minute hand",
+        "needle",
+        "paleography",
+        "pencraft",
+        "penmanship",
+        "penscript",
+        "pointer",
+        "script",
+        "scription",
+        "scrive",
+        "signboard",
+        "signpost",
+        "stylography"
+      ]
+    },
+    "fistic": {
+      "word": "FISTIC",
+      "definitions": [
+        {
+          "text": "Pertaining to boxing, or to encounters with the fists; puglistic; as, fistic exploits; fistic heroes. [Colloq.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fisticuff": {
+      "word": "FISTICUFF",
+      "definitions": [
+        {
+          "text": "A cuff or blow with the fist or hand; (pl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "a fight with the fists; boxing. Swift.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistinut": {
+      "word": "FISTINUT",
+      "definitions": [
+        {
+          "text": "A pistachio nut. [Obs.] Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistuca": {
+      "word": "FISTUCA",
+      "definitions": [
+        {
+          "text": "An instrument used by the ancients in driving piles.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistula": {
+      "word": "FISTULA",
+      "definitions": [
+        {
+          "text": "A reed; a pipe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pipe for convejing water. [Obs.] Knight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A permanent abnormal opening into the soft parts with a constant discharge; a deep, narrow, chronic abscess; an abnormal opening between an internal cavity and another cavity or the surface; as, a salivary fistula; an anal fistula; a recto-vaginal fistula. Incomplete fistula (Med.), a fistula open at one end only.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistular": {
+      "word": "FISTULAR",
+      "definitions": [
+        {
+          "text": "Hollow and cylindrical, like a pipe or reed. Johnson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistularia": {
+      "word": "FISTULARIA",
+      "definitions": [
+        {
+          "text": "A genus of fishes, having the head prolonged into a tube, with the mouth at the extremity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistularioid": {
+      "word": "FISTULARIOID",
+      "definitions": [
+        {
+          "text": "Like or pertaining to the genus Fistularia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistulate": {
+      "word": "FISTULATE",
+      "definitions": [
+        {
+          "text": "To make hollow or become hollow like a fistula, or pipe. [Obs.] \"A fistulated ulcer.\" Fuller.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistule": {
+      "word": "FISTULE",
+      "definitions": [
+        {
+          "text": "A fistula.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistuliform": {
+      "word": "FISTULIFORM",
+      "definitions": [
+        {
+          "text": "Of a fistular form; tubular; pipe-shaped. Stalactite often occurs fistuliform. W. Philips.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistulose": {
+      "word": "FISTULOSE",
+      "definitions": [
+        {
+          "text": "Formed like a fistula; hollow; reedlike. Craig.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fistulous": {
+      "word": "FISTULOUS",
+      "definitions": [
+        {
+          "text": "Having the form or nature of a fistula; as, a fistulous ulcer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Hollow, like a pipe or reed; fistulose. Lindley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

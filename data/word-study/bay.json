@@ -1,0 +1,796 @@
+{
+  "version": "v1",
+  "entries": {
+    "bay": {
+      "word": "BAY",
+      "definitions": [
+        {
+          "text": "Reddish brown; of the color of a chestnut; -- applied to the color of horses. Bay cat (Zoöl.), a wild cat of Africa and the East Indies (Felis aurata). rufa).",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An inlet of the sea, usually smaller than a gulf, but of the same general character. to large tracts of water, around which the land forms a curve; as, Hudson's Bay. The name is not restricted to tracts of water with a narrow entrance, but is used foe any recess or inlet between capes or headlands; as, the Bay of Biscay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small body of water set off from the main body; as a compartment containing water for a wheel; the portion of a canal just outside of the gates of a lock, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A recess or indentation shaped like a bay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A principal compartment of the walls, roof, or other part of a building, or of the whole building, as marked off by the buttresses, vaulting, mullions of a window, etc.; one of the main divisions of any structure, as the part of a bridge between two piers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A compartment in a barn, for depositing hay, or grain in the stalks.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of mahogany obtained from Campeachy Bay. Sick bay, in vessels of war, that part of a deck appropriated to the use of the sick. Totten.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A berry, particularly of the laurel. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The laurel tree (Laurus nobilis). Hence, in the plural, an honorary garland or crown bestowed as a prize for victory or excellence, anciently made or consisting of branches of the laurel. The patriot's honors and the poet's bays. Trumbull.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tract covered with bay trees. [Local, U. S.] Bay leaf, the leaf of the bay tree (Laurus nobilis). It has a fragrant odor and an aromatic taste.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To bark, as a dog with a deep voice does, at his game. The hounds at nearer distance hoarsely bayed. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bark at; hence, to follow with barking; to bring or drive to bay; as, to bay the bear. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Deep-toned, prolonged barking. \"The bay of curs.\" Cowper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [OE. bay, abay, OF. abai, F. aboi barking, pl. abois, prop. the extremity to which the stag is reduced when surrounded by the dogs, barking (aboyant); aux abois at bay.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A state of being obliged to face an antagonist or a difficulty, when escape has become impossible. Embolden'd by despair, he stood at bay. Dryden. The most terrible evils are just kept at bay by incessant efforts. I. Taylor",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To bathe. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A bank or dam to keep back water.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To dam, as water; -- with up or back.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Old Mug",
+        "Titian",
+        "accolade",
+        "adust",
+        "alcove",
+        "archives",
+        "arm",
+        "armlet",
+        "armory",
+        "arsenal",
+        "attic",
+        "auburn",
+        "award",
+        "badge",
+        "bank",
+        "bark",
+        "basement",
+        "bawl",
+        "bay window",
+        "bay-colored",
+        "bayard",
+        "bayou",
+        "bays",
+        "beep",
+        "bell",
+        "bellow",
+        "belt",
+        "bight",
+        "bin",
+        "blare",
+        "blast",
+        "blat",
+        "blate",
+        "bleat",
+        "blow",
+        "blow the horn",
+        "boca",
+        "bonded warehouse",
+        "bookcase",
+        "bow window",
+        "box",
+        "bray",
+        "brazen",
+        "bronze",
+        "bronze-colored",
+        "bronzed",
+        "brownish-red",
+        "buckskin",
+        "bugle",
+        "bunker",
+        "buttery",
+        "calico pony",
+        "call",
+        "cargo dock",
+        "carrel",
+        "casement",
+        "casement window",
+        "castaneous",
+        "caterwaul",
+        "cellar",
+        "chaplet",
+        "chest",
+        "chestnut",
+        "chestnut-brown",
+        "civic crown",
+        "clarion",
+        "closet",
+        "conservatory",
+        "copper",
+        "copper-colored",
+        "coppery",
+        "corner",
+        "cove",
+        "cranny",
+        "crate",
+        "creek",
+        "crib",
+        "crown",
+        "cry",
+        "cubby",
+        "cubbyhole",
+        "cubicle",
+        "cup",
+        "cupboard",
+        "cupreous",
+        "dapple-gray",
+        "decoration",
+        "depository",
+        "depot",
+        "distinction",
+        "dock",
+        "drawer",
+        "dump",
+        "dun",
+        "estuary",
+        "euripus",
+        "exchequer",
+        "fan window",
+        "fanfare",
+        "fanlight",
+        "ferruginous",
+        "fjord",
+        "flourish of trumpets",
+        "foxy",
+        "frith",
+        "garland",
+        "give tongue",
+        "give voice",
+        "glory hole",
+        "godown",
+        "gray",
+        "grille",
+        "grizzle",
+        "gulf",
+        "gut",
+        "harbor",
+        "henna",
+        "hold",
+        "honk",
+        "howl",
+        "hutch",
+        "inglenook",
+        "inlet",
+        "kudos",
+        "kyle",
+        "lancet window",
+        "lantern",
+        "lattice",
+        "laurel",
+        "laurels",
+        "library",
+        "light",
+        "liver-brown",
+        "liver-colored",
+        "livid-brown",
+        "loch",
+        "locker",
+        "louver window",
+        "loving cup",
+        "low",
+        "lumber room",
+        "lumberyard",
+        "magasin",
+        "magazine",
+        "mahogany",
+        "meow",
+        "mew",
+        "mewl",
+        "miaow",
+        "moo",
+        "mouth",
+        "narrow",
+        "narrow seas",
+        "narrows",
+        "natural harbor",
+        "neigh",
+        "niche",
+        "nicker",
+        "nook",
+        "oriel",
+        "paint",
+        "painted pony",
+        "palm",
+        "palms",
+        "pane",
+        "peal",
+        "picture window",
+        "piebald",
+        "pinto",
+        "pipe",
+        "pitchhole",
+        "port",
+        "porthole",
+        "pot",
+        "pule",
+        "quest",
+        "rack",
+        "reach",
+        "recess",
+        "recession",
+        "reddish-brown",
+        "repertory",
+        "repository",
+        "reservoir",
+        "rick",
+        "road",
+        "roads",
+        "roadstead",
+        "roan",
+        "roar",
+        "roomlet",
+        "rose window",
+        "rubiginous",
+        "rufous",
+        "russet",
+        "russety",
+        "rust",
+        "rust-colored",
+        "rusty",
+        "screak",
+        "scream",
+        "screech",
+        "shelf",
+        "shriek",
+        "skewbald",
+        "skylight",
+        "slough",
+        "snuggery",
+        "sorrel",
+        "sound",
+        "sound a tattoo",
+        "sound taps",
+        "squall",
+        "squeak",
+        "squeal",
+        "stack",
+        "stack room",
+        "stock room",
+        "storage",
+        "store",
+        "storehouse",
+        "storeroom",
+        "strait",
+        "straits",
+        "sunburned",
+        "supply base",
+        "supply depot",
+        "tank",
+        "tantara",
+        "tantarara",
+        "taps",
+        "tarantara",
+        "tattoo",
+        "terra-cotta",
+        "toot",
+        "tootle",
+        "transom",
+        "treasure house",
+        "treasure room",
+        "treasury",
+        "troat",
+        "trophy",
+        "trumpet",
+        "trumpet blast",
+        "trumpet call",
+        "tweedle",
+        "ululate",
+        "vat",
+        "vault",
+        "wail",
+        "warehouse",
+        "whicker",
+        "whine",
+        "whinny",
+        "whistle",
+        "wicket",
+        "wind",
+        "window",
+        "window bay",
+        "window glass",
+        "windowpane",
+        "wine cellar",
+        "wreath",
+        "yap",
+        "yawl",
+        "yawp",
+        "yelp",
+        "yip",
+        "yowl"
+      ]
+    },
+    "baya": {
+      "word": "BAYA",
+      "definitions": [
+        {
+          "text": "The East Indian weaver bird (Ploceus Philippinus).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayadbayatte": {
+      "word": "BAYAD; BAYATTE",
+      "definitions": [
+        {
+          "text": "A large, edible, siluroid fish of the Nile, of two species (Bagrina bayad and B. docmac).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayadere": {
+      "word": "BAYADERE",
+      "definitions": [
+        {
+          "text": "A female dancer in the East Indies. [Written also bajadere.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayamo": {
+      "word": "BAYAMO",
+      "definitions": [
+        {
+          "text": "A violent thunder squall occurring on the south coast of Cuba, esp. near Bayamo. The gusts, called bayamo winds, are modified foehn winds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayantler": {
+      "word": "BAY-ANTLER",
+      "definitions": [
+        {
+          "text": "The second tine of a stag's horn. See under Antler.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayard": {
+      "word": "BAYARD",
+      "definitions": [
+        {
+          "text": "Etym: [OF. bayard, baiart, bay horse; bai bay + -ard. See Bay, a., and -ard.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Properly, a bay horse, but often any horse. Commonly in the phrase blind bayard, an old blind horse. Blind bayard moves the mill. Philips.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. F. bayeur, fr. bayer to gape.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stupid, clownish fellow. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Titian",
+        "adust",
+        "auburn",
+        "bay",
+        "bay-colored",
+        "brazen",
+        "bronze",
+        "bronze-colored",
+        "bronzed",
+        "brownish-red",
+        "buckskin",
+        "calico pony",
+        "castaneous",
+        "chestnut",
+        "chestnut-brown",
+        "copper",
+        "copper-colored",
+        "coppery",
+        "cupreous",
+        "dapple-gray",
+        "dun",
+        "ferruginous",
+        "foxy",
+        "gray",
+        "grizzle",
+        "henna",
+        "liver-brown",
+        "liver-colored",
+        "livid-brown",
+        "mahogany",
+        "paint",
+        "painted pony",
+        "piebald",
+        "pinto",
+        "reddish-brown",
+        "roan",
+        "rubiginous",
+        "rufous",
+        "russet",
+        "russety",
+        "rust",
+        "rust-colored",
+        "rusty",
+        "skewbald",
+        "sorrel",
+        "sunburned",
+        "terra-cotta"
+      ]
+    },
+    "bayardly": {
+      "word": "BAYARDLY",
+      "definitions": [
+        {
+          "text": "Blind; stupid. [Obs.] \"A formal and bayardly round of duties.\" Goodman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baybolt": {
+      "word": "BAYBOLT",
+      "definitions": [
+        {
+          "text": "A bolt with a barbed shank.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayed": {
+      "word": "BAYED",
+      "definitions": [
+        {
+          "text": "Having a bay or bays. \"The large bayed barn.\" Drayton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayeuxtapestry": {
+      "word": "BAYEUX TAPESTRY",
+      "definitions": [
+        {
+          "text": "A piece of linen about 1 ft. 8 in. wide by 213 ft. long, covered with embroidery representing the incidents of William the Conqueror's expedition to England, preserved in the town museum of Bayeux in Normandy. It is probably of the 11th century, and is attributed by tradition to Matilda, the Conqueror's wife.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayice": {
+      "word": "BAY ICE",
+      "definitions": [
+        {
+          "text": "See under Ice.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayleaf": {
+      "word": "BAY LEAF",
+      "definitions": [
+        {
+          "text": "See under 3d Bay.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayman": {
+      "word": "BAYMAN",
+      "definitions": [
+        {
+          "text": "In the United States navy, a sick-bay nurse; -- now officially designated as hospital apprentice.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayonet": {
+      "word": "BAYONET",
+      "definitions": [
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pointed instrument of the dagger kind fitted on the muzzle of a musket or rifle, so as to give the soldier increased means of offense and defense. to be fitted into the bore of the musket after the soldier had fired.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mach.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pin which plays in and out of holes made to receive it, and which thus serves to engage or disengage parts of the machinery. Bayonet clutch. See Clutch. bayonet is fixed on the barrel of a musket. Knight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To stab with a bayonet.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To compel or drive by the bayonet. To bayonet us into submission. Burke.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "dagger",
+        "dirk",
+        "dudgeon",
+        "impale",
+        "knife",
+        "lance",
+        "pierce",
+        "plunge in",
+        "poniard",
+        "run through",
+        "saber",
+        "spear",
+        "spike",
+        "spit",
+        "stab",
+        "stick",
+        "stiletto",
+        "sword",
+        "transfix",
+        "transpierce"
+      ]
+    },
+    "bayou": {
+      "word": "BAYOU",
+      "definitions": [
+        {
+          "text": "An inlet from the Gulf of Mexico, from a lake, or from a large river, sometimes sluggish, sometimes without perceptible movement except from tide and wind. [Southern U. S.] A dark slender thread of a bayou moves loiteringly northeastward into a swamp of huge cypresses. G. W. Cable.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "affluent",
+        "arm",
+        "armlet",
+        "bay",
+        "belt",
+        "bight",
+        "billabong",
+        "boca",
+        "branch",
+        "confluent",
+        "confluent stream",
+        "cove",
+        "creek",
+        "dendritic drainage pattern",
+        "effluent",
+        "estuary",
+        "euripus",
+        "feeder",
+        "fjord",
+        "fork",
+        "frith",
+        "gulf",
+        "gut",
+        "harbor",
+        "inlet",
+        "kyle",
+        "loch",
+        "mouth",
+        "narrow",
+        "narrow seas",
+        "narrows",
+        "natural harbor",
+        "prong",
+        "reach",
+        "road",
+        "roads",
+        "roadstead",
+        "slough",
+        "sound",
+        "strait",
+        "straits",
+        "tributary"
+      ]
+    },
+    "bayoustate": {
+      "word": "BAYOU STATE",
+      "definitions": [
+        {
+          "text": "Mississippi; -- a nickname, from its numerous bayous.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bayrum": {
+      "word": "BAY RUM",
+      "definitions": [
+        {
+          "text": "A fragrant liquid, used for cosmetic and medicinal purposes. believed, by distillation from the leaves of the bayberry (Myrcia acris). The bay rum of the Pharmacopoeia (spirit of myrcia) is prepared from oil of myrcia (bayberry), oil of orange peel, oil of pimento, alcohol, and water.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "baysalt": {
+      "word": "BAY SALT",
+      "definitions": [
+        {
+          "text": "Salt which has been obtained from sea water, by evaporation in shallow pits or basins, by the heat of the sun; the large crystalline salt of commerce. Bacon. Ure.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "baysbayze": {
+      "word": "BAYS; BAYZE",
+      "definitions": [
+        {
+          "text": "See Baize. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baystate": {
+      "word": "BAY STATE",
+      "definitions": [
+        {
+          "text": "Massachusetts, which had been called the Colony of Massachusetts Bay; -- a nickname.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "baytree": {
+      "word": "BAY TREE",
+      "definitions": [
+        {
+          "text": "A species of laurel. (Laurus nobilis).",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "baywindow": {
+      "word": "BAY WINDOW",
+      "definitions": [
+        {
+          "text": "A window forming a bay or recess in a room, and projecting outward from the wall, either in a rectangular, polygonal, or semicircular form; -- often corruptly called a bow window.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "abdomen",
+        "abomasum",
+        "bay",
+        "beerbelly",
+        "belly",
+        "bow window",
+        "breadbasket",
+        "casement",
+        "casement window",
+        "corporation",
+        "craw",
+        "crop",
+        "diaphragm",
+        "embonpoint",
+        "fan window",
+        "fanlight",
+        "first stomach",
+        "gizzard",
+        "grille",
+        "gullet",
+        "gut",
+        "honeycomb stomach",
+        "kishkes",
+        "lancet window",
+        "lantern",
+        "lattice",
+        "light",
+        "louver window",
+        "manyplies",
+        "maw",
+        "midriff",
+        "omasum",
+        "oriel",
+        "pane",
+        "paunch",
+        "picture window",
+        "pod",
+        "port",
+        "porthole",
+        "pot",
+        "potbelly",
+        "potgut",
+        "psalterium",
+        "pusgut",
+        "rennet bag",
+        "reticulum",
+        "rose window",
+        "rumen",
+        "second stomach",
+        "skylight",
+        "spare tire",
+        "stomach",
+        "swagbelly",
+        "third stomach",
+        "transom",
+        "tum-tum",
+        "tummy",
+        "underbelly",
+        "ventripotence",
+        "wicket",
+        "window",
+        "window bay",
+        "window glass",
+        "windowpane"
+      ]
+    },
+    "bayyarn": {
+      "word": "BAY YARN",
+      "definitions": [
+        {
+          "text": "Woolen yarn. [Prov. Eng.] Wright.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

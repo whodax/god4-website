@@ -1,0 +1,654 @@
+{
+  "version": "v1",
+  "entries": {
+    "hesitancy": {
+      "word": "HESITANCY",
+      "definitions": [
+        {
+          "text": "The act of hesitating, or pausing to consider; slowness in deciding; vacillation; also, the manner of one who hesitates.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stammering; a faltering in speech.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesitant": {
+      "word": "HESITANT",
+      "definitions": [
+        {
+          "text": "Not prompt in deciding or acting; hesitating.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Unready in speech. Baxter.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "afraid",
+        "agnostic",
+        "ambiguous",
+        "ambivalent",
+        "averse",
+        "backward",
+        "bashful",
+        "boggling",
+        "canny",
+        "capricious",
+        "careful",
+        "cautious",
+        "chancy",
+        "changeable",
+        "circumspect",
+        "deliberate",
+        "demurring",
+        "dicey",
+        "diffident",
+        "discreet",
+        "dithering",
+        "doubting",
+        "equivocal",
+        "erratic",
+        "faltering",
+        "fickle",
+        "fluctuating",
+        "gingerly",
+        "guarded",
+        "halting",
+        "heedful",
+        "hesitating",
+        "incalculable",
+        "indecisive",
+        "indefinite",
+        "indemonstrable",
+        "indisposed",
+        "irresolute",
+        "jibbing",
+        "judicious",
+        "leaving out nothing",
+        "loath",
+        "mindful",
+        "modest",
+        "noncommittal",
+        "of two minds",
+        "on guard",
+        "overlooking no possibility",
+        "pause",
+        "pawky",
+        "politic",
+        "polysemous",
+        "prudent",
+        "qualmish",
+        "regardful",
+        "reluctant",
+        "safe",
+        "scrupling",
+        "scrupulous",
+        "shilly-shallying",
+        "shrinking",
+        "shy",
+        "skeptical",
+        "slow to act",
+        "squeamish",
+        "stammering",
+        "sticking",
+        "stickling",
+        "straining",
+        "stuttering",
+        "tentative",
+        "thorough",
+        "timid",
+        "touch-and-go",
+        "unaccountable",
+        "unadventurous",
+        "uncertain",
+        "uncommunicative",
+        "unconfirmable",
+        "unconvinced",
+        "undaring",
+        "undecided",
+        "undivinable",
+        "uneager",
+        "unenterprising",
+        "unforeseeable",
+        "unpersuaded",
+        "unprecipitate",
+        "unpredictable",
+        "unprovable",
+        "unresolved",
+        "unsettled",
+        "unsure",
+        "unverifiable",
+        "unwilling",
+        "vacillating",
+        "vacillatory",
+        "variable",
+        "wavering",
+        "whimsical",
+        "wobbly"
+      ]
+    },
+    "hesitantly": {
+      "word": "HESITANTLY",
+      "definitions": [
+        {
+          "text": "With hesitancy or doubt.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesitate": {
+      "word": "HESITATE",
+      "definitions": [
+        {
+          "text": "To stop or pause respecting decision or action; to be in suspense or uncertainty as to a determination; as, he hesitated whether to accept the offer or not; men often hesitate in forming a judgment. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To stammer; to falter in speaking.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To utter with hesitation or to intimate by a reluctant manner. [Poetic & R.] Just hint a fault, and hesitate dislike. Pope.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "alternate",
+        "back down",
+        "balance",
+        "balk",
+        "be dilatory",
+        "blench",
+        "boggle",
+        "call a recess",
+        "debate",
+        "delay",
+        "deliberate",
+        "demur",
+        "dither",
+        "equivocate",
+        "falter",
+        "fear",
+        "fight shy of",
+        "filibuster",
+        "flinch",
+        "fluctuate",
+        "fumble",
+        "gain time",
+        "halt",
+        "hang",
+        "hang back",
+        "hang fire",
+        "hang in doubt",
+        "hang off",
+        "have qualms",
+        "haver",
+        "haw",
+        "hem",
+        "hem and haw",
+        "hold back",
+        "hold off",
+        "hover",
+        "hum",
+        "hum and haw",
+        "jib",
+        "let up",
+        "make bones about",
+        "make time",
+        "mammer",
+        "pause",
+        "play for time",
+        "ponder",
+        "procrastinate",
+        "pull back",
+        "quail",
+        "recess",
+        "recoil",
+        "rest",
+        "retreat",
+        "scruple",
+        "shilly-shally",
+        "shrink",
+        "shrink from",
+        "shy",
+        "shy at",
+        "splutter",
+        "sputter",
+        "stall",
+        "stall for time",
+        "stall off",
+        "stammer",
+        "stick at",
+        "stickle",
+        "stooge around",
+        "stop to consider",
+        "straddle the fence",
+        "strain",
+        "strain at",
+        "stumble",
+        "stutter",
+        "take a recess",
+        "talk against time",
+        "temporize",
+        "tergiversate",
+        "think twice",
+        "think twice about",
+        "vacillate",
+        "wait",
+        "waver",
+        "wince",
+        "withdraw",
+        "yield"
+      ]
+    },
+    "hesitatingly": {
+      "word": "HESITATINGLY",
+      "definitions": [
+        {
+          "text": "With hesitation or doubt.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesitation": {
+      "word": "HESITATION",
+      "definitions": [
+        {
+          "text": "The act of hesitating; suspension of opinion or action; doubt; vacillation.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A faltering in speech; stammering. Swift.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Fabian policy",
+        "Micawberism",
+        "abeyance",
+        "averseness",
+        "backwardness",
+        "balbuties",
+        "bashfulness",
+        "boggle",
+        "boggling",
+        "break",
+        "caesura",
+        "calculation",
+        "canniness",
+        "capriciousness",
+        "care",
+        "careful consideration",
+        "carefulness",
+        "caution",
+        "cautiousness",
+        "cease-fire",
+        "chance",
+        "chanciness",
+        "changeableness",
+        "circumspection",
+        "compunction",
+        "courtesan",
+        "day off",
+        "delay",
+        "deliberate stages",
+        "deliberateness",
+        "deliberation",
+        "demimondaine",
+        "demimonde",
+        "demirep",
+        "demur",
+        "demurral",
+        "diffidence",
+        "dilatoriness",
+        "discretion",
+        "doubt",
+        "drop",
+        "dubiety",
+        "dysphemia",
+        "erraticism",
+        "erraticness",
+        "falter",
+        "faltering",
+        "fancy woman",
+        "fickleness",
+        "gingerliness",
+        "guardedness",
+        "hedge",
+        "hedging",
+        "heed",
+        "heedfulness",
+        "hesitance",
+        "hesitancy",
+        "hesitating",
+        "hetaera",
+        "hold-off",
+        "holiday",
+        "incalculability",
+        "incertitude",
+        "indecision",
+        "indecisiveness",
+        "indemonstrability",
+        "indeterminacy",
+        "indetermination",
+        "indeterminism",
+        "indisposition",
+        "interim",
+        "interlude",
+        "intermezzo",
+        "intermission",
+        "intermittence",
+        "interruption",
+        "interval",
+        "irresolution",
+        "judiciousness",
+        "kept",
+        "lapse",
+        "laxness",
+        "layoff",
+        "letup",
+        "luck",
+        "lull",
+        "mindfulness",
+        "mistrust",
+        "modesty",
+        "mugwump",
+        "objection",
+        "palilalia",
+        "pause",
+        "pawkiness",
+        "prior consultation",
+        "procrastination",
+        "protest",
+        "prudence",
+        "prudentialness",
+        "qualm",
+        "qualm of conscience",
+        "qualmishness",
+        "randomness",
+        "recess",
+        "recoil",
+        "regardfulness",
+        "reluctance",
+        "remission",
+        "remissness",
+        "respite",
+        "rest",
+        "safeness",
+        "safety first",
+        "scruple",
+        "scrupulosity",
+        "scrupulousness",
+        "shilly-shally",
+        "shilly-shallying",
+        "shrinking",
+        "shyness",
+        "slackness",
+        "slowness",
+        "slowness to act",
+        "solicitude",
+        "stall",
+        "stammer",
+        "stammering",
+        "stand-down",
+        "stay",
+        "stickling",
+        "stutter",
+        "stuttering",
+        "suspense",
+        "suspensefulness",
+        "suspension",
+        "temporization",
+        "tentativeness",
+        "thoroughness",
+        "to-and-fro",
+        "traulism",
+        "truce",
+        "unaccountability",
+        "uncertainness",
+        "uncertainty",
+        "uncertainty principle",
+        "uncommunicativeness",
+        "undecidedness",
+        "undeterminedness",
+        "unforeseeableness",
+        "unprecipitateness",
+        "unpredictability",
+        "unprovability",
+        "unsureness",
+        "unverifiability",
+        "vacation",
+        "vacillation",
+        "wavering",
+        "whimsicality",
+        "whore"
+      ]
+    },
+    "hesitative": {
+      "word": "HESITATIVE",
+      "definitions": [
+        {
+          "text": "Showing, or characterized by, hesitation. [He said] in his mild, hesitative way. R. D. Blackmore.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesitatory": {
+      "word": "HESITATORY",
+      "definitions": [
+        {
+          "text": "Hesitating. R. North.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesp": {
+      "word": "HESP",
+      "definitions": [
+        {
+          "text": "A measure of two hanks of linen thread. [Scot.] [Written also hasp.] Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesper": {
+      "word": "HESPER",
+      "definitions": [
+        {
+          "text": "The evening; Hesperus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperetin": {
+      "word": "HESPERETIN",
+      "definitions": [
+        {
+          "text": "A white, crystalline substance having a sweetish taste, obtained by the decomposition of hesperidin, and regarded as a complex derivative of caffeic acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperian": {
+      "word": "HESPERIAN",
+      "definitions": [
+        {
+          "text": "Western; being in the west; occidental. [Poetic] Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or an inhabitant of a western country. [Poetic] J. Barlow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to a family of butterflies called Hesperidæ, or skippers.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Any one of the numerous species of Hesperidæ; a skipper.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperid": {
+      "word": "HESPERID",
+      "definitions": [
+        {
+          "text": "Same as 3d Hesperian.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperidene": {
+      "word": "HESPERIDENE",
+      "definitions": [
+        {
+          "text": "An isomeric variety of terpene from orange oil.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperides": {
+      "word": "HESPERIDES",
+      "definitions": [
+        {
+          "text": "(Class. Myth.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The daughters of Hesperus, or Night (brother of Atlas), and fabled possessors of a garden producing golden apples, in Africa, at the western extremity of the known world. To slay the guarding dragon and get some of these apples was one of the labors of Hercules. Called also Atlantides.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The garden producing the golden apples. It not love a Hercules, Still climbing trees in the Hesperides Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperidin": {
+      "word": "HESPERIDIN",
+      "definitions": [
+        {
+          "text": "A glucoside found in ripe and unripe fruit (as the orange), and extracted as a white crystalline substance.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperidium": {
+      "word": "HESPERIDIUM",
+      "definitions": [
+        {
+          "text": "A large berry with a thick rind, as a lemon or an orange.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperornis": {
+      "word": "HESPERORNIS",
+      "definitions": [
+        {
+          "text": "A genus of large, extinct, wingless birds from the Cretaceous deposits of Kansas, belonging to the Odontornithes. They had teeth, and were essentially carnivorous swimming ostriches. Several species are known. See Illust. in Append.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesperus": {
+      "word": "HESPERUS",
+      "definitions": [
+        {
+          "text": "Venus when she is the evening star; Hesper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Evening. [Poetic] The Sun was sunk, and after him the Star Of Hesperus. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hessian": {
+      "word": "HESSIAN",
+      "definitions": [
+        {
+          "text": "Of or relating to Hesse, in Germany, or to the Hessians. Hessian boots, or Hessians, boot of a kind worn in England, in the early part of the nineteenth century, tasseled in front. Thackeray. destructor). Its larvæ live between the base of the lower leaves and the stalk of wheat, and are very destructive to young wheat; -- so called from the erroneous idea that it was brought into America by the Hessian troops, during the Revolution.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or inhabitant of Hesse.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mercenary or venal person. [U. S.] mercenaries who served with the British troops in the Revolutionary War.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Hessian boots and cloth, under Hessian, a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hessite": {
+      "word": "HESSITE",
+      "definitions": [
+        {
+          "text": "A lead-gray sectile mineral. It is a telluride of silver.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hest": {
+      "word": "HEST",
+      "definitions": [
+        {
+          "text": "Command; precept; injunction. [Archaic] See Behest. \"At thy hest.\" Shak. Let him that yields obey the victor's hest. Fairfax. Yet I thy hest will all perform, at full. Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesternhesternal": {
+      "word": "HESTERN; HESTERNAL",
+      "definitions": [
+        {
+          "text": "Pertaining to yesterday. [Obs.] See Yester, a. Ld. Lytton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hesychast": {
+      "word": "HESYCHAST",
+      "definitions": [
+        {
+          "text": "One of a mystical sect of the Greek Church in the fourteenth century; a quietist. Brande & C.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

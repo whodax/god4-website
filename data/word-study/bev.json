@@ -1,0 +1,425 @@
+{
+  "version": "v1",
+  "entries": {
+    "bevel": {
+      "word": "BEVEL",
+      "definitions": [
+        {
+          "text": "Any angle other than a right angle; the angle which one surface makes with another when they are not at right angles; the slant or inclination of such surface; as, to give a bevel to the edge of a table or a stone slab; the bevel of a piece of timber.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An instrument consisting of two rules or arms, jointed together at one end, and opening to any angle, for adjusting the surfaces of work to the same or a given inclination; -- called also a bevel square. Gwilt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Having the slant of a bevel; slanting.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Hence: Morally distorted; not upright. [Poetic] I may be straight, though they themselves be bevel. Shak. A bevel angle, any angle other than one of 90º. axis. Knight.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To cut to a bevel angle; to slope the edge or surface of.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deviate or incline from an angle of 90 Their houses are very ill built, the walls bevel. Swift.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "ascender",
+        "astrolabe",
+        "azimuth circle",
+        "azimuth compass",
+        "back",
+        "bank",
+        "bastard type",
+        "beard",
+        "belly",
+        "bevel protractor",
+        "bevel square",
+        "beveled",
+        "bezel",
+        "bias",
+        "biased",
+        "black letter",
+        "body",
+        "cap",
+        "capital",
+        "case",
+        "chute",
+        "clinometer",
+        "counter",
+        "descender",
+        "easy slope",
+        "em",
+        "en",
+        "face",
+        "fat-faced type",
+        "feet",
+        "fleam",
+        "font",
+        "gentle slope",
+        "glacis",
+        "goniometer",
+        "grade",
+        "gradient",
+        "graphometer",
+        "groove",
+        "hanging gardens",
+        "helicline",
+        "hillside",
+        "inclination",
+        "incline",
+        "inclined plane",
+        "italic",
+        "launching ramp",
+        "letter",
+        "ligature",
+        "logotype",
+        "lower case",
+        "majuscule",
+        "minuscule",
+        "nick",
+        "pantometer",
+        "pi",
+        "pica",
+        "pitch",
+        "point",
+        "print",
+        "protractor",
+        "quadrant",
+        "radiogoniometer",
+        "ramp",
+        "roman",
+        "sans serif",
+        "scarp",
+        "script",
+        "sextant",
+        "shank",
+        "shelving beach",
+        "shoulder",
+        "side",
+        "slanted",
+        "slanting",
+        "slope",
+        "small cap",
+        "small capital",
+        "stamp",
+        "steep slope",
+        "stem",
+        "stiff climb",
+        "talus",
+        "theodolite",
+        "transit",
+        "transit circle",
+        "transit instrument",
+        "transit theodolite",
+        "type",
+        "type body",
+        "type class",
+        "type lice",
+        "typecase",
+        "typeface",
+        "typefounders",
+        "typefoundry",
+        "upper case"
+      ]
+    },
+    "beveledbevelled": {
+      "word": "BEVELED; BEVELLED",
+      "definitions": [
+        {
+          "text": "Formed to a bevel angle; sloping; as, the beveled edge of a table.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Min.) Replaced by two planes inclining equally upon the adjacent planes, as an edge; having its edges replaces by sloping planes, as a cube or other solid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bevelgear": {
+      "word": "BEVEL GEAR",
+      "definitions": [
+        {
+          "text": "A kind of gear in which the two wheels working together lie in different planes, and have their teeth cut at right angles to the surfaces of two cones whose apices coincide with the point where the axes of the wheels would meet.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bevelment": {
+      "word": "BEVELMENT",
+      "definitions": [
+        {
+          "text": "The replacement of an edge by two similar planes, equally inclined to the including faces or adjacent planes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bever": {
+      "word": "BEVER",
+      "definitions": [
+        {
+          "text": "A light repast between meals; a lunch. [Obs.] Beau. & Fl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To take a light repast between meals. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "beverage": {
+      "word": "BEVERAGE",
+      "definitions": [
+        {
+          "text": "Liquid for drinking; drink; -- usually applied to drink artificially prepared and of an agreeable flavor; as, an intoxicating beverage. He knew no beverage but the flowing stream. Thomson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Specifically, a name applied to various kinds of drink.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A treat, or drink money. [Slang]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "John Barleycorn",
+        "ade",
+        "alcohol",
+        "alcoholic beverage",
+        "alcoholic drink",
+        "ambrosia",
+        "aqua vitae",
+        "ardent spirits",
+        "beef tea",
+        "birch beer",
+        "blood",
+        "booze",
+        "bouillon",
+        "brew",
+        "buttermilk",
+        "chicory",
+        "chocolate milk",
+        "cider",
+        "cocktail",
+        "cocoa",
+        "coffee",
+        "cola",
+        "drink",
+        "drinkable",
+        "egg cream",
+        "eggnog",
+        "espresso",
+        "fluid",
+        "fluid extract",
+        "fluid mechanics",
+        "frappe",
+        "frosted",
+        "frosted shake",
+        "fruit juice",
+        "ginger ale",
+        "ginger beer",
+        "grape juice",
+        "grapefruit juice",
+        "grog",
+        "hard liquor",
+        "hydraulics",
+        "hydrogeology",
+        "ice-cream soda",
+        "iced coffee",
+        "iced tea",
+        "inebriant",
+        "intoxicant",
+        "intoxicating liquor",
+        "juice",
+        "koumiss",
+        "latex",
+        "lemonade",
+        "limeade",
+        "liquid",
+        "liquid extract",
+        "liquor",
+        "little brown jug",
+        "malt",
+        "milk",
+        "mineral water",
+        "mocha",
+        "nectar",
+        "orangeade",
+        "phosphate",
+        "pop",
+        "potable",
+        "potation",
+        "punch",
+        "punch bowl",
+        "root beer",
+        "root beer float",
+        "rum",
+        "sap",
+        "schnapps",
+        "seltzer",
+        "semiliquid",
+        "shake",
+        "social lubricant",
+        "soda",
+        "soda pop",
+        "soda water",
+        "soft drink",
+        "spirits",
+        "spring water",
+        "strong drink",
+        "strong waters",
+        "tea",
+        "the Demon Rum",
+        "the bottle",
+        "the cup",
+        "the flowing bowl",
+        "the luscious liquor",
+        "the ruddy cup",
+        "tisane",
+        "tonic",
+        "toxicant",
+        "water",
+        "water of life",
+        "whey"
+      ]
+    },
+    "bevile": {
+      "word": "BEVILE",
+      "definitions": [
+        {
+          "text": "A chief broken or opening like a carpenter's bevel. Encyc. Brit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "beviledbevilled": {
+      "word": "BEVILED; BEVILLED",
+      "definitions": [
+        {
+          "text": "Notched with an angle like that inclosed by a carpenter's bevel; -- said of a partition line of a shield.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bevy": {
+      "word": "BEVY",
+      "definitions": [
+        {
+          "text": "A company; an assembly or collection of persons, especially of ladies. What a bevy of beaten slaves have we here ! Beau. & Fl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A flock of birds, especially quails or larks; also, a herd of roes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "a mass of",
+        "a world of",
+        "age group",
+        "army",
+        "assembly",
+        "band",
+        "battalion",
+        "body",
+        "brigade",
+        "bunch",
+        "cabal",
+        "cast",
+        "charm",
+        "clique",
+        "cloud",
+        "cluster",
+        "clutter",
+        "cohort",
+        "company",
+        "complement",
+        "contingent",
+        "corps",
+        "coterie",
+        "covey",
+        "crew",
+        "crowd",
+        "detachment",
+        "detail",
+        "division",
+        "faction",
+        "fleet",
+        "flight",
+        "flock",
+        "flocks",
+        "gaggle",
+        "gang",
+        "group",
+        "grouping",
+        "groupment",
+        "hail",
+        "hive",
+        "host",
+        "in-group",
+        "jam",
+        "junta",
+        "large amount",
+        "legion",
+        "lots",
+        "many",
+        "masses of",
+        "mob",
+        "movement",
+        "muchness",
+        "multitude",
+        "murmuration",
+        "nest",
+        "numbers",
+        "out-group",
+        "outfit",
+        "pack",
+        "party",
+        "peer group",
+        "phalanx",
+        "plague",
+        "platoon",
+        "plurality",
+        "posse",
+        "quantities",
+        "quite a few",
+        "regiment",
+        "rout",
+        "ruck",
+        "salon",
+        "scores",
+        "set",
+        "shoal",
+        "skein",
+        "spring",
+        "squad",
+        "stable",
+        "string",
+        "swarm",
+        "team",
+        "throng",
+        "tidy sum",
+        "tribe",
+        "troop",
+        "troupe",
+        "watch",
+        "wing",
+        "worlds of"
+      ]
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "version": "v1",
+  "entries": {
+    "focal": {
+      "word": "FOCAL",
+      "definitions": [
+        {
+          "text": "Belonging to,or concerning, a focus; as, a focal point. Focal distance, or length,of a lens or mirror (Opt.), the distance of the focus from the surface of the lens or mirror, or more exactly, in the case of a lens, from its optical center. --Focal distance of a telescope, the distance of the image of an object from the object glass.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "approaching",
+        "arch",
+        "asymptotic",
+        "banner",
+        "basic",
+        "bedrock",
+        "capital",
+        "cardinal",
+        "central",
+        "centralized",
+        "centred",
+        "centripetal",
+        "centrolineal",
+        "champion",
+        "chief",
+        "concentrated",
+        "concurrent",
+        "confluent",
+        "confocal",
+        "connivent",
+        "convergent",
+        "converging",
+        "crowning",
+        "dominant",
+        "essential",
+        "first",
+        "foremost",
+        "fundamental",
+        "great",
+        "headmost",
+        "hegemonic",
+        "indispensable",
+        "leading",
+        "life-and-death",
+        "life-or-death",
+        "magisterial",
+        "main",
+        "master",
+        "material",
+        "meeting",
+        "mutually approaching",
+        "of vital importance",
+        "overruling",
+        "paramount",
+        "predominant",
+        "preeminent",
+        "preponderant",
+        "prevailing",
+        "primal",
+        "primary",
+        "prime",
+        "principal",
+        "radial",
+        "radiating",
+        "ranking",
+        "ruling",
+        "sovereign",
+        "star",
+        "stellar",
+        "substantive",
+        "supereminent",
+        "tangent",
+        "tangential",
+        "topflight",
+        "uniting",
+        "vital"
+      ]
+    },
+    "focalization": {
+      "word": "FOCALIZATION",
+      "definitions": [
+        {
+          "text": "The act of focalizing or bringing to a focus, or the state of being focalized.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "focalize": {
+      "word": "FOCALIZE",
+      "definitions": [
+        {
+          "text": "To bring to a focus; to focus; to concentrate. Light is focalized in the eye, sound in the ear. De Quincey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "focillate": {
+      "word": "FOCILLATE",
+      "definitions": [
+        {
+          "text": "To nourish. [Obs.] Blount.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "focillation": {
+      "word": "FOCILLATION",
+      "definitions": [
+        {
+          "text": "Comfort; support. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "focimeter": {
+      "word": "FOCIMETER",
+      "definitions": [
+        {
+          "text": "(Photog.) An assisting instrument for focusing an object in or before a camera. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "focus": {
+      "word": "FOCUS",
+      "definitions": [
+        {
+          "text": "(Opt.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A point in which the rays of light meet, after being reflected or refrcted, and at which the image is formed; as, the focus of a lens or mirror.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geom.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A point so related to a conic section and certain straight line called the directrix that the ratio of the distace between any point of the curve and the focus to the distance of the same point from the directrix is constant. directrix, when the ratios FA:FE, GA:GD, MA:MC, etc., are all equal. So in the hyperbola, A is the focus and CD the directrix when the ratio HA:HK is constant for all points of the curve; and in the parabola, A is the focus and CD the directrix when the ratio BA:BC is constant. In the ellipse this ratio is less than unity, in the parabola equal to unity, and in the hyperbola greater than unity. The ellipse and hyperbola have each two foci, and two corresponding directrixes, and the parabola has one focus and one directrix. In the ellipse the sum of the two lines from any point of the curve to the two foci is constant; that is: AG+GB=AH+HB; and in the hyperbola the difference of the corresponding lines is constant. The diameter which passes through the foci of the ellipse is the major axis. The diameter which being produced passes through the foci of the hyperbola is the transverse axis. The middle point of the major or the transverse axis is the center of the curve. Certain other curves, as the lemniscate and the Cartesian ovals, have points called foci, possessing properties similar to those of the foci of conic sections. In an ellipse, rays of light coming from one focus, and reflected from the curve, proceed in lines directed toward the other; in an hyperbola, in lines directed from the other; in a parabola, rays from the focus, after reflection at the curve, proceed in lines parallel to the axis. Thus rays from A in the ellipse are reflected to B; rays from A in the hyperbola are reflected toward L and M away from B.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A central point; a point of concentration. Aplanatic focus. (Opt.) See under Aplanatic. divergence, as from a near object; -- so called because the positions of the object and its image are interchangeable. cathode rays are focused upon the anticathode, for intensifying the effect.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To bring to a focus; to focalize; as, to focus a camera. R. Hunt.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adductor",
+        "approach",
+        "asymptote",
+        "attractant",
+        "attrahent",
+        "axiom",
+        "blurred",
+        "blurry",
+        "bottleneck",
+        "bring into focus",
+        "center",
+        "center of attraction",
+        "center of consciousness",
+        "center of interest",
+        "clear",
+        "collision course",
+        "concenter",
+        "concentralization",
+        "concentralize",
+        "concentrate",
+        "concentration",
+        "concourse",
+        "concurrence",
+        "confluence",
+        "conflux",
+        "congress",
+        "converge",
+        "convergence",
+        "converging",
+        "core",
+        "crossing",
+        "cynosure",
+        "distinct",
+        "elixir",
+        "essence",
+        "essential",
+        "fix",
+        "fixate",
+        "flower",
+        "focal point",
+        "focalization",
+        "focalize",
+        "focus of attention",
+        "fundamental",
+        "funnel",
+        "fuzzy",
+        "gist",
+        "gravamen",
+        "heart",
+        "hub",
+        "hypostasis",
+        "in focus",
+        "indistinct",
+        "inner essence",
+        "kernel",
+        "lodestar",
+        "lure",
+        "magnet",
+        "marrow",
+        "meat",
+        "meet",
+        "meeting",
+        "mutual approach",
+        "narrowing gap",
+        "nave",
+        "nerve",
+        "nub",
+        "nucleus",
+        "nuts and bolts",
+        "out of focus",
+        "pinpoint",
+        "pith",
+        "point of convergence",
+        "polestar",
+        "postulate",
+        "prime focus",
+        "principle",
+        "put",
+        "quid",
+        "quiddity",
+        "quintessence",
+        "radius",
+        "rivet",
+        "sap",
+        "soul",
+        "spirit",
+        "spokes",
+        "spotlight",
+        "stuff",
+        "substance",
+        "tangent",
+        "target",
+        "the nitty-gritty",
+        "unclear",
+        "woolly",
+        "zero in"
+      ]
+    }
+  }
+}

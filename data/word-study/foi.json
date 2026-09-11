@@ -1,0 +1,627 @@
+{
+  "version": "v1",
+  "entries": {
+    "foible": {
+      "word": "FOIBLE",
+      "definitions": [
+        {
+          "text": "Weak; feeble. [Obs.] Lord Herbert.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A moral weakness; a failing; a weak point; a frailty. A disposition radically noble and generous, clouded and overshadowed by superficial foibles. De Quincey.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The half of a sword blade or foil blade nearest the point; -- opposed to forte. [Written also faible.] defect. See Fault.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bad habit",
+        "besetting sin",
+        "blemish",
+        "bug",
+        "catch",
+        "crack",
+        "crotchet",
+        "defect",
+        "defection",
+        "deficiency",
+        "drawback",
+        "eccentricity",
+        "failing",
+        "failure",
+        "fault",
+        "faute",
+        "flaw",
+        "frailty",
+        "hang-up",
+        "hole",
+        "idiosyncrasy",
+        "imperfection",
+        "inadequacy",
+        "infirmity",
+        "kink",
+        "little problem",
+        "moral flaw",
+        "peculiarity",
+        "preoccupation",
+        "problem",
+        "quirk",
+        "rift",
+        "shortcoming",
+        "snag",
+        "something missing",
+        "taint",
+        "vice",
+        "vulnerable place",
+        "weak link",
+        "weak point",
+        "weak side",
+        "weakness"
+      ]
+    },
+    "foil": {
+      "word": "FOIL",
+      "definitions": [
+        {
+          "text": "To tread under foot; to trample. King Richard . . . caused the ensigns of Leopold to be pulled down and foiled under foot. Knoless. Whom he did all to pieces breake and foyle, In filthy durt, and left so in the loathely soyle. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To render (an effort or attempt) vain or nugatory; to baffle; to outwit; to balk; to frustrate; to defeat. And by foiled. Dryden. Her long locks that foil the painter's power. Byron.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To blunt; to dull; to spoil; as, to foil the scent in chase. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To defile; to soil. [Obs.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Failure of success when on the point of attainment; defeat; frustration; miscarriage. Milton. Nor e'er was fate so near a foil. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A blunt weapon used in fencing, resembling a smallsword in the main, but usually lighter and having a button at the point. Blunt as the fencer's foils, which hit, but hurt not. Shak. socrates contended with a foil against Demosthenes with a word. Mitford.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The track or trail of an animal. To run a foil,to lead astray; to puzzle; -- alluding to the habits of some animals of running back over the same track to mislead their pursuers. Brewer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A leaf or very thin sheet of metal; as, brass foil; tin foil; gold foil.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Jewelry)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thin leaf of sheet copper silvered and burnished, and afterwards coated with transparent colors mixed with isinglass; -- employed by jewelers to give color or brilliancy to pastes and inferior stones. Ure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything that serves by contrast of color or quality to adorn or set off another thing to advantage. As she a black silk cap on him began To set, for foil of his milk- white to serve. Sir P. Sidney. Hector has a foil to set him off. Broome.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thin coat of tin, with quicksilver, laid on the back of a looking-glass, to cause reflection.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The space between the cusps in Gothic architecture; a rounded or leaflike ornament, in windows, niches, etc. A group of foils is called trefoil, quatrefoil, quinquefoil, etc., according to the number of arcs of which it is composed. Foil stone, an imitation of a jewel or precious stone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Roscius",
+        "actor",
+        "actress",
+        "antagonist",
+        "antipode",
+        "antipodes",
+        "antipole",
+        "antithesis",
+        "antonym",
+        "background",
+        "background detail",
+        "bad guy",
+        "baffle",
+        "bafflement",
+        "balk",
+        "balking",
+        "barnstormer",
+        "beat",
+        "bilbo",
+        "bilk",
+        "blast",
+        "brave",
+        "broadsword",
+        "buffalo",
+        "cast down",
+        "challenge",
+        "character",
+        "character actor",
+        "character man",
+        "character woman",
+        "check",
+        "checkmate",
+        "child actor",
+        "circumvent",
+        "claymore",
+        "coat",
+        "coating",
+        "collop",
+        "confound",
+        "confounding",
+        "confront",
+        "confusion",
+        "contra",
+        "contravene",
+        "converse",
+        "counter",
+        "counteract",
+        "counterbalance",
+        "countercheck",
+        "countermand",
+        "counterpoint",
+        "counterpoise",
+        "counterpole",
+        "counterterm",
+        "counterwork",
+        "covering",
+        "cross",
+        "curb",
+        "cut",
+        "cutlass",
+        "dash",
+        "daunt",
+        "deal",
+        "deceive",
+        "decorative composition",
+        "decorative style",
+        "defeat",
+        "defeat expectation",
+        "defy",
+        "design",
+        "destroy",
+        "detail",
+        "disappoint",
+        "discomfit",
+        "discomfiture",
+        "disconcert",
+        "disconcertion",
+        "discountenance",
+        "diseur",
+        "diseuse",
+        "dish",
+        "disillusion",
+        "disk",
+        "disrupt",
+        "dissatisfy",
+        "dramatizer",
+        "elude",
+        "embarrass",
+        "epee",
+        "evade",
+        "falchion",
+        "faze",
+        "feeder",
+        "feuille",
+        "figure",
+        "film",
+        "flake",
+        "flap",
+        "flummox",
+        "foiling",
+        "fold",
+        "foreground detail",
+        "form",
+        "frustrate",
+        "frustration",
+        "get around",
+        "get round",
+        "give the runaround",
+        "give the slip",
+        "glaive",
+        "go one better",
+        "hamper",
+        "heavy",
+        "histrio",
+        "histrion",
+        "impede",
+        "ingenue",
+        "inverse",
+        "juvenile",
+        "knock the chocks",
+        "lamella",
+        "lamina",
+        "laminated glass",
+        "laminated wood",
+        "lamination",
+        "lap",
+        "layer",
+        "leaf",
+        "let down",
+        "matinee idol",
+        "membrane",
+        "mime",
+        "mimer",
+        "mimic",
+        "monologist",
+        "motif",
+        "mummer",
+        "national style",
+        "nonplus",
+        "nullify",
+        "obverse",
+        "offset",
+        "opposite",
+        "opposite number",
+        "ornamental motif",
+        "outfigure",
+        "outflank",
+        "outgeneral",
+        "outguess",
+        "outmaneuver",
+        "outplay",
+        "outreach",
+        "outsmart",
+        "outwit",
+        "overreach",
+        "pane",
+        "panel",
+        "pantomime",
+        "pantomimist",
+        "parry",
+        "pass the buck",
+        "patina",
+        "pattern",
+        "peel",
+        "pellicle",
+        "period style",
+        "perplex",
+        "plait",
+        "plank",
+        "plate",
+        "plating",
+        "playactor",
+        "player",
+        "ply",
+        "plywood",
+        "protean actor",
+        "rapier",
+        "rasher",
+        "rattle",
+        "rebuff",
+        "reciter",
+        "repeated figure",
+        "repulse",
+        "restrain",
+        "reversal",
+        "reverse",
+        "rout",
+        "ruin",
+        "saber",
+        "sabotage",
+        "safety glass",
+        "scale",
+        "scimitar",
+        "scotch",
+        "scum",
+        "setback",
+        "setoff",
+        "setting",
+        "sheet",
+        "skin",
+        "slab",
+        "slat",
+        "slice",
+        "soubrette",
+        "spike",
+        "spoil",
+        "stage performer",
+        "stage player",
+        "stonewall",
+        "stooge",
+        "straight man",
+        "stroller",
+        "strolling player",
+        "stump",
+        "style",
+        "table",
+        "tablet",
+        "tantalize",
+        "tease",
+        "the contrary",
+        "the other side",
+        "theatrical",
+        "theme",
+        "thespian",
+        "thwart",
+        "thwarting",
+        "touch",
+        "trouper",
+        "tuck",
+        "upset",
+        "utility man",
+        "veneer",
+        "victimize",
+        "villain",
+        "vis-a-vis",
+        "wafer"
+      ]
+    },
+    "foilable": {
+      "word": "FOILABLE",
+      "definitions": [
+        {
+          "text": "Capable of being foiled.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foiler": {
+      "word": "FOILER",
+      "definitions": [
+        {
+          "text": "One who foils or frustrates. Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foiling": {
+      "word": "FOILING",
+      "definitions": [
+        {
+          "text": "A foil. Simmonds.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The track of game (as deer) in the grass.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foin": {
+      "word": "FOIN",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The beech marten (Mustela foina). See Marten.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of fur, black at the top on a whitish ground, taken from the ferret or weasel of the same name.[Obs.] He came to the stake in a fair black gown furred and faced with foins. Fuller.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To thrust with a sword or spear; to lunge. [Obs.] He stroke, he soused, he foynd, he hewed, he lashed. Spenser. They lash, they foin, they pass, they strive to bore Their corselets, and the thinnest parts explore. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To prick; to stng. [Obs.] Huloet.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A pass in fencing; a lunge. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foinery": {
+      "word": "FOINERY",
+      "definitions": [
+        {
+          "text": "Thrusting with the foil; fencing with the point, as distinguished from broadsword play. [Obs.] Marston.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foiningly": {
+      "word": "FOININGLY",
+      "definitions": [
+        {
+          "text": "With a push or thrust. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foison": {
+      "word": "FOISON",
+      "definitions": [
+        {
+          "text": "Rich harvest; plenty; abundance. [Archaic] Lowell. That from the seedness the bare fallow brings To teeming foison. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foist": {
+      "word": "FOIST",
+      "definitions": [
+        {
+          "text": "A light and fast-sailing ship. [Obs.] Beau. & Fl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To insert surreptitiously, wrongfully, or without warrant; to interpolate; to pass off (something spurious or counterfeit) as genuine, true, or worthy; -- usually followed by in. Lest negligence or partiality might admit or fois in abuses corruption. R. Carew. When a scripture has been corrupted . . . by a supposititious foisting of some words in. South.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A foister; a sharper. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A trick or fraud; a swindle. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bamboozle",
+        "barge in",
+        "beguile",
+        "break in",
+        "break in upon",
+        "burst in",
+        "butt in",
+        "charge in",
+        "cheat",
+        "come between",
+        "crash",
+        "crash in",
+        "crash the gates",
+        "creep in",
+        "crowd in",
+        "cut in",
+        "deceive",
+        "defraud",
+        "delude",
+        "drag in",
+        "dupe",
+        "edge in",
+        "elbow in",
+        "encroach",
+        "entrench",
+        "foist in",
+        "foist on",
+        "fudge in",
+        "gull",
+        "hoax",
+        "hoodwink",
+        "horn in",
+        "impinge",
+        "implant in",
+        "impose",
+        "impose on",
+        "impose upon",
+        "infiltrate",
+        "inflict",
+        "infringe",
+        "inject in",
+        "insert in",
+        "insinuate",
+        "insinuate in",
+        "intercalate",
+        "interfere",
+        "interjaculate",
+        "interject",
+        "interlope",
+        "interpolate",
+        "interpose",
+        "intervene",
+        "introduce in",
+        "intrude",
+        "invade",
+        "irrupt",
+        "lay off",
+        "lug in",
+        "mislead",
+        "obtrude",
+        "overreach",
+        "palm",
+        "palm off",
+        "pass off",
+        "pass off on",
+        "pass the buck",
+        "play on",
+        "press in",
+        "presume upon",
+        "push in",
+        "push off",
+        "put across",
+        "put between",
+        "put off",
+        "put on",
+        "put over",
+        "put upon",
+        "run in",
+        "rush in",
+        "sandwich",
+        "shift the blame",
+        "shift the responsibility",
+        "slink in",
+        "slip in",
+        "smash in",
+        "smuggle in",
+        "sneak in",
+        "squeeze in",
+        "steal in",
+        "storm in",
+        "swindle",
+        "take advantage of",
+        "throng in",
+        "throw in",
+        "thrust in",
+        "trench",
+        "trespass",
+        "trick",
+        "unload",
+        "wedge in",
+        "wish",
+        "work in",
+        "work on",
+        "worm",
+        "worm in"
+      ]
+    },
+    "foister": {
+      "word": "FOISTER",
+      "definitions": [
+        {
+          "text": "One who foists something surreptitiously; a falsitier. Mir. for Mag.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foistied": {
+      "word": "FOISTIED",
+      "definitions": [
+        {
+          "text": "Fusty. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foistiness": {
+      "word": "FOISTINESS",
+      "definitions": [
+        {
+          "text": "Fustiness; mustiness. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foisty": {
+      "word": "FOISTY",
+      "definitions": [
+        {
+          "text": "Fusty; musty. [Obs.] Johnson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

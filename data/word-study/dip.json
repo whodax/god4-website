@@ -1,0 +1,1949 @@
+{
+  "version": "v1",
+  "entries": {
+    "dip": {
+      "word": "DIP",
+      "definitions": [
+        {
+          "text": "To plunge or immerse; especially, to put for a moment into a liquid; to insert into a fluid and withdraw again. The priest shall dip his finger in the blood. Lev. iv. 6. [Wat'ry fowl] now dip their pinions in the briny deep. Pope. While the prime swallow dips his wing. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To immerse for baptism; to baptize by immersion. Book of Common Prayer. Fuller.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To wet, as if by immersing; to moisten. [Poetic] A cold shuddering dew Dips me all o'er. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To plunge or engage thoroughly in any affair. He was . . . dipt in the rebellion of the Commons. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take out, by dipping a dipper, ladle, or other receptacle, into a fluid and removing a part; -- often with out; as, to dip water from a boiler; to dip out water.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To engage as a pledge; to mortgage. [Obs.] Live on the use and never dip thy lands. Dryden. Dipped candle, a candle made by repeatedly dipping a wick in melted tallow. [Southern U. S.] -- To dip the colors (Naut.), to lower the colors and return them to place; -- a form of naval salute.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To immerse one's self; to become plunged in a liquid; to sink. The sun's rim dips; the stars rush out. Coleridge.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To perform the action of plunging some receptacle, as a dipper, ladle. etc.; into a liquid or a soft substance and removing a part. Whoever dips too deep will find death in the pot. L'Estrange.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pierce; to penetrate; -- followed by in or into. When I dipt into the future. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To enter slightly or cursorily; to engage one's self desultorily or by the way; to partake limitedly; -- followed by in or into. \"Dipped into a multitude of books.\" Macaulay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To incline downward from the plane of the horizon; as, strata of rock dip.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To dip snuff. [Southern U.S.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The action of dipping or plunging for a moment into a liquid. \"The dip of oars in unison.\" Glover.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Inclination downward; direction below a horizontal line; slope; pitch.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A liquid, as a sauce or gravy, served at table with a ladle or spoon. [Local, U.S.] Bartlett.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A dipped candle. [Colloq.] Marryat. Dip of the horizon (Astron.), the angular depression of the seen or visible horizon below the true or natural horizon; the angle at the eye of an observer between a horizontal line and a tangent drawn from the eye to the surface of the ocean. vertical plane, by a freely suspended magnetic needle, or the line of magnetic force, with a horizontal line; -- called also inclination. the horizon, or that of a line perpendicular to its direction or strike; -- called also the pitch.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acid bath",
+        "alveolation",
+        "alveolus",
+        "antrum",
+        "apply paint",
+        "armpit",
+        "ascend",
+        "asperge",
+        "attrition",
+        "bail",
+        "bank",
+        "baptism",
+        "baptize",
+        "basin",
+        "bath",
+        "bayberry candle",
+        "beat the drum",
+        "bedaub",
+        "bedizen",
+        "begild",
+        "besmear",
+        "bougie",
+        "bowl",
+        "brush on paint",
+        "bucket",
+        "burial",
+        "bury",
+        "calcimine",
+        "candle",
+        "cannon",
+        "cant",
+        "careen",
+        "cavity",
+        "christen",
+        "climb",
+        "coat",
+        "color",
+        "complexion",
+        "concave",
+        "concavity",
+        "corpse candle",
+        "cover",
+        "crab",
+        "crater",
+        "crypt",
+        "cup",
+        "curtailment",
+        "cut",
+        "cutpurse",
+        "cutting",
+        "dab",
+        "daub",
+        "decant",
+        "decline",
+        "declivity",
+        "decrease",
+        "decrement",
+        "deep-dye",
+        "deluge",
+        "depletion",
+        "depreciation",
+        "depression",
+        "derogation",
+        "descend",
+        "descent",
+        "detraction",
+        "diminution",
+        "dipping",
+        "dish",
+        "dish out",
+        "dish up",
+        "disparagement",
+        "distemper",
+        "diver",
+        "double-dye",
+        "douse",
+        "dousing",
+        "downgate",
+        "downgrade",
+        "downhill",
+        "downslide",
+        "downswing",
+        "downtrend",
+        "downturn",
+        "draw",
+        "drop",
+        "drown",
+        "duck",
+        "ducking",
+        "dunk",
+        "dunking",
+        "dye",
+        "emblazon",
+        "enamel",
+        "engild",
+        "engulf",
+        "engulfment",
+        "exchange colors",
+        "extraction",
+        "face",
+        "fall",
+        "fall away",
+        "fall off",
+        "falling-off",
+        "falloff",
+        "farthing dip",
+        "fast-dye",
+        "feather",
+        "fingersmith",
+        "fishtail",
+        "fixing bath",
+        "flag",
+        "flag down",
+        "flash",
+        "float",
+        "flood",
+        "flow on",
+        "fold",
+        "follicle",
+        "fork",
+        "fresco",
+        "funnel chest",
+        "gild",
+        "give a signal",
+        "give the nod",
+        "glance",
+        "glaze",
+        "gloss",
+        "go down",
+        "go downhill",
+        "go uphill",
+        "grade",
+        "grain",
+        "hail",
+        "hail and speak",
+        "half-mast",
+        "hang",
+        "hanging",
+        "hock",
+        "hoist a banner",
+        "hole",
+        "hollow",
+        "hollow shell",
+        "hue",
+        "illuminate",
+        "imbue",
+        "immerge",
+        "immergence",
+        "immerse",
+        "immersion",
+        "impairment",
+        "impignorate",
+        "incline",
+        "ingrain",
+        "inundate",
+        "inundation",
+        "japan",
+        "keel",
+        "kick",
+        "lacquer",
+        "lacuna",
+        "lade",
+        "ladle",
+        "lay on color",
+        "lean",
+        "leer",
+        "lessening",
+        "light-fingered gentry",
+        "list",
+        "loop",
+        "make a sign",
+        "mercury bath",
+        "merge",
+        "mobsman",
+        "mortgage",
+        "nod",
+        "nose-dive",
+        "nudge",
+        "overwhelm",
+        "paint",
+        "parget",
+        "pickpocket",
+        "pigment",
+        "pit",
+        "pitch",
+        "pledge",
+        "plow",
+        "plunge",
+        "plunge in water",
+        "pocket",
+        "poke",
+        "pop",
+        "porpoise",
+        "pour",
+        "pour on",
+        "prime",
+        "pull out",
+        "pull up",
+        "punch bowl",
+        "push down",
+        "rain",
+        "raise a cry",
+        "rake",
+        "reduction",
+        "remission",
+        "retraction",
+        "retreat",
+        "retrenchment",
+        "rise",
+        "roll",
+        "rush candle",
+        "rushlight",
+        "sag",
+        "salute",
+        "scoop",
+        "set",
+        "shade",
+        "shadow",
+        "sheep dip",
+        "sheer",
+        "shell",
+        "shellac",
+        "shelve",
+        "shortening",
+        "shovel",
+        "shrinkage",
+        "sideslip",
+        "sidle",
+        "sign",
+        "signal",
+        "signalize",
+        "sink",
+        "sinkage",
+        "sinkhole",
+        "sinking",
+        "sinus",
+        "skew",
+        "skid",
+        "slant",
+        "slip",
+        "slop on paint",
+        "slope",
+        "slue",
+        "sluice",
+        "slump",
+        "smear",
+        "socket",
+        "sound an alarm",
+        "sound the trumpet",
+        "souse",
+        "sousing",
+        "spade",
+        "speak",
+        "spin",
+        "spiral",
+        "spoon",
+        "spout",
+        "sprinkle",
+        "stain",
+        "stipple",
+        "stoop",
+        "stunt",
+        "submerge",
+        "submergence",
+        "submerse",
+        "submersion",
+        "swag",
+        "swamp",
+        "sway",
+        "swell-mobsman",
+        "tallow candle",
+        "tallow dip",
+        "taper",
+        "tilt",
+        "tinct",
+        "tincture",
+        "tinge",
+        "tint",
+        "tip",
+        "tone",
+        "touch",
+        "trough",
+        "truncation",
+        "tumble",
+        "undercoat",
+        "undulate",
+        "unfurl a flag",
+        "uprise",
+        "varnish",
+        "veer",
+        "votary candle",
+        "vug",
+        "wash",
+        "wave",
+        "wave a flag",
+        "wave the hand",
+        "wax candle",
+        "whelm",
+        "whitewash",
+        "wink",
+        "wire",
+        "yaw"
+      ]
+    },
+    "dipaschal": {
+      "word": "DIPASCHAL",
+      "definitions": [
+        {
+          "text": "Including two passovers. Carpenter.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipchick": {
+      "word": "DIPCHICK",
+      "definitions": [
+        {
+          "text": "See Dabchick.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipetalous": {
+      "word": "DIPETALOUS",
+      "definitions": [
+        {
+          "text": "Having two petals; two-petaled.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphenyl": {
+      "word": "DIPHENYL",
+      "definitions": [
+        {
+          "text": "A white crystalline substance, C6H5.C6H5, obtained by leading benzene through a heated iron tube. It consists of two benzene or phenyl radicals united.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphtheria": {
+      "word": "DIPHTHERIA",
+      "definitions": [
+        {
+          "text": "A very dangerous contagious disease in which the air passages, and especially the throat, become coated with a false membrane, produced by the solidification of an inflammatory exudation. Cf. Group.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "African lethargy",
+        "Asiatic cholera",
+        "Chagres fever",
+        "German measles",
+        "Haverhill fever",
+        "acute articular rheumatism",
+        "ague",
+        "alkali disease",
+        "amebiasis",
+        "amebic dysentery",
+        "anthrax",
+        "bacillary dysentery",
+        "bastard measles",
+        "black death",
+        "black fever",
+        "blackwater fever",
+        "breakbone fever",
+        "brucellosis",
+        "bubonic plague",
+        "cachectic fever",
+        "cerebral rheumatism",
+        "chicken pox",
+        "cholera",
+        "cowpox",
+        "dandy fever",
+        "deer fly fever",
+        "dengue",
+        "dengue fever",
+        "dumdum fever",
+        "dysentery",
+        "elephantiasis",
+        "encephalitis lethargica",
+        "enteric fever",
+        "erysipelas",
+        "famine fever",
+        "five-day fever",
+        "flu",
+        "frambesia",
+        "glandular fever",
+        "grippe",
+        "hansenosis",
+        "hepatitis",
+        "herpes",
+        "herpes simplex",
+        "herpes zoster",
+        "histoplasmosis",
+        "hookworm",
+        "hydrophobia",
+        "infantile paralysis",
+        "infectious mononucleosis",
+        "inflammatory rheumatism",
+        "influenza",
+        "jail fever",
+        "jungle rot",
+        "kala azar",
+        "kissing disease",
+        "lepra",
+        "leprosy",
+        "leptospirosis",
+        "loa loa",
+        "loaiasis",
+        "lockjaw",
+        "madness",
+        "malaria",
+        "malarial fever",
+        "marsh fever",
+        "measles",
+        "meningitis",
+        "milzbrand",
+        "mumps",
+        "ornithosis",
+        "osteomyelitis",
+        "paratyphoid fever",
+        "parotitis",
+        "parrot fever",
+        "pertussis",
+        "pneumonia",
+        "polio",
+        "poliomyelitis",
+        "polyarthritis rheumatism",
+        "ponos",
+        "psittacosis",
+        "rabbit fever",
+        "rabies",
+        "rat-bite fever",
+        "relapsing fever",
+        "rheumatic fever",
+        "rickettsialpox",
+        "ringworm",
+        "rubella",
+        "rubeola",
+        "scarlatina",
+        "scarlet fever",
+        "schistosomiasis",
+        "septic sore throat",
+        "shingles",
+        "sleeping sickness",
+        "sleepy sickness",
+        "smallpox",
+        "snail fever",
+        "splenic fever",
+        "spotted fever",
+        "strep throat",
+        "swamp fever",
+        "tetanus",
+        "thrush",
+        "tinea",
+        "trench fever",
+        "trench mouth",
+        "tuberculosis",
+        "tularemia",
+        "typhoid",
+        "typhoid fever",
+        "typhus",
+        "typhus fever",
+        "undulant fever",
+        "vaccinia",
+        "varicella",
+        "variola",
+        "venereal disease",
+        "viral dysentery",
+        "whooping cough",
+        "yaws",
+        "yellow fever",
+        "yellow jack",
+        "zona",
+        "zoster"
+      ]
+    },
+    "diphtherialdiphtheric": {
+      "word": "DIPHTHERIAL; DIPHTHERIC",
+      "definitions": [
+        {
+          "text": "Relating to diphtheria; diphtheritic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphtheritic": {
+      "word": "DIPHTHERITIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or connected with, diphtheria.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having characteristics resembling those of diphtheria; as, diphtheritic inflammation of the bladder.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphthong": {
+      "word": "DIPHTHONG",
+      "definitions": [
+        {
+          "text": "To form or pronounce as a diphthong; diphthongize. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "allophone",
+        "alveolar",
+        "apico-alveolar",
+        "apico-dental",
+        "articulation",
+        "aspiration",
+        "assimilation",
+        "bilabial",
+        "cacuminal",
+        "cerebral",
+        "check",
+        "consonant",
+        "continuant",
+        "dental",
+        "dissimilation",
+        "epenthetic vowel",
+        "explosive",
+        "glide",
+        "glottal",
+        "glottalization",
+        "guttural",
+        "labial",
+        "labialization",
+        "labiodental",
+        "labiovelar",
+        "laryngeal",
+        "lateral",
+        "lingual",
+        "liquid",
+        "manner of articulation",
+        "modification",
+        "monophthong",
+        "morphophoneme",
+        "mute",
+        "nasal",
+        "occlusive",
+        "palatal",
+        "parasitic vowel",
+        "peak",
+        "pharyngeal",
+        "pharyngealization",
+        "phone",
+        "phoneme",
+        "plosive",
+        "prothetic vowel",
+        "retroflex",
+        "segmental phoneme",
+        "semivowel",
+        "sonant",
+        "sonority",
+        "speech sound",
+        "stop",
+        "surd",
+        "syllabic nucleus",
+        "syllabic peak",
+        "syllable",
+        "transition sound",
+        "triphthong",
+        "velar",
+        "vocable",
+        "vocalic",
+        "vocoid",
+        "voice",
+        "voiced sound",
+        "voiceless sound",
+        "voicing",
+        "vowel"
+      ]
+    },
+    "diphthongal": {
+      "word": "DIPHTHONGAL",
+      "definitions": [
+        {
+          "text": "Relating or belonging to a diphthong; having the nature of a",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphthongalize": {
+      "word": "DIPHTHONGALIZE",
+      "definitions": [
+        {
+          "text": "To make into a diphthong; to pronounce as a diphthong.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphthongation": {
+      "word": "DIPHTHONGATION",
+      "definitions": [
+        {
+          "text": "See Diphthongization.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphthongic": {
+      "word": "DIPHTHONGIC",
+      "definitions": [
+        {
+          "text": "Of the nature of diphthong; diphthongal. H. Sweet.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphthongization": {
+      "word": "DIPHTHONGIZATION",
+      "definitions": [
+        {
+          "text": "The act of changing into a diphthong. H. Sweet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphthongize": {
+      "word": "DIPHTHONGIZE",
+      "definitions": [
+        {
+          "text": "To change into a diphthong, as by affixing another vowel to a simple vowel. \"The diphthongized long vowels.\" H. Sweet.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphycercal": {
+      "word": "DIPHYCERCAL",
+      "definitions": [
+        {
+          "text": "Having the tail fin divided into two equal parts by the notochord, or end of the vertebral column; protocercal. See Protocercal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphygenic": {
+      "word": "DIPHYGENIC",
+      "definitions": [
+        {
+          "text": "Having two modes of embryonic development.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphyllous": {
+      "word": "DIPHYLLOUS",
+      "definitions": [
+        {
+          "text": "Having two leaves, as a calyx, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphyodont": {
+      "word": "DIPHYODONT",
+      "definitions": [
+        {
+          "text": "Having two successive sets of teeth (deciduous and permanent), one succeeding the other; as, a diphyodont mammal; diphyodont dentition; -- opposed to monophyodont.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An animal having two successive sets of teeth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphyozooid": {
+      "word": "DIPHYOZOOID",
+      "definitions": [
+        {
+          "text": "One of the free-swimming sexual zooids of Siphonophora.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplanar": {
+      "word": "DIPLANAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to two planes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipleidoscope": {
+      "word": "DIPLEIDOSCOPE",
+      "definitions": [
+        {
+          "text": "An instrument for determining the time of apparent noon. It consists of two mirrors and a plane glass disposed in the form of a prism, so that, by the reflections of the sun's rays from their surfaces, two images are presented to the eye, moving in opposite directions, and coinciding at the instant the sun's center is on the meridian.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplex": {
+      "word": "DIPLEX",
+      "definitions": [
+        {
+          "text": "Pertaining to the sending of two messages in the same direction at the same time. Diplex and contraplex are the two varieties of duplex.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diploblastic": {
+      "word": "DIPLOBLASTIC",
+      "definitions": [
+        {
+          "text": "Characterizing the ovum when it has two primary germinal layers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplocardiac": {
+      "word": "DIPLOCARDIAC",
+      "definitions": [
+        {
+          "text": "Having the heart completely divided or double, one side systemic, the other pulmonary.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplococcus": {
+      "word": "DIPLOCOCCUS",
+      "definitions": [
+        {
+          "text": "A form of micrococcus in which cocci are united in a binary manner. See Micrococcus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diploe": {
+      "word": "DIPLOE",
+      "definitions": [
+        {
+          "text": "The soft, spongy, or cancellated substance between the plates of the skull.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diploetic": {
+      "word": "DIPLOETIC",
+      "definitions": [
+        {
+          "text": "Diploic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplogenic": {
+      "word": "DIPLOGENIC",
+      "definitions": [
+        {
+          "text": "Partaking of the nature of two bodies; producing two substances. Wright.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplograph": {
+      "word": "DIPLOGRAPH",
+      "definitions": [
+        {
+          "text": "An instrument used for double writing, as one for producing",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diploic": {
+      "word": "DIPLOIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the diploë.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diploid": {
+      "word": "DIPLOID",
+      "definitions": [
+        {
+          "text": "A solid bounded by twenty-four similar quadrilateral faces. It is a hemihedral form of the hexoctahedron.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diploma": {
+      "word": "DIPLOMA",
+      "definitions": [
+        {
+          "text": "A letter or writing, usually under seal, conferring some privilege, honor, or power; a document bearing record of a degree conferred by a literary society or educational institution.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "affidavit",
+        "attestation",
+        "authority",
+        "authorization",
+        "bill of health",
+        "brevet",
+        "certificate",
+        "certificate of proficiency",
+        "certification",
+        "charter",
+        "concession",
+        "credential",
+        "deposition",
+        "franchise",
+        "grant",
+        "letters patent",
+        "liberty",
+        "navicert",
+        "notarized statement",
+        "note",
+        "patent",
+        "royal grant",
+        "sheepskin",
+        "sworn statement",
+        "testamur",
+        "testimonial",
+        "ticket",
+        "visa",
+        "vise",
+        "voucher",
+        "warrant",
+        "warranty",
+        "witness"
+      ]
+    },
+    "diplomacy": {
+      "word": "DIPLOMACY",
+      "definitions": [
+        {
+          "text": "The art and practice of conducting negotiations between nations (particularly in securing treaties), including the methods and forms usually employed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Dexterity or skill in securing advantages; tact.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The body of ministers or envoys resident at a court; the diplomatic body. [R.] Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Eisenhower Doctrine",
+        "Machiavellianism",
+        "Machiavellism",
+        "Monroe Doctrine",
+        "Nixon Doctrine",
+        "Truman Doctrine",
+        "ability",
+        "address",
+        "adeptness",
+        "adroitness",
+        "airmanship",
+        "appeasement",
+        "artfulness",
+        "artisanship",
+        "artistry",
+        "balance of power",
+        "bravura",
+        "brilliance",
+        "brinkmanship",
+        "capability",
+        "capacity",
+        "cleverness",
+        "coexistence",
+        "colonialism",
+        "command",
+        "competence",
+        "compromise",
+        "containment",
+        "control",
+        "coordination",
+        "craft",
+        "craftsmanship",
+        "cunning",
+        "deftness",
+        "detente",
+        "deterrence",
+        "dexterity",
+        "dexterousness",
+        "dextrousness",
+        "diplomatic",
+        "diplomatics",
+        "discretion",
+        "dollar diplomacy",
+        "dollar imperialism",
+        "efficiency",
+        "expansionism",
+        "expertise",
+        "facility",
+        "finesse",
+        "foreign affairs",
+        "foreign policy",
+        "good-neighbor policy",
+        "grace",
+        "grip",
+        "handiness",
+        "horsemanship",
+        "imperialism",
+        "ingeniousness",
+        "ingenuity",
+        "internationalism",
+        "intrigue",
+        "isolationism",
+        "jobbery",
+        "jobbing",
+        "know-how",
+        "machination",
+        "maneuvering",
+        "manifest destiny",
+        "marksmanship",
+        "mastership",
+        "mastery",
+        "militarism",
+        "nationalism",
+        "negotiation",
+        "neocolonialism",
+        "neutralism",
+        "nonresistance",
+        "open door",
+        "open-door policy",
+        "peace offensive",
+        "peaceful coexistence",
+        "poise",
+        "politics",
+        "practical ability",
+        "preparedness",
+        "proficiency",
+        "prowess",
+        "quickness",
+        "readiness",
+        "resource",
+        "resourcefulness",
+        "savoir faire",
+        "savoir-faire",
+        "savvy",
+        "seamanship",
+        "shirt-sleeve diplomacy",
+        "shuttle diplomacy",
+        "skill",
+        "skillfulness",
+        "spheres of influence",
+        "statecraft",
+        "statesmanship",
+        "style",
+        "tact",
+        "tactfulness",
+        "technical brilliance",
+        "technical mastery",
+        "technical skill",
+        "technique",
+        "the big stick",
+        "timing",
+        "tough policy",
+        "virtuosity",
+        "wit",
+        "wizardry",
+        "workmanship",
+        "world politics"
+      ]
+    },
+    "diplomatdiplomate": {
+      "word": "DIPLOMAT; DIPLOMATE",
+      "definitions": [
+        {
+          "text": "A diplomatist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplomate": {
+      "word": "DIPLOMATE",
+      "definitions": [
+        {
+          "text": "To invest with a title o [R.] Wood.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplomatial": {
+      "word": "DIPLOMATIAL",
+      "definitions": [
+        {
+          "text": "Diplomatic. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplomatic": {
+      "word": "DIPLOMATIC",
+      "definitions": [
+        {
+          "text": "A minister, official agent, or envoy to a foreign court; a diplomatist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Daedalian",
+        "Machiavellian",
+        "Machiavellic",
+        "acute",
+        "adept",
+        "adroit",
+        "ambassadorial",
+        "apt",
+        "arch",
+        "artful",
+        "artistic",
+        "astute",
+        "authoritative",
+        "bland",
+        "bravura",
+        "brilliant",
+        "cagey",
+        "canny",
+        "civic",
+        "clean",
+        "clever",
+        "consular",
+        "coordinated",
+        "courteous",
+        "crack",
+        "crackerjack",
+        "crafty",
+        "cunning",
+        "cute",
+        "daedal",
+        "deceitful",
+        "deep",
+        "deep-laid",
+        "deft",
+        "delicate",
+        "designing",
+        "dexterous",
+        "dextrous",
+        "discerning",
+        "discreet",
+        "excellent",
+        "expert",
+        "fancy",
+        "feline",
+        "foxy",
+        "geopolitical",
+        "good",
+        "goodish",
+        "governmental",
+        "graceful",
+        "guileful",
+        "handy",
+        "ingenious",
+        "insidious",
+        "inventive",
+        "knowing",
+        "magisterial",
+        "masterful",
+        "masterly",
+        "ministerial",
+        "neat",
+        "no mean",
+        "pawky",
+        "perceptive",
+        "perspicacious",
+        "plenipotentiary",
+        "polite",
+        "politic",
+        "political",
+        "politico-commercial",
+        "politico-diplomatic",
+        "politico-economic",
+        "politico-geographical",
+        "politico-judicial",
+        "politico-military",
+        "politico-moral",
+        "politico-religious",
+        "politico-scientific",
+        "politico-social",
+        "politico-theological",
+        "professional",
+        "proficient",
+        "prudent",
+        "quick",
+        "quite some",
+        "ready",
+        "resourceful",
+        "scheming",
+        "sensitive",
+        "serpentine",
+        "sharp",
+        "shifty",
+        "shrewd",
+        "skillful",
+        "slick",
+        "slippery",
+        "sly",
+        "smooth",
+        "snaky",
+        "sneaky",
+        "some",
+        "sophistical",
+        "statesmanlike",
+        "stealthy",
+        "strategic",
+        "stylish",
+        "subtile",
+        "subtle",
+        "suffragist",
+        "supple",
+        "tactful",
+        "tactical",
+        "the compleat",
+        "the complete",
+        "thoughtful",
+        "trickish",
+        "tricksy",
+        "tricky",
+        "virtuoso",
+        "vulpine",
+        "wary",
+        "well-done",
+        "wily",
+        "wise",
+        "workmanlike"
+      ]
+    },
+    "diplomatically": {
+      "word": "DIPLOMATICALLY",
+      "definitions": [
+        {
+          "text": "According to the rules of diplomacy; in the manner of a diplomatist; artfully.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplomaticdiplomatical": {
+      "word": "DIPLOMATIC; DIPLOMATICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to diplomacy; relating to the foreign ministers at a court, who are called the diplomatic body.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Characterized by tact and shrewdness; dexterous; artful; as, diplomatic management.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to diplomatics; paleographic. Astle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplomatics": {
+      "word": "DIPLOMATICS",
+      "definitions": [
+        {
+          "text": "The science of diplomas, or the art of deciphering ancient writings, and determining their age, authenticity, etc.; paleography.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplomatism": {
+      "word": "DIPLOMATISM",
+      "definitions": [
+        {
+          "text": "Diplomacy. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplomatist": {
+      "word": "DIPLOMATIST",
+      "definitions": [
+        {
+          "text": "A person employed in, or skilled in, diplomacy; a diplomat. In ability, Avaux had no superior among the numerous able diplomatics whom his country then possessed. Macaulay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplopiadiplopy": {
+      "word": "DIPLOPIA; DIPLOPY",
+      "definitions": [
+        {
+          "text": "The act or state of seeing double. eye is upon the left hand, and that seen by the left eye is upon the right hand. In homonymous diplopia the image seen by the right eye is on the right side, that by the left eye on the left side. In vertical diplopia one image stands above the other.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplopod": {
+      "word": "DIPLOPOD",
+      "definitions": [
+        {
+          "text": "One of the Diplopoda.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplopoda": {
+      "word": "DIPLOPODA",
+      "definitions": [
+        {
+          "text": "An order of myriapods having two pairs of legs on each segment; the Chilognatha.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplostemonous": {
+      "word": "DIPLOSTEMONOUS",
+      "definitions": [
+        {
+          "text": "Having twice as many stamens as petals, as the geranium. R. Brown.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplostemony": {
+      "word": "DIPLOSTEMONY",
+      "definitions": [
+        {
+          "text": "The condition of being diplostemonous.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipneumona": {
+      "word": "DIPNEUMONA",
+      "definitions": [
+        {
+          "text": "A group of spiders having only two lunglike organs. [Written also Dipneumones.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipnoi": {
+      "word": "DIPNOI",
+      "definitions": [
+        {
+          "text": "A group of ganoid fishes, including the living genera Ceratodus and Lepidosiren, which present the closest approximation to the Amphibia. The air bladder acts as a lung, and the nostrils open inside the mouth. See Ceratodus, and Illustration in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipody": {
+      "word": "DIPODY",
+      "definitions": [
+        {
+          "text": "Two metrical feet taken together, or included in one measure. Hadley. Trochaic, iambic, and anapestic verses . . . are measured by dipodies. W. W. Goodwin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipolar": {
+      "word": "DIPOLAR",
+      "definitions": [
+        {
+          "text": "Having two poles, as a magnetic bar.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dippel'soil": {
+      "word": "DIPPEL'S OIL",
+      "definitions": [
+        {
+          "text": "See Bone oil, under Bone.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipper": {
+      "word": "DIPPER",
+      "definitions": [
+        {
+          "text": "One who, or that which, dips; especially, a vessel used to dip water or other liquid; a ladle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.) (a) A small grebe; the dabchick. (b) The buffel duck. (c) The water ouzel (Cinolus aquaticus) of Europe. (d) The American dipper or ouzel (Cinclus Mexicanus). The Dipper (Astron.), the seven principal stars in the constellation of the Great Bear; popularly so called from their arrangement in the form of a dipper; -- called also Charles's Wain. See Ursa Major, under Ursa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipping": {
+      "word": "DIPPING",
+      "definitions": [
+        {
+          "text": "The act or process of immersing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of inclining downward.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of lifting or moving a liquid with a dipper, ladle, or the like.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The process of cleaning or brightening sheet metal or metalware, esp. brass, by dipping it in acids, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The practice of taking snuff by rubbing the teeth or gums with a stick or brush dipped in snuff. [U.S.] Dipping needle, a magnetic needle suspended at its center of gravity, and moving freely in a vertical plane, so as to indicate on a graduated circle the magnetic dip or inclination.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "baptism",
+        "burial",
+        "declined",
+        "declining",
+        "declivate",
+        "declivitous",
+        "declivous",
+        "descending",
+        "dip",
+        "dousing",
+        "downgrade",
+        "downhill",
+        "dropping",
+        "duck",
+        "ducking",
+        "dunking",
+        "engulfment",
+        "falling",
+        "immergence",
+        "immersion",
+        "inundation",
+        "sinking",
+        "souse",
+        "sousing",
+        "submergence",
+        "submersion"
+      ]
+    },
+    "diprismatic": {
+      "word": "DIPRISMATIC",
+      "definitions": [
+        {
+          "text": "Doubly prismatic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipropargyl": {
+      "word": "DIPROPARGYL",
+      "definitions": [
+        {
+          "text": "A pungent, mobile, volatile liquid, C6H6, produced artificially from certain allyl derivatives. Though isomeric with benzine, it is very different in its chemical relations. Called also dipropinyl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipropyl": {
+      "word": "DIPROPYL",
+      "definitions": [
+        {
+          "text": "One of the hexane paraffins, found in petroleum, consisting of two propyl radicals. See Hexane.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diprotodon": {
+      "word": "DIPROTODON",
+      "definitions": [
+        {
+          "text": "An extinct Quaternary marsupial from Australia, about as large as the hippopotamus; -- so named because of its two large front teeth. See Illustration in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipsas": {
+      "word": "DIPSAS",
+      "definitions": [
+        {
+          "text": "A serpent whose bite was fabled to produce intense thirst. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A genus of harmless colubrine snakes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipsetic": {
+      "word": "DIPSETIC",
+      "definitions": [
+        {
+          "text": "Tending to produce thirst. Wright.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipseydipsiedipsy": {
+      "word": "DIPSEY; DIPSIE; DIPSY",
+      "definitions": [
+        {
+          "text": "Deep-sea; as, a dipsey line; a dipsy lead. [Sailor's Cant]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A sinker attached to a fishing line; also, a line having several branches, each with such a sinker, used in deep-sea fishing. [Local, U. S.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.) A deep-sea lead. [Rare]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipsomania": {
+      "word": "DIPSOMANIA",
+      "definitions": [
+        {
+          "text": "A morbid an uncontrollable craving (often periodic) for drink, esp. for alcoholic liquors; also improperly used to denote acute and chronic alcoholism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "a habit",
+        "abulia",
+        "acquired tolerance",
+        "acute alcoholism",
+        "addictedness",
+        "addiction",
+        "alcoholic addiction",
+        "alcoholic psychosis",
+        "alcoholism",
+        "amphetamine withdrawal symptoms",
+        "arteriosclerotic psychosis",
+        "barbiturate addiction",
+        "barbiturism",
+        "bottle nose",
+        "certifiability",
+        "chain smoking",
+        "chronic alcoholism",
+        "cocainism",
+        "crash",
+        "craving",
+        "delirium tremens",
+        "dementia paralytica",
+        "dependence",
+        "drug addiction",
+        "drug culture",
+        "drug dependence",
+        "ebriosity",
+        "folie du doute",
+        "functional psychosis",
+        "general paralysis",
+        "general paresis",
+        "grog blossom",
+        "habitual drunkenness",
+        "habituation",
+        "heavy drinking",
+        "metabolic psychosis",
+        "moral insanity",
+        "neurosis",
+        "nicotine addiction",
+        "oenomania",
+        "oinomania",
+        "organic psychosis",
+        "paralytic dementia",
+        "pathological drunkenness",
+        "physical dependence",
+        "presenile dementia",
+        "prison psychosis",
+        "problem drinking",
+        "psychological dependence",
+        "psychopathia",
+        "psychopathia sexualis",
+        "psychopathic condition",
+        "psychopathic personality",
+        "psychopathy",
+        "psychosis",
+        "senile dementia",
+        "senile psychosis",
+        "senility",
+        "sexual pathology",
+        "situational psychosis",
+        "syphilitic paresis",
+        "tolerance",
+        "toxic psychosis",
+        "withdrawal sickness",
+        "withdrawal symptoms"
+      ]
+    },
+    "dipsomaniac": {
+      "word": "DIPSOMANIAC",
+      "definitions": [
+        {
+          "text": "One who has an irrepressible desire for alcoholic drinks.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "LSD user",
+        "acidhead",
+        "addict",
+        "alcoholic",
+        "alcoholic addict",
+        "bacchanal",
+        "bacchanalian",
+        "bibber",
+        "big drunk",
+        "boozer",
+        "carouser",
+        "chain smoker",
+        "chronic alcoholic",
+        "chronic drunk",
+        "cocaine sniffer",
+        "cokie",
+        "cubehead",
+        "devotee of Bacchus",
+        "dope fiend",
+        "doper",
+        "drinker",
+        "drug abuser",
+        "drug addict",
+        "drug user",
+        "drunk",
+        "drunkard",
+        "fiend",
+        "freak",
+        "glue sniffer",
+        "guzzler",
+        "habitual",
+        "hard drinker",
+        "head",
+        "heavy drinker",
+        "heavy smoker",
+        "hophead",
+        "hype",
+        "imbiber",
+        "inebriate",
+        "junkie",
+        "lovepot",
+        "marijuana smoker",
+        "methhead",
+        "narcotics addict",
+        "oenophilist",
+        "pathological drinker",
+        "pillhead",
+        "pot companion",
+        "pothead",
+        "problem drinker",
+        "reveler",
+        "serious drinker",
+        "shikker",
+        "snowbird",
+        "soaker",
+        "social drinker",
+        "sot",
+        "speed freak",
+        "swigger",
+        "swiller",
+        "thirsty soul",
+        "tippler",
+        "toper",
+        "tosspot",
+        "tripper",
+        "user",
+        "wassailer",
+        "winebibber"
+      ]
+    },
+    "dipsomaniacal": {
+      "word": "DIPSOMANIACAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to dipsomania.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipsosis": {
+      "word": "DIPSOSIS",
+      "definitions": [
+        {
+          "text": "Excessive thirst produced by disease.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diptera": {
+      "word": "DIPTERA",
+      "definitions": [
+        {
+          "text": "An extensive order of insects having only two functional wings and two balancers, as the house fly, mosquito, etc. They have a suctorial proboscis, often including two pairs of sharp organs (mandibles and maxillæ) with which they pierce the skin of animals. They undergo a complete metamorphosis, their larvæ (called maggots) being usually without feet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipteral": {
+      "word": "DIPTERAL",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having two wings only; belonging to the order Diptera.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anc. Arch.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having a double row of columns on each on the flanks, as well as in front and rear; -- said of a temple.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipteran": {
+      "word": "DIPTERAN",
+      "definitions": [
+        {
+          "text": "An insect of the order Diptera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipterocarpus": {
+      "word": "DIPTEROCARPUS",
+      "definitions": [
+        {
+          "text": "A genus of trees found in the East Indies, some species of which produce a fragrant resin, other species wood oil. The fruit has two long wings.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipterous": {
+      "word": "DIPTEROUS",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having two wings, as certain insects; belonging to the order Diptera.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having two wings; two-winged.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipterygian": {
+      "word": "DIPTERYGIAN",
+      "definitions": [
+        {
+          "text": "Having two dorsal fins; -- said of certain fishes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diptote": {
+      "word": "DIPTOTE",
+      "definitions": [
+        {
+          "text": "A noun which has only two cases. Andrews.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diptych": {
+      "word": "DIPTYCH",
+      "definitions": [
+        {
+          "text": "Anything consisting of two leaves. Especially: (a) (Roman Antiq.) A writing tablet consisting of two leaves of rigid material connected by hinges and shutting together so as to protect the writing within. (b) A picture or series of pictures painted on two tablets connected by hinges. See Triptych.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A double catalogue, containing in one part the names of living, and in the other of deceased, ecclesiastics and benefactors of the church; a catalogue of saints.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Domesday Book",
+        "abstract",
+        "abstraction",
+        "account book",
+        "address book",
+        "adversaria",
+        "album",
+        "altarpiece",
+        "annual",
+        "appointment calendar",
+        "appointment schedule",
+        "blankbook",
+        "block print",
+        "blotter",
+        "calendar",
+        "cashbook",
+        "catalog",
+        "classified catalog",
+        "collage",
+        "color print",
+        "commonplace book",
+        "copy",
+        "court calendar",
+        "cyclorama",
+        "daub",
+        "daybook",
+        "desk calendar",
+        "diary",
+        "docket",
+        "engagement book",
+        "engraving",
+        "fresco",
+        "icon",
+        "illumination",
+        "illustration",
+        "image",
+        "journal",
+        "ledger",
+        "likeness",
+        "log",
+        "logbook",
+        "loose-leaf notebook",
+        "memo book",
+        "memorandum book",
+        "memory book",
+        "miniature",
+        "montage",
+        "mosaic",
+        "mural",
+        "notebook",
+        "pad",
+        "panorama",
+        "petty cashbook",
+        "photograph",
+        "picture",
+        "pocket notebook",
+        "pocketbook",
+        "police blotter",
+        "print",
+        "representation",
+        "reproduction",
+        "scrapbook",
+        "scratch pad",
+        "spiral notebook",
+        "stained glass window",
+        "stencil",
+        "still life",
+        "table",
+        "tableau",
+        "tablet",
+        "tapestry",
+        "triptych",
+        "wall painting",
+        "workbook",
+        "writing tablet",
+        "yearbook"
+      ]
+    },
+    "dipyre": {
+      "word": "DIPYRE",
+      "definitions": [
+        {
+          "text": "A mineral of the scapolite group; -- so called from the double effect of fire upon it, in fusing it, and rendering it phosphorescent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipyrenous": {
+      "word": "DIPYRENOUS",
+      "definitions": [
+        {
+          "text": "Containing two stones or nutlets.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipyridine": {
+      "word": "DIPYRIDINE",
+      "definitions": [
+        {
+          "text": "A polymeric form of pyridine, C10H10N2, obtained as a colorless oil by the action of sodium on pyridine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipyridyl": {
+      "word": "DIPYRIDYL",
+      "definitions": [
+        {
+          "text": "A crystalline nitrogenous base, C10H8N2, obtained by the reduction of pyridine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

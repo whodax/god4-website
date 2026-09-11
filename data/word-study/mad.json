@@ -1,0 +1,631 @@
+{
+  "version": "v1",
+  "entries": {
+    "mad": {
+      "word": "MAD",
+      "definitions": [
+        {
+          "text": "of Made. Chaucer.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Disordered in intellect; crazy; insane. I have heard my grandsire say full oft, Extremity of griefs would make men mad. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Excited beyond self-control or the restraint of reason; inflamed by violent or uncontrollable desire, passion, or appetite; as, to be mad with terror, lust, or hatred; mad against political reform. It is the land of graven images, and they are mad upon their idols. Jer. 1. 88. And being exceedingly mad against them, I persecuted them even unto strange cities. Acts xxvi. 11.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Proceeding from, or indicating, madness; expressing distraction; prompted by infatuation, fury, or extreme rashness. \"Mad demeanor.\" Milton. Mad wars destroy in one year the works of many years of peace. Franklin. The mad promise of Cleon was fulfilled. Jowett (Thucyd.).",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Extravagant; immoderate. \"Be mad and merry.\" Shak. \"Fetching mad bounds.\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Furious with rage, terror, or disease; -- said of the lower animals; as, a mad bull; esp., having hydrophobia; rabid; as, a mad dog.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Angry; out of patience; vexed; as, to get mad at a person. [Colloq.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having impaired polarity; -- applied to a compass needle. [Colloq.] Like mad, like a mad person; in a furious manner; as, to run like mad. L'Estrange. about under the influence of hydrophobia; to become affected with hydrophobia. immoderate desire. \"The world is running mad after farce.\" Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To make mad or furious; to madden. Had I but seen thy picture in this plight, It would have madded me. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be mad; to go mad; to rave. See Madding. [Archaic] Chaucer. Festus said with great voice, Paul thou maddest. Wyclif (Acts).",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "An earthworm. [Written also made.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madam": {
+      "word": "MADAM",
+      "definitions": [
+        {
+          "text": "A gentlewoman; -- an appellation or courteous form of address given to a lady, especially an elderly or a married lady; -- much used in the address, at the beginning of a letter, to a woman. The corresponding word in addressing a man is Sir.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madame": {
+      "word": "MADAME",
+      "definitions": [
+        {
+          "text": "My lady; -- a French title formerly given to ladies of quality; now, in France, given to all married women. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madapple": {
+      "word": "MAD-APPLE",
+      "definitions": [
+        {
+          "text": "See Eggplant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madbrain": {
+      "word": "MADBRAIN",
+      "definitions": [
+        {
+          "text": "Hot-headed; rash. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A rash or hot-headed person.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madbrained": {
+      "word": "MADBRAINED",
+      "definitions": [
+        {
+          "text": "Disordered in mind; hot-headed. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madcap": {
+      "word": "MADCAP",
+      "definitions": [
+        {
+          "text": "Inclined to wild sports; delighting in rash, absurd, or dangerous amusements. \"The merry madcap",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "lord.\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Wild; reckless. \"Madcap follies\" Beau. & Fl.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A person of wild behavior; an excitable, rash, violent person. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madden": {
+      "word": "MADDEN",
+      "definitions": [
+        {
+          "text": "To make mad; to drive to madness; to craze; to excite violently with passion; to make very angry; to enrage.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become mad; to act as if mad. They rave, recite, and madden round the land. Pope.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madder": {
+      "word": "MADDER",
+      "definitions": [
+        {
+          "text": "A plant of the Rubia (R. tinctorum). The root is much used in dyeing red, and formerly was used in medicine. It is cultivated in France and Holland. See Rubiaceous. which receive their names from their colors; as. madder yellow. Field madder, an annual European weed (Sherardia arvensis) resembling madder. East for dyeing; -- called also munjeet. a kind of bedstraw.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madderwort": {
+      "word": "MADDERWORT",
+      "definitions": [
+        {
+          "text": "A name proposed for any plant of the same natural order (Rubiaceæ) as the madder.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "maddish": {
+      "word": "MADDISH",
+      "definitions": [
+        {
+          "text": "Somewhat mad. Beau. & Fl.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "made": {
+      "word": "MADE",
+      "definitions": [
+        {
+          "text": "See Mad, n.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "of Make.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Artificially produced; pieced together; formed by filling in; as, made ground; a made mast, in distinction from one consisting of a single spar. Made up. (a) Complete; perfect. \"A made up villain.\" Shak. (b) Falsely devised; fabricated; as, a made up story. (c) Artificial; as, a made up figure or complexion.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madecassee": {
+      "word": "MADECASSEE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Madagascar or its inhabitants.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madecassmadecassee": {
+      "word": "MADECASS; MADECASSEE",
+      "definitions": [
+        {
+          "text": "A native or inhabitant of Madagascar, or Madecassee; the language of the natives of Madagascar. See Malagasy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madecontrfrcaedimentumfrcaederetocutprobakinto": {
+      "word": "made, contr. fr. caedimentum, fr. caedere to cut, prob. akin to",
+      "definitions": [
+        {
+          "text": "Any substance used for making bodies adhere to each other, as mortar, glue, etc.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A kind of calcined limestone, or a calcined mixture of clay and",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madefactionmadefication": {
+      "word": "MADEFACTION; MADEFICATION",
+      "definitions": [
+        {
+          "text": "The act of madefying, or making wet; the state of that which is made wet. [R.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madefy": {
+      "word": "MADEFY",
+      "definitions": [
+        {
+          "text": "To make wet or moist. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madegassy": {
+      "word": "MADEGASSY",
+      "definitions": [
+        {
+          "text": "See Madecassee.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madeira": {
+      "word": "MADEIRA",
+      "definitions": [
+        {
+          "text": "A rich wine made on the Island of Madeira. A cup of Madeira, and a cold capon's leg. Shak. Madeira nut (Bot.), the European walnut; the nut of the Juglans regia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madeiravine": {
+      "word": "MADEIRA VINE",
+      "definitions": [
+        {
+          "text": "A herbaceous climbing vine (Boussingaultia baselloides) very popular in cultivation, having shining entire leaves and racemes of small fragrant white flowers.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "mademoiselle": {
+      "word": "MADEMOISELLE",
+      "definitions": [
+        {
+          "text": "A French title of courtesy given to a girl or an unmarried lady, equivalent to the English Miss. Goldsmith.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A marine food fish (Sciæna chrysura), of the Southern United States; -- called also yellowtail, and silver perch.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madheaded": {
+      "word": "MAD-HEADED",
+      "definitions": [
+        {
+          "text": "Wild; crack-brained.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madhouse": {
+      "word": "MADHOUSE",
+      "definitions": [
+        {
+          "text": "A house where insane persons are confined; an insane asylum; a bedlam.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madia": {
+      "word": "MADIA",
+      "definitions": [
+        {
+          "text": "A genus of composite plants, of which one species (Madia sativa) is cultivated for the oil yielded from its seeds by pressure. This oil is sometimes used instead of olive oil for the table.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madid": {
+      "word": "MADID",
+      "definitions": [
+        {
+          "text": "Wet; moist; as, a madid eye. [R.] Beaconsfield.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madisterium": {
+      "word": "MADISTERIUM",
+      "definitions": [
+        {
+          "text": "An instrument to extract hairs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madjoun": {
+      "word": "MADJOUN",
+      "definitions": [
+        {
+          "text": "An intoxicating confection from the hemp plant; -- used by the Turks and Hindoos. [Written also majoun.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madly": {
+      "word": "MADLY",
+      "definitions": [
+        {
+          "text": "In a mad manner; without reason or understanding; wildly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madman": {
+      "word": "MADMAN",
+      "definitions": [
+        {
+          "text": "A man who is mad; lunatic; a crazy person. When a man mistakes his thoughts for person and things, he is mad. A madman is properly so defined. Coleridge.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madnep": {
+      "word": "MADNEP",
+      "definitions": [
+        {
+          "text": "The masterwort (Peucedanum Ostruthium).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madness": {
+      "word": "MADNESS",
+      "definitions": [
+        {
+          "text": "The condition of being mad; insanity; lunacy.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Frenzy; ungovernable rage; extreme folly. frenzy; franticness; rage; aberration; alienation; monomania. See Insanity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madonna": {
+      "word": "MADONNA",
+      "definitions": [
+        {
+          "text": "My lady; -- a term of address in Italian formerly used as the equivalent of Madame, but for which Signora is now substituted. Sometimes introduced into English. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "[pl. Madonnas (naz).]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A picture of the Virgin Mary (usually with the babe). The Italian painters are noted for drawing the Madonnas by their own wives or mistresses. Rymer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madoqua": {
+      "word": "MADOQUA",
+      "definitions": [
+        {
+          "text": "A small Abyssinian antelope (Neotragus Saltiana), about the size of a hare.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrague": {
+      "word": "MADRAGUE",
+      "definitions": [
+        {
+          "text": "A large fish pound used for the capture of the tunny in the Mediterranean; also applied to the seines used for the same purpose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madras": {
+      "word": "MADRAS",
+      "definitions": [
+        {
+          "text": "A large silk-and-cotton kerchief, usually of bright colors, such as those often used by negroes for turbans. A black woman in blue cotton gown, red-and-yellow madras turban . . . crouched against the wall. G. W. Cable.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madreperl": {
+      "word": "MADREPERL",
+      "definitions": [
+        {
+          "text": "Mother-of-pearl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrepora": {
+      "word": "MADREPORA",
+      "definitions": [
+        {
+          "text": "A genus of reef corals abundant in tropical seas. It includes than one hundred and fifty species, most of which are elegantly",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madreporaria": {
+      "word": "MADREPORARIA",
+      "definitions": [
+        {
+          "text": "An extensive division of Anthozoa, including most of the",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrepore": {
+      "word": "MADREPORE",
+      "definitions": [
+        {
+          "text": "Any coral of the genus Madrepora; formerly, often applied to any stony coral.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madreporianmadreporic": {
+      "word": "MADREPORIAN; MADREPORIC",
+      "definitions": [
+        {
+          "text": "Resembling, or pertaining to, the genus Madrepora. Madreporic plate (Zoöl.), a perforated plate in echinoderms, through which water is admitted to the ambulacral tubes; -- called also madreporic tubercule.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madreporiform": {
+      "word": "MADREPORIFORM",
+      "definitions": [
+        {
+          "text": "Resembling a madreporian coral in form or structure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madreporite": {
+      "word": "MADREPORITE",
+      "definitions": [
+        {
+          "text": "(Paleon.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fossil coral.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The madreporic plate of echinoderms.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrier": {
+      "word": "MADRIER",
+      "definitions": [
+        {
+          "text": "A thick plank, used for several mechanical purposes; especially: (a) A plank to receive the mouth of a petard, with which it is applied to anything intended to be broken down. (b) A plank or beam used for supporting the earth in mines or fortifications.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrigal": {
+      "word": "MADRIGAL",
+      "definitions": [
+        {
+          "text": "A little amorous poem, sometimes called a pastoral poem, containing some tender and delicate, though simple, thought. Whose artful strains have oft delayed The huddling brook to hear his madrigal. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An unaccompanied polyphonic song, in four, five, or more parts, set to secular words, but full of counterpoint and imitation, and adhering to the old church modes. Unlike the freer glee, it is best sung with several voices on a part. See Glee.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrigaler": {
+      "word": "MADRIGALER",
+      "definitions": [
+        {
+          "text": "A madrigalist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrigalist": {
+      "word": "MADRIGALIST",
+      "definitions": [
+        {
+          "text": "A composer of madrigals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrilenian": {
+      "word": "MADRILENIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Madrid in Spain, or to its inhabitants.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or inhabitant of Madrid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madrina": {
+      "word": "MADRINA",
+      "definitions": [
+        {
+          "text": "An animal (usually an old mare), wearing a bell and acting as the leader of a troop of pack mules. [S. America]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madro": {
+      "word": "MADRO",
+      "definitions": [
+        {
+          "text": "A small evergreen tree or shrub (Arbutus Menziesii), of California, having a smooth bark, thick shining leaves, and edible red berries, which are often called madroña apples. [Written also madroño.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madronamadronya": {
+      "word": "MADRONA; MADRONYA",
+      "definitions": [
+        {
+          "text": "A small evergreen tree or shrub (Arbutus Menziesii), of California, having a smooth bark, thick shining leaves, and edible red berries, which are often called madroña apples. [Written also madroño.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "madwort": {
+      "word": "MADWORT",
+      "definitions": [
+        {
+          "text": "A genus of cruciferous plants (Alyssum) with white or yellow flowers and rounded pods. A. maritimum is the commonly cultivated sweet alyssum, a fragrant white-flowered annual.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

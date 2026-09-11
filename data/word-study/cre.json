@@ -1,0 +1,5957 @@
+{
+  "version": "v1",
+  "entries": {
+    "creable": {
+      "word": "CREABLE",
+      "definitions": [
+        {
+          "text": "Capable of being created. [Obs.] I. Watts.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creaght": {
+      "word": "CREAGHT",
+      "definitions": [
+        {
+          "text": "A drove or herd. [Obs.] Haliwell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To graze. [Obs.] Sir. L. Davies.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creak": {
+      "word": "CREAK",
+      "definitions": [
+        {
+          "text": "To make a prolonged sharp grating or ssqueaking sound, as by the friction of hard substances; as, shoes creak. The creaking locusts with my voice conspire. Dryden. Doors upon their hinges creaked. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To produce a creaking sound with. Creaking my shoes on the plain masonry. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Thew sound produced by anuthing that creaks; a creaking. Roget.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "caterwaul",
+        "chirk",
+        "chirking",
+        "chirp",
+        "chirrup",
+        "crick",
+        "howl",
+        "keen",
+        "pipe",
+        "screak",
+        "scream",
+        "screech",
+        "shriek",
+        "shrill",
+        "skirl",
+        "skreigh",
+        "squawk",
+        "squeak",
+        "squeal",
+        "stridulate",
+        "stridulation",
+        "ululate",
+        "ululation",
+        "wail",
+        "whine",
+        "whistle",
+        "wrawl",
+        "yammer"
+      ]
+    },
+    "creaking": {
+      "word": "CREAKING",
+      "definitions": [
+        {
+          "text": "A harsh grating or squeaking sound, or the act of making such a sound. Start not at the creaking of the door. Longfellow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cream": {
+      "word": "CREAM",
+      "definitions": [
+        {
+          "text": "The rich, oily, and yellowish part of milk, which, when the milk stands unagitated, rises, and collects on the surface. It is the part of milk from which butter is obtained.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The part of any liquor that rises, and collects on the surface. [R.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A delicacy of several kinds prepared for the table from cream, etc., or so as to resemble cream.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cosmetic; a creamlike medicinal preparation. In vain she tries her paste and creams, To smooth her skin or hide its seams. Goldsmith.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The best or choicest part of a thing; the quintessence; as. the cream of a jest or story; the cream of a collection of books or pictures. Welcome, O flower and cream of knights errant. Shelton. Bavarian cream, a preparation of gelatin, cream, sugar, and eggs, whipped; -- to be eaten cold. water, and borax, and used as a salve for the hands and lips. cream has not been taken off, or to which cream has been added. graduated glass tube in which the milk is placed for the cream to rise. solution of milk of lime from the carbon dioxide of the air. (b) A thick creamy emulsion of lime in water. because of the crust of crystals which forms on the surface of the liquor in the process of purification by recrystallization. It is a white crystalline substance, with a gritty acid taste, and is used very largely as an ingredient of baking powders; -- called also potassium bitartrate, acid potassium tartrate, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To skim, or take off by skimming, as cream.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take off the best or choicest part of.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To furnish with, or as with, cream. Creaming the fragrant cups. Mrs. Whitney. To cream butter (Cooking), to rub, stir, or beat, butter till it is of a light creamy consistency.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To form or become covered with cream; to become thick like cream; to assume the appearance of cream; hence, to grow stiff or formal; to mantle. There are a sort of men whose visages Do cream and mantle like a standing pool. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abstergent",
+        "aerate",
+        "alabaster",
+        "alabastrine",
+        "albescent",
+        "albumen",
+        "aristocracy",
+        "aureate",
+        "auric",
+        "balm",
+        "balsam",
+        "barons",
+        "batter",
+        "beat",
+        "beat up",
+        "beige",
+        "blank",
+        "blast",
+        "bonnyclabber",
+        "bowl down",
+        "brilliantine",
+        "buff",
+        "buff-yellow",
+        "bulldoze",
+        "butter",
+        "buttermilk",
+        "canary",
+        "canary-yellow",
+        "cathartic",
+        "cerate",
+        "certified milk",
+        "champion",
+        "cheese",
+        "choice",
+        "chosen",
+        "chrism",
+        "churn",
+        "citron",
+        "citron-yellow",
+        "clabber",
+        "cleaner",
+        "cleaning agent",
+        "cleaning solvent",
+        "cleanser",
+        "cleansing cream",
+        "clobber",
+        "clot",
+        "coagulate",
+        "cold cream",
+        "colloid",
+        "colloidize",
+        "collyrium",
+        "condensed milk",
+        "cornstarch",
+        "creamy",
+        "curd",
+        "curdle",
+        "dairy products",
+        "defeat utterly",
+        "demulcent",
+        "dentifrice",
+        "depurant",
+        "detergent",
+        "diuretic",
+        "dough",
+        "drub",
+        "dun-white",
+        "ecru",
+        "egg white",
+        "eggshell",
+        "elect",
+        "elite",
+        "embrocation",
+        "emetic",
+        "emollient",
+        "emulsify",
+        "emulsionize",
+        "enema",
+        "establishment",
+        "eye-lotion",
+        "eyewash",
+        "face cream",
+        "fair",
+        "fallow",
+        "fat",
+        "flaxen",
+        "flower",
+        "foam",
+        "froth",
+        "gaum",
+        "gel",
+        "gelatin",
+        "ghee",
+        "gilded",
+        "gilt",
+        "glair",
+        "glaucescent",
+        "glaucous",
+        "glop",
+        "glue",
+        "gluten",
+        "gold",
+        "gold-colored",
+        "golden",
+        "goo",
+        "gook",
+        "goop",
+        "gray-white",
+        "gruel",
+        "gumbo",
+        "gunk",
+        "half-and-half",
+        "hand lotion",
+        "heavy cream",
+        "holystone",
+        "incrassate",
+        "inspissate",
+        "inunction",
+        "inunctum",
+        "ivory",
+        "ivory-white",
+        "jam",
+        "jell",
+        "jellify",
+        "jelly",
+        "lambaste",
+        "lanolin",
+        "lather",
+        "lemon",
+        "lemon-yellow",
+        "lenitive",
+        "lick",
+        "light",
+        "light cream",
+        "lint-white",
+        "loblolly",
+        "lopper",
+        "lords of creation",
+        "lotion",
+        "luteolous",
+        "lutescent",
+        "mantle",
+        "margarine",
+        "milk",
+        "molasses",
+        "mouthwash",
+        "mucilage",
+        "mucus",
+        "nard",
+        "nauseant",
+        "nobility",
+        "nonesuch",
+        "nonfat dry milk",
+        "nonpareil",
+        "ocherish",
+        "ocherous",
+        "ochery",
+        "ochreous",
+        "ochroid",
+        "ochrous",
+        "ochry",
+        "off-white",
+        "ointment",
+        "oleo",
+        "oleomargarine",
+        "optimum",
+        "or",
+        "overbear",
+        "overlapping",
+        "overwhelm",
+        "pale",
+        "pap",
+        "paragon",
+        "paste",
+        "pearl",
+        "pearly",
+        "pearly-white",
+        "pick",
+        "pomade",
+        "pomatum",
+        "porridge",
+        "power elite",
+        "power structure",
+        "pride",
+        "prime",
+        "primrose",
+        "primrose-colored",
+        "primrose-yellow",
+        "prize",
+        "pudding",
+        "pulp",
+        "pumice stone",
+        "puree",
+        "purgative",
+        "purge",
+        "purifier",
+        "putty",
+        "queen",
+        "quintessence",
+        "raw milk",
+        "rinse",
+        "rob",
+        "ruling circles",
+        "ruling class",
+        "saffron",
+        "saffron-colored",
+        "saffron-yellow",
+        "sallow",
+        "salve",
+        "sand-colored",
+        "sandy",
+        "schmear",
+        "scum",
+        "select",
+        "semifluid",
+        "semiliquid",
+        "shampoo",
+        "shellac",
+        "shut out",
+        "size",
+        "skim milk",
+        "skunk",
+        "smear",
+        "snow under",
+        "soap",
+        "solvent",
+        "soothing syrup",
+        "soup",
+        "sour cream",
+        "spikenard",
+        "spume",
+        "starch",
+        "steamroller",
+        "sticky mess",
+        "straw",
+        "straw-colored",
+        "sud",
+        "suds",
+        "superlative",
+        "synthetic detergent",
+        "syrup",
+        "the best",
+        "the best ever",
+        "the best people",
+        "the brass",
+        "the tops",
+        "the very best",
+        "thicken",
+        "tooth powder",
+        "toothpaste",
+        "top",
+        "top people",
+        "treacle",
+        "unction",
+        "unguent",
+        "unguentum",
+        "upper class",
+        "upper crust",
+        "wash",
+        "whelm",
+        "whey",
+        "whip",
+        "whipping cream",
+        "whisk",
+        "whitewash",
+        "whitish",
+        "whity",
+        "whomp",
+        "whop",
+        "xanthic",
+        "xanthous",
+        "yellow",
+        "yellowish",
+        "yogurt"
+      ]
+    },
+    "creamcake": {
+      "word": "CREAMCAKE",
+      "definitions": [
+        {
+          "text": "A kind of cake filled with custard made of cream, eggs, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creamcolored": {
+      "word": "CREAM-COLORED",
+      "definitions": [
+        {
+          "text": "Of the color of cream; light yellow. \"Cream-colored horses.\" Hazlitt.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creamery": {
+      "word": "CREAMERY",
+      "definitions": [
+        {
+          "text": "A place where butter and cheese are made, or where milk and cream are put up in cans for market.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A place or apparatus in which milk is set for raising cream.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An establishment where cream is sold.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creamfaced": {
+      "word": "CREAM-FACED",
+      "definitions": [
+        {
+          "text": "White or pale, as the effect of fear, or as the natural complexion. Thou cream-faced loon. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creamfruit": {
+      "word": "CREAM-FRUIT",
+      "definitions": [
+        {
+          "text": "A plant of Sierra Leone which yields a wholesome, creamy juice.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creaminess": {
+      "word": "CREAMINESS",
+      "definitions": [
+        {
+          "text": "The quality of being creamy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creamlaid": {
+      "word": "CREAM LAID",
+      "definitions": [
+        {
+          "text": "See under Laid.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "creamslice": {
+      "word": "CREAM-SLICE",
+      "definitions": [
+        {
+          "text": "A wooden knife with a long thin blade, used in handling cream or ice cream.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creamwhite": {
+      "word": "CREAM-WHITE",
+      "definitions": [
+        {
+          "text": "As white as cream.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creamy": {
+      "word": "CREAMY",
+      "definitions": [
+        {
+          "text": "Full of, or containing, cream; resembling cream, in nature, appearance, or taste; creamlike; unctuous. \"Creamy bowis.\" Collins. \"Lines of creamy spray.\" Tennyson. \"Your creamy words but cozen.\" Beau & Fl.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "alabaster",
+        "alabastrine",
+        "albescent",
+        "aureate",
+        "auric",
+        "beige",
+        "buff",
+        "buff-yellow",
+        "buttery",
+        "canary",
+        "canary-yellow",
+        "citron",
+        "citron-yellow",
+        "cream",
+        "delicate",
+        "dun-white",
+        "ecru",
+        "eggshell",
+        "emulsive",
+        "fair",
+        "fallow",
+        "flat",
+        "flaxen",
+        "gilded",
+        "gilt",
+        "glaucescent",
+        "glaucous",
+        "gloss",
+        "gold",
+        "gold-colored",
+        "golden",
+        "gray-white",
+        "half-frozen",
+        "half-melted",
+        "iridescent",
+        "ivory",
+        "ivory-white",
+        "lemon",
+        "lemon-yellow",
+        "light",
+        "lint-white",
+        "luteolous",
+        "lutescent",
+        "mellow",
+        "mother-of-pearl",
+        "nacreous",
+        "ocherish",
+        "ocherous",
+        "ochery",
+        "ochreous",
+        "ochroid",
+        "ochrous",
+        "ochry",
+        "off-white",
+        "opalescent",
+        "or",
+        "pale",
+        "pastel",
+        "patinaed",
+        "pearl",
+        "pearly",
+        "pearly-white",
+        "primrose",
+        "primrose-colored",
+        "primrose-yellow",
+        "pulpy",
+        "quiet",
+        "sad",
+        "saffron",
+        "saffron-colored",
+        "saffron-yellow",
+        "sallow",
+        "sand-colored",
+        "sandy",
+        "semifluid",
+        "semifluidic",
+        "semigloss",
+        "semiliquid",
+        "simple",
+        "sober",
+        "soft",
+        "soft-colored",
+        "soft-hued",
+        "softened",
+        "somber",
+        "straw",
+        "straw-colored",
+        "subdued",
+        "subtle",
+        "sweet",
+        "tender",
+        "whitish",
+        "whity",
+        "xanthic",
+        "xanthous",
+        "yellow",
+        "yellowish"
+      ]
+    },
+    "creance": {
+      "word": "CREANCE",
+      "definitions": [
+        {
+          "text": "Faith; belief; creed. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Falconry)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fine, small line, fastened to a hawk's leash, when it is first lured.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To get on credit; to borrow. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creant": {
+      "word": "CREANT",
+      "definitions": [
+        {
+          "text": "Creative; formative. [R.] Mrs. Browning.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crease": {
+      "word": "CREASE",
+      "definitions": [
+        {
+          "text": "See Creese. Tennison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A line or mark made by folding or doubling any pliable substance; hence, a similar mark, howewer produced.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Cricket)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the lines serving to define the limits of the bowler and the striker. Bowling crease (Cricket), a line extending three feet four inches on each side of the central strings at right angles to the line between the wickets. crease and at right angles to it, extending toward the bowler. four feet distant from it, parallel to the bowling crease and at least as long as the latter. J. H. Walsh (Encyc. of Rural Sports).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make a crease or mark in, as by folding or doubling. Creased, like dog's ears in a folio. Gray.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "autolithograph",
+        "be a printmaker",
+        "carve",
+        "character",
+        "chisel",
+        "cocker",
+        "cockle",
+        "corrugate",
+        "corrugation",
+        "crankle",
+        "creasing",
+        "cribble",
+        "crimp",
+        "crimple",
+        "crinkle",
+        "crisp",
+        "crosshatch",
+        "crumple",
+        "cut",
+        "dog-ear",
+        "double",
+        "double over",
+        "doubling",
+        "duplicature",
+        "enchase",
+        "enfold",
+        "engrave",
+        "flection",
+        "flexure",
+        "flounce",
+        "flute",
+        "fold",
+        "fold over",
+        "frill",
+        "furrow",
+        "gather",
+        "grave",
+        "groove",
+        "hatch",
+        "incise",
+        "infold",
+        "inscribe",
+        "interfold",
+        "knit",
+        "knot",
+        "lap over",
+        "lapel",
+        "lappet",
+        "line",
+        "lithograph",
+        "make prints",
+        "mark",
+        "plait",
+        "plat",
+        "pleat",
+        "plica",
+        "plicate",
+        "plication",
+        "plicature",
+        "ply",
+        "print",
+        "pucker",
+        "purse",
+        "quill",
+        "ridge",
+        "rimple",
+        "ripple",
+        "rivel",
+        "ruche",
+        "ruching",
+        "ruck",
+        "ruckle",
+        "ruff",
+        "ruffle",
+        "rumple",
+        "score",
+        "scrape",
+        "scratch",
+        "sculpture",
+        "shirr",
+        "stipple",
+        "tool",
+        "tuck",
+        "turn over",
+        "twill",
+        "wimple",
+        "wrinkle"
+      ]
+    },
+    "creaser": {
+      "word": "CREASER",
+      "definitions": [
+        {
+          "text": "A tool, or a sewing-mashine attachment, for making lines or creases on leather or cloth, as guides to sew by.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tool for making creases or beads, as in sheet iron, or for rounding small tubes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bookbinding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tool for making the band impression distinct on the back. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creasing": {
+      "word": "CREASING",
+      "definitions": [
+        {
+          "text": "A layer of tiles forming a corona for a wall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creasote": {
+      "word": "CREASOTE",
+      "definitions": [
+        {
+          "text": "See Creosote.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creasy": {
+      "word": "CREASY",
+      "definitions": [
+        {
+          "text": "Full of creases. Tennyson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creat": {
+      "word": "CREAT",
+      "definitions": [
+        {
+          "text": "An usher to a riding master.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creatable": {
+      "word": "CREATABLE",
+      "definitions": [
+        {
+          "text": "That may be created.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "create": {
+      "word": "CREATE",
+      "definitions": [
+        {
+          "text": "Created; composed; begotte. [Obs.] Hearts create of duty and zeal. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To bring into being; to form out of nothing; to cause to exist. In the beginning, God created the heaven and the earth. Gen. i. 1.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To effect by the agency, and under the laws, of causation; to be the occasion of; to cause; to produce; to form or fashion; to renew. Your eye in Scotland Would create soldiers. Shak. Create in me a clean heart. Ps. li. 10.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To invest with a new form, office, or character; to constitute; to appoint; to make; as, to create one a peer. \"I create you companions to our person.\" Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "assemble",
+        "author",
+        "bear",
+        "beget",
+        "block out",
+        "break ground",
+        "break the ice",
+        "breed",
+        "bring about",
+        "bring forth",
+        "bring into being",
+        "bring to effect",
+        "bring to pass",
+        "build",
+        "call into being",
+        "carve",
+        "cast",
+        "cause",
+        "chisel",
+        "coin",
+        "compose",
+        "compound",
+        "conceit",
+        "conceive",
+        "conceptualize",
+        "concoct",
+        "constitute",
+        "construct",
+        "contrive",
+        "cut",
+        "design",
+        "develop",
+        "devise",
+        "do",
+        "dream up",
+        "effect",
+        "effectuate",
+        "efform",
+        "elaborate",
+        "engender",
+        "erect",
+        "establish",
+        "evolve",
+        "experience imaginatively",
+        "extrude",
+        "fabricate",
+        "fancy",
+        "fantasize",
+        "fashion",
+        "father",
+        "fictionalize",
+        "figure",
+        "fix",
+        "forge",
+        "form",
+        "formalize",
+        "formulate",
+        "found",
+        "frame",
+        "fudge together",
+        "generate",
+        "gestate",
+        "get up",
+        "give birth to",
+        "give occasion to",
+        "give origin to",
+        "give rise to",
+        "hatch",
+        "head",
+        "head up",
+        "hew",
+        "ideate",
+        "imagine",
+        "inaugurate",
+        "indite",
+        "initiate",
+        "innovate",
+        "institute",
+        "invent",
+        "knead",
+        "knock out",
+        "lay out",
+        "lead",
+        "lead off",
+        "lead the way",
+        "lick into shape",
+        "make",
+        "make up",
+        "manufacture",
+        "mature",
+        "mint",
+        "model",
+        "mold",
+        "occasion",
+        "organize",
+        "originate",
+        "parent",
+        "patch together",
+        "piece together",
+        "pioneer",
+        "precede",
+        "prefabricate",
+        "prepare",
+        "procreate",
+        "produce",
+        "put together",
+        "put up",
+        "raise",
+        "realize",
+        "rear",
+        "revolutionize",
+        "rough out",
+        "roughcast",
+        "roughhew",
+        "run up",
+        "sculpt",
+        "sculpture",
+        "set",
+        "set afloat",
+        "set on foot",
+        "set up",
+        "shape",
+        "sire",
+        "spawn",
+        "stamp",
+        "stand first",
+        "start",
+        "suppose",
+        "tailor",
+        "take the initiative",
+        "take the lead",
+        "take the plunge",
+        "thermoform",
+        "think up",
+        "whomp up",
+        "work",
+        "write"
+      ]
+    },
+    "creatic": {
+      "word": "CREATIC",
+      "definitions": [
+        {
+          "text": "Relating to, or produced by, flesh or animal food; as, creatic nausea. [Written also kreatic.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creatin": {
+      "word": "CREATIN",
+      "definitions": [
+        {
+          "text": "A white, crystalline, nitrogenous substance found abundantly in muscle tissue. [Written also kreatine.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creatinin": {
+      "word": "CREATININ",
+      "definitions": [
+        {
+          "text": "A white, crystalline, nitrogenous body closely related to creatin but more basic in its properties, formed from the latter by the action of acids, and occurring naturally in muscle tissue and in urine. [Written also kretinine.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creation": {
+      "word": "CREATION",
+      "definitions": [
+        {
+          "text": "The act of creating or causing to exist. Specifically, the act of bringing the universe or this world into existence. From the creation to the general doom. Shak. As when a new particle of matter dotn begin to exist, in rerum natura, which had before no being; and this we call creation. Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is created; that which is produced or caused to exist, as the world or some original work of art or of the imagination; nature. We know that the whole creation groaneth. Rom. viii. 22. A dagger of the mind, a false creation. Shak. Choice pictures and creations of curious art. Beaconsfield.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of constituting or investing with a new character; appointment; formation. An Irish peer of recent creation. Landor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "A",
+        "Copernican universe",
+        "Einsteinian universe",
+        "Newtonian universe",
+        "Ptolemaic universe",
+        "abecedarian",
+        "aboriginal",
+        "abundant",
+        "all",
+        "all being",
+        "all creation",
+        "all-knowing",
+        "all-powerful",
+        "all-seeing",
+        "all-wise",
+        "allness",
+        "almighty",
+        "alpha",
+        "anatomy",
+        "antenatal",
+        "architectonics",
+        "architecture",
+        "arrangement",
+        "art object",
+        "artifact",
+        "assembly",
+        "authentic",
+        "authorship",
+        "autochthonous",
+        "avant-garde",
+        "beginning",
+        "birth",
+        "blast-off",
+        "blooming",
+        "boundless",
+        "bountiful",
+        "brainchild",
+        "bric-a-brac",
+        "budding",
+        "build",
+        "building",
+        "bursting",
+        "bursting out",
+        "casting",
+        "causal",
+        "causative",
+        "changeless",
+        "child",
+        "classic",
+        "coinage",
+        "commencement",
+        "composition",
+        "conception",
+        "conceptive",
+        "conceptual",
+        "concoction",
+        "conformation",
+        "constitution",
+        "construction",
+        "constructive",
+        "contrivance",
+        "contriving",
+        "conversion",
+        "copious",
+        "cosmos",
+        "crafting",
+        "craftsmanship",
+        "created nature",
+        "created universe",
+        "creating",
+        "creative",
+        "creative effort",
+        "creature",
+        "crowning achievement",
+        "cultivation",
+        "cutting edge",
+        "dawn",
+        "demiurgic",
+        "design",
+        "devising",
+        "dispensation",
+        "distillation",
+        "edge",
+        "effect",
+        "efformation",
+        "elaboration",
+        "elemental",
+        "elementary",
+        "embryonic",
+        "end product",
+        "erection",
+        "esemplastic",
+        "essence",
+        "establishment",
+        "eternal",
+        "eternally the same",
+        "everlasting",
+        "everything that is",
+        "expanding universe",
+        "extract",
+        "extraction",
+        "exuberant",
+        "fabric",
+        "fabrication",
+        "fashion",
+        "fashioning",
+        "fecund",
+        "fertile",
+        "fetal",
+        "figuration",
+        "firsthand",
+        "flourishing",
+        "flying start",
+        "forging",
+        "form",
+        "format",
+        "formation",
+        "formative",
+        "formature",
+        "forming",
+        "formulation",
+        "foundation",
+        "foundational",
+        "frame",
+        "framing",
+        "fresh",
+        "fresh start",
+        "fructiferous",
+        "fruit",
+        "fruitful",
+        "fundamental",
+        "generation",
+        "generative",
+        "generous",
+        "genesis",
+        "germinal",
+        "gestatory",
+        "getup",
+        "glorious",
+        "good",
+        "grotesque",
+        "growing",
+        "hallowed",
+        "handicraft",
+        "handiwork",
+        "harvesting",
+        "hatching",
+        "highest",
+        "holy",
+        "ideational",
+        "ideative",
+        "imaginative",
+        "immortal",
+        "immutable",
+        "improvisation",
+        "in embryo",
+        "in its infancy",
+        "in the bud",
+        "inaugural",
+        "inception",
+        "inceptive",
+        "inchoate",
+        "inchoative",
+        "incipient",
+        "incunabular",
+        "infant",
+        "infantile",
+        "infinite",
+        "ingenious",
+        "initial",
+        "initiative",
+        "initiatory",
+        "innovational",
+        "innovative",
+        "inspired",
+        "institution",
+        "institutive",
+        "introductory",
+        "invention",
+        "inventive",
+        "issue",
+        "jump-off",
+        "just",
+        "kick-off",
+        "kitsch",
+        "leading edge",
+        "limitless",
+        "loving",
+        "luxuriant",
+        "machining",
+        "macrocosm",
+        "macrocosmos",
+        "majestic",
+        "make",
+        "makeup",
+        "making",
+        "making do",
+        "manufacture",
+        "manufacturing",
+        "master",
+        "masterpiece",
+        "masterwork",
+        "megacosm",
+        "merciful",
+        "metagalaxy",
+        "milling",
+        "mining",
+        "mintage",
+        "mobile",
+        "modeling",
+        "mold",
+        "molding",
+        "morphogenesis",
+        "morphogeny",
+        "museum piece",
+        "nascent",
+        "natal",
+        "nature",
+        "new",
+        "new departure",
+        "new mintage",
+        "notional",
+        "novel",
+        "nude",
+        "numinous",
+        "occasional",
+        "offspring",
+        "old master",
+        "omneity",
+        "omnipotent",
+        "omnipresent",
+        "omniscient",
+        "oncoming",
+        "one",
+        "onset",
+        "opening",
+        "opera",
+        "opus",
+        "opuscule",
+        "organic structure",
+        "organism",
+        "organization",
+        "origin",
+        "original",
+        "origination",
+        "originative",
+        "outbreak",
+        "outcome",
+        "outgrowth",
+        "outset",
+        "parturient",
+        "pasticcio",
+        "pastiche",
+        "pattern",
+        "patterning",
+        "permanent",
+        "perpetual",
+        "physique",
+        "piece",
+        "piece of virtu",
+        "plan",
+        "plenteous",
+        "plentiful",
+        "plenum",
+        "postnatal",
+        "prefabrication",
+        "pregnant",
+        "prenatal",
+        "preparation",
+        "preservation",
+        "primal",
+        "primary",
+        "prime",
+        "primeval",
+        "primitive",
+        "primogenial",
+        "processing",
+        "procreative",
+        "producing",
+        "product",
+        "production",
+        "productive",
+        "proliferous",
+        "prolific",
+        "providence",
+        "pulsating universe",
+        "radiant",
+        "raising",
+        "refining",
+        "result",
+        "revolutionary",
+        "rich",
+        "rudimental",
+        "rudimentary",
+        "running start",
+        "sacred",
+        "sculpture",
+        "seminal",
+        "send-off",
+        "setting in motion",
+        "setting-up",
+        "setup",
+        "shape",
+        "shaping",
+        "sidereal universe",
+        "smelting",
+        "sovereign",
+        "square one",
+        "stabile",
+        "start",
+        "start-off",
+        "starting point",
+        "statue",
+        "steady-state universe",
+        "still life",
+        "structure",
+        "structuring",
+        "study",
+        "sum of things",
+        "superabundant",
+        "supreme",
+        "swarming",
+        "system",
+        "take-off",
+        "tectonics",
+        "teeming",
+        "texture",
+        "the world",
+        "thriving",
+        "timeless",
+        "tissue",
+        "totality",
+        "totality of being",
+        "uberous",
+        "ubiquitous",
+        "unbounded",
+        "unchanging",
+        "undefined",
+        "underived",
+        "unique",
+        "universe",
+        "unlimited",
+        "ur",
+        "virtu",
+        "visioned",
+        "visitations of providence",
+        "warp and woof",
+        "weave",
+        "web",
+        "whole wide world",
+        "wide world",
+        "work",
+        "work of art",
+        "workmanship",
+        "world",
+        "world without end"
+      ]
+    },
+    "creational": {
+      "word": "CREATIONAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to creation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creationism": {
+      "word": "CREATIONISM",
+      "definitions": [
+        {
+          "text": "The doctrine that a soul is specially created for each human being as soon as it is formed in the womb; -- opposed to traducianism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creative": {
+      "word": "CREATIVE",
+      "definitions": [
+        {
+          "text": "Having the power to create; exerting the act of creation. \"Creative talent.\" W. Irving. The creative force exists in the germ. Whewell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creativeness": {
+      "word": "CREATIVENESS",
+      "definitions": [
+        {
+          "text": "The qualiyu of being creative.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creator": {
+      "word": "CREATOR",
+      "definitions": [
+        {
+          "text": "One who creates, produces, or constitutes. Specifically, the Supreme Being. To sin's rebuke and my Creater's praise. Shak. The poets and artists of Greece, who are at the same time its prophets, the creators of its divinities, and the revealers of its theological beliefs. Caird.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "God",
+        "actor",
+        "agent",
+        "ancestors",
+        "apprentice",
+        "architect",
+        "artificer",
+        "artisan",
+        "artist",
+        "artiste",
+        "author",
+        "begetter",
+        "beginner",
+        "brains",
+        "builder",
+        "catalyst",
+        "causer",
+        "conceiver",
+        "constructor",
+        "copyist",
+        "craftsman",
+        "dauber",
+        "daubster",
+        "designer",
+        "deviser",
+        "discoverer",
+        "doer",
+        "effector",
+        "engenderer",
+        "engineer",
+        "executant",
+        "executor",
+        "executrix",
+        "fabricator",
+        "father",
+        "founder",
+        "framer",
+        "generator",
+        "grower",
+        "inaugurator",
+        "industrialist",
+        "initiator",
+        "inspirer",
+        "instigator",
+        "institutor",
+        "introducer",
+        "inventor",
+        "journeyman",
+        "maker",
+        "manufacturer",
+        "master",
+        "master craftsman",
+        "mastermind",
+        "medium",
+        "mother",
+        "mover",
+        "old master",
+        "operant",
+        "operative",
+        "operator",
+        "organizer",
+        "originator",
+        "parent",
+        "past master",
+        "patriarch",
+        "performer",
+        "perpetrator",
+        "planner",
+        "practitioner",
+        "precursor",
+        "prime mover",
+        "primum mobile",
+        "producer",
+        "raiser",
+        "realizer",
+        "shaper",
+        "sire",
+        "smith",
+        "subject",
+        "the Deity",
+        "worker",
+        "wright"
+      ]
+    },
+    "creatorship": {
+      "word": "CREATORSHIP",
+      "definitions": [
+        {
+          "text": "State or condition of a creator.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creatress": {
+      "word": "CREATRESS",
+      "definitions": [
+        {
+          "text": "She who creates. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creatrix": {
+      "word": "CREATRIX",
+      "definitions": [
+        {
+          "text": "A creatress. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creatural": {
+      "word": "CREATURAL",
+      "definitions": [
+        {
+          "text": "Belonging to a creature; having the qualities of a creature. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creature": {
+      "word": "CREATURE",
+      "definitions": [
+        {
+          "text": "Anything created; anything not self-existent; especially, any being created with life; an animal; a man. He asked water, a creature so common and needful that it was against the law of nature to deny him. Fuller. God's first creature was light. Bacon. On earth, join, all ye creatures, to extol Him first, him last, him midst, and without end. Milton. And most attractive is the fair result Of thought, the creature of a polished mind. Cowper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A human being, in pity, contempt, or endearment; as, a poor creature; a pretty creature. The world hath not a sweeter creature. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A person who owes his rise and fortune to another; a servile dependent; an instrument; a tool. A creature of the queen's, Lady Anne Bullen. Shak. Both Charles himself and his creature, Laud. Macualay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A general term among farmers for horses, oxen, etc. Creature comforts, those which minister to the comfort of the body.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Adamite",
+        "Charlie McCarthy",
+        "adherent",
+        "aerobic organism",
+        "agent",
+        "an existence",
+        "anaerobic organism",
+        "ancilla",
+        "animal",
+        "apple-polisher",
+        "appliance",
+        "artifact",
+        "ass-licker",
+        "autotrophic organism",
+        "backscratcher",
+        "backslapper",
+        "beast",
+        "being",
+        "bodily",
+        "body",
+        "bootlick",
+        "bootlicker",
+        "brainchild",
+        "brown-nose",
+        "brownie",
+        "brute",
+        "cat",
+        "chap",
+        "character",
+        "child",
+        "clawback",
+        "cog",
+        "coinage",
+        "commonality",
+        "commonalty",
+        "composition",
+        "concoction",
+        "contrivance",
+        "courtier",
+        "creation",
+        "creature comforts",
+        "creeping thing",
+        "cringer",
+        "critter",
+        "crowning achievement",
+        "customer",
+        "dependent",
+        "device",
+        "disciple",
+        "distillation",
+        "duck",
+        "dumb animal",
+        "dumb friend",
+        "dummy",
+        "dupe",
+        "earthling",
+        "effect",
+        "end product",
+        "entelechy",
+        "entity",
+        "essence",
+        "extract",
+        "fawner",
+        "fellow",
+        "feudatory",
+        "figurehead",
+        "flatterer",
+        "flunky",
+        "follower",
+        "footlicker",
+        "front",
+        "front man",
+        "fruit",
+        "genetic individual",
+        "gillie",
+        "go-between",
+        "goon",
+        "groundling",
+        "groveler",
+        "guy",
+        "hand",
+        "handiwork",
+        "handmaid",
+        "handmaiden",
+        "handshaker",
+        "hanger-on",
+        "head",
+        "helot",
+        "henchman",
+        "heterotrophic organism",
+        "hoi polloi",
+        "homager",
+        "homo",
+        "human",
+        "human being",
+        "implement",
+        "individual",
+        "inferior",
+        "instrument",
+        "interagent",
+        "intermediary",
+        "intermediate",
+        "intermedium",
+        "invention",
+        "issue",
+        "jackal",
+        "joker",
+        "junior",
+        "kowtower",
+        "lackey",
+        "lay figure",
+        "led captain",
+        "lever",
+        "lickspit",
+        "lickspittle",
+        "liege",
+        "liege man",
+        "life",
+        "lightweight",
+        "living being",
+        "living soul",
+        "living thing",
+        "lower class",
+        "lower orders",
+        "man",
+        "manufacture",
+        "masses",
+        "masterpiece",
+        "masterwork",
+        "material",
+        "mealymouth",
+        "mechanism",
+        "mediator",
+        "medium",
+        "microbe",
+        "microorganism",
+        "midwife",
+        "minion",
+        "mintage",
+        "monad",
+        "morphological individual",
+        "mortal",
+        "mundane",
+        "myrmidon",
+        "new mintage",
+        "nominal head",
+        "nose",
+        "object",
+        "offspring",
+        "one",
+        "ont",
+        "opera",
+        "opus",
+        "opuscule",
+        "organ",
+        "organic being",
+        "organism",
+        "organization",
+        "origination",
+        "outcome",
+        "outgrowth",
+        "party",
+        "pawn",
+        "peon",
+        "person",
+        "persona",
+        "personage",
+        "personality",
+        "physical",
+        "physiological individual",
+        "plaything",
+        "product",
+        "production",
+        "puppet",
+        "reptile",
+        "result",
+        "retainer",
+        "satellite",
+        "second fiddle",
+        "secondary",
+        "serf",
+        "servant",
+        "single",
+        "slave",
+        "somebody",
+        "someone",
+        "something",
+        "soul",
+        "spaniel",
+        "stooge",
+        "subaltern",
+        "subordinate",
+        "suck",
+        "superficial",
+        "sycophant",
+        "tellurian",
+        "terran",
+        "thing",
+        "third stringer",
+        "thug",
+        "timeserver",
+        "toad",
+        "toadeater",
+        "toady",
+        "tool",
+        "toy",
+        "truckler",
+        "tufthunter",
+        "underling",
+        "understrapper",
+        "unit",
+        "varmint",
+        "vassal",
+        "vehicle",
+        "virus",
+        "votary",
+        "work",
+        "worldling",
+        "yeoman",
+        "yes-man",
+        "zooid",
+        "zoon"
+      ]
+    },
+    "creatureless": {
+      "word": "CREATURELESS",
+      "definitions": [
+        {
+          "text": "Without created beings; alone. God was alone And creatureless at first. Donne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creaturely": {
+      "word": "CREATURELY",
+      "definitions": [
+        {
+          "text": "Creatural; characteristic of a creature. [R.] \"Creaturely faculties.\" Cheyne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creatureship": {
+      "word": "CREATURESHIP",
+      "definitions": [
+        {
+          "text": "The condition of being a creature.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creaturize": {
+      "word": "CREATURIZE",
+      "definitions": [
+        {
+          "text": "To make like a creature; to degrade [Obs.] Degrade and creaturize that mundane soul. Cudworth.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creaze": {
+      "word": "CREAZE",
+      "definitions": [
+        {
+          "text": "The tin ore which collects in the central part of the washing pit or buddle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crebricostate": {
+      "word": "CREBRICOSTATE",
+      "definitions": [
+        {
+          "text": "Marked with closely set ribs or ridges.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crebrisulcate": {
+      "word": "CREBRISULCATE",
+      "definitions": [
+        {
+          "text": "Marked with closely set transverse furrows.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crebritude": {
+      "word": "CREBRITUDE",
+      "definitions": [
+        {
+          "text": "Frequency. [Obs.] Bailey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crebrous": {
+      "word": "CREBROUS",
+      "definitions": [
+        {
+          "text": "Frequent; numerous. [Obs.] Goodwin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creche": {
+      "word": "CRECHE",
+      "definitions": [
+        {
+          "text": "A public nursery, where the young children of poor women are cared for during the day, while their mothers are at work.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "credence": {
+      "word": "CREDENCE",
+      "definitions": [
+        {
+          "text": "Reliance of the mind on evidence of facts derived from other sources than personal knowledge; belief; credit; confidence. To give credence to the Scripture miracles. Trench. An assertion which might easily find credence. Macualay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which gives a claim to credit, belief, or confidence; as, a letter of credence.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eccl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The small table by the side of the altar or communion table, on which the bread and wine are placed before being consecrated.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cupboard, sideboard, or cabinet, particularly one intended for the display of rich vessels or plate, and consisting chiefly of open shelves for that purpose.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To give credence to; to believe. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Communion table",
+        "acceptance",
+        "acceptation",
+        "accepting",
+        "acception",
+        "acquiescence",
+        "admission",
+        "admitting",
+        "altar",
+        "altar carpet",
+        "altar desk",
+        "altar facing",
+        "altar of prothesis",
+        "altar rail",
+        "altar side",
+        "altar slab",
+        "altar stair",
+        "altar stone",
+        "altarpiece",
+        "ancona",
+        "assurance",
+        "assuredness",
+        "belief",
+        "bomos",
+        "certainty",
+        "chancel table",
+        "confidence",
+        "credit",
+        "credulity",
+        "dependence",
+        "eschara",
+        "faith",
+        "frontal",
+        "gradin",
+        "hestia",
+        "holy table",
+        "hope",
+        "mensal",
+        "missal stand",
+        "predella",
+        "prothesis",
+        "reception",
+        "reliance",
+        "reliance on",
+        "retable",
+        "retablo",
+        "rood altar",
+        "scrobis",
+        "stock",
+        "store",
+        "superaltar",
+        "sureness",
+        "surety",
+        "suspension of disbelief",
+        "trust"
+      ]
+    },
+    "credendum": {
+      "word": "CREDENDUM",
+      "definitions": [
+        {
+          "text": "A thing to be believed; an article of faith; -- distinguished from agendum, a practical duty. The great articles and credenda of Christianity. South.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "credent": {
+      "word": "CREDENT",
+      "definitions": [
+        {
+          "text": "Believing; giving credence; credulous. [R.] If with too credent esr you list songs. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having credit or authority; credible. [Obs.] For my authority bears of a credent bulk. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "credential": {
+      "word": "CREDENTIAL",
+      "definitions": [
+        {
+          "text": "Giving a title or claim to credit or confidence; accrediting. Their credential letters on both sides. Camden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "That which gives a title to credit or confidence.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Testimonials showing that a person is entitled to credit, or has right to exercise official power, as the letters given by a government to an ambassador or envoy, or a certificate that one is a duly elected delegate. The committee of estates excepted against the credentials of the English commissioners. Whitelocke. Had they not shown undoubted credentials from the Divine Person who sent them on such a message. Addison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "advocacy",
+        "advocating",
+        "advocation",
+        "affidavit",
+        "attestation",
+        "authority",
+        "authorization",
+        "bill of health",
+        "certificate",
+        "certificate of character",
+        "certificate of proficiency",
+        "certification",
+        "character",
+        "character reference",
+        "deposition",
+        "diploma",
+        "letter of introduction",
+        "navicert",
+        "notarized statement",
+        "note",
+        "patronage",
+        "recommend",
+        "recommendation",
+        "reference",
+        "sheepskin",
+        "sworn statement",
+        "testamur",
+        "testimonial",
+        "ticket",
+        "visa",
+        "vise",
+        "voucher",
+        "warrant",
+        "warranty",
+        "witness"
+      ]
+    },
+    "credibility": {
+      "word": "CREDIBILITY",
+      "definitions": [
+        {
+          "text": "The quality of being credible; credibleness; as, the credibility of facts; the credibility of witnesses.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "absolute credibility",
+        "acceptability",
+        "believability",
+        "believableness",
+        "conceivability",
+        "credit",
+        "plausibility",
+        "reliability",
+        "tenability",
+        "trustworthiness",
+        "truth",
+        "truth-loving",
+        "truth-speaking",
+        "truth-telling",
+        "truthfulness",
+        "veraciousness",
+        "veracity",
+        "veridicality",
+        "verity"
+      ]
+    },
+    "credible": {
+      "word": "CREDIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being credited or believed; worthy of belief; entiled to confidence; trustworthy. Things are made credible either by the known condition and quality of the utterer or by the manifest likelihood of truth in themselves. Hooker. A very diligent and observing person, and likewise very sober and credible. Dampier.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "acknowledgment",
+        "admissible",
+        "asset",
+        "attention",
+        "authority",
+        "believable",
+        "cogent",
+        "colorable",
+        "conceivable",
+        "conclusive",
+        "confidence",
+        "convincing",
+        "credence",
+        "credit",
+        "creditable",
+        "determinative",
+        "distinction",
+        "faith",
+        "faithful",
+        "fame",
+        "fiduciary",
+        "glory",
+        "honor",
+        "just",
+        "justifiable",
+        "kudos",
+        "legitimate",
+        "likely",
+        "logical",
+        "notice",
+        "plausible",
+        "prestige",
+        "probable",
+        "rational",
+        "reasonable",
+        "recognition",
+        "reliable",
+        "reliance",
+        "renown",
+        "reputation",
+        "repute",
+        "sane",
+        "satisfactory",
+        "satisfying",
+        "sensible",
+        "solid",
+        "sound",
+        "straight",
+        "tenable",
+        "trust",
+        "trustworthy",
+        "trusty",
+        "unexceptionable",
+        "unimpeachable",
+        "unquestionable",
+        "valid",
+        "weight",
+        "well-argued",
+        "well-founded",
+        "well-grounded",
+        "wholesome",
+        "worthy of faith"
+      ]
+    },
+    "credibleness": {
+      "word": "CREDIBLENESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being credible; worthness of belief; credibility. [R.] Boyle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "credibly": {
+      "word": "CREDIBLY",
+      "definitions": [
+        {
+          "text": "In a manner inducing belief; as, I have been credibly informed of the event.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "credit": {
+      "word": "CREDIT",
+      "definitions": [
+        {
+          "text": "Reliance on the truth of something said or done; belief; faith; trust; confidence. When Jonathan and the people heard these words they gave no credit into them, nor received them. 1 Macc. x. 46.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Reputation derived from the confidence of others; esteem; honor; good name; estimation. John Gilpin was a citizen Of credit and renown. Cowper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ground of, or title to, belief or confidence; authority derived from character or reputation. The things which we properly believe, be only such as are received on the credit of divine testimony. Hooker.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which tends to procure, or add to, reputation or esteem; an honor. I published, because I was told I might please such as it was a credit to please. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Influence derived from the good opinion, confidence, or favor of others; interest. Having credit enough with his master to provide for his own interest. Clarendon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Com.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Trust given or received; expectation of future playment for property transferred, or of fulfillment or promises given; mercantile reputation entitling one to be trusted; -- applied to individuals, corporations, communities, or nations; as, to buy goods on credit. Credit is nothing but the expectation of money, within some limited time. Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The time given for payment for lands or goods sold on trust; as, a long credit or a short credit.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bookkeeping)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The side of an account on which are entered all items reckoned as values received from the party or the category named at the head of the account; also, any one, or the sum, of these items; -- the opposite of debit; as, this sum is carried to one's credit, and that to his debit; A has several credits on the books of B. Bank credit, or Cash credit. See under Cash. to his correspondent, informing him that the person named therein is entitled to draw a certain sum of money; when addressed to several different correspondents, or when the money can be drawn in fractional sums in several different places, it is called a circular letter of credit. the ability or readiness of a government to fulfull its pecuniary engagements. (b) The ability and fidelity of merchants or others who owe largely in a community. He touched the dead corpse of Public Credit, and it sprung upon its feet. D. Webster.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To confide in the truth of; to give credence to; to put trust in; to believe. How shall they credit A poor unlearned virgin Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bring honor or repute upon; to do credit to; to raise the estimation of. You credit the church as much by your government as you did the school formerly by your wit. South.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Bookkeeping)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To enter upon the credit side of an account; to give credit for; as, to credit the amount paid; to set to the credit of; as, to credit a man with the interest paid on a bond. To credit with, to give credit for; to assign as justly due to any one. Crove, Helmholtz, and Meyer, are more than any others to be credited with the clear enunciation of this doctrine. Newman.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accept",
+        "accept for gospel",
+        "accept implicitly",
+        "acceptability",
+        "acceptation",
+        "acception",
+        "acclaim",
+        "account",
+        "account for",
+        "accounting for",
+        "accredit",
+        "accredit with",
+        "accrete to",
+        "acknowledge",
+        "acknowledgment",
+        "acquiescence",
+        "answerability",
+        "application",
+        "apply to",
+        "approbation",
+        "approval",
+        "arrogation",
+        "ascendancy",
+        "ascribe",
+        "ascribe to",
+        "ascription",
+        "assign",
+        "assign to",
+        "assignation",
+        "assignment",
+        "assurance",
+        "assuredness",
+        "attach to",
+        "attachment",
+        "attribute",
+        "attribute to",
+        "attribution",
+        "authority",
+        "avails",
+        "balance",
+        "balance the books",
+        "be certain",
+        "belief",
+        "believability",
+        "believableness",
+        "believe",
+        "believe without reservation",
+        "benediction",
+        "blame",
+        "blame for",
+        "blame on",
+        "bless",
+        "book",
+        "box office",
+        "bring home to",
+        "buy",
+        "capitalize",
+        "carry",
+        "carry over",
+        "cast up accounts",
+        "certainty",
+        "charge",
+        "charge off",
+        "charge on",
+        "charge to",
+        "charisma",
+        "charm",
+        "close out",
+        "close the books",
+        "clout",
+        "cognizance",
+        "commendation",
+        "commissions",
+        "conceivability",
+        "confess",
+        "confidence",
+        "connect with",
+        "connection with",
+        "consequence",
+        "consider",
+        "consideration",
+        "control",
+        "credence",
+        "credibility",
+        "credit with",
+        "crediting",
+        "credits",
+        "credulity",
+        "debit",
+        "deem",
+        "deficit",
+        "depend on",
+        "dependability",
+        "dependence",
+        "derivation from",
+        "difference",
+        "discrepancy",
+        "disposable income",
+        "distinction",
+        "dividend",
+        "dividends",
+        "docket",
+        "dominance",
+        "domination",
+        "double entry",
+        "due",
+        "earned income",
+        "earnings",
+        "effect",
+        "eminence",
+        "enchantment",
+        "enter",
+        "entry",
+        "epact",
+        "esteem",
+        "estimation",
+        "etiology",
+        "faith",
+        "faithfulness",
+        "fasten upon",
+        "father upon",
+        "favor",
+        "feel",
+        "fix on",
+        "fix upon",
+        "force",
+        "gains",
+        "gate",
+        "gate receipts",
+        "get",
+        "give credit",
+        "give faith to",
+        "give thanks",
+        "glory",
+        "good feeling",
+        "grace",
+        "great honor",
+        "gross",
+        "gross income",
+        "gross receipts",
+        "hang on",
+        "hold",
+        "honesty",
+        "honor",
+        "hope",
+        "hymn",
+        "importance",
+        "imputation",
+        "impute",
+        "impute to",
+        "incidental power",
+        "income",
+        "influence",
+        "influentiality",
+        "insinuation",
+        "intake",
+        "item",
+        "journalize",
+        "keep books",
+        "lay",
+        "lay to",
+        "leadership",
+        "leverage",
+        "log",
+        "magnetism",
+        "make",
+        "make acknowledgments of",
+        "make an entry",
+        "mastery",
+        "merit",
+        "minute",
+        "moment",
+        "net",
+        "net income",
+        "net receipts",
+        "notation",
+        "note",
+        "offer thanks",
+        "ornament",
+        "output",
+        "paean",
+        "palaetiology",
+        "personality",
+        "persuasion",
+        "pin on",
+        "pinpoint",
+        "place upon",
+        "placement",
+        "plausibility",
+        "point to",
+        "post",
+        "post up",
+        "potency",
+        "power",
+        "praise",
+        "prayer of thanks",
+        "predominance",
+        "preponderance",
+        "pressure",
+        "prestige",
+        "probity",
+        "proceeds",
+        "produce",
+        "profits",
+        "purchase",
+        "put faith in",
+        "receipt",
+        "receipts",
+        "receivables",
+        "receive",
+        "reception",
+        "recognition",
+        "recognize",
+        "refer",
+        "refer to",
+        "reference to",
+        "regard",
+        "reign",
+        "reliability",
+        "reliance",
+        "reliance on",
+        "rely on",
+        "remainder",
+        "render credit",
+        "render thanks",
+        "repute",
+        "respect",
+        "responsibility",
+        "return thanks",
+        "returns",
+        "revenue",
+        "right",
+        "royalties",
+        "rule",
+        "saddle on",
+        "saddle with",
+        "saddling",
+        "say",
+        "sense",
+        "set down to",
+        "set store by",
+        "settle upon",
+        "single entry",
+        "solvency",
+        "stock",
+        "store",
+        "strike a balance",
+        "suasion",
+        "subtle influence",
+        "suggestion",
+        "supremacy",
+        "sureness",
+        "surety",
+        "surplus",
+        "suspension of disbelief",
+        "swallow",
+        "sway",
+        "take",
+        "take for granted",
+        "take on faith",
+        "take on trust",
+        "take stock in",
+        "take-in",
+        "takings",
+        "tenability",
+        "thank",
+        "thank offering",
+        "thank-you",
+        "thanks",
+        "thanksgiving",
+        "think",
+        "tribute",
+        "trust",
+        "trustworthiness",
+        "unearned income",
+        "upper hand",
+        "weight",
+        "what is owing",
+        "whip hand",
+        "worth",
+        "yield"
+      ]
+    },
+    "creditable": {
+      "word": "CREDITABLE",
+      "definitions": [
+        {
+          "text": "Worthy of belief. [Obs.] Divers creditable witnesses deposed. Ludlow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Deserving or possessing reputation or esteem; reputable; estimable. This gentleman was born of creditable parents. Goldsmith.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Bringing credit, reputation, or honor; honorable; as, such conduct is highly creditable to him. Macualay. He settled him in a good creditable way of living. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Christian",
+        "admirable",
+        "beyond all praise",
+        "blameless",
+        "clean",
+        "colorable",
+        "commendable",
+        "credible",
+        "decent",
+        "deserving",
+        "erect",
+        "esteemed",
+        "estimable",
+        "ethical",
+        "exemplary",
+        "fair",
+        "full of integrity",
+        "good",
+        "held in esteem",
+        "high-minded",
+        "high-principled",
+        "highly esteemed",
+        "highly regarded",
+        "highly reputed",
+        "highly respectable",
+        "honest",
+        "honorable",
+        "honored",
+        "immaculate",
+        "in favor",
+        "in good odor",
+        "in high favor",
+        "inviolate",
+        "irreproachable",
+        "just",
+        "laudable",
+        "law-abiding",
+        "law-loving",
+        "law-revering",
+        "manly",
+        "meritorious",
+        "model",
+        "moral",
+        "noble",
+        "plausible",
+        "praiseworthy",
+        "prestigious",
+        "principled",
+        "pure",
+        "reputable",
+        "reputed",
+        "respectable",
+        "respected",
+        "revered",
+        "reverend",
+        "right",
+        "right-minded",
+        "righteous",
+        "satisfactory",
+        "spotless",
+        "stainless",
+        "sterling",
+        "suitable",
+        "true-dealing",
+        "true-devoted",
+        "true-disposing",
+        "true-souled",
+        "true-spirited",
+        "truehearted",
+        "unblemished",
+        "uncorrupt",
+        "uncorrupted",
+        "undefiled",
+        "unexceptionable",
+        "unimpeachable",
+        "unspotted",
+        "unstained",
+        "unsullied",
+        "untarnished",
+        "upright",
+        "uprighteous",
+        "upstanding",
+        "venerable",
+        "venerated",
+        "virtuous",
+        "well-deserving",
+        "well-thought-of",
+        "worshipful",
+        "worthy",
+        "yeomanly"
+      ]
+    },
+    "creditableness": {
+      "word": "CREDITABLENESS",
+      "definitions": [
+        {
+          "text": "The quality of being creditable.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creditably": {
+      "word": "CREDITABLY",
+      "definitions": [
+        {
+          "text": "In a creditable manner; reputably; with credit.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creditfoncier": {
+      "word": "CREDIT FONCIER",
+      "definitions": [
+        {
+          "text": "A company licensed for the purpose of carrying out improvements, by means of loans and advances upon real securities. ]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "creditmobilier": {
+      "word": "CREDIT MOBILIER",
+      "definitions": [
+        {
+          "text": "A joint stock company, formed for general banking business, or for the construction of public works, by means of loans on personal estate, after the manner of the crédit foncier on real estate. In practice, however, this distinction has not been strictly observed.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "creditor": {
+      "word": "CREDITOR",
+      "definitions": [
+        {
+          "text": "One who credits, believes, or trusts. The easy creditors of novelties. Daniel.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who gives credit in business matters; hence, one to whom money is due; -- correlative to debtor. Creditors have better memories than debtors. Franklin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creditresscreditrix": {
+      "word": "CREDITRESS; CREDITRIX",
+      "definitions": [
+        {
+          "text": "A female creditor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "credo": {
+      "word": "CREDO",
+      "definitions": [
+        {
+          "text": "The creed, as sung or read in the Roman Catholic church. He repeated Aves and Credos. Macualay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Athanasian Creed",
+        "Catechism",
+        "Nicene Creed",
+        "Weltanschauung",
+        "articles of faith",
+        "articles of religion",
+        "belief",
+        "catechism",
+        "credenda",
+        "creed",
+        "cult",
+        "doctrinal statement",
+        "doctrine",
+        "dogma",
+        "faith",
+        "formulated belief",
+        "gospel",
+        "ideology",
+        "ism",
+        "orthodoxy",
+        "political faith",
+        "political philosophy",
+        "religion",
+        "religious belief",
+        "religious faith",
+        "school",
+        "system of belief",
+        "system of beliefs",
+        "teaching",
+        "theology",
+        "tradition",
+        "weltanschauung",
+        "world view"
+      ]
+    },
+    "credulity": {
+      "word": "CREDULITY",
+      "definitions": [
+        {
+          "text": "Readiness of belief; a disposition to believe on slight evidence. That implict credulity is the mark of a feeble mind will not be disputed. Sir W. Hamilton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "credulous": {
+      "word": "CREDULOUS",
+      "definitions": [
+        {
+          "text": "Apt to believe on slight evidence; easly imposed upon; unsuspecting. Landor. Eve, our credulous mother. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Believed too readily. [Obs.] Beau & Fl.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "accepting",
+        "apish",
+        "asinine",
+        "batty",
+        "befooled",
+        "beguiled",
+        "believing",
+        "besotted",
+        "brainless",
+        "buffoonish",
+        "childlike",
+        "cockeyed",
+        "confiding",
+        "crazy",
+        "daffy",
+        "daft",
+        "dazed",
+        "dependent",
+        "depending",
+        "dizzy",
+        "doting",
+        "dumb",
+        "dupable",
+        "easily taken in",
+        "easy of belief",
+        "fatuitous",
+        "fatuous",
+        "flaky",
+        "fond",
+        "fool",
+        "foolheaded",
+        "foolish",
+        "fuddled",
+        "futile",
+        "gaga",
+        "goofy",
+        "green",
+        "guileless",
+        "gulled",
+        "gullible",
+        "idiotic",
+        "imbecile",
+        "inane",
+        "inclined to believe",
+        "inept",
+        "inexperienced",
+        "infatuated",
+        "innocent",
+        "insane",
+        "kooky",
+        "loony",
+        "mad",
+        "maudlin",
+        "moronic",
+        "naive",
+        "nutty",
+        "overconfiding",
+        "overcredulous",
+        "overtrustful",
+        "overtrusting",
+        "reliant",
+        "relying",
+        "sappy",
+        "screwy",
+        "senseless",
+        "sentimental",
+        "silly",
+        "simple",
+        "stupid",
+        "superstitious",
+        "thoughtless",
+        "trustful",
+        "trusting",
+        "trusty",
+        "uncritical",
+        "undoubting",
+        "unquestioning",
+        "unskeptical",
+        "unsophisticated",
+        "unsuspecting",
+        "unsuspicious",
+        "unwary",
+        "wacky",
+        "wet",
+        "without suspicion",
+        "witless"
+      ]
+    },
+    "credulously": {
+      "word": "CREDULOUSLY",
+      "definitions": [
+        {
+          "text": "With credulity.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "credulousness": {
+      "word": "CREDULOUSNESS",
+      "definitions": [
+        {
+          "text": "Readiness to believe on slight evidence; credulity. Beyond all credulity is the credulousness of atheists. S. Clarke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creed": {
+      "word": "CREED",
+      "definitions": [
+        {
+          "text": "A definite summary of what is believed; esp., a summary of the articles of Christian faith; a confession of faith for public use; esp., one which is brief and comprehensive. In the Protestant system the creed is not coördinate with, but always subordinate to, the Bible. Schaff-Herzog Encyc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any summary of principles or opinions professed or adhered to. I love him not, nor fear him; there's my creed. Shak. Apostles' creed, Athanasian creed, Nicene creed. See under Apostle, Athanasian, Nicene.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To believe; to credit. [Obs.] That part which is so creeded by the people. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Athanasian Creed",
+        "Catechism",
+        "Nicene Creed",
+        "Weltanschauung",
+        "affirmance",
+        "affirmation",
+        "allegation",
+        "announcement",
+        "annunciation",
+        "articles of faith",
+        "articles of religion",
+        "assertion",
+        "asseveration",
+        "averment",
+        "avouchment",
+        "avowal",
+        "belief",
+        "catechism",
+        "church",
+        "communion",
+        "conclusion",
+        "connection",
+        "course",
+        "credenda",
+        "credo",
+        "cult",
+        "declaration",
+        "denomination",
+        "dictum",
+        "doctrinal statement",
+        "doctrine",
+        "dogma",
+        "enunciation",
+        "faith",
+        "formulated belief",
+        "gospel",
+        "guiding principles",
+        "ideology",
+        "ipse dixit",
+        "ism",
+        "line",
+        "manifesto",
+        "orthodoxy",
+        "persuasion",
+        "plan of action",
+        "platform",
+        "policy",
+        "political faith",
+        "political philosophy",
+        "polity",
+        "position",
+        "position paper",
+        "positive declaration",
+        "predicate",
+        "predication",
+        "principles",
+        "procedure",
+        "proclamation",
+        "profession",
+        "pronouncement",
+        "proposition",
+        "protest",
+        "protestation",
+        "religion",
+        "religious belief",
+        "religious faith",
+        "say",
+        "say-so",
+        "saying",
+        "school",
+        "sect",
+        "stance",
+        "stand",
+        "statement",
+        "system of belief",
+        "system of beliefs",
+        "teaching",
+        "tenet",
+        "theology",
+        "tradition",
+        "utterance",
+        "vouch",
+        "weltanschauung",
+        "word",
+        "world view"
+      ]
+    },
+    "creedless": {
+      "word": "CREEDLESS",
+      "definitions": [
+        {
+          "text": "Without a creed. Carlyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creek": {
+      "word": "CREEK",
+      "definitions": [
+        {
+          "text": "A small inlet or bay, narrower and extending further into the land than a cove; a recess in the shore of the sea, or of a river. Each creek and cavern of the dangerous shore. Cowper. They discovered a certain creek, with a shore. Acts xxvii. 39.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stream of water smaller than a river and larger than a brook. Lesser streams and rivulets are denominated creeks. Goldsmith.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any turn or winding. The passages of alleys, creeks, and narrow lands. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "adolescent stream",
+        "arm",
+        "armlet",
+        "arroyo",
+        "bay",
+        "bayou",
+        "beck",
+        "belt",
+        "bight",
+        "boca",
+        "bourn",
+        "braided stream",
+        "branch",
+        "brook",
+        "brooklet",
+        "burn",
+        "channel",
+        "cove",
+        "crawl",
+        "creep",
+        "crick",
+        "ditch",
+        "edge",
+        "estuary",
+        "euripus",
+        "fjord",
+        "flowing stream",
+        "fluviation",
+        "fresh",
+        "freshet",
+        "frith",
+        "gill",
+        "glide",
+        "gulf",
+        "gumshoe",
+        "gut",
+        "harbor",
+        "inch",
+        "inlet",
+        "kill",
+        "kyle",
+        "lazy stream",
+        "loch",
+        "lurk",
+        "meandering stream",
+        "midchannel",
+        "midstream",
+        "millstream",
+        "mouse",
+        "mouth",
+        "moving road",
+        "narrow",
+        "narrow seas",
+        "narrows",
+        "natural harbor",
+        "navigable river",
+        "pussyfoot",
+        "race",
+        "racing stream",
+        "reach",
+        "rill",
+        "river",
+        "rivulet",
+        "road",
+        "roads",
+        "roadstead",
+        "run",
+        "rundle",
+        "runlet",
+        "runnel",
+        "shirk",
+        "sike",
+        "skulk",
+        "slide",
+        "slink",
+        "slip",
+        "slither",
+        "snake",
+        "sneak",
+        "sniggle",
+        "sound",
+        "spill stream",
+        "steal",
+        "strait",
+        "straits",
+        "stream",
+        "stream action",
+        "streamlet",
+        "subterranean river",
+        "tiptoe",
+        "wadi",
+        "watercourse",
+        "waterway",
+        "wriggle"
+      ]
+    },
+    "creekfish": {
+      "word": "CREEKFISH",
+      "definitions": [
+        {
+          "text": "The chub sucker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creeks": {
+      "word": "CREEKS",
+      "definitions": [
+        {
+          "text": "A tribe or confederacy of North American Indians, including the Muskogees, Seminoles, Uchees, and other subordinate tribes. They formerly inhabited Georgia, Florida, and Alabama.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creeky": {
+      "word": "CREEKY",
+      "definitions": [
+        {
+          "text": "Containing, or abounding in, creeks; characterized by creeks; like a creek; winding. \"The creeky shore.\" Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creel": {
+      "word": "CREEL",
+      "definitions": [
+        {
+          "text": "An osier basket, such as anglers use. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Spinning)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bar or set of bars with skewers for holding paying-off bobbins, as in the roving machine, throstle, and mule.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creep": {
+      "word": "CREEP",
+      "definitions": [
+        {
+          "text": "To move along the ground, or on any other surface, on the belly, as a worm or reptile; to move as a child on the hands and knees; to crawl. Ye that walk The earth, and stately tread, or lowly creep. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move slowly, feebly, or timorously, as from unwillingness, fear, or weakness. The whining schoolboy . . . creeping, like snail, Unwillingly to school. Shak. Like guilty thing, Icreep. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move in a stealthy or secret manner; to move imperceptibly or clandestinely; to steal in; to insinuate itself or one's self; as, age creeps upon us. The sothistry which creeps into most of the books of argument. Locke. Of this sort are they which creep into houses, and lead captive silly women. 2. Tim. iii. 6.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To slip, or to become slightly displaced; as, the collodion on a negative, or a coat of varnish, may creep in drying; the quicksilver on a mirror may creep.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move or behave with servility or exaggerated humility; to fawn; as, a creeping sycophant. To come as humbly as they used to creep. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To grow, as a vine, clinging to the ground or to some other support by means of roots or rootlets, or by tendrils, along its length. \"Creeping vines.\" Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have a sensation as of insects creeping on the skin of the body; to crawl; as, the sight made my flesh creep. See Crawl, v. i.,4.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To drag in deep water with creepers, as for recovering a submarine cable.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The act or process of creeping.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A distressing sensation, or sound, like that occasioned by the creeping of insects. A creep of undefinable horror. Blackwood's Mag. Out of the stillness, with gathering creep, Like rising wind in leaves. Lowell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A slow rising of the floor of a gallery, occasioned by the pressure of incumbent strata upon the pillars or sides; a gradual movement of mining ground.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "SOB",
+        "all fours",
+        "amble",
+        "andante",
+        "bastard",
+        "bend the knee",
+        "bootlick",
+        "bow",
+        "bow and scrape",
+        "bugger",
+        "claudicate",
+        "claudication",
+        "couch",
+        "cower",
+        "crawl",
+        "crawling",
+        "creeping",
+        "cringe",
+        "crouch",
+        "dead march",
+        "dogtrot",
+        "drag",
+        "drag along",
+        "drag on",
+        "drag out",
+        "fart",
+        "fawn",
+        "feel creepy",
+        "feel funny",
+        "flatter",
+        "footpace",
+        "funeral march",
+        "go dead slow",
+        "go on",
+        "go on tiptoe",
+        "go slow",
+        "grovel",
+        "gumshoe",
+        "gumshoeing",
+        "have gooseflesh",
+        "have the creeps",
+        "heel",
+        "hobble",
+        "hood",
+        "hooligan",
+        "idle",
+        "inch",
+        "inch along",
+        "jerk",
+        "jog",
+        "jog trot",
+        "jog-trot",
+        "kneel",
+        "kowtow",
+        "lay wait",
+        "laze",
+        "leisurely gait",
+        "lick the dust",
+        "lickspittle",
+        "lie in wait",
+        "limp",
+        "linger",
+        "linger on",
+        "louse",
+        "lumbering pace",
+        "lurk",
+        "meanie",
+        "mincing steps",
+        "mosey",
+        "mother",
+        "nightwalk",
+        "nightwalking",
+        "pad",
+        "padding",
+        "pill",
+        "plod",
+        "poke",
+        "poke along",
+        "prowl",
+        "prowling",
+        "pussyfoot",
+        "pussyfooting",
+        "rack",
+        "rat",
+        "saunter",
+        "scrabble",
+        "scramble",
+        "shadow",
+        "shamble",
+        "shit",
+        "shithead",
+        "shitheel",
+        "shuffle",
+        "shuffle along",
+        "sidle",
+        "sidling",
+        "skulk",
+        "slink",
+        "slinking",
+        "slither",
+        "slouch",
+        "slow march",
+        "slow motion",
+        "snake",
+        "snaking",
+        "sneak",
+        "sneaking",
+        "squirm",
+        "stagger along",
+        "stalk",
+        "steal",
+        "steal along",
+        "stealing",
+        "stinkard",
+        "stinker",
+        "stoop",
+        "stroll",
+        "tarry",
+        "tippytoe",
+        "tiptoe",
+        "tiptoeing",
+        "toadeat",
+        "toady",
+        "toddle",
+        "toddle along",
+        "totter along",
+        "traipse",
+        "truckle",
+        "trudge",
+        "turd",
+        "waddle",
+        "walk",
+        "wear on",
+        "wiggle",
+        "worm",
+        "worm along",
+        "worming",
+        "wriggle"
+      ]
+    },
+    "creeper": {
+      "word": "CREEPER",
+      "definitions": [
+        {
+          "text": "One who, or that which, creeps; any creeping thing. Standing waters are most unwholesome, . . . full of mites,creepers; slimy, muddy, unclean. Burton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plant that clings by rootlets, or by tendrils, to the ground, or to trees, etc.; as, the Virginia creeper (Ampelopsis quinquefolia).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small bird of the genus Certhia, allied to the wrens. The brown or common European creeper is C. familiaris, a variety of which (var. Americana) inhabits America; -- called also tree creeper and creeptree. The American black and white creeper is Mniotilta varia.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of patten mounted on short pieces of iron instead of rings; also, a fixture with iron points worn on a shoe to prevent one from slipping.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spurlike device strapped to the boot, which enables one to climb a tree or pole; -- called often telegraph creepers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small, low iron, or dog, between the andirons.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An instrument with iron hooks or claws for dragging at the bottom of a well, or any other body of water, and bringing up what may lie there.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any device for causing material to move steadily from one part of a machine to another, as an apron in a carding machine, or an inner spiral in a grain screen.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Crockets. See Crocket.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "algae",
+        "autophyte",
+        "bean",
+        "bracken",
+        "brown algae",
+        "climber",
+        "conferva",
+        "confervoid",
+        "diatom",
+        "fern",
+        "fruits and vegetables",
+        "fucus",
+        "fungus",
+        "grapevine",
+        "green algae",
+        "gulfweed",
+        "herb",
+        "heterophyte",
+        "ivy",
+        "kelp",
+        "legume",
+        "lentil",
+        "liana",
+        "lichen",
+        "liverwort",
+        "mold",
+        "moss",
+        "mushroom",
+        "parasite",
+        "parasitic plant",
+        "pea",
+        "perthophyte",
+        "phytoplankton",
+        "planktonic algae",
+        "plant families",
+        "puffball",
+        "pulse",
+        "red algae",
+        "rockweed",
+        "rust",
+        "saprophyte",
+        "sargasso",
+        "sargassum",
+        "sea lentil",
+        "sea moss",
+        "sea wrack",
+        "seaweed",
+        "smut",
+        "succulent",
+        "toadstool",
+        "vetch",
+        "vine",
+        "wort",
+        "wrack"
+      ]
+    },
+    "creephole": {
+      "word": "CREEPHOLE",
+      "definitions": [
+        {
+          "text": "A hole or retreat onto which an animal may creep, to escape notice or danger.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A subterfuge; an excuse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creepie": {
+      "word": "CREEPIE",
+      "definitions": [
+        {
+          "text": "A low stool. [Scot.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creepiness": {
+      "word": "CREEPINESS",
+      "definitions": [
+        {
+          "text": "An uneasy sensation as of insects creeping on the skin. She felt a curious, uneasy creepiness. Mrs. Alexander.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creeping": {
+      "word": "CREEPING",
+      "definitions": [
+        {
+          "text": "Crawling, or moving close to the ground. \"Every creeping thing.\" Gen. vi. 20.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Growing along, and clinging to, the ground, or to a wall, etc., by means of rootlets or tendrils. Casements lined with creeping herbs. Cowper. Ceeping crowfoot (Bot.), a plant, the Ranunculus repens.- Creeping snowberry, an American plant (Chiogenes hispidula) with white berries and very small round leaves having the flavor of wintergreen.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "all fours",
+        "ambling",
+        "amphibian",
+        "anguine",
+        "atiptoe",
+        "atmospherics",
+        "batrachian",
+        "blaring",
+        "blasting",
+        "blind spot",
+        "cautious",
+        "cautiousness",
+        "circumspect",
+        "circumspection",
+        "claudicant",
+        "colubriform",
+        "crawl",
+        "crawling",
+        "creep",
+        "creeping like snail",
+        "crocodilian",
+        "deliberate",
+        "deliberateness",
+        "deliberation",
+        "drawl",
+        "drift",
+        "easy",
+        "fade-out",
+        "fading",
+        "faltering",
+        "flagging",
+        "foot-dragging",
+        "froggy",
+        "gentle",
+        "gradual",
+        "gumshoeing",
+        "halting",
+        "hobbled",
+        "hobbling",
+        "honeycombed",
+        "idle",
+        "idleness",
+        "indolence",
+        "indolent",
+        "inertia",
+        "inertness",
+        "interference",
+        "languid",
+        "languor",
+        "languorous",
+        "laziness",
+        "lazy",
+        "leisureliness",
+        "leisurely",
+        "lentitude",
+        "lentor",
+        "limping",
+        "lizardlike",
+        "lumbering",
+        "moderate",
+        "nightwalking",
+        "noise",
+        "on all fours",
+        "on tippytoe",
+        "on tiptoe",
+        "ophidian",
+        "padding",
+        "permeated",
+        "pokiness",
+        "poking",
+        "poky",
+        "prowling",
+        "pussyfooting",
+        "reception",
+        "relaxed",
+        "reluctance",
+        "reluctant",
+        "repent",
+        "reptant",
+        "reptatorial",
+        "reptile",
+        "reptilelike",
+        "reptilian",
+        "reptiliform",
+        "reptiloid",
+        "saturated",
+        "sauntering",
+        "saurian",
+        "scrabble",
+        "scramble",
+        "serpentiform",
+        "serpentile",
+        "serpentine",
+        "serpentlike",
+        "serpentoid",
+        "shot through",
+        "shuffling",
+        "sidling",
+        "slack",
+        "slackness",
+        "slinking",
+        "slithering",
+        "sloth",
+        "slothful",
+        "slow",
+        "slow as death",
+        "slow as molasses",
+        "slow as slow",
+        "slow-crawling",
+        "slow-foot",
+        "slow-going",
+        "slow-legged",
+        "slow-moving",
+        "slow-paced",
+        "slow-poky",
+        "slow-running",
+        "slow-sailing",
+        "slow-stepped",
+        "slowness",
+        "sluggardy",
+        "sluggish",
+        "sluggishness",
+        "snail-paced",
+        "snaillike",
+        "snakelike",
+        "snaking",
+        "snaky",
+        "sneaking",
+        "staggering",
+        "static",
+        "stealing",
+        "strolling",
+        "swarming",
+        "teeming",
+        "tentative",
+        "tentativeness",
+        "tippytoe",
+        "tiptoe",
+        "tiptoeing",
+        "toadish",
+        "toddling",
+        "tortoiselike",
+        "tottering",
+        "trudging",
+        "turtlelike",
+        "unhurried",
+        "viperiform",
+        "viperish",
+        "viperlike",
+        "viperoid",
+        "viperous",
+        "vipery",
+        "waddling",
+        "worming"
+      ]
+    },
+    "creepingcharlie": {
+      "word": "CREEPING CHARLIE",
+      "definitions": [
+        {
+          "text": "The stonecrop (Sedum acre).",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "creepingly": {
+      "word": "CREEPINGLY",
+      "definitions": [
+        {
+          "text": "by creeping slowly; in the manner of a reptile; insidiously; cunningly. How slily and creepingly did he address himself to our first parents. South.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creeple": {
+      "word": "CREEPLE",
+      "definitions": [
+        {
+          "text": "A creeping creature; a reptile. [Obs.] There is one creeping beast, or long creeple (as the name is in Devonshire), that hath a rattle at his tail that doth discover his age. Morton (1632).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who is lame; a cripple. [Obs.] Thou knowest how lame a creeple this world is. Donne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creepy": {
+      "word": "CREEPY",
+      "definitions": [
+        {
+          "text": "Crawly; having or producing a sensation like that caused by insects creeping on the skin. [Colloq.] One's whole blood grew curdling and creepy. R. Browning.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "barfy",
+        "bum",
+        "cheesy",
+        "crappy",
+        "crawly",
+        "crummy",
+        "dirty",
+        "eerie",
+        "formicative",
+        "godawful",
+        "goshawful",
+        "grim",
+        "hairy",
+        "icky",
+        "punk",
+        "putrid",
+        "shitty",
+        "spooky",
+        "stinking",
+        "stinky",
+        "uncanny",
+        "unco",
+        "uncolike",
+        "vomity",
+        "weird",
+        "yecchy"
+      ]
+    },
+    "crees": {
+      "word": "CREES",
+      "definitions": [
+        {
+          "text": "An Algonquin tribe of Indians, inhabiting a large part of British America east of the Rocky Mountains and south of Hudson's Bay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creese": {
+      "word": "CREESE",
+      "definitions": [
+        {
+          "text": "A dagger or short sword used by the Malays, commonly having a serpentine blade. [Written also crease and kris.] From a Malayan creese to a sailor's jackknife. Julian Hawthorne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremaillere": {
+      "word": "CREMAILLERE",
+      "definitions": [
+        {
+          "text": "An indented or zigzaged line of intrenchment.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremaster": {
+      "word": "CREMASTER",
+      "definitions": [
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thin muscle which serves to draw up the testicle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The apex of the last abdominal segment of an insect.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremasteric": {
+      "word": "CREMASTERIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the cremaster; as, the cremasteric artery.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremate": {
+      "word": "CREMATE",
+      "definitions": [
+        {
+          "text": "To burn; to reduce to ashes by the action of fire, either directly or in an oven or retort; to incremate or incinerate; as, to cremate a corpse, instead of burying it.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremation": {
+      "word": "CREMATION",
+      "definitions": [
+        {
+          "text": "A burning; esp., the act or practice of cremating the dead. Without cremation . . . of their bodies. Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "blazing",
+        "blistering",
+        "branding",
+        "burning",
+        "calcination",
+        "carbonization",
+        "cauterization",
+        "cautery",
+        "cineration",
+        "combustion",
+        "concremation",
+        "cracking",
+        "cupellation",
+        "deflagration",
+        "destructive distillation",
+        "distillation",
+        "distilling",
+        "flaming",
+        "funeral pile",
+        "incineration",
+        "oxidation",
+        "oxidization",
+        "parching",
+        "pyre",
+        "pyrolysis",
+        "reduction to ashes",
+        "refining",
+        "scorching",
+        "scorification",
+        "searing",
+        "self-immolation",
+        "singeing",
+        "smelting",
+        "suttee",
+        "the stake",
+        "thermogenesis",
+        "vesication"
+      ]
+    },
+    "cremationist": {
+      "word": "CREMATIONIST",
+      "definitions": [
+        {
+          "text": "One who advocates the practice of cremation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremator": {
+      "word": "CREMATOR",
+      "definitions": [
+        {
+          "text": "One who, or that which, cremmates or consumes to ashes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crematoriumcrematory": {
+      "word": "CREMATORIUM; CREMATORY",
+      "definitions": [
+        {
+          "text": "A furnace for cremating corpses; a building containing such a furnace.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crematory": {
+      "word": "CREMATORY",
+      "definitions": [
+        {
+          "text": "Pertaining to, or employed in, cremation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creme": {
+      "word": "CREME",
+      "definitions": [
+        {
+          "text": "Cream; -- a term used esp. in cookery, names of liqueurs, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremocarp": {
+      "word": "CREMOCARP",
+      "definitions": [
+        {
+          "text": "The peculiar fruit of fennel, carrott, parsnip, and the like, consisting of a pair of carpels pendent from a supporting axis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremona": {
+      "word": "CREMONA",
+      "definitions": [
+        {
+          "text": "A superior kind of violin, formerly made at Cremona, in Italy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremor": {
+      "word": "CREMOR",
+      "definitions": [
+        {
+          "text": "Cream; a substance resembling cream; yeast; scum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cremosin": {
+      "word": "CREMOSIN",
+      "definitions": [
+        {
+          "text": "See Crimson. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crems": {
+      "word": "CREMS",
+      "definitions": [
+        {
+          "text": "See Krems.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenatecrenated": {
+      "word": "CRENATE; CRENATED",
+      "definitions": [
+        {
+          "text": "Having the margin cut into rounded teeth notches, or scallops.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenation": {
+      "word": "CRENATION",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rounded tooth on the edge of a leaf.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The condition of being crenate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenature": {
+      "word": "CRENATURE",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rounded tooth or notch of a crenate leaf, or any part that is crenate; -- called also crenelle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being crenated or notched.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenel": {
+      "word": "CRENEL",
+      "definitions": [
+        {
+          "text": "See Crenelle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenelate": {
+      "word": "CRENELATE",
+      "definitions": [
+        {
+          "text": "To furnish with crenelles.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To indent; to notch; as, a crenelated leaf. Crenelated molding (Arch.), a kind of indented molding used in Norman buildings.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenelation": {
+      "word": "CRENELATION",
+      "definitions": [
+        {
+          "text": "The act of crenelating, or the state of being crenelated; an indentation or an embrasure. [Written also crenellation.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenellecrenel": {
+      "word": "CRENELLE; CRENEL",
+      "definitions": [
+        {
+          "text": "An embrasure or indentation in a battlement; a loophole in a fortress; an indentation; a notch. See Merlon, and Illust. of Battlement.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Crenature.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenelled": {
+      "word": "CRENELLED",
+      "definitions": [
+        {
+          "text": "Same as Crenate.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenglecrenkle": {
+      "word": "CRENGLE; CRENKLE",
+      "definitions": [
+        {
+          "text": "See Cringle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenulatecrenulated": {
+      "word": "CRENULATE; CRENULATED",
+      "definitions": [
+        {
+          "text": "Minutely crenate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crenulation": {
+      "word": "CRENULATION",
+      "definitions": [
+        {
+          "text": "A minute crenation.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being minutely scalloped.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creole": {
+      "word": "CREOLE",
+      "definitions": [
+        {
+          "text": "One born of European parents in the American colonies of France or Spain or in the States which were once such colonies, esp. a person of French or Spanish descent, who is a native inhabitant of Louisiana, or one of the States adjoining, bordering on the Gulf of of Mexico. to distinguish the negroes born there from the Africans imported during the time of the slave trade. The application of this term to the colored people has led to an idea common in some parts of the United States, though wholly unfounded, that it implies an admixture greater or less of African blood.\" R. Hildreth. Spanish, but of French, settlers, But such a meaning implied a certain excellence of origin, and so came early to include any native of French or Spanish descent by either parent, whose nonalliance with the slave race entitled him to social rank. Later, the term was adopted by, not conceded to, the natives of mixed blood, and is still so used among themselves. . . . Besides French and Spanish, there are even, for convenience of speech, 'colored' Creoles; but there are no Italian, or Sicilian, nor any English, Scotch, Irish, or 'Yankee' Creoles, unless of parentage married into, and themselves thoroughly proselyted in, Creole society.\" G. W. Cable.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to a Creole or the Creoles. variety of manufacture, peculiar to Louisiana; as, Creole ponies, chickens, cows, shoes, eggs, wagons, baskets, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creoleancreolian": {
+      "word": "CREOLEAN; CREOLIAN",
+      "definitions": [
+        {
+          "text": "Pertaining to, or characteristic of, the Creoles.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A Creole.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creosol": {
+      "word": "CREOSOL",
+      "definitions": [
+        {
+          "text": "A colorless liquid resembling phenol or carbolic acid, homologous with pyrocatechin, and obtained from beechwood tar and gum guaiacum. [Written also creasol.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creosote": {
+      "word": "CREOSOTE",
+      "definitions": [
+        {
+          "text": "Wood-tar oil; an oily antiseptic liquid, of a burning smoky taste, colorless when pure, but usually colored yellow or brown by impurity or exposure. It is a complex mixture of various phenols and their ethers, and is obtained by the distillation of wood tar, especially that of beechwood. preservation of wood, flesh, etc., and in the prevention of putrefaction; but it is a poor germicide, and in this respect has been overrated. Smoked meat, as ham, owes its preservation and taste to a small quantity of creosote absorbed from the smoke to which it is exposed. Carbolic acid is phenol proper, while creosote is a mixture of several phenols. Coal-tar creosote (Chem.), a colorless or yellow, oily liquid, obtained in the distillation of coal tar, and resembling wood-tar oil, or creosote proper, in composition and properties.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To saturate or impregnate with creosote, as timber, for the prevention of decay.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creosotebush": {
+      "word": "CREOSOTE BUSH",
+      "definitions": [
+        {
+          "text": "A shrub (Covillea mexicana) found in desert regions from Colorado to California and southward through Mexico. It has yellow flowers and very resinous foliage with a strong odor of creosote.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepancecrepane": {
+      "word": "CREPANCE; CREPANE",
+      "definitions": [
+        {
+          "text": "An injury in a horse's leg, caused by the shoe of one hind foot striking and cutting the other leg. It sometimes forms an ulcer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepe": {
+      "word": "CREPE",
+      "definitions": [
+        {
+          "text": "Same as Crape.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepitant": {
+      "word": "CREPITANT",
+      "definitions": [
+        {
+          "text": "Having a crackling sound; crackling; rattling. Crepitant rale (Med.), a peculiar crackling sound audible with inspiration in pneumonia and other lung disease.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepitate": {
+      "word": "CREPITATE",
+      "definitions": [
+        {
+          "text": "To make a series of small, sharp, rapidly repeated explosions or sounds, as salt in fire; to crackle; to snap.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepitation": {
+      "word": "CREPITATION",
+      "definitions": [
+        {
+          "text": "The act of crepitating or crackling.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.) (a) A grating or crackling sensation or sound, as that produced by rubbing two fragments of a broken bone together, or by pressing upon cellular tissue containing air. (b) A crepitant râle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepon": {
+      "word": "CREPON",
+      "definitions": [
+        {
+          "text": "A thin stuff made of the finest wool or silk, or of wool and silk.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crept": {
+      "word": "CREPT",
+      "definitions": [
+        {
+          "text": "imp. & p. p. of Creep.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepusclecrepuscule": {
+      "word": "CREPUSCLE; CREPUSCULE",
+      "definitions": [
+        {
+          "text": "Twilight. Bailey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepuscularcrepusculous": {
+      "word": "CREPUSCULAR; CREPUSCULOUS",
+      "definitions": [
+        {
+          "text": "Pertaining to twilight; glimmering; hence, imperfectly clear or luminous. This semihistorical and crepuscular period. Sir G. C. Lewis.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Flying in the twilight or evening, or before sunrise; -- said certain birds and insects. Others feed only in the twilight, as bats and owls, and are called crepuscular. Whewell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crepusculine": {
+      "word": "CREPUSCULINE",
+      "definitions": [
+        {
+          "text": "Crepuscular. [Obs.] Sprat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crescence": {
+      "word": "CRESCENCE",
+      "definitions": [
+        {
+          "text": "Increase; enlargement. [Obs.] And toward the moon's attractive crescence bend. H. Brooke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crescendo": {
+      "word": "CRESCENDO",
+      "definitions": [
+        {
+          "text": "With a constantly increasing volume of voice; with gradually increasing strength and fullness of tone; -- a direction for the performance of music, indicated by the mark, or by writing the word on the score.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "a cappella",
+        "abbandono",
+        "access",
+        "accession",
+        "accrescendo",
+        "accretion",
+        "accrual",
+        "accrue",
+        "accruement",
+        "accumulate",
+        "accumulation",
+        "acme",
+        "adagietto",
+        "adagio",
+        "add to",
+        "addition",
+        "adjunct",
+        "advance",
+        "affettuoso",
+        "aggrandize",
+        "aggrandizement",
+        "agilmente",
+        "agitato",
+        "allegretto",
+        "allegro",
+        "amabile",
+        "amoroso",
+        "ampliation",
+        "amplification",
+        "amplify",
+        "andante",
+        "andantino",
+        "apex",
+        "apogee",
+        "appassionatamente",
+        "appassionato",
+        "appreciate",
+        "appreciation",
+        "ascent",
+        "augment",
+        "augmentation",
+        "awake the dead",
+        "balloon",
+        "ballooning",
+        "blast",
+        "blast the ear",
+        "bloat",
+        "bloating",
+        "blow up",
+        "boom",
+        "boost",
+        "breed",
+        "brillante",
+        "broaden",
+        "broadening",
+        "build",
+        "build up",
+        "buildup",
+        "bulk",
+        "bulk out",
+        "capriccioso",
+        "capstone",
+        "climax",
+        "con affetto",
+        "con agilita",
+        "con agitazione",
+        "con amore",
+        "crash",
+        "crest",
+        "culmen",
+        "culmination",
+        "deafen",
+        "decrescendo",
+        "deployment",
+        "develop",
+        "development",
+        "dilate",
+        "diminuendo",
+        "din",
+        "dispersion",
+        "distend",
+        "dolce",
+        "edema",
+        "elevation",
+        "enlarge",
+        "enlargement",
+        "expand",
+        "expansion",
+        "extend",
+        "extension",
+        "fanning out",
+        "fill out",
+        "fill the air",
+        "flare",
+        "flood",
+        "forte",
+        "fortissimo",
+        "fullness",
+        "gain",
+        "gain strength",
+        "get ahead",
+        "go up",
+        "greaten",
+        "greatening",
+        "grow",
+        "growth",
+        "gush",
+        "hike",
+        "hike up",
+        "hiking",
+        "huff",
+        "increase",
+        "increment",
+        "inflate",
+        "inflation",
+        "intensify",
+        "intensity",
+        "jump",
+        "lamentabile",
+        "larghetto",
+        "larghissimo",
+        "largo",
+        "leap",
+        "legato",
+        "leggiero",
+        "loudishness",
+        "loudness",
+        "magnification",
+        "magnify",
+        "marcando",
+        "meridian",
+        "morendo",
+        "mount",
+        "mounting",
+        "multiplication",
+        "multiply",
+        "parlando",
+        "peak",
+        "peal",
+        "pianissimo",
+        "piano",
+        "pizzicato",
+        "prestissimo",
+        "presto",
+        "productiveness",
+        "proliferate",
+        "proliferation",
+        "puff",
+        "puff up",
+        "pump",
+        "pump up",
+        "raise",
+        "raising",
+        "rallentando",
+        "rarefy",
+        "rattle the windows",
+        "rend the air",
+        "rend the ears",
+        "resound",
+        "ring",
+        "rise",
+        "ritardando",
+        "ritenuto",
+        "rock the sky",
+        "run up",
+        "scherzando",
+        "scherzo",
+        "scherzoso",
+        "shoot up",
+        "snowball",
+        "snowballing",
+        "sonority",
+        "sonorousness",
+        "sordo",
+        "sotto voce",
+        "spiccato",
+        "splay",
+        "split the eardrums",
+        "split the ears",
+        "spread",
+        "spreading",
+        "staccato",
+        "startle the echoes",
+        "strengthen",
+        "stretch",
+        "stretto",
+        "stun",
+        "sufflate",
+        "surge",
+        "surge of sound",
+        "swell",
+        "swelling",
+        "thunder",
+        "tremolando",
+        "tremoloso",
+        "trillando",
+        "tumefy",
+        "tumescence",
+        "up",
+        "upping",
+        "upsurge",
+        "upswing",
+        "uptrend",
+        "upturn",
+        "volume",
+        "wax",
+        "waxing",
+        "widen",
+        "widening"
+      ]
+    },
+    "crescent": {
+      "word": "CRESCENT",
+      "definitions": [
+        {
+          "text": "Shaped like a crescent. Astarte, queen of heaven, with crescent horns. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Increasing; growing. O, I see the crescent promise of my spirit hath not set. Tennyson.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To form into a crescent, or something resembling a crescent. [R.] Anna Seward.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To adorn with crescents.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Autobahn",
+        "Cynthian",
+        "S-shaped",
+        "US highway",
+        "achievement",
+        "alerion",
+        "alley",
+        "alleyway",
+        "animal charge",
+        "annulet",
+        "argent",
+        "armorial bearings",
+        "armory",
+        "arms",
+        "arterial",
+        "arterial highway",
+        "arterial street",
+        "artery",
+        "artificial satellite",
+        "autoroute",
+        "autostrada",
+        "avenue",
+        "azure",
+        "bandeau",
+        "bar",
+        "bar sinister",
+        "baton",
+        "bearings",
+        "belt highway",
+        "bend",
+        "bend sinister",
+        "biconcave",
+        "bicorn",
+        "billet",
+        "blazon",
+        "blazonry",
+        "blind alley",
+        "blooming",
+        "blossoming",
+        "bordure",
+        "boulevard",
+        "broad arrow",
+        "budding",
+        "burgeoning",
+        "bypass",
+        "byway",
+        "cadency mark",
+        "camino real",
+        "canton",
+        "carriageway",
+        "causeway",
+        "causey",
+        "chaplet",
+        "charge",
+        "chaussee",
+        "chevron",
+        "chief",
+        "circle",
+        "circumferential",
+        "circus",
+        "close",
+        "coat of arms",
+        "cockatrice",
+        "corduroy road",
+        "corniform",
+        "coronet",
+        "county road",
+        "court",
+        "crescendoing",
+        "crescent moon",
+        "crescent-shaped",
+        "crescentic",
+        "crescentiform",
+        "crescentlike",
+        "crest",
+        "cross",
+        "cross moline",
+        "crown",
+        "cul-de-sac",
+        "dead-end street",
+        "decrescent",
+        "decrescent moon",
+        "demilune",
+        "developed",
+        "device",
+        "difference",
+        "differencing",
+        "dike",
+        "dirt road",
+        "drive",
+        "driveway",
+        "eagle",
+        "ermine",
+        "ermines",
+        "erminites",
+        "erminois",
+        "escutcheon",
+        "expanding",
+        "expressway",
+        "falcate",
+        "falciform",
+        "falcon",
+        "fess",
+        "fess point",
+        "field",
+        "file",
+        "flanch",
+        "fleur-de-lis",
+        "florescent",
+        "flourishing",
+        "flowering",
+        "freeway",
+        "fret",
+        "full moon",
+        "full-fledged",
+        "full-grown",
+        "fully developed",
+        "fur",
+        "fusil",
+        "garland",
+        "gibbous moon",
+        "gravel road",
+        "griffin",
+        "growing",
+        "grown",
+        "grown-up",
+        "gules",
+        "gyron",
+        "half circle",
+        "half-moon",
+        "harvest moon",
+        "hatchment",
+        "helmet",
+        "hemicycle",
+        "heraldic device",
+        "highroad",
+        "highway",
+        "highways and byways",
+        "honor point",
+        "horn-shaped",
+        "horned",
+        "horseshoe",
+        "hypertrophied",
+        "impalement",
+        "impaling",
+        "increasing",
+        "incremental",
+        "increscent",
+        "increscent moon",
+        "inescutcheon",
+        "intensifying",
+        "interstate highway",
+        "label",
+        "lane",
+        "lengthening",
+        "lion",
+        "local road",
+        "lozenge",
+        "lunar",
+        "lunate",
+        "lunette",
+        "luniform",
+        "lunula",
+        "lunular",
+        "lunule",
+        "main drag",
+        "main road",
+        "mantling",
+        "marshaling",
+        "martlet",
+        "mascle",
+        "mature",
+        "menisciform",
+        "meniscoid",
+        "meniscus",
+        "metal",
+        "mews",
+        "moon",
+        "moon-shaped",
+        "moonlike",
+        "motorway",
+        "motto",
+        "mullet",
+        "multiplying",
+        "new moon",
+        "nombril point",
+        "octofoil",
+        "on the increase",
+        "or",
+        "orb of night",
+        "ordinary",
+        "orle",
+        "overdeveloped",
+        "overgrown",
+        "pale",
+        "paly",
+        "parkway",
+        "pave",
+        "paved road",
+        "pean",
+        "pheon",
+        "pike",
+        "place",
+        "plank road",
+        "primary highway",
+        "private road",
+        "proliferating",
+        "purpure",
+        "quadrant",
+        "quarter",
+        "quartering",
+        "queen of heaven",
+        "queen of night",
+        "right-of-way",
+        "ring road",
+        "road",
+        "roadbed",
+        "roadway",
+        "rose",
+        "route nationale",
+        "row",
+        "royal road",
+        "sable",
+        "saltire",
+        "satellite",
+        "scutcheon",
+        "scythe",
+        "secondary road",
+        "sector",
+        "semicircle",
+        "semicircular",
+        "semilunar",
+        "sextant",
+        "shield",
+        "sickle",
+        "sickle-like",
+        "sickle-shaped",
+        "sigmoid",
+        "silvery moon",
+        "snowballing",
+        "speedway",
+        "spread eagle",
+        "spreading",
+        "sprouting",
+        "state highway",
+        "street",
+        "subordinary",
+        "superhighway",
+        "swelling",
+        "tenne",
+        "terrace",
+        "the wandering Moon",
+        "thoroughfare",
+        "thriving",
+        "through street",
+        "thruway",
+        "tightening",
+        "tincture",
+        "toll road",
+        "torse",
+        "township road",
+        "tressure",
+        "turnpike",
+        "two-horned",
+        "unicorn",
+        "vair",
+        "vert",
+        "waning crescent moon",
+        "waning moon",
+        "waxing",
+        "waxing crescent moon",
+        "waxing moon",
+        "wet moon",
+        "wreath",
+        "wynd",
+        "yale"
+      ]
+    },
+    "crescentic": {
+      "word": "CRESCENTIC",
+      "definitions": [
+        {
+          "text": "Crescent-shaped. \"Crescentic lobes.\" R. Owen.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crescentwise": {
+      "word": "CRESCENTWISE",
+      "definitions": [
+        {
+          "text": "In the form of a crescent; like a crescent. Tennyson.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crescive": {
+      "word": "CRESCIVE",
+      "definitions": [
+        {
+          "text": "Increasing; growing. [R.] Unseen, yet crescive in his faculty. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cresol": {
+      "word": "CRESOL",
+      "definitions": [
+        {
+          "text": "Any one of three metameric substances, CH3.C6H4.OH, homologous with and resembling phenol. They are obtained from coal tar and wood tar, and are colorless, oily liquids or solids.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cresorcin": {
+      "word": "CRESORCIN",
+      "definitions": [
+        {
+          "text": "Same as Isorcin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cress": {
+      "word": "CRESS",
+      "definitions": [
+        {
+          "text": "A plant of various species, chiefly cruciferous. The leaves have a moderately pungent taste, and are used as a salad and antiscorbutic. sativum; the water cress is the Nasturtium officinale. Various other plants are sometimes called cresses. To strip the brook with mantling cresses spread. Goldsmith. Bitter cress. See under Bitter. now turned into the meaningless \"not worth a curse.\" Skeat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cresselle": {
+      "word": "CRESSELLE",
+      "definitions": [
+        {
+          "text": "A wooden rattle sometimes used as a substitute for a bell, in the Roman Catholic church, during the latter part of Holy Week, or the last week of Lent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cresset": {
+      "word": "CRESSET",
+      "definitions": [
+        {
+          "text": "An open frame or basket of iron, filled with combustible material, to be burned as a beacon; an open lamp or firrepan carried on a pole in nocturnal processions. Starry lamps and blazing cressets, fed With naphtha and asphaltus. Milton. As a cresset true that darts its length Of beamy luster from a tower of strength. Wordsworth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Coopering)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small furnace or iron cage to hold fire for charring the inside of a cask, and making the staves flexible. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cressy": {
+      "word": "CRESSY",
+      "definitions": [
+        {
+          "text": "Abounding in cresses. The cressy islets white in flower. Tennyson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crest": {
+      "word": "CREST",
+      "definitions": [
+        {
+          "text": "A tuft, or other excrescence or natural ornament, growing on animal's head; the comb of a cock; the swelling on the head of a serpent; the lengthened feathers of the crown or nape of bird, etc. Darwin. [Attack] his rising crest, and drive the serpent back. C. Pitt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The plume of feathers, or other decoration, worn on a helmet; the distinctive ornament of a helmet, indicating the rank of the weare; hence, also, the helmet. Stooping low his lofty crest. Sir W. Scott. And on his head there stood upright A crest, in token of a knight. Gower.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bearing worn, not upon the shield, but usually above it, or separately as an ornament for plate, liveries, and the like. It is a relic of the ancient cognizance. See Cognizance, 4.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The upper curve of a horse's neck. Throwing the base thong from his bending crest. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ridge or top of wave. Like wave with crest of sparkling foam. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The summit of a hill or mountain ridge.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The helm or head, as typical of a high spirit; pride; courage. Now the time is come That France must vail her lofty plumed crest. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ornamental finishing which surmounts the ridge of a roof, canopy, etc. The finials of gables and pinnacles are sometimes called crest. Parker.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Engin.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The top line of a slope or embankment. Crest tile, a tile made to cover the ridge of a roof, fitting upon it like a saddle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To furnish with, or surmount as, a crest; to serve as a crest for. His legs bestrid the ocean, his reared arm Crested the world. Shak. Mid groves of clouds that crest the mountain's brow. Wordsworth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark with lines or streaks, like, or regarded as like, waving plumes. Like as the shining sky in summer's night, . . . Is crested with lines of fiery light. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To form a crest.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Vandyke edge",
+        "achievement",
+        "acme",
+        "alerion",
+        "amplitude",
+        "animal charge",
+        "annulet",
+        "antinode",
+        "apex",
+        "apogee",
+        "argent",
+        "armorial bearings",
+        "armory",
+        "arms",
+        "azure",
+        "badge",
+        "bandeau",
+        "bar",
+        "bar sinister",
+        "baton",
+        "bearings",
+        "bend",
+        "bend sinister",
+        "billet",
+        "blazon",
+        "blazonry",
+        "bordure",
+        "broad arrow",
+        "brow",
+        "cadency mark",
+        "canton",
+        "cap",
+        "capsheaf",
+        "caput",
+        "chaplet",
+        "charge",
+        "chevron",
+        "chief",
+        "chine",
+        "climax",
+        "cloud nine",
+        "coat of arms",
+        "cockatrice",
+        "cockscomb",
+        "consummate",
+        "coronet",
+        "crenation",
+        "crenelation",
+        "crenulation",
+        "crescendo",
+        "crescent",
+        "cross",
+        "cross moline",
+        "crown",
+        "culmen",
+        "culminate",
+        "culmination",
+        "de Broglie wave",
+        "deckle edge",
+        "denticulation",
+        "dentil",
+        "dentil band",
+        "design",
+        "device",
+        "difference",
+        "differencing",
+        "diffraction",
+        "dogtooth",
+        "eagle",
+        "edge",
+        "electromagnetic radiation",
+        "electromagnetic wave",
+        "emblem",
+        "ermine",
+        "ermines",
+        "erminites",
+        "erminois",
+        "escutcheon",
+        "extreme limit",
+        "extremity",
+        "falcon",
+        "feather",
+        "fess",
+        "fess point",
+        "field",
+        "figure",
+        "file",
+        "flanch",
+        "fleur-de-lis",
+        "frequency",
+        "frequency band",
+        "frequency spectrum",
+        "fret",
+        "frost",
+        "fur",
+        "fusil",
+        "garland",
+        "griffin",
+        "guided wave",
+        "gules",
+        "gyron",
+        "hackle",
+        "hatchment",
+        "head",
+        "heading",
+        "headpiece",
+        "heaven",
+        "heavens",
+        "height",
+        "helmet",
+        "heraldic device",
+        "high noon",
+        "highest pitch",
+        "highest point",
+        "hilltop",
+        "hogback",
+        "honor point",
+        "ice",
+        "impalement",
+        "impaling",
+        "in phase",
+        "inescutcheon",
+        "interference",
+        "knoll",
+        "label",
+        "light",
+        "limit",
+        "lion",
+        "lofty peak",
+        "longitudinal wave",
+        "lozenge",
+        "mantling",
+        "marshaling",
+        "martlet",
+        "mascle",
+        "maximum",
+        "mechanical wave",
+        "meridian",
+        "metal",
+        "motto",
+        "mountaintop",
+        "mullet",
+        "ne plus ultra",
+        "no place higher",
+        "node",
+        "nombril point",
+        "noon",
+        "notching",
+        "octofoil",
+        "or",
+        "ordinary",
+        "orle",
+        "out of phase",
+        "outtop",
+        "overarch",
+        "overtop",
+        "pale",
+        "paly",
+        "panache",
+        "peak",
+        "pean",
+        "period",
+        "periodic wave",
+        "pheon",
+        "pic",
+        "pico",
+        "pike",
+        "pinhead",
+        "pinion",
+        "pinnacle",
+        "pitch",
+        "plume",
+        "plumule",
+        "point",
+        "pole",
+        "precipice",
+        "purpure",
+        "quarter",
+        "quartering",
+        "quill",
+        "radio wave",
+        "ray",
+        "reach",
+        "reinforcement",
+        "resonance",
+        "resonance frequency",
+        "rickrack",
+        "ridge",
+        "roof",
+        "rose",
+        "sable",
+        "saltire",
+        "saw",
+        "saw teeth",
+        "scallop",
+        "scapular",
+        "scutcheon",
+        "seal",
+        "seismic wave",
+        "serration",
+        "seventh heaven",
+        "shield",
+        "shock wave",
+        "sky",
+        "sound wave",
+        "spire",
+        "spread eagle",
+        "spur",
+        "subordinary",
+        "summit",
+        "surface wave",
+        "surmount",
+        "symbol",
+        "tenne",
+        "tidal wave",
+        "tincture",
+        "tip",
+        "tip-top",
+        "top",
+        "top off",
+        "top out",
+        "topknot",
+        "tor",
+        "torse",
+        "transverse wave",
+        "tressure",
+        "trough",
+        "tuft",
+        "unicorn",
+        "upmost",
+        "upper extremity",
+        "uppermost",
+        "utmost",
+        "vair",
+        "vert",
+        "vertex",
+        "very top",
+        "wave",
+        "wave equation",
+        "wave motion",
+        "wave number",
+        "wavelength",
+        "wreath",
+        "yale",
+        "zenith"
+      ]
+    },
+    "crested": {
+      "word": "CRESTED",
+      "definitions": [
+        {
+          "text": "Having a crest. But laced crested helm. Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having a crest of feathers or hair upon the head. \"The crested bird.\" Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bott.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Bearing any elevated appendage like a crest, as an elevated line or ridge, or a tuft. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crestfallen": {
+      "word": "CRESTFALLEN",
+      "definitions": [
+        {
+          "text": "With hanging head; hence, dispirited; dejected; cowed. Let it make thee crestfullen; Ay, and allay this thy abortive pride. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the crest, or upper part of the neck, hanging to one side;",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abashed",
+        "ashamed",
+        "baffled",
+        "balked",
+        "betrayed",
+        "bilked",
+        "blasted",
+        "blighted",
+        "blushing",
+        "brooding",
+        "broody",
+        "chagrined",
+        "chapfallen",
+        "crossed",
+        "crushed",
+        "dashed",
+        "defeated",
+        "disappointed",
+        "dished",
+        "disillusioned",
+        "dissatisfied",
+        "dumpish",
+        "embarrassed",
+        "foiled",
+        "frustrated",
+        "glum",
+        "grum",
+        "hangdog",
+        "humbled",
+        "humiliated",
+        "ill done-by",
+        "ill-served",
+        "let down",
+        "long-faced",
+        "moodish",
+        "moody",
+        "mopey",
+        "moping",
+        "mopish",
+        "morose",
+        "mortified",
+        "mumpish",
+        "out of countenance",
+        "red-faced",
+        "regretful",
+        "shamed",
+        "shamefaced",
+        "shamefast",
+        "sorely disappointed",
+        "soured",
+        "sulky",
+        "sullen",
+        "thwarted"
+      ]
+    },
+    "cresting": {
+      "word": "CRESTING",
+      "definitions": [
+        {
+          "text": "An ornamental finish on the top of a wall or ridge of a roof.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crestless": {
+      "word": "CRESTLESS",
+      "definitions": [
+        {
+          "text": "Without a crest or escutcheon; of low birth. \"Crestless yeomen.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cresylic": {
+      "word": "CRESYLIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or derived from, cresol, creosote, etc. Cresylic acid. (Chem.) See Cresol.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretaceous": {
+      "word": "CRETACEOUS",
+      "definitions": [
+        {
+          "text": "Having the qualities of chalk;abounding with chalk; chalky; as, cretaceous rocks and formations. See Chalk. Cretaceous acid, an old name for carbonic acid. kinds, including beds of chalk, green sand, etc., formed in the Cretaceous period; -- called also the chalk formation. See the Diagram under Geology. Mesozoic age during which the Cretaceous formation was deposited.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretaceouscretacic": {
+      "word": "CRETACEOUS; CRETACIC",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or designating, the period of time following the Jurassic and preceding the Eocene.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretaceously": {
+      "word": "CRETACEOUSLY",
+      "definitions": [
+        {
+          "text": "In a chalky manner; as chalk.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretan": {
+      "word": "CRETAN",
+      "definitions": [
+        {
+          "text": "Pertaining to Crete, or Candia.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or inhabitant of Crete or Candia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crete": {
+      "word": "CRETE",
+      "definitions": [
+        {
+          "text": "A Cretan",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretian": {
+      "word": "CRETIAN",
+      "definitions": [
+        {
+          "text": "See Cretan.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretic": {
+      "word": "CRETIC",
+      "definitions": [
+        {
+          "text": "A poetic foot, composed of one short syllable between two long ones (-Bentley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creticism": {
+      "word": "CRETICISM",
+      "definitions": [
+        {
+          "text": "Falsehood; lying; cretism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretin": {
+      "word": "CRETIN",
+      "definitions": [
+        {
+          "text": "One afflicted with cretinism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ament",
+        "born fool",
+        "clot",
+        "congenital idiot",
+        "defective",
+        "golem",
+        "half-wit",
+        "idiot",
+        "imbecile",
+        "juggins",
+        "mongoloid idiot",
+        "moron",
+        "natural",
+        "natural idiot",
+        "natural-born fool",
+        "simp",
+        "simpleton",
+        "zany",
+        "zombie"
+      ]
+    },
+    "cretinism": {
+      "word": "CRETINISM",
+      "definitions": [
+        {
+          "text": "A condition of endemic or inherited idiocy, accompanied by physical degeneracy and deformity (usually with goiter), frequent in certain mountain valleys, esp. of the Alps.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acromegaly",
+        "amentia",
+        "arrested development",
+        "backwardness",
+        "blithering idiocy",
+        "choriocarcinoma",
+        "diabetes",
+        "diabetes insipidus",
+        "diabetes mellitus",
+        "dwarfism",
+        "giantism",
+        "half-wittedness",
+        "hyperglycemia",
+        "hyperparathyroidism",
+        "hypo-ovarianism",
+        "hypothyroidism",
+        "idiocy",
+        "idiotism",
+        "imbecility",
+        "infantilism",
+        "insanity",
+        "mental defectiveness",
+        "mental deficiency",
+        "mental handicap",
+        "mental retardation",
+        "mongolianism",
+        "mongolism",
+        "mongoloid idiocy",
+        "moronism",
+        "moronity",
+        "panhypopituitarism",
+        "pheochromocytoma",
+        "profound idiocy",
+        "retardation",
+        "retardment",
+        "sexual precocity",
+        "simple-wittedness",
+        "simplemindedness",
+        "simpleness",
+        "simplicity",
+        "subnormality",
+        "thyrotoxicosis",
+        "toxic goiter"
+      ]
+    },
+    "cretinous": {
+      "word": "CRETINOUS",
+      "definitions": [
+        {
+          "text": "Having the characteristics of a cretin. \"Cretinous stupefaction.\" Ruskin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretism": {
+      "word": "CRETISM",
+      "definitions": [
+        {
+          "text": "A Cretan practice; iying; a falsehood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretonne": {
+      "word": "CRETONNE",
+      "definitions": [
+        {
+          "text": "A strong white fabric with warp of hemp and welt of flax.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fabric with cotton warp and woolen weft.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of chintz with a glossy surface.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cretose": {
+      "word": "CRETOSE",
+      "definitions": [
+        {
+          "text": "Chalky; cretaceous. [Obs.] Ash.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "creutzer": {
+      "word": "CREUTZER",
+      "definitions": [
+        {
+          "text": "(kroitn. See Kreutzer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "creux": {
+      "word": "CREUX",
+      "definitions": [
+        {
+          "text": "Used in English only in the expression en creux. Thus, engraving en creux is engraving in intaglio, or by sinking or hollowing out the design.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crevasse": {
+      "word": "CREVASSE",
+      "definitions": [
+        {
+          "text": "A deep crevice or fissure, as in embankment; one of the clefts or fissure by which the mass of a glacier is divided.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A breach in the levee or embankment of a river, caused by the pressure of the water, as on the lower Mississippi. [U.S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abysm",
+        "abyss",
+        "arroyo",
+        "box canyon",
+        "breach",
+        "break",
+        "chap",
+        "chasm",
+        "check",
+        "chimney",
+        "chink",
+        "cleft",
+        "cleuch",
+        "clough",
+        "col",
+        "coulee",
+        "couloir",
+        "crack",
+        "cranny",
+        "crater",
+        "crevice",
+        "cut",
+        "cwm",
+        "deep",
+        "defile",
+        "dell",
+        "depth",
+        "dike",
+        "ditch",
+        "donga",
+        "draw",
+        "excavation",
+        "fault",
+        "fissure",
+        "flaw",
+        "flume",
+        "fracture",
+        "furrow",
+        "gap",
+        "gape",
+        "gash",
+        "gorge",
+        "groove",
+        "gulch",
+        "gulf",
+        "gully",
+        "hole",
+        "hollow",
+        "incision",
+        "joint",
+        "kloof",
+        "leak",
+        "moat",
+        "notch",
+        "nullah",
+        "opening",
+        "pass",
+        "passage",
+        "pit",
+        "ravine",
+        "rent",
+        "rift",
+        "rime",
+        "rupture",
+        "scissure",
+        "seam",
+        "shaft",
+        "slit",
+        "slot",
+        "split",
+        "trench",
+        "valley",
+        "void",
+        "wadi",
+        "well",
+        "yawning abyss"
+      ]
+    },
+    "crevet": {
+      "word": "CREVET",
+      "definitions": [
+        {
+          "text": "A crucible or melting pot; a cruset. Crabb.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crevice": {
+      "word": "CREVICE",
+      "definitions": [
+        {
+          "text": "A narrow opening resulting from a split or crack or the separation of a junction; a cleft; a fissure; a rent. The mouse, Behind the moldering wainscot, shrieked, Or from the crevice peered about. Tennyson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To crack; to flaw. [R.] Sir H. Wotton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abysm",
+        "abyss",
+        "arroyo",
+        "box canyon",
+        "breach",
+        "break",
+        "canyon",
+        "cavity",
+        "chap",
+        "chasm",
+        "check",
+        "chimney",
+        "chink",
+        "cleft",
+        "cleuch",
+        "clough",
+        "col",
+        "coulee",
+        "couloir",
+        "crack",
+        "cranny",
+        "crevasse",
+        "cut",
+        "cwm",
+        "defile",
+        "dell",
+        "dike",
+        "ditch",
+        "donga",
+        "draw",
+        "excavation",
+        "fault",
+        "fissure",
+        "flaw",
+        "flume",
+        "fracture",
+        "furrow",
+        "gap",
+        "gape",
+        "gash",
+        "gorge",
+        "groove",
+        "gulch",
+        "gulf",
+        "gully",
+        "hole",
+        "incision",
+        "joint",
+        "kloof",
+        "leak",
+        "moat",
+        "notch",
+        "nullah",
+        "opening",
+        "pass",
+        "passage",
+        "ravine",
+        "rent",
+        "rift",
+        "rime",
+        "rupture",
+        "scissure",
+        "seam",
+        "slit",
+        "slot",
+        "split",
+        "trench",
+        "valley",
+        "void",
+        "wadi"
+      ]
+    },
+    "creviced": {
+      "word": "CREVICED",
+      "definitions": [
+        {
+          "text": "Having a crevice or crevices; as, a creviced structure for storing ears of corn. Trickling through the creviced rock. J. Cunningham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crevis": {
+      "word": "CREVIS",
+      "definitions": [
+        {
+          "text": "The crawfish. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crew": {
+      "word": "CREW",
+      "definitions": [
+        {
+          "text": "The Manx shearwater.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A company of people associated together; an assemblage; a throng. There a noble crew Of lords and ladies stood on every side. Spenser. Faithful to whom to thy rebellious crew Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The company of seamen who man a ship, vessel, or at; the company belonging to a vessel or a boat. ship's company, including master and other officers. When the master and other officers are excluded, the context always shows it. Story. Burrill.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In an extended sense, any small body of men associated for a purpose; a gang; as (Naut.), the carpenter's crew; the boatswain's crew.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "imp. of Crow.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "aerial photographer",
+        "age group",
+        "aggregation",
+        "aircrew",
+        "aircrewman",
+        "assembly",
+        "avigator",
+        "band",
+        "battalion",
+        "belly gunner",
+        "bevy",
+        "body",
+        "bombardier",
+        "brigade",
+        "bunch",
+        "cabal",
+        "cadre",
+        "camarilla",
+        "cast",
+        "cell",
+        "charmed circle",
+        "circle",
+        "clan",
+        "clique",
+        "closed circle",
+        "cluster",
+        "cohort",
+        "collection",
+        "company",
+        "complement",
+        "congregation",
+        "contingent",
+        "corps",
+        "coterie",
+        "covey",
+        "crew chief",
+        "crowd",
+        "detachment",
+        "detail",
+        "division",
+        "eight",
+        "eleven",
+        "elite",
+        "elite group",
+        "employees",
+        "faction",
+        "first string",
+        "first team",
+        "five",
+        "fleet",
+        "flight attendant",
+        "flight crew",
+        "force",
+        "gang",
+        "group",
+        "grouping",
+        "groupment",
+        "gunner",
+        "help",
+        "hired help",
+        "hostess",
+        "in-group",
+        "ingroup",
+        "inner circle",
+        "junta",
+        "junto",
+        "machine gunner",
+        "men",
+        "meteorologist",
+        "mob",
+        "movement",
+        "navigator",
+        "nine",
+        "out-group",
+        "outfit",
+        "pack",
+        "party",
+        "peer group",
+        "personnel",
+        "phalanx",
+        "platoon",
+        "posse",
+        "regiment",
+        "reserves",
+        "retinue",
+        "ring",
+        "rowing crew",
+        "salon",
+        "second string",
+        "second team",
+        "servantry",
+        "set",
+        "squad",
+        "stable",
+        "staff",
+        "steward",
+        "stewardess",
+        "string",
+        "team",
+        "the help",
+        "third string",
+        "tribe",
+        "troop",
+        "troupe",
+        "varsity",
+        "we-group",
+        "wing"
+      ]
+    },
+    "crewel": {
+      "word": "CREWEL",
+      "definitions": [
+        {
+          "text": "Worsted yarn,, slackly twisted, used for embroidery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crewelwork": {
+      "word": "CREWELWORK",
+      "definitions": [
+        {
+          "text": "Embroidery in crewels, commonly done upon some plain material, such as linen.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crewet": {
+      "word": "CREWET",
+      "definitions": [
+        {
+          "text": "See Cruet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

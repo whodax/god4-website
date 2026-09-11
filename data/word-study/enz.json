@@ -1,0 +1,45 @@
+{
+  "version": "v1",
+  "entries": {
+    "enzooticenzooetic": {
+      "word": "ENZOOTIC; ENZOOETIC",
+      "definitions": [
+        {
+          "text": "Afflicting animals; -- used of a disease affecting the animals of a district. It corresponds to an endemic disease among men.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enzyme": {
+      "word": "ENZYME",
+      "definitions": [
+        {
+          "text": "An unorganized or unformed ferment, in distinction from an organized or living ferment; a soluble, or chemical, ferment. Ptyalin, pepsin, diastase, and rennet are good examples of enzymes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "beta-amylase",
+        "carbohydrase",
+        "coenzyme",
+        "deoxyribonuclease",
+        "digestant",
+        "digester",
+        "digestive",
+        "esterase",
+        "holoenzyme",
+        "insulinase",
+        "lipase",
+        "lipoxidase",
+        "pepsin",
+        "polynucleotidase",
+        "protease",
+        "proteolytic enzyme",
+        "ribonuclease",
+        "saccharase",
+        "saccharifying enzyme"
+      ]
+    }
+  }
+}

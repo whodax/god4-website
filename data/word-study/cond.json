@@ -1,0 +1,2981 @@
+{
+  "version": "v1",
+  "entries": {
+    "cond": {
+      "word": "COND",
+      "definitions": [
+        {
+          "text": "To con, as a ship.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condemn": {
+      "word": "CONDEMN",
+      "definitions": [
+        {
+          "text": "To pronounce to be wrong; to disapprove of; to censure. Condemn the fault, and not the actor of it! Why, every fault's condemned ere it be done. Shak. Wilt thou condemn him that is most just Job xxxiv. 17.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To declare the guilt of; to make manifest the faults or unworthiness of; to convict of guilt. The queen of the south shall rise up in the judgment with this generation, and shall condemn it. Matt. xii. 42.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pronounce a judicial sentence against; to sentence to punishment, suffering, or loss; to doom; -- with to before the penalty. Driven out from bliss, condemned In this abhorred deep to utter woe. Milton. To each his sufferings; all are men, Condemned alike to groan. Gray. And they shall condemn him to death. Matt. xx. 18. The thief condemned, in law already dead. Pope. No flocks that range the valley free, To slaughter I condemn. Goldsmith.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To amerce or fine; -- with in before the penalty. The king of Egypt . . . condemned the land in a hundred talents of silver. 2 Cron. xxxvi. 3.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To adjudge or pronounce to be unfit for use or service; to adjudge or pronounce to be forfeited; as, the ship and her cargo were condemned.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To doom to be taken for public use, under the right of eminent domain. convict; doom; sentence; adjudge.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accuse",
+        "act on",
+        "anathematize",
+        "anathemize",
+        "animadvert on",
+        "arraign",
+        "attaint",
+        "belittle",
+        "blacklist",
+        "blame",
+        "bring home to",
+        "bring to ruin",
+        "call to account",
+        "cast blame upon",
+        "cast reflection upon",
+        "censure",
+        "complain against",
+        "condemned",
+        "confound",
+        "consigned",
+        "consume",
+        "convict",
+        "criticize",
+        "cry down",
+        "cry out against",
+        "cry out on",
+        "cry shame upon",
+        "damn",
+        "damned",
+        "deal destruction",
+        "decimate",
+        "decree",
+        "decry",
+        "denounce",
+        "denunciate",
+        "deprecate",
+        "depreciate",
+        "depredate",
+        "desolate",
+        "despoil",
+        "destined",
+        "destroy",
+        "devastate",
+        "devour",
+        "disapprove",
+        "disparage",
+        "dissolve",
+        "doom",
+        "doomed",
+        "engorge",
+        "excommunicate",
+        "fated",
+        "find",
+        "find against",
+        "find for",
+        "find guilty",
+        "foreordained",
+        "fulminate against",
+        "gobble",
+        "gobble up",
+        "gut",
+        "gut with fire",
+        "havoc",
+        "impeach",
+        "impugn",
+        "incinerate",
+        "indict",
+        "inveigh against",
+        "knock",
+        "lay in ruins",
+        "lay waste",
+        "ordained",
+        "order",
+        "pass judgment",
+        "pass sentence",
+        "pass sentence on",
+        "penalize",
+        "pronounce",
+        "pronounce judgment",
+        "pronounce on",
+        "pronounce sentence",
+        "proscribe",
+        "rap",
+        "ravage",
+        "rebuke",
+        "reflect upon",
+        "report",
+        "reprehend",
+        "reprimand",
+        "reproach",
+        "reprobate",
+        "reprove",
+        "return a verdict",
+        "ruin",
+        "ruinate",
+        "rule",
+        "scold",
+        "sentence",
+        "shake up",
+        "shipwreck",
+        "skin",
+        "swallow up",
+        "throw into disorder",
+        "unleash destruction",
+        "unleash the hurricane",
+        "upbraid",
+        "upheave",
+        "utter a judgment",
+        "vandalize",
+        "vaporize",
+        "waste",
+        "wrack",
+        "wreak havoc",
+        "wreck"
+      ]
+    },
+    "condemnable": {
+      "word": "CONDEMNABLE",
+      "definitions": [
+        {
+          "text": "Worthy of condemnation; blamable; culpable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condemnation": {
+      "word": "CONDEMNATION",
+      "definitions": [
+        {
+          "text": "The act of condemning or pronouncing to be wrong; censure; blame; disapprobation. In every other sense of condemnation, as blame, censure, reproof, private judgment, and the like. Paley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of judicially condemning, or adjudging guilty, unfit for use, or forfeited; the act of dooming to punishment or forfeiture. A legal and judicial condemnation. Paley. Whose condemnation is pronounced. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being condemned. His pathetic appeal to posterity in the hopeless hour of condemnation. W. Irving.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ground or reason of condemning. This is the condemnation, that light is come into the world, and men loved darkness rather light, because their deeds were evil. John iii. 19.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acquittal",
+        "action",
+        "anathema",
+        "arraignment",
+        "award",
+        "blame",
+        "castigation",
+        "censure",
+        "consideration",
+        "damnation",
+        "decision",
+        "decree",
+        "decrial",
+        "deliverance",
+        "denouncement",
+        "denunciation",
+        "determination",
+        "diagnosis",
+        "dictum",
+        "doom",
+        "excoriation",
+        "finding",
+        "flaying",
+        "fulmination",
+        "fustigation",
+        "impeachment",
+        "indictment",
+        "judgment",
+        "landmark decision",
+        "order",
+        "penalty",
+        "pillorying",
+        "precedent",
+        "prognosis",
+        "pronouncement",
+        "reprehension",
+        "reprobation",
+        "resolution",
+        "ruling",
+        "sentence",
+        "skinning alive",
+        "stricture",
+        "verdict"
+      ]
+    },
+    "condemnatory": {
+      "word": "CONDEMNATORY",
+      "definitions": [
+        {
+          "text": "Condemning; containing or imposing condemnation or censure; as, a condemnatory sentence or decree.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abusive",
+        "accusative",
+        "accusatory",
+        "accusing",
+        "blackening",
+        "blameful",
+        "censorious",
+        "contemptuous",
+        "damnatory",
+        "denunciatory",
+        "deprecative",
+        "deprecatory",
+        "depreciative",
+        "derisive",
+        "disparaging",
+        "execrating",
+        "execrative",
+        "execratory",
+        "imputative",
+        "invective",
+        "inveighing",
+        "judgmental",
+        "objurgatory",
+        "priggish",
+        "proscriptive",
+        "recriminatory",
+        "reproachful",
+        "reprobative",
+        "reviling",
+        "ridiculing",
+        "scoffing",
+        "vilifying",
+        "vituperative"
+      ]
+    },
+    "condemned": {
+      "word": "CONDEMNED",
+      "definitions": [
+        {
+          "text": "Pronounced to be wrong, guilty, worthless, or forfeited; adjudged or sentenced to punishment, destruction, or confiscation.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Used for condemned persons. Richard Savage . . . had lain with fifty pounds weight of irons on his legs in the condemned ward of Newgate. Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condemner": {
+      "word": "CONDEMNER",
+      "definitions": [
+        {
+          "text": "One who condemns or censures.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condensability": {
+      "word": "CONDENSABILITY",
+      "definitions": [
+        {
+          "text": "Capability of being condensed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condensable": {
+      "word": "CONDENSABLE",
+      "definitions": [
+        {
+          "text": "Capable of being condensed; as, vapor is condensable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condensate": {
+      "word": "CONDENSATE",
+      "definitions": [
+        {
+          "text": "Made dense; condensed. Water . . . thickened or condensate. Peacham.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To condense. [R.] Hammond.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condensation": {
+      "word": "CONDENSATION",
+      "definitions": [
+        {
+          "text": "The act or process of condensing or of being condensed; the state of being condensed. He [Goldsmith] was a great and perhaps an unequaled master of the arts of selection and condensation. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Physics)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or process of reducing, by depression of temperature or increase of pressure, etc., to another and denser form, as gas to the condition of a liquid or steam to water.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rearrangement or concentration of the different constituents of one or more substances into a distinct and definite compound of greater complexity and molecular weight, often resulting in an increase of density, as the condensation of oxygen into ozone, or of acetone into mesitylene. Condensation product (Chem.), a substance obtained by the polymerization of one substance, or by the union of two or more, with or without separation of some unimportant side products. with cold metallic surfaces, in distinction from condensation by the injection of cold water.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abbreviation",
+        "abbreviature",
+        "abrege",
+        "abridgment",
+        "abstract",
+        "accelerando",
+        "acceleration",
+        "accretion",
+        "adherence",
+        "adhesion",
+        "agglomeration",
+        "agglutination",
+        "aggravation",
+        "apocope",
+        "astriction",
+        "astringency",
+        "beefing-up",
+        "blowing up",
+        "blowup",
+        "bottleneck",
+        "breviary",
+        "brief",
+        "capsule",
+        "cervix",
+        "circumscription",
+        "cling",
+        "clinging",
+        "clotting",
+        "clumping",
+        "clustering",
+        "coagulation",
+        "coarctation",
+        "coherence",
+        "cohesion",
+        "cohesiveness",
+        "compactedness",
+        "compaction",
+        "compend",
+        "compression",
+        "compressure",
+        "concentration",
+        "concretion",
+        "condensed version",
+        "congealment",
+        "congelation",
+        "conglobation",
+        "conglomeration",
+        "consolidation",
+        "conspectus",
+        "constriction",
+        "constringency",
+        "contraction",
+        "contracture",
+        "curtailment",
+        "decrease",
+        "deepening",
+        "densification",
+        "digest",
+        "diminuendo",
+        "distillation",
+        "draft",
+        "dribble",
+        "drip",
+        "dripping",
+        "drop",
+        "elision",
+        "ellipsis",
+        "enhancement",
+        "epitome",
+        "exacerbation",
+        "exaggeration",
+        "explosion",
+        "foreshortening",
+        "hardening",
+        "head",
+        "heating-up",
+        "heightening",
+        "hourglass",
+        "hourglass figure",
+        "information explosion",
+        "inseparability",
+        "intensification",
+        "isthmus",
+        "junction",
+        "knitting",
+        "leaching",
+        "lixiviation",
+        "magnification",
+        "narrow place",
+        "narrowing",
+        "neck",
+        "outline",
+        "overview",
+        "pandect",
+        "percolation",
+        "pickup",
+        "population explosion",
+        "precis",
+        "puckering",
+        "pursing",
+        "recap",
+        "recapitulation",
+        "redoubling",
+        "reduction",
+        "reinforcement",
+        "retrenchment",
+        "review",
+        "rubric",
+        "seepage",
+        "seeping",
+        "set",
+        "shortened version",
+        "shortening",
+        "skeleton",
+        "sketch",
+        "solidification",
+        "speedup",
+        "spurtle",
+        "step-up",
+        "sticking",
+        "stranglement",
+        "strangulation",
+        "strengthening",
+        "striction",
+        "stricture",
+        "summary",
+        "summation",
+        "survey",
+        "sweating",
+        "syllabus",
+        "syncope",
+        "synopsis",
+        "systole",
+        "telescoping",
+        "thumbnail sketch",
+        "tightening",
+        "topical outline",
+        "trickle",
+        "tricklet",
+        "truncation",
+        "wasp waist",
+        "wrinkling"
+      ]
+    },
+    "condensative": {
+      "word": "CONDENSATIVE",
+      "definitions": [
+        {
+          "text": "Having the property of condensing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condense": {
+      "word": "CONDENSE",
+      "definitions": [
+        {
+          "text": "To make more close, compact, or dense; to compress or concentrate into a smaller compass; to consolidate; to abridge; to epitomize. In what shape they choose, Dilated or condensed, bright or obscure. Milton. The secret course pursued at Brussels and at Madrid may be condensed into the usual formula, dissimulation, procrastination, and again dissimulation. Motley.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Chem. & Physics)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To reduce into another and denser form, as by cold or pressure; as, to condense gas into a liquid form, or steam into water. Condensed milk, milk reduced to the consistence of very thick cream by evaporation (usually with addition of sugar) for preservation and transportation. after having exerted its force on the piston. epitomize; reduce.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become more compact; to be reduced into a denser form. Nitrous acid is gaseous at ordinary temperatures, but condenses into a very volatile liquid at the zero of Fahrenheit. H. Spencer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Chem.) (a) To combine or unite (as two chemical substances) with or without separation of some unimportant side products. (b) To undergo polymerization.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Condensed; compact; dense. [R.] The huge condense bodies of planets. Bentley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abbreviate",
+        "abridge",
+        "abstract",
+        "accelerate",
+        "aggravate",
+        "be telegraphic",
+        "beef up",
+        "blow up",
+        "bob",
+        "boil down",
+        "brief",
+        "cake",
+        "candy",
+        "capsule",
+        "capsulize",
+        "circumscribe",
+        "clip",
+        "coarct",
+        "compact",
+        "complicate",
+        "compress",
+        "concentrate",
+        "concrete",
+        "congest",
+        "consolidate",
+        "constrict",
+        "constringe",
+        "contract",
+        "cram",
+        "cramp",
+        "crop",
+        "crowd",
+        "crystallize",
+        "curtail",
+        "cut",
+        "cut back",
+        "cut down",
+        "cut off short",
+        "cut short",
+        "decrease",
+        "deepen",
+        "densen",
+        "densify",
+        "digest",
+        "distill",
+        "dock",
+        "double",
+        "draw",
+        "draw in",
+        "draw together",
+        "dribble",
+        "drip",
+        "dripple",
+        "drop",
+        "elide",
+        "enhance",
+        "epitomize",
+        "exacerbate",
+        "exaggerate",
+        "filter",
+        "foreshorten",
+        "granulate",
+        "gurgle",
+        "heat up",
+        "heighten",
+        "hop up",
+        "hot up",
+        "intensify",
+        "inventory",
+        "jam",
+        "jazz up",
+        "key up",
+        "knit",
+        "leach",
+        "lixiviate",
+        "magnify",
+        "make complex",
+        "minimize",
+        "mow",
+        "narrow",
+        "nip",
+        "nutshell",
+        "outline",
+        "percolate",
+        "poll",
+        "pollard",
+        "press",
+        "prune",
+        "pucker",
+        "pucker up",
+        "purse",
+        "ram down",
+        "ramify",
+        "reap",
+        "recap",
+        "recapitulate",
+        "redouble",
+        "reduce",
+        "reinforce",
+        "retrench",
+        "seep",
+        "set",
+        "sharpen",
+        "shave",
+        "shear",
+        "shorten",
+        "shrink",
+        "sketch",
+        "sketch out",
+        "snub",
+        "solidify",
+        "soup up",
+        "spurtle",
+        "squeeze",
+        "step up",
+        "strangle",
+        "strangulate",
+        "strengthen",
+        "stunt",
+        "sum",
+        "sum up",
+        "summarize",
+        "summate",
+        "sweat",
+        "synopsize",
+        "take a set",
+        "take in",
+        "telescope",
+        "thicken",
+        "trickle",
+        "trim",
+        "triple",
+        "truncate",
+        "waste no words",
+        "weep",
+        "whet",
+        "wrinkle"
+      ]
+    },
+    "condenser": {
+      "word": "CONDENSER",
+      "definitions": [
+        {
+          "text": "One who, or that which, condenses.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Physic) (a) An instrument for condensing air or other elastic fluids, consisting of a cylinder having a movable piston to force the air into a receiver, and a valve to prevent its escape. (b) An instrument for concentrating electricity by the effect of induction between conducting plates separated by a nonconducting plate. (c) A lens or mirror, usually of short focal distance, used to concentrate light upon an object.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An apparatus for receiving and condensing the volatile products of distillation to a liquid or solid form, by cooling.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Steam Engine)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An apparatus, separate from the cylinder, in which the exhaust steam is condensed by the action of cold water or air. See Illust. of Steam engine. Achromatic condenser (Optics), an achromatic lens used as a condenser. focal distance used for concentrating rays of light. direct contact of water. the exhaust of a steam engine, by bringing it into contact with metallic surface cooled by water or air.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condensible": {
+      "word": "CONDENSIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being condensed; as, a gas condensible to a liquid by cold.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conder": {
+      "word": "CONDER",
+      "definitions": [
+        {
+          "text": "One who watches shoals of fish; a balker. See Balker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condescend": {
+      "word": "CONDESCEND",
+      "definitions": [
+        {
+          "text": "To stoop or descend; to let one's self down; to submit; to waive the privilege of rank or dignity; to accommodate one's self to an inferior. \"Condescend to men of low estate.\" Rom. xii. 16. Can they think me so broken, so debased With corporal servitude, that my mind ever Will condescend to such absurd commands Milton. Spain's mighty monarch, In gracious clemency, does condescend, On these conditions, to become your friend. Dryden. Those who thought they were honoring me by condescending to address a few words to me. F. W. Robinson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To consent. [Obs.] All parties willingly condescended heruento. R. Carew.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "OK",
+        "accede to",
+        "accept",
+        "accord to",
+        "agree to",
+        "approve",
+        "approve of",
+        "assent",
+        "be willing",
+        "bridle",
+        "connive at",
+        "consent",
+        "consent to silently",
+        "deal with",
+        "deign",
+        "descend",
+        "endorse",
+        "give consent",
+        "go along with",
+        "grant",
+        "have no objection",
+        "hold with",
+        "lower oneself",
+        "nod",
+        "nod assent",
+        "not refuse",
+        "okay",
+        "patronize",
+        "permit",
+        "ratify",
+        "sanction",
+        "say aye",
+        "say yes",
+        "stoop",
+        "take kindly to",
+        "toss the head",
+        "treat",
+        "vote affirmatively",
+        "vote aye",
+        "vouchsafe",
+        "wink at",
+        "yield assent"
+      ]
+    },
+    "condescendencecondescendency": {
+      "word": "CONDESCENDENCE; CONDESCENDENCY",
+      "definitions": [
+        {
+          "text": "Condescension. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condescendingly": {
+      "word": "CONDESCENDINGLY",
+      "definitions": [
+        {
+          "text": "In a condescending manner. Atterbury.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condescension": {
+      "word": "CONDESCENSION",
+      "definitions": [
+        {
+          "text": "The act of condescending; voluntary descent from one's rank or dignity in intercourse with an inferior; courtesy toward inferiors. It forbids pride . . . and commands humility, modesty, and condescension to others. Tillotson. Such a dignity and condescension . . . as are suitable to a superior nature. Addison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Olympian detachment",
+        "Olympian loftiness",
+        "arrogance",
+        "arrogantness",
+        "assumption of superiority",
+        "condescendence",
+        "deigning",
+        "domineering",
+        "domineeringness",
+        "haughtiness",
+        "haughty airs",
+        "hauteur",
+        "high horse",
+        "hoity-toitiness",
+        "hoity-toity",
+        "loftiness",
+        "overbearing pride",
+        "overbearingness",
+        "overweening pride",
+        "patronization",
+        "patronizing",
+        "patronizing attitude",
+        "pride",
+        "proudness",
+        "purse-pride",
+        "side",
+        "stiff-necked pride",
+        "superbia",
+        "toploftiness",
+        "uppishness",
+        "uppityness"
+      ]
+    },
+    "condescent": {
+      "word": "CONDESCENT",
+      "definitions": [
+        {
+          "text": "An act of condescension. [Obs.] Dr. H. More.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condign": {
+      "word": "CONDIGN",
+      "definitions": [
+        {
+          "text": "Worthy; suitable; deserving; fit. [Obs.] Condign and worthy praise. Udall. Herself of all that rule she deemend most condign. Spenser.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Deserved; adequate; suitable to the fault or crime. \"Condign censure.\" Milman. Unless it were a bloody murderer . . . I never gave them condign punishment. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "according to Hoyle",
+        "appropriate",
+        "atrocious",
+        "awful",
+        "becoming",
+        "correct",
+        "decent",
+        "decorous",
+        "deserved",
+        "dreadful",
+        "due",
+        "fair",
+        "fit",
+        "fitting",
+        "good",
+        "grim",
+        "horrible",
+        "just",
+        "kosher",
+        "merited",
+        "nice",
+        "normal",
+        "normative",
+        "proper",
+        "requisite",
+        "right",
+        "right and proper",
+        "righteous",
+        "rightful",
+        "rigorous",
+        "seemly",
+        "stern",
+        "strict",
+        "stringent",
+        "suitable"
+      ]
+    },
+    "condignity": {
+      "word": "CONDIGNITY",
+      "definitions": [
+        {
+          "text": "Merit, acguired by works, which can claim reward on the score of general benevolence. Such a worthiness of condignity, and proper merit of the heavenly glory, cannot be found in any the best, most perfect, and excellent of created beings. Bp. Bull.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condignly": {
+      "word": "CONDIGNLY",
+      "definitions": [
+        {
+          "text": "According to merit.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condignness": {
+      "word": "CONDIGNNESS",
+      "definitions": [
+        {
+          "text": "Agreeableness to deserts; suitableness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condiment": {
+      "word": "CONDIMENT",
+      "definitions": [
+        {
+          "text": "Something used to give relish to food, and to gratify the taste; a pungment and appetizing substance, as pepper or mustard; seasoning. As for radish and the like, they are for condiments, and not for nourishment. Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Tabasco",
+        "Worcestershire sauce",
+        "allspice",
+        "anchovies",
+        "angelica",
+        "applesauce",
+        "basil",
+        "bell pepper",
+        "black pepper",
+        "borage",
+        "burnet",
+        "caper",
+        "capsicum",
+        "caraway seeds",
+        "cardamom",
+        "catsup",
+        "celery salt",
+        "chervil",
+        "chili",
+        "chili sauce",
+        "chili vinegar",
+        "chives",
+        "chutney",
+        "cinnamon",
+        "cloves",
+        "condiments",
+        "coriander",
+        "cranberry sauce",
+        "cubeb",
+        "cumin",
+        "curry",
+        "dahl sauce",
+        "dill",
+        "dillseed",
+        "duck sauce",
+        "fagara",
+        "fennel",
+        "file",
+        "five spice powder",
+        "flavor",
+        "flavorer",
+        "flavoring",
+        "garlic",
+        "garlic butter",
+        "garlic powder",
+        "garlic salt",
+        "ginger",
+        "green pepper",
+        "hedge garlic",
+        "horseradish",
+        "hyssop",
+        "leek",
+        "mace",
+        "marinade",
+        "marjoram",
+        "mayonnaise",
+        "mint",
+        "mustard",
+        "nutmeg",
+        "onion",
+        "onion salt",
+        "oregano",
+        "paprika",
+        "parsley",
+        "pepper",
+        "peppercorn",
+        "peppermint",
+        "piccalilli",
+        "pickle",
+        "pimento",
+        "pimpernel",
+        "potherb",
+        "radish",
+        "red pepper",
+        "relish",
+        "saffron",
+        "sage",
+        "salad dressing",
+        "salt",
+        "sauce-alone",
+        "savory",
+        "seasoned salt",
+        "seasoner",
+        "seasoning",
+        "sesame oil",
+        "sesame seeds",
+        "shallot",
+        "soy",
+        "soy sauce",
+        "spice",
+        "star anise",
+        "tarragon",
+        "tartar sauce",
+        "thyme",
+        "tomato paste",
+        "turmeric",
+        "vanilla",
+        "vinegar",
+        "white pepper"
+      ]
+    },
+    "condisciple": {
+      "word": "CONDISCIPLE",
+      "definitions": [
+        {
+          "text": "A schoolfellow; a fellow-student. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condite": {
+      "word": "CONDITE",
+      "definitions": [
+        {
+          "text": "Preserved; pickled. [Obs.] Burton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To pickle; to preserve; as, to condite pears, quinces, etc.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condition": {
+      "word": "CONDITION",
+      "definitions": [
+        {
+          "text": "Mode or state of being; state or situation with regard to external circumstances or influences, or to physical or mental integrity, health, strength, etc.; predicament; rank; position, estate. I am in my condition A prince, Miranda; I do think, a king. Shak. And O, what man's condition can be worse Than his whom plenty starves and blessings curse Cowley. The new conditions of life. Darwin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Essential quality; property; attribute. It seemed to us a condition and property of divine powers and beings to be hidden and unseen to others. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Temperament; disposition; character. [Obs.] The condition of a saint and the complexion of a devil. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which must exist as the occasion or concomitant of something else; that which is requisite in order that something else should take effect; an essential qualification; stipulation; terms specified. I had as lief take her dowry with this condition, to be whipped at the high cross every morning. Shak. Many are apt to believe remission of sins, but they believe it without the condition of repentance. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A clause in a contract, or agreement, which has for its object to suspend, to defeat, or in some way to modify, the principal obligation; or, in case of a will, to suspend, revoke, or modify a devise or bequest. It is also the case of a future uncertain event, which may or may not happen, and on the occurrence or non-occurrence of which, the accomplishment, recission, or modification of an obligation or testamentary disposition is made to depend. Blount. Tomlins. Bouvier. Wharton. Equation of condition. (Math.) See under Equation. conditional sentences. \"Upon condition thou wilt swear to pay him tribute . . . thou shalt be placed as viceroy under him.\" Shak. property by auction; also, the instrument containing or expressing these terms. predicament; stipulation; qualification; requisite; article; provision; arrangement. See State.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make terms; to stipulate. Pay me back my credit, And I'll condition with ye. Beau. & Fl.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Metaph.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To impose upon an object those relations or conditions without which knowledge and thought are alleged to be impossible. To think of a thing is to condition. Sir W. Hamilton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To invest with, or limit by, conditions; to burden or qualify by a condition; to impose or be imposed as the condition of. Seas, that daily gain upon the shore, Have ebb and flow conditioning their march. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To contract; to stipulate; to agree. It was conditioned between Saturn and Titan, that Saturn should put to death all his male children. Sir W. Raleigh.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(U. S. Colleges)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put under conditions; to require to pass a new examination or to make up a specified study, as a condition of remaining in one's class or in college; as, to condition a student who has failed in some branch of study.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To test or assay, as silk (to ascertain the proportion of moisture it contains). McElrath.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "train; acclimate.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abate",
+        "ability",
+        "abnormality",
+        "acclimate",
+        "acclimatize",
+        "accommodate",
+        "accustom",
+        "acute disease",
+        "adapt",
+        "adjust",
+        "adjust to",
+        "affairs",
+        "affection",
+        "affliction",
+        "ailment",
+        "allergic disease",
+        "allergy",
+        "alter",
+        "apprentice",
+        "assuage",
+        "atrophy",
+        "attach a condition",
+        "attune",
+        "bacterial disease",
+        "bearings",
+        "beat into",
+        "birth defect",
+        "blight",
+        "bound",
+        "boundary condition",
+        "box in",
+        "brainwash",
+        "break",
+        "break in",
+        "breed",
+        "bring up",
+        "capability",
+        "capacitate",
+        "capacity",
+        "cardiovascular disease",
+        "case",
+        "case harden",
+        "caste",
+        "catch",
+        "catechize",
+        "character",
+        "chronic disease",
+        "circulatory disease",
+        "circumscribe",
+        "circumstance",
+        "circumstances",
+        "class",
+        "clause",
+        "cobble",
+        "commission",
+        "competence",
+        "competency",
+        "complaint",
+        "complication",
+        "concerns",
+        "condition of things",
+        "conditions",
+        "confine",
+        "confirm",
+        "congenital defect",
+        "conjuncture",
+        "contain",
+        "contingency",
+        "copyright",
+        "cultivate",
+        "darn",
+        "dealings",
+        "defect",
+        "deficiency disease",
+        "deformity",
+        "degenerative disease",
+        "demand",
+        "develop",
+        "diminish",
+        "disability",
+        "discipline",
+        "disease",
+        "disorder",
+        "distemper",
+        "do up",
+        "doctor",
+        "doings",
+        "domesticate",
+        "domesticize",
+        "donnee",
+        "draw the line",
+        "drill",
+        "echelon",
+        "educate",
+        "enable",
+        "endemic",
+        "endemic disease",
+        "endocrine disease",
+        "environment",
+        "epidemic disease",
+        "equip",
+        "escalator clause",
+        "escape clause",
+        "escape hatch",
+        "establish",
+        "estate",
+        "event",
+        "eventuality",
+        "exception",
+        "exemption",
+        "exercise",
+        "familiarize",
+        "fetch up",
+        "fettle",
+        "fine print",
+        "fit",
+        "fit out",
+        "fit up",
+        "fitness",
+        "fittedness",
+        "fix",
+        "fix up",
+        "footing",
+        "form",
+        "foster",
+        "functional disease",
+        "fungus disease",
+        "furnish",
+        "gastrointestinal disease",
+        "genetic disease",
+        "gentle",
+        "get ready",
+        "given",
+        "goings-on",
+        "groom",
+        "grounds",
+        "habituate",
+        "handicap",
+        "harden",
+        "have a catch",
+        "have a joker",
+        "health",
+        "hedge",
+        "hedge about",
+        "hereditary disease",
+        "hierarchy",
+        "house-train",
+        "housebreak",
+        "iatrogenic disease",
+        "ill",
+        "illness",
+        "imbue",
+        "implant",
+        "impregnate",
+        "impress",
+        "improve",
+        "incident",
+        "inculcate",
+        "indisposition",
+        "indoctrinate",
+        "infectious disease",
+        "infirmity",
+        "infix",
+        "influence",
+        "infuse",
+        "inoculate",
+        "insist upon",
+        "instill",
+        "inure",
+        "jam",
+        "joker",
+        "juncture",
+        "kicker",
+        "kilter",
+        "leaven",
+        "life",
+        "limit",
+        "limitation",
+        "limiting condition",
+        "location",
+        "lot",
+        "make conditional",
+        "make contingent",
+        "make ready",
+        "malady",
+        "malaise",
+        "march of events",
+        "mastery",
+        "matters",
+        "maturity",
+        "mend",
+        "mitigate",
+        "modality",
+        "mode",
+        "moderate",
+        "modification",
+        "modify",
+        "modulate",
+        "morbidity",
+        "morbus",
+        "mould",
+        "muscular disease",
+        "must",
+        "narrow",
+        "naturalize",
+        "necessity",
+        "neurological disease",
+        "nurse",
+        "nurture",
+        "nutritional disease",
+        "obligation",
+        "occasion",
+        "occupational disease",
+        "occurrence",
+        "order",
+        "organic disease",
+        "orient",
+        "orientate",
+        "outfit",
+        "overhaul",
+        "palliate",
+        "pandemic disease",
+        "parameter",
+        "part",
+        "pass",
+        "patch",
+        "patch up",
+        "patent",
+        "pathological condition",
+        "pathology",
+        "persuade",
+        "pickle",
+        "place",
+        "plant disease",
+        "plight",
+        "position",
+        "posture",
+        "power structure",
+        "practice",
+        "precedence",
+        "predicament",
+        "prepare",
+        "preparedness",
+        "prerequisite",
+        "proceedings",
+        "proficiency",
+        "program",
+        "protozoan disease",
+        "provision",
+        "provisions",
+        "proviso",
+        "psychosomatic disease",
+        "put in commission",
+        "put in order",
+        "put in repair",
+        "put in shape",
+        "put in trim",
+        "put in tune",
+        "put to school",
+        "qualification",
+        "qualify",
+        "quality",
+        "quarters",
+        "raise",
+        "rank",
+        "rate",
+        "rating",
+        "readiness",
+        "ready",
+        "rear",
+        "recap",
+        "recondition",
+        "reduce",
+        "register",
+        "regulate by",
+        "rehearse",
+        "relation",
+        "relations",
+        "repair",
+        "requirement",
+        "requisite",
+        "reservation",
+        "respiratory disease",
+        "restrain",
+        "restrict",
+        "restriction",
+        "retread",
+        "ripeness",
+        "rockiness",
+        "role",
+        "run of things",
+        "saving clause",
+        "scant",
+        "season",
+        "seasoning",
+        "secondary disease",
+        "seediness",
+        "send to school",
+        "service",
+        "set conditions",
+        "set limits",
+        "set to rights",
+        "sew up",
+        "shape",
+        "sickishness",
+        "sickness",
+        "signs",
+        "sine qua non",
+        "situation",
+        "small print",
+        "soften",
+        "specialize",
+        "specification",
+        "sphere",
+        "spot",
+        "stage",
+        "standing",
+        "state",
+        "state of affairs",
+        "station",
+        "status",
+        "stint",
+        "stipulate",
+        "stipulation",
+        "straiten",
+        "string",
+        "strings",
+        "suit",
+        "suitability",
+        "suitableness",
+        "suitedness",
+        "symptomatology",
+        "symptomology",
+        "symptoms",
+        "syndrome",
+        "take in hand",
+        "tame",
+        "teach",
+        "temper",
+        "tempering",
+        "term",
+        "terms",
+        "the pip",
+        "the times",
+        "the world",
+        "tinker",
+        "tinker up",
+        "train",
+        "trim",
+        "tune",
+        "ultimatum",
+        "urogenital disease",
+        "virus disease",
+        "wasting disease",
+        "what happens",
+        "whereas",
+        "wont",
+        "worm disease"
+      ]
+    },
+    "conditional": {
+      "word": "CONDITIONAL",
+      "definitions": [
+        {
+          "text": "Containing, implying, or depending on, a condition or conditions; not absolute; made or granted on certain terms; as, a conditional promise. Every covenant of God with man . . . may justly be made (as in fact it is made) with this conditional punishment annexed and declared. Bp. Warburton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Gram. & Logic)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Expressing a condition or supposition; as, a conditional word, mode, or tense. A conditional proposition is one which asserts the dependence of one categorical proposition on another. Whately. The words hypothetical and conditional may be . . . used synonymously. J. S. Mill.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A limitation. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A conditional word, mode, or proposition. Disjunctives may be turned into conditionals. L. H. Atwater.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "a fortiori",
+        "a posteriori",
+        "a priori",
+        "acceptable",
+        "accidental",
+        "adventitious",
+        "aleatory",
+        "analytic",
+        "at issue",
+        "casual",
+        "categorical",
+        "circumstantial",
+        "conditioned",
+        "condonable",
+        "contingent",
+        "deductive",
+        "defensible",
+        "dependent",
+        "depending",
+        "dialectic",
+        "discursive",
+        "enthymematic",
+        "epagogic",
+        "excusable",
+        "fixed",
+        "formal",
+        "fortuitous",
+        "given",
+        "hypothetical",
+        "iffy",
+        "in question",
+        "in suspense",
+        "in the balance",
+        "incidental",
+        "inductive",
+        "inessential",
+        "inferential",
+        "limited",
+        "maieutic",
+        "modal",
+        "modified",
+        "nonessential",
+        "obscure",
+        "occasional",
+        "open",
+        "pendent",
+        "pending",
+        "problematic",
+        "provisional",
+        "provisory",
+        "qualified",
+        "questionable",
+        "relative",
+        "reliant",
+        "restricted",
+        "soritical",
+        "specificative",
+        "specified",
+        "stated",
+        "stipulated",
+        "stipulatory",
+        "suspenseful",
+        "syllogistic",
+        "synthetic",
+        "tenable",
+        "tentative",
+        "tolerable",
+        "uncertain",
+        "uncounted",
+        "undecided",
+        "undetermined",
+        "unessential",
+        "unestablished",
+        "unfixed",
+        "unsettled",
+        "untold",
+        "up for grabs",
+        "vindicable",
+        "warrantable"
+      ]
+    },
+    "conditionality": {
+      "word": "CONDITIONALITY",
+      "definitions": [
+        {
+          "text": "The quality of being conditional, or limited; limitation by certain terms.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conditionally": {
+      "word": "CONDITIONALLY",
+      "definitions": [
+        {
+          "text": "In a conditional manner; subject to a condition or conditions; not absolutely or positively. Shak.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conditionate": {
+      "word": "CONDITIONATE",
+      "definitions": [
+        {
+          "text": "Conditional. [Obs.] Barak's answer is faithful, though conditionate. Bp. Hall.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To qualify by conditions; to regulate. [Obs.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put under conditions; to render conditional.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conditioned": {
+      "word": "CONDITIONED",
+      "definitions": [
+        {
+          "text": "Surrounded; circumstanced; in a certain state or condition, as of property or health; as, a well conditioned man. The best conditioned and unwearied spirit. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having, or known under or by, conditions or relations; not independent; not absolute. Under these, thought is possible only in the conditioned interval. Sir W. Hamilton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "acclimated",
+        "acclimatized",
+        "accommodated",
+        "accustomed",
+        "adapted",
+        "adjusted",
+        "at issue",
+        "automatic",
+        "blind",
+        "bound",
+        "bounded",
+        "case-hardened",
+        "compulsive",
+        "conditional",
+        "confined",
+        "contingent",
+        "copyrighted",
+        "cramped",
+        "dependent",
+        "depending",
+        "disciplined",
+        "experienced",
+        "familiarized",
+        "finite",
+        "forced",
+        "hardened",
+        "hedged",
+        "hedged about",
+        "impulsive",
+        "in question",
+        "in suspense",
+        "in the balance",
+        "instinctive",
+        "inured",
+        "involuntary",
+        "leavened",
+        "limited",
+        "mechanical",
+        "mitigated",
+        "moderated",
+        "modified",
+        "modulated",
+        "narrow",
+        "naturalized",
+        "open",
+        "orientated",
+        "oriented",
+        "patented",
+        "pendent",
+        "pending",
+        "prescribed",
+        "proscribed",
+        "qualified",
+        "reflex",
+        "reflexive",
+        "restricted",
+        "run-in",
+        "seasoned",
+        "softened",
+        "strait",
+        "straitened",
+        "suspenseful",
+        "tempered",
+        "trained",
+        "unconscious",
+        "uncounted",
+        "undecided",
+        "undetermined",
+        "unestablished",
+        "unfixed",
+        "unintentional",
+        "unsettled",
+        "unthinking",
+        "untold",
+        "unwilled",
+        "unwilling",
+        "unwitting",
+        "up for grabs",
+        "used to",
+        "wont",
+        "wonted"
+      ]
+    },
+    "conditionly": {
+      "word": "CONDITIONLY",
+      "definitions": [
+        {
+          "text": "Conditionally. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conditory": {
+      "word": "CONDITORY",
+      "definitions": [
+        {
+          "text": "A repository for holding things; a hinding place.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condog": {
+      "word": "CONDOG",
+      "definitions": [
+        {
+          "text": "To concur; to agree. [Burlesque] word agree; thus. \"Agree; concurre, cohere, condog, condescend.\" Cockeram.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condolatory": {
+      "word": "CONDOLATORY",
+      "definitions": [
+        {
+          "text": "Expressing condolence. Smart.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condole": {
+      "word": "CONDOLE",
+      "definitions": [
+        {
+          "text": "To express sympathetic sorrow; to grieve in sympathy; -- followed by with. Your friends would have cause to rejoice, rather than condole with you. Sir W. Temple.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lament or grieve over. [R.] I come not, Samson, to condole thy chance. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condolement": {
+      "word": "CONDOLEMENT",
+      "definitions": [
+        {
+          "text": "Condolence. \"A pitiful condolement.\" Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sorrow; mourning; lamentation. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condolence": {
+      "word": "CONDOLENCE",
+      "definitions": [
+        {
+          "text": "Expression of sympathy with another in sorrow or grief. Their congratulations and their condolences. Steele. A special mission of condolence. Macaulay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aid and comfort",
+        "assurance",
+        "benevolence",
+        "clemency",
+        "comfort",
+        "commiseration",
+        "compassion",
+        "consolation",
+        "easement",
+        "encouragement",
+        "favor",
+        "feeling",
+        "forbearance",
+        "forgiveness",
+        "grace",
+        "humanity",
+        "kindness",
+        "leniency",
+        "mercy",
+        "mitigation",
+        "pardon",
+        "pathos",
+        "pity",
+        "quarter",
+        "reassurance",
+        "relief",
+        "reprieve",
+        "ruth",
+        "self-pity",
+        "shred of comfort",
+        "solace",
+        "solacement",
+        "support",
+        "sympathy"
+      ]
+    },
+    "condoler": {
+      "word": "CONDOLER",
+      "definitions": [
+        {
+          "text": "One who condoles.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condonation": {
+      "word": "CONDONATION",
+      "definitions": [
+        {
+          "text": "The act of condoning or pardoning.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Forgiveness, either express or implied, by a husband of his wife or by a wife of her husband, for a breach of marital duty, as adultery, with an implied condition that the offense shall not be repeated. Bouvier. Wharton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condone": {
+      "word": "CONDONE",
+      "definitions": [
+        {
+          "text": "To pardon; to forgive. A fraud which he had either concocted or condoned. W. Black. It would have been magnanimous in the men then in power to have overlooked all these things, and, condoning the politics, to have rewarded the poetry of Burns. J. C. Shairp.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pardon; to overlook the offense of; esp., to forgive for a violation of the marriage law; -- said of either the husband or the wife.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abide with",
+        "accept",
+        "allow for",
+        "be big",
+        "be content with",
+        "be easy with",
+        "bear",
+        "bear with",
+        "blink at",
+        "brook",
+        "connive at",
+        "countenance",
+        "disregard",
+        "endure",
+        "forget",
+        "forgive",
+        "grin and abide",
+        "have",
+        "hear of",
+        "ignore",
+        "indulge",
+        "judge not",
+        "lean over backwards",
+        "leave unavenged",
+        "let go by",
+        "let it go",
+        "let pass",
+        "listen to reason",
+        "live with",
+        "make allowances for",
+        "not write off",
+        "obey",
+        "overlook",
+        "pardon",
+        "pass over",
+        "pocket the affront",
+        "put up with",
+        "regard with indulgence",
+        "remit",
+        "rise above",
+        "see both sides",
+        "shrug",
+        "shrug it off",
+        "stand for",
+        "stomach",
+        "submit to",
+        "suffer",
+        "suspend judgment",
+        "take",
+        "tolerate",
+        "view with indulgence",
+        "wink at",
+        "yield to"
+      ]
+    },
+    "condor": {
+      "word": "CONDOR",
+      "definitions": [
+        {
+          "text": "A very large bird of the Vulture family (Sarcorhamphus gryphus), found in the most elevated parts of the Andes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condottiere": {
+      "word": "CONDOTTIERE",
+      "definitions": [
+        {
+          "text": "A military adventurer of the fourteenth and fifteenth centuries, who sold his services, and those of his followers, to any party in any contest.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conduce": {
+      "word": "CONDUCE",
+      "definitions": [
+        {
+          "text": "To lead or tend, esp. with reference to a favorable or desirable result; to contribute; -- usually followed by to or toward. He was sensible how much such a union would conduce to the happiness of both. Macaulay. The reasons you allege do more conduce To the hot passion of distemper'd blood. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To conduct; to lead; to guide. [Obs.] He was sent to conduce hither the princess. Sir H. Wotton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conducent": {
+      "word": "CONDUCENT",
+      "definitions": [
+        {
+          "text": "Conducive; tending. Conducent to the good success of this business. Abp. Laud.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conducibility": {
+      "word": "CONDUCIBILITY",
+      "definitions": [
+        {
+          "text": "The state or quality of being conducible; conducibleness. Bp. Wilkins.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conducible": {
+      "word": "CONDUCIBLE",
+      "definitions": [
+        {
+          "text": "Conducive; tending; contributing. Bacon. All his laws are in themselves conducible to the temporal interest of them that observe them. Bentley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conducibleness": {
+      "word": "CONDUCIBLENESS",
+      "definitions": [
+        {
+          "text": "Quality of being conducible.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conducibly": {
+      "word": "CONDUCIBLY",
+      "definitions": [
+        {
+          "text": "In a manner to promote. [R.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conducive": {
+      "word": "CONDUCIVE",
+      "definitions": [
+        {
+          "text": "Loading or tending; helpful; contributive; tending to promote. However conducive to the good or our country. Addison.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "agential",
+        "agentival",
+        "agentive",
+        "aidful",
+        "assisting",
+        "beneficial",
+        "conducive to",
+        "constructive",
+        "contributory",
+        "employable",
+        "facilitating",
+        "favoring",
+        "forwarding",
+        "furthersome",
+        "good for",
+        "handy",
+        "helpful",
+        "inclined toward",
+        "inclining toward",
+        "instrumental",
+        "intermediary",
+        "leading to",
+        "mediating",
+        "mediatorial",
+        "ministerial",
+        "ministering",
+        "positive",
+        "profitable",
+        "promoting",
+        "remedial",
+        "salutary",
+        "serviceable",
+        "subservient",
+        "tending to",
+        "therapeutic",
+        "useful"
+      ]
+    },
+    "conduciveness": {
+      "word": "CONDUCIVENESS",
+      "definitions": [
+        {
+          "text": "The quality of conducing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conduct": {
+      "word": "CONDUCT",
+      "definitions": [
+        {
+          "text": "The act or method of conducting; guidance; management. Christianity has humanized the conduct of war. Paley. The conduct of the state, the administration of its affairs. Ld. Brougham.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Skillful guidance or management; generalship. Conduct of armies is a prince's art. Waller. Attacked the Spaniards . . . with great impetuosity, but with so little conduct, that his forces were totally routed. Robertson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Convoy; escort; guard; guide. [Archaic] I will be your conduct. B. Jonson. In my conduct shall your ladies come. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which carries or conveys anything; a channel; a conduit; an instrument. [Obs.] Although thou been conduct of my chame. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The manner of guiding or carrying one's self; personal deportment; mode of action; behavior. All these difficulties were increased by the conduct of Shrewsbury. Macaulay. What in the conduct of our life appears So well designed, so luckily begun, But when we have our wish, we wish undone Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Plot; action; construction; manner of development. The book of Job, in conduct and diction. Macaulay. Conduct money (Naut.), a portion of a seaman's wages retained till the end of his engagement, and paid over only if his conduct has been satisfactory. See Behavior.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To lead, or guide; to escort; to attend. I can conduct you, lady, to a low But loyal cottage, where you may be safe. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lead, as a commander; to direct; to manage; to carry on; as, to conduct the affairs of a kingdom. Little skilled in the art of conducting a siege. Prescott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To behave; -- with the reflexive; as, he conducted himself well.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Physics)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To serve as a medium for conveying; to transmit, as heat, light, electricity, etc.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To direct, as the leader in the performance of a musical composition.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act as a conductor (as of heat, electricity, etc.); to carry.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To conduct one's self; to behave. [U. S.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accomplish",
+        "accomplishment",
+        "achievement",
+        "acquit",
+        "act",
+        "action",
+        "actions",
+        "activity",
+        "acts",
+        "address",
+        "administer",
+        "administration",
+        "affectation",
+        "agency",
+        "air",
+        "arrange",
+        "attend",
+        "attitude",
+        "authority",
+        "be responsible for",
+        "bear",
+        "bearing",
+        "behave",
+        "behavior",
+        "behavior pattern",
+        "behavioral norm",
+        "behavioral science",
+        "bring",
+        "call the signals",
+        "canalize",
+        "captain",
+        "care",
+        "carriage",
+        "carry",
+        "carry on",
+        "carry out",
+        "carry through",
+        "channel",
+        "channelize",
+        "chaperon",
+        "charge",
+        "command",
+        "commission",
+        "companion",
+        "company",
+        "complete",
+        "completion",
+        "comport",
+        "comportment",
+        "conduct to",
+        "control",
+        "convey",
+        "convoy",
+        "cope with",
+        "culture pattern",
+        "custom",
+        "deal with",
+        "demean",
+        "demeanor",
+        "deport",
+        "deportment",
+        "direct",
+        "direct to",
+        "direction",
+        "discharge",
+        "dispatch",
+        "dispose of",
+        "do",
+        "doing",
+        "doings",
+        "drive",
+        "driving",
+        "effectuation",
+        "employ",
+        "enact",
+        "enactment",
+        "engage in",
+        "engineer",
+        "escort",
+        "esquire",
+        "execute",
+        "execution",
+        "exercise",
+        "fly",
+        "folkway",
+        "follow",
+        "freight",
+        "functioning",
+        "funnel",
+        "gestures",
+        "go in for",
+        "go on",
+        "goings-on",
+        "govern",
+        "governance",
+        "government",
+        "guard",
+        "guidance",
+        "guide",
+        "guise",
+        "handle",
+        "handling",
+        "head",
+        "head up",
+        "husbandry",
+        "implementation",
+        "intendance",
+        "keep",
+        "keep up",
+        "lead",
+        "lead on",
+        "lead to",
+        "leadership",
+        "leading",
+        "lift",
+        "lug",
+        "maintien",
+        "make",
+        "make go",
+        "make the rules",
+        "manage",
+        "management",
+        "managery",
+        "managing",
+        "maneuver",
+        "manhandle",
+        "manipulate",
+        "manipulation",
+        "manner",
+        "manners",
+        "marshal",
+        "mastermind",
+        "method",
+        "methodology",
+        "methods",
+        "mien",
+        "modus vivendi",
+        "motions",
+        "movements",
+        "moves",
+        "observable behavior",
+        "occupation",
+        "officer",
+        "operancy",
+        "operate",
+        "operation",
+        "ordain",
+        "order",
+        "ordering",
+        "oversee",
+        "pack",
+        "pattern",
+        "perform",
+        "perform on",
+        "performance",
+        "performing",
+        "perpetration",
+        "pilot",
+        "pilotage",
+        "pipe",
+        "play",
+        "point out to",
+        "point the way",
+        "poise",
+        "port",
+        "pose",
+        "posture",
+        "practice",
+        "praxis",
+        "prescribe",
+        "presence",
+        "procedure",
+        "proceeding",
+        "prosecute",
+        "pull the strings",
+        "pursue",
+        "put right",
+        "put through",
+        "quarterback",
+        "quit",
+        "regulate",
+        "regulation",
+        "remove",
+        "responsibility",
+        "route",
+        "rule",
+        "run",
+        "running",
+        "see",
+        "see to",
+        "separate",
+        "set right",
+        "set straight",
+        "shepherd",
+        "show",
+        "show the way",
+        "siphon",
+        "skipper",
+        "social science",
+        "specialize in",
+        "squire",
+        "stance",
+        "steer",
+        "steerage",
+        "steering",
+        "style",
+        "superintendence",
+        "superintendency",
+        "supervise",
+        "supervision",
+        "tackle",
+        "tactics",
+        "take",
+        "take away",
+        "take care of",
+        "take command",
+        "take on",
+        "take out",
+        "take the lead",
+        "take to",
+        "take up",
+        "the conn",
+        "the helm",
+        "the wheel",
+        "tone",
+        "tote",
+        "traject",
+        "transact",
+        "transaction",
+        "transmit",
+        "transport",
+        "trench",
+        "undertake",
+        "use",
+        "usher",
+        "waft",
+        "wage",
+        "wait on",
+        "way",
+        "way of life",
+        "ways",
+        "whisk",
+        "wield the baton",
+        "wing",
+        "withdraw",
+        "work",
+        "work at",
+        "working",
+        "workings"
+      ]
+    },
+    "conductance": {
+      "word": "CONDUCTANCE",
+      "definitions": [
+        {
+          "text": "Conducting power; -- the reciprocal of resistance. A suggested unit is the mho, the reciprocal of the ohm. Conductance is an attribute of any specified conductor, and refers to its shape, length, and other factors. Conductivity is an attribute of any specified material without direct reference to its shape or other factors. Sloane's Elec. Dict.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "conduction",
+        "conductivity",
+        "conductor",
+        "dielectric",
+        "electric conduction",
+        "electrode conductance",
+        "gas conduction",
+        "grid conductance",
+        "input conductance",
+        "insulator",
+        "ionic conduction",
+        "liquid conduction",
+        "metallic conduction",
+        "mho",
+        "nonconductor",
+        "output conductance",
+        "photoconduction",
+        "plate conductance",
+        "semiconductor",
+        "superconductivity",
+        "superconductor",
+        "transfer conductance"
+      ]
+    },
+    "conductibility": {
+      "word": "CONDUCTIBILITY",
+      "definitions": [
+        {
+          "text": "Capability of being conducted; as, the conductibility of heat or electricity.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Conductivity; capacity for receiving and transmitting.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conductible": {
+      "word": "CONDUCTIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being conducted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conduction": {
+      "word": "CONDUCTION",
+      "definitions": [
+        {
+          "text": "The act of leading or guiding. Sir W. Raleigh.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of training up. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Physics)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Transmission through, or by means of, a conductor; also, conductivity. [The] communication [of heat] from one body to another when they are in contact, or through a homogenous body from particle to particle, constitutes conduction. Amer. Cyc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "communication",
+        "conductance",
+        "conductivity",
+        "conductor",
+        "contagion",
+        "convection",
+        "delivery",
+        "deportation",
+        "diapedesis",
+        "dielectric",
+        "diffusion",
+        "dissemination",
+        "electric conduction",
+        "export",
+        "exportation",
+        "expulsion",
+        "extradition",
+        "gas conduction",
+        "import",
+        "importation",
+        "insulator",
+        "interchange",
+        "ionic conduction",
+        "liquid conduction",
+        "metallic conduction",
+        "metastasis",
+        "metathesis",
+        "metempsychosis",
+        "mho",
+        "migration",
+        "mutual transfer",
+        "nonconductor",
+        "osmosis",
+        "passage",
+        "passing over",
+        "perfusion",
+        "photoconduction",
+        "semiconductor",
+        "spread",
+        "spreading",
+        "superconductivity",
+        "superconductor",
+        "transduction",
+        "transfer",
+        "transfer of property",
+        "transference",
+        "transfusion",
+        "transit",
+        "transition",
+        "translation",
+        "translocation",
+        "transmigration",
+        "transmigration of souls",
+        "transmission",
+        "transmittal",
+        "transmittance",
+        "transplacement",
+        "transplantation",
+        "transposal",
+        "transposition",
+        "travel"
+      ]
+    },
+    "conductive": {
+      "word": "CONDUCTIVE",
+      "definitions": [
+        {
+          "text": "Having the quality or power of conducting; as, the conductive tissue of a pistil. The ovarian walls . . . are seen to be distinctly conductive. Goodale (Gray's Bot. ).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conductivity": {
+      "word": "CONDUCTIVITY",
+      "definitions": [
+        {
+          "text": "The quality or power of conducting, or of receiving and transmitting, as, the conductivity of a nerve. Thermal conductivity (Physics), the quantity of heat that passes in unit time through unit area of plate whose thickness is unity, when its opposite faces differ in temperature by one degree. J. D. Everett. the unit of heat employed is the heat required to raise unit volume of the substance one degree.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conductor": {
+      "word": "CONDUCTOR",
+      "definitions": [
+        {
+          "text": "One who, or that which, conducts; a leader; a commander; a guide; a manager; a director. Zeal, the blind conductor of the will. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One in charge of a public conveyance, as of a railroad train or a street car. [U. S.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The leader or director of an orchestra or chorus.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Physics)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A substance or body capable of being a medium for the transmission of certain forces, esp. heat or electricity; specifically, a lightning rod.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Surg.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A grooved sound or staff used for directing instruments, as lithontriptic forceps, etc.; a director.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Leader. Prime conductor (Elec.), the largest conductor of an electrical machine, serving to collect, accumulate, or retain the electricity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Kapellmeister",
+        "Mahdi",
+        "administrator",
+        "agent",
+        "baggage man",
+        "bakehead",
+        "band leader",
+        "band major",
+        "bandmaster",
+        "bell cow",
+        "bell mare",
+        "bellwether",
+        "bodyguard",
+        "born leader",
+        "brakeman",
+        "brakie",
+        "butcher",
+        "cavalier",
+        "chaperon",
+        "charismatic leader",
+        "choirmaster",
+        "choragus",
+        "companion",
+        "conductance",
+        "conduction",
+        "conductivity",
+        "convoy",
+        "coryphaeus",
+        "deputy",
+        "dielectric",
+        "directeur",
+        "director",
+        "dispatcher",
+        "driver",
+        "drum major",
+        "duce",
+        "duenna",
+        "electric conduction",
+        "engineer",
+        "escort",
+        "esquire",
+        "fellow traveler",
+        "file leader",
+        "fireman",
+        "footplate man",
+        "forerunner",
+        "fugleman",
+        "functionary",
+        "gas conduction",
+        "governor",
+        "guard",
+        "handler",
+        "impresario",
+        "inspired leader",
+        "insulator",
+        "intendant",
+        "ionic conduction",
+        "leader",
+        "leader of men",
+        "lineman",
+        "liquid conduction",
+        "manager",
+        "manipulator",
+        "messiah",
+        "metallic conduction",
+        "mho",
+        "nonconductor",
+        "operant",
+        "operative",
+        "operator",
+        "orchestra leader",
+        "pacemaker",
+        "pacesetter",
+        "photoconduction",
+        "pilot",
+        "porter",
+        "precentor",
+        "producer",
+        "railroad man",
+        "railroader",
+        "rector",
+        "redcap",
+        "responsible person",
+        "ringleader",
+        "runner",
+        "safe-conduct",
+        "semiconductor",
+        "shepherd",
+        "smoke agent",
+        "squire",
+        "standard-bearer",
+        "stationmaster",
+        "steersman",
+        "stoker",
+        "supercargo",
+        "superconductivity",
+        "superconductor",
+        "swain",
+        "switchman",
+        "symphonic conductor",
+        "torchbearer",
+        "trainboy",
+        "trainman",
+        "trainmaster",
+        "usher",
+        "yardman",
+        "yardmaster"
+      ]
+    },
+    "conductory": {
+      "word": "CONDUCTORY",
+      "definitions": [
+        {
+          "text": "Having the property of conducting. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conductress": {
+      "word": "CONDUCTRESS",
+      "definitions": [
+        {
+          "text": "A woman who leads or directs; a directress.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conduit": {
+      "word": "CONDUIT",
+      "definitions": [
+        {
+          "text": "A pipe, canal, channel, or passage for conveying water or fluid. All the conduits of my blood froze up. Shak. This is the fountain of all those bitter waters, of which, through a hundred different conduits, we have drunk. Burke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.) (a) A structure forming a reservoir for water. Oxf. Gloss. (b) A narrow passage for private communication.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "access",
+        "adit",
+        "aisle",
+        "alley",
+        "ambulatory",
+        "aperture",
+        "aqueduct",
+        "arcade",
+        "artery",
+        "avenue",
+        "canal",
+        "channel",
+        "cloister",
+        "colonnade",
+        "communication",
+        "connection",
+        "corridor",
+        "course",
+        "covered way",
+        "defile",
+        "ditch",
+        "duct",
+        "egress",
+        "entrance",
+        "exit",
+        "ferry",
+        "ford",
+        "gallery",
+        "ingress",
+        "inlet",
+        "interchange",
+        "intersection",
+        "junction",
+        "lane",
+        "opening",
+        "outlet",
+        "overpass",
+        "pass",
+        "passage",
+        "passageway",
+        "portico",
+        "railroad tunnel",
+        "traject",
+        "trajet",
+        "trench",
+        "trough",
+        "troughing",
+        "troughway",
+        "tunnel",
+        "underpass",
+        "watercourse",
+        "way"
+      ]
+    },
+    "conduitsystemconduitrailway": {
+      "word": "CONDUIT SYSTEM; CONDUIT RAILWAY",
+      "definitions": [
+        {
+          "text": "A system of electric traction, esp. for light railways, in which the actuating current passes along a wire or rail laid in an underground conduit, from which the current is \"picked up\" by a plow or other device fixed to the car or electric locomotive. Hence Conduit railway.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "conduplicate": {
+      "word": "CONDUPLICATE",
+      "definitions": [
+        {
+          "text": "Folded lengthwise along the midrib, the upper face being within; -- said of leaves or petals in vernation or æstivation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conduplication": {
+      "word": "CONDUPLICATION",
+      "definitions": [
+        {
+          "text": "A doubling together or folding; a duplication. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condurango": {
+      "word": "CONDURANGO",
+      "definitions": [
+        {
+          "text": "See Cundurango.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condurrite": {
+      "word": "CONDURRITE",
+      "definitions": [
+        {
+          "text": "A variety of the mineral domeykite, or copper arsenide, from the Condurra mine in Cornwall, England.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condylar": {
+      "word": "CONDYLAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a condyle. Condylar foramen (Anat.), a formen in front of each condyle of the occipital bone; -- sometimes called the anterior condylar foramen when a second, or posterior, foramen is present behind the condyle, as often happens in man.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condyle": {
+      "word": "CONDYLE",
+      "definitions": [
+        {
+          "text": "A bony prominence; particularly, an eminence at the end of a bone bearing a rounded articular surface; -- sometimes applied also to a concave articular surface.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bilge",
+        "blain",
+        "bleb",
+        "blister",
+        "blob",
+        "boss",
+        "bow",
+        "bubble",
+        "bulb",
+        "bulge",
+        "bulla",
+        "bump",
+        "bunch",
+        "burl",
+        "button",
+        "cahot",
+        "chine",
+        "clump",
+        "convex",
+        "dowel",
+        "ear",
+        "flange",
+        "flap",
+        "gall",
+        "gnarl",
+        "handle",
+        "hill",
+        "hump",
+        "hunch",
+        "jog",
+        "joggle",
+        "knob",
+        "knot",
+        "knur",
+        "knurl",
+        "lip",
+        "loop",
+        "lump",
+        "mole",
+        "mountain",
+        "nevus",
+        "nub",
+        "nubbin",
+        "nubble",
+        "papilloma",
+        "peg",
+        "rib",
+        "ridge",
+        "ring",
+        "shoulder",
+        "spine",
+        "stud",
+        "style",
+        "tab",
+        "tubercle",
+        "tubercule",
+        "verruca",
+        "vesicle",
+        "wale",
+        "wart",
+        "welt"
+      ]
+    },
+    "condyloid": {
+      "word": "CONDYLOID",
+      "definitions": [
+        {
+          "text": "Shaped like or pertaining to a condyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condylomacondylome": {
+      "word": "CONDYLOMA; CONDYLOME",
+      "definitions": [
+        {
+          "text": "A wartlike new growth on the outer skin or adjoining mucous membrance. the latter being of syphilitic origin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "condylopod": {
+      "word": "CONDYLOPOD",
+      "definitions": [
+        {
+          "text": "An arthropod.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

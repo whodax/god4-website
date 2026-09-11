@@ -1,0 +1,514 @@
+{
+  "version": "v1",
+  "entries": {
+    "fog": {
+      "word": "FOG",
+      "definitions": [
+        {
+          "text": "(Agric.) To pasture cattle on the fog, or aftergrass, of; to eat off the fog from.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To practice in a small or mean way; to pettifog. [Obs.] Where wouldst thou fog to get a fee Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Watery vapor condensed in the lower part of the atmosphere and disturbing its transparency. It differs from cloud only in being near the ground, and from mist in not approaching so nearly to fine rain. See Cloud.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A state of mental confusion. Fog alarm, Fog bell, Fog horn, etc., a bell, horn, whistle or other contrivance that sounds an alarm, often automatically, near places of danger where visible signals would be hidden in thick weather. distant land. seen on the coast of Newfoundland.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To envelop, as with fog; to befog; to overcast; to darken; to obscure.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To show indistinctly or become indistinct, as the picture on a negative sometimes does in the process of development.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "CAT",
+        "London fog",
+        "London special",
+        "addle",
+        "addle the wits",
+        "aerospace",
+        "aerosphere",
+        "aftergrass",
+        "air hole",
+        "air pocket",
+        "airspace",
+        "amorphousness",
+        "ball up",
+        "bamboo",
+        "becloud",
+        "bedazzle",
+        "bedim",
+        "befog",
+        "befuddle",
+        "befuddlement",
+        "bemist",
+        "bewilder",
+        "bewilderment",
+        "blur",
+        "bother",
+        "botheration",
+        "bug",
+        "bump",
+        "cane",
+        "ceiling",
+        "cereal",
+        "cereal plant",
+        "chaos",
+        "clabber up",
+        "cloud",
+        "cloud over",
+        "cloud up",
+        "confuse",
+        "confusion",
+        "corn",
+        "crosswind",
+        "dark",
+        "darken",
+        "darken over",
+        "darkness",
+        "daze",
+        "dazzle",
+        "defocus",
+        "deform",
+        "dim",
+        "discombobulate",
+        "discombobulation",
+        "discomfit",
+        "discomfiture",
+        "discompose",
+        "discomposure",
+        "disconcert",
+        "disconcertion",
+        "disorder",
+        "disorganization",
+        "disorganize",
+        "disorient",
+        "disorientation",
+        "distort",
+        "distract",
+        "disturb",
+        "disturbance",
+        "drisk",
+        "drizzling mist",
+        "eclipse",
+        "embarrass",
+        "embarrassment",
+        "empty space",
+        "encloud",
+        "enmist",
+        "entangle",
+        "farinaceous plant",
+        "favorable wind",
+        "film",
+        "flummox",
+        "flurry",
+        "fluster",
+        "flutter",
+        "fog up",
+        "fogginess",
+        "forage grass",
+        "frenzy",
+        "front",
+        "frost smoke",
+        "fuddle",
+        "fuddlement",
+        "fuss",
+        "fuzz",
+        "fuzziness",
+        "gauze",
+        "grain",
+        "graminaceous plant",
+        "grass",
+        "haze",
+        "head wind",
+        "high-pressure area",
+        "hole",
+        "indeterminateness",
+        "indistinctness",
+        "ionosphere",
+        "jetstream",
+        "jumble",
+        "lawn grass",
+        "lose resolution",
+        "low-pressure area",
+        "make uncertain",
+        "maze",
+        "mess",
+        "mess up",
+        "mist",
+        "mistiness",
+        "mix up",
+        "moider",
+        "muddle",
+        "muddlement",
+        "muddy",
+        "mumbo jumbo",
+        "murk",
+        "murkiness",
+        "mystification",
+        "mystify",
+        "nubilate",
+        "obfuscate",
+        "obfuscation",
+        "obnubilate",
+        "obscurantism",
+        "obscuration",
+        "obscure",
+        "obscurity",
+        "opacity",
+        "ornamental grass",
+        "overcast",
+        "overcloud",
+        "overshadow",
+        "oversmoke",
+        "pale",
+        "pea soup",
+        "pea-soup fog",
+        "peasouper",
+        "perplex",
+        "perplexity",
+        "perturb",
+        "perturbation",
+        "pocket",
+        "pother",
+        "pucker",
+        "put out",
+        "puzzle",
+        "raise hell",
+        "rattle",
+        "reed",
+        "roughness",
+        "ruffle",
+        "shade",
+        "shadow",
+        "shapelessness",
+        "shuffle",
+        "smog",
+        "smoke",
+        "soften",
+        "soup",
+        "space",
+        "stew",
+        "stratosphere",
+        "substratosphere",
+        "sweat",
+        "swivet",
+        "tail wind",
+        "throw into confusion",
+        "tizzy",
+        "tropopause",
+        "troposphere",
+        "trough",
+        "turbulence",
+        "unclarity",
+        "unclearness",
+        "unform",
+        "unplainness",
+        "unsettle",
+        "unsettlement",
+        "unshape",
+        "upset",
+        "vagueness",
+        "vapor",
+        "visibility",
+        "visibility zero"
+      ]
+    },
+    "fogbelt": {
+      "word": "FOG BELT",
+      "definitions": [
+        {
+          "text": "A region of the ocean where fogs are of marked frequency, as near the coast of Newfoundland.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "fogbow": {
+      "word": "FOGBOW",
+      "definitions": [
+        {
+          "text": "A nebulous arch, or bow, of white or yellowish light sometimes seen in fog, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foge": {
+      "word": "FOGE",
+      "definitions": [
+        {
+          "text": "The Cornish name for a forge used for smelting tin. Raymond",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fogey": {
+      "word": "FOGEY",
+      "definitions": [
+        {
+          "text": "See Fogy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foggage": {
+      "word": "FOGGAGE",
+      "definitions": [
+        {
+          "text": "See 1st Fog.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fogger": {
+      "word": "FOGGER",
+      "definitions": [
+        {
+          "text": "One who fogs; a pettifogger. [Obs.] A beggarly fogger. Terence in English(1614)",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foggily": {
+      "word": "FOGGILY",
+      "definitions": [
+        {
+          "text": "In a foggy manner; obscurely. Johnson.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fogginess": {
+      "word": "FOGGINESS",
+      "definitions": [
+        {
+          "text": "The state of being foggy. Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "foggy": {
+      "word": "FOGGY",
+      "definitions": [
+        {
+          "text": "Filled or abounding with fog, or watery exhalations; misty; as, a foggy atmosphere; a foggy morning. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Beclouded; dull; obscure; as, foggy ideas. Your coarse, foggy, drowsy conceit. Hayward.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "addlebrained",
+        "addled",
+        "addleheaded",
+        "addlepated",
+        "aleatoric",
+        "aleatory",
+        "amorphous",
+        "beclouded",
+        "befuddled",
+        "blear",
+        "blear-witted",
+        "bleared",
+        "bleary",
+        "blind",
+        "blobby",
+        "blurred",
+        "blurry",
+        "broad",
+        "chance",
+        "chancy",
+        "chaotic",
+        "clear as mud",
+        "cloudy",
+        "confused",
+        "dark",
+        "dim",
+        "disordered",
+        "dizzy",
+        "faint",
+        "feeble",
+        "filmy",
+        "fogged",
+        "fuddlebrained",
+        "fuddled",
+        "fuzzy",
+        "general",
+        "half-seen",
+        "half-visible",
+        "hazy",
+        "hit-or-miss",
+        "ill-defined",
+        "imprecise",
+        "in a fog",
+        "in a muddle",
+        "inaccurate",
+        "inchoate",
+        "incoherent",
+        "inconspicuous",
+        "indecisive",
+        "indefinable",
+        "indefinite",
+        "indeterminable",
+        "indeterminate",
+        "indistinct",
+        "indistinguishable",
+        "inexact",
+        "lax",
+        "loose",
+        "low-profile",
+        "merely glimpsed",
+        "misted",
+        "misty",
+        "muddled",
+        "muddleheaded",
+        "muddy",
+        "muddybrained",
+        "murky",
+        "mushy",
+        "muzzy",
+        "nebulous",
+        "nonspecific",
+        "obscure",
+        "opaque",
+        "orderless",
+        "out of focus",
+        "pale",
+        "pea-soupy",
+        "puzzleheaded",
+        "random",
+        "scramblebrained",
+        "semivisible",
+        "shadowed forth",
+        "shadowy",
+        "shapeless",
+        "smoggy",
+        "soupy",
+        "stochastic",
+        "sweeping",
+        "transcendent",
+        "uncertain",
+        "unclear",
+        "undefined",
+        "undestined",
+        "undetermined",
+        "unplain",
+        "unrecognizable",
+        "unspecified",
+        "vague",
+        "vaporous",
+        "vapory",
+        "veiled",
+        "weak"
+      ]
+    },
+    "fogie": {
+      "word": "FOGIE",
+      "definitions": [
+        {
+          "text": "See Fogy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fogless": {
+      "word": "FOGLESS",
+      "definitions": [
+        {
+          "text": "Without fog; clear. Kane.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fogy": {
+      "word": "FOGY",
+      "definitions": [
+        {
+          "text": "A dull old fellow; a person behind the times, over- conservative, or slow; -- usually preceded by old. [Written also fogie and fogey.] [Colloq.] Notorious old bore; regular old fogy. Thackeray. or protector. By others it is regareded as a diminutive of folk (cf. D. volkje). It is defined by Jamieson, in his Scottish Dictionary, as \"an invalid or garrison soldier,\" and is applied to the old soldiers of the Royal Hospital at Dublin, which is called the Fogies' Hospital. In the fixed habits of such persons we see the origin of the present use of the term. Sir F. Head.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Methuselah",
+        "antediluvian",
+        "antique",
+        "back number",
+        "conservationist",
+        "conservatist",
+        "conservative",
+        "dad",
+        "diehard",
+        "dodo",
+        "dotard",
+        "elder",
+        "fossil",
+        "fud",
+        "fuddy-duddy",
+        "granny",
+        "has-been",
+        "laudator temporis acti",
+        "longhair",
+        "matriarch",
+        "mid-Victorian",
+        "mossback",
+        "old believer",
+        "old crock",
+        "old dodo",
+        "old fart",
+        "old fogy",
+        "old liner",
+        "old man",
+        "old poop",
+        "old school",
+        "old woman",
+        "old-timer",
+        "patriarch",
+        "pop",
+        "pops",
+        "reactionary",
+        "regular old fogy",
+        "relic",
+        "right-winger",
+        "rightist",
+        "senile",
+        "square",
+        "standpat",
+        "standpatter",
+        "starets",
+        "stick-in-the-mud",
+        "traditionalist",
+        "ultraconservative"
+      ]
+    },
+    "fogyism": {
+      "word": "FOGYISM",
+      "definitions": [
+        {
+          "text": "The principles and conduct of a fogy. [Colloq.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

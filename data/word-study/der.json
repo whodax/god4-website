@@ -1,0 +1,2736 @@
+{
+  "version": "v1",
+  "entries": {
+    "deracinate": {
+      "word": "DERACINATE",
+      "definitions": [
+        {
+          "text": "To pluck up by the roots; to extirpate. [R.] While that the colter rusts That should deracinate such savagery. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deracination": {
+      "word": "DERACINATION",
+      "definitions": [
+        {
+          "text": "The act of pulling up by the roots; eradication. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deraignderain": {
+      "word": "DERAIGN; DERAIN",
+      "definitions": [
+        {
+          "text": "To prove or to refute by proof; to clear (one's self). [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deraignmentderainment": {
+      "word": "DERAIGNMENT; DERAINMENT",
+      "definitions": [
+        {
+          "text": "The act of deraigning. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The renunciation of religious or monastic vows. [Obs.] Blount.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derail": {
+      "word": "DERAIL",
+      "definitions": [
+        {
+          "text": "To cause to run off from the rails of a railroad, as a locomotive. Lardner.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derailment": {
+      "word": "DERAILMENT",
+      "definitions": [
+        {
+          "text": "The act of going off, or the state of being off, the rails of a railroad.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derange": {
+      "word": "DERANGE",
+      "definitions": [
+        {
+          "text": "To put out of place, order, or rank; to disturb the proper arrangement or order of; to throw into disorder, confusion, or embarrassment; to disorder; to disarrange; as, to derange the plans of a commander, or the affairs of a nation.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To disturb in action or function, as a part or organ, or the whole of a machine or organism. A sudden fall deranges some of our internal parts. Blair.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To disturb in the orderly or normal action of the intellect; to render insane. discompose; ruffle; disconcert.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "afflict",
+        "clutter",
+        "craze",
+        "debilitate",
+        "dement",
+        "devitalize",
+        "disable",
+        "disarrange",
+        "disarray",
+        "discommode",
+        "discompose",
+        "dishevel",
+        "dislocate",
+        "disorder",
+        "disorganize",
+        "distract",
+        "disturb",
+        "drive insane",
+        "drive mad",
+        "enervate",
+        "enfeeble",
+        "frenzy",
+        "hospitalize",
+        "incapacitate",
+        "incommode",
+        "inconvenience",
+        "indispose",
+        "invalid",
+        "lay up",
+        "litter",
+        "mad",
+        "madden",
+        "make mad",
+        "mess",
+        "mess up",
+        "misarrange",
+        "muss",
+        "muss up",
+        "perturb",
+        "reduce",
+        "ruffle",
+        "rummage",
+        "rumple",
+        "scatter",
+        "send mad",
+        "shatter",
+        "sicken",
+        "tousle",
+        "turn",
+        "unbalance",
+        "unhinge",
+        "unsettle",
+        "upset",
+        "weaken"
+      ]
+    },
+    "deranged": {
+      "word": "DERANGED",
+      "definitions": [
+        {
+          "text": "Disordered; especially, disordered in mind; crazy; insane. The story of a poor deranged parish lad. Lamb.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abnormal",
+        "amiss",
+        "askew",
+        "awry",
+        "balmy",
+        "bananas",
+        "barmy",
+        "bats",
+        "batty",
+        "bereft of reason",
+        "berserk",
+        "bonkers",
+        "brainsick",
+        "cockeyed",
+        "convulsed",
+        "crackbrained",
+        "cracked",
+        "crazed",
+        "crazy",
+        "cuckoo",
+        "daft",
+        "deluded",
+        "demented",
+        "deprived of reason",
+        "dippy",
+        "disarranged",
+        "discomfited",
+        "discomposed",
+        "disconcerted",
+        "dislocated",
+        "disordered",
+        "disorderly",
+        "disorganized",
+        "disoriented",
+        "distraught",
+        "disturbed",
+        "dotty",
+        "flighty",
+        "hallucinated",
+        "haywire",
+        "in disorder",
+        "insane",
+        "irrational",
+        "kooky",
+        "loco",
+        "loony",
+        "lunatic",
+        "mad",
+        "maddened",
+        "maniac",
+        "manic",
+        "mazed",
+        "mental",
+        "mentally deficient",
+        "meshuggah",
+        "misplaced",
+        "moon-struck",
+        "non compos",
+        "non compos mentis",
+        "not all there",
+        "not right",
+        "nuts",
+        "nutty",
+        "odd",
+        "of unsound mind",
+        "off",
+        "on the fritz",
+        "out of gear",
+        "out of joint",
+        "out of kelter",
+        "out of kilter",
+        "out of order",
+        "out of place",
+        "out of tune",
+        "out of whack",
+        "perturbed",
+        "potty",
+        "psycho",
+        "psychotic",
+        "queer",
+        "reasonless",
+        "roily",
+        "screwy",
+        "senseless",
+        "shuffled",
+        "sick",
+        "stark-mad",
+        "stark-staring mad",
+        "strange",
+        "tetched",
+        "touched",
+        "turbid",
+        "turbulent",
+        "unbalanced",
+        "unhinged",
+        "unsane",
+        "unsettled",
+        "unsound",
+        "upset",
+        "wacky",
+        "wandering",
+        "witless"
+      ]
+    },
+    "derangement": {
+      "word": "DERANGEMENT",
+      "definitions": [
+        {
+          "text": "The act of deranging or putting out of order, or the state of being deranged; disarrangement; disorder; confusion; especially, mental disorder; insanity. insanity; lunacy; madness; delirium; mania. See Insanity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aberrance",
+        "aberrancy",
+        "aberration",
+        "abnormality",
+        "abnormity",
+        "alienation",
+        "amorphism",
+        "anomalism",
+        "anomalousness",
+        "anomaly",
+        "brain damage",
+        "brainsickness",
+        "clouded mind",
+        "confusion",
+        "convulsion",
+        "craziness",
+        "daftness",
+        "dementedness",
+        "dementia",
+        "deviation",
+        "difference",
+        "disarrangement",
+        "disarray",
+        "disarticulation",
+        "discomfiture",
+        "discomposure",
+        "disconcertedness",
+        "disharmony",
+        "dishevelment",
+        "disintegration",
+        "disjunction",
+        "dislocation",
+        "disorder",
+        "disorderliness",
+        "disorganization",
+        "disorientation",
+        "disproportion",
+        "disruption",
+        "distraction",
+        "disturbance",
+        "divergence",
+        "eccentricity",
+        "entropy",
+        "erraticism",
+        "folie",
+        "furor",
+        "haphazardness",
+        "heteromorphism",
+        "incoherence",
+        "indiscriminateness",
+        "inferiority",
+        "inharmonious harmony",
+        "insaneness",
+        "insanity",
+        "irrationality",
+        "irregularity",
+        "loss of mind",
+        "loss of reason",
+        "lunacy",
+        "madness",
+        "mania",
+        "mental deficiency",
+        "mental derangement",
+        "mental disease",
+        "mental disorder",
+        "mental disturbance",
+        "mental illness",
+        "mental instability",
+        "mental sickness",
+        "mind overthrown",
+        "mindsickness",
+        "misarrangement",
+        "monstrosity",
+        "most admired disorder",
+        "nonsymmetry",
+        "nonuniformity",
+        "oddness",
+        "perturbation",
+        "pixilation",
+        "possession",
+        "promiscuity",
+        "promiscuousness",
+        "psychopathy",
+        "queerness",
+        "rabidness",
+        "randomness",
+        "reasonlessness",
+        "senselessness",
+        "shattered mind",
+        "shuffling",
+        "sick mind",
+        "sickness",
+        "strangeness",
+        "subnormality",
+        "superiority",
+        "teratism",
+        "turbulence",
+        "unbalance",
+        "unbalanced mind",
+        "unnaturalism",
+        "unnaturalness",
+        "unsaneness",
+        "unsound mind",
+        "unsoundness",
+        "unsoundness of mind",
+        "unsymmetry",
+        "ununiformity",
+        "upset",
+        "witlessness"
+      ]
+    },
+    "deranger": {
+      "word": "DERANGER",
+      "definitions": [
+        {
+          "text": "One who deranges.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deray": {
+      "word": "DERAY",
+      "definitions": [
+        {
+          "text": "Disorder; merriment. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derbio": {
+      "word": "DERBIO",
+      "definitions": [
+        {
+          "text": "A large European food fish (Lichia glauca).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derby": {
+      "word": "DERBY",
+      "definitions": [
+        {
+          "text": "A race for three-old horses, run annually at Epsom (near London), for the Derby stakes. It was instituted by the 12th Earl of Derby, in",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Derby Day, the day of the annual race for the Derby stakes, -- Wednesday of the week before Whitsuntide.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stiff felt hat with a dome-shaped crown.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Le Mans",
+        "Olympic games",
+        "Olympics",
+        "air race",
+        "automobile race",
+        "bicycle race",
+        "boat race",
+        "bout",
+        "concours",
+        "contest",
+        "contest of speed",
+        "cross-country race",
+        "dash",
+        "dog race",
+        "drag race",
+        "encounter",
+        "endurance race",
+        "engagement",
+        "fight",
+        "footrace",
+        "game",
+        "games",
+        "go",
+        "gymkhana",
+        "heat",
+        "hurdle race",
+        "joust",
+        "lap",
+        "marathon",
+        "marathon race",
+        "match",
+        "match race",
+        "matching",
+        "meet",
+        "meeting",
+        "motorcycle race",
+        "obstacle race",
+        "potato race",
+        "race",
+        "rally",
+        "regatta",
+        "relay",
+        "relay race",
+        "rencontre",
+        "road race",
+        "run",
+        "sack race",
+        "speedway race",
+        "sprint",
+        "sprint race",
+        "stock-car race",
+        "test",
+        "three-legged race",
+        "tilt",
+        "torch race",
+        "tournament",
+        "tourney",
+        "track race",
+        "trial",
+        "walk",
+        "yacht race"
+      ]
+    },
+    "derbyshirespar": {
+      "word": "DERBYSHIRE SPAR",
+      "definitions": [
+        {
+          "text": "A massive variety of fluor spar, found in Derbyshire, England, and wrought into vases and other ornamental work.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "derdoing": {
+      "word": "DERDOING",
+      "definitions": [
+        {
+          "text": "Doing daring or chivalrous deeds. [Obs.] \"In derdoing arms.\" Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dere": {
+      "word": "DERE",
+      "definitions": [
+        {
+          "text": "To hurt; to harm; to injure. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Harm. [Obs.] Robert of Brunne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derecho": {
+      "word": "DERECHO",
+      "definitions": [
+        {
+          "text": "A straight wind without apparent cyclonic tendency, usually accompanied with rain and often destructive, common in the prairie regions of the United States.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dereinedereyne": {
+      "word": "DEREINE; DEREYNE",
+      "definitions": [
+        {
+          "text": "Same as Darraign. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derelict": {
+      "word": "DERELICT",
+      "definitions": [
+        {
+          "text": "Given up or forsaken by the natural owner or guardian; left and abandoned; as, derelict lands. The affections which these exposed or derelict children bear to their mothers, have no grounds of nature or assiduity but civility and opinion. Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lost; adrift; hence, wanting; careless; neglectful; unfaithful. They easily prevailed, so as to seize upon the vacant, unoccupied, and derelict minds of his [Chatham's] friends; and instantly they turned the vessel wholly out of the course of his policy. Burke. A government which is either unable or unwilling to redress such wrongs is derelict to its highest duties. J. Buchanan.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Bowery bum",
+        "DP",
+        "Ishmael",
+        "abandoned",
+        "battered",
+        "beachcomber",
+        "beat-up",
+        "beaten up",
+        "beggar",
+        "beggarly fellow",
+        "behindhand",
+        "blighter",
+        "broken-down",
+        "budmash",
+        "bum",
+        "bummer",
+        "caitiff",
+        "careless",
+        "cast-off",
+        "castaway",
+        "castoff",
+        "culpably negligent",
+        "declasse",
+        "decrepit",
+        "delinquent",
+        "deserted",
+        "desolate",
+        "devil",
+        "dilapidated",
+        "dilatory",
+        "dingy",
+        "disaffected",
+        "discard",
+        "discarded",
+        "disloyal",
+        "disowned",
+        "displaced person",
+        "disregardful",
+        "disused",
+        "dogie",
+        "down-and-out",
+        "drifter",
+        "drunkard",
+        "evictee",
+        "exile",
+        "expatriate",
+        "expellee",
+        "faded",
+        "faithless",
+        "false",
+        "fickle",
+        "floater",
+        "flotsam",
+        "flotsam and jetsam",
+        "forsaken",
+        "foundling",
+        "good-for-naught",
+        "good-for-nothing",
+        "heedless",
+        "hobo",
+        "human wreck",
+        "in ruins",
+        "inadvertent",
+        "inattentive",
+        "inconstant",
+        "irresponsible",
+        "jetsam",
+        "jettisoned",
+        "junk",
+        "lagan",
+        "laissez-faire",
+        "lax",
+        "lazzarone",
+        "left",
+        "leper",
+        "loafer",
+        "loose",
+        "lowlife",
+        "malingerer",
+        "marooned",
+        "mauvais sujet",
+        "mean wretch",
+        "mucker",
+        "neglected",
+        "neglectful",
+        "neglecting",
+        "negligent",
+        "no-good",
+        "noninterfering",
+        "nonrestrictive",
+        "not true to",
+        "of bad faith",
+        "off-guard",
+        "orphan",
+        "outcast",
+        "outcast of society",
+        "outcaste",
+        "outlaw",
+        "outside the gates",
+        "outside the pale",
+        "overly permissive",
+        "pariah",
+        "pauvre diable",
+        "permissive",
+        "persona non grata",
+        "pilgarlic",
+        "poor creature",
+        "poor devil",
+        "procrastinating",
+        "ramshackle",
+        "recreant",
+        "refuse",
+        "regardless",
+        "reject",
+        "rejected",
+        "relaxed",
+        "remiss",
+        "rubbish",
+        "ruined",
+        "ruinous",
+        "run-down",
+        "sad case",
+        "sad sack",
+        "scamping",
+        "seedy",
+        "shabby",
+        "skid-row bum",
+        "skimping",
+        "slack",
+        "slacker",
+        "slighting",
+        "slipshod",
+        "sloppy",
+        "slovenly",
+        "slummy",
+        "slurring",
+        "social outcast",
+        "solitary",
+        "stiff",
+        "street arab",
+        "sundowner",
+        "swagman",
+        "threadbare",
+        "tottery",
+        "tramp",
+        "trash",
+        "trothless",
+        "truant",
+        "tumbledown",
+        "unacceptable person",
+        "uncircumspect",
+        "uncouth",
+        "undependable",
+        "undesirable",
+        "unfaithful",
+        "unguarded",
+        "unloyal",
+        "unreliable",
+        "unrigorous",
+        "unsteadfast",
+        "untouchable",
+        "untrue",
+        "untrustworthy",
+        "unwary",
+        "unwatchful",
+        "vag",
+        "vagabond",
+        "vagrant",
+        "vaurien",
+        "waif",
+        "waifs and strays",
+        "wastrel",
+        "worthless fellow",
+        "wretch"
+      ]
+    },
+    "dereliction": {
+      "word": "DERELICTION",
+      "definitions": [
+        {
+          "text": "The act of leaving with an intention not to reclaim or resume; an utter forsaking abandonment. Cession or dereliction, actual or tacit, of other powers. Burke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A neglect or omission as if by willful abandonment. A total dereliction of military duties. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being left or abandoned.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A retiring of the sea, occasioning a change of high-water mark, whereby land is gained.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Punic faith",
+        "abuse",
+        "apostasy",
+        "atrocity",
+        "bad faith",
+        "barratry",
+        "betrayal",
+        "bolt",
+        "breach",
+        "breach of faith",
+        "breach of promise",
+        "breach of trust",
+        "breakaway",
+        "crime",
+        "crime against humanity",
+        "culpa",
+        "culpable negligence",
+        "deadly sin",
+        "default",
+        "defection",
+        "delinquency",
+        "deserter",
+        "desertion",
+        "disaffection",
+        "disconformity",
+        "disloyalty",
+        "disregard",
+        "enormity",
+        "error",
+        "evil",
+        "failure",
+        "faithlessness",
+        "falseness",
+        "falsity",
+        "fault",
+        "felony",
+        "fickleness",
+        "genocide",
+        "guilty act",
+        "heavy sin",
+        "impropriety",
+        "inadvertence",
+        "inadvertency",
+        "inattention",
+        "inconstancy",
+        "indiscretion",
+        "inexpiable sin",
+        "infidelity",
+        "iniquity",
+        "injury",
+        "injustice",
+        "inobservance",
+        "laches",
+        "laissez-faire",
+        "lapse",
+        "laxity",
+        "laxness",
+        "looseness",
+        "mala fides",
+        "malefaction",
+        "malfeasance",
+        "malum",
+        "minor wrong",
+        "misdeed",
+        "misdemeanor",
+        "misfeasance",
+        "misuse",
+        "mortal sin",
+        "neglect",
+        "neglectfulness",
+        "negligence",
+        "nonadherence",
+        "noncompliance",
+        "nonconformance",
+        "nonconformity",
+        "nonfeasance",
+        "nonfulfillment",
+        "noninterference",
+        "nonobservance",
+        "nonperformance",
+        "nonrestriction",
+        "offense",
+        "omission",
+        "outrage",
+        "overlooking",
+        "oversight",
+        "peccadillo",
+        "peccancy",
+        "permissiveness",
+        "poor stewardship",
+        "procrastination",
+        "ratting",
+        "recreancy",
+        "remissness",
+        "schism",
+        "secession",
+        "sin",
+        "sin of commission",
+        "sin of omission",
+        "sinful act",
+        "slackness",
+        "slight",
+        "slip",
+        "tort",
+        "transgression",
+        "trespass",
+        "trip",
+        "trothlessness",
+        "unfaith",
+        "unfaithfulness",
+        "unloyalty",
+        "unobservance",
+        "unrigorousness",
+        "unsteadfastness",
+        "untrueness",
+        "unutterable sin",
+        "venial sin",
+        "walkout",
+        "wrong"
+      ]
+    },
+    "dereligionize": {
+      "word": "DERELIGIONIZE",
+      "definitions": [
+        {
+          "text": "To make irreligious; to turn from religion. [R.] He would dereligionize men beyond all others. De Quincey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dereling": {
+      "word": "DERELING",
+      "definitions": [
+        {
+          "text": "Darling. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Darling. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derf": {
+      "word": "DERF",
+      "definitions": [
+        {
+          "text": "Strong; powerful; fierce. [Obs.] -- Derf\"ly, adv. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deride": {
+      "word": "DERIDE",
+      "definitions": [
+        {
+          "text": "To laugh at with contempt; to laugh to scorn; to turn to ridicule or make sport of; to mock; to scoff at. And the Pharisees, also, . . . derided him. Luke xvi. 14. Sport that wrinkled Care derides. And Laughter holding both his sides. Milton. unkindness of feeling; his object may be to correct; as, to ridicule the follies of the age. He who derides is actuated by a severe a contemptuous spirit; as, to deride one for his religious principles. To mock is stronger, and denotes open and scornful derision; as, to mock at sin. To taunt is to reproach with the keenest insult; as, to taunt one for his misfortunes. Ridicule consists more in words than in actions; derision and mockery evince themselves in actions as well as words; taunts are always expressed in words of extreme bitterness.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "banter",
+        "be above",
+        "be contemptuous of",
+        "belittle",
+        "care nothing for",
+        "chaff",
+        "contemn",
+        "dare",
+        "despise",
+        "diminish",
+        "disdain",
+        "disparage",
+        "disprize",
+        "disregard",
+        "dump on",
+        "feel contempt for",
+        "feel superior to",
+        "flout",
+        "get fresh",
+        "get smart",
+        "grin at",
+        "have a nerve",
+        "have the cheek",
+        "have the gall",
+        "hold beneath one",
+        "hold cheap",
+        "hold in contempt",
+        "hold in derision",
+        "insult",
+        "jeer at",
+        "jolly",
+        "kid",
+        "knock",
+        "laugh at",
+        "laugh to scorn",
+        "look down upon",
+        "lout",
+        "make bold",
+        "make fun of",
+        "make game of",
+        "make merry with",
+        "misprize",
+        "mock",
+        "pan",
+        "pillory",
+        "point at",
+        "poke fun at",
+        "pooh-pooh",
+        "presume",
+        "put down",
+        "put one on",
+        "quiz",
+        "rag",
+        "rally",
+        "rank low",
+        "razz",
+        "rib",
+        "ride",
+        "ridicule",
+        "roast",
+        "scoff at",
+        "scorn",
+        "scout",
+        "set at defiance",
+        "set at naught",
+        "slight",
+        "slight over",
+        "smile at",
+        "sneer at",
+        "sneeze at",
+        "snicker at",
+        "sniff at",
+        "snigger at",
+        "snort at",
+        "take liberties",
+        "taunt",
+        "tease",
+        "think nothing of",
+        "treat with contempt",
+        "twit"
+      ]
+    },
+    "derider": {
+      "word": "DERIDER",
+      "definitions": [
+        {
+          "text": "One who derides, or laughs at, another in contempt; a mocker; a scoffer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deridingly": {
+      "word": "DERIDINGLY",
+      "definitions": [
+        {
+          "text": "By way of derision or mockery.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derigueur": {
+      "word": "DE RIGUEUR",
+      "definitions": [
+        {
+          "text": "According to strictness (of etiquette, rule, or the like); obligatory; strictly required.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "accepted",
+        "acknowledged",
+        "admitted",
+        "approved",
+        "au fait",
+        "becoming",
+        "being done",
+        "binding",
+        "comme il faut",
+        "conformable",
+        "conventional",
+        "correct",
+        "customary",
+        "decent",
+        "decorous",
+        "done",
+        "formal",
+        "imperative",
+        "imperious",
+        "mandatory",
+        "meet",
+        "must",
+        "necessary",
+        "nice",
+        "obligatory",
+        "orthodox",
+        "peremptory",
+        "proper",
+        "received",
+        "recognized",
+        "required",
+        "right",
+        "seemly",
+        "traditional"
+      ]
+    },
+    "derision": {
+      "word": "DERISION",
+      "definitions": [
+        {
+          "text": "The act of deriding, or the state of being derided; mockery; scornful or contemptuous treatment which holds one up to ridicule. He that sitteth in the heavens shall laugh; the Lord shall have them in derision. Ps. ii. 4. Saderision called. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An object of derision or scorn; a laughing-stock. I was a derision to all my people. Lam. iii. 14.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "burlesque",
+        "butt",
+        "caricature",
+        "contempt",
+        "contumely",
+        "disrespect",
+        "jest",
+        "joke",
+        "lampoon",
+        "laughter",
+        "mock",
+        "mockery",
+        "pasquinade",
+        "pilgarlic",
+        "raillery",
+        "ridicule",
+        "sarcasm",
+        "satire",
+        "scoffing",
+        "scorn",
+        "sport",
+        "travesty"
+      ]
+    },
+    "derisive": {
+      "word": "DERISIVE",
+      "definitions": [
+        {
+          "text": "Expressing, serving for, or characterized by, derision. \"Derisive taunts.\" Pope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abusive",
+        "arrogant",
+        "audacious",
+        "aweless",
+        "back-biting",
+        "bantering",
+        "belittling",
+        "biggety",
+        "bitchy",
+        "blackening",
+        "blameful",
+        "bluff",
+        "bold",
+        "booing",
+        "brash",
+        "brassy",
+        "brazen",
+        "bumptious",
+        "calumniatory",
+        "calumnious",
+        "catcalling",
+        "catty",
+        "censorious",
+        "chaffing",
+        "challenging",
+        "cheeky",
+        "chutzpadik",
+        "cocky",
+        "condemnatory",
+        "contemptuous",
+        "contumelious",
+        "crusty",
+        "damnatory",
+        "daring",
+        "defamatory",
+        "defiant",
+        "defying",
+        "denunciatory",
+        "deprecative",
+        "deprecatory",
+        "depreciative",
+        "depreciatory",
+        "derisory",
+        "derogative",
+        "derogatory",
+        "detractory",
+        "discourteous",
+        "disdainful",
+        "disparaging",
+        "disregardful",
+        "disrespectful",
+        "execrating",
+        "execrative",
+        "execratory",
+        "facy",
+        "fleering",
+        "flip",
+        "flippant",
+        "fooling",
+        "fresh",
+        "gally",
+        "gratuitous",
+        "greatly daring",
+        "grinning",
+        "hissing",
+        "hooting",
+        "impertinent",
+        "impudent",
+        "insolent",
+        "invective",
+        "inveighing",
+        "irreverent",
+        "jeering",
+        "joshing",
+        "judgmental",
+        "kidding",
+        "leering",
+        "libelous",
+        "malapert",
+        "minimizing",
+        "mocking",
+        "nervy",
+        "objurgatory",
+        "panning",
+        "pejorative",
+        "pert",
+        "priggish",
+        "quizzical",
+        "ragging",
+        "railing",
+        "rallying",
+        "razzing",
+        "regardless of consequences",
+        "reproachful",
+        "reprobative",
+        "reviling",
+        "ridiculing",
+        "roasting",
+        "rude",
+        "sassy",
+        "saucy",
+        "scandalous",
+        "scoffing",
+        "scurrile",
+        "scurrilous",
+        "slanderous",
+        "slighting",
+        "smart",
+        "smart-alecky",
+        "smart-ass",
+        "smirking",
+        "sneering",
+        "snickering",
+        "sniggering",
+        "snorting",
+        "taunting",
+        "teasing",
+        "twitting",
+        "uncalled-for",
+        "vilifying",
+        "vituperative",
+        "wise-ass"
+      ]
+    },
+    "derisory": {
+      "word": "DERISORY",
+      "definitions": [
+        {
+          "text": "Derisive; mocking. Shaftesbury.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derivable": {
+      "word": "DERIVABLE",
+      "definitions": [
+        {
+          "text": "That can be derived; obtainable by transmission; capable of being known by inference, as from premises or data; capable of being traced, as from a radical; as, income is derivable from various sources. All honor derivable upon me. South. The exquisite pleasure derivable from the true and beautiful relations of domestic life. H. G. Bell. The argument derivable from the doxologies. J. H. Newman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derivably": {
+      "word": "DERIVABLY",
+      "definitions": [
+        {
+          "text": "By derivation.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derival": {
+      "word": "DERIVAL",
+      "definitions": [
+        {
+          "text": "Derivation. [R.] The derival of e from a. Earle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derivate": {
+      "word": "DERIVATE",
+      "definitions": [
+        {
+          "text": "Derived; derivative. [R.] H. Taylor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A thing derived; a derivative. [R.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To derive. [Obs.] Huloet.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derivation": {
+      "word": "DERIVATION",
+      "definitions": [
+        {
+          "text": "A leading or drawing off of water from a stream or source. [Obs.] T. Burnet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of receiving anything from a source; the act of procuring an effect from a cause, means, or condition, as profits from capital, conclusions or opinions from evidence. As touching traditional communication, . . . I do not doubt but many of those truths have had the help of that derivation. Sir M. Hale.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of tracing origin or descent, as in grammar or genealogy; as, the derivation of a word from an Aryan root.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state or method of being derived; the relation of origin when established or asserted.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That from which a thing is derived.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is derived; a derivative; a deduction. From the Euphrates into an artificial derivation of that river. Gibbon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The operation of deducing one function from another according to some fixed law, called the law of derivation, as the of differentiation or of integration.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A drawing of humors or fluids from one part of the body to another, to relieve or lessen a morbid process.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "IC analysis",
+        "acceptance",
+        "accidence",
+        "acquisition",
+        "admission",
+        "admittance",
+        "adoption",
+        "affiliation",
+        "affix",
+        "affixation",
+        "allomorph",
+        "ancestry",
+        "apparentation",
+        "appropriation",
+        "assumption",
+        "beginning",
+        "birth",
+        "blood",
+        "bloodline",
+        "borrowed plumes",
+        "bound morpheme",
+        "bowwow theory",
+        "branch",
+        "breed",
+        "by-product",
+        "cognate",
+        "commencement",
+        "common ancestry",
+        "comparative linguistics",
+        "conception",
+        "conclusion",
+        "conjugation",
+        "consanguinity",
+        "consequence",
+        "consequent",
+        "copying",
+        "corollary",
+        "cutting",
+        "declension",
+        "deduction",
+        "derivative",
+        "deriving",
+        "descent",
+        "descriptive linguistics",
+        "development",
+        "dialectology",
+        "difference of form",
+        "dingdong theory",
+        "direct line",
+        "distaff side",
+        "distillate",
+        "doublet",
+        "effect",
+        "enclitic",
+        "eponym",
+        "eponymy",
+        "etymology",
+        "etymon",
+        "event",
+        "eventuality",
+        "eventuation",
+        "extraction",
+        "family",
+        "female line",
+        "filiation",
+        "folk etymology",
+        "formative",
+        "foundation",
+        "fountain",
+        "free form",
+        "fruit",
+        "genealogy",
+        "genesis",
+        "getting",
+        "glossematics",
+        "glossology",
+        "glottochronology",
+        "glottology",
+        "grammar",
+        "graphemics",
+        "grass roots",
+        "harvest",
+        "head",
+        "historical linguistics",
+        "house",
+        "illation",
+        "imitation",
+        "immediate constituent analysis",
+        "inception",
+        "induction",
+        "inference",
+        "infix",
+        "infixation",
+        "inflection",
+        "infringement",
+        "issue",
+        "language study",
+        "legacy",
+        "lexicology",
+        "lexicostatistics",
+        "line",
+        "line of descent",
+        "lineage",
+        "linguistic geography",
+        "linguistic science",
+        "linguistics",
+        "logical outcome",
+        "male line",
+        "mathematical linguistics",
+        "mocking",
+        "morph",
+        "morpheme",
+        "morphemic analysis",
+        "morphemics",
+        "morphology",
+        "morphophonemics",
+        "offshoot",
+        "offspring",
+        "origin",
+        "original",
+        "origination",
+        "outcome",
+        "outgrowth",
+        "paleography",
+        "paradigm",
+        "pasticcio",
+        "pastiche",
+        "philology",
+        "phonetics",
+        "phonology",
+        "phylum",
+        "pirating",
+        "plagiarism",
+        "plagiary",
+        "precipitate",
+        "prefix",
+        "prefixation",
+        "primitive",
+        "proclitic",
+        "product",
+        "provenance",
+        "provenience",
+        "psycholinguistics",
+        "race",
+        "radical",
+        "radix",
+        "receipt",
+        "receival",
+        "receiving",
+        "reception",
+        "result",
+        "resultant",
+        "rise",
+        "root",
+        "seed",
+        "semantic history",
+        "semantics",
+        "sept",
+        "sequel",
+        "sequela",
+        "sequence",
+        "sequent",
+        "side",
+        "simulation",
+        "sociolinguistics",
+        "source",
+        "spear side",
+        "spindle side",
+        "stem",
+        "stirps",
+        "stock",
+        "strain",
+        "structuralism",
+        "succession",
+        "suffix",
+        "suffixation",
+        "sword side",
+        "syntactics",
+        "taking",
+        "taproot",
+        "theme",
+        "transformational linguistics",
+        "upshot",
+        "well",
+        "wellspring",
+        "whence",
+        "word history",
+        "word-formation"
+      ]
+    },
+    "derivational": {
+      "word": "DERIVATIONAL",
+      "definitions": [
+        {
+          "text": "Relating to derivation. Earle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derivative": {
+      "word": "DERIVATIVE",
+      "definitions": [
+        {
+          "text": "Obtained by derivation; derived; not radical, original, or fundamental; originating, deduced, or formed from something else; secondary; as, a derivative conveyance; a derivative word. Derivative circulation, a modification of the circulation found in some parts of the body, in which the arteries empty directly into the veins without",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "That which is derived; anything obtained or deduced from another.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Gram.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A word formed from another word, by a prefix or suffix, an internal modification, or some other change; a word which takes its origin from a root.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A chord, not fundamental, but obtained from another by inversion; or, vice versa, a ground tone or root implied in its harmonics in an actual chord.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An agent which is adapted to produce a derivation (in the medical sense).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A derived function; a function obtained from a given function by a certain algebraic process. the differential coefficient. See Differential coefficient, under Differential.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A substance so related to another substance by modification or partial substitution as to be regarded as derived from it; thus, the amido compounds are derivatives of ammonia, and the hydrocarbons are derivatives of methane, benzene, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accountable",
+        "acquired",
+        "alleged",
+        "ascribable",
+        "assignable",
+        "attributable",
+        "attributed",
+        "borrowed",
+        "by-product",
+        "charged",
+        "conjugate",
+        "consequent",
+        "consequential",
+        "copied",
+        "credited",
+        "derivable from",
+        "derivation",
+        "derivational",
+        "derived",
+        "descendant",
+        "development",
+        "due",
+        "echoic",
+        "ensuing",
+        "etymologic",
+        "explicable",
+        "final",
+        "following",
+        "imitative",
+        "imputable",
+        "imputed",
+        "lexical",
+        "lexicographic",
+        "lexicologic",
+        "lexigraphic",
+        "noncreative",
+        "nongerminal",
+        "nonseminal",
+        "obtained",
+        "offshoot",
+        "onomastic",
+        "onomatologic",
+        "onomatopoeic",
+        "owing",
+        "paronymic",
+        "paronymous",
+        "plagiarized",
+        "procured",
+        "putative",
+        "referable",
+        "referred to",
+        "resultant",
+        "resulting",
+        "sequacious",
+        "sequent",
+        "sequential",
+        "spin-off",
+        "traceable",
+        "uncreative",
+        "uninventive",
+        "unoriginal",
+        "unpregnant"
+      ]
+    },
+    "derive": {
+      "word": "DERIVE",
+      "definitions": [
+        {
+          "text": "To turn the course of, as water; to divert and distribute into subordinate channels; to diffuse; to communicate; to transmit; -- followed by to, into, on, upon. [Obs.] For fear it [water] choke up the pits . . . they [the workman] derive it by other drains. Holland. Her due loves derived to that vile witch's share. Spenser. Derived to us by tradition from Adam to Noah. Jer. Taylor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To receive, as from a source or origin; to obtain by descent or by transmission; to draw; to deduce; -- followed by from.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To trace the origin, descent, or derivation of; to recognize transmission of; as, he derives this word from the Anglo-Saxon. From these two causes . . . an ancient set of physicians derived all diseases. Arbuthnot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To obtain one substance from another by actual or theoretical substitution; as, to derive an organic acid from its corresponding hydrocarbon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To flow; to have origin; to descend; to proceed; to be deduced. Shak. Power from heaven Derives, and monarchs rule by gods appointed. Prior.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accept",
+        "acquire",
+        "admit",
+        "arouse",
+        "arrive at",
+        "assume",
+        "bag",
+        "be seized of",
+        "bring forth",
+        "bring out",
+        "bring to light",
+        "call forth",
+        "call out",
+        "call up",
+        "capture",
+        "catch",
+        "collect",
+        "come by",
+        "come in for",
+        "come into",
+        "conclude",
+        "contract",
+        "corral",
+        "cull",
+        "deduce",
+        "derive from",
+        "develop",
+        "drag down",
+        "drag out",
+        "draw",
+        "draw a conclusion",
+        "draw an inference",
+        "draw forth",
+        "draw from",
+        "draw out",
+        "earn",
+        "educe",
+        "elaborate",
+        "elicit",
+        "emanate from",
+        "enter into possession",
+        "evoke",
+        "evolve",
+        "excogitate",
+        "extract",
+        "fetch",
+        "find",
+        "flow from",
+        "formulate",
+        "gain",
+        "gather",
+        "get",
+        "get from",
+        "get out of",
+        "glean",
+        "harvest",
+        "have",
+        "have coming in",
+        "induce",
+        "infer",
+        "issue from",
+        "judge",
+        "make",
+        "net",
+        "obtain",
+        "proceed from",
+        "procure",
+        "pull down",
+        "put",
+        "reach",
+        "reap",
+        "reason",
+        "reason that",
+        "receive",
+        "rouse",
+        "sack",
+        "score",
+        "secure",
+        "spring from",
+        "stem from",
+        "stimulate",
+        "summon forth",
+        "summon up",
+        "take",
+        "take as proved",
+        "take in",
+        "take on",
+        "take over",
+        "wangle",
+        "wangle out of",
+        "win",
+        "winkle out",
+        "winnow",
+        "worm out",
+        "worm out of"
+      ]
+    },
+    "derivement": {
+      "word": "DERIVEMENT",
+      "definitions": [
+        {
+          "text": "That which is derived; deduction; inference. [Obs.] I offer these derivements from these subjects. W. Montagu.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deriver": {
+      "word": "DERIVER",
+      "definitions": [
+        {
+          "text": "One who derives.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derk": {
+      "word": "DERK",
+      "definitions": [
+        {
+          "text": "Dark. [Obs.] Chaucer. -DERM -derm. Etym: [See Derm, n.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A suffix or terminal formative, much used in anatomical terms, and signifying skin, integument, covering; as, blastoderm, ectoderm, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derm": {
+      "word": "DERM",
+      "definitions": [
+        {
+          "text": "The integument of animal; the skin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Dermis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derma": {
+      "word": "DERMA",
+      "definitions": [
+        {
+          "text": "See Dermis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermal": {
+      "word": "DERMAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the integument or skin of animals; dermic; as, the dermal secretions.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the dermis or true skin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "cortical",
+        "cutaneous",
+        "dermic",
+        "ecderonic",
+        "ectodermal",
+        "ectodermic",
+        "endermatic",
+        "endermic",
+        "epicarpal",
+        "epidermal",
+        "epidermic",
+        "furry",
+        "hypodermal",
+        "hypodermic",
+        "skin-deep",
+        "skinny",
+        "subcutaneous",
+        "testaceous"
+      ]
+    },
+    "dermapteradermapteran": {
+      "word": "DERMAPTERA; DERMAPTERAN",
+      "definitions": [
+        {
+          "text": "See Dermoptera, Dermopteran.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermaticdermatine": {
+      "word": "DERMATIC; DERMATINE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the skin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatitis": {
+      "word": "DERMATITIS",
+      "definitions": [
+        {
+          "text": "Inflammation of the skin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Lombardy leprosy",
+        "acne",
+        "acne vulgaris",
+        "anemia",
+        "ariboflavinosis",
+        "beriberi",
+        "cachexia",
+        "chlorosis",
+        "deficiency anemia",
+        "dermamycosis",
+        "dermatosis",
+        "eczema",
+        "elephantiasis",
+        "epithelioma",
+        "erysipelas",
+        "erythema",
+        "exanthem",
+        "goiter",
+        "greensickness",
+        "heat rash",
+        "herpes",
+        "herpes simplex",
+        "herpes zoster",
+        "hives",
+        "impetigo",
+        "itch",
+        "jungle rot",
+        "keratomalacia",
+        "kwashiorkor",
+        "leprosy",
+        "lichen",
+        "lichen primus",
+        "lupus",
+        "lupus vulgaris",
+        "maidism",
+        "malnutrition",
+        "miliaria",
+        "night blindness",
+        "osteomalacia",
+        "osteoporosis",
+        "pellagra",
+        "pemphigus",
+        "pernicious anemia",
+        "prickly heat",
+        "protein deficiency",
+        "pruigo",
+        "pruritus",
+        "psora",
+        "rachitis",
+        "rickets",
+        "ringworm",
+        "scabies",
+        "scurvy",
+        "shingles",
+        "skin cancer",
+        "struma",
+        "tetter",
+        "vitamin deficiency",
+        "xerophthalmia"
+      ]
+    },
+    "dermatogen": {
+      "word": "DERMATOGEN",
+      "definitions": [
+        {
+          "text": "Nascent epidermis, or external cuticle of plants in a forming condition.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Nascent epidermis, or external cuticle of plants in a forming condition.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatography": {
+      "word": "DERMATOGRAPHY",
+      "definitions": [
+        {
+          "text": "An anatomical description of, or treatise on, the skin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatoid": {
+      "word": "DERMATOID",
+      "definitions": [
+        {
+          "text": "Resembling",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatologist": {
+      "word": "DERMATOLOGIST",
+      "definitions": [
+        {
+          "text": "One who discourses on the skin and its diseases; one versed in dermatology.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatology": {
+      "word": "DERMATOLOGY",
+      "definitions": [
+        {
+          "text": "The science which treats of the skin, its structure, functions, and diseases.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatopathic": {
+      "word": "DERMATOPATHIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to skin diseases, or their cure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatophyte": {
+      "word": "DERMATOPHYTE",
+      "definitions": [
+        {
+          "text": "A vegetable parasite, infesting the skin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermestes": {
+      "word": "DERMESTES",
+      "definitions": [
+        {
+          "text": "A genus of coleopterous insects, the larvæ of which feed animal substances. They are very destructive to dries meats, skins, woolens, and furs. The most common species is D. lardarius, known as the bacon beetle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermestoid": {
+      "word": "DERMESTOID",
+      "definitions": [
+        {
+          "text": "Pertaining to or resembling the genus Dermestes. The carpet beetle, called the buffalo moth, is a dermestoid beetle. Pop. Sci. Monthly.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermic": {
+      "word": "DERMIC",
+      "definitions": [
+        {
+          "text": "Relating to the derm or skin.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the dermis; dermal. Underneath each nail the deep or dermic layer of the integument is peculiarly modified. Huxley. Dermic remedies (Med.), such as act through the skin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermis": {
+      "word": "DERMIS",
+      "definitions": [
+        {
+          "text": "The deep sensitive layer of the skin beneath the scarfskin or epidermis; -- called also true skin, derm, derma, corium, cutis, and enderon. See Skin, and Illust. in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Leatherette",
+        "Leatheroid",
+        "blastoderm",
+        "coat",
+        "corium",
+        "cuticle",
+        "cutis",
+        "cutis vera",
+        "derma",
+        "ectoblast",
+        "ectoderm",
+        "endothelium",
+        "entoderm",
+        "epiblast",
+        "epidermis",
+        "epithelium",
+        "fell",
+        "fleece",
+        "flesh",
+        "fur",
+        "furring",
+        "hide",
+        "hypodermis",
+        "imitation fur",
+        "imitation leather",
+        "integument",
+        "jacket",
+        "leather",
+        "leather paper",
+        "mesoderm",
+        "outer layer",
+        "outer skin",
+        "pavement epithelium",
+        "pelt",
+        "peltry",
+        "rawhide",
+        "rind",
+        "scarfskin",
+        "sheath",
+        "skin",
+        "skins",
+        "tegument",
+        "true skin",
+        "vair"
+      ]
+    },
+    "dermobranchiata": {
+      "word": "DERMOBRANCHIATA",
+      "definitions": [
+        {
+          "text": "A group of nudibranch mollusks without special gills.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermobranchiate": {
+      "word": "DERMOBRANCHIATE",
+      "definitions": [
+        {
+          "text": "Having the skin modified to serve as a gill.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermohaemal": {
+      "word": "DERMOHAEMAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or in relation with, both dermal and hæmal structures; as, the dermohæmal spines or ventral fin rays of fishes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermoid": {
+      "word": "DERMOID",
+      "definitions": [
+        {
+          "text": "Same as Dermatoid. Dermoid cyst (Med.), a cyst containing skin, or structures connected with skin, such as hair.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermoneural": {
+      "word": "DERMONEURAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or in relation with, both dermal and neural structures; as, the dermoneural spines or dorsal fin rays of fishes. Owen.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermopathic": {
+      "word": "DERMOPATHIC",
+      "definitions": [
+        {
+          "text": "Dermatopathic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermophyte": {
+      "word": "DERMOPHYTE",
+      "definitions": [
+        {
+          "text": "A dermatophyte.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermoptera": {
+      "word": "DERMOPTERA",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The division of insects which includes the earwigs (Forticulidæ).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A group of lemuroid mammals having a parachutelike web of skin between the fore and hind legs, of which the colugo (Galeopithecus) is the type. See Colugo.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An order of Mammalia; the Cheiroptera. [Written also Dermaptera, and Dermatoptera.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermopteran": {
+      "word": "DERMOPTERAN",
+      "definitions": [
+        {
+          "text": "An insect which has the anterior pair of wings coriaceous, and does not use them in flight, as the earwig.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermopteri": {
+      "word": "DERMOPTERI",
+      "definitions": [
+        {
+          "text": "Same as Dermopterygii.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermopterygii": {
+      "word": "DERMOPTERYGII",
+      "definitions": [
+        {
+          "text": "A group of fishlike animals including the Marsipobranchiata and Leptocardia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermoskeleton": {
+      "word": "DERMOSKELETON",
+      "definitions": [
+        {
+          "text": "See Exoskeleton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermostosis": {
+      "word": "DERMOSTOSIS",
+      "definitions": [
+        {
+          "text": "Ossification of the dermis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dern": {
+      "word": "DERN",
+      "definitions": [
+        {
+          "text": "A gatepost or doorpost. [Local Eng.] C. Kingsley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hidden; concealed; secret. [Obs.] \"Ye must be full dern.\" Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Solitary; sad. [Obs.] Dr. H. More.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derne": {
+      "word": "DERNE",
+      "definitions": [
+        {
+          "text": "To hide; to skulk. [Scot.] He at length escaped them by derning himself in a foxearth. H. Miller.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dernful": {
+      "word": "DERNFUL",
+      "definitions": [
+        {
+          "text": "Secret; hence, lonely; sad; mournful. [Obs.] \"Dernful noise.\" Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dernier": {
+      "word": "DERNIER",
+      "definitions": [
+        {
+          "text": "Last; final. Dernier ressort ( Etym: [F.], last resort or expedient.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dernly": {
+      "word": "DERNLY",
+      "definitions": [
+        {
+          "text": "Secretly; grievously; mournfully. [Obs.] Spenser.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derogant": {
+      "word": "DEROGANT",
+      "definitions": [
+        {
+          "text": "Derogatory. [R.] T. Adams.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derogate": {
+      "word": "DEROGATE",
+      "definitions": [
+        {
+          "text": "To annul in part; to repeal partly; to restrict; to limit the action of; -- said of a law. By several contrary customs, . . . many of the civil and canon laws are controlled and derogated. Sir M. Hale.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lessen; to detract from; to disparage; to depreciate; -- said of a person or thing. [R.] Anything . . . that should derogate, minish, or hurt his glory and his name. Sir T. More.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take away; to detract; to withdraw; -- usually with from. If we did derogate from them whom their industry hath made great. Hooker. It derogates little from his fortitude, while it adds infinitely to the honor of his humanity. Burke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act beneath one-s rank, place, birth, or character; to degenerate. [R.] You are a fool granted; therefore your issues, being foolish, do not derogate. Shak. Would Charles X. derogate from his ancestors Would he be the degenerate scion of that royal line Hazlitt.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Diminished in value; dishonored; degraded. [R.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derogately": {
+      "word": "DEROGATELY",
+      "definitions": [
+        {
+          "text": "In a derogatory manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derogation": {
+      "word": "DEROGATION",
+      "definitions": [
+        {
+          "text": "The act of derogating, partly repealing, or lessening in value; disparagement; detraction; depreciation; -- followed by of, from, or to. I hope it is no derogation to the Christian religion. Locke. He counted it no derogation of his manhood to be seen to weep. F. W. Robertson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Stock Exch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An alteration of, or subtraction from, a contract for a sale of stocks.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "attrition",
+        "belittling",
+        "comedown",
+        "contempt",
+        "curtailment",
+        "cut",
+        "cutting",
+        "debasement",
+        "decadence",
+        "decadency",
+        "declension",
+        "declination",
+        "decline",
+        "decrease",
+        "decrement",
+        "decrial",
+        "deformation",
+        "degeneracy",
+        "degenerateness",
+        "degeneration",
+        "degradation",
+        "demotion",
+        "depletion",
+        "depravation",
+        "depravedness",
+        "depreciation",
+        "descent",
+        "deterioration",
+        "detraction",
+        "devolution",
+        "diminution",
+        "dip",
+        "disapproval",
+        "discrediting",
+        "disgrace",
+        "disparagement",
+        "downtrend",
+        "downturn",
+        "downward mobility",
+        "downward trend",
+        "drop",
+        "dying",
+        "ebb",
+        "effeteness",
+        "extraction",
+        "fading",
+        "failing",
+        "failure",
+        "failure of nerve",
+        "faint praise",
+        "fall",
+        "falling-off",
+        "impairment",
+        "indignity",
+        "involution",
+        "knocking",
+        "lapse",
+        "lessening",
+        "loss of tone",
+        "lukewarm support",
+        "minimizing",
+        "putting down",
+        "reduction",
+        "regression",
+        "remission",
+        "retraction",
+        "retrenchment",
+        "retrocession",
+        "retrogradation",
+        "retrogression",
+        "shortening",
+        "shrinkage",
+        "slighting",
+        "slippage",
+        "slump",
+        "sour grapes",
+        "truncation",
+        "wane"
+      ]
+    },
+    "derogator": {
+      "word": "DEROGATOR",
+      "definitions": [
+        {
+          "text": "A detractor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derogatorily": {
+      "word": "DEROGATORILY",
+      "definitions": [
+        {
+          "text": "In a derogatory manner; disparagingly. Aubrey.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derogatoriness": {
+      "word": "DEROGATORINESS",
+      "definitions": [
+        {
+          "text": "Quality of being derogatory.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derogatory": {
+      "word": "DEROGATORY",
+      "definitions": [
+        {
+          "text": "Tending to derogate, or lessen in value; expressing derogation; detracting; injurious; -- with from to, or unto. Acts of Parliament derogatory from the power of subsequent Parliaments bind not. Blackstone. His language was severely censured by some of his brother peers as derogatory to their other. Macaulay. Derogatory clause in a testament (Law), a sentence of secret character inserted by the testator alone, of which he reserves the knowledge to himself, with a condition that no will he may make thereafter shall be valid, unless this clause is inserted word for word; -- a precaution to guard against later wills extorted by violence, or obtained by suggestion.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abasing",
+        "abusive",
+        "back-biting",
+        "belittling",
+        "bitchy",
+        "calumniatory",
+        "calumnious",
+        "catty",
+        "censorious",
+        "contemptuous",
+        "contumelious",
+        "debasing",
+        "defamatory",
+        "deflating",
+        "degrading",
+        "demeaning",
+        "deprecatory",
+        "depreciating",
+        "depreciative",
+        "depreciatory",
+        "derisive",
+        "derisory",
+        "derogative",
+        "despiteful",
+        "detracting",
+        "detractory",
+        "diminishing",
+        "disadvantageous",
+        "discreditable",
+        "disdainful",
+        "dishonorable",
+        "disparaging",
+        "disreputable",
+        "humiliating",
+        "ignoble",
+        "ignominious",
+        "infamous",
+        "inglorious",
+        "insulting",
+        "libelous",
+        "lowering",
+        "malevolent",
+        "malicious",
+        "maligning",
+        "minimizing",
+        "mitigating",
+        "notorious",
+        "offensive",
+        "pejorative",
+        "ridiculing",
+        "scandalous",
+        "scurrile",
+        "scurrilous",
+        "seamy",
+        "shady",
+        "slanderous",
+        "slighting",
+        "sordid",
+        "spiteful",
+        "uncomplimentary",
+        "unpraiseworthy",
+        "unrespectable",
+        "unsavory",
+        "vilifying"
+      ]
+    },
+    "derotremata": {
+      "word": "DEROTREMATA",
+      "definitions": [
+        {
+          "text": "The tribe of aquatic Amphibia which includes Amphiuma, Menopoma, etc. They have permanent gill openings, but no external gills; -- called also Cryptobranchiata. [Written also Derotrema.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derre": {
+      "word": "DERRE",
+      "definitions": [
+        {
+          "text": "Dearer. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derrick": {
+      "word": "DERRICK",
+      "definitions": [
+        {
+          "text": "A mast, spar, or tall frame, supported at the top by stays or guys, with suitable tackle for hoisting heavy weights, as stones in building. Derrick crane, a combination of the derrick and the crane, having facility for hoisting and also for swinging the load horizontally.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "antenna tower",
+        "barbican",
+        "belfry",
+        "bell tower",
+        "campanile",
+        "colossus",
+        "column",
+        "crab",
+        "crane",
+        "cupola",
+        "dome",
+        "erector",
+        "fire tower",
+        "forklift",
+        "gantry crane",
+        "hoist",
+        "hydraulic tailgate",
+        "jack",
+        "jackscrew",
+        "lantern",
+        "lever",
+        "lift",
+        "lifter",
+        "lighthouse",
+        "martello",
+        "martello tower",
+        "mast",
+        "minaret",
+        "monument",
+        "obelisk",
+        "observation tower",
+        "pagoda",
+        "pilaster",
+        "pillar",
+        "pinnacle",
+        "pole",
+        "pylon",
+        "pyramid",
+        "shaft",
+        "skyscraper",
+        "spire",
+        "standpipe",
+        "steeple",
+        "stupa",
+        "tackle",
+        "television mast",
+        "tope",
+        "tour",
+        "tower",
+        "turret",
+        "water tower",
+        "windlass",
+        "windmill tower"
+      ]
+    },
+    "derring": {
+      "word": "DERRING",
+      "definitions": [
+        {
+          "text": "Daring or warlike. [Obs.] Drad for his derring doe and bloody deed. Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derringer": {
+      "word": "DERRINGER",
+      "definitions": [
+        {
+          "text": "A kind of short-barreled pocket pistol, of very large caliber, often carrying a half-ounce ball.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derth": {
+      "word": "DERTH",
+      "definitions": [
+        {
+          "text": "Dearth; scarcity. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dertrotheca": {
+      "word": "DERTROTHECA",
+      "definitions": [
+        {
+          "text": "The horny covering of the end of the bill of birds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dervishdervisedervis": {
+      "word": "DERVISH; DERVISE; DERVIS",
+      "definitions": [
+        {
+          "text": "A Turkish or Persian monk, especially one who professes extreme poverty and leads an austere life.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derworth": {
+      "word": "DERWORTH",
+      "definitions": [
+        {
+          "text": "Precious. [Obs.] Piers Plowman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

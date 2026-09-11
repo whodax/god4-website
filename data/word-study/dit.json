@@ -1,0 +1,871 @@
+{
+  "version": "v1",
+  "entries": {
+    "dit": {
+      "word": "DIT",
+      "definitions": [
+        {
+          "text": "A word; a decree. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ditty; a song. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To close up. [Obs.] Dr. H. More.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditation": {
+      "word": "DITATION",
+      "definitions": [
+        {
+          "text": "The act of making rich; enrichment. [Obs.] Bp. Hall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditch": {
+      "word": "DITCH",
+      "definitions": [
+        {
+          "text": "A trench made in the earth by digging, particularly a trench for draining wet land, for guarding or fencing inclosures, or for preventing an approach to a town or fortress. In the latter sense, it is called also a moat or a fosse.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any long, narrow receptacle for water on the surface of the earth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To dig a ditch or ditches in; to drain by a ditch or ditches; as, to ditch moist land.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To surround with a ditch. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To throw into a ditch; as, the engine was ditched and turned on its side.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To dig a ditch or ditches. Swift.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abandon",
+        "abri",
+        "abysm",
+        "abyss",
+        "adit",
+        "alight",
+        "approach trench",
+        "aqueduct",
+        "arch dam",
+        "arroyo",
+        "backstop",
+        "bamboo curtain",
+        "bank",
+        "bar",
+        "barrage",
+        "barrier",
+        "bear-trap dam",
+        "beaver dam",
+        "beg",
+        "boom",
+        "box canyon",
+        "breach",
+        "break",
+        "breakwater",
+        "breastwork",
+        "brick wall",
+        "buffer",
+        "bulkhead",
+        "bulwark",
+        "bunker",
+        "bury",
+        "cache",
+        "canal",
+        "canalization",
+        "canalize",
+        "canyon",
+        "carve",
+        "cashier",
+        "cast",
+        "cast aside",
+        "cast away",
+        "cast off",
+        "cavity",
+        "chamfer",
+        "channel",
+        "chap",
+        "chasm",
+        "check",
+        "chimney",
+        "chink",
+        "chisel",
+        "chuck",
+        "circumvent",
+        "cleave",
+        "cleft",
+        "cleuch",
+        "clough",
+        "cofferdam",
+        "col",
+        "come down",
+        "come in",
+        "communication trench",
+        "conceal",
+        "conduit",
+        "corrugate",
+        "coulee",
+        "couloir",
+        "countermine",
+        "coupure",
+        "course",
+        "cover",
+        "crack",
+        "cranny",
+        "crash-land",
+        "crevasse",
+        "crevice",
+        "crimp",
+        "cut",
+        "cut apart",
+        "cwm",
+        "dado",
+        "dam",
+        "deep-six",
+        "defense",
+        "defile",
+        "dell",
+        "descend",
+        "dike",
+        "discard",
+        "dispose of",
+        "ditch",
+        "donga",
+        "double",
+        "double sap",
+        "downwind",
+        "draw",
+        "duct",
+        "dugout",
+        "dump",
+        "earthwork",
+        "egress",
+        "eighty-six",
+        "eliminate",
+        "elude",
+        "embankment",
+        "engrave",
+        "ensconce",
+        "entrance",
+        "entrenchment",
+        "escape",
+        "evade",
+        "excavation",
+        "exit",
+        "fault",
+        "fence",
+        "fire trench",
+        "fissure",
+        "flaw",
+        "flume",
+        "flute",
+        "flying sap",
+        "fortified tunnel",
+        "fosse",
+        "foxhole",
+        "fracture",
+        "furrow",
+        "gallery",
+        "gap",
+        "gape",
+        "gash",
+        "gate",
+        "get around",
+        "get away from",
+        "get out of",
+        "get quit of",
+        "get rid of",
+        "get shut of",
+        "give away",
+        "goffer",
+        "gorge",
+        "gouge",
+        "gravity dam",
+        "groin",
+        "groove",
+        "gulch",
+        "gulf",
+        "gully",
+        "gutter",
+        "ha-ha",
+        "hide",
+        "hole",
+        "hydraulic-fill dam",
+        "incise",
+        "incision",
+        "ingress",
+        "iron curtain",
+        "jam",
+        "jettison",
+        "jetty",
+        "jilt",
+        "joint",
+        "junk",
+        "kennel",
+        "kloof",
+        "land",
+        "leak",
+        "leaping weir",
+        "levee",
+        "level off",
+        "light",
+        "logjam",
+        "milldam",
+        "mine",
+        "moat",
+        "mole",
+        "mound",
+        "notch",
+        "nullah",
+        "occult",
+        "open",
+        "opening",
+        "overshoot",
+        "pancake",
+        "parallel",
+        "parapet",
+        "part with",
+        "pass",
+        "passage",
+        "passageway",
+        "pleat",
+        "plow",
+        "portcullis",
+        "rabbet",
+        "rampart",
+        "ravine",
+        "reject",
+        "remove",
+        "rent",
+        "rifle",
+        "rift",
+        "rime",
+        "rive",
+        "roadblock",
+        "rock-fill dam",
+        "rupture",
+        "rut",
+        "sap",
+        "scissure",
+        "score",
+        "scrap",
+        "scratch",
+        "screen",
+        "seam",
+        "seawall",
+        "secrete",
+        "settle down",
+        "shake",
+        "shake off",
+        "shuffle out of",
+        "shutter dam",
+        "skirt",
+        "slit",
+        "slit trench",
+        "slot",
+        "slough",
+        "split",
+        "stone wall",
+        "streak",
+        "striate",
+        "sunk fence",
+        "talk down",
+        "throw away",
+        "throw out",
+        "throw over",
+        "throw overboard",
+        "toss overboard",
+        "touch down",
+        "trench",
+        "trough",
+        "troughing",
+        "troughway",
+        "tunnel",
+        "upwind",
+        "valley",
+        "void",
+        "wadi",
+        "wall",
+        "way",
+        "weir",
+        "wicket dam",
+        "work",
+        "wrinkle"
+      ]
+    },
+    "ditcher": {
+      "word": "DITCHER",
+      "definitions": [
+        {
+          "text": "One who digs ditches.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dite": {
+      "word": "DITE",
+      "definitions": [
+        {
+          "text": "To prepare for action or use; to make ready; to dight. [Obs.] His hideous club aloft he dites. Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diterebene": {
+      "word": "DITEREBENE",
+      "definitions": [
+        {
+          "text": "See Colophene.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dithecaldithecous": {
+      "word": "DITHECAL; DITHECOUS",
+      "definitions": [
+        {
+          "text": "Having two thecæ, cells, or compartments.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditheism": {
+      "word": "DITHEISM",
+      "definitions": [
+        {
+          "text": "The doctrine of those who maintain the existence of two gods or of two original principles (as in Manicheism), one good and one evil; dualism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acosmism",
+        "allotheism",
+        "anthropolatry",
+        "anthropomorphism",
+        "anthropotheism",
+        "autotheism",
+        "cosmotheism",
+        "deism",
+        "dualism",
+        "dyotheism",
+        "henotheism",
+        "hylotheism",
+        "monolatry",
+        "monotheism",
+        "multitheism",
+        "myriotheism",
+        "pantheism",
+        "physicomorphism",
+        "physitheism",
+        "polytheism",
+        "psychotheism",
+        "tetratheism",
+        "theism",
+        "theopantism",
+        "theriotheism",
+        "tritheism",
+        "zootheism"
+      ]
+    },
+    "ditheist": {
+      "word": "DITHEIST",
+      "definitions": [
+        {
+          "text": "One who holds the doctrine of ditheism; a dualist. Cudworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditheisticditheistical": {
+      "word": "DITHEISTIC; DITHEISTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to ditheism; dualistic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dithionic": {
+      "word": "DITHIONIC",
+      "definitions": [
+        {
+          "text": "Containing two equivalents of sulphur; as, dithionic acid. Dithionic acid (Chem.), an unstable substance, H2S2O6, known only in its solutions, and in certain well-defined salts.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dithyramb": {
+      "word": "DITHYRAMB",
+      "definitions": [
+        {
+          "text": "A kind of lyric poetry in honor of Bacchus, usually sung by a band of revelers to a flute accompaniment; hence, in general, a poem written in a wild irregular strain. Bentley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dithyrambic": {
+      "word": "DITHYRAMBIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or resembling, a dithyramb; wild and boisterous. \"Dithyrambic sallies.\" Longfellow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A dithyrambic poem; a dithyramb.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dithyrambus": {
+      "word": "DITHYRAMBUS",
+      "definitions": [
+        {
+          "text": "See Dithyramb.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dition": {
+      "word": "DITION",
+      "definitions": [
+        {
+          "text": "Dominion; rule. [Obs.] Evelyn.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditionary": {
+      "word": "DITIONARY",
+      "definitions": [
+        {
+          "text": "Under rule; subject; tributary. [Obs.] Chapman.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A subject; a tributary. [Obs.] Eden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditolyl": {
+      "word": "DITOLYL",
+      "definitions": [
+        {
+          "text": "A white, crystalline, aromatic hydrocarbon, C14H14, consisting of two radicals or residues of toluene.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditone": {
+      "word": "DITONE",
+      "definitions": [
+        {
+          "text": "The Greek major third, which comprehend two major tones (the modern major third contains one major and one minor whole tone).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditrichotomous": {
+      "word": "DITRICHOTOMOUS",
+      "definitions": [
+        {
+          "text": "Divided into twos or threes.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Dividing into double or treble ramifications; -- said of a leaf or stem. [R.] Loudon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditrochean": {
+      "word": "DITROCHEAN",
+      "definitions": [
+        {
+          "text": "Containing two trochees.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditrochee": {
+      "word": "DITROCHEE",
+      "definitions": [
+        {
+          "text": "A double trochee; a foot made up of two trochees.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditroite": {
+      "word": "DITROITE",
+      "definitions": [
+        {
+          "text": "An igneous rock composed of orthoclase, elæolite, and sodalite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dittander": {
+      "word": "DITTANDER",
+      "definitions": [
+        {
+          "text": "A kind of peppergrass (Lepidium latifolium).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dittied": {
+      "word": "DITTIED",
+      "definitions": [
+        {
+          "text": "Set, sung, or composed as a ditty; -- usually in composition. Who, with his soft pipe, and smooth-dittied song. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dittn": {
+      "word": "Ditt, n.",
+      "definitions": [
+        {
+          "text": "[Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditto": {
+      "word": "DITTO",
+      "definitions": [
+        {
+          "text": "The aforesaid thing; the same (as before). Often contracted to do., or to two \"turned commas\" (\"), or small marks. Used in bills, books of account, tables of names, etc., to save repetition. A spacious table in the center, and a variety of smaller dittos in the corners. Dickens.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "As before, or aforesaid; in the same manner; also.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "Doppelganger",
+        "Photostat",
+        "Xerox",
+        "accord",
+        "act like",
+        "actual thing",
+        "affect",
+        "afresh",
+        "again",
+        "agree",
+        "agree in opinion",
+        "agree with",
+        "alike",
+        "amount to",
+        "anew",
+        "as is",
+        "assume",
+        "balance",
+        "bis",
+        "bob",
+        "borrow",
+        "break even",
+        "burden",
+        "carbon",
+        "carbon copy",
+        "chant",
+        "chime in with",
+        "chorus",
+        "clone",
+        "close with",
+        "coequal",
+        "coequally",
+        "coextensively",
+        "coincide",
+        "coincidentally",
+        "come again",
+        "come to",
+        "come up to",
+        "compeer",
+        "concur",
+        "conform to",
+        "congruently",
+        "copy",
+        "correspond",
+        "correspondently",
+        "correspondingly",
+        "coterminously",
+        "counterfeit",
+        "counterpart",
+        "crib",
+        "da capo",
+        "de novo",
+        "dead ringer",
+        "do",
+        "do a repeat",
+        "do again",
+        "do like",
+        "do over",
+        "double",
+        "draw",
+        "dupe",
+        "duplicate",
+        "duplication",
+        "echo",
+        "encore",
+        "equal",
+        "equally",
+        "equipollent",
+        "equivalent",
+        "even",
+        "even off",
+        "exact counterpart",
+        "facsimile",
+        "fake",
+        "fall in with",
+        "fellow",
+        "forge",
+        "from the beginning",
+        "geminate",
+        "go along with",
+        "go like",
+        "go with",
+        "hectograph",
+        "hoke",
+        "hoke up",
+        "homograph",
+        "homonym",
+        "homophone",
+        "ibid",
+        "ibidem",
+        "idem",
+        "identical same",
+        "identically",
+        "imitate",
+        "ingeminate",
+        "just the same",
+        "keep pace with",
+        "knot",
+        "like",
+        "likewise",
+        "make like",
+        "manifold",
+        "match",
+        "match up with",
+        "mate",
+        "measure up to",
+        "meet",
+        "microcopy",
+        "microfilm",
+        "mimeo",
+        "mimeograph",
+        "mirror",
+        "model",
+        "multigraph",
+        "multiply by two",
+        "no other",
+        "none other",
+        "once more",
+        "opposite number",
+        "over",
+        "over again",
+        "parallel",
+        "parrot",
+        "peer",
+        "plagiarize",
+        "quadruplicate",
+        "quote",
+        "reach",
+        "redo",
+        "redouble",
+        "reduplicate",
+        "reduplication",
+        "reecho",
+        "reflect",
+        "refrain",
+        "regurgitate",
+        "reincarnate",
+        "renew",
+        "repeat",
+        "repetend",
+        "repetition",
+        "replica",
+        "replicate",
+        "replication",
+        "representation",
+        "reproduce",
+        "reproduction",
+        "revive",
+        "ritornello",
+        "rival",
+        "run abreast",
+        "run to",
+        "same here",
+        "say again",
+        "selfsame",
+        "side with",
+        "simulate",
+        "spit and image",
+        "spitting image",
+        "stack up with",
+        "stat",
+        "strike in with",
+        "synonym",
+        "synonymously",
+        "the same",
+        "the same difference",
+        "the same way",
+        "tie",
+        "touch",
+        "trace",
+        "transcribe",
+        "triplicate",
+        "twice over",
+        "twin",
+        "two times",
+        "undersong",
+        "very image",
+        "very same"
+      ]
+    },
+    "dittology": {
+      "word": "DITTOLOGY",
+      "definitions": [
+        {
+          "text": "A double reading, or twofold interpretation, as of a Scripture text. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditty": {
+      "word": "DITTY",
+      "definitions": [
+        {
+          "text": "To sing; to warble a little tune. Beasts fain would sing; birds ditty to their notes. Herbert.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Brautlied",
+        "Christmas carol",
+        "Kunstlied",
+        "Liebeslied",
+        "Volkslied",
+        "alba",
+        "ana",
+        "anthem",
+        "art song",
+        "aubade",
+        "ballad",
+        "ballade",
+        "ballata",
+        "barcarole",
+        "blues",
+        "blues song",
+        "boat song",
+        "bridal hymn",
+        "brindisi",
+        "calypso",
+        "canso",
+        "canticle",
+        "canzone",
+        "canzonet",
+        "canzonetta",
+        "carol",
+        "cavatina",
+        "chanson",
+        "chant",
+        "chantey",
+        "croon",
+        "croon song",
+        "descant",
+        "dirge",
+        "drinking song",
+        "epithalamium",
+        "folk song",
+        "hymeneal",
+        "hymn",
+        "lay",
+        "lied",
+        "lilt",
+        "love song",
+        "love-lilt",
+        "matin",
+        "minstrel song",
+        "minstrelsy",
+        "national anthem",
+        "prothalamium",
+        "serena",
+        "serenade",
+        "serenata",
+        "song",
+        "theme song",
+        "torch song",
+        "war song",
+        "wedding song"
+      ]
+    },
+    "dittybag": {
+      "word": "DITTY-BAG",
+      "definitions": [
+        {
+          "text": "A sailor's small bag to hold thread, needles, tape, etc.; -- also called sailor's housewife.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dittybox": {
+      "word": "DITTY-BOX",
+      "definitions": [
+        {
+          "text": "A small box to hold a sailor's thread, needless, comb, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,10 +1,17 @@
 /* ===== SCRIPTURE WORD STUDY STATIC DICTIONARY PROVIDER ===== */
 var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
   var shardRequests = Object.create(null);
+  var reservedShardNames = new Set(['con','prn','aux','nul','com1','com2','com3','com4','com5','com6','com7','com8','com9','lpt1','lpt2','lpt3','lpt4','lpt5','lpt6','lpt7','lpt8','lpt9']);
+
+  function normalizeShardName(shard){
+    var normalized = String(shard || '').toLowerCase();
+    if(!normalized || normalized.endsWith('_')) return normalized;
+    return reservedShardNames.has(normalized) ? normalized + '_' : normalized;
+  }
 
   function getShardName(term){
     var normalized = WordStudyProvider.normalizeLookupTerm(term);
-    return normalized.slice(0, 2);
+    return normalizeShardName(normalized.slice(0, 2));
   }
 
   function getShardNames(term){
@@ -12,7 +19,7 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
     var parent = normalized.slice(0, 2);
     var child = normalized.slice(0, 3);
     var grandchild = normalized.slice(0, 4);
-    return [parent, child, grandchild].filter(function(shard, index, shards){ return shard && shards.indexOf(shard) === index; });
+    return [parent, child, grandchild].map(normalizeShardName).filter(function(shard, index, shards){ return shard && shards.indexOf(shard) === index; });
   }
 
   function unavailable(context, reason){

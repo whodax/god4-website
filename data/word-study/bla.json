@@ -1,0 +1,7398 @@
+{
+  "version": "v1",
+  "entries": {
+    "blab": {
+      "word": "BLAB",
+      "definitions": [
+        {
+          "text": "To utter or tell unnecessarily, or in a thoughtless manner; to publish (secrets or trifles) without reserve or discretion. Udall. And yonder a vile physician blabbing The case of his patient. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To talk thoughtlessly or without discretion; to tattle; to tell tales. She must burst or blab. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "One who blabs; a babbler; a telltale. \"Avoided as a blab.\" Milton. For who will open himself to a blab or a babbler. Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "agreeable rattle",
+        "babble",
+        "babblement",
+        "babbler",
+        "bavardage",
+        "be indiscreet",
+        "be unguarded",
+        "bear witness against",
+        "betray",
+        "betray a confidence",
+        "betrayer",
+        "bibble-babble",
+        "big talker",
+        "blabber",
+        "blabberer",
+        "blabbermouth",
+        "blah-blah",
+        "blather",
+        "blatherer",
+        "blether",
+        "blethers",
+        "blow the whistle",
+        "blurt",
+        "blurt out",
+        "broadcast",
+        "cackle",
+        "caquet",
+        "caqueterie",
+        "chat",
+        "chatter",
+        "chatterbox",
+        "chatterer",
+        "chitter-chatter",
+        "clack",
+        "clatter",
+        "delator",
+        "disclose",
+        "dither",
+        "divulge",
+        "expose",
+        "fink",
+        "gab",
+        "gabber",
+        "gabble",
+        "gabbler",
+        "gas",
+        "gasbag",
+        "gibber",
+        "gibble-gabble",
+        "gibble-gabbler",
+        "give away",
+        "go on",
+        "gossip",
+        "great talker",
+        "guff",
+        "gush",
+        "haver",
+        "hot air",
+        "hot-air artist",
+        "idle chatterer",
+        "idle talk",
+        "inform",
+        "inform against",
+        "inform on",
+        "informer",
+        "jabber",
+        "jabberer",
+        "jaw",
+        "jay",
+        "leak",
+        "let drop",
+        "let fall",
+        "let slip",
+        "magpie",
+        "mere talk",
+        "moulin a paroles",
+        "narc",
+        "natter",
+        "noise about",
+        "nonsense talk",
+        "palaver",
+        "patter",
+        "patterer",
+        "peach",
+        "peacher",
+        "pour forth",
+        "prate",
+        "prater",
+        "prating",
+        "prattle",
+        "prattler",
+        "prittle-prattle",
+        "ramble on",
+        "rat",
+        "rattle",
+        "rattle on",
+        "reel off",
+        "reveal",
+        "reveal a secret",
+        "rumor",
+        "run on",
+        "sell out",
+        "sing",
+        "snitch",
+        "snitch on",
+        "snitcher",
+        "spill",
+        "spill the beans",
+        "spout",
+        "spout off",
+        "spy",
+        "squeal",
+        "squealer",
+        "stool",
+        "stool pigeon",
+        "stoolie",
+        "talebearer",
+        "talk",
+        "talk away",
+        "talk nonsense",
+        "talk on",
+        "talkee-talkee",
+        "tattle",
+        "tattle on",
+        "tattler",
+        "tattletale",
+        "tell on",
+        "tell secrets",
+        "tell tales",
+        "telltale",
+        "testify against",
+        "tittle-tattle",
+        "turn informer",
+        "twaddle",
+        "twattle",
+        "waffle",
+        "whistle-blower",
+        "windbag",
+        "windjammer",
+        "word-slinger",
+        "yak",
+        "yakkety-yak"
+      ]
+    },
+    "blabber": {
+      "word": "BLABBER",
+      "definitions": [
+        {
+          "text": "A tattler; a telltale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "absurdity",
+        "amphigory",
+        "babble",
+        "babblement",
+        "balderdash",
+        "bavardage",
+        "be indiscreet",
+        "be unguarded",
+        "betray",
+        "betray a confidence",
+        "betrayer",
+        "bibble-babble",
+        "blab",
+        "blabberer",
+        "blabbermouth",
+        "blah-blah",
+        "blather",
+        "blether",
+        "blethers",
+        "blurt",
+        "blurt out",
+        "bombast",
+        "bull",
+        "bullshit",
+        "cackle",
+        "caquet",
+        "caqueterie",
+        "chat",
+        "chatter",
+        "chatterer",
+        "chitter-chatter",
+        "clack",
+        "claptrap",
+        "clatter",
+        "delator",
+        "dither",
+        "double-talk",
+        "drivel",
+        "drool",
+        "fiddle-faddle",
+        "fiddledeedee",
+        "fink",
+        "flummery",
+        "folderol",
+        "fudge",
+        "fustian",
+        "gab",
+        "gabber",
+        "gabble",
+        "galimatias",
+        "gammon",
+        "gas",
+        "gibber",
+        "gibberish",
+        "gibble-gabble",
+        "give away",
+        "go on",
+        "gobbledygook",
+        "gossip",
+        "guff",
+        "gush",
+        "haver",
+        "hocus-pocus",
+        "hot air",
+        "humbug",
+        "idle talk",
+        "inform",
+        "inform on",
+        "informer",
+        "jabber",
+        "jabberer",
+        "jargon",
+        "jaw",
+        "leak",
+        "let drop",
+        "let fall",
+        "let slip",
+        "magpie",
+        "mere talk",
+        "mumbo jumbo",
+        "narc",
+        "narrishkeit",
+        "natter",
+        "niaiserie",
+        "nonsense",
+        "nonsense talk",
+        "pack of nonsense",
+        "palaver",
+        "patter",
+        "peach",
+        "peacher",
+        "piffle",
+        "pour forth",
+        "prate",
+        "prater",
+        "prating",
+        "prattle",
+        "prattler",
+        "prittle-prattle",
+        "ramble on",
+        "rant",
+        "rat",
+        "rattle",
+        "rattle on",
+        "reel off",
+        "reveal a secret",
+        "rigamarole",
+        "rigmarole",
+        "rodomontade",
+        "rubbish",
+        "run on",
+        "sing",
+        "skimble-skamble",
+        "snitch",
+        "snitcher",
+        "spill",
+        "spill the beans",
+        "spout",
+        "spout off",
+        "spy",
+        "squeal",
+        "squealer",
+        "stool",
+        "stool pigeon",
+        "stoolie",
+        "stuff and nonsense",
+        "stultiloquence",
+        "talebearer",
+        "talk",
+        "talk away",
+        "talk nonsense",
+        "talk on",
+        "talkee-talkee",
+        "tattle",
+        "tattle on",
+        "tattler",
+        "tattletale",
+        "tell on",
+        "tell secrets",
+        "tell tales",
+        "telltale",
+        "tittle-tattle",
+        "trash",
+        "trumpery",
+        "twaddle",
+        "twattle",
+        "twiddle-twaddle",
+        "vapor",
+        "vaporing",
+        "waffle",
+        "waffling",
+        "whistle-blower",
+        "yak",
+        "yakkety-yak"
+      ]
+    },
+    "black": {
+      "word": "BLACK",
+      "definitions": [
+        {
+          "text": "Destitute of light, or incapable of reflecting it; of the color of soot or coal; of the darkest or a very dark color, the opposite of white; characterized by such a color; as, black cloth; black hair or eyes. O night, with hue so black! Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "In a less literal sense: Enveloped or shrouded in darkness; very dark or gloomy; as, a black night; the heavens black with clouds. I spy a black, suspicious, threatening cloud. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fig.: Dismal, gloomy, or forbidding, like darkness; destitute of moral light or goodness; atrociously wicked; cruel; mournful; calamitous; horrible. \"This day's black fate.\" \"Black villainy.\" \"Arise, black vengeance.\" \"Black day.\" \"Black despair.\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Expressing menace, or discontent; threatening; sullen; foreboding; as, to regard one with black looks. black-eyed, black-faced, black-haired, black-visaged. Black act, the English statute 9 George I, which makes it a felony to appear armed in any park or warren, etc., or to hunt or steal deer, etc., with the face blackened or disguised. Subsequent acts inflicting heavy penalties for malicious injuries to cattle and machinery have been called black acts. (Holacanthus tricolor), with the head and tail yellow, and the middle of the body black. used in pyrotechnics, etc. orientalis). accompanied with a mixture of blue. \"To pinch the slatterns black and blue.\" Hudibras. Schoeniclus) of Europe. species of caterpillar. allied to the sable, but larger. See Fisher. distinction from dairy cattle. [Eng.] -- Black cherry. See under Cherry. magnesia. consisting essentially of a solution of opium in vinegar. and crossbones; a signal of defiance. turnips. obtained by deflagrating tartar with half its weight of niter. Brande & C. two-winged fly of the genus Simulium of several species, exceedingly abundant and troublesome in the northern forests. The larvæ are aquatic. (b) A black plant louse, as the bean aphis (A. fabæ). Baden and Würtemburg, in Germany; a part of the ancient Hercynian forest. Heath grouse. Gerardi, growing on salt marshes, and making good hay. Tupelo. purple or \"black\" grape. elongatus), of the sucker family; the Missouri sucker. the natives. deserving of censure or punishment; -- esp. a list of persons",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Sullenly; threateningly; maliciously; so as to produce blackness.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "That which is destitute of light or whiteness; the darkest color, or rather a destitution of all color; as, a cloth has a good black. Black is the badge of hell, The hue of dungeons, and the suit of night. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A black pigment or dye.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A negro; a person whose skin is of a black color, or shaded with black; esp. a member or descendant of certain African races.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A black garment or dress; as, she wears black; pl. (Obs.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Mourning garments of a black color; funereal drapery. Friends weeping, and blacks, and obsequies, and the like show death terrible. Bacon. That was the full time they used to wear blacks for the death of their fathers. Sir T. North.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The part of a thing which is distinguished from the rest by being black. The black or sight of the eye. Sir K. Digby.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stain; a spot; a smooch. Defiling her white lawn of chastity with ugly blacks of lust. Rowley. Black and white, writing or print; as, I must have that statement in black and white. ivory or bones. When ground it is the chief ingredient of the ink used in copperplate printing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make black; to blacken; to soil; to sully. They have their teeth blacked, both men and women, for they say a dog hath his teeth white, therefore they will black theirs. Hakluyt. Sins which black thy soul. J. Fletcher.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make black and shining, as boots or a stove, by applying blacking and then polishing with a brush.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "American Indian",
+        "Amerind",
+        "Australian aborigine",
+        "Brunswick black",
+        "Bushman",
+        "Caucasian",
+        "Indian",
+        "Malayan",
+        "Mister Charley",
+        "Mongolian",
+        "Negrillo",
+        "Negrito",
+        "Negro",
+        "Oriental",
+        "Red Indian",
+        "Stygian",
+        "WASP",
+        "abominable",
+        "absolute",
+        "angry",
+        "aniline black",
+        "apocalyptic",
+        "arrant",
+        "asperse",
+        "atramentous",
+        "atrocious",
+        "awful",
+        "bad",
+        "bad-tempered",
+        "baleful",
+        "ban",
+        "baneful",
+        "base",
+        "beamless",
+        "beetle-browed",
+        "black as coal",
+        "black as ebony",
+        "black as ink",
+        "black as midnight",
+        "black as night",
+        "black man",
+        "black race",
+        "black-browed",
+        "black-skinned",
+        "blacken",
+        "blackfellow",
+        "blackguardly",
+        "blackish",
+        "blacklist",
+        "blackness",
+        "blamable",
+        "blameworthy",
+        "bleak",
+        "blue black",
+        "bodeful",
+        "boding",
+        "bone black",
+        "boy",
+        "boycott",
+        "brown man",
+        "brunet",
+        "burrhead",
+        "calamitous",
+        "caliginous",
+        "calumniate",
+        "carbon black",
+        "cataclysmal",
+        "cataclysmic",
+        "catastrophic",
+        "charcoal",
+        "chrome black",
+        "clouded",
+        "coal",
+        "coal-black",
+        "coaly",
+        "colored",
+        "colored person",
+        "complete",
+        "contuse",
+        "coon",
+        "corbeau",
+        "crape",
+        "criminal",
+        "crow",
+        "cypress",
+        "cypress lawn",
+        "damnable",
+        "dark",
+        "dark as night",
+        "dark as pitch",
+        "dark-complexioned",
+        "dark-skinned",
+        "darkling",
+        "darkness",
+        "darksome",
+        "darky",
+        "dastardly",
+        "deadly",
+        "deathly",
+        "deep black",
+        "deep mourning",
+        "defame",
+        "dejected",
+        "depressing",
+        "depressive",
+        "destructive",
+        "diabolical",
+        "dire",
+        "disastrous",
+        "disgraceful",
+        "dismal",
+        "dispiriting",
+        "doomful",
+        "dour",
+        "downright",
+        "drear",
+        "drearisome",
+        "dreary",
+        "drop black",
+        "dumpish",
+        "dusky",
+        "ebon",
+        "ebony",
+        "eclipsed",
+        "embargo",
+        "evil",
+        "evil-starred",
+        "execrable",
+        "fatal",
+        "fateful",
+        "felonious",
+        "filthy",
+        "flagitious",
+        "flagrant",
+        "foreboding",
+        "foul",
+        "frowning",
+        "funebrial",
+        "funereal",
+        "furious",
+        "gloomy",
+        "glowering",
+        "glum",
+        "gook",
+        "grave",
+        "gray",
+        "grievous",
+        "grim",
+        "grubby",
+        "grum",
+        "hateful",
+        "heinous",
+        "hellish",
+        "honky",
+        "hyacinthine",
+        "ill",
+        "ill-boding",
+        "ill-fated",
+        "ill-omened",
+        "ill-starred",
+        "improper",
+        "impure",
+        "inaccurate",
+        "inauspicious",
+        "inexpedient",
+        "infamous",
+        "inferior",
+        "infernal",
+        "iniquitous",
+        "ink",
+        "ink-black",
+        "inkiness",
+        "inky",
+        "insidious",
+        "interdict",
+        "invalid",
+        "ivory black",
+        "japan",
+        "jet",
+        "jetty",
+        "jigaboo",
+        "jungle bunny",
+        "knavish",
+        "lampblack",
+        "libel",
+        "low",
+        "lowering",
+        "malevolent",
+        "malicious",
+        "malignant",
+        "melancholy",
+        "melanian",
+        "melanic",
+        "melanism",
+        "melanistic",
+        "melano",
+        "melanotic",
+        "melanous",
+        "menacing",
+        "midnight",
+        "monstrous",
+        "moodish",
+        "moody",
+        "mopey",
+        "moping",
+        "mopish",
+        "morose",
+        "mourning",
+        "mourning band",
+        "mumpish",
+        "nasty",
+        "naughty",
+        "nefarious",
+        "nigger",
+        "niggra",
+        "night",
+        "night-black",
+        "night-clad",
+        "night-cloaked",
+        "night-dark",
+        "night-enshrouded",
+        "night-filled",
+        "night-mantled",
+        "night-veiled",
+        "nigrescence",
+        "nigritude",
+        "nigrous",
+        "obfuscated",
+        "obscure",
+        "obscured",
+        "occulted",
+        "of evil portent",
+        "ofay",
+        "ominous",
+        "onyx",
+        "oppressive",
+        "out-and-out",
+        "outrageous",
+        "outright",
+        "paleface",
+        "peccant",
+        "perfect",
+        "perfidious",
+        "pitch",
+        "pitch-black",
+        "pitch-dark",
+        "pitchy",
+        "portending",
+        "portentous",
+        "positive",
+        "pygmy",
+        "rank",
+        "raven",
+        "raven-black",
+        "rayless",
+        "red man",
+        "redskin",
+        "regular",
+        "reprehensible",
+        "reprobate",
+        "resentful",
+        "ruinous",
+        "sable",
+        "sackcloth",
+        "sackcloth and ashes",
+        "saturnine",
+        "scandalous",
+        "scowling",
+        "scurvy",
+        "shameful",
+        "sinful",
+        "sinister",
+        "slander",
+        "slant-eye",
+        "slate",
+        "sloe",
+        "sloe-black",
+        "sloe-colored",
+        "slur",
+        "smear",
+        "smoke",
+        "smut",
+        "soily",
+        "solemn",
+        "somber",
+        "sombrous",
+        "soot",
+        "sooty",
+        "spade",
+        "squalid",
+        "starless",
+        "sulky",
+        "sullen",
+        "sunless",
+        "surly",
+        "swart",
+        "swarthy",
+        "tar",
+        "tar-black",
+        "tarry",
+        "tenebrious",
+        "tenebrose",
+        "tenebrous",
+        "the Man",
+        "thoroughgoing",
+        "threatening",
+        "throw mud at",
+        "traduce",
+        "tragic",
+        "treacherous",
+        "triste",
+        "unclean",
+        "uncleanly",
+        "unconscionable",
+        "unfavorable",
+        "unforgivable",
+        "unfortunate",
+        "unhealthy",
+        "unilluminated",
+        "unkind",
+        "unlighted",
+        "unlit",
+        "unlucky",
+        "unpardonable",
+        "unpleasant",
+        "unprincipled",
+        "unpromising",
+        "unpropitious",
+        "unscrupulous",
+        "unskillful",
+        "unspeakable",
+        "untoward",
+        "unworthy",
+        "vicious",
+        "vile",
+        "vilify",
+        "villainous",
+        "weariful",
+        "wearisome",
+        "weary",
+        "weeds",
+        "white",
+        "white man",
+        "whitey",
+        "wicked",
+        "wrathful",
+        "wreckful",
+        "wrong",
+        "yellow man",
+        "yew"
+      ]
+    },
+    "blackamoor": {
+      "word": "BLACKAMOOR",
+      "definitions": [
+        {
+          "text": "A negro or negress. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackart": {
+      "word": "BLACK ART",
+      "definitions": [
+        {
+          "text": "The art practiced by conjurers and witches; necromancy; conjuration; magic. idea that the latter term was derived from niger black, instead of nekro`s, a dead person, and mantei`a, divination. Wright.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackavised": {
+      "word": "BLACK-A-VISED",
+      "definitions": [
+        {
+          "text": "Dark-visaged; swart.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackball": {
+      "word": "BLACKBALL",
+      "definitions": [
+        {
+          "text": "A composition for blacking shoes, boots, etc.; also, one for taking impressions of engraved work.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ball of black color, esp. one used as a negative in voting; -- in this sense usually two words.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To vote against, by putting a black ball into a ballot box; to reject or exclude, as by voting against with black balls; to ostracize. He was blackballed at two clubs in succession. Thackeray.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To blacken (leather, shoes, etc.) with blacking.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "ban",
+        "banish",
+        "banishment",
+        "blackballing",
+        "blacklist",
+        "boycott",
+        "boycottage",
+        "cast out",
+        "categorically reject",
+        "complaint",
+        "cut",
+        "deport",
+        "dim view",
+        "disagreement",
+        "disallow",
+        "disappointment",
+        "disapprobation",
+        "disapproval",
+        "disapprove",
+        "disapprove of",
+        "discontent",
+        "discontentedness",
+        "discontentment",
+        "disenchantment",
+        "disesteem",
+        "disfavor",
+        "disfellowship",
+        "disgruntlement",
+        "disillusion",
+        "disillusionment",
+        "displeasure",
+        "disrespect",
+        "dissatisfaction",
+        "dissent",
+        "dissent from",
+        "distaste",
+        "exclude",
+        "exclusion",
+        "excommunicate",
+        "exile",
+        "expatriate",
+        "expel",
+        "extradite",
+        "frown at",
+        "frown down",
+        "frown upon",
+        "fugitate",
+        "grimace at",
+        "indignation",
+        "look askance at",
+        "look black upon",
+        "low estimation",
+        "low opinion",
+        "not approve",
+        "not go for",
+        "not hear of",
+        "not hold with",
+        "object",
+        "object to",
+        "objection",
+        "oppose",
+        "opposition",
+        "opposure",
+        "ostracism",
+        "ostracization",
+        "ostracize",
+        "outlaw",
+        "proscribe",
+        "proscription",
+        "protest",
+        "reject",
+        "rejection",
+        "relegate",
+        "rusticate",
+        "say no to",
+        "send away",
+        "send down",
+        "send to Coventry",
+        "snub",
+        "spurn",
+        "take exception to",
+        "think ill of",
+        "think little of",
+        "thrust out",
+        "thumb down",
+        "thumbs-down",
+        "transport",
+        "unhappiness",
+        "view with disfavor"
+      ]
+    },
+    "blackband": {
+      "word": "BLACKBAND",
+      "definitions": [
+        {
+          "text": "An earthy carbonate of iron containing considerable carbonaceous matter; -- valuable as an iron ore.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackbass": {
+      "word": "BLACK BASS",
+      "definitions": [
+        {
+          "text": "An edible, fresh-water fish of the United States, of the genus Micropterus. the small-mouthed kind is M. dolomiei; the largemouthed is M. salmoides.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "The sea bass. See Blackfish, 3.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackberry": {
+      "word": "BLACKBERRY",
+      "definitions": [
+        {
+          "text": "The fruit of several species of bramble (Rubus); also, the plant itself. Rubus fruticosus is the blackberry of England; R. villosus and R. Canadensis are the high blackberry and low blackberry of the United States. There are also other kinds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackbird": {
+      "word": "BLACKBIRD",
+      "definitions": [
+        {
+          "text": "In England, a species of thrush (Turdus merula), a singing bird with a fin note; the merle. In America the name is given to several birds, as the Quiscalus versicolor, or crow blackbird; the Agelæus phoeniceus, or red-winged blackbird; the cowbird; the rusty grackle, etc. See Redwing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackbirder": {
+      "word": "BLACKBIRDER",
+      "definitions": [
+        {
+          "text": "A slave ship; a slaver. [Colloq.] F. T. Bullen.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackbirding": {
+      "word": "BLACKBIRDING",
+      "definitions": [
+        {
+          "text": "The kidnaping of negroes or Polynesians to be sold as slaves.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or practice of collecting natives of the islands near Queensland for service on the Queensland sugar plantations. [Australia]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackboard": {
+      "word": "BLACKBOARD",
+      "definitions": [
+        {
+          "text": "A broad board painted black, or any black surface on which writing, drawing, or the working of mathematical problems can be done with chalk or crayons. It is much used in schools.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackbook": {
+      "word": "BLACK BOOK",
+      "definitions": [
+        {
+          "text": "One of several books of a political character, published at different times and for different purposes; -- so called either from the color of the binding, or from the character of the contents.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A book compiled in the twelfth century, containing a description of the court of exchequer of England, an official statement of the revenues of the crown, etc.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A book containing details of the enormities practiced in the English monasteries and religious houses, compiled by order of their visitors under Henry VIII., to hasten their dissolution.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A book of admiralty law, of the highest authority, compiled in the reign of Edw. III. Bouvier. Wharton.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A book kept for the purpose of registering the names of persons liable to censure or punishment, as in the English universities, or the English armies.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Any book which treats of necromancy.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackbrowed": {
+      "word": "BLACK-BROWED",
+      "definitions": [
+        {
+          "text": "Having black eyebrows. Hence: Gloomy; dismal; threatening; forbidding. Shak. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackburnianwarbler": {
+      "word": "BLACKBURNIAN WARBLER",
+      "definitions": [
+        {
+          "text": "A beautiful warbler of the United States (Dendroica Blackburniæ). The male is strongly marked with orange, yellow, and black on the head and neck, and has an orange-yellow breast.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackcap": {
+      "word": "BLACKCAP",
+      "definitions": [
+        {
+          "text": "(Zoöl.) (a) A small European song bird (Sylvia atricapilla), with a black crown; the mock nightingale. (b) An American titmouse (Parus atricapillus); the chickadee.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Cookery)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An apple roasted till black, to be served in a dish of boiled custard.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The black raspberry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackcoat": {
+      "word": "BLACKCOAT",
+      "definitions": [
+        {
+          "text": "A clergyman; -- familiarly so called, as a soldier is sometimes called a redcoat or a bluecoat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackcock": {
+      "word": "BLACKCOCK",
+      "definitions": [
+        {
+          "text": "The male of the European black grouse (Tetrao tetrix, Linn.); - - so called by sportsmen. The female is called gray hen. See Heath grouse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackdeath": {
+      "word": "BLACK DEATH",
+      "definitions": [
+        {
+          "text": "A pestilence which ravaged Europe and Asia in the fourteenth century.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "African lethargy",
+        "Asiatic cholera",
+        "Chagres fever",
+        "German measles",
+        "Haverhill fever",
+        "acute articular rheumatism",
+        "ague",
+        "alkali disease",
+        "ambulatory plague",
+        "amebiasis",
+        "amebic dysentery",
+        "anthrax",
+        "bacillary dysentery",
+        "bastard measles",
+        "black fever",
+        "black plague",
+        "blackwater fever",
+        "breakbone fever",
+        "brucellosis",
+        "bubonic plague",
+        "cachectic fever",
+        "cellulocutaneous plague",
+        "cerebral rheumatism",
+        "chicken pox",
+        "cholera",
+        "cowpox",
+        "dandy fever",
+        "deer fly fever",
+        "defervescing plague",
+        "dengue",
+        "dengue fever",
+        "diphtheria",
+        "dumdum fever",
+        "dysentery",
+        "elephantiasis",
+        "encephalitis lethargica",
+        "enteric fever",
+        "epidemic",
+        "epiphytotic",
+        "epizootic",
+        "erysipelas",
+        "famine fever",
+        "five-day fever",
+        "flu",
+        "frambesia",
+        "glandular fever",
+        "glandular plague",
+        "grippe",
+        "hansenosis",
+        "hemorrhagic plague",
+        "hepatitis",
+        "herpes",
+        "herpes simplex",
+        "herpes zoster",
+        "histoplasmosis",
+        "hookworm",
+        "hydrophobia",
+        "infantile paralysis",
+        "infectious mononucleosis",
+        "inflammatory rheumatism",
+        "influenza",
+        "jail fever",
+        "jungle rot",
+        "kala azar",
+        "kissing disease",
+        "larval plague",
+        "lepra",
+        "leprosy",
+        "leptospirosis",
+        "loa loa",
+        "loaiasis",
+        "lockjaw",
+        "madness",
+        "malaria",
+        "malarial fever",
+        "marsh fever",
+        "measles",
+        "meningitis",
+        "milzbrand",
+        "mumps",
+        "murrain",
+        "ornithosis",
+        "osteomyelitis",
+        "pandemia",
+        "pandemic",
+        "paratyphoid fever",
+        "parotitis",
+        "parrot fever",
+        "pertussis",
+        "pest",
+        "pesthole",
+        "pestilence",
+        "plague",
+        "plague spot",
+        "pneumonia",
+        "pneumonic plague",
+        "polio",
+        "poliomyelitis",
+        "polyarthritis rheumatism",
+        "ponos",
+        "premonitory plague",
+        "psittacosis",
+        "rabbit fever",
+        "rabies",
+        "rat-bite fever",
+        "relapsing fever",
+        "rheumatic fever",
+        "rickettsialpox",
+        "ringworm",
+        "rubella",
+        "rubeola",
+        "scarlatina",
+        "scarlet fever",
+        "schistosomiasis",
+        "scourge",
+        "septic sore throat",
+        "septicemic plague",
+        "shingles",
+        "siderating plague",
+        "sleeping sickness",
+        "sleepy sickness",
+        "smallpox",
+        "snail fever",
+        "splenic fever",
+        "spotted fever",
+        "strep throat",
+        "swamp fever",
+        "tetanus",
+        "thrush",
+        "tinea",
+        "trench fever",
+        "trench mouth",
+        "tuberculosis",
+        "tularemia",
+        "typhoid",
+        "typhoid fever",
+        "typhus",
+        "typhus fever",
+        "undulant fever",
+        "vaccinia",
+        "varicella",
+        "variola",
+        "venereal disease",
+        "viral dysentery",
+        "white plague",
+        "whooping cough",
+        "yaws",
+        "yellow fever",
+        "yellow jack",
+        "zona",
+        "zoster"
+      ]
+    },
+    "blacken": {
+      "word": "BLACKEN",
+      "definitions": [
+        {
+          "text": "To make or render black. While the long funerals blacken all the way. Pope",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make dark; to darken; to cloud. \"Blackened the whole heavens.\" South.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To defame; to sully, as reputation; to make infamous; as, vice blackens the character. malign; asperse.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To grow black or dark.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abuse",
+        "asperse",
+        "attaint",
+        "bark at",
+        "becloud",
+        "bedarken",
+        "bedaub",
+        "bedim",
+        "begloom",
+        "begrime",
+        "berate",
+        "besmear",
+        "besmirch",
+        "besmoke",
+        "besmutch",
+        "besoil",
+        "bespatter",
+        "bestain",
+        "betongue",
+        "black",
+        "black out",
+        "blackwash",
+        "block the light",
+        "blot",
+        "blot out",
+        "blotch",
+        "blow upon",
+        "blur",
+        "brand",
+        "brown",
+        "call names",
+        "cast a shadow",
+        "cast aspersions on",
+        "censure",
+        "charcoal",
+        "cloud",
+        "cloud over",
+        "cork",
+        "darken",
+        "darken over",
+        "daub",
+        "defame",
+        "defile",
+        "denigrate",
+        "dim",
+        "dim out",
+        "dinge",
+        "dirty",
+        "disapprove",
+        "discolor",
+        "discredit",
+        "disparage",
+        "ebonize",
+        "eclipse",
+        "encloud",
+        "encompass with shadow",
+        "engage in personalities",
+        "execrate",
+        "expose",
+        "expose to infamy",
+        "fulminate against",
+        "gibbet",
+        "gloom",
+        "hang in effigy",
+        "heap dirt upon",
+        "ink",
+        "jaw",
+        "libel",
+        "load with reproaches",
+        "malign",
+        "mark",
+        "melanize",
+        "muckrake",
+        "murk",
+        "nigrify",
+        "obfuscate",
+        "obnubilate",
+        "obscure",
+        "obumbrate",
+        "occult",
+        "occultate",
+        "overcast",
+        "overcloud",
+        "overshadow",
+        "oversmoke",
+        "pillory",
+        "rag",
+        "rail at",
+        "rate",
+        "rave against",
+        "reprimand",
+        "revile",
+        "scorch",
+        "sear",
+        "shade",
+        "shadow",
+        "singe",
+        "slander",
+        "slubber",
+        "slur",
+        "smear",
+        "smirch",
+        "smoke",
+        "smouch",
+        "smudge",
+        "smut",
+        "smutch",
+        "soil",
+        "somber",
+        "soot",
+        "spot",
+        "stain",
+        "stigmatize",
+        "sully",
+        "taint",
+        "tarnish",
+        "throw mud at",
+        "thunder against",
+        "tongue-lash",
+        "traduce",
+        "vilify",
+        "vituperate",
+        "yell at",
+        "yelp at"
+      ]
+    },
+    "blackener": {
+      "word": "BLACKENER",
+      "definitions": [
+        {
+          "text": "One who blackens.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackeyed": {
+      "word": "BLACK-EYED",
+      "definitions": [
+        {
+          "text": "Having black eyes. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackfaced": {
+      "word": "BLACK-FACED",
+      "definitions": [
+        {
+          "text": "Having a black, dark, or gloomy face or aspect.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackfeet": {
+      "word": "BLACKFEET",
+      "definitions": [
+        {
+          "text": "A tribe of North American Indians formerly inhabiting the country from the upper Missouri River to the Saskatchewan, but now much reduced in numbers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackfin": {
+      "word": "BLACKFIN",
+      "definitions": [
+        {
+          "text": "See Bluefin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackfish": {
+      "word": "BLACKFISH",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small kind of whale, of the genus Globicephalus, of several species. The most common is G. melas. Also sometimes applied to other whales of larger size.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The tautog of New England (Tautoga).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The black sea bass (Centropristis atrarius) of the Atlantic coast. It is excellent food fish; -- locally called also black Harry.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fish of southern Europe (Centrolophus pompilus) of the Mackerel family.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The female salmon in the spawning season.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackflags": {
+      "word": "BLACK FLAGS",
+      "definitions": [
+        {
+          "text": "An organization composed originally of Chinese rebels that had been driven into Tonkin by the suppression of the Taiping rebellion, but later increased by bands of pirates and adventurers. It took a prominent part in fighting the French during their hostilities with Anam, 1873-85.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackfoot": {
+      "word": "BLACKFOOT",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Blackfeet; as, a Blackfoot Indian.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A Blackfoot Indian.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackfriar": {
+      "word": "BLACK FRIAR",
+      "definitions": [
+        {
+          "text": "A friar of the Dominican order; -- called also predicant and preaching friar; in France, Jacobin. Also, sometimes, a Benedictine.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackfriday": {
+      "word": "BLACK FRIDAY",
+      "definitions": [
+        {
+          "text": "Any Friday on which a public disaster has occurred, as: In England, December 6, 1745, when the news of the landing of the Pretender reached London, or May 11, 1866, when a financial panic commenced. In the United States, September 24, 1869, and September 18, 1873, on which financial panics began.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackguard": {
+      "word": "BLACKGUARD",
+      "definitions": [
+        {
+          "text": "The scullions and lower menials of a court, or of a nobleman's household, who, in a removal from one residence to another, had charge of the kitchen utensils, and being smutted by them, were jocularly called the \"black guard\"; also, the servants and hangers-on of an army. [Obs.] A lousy slave, that . . . rode with the black guard in the duke's carriage, 'mongst spits and dripping pans. Webster (1612).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The criminals and vagrants or vagabonds of a town or community, collectively. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A person of stained or low character, esp. one who uses scurrilous language, or treats others with foul abuse; a scoundrel; a rough. A man whose manners and sentiments are decidedly below those of his class deserves to be called a blackguard. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A vagrant; a bootblack; a gamin. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To revile or abuse in scurrilous language. Southey.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Scurrilous; abusive; low; worthless; vicious; as, blackguard language.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackguardism": {
+      "word": "BLACKGUARDISM",
+      "definitions": [
+        {
+          "text": "The conduct or language of a blackguard; rufflanism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackguardly": {
+      "word": "BLACKGUARDLY",
+      "definitions": [
+        {
+          "text": "In the manner of or resembling a blackguard; abusive; scurrilous; ruffianly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackhamburg": {
+      "word": "BLACK HAMBURG",
+      "definitions": [
+        {
+          "text": "A sweet and juicy variety of European grape, of a dark purplish black color, much grown under glass in northern latitudes.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackhand": {
+      "word": "BLACK HAND",
+      "definitions": [
+        {
+          "text": "A Spanish anarchistic society, many of the members of which were imprisoned in 1883.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A lawless or blackmailing secret society, esp. among Italians. [U. S.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackhead": {
+      "word": "BLACKHEAD",
+      "definitions": [
+        {
+          "text": "The scaup duck.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "birthmark",
+        "bleb",
+        "blemish",
+        "blister",
+        "bulla",
+        "check",
+        "cicatrix",
+        "comedo",
+        "crack",
+        "crater",
+        "craze",
+        "defacement",
+        "defect",
+        "deformation",
+        "deformity",
+        "disfiguration",
+        "disfigurement",
+        "distortion",
+        "fault",
+        "flaw",
+        "freckle",
+        "hemangioma",
+        "hickey",
+        "keloid",
+        "kink",
+        "lentigo",
+        "milium",
+        "mole",
+        "needle scar",
+        "nevus",
+        "pimple",
+        "pit",
+        "pock",
+        "pockmark",
+        "port-wine mark",
+        "port-wine stain",
+        "pustule",
+        "rift",
+        "scab",
+        "scar",
+        "scratch",
+        "sebaceous cyst",
+        "split",
+        "strawberry mark",
+        "sty",
+        "track",
+        "twist",
+        "verruca",
+        "vesicle",
+        "wale",
+        "warp",
+        "wart",
+        "weal",
+        "welt",
+        "wen",
+        "whitehead"
+      ]
+    },
+    "blackheart": {
+      "word": "BLACKHEART",
+      "definitions": [
+        {
+          "text": "A heart-shaped cherry with a very dark-colored skin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackhearted": {
+      "word": "BLACK-HEARTED",
+      "definitions": [
+        {
+          "text": "Having a wicked, malignant disposition; morally bad.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackhole": {
+      "word": "BLACK HOLE",
+      "definitions": [
+        {
+          "text": "A dungeon or dark cell in a prison; a military lock-up or guardroom; -- now commonly with allusion to the cell (the Black Hole) in a fort at Calcutta, into which 146 English prisoners were thrust by the nabob Suraja Dowla on the night of June 20, 17656, and in which 123 of the prisoners died before morning from lack of air. A discipline of unlimited autocracy, upheld by rods, and ferules, and the black hole. H. Spencer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "Beehive",
+        "Cepheid variable",
+        "Hertzsprung-Russell diagram",
+        "Hyades",
+        "Messier catalog",
+        "NGC",
+        "POW camp",
+        "Pleiades",
+        "Seven Sisters",
+        "absolute magnitude",
+        "bastille",
+        "binary star",
+        "borstal",
+        "borstal institution",
+        "bridewell",
+        "brig",
+        "cell",
+        "concentration camp",
+        "condemned cell",
+        "death cell",
+        "death house",
+        "death row",
+        "detention camp",
+        "double star",
+        "dwarf star",
+        "federal prison",
+        "fixed star",
+        "forced-labor camp",
+        "gaol",
+        "giant star",
+        "globular cluster",
+        "gravity star",
+        "guardhouse",
+        "house of correction",
+        "house of detention",
+        "industrial school",
+        "internment camp",
+        "jail",
+        "jailhouse",
+        "keep",
+        "labor camp",
+        "lockup",
+        "magnitude",
+        "main sequence star",
+        "mass-luminosity law",
+        "maximum-security prison",
+        "minimum-security prison",
+        "neutron star",
+        "nova",
+        "open cluster",
+        "oubliette",
+        "pen",
+        "penal colony",
+        "penal institution",
+        "penal settlement",
+        "penitentiary",
+        "populations",
+        "prison",
+        "prison camp",
+        "prisonhouse",
+        "pulsar",
+        "quasar",
+        "quasi-stellar radio source",
+        "radio star",
+        "red giant star",
+        "reform school",
+        "reformatory",
+        "relative magnitude",
+        "sky atlas",
+        "spectrum-luminosity diagram",
+        "sponging house",
+        "star",
+        "star catalog",
+        "star chart",
+        "star cloud",
+        "star cluster",
+        "state prison",
+        "stellar magnitude",
+        "stockade",
+        "supernova",
+        "the hole",
+        "tollbooth",
+        "training school",
+        "variable star",
+        "white dwarf star"
+      ]
+    },
+    "blacking": {
+      "word": "BLACKING",
+      "definitions": [
+        {
+          "text": "Any preparation for making things black; esp. one for giving a black luster to boots and shoes, or to stoves.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or process of making black.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackish": {
+      "word": "BLACKISH",
+      "definitions": [
+        {
+          "text": "Somewhat black.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackjack": {
+      "word": "BLACK-JACK",
+      "definitions": [
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A name given by English miners to sphalerite, or zinc blende; - - called also false galena. See Blende.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Caramel or burnt sugar, used to color wines, spirits, ground coffee, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A large leather vessel for beer, etc. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The Quercus nigra, or barren oak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ensign of a pirate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Boston",
+        "Earl of Coventry",
+        "Pit",
+        "Polish bank",
+        "Russian bank",
+        "all fours",
+        "baccarat",
+        "banker",
+        "bastinado",
+        "bat",
+        "battering ram",
+        "billy",
+        "billy club",
+        "bludgeon",
+        "bluff",
+        "brag",
+        "bridge",
+        "bulldoze",
+        "bully",
+        "canasta",
+        "cane",
+        "casino",
+        "club",
+        "coerce",
+        "commerce",
+        "commit",
+        "connections",
+        "contract",
+        "contract bridge",
+        "cosh",
+        "cribbage",
+        "cudgel",
+        "dragoon",
+        "ecarte",
+        "euchre",
+        "faro",
+        "ferule",
+        "five hundred",
+        "flinch",
+        "fright",
+        "frog",
+        "gin",
+        "gin rummy",
+        "goat",
+        "hearts",
+        "hijack",
+        "intimidate",
+        "keno",
+        "knobkerrie",
+        "lansquenet",
+        "life preserver",
+        "loo",
+        "lottery",
+        "lotto",
+        "mace",
+        "matrimony",
+        "monte",
+        "morning star",
+        "napoleon",
+        "nightstick",
+        "old maid",
+        "ombre",
+        "paddle",
+        "patience",
+        "penny ante",
+        "picquet",
+        "poker",
+        "put-and-take",
+        "quadrille",
+        "quarterstaff",
+        "ram",
+        "reverse",
+        "rouge et noir",
+        "rum",
+        "rummy",
+        "sandbag",
+        "seven-up",
+        "shanghai",
+        "shillelagh",
+        "skat",
+        "snipsnapsnorum",
+        "solitaire",
+        "speculation",
+        "spontoon",
+        "staff",
+        "stave",
+        "steamroller",
+        "stick",
+        "straight poker",
+        "strong-arm",
+        "stud poker",
+        "thirty-one",
+        "truncheon",
+        "twenty-one",
+        "use violence",
+        "vingt-et-un",
+        "war club",
+        "whist"
+      ]
+    },
+    "blacklead": {
+      "word": "BLACK LEAD",
+      "definitions": [
+        {
+          "text": "Plumbago; graphite.It leaves a blackish mark somewhat like lead. See Graphite.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "To coat or to polish with black lead.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackleg": {
+      "word": "BLACKLEG",
+      "definitions": [
+        {
+          "text": "A notorious gambler. [Colloq.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A disease among calves and sheep, characterized by a settling of gelatinous matter in the legs, and sometimes in the neck. [Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Texas fever",
+        "anthrax",
+        "aphthous fever",
+        "bighead",
+        "black quarter",
+        "blackwater",
+        "blind staggers",
+        "bloody flux",
+        "broken wind",
+        "cattle plague",
+        "charbon",
+        "cheat",
+        "cheater",
+        "chiseler",
+        "cozener",
+        "crook",
+        "defrauder",
+        "diddler",
+        "distemper",
+        "fink",
+        "flimflam man",
+        "flimflammer",
+        "foot-and-mouth disease",
+        "gapes",
+        "glanders",
+        "gyp artist",
+        "gypper",
+        "heaves",
+        "hog cholera",
+        "hoof-and-mouth disease",
+        "hydrophobia",
+        "juggler",
+        "liver rot",
+        "loco",
+        "loco disease",
+        "locoism",
+        "mad staggers",
+        "malignant catarrh",
+        "malignant catarrhal fever",
+        "malignant pustule",
+        "mange",
+        "megrims",
+        "milzbrand",
+        "paratuberculosis",
+        "pip",
+        "pseudotuberculosis",
+        "quarter evil",
+        "rabies",
+        "rat",
+        "rinderpest",
+        "rot",
+        "scab",
+        "scabies",
+        "sheep rot",
+        "splenic fever",
+        "staggers",
+        "strikebreaker",
+        "stringhalt",
+        "swindler",
+        "swine dysentery",
+        "two-timer"
+      ]
+    },
+    "blackletter": {
+      "word": "BLACK LETTER",
+      "definitions": [
+        {
+          "text": "The old English or Gothic letter, in which the Early English manuscripts were written, and the first English books were printed. It was conspicuous for its blackness. See Type.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Written or printed in black letter; as, a black-letter manuscript or book.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Given to the study of books in black letter; that is, of old books; out of date. Kemble, a black-letter man! J. Boaden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the days in the calendar not marked with red letters as saints' days. Hence: Unlucky; inauspicious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blacklist": {
+      "word": "BLACKLIST",
+      "definitions": [
+        {
+          "text": "To put in a black list as deserving of suspicion, censure, or punishment; esp. to put in a list of persons stigmatized as insolvent or untrustworthy, -- as tradesmen and employers do for mutual",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "anathematize",
+        "attaint",
+        "ban",
+        "banish",
+        "banishment",
+        "blackball",
+        "boycott",
+        "boycottage",
+        "bring home to",
+        "censure",
+        "condemn",
+        "convict",
+        "damn",
+        "denounce",
+        "denunciate",
+        "disfellowship",
+        "doom",
+        "excommunicate",
+        "find guilty",
+        "ostracism",
+        "ostracization",
+        "ostracize",
+        "outlaw",
+        "pass sentence on",
+        "penalize",
+        "pronounce judgment",
+        "pronounce sentence",
+        "proscribe",
+        "proscription",
+        "sentence"
+      ]
+    },
+    "blackly": {
+      "word": "BLACKLY",
+      "definitions": [
+        {
+          "text": "In a black manner; darkly, in color; gloomily; threateningly; atrociously. \"Deeds so blackly grim and horrid.\" Feltham.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackmail": {
+      "word": "BLACKMAIL",
+      "definitions": [
+        {
+          "text": "A certain rate of money, corn, cattle, or other thing, anciently paid, in the north of England and south of Scotland, to certain men who were allied to robbers, or moss troopers, to be by them protected from pillage. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Payment of money exacted by means of intimidation; also, extortion of money from a person by threats of public accusation, exposure, or censure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eng. Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Black rent, or rent paid in corn, flesh, or the lowest coin, a opposed to \"white rent\", which paid in silver. To levy blackmail, to extort money by threats, as of injury to one's reputation.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To extort money from by exciting fears of injury other than bodily harm, as injury to reputation, distress of mind, etc.; as, to blackmail a merchant by threatening to expose an alleged fraud. [U. S.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "account",
+        "allowance",
+        "ask",
+        "ask for",
+        "assessment",
+        "badger",
+        "badger game",
+        "bill",
+        "blood money",
+        "bloodsucking",
+        "boodle",
+        "booty",
+        "call",
+        "call for",
+        "challenge",
+        "claim",
+        "clamor for",
+        "coerce",
+        "compel",
+        "contribution",
+        "cry for",
+        "demand",
+        "demand for",
+        "draft",
+        "drain",
+        "duty",
+        "emolument",
+        "exact",
+        "exaction",
+        "extort",
+        "extortion",
+        "extortionate demand",
+        "fee",
+        "footing",
+        "force",
+        "force from",
+        "graft",
+        "haul",
+        "heavy demand",
+        "hot goods",
+        "hush money",
+        "impose",
+        "imposition",
+        "impost",
+        "indent",
+        "initiation fee",
+        "insistent demand",
+        "issue an ultimatum",
+        "levy",
+        "levy blackmail",
+        "loot",
+        "make",
+        "make a demand",
+        "mileage",
+        "nonnegotiable demand",
+        "notice",
+        "order",
+        "order up",
+        "perks",
+        "perquisite",
+        "pickings",
+        "place an order",
+        "plunder",
+        "pork barrel",
+        "prize",
+        "protection racket",
+        "pry loose from",
+        "public till",
+        "public trough",
+        "put in requisition",
+        "ransom",
+        "reckoning",
+        "rend",
+        "rend from",
+        "require",
+        "requirement",
+        "requisition",
+        "retainer",
+        "retaining fee",
+        "rip",
+        "rip from",
+        "rush",
+        "rush order",
+        "scot",
+        "screw",
+        "shake down",
+        "shakedown",
+        "snatch from",
+        "spoil",
+        "spoils",
+        "spoils of office",
+        "squeeze",
+        "stealings",
+        "stipend",
+        "stolen goods",
+        "swag",
+        "take",
+        "tax",
+        "taxing",
+        "tear from",
+        "till",
+        "tribute",
+        "ultimatum",
+        "vampirism",
+        "warn",
+        "warning",
+        "wrench",
+        "wrench from",
+        "wrest",
+        "wring",
+        "wring from"
+      ]
+    },
+    "blackmailer": {
+      "word": "BLACKMAILER",
+      "definitions": [
+        {
+          "text": "One who extorts, or endeavors to extort, money, by black mailing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackmailing": {
+      "word": "BLACKMAILING",
+      "definitions": [
+        {
+          "text": "The act or practice of extorting money by exciting fears of injury other than bodily harm, as injury to reputation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackmonday": {
+      "word": "BLACK MONDAY",
+      "definitions": [
+        {
+          "text": "Easter Monday, so called from the severity of that day in 1360, which was so unusual that many of Edward III.'s soldiers, then before Paris, died from the cold. Stow. Then it was not for nothing that may nose fell a bleeding on Black Monday last. Shak.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "The first Monday after the holidays; -- so called by English schoolboys. Halliwell.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackmonk": {
+      "word": "BLACK MONK",
+      "definitions": [
+        {
+          "text": "A Benedictine monk.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackmoor": {
+      "word": "BLACKMOOR",
+      "definitions": [
+        {
+          "text": "See Blackamoor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackmouthed": {
+      "word": "BLACK-MOUTHED",
+      "definitions": [
+        {
+          "text": "Using foul or scurrilous language; slanderous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackness": {
+      "word": "BLACKNESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being black; black color; atrociousness or enormity in wickedness. They're darker now than blackness. Donne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackpoll": {
+      "word": "BLACKPOLL",
+      "definitions": [
+        {
+          "text": "A warbler of the United States (Dendroica striata).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackpudding": {
+      "word": "BLACK PUDDING",
+      "definitions": [
+        {
+          "text": "A kind of sausage made of blood, suet, etc., thickened with meal. And fat black puddings, -- proper food, For warriors that delight in blood. Hudibras.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackroot": {
+      "word": "BLACKROOT",
+      "definitions": [
+        {
+          "text": "See Colicroot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blacks": {
+      "word": "BLACKS",
+      "definitions": [
+        {
+          "text": "The name of a kind of in used in copperplate printing, prepared from the charred husks of the grape, and residue of the wine press.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Soot flying in the air. [Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Black garments, etc. See Black, n., 4.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blacksalter": {
+      "word": "BLACKSALTER",
+      "definitions": [
+        {
+          "text": "One who,makes crude potash, or black salts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blacksalts": {
+      "word": "BLACK SALTS",
+      "definitions": [
+        {
+          "text": "Crude potash. De Colange.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blacksmith": {
+      "word": "BLACKSMITH",
+      "definitions": [
+        {
+          "text": "A smith who works in iron with a forge, and makes iron utensils, horseshoes, etc. The blacksmith may forge what he pleases. Howell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fish of the Pacific coast (Chromis, or Heliastes, punctipinnis), of a blackish color.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blacksnakeblacksnake": {
+      "word": "BLACK SNAKE; BLACKSNAKE",
+      "definitions": [
+        {
+          "text": "A snake of a black color, of which two species are common in the United States, the Bascanium constrictor, or racer, sometimes six feet long, and the Scotophis Alleghaniensis, seven or eight feet long. Natrix atra of Jamaica.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackspanish": {
+      "word": "BLACK SPANISH",
+      "definitions": [
+        {
+          "text": "One of an old and well-known Mediterranean breed of domestic fowls with glossy black plumage, blue legs and feet, bright red comb and wattles, and white face. They are remarkable as egg layers.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackstrap": {
+      "word": "BLACKSTRAP",
+      "definitions": [
+        {
+          "text": "A mixture of spirituous liquor (usually rum) and molasses. No blackstrap to-night; switchel, or ginger pop. Judd.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Bad port wine; any commo wine of the Mediterranean; -- so called by sailors.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blacktail": {
+      "word": "BLACKTAIL",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fish; the ruff or pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The black-tailed deer (Cervus or Cariacus Columbianus) of California and Oregon; also, the mule deer of the Rocky Mountains. See Mule deer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackvomit": {
+      "word": "BLACK VOMIT",
+      "definitions": [
+        {
+          "text": "A copious vomiting of dark-colored matter; or the substance so discharged; -- one of the most fatal symptoms in yellow fever.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackwashblackwash": {
+      "word": "BLACK WASH; BLACKWASH",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A lotion made by mixing calomel and lime water.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A wash that blackens, as opposed to whitewash; hence, figuratively, calumny. To remove as far as he can the modern layers of black wash, and let the man himself, fair or foul, be seen. C. Kingsley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackwaterstate": {
+      "word": "BLACKWATER STATE",
+      "definitions": [
+        {
+          "text": "Nebraska; -- a nickname alluding to the dark color of the water of its rivers, due to the presence of a black vegetable mold in the soil.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackwood": {
+      "word": "BLACKWOOD",
+      "definitions": [
+        {
+          "text": "A name given to several dark-colored timbers. The East Indian black wood is from the tree Dalbergia latifolia. Balfour.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blackwork": {
+      "word": "BLACKWORK",
+      "definitions": [
+        {
+          "text": "Work wrought by blacksmiths; -- so called in distinction from that wrought by whitesmiths. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bladder": {
+      "word": "BLADDER",
+      "definitions": [
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bag or sac in animals, which serves as the receptacle of some fluid; as, the urinary bladder; the gall bladder; -- applied especially to the urinary bladder, either within the animal, or when taken out and inflated with air.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any vesicle or blister, especially if filled with air, or a thin, watery fluid.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A distended, membranaceous pericarp.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything inflated, empty, or unsound. \"To swim with bladders of philosophy.\" Rochester. Bladder nut, or Bladder tree (Bot.), a genus of plants (Staphylea) with bladderlike seed pods. inflated seed pods. membranaceous, inflated pods. (Tænia), found in the flesh or other parts of animals. See Measle, Cysticercus. (Fucus nodosus and F. vesiculosus) -- called also bladder tangle. See Wrack.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To swell out like a bladder with air; to inflate. [Obs.] G. Fletcher.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put up in bladders; as, bladdered lard.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "air bubble",
+        "bag",
+        "ball",
+        "balloon",
+        "bleb",
+        "blister",
+        "blob",
+        "blood blister",
+        "boll",
+        "bolus",
+        "bubble",
+        "bulb",
+        "bulbil",
+        "bulblet",
+        "bulla",
+        "cap and bells",
+        "coxcomb",
+        "ellipsoid",
+        "fever blister",
+        "fob",
+        "geoid",
+        "globe",
+        "globelet",
+        "globoid",
+        "globule",
+        "glomerulus",
+        "gob",
+        "gobbet",
+        "knob",
+        "knot",
+        "motley",
+        "oblate spheroid",
+        "orb",
+        "orbit",
+        "orblet",
+        "pellet",
+        "pocket",
+        "poke",
+        "prolate spheroid",
+        "rondure",
+        "sac",
+        "sack",
+        "slapstick",
+        "soap bubble",
+        "sock",
+        "sphere",
+        "spheroid",
+        "spherule",
+        "vesicle"
+      ]
+    },
+    "bladderwort": {
+      "word": "BLADDERWORT",
+      "definitions": [
+        {
+          "text": "A genus (Utricularia) of aquatic or marshy plants, which usually bear numerous vesicles in the divisions of the leaves. These serve as traps for minute animals. See Ascidium.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bladdery": {
+      "word": "BLADDERY",
+      "definitions": [
+        {
+          "text": "Having bladders; also, resembling a bladder.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blade": {
+      "word": "BLADE",
+      "definitions": [
+        {
+          "text": "Properly, the leaf, or flat part of the leaf, of any plant, especially of gramineous plants. The term is sometimes applied to the spire of grasses. The crimson dulse . . . with its waving blade. Percival. First the blade, then ear, after that the full corn in the ear. Mark iv. 28.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The cutting part of an instrument; as, the blade of a knife or a sword.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The broad part of an oar; also, one of the projecting arms of a screw propeller.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The scapula or shoulder blade.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The principal rafters of a roof. Weale.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Com.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The four large shell plates on the sides, and the five large ones of the middle, of the carapace of the sea turtle, which yield the best tortoise shell. De Colange.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sharp-witted, dashing, wild, or reckless, fellow; -- a word of somewhat indefinite meaning. He saw a turnkey in a trice Fetter a troublesome blade. Coleridge.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To furnish with a blade.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put forth or have a blade. As sweet a plant, as fair a flower, is faded As ever in the Muses' garden bladed. P. Fletcher.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Beau Brummel",
+        "Excalibur",
+        "Skimobile",
+        "Sno-Cat",
+        "alveolar ridge",
+        "alveolus",
+        "apex",
+        "arytenoid cartilages",
+        "ax",
+        "back",
+        "battler",
+        "bayonet",
+        "beau",
+        "belligerent",
+        "belted knight",
+        "bickerer",
+        "blood",
+        "boulevardier",
+        "bract",
+        "bracteole",
+        "bractlet",
+        "bravo",
+        "brawler",
+        "bully",
+        "bullyboy",
+        "clotheshorse",
+        "cold steel",
+        "combatant",
+        "competitor",
+        "contender",
+        "contestant",
+        "cotyledon",
+        "coxcomb",
+        "cutlass",
+        "cutlery",
+        "cutter",
+        "cutting edge",
+        "dagger",
+        "dandy",
+        "disputant",
+        "dorsum",
+        "dude",
+        "duelist",
+        "edge tools",
+        "enforcer",
+        "exquisite",
+        "fashion plate",
+        "fencer",
+        "feuder",
+        "fighter",
+        "fighting cock",
+        "fine gentleman",
+        "flag",
+        "floral leaf",
+        "foilsman",
+        "foliole",
+        "fop",
+        "fribble",
+        "frond",
+        "gallant",
+        "gamecock",
+        "gladiator",
+        "glume",
+        "goon",
+        "gorilla",
+        "hard palate",
+        "hatchet man",
+        "hood",
+        "hoodlum",
+        "hooligan",
+        "involucre",
+        "involucrum",
+        "jack-a-dandy",
+        "jackanapes",
+        "jackknife",
+        "jouster",
+        "knife",
+        "knight",
+        "lady-killer",
+        "lamina",
+        "larynx",
+        "leaf",
+        "leaflet",
+        "lemma",
+        "ligule",
+        "lips",
+        "macaroni",
+        "man-about-town",
+        "masher",
+        "militant",
+        "naked steel",
+        "nasal cavity",
+        "needle",
+        "oral cavity",
+        "palate",
+        "penknife",
+        "petal",
+        "pharyngeal cavity",
+        "pharynx",
+        "pigsticker",
+        "pile",
+        "pine needle",
+        "playboy",
+        "plug-ugly",
+        "point",
+        "poniard",
+        "puncturer",
+        "puppy",
+        "quarreler",
+        "rapier",
+        "rioter",
+        "rival",
+        "rough",
+        "rowdy",
+        "ruffian",
+        "runner",
+        "sabreur",
+        "scrapper",
+        "scuffler",
+        "seed leaf",
+        "sepal",
+        "sharpener",
+        "shoot",
+        "sled",
+        "sleigh",
+        "snowmobile",
+        "soft palate",
+        "spark",
+        "spathe",
+        "spear",
+        "speech organ",
+        "spire",
+        "sport",
+        "squabbler",
+        "steel",
+        "stiletto",
+        "stipula",
+        "stipule",
+        "strong arm",
+        "strong-arm man",
+        "strong-armer",
+        "struggler",
+        "swashbuckler",
+        "swell",
+        "sword",
+        "swordplayer",
+        "swordsman",
+        "syrinx",
+        "teeth",
+        "teeth ridge",
+        "thug",
+        "tilter",
+        "tip",
+        "toad sticker",
+        "tongue",
+        "tough",
+        "trusty sword",
+        "tussler",
+        "velum",
+        "vocal chink",
+        "vocal cords",
+        "vocal folds",
+        "vocal processes",
+        "voice box",
+        "weasel",
+        "whittle",
+        "wrangler"
+      ]
+    },
+    "bladebone": {
+      "word": "BLADEBONE",
+      "definitions": [
+        {
+          "text": "The scapula. See Blade, 4.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bladed": {
+      "word": "BLADED",
+      "definitions": [
+        {
+          "text": "Having a blade or blades; as a two-bladed knife. Decking with liquid pearl the bladed grass. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Divested of blades; as, bladed corn.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Composed of long and narrow plates, shaped like the blade of a knife.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bladefish": {
+      "word": "BLADEFISH",
+      "definitions": [
+        {
+          "text": "A long, thin, marine fish of Europe (Trichiurus lepturus); the ribbon fish.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bladesmith": {
+      "word": "BLADESMITH",
+      "definitions": [
+        {
+          "text": "A sword cutler. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blady": {
+      "word": "BLADY",
+      "definitions": [
+        {
+          "text": "Consisting of blades. [R.] \"Blady grass.\" Drayton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blae": {
+      "word": "BLAE",
+      "definitions": [
+        {
+          "text": "Dark blue or bluish gray; lead-colored. [Scot.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blaeberry": {
+      "word": "BLAEBERRY",
+      "definitions": [
+        {
+          "text": "The bilberry. [North of Eng. & Scot.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blague": {
+      "word": "BLAGUE",
+      "definitions": [
+        {
+          "text": "Mendacious boasting; falcefood; humbug.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blain": {
+      "word": "BLAIN",
+      "definitions": [
+        {
+          "text": "An inflammatory swelling or sore; a bulla, pustule, or blister. Blotches and blains must all his flesh emboss. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Far.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bladder growing on the root of the tongue of a horse, against the windpipe, and stopping the breath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blamable": {
+      "word": "BLAMABLE",
+      "definitions": [
+        {
+          "text": "Deserving of censure; faulty; culpable; reprehensible;",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blame": {
+      "word": "BLAME",
+      "definitions": [
+        {
+          "text": "To censure; to express disapprobation of; to find fault with; to reproach. We have none to blame but ourselves. Tillotson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bring reproach upon; to blemish. [Obs.] She . . . blamed her noble blood. Spenser. To blame, to be blamed, or deserving blame; in fault; as, the conductor was to blame for the accident. You were to blame, I must be plain with you. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "An expression of disapprobation fir something deemed to be wrong; imputation of fault; censure. Let me bear the blame forever. Gen. xiiii. 9.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is deserving of censure or disapprobation; culpability; fault; crime; sin. Holy and without blame before him in love. Eph. i. 4.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hurt; injury. [Obs.] Spenser. wrongdoing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "account for",
+        "accountability",
+        "accounting for",
+        "accredit with",
+        "accrete to",
+        "accusal",
+        "accusation",
+        "accuse",
+        "accusing",
+        "acknowledge",
+        "allegation",
+        "allegement",
+        "anathema",
+        "anathematize",
+        "anathemize",
+        "animadvert on",
+        "answerability",
+        "application",
+        "apply to",
+        "arraign",
+        "arraignment",
+        "arrogation",
+        "ascribe to",
+        "ascription",
+        "assign to",
+        "assignation",
+        "assignment",
+        "attach to",
+        "attachment",
+        "attribute to",
+        "attribution",
+        "bill of particulars",
+        "blame for",
+        "blame on",
+        "bring home to",
+        "bringing of charges",
+        "bringing to book",
+        "call to account",
+        "cast blame upon",
+        "cast reflection upon",
+        "castigation",
+        "censure",
+        "charge",
+        "charge on",
+        "charge to",
+        "complain against",
+        "complaint",
+        "condemn",
+        "condemnation",
+        "confess",
+        "connect with",
+        "connection with",
+        "count",
+        "credit",
+        "credit with",
+        "criticism",
+        "criticize",
+        "cry down",
+        "cry out against",
+        "cry out on",
+        "cry shame upon",
+        "culpability",
+        "damn",
+        "damnation",
+        "decrial",
+        "decry",
+        "delation",
+        "denounce",
+        "denouncement",
+        "denunciate",
+        "denunciation",
+        "derivation from",
+        "disapprobation",
+        "disapproval",
+        "etiology",
+        "excoriation",
+        "fasten upon",
+        "father upon",
+        "fault",
+        "fix on",
+        "fix upon",
+        "flaying",
+        "fulminate against",
+        "fulmination",
+        "fustigation",
+        "guilt",
+        "hang on",
+        "hold against",
+        "honor",
+        "impeach",
+        "impeachment",
+        "implication",
+        "impugn",
+        "imputation",
+        "impute",
+        "impute to",
+        "incriminate",
+        "indict",
+        "indictment",
+        "information",
+        "innuendo",
+        "insinuation",
+        "inveigh against",
+        "knock",
+        "lawsuit",
+        "lay to",
+        "laying of charges",
+        "liability",
+        "objurgation",
+        "onus",
+        "palaetiology",
+        "pillorying",
+        "pin on",
+        "pinpoint",
+        "place upon",
+        "placement",
+        "plaint",
+        "point to",
+        "prosecution",
+        "rap",
+        "rebuke",
+        "recriminate",
+        "recrimination",
+        "refer to",
+        "reference to",
+        "reflect upon",
+        "reprehend",
+        "reprehension",
+        "reprimand",
+        "reproach",
+        "reprobate",
+        "reprobation",
+        "reproof",
+        "reprove",
+        "responsibility",
+        "saddle on",
+        "saddle with",
+        "saddling",
+        "scold",
+        "set down to",
+        "settle upon",
+        "shake up",
+        "skin",
+        "skinning alive",
+        "stricture",
+        "suit",
+        "taxing",
+        "true bill",
+        "unspoken accusation",
+        "veiled accusation"
+      ]
+    },
+    "blameful": {
+      "word": "BLAMEFUL",
+      "definitions": [
+        {
+          "text": "Faulty; meriting blame. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Attributing blame or fault; implying or conveying censure;",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blameless": {
+      "word": "BLAMELESS",
+      "definitions": [
+        {
+          "text": "Free from blame; without fault; innocent; guiltless; -- sometimes followed by of. A bishop then must be blameless. 1 Tim. iii. 2. Blameless still of arts that polish to deprave. Mallet. We will be blameless of this thine oath. Josh. ii. 17. blameless when it is free from blame, or the just imputation of fault; as, a blameless life or character. The others are stronger. We speak of a thing as faultless, stainless, or spotless, only when we mean that it is absolutely without fault or blemish; as, a spotless or stainless reputation; a faultless course of conduct. The last three words apply only to the general character, while blameless may be used in reverence to particular points; as, in this transaction he was wholly blameless. We also apply faultless to personal appearance; as, a faultless figure; which can not be done in respect to any of the other words.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Christian",
+        "angelic",
+        "childlike",
+        "clean",
+        "clear",
+        "creditable",
+        "decent",
+        "dovelike",
+        "erect",
+        "estimable",
+        "ethical",
+        "exemplary",
+        "fair",
+        "faultless",
+        "full of integrity",
+        "good",
+        "guiltless",
+        "high-minded",
+        "high-principled",
+        "highly respectable",
+        "honest",
+        "honorable",
+        "immaculate",
+        "in the clear",
+        "incorrupt",
+        "inculpable",
+        "innocent",
+        "inviolate",
+        "irreprehensible",
+        "irreproachable",
+        "just",
+        "lamblike",
+        "law-abiding",
+        "law-loving",
+        "law-revering",
+        "lily-white",
+        "manly",
+        "moral",
+        "noble",
+        "not guilty",
+        "offenseless",
+        "prelapsarian",
+        "principled",
+        "pristine",
+        "pure",
+        "reproachless",
+        "reputable",
+        "respectable",
+        "right",
+        "right-minded",
+        "righteous",
+        "sans reproche",
+        "sinless",
+        "spotless",
+        "stainless",
+        "sterling",
+        "true-dealing",
+        "true-devoted",
+        "true-disposing",
+        "true-souled",
+        "true-spirited",
+        "truehearted",
+        "unblemished",
+        "uncorrupt",
+        "uncorrupted",
+        "undefiled",
+        "unfallen",
+        "unimpeachable",
+        "unlapsed",
+        "unspotted",
+        "unstained",
+        "unsullied",
+        "untarnished",
+        "untouched by evil",
+        "upright",
+        "uprighteous",
+        "upstanding",
+        "virtuous",
+        "with clean hands",
+        "without reproach",
+        "worthy",
+        "yeomanly"
+      ]
+    },
+    "blamelessly": {
+      "word": "BLAMELESSLY",
+      "definitions": [
+        {
+          "text": "In a blameless manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blamelessness": {
+      "word": "BLAMELESSNESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being blameless; innocence.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blamer": {
+      "word": "BLAMER",
+      "definitions": [
+        {
+          "text": "One who blames. Wyclif.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanc": {
+      "word": "BLANC",
+      "definitions": [
+        {
+          "text": "A white cosmetic.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A white sauce of fat, broth, and vegetables, used esp. for braised meat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blancard": {
+      "word": "BLANCARD",
+      "definitions": [
+        {
+          "text": "A kind of linen cloth made in Normandy, the thread of which is partly blanches before it is woven.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanch": {
+      "word": "BLANCH",
+      "definitions": [
+        {
+          "text": "To take the color out of, and make white; to bleach; as, to blanch linen; age has blanched his hair.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Gardening)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bleach by excluding the light, as the stalks or leaves of plants, by earthing them up or tying them together.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Confectionery & Cookery) (a) To make white by removing the skin of, as by scalding; as, to blanch almonds. (b) To whiten, as the surface of meat, by plunging into boiling water and afterwards into cold, so as to harden the surface and retain the juices.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To give a white luster to (silver, before stamping, in the process of coining.).",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cover (sheet iron) with a coating of tin.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Fig.: To whiten; to give a favorable appearance to; to whitewash; to palliate. Blanch over the blackest and most absurd things. Tillotson. render white; as, to whiten the walls of a room. Usually (though not of necessity) this is supposed to be done by placing some white coloring matter in or upon the surface of the object in question. To blanch is to whiten by the removal of coloring matter; as, to blanch linen. So the cheek is blanched by fear, i. e., by the withdrawal of the blood, which leaves it white.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To grow or become white; as, his cheek blanched with fear; the rose blanches in the sun. [Bones] blanching on the grass. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To avoid, as from fear; to evade; to leave unnoticed. [Obs.] Ifs and ands to qualify the words of treason, whereby every man might express his malice and blanch his danger. Bacon. I suppose you will not blanch Paris in your way. Reliq. Wot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to turn aside or back; as, to blanch a deer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To use evasion. [Obs.] Books will speak plain, when counselors blanch. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Ore, not in masses, but mixed with other minerals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ache",
+        "achromatize",
+        "agonize",
+        "ail",
+        "anguish",
+        "bake",
+        "barbecue",
+        "baste",
+        "besnow",
+        "bleach",
+        "bleach out",
+        "blench",
+        "blush",
+        "boil",
+        "braise",
+        "brew",
+        "broil",
+        "brown",
+        "chalk",
+        "change color",
+        "coddle",
+        "color",
+        "cook",
+        "crimson",
+        "curry",
+        "darken",
+        "decolor",
+        "decolorize",
+        "devil",
+        "dim",
+        "discolor",
+        "do",
+        "do to perfection",
+        "drain",
+        "drain of color",
+        "dull",
+        "etiolate",
+        "fade",
+        "fade out",
+        "feel pain",
+        "feel the pangs",
+        "fire",
+        "flinch",
+        "flush",
+        "fricassee",
+        "frizz",
+        "frizzle",
+        "frost",
+        "fry",
+        "fume",
+        "glow",
+        "griddle",
+        "grill",
+        "grimace",
+        "grizzle",
+        "grow pale",
+        "have a misery",
+        "heat",
+        "hurt",
+        "look black",
+        "lose color",
+        "mantle",
+        "oven-bake",
+        "pale",
+        "pan",
+        "pan-broil",
+        "parboil",
+        "peroxide",
+        "poach",
+        "pound",
+        "prepare",
+        "prepare food",
+        "quail",
+        "redden",
+        "roast",
+        "saute",
+        "scallop",
+        "sear",
+        "shirr",
+        "shoot",
+        "shrink",
+        "silver",
+        "simmer",
+        "smart",
+        "squinch",
+        "start",
+        "steam",
+        "stew",
+        "stir-fry",
+        "suffer",
+        "tarnish",
+        "thrill",
+        "throb",
+        "tone down",
+        "turn color",
+        "turn pale",
+        "turn red",
+        "turn white",
+        "twinge",
+        "twitch",
+        "wan",
+        "wash out",
+        "white",
+        "whiten",
+        "wince",
+        "writhe"
+      ]
+    },
+    "blanchardlathe": {
+      "word": "BLANCHARD LATHE",
+      "definitions": [
+        {
+          "text": "A kind of wood-turning lathe for making noncircular and irregular forms, as felloes, gun stocks, lasts, spokes, etc., after a given pattern. The pattern and work rotate on parallel spindles in the same direction with the same speed, and the work is shaped by a rapidly rotating cutter whose position is varied by the pattern acting as a cam upon a follower wheel traversing slowly along the pattern.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blancher": {
+      "word": "BLANCHER",
+      "definitions": [
+        {
+          "text": "One who, or that which, blanches or whitens; esp., one who anneals and cleanses money; also, a chemical preparation for this purpose.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who, or that which, frightens away or turns aside. [Obs.] And Gynecia, a blancher, which kept the dearest deer from her. Sir P. Sidney. And so even now hath he divers blanchers belonging to the market, to let and stop the light of the gospel. Latimer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanchholding": {
+      "word": "BLANCH HOLDING",
+      "definitions": [
+        {
+          "text": "A mode of tenure by the payment of a small duty in white rent (silver) or otherwise.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanchimeter": {
+      "word": "BLANCHIMETER",
+      "definitions": [
+        {
+          "text": "An instrument for measuring the bleaching power of chloride of lime and potash; a chlorometer. Ure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blancmange": {
+      "word": "BLANCMANGE",
+      "definitions": [
+        {
+          "text": "A preparation for desserts, etc., made from isinglass, sea moss, cornstarch, or other gelatinous or starchy substance, with mild, usually sweetened and flavored, and shaped in a mold.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blancmanger": {
+      "word": "BLANCMANGER",
+      "definitions": [
+        {
+          "text": "A sort of fricassee with white sauce, variously made of capon, fish, etc. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bland": {
+      "word": "BLAND",
+      "definitions": [
+        {
+          "text": "Mild; soft; gentle; smooth and soothing in manner; suave; as, a bland temper; bland persuasion; a bland sycophant. \"Exhilarating vapor bland.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having soft and soothing qualities; not drastic or irritating; not stimulating; as, a bland oil; a bland diet.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abstract",
+        "adulatory",
+        "balmy",
+        "banal",
+        "bare",
+        "barren",
+        "blah",
+        "blandishing",
+        "blank",
+        "blarneying",
+        "bleached",
+        "boring",
+        "broad",
+        "buttery",
+        "cajoling",
+        "calm",
+        "changeable",
+        "characterless",
+        "civilized",
+        "clear",
+        "collective",
+        "complimentary",
+        "composed",
+        "cool",
+        "courtierly",
+        "courtly",
+        "devoid",
+        "disarming",
+        "dull",
+        "empty",
+        "faint",
+        "fair-spoken",
+        "fawning",
+        "featureless",
+        "fine-spoken",
+        "flat",
+        "flattering",
+        "fulsome",
+        "general",
+        "generalized",
+        "generic",
+        "gentle",
+        "glib",
+        "good-natured",
+        "gushing",
+        "halfhearted",
+        "hollow",
+        "honey-mouthed",
+        "honey-tongued",
+        "honeyed",
+        "inane",
+        "indecisive",
+        "indefinite",
+        "indeterminate",
+        "infirm of purpose",
+        "infirm of will",
+        "ingratiating",
+        "insincere",
+        "insinuating",
+        "insipid",
+        "insouciant",
+        "irresolute",
+        "judicious",
+        "lenient",
+        "mealymouthed",
+        "mild",
+        "mild as milk",
+        "milk-and-water",
+        "milky",
+        "moderate",
+        "mushy",
+        "namby-pamby",
+        "nebulous",
+        "neutral",
+        "nonchalant",
+        "nonspecific",
+        "nonviolent",
+        "null",
+        "null and void",
+        "obsequious",
+        "oily",
+        "oily-tongued",
+        "pacifistic",
+        "peaceable",
+        "peaceful",
+        "prudent",
+        "sapless",
+        "slimy",
+        "slobbery",
+        "smarmy",
+        "smooth",
+        "smooth-spoken",
+        "smooth-tongued",
+        "smug",
+        "soapy",
+        "sober",
+        "soft",
+        "soft-soaping",
+        "soft-spoken",
+        "soothing",
+        "suave",
+        "suave-spoken",
+        "sycophantic",
+        "tame",
+        "tasteless",
+        "temperate",
+        "uncharacterized",
+        "unctuous",
+        "undifferentiated",
+        "unemotional",
+        "uninteresting",
+        "unrelieved",
+        "unruffled",
+        "unspecified",
+        "urbane",
+        "vacant",
+        "vacuous",
+        "vague",
+        "vapid",
+        "void",
+        "waterish",
+        "watery",
+        "wheedling",
+        "white",
+        "wide",
+        "wishy-washy",
+        "with nothing inside",
+        "without content"
+      ]
+    },
+    "blandation": {
+      "word": "BLANDATION",
+      "definitions": [
+        {
+          "text": "Flattery. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blandiloquence": {
+      "word": "BLANDILOQUENCE",
+      "definitions": [
+        {
+          "text": "Mild, flattering speech.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blandiloquousblandiloquious": {
+      "word": "BLANDILOQUOUS; BLANDILOQUIOUS",
+      "definitions": [
+        {
+          "text": "Fair-spoken; flattering.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blandise": {
+      "word": "BLANDISE",
+      "definitions": [
+        {
+          "text": "To blandish any one. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blandish": {
+      "word": "BLANDISH",
+      "definitions": [
+        {
+          "text": "To flatter with kind words or affectionate actions; to caress; to cajole.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make agreeable and enticing. Mustering all her wiles, With blandished parleys. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adulate",
+        "advocate",
+        "allure",
+        "apply pressure",
+        "bait",
+        "bait the hook",
+        "banter",
+        "be hypocritical",
+        "beguile",
+        "beset",
+        "besiege",
+        "beslobber",
+        "beslubber",
+        "blarney",
+        "bug",
+        "buttonhole",
+        "cajole",
+        "call on",
+        "call upon",
+        "cant",
+        "charm",
+        "coax",
+        "compliment",
+        "con",
+        "conceit",
+        "decoy",
+        "draw",
+        "draw in",
+        "draw on",
+        "dun",
+        "ensnare",
+        "entice",
+        "exert pressure",
+        "exhort",
+        "fawn upon",
+        "flatter",
+        "flirt",
+        "flirt with",
+        "give lip service",
+        "give mouth honor",
+        "give the come-on",
+        "high-pressure",
+        "importune",
+        "insist",
+        "insist upon",
+        "inveigle",
+        "jawbone",
+        "lead on",
+        "lobby",
+        "lure",
+        "make fair weather",
+        "mouth",
+        "nag",
+        "nag at",
+        "offer bait to",
+        "oil the tongue",
+        "palaver",
+        "pester",
+        "plague",
+        "play the hypocrite",
+        "plead with",
+        "ply",
+        "praise",
+        "press",
+        "pressure",
+        "push",
+        "recommend",
+        "reek of piety",
+        "render lip service",
+        "rope in",
+        "seduce",
+        "slobber over",
+        "snivel",
+        "snuffle",
+        "soft-soap",
+        "suck in",
+        "sweet-talk",
+        "tease",
+        "urge",
+        "wheedle",
+        "woo",
+        "work on"
+      ]
+    },
+    "blandisher": {
+      "word": "BLANDISHER",
+      "definitions": [
+        {
+          "text": "One who uses blandishments.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blandishment": {
+      "word": "BLANDISHMENT",
+      "definitions": [
+        {
+          "text": "The act of blandishing; a word or act expressive of affection or kindness, and tending to win the heart; soft words and artful caresses; cajolery; allurement. Cowering low with blandishment. Milton. Attacked by royal smiles, by female blandishments. Macaulay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "adulation",
+        "agacerie",
+        "allure",
+        "allurement",
+        "appeal",
+        "artful endearments",
+        "attraction",
+        "attractiveness",
+        "beguilement",
+        "beguiling",
+        "bewitchery",
+        "bewitchment",
+        "blandishments",
+        "blarney",
+        "bunkum",
+        "buttonholing",
+        "cajolement",
+        "cajolery",
+        "captivation",
+        "caress",
+        "charisma",
+        "charm",
+        "charmingness",
+        "coaxing",
+        "come-hither",
+        "compliment",
+        "conning",
+        "dunning",
+        "enchantment",
+        "endearment",
+        "engagement",
+        "enlistment",
+        "enthrallment",
+        "enticement",
+        "entrapment",
+        "exhortation",
+        "eyewash",
+        "fair words",
+        "fascination",
+        "fawning",
+        "flattery",
+        "flirtation",
+        "forbidden fruit",
+        "glamour",
+        "grease",
+        "honeyed phrases",
+        "honeyed words",
+        "hortation",
+        "importunateness",
+        "importunity",
+        "incense",
+        "inducement",
+        "interest",
+        "inveiglement",
+        "invitation",
+        "jawboning",
+        "lobbying",
+        "magnetism",
+        "nagging",
+        "oil",
+        "palaver",
+        "pat",
+        "persuasion",
+        "pestering",
+        "plaguing",
+        "plying",
+        "praise",
+        "preaching",
+        "preachment",
+        "pressing",
+        "pressure",
+        "pretty lies",
+        "sales talk",
+        "salesmanship",
+        "seducement",
+        "seduction",
+        "seductiveness",
+        "selling",
+        "sex appeal",
+        "snaring",
+        "snow job",
+        "soap",
+        "soft soap",
+        "soft words",
+        "solicitation",
+        "suasion",
+        "sweet nothings",
+        "sweet talk",
+        "sweet words",
+        "sycophancy",
+        "tantalization",
+        "teasing",
+        "temptation",
+        "urgency",
+        "urging",
+        "wheedling",
+        "winning ways",
+        "winsomeness",
+        "witchery",
+        "wooing",
+        "working on"
+      ]
+    },
+    "blandly": {
+      "word": "BLANDLY",
+      "definitions": [
+        {
+          "text": "In a bland manner; mildly; suavely.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blandness": {
+      "word": "BLANDNESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being bland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blank": {
+      "word": "BLANK",
+      "definitions": [
+        {
+          "text": "Of a white or pale color; without color. To the blank moon Her office they prescribed. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Free from writing, printing, or marks; having an empty space to be filled in with some special writing; -- said of checks, official documents, etc.; as, blank paper; a blank check; a blank ballot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Utterly confounded or discomfited. Adam . . . astonied stood, and blank. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Empty; void; without result; fruitless; as, a blank space; a blank day.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lacking characteristics which give variety; as, a blank desert; a blank wall; destitute of interests, affections, hopes, etc.; as, to live a blank existence; destitute of sensations; as, blank unconsciousness.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lacking animation and intelligence, or their associated characteristics, as expression of face, look, etc.; expressionless; vacant. \"Blank and horror-stricken faces.\" C. Kingsley. The blank . . . glance of a half returned consciousness. G. Eliot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Absolute; downright; unmixed; as, blank terror. Blank bar (Law), a plea put in to oblige the plaintiff in an action of trespass to assign the certain place where the trespass was committed; -- called also common bar. the size of a door or window, either for symmetrical effect, or for the more convenient insertion of a door or window at a future time, should it be needed. the person in whose favor it is made; it is usually made by simply writing the name of the indorser on the back of the bill. a printed page; a line of quadrats.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Any void space; a void space on paper, or in any written instrument; an interval void of consciousness, action, result, etc; a void. I can not write a paper full, I used to do; and yet I will not forgive a blank of half an inch from you. Swift. From this time there ensues a long blank in the history of French legislation. Hallam. I was ill. I can't tell how long -- it was a blank. G. Eliot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A lot by which nothing is gained; a ticket in a lottery on which no prize is indicated. In Fortune's lottery lies A heap of blanks, like this, for one small prize. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A paper unwritten; a paper without marks or characters a blank ballot; -- especially, a paper on which are to be inserted designated items of information, for which spaces are left vacant; a bland form. The freemen signified their approbation by an inscribed vote, and their dissent by a blank. Palfrey.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A paper containing the substance of a legal instrument, as a deed, release, writ, or execution, with spaces left to be filled with names, date, descriptions, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The point aimed at in a target, marked with a white spot; hence, the object to which anything is directed. Let me still remain The true blank of thine eye. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Aim; shot; range. [Obs.] I have stood . . . within the blank of his displeasure For my free speech. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of base silver money, first coined in England by Henry V., and worth about 8 pence; also, a French coin of the seventeenth century, worth about 4 pence. Nares.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece of metal prepared to be made into something by a further operation, as a coin, screw, nuts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Dominoes)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece or division of a piece, without spots; as, the \"double blank\"; the \"six blank.\" In blank, with an essential portion to be supplied by another; as, to make out a check in blank.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make void; to annul. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To blanch; to make blank; to damp the spirits of; to dispirit or confuse. [Obs.] Each opposite that blanks the face of joy. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Olympian",
+        "absence",
+        "absolute",
+        "aloof",
+        "arid",
+        "awayness",
+        "backward",
+        "bald",
+        "bare",
+        "barren",
+        "bashful",
+        "bewildered",
+        "black",
+        "blah",
+        "bland",
+        "blankminded",
+        "bleached",
+        "blind",
+        "blind-alley",
+        "bloodless",
+        "box",
+        "calm",
+        "cecal",
+        "characterless",
+        "chasm",
+        "chilled",
+        "chilly",
+        "chirograph",
+        "choked",
+        "choked off",
+        "clean slate",
+        "clear",
+        "closed",
+        "cold",
+        "colorless",
+        "complete",
+        "confused",
+        "constrained",
+        "constricted",
+        "contracted",
+        "cool",
+        "dazed",
+        "dead",
+        "dead-end",
+        "deadpan",
+        "deprivation",
+        "detached",
+        "devoid",
+        "discomfited",
+        "disconcerted",
+        "discreet",
+        "dismal",
+        "distant",
+        "docket",
+        "document",
+        "dossier",
+        "downright",
+        "draggy",
+        "drearisome",
+        "dreary",
+        "dry",
+        "dryasdust",
+        "dull",
+        "dusty",
+        "effete",
+        "elephantine",
+        "emotionless",
+        "emptiness",
+        "empty",
+        "empty space",
+        "empty-headed",
+        "empty-minded",
+        "empty-pated",
+        "empty-skulled",
+        "etiolated",
+        "expressionless",
+        "fade",
+        "fatuous",
+        "featureless",
+        "file",
+        "fishy",
+        "flat",
+        "forbidding",
+        "form",
+        "frigid",
+        "frosty",
+        "glassy",
+        "guarded",
+        "heavy",
+        "helpless",
+        "ho-hum",
+        "hollow",
+        "holograph",
+        "icy",
+        "impassive",
+        "impersonal",
+        "inaccessible",
+        "inane",
+        "inanity",
+        "incogitant",
+        "inexcitable",
+        "inexpressive",
+        "insipid",
+        "instrument",
+        "introverted",
+        "jejune",
+        "lack",
+        "leaden",
+        "legal document",
+        "legal instrument",
+        "legal paper",
+        "lifeless",
+        "line",
+        "low-spirited",
+        "mindless",
+        "modest",
+        "naked",
+        "neverness",
+        "nil",
+        "nirvanic",
+        "nonexistence",
+        "nonoccurrence",
+        "nonplussed",
+        "nonpresence",
+        "nothing",
+        "nothingness",
+        "nowhereness",
+        "nude",
+        "null",
+        "null and void",
+        "oblivious",
+        "official document",
+        "offish",
+        "out-and-out",
+        "overlook",
+        "oversight",
+        "pale",
+        "pallid",
+        "paper",
+        "papers",
+        "parchment",
+        "passive",
+        "pedestrian",
+        "perfect",
+        "perplexed",
+        "personal file",
+        "plain",
+        "plodding",
+        "pointless",
+        "poker-faced",
+        "poky",
+        "ponderous",
+        "preterition",
+        "pure",
+        "quietistic",
+        "rattlebrained",
+        "rattleheaded",
+        "regular",
+        "relaxed",
+        "remote",
+        "removed",
+        "repressed",
+        "reserved",
+        "restrained",
+        "reticent",
+        "retiring",
+        "roll",
+        "scatterbrained",
+        "scrip",
+        "script",
+        "scroll",
+        "sheer",
+        "shrinking",
+        "shut",
+        "skip",
+        "slow",
+        "solemn",
+        "space",
+        "spiritless",
+        "squeezed shut",
+        "standoff",
+        "standoffish",
+        "stark",
+        "sterile",
+        "stiff",
+        "stodgy",
+        "straight-out",
+        "strangulated",
+        "stuffy",
+        "subdued",
+        "subtraction",
+        "superficial",
+        "suppressed",
+        "tabula rasa",
+        "tasteless",
+        "tedious",
+        "thoughtfree",
+        "thoughtless",
+        "tranquil",
+        "unadorned",
+        "unadulterated",
+        "unaffable",
+        "unapproachable",
+        "unarrayed",
+        "uncomplicated",
+        "uncongenial",
+        "undecked",
+        "undecorated",
+        "undemonstrative",
+        "undressed",
+        "unembellished",
+        "unexpansive",
+        "unexpressive",
+        "unfurbished",
+        "ungarnished",
+        "ungenial",
+        "unideaed",
+        "unintellectual",
+        "unlively",
+        "unmixed",
+        "unoccupied",
+        "unopen",
+        "unopened",
+        "unornamented",
+        "unqualified",
+        "unreasoning",
+        "unrelieved",
+        "unsophisticated",
+        "unthinking",
+        "untrimmed",
+        "unvarnished",
+        "unvented",
+        "unventilated",
+        "utter",
+        "vacant",
+        "vacuous",
+        "vacuum",
+        "vapid",
+        "void",
+        "want",
+        "white",
+        "with nothing inside",
+        "withdrawn",
+        "without content",
+        "wooden",
+        "writ",
+        "writing",
+        "zero"
+      ]
+    },
+    "blanket": {
+      "word": "BLANKET",
+      "definitions": [
+        {
+          "text": "To cover with a blanket. I'll . . . blanket my loins. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To toss in a blanket by way of punishment. We'll have our men blanket 'em i' the hall. B. Jonson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take the wind out of the sails of (another vessel) by sailing to windward of her. Blanket cattle. See Belted cattle, under Belted.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "across-the-board",
+        "afghan",
+        "all-comprehensive",
+        "all-inclusive",
+        "apply to",
+        "becloud",
+        "bed linen",
+        "bedclothes",
+        "bedcover",
+        "bedding",
+        "bedsheet",
+        "bedspread",
+        "befog",
+        "blind",
+        "block",
+        "buffalo robe",
+        "camouflage",
+        "canopy",
+        "cap",
+        "case",
+        "casual",
+        "cloak",
+        "clothe",
+        "clothes",
+        "cloud",
+        "coat",
+        "comfort",
+        "comforter",
+        "compendious",
+        "complete",
+        "comprehensive",
+        "conceal",
+        "contour sheet",
+        "cope",
+        "counterpane",
+        "cover",
+        "cover up",
+        "coverage",
+        "covering",
+        "coverlet",
+        "coverlid",
+        "covert",
+        "coverture",
+        "cowl",
+        "cowling",
+        "crown",
+        "curtain",
+        "disguise",
+        "dissemble",
+        "distract attention from",
+        "drape",
+        "drapery",
+        "eclipse",
+        "eiderdown",
+        "encyclopedic",
+        "ensconce",
+        "enshroud",
+        "envelop",
+        "film",
+        "fitted sheet",
+        "general",
+        "global",
+        "gloss over",
+        "guise",
+        "hanging",
+        "hide",
+        "hood",
+        "housing",
+        "imprudent",
+        "indiscreet",
+        "indiscriminate",
+        "indiscriminative",
+        "insensitive",
+        "keep under cover",
+        "lap robe",
+        "lay on",
+        "lay over",
+        "linen",
+        "mantle",
+        "mask",
+        "muffle",
+        "nonjudgmental",
+        "obduce",
+        "obfuscate",
+        "obscure",
+        "occult",
+        "omnibus",
+        "over-all",
+        "overcast",
+        "overlay",
+        "overspread",
+        "pall",
+        "panoramic",
+        "patchwork quilt",
+        "pillow slip",
+        "pillowcase",
+        "promiscuous",
+        "put on",
+        "quilt",
+        "robe",
+        "rug",
+        "screen",
+        "scum",
+        "shade",
+        "sheet",
+        "sheeting",
+        "shelter",
+        "shield",
+        "shroud",
+        "slip",
+        "slur over",
+        "spread",
+        "spread over",
+        "superimpose",
+        "superpose",
+        "sweeping",
+        "synoptic",
+        "tactless",
+        "total",
+        "uncritical",
+        "uncriticizing",
+        "undemanding",
+        "undifferentiating",
+        "undiscreet",
+        "undiscriminating",
+        "undiscriminative",
+        "unexacting",
+        "unfastidious",
+        "universal",
+        "unmeticulous",
+        "unparticular",
+        "unselective",
+        "unsubtle",
+        "untactful",
+        "varnish",
+        "veil",
+        "vestment",
+        "whitewash",
+        "whole",
+        "wholesale",
+        "without exception",
+        "without omission"
+      ]
+    },
+    "blanketclause": {
+      "word": "BLANKET CLAUSE",
+      "definitions": [
+        {
+          "text": "A clause, as in a blanket mortgage or policy, that includes a group or class of things, rather than a number mentioned individually and having the burden, loss, or the like, apportioned among them.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanketing": {
+      "word": "BLANKETING",
+      "definitions": [
+        {
+          "text": "Cloth for blankets.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or punishment of tossing in a blanket. That affair of the blanketing happened to thee for the fault thou wast guilty of. Smollett.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanketmortgageblanketpolicy": {
+      "word": "BLANKET MORTGAGE; BLANKET POLICY",
+      "definitions": [
+        {
+          "text": "One that covers a group or class of things or properties instead of one or more things mentioned individually, as where a mortgage secures various debts as a group, or subjects a group or class of different pieces of property to one general lien.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanketstitch": {
+      "word": "BLANKET STITCH",
+      "definitions": [
+        {
+          "text": "A buttonhole stitch worked wide apart on the edge of material, as blankets, too thick to hem.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blankly": {
+      "word": "BLANKLY",
+      "definitions": [
+        {
+          "text": "In a blank manner; without expression; vacuously; as, to stare blankly. G. Eliot.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Directly; flatly; point blank. De Quincey.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blankness": {
+      "word": "BLANKNESS",
+      "definitions": [
+        {
+          "text": "The state of being blank.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanquette": {
+      "word": "BLANQUETTE",
+      "definitions": [
+        {
+          "text": "A white fricassee.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blanquillo": {
+      "word": "BLANQUILLO",
+      "definitions": [
+        {
+          "text": "A large fish of Florida and the W. Indies (Caulolatilus chrysops). It is red, marked with yellow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blare": {
+      "word": "BLARE",
+      "definitions": [
+        {
+          "text": "To sound loudly and somewhat harshly. \"The trumpet blared.\" Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to sound like the blare of a trumpet; to proclaim loudly. To blare its own interpretation. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The harsh noise of a trumpet; a loud and somewhat harsh noise, like the blast of a trumpet; a roar or bellowing. With blare of bugle, clamor of men. Tennyson. His ears are stunned with the thunder's blare. J. R. Drake.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bark",
+        "bawl",
+        "bay",
+        "beep",
+        "belch",
+        "bell",
+        "bellow",
+        "blare forth",
+        "blast",
+        "blat",
+        "blate",
+        "blaze",
+        "blaze abroad",
+        "blazing light",
+        "blazon",
+        "blazon about",
+        "bleat",
+        "blinding light",
+        "blow",
+        "blow the horn",
+        "blubber",
+        "boom",
+        "bray",
+        "breathe",
+        "bright light",
+        "brightness",
+        "brilliance",
+        "brilliancy",
+        "brilliant light",
+        "bugle",
+        "burr",
+        "burst of light",
+        "buzz",
+        "cackle",
+        "call",
+        "caterwaul",
+        "caw",
+        "celebrate",
+        "chant",
+        "chirp",
+        "chirr",
+        "clamor",
+        "clang",
+        "clangor",
+        "clank",
+        "clarion",
+        "clash",
+        "coo",
+        "craunch",
+        "croak",
+        "crow",
+        "crump",
+        "crunch",
+        "cry",
+        "cry out",
+        "dazzling light",
+        "declaim",
+        "drawl",
+        "echo",
+        "effulgence",
+        "exclaim",
+        "fanfare",
+        "flamboyance",
+        "flame",
+        "flare",
+        "flood of light",
+        "flourish of trumpets",
+        "flute",
+        "fulgor",
+        "gasp",
+        "give tongue",
+        "give voice",
+        "glare",
+        "glaring light",
+        "glory",
+        "glow",
+        "grind",
+        "groan",
+        "growl",
+        "grumble",
+        "grunt",
+        "herald",
+        "herald abroad",
+        "hiss",
+        "honk",
+        "howl",
+        "jangle",
+        "jar",
+        "keen",
+        "lilt",
+        "low",
+        "meow",
+        "mew",
+        "mewl",
+        "miaow",
+        "moo",
+        "mumble",
+        "murmur",
+        "mutter",
+        "neigh",
+        "nicker",
+        "noise",
+        "pant",
+        "peal",
+        "pipe",
+        "proclaim",
+        "promulgate",
+        "pule",
+        "radiance",
+        "radiancy",
+        "radiant splendor",
+        "rasp",
+        "refulgence",
+        "refulgency",
+        "resonate",
+        "resound",
+        "resplendence",
+        "resplendency",
+        "reverberate",
+        "ring",
+        "roar",
+        "rumble",
+        "scranch",
+        "scrape",
+        "scratch",
+        "screak",
+        "scream",
+        "screech",
+        "scrunch",
+        "shout",
+        "shriek",
+        "sibilate",
+        "sigh",
+        "sing",
+        "snap",
+        "snarl",
+        "snore",
+        "snort",
+        "sob",
+        "sound",
+        "sound a tattoo",
+        "sound taps",
+        "splendor",
+        "squall",
+        "squawk",
+        "squeak",
+        "squeal",
+        "streaming light",
+        "tantara",
+        "tantarara",
+        "taps",
+        "tarantara",
+        "tattoo",
+        "thunder",
+        "thunder forth",
+        "toot",
+        "tootle",
+        "troat",
+        "trumpet",
+        "trumpet blast",
+        "trumpet call",
+        "trumpet forth",
+        "twang",
+        "tweedle",
+        "ululate",
+        "vividness",
+        "wail",
+        "warble",
+        "whicker",
+        "whine",
+        "whinny",
+        "whisper",
+        "whistle",
+        "wind",
+        "yap",
+        "yawl",
+        "yawp",
+        "yell",
+        "yelp",
+        "yip",
+        "yowl"
+      ]
+    },
+    "blarney": {
+      "word": "BLARNEY",
+      "definitions": [
+        {
+          "text": "Smooth, wheedling talk; flattery. [Colloq.] Blarney stone, a stone in Blarney castle, Ireland, said to make those who kiss it proficient in the use of blarney.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To influence by blarney; to wheedle with smooth talk; to make or accomplish by blarney. \"Blarneyed the landlord.\" Irving. Had blarneyed his way from Long Island. S. G. Goodrich.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adulation",
+        "banter",
+        "blandish",
+        "blandishment",
+        "bunkum",
+        "cajole",
+        "cajolement",
+        "cajolery",
+        "compliment",
+        "con",
+        "eyewash",
+        "fair words",
+        "fawning",
+        "flattery",
+        "grease",
+        "honeyed phrases",
+        "honeyed words",
+        "incense",
+        "oil",
+        "palaver",
+        "praise",
+        "pretty lies",
+        "soap",
+        "soft soap",
+        "soft-soap",
+        "sweet nothings",
+        "sweet talk",
+        "sweet words",
+        "sweet-talk",
+        "sycophancy",
+        "wheedle",
+        "wheedling"
+      ]
+    },
+    "blase": {
+      "word": "BLASE",
+      "definitions": [
+        {
+          "text": "Having the sensibilities deadened by excess or frequency of enjoyment; sated or surfeited with pleasure; used up.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Laodicean",
+        "Olympian",
+        "aloof",
+        "apathetic",
+        "ataractic",
+        "benumbed",
+        "blah",
+        "bored",
+        "carefree",
+        "careless",
+        "casual",
+        "comatose",
+        "cool",
+        "cosmopolitan",
+        "cosmopolite",
+        "dead",
+        "debilitated",
+        "degage",
+        "desensitized",
+        "detached",
+        "devil-may-care",
+        "disabused",
+        "disappointed",
+        "disenchanted",
+        "disillusioned",
+        "disinterested",
+        "dispassionate",
+        "dispirited",
+        "disregardful",
+        "dopey",
+        "dormant",
+        "droopy",
+        "drugged",
+        "dull",
+        "easy",
+        "easygoing",
+        "emotionless",
+        "enervated",
+        "enlightened",
+        "exanimate",
+        "experienced",
+        "fed-up",
+        "free and easy",
+        "good and tired",
+        "heartless",
+        "heavy",
+        "hebetudinous",
+        "heedless",
+        "hopeless",
+        "in a stupor",
+        "inanimate",
+        "inattentive",
+        "incurious",
+        "indifferent",
+        "inert",
+        "inexcitable",
+        "insouciant",
+        "irked",
+        "jaded",
+        "knowing",
+        "lackadaisical",
+        "languid",
+        "languorous",
+        "leaden",
+        "lethargic",
+        "life-weary",
+        "lifeless",
+        "light-hearted",
+        "listless",
+        "lumpish",
+        "mature",
+        "matured",
+        "melancholic",
+        "melancholy",
+        "mindless",
+        "mondaine",
+        "moribund",
+        "negligent",
+        "nonchalant",
+        "not born yesterday",
+        "numb",
+        "numbed",
+        "offhand",
+        "old",
+        "passive",
+        "perfunctory",
+        "phlegmatic",
+        "pluckless",
+        "pococurante",
+        "pooped",
+        "practiced",
+        "put straight",
+        "reckless",
+        "regardless",
+        "resigned",
+        "ripe",
+        "ripened",
+        "robbed of illusion",
+        "sagacious",
+        "sated",
+        "satiated",
+        "seasoned",
+        "set right",
+        "sick",
+        "sick of",
+        "slack",
+        "sleepy",
+        "slow",
+        "sluggish",
+        "somnolent",
+        "sophisticate",
+        "sophisticated",
+        "soporific",
+        "spiritless",
+        "splenetic",
+        "spunkless",
+        "stagnant",
+        "stagnating",
+        "stoic",
+        "stultified",
+        "stupefied",
+        "supercilious",
+        "superior",
+        "supine",
+        "tired",
+        "tired of",
+        "tired of living",
+        "tired to death",
+        "torpid",
+        "tried",
+        "tried and true",
+        "turned-off",
+        "unanxious",
+        "uncaring",
+        "uncharmed",
+        "unconcerned",
+        "undeceived",
+        "undiscriminating",
+        "unimpressed",
+        "uninterested",
+        "unmindful",
+        "unmoved",
+        "unsolicitous",
+        "unspelled",
+        "vegetable",
+        "vegetative",
+        "veteran",
+        "wan",
+        "wearied",
+        "weariful",
+        "weary",
+        "weary unto death",
+        "withdrawn",
+        "world-weary",
+        "world-wise",
+        "worldly",
+        "worldly-wise"
+      ]
+    },
+    "blaspheme": {
+      "word": "BLASPHEME",
+      "definitions": [
+        {
+          "text": "To speak of, or address, with impious irreverence; to revile impiously (anything sacred); as, to blaspheme the Holy Spirit. So Dagon shall be magnified, and God, Besides whom is no god, compared with idols, Disglorified, blasphemed, and had in scorn. Milton. How long, O Lord, holy and true, dost thou not judge and avenge thyself on all those who thus continually blaspheme thy great and all-glorious name Dr. W. Beveridge.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Figuratively, of persons and things not religiously sacred, but held in high honor: To calumniate; to revile; to abuse. You do blaspheme the good in mocking me. Shak. Those who from our labors heap their board, Blaspheme their feeder and forget their lord. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To utter blasphemy. He that shall blaspheme against the Holy Ghost hath never forgiveness. Mark iii. 29.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abuse",
+        "accurse",
+        "anathematize",
+        "belittle",
+        "blast",
+        "calumniate",
+        "confound",
+        "curse",
+        "damn",
+        "darn",
+        "decry",
+        "defame",
+        "deprecate",
+        "depreciate",
+        "disparage",
+        "excommunicate",
+        "execrate",
+        "fulminate against",
+        "hex",
+        "imprecate",
+        "malign",
+        "profane",
+        "put down",
+        "revile",
+        "swear",
+        "throw a whammy",
+        "thunder against",
+        "vilify"
+      ]
+    },
+    "blasphemer": {
+      "word": "BLASPHEMER",
+      "definitions": [
+        {
+          "text": "One who blasphemes. And each blasphemer quite escape the rod, Because the insult's not on man, but God Pope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blasphemous": {
+      "word": "BLASPHEMOUS",
+      "definitions": [
+        {
+          "text": "Speaking or writing blasphemy; uttering or exhibiting anything impiously irreverent; profane; as, a blasphemous person; containing blasphemy; as, a blasphemous book; a blasphemous caricature. \"Blasphemous publications.\" Porteus. Nor from the Holy One of Heaven Refrained his tongue blasphemous. Milton. the above example.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Rabelaisian",
+        "abusive",
+        "apostate",
+        "atheistic",
+        "backsliding",
+        "calumniatory",
+        "calumnious",
+        "comminatory",
+        "contumelious",
+        "cursing",
+        "damnatory",
+        "denunciatory",
+        "dirty",
+        "disrespectful",
+        "dysphemistic",
+        "epithetic",
+        "evil",
+        "excommunicative",
+        "excommunicatory",
+        "execratory",
+        "fallen",
+        "fallen from grace",
+        "foul",
+        "fulminatory",
+        "impious",
+        "imprecatory",
+        "iniquitous",
+        "irreligious",
+        "irreverent",
+        "lapsed",
+        "maledictory",
+        "obscene",
+        "profanatory",
+        "profane",
+        "raw",
+        "recidivist",
+        "recidivistic",
+        "recreant",
+        "renegade",
+        "ribald",
+        "risque",
+        "sacrilegious",
+        "scatologic",
+        "scurrile",
+        "scurrilous",
+        "sinful",
+        "undutiful",
+        "vile",
+        "vituperative",
+        "wicked"
+      ]
+    },
+    "blasphemously": {
+      "word": "BLASPHEMOUSLY",
+      "definitions": [
+        {
+          "text": "In a blasphemous manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blasphemy": {
+      "word": "BLASPHEMY",
+      "definitions": [
+        {
+          "text": "An indignity offered to God in words, writing, or signs; impiously irreverent words or signs addressed to, or used in reference to, God; speaking evil of God; also, the act of claiming the attributes or prerogatives of deity. the use of irreverent words or signs in reference to the Supreme Being in such a way as to produce scandal or provoke violence.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Figuratively, of things held in high honor: Calumny; abuse; vilification. Punished for his blasphemy against learning. Bacon. -BLAST -blast. Etym: [Gr. sprout, shoot.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A suffix or terminal formative, used principally in biological terms, and signifying growth, formation; as, bioblast, epiblast, mesoblast, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abuse",
+        "affront",
+        "anathema",
+        "ban",
+        "befouling",
+        "billingsgate",
+        "blasphemousness",
+        "commination",
+        "curse",
+        "cursing",
+        "cussing",
+        "damnation",
+        "denunciation",
+        "desecration",
+        "evil eye",
+        "excommunication",
+        "execration",
+        "fulmination",
+        "hex",
+        "impiety",
+        "imprecation",
+        "indignity",
+        "insult",
+        "malison",
+        "malocchio",
+        "profanation",
+        "profaneness",
+        "profanity",
+        "proscription",
+        "sacrilege",
+        "sacrilegiousness",
+        "scurrility",
+        "swearing",
+        "thundering",
+        "violation",
+        "vituperation",
+        "whammy"
+      ]
+    },
+    "blast": {
+      "word": "BLAST",
+      "definitions": [
+        {
+          "text": "A violent gust of wind. And see where surly Winter passes off, Far to the north, and calls his ruffian blasts; His blasts obey, and quit the howling hill. Thomson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A forcible stream of air from an orifice, as from a bellows, the mouth, etc. Hence: The continuous blowing to which one charge of ore or metal is subjected in a furnace; as, to melt so many tons of iron at a blast. whether the current is heated or not heated before entering the furnace. A blast furnace is said to be in blast while it is in operation, and out of blast when not in use.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The exhaust steam from and engine, driving a column of air out of a boiler chimney, and thus creating an intense draught through the fire; also, any draught produced by the blast.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The sound made by blowing a wind instrument; strictly, the sound produces at one breath. One blast upon his bugle horn Were worth a thousand men. Sir W. Scott. The blast of triumph o'er thy grave. Bryant.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sudden, pernicious effect, as if by a noxious wind, especially on animals and plants; a blight. By the blast of God they perish. Job iv. 9. Virtue preserved from fell destruction's blast. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of rending, or attempting to rend, heavy masses of rock, earth, etc., by the explosion of gunpowder, dynamite, etc.; also, the charge used for this purpose. \"Large blasts are often used.\" Tomlinson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A flatulent disease of sheep. Blast furnace, a furnace, usually a shaft furnace for smelting ores, into which air is forced by pressure. water enters. a blast pipe; -- called also blast orifice. activity. See Blast, n., 2. [Colloq.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To injure, as by a noxious wind; to cause to wither; to stop or check the growth of, and prevent from fruit-bearing, by some pernicious influence; to blight; to shrivel. Seven thin ears, and blasted with the east wind. Gen. xii. 6.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Hence, to affect with some sudden violence, plague, calamity, or blighting influence, which destroys or causes to fail; to visit with a curse; to curse; to ruin; as, to blast pride, hopes, or character. I'll cross it, though it blast me. Shak. Blasted with excess of light. T. Gray.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To confound by a loud blast or din. Trumpeters, With brazen din blast you the city's ear. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To rend open by any explosive agent, as gunpowder, dynamite, etc.; to shatter; as, to blast rocks.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be blighted or withered; as, the bud blasted in the blossom.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To blow; to blow on a trumpet. [Obs.] Toke his blake trumpe faste And gan to puffen and to blaste. Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Bedlam let loose",
+        "accurse",
+        "aim at",
+        "anathematize",
+        "at full blast",
+        "attack",
+        "awake the dead",
+        "backfire",
+        "baffle",
+        "balk",
+        "bang",
+        "bark",
+        "barrage",
+        "bay",
+        "beat",
+        "bedlam",
+        "beep",
+        "bell",
+        "bellow",
+        "belt",
+        "blare",
+        "blaspheme",
+        "blast",
+        "blast the ear",
+        "blast-freeze",
+        "blat",
+        "blight",
+        "blitz",
+        "blot out",
+        "blow",
+        "blow a hurricane",
+        "blow great guns",
+        "blow out",
+        "blow over",
+        "blow the horn",
+        "blow to pieces",
+        "blow up",
+        "blowout",
+        "blowup",
+        "bluster",
+        "bobbery",
+        "bomb",
+        "bombard",
+        "boom",
+        "brave",
+        "brawl",
+        "bray",
+        "breeze",
+        "breeze up",
+        "brew",
+        "brouhaha",
+        "bugle",
+        "bump off",
+        "burst",
+        "bust",
+        "cancer",
+        "canker",
+        "cannon",
+        "cannonade",
+        "challenge",
+        "charge",
+        "charivari",
+        "checkmate",
+        "chirm",
+        "circumvent",
+        "clamor",
+        "clangor",
+        "clap",
+        "clarion",
+        "clatter",
+        "clobber",
+        "come up",
+        "commence firing",
+        "commotion",
+        "completely",
+        "confound",
+        "confront",
+        "congeal",
+        "contravene",
+        "counter",
+        "counteract",
+        "countermand",
+        "counterwork",
+        "crack",
+        "crash",
+        "crescendo",
+        "criticize",
+        "croak",
+        "cross",
+        "curse",
+        "damage",
+        "damn",
+        "darn",
+        "dash",
+        "deafen",
+        "defame",
+        "defeat",
+        "defy",
+        "demolish",
+        "denounce",
+        "destroy",
+        "detonate",
+        "detonation",
+        "devastate",
+        "din",
+        "discharge",
+        "discomfit",
+        "disconcert",
+        "discord",
+        "discountenance",
+        "discredit",
+        "dish",
+        "disrupt",
+        "do in",
+        "donnybrook",
+        "drub",
+        "drunken brawl",
+        "dry rot",
+        "dust",
+        "dustup",
+        "dynamite",
+        "elude",
+        "enfilade",
+        "entirely",
+        "erase",
+        "eruption",
+        "excommunicate",
+        "execrate",
+        "explode",
+        "explosion",
+        "fanfare",
+        "fill the air",
+        "fire",
+        "fire a volley",
+        "fire at",
+        "fire upon",
+        "fix",
+        "flap",
+        "flare",
+        "flash",
+        "flaw",
+        "flourish of trumpets",
+        "flummox",
+        "flurry",
+        "foil",
+        "fracas",
+        "free-for-all",
+        "freeze",
+        "freeze solid",
+        "freshen",
+        "frustrate",
+        "fulguration",
+        "fully",
+        "fulminate",
+        "fulminate against",
+        "fulmination",
+        "fungus",
+        "fusillade",
+        "gale",
+        "gather",
+        "get",
+        "give the business",
+        "glaciate",
+        "glacify",
+        "go off",
+        "gun down",
+        "gunshot",
+        "gust",
+        "hell broke loose",
+        "hex",
+        "hit",
+        "honk",
+        "howl",
+        "hubbub",
+        "hue and cry",
+        "huff",
+        "hullabaloo",
+        "ice",
+        "imprecate",
+        "injure",
+        "jangle",
+        "knock the chocks",
+        "lambaste",
+        "larrup",
+        "lay out",
+        "lay waste",
+        "let off",
+        "lick",
+        "load",
+        "loud noise",
+        "maximally",
+        "mildew",
+        "mine",
+        "mold",
+        "mortar",
+        "moth",
+        "moth and rust",
+        "must",
+        "nip",
+        "noise",
+        "noise and shouting",
+        "nonplus",
+        "off",
+        "open fire",
+        "open up on",
+        "outcry",
+        "overwhelm",
+        "pandemonium",
+        "payload",
+        "peal",
+        "pepper",
+        "perplex",
+        "pest",
+        "pipe",
+        "pipe up",
+        "polish off",
+        "pop",
+        "pop at",
+        "puff",
+        "quick-freeze",
+        "racket",
+        "rage",
+        "rake",
+        "rattle",
+        "rattle the windows",
+        "refreeze",
+        "regelate",
+        "rend the air",
+        "rend the ears",
+        "report",
+        "resound",
+        "rhubarb",
+        "ring",
+        "rise",
+        "roar",
+        "rock the sky",
+        "rot",
+        "row",
+        "rub out",
+        "ruckus",
+        "ruction",
+        "ruin",
+        "rumble",
+        "rumpus",
+        "rust",
+        "sabotage",
+        "salvo",
+        "scotch",
+        "scud",
+        "set in",
+        "set off",
+        "settle",
+        "shatter",
+        "shell",
+        "shellac",
+        "shindy",
+        "shivaree",
+        "shoot",
+        "shoot at",
+        "shot",
+        "shriek",
+        "shrivel",
+        "slam",
+        "slug",
+        "smash",
+        "smut",
+        "snipe",
+        "snipe at",
+        "sound",
+        "sound a tattoo",
+        "sound taps",
+        "spike",
+        "split the eardrums",
+        "split the ears",
+        "spoil",
+        "spring",
+        "squall",
+        "squeal",
+        "startle the echoes",
+        "stonewall",
+        "storm",
+        "strafe",
+        "stump",
+        "stun",
+        "stunt",
+        "surge",
+        "swell",
+        "take aim at",
+        "take care of",
+        "tantara",
+        "tantarara",
+        "taps",
+        "tarantara",
+        "tattoo",
+        "thoroughly",
+        "throw a whammy",
+        "thunder",
+        "thunder against",
+        "thunderclap",
+        "thwart",
+        "tintamarre",
+        "toot",
+        "tootle",
+        "torpedo",
+        "touch off",
+        "trumpet",
+        "trumpet blast",
+        "trumpet call",
+        "tumult",
+        "tweedle",
+        "uproar",
+        "upset",
+        "volley",
+        "waft",
+        "wallop",
+        "warhead",
+        "waste",
+        "wham",
+        "whiff",
+        "whiffle",
+        "whistle",
+        "wind",
+        "wind gust",
+        "wipe out",
+        "wither",
+        "worm",
+        "wreck",
+        "zap",
+        "zero in on"
+      ]
+    },
+    "blasted": {
+      "word": "BLASTED",
+      "definitions": [
+        {
+          "text": "Blighted; withered. Upon this blasted heath. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Confounded; accursed; detestable. Some of her own blasted gypsies. Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Rent open by an explosive. The blasted quarry thunders, heard remote. Wordsworth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ausgespielt",
+        "baffled",
+        "balked",
+        "bankrupt",
+        "betrayed",
+        "bilked",
+        "blamed",
+        "blankety-blank",
+        "blessed",
+        "blighted",
+        "blown",
+        "broken",
+        "chapfallen",
+        "confounded",
+        "crestfallen",
+        "crossed",
+        "crushed",
+        "cursed",
+        "cussed",
+        "dadburned",
+        "danged",
+        "darned",
+        "dashed",
+        "defeated",
+        "desolated",
+        "despoiled",
+        "destroyed",
+        "deuced",
+        "devastated",
+        "disappointed",
+        "dished",
+        "disillusioned",
+        "dissatisfied",
+        "doggone",
+        "doggoned",
+        "done for",
+        "done in",
+        "down-and-out",
+        "fallen",
+        "finished",
+        "flyblown",
+        "foiled",
+        "frowsty",
+        "frowsy",
+        "frowzy",
+        "frustrated",
+        "fusty",
+        "goldanged",
+        "goldarned",
+        "gone to pot",
+        "goshdarn",
+        "gross",
+        "ill done-by",
+        "ill-served",
+        "in ruins",
+        "irremediable",
+        "kaput",
+        "let down",
+        "maggoty",
+        "mildewed",
+        "moldering",
+        "moldy",
+        "moth-eaten",
+        "musty",
+        "out of countenance",
+        "outright",
+        "overthrown",
+        "positive",
+        "rank",
+        "ravaged",
+        "regretful",
+        "ruddy",
+        "ruined",
+        "ruinous",
+        "smutted",
+        "smutty",
+        "sorely disappointed",
+        "soured",
+        "spoiled",
+        "thwarted",
+        "undone",
+        "unmitigated",
+        "wasted",
+        "weevily",
+        "worm-eaten",
+        "wormy",
+        "wrecked"
+      ]
+    },
+    "blastema": {
+      "word": "BLASTEMA",
+      "definitions": [
+        {
+          "text": "The structureless, protoplasmic tissue of the embryo; the primitive basis of an organ yet unformed, from which it grows.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastemal": {
+      "word": "BLASTEMAL",
+      "definitions": [
+        {
+          "text": "Relating to the blastema; rudimentary.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastematic": {
+      "word": "BLASTEMATIC",
+      "definitions": [
+        {
+          "text": "Connected with, or proceeding from, the blastema; blastemal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blaster": {
+      "word": "BLASTER",
+      "definitions": [
+        {
+          "text": "One who, or that which, blasts or destroys.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastide": {
+      "word": "BLASTIDE",
+      "definitions": [
+        {
+          "text": "A small, clear space in the segments of the ovum, the precursor of the nucleus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blasting": {
+      "word": "BLASTING",
+      "definitions": [
+        {
+          "text": "A blast; destruction by a blast, or by some pernicious cause. I have smitten you with blasting and mildew. Amos iv. 9.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or process of one who, or that which, blasts; the business of one who blasts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "atmospherics",
+        "banging",
+        "blaring",
+        "blind spot",
+        "bursting",
+        "cracking",
+        "crashing",
+        "crawling",
+        "creeping",
+        "drift",
+        "exploding",
+        "explosive",
+        "fade-out",
+        "fading",
+        "flapping",
+        "interference",
+        "knocking",
+        "noise",
+        "popping",
+        "rapping",
+        "reception",
+        "slapping",
+        "slatting",
+        "static",
+        "tapping"
+      ]
+    },
+    "blastlamp": {
+      "word": "BLAST LAMP",
+      "definitions": [
+        {
+          "text": "A lamp provided with some arrangement for intensifying combustion by means of a blast.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastment": {
+      "word": "BLASTMENT",
+      "definitions": [
+        {
+          "text": "A sudden stroke or injury produced by some destructive cause.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastocarpous": {
+      "word": "BLASTOCARPOUS",
+      "definitions": [
+        {
+          "text": "Germinating inside the pericarp, as the mangrove. Brande & C.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastocoele": {
+      "word": "BLASTOCOELE",
+      "definitions": [
+        {
+          "text": "The cavity of the blastosphere, or segmentation cavity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastocyst": {
+      "word": "BLASTOCYST",
+      "definitions": [
+        {
+          "text": "The germinal vesicle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastoderm": {
+      "word": "BLASTODERM",
+      "definitions": [
+        {
+          "text": "The germinal membrane in an ovum, from which the embryo is developed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastodermaticblastodermic": {
+      "word": "BLASTODERMATIC; BLASTODERMIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the blastoderm.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastogenesis": {
+      "word": "BLASTOGENESIS",
+      "definitions": [
+        {
+          "text": "Multiplication or increase by gemmation or budding.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastoid": {
+      "word": "BLASTOID",
+      "definitions": [
+        {
+          "text": "One of the Blastoidea.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastoidea": {
+      "word": "BLASTOIDEA",
+      "definitions": [
+        {
+          "text": "One of the divisions of Crinoidea found fossil in paleozoic rocks; pentremites. They are so named on account of their budlike form.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastomere": {
+      "word": "BLASTOMERE",
+      "definitions": [
+        {
+          "text": "One of the segments first formed by the division of the ovum. Balfour.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastophoralblastophoric": {
+      "word": "BLASTOPHORAL; BLASTOPHORIC",
+      "definitions": [
+        {
+          "text": "Relating to the blastophore.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastophore": {
+      "word": "BLASTOPHORE",
+      "definitions": [
+        {
+          "text": "That portion of the spermatospore which is not converted into spermatoblasts, but carries them.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastopore": {
+      "word": "BLASTOPORE",
+      "definitions": [
+        {
+          "text": "The pore or opening leading into the cavity of invagination, or archenteron.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastosphere": {
+      "word": "BLASTOSPHERE",
+      "definitions": [
+        {
+          "text": "The hollow globe or sphere formed by the arrangement of the blastomeres on the periphery of an impregnated ovum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastostyle": {
+      "word": "BLASTOSTYLE",
+      "definitions": [
+        {
+          "text": "In certain hydroids, an imperfect zooid, whose special function is to produce medusoid buds. See Hydroidea, and Athecata.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastpipe": {
+      "word": "BLAST PIPE",
+      "definitions": [
+        {
+          "text": "The exhaust pipe of a steam engine, or any pipe delivering steam or air, when so constructed as to cause a blast.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastula": {
+      "word": "BLASTULA",
+      "definitions": [
+        {
+          "text": "That stage in the development of the ovum in which the outer cells of the morula become more defined and form the blastoderm.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blastule": {
+      "word": "BLASTULE",
+      "definitions": [
+        {
+          "text": "Same as Blastula.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blasty": {
+      "word": "BLASTY",
+      "definitions": [
+        {
+          "text": "Affected by blasts; gusty.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Causing blast or injury. [Obs.] Boyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "aeolian",
+        "airish",
+        "airy",
+        "blowy",
+        "blustering",
+        "blusterous",
+        "blustery",
+        "boreal",
+        "breezy",
+        "brisk",
+        "drafty",
+        "favonian",
+        "flawy",
+        "fresh",
+        "gusty",
+        "puffy",
+        "squally",
+        "windy"
+      ]
+    },
+    "blat": {
+      "word": "BLAT",
+      "definitions": [
+        {
+          "text": "To cry, as a calf or sheep; to bleat; to make a senseless noise; to talk inconsiderately. [Low]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To utter inconsiderately. [Low] If I have anything on my mind, I have to blat it right out. W. D. Howells.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "bark",
+        "bawl",
+        "bay",
+        "beep",
+        "belch",
+        "bell",
+        "bellow",
+        "blare",
+        "blast",
+        "blate",
+        "bleat",
+        "blow",
+        "blow the horn",
+        "blubber",
+        "blurt out",
+        "bolt",
+        "boom",
+        "bray",
+        "breathe",
+        "bugle",
+        "burr",
+        "buzz",
+        "cackle",
+        "call",
+        "caterwaul",
+        "caw",
+        "chant",
+        "chirp",
+        "chirr",
+        "clang",
+        "clangor",
+        "clank",
+        "clarion",
+        "clash",
+        "coo",
+        "craunch",
+        "croak",
+        "crow",
+        "crump",
+        "crunch",
+        "cry",
+        "cry out",
+        "drawl",
+        "ejaculate",
+        "exclaim",
+        "fanfare",
+        "flourish of trumpets",
+        "flute",
+        "gasp",
+        "give tongue",
+        "give voice",
+        "grind",
+        "groan",
+        "growl",
+        "grumble",
+        "grunt",
+        "hiss",
+        "honk",
+        "howl",
+        "jangle",
+        "jar",
+        "keen",
+        "lilt",
+        "low",
+        "meow",
+        "mew",
+        "mewl",
+        "miaow",
+        "moo",
+        "mumble",
+        "murmur",
+        "mutter",
+        "neigh",
+        "nicker",
+        "pant",
+        "peal",
+        "pipe",
+        "pule",
+        "rasp",
+        "roar",
+        "rumble",
+        "scranch",
+        "scrape",
+        "scratch",
+        "screak",
+        "scream",
+        "screech",
+        "scrunch",
+        "shriek",
+        "sibilate",
+        "sigh",
+        "sing",
+        "snap",
+        "snarl",
+        "snore",
+        "snort",
+        "sob",
+        "sound",
+        "sound a tattoo",
+        "sound taps",
+        "squall",
+        "squawk",
+        "squeak",
+        "squeal",
+        "tantara",
+        "tantarara",
+        "taps",
+        "tarantara",
+        "tattoo",
+        "thunder",
+        "toot",
+        "tootle",
+        "troat",
+        "trumpet",
+        "trumpet blast",
+        "trumpet call",
+        "twang",
+        "tweedle",
+        "ululate",
+        "wail",
+        "warble",
+        "whicker",
+        "whine",
+        "whinny",
+        "whisper",
+        "whistle",
+        "wind",
+        "yap",
+        "yawl",
+        "yawp",
+        "yell",
+        "yelp",
+        "yip",
+        "yowl"
+      ]
+    },
+    "blatancy": {
+      "word": "BLATANCY",
+      "definitions": [
+        {
+          "text": "Blatant quality.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "arrantness",
+        "boldness",
+        "brazenness",
+        "clamorousness",
+        "colorfulness",
+        "conspicuousness",
+        "crudeness",
+        "dash",
+        "dazzle",
+        "dazzlingness",
+        "extravagance",
+        "extravaganza",
+        "extravagation",
+        "flagrance",
+        "flagrancy",
+        "flamboyance",
+        "flashiness",
+        "gaiety",
+        "garishness",
+        "gaudery",
+        "gaudiness",
+        "glare",
+        "glitter",
+        "gorgeousness",
+        "high relief",
+        "jauntiness",
+        "jazziness",
+        "loudness",
+        "luridness",
+        "meretriciousness",
+        "noisiness",
+        "noticeability",
+        "notoriety",
+        "notoriousness",
+        "obtrusiveness",
+        "ostentation",
+        "outstandingness",
+        "panache",
+        "prominence",
+        "pronouncedness",
+        "salience",
+        "saliency",
+        "sensationalism",
+        "shamelessness",
+        "showiness",
+        "sportiness",
+        "strikingness",
+        "strong relief",
+        "tawdriness",
+        "vociferousness",
+        "vulgarness"
+      ]
+    },
+    "blatant": {
+      "word": "BLATANT",
+      "definitions": [
+        {
+          "text": "Bellowing, as a calf; bawling; brawling; clamoring; disagreeably clamorous; sounding loudly and harshly. \"Harsh and blatant tone.\" R. H. Dana. A monster, which the blatant beast men call. Spenser. Glory, that blatant word, which haunts some military minds like the bray of the trumpet. W. Irving.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "arrant",
+        "barefaced",
+        "bawling",
+        "bellowing",
+        "blaring",
+        "blatting",
+        "blustering",
+        "boanergean",
+        "boisterous",
+        "bold",
+        "brassy",
+        "brawling",
+        "brazen",
+        "brazenfaced",
+        "chintzy",
+        "clamant",
+        "clamorous",
+        "clamoursome",
+        "clanging",
+        "clangorous",
+        "clattery",
+        "colorful",
+        "conspicuous",
+        "crude",
+        "crying",
+        "extravagant",
+        "flagrant",
+        "flaring",
+        "flashy",
+        "flaunting",
+        "garish",
+        "gaudy",
+        "glaring",
+        "gorgeous",
+        "hanging out",
+        "howling",
+        "impudent",
+        "in relief",
+        "in the foreground",
+        "loud",
+        "loudmouthed",
+        "lowing",
+        "lurid",
+        "mafficking",
+        "meretricious",
+        "mugient",
+        "multivocal",
+        "noiseful",
+        "noisy",
+        "notable",
+        "noticeable",
+        "notorious",
+        "obstreperous",
+        "obtrusive",
+        "obvious",
+        "openmouthed",
+        "ostensible",
+        "outstanding",
+        "overbold",
+        "overt",
+        "palpable",
+        "prominent",
+        "pronounced",
+        "puling",
+        "rackety",
+        "rip-roaring",
+        "rowdy",
+        "salient",
+        "screaming",
+        "sensational",
+        "shameless",
+        "shouting",
+        "spectacular",
+        "staring",
+        "stark-staring",
+        "sticking out",
+        "strepitant",
+        "strepitous",
+        "strident",
+        "striking",
+        "tawdry",
+        "tinsel",
+        "tumultuous",
+        "turbulent",
+        "ululant",
+        "unabashed",
+        "unashamed",
+        "unblushing",
+        "uproarious",
+        "vociferant",
+        "vociferating",
+        "vociferous",
+        "vulgar",
+        "wailing",
+        "whining",
+        "yammering",
+        "yapping",
+        "yelling",
+        "yelping"
+      ]
+    },
+    "blatantly": {
+      "word": "BLATANTLY",
+      "definitions": [
+        {
+          "text": "In a blatant manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "abominably",
+        "agonizingly",
+        "arrantly",
+        "awfully",
+        "baldly",
+        "balefully",
+        "bitterly",
+        "boldly",
+        "brashly",
+        "brazenfacedly",
+        "brazenly",
+        "colorfully",
+        "confoundedly",
+        "conspicuously",
+        "cruelly",
+        "damnably",
+        "deadly",
+        "deathly",
+        "deucedly",
+        "distressingly",
+        "dolorously",
+        "dreadfully",
+        "egregiously",
+        "excessively",
+        "excruciatingly",
+        "exorbitantly",
+        "extravagantly",
+        "flagrantly",
+        "flaringly",
+        "frightfully",
+        "garishly",
+        "gaudily",
+        "glaringly",
+        "gorgeously",
+        "grievously",
+        "hellishly",
+        "horribly",
+        "improperly",
+        "inexcusably",
+        "infernally",
+        "inordinately",
+        "intolerably",
+        "lamentably",
+        "luridly",
+        "markedly",
+        "miserably",
+        "nakedly",
+        "notably",
+        "noticeably",
+        "notoriously",
+        "obtrusively",
+        "openly",
+        "ostensibly",
+        "outstandingly",
+        "painfully",
+        "piteously",
+        "prominently",
+        "pronouncedly",
+        "sadly",
+        "saliently",
+        "sensationally",
+        "shamelessly",
+        "shatteringly",
+        "shockingly",
+        "something awful",
+        "something fierce",
+        "sorely",
+        "staggeringly",
+        "staringly",
+        "strikingly",
+        "tawdrily",
+        "terribly",
+        "torturously",
+        "unashamedly",
+        "unbearably",
+        "unconscionably",
+        "unduly",
+        "unpardonably",
+        "woefully"
+      ]
+    },
+    "blather": {
+      "word": "BLATHER",
+      "definitions": [
+        {
+          "text": "To talk foolishly, or nonsensically. G. Eliot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Voluble, foolish, or nonsensical talk; -- often in the pl. Hall Caine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "absurdity",
+        "amphigory",
+        "babble",
+        "babblement",
+        "balderdash",
+        "bavardage",
+        "be stupid",
+        "bibble-babble",
+        "blab",
+        "blabber",
+        "blah-blah",
+        "blatherskite",
+        "blether",
+        "blethers",
+        "blither",
+        "bombast",
+        "bosh",
+        "bull",
+        "bullshit",
+        "bunkum",
+        "burble",
+        "cackle",
+        "caquet",
+        "caqueterie",
+        "chat",
+        "chatter",
+        "chitter-chatter",
+        "clack",
+        "claptrap",
+        "clatter",
+        "dither",
+        "dote",
+        "double-talk",
+        "drivel",
+        "drool",
+        "fiddle-faddle",
+        "fiddledeedee",
+        "flapdoodle",
+        "flimflam",
+        "flummery",
+        "folderol",
+        "fudge",
+        "fustian",
+        "gab",
+        "gabble",
+        "galimatias",
+        "gammon",
+        "gas",
+        "gibber",
+        "gibberish",
+        "gibble-gabble",
+        "go on",
+        "gobbledygook",
+        "gossip",
+        "guff",
+        "gush",
+        "haver",
+        "hocus-pocus",
+        "hokum",
+        "hot air",
+        "humbug",
+        "idle talk",
+        "jabber",
+        "jargon",
+        "jaw",
+        "jazz",
+        "malarkey",
+        "maunder",
+        "mere talk",
+        "mumbo jumbo",
+        "narrishkeit",
+        "natter",
+        "niaiserie",
+        "nonsense",
+        "nonsense talk",
+        "pack of nonsense",
+        "palaver",
+        "patter",
+        "piffle",
+        "poppycock",
+        "pour forth",
+        "prate",
+        "prating",
+        "prattle",
+        "prittle-prattle",
+        "ramble on",
+        "rant",
+        "rattle",
+        "rattle on",
+        "reel off",
+        "rigamarole",
+        "rigmarole",
+        "rodomontade",
+        "rubbish",
+        "run on",
+        "skimble-skamble",
+        "slobber",
+        "spout",
+        "spout off",
+        "stuff and nonsense",
+        "stultiloquence",
+        "talk away",
+        "talk nonsense",
+        "talk on",
+        "talkee-talkee",
+        "tittle-tattle",
+        "trash",
+        "trumpery",
+        "twaddle",
+        "twattle",
+        "twiddle-twaddle",
+        "vapor",
+        "vaporing",
+        "waffle",
+        "waffling",
+        "yak",
+        "yakkety-yak"
+      ]
+    },
+    "blatherskite": {
+      "word": "BLATHERSKITE",
+      "definitions": [
+        {
+          "text": "A blustering, talkative fellow. [Local slang, U. S.] Barllett.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blatter": {
+      "word": "BLATTER",
+      "definitions": [
+        {
+          "text": "To prate; to babble; to rail; to make a senseless noise; to patter. [Archaic] \"The rain blattered.\" Jeffrey. They procured . . . preachers to blatter against me, . . . so that they had place and time to belie me shamefully. Latimer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blatteration": {
+      "word": "BLATTERATION",
+      "definitions": [
+        {
+          "text": "Blattering.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blatterer": {
+      "word": "BLATTERER",
+      "definitions": [
+        {
+          "text": "One who blatters; a babbler; a noisy, blustering boaster.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blattering": {
+      "word": "BLATTERING",
+      "definitions": [
+        {
+          "text": "Senseless babble or boasting.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blatteroon": {
+      "word": "BLATTEROON",
+      "definitions": [
+        {
+          "text": "A senseless babbler or boaster. [Obs.] \"I hate such blatteroons.\" Howell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blaubok": {
+      "word": "BLAUBOK",
+      "definitions": [
+        {
+          "text": "The blue buck. See Blue buck, under Blue.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blay": {
+      "word": "BLAY",
+      "definitions": [
+        {
+          "text": "A fish. See Bleak, n.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blaze": {
+      "word": "BLAZE",
+      "definitions": [
+        {
+          "text": "A stream of gas or vapor emitting light and heat in the process of combustion; a bright flame. \"To heaven the blaze uprolled.\" Croly.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Intense, direct light accompanied with heat; as, to seek shelter from the blaze of the sun. O dark, dark, dark, amid the blaze of noon! Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bursting out, or active display of any quality; an outburst; a brilliant display. \"Fierce blaze of riot.\" \"His blaze of wrath.\" Shak. For what is glory but the blaze of fame Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "[Cf. D. bles; akin to E. blaze light.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A white spot on the forehead of a horse.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spot made on trees by chipping off a piece of the bark, usually as a surveyor's mark. Three blazes in a perpendicular line on the same tree indicating a legislative road, the single blaze a settlement or neighborhood road. Carlton. In a blaze, on fire; burning with a flame; filled with, giving, or reflecting light; excited or exasperated. blazes tear.\" Poem in Essex dialect. something extreme or excessive, especially of something very bad; as, blue as blazes. Neal. gas. In blaze the idea of light rapidly evolved is prominent, with or without heat; as, the blaze of the sun or of a meteor. Flame includes a stronger notion of heat; as, he perished in the flames.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To shine with flame; to glow with flame; as, the fire blazes.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To send forth or reflect glowing or brilliant light; to show a blaze. And far and wide the icy summit blazed. Wordsworth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be resplendent. Macaulay. To blaze away, to discharge a firearm, or to continue firing; -- said esp. of a number of persons, as a line of soldiers. Also used (fig.) of speech or action. [Colloq.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark (a tree) by chipping off a piece of the bark. I found my way by the blazed trees. Hoffman.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To designate by blazing; to mark out, as by blazed trees; as, to blaze a line or path. Champollion died in 1832, having done little more than blaze out the road to be traveled by others. Nott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make public far and wide; to make known; to render conspicuous. On charitable lists he blazed his name. Pollok. To blaze those virtues which the good would hide. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To blazon. [Obs.] Peacham.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Vandyke",
+        "arrow",
+        "backfire",
+        "bake",
+        "balefire",
+        "be bright",
+        "be in heat",
+        "beacon",
+        "beacon fire",
+        "beam",
+        "bedazzle",
+        "birthmark",
+        "blare",
+        "blare forth",
+        "blast",
+        "blaze a trail",
+        "blaze abroad",
+        "blaze of light",
+        "blaze up",
+        "blazing light",
+        "blazon",
+        "blazon about",
+        "blemish",
+        "blind",
+        "blinding light",
+        "blister",
+        "bloom",
+        "blotch",
+        "boil",
+        "bombard",
+        "bonfire",
+        "brand",
+        "bright light",
+        "brightness",
+        "brilliance",
+        "brilliancy",
+        "brilliant light",
+        "broil",
+        "burn",
+        "burn in",
+        "burn off",
+        "burning ghat",
+        "burst",
+        "burst into flame",
+        "burst of light",
+        "campfire",
+        "cast",
+        "caste mark",
+        "catch",
+        "catch fire",
+        "catch on fire",
+        "cauterize",
+        "celebrate",
+        "chalk",
+        "chalk up",
+        "char",
+        "check",
+        "check off",
+        "checkmark",
+        "cheerful fire",
+        "choke",
+        "chop",
+        "cicatrix",
+        "cicatrize",
+        "cleft",
+        "coal",
+        "combust",
+        "combustion",
+        "compass needle",
+        "conflagration",
+        "convulsion",
+        "cook",
+        "corposant",
+        "coruscate",
+        "cozy fire",
+        "crack",
+        "crackling fire",
+        "crematory",
+        "crena",
+        "crenellate",
+        "crenulate",
+        "crimp",
+        "cry",
+        "cry out",
+        "cupel",
+        "cut",
+        "cyclone",
+        "dapple",
+        "dash",
+        "daze",
+        "dazzle",
+        "dazzling light",
+        "death fire",
+        "declaim",
+        "define",
+        "deflagration",
+        "delimit",
+        "demarcate",
+        "depression",
+        "diffuse light",
+        "direction",
+        "direction post",
+        "discolor",
+        "discoloration",
+        "dot",
+        "earmark",
+        "effulgence",
+        "engrave",
+        "engraving",
+        "eruption",
+        "explosion",
+        "facula",
+        "fen fire",
+        "finger post",
+        "fire",
+        "fire up",
+        "fist",
+        "fit",
+        "flamboyance",
+        "flame",
+        "flame up",
+        "flare",
+        "flare up",
+        "flare-up",
+        "flash",
+        "flash fire",
+        "flashing point",
+        "fleck",
+        "flick",
+        "flicker",
+        "flickering flame",
+        "flood of light",
+        "flush",
+        "forest fire",
+        "found",
+        "fox fire",
+        "freckle",
+        "fry",
+        "fulgor",
+        "fulgurate",
+        "funeral pyre",
+        "gale",
+        "gash",
+        "gasp",
+        "give light",
+        "glance",
+        "glare",
+        "glaring light",
+        "gleam",
+        "gleam of light",
+        "glint",
+        "glory",
+        "glow",
+        "graving",
+        "guide",
+        "guideboard",
+        "guidepost",
+        "gust",
+        "hack",
+        "hand",
+        "hatch",
+        "herald",
+        "herald abroad",
+        "holocaust",
+        "hour hand",
+        "hurricane",
+        "ignis fatuus",
+        "ignite",
+        "ignition",
+        "illuminate",
+        "illumine",
+        "impress",
+        "imprint",
+        "incandesce",
+        "incise",
+        "incision",
+        "indent",
+        "indentation",
+        "index",
+        "index finger",
+        "inferno",
+        "ingle",
+        "irruption",
+        "jag",
+        "jog",
+        "joggle",
+        "jot",
+        "kerf",
+        "kindle",
+        "knurl",
+        "lambent flame",
+        "lead",
+        "lentigo",
+        "light",
+        "line",
+        "lubber line",
+        "luster",
+        "machicolate",
+        "macula",
+        "make a mark",
+        "mark",
+        "mark off",
+        "mark out",
+        "marking",
+        "marshfire",
+        "milepost",
+        "mill",
+        "minute hand",
+        "mole",
+        "mottle",
+        "needle",
+        "nevus",
+        "nick",
+        "nock",
+        "notch",
+        "open fire",
+        "outbreak",
+        "outburst",
+        "oxidate",
+        "oxidize",
+        "pant",
+        "parch",
+        "paroxysm",
+        "patch",
+        "pencil",
+        "pepper",
+        "picot",
+        "pink",
+        "point",
+        "pointer",
+        "polka dot",
+        "prairie fire",
+        "prick",
+        "print",
+        "proclaim",
+        "promulgate",
+        "punch",
+        "punctuate",
+        "puncture",
+        "pyre",
+        "pyrolyze",
+        "radiance",
+        "radiancy",
+        "radiant splendor",
+        "radiate",
+        "radiate heat",
+        "raging fire",
+        "refulgence",
+        "refulgency",
+        "resplendence",
+        "resplendency",
+        "riddle",
+        "roast",
+        "scald",
+        "scallop",
+        "scar",
+        "scarification",
+        "scarify",
+        "scintillate",
+        "scorch",
+        "score",
+        "scotch",
+        "scratch",
+        "scratching",
+        "sea of flames",
+        "seal",
+        "seam",
+        "sear",
+        "seethe",
+        "seizure",
+        "send out rays",
+        "serrate",
+        "sheet of fire",
+        "shell",
+        "shimmer with heat",
+        "shine",
+        "shine brightly",
+        "shoot",
+        "shoot out rays",
+        "shout",
+        "signal beacon",
+        "signboard",
+        "signpost",
+        "simmer",
+        "singe",
+        "slash",
+        "smolder",
+        "smother",
+        "smudge fire",
+        "solar flare",
+        "solar prominence",
+        "solder",
+        "spark",
+        "sparkle",
+        "spasm",
+        "speck",
+        "speckle",
+        "splash",
+        "splendor",
+        "splotch",
+        "spot",
+        "spunk up",
+        "stain",
+        "stamp",
+        "steam",
+        "stew",
+        "stifle",
+        "stigma",
+        "stigmatize",
+        "storm",
+        "strawberry mark",
+        "streak",
+        "streaming light",
+        "striate",
+        "stripe",
+        "suffocate",
+        "sweat",
+        "swelter",
+        "swinge",
+        "take",
+        "take fire",
+        "tattoo",
+        "tattoo mark",
+        "tempest",
+        "three-alarm fire",
+        "thunder",
+        "thunder forth",
+        "tick",
+        "tick off",
+        "tittle",
+        "toast",
+        "tooth",
+        "tornado",
+        "torrefy",
+        "trace",
+        "trumpet",
+        "trumpet forth",
+        "two-alarm fire",
+        "underline",
+        "underscore",
+        "upheaval",
+        "vesicate",
+        "vividness",
+        "vulcanize",
+        "watch fire",
+        "watermark",
+        "weld",
+        "whirlwind",
+        "wildfire",
+        "witch fire"
+      ]
+    },
+    "blazer": {
+      "word": "BLAZER",
+      "definitions": [
+        {
+          "text": "One who spreads reports or blazes matters abroad. \"Blazers of crime.\" Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Eton jacket",
+        "Mao jacket",
+        "blouse",
+        "body coat",
+        "bolero",
+        "bomber jacket",
+        "capuchin",
+        "car coat",
+        "chaqueta",
+        "chesterfield",
+        "claw hammer",
+        "claw-hammer coat",
+        "cutaway coat",
+        "dinner jacket",
+        "doublet",
+        "dress coat",
+        "duffel",
+        "fingertip coat",
+        "fitted coat",
+        "frock",
+        "frock coat",
+        "jerkin",
+        "jumper",
+        "jupe",
+        "loden coat",
+        "mackinaw",
+        "mess jacket",
+        "midicoat",
+        "monkey jacket",
+        "parka",
+        "pea jacket",
+        "reefer",
+        "sack",
+        "san benito",
+        "ski jacket",
+        "sleeve waistcoat",
+        "smoking jacket",
+        "spiketail coat",
+        "swallowtail",
+        "tabard",
+        "tail coat",
+        "tails",
+        "watch coat",
+        "windbreaker",
+        "woolly"
+      ]
+    },
+    "blazing": {
+      "word": "BLAZING",
+      "definitions": [
+        {
+          "text": "Burning with a blaze; as, a blazing fire; blazing torches. Sir W. Scott. Blazing star. (a) A comet. [Obs.] (b) A brilliant center of attraction. (c) (Bot.) A name given to several plants; as, to Chamælirium luteum of the Lily family; Liatris squarrosa; and Aletris farinosa, called also colicroot and star grass.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ablaze",
+        "afire",
+        "aflame",
+        "aflicker",
+        "aglow",
+        "alight",
+        "ardent",
+        "blistering",
+        "branding",
+        "burning",
+        "calcination",
+        "candent",
+        "candescent",
+        "carbonization",
+        "cauterization",
+        "cautery",
+        "cineration",
+        "comburent",
+        "combustion",
+        "concremation",
+        "conflagrant",
+        "cracking",
+        "cremation",
+        "cupellation",
+        "deflagration",
+        "destructive distillation",
+        "distillation",
+        "distilling",
+        "fervent",
+        "fervid",
+        "fiery",
+        "flagrant",
+        "flaming",
+        "flaring",
+        "flashing",
+        "flashy",
+        "flickering",
+        "fulgurant",
+        "fulgurating",
+        "fuming",
+        "glowing",
+        "guttering",
+        "ignescent",
+        "ignited",
+        "in a blaze",
+        "in a glow",
+        "in flames",
+        "incandescent",
+        "incineration",
+        "inflamed",
+        "kindled",
+        "live",
+        "living",
+        "meteoric",
+        "on fire",
+        "oxidation",
+        "oxidization",
+        "parching",
+        "passionate",
+        "perfervid",
+        "pyrolysis",
+        "red-hot",
+        "reeking",
+        "refining",
+        "scintillant",
+        "scintillating",
+        "scorching",
+        "scorification",
+        "searing",
+        "self-immolation",
+        "singeing",
+        "smelting",
+        "smoking",
+        "smoldering",
+        "sparking",
+        "suttee",
+        "the stake",
+        "thermogenesis",
+        "unextinguished",
+        "unquenched",
+        "vesication"
+      ]
+    },
+    "blazon": {
+      "word": "BLAZON",
+      "definitions": [
+        {
+          "text": "A shield. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An heraldic shield; a coat of arms, or a bearing on a coat of arms; armorial bearings. Their blazon o'er his towers displayed. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The art or act of describing or depicting heraldic bearings in the proper language or manner. Peacham.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Ostentatious display, either by words or other means; publication; show; description; record. Obtrude the blazon of their exploits upon the company. Collier. Thy tongue, thy face, thy limbs, actions, and spirit, Do give thee fivefold blazon. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To depict in colors; to display; to exhibit conspicuously; to publish or make public far and wide. Thyself thou blazon'st. Shak. There pride sits blazoned on th' unmeaning brow. Trumbull. To blazon his own worthless name. Cowper.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deck; to embellish; to adorn. She blazons in dread smiles her hideous form. Garth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To describe in proper terms (the figures of heraldic devices); also, to delineate (armorial bearings); to emblazon. The coat of , arms, which I am not herald enough to blazon into English. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To shine; to be conspicuous. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "achievement",
+        "adorn",
+        "advertise",
+        "air",
+        "alerion",
+        "animal charge",
+        "announce",
+        "annulet",
+        "annunciate",
+        "argent",
+        "armorial bearings",
+        "armory",
+        "arms",
+        "array",
+        "azure",
+        "bandeau",
+        "bar",
+        "bar sinister",
+        "baton",
+        "bearings",
+        "beautify",
+        "bedeck",
+        "bedizen",
+        "bend",
+        "bend sinister",
+        "billet",
+        "blare",
+        "blare forth",
+        "blaze",
+        "blaze abroad",
+        "blazon about",
+        "blazon forth",
+        "blazonry",
+        "bordure",
+        "brandish",
+        "bravura",
+        "brilliancy",
+        "broad arrow",
+        "broadcast",
+        "bruit about",
+        "cadency mark",
+        "canton",
+        "celebrate",
+        "chaplet",
+        "charge",
+        "chevron",
+        "chief",
+        "coat of arms",
+        "cockatrice",
+        "color",
+        "coronet",
+        "crescent",
+        "crest",
+        "cross",
+        "cross moline",
+        "crown",
+        "cry",
+        "cry out",
+        "dandify",
+        "dangle",
+        "daring",
+        "dash",
+        "deck",
+        "deck out",
+        "declaim",
+        "decorate",
+        "demonstrate",
+        "demonstration",
+        "device",
+        "difference",
+        "differencing",
+        "display",
+        "dizen",
+        "doll up",
+        "dramatics",
+        "dress",
+        "dress up",
+        "eagle",
+        "eclat",
+        "embellish",
+        "emblazon",
+        "embroider",
+        "enrich",
+        "ermine",
+        "ermines",
+        "erminites",
+        "erminois",
+        "escutcheon",
+        "etalage",
+        "exhibit",
+        "exhibition",
+        "exhibitionism",
+        "falcon",
+        "false front",
+        "fanfaronade",
+        "fess",
+        "fess point",
+        "field",
+        "fig out",
+        "figure",
+        "file",
+        "fix up",
+        "flair",
+        "flanch",
+        "flash",
+        "flaunt",
+        "flaunting",
+        "fleur-de-lis",
+        "flourish",
+        "fret",
+        "fur",
+        "furbish",
+        "fusil",
+        "garland",
+        "garnish",
+        "grace",
+        "griffin",
+        "gules",
+        "gussy up",
+        "gyron",
+        "hatchment",
+        "helmet",
+        "herald",
+        "herald abroad",
+        "heraldic device",
+        "histrionics",
+        "hold up",
+        "honor point",
+        "impalement",
+        "impaling",
+        "inescutcheon",
+        "label",
+        "lion",
+        "lozenge",
+        "manifest",
+        "manifestation",
+        "mantling",
+        "marshaling",
+        "martlet",
+        "mascle",
+        "metal",
+        "motto",
+        "mullet",
+        "nombril point",
+        "octofoil",
+        "or",
+        "ordinary",
+        "orle",
+        "ornament",
+        "pageant",
+        "pageantry",
+        "paint",
+        "pale",
+        "paly",
+        "parade",
+        "pean",
+        "pheon",
+        "prank",
+        "prank up",
+        "preen",
+        "prettify",
+        "primp",
+        "primp up",
+        "prink",
+        "prink up",
+        "proclaim",
+        "promulgate",
+        "publish",
+        "purpure",
+        "put forth",
+        "put forward",
+        "quarter",
+        "quartering",
+        "redecorate",
+        "redo",
+        "refurbish",
+        "rose",
+        "sable",
+        "saltire",
+        "scutcheon",
+        "set off",
+        "set out",
+        "sham",
+        "shield",
+        "shout",
+        "show",
+        "showing-off",
+        "smarten",
+        "smarten up",
+        "sound",
+        "spectacle",
+        "splash",
+        "splurge",
+        "sport",
+        "spread eagle",
+        "spruce up",
+        "staginess",
+        "subordinary",
+        "tenne",
+        "theatrics",
+        "thunder",
+        "thunder forth",
+        "tincture",
+        "titivate",
+        "torse",
+        "tressure",
+        "trick out",
+        "trick up",
+        "trim",
+        "trumpet",
+        "trumpet forth",
+        "unicorn",
+        "vair",
+        "vaunt",
+        "vert",
+        "wave",
+        "wreath",
+        "yale"
+      ]
+    },
+    "blazoner": {
+      "word": "BLAZONER",
+      "definitions": [
+        {
+          "text": "One who gives publicity, proclaims, or blazons; esp., one who blazons coats of arms; a herald. Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blazonment": {
+      "word": "BLAZONMENT",
+      "definitions": [
+        {
+          "text": "The act or blazoning; blazoning; emblazonment.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blazonry": {
+      "word": "BLAZONRY",
+      "definitions": [
+        {
+          "text": "Same as Blazon, 3. The principles of blazonry. Peacham.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A coat of arms; an armorial bearing or bearings. The blazonry of Argyle. Lord Dufferin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Artistic representation or display.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

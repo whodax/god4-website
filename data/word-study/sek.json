@@ -1,0 +1,29 @@
+{
+  "version": "v1",
+  "entries": {
+    "seke": {
+      "word": "SEKE",
+      "definitions": [
+        {
+          "text": "Sick. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To seek. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sekes": {
+      "word": "SEKES",
+      "definitions": [
+        {
+          "text": "A place in a pagan temple in which the images of the deities were inclosed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,763 @@
+{
+  "version": "v1",
+  "entries": {
+    "baigne": {
+      "word": "BAIGNE",
+      "definitions": [
+        {
+          "text": "To soak or drench. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baignoire": {
+      "word": "BAIGNOIRE",
+      "definitions": [
+        {
+          "text": "A box of the lowest tier in a theater. Du Maurier.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bail": {
+      "word": "BAIL",
+      "definitions": [
+        {
+          "text": "A bucket or scoop used in bailing water out of a boat. [Obs.] The bail of a canoe . . . made of a human skull. Capt. Cook.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To lade; to dip and throw; -- usually with out; as, to bail water out of a boat. Buckets . . . to bail out the water. Capt. J. Smith.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To dip or lade water from; -- often with out to express completeness; as, to bail a boat. By the help of a small bucket and our hats we bailed her out. R. H. Dana, Jr.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deliver; to release. [Obs.] Ne none there was to rescue her, ne none to bail. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Law) (a) To set free, or deliver from arrest, or out of custody, on the undertaking of some other person or persons that he or they will be responsible for the appearance, at a certain day and place, of the person bailed. magistrate bails (but admits to bail is commoner) a man when he liberates him from arrest or imprisonment upon bond given with sureties. The surety bails a person when he procures his release from arrest by giving bond for his appearance. Blackstone. (b) To deliver, as goods in trust, for some special object or purpose, upon a contract, expressed or implied, that the trust shall be faithfully executed on the part of the bailee, or person intrusted; as, to bail cloth to a tailor to be made into a garment; to bail goods to a carrier. Blackstone. Kent.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Custody; keeping. [Obs.] Silly Faunus now within their bail. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law) (a) The person or persons who procure the release of a prisoner from the custody of the officer, or from imprisonment, by becoming surely for his appearance in court.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The arched handle of a kettle, pail, or similar vessel, usually movable. Forby.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A half hoop for supporting the cover of a carrier's wagon, awning of a boat, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Usually pl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A line of palisades serving as an exterior defense. [Written also bayle.] [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The outer wall of a feudal castle. Hence: The space inclosed by it; the outer court. Holinshed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A certain limit within a forest. [Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A division for the stalls of an open stable.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Cricket)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The top or cross piece ( or either of the two cross pieces) of the wicket.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "arraignment",
+        "bond",
+        "bucket",
+        "charge",
+        "cup",
+        "decant",
+        "dip",
+        "dish",
+        "dish out",
+        "dish up",
+        "earnest",
+        "earnest money",
+        "escrow",
+        "fork",
+        "gage",
+        "guaranty",
+        "handsel",
+        "hock",
+        "hostage",
+        "impeachment",
+        "indictment",
+        "information",
+        "lade",
+        "ladle",
+        "mainprise",
+        "pawn",
+        "pignus",
+        "pledge",
+        "pour",
+        "presentment",
+        "recognizance",
+        "replevin",
+        "replevy",
+        "scoop",
+        "security",
+        "shovel",
+        "spade",
+        "spoon",
+        "surety",
+        "token payment",
+        "true bill",
+        "undertaking",
+        "vadimonium",
+        "vadium",
+        "warranty"
+      ]
+    },
+    "bailable": {
+      "word": "BAILABLE",
+      "definitions": [
+        {
+          "text": "Having the right or privilege of being admitted to bail, upon bond with sureties; -- used of persons. \"He's bailable, I'm sure.\" Ford.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Admitting of bail; as, a bailable offense.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "That can be delivered in trust; as, bailable goods.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailee": {
+      "word": "BAILEE",
+      "definitions": [
+        {
+          "text": "The person to whom goods are committed in trust, and who has a temporary possession and a qualified property in them, for the purposes of the trust. Blackstone. another in good faith. Wharton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailer": {
+      "word": "BAILER",
+      "definitions": [
+        {
+          "text": "See Bailor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who bails or lades.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A utensil, as a bucket or cup, used in bailing; a machine for bailing water out of a pit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailey": {
+      "word": "BAILEY",
+      "definitions": [
+        {
+          "text": "The outer wall of a feudal castle. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The space immediately within the outer wall of a castle or fortress. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A prison or court of justice; -- used in certain proper names; as, the Old Bailey in London; the New Bailey in Manchester. [Eng.] Oxf. Gloss.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailie": {
+      "word": "BAILIE",
+      "definitions": [
+        {
+          "text": "An officer in Scotland, whose office formerly corresponded to that of sheriff, but now corresponds to that of an English alderman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailiff": {
+      "word": "BAILIFF",
+      "definitions": [
+        {
+          "text": "Originally, a person put in charge of something especially, a chief officer, magistrate, or keeper, as of a county, town, hundred, or castle; one to whom power Abbott. Lausanne is under the canton of Berne, governed by a bailiff sent every three years from the senate. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eng. Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sheriff's deputy, appointed to make arrests, collect fines, summon juries, etc. sometimes to signify a sheriff's officer or constable, or a party liable to account to another for the rent and profits of real estate. Burrill.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An overseer or under steward of an estate, who directs husbandry operations, collects rents, etc. [Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "G-man",
+        "MC",
+        "MP",
+        "attorney",
+        "beadle",
+        "beagle",
+        "bound bailiff",
+        "butler",
+        "captain",
+        "catchpole",
+        "chief of police",
+        "commissioner",
+        "constable",
+        "croupier",
+        "curator",
+        "custodian",
+        "deputy",
+        "deputy sheriff",
+        "detective",
+        "emcee",
+        "factor",
+        "fed",
+        "federal",
+        "flic",
+        "gendarme",
+        "government man",
+        "guardian",
+        "housekeeper",
+        "inspector",
+        "landreeve",
+        "librarian",
+        "lictor",
+        "lieutenant",
+        "mace-bearer",
+        "majordomo",
+        "marshal",
+        "master of ceremonies",
+        "mounted policeman",
+        "narc",
+        "officer",
+        "patrolman",
+        "peace officer",
+        "police captain",
+        "police commissioner",
+        "police constable",
+        "police inspector",
+        "police matron",
+        "police officer",
+        "police sergeant",
+        "policeman",
+        "policewoman",
+        "portreeve",
+        "proctor",
+        "procurator",
+        "reeve",
+        "roundsman",
+        "seneschal",
+        "sergeant",
+        "sergeant at arms",
+        "sheriff",
+        "steward",
+        "superintendent",
+        "tipstaff",
+        "tipstaves",
+        "trooper"
+      ]
+    },
+    "bailiffwick": {
+      "word": "BAILIFFWICK",
+      "definitions": [
+        {
+          "text": "See Bailiwick. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailiwick": {
+      "word": "BAILIWICK",
+      "definitions": [
+        {
+          "text": "The precincts within which a bailiff has jurisdiction; the limits of a bailiff's authority.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Kreis",
+        "ambit",
+        "archbishopric",
+        "archdiocese",
+        "arena",
+        "arrondissement",
+        "beat",
+        "bishopric",
+        "border",
+        "borderland",
+        "borough",
+        "bureau",
+        "canton",
+        "champaign",
+        "circle",
+        "circuit",
+        "city",
+        "commissariat",
+        "commune",
+        "congressional district",
+        "constablery",
+        "constablewick",
+        "constabulary",
+        "constituency",
+        "county",
+        "demesne",
+        "departement",
+        "department",
+        "diocese",
+        "district",
+        "domain",
+        "dominion",
+        "duchy",
+        "electoral district",
+        "electorate",
+        "field",
+        "footing",
+        "government",
+        "hamlet",
+        "hemisphere",
+        "hundred",
+        "judicial circuit",
+        "jurisdiction",
+        "magistracy",
+        "march",
+        "metropolis",
+        "metropolitan area",
+        "ministry",
+        "municipality",
+        "neighborhood",
+        "oblast",
+        "office",
+        "okrug",
+        "orb",
+        "orbit",
+        "pale",
+        "parish",
+        "place",
+        "precinct",
+        "principality",
+        "province",
+        "quarter",
+        "realm",
+        "region",
+        "riding",
+        "round",
+        "secretariat",
+        "sheriffalty",
+        "sheriffwick",
+        "shire",
+        "shrievalty",
+        "soke",
+        "sphere",
+        "sphere of influence",
+        "stake",
+        "stamping ground",
+        "state",
+        "terrain",
+        "territory",
+        "town",
+        "township",
+        "turf",
+        "vantage",
+        "village",
+        "walk",
+        "wapentake",
+        "ward"
+      ]
+    },
+    "baillie": {
+      "word": "BAILLIE",
+      "definitions": [
+        {
+          "text": "Bailiff. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Bailie. [Scot.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailment": {
+      "word": "BAILMENT",
+      "definitions": [
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The action of bailing a person accused. Bailment . . . is the saving or delivery of a man out of prison before he hath satisfied the law. Dalton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A delivery of goods or money by one person to another in trust, for some special purpose, upon a contract, expressed or implied, that the trust shall be faithfully executed. Blackstone. duties in respect to property. Story.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailor": {
+      "word": "BAILOR",
+      "definitions": [
+        {
+          "text": "One who delivers goods or money to another in trust.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bailpiece": {
+      "word": "BAILPIECE",
+      "definitions": [
+        {
+          "text": "A piece of parchment, or paper, containing a recognizance or bail bond.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baily'sbeads": {
+      "word": "BAILY'S BEADS",
+      "definitions": [
+        {
+          "text": "A row of bright spots observed in connection with total eclipses of the sun. Just before and after a total eclipse, the slender, unobscured crescent of the sun's disk appears momentarily like a row of bright spots resembling a string of beads. The phenomenon (first fully described by Francis Baily, 1774 -- 1844) is thought to be an effect of irradiation, and of inequalities of the moon's edge.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bain": {
+      "word": "BAIN",
+      "definitions": [
+        {
+          "text": "A bath; a bagnio. [Obs.] Holland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bainmarie": {
+      "word": "BAIN-MARIE",
+      "definitions": [
+        {
+          "text": "A vessel for holding hot water in which another vessel may be heated without scorching its contents; -- used for warming or preparing food or pharmaceutical preparations.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bairam": {
+      "word": "BAIRAM",
+      "definitions": [
+        {
+          "text": "The name of two Mohammedan festivals, of which one is held at the close of the fast called Ramadan, and the other seventy days after the fast.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bairn": {
+      "word": "BAIRN",
+      "definitions": [
+        {
+          "text": "A child. [Scot. & Prov. Eng.] Has he not well provided for the bairn ! Beau. & Fl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "cherub",
+        "child",
+        "chit",
+        "darling",
+        "innocent",
+        "kid",
+        "kitten",
+        "lamb",
+        "lambkin",
+        "little bugger",
+        "little fellow",
+        "little guy",
+        "little innocent",
+        "little one",
+        "little tad",
+        "little tot",
+        "mite",
+        "nipper",
+        "offspring",
+        "peewee",
+        "shaver",
+        "tad",
+        "tot",
+        "wee tot"
+      ]
+    },
+    "baisemains": {
+      "word": "BAISEMAINS",
+      "definitions": [
+        {
+          "text": "Respects; compliments. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bait": {
+      "word": "BAIT",
+      "definitions": [
+        {
+          "text": "Any substance, esp. food, used in catching fish, or other animals, by alluring them to a hook, snare, inclosure, or net.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything which allures; a lure; enticement; temptation. Fairfax.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A portion of food or drink, as a refreshment taken on a journey; also, a stop for rest and refreshment.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A light or hasty luncheon. Bait bug (Zoöl), a crustacean of the genus Hippa found burrowing in sandy beaches. See Anomura.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To provoke and harass; esp., to harass or torment for sport; as, to bait a bear with dogs; to bait a bull.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To give a portion of food and drink to, upon the road; as, to bait horses. Holland.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To furnish or cover with bait, as a trap or hook. A crooked pin . . . bailed with a vile earthworm. W. Irving.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To stop to take a portion of food and drink for refreshment of one's self or one's beasts, on a journey. Evil news rides post, while good news baits. Milton. My lord's coach conveyed me to Bury, and thence baiting aEvelyn.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To flap the wings; to flutter as if to fly; or to hover, as a hawk when she stoops to her prey. \"Kites that bait and beat.\" Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "aggravate",
+        "allure",
+        "allurement",
+        "annoy",
+        "badger",
+        "bait the hook",
+        "baited trap",
+        "be at",
+        "bedevil",
+        "beset",
+        "birdlime",
+        "bite",
+        "blandish",
+        "bola",
+        "bother",
+        "bribe",
+        "bristle",
+        "brown off",
+        "bug",
+        "bullyrag",
+        "burn up",
+        "cajole",
+        "carrot",
+        "charm",
+        "chivy",
+        "coax",
+        "cobweb",
+        "come-on",
+        "decoy",
+        "decoy duck",
+        "devil",
+        "discompose",
+        "distemper",
+        "disturb",
+        "dog",
+        "dragnet",
+        "draw",
+        "draw in",
+        "draw on",
+        "drawcard",
+        "drawing card",
+        "encouragement",
+        "endearment",
+        "ensnare",
+        "entice",
+        "enticement",
+        "entrap",
+        "exasperate",
+        "exercise",
+        "fash",
+        "fillip",
+        "fishhook",
+        "flirt",
+        "flirt with",
+        "fly",
+        "get",
+        "gill net",
+        "give the come-on",
+        "gripe",
+        "ground bait",
+        "harass",
+        "harry",
+        "haze",
+        "heckle",
+        "hector",
+        "hook",
+        "hound",
+        "incentive",
+        "incitement",
+        "inducement",
+        "interest",
+        "inveigh",
+        "inveigle",
+        "inveiglement",
+        "invitation",
+        "irk",
+        "jig",
+        "lariat",
+        "lasso",
+        "lead on",
+        "lime",
+        "lure",
+        "meshes",
+        "miff",
+        "molest",
+        "morsel",
+        "nag",
+        "needle",
+        "net",
+        "nettle",
+        "noose",
+        "nudzh",
+        "offer bait to",
+        "payment",
+        "peeve",
+        "percentage",
+        "persecute",
+        "persuasive",
+        "pester",
+        "pick on",
+        "piece",
+        "pique",
+        "plague",
+        "pluck the beard",
+        "plug",
+        "pother",
+        "pound net",
+        "profit",
+        "provocation",
+        "provoke",
+        "purse seine",
+        "push around",
+        "rag",
+        "reward",
+        "ride",
+        "rile",
+        "roil",
+        "rope in",
+        "ruffle",
+        "seduce",
+        "seducement",
+        "seine",
+        "snare",
+        "sniggle",
+        "spinner",
+        "springe",
+        "squid",
+        "stimulation",
+        "stimulative",
+        "stimulus",
+        "suck in",
+        "sweetener",
+        "sweetening",
+        "tease",
+        "tempt",
+        "temptation",
+        "toils",
+        "toll",
+        "torment",
+        "trap",
+        "trawl",
+        "try the patience",
+        "tweak the nose",
+        "vex",
+        "whet",
+        "wobbler",
+        "woo",
+        "worry"
+      ]
+    },
+    "baiter": {
+      "word": "BAITER",
+      "definitions": [
+        {
+          "text": "One who baits; a tormentor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baize": {
+      "word": "BAIZE",
+      "definitions": [
+        {
+          "text": "A coarse woolen stuff with a long nap; -- usually dyed in plain colors. A new black baize waistcoat lined with silk. Pepys.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

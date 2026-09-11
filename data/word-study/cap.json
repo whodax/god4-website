@@ -1,0 +1,4768 @@
+{
+  "version": "v1",
+  "entries": {
+    "cap": {
+      "word": "CAP",
+      "definitions": [
+        {
+          "text": "A covering for the head; esp. (a) One usually with a visor but without a brim, for men and boys; (b) One of lace, muslin, etc., for women, or infants; (c) One used as the mark or ensign of some rank, office, or dignity, as that of a cardinal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The top, or uppermost part; the chief. Thou art the cap of all the fools alive. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A respectful uncovering of the head. He that will give a cap and make a leg in thanks. Fuller.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The whole top of the head of a bird from the base of the bill to the nape of the neck.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything resembling a cap in form, position, or use; as: (a) (Arch.) The uppermost of any assemblage of parts; as, the cap of column, door, etc.; a capital, coping, cornice, lintel, or plate. (b) Something covering the top or end of a thing for protection or ornament. (c) (Naut.) A collar of iron or wood used in joining spars, as the mast and the topmast, the bowsprit and the jib boom; also, a covering of tarred canvas at the end of a rope. (d) A percussion cap. See under Percussion. (e) (Mech.) The removable cover of a journal box. (f) (Geom.) A portion of a spherical or other convex surface.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A large size of writing paper; as, flat cap; foolscap; legal cap. Cap of a cannon, a piece of lead laid over the vent to keep the priming dry; -- now called an apron. England at the coronation. It is also carried before the mayors of some cities. of the fox. foolsap, and legal cap. (b) A coarse wrapping paper used for making caps to hold commodities. Cap rock (Mining), The layer of rock next overlying ore, generally of barren vein material. soldier. lawyers, in long narrow sheets which have the fold at the top or \"narrow edge.\" -- To set one's cap, to make a fool of one. (Obs.) Chaucer. view to marriage. [Colloq.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cover with a cap, or as with a cap; to provide with a cap or cover; to cover the top or end of; to place a cap upon the proper part of; as, to cap a post; to cap a gun. The bones next the joint are capped with a smooth cartilaginous substance. Derham.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deprive of cap. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To complete; to crown; to bring to the highest point or consummation; as, to cap the climax of absurdity.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To salute by removing the cap. [Slang. Eng.] Tom . . . capped the proctor with the profoundest of bows. Thackeray.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To match; to mate in contest; to furnish a complement to; as, to cap text; to cap proverbs. Shak. Now I have him under girdle I'll cap verses with him to the end of the chapter. Dryden. by quoting one beginning with the last letter of the first letter, or with the first letter of the last word, or ending with a rhyming word, or by applying any other arbitrary rule may be agreed upon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To uncover the head respectfully. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Balmoral",
+        "Dutch cap",
+        "Panama",
+        "Panama hat",
+        "Salvation Army bonnet",
+        "Stetson",
+        "acme",
+        "apex",
+        "apogee",
+        "ascender",
+        "astrakhan",
+        "back",
+        "balaclava helmet",
+        "baseball cap",
+        "bastard type",
+        "beany",
+        "beard",
+        "bearskin",
+        "beaver",
+        "befog",
+        "belly",
+        "beret",
+        "best",
+        "better",
+        "bevel",
+        "bewilder",
+        "black letter",
+        "blanket",
+        "blasting cap",
+        "boater",
+        "body",
+        "bonnet",
+        "boot",
+        "bowler",
+        "bracket capital",
+        "brass hat",
+        "breech",
+        "brow",
+        "busby",
+        "button up",
+        "calash",
+        "campaign hat",
+        "cap",
+        "capital",
+        "capote",
+        "capsheaf",
+        "caput",
+        "carry to completion",
+        "case",
+        "castor",
+        "ceil",
+        "chapeau",
+        "chapeau bras",
+        "clean up",
+        "climax",
+        "cloak",
+        "cloche",
+        "close out",
+        "close up",
+        "cloud nine",
+        "coat",
+        "cob",
+        "cock-and-pinch",
+        "coif",
+        "complete",
+        "conclude",
+        "confound",
+        "confuse",
+        "consummate",
+        "cork",
+        "cornice",
+        "counter",
+        "cover",
+        "coverchief",
+        "coxcomb",
+        "crest",
+        "crown",
+        "culmen",
+        "culminate",
+        "culmination",
+        "derby",
+        "descender",
+        "detonating powder",
+        "detonator",
+        "dome",
+        "edge",
+        "electric detonator",
+        "em",
+        "en",
+        "end",
+        "exceed",
+        "excel",
+        "exploder",
+        "extreme limit",
+        "extremity",
+        "face",
+        "fantail",
+        "fat-faced type",
+        "feet",
+        "fez",
+        "finalize",
+        "finish",
+        "finish off",
+        "finish up",
+        "font",
+        "frock",
+        "frost",
+        "fulminating mercury",
+        "fuse",
+        "get done",
+        "get it over",
+        "get through",
+        "get through with",
+        "give in kind",
+        "go one better",
+        "gown",
+        "groove",
+        "handkerchief",
+        "hard hat",
+        "hat",
+        "head",
+        "headcloth",
+        "headdress",
+        "headgear",
+        "heading",
+        "headpiece",
+        "headtire",
+        "headwear",
+        "heaven",
+        "heavens",
+        "height",
+        "helmet",
+        "high noon",
+        "highest pitch",
+        "highest point",
+        "homburg",
+        "hood",
+        "ice",
+        "improve on",
+        "italic",
+        "jacket",
+        "jockey cap",
+        "kaffiyeh",
+        "kelly",
+        "kepi",
+        "kerchief",
+        "leghorn",
+        "letter",
+        "lex talionis",
+        "lid",
+        "ligature",
+        "limit",
+        "logotype",
+        "lower case",
+        "majuscule",
+        "mantle",
+        "match",
+        "maximum",
+        "mercury fulminate",
+        "meridian",
+        "millinery",
+        "minuscule",
+        "mobcap",
+        "mop up",
+        "mortarboard",
+        "mountaintop",
+        "ne plus ultra",
+        "nick",
+        "nightcap",
+        "no place higher",
+        "noon",
+        "opera hat",
+        "operculum",
+        "outshine",
+        "outstrip",
+        "outtop",
+        "outweigh",
+        "overarch",
+        "overbalance",
+        "overbear",
+        "overcast",
+        "overcome",
+        "overlay",
+        "overpass",
+        "overseas cap",
+        "overspread",
+        "overtop",
+        "pass",
+        "peak",
+        "peaked cap",
+        "percussion cap",
+        "perfect",
+        "perplex",
+        "pi",
+        "pica",
+        "picture hat",
+        "pillbox",
+        "pinhead",
+        "pinnacle",
+        "pitch",
+        "pith hat",
+        "pith helmet",
+        "plug",
+        "point",
+        "poke",
+        "pole",
+        "porkpie",
+        "pose",
+        "predominate",
+        "preponderate",
+        "prevail",
+        "primacord",
+        "primer",
+        "priming",
+        "print",
+        "puggree",
+        "repay in kind",
+        "return the compliment",
+        "return the like",
+        "ridge",
+        "roman",
+        "roof",
+        "roof in",
+        "round out",
+        "rumal",
+        "sailor",
+        "sans serif",
+        "scraper",
+        "script",
+        "seventh heaven",
+        "shank",
+        "shirt",
+        "shoe",
+        "shoulder",
+        "shovel hat",
+        "silk hat",
+        "skullcap",
+        "sky",
+        "slouch hat",
+        "small cap",
+        "small capital",
+        "snood",
+        "sock",
+        "sombrero",
+        "spire",
+        "squib",
+        "stamp",
+        "stem",
+        "stocking",
+        "stopper",
+        "stovepipe",
+        "stumble",
+        "summit",
+        "sun hat",
+        "sun helmet",
+        "sunbonnet",
+        "sundown",
+        "surmount",
+        "surpass",
+        "tam",
+        "ten-gallon hat",
+        "terminate",
+        "tin hat",
+        "tip",
+        "tip-top",
+        "top",
+        "top hat",
+        "top off",
+        "top out",
+        "topee",
+        "topknot",
+        "topper",
+        "tower above",
+        "tower over",
+        "transcend",
+        "trilby",
+        "trump",
+        "turban",
+        "type",
+        "type body",
+        "type class",
+        "type lice",
+        "typecase",
+        "typeface",
+        "typefounders",
+        "typefoundry",
+        "tyrolean hat",
+        "upmost",
+        "upper case",
+        "upper extremity",
+        "uppermost",
+        "utmost",
+        "vertex",
+        "very top",
+        "wide-awake",
+        "wimple",
+        "wind up",
+        "wind-cutter",
+        "wrap up",
+        "yarmulka",
+        "zenith"
+      ]
+    },
+    "capability": {
+      "word": "CAPABILITY",
+      "definitions": [
+        {
+          "text": "The quality of being capable; capacity; capableness; esp. intellectual power or ability. A capability to take a thousand views of a subject. H. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Capacity of being used or improved.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ability",
+        "ableness",
+        "address",
+        "adeptness",
+        "adequacy",
+        "adroitness",
+        "airmanship",
+        "aptitude",
+        "artfulness",
+        "artisanship",
+        "artistry",
+        "bravura",
+        "brilliance",
+        "bump",
+        "caliber",
+        "capableness",
+        "capacity",
+        "cleverness",
+        "command",
+        "competence",
+        "competency",
+        "condition",
+        "control",
+        "coordination",
+        "craft",
+        "craftsmanship",
+        "cunning",
+        "deftness",
+        "dexterity",
+        "dexterousness",
+        "dextrousness",
+        "diplomacy",
+        "dower",
+        "dowry",
+        "efficacy",
+        "efficiency",
+        "endowment",
+        "equipment",
+        "expertise",
+        "facility",
+        "faculty",
+        "finesse",
+        "fitness",
+        "fittedness",
+        "flair",
+        "forte",
+        "genius",
+        "gift",
+        "grace",
+        "grip",
+        "handiness",
+        "horsemanship",
+        "ingeniousness",
+        "ingenuity",
+        "instinct",
+        "know-how",
+        "long suit",
+        "makings",
+        "marksmanship",
+        "mastership",
+        "mastery",
+        "maturity",
+        "means",
+        "metier",
+        "natural endowment",
+        "natural gift",
+        "parts",
+        "potential",
+        "power",
+        "powers",
+        "practical ability",
+        "preparedness",
+        "proficiency",
+        "prowess",
+        "qualification",
+        "quickness",
+        "readiness",
+        "resource",
+        "resourcefulness",
+        "ripeness",
+        "savoir-faire",
+        "savvy",
+        "seamanship",
+        "seasoning",
+        "skill",
+        "skillfulness",
+        "speciality",
+        "strong flair",
+        "strong point",
+        "style",
+        "sufficiency",
+        "suitability",
+        "suitableness",
+        "suitedness",
+        "susceptibility",
+        "tact",
+        "tactfulness",
+        "talent",
+        "talents",
+        "technical brilliance",
+        "technical mastery",
+        "technical skill",
+        "technique",
+        "tempering",
+        "the goods",
+        "the stuff",
+        "timing",
+        "trim",
+        "virtuosity",
+        "what it takes",
+        "wherewithal",
+        "wit",
+        "wizardry",
+        "workmanship"
+      ]
+    },
+    "capable": {
+      "word": "CAPABLE",
+      "definitions": [
+        {
+          "text": "Possessing ability, qualification, or susceptibility; having capacity; of sufficient size or strength; as, a room capable of holding a large number; a castle capable of resisting a long assault. Concious of jou and capable of pain. Prior.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Possessing adequate power; qualified; able; fully competent; as, a capable instructor; a capable judge; a mind capable of nice investigations. More capable to discourse of battles than to give them. Motley.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Possessing legal power or capacity; as, a man capable of making a contract, or a will.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Capacious; large; comprehensive. [Obs.] Shak. skillful.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "able",
+        "accomplished",
+        "adapted",
+        "adept",
+        "adequate",
+        "adjusted",
+        "apt",
+        "au fait",
+        "capable of",
+        "checked out",
+        "clever",
+        "competent",
+        "disposed to",
+        "effective",
+        "effectual",
+        "efficacious",
+        "efficient",
+        "equal to",
+        "expert",
+        "fit",
+        "fitted",
+        "fitted for",
+        "gifted",
+        "good",
+        "inclined to",
+        "journeyman",
+        "masterful",
+        "masterly",
+        "predisposed to",
+        "productive",
+        "proficient",
+        "proper",
+        "qualified",
+        "skilled",
+        "suited",
+        "talented",
+        "up to",
+        "up to snuff",
+        "well-fitted",
+        "well-qualified",
+        "well-suited",
+        "wicked",
+        "worthy"
+      ]
+    },
+    "capableness": {
+      "word": "CAPABLENESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being capable; capability; adequateness; competency.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capacify": {
+      "word": "CAPACIFY",
+      "definitions": [
+        {
+          "text": "To quality. [R.] The benefice he is capacified and designed for. Barrow.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capacious": {
+      "word": "CAPACIOUS",
+      "definitions": [
+        {
+          "text": "Having capacity; able to contain much; large; roomy; spacious; extended; broad; as, a capacious vessel, room, bay, or harbor. In the capacious recesses of his mind. Bancroft.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Able or qualified to make large views of things, as in obtaining knowledge or forming designs; comprehensive; liberal. \"A capacious mind.\" Watts.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abundant",
+        "ample",
+        "amplitudinous",
+        "broad",
+        "commodious",
+        "comprehensive",
+        "copious",
+        "deep",
+        "expandable",
+        "expansive",
+        "extended",
+        "extending",
+        "extensile",
+        "extensive",
+        "far-reaching",
+        "generous",
+        "infinite",
+        "plentiful",
+        "roomy",
+        "spacious",
+        "spreading",
+        "vast",
+        "voluminous",
+        "wide",
+        "widespread"
+      ]
+    },
+    "capaciously": {
+      "word": "CAPACIOUSLY",
+      "definitions": [
+        {
+          "text": "In a capacious manner or degree; comprehensively.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capaciousness": {
+      "word": "CAPACIOUSNESS",
+      "definitions": [
+        {
+          "text": "The quality of being capacious, as of a vessel, a reservoir a bay, the mind, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capacitate": {
+      "word": "CAPACITATE",
+      "definitions": [
+        {
+          "text": "To render capable; to enable; to qualify. By thih instruction we may be capaciated to observe those errors. Dryden.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capacity": {
+      "word": "CAPACITY",
+      "definitions": [
+        {
+          "text": "The power of receiving or containing; extent of room or space; passive power; -- used in reference to physical things. Had our great palace the capacity To camp this host, we all would sup together. Shak. The capacity of the exhausted cylinder. Boyle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The power of receiving and holding ideas, knowledge, etc.; the comprehensiveness of the mind; the receptive faculty; capability of undestanding or feeling. Capacity is now properly limited to these [the mere passive operations of the mind]; its primary signification, which is literally room for, as well as its employment, favars this; although it can not be dented that there are examples of its usage in an active sense. Sir W. Hamilton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Ability; power pertaining to, or resulting from, the possession of strength, wealth, or talent; possibility of being or of doing. The capacity of blessing the people. Alex. Hamilton. A cause with such capacities endued. Blackmore.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Outward condition or circumstances; occupation; profession; character; position; as, to work in the capacity of a mason or a carpenter.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Legal or noral qualification, as of age, residence, character, etc., necessary for certain purposes, as for holding office, for marrying, for making contracts, will, etc.; legal power or right; competency. Capacity for heat, the power of absorbing heat. Substances differ in the amount of heat requisite to raise them a given number of thermometric degrees, and this difference is the measure of, or depends upon, whzt is called their capacity for heat. See Specific heat, under Heat. cleverness. See Ability.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "IQ",
+        "SRO",
+        "ability",
+        "ableness",
+        "accommodation",
+        "acumen",
+        "address",
+        "adeptness",
+        "adequacy",
+        "adroitness",
+        "airmanship",
+        "amplitude",
+        "apprehension",
+        "aptitude",
+        "artfulness",
+        "artisanship",
+        "artistry",
+        "bellyful",
+        "bent",
+        "brains",
+        "bravura",
+        "brilliance",
+        "brimful",
+        "brimming",
+        "bulging",
+        "bump",
+        "bumper",
+        "burden",
+        "bursting",
+        "caliber",
+        "capability",
+        "capableness",
+        "capaciousness",
+        "capacitance",
+        "capital",
+        "character",
+        "charge",
+        "chock-full",
+        "chuck-full",
+        "cleverness",
+        "collector junction capacitance",
+        "command",
+        "commodiousness",
+        "competence",
+        "competency",
+        "complement",
+        "comprehension",
+        "conception",
+        "condition",
+        "congested",
+        "consciousness",
+        "content",
+        "control",
+        "coordination",
+        "cordage",
+        "craft",
+        "craftsmanship",
+        "cram",
+        "cram-full",
+        "crammed",
+        "crush",
+        "cunning",
+        "deductive power",
+        "deftness",
+        "devices",
+        "dexterity",
+        "dexterousness",
+        "dextrousness",
+        "dimensions",
+        "diplomacy",
+        "disposable resources",
+        "dower",
+        "dowry",
+        "duty",
+        "efficacy",
+        "efficiency",
+        "emitter junction capacitance",
+        "endowment",
+        "equipment",
+        "esemplastic power",
+        "expansiveness",
+        "expertise",
+        "extensiveness",
+        "facility",
+        "faculties",
+        "faculty",
+        "farad",
+        "farci",
+        "fill",
+        "filled",
+        "finesse",
+        "fitness",
+        "flair",
+        "flush",
+        "footing",
+        "forte",
+        "full",
+        "full house",
+        "full measure",
+        "full to bursting",
+        "function",
+        "funds",
+        "genius",
+        "gift",
+        "grace",
+        "grip",
+        "handiness",
+        "horsemanship",
+        "ideation",
+        "ingeniousness",
+        "ingenuity",
+        "instinct",
+        "integrative power",
+        "intellect",
+        "intellectual gifts",
+        "intellectual grasp",
+        "intellectual power",
+        "intellectualism",
+        "intellectuality",
+        "intellectuals",
+        "intelligence",
+        "intelligence quotient",
+        "jam up",
+        "jam-packed",
+        "job",
+        "judgement",
+        "knack",
+        "know-how",
+        "knowledge",
+        "lading",
+        "limit",
+        "load",
+        "long suit",
+        "makings",
+        "marksmanship",
+        "mastership",
+        "mastery",
+        "means",
+        "measure",
+        "mental age",
+        "mental capacity",
+        "mental grasp",
+        "mental ratio",
+        "mentality",
+        "method",
+        "metier",
+        "might",
+        "mother wit",
+        "mouthful",
+        "native wit",
+        "natural endowment",
+        "natural gift",
+        "office",
+        "overfull",
+        "overstuffed",
+        "packed",
+        "packed like sardines",
+        "part",
+        "parts",
+        "perception",
+        "perceptiveness",
+        "perspicacity",
+        "place",
+        "plenary",
+        "position",
+        "post",
+        "potential",
+        "poundage",
+        "power",
+        "power of mind",
+        "powers",
+        "practical ability",
+        "proficiency",
+        "province",
+        "prowess",
+        "qualification",
+        "quality",
+        "quantity",
+        "quickness",
+        "rank",
+        "rationality",
+        "readiness",
+        "ready to burst",
+        "reasoning power",
+        "recourses",
+        "relation",
+        "replete",
+        "resistance capacitance",
+        "resorts",
+        "resource",
+        "resourcefulness",
+        "resources",
+        "responsibility",
+        "role",
+        "room",
+        "roominess",
+        "round",
+        "sanity",
+        "satiated",
+        "saturated",
+        "savoir-faire",
+        "savvy",
+        "scope of mind",
+        "seamanship",
+        "sense",
+        "senses",
+        "situation",
+        "size",
+        "skill",
+        "skillfulness",
+        "skinful",
+        "snootful",
+        "soaked",
+        "space",
+        "spaciousness",
+        "speciality",
+        "sphere",
+        "standing",
+        "standing room only",
+        "state",
+        "station",
+        "status",
+        "stock",
+        "stowage",
+        "strong flair",
+        "strong point",
+        "stuffed",
+        "style",
+        "sufficiency",
+        "supply",
+        "surfeited",
+        "susceptibility",
+        "swollen",
+        "tact",
+        "tactfulness",
+        "talent",
+        "talents",
+        "technical brilliance",
+        "technical mastery",
+        "technical skill",
+        "technique",
+        "the goods",
+        "the stuff",
+        "thinking power",
+        "timing",
+        "tonnage",
+        "topful",
+        "twin",
+        "understanding",
+        "virtuosity",
+        "volume",
+        "ways",
+        "ways and means",
+        "what it takes",
+        "wherewith",
+        "wherewithal",
+        "wit",
+        "wits",
+        "wizardry",
+        "workmanship"
+      ]
+    },
+    "capape": {
+      "word": "CAPAPE",
+      "definitions": [
+        {
+          "text": "See Cap-a-pie. Shak.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capapie": {
+      "word": "CAPAPIE",
+      "definitions": [
+        {
+          "text": "From head to foot; at all points. \"He was armed cap-a-pie.\" Prescott.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caparison": {
+      "word": "CAPARISON",
+      "definitions": [
+        {
+          "text": "An ornamental covering or housing for a horse; the harness or trappings of a horse, taken collectively, esp. when decorative. Their horses clothed with rich caparison. Drylen.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Gay or rich clothing. My heart groans beneath the gay caparison. Smollett.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cover with housings, as a horse; to harness or fit out with decorative trappings, as a horse. The steeds, caparisoned with purple, stand. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To aborn with rich dress; to dress. I am caparisoned like a man. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accouterments",
+        "back band",
+        "backstrap",
+        "bearing rein",
+        "bellyband",
+        "bit",
+        "blinders",
+        "blinds",
+        "breeching",
+        "bridle",
+        "cavesson",
+        "checkrein",
+        "cheekpiece",
+        "chinband",
+        "cinch",
+        "collar",
+        "crownband",
+        "crupper",
+        "curb",
+        "furnishings",
+        "gag swivel",
+        "getup",
+        "girth",
+        "hackamore",
+        "halter",
+        "hames",
+        "hametugs",
+        "harness",
+        "headgear",
+        "headstall",
+        "hip straps",
+        "horse blanket",
+        "horsecloth",
+        "housing",
+        "jaquima",
+        "jerk line",
+        "lines",
+        "livery",
+        "martingale",
+        "noseband",
+        "outfit",
+        "pole strap",
+        "reins",
+        "ribbons",
+        "rig",
+        "saddle",
+        "saddle blanket",
+        "saddlecloth",
+        "shaft tug",
+        "side check",
+        "snaffle",
+        "surcingle",
+        "tack",
+        "tackle",
+        "things",
+        "trappings",
+        "trousseau",
+        "tug",
+        "turnout",
+        "wardrobe",
+        "winker braces",
+        "yoke"
+      ]
+    },
+    "caparro": {
+      "word": "CAPARRO",
+      "definitions": [
+        {
+          "text": "A large South American monkey (Lagothrix Humboldtii), with prehensile tail.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capcase": {
+      "word": "CAPCASE",
+      "definitions": [
+        {
+          "text": "A small traveling case or bandbox; formerly, a chest. A capcase for your linen and your plate. Beau. & Fl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cape": {
+      "word": "CAPE",
+      "definitions": [
+        {
+          "text": "A piece or point of land, extending beyind the adjacent coast into the sea or a lake; a promonotory; a headland. Cape buffalo (Zoöl.) a large and powerful buffalo of South Africa (Bubalus Caffer). It is said to be the most dangerous wild beast of Africa. See Buffalo, 2. Cape of Good Hope. It is about the size of a pigeon. of Good Hope, in the general sense of southern extremity of Africa. Also used of Cape Horn, and, in New England, of Cape Cod.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To head or point; to keep a course; as, the ship capes southwest by south.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A sleeveless garment or part of a garment, hanging from the neck over the back, arms, and shoulders, but not reaching below the hips. See Cloak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To gape. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Inverness cape",
+        "academic gown",
+        "afghan",
+        "beak",
+        "bill",
+        "blouse",
+        "breakwater",
+        "burnoose",
+        "capote",
+        "cardinal",
+        "cashmere",
+        "cassock",
+        "chersonese",
+        "chlamys",
+        "cloak",
+        "coral reef",
+        "delta",
+        "domino",
+        "duster",
+        "foreland",
+        "frock",
+        "head",
+        "headland",
+        "hook",
+        "kimono",
+        "kirtle",
+        "manta",
+        "manteau",
+        "mantelet",
+        "mantelletta",
+        "mantellone",
+        "mantilla",
+        "mantle",
+        "mantua",
+        "mull",
+        "naze",
+        "neck",
+        "ness",
+        "opera cloak",
+        "pallium",
+        "pelisse",
+        "peninsula",
+        "peplum",
+        "plaid",
+        "point",
+        "poncho",
+        "promontory",
+        "reef",
+        "robe",
+        "sagum",
+        "sandspit",
+        "shawl",
+        "shoulderette",
+        "slop",
+        "smock",
+        "soutane",
+        "spit",
+        "spur",
+        "stole",
+        "tabard",
+        "tippet",
+        "toga",
+        "toga virilis",
+        "tongue",
+        "tunic",
+        "wrap-around",
+        "wrap-up",
+        "wrapper"
+      ]
+    },
+    "capel": {
+      "word": "CAPEL",
+      "definitions": [
+        {
+          "text": "A composite stone (quartz, schorl, and hornlende) in the walls of tin and copper lodes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capelan": {
+      "word": "CAPELAN",
+      "definitions": [
+        {
+          "text": "See Capelin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capelcaple": {
+      "word": "CAPEL; CAPLE",
+      "definitions": [
+        {
+          "text": "A horse; a nag. [Obs.] Chaucer. Holland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capelin": {
+      "word": "CAPELIN",
+      "definitions": [
+        {
+          "text": "A small marine fish (Mallotus villosus) of the family Salmonidæ, very abundant on the coasts of Greenland, Iceland, Newfoundland, and Alaska. It is used as a bait for the cod. [Written also capelan and caplin.] anchova, and by the Portuguese capelina. Fisheries of U. S. (1884).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capeline": {
+      "word": "CAPELINE",
+      "definitions": [
+        {
+          "text": "A hood-shaped bandage for the head, the shoulder, or the stump of an amputated limb.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capella": {
+      "word": "CAPELLA",
+      "definitions": [
+        {
+          "text": "A brilliant star in the constellation Auriga.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capellane": {
+      "word": "CAPELLANE",
+      "definitions": [
+        {
+          "text": "The curate of a chapel; a chaplain. [Obs.] Fuller.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capelle": {
+      "word": "CAPELLE",
+      "definitions": [
+        {
+          "text": "The private orchestra or band of a prince or of a church.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capellet": {
+      "word": "CAPELLET",
+      "definitions": [
+        {
+          "text": "A swelling, like a wen, on the point of the elbow (or the heel of the hock) of a horse, caused probably by bruises in lying dowm.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capellmeister": {
+      "word": "CAPELLMEISTER",
+      "definitions": [
+        {
+          "text": "The musical director in royal or ducal chapel; a choirmaster. [Written also kepellmeister.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caper": {
+      "word": "CAPER",
+      "definitions": [
+        {
+          "text": "To leap or jump about in a sprightly manner; to cut capers; to skip; to spring; to prance; to dance. He capers, he dances, he has eyes of youth. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A frolicsome leap or spring; a skip; a jump, as in mirth or dancing; a prank. To cut a caper, to frolic; to make a sportive spring; to play a prank. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A vessel formerly used by the Dutch, privateer. Wright.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The pungent grayish green flower bud of the European and Oriental caper (Capparis spinosa), much used for pickles.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plant of the genus Capparis; -- called also caper bush, caper tree. Mediterranean coasts, with trailing branches and brilliant flowers; - - cultivated in the south of Europe for its buds. The C. sodada is an almost leafless spiny shrub of central Africa (Soudan), Arabia, and southern India, with edible berries. Bean caper. See Bran caper, in the Vocabulary.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "antic",
+        "beam",
+        "bob",
+        "bounce",
+        "burglary",
+        "capriole",
+        "caracole",
+        "carol",
+        "carry on",
+        "cavort",
+        "chirp",
+        "chirrup",
+        "clap hands",
+        "crime",
+        "curvet",
+        "cut a dido",
+        "cut capers",
+        "cut up",
+        "dance",
+        "delight",
+        "devilment",
+        "dido",
+        "disport",
+        "escapade",
+        "exult",
+        "falcade",
+        "filch",
+        "flounce",
+        "fool around",
+        "frisk",
+        "frolic",
+        "gambade",
+        "gambado",
+        "gambol",
+        "glory",
+        "glow",
+        "grab",
+        "heist",
+        "high jinks",
+        "hop",
+        "horse around",
+        "impishness",
+        "job",
+        "joy",
+        "jubilate",
+        "jump",
+        "jump about",
+        "lark",
+        "laugh",
+        "leap",
+        "lift",
+        "lilt",
+        "mischief",
+        "monkeyshine",
+        "monkeyshines",
+        "pinch",
+        "play",
+        "practical joke",
+        "prance",
+        "prank",
+        "radiate cheer",
+        "ramp",
+        "rejoice",
+        "revel",
+        "rip-off",
+        "robbery",
+        "roguery",
+        "rollick",
+        "romp",
+        "shenanigan",
+        "shenanigans",
+        "shines",
+        "sing",
+        "skip",
+        "skip for joy",
+        "smile",
+        "sparkle",
+        "sport",
+        "spring",
+        "steal",
+        "stunt",
+        "theft",
+        "tomfoolery",
+        "trick",
+        "trip",
+        "waggish trick",
+        "waggishness",
+        "whistle"
+      ]
+    },
+    "caperberry": {
+      "word": "CAPERBERRY",
+      "definitions": [
+        {
+          "text": "The small olive-shaped berry of the European and Oriental caper, said to be used in pickles and as a condiment.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The currantlike fruit of the African and Arabian caper (Capparis sodado).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caperbushcapertree": {
+      "word": "CAPER BUSH; CAPER TREE",
+      "definitions": [
+        {
+          "text": "See Capper, a plant, 2.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "capercailziecapercally": {
+      "word": "CAPERCAILZIE; CAPERCALLY",
+      "definitions": [
+        {
+          "text": "A species of grouse (Tetrao uragallus) of large size and fine flavor, found in northern Europe and formerly in Scotland; -- called also cock of the woods. [Written also capercaillie, capercaili.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caperclaw": {
+      "word": "CAPERCLAW",
+      "definitions": [
+        {
+          "text": "To treat with cruel playfulness, as a cat treats a mouse; to abuse. [Obs.] Birch.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caperer": {
+      "word": "CAPERER",
+      "definitions": [
+        {
+          "text": "One who capers, leaps, and skips about, or dances. The nimble capperer on the cord. Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capful": {
+      "word": "CAPFUL",
+      "definitions": [
+        {
+          "text": "As much as will fill a cap. A capful of wind (Naut.), a light puff of wind.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capias": {
+      "word": "CAPIAS",
+      "definitions": [
+        {
+          "text": "A writ or process commanding the officer to take the body of the person named in it, that is, to arrest him; -- also called writ of capias. are frequently commenced; another is a writ of execution issued after judgment to satisfy damages recovered; a capias in criminal law is the process to take a person charged on an indictment, when he is not in custody. Burrill. Wharton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capibara": {
+      "word": "CAPIBARA",
+      "definitions": [
+        {
+          "text": "See Capybara.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capillaceous": {
+      "word": "CAPILLACEOUS",
+      "definitions": [
+        {
+          "text": "Having long filaments; resembling a hair; slender. See Capillary.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capillaire": {
+      "word": "CAPILLAIRE",
+      "definitions": [
+        {
+          "text": "A sirup prepared from the maiden-hair, formerly supposed to have medicinal properties.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any simple sirup flavored with orange flowers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capillament": {
+      "word": "CAPILLAMENT",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A filament. [R.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any villous or hairy covering; a fine fiber or filament, as of the nerves.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capillariness": {
+      "word": "CAPILLARINESS",
+      "definitions": [
+        {
+          "text": "The quality of being capillary.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capillarity": {
+      "word": "CAPILLARITY",
+      "definitions": [
+        {
+          "text": "The quality or condition of being capillary.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Physics)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The peculiar action by which the surface of a liquid, where it is in contact with a solid (as in a capillary tube), is elevated or depressed; capillary attraction. modecules of the liquid for each other and for those of the solid, and is especially observable in capillary tubes, where it determines the ascent or descent of the liquid above or below the level of the liquid which the tube is dipped; -- hence the name.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capillary": {
+      "word": "CAPILLARY",
+      "definitions": [
+        {
+          "text": "Resembling a hair; fine; minute; very slender; having minute tubes or interspaces; having very small bore; as, the capillary vessels of animals and plants.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to capillary tubes or vessels; as, capillary action. Capillary attraction, Capillary repulsion, the apparent attraction or repulsion between a soild and liquid caused bycapillarity. See Capillarity, and Attraction.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A tube or vessel, extremely fine or minute.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A minute, thin-walled vessel; particularly one of the smallest blood vessels connecting arteries and veins, but used also for the smallest lymphatic and biliary vessels.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aorta",
+        "arterial",
+        "arteriole",
+        "artery",
+        "blood vessel",
+        "bristlelike",
+        "carotid",
+        "cirrose",
+        "cirrous",
+        "fibered",
+        "fibroid",
+        "fibrous",
+        "flagelliform",
+        "flossy",
+        "funicular",
+        "gossamery",
+        "hairlike",
+        "hairy",
+        "jugular vein",
+        "ligamental",
+        "portal vein",
+        "pulmonary artery",
+        "pulmonary vein",
+        "ropy",
+        "silky",
+        "stringy",
+        "taeniate",
+        "taeniform",
+        "threadlike",
+        "thready",
+        "vascular",
+        "vein",
+        "veinlet",
+        "veinous",
+        "vena cava",
+        "venation",
+        "venose",
+        "venous",
+        "venule",
+        "vesicular",
+        "wiry"
+      ]
+    },
+    "capillation": {
+      "word": "CAPILLATION",
+      "definitions": [
+        {
+          "text": "A capillary blood vessel. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capillature": {
+      "word": "CAPILLATURE",
+      "definitions": [
+        {
+          "text": "A bush of hair; frizzing of the hair. Clarke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capilliform": {
+      "word": "CAPILLIFORM",
+      "definitions": [
+        {
+          "text": "In the shape or form of, a hair, or of hairs.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capillose": {
+      "word": "CAPILLOSE",
+      "definitions": [
+        {
+          "text": "Having much hair; hairy. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capistrate": {
+      "word": "CAPISTRATE",
+      "definitions": [
+        {
+          "text": "Hooded; cowled.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capital": {
+      "word": "CAPITAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the head. [Obs.] Needs must the Serpent now his capital bruise Expect with mortal pain. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having reference to, or involving, the forfeiture of the head or life; affecting life; punishable with death; as, capital trials; capital punishment. Many crimes that are capital among us. Swift. To put to death a capital offender. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "First in importance; chief; principal. A capital article in religion Atterbury. Whatever is capital and essential in Christianity. I. Taylor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Chief, in a political sense, as being the seat of the general government of a state or nation; as, Washington and Paris are capital cities.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of first rate quality; excellent; as, a capital speech or song. [Colloq.] Capital letter Etym: [F, lettre capitale] (Print.), a leading or heading letter, used at the beginning of a sentence and as the first letter of certain words, distinguished, for the most part, both by different form and larger size, from the small (lower-case) letters, which form the greater part of common print or writing. of the body of the lower-case letters. business, or the enterprise of any corporation or institution. Abbott.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The head or uppermost member of a column, pilaster, etc. It consists generally of three parts, abacus, bell (or vase), and necking. See these terms, and Column.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. F. capilate, fem., sc. ville.] (Geog.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The seat of government; the chief city or town in a country; a metropolis. \"A busy and splendid capital\" Macauly.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. F. capital.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Money, property, or stock employed in trade, manufactures,",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Grade A",
+        "abecedarian",
+        "ability",
+        "acmatic",
+        "advantageous",
+        "all-absorbing",
+        "allographic",
+        "alphabetic",
+        "apical",
+        "arch",
+        "art center",
+        "ascender",
+        "assets",
+        "auspicious",
+        "available means",
+        "back",
+        "balance",
+        "banner",
+        "basic",
+        "bastard type",
+        "beard",
+        "belly",
+        "beneficial",
+        "benevolent",
+        "bevel",
+        "black letter",
+        "body",
+        "bon",
+        "bonny",
+        "bracket capital",
+        "braw",
+        "bueno",
+        "cap",
+        "capacity",
+        "capital city",
+        "capital gains distribution",
+        "capital goods",
+        "capital structure",
+        "capitalization",
+        "cardinal",
+        "case",
+        "cash",
+        "central",
+        "champion",
+        "chief",
+        "choice",
+        "circulating capital",
+        "cock",
+        "cogent",
+        "commendable",
+        "consummate",
+        "controlling",
+        "cornice",
+        "corpus",
+        "counter",
+        "county seat",
+        "county site",
+        "county town",
+        "crown",
+        "crowning",
+        "dandy",
+        "descender",
+        "devices",
+        "disposable resources",
+        "dominant",
+        "elegant",
+        "em",
+        "en",
+        "equity capital",
+        "essential",
+        "estimable",
+        "excellent",
+        "expedient",
+        "extraordinary",
+        "face",
+        "fair",
+        "famous",
+        "fat-faced type",
+        "favorable",
+        "feet",
+        "finances",
+        "financial",
+        "fine",
+        "first",
+        "first-class",
+        "first-rate",
+        "first-string",
+        "fiscal",
+        "fixed capital",
+        "flagrant",
+        "floating capital",
+        "focal",
+        "font",
+        "foremost",
+        "fund",
+        "fundamental",
+        "funds",
+        "garment center",
+        "glaring",
+        "good",
+        "goodly",
+        "grand",
+        "graphemic",
+        "great",
+        "grist",
+        "groove",
+        "gross",
+        "head",
+        "headmost",
+        "healthy",
+        "hegemonic",
+        "helpful",
+        "highest",
+        "holdings",
+        "ideographic",
+        "important",
+        "initial",
+        "italic",
+        "kind",
+        "laudable",
+        "leading",
+        "letter",
+        "lettered",
+        "lexigraphic",
+        "ligature",
+        "liquid assets",
+        "literal",
+        "logogrammatic",
+        "logographic",
+        "logotype",
+        "lower case",
+        "lower-case",
+        "magisterial",
+        "main",
+        "major",
+        "majuscule",
+        "manufacturing center",
+        "master",
+        "matchless",
+        "maximal",
+        "maximum",
+        "mean",
+        "means",
+        "medical center",
+        "meridian",
+        "meridional",
+        "method",
+        "metropolis",
+        "minuscular",
+        "minuscule",
+        "monetary",
+        "money",
+        "moneyed capital",
+        "nice",
+        "nick",
+        "noble",
+        "number one",
+        "numismatic",
+        "nummary",
+        "outstanding",
+        "overmost",
+        "overriding",
+        "overruling",
+        "paramount",
+        "pecuniary",
+        "peerless",
+        "pi",
+        "pica",
+        "pictographic",
+        "pleasant",
+        "point",
+        "power",
+        "predominant",
+        "preeminent",
+        "premier",
+        "preponderant",
+        "prevailing",
+        "primal",
+        "primary",
+        "prime",
+        "principal",
+        "print",
+        "profitable",
+        "property",
+        "railroad center",
+        "rank",
+        "ranking",
+        "recourses",
+        "regal",
+        "resorts",
+        "resource",
+        "resources",
+        "ripping",
+        "roman",
+        "royal",
+        "ruling",
+        "sans serif",
+        "savings",
+        "script",
+        "seat",
+        "seat of government",
+        "select",
+        "shank",
+        "shipping center",
+        "shire town",
+        "shopping center",
+        "shoulder",
+        "skillful",
+        "small cap",
+        "small capital",
+        "smashing",
+        "sound",
+        "sovereign",
+        "splendid",
+        "stamp",
+        "star",
+        "stellar",
+        "stem",
+        "sterling",
+        "stock",
+        "summital",
+        "sumptuary",
+        "super",
+        "superb",
+        "supereminent",
+        "superior",
+        "supply",
+        "supreme",
+        "tip-top",
+        "top",
+        "top-hole",
+        "top-notch",
+        "topflight",
+        "topmost",
+        "topping",
+        "tourist center",
+        "trade center",
+        "transliterated",
+        "type",
+        "type body",
+        "type class",
+        "type lice",
+        "typecase",
+        "typeface",
+        "typefounders",
+        "typefoundry",
+        "ultimate",
+        "uncial",
+        "underlying",
+        "upmost",
+        "upper case",
+        "upper-case",
+        "uppermost",
+        "urban center",
+        "useful",
+        "valid",
+        "venture capital",
+        "vertical",
+        "very good",
+        "virtuous",
+        "vital",
+        "ways",
+        "ways and means",
+        "wealth",
+        "wherewith",
+        "wherewithal",
+        "working capital",
+        "zenithal"
+      ]
+    },
+    "capitalist": {
+      "word": "CAPITALIST",
+      "definitions": [
+        {
+          "text": "One who has capital; one who has money for investment, or money invested; esp. a person of large property, which is employed in business. The expenditure of the capitalist. Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Daddy Warbucks",
+        "Wall Streeter",
+        "billionaire",
+        "bloated plutocrat",
+        "bourgeois",
+        "economist",
+        "fat cat",
+        "finance capitalist",
+        "financial expert",
+        "financier",
+        "free-enterprise",
+        "individualist",
+        "individualistic",
+        "investor",
+        "man of means",
+        "man of substance",
+        "man of wealth",
+        "millionaire",
+        "moneybags",
+        "moneyed man",
+        "moneyman",
+        "multimillionaire",
+        "nabob",
+        "nonsocialistic",
+        "parvenu",
+        "plutocrat",
+        "private-enterprise",
+        "rich man",
+        "richling",
+        "rugged individualist",
+        "warm man",
+        "wealthy man"
+      ]
+    },
+    "capitalization": {
+      "word": "CAPITALIZATION",
+      "definitions": [
+        {
+          "text": "The act or process of capitalizing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "assets",
+        "available means",
+        "backing",
+        "balance",
+        "capital",
+        "capital gains distribution",
+        "capital goods",
+        "capital structure",
+        "circulating capital",
+        "corpus",
+        "deficit financing",
+        "equity capital",
+        "financial backing",
+        "financial support",
+        "financing",
+        "fixed capital",
+        "floating capital",
+        "fund",
+        "funding",
+        "grist",
+        "grubstake",
+        "holdings",
+        "liquid assets",
+        "means",
+        "moneyed capital",
+        "patronization",
+        "principal",
+        "property",
+        "provision of capital",
+        "resource",
+        "resources",
+        "sponsorship",
+        "stake",
+        "subsidy",
+        "supply",
+        "support",
+        "venture capital",
+        "working capital"
+      ]
+    },
+    "capitalize": {
+      "word": "CAPITALIZE",
+      "definitions": [
+        {
+          "text": "To convert into capital, or to use as capital.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To compute, appraise, or assess the capital value of (a patent right, an annuity, etc.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To print in capital letters, or with an initial capital.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "aid",
+        "alphabet",
+        "alphabetize",
+        "angel",
+        "assist",
+        "back",
+        "balance",
+        "balance the books",
+        "bankroll",
+        "book",
+        "carry",
+        "carry over",
+        "cast up accounts",
+        "character",
+        "charge off",
+        "close out",
+        "close the books",
+        "credit",
+        "debit",
+        "docket",
+        "enter",
+        "finance",
+        "fund",
+        "grubstake",
+        "help",
+        "initial",
+        "inscribe",
+        "journalize",
+        "keep books",
+        "letter",
+        "log",
+        "make an entry",
+        "mark",
+        "minute",
+        "note",
+        "patronize",
+        "pay for",
+        "post",
+        "post up",
+        "promote",
+        "provide for",
+        "refinance",
+        "set up",
+        "sign",
+        "sponsor",
+        "stake",
+        "strike a balance",
+        "subsidize",
+        "support",
+        "transcribe",
+        "transliterate"
+      ]
+    },
+    "capitally": {
+      "word": "CAPITALLY",
+      "definitions": [
+        {
+          "text": "In a way involving the forfeiture of the head or life; as, to punish capitally.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "In a capital manner; excellently. [Colloq.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitalness": {
+      "word": "CAPITALNESS",
+      "definitions": [
+        {
+          "text": "The quality of being capital; preeminence. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitanpashacapitanpacha": {
+      "word": "CAPITAN PASHA; CAPITAN PACHA",
+      "definitions": [
+        {
+          "text": "The chief admiral of the Turkish fleet.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitate": {
+      "word": "CAPITATE",
+      "definitions": [
+        {
+          "text": "Headlike in form; also, having the distal end enlarged and rounded, as the stigmas of certain flowers.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Having the flowers gathered into a head.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitatim": {
+      "word": "CAPITATIM",
+      "definitions": [
+        {
+          "text": "Of so much per head; as, a capitatim tax; a capitatim grant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitation": {
+      "word": "CAPITATION",
+      "definitions": [
+        {
+          "text": "A numbering of heads or individuals. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tax upon each head or person, without reference to property; a poll tax.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capite": {
+      "word": "CAPITE",
+      "definitions": [
+        {
+          "text": "See under Tenant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitellate": {
+      "word": "CAPITELLATE",
+      "definitions": [
+        {
+          "text": "Having a very small knoblike termination, or collected into minute capitula.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitibranchiata": {
+      "word": "CAPITIBRANCHIATA",
+      "definitions": [
+        {
+          "text": "A division of annelids in which the gills arise from or near the head. See Tubicola.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitol": {
+      "word": "CAPITOL",
+      "definitions": [
+        {
+          "text": "The temple of Jupiter, at Rome, on the Mona Capitolinus, where the Senate met. Comes Cæsar to the Capitol to-morrow Shak.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "The edifice at Washington occupied by the Congress of the United States; also, the building in which the legislature of State holds its sessions; a statehouse.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitoliancapitoline": {
+      "word": "CAPITOLIAN; CAPITOLINE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Capitol in Rome. \"Capitolian Jove.\" Macaulay. Capitoline games (Antiq.), annual games instituted at Rome by Camillus, in honor of Jupter Capitolinus, on account of the preservation of the Capitol from the Gauls; when reinstituted by Domitian, arter a period of neglect, they were held every fifth year.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitula": {
+      "word": "CAPITULA",
+      "definitions": [
+        {
+          "text": "See Capitulum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitular": {
+      "word": "CAPITULAR",
+      "definitions": [
+        {
+          "text": "An act passed in a chapter.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of a chapter. The chapter itself, and all its members or capitulars. Ayliffe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The head or prominent part.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eccl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a chapter; capitulary. From the pope to the member of the capitular body. Milman.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Growing in, or pertaining to, a capitulum.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to a capitulum; as, the capitular process of a vetebra, the process which articulates with the capitulum of a rib.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitularly": {
+      "word": "CAPITULARLY",
+      "definitions": [
+        {
+          "text": "In the manner or form of an ecclesiastical chapter. Sterne.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitulary": {
+      "word": "CAPITULARY",
+      "definitions": [
+        {
+          "text": "A capitular.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The body of laws or statutes of a chapter, or of an ecclesiastical council.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A collection of laws or statutes, civil and ecclesiastical, esp. of the Frankish kings, in chapters or sections. Several of Charlemagne's capitularies. Hallam.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Relating to the chapter of a cathedral; capitular. \"Capitulary acts.\" Warton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitulate": {
+      "word": "CAPITULATE",
+      "definitions": [
+        {
+          "text": "To settle or draw up the heads or terms of an agreement, as in chapters or articles; to agree. [Obs.] There capitulates with the king . . . to take to wife his daughter Mary. Heylin. There is no reason why the reducing of any agreement to certain heads or capitula should not be called to capitulate. Trench.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To surrender on terms agreed upon (usually, drawn up under several heads); as, an army or a garrison capitulates. The Irish, after holding out a week, capitulated. Macaulay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To surrender or transfer, as an army or a fortress, on certain conditions. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abandon",
+        "acknowledge defeat",
+        "acquiesce",
+        "beg a truce",
+        "bow",
+        "cave",
+        "cede",
+        "come to terms",
+        "concede",
+        "cry pax",
+        "cry quits",
+        "defer",
+        "give in",
+        "give over",
+        "give up",
+        "implore mercy",
+        "knuckle",
+        "knuckle under",
+        "pray for quarter",
+        "relent",
+        "relinquish",
+        "renounce",
+        "say uncle",
+        "submit",
+        "succumb",
+        "surrender",
+        "yield",
+        "yield the palm"
+      ]
+    },
+    "capitulation": {
+      "word": "CAPITULATION",
+      "definitions": [
+        {
+          "text": "A reducing to heads or articles; a formal agreement. With special capitulation that neither the Scots nor the French shall refortify. Bp. Burnet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of capitulating or surrendering to an emeny upon stipulated terms.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The instrument containing the terms of an agreement or surrender.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "NATO",
+        "SEATO",
+        "abandonment",
+        "account",
+        "accounts",
+        "alliance",
+        "body count",
+        "cartel",
+        "census",
+        "cession",
+        "concord",
+        "concordat",
+        "convention",
+        "count",
+        "entente",
+        "entente cordiale",
+        "giving in",
+        "giving over",
+        "giving up",
+        "head count",
+        "international agreement",
+        "inventory",
+        "league",
+        "mutual-defense treaty",
+        "nonaggression pact",
+        "nose count",
+        "paction",
+        "recapitulation",
+        "recedence",
+        "recession",
+        "reckoning",
+        "recount",
+        "recounting",
+        "rehearsal",
+        "relinquishment",
+        "renunciation",
+        "repertory",
+        "retreat",
+        "statement",
+        "submission",
+        "summary",
+        "summation",
+        "summing",
+        "summing up",
+        "surrender",
+        "treaty"
+      ]
+    },
+    "capitulator": {
+      "word": "CAPITULATOR",
+      "definitions": [
+        {
+          "text": "One who capitulates.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitule": {
+      "word": "CAPITULE",
+      "definitions": [
+        {
+          "text": "A summary. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitulum": {
+      "word": "CAPITULUM",
+      "definitions": [
+        {
+          "text": "A thick head of flowers on a very short axis, as a clover top, or a dandelion; a composite flower. A capitulum may be either globular or flat. Gray.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A knobike protuberance of any part, esp. at the end of a bone or cartilage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capivi": {
+      "word": "CAPIVI",
+      "definitions": [
+        {
+          "text": "A balsam of the Spanish West Indies. See Copaiba.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caple": {
+      "word": "CAPLE",
+      "definitions": [
+        {
+          "text": "See Capel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caplin": {
+      "word": "CAPLIN",
+      "definitions": [
+        {
+          "text": "See Capelin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caplincapling": {
+      "word": "CAPLIN; CAPLING",
+      "definitions": [
+        {
+          "text": "The cap or coupling of a flail, through which the thongs pass which connect the handle and swingel. Wright.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capnomancy": {
+      "word": "CAPNOMANCY",
+      "definitions": [
+        {
+          "text": "Divination by means of the ascent or motion of smoke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capnomor": {
+      "word": "CAPNOMOR",
+      "definitions": [
+        {
+          "text": "A limpid, colorless oil with a peculiar odor, obtained from beech tar. Watts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capoc": {
+      "word": "CAPOC",
+      "definitions": [
+        {
+          "text": "A sort of cotton so short and fine thet it can not be spun, used in the East Indies to line palanquins, to make mattresses, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capoch": {
+      "word": "CAPOCH",
+      "definitions": [
+        {
+          "text": "A hood; especialy, the hood attached to the gown of a monk.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cover with, or as with, a hood; hence, to hoodwink or blind. Hudibras.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capon": {
+      "word": "CAPON",
+      "definitions": [
+        {
+          "text": "A castrated cock, esp. when fattened; a male chicken gelded to improve his flesh for the table. Shak. The merry thought of a capon. W. Irving.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To castrate; to make a capon of.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caponet": {
+      "word": "CAPONET",
+      "definitions": [
+        {
+          "text": "A young capon. [R.] Chapman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caponiere": {
+      "word": "CAPONIERE",
+      "definitions": [
+        {
+          "text": "A work made across or in the ditch, to protect it from the enemy, or to serve as a covered passageway.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caponize": {
+      "word": "CAPONIZE",
+      "definitions": [
+        {
+          "text": "To castrate, as a fowl.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caporal": {
+      "word": "CAPORAL",
+      "definitions": [
+        {
+          "text": "One who directs work; an overseer. [Sp. Amer.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capot": {
+      "word": "CAPOT",
+      "definitions": [
+        {
+          "text": "A winning of all the tricks at the game of piquet. It counts for forty points. Hoyle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To win all the tricks from, in playing at piquet.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capotasto": {
+      "word": "CAPO TASTO",
+      "definitions": [
+        {
+          "text": "A sort of bar or movable nut, attached to the finger board of a guitar or other fretted instrument for the purpose of raising uniformly the pitch of all the strings.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "capote": {
+      "word": "CAPOTE",
+      "definitions": [
+        {
+          "text": "A long cloak or overcoat, especially one with a hood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capouch": {
+      "word": "CAPOUCH",
+      "definitions": [
+        {
+          "text": "Same as Capoch.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cappadine": {
+      "word": "CAPPADINE",
+      "definitions": [
+        {
+          "text": "A floss or waste obtained from the cocoon after the silk has been reeled off, used for shag.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cappaper": {
+      "word": "CAPPAPER",
+      "definitions": [
+        {
+          "text": "See cap, n., also Paper, n.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cappeak": {
+      "word": "CAPPEAK",
+      "definitions": [
+        {
+          "text": "The front piece of a cap; -- now more commonly called visor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cappeline": {
+      "word": "CAPPELINE",
+      "definitions": [
+        {
+          "text": "A hood-shaped bandage for the head, the shoulder, or the stump of an amputated limb.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cappella": {
+      "word": "CAPPELLA",
+      "definitions": [
+        {
+          "text": "See A cappella.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capper": {
+      "word": "CAPPER",
+      "definitions": [
+        {
+          "text": "One whose business is to make or sell caps.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A by-bidder; a decoy for gamblers [Slang, U. S.].",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An instrument for applying a percussion cap to a gun or cartridge.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cappingplane": {
+      "word": "CAPPING PLANE",
+      "definitions": [
+        {
+          "text": "A plane used for working the upper surface of staircase rails.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "capra": {
+      "word": "CAPRA",
+      "definitions": [
+        {
+          "text": "A genus of ruminants, including the common goat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprate": {
+      "word": "CAPRATE",
+      "definitions": [
+        {
+          "text": "A salt of capric acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capreolate": {
+      "word": "CAPREOLATE",
+      "definitions": [
+        {
+          "text": "Having a tendril or tendrils.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capreoline": {
+      "word": "CAPREOLINE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the roebuck.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capri": {
+      "word": "CAPRI",
+      "definitions": [
+        {
+          "text": "Wine produced on the island of Capri, commonly a light, dry, white wine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capric": {
+      "word": "CAPRIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to capric acid or its derivatives. Capric acid, C9H9.CO2H, Caprylic acid, C7H15.CO2H, and Caproic acid, C5H11.CO2H, are fatty acids occurring in small quantities in butter, cocoanut oil, etc., united with glycerin; they are colorless oils, or white crystalline solids, of an unpleasant odor like that of goats or sweat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capriccio": {
+      "word": "CAPRICCIO",
+      "definitions": [
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece in a free form, with frequent digressions from the theme; a fantasia; -- often called caprice.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A caprice; a freak; a fancy. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capriciosocapriccioso": {
+      "word": "CAPRICIOSO; CAPRICCIOSO",
+      "definitions": [
+        {
+          "text": "In a free, fantastic style.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capricious": {
+      "word": "CAPRICIOUS",
+      "definitions": [
+        {
+          "text": "Governed or characterized by caprice; apt to change suddenly; freakish; whimsical; changeable. \"Capricious poet.\" Shak. \"Capricious humor.\" Hugh Miller. A capricious partiality to the Romish practices. Hallam.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adrift",
+        "afloat",
+        "agnostic",
+        "aimless",
+        "alternating",
+        "ambiguous",
+        "ambitendent",
+        "ambivalent",
+        "amorphous",
+        "arbitrary",
+        "at loose ends",
+        "brittle",
+        "broken",
+        "careening",
+        "careless",
+        "casual",
+        "catchy",
+        "chancy",
+        "changeable",
+        "changeful",
+        "changing",
+        "choppy",
+        "corruptible",
+        "cranky",
+        "crotchety",
+        "deciduous",
+        "desultory",
+        "deviable",
+        "deviating",
+        "deviative",
+        "deviatory",
+        "dicey",
+        "different",
+        "disarticulated",
+        "disconnected",
+        "discontinuous",
+        "disjunct",
+        "disordered",
+        "disorderly",
+        "dispersed",
+        "disproportionate",
+        "divaricate",
+        "divergent",
+        "diversified",
+        "diversiform",
+        "dizzy",
+        "double-minded",
+        "doubting",
+        "dubious",
+        "dying",
+        "eccentric",
+        "effervescent",
+        "ephemeral",
+        "equivocal",
+        "erose",
+        "erratic",
+        "evanescent",
+        "fading",
+        "fanciful",
+        "fantasied",
+        "fantastic",
+        "fast and loose",
+        "fence-sitting",
+        "fence-straddling",
+        "fickle",
+        "fitful",
+        "flaky",
+        "fleeting",
+        "flickering",
+        "flighty",
+        "flitting",
+        "fluctuant",
+        "fluctuating",
+        "fly-by-night",
+        "flying",
+        "formless",
+        "fragile",
+        "frail",
+        "freakish",
+        "frivolous",
+        "fugacious",
+        "fugitive",
+        "giddy",
+        "gratuitous",
+        "guttering",
+        "halting",
+        "haphazard",
+        "harebrained",
+        "heedless",
+        "herky-jerky",
+        "hesitant",
+        "hesitating",
+        "heteroclite",
+        "hit-or-miss",
+        "humorsome",
+        "iffy",
+        "immethodical",
+        "impermanent",
+        "impetuous",
+        "impulsive",
+        "inadvertent",
+        "incalculable",
+        "inchoate",
+        "incoherent",
+        "inconsiderate",
+        "inconsistent",
+        "inconstant",
+        "indecisive",
+        "indemonstrable",
+        "indiscriminate",
+        "infirm",
+        "infirm of purpose",
+        "insubstantial",
+        "intermittent",
+        "intermitting",
+        "irregular",
+        "irresolute",
+        "irresolved",
+        "irresponsible",
+        "jagged",
+        "jerky",
+        "kinky",
+        "lubricious",
+        "lurching",
+        "maggoty",
+        "mazy",
+        "meaningless",
+        "mercurial",
+        "misshapen",
+        "momentary",
+        "moody",
+        "mortal",
+        "motiveless",
+        "motley",
+        "mugwumpian",
+        "mugwumpish",
+        "mutable",
+        "nonconformist",
+        "nondurable",
+        "nonpermanent",
+        "nonstandard",
+        "nonsymmetrical",
+        "nonsystematic",
+        "nonuniform",
+        "notional",
+        "of two minds",
+        "orderless",
+        "passing",
+        "patchy",
+        "perishable",
+        "petulant",
+        "planless",
+        "pluralistic",
+        "polysemous",
+        "promiscuous",
+        "quirky",
+        "ragged",
+        "rambling",
+        "random",
+        "reasonless",
+        "restless",
+        "rough",
+        "roving",
+        "scatterbrained",
+        "scrappy",
+        "senseless",
+        "shapeless",
+        "shifting",
+        "shifty",
+        "short-lived",
+        "shuffling",
+        "skeptical",
+        "snatchy",
+        "spasmatic",
+        "spasmic",
+        "spasmodic",
+        "spastic",
+        "spineless",
+        "sporadic",
+        "spotty",
+        "staggering",
+        "straggling",
+        "straggly",
+        "systemless",
+        "temperamental",
+        "temporal",
+        "temporary",
+        "thoughtless",
+        "ticklish",
+        "touch-and-go",
+        "transient",
+        "transitive",
+        "transitory",
+        "unaccountable",
+        "unarranged",
+        "uncalculating",
+        "uncertain",
+        "unclassified",
+        "unconfirmable",
+        "uncontrolled",
+        "unconvinced",
+        "undecided",
+        "undependable",
+        "undetermined",
+        "undirected",
+        "undisciplined",
+        "undivinable",
+        "undurable",
+        "unenduring",
+        "unequable",
+        "unequal",
+        "uneven",
+        "unfixed",
+        "unforeseeable",
+        "ungraded",
+        "unguarded",
+        "unjoined",
+        "unmethodical",
+        "unmetrical",
+        "unordered",
+        "unorganized",
+        "unorthodox",
+        "unpersuaded",
+        "unpredictable",
+        "unprovable",
+        "unreasonable",
+        "unreasoning",
+        "unreflecting",
+        "unregular",
+        "unreliable",
+        "unresolved",
+        "unrestrained",
+        "unrhythmical",
+        "unsettled",
+        "unsorted",
+        "unstable",
+        "unstable as water",
+        "unstaid",
+        "unsteadfast",
+        "unsteady",
+        "unsure",
+        "unsymmetrical",
+        "unsystematic",
+        "unthinking",
+        "unthoughtful",
+        "ununiform",
+        "unverifiable",
+        "vacillating",
+        "vagarious",
+        "vagrant",
+        "vague",
+        "variable",
+        "variegated",
+        "variform",
+        "various",
+        "varying",
+        "veering",
+        "vicissitudinary",
+        "vicissitudinous",
+        "volatile",
+        "wandering",
+        "wanton",
+        "wavering",
+        "wavery",
+        "wavy",
+        "wayward",
+        "whimsical",
+        "wishy-washy",
+        "wobbling",
+        "wobbly"
+      ]
+    },
+    "capricorn": {
+      "word": "CAPRICORN",
+      "definitions": [
+        {
+          "text": "(Astron.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The tenth sign of zodiac, into which the sun enters at the winter solstice, about December 21. See Tropic. The sun was entered into Capricorn. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Astron.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A southern constellation, represented on ancient monuments by the figure of a goat, or a figure with its fore part like a fish. Capricorn beetle (Zoöl.), any beetle of the family Carambucidæ; one of the long-horned beetles. The larvæ usually bore into the wood or bark of trees and shurbs and are often destructive. See Girdler, Pruner.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprid": {
+      "word": "CAPRID",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the tribe of ruminants of which the goat, or genus Capra, is the type.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprification": {
+      "word": "CAPRIFICATION",
+      "definitions": [
+        {
+          "text": "The practice of hanging, upon the cultivated fig tree, branches of the wild fig infested with minute hymenopterous insects. carrying the pollen from the male flowers near the opening of the fig down to the female flowers, and also accelerate ripening the fruit by puncturing it. The practice has existed since ancient times, but its benefit has been disputed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprifole": {
+      "word": "CAPRIFOLE",
+      "definitions": [
+        {
+          "text": "The woodbine or honeysuckle. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprifoliaceous": {
+      "word": "CAPRIFOLIACEOUS",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or resembling, the Honeysuckle family of plants (Caprifoliacæ.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capriform": {
+      "word": "CAPRIFORM",
+      "definitions": [
+        {
+          "text": "Having the form of a goat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprigenous": {
+      "word": "CAPRIGENOUS",
+      "definitions": [
+        {
+          "text": "Of the goat kind.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprine": {
+      "word": "CAPRINE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a goat; as, caprine gambols.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capriole": {
+      "word": "CAPRIOLE",
+      "definitions": [
+        {
+          "text": "(Man.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A leap that a horse makes with all fours, upwards only, without advancing, but with a kick or jerk of the hind legs when at the height of the leap.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A leap or caper, as in dancing. \"With lofty turns and caprioles.\" Sir J. Davies.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To perform a capriole. Carlyle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "Highland fling",
+        "and jump",
+        "bob",
+        "bounce",
+        "bound",
+        "broad jump",
+        "buck",
+        "buckjump",
+        "caper",
+        "caracole",
+        "cavort",
+        "clear",
+        "curvet",
+        "cut a dido",
+        "cut capers",
+        "demivolt",
+        "dido",
+        "falcade",
+        "flounce",
+        "flying jump",
+        "frisk",
+        "galliard",
+        "gambade",
+        "gambado",
+        "gambol",
+        "gelandesprung",
+        "grand jete",
+        "handspring",
+        "high jump",
+        "hippety-hop",
+        "hop",
+        "hurdle",
+        "jete",
+        "jig",
+        "jump",
+        "jump about",
+        "jump over",
+        "jump shot",
+        "jump turn",
+        "jump-hop",
+        "jump-off",
+        "lavolta",
+        "leap",
+        "leap over",
+        "leapfrog",
+        "long jump",
+        "morris",
+        "negotiate",
+        "overjump",
+        "overleap",
+        "overskip",
+        "pole vault",
+        "pounce",
+        "pounce on",
+        "pounce upon",
+        "prance",
+        "ramp",
+        "romp",
+        "running broad jump",
+        "running high jump",
+        "saut de basque",
+        "ski jump",
+        "skip",
+        "spring",
+        "start",
+        "start aside",
+        "start up",
+        "steeplechase",
+        "tour jete",
+        "trip",
+        "updive",
+        "upleap",
+        "upspring",
+        "vault"
+      ]
+    },
+    "capriped": {
+      "word": "CAPRIPED",
+      "definitions": [
+        {
+          "text": "Having feet like those of a goat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caproate": {
+      "word": "CAPROATE",
+      "definitions": [
+        {
+          "text": "A salt of caproic acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caproic": {
+      "word": "CAPROIC",
+      "definitions": [
+        {
+          "text": "See under Capric.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprylate": {
+      "word": "CAPRYLATE",
+      "definitions": [
+        {
+          "text": "A salt of caprylic acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprylic": {
+      "word": "CAPRYLIC",
+      "definitions": [
+        {
+          "text": "See under Capric.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsaicin": {
+      "word": "CAPSAICIN",
+      "definitions": [
+        {
+          "text": "A colorless crystalline substance extracted from the Capsicum annuum, and giving off vapors of intense acridity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsheaf": {
+      "word": "CAPSHEAF",
+      "definitions": [
+        {
+          "text": "The top sheaf of a stack of grain: (fig.) the crowning or finishing part of a thing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsicin": {
+      "word": "CAPSICIN",
+      "definitions": [
+        {
+          "text": "A red liquid or soft resin extracted from various species of capsicum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsicine": {
+      "word": "CAPSICINE",
+      "definitions": [
+        {
+          "text": "A valatile alkaloid extracted from Capsicum annuum or from capsicin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsicum": {
+      "word": "CAPSICUM",
+      "definitions": [
+        {
+          "text": "A genus of plants of many species, producing capsules or dry berries of various forms, which have an exceedingly pungent, biting taste, and when ground form the red of Cayenne pepper of commerce. pepper. C, annuum or chili pepper, C. frutesens or spur pepper, and C. annuum or Guinea pepeer, which includes the bell pepper and other common garden varieties. The fruit is much used, both in its green and ripe state, in pickles and in cookery. See Cayenne pepper.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsize": {
+      "word": "CAPSIZE",
+      "definitions": [
+        {
+          "text": "To upset or overturn, as a vessel or other body. But what if carrying sail capsize the boat Byron.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "An upset or overturn.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "be lost",
+        "careen",
+        "come a cropper",
+        "culbuter",
+        "fall",
+        "fall down",
+        "fall flat",
+        "fall headlong",
+        "fall over",
+        "fall prostrate",
+        "flounder",
+        "founder",
+        "get a cropper",
+        "go down",
+        "invert",
+        "keel",
+        "keel over",
+        "list",
+        "lurch",
+        "overset",
+        "overthrow",
+        "overturn",
+        "pitch",
+        "pitchpole",
+        "scuttle",
+        "sink",
+        "somersault",
+        "sprawl",
+        "spread-eagle",
+        "stagger",
+        "stumble",
+        "subvert",
+        "take a fall",
+        "take a flop",
+        "take a header",
+        "take a pratfall",
+        "take a spill",
+        "tilt",
+        "tip over",
+        "topple",
+        "topple down",
+        "topple over",
+        "topsy-turvify",
+        "topsy-turvy",
+        "totter",
+        "trip",
+        "tumble",
+        "turn a somersault",
+        "turn over",
+        "turn topsy-turvy",
+        "turn turtle",
+        "turn upside down",
+        "upset",
+        "upset the boat",
+        "upturn"
+      ]
+    },
+    "capsquare": {
+      "word": "CAPSQUARE",
+      "definitions": [
+        {
+          "text": "A metal covering plate which passes over the trunnions of a cannon, and holds it in place.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capstan": {
+      "word": "CAPSTAN",
+      "definitions": [
+        {
+          "text": "A vertical cleated drum or cylinder, revolving on an upright spindle, and surmounted by a drumhead with sockets for bars or levers. It is much used, especially on shipboard, for moving or raising heavy weights or exerting great power by traction upon a rope or cable, passing around the drum. It is operated either by steam power or by a number of men walking around the capstan, each pushing on the end of a lever fixed in its socket. [Sometimes spelt Capstern, but improperly.] Capstan bar, one of the long bars or levers by which the capstan is worked; a handspike.. the notches of the pawl ring, and prevent the capstan from turning back. in the sockets. wound around it.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capstone": {
+      "word": "CAPSTONE",
+      "definitions": [
+        {
+          "text": "A fossil echinus of the genus Cannulus; -- so called from its supposed resemblance to a cap.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsularcapsulary": {
+      "word": "CAPSULAR; CAPSULARY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a capsule; having the nature of a capsula; hollow and fibrous. Capsular ligament (Anat.), a ligamentous bag or capsule surrounding many movable joints in the skeleton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsulatecapsulated": {
+      "word": "CAPSULATE; CAPSULATED",
+      "definitions": [
+        {
+          "text": "Inclosed in a capsule, or as in a chest or box.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsule": {
+      "word": "CAPSULE",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "a dry fruit or pod which is made up of several parts or carpels, and opens to discharge the seeds, as, the capsule of the poppy, the flax, the lily, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chem.) (a) A small saucer of clay for roasting or melting samples of ores, etc.; a scorifier. (b) a small, shallow, evaporating dish, usually of porcelain.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small cylindrical or spherical gelatinous envelope in which nauseous or acrid doses are inclosed to be swallowed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A membranous sac containing fluid, or investing an organ or joint; as, the capsule of the lens of the eye. Also, a capsulelike organ.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A metallic seal or cover for closing a bottle,",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small cup or shell, as of metal, for a percussion cap, cartridge, etc. Atrabiliary capsule. See under Atrabiliary. along with the portal vessels and insheathing the latter in their course through the organ. front of each kidney.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Earth insertion",
+        "LEM",
+        "LM",
+        "abbreviated",
+        "abbreviation",
+        "abbreviature",
+        "abrege",
+        "abridge",
+        "abridged",
+        "abridgment",
+        "abstract",
+        "abstracted",
+        "amnion",
+        "apogee",
+        "attitude-control rocket",
+        "bag",
+        "ballistic capsule",
+        "bark",
+        "barrel",
+        "basket",
+        "bladder",
+        "bleb",
+        "blister",
+        "bobbed",
+        "boll",
+        "bolus",
+        "botany",
+        "bottle",
+        "box",
+        "box up",
+        "bran",
+        "brief",
+        "burn",
+        "burr",
+        "calyx",
+        "can",
+        "canned",
+        "capsulize",
+        "capsulized",
+        "carton",
+        "case",
+        "cask",
+        "cell",
+        "chaff",
+        "clipped",
+        "cod",
+        "compend",
+        "compressed",
+        "condensation",
+        "condense",
+        "condensed",
+        "condensed version",
+        "conspectus",
+        "corn shuck",
+        "cornhusk",
+        "crate",
+        "cropped",
+        "curtailed",
+        "cut short",
+        "cyst",
+        "deep-space ship",
+        "digest",
+        "digested",
+        "docked",
+        "docking",
+        "docking maneuver",
+        "draft",
+        "elided",
+        "elliptic",
+        "encase",
+        "encyst",
+        "epitome",
+        "ferry rocket",
+        "fistula",
+        "follicle",
+        "fuel ship",
+        "gallbladder",
+        "hamper",
+        "head",
+        "hull",
+        "husk",
+        "injection",
+        "insertion",
+        "jacket",
+        "jar",
+        "legume",
+        "legumen",
+        "loculus",
+        "lozenge",
+        "lunar excursion module",
+        "lunar module",
+        "manned rocket",
+        "marsupium",
+        "module",
+        "moon ship",
+        "mowed",
+        "mown",
+        "multistage rocket",
+        "nipped",
+        "nutshell",
+        "orbit",
+        "outline",
+        "overview",
+        "pack",
+        "package",
+        "palea",
+        "pandect",
+        "parcel",
+        "parking orbit",
+        "pease cod",
+        "peel",
+        "pericarp",
+        "perigee",
+        "pill",
+        "pocket",
+        "pod",
+        "pollard",
+        "polled",
+        "pot",
+        "potted",
+        "precis",
+        "pruned",
+        "reaped",
+        "reentry",
+        "review",
+        "rind",
+        "rocket",
+        "rubric",
+        "sac",
+        "saccule",
+        "sacculus",
+        "saccus",
+        "sack",
+        "scrotum",
+        "seed pod",
+        "seed vessel",
+        "seedbox",
+        "seedcase",
+        "shaved",
+        "sheared",
+        "shell",
+        "short-cut",
+        "shorten",
+        "shortened",
+        "shortened version",
+        "shuck",
+        "shuttle rocket",
+        "silique",
+        "sinus",
+        "skeleton",
+        "sketch",
+        "sketch out",
+        "skin",
+        "snub",
+        "snubbed",
+        "soft landing",
+        "sound",
+        "space capsule",
+        "space docking",
+        "space rocket",
+        "spacecraft",
+        "spaceship",
+        "stomach",
+        "summarize",
+        "survey",
+        "syllabus",
+        "synopsis",
+        "synopsize",
+        "tablet",
+        "tank",
+        "thumbnail sketch",
+        "tin",
+        "topical outline",
+        "trimmed",
+        "troche",
+        "udder",
+        "vasculum",
+        "ventricle",
+        "vesica",
+        "vesicle"
+      ]
+    },
+    "capsulitis": {
+      "word": "CAPSULITIS",
+      "definitions": [
+        {
+          "text": "Inflammation of a capsule, as that of the crystalline lens.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsulotomy": {
+      "word": "CAPSULOTOMY",
+      "definitions": [
+        {
+          "text": "The incision of a capsule, esp. of that of the crystalline lens, as in a cataract operation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "captain": {
+      "word": "CAPTAIN",
+      "definitions": [
+        {
+          "text": "A head, or chief officer; as: (a) The military officer who commands a company, troop, or battery, or who has the rank entitling him to do so though he may be employed on other service. (b) An officer in the United States navy, next above a commander and below a commodore, and ranking with a colonel in the ermy. (c) By courtesy, an officer actually commanding a vessel, although not having the rank of captain. (d) The master or commanding officer of a merchant vessel. (e) One in charge of a portion of a ship's company; as, a captain of a top, captain of a gun, etc. (f) The foreman of a body of workmen. (g) A person having authority over others acting in concert; as, the captain of a boat's crew; the captain of a football team. A trainband captain eke was he. Cowper. The Rhodian captain, relying on . . . the lightness of his vessel, passed, in open day, through all the guards. Arbuthnot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A military leader; a warrior. Foremost captain of his time. Tennyson. Captain general. (a) The commander in chief of an army or armies, or of the militia. (b) The Spanish governor of Cuba and its dependent islands. captain but with a lieutenant's pay, -- as in the first company of an English regiment.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To act as captain of; to lead. [R.] Men who captained or accompanied the exodus from existing forms. Lowell.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Chief; superior. [R.] captain jewes in the carcanet. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ADC",
+        "CO",
+        "G-man",
+        "MP",
+        "OD",
+        "administer",
+        "administrate",
+        "admiral",
+        "aeronaut",
+        "aeroplaner",
+        "aeroplanist",
+        "aide",
+        "aide-de-camp",
+        "air pilot",
+        "airplanist",
+        "astronaut",
+        "aviator",
+        "bailiff",
+        "barnstormer",
+        "be master",
+        "be responsible for",
+        "beadle",
+        "beagle",
+        "birdman",
+        "boatswain",
+        "bound bailiff",
+        "brigadier",
+        "brigadier general",
+        "call the signals",
+        "carry on",
+        "castellan",
+        "catchpole",
+        "chair",
+        "chatelain",
+        "chatelaine",
+        "chicken colonel",
+        "chief engineer",
+        "chief mate",
+        "chief of police",
+        "chief of staff",
+        "chief petty officer",
+        "cloud seeder",
+        "colonel",
+        "command",
+        "commandant",
+        "commander",
+        "commander in chief",
+        "commanding officer",
+        "commercial pilot",
+        "commissioned officer",
+        "commissioner",
+        "commodore",
+        "company officer",
+        "conduct",
+        "constable",
+        "control",
+        "copilot",
+        "crop-duster",
+        "deck officer",
+        "deputy",
+        "deputy sheriff",
+        "detective",
+        "direct",
+        "director",
+        "discipline",
+        "engineer",
+        "ensign",
+        "exec",
+        "executive",
+        "executive officer",
+        "fed",
+        "federal",
+        "field marshal",
+        "field officer",
+        "first lieutenant",
+        "five-star general",
+        "fleet admiral",
+        "flic",
+        "flier",
+        "four-star general",
+        "gendarme",
+        "general",
+        "general officer",
+        "generalissimo",
+        "govern",
+        "government man",
+        "governor",
+        "handle",
+        "head",
+        "head up",
+        "inspector",
+        "instructor",
+        "intendant",
+        "jemadar",
+        "jet jockey",
+        "junior officer",
+        "lead",
+        "lead on",
+        "licensed pilot",
+        "lictor",
+        "lieutenant",
+        "lieutenant colonel",
+        "lieutenant commander",
+        "lieutenant general",
+        "lieutenant junior grade",
+        "mace-bearer",
+        "major",
+        "major general",
+        "make the rules",
+        "manage",
+        "manager",
+        "maneuver",
+        "manipulate",
+        "marechal",
+        "marshal",
+        "master",
+        "mastermind",
+        "mate",
+        "mounted policeman",
+        "narc",
+        "naval officer",
+        "navarch",
+        "navigating officer",
+        "navigator",
+        "officer",
+        "one-star general",
+        "order",
+        "orderly officer",
+        "patrolman",
+        "patron",
+        "peace officer",
+        "petty officer",
+        "pilot",
+        "pipes",
+        "police captain",
+        "police commissioner",
+        "police constable",
+        "police inspector",
+        "police matron",
+        "police officer",
+        "police sergeant",
+        "policeman",
+        "policewoman",
+        "portreeve",
+        "prescribe",
+        "preside over",
+        "pull the strings",
+        "quarterback",
+        "quartermaster",
+        "rainmaker",
+        "rear admiral",
+        "reeve",
+        "regulate",
+        "risaldar",
+        "roundsman",
+        "ruler",
+        "run",
+        "sailing master",
+        "second mate",
+        "senior officer",
+        "sergeant",
+        "sergeant at arms",
+        "shavetail",
+        "sheriff",
+        "shipmaster",
+        "sirdar",
+        "skipper",
+        "staff officer",
+        "stand over",
+        "stunt flier",
+        "stunt man",
+        "subahdar",
+        "subaltern",
+        "sublieutenant",
+        "superintendent",
+        "supervise",
+        "take command",
+        "take the lead",
+        "test pilot",
+        "the Old Man",
+        "the brass",
+        "three-star general",
+        "tipstaff",
+        "tipstaves",
+        "top brass",
+        "trooper",
+        "two-star general",
+        "vice admiral",
+        "warrant officer",
+        "watch officer",
+        "wield authority",
+        "wingman"
+      ]
+    },
+    "captaincy": {
+      "word": "CAPTAINCY",
+      "definitions": [
+        {
+          "text": "The rank, post, or commission of a captain. Washington. Captaincy general, the office, power, teritory, or jurisdiction of a captain general; as, the captaincy general of La Habana (Cuba and its islands).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "captainry": {
+      "word": "CAPTAINRY",
+      "definitions": [
+        {
+          "text": "Power, or command, over a certain district; chieftainship.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "captainship": {
+      "word": "CAPTAINSHIP",
+      "definitions": [
+        {
+          "text": "The condition, rank, post, or authority of a captain or chief commander. \"To take the captainship.\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Military skill; as, to show good captainship.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "captation": {
+      "word": "CAPTATION",
+      "definitions": [
+        {
+          "text": "A courting of favor or applause, by flattery or address; a captivating quality; an attraction. [Obs.] Without any of those dresses, or popular captations, which some men use in their speeches. Eikon Basilike.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caption": {
+      "word": "CAPTION",
+      "definitions": [
+        {
+          "text": "A caviling; a sophism. [Obs.] This doctrine is for caption and contradiction. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of taking or arresting a person by judicial process. [R.] Bouvier.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That part of a legal instrument, as a commission, indictment, etc., which shows where, when, and by what authority, it taken, found, or executed. Bouvier. Wharton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The heading of a chapter, section, or page. [U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "banner",
+        "banner head",
+        "drop head",
+        "dropline",
+        "epigraph",
+        "hanger",
+        "head",
+        "head up",
+        "heading",
+        "headline",
+        "jump head",
+        "legend",
+        "motto",
+        "overline",
+        "rubric",
+        "running head",
+        "running title",
+        "scarehead",
+        "screamer",
+        "spread",
+        "spreadhead",
+        "streamer",
+        "subhead",
+        "subheading",
+        "subtitle",
+        "superscription",
+        "title",
+        "title page",
+        "underline"
+      ]
+    },
+    "captious": {
+      "word": "CAPTIOUS",
+      "definitions": [
+        {
+          "text": "Art to catch at faults; disposed to find fault or to cavil; eager to object; difficult to please. A captius and suspicious. Stillingfleet. I am sensible I have not disposed my materials to adbide the test of a captious controversy. Bwike.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fitted to harass, perplex, or insnare; insidious; troublesome. Captious restraints on navigation. Bancroft. peevish, fretful; perverse; troublesome. fault-finding habit or manner, or is disposed to catch at faults, errors, etc., with quarrelsome intent; a caviling person is disposed to raise objections on frivolous grounds; carping implies that one is given to ill-natured, persistent, or unreasonable fault-finding, or picking up of the words or actions of others. Caviling is the carping of argument, carping the caviling of ill temper. C. J. Smith.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bickering",
+        "carping",
+        "caviling",
+        "censorious",
+        "choplogic",
+        "contrary",
+        "critic",
+        "critical",
+        "cynical",
+        "demanding",
+        "equivocatory",
+        "evasive",
+        "exacting",
+        "faultfinding",
+        "finicky",
+        "hairsplitting",
+        "hedging",
+        "hypercritical",
+        "irritable",
+        "logic-chopping",
+        "nagging",
+        "niggling",
+        "nit-picking",
+        "overcritical",
+        "paltering",
+        "particular",
+        "peevish",
+        "pernickety",
+        "perverse",
+        "pettifogging",
+        "petty",
+        "petulant",
+        "picayune",
+        "pussyfooting",
+        "quibbling",
+        "shuffling",
+        "snappish",
+        "snappy",
+        "testy",
+        "trichoschistic",
+        "trifling",
+        "trivial",
+        "ultracritical"
+      ]
+    },
+    "captiously": {
+      "word": "CAPTIOUSLY",
+      "definitions": [
+        {
+          "text": "In a captious manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "captiousness": {
+      "word": "CAPTIOUSNESS",
+      "definitions": [
+        {
+          "text": "Captious disposition or manner.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "captivate": {
+      "word": "CAPTIVATE",
+      "definitions": [
+        {
+          "text": "To take prisoner; to capture; to subdue. [Obs.] Their woes whom fortune captivates. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To acquire ascendancy over by reason of some art or attraction; to fascinate; to charm; as, Cleopatra captivated Antony; the orator captivated all hearts. Small landscapes of captivating loveliness. W. Irving. capture; lead captive.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Taken prisoner; made captive; insnared; charmed. Women have been captivate ere now. Shak.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "allure",
+        "argue into",
+        "attract",
+        "becharm",
+        "beguile",
+        "bewitch",
+        "bring over",
+        "bring round",
+        "bring to reason",
+        "carry away",
+        "cast a spell",
+        "charm",
+        "con",
+        "convince",
+        "dazzle",
+        "delectate",
+        "delight",
+        "draw",
+        "draw on",
+        "draw over",
+        "enamor",
+        "enchant",
+        "endear",
+        "enrapture",
+        "enravish",
+        "enslave",
+        "enthrall",
+        "entrance",
+        "fascinate",
+        "freak out",
+        "gain",
+        "gain over",
+        "glamour",
+        "gratify",
+        "grip",
+        "hold",
+        "hold in thrall",
+        "hook",
+        "hook in",
+        "hypnotize",
+        "imparadise",
+        "infatuate",
+        "inflame with love",
+        "intrigue",
+        "knock dead",
+        "knock out",
+        "magnetize",
+        "mesmerize",
+        "outtalk",
+        "persuade",
+        "please",
+        "prevail on",
+        "prevail upon",
+        "prevail with",
+        "ravish",
+        "seduce",
+        "sell",
+        "sell one on",
+        "send",
+        "slay",
+        "spell",
+        "spellbind",
+        "sway",
+        "take",
+        "talk into",
+        "talk over",
+        "tantalize",
+        "tempt",
+        "thrill",
+        "tickle",
+        "tickle pink",
+        "titillate",
+        "transport",
+        "vamp",
+        "wangle",
+        "wangle into",
+        "wear down",
+        "wile",
+        "win",
+        "win over",
+        "witch",
+        "wow"
+      ]
+    },
+    "captivating": {
+      "word": "CAPTIVATING",
+      "definitions": [
+        {
+          "text": "Having power to captivate or cham; fascinating; as, captivating",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "alluring",
+        "appealing",
+        "appetizing",
+        "attractive",
+        "beguiling",
+        "bewitching",
+        "blandishing",
+        "cajoling",
+        "catching",
+        "charismatic",
+        "charming",
+        "coaxing",
+        "come-hither",
+        "coquettish",
+        "delightful",
+        "drawing",
+        "enchanting",
+        "engaging",
+        "enravishing",
+        "enthralling",
+        "enticing",
+        "entrancing",
+        "exciting",
+        "exotic",
+        "exquisite",
+        "fascinating",
+        "fetching",
+        "flirtatious",
+        "glamorous",
+        "heart-robbing",
+        "hypnotic",
+        "interesting",
+        "intriguing",
+        "inviting",
+        "irresistible",
+        "lovely",
+        "luxurious",
+        "magnetic",
+        "mesmeric",
+        "mouth-watering",
+        "piquant",
+        "prepossessing",
+        "provocative",
+        "provoquant",
+        "ravishing",
+        "seducing",
+        "seductive",
+        "sensuous",
+        "siren",
+        "sirenic",
+        "spellbinding",
+        "spellful",
+        "taking",
+        "tantalizing",
+        "teasing",
+        "tempting",
+        "thrilling",
+        "tickling",
+        "titillating",
+        "titillative",
+        "voluptuous",
+        "winning",
+        "winsome",
+        "witching"
+      ]
+    },
+    "captivation": {
+      "word": "CAPTIVATION",
+      "definitions": [
+        {
+          "text": "The act of captivating. [R.] The captivation of our understanding. Bp. Hall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "captive": {
+      "word": "CAPTIVE",
+      "definitions": [
+        {
+          "text": "A prisoner taken by force or stratagem, esp., by an enemy, in war; one kept in bondage or in the power of another. Then, when I am thy captive, talk of chains. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One charmed or subdued by beaty, excellence, or affection; one who is captivated.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Made prisoner, especially in war; held in bondage or in confinement. A poor, miserable, captive thrall. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Subdued by love; charmed; captivated. Even in so short a space, my wonan's heart Grossly grew captive to his honey words. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to bondage or confinement; serving to confine; as, captive chains; captive hours.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To take prisoner; to capture. Their inhabitans slaughtered and captived. Burke.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "POW",
+        "bond",
+        "bondmaid",
+        "bondman",
+        "bondslave",
+        "bondsman",
+        "bondswoman",
+        "caged",
+        "cageling",
+        "catch",
+        "chain gang",
+        "chattel",
+        "chattel slave",
+        "churl",
+        "con",
+        "concubine",
+        "confined",
+        "conquest",
+        "convict",
+        "coquette",
+        "date",
+        "debt slave",
+        "detainee",
+        "detenu",
+        "disenfranchised",
+        "enslaved",
+        "enthralled",
+        "ex-convict",
+        "flirt",
+        "galley slave",
+        "gaolbird",
+        "helot",
+        "homager",
+        "honey",
+        "hostage",
+        "imprisoned",
+        "in bondage",
+        "in bonds",
+        "in captivity",
+        "in chains",
+        "in slavery",
+        "in subjection",
+        "incarcerated",
+        "internee",
+        "jailbird",
+        "liege",
+        "liege man",
+        "liege subject",
+        "lifer",
+        "locked up",
+        "odalisque",
+        "oppressed",
+        "parolee",
+        "peon",
+        "political prisoner",
+        "prisoner",
+        "prisoner of war",
+        "serf",
+        "servant",
+        "slave",
+        "steady",
+        "stir bird",
+        "subject",
+        "subjected",
+        "subjugated",
+        "suppressed",
+        "sweet patootie",
+        "sweetheart",
+        "sweetie",
+        "theow",
+        "thrall",
+        "ticket-of-leave man",
+        "ticket-of-leaver",
+        "trusty",
+        "under the heel",
+        "under the lash",
+        "unfree",
+        "vamp",
+        "vampire",
+        "vassal",
+        "villein"
+      ]
+    },
+    "captivity": {
+      "word": "CAPTIVITY",
+      "definitions": [
+        {
+          "text": "The state of being a captive or a prisoner. More celebrated in his captivity that in his greatest triumphs. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A state of being under control; subjection of the will or affections; bondage. Sink in the soft captivity together. Addison. slavery; thralldom; serfdom.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "absolutism",
+        "bond service",
+        "bondage",
+        "close arrest",
+        "confinement",
+        "control",
+        "custody",
+        "debt slavery",
+        "deprivation of freedom",
+        "detention",
+        "disenfranchisement",
+        "disfranchisement",
+        "domination",
+        "durance",
+        "durance vile",
+        "duress",
+        "enslavement",
+        "enthrallment",
+        "feudalism",
+        "feudality",
+        "helotism",
+        "helotry",
+        "house arrest",
+        "immuration",
+        "immurement",
+        "imprisonment",
+        "incarceration",
+        "indentureship",
+        "internment",
+        "jailing",
+        "peonage",
+        "restraint",
+        "serfdom",
+        "serfhood",
+        "servility",
+        "servitude",
+        "slavery",
+        "subjection",
+        "subjugation",
+        "term of imprisonment",
+        "thrall",
+        "thralldom",
+        "tyranny",
+        "vassalage",
+        "villenage"
+      ]
+    },
+    "captor": {
+      "word": "CAPTOR",
+      "definitions": [
+        {
+          "text": "One who captures any person or thing, as a prisoner or a prize.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capture": {
+      "word": "CAPTURE",
+      "definitions": [
+        {
+          "text": "The act of seizing by force, or getting possession of by superior power or by stratagem; as, the capture of an enemy, a vessel, or a criminal. Even with regard to captures made at sea. Bluckstone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The securing of an object of strife or desire, as by the power of some attraction.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The thing taken by force, surprise, or stratagem; a prize; prey.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To seize or take possession of by force, surprise, or stratagem; to overcome and hold; to secure by effort. Her heart is like some fortress that has been captured. W. Ivring.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abduction",
+        "acquire",
+        "apprehend",
+        "apprehension",
+        "arrest",
+        "arrestation",
+        "arrestment",
+        "bag",
+        "be seized of",
+        "bear the palm",
+        "booty",
+        "bust",
+        "carry",
+        "carry away",
+        "carry it",
+        "carry off",
+        "carry the day",
+        "catch",
+        "catching",
+        "collar",
+        "collaring",
+        "come by",
+        "come in for",
+        "come into",
+        "come out first",
+        "contract",
+        "corral",
+        "coup",
+        "derive",
+        "drag down",
+        "dragnet",
+        "draw",
+        "earn",
+        "enter into possession",
+        "finish in front",
+        "fluke",
+        "forcible seizure",
+        "gain",
+        "gain the day",
+        "get",
+        "grab",
+        "grabbing",
+        "harvest",
+        "haul",
+        "hold",
+        "kidnapping",
+        "lay hold of",
+        "make",
+        "make a killing",
+        "make an arrest",
+        "nab",
+        "nabbing",
+        "nail",
+        "net",
+        "netting",
+        "nick",
+        "obtain",
+        "pick up",
+        "picking up",
+        "pinch",
+        "power grab",
+        "prehend",
+        "prehension",
+        "procure",
+        "pull down",
+        "put under arrest",
+        "reap",
+        "run in",
+        "running in",
+        "sack",
+        "score",
+        "secure",
+        "seize",
+        "seizure",
+        "seizure of power",
+        "snatch",
+        "snatching",
+        "take",
+        "take captive",
+        "take hold of",
+        "take in",
+        "take into custody",
+        "take prisoner",
+        "take the cake",
+        "taking",
+        "taking in",
+        "taking into custody",
+        "win",
+        "win out",
+        "win the battle",
+        "win the laurels",
+        "win the palm",
+        "win the prize",
+        "win through"
+      ]
+    },
+    "capuccio": {
+      "word": "CAPUCCIO",
+      "definitions": [
+        {
+          "text": "A capoch or hood. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capuched": {
+      "word": "CAPUCHED",
+      "definitions": [
+        {
+          "text": "Cover with, or as with, a hood. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capuchin": {
+      "word": "CAPUCHIN",
+      "definitions": [
+        {
+          "text": "(Eccl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A Franciscan monk of the austere branch established in 1526 by Matteo di Baschi, distinguished by wearing the long pointed cowl or capoch of St. Francis. A bare-footed and long-bearded capuchin. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A garment for women, consisting of a cloak and hood, resembling, or supposed to resemble, that of capuchin monks.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.) (a) A long-tailed South American monkey (Cabus capucinus), having the forehead naked and wrinkled, with the hair on the crown reflexed and resembling a monk's cowl, the rest being of a grayish white; -- called also capucine monkey, weeper, sajou, sapajou, and sai. (b) Other species of Cabus, as C. fatuellus (the brown or horned capucine.), C. albifrons (the cararara), and C. apella. (c) A variety of the domestic pigeon having a hoodlike tuft of feathers on the head and sides of the neck. Capuchin nun, one of an austere order of Franciscan nuns which came under Capuchin rule in",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The order had recently been founded by Maria Longa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capucine": {
+      "word": "CAPUCINE",
+      "definitions": [
+        {
+          "text": "See Capuchin, 3.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capulet": {
+      "word": "CAPULET",
+      "definitions": [
+        {
+          "text": "Same as Capellet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capulin": {
+      "word": "CAPULIN",
+      "definitions": [
+        {
+          "text": "The Mexican chery (Prunus Capollin).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caput": {
+      "word": "CAPUT",
+      "definitions": [
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The head; also, a knoblike protuberance or capitulum.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The top or superior part of a thing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eng.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The council or ruling body of the University of Cambridge prior to the constitution of 1856. Your caputs and heads of colleges. Lamb. Caput mortuum (. Etym: [L., dead head.] (Old Chem.) The residuum after distillation or sublimation; hence, worthless residue.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capybara": {
+      "word": "CAPYBARA",
+      "definitions": [
+        {
+          "text": "A large South American rodent (Hydrochærus capybara) Living on the margins of lakes and rivers. It is the largest extant rodent, being about three feet long, and half that in height. It somewhat resembles the Guinea pig, to which it is related; -- called also cabiai and water hog.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

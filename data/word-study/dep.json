@@ -1,0 +1,6959 @@
+{
+  "version": "v1",
+  "entries": {
+    "depaint": {
+      "word": "DEPAINT",
+      "definitions": [
+        {
+          "text": "Painted. [Obs.] Chaucer.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "To paint; to picture; hence, to describe; to delineate in words; to depict. [Obs.] And do unwilling worship to the saint That on his shield depainted he did see. Spenser. In few words shall see the nature of many memorable persons . . . depainted. Holland.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark with, or as with, color; to color. Silver drops her vermeil cheeks depaint. Fairfax.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depainter": {
+      "word": "DEPAINTER",
+      "definitions": [
+        {
+          "text": "One who depaints. [Obs.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "depardieux": {
+      "word": "DEPARDIEUX",
+      "definitions": [
+        {
+          "text": "In God's name; certainly. [Obs.] Chaucer.",
+          "partOfSpeech": "interjection"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depart": {
+      "word": "DEPART",
+      "definitions": [
+        {
+          "text": "To part; to divide; to separate. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To go forth or away; to quit, leave, or separate, as from a place or a person; to withdraw; -- opposed to arrive; -- often with from before the place, person, or thing left, and for or to before the destination. I will depart to mine own land. Num. x. 30. Ere thou from hence depart. Milton. He which hath no stomach to this fight, Let him depart. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To forsake; to abandon; to desist or deviate (from); not to adhere to; -- with from; as, we can not depart from our rules; to depart from a title or defense in legal pleading. If the plan of the convention be found to depart from republican principles. Madison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pass away; to perish. The glory is departed from Israel. 1 Sam. iv. 21.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To quit this world; to die. Lord, now lettest thou thy servant depart in peace. Luke ii. 29. To depart with, to resign; to part with. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To part thoroughly; to dispart; to divide; to separate. [Obs.] Till death departed them, this life they lead. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To divide in order to share; to apportion. [Obs.] And here is gold, and that full great plentee, That shall departed been among us three. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To leave; to depart from. \"He departed this life.\" Addison. \"Ere I depart his house.\" Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Division; separation, as of compound substances into their ingredients. [Obs.] The chymists have a liquor called water of depart. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A going away; departure; hence, death. [Obs.] At my depart for France. Shak. Your loss and his depart. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abandon",
+        "abrupt",
+        "abscond",
+        "absquatulate",
+        "alienate",
+        "be consumed",
+        "be getting along",
+        "be gone",
+        "be lost",
+        "beat a retreat",
+        "beat it",
+        "blow",
+        "bolt",
+        "bow out",
+        "buzz off",
+        "cast",
+        "cast off",
+        "cast out",
+        "cease",
+        "cease to be",
+        "cease to exist",
+        "cease to live",
+        "change",
+        "check out",
+        "clear out",
+        "come away",
+        "conk",
+        "croak",
+        "cut adrift",
+        "cut and run",
+        "cut off",
+        "cut out",
+        "decamp",
+        "decease",
+        "delete",
+        "dematerialize",
+        "demise",
+        "depart from",
+        "depart this life",
+        "desert",
+        "deviate",
+        "deviate from",
+        "die",
+        "die away",
+        "die out",
+        "differ",
+        "digress",
+        "disagree",
+        "disappear",
+        "disarticulate",
+        "discard",
+        "disconnect",
+        "disengage",
+        "disjoin",
+        "disjoint",
+        "dispel",
+        "disperse",
+        "dissent",
+        "dissipate",
+        "dissociate",
+        "dissolve",
+        "disunite",
+        "divagate",
+        "diverge",
+        "diverge from",
+        "divide",
+        "divorce",
+        "do a fade-out",
+        "duck out",
+        "dwindle",
+        "egress",
+        "eject",
+        "elope",
+        "erode",
+        "escape",
+        "estrange",
+        "evanesce",
+        "evaporate",
+        "excurse",
+        "exit",
+        "expel",
+        "expire",
+        "fade",
+        "fade away",
+        "fade out",
+        "fall",
+        "fall asleep",
+        "flee",
+        "fly",
+        "forsake",
+        "fugitate",
+        "gang along",
+        "get along",
+        "get away",
+        "get lost",
+        "get off",
+        "get on",
+        "get out",
+        "get sidetracked",
+        "get under way",
+        "go",
+        "go AWOL",
+        "go along",
+        "go astray",
+        "go away",
+        "go off",
+        "go on",
+        "go on furlough",
+        "go on leave",
+        "go out",
+        "hide",
+        "hit the road",
+        "isolate",
+        "jump",
+        "jump bail",
+        "leave",
+        "leave no trace",
+        "leave the scene",
+        "levant",
+        "make an exit",
+        "make off",
+        "march off",
+        "march out",
+        "maunder",
+        "melt",
+        "melt away",
+        "mosey",
+        "move away",
+        "move off",
+        "move out",
+        "part",
+        "pass",
+        "pass away",
+        "pass on",
+        "pass out",
+        "pass over",
+        "perish",
+        "pull away",
+        "pull back",
+        "pull out",
+        "put off mortality",
+        "quit",
+        "quit this world",
+        "ramble",
+        "reject",
+        "repudiate",
+        "retire",
+        "retire from sight",
+        "return to dust",
+        "run",
+        "run away",
+        "run away from",
+        "run away with",
+        "run for it",
+        "run off",
+        "run out",
+        "sashay",
+        "sashay off",
+        "scram",
+        "segregate",
+        "separate",
+        "sequester",
+        "set apart",
+        "set aside",
+        "set out",
+        "shove off",
+        "show the heels",
+        "shut off",
+        "sink",
+        "sink away",
+        "skedaddle",
+        "skip",
+        "skip out",
+        "slip away",
+        "slip off",
+        "slip out",
+        "slip the cable",
+        "sneak out",
+        "split",
+        "stagger along",
+        "stand aloof",
+        "stand apart",
+        "stand aside",
+        "start",
+        "step aside",
+        "stop breathing",
+        "stray",
+        "strike out",
+        "subtract",
+        "succumb",
+        "suffer an eclipse",
+        "take French leave",
+        "take flight",
+        "take leave",
+        "take to flight",
+        "take wing",
+        "throw off",
+        "throw out",
+        "toddle",
+        "toddle along",
+        "turn aside",
+        "turn tail",
+        "uncouple",
+        "unyoke",
+        "up and die",
+        "up and go",
+        "vamoose",
+        "vanish",
+        "vanish from sight",
+        "vary",
+        "walk out",
+        "wander",
+        "waste",
+        "waste away",
+        "wear away",
+        "wing it",
+        "withdraw",
+        "withdraw from",
+        "yield the ghost"
+      ]
+    },
+    "departable": {
+      "word": "DEPARTABLE",
+      "definitions": [
+        {
+          "text": "Divisible. [Obs.] Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "departer": {
+      "word": "DEPARTER",
+      "definitions": [
+        {
+          "text": "One who refines metals by separation. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who departs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "department": {
+      "word": "DEPARTMENT",
+      "definitions": [
+        {
+          "text": "Act of departing; departure. [Obs.] Sudden departments from one extreme to another. Wotton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A part, portion, or subdivision.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A distinct course of life, action, study, or the like; appointed sphere or walk; province. Superior to Pope in Pope's own peculiar department of literature. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Subdivision of business or official duty; especially, one of the principal divisions of executive government; as, the treasury department; the war department; also, in a university, one of the divisions of instructions; as, the medical department; the department of physics.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A territorial division; a district; esp., in France, one of the districts composed of several arrondissements into which the country is divided for governmental purposes; as, the Department of the Loire.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A military subdivision of a country; as, the Department of the Potomac.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "airspace",
+        "ambit",
+        "area",
+        "arena",
+        "bailiwick",
+        "beat",
+        "belt",
+        "border",
+        "borderland",
+        "branch",
+        "bureau",
+        "circle",
+        "circuit",
+        "commissariat",
+        "concern",
+        "confines",
+        "constablery",
+        "constablewick",
+        "constabulary",
+        "continental shelf",
+        "control",
+        "corridor",
+        "country",
+        "demesne",
+        "discipline",
+        "district",
+        "division",
+        "domain",
+        "dominion",
+        "environs",
+        "field",
+        "ground",
+        "heartland",
+        "hemisphere",
+        "hinterland",
+        "judicial circuit",
+        "jurisdiction",
+        "land",
+        "march",
+        "milieu",
+        "ministry",
+        "municipality",
+        "neighborhood",
+        "office",
+        "offshore rights",
+        "orb",
+        "orbit",
+        "pale",
+        "part",
+        "parts",
+        "place",
+        "precinct",
+        "precincts",
+        "premises",
+        "province",
+        "purlieus",
+        "quarter",
+        "realm",
+        "region",
+        "responsibility",
+        "round",
+        "salient",
+        "secretariat",
+        "section",
+        "segment",
+        "sheriffalty",
+        "sheriffwick",
+        "shrievalty",
+        "soil",
+        "space",
+        "sphere",
+        "subdiscipline",
+        "subdivision",
+        "terrain",
+        "territory",
+        "three-mile limit",
+        "twelve-mile limit",
+        "unit",
+        "vicinage",
+        "vicinity",
+        "walk",
+        "worry",
+        "zone"
+      ]
+    },
+    "departmental": {
+      "word": "DEPARTMENTAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a department or division. Burke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "departmentstore": {
+      "word": "DEPARTMENT STORE",
+      "definitions": [
+        {
+          "text": "A store keeping a great variety of goods which are arranged in several departments, esp. one with dry goods as the principal stock.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "boutique",
+        "chain store",
+        "co-op",
+        "concession",
+        "cooperative",
+        "countinghouse",
+        "country store",
+        "dime store",
+        "discount house",
+        "discount store",
+        "emporium",
+        "establishment",
+        "five-and-ten",
+        "general store",
+        "house",
+        "magasin",
+        "mail-order house",
+        "market",
+        "mart",
+        "post",
+        "retail store",
+        "salon",
+        "shop",
+        "store",
+        "supermarket",
+        "trading post",
+        "variety shop",
+        "variety store",
+        "warehouse",
+        "wareroom",
+        "wholesale house"
+      ]
+    },
+    "departure": {
+      "word": "DEPARTURE",
+      "definitions": [
+        {
+          "text": "Division; separation; putting away. [Obs.] No other remedy . . . but absolute departure. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Separation or removal from a place; the act or process of departing or going away. Departure from this happy place. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Removal from the present life; death; decease. The time of my departure is at hand. 2 Tim. iv. 6. His timely departure . . . barred him from the knowledge of his son's miseries. Sir P. Sidney.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Deviation or abandonment, as from or of a rule or course of action, a plan, or a purpose. Any departure from a national standard. Prescott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The desertion by a party to any pleading of the ground taken by him in his last antecedent pleading, and the adoption of another. Bouvier.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Nav. & Surv.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The distance due east or west which a person or ship passes over in going along an oblique line. navigation is not measured from the beginning nor from the end of the ship's course, but is regarded as the total easting or westing made by the ship or person as he travels over the course. To take a departure (Nav. & Surv.), to ascertain, usually by taking bearings from a landmark, the position of a vessel at the beginning of a voyage as a point from which to begin her dead reckoning; as, the ship took her departure from Sandy Hook.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "AWOL",
+        "French leave",
+        "aberrancy",
+        "aberration",
+        "abscondence",
+        "absence",
+        "absence without leave",
+        "absentation",
+        "absenteeism",
+        "absenting",
+        "annihilation",
+        "bane",
+        "bend",
+        "bias",
+        "biological death",
+        "blackout",
+        "blocking",
+        "branching off",
+        "bypath",
+        "byway",
+        "cessation of life",
+        "circuitousness",
+        "clinical death",
+        "contrariety",
+        "contrast",
+        "corner",
+        "crook",
+        "crossing the bar",
+        "curtains",
+        "curve",
+        "cut",
+        "day off",
+        "death",
+        "death knell",
+        "debt of nature",
+        "decampment",
+        "decease",
+        "declination",
+        "default",
+        "deflection",
+        "dematerialization",
+        "demise",
+        "detour",
+        "deviance",
+        "deviancy",
+        "deviation",
+        "deviousness",
+        "difference",
+        "digression",
+        "disaccord",
+        "disaccordance",
+        "disagreement",
+        "disappearance",
+        "disappearing",
+        "disconformity",
+        "discongruity",
+        "discordance",
+        "discrepancy",
+        "discreteness",
+        "discursion",
+        "disparity",
+        "dispersion",
+        "dissent",
+        "dissimilarity",
+        "dissipation",
+        "dissolution",
+        "dissolving",
+        "dissonance",
+        "distinction",
+        "distinctness",
+        "divagation",
+        "divarication",
+        "divergence",
+        "divergency",
+        "diversion",
+        "diversity",
+        "dogleg",
+        "doom",
+        "double",
+        "drift",
+        "drifting",
+        "dying",
+        "ebb of life",
+        "eclipse",
+        "egress",
+        "egression",
+        "elimination",
+        "end",
+        "end of life",
+        "ending",
+        "episode",
+        "erasure",
+        "errantry",
+        "escape",
+        "eternal rest",
+        "evanescence",
+        "evaporation",
+        "excursion",
+        "excursus",
+        "excused absence",
+        "exit",
+        "exodus",
+        "exorbitation",
+        "expiration",
+        "extinction",
+        "extinguishment",
+        "extraction",
+        "fadeaway",
+        "fadeout",
+        "fading",
+        "far cry",
+        "farewell",
+        "final summons",
+        "finger of death",
+        "fleeing",
+        "flight",
+        "forthcoming",
+        "furlough",
+        "going",
+        "going off",
+        "going out",
+        "grave",
+        "hairpin",
+        "hand of death",
+        "heterogeneity",
+        "holiday",
+        "hooky",
+        "inaccordance",
+        "incompatibility",
+        "incongruity",
+        "inconsistency",
+        "inconsonance",
+        "indirection",
+        "inequality",
+        "inharmoniousness",
+        "inharmony",
+        "irreconcilability",
+        "jaws of death",
+        "knell",
+        "last debt",
+        "last muster",
+        "last rest",
+        "last roundup",
+        "last sleep",
+        "leave",
+        "leave of absence",
+        "leave-taking",
+        "leaving",
+        "leaving life",
+        "loss of life",
+        "making an end",
+        "melting",
+        "mixture",
+        "nonappearance",
+        "nonattendance",
+        "nonconformity",
+        "obliquity",
+        "occultation",
+        "odds",
+        "opposition",
+        "otherness",
+        "outcome",
+        "outcoming",
+        "outgo",
+        "outgoing",
+        "parting",
+        "passing",
+        "passing away",
+        "passing over",
+        "pererration",
+        "perishing",
+        "quietus",
+        "rambling",
+        "release",
+        "rest",
+        "retreat",
+        "reward",
+        "running away",
+        "sabbatical leave",
+        "sentence of death",
+        "separateness",
+        "shades of death",
+        "shadow of death",
+        "sheer",
+        "shift",
+        "shifting",
+        "shifting course",
+        "shifting path",
+        "sick leave",
+        "side path",
+        "side road",
+        "sidetrack",
+        "skew",
+        "slant",
+        "sleep",
+        "somatic death",
+        "straying",
+        "summons of death",
+        "sweep",
+        "swerve",
+        "swerving",
+        "swinging",
+        "tack",
+        "truancy",
+        "truantism",
+        "turn",
+        "turning",
+        "twist",
+        "unconformity",
+        "unexcused absence",
+        "unlikeness",
+        "unorthodoxy",
+        "vacation",
+        "vanishing",
+        "vanishing point",
+        "variance",
+        "variation",
+        "variegation",
+        "variety",
+        "veer",
+        "wandering",
+        "warp",
+        "wipe",
+        "withdrawal",
+        "yaw",
+        "zigzag"
+      ]
+    },
+    "depascent": {
+      "word": "DEPASCENT",
+      "definitions": [
+        {
+          "text": "Feeding. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depasture": {
+      "word": "DEPASTURE",
+      "definitions": [
+        {
+          "text": "To pasture; to feed; to graze; also, to use for pasture. [R.] Cattle, to graze and departure in his grounds. Blackstone. A right to cut wood upon or departure land. Washburn.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depatriate": {
+      "word": "DEPATRIATE",
+      "definitions": [
+        {
+          "text": "To withdraw, or cause to withdraw, from one's country; to banish. [Obs.] A subject born in any state May, if he please, depatriate. Mason.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depauperate": {
+      "word": "DEPAUPERATE",
+      "definitions": [
+        {
+          "text": "To make poor; to impoverish. Liming does not depauperate; the ground will last long, and bear large grain. Mortimer. Humility of mind which depauperates the spirit. Jer. Taylor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Falling short of the natural size, from being impoverished or starved. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depauperize": {
+      "word": "DEPAUPERIZE",
+      "definitions": [
+        {
+          "text": "To free from paupers; to rescue from poverty. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depeach": {
+      "word": "DEPEACH",
+      "definitions": [
+        {
+          "text": "To discharge. [Obs.] As soon as the party . . . before our justices shall be depeached. Hakluyt.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depectible": {
+      "word": "DEPECTIBLE",
+      "definitions": [
+        {
+          "text": "Tough; thick; capable of extension. [Obs.] Some bodies are of a more depectible nature than oil. Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depeculation": {
+      "word": "DEPECULATION",
+      "definitions": [
+        {
+          "text": "A robbing or embezzlement. [Obs.] Depeculation of the public treasure. Hobbes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depeinct": {
+      "word": "DEPEINCT",
+      "definitions": [
+        {
+          "text": "To paint. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depend": {
+      "word": "DEPEND",
+      "definitions": [
+        {
+          "text": "To hang down; to be sustained by being fastened or attached to something above. And ever-living lamps depend in rows. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hang in suspense; to be pending; to be undetermined or undecided; as, a cause depending in court. You will not think it unnatural that those who have an object depending, which strongly engages their hopes and fears, should be somewhat inclined to superstition. Burke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To rely for support; to be conditioned or contingent; to be connected with anything, as a cause of existence, or as a necessary condition; -- followed by on or upon, formerly by of. The truth of God's word dependeth not of the truth of the congregation. Tyndale. The conclusion . . . that our happiness depends little on political institutions, and much on the temper and regulation of our own minds. Macaulay. Heaven forming each on other to depend. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To trust; to rest with confidence; to rely; to confide; to be certain; -- with on or upon; as, we depend on the word or assurance of our friends; we depend on the mail at the usual hour. But if you 're rough, and use him like a dog, Depend upon it -- he 'll remain incog. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To serve; to attend; to act as a dependent or retainer. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To impend. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "all depend",
+        "bag",
+        "bank",
+        "bank on",
+        "base",
+        "be based on",
+        "be contingent on",
+        "be dependent on",
+        "be predicated on",
+        "bottom",
+        "build",
+        "cascade",
+        "count on",
+        "daggle",
+        "dangle",
+        "depend on",
+        "drabble",
+        "drag",
+        "draggle",
+        "drape",
+        "droop",
+        "fall",
+        "flap",
+        "flop",
+        "flow",
+        "found",
+        "ground",
+        "hang",
+        "hang down",
+        "hang in suspense",
+        "hang on",
+        "hinge",
+        "hinge on",
+        "lean",
+        "lie on",
+        "lie with",
+        "lop",
+        "nod",
+        "pend",
+        "reckon on",
+        "rely on",
+        "rest",
+        "rest on",
+        "rest with",
+        "revolve on",
+        "sag",
+        "sling",
+        "stand",
+        "stand on",
+        "stay",
+        "suspend",
+        "swag",
+        "swing",
+        "trail",
+        "trust in",
+        "turn",
+        "turn on",
+        "turn upon",
+        "weep"
+      ]
+    },
+    "dependable": {
+      "word": "DEPENDABLE",
+      "definitions": [
+        {
+          "text": "Worthy of being depended on; trustworthy. \"Dependable friendships.\" Pope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "calculable",
+        "fail-safe",
+        "faithful",
+        "faithworthy",
+        "fast",
+        "firm",
+        "guaranteed",
+        "harmless",
+        "incorruptible",
+        "invincible",
+        "inviolable",
+        "invulnerable",
+        "predictable",
+        "proven",
+        "reliable",
+        "responsible",
+        "riskless",
+        "secure",
+        "solid",
+        "sound",
+        "stable",
+        "staunch",
+        "steadfast",
+        "steady",
+        "straight",
+        "substantial",
+        "sure",
+        "surefire",
+        "tested",
+        "to be trusted",
+        "tried",
+        "tried and true",
+        "true",
+        "trustable",
+        "trustworthy",
+        "trusty",
+        "undangerous",
+        "unfailing",
+        "unfalse",
+        "unhazardous",
+        "unperfidious",
+        "unperilous",
+        "unprecarious",
+        "unrisky",
+        "untreacherous",
+        "warranteed",
+        "well-founded",
+        "well-grounded"
+      ]
+    },
+    "dependantdependancedependancy": {
+      "word": "DEPENDANT; DEPENDANCE; DEPENDANCY",
+      "definitions": [
+        {
+          "text": "See Dependent, Dependence, Dependency. French; the forms dependent, etc., are from the Latin. Some authorities give preference to the form dependant when the word is a noun, thus distinguishing it from the adjective, usually written dependent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dependence": {
+      "word": "DEPENDENCE",
+      "definitions": [
+        {
+          "text": "The act or state of depending; state of being dependent; a hanging down or from; suspension from a support.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being influenced and determined by something; subjection (as of an effect to its cause). The cause of effects, and the dependence of one thing upon another. Bp. Burnet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Mutu So dark adependence or order. Sir T. More.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Subjection to the direction or disposal of another; inability to help or provide for one's self. Reduced to a servile dependence on their mercy. Burke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A resting with confidence; reliance; trust. Affectionate dependence on the Creator is the spiritual life of the soul. T. Erskine.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That on which one depends or relies; as, he was her sole dependence.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which depends; anything dependent or suspended; anything attached a subordinate to, or contingent on, something else. Like a large cluster of black grapes they show And make a large dependence from the bough. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A matter depending, or in suspense, and still to be determined; ground of controversy or quarrel. [Obs.] To go on now with my first dependence. Beau. & Fl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Maecenas",
+        "a habit",
+        "abettor",
+        "acceptation",
+        "acception",
+        "acquiescence",
+        "acquired tolerance",
+        "acute alcoholism",
+        "addictedness",
+        "addiction",
+        "admirer",
+        "advocate",
+        "aficionado",
+        "alcoholism",
+        "amphetamine withdrawal symptoms",
+        "angel",
+        "apologist",
+        "aspiration",
+        "assumption",
+        "assurance",
+        "assured faith",
+        "assuredness",
+        "backer",
+        "barbiturate addiction",
+        "barbiturism",
+        "belief",
+        "buff",
+        "certainty",
+        "chain smoking",
+        "champion",
+        "cheerful expectation",
+        "chronic alcoholism",
+        "clientage",
+        "clientship",
+        "cocainism",
+        "confidence",
+        "contingency",
+        "conviction",
+        "correlation",
+        "crash",
+        "craving",
+        "credence",
+        "credit",
+        "credulity",
+        "danglement",
+        "dangling",
+        "defender",
+        "dependency",
+        "desire",
+        "dipsomania",
+        "doomed hope",
+        "drug addiction",
+        "drug culture",
+        "drug dependence",
+        "encourager",
+        "endorser",
+        "expectation",
+        "exponent",
+        "fair prospect",
+        "faith",
+        "fan",
+        "favorer",
+        "fervent hope",
+        "friend at court",
+        "good cheer",
+        "good hope",
+        "great expectations",
+        "habituation",
+        "hanging",
+        "high hopes",
+        "hope",
+        "hopeful prognosis",
+        "hopefulness",
+        "hopes",
+        "hoping",
+        "hoping against hope",
+        "interrelation",
+        "lover",
+        "mainstay",
+        "maintainer",
+        "nicotine addiction",
+        "paranymph",
+        "partisan",
+        "patron",
+        "pendency",
+        "pendulosity",
+        "pendulousness",
+        "pensileness",
+        "pensility",
+        "physical dependence",
+        "prayerful hope",
+        "presumption",
+        "promise",
+        "promoter",
+        "prospect",
+        "prospects",
+        "protagonist",
+        "psychological dependence",
+        "reception",
+        "relativity",
+        "reliance",
+        "reliance on",
+        "sanguine expectation",
+        "second",
+        "seconder",
+        "sectary",
+        "security",
+        "sider",
+        "sponsor",
+        "stalwart",
+        "standby",
+        "stock",
+        "store",
+        "support",
+        "supporter",
+        "sureness",
+        "surety",
+        "suspense",
+        "suspension",
+        "suspension of disbelief",
+        "sustainer",
+        "sympathizer",
+        "tolerance",
+        "trust",
+        "tutelage",
+        "upholder",
+        "votary",
+        "wardship",
+        "well-grounded hope",
+        "well-wisher",
+        "withdrawal sickness",
+        "withdrawal symptoms"
+      ]
+    },
+    "dependency": {
+      "word": "DEPENDENCY",
+      "definitions": [
+        {
+          "text": "State of being dependent; dependence; state of being subordinate; subordination; concatenation; connection; reliance; trust. Any long series of action, the parts of which have very much dependency each on the other. Sir J. Reynolds. So that they may acknowledge their dependency on the crown of England. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thing hanging down; a dependence.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is attached to something else as its consequence, subordinate, satellite, and the like. This earth and its dependencies. T. Burnet. Modes I call such complex ideas which . . . are considered as dependencies on or affections of substances. Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A territory remote from the kingdom or state to which it belongs, but subject to its dominion; a colony; as, Great Britain has its dependencies in Asia, Africa, and America. concrete. The latter is usually restricted in meaning to 3 and 4.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dependent": {
+      "word": "DEPENDENT",
+      "definitions": [
+        {
+          "text": "Hanging down; as, a dependent bough or leaf.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Relying on, or subject to, something else for support; not able to exist, or sustain itself, or to perform anything, without the will, power, or aid of something else; not self-sustaining; contingent or conditioned; subordinate; -- often with on or upon; as, dependent on God; dependent upon friends. England, long dependent and degraded, was again a power of the first rank. Macaulay. Dependent covenant or contract (Law), one not binding until some connecting stipulation is performed. arbitrary, but are regarded as produced by changes in another variable, which is called the independent variable.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One who depends; one who is sustained by another, or who relies on another for support of favor; a hanger-on; a retainer; as, a numerous train of dependents. A host of dependents on the court, suborned to play their part as witnesses. Hallam.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which depends; corollary; consequence. With all its circumstances and dependents. Prynne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accessory",
+        "addicted",
+        "addicted to",
+        "adherent",
+        "ancillary",
+        "appendage",
+        "appurtenant",
+        "at issue",
+        "attendant",
+        "based on",
+        "boxed in",
+        "buff",
+        "cascading",
+        "cavaliere servente",
+        "charge",
+        "childlike",
+        "circumscribed",
+        "circumscribed by",
+        "client",
+        "collateral",
+        "conditional",
+        "conditioned",
+        "confiding",
+        "contingent",
+        "contingent on",
+        "counting",
+        "courtier",
+        "creature",
+        "credulous",
+        "dangler",
+        "dangling",
+        "debased",
+        "dependent on",
+        "depending",
+        "depending on",
+        "depending on circumstances",
+        "disciple",
+        "encumbrance",
+        "exposed",
+        "falling",
+        "falling loosely",
+        "fan",
+        "feudal",
+        "feudatory",
+        "flowing",
+        "flunky",
+        "follower",
+        "following",
+        "guileless",
+        "habituated",
+        "habitue",
+        "hanger-on",
+        "hanging",
+        "hedged about by",
+        "heeler",
+        "henchman",
+        "hinging on",
+        "homager",
+        "homme de cour",
+        "hooked",
+        "hooked on",
+        "humbled",
+        "hung",
+        "iffy",
+        "in a rut",
+        "in question",
+        "in suspense",
+        "in the balance",
+        "incident to",
+        "incidental to",
+        "inferior",
+        "innocent",
+        "lackey",
+        "liable",
+        "liege",
+        "liege man",
+        "limited",
+        "man",
+        "minion",
+        "myrmidon",
+        "naive",
+        "never free from",
+        "open",
+        "parasite",
+        "partisan",
+        "pendent",
+        "pending",
+        "pendulant",
+        "pendular",
+        "penduline",
+        "pendulous",
+        "pensile",
+        "pensionary",
+        "pensioner",
+        "peon",
+        "predicated on",
+        "protege",
+        "provisional",
+        "provisory",
+        "public",
+        "public charge",
+        "pursuer",
+        "pursuivant",
+        "reckoning",
+        "relative",
+        "reliant",
+        "relying",
+        "restricted",
+        "retainer",
+        "revolving on",
+        "satellite",
+        "secondary",
+        "sectary",
+        "serf",
+        "servant",
+        "servile",
+        "shadow",
+        "slave",
+        "spaced out",
+        "stooge",
+        "sub",
+        "subject",
+        "subject to",
+        "subordinate",
+        "subservient",
+        "successor",
+        "supporter",
+        "susceptible",
+        "suspended",
+        "suspenseful",
+        "swinging",
+        "tagtail",
+        "tail",
+        "trainbearer",
+        "tributary",
+        "trustful",
+        "trusting",
+        "trusty",
+        "turning on",
+        "uncertain",
+        "uncounted",
+        "undecided",
+        "under",
+        "underling",
+        "understrapper",
+        "undetermined",
+        "unestablished",
+        "unfixed",
+        "unsettled",
+        "unsuspecting",
+        "unsuspicious",
+        "untold",
+        "up for grabs",
+        "used to",
+        "vassal",
+        "votary",
+        "ward",
+        "ward heeler",
+        "weeping",
+        "without suspicion",
+        "yeoman"
+      ]
+    },
+    "dependently": {
+      "word": "DEPENDENTLY",
+      "definitions": [
+        {
+          "text": "In a dependent manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depender": {
+      "word": "DEPENDER",
+      "definitions": [
+        {
+          "text": "One who depends; a dependent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dependingly": {
+      "word": "DEPENDINGLY",
+      "definitions": [
+        {
+          "text": "As having dependence. Hale.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depeople": {
+      "word": "DEPEOPLE",
+      "definitions": [
+        {
+          "text": "To depopulate. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deperdit": {
+      "word": "DEPERDIT",
+      "definitions": [
+        {
+          "text": "That which is lost or destroyed. [R.] Paley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deperditely": {
+      "word": "DEPERDITELY",
+      "definitions": [
+        {
+          "text": ", adv. Hopelessly; despairingly; in the manner of one ruined; as, deperditely wicked. [Archaic]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "deperdition": {
+      "word": "DEPERDITION",
+      "definitions": [
+        {
+          "text": "Loss; destruction. [Archaic] Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depertible": {
+      "word": "DEPERTIBLE",
+      "definitions": [
+        {
+          "text": "Divisible. [Obs.] Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephase": {
+      "word": "DEPHASE",
+      "definitions": [
+        {
+          "text": "To put out of phase, as two parts of a single alternating current.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephlegm": {
+      "word": "DEPHLEGM",
+      "definitions": [
+        {
+          "text": "To rid of phlegm or water; to dephlegmate. [Obs.] Boyle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephlegmate": {
+      "word": "DEPHLEGMATE",
+      "definitions": [
+        {
+          "text": "To deprive of superabundant water, as by evaporation or distillation; to clear of aqueous matter; to rectify; -- used of spirits and acids.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephlegmation": {
+      "word": "DEPHLEGMATION",
+      "definitions": [
+        {
+          "text": "The operation of separating water from spirits and acids, by evaporation or repeated distillation; -- called also concentration, especially when acids are the subject of it. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephlegmator": {
+      "word": "DEPHLEGMATOR",
+      "definitions": [
+        {
+          "text": "An instrument or apparatus in which water is separated by evaporation or distillation; the part of a distilling apparatus in which the separation of the vapors is effected.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephlegmatory": {
+      "word": "DEPHLEGMATORY",
+      "definitions": [
+        {
+          "text": "Pertaining to, or producing, dephlegmation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephlegmedness": {
+      "word": "DEPHLEGMEDNESS",
+      "definitions": [
+        {
+          "text": "A state of being freed from water. [Obs.] Boyle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephlogisticcate": {
+      "word": "DEPHLOGISTICCATE",
+      "definitions": [
+        {
+          "text": "To deprive of phlogiston, or the supposed principle of inflammability. Priestley. Dephlogisticated air, oxygen gas; -- so",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dephosphorization": {
+      "word": "DEPHOSPHORIZATION",
+      "definitions": [
+        {
+          "text": "The act of freeing from phosphorous.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depict": {
+      "word": "DEPICT",
+      "definitions": [
+        {
+          "text": "Depicted. Lydgate.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Depicted. Lydgate.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "To form a colored likeness of; to represent by a picture; to paint; to portray. His arms are fairly depicted in his chamber. Fuller.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To represent in words; to describe vividly. Cæsar's gout was then depicted in energetic language. Motley.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "act a part",
+        "act out",
+        "bring to life",
+        "cartoon",
+        "catch a likeness",
+        "chalk",
+        "character",
+        "characterize",
+        "charcoal",
+        "chart",
+        "color",
+        "copy",
+        "crayon",
+        "create a role",
+        "crosshatch",
+        "dash off",
+        "daub",
+        "delineate",
+        "describe",
+        "design",
+        "diagram",
+        "doodle",
+        "draft",
+        "draw",
+        "enact",
+        "evoke",
+        "express",
+        "give words to",
+        "hatch",
+        "hit off",
+        "image",
+        "impersonate",
+        "interpret",
+        "limn",
+        "map",
+        "narrate",
+        "notate",
+        "outline",
+        "paint",
+        "paint a picture",
+        "pencil",
+        "personate",
+        "picture",
+        "picturize",
+        "play a part",
+        "play a role",
+        "play opposite",
+        "portray",
+        "print",
+        "recite",
+        "recount",
+        "register",
+        "rehearse",
+        "relate",
+        "render",
+        "report",
+        "represent",
+        "rub",
+        "schematize",
+        "scratch",
+        "scumble",
+        "set forth",
+        "shade",
+        "sketch",
+        "state",
+        "stencil",
+        "support",
+        "sustain a part",
+        "symbolize",
+        "take a part",
+        "take a rubbing",
+        "tint",
+        "trace",
+        "trace out",
+        "trace over",
+        "write"
+      ]
+    },
+    "depiction": {
+      "word": "DEPICTION",
+      "definitions": [
+        {
+          "text": "A painting or depicting; a representation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "alphabet",
+        "art",
+        "blueprint",
+        "cameo",
+        "catalog",
+        "cataloging",
+        "character",
+        "character sketch",
+        "charactering",
+        "characterization",
+        "chart",
+        "choreography",
+        "conventional representation",
+        "dance notation",
+        "delineation",
+        "demonstration",
+        "depictment",
+        "description",
+        "details",
+        "diagram",
+        "drama",
+        "drawing",
+        "evocation",
+        "exemplification",
+        "figuration",
+        "graphic account",
+        "hieroglyphic",
+        "iconography",
+        "ideogram",
+        "illustration",
+        "image",
+        "imagery",
+        "imaging",
+        "impression",
+        "itemization",
+        "letter",
+        "limning",
+        "logogram",
+        "logograph",
+        "map",
+        "musical notation",
+        "notation",
+        "particularization",
+        "photograph",
+        "pictogram",
+        "picture",
+        "picturization",
+        "plan",
+        "portrait",
+        "portraiture",
+        "portrayal",
+        "prefigurement",
+        "presentment",
+        "printing",
+        "profile",
+        "projection",
+        "realization",
+        "rendering",
+        "rendition",
+        "representation",
+        "schema",
+        "score",
+        "script",
+        "sketch",
+        "specification",
+        "syllabary",
+        "symbol",
+        "tablature",
+        "vignette",
+        "vivid description",
+        "word painting",
+        "writing"
+      ]
+    },
+    "depicture": {
+      "word": "DEPICTURE",
+      "definitions": [
+        {
+          "text": "To make a picture of; to paint; to picture; to depict. Several persons were depictured in caricature. Fielding.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depilate": {
+      "word": "DEPILATE",
+      "definitions": [
+        {
+          "text": "To strip of hair; to husk. Venner.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depilation": {
+      "word": "DEPILATION",
+      "definitions": [
+        {
+          "text": "Act of pulling out or removing the hair; unhairing. Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depilatory": {
+      "word": "DEPILATORY",
+      "definitions": [
+        {
+          "text": "Having the quality or power of removing hair.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An application used to take off hair.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depilous": {
+      "word": "DEPILOUS",
+      "definitions": [
+        {
+          "text": "Hairless. Sir t. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplanate": {
+      "word": "DEPLANATE",
+      "definitions": [
+        {
+          "text": "Flattened; made level or even.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplant": {
+      "word": "DEPLANT",
+      "definitions": [
+        {
+          "text": "To take up (plants); to transplant. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplantation": {
+      "word": "DEPLANTATION",
+      "definitions": [
+        {
+          "text": "Act of taking up plants from beds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplete": {
+      "word": "DEPLETE",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To empty or unload, as the vessels of human system, by bloodletting or by medicine. Copland.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To reduce by destroying or consuming the vital powers of; to exhaust, as a country of its strength or resources, a treasury of money, etc. Saturday Review.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "ablate",
+        "absorb",
+        "assimilate",
+        "bankrupt",
+        "bleed",
+        "bleed white",
+        "blow",
+        "blow out",
+        "burn up",
+        "clean out",
+        "clear",
+        "clear away",
+        "clear off",
+        "clear out",
+        "clear the decks",
+        "consume",
+        "cripple",
+        "debilitate",
+        "decrease",
+        "defecate",
+        "depreciate",
+        "dig into",
+        "digest",
+        "diminish",
+        "disable",
+        "dissipate",
+        "drain",
+        "drain of resources",
+        "draw",
+        "draw down",
+        "draw off",
+        "dribble away",
+        "dry up",
+        "eat",
+        "eat up",
+        "eliminate",
+        "empty",
+        "empty out",
+        "enfeeble",
+        "erode",
+        "evacuate",
+        "exhaust",
+        "expend",
+        "finish",
+        "finish off",
+        "gobble",
+        "gobble up",
+        "impoverish",
+        "ingest",
+        "lessen",
+        "milk",
+        "purge",
+        "reduce",
+        "remove",
+        "sap",
+        "scour out",
+        "shrink",
+        "spend",
+        "squander",
+        "suck dry",
+        "swallow",
+        "swallow up",
+        "sweep out",
+        "unclog",
+        "undermine",
+        "unfoul",
+        "use up",
+        "vent",
+        "void",
+        "wash up",
+        "waste",
+        "waste away",
+        "weaken",
+        "wear",
+        "wear away"
+      ]
+    },
+    "depletion": {
+      "word": "DEPLETION",
+      "definitions": [
+        {
+          "text": "The act of depleting or emptying.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "the act or process of diminishing the quantity of fluid in the vessels by bloodletting or otherwise; also excessive evacuation, as in severe diarrhea.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ablation",
+        "absorption",
+        "assimilation",
+        "attrition",
+        "burning up",
+        "cleaning out",
+        "clearance",
+        "clearing",
+        "consumption",
+        "corrosion",
+        "curtailment",
+        "cut",
+        "cutting",
+        "decrease",
+        "decrement",
+        "defecation",
+        "deliquescence",
+        "depreciation",
+        "derogation",
+        "detraction",
+        "digestion",
+        "diminution",
+        "dip",
+        "discharging cargo",
+        "disparagement",
+        "dissipation",
+        "dissolution",
+        "drain",
+        "drainage",
+        "draining",
+        "eating up",
+        "egress",
+        "elimination",
+        "emptying",
+        "erosion",
+        "evacuation",
+        "evaporation",
+        "excretion",
+        "exhausting",
+        "exhaustion",
+        "expending",
+        "expenditure",
+        "extraction",
+        "finishing",
+        "impairment",
+        "impoverishment",
+        "ingestion",
+        "leakage",
+        "lessening",
+        "loss",
+        "off-loading",
+        "reduction",
+        "remission",
+        "removal",
+        "retraction",
+        "retrenchment",
+        "shortening",
+        "shrinkage",
+        "spending",
+        "squandering",
+        "truncation",
+        "unloading",
+        "using",
+        "using up",
+        "venting",
+        "voidance",
+        "voiding",
+        "wastage",
+        "waste",
+        "wastefulness",
+        "wasting away",
+        "wear and tear",
+        "wearing",
+        "wearing away",
+        "wearing down"
+      ]
+    },
+    "depletive": {
+      "word": "DEPLETIVE",
+      "definitions": [
+        {
+          "text": "Able or fitted to deplete.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A substance used to deplete.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depletory": {
+      "word": "DEPLETORY",
+      "definitions": [
+        {
+          "text": "Serving to deplete.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplication": {
+      "word": "DEPLICATION",
+      "definitions": [
+        {
+          "text": "An unfolding, untwisting, or unplaiting. [Obs.] W. Montagu.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deploitation": {
+      "word": "DEPLOITATION",
+      "definitions": [
+        {
+          "text": "Same as Exploitation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplorability": {
+      "word": "DEPLORABILITY",
+      "definitions": [
+        {
+          "text": "Deplorableness. Stormonth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplorable": {
+      "word": "DEPLORABLE",
+      "definitions": [
+        {
+          "text": "Worthy of being deplored or lamented; lamentable; causing grief; hence, sad; calamitous; grievous; wretched; as, life's evils are deplorable. Individual sufferers are in a much more deplorable conditious than any others. Burke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abominable",
+        "affecting",
+        "afflictive",
+        "appalling",
+        "arrant",
+        "atrocious",
+        "awful",
+        "bad",
+        "base",
+        "beastly",
+        "beneath contempt",
+        "beneath one",
+        "bitter",
+        "blameworthy",
+        "bleak",
+        "brutal",
+        "calamitous",
+        "cheap",
+        "cheerless",
+        "comfortless",
+        "contemptible",
+        "debasing",
+        "degrading",
+        "demeaning",
+        "depressing",
+        "depressive",
+        "desperate",
+        "despicable",
+        "detestable",
+        "difficult",
+        "dire",
+        "disastrous",
+        "discomforting",
+        "disgraceful",
+        "disgusting",
+        "dismal",
+        "dismaying",
+        "disreputable",
+        "distressful",
+        "distressing",
+        "disturbing",
+        "dolorific",
+        "dolorogenic",
+        "dolorous",
+        "dreadful",
+        "dreary",
+        "egregious",
+        "enormous",
+        "execrable",
+        "fetid",
+        "filthy",
+        "flagrant",
+        "foul",
+        "fulsome",
+        "grave",
+        "grievous",
+        "gross",
+        "gutter",
+        "hateful",
+        "heartbreaking",
+        "heartrending",
+        "heinous",
+        "hopeless",
+        "horrible",
+        "horrid",
+        "horrifying",
+        "humiliating",
+        "humiliative",
+        "infamous",
+        "infra dig",
+        "infra indignitatem",
+        "intolerable",
+        "joyless",
+        "lamentable",
+        "loathsome",
+        "lousy",
+        "miserable",
+        "monstrous",
+        "mournful",
+        "moving",
+        "nasty",
+        "nefarious",
+        "noisome",
+        "notorious",
+        "obnoxious",
+        "odious",
+        "offensive",
+        "oppressive",
+        "opprobrious",
+        "outrageous",
+        "overwhelming",
+        "painful",
+        "pathetic",
+        "piteous",
+        "pitiable",
+        "pitiful",
+        "poignant",
+        "rank",
+        "regrettable",
+        "reprehensible",
+        "repulsive",
+        "rotten",
+        "rueful",
+        "sad",
+        "saddening",
+        "scandalous",
+        "schlock",
+        "scurvy",
+        "serious",
+        "shabby",
+        "shameful",
+        "sharp",
+        "shocking",
+        "shoddy",
+        "sickening",
+        "sordid",
+        "sore",
+        "sorrowful",
+        "sorry",
+        "squalid",
+        "terrible",
+        "too bad",
+        "touching",
+        "tragic",
+        "troubling",
+        "unbearable",
+        "unbecoming",
+        "unclean",
+        "uncomfortable",
+        "unfortunate",
+        "unworthy of one",
+        "upsetting",
+        "vile",
+        "villainous",
+        "woebegone",
+        "woeful",
+        "worst",
+        "worthless",
+        "wretched"
+      ]
+    },
+    "deplorableness": {
+      "word": "DEPLORABLENESS",
+      "definitions": [
+        {
+          "text": "State of being deplorable.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplorably": {
+      "word": "DEPLORABLY",
+      "definitions": [
+        {
+          "text": "In a deplorable manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplorate": {
+      "word": "DEPLORATE",
+      "definitions": [
+        {
+          "text": "Deplorable. [Obs.] A more deplorate estate. Baker.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deploration": {
+      "word": "DEPLORATION",
+      "definitions": [
+        {
+          "text": "The act of deploring or lamenting; lamentation. Speed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplore": {
+      "word": "DEPLORE",
+      "definitions": [
+        {
+          "text": "To feel or to express deep and poignant grief for; to bewail; to lament; to mourn; to sorrow over. To find her, or forever to deplore Her loss. Milton. As some sad turtle his lost love deplores. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To complain of. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To regard as hopeless; to give up. [Obs.] Bacon. term, denoting a state of grief or sadness. To lament is to express grief by outcries, and denotes an earnest and strong expression of sorrow. To deplore marks a deeper and more prolonged emotion. To bewail and to bemoan are appropriate only to cases of poignant distress, in which the grief finds utterance either in wailing or in moans and sobs. A man laments his errors, and deplores the ruin they have brought on his family; mothers bewail or bemoan the loss of their children.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lament. Gray.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "be sorry for",
+        "bemoan",
+        "bewail",
+        "cry",
+        "deprecate",
+        "dirge",
+        "disapprove",
+        "elegize",
+        "give sorrow words",
+        "grieve",
+        "keen",
+        "knell",
+        "lament",
+        "moan",
+        "mourn",
+        "regret",
+        "repent",
+        "repine",
+        "rue",
+        "rue the day",
+        "sigh",
+        "sing the blues",
+        "sorrow",
+        "wail",
+        "weep",
+        "weep over"
+      ]
+    },
+    "deploredly": {
+      "word": "DEPLOREDLY",
+      "definitions": [
+        {
+          "text": "Lamentably.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deploredness": {
+      "word": "DEPLOREDNESS",
+      "definitions": [
+        {
+          "text": "The state of being deplored or deplorable. [R.] Bp. Hail.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplorement": {
+      "word": "DEPLOREMENT",
+      "definitions": [
+        {
+          "text": "Deploration. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplorer": {
+      "word": "DEPLORER",
+      "definitions": [
+        {
+          "text": "One who deplores.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deploringly": {
+      "word": "DEPLORINGLY",
+      "definitions": [
+        {
+          "text": "In a deploring manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deploy": {
+      "word": "DEPLOY",
+      "definitions": [
+        {
+          "text": "To open out; to unfold; to spread out (a body of troops) in such a way that they shall display a wider front and less depth; -- the reverse of ploy; as, to deploy a column of troops into line of battle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "aberrate",
+        "adduce",
+        "advance",
+        "allege",
+        "allocate",
+        "arrange",
+        "array",
+        "assign",
+        "branch",
+        "branch out",
+        "bring forward",
+        "bring on",
+        "bring to bear",
+        "clear for action",
+        "clear the decks",
+        "collocate",
+        "cool off",
+        "cure",
+        "disperse",
+        "dispose",
+        "divaricate",
+        "diverge",
+        "divide",
+        "dress",
+        "emplace",
+        "expand",
+        "extend",
+        "fan",
+        "fan out",
+        "fix",
+        "fix up",
+        "flare",
+        "form",
+        "get a fix",
+        "get ready",
+        "go away",
+        "go off",
+        "grade",
+        "harmonize",
+        "hierarchize",
+        "home in on",
+        "install",
+        "lay out",
+        "line up",
+        "localize",
+        "locate",
+        "make arrangements",
+        "make preparations",
+        "make ready",
+        "marshal",
+        "methodize",
+        "mobilize",
+        "navigate",
+        "normalize",
+        "offer",
+        "open",
+        "open up",
+        "order",
+        "organize",
+        "outspread",
+        "outstretch",
+        "overgrow",
+        "overrun",
+        "pacify",
+        "pin down",
+        "pinpoint",
+        "place",
+        "plan",
+        "plead",
+        "position",
+        "prearrange",
+        "prep",
+        "prepare",
+        "present",
+        "pretreat",
+        "process",
+        "produce",
+        "provide",
+        "put in place",
+        "put in shape",
+        "quiet",
+        "rally",
+        "ramify",
+        "rank",
+        "ready",
+        "ready up",
+        "regularize",
+        "regulate",
+        "routinize",
+        "separate",
+        "set up",
+        "settle preliminaries",
+        "situate",
+        "splay",
+        "spot",
+        "spraddle",
+        "sprangle",
+        "sprawl",
+        "spread",
+        "spread like wildfire",
+        "spread out",
+        "standardize",
+        "structure",
+        "systematize",
+        "tan",
+        "tranquilize",
+        "treat",
+        "triangulate",
+        "trim",
+        "try out",
+        "unfold",
+        "widen",
+        "zero in on"
+      ]
+    },
+    "deploydeployment": {
+      "word": "DEPLOY; DEPLOYMENT",
+      "definitions": [
+        {
+          "text": "The act of deploying; a spreading out of a body of men in order to extend their front. -Wilhelm. Deployments . . . which cause the soldier to turn his back to the enemy are not suited to war.H.L. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplumate": {
+      "word": "DEPLUMATE",
+      "definitions": [
+        {
+          "text": "Destitute or deprived of features; deplumed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplumation": {
+      "word": "DEPLUMATION",
+      "definitions": [
+        {
+          "text": "The stripping or falling off of plumes or feathers. Bp. Stillingfleet",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A disease of the eyelids, attended with loss of the eyelashes. Thomas.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deplume": {
+      "word": "DEPLUME",
+      "definitions": [
+        {
+          "text": "To strip or pluck off the feather of; to deprive of of plumage. On the depluming of the pope every bird had his own feather. Fuller.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lay bare; to expose. The exposure and depluming of the leading humbugs of the age. De Quincey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abase",
+        "bleed",
+        "bleed white",
+        "boot",
+        "bounce",
+        "break",
+        "bring into discredit",
+        "bring low",
+        "bring shame upon",
+        "bump",
+        "bust",
+        "can",
+        "cashier",
+        "cast reproach upon",
+        "debase",
+        "defrock",
+        "degrade",
+        "demote",
+        "denude",
+        "depose",
+        "deprive",
+        "despoil",
+        "disbar",
+        "discharge",
+        "discredit",
+        "disemploy",
+        "disgrace",
+        "disgrade",
+        "dishonor",
+        "dismiss",
+        "displace",
+        "displume",
+        "divest",
+        "downgrade",
+        "drain",
+        "drum out",
+        "dry",
+        "exhaust",
+        "expel",
+        "fire",
+        "flay",
+        "fleece",
+        "furlough",
+        "give the ax",
+        "give the gate",
+        "humble",
+        "humiliate",
+        "impoverish",
+        "impute shame to",
+        "kick",
+        "kick upstairs",
+        "lay off",
+        "let go",
+        "let out",
+        "lower",
+        "make redundant",
+        "milk",
+        "pension off",
+        "pick clean",
+        "pillory",
+        "pluck",
+        "put to shame",
+        "read out of",
+        "reduce",
+        "reflect discredit upon",
+        "release",
+        "remove",
+        "replace",
+        "reproach",
+        "retire",
+        "sack",
+        "separate forcibly",
+        "shame",
+        "shear",
+        "skin",
+        "strip",
+        "strip bare",
+        "strip of rank",
+        "suck dry",
+        "superannuate",
+        "surplus",
+        "suspend",
+        "turn off",
+        "turn out",
+        "unfrock"
+      ]
+    },
+    "depolarization": {
+      "word": "DEPOLARIZATION",
+      "definitions": [
+        {
+          "text": "The act of depriving of polarity, or the result of such action; reduction to an unpolarized condition. Depolarization of light (Opt.), a change in the plane of polarization of rays, especially by a crystalline medium, such that the light which had been extinguished by the analyzer reappears as if the polarization had been anulled. The word is inappropriate, as the ray does not return to the unpolarized condition.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depolarize": {
+      "word": "DEPOLARIZE",
+      "definitions": [
+        {
+          "text": "(Opt.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deprive of polarity; to reduce to an unpolarized condition. the effect of a polarizing medium, as a crystalline plate, in causing the reappearance of a ray, in consequence of a change in its plane of polarization, which previously to the change was intercepted by the analyzer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Elec.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To free from polarization, as the negative plate of the voltaic battery.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depolarizer": {
+      "word": "DEPOLARIZER",
+      "definitions": [
+        {
+          "text": "A substance used to prevent polarization, as upon the negative plate of a voltaic battery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depolish": {
+      "word": "DEPOLISH",
+      "definitions": [
+        {
+          "text": "To remove the polish or glaze from.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depolishing": {
+      "word": "DEPOLISHING",
+      "definitions": [
+        {
+          "text": "The process of removing the vitreous glaze from porcelain, leaving the dull luster of the surface of ivory porcelian. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depone": {
+      "word": "DEPONE",
+      "definitions": [
+        {
+          "text": "To lay, as a stake; to wager. [Obs.] Hudibras.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lay down. [R.] Southey.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To assert under oath; to depose. [A Scotticism] Sprot deponeth that he entered himself thereafter in conference. State Trials(1606).",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To testify under oath; to depose; to bear witness. [A Scotticism] The fairy Glorians, whose credibility on this point can not be called in question, depones to the confinement of Merlin in a tree. Dunlop.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deponent": {
+      "word": "DEPONENT",
+      "definitions": [
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who deposes or testifies under oath; one who gives evidence; usually, one who testifies in writing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Gr. & Lat. Gram.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A deponent verb. makes a written declaration under oath, with a view to establish certain facts. An affiant is one who makes an affidavit, or declaration under oath, in order to establish the truth of what he says. A deponenet is one who makes a deposition, or gives written testimony under oath, to be used in the trial of some case before a court of justice. See under Deposition.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Having a passive form with an active meaning, as certain latin and Greek verbs.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depopulacy": {
+      "word": "DEPOPULACY",
+      "definitions": [
+        {
+          "text": "Depopulation; destruction of population. [R.] Chapman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depopulate": {
+      "word": "DEPOPULATE",
+      "definitions": [
+        {
+          "text": "To deprive of inhabitants, whether by death or by expulsion; to reduce greatly the populousness of; to dispeople; to unpeople. Where is this viper, That would depopulate the city Shak. limited to the loss of inhabitants; as, an army or a famine may depopulate a country. It rarely expresses an entire loss of inhabitants, but often a great diminution of their numbers; as, the deluge depopulated the earth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become dispeopled. [R.] Whether the country be depopulating or not. Goldsmith.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depopulation": {
+      "word": "DEPOPULATION",
+      "definitions": [
+        {
+          "text": "The act of depopulating, or condition of being depopulated; destruction or explusion of inhabitants. The desolation and depopulation [of St.Quentin] were now complete. Motley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depopulator": {
+      "word": "DEPOPULATOR",
+      "definitions": [
+        {
+          "text": "One who depopulates; a dispeopler.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deport": {
+      "word": "DEPORT",
+      "definitions": [
+        {
+          "text": "To transport; to carry away; to exile; to send into banishment. He told us he had been deported to Spain. Walsh.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To carry or demean; to conduct; to behave; -- followed by the reflexive pronoun. Let an ambassador deport himself in the most graceful manner befor a prince. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Behavior; carrige; demeanor; deportment. [Obs.] \"Goddesslike deport.\" Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abstract",
+        "acquit",
+        "act",
+        "assign",
+        "ban",
+        "banish",
+        "bear",
+        "blackball",
+        "carry",
+        "carry over",
+        "cast off",
+        "cast out",
+        "chuck",
+        "clear",
+        "clear away",
+        "clear out",
+        "clear the decks",
+        "communicate",
+        "comport",
+        "conduct",
+        "consign",
+        "cut",
+        "cut out",
+        "deliver",
+        "demean",
+        "diffuse",
+        "disfellowship",
+        "displace",
+        "dispose of",
+        "disseminate",
+        "eject",
+        "elide",
+        "eliminate",
+        "emigrate",
+        "eradicate",
+        "exclude",
+        "excommunicate",
+        "exile",
+        "expatriate",
+        "expel",
+        "export",
+        "extradite",
+        "fugitate",
+        "get quit of",
+        "get rid of",
+        "get shut of",
+        "go on",
+        "hand forward",
+        "hand on",
+        "hand over",
+        "impart",
+        "import",
+        "lag",
+        "liquidate",
+        "make over",
+        "metastasize",
+        "metathesize",
+        "ostracize",
+        "oust",
+        "out-migrate",
+        "outlaw",
+        "pass",
+        "pass on",
+        "pass over",
+        "pass the buck",
+        "perfuse",
+        "pick out",
+        "proscribe",
+        "purge",
+        "quit",
+        "relay",
+        "relegate",
+        "remigrate",
+        "remove",
+        "root out",
+        "root up",
+        "rusticate",
+        "send away",
+        "send down",
+        "send to Coventry",
+        "snub",
+        "spread",
+        "spurn",
+        "strike off",
+        "strike out",
+        "switch",
+        "throw over",
+        "throw overboard",
+        "thrust out",
+        "transfer",
+        "transfer property",
+        "transfuse",
+        "translate",
+        "translocate",
+        "transmit",
+        "transplace",
+        "transplant",
+        "transport",
+        "transpose",
+        "turn over",
+        "weed out"
+      ]
+    },
+    "deportation": {
+      "word": "DEPORTATION",
+      "definitions": [
+        {
+          "text": "The act of deporting or exiling, or the state of being deported; banishment; transportation. In their deportations, they had often the favor of their conquerors. Atterbury.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deportment": {
+      "word": "DEPORTMENT",
+      "definitions": [
+        {
+          "text": "Manner of deporting or demeaning one's self; manner of acting; conduct; carrige; especially, manner of acting with respect to the courtesies and duties of life; behavior; demeanor; bearing. The gravity of his deportment carried him safe through many difficulties. Swift.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "action",
+        "actions",
+        "activity",
+        "acts",
+        "address",
+        "affectation",
+        "air",
+        "bearing",
+        "behavior",
+        "behavior pattern",
+        "behavioral norm",
+        "behavioral science",
+        "carriage",
+        "comportment",
+        "conduct",
+        "culture pattern",
+        "custom",
+        "demeanor",
+        "doing",
+        "doings",
+        "folkway",
+        "gestures",
+        "goings-on",
+        "guise",
+        "maintien",
+        "manner",
+        "manners",
+        "method",
+        "methodology",
+        "methods",
+        "mien",
+        "modus vivendi",
+        "motions",
+        "movements",
+        "moves",
+        "observable behavior",
+        "pattern",
+        "poise",
+        "port",
+        "pose",
+        "posture",
+        "practice",
+        "praxis",
+        "presence",
+        "procedure",
+        "proceeding",
+        "set",
+        "social science",
+        "style",
+        "tactics",
+        "tone",
+        "way",
+        "way of life",
+        "ways"
+      ]
+    },
+    "deporture": {
+      "word": "DEPORTURE",
+      "definitions": [
+        {
+          "text": "Deportment. [Obs.] Stately port and majestical deporture. Speed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deposable": {
+      "word": "DEPOSABLE",
+      "definitions": [
+        {
+          "text": "Capable of being deposed or deprived of office. Howell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deposal": {
+      "word": "DEPOSAL",
+      "definitions": [
+        {
+          "text": "The act of deposing from office; a removal from the throne. Fox.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abdication",
+        "cashiering",
+        "conge",
+        "deconsecration",
+        "defrocking",
+        "demission",
+        "deposition",
+        "deprivation",
+        "dethronement",
+        "disbarment",
+        "disbarring",
+        "discharge",
+        "discrownment",
+        "disemployment",
+        "disenthronement",
+        "dislodgment",
+        "dismissal",
+        "displacement",
+        "displacing",
+        "drumming out",
+        "emeritus status",
+        "excommunication",
+        "expulsion",
+        "firing",
+        "forced resignation",
+        "forced separation",
+        "furloughing",
+        "impeachment",
+        "kicking upstairs",
+        "layoff",
+        "liquidation",
+        "ousting",
+        "overthrow",
+        "overthrowal",
+        "pensioning off",
+        "pink slip",
+        "purge",
+        "relinquishment",
+        "removal",
+        "resignation",
+        "retiral",
+        "retirement",
+        "superannuation",
+        "surplusing",
+        "suspension",
+        "the ax",
+        "the boot",
+        "the bounce",
+        "the gate",
+        "the sack",
+        "ticket",
+        "unchurching",
+        "unfrocking",
+        "unhorsing",
+        "unplacement",
+        "unsaddling",
+        "unseating",
+        "upset",
+        "voluntary resignation",
+        "walking papers",
+        "withdrawal"
+      ]
+    },
+    "depose": {
+      "word": "DEPOSE",
+      "definitions": [
+        {
+          "text": "To lay down; to divest one's self of; to lay aside. [Obs.] Thus when the state one Edward did depose, A greater Edward in his room arose. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To let fall; to deposit. [Obs.] Additional mud deposed upon it. Woodward.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To remove from a throne or other high station; to dethrone; to divest or deprive of office. A tyrant over his subjects, and therefore worthy to be deposed. Prynne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To testify under oath; to bear testimony to; -- now usually said of bearing testimony which is officially written down for future use. Abbott. To depose the yearly rent or valuation of lands. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put under oath. [Obs.] Depose him in the justice of his cause. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bear witness; to testify under oath; to make deposition. Then, seeing't was he that made you to despose, Your oath, my lord, is vain and frivolous. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "acknowledge",
+        "affirm",
+        "allege",
+        "and candle",
+        "assert under oath",
+        "asseverate",
+        "assure",
+        "attest",
+        "aver",
+        "avouch",
+        "avow",
+        "bank",
+        "bear witness",
+        "book",
+        "boot",
+        "bounce",
+        "break",
+        "buck off",
+        "bump",
+        "bust",
+        "can",
+        "cashier",
+        "certify",
+        "chuck",
+        "declare",
+        "deconsecrate",
+        "defrock",
+        "degrade",
+        "demote",
+        "deplume",
+        "depone",
+        "deposit",
+        "deprive",
+        "deracinate",
+        "dethrone",
+        "disbar",
+        "discharge",
+        "disclose",
+        "discrown",
+        "disemploy",
+        "disenthrone",
+        "dislodge",
+        "dismiss",
+        "dismount",
+        "displace",
+        "displume",
+        "drum out",
+        "eject",
+        "excommunicate",
+        "expel",
+        "fire",
+        "furlough",
+        "give evidence",
+        "give the ax",
+        "give the gate",
+        "guarantee",
+        "kick",
+        "kick upstairs",
+        "kiss the book",
+        "lay off",
+        "let go",
+        "let out",
+        "liquidate",
+        "make redundant",
+        "mount",
+        "oust",
+        "overthrow",
+        "pension",
+        "pension off",
+        "predicate",
+        "profess",
+        "protest",
+        "purge",
+        "put by",
+        "read out of",
+        "release",
+        "remove",
+        "remove from office",
+        "replace",
+        "retire",
+        "root out",
+        "root up",
+        "sack",
+        "separate forcibly",
+        "store",
+        "stow",
+        "strip",
+        "strip of office",
+        "strip of rank",
+        "subvert",
+        "superannuate",
+        "surplus",
+        "suspend",
+        "swear",
+        "swear by bell",
+        "swear the truth",
+        "swear to",
+        "swear to God",
+        "swear to goodness",
+        "testify",
+        "throw off",
+        "throw out",
+        "turn off",
+        "turn out",
+        "unchurch",
+        "uncrown",
+        "unfrock",
+        "unhorse",
+        "unmake",
+        "unplace",
+        "unsaddle",
+        "unseat",
+        "unthrone",
+        "uproot",
+        "upset",
+        "vouch",
+        "vow",
+        "warrant",
+        "witness"
+      ]
+    },
+    "deposer": {
+      "word": "DEPOSER",
+      "definitions": [
+        {
+          "text": "One who deposes or degrades from office.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who testifies or deposes; a deponent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deposit": {
+      "word": "DEPOSIT",
+      "definitions": [
+        {
+          "text": "To lay down; to place; to put; to let fall or throw down (as sediment); as, a crocodile deposits her eggs in the sand; the waters deposited a rich alluvium. The fear is deposited in conscience. Jer. Taylor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lay up or away for safekeeping; to put up; to store; as, to deposit goods in a warehouse.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lodge in some one's hands for sale keeping; to commit to the custody of another; to intrust; esp., to place in a bank, as a sum of money subject to order.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lay aside; to rid one's self of. [Obs.] If what is written prove useful to you, to the depositing that which i can not deem an error. Hammond.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "That is deposited, or laid or thrown down; as, a deposit in a flue; especially, matter precipitated from a solution (as the siliceous deposits of hot springs), or that which is mechanically deposited (as the mud, gravel, etc., deposits of a river). The deposit already formed affording to the succeeding portion of the charged fluid a basis. Kirwan.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A natural occurrence of a useful mineral under the conditions to invite exploitation. Raymond.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is placed anywhere, or in any one's hands, for safe keeping; somthing intrusted to the care of another; esp., money lodged with a bank or banker, subject to order; anything given as pledge or security.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law) (a) A bailment of money or goods to be kept gratuitously for the bailor. (b) Money lodged with a party as earnest or security for the performance of a duty assumed by the person depositing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A place of deposit; a depository. [R.] Bank of deposit. See under Bank. as, coins were recieved on deposit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accumulation",
+        "acquitment",
+        "acquittal",
+        "acquittance",
+        "allocation",
+        "alluvion",
+        "alluvium",
+        "amortization",
+        "amortizement",
+        "ash",
+        "assignment",
+        "bank",
+        "binder",
+        "bond",
+        "bosom",
+        "bottle up",
+        "bottomry",
+        "bundle away",
+        "bury",
+        "cache",
+        "cash",
+        "cash payment",
+        "caution",
+        "caution money",
+        "chimney",
+        "chute",
+        "cinder",
+        "clearance",
+        "clinker",
+        "coffer",
+        "collateral",
+        "collateral security",
+        "collocation",
+        "consign",
+        "country rock",
+        "debris",
+        "debt service",
+        "defrayal",
+        "defrayment",
+        "deployment",
+        "deposition",
+        "deposits",
+        "detritus",
+        "dike",
+        "diluvium",
+        "disbursal",
+        "discharge",
+        "disposition",
+        "doling out",
+        "down payment",
+        "draff",
+        "dregs",
+        "drift",
+        "drop",
+        "dross",
+        "earnest",
+        "earnest money",
+        "ember",
+        "embosom",
+        "emplacement",
+        "entrust",
+        "feces",
+        "file",
+        "file and forget",
+        "forfeit",
+        "froth",
+        "gangue",
+        "go bail",
+        "grounds",
+        "handsel",
+        "hide away",
+        "hire purchase",
+        "hire purchase plan",
+        "hock",
+        "hutch",
+        "hypothecate",
+        "impignorate",
+        "installment",
+        "installment plan",
+        "interest payment",
+        "keep",
+        "keep hidden",
+        "keep secret",
+        "lading",
+        "lay",
+        "lay away",
+        "lay down",
+        "lay in",
+        "lay in store",
+        "leave",
+        "lees",
+        "liquidation",
+        "loading",
+        "localization",
+        "locating",
+        "location",
+        "lock up",
+        "lode",
+        "lodestuff",
+        "lodge",
+        "loess",
+        "margin",
+        "matrix",
+        "mineral deposit",
+        "monthly payments",
+        "moraine",
+        "mortgage",
+        "never-never",
+        "offscum",
+        "ore bed",
+        "pack away",
+        "packing",
+        "pawn",
+        "pay dirt",
+        "paying",
+        "paying off",
+        "paying out",
+        "paying up",
+        "payment",
+        "payment in kind",
+        "payoff",
+        "pinpointing",
+        "place",
+        "placement",
+        "placing",
+        "plant",
+        "pledge",
+        "plunk down",
+        "positioning",
+        "post",
+        "posting",
+        "precipitate",
+        "precipitation",
+        "prepayment",
+        "put",
+        "put away",
+        "put down",
+        "put in hock",
+        "put in pawn",
+        "put up",
+        "putting",
+        "quarterly payments",
+        "quittance",
+        "regular payments",
+        "remittance",
+        "repose",
+        "reposit",
+        "reposition",
+        "reservoir",
+        "rest",
+        "retirement",
+        "salt away",
+        "salt down",
+        "satisfaction",
+        "save",
+        "scoria",
+        "scree",
+        "scum",
+        "seal up",
+        "secrete",
+        "sediment",
+        "sedimentate",
+        "sedimentation",
+        "set aside",
+        "set down",
+        "settlement",
+        "settlings",
+        "shoot",
+        "silt",
+        "sinking-fund payment",
+        "sinter",
+        "situation",
+        "slag",
+        "smut",
+        "soot",
+        "spawn",
+        "spot cash",
+        "spotting",
+        "spout",
+        "stake",
+        "stash",
+        "stationing",
+        "stock",
+        "storage",
+        "store",
+        "store away",
+        "stow",
+        "stow away",
+        "stow down",
+        "stowage",
+        "sublimate",
+        "vein",
+        "warehouse",
+        "weekly payments"
+      ]
+    },
+    "depositary": {
+      "word": "DEPOSITARY",
+      "definitions": [
+        {
+          "text": "One with whom anything is lodged in the trust; one who receives a deposit; -- the correlative of depositor. I . . . made you my guardians, my depositaries. Shak. The depositaries of power, who are mere delegates of the people.J.S. Mill.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A storehouse; a depository. Bp. Hurd.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One to whom goods are bailed, to be kept for the bailor without a recompense. Kent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accountant",
+        "auditor",
+        "bookkeeper",
+        "bursar",
+        "cashier",
+        "cashkeeper",
+        "chamberlain",
+        "comptroller",
+        "controller",
+        "curator",
+        "depository",
+        "fiduciary",
+        "financial officer",
+        "liquidator",
+        "paymaster",
+        "purse bearer",
+        "purser",
+        "receiver",
+        "steward",
+        "treasurer",
+        "trustee"
+      ]
+    },
+    "deposition": {
+      "word": "DEPOSITION",
+      "definitions": [
+        {
+          "text": "The act of depositing or deposing; the act of laying down or thrown down; precipitation. The deposition of rough sand and rolled pebbles. H. Miller.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of bringing before the mind; presentation. The influence of princes upon the dispositions of their courts needs not the deposition of their examples, since it hath the authority of a known principle. W. Montagu.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of setting aside a sovereign or a public officer; deprivation of authority and dignity; displacement; removal. voluntary, and a deposition compulsory.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is deposited; matter laid or thrown down; sediment; alluvial matter; as, banks are sometimes depositions of alluvial matter.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An opinion, example, or statement, laid down or asserted; a declaration.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of laying down one's testimony in writing; also, testimony laid or taken down in writting, under oath or affirmation, befor some competent officer, and in reply to interrogatories and cross-interrogatories. any authorized ex parte written statement of a person, sworn to or affirmed before some competent magistrate. It is made without cross- examination, and requires no notice to an opposing party. It is generally signed by the party making it, and may be drawn up by himself or any other person. A deposition is the written testimony of a witness, taken down in due form of law, and sworn to or affirmed by the deponent. It must be taken before some authorized magistrate, and upon a prescribed or reasonable notice to the opposing party, that may attend and cross-examine. It is generally written down from the mouth of the witness by the magistrate, or some person for him, and in his presence.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "admission",
+        "affidavit",
+        "affirmation",
+        "allegation",
+        "allocation",
+        "alluvion",
+        "alluvium",
+        "ash",
+        "assertion",
+        "asseveration",
+        "assignment",
+        "attest",
+        "attestation",
+        "authority",
+        "authorization",
+        "averment",
+        "avouchment",
+        "avowal",
+        "bill",
+        "bill of complaint",
+        "bill of health",
+        "cashiering",
+        "certificate",
+        "certificate of proficiency",
+        "certification",
+        "cinder",
+        "claim",
+        "clinker",
+        "collocation",
+        "complaint",
+        "compurgation",
+        "credential",
+        "declaration",
+        "deconsecration",
+        "defrocking",
+        "deployment",
+        "deposal",
+        "deposit",
+        "deposits",
+        "deprivation",
+        "dethronement",
+        "diluvium",
+        "diploma",
+        "disbarment",
+        "disbarring",
+        "disclosure",
+        "discrownment",
+        "disenthronement",
+        "dismissal",
+        "displacement",
+        "disposition",
+        "draff",
+        "dregs",
+        "dross",
+        "ember",
+        "emplacement",
+        "excommunication",
+        "expulsion",
+        "feces",
+        "firing",
+        "forced resignation",
+        "froth",
+        "grounds",
+        "impeachment",
+        "instrument in proof",
+        "kicking upstairs",
+        "lading",
+        "lees",
+        "legal evidence",
+        "libel",
+        "liquidation",
+        "loading",
+        "localization",
+        "locating",
+        "location",
+        "loess",
+        "manifesto",
+        "moraine",
+        "narratio",
+        "navicert",
+        "nolle prosequi",
+        "nonsuit",
+        "notarized statement",
+        "note",
+        "offscum",
+        "ousting",
+        "overthrow",
+        "overthrowal",
+        "packing",
+        "pensioning off",
+        "pinpointing",
+        "placement",
+        "placing",
+        "position paper",
+        "positioning",
+        "posting",
+        "precipitate",
+        "precipitation",
+        "profession",
+        "purge",
+        "putting",
+        "removal",
+        "reposition",
+        "retirement",
+        "scoria",
+        "scum",
+        "sediment",
+        "settlings",
+        "sheepskin",
+        "silt",
+        "sinter",
+        "situation",
+        "slag",
+        "smut",
+        "solemn declaration",
+        "soot",
+        "spotting",
+        "statement",
+        "statement of belief",
+        "statement of facts",
+        "statement under oath",
+        "stationing",
+        "storage",
+        "stowage",
+        "sublimate",
+        "superannuation",
+        "suspension",
+        "swearing",
+        "sworn evidence",
+        "sworn statement",
+        "sworn testimony",
+        "testamur",
+        "testimonial",
+        "testimonium",
+        "testimony",
+        "ticket",
+        "unchurching",
+        "unfrocking",
+        "unseating",
+        "visa",
+        "vise",
+        "voucher",
+        "vouching",
+        "warrant",
+        "warranty",
+        "witness",
+        "word"
+      ]
+    },
+    "depositor": {
+      "word": "DEPOSITOR",
+      "definitions": [
+        {
+          "text": "One who makes a deposit, especially of money in bank; -- the correlative of depository.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depository": {
+      "word": "DEPOSITORY",
+      "definitions": [
+        {
+          "text": "A place where anything is deposited for sale or keeping; as, warehouse is a depository for goods; a clerk's office is a depository for records.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One with whom something is deposited; a depositary. I am the sole depository of my own secret, and it shall perish with me. Junius.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Fort Knox",
+        "archives",
+        "armory",
+        "arsenal",
+        "attic",
+        "bank",
+        "basement",
+        "bay",
+        "bin",
+        "bonded warehouse",
+        "bookcase",
+        "box",
+        "bunker",
+        "bursary",
+        "buttery",
+        "cargo dock",
+        "cash register",
+        "cashbox",
+        "cellar",
+        "chest",
+        "closet",
+        "coffer",
+        "coin box",
+        "conservatory",
+        "crate",
+        "crib",
+        "cupboard",
+        "depot",
+        "dock",
+        "drawer",
+        "dump",
+        "exchequer",
+        "fisc",
+        "glory hole",
+        "godown",
+        "gold depository",
+        "hold",
+        "hutch",
+        "library",
+        "locker",
+        "lumber room",
+        "lumberyard",
+        "magasin",
+        "magazine",
+        "money chest",
+        "penny bank",
+        "piggy bank",
+        "pork barrel",
+        "public crib",
+        "public till",
+        "public treasury",
+        "public trough",
+        "rack",
+        "repertory",
+        "repository",
+        "reservoir",
+        "rick",
+        "safe",
+        "safe-deposit box",
+        "shelf",
+        "stack",
+        "stack room",
+        "stock room",
+        "storage",
+        "store",
+        "storehouse",
+        "storeroom",
+        "strong room",
+        "strongbox",
+        "subtreasury",
+        "supply base",
+        "supply depot",
+        "tank",
+        "till",
+        "treasure house",
+        "treasure room",
+        "treasure-house",
+        "treasury",
+        "vat",
+        "vault",
+        "warehouse",
+        "wine cellar"
+      ]
+    },
+    "depositum": {
+      "word": "DEPOSITUM",
+      "definitions": [
+        {
+          "text": "Deposit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depositure": {
+      "word": "DEPOSITURE",
+      "definitions": [
+        {
+          "text": "The act of depositing; deposition. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depot": {
+      "word": "DEPOT",
+      "definitions": [
+        {
+          "text": "A place of deposit storing of goods; a warehouse; a storehouse. The islands of Guernsey and Jersey are at present the great depots of this kingdom. Brit Critic (1794).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mil.) (a) A military station where stores and provisions are kept, or where recruits are assembled and drilled. (b) (Eng. & France) The headquarters of a regiment, where all supplies are recieved and distributed, recruits are assembled and instructed, infirm or disabled soldiers are taken care of, and all the wants of the regiment are provided for.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A railway station; a building for the accommodation and protection of railway passenges or freight. [U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "archives",
+        "armory",
+        "arsenal",
+        "attic",
+        "bank",
+        "basement",
+        "bay",
+        "bin",
+        "bonded warehouse",
+        "bookcase",
+        "box",
+        "bunker",
+        "buttery",
+        "cargo dock",
+        "cellar",
+        "chest",
+        "closet",
+        "conservatory",
+        "crate",
+        "crib",
+        "cupboard",
+        "depository",
+        "dock",
+        "drawer",
+        "dump",
+        "exchequer",
+        "glory hole",
+        "godown",
+        "hold",
+        "hutch",
+        "library",
+        "locker",
+        "lumber room",
+        "lumberyard",
+        "magasin",
+        "magazine",
+        "rack",
+        "repertory",
+        "repository",
+        "reservoir",
+        "rick",
+        "shelf",
+        "stack",
+        "stack room",
+        "stock room",
+        "storage",
+        "store",
+        "storehouse",
+        "storeroom",
+        "supply base",
+        "supply depot",
+        "tank",
+        "terminal",
+        "terminus",
+        "treasure house",
+        "treasure room",
+        "treasury",
+        "vat",
+        "vault",
+        "warehouse",
+        "wine cellar"
+      ]
+    },
+    "depper": {
+      "word": "DEPPER",
+      "definitions": [
+        {
+          "text": "Deeper. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depravation": {
+      "word": "DEPRAVATION",
+      "definitions": [
+        {
+          "text": "Detraction; depreciation. [Obs.] To stubborn critics, apt, without a theme, For depravation. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of depraving, or making anything bad; the act of corrupting.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being depraved or degenerated; degeneracy; depravity. The depravation of his moral character destroyed his judgment. Sir G. C. Lewis.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Change for the worse; deterioration; morbid perversion.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abandon",
+        "abandonment",
+        "abjection",
+        "comedown",
+        "corruptedness",
+        "corruption",
+        "corruptness",
+        "debasement",
+        "decadence",
+        "decadency",
+        "declension",
+        "declination",
+        "decline",
+        "deformation",
+        "degeneracy",
+        "degenerateness",
+        "degeneration",
+        "degradation",
+        "demoralization",
+        "demotion",
+        "depravedness",
+        "depravity",
+        "depreciation",
+        "derogation",
+        "descent",
+        "deterioration",
+        "devolution",
+        "dissoluteness",
+        "downtrend",
+        "downturn",
+        "downward mobility",
+        "downward trend",
+        "drop",
+        "dying",
+        "ebb",
+        "effeteness",
+        "fading",
+        "failing",
+        "failure",
+        "failure of nerve",
+        "fall",
+        "falling-off",
+        "involution",
+        "lapse",
+        "loss of tone",
+        "moral pollution",
+        "moral turpitude",
+        "profligacy",
+        "regression",
+        "reprobacy",
+        "retrocession",
+        "retrogradation",
+        "retrogression",
+        "rottenness",
+        "slippage",
+        "slump",
+        "turpitude",
+        "wane"
+      ]
+    },
+    "deprave": {
+      "word": "DEPRAVE",
+      "definitions": [
+        {
+          "text": "To speak ill of; to depreciate; to malign; to revile. [Obs.] And thou knowest, conscience, I came not to chide Nor deprave thy person with a proud heart. Piers Plowman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make bad or worse; to vitiate; to corrupt. Whose pride depraves each other better part. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abuse",
+        "adulterate",
+        "afflict",
+        "aggrieve",
+        "alloy",
+        "bastardize",
+        "befoul",
+        "bewitch",
+        "blight",
+        "brutalize",
+        "canker",
+        "cheapen",
+        "coarsen",
+        "condemn",
+        "confound",
+        "contaminate",
+        "corrupt",
+        "crucify",
+        "curse",
+        "damage",
+        "debase",
+        "debauch",
+        "defile",
+        "deflower",
+        "degenerate",
+        "degrade",
+        "demoralize",
+        "denature",
+        "desecrate",
+        "despoil",
+        "destroy",
+        "devalue",
+        "disadvantage",
+        "disserve",
+        "distort",
+        "distress",
+        "do a mischief",
+        "do evil",
+        "do ill",
+        "do wrong",
+        "do wrong by",
+        "doom",
+        "envenom",
+        "get into trouble",
+        "harass",
+        "harm",
+        "hex",
+        "hurt",
+        "impair",
+        "infect",
+        "injure",
+        "jinx",
+        "maltreat",
+        "menace",
+        "mistreat",
+        "misuse",
+        "molest",
+        "outrage",
+        "persecute",
+        "pervert",
+        "play havoc with",
+        "play hob with",
+        "poison",
+        "pollute",
+        "prejudice",
+        "prostitute",
+        "ravage",
+        "ravish",
+        "savage",
+        "scathe",
+        "taint",
+        "threaten",
+        "torment",
+        "torture",
+        "twist",
+        "ulcerate",
+        "violate",
+        "vitiate",
+        "vulgarize",
+        "warp",
+        "wound",
+        "wreak havoc on",
+        "wrong"
+      ]
+    },
+    "depravedly": {
+      "word": "DEPRAVEDLY",
+      "definitions": [
+        {
+          "text": "In a depraved manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depravedness": {
+      "word": "DEPRAVEDNESS",
+      "definitions": [
+        {
+          "text": "Depravity. Hammond.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depravement": {
+      "word": "DEPRAVEMENT",
+      "definitions": [
+        {
+          "text": "Depravity. [Obs.] Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depraver": {
+      "word": "DEPRAVER",
+      "definitions": [
+        {
+          "text": "One who deprave or corrupts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depravingly": {
+      "word": "DEPRAVINGLY",
+      "definitions": [
+        {
+          "text": "In a depraving manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depravity": {
+      "word": "DEPRAVITY",
+      "definitions": [
+        {
+          "text": "The stae of being depraved or corrupted; a vitiated state of moral character; general badness of character; wickedness of mind or heart; absence of religious feeling and principle. Total depravity. See Original sin, and Calvinism. degeneracy. state of mind or feeling; as, the depravity of the human heart; depravity of public morals. Depravation points to the act or process of making depraved, and hence to the end thus reached; as, a gradual depravation of principle; a depravation of manners, of the heart, etc. Corruption is the only one of these words which applies to physical substances, and in reference to these denotes the process by which their component parts are dissolved. Hence, when figuratively used, it denotes an utter vitiation of principle or feeling. Depravity applies only to the mind and heart: we can speak of a depraved taste, or a corrupt taste; in the first we introduce the notion that there has been the influence of bad training to pervert; in the second, that there is a want of true principle to pervert; in the second, that there is a want of true principles to decide. The other two words have a wider use: we can speak of the depravation or the corruption of taste and public sentiment. Depravity is more or less open; corruption is more or less disguised in its operations. What is depraved requires to be reformed; what is corrupt requires to be purified.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abandon",
+        "abandonment",
+        "abjection",
+        "abjectness",
+        "abominableness",
+        "atrociousness",
+        "baseness",
+        "beggarliness",
+        "contemptibility",
+        "contemptibleness",
+        "corruptedness",
+        "corruption",
+        "corruptness",
+        "crumminess",
+        "debasement",
+        "decadence",
+        "decadency",
+        "degeneracy",
+        "degenerateness",
+        "degeneration",
+        "degradation",
+        "demoralization",
+        "depravation",
+        "depravedness",
+        "despicableness",
+        "dissoluteness",
+        "enormity",
+        "execrableness",
+        "foulness",
+        "fulsomeness",
+        "grossness",
+        "heinousness",
+        "immorality",
+        "littleness",
+        "lowness",
+        "meanness",
+        "miserableness",
+        "monstrousness",
+        "moral pollution",
+        "moral turpitude",
+        "nefariousness",
+        "obnoxiousness",
+        "odiousness",
+        "paltriness",
+        "pettiness",
+        "pokiness",
+        "poorness",
+        "profligacy",
+        "rankness",
+        "reprobacy",
+        "rottenness",
+        "scabbiness",
+        "scrubbiness",
+        "scruffiness",
+        "scumminess",
+        "scurviness",
+        "shabbiness",
+        "shoddiness",
+        "smallness",
+        "squalor",
+        "turpitude",
+        "vice",
+        "vileness",
+        "wickedness",
+        "wretchedness"
+      ]
+    },
+    "deprecable": {
+      "word": "DEPRECABLE",
+      "definitions": [
+        {
+          "text": "That may or should be deprecated. Paley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprecate": {
+      "word": "DEPRECATE",
+      "definitions": [
+        {
+          "text": "To pray against, as an evil; to seek to avert by player; to desire the removal of; to seek deliverance from; to express deep regret for; to disapprove of strongly. His purpose was deprecated by all round him, and he was with difficulty induced to adandon it. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "belittle",
+        "bemoan",
+        "bewail",
+        "de-emphasize",
+        "denigrate",
+        "deplore",
+        "depreciate",
+        "derogate",
+        "despise",
+        "detract",
+        "discommend",
+        "discountenance",
+        "disdain",
+        "disesteem",
+        "disfavor",
+        "disparage",
+        "dispraise",
+        "disvalue",
+        "downplay",
+        "frown",
+        "hold in contempt",
+        "lament",
+        "make light of",
+        "make little of",
+        "make nothing of",
+        "minimize",
+        "misestimate",
+        "misprize",
+        "object",
+        "play down",
+        "put down",
+        "ridicule",
+        "sell short",
+        "set at naught",
+        "set little by",
+        "shrug off",
+        "think little of",
+        "think nothing of",
+        "underestimate",
+        "underplay",
+        "underprize",
+        "underrate",
+        "underreckon",
+        "undervalue"
+      ]
+    },
+    "deprecatingly": {
+      "word": "DEPRECATINGLY",
+      "definitions": [
+        {
+          "text": "In a deprecating manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprecation": {
+      "word": "DEPRECATION",
+      "definitions": [
+        {
+          "text": "The act of deprecating; a praying against evil; prayer that an evil may be removed or prevented; strong expression of disapprobation. Humble deprecation. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Entreaty for pardon; petitioning.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An imprecation or curse. [Obs.] Gilpin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprecator": {
+      "word": "DEPRECATOR",
+      "definitions": [
+        {
+          "text": "One who deprecates.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprecatory": {
+      "word": "DEPRECATORY",
+      "definitions": [
+        {
+          "text": "Serving to deprecate; tending to remove or avert evil by prayer; apologetic. Humble and deprecatory letters. Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abusive",
+        "back-biting",
+        "belittling",
+        "bitchy",
+        "blackening",
+        "blameful",
+        "calumniatory",
+        "calumnious",
+        "catty",
+        "censorious",
+        "condemnatory",
+        "contemptuous",
+        "contumelious",
+        "damnatory",
+        "defamatory",
+        "denunciatory",
+        "deprecative",
+        "depreciative",
+        "depreciatory",
+        "derisive",
+        "derisory",
+        "derogative",
+        "derogatory",
+        "detractory",
+        "diffident",
+        "disparaging",
+        "execrating",
+        "execrative",
+        "execratory",
+        "invective",
+        "inveighing",
+        "judgmental",
+        "libelous",
+        "minimizing",
+        "objurgatory",
+        "pejorative",
+        "priggish",
+        "reproachful",
+        "reprobative",
+        "reviling",
+        "ridiculing",
+        "scandalous",
+        "scoffing",
+        "scurrile",
+        "scurrilous",
+        "self-deprecating",
+        "self-depreciating",
+        "self-depreciative",
+        "self-distrustful",
+        "self-doubting",
+        "self-effacing",
+        "slanderous",
+        "slighting",
+        "unselfconfident",
+        "unselfreliant",
+        "vilifying",
+        "vituperative"
+      ]
+    },
+    "depreciate": {
+      "word": "DEPRECIATE",
+      "definitions": [
+        {
+          "text": "To lessen in price or estimated value; to lower the worth of; to represent as of little value or claim to esteem; to undervalue. Addison. Which . . . some over-severe phoilosophers may look upon fastidiously, or undervalue and depreciate. Cudworth. To prove that the Americans ought not to be free, we are obliged to depreciate the value of freedom itself. Burke. Decry.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fall in value; to become of less worth; to sink in estimation; as, a paper currency will depreciate, unless it is convertible into specie.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abate",
+        "ablate",
+        "abrade",
+        "abridge",
+        "abstract",
+        "abuse",
+        "allow",
+        "bate",
+        "beat down",
+        "belittle",
+        "break",
+        "bring down",
+        "bring into discredit",
+        "bring low",
+        "charge off",
+        "cheapen",
+        "compress",
+        "consume",
+        "cry down",
+        "curtail",
+        "cut",
+        "cut back",
+        "cut down",
+        "cut prices",
+        "damp",
+        "dampen",
+        "de-emphasize",
+        "debase",
+        "decline",
+        "decrease",
+        "decry",
+        "deduct",
+        "deflate",
+        "degrade",
+        "denigrate",
+        "deplete",
+        "deprecate",
+        "depress",
+        "deride",
+        "derogate",
+        "derogate from",
+        "despise",
+        "detract",
+        "detract from",
+        "devaluate",
+        "devalue",
+        "diminish",
+        "disapprove of",
+        "discommend",
+        "discount",
+        "discredit",
+        "disdain",
+        "disesteem",
+        "disgrace",
+        "disparage",
+        "dispraise",
+        "dissipate",
+        "disvalue",
+        "dive",
+        "downgrade",
+        "downplay",
+        "drain",
+        "dribble away",
+        "dwindle",
+        "eat away",
+        "erode",
+        "extract",
+        "fall",
+        "fall in price",
+        "file away",
+        "give way",
+        "hold in contempt",
+        "impair",
+        "jew down",
+        "kick back",
+        "knock",
+        "leach",
+        "lessen",
+        "lower",
+        "make allowance",
+        "make light of",
+        "make little of",
+        "make nothing of",
+        "mark down",
+        "minimize",
+        "misestimate",
+        "misprize",
+        "nose-dive",
+        "pare",
+        "play down",
+        "plummet",
+        "plunge",
+        "purify",
+        "put down",
+        "rebate",
+        "reduce",
+        "refine",
+        "reflect discredit upon",
+        "refund",
+        "remove",
+        "retrench",
+        "ridicule",
+        "roll back",
+        "rub away",
+        "run down",
+        "sag",
+        "scale down",
+        "sell short",
+        "set at naught",
+        "set little by",
+        "shave",
+        "shorten",
+        "shrink",
+        "shrug off",
+        "simplify",
+        "slash",
+        "slight",
+        "slump",
+        "soften",
+        "speak ill of",
+        "squander",
+        "step down",
+        "subduct",
+        "submit to indignity",
+        "subtract",
+        "take a premium",
+        "take away",
+        "take from",
+        "take off",
+        "talk down",
+        "thin",
+        "thin out",
+        "think little of",
+        "think nothing of",
+        "trim",
+        "tune down",
+        "underestimate",
+        "underplay",
+        "underprize",
+        "underrate",
+        "underreckon",
+        "undervalue",
+        "waste",
+        "wear",
+        "wear away",
+        "weed",
+        "withdraw",
+        "write down",
+        "write off"
+      ]
+    },
+    "depreciation": {
+      "word": "DEPRECIATION",
+      "definitions": [
+        {
+          "text": "The act of lessening, or seeking to lessen, price, value, or reputation.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The falling of value; reduction of worth. Burke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "the state of being depreciated.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abatement",
+        "ablation",
+        "abridgment",
+        "agio",
+        "alleviation",
+        "allowance",
+        "attenuation",
+        "attrition",
+        "backbiting",
+        "backstabbing",
+        "bank discount",
+        "belittlement",
+        "belittling",
+        "break",
+        "breakage",
+        "calumny",
+        "cash discount",
+        "chain discount",
+        "charge-off",
+        "cheapening",
+        "comedown",
+        "concession",
+        "consumption",
+        "contempt",
+        "contraction",
+        "curtailment",
+        "cut",
+        "cutting",
+        "dampening",
+        "damping",
+        "debasement",
+        "decadence",
+        "decadency",
+        "declension",
+        "declination",
+        "decline",
+        "decrease",
+        "decrement",
+        "decrescence",
+        "decrial",
+        "deduction",
+        "defamation",
+        "deflation",
+        "deformation",
+        "degeneracy",
+        "degenerateness",
+        "degeneration",
+        "degradation",
+        "demotion",
+        "denigration",
+        "depletion",
+        "depravation",
+        "depravedness",
+        "deprecation",
+        "depression",
+        "derogation",
+        "descent",
+        "deterioration",
+        "detraction",
+        "devaluation",
+        "devolution",
+        "diminishment",
+        "diminution",
+        "dip",
+        "disapproval",
+        "discommendation",
+        "discount",
+        "discrediting",
+        "disgrace",
+        "disparagement",
+        "dispraise",
+        "dissipation",
+        "disvaluation",
+        "dive",
+        "downtrend",
+        "downturn",
+        "downward mobility",
+        "downward trend",
+        "drain",
+        "drawback",
+        "drop",
+        "dying",
+        "dying off",
+        "ebb",
+        "effeteness",
+        "erosion",
+        "evaporation",
+        "exhaustion",
+        "expenditure",
+        "extenuation",
+        "extraction",
+        "fade-out",
+        "fading",
+        "failing",
+        "failure",
+        "failure of nerve",
+        "faint praise",
+        "fall",
+        "falling-off",
+        "impairment",
+        "impoverishment",
+        "indignity",
+        "involution",
+        "kickback",
+        "knocking",
+        "languishment",
+        "lapse",
+        "leakage",
+        "lessening",
+        "letup",
+        "loss of tone",
+        "lowering",
+        "lukewarm support",
+        "markdown",
+        "miniaturization",
+        "minimization",
+        "minimizing",
+        "misestimation",
+        "misprision",
+        "misprizal",
+        "misprizing",
+        "mitigation",
+        "nose dive",
+        "penalty",
+        "penalty clause",
+        "percentage",
+        "plummet",
+        "plummeting",
+        "plunge",
+        "premium",
+        "price cut",
+        "price fall",
+        "price reduction",
+        "price-cut",
+        "putting down",
+        "rebate",
+        "rebatement",
+        "reduction",
+        "refund",
+        "regression",
+        "relaxation",
+        "remission",
+        "retraction",
+        "retrenchment",
+        "retrocession",
+        "retrogradation",
+        "retrogression",
+        "ridicule",
+        "rollback",
+        "sag",
+        "sagging",
+        "salvage",
+        "scaling down",
+        "scandal",
+        "setoff",
+        "shortening",
+        "shrinkage",
+        "simplicity",
+        "slander",
+        "slash",
+        "slighting",
+        "slippage",
+        "slump",
+        "sour grapes",
+        "subtraction",
+        "tale",
+        "tare",
+        "time discount",
+        "trade discount",
+        "tret",
+        "truncation",
+        "underestimate",
+        "underestimation",
+        "underrating",
+        "underreckoning",
+        "underselling",
+        "undervaluation",
+        "using",
+        "using up",
+        "wane",
+        "wastage",
+        "waste",
+        "weakening",
+        "wearing",
+        "wearing away",
+        "write-off"
+      ]
+    },
+    "depreciative": {
+      "word": "DEPRECIATIVE",
+      "definitions": [
+        {
+          "text": "Tending, or intended, to depreciate; expressing depreciation;",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depreciator": {
+      "word": "DEPRECIATOR",
+      "definitions": [
+        {
+          "text": "One who depreciates.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depreciatory": {
+      "word": "DEPRECIATORY",
+      "definitions": [
+        {
+          "text": "Tending to depreciate; undervaluing; depreciative.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depredable": {
+      "word": "DEPREDABLE",
+      "definitions": [
+        {
+          "text": "Liable to depredation. [Obs.] \"Made less depredable.\" Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depredate": {
+      "word": "DEPREDATE",
+      "definitions": [
+        {
+          "text": "To subject to plunder and pillage; to despoil; to lay waste; to prey upon. It makes the substance of the body . . . less apt to be consumed and depredated by the spirits. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take plunder or prey; to commit waste; as, the troops depredated on the country.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "bring to ruin",
+        "condemn",
+        "confound",
+        "consume",
+        "damn",
+        "deal destruction",
+        "decimate",
+        "desecrate",
+        "desolate",
+        "despoil",
+        "destroy",
+        "devastate",
+        "devour",
+        "dissolve",
+        "engorge",
+        "fleece",
+        "forage",
+        "foray",
+        "freeboot",
+        "gobble",
+        "gobble up",
+        "gut",
+        "gut with fire",
+        "havoc",
+        "incinerate",
+        "lay in ruins",
+        "lay waste",
+        "loot",
+        "maraud",
+        "pillage",
+        "plunder",
+        "prey on",
+        "raid",
+        "ransack",
+        "ravage",
+        "raven",
+        "ravish",
+        "reive",
+        "rifle",
+        "ruin",
+        "ruinate",
+        "sack",
+        "shipwreck",
+        "spoil",
+        "spoliate",
+        "swallow up",
+        "sweep",
+        "throw into disorder",
+        "unleash destruction",
+        "unleash the hurricane",
+        "upheave",
+        "vandalize",
+        "vaporize",
+        "waste",
+        "wrack",
+        "wreak havoc",
+        "wreck"
+      ]
+    },
+    "depredation": {
+      "word": "DEPREDATION",
+      "definitions": [
+        {
+          "text": "The act of depredating, or the state of being depredated; the act of despoiling or making inroads; as, the sea often makes depredation on the land.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "banditry",
+        "bloodbath",
+        "blue ruin",
+        "breakup",
+        "brigandage",
+        "brigandism",
+        "carnage",
+        "consumption",
+        "damnation",
+        "decimation",
+        "desolation",
+        "despoiling",
+        "despoilment",
+        "despoliation",
+        "destruction",
+        "devastation",
+        "direption",
+        "disintegration",
+        "disorganization",
+        "disruption",
+        "dissolution",
+        "foraging",
+        "foray",
+        "freebooting",
+        "havoc",
+        "hecatomb",
+        "holocaust",
+        "laying waste",
+        "looting",
+        "marauding",
+        "perdition",
+        "pillage",
+        "pillaging",
+        "plunder",
+        "plundering",
+        "raid",
+        "raiding",
+        "ransacking",
+        "rape",
+        "rapine",
+        "ravage",
+        "ravagement",
+        "ravages",
+        "ravaging",
+        "ravishment",
+        "razzia",
+        "reiving",
+        "rifling",
+        "robbery",
+        "ruin",
+        "ruination",
+        "sack",
+        "sacking",
+        "shambles",
+        "slaughter",
+        "spoiling",
+        "spoliation",
+        "undoing",
+        "vandalism",
+        "waste",
+        "wrack",
+        "wrack and ruin",
+        "wreck"
+      ]
+    },
+    "depredator": {
+      "word": "DEPREDATOR",
+      "definitions": [
+        {
+          "text": "One who plunders or pillages; a spoiler; a robber.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depredatory": {
+      "word": "DEPREDATORY",
+      "definitions": [
+        {
+          "text": "Tending or designed to depredate; characterized by depredation; plundering; as, a depredatory incursion.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depredicate": {
+      "word": "DEPREDICATE",
+      "definitions": [
+        {
+          "text": "To proclaim; to celebrate. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprehend": {
+      "word": "DEPREHEND",
+      "definitions": [
+        {
+          "text": "To take unwares or by surprise; to seize, as a person commiting an unlawful act; to catch; to apprehend. The deprehended adulteress.Jer. Taylor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To detect; to discover; to find out. The motion . . . are to be deprehended by experience. Bacon.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprehensible": {
+      "word": "DEPREHENSIBLE",
+      "definitions": [
+        {
+          "text": "That may be caught or discovered; apprehensible. [Obs.] Petty.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprehension": {
+      "word": "DEPREHENSION",
+      "definitions": [
+        {
+          "text": "A catching; discovery. [Obs.] Bp. Hall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depress": {
+      "word": "DEPRESS",
+      "definitions": [
+        {
+          "text": "To press down; to cause to sink; to let fall; to lower; as, to depress the muzzle of a gun; to depress the eyes. \"With lips depressed.\" Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bring down or humble; to abase, as pride.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cast a gloom upon; to sadden; as, his spirits were depressed.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lessen the activity of; to make dull; embarrass, as trade, commerce, etc.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lessen in price; to cause to decline in value; to cheapen; to depreciate.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To reduce (an equation) in a lower degree. To depress the pole (Naut.), to cause the sidereal pole to appear lower or nearer the horizon, as by sailing toward the equator. dispirit; discourage.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Having the middle lower than the border; concave. [Obs.] If the seal be depress or hollow. Hammond.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abridge",
+        "bear down",
+        "beat down",
+        "bring down",
+        "bring low",
+        "burden",
+        "cast down",
+        "cheapen",
+        "compress",
+        "couch",
+        "countersink",
+        "curtail",
+        "cut",
+        "cut back",
+        "cut down",
+        "damp",
+        "dampen",
+        "dampen the spirits",
+        "darken",
+        "dash",
+        "debase",
+        "debilitate",
+        "decrease",
+        "deduct",
+        "deepen",
+        "deflate",
+        "deject",
+        "demit",
+        "dent",
+        "depreciate",
+        "detrude",
+        "devaluate",
+        "devalue",
+        "dig",
+        "diminish",
+        "dimple",
+        "dint",
+        "discourage",
+        "dishearten",
+        "dispirit",
+        "dive",
+        "downbear",
+        "downgrade",
+        "drill",
+        "droop",
+        "dull",
+        "enervate",
+        "engrave",
+        "excavate",
+        "grieve",
+        "haul down",
+        "impress",
+        "imprint",
+        "indent",
+        "knock down",
+        "lessen",
+        "let",
+        "let down",
+        "lower",
+        "lower the spirits",
+        "mine",
+        "notch",
+        "oppress",
+        "pare",
+        "pit",
+        "pock",
+        "pockmark",
+        "press down",
+        "press in",
+        "pull down",
+        "punch",
+        "punch in",
+        "push down",
+        "recess",
+        "reduce",
+        "retrench",
+        "roll back",
+        "sadden",
+        "sap",
+        "scale down",
+        "set back",
+        "set in",
+        "shorten",
+        "simplify",
+        "sink",
+        "stamp",
+        "step down",
+        "take down",
+        "take from",
+        "tamp",
+        "thrust down",
+        "tune down",
+        "tunnel",
+        "upset",
+        "weaken",
+        "weigh down",
+        "weigh heavy upon",
+        "weigh upon"
+      ]
+    },
+    "depressant": {
+      "word": "DEPRESSANT",
+      "definitions": [
+        {
+          "text": "An agent or remedy which lowers the vital powers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Amytal",
+        "Amytal pill",
+        "Demerol",
+        "Dial",
+        "Dolophine",
+        "H",
+        "Luminal",
+        "Luminal pill",
+        "M",
+        "Mickey Finn",
+        "Nembutal",
+        "Nembutal pill",
+        "Seconal",
+        "Seconal pill",
+        "Sulfonal",
+        "Trional",
+        "Tuinal",
+        "Tuinal pill",
+        "alcohol",
+        "amobarbital sodium",
+        "analgesic",
+        "anodyne",
+        "barb",
+        "barbital",
+        "barbiturate",
+        "barbiturate pill",
+        "barbituric acid",
+        "belladonna",
+        "black",
+        "black stuff",
+        "bleak",
+        "blue",
+        "blue angel",
+        "blue devil",
+        "blue heaven",
+        "blue velvet",
+        "bromide",
+        "calmative",
+        "cheerless",
+        "chloral hydrate",
+        "codeine",
+        "codeine cough syrup",
+        "depressing",
+        "depressive",
+        "depressor",
+        "dismal",
+        "dispiriting",
+        "dolly",
+        "downer",
+        "dreary",
+        "goofball",
+        "hard stuff",
+        "heroin",
+        "hop",
+        "horse",
+        "hyoscyamine",
+        "hypnotic",
+        "junk",
+        "knockout drops",
+        "laudanum",
+        "liquor",
+        "lotus",
+        "meperidine",
+        "methadone",
+        "morphia",
+        "morphine",
+        "narcotic",
+        "opiate",
+        "opium",
+        "oppressive",
+        "pacifier",
+        "pain killer",
+        "paraldehyde",
+        "pentobarbital",
+        "phenobarbital",
+        "phenobarbital sodium",
+        "purple heart",
+        "quietener",
+        "rainbow",
+        "red",
+        "reserpine",
+        "scag",
+        "scopolamine",
+        "secobarbital sodium",
+        "sedative",
+        "shit",
+        "sleep-inducer",
+        "sleeper",
+        "sleeping draught",
+        "sleeping pill",
+        "smack",
+        "sodium bromide",
+        "sodium thiopental",
+        "somnifacient",
+        "soother",
+        "soothing syrup",
+        "soporific",
+        "tar",
+        "thalidomide",
+        "tranquilizer",
+        "turps",
+        "white stuff",
+        "yellow",
+        "yellow jacket"
+      ]
+    },
+    "depressed": {
+      "word": "DEPRESSED",
+      "definitions": [
+        {
+          "text": "Pressed or forced down; lowed; sunk; dejected; dispirited; sad; humbled.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.) (a) Concave on the upper side; -- said of a leaf whose disk is lower than the border. (b) Lying flat; -- said of a stem or leaf which lies close to the ground.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the vertical diameter shorter than the horizontal or transverse; -- said of the bodies of animals, or of parts of the bodies.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "alveolar",
+        "alveolate",
+        "anguished",
+        "anxious",
+        "bad",
+        "badly off",
+        "blue",
+        "bored",
+        "bowed-down",
+        "cast down",
+        "cheerless",
+        "couchant",
+        "crouched",
+        "dashed",
+        "debased",
+        "dejected",
+        "dented",
+        "deprived",
+        "despairing",
+        "despondent",
+        "desponding",
+        "dimpled",
+        "dire",
+        "disadvantaged",
+        "disconsolate",
+        "discouraged",
+        "disgusted",
+        "disheartened",
+        "dispirited",
+        "donsie",
+        "doomful",
+        "down",
+        "downcast",
+        "downhearted",
+        "downthrown",
+        "drooping",
+        "droopy",
+        "engraved",
+        "evil-starred",
+        "fallen",
+        "fatal",
+        "faveolate",
+        "feeling low",
+        "flat",
+        "fortuneless",
+        "funest",
+        "grim",
+        "hapless",
+        "heartless",
+        "honeycombed",
+        "hypochondriac",
+        "hypochondriacal",
+        "ill off",
+        "ill-starred",
+        "in adverse circumstances",
+        "in low spirits",
+        "in the depths",
+        "in the doldrums",
+        "in the dumps",
+        "inauspicious",
+        "indented",
+        "joyless",
+        "knee-high",
+        "knocked flat",
+        "laid low",
+        "languishing",
+        "low",
+        "low-built",
+        "low-hung",
+        "low-level",
+        "low-leveled",
+        "low-lying",
+        "low-set",
+        "low-spirited",
+        "low-statured",
+        "lowered",
+        "luckless",
+        "lugubrious",
+        "melancholy",
+        "nauseated",
+        "nauseous",
+        "neap",
+        "notched",
+        "ominous",
+        "out of luck",
+        "pessimistic",
+        "pining",
+        "pitted",
+        "planet-struck",
+        "pleasureless",
+        "pocked",
+        "pockmarked",
+        "prey to malaise",
+        "prone",
+        "prostrate",
+        "recumbent",
+        "reduced",
+        "repelled",
+        "revolted",
+        "runty",
+        "sad",
+        "short",
+        "short of luck",
+        "sickened",
+        "spiritless",
+        "squat",
+        "squatty",
+        "star-crossed",
+        "stooped",
+        "stumpy",
+        "subdued",
+        "submerged",
+        "suffering angst",
+        "suicidal",
+        "sunk",
+        "sunken",
+        "supine",
+        "unblessed",
+        "underprivileged",
+        "uneasy",
+        "unelevated",
+        "unfortunate",
+        "unfulfilled",
+        "ungratified",
+        "unhappy",
+        "unlucky",
+        "unprosperous",
+        "unprovidential",
+        "unquiet",
+        "unsatisfied",
+        "weary of life",
+        "woebegone",
+        "world-weary"
+      ]
+    },
+    "depressingly": {
+      "word": "DEPRESSINGLY",
+      "definitions": [
+        {
+          "text": "In a depressing manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depression": {
+      "word": "DEPRESSION",
+      "definitions": [
+        {
+          "text": "The act of depressing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being depressed; a sinking.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A falling in of the surface; a sinking below its true place; a cavity or hollow; as, roughness consists in little protuberances and depressions.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Humiliation; abasement, as of pride.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Dejection; despondency; lowness. In a great depression of spirit. Baker.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Diminution, as of trade, etc.; inactivity; dullness.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Astron.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The angular distance of a celestial object below the horizon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The operation of reducing to a lower degree; -- said of equations.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Surg.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A method of operating for cataract; couching. See Couch, v. t.,",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Angle of depression (Geod.), one which a descending line makes with a horizontal plane. the dew-point is lower than the actual temperature of the atmosphere. goes toward the equator. horizon, under Dip. melancholy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Schmerz",
+        "Slough of Despond",
+        "abatement",
+        "abridgment",
+        "abstraction",
+        "abulia",
+        "aching heart",
+        "agony",
+        "agony of mind",
+        "alienation",
+        "alleviation",
+        "alveolation",
+        "alveolus",
+        "anguish",
+        "antrum",
+        "anxiety",
+        "anxiety equivalent",
+        "anxiety state",
+        "apathy",
+        "armpit",
+        "attenuation",
+        "bad times",
+        "bale",
+        "basin",
+        "bitterness",
+        "blank despondency",
+        "blaze",
+        "bleakness",
+        "bleeding heart",
+        "blues",
+        "boom",
+        "bottoming out",
+        "bowl",
+        "broken heart",
+        "business cycle",
+        "business fluctuations",
+        "bust",
+        "catatonic stupor",
+        "cavity",
+        "cheerlessness",
+        "cleft",
+        "comfortlessness",
+        "compulsion",
+        "concave",
+        "concavity",
+        "contraction",
+        "cooling off",
+        "couchancy",
+        "crater",
+        "crena",
+        "crisis",
+        "crushing",
+        "crypt",
+        "cup",
+        "cut",
+        "dampening",
+        "damping",
+        "death wish",
+        "debasement",
+        "decrease",
+        "decrement",
+        "decrescence",
+        "deduction",
+        "deepening",
+        "deflation",
+        "dejectedness",
+        "dejection",
+        "dent",
+        "depreciation",
+        "depth of misery",
+        "desolation",
+        "despair",
+        "despondency",
+        "despondentness",
+        "detachment",
+        "digging",
+        "diminishment",
+        "diminution",
+        "dimple",
+        "dip",
+        "discomfort",
+        "discouragement",
+        "disheartenment",
+        "dismalness",
+        "dispiritedness",
+        "distress",
+        "distressfulness",
+        "down trip",
+        "downcastness",
+        "downer",
+        "downheartedness",
+        "downturn",
+        "dreariness",
+        "drilling",
+        "drooping spirits",
+        "dying",
+        "dying off",
+        "economic cycle",
+        "economic expansion",
+        "economic growth",
+        "economic stagnation",
+        "elation",
+        "emotionalism",
+        "euphoria",
+        "evil day",
+        "excavation",
+        "expanding economy",
+        "expansion",
+        "extenuation",
+        "extremity",
+        "fade-out",
+        "fold",
+        "folie du doute",
+        "follicle",
+        "funnel chest",
+        "gash",
+        "gloom",
+        "gloominess",
+        "glumness",
+        "grief",
+        "grievousness",
+        "growth",
+        "hack",
+        "hard times",
+        "heartache",
+        "heartlessness",
+        "heavy heart",
+        "heavy weather",
+        "high growth rate",
+        "hole",
+        "hollow",
+        "hollow shell",
+        "hollowness",
+        "hopelessness",
+        "hypochondria",
+        "hysteria",
+        "hysterics",
+        "impression",
+        "incision",
+        "incurvation",
+        "incurvature",
+        "incurvity",
+        "indentation",
+        "indifference",
+        "infelicity",
+        "insensibility",
+        "jag",
+        "jog",
+        "joggle",
+        "joylessness",
+        "kerf",
+        "lacuna",
+        "lamentability",
+        "lamentation",
+        "languishment",
+        "lessening",
+        "lethargy",
+        "letup",
+        "low",
+        "low spirits",
+        "lowering",
+        "lowness",
+        "lowness of spirit",
+        "lying",
+        "lying down",
+        "malaise",
+        "mania",
+        "market expansion",
+        "melancholia",
+        "melancholy",
+        "mental distress",
+        "miniaturization",
+        "mining",
+        "misery",
+        "mitigation",
+        "mournfulness",
+        "nick",
+        "nock",
+        "notch",
+        "obsession",
+        "oppression",
+        "pain",
+        "painfulness",
+        "pathological indecisiveness",
+        "pathos",
+        "peak",
+        "peaking",
+        "pessimism",
+        "pit",
+        "pitiability",
+        "pitiableness",
+        "pitifulness",
+        "pocket",
+        "poignancy",
+        "preoccupation",
+        "probing",
+        "proneness",
+        "prosperity",
+        "prostration",
+        "psychalgia",
+        "psychomotor disturbance",
+        "punch bowl",
+        "rainy day",
+        "recess",
+        "recession",
+        "reclining",
+        "recovery",
+        "recumbency",
+        "reduction",
+        "regrettableness",
+        "relaxation",
+        "sad times",
+        "sadness",
+        "sagging",
+        "scaling down",
+        "scoop",
+        "score",
+        "scotch",
+        "self-destructive urge",
+        "sharpness",
+        "shell",
+        "shortness",
+        "simplicity",
+        "sink",
+        "sinkage",
+        "sinking",
+        "sinking heart",
+        "sinus",
+        "slowdown",
+        "slump",
+        "socket",
+        "sorrowfulness",
+        "spiritlessness",
+        "squatness",
+        "squattiness",
+        "stormy weather",
+        "stumpiness",
+        "stupor",
+        "subjacency",
+        "subtraction",
+        "suicidal despair",
+        "supineness",
+        "taedium vitae",
+        "the blues",
+        "tic",
+        "trough",
+        "tunneling",
+        "twitching",
+        "unhappiness",
+        "unresponsiveness",
+        "upturn",
+        "vug",
+        "weakening",
+        "weariness of life",
+        "withdrawal",
+        "woe",
+        "woebegoneness",
+        "woefulness",
+        "wretchedness"
+      ]
+    },
+    "depressomotor": {
+      "word": "DEPRESSOMOTOR",
+      "definitions": [
+        {
+          "text": "Depressing or diminishing the capacity for movement, as depressomotor nerves, which lower or inhibit muscular activity.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Any agent that depresses the activity of the motor centers, as bromides, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depressor": {
+      "word": "DEPRESSOR",
+      "definitions": [
+        {
+          "text": "One who, or that which, presses down; an oppressor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A muscle that depresses or tends to draw down a part. Depressor nerve (Physiol.), a nerve which lowers the activity of an organ; as, the depressor nerve of the heart.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depriment": {
+      "word": "DEPRIMENT",
+      "definitions": [
+        {
+          "text": "Serving to depress. [R.] \"Depriment muscles.\" Derham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprisure": {
+      "word": "DEPRISURE",
+      "definitions": [
+        {
+          "text": "Low estimation; disesteem; contempt. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprivable": {
+      "word": "DEPRIVABLE",
+      "definitions": [
+        {
+          "text": "Capable of being, or liable to be, deprived; liable to be deposed. Kings of Spain . . . deprivable for their tyrannies. Prynne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprivation": {
+      "word": "DEPRIVATION",
+      "definitions": [
+        {
+          "text": "The act of depriving, dispossessing, or bereaving; the act of deposing or divesting of some dignity.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being deprived; privation; loss; want; bereavement.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eccl. Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "the taking away from a clergyman his benefice, or other spiritual promotion or dignity. away the living, the last degrades and deposes from the order.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abnegation",
+        "abridgment",
+        "absence",
+        "awayness",
+        "banishment",
+        "bare cupboard",
+        "bare subsistence",
+        "beggarliness",
+        "beggary",
+        "bereavement",
+        "blackballing",
+        "blank",
+        "cashiering",
+        "contradiction",
+        "cost",
+        "curtailment",
+        "damage",
+        "dead loss",
+        "debit",
+        "declension",
+        "declination",
+        "declinature",
+        "declining",
+        "deconsecration",
+        "defectiveness",
+        "deficiency",
+        "deficit",
+        "defrocking",
+        "degradation",
+        "demotion",
+        "denial",
+        "denudation",
+        "depluming",
+        "deportation",
+        "deposal",
+        "deposition",
+        "deprivement",
+        "despoilment",
+        "destitution",
+        "destruction",
+        "dethronement",
+        "detriment",
+        "disagreement",
+        "disallowance",
+        "disassembly",
+        "disbarment",
+        "disbarring",
+        "disburdening",
+        "disburdenment",
+        "disclaimer",
+        "disclamation",
+        "discrownment",
+        "disenthronement",
+        "disentitlement",
+        "disfellowship",
+        "dismantlement",
+        "dismemberment",
+        "dismissal",
+        "disobedience",
+        "displacement",
+        "displuming",
+        "dispossession",
+        "dissent",
+        "divestment",
+        "drought",
+        "emptiness",
+        "empty purse",
+        "exclusion",
+        "excommunication",
+        "exile",
+        "expatriation",
+        "expense",
+        "expulsion",
+        "extradition",
+        "famine",
+        "firing",
+        "forced resignation",
+        "forfeit",
+        "forfeiture",
+        "fugitation",
+        "grinding poverty",
+        "gripe",
+        "hand-to-mouth existence",
+        "holding back",
+        "homelessness",
+        "impeachment",
+        "imperfection",
+        "impoverishment",
+        "incompleteness",
+        "indigence",
+        "injury",
+        "kicking upstairs",
+        "lack",
+        "liquidation",
+        "loser",
+        "losing",
+        "losing streak",
+        "loss",
+        "mendicancy",
+        "moneylessness",
+        "nay",
+        "necessitousness",
+        "necessity",
+        "need",
+        "neediness",
+        "negation",
+        "negative",
+        "negative answer",
+        "negativeness",
+        "negativity",
+        "neverness",
+        "nihility",
+        "nix",
+        "no",
+        "nonacceptance",
+        "nonbeing",
+        "noncompliance",
+        "nonconsent",
+        "nonentity",
+        "nonexistence",
+        "nonobservance",
+        "nonoccurrence",
+        "nonpresence",
+        "nonreality",
+        "nonsubsistence",
+        "not-being",
+        "nothingness",
+        "nowhereness",
+        "nullity",
+        "omission",
+        "ostracism",
+        "ostracization",
+        "ousting",
+        "outlawing",
+        "outlawry",
+        "overthrow",
+        "overthrowal",
+        "pauperism",
+        "pauperization",
+        "pensioning off",
+        "penury",
+        "perdition",
+        "pinch",
+        "privation",
+        "purge",
+        "recantation",
+        "refusal",
+        "rejection",
+        "relegation",
+        "relieving",
+        "removal",
+        "repudiation",
+        "retention",
+        "retirement",
+        "robbery",
+        "ruin",
+        "rustication",
+        "sacrifice",
+        "shortage",
+        "shortcoming",
+        "shortfall",
+        "spoliation",
+        "starvation",
+        "stripping",
+        "subtraction",
+        "superannuation",
+        "suspension",
+        "taking away",
+        "thumbs-down",
+        "total loss",
+        "transportation",
+        "turndown",
+        "unactuality",
+        "unchurching",
+        "undoing",
+        "unfrocking",
+        "unreality",
+        "unseating",
+        "unwillingness",
+        "vacancy",
+        "vacuity",
+        "vacuum",
+        "void",
+        "want",
+        "wantage",
+        "withholding"
+      ]
+    },
+    "deprive": {
+      "word": "DEPRIVE",
+      "definitions": [
+        {
+          "text": "To take away; to put an end; to destroy. [Obs.] 'Tis honor to deprive dishonored life. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To dispossess; to bereave; to divest; to hinder from possessing; to debar; to shut out from; -- with a remoter object, usually preceded by of. God hath deprived her of wisdom. Job xxxix. 17. It was seldom that anger deprived him of power over himself. Macaulay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To divest of office; to depose; to dispossess of dignity, especially ecclesiastical. A miniser deprived for inconformity. Bacon.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abridge",
+        "bankrupt",
+        "bare",
+        "bereave",
+        "bleed",
+        "boot",
+        "bounce",
+        "break",
+        "bump",
+        "bust",
+        "can",
+        "cashier",
+        "curtail",
+        "cut off",
+        "defrock",
+        "degrade",
+        "demote",
+        "denudate",
+        "denude",
+        "deny",
+        "deplume",
+        "depose",
+        "deprive of",
+        "disbar",
+        "discharge",
+        "disemploy",
+        "disentitle",
+        "disinherit",
+        "dismantle",
+        "dismiss",
+        "displace",
+        "displume",
+        "dispossess",
+        "disrobe",
+        "divest",
+        "dock",
+        "drain",
+        "drum out",
+        "ease one of",
+        "expel",
+        "expropriate",
+        "fire",
+        "furlough",
+        "give the ax",
+        "give the gate",
+        "kick",
+        "kick upstairs",
+        "lay off",
+        "let go",
+        "let out",
+        "lighten one of",
+        "lose",
+        "make redundant",
+        "milk",
+        "mine",
+        "mulct",
+        "oust",
+        "outfit",
+        "pension off",
+        "read out of",
+        "refuse",
+        "release",
+        "remove",
+        "replace",
+        "retire",
+        "rob",
+        "sack",
+        "separate forcibly",
+        "strip",
+        "superannuate",
+        "surplus",
+        "suspend",
+        "take away",
+        "take away from",
+        "take from",
+        "tap",
+        "turn off",
+        "turn out",
+        "unfrock",
+        "withdraw",
+        "withhold"
+      ]
+    },
+    "deprivement": {
+      "word": "DEPRIVEMENT",
+      "definitions": [
+        {
+          "text": "Deprivation. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depriver": {
+      "word": "DEPRIVER",
+      "definitions": [
+        {
+          "text": "One who, or that which, deprives.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprostrate": {
+      "word": "DEPROSTRATE",
+      "definitions": [
+        {
+          "text": "Fully prostrate; humble; low; rude. [Obs.] How may weak mortal ever hope to file His unsmooth tongue, and his deprostrate style. G. Fletcher.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deprovincialize": {
+      "word": "DEPROVINCIALIZE",
+      "definitions": [
+        {
+          "text": "To divest of provincial quality or characteristics.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depth": {
+      "word": "DEPTH",
+      "definitions": [
+        {
+          "text": "The quality of being deep; deepness; perpendicular measurement downward from the surface,or horizontal measurement backward from the front; as, the depth of a river; the depth of a body of troops.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Profoundness; extent or degree of intensity; abundance; completeness; as, depth of knowledge, or color. Mindful of that heavenly love Which knows no end in depth or height. Keble.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Lowness; as, depth of sound.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is deep; a deep, or the deepest, part or place; the deep; the middle part; as, the depth of night, or of winter. From you unclouded depth above. Keble. The depth closed me round about. Jonah ii. 5.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Logic)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The number of simple elements which an abstract conception or notion includes; the comprehension or content.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Horology)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pair of toothed wheels which work together. [R.] Depth of a sail (Naut.), the extent of a square sail from the head rope to the foot rope; the length of the after leach of a staysail or boom sail; -- commonly called the drop of sail.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "French pitch",
+        "Sophia",
+        "abstruseness",
+        "abysm",
+        "abyss",
+        "acumen",
+        "amplitude",
+        "area",
+        "astuteness",
+        "bigness",
+        "bodily size",
+        "body",
+        "bottomless pit",
+        "brain",
+        "breadth",
+        "brightness",
+        "brilliance",
+        "brilliancy",
+        "broad-mindedness",
+        "bulk",
+        "caliber",
+        "cavity",
+        "chasm",
+        "classical pitch",
+        "coarseness",
+        "complexity",
+        "comprehensively",
+        "corpulence",
+        "coverage",
+        "crater",
+        "crevasse",
+        "deep",
+        "deeply",
+        "deepness",
+        "deeps",
+        "depths",
+        "diameter",
+        "dimension",
+        "dimensions",
+        "distance through",
+        "draft",
+        "drop",
+        "erudition",
+        "expanse",
+        "expansion",
+        "extension",
+        "extensively",
+        "extent",
+        "fatness",
+        "gauge",
+        "girth",
+        "good understanding",
+        "greatness",
+        "grossness",
+        "gulf",
+        "height",
+        "high pitch",
+        "hole",
+        "hollow",
+        "in detail",
+        "innerness",
+        "inness",
+        "insight",
+        "intellect",
+        "intelligence",
+        "intensity",
+        "intensively",
+        "interiority",
+        "internality",
+        "internalization",
+        "intricacy",
+        "intrinsicality",
+        "introversion",
+        "intuition",
+        "inwardness",
+        "keenness",
+        "key",
+        "largeness",
+        "length",
+        "low pitch",
+        "lowness",
+        "magnitude",
+        "mass",
+        "measure",
+        "measurement",
+        "mellow wisdom",
+        "nadir",
+        "new philharmonic pitch",
+        "note",
+        "obscurity",
+        "penetration",
+        "perception",
+        "perspicaciousness",
+        "perspicacity",
+        "philharmonic pitch",
+        "philosophical pitch",
+        "pit",
+        "pitch",
+        "profoundly",
+        "profoundness",
+        "profundity",
+        "proportion",
+        "proportions",
+        "radius",
+        "range",
+        "reach",
+        "reconditeness",
+        "register",
+        "richness",
+        "ripe wisdom",
+        "sagacity",
+        "sageness",
+        "sapience",
+        "scale",
+        "scope",
+        "seasoned understanding",
+        "sense",
+        "shaft",
+        "sharpness",
+        "size",
+        "sound understanding",
+        "sounding",
+        "spread",
+        "standard pitch",
+        "strength",
+        "the third dimension",
+        "thickness",
+        "thoroughly",
+        "tonality",
+        "tone",
+        "tune",
+        "understanding",
+        "vividness",
+        "volume",
+        "well",
+        "width",
+        "wisdom",
+        "wiseness",
+        "yawning abyss"
+      ]
+    },
+    "depthen": {
+      "word": "DEPTHEN",
+      "definitions": [
+        {
+          "text": "To deepen. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depthless": {
+      "word": "DEPTHLESS",
+      "definitions": [
+        {
+          "text": "Having no depth; shallow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of measureless depth; unfathomable. In clouds of depthless night. Francis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ankle-deep",
+        "cursory",
+        "epidermal",
+        "few",
+        "footling",
+        "inconsequential",
+        "inconsiderable",
+        "insignificant",
+        "jejune",
+        "knee-deep",
+        "light",
+        "little",
+        "low",
+        "meager",
+        "miniature",
+        "negligible",
+        "no great shakes",
+        "not deep",
+        "on the surface",
+        "petty",
+        "picayune",
+        "picayunish",
+        "shallow",
+        "shallow-rooted",
+        "shoal",
+        "short",
+        "sketchy",
+        "skin-deep",
+        "slight",
+        "small",
+        "superficial",
+        "surface",
+        "thin",
+        "tiny",
+        "trifling",
+        "trivial",
+        "uncritical",
+        "unprofound"
+      ]
+    },
+    "depucelate": {
+      "word": "DEPUCELATE",
+      "definitions": [
+        {
+          "text": "To deflour; to deprive of virginity. [Obs.] Bailey.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depudicate": {
+      "word": "DEPUDICATE",
+      "definitions": [
+        {
+          "text": "To deflour; to dishonor. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depulse": {
+      "word": "DEPULSE",
+      "definitions": [
+        {
+          "text": "To drive away. [Obs.] Cockeram.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depulsion": {
+      "word": "DEPULSION",
+      "definitions": [
+        {
+          "text": "A driving or thrusting away. [R.] Speed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depulsory": {
+      "word": "DEPULSORY",
+      "definitions": [
+        {
+          "text": "Driving or thrusting away; averting. [R.] Holland.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depurant": {
+      "word": "DEPURANT",
+      "definitions": [
+        {
+          "text": "Depurative.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depurate": {
+      "word": "DEPURATE",
+      "definitions": [
+        {
+          "text": "Depurated; cleansed; freed from impurities. Boyle.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To free from impurities, heterogeneous matter, or feculence; to purify; to cleanse. To depurate the mass of blood. Boyle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depuration": {
+      "word": "DEPURATION",
+      "definitions": [
+        {
+          "text": "The act or process of depurating or freeing from foreign or impure matter, as a liquid or wound.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depurative": {
+      "word": "DEPURATIVE",
+      "definitions": [
+        {
+          "text": "Purifying the blood or the humors; depuratory.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A depurative remedy or agent; or a disease which is believed to be depurative.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depurator": {
+      "word": "DEPURATOR",
+      "definitions": [
+        {
+          "text": "One who, or that which, cleanses.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depuratory": {
+      "word": "DEPURATORY",
+      "definitions": [
+        {
+          "text": "Depurating; tending to depurate or cleanse; depurative.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depure": {
+      "word": "DEPURE",
+      "definitions": [
+        {
+          "text": "To depurate; to purify. [Obs.] He shall first be depured and cleansed before that he shall be laid up for pure gold in the treasures of God. Sir T. More.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depurgatory": {
+      "word": "DEPURGATORY",
+      "definitions": [
+        {
+          "text": "Serving to purge; tending to cleanse or purify. [Obs.] Cotgrave.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depurition": {
+      "word": "DEPURITION",
+      "definitions": [
+        {
+          "text": "See Depuration.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deputable": {
+      "word": "DEPUTABLE",
+      "definitions": [
+        {
+          "text": "Fit to be deputed; suitable to act as a deputy. Carlyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deputation": {
+      "word": "DEPUTATION",
+      "definitions": [
+        {
+          "text": "The act of deputing, or of appointing or commissioning a deputy or representative; office of a deputy or delegate; vicegerency. The authority of conscience stands founded upon its vicegerency and deputation under God. South.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The person or persons deputed or commissioned by another person, party, or public body to act in his or its behalf; delegation; as, the general sent a deputation to the enemy to propose a truce. By deputation, or In deputation, by delegated authority; as substitute; through the medium of a deputy. [Obs.] Say to great Cæsar this: In deputation I kiss his conquering hand. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accession",
+        "agency",
+        "agentship",
+        "anointing",
+        "anointment",
+        "appointment",
+        "arrogation",
+        "assignment",
+        "assumption",
+        "authority",
+        "authorization",
+        "brevet",
+        "care",
+        "change",
+        "charge",
+        "commission",
+        "commissioning",
+        "commitment",
+        "committee",
+        "commutation",
+        "consecration",
+        "consignment",
+        "coronation",
+        "cure",
+        "delegated authority",
+        "delegation",
+        "deputyship",
+        "devolution",
+        "devolvement",
+        "displacement",
+        "election",
+        "embassy",
+        "empowerment",
+        "entrusting",
+        "entrustment",
+        "errand",
+        "exchange",
+        "executorship",
+        "exequatur",
+        "factorship",
+        "full power",
+        "jurisdiction",
+        "legation",
+        "legitimate succession",
+        "license",
+        "lieutenancy",
+        "mandate",
+        "mission",
+        "office",
+        "plenipotentiary power",
+        "power of attorney",
+        "power to act",
+        "procuration",
+        "proxy",
+        "purview",
+        "quid pro quo",
+        "regency",
+        "regentship",
+        "replacement",
+        "representation",
+        "responsibility",
+        "seizure",
+        "subcommittee",
+        "subrogation",
+        "substitution",
+        "succession",
+        "supersedence",
+        "superseding",
+        "supersedure",
+        "supersession",
+        "supplantation",
+        "supplanting",
+        "supplantment",
+        "switch",
+        "taking over",
+        "task",
+        "tit for tat",
+        "trust",
+        "trusteeship",
+        "usurpation",
+        "vicarious authority",
+        "vicariousness",
+        "warrant"
+      ]
+    },
+    "deputator": {
+      "word": "DEPUTATOR",
+      "definitions": [
+        {
+          "text": "One who deputes, or makes a deputation. [R.] Locke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "depute": {
+      "word": "DEPUTE",
+      "definitions": [
+        {
+          "text": "To appoint as deputy or agent; to commission to act in one's place; to delegate. There is no man deputed of the king to hear thee. 2. Sam. xv. 3. Some persons, deputed by a meeting. Macaulay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To appoint; to assign; to choose. [R.] The most conspicuous places in cities are usually deputed for the erection of statues. Barrow.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A person deputed; a deputy. [Scot.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "deputize": {
+      "word": "DEPUTIZE",
+      "definitions": [
+        {
+          "text": "To appoint as one's deputy; to empower to act in one's stead; to depute.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accredit",
+        "act for",
+        "answer for",
+        "appear for",
+        "arm",
+        "assign",
+        "authorize",
+        "back up",
+        "charge",
+        "charter",
+        "clothe",
+        "clothe with power",
+        "commission",
+        "commit",
+        "consign",
+        "delegate",
+        "depute",
+        "designate an agent",
+        "detach",
+        "detail",
+        "devolute",
+        "devolve",
+        "devolve upon",
+        "empower",
+        "enable",
+        "endow",
+        "endue",
+        "entrust",
+        "front for",
+        "give in charge",
+        "invest",
+        "license",
+        "mission",
+        "pinch-hit for",
+        "post",
+        "represent",
+        "send out",
+        "speak for",
+        "stand in for",
+        "substitute for",
+        "transfer",
+        "understudy",
+        "warrant"
+      ]
+    },
+    "deputy": {
+      "word": "DEPUTY",
+      "definitions": [
+        {
+          "text": "One appointed as the substitue of another, and empowered to act for him, in his name or his behalf; a substitute in office; a lieutenant; a representative; a delegate; a vicegerent; as, the deputy of a prince, of a sheriff, of a township, etc. There was then [in the days of Jehoshaphat] no king in Edom; a deputy was king. 1 Kings xxii. 47. God's substitute, His deputy anointed in His sight. Shak. executive officers, to denote an assistant empowered to act in their name; as, deputy collector, deputy marshal, deputy sheriff.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of the Chamber of Deputies. [France] Chamber of Deputies, one of the two branches of the French legilative assembly; -- formerly called Corps Législatif. Its members, called deputies, are elected by the people voting in districts. factor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "G-man",
+        "MP",
+        "acolyte",
+        "adjutant",
+        "administrator",
+        "advocate",
+        "agent",
+        "aid",
+        "aide",
+        "aide-de-camp",
+        "aider",
+        "alternate",
+        "alternative",
+        "ambassador",
+        "amicus curiae",
+        "analogy",
+        "appointee",
+        "assignee",
+        "assistant",
+        "attendant",
+        "attorney",
+        "attorney-at-law",
+        "auxiliary",
+        "backup",
+        "bailiff",
+        "barrister",
+        "barrister-at-law",
+        "beadle",
+        "beagle",
+        "best man",
+        "bound bailiff",
+        "candidate",
+        "captain",
+        "catchpole",
+        "change",
+        "changeling",
+        "chief of police",
+        "coadjutant",
+        "coadjutor",
+        "coadjutress",
+        "coadjutrix",
+        "commissioner",
+        "comparison",
+        "conductor",
+        "connection",
+        "constable",
+        "copy",
+        "counsel",
+        "counselor",
+        "counselor-at-law",
+        "counterfeit",
+        "delegate",
+        "deputy sheriff",
+        "detective",
+        "directeur",
+        "director",
+        "double",
+        "dummy",
+        "emissary",
+        "envoy",
+        "equal",
+        "equivalent",
+        "ersatz",
+        "exchange",
+        "executive officer",
+        "factor",
+        "fake",
+        "fed",
+        "federal",
+        "fill-in",
+        "flic",
+        "friend at court",
+        "front",
+        "front man",
+        "gendarme",
+        "ghost",
+        "ghostwriter",
+        "go-between",
+        "government man",
+        "governor",
+        "help",
+        "helper",
+        "helpmate",
+        "helpmeet",
+        "imitation",
+        "impresario",
+        "inspector",
+        "intendant",
+        "interagent",
+        "interceder",
+        "intercessor",
+        "intermediary",
+        "intermediate",
+        "intermediate agent",
+        "intermediator",
+        "intermedium",
+        "internuncio",
+        "intervener",
+        "interventionist",
+        "interventor",
+        "lawyer",
+        "legal adviser",
+        "legal counselor",
+        "legal expert",
+        "legal practitioner",
+        "legalist",
+        "legate",
+        "licensee",
+        "lictor",
+        "lieutenant",
+        "locum tenens",
+        "mace-bearer",
+        "makeshift",
+        "manager",
+        "marshal",
+        "mediator",
+        "medium",
+        "metaphor",
+        "metonymy",
+        "middleman",
+        "minister",
+        "mounted policeman",
+        "mouthpiece",
+        "narc",
+        "negotiant",
+        "negotiator",
+        "negotiatress",
+        "negotiatrix",
+        "next best thing",
+        "nominee",
+        "officer",
+        "ombudsman",
+        "operative",
+        "paranymph",
+        "paraprofessional",
+        "patrolman",
+        "peace officer",
+        "personnel",
+        "phony",
+        "pinch hitter",
+        "pleader",
+        "police captain",
+        "police commissioner",
+        "police constable",
+        "police inspector",
+        "police matron",
+        "police officer",
+        "police sergeant",
+        "policeman",
+        "policewoman",
+        "portreeve",
+        "proctor",
+        "procurator",
+        "producer",
+        "proxy",
+        "rector",
+        "reeve",
+        "relief",
+        "replacement",
+        "representative",
+        "reserve",
+        "reserves",
+        "responsible person",
+        "ringer",
+        "roundsman",
+        "sea lawyer",
+        "second",
+        "second string",
+        "secondary",
+        "selectee",
+        "self-styled lawyer",
+        "sergeant",
+        "sergeant at arms",
+        "servant",
+        "sheriff",
+        "sideman",
+        "sign",
+        "solicitor",
+        "spares",
+        "spokesman",
+        "spokesperson",
+        "spokeswoman",
+        "stand-in",
+        "sub",
+        "substituent",
+        "substitute",
+        "substitution",
+        "succedaneum",
+        "supercargo",
+        "superintendent",
+        "superseder",
+        "supplanter",
+        "supporting actor",
+        "supporting instrumentalist",
+        "surrogate",
+        "symbol",
+        "synecdoche",
+        "third string",
+        "tipstaff",
+        "tipstaves",
+        "token",
+        "trooper",
+        "understudy",
+        "utility player",
+        "vicar",
+        "vice-president",
+        "vice-regent"
+      ]
+    }
+  }
+}

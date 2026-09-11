@@ -1,0 +1,1903 @@
+{
+  "version": "v1",
+  "entries": {
+    "hem": {
+      "word": "HEM",
+      "definitions": [
+        {
+          "text": "Them [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
+        },
+        {
+          "text": "An onomatopoetic word used as an expression of hesitation, doubt, etc. It is often a sort of voluntary half cough, loud or subdued, and would perhaps be better expressed by hm. Cough or cry hem, if anybody come. Shak.",
+          "partOfSpeech": "interjection"
+        },
+        {
+          "text": "An utterance or sound of the voice, hem or hm, often indicative of hesitation or doubt, sometimes used to call attention. \"His morning hems.\" Spectator.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make the sound expressed by the word hem; hence, to hesitate in speaking. \"Hem, and stroke thy beard.\" Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The edge or border of a garment or cloth, doubled over and sewed, to strengthen raveling.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Border; edge; margin. \"Hem of the sea.\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A border made on sheet-metal ware by doubling over the edge of the sheet, to stiffen it and remove the sharp edge.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To form a hem or border to; to fold and sew down the edge of. Wordsworth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To border; to edge All the skirt about Was hemmed with golden fringe. Spenser. To hem about, around, or in, to inclose and confine; to surround; to environ. \"With valiant squadrons round about to hem.\" Fairfax. \"Hemmed in to be a spoil to tyranny.\" Daniel. Webster.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "adjoin",
+        "bank",
+        "bar",
+        "beading",
+        "befringe",
+        "begird",
+        "beset",
+        "bind",
+        "binding",
+        "board",
+        "border",
+        "bordering",
+        "bordure",
+        "bound",
+        "box",
+        "box in",
+        "box up",
+        "brim",
+        "brink",
+        "brow",
+        "bulkhead in",
+        "cage",
+        "circle",
+        "circumscribe",
+        "close in",
+        "coast",
+        "confine",
+        "corral",
+        "cramp",
+        "define",
+        "edge",
+        "edging",
+        "encircle",
+        "encompass",
+        "enframe",
+        "envelop",
+        "falter",
+        "featheredge",
+        "fence",
+        "fimbria",
+        "fimbriation",
+        "flange",
+        "flounce",
+        "frame",
+        "frill",
+        "frilling",
+        "fringe",
+        "furbelow",
+        "galloon",
+        "gird",
+        "girdle",
+        "halt",
+        "haw",
+        "hedge",
+        "hem and haw",
+        "hem in",
+        "hesitate",
+        "hum",
+        "hum and haw",
+        "immure",
+        "keep from spreading",
+        "keep within bounds",
+        "labellum",
+        "labium",
+        "labrum",
+        "lap",
+        "ledge",
+        "limb",
+        "limbus",
+        "limit",
+        "line",
+        "lip",
+        "list",
+        "localize",
+        "mammer",
+        "march",
+        "marge",
+        "margin",
+        "marginate",
+        "motif",
+        "narrow",
+        "pale",
+        "palisade",
+        "pen",
+        "perimeter",
+        "periphery",
+        "picket",
+        "purfle",
+        "purl",
+        "qualify",
+        "ragged edge",
+        "rail",
+        "restrict",
+        "rim",
+        "ring",
+        "round",
+        "ruffle",
+        "selvage",
+        "set off",
+        "shore",
+        "shut",
+        "side",
+        "sideline",
+        "skirt",
+        "skirting",
+        "stammer",
+        "stint",
+        "stumble",
+        "stutter",
+        "surround",
+        "tighten",
+        "trim",
+        "trimming",
+        "valance",
+        "verge",
+        "wall",
+        "welt"
+      ]
+    },
+    "hema": {
+      "word": "HEMA-",
+      "definitions": [
+        {
+          "text": "Same as Hæma-.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemachate": {
+      "word": "HEMACHATE",
+      "definitions": [
+        {
+          "text": "A species of agate, sprinkled with spots of red jasper.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemachrome": {
+      "word": "HEMACHROME",
+      "definitions": [
+        {
+          "text": "Same as Hæmachrome.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemacite": {
+      "word": "HEMACITE",
+      "definitions": [
+        {
+          "text": "A composition made from blood, mixed with mineral or vegetable substances, used for making buttons, door knobs, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemadrometerhemadromometer": {
+      "word": "HEMADROMETER; HEMADROMOMETER",
+      "definitions": [
+        {
+          "text": "An instrument for measuring the velocity with which the blood moves in the arteries.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemadrometryhemadromometry": {
+      "word": "HEMADROMETRY; HEMADROMOMETRY",
+      "definitions": [
+        {
+          "text": "The act of measuring the velocity with which the blood circulates in the arteries; hæmotachometry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemadynamics": {
+      "word": "HEMADYNAMICS",
+      "definitions": [
+        {
+          "text": "The principles of dynamics in their application to the blood; that part of science which treats of the motion of the blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemadynamometer": {
+      "word": "HEMADYNAMOMETER",
+      "definitions": [
+        {
+          "text": "An instrument by which the pressure of the blood in the arteries, or veins, is measured by the height to which it will raise a column of mercury; -- called also a hæmomanometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemal": {
+      "word": "HEMAL",
+      "definitions": [
+        {
+          "text": "Relating to the blood or blood vessels; pertaining to, situated in the region of, or on the side with, the heart and great blood vessels; -- opposed to neural. heart and great blood vessels being on the ventral, and the central nervous system on the dorsal, side of the vertebral column. Hemal arch (Anat.), the ventral arch in a segment of the spinal skeleton, formed by vertebral processes or ribs.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemaphaein": {
+      "word": "HEMAPHAEIN",
+      "definitions": [
+        {
+          "text": "Same as Hæmaphæin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemapophysis": {
+      "word": "HEMAPOPHYSIS",
+      "definitions": [
+        {
+          "text": "The second element in each half of a hemal arch, corresponding",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemastatichemastatical": {
+      "word": "HEMASTATIC; HEMASTATICAL",
+      "definitions": [
+        {
+          "text": "Same as Hemostatic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemastatics": {
+      "word": "HEMASTATICS",
+      "definitions": [
+        {
+          "text": "Laws relating to the equilibrium of the blood in the blood vessels.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematachometer": {
+      "word": "HEMATACHOMETER",
+      "definitions": [
+        {
+          "text": "Same as Hæmatachometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematein": {
+      "word": "HEMATEIN",
+      "definitions": [
+        {
+          "text": "A reddish brown or violet crystalline substance, C16H12O6, got from hematoxylin by partial oxidation, and regarded as analogous to the phthaleins.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematemesis": {
+      "word": "HEMATEMESIS",
+      "definitions": [
+        {
+          "text": "A vomiting of blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematherm": {
+      "word": "HEMATHERM",
+      "definitions": [
+        {
+          "text": "A warm-blooded animal. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemathermal": {
+      "word": "HEMATHERMAL",
+      "definitions": [
+        {
+          "text": "Warm-blooded; hematothermal. [R]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematic": {
+      "word": "HEMATIC",
+      "definitions": [
+        {
+          "text": "Same as Hæmatic.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A medicine designed to improve the condition of the blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematin": {
+      "word": "HEMATIN",
+      "definitions": [
+        {
+          "text": "Hematoxylin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Physiol. Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bluish black, amorphous substance containing iron and obtained from blood. It exists the red blood corpuscles united with globulin, and the form of hemoglobin or oxyhemoglobin gives to the blood its red color.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematinic": {
+      "word": "HEMATINIC",
+      "definitions": [
+        {
+          "text": "Any substance, such as an iron salt or organic compound containing iron, which when ingested tends to increase the hemoglobin contents of the blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematinometer": {
+      "word": "HEMATINOMETER",
+      "definitions": [
+        {
+          "text": "A form of hemoglobinometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematinometric": {
+      "word": "HEMATINOMETRIC",
+      "definitions": [
+        {
+          "text": "Relating to the measurement of the amount of hematin or hemoglobin contained in blood, or other fluids.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematinon": {
+      "word": "HEMATINON",
+      "definitions": [
+        {
+          "text": "A red consisting of silica, borax, and soda, fused with oxide of copper and iron, and used in enamels, mosaics, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematite": {
+      "word": "HEMATITE",
+      "definitions": [
+        {
+          "text": "An important ore of iron, the sesquioxide, so called because of the red color of the powder. It occurs in splendent rhombohedral crystals, and in massive and earthy forms; -- the last called red ocher. Called also specular iron, oligist iron, rhombohedral iron ore, and bloodstone. See Brown hematite, under Brown.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematitic": {
+      "word": "HEMATITIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to hematite, or resembling it.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemato": {
+      "word": "HEMATO",
+      "definitions": [
+        {
+          "text": "See Hæma-.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematocele": {
+      "word": "HEMATOCELE",
+      "definitions": [
+        {
+          "text": "A tumor filled with blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematocrya": {
+      "word": "HEMATOCRYA",
+      "definitions": [
+        {
+          "text": "The cold-blooded vertebrates, that is, all but the mammals and birds; -- the antithesis to Hematotherma.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematocrystallin": {
+      "word": "HEMATOCRYSTALLIN",
+      "definitions": [
+        {
+          "text": "See Hemoglobin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematoid": {
+      "word": "HEMATOID",
+      "definitions": [
+        {
+          "text": "Resembling blood.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematoidin": {
+      "word": "HEMATOIDIN",
+      "definitions": [
+        {
+          "text": "A crystalline or amorphous pigment, free from iron, formed from hematin in old blood stains, and in old hemorrhages in the body. It resembles bilirubin. When present in the corpora lutea it is called hæmolutein.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematology": {
+      "word": "HEMATOLOGY",
+      "definitions": [
+        {
+          "text": "The science which treats of the blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematoma": {
+      "word": "HEMATOMA",
+      "definitions": [
+        {
+          "text": "A circumscribed swelling produced by an effusion of blood beneath the skin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematophilia": {
+      "word": "HEMATOPHILIA",
+      "definitions": [
+        {
+          "text": "A condition characterized by a tendency to profuse and uncontrollable hemorrhage from the slightest wounds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematosin": {
+      "word": "HEMATOSIN",
+      "definitions": [
+        {
+          "text": "The hematin of blood. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematotherma": {
+      "word": "HEMATOTHERMA",
+      "definitions": [
+        {
+          "text": "The warm-blooded vertebrates, comprising the mammals and birds;",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematothermal": {
+      "word": "HEMATOTHERMAL",
+      "definitions": [
+        {
+          "text": "Warm-blooded.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematoxylin": {
+      "word": "HEMATOXYLIN",
+      "definitions": [
+        {
+          "text": "Hæmatoxylin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hematuria": {
+      "word": "HEMATURIA",
+      "definitions": [
+        {
+          "text": "Passage of urine mingled with blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemautography": {
+      "word": "HEMAUTOGRAPHY",
+      "definitions": [
+        {
+          "text": "The obtaining of a curve similar to a pulse curve or sphygmogram by allowing the blood from a divided artery to strike against a piece of paper.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemelytronhemelytrum": {
+      "word": "HEMELYTRON; HEMELYTRUM",
+      "definitions": [
+        {
+          "text": "One of the partially thickened anterior wings of certain insects, as of many Hemiptera, the earwigs, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemeralopia": {
+      "word": "HEMERALOPIA",
+      "definitions": [
+        {
+          "text": "A disease of the eyes, in consequence of which a person can see clearly or without pain only by daylight or a strong artificial light; day sight. e., day blindness. See Nyctalopia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemerobian": {
+      "word": "HEMEROBIAN",
+      "definitions": [
+        {
+          "text": "A neuropterous insect of the genus Hemerobius, and allied genera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemerobid": {
+      "word": "HEMEROBID",
+      "definitions": [
+        {
+          "text": "Of relating to the hemerobians.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemerocallis": {
+      "word": "HEMEROCALLIS",
+      "definitions": [
+        {
+          "text": "A genus of plants, some species of which are cultivated for their beautiful flowers; day lily.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemi": {
+      "word": "HEMI-",
+      "definitions": [
+        {
+          "text": "A prefix signifying half.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemialbumin": {
+      "word": "HEMIALBUMIN",
+      "definitions": [
+        {
+          "text": "Same as Hemialbumose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemialbumose": {
+      "word": "HEMIALBUMOSE",
+      "definitions": [
+        {
+          "text": "An albuminous substance formed in gastric digestion, and by the action of boiling dilute acids on albumin. It is readily convertible into hemipeptone. Called also hemialbumin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemianaesthesia": {
+      "word": "HEMIANAESTHESIA",
+      "definitions": [
+        {
+          "text": "Anæsthesia upon one side of the body.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemibranchi": {
+      "word": "HEMIBRANCHI",
+      "definitions": [
+        {
+          "text": "An order of fishes having an incomplete or reduced branchial apparatus. It includes the sticklebacks, the flutemouths, and Fistularia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemicardia": {
+      "word": "HEMICARDIA",
+      "definitions": [
+        {
+          "text": "A lateral half of the heart, either the right or left. B. G. Wilder.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemicarp": {
+      "word": "HEMICARP",
+      "definitions": [
+        {
+          "text": "One portion of a fruit that spontaneously divides into halves.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemicerebrum": {
+      "word": "HEMICEREBRUM",
+      "definitions": [
+        {
+          "text": "A lateral half of the cerebrum. Wilder.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemicollin": {
+      "word": "HEMICOLLIN",
+      "definitions": [
+        {
+          "text": "See Semiglutin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemicrania": {
+      "word": "HEMICRANIA",
+      "definitions": [
+        {
+          "text": "A pain that affects only one side of the head.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemicrany": {
+      "word": "HEMICRANY",
+      "definitions": [
+        {
+          "text": "Hemicranis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemicycle": {
+      "word": "HEMICYCLE",
+      "definitions": [
+        {
+          "text": "A half circle; a semicircle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A semicircular place, as a semicircular arena, or room, or part of a room. The collections will be displayed in the hemicycle of the central pavilion. London Academy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemidactyl": {
+      "word": "HEMIDACTYL",
+      "definitions": [
+        {
+          "text": "Any species of Old World geckoes of the genus Hemidactylus. The hemidactyls have dilated toes, with two rows of plates beneath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemidemisemiquaver": {
+      "word": "HEMI-DEMI-SEMIQUAVER",
+      "definitions": [
+        {
+          "text": "A short note, equal to one fourth of a semiquaver, or the sixty-fourth part of a whole note.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiditone": {
+      "word": "HEMIDITONE",
+      "definitions": [
+        {
+          "text": "The lesser third. Busby.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemigamous": {
+      "word": "HEMIGAMOUS",
+      "definitions": [
+        {
+          "text": "Having one of the two florets in the same spikelet neuter, and the other unisexual, whether male or female; -- said of grasses.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiglyph": {
+      "word": "HEMIGLYPH",
+      "definitions": [
+        {
+          "text": "The half channel or groove in the edge of the triglyph in the Doric order.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemihedral": {
+      "word": "HEMIHEDRAL",
+      "definitions": [
+        {
+          "text": "Having half of the similar parts of a crystals, instead of all; consisting of half the planes which full symmetry would require, as when a cube has planes only on half of its eight solid angles, or one plane out of a pair on each of its edges; or as in the case of a tetrahedron, which is hemihedral to an octahedron, it being contained",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemihedrism": {
+      "word": "HEMIHEDRISM",
+      "definitions": [
+        {
+          "text": "The property of crystallizing hemihedrally.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemihedron": {
+      "word": "HEMIHEDRON",
+      "definitions": [
+        {
+          "text": "A solid hemihedrally derived. The tetrahedron is a hemihedron.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiholohedral": {
+      "word": "HEMIHOLOHEDRAL",
+      "definitions": [
+        {
+          "text": "Presenting hemihedral forms, in which half the sectants have the full number of planes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemimellitic": {
+      "word": "HEMIMELLITIC",
+      "definitions": [
+        {
+          "text": "Having half as many (three) carboxyl radicals as mellitic acid;",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemimetabola": {
+      "word": "HEMIMETABOLA",
+      "definitions": [
+        {
+          "text": "Those insects which have an incomplete metamorphosis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemimetabolic": {
+      "word": "HEMIMETABOLIC",
+      "definitions": [
+        {
+          "text": "Having an incomplete metamorphosis, the larvæ differing from the adults chiefly in laking wings, as in the grasshoppers and cockroaches.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemimorphic": {
+      "word": "HEMIMORPHIC",
+      "definitions": [
+        {
+          "text": "Having the two ends modified with unlike planes; -- said of a crystal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemin": {
+      "word": "HEMIN",
+      "definitions": [
+        {
+          "text": "A substance, in the form of reddish brown, microscopic, prismatic crystals, formed from dried blood by the action of strong acetic acid and common salt; -- called also Teichmann's crystals. Chemically, it is a hydrochloride of hematin. suspected blood stains, constitutes one of the best evidences of the presence of blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "beleaguer",
+        "beset",
+        "besiege",
+        "blockade",
+        "bottle up",
+        "bound",
+        "box",
+        "box in",
+        "box up",
+        "cage",
+        "chamber",
+        "check",
+        "circumscribe",
+        "cloister",
+        "close in",
+        "compass",
+        "confine",
+        "constrain",
+        "contain",
+        "coop",
+        "coop in",
+        "coop up",
+        "cordon",
+        "cordon off",
+        "cork up",
+        "corral",
+        "cramp",
+        "crib",
+        "detain",
+        "encage",
+        "encircle",
+        "enclose",
+        "encompass",
+        "enshrine",
+        "fence in",
+        "hedge in",
+        "hem",
+        "hold",
+        "hold in custody",
+        "hold in restraint",
+        "house in",
+        "immure",
+        "impound",
+        "imprison",
+        "incarcerate",
+        "include",
+        "inhibit",
+        "jail",
+        "keep from spreading",
+        "keep in",
+        "keep in custody",
+        "keep in detention",
+        "keep within bounds",
+        "kennel",
+        "leaguer",
+        "limit",
+        "localize",
+        "mew",
+        "mew up",
+        "narrow",
+        "pen",
+        "pen in",
+        "pen up",
+        "pocket",
+        "pound",
+        "qualify",
+        "quarantine",
+        "rail in",
+        "restrain",
+        "restrict",
+        "seal up",
+        "shackle",
+        "shrine",
+        "shut in",
+        "shut up",
+        "stable",
+        "stint",
+        "surround",
+        "tighten",
+        "wall in",
+        "wrap",
+        "yard",
+        "yard up"
+      ]
+    },
+    "hemina": {
+      "word": "HEMINA",
+      "definitions": [
+        {
+          "text": "(Rom. Antiq.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A measure of half a sextary. Arbuthnot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A measure equal to about ten fluid ounces.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemionus": {
+      "word": "HEMIONUS",
+      "definitions": [
+        {
+          "text": "A wild ass found in Thibet; the kiang. Darwin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiopiahemiopsia": {
+      "word": "HEMIOPIA; HEMIOPSIA",
+      "definitions": [
+        {
+          "text": "A defect of vision in consequence of which a person sees but half of an object looked at.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiorthotype": {
+      "word": "HEMIORTHOTYPE",
+      "definitions": [
+        {
+          "text": "Same as Monoclinic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemipeptone": {
+      "word": "HEMIPEPTONE",
+      "definitions": [
+        {
+          "text": "A product of the gastric and pancreatic digestion of albuminous matter. by the continued action of pancreatic juice. See Peptone. It is also formed from hemialbumose and albumin by the action of boiling dilute sulphuric acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiplegy": {
+      "word": "HEMIPLEGY",
+      "definitions": [
+        {
+          "text": "Hemiplegia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemipode": {
+      "word": "HEMIPODE",
+      "definitions": [
+        {
+          "text": "Any bird of the genus Turnix. Various species inhabit Asia, Africa, and Australia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiprotein": {
+      "word": "HEMIPROTEIN",
+      "definitions": [
+        {
+          "text": "An insoluble, proteid substance, described by Schützenberger, formed when albumin is heated for some time with dilute sulphuric acid. It is apparently identical with antialbumid and dyspeptone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemipter": {
+      "word": "HEMIPTER",
+      "definitions": [
+        {
+          "text": "One of the Hemiptera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiptera": {
+      "word": "HEMIPTERA",
+      "definitions": [
+        {
+          "text": "An order of hexapod insects having a jointed proboscis, including four sharp stylets (mandibles and maxillæ), for piercing. In many of the species (Heteroptera) the front wings are partially coriaceous, and different from the others. bug, soldier bug, bedbug, etc.; the Homoptera, including the cicadas, cuckoo spits, plant lice, scale insects, etc.; the Thysanoptera, including the thrips, and, according to most recent writers, the Pediculina or true lice.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemipteralhemipterous": {
+      "word": "HEMIPTERAL; HEMIPTEROUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Hemiptera.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemipteran": {
+      "word": "HEMIPTERAN",
+      "definitions": [
+        {
+          "text": "One of the Hemiptera; an hemipter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemisect": {
+      "word": "HEMISECT",
+      "definitions": [
+        {
+          "text": "To divide along the mesial plane.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemisection": {
+      "word": "HEMISECTION",
+      "definitions": [
+        {
+          "text": "A division along the mesial plane; also, one of the parts so divided.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemisphere": {
+      "word": "HEMISPHERE",
+      "definitions": [
+        {
+          "text": "A half sphere; one half of a sphere or globe, when divided by a plane passing through its center.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Half of the terrestrial globe, or a projection of the same in a map or picture.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The people who inhabit a hemisphere. He died . . . mourned by a hemisphere. J. P. Peters. ten Cerebral hemispheres. (Anat.) See Brain. when placed together, a cavity from which the air can be withdrawn by an air pump; -- used to illustrate the pressure of the air. So called because invented by Otto von Guericke at Magdeburg.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ambit",
+        "arena",
+        "bailiwick",
+        "beat",
+        "border",
+        "borderland",
+        "circle",
+        "circuit",
+        "demesne",
+        "department",
+        "domain",
+        "dominion",
+        "field",
+        "fifty percent",
+        "fifty-fifty",
+        "half",
+        "half-and-half",
+        "judicial circuit",
+        "jurisdiction",
+        "march",
+        "mediety",
+        "moiety",
+        "orb",
+        "orbit",
+        "pale",
+        "precinct",
+        "province",
+        "realm",
+        "round",
+        "semicircle",
+        "semisphere",
+        "sphere",
+        "walk"
+      ]
+    },
+    "hemispherichemispherical": {
+      "word": "HEMISPHERIC; HEMISPHERICAL",
+      "definitions": [
+        {
+          "text": "Containing, or pertaining to, a hemisphere; as, a hemispheric figure or form; a hemispherical body.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemispheroid": {
+      "word": "HEMISPHEROID",
+      "definitions": [
+        {
+          "text": "A half of a spheroid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemispheroidal": {
+      "word": "HEMISPHEROIDAL",
+      "definitions": [
+        {
+          "text": "Resembling, or approximating to, a hemisphere in form.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemispherule": {
+      "word": "HEMISPHERULE",
+      "definitions": [
+        {
+          "text": "A half spherule.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemistich": {
+      "word": "HEMISTICH",
+      "definitions": [
+        {
+          "text": "Half a poetic verse or line, or a verse or line not completed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemistichal": {
+      "word": "HEMISTICHAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or written in, hemistichs; also, by, or according to, hemistichs; as, a hemistichal division of a verse.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemisystole": {
+      "word": "HEMISYSTOLE",
+      "definitions": [
+        {
+          "text": "Contraction of only one ventricle of the heart. mitral valve, in which both ventricles at times contract simultaneously, as in a normal heart, this condition alternating with contraction of the right ventricle alone; hence, intermittent hemisystole.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemitone": {
+      "word": "HEMITONE",
+      "definitions": [
+        {
+          "text": "See Semitone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemitropalhemitropous": {
+      "word": "HEMITROPAL; HEMITROPOUS",
+      "definitions": [
+        {
+          "text": "Turned half round; half inverted.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the raphe terminating about half way between the chalaza and the orifice; amphitropous; -- said of an ovule. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemitrope": {
+      "word": "HEMITROPE",
+      "definitions": [
+        {
+          "text": "Half turned round; half inverted; (Crystallog.) having a twinned structure.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "That which is hemitropal in construction; (Crystallog.) a twin crystal having a hemitropal structure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemitropy": {
+      "word": "HEMITROPY",
+      "definitions": [
+        {
+          "text": "Twin composition in crystals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemlock": {
+      "word": "HEMLOCK",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The name of several poisonous umbelliferous herbs having finely cut leaves and small white flowers, as the Cicuta maculata, bulbifera, and virosa, and the Conium maculatum. See Conium. thought to have been a decoction of Cicuta virosa, or water hemlock, by others, of Conium maculatum.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An evergreen tree common in North America (Abies, or Tsuga, Canadensis); hemlock spruce. The murmuring pines and the hemlocks. Longfellow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The wood or timber of the hemlock tree. Ground hemlock, or Dwarf hemlock. See under Ground.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "beheading",
+        "belladonna",
+        "burning",
+        "capital punishment",
+        "castor-oil plant",
+        "crucifixion",
+        "deadly nightshade",
+        "death camas",
+        "decapitation",
+        "decollation",
+        "defenestration",
+        "electrocution",
+        "ergot",
+        "execution",
+        "foxglove",
+        "fusillade",
+        "garrote",
+        "gassing",
+        "hanging",
+        "henbane",
+        "horsetail",
+        "jimsonweed",
+        "judicial murder",
+        "lapidation",
+        "mayapple",
+        "mescal bean",
+        "monkshood",
+        "necktie party",
+        "poison ivy",
+        "poison parsley",
+        "poison sumac",
+        "poisoning",
+        "pokeweed",
+        "shooting",
+        "stoning",
+        "strangling",
+        "strangulation",
+        "the ax",
+        "the block",
+        "the chair",
+        "the gallows",
+        "the gas chamber",
+        "the guillotine",
+        "the hot seat",
+        "the rope"
+      ]
+    },
+    "hemmel": {
+      "word": "HEMMEL",
+      "definitions": [
+        {
+          "text": "A shed or hovel for cattle. [Prov. Eng.] Wright.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemmer": {
+      "word": "HEMMER",
+      "definitions": [
+        {
+          "text": "One who, or that which, hems with a needle. Specifically: (a) An attachment to a sewing machine, for turning under the edge of a piece of fabric, preparatory to stitching it down. (b) A tool for turning over the edge of sheet metal to make a hem.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemo": {
+      "word": "HEMO-",
+      "definitions": [
+        {
+          "text": "Same as Hæma-, Hæmo-.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemoglobin": {
+      "word": "HEMOGLOBIN",
+      "definitions": [
+        {
+          "text": "The normal coloring matter of the red blood corpuscles of vertebrate animals. It is composed of hematin and globulin, and is also called hæmatoglobulin. In arterial blood, it is always combined with oxygen, and is then called oxyhemoglobin. It crystallizes under different forms from different animals, and when crystallized, is called hæmatocrystallin. See Blood crystal, under Blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Rh factor",
+        "Rh-negative",
+        "Rh-positive",
+        "Rh-type",
+        "Rhesus factor",
+        "albumin",
+        "albuminoid",
+        "antibody",
+        "antigen",
+        "arterial blood",
+        "blood",
+        "blood bank",
+        "blood cell",
+        "blood count",
+        "blood donor",
+        "blood donor center",
+        "blood group",
+        "blood grouping",
+        "blood picture",
+        "blood platelet",
+        "blood pressure",
+        "blood serum",
+        "blood substitute",
+        "bloodmobile",
+        "bloodstream",
+        "casein",
+        "chlorophyll",
+        "chromoprotein",
+        "circulation",
+        "clinical dextran",
+        "collagen",
+        "dextran",
+        "edestin",
+        "elastin",
+        "erythrocyte",
+        "fibroin",
+        "globin",
+        "globulin",
+        "glutenin",
+        "glycoprotein",
+        "gore",
+        "grume",
+        "hematics",
+        "hematologist",
+        "hematology",
+        "hematoscope",
+        "hematoscopy",
+        "hemocyte",
+        "hemometer",
+        "histone",
+        "humor",
+        "ichor",
+        "ichthulin",
+        "interferon",
+        "isoantibody",
+        "lactalbumin",
+        "lecithoprotein",
+        "leukocyte",
+        "lifeblood",
+        "lipid",
+        "lipoprotein",
+        "lysozyme",
+        "mucin",
+        "neutrophil",
+        "nucleohistone",
+        "nucleoprotein",
+        "opsonin",
+        "oryzenin",
+        "osseomucoid",
+        "peptide",
+        "peptone",
+        "phagocyte",
+        "phosphoaminolipide",
+        "phosphoprotein",
+        "plasma",
+        "plasma substitute",
+        "prolamine",
+        "protamine",
+        "proteose",
+        "red corpuscle",
+        "salmine",
+        "serum",
+        "serum globulin",
+        "tendomucin",
+        "thymus histone",
+        "type O",
+        "venous blood",
+        "white corpuscle",
+        "zein"
+      ]
+    },
+    "hemoglobinometer": {
+      "word": "HEMOGLOBINOMETER",
+      "definitions": [
+        {
+          "text": "Same as Hæmochromometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemophilia": {
+      "word": "HEMOPHILIA",
+      "definitions": [
+        {
+          "text": "See Hematophilia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Christmas disease",
+        "Hand-Schuller-Christian disease",
+        "Hartnup disease",
+        "Letterer-Siwe syndrome",
+        "Werdnig-Hoffmann disease",
+        "achromatic vision",
+        "acute leukemia",
+        "albinism",
+        "anemia",
+        "angiohemophilia",
+        "aplastic anemia",
+        "chronic leukemia",
+        "color blindness",
+        "cyclic neutropenia",
+        "cystic fibrosis",
+        "dichromatic vision",
+        "dysautonomia",
+        "erythrocytosis",
+        "hemoglobinopathy",
+        "hemophilia A",
+        "hemophilia B",
+        "hypochromic anemia",
+        "ichthyosis",
+        "infectious granuloma",
+        "iron deficiency anemia",
+        "leukemia",
+        "leukemic reticuloendotheliosis",
+        "macrocytic anemia",
+        "mongolianism",
+        "mongolism",
+        "mucoviscidosis",
+        "multiple myeloma",
+        "muscular dystrophy",
+        "myelogenous leukemia",
+        "neutropenia",
+        "pancreatic fibrosis",
+        "pernicious anemia",
+        "plasma cell leukemia",
+        "plasmacytoma",
+        "polycythemia",
+        "pseudoleukemia",
+        "purpura",
+        "purpura hemorrhagica",
+        "sickle-cell anemia",
+        "thalassemia",
+        "vascular hemophilia"
+      ]
+    },
+    "hemoptysis": {
+      "word": "HEMOPTYSIS",
+      "definitions": [
+        {
+          "text": "The expectoration of blood, due usually to hemorrhage from the mucous membrane of the lungs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemorrhage": {
+      "word": "HEMORRHAGE",
+      "definitions": [
+        {
+          "text": "Any discharge of blood from the blood vessels. of which gives rise to hemorrhage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abscess",
+        "ague",
+        "anemia",
+        "ankylosis",
+        "anoxia",
+        "apnea",
+        "asphyxiation",
+        "asthma",
+        "ataxia",
+        "atrophy",
+        "backache",
+        "bleed",
+        "bleeding",
+        "blennorhea",
+        "bloody",
+        "cachexia",
+        "cachexy",
+        "chill",
+        "chills",
+        "colic",
+        "constipation",
+        "convulsion",
+        "coughing",
+        "cyanosis",
+        "diarrhea",
+        "dizziness",
+        "dropsy",
+        "dysentery",
+        "dyspepsia",
+        "dyspnea",
+        "ecchymose",
+        "ecchymosis",
+        "edema",
+        "emaciation",
+        "fainting",
+        "fatigue",
+        "fever",
+        "fibrillation",
+        "flux",
+        "growth",
+        "hemorrhea",
+        "high blood pressure",
+        "hydrops",
+        "hypertension",
+        "hypotension",
+        "icterus",
+        "indigestion",
+        "inflammation",
+        "insomnia",
+        "itching",
+        "jaundice",
+        "labored breathing",
+        "lose blood",
+        "low blood pressure",
+        "lumbago",
+        "marasmus",
+        "nasal discharge",
+        "nausea",
+        "necrosis",
+        "nosebleed",
+        "pain",
+        "paralysis",
+        "petechia",
+        "pruritus",
+        "rash",
+        "rheum",
+        "sclerosis",
+        "seizure",
+        "shed blood",
+        "shock",
+        "skin eruption",
+        "sneezing",
+        "sore",
+        "spasm",
+        "spill blood",
+        "tabes",
+        "tachycardia",
+        "tumor",
+        "upset stomach",
+        "vertigo",
+        "vomiting",
+        "wasting"
+      ]
+    },
+    "hemorrhagic": {
+      "word": "HEMORRHAGIC",
+      "definitions": [
+        {
+          "text": "Pertaining or tending to a flux o",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemorrhoidal": {
+      "word": "HEMORRHOIDAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or of the nature of, hemorrhoids.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the rectum; rectal; as, the hemorrhoidal arteries, veins, and nerves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemorrhoids": {
+      "word": "HEMORRHOIDS",
+      "definitions": [
+        {
+          "text": "Livid and painful swellings formed by the dilation of the blood vessels around the margin of, or within, the anus, from which blood or mucus is occasionally discharged; piles; emerods. [The sing. hemorrhoid is rarely used.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemostatic": {
+      "word": "HEMOSTATIC",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or relating to stagnation of the blood.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Serving to arrest hemorrhage; styptic.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A medicine or application to arrest hemorrhage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemothorax": {
+      "word": "HEMOTHORAX",
+      "definitions": [
+        {
+          "text": "An effusion of blood into the cavity of the pleura.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemp": {
+      "word": "HEMP",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plant of the genus Cannabis (C. sativa), the fibrous skin or bark of which is used for making cloth and cordage. The name is also applied to various other plants yielding fiber.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fiber of the skin or rind of the plant, prepared for spinning. The name has also been extended to various fibers resembling the true hemp. African hemp, Bowstring hemp. See under African, and Bowstring. fiber of which was used by the Indians. cannabinum), much like the American boneset.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "DET",
+        "DMT",
+        "LSD",
+        "Mary Jane",
+        "STP",
+        "THC",
+        "acid",
+        "antidepressant",
+        "ataractic",
+        "ax",
+        "block",
+        "cross",
+        "death chair",
+        "death chamber",
+        "diethyltryptamine",
+        "dimethyltryptamine",
+        "drop",
+        "electric chair",
+        "gage",
+        "gallows",
+        "gallows-tree",
+        "ganja",
+        "gas chamber",
+        "gibbet",
+        "grass",
+        "guillotine",
+        "hallucinogen",
+        "halter",
+        "hash",
+        "hashish",
+        "hay",
+        "hempen collar",
+        "hot seat",
+        "joint",
+        "kava",
+        "lethal chamber",
+        "maiden",
+        "marijuana",
+        "mescal",
+        "mescal bean",
+        "mescal button",
+        "mescaline",
+        "mind-altering drug",
+        "mind-blowing drug",
+        "mind-expanding drug",
+        "morning glory seeds",
+        "noose",
+        "peyote",
+        "pot",
+        "psilocin",
+        "psilocybin",
+        "psychedelic",
+        "psychic energizer",
+        "psychoactive drug",
+        "psychochemical",
+        "psychotomimetic",
+        "reefer",
+        "roach",
+        "rope",
+        "scaffold",
+        "stake",
+        "stick",
+        "tea",
+        "the chair",
+        "tranquilizer",
+        "tree",
+        "weed"
+      ]
+    },
+    "hempen": {
+      "word": "HEMPEN",
+      "definitions": [
+        {
+          "text": "Made of hemp; as, a hempen cord.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Like hemp. \"Beat into a hempen state.\" Cook.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hempy": {
+      "word": "HEMPY",
+      "definitions": [
+        {
+          "text": "Like hemp. [R.] Howell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemselfhemselvehemselven": {
+      "word": "HEMSELF; HEMSELVE; HEMSELVEN",
+      "definitions": [
+        {
+          "text": "Themselves; -- used reflexively. [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemstitch": {
+      "word": "HEMSTITCH",
+      "definitions": [
+        {
+          "text": "To ornament at the head of a broad hem by drawing out a few parallel threads, and fastening the cross threads in successive small clusters; as, to hemstitch a handkerchief.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemstitched": {
+      "word": "HEMSTITCHED",
+      "definitions": [
+        {
+          "text": "Having a broad hem separated from the body of the article by a line of open work; as, a hemistitched handkerchief.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemuse": {
+      "word": "HEMUSE",
+      "definitions": [
+        {
+          "text": "The roebuck in its third year. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

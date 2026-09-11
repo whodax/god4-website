@@ -1825,7 +1825,7 @@ test('Word Study opens from a Reader word with exact local verse context and res
   await expect(panel).toBeVisible();
   await expect(page.locator('#wordStudyWord')).toHaveText('beginning');
   await expect(page.locator('#wordStudyReference')).toHaveText('John 1:1');
-  await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
   await expect(page.locator('#wordStudyRelated')).toContainText('origin');
   expect(await page.locator('#readerContent [data-verse-number="1"]').evaluate((verse) => Array.from(verse.childNodes).filter((node) => node.nodeType === Node.TEXT_NODE || (node.nodeType === Node.ELEMENT_NODE && node.hasAttribute('data-word-study-term'))).map((node) => node.textContent).join('').trim())).toBe(await page.evaluate(() => BibleData.getVerse('demo-local', 'john', 1, 1).text));
   await page.locator('#wordStudyClose').click();
@@ -1888,13 +1888,33 @@ test('Word Study loads static Webster and Moby shard data once per shard', async
   await page.goto('/');
   const word = page.getByRole('button', { name: 'Study word beginning' }).first();
   await word.click();
-  await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
   await expect(page.locator('#wordStudyPartOfSpeech')).toHaveText('noun');
-  await expect(page.locator('#wordStudyRelated')).toContainText('commencement');
+  await expect(page.locator('#wordStudyRelated')).toContainText('beginnings');
   await page.locator('#wordStudyClose').click();
   await word.click();
   await expect(page.locator('#wordStudyPanel')).toBeVisible();
   expect(shardRequests).toBe(1);
+});
+
+test('Word Study resolves Windows-reserved shards with a safe deterministic name', async ({ page }) => {
+  const entries = { context: { word: 'context', definitions: [{ text: 'the circumstances that form the setting', partOfSpeech: 'noun' }], relatedWords: [] } };
+  await page.route('**/data/word-study/**', async (route) => {
+    const shard = new URL(route.request().url()).pathname.split('/').pop().replace('.json', '');
+    if (shard === 'co') return route.fulfill({ status: 404 });
+    if (shard === 'con_') return route.fulfill({ contentType: 'application/json', body: JSON.stringify({ version: 'v1', entries }) });
+    if (shard === 'cont') return route.fulfill({ contentType: 'application/json', body: JSON.stringify({ version: 'v1', entries }) });
+    return route.fulfill({ status: 404 });
+  });
+  await page.goto('/');
+  const result = await page.evaluate(async () => {
+    const context = (word) => ({ lookupTerm: word, displayWord: word });
+    const names = DictionaryWordStudyProvider.getShardNames('context');
+    const value = await DictionaryWordStudyProvider.lookup(context('context'));
+    return { names, value };
+  });
+  expect(result.names).toEqual(['co', 'con_', 'cont']);
+  expect(result.value.status).toBe('available');
 });
 
 test('Word Study dictionary provider resolves adaptive shards and caches concurrent requests', async ({ page }) => {
@@ -1929,7 +1949,7 @@ test('Word Study dictionary provider resolves adaptive shards and caches concurr
   expect(result.missing.status).toBe('unavailable');
   expect(result.malformed.status).toBe('unavailable');
   expect(result.names).toEqual(['li', 'lig', 'ligh']);
-  expect(requests).toEqual({ be: 1, li: 1, lig: 1, co: 1, con: 1, cont: 1, ma: 1, mal: 1, malf: 1, mi: 1, mis: 1, miss: 1 });
+  expect(requests).toEqual({ be: 1, li: 1, lig: 1, co: 1, con_: 1, cont: 1, ma: 1, mal: 1, malf: 1, mi: 1, mis: 1, miss: 1 });
 });
 
 test('Word Study falls back safely when a static shard is missing or malformed', async ({ page }) => {
@@ -1940,7 +1960,7 @@ test('Word Study falls back safely when a static shard is missing or malformed',
   await expect(page.locator('#wordStudyDefinition')).toHaveText('Brightness that makes things visible; a source of illumination.');
   await page.locator('#wordStudyClose').click();
   await page.getByRole('button', { name: 'Study word beginning' }).first().click();
-  await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
 });
 
 test('Word Study supports keyboard activation, unavailable words, Escape close, and Reader changes', async ({ page }) => {
@@ -1948,7 +1968,7 @@ test('Word Study supports keyboard activation, unavailable words, Escape close, 
   const knownWord = page.getByRole('button', { name: 'Study word beginning' }).first();
   await knownWord.focus();
   await knownWord.press('Enter');
-  await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
   await page.locator('#wordStudyHeading').press('Escape');
   await expect(page.locator('#wordStudyPanel')).toBeHidden();
   const unknownWord = page.getByRole('button', { name: 'Study word was' }).first();

@@ -1,0 +1,1958 @@
+{
+  "version": "v1",
+  "entries": {
+    "ing": {
+      "word": "ING",
+      "definitions": [
+        {
+          "text": "A pasture or meadow; generally one lying low, near a river. [Obs. or Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingannation": {
+      "word": "INGANNATION",
+      "definitions": [
+        {
+          "text": "Cheat; deception. [Obs.] Sir T. Brown.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingate": {
+      "word": "INGATE",
+      "definitions": [
+        {
+          "text": "Entrance; ingress. [Obs.] Which hath in charge the ingate of the year. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Fonding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The aperture in a mold for pouring in the metal; the gate. Simmonds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingathering": {
+      "word": "INGATHERING",
+      "definitions": [
+        {
+          "text": "The act or business of gathering or collecting anything; especially, the gathering of the fruits of the earth; harvest. Thou shalt keep . . . the feast of ingathering. Ex. xxii. 16.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingelable": {
+      "word": "INGELABLE",
+      "definitions": [
+        {
+          "text": "Not congealable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingeminate": {
+      "word": "INGEMINATE",
+      "definitions": [
+        {
+          "text": "Redoubled; repeated. Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To redouble or repeat; to reiterate. Clarendon. . . . She yet ingeminates The last of sounds, and what she hears relates. Sandys.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingemination": {
+      "word": "INGEMINATION",
+      "definitions": [
+        {
+          "text": "Repetition; reduplication; reiteration. De Quincey. That Sacred ingemination, Amen, Amen. Featley. Happiness with an echo or ingemination. Holdsworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingena": {
+      "word": "INGENA",
+      "definitions": [
+        {
+          "text": "The gorilla.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingender": {
+      "word": "INGENDER",
+      "definitions": [
+        {
+          "text": "See Engender.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingenerabillty": {
+      "word": "INGENERABILLTY",
+      "definitions": [
+        {
+          "text": "Incapacity of being engendered or produced. Cudworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingenerable": {
+      "word": "INGENERABLE",
+      "definitions": [
+        {
+          "text": "Incapble of being engendered or produced; original. Holland.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingenerably": {
+      "word": "INGENERABLY",
+      "definitions": [
+        {
+          "text": "In an ingenerable manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingenerate": {
+      "word": "INGENERATE",
+      "definitions": [
+        {
+          "text": "Generated within; inborn; innate; as, ingenerate powers of body. W. Wotton. Those virtues were rather feigned and affected . . . than true qualities ingenerate in his judgment. Bacon.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To generate or produce within; to begete; to engener; to occasion; to cause. Mede. Those noble habits are ingenerated in the soul. Sir M. Hale.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingeneration": {
+      "word": "INGENERATION",
+      "definitions": [
+        {
+          "text": "Act of ingenerating.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingeniate": {
+      "word": "INGENIATE",
+      "definitions": [
+        {
+          "text": "To invent; to contrive. [Obs.] Daniel.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingenie": {
+      "word": "INGENIE",
+      "definitions": [
+        {
+          "text": "See Ingeny.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingeniosity": {
+      "word": "INGENIOSITY",
+      "definitions": [
+        {
+          "text": "Ingenuity; skill; cunning. [Obs.] Cudworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingenious": {
+      "word": "INGENIOUS",
+      "definitions": [
+        {
+          "text": "Possessed of genius, or the faculty of invention; skillful or promp to invent; having an aptitude to contrive, or to form new combinations; as, an ingenious author, mechanic. A man . . . very wise and ingenious in feats of war. Hakluyt. Thou, king, send out For torturers ingenious. Shak. The more ingenious men are, the more apt are they to trouble themselves. Sir W. Temple.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Proseeding from, pertaining to, or characterized by, genius or ingenuity; of curious design, structure, or mechanism; as, an ingenious model, or machine; an ingenious scheme, contrivance, etc. Thus men go wrong with an ingenious skill. Cowper.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Witty; shrewd; adroit; keen; sagacious; as, an ingenious reply.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Mental; intellectual. [Obs.] A course of learning and ingenious studies. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Daedalian",
+        "Machiavellian",
+        "Machiavellic",
+        "acute",
+        "adept",
+        "adroit",
+        "apt",
+        "arch",
+        "artful",
+        "artistic",
+        "astute",
+        "authoritative",
+        "bravura",
+        "bright",
+        "brilliant",
+        "cagey",
+        "canny",
+        "clean",
+        "clever",
+        "conceptive",
+        "conceptual",
+        "coordinated",
+        "crack",
+        "crackerjack",
+        "crafty",
+        "creative",
+        "cunning",
+        "cute",
+        "daedal",
+        "deceitful",
+        "deep",
+        "deep-laid",
+        "deft",
+        "demiurgic",
+        "designing",
+        "dexterous",
+        "dextrous",
+        "diplomatic",
+        "esemplastic",
+        "excellent",
+        "expert",
+        "fancy",
+        "fecund",
+        "feline",
+        "fertile",
+        "foxy",
+        "germinal",
+        "gifted",
+        "good",
+        "goodish",
+        "graceful",
+        "guileful",
+        "handy",
+        "ideational",
+        "ideative",
+        "imaginative",
+        "innovational",
+        "innovative",
+        "insidious",
+        "inspired",
+        "inventive",
+        "keen",
+        "knowing",
+        "magisterial",
+        "masterful",
+        "masterly",
+        "neat",
+        "no mean",
+        "notional",
+        "on the ball",
+        "original",
+        "originative",
+        "pawky",
+        "politic",
+        "pregnant",
+        "productive",
+        "professional",
+        "proficient",
+        "prolific",
+        "quick",
+        "quite some",
+        "ready",
+        "resourceful",
+        "scheming",
+        "seminal",
+        "serpentine",
+        "shaping",
+        "sharp",
+        "shifty",
+        "shrewd",
+        "skilled",
+        "skillful",
+        "slick",
+        "slim",
+        "slippery",
+        "sly",
+        "smart",
+        "smooth",
+        "snaky",
+        "sneaky",
+        "some",
+        "sophistical",
+        "statesmanlike",
+        "stealthy",
+        "strategic",
+        "stylish",
+        "subtile",
+        "subtle",
+        "supple",
+        "tactful",
+        "tactical",
+        "talented",
+        "teeming",
+        "the compleat",
+        "the complete",
+        "trickish",
+        "tricksy",
+        "tricky",
+        "virtuoso",
+        "visioned",
+        "vulpine",
+        "wary",
+        "well-done",
+        "wily",
+        "workmanlike"
+      ]
+    },
+    "ingeniously": {
+      "word": "INGENIOUSLY",
+      "definitions": [
+        {
+          "text": "In an ingenious manner; with ingenuity; skillfully; wittily; cleverly. \"Too ingeniously politic.\" Sir W. Temple.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingeniousness": {
+      "word": "INGENIOUSNESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being ingenious; ingenuity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingeniteingenit": {
+      "word": "INGENITE; INGENIT",
+      "definitions": [
+        {
+          "text": "Innate; inborn; inbred; inherent; native; ingenerate. [Obs.] It is naturalor ingenite, which comes by some defect of the organs and overmuch brain. Burton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingenue": {
+      "word": "INGENUE",
+      "definitions": [
+        {
+          "text": "An ingenuous or naïve girl or young woman, or an actress representing such a person.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Roscius",
+        "actor",
+        "actress",
+        "antagonist",
+        "antihero",
+        "babe",
+        "bad guy",
+        "barnstormer",
+        "bit",
+        "bit part",
+        "cast",
+        "character",
+        "character actor",
+        "character man",
+        "character woman",
+        "child",
+        "child actor",
+        "child of nature",
+        "cue",
+        "diseur",
+        "diseuse",
+        "dove",
+        "dramatizer",
+        "dupe",
+        "fat part",
+        "feeder",
+        "foil",
+        "heavy",
+        "hero",
+        "heroine",
+        "hick",
+        "histrio",
+        "histrion",
+        "infant",
+        "innocent",
+        "juvenile",
+        "lamb",
+        "lead",
+        "lead role",
+        "leading lady",
+        "leading man",
+        "leading woman",
+        "lines",
+        "lout",
+        "matinee idol",
+        "mere child",
+        "mime",
+        "mimer",
+        "mimic",
+        "monologist",
+        "mummer",
+        "noble savage",
+        "oaf",
+        "pantomime",
+        "pantomimist",
+        "part",
+        "person",
+        "personage",
+        "piece",
+        "playactor",
+        "player",
+        "protagonist",
+        "protean actor",
+        "reciter",
+        "role",
+        "rube",
+        "side",
+        "simple soul",
+        "soubrette",
+        "stage performer",
+        "stage player",
+        "stooge",
+        "straight man",
+        "straight part",
+        "stroller",
+        "strolling player",
+        "supporting character",
+        "supporting role",
+        "theatrical",
+        "thespian",
+        "title role",
+        "trouper",
+        "unsophisticate",
+        "utility man",
+        "villain",
+        "walk-on",
+        "walking part",
+        "yokel"
+      ]
+    },
+    "ingenuity": {
+      "word": "INGENUITY",
+      "definitions": [
+        {
+          "text": "The quality or power of ready invention; quickness or acuteness in forming new combinations; ingeniousness; skill in devising or combining. All the means which human ingenuity has contrived. Blair.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Curiousness, or cleverness in design or contrivance; as, the ingenuity of a plan, or of mechanism. He gives . . . To artist ingenuity and skill. Cowper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Openness of heat; ingeniuousness. [Obs.] The stings and remores of natural ingenuity, a principle that men scarcely ever shake off, as long as they carry anything of human nature about them. South. cleverness of talent. The former implies invention, the letter a peculiar dexterity and readiness of execution. Sir James Mackintosh remarks that the English overdo in the use of the word clever and cleverness, applying them loosely to almost every form of intellectual ability.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ability",
+        "acuteness",
+        "address",
+        "adeptness",
+        "adroitness",
+        "airmanship",
+        "aptness",
+        "art",
+        "artfulness",
+        "artisanship",
+        "artistry",
+        "bravura",
+        "brilliance",
+        "canniness",
+        "capability",
+        "capacity",
+        "cleverness",
+        "command",
+        "competence",
+        "control",
+        "coordination",
+        "craft",
+        "craftsmanship",
+        "creativeness",
+        "creativity",
+        "cunning",
+        "deftness",
+        "dexterity",
+        "dexterousness",
+        "dextrousness",
+        "diplomacy",
+        "efficiency",
+        "expertise",
+        "facility",
+        "faculty",
+        "fecundity",
+        "fertile mind",
+        "fertility",
+        "finesse",
+        "flair",
+        "genius",
+        "gift",
+        "grace",
+        "grip",
+        "handiness",
+        "horsemanship",
+        "imagination",
+        "imaginativeness",
+        "ingeniousness",
+        "invention",
+        "inventiveness",
+        "keenness",
+        "knack",
+        "know-how",
+        "marksmanship",
+        "mastership",
+        "mastery",
+        "originality",
+        "practical ability",
+        "pregnant imagination",
+        "productivity",
+        "proficiency",
+        "prolificacy",
+        "prowess",
+        "quickness",
+        "readiness",
+        "resource",
+        "resourcefulness",
+        "savoir-faire",
+        "savvy",
+        "seamanship",
+        "sharpness",
+        "shrewdness",
+        "skill",
+        "skillfulness",
+        "smartness",
+        "style",
+        "tact",
+        "tactfulness",
+        "talent",
+        "technical brilliance",
+        "technical mastery",
+        "technical skill",
+        "technique",
+        "teeming imagination",
+        "timing",
+        "virtuosity",
+        "wit",
+        "wizardry",
+        "workmanship"
+      ]
+    },
+    "ingenuous": {
+      "word": "INGENUOUS",
+      "definitions": [
+        {
+          "text": "Of honorable extraction; freeborn; noble; as, ingenuous blood of birth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Noble; generous; magnanimous; honorable; uprigth; high-minded; as, an ingenuous ardor or zeal. If an ingenuous detestation of falsehood be but carefully and early instilled, that is the true and genuin method to obviate dishonesty. Locke.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Free from reserve, disguise, equivocation, or dissimulation; open; frank; sa, an ingenuous man; an ingenuous declaration, confession, etc. Sensible in myself . . . what a burden it is for me, who would be ingenuous, to be loaded with courtesies which he hath not the least hope to requite or deserve. Fuller.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Ingenious. [Obs.] Shak. ingenuous and ingenious, and these words were used or rather printed interchangeably almost to the begining of the eighteenth century. G. P. Marsh. noble; generous. is uppermost in his mind; one who is frank does it from a natural boldness, or dislike of self-restraint; one who is ingenuous is actuated by a native simplicity and artlessness, which make him willing to confess faults, and make known his sentiments without reserve. See Candid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "artless",
+        "bluff",
+        "blunt",
+        "bold",
+        "born yesterday",
+        "broad",
+        "brusque",
+        "budding",
+        "callow",
+        "candid",
+        "childlike",
+        "confiding",
+        "cullible",
+        "deceivable",
+        "deludable",
+        "dewy",
+        "direct",
+        "downright",
+        "dupable",
+        "easy",
+        "explicit",
+        "exploitable",
+        "fair",
+        "fair and square",
+        "foolable",
+        "forthright",
+        "frank",
+        "frankhearted",
+        "free",
+        "free-speaking",
+        "free-spoken",
+        "free-tongued",
+        "genuine",
+        "green",
+        "growing",
+        "guileless",
+        "gullible",
+        "heart-to-heart",
+        "hoaxable",
+        "honest",
+        "honorable",
+        "hoodwinkable",
+        "humbugable",
+        "immature",
+        "impubic",
+        "inexperienced",
+        "ingenu",
+        "innocent",
+        "intact",
+        "juicy",
+        "just",
+        "minor",
+        "naive",
+        "natural",
+        "new-fledged",
+        "on the level",
+        "open",
+        "openhearted",
+        "outspoken",
+        "persuadable",
+        "plain",
+        "plain-spoken",
+        "raw",
+        "ripening",
+        "round",
+        "sappy",
+        "seduceable",
+        "simple",
+        "simplehearted",
+        "simpleminded",
+        "sincere",
+        "single-hearted",
+        "single-minded",
+        "soft",
+        "straight",
+        "straight-out",
+        "straightforward",
+        "suggestible",
+        "tender",
+        "transparent",
+        "trustful",
+        "trusting",
+        "trustworthy",
+        "unabashed",
+        "unadult",
+        "unaffected",
+        "unartificial",
+        "unchecked",
+        "uncomplicated",
+        "unconstrained",
+        "undeceitful",
+        "undeceptive",
+        "underage",
+        "undeveloped",
+        "undissembling",
+        "unequivocal",
+        "unfeigning",
+        "unfledged",
+        "unformed",
+        "unguarded",
+        "uninhibited",
+        "unlicked",
+        "unmellowed",
+        "unreserved",
+        "unrestrained",
+        "unripe",
+        "unschooled",
+        "unseasoned",
+        "unsophisticated",
+        "unstudied",
+        "unsuspicious",
+        "unwary",
+        "vernal",
+        "victimizable",
+        "virginal"
+      ]
+    },
+    "ingenuously": {
+      "word": "INGENUOUSLY",
+      "definitions": [
+        {
+          "text": "In an ingenuous manner; openly; fairly; candidly; artlessly. Being required to explane himself, he ingeniously confessed. Ludlow.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingenuousness": {
+      "word": "INGENUOUSNESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being ingenuous; openness of heart; frankness.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Ingenuity. [Obs.] Fuller.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingeny": {
+      "word": "INGENY",
+      "definitions": [
+        {
+          "text": "Natural gift or talent; ability; wit; ingenuity. [Obs.] [Written also ingenie.] Becon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingerminate": {
+      "word": "INGERMINATE",
+      "definitions": [
+        {
+          "text": "To cause to germinate.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingest": {
+      "word": "INGEST",
+      "definitions": [
+        {
+          "text": "To take into, or as into, the stomach or alimentary canal. Sir T. Browne.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "ablate",
+        "absorb",
+        "assimilate",
+        "bleed white",
+        "burn up",
+        "consume",
+        "deplete",
+        "devour",
+        "digest",
+        "dispatch",
+        "dispose of",
+        "down",
+        "drain",
+        "drain of resources",
+        "drink",
+        "drink in",
+        "eat",
+        "eat up",
+        "engorge",
+        "engulf",
+        "erode",
+        "exhaust",
+        "expend",
+        "feed on",
+        "finish",
+        "finish off",
+        "get away with",
+        "get down",
+        "gobble",
+        "gobble up",
+        "gulp",
+        "gulp down",
+        "imbibe",
+        "impoverish",
+        "ingurgitate",
+        "meal",
+        "partake of",
+        "percolate in",
+        "put away",
+        "seep in",
+        "soak in",
+        "soak up",
+        "spend",
+        "squander",
+        "suck dry",
+        "surround",
+        "swallow",
+        "swallow up",
+        "swill",
+        "swill down",
+        "take",
+        "take down",
+        "take in",
+        "tuck in",
+        "use up",
+        "waste away",
+        "wear away",
+        "wolf down"
+      ]
+    },
+    "ingesta": {
+      "word": "INGESTA",
+      "definitions": [
+        {
+          "text": "That which is introduced into the body by the stomach or alimentary canal; -- opposed to egesta.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "board",
+        "bread",
+        "bread and butter",
+        "cheer",
+        "comestibles",
+        "creature comfort",
+        "cuisine",
+        "daily bread",
+        "eatables",
+        "edibles",
+        "fare",
+        "fast food",
+        "feast",
+        "food",
+        "food and drink",
+        "foodstuff",
+        "health food",
+        "junk food",
+        "kitchen stuff",
+        "meat",
+        "provender",
+        "provision",
+        "spread",
+        "sustenance",
+        "table",
+        "tucker",
+        "viands",
+        "victuals",
+        "vittles"
+      ]
+    },
+    "ingestion": {
+      "word": "INGESTION",
+      "definitions": [
+        {
+          "text": "The act of taking or putting into the stomach; as, the ingestion of milk or other food.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ablation",
+        "absorption",
+        "appetite",
+        "assimilation",
+        "attrition",
+        "bile",
+        "burning up",
+        "cannibalism",
+        "carnivorism",
+        "carnivority",
+        "carnivorousness",
+        "chewing",
+        "consumption",
+        "cropping",
+        "deglutition",
+        "depletion",
+        "devouring",
+        "devourment",
+        "dieting",
+        "digestion",
+        "digestive system",
+        "dining",
+        "drain",
+        "drinking",
+        "eating",
+        "eating up",
+        "engorgement",
+        "engulfment",
+        "epulation",
+        "erosion",
+        "exhaustion",
+        "expending",
+        "expenditure",
+        "feasting",
+        "feeding",
+        "finishing",
+        "gastric juice",
+        "gastrointestinal tract",
+        "gluttony",
+        "gobbling",
+        "grazing",
+        "gulp",
+        "gulping",
+        "herbivorism",
+        "herbivority",
+        "herbivorousness",
+        "hunger",
+        "imbibing",
+        "imbibition",
+        "impoverishment",
+        "ingurgitation",
+        "intestinal juice",
+        "licking",
+        "liver",
+        "manducation",
+        "mastication",
+        "messing",
+        "munching",
+        "nibbling",
+        "nutrition",
+        "omnivorism",
+        "omnivorousness",
+        "omophagy",
+        "pancreas",
+        "pancreatic digestion",
+        "pancreatic juice",
+        "pantophagy",
+        "pasture",
+        "pasturing",
+        "pecking",
+        "predigestion",
+        "regalement",
+        "relishing",
+        "rumination",
+        "saliva",
+        "salivary digestion",
+        "salivary glands",
+        "savoring",
+        "secondary digestion",
+        "slurp",
+        "soaking-up",
+        "spending",
+        "squandering",
+        "swallow",
+        "swallowing",
+        "taking-in",
+        "tasting",
+        "using up",
+        "vegetarianism",
+        "wastage",
+        "waste",
+        "wastefulness",
+        "wasting away",
+        "wearing away",
+        "wearing down",
+        "wolfing"
+      ]
+    },
+    "inghalla": {
+      "word": "INGHALLA",
+      "definitions": [
+        {
+          "text": "The reedbuck of South Africa. [Written also ingali.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingirt": {
+      "word": "INGIRT",
+      "definitions": [
+        {
+          "text": "To encircle to gird; to engirt. The wreath is ivy that ingirts our beams. Drayton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Surrounded; encircled. Fenton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingle": {
+      "word": "INGLE",
+      "definitions": [
+        {
+          "text": "Flame; blaze; a fire; a fireplace. [Obs. or Scot.] Burns. Ingle nock, the chimney corner.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A paramour; a favourite; a sweetheart; an engle. [Obs.] Toone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cajole or coax; to wheedle. See Engle. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "ancestral halls",
+        "backfire",
+        "balefire",
+        "beacon",
+        "beacon fire",
+        "blaze",
+        "bonfire",
+        "burning ghat",
+        "campfire",
+        "cheerful fire",
+        "chimney",
+        "chimney corner",
+        "combustion",
+        "conflagration",
+        "corposant",
+        "cozy fire",
+        "crackling fire",
+        "crematory",
+        "death fire",
+        "family homestead",
+        "fen fire",
+        "fender",
+        "fire",
+        "fire screen",
+        "fireboard",
+        "fireguard",
+        "fireplace",
+        "fireside",
+        "flame",
+        "flashing point",
+        "flicker",
+        "flickering flame",
+        "flue",
+        "forest fire",
+        "fox fire",
+        "foyer",
+        "funeral pyre",
+        "hearth",
+        "hearth and home",
+        "hearthstone",
+        "hob",
+        "home",
+        "home place",
+        "home roof",
+        "home sweet home",
+        "homestead",
+        "household",
+        "hub",
+        "ignis fatuus",
+        "ignition",
+        "inglenook",
+        "ingleside",
+        "lambent flame",
+        "marshfire",
+        "menage",
+        "open fire",
+        "paternal roof",
+        "prairie fire",
+        "pyre",
+        "raging fire",
+        "roof",
+        "rooftree",
+        "sea of flames",
+        "sheet of fire",
+        "signal beacon",
+        "smokehole",
+        "smudge fire",
+        "three-alarm fire",
+        "toft",
+        "two-alarm fire",
+        "watch fire",
+        "wildfire",
+        "witch fire"
+      ]
+    },
+    "inglobate": {
+      "word": "INGLOBATE",
+      "definitions": [
+        {
+          "text": "In the form of a globe or sphere; -- applied to nebulous matter collected into a sphere by the force of gravitation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inglobe": {
+      "word": "INGLOBE",
+      "definitions": [
+        {
+          "text": "To infix, as in a globe; to fix or secure firmly. [Obs.] Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inglorious": {
+      "word": "INGLORIOUS",
+      "definitions": [
+        {
+          "text": "Not glorious; not bringing honor or glory; not accompanied with fame, honor, or celebrity; obscure; humble; as, an inglorious life of ease. Shak. My next desire is, void of care and strife, To lead a soft, secure, inglorious life. Dryden. Some mute inglorious Milton here may rest. Gray.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Shameful; disgraceful; ignominious; as, inglorious flight, defeat, etc. Inglorious shelter in an alien land. J. Philips.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "derogatory",
+        "discreditable",
+        "disgraceful",
+        "dishonorable",
+        "disreputable",
+        "homely",
+        "humble",
+        "humble-looking",
+        "humble-visaged",
+        "humblest",
+        "ignoble",
+        "ignominious",
+        "ignotus",
+        "infamous",
+        "innocuous",
+        "least",
+        "little known",
+        "low",
+        "lowest",
+        "lowliest",
+        "lowly",
+        "mean",
+        "modest",
+        "nameless",
+        "no credit to",
+        "notorious",
+        "obscure",
+        "plain",
+        "poor",
+        "renownless",
+        "seamy",
+        "shabby",
+        "shady",
+        "shameful",
+        "shoddy",
+        "simple",
+        "small",
+        "sordid",
+        "teachable",
+        "uncelebrated",
+        "undistinguished",
+        "unfamed",
+        "unglorified",
+        "unheard-of",
+        "unhonored",
+        "unimportant",
+        "unknown",
+        "unnotable",
+        "unnoted",
+        "unnoticed",
+        "unpopular",
+        "unpraiseworthy",
+        "unpretentious",
+        "unremarked",
+        "unrenowned",
+        "unrespectable",
+        "unsavory",
+        "unsung"
+      ]
+    },
+    "ingloriously": {
+      "word": "INGLORIOUSLY",
+      "definitions": [
+        {
+          "text": "In an inglorious manner; dishonorably; with shame; ignominiously; obscurely.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingloriousness": {
+      "word": "INGLORIOUSNESS",
+      "definitions": [
+        {
+          "text": "The state of being inglorious.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inglut": {
+      "word": "INGLUT",
+      "definitions": [
+        {
+          "text": "To glut. [R.] Ascham.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingluvial": {
+      "word": "INGLUVIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the indulges or crop of birds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingluvies": {
+      "word": "INGLUVIES",
+      "definitions": [
+        {
+          "text": "The crop, or craw, of birds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingluvious": {
+      "word": "INGLUVIOUS",
+      "definitions": [
+        {
+          "text": "Gluttonous. [Obs.] Blount.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingoing": {
+      "word": "IN-GOING",
+      "definitions": [
+        {
+          "text": "The act of going in; entrance.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Going; entering, as upon an office or a possession; as, an in- going tenant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "access",
+        "admission",
+        "biting",
+        "clear-cut",
+        "crisp",
+        "cutting",
+        "entering",
+        "entrance",
+        "entree",
+        "entry",
+        "import",
+        "importation",
+        "importing",
+        "in",
+        "inbound",
+        "income",
+        "incoming",
+        "infiltration",
+        "inflooding",
+        "inflowing",
+        "ingress",
+        "ingression",
+        "ingressive",
+        "inner-directed",
+        "inpouring",
+        "input",
+        "insertion",
+        "insinuation",
+        "intake",
+        "interpenetration",
+        "introduction",
+        "introgression",
+        "introversive",
+        "introvert",
+        "introverted",
+        "intrusion",
+        "intrusive",
+        "invasive",
+        "inward",
+        "inward-bound",
+        "irruptive",
+        "leakage",
+        "penetrating",
+        "penetration",
+        "percolation",
+        "reception",
+        "seepage",
+        "subjective",
+        "trenchant"
+      ]
+    },
+    "ingorge": {
+      "word": "INGORGE",
+      "definitions": [
+        {
+          "text": "See Engorge. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingot": {
+      "word": "INGOT",
+      "definitions": [
+        {
+          "text": "That in which metal is cast; a mold. [Obs.] And from the fire he took up his matter And in the ingot put it with merry cheer. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bar or wedge of steel, gold, or other malleable metal, cast in a mold; a mass of unwrought cast metal. Wrought ingots from Besoara's mine. Sir W. Jones. Ingot mold, a box or mold in which ingots are cast.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bar",
+        "billet",
+        "bullion",
+        "button",
+        "cast",
+        "casting",
+        "coin gold",
+        "coin silver",
+        "copper",
+        "gate",
+        "gold",
+        "gold nugget",
+        "nickel",
+        "nugget",
+        "pig",
+        "precious metals",
+        "regulus",
+        "rod",
+        "sheet metal",
+        "silver",
+        "slab",
+        "sow",
+        "stick",
+        "strip",
+        "yellow stuff"
+      ]
+    },
+    "ingotsteel": {
+      "word": "INGOT STEEL",
+      "definitions": [
+        {
+          "text": "Steel cast in ingots from the Bessemer converter or open-hearth furnace.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrace": {
+      "word": "INGRACE",
+      "definitions": [
+        {
+          "text": "To ingratiate. [Obs.] G. Fletcher.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingracious": {
+      "word": "INGRACIOUS",
+      "definitions": [
+        {
+          "text": "Ungracious; unkind. [Obs.] Holland.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingraff": {
+      "word": "INGRAFF",
+      "definitions": [
+        {
+          "text": "See Ingraft. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingraft": {
+      "word": "INGRAFT",
+      "definitions": [
+        {
+          "text": "To insert, as a scion of one tree, shrub, or plant in another for propagation; as, to ingraft a peach scion on a plum tree; figuratively, to insert or introduce in such a way as to make a part of something. This fellow would ingraft a foreign name Upon our stock. Dryden. A custom . . . ingrafted into the monarchy of Rome. Burke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To subject to the process of grafting; to furnish with grafts or scions; to graft; as, to ingraft a tree.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrafter": {
+      "word": "INGRAFTER",
+      "definitions": [
+        {
+          "text": "A person who ingrafts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingraftment": {
+      "word": "INGRAFTMENT",
+      "definitions": [
+        {
+          "text": "The act of ingrafting.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The thing ingrafted; a scion.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrain": {
+      "word": "INGRAIN",
+      "definitions": [
+        {
+          "text": "Dyed with grain, or kermes. [Obs.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Dyed before manufacture, -- said of the material of a textile fabric; hence, in general, thoroughly inwrought; forming an essential part of the substance. Ingrain carpet, a double or two-ply carpet.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An ingrain fabric, as a carpet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To dye with or in grain or kermes.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To dye in the grain, or before manufacture.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To work into the natural texture or into the mental or moral constitution of; to stain; to saturate; to imbue; to infix deeply. Our fields ingrained with blood. Daniel. Cruelty and jealousy seem to be ingrained in a man who has these vices at all. Helps.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "apply paint",
+        "bed",
+        "bedaub",
+        "bedizen",
+        "begild",
+        "besmear",
+        "brush on paint",
+        "calcimine",
+        "coat",
+        "color",
+        "complexion",
+        "confirm",
+        "cover",
+        "dab",
+        "daub",
+        "deep-dye",
+        "define",
+        "dip",
+        "distemper",
+        "double-dye",
+        "dye",
+        "embed",
+        "emblazon",
+        "enamel",
+        "engild",
+        "engraft",
+        "engrave",
+        "entrench",
+        "establish",
+        "etch",
+        "face",
+        "fast-dye",
+        "fix",
+        "found",
+        "fresco",
+        "gild",
+        "glaze",
+        "gloss",
+        "grain",
+        "grave",
+        "ground",
+        "hue",
+        "illuminate",
+        "imbue",
+        "impact",
+        "implant",
+        "impress",
+        "imprint",
+        "incise",
+        "infix",
+        "inoculate",
+        "inscribe",
+        "invest",
+        "jam",
+        "japan",
+        "lacquer",
+        "lay on color",
+        "leaven",
+        "lodge",
+        "pack",
+        "paint",
+        "parget",
+        "pigment",
+        "plant",
+        "prime",
+        "print",
+        "root",
+        "seat",
+        "set",
+        "set in",
+        "settle",
+        "shade",
+        "shadow",
+        "shellac",
+        "slop on paint",
+        "smear",
+        "stain",
+        "stamp",
+        "steep",
+        "stereotype",
+        "stipple",
+        "suffuse",
+        "tinct",
+        "tincture",
+        "tinge",
+        "tint",
+        "tone",
+        "undercoat",
+        "varnish",
+        "wash",
+        "wedge",
+        "whitewash"
+      ]
+    },
+    "ingrapple": {
+      "word": "INGRAPPLE",
+      "definitions": [
+        {
+          "text": "To seize; to clutch; to grapple. [Obs.] Drayton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrate": {
+      "word": "INGRATE",
+      "definitions": [
+        {
+          "text": "Ingrateful. [Obs. or Poetic] Bacon.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An ungrateful person. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrateful": {
+      "word": "INGRATEFUL",
+      "definitions": [
+        {
+          "text": "Ungrateful; thankless; unappreciative. Milton. He proved extremely false and ingrateful to me. Atterbury.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Unpleasing to the sense; distasteful; offensive.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrately": {
+      "word": "INGRATELY",
+      "definitions": [
+        {
+          "text": "Ungratefully. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingratiate": {
+      "word": "INGRATIATE",
+      "definitions": [
+        {
+          "text": "To introduce or commend to the favor of another; to bring into favor; to insinuate; -- used reflexively, and followed by with before the person whose favor is sought. Lysimachus . . . ingratiated himself both with Philip and his pupil. Budgell.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To recommend; to render easy or agreeable; -- followed by to. What difficulty would it [the love of Christ] not ingratiate to us Hammond.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To gain favor. [R.] Sir W. Temple.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingratitude": {
+      "word": "INGRATITUDE",
+      "definitions": [
+        {
+          "text": "Want of gratitude; insensibility to, forgetfulness of, or ill return for, kindness or favors received; unthankfulness; ungratefulness. Ingratitude, thou marble-hearted fiend. Shak. Ingratitude is abhorred both by God and man. L'Estrange.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrave": {
+      "word": "INGRAVE",
+      "definitions": [
+        {
+          "text": "To engrave. [R.] \"Whose gleaming rind ingrav'n.\" Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bury. [Obs.] Heywood.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingravidate": {
+      "word": "INGRAVIDATE",
+      "definitions": [
+        {
+          "text": "To impregnate. [Obs.] Fuller.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingravidation": {
+      "word": "INGRAVIDATION",
+      "definitions": [
+        {
+          "text": "The state of being pregnant or impregnated. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingreat": {
+      "word": "INGREAT",
+      "definitions": [
+        {
+          "text": "To make great; to enlarge; to magnify. [Obs.] Fotherby.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingredienceingrediency": {
+      "word": "INGREDIENCE; INGREDIENCY",
+      "definitions": [
+        {
+          "text": "Entrance; ingress. [Obs.] Sir M. Hale.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The quality or state of being an ingredient or component part. Boyle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingredient": {
+      "word": "INGREDIENT",
+      "definitions": [
+        {
+          "text": "That which enters into a compound, or is a component part of any combination or mixture; an element; a constituent. By way of analysis we may proceed from compounds to ingredients. Sir I. Newton. Water is the chief ingredient in all the animal fluids and solids. Arbuthnot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Entering as, or forming, an ingredient or component part. Acts where no sin is ingredient. Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adjunct",
+        "appurtenance",
+        "aspect",
+        "census",
+        "circumstance",
+        "component",
+        "composition",
+        "constituent",
+        "constituents",
+        "content",
+        "contents",
+        "detail",
+        "divisions",
+        "element",
+        "elements",
+        "factor",
+        "feature",
+        "fixings",
+        "guts",
+        "index",
+        "ingredients",
+        "innards",
+        "insides",
+        "integrant",
+        "inventory",
+        "item",
+        "items",
+        "list",
+        "makings",
+        "part",
+        "part and parcel",
+        "parts",
+        "specialty",
+        "whole"
+      ]
+    },
+    "ingress": {
+      "word": "INGRESS",
+      "definitions": [
+        {
+          "text": "The act of entering; entrance; as, the ingress of air into the lungs.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Power or liberty of entrance or access; means of entering; as, all ingress was prohibited.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Astron.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The entrance of the moon into the shadow of the earth in eclipses, the sun's entrance into a sign, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To go in; to enter. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "access",
+        "adit",
+        "admission",
+        "admittance",
+        "air lock",
+        "approach",
+        "channel",
+        "come in",
+        "conduit",
+        "corridor",
+        "course",
+        "ditch",
+        "duct",
+        "egress",
+        "entrance",
+        "entranceway",
+        "entree",
+        "entry",
+        "entryway",
+        "exit",
+        "gangplank",
+        "gangway",
+        "go in",
+        "hall",
+        "in",
+        "ingression",
+        "inlet",
+        "intake",
+        "means of access",
+        "opening",
+        "passage",
+        "passageway",
+        "penetrate",
+        "trench",
+        "trough",
+        "troughing",
+        "troughway",
+        "tunnel",
+        "vestibule",
+        "way",
+        "way in"
+      ]
+    },
+    "ingression": {
+      "word": "INGRESSION",
+      "definitions": [
+        {
+          "text": "Act of entering; entrance. Sir K. Digby.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrieve": {
+      "word": "INGRIEVE",
+      "definitions": [
+        {
+          "text": "To render more grievous; to aggravate. [Obs.] Sir P. Sidney.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingroove": {
+      "word": "INGROOVE",
+      "definitions": [
+        {
+          "text": "To groove in; to join in or with a groove. Tennyson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingross": {
+      "word": "INGROSS",
+      "definitions": [
+        {
+          "text": "See Engross.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrowing": {
+      "word": "INGROWING",
+      "definitions": [
+        {
+          "text": "Growing or appearing to grow into some other substance. Ingrowing nail, one whose edges are becoming imbedded in the adjacent flesh.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingrowth": {
+      "word": "INGROWTH",
+      "definitions": [
+        {
+          "text": "A growth or development inward. J. LeConte.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inguen": {
+      "word": "INGUEN",
+      "definitions": [
+        {
+          "text": "The groin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inguilty": {
+      "word": "INGUILTY",
+      "definitions": [
+        {
+          "text": "Not guilty. [Obs.] Bp. Hall.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inguinal": {
+      "word": "INGUINAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or in the region of, the inguen or groin; as, an inguinal canal or ligament; inguinal hernia. Inguinal ring. See Abdominal ring, under Abdominal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingulf": {
+      "word": "INGULF",
+      "definitions": [
+        {
+          "text": "To swallow up or overwhelm in, or as in, a gulf; to cast into a gulf. See Engulf. A river large . . . Passed underneath ingulfed. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingulfment": {
+      "word": "INGULFMENT",
+      "definitions": [
+        {
+          "text": "The act of ingulfing, or the state of being ingulfed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingurgitate": {
+      "word": "INGURGITATE",
+      "definitions": [
+        {
+          "text": "To swallow, devour, or drink greedily or in large quantity; to guzzle. Cleveland.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To swallow up, as in a gulf. Fotherby.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To guzzle; to swill. Burton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingurgitation": {
+      "word": "INGURGITATION",
+      "definitions": [
+        {
+          "text": "The act of swallowing greedily or immoderately; that which is so swallowed. E. Darwin. He drowned his stomach and senses with a large draught and ingurgitation of wine. Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ingustable": {
+      "word": "INGUSTABLE",
+      "definitions": [
+        {
+          "text": "Tasteless; insipid. Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

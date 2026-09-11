@@ -1,0 +1,77 @@
+{
+  "version": "v1",
+  "entries": {
+    "hey": {
+      "word": "HEY",
+      "definitions": [
+        {
+          "text": "High. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An exclamation of joy, surprise, or encouragement. Shak.",
+          "partOfSpeech": "interjection"
+        },
+        {
+          "text": "A cry to set dogs on. Shak.",
+          "partOfSpeech": "interjection"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heyday": {
+      "word": "HEYDAY",
+      "definitions": [
+        {
+          "text": "An expression of frolic and exultation, and sometimes of wonder. B. Jonson.",
+          "partOfSpeech": "interjection"
+        },
+        {
+          "text": "The time of triumph and exultation; hence, joy, high spirits, frolicsomeness; wildness. The heyday in the blood is tame. Shak. In the heyday of their victories. J. H. Newman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heydeguy": {
+      "word": "HEYDEGUY",
+      "definitions": [
+        {
+          "text": "A kind of country-dance or round. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heyhheygh": {
+      "word": "HEYH; HEYGH",
+      "definitions": [
+        {
+          "text": "High. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heyne": {
+      "word": "HEYNE",
+      "definitions": [
+        {
+          "text": "A wretch; a rascal. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heyten": {
+      "word": "HEYTEN",
+      "definitions": [
+        {
+          "text": "Hence. [Obs.] Chaucer.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

@@ -1,0 +1,1507 @@
+{
+  "version": "v1",
+  "entries": {
+    "sen": {
+      "word": "SEN",
+      "definitions": [
+        {
+          "text": "A Japanese coin, worth about one half of a cent.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Since. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senary": {
+      "word": "SENARY",
+      "definitions": [
+        {
+          "text": "Of six; belonging to six; containing six. Dr. H. More.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senate": {
+      "word": "SENATE",
+      "definitions": [
+        {
+          "text": "An assembly or council having the highest deliberative and legislative functions. Specifically: (a) (Anc. Rom.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A body of elders appointed or elected from among the nobles of the nation, and having supreme legislative authority. The senate was thus the medium through which all affairs of the whole government had to pass. Dr. W. Smith. (b) The upper and less numerous branch of a legislature in various countries, as in France, in the United States, in most of the separate States of the United States, and in some Swiss cantons. (c) In general, a legislative body; a state council; the legislative department of government.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The governing body of the Universities of Cambridge and London. [Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In some American colleges, a council of elected students, presided over by the president of the college, to which are referred cases of discipline and matters of general concern affecting the students. [U. S.] Senate chamber, a room where a senate meets when it transacts business. business.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senator": {
+      "word": "SENATOR",
+      "definitions": [
+        {
+          "text": "A member of a senate. The duke and senators of Venice greet you. Shak. of six years to the national Congress.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(O.Eng.Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of the king's council; a king's councilor. Burrill.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senatorial": {
+      "word": "SENATORIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a senator, or a senate; becoming to a senator, or a senate; as, senatorial duties; senatorial dignity.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Entitled to elect a senator, or by senators; as, the senatorial districts of a State. [U. S.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senatorially": {
+      "word": "SENATORIALLY",
+      "definitions": [
+        {
+          "text": "In a senatorial manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senatorian": {
+      "word": "SENATORIAN",
+      "definitions": [
+        {
+          "text": "Senatorial. [R.] De Quincey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senatorious": {
+      "word": "SENATORIOUS",
+      "definitions": [
+        {
+          "text": "Senatorial. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senatorship": {
+      "word": "SENATORSHIP",
+      "definitions": [
+        {
+          "text": "The office or dignity of a senator. Carew.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senatusconsult": {
+      "word": "SENATUSCONSULT",
+      "definitions": [
+        {
+          "text": "A decree of the Roman senate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "send": {
+      "word": "SEND",
+      "definitions": [
+        {
+          "text": "To cause to go in any manner; to dispatch; to commission or direct to go; as, to send a messenger. I have not sent these prophets, yet they ran. Jer. xxiii. 21. I proceeded forth and came from God; neither came I of myself, but he sent me. John viii. 42. Servants, sent on messages, stay out somewhat longer than the message requires. Swift.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To give motion to; to cause to be borne or carried; to procure the going, transmission, or delivery of; as, to send a message. He . . . sent letters by posts on horseback. Esther viii. 10. O send out thy light an thy truth; let them lead me. Ps. xliii. 3.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To emit; to impel; to cast; to throw; to hurl; as, to send a ball, an arrow, or the like.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to be or to happen; to bestow; to inflict; to grant; -- sometimes followed by a dependent proposition. \"God send him well!\" Shak. The Lord shall send upon thee cursing, vexation, and rebuke. Deut. xxviii. 20. And sendeth rain on the just and on the unjust. Matt. v. 45. God send your mission may bring back peace. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To dispatch an agent or messenger to convey a message, or to do an errand. See ye how this son of a murderer hath sent to take away my head 2 Kings vi. 32.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pitch; as, the ship sends forward so violently as to endanger her masts. Totten. To send for, to request or require by message to come or be brought.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The impulse of a wave by which a vessel is carried bodily. [Written also scend.] W. C. Russell. \"The send of the sea\". Longfellow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sendal": {
+      "word": "SENDAL",
+      "definitions": [
+        {
+          "text": "A light thin stuff of silk. [Written also cendal, and sendal.] Chaucer. Wore she not a veil of twisted sendal embroidered with silver Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sender": {
+      "word": "SENDER",
+      "definitions": [
+        {
+          "text": "One who sends. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senecas": {
+      "word": "SENECAS",
+      "definitions": [
+        {
+          "text": "A tribe of Indians who formerly inhabited a part of Western New York. This tribe was the most numerous and most warlike of the Five Nations. Seneca grass(Bot.), holy grass. See under Holy. American species of milkworth (Polygala Senega) having an aromatic but bitter taste. It is often used medicinally as an expectorant and diuretic, and, in large doses, as an emetic and cathartic. [Written also Senega root, and Seneka root.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senecio": {
+      "word": "SENECIO",
+      "definitions": [
+        {
+          "text": "A very large genus of composite plants including the groundsel and the golden ragwort.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senectitude": {
+      "word": "SENECTITUDE",
+      "definitions": [
+        {
+          "text": "Old age. [R.] \"Senectitude, weary of its toils.\" H. Miller.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senega": {
+      "word": "SENEGA",
+      "definitions": [
+        {
+          "text": "Seneca root.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senegal": {
+      "word": "SENEGAL",
+      "definitions": [
+        {
+          "text": "Gum senegal. See under Gum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senegin": {
+      "word": "SENEGIN",
+      "definitions": [
+        {
+          "text": "A substance extracted from the rootstock of the Polygala Senega (Seneca root), and probably identical with polygalic acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senescence": {
+      "word": "SENESCENCE",
+      "definitions": [
+        {
+          "text": "The state of growing old; decay by time.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senescent": {
+      "word": "SENESCENT",
+      "definitions": [
+        {
+          "text": "Growing old; decaying with the lapse of time. \"The night was senescent.\" Poe. \"With too senescent air.\" Lowell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seneschal": {
+      "word": "SENESCHAL",
+      "definitions": [
+        {
+          "text": "An officer in the houses of princes and dignitaries, in the Middle Ages, who had the superintendence of feasts and domestic ceremonies; a steward. Sometimes the seneschal had the dispensing of justice, and was given high military commands. Then marshaled feast Served up in hall with sewers and seneschale. Milton. Philip Augustus, by a famous ordinance in 1190, first established royal courts of justice, held by the officers called baitiffs, or seneschals, who acted as the king's lieutenants in his demains. Hallam.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seneschalship": {
+      "word": "SENESCHALSHIP",
+      "definitions": [
+        {
+          "text": "The office, dignity, or jurisdiction of a seneschal.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senge": {
+      "word": "SENGE",
+      "definitions": [
+        {
+          "text": "To singe. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sengreen": {
+      "word": "SENGREEN",
+      "definitions": [
+        {
+          "text": "The houseleek.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senile": {
+      "word": "SENILE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to old age; proceeding from, or characteristic of, old age; affected with the infirmities of old age; as, senile weakness. \"Senile maturity of judgment.\" Boyle. Senile gangrene (Med.), a form of gangrene occuring particularly in old people, and caused usually by insufficient blood supply due to degeneration of the walls of the smaller arteries.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senility": {
+      "word": "SENILITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being senile; old age.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senior": {
+      "word": "SENIOR",
+      "definitions": [
+        {
+          "text": "More advanced than another in age; prior in age; elder; hence, more advanced in dignity, rank, or office; superior; as, senior member; senior counsel.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Belonging to the final year of the regular course in American colleges, or in professional schools.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A person who is older than another; one more advanced in life.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One older in office, or whose entrance upon office was anterior to that of another; one prior in grade.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An aged person; an older. Dryden. Each village senior paused to scan, And speak the lovely caravan. Emerson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One in the fourth or final year of his collegiate course at an American college; -- originally called senior sophister; also, one in the last year of the course at a professional schools or at a seminary.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seniority": {
+      "word": "SENIORITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being senior.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seniorize": {
+      "word": "SENIORIZE",
+      "definitions": [
+        {
+          "text": "To exercise authority; to rule; to lord it. [R.] Fairfax.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seniory": {
+      "word": "SENIORY",
+      "definitions": [
+        {
+          "text": "Seniority. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senna": {
+      "word": "SENNA",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The leaves of several leguminous plants of the genus Cassia. (C. acutifolia. C. angustifolia, etc.). They constitute a valuable but nauseous cathartic medicine.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The plants themselves, native to the East, but now cultivated largely in the south of Europe and in the West Indies. Bladder senna. (Bot.) See under Bladder. States, the leaves of which are used medicinally, like those of the officinal senna.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sennachy": {
+      "word": "SENNACHY",
+      "definitions": [
+        {
+          "text": "See Seannachie.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sennet": {
+      "word": "SENNET",
+      "definitions": [
+        {
+          "text": "A signal call on a trumpet or cornet for entrance or exit on the stage. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The barracuda.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sennight": {
+      "word": "SENNIGHT",
+      "definitions": [
+        {
+          "text": "The space of seven nights and days; a week. [Written also se'nnight.] [Archaic.] Shak. Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sennit": {
+      "word": "SENNIT",
+      "definitions": [
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A braided cord or fabric formed by plaiting together rope yarns or other small stuff.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Plaited straw or palm leaves for making hats.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senocular": {
+      "word": "SENOCULAR",
+      "definitions": [
+        {
+          "text": "Having six eyes. [R.] Derham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senonian": {
+      "word": "SENONIAN",
+      "definitions": [
+        {
+          "text": "In european geology, a name given to the middle division of the Upper Cretaceous formation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senorasenhora": {
+      "word": "SENORA; SENHORA",
+      "definitions": [
+        {
+          "text": "A Spanish title of courtesy given to a lady; Mrs.; Madam; also, a lady.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senoritasenhorita": {
+      "word": "SENORITA; SENHORITA",
+      "definitions": [
+        {
+          "text": "A Spanish title of courtesy given to a young lady; Miss; also, a young lady.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senorsenhor": {
+      "word": "SENOR; SENHOR",
+      "definitions": [
+        {
+          "text": "A Spanish title of courtesy corresponding to the English Mr. or Sir; also, a gentleman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sens": {
+      "word": "SENS",
+      "definitions": [
+        {
+          "text": "Since. [Obs.] Spenser.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensate": {
+      "word": "SENSATE",
+      "definitions": [
+        {
+          "text": "To feel or apprehend more or less distinctly through a sense, or the senses; as, to sensate light, or an odor. As those of the one are sensated by the ear, so those of the other are by the eye. R. Hooke.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensatesensated": {
+      "word": "SENSATE; SENSATED",
+      "definitions": [
+        {
+          "text": "Felt or apprehended through a sense, or the senses. [R.] Baxter.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensation": {
+      "word": "SENSATION",
+      "definitions": [
+        {
+          "text": "(Physiol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An impression, or the consciousness of an impression, made upon the central nervous organ, through the medium of a sensory or afferent nerve or one of the organs of sense; a feeling, or state of consciousness, whether agreeable or disagreeable, produced either by an external object (stimulus), or by some change in the internal state of the body. Perception is only a special kind of knowledge, and sensation a special kind of feeling. . . . Knowledge and feeling, perception and sensation, though always coexistent, are always in the inverse ratio of each other. Sir W. Hamilton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A purely spiritual or psychical affection; agreeable or disagreeable feelings occasioned by objects that are not corporeal or material.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A state of excited interest or feeling, or that which causes it. The sensation caused by the appearance of that work is still remembered by many. Brougham. used in mental philosophy, may be thus stated; if I simply smell a rose, I have a sensation; if I refer that smell to the external object which occasioned it, I have a perception. Thus, the former is mere feeling, without the idea of an object; the latter is the mind's apprehension of some external object as occasioning that feeling. \"Sensation properly expresses that change in the state of the mind which is produced by an impression upon an organ of sense (of which change we can conceive the mind to be conscious, without any knowledge of external objects). Perception, on the other hand, expresses the knowledge or the intimations we obtain by means of our sensations concerning the qualities of matter, and consequently involves, in every instance, the notion of externality, or outness, which it is necessary to exclude in order to seize the precise import of the word sensation.\" Fleming.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensational": {
+      "word": "SENSATIONAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to sensation; as, sensational nerves.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to sensationalism, or the doctrine that sensation is the sole origin of knowledge.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Suited or intended to excite temporarily great interest or emotion; melodramatic; emotional; as, sensational plays or novels; sensational preaching; sensational journalism; a sensational report.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensationalism": {
+      "word": "SENSATIONALISM",
+      "definitions": [
+        {
+          "text": "(Metaph.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The doctrine held by Condillac, and by some ascribed to Locke, that our ideas originate solely in sensation, and consist of sensations transformed; sensualism; -- opposed to intuitionalism, and rationalism.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The practice or methods of sensational writing or speaking; as, the sensationalism of a novel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensationalist": {
+      "word": "SENSATIONALIST",
+      "definitions": [
+        {
+          "text": "(Metaph.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An advocate of, or believer in, philosophical sensationalism.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who practices sensational writing or speaking.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sense": {
+      "word": "SENSE",
+      "definitions": [
+        {
+          "text": "To perceive by the senses; to recognize. [Obs. or Colloq.] Is he sure that objects are not otherwise sensed by others than they are by him Glanvill.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sense1ofcreissantincreasingfcroissantpprofcroof": {
+      "word": "sense 1), OF. creissant increasing, F. croissant, p. pr. of cro, OF.",
+      "definitions": [
+        {
+          "text": "The increasing moon; the moon in her first quarter, or when defined by a concave and a convex edge; also, applied improperly to the old or decreasing moon in a like state.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Anything having the shape of a crescent or new moon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A representation of the increasing moon, often used as an emblem or badge; as: (a) A symbol of Artemis, or Diana. (b) The ancient symbol of Byzantium or Constantinople. Hence: (c) The emblem of the Turkish Empire, adopted after the taking of Constantinople. The cross of our faith is replanted, The pale, dying crescent is daunted. Campbell.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Any one of three orders of knighthood; the first instituted by Charles I., king of Naples and Sicily, in 1268; the second by René of Anjou, in 1448; and the third by the Sultan Selim III., in 1801, to be conferred upon foreigners to whom Turkey might be indebted for valuable services. Brande & C.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The emblem of the increasing moon with horns directed upward, when used in a coat of arms; -- often used as a mark of cadency to distinguish a second son and his descendants.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senseful": {
+      "word": "SENSEFUL",
+      "definitions": [
+        {
+          "text": "Full of sense, meaning, or reason; reasonable; judicious. [R.] \"Senseful speech.\" Spenser. \"Men, otherwise senseful and ingenious.\" Norris.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senseless": {
+      "word": "SENSELESS",
+      "definitions": [
+        {
+          "text": "Destitute of, deficient in, or contrary to, sense; without sensibility or feeling; unconscious; stupid; foolish; unwise; unreasonable. You blocks, you stones, you worse than senseless things. Shak. The ears are senseless that should give us hearing. Shak. The senseless grave feels not your pious sorrows. Rowe. They were a senseless, stupid race. Swift. They would repent this their senseless perverseness when it would be",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senseormoreprobfrdgekscherentojeerlittoshearthe": {
+      "word": "sense; or more prob. fr. D. gekscheren to jeer, lit., to shear the",
+      "definitions": [
+        {
+          "text": "To utter sarcastic or scoffing reflections; to speak with mockery or derision; to use taunting language; to scoff; as, to jeer at a speaker. But when he saw her toy and gibe and jeer. Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensibility": {
+      "word": "SENSIBILITY",
+      "definitions": [
+        {
+          "text": "(Physiol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The quality or state of being sensible, or capable of sensation; capacity to feel or perceive.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The capacity of emotion or feeling, as distinguished from the intellect and the will; peculiar susceptibility of impression, pleasurable or painful; delicacy of feeling; quick emotion or sympathy; as, sensibility to pleasure or pain; sensibility to shame or praise; exquisite sensibility; -- often used in the plural. \"Sensibilities so fine!\" Cowper. The true lawgiver ought to have a heart full of sensibility. Burke. His sensibilities seem rather to have been those of patriotism than of wounded pride. Marshall.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Experience of sensation; actual feeling. This adds greatly to my sensibility. Burke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That quality of an instrument which makes it indicate very slight changes of condition; delicacy; as, the sensibility of a balance, or of a thermometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensible": {
+      "word": "SENSIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being perceived by the senses; apprehensible through the bodily organs; hence, also, perceptible to the mind; making an impression upon the sense, reason, or understanding; sensible resistance. Air is sensible to the touch by its motion. Arbuthnot. The disgrace was more sensible than the pain. Sir W. Temple. Any very sensible effect upon the prices of things. A. Smith.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the capacity of receiving impressions from external objects; capable of perceiving by the instrumentality of the proper organs; liable to be affected physsically or mentally; impressible. Would your cambric were sensible as your finger. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Hence: Liable to impression from without; easily affected; having nice perception or acute feeling; sensitive; also, readily moved or affected by natural agents; delicate; as, a sensible thermometer. \"With affection wondrous sensible.\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Perceiving or having perception, either by the senses or the mind; cognizant; perceiving so clearly as to be convinced; satisfied; persuaded. He [man] can not think at any time, waking or sleeping, without being sensible of it. Locke. They are now sensible it would have been better to comply than to refuse. Addison.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having moral perception; capable of being affected by moral good or evil.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Possessing or containing sense or reason; giftedwith, or characterized by, good or common sense; intelligent; wise. Now a sensible man, by and by a fool. Shak. Sensible note or tone (Mus.), the major seventh note of any scale; -- so called because, being but a half step below the octave, or key tone, and naturally leading up to that, it makes the ear sensible of",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Sensation; sensibility. [R.] \"Our temper changed . . . which must needs remove the sensible of pain.\" Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which impresses itself on the sense; anything perceptible. Aristotle distinguished sensibles into common and proper. Krauth- Fleming.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which has sensibility; a sensitive being. [R.] This melancholy extends itself not to men only, but even to vegetals and sensibles. Burton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensibleness": {
+      "word": "SENSIBLENESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being sensible; sensibility; appreciation; capacity of perception; susceptibility. \"The sensibleness of the eye.\" Sharp. \"Sensibleness and sorrow for sin.\" Hammond. The sensibleness of the divine presence. Hallywell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Intelligence; reasonableness; good sense.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensibly": {
+      "word": "SENSIBLY",
+      "definitions": [
+        {
+          "text": "In a sensible manner; so as to be perceptible to the senses or to the mind; appreciably; with perception; susceptibly; sensitively. What remains past cure, Bear not too sensibly. Milton.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "With intelligence or good sense; judiciously.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensifacient": {
+      "word": "SENSIFACIENT",
+      "definitions": [
+        {
+          "text": "Converting into sensation. Huxley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensiferous": {
+      "word": "SENSIFEROUS",
+      "definitions": [
+        {
+          "text": "Exciting sensation; conveying sensation. Huxley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensific": {
+      "word": "SENSIFIC",
+      "definitions": [
+        {
+          "text": "Exciting sensation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensificatory": {
+      "word": "SENSIFICATORY",
+      "definitions": [
+        {
+          "text": "Susceptible of, or converting into, sensation; as, the sensificatory part of a nervous system. Huxley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensigenous": {
+      "word": "SENSIGENOUS",
+      "definitions": [
+        {
+          "text": "Causing or exciting sensation. Huxley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensism": {
+      "word": "SENSISM",
+      "definitions": [
+        {
+          "text": "Same as Sensualism, 2 & 3.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensist": {
+      "word": "SENSIST",
+      "definitions": [
+        {
+          "text": "One who, in philosophy, holds to sensism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensitive": {
+      "word": "SENSITIVE",
+      "definitions": [
+        {
+          "text": "Having sense of feeling; possessing or exhibiting the capacity of receiving impressions from external objects; as, a sensitive soul.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having quick and acute sensibility, either to the action of external objects, or to impressions upon the mind and feelings; highly susceptible; easily and acutely affected. She was too sensitive to abuse and calumny. Macaulay. 3. (a) (Mech.) Having a capacity of being easily affected or moved; as, a sensitive thermometer; sensitive scales. (b) (Chem. & Photog.) Readily affected or changed by certain appropriate agents; as, silver chloride or bromide, when in contact with certain organic substances, is extremely sensitive to actinic rays.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Serving to affect the sense; sensible. [R.] A sensitive love of some sensitive objects. Hammond.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to sensation; depending on sensation; as, sensitive motions; sensitive muscular motions excited by irritation. E. Darwin. Sensitive fern (Bot.), an American fern (Onoclea sensibilis), the leaves of which, when plucked, show a slight tendency to fold together. suitable adjustment of pressure it is exceedingly sensitive to sounds, being caused to roar, flare, or become suddenly shortened or extinguished, by slight sounds of the proper pitch. (Æschynomene hispida), with sensitive foliage. rendered sensitive to the effect of light. M. sensitiva, and other allied species), the leaves of which close at the slightest touch. (b) Any plant showing motions after irritation, as the sensitive brier (Schrankia) of the Southern States, two common American species of Cassia (C. nictitans, and C. Chamæcrista), a kind",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensitivity": {
+      "word": "SENSITIVITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being sensitive; -- used chiefly in science and the arts; as, the sensitivity of iodized silver. Sensitivity and emotivity have also been used as the scientific term for the capacity of feeling. Hickok.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensitize": {
+      "word": "SENSITIZE",
+      "definitions": [
+        {
+          "text": "To render sensitive, or susceptible of being easily acted on by the actinic rays of the sun; as, sensitized paper or plate.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensitizer": {
+      "word": "SENSITIZER",
+      "definitions": [
+        {
+          "text": "An agent that sensitizes. The sensitizer should be poured on the middle of the sheet. Wilis & Clements (The Platinotype).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensitometer": {
+      "word": "SENSITOMETER",
+      "definitions": [
+        {
+          "text": "An instrument or apparatus for comparing and grading the sensitiveness of plates, films, etc., as a screen divided into squares of different shades or colors, from which a picture is made on the plate to be tested.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensitory": {
+      "word": "SENSITORY",
+      "definitions": [
+        {
+          "text": "See Sensory.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensive": {
+      "word": "SENSIVE",
+      "definitions": [
+        {
+          "text": "Having sense or sensibility; sensitive. [Obs.] Sir P. Sidney.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensor": {
+      "word": "SENSOR",
+      "definitions": [
+        {
+          "text": "Sensory; as, the sensor nerves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensorial": {
+      "word": "SENSORIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the sensorium; as, sensorial faculties, motions, powers. A. Tucker.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensorium": {
+      "word": "SENSORIUM",
+      "definitions": [
+        {
+          "text": "The seat of sensation; the nervous center or centers to which impressions from the external world must be conveyed before they can be perceived; the place where external impressions are localized, and transformed into sensations, prior to being reflected to other parts of the organism; hence, the whole nervous system, when animated, so far as it is susceptible of common or special sensations.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensorivolitional": {
+      "word": "SENSORI-VOLITIONAL",
+      "definitions": [
+        {
+          "text": "Concerned both in sensation and volition; -- applied to those nerve fibers which pass to and from the cerebro-spinal axis, and are respectively concerned in sensation and volition. Dunglison.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensory": {
+      "word": "SENSORY",
+      "definitions": [
+        {
+          "text": "Same as Sensorium.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the sensorium or sensation; as, sensory impulses; -- especially applied to those nerves and nerve fibers which convey to a nerve center impulses resulting in sensation; also sometimes loosely employed in the sense of afferent, to indicate nerve fibers which convey impressions of any kind to a nerve center.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensual": {
+      "word": "SENSUAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, consisting in, or affecting, the sense, or bodily organs of perception; relating to, or concerning, the body, in distinction from the spirit. Pleasing and sensual rites and ceremonies. Bacon. Far as creation's ample range extends, The scale of sensual, mental powers ascends. Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Hence, not spiritual or intellectual; carnal; fleshly; pertaining to, or consisting in, the gratification of the senses, or the indulgence of appetites; wordly. These be they who separate themselves, sensual, having not the Spirit. Jude 19. The greatest part of men are such as prefer . . . that good which is sensual before whatsoever is most divine. Hooker.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Devoted to the pleasures of sense and appetite; luxurious; voluptuous; lewd; libidinous. No small part of virtue consists in abstaining from that wherein sensual men place their felicity. Atterbury.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining or peculiar to the philosophical doctrine of sensualism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensualism": {
+      "word": "SENSUALISM",
+      "definitions": [
+        {
+          "text": "The condition or character of one who is sensual; subjection to sensual feelings and appetite; sensuality.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Philos.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The doctrine that all our ideas, or the operations of the understanding, not only originate in sensation, but are transformed sensations, copies or relics of sensations; sensationalism; sensism.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Ethics)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The regarding of the gratification of the senses as the highest good. Krauth-Fleming.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensualist": {
+      "word": "SENSUALIST",
+      "definitions": [
+        {
+          "text": "One who is sensual; one given to the indulgence of the appetites or senses as the means of happiness.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who holds to the doctrine of sensualism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensualistic": {
+      "word": "SENSUALISTIC",
+      "definitions": [
+        {
+          "text": "Sensual.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Adopting or teaching the doctrines of sensualism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensuality": {
+      "word": "SENSUALITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being sensual; devotedness to the gratification of the bodily appetites; free indulgence in carnal or sensual pleasures; luxuriousness; voluptuousness; lewdness. Those pampered animals That rage in savage sensuality. Shak. They avoid dress, lest they should have affections tainted by any sensuality. Addison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensualization": {
+      "word": "SENSUALIZATION",
+      "definitions": [
+        {
+          "text": "The act of sensualizing, or the state of being sensualized.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensualize": {
+      "word": "SENSUALIZE",
+      "definitions": [
+        {
+          "text": "To make sensual; to subject to the love of sensual pleasure; to debase by carnal gratifications; to carnalize; as, sensualized by pleasure. Pope. By the neglect of prayer, the thoughts are sensualized. T. H. Skinner.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensually": {
+      "word": "SENSUALLY",
+      "definitions": [
+        {
+          "text": "In a sensual manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensualness": {
+      "word": "SENSUALNESS",
+      "definitions": [
+        {
+          "text": "Sensuality; fleshliness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensuism": {
+      "word": "SENSUISM",
+      "definitions": [
+        {
+          "text": "Sensualism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensuosity": {
+      "word": "SENSUOSITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being sensuous; sensuousness. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sensuous": {
+      "word": "SENSUOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the senses, or sensible objects; addressing the senses; suggesting pictures or images of sense. To this poetry would be made precedent, as being less subtle and fine, but more simple, sensuous, and passionate. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Highly susceptible to influence through the senses.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sent": {
+      "word": "SENT",
+      "definitions": [
+        {
+          "text": "obs. 3d pers. sing. pres. of Send, for sendeth.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "imp. & p. p. of Send.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentence": {
+      "word": "SENTENCE",
+      "definitions": [
+        {
+          "text": "To pass or pronounce judgment upon; to doom; to condemn to punishment; to prescribe the punishment of. Nature herself is sentenced in your doom. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To decree or announce as a sentence. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To utter sentenciously. [Obs.] Feltham.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentencemethod": {
+      "word": "SENTENCE METHOD",
+      "definitions": [
+        {
+          "text": "A method of teaching reading by giving first attention to phrases and sentences and later analyzing these into their verbal and alphabetic components; -- contrasted with alphabet and word methods.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentencer": {
+      "word": "SENTENCER",
+      "definitions": [
+        {
+          "text": "One who pronounced a sentence or condemnation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentential": {
+      "word": "SENTENTIAL",
+      "definitions": [
+        {
+          "text": "Comprising sentences; as, a sentential translation. Abp. Newcome.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a sentence, or full period; as, a sentential pause.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sententially": {
+      "word": "SENTENTIALLY",
+      "definitions": [
+        {
+          "text": "In a sentential manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sententiarist": {
+      "word": "SENTENTIARIST",
+      "definitions": [
+        {
+          "text": "A sententiary. Barnas Sears (Life of Luther).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sententiary": {
+      "word": "SENTENTIARY",
+      "definitions": [
+        {
+          "text": "One who read lectures, or commented, on the Sentences of Peter Lombard, Bishop of Paris (1159-1160), a school divine. R. Henry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sententiosity": {
+      "word": "SENTENTIOSITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being sententious. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sententious": {
+      "word": "SENTENTIOUS",
+      "definitions": [
+        {
+          "text": "Abounding with sentences, axioms, and maxims; full of meaning; terse and energetic in expression; pithy; as, a sententious style or discourse; sententious truth. How he apes his sire, Ambitiously sententious! Addison.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Comprising or representing sentences; sentential. [Obs.] \"Sententious marks.\" Grew. --- Sen*ten\"tious*ly, adv.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentery": {
+      "word": "SENTERY",
+      "definitions": [
+        {
+          "text": "A sentry. [Obs.] Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senteur": {
+      "word": "SENTEUR",
+      "definitions": [
+        {
+          "text": "Scent. [Obs.] Holland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentiencesentiency": {
+      "word": "SENTIENCE; SENTIENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being sentient; esp., the quality or state of having sensation. G. H. Lewes An example of harmonious action between the intelligence and the sentieny of the mind. Earle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentient": {
+      "word": "SENTIENT",
+      "definitions": [
+        {
+          "text": "Having a faculty, or faculties, of sensation and perception. Specif. (Physiol.), especially sensitive; as, the sentient extremities of nerves, which terminate in the various organs or tissues.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One who has the faculty of perception; a sentient being.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentiently": {
+      "word": "SENTIENTLY",
+      "definitions": [
+        {
+          "text": "In a sentient or perceptive way.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentimental": {
+      "word": "SENTIMENTAL",
+      "definitions": [
+        {
+          "text": "Having, expressing, or containing a sentiment or sentiments; abounding with moral reflections; containing a moral reflection; didactic. [Obsoles.] Nay, ev'n each moral sentimental stroke, Where not the character, but poet, spoke, He lopped, as foreign to his chaste design, Nor spared a useless, though a golden line. Whitehead.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Inclined to sentiment; having an excess of sentiment or sensibility; indulging the sensibilities for their own sake; artificially or affectedly tender; -- often in a reproachful sense. A sentimental mind is rather prone to overwrought feeling and exaggerated tenderness. Whately.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Addressed or pleasing to the emotions only, usually to the weaker and the unregulated emotions. excess of the sensibilities; romantic, a vice of the imagination. The votary of the former gives indulgence to his sensibilities for the mere luxury of their excitement; the votary of the latter allows his imagination to rove for the pleasure of creating scenes of ideal enjoiment. \"Perhaps there is no less danger in works called sentimental. They attack the heart more successfully, because more cautiously.\" V. Knox. \"I can not but look on an indifferency of mind, as to the good or evil things of this life, as a mere romantic fancy of such who would be thought to be much wiser than they ever were, or could be.\" Bp. Stillingfleet.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentimentalism": {
+      "word": "SENTIMENTALISM",
+      "definitions": [
+        {
+          "text": "The quality of being sentimental; the character or behavior of a sentimentalist; sentimentality.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentimentalist": {
+      "word": "SENTIMENTALIST",
+      "definitions": [
+        {
+          "text": "One who has, or affects, sentiment or fine feeling.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentimentality": {
+      "word": "SENTIMENTALITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being sentimental.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentimentalize": {
+      "word": "SENTIMENTALIZE",
+      "definitions": [
+        {
+          "text": "To regard in a sentimental manner; as, to sentimentalize a subject.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To think or act in a sentimental manner, or like a sentimentalist; to affect exquisite sensibility. C. Kingsley.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentimentally": {
+      "word": "SENTIMENTALLY",
+      "definitions": [
+        {
+          "text": "In a sentimental manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentine": {
+      "word": "SENTINE",
+      "definitions": [
+        {
+          "text": "A place for dregs and dirt; a sink; a sewer. [Obs.] Latimer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentinel": {
+      "word": "SENTINEL",
+      "definitions": [
+        {
+          "text": "One who watches or guards; specifically (Mil.), a soldier set to guard an army, camp, or other place, from surprise, to observe the approach of danger, and give notice of it; a sentry. The sentinels who paced the ramparts. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Watch; guard. [Obs.] \"That princes do keep due sentinel.\" Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A marine crab (Podophthalmus vigil) native of the Indian Ocean, remarkable for the great length of its eyestalks; -- called also sentinel crab.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To watch over like a sentinel. \"To sentinel enchanted land.\" [R.] Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To furnish with a sentinel; to place under the guard of a sentinel or sentinels.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentiretodiscernbythesensesandthemindtofeeltothinksee": {
+      "word": "sentire to discern by the senses and the mind, to feel, to think. See",
+      "definitions": [
+        {
+          "text": "Sense; meaning; significance. [Obs.] Tales of best sentence and most solace. Chaucer. The discourse itself, voluble enough, and full of sentence. Milton. 2. (a) An opinion; a decision; a determination; a judgment, especially one of an unfavorable nature. My sentence is for open war. Milton. That by them [Luther's works] we may pass sentence upon his doctrines. Atterbury. (b) A philosophical or theological opinion; a dogma; as, Summary of the Sentences; Book of the Sentences.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In civil and admiralty law, the judgment of a court pronounced in a cause; in criminal and ecclesiastical courts, a judgment passed on a criminal by a court or judge; condemnation pronounced by a judgical tribunal; doom. In common law, the term is exclusively used to denote the judgment in criminal cases. Received the sentence of the law. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A short saying, usually containing moral instruction; a maxim; an axiom; a saw. Broome.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Gram.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A combination of words which is complete as expressing a thought, and in writing is marked at the close by a period, or full point. See Proposition, 4. one subject and one finite verb; as, \"The Lord reigns.\" A compound sentence contains two or more subjects and finite verbs, as in this verse: - He fills, he bounds, connects, and equals all. Pope. Dark sentence, a saving not easily explained. A king . . . understanding dark sentences. Dan. vii. 23.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentisection": {
+      "word": "SENTISECTION",
+      "definitions": [
+        {
+          "text": "Painful vivisection; -- opposed to callisection. B. G. Wilder.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentry": {
+      "word": "SENTRY",
+      "definitions": [
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A soldier placed on guard; a sentinel.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Guard; watch, as by a sentinel. Here toils, and death, and death's half-brother, sleep, Forms terrible to view, their sentry keep. Dryden. Sentry box, a small house or box to cover a sentinel at his post, and shelter him from the weather.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senza": {
+      "word": "SENZA",
+      "definitions": [
+        {
+          "text": "Without; as, senza stromenti, without instruments.",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}
