@@ -1833,6 +1833,31 @@ test('Word Study opens from a Reader word with exact local verse context and res
   await expect(word).toBeFocused();
 });
 
+test('Word Study original-language provider exposes fixture lookups without changing dictionary lookup', async ({ page }) => {
+  const result = await page.evaluate(async () => {
+    const context = (word) => ({ lookupTerm: word, displayWord: word });
+    const beginning = await OriginalLanguageWordStudyProvider.lookup(context('beginning'));
+    const missing = await WordStudyProvider.lookupOriginalLanguage(context('missing'));
+    const dictionary = await WordStudyProvider.lookup(context('beginning'));
+    return {
+      providerExists: typeof OriginalLanguageWordStudyProvider !== 'undefined',
+      beginning,
+      missing,
+      dictionary
+    };
+  });
+  expect(result.providerExists).toBeTruthy();
+  expect(result.beginning.status).toBe('available');
+  expect(result.beginning.strongsNumber).toBe('DEMO-H0001');
+  expect(result.beginning.language).toBe('demo-hebrew');
+  expect(result.beginning.source).toContain('not a production lexical record');
+  expect(result.missing.status).toBe('unavailable');
+  expect(result.missing.word).toBe('missing');
+  expect(result.missing.message).toContain('not available');
+  expect(result.dictionary.status).toBe('available');
+  expect(result.dictionary.definition).toContain('The act of doing that which begins anything');
+});
+
 test('Word Study importer creates deterministic two-character fixture shards', async () => {
   const outputDirectory = fs.mkdtempSync(path.join(os.tmpdir(), 'god4-word-study-'));
   try {
