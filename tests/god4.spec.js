@@ -4,6 +4,7 @@ const os = require('os');
 const path = require('path');
 const { execFileSync } = require('child_process');
 const wordStudyImporter = require('../tools/import-word-study');
+const originalLanguageImporter = require('../tools/import-original-language');
 
 test.beforeEach(async ({ page }) => {
   const resetKey = `god4.testReset.${Date.now()}.${Math.random()}`;
@@ -1856,6 +1857,31 @@ test('Word Study original-language provider exposes fixture lookups without chan
   expect(result.missing.message).toContain('not available');
   expect(result.dictionary.status).toBe('available');
   expect(result.dictionary.definition).toContain('The act of doing that which begins anything');
+});
+
+test('Word Study original-language importer normalizes Unicode records and rejects malformed input', () => {
+  const record = originalLanguageImporter.normalizeRecord({
+    status: 'fixture', strongsNumber: 'fixture-strongs', language: 'fixture-hebrew',
+    lemma: 'fixture-lemma', transliteration: 'fixture-transliteration', pronunciation: 'fixture-pronunciation',
+    partOfSpeech: 'fixture-part-of-speech', definition: 'fixture-definition', morphology: 'fixture-morphology',
+    source: 'Phase C2 test fixture', bookId: 'Genesis', chapter: 1, verse: 1, tokenIndex: 0, surface: 'עברית'
+  });
+  expect(record.bookId).toBe('genesis');
+  expect(record.surface).toBe('עברית');
+  expect(() => originalLanguageImporter.normalizeRecord({ ...record, tokenIndex: '0' })).toThrow(/tokenIndex/);
+});
+
+test('Word Study original-language provider loads static records by Scripture location', async ({ page }) => {
+  const result = await page.evaluate(async () => ({
+    hebrew: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 1, verse: 1, tokenIndex: 0, displayWord: 'beginning', lookupTerm: 'beginning' }),
+    greek: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'john', chapter: 1, verse: 1, tokenIndex: 0, displayWord: 'word', lookupTerm: 'word' }),
+    missing: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 1, verse: 2, tokenIndex: 0, displayWord: 'beginning', lookupTerm: 'beginning' })
+  }));
+  expect(result.hebrew.status).toBe('fixture');
+  expect(result.hebrew.surface).toBe('fixture-עברית');
+  expect(result.greek.language).toBe('fixture-greek');
+  expect(result.greek.surface).toBe('fixture-ελληνικά');
+  expect(result.missing.status).toBe('unavailable');
 });
 
 test('Word Study importer creates deterministic two-character fixture shards', async () => {
