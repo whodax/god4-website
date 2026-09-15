@@ -118,6 +118,16 @@
   .word-study-related{font:italic 15px/1.4 'EB Garamond',serif;margin:8px 0;color:var(--ink-soft);}
   .word-study-verse{border-top:1px solid var(--line);margin:12px 0 8px;padding-top:10px;font:italic 15px/1.5 'EB Garamond',serif;color:var(--ink-soft);}
   .word-study-source{margin:0;}
+  .word-study-original{border-top:1px solid var(--line);margin-top:14px;padding-top:12px;}
+  .word-study-original h4{margin:0;color:var(--oxblood);font:600 17px 'Cormorant Garamond',serif;}
+  .word-study-original-note{margin:2px 0 8px;color:var(--ink-soft);font:11px 'Inter',sans-serif;letter-spacing:.04em;}
+  .word-study-original-tokens{display:flex;flex-wrap:wrap;gap:5px;align-items:center;}
+  .word-study-original-token{background:var(--vellum-card);border:1px solid var(--line);border-radius:2px;color:var(--ink);cursor:pointer;font:18px/1.3 'EB Garamond',serif;padding:4px 7px;}
+  .word-study-original-token:hover,.word-study-original-token[aria-pressed="true"]{border-color:var(--gold);}
+  .word-study-original-token:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+  .word-study-original-details{border-top:1px solid var(--line);display:grid;grid-template-columns:max-content 1fr;gap:3px 10px;margin:10px 0 0;padding-top:9px;}
+  .word-study-original-details dt{color:var(--ink-soft);font:11px 'Inter',sans-serif;letter-spacing:.04em;text-transform:uppercase;}
+  .word-study-original-details dd{margin:0;color:var(--ink);font:15px/1.35 'EB Garamond',serif;}
   .reader-controls button:disabled,.reader-audio-controls button:disabled{opacity:.5;cursor:not-allowed;}
   .reader-controls button:disabled:hover,.reader-audio-controls button:disabled:hover{border-color:var(--line);color:var(--ink-soft);}
 

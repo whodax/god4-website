@@ -1895,6 +1895,63 @@ test('Word Study authoritative parsers preserve tiny OSHB and Unicode Greek extr
   expect(greekLexicon.get('G1473').definition).toBe('I, me');
 });
 
+test('Word Study renders authoritative Hebrew tokens at verse level', async ({ page }) => {
+  await page.evaluate(() => handleVoiceCommand('open Genesis 1'));
+  await expect(page.locator('#readerContent')).toContainText('Genesis 1');
+  await page.getByRole('button', { name: /Study word/ }).first().click();
+  const section = page.locator('#wordStudyOriginalLanguage');
+  await expect(section).toBeVisible();
+  const tokens = section.locator('.word-study-original-token');
+  const expected = await page.evaluate(() => fetch('data/word-study/original-language/genesis/1.json').then(response => response.json()).then(data => data.records.filter(record => record.verse === 1).sort((left, right) => left.tokenIndex - right.tokenIndex).map(record => record.surface)));
+  await expect(tokens).toHaveText(expected);
+  await expect(section.locator('#wordStudyOriginalTokens')).toHaveAttribute('dir', 'rtl');
+  await expect(tokens.first()).toHaveAttribute('lang', 'he');
+  await tokens.nth(0).click();
+  await expect(section.locator('#wordStudyOriginalDetails')).toContainText('H7225');
+  await expect(section.locator('#wordStudyOriginalDetails')).toContainText('HR/Ncfsa');
+  await expect(section.locator('#wordStudyOriginalDetails')).toContainText('beginning');
+  await expect(section.locator('#wordStudyOriginalDetails')).not.toContainText('Pronunciation');
+  await expect(page.locator('#wordStudyDefinition')).not.toHaveText('');
+});
+
+test('Word Study renders authoritative Greek tokens and supports keyboard selection', async ({ page }) => {
+  await page.getByRole('button', { name: 'Study word beginning' }).first().click();
+  const section = page.locator('#wordStudyOriginalLanguage');
+  await expect(section).toBeVisible();
+  const tokens = section.locator('.word-study-original-token');
+  const expected = await page.evaluate(() => fetch('data/word-study/original-language/john/1.json').then(response => response.json()).then(data => data.records.filter(record => record.verse === 1).sort((left, right) => left.tokenIndex - right.tokenIndex).map(record => record.surface)));
+  await expect(tokens).toHaveText(expected);
+  await expect(tokens.first()).toHaveAttribute('lang', 'grc');
+  await tokens.nth(1).press('Enter');
+  await expect(tokens.nth(1)).toHaveAttribute('aria-pressed', 'true');
+  await expect(section.locator('#wordStudyOriginalDetails')).toContainText('G746');
+  await expect(section.locator('#wordStudyOriginalDetails')).toContainText('N-DSF');
+  await expect(section.locator('#wordStudyOriginalDetails')).toContainText('commencement');
+  await tokens.nth(2).press(' ');
+  await expect(tokens.nth(2)).toHaveAttribute('aria-pressed', 'true');
+});
+
+test('Word Study keeps English content when original-language data is unsupported or unavailable', async ({ page }) => {
+  await page.evaluate(() => handleVoiceCommand('open Genesis 2'));
+  await expect(page.locator('#readerContent')).toContainText('Genesis 2');
+  await page.getByRole('button', { name: /Study word/ }).first().click();
+  await expect(page.locator('#wordStudyDefinition')).toBeVisible();
+  await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
+  await page.route('**/data/word-study/original-language/**', route => route.abort());
+  await page.evaluate(() => handleVoiceCommand('open John 1'));
+  await expect(page.locator('#readerContent')).toContainText('John 1');
+  await page.getByRole('button', { name: 'Study word beginning' }).first().click();
+  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
+  await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
+});
+
+test('Word Study verse lookup ignores English lookup terms', async ({ page }) => {
+  const result = await page.evaluate(async () => OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 1, verse: 1, lookupTerm: 'not-the-token' }));
+  expect(result.status).toBe('available');
+  expect(result.records.length).toBeGreaterThan(1);
+  expect(result.records[0].tokenIndex).toBe(0);
+});
+
 test('Word Study importer creates deterministic two-character fixture shards', async () => {
   const outputDirectory = fs.mkdtempSync(path.join(os.tmpdir(), 'god4-word-study-'));
   try {
