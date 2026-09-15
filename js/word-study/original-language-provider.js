@@ -65,7 +65,8 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
   }
 
   function isStaticRecord(record){
-    return record && typeof record === 'object' && typeof record.status === 'string' && typeof record.strongsNumber === 'string' && typeof record.language === 'string' && typeof record.lemma === 'string' && typeof record.transliteration === 'string' && typeof record.pronunciation === 'string' && typeof record.partOfSpeech === 'string' && typeof record.definition === 'string' && typeof record.morphology === 'string' && typeof record.source === 'string' && typeof record.bookId === 'string' && Number.isInteger(record.chapter) && Number.isInteger(record.verse) && Number.isInteger(record.tokenIndex) && typeof record.surface === 'string';
+    var optionalText = function(value){ return value === null || typeof value === 'string'; };
+    return record && typeof record === 'object' && (record.strongsNumber === null || typeof record.strongsNumber === 'string') && typeof record.status === 'string' && typeof record.language === 'string' && optionalText(record.lemma) && optionalText(record.transliteration) && optionalText(record.pronunciation) && optionalText(record.partOfSpeech) && optionalText(record.definition) && typeof record.morphology === 'string' && typeof record.source === 'string' && typeof record.bookId === 'string' && Number.isInteger(record.chapter) && Number.isInteger(record.verse) && Number.isInteger(record.tokenIndex) && typeof record.surface === 'string';
   }
 
   function loadStaticShard(context){

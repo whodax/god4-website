@@ -1875,13 +1875,24 @@ test('Word Study original-language provider loads static records by Scripture lo
   const result = await page.evaluate(async () => ({
     hebrew: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 1, verse: 1, tokenIndex: 0, displayWord: 'beginning', lookupTerm: 'beginning' }),
     greek: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'john', chapter: 1, verse: 1, tokenIndex: 0, displayWord: 'word', lookupTerm: 'word' }),
-    missing: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 1, verse: 2, tokenIndex: 0, displayWord: 'beginning', lookupTerm: 'beginning' })
+    missing: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 1, verse: 99, tokenIndex: 0, displayWord: 'beginning', lookupTerm: 'beginning' })
   }));
-  expect(result.hebrew.status).toBe('fixture');
-  expect(result.hebrew.surface).toBe('fixture-עברית');
-  expect(result.greek.language).toBe('fixture-greek');
-  expect(result.greek.surface).toBe('fixture-ελληνικά');
+  expect(result.hebrew.status).toBe('authoritative');
+  expect(result.hebrew.strongsNumber).toBe('H7225');
+  expect(result.hebrew.surface).toContain('רֵאשִׁ');
+  expect(result.greek.language).toBe('greek');
+  expect(result.greek.strongsNumber).toBe('G1722');
+  expect(result.greek.surface).toBe('εν');
   expect(result.missing.status).toBe('unavailable');
+});
+
+test('Word Study authoritative parsers preserve tiny OSHB and Unicode Greek extracts', () => {
+  const hebrew = originalLanguageImporter.parseOshbGenesis('<verse osisID="Gen.1.1"><w lemma="b/7225" morph="HNcfsa">בְּ/רֵאשִׁ֖ית</w></verse>', new Map([['H7225', 'beginning']]));
+  const greekLexicon = originalLanguageImporter.parseStrongGreekXml('<entry strongs="1722"><greek unicode="ἐν" translit="en"/><strongs_def>in</strongs_def></entry><entry strongs="1473"><greek unicode="ἐγώ" translit="egṓ"/><kjv_def>I, me</kjv_def></entry>');
+  const greek = originalLanguageImporter.parseByzantineJohn('1,1,εν 1722 {PREP}', greekLexicon);
+  expect(hebrew[0]).toMatchObject({ strongsNumber: 'H7225', morphology: 'HNcfsa', definition: 'beginning', surface: 'בְּ/רֵאשִׁ֖ית' });
+  expect(greek[0]).toMatchObject({ strongsNumber: 'G1722', morphology: 'PREP', lemma: 'ἐν', surface: 'εν' });
+  expect(greekLexicon.get('G1473').definition).toBe('I, me');
 });
 
 test('Word Study importer creates deterministic two-character fixture shards', async () => {
