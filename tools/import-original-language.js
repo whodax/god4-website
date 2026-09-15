@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const XML_ENTITIES = { amp: '&', apos: "'", gt: '>', lt: '<', quot: '"' };
 
 const SCHEMA_FIELDS = [
   'status', 'strongsNumber', 'language', 'lemma', 'transliteration',
@@ -9,13 +10,25 @@ const SCHEMA_FIELDS = [
   'bookId', 'chapter', 'verse', 'tokenIndex', 'surface'
 ];
 const REQUIRED_TEXT_FIELDS = [
-  'status', 'strongsNumber', 'language', 'lemma', 'transliteration',
-  'pronunciation', 'partOfSpeech', 'definition', 'morphology', 'source',
+  'status', 'language', 'morphology', 'source',
   'bookId', 'surface'
 ];
+const SUPPORTED_LANGUAGES = new Set(['hebrew', 'greek']);
 
 function invalid(index, message) {
   throw new TypeError(`Invalid original-language record ${index}: ${message}`);
+}
+
+function decodeXml(value) {
+  return value.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (match, entity) => {
+    if (entity.toLowerCase().startsWith('#x')) return String.fromCodePoint(parseInt(entity.slice(2), 16));
+    if (entity.startsWith('#')) return String.fromCodePoint(parseInt(entity.slice(1), 10));
+    return XML_ENTITIES[entity] || match;
+  });
+}
+
+function nullableText(value) {
+  return value == null || value === '' ? null : String(value);
 }
 
 function normalizeRecord(record, index = 0) {
@@ -23,15 +36,97 @@ function normalizeRecord(record, index = 0) {
   REQUIRED_TEXT_FIELDS.forEach((field) => {
     if (typeof record[field] !== 'string' || !record[field].trim()) invalid(index, `${field} must be a non-empty string`);
   });
+  const isFixture = record.status === 'fixture';
+  if (!SUPPORTED_LANGUAGES.has(record.language) && !isFixture) invalid(index, `unsupported language ${record.language}`);
+  if (record.strongsNumber !== null && !/^[HG]\d{1,5}$/.test(record.strongsNumber) && !(isFixture && /^fixture-/.test(record.strongsNumber))) invalid(index, 'strongsNumber must match H#### or G####');
+  if (typeof record.morphology !== 'string' || !record.morphology.trim()) invalid(index, 'morphology must be a non-empty string');
+  ['lemma', 'definition', 'transliteration', 'pronunciation', 'partOfSpeech'].forEach((field) => {
+    if (record[field] !== null && typeof record[field] !== 'string') invalid(index, `${field} must be a string or null`);
+  });
+  if (!isFixture && !record.source.includes('source') && !record.source.includes('Open Scriptures') && !record.source.includes('Robinson-Pierpont')) invalid(index, 'source attribution is missing');
   ['chapter', 'verse', 'tokenIndex'].forEach((field) => {
     if (!Number.isInteger(record[field]) || record[field] < 1 && field !== 'tokenIndex' || record[field] < 0 && field === 'tokenIndex') {
       invalid(index, `${field} must be a non-negative integer${field === 'tokenIndex' ? '' : ' greater than zero'}`);
     }
   });
   return SCHEMA_FIELDS.reduce((normalized, field) => {
-    normalized[field] = field === 'bookId' ? record[field].trim().toLowerCase() : record[field];
+    normalized[field] = field === 'bookId' ? record[field].trim().toLowerCase() : field === 'transliteration' || field === 'pronunciation' || field === 'partOfSpeech' ? nullableText(record[field]) : record[field];
     return normalized;
   }, {});
+}
+
+function strongsId(language, value) {
+  const match = String(value || '').match(/[0-9]+/g);
+  if (!match) return null;
+  return `${language === 'hebrew' ? 'H' : 'G'}${match[match.length - 1]}`;
+}
+
+function parseStrongDat(text, language) {
+  const entries = new Map();
+  const pattern = /\\(\d{5})\\([\s\S]*?)(?=\$\$T|$)/g;
+  let match;
+  while ((match = pattern.exec(text))) {
+    const id = `${language === 'hebrew' ? 'H' : 'G'}${Number(match[1])}`;
+    const body = match[2].replace(/\s+/g, ' ').trim();
+    entries.set(id, body);
+  }
+  return entries;
+}
+
+function parseStrongGreekXml(text) {
+  const entries = new Map();
+  const entryPattern = /<entry\s+strongs="(\d+)"[^>]*>([\s\S]*?)<\/entry>/g;
+  let match;
+  while ((match = entryPattern.exec(text))) {
+    const body = match[2];
+    const definitions = [...body.matchAll(/<strongs_def[^>]*>([\s\S]*?)<\/strongs_def>/g)];
+    const fallbackDefinitions = [...body.matchAll(/<kjv_def[^>]*>([\s\S]*?)<\/kjv_def>/g)];
+    const definition = (definitions.length ? definitions : fallbackDefinitions).map((item) => decodeXml(item[1].replace(/<[^>]+>/g, ' '))).join(' ').replace(/\s+/g, ' ').trim();
+    const greek = body.match(/<greek\s+[^>]*unicode="([^"]+)"[^>]*translit="([^"]*)"/);
+    entries.set(`G${Number(match[1])}`, { definition: definition || null, lemma: greek ? decodeXml(greek[1]) : null, transliteration: greek ? decodeXml(greek[2]) : null });
+  }
+  return entries;
+}
+
+function parseOshbGenesis(text, hebrewLexicon) {
+  const records = [];
+  const versePattern = /<verse\s+osisID="Gen\.(\d+)\.(\d+)"[^>]*>([\s\S]*?)<\/verse>/g;
+  let verseMatch;
+  while ((verseMatch = versePattern.exec(text))) {
+    if (Number(verseMatch[1]) !== 1) continue;
+    const words = [...verseMatch[3].matchAll(/<w\s+([^>]+)>([\s\S]*?)<\/w>/g)];
+    words.forEach((word, tokenIndex) => {
+      const attributes = Object.fromEntries([...word[1].matchAll(/([\w:-]+)="([^"]*)"/g)].map((item) => [item[1], decodeXml(item[2])]));
+      const lemmaMatch = word[1].match(/(?:^|\s)lemma="([^"]+)"/);
+      if (lemmaMatch) attributes.lemma = decodeXml(lemmaMatch[1]);
+      const strongsNumber = strongsId('hebrew', attributes.lemma);
+      const lexical = hebrewLexicon.get(strongsNumber);
+      records.push({ status: 'authoritative', strongsNumber, language: 'hebrew', lemma: attributes.lemma, transliteration: null, pronunciation: null, partOfSpeech: null, definition: lexical || null, morphology: attributes.morph, source: 'Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong\'s 1890 dictionary public domain; corrected edition by Weston Ruter MIT License', bookId: 'genesis', chapter: 1, verse: Number(verseMatch[2]), tokenIndex, surface: decodeXml(word[2]) });
+    });
+  }
+  return records;
+}
+
+function parseByzantineJohn(text, greekLexicon) {
+  const records = [];
+  text.split(/\r?\n/).forEach((line, lineIndex) => {
+    const match = line.match(/^\s*(\d+),(\d+),(.*)$/);
+    if (!match || Number(match[1]) !== 1) return;
+    const tokens = [...match[3].matchAll(/([^\s]+)\s+(\d+)\s+\{([^}]+)\}/g)];
+    tokens.forEach((token, tokenIndex) => {
+      const strongsNumber = `G${Number(token[2])}`;
+      const lexical = greekLexicon.get(strongsNumber) || {};
+      records.push({ status: 'authoritative', strongsNumber, language: 'greek', lemma: lexical.lemma, transliteration: lexical.transliteration, pronunciation: null, partOfSpeech: null, definition: lexical.definition, morphology: token[3], source: 'Robinson-Pierpont Byzantine Majority Text public domain; Strong\'s 1890 dictionary public domain; corrected edition by Weston Ruter MIT License', bookId: 'john', chapter: 1, verse: Number(match[2]), tokenIndex, surface: token[1] });
+    });
+  });
+  return records;
+}
+
+function importAuthoritativeSources(genesisFile, johnFile, hebrewFile, greekFile, outputDirectory) {
+  const hebrewLexicon = parseStrongDat(fs.readFileSync(hebrewFile, 'utf8'), 'hebrew');
+  const greekLexicon = parseStrongGreekXml(fs.readFileSync(greekFile, 'utf8'));
+  const records = normalizeRecords(parseOshbGenesis(fs.readFileSync(genesisFile, 'utf8'), hebrewLexicon).concat(parseByzantineJohn(fs.readFileSync(johnFile, 'utf8'), greekLexicon)));
+  return writeStaticData(records, outputDirectory);
 }
 
 function normalizeRecords(sourceRecords) {
@@ -75,9 +170,15 @@ function importOriginalLanguage(sourceRecords, outputDirectory) {
 if (require.main === module) {
   const [sourceFile, outputDirectory = 'data/word-study/original-language'] = process.argv.slice(2);
   if (!sourceFile) throw new Error('Usage: node tools/import-original-language.js <source-json> [output-directory]');
-  const source = JSON.parse(fs.readFileSync(path.resolve(sourceFile), 'utf8'));
-  const result = importOriginalLanguage(source, path.resolve(outputDirectory));
-  console.log(`Imported ${result.records} original-language fixture record(s) into ${result.shards.length} shard(s).`);
+  if (sourceFile === '--authoritative') {
+    const [genesisFile, johnFile, hebrewFile, greekFile, authoritativeOutput = 'data/word-study/original-language'] = process.argv.slice(3);
+    const result = importAuthoritativeSources(genesisFile, johnFile, hebrewFile, greekFile, path.resolve(authoritativeOutput));
+    console.log(`Imported ${result.records} authoritative original-language record(s) into ${result.shards.length} shard(s).`);
+  } else {
+    const source = JSON.parse(fs.readFileSync(path.resolve(sourceFile), 'utf8'));
+    const result = importOriginalLanguage(source, path.resolve(outputDirectory));
+    console.log(`Imported ${result.records} original-language fixture record(s) into ${result.shards.length} shard(s).`);
+  }
 }
 
-module.exports = { SCHEMA_FIELDS, normalizeRecord, normalizeRecords, writeStaticData, importOriginalLanguage };
+module.exports = { SCHEMA_FIELDS, normalizeRecord, normalizeRecords, writeStaticData, importOriginalLanguage, parseStrongDat, parseStrongGreekXml, parseOshbGenesis, parseByzantineJohn, importAuthoritativeSources };
