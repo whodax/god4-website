@@ -1,0 +1,21 @@
+{
+  "records": [
+    {
+      "status": "fixture",
+      "strongsNumber": "fixture-strongs",
+      "language": "fixture-greek",
+      "lemma": "fixture-lemma",
+      "transliteration": "fixture-transliteration",
+      "pronunciation": "fixture-pronunciation",
+      "partOfSpeech": "fixture-part-of-speech",
+      "definition": "Fixture record for importer and lookup architecture tests only.",
+      "morphology": "fixture-morphology",
+      "source": "Phase C2 test fixture (not authoritative lexical data)",
+      "bookId": "john",
+      "chapter": 1,
+      "verse": 1,
+      "tokenIndex": 0,
+      "surface": "fixture-ελληνικά"
+    }
+  ]
+}

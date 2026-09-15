@@ -1,5 +1,7 @@
 /* ===== SCRIPTURE WORD STUDY ORIGINAL-LANGUAGE PROVIDER ===== */
 var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStudyProvider(){
+  var staticDataBasePath = 'data/word-study/original-language/';
+  var staticShardRequests = {};
   var fixtureEntries = {
     beginning: {
       strongsNumber: 'DEMO-H0001',
@@ -48,15 +50,54 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
       partOfSpeech: null,
       definition: null,
       morphology: null,
-      source: 'Phase C1 demo fixture (not a production lexical data source)',
+      source: 'No static original-language record found',
+      bookId: context.bookId || null,
+      chapter: Number.isInteger(context.chapter) ? context.chapter : null,
+      verse: Number.isInteger(context.verse) ? context.verse : null,
+      tokenIndex: Number.isInteger(context.tokenIndex) ? context.tokenIndex : null,
+      surface: null,
       message: 'Original-language data not available yet.'
     };
   }
 
-  function lookup(context){
-    var term = WordStudyProvider.normalizeLookupTerm(context.lookupTerm);
+  function isLocationContext(context){
+    return context && typeof context.bookId === 'string' && Number.isInteger(context.chapter) && context.chapter > 0 && Number.isInteger(context.verse) && context.verse > 0 && Number.isInteger(context.tokenIndex) && context.tokenIndex >= 0;
+  }
+
+  function isStaticRecord(record){
+    return record && typeof record === 'object' && typeof record.status === 'string' && typeof record.strongsNumber === 'string' && typeof record.language === 'string' && typeof record.lemma === 'string' && typeof record.transliteration === 'string' && typeof record.pronunciation === 'string' && typeof record.partOfSpeech === 'string' && typeof record.definition === 'string' && typeof record.morphology === 'string' && typeof record.source === 'string' && typeof record.bookId === 'string' && Number.isInteger(record.chapter) && Number.isInteger(record.verse) && Number.isInteger(record.tokenIndex) && typeof record.surface === 'string';
+  }
+
+  function loadStaticShard(context){
+    if(!isLocationContext(context) || typeof fetch !== 'function') return Promise.resolve(null);
+    var bookId = context.bookId.toLowerCase();
+    if(!/^[a-z0-9-]+$/.test(bookId)) return Promise.resolve(null);
+    var url = staticDataBasePath + encodeURIComponent(bookId) + '/' + context.chapter + '.json';
+    if(!staticShardRequests[url]){
+      staticShardRequests[url] = fetch(url).then(function(response){
+        if(!response.ok) throw new Error('Static original-language shard unavailable');
+        return response.json();
+      }).then(function(data){
+        if(!data || !Array.isArray(data.records)) return [];
+        return data.records.filter(isStaticRecord);
+      }).catch(function(){ return null; });
+    }
+    return staticShardRequests[url];
+  }
+
+  function staticLookup(context){
+    return loadStaticShard(context).then(function(records){
+      if(!records) return null;
+      return records.find(function(record){
+        return record.bookId === context.bookId.toLowerCase() && record.chapter === context.chapter && record.verse === context.verse && record.tokenIndex === context.tokenIndex;
+      }) || null;
+    });
+  }
+
+  function fixtureLookup(context){
+    var term = typeof WordStudyProvider !== 'undefined' ? WordStudyProvider.normalizeLookupTerm(context.lookupTerm) : String(context.lookupTerm || '').toLowerCase();
     var entry = fixtureEntries[term];
-    return Promise.resolve(entry ? {
+    return entry ? {
       status: 'available',
       word: context.displayWord,
       strongsNumber: entry.strongsNumber,
@@ -67,8 +108,22 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
       partOfSpeech: entry.partOfSpeech,
       definition: entry.definition,
       morphology: entry.morphology,
-      source: entry.source
-    } : unavailable(context));
+      source: entry.source,
+      bookId: null,
+      chapter: null,
+      verse: null,
+      tokenIndex: null,
+      surface: null
+    } : null;
+  }
+
+  function lookup(context){
+    context = context || {};
+    return staticLookup(context).then(function(record){
+      if(record) return Object.assign({ word: context.displayWord }, record);
+      if(isLocationContext(context)) return unavailable(context);
+      return fixtureLookup(context) || unavailable(context);
+    });
   }
 
   return { lookup: lookup };
