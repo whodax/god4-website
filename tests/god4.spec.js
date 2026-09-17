@@ -1875,6 +1875,8 @@ test('Word Study original-language provider loads static records by Scripture lo
   const result = await page.evaluate(async () => ({
     hebrew: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 1, verse: 1, tokenIndex: 0, displayWord: 'beginning', lookupTerm: 'beginning' }),
     greek: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'john', chapter: 1, verse: 1, tokenIndex: 0, displayWord: 'word', lookupTerm: 'word' }),
+    hebrewChapterTwo: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 2, verse: 1, tokenIndex: 0, displayWord: 'formed', lookupTerm: 'not-the-token' }),
+    greekChapterTwo: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'john', chapter: 2, verse: 1, tokenIndex: 0, displayWord: 'third', lookupTerm: 'not-the-token' }),
     missing: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 1, verse: 99, tokenIndex: 0, displayWord: 'beginning', lookupTerm: 'beginning' })
   }));
   expect(result.hebrew.status).toBe('authoritative');
@@ -1883,16 +1885,35 @@ test('Word Study original-language provider loads static records by Scripture lo
   expect(result.greek.language).toBe('greek');
   expect(result.greek.strongsNumber).toBe('G1722');
   expect(result.greek.surface).toBe('εν');
+  expect(result.hebrewChapterTwo.status).toBe('authoritative');
+  expect(result.hebrewChapterTwo.chapter).toBe(2);
+  expect(result.greekChapterTwo.status).toBe('authoritative');
+  expect(result.greekChapterTwo.chapter).toBe(2);
   expect(result.missing.status).toBe('unavailable');
 });
 
 test('Word Study authoritative parsers preserve tiny OSHB and Unicode Greek extracts', () => {
   const hebrew = originalLanguageImporter.parseOshbGenesis('<verse osisID="Gen.1.1"><w lemma="b/7225" morph="HNcfsa">בְּ/רֵאשִׁ֖ית</w></verse>', new Map([['H7225', 'beginning']]));
+  const hebrewChapterTwo = originalLanguageImporter.parseOshbGenesis('<verse osisID="Gen.1.1"><w lemma="b/7225" morph="HNcfsa">א</w></verse><verse osisID="Gen.2.1"><w lemma="y/3335" morph="HVqp3ms">יָצַר</w></verse>', new Map([['H3335', 'formed']]), [2]);
   const greekLexicon = originalLanguageImporter.parseStrongGreekXml('<entry strongs="1722"><greek unicode="ἐν" translit="en"/><strongs_def>in</strongs_def></entry><entry strongs="1473"><greek unicode="ἐγώ" translit="egṓ"/><kjv_def>I, me</kjv_def></entry>');
-  const greek = originalLanguageImporter.parseByzantineJohn('1,1,εν 1722 {PREP}', greekLexicon);
+  const greek = originalLanguageImporter.parseByzantineJohn('1,1,εν 1722 {PREP}\n2,1,Ἰησοῦς 2424 {N-NSM}', greekLexicon, [2]);
   expect(hebrew[0]).toMatchObject({ strongsNumber: 'H7225', morphology: 'HNcfsa', definition: 'beginning', surface: 'בְּ/רֵאשִׁ֖ית' });
-  expect(greek[0]).toMatchObject({ strongsNumber: 'G1722', morphology: 'PREP', lemma: 'ἐν', surface: 'εν' });
+  expect(hebrewChapterTwo[0]).toMatchObject({ chapter: 2, strongsNumber: 'H3335', morphology: 'HVqp3ms', surface: 'יָצַר' });
+  expect(greek[0]).toMatchObject({ chapter: 2, strongsNumber: 'G2424', morphology: 'N-NSM', surface: 'Ἰησοῦς' });
   expect(greekLexicon.get('G1473').definition).toBe('I, me');
+});
+
+test('Word Study original-language provider returns chapter-two verse tokens in tokenIndex order', async ({ page }) => {
+  const result = await page.evaluate(async () => ({
+    genesis: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 2, verse: 1, lookupTerm: 'ignored' }),
+    john: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 2, verse: 1, lookupTerm: 'ignored' }),
+    unsupported: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 999, verse: 1 })
+  }));
+  expect(result.genesis.status).toBe('available');
+  expect(result.john.status).toBe('available');
+  expect(result.genesis.records.every((record, index, records) => index === 0 || record.tokenIndex > records[index - 1].tokenIndex)).toBeTruthy();
+  expect(result.john.records.every((record, index, records) => index === 0 || record.tokenIndex > records[index - 1].tokenIndex)).toBeTruthy();
+  expect(result.unsupported).toEqual({ status: 'unavailable', records: [] });
 });
 
 test('Word Study renders authoritative Hebrew tokens at verse level', async ({ page }) => {
@@ -1932,8 +1953,8 @@ test('Word Study renders authoritative Greek tokens and supports keyboard select
 });
 
 test('Word Study keeps English content when original-language data is unsupported or unavailable', async ({ page }) => {
-  await page.evaluate(() => handleVoiceCommand('open Genesis 2'));
-  await expect(page.locator('#readerContent')).toContainText('Genesis 2');
+  await page.evaluate(() => handleVoiceCommand('open Genesis 3'));
+  await expect(page.locator('#readerContent')).toContainText('Genesis 3');
   await page.getByRole('button', { name: /Study word/ }).first().click();
   await expect(page.locator('#wordStudyDefinition')).toBeVisible();
   await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
