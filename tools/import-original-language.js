@@ -88,12 +88,21 @@ function parseStrongGreekXml(text) {
   return entries;
 }
 
-function parseOshbGenesis(text, hebrewLexicon) {
+function selectedChapters(value, defaultChapters = [1]) {
+  const values = value == null ? defaultChapters : Array.isArray(value) ? value : String(value).split(',');
+  const chapters = values.map((chapter) => Number(chapter)).filter((chapter) => Number.isInteger(chapter) && chapter > 0);
+  if (!chapters.length) throw new TypeError('Chapter selection must contain at least one positive integer');
+  return new Set(chapters);
+}
+
+function parseOshbGenesis(text, hebrewLexicon, chapters = [1]) {
   const records = [];
+  const chapterSelection = selectedChapters(chapters);
   const versePattern = /<verse\s+osisID="Gen\.(\d+)\.(\d+)"[^>]*>([\s\S]*?)<\/verse>/g;
   let verseMatch;
   while ((verseMatch = versePattern.exec(text))) {
-    if (Number(verseMatch[1]) !== 1) continue;
+    const chapter = Number(verseMatch[1]);
+    if (!chapterSelection.has(chapter)) continue;
     const words = [...verseMatch[3].matchAll(/<w\s+([^>]+)>([\s\S]*?)<\/w>/g)];
     words.forEach((word, tokenIndex) => {
       const attributes = Object.fromEntries([...word[1].matchAll(/([\w:-]+)="([^"]*)"/g)].map((item) => [item[1], decodeXml(item[2])]));
@@ -101,31 +110,33 @@ function parseOshbGenesis(text, hebrewLexicon) {
       if (lemmaMatch) attributes.lemma = decodeXml(lemmaMatch[1]);
       const strongsNumber = strongsId('hebrew', attributes.lemma);
       const lexical = hebrewLexicon.get(strongsNumber);
-      records.push({ status: 'authoritative', strongsNumber, language: 'hebrew', lemma: attributes.lemma, transliteration: null, pronunciation: null, partOfSpeech: null, definition: lexical || null, morphology: attributes.morph, source: 'Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong\'s 1890 dictionary public domain; corrected edition by Weston Ruter MIT License', bookId: 'genesis', chapter: 1, verse: Number(verseMatch[2]), tokenIndex, surface: decodeXml(word[2]) });
+      records.push({ status: 'authoritative', strongsNumber, language: 'hebrew', lemma: attributes.lemma, transliteration: null, pronunciation: null, partOfSpeech: null, definition: lexical || null, morphology: attributes.morph, source: 'Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong\'s 1890 dictionary public domain; corrected edition by Weston Ruter MIT License', bookId: 'genesis', chapter, verse: Number(verseMatch[2]), tokenIndex, surface: decodeXml(word[2]) });
     });
   }
   return records;
 }
 
-function parseByzantineJohn(text, greekLexicon) {
+function parseByzantineJohn(text, greekLexicon, chapters = [1]) {
   const records = [];
-  text.split(/\r?\n/).forEach((line, lineIndex) => {
+  const chapterSelection = selectedChapters(chapters);
+  text.split(/\r?\n/).forEach((line) => {
     const match = line.match(/^\s*(\d+),(\d+),(.*)$/);
-    if (!match || Number(match[1]) !== 1) return;
+    const chapter = Number(match && match[1]);
+    if (!match || !chapterSelection.has(chapter)) return;
     const tokens = [...match[3].matchAll(/([^\s]+)\s+(\d+)\s+\{([^}]+)\}/g)];
     tokens.forEach((token, tokenIndex) => {
       const strongsNumber = `G${Number(token[2])}`;
       const lexical = greekLexicon.get(strongsNumber) || {};
-      records.push({ status: 'authoritative', strongsNumber, language: 'greek', lemma: lexical.lemma, transliteration: lexical.transliteration, pronunciation: null, partOfSpeech: null, definition: lexical.definition, morphology: token[3], source: 'Robinson-Pierpont Byzantine Majority Text public domain; Strong\'s 1890 dictionary public domain; corrected edition by Weston Ruter MIT License', bookId: 'john', chapter: 1, verse: Number(match[2]), tokenIndex, surface: token[1] });
+      records.push({ status: 'authoritative', strongsNumber, language: 'greek', lemma: lexical.lemma, transliteration: lexical.transliteration, pronunciation: null, partOfSpeech: null, definition: lexical.definition, morphology: token[3], source: 'Robinson-Pierpont Byzantine Majority Text public domain; Strong\'s 1890 dictionary public domain; corrected edition by Weston Ruter MIT License', bookId: 'john', chapter, verse: Number(match[2]), tokenIndex, surface: token[1] });
     });
   });
   return records;
 }
 
-function importAuthoritativeSources(genesisFile, johnFile, hebrewFile, greekFile, outputDirectory) {
+function importAuthoritativeSources(genesisFile, johnFile, hebrewFile, greekFile, outputDirectory, options = {}) {
   const hebrewLexicon = parseStrongDat(fs.readFileSync(hebrewFile, 'utf8'), 'hebrew');
   const greekLexicon = parseStrongGreekXml(fs.readFileSync(greekFile, 'utf8'));
-  const records = normalizeRecords(parseOshbGenesis(fs.readFileSync(genesisFile, 'utf8'), hebrewLexicon).concat(parseByzantineJohn(fs.readFileSync(johnFile, 'utf8'), greekLexicon)));
+  const records = normalizeRecords(parseOshbGenesis(fs.readFileSync(genesisFile, 'utf8'), hebrewLexicon, options.genesisChapters).concat(parseByzantineJohn(fs.readFileSync(johnFile, 'utf8'), greekLexicon, options.johnChapters)));
   return writeStaticData(records, outputDirectory);
 }
 
@@ -171,8 +182,22 @@ if (require.main === module) {
   const [sourceFile, outputDirectory = 'data/word-study/original-language'] = process.argv.slice(2);
   if (!sourceFile) throw new Error('Usage: node tools/import-original-language.js <source-json> [output-directory]');
   if (sourceFile === '--authoritative') {
-    const [genesisFile, johnFile, hebrewFile, greekFile, authoritativeOutput = 'data/word-study/original-language'] = process.argv.slice(3);
-    const result = importAuthoritativeSources(genesisFile, johnFile, hebrewFile, greekFile, path.resolve(authoritativeOutput));
+    const authoritativeArguments = process.argv.slice(3);
+    const options = {};
+    const positionalArguments = [];
+    for (let index = 0; index < authoritativeArguments.length; index += 1) {
+      const argument = authoritativeArguments[index];
+      const option = argument.match(/^--(genesis-chapters|john-chapters)(?:=(.*))?$/);
+      if (option) {
+        options[option[1].replace('-', '')] = option[2] || authoritativeArguments[++index];
+      } else {
+        positionalArguments.push(argument);
+      }
+    }
+    options.genesisChapters = options.genesischapters;
+    options.johnChapters = options.johnchapters;
+    const [genesisFile, johnFile, hebrewFile, greekFile, authoritativeOutput = 'data/word-study/original-language'] = positionalArguments;
+    const result = importAuthoritativeSources(genesisFile, johnFile, hebrewFile, greekFile, path.resolve(authoritativeOutput), options);
     console.log(`Imported ${result.records} authoritative original-language record(s) into ${result.shards.length} shard(s).`);
   } else {
     const source = JSON.parse(fs.readFileSync(path.resolve(sourceFile), 'utf8'));
@@ -181,4 +206,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { SCHEMA_FIELDS, normalizeRecord, normalizeRecords, writeStaticData, importOriginalLanguage, parseStrongDat, parseStrongGreekXml, parseOshbGenesis, parseByzantineJohn, importAuthoritativeSources };
+module.exports = { SCHEMA_FIELDS, normalizeRecord, normalizeRecords, writeStaticData, importOriginalLanguage, parseStrongDat, parseStrongGreekXml, parseOshbGenesis, parseByzantineJohn, importAuthoritativeSources, selectedChapters };
