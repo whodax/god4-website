@@ -1892,6 +1892,28 @@ test('Word Study original-language provider loads static records by Scripture lo
   expect(result.missing.status).toBe('unavailable');
 });
 
+test('Word Study original-language coverage includes full Genesis and John ranges with unsupported chapters unavailable', async ({ page }) => {
+  const result = await page.evaluate(async () => ({
+    genesis1: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 1, verse: 1, lookupTerm: 'ignored' }),
+    genesis2: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 2, verse: 1, lookupTerm: 'ignored' }),
+    genesis25: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 25, verse: 1, lookupTerm: 'ignored' }),
+    genesis50: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 50, verse: 1, lookupTerm: 'ignored' }),
+    john1: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 1, verse: 1, lookupTerm: 'ignored' }),
+    john2: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 2, verse: 1, lookupTerm: 'ignored' }),
+    john10: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 10, verse: 1, lookupTerm: 'ignored' }),
+    john21: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 21, verse: 1, lookupTerm: 'ignored' }),
+    genesis51: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 51, verse: 1, lookupTerm: 'ignored' }),
+    john22: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 22, verse: 1, lookupTerm: 'ignored' })
+  }));
+
+  for (const [name, value] of Object.entries({ genesis1: result.genesis1, genesis2: result.genesis2, genesis25: result.genesis25, genesis50: result.genesis50, john1: result.john1, john2: result.john2, john10: result.john10, john21: result.john21 })) {
+    expect(value.status).toBe('available');
+    expect(value.records.length).toBeGreaterThan(0);
+  }
+  expect(result.genesis51).toEqual({ status: 'unavailable', records: [] });
+  expect(result.john22).toEqual({ status: 'unavailable', records: [] });
+});
+
 test('Word Study authoritative parsers preserve tiny OSHB and Unicode Greek extracts', () => {
   const hebrew = originalLanguageImporter.parseOshbGenesis('<verse osisID="Gen.1.1"><w lemma="b/7225" morph="HNcfsa">בְּ/רֵאשִׁ֖ית</w></verse>', new Map([['H7225', 'beginning']]));
   const hebrewChapterTwo = originalLanguageImporter.parseOshbGenesis('<verse osisID="Gen.1.1"><w lemma="b/7225" morph="HNcfsa">א</w></verse><verse osisID="Gen.2.1"><w lemma="y/3335" morph="HVqp3ms">יָצַר</w></verse>', new Map([['H3335', 'formed']]), [2]);
@@ -1953,8 +1975,8 @@ test('Word Study renders authoritative Greek tokens and supports keyboard select
 });
 
 test('Word Study keeps English content when original-language data is unsupported or unavailable', async ({ page }) => {
-  await page.evaluate(() => handleVoiceCommand('open Genesis 3'));
-  await expect(page.locator('#readerContent')).toContainText('Genesis 3');
+  await page.evaluate(() => handleVoiceCommand('open Exodus 1'));
+  await expect(page.locator('#readerContent')).toContainText('Exodus 1');
   await page.getByRole('button', { name: /Study word/ }).first().click();
   await expect(page.locator('#wordStudyDefinition')).toBeVisible();
   await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
