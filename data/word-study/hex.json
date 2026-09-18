@@ -1,6 +1,145 @@
 {
   "version": "v1",
   "entries": {
+    "hex": {
+      "word": "HEX-; HEXA",
+      "definitions": [
+        {
+          "text": "A prefix or combining form, used to denote six, sixth, etc.; as, hexatomic, hexabasic.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "Jonah",
+        "Weird Sisters",
+        "abuse",
+        "accurse",
+        "afflict",
+        "aggrieve",
+        "anathema",
+        "anathematize",
+        "bad influence",
+        "ban",
+        "bedevil",
+        "befoul",
+        "bewitch",
+        "blaspheme",
+        "blasphemy",
+        "blast",
+        "blight",
+        "bring bad luck",
+        "cantrip",
+        "charm",
+        "commination",
+        "condemn",
+        "confound",
+        "corrupt",
+        "coven",
+        "crucify",
+        "curse",
+        "damage",
+        "damn",
+        "damnation",
+        "darn",
+        "defile",
+        "demonize",
+        "denunciation",
+        "deprave",
+        "despoil",
+        "destroy",
+        "diabolize",
+        "disadvantage",
+        "disserve",
+        "distress",
+        "do a mischief",
+        "do evil",
+        "do ill",
+        "do wrong",
+        "do wrong by",
+        "doom",
+        "enchant",
+        "enchantment",
+        "enchantress",
+        "envenom",
+        "evil eye",
+        "evil genius",
+        "evil star",
+        "excommunicate",
+        "excommunication",
+        "execrate",
+        "execration",
+        "exorcism",
+        "fulminate against",
+        "fulmination",
+        "get into trouble",
+        "glamour",
+        "hag",
+        "harass",
+        "harm",
+        "hoodoo",
+        "hurt",
+        "ill wind",
+        "impair",
+        "imprecate",
+        "imprecation",
+        "infect",
+        "injure",
+        "jinx",
+        "lamia",
+        "magic spell",
+        "malevolent influence",
+        "malison",
+        "malocchio",
+        "maltreat",
+        "menace",
+        "mistreat",
+        "molest",
+        "obsess",
+        "outrage",
+        "overlook",
+        "persecute",
+        "play havoc with",
+        "play hob with",
+        "poison",
+        "pollute",
+        "possess",
+        "prejudice",
+        "proscription",
+        "savage",
+        "scathe",
+        "shamaness",
+        "sorceress",
+        "spell",
+        "taint",
+        "threaten",
+        "throw a whammy",
+        "thunder against",
+        "thundering",
+        "torment",
+        "torture",
+        "violate",
+        "voodoo",
+        "wanga",
+        "weird",
+        "whammy",
+        "witch",
+        "witchwife",
+        "witchwoman",
+        "wound",
+        "wreak havoc on",
+        "wrong"
+      ]
+    },
+    "hexa": {
+      "word": "HEX-; HEXA",
+      "definitions": [
+        {
+          "text": "A prefix or combining form, used to denote six, sixth, etc.; as, hexatomic, hexabasic.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "hexabasic": {
       "word": "HEXABASIC",
       "definitions": [
@@ -161,7 +300,17 @@
       ],
       "relatedWords": []
     },
-    "hexagynianhexagynous": {
+    "hexagynian": {
+      "word": "HEXAGYNIAN; HEXAGYNOUS",
+      "definitions": [
+        {
+          "text": "Having six pistils.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hexagynous": {
       "word": "HEXAGYNIAN; HEXAGYNOUS",
       "definitions": [
         {
@@ -229,7 +378,17 @@
       ],
       "relatedWords": []
     },
-    "hexametrichexametrical": {
+    "hexametric": {
+      "word": "HEXAMETRIC; HEXAMETRICAL",
+      "definitions": [
+        {
+          "text": "Consisting of six metrical feet.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hexametrical": {
       "word": "HEXAMETRIC; HEXAMETRICAL",
       "definitions": [
         {
@@ -259,7 +418,17 @@
       ],
       "relatedWords": []
     },
-    "hexandrianhexandrous": {
+    "hexandrian": {
+      "word": "HEXANDRIAN; HEX-ANDROUS",
+      "definitions": [
+        {
+          "text": "Having six stamens.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hexandrous": {
       "word": "HEXANDRIAN; HEX-ANDROUS",
       "definitions": [
         {
@@ -363,7 +532,17 @@
       ],
       "relatedWords": []
     },
-    "hexastichhexastichon": {
+    "hexastich": {
+      "word": "HEXASTICH; HEXASTICHON",
+      "definitions": [
+        {
+          "text": "A poem consisting of six verses or lines.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hexastichon": {
       "word": "HEXASTICH; HEXASTICHON",
       "definitions": [
         {
@@ -443,16 +622,6 @@
         {
           "text": "Same as Hexylene.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "hexhexa": {
-      "word": "HEX-; HEXA",
-      "definitions": [
-        {
-          "text": "A prefix or combining form, used to denote six, sixth, etc.; as, hexatomic, hexabasic.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []

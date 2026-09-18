@@ -227,7 +227,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not indicating thought or reflection; thoughtless. With earnest eyes, and round unthinking face, He first the snuffbox",
+          "text": "Not indicating thought or reflection; thoughtless. With earnest eyes, and round unthinking face, He first the snuffbox opened, then the case. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -279,7 +279,17 @@
       ],
       "relatedWords": []
     },
-    "unthriftiheadunthriftihood": {
+    "unthriftihead": {
+      "word": "UNTHRIFTIHEAD; UNTHRIFTIHOOD",
+      "definitions": [
+        {
+          "text": "Untriftiness. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unthriftihood": {
       "word": "UNTHRIFTIHEAD; UNTHRIFTIHOOD",
       "definitions": [
         {
@@ -389,6 +399,10 @@
         {
           "text": "To; up to; till; before; -- used of time; as, he staid until evening; he will not come back until the end of the month. He and his sons were priests to the tribe of Dan until the day of the captivity. Judg. xviii. 30. of the date mentioned unless it was the manifest intent of the parties to include it.",
           "partOfSpeech": "preposition"
+        },
+        {
+          "text": "As far as; to the place or degree that; especially, up to the time that; till. See Till, conj. In open prospect nothing bounds our eye, Until the earth seems joined unto the sky. Dryden. But the rest of the dead lives not again until the thousand years were finished. Rev. xx. 5.",
+          "partOfSpeech": "conjunction"
         }
       ],
       "relatedWords": []
@@ -569,7 +583,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Inconvenient; troublesome; vexatious; unlucky; unfortunate; as, an",
+          "text": "Inconvenient; troublesome; vexatious; unlucky; unfortunate; as, an untoward wind or accident.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -767,11 +781,15 @@
         {
           "text": "To loose from a truss, or as from a truss; to untie or unfasten; to let out; to undress. [R.] Dryden.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "One who untrussed persons for the purpose of flogging them; a public whipper. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "untrussuntrusser": {
+    "untrusser": {
       "word": "UNTRUSS; UNTRUSSER",
       "definitions": [
         {
@@ -815,6 +833,16 @@
         {
           "text": "That which is untrue; a false assertion; a falsehood; a lie; also, an act of treachery or disloyalty. Shak.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "untruthful": {
+      "word": "UNTRUTHFUL",
+      "definitions": [
+        {
+          "text": "Not truthful; unveracious; contrary to the truth or the fact.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

@@ -1433,6 +1433,16 @@
       ],
       "relatedWords": []
     },
+    "equiangular": {
+      "word": "EQUIANGULAR",
+      "definitions": [
+        {
+          "text": "Having equal angles; as, an equiangular figure; a square is equiangular. Equiangular spiral. (Math.) See under Spiral, n. the one has its equal among the angles of the other.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "equibalance": {
       "word": "EQUIBALANCE",
       "definitions": [
@@ -1497,11 +1507,80 @@
       ],
       "relatedWords": []
     },
+    "equidistant": {
+      "word": "EQUIDISTANT",
+      "definitions": [
+        {
+          "text": "Being at an equal distance from the same point or thing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "aligned",
+        "amidships",
+        "analogous",
+        "average",
+        "center",
+        "centermost",
+        "central",
+        "coextending",
+        "coextensive",
+        "collateral",
+        "concurrent",
+        "core",
+        "equal",
+        "equatorial",
+        "equispaced",
+        "even",
+        "halfway",
+        "interior",
+        "intermediary",
+        "intermediate",
+        "lined up",
+        "mean",
+        "medial",
+        "median",
+        "mediocre",
+        "mediterranean",
+        "medium",
+        "mesial",
+        "mezzo",
+        "mid",
+        "middle",
+        "middlemost",
+        "middling",
+        "midland",
+        "midmost",
+        "midships",
+        "midway",
+        "nonconvergent",
+        "nondivergent",
+        "nuclear",
+        "parallel",
+        "parallelepipedal",
+        "parallelinervate",
+        "paralleling",
+        "parallelodrome",
+        "parallelogrammatic",
+        "parallelogrammic",
+        "parallelotropic"
+      ]
+    },
     "equidiurnal": {
       "word": "EQUIDIURNAL",
       "definitions": [
         {
           "text": "Pertaining to the time of equal day and night; -- applied to the equinoctial line. Whewell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "equiform": {
+      "word": "EQUIFORM",
+      "definitions": [
+        {
+          "text": "Having the same form; uniform.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1568,6 +1647,16 @@
         {
           "text": "The process by which animal and vegetable organisms preserve a physiological balance. H. Spenser.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "equilibrious": {
+      "word": "EQUILIBRIOUS",
+      "definitions": [
+        {
+          "text": "Evenly poised; balanced. Dr. H. More.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1765,6 +1854,65 @@
         }
       ],
       "relatedWords": []
+    },
+    "equine": {
+      "word": "EQUINE",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or resembling, a horse. The shoulders, body, things, and mane are equine; the head completely bovine. Sir J. Barrow.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Houyhnhnm",
+        "asinine",
+        "bovid",
+        "bovine",
+        "brood mare",
+        "caprid",
+        "caprine",
+        "charger",
+        "colt",
+        "courser",
+        "cowish",
+        "cowlike",
+        "critter",
+        "deerlike",
+        "dobbin",
+        "entire",
+        "entire horse",
+        "equestrian",
+        "filly",
+        "foal",
+        "gelding",
+        "goatish",
+        "goatlike",
+        "hircine",
+        "hoggish",
+        "hoofed",
+        "horse",
+        "horsy",
+        "mare",
+        "mount",
+        "mulish",
+        "nag",
+        "ovine",
+        "piggish",
+        "prancer",
+        "ruminant",
+        "sheepish",
+        "sheeplike",
+        "stallion",
+        "steed",
+        "stud",
+        "studhorse",
+        "swinish",
+        "tarpan",
+        "top horse",
+        "ungulate",
+        "war-horse",
+        "wild horse"
+      ]
     },
     "equinia": {
       "word": "EQUINIA",
@@ -2369,7 +2517,25 @@
         "tit for tat"
       ]
     },
-    "equipollenceequipollency": {
+    "equipollence": {
+      "word": "EQUIPOLLENCE; EQUIPOLLENCY",
+      "definitions": [
+        {
+          "text": "Equality of power, force, signification, or application. Boyle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Logic)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sameness of signification of two or more propositions which differ in language.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "equipollency": {
       "word": "EQUIPOLLENCE; EQUIPOLLENCY",
       "definitions": [
         {
@@ -2415,7 +2581,17 @@
       ],
       "relatedWords": []
     },
-    "equiponderanceequiponderancy": {
+    "equiponderance": {
+      "word": "EQUIPONDERANCE; EQUIPONDERANCY",
+      "definitions": [
+        {
+          "text": "Equality of weight; equipoise.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "equiponderancy": {
       "word": "EQUIPONDERANCE; EQUIPONDERANCY",
       "definitions": [
         {
@@ -3388,7 +3564,17 @@
       ],
       "relatedWords": []
     },
-    "equivalveequivalved": {
+    "equivalve": {
+      "word": "EQUIVALVE; EQUIVALVED",
+      "definitions": [
+        {
+          "text": "Having the valves equal in size and from, as in most bivalve shells.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "equivalved": {
       "word": "EQUIVALVE; EQUIVALVED",
       "definitions": [
         {
@@ -3846,7 +4032,21 @@
       ],
       "relatedWords": []
     },
-    "equivoqueequivoke": {
+    "equivoque": {
+      "word": "EQUIVOQUE; EQUIVOKE",
+      "definitions": [
+        {
+          "text": "An ambiguous term; a word susceptible of different significations. Coleridge.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An equivocation; a guibble. B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "equivoke": {
       "word": "EQUIVOQUE; EQUIVOKE",
       "definitions": [
         {

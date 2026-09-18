@@ -55,7 +55,7 @@
       ],
       "relatedWords": []
     },
-    "camaracamaradosparescamaradosdeputados": {
+    "camara": {
       "word": "CAMARA; CAMARA DOS PARES; CAMARADOS DEPUTADOS",
       "definitions": [
         {
@@ -70,6 +70,26 @@
       "definitions": [
         {
           "text": "Comradeship and loyalty. The spirit of camaraderie is strong among these riders of the plains. W. A. Fraser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "camaradosdeputados": {
+      "word": "CAMARA; CAMARA DOS PARES; CAMARADOS DEPUTADOS",
+      "definitions": [
+        {
+          "text": "Chamber; house; -- used in Ca\"ma*ra dos Pa\"res, and Ca\"ma*ra dos De`pu*ta\"dos. See Legislature.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "camaradospares": {
+      "word": "CAMARA; CAMARA DOS PARES; CAMARADOS DEPUTADOS",
+      "definitions": [
+        {
+          "text": "Chamber; house; -- used in Ca\"ma*ra dos Pa\"res, and Ca\"ma*ra dos De`pu*ta\"dos. See Legislature.",
           "partOfSpeech": "noun"
         }
       ],
@@ -348,7 +368,7 @@
       ],
       "relatedWords": []
     },
-    "cambrobritoncambrobriton": {
+    "cambrobriton": {
       "word": "CAMBROBRITON; CAMBRO-BRITON",
       "definitions": [
         {
@@ -444,7 +464,7 @@
         "wildebeest"
       ]
     },
-    "camelbackedcamelbacked": {
+    "camelbacked": {
       "word": "CAMELBACKED; CAMEL-BACKED",
       "definitions": [
         {
@@ -514,7 +534,17 @@
       ],
       "relatedWords": []
     },
-    "camembertcamembertcheese": {
+    "camembert": {
+      "word": "CAMEMBERT; CAMEMBERT CHEESE",
+      "definitions": [
+        {
+          "text": "A kind of soft, unpressed cream cheese made in the vicinity of Camembert, near Argentan, France; also, any cheese of the same type, wherever made.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "camembertcheese": {
       "word": "CAMEMBERT; CAMEMBERT CHEESE",
       "definitions": [
         {
@@ -843,6 +873,16 @@
       ],
       "relatedWords": []
     },
+    "camomile": {
+      "word": "CAMOMILE; CHAMOMILE",
+      "definitions": [
+        {
+          "text": "A genus of herbs (Anthemis) of the Composite family. The common camomile, A. nobilis, is used as a popular remedy. Its flowers have a strong and fragrant and a bitter, aromatic taste. They are tonic, febrifugal, and in large doses emetic, and the volatile oil is carminative.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "camonflet": {
       "word": "CAMONFLET",
       "definitions": [
@@ -863,7 +903,7 @@
       ],
       "relatedWords": []
     },
-    "camouscamoys": {
+    "camous": {
       "word": "CAMOUS; CAMOYS",
       "definitions": [
         {
@@ -889,6 +929,16 @@
         {
           "text": "Awry. [Obs.] Skelton.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "camoys": {
+      "word": "CAMOUS; CAMOYS",
+      "definitions": [
+        {
+          "text": "Flat; depressed; crooked; -- said only of the nose. [Obs.]",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -933,7 +983,15 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To pitch or prepare a camp; to encamp; to lodge in a camp; -- often with out.",
+          "text": "To pitch or prepare a camp; to encamp; to lodge in a camp; -- often with out. They camped out at night, under the stars. W. Irving.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Etym: [See Camp, n., 6]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To play the game called camp. [Prov. Eng.] Tusser.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1637,7 +1695,17 @@
         "world-traveler"
       ]
     },
-    "campestralcampestrian": {
+    "campestral": {
+      "word": "CAMPESTRAL; CAMPESTRIAN",
+      "definitions": [
+        {
+          "text": "Relating to an open fields; drowing in a field; growing in a field, or open ground.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "campestrian": {
       "word": "CAMPESTRAL; CAMPESTRIAN",
       "definitions": [
         {
@@ -1745,13 +1813,7 @@
         {
           "text": "A salt of camphoric acid.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "camphoratecamporated": {
-      "word": "CAMPHORATE; CAMPORATED",
-      "definitions": [
+        },
         {
           "text": "Combined or impregnated with camphor. Camphorated oil, an oleaginous preparation containing camphor, much used as an embrocation.",
           "partOfSpeech": ""
@@ -1803,6 +1865,16 @@
         {
           "text": "A plant of the Pink family (Cucubalus bacciferus), bearing berries regarded as poisonous. Bladder campion, a plant of the Pink family (Cucubalus Behen or Silene inflata), having a much inflated calyx. See Behen. crimsome crimson flowers.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "camporated": {
+      "word": "CAMPHORATE; CAMPORATED",
+      "definitions": [
+        {
+          "text": "Combined or impregnated with camphor. Camphorated oil, an oleaginous preparation containing camphor, much used as an embrocation.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1879,16 +1951,6 @@
         "walk",
         "wrestling ring"
       ]
-    },
-    "campusthefieldscofbattleseecampandcfdecampscamp": {
-      "word": "campus the field (sc. of battle). See Camp, and cf. Decamp, Scamp,",
-      "definitions": [
-        {
-          "text": "To run with speed; to run or move in a quick, hurried manner; to hasten away. Macaulay. The lady, however, . . . could not help scampering about the room after a mouse. S. Sharpe.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
     },
     "campylospermous": {
       "word": "CAMPYLOSPERMOUS",

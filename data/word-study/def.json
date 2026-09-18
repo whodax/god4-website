@@ -745,6 +745,16 @@
       ],
       "relatedWords": []
     },
+    "defeasible": {
+      "word": "DEFEASIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being annulled or made void; as, a defeasible title.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "defeat": {
       "word": "DEFEAT",
       "definitions": [
@@ -1550,7 +1560,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Lacking some of the usual forms of declension or conjugation;",
+          "text": "Lacking some of the usual forms of declension or conjugation; as, a defective noun or verb.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1764,6 +1774,34 @@
       "definitions": [
         {
           "text": "See Defense.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of defending, or the state of being defended; protection, as from violence or danger. In cases of defense 't is best to weigh The enemy more mighty than he seems. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which defends or protects; anything employed to oppose attack, ward off violence or danger, or maintain security; a guard; a protection. War would arise in defense of the right. Tennyson. God, the widow's champion and defense. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Protecting plea; vindication; justification. Men, brethren, and fathers, hear ye my defense. Acts xxii. 1.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The defendant's answer or plea; an opposing or denial of the truth or validity of the plaintiff's or prosecutor's case; the method of proceeding adopted by the defendant to protect himself against the plaintiff's action.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Act or skill in making defense; defensive plan or policy; practice in self defense, as in fencing, boxing, etc. A man of great defense. Spenser. By how much defense is better than no skill. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Prohibition; a prohibitory ordinance. [Obs.] Severe defenses . . . against wearing any linen under a certain breadth. Sir W. Temple.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2067,8 +2105,36 @@
       "relatedWords": []
     },
     "defense": {
-      "word": "DEFENSE",
+      "word": "DEFENSE; DEFENCE",
       "definitions": [
+        {
+          "text": "The act of defending, or the state of being defended; protection, as from violence or danger. In cases of defense 't is best to weigh The enemy more mighty than he seems. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which defends or protects; anything employed to oppose attack, ward off violence or danger, or maintain security; a guard; a protection. War would arise in defense of the right. Tennyson. God, the widow's champion and defense. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Protecting plea; vindication; justification. Men, brethren, and fathers, hear ye my defense. Acts xxii. 1.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The defendant's answer or plea; an opposing or denial of the truth or validity of the plaintiff's or prosecutor's case; the method of proceeding adopted by the defendant to protect himself against the plaintiff's action.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Act or skill in making defense; defensive plan or policy; practice in self defense, as in fencing, boxing, etc. A man of great defense. Spenser. By how much defense is better than no skill. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Prohibition; a prohibitory ordinance. [Obs.] Severe defenses . . . against wearing any linen under a certain breadth. Sir W. Temple.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To furnish with defenses; to fortify. [Obs.] [Written also defence.] Better manned and more strongly defensed. Hales.",
           "partOfSpeech": "verb"
@@ -2229,45 +2295,11 @@
         "wrangling"
       ]
     },
-    "defensedefence": {
-      "word": "DEFENSE; DEFENCE",
-      "definitions": [
-        {
-          "text": "The act of defending, or the state of being defended; protection, as from violence or danger. In cases of defense 't is best to weigh The enemy more mighty than he seems. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "That which defends or protects; anything employed to oppose attack, ward off violence or danger, or maintain security; a guard; a protection. War would arise in defense of the right. Tennyson. God, the widow's champion and defense. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Protecting plea; vindication; justification. Men, brethren, and fathers, hear ye my defense. Acts xxii. 1.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The defendant's answer or plea; an opposing or denial of the truth or validity of the plaintiff's or prosecutor's case; the method of proceeding adopted by the defendant to protect himself against the plaintiff's action.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Act or skill in making defense; defensive plan or policy; practice in self defense, as in fencing, boxing, etc. A man of great defense. Spenser. By how much defense is better than no skill. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Prohibition; a prohibitory ordinance. [Obs.] Severe defenses . . . against wearing any linen under a certain breadth. Sir W. Temple.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "defenseless": {
       "word": "DEFENSELESS",
       "definitions": [
         {
-          "text": "Destitute of defense; unprepared to resist attack; unable to",
+          "text": "Destitute of defense; unprepared to resist attack; unable to oppose; unprotected.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2805,7 +2837,25 @@
       ],
       "relatedWords": []
     },
-    "defervescencedefervescency": {
+    "defervescence": {
+      "word": "DEFERVESCENCE; DEFERVESCENCY",
+      "definitions": [
+        {
+          "text": "A subsiding from a state of ebullition; loss of heat; lukewarmness. A defervescency in holy actions. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The subsidence of a febrile process; as, the stage of defervescence in pneumonia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "defervescency": {
       "word": "DEFERVESCENCE; DEFERVESCENCY",
       "definitions": [
         {
@@ -2944,7 +2994,7 @@
       "word": "DEFIANT",
       "definitions": [
         {
-          "text": "Full of defiance; bold; insolent; as, a defiant spirit or act.",
+          "text": "Full of defiance; bold; insolent; as, a defiant spirit or act. In attitude stern and defiant. Longfellow.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3193,7 +3243,7 @@
       "word": "DEFICIENT",
       "definitions": [
         {
-          "text": "Wanting, to make up completeness; wanting, as regards a requirement; not sufficient; inadequate; defective; imperfect; incomplete; lacking; as, deficient parts; deficient estate; deficient strength; deficient in judgment. The style was indeed deficient in ease and variety. Macaulay.",
+          "text": "Wanting, to make up completeness; wanting, as regards a requirement; not sufficient; inadequate; defective; imperfect; incomplete; lacking; as, deficient parts; deficient estate; deficient strength; deficient in judgment. The style was indeed deficient in ease and variety. Macaulay. Deficient number. (Arith.) See under Abundant.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3783,7 +3833,7 @@
       "word": "DEFINABLE",
       "definitions": [
         {
-          "text": "Capable of being defined, limited, or explained; determinable; describable by definition; ascertainable; as, definable limits;",
+          "text": "Capable of being defined, limited, or explained; determinable; describable by definition; ascertainable; as, definable limits; definable distinctions or regulations; definable words.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4011,7 +4061,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Serving to define or restrict; limiting; determining; as, the definite article. Definite article (Gram.), the article the, which is",
+          "text": "Serving to define or restrict; limiting; determining; as, the definite article. Definite article (Gram.), the article the, which is used to designate a particular person or thing, or a particular class of persons or things; -- also called a definitive. See Definitive, n. under Determinate. chemical combination that every definite compound always contains the same elements in the same proportions by weight; and, if two or more elements form more than one compound with each other, the relative proportions of each are fixed. Compare Law of multiple proportions, under Multiple.",
           "partOfSpeech": "adjective"
         },
         {
@@ -5503,414 +5553,6 @@
       ],
       "relatedWords": []
     },
-    "defnaplatformthebottomofaroomafloorpavementseefloor": {
-      "word": "Defn: A platform; the bottom of a room; a floor; pavement. See Floor,",
-      "definitions": [
-        {
-          "text": "Material for the construction of a floor or floors.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnaprocessfortestingtheaccuracyofanoperationperformed": {
-      "word": "Defn: A process for testing the accuracy of an operation performed.",
-      "definitions": [
-        {
-          "text": "Armor of excellent or tried quality, and deemed impenetrable; properly, armor of proof. [Obs.] Shak. Artist's proof, a very early proof impression of an engraving, or the like; -- often distinguished by the artist's signature. def. 5, above. Testimony.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnaroundedprominenceonthebackofasepalasinthecommon": {
-      "word": "Defn: A rounded prominence on the back of a sepal, as in the common",
-      "definitions": [
-        {
-          "text": "Temper; natural disposition; inclination. [Obs.] Brothers . . . not united in grain. Hayward.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A sort of spice, the grain of paradise. [Obs.] He cheweth grain and licorice, To smellen sweet. Chaucer. Against the grain, against or across the direction of the fibers; hence, against one's wishes or tastes; unwillingly; unpleasantly; reluctantly; with difficulty. Swift.Saintsbury.-- A grain of allowance, a slight indulgence or latitude a small allowance. into sheaves. skins blacked on the grain side for women's shoes, etc. Tineidæ (as Tinea granella and Butalis cereAlella), whose larvæ devour grain in storehouses. hair has been removed; -- opposed to flesh side. charcoal. which destroys stored wheat and othar grain, by eating out the interior. above. \"Anguish in grain.\" Herbert.-- To dye in grain, to dye of a fast color by means of the coccus or kermes grain [see Grain, n., 5]; hence, to dye firmly; also, to dye in the wool, or in the raw material. See under Dye. The red roses flush up in her cheeks . . . Likce crimson dyed in grain. Spenser. irritate, mortify, or trouble.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnascalymultiplefruitresultingfromtheripeningofanament": {
-      "word": "Defn: A scaly multiple fruit resulting from the ripening of an ament",
-      "definitions": [
-        {
-          "text": "(Biol.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "An individual asexually producing sexual individuals differing from itself also in other respects, as the tapeworm, -- one of the forms that occur in metagenesis.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Same as Strobila.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnasmallconstellationbetweenaquilaandpegasussee": {
-      "word": "Defn: A small constellation between Aquila and Pegasus. See",
-      "definitions": [
-        {
-          "text": "Dolphin fly (Zoöl.), the black, bean, or collier, Aphis (Aphis fable), destructive to beans. bowsprit.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defncompofable": {
-      "word": "Defn: comp. of Able.",
-      "definitions": [
-        {
-          "text": "superl. of Able.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnnothuskedhavingthehuskon": {
-      "word": "Defn: Not husked; having the husk on.",
-      "definitions": [
-        {
-          "text": "Having the husk removed; without husk. Bp. Hall.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnoneofasectofchristianstheoutgrowthofasmall": {
-      "word": "Defn: One of a sect of Christians, the outgrowth of a small",
-      "definitions": [
-        {
-          "text": "A person of strict piety; one who lives in the exact observance of religious duties; -- sometimes so called in contempt or ridicule.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnoneofseveralamericanmarinefishesseesearobinand": {
-      "word": "Defn: One of several American marine fishes. See Sea robin, and",
-      "definitions": [
-        {
-          "text": "(Brass Founding)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A hook used in lifting a crucible.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnseeingdistinctlyatshortdistancesonlyshortsighted": {
-      "word": "Defn: Seeing distinctly at short distances only; shortsighted.",
-      "definitions": [
-        {
-          "text": "See Myopic, and Myopia.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnsexualconnectionwithawomanwithoutherconsentseeageof": {
-      "word": "Defn: Sexual connection with a woman without her consent. See Age of",
-      "definitions": [
-        {
-          "text": "That which is snatched away. [Obs.] Where now are all my hopes O, never more. Shall they revive! nor death her rapes restore. Sandys.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Movement, as in snatching; haste; hurry. [Obs.] rape of the land by mining companies.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnsomethingsetroundoruponadishasanembellishmentsee": {
-      "word": "Defn: Something set round or upon a dish as an embellishment. See",
-      "definitions": [
-        {
-          "text": "Fetters. [Cant]",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A fee; specifically, in English jails, formerly an unauthorized fee demanded by the old prisoners of a newcomer. [Cant] Fielding. Garnish bolt (Carp.), a bolt with a chamfered or faceted head. Knight.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntheactofselectingordetachingsoldiersadraftseedraft": {
-      "word": "Defn: The act of selecting or detaching soldiers; a draft (see Draft,",
-      "definitions": [
-        {
-          "text": "That which is drawn; as: (a) That which is taken by sweeping with a net.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntheactorprocessofreducingseereducevt6andto": {
-      "word": "Defn: The act or process of reducing. See Reduce, v. t., 6. and To",
-      "definitions": [
-        {
-          "text": "(Astron.) (a) The correction of observations for known errors of instruments, etc. (b) The preparation of the facts and measurements of observations in order to deduce a general result.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The process of making a copy of something, as a figure, design, or draught, on a smaller scale, preserving the proper proportions. Fairholt.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Logic)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The bringing of a syllogism in one of the so-called imperfect modes into a mode in the first figure.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Chem. & Metal.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The act, process, or result of reducing; as, the reduction of iron from its ores; the reduction of aldehyde from alcohol.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Med.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The operation of restoring a dislocated or fractured part to its former place. Reduction ascending (Arith.), the operation of changing numbers of a lower into others of a higher denomination, as cents to dollars. of a higher into others of a lower denomination, as dollars to cents. conquest; subjection.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnthebroadestpartofaplankworkedtopandbutseetopand": {
-      "word": "Defn: The broadest part of a plank worked top and but (see Top and",
-      "definitions": [
-        {
-          "text": "(Football)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "That part of the field which is beyond the line of flags on either side. Encyc. of Rural Sports.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A boys' game; tag. In touch (Football), outside of bounds. T. Hughes. engagement [Obs.]; hence, to fulfill duly a function. My mind and senses keep touch and time. Sir W. Scott. (b) To keep in contact; to maintain connection or sympathy;-with with or of.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnthegrayishviscidsubstanceconstitutingthebuffycoatsee": {
-      "word": "Defn: The grayish viscid substance constituting the buffy coat. See",
-      "definitions": [
-        {
-          "text": "(Mech.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A wheel covered with buff leather, and used in polishing cutlery, spoons, etc.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The bare skin; as, to strip to the buff. [Colloq.] To be in buff is equivalent to being naked. Wright.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnthelowestandsupportingpartormemberofawallincluding": {
-      "word": "Defn: The lowest and supporting part or member of a wall, including",
-      "definitions": [
-        {
-          "text": "A donation or legacy appropriated to support a charitable institution, and constituting a permanent fund; endowment. He was entered on the foundation of Westminster. Macaulay.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "That which is founded, or established by endowment; an endowed institution or charity.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntheobjectivecase": {
-      "word": "Defn: The objective case.",
-      "definitions": [
-        {
-          "text": "Same as Objective point, under Objective, a.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntherelationwhichexistsbetweenthreeormoresetsofpoints": {
-      "word": "Defn: The relation which exists between three or more sets of points,",
-      "definitions": [
-        {
-          "text": "(Med.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The return of an enlarged part or organ to its normal size, as of the uterus after pregnancy.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defnthespacebetweentwobarsseebeattriplequadruple": {
-      "word": "Defn: The space between two bars. See Beat, Triple, Quadruple,",
-      "definitions": [
-        {
-          "text": "(Arith.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A number which is contained in a given number a number of times without a remainder; as in the phrases, the common measure, the greatest common measure, etc., of two or more numbers.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A step or definite part of a progressive course or policy; a means to an end; an act designed for the accomplishment of an object; as, political measures; prudent measures; an inefficient measure. His majesty found what wrong measures he had taken in the conferring that trust, and lamented his error. Clarendon.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The act of measuring; measurement. Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "pl. (Geol.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Beds or strata; as, coal measures; lead measures. Lineal, or Long, measure, measure of length; the measure of lines or distances. square units, as inches, feet, miles, etc. to be harshly or oppressively dealt with. to form an opinion of one's disposition, character, ability, etc. Say to her, we have measured many miles To tread a measure with her on this grass. Shak.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntochangeaship'scoursesoastocauseashiftingofthe": {
-      "word": "Defn: To change a ship's course so as to cause a shifting of the",
-      "definitions": [
-        {
-          "text": "To agree; to harmonize. [Colloq.] Bartlett.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntochangethedirectionofashipbyhaulingthewindsee": {
-      "word": "Defn: To change the direction of a ship by hauling the wind. See",
-      "definitions": [
-        {
-          "text": "To pull apart, as oxen sometimes do when yoked. To haul around (Naut.), to shift to any point of the compass; -- said of the wind. farther away from anything; hence, to withdraw; to draw back.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntocoverwithathinlayerasobjectsofglasswithglassofa": {
-      "word": "Defn: To cover with a thin layer, as objects of glass with glass of a",
-      "definitions": [
-        {
-          "text": "To trick up in a showy manner. Limning and flashing it with various dyes. A. Brewer.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Etym: [Perh. due to confusion between flash of light and plash, splash.]",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To strike and throw up large bodies of water from the surface; to splash. [Obs.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntoenvelopinawetordrysheetwithinnumerouscoverings": {
-      "word": "Defn: To envelop in a wet or dry sheet, within numerous coverings.",
-      "definitions": [
-        {
-          "text": "(Mech.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To render impervious, as by filling or surrounding with suitable material, or to fit or adjust so as to move without giving passage to air, water, or steam; as, to pack a joint; to pack the piston of a steam engine.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntoproduceirritationintostimulatetocausetocontract": {
-      "word": "Defn: To produce irritation in; to stimulate; to cause to contract.",
-      "definitions": [
-        {
-          "text": "(Med.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To make morbidly excitable, or oversensitive; to fret; as, the skin is irritated by friction; to irritate a wound by a coarse bandage. incense; enrage. stages of excited or angry feeling. Irritate denotes an excitement of quick and slightly angry feeling which is only momentary; as, irritated by a hasty remark. To provoke implies the awakening of some open expression of decided anger; as, a provoking insult. Exasperate denotes a provoking of anger at something unendurable. Whatever comes across our feelings irritates; whatever excites anger provokes; whatever raises anger to a high point exasperates. \"Susceptible and nervous people are most easily irritated; proud people are quickly provoked; hot and fiery people are soonest exasperated.\" Crabb.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntosortorseparateasoreinajiggerorsieveseejigging": {
-      "word": "Defn: To sort or separate, as ore in a jigger or sieve. See Jigging,",
-      "definitions": [
-        {
-          "text": "(Metal Working)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To cut or form, as a piece of metal, in a jigging machine.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntotrimorshaveofftheedgesofasabookorpaperwitha": {
-      "word": "Defn: To trim, or shave off the edges of, as a book or paper, with a",
-      "definitions": [
-        {
-          "text": "(Joinery)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To cut a groove in, as in a plank, or the edge of a board; especially, a rectangular groove to receive the end of a shelf or tread, the edge of a panel, a tongue, etc. To plow in, to cover by plowing; as, to plow in wheat. continue in spite of obstacles or resistence by others. spite of the contrary advice of others. plow through, to execute a difficult or laborious task steadily, esp. one containing many parts; as, he plowed through the stack of correspondence until all had been answered.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "defntowritedowninproperorderandarrangementastoscorean": {
-      "word": "Defn: To write down in proper order and arrangement; as, to score an",
-      "definitions": [
-        {
-          "text": "(Geol.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To mark with parallel lines or scratches; as, the rocks of New England and the Western States were scored in the drift epoch.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "defoedation": {
       "word": "DEFOEDATION",
       "definitions": [
@@ -5921,7 +5563,36 @@
       ],
       "relatedWords": []
     },
-    "defoliatedefoliated": {
+    "defoliate": {
+      "word": "DEFOLIATE; DEFOLIATED",
+      "definitions": [
+        {
+          "text": "Deprived of leaves, as by their natural fall.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "denude",
+        "dismember",
+        "draw and quarter",
+        "flay",
+        "lacerate",
+        "maim",
+        "mangle",
+        "mutilate",
+        "peel",
+        "pick to pieces",
+        "pull apart",
+        "shred",
+        "skin",
+        "strip",
+        "take apart",
+        "tear apart",
+        "tear to pieces",
+        "tear to tatters"
+      ]
+    },
+    "defoliated": {
       "word": "DEFOLIATE; DEFOLIATED",
       "definitions": [
         {
@@ -6097,7 +5768,7 @@
       "word": "DEFORMED",
       "definitions": [
         {
-          "text": "Unnatural or distorted in form; having a deformity; misshapen;",
+          "text": "Unnatural or distorted in form; having a deformity; misshapen; disfigured; as, a deformed person; a deformed head.",
           "partOfSpeech": "adjective"
         }
       ],

@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "entries": {
-    "cacaemiacachaemia": {
+    "cacaemia": {
       "word": "CACAEMIA; CACHAEMIA",
       "definitions": [
         {
@@ -41,9 +41,13 @@
       ],
       "relatedWords": []
     },
-    "cachaemiacachemia": {
-      "word": "CACHAEMIA; CACHEMIA",
+    "cachaemia": {
+      "word": "CACAEMIA; CACHAEMIA",
       "definitions": [
+        {
+          "text": "A degenerated or poisoned condition of the blood.",
+          "partOfSpeech": ""
+        },
         {
           "text": "A degenerated or poisoned condition of the blood. --Ca*chæ\"mic, Ca*che\"mic (#), a.",
           "partOfSpeech": "noun"
@@ -157,12 +161,32 @@
         "warehouse"
       ]
     },
-    "cachecticcachectical": {
+    "cachectic": {
       "word": "CACHECTIC; CACHECTICAL",
       "definitions": [
         {
           "text": "Having, or pertaining to, cachexia; as, cachectic remedies; cachectical blood. Arbuthnot.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cachectical": {
+      "word": "CACHECTIC; CACHECTICAL",
+      "definitions": [
+        {
+          "text": "Having, or pertaining to, cachexia; as, cachectic remedies; cachectical blood. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cachemia": {
+      "word": "CACHAEMIA; CACHEMIA",
+      "definitions": [
+        {
+          "text": "A degenerated or poisoned condition of the blood. --Ca*chæ\"mic, Ca*che\"mic (#), a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -277,7 +301,17 @@
         "trick"
       ]
     },
-    "cachexiacachexy": {
+    "cachexia": {
+      "word": "CACHEXIA; CACHEXY",
+      "definitions": [
+        {
+          "text": "A condition of ill health and impairment of nutrition due to impoverishment of the blood, esp. when caused by a specific morbid process (as cancer or tubercle).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cachexy": {
       "word": "CACHEXIA; CACHEXY",
       "definitions": [
         {
@@ -636,7 +670,7 @@
       ],
       "relatedWords": []
     },
-    "cacochymiacacochymy": {
+    "cacochymia": {
       "word": "CACOCHYMIA; CACOCHYMY",
       "definitions": [
         {
@@ -646,12 +680,32 @@
       ],
       "relatedWords": []
     },
-    "cacochymiccacochymical": {
+    "cacochymic": {
       "word": "CACOCHYMIC; CACOCHYMICAL",
       "definitions": [
         {
           "text": "Having the fluids of the body vitiated, especially the blood. Wiseman.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cacochymical": {
+      "word": "CACOCHYMIC; CACOCHYMICAL",
+      "definitions": [
+        {
+          "text": "Having the fluids of the body vitiated, especially the blood. Wiseman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cacochymy": {
+      "word": "CACOCHYMIA; CACOCHYMY",
+      "definitions": [
+        {
+          "text": "A vitiated state of the humors, or fluids, of the body, especially of the blood. Dunglison.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -782,7 +836,27 @@
       ],
       "relatedWords": []
     },
-    "cacomixlecacomixtlecacomixl": {
+    "cacomixl": {
+      "word": "CACOMIXLE; CACOMIXTLE; CACOMIXL",
+      "definitions": [
+        {
+          "text": "A North American carnivore (Bassaris astuta), about the size of a cat, related to the raccoons. It inhabits Mexico, Texas, and California.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cacomixle": {
+      "word": "CACOMIXLE; CACOMIXTLE; CACOMIXL",
+      "definitions": [
+        {
+          "text": "A North American carnivore (Bassaris astuta), about the size of a cat, related to the raccoons. It inhabits Mexico, Texas, and California.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cacomixtle": {
       "word": "CACOMIXLE; CACOMIXTLE; CACOMIXL",
       "definitions": [
         {
@@ -802,7 +876,37 @@
       ],
       "relatedWords": []
     },
-    "cacophoniccacophonicalcacophonouscacophonious": {
+    "cacophonic": {
+      "word": "CACOPHONIC; CACOPHONICAL; CACOPHONOUS; CACOPHONIOUS",
+      "definitions": [
+        {
+          "text": "Harsh-sounding.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cacophonical": {
+      "word": "CACOPHONIC; CACOPHONICAL; CACOPHONOUS; CACOPHONIOUS",
+      "definitions": [
+        {
+          "text": "Harsh-sounding.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cacophonious": {
+      "word": "CACOPHONIC; CACOPHONICAL; CACOPHONOUS; CACOPHONIOUS",
+      "definitions": [
+        {
+          "text": "Harsh-sounding.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cacophonous": {
       "word": "CACOPHONIC; CACOPHONICAL; CACOPHONOUS; CACOPHONIOUS",
       "definitions": [
         {
@@ -1013,7 +1117,17 @@
       ],
       "relatedWords": []
     },
-    "cacoxenecacoxenite": {
+    "cacoxene": {
+      "word": "CACOXENE; CACOXENITE",
+      "definitions": [
+        {
+          "text": "A hydrous phosphate of iron occurring in yellow radiated tufts. The phosphorus seriously injures it as an iron ore.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cacoxenite": {
       "word": "CACOXENE; CACOXENITE",
       "definitions": [
         {

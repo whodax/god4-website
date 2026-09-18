@@ -317,7 +317,17 @@
       ],
       "relatedWords": []
     },
-    "truculencetruculency": {
+    "truculence": {
+      "word": "TRUCULENCE; TRUCULENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being truculent; savageness of manners; ferociousness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "truculency": {
       "word": "TRUCULENCE; TRUCULENCY",
       "definitions": [
         {
@@ -385,6 +395,22 @@
       "word": "TRUE",
       "definitions": [
         {
+          "text": "Conformable to fact; in accordance with the actual state of things; correct; not false, erroneous, inaccurate, or the like; as, a true relation or narration; a true history; a declaration is true when it states the facts.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Right to precision; conformable to a rule or pattern; exact; accurate; as, a true copy; a true likeness of the original. Making his eye, foot, and hand keep true time. Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Steady in adhering to friends, to promises, to a prince, or the like; unwavering; faithful; loyal; not false, fickle, or perfidious; as, a true friend; a wife true to her husband; an officer true to his charge. Thy so true, So faithful, love unequaled. Milton. Dare to be true: nothing can need a lie. Herbert.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Actual; not counterfeit, adulterated, or pretended; genuine; pure; real; as, true balsam; true love of country; a true Christian. The true light which lighteth every man that cometh into the world. John i. 9. True ease in writing comes from art, not chance. Pope. true, varying from correct mechanical form, alignment, adjustment, etc.; -- said of a wall that is not perpendicular, of a wheel whose circumference is not in the same plane, and the like. [Colloq.] -- A true bill (Law), a bill of indictment which is returned by the grand jury so indorsed, signifying that the charges to be true.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "In accordance with truth; truly. Shak.",
           "partOfSpeech": "adverb"
         }
@@ -433,7 +459,7 @@
       "word": "TRUE-HEARTED",
       "definitions": [
         {
-          "text": "Of a faithful heart; honest; sincere; not faithless or",
+          "text": "Of a faithful heart; honest; sincere; not faithless or deceitful; as, a truhearted friend.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -608,6 +634,10 @@
     "trump": {
       "word": "TRUMP",
       "definitions": [
+        {
+          "text": "A wind instrument of music; a trumpet, or sound of a trumpet; - - used chiefly in Scripture and poetry. We shall all be changed, in a moment, in the twinkling of an eye, at the last trump. 1 Cor. xv. 51, 52. The wakeful trump of doom. Milton.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To blow a trumpet. [Obs.] Wyclif (Matt. vi. 2).",
           "partOfSpeech": "verb"
@@ -1079,6 +1109,10 @@
         {
           "text": "(Mining)",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "To extract (ores) from the slimes in which they are contained, by means of a trunk. See Trunk, n., 9. Weale.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1511,6 +1545,36 @@
       ],
       "relatedWords": []
     },
+    "trusting": {
+      "word": "TRUSTING",
+      "definitions": [
+        {
+          "text": "Having or exercising trust; confiding; unsuspecting; trustful.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "trustless": {
+      "word": "TRUSTLESS",
+      "definitions": [
+        {
+          "text": "That may not be trusted; not worthy of trust; unfaithful.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "trustworthy": {
+      "word": "TRUSTWORTHY",
+      "definitions": [
+        {
+          "text": "Worthy of trust or confidence; trusty.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "trusty": {
       "word": "TRUSTY",
       "definitions": [
@@ -1551,6 +1615,26 @@
         {
           "text": "To assert as true; to declare. [R.] Had they [the ancients] dreamt this, they would have truthed it heaven. Ford.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "truthful": {
+      "word": "TRUTHFUL",
+      "definitions": [
+        {
+          "text": "Full of truth; veracious; reliable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "truthless": {
+      "word": "TRUTHLESS",
+      "definitions": [
+        {
+          "text": "Devoid of truth; dishonest; dishonest; spurious; faithless.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

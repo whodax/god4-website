@@ -482,7 +482,7 @@
         "zoril"
       ]
     },
-    "bat'swingbatwing": {
+    "bat'swing": {
       "word": "BAT'S-WING; BATWING",
       "definitions": [
         {
@@ -530,7 +530,17 @@
       ],
       "relatedWords": []
     },
-    "batatasbatata": {
+    "batata": {
+      "word": "BATATAS; BATATA",
+      "definitions": [
+        {
+          "text": "An aboriginal American name for the sweet potato (Ipomæa batatas).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "batatas": {
       "word": "BATATAS; BATATA",
       "definitions": [
         {
@@ -838,6 +848,16 @@
         "withdraw",
         "write off"
       ]
+    },
+    "bateau": {
+      "word": "BATEAU",
+      "definitions": [
+        {
+          "text": "A boat; esp. a flat-bottomed, clumsy boat used on the Canadian lakes and rivers. [Written also, but less properly, batteau.] Bateau bridge, a floating bridge supported by bateaux.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     },
     "bated": {
       "word": "BATED",
@@ -1485,7 +1505,17 @@
       ],
       "relatedWords": []
     },
-    "bathymetricbathymetrical": {
+    "bathymetric": {
+      "word": "BATHYMETRIC; BATHYMETRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to bathymetry; relating to the measurement of depths, especially of depths in the sea.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bathymetrical": {
       "word": "BATHYMETRIC; BATHYMETRICAL",
       "definitions": [
         {
@@ -2065,24 +2095,6 @@
       ],
       "relatedWords": []
     },
-    "battaliaorcfprbatedorbatletfrbatretobeatfrl": {
-      "word": "battalia; or cf. Pr. batedor batlet, fr. batre to beat, fr. L.",
-      "definitions": [
-        {
-          "text": "An instrument, with a handle and a flat part covered with parchment or crossed with catgut, used to strike a shuttlecock in play; also, the play of battledoor and shuttlecock.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Etym: [OE. battleder.]",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A child's hornbook. [Obs.] Halliwell.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "battalion": {
       "word": "BATTALION",
       "definitions": [
@@ -2207,7 +2219,7 @@
       ],
       "relatedWords": []
     },
-    "battelerbattler": {
+    "batteler": {
       "word": "BATTELER; BATTLER",
       "definitions": [
         {
@@ -2961,6 +2973,22 @@
           "partOfSpeech": "adjective"
         },
         {
+          "text": "A general action, fight, or encounter, in which all the divisions of an army are or may be engaged; an engagement; a combat.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A struggle; a contest; as, the battle of life. The whole intellectual battle that had at its center the best poem of the best poet of that day. H. Morley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A division of an army; a battalion. [Obs.] The king divided his army into three battles. Bacon. The cavalry, by way of distinction, was called the battle, and on it alone depended the fate of every action. Robertson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The main body, as distinct from the van and rear; battalia. [Obs.] Hayward. explaining compound; as, battle brand, a \"brand\" or sword used in battle; battle cry; battlefield; battle ground; battlearray; battle song. Battle piece, a painting, or a musical composition, representing a battle. one that stands longest is the victor. Grose. (b) A contest with fists or cudgels in which more than two are engaged; a mêlée. Thackeray. in form, with a regular disposition of the forces. Engagement. These words agree in denoting a close encounter between contending parties. Fight is a word of less dignity than the others. Except in poetry, it is more naturally applied to the encounter of a few individuals, and more commonly an accidental one; as, a street fight. A combat is a close encounter, whether between few or many, and is usually premeditated. A battle is commonly more general and prolonged. An engagement supposes large numbers on each side, engaged or intermingled in the conflict.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To join in battle; to contend in fight; as, to battle over theories. To meet in arms, and battle in the plain. Prior.",
           "partOfSpeech": "verb"
         },
@@ -3183,7 +3211,17 @@
         "wrestle"
       ]
     },
-    "battleaxbattleaxe": {
+    "battleax": {
+      "word": "BATTLE-AX; BATTLE-AXE",
+      "definitions": [
+        {
+          "text": "A kind of broadax formerly used as an offensive weapon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "battleaxe": {
       "word": "BATTLE-AX; BATTLE-AXE",
       "definitions": [
         {
@@ -3203,12 +3241,40 @@
       ],
       "relatedWords": []
     },
+    "battledoor": {
+      "word": "BATTLEDOOR",
+      "definitions": [
+        {
+          "text": "An instrument, with a handle and a flat part covered with parchment or crossed with catgut, used to strike a shuttlecock in play; also, the play of battledoor and shuttlecock.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [OE. battleder.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A child's hornbook. [Obs.] Halliwell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "battlemented": {
       "word": "BATTLEMENTED",
       "definitions": [
         {
           "text": "Having battlements. A battlemented portal. Sir W. Scott.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "battler": {
+      "word": "BATTELER; BATTLER",
+      "definitions": [
+        {
+          "text": "A student at Oxford who is supplied with provisions from the buttery; formerly, one who paid for nothing but what he called for, answering nearly to a sizar at Cambridge. Wright.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3278,16 +3344,6 @@
       "definitions": [
         {
           "text": "An elevated river bed or sea bed.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "battusbatusboawhichagreeswithasbatboatcfwbadboat": {
-      "word": "battus, batus, boa, which agrees with AS. bat boat: cf. W. bad boat.",
-      "definitions": [
-        {
-          "text": "A boat; esp. a flat-bottomed, clumsy boat used on the Canadian lakes and rivers. [Written also, but less properly, batteau.] Bateau bridge, a floating bridge supported by bateaux.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3402,6 +3458,16 @@
         {
           "text": "A springboard in a circus or gymnasium; -- called also batule board.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "batwing": {
+      "word": "BAT'S-WING; BATWING",
+      "definitions": [
+        {
+          "text": "Shaped like a bat's wing; as, a bat's-wing burner.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

@@ -65,6 +65,10 @@
       "word": "DICE",
       "definitions": [
         {
+          "text": "Small cubes used in gaming or in determining by chance; also, the game played with dice. See Die, n. Dice coal, a kind of coal easily splitting into cubical fragments. Brande & C.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To play games with dice. I . . . diced not above seven times a week. Shak.",
           "partOfSpeech": "verb"
         },
@@ -243,7 +247,7 @@
       "word": "DICHOTOMOUS",
       "definitions": [
         {
-          "text": "Regularly dividing by pairs from bottom to top; as, a",
+          "text": "Regularly dividing by pairs from bottom to top; as, a dichotomous stem.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -599,7 +603,25 @@
         "underbid"
       ]
     },
-    "dickeydicky": {
+    "dickey": {
+      "word": "DICKEY; DICKY",
+      "definitions": [
+        {
+          "text": "A seat behind a carriage, for a servant.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A false shirt front or bosom.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A gentleman's shirt collar. [Local, U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dicky": {
       "word": "DICKEY; DICKY",
       "definitions": [
         {
@@ -716,7 +738,7 @@
       ],
       "relatedWords": []
     },
-    "dicrotaldicrotous": {
+    "dicrotal": {
       "word": "DICROTAL; DICROTOUS",
       "definitions": [
         {
@@ -732,6 +754,16 @@
         {
           "text": "A condition in which there are two beats or waves of the arterial pulse to each beat of the heart.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dicrotous": {
+      "word": "DICROTAL; DICROTOUS",
+      "definitions": [
+        {
+          "text": "Dicrotic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1045,7 +1077,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Characteristic of a dictator; imperious; dogmatical; overbearing;",
+          "text": "Characteristic of a dictator; imperious; dogmatical; overbearing; as, a dictatorial tone or manner.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1343,28 +1375,6 @@
         {
           "text": "Office of a dictator; dictatorship. [R.] Bacon.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "dictioasayingspeakingcfofjurisdictionfjuridictionsee": {
-      "word": "dictio a saying, speaking: cf. OF. jurisdiction, F. juridiction. See",
-      "definitions": [
-        {
-          "text": "(Law)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The legal power, right, or authority of a particular court to hear and determine causes, to try criminals, or to execute justice; judicial authority over a cause or class of causes; as, certain suits or actions, or the cognizance of certain crimes, are within the jurisdiction of a particular court, that is, within the limits of its authority or commission.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The authority of a sovereign power to govern or legislate; the right of making or enforcing laws; the power or right of exercising authority. To live exempt From Heaven's high jurisdiction. Milton. You wrought to be a legate; by which power You maim'd the jurisdiction of all bishops. Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Sphere of authority; the limits within which any particular power may be exercised, or within which a government or a court has authority. declare, or apply the law. When confined to the judiciary department, it is what we denominate the judicial power, the right of administering justice through the laws, by the means which the laws have provided for that purpose. Jurisdiction is limited to place or territory, to persons, or to particular subjects. Duponceau.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

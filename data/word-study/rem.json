@@ -71,6 +71,16 @@
       ],
       "relatedWords": []
     },
+    "remainderman": {
+      "word": "REMAINDER-MAN",
+      "definitions": [
+        {
+          "text": "One who has an estate after a particular estate is determined. See Remainder, n., 3. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "remake": {
       "word": "REMAKE",
       "definitions": [
@@ -105,7 +115,17 @@
       ],
       "relatedWords": []
     },
-    "remanenceremanency": {
+    "remanence": {
+      "word": "REMANENCE; REMANENCY",
+      "definitions": [
+        {
+          "text": "The state of being remanent; continuance; permanence. [R.] Jer. Taylor. The remanence of the will in the fallen spirit. Coleridge.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "remanency": {
       "word": "REMANENCE; REMANENCY",
       "definitions": [
         {
@@ -147,6 +167,18 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To mark in a notable manner; to distinquish clearly; to make noticeable or conspicuous; to piont out. [Obs.] Thou art a man remarked to taste a mischief. Ford. His manacles remark him; there he sits. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take notice of, or to observe, mentally; as, to remark the manner of a speaker.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To express in words or writing, as observed or noticed; to state; to say; -- often with a substantive clause; as, he remarked that it was time to go. distinctly before the mind. To remark is simply to mark or take note of whatever may come up. To notice implies still less continuity of attention. When we turn from these mental states to the expression of them in language, we find the same distinction. An observation is properly the result of somewhat prolonged thought; a remark is usually suggested by some passing occurence; a notice is in most cases something cursory and short. This distinction is not always maintained as to remark and observe, which are often used interchangeably. \"Observing men may form many judgments by the rules of similitude and proportion.\" I. Watts. \"He can not distinguish difficult and noble speculations from trifling and vulgar remarks.\" Collier. \"The thing to be regarded, in taking notice of a child's miscarriage, is what root it springs from.\" Locke.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To make a remark or remarks; to comment.",
           "partOfSpeech": "verb"
         },
@@ -165,7 +197,7 @@
       "word": "REMARKABLE",
       "definitions": [
         {
-          "text": "Worthy of being remarked or noticed; noticeable; conspicuous; hence, uncommon; extraordinary. 'T is remarkable, that they Talk most who have the least to say. Prior. There is nothing left remarlable Beneath the visiting moon. Shak.",
+          "text": "Worthy of being remarked or noticed; noticeable; conspicuous; hence, uncommon; extraordinary. 'T is remarkable, that they Talk most who have the least to say. Prior. There is nothing left remarlable Beneath the visiting moon. Shak. wonderful; notable; eminent.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -311,6 +343,16 @@
       ],
       "relatedWords": []
     },
+    "remediable": {
+      "word": "REMEDIABLE",
+      "definitions": [
+        {
+          "text": "Capable of being remedied or cured.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "remedial": {
       "word": "REMEDIAL",
       "definitions": [
@@ -349,7 +391,7 @@
           "partOfSpeech": ""
         },
         {
-          "text": "Not answering as a remedy; ineffectual. [Obs.] Forced to forego the attempt remediless. Spenser.",
+          "text": "Not answering as a remedy; ineffectual. [Obs.] Forced to forego the attempt remediless. Spenser. irreparable; desperate.",
           "partOfSpeech": ""
         }
       ],
@@ -417,6 +459,16 @@
         {
           "text": "To execise or have the power of memory; as, some remember better than others. Shak.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rememberable": {
+      "word": "REMEMBERABLE",
+      "definitions": [
+        {
+          "text": "Capable or worthy of being remembered. The whole vale of Keswick is so rememberable. Coleridge.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -515,7 +567,17 @@
       ],
       "relatedWords": []
     },
-    "remercieremercy": {
+    "remercie": {
+      "word": "REMERCIE; REMERCY",
+      "definitions": [
+        {
+          "text": "To thank. [Obs.] She him remercied as the patron of her life. Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "remercy": {
       "word": "REMERCIE; REMERCY",
       "definitions": [
         {
@@ -535,7 +597,17 @@
       ],
       "relatedWords": []
     },
-    "remeveremewe": {
+    "remeve": {
+      "word": "REMEVE; REMEWE",
+      "definitions": [
+        {
+          "text": "To remove. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "remewe": {
       "word": "REMEVE; REMEWE",
       "definitions": [
         {
@@ -732,8 +804,12 @@
       "relatedWords": []
     },
     "remission": {
-      "word": "REMISSION",
+      "word": "PARDON; REMISSION",
       "definitions": [
+        {
+          "text": "-- Forgiveness, Pardon. Forgiveness is Anglo-Saxon, and pardon Norman French, both implying a giving back. The word pardon, being early used in our Bible, has, in religious matters, the same sense as forgiveness; but in the language of common life there is a difference between them, such as we often find between corresponding Anglo-Saxon and Norman words. Forgive points to inward feeling, and suppose alienated affection; when we ask forgiveness, we primarily seek the removal of anger. Pardon looks more to outward things or consequences, and is often applied to trifling matters, as when we beg pardon for interrupting a man, or for jostling him in a crowd. The civil magistrate also grants a pardon, and not forgiveness. The two words are, therefore, very clearly distinguished from each other in most cases which relate to the common concerns of life.",
+          "partOfSpeech": ""
+        },
         {
           "text": "The act of remitting, surrendering, resigning, or giving up.",
           "partOfSpeech": "noun"
@@ -999,19 +1075,13 @@
       ],
       "relatedWords": []
     },
-    "remoladeremoulad": {
+    "remolade": {
       "word": "REMOLADE; REMOULAD",
       "definitions": [
         {
           "text": "A kind of piquant sauce or salad dressing resembling mayonnaise.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "remoladeremoulade": {
-      "word": "REMOLADE; REMOULADE",
-      "definitions": [
+        },
         {
           "text": "An ointment used in farriery.",
           "partOfSpeech": "noun"
@@ -1019,7 +1089,7 @@
       ],
       "relatedWords": []
     },
-    "remoldremould": {
+    "remold": {
       "word": "REMOLD; REMOULD",
       "definitions": [
         {
@@ -1275,7 +1345,7 @@
       "word": "REMORSELESS",
       "definitions": [
         {
-          "text": "Being without remorse; having no pity; hence, destitute of sensibility; cruel; insensible to distress; merciless. \"Remorseless adversaries.\" South. \"With remorseless cruelty.\" Milton.",
+          "text": "Being without remorse; having no pity; hence, destitute of sensibility; cruel; insensible to distress; merciless. \"Remorseless adversaries.\" South. \"With remorseless cruelty.\" Milton. merciless; unmerciful; savage; cruel.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1295,6 +1365,10 @@
         {
           "text": "(Bot.)",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Separated by intervals greater than usual.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1313,9 +1387,33 @@
       ],
       "relatedWords": []
     },
-    "remould": {
-      "word": "REMOULD",
+    "remoulad": {
+      "word": "REMOLADE; REMOULAD",
       "definitions": [
+        {
+          "text": "A kind of piquant sauce or salad dressing resembling mayonnaise.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "remoulade": {
+      "word": "REMOLADE; REMOULADE",
+      "definitions": [
+        {
+          "text": "An ointment used in farriery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "remould": {
+      "word": "REMOLD; REMOULD",
+      "definitions": [
+        {
+          "text": "To mold or shape anew or again; to reshape.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "See Remold.",
           "partOfSpeech": "verb"
@@ -1333,6 +1431,16 @@
         {
           "text": "The opportunity of, or things necessary for, remounting; specifically, a fresh horse, with his equipments; as, to give one a remount.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "removable": {
+      "word": "REMOVABLE",
+      "definitions": [
+        {
+          "text": "Admitting of being removed. Ayliffe.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1359,7 +1467,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To dismiss or discharge from office; as, the President removed",
+          "text": "To dismiss or discharge from office; as, the President removed many postmasters.",
           "partOfSpeech": "verb"
         },
         {
@@ -1459,6 +1567,16 @@
       ],
       "relatedWords": []
     },
+    "remunerable": {
+      "word": "REMUNERABLE",
+      "definitions": [
+        {
+          "text": "Admitting, or worthy, of remuneration.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "remunerate": {
       "word": "REMUNERATE",
       "definitions": [
@@ -1479,6 +1597,16 @@
         {
           "text": "That which is given to remunerate; an equivalent given, as for services, loss, or sufferings. Shak. satisfaction; requital.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "remunerative": {
+      "word": "REMUNERATIVE",
+      "definitions": [
+        {
+          "text": "Affording remuneration; as, a remunerative payment for services; a remunerative business. -Re*mu\"ner*a*tive*ly, adv.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

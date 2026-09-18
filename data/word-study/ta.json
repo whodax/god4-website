@@ -1,28 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "taxationfrlassideresupineasifassessumtositbyespof": {
-      "word": "taxation, fr. L. assidere, supine as if assessum, to sit by, esp. of",
-      "definitions": [
-        {
-          "text": "To value; to make a valuation or official estimate of for the purpose of taxation.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To apportion a sum to be paid by (a person, a community, or an estate), in the nature of a tax, fine, etc.; to impose a tax upon (a person, an estate, or an income) according to a rate or apportionment.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To determine and impose a tax or fine upon (a person, community, estate, or income); to tax; as, the club assessed each member twenty- five cents.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To fix or determine the rate or amount of. This sum is assessed and raised upon individuals by commissioners in the act. Blackstone.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "ta": {
       "word": "TA",
       "definitions": [
@@ -293,13 +271,23 @@
       "word": "TABID",
       "definitions": [
         {
-          "text": "Affected by tabes; tabetic. In tabid persons, milk is the bset restorative.",
+          "text": "Affected by tabes; tabetic. In tabid persons, milk is the bset restorative. Arbuthnot.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "tabifictabifical": {
+    "tabific": {
+      "word": "TABIFIC; TABIFICAL",
+      "definitions": [
+        {
+          "text": "Producing tabes; wasting; tabefying.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tabifical": {
       "word": "TABIFIC; TABIFICAL",
       "definitions": [
         {
@@ -446,6 +434,16 @@
       "definitions": [
         {
           "text": "A broad, level, elevated area of land; a plateau. The toppling crags of Duty scaled, Are close upon the shining table- lands To which our God himself is moon and sun. Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tableman": {
+      "word": "TABLEMAN",
+      "definitions": [
+        {
+          "text": "A man at draughts; a piece used in playing games at tables. See Table, n., 10. [R.] Bacon.",
           "partOfSpeech": "noun"
         }
       ],
@@ -827,7 +825,25 @@
       ],
       "relatedWords": []
     },
-    "tacamahactacamahaca": {
+    "tacamahac": {
+      "word": "TACAMAHAC; TACAMAHACA",
+      "definitions": [
+        {
+          "text": "A bitter balsamic resin obtained from tropical American trees of the genus Elaphrium (E. tomentosum and E. Tacamahaca), and also from East Indian trees of the genus Calophyllum; also, the resinous exhudation of the balsam poplar.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any tree yielding tacamahac resin, especially, in North America, the balsam poplar, or balm of Gilead (Populus balsamifera).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tacamahaca": {
       "word": "TACAMAHAC; TACAMAHACA",
       "definitions": [
         {
@@ -868,6 +884,10 @@
     "tace": {
       "word": "TACE",
       "definitions": [
+        {
+          "text": "The cross, or church, of St. Antony. See Illust. (6), under Cross, n. Mollett.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Tasse. Fairholt.",
           "partOfSpeech": "noun"
@@ -999,7 +1019,17 @@
       ],
       "relatedWords": []
     },
-    "tachygraphictachygraphical": {
+    "tachygraphic": {
+      "word": "TACHYGRAPHIC; TACHYGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to tachygraphy; written in shorthand.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tachygraphical": {
       "word": "TACHYGRAPHIC; TACHYGRAPHICAL",
       "definitions": [
         {
@@ -1067,7 +1097,7 @@
       "word": "TACIT",
       "definitions": [
         {
-          "text": "Done or made in silence; implied, but not expressed; silent; as, tacit consent is consent by silence, or by not interposing an",
+          "text": "Done or made in silence; implied, but not expressed; silent; as, tacit consent is consent by silence, or by not interposing an objection. The tacit and secret theft of abusing our brother in civil contracts. Jer. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1077,7 +1107,7 @@
       "word": "TACITURN",
       "definitions": [
         {
-          "text": "Habitually silent; not given to converse; not apt to talk or",
+          "text": "Habitually silent; not given to converse; not apt to talk or speak. act; taciturn, to the habit. A man may be silent from circumstances; he is taciturn from disposition. The loquacious man is at times silent; one who is taciturn may now and then make an effort at conversation.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1109,7 +1139,27 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A small, short, sharp-pointed nail, usually having a broad, flat",
+          "text": "A small, short, sharp-pointed nail, usually having a broad, flat head.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is attached; a supplement; an appendix. See Tack, v. t., 3. Macaulay. Some tacks had been made to money bills in King Charles's time. Bp. Burnet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.) (a) A rope used to hold in place the foremost lower corners of the courses when the vessel is closehauled (see Illust. of Ship); also, a rope employed to pull the lower corner of a studding sail to the boom. (b) The part of a sail to which the tack is usually fastened; the foremost lower corner of fore-and-aft sails, as of schooners (see Illust. of Sail). (c) The direction of a vessel in regard to the trim of her sails; as, the starboard tack, or port tack; -- the former when she is closehauled with the wind on her starboard side; hence, the run of a vessel on one tack; also, a change of direction.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Scots Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A contract by which the use of a thing is set, or let, for hire; a lease. Burrill.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Confidence; reliance. [Prov. Eng.] Halliwell. Tack of a flag (Naut.), a line spliced into the eye at the foot of the hoist for securing the flag to the halyards.",
           "partOfSpeech": "noun"
         },
         {
@@ -1133,7 +1183,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To change the direction of a vessel by shifting the position of",
+          "text": "To change the direction of a vessel by shifting the position of the helm and sails; also (as said of a vessel), to have her direction changed through the shifting of the helm and sails. See Tack, v. t., 4. Monk, . . . when he wanted his ship to tack to larboard, moved the mirth of his crew by calling out, \"Wheel to the left.\" Macaulay.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1195,7 +1245,7 @@
           "partOfSpeech": ""
         },
         {
-          "text": "The rigging and apparatus of a ship; also, any purchase where more than one block is used. Fall and tackle. See the Note under",
+          "text": "The rigging and apparatus of a ship; also, any purchase where more than one block is used. Fall and tackle. See the Note under Pulley. out. tackle, to which the power is applied. principal sails. at the end of a ropewalk, for supporting the spindels, or whirls, for twisting the yarns.",
           "partOfSpeech": ""
         },
         {
@@ -1318,11 +1368,25 @@
       "relatedWords": []
     },
     "tactic": {
-      "word": "TACTIC",
+      "word": "TACTIC; TACTICAL",
       "definitions": [
+        {
+          "text": "Of or pertaining to the art of military and naval tactics.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "See Tactics.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tactical": {
+      "word": "TACTIC; TACTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the art of military and naval tactics.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1443,7 +1507,17 @@
       ],
       "relatedWords": []
     },
-    "taenta'en": {
+    "taen": {
+      "word": "TAEN; TA'EN",
+      "definitions": [
+        {
+          "text": "p. p. of Ta, to take, or a contraction of Taken. [Poetic & Scot.] Burns.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ta'en": {
       "word": "TAEN; TA'EN",
       "definitions": [
         {
@@ -1483,7 +1557,7 @@
       ],
       "relatedWords": []
     },
-    "taeniacideteniacide": {
+    "taeniacide": {
       "word": "TAENIACIDE; TENIACIDE",
       "definitions": [
         {
@@ -1503,7 +1577,7 @@
       ],
       "relatedWords": []
     },
-    "taeniafugeteniafuge": {
+    "taeniafuge": {
       "word": "TAENIAFUGE; TENIAFUGE",
       "definitions": [
         {
@@ -1513,7 +1587,7 @@
       ],
       "relatedWords": []
     },
-    "taeniasisteniasis": {
+    "taeniasis": {
       "word": "TAENIASIS; TENIASIS",
       "definitions": [
         {
@@ -1621,7 +1695,17 @@
       ],
       "relatedWords": []
     },
-    "taffetataffety": {
+    "taffeta": {
+      "word": "TAFFETA; TAFFETY",
+      "definitions": [
+        {
+          "text": "A fine, smooth stuff of silk, having usually the wavy luster called watering. The term has also been applied to different kinds of silk goods, from the 16th century to modern times. Lined with taffeta and with sendal. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "taffety": {
       "word": "TAFFETA; TAFFETY",
       "definitions": [
         {
@@ -2195,7 +2279,15 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Any imposition levied by the king, or any other lord, upon his subjects. The taille, as it still subsists in France, may serve as an example of those ancient tallages. It was a tax upon the profits of the",
+          "text": "Any imposition levied by the king, or any other lord, upon his subjects. The taille, as it still subsists in France, may serve as an example of those ancient tallages. It was a tax upon the profits of the farmer, which they estimate by the stock that he has upon the farm. A. Smith.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The French name for the tenor voice or part; also, for the tenor viol or viola.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2221,8 +2313,8 @@
       ],
       "relatedWords": []
     },
-    "taillertocutfrltaleaarodstickacuttinglayerfor": {
-      "word": "tailler to cut, fr. L. talea a rod, stick, a cutting, layer for",
+    "tailor": {
+      "word": "TAILOR",
       "definitions": [
         {
           "text": "One whose occupation is to cut out and make men's garments; also, one who cuts out and makes ladies' outer garments. Well said, good woman's tailor . . . I would thou wert a man's tailor. Shak.",
@@ -2239,13 +2331,7 @@
         {
           "text": "The goldfish. [Prov. Eng.] Salt-water tailor (Zoöl.), the bluefish. [Local, U.S.] Bartlett. and East Indian singing birds belonging to Orthotomus, Prinia, and allied genera. They are noted for the skill with which they sew leaves together to form nests. The common Indian species are O. longicauda, which has the back, scapulars, and upper tail coverts yellowish green, and the under parts white; and the golden-headed tailor bird (O. coronatus), which has the top of the head golden yellow and the back and wings pale olive-green.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "tailor": {
-      "word": "TAILOR",
-      "definitions": [
+        },
         {
           "text": "To practice making men's clothes; to follow the business of a tailor. These tailoring artists for our lays Invent cramped rules. M. Green.",
           "partOfSpeech": "verb"
@@ -2475,7 +2561,17 @@
       ],
       "relatedWords": []
     },
-    "taipingtaeping": {
+    "taiping": {
+      "word": "TAIPING; TAEPING",
+      "definitions": [
+        {
+          "text": "Pertaining to or designating a dynasty with which one Hung-Siu- Chuen, a half-religious, half-political enthusiast, attempted to supplant the Manchu dynasty by the Taiping rebellion, incited by him in 1850 and suppressed by General Gordon about 1864.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "taeping": {
       "word": "TAIPING; TAEPING",
       "definitions": [
         {
@@ -2515,7 +2611,17 @@
       ],
       "relatedWords": []
     },
-    "tajacutajassu": {
+    "tajacu": {
+      "word": "TAJACU; TAJASSU",
+      "definitions": [
+        {
+          "text": "The common, or collared, peccary.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tajassu": {
       "word": "TAJACU; TAJASSU",
       "definitions": [
         {
@@ -2721,7 +2827,17 @@
       ],
       "relatedWords": []
     },
-    "talcosetalcous": {
+    "talcose": {
+      "word": "TALCOSE; TALCOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to talc; composed of, or resembling, talc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "talcous": {
       "word": "TALCOSE; TALCOUS",
       "definitions": [
         {
@@ -2746,6 +2862,22 @@
       "definitions": [
         {
           "text": "See Tael.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is told; an oral relation or recital; any rehearsal of what has occured; narrative; discourse; statement; history; story. \"The tale of Troy divine.\" Milton. \"In such manner rime is Dante's tale.\" Chaucer. We spend our years as a tale that is told. Ps. xc. 9.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A number told or counted off; a reckoning by count; an enumeration; a count, in distinction from measure or weight; a number reckoned or stated. The ignorant, . . . who measure by tale, and not by weight. Hooker. And every shepherd tells his tale, Under the hawthornn in the dale. Milton. In packing, they keep a just tale of the number. Carew.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A count or declaration. [Obs.] To tell tale of, to make account of. [Obs.] Therefore little tale hath he told Of any dream, so holy was his heart. Chaucer. legend; narrative.",
           "partOfSpeech": "noun"
         },
         {
@@ -2949,7 +3081,17 @@
       ],
       "relatedWords": []
     },
-    "talismanictalismanical": {
+    "talismanic": {
+      "word": "TALISMANIC; TALISMANICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a talisman; having the properties of a talisman, or preservative against evils by occult influence; magical.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "talismanical": {
       "word": "TALISMANIC; TALISMANICAL",
       "definitions": [
         {
@@ -2962,6 +3104,18 @@
     "talk": {
       "word": "TALK",
       "definitions": [
+        {
+          "text": "To utter words; esp., to converse familiarly; to speak, as in familiar discourse, when two or more persons interchange thoughts. I will buy with you, sell with you, talk with you, walk with you, and so following, but I will not eat with you. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To confer; to reason; to consult. Let me talk with thee of thy judgments. Jer. xii. 1.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To prate; to speak impertinently. [Colloq.] To talk of, to relate; to tell; to give an account of; as, authors talk of the wonderful remains of Palmyra. \"The natural histories of Switzerland talk much of the fall of these rocks, and the great damage done.\" Addison. talk to my son respecting his conduct. [Colloq.]",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To speak freely; to use for conversing or communicating; as, to talk French.",
           "partOfSpeech": "verb"
@@ -3049,22 +3203,26 @@
       ],
       "relatedWords": []
     },
-    "tallagetalliage": {
+    "tallage": {
       "word": "TALLAGE; TALLIAGE",
       "definitions": [
         {
           "text": "A certain rate or tax paid by barons, knights, and inferior tenants, toward the public expenses. [Written also tailage, taillage.] cities and burghs, tallage; when upon lands not held by military tenure, hidage. Blackstone.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To lay an impost upon; to cause to pay tallage.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "tallage": {
-      "word": "TALLAGE",
+    "talliage": {
+      "word": "TALLAGE; TALLIAGE",
       "definitions": [
         {
-          "text": "To lay an impost upon; to cause to pay tallage.",
-          "partOfSpeech": "verb"
+          "text": "A certain rate or tax paid by barons, knights, and inferior tenants, toward the public expenses. [Written also tailage, taillage.] cities and burghs, tallage; when upon lands not held by military tenure, hidage. Blackstone.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3297,7 +3455,17 @@
       ],
       "relatedWords": []
     },
-    "talmudictalmudical": {
+    "talmudic": {
+      "word": "TALMUDIC; TALMUDICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Talmud; contained in the Talmud; as, Talmudic Greek; Talmudical phrases. Lightfoot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "talmudical": {
       "word": "TALMUDIC; TALMUDICAL",
       "definitions": [
         {
@@ -3367,7 +3535,7 @@
       ],
       "relatedWords": []
     },
-    "talooktaluk": {
+    "talook": {
       "word": "TALOOK; TALUK",
       "definitions": [
         {
@@ -3377,7 +3545,27 @@
       ],
       "relatedWords": []
     },
-    "talookdartalukdar": {
+    "taluk": {
+      "word": "TALOOK; TALUK",
+      "definitions": [
+        {
+          "text": "A large estate; esp., one constituting a revenue district or dependency the native proprietor of which is responsible for the collection and payment of the public revenue due from it. [India]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "talookdar": {
+      "word": "TALOOKDAR; TALUKDAR",
+      "definitions": [
+        {
+          "text": "A proprietor of a talook. [India]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "talukdar": {
       "word": "TALOOKDAR; TALUKDAR",
       "definitions": [
         {
@@ -3449,7 +3637,7 @@
       "word": "TAMABLE",
       "definitions": [
         {
-          "text": "Capable of being tamed, subdued, or reclaimed from wildness or",
+          "text": "Capable of being tamed, subdued, or reclaimed from wildness or savage ferociousness.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3673,6 +3861,16 @@
       ],
       "relatedWords": []
     },
+    "tameless": {
+      "word": "TAMELESS",
+      "definitions": [
+        {
+          "text": "Incapable of being tamed; wild; untamed; untamable. Bp. Hall.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "tamely": {
       "word": "TAMELY",
       "definitions": [
@@ -3745,7 +3943,17 @@
       ],
       "relatedWords": []
     },
-    "taminetaminy": {
+    "tamine": {
+      "word": "TAMINE; TAMINY",
+      "definitions": [
+        {
+          "text": "A kind of woolen cloth; tammy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "taminy": {
       "word": "TAMINE; TAMINY",
       "definitions": [
         {
@@ -3863,7 +4071,17 @@
       ],
       "relatedWords": []
     },
-    "tampicofibertampicofibre": {
+    "tampicofiber": {
+      "word": "TAMPICO FIBER; TAMPICO FIBRE",
+      "definitions": [
+        {
+          "text": "A tough vegetable fiber used as a substitute for bristles in making brushes. The piassava and the ixtle are both used under this name.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "tampicofibre": {
       "word": "TAMPICO FIBER; TAMPICO FIBRE",
       "definitions": [
         {
@@ -3877,7 +4095,11 @@
       "word": "TAMPING",
       "definitions": [
         {
-          "text": "The act of one who tamps; specifically, the act of filling up a hole in a rock, or the branch of a mine, for the purpose of blasting",
+          "text": "The act of one who tamps; specifically, the act of filling up a hole in a rock, or the branch of a mine, for the purpose of blasting the rock or exploding the mine.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The material used in tamping. See Tamp, v. t., 1. Tamping iron, an iron rod for beating down the earthy substance in tamping for blasting.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3983,6 +4205,10 @@
         {
           "text": "A brown color imparted to the skin by exposure to the sun; as, hands covered with tan. Tan bed (Hort.), a bed made of tan; a bark bed.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of the color of tan; yellowish-brown. Black and tan. See under Black, a.",
+          "partOfSpeech": "adjective"
         },
         {
           "text": "To convert (the skin of an animal) into leather, as by usual process of steeping it in an infusion of oak or some other bark, whereby it is impregnated with tannin, or tannic acid (which exists in several species of bark), and is thus rendered firm, durable, and in some degree impervious to water. tannins form, with gelatins and albuminoids, a series of insoluble compounds which constitute leather. Similar results may be produced by the use of other reagents in place of tannin, as alum, and some acids or chlorides, which are employed in certain processes of tanning.",
@@ -4175,6 +4401,10 @@
       "word": "TANGENT",
       "definitions": [
         {
+          "text": "A tangent line curve, or surface; specifically, that portion of the straight line tangent to a curve that is between the point of tangency and a given line, the given line being, for example, the axis of abscissas, or a radius of a circle produced. See Trigonometrical function, under Function. Artificial, or Logarithmic, tangent, the logarithm of the natural tangent of an arc. of an arc, the radius being reckoned unity. circular coil and a short needle, in which the tangent of the angle of deflection of the needle is proportional to the strength of the current. measuring the angle. circle at one extremity a, and terminated by a line ct, passing from the center through the other extremity o.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Touching; touching at a single point; specifically (Geom.)",
           "partOfSpeech": "adjective"
         },
@@ -4199,7 +4429,7 @@
       "word": "TANGENTIAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a tangent; in the direction of a tangent. Tangential force (Mech.), a force which acts on a moving body in the direction of a tangent to the path of the body, its effect being to increase or diminish the velocity; -- distinguished from a normal force, which acts at right angles to the tangent and changes the",
+          "text": "Of or pertaining to a tangent; in the direction of a tangent. Tangential force (Mech.), a force which acts on a moving body in the direction of a tangent to the path of the body, its effect being to increase or diminish the velocity; -- distinguished from a normal force, which acts at right angles to the tangent and changes the direction of the motion without changing the velocity.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4273,7 +4503,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Capable of being possessed or realized; readily apprehensible by the mind; real; substantial; evident. \"A tangible blunder.\" Byron.",
+          "text": "Capable of being possessed or realized; readily apprehensible by the mind; real; substantial; evident. \"A tangible blunder.\" Byron. Direct and tangible benefit to ourselves and others. Southey.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4299,7 +4529,23 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Any large blackish seaweed, especially the Laminaria saccharina. See Kelp. Coral and sea fan and tangle, the blooms and the palms of the ocean.",
+          "text": "Any large blackish seaweed, especially the Laminaria saccharina. See Kelp. Coral and sea fan and tangle, the blooms and the palms of the ocean. C. Kingsley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [From Tangle, v.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A knot of threads, or other thing, united confusedly, or so interwoven as not to be easily disengaged; a snarl; as, hair or yarn in tangles; a tangle of vines and briers. Used also figuratively.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An instrument consisting essentiallly of an iron bar to which are attached swabs, or bundles of frayed rope, or other similar substances, -- used to capture starfishes, sea urchins, and other similar creatures living at the bottom of the sea. Blue tangle. (Bot.)See Dangleberry.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4495,7 +4741,17 @@
       ],
       "relatedWords": []
     },
-    "tankshiptankvessel": {
+    "tankship": {
+      "word": "TANK SHIP; TANK VESSEL",
+      "definitions": [
+        {
+          "text": "A vessel fitted with tanks for the carrying of oil or other liquid in bulk.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "tankvessel": {
       "word": "TANK SHIP; TANK VESSEL",
       "definitions": [
         {
@@ -4604,6 +4860,16 @@
       "definitions": [
         {
           "text": "Same as Tannic acid, under Tannic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tanning": {
+      "word": "TANNING",
+      "definitions": [
+        {
+          "text": "The art or process of converting skins into leather. See Tan, v. t., 1.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4797,6 +5063,16 @@
       ],
       "relatedWords": []
     },
+    "tantrism": {
+      "word": "TANTRISM",
+      "definitions": [
+        {
+          "text": "The system of doctrines and rites taught in the tantras. -- Tan\"trist (#), n.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "tantrum": {
       "word": "TANTRUM",
       "definitions": [
@@ -4822,6 +5098,16 @@
       "definitions": [
         {
           "text": "A division of dipterous insects in which the proboscis is large and contains lancelike mandibles and maxillæ. The horseflies and robber flies are examples.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "taoism": {
+      "word": "TAOISM",
+      "definitions": [
+        {
+          "text": "One of the popular religions of China, sanctioned by the state.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4925,7 +5211,17 @@
       ],
       "relatedWords": []
     },
-    "tapaderatapadero": {
+    "tapadera": {
+      "word": "TAPADERA; TAPADERO",
+      "definitions": [
+        {
+          "text": "One of the leather hoods which cover the stirrups of a Mexican saddle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tapadero": {
       "word": "TAPADERA; TAPADERO",
       "definitions": [
         {
@@ -4953,7 +5249,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A tapeline; also, a metallic ribbon so marked as to serve as a tapeline; as, a steel tape. Red tape. See under Red. ribbonlike leaves, growing in fresh or brackish water; -- called also",
+          "text": "A tapeline; also, a metallic ribbon so marked as to serve as a tapeline; as, a steel tape. Red tape. See under Red. ribbonlike leaves, growing in fresh or brackish water; -- called also fresh-water eelgrass, and, in Maryland, wild celery.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5000,6 +5296,16 @@
       "definitions": [
         {
           "text": "Lighted with a taper or tapers; as, a tapered choir. [R.] T. Warton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tapering": {
+      "word": "TAPERING",
+      "definitions": [
+        {
+          "text": "Becoming gradually smaller toward one end.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5253,7 +5559,17 @@
       ],
       "relatedWords": []
     },
-    "tappicetappis": {
+    "tappice": {
+      "word": "TAPPICE; TAPPIS",
+      "definitions": [
+        {
+          "text": "See Tapish.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tappis": {
       "word": "TAPPICE; TAPPIS",
       "definitions": [
         {
@@ -5337,6 +5653,10 @@
         {
           "text": "A thick, black, viscous liquid obtained by the distillation of wood, coal, etc., and having a varied composition according to the temperature and material employed in obtaining it. Coal tar. See in the Vocabulary. tarred rope. Knight. medicine. (b) The ammoniacal water of gas works. distillation of the wood of the pine, spruce, or fir, and is used in varnishes, cements, and to render ropes, oakum, etc., impervious to water.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To smear with tar, or as with tar; as, to tar ropes; to tar cloth. To tar and feather a person. See under Feather, v. t.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -5767,6 +6087,10 @@
       "word": "TARNISH",
       "definitions": [
         {
+          "text": "To soil, or change the appearance of, especially by an alternation induced by the air, or by dust, or the like; to diminish, dull, or destroy the luster of; to sully; as, to tarnish a metal; to tarnish gilding; to tarnish the purity of color. \"Tarnished lace.\" Fuller. Used also figuratively; as, to tarnish one's honor.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To lose luster; to become dull; as, gilding will tarnish in a foul air. Till thy fresh glories, which now shine so bright, Grow stale and tarnish with our daily sight. Dryden.",
           "partOfSpeech": "verb"
         },
@@ -6053,7 +6377,17 @@
       ],
       "relatedWords": []
     },
-    "tarsiatarsiatura": {
+    "tarsia": {
+      "word": "TARSIA; TARSIATURA",
+      "definitions": [
+        {
+          "text": "A kind of mosaic in woodwork, much employed in Italy in the fifteenth century and later, in which scrolls and arabesques, and sometimes architectural scenes, landscapes, fruits, flowers, and the like, were produced by inlaying pieces of wood of different colors and shades into panels usually of walnut wood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tarsiatura": {
       "word": "TARSIA; TARSIATURA",
       "definitions": [
         {
@@ -6151,6 +6485,10 @@
         {
           "text": "Fig.: Sharp; keen; severe; as, a tart reply; tart language; a tart rebuke. Why art thou tart, my brother Bunyan.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A species of small open pie, or piece of pastry, containing jelly or conserve; a sort of fruit pie.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -6217,7 +6555,7 @@
       ],
       "relatedWords": []
     },
-    "tartareantartareous": {
+    "tartarean": {
       "word": "TARTAREAN; TARTAREOUS",
       "definitions": [
         {
@@ -6228,8 +6566,12 @@
       "relatedWords": []
     },
     "tartareous": {
-      "word": "TARTAREOUS",
+      "word": "TARTAREAN; TARTAREOUS",
       "definitions": [
+        {
+          "text": "Of or pertaining to Tartarus; hellish.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Consisting of tartar; of the nature of tartar.",
           "partOfSpeech": "adjective"
@@ -6245,19 +6587,13 @@
       ],
       "relatedWords": []
     },
-    "tartariantartaric": {
+    "tartarian": {
       "word": "TARTARIAN; TARTARIC",
       "definitions": [
         {
           "text": "Of or pertaining to Tartary in Asia, or the Tartars. Tartarian lamb (Bot.), Scythian lamb. See Barometz.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "tartarian": {
-      "word": "TARTARIAN",
-      "definitions": [
+        },
         {
           "text": "The name of some kinds of cherries, as the Black Tartarian, or the White Tartarian.",
           "partOfSpeech": "noun"
@@ -6266,8 +6602,12 @@
       "relatedWords": []
     },
     "tartaric": {
-      "word": "TARTARIC",
+      "word": "TARTARIAN; TARTARIC",
       "definitions": [
+        {
+          "text": "Of or pertaining to Tartary in Asia, or the Tartars. Tartarian lamb (Bot.), Scythian lamb. See Barometz.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Of or pertaining to tartar; derived from, or resembling, tartar. Tartaric acid. (a) An acid widely diffused throughout the vegetable kingdom, as in grapes, mountain-ash berries, etc., and obtained from tartar as a white crystalline substance, C2H2(OH)2.(CO2H)2, having a strong pure acid taste. It is used in medicine, in dyeing, calico printing, photography, etc., and also as a substitute for lemon juice. Called also dextro-tartaric acid. (b) By extension, any one of the series of isomeric acids (racemic acid, levotartaric acid, inactive tartaric acid) of which tartaric acid proper is the type.",
           "partOfSpeech": "adjective"
@@ -6523,7 +6863,7 @@
       ],
       "relatedWords": []
     },
-    "tartuffetartufe": {
+    "tartuffe": {
       "word": "TARTUFFE; TARTUFE",
       "definitions": [
         {
@@ -6533,7 +6873,27 @@
       ],
       "relatedWords": []
     },
-    "tartuffishtartufish": {
+    "tartufe": {
+      "word": "TARTUFFE; TARTUFE",
+      "definitions": [
+        {
+          "text": "A hypocritical devotee. See the Dictionary of Noted Names in Fiction.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tartuffish": {
+      "word": "TARTUFFISH; TARTUFISH",
+      "definitions": [
+        {
+          "text": "Like a tartuffe; precise; hypocritical. Sterne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tartufish": {
       "word": "TARTUFFISH; TARTUFISH",
       "definitions": [
         {
@@ -6587,23 +6947,17 @@
       ],
       "relatedWords": []
     },
-    "tascataxafrltaxaretorateappraiseestimateseetaxn": {
-      "word": "tasca, taxa, fr. L. taxare to rate, appraise, estimate. See Tax, n. &",
-      "definitions": [
-        {
-          "text": "Labor or study imposed by another, often in a definite quantity or amount. Ma task of servile toil. Milton. Each morning sees some task begin, Each evening sees it close. Longfellow.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Business; employment; undertaking; labor. His mental powers were equal to greater tasks. Atterbury. To take to task. See under Take. stint.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "task": {
       "word": "TASK",
       "definitions": [
+        {
+          "text": "Labor or study imposed by another, often in a definite quantity or amount. Ma task of servile toil. Milton. Each morning sees some task begin, Each evening sees it close. Longfellow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Business; employment; undertaking; labor. His mental powers were equal to greater tasks. Atterbury. To take to task. See under Take. stint.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To impose a task upon; to assign a definite amount of business, labor, or duty to. There task thy maids, and exercise the loom. Dryden.",
           "partOfSpeech": "verb"
@@ -6763,6 +7117,26 @@
       "word": "TASTE",
       "definitions": [
         {
+          "text": "To try by the touch; to handle; as, to taste a bow. [Obs.] Chapman. Taste it well and stone thou shalt it find. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To try by the touch of the tongue; to perceive the relish or flavor of (anything) by taking a small quantity into a mouth. Also used figuratively. When the ruler of the feast had tasted the water that was made wine. John ii. 9. When Commodus had once tasted human blood, he became incapable of pity or remorse. Gibbon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To try by eating a little; to eat a small quantity of. I tasted a little of this honey. 1 Sam. xiv. 29.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become acquainted with by actual trial; to essay; to experience; to undergo. He . . . should taste death for every man. Heb. ii. 9.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To partake of; to participate in; -- usually with an implied sense of relish or pleasure. Thou . . . wilt taste No pleasure, though in pleasure, solitary. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To try food with the mouth; to eat or drink a little only; to try the flavor of anything; as, to taste of each kind of wine.",
           "partOfSpeech": "verb"
         },
@@ -6829,7 +7203,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having or exhibiting good taste; in accordance with good taste;",
+          "text": "Having or exhibiting good taste; in accordance with good taste; tasty; as, a tasteful drapery.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6847,7 +7221,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not in accordance with good taste; as, a tasteless arrangement of",
+          "text": "Not in accordance with good taste; as, a tasteless arrangement of drapery.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7119,6 +7493,16 @@
       ],
       "relatedWords": []
     },
+    "tattling": {
+      "word": "TATTLING",
+      "definitions": [
+        {
+          "text": "Given to idle talk; apt to tell tales.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "tattoo": {
       "word": "TATTOO",
       "definitions": [
@@ -7249,7 +7633,17 @@
       ],
       "relatedWords": []
     },
-    "taupietawpie": {
+    "taupie": {
+      "word": "TAUPIE; TAWPIE",
+      "definitions": [
+        {
+          "text": "A foolish or thoughtless young person, esp. a slothful or slovenly woman. [Scot.] Burns.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tawpie": {
       "word": "TAUPIE; TAWPIE",
       "definitions": [
         {
@@ -7343,7 +7737,17 @@
       ],
       "relatedWords": []
     },
-    "taurocoltaurocolla": {
+    "taurocol": {
+      "word": "TAUROCOL; TAUROCOLLA",
+      "definitions": [
+        {
+          "text": "Glue made from a bull's hide.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "taurocolla": {
       "word": "TAUROCOL; TAUROCOLLA",
       "definitions": [
         {
@@ -7487,7 +7891,7 @@
       "word": "TAUTOLOGICAL",
       "definitions": [
         {
-          "text": "Involving tautology; having the same signification; as,",
+          "text": "Involving tautology; having the same signification; as, tautological expression. the same sound or syllable many times.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7553,7 +7957,17 @@
       ],
       "relatedWords": []
     },
-    "tautoousiantautoousious": {
+    "tautoousian": {
+      "word": "TAUTOOUSIAN; TAUTOOUSIOUS",
+      "definitions": [
+        {
+          "text": "Having the same essence; being identically of the same nature. [R.] Cudworth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tautoousious": {
       "word": "TAUTOOUSIAN; TAUTOOUSIOUS",
       "definitions": [
         {
@@ -7815,7 +8229,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "That may be legally charged by a court against the plaintiff of",
+          "text": "That may be legally charged by a court against the plaintiff of defendant in a suit; as, taxable costs.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7896,6 +8310,16 @@
         },
         {
           "text": "One of two officers chosen yearly to regulate the assize of bread, and to see the true gauge of weights and measures is observed. [Camb. Univ., Eng.] [Written also taxor.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "taxgatherer": {
+      "word": "TAXGATHERER",
+      "definitions": [
+        {
+          "text": "One who collects taxes or revenues.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8076,6 +8500,20 @@
       "definitions": [
         {
           "text": "An ornamental cup or vase with a large, flat, shallow bowl, resting on a pedestal and often having handles.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tammuz": {
+      "word": "THAMMUZ; TAMMUZ",
+      "definitions": [
+        {
+          "text": "A deity among the ancient Syrians, in honor of whom the Hebrew idolatresses held an annual lamentation. This deity has been conjectured to be the same with the Phoenician Adon, or Adonis. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fourth month of the Jewish ecclesiastical year, -- supposed to correspond nearly with our month of July.",
           "partOfSpeech": "noun"
         }
       ],

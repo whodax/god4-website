@@ -41,6 +41,16 @@
       ],
       "relatedWords": []
     },
+    "uncanny": {
+      "word": "UNCANNY",
+      "definitions": [
+        {
+          "text": "Not canny; unsafe; strange; weird; ghostly. Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "uncanonize": {
       "word": "UNCANONIZE",
       "definitions": [
@@ -171,6 +181,16 @@
       ],
       "relatedWords": []
     },
+    "uncaused": {
+      "word": "UNCAUSED",
+      "definitions": [
+        {
+          "text": "Having no antecedent cause; uncreated; self-existent; eternal. A. Baxter.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "uncautelous": {
       "word": "UNCAUTELOUS",
       "definitions": [
@@ -225,7 +245,17 @@
       ],
       "relatedWords": []
     },
-    "uncenteruncentre": {
+    "uncenter": {
+      "word": "UNCENTER; UNCENTRE",
+      "definitions": [
+        {
+          "text": "To throw from its center.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "uncentre": {
       "word": "UNCENTER; UNCENTRE",
       "definitions": [
         {
@@ -277,16 +307,6 @@
         {
           "text": "In an uncertain manner.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "uncertainorigincfgrtotossorthrowortoleapboundto": {
-      "word": "uncertain origin; cf. Gr. to toss or throw, or , , to leap, bound, to",
-      "definitions": [
-        {
-          "text": "A social assembly for the purpose of dancing.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -381,7 +401,7 @@
       "word": "UNCHARITABLE",
       "definitions": [
         {
-          "text": "Not charitable; contrary to charity; severe in judging; harsh;",
+          "text": "Not charitable; contrary to charity; severe in judging; harsh; censorious; as, uncharitable opinions or zeal. Addison.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -413,6 +433,16 @@
         {
           "text": "To remove from a charnel house; to raise from the grave; to exhume. Byron.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unchaste": {
+      "word": "UNCHASTE",
+      "definitions": [
+        {
+          "text": "Not chaste; not continent; lewd.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -563,7 +593,7 @@
       "word": "UNCIAL",
       "definitions": [
         {
-          "text": "Of, pertaining to, or designating, a certain style of letters used in ancient manuscripts, esp. in Greek and Latin manuscripts. The letters are somewhat rounded, and the upstrokes and downstrokes usually have a slight inclination. These letters were used as early",
+          "text": "Of, pertaining to, or designating, a certain style of letters used in ancient manuscripts, esp. in Greek and Latin manuscripts. The letters are somewhat rounded, and the upstrokes and downstrokes usually have a slight inclination. These letters were used as early as the 1st century b. c., and were seldom used after the 10th century a. d., being superseded by the cursive style.",
           "partOfSpeech": "adjective"
         },
         {
@@ -949,6 +979,10 @@
         {
           "text": "Etym: [Pref. un- not + clothed.]",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not yet clothed; wanting clothes; naked.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1129,7 +1163,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Causing discomfort; disagreeable; unpleasant; as, an uncomfortable seat or situation.",
+          "text": "Causing discomfort; disagreeable; unpleasant; as, an uncomfortable seat or situation. The most dead, uncomfortable time of the year. Addison.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1183,7 +1217,7 @@
       "word": "UNCOMPROMISING",
       "definitions": [
         {
-          "text": "Not admitting of compromise; making no truce or concessions;",
+          "text": "Not admitting of compromise; making no truce or concessions; obstinate; unyielding; inflexible.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1213,7 +1247,7 @@
       "word": "UNCONCERNED",
       "definitions": [
         {
-          "text": "Not concerned; not anxious or solicitous; easy in mind; carelessly secure; indifferent; as, to be unconcerned at what has",
+          "text": "Not concerned; not anxious or solicitous; easy in mind; carelessly secure; indifferent; as, to be unconcerned at what has happened; to be unconcerned about the future. Happy mortals, unconcerned for more. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1239,7 +1273,17 @@
       ],
       "relatedWords": []
     },
-    "unconcludentunconcluding": {
+    "unconcludent": {
+      "word": "UNCONCLUDENT; UNCONCLUDING",
+      "definitions": [
+        {
+          "text": "Inconclusive. [Obs.] Locke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unconcluding": {
       "word": "UNCONCLUDENT; UNCONCLUDING",
       "definitions": [
         {
@@ -1263,7 +1307,7 @@
       "word": "UNCONDITIONAL",
       "definitions": [
         {
-          "text": "Not conditional limited, or conditioned; made without condition; absolute; unreserved; as, an unconditional surrender. O, pass not, Lord, an absolute decree, Or bind thy sentence",
+          "text": "Not conditional limited, or conditioned; made without condition; absolute; unreserved; as, an unconditional surrender. O, pass not, Lord, an absolute decree, Or bind thy sentence unconditional. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1337,7 +1381,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not conformable; not lying in a parallel position; as,",
+          "text": "Not conformable; not lying in a parallel position; as, unconformable strata.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1415,6 +1459,16 @@
       ],
       "relatedWords": []
     },
+    "unconquerable": {
+      "word": "UNCONQUERABLE",
+      "definitions": [
+        {
+          "text": "Not conquerable; indomitable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "unconscionable": {
       "word": "UNCONSCIONABLE",
       "definitions": [
@@ -1423,7 +1477,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not guided by, or conformed to, conscience. [Obs.]",
+          "text": "Not guided by, or conformed to, conscience. [Obs.] Ungenerous as well as unconscionable practices. South.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1441,7 +1495,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having no knowledge by experience; -- followed by of; as, a mule",
+          "text": "Having no knowledge by experience; -- followed by of; as, a mule unconscious of the yoke. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1531,7 +1585,7 @@
       "word": "UNCONSTITUTIONAL",
       "definitions": [
         {
-          "text": "Not constitutional; not according to, or consistent with, the terms of a constitution of government; contrary to the constitution;",
+          "text": "Not constitutional; not according to, or consistent with, the terms of a constitution of government; contrary to the constitution; as, an unconstitutional law, or act of an officer. Burke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1617,6 +1671,16 @@
         {
           "text": "Incontrovertibly.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unconvenient": {
+      "word": "UNCONVENIENT",
+      "definitions": [
+        {
+          "text": "Inconvenient. Bale.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1981,7 +2045,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Bland; suave; also, tender; fervid; as, an unctuous speech;",
+          "text": "Bland; suave; also, tender; fervid; as, an unctuous speech; sometimes, insincerely suave or fervid.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2002,32 +2066,6 @@
       "definitions": [
         {
           "text": "Not cultivated; rude; illiterate. [Obs.]",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "uncultivatedravagedvastbutinfluencedbyakindredgermanword": {
-      "word": "uncultivated, ravaged, vast, but influenced by a kindred German word;",
-      "definitions": [
-        {
-          "text": "To bring to ruin; to devastate; to desolate; to destroy. Thou barren ground, whom winter's wrath hath wasted, Art made a mirror to behold my plight. Spenser. The Tiber Insults our walls, and wastes our fruitful grounds. Dryden.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To wear away by degrees; to impair gradually; to diminish by constant loss; to use up; to consume; to spend; to wear out. Until your carcasses be wasted in the wilderness. Num. xiv. 33. O, were I able To waste it all myself, and leave ye none! Milton. Here condemned To waste eternal days in woe and pain. Milton. Wasted by such a course of life, the infirmities of age daily grew on him. Robertson.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To spend unnecessarily or carelessly; to employ prodigally; to expend without valuable result; to apply to useless purposes; to lavish vainly; to squander; to cause to be lost; to destroy by scattering or injury. The younger son gathered all together, and . . . wasted his substance with riotous living. Luke xv. 13. Full many a flower is born to blush unseen, And waste its sweetness on the desert air. Gray.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To damage, impair, or injure, as an estate, voluntarily, or by suffering the buildings, fences, etc., to go to decay.",
           "partOfSpeech": "adjective"
         }
       ],

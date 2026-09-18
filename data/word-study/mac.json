@@ -127,7 +127,7 @@
       ],
       "relatedWords": []
     },
-    "macaronianmacaronic": {
+    "macaronian": {
       "word": "MACARONIAN; MACARONIC",
       "definitions": [
         {
@@ -142,8 +142,16 @@
       "relatedWords": []
     },
     "macaronic": {
-      "word": "MACARONIC",
+      "word": "MACARONIAN; MACARONIC",
       "definitions": [
+        {
+          "text": "Pertaining to, or like, macaroni (originally a dish of mixed food); hence, mixed; confused; jumbled.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the burlesque composition called macaronic; as, macaronic poetry.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A heap of thing confusedly mixed together; a jumble.",
           "partOfSpeech": "noun"
@@ -243,7 +251,7 @@
       ],
       "relatedWords": []
     },
-    "maccaboymaccoboy": {
+    "maccaboy": {
       "word": "MACCABOY; MACCOBOY",
       "definitions": [
         {
@@ -258,6 +266,16 @@
       "definitions": [
         {
           "text": "A gambling game in vogue in the eighteenth century. Thackeray.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "maccoboy": {
+      "word": "MACCABOY; MACCOBOY",
+      "definitions": [
+        {
+          "text": "A kind of snuff.",
           "partOfSpeech": "noun"
         }
       ],
@@ -387,7 +405,17 @@
       ],
       "relatedWords": []
     },
-    "machaerodusmachairodus": {
+    "machaerodus": {
+      "word": "MACHAERODUS; MACHAIRODUS",
+      "definitions": [
+        {
+          "text": "A genus of extinct mammals allied to the cats, and having in the upper jaw canine teeth of remarkable size and strength; -- hence called saber-toothed tigers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "machairodus": {
       "word": "MACHAERODUS; MACHAIRODUS",
       "definitions": [
         {
@@ -421,7 +449,17 @@
       ],
       "relatedWords": []
     },
-    "machiavelismmachiavelianism": {
+    "machiavelianism": {
+      "word": "MACHIAVELISM; MACHIAVELIANISM",
+      "definitions": [
+        {
+          "text": "The supposed principles of Machiavel, or practice in conformity to them; political artifice, intended to favor arbitrary power.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "machiavelism": {
       "word": "MACHIAVELISM; MACHIAVELIANISM",
       "definitions": [
         {
@@ -665,7 +703,17 @@
       ],
       "relatedWords": []
     },
-    "mackinawblanketmackinaw": {
+    "mackinaw": {
+      "word": "MACKINAW BLANKET; MACKINAW",
+      "definitions": [
+        {
+          "text": "A thick blanket formerly in common use in the western part of the United States.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "mackinawblanket": {
       "word": "MACKINAW BLANKET; MACKINAW",
       "definitions": [
         {
@@ -773,7 +821,17 @@
       ],
       "relatedWords": []
     },
-    "macrencephalicmacrencephalous": {
+    "macrencephalic": {
+      "word": "MACRENCEPHALIC; MACRENCEPHALOUS",
+      "definitions": [
+        {
+          "text": "Having a large brain.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "macrencephalous": {
       "word": "MACRENCEPHALIC; MACRENCEPHALOUS",
       "definitions": [
         {
@@ -891,7 +949,17 @@
       ],
       "relatedWords": []
     },
-    "macrodactylicmacrodactylous": {
+    "macrodactylic": {
+      "word": "MACRODACTYLIC; MACRODACTYLOUS",
+      "definitions": [
+        {
+          "text": "Having long toes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "macrodactylous": {
       "word": "MACRODACTYLIC; MACRODACTYLOUS",
       "definitions": [
         {
@@ -906,6 +974,16 @@
       "definitions": [
         {
           "text": "The longer of two diagonals, as of a rhombic prism. See Crystallization.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "macrodome": {
+      "word": "MACRODOME",
+      "definitions": [
+        {
+          "text": "A dome parallel to the longer lateral axis of an orthorhombic crystal. See Dome, n., 4.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1125,6 +1203,26 @@
       ],
       "relatedWords": []
     },
+    "macroscopic": {
+      "word": "MACROSCOPIC; MACROSCOPICAL",
+      "definitions": [
+        {
+          "text": "Visible to the unassisted eye; -- as opposed to microscopic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "macroscopical": {
+      "word": "MACROSCOPIC; MACROSCOPICAL",
+      "definitions": [
+        {
+          "text": "Visible to the unassisted eye; -- as opposed to microscopic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "macrosporangium": {
       "word": "MACROSPORANGIUM",
       "definitions": [
@@ -1175,7 +1273,7 @@
       ],
       "relatedWords": []
     },
-    "macrouramacroural": {
+    "macroura": {
       "word": "MACROURA; MACROURAL",
       "definitions": [
         {
@@ -1185,7 +1283,27 @@
       ],
       "relatedWords": []
     },
-    "macrozoosporemacrozooespore": {
+    "macroural": {
+      "word": "MACROURA; MACROURAL",
+      "definitions": [
+        {
+          "text": "Same as Macrura, Macrural, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "macrozooespore": {
+      "word": "MACROZOOSPORE; MACROZOOESPORE",
+      "definitions": [
+        {
+          "text": "A large motile spore having four vibratile cilia; -- found in certain green algæ.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "macrozoospore": {
       "word": "MACROZOOSPORE; MACROZOOESPORE",
       "definitions": [
         {

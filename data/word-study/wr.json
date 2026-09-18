@@ -1,20 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "wright": {
-      "word": "Wright.",
-      "definitions": [
-        {
-          "text": "The state of being warped or twisted; as, the warp of a board. Warp beam, the roller on which the warp is wound in a loom. having a number of needles and employing a thread for each needle. are interchained each with one or more contiguous threads on either side; -- also called warp weaving. threads.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "One who is engaged in a mechanical or manufacturing business; an artificer; a workman; a manufacturer; a mechanic; esp., a worker in wood; -- now chiefly used in compounds, as in millwright, wheelwright, etc. He was a well good wright, a carpenter. Chaucer.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "wrack": {
       "word": "WRACK",
       "definitions": [
@@ -139,7 +125,17 @@
       ],
       "relatedWords": []
     },
-    "wrannockwranny": {
+    "wrannock": {
+      "word": "WRANNOCK; WRANNY",
+      "definitions": [
+        {
+          "text": "The common wren. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "wranny": {
       "word": "WRANNOCK; WRANNY",
       "definitions": [
         {
@@ -535,6 +531,30 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "The destruction or injury of a vessel by being cast on shore, or on rocks, or by being disabled or sunk by the force of winds or waves; shipwreck. Hard and obstinate As is a rock amidst the raging floods, 'Gainst which a ship, of succor desolate, Doth suffer wreck, both of herself and goods. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Destruction or injury of anything, especially by violence; ruin; as, the wreck of a railroad train. The wreck of matter and the crush of worlds. Addison. Its intellectual life was thus able to go on amidst the wreck of its political life. J. R. Green.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ruins of a ship stranded; a ship dashed against rocks or land, and broken, or otherwise rendered useless, by violence and fracture; as, they burned the wreck.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The remain of anything ruined or fatally injured. To the fair haven of my native home, The wreck of what I was, fatigued I come. Cowper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Goods, etc., which, after a shipwreck, are cast upon the land by the sea. Bouvier.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To destroy, disable, or seriously damage, as a vessel, by driving it against the shore or on rocks, by causing it to become unseaworthy, to founder, or the like; to shipwreck. Supposing that they saw the king's ship wrecked. Shak.",
           "partOfSpeech": "verb"
         },
@@ -629,7 +649,17 @@
       ],
       "relatedWords": []
     },
-    "wrekewreeke": {
+    "wreke": {
+      "word": "WREKE; WREEKE",
+      "definitions": [
+        {
+          "text": "See 2d Wreak. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "wreeke": {
       "word": "WREKE; WREEKE",
       "definitions": [
         {
@@ -664,6 +694,34 @@
     "wrench": {
       "word": "WRENCH",
       "definitions": [
+        {
+          "text": "Trick; deceit; fraud; stratagem. [Obs.] His wily wrenches thou ne mayst not flee. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A violent twist, or a pull with twisting. He wringeth them such a wrench. Skelton. The injurious effect upon biographic literature of all such wrenches to the truth, is diffused everywhere. De Quincey.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sprain; an injury by twisting, as in a joint.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Means; contrivance. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An instrument, often a simple bar or lever with jaws or an angular orifice either at the end or between the ends, for exerting a twisting strain, as in turning bolts, nuts, screw taps, etc.; a screw key. Many wrenches have adjustable jaws for grasping nuts, etc., of different sizes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The system made up of a force and a couple of forces in a plane perpendicular to that force. Any number of forces acting at any points upon a rigid body may be compounded so as to be equivalent to a wrench. Carriage wrench, a wrench adapted for removing or tightening the nuts that confine the wheels on the axles, or for turning the other nuts or bolts of a carriage or wagon. being used as a hammer.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To pull with a twist; to wrest, twist, or force by violence. Wrench his sword from him. Shak. Forthwith this frame of mine was wrenched With a woeful agony. Coleridge.",
           "partOfSpeech": "verb"
@@ -890,6 +948,16 @@
       "definitions": [
         {
           "text": "One who, or that which, wriggles. Cowper.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "wright": {
+      "word": "WRIGHT",
+      "definitions": [
+        {
+          "text": "One who is engaged in a mechanical or manufacturing business; an artificer; a workman; a manufacturer; a mechanic; esp., a worker in wood; -- now chiefly used in compounds, as in millwright, wheelwright, etc. He was a well good wright, a carpenter. Chaucer.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1167,7 +1235,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To make known by writing; to record; to prove by one's own written testimony; -- often used reflexively. He who writes himself by his own inscription is like an ill painter, who, by writing on a shapeless picture which he hath drawn, is fain to tell passengers what shape it is, which else no man could imagine. Milton. To write to, to communicate by a written document to.",
+          "text": "To make known by writing; to record; to prove by one's own written testimony; -- often used reflexively. He who writes himself by his own inscription is like an ill painter, who, by writing on a shapeless picture which he hath drawn, is fain to tell passengers what shape it is, which else no man could imagine. Milton. To write to, to communicate by a written document to. enactment, as contradistinguished from unwritten, or common, law. See the Note under Law, and Common law, under Common, a.",
           "partOfSpeech": "verb"
         },
         {
@@ -1395,7 +1463,7 @@
       "word": "WRONGFUL",
       "definitions": [
         {
-          "text": "Full of wrong; injurious; unjust; unfair; as, a wrongful taking",
+          "text": "Full of wrong; injurious; unjust; unfair; as, a wrongful taking of property; wrongful dealing.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1419,7 +1487,7 @@
       "word": "WRONGHEADED",
       "definitions": [
         {
-          "text": "Wrong in opinion or principle; having a perverse understanding;",
+          "text": "Wrong in opinion or principle; having a perverse understanding; perverse.",
           "partOfSpeech": "adjective"
         }
       ],

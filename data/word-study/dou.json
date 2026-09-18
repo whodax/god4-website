@@ -1,0 +1,3065 @@
+{
+  "version": "v1",
+  "entries": {
+    "douane": {
+      "word": "DOUANE",
+      "definitions": [
+        {
+          "text": "A customhouse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douanier": {
+      "word": "DOUANIER",
+      "definitions": [
+        {
+          "text": "An officer of the French customs. [Anglicized form douaneer.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douar": {
+      "word": "DOUAR",
+      "definitions": [
+        {
+          "text": "A village composed of Arab tents arranged in streets.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douaybible": {
+      "word": "DOUAY BIBLE",
+      "definitions": [
+        {
+          "text": "A translation of the Scriptures into the English language for the use of English-speaking Roman Catholics; -- done from the Latin Vulgate by English scholars resident in France. The New Testament portion was published at Rheims, A. D. 1582, the Old Testament at Douai, A. D. 1609-10. Various revised editions have since been published. [Written also Doway Bible. Called also the Rheims and Douay version.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubgrass": {
+      "word": "DOUB GRASS",
+      "definitions": [
+        {
+          "text": "Doob grass.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "double": {
+      "word": "DOUBLE",
+      "definitions": [
+        {
+          "text": "Twofold; multiplied by two; increased by its equivalent; made twice as large or as much, etc. Let a double portion of thy spirit be upon me. 2 Kings ii. 9. Darkness and tempest make a double night. Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Being in pairs; presenting two of a kind, or two in a set together; coupled. [Let] The swan, on still St. Mary's lake, Float double, swan and shadow. Wordsworth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Divided into two; acting two parts, one openly and the other secretly; equivocal; deceitful; insincere. With a double heart do they speak. Ps. xii. 2.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the petals in a flower considerably increased beyond the natural number, usually as the result of cultivation and the expense of the stamens, or stamens and pistils. The white water lily and some other plants have their blossoms naturally double. generally denoting two ways, or twice the number, quantity, force, etc., twofold, or having two. Double base, or Double bass (Mus.), the largest and lowest-toned instrument in the violin form; the contrabasso or violone. composition, in which two of the parts may be inverted, by setting one of them an octave higher or lower. two on each side. (|) in order; a diesis. of 20 dollars. flooring joists above and ceiling joists below. See Illust. of Double-framed floor. which the binding joists are framed. (b) A mail requiring double postage. a breve. See Breve. fifteen notes, in diatonic progression; a fifteenth. at the same time. the declaration, where either of such matters alone would be a sufficient bar to the action. Stephen. cross each other. Conjugate or isolated points of a curve are called double points, since they possess most of the properties of double points (see Conjugate). They are also called acnodes, and those points where the branches of the curve really cross are called crunodes. The extremity of a cusp is also a double point. has been saturated by different bases or basic radicals, as the double carbonate of sodium and potassium, NaKCO3.6H2O. (b) A molecular combination of two distinct salts, as common alum, which consists of the sulphate of aluminium, and the sulphate of potassium or ammonium. values; i. e., a gold standard and a silver standard, both of which are made legal tender. seen separate only by means of a telescope. Such stars may be only optically near to each other, or may be physically connected so that they revolve round their common center of gravity, and in the latter case are called also binary stars. air space between them.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Twice; doubly. I was double their age. Swift.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "To increase by adding an equal number, quantity, length, value, or the like; multiply by two; to double a sum of money; to double a number, or length. Double six thousand, and then treble that. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make of two thicknesses or folds by turning or bending together in the middle; to fold one part upon another part of; as, to double the leaf of a book, and the like; to clinch, as the fist; -- often followed by up; as, to double up a sheet of paper or cloth. Prior. Then the old man Was wroth, and doubled up his hands. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be the double of; to exceed by twofold; to contain or be worth twice as much as. Thus reënforced, against the adverse fleet, Still doubling ours, brave Rupert leads the way. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pass around or by; to march or sail round, so as to reverse the direction of motion. Sailing along the coast, the doubled the promontory of Carthage. Knolles.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To unite, as ranks or files, so as to form one from each two.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be increased to twice the sum, number, quantity, length, or value; to increase or grow to twice as much. 'T is observed in particular nations, that within the space of three hundred years, notwithstanding all casualties, the number of men doubles. T. Burnet.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To return upon one's track; to turn and go back over the same ground, or in an opposite direction. Doubling and turning like a hunted hare. Dryden. Doubling and doubling with laborious walk. Wordsworth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To play tricks; to use sleights; to play false. What penalty and danger you accrue, If you be found to double. J. Webster.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To set up a word or words a second time by mistake; to make a doublet. To double upon (Mil.), to inclose between two fires.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Twice as much; twice the number, sum, quantity, length, value, and the like. If the thief be found, let him pay double. Ex. xxii. 7.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Among compositors, a doublet (see Doublet, 2.); among pressmen, a sheet that is twice pulled, and blurred.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is doubled over or together; a doubling; a plait; a fold. Rolled up in sevenfold double Of plagues. Marston.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A turn or circuit in running to escape pursues; hence, a trick; a shift; an artifice. These men are too well acquainted with the chase to be flung off by any false steps or doubles. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Something precisely equal or counterpart to another; a counterpart. Hence, a wraith. My charming friend . . . has, I am almost sure, a double, who preaches his afternoon sermons for him. Atlantic Monthly.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A player or singer who prepares to take the part of another player in his absence; a substitute.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Double beer; strong beer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eccl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A feast in which the antiphon is doubled, hat is, said twice, before and after the Psalms, instead of only half being said, as in simple feasts. Shipley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Lawn Tennis)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A game between two pairs of players; as, a first prize for doubles.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An old term for a variation, as in Bach's Suites.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Doppelganger",
+        "Janus-like",
+        "Machiavellian",
+        "Photostat",
+        "Xerox",
+        "aberrancy",
+        "aberration",
+        "accelerate",
+        "act for",
+        "actual thing",
+        "agent",
+        "aggravate",
+        "alternate",
+        "alternative",
+        "ambidextrous",
+        "ambiguous",
+        "amplify",
+        "analogy",
+        "artful",
+        "at full speed",
+        "at once",
+        "augment",
+        "average",
+        "avoid",
+        "backup",
+        "beef up",
+        "beg",
+        "bend",
+        "bias",
+        "bifacial",
+        "bifold",
+        "biform",
+        "bifurcated",
+        "bilateral",
+        "bilk",
+        "binary",
+        "binate",
+        "biparous",
+        "bipartisan",
+        "bipartite",
+        "bisect",
+        "bivalent",
+        "blow up",
+        "branching off",
+        "briskly",
+        "carbon copy",
+        "change",
+        "change places with",
+        "changeling",
+        "circuitousness",
+        "circumvent",
+        "clone",
+        "co-walker",
+        "come again",
+        "come back",
+        "come home",
+        "companion",
+        "comparison",
+        "complicate",
+        "concentrate",
+        "condense",
+        "conduplicate",
+        "consolidate",
+        "coordinate",
+        "copy",
+        "corner",
+        "counterfeit",
+        "counterpart",
+        "coupled",
+        "crafty",
+        "crease",
+        "creasing",
+        "crimp",
+        "crisp",
+        "crook",
+        "crooked",
+        "crowd out",
+        "cunning",
+        "curve",
+        "cut out",
+        "dead ringer",
+        "deceitful",
+        "declination",
+        "deepen",
+        "deflection",
+        "departure",
+        "deputy",
+        "detour",
+        "deviance",
+        "deviancy",
+        "deviation",
+        "deviousness",
+        "dichotomous",
+        "digression",
+        "discursion",
+        "dishonest",
+        "disomatous",
+        "displace",
+        "ditch",
+        "ditto",
+        "divagation",
+        "divarication",
+        "divergence",
+        "diversion",
+        "do a repeat",
+        "do again",
+        "do over",
+        "dog-ear",
+        "dogleg",
+        "double back",
+        "double for",
+        "double over",
+        "double-dealing",
+        "double-faced",
+        "double-minded",
+        "double-tongued",
+        "doubled",
+        "doubleganger",
+        "doublehearted",
+        "doubling",
+        "drift",
+        "drifting",
+        "duadic",
+        "dual",
+        "dualistic",
+        "dub",
+        "duck",
+        "dummy",
+        "dupe",
+        "duple",
+        "duplex",
+        "duplicate",
+        "duplicated",
+        "duplication",
+        "duplicature",
+        "duplicitous",
+        "dyadic",
+        "echo",
+        "effigy",
+        "elude",
+        "enfold",
+        "enhance",
+        "enlarge",
+        "equal",
+        "equivalent",
+        "errantry",
+        "ersatz",
+        "escape",
+        "eschew",
+        "etheric double",
+        "evade",
+        "exacerbate",
+        "exact counterpart",
+        "exact likeness",
+        "exaggerate",
+        "exchange",
+        "excursion",
+        "excursus",
+        "exorbitation",
+        "facsimile",
+        "faithless",
+        "fake",
+        "false",
+        "false-principled",
+        "falsehearted",
+        "fellow",
+        "fetch",
+        "fill in for",
+        "fill-in",
+        "flection",
+        "flexure",
+        "flounce",
+        "flute",
+        "fold",
+        "fold over",
+        "frill",
+        "gather",
+        "geminate",
+        "geminated",
+        "get around",
+        "get away from",
+        "get out of",
+        "ghost",
+        "ghostwrite",
+        "ghostwriter",
+        "go back",
+        "go home",
+        "hairpin",
+        "heat up",
+        "hectograph",
+        "heighten",
+        "homograph",
+        "homonym",
+        "homophone",
+        "hop up",
+        "hot up",
+        "hypocritical",
+        "icon",
+        "idem",
+        "identical",
+        "identical same",
+        "idol",
+        "image",
+        "imitate",
+        "imitation",
+        "immediately",
+        "increase",
+        "indirection",
+        "infold",
+        "ingeminate",
+        "insincere",
+        "intensify",
+        "interfold",
+        "jazz up",
+        "key up",
+        "lap over",
+        "lapel",
+        "lappet",
+        "likeness",
+        "living image",
+        "living picture",
+        "locum tenens",
+        "magnify",
+        "make complex",
+        "makeshift",
+        "manifold",
+        "match",
+        "matched",
+        "mate",
+        "metaphor",
+        "metonymy",
+        "microcopy",
+        "microfilm",
+        "middle",
+        "mimeo",
+        "mimeograph",
+        "miniature",
+        "mirror image",
+        "mirroring",
+        "model",
+        "multigraph",
+        "multiply by two",
+        "next best thing",
+        "no other",
+        "none other",
+        "obliquity",
+        "on the run",
+        "paired",
+        "parrot",
+        "pererration",
+        "perfidious",
+        "personnel",
+        "phony",
+        "photograph",
+        "picture",
+        "pinch hitter",
+        "pinch-hit",
+        "plagiarize",
+        "plait",
+        "plat",
+        "pleat",
+        "plica",
+        "plicate",
+        "plication",
+        "plicature",
+        "ply",
+        "portrait",
+        "proxy",
+        "put back",
+        "quadruplicate",
+        "quickly",
+        "quill",
+        "quote",
+        "rambling",
+        "ramify",
+        "reciprocal",
+        "redo",
+        "redouble",
+        "reduplicate",
+        "reecho",
+        "reflection",
+        "regurgitate",
+        "reincarnate",
+        "reinforce",
+        "relief",
+        "relieve",
+        "renew",
+        "repeat",
+        "repetition",
+        "replace",
+        "replacement",
+        "replica",
+        "replicate",
+        "replication",
+        "represent",
+        "representation",
+        "representative",
+        "reproduce",
+        "reproduction",
+        "resemblance",
+        "reserves",
+        "return",
+        "revive",
+        "ringer",
+        "rubbing",
+        "ruche",
+        "ruching",
+        "ruff",
+        "ruffle",
+        "say again",
+        "second",
+        "second string",
+        "secondary",
+        "selfsame",
+        "semblance",
+        "shadow",
+        "shake",
+        "shake off",
+        "sharpen",
+        "sheer",
+        "shift",
+        "shifting",
+        "shifting course",
+        "shifting path",
+        "shifty",
+        "shuffle out of",
+        "shun",
+        "shy",
+        "sign",
+        "similitude",
+        "simulacrum",
+        "skew",
+        "skirt",
+        "slant",
+        "slippery",
+        "soup up",
+        "spares",
+        "spell",
+        "spell off",
+        "spit",
+        "spit and image",
+        "spitting image",
+        "stand in for",
+        "stand-in",
+        "stat",
+        "step up",
+        "straying",
+        "strengthen",
+        "sub",
+        "subrogate",
+        "substituent",
+        "substitute",
+        "substitute for",
+        "substitution",
+        "succedaneum",
+        "succeed",
+        "supersede",
+        "superseder",
+        "supplant",
+        "supplanter",
+        "supplement",
+        "surrogate",
+        "swap places with",
+        "sweep",
+        "swerve",
+        "swerving",
+        "swinging",
+        "symbol",
+        "synecdoche",
+        "synonym",
+        "tack",
+        "the same",
+        "the same difference",
+        "third string",
+        "token",
+        "trace",
+        "tracing",
+        "traitorous",
+        "transcribe",
+        "treacherous",
+        "tricky",
+        "triple",
+        "triplicate",
+        "tuck",
+        "turn",
+        "turn back",
+        "turn over",
+        "turning",
+        "twain",
+        "twice",
+        "twill",
+        "twin",
+        "twinned",
+        "twist",
+        "two",
+        "two-faced",
+        "two-level",
+        "two-ply",
+        "two-sided",
+        "two-story",
+        "twofold",
+        "understudy",
+        "understudy for",
+        "utility player",
+        "variation",
+        "veer",
+        "veering",
+        "very image",
+        "very picture",
+        "very same",
+        "vicar",
+        "vice-president",
+        "vice-regent",
+        "wandering",
+        "warp",
+        "whet",
+        "without delay",
+        "wraith",
+        "yaw",
+        "zigzag"
+      ]
+    },
+    "doubleacting": {
+      "word": "DOUBLE-ACTING",
+      "definitions": [
+        {
+          "text": "Acting or operating in two directions or with both motions; producing a twofold result; as, a double-acting engine or pump.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublebank": {
+      "word": "DOUBLE-BANK",
+      "definitions": [
+        {
+          "text": "To row by rowers sitting side by side in twos on a bank or thwart. To double-bank an oar, to set two men to pulling one oar.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublebanked": {
+      "word": "DOUBLE-BANKED",
+      "definitions": [
+        {
+          "text": "Applied to a kind of rowing in which the rowers sit side by side in twos, a pair of oars being worked from each bank or thwart.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublebarreled": {
+      "word": "DOUBLE-BARRELED; DOUBLE-BARRELLED",
+      "definitions": [
+        {
+          "text": "Having two barrels; -- applied to a gun.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublebarrelled": {
+      "word": "DOUBLE-BARRELED; DOUBLE-BARRELLED",
+      "definitions": [
+        {
+          "text": "Having two barrels; -- applied to a gun.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublebeatvalve": {
+      "word": "DOUBLE-BEAT VALVE",
+      "definitions": [
+        {
+          "text": "See under Valve.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublebreasted": {
+      "word": "DOUBLE-BREASTED",
+      "definitions": [
+        {
+          "text": "Folding or lapping over on the breast, with a row of buttons and buttonholes on each side; as, a double-breasted coat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublecharge": {
+      "word": "DOUBLE-CHARGE",
+      "definitions": [
+        {
+          "text": "To load with a double charge, as of gunpowder.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To overcharge. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubledealer": {
+      "word": "DOUBLE DEALER",
+      "definitions": [
+        {
+          "text": "One who practices double dealing; a deceitful, trickish person. L'Estrange.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "Artful Dodger",
+        "Benedict Arnold",
+        "Brutus",
+        "Casanova",
+        "Don Juan",
+        "Judas",
+        "Judas Iscariot",
+        "Machiavel",
+        "Machiavelli",
+        "Machiavellian",
+        "Quisling",
+        "actor",
+        "archtraitor",
+        "bamboozler",
+        "befuddler",
+        "beguiler",
+        "betrayer",
+        "charmer",
+        "cockatrice",
+        "conniver",
+        "conspirator",
+        "conspirer",
+        "convict",
+        "counterfeiter",
+        "criminal",
+        "crook",
+        "deceiver",
+        "deluder",
+        "desperado",
+        "desperate criminal",
+        "dissembler",
+        "dissimulator",
+        "dodger",
+        "double agent",
+        "double-crosser",
+        "duper",
+        "enchanter",
+        "entrancer",
+        "faker",
+        "felon",
+        "fooler",
+        "forger",
+        "fugitive",
+        "gallows bird",
+        "gangster",
+        "gaolbird",
+        "gay deceiver",
+        "hoaxer",
+        "hypnotizer",
+        "informer",
+        "intrigant",
+        "intriguer",
+        "jailbird",
+        "jilt",
+        "jilter",
+        "joker",
+        "jokester",
+        "kidder",
+        "lawbreaker",
+        "leg-puller",
+        "machinator",
+        "mesmerizer",
+        "misleader",
+        "mobster",
+        "outlaw",
+        "plagiarist",
+        "plagiarizer",
+        "playactor",
+        "plotter",
+        "practical joker",
+        "public enemy",
+        "quisling",
+        "racketeer",
+        "ragger",
+        "rat",
+        "role-player",
+        "schemer",
+        "scofflaw",
+        "seducer",
+        "serpent",
+        "snake",
+        "spoofer",
+        "swindler",
+        "tease",
+        "teaser",
+        "thief",
+        "thug",
+        "timeserver",
+        "traitor",
+        "treasonist",
+        "trimmer",
+        "turncoat",
+        "two-timer"
+      ]
+    },
+    "doubledealing": {
+      "word": "DOUBLE DEALING",
+      "definitions": [
+        {
+          "text": "False or deceitful dealing. See Double dealing, under Dealing. Shak.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "Machiavellian",
+        "Machiavellianism",
+        "ambidexterity",
+        "ambidextrous",
+        "artful",
+        "artifice",
+        "bad faith",
+        "chicane",
+        "chicanery",
+        "crafty",
+        "crooked",
+        "cunning",
+        "deceitful",
+        "deceitfulness",
+        "dirty pool",
+        "dirty trick",
+        "dirty work",
+        "dishonest",
+        "dishonesty",
+        "double",
+        "double-faced",
+        "double-minded",
+        "double-tongued",
+        "doublehearted",
+        "doubleness",
+        "doubleness of heart",
+        "duplicitous",
+        "duplicity",
+        "faithless",
+        "faithlessness",
+        "false",
+        "false-principled",
+        "falsehearted",
+        "falseheartedness",
+        "falseness",
+        "foul play",
+        "fraud",
+        "hanky-panky",
+        "hypocritical",
+        "improbity",
+        "left-handed",
+        "low cunning",
+        "perfidious",
+        "perfidiousness",
+        "perfidy",
+        "sharp practice",
+        "shifty",
+        "slippery",
+        "treacherous",
+        "treacherousness",
+        "treachery",
+        "trickery",
+        "tricky",
+        "two-faced",
+        "two-facedness",
+        "wile"
+      ]
+    },
+    "doubledecker": {
+      "word": "DOUBLE-DECKER",
+      "definitions": [
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A man-of-war having two gun decks.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A public conveyance, as a street car, with seats on the roof. [Colloq.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubledye": {
+      "word": "DOUBLE-DYE",
+      "definitions": [
+        {
+          "text": "To dye again or twice over. To double-dye their robes in scarlet. J. Webster.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubledyed": {
+      "word": "DOUBLE-DYED",
+      "definitions": [
+        {
+          "text": "Dyed twice; thoroughly or intensely colored; hence; firmly fixed in opinions or habits; as, a double-dyed villain.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubleender": {
+      "word": "DOUBLE-ENDER",
+      "definitions": [
+        {
+          "text": "A locomotive with pilot at each end. Knight.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubleentendre": {
+      "word": "DOUBLE-ENTENDRE",
+      "definitions": [
+        {
+          "text": "A word or expression admitting of a double interpretation, one of which is often obscure or indelicate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ambiguity",
+        "ambiguousness",
+        "amphibology",
+        "belly laugh",
+        "blue story",
+        "complexity of meaning",
+        "counterword",
+        "dirty joke",
+        "dirty story",
+        "double meaning",
+        "double reference",
+        "equivocacy",
+        "equivocal",
+        "equivocality",
+        "equivocalness",
+        "equivocation",
+        "equivoque",
+        "ethnic joke",
+        "fun",
+        "funny story",
+        "gag",
+        "good one",
+        "good story",
+        "howler",
+        "irony",
+        "jape",
+        "jest",
+        "jestbook",
+        "joke",
+        "laugh",
+        "levels of meaning",
+        "multivocality",
+        "panic",
+        "paronomasia",
+        "play",
+        "point",
+        "polysemant",
+        "polysemousness",
+        "polysemy",
+        "portmanteau word",
+        "pun",
+        "punning",
+        "rib tickler",
+        "richness of meaning",
+        "riot",
+        "scream",
+        "sick joke",
+        "sidesplitter",
+        "sight gag",
+        "sport",
+        "squinting construction",
+        "story",
+        "tergiversation",
+        "uncertainty",
+        "visual joke",
+        "weasel word",
+        "wheeze",
+        "wow",
+        "yarn"
+      ]
+    },
+    "doubleeyed": {
+      "word": "DOUBLE-EYED",
+      "definitions": [
+        {
+          "text": "Having a deceitful look. [R.] \"Deceitful meanings is double- eyed.\" Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublefaced": {
+      "word": "DOUBLE-FACED",
+      "definitions": [
+        {
+          "text": "Having two faces designed for use; as, a double-faced hammer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Deceitful; hypocritical; treacherous. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubleganger": {
+      "word": "DOUBLEGANGER",
+      "definitions": [
+        {
+          "text": "An apparition or double of a living person; a doppelgänger. Either you are Hereward, or you are his doubleganger. C. Kingsley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublehanded": {
+      "word": "DOUBLE-HANDED",
+      "definitions": [
+        {
+          "text": "Having two hands.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Deceitful; deceptive. Glanvill.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubleheaded": {
+      "word": "DOUBLE-HEADED",
+      "definitions": [
+        {
+          "text": "Having two heads; bicipital. Double-headed rail (Railroad), a rail whose flanges are duplicates, so that when one is worn the other may be turned uppermost.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublehearted": {
+      "word": "DOUBLEHEARTED",
+      "definitions": [
+        {
+          "text": "Having a false heart; deceitful; treacherous. Sandys.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublehung": {
+      "word": "DOUBLE-HUNG",
+      "definitions": [
+        {
+          "text": "Having both sashes hung with weights and cords; -- said of a window.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublelock": {
+      "word": "DOUBLE-LOCK",
+      "definitions": [
+        {
+          "text": "To lock with two bolts; to fasten with double security. Tatler.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublemilled": {
+      "word": "DOUBLE-MILLED",
+      "definitions": [
+        {
+          "text": "Twice milled or fulled, to render more compact or fine; -- said of cloth; as, double-milled kerseymere.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubleminded": {
+      "word": "DOUBLEMINDED",
+      "definitions": [
+        {
+          "text": "Having different minds at different times; unsettled; undetermined. A double-minded man is unstable in all his ways. Jas. i. 8.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubleness": {
+      "word": "DOUBLENESS",
+      "definitions": [
+        {
+          "text": "The state of being double or doubled.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Duplicity; insincerity. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublepedro": {
+      "word": "DOUBLE PEDRO",
+      "definitions": [
+        {
+          "text": "Cinch (the game).",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublequick": {
+      "word": "DOUBLE-QUICK",
+      "definitions": [
+        {
+          "text": "Of, or performed in, the fastest time or step in marching, next to the run; as, a double-quick step or march.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Double-quick time, step, or march. to be taken in one minute. The number of steps may be increased up to 180 per minute.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To move, or cause to move, in double-quick time.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "acceleration",
+        "agile",
+        "amain",
+        "apace",
+        "at flank speed",
+        "at the double",
+        "breakneck",
+        "crowded",
+        "dashing",
+        "double march",
+        "double time",
+        "double-quick time",
+        "double-time",
+        "eagle-winged",
+        "expeditious",
+        "expeditiously",
+        "express",
+        "fast",
+        "festination",
+        "fleet",
+        "flying",
+        "forced march",
+        "forwarding",
+        "galloping",
+        "goose step",
+        "hair-trigger",
+        "half step",
+        "hand over fist",
+        "hand over hand",
+        "hard-pressed",
+        "hard-pushed",
+        "hard-run",
+        "hastening",
+        "hastily",
+        "hasty",
+        "headlong",
+        "hell for leather",
+        "hell-bent",
+        "hell-bent for election",
+        "hurried",
+        "hurrying",
+        "hustling",
+        "in double time",
+        "in double-quick time",
+        "in high",
+        "in high gear",
+        "in seven-league boots",
+        "lickety-cut",
+        "lickety-split",
+        "light of heel",
+        "light-footed",
+        "lively",
+        "march",
+        "mercurial",
+        "nimble",
+        "nimble-footed",
+        "on the double",
+        "post",
+        "posthaste",
+        "precipitate",
+        "pressed",
+        "pressed for time",
+        "prompt",
+        "promptly",
+        "pushed",
+        "quick",
+        "quick as lightning",
+        "quick as thought",
+        "quick march",
+        "quick time",
+        "quickening",
+        "quickly",
+        "quickstep",
+        "quickstep march",
+        "rapid",
+        "rapidly",
+        "reckless",
+        "running",
+        "rushed",
+        "slow march",
+        "slow time",
+        "snappily",
+        "snappy",
+        "spanking",
+        "speedily",
+        "speeding",
+        "speedy",
+        "swift",
+        "swiftly",
+        "trippingly",
+        "under forced draft",
+        "whip and spur",
+        "winged",
+        "with all haste",
+        "with giant strides",
+        "with rapid strides",
+        "with speed"
+      ]
+    },
+    "doubler": {
+      "word": "DOUBLER",
+      "definitions": [
+        {
+          "text": "One who, or that which, doubles.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Elec.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An instrument for augmenting a very small quantity of electricity, so as to render it manifest by sparks or the electroscope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubleripper": {
+      "word": "DOUBLE-RIPPER",
+      "definitions": [
+        {
+          "text": "A kind of coasting sled, made of two sleds fastened together with a board, one before the other. [Local, U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubleshade": {
+      "word": "DOUBLE-SHADE",
+      "definitions": [
+        {
+          "text": "To double the natural darkness of (a place). Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublesurfaced": {
+      "word": "DOUBLE-SURFACED",
+      "definitions": [
+        {
+          "text": "Having two surfaces; -- said specif. of aëroplane wings or aërocurves which are covered on both sides with fabric, etc., thus completely inclosing their frames.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublet": {
+      "word": "DOUBLET",
+      "definitions": [
+        {
+          "text": "Two of the same kind; a pair; a couple.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A word or words unintentionally doubled or set up a second time.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A close-fitting garment for men, covering the body from the neck to the waist or a little below. It was worn in Western Europe from the 15th to the 17th century.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Lapidary Work)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A counterfeit gem, composed of two pieces of crystal, with a color them, and thus giving the appearance of a naturally colored gem. Also, a piece of paste or glass covered by a veneer of real stone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Opt.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An arrangement of two lenses for a microscope, designed to correct spherical aberration and chromatic dispersion, thus rendering the image of an object more clear and distinct. W. H. Wollaston.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (See No. 1.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Two dice, each of which, when thrown, has the same number of spots on the face lying uppermost; as, to throw doublets.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. Etym: [Cf. Pr. doblier, dobler draughtboard.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A game somewhat like backgammon. Halliwell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of two or more words in the same language derived by different courses from the same original from; as, crypt and grot are doublets; also, guard and ward; yard and garden; abridge and abbreviate, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "both",
+        "brace",
+        "cognate",
+        "couple",
+        "couplet",
+        "derivation",
+        "derivative",
+        "distich",
+        "double harness",
+        "duad",
+        "duet",
+        "duo",
+        "dyad",
+        "eponym",
+        "etymon",
+        "match",
+        "mates",
+        "pair",
+        "primitive",
+        "root",
+        "set of two",
+        "span",
+        "team",
+        "the two",
+        "twain",
+        "two",
+        "twosome",
+        "yoke"
+      ]
+    },
+    "doublethreaded": {
+      "word": "DOUBLETHREADED",
+      "definitions": [
+        {
+          "text": "Consisting of two threads twisted together; using two threads.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having two screw threads instead of one; -- said of a screw in which the pitch is equal to twice the distance between the centers of adjacent threads.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubletongue": {
+      "word": "DOUBLE-TONGUE",
+      "definitions": [
+        {
+          "text": "Deceit; duplicity. Now cometh the sin of double-tongue, such as speak fair before folk and wickedly behind. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubletongued": {
+      "word": "DOUBLE-TONGUED",
+      "definitions": [
+        {
+          "text": "Making contrary declarations on the same subject; deceitful. Likewise must the deacons be grave, not double-tongued. 1 Tim. iii. 8.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubletonguing": {
+      "word": "DOUBLE-TONGUING",
+      "definitions": [
+        {
+          "text": "A peculiar action of the tongue by flute players in articulating staccato notes; also, the rapid repetition of notes in cornet playing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubletree": {
+      "word": "DOUBLETREE",
+      "definitions": [
+        {
+          "text": "The bar, or crosspiece, of a carriage, to which the singletrees are attached.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doublets": {
+      "word": "DOUBLETS",
+      "definitions": [
+        {
+          "text": "See Doublet, 6 and 7.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubling": {
+      "word": "DOUBLING",
+      "definitions": [
+        {
+          "text": "The act of one that doubles; a making double; reduplication; also, that which is doubled.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A turning and winding; as, the doubling of a hunted hare; shift; trick; artifice. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The lining of the mantle borne about the shield or escutcheon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The process of redistilling spirits, to improve the strength and flavor. Doubling a cape, promontory, etc. (Naut.), sailing around or passing beyond a cape, promontory, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Janus",
+        "ambiguity",
+        "ambivalence",
+        "biformity",
+        "bifurcation",
+        "bush",
+        "bushing",
+        "conduplication",
+        "conjugation",
+        "copying",
+        "crease",
+        "creasing",
+        "crimp",
+        "dichotomy",
+        "dog-ear",
+        "double",
+        "doubleness",
+        "doublethink",
+        "doublure",
+        "dualism",
+        "duality",
+        "duplexity",
+        "duplicate",
+        "duplication",
+        "duplicature",
+        "duplicity",
+        "echo",
+        "equivocality",
+        "facing",
+        "filler",
+        "filling",
+        "flection",
+        "flexure",
+        "flounce",
+        "fold",
+        "frill",
+        "gather",
+        "gemination",
+        "halving",
+        "imitation",
+        "ingemination",
+        "inlay",
+        "inlayer",
+        "insole",
+        "interlineation",
+        "irony",
+        "iteration",
+        "lapel",
+        "lappet",
+        "liner",
+        "lining",
+        "packing",
+        "padding",
+        "pairing",
+        "plagiarism",
+        "plica",
+        "plication",
+        "plicature",
+        "ply",
+        "polarity",
+        "quotation",
+        "reappearance",
+        "rebirth",
+        "recurrence",
+        "redoubling",
+        "reduplication",
+        "reecho",
+        "regurgitation",
+        "reincarnation",
+        "reiteration",
+        "renewal",
+        "reoccurrence",
+        "repetition",
+        "replication",
+        "reproduction",
+        "resumption",
+        "return",
+        "ruche",
+        "ruching",
+        "ruffle",
+        "stuffing",
+        "tuck",
+        "twinning",
+        "two-facedness",
+        "twoness",
+        "wadding",
+        "wainscot"
+      ]
+    },
+    "doubloon": {
+      "word": "DOUBLOON",
+      "definitions": [
+        {
+          "text": "A Spanish gold coin, no longer issued, varying in value at different times from over fifteen dollars to about five. See Doblon in Sup.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "coin",
+        "crown",
+        "double eagle",
+        "ducat",
+        "eagle",
+        "five-dollar gold piece",
+        "gold piece",
+        "guinea",
+        "half crown",
+        "half eagle",
+        "hard money",
+        "moidore",
+        "napoleon",
+        "piece",
+        "piece of money",
+        "piece of silver",
+        "pound sovereign",
+        "roll of coins",
+        "rouleau",
+        "sovereign",
+        "specie",
+        "ten-dollar gold piece",
+        "twenty-dollar gold piece"
+      ]
+    },
+    "doublure": {
+      "word": "DOUBLURE",
+      "definitions": [
+        {
+          "text": "(Bookbinding) The lining of a book cover, esp. one of unusual sort, as of tooled leather, painted vellum, rich brocade, or the like.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Paleon.) The reflexed margin of the trilobite carapace.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubly": {
+      "word": "DOUBLY",
+      "definitions": [
+        {
+          "text": "In twice the quantity; to twice the degree; as, doubly wise or good; to be doubly sensible of an obligation. Dryden.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Deceitfully. \"A man that deals doubly.\" Huloet.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubt": {
+      "word": "DOUBT",
+      "definitions": [
+        {
+          "text": "To waver in opinion or judgment; to be in uncertainty as to belief respecting anything; to hesitate in belief; to be undecided as to the truth of the negative or the affirmative proposition; to b e undetermined. Even in matters divine, concerning some things, we may lawfully doubt, and suspend our judgment. Hooker. To try your love and make you doubt of mine. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To suspect; to fear; to be apprehensive. [Obs.] question.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To question or hold questionable; to withhold assent to; to hesitate to believe, or to be inclined not to believe; to withhold confidence from; to distrust; as, I have heard the story, but I doubt the truth of it. To admire superior sense, and doubt their own! Pope. I doubt not that however changed, you keep So much of what is graceful. Tennyson. To doubt not but. I do not doubt but I have been to blame. Dryden. We doubt not now But every rub is smoothed on our way. Shak. (or notwithstanding all that may be said to the contrary) -- but having a preventive sense, after verbs of \"doubting\" and \"denying\" that convey a notion of hindrance. E. A. Abbott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To suspect; to fear; to be apprehensive of. [Obs.] Edmond [was a] good man and doubted God. R. of Gloucester. I doubt some foul play. Shak. That I of doubted danger had no fear. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fill with fear; to affright. [Obs.] The virtues of the valiant Caratach More doubt me than all Britain. Beau. & Fl.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A fluctuation of mind arising from defect of knowledge or evidence; uncertainty of judgment or mind; unsettled state of opinion concerning the reality of an event, or the truth of an assertion, etc.; hesitation. Doubt is the beginning and the end of our efforts to know. Sir W. Hamilton. Doubt, in order to be operative in requiring an acquittal, is not the want of perfect certainty (which can never exist in any question of fact) but a defect of proof preventing a reasonable assurance of quilt. Wharton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Uncertainty of condition. Thy life shall hang in doubt before thee. Deut. xxviii. 66.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Suspicion; fear; apprehension; dread. [Obs.] I stand in doubt of you. Gal. iv. 20. Nor slack her threatful hand for danger's doubt. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Difficulty expressed or urged for solution; point unsettled; objection. To every doubt your answer is the same. Blackmore. No doubt, undoubtedly; without doubt. distrust; suspicion; scruple; perplexity; ambiguity; skepticism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Humism",
+        "Pyrrhonism",
+        "agnosticism",
+        "agonize over",
+        "all-overs",
+        "anxiety",
+        "apprehension",
+        "apprehensiveness",
+        "awake a doubt",
+        "be at sea",
+        "be diffident",
+        "be doubtful",
+        "be dubious",
+        "be possessive",
+        "be skeptical",
+        "be uncertain",
+        "beat about",
+        "call in question",
+        "challenge",
+        "concern",
+        "confutability",
+        "contest",
+        "contestability",
+        "controvertibility",
+        "deniability",
+        "diffidence",
+        "disbelief",
+        "disbelieve",
+        "discredit",
+        "disputability",
+        "dispute",
+        "disquiet",
+        "distrust",
+        "distrustfulness",
+        "doubtful",
+        "doubtfulness",
+        "dubiety",
+        "dubiousness",
+        "dubitancy",
+        "fear",
+        "feel unsure",
+        "flounder",
+        "fluctuate",
+        "foreboding",
+        "greet with skepticism",
+        "grope",
+        "half believe",
+        "half-belief",
+        "harbor suspicions",
+        "have reservations",
+        "hesitate",
+        "hesitation",
+        "in doubt",
+        "incertitude",
+        "incredulity",
+        "irresolution",
+        "leeriness",
+        "misdoubt",
+        "misgive",
+        "misgiving",
+        "mistrust",
+        "mistrustfulness",
+        "puzzle over",
+        "qualm",
+        "qualmishness",
+        "query",
+        "question",
+        "questionableness",
+        "raise a question",
+        "refutability",
+        "reservations",
+        "scepticism",
+        "scoff",
+        "scoffing",
+        "scruple",
+        "scrupulousness",
+        "self-doubt",
+        "shadow of doubt",
+        "skepticalness",
+        "skepticism",
+        "smell a rat",
+        "suspect",
+        "suspicion",
+        "suspiciousness",
+        "thrash about",
+        "throw doubt upon",
+        "total skepticism",
+        "treat with reserve",
+        "unbelief",
+        "uncertainty",
+        "vacillate",
+        "wariness",
+        "waver",
+        "wonder",
+        "wonder whether",
+        "worry"
+      ]
+    },
+    "doubtable": {
+      "word": "DOUBTABLE",
+      "definitions": [
+        {
+          "text": "Capable of being doubted; questionable.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Worthy of being feared; redoubtable. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubtance": {
+      "word": "DOUBTANCE",
+      "definitions": [
+        {
+          "text": "State of being in doubt; uncertainty; doubt. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubter": {
+      "word": "DOUBTER",
+      "definitions": [
+        {
+          "text": "One who doubts; one whose opinion is unsettled; one who scruples.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubtful": {
+      "word": "DOUBTFUL",
+      "definitions": [
+        {
+          "text": "Not settled in opinion; undetermined; wavering; hesitating in belief; also used, metaphorically, of the body when its action is affected by such a state of mind; as, we are doubtful of a fact, or of the propriety of a measure. Methinks I should know you, and know this man; Yet I am doubtful. Shak. With doubtful feet and wavering resolution. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Admitting of doubt; not obvious, clear, or certain; questionable; not decided; not easy to be defined, classed, or named; as, a doubtful case, hue, claim, title, species, and the like. Beauty is but a vain and doubtful good. Shak. Is it a great cruelty to expel from our abode the enemy of our peace, or even the doubtful friend [i. e., one as to whose sincerity there may be doubts] Bancroft.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Characterized by ambiguity; dubious; as, a doubtful expression; a doubtful phrase.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of uncertain issue or event. We . . . have sustained one day in doubtful fight. Milton. The strife between the two principles had been long, fierce, and doubtful. Macaulay.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fearful; apprehensive; suspicious. [Obs.] I am doubtful that you have been conjunct And bosomed with her. Shak. dubious; uncertain; equivocal; ambiguous; problematical; questionable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Humean",
+        "Pyrrhonic",
+        "a bit thick",
+        "a bit thin",
+        "absurd",
+        "agnostic",
+        "ambiguous",
+        "amoral",
+        "arguable",
+        "at issue",
+        "beyond belief",
+        "borderline",
+        "chancy",
+        "clouded",
+        "confutable",
+        "conjectural",
+        "conscienceless",
+        "contestable",
+        "contingent",
+        "controversial",
+        "controvertible",
+        "corrupt",
+        "corrupted",
+        "criminal",
+        "crooked",
+        "dark",
+        "debatable",
+        "deniable",
+        "devious",
+        "dishonest",
+        "dishonorable",
+        "disputable",
+        "disreputable",
+        "distrustful",
+        "doubtable",
+        "doubting",
+        "dubious",
+        "dubitable",
+        "equivocal",
+        "evasive",
+        "felonious",
+        "fishy",
+        "fraudulent",
+        "from Missouri",
+        "hard of belief",
+        "hard to believe",
+        "hardly possible",
+        "hazy",
+        "hesitant",
+        "hesitating",
+        "iffy",
+        "ill-got",
+        "ill-gotten",
+        "immoral",
+        "implausible",
+        "improbable",
+        "in dispute",
+        "in doubt",
+        "in dubio",
+        "in question",
+        "inconceivable",
+        "incredible",
+        "incredulous",
+        "indecisive",
+        "indefinite",
+        "indeterminate",
+        "indirect",
+        "insecure",
+        "insidious",
+        "leery",
+        "mistakable",
+        "mistrustful",
+        "mistrusting",
+        "moot",
+        "more than doubtful",
+        "not deserving belief",
+        "not kosher",
+        "obscure",
+        "open",
+        "open to doubt",
+        "open to question",
+        "open to suspicion",
+        "passing belief",
+        "precarious",
+        "preposterous",
+        "problematic",
+        "queasy",
+        "questionable",
+        "questioning",
+        "refutable",
+        "ridiculous",
+        "rocky",
+        "rotten",
+        "sceptical",
+        "scrupulous",
+        "shady",
+        "shaky",
+        "shameless",
+        "shifty",
+        "shy",
+        "sinister",
+        "skeptic",
+        "skeptical",
+        "slippery",
+        "speculative",
+        "staggering belief",
+        "suppositional",
+        "suspect",
+        "suspecting",
+        "suspicious",
+        "tall",
+        "thick",
+        "thin",
+        "tottery",
+        "touch-and-go",
+        "treacherous",
+        "tricky",
+        "unbelievable",
+        "uncertain",
+        "unclear",
+        "unconscienced",
+        "unconscientious",
+        "unconscionable",
+        "unconvinced",
+        "unconvincing",
+        "undecided",
+        "undependable",
+        "underhand",
+        "underhanded",
+        "unearthly",
+        "uneasy",
+        "unethical",
+        "ungodly",
+        "unhealthy",
+        "unimaginable",
+        "unlikely",
+        "unpredictable",
+        "unprincipled",
+        "unpromising",
+        "unreliable",
+        "unresolved",
+        "unsafe",
+        "unsavory",
+        "unscrupulous",
+        "unsettled",
+        "unsound",
+        "unstable",
+        "unsteady",
+        "unstraightforward",
+        "unsure",
+        "unthinkable",
+        "untrusting",
+        "untrustworthy",
+        "unworthy of belief",
+        "vacillating",
+        "vague",
+        "wary",
+        "without remorse",
+        "without shame"
+      ]
+    },
+    "doubtfully": {
+      "word": "DOUBTFULLY",
+      "definitions": [
+        {
+          "text": "In a doubtful manner. Nor did the goddess doubtfully declare. Dryden.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubtfulness": {
+      "word": "DOUBTFULNESS",
+      "definitions": [
+        {
+          "text": "State of being doubtful.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Uncertainty of meaning; ambiguity; indefiniteness. \" The doubtfulness of his expressions.\" Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Uncertainty of event or issue. Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doubting": {
+      "word": "DOUBTING",
+      "definitions": [
+        {
+          "text": "That is uncertain; that distrusts or hesitates; having doubts.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Pyrrhonic",
+        "agnostic",
+        "ambiguous",
+        "capricious",
+        "chancy",
+        "changeable",
+        "dicey",
+        "distrustful",
+        "doubtful",
+        "dubious",
+        "equivocal",
+        "erratic",
+        "fickle",
+        "from Missouri",
+        "hesitant",
+        "hesitating",
+        "in doubt",
+        "incalculable",
+        "indecisive",
+        "indemonstrable",
+        "irresolute",
+        "leery",
+        "mistrustful",
+        "mistrusting",
+        "polysemous",
+        "questioning",
+        "scrupulous",
+        "shy",
+        "skeptical",
+        "suspecting",
+        "suspicious",
+        "touch-and-go",
+        "unaccountable",
+        "uncertain",
+        "unconfirmable",
+        "unconvinced",
+        "undivinable",
+        "unforeseeable",
+        "unpersuaded",
+        "unpredictable",
+        "unprovable",
+        "unsure",
+        "untrusting",
+        "unverifiable",
+        "variable",
+        "wary",
+        "wavering",
+        "whimsical"
+      ]
+    },
+    "doubtless": {
+      "word": "DOUBTLESS",
+      "definitions": [
+        {
+          "text": "Free from fear or suspicion. [Obs.] Pretty child, sleep doubtless and secure. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Undoubtedly; without doubt.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "absolutely",
+        "admittedly",
+        "assumably",
+        "assured",
+        "believing",
+        "beyond doubt",
+        "beyond question",
+        "by all odds",
+        "certain",
+        "certainly",
+        "confident",
+        "convinced",
+        "definitely",
+        "devout",
+        "dogmatic",
+        "dollars to doughnuts",
+        "doubtlessly",
+        "faithful",
+        "fideistic",
+        "for certain",
+        "for sure",
+        "impressed with",
+        "in all likelihood",
+        "in all probability",
+        "incontestably",
+        "indisputably",
+        "indubious",
+        "indubitably",
+        "irrefragably",
+        "irrefutably",
+        "like enough",
+        "likely",
+        "make no mistake",
+        "most likely",
+        "naturally",
+        "no doubt",
+        "out of question",
+        "past dispute",
+        "persuaded",
+        "pietistic",
+        "pious",
+        "pistic",
+        "positive",
+        "positively",
+        "presumably",
+        "presumptively",
+        "probably",
+        "questionless",
+        "satisfied",
+        "secure",
+        "sold on",
+        "supposedly",
+        "sure",
+        "surely",
+        "ten to one",
+        "truly",
+        "unchallenged",
+        "uncontested",
+        "uncontradicted",
+        "uncontroversial",
+        "uncontroverted",
+        "undeniably",
+        "under the impression",
+        "undisputed",
+        "undoubted",
+        "undoubtedly",
+        "undoubtful",
+        "undoubting",
+        "unequivocally",
+        "unquestionably",
+        "unquestioned",
+        "very like",
+        "very likely",
+        "without doubt"
+      ]
+    },
+    "doubtlessly": {
+      "word": "DOUBTLESSLY",
+      "definitions": [
+        {
+          "text": "Unquestionably. Beau. & Fl.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "absolutely",
+        "admittedly",
+        "beyond doubt",
+        "beyond question",
+        "by all odds",
+        "definitely",
+        "dollars to doughnuts",
+        "doubtless",
+        "easily",
+        "in all likelihood",
+        "in all probability",
+        "incontestably",
+        "indeed",
+        "indisputably",
+        "indubitably",
+        "irrefragably",
+        "irrefutably",
+        "like enough",
+        "likely",
+        "most likely",
+        "no doubt",
+        "out of question",
+        "positively",
+        "presumably",
+        "presumptively",
+        "probably",
+        "really",
+        "ten to one",
+        "truly",
+        "undeniably",
+        "undoubtedly",
+        "unequivocally",
+        "unquestionably",
+        "very like",
+        "very likely",
+        "without doubt"
+      ]
+    },
+    "doubtous": {
+      "word": "DOUBTOUS",
+      "definitions": [
+        {
+          "text": "Doubtful. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douc": {
+      "word": "DOUC",
+      "definitions": [
+        {
+          "text": "A monkey (Semnopithecus nemæus), remarkable for its varied and brilliant colors. It is a native of Cochin China.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douce": {
+      "word": "DOUCE",
+      "definitions": [
+        {
+          "text": "Sweet; pleasant. [Obs.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Sober; prudent; sedate; modest. [Scot.] And this is a douce, honest man. Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doucepere": {
+      "word": "DOUCEPERE",
+      "definitions": [
+        {
+          "text": "One of the twelve peers of France, companions of Charlemagne in war. [Written also douzepere.] [Obs.] Big-looking like a doughty doucepere. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doucet": {
+      "word": "DOUCET; DOWSET",
+      "definitions": [
+        {
+          "text": "A custard. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A dowcet, or deep's testicle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douceur": {
+      "word": "DOUCEUR",
+      "definitions": [
+        {
+          "text": "Gentleness and sweetness of manner; agreeableness. Chesterfield.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A gift for service done or to be done; an honorarium; a present; sometimes, a bribe. Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douche": {
+      "word": "DOUCHE",
+      "definitions": [
+        {
+          "text": "A jet or current of water or vapor directed upon some part of the body to benefit it medicinally; a douche bath.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A syringe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Finnish bath",
+        "Japanese bath",
+        "Russian bath",
+        "Swedish bath",
+        "Turkish bath",
+        "ablution",
+        "aerosol",
+        "asperge",
+        "aspergil",
+        "aspergillum",
+        "atomizer",
+        "baptize",
+        "bath",
+        "bathe",
+        "bedew",
+        "bespatter",
+        "besprinkle",
+        "brew",
+        "cleaning out",
+        "clyster",
+        "cold shower",
+        "concentrate sprayer",
+        "dabble",
+        "damp",
+        "dampen",
+        "dash",
+        "dew",
+        "douching",
+        "drench",
+        "drouk",
+        "elution",
+        "elutriation",
+        "enema",
+        "flush",
+        "flush out",
+        "flushing",
+        "flushing out",
+        "fountain syringe",
+        "gargle",
+        "hip bath",
+        "holystone",
+        "hose",
+        "hose down",
+        "humect",
+        "humectate",
+        "humidify",
+        "hummum",
+        "imbrue",
+        "imbue",
+        "impregnate",
+        "infiltrate",
+        "infuse",
+        "inject",
+        "irrigate",
+        "irrigation",
+        "lather",
+        "lathering",
+        "launder",
+        "lavabo",
+        "lavage",
+        "lavation",
+        "lave",
+        "laving",
+        "leach",
+        "lixiviate",
+        "macerate",
+        "mist concentrate sprayer",
+        "moisten",
+        "mop",
+        "mop up",
+        "mopping",
+        "mopping up",
+        "needle bath",
+        "nozzle",
+        "paddle",
+        "percolate",
+        "permeate",
+        "plunge bath",
+        "rinse",
+        "rinse out",
+        "rinsing",
+        "ritually immerse",
+        "saturate",
+        "sauna",
+        "sauna bath",
+        "scour",
+        "scouring",
+        "scrub",
+        "scrub up",
+        "scrubbing",
+        "scrubbing up",
+        "seethe",
+        "shampoo",
+        "shower",
+        "shower bath",
+        "shower head",
+        "sitz bath",
+        "slobber",
+        "slop",
+        "slosh",
+        "sluice",
+        "sluice out",
+        "soak",
+        "soap",
+        "soaping",
+        "sodden",
+        "sop",
+        "souse",
+        "sparge",
+        "sparger",
+        "spatter",
+        "splash",
+        "splatter",
+        "sponge",
+        "sponge bath",
+        "sponging",
+        "spray",
+        "spray can",
+        "sprayer",
+        "sprinkle",
+        "sprinkler",
+        "sprinkler head",
+        "sprinkling system",
+        "steep",
+        "swab",
+        "swabbing",
+        "swash",
+        "sweat bath",
+        "syringe",
+        "toivel",
+        "tub",
+        "wash",
+        "wash out",
+        "wash up",
+        "washing",
+        "washing up",
+        "washout",
+        "washup",
+        "water",
+        "watercart",
+        "watering can",
+        "watering pot",
+        "waterlog",
+        "wet",
+        "wet down",
+        "whirlpool bath",
+        "wiping up"
+      ]
+    },
+    "doucine": {
+      "word": "DOUCINE",
+      "definitions": [
+        {
+          "text": "Same as Cyma, under Cyma.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doucker": {
+      "word": "DOUCKER",
+      "definitions": [
+        {
+          "text": "A grebe or diver; -- applied also to the golden-eye, pochard, scoter, and other ducks. [Written also ducker.] [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dough": {
+      "word": "DOUGH",
+      "definitions": [
+        {
+          "text": "Paste of bread; a soft mass of moistened flour or meal, kneaded or unkneaded, but not yet baked; as, to knead dough.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything of the consistency of such paste. To have one's cake dough. See under Cake.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "albumen",
+        "batter",
+        "blubber",
+        "blunt",
+        "bonnyclabber",
+        "boodle",
+        "brass",
+        "bread",
+        "breeze",
+        "bucks",
+        "butter",
+        "cabbage",
+        "cash",
+        "chips",
+        "clabber",
+        "clay",
+        "coin",
+        "cornstarch",
+        "cream",
+        "curd",
+        "currency",
+        "cushion",
+        "dinero",
+        "down",
+        "egg white",
+        "eiderdown",
+        "feather bed",
+        "feathers",
+        "fleece",
+        "floss",
+        "flue",
+        "fluff",
+        "foam",
+        "gaum",
+        "gel",
+        "gelatin",
+        "gelt",
+        "gilt",
+        "glair",
+        "glop",
+        "glue",
+        "gluten",
+        "goo",
+        "gook",
+        "goop",
+        "grease",
+        "green",
+        "green stuff",
+        "greenbacks",
+        "gruel",
+        "gumbo",
+        "gunk",
+        "jack",
+        "jam",
+        "jell",
+        "jelly",
+        "kale",
+        "kapok",
+        "legal tender",
+        "loblolly",
+        "mazuma",
+        "molasses",
+        "moolah",
+        "mopus",
+        "mucilage",
+        "mucus",
+        "oil of palms",
+        "ointment",
+        "oof",
+        "ooftish",
+        "pap",
+        "paste",
+        "pillow",
+        "plush",
+        "porridge",
+        "pudding",
+        "puff",
+        "pulp",
+        "puree",
+        "putty",
+        "rhino",
+        "rob",
+        "rocks",
+        "rubber",
+        "satin",
+        "scratch",
+        "semifluid",
+        "semiliquid",
+        "shekels",
+        "silk",
+        "simoleons",
+        "size",
+        "soup",
+        "spondulics",
+        "starch",
+        "sticky mess",
+        "sugar",
+        "swansdown",
+        "syrup",
+        "the needful",
+        "thistledown",
+        "tin",
+        "treacle",
+        "velvet",
+        "wampum",
+        "wax",
+        "wool",
+        "zephyr"
+      ]
+    },
+    "doughbaked": {
+      "word": "DOUGH-BAKED",
+      "definitions": [
+        {
+          "text": "Imperfectly baked; hence, not brought to perfection; unfinished; also, of weak or dull understanding. [Colloq.] Halliwell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughbird": {
+      "word": "DOUGHBIRD",
+      "definitions": [
+        {
+          "text": "The Eskimo curlew (Numenius borealis). See Curlew.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughface": {
+      "word": "DOUGHFACE",
+      "definitions": [
+        {
+          "text": "A contemptuous nickname for a timid, yielding politician, or one who is easily molded. [Political cant, U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughfaced": {
+      "word": "DOUGH-FACED",
+      "definitions": [
+        {
+          "text": "Easily molded; pliable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughfaceism": {
+      "word": "DOUGHFACEISM",
+      "definitions": [
+        {
+          "text": "The character of a doughface; truckling pliability.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughiness": {
+      "word": "DOUGHINESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being doughy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughkneaded": {
+      "word": "DOUGH-KNEADED",
+      "definitions": [
+        {
+          "text": "Like dough; soft. He demeans himself . . . like a dough-kneaded thing. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughnut": {
+      "word": "DOUGHNUT",
+      "definitions": [
+        {
+          "text": "A small cake (usually sweetened) fried in a kettle of boiling lard.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughtily": {
+      "word": "DOUGHTILY",
+      "definitions": [
+        {
+          "text": "In a doughty manner.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughtiness": {
+      "word": "DOUGHTINESS",
+      "definitions": [
+        {
+          "text": "The quality of being doughty; valor; bravery.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughtren": {
+      "word": "DOUGHTREN",
+      "definitions": [
+        {
+          "text": "Daughters. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughty": {
+      "word": "DOUGHTY",
+      "definitions": [
+        {
+          "text": "Able; strong; valiant; redoubtable; as, a doughty hero. Sir Thopas wex [grew] a doughty swain. Chaucer. Doughty families, hugging old musty quarrels to their hearts, buffet each other from generation to generation. Motley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doughy": {
+      "word": "DOUGHY",
+      "definitions": [
+        {
+          "text": "Like dough; soft and heavy; pasty; crude; flabby and pale; as, a doughy complexion.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adhesive",
+        "amylaceous",
+        "ashen",
+        "ashy",
+        "baccate",
+        "blanched",
+        "clabbered",
+        "clammy",
+        "clayey",
+        "clotted",
+        "coagulated",
+        "colorless",
+        "curdled",
+        "flabby",
+        "fleshy",
+        "gaumy",
+        "gelatinous",
+        "glairy",
+        "gluelike",
+        "gluey",
+        "glutenous",
+        "glutinose",
+        "glutinous",
+        "gooey",
+        "grumous",
+        "gumbo",
+        "gumbolike",
+        "gumlike",
+        "gummous",
+        "gummy",
+        "heavy",
+        "inspissated",
+        "jelled",
+        "jellied",
+        "jellylike",
+        "livid",
+        "loamy",
+        "lurid",
+        "macerated",
+        "masticated",
+        "mucilaginous",
+        "mushy",
+        "pallid",
+        "pasty",
+        "pithy",
+        "pulpal",
+        "pulpar",
+        "pulped",
+        "pulplike",
+        "pulpy",
+        "ropy",
+        "slabby",
+        "slimy",
+        "slithery",
+        "soft",
+        "spongy",
+        "squashy",
+        "squelchy",
+        "squishy",
+        "starchy",
+        "sticky",
+        "stodgy",
+        "stringy",
+        "succulent",
+        "syrupy",
+        "tacky",
+        "tenacious",
+        "thick",
+        "thickened",
+        "tough",
+        "tremelloid",
+        "tremellose",
+        "viscid",
+        "viscose",
+        "viscous",
+        "waxen"
+      ]
+    },
+    "doulocracy": {
+      "word": "DOULOCRACY",
+      "definitions": [
+        {
+          "text": "A government by slaves. [Written also dulocracy.] Hare.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doumpalm": {
+      "word": "DOUM PALM",
+      "definitions": [
+        {
+          "text": "See Doom palm.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "doupe": {
+      "word": "DOUPE",
+      "definitions": [
+        {
+          "text": "The carrion crow. [Written also dob.] [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dour": {
+      "word": "DOUR",
+      "definitions": [
+        {
+          "text": "Hard; inflexible; obstinate; sour in aspect; hardy; bold. [Scot.] A dour wife, a sour old carlin. C. Reade.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Spartan",
+        "Spartanic",
+        "adamant",
+        "adamantine",
+        "astringent",
+        "austere",
+        "authoritarian",
+        "beetle-browed",
+        "black",
+        "black-browed",
+        "bleak",
+        "cast-iron",
+        "cheerless",
+        "cold",
+        "crabbed",
+        "dark",
+        "dejected",
+        "demanding",
+        "dismal",
+        "dreary",
+        "dumpish",
+        "exacting",
+        "exigent",
+        "firm",
+        "flinty",
+        "forbidding",
+        "frowning",
+        "fundamentalist",
+        "gloomy",
+        "glowering",
+        "glum",
+        "grim",
+        "grum",
+        "hard",
+        "hard-core",
+        "hard-nosed",
+        "hardy",
+        "harsh",
+        "hidebound",
+        "immovable",
+        "immutable",
+        "implacable",
+        "impliable",
+        "inclement",
+        "inelastic",
+        "inexorable",
+        "inflexible",
+        "intransigent",
+        "iron",
+        "ironbound",
+        "ironclad",
+        "ironhanded",
+        "irreconcilable",
+        "lowering",
+        "melancholy",
+        "meticulous",
+        "moodish",
+        "moody",
+        "mopey",
+        "moping",
+        "mopish",
+        "morose",
+        "mumpish",
+        "muscle-bound",
+        "obdurate",
+        "obstinate",
+        "orthodox",
+        "procrustean",
+        "purist",
+        "puristic",
+        "puritan",
+        "puritanic",
+        "relentless",
+        "rigid",
+        "rigorist",
+        "rigoristic",
+        "rigorous",
+        "rock-ribbed",
+        "rockbound",
+        "rough",
+        "rugged",
+        "saturnine",
+        "scowling",
+        "severe",
+        "sour",
+        "steely",
+        "stern",
+        "stiff",
+        "straightlaced",
+        "straitlaced",
+        "strict",
+        "stringent",
+        "stubborn",
+        "sulky",
+        "sullen",
+        "surly",
+        "tough",
+        "ugly",
+        "unaffected",
+        "unalterable",
+        "unbending",
+        "unchangeable",
+        "uncompromising",
+        "unfriendly",
+        "ungentle",
+        "ungiving",
+        "unmoved",
+        "unrelenting",
+        "unsparing",
+        "unyielding"
+      ]
+    },
+    "doura": {
+      "word": "DOURA",
+      "definitions": [
+        {
+          "text": "A kind of millet. See Durra.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douroucouli": {
+      "word": "DOUROUCOULI",
+      "definitions": [
+        {
+          "text": "See Durukuli.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douse": {
+      "word": "DOUSE",
+      "definitions": [
+        {
+          "text": "To plunge suddenly into water; to duck; to immerse; to dowse. Bp. Stillingfleet.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To strike or lower in haste; to slacken suddenly; as, douse the topsail.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fall suddenly into water. Hudibras.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put out; to extinguish. [Slang] \" To douse the glim.\" Sir W. Scott.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "bang",
+        "baptize",
+        "bash",
+        "bat",
+        "belt",
+        "blow out",
+        "bop",
+        "bury",
+        "cast off",
+        "choke",
+        "crack",
+        "damp",
+        "deluge",
+        "dip",
+        "doff",
+        "drench",
+        "drop",
+        "drown",
+        "duck",
+        "dunk",
+        "engulf",
+        "extinguish",
+        "immerge",
+        "immerse",
+        "inundate",
+        "merge",
+        "out",
+        "overwhelm",
+        "plash",
+        "plunge in water",
+        "put off",
+        "put out",
+        "quench",
+        "remove",
+        "sink",
+        "slack",
+        "slam",
+        "slip out of",
+        "slop",
+        "slosh",
+        "smack",
+        "smash",
+        "smother",
+        "snuff",
+        "snuff out",
+        "soak",
+        "sop",
+        "souse",
+        "spatter",
+        "splatter",
+        "splosh",
+        "splurge",
+        "spurtle",
+        "stamp out",
+        "step out of",
+        "stifle",
+        "submerge",
+        "submerse",
+        "swash",
+        "take off",
+        "throw off",
+        "undo",
+        "unwrap",
+        "wet",
+        "whelm"
+      ]
+    },
+    "dousingchock": {
+      "word": "DOUSING-CHOCK",
+      "definitions": [
+        {
+          "text": "One of several pieces fayed across the apron and lapped in the knightheads, or inside planking above the upper deck. Ham. Nav. Encyc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dout": {
+      "word": "DOUT",
+      "definitions": [
+        {
+          "text": "To put out. [Obs.] \"It douts the light.\" Sylvester.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "douter": {
+      "word": "DOUTER",
+      "definitions": [
+        {
+          "text": "An extinguisher for candles. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

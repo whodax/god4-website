@@ -21,22 +21,32 @@
       ],
       "relatedWords": []
     },
+    "semaphoric": {
+      "word": "SEMAPHORIC; SEMAPHORICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a semaphore, or semaphores; telegraphic.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "semaphorical": {
+      "word": "SEMAPHORIC; SEMAPHORICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a semaphore, or semaphores; telegraphic.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "semaphorically": {
       "word": "SEMAPHORICALLY",
       "definitions": [
         {
           "text": "By means a semaphore.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "semaphoricsemaphorical": {
-      "word": "SEMAPHORIC; SEMAPHORICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to a semaphore, or semaphores; telegraphic.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -55,7 +65,7 @@
       "word": "SEMASIOLOGY",
       "definitions": [
         {
-          "text": "The science of meanings or sense development (of words); the",
+          "text": "The science of meanings or sense development (of words); the explanation of the development and changes of the meanings of words.",
           "partOfSpeech": "noun"
         }
       ],
@@ -203,7 +213,7 @@
       ],
       "relatedWords": []
     },
-    "semeiographysemiography": {
+    "semeiography": {
       "word": "SEMEIOGRAPHY; SEMIOGRAPHY",
       "definitions": [
         {
@@ -213,7 +223,7 @@
       ],
       "relatedWords": []
     },
-    "semeiologicalsemiologioal": {
+    "semeiological": {
       "word": "SEMEIOLOGICAL; SEMIOLOGIOAL",
       "definitions": [
         {
@@ -223,7 +233,7 @@
       ],
       "relatedWords": []
     },
-    "semeiologysemiology": {
+    "semeiology": {
       "word": "SEMEIOLOGY; SEMIOLOGY",
       "definitions": [
         {
@@ -233,7 +243,7 @@
       ],
       "relatedWords": []
     },
-    "semeioticsemiotic": {
+    "semeiotic": {
       "word": "SEMEIOTIC; SEMIOTIC",
       "definitions": [
         {
@@ -251,7 +261,7 @@
       ],
       "relatedWords": []
     },
-    "semeioticssemiotics": {
+    "semeiotics": {
       "word": "SEMEIOTICS; SEMIOTICS",
       "definitions": [
         {
@@ -531,6 +541,16 @@
       ],
       "relatedWords": []
     },
+    "semicastrate": {
+      "word": "SEMICASTRATE",
+      "definitions": [
+        {
+          "text": "To deprive of one testicle.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "semicentennial": {
       "word": "SEMICENTENNIAL",
       "definitions": [
@@ -719,7 +739,7 @@
       ],
       "relatedWords": []
     },
-    "semicubiumsemicupium": {
+    "semicubium": {
       "word": "SEMICUBIUM; SEMICUPIUM",
       "definitions": [
         {
@@ -729,7 +749,27 @@
       ],
       "relatedWords": []
     },
-    "semicylindricsemicylyndrical": {
+    "semicupium": {
+      "word": "SEMICUBIUM; SEMICUPIUM",
+      "definitions": [
+        {
+          "text": "A half bath, or one that covers only the lewer extremities and the hips; a sitz-bath; a half bath, or hip bath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "semicylindric": {
+      "word": "SEMICYLINDRIC; SEMICYLYNDRICAL",
+      "definitions": [
+        {
+          "text": "Half cylindrical.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "semicylyndrical": {
       "word": "SEMICYLINDRIC; SEMICYLYNDRICAL",
       "definitions": [
         {
@@ -876,6 +916,10 @@
     "semidouble": {
       "word": "SEMIDOUBLE",
       "definitions": [
+        {
+          "text": "An office or feast celebrated with less solemnity than the double ones. See Double, n., 8.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Having the outermost stamens converted into petals, while the inner ones remain perfect; -- said of a flower.",
           "partOfSpeech": "adjective"
@@ -1101,6 +1145,10 @@
       "word": "SEMILUNAR",
       "definitions": [
         {
+          "text": "Shaped like a half moon. Semilunar bone (Anat.), a bone of the carpus; the lunar. See Lunar, n. beginning of the aorta and of the pulmonary artery which prevent the blood from flowing back into the ventricle.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "The semilunar bone.",
           "partOfSpeech": "noun"
         }
@@ -1227,7 +1275,17 @@
       ],
       "relatedWords": []
     },
-    "seminarianseminarist": {
+    "seminarian": {
+      "word": "SEMINARIAN; SEMINARIST",
+      "definitions": [
+        {
+          "text": "A member of, or one educated in, a seminary; specifically, an ecclesiastic educated for the priesthood in a seminary.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seminarist": {
       "word": "SEMINARIAN; SEMINARIST",
       "definitions": [
         {
@@ -1319,22 +1377,32 @@
       ],
       "relatedWords": []
     },
+    "seminific": {
+      "word": "SEMINIFIC; SEMINIFICAL",
+      "definitions": [
+        {
+          "text": "Forming or producing seed, or the male generative product of animals or of plants.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seminifical": {
+      "word": "SEMINIFIC; SEMINIFICAL",
+      "definitions": [
+        {
+          "text": "Forming or producing seed, or the male generative product of animals or of plants.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "seminification": {
       "word": "SEMINIFICATION",
       "definitions": [
         {
           "text": "Propagation from seed. [R.] Sir M. Hale.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "seminificseminifical": {
-      "word": "SEMINIFIC; SEMINIFICAL",
-      "definitions": [
-        {
-          "text": "Forming or producing seed, or the male generative product of animals or of plants.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1403,15 +1471,53 @@
       "word": "SEMIOFFICIAL",
       "definitions": [
         {
-          "text": "Half official; having some official authority or importance;",
+          "text": "Half official; having some official authority or importance; as, a semiofficial statement.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "semiographysemiologysemiological": {
+    "semiography": {
+      "word": "SEMEIOGRAPHY; SEMIOGRAPHY",
+      "definitions": [
+        {
+          "text": "A description of the signs of disease.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Semeiography, Semeiology, Semeiological.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "semiological": {
       "word": "SEMIOGRAPHY; SEMIOLOGY; SEMIOLOGICAL",
       "definitions": [
+        {
+          "text": "Same as Semeiography, Semeiology, Semeiological.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "semiologioal": {
+      "word": "SEMEIOLOGICAL; SEMIOLOGIOAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the science of signs, or the systematic use of signs; as, a semeiological classification of the signs or symptoms of disease; a semeiological arrangement of signs used as signals.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "semiology": {
+      "word": "SEMEIOLOGY; SEMIOLOGY",
+      "definitions": [
+        {
+          "text": "The science or art of signs. Specifically: (a) (Med.) The science of the signs or symptoms of disease; symptomatology. (b) The art of using signs in signaling.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Semeiography, Semeiology, Semeiological.",
           "partOfSpeech": ""
@@ -1460,8 +1566,20 @@
       "relatedWords": []
     },
     "semiotic": {
-      "word": "SEMIOTIC",
+      "word": "SEMEIOTIC; SEMIOTIC",
       "definitions": [
+        {
+          "text": "Relating to signs or indications; pertaining to the language of signs, or to language generally as indicating thought.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the signs or symptoms of diseases.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Same as Semeiotic.",
           "partOfSpeech": "adjective"
@@ -1470,8 +1588,12 @@
       "relatedWords": []
     },
     "semiotics": {
-      "word": "SEMIOTICS",
+      "word": "SEMEIOTICS; SEMIOTICS",
       "definitions": [
+        {
+          "text": "Semeiology.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Semeiotics.",
           "partOfSpeech": "noun"
@@ -1519,7 +1641,17 @@
       ],
       "relatedWords": []
     },
-    "semipalmatesemipalmated": {
+    "semipalmate": {
+      "word": "SEMIPALMATE; SEMIPALMATED",
+      "definitions": [
+        {
+          "text": "Having the anterior toes joined only part way down with a web; half-webbed; as, a semipalmate bird or foot. See Illust. k under Aves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "semipalmated": {
       "word": "SEMIPALMATE; SEMIPALMATED",
       "definitions": [
         {
@@ -1683,7 +1815,17 @@
       ],
       "relatedWords": []
     },
-    "semiquadratesemiquartile": {
+    "semiquadrate": {
+      "word": "SEMIQUADRATE; SEMIQUARTILE",
+      "definitions": [
+        {
+          "text": "An aspect of the planets when distant from each other the half of a quadrant, or forty-five degrees, or one sign and a half. Hutton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "semiquartile": {
       "word": "SEMIQUADRATE; SEMIQUARTILE",
       "definitions": [
         {
@@ -1807,7 +1949,17 @@
       ],
       "relatedWords": []
     },
-    "semisphericsemispherical": {
+    "semispheric": {
+      "word": "SEMISPHERIC; SEMISPHERICAL",
+      "definitions": [
+        {
+          "text": "Having the figure of a half sphere. Kirwan.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "semispherical": {
       "word": "SEMISPHERIC; SEMISPHERICAL",
       "definitions": [
         {
@@ -1926,6 +2078,16 @@
       "definitions": [
         {
           "text": "Of or pertaining to a semitone; consisting of a semitone, or of semitones.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "semitontine": {
+      "word": "SEMITONTINE",
+      "definitions": [
+        {
+          "text": "Lit., half-tontine; -- used to designate a form of tontine life insurance. See Tontine insurance. --Sem`i*ton*tine\", n.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2079,32 +2241,6 @@
         {
           "text": "Same as Semolina.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "semonsesemoncefsemoncesemondretosummonofppsemons": {
-      "word": "semonse, semonce, F. semonce, semondre to summon, OF. p.p. semons.",
-      "definitions": [
-        {
-          "text": "The act of summoning; a call by authority, or by the command of a superior, to appear at a place named, or to attend to some duty. Special summonses by the king. Hallam. This summons . . . unfit either to dispute or disobey. Bp. Fell. He sent to summon the seditious, and to offer pardon; but neither summons nor pardon was regarded. Sir J. Hayward.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A warning or citation to appear in court; a written notification signed by the proper officer, to be served on a person, warning him to appear in court at a day specified, to answer to the plaintiff, testify as a witness, or the like.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Mil.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A demand to surrender.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

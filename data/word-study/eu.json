@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "europeanconcert": {
+      "word": "CONCERT OF EUROPE; EUROPEAN CONCERT",
+      "definitions": [
+        {
+          "text": "An agreement or understanding between the chief European powers to take only joint action in the (European) Eastern Question.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "eu": {
       "word": "EU",
       "definitions": [
@@ -109,7 +119,21 @@
         "wafer"
       ]
     },
-    "eucharisticeucharistical": {
+    "eucharistic": {
+      "word": "EUCHARISTIC; EUCHARISTICAL",
+      "definitions": [
+        {
+          "text": "Giving thanks; expressing thankfulness; rejoicing. [Obs.] The eucharistical part of our daily devotions. Ray.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the Lord's Supper. \"The eucharistic sacrament.\" Sir. G. C. Lewis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eucharistical": {
       "word": "EUCHARISTIC; EUCHARISTICAL",
       "definitions": [
         {
@@ -153,7 +177,17 @@
       ],
       "relatedWords": []
     },
-    "euchologioneuchology": {
+    "euchologion": {
+      "word": "EUCHOLOGION; EUCHOLOGY",
+      "definitions": [
+        {
+          "text": "A formulary of prayers; the book of offices in the Greek Church, containing the liturgy, sacraments, and forms of prayers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "euchology": {
       "word": "EUCHOLOGION; EUCHOLOGY",
       "definitions": [
         {
@@ -340,7 +374,7 @@
       ],
       "relatedWords": []
     },
-    "eudemoneudaemon": {
+    "eudemon": {
       "word": "EUDEMON; EUDAEMON",
       "definitions": [
         {
@@ -350,7 +384,17 @@
       ],
       "relatedWords": []
     },
-    "eudemonicseudaemonics": {
+    "eudaemon": {
+      "word": "EUDEMON; EUDAEMON",
+      "definitions": [
+        {
+          "text": "A good angel. Southey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eudemonics": {
       "word": "EUDEMONICS; EUDAEMONICS",
       "definitions": [
         {
@@ -360,7 +404,17 @@
       ],
       "relatedWords": []
     },
-    "eudemonismeudaemonism": {
+    "eudaemonics": {
+      "word": "EUDEMONICS; EUDAEMONICS",
+      "definitions": [
+        {
+          "text": "That part of moral philosophy which treats of happiness; the science of happiness; -- contrasted with aretaics. J. Grote.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eudemonism": {
       "word": "EUDEMONISM; EUDAEMONISM",
       "definitions": [
         {
@@ -370,7 +424,17 @@
       ],
       "relatedWords": []
     },
-    "eudemonisteudaemonist": {
+    "eudaemonism": {
+      "word": "EUDEMONISM; EUDAEMONISM",
+      "definitions": [
+        {
+          "text": "That system of ethics which defines and enforces moral obligation by its relation to happiness or personal well-being.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eudemonist": {
       "word": "EUDEMONIST; EUDAEMONIST",
       "definitions": [
         {
@@ -380,7 +444,17 @@
       ],
       "relatedWords": []
     },
-    "eudemonisticeudaemonistic": {
+    "eudaemonist": {
+      "word": "EUDEMONIST; EUDAEMONIST",
+      "definitions": [
+        {
+          "text": "One who believes in eudemonism. I am too much of a eudæmonist; I hanker too much after a state of happiness both for myself and others. De Quincey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eudemonistic": {
       "word": "EUDEMONISTIC; EUDAEMONISTIC",
       "definitions": [
         {
@@ -390,7 +464,27 @@
       ],
       "relatedWords": []
     },
-    "eudemonisticaleudaemonistical": {
+    "eudaemonistic": {
+      "word": "EUDEMONISTIC; EUDAEMONISTIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to eudemonism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eudemonistical": {
+      "word": "EUDEMONISTICAL; EUDAEMONISTICAL",
+      "definitions": [
+        {
+          "text": "Eudemonistic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eudaemonistical": {
       "word": "EUDEMONISTICAL; EUDAEMONISTICAL",
       "definitions": [
         {
@@ -420,7 +514,17 @@
       ],
       "relatedWords": []
     },
-    "eudiometriceudiometrical": {
+    "eudiometric": {
+      "word": "EUDIOMETRIC; EUDIOMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a eudiometer; as, eudiometrical experiments or results.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eudiometrical": {
       "word": "EUDIOMETRIC; EUDIOMETRICAL",
       "definitions": [
         {
@@ -628,7 +732,17 @@
       ],
       "relatedWords": []
     },
-    "eugeticeugetinic": {
+    "eugetic": {
+      "word": "EUGETIC; EUGETINIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or derived from, eugenol; as, eugetic acid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eugetinic": {
       "word": "EUGETIC; EUGETINIC",
       "definitions": [
         {
@@ -648,7 +762,17 @@
       ],
       "relatedWords": []
     },
-    "eugubianeugubine": {
+    "eugubian": {
+      "word": "EUGUBIAN; EUGUBINE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the ancient town of Eugubium (now Gubbio); as, the Eugubine tablets, or tables, or inscriptions.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eugubine": {
       "word": "EUGUBIAN; EUGUBINE",
       "definitions": [
         {
@@ -738,7 +862,17 @@
       ],
       "relatedWords": []
     },
-    "eulogiceulogical": {
+    "eulogic": {
+      "word": "EULOGIC; EULOGICAL",
+      "definitions": [
+        {
+          "text": "Bestowing praise of eulogy; commendatory; eulogistic. [R.] -- Eu*log\"ic*al*ly, adv. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eulogical": {
       "word": "EULOGIC; EULOGICAL",
       "definitions": [
         {
@@ -758,11 +892,21 @@
       ],
       "relatedWords": []
     },
-    "eulogisticeulogistical": {
+    "eulogistic": {
       "word": "EULOGISTIC; EULOGISTICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to eulogy; characterized by eulogy; bestowing praise; panegyrical; commendatory; laudatory; as, eulogistic speech",
+          "text": "Of or pertaining to eulogy; characterized by eulogy; bestowing praise; panegyrical; commendatory; laudatory; as, eulogistic speech or discourse.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eulogistical": {
+      "word": "EULOGISTIC; EULOGISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to eulogy; characterized by eulogy; bestowing praise; panegyrical; commendatory; laudatory; as, eulogistic speech or discourse.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1014,11 +1158,15 @@
         {
           "text": "A male of the human species castrated; commonly, one of a class of such persons, in Oriental countries, having charge of the women's apartments. Some of them, in former times, gained high official rank.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make a eunuch of; to castrate. as a man. Creech. Sir. T. Browne.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "eunucheunuchate": {
+    "eunuchate": {
       "word": "EUNUCH; EUNUCHATE",
       "definitions": [
         {
@@ -1088,7 +1236,17 @@
       ],
       "relatedWords": []
     },
-    "eupatorineupatorine": {
+    "eupatorin": {
+      "word": "EUPATORIN; EUPATORINE",
+      "definitions": [
+        {
+          "text": "A principle or mixture of principles extracted from various species of Eupatorium.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eupatorine": {
       "word": "EUPATORIN; EUPATORINE",
       "definitions": [
         {
@@ -1118,7 +1276,17 @@
       ],
       "relatedWords": []
     },
-    "eupepsiaeupepsy": {
+    "eupepsia": {
+      "word": "EUPEPSIA; EUPEPSY",
+      "definitions": [
+        {
+          "text": "Soundness of the nutritive or digestive organs; good concoction or digestion; -- opposed to dyspepsia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eupepsy": {
       "word": "EUPEPSIA; EUPEPSY",
       "definitions": [
         {
@@ -1274,11 +1442,41 @@
         "vague"
       ]
     },
-    "euphemisticeuphemistical": {
+    "euphemistic": {
       "word": "EUPHEMISTIC; EUPHEMISTICAL",
       "definitions": [
         {
-          "text": "Pertaining to euphemism; containing a euphemism; softened in",
+          "text": "Pertaining to euphemism; containing a euphemism; softened in expression.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "elegant",
+        "euphuistic",
+        "exquisite",
+        "formalistic",
+        "goody good-good",
+        "goody-goody",
+        "mincing",
+        "namby-pamby",
+        "overnice",
+        "overprecise",
+        "overrefined",
+        "pedantic",
+        "precieuse",
+        "precious",
+        "precisian",
+        "precisianistic",
+        "precisionistic",
+        "puristic",
+        "simpering"
+      ]
+    },
+    "euphemistical": {
+      "word": "EUPHEMISTIC; EUPHEMISTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to euphemism; containing a euphemism; softened in expression.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1304,7 +1502,17 @@
       ],
       "relatedWords": []
     },
-    "euphoniceuphonical": {
+    "euphonic": {
+      "word": "EUPHONIC; EUPHONICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or exhibiting, euphony; agreeable in sound; pleasing to the ear; euphonious; as, a euphonic expression; euphonical orthography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "euphonical": {
       "word": "EUPHONIC; EUPHONICAL",
       "definitions": [
         {
@@ -1323,6 +1531,74 @@
         }
       ],
       "relatedWords": []
+    },
+    "euphonious": {
+      "word": "EUPHONIOUS",
+      "definitions": [
+        {
+          "text": "Pleasing or sweet in sound; euphonic; smooth-sounding. Hallam.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "achingly sweet",
+        "agreeable",
+        "agreeable-sounding",
+        "appealing",
+        "ariose",
+        "arioso",
+        "balanced",
+        "canorous",
+        "cantabile",
+        "catchy",
+        "concinnate",
+        "concinnous",
+        "dulcet",
+        "euphonic",
+        "euphonical",
+        "euphonous",
+        "fine-toned",
+        "flowing",
+        "fluent",
+        "golden",
+        "golden-tongued",
+        "golden-voiced",
+        "harmonious",
+        "honeyed",
+        "measured",
+        "melic",
+        "mellifluent",
+        "mellifluous",
+        "mellisonant",
+        "mellow",
+        "melodic",
+        "melodious",
+        "music-flowing",
+        "music-like",
+        "musical",
+        "ordered",
+        "orderly",
+        "pleasant",
+        "pleasant-sounding",
+        "rich",
+        "silver-toned",
+        "silver-tongued",
+        "silver-voiced",
+        "silvery",
+        "singable",
+        "smooth",
+        "smooth-sounding",
+        "songful",
+        "songlike",
+        "sonorous",
+        "sweet",
+        "sweet-flowing",
+        "sweet-sounding",
+        "symmetrical",
+        "tripping",
+        "tunable",
+        "tuneful"
+      ]
     },
     "euphonism": {
       "word": "EUPHONISM",
@@ -1434,7 +1710,7 @@
       ],
       "relatedWords": []
     },
-    "euphorbiaceouseuphorbial": {
+    "euphorbiaceous": {
       "word": "EUPHORBIACEOUS; EUPHORBIAL",
       "definitions": [
         {
@@ -1444,7 +1720,27 @@
       ],
       "relatedWords": []
     },
-    "euphorbineuphorbine": {
+    "euphorbial": {
+      "word": "EUPHORBIACEOUS; EUPHORBIAL",
+      "definitions": [
+        {
+          "text": "Of, relating to, or resembling, the Euphorbia family.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "euphorbin": {
+      "word": "EUPHORBIN; EUPHORBINE",
+      "definitions": [
+        {
+          "text": "A principle, or mixture of principles, derived from various species of Euphorbia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "euphorbine": {
       "word": "EUPHORBIN; EUPHORBINE",
       "definitions": [
         {
@@ -1657,7 +1953,7 @@
       ],
       "relatedWords": []
     },
-    "eupryioneupyrion": {
+    "eupryion": {
       "word": "EUPRYION; EUPYRION",
       "definitions": [
         {
@@ -1667,7 +1963,39 @@
       ],
       "relatedWords": []
     },
-    "eurafriceurafrican": {
+    "eupyrion": {
+      "word": "EUPRYION; EUPYRION",
+      "definitions": [
+        {
+          "text": "A contrivance for obtaining a light instantaneous, as a lucifer match. Brande & C.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eurafric": {
+      "word": "EURAFRIC; EURAFRICAN",
+      "definitions": [
+        {
+          "text": "(Geog.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of, pertaining to, or designating, the continents of Europe and Africa combined.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoögeography) Pert. to or designating a region including most of Europe and northern Africa south to the Sahara.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of European and African descent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eurafrican": {
       "word": "EURAFRIC; EURAFRICAN",
       "definitions": [
         {

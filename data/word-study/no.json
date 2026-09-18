@@ -1,42 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "norderrepairpreparationdressprobakintoefitseefit": {
-      "word": "n., order, repair, preparation, dress; prob. akin to E. fit. See Fit,",
-      "definitions": [
-        {
-          "text": "1. To repair; to prepare; to put in order. [Prov. Eng.] Carlyle.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Metal.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To cover or line with a mixture of ore, cinders, etc., as the hearth of a puddling furnace.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "notethelayofaropeisrighthandedorlefthandedaccordingto": {
-      "word": "Note: The lay of a rope is right-handed or left-handed according to",
-      "definitions": [
-        {
-          "text": "A wager. \"My fortunes against any lay worth naming.\" 3. (a) A job, price, or profit. [Prov. Eng.] Wright. (b) A share of the proceeds or profits of an enterprise; as, when a man ships for a whaling voyage, he agrees for a certain lay. [U. S.]",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Textile Manuf.) (a) A measure of yarn; a les. See 1st Lea (a). (b) The lathe of a loom. See Lathe, 8.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A plan; a scheme. [Slang] Dickens. Lay figure. (a) A jointed model of the human body that may be put in any attitude; -- used for showing the disposition of drapery, etc. (b) A mere puppet; one who serves the will of others without independent volition. weaving; -- called also shuttle race.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "no": {
       "word": "NO",
       "definitions": [
@@ -263,6 +227,16 @@
       ],
       "relatedWords": []
     },
+    "nobleminded": {
+      "word": "NOBLE-MINDED",
+      "definitions": [
+        {
+          "text": "Having a noble mind; honorable; magnanimous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "nobleness": {
       "word": "NOBLENESS",
       "definitions": [
@@ -273,7 +247,21 @@
       ],
       "relatedWords": []
     },
-    "noblessnoblesse": {
+    "nobless": {
+      "word": "NOBLESS; NOBLESSE",
+      "definitions": [
+        {
+          "text": "Dignity; greatness; noble birth or condition. [Obs.] Chaucer. Spenser. B. Jonson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The nobility; persons of noble rank collectively, including males and females. Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "noblesse": {
       "word": "NOBLESS; NOBLESSE",
       "definitions": [
         {
@@ -883,7 +871,17 @@
       ],
       "relatedWords": []
     },
-    "nodosousnodous": {
+    "nodosous": {
+      "word": "NODOSOUS; NODOUS",
+      "definitions": [
+        {
+          "text": "Nodose; knotty; knotted. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nodous": {
       "word": "NODOSOUS; NODOUS",
       "definitions": [
         {
@@ -923,7 +921,17 @@
       ],
       "relatedWords": []
     },
-    "nodulosenodulous": {
+    "nodulose": {
+      "word": "NODULOSE; NODULOUS",
+      "definitions": [
+        {
+          "text": "Having small nodes or knots; diminutively nodose.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nodulous": {
       "word": "NODULOSE; NODULOUS",
       "definitions": [
         {
@@ -953,7 +961,17 @@
       ],
       "relatedWords": []
     },
-    "noematicnoematical": {
+    "noematic": {
+      "word": "NOEMATIC; NOEMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the understanding. [Obs.] Cudworth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "noematical": {
       "word": "NOEMATIC; NOEMATICAL",
       "definitions": [
         {
@@ -983,7 +1001,17 @@
       ],
       "relatedWords": []
     },
-    "noeticnoetical": {
+    "noetic": {
+      "word": "NOETIC; NOETICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the intellect; intellectual. I would employ the word noetic to express all those cognitions which originate in the mind itself. Sir W. Hamilton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "noetical": {
       "word": "NOETIC; NOETICAL",
       "definitions": [
         {
@@ -1207,7 +1235,7 @@
       "word": "NOISELESS",
       "definitions": [
         {
-          "text": "Making, or causing, no noise or bustle; without noise; silent; as, the noiseless foot of time.",
+          "text": "Making, or causing, no noise or bustle; without noise; silent; as, the noiseless foot of time. So noiseless would I live. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1359,19 +1387,13 @@
       ],
       "relatedWords": []
     },
-    "nolprosnolpros": {
+    "nolpros": {
       "word": "NOL. PROS.; NOL PROS",
       "definitions": [
         {
           "text": "An abbrev. of Nolle prosequi.",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "nolpros": {
-      "word": "NOL-PROS",
-      "definitions": [
+        },
         {
           "text": "To discontinue by entering a nolle prosequi; to decline to prosecute.",
           "partOfSpeech": "verb"
@@ -1447,7 +1469,7 @@
       "word": "NOMADIC",
       "definitions": [
         {
-          "text": "Of or pertaining to nomads, or their way of life; wandering;",
+          "text": "Of or pertaining to nomads, or their way of life; wandering; moving from place to place for subsistence; as, a nomadic tribe.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1555,11 +1577,15 @@
         {
           "text": "See Term.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "of Nim. Chaucer.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "nomenomen": {
+    "nomen": {
       "word": "NOME; NOMEN",
       "definitions": [
         {
@@ -1889,7 +1915,17 @@
       ],
       "relatedWords": []
     },
-    "nomotheticnomothetical": {
+    "nomothetic": {
+      "word": "NOMOTHETIC; NOMOTHETICAL",
+      "definitions": [
+        {
+          "text": "Legislative; enacting laws; as, a nomothetical power. [R.] Bp. Barlow.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nomothetical": {
       "word": "NOMOTHETIC; NOMOTHETICAL",
       "definitions": [
         {
@@ -1900,8 +1936,12 @@
       "relatedWords": []
     },
     "non": {
-      "word": "NON-",
+      "word": "NON",
       "definitions": [
+        {
+          "text": "No; not. See No, a. Chaucer.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A prefix used in the sense of not; un-; in-; as in nonattention, or non-attention, nonconformity, nonmetallic, nonsuit. hyphen, or, in most cases, the hyphen may be dispensed with. The list of words having the prefix non- could easily be lengthened.",
           "partOfSpeech": ""
@@ -2305,7 +2345,17 @@
       ],
       "relatedWords": []
     },
-    "noncomposnoncomposmentis": {
+    "noncompos": {
+      "word": "NON COMPOS; NON COMPOS MENTIS",
+      "definitions": [
+        {
+          "text": "Not of sound mind; not having the regular use of reason; hence, also, as a noun, an idiot; a lunati",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "noncomposmentis": {
       "word": "NON COMPOS; NON COMPOS MENTIS",
       "definitions": [
         {
@@ -2445,6 +2495,16 @@
       ],
       "relatedWords": []
     },
+    "noncontagious": {
+      "word": "NONCONTAGIOUS",
+      "definitions": [
+        {
+          "text": "Not contagious; not catching; not communicable by contact.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "noncontent": {
       "word": "NONCONTENT",
       "definitions": [
@@ -2455,7 +2515,17 @@
       ],
       "relatedWords": []
     },
-    "noncontributingnoncontributory": {
+    "noncontributing": {
+      "word": "NONCONTRIBUTING; NONCONTRIBUTORY",
+      "definitions": [
+        {
+          "text": "Not contributing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "noncontributory": {
       "word": "NONCONTRIBUTING; NONCONTRIBUTORY",
       "definitions": [
         {
@@ -2635,7 +2705,21 @@
       ],
       "relatedWords": []
     },
-    "nonelectricnonelectrical": {
+    "nonelectric": {
+      "word": "NONELECTRIC; NONELECTRICAL",
+      "definitions": [
+        {
+          "text": "Not electric; conducting electricity.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A substance that is not an electric; that which transmits electricity, as a metal.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nonelectrical": {
       "word": "NONELECTRIC; NONELECTRICAL",
       "definitions": [
         {
@@ -2645,17 +2729,17 @@
       ],
       "relatedWords": []
     },
-    "nonelectric": {
-      "word": "NONELECTRIC",
+    "nonemphatic": {
+      "word": "NONEMPHATIC; NONEMPHATICAL",
       "definitions": [
         {
-          "text": "A substance that is not an electric; that which transmits electricity, as a metal.",
-          "partOfSpeech": "noun"
+          "text": "Having no emphasis; unemphatic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "nonemphaticnonemphatical": {
+    "nonemphatical": {
       "word": "NONEMPHATIC; NONEMPHATICAL",
       "definitions": [
         {
@@ -2763,7 +2847,17 @@
       ],
       "relatedWords": []
     },
-    "nonetnonetto": {
+    "nonet": {
+      "word": "NONET; NONETTO",
+      "definitions": [
+        {
+          "text": "A composition for nine instruments, rarely for nine voices.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nonetto": {
       "word": "NONET; NONETTO",
       "definitions": [
         {
@@ -3111,6 +3205,16 @@
         {
           "text": "Absence of necessity; the quality or state of being unnecessary.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nonnitrognous": {
+      "word": "NONNITROGNOUS",
+      "definitions": [
+        {
+          "text": "Devoid of nitrogen; as, a nonnitrogenous principle; a nonnitrogenous food. See the Note under Food, n., 1.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3523,7 +3627,7 @@
       "word": "NONSENSICAL",
       "definitions": [
         {
-          "text": "Without sense; unmeaning; absurb; foolish; irrational;",
+          "text": "Without sense; unmeaning; absurb; foolish; irrational; preposterous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3905,7 +4009,7 @@
       ],
       "relatedWords": []
     },
-    "noologicalnooelogical": {
+    "noological": {
       "word": "NOOLOGICAL; NOOELOGICAL",
       "definitions": [
         {
@@ -3915,7 +4019,17 @@
       ],
       "relatedWords": []
     },
-    "noologistnooelogist": {
+    "nooelogical": {
+      "word": "NOOLOGICAL; NOOELOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to noölogy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "noologist": {
       "word": "NOOLOGIST; NOOELOGIST",
       "definitions": [
         {
@@ -3925,7 +4039,27 @@
       ],
       "relatedWords": []
     },
-    "noologynooelogy": {
+    "nooelogist": {
+      "word": "NOOLOGIST; NOOELOGIST",
+      "definitions": [
+        {
+          "text": "One versed in noölogy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "noology": {
+      "word": "NOOLOGY; NOOELOGY",
+      "definitions": [
+        {
+          "text": "The science of intellectual phenomena.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nooelogy": {
       "word": "NOOLOGY; NOOELOGY",
       "definitions": [
         {
@@ -4369,7 +4503,25 @@
       ],
       "relatedWords": []
     },
-    "nornnorna": {
+    "norn": {
+      "word": "NORN; NORNA",
+      "definitions": [
+        {
+          "text": "(Scandinavian Myth.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the three Fates, Past, Present, and Future. Their names were Urd, Verdandi, and Skuld.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tutelary deity; a genius.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "norna": {
       "word": "NORN; NORNA",
       "definitions": [
         {
@@ -4457,7 +4609,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Lying toward the north; situated at the north, or in a northern direction from the point of observation or reckoning; proceeding",
+          "text": "Lying toward the north; situated at the north, or in a northern direction from the point of observation or reckoning; proceeding toward the north, or coming from the north. North following. See Following, a., 2. degrees from the equator toward the north. very nearly points, and which accordingly seems fixed and immovable in the sky. The star a (alpha) of the Little Bear, is our present north star, being distant from the pole about 1º 25', and from year to year approaching slowly nearer to it. It is called also Cynosura, polestar, and by astronomers, Polaris.",
           "partOfSpeech": "adjective"
         },
         {
@@ -4523,7 +4675,17 @@
       ],
       "relatedWords": []
     },
-    "northeastwardnortheastwardly": {
+    "northeastward": {
+      "word": "NORTHEASTWARD; NORTHEASTWARDLY",
+      "definitions": [
+        {
+          "text": "Toward the northeast.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "northeastwardly": {
       "word": "NORTHEASTWARD; NORTHEASTWARDLY",
       "definitions": [
         {
@@ -4697,11 +4859,15 @@
         {
           "text": "Toward the north; nearer to the north than to the east or west point.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Toward the north, or toward a point nearer to the north than to the east or west point.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
     },
-    "northwardnorthwards": {
+    "northwards": {
       "word": "NORTHWARD; NORTHWARDS",
       "definitions": [
         {
@@ -4777,7 +4943,17 @@
       ],
       "relatedWords": []
     },
-    "northwestwardnorthwestwardly": {
+    "northwestward": {
+      "word": "NORTHWESTWARD; NORTHWESTWARDLY",
+      "definitions": [
+        {
+          "text": "Toward the northwest.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "northwestwardly": {
       "word": "NORTHWESTWARD; NORTHWESTWARDLY",
       "definitions": [
         {
@@ -4955,7 +5131,17 @@
       ],
       "relatedWords": []
     },
-    "nosethirlnosethril": {
+    "nosethirl": {
+      "word": "NOSETHIRL; NOSETHRIL",
+      "definitions": [
+        {
+          "text": "Nostril. [Obs.] [Written also nosethurl, nosthrill.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nosethril": {
       "word": "NOSETHIRL; NOSETHRIL",
       "definitions": [
         {
@@ -5543,7 +5729,7 @@
       "word": "NOTED",
       "definitions": [
         {
-          "text": "Well known by reputation or report; eminent; celebrated; as, a",
+          "text": "Well known by reputation or report; eminent; celebrated; as, a noted author, or traveler.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5975,7 +6161,7 @@
       "word": "NOTORIOUS",
       "definitions": [
         {
-          "text": "Generally known and talked of by the public; universally believed to be true; manifest to the world; evident; -- usually in an unfavorable sense; as, a notorious thief; a notorious crime or vice. Your goodness, Since you provoke me, shall be most notorious. Shak.",
+          "text": "Generally known and talked of by the public; universally believed to be true; manifest to the world; evident; -- usually in an unfavorable sense; as, a notorious thief; a notorious crime or vice. Your goodness, Since you provoke me, shall be most notorious. Shak. famous; renowned.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6011,7 +6197,17 @@
       ],
       "relatedWords": []
     },
-    "notpatednottpated": {
+    "notpated": {
+      "word": "NOT-PATED; NOTT-PATED",
+      "definitions": [
+        {
+          "text": "Same as Nott-headed. [Obs.] Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nottpated": {
       "word": "NOT-PATED; NOTT-PATED",
       "definitions": [
         {
@@ -6345,7 +6541,7 @@
       ],
       "relatedWords": []
     },
-    "nouselnousle": {
+    "nousel": {
       "word": "NOUSEL; NOUSLE",
       "definitions": [
         {
@@ -6355,7 +6551,17 @@
       ],
       "relatedWords": []
     },
-    "nouthenowthe": {
+    "nousle": {
+      "word": "NOUSEL; NOUSLE",
+      "definitions": [
+        {
+          "text": "To insnare; to entrap. [Obs.] Johnson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nouthe": {
       "word": "NOUTHE; NOWTHE",
       "definitions": [
         {
@@ -6365,7 +6571,31 @@
       ],
       "relatedWords": []
     },
-    "nouveaurichenouvelleriche": {
+    "nowthe": {
+      "word": "NOUTHE; NOWTHE",
+      "definitions": [
+        {
+          "text": "Just now; at present. [Obs.] But thereof needeth not to speak as nouthe. Chaucer.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "See Nouthe. [Obs.] Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "nouveauriche": {
+      "word": "NOUVEAU RICHE; NOUVELLE RICHE",
+      "definitions": [
+        {
+          "text": "A person newly rich.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "nouvelleriche": {
       "word": "NOUVEAU RICHE; NOUVELLE RICHE",
       "definitions": [
         {
@@ -6468,6 +6698,10 @@
         },
         {
           "text": "Etym: [L. novellae (sc. constitutiones): cf. F. novelles.] (Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A new or supplemental constitution. See the Note under Novel, a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6757,7 +6991,17 @@
       ],
       "relatedWords": []
     },
-    "nowaynoways": {
+    "noway": {
+      "word": "NOWAY; NOWAYS",
+      "definitions": [
+        {
+          "text": "In no manner or degree; not at all; nowise. But Ireland will noways allow that name unto it. Fuller.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "noways": {
       "word": "NOWAY; NOWAYS",
       "definitions": [
         {
@@ -6865,16 +7109,6 @@
       ],
       "relatedWords": []
     },
-    "nowthe": {
-      "word": "NOWTHE",
-      "definitions": [
-        {
-          "text": "See Nouthe. [Obs.] Chaucer.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "noxious": {
       "word": "NOXIOUS",
       "definitions": [
@@ -6883,7 +7117,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Guilty; criminal. [R.] Those who are noxious in the eye of the law. Abp. Bramhall. mischievous; corrupting; baneful; unwholesome; insalubrious. See",
+          "text": "Guilty; criminal. [R.] Those who are noxious in the eye of the law. Abp. Bramhall. mischievous; corrupting; baneful; unwholesome; insalubrious. See Noisome.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6992,36 +7226,6 @@
         },
         {
           "text": "Specifically: (a) A short tube, usually tapering, forming the vent of a hose or pipe. (b) A short outlet, or inlet, pipe projecting from the end or side of a hollow vessel, as a steam-engine cylinder or a steam boiler.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "notstrictlyacolorbutacompositionofallcolorstheopposite": {
-      "word": "not strictly a color, but a composition of all colors; the opposite",
-      "definitions": [
-        {
-          "text": "Something having the color of snow; something white, or nearly so; as, the white of the eye.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Specifically, the central part of the butt in archery, which was formerly painted white; the center of a mark at which a missile is shot. 'T was I won the wager, though you hit the white. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A person with a white skin; a member of the white, or Caucasian, races of men.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A white pigment; as, Venice white.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Any one of numerous species of butterflies belonging to Pieris, and allied genera in which the color is usually white. See Cabbage butterfly, under Cabbage. Black and white. See under Black. in an egg, particularly in the egg of a fowl. In a hen's egg it is alkaline, and contains about 86 per cent of water and 14 per cent of solid matter, the greater portion of which is egg albumin. It likewise contains a small amount of globulin, and traces of fats and sugar, with some inorganic matter. Heated above 60º C. it coagulates to a solid mass, owing to the albumin which it contains. Parr. surrounding the transparent cornea.",
           "partOfSpeech": "noun"
         }
       ],

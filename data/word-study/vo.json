@@ -51,7 +51,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "(Phon.) (a) Consisting of, or characterized by, voice, or tone produced in the larynx, which may be modified, either by resonance, as in the case of the vowels, or by obstructive action, as in certain consonants, such as v, l, etc., or by both, as in the nasals m, n, ng; sonant; intonated; voiced. See Voice, and Vowel, also Guide to Pronunciation, §§ 199-202. (b) Of or pertaining to a vowel; having the character of a vowel;",
+          "text": "(Phon.) (a) Consisting of, or characterized by, voice, or tone produced in the larynx, which may be modified, either by resonance, as in the case of the vowels, or by obstructive action, as in certain consonants, such as v, l, etc., or by both, as in the nasals m, n, ng; sonant; intonated; voiced. See Voice, and Vowel, also Guide to Pronunciation, §§ 199-202. (b) Of or pertaining to a vowel; having the character of a vowel; vowel. Vocal cords or chords. (Anat.) See Larynx, and the Note under Voice, n., 1. (Med.), the perceptible vibration of the chest wall, produced by the transmission of the sonorous vibrations during the act of using the voice. instrumental music; hence, music or tunes set to words, to be performed by the human voice. inferior ligaments of the larynx, including the passages through the nose and mouth.",
           "partOfSpeech": "adjective"
         },
         {
@@ -263,11 +263,21 @@
       ],
       "relatedWords": []
     },
+    "vociferous": {
+      "word": "VOCIFEROUS",
+      "definitions": [
+        {
+          "text": "Making a loud outcry; clamorous; noisy; as, vociferous heralds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "vocule": {
       "word": "VOCULE",
       "definitions": [
         {
-          "text": "A short or weak utterance; a faint or feeble sound, as that",
+          "text": "A short or weak utterance; a faint or feeble sound, as that heard on separating the lips in pronouncing p or b. Rush.",
           "partOfSpeech": "noun"
         }
       ],
@@ -371,7 +381,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A particular mode of inflecting or conjugating verbs, or a particular form of a verb, by means of which is indicated the relation of the subject of the verb to the action which the verb expresses. Active voice (Gram.), that form of the verb by which its subject is represented as the agent or doer of the action expressed by it. of a sonorous quality ascribed to resonance in the chest, or thorax; voice of the thick register. It is produced by vibration of the vocal cords through their entire width and thickness, and with convex surfaces presented to each other. quality ascribed to resonance in the head; voice of the thin register; falsetto. In producing it, the vibration of the cords is limited to their thin edges in the upper part, which are then presented to each other. is represented as both the agent, or doer, and the object of the action, that is, as performing some act to or upon himself, or for",
+          "text": "A particular mode of inflecting or conjugating verbs, or a particular form of a verb, by means of which is indicated the relation of the subject of the verb to the action which the verb expresses. Active voice (Gram.), that form of the verb by which its subject is represented as the agent or doer of the action expressed by it. of a sonorous quality ascribed to resonance in the chest, or thorax; voice of the thick register. It is produced by vibration of the vocal cords through their entire width and thickness, and with convex surfaces presented to each other. quality ascribed to resonance in the head; voice of the thin register; falsetto. In producing it, the vibration of the cords is limited to their thin edges in the upper part, which are then presented to each other. is represented as both the agent, or doer, and the object of the action, that is, as performing some act to or upon himself, or for his own advantage. that sometimes occurs between two consonants in an unaccented syllable (represented by the apostrophe), as in able (a\"b'l). See Glide, n., 2. Great is Diana of the Ephesians.\" Acts xix. 34.",
           "partOfSpeech": "noun"
         },
         {
@@ -441,7 +451,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not sounded with voice; as, a voiceless consonant; surd. Voiceless stop (Phon.), a consonant made with no audible sound except",
+          "text": "Not sounded with voice; as, a voiceless consonant; surd. Voiceless stop (Phon.), a consonant made with no audible sound except in the transition to or from another sound; a surd mute, as p, t, k.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -703,7 +713,7 @@
       ],
       "relatedWords": []
     },
-    "volapukvolapuek": {
+    "volapuk": {
       "word": "VOLAPUK; VOLAPUEK",
       "definitions": [
         {
@@ -713,7 +723,27 @@
       ],
       "relatedWords": []
     },
-    "volapukistvolapuekist": {
+    "volapuek": {
+      "word": "VOLAPUK; VOLAPUEK",
+      "definitions": [
+        {
+          "text": "Literally, world's speech; the name of an artificial language invented by Johan Martin Schleyer, of Constance, Switzerland, about 1879.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "volapukist": {
+      "word": "VOLAPUKIST; VOLAPUEKIST",
+      "definitions": [
+        {
+          "text": "One who is conversant with, or who favors adoption of, Volapük.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "volapuekist": {
       "word": "VOLAPUKIST; VOLAPUEKIST",
       "definitions": [
         {
@@ -765,7 +795,17 @@
       ],
       "relatedWords": []
     },
-    "volatilenessvolatility": {
+    "volatileness": {
+      "word": "VOLATILENESS; VOLATILITY",
+      "definitions": [
+        {
+          "text": "Quality or state of being volatile; disposition to evaporate; changeableness; fickleness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "volatility": {
       "word": "VOLATILENESS; VOLATILITY",
       "definitions": [
         {
@@ -1113,7 +1153,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A burst or emission of many things at once; as, a volley of words. \"This volley of oaths.\" B. Jonson. Rattling nonsense in full volleys breaks. Pope. 3. (a) (Tennis) A return of the ball before it touches the ground. (b) (Cricket) A sending of the ball full to the top of the wicket. Half volley. (a) (Tennis) A return of the ball immediately after is has touched the ground. (b) (Cricket) A sending of the ball so that",
+          "text": "A burst or emission of many things at once; as, a volley of words. \"This volley of oaths.\" B. Jonson. Rattling nonsense in full volleys breaks. Pope. 3. (a) (Tennis) A return of the ball before it touches the ground. (b) (Cricket) A sending of the ball full to the top of the wicket. Half volley. (a) (Tennis) A return of the ball immediately after is has touched the ground. (b) (Cricket) A sending of the ball so that after touching the ground it flies towards the top of the wicket. R. A. Proctor. begins work.\" Massinger. shots simultaneously; a kind of mitrailleuse.",
           "partOfSpeech": "noun"
         },
         {
@@ -1395,7 +1435,17 @@
       ],
       "relatedWords": []
     },
-    "volubilatevolubile": {
+    "volubilate": {
+      "word": "VOLUBILATE; VOLUBILE",
+      "definitions": [
+        {
+          "text": "Turning, or whirling; winding; twining; voluble.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "volubile": {
       "word": "VOLUBILATE; VOLUBILE",
       "definitions": [
         {
@@ -1435,7 +1485,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having the power or habit of turning or twining; as, the voluble stem of hop plants. Voluble stem (Bot.), a stem that climbs",
+          "text": "Having the power or habit of turning or twining; as, the voluble stem of hop plants. Voluble stem (Bot.), a stem that climbs by winding, or twining, round another body.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1539,11 +1589,21 @@
       ],
       "relatedWords": []
     },
+    "volumetrical": {
+      "word": "VOLUMETRICAL",
+      "definitions": [
+        {
+          "text": "Volumetric.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "voluminous": {
       "word": "VOLUMINOUS",
       "definitions": [
         {
-          "text": "Of or pertaining to volume or volumes. Specifically: -- (a) Consisting of many folds, coils, or convolutions. But ended foul in many a scaly fold, Voluminous and vast. Milton. Over which dusky draperies are hanging, and voluminous curtains have long since fallen. De Quincey. (b) Of great volume, or bulk; large. B. Jonson. (c) Consisting of many volumes or books; as, the collections of Muratori are voluminous. (d) Having written much, or produced many volumes; copious; diffuse;",
+          "text": "Of or pertaining to volume or volumes. Specifically: -- (a) Consisting of many folds, coils, or convolutions. But ended foul in many a scaly fold, Voluminous and vast. Milton. Over which dusky draperies are hanging, and voluminous curtains have long since fallen. De Quincey. (b) Of great volume, or bulk; large. B. Jonson. (c) Consisting of many volumes or books; as, the collections of Muratori are voluminous. (d) Having written much, or produced many volumes; copious; diffuse; as, a voluminous writer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1592,6 +1652,46 @@
     "voluntary": {
       "word": "VOLUNTARY",
       "definitions": [
+        {
+          "text": "Proceeding from the will; produced in or by an act of choice. That sin or guilt pertains exclusively to voluntary action is the true principle of orthodoxy. N. W. Taylor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Unconstrained by the interference of another; unimpelled by the influence of another; not prompted or persuaded by another; done of his or its own accord; spontaneous; acting of one's self, or of itself; free. Our voluntary service he requires. Milton. She fell to lust a voluntary prey. Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Done by design or intention; intentional; purposed; intended; not accidental; as, if a man kills another by lopping a tree, it is not voluntary manslaughter.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Physiol.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the will; subject to, or regulated by, the will; as, the voluntary motions of an animal, such as the movements of the leg or arm (in distinction from involuntary motions, such as the movements of the heart); the voluntary muscle fibers, which are the agents in voluntary motion.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Endowed with the power of willing; as, man is a voluntary agent. God did not work as a necessary, but a voluntary, agent, intending beforehand, and decreeing with himself, that which did outwardly proceed from him. Hooker.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Free; without compulsion; according to the will, consent, or agreement, of a party; without consideration; gratuitous; without valuable consideration.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Eccl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to voluntaryism; as, a voluntary church, in distinction from an established or state church. Voluntary affidavit or oath (Law), an affidavit or oath made in extrajudicial matter. consideration. consent of the sheriff. jurisdiction, under Contentious.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One who engages in any affair of his own free will; a volunteer. [R.] Shak.",
           "partOfSpeech": "noun"
@@ -1725,7 +1825,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Given to the enjoyments of luxury and pleasure; indulging to excess in sensual gratifications. \"The jolly and voluptuous livers.\" Atterbury.",
+          "text": "Given to the enjoyments of luxury and pleasure; indulging to excess in sensual gratifications. \"The jolly and voluptuous livers.\" Atterbury. Softened with pleasure and voluptuous life. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2023,7 +2123,7 @@
       "word": "VORACIOUS",
       "definitions": [
         {
-          "text": "Greedy in eating; very hungry; eager to devour or swallow; ravenous; gluttonous; edacious; rapacious; as, a voracious man or",
+          "text": "Greedy in eating; very hungry; eager to devour or swallow; ravenous; gluttonous; edacious; rapacious; as, a voracious man or appetite; a voracious gulf or whirlpool. Dampier.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2139,7 +2239,7 @@
       "word": "VORTICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a vortex or vortexes; resembling a vortex",
+          "text": "Of or pertaining to a vortex or vortexes; resembling a vortex in form or motion; whirling; as, a vortical motion.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2299,7 +2399,7 @@
       "word": "VOTIVE",
       "definitions": [
         {
-          "text": "Given by vow, or in fulfillment of a vow; consecrated by a vow; devoted; as, votive offerings; a votive tablet. \"Votive incense.\" Keble. We reached a votive stone, that bears the name Of Aloys Reding. Wordsworth. Embellishments of flowers and votive garlands. Motley. Votive medal, a medal struck in grateful commemoration of some auspicious event.",
+          "text": "Given by vow, or in fulfillment of a vow; consecrated by a vow; devoted; as, votive offerings; a votive tablet. \"Votive incense.\" Keble. We reached a votive stone, that bears the name Of Aloys Reding. Wordsworth. Embellishments of flowers and votive garlands. Motley. Votive medal, a medal struck in grateful commemoration of some auspicious event. as of one's person or property.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2473,7 +2573,7 @@
       "word": "VOWEL",
       "definitions": [
         {
-          "text": "A vocal, or sometimes a whispered, sound modified by resonance in the oral passage, the peculiar resonance in each case giving to each several vowel its distinctive character or quality as a sound of speech; -- distinguished from a consonant in that the latter, whether made with or without vocality, derives its character in every case from some kind of obstructive action by the mouth organs. Also, a letter or character which represents such a sound. See Guide to Pronunciation, §§ 5, 146-149.",
+          "text": "A vocal, or sometimes a whispered, sound modified by resonance in the oral passage, the peculiar resonance in each case giving to each several vowel its distinctive character or quality as a sound of speech; -- distinguished from a consonant in that the latter, whether made with or without vocality, derives its character in every case from some kind of obstructive action by the mouth organs. Also, a letter or character which represents such a sound. See Guide to Pronunciation, §§ 5, 146-149. and sometimes w and y. The spoken vowels are much more numerous. Close vowel. See under Close, a.",
           "partOfSpeech": "noun"
         },
         {
@@ -2566,6 +2666,18 @@
     "voyage": {
       "word": "VOYAGE",
       "definitions": [
+        {
+          "text": "Formerly, a passage either by sea or land; a journey, in general; but not chiefly limited to a passing by sea or water from one place, port, or country, to another; especially, a passing or journey by water to a distant place or country. I love a sea voyage and a blustering tempest. J. Fletcher. So steers the prudent crane Her annual voyage, borne on winds. Milton. All the voyage of their life Is bound in shallows and in miseries. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or practice of traveling. [Obs.] Nations have interknowledge of one another by voyage into foreign parts, or strangers that come to them. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Course; way. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To take a voyage; especially, to sail or pass by water. A mind forever Voyaging through strange seas of thought alone. Wordsworth.",
           "partOfSpeech": "verb"

@@ -1,20 +1,16 @@
 {
   "version": "v1",
   "entries": {
-    "judgefrassidseeassessionllonewhoarrangesofdetermines": {
-      "word": "judge, fr. assid. See Assession. LL., one who arranges of determines",
+    "juggernaut": {
+      "word": "JAGANNATH; JAGANNATHA; JUGGERNAUT",
       "definitions": [
         {
-          "text": "One appointed or elected to assist a judge or magistrate with his special knowledge of the subject to be decided; as legal assessors, nautical assessors. Mozley & W.",
-          "partOfSpeech": "verb"
+          "text": "A particular form of Vishnu, or of Krishna, whose chief idol and worship are at Puri, in Orissa. The idol is considered to contain the bones of Krishna and to possess a soul. The principal festivals are the Snanayatra, when the idol is bathed, and the Rathayatra, when the image is drawn upon a car adorned with obscene paintings. Formerly it was erroneously supposed that devotees allowed themselves to be crushed beneath the wheels of this car. It is now known that any death within the temple of Jagannath is considered to render the place unclean, and any spilling of blood in the presence of the idol is a pollution.",
+          "partOfSpeech": "noun"
         },
         {
-          "text": "One who sits by another, as next in dignity, or as an assistant and adviser; an associate in office. Whence to his Son, The assessor of his throne, he thus began. Milton. With his ignorance, his inclinations, and his fancy, as his assessors in judgment. I. Taylor.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "One appointed to assess persons or property for the purpose of taxation. Bouvier.",
-          "partOfSpeech": "verb"
+          "text": "One of the names under which Vishnu, in his incarnation as Krishna, is worshiped by the Hindoos. [Written also Juggernnath, Jaganath, Jaganatha, etc.] Orissa. At certain times the idol is drawn from the temple by the multitude, on a high car with sixteen wheels. Formerly, fanatics sometimes threw themselves under the wheels to be crushed as a sacrifice to the god.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -61,7 +57,17 @@
       ],
       "relatedWords": []
     },
-    "jubbahjubbehjoobbeh": {
+    "jubbah": {
+      "word": "JUBBAH; JUBBEH; JOOBBEH",
+      "definitions": [
+        {
+          "text": "A long outer garment worn by both sexes of Mohammedans of the better class.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jubbeh": {
       "word": "JUBBAH; JUBBEH; JOOBBEH",
       "definitions": [
         {
@@ -183,7 +189,17 @@
       ],
       "relatedWords": []
     },
-    "judaicjudaical": {
+    "judaic": {
+      "word": "JUDAIC; JUDAICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Jews. \"The natural or Judaical [religion].\" South.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "judaical": {
       "word": "JUDAIC; JUDAICAL",
       "definitions": [
         {
@@ -369,7 +385,11 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To assume the right to pass judgment on another; to sit in",
+          "text": "To assume the right to pass judgment on another; to sit in judgment or commendation; to criticise or pass adverse judgment upon others. See Judge, v. t., 3. Forbear to judge, for we are sinners all. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To compare facts or ideas, and perceive their relations and attributes, and thus distinguish truth from falsehood; to determine; to discern; to distinguish; to form an opinion about. Judge not according to the appearance. John vii. 24. She is wise if I can judge of her. Shak.",
           "partOfSpeech": "verb"
         },
         {
@@ -390,16 +410,6 @@
         },
         {
           "text": "To exercise the functions of a magistrate over; to govern. [Obs.] Make us a king to judge us. 1 Sam. viii. 5.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "judgmentorcommendationtocriticiseorpassadversejudgmentupon": {
-      "word": "judgment or commendation; to criticise or pass adverse judgment upon",
-      "definitions": [
-        {
-          "text": "To compare facts or ideas, and perceive their relations and attributes, and thus distinguish truth from falsehood; to determine; to discern; to distinguish; to form an opinion about. Judge not according to the appearance. John vii. 24. She is wise if I can judge of her. Shak.",
           "partOfSpeech": "verb"
         }
       ],
@@ -467,7 +477,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The final award; the last sentence. England sometimes written, judgement, abridgement, acknowledgement, and lodgement. combinations; as, judgment hour; judgment throne. Judgment day (Theol.), the last day, or period when final judgment will be pronounced on the subjects of God's moral government. order. hence, a court; a tribunal. \"We shall all stand before the judgment seat of Christ.\" Rom. xiv. 10.",
+          "text": "The final award; the last sentence. England sometimes written, judgement, abridgement, acknowledgement, and lodgement. combinations; as, judgment hour; judgment throne. Judgment day (Theol.), the last day, or period when final judgment will be pronounced on the subjects of God's moral government. order. hence, a court; a tribunal. \"We shall all stand before the judgment seat of Christ.\" Rom. xiv. 10. against a judgment debtor upon an unsatisfied judgment. Arrest of judgment. (Law) See under Arrest, n. of secret crimes, as by arms and single combat, by ordeal, etc.; it being imagined that God would work miracles to vindicate innocence. See under Ordeal. taste; discrimination; penetration; sagacity; intelligence; understanding. See Taste.",
           "partOfSpeech": "noun"
         }
       ],
@@ -721,16 +731,6 @@
       ],
       "relatedWords": []
     },
-    "juggernaut": {
-      "word": "JUGGERNAUT",
-      "definitions": [
-        {
-          "text": "One of the names under which Vishnu, in his incarnation as Krishna, is worshiped by the Hindoos. [Written also Juggernnath, Jaganath, Jaganatha, etc.] Orissa. At certain times the idol is drawn from the temple by the multitude, on a high car with sixteen wheels. Formerly, fanatics sometimes threw themselves under the wheels to be crushed as a sacrifice to the god.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "juggle": {
       "word": "JUGGLE",
       "definitions": [
@@ -802,6 +802,10 @@
     "juggling": {
       "word": "JUGGLING",
       "definitions": [
+        {
+          "text": "Cheating; tricky.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Jugglery; underhand practice.",
           "partOfSpeech": "noun"
@@ -977,7 +981,17 @@
       ],
       "relatedWords": []
     },
-    "jujutsujujitsujiujutsujiujitsu": {
+    "jujutsu": {
+      "word": "JUJUTSU; JUJITSU; JIUJUTSU; JIUJITSU",
+      "definitions": [
+        {
+          "text": "The Japanese art of self-defense without weapons, now widely used as a system of physical training. It depends for its efficiency largely upon the principle of making use of an opponent's strength and weight to disable or injure him, and by applying pressure so that his opposing movement will throw him out of balance, dislocate or break a joint, etc. It opposes knowledge and skill to brute strength, and demands an extensive practical knowledge of human anatomy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jujitsu": {
       "word": "JUJUTSU; JUJITSU; JIUJUTSU; JIUJITSU",
       "definitions": [
         {
@@ -1229,7 +1243,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To bore with a jumper. To jump a claim, to enter upon and take",
+          "text": "To bore with a jumper. To jump a claim, to enter upon and take possession of land to which another has acquired a claim by prior entry and occupation. [Western U. S. & Australia] See Claim, n., 3. [Slang, U. S.]",
           "partOfSpeech": "verb"
         },
         {
@@ -1521,7 +1535,11 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Composed of juniors, whether younger or a lower standing; as, the",
+          "text": "Composed of juniors, whether younger or a lower standing; as, the junior class; of or pertaining to juniors or to a junior class. See Junior, n., 2.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Belonging to a younger person, or an earlier time of life. Our first studies and junior endeavors. Sir T. Browne.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1530,16 +1548,6 @@
         },
         {
           "text": "Hence: One of a lower or later standing; specifically, in American colleges, one in the third year of his course, one in the fourth or final year being designated a senior; in some seminaries, one in the first year, in others, one in the second year, of a three years' course.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "juniorclassoforpertainingtojuniorsortoajuniorclasssee": {
-      "word": "junior class; of or pertaining to juniors or to a junior class. See",
-      "definitions": [
-        {
-          "text": "Belonging to a younger person, or an earlier time of life. Our first studies and junior endeavors. Sir T. Browne.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1789,7 +1797,21 @@
       ],
       "relatedWords": []
     },
-    "juponjuppon": {
+    "jupon": {
+      "word": "JUPON; JUPPON",
+      "definitions": [
+        {
+          "text": "A sleeveless jacket worn over the armor in the 14th century. It fitted closely, and descended below the hips. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A petticoat. Halliwell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "juppon": {
       "word": "JUPON; JUPPON",
       "definitions": [
         {
@@ -1895,7 +1917,7 @@
       "word": "JURA-TRIAS",
       "definitions": [
         {
-          "text": "A term applied to many American Mesozoic strata, in which the characteristics of the Jurassic and Triassic periods appear to be",
+          "text": "A term applied to many American Mesozoic strata, in which the characteristics of the Jurassic and Triassic periods appear to be blended.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1931,7 +1953,17 @@
       ],
       "relatedWords": []
     },
-    "juridicjuridical": {
+    "juridic": {
+      "word": "JURIDIC; JURIDICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a judge or to jurisprudence; acting in the distribution of justice; used in courts of law; according to law; legal; as, juridical law. \"This juridical sword.\" Milton. The body corporate of the kingdom, in juridical construction, never dies. Burke. Juridical days, days on which courts are open.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "juridical": {
       "word": "JURIDIC; JURIDICAL",
       "definitions": [
         {
@@ -1956,6 +1988,28 @@
       "definitions": [
         {
           "text": "A man learned in the civil law; an expert in juridical science; a professor of jurisprudence; a jurist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jurisdiction": {
+      "word": "JURISDICTION",
+      "definitions": [
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The legal power, right, or authority of a particular court to hear and determine causes, to try criminals, or to execute justice; judicial authority over a cause or class of causes; as, certain suits or actions, or the cognizance of certain crimes, are within the jurisdiction of a particular court, that is, within the limits of its authority or commission.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The authority of a sovereign power to govern or legislate; the right of making or enforcing laws; the power or right of exercising authority. To live exempt From Heaven's high jurisdiction. Milton. You wrought to be a legate; by which power You maim'd the jurisdiction of all bishops. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sphere of authority; the limits within which any particular power may be exercised, or within which a government or a court has authority. declare, or apply the law. When confined to the judiciary department, it is what we denominate the judicial power, the right of administering justice through the laws, by the means which the laws have provided for that purpose. Jurisdiction is limited to place or territory, to persons, or to particular subjects. Duponceau.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2025,7 +2079,17 @@
       ],
       "relatedWords": []
     },
-    "juristicjuristical": {
+    "juristic": {
+      "word": "JURISTIC; JURISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a jurist, to the legal profession, or to jurisprudence. [R.] \"Juristic ancestry.\" Lowell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "juristical": {
       "word": "JURISTIC; JURISTICAL",
       "definitions": [
         {
@@ -2059,6 +2123,18 @@
         {
           "text": "For temporary use; -- applied to a temporary contrivance. Jury mast, a temporary mast, in place of one that has been carried away, or broken.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A body of men, usually twelve, selected according to law, impaneled and sworn to inquire into and try any matter of fact, and to render their true verdict according to the evidence legally adduced. See Grand jury under Grand, and Inquest. The jury, passing on the prisoner's life. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A committee for determining relative merit or awarding prizes at an exhibition or competition; as, the art jury gave him the first prize. Jury of inquest, a coroner's jury. See Inquest.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2241,7 +2317,17 @@
       ],
       "relatedWords": []
     },
-    "justicojusticoat": {
+    "justico": {
+      "word": "JUSTICO; JUSTICOAT",
+      "definitions": [
+        {
+          "text": "Formerly, a close coat or waistcoat with sleeves.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "justicoat": {
       "word": "JUSTICO; JUSTICOAT",
       "definitions": [
         {
@@ -2255,7 +2341,7 @@
       "word": "JUSTIFIABLE",
       "definitions": [
         {
-          "text": "Capable of being justified, or shown to be just. Just are the ways of God, An justifiable to men. Milton.",
+          "text": "Capable of being justified, or shown to be just. Just are the ways of God, An justifiable to men. Milton. authorizable.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2495,6 +2581,16 @@
       ],
       "relatedWords": []
     },
+    "jutting": {
+      "word": "JUTTING",
+      "definitions": [
+        {
+          "text": "Projecting, as corbels, cornices, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "jutty": {
       "word": "JUTTY",
       "definitions": [
@@ -2637,48 +2733,6 @@
         {
           "text": "A placing or being placed in nearness or contiguity, or side by side; as, a juxtaposition of words. Parts that are united by a a mere juxtaposition. Glanvill. Juxtaposition is a very unsafe criterion of continuity. Hare.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "jumpsqroot159cfscotacontributionscouttorejectscud": {
-      "word": "jump. sq. root159. Cf. Scot a contribution, Scout to reject, Scud,",
-      "definitions": [
-        {
-          "text": "To let fly, or cause to be driven, with force, as an arrow or a bullet; -- followed by a word denoting the missile, as an object. If you please To shoot an arrow that self way. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To discharge, causing a missile to be driven forth; -- followed by a word denoting the weapon or instrument, as an object; -- often with off; as, to shoot a gun. The two ends od a bow, shot off, fly from one another. Boyle.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To strike with anything shot; to hit with a missile; often, to kill or wound with a firearm; -- followed by a word denoting the person or thing hit, as an object. When Roger shot the hawk hovering over his master's dove house. A. Tucker.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To send out or forth, especially with a rapid or sudden motion; to cast with the hand; to hurl; to discharge; to emit. An honest weaver as ever shot shuttle. Beau & Fl. A pit into which the dead carts had nightly shot corpses by scores. Macaulay.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To push or thrust forward; to project; to protrude; -- often with out; as, a plant shoots out a bud. They shoot out the lip, they shake the head. Ps. xxii. 7. Beware the secret snake that shoots a sting. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Carp.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To plane straight; to fit by planing. Two pieces of wood that are shot, that is, planed or else pared with a paring chisel. Moxon.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To pass rapidly through, over, or under; as, to shoot a rapid or a bridge; to shoot a sand bar. She . . . shoots the Stygian sound. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To variegate as if by sprinkling or intermingling; to color in spots or patches. The tangled water courses slept, Shot over with purple, and green, and yellow. Tennyson. To be shot of, to be discharged, cleared, or rid of. [Colloq.] \"Are you not glad to be shot of him\" Sir W. Scott.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

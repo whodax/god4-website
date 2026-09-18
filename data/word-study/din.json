@@ -618,7 +618,21 @@
       ],
       "relatedWords": []
     },
-    "dingeydingydinghy": {
+    "dingey": {
+      "word": "DINGEY; DINGY; DINGHY",
+      "definitions": [
+        {
+          "text": "A kind of boat used in the East Indies. [Written also dinghey.] Malcom.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ship's smallest boat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dinghy": {
       "word": "DINGEY; DINGY; DINGHY",
       "definitions": [
         {
@@ -693,8 +707,16 @@
       "relatedWords": []
     },
     "dingy": {
-      "word": "DINGY",
+      "word": "DINGEY; DINGY; DINGHY",
       "definitions": [
+        {
+          "text": "A kind of boat used in the East Indies. [Written also dinghey.] Malcom.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ship's smallest boat.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Soiled; sullied; of a dark or dusky color; dark brown; dirty. \"Scraps of dingy paper.\" Macaulay.",
           "partOfSpeech": "adjective"
@@ -1093,7 +1115,7 @@
       ],
       "relatedWords": []
     },
-    "dinosaurdinosaurian": {
+    "dinosaur": {
       "word": "DINOSAUR; DINOSAURIAN",
       "definitions": [
         {
@@ -1101,7 +1123,86 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "alligator",
+        "ammonite",
+        "ankylosaur",
+        "archaeohippus",
+        "archaeotherium",
+        "archelon",
+        "arthrodiran",
+        "aurochs",
+        "bothriolepis",
+        "brachiosaur",
+        "brontops",
+        "brontothere",
+        "coccostean",
+        "coelodont",
+        "compsognathus",
+        "coryphodon",
+        "cotylosaur",
+        "creodont",
+        "crocodile",
+        "crocodilian",
+        "crossopterygian",
+        "cynodictis",
+        "diatryma",
+        "dimetrodon",
+        "dinichthyid",
+        "dinothere",
+        "diplodocus",
+        "duck-billed dinosaur",
+        "edaphosaurid",
+        "elasmosaur",
+        "elephant",
+        "eryopsid",
+        "eurypterid",
+        "gator",
+        "giant sloth",
+        "glyptodont",
+        "hadrosaur",
+        "hippo",
+        "hippopotamus",
+        "jumbo",
+        "leviathan",
+        "lizard",
+        "mammoth",
+        "mastodon",
+        "monster",
+        "palaeodictyopteron",
+        "palaeoniscid",
+        "palaeophis",
+        "palaeosaur",
+        "palaeospondylus",
+        "pelycosaur",
+        "phytosaur",
+        "plesiosaur",
+        "protoceratops",
+        "protylopus",
+        "pteranodon",
+        "pteraspid",
+        "pterichthys",
+        "pterodactyl",
+        "pterosaur",
+        "reptile",
+        "reptilian",
+        "saurian",
+        "sauropod",
+        "scelidosaur",
+        "smilodon",
+        "terrapin",
+        "titanosaur",
+        "tortoise",
+        "trachodon",
+        "triceratops",
+        "trilobite",
+        "turtle",
+        "tyrannosaur",
+        "uintathere",
+        "urus",
+        "whale",
+        "woolly mammoth"
+      ]
     },
     "dinosauria": {
       "word": "DINOSAURIA",
@@ -1113,7 +1214,27 @@
       ],
       "relatedWords": []
     },
-    "dinotheredinotherium": {
+    "dinosaurian": {
+      "word": "DINOSAUR; DINOSAURIAN",
+      "definitions": [
+        {
+          "text": "One of the Dinosauria. [Written also deinosaur, and deinosaurian.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dinothere": {
+      "word": "DINOTHERE; DINOTHERIUM",
+      "definitions": [
+        {
+          "text": "A large extinct proboscidean mammal from the miocene beds of Europe and Asia. It is remarkable fora pair of tusks directed downward from the decurved apex of the lower jaw.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dinotherium": {
       "word": "DINOTHERE; DINOTHERIUM",
       "definitions": [
         {

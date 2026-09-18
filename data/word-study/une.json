@@ -35,7 +35,7 @@
       "word": "UNEARTHLY",
       "definitions": [
         {
-          "text": "Not terrestrial; supernatural; preternatural; hence, weird;",
+          "text": "Not terrestrial; supernatural; preternatural; hence, weird; appalling; terrific; as, an unearthly sight or sound.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -363,7 +363,7 @@
       "word": "UNEQUIVOCAL",
       "definitions": [
         {
-          "text": "Not equivocal; not doubtful; not ambiguous; evident; sincere;",
+          "text": "Not equivocal; not doubtful; not ambiguous; evident; sincere; plain; as, unequivocal evidence; unequivocal words.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -427,7 +427,17 @@
       ],
       "relatedWords": []
     },
-    "unethunethes": {
+    "uneth": {
+      "word": "UNETH; UNETHES",
+      "definitions": [
+        {
+          "text": "With difficulty; scarcely. See Uneath. [Written also unethe, unneth, unnethe, unnethes, etc.] [Obs.] Chaucer.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unethes": {
       "word": "UNETH; UNETHES",
       "definitions": [
         {
@@ -489,7 +499,7 @@
       "word": "UNEXCEPTIONABLE",
       "definitions": [
         {
-          "text": "Not liable to any exception or objection; unobjectionable; faultless; good; excellent; as, a man of most unexceptionable",
+          "text": "Not liable to any exception or objection; unobjectionable; faultless; good; excellent; as, a man of most unexceptionable character. Chesterfield is an unexceptionable witness. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -500,6 +510,16 @@
       "definitions": [
         {
           "text": "Not exceptive; not including, admitting, or being, an exception.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unexcusable": {
+      "word": "UNEXCUSABLE",
+      "definitions": [
+        {
+          "text": "Inexcusable. Hayward.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -521,6 +541,16 @@
         {
           "text": "Absence of expectation; want of foresight. [Obs.] Bp. Hall.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unexpected": {
+      "word": "UNEXPECTED",
+      "definitions": [
+        {
+          "text": "Not expected; coming without warning; sudden.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -599,6 +629,16 @@
       ],
       "relatedWords": []
     },
+    "unexpressible": {
+      "word": "UNEXPRESSIBLE",
+      "definitions": [
+        {
+          "text": "Inexpressible. Tillotson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "unexpressive": {
       "word": "UNEXPRESSIVE",
       "definitions": [
@@ -607,7 +647,17 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Incapable of being expressed; inexpressible; unutterable; ineffable. [Obs.] Run, run, Orlando; carve on every tree The fair, the chaste and",
+          "text": "Incapable of being expressed; inexpressible; unutterable; ineffable. [Obs.] Run, run, Orlando; carve on every tree The fair, the chaste and unexpressive she. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unextinguishable": {
+      "word": "UNEXTINGUISHABLE",
+      "definitions": [
+        {
+          "text": "Inextinguishable.",
           "partOfSpeech": "adjective"
         }
       ],

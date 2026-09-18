@@ -13,7 +13,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A period of time in which a new order of things prevails; a signal stage of history; an epoch.",
+          "text": "A period of time in which a new order of things prevails; a signal stage of history; an epoch. Painting may truly be said to have opened the new era of culture. J. A. Symonds.",
           "partOfSpeech": "noun"
         }
       ],
@@ -606,6 +606,45 @@
         }
       ],
       "relatedWords": []
+    },
+    "ere": {
+      "word": "ERE",
+      "definitions": [
+        {
+          "text": "Before; sooner than. [Archaic or Poetic] Myself was stirring ere the break of day. Shak. Ere sails were spread new oceans to explore. Dryden. Sir, come down ere my child die. John iv. 49.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "Rather than. I will be thrown into Etna, . . . ere I will leave her. Shak. Ere long, before, shortly. Shak.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "To plow. [Obs.] See Ear, v. t. Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "already",
+        "ante",
+        "before",
+        "before all",
+        "earlier",
+        "early",
+        "ere then",
+        "erenow",
+        "formerly",
+        "heretofore",
+        "hitherto",
+        "in advance of",
+        "or ever",
+        "preceding",
+        "previously",
+        "prior to",
+        "priorly",
+        "theretofore",
+        "to",
+        "yet"
+      ]
     },
     "erebus": {
       "word": "EREBUS",
@@ -1240,7 +1279,17 @@
       ],
       "relatedWords": []
     },
-    "eremiticeremitical": {
+    "eremitic": {
+      "word": "EREMITIC; EREMITICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an eremite; hermitical; living in solitude. \"An eremitical life in the woods.\" Fuller. \"The eremitic instinct.\" Lowell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eremitical": {
       "word": "EREMITIC; EREMITICAL",
       "definitions": [
         {
@@ -1310,7 +1359,17 @@
       ],
       "relatedWords": []
     },
-    "erewhileerewhiles": {
+    "erewhile": {
+      "word": "EREWHILE; EREWHILES",
+      "definitions": [
+        {
+          "text": "Some time ago; a little while before; heretofore. [Archaic] I am as fair now as I was erewhile. Shak.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "erewhiles": {
       "word": "EREWHILE; EREWHILES",
       "definitions": [
         {
@@ -1414,7 +1473,17 @@
       "word": "ERGOGRAPH",
       "definitions": [
         {
-          "text": "An instrument for measuring and recording the work done by a",
+          "text": "An instrument for measuring and recording the work done by a single muscle or set of muscles, the rate of fatigue, etc. -- Er`go*graph\"ic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ergometer": {
+      "word": "ERGOMETER",
+      "definitions": [
+        {
+          "text": "A device for measuring, or an instrument for indicating, energy expended or work done; a dynamometer. -- Er`go*met\"ric (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1504,7 +1573,17 @@
       ],
       "relatedWords": []
     },
-    "eriacheric": {
+    "eriach": {
+      "word": "ERIACH; ERIC",
+      "definitions": [
+        {
+          "text": "A recompense formerly given by a murderer to the relatives of the murdered person.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eric": {
       "word": "ERIACH; ERIC",
       "definitions": [
         {
@@ -1654,7 +1733,17 @@
       ],
       "relatedWords": []
     },
-    "eristiceristical": {
+    "eristic": {
+      "word": "ERISTIC; ERISTICAL",
+      "definitions": [
+        {
+          "text": "Controversial. [Archaic] A specimen of admirable special pleading in the court of eristic logic. Coleridge.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eristical": {
       "word": "ERISTIC; ERISTICAL",
       "definitions": [
         {
@@ -1694,7 +1783,17 @@
       ],
       "relatedWords": []
     },
-    "ermelinermilin": {
+    "ermelin": {
+      "word": "ERMELIN; ERMILIN",
+      "definitions": [
+        {
+          "text": "See Ermine. Shenstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ermilin": {
       "word": "ERMELIN; ERMILIN",
       "definitions": [
         {
@@ -1931,7 +2030,17 @@
       ],
       "relatedWords": []
     },
-    "ermineserminois": {
+    "ermines": {
+      "word": "ERMINES; ERMINOIS",
+      "definitions": [
+        {
+          "text": "See Note under Ermine, n., 4.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "erminois": {
       "word": "ERMINES; ERMINOIS",
       "definitions": [
         {
@@ -1951,22 +2060,26 @@
       ],
       "relatedWords": []
     },
-    "ernerne": {
+    "ern": {
       "word": "ERN; ERNE",
       "definitions": [
         {
           "text": "A sea eagle, esp. the European white-tailed sea eagle (Haliæetus albicilla).",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To stir with strong emotion; to grieve; to mourn.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "ern": {
-      "word": "ERN",
+    "erne": {
+      "word": "ERN; ERNE",
       "definitions": [
         {
-          "text": "To stir with strong emotion; to grieve; to mourn.",
-          "partOfSpeech": "verb"
+          "text": "A sea eagle, esp. the European white-tailed sea eagle (Haliæetus albicilla).",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2453,6 +2566,10 @@
         {
           "text": "(Bot.)",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Jagged or irregularly toothed, as if nibbled out or gnawed.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2609,19 +2726,13 @@
       ],
       "relatedWords": []
     },
-    "eroticerotical": {
+    "erotic": {
       "word": "EROTIC; EROTICAL",
       "definitions": [
         {
           "text": "Of or pertaining to the passion of love; treating of love; amatory.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "erotic": {
-      "word": "EROTIC",
-      "definitions": [
+        },
         {
           "text": "An amorous composition or poem.",
           "partOfSpeech": "noun"
@@ -2711,6 +2822,16 @@
         "venereal",
         "voluptuous"
       ]
+    },
+    "erotical": {
+      "word": "EROTIC; EROTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the passion of love; treating of love; amatory.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "eroticism": {
       "word": "EROTICISM",
@@ -3684,6 +3805,16 @@
         "zigzag"
       ]
     },
+    "erratical": {
+      "word": "ERRATICAL",
+      "definitions": [
+        {
+          "text": "Erratic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "erration": {
       "word": "ERRATION",
       "definitions": [
@@ -3757,7 +3888,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Containing error; not conformed to truth or justice; incorrect; false; mistaken; as, an erroneous doctrine; erroneous opinion,",
+          "text": "Containing error; not conformed to truth or justice; incorrect; false; mistaken; as, an erroneous doctrine; erroneous opinion, observation, deduction, view, etc.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4318,7 +4449,17 @@
         "whilom"
       ]
     },
-    "erubescenceerubescency": {
+    "erubescence": {
+      "word": "ERUBESCENCE; ERUBESCENCY",
+      "definitions": [
+        {
+          "text": "The act of becoming red; redness of the skin or surface of anything; a blushing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "erubescency": {
       "word": "ERUBESCENCE; ERUBESCENCY",
       "definitions": [
         {
@@ -4378,7 +4519,54 @@
       ],
       "relatedWords": []
     },
-    "eructeructate": {
+    "eruct": {
+      "word": "ERUCT; ERUCTATE",
+      "definitions": [
+        {
+          "text": "To eject, as wind, from the stomach; to belch. [R.] Howell.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "belch",
+        "blow open",
+        "blow out",
+        "break out",
+        "burp",
+        "burst forth",
+        "burst out",
+        "cast forth",
+        "debouch",
+        "decant",
+        "discharge",
+        "disembogue",
+        "disgorge",
+        "ejaculate",
+        "eject",
+        "eructate",
+        "erupt",
+        "exhaust",
+        "expel",
+        "extravasate",
+        "hiccup",
+        "hurl forth",
+        "irrupt",
+        "jet",
+        "outpour",
+        "pour",
+        "pour forth",
+        "pour out",
+        "send forth",
+        "send out",
+        "spew",
+        "spout",
+        "spurt",
+        "squirt",
+        "throw out",
+        "vomit"
+      ]
+    },
+    "eructate": {
       "word": "ERUCT; ERUCTATE",
       "definitions": [
         {
@@ -4906,7 +5094,17 @@
       ],
       "relatedWords": []
     },
-    "erythreanerythraean": {
+    "erythrean": {
+      "word": "ERYTHREAN; ERYTHRAEAN",
+      "definitions": [
+        {
+          "text": "Red in color. \"The erythrean main.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "erythraean": {
       "word": "ERYTHREAN; ERYTHRAEAN",
       "definitions": [
         {
@@ -4926,7 +5124,29 @@
       ],
       "relatedWords": []
     },
-    "erythrinerythrine": {
+    "erythrin": {
+      "word": "ERYTHRIN; ERYTHRINE",
+      "definitions": [
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A colorless crystalline substance, C20H22O10, extracted from certain lichens, as the various species of Rocella. It is a derivative of orsellinic acid. So called because of certain red compounds derived from it. Called also erythric acid.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Erythrite, 2.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "erythrine": {
       "word": "ERYTHRIN; ERYTHRINE",
       "definitions": [
         {
@@ -5090,7 +5310,17 @@
       ],
       "relatedWords": []
     },
-    "erythrophyllerythrophyllin": {
+    "erythrophyll": {
+      "word": "ERYTHROPHYLL; ERYTHROPHYLLIN",
+      "definitions": [
+        {
+          "text": "The red coloring matter of leaves, fruits, flowers, etc., in distinction from chlorophyll.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "erythrophyllin": {
       "word": "ERYTHROPHYLL; ERYTHROPHYLLIN",
       "definitions": [
         {

@@ -136,6 +136,16 @@
         "wizen"
       ]
     },
+    "bakedmeat": {
+      "word": "BAKEMEAT; BAKED-MEAT",
+      "definitions": [
+        {
+          "text": "A pie; baked food. [Obs.] Gen. xl. 17. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "bakehouse": {
       "word": "BAKEHOUSE",
       "definitions": [
@@ -146,7 +156,7 @@
       ],
       "relatedWords": []
     },
-    "bakemeatbakedmeat": {
+    "bakemeat": {
       "word": "BAKEMEAT; BAKED-MEAT",
       "definitions": [
         {
@@ -374,7 +384,17 @@
       ],
       "relatedWords": []
     },
-    "baksheeshbakshish": {
+    "baksheesh": {
+      "word": "BAKSHEESH; BAKSHISH",
+      "definitions": [
+        {
+          "text": "Same as Backsheesh.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bakshish": {
       "word": "BAKSHEESH; BAKSHISH",
       "definitions": [
         {

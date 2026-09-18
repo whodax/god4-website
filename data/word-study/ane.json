@@ -63,7 +63,17 @@
       ],
       "relatedWords": []
     },
-    "anecdoticanecdotical": {
+    "anecdotic": {
+      "word": "ANECDOTIC; ANECDOTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, consisting of, or addicted to, anecdotes. \"Anecdotical traditions.\" Bolingbroke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anecdotical": {
       "word": "ANECDOTIC; ANECDOTICAL",
       "definitions": [
         {
@@ -253,7 +263,17 @@
         "wind-speed indicator"
       ]
     },
-    "anemometricanemometrical": {
+    "anemometric": {
+      "word": "ANEMOMETRIC; ANEMOMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to anemometry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anemometrical": {
       "word": "ANEMOMETRIC; ANEMOMETRICAL",
       "definitions": [
         {
@@ -365,7 +385,7 @@
       ],
       "relatedWords": []
     },
-    "anencephalicanencephalous": {
+    "anencephalic": {
       "word": "ANENCEPHALIC; ANENCEPHALOUS",
       "definitions": [
         {
@@ -375,7 +395,31 @@
       ],
       "relatedWords": []
     },
-    "anenstanent": {
+    "anencephalous": {
+      "word": "ANENCEPHALIC; ANENCEPHALOUS",
+      "definitions": [
+        {
+          "text": "Without a brain; brainless. Todd & B.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anenst": {
+      "word": "ANENST; ANENT",
+      "definitions": [
+        {
+          "text": "Over against; as, he lives anent the church.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "About; concerning; in respect; as, he said nothing anent this particular.",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anent": {
       "word": "ANENST; ANENT",
       "definitions": [
         {
@@ -399,7 +443,17 @@
       ],
       "relatedWords": []
     },
-    "anergiaanergy": {
+    "anergia": {
+      "word": "ANERGIA; ANERGY",
+      "definitions": [
+        {
+          "text": "Lack of energy; inactivity. -- An*er\"gic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anergy": {
       "word": "ANERGIA; ANERGY",
       "definitions": [
         {
@@ -433,7 +487,7 @@
       ],
       "relatedWords": []
     },
-    "anesthesiaanesthetic": {
+    "anesthesia": {
       "word": "ANESTHESIA; ANESTHETIC",
       "definitions": [
         {
@@ -441,7 +495,190 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "abatement",
+        "allayment",
+        "alleviation",
+        "analgesia",
+        "anesthetizing",
+        "anxiety equivalent",
+        "appeasement",
+        "assuagement",
+        "autism",
+        "callousness",
+        "catatonia",
+        "chill",
+        "chilliness",
+        "cold blood",
+        "cold heart",
+        "coldheartedness",
+        "coldness",
+        "coolness",
+        "deadening",
+        "deadness",
+        "deadpan",
+        "depraved appetite",
+        "diminishment",
+        "diminution",
+        "dispassion",
+        "dispassionateness",
+        "dulling",
+        "dullness",
+        "ease",
+        "easement",
+        "easing",
+        "electronarcosis",
+        "emotional deadness",
+        "emotionlessness",
+        "frigidity",
+        "frostiness",
+        "heartlessness",
+        "iciness",
+        "immovability",
+        "impassibility",
+        "impassiveness",
+        "impassivity",
+        "imperception",
+        "imperceptiveness",
+        "imperceptivity",
+        "impercipience",
+        "inconsiderateness",
+        "inexcitability",
+        "insensibility",
+        "insensibleness",
+        "insensitiveness",
+        "insensitivity",
+        "insentience",
+        "lack of affect",
+        "lack of feeling",
+        "lack of touch",
+        "lessening",
+        "lulling",
+        "mitigation",
+        "mollification",
+        "narcosis",
+        "narcotization",
+        "neurasthenia",
+        "numbing",
+        "numbness",
+        "objectivity",
+        "obtuseness",
+        "palliation",
+        "paresthesia",
+        "parorexia",
+        "passionlessness",
+        "pica",
+        "pins and needles",
+        "poker face",
+        "reduction",
+        "relief",
+        "remedy",
+        "salving",
+        "self-absorption",
+        "softening",
+        "soothing",
+        "soullessness",
+        "speech abnormality",
+        "spiritlessness",
+        "straight face",
+        "subduement",
+        "thick skin",
+        "unemotionalism",
+        "unexcitability",
+        "unfeeling",
+        "unfeelingness",
+        "unimpressibility",
+        "unimpressionableness",
+        "unpassionateness",
+        "unperceptiveness",
+        "unresponsiveness",
+        "unsusceptibility",
+        "unsympatheticness",
+        "untouchability",
+        "withdrawal"
+      ]
+    },
+    "anesthetic": {
+      "word": "ANESTHESIA; ANESTHETIC",
+      "definitions": [
+        {
+          "text": "Same as Anæsthesia, Anæsthetic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Mickey Finn",
+        "Pentothal",
+        "alleviating",
+        "alleviative",
+        "analgesic",
+        "anodyne",
+        "assuasive",
+        "balmy",
+        "balsamic",
+        "benumbing",
+        "cathartic",
+        "chloroform",
+        "cleansing",
+        "cocaine",
+        "deadening",
+        "demulcent",
+        "dope",
+        "drug",
+        "dull",
+        "dulling",
+        "easing",
+        "emollient",
+        "ether",
+        "ethyl chloride",
+        "ethylene",
+        "gas",
+        "hard",
+        "hypnotic",
+        "impassible",
+        "impenetrable",
+        "impermeable",
+        "impervious",
+        "insensate",
+        "insensitive",
+        "knockout drop",
+        "lenitive",
+        "lullaby",
+        "mandrake",
+        "menthol",
+        "mitigating",
+        "mitigative",
+        "morphia",
+        "morphine",
+        "narcotic",
+        "nightcap",
+        "nitrous oxide",
+        "numbing",
+        "obtuse",
+        "opiate",
+        "opium",
+        "pain-killer",
+        "pain-killing",
+        "palliative",
+        "poppy",
+        "purgative",
+        "relieving",
+        "remedial",
+        "rocky",
+        "sedative",
+        "sleep-bringer",
+        "sleep-inducer",
+        "sleep-producer",
+        "sleeping pill",
+        "softening",
+        "somnifacient",
+        "soothing",
+        "soporific",
+        "stunning",
+        "stupefying",
+        "subduing",
+        "tranquilizer"
+      ]
     },
     "anet": {
       "word": "ANET",
@@ -528,28 +765,6 @@
         "two times",
         "yet again"
       ]
-    },
-    "anewtointerpolatefrinterpolusinterpolisfalsifiedvamped": {
-      "word": "anew, to interpolate, fr. interpolus, interpolis, falsified, vamped",
-      "definitions": [
-        {
-          "text": "To renew; to carry on with intermission. [Obs.] Motion . . . partly continued and unintermitted, . . . partly interpolated and interrupted. Sir M. Hale.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To alter or corrupt by the insertion of new or foreign matter; especially, to change, as a book or text, by the insertion of matter that is new, or foreign to the purpose of the author. How strangely Ignatius is mangled and interpolated, you may see by the vast difference of all copies and editions. Bp. Barlow. The Athenians were put in possession of Salamis by another law, which was cited by Solon, or, as some think, interpolated by him for that purpose. Pope.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Math.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To fill up intermediate terms of, as of a series, according to the law of the series; to introduce, as a number or quantity, in a partial series, according to the law of that part of the series.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
     }
   }
 }

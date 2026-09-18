@@ -725,7 +725,7 @@
       ],
       "relatedWords": []
     },
-    "brachycephalicbrachycephalous": {
+    "brachycephalic": {
       "word": "BRACHYCEPHALIC; BRACHYCEPHALOUS",
       "definitions": [
         {
@@ -735,7 +735,27 @@
       ],
       "relatedWords": []
     },
-    "brachycephalybrachycephalism": {
+    "brachycephalism": {
+      "word": "BRACHYCEPHALY; BRACHYCEPHALISM",
+      "definitions": [
+        {
+          "text": "The state or condition of being brachycephalic; shortness of head.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brachycephalous": {
+      "word": "BRACHYCEPHALIC; BRACHYCEPHALOUS",
+      "definitions": [
+        {
+          "text": "Having the skull short in proportion to its breadth; shortheaded; -- in distinction from dolichocephalic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brachycephaly": {
       "word": "BRACHYCEPHALY; BRACHYCEPHALISM",
       "definitions": [
         {
@@ -879,7 +899,7 @@
       ],
       "relatedWords": []
     },
-    "brachyuralbrachyurous": {
+    "brachyural": {
       "word": "BRACHYURAL; BRACHYUROUS",
       "definitions": [
         {
@@ -895,6 +915,16 @@
         {
           "text": "One of the Brachyura.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brachyurous": {
+      "word": "BRACHYURAL; BRACHYUROUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Brachyura.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1465,6 +1495,16 @@
       ],
       "relatedWords": []
     },
+    "brad": {
+      "word": "BRAD",
+      "definitions": [
+        {
+          "text": "A thin nail, usually small, with a slight projection at the top on one side instead of a head; also, a small wire nail, with a flat circular head; sometimes, a small, tapering, square-bodied finishing nail, with a countersunk head.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "bradawl": {
       "word": "BRAD AWL",
       "definitions": [
@@ -1631,6 +1671,10 @@
         {
           "text": "A boaster. O, I could play the woman with mine eyes, And braggart with my tongue. Shak.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Boastful.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -1830,7 +1874,7 @@
         "the Universal Ego"
       ]
     },
-    "brahmanbrahmin": {
+    "brahman": {
       "word": "BRAHMAN; BRAHMIN",
       "definitions": [
         {
@@ -1838,7 +1882,63 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Buddhist",
+        "Christian",
+        "Ramwat",
+        "anthroposophist",
+        "archduke",
+        "aristocrat",
+        "armiger",
+        "bairagi",
+        "baron",
+        "baronet",
+        "bashara",
+        "bhikhari",
+        "bhikshu",
+        "blue blood",
+        "count",
+        "daimio",
+        "duke",
+        "earl",
+        "esquire",
+        "gentleman",
+        "grand duke",
+        "grandee",
+        "guru",
+        "hidalgo",
+        "lace-curtain",
+        "laird",
+        "landgrave",
+        "lord",
+        "lordling",
+        "magnate",
+        "magnifico",
+        "margrave",
+        "marquis",
+        "noble",
+        "nobleman",
+        "optimate",
+        "palsgrave",
+        "patrician",
+        "peer",
+        "pujari",
+        "pundit",
+        "purohit",
+        "sannyasi",
+        "seigneur",
+        "seignior",
+        "silk-stocking",
+        "squire",
+        "swell",
+        "thoroughbred",
+        "upper-cruster",
+        "vairagi",
+        "viscount",
+        "waldgrave",
+        "yogi",
+        "yogin"
+      ]
     },
     "brahmaness": {
       "word": "BRAHMANESS",
@@ -1860,7 +1960,7 @@
       ],
       "relatedWords": []
     },
-    "brahmanismbrahminism": {
+    "brahmanism": {
       "word": "BRAHMANISM; BRAHMINISM",
       "definitions": [
         {
@@ -1870,11 +1970,21 @@
       ],
       "relatedWords": []
     },
-    "brahmanistbrahminist": {
+    "brahmanist": {
       "word": "BRAHMANIST; BRAHMINIST",
       "definitions": [
         {
           "text": "An adherent of the religion of the Brahmans.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brahmin": {
+      "word": "BRAHMAN; BRAHMIN",
+      "definitions": [
+        {
+          "text": "A person of the highest or sacerdotal caste among the Hindoos. Brahman bull (Zoöl.), the male of a variety of the zebu, or Indian ox, considered sacred by the Hindoos.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1886,6 +1996,26 @@
         {
           "text": "Of or pertaining to the Brahmans or to their doctrines and worship.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brahminism": {
+      "word": "BRAHMANISM; BRAHMINISM",
+      "definitions": [
+        {
+          "text": "The religion or system of doctrines of the Brahmans; the religion of Brahma.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brahminist": {
+      "word": "BRAHMANIST; BRAHMINIST",
+      "definitions": [
+        {
+          "text": "An adherent of the religion of the Brahmans.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1944,6 +2074,10 @@
         {
           "text": "To start; to awake. [Obs.] Chaucer.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "Deceitful. [Obs.] Since Frenchmen are so braid, Marry that will, I live and die a maid. Shak.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -2305,12 +2439,126 @@
       ],
       "relatedWords": []
     },
+    "brainless": {
+      "word": "BRAINLESS",
+      "definitions": [
+        {
+          "text": "Without understanding; silly; thougthless; witless.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "apish",
+        "asinine",
+        "batty",
+        "befooled",
+        "beguiled",
+        "besotted",
+        "buffoonish",
+        "cockeyed",
+        "crazy",
+        "credulous",
+        "daffy",
+        "daft",
+        "dazed",
+        "dizzy",
+        "doting",
+        "dumb",
+        "empty-headed",
+        "fatuitous",
+        "fatuous",
+        "featherbrained",
+        "featherheaded",
+        "flaky",
+        "fluttery",
+        "fond",
+        "fool",
+        "foolheaded",
+        "foolish",
+        "frivolous",
+        "fuddled",
+        "futile",
+        "gaga",
+        "giddy",
+        "giddy-brained",
+        "giddy-headed",
+        "giddy-pated",
+        "giddy-witted",
+        "goofy",
+        "gulled",
+        "harebrain",
+        "harebrained",
+        "headless",
+        "idiotic",
+        "ignorant",
+        "imbecile",
+        "inane",
+        "inept",
+        "infatuated",
+        "insane",
+        "insensate",
+        "irrational",
+        "kooky",
+        "lackbrained",
+        "lean-minded",
+        "lean-witted",
+        "loony",
+        "mad",
+        "maudlin",
+        "mindless",
+        "moronic",
+        "nitwitted",
+        "not bright",
+        "nutty",
+        "of little brain",
+        "pea-brained",
+        "pin-brained",
+        "rattlebrained",
+        "rattleheaded",
+        "rattlepated",
+        "reasonless",
+        "sappy",
+        "scatterbrained",
+        "scramblebrained",
+        "screwy",
+        "senseless",
+        "sentimental",
+        "shatterbrained",
+        "silly",
+        "slackminded",
+        "slackwitted",
+        "stupid",
+        "thoughtless",
+        "ungifted",
+        "unintellectual",
+        "unintelligent",
+        "unreasoning",
+        "untalented",
+        "unthinking",
+        "unwise",
+        "unwitty",
+        "wacky",
+        "weak-minded",
+        "wet",
+        "witless"
+      ]
+    },
     "brainpan": {
       "word": "BRAINPAN",
       "definitions": [
         {
           "text": "The bones which inclose the brain; the skull; the cranium.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brainsick": {
+      "word": "BRAINSICK",
+      "definitions": [
+        {
+          "text": "Disordered in the understanding; giddy; thoughtless.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2361,8 +2609,24 @@
       ]
     },
     "braise": {
-      "word": "BRAISE",
+      "word": "BRAISE; BRAIZE",
       "definitions": [
+        {
+          "text": "A European marine fish (Pagrus vulgaris) allied to the American scup; the becker. The name is sometimes applied to the related species. [Also written brazier.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Charcoal powder; breeze.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Cookery)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Braised meat.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To stew or broil in a covered kettle or pan. A braising kettle has a deep cover which holds coals; consequently the cooking is done from above, as well as below. Mrs. Henderson.",
           "partOfSpeech": "verb"
@@ -2410,28 +2674,6 @@
         "toast"
       ]
     },
-    "braisebraize": {
-      "word": "BRAISE; BRAIZE",
-      "definitions": [
-        {
-          "text": "A European marine fish (Pagrus vulgaris) allied to the American scup; the becker. The name is sometimes applied to the related species. [Also written brazier.]",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Charcoal powder; breeze.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Cookery)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Braised meat.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "braiser": {
       "word": "BRAISER",
       "definitions": [
@@ -2453,8 +2695,24 @@
       "relatedWords": []
     },
     "braize": {
-      "word": "BRAIZE",
+      "word": "BRAISE; BRAIZE",
       "definitions": [
+        {
+          "text": "A European marine fish (Pagrus vulgaris) allied to the American scup; the becker. The name is sometimes applied to the related species. [Also written brazier.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Charcoal powder; breeze.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Cookery)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Braised meat.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Braise.",
           "partOfSpeech": "noun"
@@ -2468,6 +2726,18 @@
         {
           "text": "of Break. [Arhaic] Tennyson.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fern of the genus Pteris, esp. the P. aquilina, common in almost all countries. It has solitary stems dividing into three principal branches. Less properly: Any fern.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thicket; a place overgrown with shrubs and brambles, with undergrowth and ferns, or with canes. Rounds rising hillocks, brakes obscure and rough, To shelter thee from tempest and from rain. Shak. He stayed not for brake, and he stopped not for stone. Sir W. Scott. Cane brake, a thicket of canes. See Canebrake.",
+          "partOfSpeech": "noun"
         },
         {
           "text": "An instrument or machine to break or bruise the woody part of flax or hemp so that it may be separated from the fiber.",
@@ -2815,7 +3085,17 @@
       ],
       "relatedWords": []
     },
-    "braminbraminic": {
+    "bramin": {
+      "word": "BRAMIN; BRAMINIC",
+      "definitions": [
+        {
+          "text": ", etc. See Brahman, Brachmanic, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "braminic": {
       "word": "BRAMIN; BRAMINIC",
       "definitions": [
         {
@@ -3632,6 +3912,34 @@
       "word": "BRAND",
       "definitions": [
         {
+          "text": "A burning piece of wood; or a stick or piece of wood partly burnt, whether burning or after the fire is extinct. Snatching a live brand from a wigwam, Mason threw it on a matted roof. Palfrey.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sword, so called from its glittering or flashing brightness. [Poetic] Tennyson. Paradise, so late their happy seat, Waved over by that flaming brand. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mark made by burning with a hot iron, as upon a cask, to designate the quality, manufacturer, etc., of the contents, or upon an animal, to designate ownership; -- also, a mark for a similar purpose made in any other way, as with a stencil. Hence, figurately: Quality; kind; grade; as, a good brand of flour.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mark put upon criminals with a hot iron. Hence: Any mark of infamy or vice; a stigma. The brand of private vice. Channing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An instrument to brand with; a branding iron.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any minute fungus which produces a burnt appearance in plants. The brands are of many species and several genera of the order Pucciniæi.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To burn a distinctive mark into or upon with a hot iron, to indicate quality, ownership, etc., or to mark as infamous (as a convict).",
           "partOfSpeech": "verb"
         },
@@ -3644,7 +3952,15 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To mark or impress indelibly, as with a hot iron.",
+          "text": "To mark or impress indelibly, as with a hot iron. As if it were branded on my mind. Geo. Eliot. Brand\"er, n.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "One who, or that which, brands; a branding iron.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A gridiron. [Scot.]",
           "partOfSpeech": "verb"
         }
       ],
@@ -4208,24 +4524,6 @@
       ],
       "relatedWords": []
     },
-    "brandishvibrateakintoskrviptotrembleicelveifatowave": {
-      "word": "brandish, vibrate; akin to Skr. vip to tremble, Icel. veifa to wave,",
-      "definitions": [
-        {
-          "text": "To brandish; to move to and fro; to swing; as, to vibrate a sword or a staff.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To mark or measure by moving to and fro; as, a pendulum vibrating seconds.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To affect with vibratory motion; to set in vibration. Breath vocalized, that is, vibrated or undulated, may . . . impress a swift, tremulous motion. Holder. Star to star vibrates light. Tennyson.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "brandle": {
       "word": "BRANDLE",
       "definitions": [
@@ -4236,7 +4534,17 @@
       ],
       "relatedWords": []
     },
-    "brandlingbrandlin": {
+    "brandlin": {
+      "word": "BRANDLING; BRANDLIN",
+      "definitions": [
+        {
+          "text": "Same as Branlin, fish and worm.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brandling": {
       "word": "BRANDLING; BRANDLIN",
       "definitions": [
         {
@@ -4338,6 +4646,14 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "A sort of bridle with wooden side pieces. [Scot. & Prov. Eng.] Jamieson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A scolding bridle, an instrument formerly used for correcting scolding women. It was an iron frame surrounding the head and having a triangular piece entering the mouth of the scold.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To hold up and toss the head; -- applied to horses as spurning the bit. [Scot. & Prov. Eng.]",
           "partOfSpeech": "verb"
         },
@@ -4348,7 +4664,7 @@
       ],
       "relatedWords": []
     },
-    "brankbranks": {
+    "branks": {
       "word": "BRANK; BRANKS",
       "definitions": [
         {
@@ -4425,6 +4741,14 @@
         },
         {
           "text": "Steep. [Prov. Eng.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Steep; high. [Obs.] Grapes grow on the brant rocks so wonderfully that ye will marvel how any man dare climb up to them. Ascham.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Smooth; unwrinkled. [Scot.] Your bonnie brow was brent. Burns.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4625,7 +4949,7 @@
       ],
       "relatedWords": []
     },
-    "brasierbrazier": {
+    "brasier": {
       "word": "BRASIER; BRAZIER",
       "definitions": [
         {
@@ -4639,7 +4963,17 @@
       ],
       "relatedWords": []
     },
-    "brasilinbrasilein": {
+    "brasilein": {
+      "word": "BRASILIN; BRASILEIN",
+      "definitions": [
+        {
+          "text": "A substance, C16H14O5, extracted from brazilwood as a yellow crystalline powder which is white when pure. It is colored intensely red by alkalies on exposure to the air, being oxidized to bra*sil\"e*in, C16H12O5, to which brazilwood owes its dyeing properties.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brasilin": {
       "word": "BRASILIN; BRASILEIN",
       "definitions": [
         {
@@ -6852,7 +7186,11 @@
       "word": "BRAWLING",
       "definitions": [
         {
-          "text": "Quarreling; quarrelsome; noisy.",
+          "text": "Quarreling; quarrelsome; noisy. She is an irksome brawling scold. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Making a loud confused noise. See Brawl, v. i., 3. A brawling stream. J. S. Shairp.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7636,8 +7974,16 @@
       "relatedWords": []
     },
     "brazier": {
-      "word": "BRAZIER",
+      "word": "BRASIER; BRAZIER",
       "definitions": [
+        {
+          "text": "An artificer who works in brass. Franklin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pan for holding burning coals.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Brasier.",
           "partOfSpeech": "noun"
@@ -7660,6 +8006,10 @@
       "definitions": [
         {
           "text": "Of or pertaining to Brasil.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or an inhabitant of Brazil. Brazilian pebble. See Pebble, n., 2.",
           "partOfSpeech": "adjective"
         }
       ],

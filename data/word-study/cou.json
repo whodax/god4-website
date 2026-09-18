@@ -1783,6 +1783,10 @@
       "word": "COUNTER",
       "definitions": [
         {
+          "text": "A prefix meaning contrary, opposite, in opposition; as, counteract, counterbalance, countercheck. See Counter, adv. & a.",
+          "partOfSpeech": ""
+        },
+        {
           "text": "One who counts, or reckons up; a calculator; a reckoner.",
           "partOfSpeech": "noun"
         },
@@ -1800,6 +1804,10 @@
         },
         {
           "text": "A telltale; a contrivance attached to an engine, printing press, or other machine, for the purpose of counting the revolutions or the pulsations. Knight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A table or board on which money is counted and over which business is transacted; a long, narrow table or bench, on which goods are laid for examination by purchasers, or on which they are weighed or measured.",
           "partOfSpeech": "noun"
         },
         {
@@ -3514,7 +3522,7 @@
       ],
       "relatedWords": []
     },
-    "counterirritantcounterirritation": {
+    "counterirritant": {
       "word": "COUNTERIRRITANT; COUNTERIRRITATION",
       "definitions": [
         {
@@ -3522,7 +3530,29 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "adjuvant",
+        "antacid",
+        "antidote",
+        "buffer",
+        "carminative",
+        "counteractant",
+        "counteractive",
+        "counteragent",
+        "emmenagogue",
+        "expectorant",
+        "hormone",
+        "maturative",
+        "neutralizer",
+        "nullifier",
+        "offset",
+        "preventative",
+        "preventive",
+        "prophylactic",
+        "remedy",
+        "vasodilator",
+        "vitamin"
+      ]
     },
     "counterirritate": {
       "word": "COUNTERIRRITATE",
@@ -3530,6 +3560,16 @@
         {
           "text": "To produce counter irritation in; to treat with one morbid process for the purpose of curing another.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "counterirritation": {
+      "word": "COUNTERIRRITANT; COUNTERIRRITATION",
+      "definitions": [
+        {
+          "text": "See Counter irritant, etc., under Counter, a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3819,6 +3859,10 @@
         {
           "text": "To move in a contrary direction to.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A movement in opposition to another.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -3865,7 +3909,7 @@
         "working proposition"
       ]
     },
-    "countermovecountermovement": {
+    "countermovement": {
       "word": "COUNTERMOVE; COUNTERMOVEMENT",
       "definitions": [
         {
@@ -4212,6 +4256,14 @@
       "word": "COUNTERPOISE",
       "definitions": [
         {
+          "text": "To act against with equal weight; to equal in weght; to balance the weight of; to counterbalance. Weigts, counterpoising one another. Sir K. Digby.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act against with equal power; to balance. So many freeholders of English will be able to beard and counterpoise the rest. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "A weight sufficient to balance another, as in the opposite scale of a balance; an equal weight. Fastening that to our exact balance, we put a metalline counterpoise into the opposite scale. Boyle.",
           "partOfSpeech": "noun"
         },
@@ -4256,7 +4308,7 @@
       ],
       "relatedWords": []
     },
-    "counterrevolutionarycounterrevolutionary": {
+    "counterrevolutionary": {
       "word": "COUNTERREVOLUTIONARY; COUNTER-REVOLUTIONARY",
       "definitions": [
         {
@@ -4928,7 +4980,49 @@
       ],
       "relatedWords": []
     },
-    "countinghousecountingroom": {
+    "countinghouse": {
+      "word": "COUNTINGHOUSE; COUNTINGROOM",
+      "definitions": [
+        {
+          "text": "The house or room in which a merchant, trader, or manufacturer keeps his books and transacts business.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "boutique",
+        "chain store",
+        "co-op",
+        "concession",
+        "cooperative",
+        "country store",
+        "department store",
+        "dime store",
+        "discount house",
+        "discount store",
+        "emporium",
+        "establishment",
+        "five-and-ten",
+        "general store",
+        "house",
+        "magasin",
+        "mail-order house",
+        "market",
+        "mart",
+        "post",
+        "retail store",
+        "salon",
+        "shop",
+        "store",
+        "supermarket",
+        "trading post",
+        "variety shop",
+        "variety store",
+        "warehouse",
+        "wareroom",
+        "wholesale house"
+      ]
+    },
+    "countingroom": {
       "word": "COUNTINGHOUSE; COUNTINGROOM",
       "definitions": [
         {
@@ -5014,7 +5108,17 @@
       ],
       "relatedWords": []
     },
-    "countourcountourhouse": {
+    "countour": {
+      "word": "COUNTOUR; COUNTOURHOUSE",
+      "definitions": [
+        {
+          "text": "A merchant's office; a countinghouse. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "countourhouse": {
       "word": "COUNTOUR; COUNTOURHOUSE",
       "definitions": [
         {
@@ -5030,20 +5134,6 @@
         {
           "text": "Same as prefix Counter-. [Obs.]",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "countrepesencounterpeisenfcontrepeserseecounteradvand": {
-      "word": "countrepesen, counterpeisen, F. contrepeser. See Counter, adv., and",
-      "definitions": [
-        {
-          "text": "To act against with equal weight; to equal in weght; to balance the weight of; to counterbalance. Weigts, counterpoising one another. Sir K. Digby.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To act against with equal power; to balance. So many freeholders of English will be able to beard and counterpoise the rest. Spenser.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -5126,6 +5216,30 @@
     "country": {
       "word": "COUNTRY",
       "definitions": [
+        {
+          "text": "A tract of land; a region; the territory of an independent nation; (as distinguished from any other region, and with a personal pronoun) the region of one's birth, permanent residence, or citizenship. Return unto thy country, and to thy kindred. Gen. xxxxii. 9. I might have learned this by my last exile, that change of countries cannot change my state. Stirling. Many a famous realm And country, whereof here needs no account Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Rural regions, as opposed to a city or town. As they walked, on their way into the country. Mark xvi. 12 (Rev. Ver. ). God made the covatry, and man made the town. Cowper. Only very great men were in the habit of dividing the year between town and country. Macualay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The inhabitants or people of a state or a region; the populace; the public. Hence: (a) One's constituents. (b) The whole body of the electors of state; as, to dissolve Parliament and appeal to the country. All the country in a general voice Cried hate upon him. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law) (a) A jury, as representing the citizens of a country. (b) The inhabitants of the district from which a jury is drawn.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The rock through which a vein runs. Conclusion to the country. See under Conclusion. constituents; to stand trial before a jury.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Pertaining to the regions remote from a city; rural; rustic; as, a country life; a country town; the country party, as opposed to city.",
           "partOfSpeech": "adjective"

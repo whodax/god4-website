@@ -25,22 +25,32 @@
       ],
       "relatedWords": []
     },
+    "pasch": {
+      "word": "PASCH; PASCHA",
+      "definitions": [
+        {
+          "text": "The passover; the feast of Easter. Pasch egg. See Easter egg, under Easter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pascha": {
+      "word": "PASCH; PASCHA",
+      "definitions": [
+        {
+          "text": "The passover; the feast of Easter. Pasch egg. See Easter egg, under Easter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "paschal": {
       "word": "PASCHAL",
       "definitions": [
         {
           "text": "Of or pertaining to the passover, or to Easter; as, a paschal lamb; paschal eggs. Longfellow. Paschal candle (R. C. Ch.), a large wax candle, blessed and placed on the altar on Holy Saturday, or the day before Easter.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "paschpascha": {
-      "word": "PASCH; PASCHA",
-      "definitions": [
-        {
-          "text": "The passover; the feast of Easter. Pasch egg. See Easter egg, under Easter.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -107,7 +117,17 @@
       ],
       "relatedWords": []
     },
-    "pasigraphicpasigraphical": {
+    "pasigraphic": {
+      "word": "PASIGRAPHIC; PASIGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pasigraphy.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "pasigraphical": {
       "word": "PASIGRAPHIC; PASIGRAPHICAL",
       "definitions": [
         {
@@ -429,7 +449,7 @@
       ],
       "relatedWords": []
     },
-    "passacagliapassacaglio": {
+    "passacaglia": {
       "word": "PASSACAGLIA; PASSACAGLIO",
       "definitions": [
         {
@@ -439,7 +459,39 @@
       ],
       "relatedWords": []
     },
-    "passadepassado": {
+    "passacaglio": {
+      "word": "PASSACAGLIA; PASSACAGLIO",
+      "definitions": [
+        {
+          "text": "An old Italian or Spanish dance tune, in slow three-four measure, with divisions on a ground bass, resembling a chaconne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "passade": {
+      "word": "PASSADE; PASSADO",
+      "definitions": [
+        {
+          "text": "(Fencing)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pass or thrust. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Man.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A turn or course of a horse backward or forward on the same spot of ground.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "passado": {
       "word": "PASSADE; PASSADO",
       "definitions": [
         {
@@ -561,6 +613,26 @@
       ],
       "relatedWords": []
     },
+    "passe": {
+      "word": "PASSE; PASSEE",
+      "definitions": [
+        {
+          "text": "Past; gone by; hence, past one's prime; worn; faded; as, a passée belle. Ld. Lytton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "passee": {
+      "word": "PASSE; PASSEE",
+      "definitions": [
+        {
+          "text": "Past; gone by; hence, past one's prime; worn; faded; as, a passée belle. Ld. Lytton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "passegarde": {
       "word": "PASSEGARDE",
       "definitions": [
@@ -639,16 +711,6 @@
         {
           "text": "A light picture frame or mat of cardboard, wood, or the like, usually put between the picture and the glass, and sometimes serving for several pictures.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "passepassee": {
-      "word": "PASSE; PASSEE",
-      "definitions": [
-        {
-          "text": "Past; gone by; hence, past one's prime; worn; faded; as, a passée belle. Ld. Lytton.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -961,7 +1023,17 @@
       ],
       "relatedWords": []
     },
-    "passiveballoonpassiveaeroplane": {
+    "passiveaeroplane": {
+      "word": "PASSIVE BALLOON; PASSIVE AEROPLANE",
+      "definitions": [
+        {
+          "text": "One unprovided with motive power.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "passiveballoon": {
       "word": "PASSIVE BALLOON; PASSIVE AEROPLANE",
       "definitions": [
         {
@@ -1341,7 +1413,29 @@
       ],
       "relatedWords": []
     },
-    "pastilpastille": {
+    "pastil": {
+      "word": "PASTIL; PASTILLE",
+      "definitions": [
+        {
+          "text": "(Pharmacy)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small cone or mass made of paste of gum, benzoin, cinnamon, and other aromatics, -- used for fumigating or scenting the air of a room.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An aromatic or medicated lozenge; a troche.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Pastel, a crayon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pastille": {
       "word": "PASTIL; PASTILLE",
       "definitions": [
         {

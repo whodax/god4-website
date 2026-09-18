@@ -1,26 +1,32 @@
 {
   "version": "v1",
   "entries": {
-    "teileniceldeilaswdeladandelegothdailjanseedeal": {
-      "word": "teilen, Icel. deila, Sw. dela, Dan. dele, Goth. dailjan. See Deal,",
+    "teniacide": {
+      "word": "TAENIACIDE; TENIACIDE",
       "definitions": [
         {
-          "text": "To divide; to separate in portions; hence, to give in portions; to distribute; to bestow successively; -- sometimes with out. Is not to deal thy bread to the hungry Is. lviii. 7. And Rome deals out her blessings and her gold. Tickell. The nightly mallet deals resounding blows. Gay. Hissing through the skies, the feathery deaths were dealt. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Specifically: To distribute, as cards, to the players at the commencement of a game; as, to deal the cards; to deal one a jack.",
+          "text": "A remedy to destroy tapeworms.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "teutonicorigincfdzoordrylgsoorthemeaningprobably": {
-      "word": "Teutonic origin; cf. D. zoor dry, LG. soor; the meaning probably",
+    "teniafuge": {
+      "word": "TAENIAFUGE; TENIAFUGE",
       "definitions": [
         {
-          "text": "Of a yellowish or redish brown color; as, a sorrel horse.",
-          "partOfSpeech": "adjective"
+          "text": "A remedy to expel tapeworms.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "teniasis": {
+      "word": "TAENIASIS; TENIASIS",
+      "definitions": [
+        {
+          "text": "Ill health due to tænia, or tapeworms.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -167,7 +173,17 @@
       ],
       "relatedWords": []
     },
-    "teadteade": {
+    "tead": {
+      "word": "TEAD; TEADE",
+      "definitions": [
+        {
+          "text": "A torch. [Obs.] \"A burning teade.\" Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "teade": {
       "word": "TEAD; TEADE",
       "definitions": [
         {
@@ -387,6 +403,10 @@
         {
           "text": "To move and act with turbulent violence; to rush with violence; hence, to rage; to rave.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "The act of tearing, or the state of being torn; a rent; a fissure. Macaulay. Wear and tear. See under Wear, n.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -415,7 +435,17 @@
       "word": "TEARFUL",
       "definitions": [
         {
-          "text": "Abounding with tears; weeping; shedding tears; as, tearful",
+          "text": "Abounding with tears; weeping; shedding tears; as, tearful eyes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tearless": {
+      "word": "TEARLESS",
+      "definitions": [
+        {
+          "text": "Shedding no tears; free from tears; unfeeling.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -863,6 +893,16 @@
       ],
       "relatedWords": []
     },
+    "technography": {
+      "word": "TECHNOGRAPHY",
+      "definitions": [
+        {
+          "text": "Description of the arts and crafts of tribes and peoples. -- Tech`no*graph\"ic, Tech`no*graph\"ic*al (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "technologic": {
       "word": "TECHNOLOGIC",
       "definitions": [
@@ -1103,7 +1143,7 @@
       "word": "TEDIOUS",
       "definitions": [
         {
-          "text": "Involving tedium; tiresome from continuance, prolixity,",
+          "text": "Involving tedium; tiresome from continuance, prolixity, slowness, or the like; wearisome. I see a man's life is a tedious one. Shak. I would not be tedious to the court. Bunyan.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1611,7 +1651,7 @@
       "word": "TEGULAR",
       "definitions": [
         {
-          "text": "Of or pertaining to a tile; resembling a tile, or arranged like",
+          "text": "Of or pertaining to a tile; resembling a tile, or arranged like tiles; consisting of tiles; as, a tegular pavement.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1809,7 +1849,7 @@
       "word": "TELAUTOGRAPH",
       "definitions": [
         {
-          "text": "A facsimile telegraph for reproducing writing, pictures, maps, etc. In the transmitter the motions of the pencil are communicated by levers to two rotary shafts, by which variations in current are produced in two separate circuits. In the receiver these variations",
+          "text": "A facsimile telegraph for reproducing writing, pictures, maps, etc. In the transmitter the motions of the pencil are communicated by levers to two rotary shafts, by which variations in current are produced in two separate circuits. In the receiver these variations are utilized by electromagnetic devices and levers to move a pen as the pencil moves. --Tel`au*tog\"ra*phist (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1849,7 +1889,7 @@
       "word": "TELEGONY",
       "definitions": [
         {
-          "text": "The supposed influence of a father upon offspring subsequent to",
+          "text": "The supposed influence of a father upon offspring subsequent to his own, begotten of the same mother by another father. -- Te*leg\"o*nous (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1904,6 +1944,16 @@
       "definitions": [
         {
           "text": "Of or pertaining to the telegraph; made or communicated by a telegraph; as, telegraphic signals; telegraphic art; telegraphic intelligence.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "telegraphical": {
+      "word": "TELEGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Telegraphic.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2013,11 +2063,21 @@
       ],
       "relatedWords": []
     },
+    "telemechanic": {
+      "word": "TELEMECHANIC",
+      "definitions": [
+        {
+          "text": "Designating, or pert. to, any device for operating mechanisms at a distance. --Tel`e*mech\"a*nism (#), n.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "telemeteorograph": {
       "word": "TELEMETEOROGRAPH",
       "definitions": [
         {
-          "text": "Any apparatus recording meteorological phenomena at a distance from the measuring apparatus, as by electricity or by compressed air;",
+          "text": "Any apparatus recording meteorological phenomena at a distance from the measuring apparatus, as by electricity or by compressed air; esp., an apparatus recording conditions at many distant stations at a central office. -- Tel`e*me`te*or*o*graph\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2033,11 +2093,31 @@
       ],
       "relatedWords": []
     },
+    "telemetrograph": {
+      "word": "TELEMETROGRAPH",
+      "definitions": [
+        {
+          "text": "A combination of the camera lucida and telescope for drawing and measuring distant objects. -- Tel`e*me*trog\"ra*phy (#), n. -- Tel`e*met`ro*graph\"ic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "telemotor": {
       "word": "TELEMOTOR",
       "definitions": [
         {
           "text": "A hydraulic device by which the movement of the wheel on the bridge operates the steering gear at the stern.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "telenergy": {
+      "word": "TELENERGY",
+      "definitions": [
+        {
+          "text": "Display of force or energy at a distance, or without contact; - - applied to mediumistic phenomena. -- Tel`en*er\"gic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2059,6 +2139,16 @@
         {
           "text": "An extensive order of bony fishes including most of the common market species, as bass, salmon, cod, perch, etc.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "teleological": {
+      "word": "TELEOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to teleology, or the doctrine of design.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2181,7 +2271,17 @@
       ],
       "relatedWords": []
     },
-    "teleozoonteleozooen": {
+    "teleozoon": {
+      "word": "TELEOZOON; TELEOZOOEN",
+      "definitions": [
+        {
+          "text": "A metazoan.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "teleozooen": {
       "word": "TELEOZOON; TELEOZOOEN",
       "definitions": [
         {
@@ -2195,7 +2295,7 @@
       "word": "TELEPATHY",
       "definitions": [
         {
-          "text": "The sympathetic affection of one mind by the thoughts, feelings, or emotions of another at a distance, without communication",
+          "text": "The sympathetic affection of one mind by the thoughts, feelings, or emotions of another at a distance, without communication through the ordinary channels of sensation.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2375,7 +2475,29 @@
       ],
       "relatedWords": []
     },
-    "telescopictelescopical": {
+    "telescopic": {
+      "word": "TELESCOPIC; TELESCOPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a telescope; performed by a telescope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Seen or discoverable only by a telescope; as, telescopic stars.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Able to discern objects at a distance; farseeing; far-reaching; as, a telescopic eye; telescopic vision.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the power of extension by joints sliding one within another, like the tube of a small telescope or a spyglass; especially (Mach.), constructed of concentric tubes, either stationary, as in the telescopic boiler, or movable, as in the telescopic chimney of a war vessel, which may be put out of sight by being lowered endwise.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "telescopical": {
       "word": "TELESCOPIC; TELESCOPICAL",
       "definitions": [
         {
@@ -2437,6 +2559,16 @@
       ],
       "relatedWords": []
     },
+    "teleseism": {
+      "word": "TELESEISM",
+      "definitions": [
+        {
+          "text": "A seismic movement or shock far from the recording instrument.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "teleseme": {
       "word": "TELESEME",
       "definitions": [
@@ -2457,7 +2589,17 @@
       ],
       "relatedWords": []
     },
-    "telesmatictelesmatical": {
+    "telesmatic": {
+      "word": "TELESMATIC; TELESMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to telesms; magical. J. Gregory.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "telesmatical": {
       "word": "TELESMATIC; TELESMATICAL",
       "definitions": [
         {
@@ -2472,6 +2614,16 @@
       "definitions": [
         {
           "text": "A spectroscope arranged to be attached to a telescope for observation of distant objects, as the sun or stars. Lockyer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "telestereograph": {
+      "word": "TELESTEREOGRAPH",
+      "definitions": [
+        {
+          "text": "An instrument for telegraphically reproducing a photograph. -- Tel`e*ste`re*og\"ra*phy (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2557,7 +2709,17 @@
       ],
       "relatedWords": []
     },
-    "telharmoniumtelharmony": {
+    "telharmonium": {
+      "word": "TELHARMONIUM; TELHARMONY",
+      "definitions": [
+        {
+          "text": "An instrument for producing music (Tel*har\"mo*ny []), at a distant point or points by means of alternating currents of electricity controlled by an operator who plays on a keyboard. The music is produced by a receiving instrument similar or analogous to the telephone, but not held to the ear. The pitch corresponds with frequency of alternation of current.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "telharmony": {
       "word": "TELHARMONIUM; TELHARMONY",
       "definitions": [
         {
@@ -2685,6 +2847,16 @@
         {
           "text": "A genus of marine bivalve mollusks having thin, delicate, and often handsomely colored shells.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "telling": {
+      "word": "TELLING",
+      "definitions": [
+        {
+          "text": "Operating with great effect; effective; as, a telling speech.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2919,7 +3091,17 @@
       ],
       "relatedWords": []
     },
-    "telotrochaltelotrochous": {
+    "telotrochal": {
+      "word": "TELOTROCHAL; TELOTROCHOUS",
+      "definitions": [
+        {
+          "text": "Having both a preoral and a posterior band of cilla; -- applied to the larvæ of certain annelids.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "telotrochous": {
       "word": "TELOTROCHAL; TELOTROCHOUS",
       "definitions": [
         {
@@ -3001,7 +3183,7 @@
       "word": "TEMERARIOUS",
       "definitions": [
         {
-          "text": "Unreasonably adventurous; despising danger; rash; headstrong;",
+          "text": "Unreasonably adventurous; despising danger; rash; headstrong; audacious; reckless; heedless. I spake against temerarious judgment. Latimer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3359,7 +3541,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Fig.: Any violent tumult or commotion; as, a political tempest; a",
+          "text": "Fig.: Any violent tumult or commotion; as, a political tempest; a tempest of war, or of the passions.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fashionable assembly; a drum. See the Note under Drum, n., 4. [Archaic] Smollett. compounds; as, tempest-beaten, tempest-loving, tempest-tossed, tempest-winged, and the like.",
           "partOfSpeech": "noun"
         },
         {
@@ -3397,7 +3583,7 @@
       "word": "TEMPESTUOUS",
       "definitions": [
         {
-          "text": "Of or pertaining to a tempest; involving or resembling a tempest; turbulent; violent; stormy; as, tempestuous weather; a",
+          "text": "Of or pertaining to a tempest; involving or resembling a tempest; turbulent; violent; stormy; as, tempestuous weather; a tempestuous night; a tempestuous debate. They saw the Hebrew leader, Waiting, and clutching his tempestuous beard. Longfellow.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3440,6 +3626,18 @@
       "definitions": [
         {
           "text": "A contrivence used in a loom for keeping the web stretched transversely.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The space, on either side of the head, back of the eye and forehead, above the zygomatic arch and in front of the ear.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the side bars of a pair of spectacles, jointed to the bows, and passing one on either side of the head to hold the spectacles in place.",
           "partOfSpeech": "noun"
         },
         {
@@ -3512,6 +3710,14 @@
       "definitions": [
         {
           "text": "Of or pertaining to the temple or temples; as, the temporal bone; a temporal artery. Temporal bone, a very complex bone situated in the side of the skull of most mammals and containing the organ of hearing. It consists of an expanded squamosal portion above the ear, corresponding to the squamosal and zygoma of the lower vertebrates, and a thickened basal petrosal and mastoid portion, corresponding to the periotic and tympanic bones of the lower vertebrates.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to time, that is, to the present life, or this world; secular, as distinguished from sacred or eternal. The things which are seen are temporal, but the things which are not seen are eternal. 2 Cor. iv. 18. Is this an hour for temporal affairs Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Civil or political, as distinguished from ecclesiastical; as, temporal power; temporal courts. Lords temporal. See under Lord, n.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3835,7 +4041,7 @@
       "word": "TEMPTING",
       "definitions": [
         {
-          "text": "Adapted to entice or allure; attractive; alluring; seductive;",
+          "text": "Adapted to entice or allure; attractive; alluring; seductive; enticing; as, tempting pleasures.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3861,7 +4067,17 @@
       ],
       "relatedWords": []
     },
-    "temulencetemulency": {
+    "temulence": {
+      "word": "TEMULENCE; TEMULENCY",
+      "definitions": [
+        {
+          "text": "Intoxication; inebriation; drunkenness. [R.] \"Their temulency.\" Jer. Taylor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "temulency": {
       "word": "TEMULENCE; TEMULENCY",
       "definitions": [
         {
@@ -4067,6 +4283,16 @@
       ],
       "relatedWords": []
     },
+    "tenantable": {
+      "word": "TENANTABLE",
+      "definitions": [
+        {
+          "text": "Fit to be rented; in a condition suitable for a tenant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "tenantless": {
       "word": "TENANTLESS",
       "definitions": [
@@ -4136,6 +4362,14 @@
         },
         {
           "text": "To await; to expect. [Obs.] Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move in a certain direction; -- usually with to or towards. Two gentlemen tending towards that sight. Sir H. Wotton. Thus will this latter, as the former world, Still tend from bad to worse. Milton. The clouds above me to the white Alps tend. Byron.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be directed, as to any end, object, or purpose; to aim; to have or give a leaning; to exert activity or influence; to serve as a means; to contribute; as, our petitions, if granted, might tend to our destruction. The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want. Prov. xxi. 5. The laws of our religion tend to the universal happiness of mankind. Tillotson.",
           "partOfSpeech": "verb"
         }
       ],
@@ -4291,7 +4525,7 @@
       "word": "TENDER-HEARTED",
       "definitions": [
         {
-          "text": "Having great sensibility; susceptible of impressions or",
+          "text": "Having great sensibility; susceptible of impressions or influence; affectionate; pitying; sensitive. Rehoboam was young and tender-hearted, and could not withstand them. 2 Chron. xiii. 7. Be ye kind one to another, tender-hearted. Eph. iv. 32.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4439,19 +4673,13 @@
       ],
       "relatedWords": []
     },
-    "tenderhenceproperlythetenderbranchorspringofaplantcf": {
-      "word": "tender; hence, properly, the tender branch or spring of a plant: cf.",
-      "definitions": [
-        {
-          "text": "A slender, leafless portion of a plant by which it becomes attached to a supporting body, after which the tendril usually contracts by coiling spirally. an axillary branch, as in the passion flower; stipules, as in the genus Smilax; or the end of a leaf, as in the pea.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "tendril": {
       "word": "TENDRIL",
       "definitions": [
+        {
+          "text": "A slender, leafless portion of a plant by which it becomes attached to a supporting body, after which the tendril usually contracts by coiling spirally. an axillary branch, as in the passion flower; stipules, as in the genus Smilax; or the end of a leaf, as in the pea.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Clasping; climbing as a tendril. [R.] Dyer.",
           "partOfSpeech": "adjective"
@@ -4459,7 +4687,17 @@
       ],
       "relatedWords": []
     },
-    "tendriledtendrilled": {
+    "tendriled": {
+      "word": "TENDRILED; TENDRILLED",
+      "definitions": [
+        {
+          "text": "Furnished with tendrils, or with such or so many, tendrils. \"The thousand tendriled vine.\" Southey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tendrilled": {
       "word": "TENDRILED; TENDRILLED",
       "definitions": [
         {
@@ -4565,6 +4803,16 @@
         {
           "text": "The quality or state of being tenebrous; tenebrousness. Burton.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tenebrous": {
+      "word": "TENEBROUS",
+      "definitions": [
+        {
+          "text": "Dark; gloomy; dusky; tenebrious. The most dark, tenebrous night. J. Hall (1565). The towering and tenebrous boughts of the cypress. Longfellow.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4743,7 +4991,7 @@
       "word": "TENNIS",
       "definitions": [
         {
-          "text": "A play in which a ball is driven to and fro, or kept in motion by striking it with a racket or with the open hand. Shak. His easy bow, his good stories, his style of dancing and playing tennis, . . . were familiar to all London. Macaulay. Court tennis, the old game of tennis as played within walled courts",
+          "text": "A play in which a ball is driven to and fro, or kept in motion by striking it with a racket or with the open hand. Shak. His easy bow, his good stories, his style of dancing and playing tennis, . . . were familiar to all London. Macaulay. Court tennis, the old game of tennis as played within walled courts of peculiar construction; -- distinguished from lawn tennis. Shak.",
           "partOfSpeech": "noun"
         },
         {
@@ -4915,6 +5163,10 @@
       "word": "TENPENNY",
       "definitions": [
         {
+          "text": "Valued or sold at ten pence; as, a tenpenny cake. See 2d Penny, n.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "Denoting a size of nails. See 1st Penny.",
           "partOfSpeech": "adjective"
         }
@@ -4959,7 +5211,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Stretched tightly; strained to stiffness; rigid; not lax; as, a tense fiber. The temples were sunk, her forehead was tense, and a fatal paleness",
+          "text": "Stretched tightly; strained to stiffness; rigid; not lax; as, a tense fiber. The temples were sunk, her forehead was tense, and a fatal paleness was upon her. Goldsmith.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5227,7 +5479,17 @@
       ],
       "relatedWords": []
     },
-    "tentaculatetentaculated": {
+    "tentaculate": {
+      "word": "TENTACULATE; TENTACULATED",
+      "definitions": [
+        {
+          "text": "Having tentacles, or organs like tentacles; tentacled.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tentaculated": {
       "word": "TENTACULATE; TENTACULATED",
       "definitions": [
         {
@@ -5449,7 +5711,17 @@
       ],
       "relatedWords": []
     },
-    "tenthmetertenthmetre": {
+    "tenthmeter": {
+      "word": "TENTHMETER; TENTHMETRE",
+      "definitions": [
+        {
+          "text": "A unit for the measurement of many small lengths, such that 1010 of these units make one meter; the ten millionth part of a millimeter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tenthmetre": {
       "word": "TENTHMETER; TENTHMETRE",
       "definitions": [
         {
@@ -5783,7 +6055,7 @@
       "word": "TEPID",
       "definitions": [
         {
-          "text": "Moderately warm; lukewarm; as, a tepid bath; tepid rays; tepid",
+          "text": "Moderately warm; lukewarm; as, a tepid bath; tepid rays; tepid vapors.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6363,7 +6635,17 @@
       ],
       "relatedWords": []
     },
-    "tergeminaltergeminate": {
+    "tergeminal": {
+      "word": "TERGEMINAL; TERGEMINATE",
+      "definitions": [
+        {
+          "text": "Thrice twin; having three pairs of leaflets.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tergeminate": {
       "word": "TERGEMINAL; TERGEMINATE",
       "definitions": [
         {
@@ -6495,7 +6777,47 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A quadrangular pillar, adorned on the top with the figure of a",
+          "text": "A quadrangular pillar, adorned on the top with the figure of a head, as of a man, woman, or satyr; -- called also terminal figure. See Terminus, n., 2 and 3. the base. Terms rudely carved were formerly used for landmarks or boundaries. Gwilt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Alg.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of a compound quantity; as, a or b in a + b; ab or cd in ab - cd.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The menses.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Propositions or promises, as in contracts, which, when assented to or accepted by another, settle the contract and bind the parties; conditions.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In Scotland, the time fixed for the payment of rents. days in England and Ireland. There are two legal terms -- Whitsunday, May 15, and Martinmas, Nov. 11; and two conventional terms -- Candlemas, Feb. 2, and Lammas day, Aug. 1. Mozley & W.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece of carved work placed under each end of the taffrail. J. Knowels. In term, in set terms; in formal phrase. [Obs.] I can not speak in term. Chaucer. by law fixed and taxable in the costs of a cause for each or any term it is in court. composed. to force (one) to come to terms. any other vocables that occur of the language. There is, however, a difference between them which is worthy of being kept in mind. Word is generic; it denotes an utterance which represents or expresses our thoughts and feelings. Term originally denoted one of the two essential members of a proposition in logic, and hence signifies a word of specific meaning, and applicable to a definite class of objects. Thus, we may speak of a scientific or a technical term, and of stating things in distinct terms. Thus we say, \"the term minister literally denotes servant;\" \"an exact definition of terms is essential to clearness of thought;\" \"no term of reproach can sufficiently express my indignation;\" \"every art has its peculiar and distinctive terms,\" etc. So also we say, \"purity of style depends on the choice of words, and precision of style on a clear understanding of the terms used.\" Term is chiefly applied to verbs, nouns, and adjectives, these being capable of standing as terms in a logical proposition; while prepositions and conjunctions, which can never be so employed, are rarely spoken of as terms, but simply as words.",
           "partOfSpeech": "noun"
         },
         {
@@ -6537,7 +6859,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Tumultuous; turbulent; boisterous; furious; quarrelsome;",
+          "text": "Tumultuous; turbulent; boisterous; furious; quarrelsome; scolding. A termagant, imperious, prodigal, profligate wench. Arbuthnot.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6601,6 +6923,16 @@
       ],
       "relatedWords": []
     },
+    "terminable": {
+      "word": "TERMINABLE",
+      "definitions": [
+        {
+          "text": "Capable of being terminated or bounded; limitable. stated, definite number of years; -- distinguished from life annuity, and perpetual annuity.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "terminal": {
       "word": "TERMINAL",
       "definitions": [
@@ -6613,7 +6945,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Growing at the end of a branch or stem; terminating; as, a terminal bud, flower, or spike. Terminal moraine. See the Note under",
+          "text": "Growing at the end of a branch or stem; terminating; as, a terminal bud, flower, or spike. Terminal moraine. See the Note under Moraine. body's motion. (b) The limit toward which the velocity of a body approaches, as of a body falling through the air.",
           "partOfSpeech": "adjective"
         },
         {
@@ -6729,7 +7061,7 @@
       "word": "TERMINATIVE",
       "definitions": [
         {
-          "text": "Tending or serving to terminate; terminating; determining;",
+          "text": "Tending or serving to terminate; terminating; determining; definitive. Bp. Rust.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6799,6 +7131,16 @@
         {
           "text": "One of a class of theologians who maintain that God has fixed a certain term for the probation of individual persons, during which period, and no longer, they have the offer to grace. Murdock.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "terminological": {
+      "word": "TERMINOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to terminology.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6965,7 +7307,7 @@
       "word": "TERNATE",
       "definitions": [
         {
-          "text": "Having the parts arranged by threes; as, ternate branches,",
+          "text": "Having the parts arranged by threes; as, ternate branches, leaves, or flowers.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7084,6 +7426,30 @@
     "terrace": {
       "word": "TERRACE",
       "definitions": [
+        {
+          "text": "A raised level space, shelf, or platform of earth, supported on one or more sides by a wall, a bank of tuft, or the like, whether designed for use or pleasure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A balcony, especially a large and uncovered one.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A flat roof to a house; as, the buildings of the Oriental nations are covered with terraces.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A street, or a row of houses, on a bank or the side of a hill; hence, any street, or row of houses.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A level plain, usually with a steep front, bordering a river, a lake, or sometimes the sea. levels, indicating the flood plains at successive periods in their history. Terrace epoch. (Geol.) See Drift epoch, under Drift, a.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To form into a terrace or terraces; to furnish with a terrace or terraces, as, to terrace a garden, or a building. Sir H. Wotton. Clermont's terraced height, and Esher's groves. Thomson.",
           "partOfSpeech": "verb"
@@ -7291,7 +7657,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Adapted for the observation of objects on land and on the earth; as, a terrestrial telescope, in distinction from an astronomical",
+          "text": "Adapted for the observation of objects on land and on the earth; as, a terrestrial telescope, in distinction from an astronomical telescope.",
           "partOfSpeech": "adjective"
         },
         {
@@ -7359,7 +7725,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Excessive; extreme; severe. [Colloq.] The terrible coldness of the season. Clarendon.",
+          "text": "Excessive; extreme; severe. [Colloq.] The terrible coldness of the season. Clarendon. shocking; awful.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7649,7 +8015,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Elegantly concise; free of superfluous words; polished to smoothness; as, terse language; a terse style. Terse, luminous, and dignified eloquence. Macaulay. A poet, too, was there, whose verse Was tender, musical, and terse. Longfellow. Johnson \"cleanly written\", i. e., free from blemishes, neat or smooth. Its present sense is \"free from excrescences,\" and hence, compact, with smoothness, grace, or elegance, as in the following lones of Whitehead: - \"In eight terse lines has Phædrus told (So frugal were the bards of old) A tale of goats; and closed with grace, Plan, moral, all, in that short space.\" It differs from concise in not implying, perhaps,",
+          "text": "Elegantly concise; free of superfluous words; polished to smoothness; as, terse language; a terse style. Terse, luminous, and dignified eloquence. Macaulay. A poet, too, was there, whose verse Was tender, musical, and terse. Longfellow. Johnson \"cleanly written\", i. e., free from blemishes, neat or smooth. Its present sense is \"free from excrescences,\" and hence, compact, with smoothness, grace, or elegance, as in the following lones of Whitehead: - \"In eight terse lines has Phædrus told (So frugal were the bards of old) A tale of goats; and closed with grace, Plan, moral, all, in that short space.\" It differs from concise in not implying, perhaps, quite as much condensation, but chiefly in the additional idea of \"grace or elegance.\" -- Terse\"ly, adv.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7833,7 +8199,17 @@
       ],
       "relatedWords": []
     },
-    "teslacoilteslatransformer": {
+    "teslacoil": {
+      "word": "TESLA COIL; TESLA TRANSFORMER",
+      "definitions": [
+        {
+          "text": "A transformer without iron, for high frequency alternating or oscillating currents; an oscillation transformer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "teslatransformer": {
       "word": "TESLA COIL; TESLA TRANSFORMER",
       "definitions": [
         {
@@ -8019,11 +8395,27 @@
         {
           "text": "To make a testament, or will. [Obs.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The external hard or firm covering of many invertebrate animals. chitin; in mollusks it is composed chiefly of calcium carbonate, and is called the shell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The outer integument of a seed; the episperm, or spermoderm.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "testtesta": {
+    "testa": {
       "word": "TEST; TESTA",
       "definitions": [
         {
@@ -8575,7 +8967,17 @@
       ],
       "relatedWords": []
     },
-    "testudinatetestudinated": {
+    "testudinate": {
+      "word": "TESTUDINATE; TESTUDINATED",
+      "definitions": [
+        {
+          "text": "Resembling a tortoise shell in appearance or structure; roofed; arched; vaulted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "testudinated": {
       "word": "TESTUDINATE; TESTUDINATED",
       "definitions": [
         {
@@ -8651,6 +9053,10 @@
           "partOfSpeech": "adjective"
         },
         {
+          "text": "Producing, or tending to produce, tetanus, or tonic contraction of the muscles; as, a tetanic remedy. See Tetanic, n.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A substance (notably nux vomica, strychnine, and brucine) which, either as a remedy or a poison, acts primarily on the spinal cord, and which, when taken in comparatively large quantity, produces tetanic spasms or convulsions.",
           "partOfSpeech": "noun"
         }
@@ -8673,6 +9079,16 @@
         {
           "text": "The production or condition of tetanus.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetanize": {
+      "word": "TETANIZE",
+      "definitions": [
+        {
+          "text": "To throw, as a muscle, into a state of permanent contraction; to cause tetanus in. See Tetanus, n., 2.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -8743,7 +9159,7 @@
       "word": "TETARTOHEDRAL",
       "definitions": [
         {
-          "text": "Having one fourth the number of planes which are requisite to",
+          "text": "Having one fourth the number of planes which are requisite to complete symmetry.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9065,7 +9481,17 @@
       ],
       "relatedWords": []
     },
-    "tetradactyltetradactyle": {
+    "tetradactyl": {
+      "word": "TETRADACTYL; TETRADACTYLE",
+      "definitions": [
+        {
+          "text": "Tetradactylous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetradactyle": {
       "word": "TETRADACTYL; TETRADACTYLE",
       "definitions": [
         {
@@ -9145,7 +9571,17 @@
       ],
       "relatedWords": []
     },
-    "tetradrachmtetradrachma": {
+    "tetradrachm": {
+      "word": "TETRADRACHM; TETRADRACHMA",
+      "definitions": [
+        {
+          "text": "A silver coin among the ancient Greeks, of the value of four drachms. The Attic tetradrachm was equal to 3s. 3d. sterling, or about 76 cents.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetradrachma": {
       "word": "TETRADRACHM; TETRADRACHMA",
       "definitions": [
         {
@@ -9181,11 +9617,15 @@
         {
           "text": "A plant of the order Tetradynamia.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Belonging to the order Tetradynamia; having six stamens, four of which are uniformly longer than the others.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "tetradynamiantetradynamous": {
+    "tetradynamous": {
       "word": "TETRADYNAMIAN; TETRADYNAMOUS",
       "definitions": [
         {
@@ -9267,7 +9707,17 @@
       ],
       "relatedWords": []
     },
-    "tetragyniantetragynous": {
+    "tetragynian": {
+      "word": "TETRAGYNIAN; TETRAGYNOUS",
+      "definitions": [
+        {
+          "text": "Belonging to the order Tetragynia; having four styles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetragynous": {
       "word": "TETRAGYNIAN; TETRAGYNOUS",
       "definitions": [
         {
@@ -9433,7 +9883,17 @@
       ],
       "relatedWords": []
     },
-    "tetrandriantetrandrous": {
+    "tetrandrian": {
+      "word": "TETRANDRIAN; TETRANDROUS",
+      "definitions": [
+        {
+          "text": "Belonging to the class Tetrandria.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetrandrous": {
       "word": "TETRANDRIAN; TETRANDROUS",
       "definitions": [
         {
@@ -9463,7 +9923,17 @@
       ],
       "relatedWords": []
     },
-    "tetrapharmacomtetrapharmacum": {
+    "tetrapharmacom": {
+      "word": "TETRAPHARMACOM; TETRAPHARMACUM",
+      "definitions": [
+        {
+          "text": "A combination of wax, resin, lard, and pitch, composing an ointment. Brande & C.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetrapharmacum": {
       "word": "TETRAPHARMACOM; TETRAPHARMACUM",
       "definitions": [
         {
@@ -9661,7 +10131,7 @@
       "word": "TETRASPORE",
       "definitions": [
         {
-          "text": "A nonsexual spore, one of a group of four regularly occurring",
+          "text": "A nonsexual spore, one of a group of four regularly occurring in red seaweeds.",
           "partOfSpeech": "noun"
         }
       ],
@@ -9691,7 +10161,17 @@
       ],
       "relatedWords": []
     },
-    "tetrasyllabictetrasyllabical": {
+    "tetrasyllabic": {
+      "word": "TETRASYLLABIC; TETRASYLLABICAL",
+      "definitions": [
+        {
+          "text": "Consisting of, or having, four syllables; quadrisyllabic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetrasyllabical": {
       "word": "TETRASYLLABIC; TETRASYLLABICAL",
       "definitions": [
         {
@@ -9771,7 +10251,17 @@
       ],
       "relatedWords": []
     },
-    "tetrazinetetrazin": {
+    "tetrazine": {
+      "word": "TETRAZINE; TETRAZIN",
+      "definitions": [
+        {
+          "text": "A hypothetical compound, C2H2N4 which may be regarded as benzene with four CH groups replaced by nitrogen atoms; also, any of various derivatives of the same. There are three isomeric varieties.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetrazin": {
       "word": "TETRAZINE; TETRAZIN",
       "definitions": [
         {
@@ -9811,7 +10301,17 @@
       ],
       "relatedWords": []
     },
-    "tetrictetrical": {
+    "tetric": {
+      "word": "TETRIC; TETRICAL",
+      "definitions": [
+        {
+          "text": "Forward; perverse; harsh; sour; rugged. [Obs.] -- Tet\"ric*al*ness, n.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tetrical": {
       "word": "TETRIC; TETRICAL",
       "definitions": [
         {
@@ -10193,8 +10693,8 @@
       ],
       "relatedWords": []
     },
-    "texeretextumtoweaveconstructcomposecfgrtakshtocut": {
-      "word": "texere, textum, to weave, construct, compose; cf. Gr. taksh to cut,",
+    "text": {
+      "word": "TEXT",
       "definitions": [
         {
           "text": "A discourse or composition on which a note or commentary is written; the original words of an author, in distinction from a paraphrase, annotation, or commentary. Chaucer.",
@@ -10219,13 +10719,7 @@
         {
           "text": "A style of writing in large characters; text-hand also, a kind of type used in printing; as, German text. Text blindness. (Physiol.) See Word blindness, under Word. kind of metallic pen used in engrossing, or in writing text-hand.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "text": {
-      "word": "TEXT",
-      "definitions": [
+        },
         {
           "text": "To write in large characters, as in text hand. [Obs.] Beau. & Fl.",
           "partOfSpeech": "verb"

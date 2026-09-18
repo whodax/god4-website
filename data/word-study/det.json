@@ -1343,7 +1343,7 @@
         "unearth"
       ]
     },
-    "detectabledetectible": {
+    "detectable": {
       "word": "DETECTABLE; DETECTIBLE",
       "definitions": [
         {
@@ -1351,7 +1351,55 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "apparent",
+        "appreciable",
+        "beholdable",
+        "determinable",
+        "discernible",
+        "disclosable",
+        "disclosed",
+        "discoverable",
+        "evident",
+        "exposable",
+        "exposed",
+        "exposed to view",
+        "findable",
+        "hanging out",
+        "hot",
+        "in evidence",
+        "in full view",
+        "in plain sight",
+        "in view",
+        "insight",
+        "manifest",
+        "naked",
+        "noticeable",
+        "observable",
+        "open",
+        "open to view",
+        "outcropping",
+        "palpable",
+        "perceivable",
+        "perceptible",
+        "recognizable",
+        "revealed",
+        "seeable",
+        "sensible",
+        "showing",
+        "spottable",
+        "tangible",
+        "to be seen",
+        "unclouded",
+        "unconcealed",
+        "undisguised",
+        "unhidden",
+        "viewable",
+        "visible",
+        "visual",
+        "warm",
+        "witnessable"
+      ]
     },
     "detecter": {
       "word": "DETECTER",
@@ -1359,6 +1407,16 @@
         {
           "text": "One who, or that which, detects or brings to light; one who finds out what another attempts to conceal; a detector.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "detectible": {
+      "word": "DETECTABLE; DETECTIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being detected or found out; as, parties not detectable. \"Errors detectible at a glance.\" Latham.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4947,7 +5005,7 @@
       "word": "DETRUSION",
       "definitions": [
         {
-          "text": "The act of thrusting or driving down or outward; outward",
+          "text": "The act of thrusting or driving down or outward; outward thrust.",
           "partOfSpeech": "noun"
         }
       ],

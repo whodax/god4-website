@@ -1,6 +1,20 @@
 {
   "version": "v1",
   "entries": {
+    "bouch": {
+      "word": "BOUCHE; BOUCH",
+      "definitions": [
+        {
+          "text": "A mouth. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An allowance of meat and drink for the tables of inferior officers or servants in a nobleman's palace or at court. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "bouche": {
       "word": "BOUCHE",
       "definitions": [
@@ -11,13 +25,7 @@
         {
           "text": "Same as Bush, to line.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bouchebouch": {
-      "word": "BOUCHE; BOUCH",
-      "definitions": [
+        },
         {
           "text": "A mouth. [Obs.]",
           "partOfSpeech": "noun"
@@ -389,6 +397,18 @@
         {
           "text": "Same as Bowlder.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A large stone, worn smooth or rounded by the action of water; a large pebble.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mass of any rock, whether rounded or not, that has been transported by natural agencies from its native bed. See Drift. Bowlder clay, the unstratified clay deposit of the Glacial or Drift epoch, often containing large numbers of bowlders.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -403,7 +423,7 @@
       ],
       "relatedWords": []
     },
-    "bouleboulework": {
+    "boule": {
       "word": "BOULE; BOULEWORK",
       "definitions": [
         {
@@ -520,6 +540,16 @@
       "definitions": [
         {
           "text": "Complete overthrow; disorder; a turning upside down.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boulework": {
+      "word": "BOULE; BOULEWORK",
+      "definitions": [
+        {
+          "text": "Same as Buhl, Buhlwork.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1665,7 +1695,7 @@
       "word": "BOUNDARY",
       "definitions": [
         {
-          "text": "That which indicates or fixes a limit or extent, or marks a bound, as of a territory; a bounding or separating line; a real or imaginary limit.",
+          "text": "That which indicates or fixes a limit or extent, or marks a bound, as of a territory; a bounding or separating line; a real or imaginary limit. But still his native country lies Beyond the boundaries of the skies. N. Cotton. That bright and tranquil stream, the boundary of Louth and Meath. Macaulay. Sensation and reflection are the boundaries of our thoughts. Locke. confines; precinct. Bound, Boundary. Boundary, in its original and strictest sense, is a visible object or mark indicating a limit. Bound is the limit itself. But in ordinary usage the two words are made interchangeable.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2080,7 +2110,7 @@
       "word": "BOUNTEOUS",
       "definitions": [
         {
-          "text": "Liberal in charity; disposed to give freely; generously liberal; munificent; beneficent; free in bestowing gifts; as, bounteous production.",
+          "text": "Liberal in charity; disposed to give freely; generously liberal; munificent; beneficent; free in bestowing gifts; as, bounteous production. But O, thou bounteous Giver of all good. Cowper.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2200,7 +2230,7 @@
         "wholesale"
       ]
     },
-    "bountiheadbountyhood": {
+    "bountihead": {
       "word": "BOUNTIHEAD; BOUNTYHOOD",
       "definitions": [
         {
@@ -2333,6 +2363,16 @@
         "welfare aid",
         "welfare payments"
       ]
+    },
+    "bountyhood": {
+      "word": "BOUNTIHEAD; BOUNTYHOOD",
+      "definitions": [
+        {
+          "text": "Goodness; generosity. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     },
     "bouquet": {
       "word": "BOUQUET",
@@ -2699,9 +2739,126 @@
       ],
       "relatedWords": []
     },
-    "bournbourne": {
+    "bourn": {
       "word": "BOURN; BOURNE",
       "definitions": [
+        {
+          "text": "A stream or rivulet; a burn. My little boat can safely pass this perilous bourn. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bound; a boundary; a limit. Hence: Point aimed at; goal. Where the land slopes to its watery bourn. Cowper. The undiscovered country, from whose bourn No traveler returns. Shak. Sole bourn, sole wish, sole object of my song. Wordsworth. To make the doctrine . . . their intellectual bourne. Tyndall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "adolescent stream",
+        "anchorage",
+        "arroyo",
+        "beck",
+        "border line",
+        "bound",
+        "boundary",
+        "boundary condition",
+        "boundary line",
+        "braided stream",
+        "branch",
+        "break boundary",
+        "breakoff point",
+        "brook",
+        "brooklet",
+        "burn",
+        "ceiling",
+        "channel",
+        "circumscription",
+        "compass",
+        "confine",
+        "creek",
+        "crick",
+        "cutoff",
+        "cutoff point",
+        "deadline",
+        "delimitation",
+        "destination",
+        "determinant",
+        "division line",
+        "end",
+        "extremity",
+        "finish",
+        "floor",
+        "flowing stream",
+        "fluviation",
+        "fresh",
+        "freshet",
+        "frontier",
+        "gill",
+        "goal",
+        "harbor",
+        "haven",
+        "hedge",
+        "high-water mark",
+        "interface",
+        "kill",
+        "last stop",
+        "lazy stream",
+        "limen",
+        "limit",
+        "limitation",
+        "limiting factor",
+        "line",
+        "line of demarcation",
+        "low-water mark",
+        "lower limit",
+        "march",
+        "mark",
+        "meandering stream",
+        "mete",
+        "midchannel",
+        "midstream",
+        "millstream",
+        "moving road",
+        "navigable river",
+        "port",
+        "race",
+        "racing stream",
+        "river",
+        "rivulet",
+        "run",
+        "rundle",
+        "runlet",
+        "runnel",
+        "sike",
+        "spill stream",
+        "start",
+        "starting line",
+        "starting point",
+        "stop",
+        "stopping place",
+        "stream",
+        "stream action",
+        "streamlet",
+        "subterranean river",
+        "target date",
+        "term",
+        "terminal",
+        "terminal date",
+        "terminal point",
+        "terminus",
+        "threshold",
+        "time allotment",
+        "upper limit",
+        "wadi",
+        "watercourse",
+        "waterway"
+      ]
+    },
+    "bourne": {
+      "word": "BOURN; BOURNE",
+      "definitions": [
+        {
+          "text": "A stream or rivulet; a burn. My little boat can safely pass this perilous bourn. Spenser.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A bound; a boundary; a limit. Hence: Point aimed at; goal. Where the land slopes to its watery bourn. Cowper. The undiscovered country, from whose bourn No traveler returns. Shak. Sole bourn, sole wish, sole object of my song. Wordsworth. To make the doctrine . . . their intellectual bourne. Tyndall.",
           "partOfSpeech": "noun"
@@ -3007,72 +3164,6 @@
         {
           "text": "An incendiary; an inciter of quarrels. [Obs.] Animated by . . . John à Chamber, a very boutefeu, . . . they entered into open rebellion. Bacon.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bouterofgermanorigincfohgbozanakintoebeatseebeat": {
-      "word": "bouter; of German origin; cf. OHG. bozan, akin to E. beat. See Beat,",
-      "definitions": [
-        {
-          "text": "A limit; a bound; a goal; the extreme bound; the end. Here is my journey's end, here my butt And very sea mark of my utmost sail. Shak. and signifies properly the end line or boundary; the abuttal.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The thicker end of anything. See But.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A mark to be shot at; a target. Sir W. Scott. The groom his fellow groom at butts defies, And bends his bow, and levels with his eyes. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A person at whom ridicule, jest, or contempt is directed; as, the butt of the company. I played a sentence or two at my butt, which I thought very smart. Addison.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A push, thrust, or sudden blow, given by the head of an animal; as, the butt of a ram.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A thrust in fencing. To prove who gave the fairer butt, John shows the chalk on Robert's coat. Prior.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A piece of land left unplowed at the end of a field. The hay was growing upon headlands and butts in cornfields. Burrill.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Mech.) (a) A joint where the ends of two objects come squarely together without scrafing or chamfering; -- also called butt joint. (b) The end of a connecting rod or other like piece, to which the boxing is attached by the strap, cotter, and gib. (c) The portion of a half-coupling fastened to the end of a hose.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Shipbuilding)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The joint where two planks in a strake meet.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Carp.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A kind of hinge used in hanging doors, etc.; -- so named because fastened on the edge of the door, which butts against the casing, instead of on its face, like the strap hinge; also called butt hinge.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Leather Trade)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The thickest and stoutest part of tanned oxhides, used for soles of boots, harness, trunks.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The hut or shelter of the person who attends to the targets in rifle practice. Butt chain (Saddlery), a short chain attached to the end of a tug. Amen; and make me die a good old man! That's the butt end of a mother's blessing. Shak. A butt's length, the ordinary distance from the place of shooting to the butt, or mark. lands of the ordinary rectangular shape, butts are the lines at the ends (F. bouts), and bounds are those on the sides, or sidings, as they were formerly termed. Burrill. flat ends, or edges, of a piece of iron or steel, or of separate pieces, without having them overlap. See Weld. . ran full butt at the lieutenant.\" Marryat.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

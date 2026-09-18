@@ -172,6 +172,10 @@
         {
           "text": "To coalesce, as a result of growth; to combine into a uniform whole; to blend; as, two organs or parts amalgamate.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Coalesced; united; combined.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -289,7 +293,7 @@
         "work together"
       ]
     },
-    "amalgamateamalgamated": {
+    "amalgamated": {
       "word": "AMALGAMATE; AMALGAMATED",
       "definitions": [
         {
@@ -643,7 +647,17 @@
       ],
       "relatedWords": []
     },
-    "amaranthusamarantus": {
+    "amaranthus": {
+      "word": "AMARANTHUS; AMARANTUS",
+      "definitions": [
+        {
+          "text": "Same as Amaranth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amarantus": {
       "word": "AMARANTHUS; AMARANTUS",
       "definitions": [
         {
@@ -673,7 +687,17 @@
       ],
       "relatedWords": []
     },
-    "amaryllidaceousamaryllideous": {
+    "amaryllidaceous": {
+      "word": "AMARYLLIDACEOUS; AMARYLLIDEOUS",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or resembling, an order of plants differing from the lily family chiefly in having the ovary below the",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amaryllideous": {
       "word": "AMARYLLIDACEOUS; AMARYLLIDEOUS",
       "definitions": [
         {
@@ -1024,7 +1048,7 @@
       "word": "AMATEURISH",
       "definitions": [
         {
-          "text": "In the style of an amateur; superficial or defective like the",
+          "text": "In the style of an amateur; superficial or defective like the work of an amateur.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1364,6 +1388,40 @@
         "wonderment"
       ]
     },
+    "amazing": {
+      "word": "AMAZING",
+      "definitions": [
+        {
+          "text": "Causing amazement; very wonderful; as, amazing grace.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "astonishing",
+        "astounding",
+        "awesome",
+        "breathtaking",
+        "confounding",
+        "dazzling",
+        "extraordinary",
+        "eye-opening",
+        "fabulous",
+        "mind-boggling",
+        "miraculous",
+        "overwhelming",
+        "prodigious",
+        "remarkable",
+        "spectacular",
+        "staggering",
+        "startling",
+        "strange",
+        "stunning",
+        "stupendous",
+        "surprising",
+        "wonderful",
+        "wondrous"
+      ]
+    },
     "amazon": {
       "word": "AMAZON",
       "definitions": [
@@ -1420,7 +1478,7 @@
       ],
       "relatedWords": []
     },
-    "amazoniteamazonstone": {
+    "amazonite": {
       "word": "AMAZONITE; AMAZON STONE",
       "definitions": [
         {
@@ -1430,7 +1488,27 @@
       ],
       "relatedWords": []
     },
-    "ambambi": {
+    "amazonstone": {
+      "word": "AMAZONITE; AMAZON STONE",
+      "definitions": [
+        {
+          "text": "A variety of feldspar, having a verdigris-green color.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amb": {
+      "word": "AMB-; AMBI-",
+      "definitions": [
+        {
+          "text": "A prefix meaning about, around; -- used in words derived from the Latin.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ambi": {
       "word": "AMB-; AMBI-",
       "definitions": [
         {
@@ -1526,7 +1604,7 @@
       ],
       "relatedWords": []
     },
-    "ambaryambaryhemp": {
+    "ambary": {
       "word": "AMBARY; AMBARY HEMP",
       "definitions": [
         {
@@ -1536,7 +1614,17 @@
       ],
       "relatedWords": []
     },
-    "ambassadeembassade": {
+    "ambaryhemp": {
+      "word": "AMBARY; AMBARY HEMP",
+      "definitions": [
+        {
+          "text": "A valuable East Indian fiber plant (Hibiscus cannabinus), or its fiber, which is used throughout India for making ropes, cordage, and a coarse canvas and sackcloth; --called also brown Indian hemp.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ambassade": {
       "word": "AMBASSADE; EMBASSADE",
       "definitions": [
         {
@@ -1550,7 +1638,7 @@
       ],
       "relatedWords": []
     },
-    "ambassadorembassador": {
+    "ambassador": {
       "word": "AMBASSADOR; EMBASSADOR",
       "definitions": [
         {
@@ -1562,7 +1650,43 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "agent",
+        "ambassadress",
+        "apostolic delegate",
+        "attache",
+        "career diplomat",
+        "chancellor",
+        "charge",
+        "commercial attache",
+        "consul",
+        "consul general",
+        "consular agent",
+        "delegate",
+        "deputy",
+        "diplomat",
+        "diplomatic",
+        "diplomatic agent",
+        "diplomatist",
+        "emissary",
+        "envoy",
+        "envoy extraordinary",
+        "foreign service officer",
+        "internuncio",
+        "legate",
+        "messenger",
+        "military attache",
+        "minister",
+        "minister plenipotentiary",
+        "minister resident",
+        "nuncio",
+        "plenipotentiary",
+        "representative",
+        "resident",
+        "secretary of legation",
+        "vice-consul",
+        "vice-legate"
+      ]
     },
     "ambassadorial": {
       "word": "AMBASSADORIAL",
@@ -2826,7 +2950,17 @@
       ],
       "relatedWords": []
     },
-    "amblyopiaamblyopy": {
+    "amblyopia": {
+      "word": "AMBLYOPIA; AMBLYOPY",
+      "definitions": [
+        {
+          "text": "Weakness of sight, without and opacity of the cornea, or of the interior of the eye; the first degree of amaurosis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amblyopy": {
       "word": "AMBLYOPIA; AMBLYOPY",
       "definitions": [
         {
@@ -3642,7 +3776,7 @@
       ],
       "relatedWords": []
     },
-    "ameeramir": {
+    "ameer": {
       "word": "AMEER; AMIR",
       "definitions": [
         {
@@ -3651,6 +3785,24 @@
         },
         {
           "text": "One of the Mohammedan nobility of Afghanistan and Scinde.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amir": {
+      "word": "AMEER; AMIR",
+      "definitions": [
+        {
+          "text": "Emir. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the Mohammedan nobility of Afghanistan and Scinde.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Ameer.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4340,6 +4492,16 @@
         "work over"
       ]
     },
+    "amendable": {
+      "word": "AMENDABLE",
+      "definitions": [
+        {
+          "text": "Capable of being amended; as, an amendable writ or error.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "amendatory": {
       "word": "AMENDATORY",
       "definitions": [
@@ -5008,7 +5170,17 @@
       ],
       "relatedWords": []
     },
-    "ametabolicametabolous": {
+    "ametabolic": {
+      "word": "AMETABOLIC; AMETABOLOUS",
+      "definitions": [
+        {
+          "text": "Not undergoing any metamorphosis; as, ametabolic insects.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ametabolous": {
       "word": "AMETABOLIC; AMETABOLOUS",
       "definitions": [
         {
@@ -5086,6 +5258,16 @@
         "violaceous",
         "violet"
       ]
+    },
+    "ametropia": {
+      "word": "AMETROPIA",
+      "definitions": [
+        {
+          "text": "Any abnormal condition of the refracting powers of the eye.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     },
     "amharic": {
       "word": "AMHARIC",
@@ -5483,6 +5665,10 @@
         {
           "text": "See Amidst.",
           "partOfSpeech": "preposition"
+        },
+        {
+          "text": "In the midst or middle of; surrounded or encompassed by; among. \"This fair tree amidst the garden.\" \"Unseen amid the throng.\" \"Amidst thick clouds.\" Milton. \"Amidst acclamations.\" \"Amidst the splendor and festivity of a court.\" Macaulay. But rather famish them amid their plenty. Shak. as will be seen from their etymology. Amidst denotes in the midst or middle of, and hence surrounded by; as, this work was written amidst many interruptions. Among denotes a mingling or intermixing with distinct or separable objects; as, \"He fell among thieves.\" \"Blessed art thou among women.\" Hence, we say, among the moderns, among the ancients, among the thickest of trees, among these considerations, among the reasons I have to offer. Amid and amidst are commonly used when the idea of separate or distinguishable objects is not prominent. Hence, we say, they kept on amidst the storm, amidst the gloom, he was sinking amidst the waves, he persevered amidst many difficulties; in none of which cases could among be used. In like manner, Milton speaks of Abdiel, -- The seraph Abdiel, faithful found; Among the faithless faithful only he, because he was then considered as one of the angels. But when the poet adds, -- From amidst them forth he passed, we have rather the idea of the angels as a collective body. Those squalid cabins and uncleared woods amidst which he was born. Macaulay.",
+          "partOfSpeech": "preposition"
         }
       ],
       "relatedWords": []
@@ -5582,7 +5768,7 @@
         "nuclear"
       ]
     },
-    "amidstamid": {
+    "amidst": {
       "word": "AMIDST; AMID",
       "definitions": [
         {
@@ -5693,16 +5879,6 @@
       "definitions": [
         {
           "text": "An order of ganoid fishes of which Amis is type. See Bowfin and Ganoidei.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "amir": {
-      "word": "AMIR",
-      "definitions": [
-        {
-          "text": "Same as Ameer.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6130,22 +6306,26 @@
         "xenon"
       ]
     },
-    "ammoniacammoniacal": {
+    "ammoniac": {
       "word": "AMMONIAC; AMMONIACAL",
       "definitions": [
         {
           "text": "Of or pertaining to ammonia, or possessing its properties; as, an ammoniac salt; ammoniacal gas. Ammoniacal engine, an engine in which the vapor of ammonia is used as the motive force. chloride of ammonium, and formerly muriate of ammonia.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The concrete juice (gum resin) of an umbelliferous plant, the Dorema ammoniacum. It is brought chiefly from Persia in the form of yellowish tears, which occur singly, or are aggregated into masses. It has a peculiar smell, and a nauseous, sweet taste, followed by a bitter one. It is inflammable, partially soluble in water and in spirit of wine, and is used in medicine as an expectorant and resolvent, and for the formation of certain plasters.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "ammoniacgumammoniac": {
-      "word": "AMMONIAC; GUM AMMONIAC",
+    "ammoniacal": {
+      "word": "AMMONIAC; AMMONIACAL",
       "definitions": [
         {
-          "text": "The concrete juice (gum resin) of an umbelliferous plant, the Dorema ammoniacum. It is brought chiefly from Persia in the form of yellowish tears, which occur singly, or are aggregated into masses. It has a peculiar smell, and a nauseous, sweet taste, followed by a bitter one. It is inflammable, partially soluble in water and in spirit of wine, and is used in medicine as an expectorant and resolvent, and for the formation of certain plasters.",
-          "partOfSpeech": "noun"
+          "text": "Of or pertaining to ammonia, or possessing its properties; as, an ammoniac salt; ammoniacal gas. Ammoniacal engine, an engine in which the vapor of ammonia is used as the motive force. chloride of ammonium, and formerly muriate of ammonia.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6520,7 +6700,17 @@
       ],
       "relatedWords": []
     },
-    "amoebiformamoeboid": {
+    "amoebiform": {
+      "word": "AMOEBIFORM; AMOEBOID",
+      "definitions": [
+        {
+          "text": "Resembling an amoeba; amoeba-shaped; changing in shape like an amoeba. Amoeboid movement, movement produced, as in the amoeba, by successive processes of prolongation and retraction.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amoeboid": {
       "word": "AMOEBIFORM; AMOEBOID",
       "definitions": [
         {
@@ -6580,7 +6770,46 @@
       ],
       "relatedWords": []
     },
-    "amongamongst": {
+    "among": {
+      "word": "AMONG; AMONGST",
+      "definitions": [
+        {
+          "text": "Mixed or mingled; surrounded by. They heard, And from his presence hid themselves among The thickest trees. Milton.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "Conjoined, or associated with, or making part of the number of; in the number or class of. Blessed art thou among women. Luke i. 28.",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "text": "Expressing a relation of dispersion, distribution, etc.; also, a relation of reciprocal action. What news among the merchants Shak. Human sacrifices were practiced among them. Hume. Divide that gold amongst you. Marlowe. Whether they quarreled among themselves, or with their neighbors. Addison.",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "relatedWords": [
+        "amid",
+        "amidst",
+        "among",
+        "amongst",
+        "at",
+        "between",
+        "betwixt",
+        "betwixt and between",
+        "by",
+        "from",
+        "in",
+        "mid",
+        "midst",
+        "near",
+        "next to",
+        "on",
+        "to",
+        "together with",
+        "toward",
+        "with"
+      ]
+    },
+    "amongst": {
       "word": "AMONG; AMONGST",
       "definitions": [
         {
@@ -6797,7 +7026,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of no particular kind or character; anomalous. Scientific treatises . . . are not seldom rude and amorphous in",
+          "text": "Of no particular kind or character; anomalous. Scientific treatises . . . are not seldom rude and amorphous in style. Hare.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7033,7 +7262,37 @@
       ],
       "relatedWords": []
     },
-    "amortiseamortisationamortisableamortisement": {
+    "amortise": {
+      "word": "AMORTISE; AMORTISATION; AMORTISABLE; AMORTISEMENT",
+      "definitions": [
+        {
+          "text": "Same as Amortize, Amortization, etc.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amortisation": {
+      "word": "AMORTISE; AMORTISATION; AMORTISABLE; AMORTISEMENT",
+      "definitions": [
+        {
+          "text": "Same as Amortize, Amortization, etc.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amortisable": {
+      "word": "AMORTISE; AMORTISATION; AMORTISABLE; AMORTISEMENT",
+      "definitions": [
+        {
+          "text": "Same as Amortize, Amortization, etc.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amortisement": {
       "word": "AMORTISE; AMORTISATION; AMORTISABLE; AMORTISEMENT",
       "definitions": [
         {
@@ -7279,6 +7538,18 @@
     "amount": {
       "word": "AMOUNT",
       "definitions": [
+        {
+          "text": "To go up; to ascend. [Obs.] So up he rose, and thence amounted straight. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To rise or reach by an accumulation of particular sums or quantities; to come (to) in the aggregate or whole; -- with to or unto.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To rise, reach, or extend in effect, substance, or influence; to be equivalent; to come practically (to); as, the testimony amounts to very little.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To signify; to amount to. [Obs.]",
           "partOfSpeech": "verb"
@@ -7557,7 +7828,7 @@
       ],
       "relatedWords": []
     },
-    "ampereampere": {
+    "ampere": {
       "word": "AMPERE; AMPERE",
       "definitions": [
         {
@@ -7577,7 +7848,7 @@
       ],
       "relatedWords": []
     },
-    "amperehourampereminuteamperesecond": {
+    "amperehour": {
       "word": "AMPERE HOUR; AMPERE MINUTE; AMPERE SECOND",
       "definitions": [
         {
@@ -7587,7 +7858,37 @@
       ],
       "relatedWords": []
     },
-    "amperemeteramperometer": {
+    "ampereminute": {
+      "word": "AMPERE HOUR; AMPERE MINUTE; AMPERE SECOND",
+      "definitions": [
+        {
+          "text": "The quantity of electricity delivered in one hour by a current whose average strength is one ampère. It is used as a unit of quantity, and is equal to 3600 coulombs. The terms Ampère minute and Ampère second are sometimes similarly used.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "amperesecond": {
+      "word": "AMPERE HOUR; AMPERE MINUTE; AMPERE SECOND",
+      "definitions": [
+        {
+          "text": "The quantity of electricity delivered in one hour by a current whose average strength is one ampère. It is used as a unit of quantity, and is equal to 3600 coulombs. The terms Ampère minute and Ampère second are sometimes similarly used.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "amperemeter": {
+      "word": "AMPEREMETER; AMPEROMETER",
+      "definitions": [
+        {
+          "text": "An instrument for measuring the strength of an electrical current in ampères.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amperometer": {
       "word": "AMPEREMETER; AMPEROMETER",
       "definitions": [
         {
@@ -7957,7 +8258,7 @@
       "word": "AMPHIBOLOGICAL",
       "definitions": [
         {
-          "text": "Of doubtful meaning; ambiguous. \"Amphibological expressions.\"",
+          "text": "Of doubtful meaning; ambiguous. \"Amphibological expressions.\" Jer. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8011,7 +8312,17 @@
       ],
       "relatedWords": []
     },
-    "amphicarpicamphicarpous": {
+    "amphicarpic": {
+      "word": "AMPHICARPIC; AMPHICARPOUS",
+      "definitions": [
+        {
+          "text": "Producing fruit of two kinds, either as to form or time of ripening.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amphicarpous": {
       "word": "AMPHICARPIC; AMPHICARPOUS",
       "definitions": [
         {
@@ -8031,7 +8342,17 @@
       ],
       "relatedWords": []
     },
-    "amphicoelianamphicoelous": {
+    "amphicoelian": {
+      "word": "AMPHICOELIAN; AMPHICOELOUS",
+      "definitions": [
+        {
+          "text": "Having both ends concave; biconcave; -- said of vertebræ.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amphicoelous": {
       "word": "AMPHICOELIAN; AMPHICOELOUS",
       "definitions": [
         {
@@ -8221,7 +8542,17 @@
       ],
       "relatedWords": []
     },
-    "amphilogismamphilogy": {
+    "amphilogism": {
+      "word": "AMPHILOGISM; AMPHILOGY",
+      "definitions": [
+        {
+          "text": "Ambiguity of speech; equivocation. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amphilogy": {
       "word": "AMPHILOGISM; AMPHILOGY",
       "definitions": [
         {
@@ -8277,11 +8608,15 @@
         {
           "text": "One of the Amphipoda.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the Amphipoda.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "amphipodamphipodan": {
+    "amphipodan": {
       "word": "AMPHIPOD; AMPHIPODAN",
       "definitions": [
         {
@@ -8363,7 +8698,17 @@
       ],
       "relatedWords": []
     },
-    "amphisciiamphiscians": {
+    "amphiscii": {
+      "word": "AMPHISCII; AMPHISCIANS",
+      "definitions": [
+        {
+          "text": "The inhabitants of the tropic, whose shadows in one part of the year are cast to the north, and in the other to the south, according as the sun is south or north of their zenith.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amphiscians": {
       "word": "AMPHISCII; AMPHISCIANS",
       "definitions": [
         {
@@ -8393,7 +8738,112 @@
       ],
       "relatedWords": []
     },
-    "amphitheateramphitheatre": {
+    "amphitheater": {
+      "word": "AMPHITHEATER; AMPHITHEATRE",
+      "definitions": [
+        {
+          "text": "An oval or circular building with rising tiers of seats about an open space called the arena. gladiators and wild beasts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything resembling an amphitheater in form; as, a level surrounded by rising slopes or hills, or a rising gallery in a theater.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Elizabethan theater",
+        "Globe Theatre",
+        "Greek theater",
+        "agora",
+        "arena",
+        "arena theater",
+        "assembly hall",
+        "athletic field",
+        "auditorium",
+        "background",
+        "bear garden",
+        "bowl",
+        "boxing ring",
+        "bull ring",
+        "cabaret",
+        "campus",
+        "canvas",
+        "chapel",
+        "circle theater",
+        "circus",
+        "classroom",
+        "club",
+        "cockpit",
+        "coliseum",
+        "colosseum",
+        "concert hall",
+        "convention hall",
+        "course",
+        "dance hall",
+        "exhibition hall",
+        "field",
+        "floor",
+        "forum",
+        "gallery",
+        "ground",
+        "gym",
+        "gymnasium",
+        "hall",
+        "hippodrome",
+        "house",
+        "lecture hall",
+        "lecture room",
+        "lists",
+        "little theater",
+        "locale",
+        "marketplace",
+        "mat",
+        "meetinghouse",
+        "milieu",
+        "music hall",
+        "night spot",
+        "nightclub",
+        "open forum",
+        "opera",
+        "opera house",
+        "outdoor theater",
+        "palaestra",
+        "parade ground",
+        "pit",
+        "place",
+        "platform",
+        "playhouse",
+        "precinct",
+        "prize ring",
+        "public square",
+        "purlieu",
+        "range",
+        "recitation room",
+        "ring",
+        "scene",
+        "scene of action",
+        "scenery",
+        "schoolroom",
+        "setting",
+        "showboat",
+        "site",
+        "sphere",
+        "squared circle",
+        "stadium",
+        "stage",
+        "stage set",
+        "stage setting",
+        "terrain",
+        "theater",
+        "theater-in-the-round",
+        "theatron",
+        "tilting ground",
+        "tiltyard",
+        "walk",
+        "wrestling ring"
+      ]
+    },
+    "amphitheatre": {
       "word": "AMPHITHEATER; AMPHITHEATRE",
       "definitions": [
         {
@@ -8417,7 +8867,17 @@
       ],
       "relatedWords": []
     },
-    "amphitheatricamphitheatrical": {
+    "amphitheatric": {
+      "word": "AMPHITHEATRIC; AMPHITHEATRICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, exhibited in, or resembling, an amphitheater.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amphitheatrical": {
       "word": "AMPHITHEATRIC; AMPHITHEATRICAL",
       "definitions": [
         {
@@ -8447,7 +8907,17 @@
       ],
       "relatedWords": []
     },
-    "amphitropalamphitropous": {
+    "amphitropal": {
+      "word": "AMPHITROPAL; AMPHITROPOUS",
+      "definitions": [
+        {
+          "text": "Having the ovule inverted, but with the attachment near the middle of one side; half anatropous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amphitropous": {
       "word": "AMPHITROPAL; AMPHITROPOUS",
       "definitions": [
         {
@@ -9598,7 +10068,7 @@
       ],
       "relatedWords": []
     },
-    "ampullarampullary": {
+    "ampullar": {
       "word": "AMPULLAR; AMPULLARY",
       "definitions": [
         {
@@ -9608,7 +10078,27 @@
       ],
       "relatedWords": []
     },
-    "ampullateampullated": {
+    "ampullary": {
+      "word": "AMPULLAR; AMPULLARY",
+      "definitions": [
+        {
+          "text": "Resembling an ampulla.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ampullate": {
+      "word": "AMPULLATE; AMPULLATED",
+      "definitions": [
+        {
+          "text": "Having an ampulla; flask-shaped; bellied.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ampullated": {
       "word": "AMPULLATE; AMPULLATED",
       "definitions": [
         {
@@ -9818,7 +10308,17 @@
       ],
       "relatedWords": []
     },
-    "amselamzel": {
+    "amsel": {
+      "word": "AMSEL; AMZEL",
+      "definitions": [
+        {
+          "text": "The European ring ousel (Turdus torquatus).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amzel": {
       "word": "AMSEL; AMZEL",
       "definitions": [
         {
@@ -10097,6 +10597,54 @@
       ],
       "relatedWords": []
     },
+    "amusing": {
+      "word": "AMUSING",
+      "definitions": [
+        {
+          "text": "Giving amusement; diverting; as, an amusing story.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "absurd",
+        "beguiling",
+        "bizarre",
+        "delightful",
+        "diverting",
+        "droll",
+        "eccentric",
+        "entertaining",
+        "fun",
+        "funny",
+        "hilarious",
+        "humorous",
+        "incongruous",
+        "laughable",
+        "ludicrous",
+        "priceless",
+        "quaint",
+        "quizzical",
+        "recreational",
+        "rich",
+        "ridiculous",
+        "risible",
+        "screaming",
+        "titillating",
+        "titillative",
+        "whimsical",
+        "witty"
+      ]
+    },
+    "amusive": {
+      "word": "AMUSIVE",
+      "definitions": [
+        {
+          "text": "Having power to amuse or entertain the mind; fitted to excite mirth. [R.] -- A*mu\"sive*ly, adv.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "amvis": {
       "word": "AMVIS",
       "definitions": [
@@ -10223,11 +10771,19 @@
         {
           "text": "A variety of trap or basaltic rock, containing small cavities, occupied, wholly or in part, by nodules or geodes of different minerals, esp. agates, quartz, calcite, and the zeolites. When the imbedded minerals are detached or removed by decomposition, it is porous, like lava.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Almond-shaped.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to, or having the nature of, the rock amygdaloid.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "amygdaloidamygdaloidal": {
+    "amygdaloidal": {
       "word": "AMYGDALOID; AMYGDALOIDAL",
       "definitions": [
         {
@@ -10369,16 +10925,30 @@
         {
           "text": "The substance deposited in the organs in amyloid degeneration.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Resembling or containing amyl; starchlike. Amyloid degeneration (Med.), a diseased condition of various organs of the body, produced by the deposit of an albuminous substance, giving a blue color with iodine and sulphuric acid; -- called also waxy or lardaceous degeneration.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "amyloidamyloidal": {
+    "amyloidal": {
       "word": "AMYLOID; AMYLOIDAL",
       "definitions": [
         {
           "text": "Resembling or containing amyl; starchlike. Amyloid degeneration (Med.), a diseased condition of various organs of the body, produced by the deposit of an albuminous substance, giving a blue color with iodine and sulphuric acid; -- called also waxy or lardaceous degeneration.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "amylolysis": {
+      "word": "AMYLOLYSIS",
+      "definitions": [
+        {
+          "text": "The conversion of starch into soluble products, as dextrins and sugar, esp. by the action of enzymes. -- Am`y*lo*lyt\"ic (#), a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -10448,6 +11018,24 @@
       "definitions": [
         {
           "text": "Same as Amice, a hood or cape.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ambury": {
+      "word": "ANBURY; AMBURY",
+      "definitions": [
+        {
+          "text": "(Far.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A soft tumor or bloody wart on horses or oxen.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A disease of the roots of turnips, etc.; -- called also fingers and toes.",
           "partOfSpeech": "noun"
         }
       ],

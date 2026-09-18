@@ -1222,7 +1222,7 @@
       ],
       "relatedWords": []
     },
-    "ideatideate": {
+    "ideat": {
       "word": "IDEAT; IDEATE",
       "definitions": [
         {
@@ -1233,8 +1233,12 @@
       "relatedWords": []
     },
     "ideate": {
-      "word": "IDEATE",
+      "word": "IDEAT; IDEATE",
       "definitions": [
+        {
+          "text": "The actual existence supposed to correspond with an idea; the correlate in real existence to the idea as a thought or existence.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To form in idea; to fancy. [R.] The ideated man . . . as he stood in the intellect of God. Sir T. Browne.",
           "partOfSpeech": "verb"
@@ -2211,11 +2215,101 @@
       ],
       "relatedWords": []
     },
-    "ideographicideographical": {
+    "ideographic": {
       "word": "IDEOGRAPHIC; IDEOGRAPHICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to an ideogram; representing ideas by symbols, independently of sounds; as, 9 represents not the word \"nine,\" but",
+          "text": "Of or pertaining to an ideogram; representing ideas by symbols, independently of sounds; as, 9 represents not the word \"nine,\" but the idea of the number itself.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abecedarian",
+        "allographic",
+        "alphabetic",
+        "apish",
+        "capital",
+        "connotative",
+        "delineatory",
+        "demonstrative",
+        "denominative",
+        "denotative",
+        "depictive",
+        "designative",
+        "diagnostic",
+        "echoic",
+        "emblematic",
+        "embodying",
+        "evidential",
+        "exhibitive",
+        "expressive",
+        "figural",
+        "figurative",
+        "graphemic",
+        "graphic",
+        "identifying",
+        "idiosyncratic",
+        "illustrational",
+        "illustrative",
+        "imitative",
+        "implicative",
+        "incarnating",
+        "indicating",
+        "indicative",
+        "indicatory",
+        "individual",
+        "lettered",
+        "lexigraphic",
+        "limning",
+        "literal",
+        "logogrammatic",
+        "logographic",
+        "lower-case",
+        "majuscule",
+        "meaningful",
+        "metaphorical",
+        "mimetic",
+        "mimish",
+        "minuscular",
+        "minuscule",
+        "naming",
+        "onomatopoeic",
+        "pathognomonic",
+        "peculiar",
+        "personifying",
+        "pictographic",
+        "pictorial",
+        "portraying",
+        "representational",
+        "representative",
+        "representing",
+        "semantic",
+        "semiotic",
+        "signalizing",
+        "significant",
+        "significative",
+        "signifying",
+        "simulative",
+        "suggestive",
+        "symbolic",
+        "symbolistic",
+        "symbolizing",
+        "symbological",
+        "symptomatic",
+        "symptomatologic",
+        "transliterated",
+        "typical",
+        "typifying",
+        "uncial",
+        "upper-case",
+        "vivid"
+      ]
+    },
+    "ideographical": {
+      "word": "IDEOGRAPHIC; IDEOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an ideogram; representing ideas by symbols, independently of sounds; as, 9 represents not the word \"nine,\" but the idea of the number itself.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2384,7 +2478,17 @@
       ],
       "relatedWords": []
     },
-    "idiocraticidiocratical": {
+    "idiocratic": {
+      "word": "IDIOCRATIC; IDIOCRATICAL",
+      "definitions": [
+        {
+          "text": "Peculiar in constitution or temperament; idiosyncratic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "idiocratical": {
       "word": "IDIOCRATIC; IDIOCRATICAL",
       "definitions": [
         {
@@ -2509,7 +2613,17 @@
       ],
       "relatedWords": []
     },
-    "idiographicidiographical": {
+    "idiographic": {
+      "word": "IDIOGRAPHIC; IDIOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an idiograph.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "idiographical": {
       "word": "IDIOGRAPHIC; IDIOGRAPHICAL",
       "definitions": [
         {
@@ -2634,11 +2748,21 @@
         "wording"
       ]
     },
-    "idiomaticidiomatical": {
+    "idiomatic": {
       "word": "IDIOMATIC; IDIOMATICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to, or conforming to, the mode of expression peculiar to a language; as, an idiomatic meaning; an idiomatic",
+          "text": "Of or pertaining to, or conforming to, the mode of expression peculiar to a language; as, an idiomatic meaning; an idiomatic phrase.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "idiomatical": {
+      "word": "IDIOMATIC; IDIOMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or conforming to, the mode of expression peculiar to a language; as, an idiomatic meaning; an idiomatic phrase.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2692,11 +2816,21 @@
       ],
       "relatedWords": []
     },
-    "idiopathicidiopathical": {
+    "idiopathic": {
       "word": "IDIOPATHIC; IDIOPATHICAL",
       "definitions": [
         {
-          "text": "Pertaining to idiopathy; characterizing a disease arising primarily, and not in consequence of some other disease or injury; --",
+          "text": "Pertaining to idiopathy; characterizing a disease arising primarily, and not in consequence of some other disease or injury; -- opposed to symptomatic, sympathetic, and traumatic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "idiopathical": {
+      "word": "IDIOPATHIC; IDIOPATHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to idiopathy; characterizing a disease arising primarily, and not in consequence of some other disease or injury; -- opposed to symptomatic, sympathetic, and traumatic.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2913,7 +3047,120 @@
         "whimsy"
       ]
     },
-    "idiosyncraticidiosyncratical": {
+    "idiosyncratic": {
+      "word": "IDIOSYNCRATIC; IDIOSYNCRATICAL",
+      "definitions": [
+        {
+          "text": "Of peculiar temper or disposition; belonging to one's peculiar and individual character.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abnormal",
+        "anomalous",
+        "appropriate",
+        "characteristic",
+        "characterizing",
+        "connotative",
+        "contrastive",
+        "crank",
+        "crankish",
+        "cranky",
+        "crotchety",
+        "demonstrative",
+        "denominative",
+        "denotative",
+        "designative",
+        "deviant",
+        "deviative",
+        "diacritical",
+        "diagnostic",
+        "differencing",
+        "different",
+        "differential",
+        "differentiative",
+        "discriminating",
+        "discriminative",
+        "distinctive",
+        "distinguished",
+        "distinguishing",
+        "divergent",
+        "dotty",
+        "eccentric",
+        "emblematic",
+        "erratic",
+        "evidential",
+        "exceptional",
+        "exhibitive",
+        "expressive",
+        "fey",
+        "figural",
+        "figurative",
+        "flaky",
+        "freakish",
+        "funny",
+        "identifying",
+        "ideographic",
+        "idiocratic",
+        "implicative",
+        "in character",
+        "indicating",
+        "indicative",
+        "indicatory",
+        "individual",
+        "individualizing",
+        "individuating",
+        "intrinsic",
+        "irregular",
+        "kinky",
+        "kooky",
+        "maggoty",
+        "marked",
+        "meaningful",
+        "metaphorical",
+        "naming",
+        "nutty",
+        "odd",
+        "oddball",
+        "pathognomonic",
+        "peculiar",
+        "personal",
+        "personalizing",
+        "private",
+        "proper",
+        "queer",
+        "quintessential",
+        "quirky",
+        "representative",
+        "screwball",
+        "screwy",
+        "semantic",
+        "semiotic",
+        "separative",
+        "signalizing",
+        "significant",
+        "significative",
+        "signifying",
+        "single",
+        "singular",
+        "strange",
+        "suggestive",
+        "symbolic",
+        "symbolistic",
+        "symbological",
+        "symptomatic",
+        "symptomatologic",
+        "true to form",
+        "twisted",
+        "typical",
+        "unconventional",
+        "unique",
+        "unnatural",
+        "wacky",
+        "whimsical"
+      ]
+    },
+    "idiosyncratical": {
       "word": "IDIOSYNCRATIC; IDIOSYNCRATICAL",
       "definitions": [
         {
@@ -3076,7 +3323,100 @@
       ],
       "relatedWords": []
     },
-    "idioticidiotical": {
+    "idiotic": {
+      "word": "IDIOTIC; IDIOTICAL",
+      "definitions": [
+        {
+          "text": "Common; simple. [Obs.] Blackwall.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to, or like, an idiot; characterized by idiocy; foolish; fatuous; as, an idiotic person, speech, laugh, or action.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "apish",
+        "arrested",
+        "asinine",
+        "babbling",
+        "backward",
+        "batty",
+        "befooled",
+        "beguiled",
+        "besotted",
+        "blithering",
+        "brainless",
+        "buffoonish",
+        "burbling",
+        "cockeyed",
+        "crackbrained",
+        "cracked",
+        "crazy",
+        "credulous",
+        "cretinistic",
+        "cretinous",
+        "daffy",
+        "daft",
+        "dazed",
+        "dithering",
+        "dizzy",
+        "doting",
+        "driveling",
+        "drooling",
+        "dumb",
+        "fatuitous",
+        "fatuous",
+        "flaky",
+        "fond",
+        "fool",
+        "foolheaded",
+        "foolish",
+        "fuddled",
+        "futile",
+        "gaga",
+        "goofy",
+        "gulled",
+        "half-baked",
+        "half-witted",
+        "imbecile",
+        "imbecilic",
+        "inane",
+        "inept",
+        "infatuated",
+        "insane",
+        "kooky",
+        "loony",
+        "mad",
+        "maudlin",
+        "maundering",
+        "mentally defective",
+        "mentally deficient",
+        "mentally handicapped",
+        "mentally retarded",
+        "mongoloid",
+        "moronic",
+        "not all there",
+        "nutty",
+        "retarded",
+        "sappy",
+        "screwy",
+        "senseless",
+        "sentimental",
+        "silly",
+        "simple",
+        "simpleminded",
+        "simpletonian",
+        "slobbering",
+        "stupid",
+        "subnormal",
+        "thoughtless",
+        "wacky",
+        "wet",
+        "witless"
+      ]
+    },
+    "idiotical": {
       "word": "IDIOTIC; IDIOTICAL",
       "definitions": [
         {
@@ -3780,7 +4120,17 @@
         "wastrel"
       ]
     },
-    "idlessidlesse": {
+    "idless": {
+      "word": "IDLESS; IDLESSE",
+      "definitions": [
+        {
+          "text": "Idleness. [Archaic] \"In ydlesse.\" Spenser. And an idlesse all the day Beside a wandering stream. Mrs. Browning.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "idlesse": {
       "word": "IDLESS; IDLESSE",
       "definitions": [
         {
@@ -4398,7 +4748,17 @@
       ],
       "relatedWords": []
     },
-    "idolumidolon": {
+    "idolum": {
+      "word": "IDOLUM; IDOLON",
+      "definitions": [
+        {
+          "text": "Appearance or image; a phantasm; a spectral image; also, a mental image or idea.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "idolon": {
       "word": "IDOLUM; IDOLON",
       "definitions": [
         {
@@ -4428,7 +4788,17 @@
       ],
       "relatedWords": []
     },
-    "idrialineidrialite": {
+    "idrialine": {
+      "word": "IDRIALINE; IDRIALITE",
+      "definitions": [
+        {
+          "text": "A bituminous substance obtained from the mercury mines of Idria, where it occurs mixed with cinnabar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "idrialite": {
       "word": "IDRIALINE; IDRIALITE",
       "definitions": [
         {

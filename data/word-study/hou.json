@@ -12,8 +12,12 @@
       "relatedWords": []
     },
     "hough": {
-      "word": "HOUGH",
+      "word": "HOCK; HOUGH",
       "definitions": [
+        {
+          "text": "The popliteal space; the ham.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Hock, a joint.",
           "partOfSpeech": "noun"
@@ -1351,7 +1355,7 @@
       "word": "HOUSEHOLDER",
       "definitions": [
         {
-          "text": "The master or head of a family; one who occupies a house with his family. Towns in which almost every householder was an English Protestant.",
+          "text": "The master or head of a family; one who occupies a house with his family. Towns in which almost every householder was an English Protestant. Macaulay. Compound householder. See Compound, a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1651,13 +1655,7 @@
         {
           "text": "A hussy. [R.] [Usually written huswife.] Shak. Sailor's housewife, a ditty-bag.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "housewifehousewive": {
-      "word": "HOUSEWIFE; HOUSEWIVE",
-      "definitions": [
+        },
         {
           "text": "To manage with skill and economy, as a housewife or other female manager; to economize. Conferred those moneys on the nuns, which since they have well housewived. Fuller.",
           "partOfSpeech": "verb"
@@ -1681,6 +1679,16 @@
         {
           "text": "The business of the mistress of a family; female management of domestic concerns.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "housewive": {
+      "word": "HOUSEWIFE; HOUSEWIVE",
+      "definitions": [
+        {
+          "text": "To manage with skill and economy, as a housewife or other female manager; to economize. Conferred those moneys on the nuns, which since they have well housewived. Fuller.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

@@ -119,7 +119,7 @@
       "word": "STUBBORN",
       "definitions": [
         {
-          "text": "Firm as a stub or stump; stiff; unbending; unyielding; persistent; hence, unreasonably obstinate in will or opinion; not yielding to reason or persuasion; refractory; harsh; -- said of persons and things; as, stubborn wills; stubborn ore; a stubborn oak; as stubborn as a mule. \"Bow, stubborn knees.\" Shak. \"Stubborn attention and more than common application.\" Locke. \"Stubborn Stoics.\" Swift. And I was young and full of ragerie [wantonness] Stubborn and strong, and jolly as a pie. Chaucer. These heretics be so stiff and stubborn. Sir T. More. Your stubborn usage of the pope. Shak. refractory; intractable; rugged; contumacious; heady. passive persistence in one's views or conduct, in spite of the wishes",
+          "text": "Firm as a stub or stump; stiff; unbending; unyielding; persistent; hence, unreasonably obstinate in will or opinion; not yielding to reason or persuasion; refractory; harsh; -- said of persons and things; as, stubborn wills; stubborn ore; a stubborn oak; as stubborn as a mule. \"Bow, stubborn knees.\" Shak. \"Stubborn attention and more than common application.\" Locke. \"Stubborn Stoics.\" Swift. And I was young and full of ragerie [wantonness] Stubborn and strong, and jolly as a pie. Chaucer. These heretics be so stiff and stubborn. Sir T. More. Your stubborn usage of the pope. Shak. refractory; intractable; rugged; contumacious; heady. passive persistence in one's views or conduct, in spite of the wishes of others. Stubborn describes an extreme degree of passive obstinacy.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -423,7 +423,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Favorable to study; suitable for thought and contemplation; as, the studious shade. [Poetic] But let my due feet never fail To walk the studious cloister's pale.",
+          "text": "Favorable to study; suitable for thought and contemplation; as, the studious shade. [Poetic] But let my due feet never fail To walk the studious cloister's pale. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -545,30 +545,48 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To fill by crowding something into; to cram with something; to load to excess; as, to stuff a bedtick. Sometimes this crook drew hazel bought adown, And stuffed her apron wide with nuts so brown. Gay. Lest the gods, for sin, Should with a swelling dropsy stuff thy skin. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To thrust or crowd; to press; to pack. Put roses into a glass with a narrow mouth, stuffing them close together . . . and they retain smell and color. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fill by being pressed or packed into. With inward arms the dire machine they load, And iron bowels stuff the dark abode. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Cookery)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fill with a seasoning composition of bread, meat, condiments, etc.; as, to stuff a turkey.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To obstruct, as any of the organs; to affect with some obstruction in the organs of sense or respiration. I'm stuffed, cousin; I can not smell. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fill the skin of, for the purpose of preserving as a specimen;",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To form or fashion by packing with the necessary material. An Eastern king put a judge to death for an iniquitous sentence, and ordered his hide to be stuffed into a cushion, and placed upon the tribunal. Swift.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To crowd with facts; to cram the mind of; sometimes, to crowd or fill with false or idle tales or fancies.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put fraudulent votes into (a ballot box). [U. S.]",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To feed gluttonously; to cram. Taught harmless man to cram and stuff. Swift.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "stuffbeingnamedfromitscolorfrlburrusredfrgrfire": {
-      "word": "stuff being named from its color, fr. L. burrus red, fr. Gr. Fire,",
-      "definitions": [
-        {
-          "text": "Originally, a desk or writing table with drawers for papers. Swift.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The place where such a bureau is used; an office where business requiring writing is transacted.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Hence: A department of public business requiring a force of clerks; the body of officials in a department who labor under the direction of a chief. countries, have the name of bureaux; as, the Bureau of the Minister of Foreign Affairs. In England and America, the term is confined to inferior and subordinate departments; as, the \"Pension Bureau,\" a subdepartment of the Department of the Interior. [Obs.] In Spanish, bureo denotes a court of justice for the trial of persons belonging to the king's household.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A chest of drawers for clothes, especially when made as an ornamental piece of furniture. [U.S.] Bureau system. See Bureaucracy. underwriters, for the survey and rating of vessels all over the world. It was founded in Belgium in 1828, removed to Paris in 1830, and reëstablished in Brussels in 1870.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -721,6 +739,16 @@
         {
           "text": "Silly talk; babbling.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stultiloquent": {
+      "word": "STULTILOQUENT",
+      "definitions": [
+        {
+          "text": "Given to, or characterized by, silly talk; babbling.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -889,7 +917,11 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To travel over, delivering speeches for electioneering purposes;",
+          "text": "To travel over, delivering speeches for electioneering purposes; as, to stump a State, or a district. See To go on the stump, under Stump, n. [Colloq. U.S.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Cricket) (a) To put (a batsman) out of play by knocking off the bail, or knocking down the stumps of the wicket he is defending while he is off his allotted ground; -- sometimes with out. T. Hughes. (b) To bowl down the stumps of, as, of a wicket. A herd of boys with clamor bowled, And stumped the wicket. Tennyson. To stump it. (a) To go afoot; hence, to run away; to escape. [Slang] Ld. Lytton. (b) To make electioneering speeches. [Colloq. U.S.]",
           "partOfSpeech": "verb"
         },
         {
@@ -991,7 +1023,7 @@
       "word": "STUNDIST",
       "definitions": [
         {
-          "text": "One of a large sect of Russian dissenters founded, about 1860, in the village of Osnova, near Odessa, by a peasant, Onishchenko, who had apparently been influenced by a German sect settled near there.",
+          "text": "One of a large sect of Russian dissenters founded, about 1860, in the village of Osnova, near Odessa, by a peasant, Onishchenko, who had apparently been influenced by a German sect settled near there. They zealously practice Bible reading and reject priestly dominion and all external rites of worship. -- Stun\"dism (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1073,6 +1105,16 @@
       ],
       "relatedWords": []
     },
+    "stunted": {
+      "word": "STUNTED",
+      "definitions": [
+        {
+          "text": "Dwarfed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "stuntness": {
       "word": "STUNTNESS",
       "definitions": [
@@ -1093,24 +1135,6 @@
         {
           "text": "See 1st Stupe.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "stupatofalltotiltcfofriesstaphighcfstoopvi": {
-      "word": "stupa to fall, to tilt; cf. OFries. stap high. Cf. Stoop, v. i.,",
-      "definitions": [
-        {
-          "text": "Making a large angle with the plane of the horizon; ascending or descending rapidly with respect to a horizontal line or a level; precipitous; as, a steep hill or mountain; a steep roof; a steep ascent; a steep declivity; a steep barometric gradient.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Difficult of access; not easy reached; lofty; elevated; high.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Excessive; as, a steep price. [Slang]",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1215,7 +1239,7 @@
       "word": "STUPENDOUS",
       "definitions": [
         {
-          "text": "Astonishing; wonderful; amazing; especially, astonishing in magnitude or elevation; as, a stupendous pile. \"A stupendous sum.\" Macaulay.",
+          "text": "Astonishing; wonderful; amazing; especially, astonishing in magnitude or elevation; as, a stupendous pile. \"A stupendous sum.\" Macaulay. All are but parts of one stupendous whole. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1239,7 +1263,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Resulting from, or evincing, stupidity; formed without skill or genius; dull; heavy; -- said of things. Observe what loads of stupid rhymes Oppress us in corrupted times. Swift.",
+          "text": "Resulting from, or evincing, stupidity; formed without skill or genius; dull; heavy; -- said of things. Observe what loads of stupid rhymes Oppress us in corrupted times. Swift. heavy; clodpated.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1383,7 +1407,7 @@
       "word": "STURGEON",
       "definitions": [
         {
-          "text": "Any one of numerous species of large cartilaginous ganoid fishes belonging to Acipenser and allied genera of the family Acipenseridæ. They run up rivers to spawn, and are common on the coasts and in the large rivers and lakes of North America, Europe, and Asia. Caviare is prepared from the roe, and isinglass from the air bladder.",
+          "text": "Any one of numerous species of large cartilaginous ganoid fishes belonging to Acipenser and allied genera of the family Acipenseridæ. They run up rivers to spawn, and are common on the coasts and in the large rivers and lakes of North America, Europe, and Asia. Caviare is prepared from the roe, and isinglass from the air bladder. Atlantic coast region, A. transmontanus of the Pacific coast, and A. rubicundus of the Mississippi River and its tributaries. In Europe, the common species is Acipenser sturio, and other well-known species are the sterlet and the huso. The sturgeons are included in the order Chondrostei. Their body is partially covered by five rows of large, carinated, bony plates, of which one row runs along the back. The tail is heterocercal. The toothless and protrusile mouth is beneath the head, and has four barbels in front. Shovel-nosed sturgeon. (Zoöl.) See Shovelnose (d).",
           "partOfSpeech": "noun"
         }
       ],
@@ -1505,6 +1529,10 @@
         {
           "text": "The act of one who stutters; -- restricted by some physiologists to defective speech due to inability to form the proper sounds, the breathing being normal, as distinguished from stammering.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Apt to stutter; hesitating; stammering.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

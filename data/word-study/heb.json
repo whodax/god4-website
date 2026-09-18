@@ -11,7 +11,7 @@
       ],
       "relatedWords": []
     },
-    "hebdomadalhebdomadary": {
+    "hebdomadal": {
       "word": "HEBDOMADAL; HEBDOMADARY",
       "definitions": [
         {
@@ -32,8 +32,12 @@
       "relatedWords": []
     },
     "hebdomadary": {
-      "word": "HEBDOMADARY",
+      "word": "HEBDOMADAL; HEBDOMADARY",
       "definitions": [
+        {
+          "text": "Consisting of seven days, or occurring at intervals of seven days; weekly.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A member of a chapter or convent, whose week it is to officiate in the choir, and perform other services, which, on extraordinary occasions, are performed by the superiors.",
           "partOfSpeech": "noun"
@@ -385,7 +389,21 @@
       ],
       "relatedWords": []
     },
-    "hebrideanhebridian": {
+    "hebridean": {
+      "word": "HEBRIDEAN; HEBRIDIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the islands called Hebrides, west of Scotland.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or inhabitant of the Hebrides.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hebridian": {
       "word": "HEBRIDEAN; HEBRIDIAN",
       "definitions": [
         {

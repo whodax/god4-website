@@ -1,26 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "oppositiontojeworchristianaheathencffgentilseegentle": {
-      "word": "opposition to Jew or Christian, a heathen: cf. F. gentil. See Gentle,",
-      "definitions": [
-        {
-          "text": "One of a non-Jewish nation; one neither a Jew nor a Christian; a worshiper of false gods; a heathen. tribes of men who had not received the true faith, and were not circumcised. The Christians translated goyim by the L. gentes, and imitated the Jews in giving the name gentiles to all nations who were neither Jews nor Christians. In civil affairs, the denomination was given to all nations who were not Romans.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "opencfohginginnantobeginopencutopenandprobakinto": {
-      "word": "open, cf. OHG. inginnan to begin, open, cut open, and prob. akin to",
-      "definitions": [
-        {
-          "text": "To begin; -- often followed by an infinitive without to; as, gan tell. See Gan. [Obs. or Archaic] \"He gan to pray.\" Chaucer.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "opacate": {
       "word": "OPACATE",
       "definitions": [
@@ -257,7 +237,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "(Mus.) (a) Not closed or stopped with the finger; -- said of the string of an instrument, as of a violin, when it is allowed to vibrate throughout its whole length. (b) Produced by an open string; as, an open tone. The open air, the air out of doors. or interrupted at some point; -- opposed to an uninterrupted, or Ant: closed circuit.",
+          "text": "(Mus.) (a) Not closed or stopped with the finger; -- said of the string of an instrument, as of a violin, when it is allowed to vibrate throughout its whole length. (b) Produced by an open string; as, an open tone. The open air, the air out of doors. or interrupted at some point; -- opposed to an uninterrupted, or Ant: closed circuit. persons who have been baptized by immersion. Cf. Close communion, under Close, a. pipes or tubes are formed like the mouthpiece of a flageolet at the end where the wind enters, and are open at the other end. dispersed, or separated by wide intervals. slightly divergent. Cf. Foul hawse, under Hawse. furnace. reverberatory furnace in which the fuel is gas, used in manufacturing steel. cast iron is converted into steel by the addition of wrought iron, or iron ore and manganese, and by exposure to heat in an open-hearth furnace; -- also called the Siemens-Martin process, from the inventors. called Siemens-Martin steel. octave higher than a closed pipe of the same length. parts, together with the under side of the covering, or its lining, are treated ornamentally, and left to form the ceiling of an apartment below, as in a church, a public hall, and the like. explaining; as, open-breasted, open-minded. obvious; evident; public; unreserved; frank; sincere; undissembling; artless. See Candid, and Ingenuous.",
           "partOfSpeech": "adjective"
         },
         {
@@ -351,11 +331,31 @@
       ],
       "relatedWords": []
     },
+    "openhanded": {
+      "word": "OPEN-HANDED",
+      "definitions": [
+        {
+          "text": "Generous; liberal; munificent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "openheaded": {
       "word": "OPEN-HEADED",
       "definitions": [
         {
           "text": "Bareheaded. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "openhearted": {
+      "word": "OPEN-HEARTED",
+      "definitions": [
+        {
+          "text": "Candid; frank; generous. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -503,7 +503,17 @@
       ],
       "relatedWords": []
     },
-    "operanceoperancy": {
+    "operance": {
+      "word": "OPERANCE; OPERANCY",
+      "definitions": [
+        {
+          "text": "The act of operating or working; operation. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "operancy": {
       "word": "OPERANCE; OPERANCY",
       "definitions": [
         {
@@ -575,7 +585,17 @@
       ],
       "relatedWords": []
     },
-    "operaticoperatical": {
+    "operatic": {
+      "word": "OPERATIC; OPERATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the opera or to operas; characteristic of, or resembling, the opera.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "operatical": {
       "word": "OPERATIC; OPERATICAL",
       "definitions": [
         {
@@ -745,7 +765,29 @@
       ],
       "relatedWords": []
     },
-    "operculateoperculated": {
+    "operculate": {
+      "word": "OPERCULATE; OPERCULATED",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Closed by a lid or cover, as the capsules of the mosses.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having an operculum, or an apparatus for protecting the gills;",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "operculated": {
       "word": "OPERCULATE; OPERCULATED",
       "definitions": [
         {
@@ -829,7 +871,7 @@
       "word": "OPEROSE",
       "definitions": [
         {
-          "text": "Wrought with labor; requiring labor; hence, tedious; wearisome. \"Operose proceeding.\" Burke. \"A very operose calculation.\" De",
+          "text": "Wrought with labor; requiring labor; hence, tedious; wearisome. \"Operose proceeding.\" Burke. \"A very operose calculation.\" De Quincey.",
           "partOfSpeech": ""
         }
       ],
@@ -963,7 +1005,17 @@
       ],
       "relatedWords": []
     },
-    "ophiologicophiological": {
+    "ophiologic": {
+      "word": "OPHIOLOGIC; OPHIOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to ophiology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ophiological": {
       "word": "OPHIOLOGIC; OPHIOLOGICAL",
       "definitions": [
         {
@@ -1075,7 +1127,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "A greenish spotted porphyry, being a diabase whose pyroxene has been altered to uralite; -- first found in the Pyreness. So called",
+          "text": "A greenish spotted porphyry, being a diabase whose pyroxene has been altered to uralite; -- first found in the Pyreness. So called from the colored spots which give it a mottled appearance.",
           "partOfSpeech": "noun"
         },
         {
@@ -1153,7 +1205,17 @@
       ],
       "relatedWords": []
     },
-    "ophiurioideaophiuroidea": {
+    "ophiurioidea": {
+      "word": "OPHIURIOIDEA; OPHIUROIDEA",
+      "definitions": [
+        {
+          "text": "A class of star-shaped echinoderms having a disklike body, with slender, articulated arms, which are not grooved beneath and are often very fragile; -- called also Ophiuroida and Ophiuridea. See Illust. under Brittle star.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ophiuroidea": {
       "word": "OPHIURIOIDEA; OPHIUROIDEA",
       "definitions": [
         {
@@ -1247,7 +1309,7 @@
       "word": "OPHTHALMOSCOPE",
       "definitions": [
         {
-          "text": "An instrument for viewing the interior of the eye, particularly the retina. Light is thrown into the eye by a mirror (usually concave) and the interior is then examined with or without the aid of",
+          "text": "An instrument for viewing the interior of the eye, particularly the retina. Light is thrown into the eye by a mirror (usually concave) and the interior is then examined with or without the aid of a lens.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1447,11 +1509,29 @@
       ],
       "relatedWords": []
     },
-    "opiniasteropiniatre": {
+    "opiniaster": {
       "word": "OPINIASTER; OPINIATRE",
       "definitions": [
         {
           "text": "Opinionated. [Obs.] Sir W. Raleigh.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "opiniatre": {
+      "word": "OPINIASTER; OPINIATRE",
+      "definitions": [
+        {
+          "text": "Opinionated. [Obs.] Sir W. Raleigh.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One who is opinionated. [Obs.] South. Barrow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Opiniaster. [Obs.] Locke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1487,22 +1567,22 @@
       ],
       "relatedWords": []
     },
-    "opiniatoropiniatre": {
+    "opiniative": {
+      "word": "OPINIATIVE",
+      "definitions": [
+        {
+          "text": "Opinionative. Glanvill.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "opiniator": {
       "word": "OPINIATOR; OPINIATRE",
       "definitions": [
         {
           "text": "One who is opinionated. [Obs.] South. Barrow.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "opiniatre": {
-      "word": "OPINIATRE",
-      "definitions": [
-        {
-          "text": "See Opiniaster. [Obs.] Locke.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1695,7 +1775,17 @@
       ],
       "relatedWords": []
     },
-    "opisthobranchiaopisthobranchiata": {
+    "opisthobranchia": {
+      "word": "OPISTHOBRANCHIA; OPISTHOBRANCHIATA",
+      "definitions": [
+        {
+          "text": "A division of gastropod Mollusca, in which the breathing organs are usually situated behind the heart. It includes the tectibranchs and nudibranchs.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "opisthobranchiata": {
       "word": "OPISTHOBRANCHIA; OPISTHOBRANCHIATA",
       "definitions": [
         {
@@ -1719,7 +1809,17 @@
       ],
       "relatedWords": []
     },
-    "opisthocoelianopisthocoelous": {
+    "opisthocoelian": {
+      "word": "OPISTHOCOELIAN; OPISTHOCOELOUS",
+      "definitions": [
+        {
+          "text": "Concave behind; -- applied especially to vertebræ in which the anterior end of the centrum is convex and the posterior concave.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "opisthocoelous": {
       "word": "OPISTHOCOELIAN; OPISTHOCOELOUS",
       "definitions": [
         {
@@ -1829,7 +1929,17 @@
       ],
       "relatedWords": []
     },
-    "opobalsamopobalsamum": {
+    "opobalsam": {
+      "word": "OPOBALSAM; OPOBALSAMUM",
+      "definitions": [
+        {
+          "text": "The old name of the aromatic resinous juice of the Balsamodendron opobalsamum, now commonly called balm of Gilead. See under Balm.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "opobalsamum": {
       "word": "OPOBALSAM; OPOBALSAMUM",
       "definitions": [
         {
@@ -1941,7 +2051,17 @@
       ],
       "relatedWords": []
     },
-    "oppleteoppleted": {
+    "opplete": {
+      "word": "OPPLETE; OPPLETED",
+      "definitions": [
+        {
+          "text": "Filled; crowded. [Obs.] Johnson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "oppleted": {
       "word": "OPPLETE; OPPLETED",
       "definitions": [
         {
@@ -2003,7 +2123,7 @@
       "word": "OPPORTUNE",
       "definitions": [
         {
-          "text": "Convenient; ready; hence, seasonable; timely. Milton.",
+          "text": "Convenient; ready; hence, seasonable; timely. Milton. This is most opportune to our need. Shak.",
           "partOfSpeech": "adjective"
         },
         {
@@ -2333,7 +2453,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Heavy; overpowering; hard to be borne; as, oppressive grief or woe.",
+          "text": "Heavy; overpowering; hard to be borne; as, oppressive grief or woe. To ease the soul of one oppressive weight. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2367,7 +2487,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Infamous; despised; rendered hateful; as, an opprobrious name.",
+          "text": "Infamous; despised; rendered hateful; as, an opprobrious name. This dark, opprobrious den of shame. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2549,11 +2669,23 @@
         {
           "text": "An eyeglass. [Obs.] Herbert.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to vision or sight. The moon, whose orb Through optic glass the Tuscan artist views. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the eye; ocular; as, the optic nerves (the first pair of cranial nerves) which are distributed to the retina. See Illust. of Brain, and Eye.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Relating to the science of optics; as, optical works. Optic angle (Opt.), the angle included between the optic axes of the two eyes when directed to the same point; -- sometimes called binocular parallax. perpendicular to its anterior and posterior surfaces. In a normal eye it is in the direction of the optic axis that objects are most distinctly seen. (b) The line in a doubly refracting crystal, in the direction of which no double refraction occurs. A uniaxial crystal has one such line, a biaxial crystal has two. measurement of angles in optical experiments. laying off right angles.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "opticoptical": {
+    "optical": {
       "word": "OPTIC; OPTICAL",
       "definitions": [
         {
@@ -2785,7 +2917,17 @@
       ],
       "relatedWords": []
     },
-    "optocoeleoptocoelia": {
+    "optocoele": {
+      "word": "OPTOCOELE; OPTOCOELIA",
+      "definitions": [
+        {
+          "text": "The cavity of one of the optic lobes of the brain in many animals. B. G. Wilder.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "optocoelia": {
       "word": "OPTOCOELE; OPTOCOELIA",
       "definitions": [
         {
@@ -2873,7 +3015,7 @@
       "word": "OPULENT",
       "definitions": [
         {
-          "text": "Having a large estate or property; wealthy; rich; affluent; as,",
+          "text": "Having a large estate or property; wealthy; rich; affluent; as, an opulent city; an opulent citizen. I will piece Her opulent throne with kingdoms. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2899,7 +3041,17 @@
       ],
       "relatedWords": []
     },
-    "opuscleopuscule": {
+    "opuscle": {
+      "word": "OPUSCLE; OPUSCULE",
+      "definitions": [
+        {
+          "text": "A small or petty work.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "opuscule": {
       "word": "OPUSCLE; OPUSCULE",
       "definitions": [
         {
@@ -2924,28 +3076,6 @@
       "definitions": [
         {
           "text": "Opium. [Obs.] Chaucer.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "operationsthemindthethinkingagentorprincipaltheegocf": {
-      "word": "operations; the mind; the thinking agent or principal; the ego. Cf.",
-      "definitions": [
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The principal theme, or leading thought or phrase, on which a composition or a movement is based. The earliest known form of subject is the ecclesiastical cantus firmus, or plain song. Rockstro.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Fine Arts)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The incident, scene, figure, group, etc., which it is the aim of the artist to represent.",
           "partOfSpeech": "noun"
         }
       ],

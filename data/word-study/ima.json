@@ -649,7 +649,7 @@
       "word": "IMAGINABLE",
       "definitions": [
         {
-          "text": "Capable of being imagined; conceivable.",
+          "text": "Capable of being imagined; conceivable. Men sunk into the greatest darkness imaginable. Tillotson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1185,7 +1185,21 @@
       ],
       "relatedWords": []
     },
-    "imamimanimaum": {
+    "imam": {
+      "word": "IMAM; IMAN; IMAUM",
+      "definitions": [
+        {
+          "text": "Among the Mohammedans, a minister or priest who performs the regular service of the mosque.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A Mohammedan prince who, as a successor of Mohammed, unites in his person supreme spiritual and temporal power.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "iman": {
       "word": "IMAM; IMAN; IMAUM",
       "definitions": [
         {
@@ -1204,6 +1218,20 @@
       "definitions": [
         {
           "text": "A lodging house for Mohammedan pilgrims. Moore.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "imaum": {
+      "word": "IMAM; IMAN; IMAUM",
+      "definitions": [
+        {
+          "text": "Among the Mohammedans, a minister or priest who performs the regular service of the mosque.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A Mohammedan prince who, as a successor of Mohammed, unites in his person supreme spiritual and temporal power.",
           "partOfSpeech": "noun"
         }
       ],

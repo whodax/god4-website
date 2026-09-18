@@ -1,24 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "miriemuriemerrypleasantasmergemyrigepleasantcf": {
-      "word": "mirie, murie, merry, pleasant, AS. merge, myrige, pleasant; cf.",
-      "definitions": [
-        {
-          "text": "Laughingly gay; overflowing with good humor and good spirits; jovial; inclined to laughter or play ; sportive. They drank, and were merry with him. Gen. xliii. 34. I am never merry when I hear sweet music. Shak.",
-          "partOfSpeech": "adverb"
-        },
-        {
-          "text": "Cheerful; joyous; not sad; happy. Is any merry Jas. v. 13.",
-          "partOfSpeech": "adverb"
-        },
-        {
-          "text": "Causing laughter, mirth, gladness, or delight; as, merry jest. \"Merry wind and weather.\" Spenser. Merry dancers. See under Dancer. His merie men commanded he To make him bothe game and glee. Chaucer. mirth. Judg. ix. 27. mirthful; jocund; sportive; hilarious.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
     "mi": {
       "word": "MI",
       "definitions": [
@@ -99,7 +81,17 @@
       ],
       "relatedWords": []
     },
-    "miasmaticmiasmatical": {
+    "miasmatic": {
+      "word": "MIASMATIC; MIASMATICAL",
+      "definitions": [
+        {
+          "text": "Containing, or relating to, miasma; caused by miasma; as, miasmatic diseases.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "miasmatical": {
       "word": "MIASMATIC; MIASMATICAL",
       "definitions": [
         {
@@ -193,7 +185,17 @@
       ],
       "relatedWords": []
     },
-    "michmiche": {
+    "mich": {
+      "word": "MICH; MICHE",
+      "definitions": [
+        {
+          "text": "To lie hid; to skulk; to act, or carry one's self, sneakingly. [Obs. or Colloq.] [Written also meach and meech.] Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "miche": {
       "word": "MICH; MICHE",
       "definitions": [
         {
@@ -303,7 +305,17 @@
       ],
       "relatedWords": []
     },
-    "micromicr": {
+    "micro": {
+      "word": "MICRO-; MICR-",
+      "definitions": [
+        {
+          "text": "A combining form signifying: (a) Small, little, trivial, slight; as, microcosm, microscope. (b) (Metric System, Elec., Mech., etc.) A millionth part of; as, microfarad, microohm, micrometer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "micr": {
       "word": "MICRO-; MICR-",
       "definitions": [
         {
@@ -361,7 +373,17 @@
       ],
       "relatedWords": []
     },
-    "microbemicrobion": {
+    "microbe": {
+      "word": "MICROBE; MICROBION",
+      "definitions": [
+        {
+          "text": "A microscopic organism; -- particularly applied to bacteria and especially to pathogenic forms; as, the microbe of fowl cholera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microbion": {
       "word": "MICROBE; MICROBION",
       "definitions": [
         {
@@ -401,7 +423,27 @@
       ],
       "relatedWords": []
     },
-    "microcephalicmicrocephalous": {
+    "microbiology": {
+      "word": "MICROBIOLOGY",
+      "definitions": [
+        {
+          "text": "The study of minute organisms, or microbes, as the bacteria. -- Mi`cro*bi`o*log\"ic*al (#), a. -- Mi`cro*bi*ol\"o*gist (#), n.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microcephalic": {
+      "word": "MICROCEPHALIC; MICROCEPHALOUS",
+      "definitions": [
+        {
+          "text": "Having a small head; having the cranial cavity small; -- opposed to Ant: megacephalic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microcephalous": {
       "word": "MICROCEPHALIC; MICROCEPHALOUS",
       "definitions": [
         {
@@ -481,7 +523,17 @@
       ],
       "relatedWords": []
     },
-    "microcosmicmicrocosmical": {
+    "microcosmic": {
+      "word": "MICROCOSMIC; MICROCOSMICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the microcosm. Microcosmic salt (Chem.), a white crystalline substance obtained by mixing solutions of sodium phosphate and ammonium phosphate, and also called hydric-sodic- ammonic-phosphate. It is a powerful flux, and is used as a substitute for borax as a blowpipe reagent in testing for the metallic oxides. Originally obtained by the alchemists from human urine, and called sal microcosmicum.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microcosmical": {
       "word": "MICROCOSMIC; MICROCOSMICAL",
       "definitions": [
         {
@@ -703,11 +755,21 @@
       ],
       "relatedWords": []
     },
-    "micrologicmicrological": {
+    "micrologic": {
       "word": "MICROLOGIC; MICROLOGICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to micrology; very minute; as, micrologic",
+          "text": "Of or pertaining to micrology; very minute; as, micrologic examination.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "micrological": {
+      "word": "MICROLOGIC; MICROLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to micrology; very minute; as, micrologic examination.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -743,6 +805,26 @@
         {
           "text": "An instrument, used with a telescope or microscope, for measuring minute distances, or the apparent diameters of objects which subtend minute angles. The measurement given directly is that of the image of the object formed at the focus of the object glass. Circular, or Ring, micrometer, a metallic ring fixed in the focus of the object glass of a telescope, and used to determine differences of right ascension and declination between stars by observations of the times at which the stars cross the inner or outer periphery of the ring. object are formed in the field, usually by the two halves of a bisected lens which are movable along their line of section by a screw, and distances are determined by the number of screw revolutions necessary to bring the points to be measured into optical coincidence. When the two images are formed by a bisected objects glass, it is called a divided-object-glass micrometer, and when the instrument is large and equatorially mounted, it is known as a heliometer. micrometer, in which the two images are formed by the double refraction of rock crystal. micrometer screw, for measuring dimensions with great accuracy. filar micrometer, used chiefly for reading and subdividing the divisions of large astronomical and geodetical instruments. forms of micrometers. graduated scale of equal parts used in the field of a telescope or microscope, for measuring distances by direct comparison.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "micrometric": {
+      "word": "MICROMETRIC; MICROMETRICAL",
+      "definitions": [
+        {
+          "text": "Belonging to micrometry; made by the micrometer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "micrometrical": {
+      "word": "MICROMETRIC; MICROMETRICAL",
+      "definitions": [
+        {
+          "text": "Belonging to micrometry; made by the micrometer.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -807,7 +889,7 @@
       ],
       "relatedWords": []
     },
-    "microorganismmicroorganism": {
+    "microorganism": {
       "word": "MICROORGANISM; MICRO-ORGANISM",
       "definitions": [
         {
@@ -841,7 +923,7 @@
       "word": "MICROPEGMATITE",
       "definitions": [
         {
-          "text": "A rock showing under the microscope the structure of a graphic",
+          "text": "A rock showing under the microscope the structure of a graphic granite (pegmatite).",
           "partOfSpeech": "noun"
         }
       ],
@@ -911,7 +993,17 @@
       ],
       "relatedWords": []
     },
-    "microphthalmiamicrophthalmy": {
+    "microphthalmia": {
+      "word": "MICROPHTHALMIA; MICROPHTHALMY",
+      "definitions": [
+        {
+          "text": "An unnatural smallness of the eyes, occurring as the result of disease or of imperfect development.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microphthalmy": {
       "word": "MICROPHTHALMIA; MICROPHTHALMY",
       "definitions": [
         {
@@ -981,7 +1073,25 @@
       ],
       "relatedWords": []
     },
-    "microscopicmicroscopical": {
+    "microscopic": {
+      "word": "MICROSCOPIC; MICROSCOPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the microscope or to microscopy; made with a microscope; as, microscopic observation.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Able to see extremely minute objects. Why has not man a microscopic eye Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Very small; visible only by the aid of a microscope; as, a microscopic insect.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microscopical": {
       "word": "MICROSCOPIC; MICROSCOPICAL",
       "definitions": [
         {
@@ -1054,6 +1164,16 @@
       "definitions": [
         {
           "text": "Science or study of microseisms.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microseismometer": {
+      "word": "MICROSEISMOMETER",
+      "definitions": [
+        {
+          "text": "A seismometer for measuring amplitudes or periods, or both, of microseisms. --Mi`cro*seis*mom\"e*try (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1149,7 +1269,17 @@
       ],
       "relatedWords": []
     },
-    "microtomicmicrotomical": {
+    "microtomic": {
+      "word": "MICROTOMIC; MICROTOMICAL",
+      "definitions": [
+        {
+          "text": "Of or pert. to the microtome or microtomy; cutting thin slices.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microtomical": {
       "word": "MICROTOMIC; MICROTOMICAL",
       "definitions": [
         {
@@ -1209,7 +1339,17 @@
       ],
       "relatedWords": []
     },
-    "microzoosporemicrozooespore": {
+    "microzoospore": {
+      "word": "MICROZOOSPORE; MICROZOOESPORE",
+      "definitions": [
+        {
+          "text": "A small motile spore furnished with two vibratile cilia, found in certain green algæ.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "microzooespore": {
       "word": "MICROZOOSPORE; MICROZOOESPORE",
       "definitions": [
         {
@@ -1475,7 +1615,7 @@
       "word": "MIDDLING",
       "definitions": [
         {
-          "text": "Of middle rank, state, size, or quality; about equally distant from the extremes; medium; moderate; mediocre; ordinary. \"A town of but middling size.\" Hallam. Plainly furnished, as beseemed the middling circumstances of its",
+          "text": "Of middle rank, state, size, or quality; about equally distant from the extremes; medium; moderate; mediocre; ordinary. \"A town of but middling size.\" Hallam. Plainly furnished, as beseemed the middling circumstances of its inhabitants. Hawthorne.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1533,11 +1673,25 @@
         {
           "text": "The middle space or region between heaven and hell; the abode of human beings; the earth.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The middle space or region between heaven and hell, the abode of human beings; the earth.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "midgardmidgarthmithgarthr": {
+    "midgarth": {
+      "word": "MIDGARD; MIDGARTH; MITHGARTHR",
+      "definitions": [
+        {
+          "text": "The middle space or region between heaven and hell, the abode of human beings; the earth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mithgarthr": {
       "word": "MIDGARD; MIDGARTH; MITHGARTHR",
       "definitions": [
         {
@@ -1699,7 +1853,7 @@
       ],
       "relatedWords": []
     },
-    "midseamidsea": {
+    "midsea": {
       "word": "MID SEA; MID-SEA",
       "definitions": [
         {
@@ -1903,6 +2057,10 @@
         {
           "text": "imp. of May. Etym: [AS. meahte, mihte.]",
           "partOfSpeech": ""
+        },
+        {
+          "text": "Force or power of any kind, whether of body or mind; energy or intensity of purpose, feeling, or action; means or resources to effect an object; strength; force; power; ability; capacity. What so strong, But wanting rest, will also want of might Spenser. Thou shalt love the Lord thy God with all thine heart, and with all thy soul, and with all thy might. Deut. vi. 5. With might and main. See under 2d Main.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2024,6 +2182,16 @@
       "definitions": [
         {
           "text": "A plant (Reseda odorata) having greenish flowers with orange- colored stamens, and exhaling a delicious fragrance. In Africa it is a low shrub, but further north it is usually an annual herb. Mignonette pepper, coarse pepper.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "migraine": {
+      "word": "MIGRAINE",
+      "definitions": [
+        {
+          "text": "Same as Megrim.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2399,6 +2567,16 @@
       ],
       "relatedWords": []
     },
+    "militant": {
+      "word": "MILITANT",
+      "definitions": [
+        {
+          "text": "Engaged in warfare; fighting; combating; serving as a soldier. At which command the powers militant... Moved on in silence. Milton. Church militant, the Christian church on earth, which is supposed to be engaged in a constant warfare against its enemies, and is thus distinguished from the church triumphant, in heaven.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "militar": {
       "word": "MILITAR",
       "definitions": [
@@ -2530,6 +2708,10 @@
         },
         {
           "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ripe, undischarged spat of an oyster. Condensed milk. See under Condense, v. t. scalp of nursing infants. See Eczema. first lactation. It is usually transitory. (b) (Vet. Surg.) A form puerperal peritonitis in cattle; also, a variety of meningitis occurring in cows after calving. woman, due to obstruction to the flow of milk and congestion of the mammary glands. puerperal women, caused by an inflammation of veins, and characterized by a white appearance occasioned by an accumulation of serum and sometimes of pus in the cellular tissue. Bailey. shed and replaced by the premolars. produced by macerating quicklime in water. of Europe and Asia, having a milky juice. twining plants. some parts of the Western United States, and affecting certain kinds of farm stock (esp. cows), and persons who make use of the meat or dairy products of infected cattle. Its chief symptoms in man are uncontrollable vomiting, obstinate constipation, pain, and muscular tremors. Its origin in cattle has been variously ascribed to the presence of certain plants in their food, and to polluted drinking water. triangulus, or O. eximius). It is variously marked with white, gray, and red. Called also milk adder, chicken snake, house snake, etc. (below). marianum), having the veins of its leaves of a milky whiteness. young mammals; in man there are twenty. of South America (Brosimum Galactodendron), and the Euphorbia balsamifera of the Canaries, the milk of both of which is wholesome food. or a series of cells, in which the milky juice is contained. See Latex. crystalline slightly sweet substance obtained by evaporation of the whey of milk. It is used in pellets and powder as a vehicle for homeopathic medicines, and as an article of diet. See Lactose.",
           "partOfSpeech": "noun"
         },
         {
@@ -2849,7 +3031,17 @@
       ],
       "relatedWords": []
     },
-    "millenarianismmillenarism": {
+    "millenarianism": {
+      "word": "MILLENARIANISM; MILLENARISM",
+      "definitions": [
+        {
+          "text": "The doctrine of Millenarians.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "millenarism": {
       "word": "MILLENARIANISM; MILLENARISM",
       "definitions": [
         {
@@ -2883,7 +3075,17 @@
       ],
       "relatedWords": []
     },
-    "millennialismmillenniarism": {
+    "millennialism": {
+      "word": "MILLENNIALISM; MILLENNIARISM",
+      "definitions": [
+        {
+          "text": "Belief in, or expectation of, the millennium; millenarianism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "millenniarism": {
       "word": "MILLENNIALISM; MILLENNIARISM",
       "definitions": [
         {
@@ -3079,7 +3281,7 @@
       ],
       "relatedWords": []
     },
-    "milligrammilligramme": {
+    "milligram": {
       "word": "MILLIGRAM; MILLIGRAMME",
       "definitions": [
         {
@@ -3089,7 +3291,17 @@
       ],
       "relatedWords": []
     },
-    "millilitermillilitre": {
+    "milligramme": {
+      "word": "MILLIGRAM; MILLIGRAMME",
+      "definitions": [
+        {
+          "text": "A measure of weight, in the metric system, being the thousandth part of a gram, equal to the weight of a cubic millimeter of water, or .01543 of a grain avoirdupois.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "milliliter": {
       "word": "MILLILITER; MILLILITRE",
       "definitions": [
         {
@@ -3099,7 +3311,27 @@
       ],
       "relatedWords": []
     },
-    "millimetermillimetre": {
+    "millilitre": {
+      "word": "MILLILITER; MILLILITRE",
+      "definitions": [
+        {
+          "text": "A measure of capacity in the metric system, containing the thousandth part of a liter. It is a cubic centimeter, and is equal to .061 of an English cubic inch, or to .0338 of an American fluid ounce.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "millimeter": {
+      "word": "MILLIMETER; MILLIMETRE",
+      "definitions": [
+        {
+          "text": "A lineal measure in the metric system, containing the thousandth part of a meter; equal to .03937 of an inch. See 3d Meter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "millimetre": {
       "word": "MILLIMETER; MILLIMETRE",
       "definitions": [
         {
@@ -3279,7 +3511,7 @@
       ],
       "relatedWords": []
     },
-    "millreamillreemillreis": {
+    "millrea": {
       "word": "MILLREA; MILLREE; MILLREIS",
       "definitions": [
         {
@@ -3289,7 +3521,37 @@
       ],
       "relatedWords": []
     },
-    "millrindmillrynd": {
+    "millree": {
+      "word": "MILLREA; MILLREE; MILLREIS",
+      "definitions": [
+        {
+          "text": "See Milreis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "millreis": {
+      "word": "MILLREA; MILLREE; MILLREIS",
+      "definitions": [
+        {
+          "text": "See Milreis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "millrind": {
+      "word": "MILLRIND; MILLRYND",
+      "definitions": [
+        {
+          "text": "A figure supposed to represent the iron which holds a millstone by being set into its center.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "millrynd": {
       "word": "MILLRIND; MILLRYND",
       "definitions": [
         {
@@ -3313,7 +3575,7 @@
       "word": "MILLSTONE",
       "definitions": [
         {
-          "text": "One of two circular stones used for grinding grain or other substance. No man shall take the nether or the upper millstone to pledge. Deut. xxiv. 6. employed for millstones; also, some kinds of lava, as that Niedermendig, or other firm rock with rough texture. The surface of a millstone has usually a series of radial grooves in which the powdered material collects. Millstone girt (Geol.), a hard and",
+          "text": "One of two circular stones used for grinding grain or other substance. No man shall take the nether or the upper millstone to pledge. Deut. xxiv. 6. employed for millstones; also, some kinds of lava, as that Niedermendig, or other firm rock with rough texture. The surface of a millstone has usually a series of radial grooves in which the powdered material collects. Millstone girt (Geol.), a hard and coarse, gritty sandstone, dividing the Carboniferous from the Subcarboniferous strata. See Farewell rock, under Farewell, a., and Chart of Geology. difficult matter. (Colloq.)",
           "partOfSpeech": "noun"
         }
       ],
@@ -3451,6 +3713,10 @@
         {
           "text": "An actor in such representations.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To mimic. [Obs.] -- Mim\"er, n.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -3485,7 +3751,25 @@
       ],
       "relatedWords": []
     },
-    "mimeticmimetical": {
+    "mimetic": {
+      "word": "MIMETIC; MIMETICAL",
+      "definitions": [
+        {
+          "text": "Apt to imitate; given to mimicry; imitative.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Characterized by mimicry; -- applied to animals and plants; as, mimetic species; mimetic organisms. See Mimicry.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "mimetical": {
       "word": "MIMETIC; MIMETICAL",
       "definitions": [
         {
@@ -3523,7 +3807,7 @@
       ],
       "relatedWords": []
     },
-    "mimicmimical": {
+    "mimic": {
       "word": "MIMIC; MIMICAL",
       "definitions": [
         {
@@ -3541,13 +3825,7 @@
         {
           "text": "Imitative; characterized by resemblance to other forms; -- applied to crystals which by twinning resemble simple forms of a higher grade of symmetry. dignified than imitative. Mimic beetle (Zoöl.), a beetle that feigns death when disturbed, esp. the species of Hister and allied genera.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "mimic": {
-      "word": "MIMIC",
-      "definitions": [
+        },
         {
           "text": "One who imitates or mimics, especially one who does so for sport; a copyist; a buffoon. Burke.",
           "partOfSpeech": "noun"
@@ -3563,6 +3841,28 @@
         {
           "text": "To assume a resemblance to (some other organism of a totally different nature, or some surrounding object), as a means of protection or advantage.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mimical": {
+      "word": "MIMIC; MIMICAL",
+      "definitions": [
+        {
+          "text": "Imitative; mimetic. Oft, in her absence, mimic fancy wakes To imitate her. Milton. Man is, of all creatures, the most mimical. W. Wotton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Consisting of, or formed by, imitation; imitated; as, mimic gestures. \"Mimic hootings.\" Wordsworth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Imitative; characterized by resemblance to other forms; -- applied to crystals which by twinning resemble simple forms of a higher grade of symmetry. dignified than imitative. Mimic beetle (Zoöl.), a beetle that feigns death when disturbed, esp. the species of Hister and allied genera.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3707,7 +4007,17 @@
       ],
       "relatedWords": []
     },
-    "minatoriallyminatorily": {
+    "minatorially": {
+      "word": "MINATORIALLY; MINATORILY",
+      "definitions": [
+        {
+          "text": "In a minatory manner; with threats.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "minatorily": {
       "word": "MINATORIALLY; MINATORILY",
       "definitions": [
         {
@@ -3817,27 +4127,21 @@
       ],
       "relatedWords": []
     },
-    "minnememoryicelminnigothgamundslmensmentismindgr": {
-      "word": "minne memory, Icel. minni, Goth. gamunds, L. mens, mentis, mind, Gr.",
-      "definitions": [
-        {
-          "text": "The intellectual or rational faculty in man; the understanding; the intellect; the power that conceives, judges, or reasons; also, the entire spiritual nature; the soul; -- often in distinction from the body. By the mind of man we understand that in him which thinks, remembers, reasons, wills. Reid. What we mean by mind is simply that which perceives, thinks, feels, wills, and desires. Sir W. Hamilton. Let every man be fully persuaded in his own mind. Rom. xiv. 5. The mind shall banquet, though the body pine. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The state, at any given time, of the faculties of thinking, willing, choosing, and the like; psychical activity or state; as: (a) Opinion; judgment; belief. A fool uttereth all his mind. Prov. xxix. 11. Being so hard to me that brought your mind, I fear she'll prove as hard to you in telling her mind. Shak. (b) Choice; inclination; liking; intent; will. If it be your minds, then let none go forth. 2 Kings ix. 15. (c) Courage; spirit. Chapman.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Memory; remembrance; recollection; as, to have or keep in mind, to call to mind, to put in mind, etc. To have a mind or great mind, to be inclined or strongly inclined in purpose; -- used with an infinitive. \"Sir Roger de Coverly... told me that he had a great mind to see the new tragedy with me.\" Addison. determine. mind of what you already know to be good policy.\" Jowett (Thucyd. ).",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "mind": {
       "word": "MIND",
       "definitions": [
+        {
+          "text": "The intellectual or rational faculty in man; the understanding; the intellect; the power that conceives, judges, or reasons; also, the entire spiritual nature; the soul; -- often in distinction from the body. By the mind of man we understand that in him which thinks, remembers, reasons, wills. Reid. What we mean by mind is simply that which perceives, thinks, feels, wills, and desires. Sir W. Hamilton. Let every man be fully persuaded in his own mind. Rom. xiv. 5. The mind shall banquet, though the body pine. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state, at any given time, of the faculties of thinking, willing, choosing, and the like; psychical activity or state; as: (a) Opinion; judgment; belief. A fool uttereth all his mind. Prov. xxix. 11. Being so hard to me that brought your mind, I fear she'll prove as hard to you in telling her mind. Shak. (b) Choice; inclination; liking; intent; will. If it be your minds, then let none go forth. 2 Kings ix. 15. (c) Courage; spirit. Chapman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Memory; remembrance; recollection; as, to have or keep in mind, to call to mind, to put in mind, etc. To have a mind or great mind, to be inclined or strongly inclined in purpose; -- used with an infinitive. \"Sir Roger de Coverly... told me that he had a great mind to see the new tragedy with me.\" Addison. determine. mind of what you already know to be good policy.\" Jowett (Thucyd. ).",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To fix the mind or thoughts on; to regard with attention; to treat as of consequence; to consider; to heed; to mark; to note. \"Mind not high things, but condescend to men of low estate.\" Rom. xii. 16. My lord, you nod: you do not mind the play. Shak.",
           "partOfSpeech": "verb"
@@ -3893,7 +4197,7 @@
       "word": "MINDFUL",
       "definitions": [
         {
-          "text": "Bearing in mind; regardful; attentive; heedful; observant. What is man, that thou art mindful of him Ps. viii. 4.",
+          "text": "Bearing in mind; regardful; attentive; heedful; observant. What is man, that thou art mindful of him Ps. viii. 4. I promise you to be mindful of your admonitions. Hammond.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4273,7 +4577,17 @@
       ],
       "relatedWords": []
     },
-    "miniaceousminaceous": {
+    "miniaceous": {
+      "word": "MINIACEOUS; MINACEOUS",
+      "definitions": [
+        {
+          "text": "Of the color of minium or red lead; miniate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "minaceous": {
       "word": "MINIACEOUS; MINACEOUS",
       "definitions": [
         {
@@ -4629,7 +4943,17 @@
       ],
       "relatedWords": []
     },
-    "minionlikeminionly": {
+    "minionlike": {
+      "word": "MINIONLIKE; MINIONLY",
+      "definitions": [
+        {
+          "text": "Like a minion; daintily. Camden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "minionly": {
       "word": "MINIONLIKE; MINIONLY",
       "definitions": [
         {
@@ -4655,6 +4979,16 @@
         {
           "text": "Of the color of red or vermilion. [Obs.] Sir T. Browne.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "minish": {
+      "word": "MINISH",
+      "definitions": [
+        {
+          "text": "To diminish; to lessen. The living of poor men thereby minished. Latimer.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -4950,6 +5284,18 @@
     "minor": {
       "word": "MINOR",
       "definitions": [
+        {
+          "text": "Inferior in bulk, degree, importance, etc.; less; smaller; of little account; as, minor divisions of a body.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Less by a semitone in interval or difference of pitch; as, a minor third. Asia Minor (Geog.), the Lesser Asia; that part of Asia which lies between the Euxine, or Black Sea, on the north, and the Mediterranean on the south. sixth are minor, -- much used for mournful and solemn subjects. ecclesiastical offices who are not in holy orders, as doorkeepers, acolytes, etc. strictly correct form has the third and sixth minor, with a semitone between the seventh and eighth, which involves an augmented second interval, or three semitones, between the sixth and seventh, as, 6/F, 7/G#, 8/A. But, for melodic purposes, both the sixth and the seventh are sometimes made major in the ascending, and minor in the descending, scale, thus: --See Major.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A person of either sex who has not attained the age at which full civil rights are accorded; an infant; in England and the United States, one under twenty-one years of age. an earlier age than of a subject. The minority of a sovereign of Great Britain ends upon the completion of the eighteenth year of his age.",
           "partOfSpeech": "noun"
@@ -5639,7 +5985,17 @@
       ],
       "relatedWords": []
     },
-    "mirificmirifical": {
+    "mirific": {
+      "word": "MIRIFIC; MIRIFICAL",
+      "definitions": [
+        {
+          "text": "Working wonders; wonderful.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mirifical": {
       "word": "MIRIFIC; MIRIFICAL",
       "definitions": [
         {
@@ -5771,7 +6127,17 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Indicating or inspiring mirth; as, a mirthful face.",
+          "text": "Indicating or inspiring mirth; as, a mirthful face. Mirthful, comic shows. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mirthless": {
+      "word": "MIRTHLESS",
+      "definitions": [
+        {
+          "text": "Without mirth.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5921,6 +6287,16 @@
       ],
       "relatedWords": []
     },
+    "misadvised": {
+      "word": "MISADVISED",
+      "definitions": [
+        {
+          "text": "Ill advised.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "misaffect": {
       "word": "MISAFFECT",
       "definitions": [
@@ -6041,7 +6417,17 @@
       ],
       "relatedWords": []
     },
-    "misanthropicmisanthropical": {
+    "misanthropic": {
+      "word": "MISANTHROPIC; MISANTHROPICAL",
+      "definitions": [
+        {
+          "text": "Hating or disliking mankind.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "misanthropical": {
       "word": "MISANTHROPIC; MISANTHROPICAL",
       "definitions": [
         {
@@ -6261,6 +6647,16 @@
       ],
       "relatedWords": []
     },
+    "misbecoming": {
+      "word": "MISBECOMING",
+      "definitions": [
+        {
+          "text": "Unbecoming. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "misbede": {
       "word": "MISBEDE",
       "definitions": [
@@ -6281,7 +6677,17 @@
       ],
       "relatedWords": []
     },
-    "misbegotmisbegotten": {
+    "misbegot": {
+      "word": "MISBEGOT; MISBEGOTTEN",
+      "definitions": [
+        {
+          "text": "Unlawfully or irregularly begotten; of bad origin; pernicious. \"Valor misbegot.\" Shak.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "misbegotten": {
       "word": "MISBEGOT; MISBEGOTTEN",
       "definitions": [
         {
@@ -6417,6 +6823,16 @@
         {
           "text": "Born to misfortune. Spenser.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "miscalculate": {
+      "word": "MISCALCULATE",
+      "definitions": [
+        {
+          "text": "To calculate erroneously; to judge wrongly.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -7127,7 +7543,17 @@
       ],
       "relatedWords": []
     },
-    "miscreancemiscreancy": {
+    "miscreance": {
+      "word": "MISCREANCE; MISCREANCY",
+      "definitions": [
+        {
+          "text": "The quality of being miscreant; adherence to a false religion; false faith. [Obs.] Ayliffe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "miscreancy": {
       "word": "MISCREANCE; MISCREANCY",
       "definitions": [
         {
@@ -8275,6 +8701,16 @@
       ],
       "relatedWords": []
     },
+    "misguiding": {
+      "word": "MISGUIDING",
+      "definitions": [
+        {
+          "text": "Misleading.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "misgye": {
       "word": "MISGYE",
       "definitions": [
@@ -9181,7 +9617,17 @@
       ],
       "relatedWords": []
     },
-    "mispellmispend": {
+    "mispell": {
+      "word": "MISPELL; MISPEND",
+      "definitions": [
+        {
+          "text": "See Misspell, Misspend, etc.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mispend": {
       "word": "MISPELL; MISPEND",
       "definitions": [
         {
@@ -9815,7 +10261,11 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To go wrong; to err. [Obs.] Amongst the angels, a whole legion Of wicked sprites did fall from",
+          "text": "To go wrong; to err. [Obs.] Amongst the angels, a whole legion Of wicked sprites did fall from happy bliss; What wonder then if one, of women all, did miss Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be absent, deficient, or wanting. [Obs.] See Missing, a. What here shall miss, our toil shall strive to mend. Shak.",
           "partOfSpeech": "verb"
         },
         {
@@ -9987,7 +10437,7 @@
       "word": "MISSHAPEN",
       "definitions": [
         {
-          "text": "Having a bad or ugly form. \"The mountains are misshapen.\"",
+          "text": "Having a bad or ugly form. \"The mountains are misshapen.\" Bentley.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10099,12 +10549,32 @@
       ],
       "relatedWords": []
     },
+    "missioner": {
+      "word": "MISSIONER",
+      "definitions": [
+        {
+          "text": "A missionary; an envoy; one who conducts a mission. See Mission, n., 6. \"Like mighty missioner you come.\" Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "missis": {
       "word": "MISSIS",
       "definitions": [
         {
           "text": "A mistress; a wife; -- so used by the illiterate. G. Eliot.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "missish": {
+      "word": "MISSISH",
+      "definitions": [
+        {
+          "text": "Like a miss; prim; affected; sentimental.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -10337,8 +10807,8 @@
       ],
       "relatedWords": []
     },
-    "miglamistrussmglalmingeremeieretomakewatergrmihto": {
-      "word": "migla mist, Russ. mgla, L. mingere, meiere, to make water, gr. mih to",
+    "mist": {
+      "word": "MIST",
       "definitions": [
         {
           "text": "Visible watery vapor suspended in the atmosphere, at or near the surface of the earth; fog.",
@@ -10351,13 +10821,7 @@
         {
           "text": "Hence, anything which dims or darkens, and obscures or intercepts vision. His passion cast a mist before his sense. Dryden. Mist flower (Bot.), a composite plant (Eupatorium coelestinum), having heart-shaped leaves, and corymbs of lavender-blue flowers. It is found in the Western and Southern United States.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "mist": {
-      "word": "MIST",
-      "definitions": [
+        },
         {
           "text": "To cloud; to cover with mist; to dim. Shak.",
           "partOfSpeech": "verb"
@@ -10625,7 +11089,17 @@
       ],
       "relatedWords": []
     },
-    "misticmistico": {
+    "mistic": {
+      "word": "MISTIC; MISTICO",
+      "definitions": [
+        {
+          "text": "A kind of small sailing vessel used in the Mediterranean. It is rigged partly like a xebec, and partly like a felucca.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mistico": {
       "word": "MISTIC; MISTICO",
       "definitions": [
         {
@@ -10645,7 +11119,17 @@
       ],
       "relatedWords": []
     },
-    "mistigrismistigri": {
+    "mistigris": {
+      "word": "MISTIGRIS; MISTIGRI",
+      "definitions": [
+        {
+          "text": "A variety of the game of poker in which the joker is used, and called mistigris or mistigri.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mistigri": {
       "word": "MISTIGRIS; MISTIGRI",
       "definitions": [
         {
@@ -10959,7 +11443,7 @@
       "word": "MISTRUSTFUL",
       "definitions": [
         {
-          "text": "Having or causing mistrust, suspicions, or forebodings.",
+          "text": "Having or causing mistrust, suspicions, or forebodings. Their light blown out in some mistrustful wood. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11331,7 +11815,7 @@
       ],
       "relatedWords": []
     },
-    "mitermitre": {
+    "miter": {
       "word": "MITER; MITRE",
       "definitions": [
         {
@@ -11361,6 +11845,44 @@
         {
           "text": "To meet and match together, as two pieces of molding, on a line bisecting the angle of junction.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mitre": {
+      "word": "MITER; MITRE",
+      "definitions": [
+        {
+          "text": "A covering for the head, worn on solemn occasions by church dignitaries. It has been made in many forms, the present form being a lofty cap with two points or peaks. Fairholt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The surface forming the beveled end or edge of a piece where a miter joint is made; also, a joint formed or a junction effected by two beveled ends or edges; a miter joint.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Numis.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sort of base money or coin. Miter box (Carp. & Print.), an apparatus for guiding a handsaw at the proper angle in making a miter joint; esp., a wooden or metal trough with vertical kerfs in its upright sides, for guides. which there is only one joint line visible, and that at the angle. miter. line bisecting the angle of junction, as by the beveled ends of two pieces of molding or brass rule, etc. The term is used especially when the pieces form a right angle. See Miter, 2. univalve shells of the genus Mitra. of 45º, for striking lines on stuff to be mitered; also, a square with an arm adjustable to any angle. for working together, usually with their axes at right angles.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To place a miter upon; to adorn with a miter. \"Mitered locks.\" Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To match together, as two pieces of molding or brass rule on a line bisecting the angle of junction; to bevel the ends or edges of, for the purpose of matching together at an angle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To meet and match together, as two pieces of molding, on a line bisecting the angle of junction.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Miter.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -11539,6 +12061,16 @@
       ],
       "relatedWords": []
     },
+    "mitotic": {
+      "word": "MITOTIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to mitosis; karyokinetic; as, mitotic cell division; -- opposed to amitotic. --Mi*tot\"ic*al*ly (#), adv.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "mitraille": {
       "word": "MITRAILLE",
       "definitions": [
@@ -11575,16 +12107,6 @@
         {
           "text": "Pertaining to a miter; resembling a miter; as, the mitral valve between the left auricle and left ventricle of the heart.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "mitre": {
-      "word": "MITRE",
-      "definitions": [
-        {
-          "text": "See Miter.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -11719,6 +12241,16 @@
       ],
       "relatedWords": []
     },
+    "mixed": {
+      "word": "MIXED",
+      "definitions": [
+        {
+          "text": "Formed by mixing; united; mingled; blended. See Mix, v. t. & i. Mixed action (Law), a suit combining the properties of a real and a personal action. fiber, as a poplin. religions; specifically, one between a Roman Catholic and a Protestant. freight cars. the same performance.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "mixedly": {
       "word": "MIXEDLY",
       "definitions": [
@@ -11769,7 +12301,17 @@
       ],
       "relatedWords": []
     },
-    "mixtilinealmixtilinear": {
+    "mixtilineal": {
+      "word": "MIXTILINEAL; MIXTILINEAR",
+      "definitions": [
+        {
+          "text": "Containing, or consisting of, lines of different kinds, as straight, curved, and the like; as, a mixtilinear angle, that is, an angle contained by a straight line and a curve. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mixtilinear": {
       "word": "MIXTILINEAL; MIXTILINEAR",
       "definitions": [
         {
@@ -11903,32 +12445,6 @@
         {
           "text": "A bog or quagmire. [Obs.] Ainsworth.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "missileakintodschotashotshootgschussgeschossa": {
-      "word": "missile; akin to D. schot a shot, shoot, G. schuss, geschoss a",
-      "definitions": [
-        {
-          "text": "The act of shooting; discharge of a firearm or other weapon which throws a missile. He caused twenty shot of his greatest cannon to be made at the king's army. Clarendon.",
-          "partOfSpeech": "transitive verb"
-        },
-        {
-          "text": "A missile weapon, particularly a ball or bullet; specifically, whatever is discharged as a projectile from firearms or cannon by the force of an explosive. the material of which it is composed, into lead, wrought-iron, and cast-iron; according to form, into spherical and oblong; according to structure and modes of operation, into solid, hollow, and case. See Bar shot, Chain shot, etc., under Bar, Chain, etc.",
-          "partOfSpeech": "transitive verb"
-        },
-        {
-          "text": "Small globular masses of lead, of various sizes, -- used chiefly for killing game; as, bird shot; buckshot.",
-          "partOfSpeech": "transitive verb"
-        },
-        {
-          "text": "The flight of a missile, or the distance which it is, or can be, thrown; as, the vessel was distant more than a cannon shot.",
-          "partOfSpeech": "transitive verb"
-        },
-        {
-          "text": "A marksman; one who practices shooting; as, an exellent shot. Shot belt, a belt having a pouch or compartment for carrying shot. forming a charge for a shotgun. the coamings and ledges round the hatchways of a ship. shot. Totten. a vessel, for containing shot. together, or the whole length of the cables thus united. stop a hole made by the shot of an enemy in a ship's side. summit melted lead in slender streams. The lead forms spherical drops which cool in the descent, and are received in water or other liquid. Halliwell, explains it as a window that opens and shuts; and Wodrow describes it as a window of shutters made of timber and a few inches of glass above them.",
-          "partOfSpeech": "transitive verb"
         }
       ],
       "relatedWords": []

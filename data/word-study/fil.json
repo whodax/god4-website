@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "fil": {
+      "word": "FIL",
+      "definitions": [
+        {
+          "text": "imp. of Fall, v. i. Fell. Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "filaceous": {
       "word": "FILACEOUS",
       "definitions": [
@@ -1362,7 +1372,17 @@
       ],
       "relatedWords": []
     },
-    "filigrainfiligrane": {
+    "filigrain": {
+      "word": "FILIGRAIN; FILIGRANE",
+      "definitions": [
+        {
+          "text": "Filigree. [Archaic] With her head . . . touches the crown of filigrane. Longfellow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "filigrane": {
       "word": "FILIGRAIN; FILIGRANE",
       "definitions": [
         {
@@ -1664,7 +1684,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To fill a cup or glass for drinking.",
+          "text": "To fill a cup or glass for drinking. Give me some wine; fill full. Shak. To back and fill. See under Back, v. i. river fills up with sand.",
           "partOfSpeech": "verb"
         },
         {
@@ -2297,6 +2317,10 @@
         },
         {
           "text": "(Brewing)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Prepared wort added to ale to cleanse it. Back filling. (Arch.) See under Back, a.",
           "partOfSpeech": "noun"
         }
       ],

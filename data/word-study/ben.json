@@ -2,8 +2,12 @@
   "version": "v1",
   "entries": {
     "ben": {
-      "word": "BEN",
+      "word": "BEN; BEN NUT",
       "definitions": [
+        {
+          "text": "The seed of one or more species of moringa; as, oil of ben. See Moringa.",
+          "partOfSpeech": ""
+        },
         {
           "text": "Within; in; in or into the interior; toward the inner apartment. [Scot.]",
           "partOfSpeech": "adverb"
@@ -15,6 +19,10 @@
         {
           "text": "An old form of the pl. indic. pr. of Be. [Obs.]",
           "partOfSpeech": ""
+        },
+        {
+          "text": "A hoglike mammal of New Guinea (Porcula papuensis).",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -25,16 +33,6 @@
         {
           "text": "To promise; to name. [Obs.]",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "benbennut": {
-      "word": "BEN; BEN NUT",
-      "definitions": [
-        {
-          "text": "The seed of one or more species of moringa; as, oil of ben. See Moringa.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1056,6 +1054,10 @@
         {
           "text": "A prayer; boon. [Archaic] What is good for a bootless bene Wordsworth.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hoglike mammal of New Guinea (Porcula papuensis).",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1096,16 +1098,6 @@
       ],
       "relatedWords": []
     },
-    "beneben": {
-      "word": "BENE; BEN",
-      "definitions": [
-        {
-          "text": "A hoglike mammal of New Guinea (Porcula papuensis).",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "benedicite": {
       "word": "BENEDICITE",
       "definitions": [
@@ -1120,22 +1112,26 @@
       ],
       "relatedWords": []
     },
-    "benedict": {
-      "word": "BENEDICT",
-      "definitions": [
-        {
-          "text": "Having mild and salubrious qualities. [Obs.] Bacon.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "benedictbenedick": {
+    "benedick": {
       "word": "BENEDICT; BENEDICK",
       "definitions": [
         {
           "text": "A married man, or a man newly married.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "benedict": {
+      "word": "BENEDICT; BENEDICK",
+      "definitions": [
+        {
+          "text": "A married man, or a man newly married.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Having mild and salubrious qualities. [Obs.] Bacon.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2216,7 +2212,7 @@
       "word": "BENEVOLENT",
       "definitions": [
         {
-          "text": "Having a disposition to do good; possessing or manifesting love to mankind, and a desire to promote their prosperity and happiness;",
+          "text": "Having a disposition to do good; possessing or manifesting love to mankind, and a desire to promote their prosperity and happiness; disposed to give to good objects; kind; charitable. implies wishing well to others, and beneficent, doing well. But by degrees the word benevolent has been widened to include not only feelings, but actions; thus, we speak of benevolent operations, benevolent labors for the public good, benevolent societies. In like manner, beneficent is now often applied to feelings; thus, we speak of the beneficent intentions of a donor. This extension of the terms enables us to mark nicer shades of meaning. Thus, the phrase \"benevolent labors\" turns attention to the source of these labors, viz., benevolent feeling; while beneficent would simply mark them as productive of good. So, \"beneficent intentions\" point to the feelings of the donor as bent upon some specific good act; while \"benevolent intentions\" would only denote a general wish and design to do good.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2359,7 +2355,7 @@
       ],
       "relatedWords": []
     },
-    "bengaleebengali": {
+    "bengalee": {
       "word": "BENGALEE; BENGALI",
       "definitions": [
         {
@@ -2375,6 +2371,16 @@
         {
           "text": "Of or pertaining to Bengal.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bengali": {
+      "word": "BENGALEE; BENGALI",
+      "definitions": [
+        {
+          "text": "The language spoken in Bengal.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2551,6 +2557,16 @@
         {
           "text": "Benignant quality; kindliness.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "benignant": {
+      "word": "BENIGNANT",
+      "definitions": [
+        {
+          "text": "Kind; gracious; favorable.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2759,6 +2775,16 @@
         {
           "text": "The common yellow-flowered avens of Europe (Geum urbanum); herb bennet. The name is sometimes given to other plants, as the hemlock, valerian, etc.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bennut": {
+      "word": "BEN; BEN NUT",
+      "definitions": [
+        {
+          "text": "The seed of one or more species of moringa; as, oil of ben. See Moringa.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -3347,7 +3373,7 @@
       "word": "BENUMBED",
       "definitions": [
         {
-          "text": "Made torpid; numbed; stupefied; deadened; as, a benumbed body",
+          "text": "Made torpid; numbed; stupefied; deadened; as, a benumbed body and mind.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3611,7 +3637,7 @@
       ],
       "relatedWords": []
     },
-    "benzolebenzol": {
+    "benzol": {
       "word": "BENZOLE; BENZOL",
       "definitions": [
         {
@@ -3621,7 +3647,27 @@
       ],
       "relatedWords": []
     },
-    "benzonaphtholbenzonaphtol": {
+    "benzole": {
+      "word": "BENZOLE; BENZOL",
+      "definitions": [
+        {
+          "text": "An impure benzene, used in the arts as a solvent, and for various other purposes. See Benzene. India rubber and gutta percha; also for cleaning soiled kid gloves, and for other purposes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "benzonaphthol": {
+      "word": "BENZONAPHTHOL; BENZONAPHTOL",
+      "definitions": [
+        {
+          "text": "A white crystalline powder used as an intestinal antiseptic; beta-naphthol benzoate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "benzonaphtol": {
       "word": "BENZONAPHTHOL; BENZONAPHTOL",
       "definitions": [
         {

@@ -454,6 +454,178 @@
         "wings"
       ]
     },
+    "grief": {
+      "word": "GRIEF",
+      "definitions": [
+        {
+          "text": "Pain of mind on account of something in the past; mental suffering arising from any cause, as misfortune, loss of friends, misconduct of one's self or others, etc.; sorrow; sadness. The mother was so afflicted at the loss of a fine boy, . . . that she died for grief of it. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Cause of sorrow or pain; that which afficts or distresses; trial; grievance. Be factious for redress of all these griefs. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Physical pain, or a cause of it; malady. [R.] This grief (cancerous ulcers) hastened the end of that famous mathematician, Mr. Harriot. Wood. To come to grief, to meet with calamity, accident, defeat, ruin, etc., causing grief; to turn out badly. [Colloq.] Sorrow, Sadness. Sorrow is the generic term; grief is sorrow for some definite cause -- one which commenced, at least, in the past; sadness is applied to a permanent mood of the mind. Sorrow is transient in many cases; but the grief of a mother for the loss of a favorite child too often turns into habitual sadness. \"Grief is sometimes considered as synonymous with sorrow; and in this case we speak of the transports of grief. At other times it expresses more silent, deep, and painful affections, such as are inspired by domestic calamities, particularly by the loss of friends and relatives, or by the distress, either of body or mind, experienced by those whom we love and value.\" Cogan.See Affliction.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accident",
+        "ache",
+        "aching",
+        "aching heart",
+        "adversity",
+        "affliction",
+        "agony",
+        "agony of mind",
+        "anguish",
+        "apologies",
+        "attrition",
+        "ayenbite of inwit",
+        "bale",
+        "bemoaning",
+        "bewailing",
+        "bitterness",
+        "bleakness",
+        "bleeding heart",
+        "blow",
+        "broken heart",
+        "burden",
+        "calamity",
+        "care",
+        "carking care",
+        "casualty",
+        "cataclysm",
+        "catastrophe",
+        "cheerlessness",
+        "collision",
+        "come apart",
+        "come to grief",
+        "come unstuck",
+        "comfortlessness",
+        "contretemps",
+        "contriteness",
+        "contrition",
+        "crack-up",
+        "cramp",
+        "crash",
+        "crushing",
+        "curse",
+        "cut",
+        "dejection",
+        "depression",
+        "depth of misery",
+        "desolation",
+        "despair",
+        "despondency",
+        "difficulty",
+        "disaster",
+        "discomfort",
+        "dismalness",
+        "distress",
+        "distressfulness",
+        "dole",
+        "dolor",
+        "dreariness",
+        "extremity",
+        "fail",
+        "grievousness",
+        "heartache",
+        "heartbreak",
+        "heartfelt grief",
+        "heartgrief",
+        "heavy heart",
+        "hurt",
+        "ill hap",
+        "infelicity",
+        "injury",
+        "joylessness",
+        "lamentability",
+        "lamentation",
+        "lamenting",
+        "languishment",
+        "lesion",
+        "load",
+        "melancholia",
+        "melancholy",
+        "misadventure",
+        "miscarry",
+        "mischance",
+        "misery",
+        "misfortune",
+        "mishap",
+        "mournfulness",
+        "nasty blow",
+        "onus",
+        "ordeal",
+        "pain",
+        "painfulness",
+        "pang",
+        "passion",
+        "pathos",
+        "pileup",
+        "pining",
+        "pitiability",
+        "pitiableness",
+        "pitifulness",
+        "poignancy",
+        "prostration",
+        "regret",
+        "regretfulness",
+        "regrets",
+        "regrettableness",
+        "regretting",
+        "remorse",
+        "remorse of conscience",
+        "remorsefulness",
+        "repining",
+        "rue",
+        "ruth",
+        "sadness",
+        "shame",
+        "shamefacedness",
+        "shamefastness",
+        "shamefulness",
+        "sharpness",
+        "shipwreck",
+        "shock",
+        "smash",
+        "smashup",
+        "sore",
+        "sore spot",
+        "sorriness",
+        "sorrow",
+        "sorrowfulness",
+        "sorrowing",
+        "spasm",
+        "staggering blow",
+        "stress",
+        "stress of life",
+        "stroke",
+        "suffering",
+        "suicidal despair",
+        "tender spot",
+        "throes",
+        "torment",
+        "tragedy",
+        "trauma",
+        "travail",
+        "trial",
+        "tribulation",
+        "trouble",
+        "unhappiness",
+        "wistfulness",
+        "woe",
+        "woebegoneness",
+        "woefulness",
+        "worry",
+        "wound",
+        "wreck",
+        "wrench",
+        "wretchedness"
+      ]
+    },
     "griefful": {
       "word": "GRIEFFUL",
       "definitions": [
@@ -670,8 +842,12 @@
       "relatedWords": []
     },
     "grieve": {
-      "word": "GRIEVE",
+      "word": "GRIEVE; GREEVE",
       "definitions": [
+        {
+          "text": "A manager of a farm, or overseer of any work; a reeve; a manorial bailiff. [Scot.] Their children were horsewhipped by the grieve. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To occasion grief to; to wound the sensibilities of; to make sorrowful; to cause to suffer; to affect; to hurt; to try. Grieve not the Holy Spirit of God. Eph. iv. 30. The maidens grieved themselves at my concern. Cowper,",
           "partOfSpeech": "verb"
@@ -768,16 +944,6 @@
         "wound"
       ]
     },
-    "grievegreeve": {
-      "word": "GRIEVE; GREEVE",
-      "definitions": [
-        {
-          "text": "A manager of a farm, or overseer of any work; a reeve; a manorial bailiff. [Scot.] Their children were horsewhipped by the grieve. Sir W. Scott.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "griever": {
       "word": "GRIEVER",
       "definitions": [
@@ -793,6 +959,10 @@
       "definitions": [
         {
           "text": "Sad; sorrowful; causing grief.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The act of causing grief; the state of being grieved.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -810,7 +980,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Full of, or expressing, grief; showing great sorrow or affliction;",
+          "text": "Full of, or expressing, grief; showing great sorrow or affliction; as, a grievous cry.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1008,11 +1178,39 @@
         {
           "text": "An Anglo-Indian name for a person just arrived from Europe. H. Kingsley.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Myth.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fabulous monster, half lion and half eagle. It is often represented in Grecian and Roman works of art.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A representation of this creature as an heraldic charge.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A species of large vulture (Gyps fulvus) found in the mountainous parts of Southern Europe, North Africa, and Asia Minor; - - called also gripe, and grype. It is supposed to be the \"eagle\" of the Bible. The bearded griffin is the lammergeir. [Written also gryphon.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An English early apple.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "griffingriffon": {
+    "griffon": {
       "word": "GRIFFIN; GRIFFON",
       "definitions": [
         {
@@ -1060,6 +1258,16 @@
       ],
       "relatedWords": []
     },
+    "grigri": {
+      "word": "GREEGREE; GRIGRI",
+      "definitions": [
+        {
+          "text": "An African talisman or Gri'gri' charm. A greegree man, an African magician or fetich priest.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "gril": {
       "word": "GRIL",
       "definitions": [
@@ -1080,6 +1288,14 @@
         {
           "text": "That which is broiled on a gridiron, as meat, fish, etc.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To broil on a grill or gridiron. Boiling of men in caldrons, grilling them on gridirons. Marvell.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To torment, as if by broiling. Dickens.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": [
@@ -3268,6 +3484,18 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To catch with the hand; to clasp closely with the fingers; to clutch.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To seize and hold fast; to embrace closely. Wouldst thou gripe both gain and pleasure Robynson (More's Utopia).",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pinch; to distress. Specifically, to cause pinching and spasmodic pain to the bowels of, as by the effects of certain purgative or indigestible substances. How inly sorrow gripes his soul. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To clutch, hold, or pinch a thing, esp. money, with a gripe or as with a gripe.",
           "partOfSpeech": "verb"
         },
@@ -4289,7 +4517,17 @@
       ],
       "relatedWords": []
     },
-    "gritrockgritstone": {
+    "gritrock": {
+      "word": "GRITROCK; GRITSTONE",
+      "definitions": [
+        {
+          "text": "See Grit, n., 4.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "gritstone": {
       "word": "GRITROCK; GRITSTONE",
       "definitions": [
         {

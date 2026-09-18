@@ -1,7 +1,17 @@
 {
   "version": "v1",
   "entries": {
-    "ekaborekaboron": {
+    "ekabor": {
+      "word": "EKABOR; EKABORON",
+      "definitions": [
+        {
+          "text": "The name given by Mendelejeff in accordance with the periodic law, and by prediction, to a hypothetical element then unknown, but since discovered and named scandium; -- so called because it was a missing analogue of the boron group. See Scandium.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ekaboron": {
       "word": "EKABOR; EKABORON",
       "definitions": [
         {
@@ -65,16 +75,6 @@
         {
           "text": "An additional or epithet name; a nickname. [Obs.]",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "ekenamebeingunderstoodasanekenameinfluencedalsobyenick": {
-      "word": "ekename being understood as a nekename, influenced also by E. nick,",
-      "definitions": [
-        {
-          "text": "A name given in contempt, derision, or sportive familiarity; a familiar or an opprobrious appellation.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

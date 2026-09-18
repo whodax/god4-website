@@ -195,6 +195,16 @@
       ],
       "relatedWords": []
     },
+    "placekick": {
+      "word": "PLACE-KICK",
+      "definitions": [
+        {
+          "text": "To make a place kick; to make (a goal) by a place kick. -- Place\"-kick`er, n.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "placeless": {
       "word": "PLACELESS",
       "definitions": [
@@ -1015,6 +1025,16 @@
       ],
       "relatedWords": []
     },
+    "plainhearted": {
+      "word": "PLAIN-HEARTED",
+      "definitions": [
+        {
+          "text": "Frank; sincere; artless. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "plaining": {
       "word": "PLAINING",
       "definitions": [
@@ -1252,6 +1272,16 @@
       "definitions": [
         {
           "text": "Any species of turbellarian worms belonging to Planaria, and many allied genera. The body is usually flat, thin, and smooth. Some species, in warm countries, are terrestrial.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "planarian": {
+      "word": "PLANARIAN",
+      "definitions": [
+        {
+          "text": "One of the Planarida, or Dendrocoela; any turbellarian worm.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1531,7 +1561,17 @@
       ],
       "relatedWords": []
     },
-    "planeticplanetical": {
+    "planetic": {
+      "word": "PLANETIC; PLANETICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to planets. Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "planetical": {
       "word": "PLANETIC; PLANETICAL",
       "definitions": [
         {
@@ -1571,7 +1611,17 @@
       ],
       "relatedWords": []
     },
-    "planetstrickenplanetstruck": {
+    "planetstricken": {
+      "word": "PLANET-STRICKEN; PLANET-STRUCK",
+      "definitions": [
+        {
+          "text": "Affected by the influence of planets; blasted. Milton. Like planet-stricken men of yore He trembles, smitten to the core By strong compunction and remorse. Wordsworth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "planetstruck": {
       "word": "PLANET-STRICKEN; PLANET-STRUCK",
       "definitions": [
         {
@@ -1611,12 +1661,26 @@
       ],
       "relatedWords": []
     },
-    "planiplano": {
+    "plani": {
       "word": "PLANI-; PLANO-",
       "definitions": [
         {
           "text": "Combining forms signifying flat, level, plane; as planifolious, planimetry, plano-concave.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plano": {
+      "word": "PLANI-; PLANO-",
+      "definitions": [
+        {
+          "text": "Combining forms signifying flat, level, plane; as planifolious, planimetry, plano-concave.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Plani-.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1651,7 +1715,17 @@
       ],
       "relatedWords": []
     },
-    "planimetricplanimetrical": {
+    "planimetric": {
+      "word": "PLANIMETRIC; PLANIMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to planimetry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "planimetrical": {
       "word": "PLANIMETRIC; PLANIMETRICAL",
       "definitions": [
         {
@@ -1803,7 +1877,11 @@
       "word": "PLANKING",
       "definitions": [
         {
-          "text": "The act of laying planks; also, planks, collectively; a series of",
+          "text": "The act of laying planks; also, planks, collectively; a series of planks in place, as the wooden covering of the frame of a vessel.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of splicing slivers. See Plank, v. t., 4.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1814,6 +1892,16 @@
       "definitions": [
         {
           "text": "The course of plank laid horizontally over the timberheads of a vessel's frame.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plankton": {
+      "word": "PLANKTON",
+      "definitions": [
+        {
+          "text": "All the animals and plants, taken collectively, which live at or near the surface of salt or fresh waters. --Plank*ton\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1835,16 +1923,6 @@
         {
           "text": "One who plans; a projector.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "plano": {
-      "word": "PLANO-",
-      "definitions": [
-        {
-          "text": "See Plani-.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -2445,7 +2523,25 @@
       ],
       "relatedWords": []
     },
-    "plasmaticplasmatical": {
+    "plasmatic": {
+      "word": "PLASMATIC; PLASMATICAL",
+      "definitions": [
+        {
+          "text": "Forming; shaping; molding. [Obs.] Dr. H. More.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to plasma; having the character of plasma; containing, or conveying, plasma.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plasmatical": {
       "word": "PLASMATIC; PLASMATICAL",
       "definitions": [
         {
@@ -2559,7 +2655,17 @@
       ],
       "relatedWords": []
     },
-    "plasmonplasmonbutter": {
+    "plasmon": {
+      "word": "PLASMON; PLASMON BUTTER",
+      "definitions": [
+        {
+          "text": "A flourlike food preparation made from skim milk, and consisting essentially of the unaltered proteid of milk. It is also used in making biscuits and crackers, for mixing with cocoa, etc. A mixture of this with butter, water, and salt is called Plasmon butter, and resembles clotted cream in appearance.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plasmonbutter": {
       "word": "PLASMON; PLASMON BUTTER",
       "definitions": [
         {
@@ -2739,7 +2845,29 @@
       ],
       "relatedWords": []
     },
-    "plastidplastide": {
+    "plastid": {
+      "word": "PLASTID; PLASTIDE",
+      "definitions": [
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A formative particle of albuminous matter; a monad; a cytode. See the Note under Morphon. Haeckel.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the many minute granules found in the protoplasm of vegetable cells. They are divided by their colors into three classes, chloroplastids, chromoplastids, and leucoplastids.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plastide": {
       "word": "PLASTID; PLASTIDE",
       "definitions": [
         {
@@ -2925,8 +3053,8 @@
       ],
       "relatedWords": []
     },
-    "plateashallowvesselofsilverothermetalorearthfrplat": {
-      "word": "plate, a shallow vessel of silver, other metal, or earth, fr. plat",
+    "plate": {
+      "word": "PLATE",
       "definitions": [
         {
           "text": "A flat, or nearly flat, piece of metal, the thickness of which is small in comparison with the other dimensions; a thick sheet of metal; as, a steel plate.",
@@ -2993,15 +3121,9 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A prize giving to the winner in a contest. combination, the phrase or compound being in most cases of obvious signification; as, plate basket or plate-basket, plate rack or plate-",
+          "text": "A prize giving to the winner in a contest. combination, the phrase or compound being in most cases of obvious signification; as, plate basket or plate-basket, plate rack or plate- rack. Home plate. (Baseball) See Home base, under Home. protecting war vessels, fortifications, and the like. vertical plate, or of a series of such plates riveted together. fixes them to the sleepers or ties. or silver plate, to indicate the place of manufacture, the degree of purity, and the like; thus, the local mark for London is a lion. plates. Fairholt. for printing from engraved steel or copper plates. plate or plates. connected by a continuous plate of metal, instead of by arms or spokes.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "plate": {
-      "word": "PLATE",
-      "definitions": [
+        },
         {
           "text": "To cover or overlay with gold, silver, or other metals, either by a mechanical process, as hammering, or by a chemical process, as electrotyping.",
           "partOfSpeech": "verb"
@@ -3385,7 +3507,7 @@
       "word": "PLATITUDINOUS",
       "definitions": [
         {
-          "text": "Abounding in platitudes; of the nature of platitudes; uttering",
+          "text": "Abounding in platitudes; of the nature of platitudes; uttering platitudes.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3421,7 +3543,7 @@
       ],
       "relatedWords": []
     },
-    "platonicplatonical": {
+    "platonic": {
       "word": "PLATONIC; PLATONICAL",
       "definitions": [
         {
@@ -3431,16 +3553,24 @@
         {
           "text": "Pure, passionless; nonsexual; philosophical. Platonic bodies, the five regular geometrical solids; namely, the tetrahedron, hexahedron or cube, octahedron, dodecahedron, and icosahedron. persons of opposite sex, unmixed with carnal desires, and regarding the mind only and its excellences; -- a species of love for which Plato was a warm advocate. revolution of the equinoxes, or the space of time in which the stars and constellations return to their former places in respect to the equinoxes; -- called also great year. This revolution, which is caused by the precession of the equinoxes, is accomplished in about 26,000 years. Barlow.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A follower of Plato; a Platonist.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "platonic": {
-      "word": "PLATONIC",
+    "platonical": {
+      "word": "PLATONIC; PLATONICAL",
       "definitions": [
         {
-          "text": "A follower of Plato; a Platonist.",
-          "partOfSpeech": "noun"
+          "text": "Of or pertaining to Plato, or his philosophy, school, or opinions.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pure, passionless; nonsexual; philosophical. Platonic bodies, the five regular geometrical solids; namely, the tetrahedron, hexahedron or cube, octahedron, dodecahedron, and icosahedron. persons of opposite sex, unmixed with carnal desires, and regarding the mind only and its excellences; -- a species of love for which Plato was a warm advocate. revolution of the equinoxes, or the space of time in which the stars and constellations return to their former places in respect to the equinoxes; -- called also great year. This revolution, which is caused by the precession of the equinoxes, is accomplished in about 26,000 years. Barlow.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3498,6 +3628,16 @@
       "definitions": [
         {
           "text": "One who Platonizes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "platt": {
+      "word": "PLATT",
+      "definitions": [
+        {
+          "text": "See Lodge, n. Raymond.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3571,7 +3711,17 @@
       ],
       "relatedWords": []
     },
-    "platycephalicplatycephalous": {
+    "platycephalic": {
+      "word": "PLATYCEPHALIC; PLATYCEPHALOUS",
+      "definitions": [
+        {
+          "text": "Broad-headed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "platycephalous": {
       "word": "PLATYCEPHALIC; PLATYCEPHALOUS",
       "definitions": [
         {
@@ -3819,47 +3969,41 @@
       ],
       "relatedWords": []
     },
-    "plegentocareforattendtobewontgpflegenofunknown": {
-      "word": "plegen to care for, attend to, be wont, G. pflegen; of unknown",
-      "definitions": [
-        {
-          "text": "To engage in sport or lively recreation; to exercise for the sake of amusement; to frolic; to spot. As Cannace was playing in her walk. Chaucer. The lamb thy riot dooms to bleed to-day, Had he thy reason, would he skip and play! Pope. And some, the darlings of their Lord, Play smiling with the flame and sword. Keble.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To act with levity or thoughtlessness; to trifle; to be careless. \"Nay,\" quod this monk, \"I have no lust to pleye.\" Chaucer. Men are apt to play with their healths. Sir W. Temple.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To contend, or take part, in a game; as, to play ball; hence, to gamble; as, he played for heavy stakes.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To perform on an instrument of music; as, to play on a flute. One that . . . can play well on an instrument. Ezek. xxxiii. 32. Play, my friend, and charm the charmer. Granville.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To act; to behave; to practice deception. His mother played false with a smith. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To move in any manner; especially, to move regularly with alternate or reciprocating motion; to operate; to act; as, the fountain plays. The heart beats, the blood circulates, the lungs play. Cheyne.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To move gayly; to wanton; to disport. Even as the waving sedges play with wind. Shak. The setting sun Plays on their shining arms and burnished helmets. Addison. All fame is foreign but of true desert, Plays round the head, but comes not to the heart. Pope.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To act on the stage; to personate a character. A lord will hear your play to-night. Shak. Courts are theaters where some men play. Donne. To play into a person's hands, to act, or to manage matters, to his advantage or benefit. Art thou alive Or is it fantasy that plays upon our eyesight. Shak. (b) To use in a droll manner; to give a droll expression or application to; as, to play upon words.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "play": {
       "word": "PLAY",
       "definitions": [
+        {
+          "text": "To engage in sport or lively recreation; to exercise for the sake of amusement; to frolic; to spot. As Cannace was playing in her walk. Chaucer. The lamb thy riot dooms to bleed to-day, Had he thy reason, would he skip and play! Pope. And some, the darlings of their Lord, Play smiling with the flame and sword. Keble.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act with levity or thoughtlessness; to trifle; to be careless. \"Nay,\" quod this monk, \"I have no lust to pleye.\" Chaucer. Men are apt to play with their healths. Sir W. Temple.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To contend, or take part, in a game; as, to play ball; hence, to gamble; as, he played for heavy stakes.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To perform on an instrument of music; as, to play on a flute. One that . . . can play well on an instrument. Ezek. xxxiii. 32. Play, my friend, and charm the charmer. Granville.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act; to behave; to practice deception. His mother played false with a smith. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move in any manner; especially, to move regularly with alternate or reciprocating motion; to operate; to act; as, the fountain plays. The heart beats, the blood circulates, the lungs play. Cheyne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move gayly; to wanton; to disport. Even as the waving sedges play with wind. Shak. The setting sun Plays on their shining arms and burnished helmets. Addison. All fame is foreign but of true desert, Plays round the head, but comes not to the heart. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act on the stage; to personate a character. A lord will hear your play to-night. Shak. Courts are theaters where some men play. Donne. To play into a person's hands, to act, or to manage matters, to his advantage or benefit. Art thou alive Or is it fantasy that plays upon our eyesight. Shak. (b) To use in a droll manner; to give a droll expression or application to; as, to play upon words.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To put in action or motion; as, to play cannon upon a fortification; to play a trump. First Peace and Silence all disputes control, Then Order plays the soul. Herbert.",
           "partOfSpeech": "verb"
@@ -4017,7 +4161,7 @@
       "word": "PLAYFUL",
       "definitions": [
         {
-          "text": "Sportive; gamboling; frolicsome; indulging a sportive fancy;",
+          "text": "Sportive; gamboling; frolicsome; indulging a sportive fancy; humorous; merry; as, a playful child; a playful writer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4411,6 +4555,16 @@
       ],
       "relatedWords": []
     },
+    "pleased": {
+      "word": "PLEASED",
+      "definitions": [
+        {
+          "text": "Experiencing pleasure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "pleaseman": {
       "word": "PLEASEMAN",
       "definitions": [
@@ -4449,7 +4603,7 @@
       "word": "PLEASURABLE",
       "definitions": [
         {
-          "text": "Capable of affording pleasure or satisfaction; gratifying; abounding in pleasantness or pleasantry. Planting of orchards is very . . . pleasurable. Bacon.",
+          "text": "Capable of affording pleasure or satisfaction; gratifying; abounding in pleasantness or pleasantry. Planting of orchards is very . . . pleasurable. Bacon. O, sir, you are very pleasurable. B. Jonson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4715,7 +4869,17 @@
       ],
       "relatedWords": []
     },
-    "plectognathicplectognathous": {
+    "plectognathic": {
+      "word": "PLECTOGNATHIC; PLEC-TOGNATHOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Plectognathi.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plectognathous": {
       "word": "PLECTOGNATHIC; PLEC-TOGNATHOUS",
       "definitions": [
         {
@@ -4843,7 +5007,17 @@
       ],
       "relatedWords": []
     },
-    "pledgeorpledgor": {
+    "pledgeor": {
+      "word": "PLEDGEOR; PLEDGOR",
+      "definitions": [
+        {
+          "text": "One who pledges, or delivers anything in pledge; a pledger; -- opposed to Ant: pledgee. pledgor is perhaps commoner.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pledgor": {
       "word": "PLEDGEOR; PLEDGOR",
       "definitions": [
         {
@@ -5097,7 +5271,17 @@
       ],
       "relatedWords": []
     },
-    "plenipotenceplenipotency": {
+    "plenipotence": {
+      "word": "PLENIPOTENCE; PLENIPOTENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being plenipotent. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plenipotency": {
       "word": "PLENIPOTENCE; PLENIPOTENCY",
       "definitions": [
         {
@@ -5239,7 +5423,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Lavish; profuse; prodigal. [Obs.]",
+          "text": "Lavish; profuse; prodigal. [Obs.] He that is plentiful in expenses will hardly be preserved from Bacon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5391,7 +5575,17 @@
       ],
       "relatedWords": []
     },
-    "pleonasticpleonastical": {
+    "pleonastic": {
+      "word": "PLEONASTIC; PLEONASTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pleonasm; of the nature of pleonasm; redundant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pleonastical": {
       "word": "PLEONASTIC; PLEONASTICAL",
       "definitions": [
         {
@@ -5595,7 +5789,17 @@
       ],
       "relatedWords": []
     },
-    "plethronplethrum": {
+    "plethron": {
+      "word": "PLETHRON; PLETHRUM",
+      "definitions": [
+        {
+          "text": "A long measure of 100 Greek, or 101 English, feet; also, a square measure of 10,000 Greek feet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plethrum": {
       "word": "PLETHRON; PLETHRUM",
       "definitions": [
         {
@@ -5609,7 +5813,7 @@
       "word": "PLETHYSMOGRAPH",
       "definitions": [
         {
-          "text": "An instrument for determining and registering the variations in the size or volume of a limb, as the arm or leg, and hence the",
+          "text": "An instrument for determining and registering the variations in the size or volume of a limb, as the arm or leg, and hence the variations in the amount of blood in the limb.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5671,7 +5875,7 @@
       "word": "PLEURAPOPHYSIS",
       "definitions": [
         {
-          "text": "One of the ventral processes of a vertebra, or the dorsal element in each half of a hemal arch, forming, or corresponding to, a",
+          "text": "One of the ventral processes of a vertebra, or the dorsal element in each half of a hemal arch, forming, or corresponding to, a vertebral rib.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5777,7 +5981,17 @@
       ],
       "relatedWords": []
     },
-    "pleurocarpicpleurocarpous": {
+    "pleurocarpic": {
+      "word": "PLEUROCARPIC; PLEUROCARPOUS",
+      "definitions": [
+        {
+          "text": "Side-fruited; -- said of those true mosses in which the pedicels or the capsules are from lateral archegonia; -- opposed to Ant: acrocarpous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pleurocarpous": {
       "word": "PLEUROCARPIC; PLEUROCARPOUS",
       "definitions": [
         {
@@ -6045,7 +6259,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Flexible in disposition; readily yielding to influence, arguments, persuasion, or discipline; easy to be persuaded; -- sometimes in a bad sense; as, a pliable youth. \"Pliable she promised to be.\" Dr. H.",
+          "text": "Flexible in disposition; readily yielding to influence, arguments, persuasion, or discipline; easy to be persuaded; -- sometimes in a bad sense; as, a pliable youth. \"Pliable she promised to be.\" Dr. H. More.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6101,6 +6315,26 @@
         {
           "text": "The bend of the wing of a bird.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plicate": {
+      "word": "PLICATE; PLICATED",
+      "definitions": [
+        {
+          "text": "Plaited; folded like a fan; as, a plicate leaf.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plicated": {
+      "word": "PLICATE; PLICATED",
+      "definitions": [
+        {
+          "text": "Plaited; folded like a fan; as, a plicate leaf.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6195,6 +6429,14 @@
         {
           "text": "Condition; state; -- risk, or exposure to danger, often being implied; as, a luckless plight. \"Your plight is pitied.\" Shak. To bring our craft all in another plight Chaucer.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To pledge; to give as a pledge for the performance of some act; as, to plight faith, honor, word; -- never applied to property or goods. \" To do them plighte their troth.\" Piers Plowman. He plighted his right hand Unto another love, and to another land. Spenser. Here my inviolable faith I plight. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To promise; to engage; to betroth. Before its setting hour, divide The bridegroom from the plighted bride. Sir W. Scott.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -6335,7 +6577,7 @@
       "word": "PLODDING",
       "definitions": [
         {
-          "text": "Progressing in a slow, toilsome manner; characterized by",
+          "text": "Progressing in a slow, toilsome manner; characterized by laborious diligence; as, a plodding peddler; a plodding student; a man of plodding habits. --Plod\"ding*ly, adv.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6489,6 +6731,66 @@
         {
           "text": "See Plow.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A well-known implement, drawn by horses, mules, oxen, or other power, for turning up the soil to prepare it for bearing crops; also used to furrow or break up the soil for other purposes; as, the subsoil plow; the draining plow. Where fern succeeds ungrateful to the plow. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fig.: Agriculture; husbandry. Johnson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A carucate of land; a plowland. [Obs.] [Eng.] Johan, mine eldest son, shall have plowes five. Tale of Gamelyn.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A joiner's plane for making grooves; a grooving plane.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bookbinding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An implement for trimming or shaving off the edges of books.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Astron.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Charles's Wain. Ice plow, a plow used for cutting ice on rivers, ponds, etc., into cakes suitable for storing. [U. S.] -- Mackerel plow. See under Mackerel. Cowell. is applied. See Beam, n., 9. holidays. cleaning the plowshare; a paddle staff. (b) A plow handle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To turn up, break up, or trench, with a plow; to till with, or as with, a plow; as, to plow the ground; to plow a field.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To furrow; to make furrows, grooves, or ridges in; to run through, as in sailing. Let patient Octavia plow thy visage up With her prepared nails. Shak. With speed we plow the watery way. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Bookbinding)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To trim, or shave off the edges of, as a book or paper, with a plow. See Plow, n., 5.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Joinery)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cut a groove in, as in a plank, or the edge of a board; especially, a rectangular groove to receive the end of a shelf or tread, the edge of a panel, a tongue, etc. To plow in, to cover by plowing; as, to plow in wheat. continue in spite of obstacles or resistence by others. spite of the contrary advice of others. plow through, to execute a difficult or laborious task steadily, esp. one containing many parts; as, he plowed through the stack of correspondence until all had been answered.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To labor with, or as with, a plow; to till or turn up the soil with a plow; to till or turn up the soil with a plow; to prepare the soil or bed for anything. Shak. Doth the plowman plow all day to sow Isa. xxviii. 24.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -6529,7 +6831,7 @@
       ],
       "relatedWords": []
     },
-    "plowplough": {
+    "plow": {
       "word": "PLOW; PLOUGH",
       "definitions": [
         {
@@ -6577,13 +6879,25 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To trim, or shave off the edges of, as a book or paper, with a plow. See Plow, n., 5.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Joinery)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cut a groove in, as in a plank, or the edge of a board; especially, a rectangular groove to receive the end of a shelf or tread, the edge of a panel, a tongue, etc. To plow in, to cover by plowing; as, to plow in wheat. continue in spite of obstacles or resistence by others. spite of the contrary advice of others. plow through, to execute a difficult or laborious task steadily, esp. one containing many parts; as, he plowed through the stack of correspondence until all had been answered.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To labor with, or as with, a plow; to till or turn up the soil with a plow; to till or turn up the soil with a plow; to prepare the soil or bed for anything. Shak. Doth the plowman plow all day to sow Isa. xxviii. 24.",
           "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "plowableploughable": {
+    "plowable": {
       "word": "PLOWABLE; PLOUGHABLE",
       "definitions": [
         {
@@ -6593,7 +6907,17 @@
       ],
       "relatedWords": []
     },
-    "plowboteploughbote": {
+    "ploughable": {
+      "word": "PLOWABLE; PLOUGHABLE",
+      "definitions": [
+        {
+          "text": "Capable of being plowed; arable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowbote": {
       "word": "PLOWBOTE; PLOUGHBOTE",
       "definitions": [
         {
@@ -6603,7 +6927,17 @@
       ],
       "relatedWords": []
     },
-    "plowboyploughboy": {
+    "ploughbote": {
+      "word": "PLOWBOTE; PLOUGHBOTE",
+      "definitions": [
+        {
+          "text": "Wood or timber allowed to a tenant for the repair of instruments of husbandry. See Bote.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowboy": {
       "word": "PLOWBOY; PLOUGHBOY",
       "definitions": [
         {
@@ -6613,7 +6947,17 @@
       ],
       "relatedWords": []
     },
-    "plowerplougher": {
+    "ploughboy": {
+      "word": "PLOWBOY; PLOUGHBOY",
+      "definitions": [
+        {
+          "text": "A boy that drives or guides a team in plowing; a young rustic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plower": {
       "word": "PLOWER; PLOUGHER",
       "definitions": [
         {
@@ -6623,7 +6967,17 @@
       ],
       "relatedWords": []
     },
-    "plowfootploughfoot": {
+    "plougher": {
+      "word": "PLOWER; PLOUGHER",
+      "definitions": [
+        {
+          "text": "One who plows; a plowman; a cultivator.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowfoot": {
       "word": "PLOWFOOT; PLOUGHFOOT",
       "definitions": [
         {
@@ -6633,7 +6987,17 @@
       ],
       "relatedWords": []
     },
-    "plowgangploughgang": {
+    "ploughfoot": {
+      "word": "PLOWFOOT; PLOUGHFOOT",
+      "definitions": [
+        {
+          "text": "An adjustable staff formerly attached to the plow beam to determine the depth of the furrow. Piers Plowman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowgang": {
       "word": "PLOWGANG; PLOUGHGANG",
       "definitions": [
         {
@@ -6643,7 +7007,17 @@
       ],
       "relatedWords": []
     },
-    "plowgateploughgate": {
+    "ploughgang": {
+      "word": "PLOWGANG; PLOUGHGANG",
+      "definitions": [
+        {
+          "text": "Same as Plowgate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowgate": {
       "word": "PLOWGATE; PLOUGHGATE",
       "definitions": [
         {
@@ -6653,7 +7027,17 @@
       ],
       "relatedWords": []
     },
-    "plowheadploughhead": {
+    "ploughgate": {
+      "word": "PLOWGATE; PLOUGHGATE",
+      "definitions": [
+        {
+          "text": "The Scotch equivalent of the English word plowland. Not having one plowgate of land. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowhead": {
       "word": "PLOWHEAD; PLOUGHHEAD",
       "definitions": [
         {
@@ -6663,7 +7047,17 @@
       ],
       "relatedWords": []
     },
-    "plowlandplougland": {
+    "ploughhead": {
+      "word": "PLOWHEAD; PLOUGHHEAD",
+      "definitions": [
+        {
+          "text": "The clevis or draught iron of a plow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowland": {
       "word": "PLOWLAND; PLOUGLAND",
       "definitions": [
         {
@@ -6681,7 +7075,25 @@
       ],
       "relatedWords": []
     },
-    "plowmanploughman": {
+    "plougland": {
+      "word": "PLOWLAND; PLOUGLAND",
+      "definitions": [
+        {
+          "text": "Land that is plowed, or suitable for tillage.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(O. Eng. Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "the quantity of land allotted for the work of one plow; a hide.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowman": {
       "word": "PLOWMAN; PLOUGHMAN",
       "definitions": [
         {
@@ -6695,7 +7107,21 @@
       ],
       "relatedWords": []
     },
-    "plowpointploughpoint": {
+    "ploughman": {
+      "word": "PLOWMAN; PLOUGHMAN",
+      "definitions": [
+        {
+          "text": "One who plows, or who holds and guides a plow; hence, a husbandman. Chaucer. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rustic; a countryman; a field laborer. Plowman's spikenard (Bot.), a European composite weed (Conyza squarrosa), having fragrant roots. Dr. Prior.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowpoint": {
       "word": "PLOWPOINT; PLOUGHPOINT",
       "definitions": [
         {
@@ -6705,7 +7131,17 @@
       ],
       "relatedWords": []
     },
-    "plowshareploughshare": {
+    "ploughpoint": {
+      "word": "PLOWPOINT; PLOUGHPOINT",
+      "definitions": [
+        {
+          "text": "A detachable share at the extreme front end of the plow body.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowshare": {
       "word": "PLOWSHARE; PLOUGHSHARE",
       "definitions": [
         {
@@ -6715,7 +7151,17 @@
       ],
       "relatedWords": []
     },
-    "plowtailploughtail": {
+    "ploughshare": {
+      "word": "PLOWSHARE; PLOUGHSHARE",
+      "definitions": [
+        {
+          "text": "The share of a plow, or that part which cuts the slice of earth or sod at the bottom of the furrow. Plowshare bone (Anat.), the pygostyle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowtail": {
       "word": "PLOWTAIL; PLOUGHTAIL",
       "definitions": [
         {
@@ -6725,7 +7171,27 @@
       ],
       "relatedWords": []
     },
-    "plowwrightploughwright": {
+    "ploughtail": {
+      "word": "PLOWTAIL; PLOUGHTAIL",
+      "definitions": [
+        {
+          "text": "The hind part or handle of a plow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plowwright": {
+      "word": "PLOWWRIGHT; PLOUGHWRIGHT",
+      "definitions": [
+        {
+          "text": "One who makes or repairs plows.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ploughwright": {
       "word": "PLOWWRIGHT; PLOUGHWRIGHT",
       "definitions": [
         {
@@ -6923,7 +7389,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A block of wood let into a wall, to afford a hold for nails. Fire plug, a street hydrant to which hose may be attached. [U. S.] --",
+          "text": "A block of wood let into a wall, to afford a hold for nails. Fire plug, a street hydrant to which hose may be attached. [U. S.] -- Hawse plug (Naut.), a plug to stop a hawse hole. a point, so as to follow and enlarge a hole previously made, or to form a counterbore around it. the valves, as in the Cornish engine. the plug of a faucet.",
           "partOfSpeech": "noun"
         },
         {
@@ -7125,7 +7591,21 @@
       ],
       "relatedWords": []
     },
-    "plumbeanplumbeous": {
+    "plumbean": {
+      "word": "PLUMBEAN; PLUMBEOUS",
+      "definitions": [
+        {
+          "text": "Consisting of, or resembling, lead. J. Ellis.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Dull; heavy; stupid. [R.] J. P. Smith.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plumbeous": {
       "word": "PLUMBEAN; PLUMBEOUS",
       "definitions": [
         {
@@ -7375,7 +7855,19 @@
       "word": "PLUMMET",
       "definitions": [
         {
-          "text": "A piece of lead attached to a line, used in sounding the depth of water.",
+          "text": "A piece of lead attached to a line, used in sounding the depth of water. I'll sink him deeper than e'er plummet sounded. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plumb bob or a plumb line. See under Plumb, n.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, any weight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece of lead formerly used by school children to rule paper for writing. Plummet line, a line with a plummet; a sounding line.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7401,7 +7893,21 @@
       ],
       "relatedWords": []
     },
-    "plumoseplumous": {
+    "plumose": {
+      "word": "PLUMOSE; PLUMOUS",
+      "definitions": [
+        {
+          "text": "Having feathers or plumes.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having hairs, or other párts, arranged along an axis like a feather; feathery; plumelike; as, a plumose leaf; plumose tentacles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "plumous": {
       "word": "PLUMOSE; PLUMOUS",
       "definitions": [
         {
@@ -7438,6 +7944,10 @@
     "plump": {
       "word": "PLUMP",
       "definitions": [
+        {
+          "text": "Well rounded or filled out; full; fleshy; fat; as, a plump baby; plump cheeks. Shak. The god of wine did his plump clusters bring. T. Carew.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A knot; a cluster; a group; a crowd; a flock; as, a plump of trees, fowls, or spears. [Obs.] To visit islands and the plumps of men. Chapman.",
           "partOfSpeech": "noun"
@@ -7821,7 +8331,7 @@
       "word": "PLURAL",
       "definitions": [
         {
-          "text": "Relating to, or containing, more than one; designating two or more; as, a plural word. Plural faith, which is too much by one. Shak.",
+          "text": "Relating to, or containing, more than one; designating two or more; as, a plural word. Plural faith, which is too much by one. Shak. Plural number (Gram.), the number which designates more than one. See Number, n., 8.",
           "partOfSpeech": ""
         },
         {
@@ -8437,34 +8947,6 @@
         {
           "text": "The members of a religious sect which first appeared at Plymouth, England, about 1830. They protest against sectarianism, and reject all official ministry or clergy. Also called Brethren, Christian Brethren, Plymouthists, etc. The Darbyites are a division of the Brethren.",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "plantofprovainfromlpropagoaginisakintopropagareto": {
-      "word": "plant, OF. provain, from L. propago, -aginis, akin to propagare to",
-      "definitions": [
-        {
-          "text": "To lay a stock or branch of a vine in the ground for propagation. [Obs.] Johnson.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pleaseanother'swillcficelvelkominnwelcomegwillkommen": {
-      "word": "please another's will; cf. Icel. velkominn welcome, G. willkommen.",
-      "definitions": [
-        {
-          "text": "Received with gladness; admitted willingly to the house, entertainment, or company; as, a welcome visitor. When the glad soul is made Heaven's welcome guest. Cowper.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Producing gladness; grateful; as, a welcome present; welcome news. \"O, welcome hour!\" Milton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Free to have or enjoy gratuitously; as, you are welcome to the use of my library. great monarch, to your own.\" Dryden. Welcome-to-our-house (Bot.), a kind of spurge (Euphorbia Cyparissias). Dr. Prior.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

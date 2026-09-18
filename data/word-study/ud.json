@@ -11,11 +11,15 @@
         {
           "text": "Allodial; -- a term used in Finland, Shetland, and Orkney. See Allodial. Burrill.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Vars. of Odal, etc. Obs. exc. in Shetland and the Orkney Islands, where udal designates land held in fee simple without any charter and free of any feudal character.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "udaludalbornudalerudalman": {
+    "udalborn": {
       "word": "UDAL; UDALBORN; UDALER; UDALMAN",
       "definitions": [
         {
@@ -25,9 +29,27 @@
       ],
       "relatedWords": []
     },
-    "udalerudalman": {
-      "word": "UDALER; UDALMAN",
+    "udaler": {
+      "word": "UDAL; UDALBORN; UDALER; UDALMAN",
       "definitions": [
+        {
+          "text": "Vars. of Odal, etc. Obs. exc. in Shetland and the Orkney Islands, where udal designates land held in fee simple without any charter and free of any feudal character.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In the Shetland and Orkney Islands, one who holds property by udal, or allodial, right. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "udalman": {
+      "word": "UDAL; UDALBORN; UDALER; UDALMAN",
+      "definitions": [
+        {
+          "text": "Vars. of Odal, etc. Obs. exc. in Shetland and the Orkney Islands, where udal designates land held in fee simple without any charter and free of any feudal character.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "In the Shetland and Orkney Islands, one who holds property by udal, or allodial, right. Sir W. Scott.",
           "partOfSpeech": "noun"

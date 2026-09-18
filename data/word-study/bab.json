@@ -572,11 +572,21 @@
       ],
       "relatedWords": []
     },
-    "babianbabion": {
+    "babian": {
       "word": "BABIAN; BABION",
       "definitions": [
         {
           "text": "A baboon. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babiism": {
+      "word": "BABISM; BABIISM",
+      "definitions": [
+        {
+          "text": "The doctrine of a modern religious pantheistical sect in Persia, which was founded, about 1844, by Mirza Ali Mohammed ibn Rabhik (1820 -- 1850), who assumed the title of Bab-ed-Din (Per., Gate of the Faith). Babism is a mixture of Mohammedan, Christian, Jewish, and Parsi elements. This doctrine forbids concubinage and polygamy, and frees women from many of the degradations imposed upon them among the orthodox Mohammedans. Mendicancy, the use of intoxicating liquors and drugs, and slave dealing, are forbidden; asceticism is discountenanced. --Bab\"ist, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -602,7 +612,27 @@
       ],
       "relatedWords": []
     },
-    "babiroussababirussa": {
+    "babion": {
+      "word": "BABIAN; BABION",
+      "definitions": [
+        {
+          "text": "A baboon. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babiroussa": {
+      "word": "BABIROUSSA; BABIRUSSA",
+      "definitions": [
+        {
+          "text": "A large hoglike quadruped (Sus, or Porcus, babirussa) of the East Indies, sometimes domesticated; the Indian hog. Its upper canine teeth or tusks are large and recurved.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babirussa": {
       "word": "BABIROUSSA; BABIRUSSA",
       "definitions": [
         {
@@ -616,7 +646,7 @@
       "word": "BABISH",
       "definitions": [
         {
-          "text": "Like a babe; a childish; babyish. [R.] \"Babish imbecility.\"",
+          "text": "Like a babe; a childish; babyish. [R.] \"Babish imbecility.\" Drayton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -628,15 +658,9 @@
         {
           "text": "The doctrine of a modern religious sect, which originated in Persia in 1843, being a mixture of Mohammedan, Christian, Jewish and Parsee elements.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "babismbabiism": {
-      "word": "BABISM; BABIISM",
-      "definitions": [
+        },
         {
-          "text": "The doctrine of a modern religious pantheistical sect in Persia, which was founded, about 1844, by Mirza Ali Mohammed ibn Rabhik (1820 -- 1850), who assumed the title of Bab-ed-Din (Per., Gate of the Faith). Babism is a mixture of Mohammedan, Christian, Jewish, and Parsi elements. This doctrine forbids concubinage and polygamy, and frees women from many of the degradations imposed upon them among the orthodox Mohammedans. Mendicancy, the use of",
+          "text": "The doctrine of a modern religious pantheistical sect in Persia, which was founded, about 1844, by Mirza Ali Mohammed ibn Rabhik (1820 -- 1850), who assumed the title of Bab-ed-Din (Per., Gate of the Faith). Babism is a mixture of Mohammedan, Christian, Jewish, and Parsi elements. This doctrine forbids concubinage and polygamy, and frees women from many of the degradations imposed upon them among the orthodox Mohammedans. Mendicancy, the use of intoxicating liquors and drugs, and slave dealing, are forbidden; asceticism is discountenanced. --Bab\"ist, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -662,11 +686,21 @@
       ],
       "relatedWords": []
     },
-    "baboobabu": {
+    "baboo": {
       "word": "BABOO; BABU",
       "definitions": [
         {
           "text": "A Hindoo gentleman; native clerk who writes English; also, a Hindoo title answering to Mr. or Esquire. Whitworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babool": {
+      "word": "BABUL; BABOOL",
+      "definitions": [
+        {
+          "text": "Any one of several species of Acacia, esp. A. Arabica, which yelds a gum used as a substitute for true gum arabic. In place of Putney's golden gorse The sickly babul blooms. Kipling.",
           "partOfSpeech": "noun"
         }
       ],
@@ -702,7 +736,17 @@
       ],
       "relatedWords": []
     },
-    "babulbabool": {
+    "babu": {
+      "word": "BABOO; BABU",
+      "definitions": [
+        {
+          "text": "A Hindoo gentleman; native clerk who writes English; also, a Hindoo title answering to Mr. or Esquire. Whitworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babul": {
       "word": "BABUL; BABOOL",
       "definitions": [
         {
@@ -1022,6 +1066,36 @@
       ],
       "relatedWords": []
     },
+    "babyish": {
+      "word": "BABYISH",
+      "definitions": [
+        {
+          "text": "Like a baby; childish; puerile; simple.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "babish",
+        "baby",
+        "childish",
+        "childlike",
+        "doll-like",
+        "dollish",
+        "immature",
+        "in arms",
+        "in diapers",
+        "in nappies",
+        "in swaddling clothes",
+        "in the cradle",
+        "infant",
+        "infantile",
+        "infantine",
+        "kittenish",
+        "neonatal",
+        "newborn",
+        "puerile"
+      ]
+    },
     "babyism": {
       "word": "BABYISM",
       "definitions": [
@@ -1101,7 +1175,21 @@
         "swell"
       ]
     },
-    "babylonicbabylonical": {
+    "babylonic": {
+      "word": "BABYLONIC; BABYLONICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to Babylon, or made there; as Babylonic garments,carpets, or hangings.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Tumultuous; disorderly. [Obs.] Sir J. Harrington.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babylonical": {
       "word": "BABYLONIC; BABYLONICAL",
       "definitions": [
         {
@@ -1137,7 +1225,17 @@
       ],
       "relatedWords": []
     },
-    "babyroussababyrussa": {
+    "babyroussa": {
+      "word": "BABYROUSSA; BABYRUSSA",
+      "definitions": [
+        {
+          "text": "See Babyroussa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "babyrussa": {
       "word": "BABYROUSSA; BABYRUSSA",
       "definitions": [
         {

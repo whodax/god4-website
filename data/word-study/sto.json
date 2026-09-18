@@ -197,7 +197,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A liquid or jelly containing the juices and soluble parts of meat, and certain vegetables, etc., extracted by cooking; -- used in making soup, gravy, etc. Bit stock. See Bitstock. stored up for use; -- in distinction from live stock, or the domestic animals on the farm. See def. 10, above. one side of which shows the original capital, or stock, and the additions thereto by accumulation or contribution, the other side showing the amounts withdrawn. which is represented by marketable shares having a certain equal par value. and sold; stock market; hence, transactions of all kinds in stocks. (b) An association or body of stockbrokers who meet and transact business by certain recognized forms, regulations, and usages. Wharton. Brande & C.",
+          "text": "A liquid or jelly containing the juices and soluble parts of meat, and certain vegetables, etc., extracted by cooking; -- used in making soup, gravy, etc. Bit stock. See Bitstock. stored up for use; -- in distinction from live stock, or the domestic animals on the farm. See def. 10, above. one side of which shows the original capital, or stock, and the additions thereto by accumulation or contribution, the other side showing the amounts withdrawn. which is represented by marketable shares having a certain equal par value. and sold; stock market; hence, transactions of all kinds in stocks. (b) An association or body of stockbrokers who meet and transact business by certain recognized forms, regulations, and usages. Wharton. Brande & C. stock. fittings and appliances of a workman. Simmonds. transactions, and of prices. face of a door. stock exchange. (b) A market for live stock. purse. (b) (Mil.) Moneys saved out of the expenses of a company or regiment, and applied to objects of common interest. [Eng.] -- Stock shave, a tool used by blockmakers. W. Howitt. and secured, to keep its stock clear of the ship's sides. Totten. in a shop or warehouse; -- usually made periodically. stock or goods on hand. Dickens. stock company. (b) To put faith in; to accept as trustworthy; as, to take stock in a person's fidelity. [Slang] -- To take stock of, to take account of the stock of; to take an inventory of; hence, to ascertain the facts in regard to (something). [Eng.] At the outset of any inquiry it is proper to take stock of the results obtained by previous explorers of the same field. Leslie Stephen.",
           "partOfSpeech": "noun"
         },
         {
@@ -226,6 +226,18 @@
     "stockade": {
       "word": "STOCKADE",
       "definitions": [
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A line of stout posts or timbers set firmly in the earth in contact with each other (and usually with loopholes) to form a barrier, or defensive fortification. [Written also stoccade.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An inclosure, or pen, made with posts and stakes.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To surround, fortify, or protect with a stockade.",
           "partOfSpeech": "verb"
@@ -431,7 +443,17 @@
       ],
       "relatedWords": []
     },
-    "stoechiologystoechiometry": {
+    "stoechiology": {
+      "word": "STOECHIOLOGY; STOECHIOMETRY",
+      "definitions": [
+        {
+          "text": "See Stoichiology, Stoichiometry, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stoechiometry": {
       "word": "STOECHIOLOGY; STOECHIOMETRY",
       "definitions": [
         {
@@ -469,6 +491,28 @@
         {
           "text": "Hence, a person not easily excited; an apathetic person; one who is apparently or professedly indifferent to pleasure or pain. A Stoic of the woods, a man without a tear. Campbell. School of Stoics. See The Porch, under Porch.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the Stoics; resembling the Stoics or their doctrines.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not affected by passion; manifesting indifference to pleasure or pain.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stoical": {
+      "word": "STOIC; STOICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Stoics; resembling the Stoics or their doctrines.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not affected by passion; manifesting indifference to pleasure or pain.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -505,7 +549,17 @@
       ],
       "relatedWords": []
     },
-    "stoichiometricstoichiometrical": {
+    "stoichiometric": {
+      "word": "STOICHIOMETRIC; STOICHIOMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to stoichiometry; employed in, or obtained by, stoichiometry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stoichiometrical": {
       "word": "STOICHIOMETRIC; STOICHIOMETRICAL",
       "definitions": [
         {
@@ -545,20 +599,6 @@
         {
           "text": "Stoicism. [Obs.] B. Jonson.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "stoicstoical": {
-      "word": "STOIC; STOICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to the Stoics; resembling the Stoics or their doctrines.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Not affected by passion; manifesting indifference to pleasure or",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -858,8 +898,16 @@
       "relatedWords": []
     },
     "stomachic": {
-      "word": "STOMACHIC",
+      "word": "STOMACHIC; STOMACHICAL",
       "definitions": [
+        {
+          "text": "Of or pertaining to the stomach; as, stomachic vessels.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Strengthening to the stomach; exciting the action of the stomach; stomachal; cordial.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A medicine that strengthens the stomach and excites its action.",
           "partOfSpeech": "noun"
@@ -867,7 +915,7 @@
       ],
       "relatedWords": []
     },
-    "stomachicstomachical": {
+    "stomachical": {
       "word": "STOMACHIC; STOMACHICAL",
       "definitions": [
         {
@@ -1540,8 +1588,12 @@
       "relatedWords": []
     },
     "stont": {
-      "word": "STONT",
+      "word": "STANT; STONT",
       "definitions": [
+        {
+          "text": "Stands. Chaucer.",
+          "partOfSpeech": ""
+        },
         {
           "text": "3d pers. sing. present of Stand.",
           "partOfSpeech": ""
@@ -1733,19 +1785,23 @@
       ],
       "relatedWords": []
     },
+    "stooping": {
+      "word": "STOOPING",
+      "definitions": [
+        {
+          "text": "from Stoop.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "stoor": {
       "word": "STOOR",
       "definitions": [
         {
           "text": "To rise in clouds, as dust. [Prov. Eng.]",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "stoorstor": {
-      "word": "STOOR; STOR",
-      "definitions": [
+        },
         {
           "text": "Strong; powerful; hardy; bold; audacious. [Obs. or Scot.] O stronge lady stoor, what doest thou Chaucer.",
           "partOfSpeech": "adjective"
@@ -1857,7 +1913,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Some part of the articulating organs, as the lips, or the tongue and palate, closed (a) so as to cut off the passage of breath or voice through the mouth and the nose (distinguished as a lip-stop, or a front-stop, etc., as in p, t, d, etc.), or (b) so as to obstruct, but not entirely cut off, the passage, as in l, n, etc.; also, any of the consonants so formed. H. Sweet. Stop bead (Arch.), the molding screwed to the inner side of a window frame, on the face of the pulley stile, completing the groove in which the inner sash is to slide. of a machine, as when a certain operation is completed, or when an imperfection occurs in its performance or product, or in the material which is supplied to it, etc. in some hydraulic works. hand, for preventing or regulating flow, as of a liquid in a pipe; -- in distinction from a valve which is operated by the action of the fluid it restrains.",
+          "text": "Some part of the articulating organs, as the lips, or the tongue and palate, closed (a) so as to cut off the passage of breath or voice through the mouth and the nose (distinguished as a lip-stop, or a front-stop, etc., as in p, t, d, etc.), or (b) so as to obstruct, but not entirely cut off, the passage, as in l, n, etc.; also, any of the consonants so formed. H. Sweet. Stop bead (Arch.), the molding screwed to the inner side of a window frame, on the face of the pulley stile, completing the groove in which the inner sash is to slide. of a machine, as when a certain operation is completed, or when an imperfection occurs in its performance or product, or in the material which is supplied to it, etc. in some hydraulic works. hand, for preventing or regulating flow, as of a liquid in a pipe; -- in distinction from a valve which is operated by the action of the fluid it restrains. tell exactly the time that has passed, as in timing a race. See Independent seconds watch, under Independent, a. interruption.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1883,11 +1939,15 @@
         {
           "text": "A horizontal working forming one of a series, the working faces of which present the appearance of a flight of steps.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Stepped; gone; advanced. [Obs.] A poor widow, somedeal stope in age. Chaucer.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "stopestopen": {
+    "stopen": {
       "word": "STOPE; STOPEN",
       "definitions": [
         {
@@ -1933,6 +1993,16 @@
         {
           "text": "An order that aims to limit losses by fixing a figure at which purchases shall be sold or sales bought in, as where stock is bought at 100 and the broker is directed to sell if the market price drops to 98.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "stopover": {
+      "word": "STOP-OVER",
+      "definitions": [
+        {
+          "text": "Permitting one to stop over; as, a stop-over check or ticket. See To stop over, under Stop, v. i. [Railroad Cant, U.S.]",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2048,8 +2118,12 @@
       "relatedWords": []
     },
     "stor": {
-      "word": "STOR",
+      "word": "STOOR; STOR",
       "definitions": [
+        {
+          "text": "Strong; powerful; hardy; bold; audacious. [Obs. or Scot.] O stronge lady stoor, what doest thou Chaucer.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "See Stoor. [Obs.] Chaucer.",
           "partOfSpeech": "adjective"
@@ -2651,6 +2725,16 @@
       ],
       "relatedWords": []
     },
+    "stouthearted": {
+      "word": "STOUT-HEARTED",
+      "definitions": [
+        {
+          "text": "Having a brave heart; courageous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "stoutish": {
       "word": "STOUTISH",
       "definitions": [
@@ -2681,7 +2765,17 @@
       ],
       "relatedWords": []
     },
-    "stovainstovaine": {
+    "stovain": {
+      "word": "STOVAIN; STOVAINE",
+      "definitions": [
+        {
+          "text": "A substance, C14H22O2NCl, the hydrochloride of an amino compound containing benzol, used, in solution with strychnine, as a local anæsthetic, esp. by injection into the sheath of the spinal cord, producing anæsthesia below the point of introduction.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stovaine": {
       "word": "STOVAIN; STOVAINE",
       "definitions": [
         {
@@ -2816,6 +2910,20 @@
       "definitions": [
         {
           "text": "A method of working in which the waste is packed into the space formed by excavating the vein.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stowre": {
+      "word": "STOWRE",
+      "definitions": [
+        {
+          "text": "See Stour, a. [Obs.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Stour, n. [Obs.] Spenser.",
           "partOfSpeech": "noun"
         }
       ],

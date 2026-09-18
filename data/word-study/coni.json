@@ -12,11 +12,33 @@
       "relatedWords": []
     },
     "conic": {
-      "word": "CONIC",
+      "word": "CONIC; CONICAL",
       "definitions": [
+        {
+          "text": "Having the form of, or resembling, a geometrical cone; round and tapering to a point, or gradually lessening in circumference; as, a conic or conical figure; a conical vessel.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a cone; as, conic sections. Conic section (Geom.), a curved line formed by the intersection of the surface of a right cone and a plane. The conic sections are the parabola, ellipse, and hyperbola. The right lines and the circle which result from certain positions of the plane are sometimes, though not generally included. parabola, ellipse, and hyperbola. sphere upon a plane surface as if projected upon the surface of a cone; -- much used by makers of maps in Europe. moving along any curve and always passing through a fixed point that is not in the plane of that curve.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A conic section.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conical": {
+      "word": "CONIC; CONICAL",
+      "definitions": [
+        {
+          "text": "Having the form of, or resembling, a geometrical cone; round and tapering to a point, or gradually lessening in circumference; as, a conic or conical figure; a conical vessel.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a cone; as, conic sections. Conic section (Geom.), a curved line formed by the intersection of the surface of a right cone and a plane. The conic sections are the parabola, ellipse, and hyperbola. The right lines and the circle which result from certain positions of the plane are sometimes, though not generally included. parabola, ellipse, and hyperbola. sphere upon a plane surface as if projected upon the surface of a cone; -- much used by makers of maps in Europe. moving along any curve and always passing through a fixed point that is not in the plane of that curve.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -47,20 +69,6 @@
         {
           "text": "State or quality of being conical.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "conicconical": {
-      "word": "CONIC; CONICAL",
-      "definitions": [
-        {
-          "text": "Having the form of, or resembling, a geometrical cone; round and tapering to a point, or gradually lessening in circumference; as, a conic or conical figure; a conical vessel.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Of or pertaining to a cone; as, conic sections. Conic section (Geom.), a curved line formed by the intersection of the surface of a right cone and a plane. The conic sections are the parabola, ellipse, and hyperbola. The right lines and the circle which result from certain positions of the plane are sometimes, though not generally included. parabola, ellipse, and hyperbola. sphere upon a plane surface as if projected upon the surface of a cone; -- much used by makers of maps in Europe. moving along any curve and always passing through a fixed point that is not in the plane of that curve.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

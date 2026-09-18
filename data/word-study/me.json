@@ -1,30 +1,12 @@
 {
   "version": "v1",
   "entries": {
-    "menwhocanneitherbedistressednorwonintoasacrificeofduty": {
-      "word": "Men who can neither be distressed nor won into a sacrifice of duty.",
+    "merchet": {
+      "word": "MARCHET; MERCHET",
       "definitions": [
         {
-          "text": "(Law)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To seize for debt; to distrain.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "merrancfdmarrenmeerentomoorashipicelmerjatobruise": {
-      "word": "merran; cf. D. marren, meeren, to moor a ship, Icel. merja to bruise,",
-      "definitions": [
-        {
-          "text": "To make defective; to do injury to, esp. by cutting off or defacing a part; to impair; to disfigure; to deface. I pray you mar no more trees with wiring love songs in their barks. Shak. But mirth is marred, and the good cheer is lost. Dryden. Ire, envy, and despair Which marred all his borrowed visage. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To spoil; to ruin. \"It makes us, or it mars us.\" \"Striving to mend, to mar the subject.\" Shak.",
-          "partOfSpeech": "verb"
+          "text": "In old English and in Scots law, a fine paid to the lord of the soil by a tenant upon the marriage of one the tenant's daughters.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -32,6 +14,10 @@
     "me": {
       "word": "ME",
       "definitions": [
+        {
+          "text": "One. See Men, pron. [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
+        },
         {
           "text": "The person speaking, regarded as an object; myself; a pronoun of the first person used as the objective and dative case of the pronoum I; as, he struck me; he gave me the money, or he gave the money to me; he got me a hat, or he got a hat for me. impersonal, the construction being, it appears to me. In early use me was often placed before forms of the verb to be with an adjective; as, me were lief. Me rather had my heart might frrl your love Than my unpleased eye see your courtesy. Shak.",
           "partOfSpeech": ""
@@ -95,7 +81,17 @@
       ],
       "relatedWords": []
     },
-    "meadowsweetmeadowwort": {
+    "meadowsweet": {
+      "word": "MEADOWSWEET; MEADOWWORT",
+      "definitions": [
+        {
+          "text": "The name of several plants of the genus Spiræa, especially the white- or pink-flowered S. salicifolia, a low European and American shrub, and the herbaceous S. Ulmaria, which has fragrant white flowers in compound cymes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "meadowwort": {
       "word": "MEADOWSWEET; MEADOWWORT",
       "definitions": [
         {
@@ -115,7 +111,7 @@
       ],
       "relatedWords": []
     },
-    "meagermeagre": {
+    "meager": {
       "word": "MEAGER; MEAGRE",
       "definitions": [
         {
@@ -141,7 +137,37 @@
       ],
       "relatedWords": []
     },
-    "meagerlymeagrely": {
+    "meagre": {
+      "word": "MEAGER; MEAGRE",
+      "definitions": [
+        {
+          "text": "Destitue of, or having little, flesh; lean. Meager were his looks; Sharp misery had worn him to the bones. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Destitute of richness, fertility, strength, or the like; defective in quantity, or poor in quality; poor; barren; scanty in ideas; wanting strength of diction or affluence of imagery. \"Meager soil.\" Dryden. Of secular habits and meager religious belief. I. Taylor. His education had been but meager. Motley.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Dry and harsh to the touch, as chalk. scanty; barren.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To make lean. [Obs.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A large European sciænoid fish (Sciæna umbra or S. aquila), having white bloodless flesh. It is valued as a food fish. [Written also maigre.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "meagerly": {
       "word": "MEAGERLY; MEAGRELY",
       "definitions": [
         {
@@ -151,7 +177,17 @@
       ],
       "relatedWords": []
     },
-    "meagernessmeagreness": {
+    "meagrely": {
+      "word": "MEAGERLY; MEAGRELY",
+      "definitions": [
+        {
+          "text": "Poorly; thinly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "meagerness": {
       "word": "MEAGERNESS; MEAGRENESS",
       "definitions": [
         {
@@ -161,11 +197,11 @@
       ],
       "relatedWords": []
     },
-    "meagre": {
-      "word": "MEAGRE",
+    "meagreness": {
+      "word": "MEAGERNESS; MEAGRENESS",
       "definitions": [
         {
-          "text": "A large European sciænoid fish (Sciæna umbra or S. aquila), having white bloodless flesh. It is valued as a food fish. [Written also maigre.]",
+          "text": "The state or quality of being meager; leanness; scantiness; barrenness.",
           "partOfSpeech": "noun"
         }
       ],
@@ -279,7 +315,7 @@
       "word": "MEALY-MOUTHED",
       "definitions": [
         {
-          "text": "Using soft words; plausible; affectedly or timidly delicate of speech; unwilling to tell the truth in plain language. \"Mealy-mouthed philanthropies.\" Tennyson. She was a fool to be mealy-mouthed where nature speaks so plain.",
+          "text": "Using soft words; plausible; affectedly or timidly delicate of speech; unwilling to tell the truth in plain language. \"Mealy-mouthed philanthropies.\" Tennyson. She was a fool to be mealy-mouthed where nature speaks so plain. L'Estrange.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -429,7 +465,17 @@
       ],
       "relatedWords": []
     },
-    "meandrousmeandry": {
+    "meandrous": {
+      "word": "MEANDROUS; MEANDRY",
+      "definitions": [
+        {
+          "text": "Winding; flexuous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "meandry": {
       "word": "MEANDROUS; MEANDRY",
       "definitions": [
         {
@@ -447,7 +493,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "That which is signified, whether by act lanquage; signification;",
+          "text": "That which is signified, whether by act lanquage; signification; sence; import; as, the meaning of a hint.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sense; power of thinking. [R.] -- Mean\"ing*less, a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -481,6 +531,16 @@
       ],
       "relatedWords": []
     },
+    "meanspirited": {
+      "word": "MEAN-SPIRITED",
+      "definitions": [
+        {
+          "text": "Of a mean spirit; base; groveling.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "meant": {
       "word": "MEANT",
       "definitions": [
@@ -491,7 +551,21 @@
       ],
       "relatedWords": []
     },
-    "meantimemeanwhile": {
+    "meantime": {
+      "word": "MEANTIME; MEANWHILE",
+      "definitions": [
+        {
+          "text": "The intervening time; as, in the meantime (or mean time).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In the intervening time; during the interval.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "meanwhile": {
       "word": "MEANTIME; MEANWHILE",
       "definitions": [
         {
@@ -545,6 +619,16 @@
         {
           "text": "A tapeworm larva. See 2d Measles, 4.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "measled": {
+      "word": "MEASLED",
+      "definitions": [
+        {
+          "text": "Infected or spotted with measles, as pork.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -613,7 +697,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Moderate; temperate; not excessive.",
+          "text": "Moderate; temperate; not excessive. Of his diet measurable was he. Chaucer. Yet do it measurably, as it becometh Christians. Latimer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -639,7 +723,51 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Extent or degree not excessive or beyong bounds; moderation; due restraint; esp. in the phrases, in measure; with measure; without or beyond measure.",
+          "text": "Extent or degree not excessive or beyong bounds; moderation; due restraint; esp. in the phrases, in measure; with measure; without or beyond measure. Hell hath enlarged herself, and opened her mouth without measure. Is. v. 14.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Determined extent, not to be exceeded; limit; allotted share, as of action, influence, ability, or the like; due proportion. Lord, make me to know mine end, and the measure of my days. Ps. xxxix. 4.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The quantity determined by measuring, especially in buying and selling; as, to give good or full measure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Undefined quantity; extent; degree. There is a great measure of discretion to be used in the performance of confession. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Regulated division of movement: (a) (Dancing) A regulated movement corresponding to the time in which the accompanying music is performed; but, especially, a slow and stately dane, like the minuet. (b) (Mus.) (1) The group or grouping of beats, caused by the regular recurrence of accented beats. (2)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The space between two bars. See Beat, Triple, Quadruple, Sextuple, Compound time, under Compound, a., and Figure. (c) (Poetry) The manner of ordering and combining the quantities, or long and short syllables; meter; rhythm; hence, a foot; as, a poem in iambic measure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arith.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A number which is contained in a given number a number of times without a remainder; as in the phrases, the common measure, the greatest common measure, etc., of two or more numbers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A step or definite part of a progressive course or policy; a means to an end; an act designed for the accomplishment of an object; as, political measures; prudent measures; an inefficient measure. His majesty found what wrong measures he had taken in the conferring that trust, and lamented his error. Clarendon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of measuring; measurement. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl. (Geol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Beds or strata; as, coal measures; lead measures. Lineal, or Long, measure, measure of length; the measure of lines or distances. square units, as inches, feet, miles, etc. to be harshly or oppressively dealt with. to form an opinion of one's disposition, character, ability, etc. Say to her, we have measured many miles To tread a measure with her on this grass. Shak.",
           "partOfSpeech": "noun"
         },
         {
@@ -681,7 +809,17 @@
       "word": "MEASURED",
       "definitions": [
         {
-          "text": "Regulated or determined by a standard; hence, equal; uniform; graduated; limited; moderated; as, he walked with measured steps; he",
+          "text": "Regulated or determined by a standard; hence, equal; uniform; graduated; limited; moderated; as, he walked with measured steps; he expressed himself in no measured terms.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "measureless": {
+      "word": "MEASURELESS",
+      "definitions": [
+        {
+          "text": "Without measure; unlimited; immeasurable. immense; infinite; immeasurable. Where Alf, the sacred river ran, Through canyons measureless to man, Down to a hidden sea. Coleridge",
           "partOfSpeech": "adjective"
         }
       ],
@@ -767,7 +905,17 @@
       ],
       "relatedWords": []
     },
-    "meathmeathe": {
+    "meath": {
+      "word": "MEATH; MEATHE",
+      "definitions": [
+        {
+          "text": "A sweet liquor; mead. [Obs.] Chaucer. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "meathe": {
       "word": "MEATH; MEATHE",
       "definitions": [
         {
@@ -1353,7 +1501,7 @@
       "word": "MEDDLESOME",
       "definitions": [
         {
-          "text": "Given to meddling; apt to interpose in the affairs of others;",
+          "text": "Given to meddling; apt to interpose in the affairs of others; officiously intrusive.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1533,7 +1681,17 @@
       ],
       "relatedWords": []
     },
-    "mediastinemediastinum": {
+    "mediastine": {
+      "word": "MEDIASTINE; MEDIASTINUM",
+      "definitions": [
+        {
+          "text": "A partition; a septum; specifically, the folds of the pleura (and the space included between them) which divide the thorax into a right and left cavity. The space included between these folds of the pleura, called the mediastinal space, contains the heart and gives passage to the esophagus and great blood vessels.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mediastinum": {
       "word": "MEDIASTINE; MEDIASTINUM",
       "definitions": [
         {
@@ -1655,7 +1813,7 @@
       "word": "MEDIATORIAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a mediator, or to mediation; mediatory; as,",
+          "text": "Of or pertaining to a mediator, or to mediation; mediatory; as, a mediatorial office. My measures were . . . healing and mediatorial. Burke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1681,7 +1839,17 @@
       ],
       "relatedWords": []
     },
-    "mediatressmediatrix": {
+    "mediatress": {
+      "word": "MEDIATRESS; MEDIATRIX",
+      "definitions": [
+        {
+          "text": "A female mediator.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mediatrix": {
       "word": "MEDIATRESS; MEDIATRIX",
       "definitions": [
         {
@@ -1753,7 +1921,7 @@
       "word": "MEDICAMENTAL",
       "definitions": [
         {
-          "text": "Of or pertaining to medicaments or healing applications; having",
+          "text": "Of or pertaining to medicaments or healing applications; having the qualities of medicaments.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1927,7 +2095,27 @@
       ],
       "relatedWords": []
     },
-    "medievalmedievalismmedievalist": {
+    "medieval": {
+      "word": "MEDIEVAL; MEDIEVALISM; MEDIEVALIST",
+      "definitions": [
+        {
+          "text": "Same as Medi, Medi, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "medievalism": {
+      "word": "MEDIEVAL; MEDIEVALISM; MEDIEVALIST",
+      "definitions": [
+        {
+          "text": "Same as Medi, Medi, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "medievalist": {
       "word": "MEDIEVAL; MEDIEVALISM; MEDIEVALIST",
       "definitions": [
         {
@@ -2089,7 +2277,7 @@
       "word": "MEDITATIVE",
       "definitions": [
         {
-          "text": "Disposed to meditate, or to meditation; as, a meditative man; a",
+          "text": "Disposed to meditate, or to meditation; as, a meditative man; a meditative mood.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2191,7 +2379,17 @@
       ],
       "relatedWords": []
     },
-    "medjidiemedjidieh": {
+    "medjidie": {
+      "word": "MEDJIDIE; MEDJIDIEH",
+      "definitions": [
+        {
+          "text": "A Turkish honorary order established in 1851 by Abdul-Mejid, having as its badge a medallion surrounded by seven silver rays and crescents. It is often conferred on foreigners.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "medjidieh": {
       "word": "MEDJIDIE; MEDJIDIEH",
       "definitions": [
         {
@@ -2491,11 +2689,15 @@
         {
           "text": "Evincing mildness of temper, or patience; characterized by mildness or patience; as, a meek answer; a meek face. \"Her meek prayer.\" Chaucer. Gentle.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To make meek; to nurture in gentleness and humility. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "meekmeeken": {
+    "meeken": {
       "word": "MEEK; MEEKEN",
       "definitions": [
         {
@@ -2528,6 +2730,10 @@
     "meer": {
       "word": "MEER",
       "definitions": [
+        {
+          "text": "Simple; unmixed. See Mere, a. [Obs.]",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "See Mere, a lake.",
           "partOfSpeech": "noun"
@@ -2567,8 +2773,8 @@
       ],
       "relatedWords": []
     },
-    "metenasmfrmgemameetingakintoosmtomeeticel": {
-      "word": "meten, AS. m, fr. m, gem, a meeting; akin to OS. m to meet, Icel.",
+    "meet": {
+      "word": "MEET",
       "definitions": [
         {
           "text": "To join, or come in contact with; esp., to come in contact with by approach from an opposite direction; to come upon or against, front to front, as distinguished from contact by following and overtaking.",
@@ -2589,13 +2795,7 @@
         {
           "text": "To come up to; to be even with; to equal; to match; to satisfy; to ansver; as, to meet one's expectations; the supply meets the demand. To meet half way, literally, to go half the distance between in order to meet (one); hence, figuratively, to yield or concede half of the difference in order to effect a compromise or reconciliation with.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "meet": {
-      "word": "MEET",
-      "definitions": [
+        },
         {
           "text": "To come together by mutual approach; esp., to come in contact, or into proximity, by approach from opposite directions; to join; to come face to face; to come in close relationship; as, we met in the street; two lines meet so as to form an angle. O, when meet now Such pairs in love and mutual honor joined ! Milton.",
           "partOfSpeech": "verb"
@@ -2709,7 +2909,7 @@
       ],
       "relatedWords": []
     },
-    "megmegamegalo": {
+    "meg": {
       "word": "MEG-; MEGA; MEGALO-",
       "definitions": [
         {
@@ -2723,7 +2923,49 @@
       ],
       "relatedWords": []
     },
-    "megacephalicmegacephalous": {
+    "mega": {
+      "word": "MEG-; MEGA; MEGALO-",
+      "definitions": [
+        {
+          "text": "Combining forms signifying: (a) Great, extended, powerful; as, megascope, megacosm. (b) (Metric System, Elec., Mech., etc.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A million times, a million of; as, megameter, a million meters; megafarad, a million farads; megohm, a million ohms.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "megalo": {
+      "word": "MEG-; MEGA; MEGALO-",
+      "definitions": [
+        {
+          "text": "Combining forms signifying: (a) Great, extended, powerful; as, megascope, megacosm. (b) (Metric System, Elec., Mech., etc.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A million times, a million of; as, megameter, a million meters; megafarad, a million farads; megohm, a million ohms.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "See Meg-.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "megacephalic": {
+      "word": "MEGACEPHALIC; MEGACEPHALOUS",
+      "definitions": [
+        {
+          "text": "Large headed; -- applied to animals, and to plants when they have large flower heads.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "megacephalous": {
       "word": "MEGACEPHALIC; MEGACEPHALOUS",
       "definitions": [
         {
@@ -2837,18 +3079,28 @@
       "word": "MEGALITH",
       "definitions": [
         {
-          "text": "A large stone; especially, a large stone used in ancient",
+          "text": "A large stone; especially, a large stone used in ancient building.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "megalo": {
-      "word": "MEGALO-",
+    "megalocephalia": {
+      "word": "MEGALOCEPHALIA; MEGALOCEPHALY",
       "definitions": [
         {
-          "text": "See Meg-.",
-          "partOfSpeech": ""
+          "text": "The condition of having an abnormally large head. -- Meg`a*lo*ce*phal\"ic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "megalocephaly": {
+      "word": "MEGALOCEPHALIA; MEGALOCEPHALY",
+      "definitions": [
+        {
+          "text": "The condition of having an abnormally large head. -- Meg`a*lo*ce*phal\"ic (#), a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2927,7 +3179,17 @@
       ],
       "relatedWords": []
     },
-    "megalosaurmegalosaurus": {
+    "megalosaur": {
+      "word": "MEGALOSAUR; MEGALOSAURUS",
+      "definitions": [
+        {
+          "text": "A gigantic carnivorous dinosaur, whose fossil remains have been found in England and elsewhere.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "megalosaurus": {
       "word": "MEGALOSAUR; MEGALOSAURUS",
       "definitions": [
         {
@@ -2947,11 +3209,15 @@
         {
           "text": "A micrometer. [R.] Knight.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "In the metric system, one million meters, or one thousand kilometers.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "megametermegametre": {
+    "megametre": {
       "word": "MEGAMETER; MEGAMETRE",
       "definitions": [
         {
@@ -3011,7 +3277,17 @@
       ],
       "relatedWords": []
     },
-    "megarianmegaric": {
+    "megarian": {
+      "word": "MEGARIAN; MEGARIC",
+      "definitions": [
+        {
+          "text": "Belonging, or pertaining, to Megara, a city of ancient Greece. Megarian, or Megaric, school, a school of philosophy established at Megara, after the death of Socrates, by his disciples, and remarkable for its logical subtlety.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "megaric": {
       "word": "MEGARIAN; MEGARIC",
       "definitions": [
         {
@@ -3031,7 +3307,21 @@
       ],
       "relatedWords": []
     },
-    "megascopicmegascopical": {
+    "megascopic": {
+      "word": "MEGASCOPIC; MEGASCOPICAL",
+      "definitions": [
+        {
+          "text": "(Physics) Of or pertaining to the megascope or the projection upon a screen of images of opaque objects. (b) Enlarged or magnified; -- said of images or of photographic pictures, etc.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Geol.) Large enough to be seen; --said of the larger structural features and components of rocks which do not require the use of the microscope to be perceived. Opposed to microscopic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "megascopical": {
       "word": "MEGASCOPIC; MEGASCOPICAL",
       "definitions": [
         {
@@ -3055,7 +3345,17 @@
       ],
       "relatedWords": []
     },
-    "megassmegasse": {
+    "megass": {
+      "word": "MEGASS; MEGASSE",
+      "definitions": [
+        {
+          "text": "See Bagasse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "megasse": {
       "word": "MEGASS; MEGASSE",
       "definitions": [
         {
@@ -3095,7 +3395,17 @@
       ],
       "relatedWords": []
     },
-    "megatheremegatherium": {
+    "megathere": {
+      "word": "MEGATHERE; MEGATHERIUM",
+      "definitions": [
+        {
+          "text": "An extinct gigantic quaternary mammal, allied to the ant-eaters and sloths. Its remains are found in South America.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "megatherium": {
       "word": "MEGATHERE; MEGATHERIUM",
       "definitions": [
         {
@@ -3145,7 +3455,17 @@
       ],
       "relatedWords": []
     },
-    "megilpmegilph": {
+    "megilp": {
+      "word": "MEGILP; MEGILPH",
+      "definitions": [
+        {
+          "text": "A gelatinous compound of linseed oil and mastic varnish, used by artists as a vehicle for colors. [Written also magilp, and magilph.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "megilph": {
       "word": "MEGILP; MEGILPH",
       "definitions": [
         {
@@ -3207,11 +3527,19 @@
         {
           "text": "See Menge.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A family, including servants, etc.; household; retinue; train.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Company; band; army. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "meinemeiny": {
+    "meiny": {
       "word": "MEINE; MEINY",
       "definitions": [
         {
@@ -3295,7 +3623,17 @@
       ],
       "relatedWords": []
     },
-    "meladamelado": {
+    "melada": {
+      "word": "MELADA; MELADO",
+      "definitions": [
+        {
+          "text": "A mixture of sugar and molasses; crude sugar as it comes from the pans without being drained.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "melado": {
       "word": "MELADA; MELADO",
       "definitions": [
         {
@@ -3365,7 +3703,17 @@
       ],
       "relatedWords": []
     },
-    "melampyrinmelampyrite": {
+    "melampyrin": {
+      "word": "MELAMPYRIN; MELAMPYRITE",
+      "definitions": [
+        {
+          "text": "The saccharine substance dulcite; -- so called because found in the leaves of cowwheat (Melampyrum). See Dulcite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "melampyrite": {
       "word": "MELAMPYRIN; MELAMPYRITE",
       "definitions": [
         {
@@ -3521,6 +3869,16 @@
         {
           "text": "Favorable to meditation; somber. A pretty, melancholy seat, well wooded and watered. Evelin. hypochondriac; disconsolate; heavy, doleful; dismal; calamitous; afflictive.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "melanconiaceae": {
+      "word": "MELANCONIACEAE",
+      "definitions": [
+        {
+          "text": "A family of fungi constituting the order Melanconiales. -- Mel`an*co`ni*a\"ceous (#), a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3715,7 +4073,7 @@
       "word": "MELANOSPERM",
       "definitions": [
         {
-          "text": "An alga of any kind that produces blackish spores, or seed",
+          "text": "An alga of any kind that produces blackish spores, or seed dust. The melanosperms include the rockweeds and all kinds of kelp.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3785,7 +4143,7 @@
       "word": "MELASMA",
       "definitions": [
         {
-          "text": "A dark discoloration of the skin, usually local; as, Addison's",
+          "text": "A dark discoloration of the skin, usually local; as, Addison's melasma, or Addison's disease.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3945,7 +4303,17 @@
       ],
       "relatedWords": []
     },
-    "melibeanmeliboean": {
+    "melibean": {
+      "word": "MELIBEAN; MELIBOEAN",
+      "definitions": [
+        {
+          "text": "Alternately responsive, as verses.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "meliboean": {
       "word": "MELIBEAN; MELIBOEAN",
       "definitions": [
         {
@@ -4295,7 +4663,7 @@
       "word": "MELLIFLUOUS",
       "definitions": [
         {
-          "text": "Flowing as with honey; smooth; flowing sweetly or smoothly; as,",
+          "text": "Flowing as with honey; smooth; flowing sweetly or smoothly; as, a mellifluous voice.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4567,7 +4935,7 @@
       "word": "MELODRAMATIC",
       "definitions": [
         {
-          "text": "Of or pertaining to melodrama; like or suitable to a melodrama;",
+          "text": "Of or pertaining to melodrama; like or suitable to a melodrama; unnatural in situation or action.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4815,7 +5183,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Causing to melt; becoming melted; -- used literally or",
+          "text": "Causing to melt; becoming melted; -- used literally or figuratively; as, a melting heat; a melting appeal; a melting mood.",
           "partOfSpeech": ""
         }
       ],
@@ -5035,7 +5403,25 @@
       ],
       "relatedWords": []
     },
-    "memoirmemoirs": {
+    "memoir": {
+      "word": "MEMOIR; MEMOIRS",
+      "definitions": [
+        {
+          "text": "A memorial account; a history composed from personal experience and memory; an account of transactions or events (usually written in familiar style) as they are remembered by the writer. See History, 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A memorial of any individual; a biography; often, a biography written without special regard to method and completeness.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An account of something deemed noteworthy; an essay; a record of investigations of any subject; the journals and proceedings of a society.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "memoirs": {
       "word": "MEMOIR; MEMOIRS",
       "definitions": [
         {
@@ -5079,6 +5465,16 @@
         {
           "text": "The quality or state of being memorable.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "memorable": {
+      "word": "MEMORABLE",
+      "definitions": [
+        {
+          "text": "Worthy to be remembered; very important or remarkable. Surviving fame to gain, Buy tombs, by books, by memorable deeds. Sir J. Davies.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -5421,7 +5817,17 @@
       ],
       "relatedWords": []
     },
-    "menaldmenild": {
+    "menald": {
+      "word": "MENALD; MENILD",
+      "definitions": [
+        {
+          "text": "Covered with spots; speckled; variegated. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "menild": {
       "word": "MENALD; MENILD",
       "definitions": [
         {
@@ -5471,7 +5877,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "False; counterfeit; containing falsehood; as, a mendacious",
+          "text": "False; counterfeit; containing falsehood; as, a mendacious statement.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5833,7 +6239,7 @@
       ],
       "relatedWords": []
     },
-    "mennonistmennonite": {
+    "mennonist": {
       "word": "MENNONIST; MENNONITE",
       "definitions": [
         {
@@ -5843,7 +6249,17 @@
       ],
       "relatedWords": []
     },
-    "menobranchmenobranchus": {
+    "mennonite": {
+      "word": "MENNONIST; MENNONITE",
+      "definitions": [
+        {
+          "text": "One of a small denomination of Christians, so called from Menno Simons of Friesland, their founder. They believe that the New Testament is the only rule of faith, that there is no original sin, that infants should not be baptized, and that Christians ought not to take oath, hold office, or render military service.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "menobranch": {
       "word": "MENOBRANCH; MENOBRANCHUS",
       "definitions": [
         {
@@ -5853,7 +6269,35 @@
       ],
       "relatedWords": []
     },
-    "menologiummenology": {
+    "menobranchus": {
+      "word": "MENOBRANCH; MENOBRANCHUS",
+      "definitions": [
+        {
+          "text": "A large aquatic American salamander of the genus Necturus, having permanent external gills.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "menologium": {
+      "word": "MENOLOGIUM; MENOLOGY",
+      "definitions": [
+        {
+          "text": "A register of months. Bp. Stillingfleet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Gr. Church)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A brief calendar of the lives of the saints for each day in the year, or a simple remembrance of those whose lives are not written.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "menology": {
       "word": "MENOLOGIUM; MENOLOGY",
       "definitions": [
         {
@@ -5881,7 +6325,17 @@
       ],
       "relatedWords": []
     },
-    "menopomamenopome": {
+    "menopoma": {
+      "word": "MENOPOMA; MENOPOME",
+      "definitions": [
+        {
+          "text": "The hellbender.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "menopome": {
       "word": "MENOPOMA; MENOPOME",
       "definitions": [
         {
@@ -6339,7 +6793,21 @@
       ],
       "relatedWords": []
     },
-    "mephiticmephitical": {
+    "mephitic": {
+      "word": "MEPHITIC; MEPHITICAL",
+      "definitions": [
+        {
+          "text": "Tending to destroy life; poisonous; noxious; as, mephitic exhalations; mephitic regions.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Offensive to the smell; as, mephitic odors. Mephitic air (Chem.), carbon dioxide; -- so called because of its deadly suffocating power. See Carbonic acid, under Carbonic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mephitical": {
       "word": "MEPHITIC; MEPHITICAL",
       "definitions": [
         {
@@ -6563,7 +7031,7 @@
       "word": "MERCERIZE",
       "definitions": [
         {
-          "text": "To treat (cotton fiber or fabrics) with a solution of caustic alkali. Such treatment causes the fiber to shrink in length and become stronger and more receptive of dyes. If the yarn or cloth is",
+          "text": "To treat (cotton fiber or fabrics) with a solution of caustic alkali. Such treatment causes the fiber to shrink in length and become stronger and more receptive of dyes. If the yarn or cloth is kept under tension during the process, it assumes a silky luster. -- Mer`cer*i*za\"tion (#), n.",
           "partOfSpeech": "verb"
         }
       ],
@@ -6743,7 +7211,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Unwilling to give pain; compassionate. A merciful man will be merciful to his beast. Old Proverb.",
+          "text": "Unwilling to give pain; compassionate. A merciful man will be merciful to his beast. Old Proverb. benignant.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6763,7 +7231,7 @@
       "word": "MERCILESS",
       "definitions": [
         {
-          "text": "Destitute of mercy; cruel; unsparing; -- said of animate beings, and also, figuratively, of things; as, a merciless tyrant; merciless waves. The foe is merciless, and will not pity. Shak.",
+          "text": "Destitute of mercy; cruel; unsparing; -- said of animate beings, and also, figuratively, of things; as, a merciless tyrant; merciless waves. The foe is merciless, and will not pity. Shak. savage.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7129,7 +7597,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Resembling the arts of a harlot; alluring by false show; gaudily and deceitfully ornamental; tawdry; as, meretricious dress or",
+          "text": "Resembling the arts of a harlot; alluring by false show; gaudily and deceitfully ornamental; tawdry; as, meretricious dress or ornaments.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7389,7 +7857,17 @@
       ],
       "relatedWords": []
     },
-    "merithalmerithallus": {
+    "merithal": {
+      "word": "MERITHAL; MERITHALLUS",
+      "definitions": [
+        {
+          "text": "Same as Internode.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "merithallus": {
       "word": "MERITHAL; MERITHALLUS",
       "definitions": [
         {
@@ -7413,7 +7891,7 @@
       "word": "MERITORIOUS",
       "definitions": [
         {
-          "text": "Possessing merit; deserving of reward or honor; worthy of recompense; valuable. And meritorious shall that hand be called, Canonized, and worshiped",
+          "text": "Possessing merit; deserving of reward or honor; worthy of recompense; valuable. And meritorious shall that hand be called, Canonized, and worshiped as a saint. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7473,7 +7951,17 @@
       ],
       "relatedWords": []
     },
-    "merlmerle": {
+    "merl": {
+      "word": "MERL; MERLE",
+      "definitions": [
+        {
+          "text": "The European blackbird. See Blackbird. Drayton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "merle": {
       "word": "MERL; MERLE",
       "definitions": [
         {
@@ -7543,7 +8031,27 @@
       ],
       "relatedWords": []
     },
-    "meromerodeloaltomerocabrolla": {
+    "mero": {
+      "word": "MERO; MERO DE LOALTO; MERO CABROLLA",
+      "definitions": [
+        {
+          "text": "Any of several large groupers of warm seas, esp. the guasa (Epinephelus guaza), the red grouper (E. morio), the black grouper (E. nigritas), distinguished as Me\"ro de lo al\"to, and a species called also rock hind, distinguished as Me\"ro ca*brol\"la.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "merodeloalto": {
+      "word": "MERO; MERO DE LOALTO; MERO CABROLLA",
+      "definitions": [
+        {
+          "text": "Any of several large groupers of warm seas, esp. the guasa (Epinephelus guaza), the red grouper (E. morio), the black grouper (E. nigritas), distinguished as Me\"ro de lo al\"to, and a species called also rock hind, distinguished as Me\"ro ca*brol\"la.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "merocabrolla": {
       "word": "MERO; MERO DE LOALTO; MERO CABROLLA",
       "definitions": [
         {
@@ -7739,6 +8247,18 @@
       "word": "MERRY",
       "definitions": [
         {
+          "text": "Laughingly gay; overflowing with good humor and good spirits; jovial; inclined to laughter or play ; sportive. They drank, and were merry with him. Gen. xliii. 34. I am never merry when I hear sweet music. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Cheerful; joyous; not sad; happy. Is any merry Jas. v. 13.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Causing laughter, mirth, gladness, or delight; as, merry jest. \"Merry wind and weather.\" Spenser. Merry dancers. See under Dancer. His merie men commanded he To make him bothe game and glee. Chaucer. mirth. Judg. ix. 27. mirthful; jocund; sportive; hilarious.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A kind of wild red cherry.",
           "partOfSpeech": "noun"
         }
@@ -7869,6 +8389,10 @@
         {
           "text": "See Meso-.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "A combining form denoting in the middle, intermediate; specif. (Chem.), denoting a type of hydrocarbons which are regarded as methenyl derivatives. Also used adjectively.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -7943,7 +8467,17 @@
       ],
       "relatedWords": []
     },
-    "mesameboidmesamoeboid": {
+    "mesameboid": {
+      "word": "MESAMEBOID; MESAMOEBOID",
+      "definitions": [
+        {
+          "text": "One of a class of independent, isolated cells found in the mesoderm, while the germ layers are undergoing differentiation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesamoeboid": {
       "word": "MESAMEBOID; MESAMOEBOID",
       "definitions": [
         {
@@ -8239,7 +8773,7 @@
       "word": "MESITYLENE",
       "definitions": [
         {
-          "text": "A colorless, fragrant liquid, C6H3(CH3)3, of the benzene series",
+          "text": "A colorless, fragrant liquid, C6H3(CH3)3, of the benzene series of hydrocarbons, obtained by distilling acetone with sulphuric acid.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8275,7 +8809,17 @@
       ],
       "relatedWords": []
     },
-    "mesmericmesmerical": {
+    "mesmeric": {
+      "word": "MESMERIC; MESMERICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or induced by, mesmerism; as, mesmeric sleep.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesmerical": {
       "word": "MESMERIC; MESMERICAL",
       "definitions": [
         {
@@ -8345,7 +8889,7 @@
       ],
       "relatedWords": []
     },
-    "mesomes": {
+    "meso": {
       "word": "MESO-; MES-",
       "definitions": [
         {
@@ -8435,11 +8979,31 @@
       ],
       "relatedWords": []
     },
-    "mesocoelemesocoelia": {
+    "mesocoele": {
       "word": "MESOCOELE; MESOCOELIA",
       "definitions": [
         {
           "text": "The cavity of the mesencephalon; the iter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesocoelia": {
+      "word": "MESOCOELE; MESOCOELIA",
+      "definitions": [
+        {
+          "text": "The cavity of the mesencephalon; the iter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesocolon": {
+      "word": "MESOCOLON",
+      "definitions": [
+        {
+          "text": "The fold of peritoneum, or mesentery, attached to the colon.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8455,7 +9019,17 @@
       ],
       "relatedWords": []
     },
-    "mesocuneiformmesocuniform": {
+    "mesocuneiform": {
+      "word": "MESOCUNEIFORM; MESOCUNIFORM",
+      "definitions": [
+        {
+          "text": "One of the bones of the tarsus. See 2d Cuneiform.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesocuniform": {
       "word": "MESOCUNEIFORM; MESOCUNIFORM",
       "definitions": [
         {
@@ -8523,11 +9097,21 @@
       ],
       "relatedWords": []
     },
-    "mesogleamesogloea": {
+    "mesoglea": {
       "word": "MESOGLEA; MESOGLOEA",
       "definitions": [
         {
-          "text": "A thin gelatinous tissue separating the ectoderm and endoderm",
+          "text": "A thin gelatinous tissue separating the ectoderm and endoderm in certain coelenterates.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesogloea": {
+      "word": "MESOGLEA; MESOGLOEA",
+      "definitions": [
+        {
+          "text": "A thin gelatinous tissue separating the ectoderm and endoderm in certain coelenterates.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8608,6 +9192,16 @@
       "definitions": [
         {
           "text": "The fold of the peritoneum supporting the oviduct.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesomycetes": {
+      "word": "MESOMYCETES",
+      "definitions": [
+        {
+          "text": "One of the three classes into which the fungi are divided in Brefeld's classification. -- Mes`o*my*ce\"tous (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8757,7 +9351,7 @@
       "word": "MESOPTERYGIUM",
       "definitions": [
         {
-          "text": "The middle one of the three principal basal cartilages in the",
+          "text": "The middle one of the three principal basal cartilages in the fins of fishes.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8768,6 +9362,16 @@
       "definitions": [
         {
           "text": "The fold of peritoneum which attaches the testis to the dorsal wall of the body cavity or scrotal sac.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesorectum": {
+      "word": "MESORECTUM",
+      "definitions": [
+        {
+          "text": "The fold of peritoneum, or mesentery, attached to the rectum.",
           "partOfSpeech": "noun"
         }
       ],
@@ -9047,7 +9651,17 @@
       ],
       "relatedWords": []
     },
-    "mesquitemesquit": {
+    "mesquite": {
+      "word": "MESQUITE; MESQUIT",
+      "definitions": [
+        {
+          "text": "A name for two trees of the southwestern part of North America, the honey mesquite, and screw-pod mesquite. Honey mesquite. See Algaroba (b). spiral pods used as fodder and sometimes as food by the Indians. oligostachya, and other species); -- so called from its growing in company with the mesquite tree; -- called also muskit grass, grama grass.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mesquit": {
       "word": "MESQUITE; MESQUIT",
       "definitions": [
         {
@@ -9385,11 +9999,19 @@
         {
           "text": "of Mete, to dream. Chaucer.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "A prefix meaning between, with, after, behind, over, about, reversely; as, metachronism, the error of placing after the correct time; metaphor, lit., a carrying over; metathesis, a placing reversely.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Chem.) A prefix denoting: (a) Other; duplicate, corresponding to; resembling; hence, metameric; as, meta-arabinic, metaldehyde. (b) (Organic Chem.) That two replacing radicals, in the benzene nucleus, occupy the relative positions of 1 and 3, 2 and 4, 3 and 5, 4 and 6, 5 and 1, or 6 and 2; as, metacresol, etc. See Ortho-, and Para-. (c) (Inorganic Chem.) Having less than the highest number of hydroxyl groups; -- said of acids; as, metaphosphoric acid. Also used adjectively. at a level above, as metaphysics, metalanguage.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "metamet": {
+    "meta": {
       "word": "META-; MET-",
       "definitions": [
         {
@@ -9425,7 +10047,21 @@
       ],
       "relatedWords": []
     },
-    "metabolametabole": {
+    "metabola": {
+      "word": "METABOLA; METABOLE",
+      "definitions": [
+        {
+          "text": "A change or mutation; a change of disease, symptoms, or treatment.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A comprehensive group of insects, including those that undegro a metamorphosis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metabole": {
       "word": "METABOLA; METABOLE",
       "definitions": [
         {
@@ -9435,7 +10071,7 @@
       ],
       "relatedWords": []
     },
-    "metabolametabolia": {
+    "metabolia": {
       "word": "METABOLA; METABOLIA",
       "definitions": [
         {
@@ -9551,7 +10187,17 @@
       ],
       "relatedWords": []
     },
-    "metacentermetacentre": {
+    "metacenter": {
+      "word": "METACENTER; METACENTRE",
+      "definitions": [
+        {
+          "text": "The point of intersection of a vertical line through the center of gravity of the fluid displaced by a floating body which is tipped through a small angle from its position of equilibrium, and the inclined line which was vertical through the center of gravity of the body when in equilibrium. position of the body is stable; when below it, unstable.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metacentre": {
       "word": "METACENTER; METACENTRE",
       "definitions": [
         {
@@ -9883,6 +10529,16 @@
       ],
       "relatedWords": []
     },
+    "metaleptical": {
+      "word": "METALEPTICAL",
+      "definitions": [
+        {
+          "text": "Metaleptic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "metallic": {
       "word": "METALLIC",
       "definitions": [
@@ -10107,7 +10763,17 @@
       ],
       "relatedWords": []
     },
-    "metallurgicmetallurgical": {
+    "metallurgic": {
+      "word": "METALLURGIC; METALLURGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to metallurgy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metallurgical": {
       "word": "METALLURGIC; METALLURGICAL",
       "definitions": [
         {
@@ -10443,11 +11109,21 @@
       ],
       "relatedWords": []
     },
-    "metaphoricmetaphorical": {
+    "metaphoric": {
       "word": "METAPHORIC; METAPHORICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to metaphor; comprising a metaphor; not literal; figurative; tropical; as, a metaphorical expression; a",
+          "text": "Of or pertaining to metaphor; comprising a metaphor; not literal; figurative; tropical; as, a metaphorical expression; a metaphorical sense.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metaphorical": {
+      "word": "METAPHORIC; METAPHORICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to metaphor; comprising a metaphor; not literal; figurative; tropical; as, a metaphorical expression; a metaphorical sense.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10527,7 +11203,17 @@
       ],
       "relatedWords": []
     },
-    "metaphrasticmetaphrastical": {
+    "metaphrastic": {
+      "word": "METAPHRASTIC; METAPHRASTICAL",
+      "definitions": [
+        {
+          "text": "Close, or literal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metaphrastical": {
       "word": "METAPHRASTIC; METAPHRASTICAL",
       "definitions": [
         {
@@ -10687,7 +11373,7 @@
       "word": "METAPTERYGIUM",
       "definitions": [
         {
-          "text": "The posterior of the three principal basal cartilages in the",
+          "text": "The posterior of the three principal basal cartilages in the fins of fishes.",
           "partOfSpeech": "noun"
         }
       ],
@@ -10717,7 +11403,7 @@
       "word": "METASOMATISM",
       "definitions": [
         {
-          "text": "An alteration in a mineral or rock mass when involving a chemical change of the substance, as of chrysolite to serpentine; -- opposed to ordinary metamorphism, as implying simply a",
+          "text": "An alteration in a mineral or rock mass when involving a chemical change of the substance, as of chrysolite to serpentine; -- opposed to ordinary metamorphism, as implying simply a recrystallization.",
           "partOfSpeech": "noun"
         }
       ],
@@ -10825,7 +11511,17 @@
       ],
       "relatedWords": []
     },
-    "metastomametastome": {
+    "metastoma": {
+      "word": "METASTOMA; METASTOME",
+      "definitions": [
+        {
+          "text": "A median elevation behind the mouth in the arthropods.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metastome": {
       "word": "METASTOMA; METASTOME",
       "definitions": [
         {
@@ -10909,7 +11605,17 @@
       ],
       "relatedWords": []
     },
-    "metatheticmetathetical": {
+    "metathetic": {
+      "word": "METATHETIC; METATHETICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to metathesis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metathetical": {
       "word": "METATHETIC; METATHETICAL",
       "definitions": [
         {
@@ -11049,7 +11755,17 @@
       ],
       "relatedWords": []
     },
-    "metazoonmetazooen": {
+    "metazoon": {
+      "word": "METAZOON; METAZOOEN",
+      "definitions": [
+        {
+          "text": "One of the Metazoa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metazooen": {
       "word": "METAZOON; METAZOOEN",
       "definitions": [
         {
@@ -11075,22 +11791,16 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To find the quantity, dimensions, or capacity of, by any rule or standard; to measure.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To measure. [Obs.] Mark iv. 24.",
           "partOfSpeech": "verb"
         },
         {
           "text": "Measure; limit; boundary; -- used chiefly in the plural, and in the phrase metes and bounds.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "measuregrmeasurelmetiritomeasurecfskrmatomeasure": {
-      "word": "measure, Gr. measure, L. metiri to measure; cf. Skr. ma to measure.",
-      "definitions": [
-        {
-          "text": "To find the quantity, dimensions, or capacity of, by any rule or standard; to measure.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -11115,7 +11825,17 @@
       ],
       "relatedWords": []
     },
-    "metempiricmetempirical": {
+    "metempiric": {
+      "word": "METEMPIRIC; METEMPIRICAL",
+      "definitions": [
+        {
+          "text": "Related, or belonging, to the objects of knowledge within the province of metempirics. If then the empirical designates the province we include within the range of science, the province we exclude may be fitly styled the metempirical. G. H. Lewes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metempirical": {
       "word": "METEMPIRIC; METEMPIRICAL",
       "definitions": [
         {
@@ -11331,7 +12051,17 @@
       ],
       "relatedWords": []
     },
-    "meteorologicmeteorological": {
+    "meteorologic": {
+      "word": "METEOROLOGIC; METEOROLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the atmosphere and its phenomena, or to meteorology. Meteorological table, Meteorological register, a table or register exhibiting the state of the air and its temperature, weight, dryness, moisture, motion, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "meteorological": {
       "word": "METEOROLOGIC; METEOROLOGICAL",
       "definitions": [
         {
@@ -11409,11 +12139,23 @@
         {
           "text": "A line above or below a hanging net, to which the net is attached in order to strengthen it.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Rhythmical arrangement of syllables or words into verses, stanzas, strophes, etc.; poetical measure, depending on number, quantity, and accent of syllables; rhythm; measure; verse; also, any specific rhythmical arrangements; as, the Horatian meters; a dactylic meter. The only strict antithesis to prose is meter. Wordsworth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A poem. [Obs.] Robynson (More's Utopia).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A measure of length, equal to 39.37 English inches, the standard of linear measure in the metric system of weights and measures. It was intended to be, and is very nearly, the ten millionth part of the distance from the equator to the north pole, as ascertained by actual measurement of an arc of a meridian. See Metric system, under Metric. Common meter (Hymnol.), four iambic verses, or lines, making a stanza, the first and third having each four feet, and the second and fourth each three feet; -- usually indicated by the initials C.M. four verses usually making a stanza; -- commonly indicated by the initials L.M. and fourth having each three feet, and the third four feet. The stanza usually consists of four lines, but is sometimes doubled. Short meter is indicated by the initials S.M.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "metermetre": {
+    "metre": {
       "word": "METER; METRE",
       "definitions": [
         {
@@ -11426,6 +12168,10 @@
         },
         {
           "text": "A measure of length, equal to 39.37 English inches, the standard of linear measure in the metric system of weights and measures. It was intended to be, and is very nearly, the ten millionth part of the distance from the equator to the north pole, as ascertained by actual measurement of an arc of a meridian. See Metric system, under Metric. Common meter (Hymnol.), four iambic verses, or lines, making a stanza, the first and third having each four feet, and the second and fourth each three feet; -- usually indicated by the initials C.M. four verses usually making a stanza; -- commonly indicated by the initials L.M. and fourth having each three feet, and the third four feet. The stanza usually consists of four lines, but is sometimes doubled. Short meter is indicated by the initials S.M.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Meter.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11613,7 +12359,7 @@
       ],
       "relatedWords": []
     },
-    "methodicmethodical": {
+    "methodic": {
       "word": "METHODIC; METHODICAL",
       "definitions": [
         {
@@ -11625,7 +12371,25 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of or pertaining to the ancient school of physicians called",
+          "text": "Of or pertaining to the ancient school of physicians called methodists. Johnson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "methodical": {
+      "word": "METHODIC; METHODICAL",
+      "definitions": [
+        {
+          "text": "Arranged with regard to method; disposed in a suitable manner, or in a manner to illustrate a subject, or to facilitate practical observation; as, the methodical arrangement of arguments; a methodical treatise. \"Methodical regularity.\" Addison.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Proceeding with regard to method; systematic. \"Aristotle, strict, methodic, and orderly.\" Harris.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the ancient school of physicians called methodists. Johnson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11667,7 +12431,35 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "One of a sect of Christians, the outgrowth of a small association called the \"Holy Club,\" formed at Oxford University, A.D. 1729, of which the most conspicuous members were John Wesley and his brother Charles; -- originally so called from the methodical strictness of members of the club in all religious duties.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A person of strict piety; one who lives in the exact observance of religious duties; -- sometimes so called in contempt or ridicule.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Of or pertaining to the sect of Methodists; as, Methodist hymns; a Methodist elder.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "methodistic": {
+      "word": "METHODISTIC; METHODISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to methodists, or to the Methodists.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "methodistical": {
+      "word": "METHODISTIC; METHODISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to methodists, or to the Methodists.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11757,7 +12549,7 @@
       "word": "METHYL",
       "definitions": [
         {
-          "text": "A hydrocarbon radical, CH3, not existing alone but regarded as an essential residue of methane, and appearing as a component part of many derivatives; as, methyl alcohol, methyl ether, methyl amine, etc. [Formerly written also methule, methyle, etc.] Methyl alcohol (Chem.), a light, volatile, inflammable liquid, CH3.OH, obtained by the distillation of wood, and hence called wood spirit; -- called also methol, carbinol, etc. CH3.NH2, having an ammoniacal, fishy odor. It is produced artificially, and also occurs naturally in herring brine and other fishy products. It is regarded as ammonia in which a third of its hydrogen is replaced by methyl, and is a type of the class of substituted ammonias.",
+          "text": "A hydrocarbon radical, CH3, not existing alone but regarded as an essential residue of methane, and appearing as a component part of many derivatives; as, methyl alcohol, methyl ether, methyl amine, etc. [Formerly written also methule, methyle, etc.] Methyl alcohol (Chem.), a light, volatile, inflammable liquid, CH3.OH, obtained by the distillation of wood, and hence called wood spirit; -- called also methol, carbinol, etc. CH3.NH2, having an ammoniacal, fishy odor. It is produced artificially, and also occurs naturally in herring brine and other fishy products. It is regarded as ammonia in which a third of its hydrogen is replaced by methyl, and is a type of the class of substituted ammonias. by the etherification of methyl alcohol; -- called also methyl oxide. methyl halogen derivatives of rosaniline.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11847,6 +12639,16 @@
       ],
       "relatedWords": []
     },
+    "meticulous": {
+      "word": "METICULOUS",
+      "definitions": [
+        {
+          "text": "Timid; fearful.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "metier": {
       "word": "METIER",
       "definitions": [
@@ -11857,7 +12659,7 @@
       ],
       "relatedWords": []
     },
-    "metifmetive": {
+    "metif": {
       "word": "METIF; METIVE",
       "definitions": [
         {
@@ -11867,7 +12669,31 @@
       ],
       "relatedWords": []
     },
-    "metismetisse": {
+    "metive": {
+      "word": "METIF; METIVE",
+      "definitions": [
+        {
+          "text": "See Métis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metis": {
+      "word": "METIS; METISSE",
+      "definitions": [
+        {
+          "text": "The offspring of a white person and an American Indian.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The offspring of a white person and a quadroon; an octoroon. [Local, U. S.] Bartlett.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metisse": {
       "word": "METIS; METISSE",
       "definitions": [
         {
@@ -11896,6 +12722,26 @@
       "definitions": [
         {
           "text": "Pertaining to, or discovered by, Meton, the Athenian. Metonic cycle or year. (Astron.) See under Cycle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metonymic": {
+      "word": "METONYMIC; METONYMICAL",
+      "definitions": [
+        {
+          "text": "Used by way of metonymy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metonymical": {
+      "word": "METONYMIC; METONYMICAL",
+      "definitions": [
+        {
+          "text": "Used by way of metonymy.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11953,7 +12799,17 @@
       ],
       "relatedWords": []
     },
-    "metoposcopicmetoposcopical": {
+    "metoposcopic": {
+      "word": "METOPOSCOPIC; METOPOSCOPICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to metoposcopy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "metoposcopical": {
       "word": "METOPOSCOPIC; METOPOSCOPICAL",
       "definitions": [
         {
@@ -11988,16 +12844,6 @@
       "definitions": [
         {
           "text": "The postero-lateral ossification in the sternum of birds; also, the part resulting from such ossification.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "metre": {
-      "word": "METRE",
-      "definitions": [
-        {
-          "text": "See Meter.",
           "partOfSpeech": "noun"
         }
       ],
@@ -12395,7 +13241,7 @@
       "word": "METTLESOME",
       "definitions": [
         {
-          "text": "Full of spirit; possessing constitutional ardor; fiery; as, a",
+          "text": "Full of spirit; possessing constitutional ardor; fiery; as, a mettlesome horse.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -12499,7 +13345,17 @@
       ],
       "relatedWords": []
     },
-    "mexalmexical": {
+    "mexal": {
+      "word": "MEXAL; MEXICAL",
+      "definitions": [
+        {
+          "text": "See Mescal.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mexical": {
       "word": "MEXAL; MEXICAL",
       "definitions": [
         {
@@ -12670,46 +13526,6 @@
         },
         {
           "text": "To engrave in mezzotint; to represent by mezzotint.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "meaningproperlythatwhichisshornoffedgeakintoodschoore": {
-      "word": "meaning properly, that which is shorn off, edge; akin to OD. schoore,",
-      "definitions": [
-        {
-          "text": "The coast or land adjacent to a large body of water, as an ocean, lake, or large river. Michael Cassio, Lieutenant to the warlike Moor Othello, Is come shore. Shak. The fruitful shore of muddy Nile. Spenser. In shore, near the shore. Marryat. birds found on the seashore. tides, especially any one of various species of grapsoid crabs, as Heterograpsus nudus of California. found in winter, both on the seacoast and on the Western plains. Its upper parts are varied with dark brown and light brown. It has a yellow throat, yellow local streaks, a black crescent on its breast, a black streak below each eye, and two small black erectile ear tufts. Called also horned lark. magnirostris). It lives on the seashore, and feeds on crustaceans, etc. Eng.]",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "meaningasmoothpieceandakintoslapeicelsleiprslippery": {
-      "word": "meaning, a smooth piece, and akin to slape, Icel. sleipr slippery,",
-      "definitions": [
-        {
-          "text": "A thin piece of anything, especially of marble or other stone, having plane surfaces. Gwilt.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "An outside piece taken from a log or timber in sawing it into boards, planks, etc.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The wryneck. [Prov. Eng.]",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Naut.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The slack part of a sail. Slab line (Naut.), a line or small rope by which seamen haul up the foot of the mainsail or foresail. Totten.",
           "partOfSpeech": "verb"
         }
       ],

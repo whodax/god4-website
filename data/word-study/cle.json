@@ -55,7 +55,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Well-proportioned; shapely; as, clean limbs. A clean bill of health, a certificate from the proper authrity that a ship is free",
+          "text": "Well-proportioned; shapely; as, clean limbs. A clean bill of health, a certificate from the proper authrity that a ship is free from infection.",
           "partOfSpeech": "adjective"
         },
         {
@@ -897,7 +897,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Free from embarrassment; detention, etc. The cruel corporal whispered in my ear, Five pounds, if rightly",
+          "text": "Free from embarrassment; detention, etc. The cruel corporal whispered in my ear, Five pounds, if rightly tipped, would set me clear. Gay. Clear breach. See under Breach, n., 4. excluding both the first and last day; as, from Sunday to Sunday there are six clear days. obvious; visible; plain; evident; apparent; distinct; perspicuous. See Manifest.",
           "partOfSpeech": "adjective"
         },
         {
@@ -2513,7 +2513,7 @@
       ],
       "relatedWords": []
     },
-    "clearstoryclerestory": {
+    "clearstory": {
       "word": "CLEARSTORY; CLERESTORY",
       "definitions": [
         {
@@ -3234,7 +3234,17 @@
       ],
       "relatedWords": []
     },
-    "cleistogamiccleistogamous": {
+    "cleistogamic": {
+      "word": "CLEISTOGAMIC; CLEISTOGAMOUS",
+      "definitions": [
+        {
+          "text": "Having, beside the usual flowers, other minute, closed flowers, without petals or with minute petals; -- said of certain species of plants which possess flowers of two or more kinds, the closed ones being so constituted as to insure self-fertilization. Darwin.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cleistogamous": {
       "word": "CLEISTOGAMIC; CLEISTOGAMOUS",
       "definitions": [
         {
@@ -3337,6 +3347,55 @@
         "tenderness",
         "tolerance",
         "toleration"
+      ]
+    },
+    "clement": {
+      "word": "CLEMENT",
+      "definitions": [
+        {
+          "text": "Mild in temper and disposition; merciful; compassionate. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "accepting",
+        "benevolent",
+        "benign",
+        "benignant",
+        "bleeding",
+        "charitable",
+        "commiserative",
+        "compassionate",
+        "condolent",
+        "easy",
+        "easygoing",
+        "forbearant",
+        "forbearing",
+        "forgiving",
+        "gentle",
+        "human",
+        "humane",
+        "indulgent",
+        "kind",
+        "kindly",
+        "lax",
+        "lenient",
+        "melting",
+        "merciful",
+        "mild",
+        "moderate",
+        "patient",
+        "pitying",
+        "ruthful",
+        "soft",
+        "softhearted",
+        "sympathetic",
+        "sympathizing",
+        "tender",
+        "tenderhearted",
+        "tolerant",
+        "understanding",
+        "warmhearted"
       ]
     },
     "clementine": {
@@ -3459,8 +3518,12 @@
       "relatedWords": []
     },
     "clerestory": {
-      "word": "CLERESTORY",
+      "word": "CLEARSTORY; CLERESTORY",
       "definitions": [
+        {
+          "text": "The upper story of the nave of a church, containing windows, and rising above the aisle roofs.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Clearstory.",
           "partOfSpeech": "noun"
@@ -3534,7 +3597,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The privilege or benefit of clergy. If convicted of a clergyable felony, he is entitled equally to his clergy after as before conviction. Blackstone. Benefit of clergy (Eng., Law), the exemption of the persons of clergymen from criminal process before a secular judge -- a privilege which was extended to all who could read, such persons being, in the eye of the law, clerici, or clerks. This privilege was abridged and modified by various statutes, and finally abolished in the reign of",
+          "text": "The privilege or benefit of clergy. If convicted of a clergyable felony, he is entitled equally to his clergy after as before conviction. Blackstone. Benefit of clergy (Eng., Law), the exemption of the persons of clergymen from criminal process before a secular judge -- a privilege which was extended to all who could read, such persons being, in the eye of the law, clerici, or clerks. This privilege was abridged and modified by various statutes, and finally abolished in the reign of George IV. (1827).",
           "partOfSpeech": "noun"
         }
       ],
@@ -4504,24 +4567,6 @@
       "relatedWords": []
     },
     "clew": {
-      "word": "CLEW",
-      "definitions": [
-        {
-          "text": "To direct; to guide, as by a thread. [Obs.] Direct and clew me out the way to happiness. Beau. && Fl.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Naut.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To move of draw (a sail or yard) by means of the clew garnets, clew lines, etc.; esp. to draw up the clews of a square sail to the yard. To clew down (Naut.), to force (a yard) down by hauling on the clew lines. furling.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "clewclue": {
       "word": "CLEW; CLUE",
       "definitions": [
         {
@@ -4547,6 +4592,18 @@
         {
           "text": "A combination of lines or nettles by which a hammock is suspended. Clew garnet (Naut.), one of the ropes by which the clews of the courses of square-rigged vessels are drawn up to the lower yards. square sails, as topsail, topgallant sail, or royal, is run up to its yard. reeves. See Illust. of Block.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To direct; to guide, as by a thread. [Obs.] Direct and clew me out the way to happiness. Beau. && Fl.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move of draw (a sail or yard) by means of the clew garnets, clew lines, etc.; esp. to draw up the clews of a square sail to the yard. To clew down (Naut.), to force (a yard) down by hauling on the clew lines. furling.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

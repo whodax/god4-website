@@ -233,12 +233,32 @@
       ],
       "relatedWords": []
     },
-    "homaloidhomaloidal": {
+    "homaloid": {
       "word": "HOMALOID; HOMALOIDAL",
       "definitions": [
         {
           "text": "Flat; even; -- a term applied to surfaces and to spaces, whether real or imagined, in which the definitions, axioms, and postulates of Euclid respecting parallel straight lines are assumed to hold true.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homaloidal": {
+      "word": "HOMALOID; HOMALOIDAL",
+      "definitions": [
+        {
+          "text": "Flat; even; -- a term applied to surfaces and to spaces, whether real or imagined, in which the definitions, axioms, and postulates of Euclid respecting parallel straight lines are assumed to hold true.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homarus": {
+      "word": "HOMARUS",
+      "definitions": [
+        {
+          "text": "A genus of decapod Crustacea, including the common lobsters.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -604,6 +624,82 @@
         }
       ],
       "relatedWords": []
+    },
+    "homeless": {
+      "word": "HOMELESS",
+      "definitions": [
+        {
+          "text": "Destitute of a home.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abandoned",
+        "alienated",
+        "alone",
+        "aloof",
+        "apart",
+        "bankrupt",
+        "bums",
+        "companionless",
+        "defenseless",
+        "derelict",
+        "deserted",
+        "desolate",
+        "destitute",
+        "detached",
+        "down-and-out",
+        "exiled",
+        "fatherless",
+        "forlorn",
+        "forsaken",
+        "fortuneless",
+        "friendless",
+        "godforsaken",
+        "helpless",
+        "houseless",
+        "in the gutter",
+        "in the red",
+        "insolvent",
+        "insular",
+        "isolated",
+        "kithless",
+        "landless",
+        "lone",
+        "lonely",
+        "lonesome",
+        "moneyless",
+        "motherless",
+        "out of funds",
+        "outcast",
+        "penniless",
+        "propertyless",
+        "removed",
+        "rootless",
+        "separate",
+        "separated",
+        "single-handed",
+        "solitary",
+        "solo",
+        "stateless",
+        "unabetted",
+        "unaccompanied",
+        "unaided",
+        "unassisted",
+        "unattended",
+        "unescorted",
+        "unestablished",
+        "unfriended",
+        "unharbored",
+        "unhoused",
+        "unplaced",
+        "unseconded",
+        "unsettled",
+        "unsupported",
+        "vagabond",
+        "withdrawn",
+        "without a sou"
+      ]
     },
     "homelike": {
       "word": "HOMELIKE",
@@ -1155,6 +1251,16 @@
         "vast"
       ]
     },
+    "homesick": {
+      "word": "HOMESICK",
+      "definitions": [
+        {
+          "text": "Pining for home; in a nostalgic condition.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "homespeaking": {
       "word": "HOME-SPEAKING",
       "definitions": [
@@ -1533,6 +1639,10 @@
         {
           "text": "Being in the direction of home; as, the homeward way.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Toward home; in the direction of one's house, town, or country. Homeward bound, bound for home; going homeward; as, the homeward bound fleet.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": [
@@ -1558,7 +1668,7 @@
         "windward"
       ]
     },
-    "homewardhomewards": {
+    "homewards": {
       "word": "HOMEWARD; HOMEWARDS",
       "definitions": [
         {
@@ -1713,7 +1823,21 @@
       ],
       "relatedWords": []
     },
-    "homiletichomiletical": {
+    "homiletic": {
+      "word": "HOMILETIC; HOMILETICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to familiar intercourse; social; affable; conversable; companionable. [R.] His virtues active, chiefly, and homiletical, not those lazy, sullen ones of the cloister. Atterbury.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to homiletics; hortatory.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homiletical": {
       "word": "HOMILETIC; HOMILETICAL",
       "definitions": [
         {
@@ -2088,7 +2212,29 @@
       ],
       "relatedWords": []
     },
-    "homodromalhomodromous": {
+    "homodromal": {
+      "word": "HOMODROMAL; HOMODROMOUS",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Running in the same direction; -- said of stems twining round a support, or of the spiral succession of leaves on stems and their branches.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Moving in the same direction; -- said of a lever or pulley in which the resistance and the actuating force are both on the same side of the fulcrum or axis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homodromous": {
       "word": "HOMODROMAL; HOMODROMOUS",
       "definitions": [
         {
@@ -2150,7 +2296,17 @@
       ],
       "relatedWords": []
     },
-    "homoeomerichomoeomerical": {
+    "homoeomeric": {
+      "word": "HOMOEOMERIC; HOMOEOMERICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or characterized by, sameness of parts; receiving or advocating the doctrine of homogeneity of elements or first principles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homoeomerical": {
       "word": "HOMOEOMERIC; HOMOEOMERICAL",
       "definitions": [
         {
@@ -2200,7 +2356,27 @@
       ],
       "relatedWords": []
     },
-    "homoeopathichomoeopathisthomoeopathy": {
+    "homoeopathic": {
+      "word": "HOMOEOPATHIC; HOMOEOPATHIST; HOMOEOPATHY",
+      "definitions": [
+        {
+          "text": "Same as Homeopathic, Homeopathist, Homeopathy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homoeopathist": {
+      "word": "HOMOEOPATHIC; HOMOEOPATHIST; HOMOEOPATHY",
+      "definitions": [
+        {
+          "text": "Same as Homeopathic, Homeopathist, Homeopathy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homoeopathy": {
       "word": "HOMOEOPATHIC; HOMOEOPATHIST; HOMOEOPATHY",
       "definitions": [
         {
@@ -2545,6 +2721,16 @@
       ],
       "relatedWords": []
     },
+    "homograph": {
+      "word": "HOMOGRAPH",
+      "definitions": [
+        {
+          "text": "One of two or more words identical in orthography, but having different derivations and meanings; as, fair, n., a market, and fair, a., beautiful.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "homographic": {
       "word": "HOMOGRAPHIC",
       "definitions": [
@@ -2639,7 +2825,7 @@
       "word": "HOMOLOGICAL",
       "definitions": [
         {
-          "text": "Pertaining to homology; having a structural affinity proceeding",
+          "text": "Pertaining to homology; having a structural affinity proceeding from, or base upon, that kind of relation termed homology.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2821,7 +3007,7 @@
       ],
       "relatedWords": []
     },
-    "homomorphichomomorphous": {
+    "homomorphic": {
       "word": "HOMOMORPHIC; HOMOMORPHOUS",
       "definitions": [
         {
@@ -2857,6 +3043,16 @@
         {
           "text": "The possession of but one kind of larvæ or young, as in most insects.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homomorphous": {
+      "word": "HOMOMORPHIC; HOMOMORPHOUS",
+      "definitions": [
+        {
+          "text": "Characterized by homomorphism.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2991,7 +3187,17 @@
       ],
       "relatedWords": []
     },
-    "homoorganhomooergan": {
+    "homooergan": {
+      "word": "HOMOORGAN; HOMOOERGAN",
+      "definitions": [
+        {
+          "text": "Same as Homoplast.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "homoorgan": {
       "word": "HOMOORGAN; HOMOOERGAN",
       "definitions": [
         {
@@ -3029,7 +3235,21 @@
       ],
       "relatedWords": []
     },
-    "homophonichomophonous": {
+    "homophonic": {
+      "word": "HOMOPHONIC; HOMOPHONOUS",
+      "definitions": [
+        {
+          "text": "(Mus.) (a) Originally, sounding alike; of the same pitch; unisonous; monodic. (b) Now used for plain harmony, note against note, as opposed to polyphonic harmony, in which the several parts move independently, each with its own melody.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Expressing the same sound by a different combination of letters; as, bay and bey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homophonous": {
       "word": "HOMOPHONIC; HOMOPHONOUS",
       "definitions": [
         {
@@ -3207,7 +3427,17 @@
       ],
       "relatedWords": []
     },
-    "homotaxialhomotaxic": {
+    "homotaxial": {
+      "word": "HOMOTAXIAL; HOMOTAXIC",
+      "definitions": [
+        {
+          "text": "Relating to homotaxis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homotaxic": {
       "word": "HOMOTAXIAL; HOMOTAXIC",
       "definitions": [
         {
@@ -3237,7 +3467,17 @@
       ],
       "relatedWords": []
     },
-    "homothermichomothermous": {
+    "homothermic": {
+      "word": "HOMOTHERMIC; HOMOTHERMOUS",
+      "definitions": [
+        {
+          "text": "Warm-blooded; homoiothermal; hæmatothermal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homothermous": {
       "word": "HOMOTHERMIC; HOMOTHERMOUS",
       "definitions": [
         {
@@ -3257,7 +3497,25 @@
       ],
       "relatedWords": []
     },
-    "homotropalhomotropous": {
+    "homotropal": {
+      "word": "HOMOTROPAL; HOMOTROPOUS",
+      "definitions": [
+        {
+          "text": "Turned in the same direction with something else.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the radicle of the seed directed towards the hilum.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homotropous": {
       "word": "HOMOTROPAL; HOMOTROPOUS",
       "definitions": [
         {
@@ -3295,7 +3553,17 @@
       ],
       "relatedWords": []
     },
-    "homotypichomotypical": {
+    "homotypic": {
+      "word": "HOMOTYPIC; HOMOTYPICAL",
+      "definitions": [
+        {
+          "text": "Same as Homotypal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "homotypical": {
       "word": "HOMOTYPIC; HOMOTYPICAL",
       "definitions": [
         {

@@ -1,7 +1,17 @@
 {
   "version": "v1",
   "entries": {
-    "agaagha": {
+    "aga": {
+      "word": "AGA; AGHA",
+      "definitions": [
+        {
+          "text": "In Turkey, a commander or chief officer. It is used also as a title of respect.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agha": {
       "word": "AGA; AGHA",
       "definitions": [
         {
@@ -37,6 +47,10 @@
         {
           "text": "Moreover; besides; further. Again, it is of great consequence to avoid, etc. Hersche Again and again, more than once; often; repeatedly. witness, to witness against; again-ride, to ride against; again-come, to come against, to encounter; again-bring, to bring back, etc.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Against; also, towards (in order to meet). [Obs.] Albeit that it is again his kind. Chaucer.",
+          "partOfSpeech": "preposition"
         }
       ],
       "relatedWords": [
@@ -142,7 +156,7 @@
         "yet again"
       ]
     },
-    "againagains": {
+    "agains": {
       "word": "AGAIN; AGAINS",
       "definitions": [
         {
@@ -266,7 +280,17 @@
       ],
       "relatedWords": []
     },
-    "agalactiaagalaxy": {
+    "agalactia": {
+      "word": "AGALACTIA; AGALAXY",
+      "definitions": [
+        {
+          "text": "Failure of the due secretion of milk after childbirth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agalaxy": {
       "word": "AGALACTIA; AGALAXY",
       "definitions": [
         {
@@ -296,7 +320,17 @@
       ],
       "relatedWords": []
     },
-    "agallochagallochum": {
+    "agalloch": {
+      "word": "AGALLOCH; AGALLOCHUM",
+      "definitions": [
+        {
+          "text": "A soft, resinous wood (Aquilaria Agallocha) of highly aromatic smell, burnt by the orientals as a perfume. It is called also agalwood and aloes wood. The name is also given to some other species.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agallochum": {
       "word": "AGALLOCH; AGALLOCHUM",
       "definitions": [
         {
@@ -361,6 +395,16 @@
       "definitions": [
         {
           "text": "Reproduction without the union of parents of distinct sexes: asexual reproduction.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agamogenetic": {
+      "word": "AGAMOGENETIC",
+      "definitions": [
+        {
+          "text": "Reproducing or produced without sexual union. All known agamogenetic processes end in a complete return to the primitive stock. Huxley.",
           "partOfSpeech": "noun"
         }
       ],
@@ -693,19 +737,122 @@
         {
           "text": "See Aghast.",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "agastaghast": {
-      "word": "AGAST; AGHAST",
-      "definitions": [
+        },
         {
           "text": "To affright; to terrify. [Obs.] Chaucer. Spenser.",
           "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
+    },
+    "aghast": {
+      "word": "AGAST; AGHAST",
+      "definitions": [
+        {
+          "text": "To affright; to terrify. [Obs.] Chaucer. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Agast, v. t. [Obs.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Terrified; struck with amazement; showing signs of terror or horror. Aghast he waked; and, starting from his bed, Cold sweat in clammy drops his limbs o'erspread. Dryden. The commissioners read and stood aghast. Macaulay.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "afraid",
+        "agape",
+        "agog",
+        "all agog",
+        "amazed",
+        "anxious",
+        "appalled",
+        "ashen",
+        "astonished",
+        "astounded",
+        "at gaze",
+        "awed",
+        "awestricken",
+        "awestruck",
+        "beguiled",
+        "bewildered",
+        "bewitched",
+        "blanched",
+        "breathless",
+        "captivated",
+        "confounded",
+        "cowed",
+        "deadly pale",
+        "dismayed",
+        "dumbfounded",
+        "dumbstruck",
+        "enchanted",
+        "enraptured",
+        "enravished",
+        "enthralled",
+        "entranced",
+        "fascinated",
+        "fearful",
+        "flabbergasted",
+        "frightened",
+        "frozen",
+        "gaping",
+        "gauping",
+        "gazing",
+        "gray with fear",
+        "horrified",
+        "horror-struck",
+        "hypnotized",
+        "in awe",
+        "in awe of",
+        "intimidated",
+        "lost in wonder",
+        "marveling",
+        "mesmerized",
+        "open-eyed",
+        "openmouthed",
+        "overwhelmed",
+        "pale as death",
+        "pallid",
+        "paralyzed",
+        "petrified",
+        "popeyed",
+        "puzzled",
+        "rapt in wonder",
+        "scared",
+        "scared stiff",
+        "scared to death",
+        "scary",
+        "shocked",
+        "spellbound",
+        "staggered",
+        "staring",
+        "startled",
+        "stunned",
+        "stupefied",
+        "surprised",
+        "taken aback",
+        "terrified",
+        "terror-crazed",
+        "terror-haunted",
+        "terror-ridden",
+        "terror-riven",
+        "terror-shaken",
+        "terror-smitten",
+        "terror-struck",
+        "terror-troubled",
+        "thunderstruck",
+        "under a charm",
+        "undone",
+        "unmanned",
+        "unnerved",
+        "unstrung",
+        "wide-eyed",
+        "wonder-struck",
+        "wondering"
+      ]
     },
     "agastric": {
       "word": "AGASTRIC",
@@ -1859,11 +2006,23 @@
         {
           "text": "A mass of angular volcanic fragments united by heat; -- distinguished from conglomerate.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Collected into a ball, heap, or mass.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Collected into a rounded head of flowers.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "agglomerateagglomerated": {
+    "agglomerated": {
       "word": "AGGLOMERATE; AGGLOMERATED",
       "definitions": [
         {
@@ -3334,7 +3493,7 @@
       "word": "AGGRESSIVE",
       "definitions": [
         {
-          "text": "Tending or disposed to aggress; characterized by aggression;",
+          "text": "Tending or disposed to aggress; characterized by aggression; making assaults; unjustly attacking; as, an aggressive policy, war, person, nation. -- Ag*gres\"sive*ly, adv. -- Ag*gres\"sive*ness, n. No aggressive movement was made. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3626,7 +3785,7 @@
       ],
       "relatedWords": []
     },
-    "aggryaggri": {
+    "aggry": {
       "word": "AGGRY; AGGRI",
       "definitions": [
         {
@@ -3636,110 +3795,15 @@
       ],
       "relatedWords": []
     },
-    "aghast": {
-      "word": "AGHAST",
+    "aggri": {
+      "word": "AGGRY; AGGRI",
       "definitions": [
         {
-          "text": "See Agast, v. t. [Obs.]",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Terrified; struck with amazement; showing signs of terror or horror. Aghast he waked; and, starting from his bed, Cold sweat in clammy drops his limbs o'erspread. Dryden. The commissioners read and stood aghast. Macaulay.",
-          "partOfSpeech": ""
+          "text": "Applied to a kind of variegated glass beads of ancient manufacture; as, aggry beads are found in Ashantee and Fantee in Africa.",
+          "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": [
-        "afraid",
-        "agape",
-        "agog",
-        "all agog",
-        "amazed",
-        "anxious",
-        "appalled",
-        "ashen",
-        "astonished",
-        "astounded",
-        "at gaze",
-        "awed",
-        "awestricken",
-        "awestruck",
-        "beguiled",
-        "bewildered",
-        "bewitched",
-        "blanched",
-        "breathless",
-        "captivated",
-        "confounded",
-        "cowed",
-        "deadly pale",
-        "dismayed",
-        "dumbfounded",
-        "dumbstruck",
-        "enchanted",
-        "enraptured",
-        "enravished",
-        "enthralled",
-        "entranced",
-        "fascinated",
-        "fearful",
-        "flabbergasted",
-        "frightened",
-        "frozen",
-        "gaping",
-        "gauping",
-        "gazing",
-        "gray with fear",
-        "horrified",
-        "horror-struck",
-        "hypnotized",
-        "in awe",
-        "in awe of",
-        "intimidated",
-        "lost in wonder",
-        "marveling",
-        "mesmerized",
-        "open-eyed",
-        "openmouthed",
-        "overwhelmed",
-        "pale as death",
-        "pallid",
-        "paralyzed",
-        "petrified",
-        "popeyed",
-        "puzzled",
-        "rapt in wonder",
-        "scared",
-        "scared stiff",
-        "scared to death",
-        "scary",
-        "shocked",
-        "spellbound",
-        "staggered",
-        "staring",
-        "startled",
-        "stunned",
-        "stupefied",
-        "surprised",
-        "taken aback",
-        "terrified",
-        "terror-crazed",
-        "terror-haunted",
-        "terror-ridden",
-        "terror-riven",
-        "terror-shaken",
-        "terror-smitten",
-        "terror-struck",
-        "terror-troubled",
-        "thunderstruck",
-        "under a charm",
-        "undone",
-        "unmanned",
-        "unnerved",
-        "unstrung",
-        "wide-eyed",
-        "wonder-struck",
-        "wondering"
-      ]
+      "relatedWords": []
     },
     "agible": {
       "word": "AGIBLE",
@@ -4468,7 +4532,7 @@
       ],
       "relatedWords": []
     },
-    "agletaiglet": {
+    "aglet": {
       "word": "AGLET; AIGLET",
       "definitions": [
         {
@@ -4654,7 +4718,17 @@
       ],
       "relatedWords": []
     },
-    "agminateagminated": {
+    "agminate": {
+      "word": "AGMINATE; AGMINATED",
+      "definitions": [
+        {
+          "text": "Grouped together; as, the agminated glands of Peyer in the small intestine.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agminated": {
       "word": "AGMINATE; AGMINATED",
       "definitions": [
         {
@@ -4843,7 +4917,7 @@
       "word": "AGNOSTIC",
       "definitions": [
         {
-          "text": "Professing ignorance; involving no dogmatic; pertaining to or",
+          "text": "Professing ignorance; involving no dogmatic; pertaining to or involving agnosticism.",
           "partOfSpeech": "adjective"
         },
         {
@@ -5317,7 +5391,17 @@
       ],
       "relatedWords": []
     },
-    "agonisticagonistical": {
+    "agonistic": {
+      "word": "AGONISTIC; AGONISTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to violent contests, bodily or mental; pertaining to athletic or polemic feats; athletic; combative; hence, strained; unnatural. As a scholar, he [Dr. Parr] was brilliant, but he consumed his power in agonistic displays. De Quincey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agonistical": {
       "word": "AGONISTIC; AGONISTICAL",
       "definitions": [
         {
@@ -5713,7 +5797,17 @@
       ],
       "relatedWords": []
     },
-    "agoutiagouty": {
+    "agouti": {
+      "word": "AGOUTI; AGOUTY",
+      "definitions": [
+        {
+          "text": "A rodent of the genus Dasyprocta, about the size of a rabbit, peculiar to South America and the West Indies. The most common species is the Dasyprocta agouti.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agouty": {
       "word": "AGOUTI; AGOUTY",
       "definitions": [
         {
@@ -5854,7 +5948,7 @@
       ],
       "relatedWords": []
     },
-    "agreagree": {
+    "agre": {
       "word": "AGRE; AGREE",
       "definitions": [
         {
@@ -5865,8 +5959,12 @@
       "relatedWords": []
     },
     "agree": {
-      "word": "AGREE",
+      "word": "AGRE; AGREE",
       "definitions": [
+        {
+          "text": "In good part; kindly. [Obs.] Rom. of R.",
+          "partOfSpeech": "adverb"
+        },
         {
           "text": "To harmonize in opinion, statement, or action; to be in unison or concord; to be or become united or consistent; to concur; as, all parties agree in the expediency of the law. If music and sweet poetry agree. Shak. Their witness agreed not together. Mark xiv. 56. The more you agree together, the less hurt can your enemies do you. Sir T. Browne.",
           "partOfSpeech": "verb"
@@ -6911,7 +7009,7 @@
       "word": "AGRICULTURAL",
       "definitions": [
         {
-          "text": "Of or pertaining to agriculture; connected with, or engaged in, tillage; as, the agricultural class; agricultural implements, wages,",
+          "text": "Of or pertaining to agriculture; connected with, or engaged in, tillage; as, the agricultural class; agricultural implements, wages, etc. ant which gathers and stores seeds of grasses, for food. The remarkable species (Myrmica barbata) found in Texas clears circular areas and carefully cultivates its favorite grain, known as ant rice.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7094,7 +7192,17 @@
       ],
       "relatedWords": []
     },
-    "agronomicagronomical": {
+    "agronomic": {
+      "word": "AGRONOMIC; AGRONOMICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to agronomy, of the management of farms.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "agronomical": {
       "word": "AGRONOMIC; AGRONOMICAL",
       "definitions": [
         {
@@ -7229,7 +7337,17 @@
       ],
       "relatedWords": []
     },
-    "agrostographicagrostographical": {
+    "agrostographic": {
+      "word": "AGROSTOGRAPHIC; AGROSTOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to agrostography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agrostographical": {
       "word": "AGROSTOGRAPHIC; AGROSTOGRAPHICAL",
       "definitions": [
         {
@@ -7249,7 +7367,17 @@
       ],
       "relatedWords": []
     },
-    "agrostologicagrostological": {
+    "agrostologic": {
+      "word": "AGROSTOLOGIC; AGROSTOLOGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to agrostology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "agrostological": {
       "word": "AGROSTOLOGIC; AGROSTOLOGICAL",
       "definitions": [
         {

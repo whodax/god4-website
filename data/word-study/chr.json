@@ -680,7 +680,7 @@
       "word": "CHRISTIAN SCIENCE",
       "definitions": [
         {
-          "text": "A system of healing disease of mind and body which teaches that all cause and effect is mental, and that sin, sickness, and death will be destroyed by a full understanding of the Divine Principle of",
+          "text": "A system of healing disease of mind and body which teaches that all cause and effect is mental, and that sin, sickness, and death will be destroyed by a full understanding of the Divine Principle of Jesus' teaching and healing. The system was founded by Rev. Mary Baker Glover Eddy, of Concord, N. H., in 1866, and bases its teaching on the Scriptures as understood by its adherents.",
           "partOfSpeech": ""
         }
       ],
@@ -725,6 +725,81 @@
         }
       ],
       "relatedWords": []
+    },
+    "christlike": {
+      "word": "CHRISTLIKE",
+      "definitions": [
+        {
+          "text": "Resembling Christ in character, actions, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Christian",
+        "Christly",
+        "God-fearing",
+        "affectionate",
+        "angelic",
+        "benign",
+        "benignant",
+        "brotherly",
+        "celestial",
+        "compassionate",
+        "decent",
+        "divine",
+        "empyrean",
+        "fraternal",
+        "godlike",
+        "godly",
+        "godly-minded",
+        "good",
+        "gracious",
+        "heavenly",
+        "holy",
+        "holy-minded",
+        "human",
+        "humane",
+        "incarnate",
+        "incarnated",
+        "intercessional",
+        "intercessive",
+        "kind",
+        "kindhearted",
+        "kindly",
+        "kindly-disposed",
+        "loving",
+        "made flesh",
+        "mediative",
+        "mediatory",
+        "nice",
+        "otherworldly",
+        "propitiative",
+        "propitiatory",
+        "pure",
+        "pure in heart",
+        "purehearted",
+        "redemptive",
+        "righteous",
+        "saintlike",
+        "saintly",
+        "salvational",
+        "self-existent",
+        "seraphic",
+        "softhearted",
+        "spiritual",
+        "spiritual-minded",
+        "superhuman",
+        "supernatural",
+        "sympathetic",
+        "sympathizing",
+        "tender",
+        "tenderhearted",
+        "transcendent",
+        "unearthly",
+        "unworldly",
+        "warm",
+        "warmhearted"
+      ]
     },
     "christly": {
       "word": "CHRISTLY",
@@ -1317,6 +1392,16 @@
       ],
       "relatedWords": []
     },
+    "chromophotograph": {
+      "word": "CHROMOPHOTOGRAPH",
+      "definitions": [
+        {
+          "text": "A picture made by any of the processes for reproducing photographs in colors. --Chro`mo*pho`to*graph\"ic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "chromophotography": {
       "word": "CHROMOPHOTOGRAPHY",
       "definitions": [
@@ -1804,7 +1889,17 @@
       ],
       "relatedWords": []
     },
-    "chronogrammaticchronogrammatical": {
+    "chronogrammatic": {
+      "word": "CHRONOGRAMMATIC; CHRONOGRAMMATICAL",
+      "definitions": [
+        {
+          "text": "Belonging to a chronogram, or containing one.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chronogrammatical": {
       "word": "CHRONOGRAMMATIC; CHRONOGRAMMATICAL",
       "definitions": [
         {
@@ -1878,21 +1973,64 @@
         {
           "text": "Same as Chronologist.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A person who investigates dates of events and transactions; one skilled in chronology. That learned noise and dust of the chronologist is wholly to be avoided. Locke. THe most exact chronologers tell us that Christ was born in October, and not in December. John Knox.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "chronologicchronological": {
+    "chronologic": {
       "word": "CHRONOLOGIC; CHRONOLOGICAL",
       "definitions": [
         {
-          "text": "Relating to chronology; containing an account of events in the order of time; according to the order of time; as, chronological",
+          "text": "Relating to chronology; containing an account of events in the order of time; according to the order of time; as, chronological tables. Raleigh.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "chronologistchronologer": {
+    "chronological": {
+      "word": "CHRONOLOGIC; CHRONOLOGICAL",
+      "definitions": [
+        {
+          "text": "Relating to chronology; containing an account of events in the order of time; according to the order of time; as, chronological tables. Raleigh.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "annalistic",
+        "autobiographical",
+        "biographical",
+        "calendarial",
+        "calendric",
+        "chronogrammatic",
+        "chronographic",
+        "chronologic",
+        "chronoscopic",
+        "continuous",
+        "dated",
+        "diaristic",
+        "durational",
+        "durative",
+        "hagiographic",
+        "historic",
+        "historied",
+        "historiographic",
+        "horologic",
+        "intercalary",
+        "intercalated",
+        "lasting",
+        "legendary",
+        "martyrologic",
+        "metronomic",
+        "temporal",
+        "timekeeping",
+        "traditional"
+      ]
+    },
+    "chronologist": {
       "word": "CHRONOLOGIST; CHRONOLOGER",
       "definitions": [
         {
@@ -2043,7 +2181,17 @@
         "watchworks"
       ]
     },
-    "chronometricchronometrical": {
+    "chronometric": {
+      "word": "CHRONOMETRIC; CHRONOMETRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a chronometer; measured by a chronometer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chronometrical": {
       "word": "CHRONOMETRIC; CHRONOMETRICAL",
       "definitions": [
         {
@@ -2077,7 +2225,7 @@
       "word": "CHRONOPHOTOGRAPH",
       "definitions": [
         {
-          "text": "One of a set of photographs of a moving object, taken for the",
+          "text": "One of a set of photographs of a moving object, taken for the purpose of recording and exhibiting successive phases of the motion.",
           "partOfSpeech": "noun"
         }
       ],

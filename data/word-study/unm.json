@@ -131,6 +131,10 @@
         {
           "text": "Not mannerly; ill-bred; rude.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Uncivilly; rudely.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -217,7 +221,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not indicating intelligence or sense; senseless; expressionless; as, an unmeaning face.",
+          "text": "Not indicating intelligence or sense; senseless; expressionless; as, an unmeaning face. There pride sits blazoned on the unmeaning brow. Trumbull.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -228,6 +232,16 @@
       "definitions": [
         {
           "text": "Not meant or intended; unintentional. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unmeasurable": {
+      "word": "UNMEASURABLE",
+      "definitions": [
+        {
+          "text": "Immeasurable. Swift.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -257,7 +271,7 @@
       "word": "UNMEET",
       "definitions": [
         {
-          "text": "Not meet or fit; not proper; unbecoming; unsuitable; -- usually followed by for. \"Unmeet for a wife.\" Tennyson.",
+          "text": "Not meet or fit; not proper; unbecoming; unsuitable; -- usually followed by for. \"Unmeet for a wife.\" Tennyson. And all unmeet our carpet floors. Emerson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -307,7 +321,7 @@
       "word": "UNMERCIFUL",
       "definitions": [
         {
-          "text": "Not merciful; indisposed to mercy or grace; cruel; inhuman;",
+          "text": "Not merciful; indisposed to mercy or grace; cruel; inhuman; merciless; unkind.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -347,13 +361,13 @@
       "word": "UNMISTAKABLE",
       "definitions": [
         {
-          "text": "Incapable of being mistaken or misunderstood; clear; plain;",
+          "text": "Incapable of being mistaken or misunderstood; clear; plain; obvious; evident.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "unmiterunmitre": {
+    "unmiter": {
       "word": "UNMITER; UNMITRE",
       "definitions": [
         {
@@ -363,7 +377,17 @@
       ],
       "relatedWords": []
     },
-    "unmoldunmould": {
+    "unmitre": {
+      "word": "UNMITER; UNMITRE",
+      "definitions": [
+        {
+          "text": "To deprive of a miter; to depose or degrade from the rank of a bishop. Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unmold": {
       "word": "UNMOLD; UNMOULD",
       "definitions": [
         {
@@ -407,7 +431,7 @@
       "word": "UNMORAL",
       "definitions": [
         {
-          "text": "Having no moral perception, quality, or relation; involving no",
+          "text": "Having no moral perception, quality, or relation; involving no idea of morality; -- distinguished from both moral and immoral.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -463,6 +487,16 @@
       ],
       "relatedWords": []
     },
+    "unmould": {
+      "word": "UNMOLD; UNMOULD",
+      "definitions": [
+        {
+          "text": "To change the form of; to reduce from any form. \"Unmolding reason's mintage.\" Milton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "unmovable": {
       "word": "UNMOVABLE",
       "definitions": [
@@ -479,6 +513,16 @@
         {
           "text": "Immovably. [R.] J. Ellis.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unmoved": {
+      "word": "UNMOVED",
+      "definitions": [
+        {
+          "text": "Not moved; fixed; firm; unshaken; calm; apathetic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

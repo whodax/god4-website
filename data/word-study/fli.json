@@ -507,20 +507,6 @@
       ],
       "relatedWords": []
     },
-    "flictumtostriketogethertofightcffconflitformerlyalso": {
-      "word": "flictum, to strike together, to fight: cf. F. conflit, formerly also",
-      "definitions": [
-        {
-          "text": "A striking or dashing together; violent collision; as, a conflict of elements or waves.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A strife for the mastery; hostile contest; battle; struggle; fighting. As soon as he [Atterbury] was himself again, he became eager for action and conflict. Macaulay. An irrepressible conflict between opposing and enduring forces. W. H. Seward. Conflict of laws, that branch of jurisprudence which deals with individual litigation claimed to be subject to the conflicting laws of two or more states or nations; -- often used as synonymous with Private international law. battle; fight; encounter. See Contest.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "flidge": {
       "word": "FLIDGE",
       "definitions": [
@@ -2959,7 +2945,15 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "A sudden jerk; a quick throw or cast; a darting motion; hence, a jeer. Several little flirts and vibrations. Addison.",
+          "text": "A sudden jerk; a quick throw or cast; a darting motion; hence, a jeer. Several little flirts and vibrations. Addison. With many a flirt and flutter. E. A. Poe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. LG. flirtje, G. flirtchen. See Flirt, v. t.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who flirts; esp., a woman who acts with giddiness, or plays at courtship; a coquette; a pert girl. Several young flirts about town had a design to cast us out of the fashionable world. Addison.",
           "partOfSpeech": "noun"
         },
         {
@@ -3566,19 +3560,31 @@
         "zoom"
       ]
     },
+    "flitch": {
+      "word": "FLITCH",
+      "definitions": [
+        {
+          "text": "The side of a hog salted and cured; a side of bacon. Swift.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of several planks, smaller timbers, or iron plates, which are secured together, side by side, to make a large girder or built beam.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The outside piece of a sawed log; a slab. [Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "flite": {
       "word": "FLITE",
       "definitions": [
         {
           "text": "To scold; to quarrel. [Prov. Eng.] Grose.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "fliteflyte": {
-      "word": "FLITE; FLYTE",
-      "definitions": [
+        },
         {
           "text": "Strife; dispute; abusive or upbraiding talk, as in fliting; wrangling. [Obs. or Scot. & Prov. Eng.] The bird of Pallas has also a good \"flyte\" on the moral side . . . in his suggestion that the principal effect of the nightingale's song is to make women false to their husbands. Saintsbury.",
           "partOfSpeech": "noun"
@@ -3673,6 +3679,10 @@
         },
         {
           "text": "A removal from one habitation to another. [Scot. & Prov. Eng.] A neighbor had lent his cart for the flitting, and it was now standing loaded at the door, ready to move away. Jeffrey.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Contention; strife; scolding; specif., a kind of metrical contest between two persons, popular in Scotland in the 16th century. [Obs. or Scot.] These \"flytings\" consisted of alternate torrents of sheer Billingsgate poured upon each other by the combatants. Saintsbury.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3814,16 +3824,6 @@
         "winging",
         "wishy-washy"
       ]
-    },
-    "flittingflytting": {
-      "word": "FLITTING; FLYTTING",
-      "definitions": [
-        {
-          "text": "Contention; strife; scolding; specif., a kind of metrical contest between two persons, popular in Scotland in the 16th century. [Obs. or Scot.] These \"flytings\" consisted of alternate torrents of sheer Billingsgate poured upon each other by the combatants. Saintsbury.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
     },
     "flittingly": {
       "word": "FLITTINGLY",

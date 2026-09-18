@@ -5,6 +5,10 @@
       "word": "CHEAP",
       "definitions": [
         {
+          "text": "A bargain; a purchase; cheapness. [Obs.] The sack that thou hast drunk me would have bought me lights as good cheap at the dearest chandler's in Europe. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Having a low price in market; of small cost or price, as compared with the usual price or the real value. Where there are a great sellers to a few buyers, there the thing to be sold will be cheap. Locke.",
           "partOfSpeech": "adjective"
         },
@@ -183,7 +187,15 @@
       "word": "CHEAPEN",
       "definitions": [
         {
-          "text": "To ask the price of; to bid, bargain, or chaffer for. [Obsoles.]",
+          "text": "To ask the price of; to bid, bargain, or chaffer for. [Obsoles.] Pretend to cheapen goods, but nothing buy. Swift.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Etym: [Cf. Cheap, a.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To beat down the price of; to lessen the value of; to depreciate. Pope. My proffered love has cheapened me. Dryden.",
           "partOfSpeech": "verb"
         }
       ],
@@ -276,7 +288,17 @@
       ],
       "relatedWords": []
     },
-    "cheapjackcheapjohn": {
+    "cheapjack": {
+      "word": "CHEAP-JACK; CHEAP-JOHN",
+      "definitions": [
+        {
+          "text": "A seller of low-priced or second goods; a hawker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheapjohn": {
       "word": "CHEAP-JACK; CHEAP-JOHN",
       "definitions": [
         {
@@ -3184,6 +3206,106 @@
       ],
       "relatedWords": []
     },
+    "cheerless": {
+      "word": "CHEERLESS",
+      "definitions": [
+        {
+          "text": "Without joy, gladness, or comfort. My cheerful day is turned to cheerles night. Spenser. melancholy; forlorn.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "affecting",
+        "afflictive",
+        "affording no hope",
+        "anguished",
+        "anxious",
+        "apathetic",
+        "bitter",
+        "bleak",
+        "bored",
+        "comfortless",
+        "deplorable",
+        "depressed",
+        "depressing",
+        "depressive",
+        "despairing",
+        "desperate",
+        "despondent",
+        "discomforting",
+        "disconsolate",
+        "discontented",
+        "disgusted",
+        "dismal",
+        "dismaying",
+        "dispiriting",
+        "distressful",
+        "distressing",
+        "dolorific",
+        "dolorogenic",
+        "dolorous",
+        "dreary",
+        "forlorn",
+        "funereal",
+        "grievous",
+        "grim",
+        "hopeless",
+        "humorless",
+        "in bad humor",
+        "in despair",
+        "infestive",
+        "joyless",
+        "lamentable",
+        "mirthless",
+        "miserable",
+        "mournful",
+        "moving",
+        "nauseated",
+        "nauseous",
+        "oppressive",
+        "out of humor",
+        "out of sorts",
+        "painful",
+        "pathetic",
+        "piteous",
+        "pitiable",
+        "pleasureless",
+        "poignant",
+        "prey to malaise",
+        "regrettable",
+        "repelled",
+        "revolted",
+        "rueful",
+        "sad",
+        "saddening",
+        "sharp",
+        "sickened",
+        "somber",
+        "sore",
+        "sorrowful",
+        "sorry",
+        "sorryish",
+        "suffering angst",
+        "touching",
+        "uncheerful",
+        "uncheery",
+        "uncomfortable",
+        "uneasy",
+        "unfulfilled",
+        "ungratified",
+        "unhappy",
+        "unhopeful",
+        "unjoyful",
+        "unmirthful",
+        "unquiet",
+        "unsatisfied",
+        "unsmiling",
+        "without hope",
+        "woebegone",
+        "woeful",
+        "wretched"
+      ]
+    },
     "cheerly": {
       "word": "CHEERLY",
       "definitions": [
@@ -3799,7 +3921,17 @@
       ],
       "relatedWords": []
     },
-    "chegoechegre": {
+    "chegoe": {
+      "word": "CHEGOE; CHEGRE",
+      "definitions": [
+        {
+          "text": "See Chigoe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chegre": {
       "word": "CHEGOE; CHEGRE",
       "definitions": [
         {
@@ -3864,6 +3996,16 @@
       "definitions": [
         {
           "text": "The typical pentadactyloid limb of the higher vertebrates.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cheirosophy": {
+      "word": "CHEIROSOPHY",
+      "definitions": [
+        {
+          "text": "The art of reading character as it is delineated in the hand.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4266,7 +4408,7 @@
       "word": "CHEMIGRAPHY",
       "definitions": [
         {
-          "text": "Any mechanical engraving process depending upon chemical",
+          "text": "Any mechanical engraving process depending upon chemical action; specif., a process of zinc etching not employing photography.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4277,6 +4419,16 @@
       "definitions": [
         {
           "text": "A garment for women, consisting of chemise and drawers united in one. [U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chemiotaxis": {
+      "word": "CHEMOTAXIS; CHEMIOTAXIS",
+      "definitions": [
+        {
+          "text": "The sensitiveness exhibited by small free-swimming organisms, as bacteria, zoöspores of algæ, etc., to chemical substances held in solution. They may be attracted (positive chemotaxis) or repelled (negative chemotaxis). -- Chem`o*tac\"tic (#), a. -- Chem`o*tac\"tic*al*ly, adv.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4463,6 +4615,16 @@
       ],
       "relatedWords": []
     },
+    "chemosis": {
+      "word": "CHEMOSIS",
+      "definitions": [
+        {
+          "text": "Inflammatory swelling of the conjunctival tissue surrounding the cornea. --Che*mot\"ic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "chemosmosis": {
       "word": "CHEMOSMOSIS",
       "definitions": [
@@ -4487,17 +4649,17 @@
       "word": "CHEMOSYNTHESIS",
       "definitions": [
         {
-          "text": "Synthesis of organic compounds by energy derived from chemical changes or reactions. Chemosynthesis of carbohydrates occurs in the nitrite bacteria through the oxidation of ammonia to nitrous acid,",
+          "text": "Synthesis of organic compounds by energy derived from chemical changes or reactions. Chemosynthesis of carbohydrates occurs in the nitrite bacteria through the oxidation of ammonia to nitrous acid, and in the nitrate bacteria through the conversion of nitrous into nitric acid. -- Chem`o*syn*thet\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "chemotaxischemiotaxis": {
+    "chemotaxis": {
       "word": "CHEMOTAXIS; CHEMIOTAXIS",
       "definitions": [
         {
-          "text": "The sensitiveness exhibited by small free-swimming organisms, as bacteria, zoöspores of algæ, etc., to chemical substances held in",
+          "text": "The sensitiveness exhibited by small free-swimming organisms, as bacteria, zoöspores of algæ, etc., to chemical substances held in solution. They may be attracted (positive chemotaxis) or repelled (negative chemotaxis). -- Chem`o*tac\"tic (#), a. -- Chem`o*tac\"tic*al*ly, adv.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4941,7 +5103,17 @@
         "wee tot"
       ]
     },
-    "cherubiccherubical": {
+    "cherubic": {
+      "word": "CHERUBIC; CHERUBICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to cherubs; angelic. \"The cherubic host.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cherubical": {
       "word": "CHERUBIC; CHERUBICAL",
       "definitions": [
         {

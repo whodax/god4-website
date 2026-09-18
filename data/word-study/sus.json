@@ -23,7 +23,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Capable of impression; having nice sensibility; impressible; tender; sensitive; as, children are more susceptible than adults; a man of a susceptible heart. Candidates are . . . not very susceptible of affronts. Cowper.",
+          "text": "Capable of impression; having nice sensibility; impressible; tender; sensitive; as, children are more susceptible than adults; a man of a susceptible heart. Candidates are . . . not very susceptible of affronts. Cowper. I am constitutionally susceptible of noises. Lamb.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -35,6 +35,16 @@
         {
           "text": "The act of taking; reception.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "susceptive": {
+      "word": "SUSCEPTIVE",
+      "definitions": [
+        {
+          "text": "Susceptible. I. Watts.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -175,6 +185,16 @@
       ],
       "relatedWords": []
     },
+    "suspected": {
+      "word": "SUSPECTED",
+      "definitions": [
+        {
+          "text": "Distrusted; doubted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "suspecter": {
       "word": "SUSPECTER",
       "definitions": [
@@ -189,7 +209,7 @@
       "word": "SUSPECTFUL",
       "definitions": [
         {
-          "text": "Apt to suspect or mistrust; full of suspicion; suspicious; as,",
+          "text": "Apt to suspect or mistrust; full of suspicion; suspicious; as, to be suspectful of the motives of others. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -232,6 +252,38 @@
     "suspend": {
       "word": "SUSPEND",
       "definitions": [
+        {
+          "text": "To attach to something above; to hang; as, to suspend a ball by a thread; to suspend a needle by a loadstone.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make to depend; as, God hath suspended the promise of eternal life on the condition of obedience and holiness of life. [Archaic] Tillotson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to cease for a time; to hinder from proceeding; to interrupt; to delay; to stay. Suspend your indignation against my brother. Shak. The guard nor fights nor fies; their fate so near At once suspends their courage and their fear. Denham.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hold in an undetermined or undecided state; as, to suspend one's judgment or opinion. Locke.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To debar, or cause to withdraw temporarily, from any privilege, from the execution of an office, from the enjoyment of income, etc.; as, to suspend a student from college; to suspend a member of a club. Good men should not be suspended from the exercise of their ministry and deprived of their livelihood for ceremonies which are on all hands acknowledged indifferent. Bp. Sanderson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to cease for a time from operation or effect; as, to suspend the habeas corpus act; to suspend the rules of a legislative body.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To support in a liquid, as an insoluble powder, by stirring, to facilitate chemical action. To suspend payment (Com.), to cease paying debts or obligations; to fail; -- said of a merchant, a bank, etc.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To cease from operation or activity; esp., to stop payment, or be unable to meet obligations or engagements (said of a commercial firm or a bank).",
           "partOfSpeech": "verb"
@@ -483,7 +535,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Liable to suspicion; adapted to raise suspicion; giving reason to imagine ill; questionable; as, an author of suspicious innovations; suspicious circumstances. I spy a black, suspicious, threatening could. Shak.",
+          "text": "Liable to suspicion; adapted to raise suspicion; giving reason to imagine ill; questionable; as, an author of suspicious innovations; suspicious circumstances. I spy a black, suspicious, threatening could. Shak. Jealous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -711,7 +763,17 @@
       ],
       "relatedWords": []
     },
-    "sustersustre": {
+    "suster": {
+      "word": "SUSTER; SUSTRE",
+      "definitions": [
+        {
+          "text": "Sister. [Obs.] Chaucer. There are seven sustren, that serve truth ever. Piers Plowman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sustre": {
       "word": "SUSTER; SUSTRE",
       "definitions": [
         {

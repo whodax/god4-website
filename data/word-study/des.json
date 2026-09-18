@@ -1030,24 +1030,6 @@
         "youngsters"
       ]
     },
-    "descorderdiscorderfdiscordertodiscordldiscordarefrom": {
-      "word": "descorder, discorder, F. discorder, to discord, L. discordare, from",
-      "definitions": [
-        {
-          "text": "Want of concord or agreement; absence of unity or harmony in sentiment or action; variance leading to contention and strife; disagreement; -- applied to persons or to things, and to thoughts, feelings, or purposes. A false witness that speaketh lies, and he that soweth discord among brethren. Prov. vi. 19. Peace to arise out of universal discord fomented in all parts of the empire. Burke.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Union of musical sounds which strikes the ear harshly or disagreeably, owing to the incommensurability of the vibrations which they produce; want of musical concord or harmony; a chord demanding resolution into a concord. For a discord itself is but a harshness of divers sounds mBacon. Apple of discord. See under Apple. dissension; contention; strife; disagreement; dissonance.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "describable": {
       "word": "DESCRIBABLE",
       "definitions": [
@@ -1274,7 +1256,7 @@
       "word": "DESCRIPTIVE",
       "definitions": [
         {
-          "text": "Tending to describe; having the quality of representing; containing description; as, a descriptive figure; a descriptive phrase; a descriptive narration; a story descriptive of the age. Descriptive anatomy, that part of anatomy which treats of the forms and relations of parts, but not of their textures. the graphic solution of problems involving three dimensions, by means",
+          "text": "Tending to describe; having the quality of representing; containing description; as, a descriptive figure; a descriptive phrase; a descriptive narration; a story descriptive of the age. Descriptive anatomy, that part of anatomy which treats of the forms and relations of parts, but not of their textures. the graphic solution of problems involving three dimensions, by means of projections upon auxiliary planes. Davies & Peck (Math. Dict. ) -- De*scrip\"tive*ly, adv.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2084,7 +2066,17 @@
       ],
       "relatedWords": []
     },
-    "desertrixdesertrice": {
+    "desertrice": {
+      "word": "DESERTRIX; DESERTRICE",
+      "definitions": [
+        {
+          "text": "A feminine deserter. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "desertrix": {
       "word": "DESERTRIX; DESERTRICE",
       "definitions": [
         {
@@ -2148,6 +2140,10 @@
         {
           "text": "Desert; merit. A person of great deservings from the republic. Swift.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Meritorious; worthy; as, a deserving or act.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -2481,7 +2477,17 @@
         "wish"
       ]
     },
-    "desidiosedesidious": {
+    "desidiose": {
+      "word": "DESIDIOSE; DESIDIOUS",
+      "definitions": [
+        {
+          "text": "Idle; lazy. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "desidious": {
       "word": "DESIDIOSE; DESIDIOUS",
       "definitions": [
         {
@@ -3551,16 +3557,6 @@
       ],
       "relatedWords": []
     },
-    "designwhichisprintedinpartsasinchromolithographicprinting": {
-      "word": "design which is printed in parts, as in chromolithographic printing,",
-      "definitions": [
-        {
-          "text": "(Mus.) (a) The compass of a voice or instrument; a specified portion of the compass of a voice, or a series of vocal tones of a given compass; as, the upper, middle, or lower register; the soprano register; the tenor register. extends below from the F on the lower space of the treble staff. The thin register extends an octave above this. The small register is above the thin. The voice in the thick register is called the chest voice; in the thin, the head voice. Falsetto is a kind off voice, of a thin, shrull quality, made by using the mechanism of the upper thin register for tones below the proper limit on the scale. E. Behnke. (b) A stop or set of pipes in an organ. Parish register, A book in which are recorded the births, baptisms, marriages, deaths, and burials in a parish. List.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "desilver": {
       "word": "DESILVER",
       "definitions": [
@@ -4140,16 +4136,6 @@
         "yen"
       ]
     },
-    "desiredgaarnegladlywillinglyggernohggernoadvgern": {
-      "word": "desire, D. gaarne gladly, willingly, G. gern, OHG. gerno, adv., gern,",
-      "definitions": [
-        {
-          "text": "To be filled with longing desire; to be harassed or rendered uneasy with longing, or feeling the want of a thing; to strain with emotions of affection or tenderness; to long; to be eager. Joseph made haste; for his bowels did yearn upon his brother; and he sought where to weep. Gen. xliii. 30. Your mother's heart yearns towards you. Addison.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "desireful": {
       "word": "DESIREFUL",
       "definitions": [
@@ -4471,7 +4457,17 @@
       ],
       "relatedWords": []
     },
-    "desmiddesmidian": {
+    "desmid": {
+      "word": "DESMID; DESMIDIAN",
+      "definitions": [
+        {
+          "text": "A microscopic plant of the family Desmidiæ, a group of unicellular algæ in which the species have a greenish color, and the cells generally appear as if they consisted of two coalescing halves.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "desmidian": {
       "word": "DESMID; DESMIDIAN",
       "definitions": [
         {
@@ -5129,6 +5125,16 @@
       "definitions": [
         {
           "text": "Hopeless. [Obs.] Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "despairing": {
+      "word": "DESPAIRING",
+      "definitions": [
+        {
+          "text": "Feeling or expressing despair; hopeless.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6050,7 +6056,7 @@
       "word": "DESPITEFUL",
       "definitions": [
         {
-          "text": "Full of despite; expressing malice or contemptuous hate;",
+          "text": "Full of despite; expressing malice or contemptuous hate; malicious. Haters of God, despiteful, proud, boasters. Rom. i. 30. Pray for them which despitefully use you. Matt. v. 44. Let us examine him with despitefulness and fortune. Book of Wisdom ii. 19.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6113,7 +6119,7 @@
       "word": "DESPITOUS",
       "definitions": [
         {
-          "text": "Despiteous; very angry; cruel. [Obs.]",
+          "text": "Despiteous; very angry; cruel. [Obs.] He was to sinful man not despitous. Chaucer. - De*spit\"ous*ly, adv. [Obs.]",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6520,7 +6526,7 @@
       "word": "DESPONDENT",
       "definitions": [
         {
-          "text": "Marked by despondence; given to despondence; low-spirited; as,",
+          "text": "Marked by despondence; given to despondence; low-spirited; as, a despondent manner; a despondent prisoner.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6704,11 +6710,87 @@
       ],
       "relatedWords": []
     },
-    "despoticdespotical": {
+    "despotic": {
       "word": "DESPOTIC; DESPOTICAL",
       "definitions": [
         {
-          "text": "Having the character of, or pertaining to, a despot; absolute in power; possessing and abusing unlimited power; evincing despotism;",
+          "text": "Having the character of, or pertaining to, a despot; absolute in power; possessing and abusing unlimited power; evincing despotism; tyrannical; arbitrary.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "absolute",
+        "absolutist",
+        "absolutistic",
+        "arbitrary",
+        "aristocratic",
+        "arrogant",
+        "autarchic",
+        "authoritarian",
+        "authoritative",
+        "autocratic",
+        "autonomous",
+        "bossy",
+        "bureaucratic",
+        "civic",
+        "civil",
+        "constitutional",
+        "democratic",
+        "dictatorial",
+        "domineering",
+        "fascist",
+        "federal",
+        "federalist",
+        "federalistic",
+        "feudal",
+        "governmental",
+        "grinding",
+        "gubernatorial",
+        "heteronomous",
+        "high-handed",
+        "imperative",
+        "imperial",
+        "imperious",
+        "lordly",
+        "magisterial",
+        "magistral",
+        "masterful",
+        "matriarchal",
+        "matriarchic",
+        "monarchal",
+        "monarchial",
+        "monarchic",
+        "monocratic",
+        "official",
+        "oligarchal",
+        "oligarchic",
+        "oppressive",
+        "overbearing",
+        "overruling",
+        "parliamentarian",
+        "parliamentary",
+        "patriarchal",
+        "patriarchic",
+        "peremptory",
+        "pluralistic",
+        "political",
+        "repressive",
+        "republican",
+        "self-governing",
+        "severe",
+        "strict",
+        "suppressive",
+        "theocratic",
+        "totalitarian",
+        "tyrannical",
+        "tyrannous"
+      ]
+    },
+    "despotical": {
+      "word": "DESPOTIC; DESPOTICAL",
+      "definitions": [
+        {
+          "text": "Having the character of, or pertaining to, a despot; absolute in power; possessing and abusing unlimited power; evincing despotism; tyrannical; arbitrary.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6843,7 +6925,7 @@
       ],
       "relatedWords": []
     },
-    "desquamativedesquamatory": {
+    "desquamative": {
       "word": "DESQUAMATIVE; DESQUAMATORY",
       "definitions": [
         {
@@ -6854,8 +6936,12 @@
       "relatedWords": []
     },
     "desquamatory": {
-      "word": "DESQUAMATORY",
+      "word": "DESQUAMATIVE; DESQUAMATORY",
       "definitions": [
+        {
+          "text": "Of, pertaining to, or attended with, desquamation.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "An instrument formerly used in removing the laminæ of exfoliated bones.",
           "partOfSpeech": "noun"
@@ -6877,7 +6963,7 @@
       "word": "DESSERT",
       "definitions": [
         {
-          "text": "A service of pastry, fruits, or sweetmeats, at the close of a feast or entertainment; pastry, fruits, etc., forming the last course at dinner. \"An 't please your honor,\" quoth the peasant, \"This same dessert is not so pleasant.\" Pope. Dessert spoon, a spoon used in eating dessert; a spoon intermediate",
+          "text": "A service of pastry, fruits, or sweetmeats, at the close of a feast or entertainment; pastry, fruits, etc., forming the last course at dinner. \"An 't please your honor,\" quoth the peasant, \"This same dessert is not so pleasant.\" Pope. Dessert spoon, a spoon used in eating dessert; a spoon intermediate in size between a teaspoon and a tablespoon. spoon will hold, usually reckoned at about two and a half fluid drams.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7547,7 +7633,7 @@
         "wantage"
       ]
     },
-    "destrerdextrer": {
+    "destrer": {
       "word": "DESTRER; DEXTRER",
       "definitions": [
         {
@@ -8422,6 +8508,16 @@
         {
           "text": "The act or process of depriving of sulphur.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "desulphurize": {
+      "word": "DESULPHURIZE",
+      "definitions": [
+        {
+          "text": "To desulphurate; to deprive of sulphur.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

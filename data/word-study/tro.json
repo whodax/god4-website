@@ -51,11 +51,15 @@
         {
           "text": "A trochaic verse or measure. Dryden.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to trochees; consisting of trochees; as, trochaic measure or verse.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "trochaictrochaical": {
+    "trochaical": {
       "word": "TROCHAIC; TROCHAICAL",
       "definitions": [
         {
@@ -489,7 +493,17 @@
       ],
       "relatedWords": []
     },
-    "troglodytictroglodytical": {
+    "troglodytic": {
+      "word": "TROGLODYTIC; TROGLODYTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a troglodyte, or dweller in caves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "troglodytical": {
       "word": "TROGLODYTIC; TROGLODYTICAL",
       "definitions": [
         {
@@ -749,6 +763,20 @@
         {
           "text": "A blowing apparatus, in which air, drawn into the upper part of a vertical tube through side holes by a stream of water within, is carried down with the water into a box or chamber below which it is led to a furnace. [Written also trompe, and trombe.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A trumpet; a trump. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "trompe": {
+      "word": "TROMP; TROMPE",
+      "definitions": [
+        {
+          "text": "A trumpet; a trump. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -758,16 +786,6 @@
       "definitions": [
         {
           "text": "An aperture in a tromp.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "tromptrompe": {
-      "word": "TROMP; TROMPE",
-      "definitions": [
-        {
-          "text": "A trumpet; a trump. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
         }
       ],
@@ -823,11 +841,19 @@
         {
           "text": "A small drain. [Obs. or Prov. Eng.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A steelyard. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A form of weighing machine for heavy wares, consisting of two horizontal bars crossing each other, beaked at the extremities, and supported by a wooden pillar. It is now mostly disused. [Scot.] Jamieson. Trone stone, a weight equivalent to nineteen and a half pounds. [Scot.] -- Trone weight, a weight formerly used in Scotland, in which a pound varied from 21 to 28 ounces avoirdupois.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "tronetrones": {
+    "trones": {
       "word": "TRONE; TRONES",
       "definitions": [
         {
@@ -1167,6 +1193,26 @@
       ],
       "relatedWords": []
     },
+    "tropologic": {
+      "word": "TROPOLOGIC; TROPOLOGICAL",
+      "definitions": [
+        {
+          "text": "Characterized by tropes; varied by tropes; tropical. Burton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tropological": {
+      "word": "TROPOLOGIC; TROPOLOGICAL",
+      "definitions": [
+        {
+          "text": "Characterized by tropes; varied by tropes; tropical. Burton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "tropologize": {
       "word": "TROPOLOGIZE",
       "definitions": [
@@ -1389,7 +1435,7 @@
       "word": "TROUBLESOME",
       "definitions": [
         {
-          "text": "Giving trouble or anxiety; vexatious; burdensome; wearisome. This troublesome world. Book of Common Prayer. These troublesome disguises that we wear. Milton. My mother will never be troublesome to me. Pope.",
+          "text": "Giving trouble or anxiety; vexatious; burdensome; wearisome. This troublesome world. Book of Common Prayer. These troublesome disguises that we wear. Milton. My mother will never be troublesome to me. Pope. irksome; afflictive; burdensome; tiresome; wearisome; importunate.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1591,7 +1637,17 @@
       ],
       "relatedWords": []
     },
-    "trouveretrouveur": {
+    "trouvere": {
+      "word": "TROUVERE; TROUVEUR",
+      "definitions": [
+        {
+          "text": "One of a school of poets who flourished in Northern France from the eleventh to the fourteenth century.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "trouveur": {
       "word": "TROUVERE; TROUVEUR",
       "definitions": [
         {

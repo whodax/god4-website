@@ -167,7 +167,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Fig.: A small portion; a bit. [Obs.]",
+          "text": "Fig.: A small portion; a bit. [Obs.] By ounces hung his locks that he had. Chaucer. Fluid ounce. See under Fluid, n.",
           "partOfSpeech": "noun"
         },
         {
@@ -177,7 +177,17 @@
       ],
       "relatedWords": []
     },
-    "oundedoundy": {
+    "ounded": {
+      "word": "OUNDED; OUNDY",
+      "definitions": [
+        {
+          "text": "Wavy; waving [Obs.] \"Owndie hair.\" Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "oundy": {
       "word": "OUNDED; OUNDY",
       "definitions": [
         {
@@ -394,6 +404,34 @@
     "out": {
       "word": "OUT",
       "definitions": [
+        {
+          "text": "In its original and strict sense, out means from the interior of something; beyond the limits or boundary of somethings; in a position or relation which is exterior to something; -- opposed to in or into. The something may be expressed after of, from, etc. (see Out of, below); or, if not expressed, it is implied; as, he is out; or, he is out of the house, office, business, etc.; he came out; or, he came out from the ship, meeting, sect, party, etc. Out is used in a variety of applications, as: --",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Away; abroad; off; from home, or from a certain, or a usual, place; not in; not in a particular, or a usual, place; as, the proprietor is out, his team was taken out. \"My shoulder blade is out.\" Shak. He hath been out (of the country) nine years. Shak.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Beyond the limits of concealment, confinement, privacy, constraint, etc., actual of figurative; hence, not in concealment, constraint, etc., in, or into, a state of freedom, openness, disclosure, publicity, etc.; as, the sun shines out; he laughed out, to be out at the elbows; the secret has leaked out, or is out; the disease broke out on his face; the book is out. Leaves are out and perfect in a month. Bacon. She has not been out [in general society] very long. H. James.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Beyond the limit of existence, continuance, or supply; to the end; completely; hence, in, or into, a condition of extinction, exhaustion, completion; as, the fuel, or the fire, has burned out. \"Hear me out.\" Dryden. Deceitiful men shall not live out half their days. Ps. iv. 23. When the butt is out, we will drink water. Shak.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Beyond possession, control, or occupation; hence, in, or into, a state of want, loss, or deprivation; -- used of office, business, property, knowledge, etc.; as, the Democrats went out and the Whigs came in; he put his money out at interest. \"Land that is out at rack rent.\" Locke. \"He was out fifty pounds.\" Bp. Fell. I have forgot my part, and I am out. Shak.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Beyond the bounds of what is true, reasonable, correct, proper, common, etc.; in error or mistake; in a wrong or incorrect position or opinion; in a state of disagreement, opposition, etc.; in an inharmonious relation. \"Lancelot and I are out.\" Shak. Wicked men are strangely out in the calculating of their own interest. South. Very seldom out, in these his guesses. Addison.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Not in the position to score in playing a game; not in the state or turn of the play for counting or gaining scores. significations that it has as a separate word; as outbound, outbreak, outbuilding, outcome, outdo, outdoor, outfield. See also the first Note under Over, adv. Day in, day out, from the beginning to the limit of each of several days; day by day; every day. Without any reservation or disguise; absolute; as, an out and out villain. [As an adj. written also out-and-out.] -- Out at, Out in, Out on, etc., elliptical phrases, that to which out refers as a source, origin, etc., being omitted; as, out (of the house and) at the barn; out (of the house, road, fields, etc., and) in the woods. Three fishers went sailing out into the west, Out into the west, as the sun went down. C. Kingsley. \"from the shore,\" \"of sight,\" or some similar phrase. The complete construction is seen in the saying: \"Out of the frying pan into the fire.\" -- Out from, a construction similar to out of (below). See Of and From. Out of, a phrase which may be considered either as composed of an adverb and a preposition, each having its appropriate office in the sentence, or as a compound preposition. Considered as a preposition, it denotes, with verbs of movement or action, from the interior of; beyond the limit: from; hence, origin, source, motive, departure, separation, loss, etc.; -- opposed to in or into; also with verbs of being, the state of being derived, removed, or separated from. Examples may be found in the phrases below, and also under Vocabulary words; as, out of breath; out of countenance. Out of cess, beyond measure, excessively. Shak. or into, the open air; hence, figuratively, shut out; dismissed. See under Door, also, Out-of-door, Outdoor, Outdoors, in the Vocabulary. \"He 's quality, and the question's out of door,\" Dryden. disarranged. Latimer. . . . fell down and died out of hand.\" Latimer. disordered. \"The time is out of joint.\" Shak. memory; as, time out of mind. wandering state mentally; delirious. [Colloq.] -- Out of one's time, beyond one's period of minority or apprenticeship. or becoming. money than one has received. impossible to be favorably considered. inopportune. unhappy; cross. See under Sort, n. agreeing temper; fretful. perfectly plain and smooth; -- said of surfaces. (b) Improper; unusual; wrong. doubt; free from difficulty or perils; safe. [Colloq.] -- Out to out, from one extreme limit to another, including the whole length, breadth, or thickness; -- applied to measurements. State or Territory. [U. S.] -- To come out, To cut out, To fall out, etc. See under Come, Cut, Fall, etc.",
+          "partOfSpeech": "adverb"
+        },
         {
           "text": "One who, or that which, is out; especially, one who is out of office; -- generally in the plural.",
           "partOfSpeech": "noun"
@@ -1595,7 +1633,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Hence: Not according with usage; strange; rude; barbarous; uncouth; clownish; as, an outlandish dress, behavior, or speech. Something outlandish, unearthy, or at variance with ordinary fashion.",
+          "text": "Hence: Not according with usage; strange; rude; barbarous; uncouth; clownish; as, an outlandish dress, behavior, or speech. Something outlandish, unearthy, or at variance with ordinary fashion. Hawthorne.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1857,7 +1895,17 @@
       ],
       "relatedWords": []
     },
-    "outlusteroutlustre": {
+    "outluster": {
+      "word": "OUTLUSTER; OUTLUSTRE",
+      "definitions": [
+        {
+          "text": "To excel in brightness or luster. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "outlustre": {
       "word": "OUTLUSTER; OUTLUSTRE",
       "definitions": [
         {
@@ -1877,7 +1925,17 @@
       ],
       "relatedWords": []
     },
-    "outmaneuveroutmanoeuvre": {
+    "outmaneuver": {
+      "word": "OUTMANEUVER; OUTMANOEUVRE",
+      "definitions": [
+        {
+          "text": "To surpass, or get an advantage of, in maneuvering; to outgeneral.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "outmanoeuvre": {
       "word": "OUTMANEUVER; OUTMANOEUVRE",
       "definitions": [
         {
@@ -1989,6 +2047,16 @@
       ],
       "relatedWords": []
     },
+    "outofdoor": {
+      "word": "OUT-OF-DOOR",
+      "definitions": [
+        {
+          "text": "Being out of the house; being, or done, in the open air; outdoor; as, out-of-door exercise. See Out of door, under Out, adv. Amongst out-of-door delights. G. Eliot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "outoftheway": {
       "word": "OUT-OF-THE-WAY",
       "definitions": [
@@ -2085,6 +2153,10 @@
         {
           "text": "To grant an outpension to.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A public pension granted to one not required to live in a charitable institution. -- Out\"pen`sion*er, n.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2235,7 +2307,7 @@
       "word": "OUTRAGEOUS",
       "definitions": [
         {
-          "text": "Of the nature of an outrage; exceeding the limits of right, reason, or decency; involving or doing an outrage; furious; violent; atrocious. \"Outrageous weeping.\" Chaucer. \"The most outrageous villainies.\" Sir P. Sidney. \"The vile, outrageous crimes.\" Shak. \"Outrageous panegyric.\" Dryden.",
+          "text": "Of the nature of an outrage; exceeding the limits of right, reason, or decency; involving or doing an outrage; furious; violent; atrocious. \"Outrageous weeping.\" Chaucer. \"The most outrageous villainies.\" Sir P. Sidney. \"The vile, outrageous crimes.\" Shak. \"Outrageous panegyric.\" Dryden. wanton; nefarious; heinous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2459,7 +2531,17 @@
       ],
       "relatedWords": []
     },
-    "outroadoutrode": {
+    "outroad": {
+      "word": "OUTROAD; OUTRODE",
+      "definitions": [
+        {
+          "text": "An excursion. [Obs.] \"Outrodes by the ways of Judea.\" Macc. xv. 41 (Geneva Bible).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "outrode": {
       "word": "OUTROAD; OUTRODE",
       "definitions": [
         {
@@ -2891,7 +2973,7 @@
       "word": "OUTSPOKEN",
       "definitions": [
         {
-          "text": "Speaking, or spoken, freely, openly, or boldly; as, an",
+          "text": "Speaking, or spoken, freely, openly, or boldly; as, an outspoken man; an outspoken rebuke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3293,19 +3375,13 @@
       ],
       "relatedWords": []
     },
-    "outwardoutwards": {
+    "outward": {
       "word": "OUTWARD; OUTWARDS",
       "definitions": [
         {
           "text": "From the interior part; in a direction from the interior toward the exterior; out; to the outside; beyond; off; away; as, a ship bound outward. The wrong side may be turned outward. Shak. Light falling on them is not reflected outwards. Sir I. Newton. Outward bound, bound in an outward direction or to foreign parts; -- said especially of vessels, and opposed to homeward bound.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "outward": {
-      "word": "OUTWARD",
-      "definitions": [
+        },
         {
           "text": "Formmg the superficial part; external; exterior; -- opposed to inward; as, an outward garment or layer. Though our outward man perish, yet the inward man is renewed day by day. Cor. iv. 16.",
           "partOfSpeech": "adjective"
@@ -3319,7 +3395,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Tending to the exterior or outside.",
+          "text": "Tending to the exterior or outside. The fire will force its outward way. Dryden. Stroke.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3330,8 +3406,12 @@
       "relatedWords": []
     },
     "outwards": {
-      "word": "OUTWARDS",
+      "word": "OUTWARD; OUTWARDS",
       "definitions": [
+        {
+          "text": "From the interior part; in a direction from the interior toward the exterior; out; to the outside; beyond; off; away; as, a ship bound outward. The wrong side may be turned outward. Shak. Light falling on them is not reflected outwards. Sir I. Newton. Outward bound, bound in an outward direction or to foreign parts; -- said especially of vessels, and opposed to homeward bound.",
+          "partOfSpeech": "adverb"
+        },
         {
           "text": "See Outward, adv.",
           "partOfSpeech": "adverb"

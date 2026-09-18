@@ -455,7 +455,7 @@
       "word": "INDECIPHERABLE",
       "definitions": [
         {
-          "text": "Not decipherable; incapable of being deciphered, explained, or",
+          "text": "Not decipherable; incapable of being deciphered, explained, or solved.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2160,7 +2160,7 @@
       "word": "INDELICATE",
       "definitions": [
         {
-          "text": "Not delicate; wanting delicacy; offensive to good manners, or to purity of mind; coarse; rude; as, an indelicate word or",
+          "text": "Not delicate; wanting delicacy; offensive to good manners, or to purity of mind; coarse; rude; as, an indelicate word or suggestion; indelicate behavior. Macaulay. gross; indecent; offensive; improper; unchaste; impure; unrefined.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2446,6 +2446,49 @@
         }
       ],
       "relatedWords": []
+    },
+    "indemonstrable": {
+      "word": "INDEMONSTRABLE",
+      "definitions": [
+        {
+          "text": "Incapable of being demonstrated.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "agnostic",
+        "ambiguous",
+        "capricious",
+        "chancy",
+        "changeable",
+        "dicey",
+        "doubting",
+        "equivocal",
+        "erratic",
+        "fickle",
+        "hesitant",
+        "hesitating",
+        "incalculable",
+        "indecisive",
+        "irresolute",
+        "polysemous",
+        "skeptical",
+        "touch-and-go",
+        "unaccountable",
+        "uncertain",
+        "unconfirmable",
+        "unconvinced",
+        "undivinable",
+        "unforeseeable",
+        "unpersuaded",
+        "unpredictable",
+        "unprovable",
+        "unsure",
+        "unverifiable",
+        "variable",
+        "wavering",
+        "whimsical"
+      ]
     },
     "indenization": {
       "word": "INDENIZATION",
@@ -3781,6 +3824,48 @@
       ],
       "relatedWords": []
     },
+    "indescribable": {
+      "word": "INDESCRIBABLE",
+      "definitions": [
+        {
+          "text": "Incapable of being described.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "exceptional",
+        "extraordinary",
+        "fabulous",
+        "incommunicable",
+        "indefinable",
+        "ineffable",
+        "inenarrable",
+        "inexpressible",
+        "innominable",
+        "legendary",
+        "marvelous",
+        "mythical",
+        "noncommunicable",
+        "noteworthy",
+        "phenomenal",
+        "portentous",
+        "prodigious",
+        "remarkable",
+        "stupefying",
+        "stupendous",
+        "undefinable",
+        "unexampled",
+        "unmentionable",
+        "unnameable",
+        "unparalleled",
+        "unprecedented",
+        "unspeakable",
+        "untellable",
+        "unutterable",
+        "unwhisperable",
+        "wonderful"
+      ]
+    },
     "indescriptive": {
       "word": "INDESCRIPTIVE",
       "definitions": [
@@ -3835,7 +3920,7 @@
       "word": "INDESTRUCTIBLE",
       "definitions": [
         {
-          "text": "Not destructible; incapable of decomposition or of being",
+          "text": "Not destructible; incapable of decomposition or of being destroyed.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3914,7 +3999,7 @@
       "word": "INDETERMINABLE",
       "definitions": [
         {
-          "text": "Not determinable; impossible to be determined; not to be",
+          "text": "Not determinable; impossible to be determined; not to be definitely known, ascertained, defined, or limited.",
           "partOfSpeech": "adjective"
         },
         {
@@ -4085,6 +4170,16 @@
         {
           "text": "Want of devotion; impiety; irreligion. \"An age of indevotion.\" Jer. Taylor.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indevout": {
+      "word": "INDEVOUT",
+      "definitions": [
+        {
+          "text": "Not devout.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -5713,7 +5808,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A cycle of fifteen years. Constantine the Great, in connection with the payment of tribute. It was adopted at various times by the Greek emperors of Constantinople, the popes, and the parliaments of France. Through the influence of the popes, it was extensively used in the ecclesiastical chronology of the Middle Ages. The number of indictions was reckoned at first from 312 a. d., but since the twelfth century it has been reckoned from the birth of Christ. The papal indiction is the only one ever used at the present day. To find the indiction and year of the indiction by the first method, subtract 312 from the given year a.",
+          "text": "A cycle of fifteen years. Constantine the Great, in connection with the payment of tribute. It was adopted at various times by the Greek emperors of Constantinople, the popes, and the parliaments of France. Through the influence of the popes, it was extensively used in the ecclesiastical chronology of the Middle Ages. The number of indictions was reckoned at first from 312 a. d., but since the twelfth century it has been reckoned from the birth of Christ. The papal indiction is the only one ever used at the present day. To find the indiction and year of the indiction by the first method, subtract 312 from the given year a. d., and divide by 15; by the second method, add 3 to the given year a. d., and the divide by 15. In either case, the quotient is the number of the current indiction, and the remainder the year of the indiction. See Cycle of indiction, under Cycle.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6774,7 +6869,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not digestible in the mind; distressful; intolerable; as, an",
+          "text": "Not digestible in the mind; distressful; intolerable; as, an indigestible simile. T. Warton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6918,7 +7013,17 @@
       ],
       "relatedWords": []
     },
-    "indignanceindignancy": {
+    "indignance": {
+      "word": "INDIGNANCE; INDIGNANCY",
+      "definitions": [
+        {
+          "text": "Indignation. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indignancy": {
       "word": "INDIGNANCE; INDIGNANCY",
       "definitions": [
         {
@@ -7734,7 +7839,7 @@
       "word": "INDISCERNIBLE",
       "definitions": [
         {
-          "text": "Not to be discerned; imperceptible; not discoverable or visible.",
+          "text": "Not to be discerned; imperceptible; not discoverable or visible. Secret and indiscernible ways. Jer. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7802,7 +7907,7 @@
         "without distinction"
       ]
     },
-    "indiscerpibilityindiscerptibility": {
+    "indiscerpibility": {
       "word": "INDISCERPIBILITY; INDISCERPTIBILITY",
       "definitions": [
         {
@@ -7812,7 +7917,27 @@
       ],
       "relatedWords": []
     },
-    "indiscerpibleindiscerptible": {
+    "indiscerpible": {
+      "word": "INDISCERPIBLE; INDISCERPTIBLE",
+      "definitions": [
+        {
+          "text": "Not discerpible; inseparable. [Obs.] Bp. Butler. In`dis*cerp\"ti*bly, adv. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indiscerptibility": {
+      "word": "INDISCERPIBILITY; INDISCERPTIBILITY",
+      "definitions": [
+        {
+          "text": "The state or quality of being indiscerpible. [Obs.] Dr. H. More.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indiscerptible": {
       "word": "INDISCERPIBLE; INDISCERPTIBLE",
       "definitions": [
         {
@@ -7866,7 +7991,7 @@
       "word": "INDISCREET",
       "definitions": [
         {
-          "text": "Not discreet; wanting in discretion. So drunken, and so indiscreet an officer. Shak.",
+          "text": "Not discreet; wanting in discretion. So drunken, and so indiscreet an officer. Shak. heedless; undiscerning; foolish.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8177,7 +8302,7 @@
       "word": "INDISCRIMINATE",
       "definitions": [
         {
-          "text": "Not discriminate; wanting discrimination; undistinguishing; not making any distinction; confused; promiscuous. \"Blind or indiscriminate forgiveness.\" I. Taylor.",
+          "text": "Not discriminate; wanting discrimination; undistinguishing; not making any distinction; confused; promiscuous. \"Blind or indiscriminate forgiveness.\" I. Taylor. The indiscriminate defense of right and wrong. Junius.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8342,6 +8467,16 @@
         "wide-stretching",
         "widespread"
       ]
+    },
+    "indiscriminating": {
+      "word": "INDISCRIMINATING",
+      "definitions": [
+        {
+          "text": "Not discriminating.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "indiscrimination": {
       "word": "INDISCRIMINATION",
@@ -8748,7 +8883,7 @@
       "word": "INDISPUTABLE",
       "definitions": [
         {
-          "text": "Not disputable; incontrovertible; too evident to admit of dispute.",
+          "text": "Not disputable; incontrovertible; too evident to admit of dispute. irrefragable; certain; positive; undoubted; sure; infallible.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9158,6 +9293,16 @@
         {
           "text": "Want of distinction or distinguishableness; confusion; uncertainty; indiscrimination. The indistinction of many of the same name . . . hath made some doubt. Sir T. Browne. An indistinction of all persons, or equality of all orders, is far from being agreeable to the will of God. Sprat.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indistinctive": {
+      "word": "INDISTINCTIVE",
+      "definitions": [
+        {
+          "text": "Having nothing distinctive; common.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -10379,7 +10524,7 @@
       "word": "INDOCIBLE",
       "definitions": [
         {
-          "text": "Incapable of being taught, or not easily instructed; dull in",
+          "text": "Incapable of being taught, or not easily instructed; dull in intellect; intractable; unteachable; indocile. Bp. Hall.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11144,7 +11289,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "A member of a race forming the chief pre-Malay population of the Malay Archipelago, and probably sprung from a mixture of Polynesian and Mongoloid immigrants. According to Keane, the autochthonous Negritos were largely expelled by the Caucasian Polynesians, themselves followed by Mongoloid peoples of Indo-Chinese affinities, from mixture with whom sprang the Indonesian race. The term Indonesian, introduced by Logan to designate the light- colored non-Malay inhabitants of the Eastern Archipelago, is now used as a convenient collective name for all the peoples of Malaysia and Polynesia who are neither Malay nor Papuans, but of Caucasic type. . . . The true Indonesians are of tall stature (5 ft. 10 in.), muscular frame, rather oval features, high, open forehead, large straight or curved nose, large full eyes always horizontal and with no trace of the third lid, light brown complexion (cinnamon or ruddy brown), long black hair, not lank but often slightly curled or wavy, skull",
+          "text": "A member of a race forming the chief pre-Malay population of the Malay Archipelago, and probably sprung from a mixture of Polynesian and Mongoloid immigrants. According to Keane, the autochthonous Negritos were largely expelled by the Caucasian Polynesians, themselves followed by Mongoloid peoples of Indo-Chinese affinities, from mixture with whom sprang the Indonesian race. The term Indonesian, introduced by Logan to designate the light- colored non-Malay inhabitants of the Eastern Archipelago, is now used as a convenient collective name for all the peoples of Malaysia and Polynesia who are neither Malay nor Papuans, but of Caucasic type. . . . The true Indonesians are of tall stature (5 ft. 10 in.), muscular frame, rather oval features, high, open forehead, large straight or curved nose, large full eyes always horizontal and with no trace of the third lid, light brown complexion (cinnamon or ruddy brown), long black hair, not lank but often slightly curled or wavy, skull generally brachycephalous like that of the melanochroic European. A. H. Keane. The Indonesians [of the Philippines], with the tribal population of some 251, 200, live almost exclusively on the great island of Mindanao. They are not only physically superior to the Negritos, but to the peoples of the Malayan race as well, and are, as a rule, quite intelligent. Rep. Phil. Com. , 1902.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11374,7 +11519,17 @@
       ],
       "relatedWords": []
     },
-    "indorserindorsor": {
+    "indorser": {
+      "word": "INDORSER; INDORSOR",
+      "definitions": [
+        {
+          "text": "The person who indorses. [Written also endorser.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indorsor": {
       "word": "INDORSER; INDORSOR",
       "definitions": [
         {
@@ -11458,7 +11613,17 @@
       ],
       "relatedWords": []
     },
-    "indrisindri": {
+    "indri": {
+      "word": "INDRIS; INDRI",
+      "definitions": [
+        {
+          "text": "Any lemurine animal of the genus Indris. as the diadem indris (I. diadema), which has a white ruff around the forehead; the woolly indris (I. laniger); and the short-tailed or black indris (I. brevicaudatus), which is black, varied with gray.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indris": {
       "word": "INDRIS; INDRI",
       "definitions": [
         {
@@ -12426,7 +12591,17 @@
       ],
       "relatedWords": []
     },
-    "inductricinductrical": {
+    "inductric": {
+      "word": "INDUCTRIC; INDUCTRICAL",
+      "definitions": [
+        {
+          "text": "Acting by, or in a state of, induction; relating to electrical induction.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inductrical": {
       "word": "INDUCTRIC; INDUCTRICAL",
       "definitions": [
         {
@@ -12906,7 +13081,25 @@
       ],
       "relatedWords": []
     },
-    "indultindulto": {
+    "indult": {
+      "word": "INDULT; INDULTO",
+      "definitions": [
+        {
+          "text": "A privilege or exemption; an indulgence; a dispensation granted by the pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Spain)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A duty levied on all importations.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indulto": {
       "word": "INDULT; INDULTO",
       "definitions": [
         {
@@ -13131,7 +13324,17 @@
       ],
       "relatedWords": []
     },
-    "indusiateindusiated": {
+    "indusiate": {
+      "word": "INDUSIATE; INDUSIATED",
+      "definitions": [
+        {
+          "text": "Furnished with an indusium.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "indusiated": {
       "word": "INDUSIATE; INDUSIATED",
       "definitions": [
         {
@@ -13204,7 +13407,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Steadily and perseveringly active in a particular pursuit or aim; as, he was negligent in business, but industrious in pleasure; an industrious mischief maker.",
+          "text": "Steadily and perseveringly active in a particular pursuit or aim; as, he was negligent in business, but industrious in pleasure; an industrious mischief maker. Industrious to seek out the truth of all things. Spenser.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -13306,7 +13509,19 @@
       "word": "INDUSTRY",
       "definitions": [
         {
-          "text": "Habitual diligence in any employment or pursuit, either bodily or mental; steady attention to business; assiduity; -- opposed to sloth and idleness; as, industry pays debts, while idleness or despair will increase them. We are more industrious than our forefathers, because in the present times the funds destined for the maintenance of industry are much greater in proportion to those which are likely to be employed in the",
+          "text": "Habitual diligence in any employment or pursuit, either bodily or mental; steady attention to business; assiduity; -- opposed to sloth and idleness; as, industry pays debts, while idleness or despair will increase them. We are more industrious than our forefathers, because in the present times the funds destined for the maintenance of industry are much greater in proportion to those which are likely to be employed in the maintenance of idleness, than they were two or three centuries ago. A. Smith.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any department or branch of art, occupation, or business; especially, one which employs much labor and capital and is a distinct branch of trade; as, the sugar industry; the iron industry; the cotton industry.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Polit. Econ.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Human exertion of any kind employed for the creation of value, and regarded by some as a species of capital or wealth; labor. attention. See Diligence.",
           "partOfSpeech": "noun"
         }
       ],

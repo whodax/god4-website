@@ -782,7 +782,17 @@
         "wrangler"
       ]
     },
-    "hatchettinehatchettite": {
+    "hatchettine": {
+      "word": "HATCHETTINE; HATCHETTITE",
+      "definitions": [
+        {
+          "text": "Mineral t",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hatchettite": {
       "word": "HATCHETTINE; HATCHETTITE",
       "definitions": [
         {
@@ -989,6 +999,22 @@
       "word": "HATE",
       "definitions": [
         {
+          "text": "To have a great aversion to, with a strong desire that evil should befall the person toward whom the feeling is directed; to dislike intensely; to detest; as, to hate one's enemies; to hate hypocrisy. Whosoever hateth his brother is a murderer. 1 John iii. 15.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be very unwilling; followed by an infinitive, or a substantive clause with that; as, to hate to get into debt; to hate that anything should be wasted. I hate that he should linger here. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Script.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To love less, relatively. Luke xiv. 26. word, and implies that one is inflamed with extreme dislike. We abhor what is deeply repugnant to our sensibilities or feelings. We detest what contradicts so utterly our principles and moral sentiments that we feel bound to lift up our voice against it. What we abominate does equal violence to our moral and religious sentiments. What we loathe is offensive to our own nature, and excites unmingled disgust. Our Savior is said to have hated the deeds of the Nicolaitanes; his language shows that he loathed the lukewarmness of the Laodiceans; he detested the hypocrisy of the scribes and Pharisees; he abhorred the suggestions of the tempter in the wilderness.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "Strong aversion coupled with desire that evil should befall the person toward whom the feeling is directed; as exercised toward things, intense dislike; hatred; detestation; -- opposed to love. For in a wink the false love turns to hate. Tennyson.",
           "partOfSpeech": "noun"
         }
@@ -1123,7 +1149,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Exciting or deserving great dislike, aversion, or disgust; odious. Unhappy, wretched, hateful day! Shak.",
+          "text": "Exciting or deserving great dislike, aversion, or disgust; odious. Unhappy, wretched, hateful day! Shak. repugnant; malevolent.",
           "partOfSpeech": "adjective"
         }
       ],

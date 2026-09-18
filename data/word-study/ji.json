@@ -23,11 +23,15 @@
         {
           "text": "To move restively backward or sidewise, -- said of a horse; to balk. [Written also jibb.] [Eng.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "To shift, or swing round, as a sail, boom, yard, etc., as in tacking.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "jibjibb": {
+    "jibb": {
       "word": "JIB; JIBB",
       "definitions": [
         {
@@ -51,7 +55,19 @@
       "word": "JIBE",
       "definitions": [
         {
+          "text": "To shift, as the boom of a fore-and-aft sail, from one side of a vessel to the other when the wind is aft or on the quarter. See Gybe.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To change a ship's course so as to cause a shifting of the boom. See Jibe, v. t., and Gybe.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To agree; to harmonize. [Colloq.] Bartlett.",
           "partOfSpeech": "verb"
         }
       ],
@@ -108,6 +124,18 @@
         },
         {
           "text": "(Mining)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sort or separate, as ore in a jigger or sieve. See Jigging, n.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Metal Working)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cut or form, as a piece of metal, in a jigging machine.",
           "partOfSpeech": "verb"
         },
         {
@@ -191,7 +219,7 @@
       ],
       "relatedWords": []
     },
-    "jihadjehad": {
+    "jihad": {
       "word": "JIHAD; JEHAD",
       "definitions": [
         {
@@ -297,7 +325,17 @@
       ],
       "relatedWords": []
     },
-    "jinjinn": {
+    "jin": {
+      "word": "JIN; JINN",
+      "definitions": [
+        {
+          "text": "See Jinnee. \"Solomon is said to have had power over the jin.\" Balfour (Cyc. of India).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jinn": {
       "word": "JIN; JINN",
       "definitions": [
         {
@@ -460,6 +498,26 @@
       "definitions": [
         {
           "text": "A waistcoat or kind of stays for women.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jiujutsu": {
+      "word": "JUJUTSU; JUJITSU; JIUJUTSU; JIUJITSU",
+      "definitions": [
+        {
+          "text": "The Japanese art of self-defense without weapons, now widely used as a system of physical training. It depends for its efficiency largely upon the principle of making use of an opponent's strength and weight to disable or injure him, and by applying pressure so that his opposing movement will throw him out of balance, dislocate or break a joint, etc. It opposes knowledge and skill to brute strength, and demands an extensive practical knowledge of human anatomy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jiujitsu": {
+      "word": "JUJUTSU; JUJITSU; JIUJUTSU; JIUJITSU",
+      "definitions": [
+        {
+          "text": "The Japanese art of self-defense without weapons, now widely used as a system of physical training. It depends for its efficiency largely upon the principle of making use of an opponent's strength and weight to disable or injure him, and by applying pressure so that his opposing movement will throw him out of balance, dislocate or break a joint, etc. It opposes knowledge and skill to brute strength, and demands an extensive practical knowledge of human anatomy.",
           "partOfSpeech": "noun"
         }
       ],

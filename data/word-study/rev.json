@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "revaccinate": {
+      "word": "REVACCINATE",
+      "definitions": [
+        {
+          "text": "To vaccinate a second time or again.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "revalescence": {
       "word": "REVALESCENCE",
       "definitions": [
@@ -87,6 +97,16 @@
         {
           "text": "The quality or state of being revealable; revealableness.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "revealable": {
+      "word": "REVEALABLE",
+      "definitions": [
+        {
+          "text": "Capable of being revealed.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -373,6 +393,16 @@
       ],
       "relatedWords": []
     },
+    "revenging": {
+      "word": "REVENGING",
+      "definitions": [
+        {
+          "text": "Executing revenge; revengeful.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "revenue": {
       "word": "REVENUE",
       "definitions": [
@@ -619,7 +649,7 @@
       ],
       "relatedWords": []
     },
-    "reverierevery": {
+    "reverie": {
       "word": "REVERIE; REVERY",
       "definitions": [
         {
@@ -885,7 +915,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A return towards some ancestral type or character; atavism.",
+          "text": "A return towards some ancestral type or character; atavism. Reversion of series (Alg.), the act of reverting a series. See To revert a series, under Revert, v. t.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1023,9 +1053,27 @@
       ],
       "relatedWords": []
     },
-    "revery": {
-      "word": "REVERY",
+    "revertive": {
+      "word": "REVERTIVE",
       "definitions": [
+        {
+          "text": "Reverting, or tending to revert; returning. The tide revertive, unattracted, leaves A yellow waste of idle sands behind. Thomson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "revery": {
+      "word": "REVERIE; REVERY",
+      "definitions": [
+        {
+          "text": "A loose or irregular train of thought occurring in musing or mediation; deep musing; daydream. \"Rapt in nameless reveries.\" Tennyson. When ideas float in our mind without any reflection or regard of the understanding, it is that which the French call revery, our language has scarce a name for it. Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An extravagant concient of the fancy; a vision. [R.] There are infinite reveries and numberless extravagancies pass through both [wise and foolish minds]. Addison.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Reverie.",
           "partOfSpeech": "noun"
@@ -1097,6 +1145,16 @@
         {
           "text": "A facing of wood, stone, or any other material, to sustain an embankment when it receives a slope steeper than the natural slope; also, a retaining wall. [Written also revêtement (",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "revibrate": {
+      "word": "REVIBRATE",
+      "definitions": [
+        {
+          "text": "To vibrate back or in return.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1295,6 +1353,10 @@
         {
           "text": "Reproach; abuse; vilification. Neither be ye afraid of their revilings. Isa. li. 7.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Uttering reproaches; containing reproaches.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1407,7 +1469,17 @@
       ],
       "relatedWords": []
     },
-    "revisionalrevisionary": {
+    "revisional": {
+      "word": "REVISIONAL; REVISIONARY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to revision; revisory.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "revisionary": {
       "word": "REVISIONAL; REVISIONARY",
       "definitions": [
         {
@@ -1615,7 +1687,27 @@
       ],
       "relatedWords": []
     },
-    "reviviscencereviviscency": {
+    "reviving": {
+      "word": "REVIVING",
+      "definitions": [
+        {
+          "text": "Returning or restoring to life or vigor; reanimating. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reviviscence": {
+      "word": "REVIVISCENCE; REVIVISCENCY",
+      "definitions": [
+        {
+          "text": "The act of reviving, or the state of being revived; renewal of life. In this age we have a sort of reviviscence, not, I fear, of the power, but of a taste for the power, of the early times. Coleridge.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reviviscency": {
       "word": "REVIVISCENCE; REVIVISCENCY",
       "definitions": [
         {
@@ -1659,7 +1751,7 @@
       "word": "REVOCABLE",
       "definitions": [
         {
-          "text": "Capable of being revoked; as, a revocable edict or grant; a",
+          "text": "Capable of being revoked; as, a revocable edict or grant; a revocable covenant.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1821,7 +1913,7 @@
       "word": "REVOLTING",
       "definitions": [
         {
-          "text": "Causing abhorrence mixed with disgust; exciting extreme",
+          "text": "Causing abhorrence mixed with disgust; exciting extreme repugnance; loathsome; as, revolting cruelty.",
           "partOfSpeech": "adjective"
         }
       ],

@@ -1,11 +1,41 @@
 {
   "version": "v1",
   "entries": {
-    "seyeseyen": {
+    "sey": {
+      "word": "SEY; SEYH",
+      "definitions": [
+        {
+          "text": "of See. Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "seye": {
       "word": "SEYE; SEYEN",
       "definitions": [
         {
           "text": "of See.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "seyen": {
+      "word": "SEYE; SEYEN",
+      "definitions": [
+        {
+          "text": "of See.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "seyh": {
+      "word": "SEY; SEYH",
+      "definitions": [
+        {
+          "text": "of See. Chaucer.",
           "partOfSpeech": ""
         }
       ],
@@ -27,16 +57,6 @@
         {
           "text": "A gridle. See 1st Seint. [Obs.]",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "seyseyh": {
-      "word": "SEY; SEYH",
-      "definitions": [
-        {
-          "text": "of See. Chaucer.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []

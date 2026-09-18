@@ -71,6 +71,16 @@
       ],
       "relatedWords": []
     },
+    "straddling": {
+      "word": "STRADDLING",
+      "definitions": [
+        {
+          "text": "Applied to spokes when they are arranged alternately in two circles in the hub. See Straddle, v. i., and Straddle, v. t., 3. Knight.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "stradometrical": {
       "word": "STRADOMETRICAL",
       "definitions": [
@@ -162,6 +172,10 @@
     "straight": {
       "word": "STRAIGHT",
       "definitions": [
+        {
+          "text": "A variant of Strait, a. [Obs. or R.] Egypt is a long country, but it is straight, that is to say, narrow. Sir J. Mandeville.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Right, in a mathematical sense; passing from one point to another by the nearest course; direct; not deviating or crooked; as, a straight line or course; a straight piece of timber. And the crooked shall be made straight. Isa. xl. 4. There are many several sorts of crooked lines, but there is only one which is straight. Dryden.",
           "partOfSpeech": "adjective"
@@ -262,6 +276,10 @@
       "definitions": [
         {
           "text": "Proceeding in a straight course or manner; not deviating; honest; frank.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "In a straightforward manner.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -401,6 +419,50 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To draw with force; to extend with great effort; to stretch; as, to strain a rope; to strain the shrouds of a ship; to strain the cords of a musical instrument. \"To strain his fetters with a stricter care.\" Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act upon, in any way, so as to cause change of form or volume, as forces on a beam to bend it.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To exert to the utmost; to ply vigorously. He sweats, Strains his young nerves. Shak. They strain their warbling throats To welcome in the spring. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To stretch beyond its proper limit; to do violence to, in the matter of intent or meaning; as, to strain the law in order to convict an accused person. There can be no other meaning in this expression, however some may pretend to strain it. Swift.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To injure by drawing, stretching, or the exertion of force; as, the gale strained the timbers of the ship.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To injure in the muscles or joints by causing to make too strong an effort; to harm by overexertion; to sprain; as, to strain a horse by overloading; to strain the wrist; to strain a muscle. Prudes decayed about may track, Strain their necks with looking back. Swift.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To squeeze; to press closely. Evander with a close embrace Strained his departing friend. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make uneasy or unnatural; to produce with apparent effort; to force; to constrain. He talks and plays with Fatima, but his mirth Is forced and strained. Denham. The quality of mercy is not strained. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To urge with importunity; to press; as, to strain a petition or invitation. Note, if your lady strain his entertainment. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To press, or cause to pass, through a strainer, as through a screen, a cloth, or some porous substance; to purify, or separate from extraneous or solid matter, by filtration; to filter; as, to strain milk through cloth. To strain a point, to make a special effort; especially, to do a degree of violence to some principle or to one's own feelings. insist somewhat too much upon the precedence of others; -- often used ironically. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To make violent efforts. \"Straining with too weak a wing.\" Pope. To build his fortune I will strain a little. Shak.",
           "partOfSpeech": "verb"
         },
@@ -483,16 +545,6 @@
         {
           "text": "That through which any liquid is passed for purification or to separate it from solid matter; anything, as a screen or a cloth, used to strain a liquid; a device of the character of a sieve or of a filter; specifically, an openwork or perforated screen, as for the end of the suctionpipe of a pump, to prevent large solid bodies from entering with a liquid.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "strainindrawingaloadfroewitherresistanceaswithrefr": {
-      "word": "strain in drawing a load; fr. OE. wither resistance, AS. withre, fr.",
-      "definitions": [
-        {
-          "text": "The ridge between the shoulder bones of a horse, at the base of the neck. See Illust. of Horse. Let the galled jade wince; our withers are unwrung. Shak.",
-          "partOfSpeech": "preposition"
         }
       ],
       "relatedWords": []
@@ -1247,19 +1299,21 @@
       ],
       "relatedWords": []
     },
-    "stratariusrovingthestreetsfrlstratascviaapavedroad": {
-      "word": "stratarius roving the streets, fr. L. strata (sc. via) a paved road.",
+    "strategetic": {
+      "word": "STRATEGETIC; STRATEGETICAL",
       "definitions": [
         {
-          "text": "To wander, as from a direct course; to deviate, or go out of the way. Thames among the wanton valleys strays. Denham.",
+          "text": "Strategic.",
           "partOfSpeech": "adjective"
-        },
+        }
+      ],
+      "relatedWords": []
+    },
+    "strategetical": {
+      "word": "STRATEGETIC; STRATEGETICAL",
+      "definitions": [
         {
-          "text": "To wander from company, or from the proper limits; to rove at large; to roam; to go astray. Now, until the break of day, Through this house each fairy stray. Shak. A sheep doth very often stray. Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Figuratively, to wander from the path of duty or rectitude; to err. We have erred and strayed from thy ways. While meaner things, whom instinct leads, Are rarely known to stray. Cowper.",
+          "text": "Strategic.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1275,11 +1329,21 @@
       ],
       "relatedWords": []
     },
-    "strategeticstrategetical": {
-      "word": "STRATEGETIC; STRATEGETICAL",
+    "strategic": {
+      "word": "STRATEGIC; STRATEGICAL",
       "definitions": [
         {
-          "text": "Strategic.",
+          "text": "Of or pertaining to strategy; effected by artifice. strategic points. warlike operations which affords to its possessor an advantage over his opponent, as a mountain pass, a junction of rivers or roads, a fortress, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "strategical": {
+      "word": "STRATEGIC; STRATEGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to strategy; effected by artifice. strategic points. warlike operations which affords to its possessor an advantage over his opponent, as a mountain pass, a junction of rivers or roads, a fortress, etc.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1407,11 +1471,25 @@
       ],
       "relatedWords": []
     },
-    "stratigraphicstratigraphical": {
+    "stratigraphic": {
       "word": "STRATIGRAPHIC; STRATIGRAPHICAL",
       "definitions": [
         {
-          "text": "Pertaining to, or depended upon, the order or arrangement of",
+          "text": "Pertaining to, or depended upon, the order or arrangement of strata; as, stratigraphical evidence.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Stratographic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stratigraphical": {
+      "word": "STRATIGRAPHIC; STRATIGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or depended upon, the order or arrangement of strata; as, stratigraphical evidence.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1461,7 +1539,17 @@
       ],
       "relatedWords": []
     },
-    "stratographicstratographical": {
+    "stratographic": {
+      "word": "STRATOGRAPHIC; STRATOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to stratography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stratographical": {
       "word": "STRATOGRAPHIC; STRATOGRAPHICAL",
       "definitions": [
         {
@@ -1639,6 +1727,18 @@
       "word": "STRAY",
       "definitions": [
         {
+          "text": "To wander, as from a direct course; to deviate, or go out of the way. Thames among the wanton valleys strays. Denham.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To wander from company, or from the proper limits; to rove at large; to roam; to go astray. Now, until the break of day, Through this house each fairy stray. Shak. A sheep doth very often stray. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Figuratively, to wander from the path of duty or rectitude; to err. We have erred and strayed from thy ways. While meaner things, whom instinct leads, Are rarely known to stray. Cowper.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To cause to stray. [Obs.] Shak.",
           "partOfSpeech": "verb"
         },
@@ -1683,6 +1783,30 @@
         {
           "text": "To stretch; to extend; hence, to lay out, as a dead body. [Obs. or Prov. Eng. & Scot.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A line or long mark of a different color from the ground; a stripe; a vein. What mean those colored streaks in heaven Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Shipbuilding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A strake.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fine powder or mark yielded by a mineral when scratched or rubbed against a harder surface, the color of which is sometimes a distinguishing character.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The rung or round of a ladder. [Obs.]",
+          "partOfSpeech": "noun"
         },
         {
           "text": "To form streaks or stripes in or on; to stripe; to variegate with lines of a different color, or of different colors. A mule . . . streaked and dappled with white and black. Sandys. Now streaked and glowing with the morning red. Prior.",
@@ -1955,6 +2079,16 @@
       ],
       "relatedWords": []
     },
+    "street": {
+      "word": "STREET",
+      "definitions": [
+        {
+          "text": "Originally, a paved way or road; a public highway; now commonly, a thoroughfare in a city or village, bordered by dwellings or business houses. He removed [the body of] Amasa from the street unto the field. Coverdale. At home or through the high street passing. Milton. the walks, houses, shops, etc., which border the thoroughfare. His deserted mansion in Duke Street. Macaulay. The street (Broker's Cant), that thoroughfare of a city where the leading bankers and brokers do business; also, figuratively, those who do business there; as, the street would not take the bonds. street.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "streetwalker": {
       "word": "STREETWALKER",
       "definitions": [
@@ -2063,7 +2197,17 @@
       ],
       "relatedWords": []
     },
-    "strengerstrengest": {
+    "strenger": {
+      "word": "STRENGER; STRENGEST",
+      "definitions": [
+        {
+          "text": ", the original compar. & superl. of Strong. [Obs.] Two of us shall strenger be than one. Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "strengest": {
       "word": "STRENGER; STRENGEST",
       "definitions": [
         {
@@ -2123,20 +2267,6 @@
       ],
       "relatedWords": []
     },
-    "strengthandcolorandthecontrolofthebodilyormental": {
-      "word": "strength and color, and the control of the bodily or mental",
-      "definitions": [
-        {
-          "text": "To sink into dejection; to lose courage or spirit; to become depressed or despondent. If thou faint in the day of adversity, thy strength is small. Prov. xxiv. 10.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To decay; to disappear; to vanish. Gilded clouds, while we gaze upon them, faint before the eye. Pope.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "strengthen": {
       "word": "STRENGTHEN",
       "definitions": [
@@ -2161,6 +2291,26 @@
         {
           "text": "One who, or that which, gives or adds strength. Sir W. Temple.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "strengthening": {
+      "word": "STRENGTHENING",
+      "definitions": [
+        {
+          "text": "That strengthens; giving or increasing strength. containing iron, and supposed to have tonic effects.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "strengthful": {
+      "word": "STRENGTHFUL",
+      "definitions": [
+        {
+          "text": "Abounding in strength; full of strength; strong. Florence my friend, in court my faction Not meanly strengthful. Marston.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2219,7 +2369,7 @@
       "word": "STRENUOUS",
       "definitions": [
         {
-          "text": "Eagerly pressing or urgent; zealous; ardent; earnest; bold; valiant; intrepid; as, a strenuous advocate for national rights; a strenuous reformer; a strenuous defender of his country. And spirit-stirring wine, that strenuous makes. Chapman.",
+          "text": "Eagerly pressing or urgent; zealous; ardent; earnest; bold; valiant; intrepid; as, a strenuous advocate for national rights; a strenuous reformer; a strenuous defender of his country. And spirit-stirring wine, that strenuous makes. Chapman. Strenuous, continuous labor is pain. I. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2255,11 +2405,31 @@
       ],
       "relatedWords": []
     },
+    "strepsipter": {
+      "word": "STREPSIPTER; STREPSIPTERAN",
+      "definitions": [
+        {
+          "text": "One of the Strepsiptera.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "strepsiptera": {
       "word": "STREPSIPTERA",
       "definitions": [
         {
           "text": "A group of small insects having the anterior wings rudimentary, and in the form of short and slender twisted appendages, while the posterior ones are large and membranous. They are parasitic in the larval state on bees, wasps, and the like; -- called also Rhipiptera. See Illust. under Rhipipter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "strepsipteran": {
+      "word": "STREPSIPTER; STREPSIPTERAN",
+      "definitions": [
+        {
+          "text": "One of the Strepsiptera.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2271,16 +2441,6 @@
         {
           "text": "Of or pertaining to Strepsiptera.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "strepsipterstrepsipteran": {
-      "word": "STREPSIPTER; STREPSIPTERAN",
-      "definitions": [
-        {
-          "text": "One of the Strepsiptera.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2477,7 +2637,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Course; direction; as, the stretch of seams of coal. To be on the",
+          "text": "Course; direction; as, the stretch of seams of coal. To be on the stretch, to be obliged to use one's utmost powers.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2619,11 +2779,15 @@
         {
           "text": "To mark with striaæ. \"Striated longitudinally.\" Owen.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Marked with striaæ, or fine grooves, or lines of color; showing narrow structural bands or lines; as, a striated crystal; striated muscular fiber.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "striatestriated": {
+    "striated": {
       "word": "STRIATE; STRIATED",
       "definitions": [
         {
@@ -2672,36 +2836,6 @@
       "definitions": [
         {
           "text": "An owl. [Obs.] Spenser.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "strichasstricaswstrekdanstreggothstricksande": {
-      "word": "strich, AS. strica, Sw. strek, Dan. streg, Goth. stricks, and E.",
-      "definitions": [
-        {
-          "text": "A line or long mark of a different color from the ground; a stripe; a vein. What mean those colored streaks in heaven Milton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Shipbuilding)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A strake.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Min.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The fine powder or mark yielded by a mineral when scratched or rubbed against a harder surface, the color of which is sometimes a distinguishing character.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The rung or round of a ladder. [Obs.]",
           "partOfSpeech": "noun"
         }
       ],
@@ -2785,6 +2919,40 @@
         {
           "text": "See Strickle. [Prov. Eng.]",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "strict": {
+      "word": "STRICT",
+      "definitions": [
+        {
+          "text": "Strained; drawn close; tight; as, a strict embrace; a strict ligature. Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Tense; not relaxed; as, a strict fiber.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Exact; accurate; precise; rigorously nice; as, to keep strict watch; to pay strict attention. Shak. It shall be still in strictest measure. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Governed or governing by exact rules; observing exact rules; severe; rigorous; as, very strict in observing the Sabbath. \"Through the strict senteries.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Rigidly; interpreted; exactly limited; confined; restricted; as, to understand words in a strict sense.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Upright, or straight and narrow; -- said of the shape of the plants or their flower clusters. conforms in his motives and acts to a principle or code by which he is bound; severe is strict with an implication often, but not always, of harshness. Strict is opposed to lax; severe is opposed to gentle. And rules as strict his labored work confine, As if the Stagirite o'erlooked each line. Pope. Soon moved with touch of blame, thus Eve: -\"What words have passed thy lips, Adam severe!\" Milton. The Strict Observance, or Friars of the Strict Observance. (R. C. Ch.) See Observance.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3165,7 +3333,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To advance; to cause to go forward; -- used only in past participle. \"Well struck in years.\" Shak. To strike an attitude, To strike a balance. See under Attitude, and Balance. court, by each party striking out a certain number of names from a prepared list of jurors, so as to reduce it to the number of persons required by law. Burrill. To find a way to fortune. [Colloq.] -- To strike a ledger, or an account, to balance it. make a compact or agreement with; to agree with. strike off the interest of a debt. (b) (Print.) To impress; to print; as, to strike off a thousand copies of a book. (c) To separate by a blow or any sudden action; as, to strike off what is superfluous or corrupt. figuratively, to make a lucky hit financially. [Slang, U.S.] -- To strike one luck, to shake hands with one and wish good luck. [Obs.] Beau. & Fl. strike out sparks with steel. (b) To blot out; to efface; to erase. \"To methodize is as necessary as to strike out.\" Pope. (c) To form by a quick effort; to devise; to invent; to contrive, as, to strike out",
+          "text": "To advance; to cause to go forward; -- used only in past participle. \"Well struck in years.\" Shak. To strike an attitude, To strike a balance. See under Attitude, and Balance. court, by each party striking out a certain number of names from a prepared list of jurors, so as to reduce it to the number of persons required by law. Burrill. To find a way to fortune. [Colloq.] -- To strike a ledger, or an account, to balance it. make a compact or agreement with; to agree with. strike off the interest of a debt. (b) (Print.) To impress; to print; as, to strike off a thousand copies of a book. (c) To separate by a blow or any sudden action; as, to strike off what is superfluous or corrupt. figuratively, to make a lucky hit financially. [Slang, U.S.] -- To strike one luck, to shake hands with one and wish good luck. [Obs.] Beau. & Fl. strike out sparks with steel. (b) To blot out; to efface; to erase. \"To methodize is as necessary as to strike out.\" Pope. (c) To form by a quick effort; to devise; to invent; to contrive, as, to strike out a new plan of finance. (d) (Baseball) To cause a player to strike out; -- said of the pitcher. See To strike out, under Strike, v. i. the drums.\" Shak. (b) To begin to sing or play; as, to strike up a tune. (c) To raise (as sheet metal), in making diahes, pans, etc., by blows or pressure in a die.",
           "partOfSpeech": "verb"
         },
         {
@@ -3473,7 +3641,7 @@
       "word": "STRINGENT",
       "definitions": [
         {
-          "text": "Binding strongly; making strict requirements; restrictive; rigid; severe; as, stringent rules. They must be subject to a sharper penal code, and to a more stringent",
+          "text": "Binding strongly; making strict requirements; restrictive; rigid; severe; as, stringent rules. They must be subject to a sharper penal code, and to a more stringent code of procedure. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3629,6 +3797,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To fail in the thread; to lose the thread, as a bolt, screw, or nut. See Strip, v. t., 8.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "A narrow piece, or one comparatively long; as, a strip of cloth; a strip of land.",
           "partOfSpeech": "noun"
         },
@@ -3687,6 +3859,10 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "The chevron on the coat of a noncommissioned officer. Stars and Stripes. See under Star, n.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To make stripes upon; to form with lines of different colors or textures; to variegate with stripes.",
           "partOfSpeech": "verb"
         },
@@ -3722,24 +3898,6 @@
       "definitions": [
         {
           "text": "A youth in the state of adolescence, or just passing from boyhood to manhood; a lad. Inquire thou whose son the stripling is. 1 Sam. xvii. 56.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "stripofclothcfbindantobindgothbandwabandwoasignsee": {
-      "word": "strip of cloth; cf. bindan to bind, Goth. bandwa, bandwo, a sign. See",
-      "definitions": [
-        {
-          "text": "A kind of flag attached to a spear or pike by a crosspiece, and used by a chief as his standard in battle. Hang out our banners on the outward walls. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A large piece of silk or other cloth, with a device or motto, extended on a crosspiece, and borne in a procession, or suspended in some conspicuous place.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Any flag or standard; as, the star-spangled banner. Banner fish (Zoöl.), a large fish of the genus Histiophorus, of the Swordfish family, having a broad bannerlike dorsal fin; the sailfish. One species (H. Americanus) inhabits the North Atlantic.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3849,6 +4007,16 @@
       ],
       "relatedWords": []
     },
+    "striving": {
+      "word": "STRIVING",
+      "definitions": [
+        {
+          "text": "from Strive.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "strix": {
       "word": "STRIX",
       "definitions": [
@@ -3888,6 +4056,26 @@
       "definitions": [
         {
           "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A scaly multiple fruit resulting from the ripening of an ament in certain plants, as the hop or pine; a cone. See Cone, n., 3.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An individual asexually producing sexual individuals differing from itself also in other respects, as the tapeworm, -- one of the forms that occur in metagenesis.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Strobila.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4361,7 +4549,7 @@
       "word": "STRONG-MINDED",
       "definitions": [
         {
-          "text": "Having a vigorous mind; esp., having or affecting masculine",
+          "text": "Having a vigorous mind; esp., having or affecting masculine qualities of mind; -- said of women.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4537,7 +4725,17 @@
       ],
       "relatedWords": []
     },
-    "strophiolatestrophiolated": {
+    "strophiolate": {
+      "word": "STROPHIOLATE; STROPHIOLATED",
+      "definitions": [
+        {
+          "text": "Furnished with a strophiole, or caruncle, or that which resembles it. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "strophiolated": {
       "word": "STROPHIOLATE; STROPHIOLATED",
       "definitions": [
         {
@@ -5011,6 +5209,10 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To hold apart. Cf. Strut, n., 3.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "Protuberant. [Obs.] Holland.",
           "partOfSpeech": "adjective"
         }
@@ -5073,6 +5275,16 @@
         {
           "text": "One who struts.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "strutting": {
+      "word": "STRUTTING",
+      "definitions": [
+        {
+          "text": "from Strut, v.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

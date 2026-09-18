@@ -95,6 +95,16 @@
       ],
       "relatedWords": []
     },
+    "moanful": {
+      "word": "MOANFUL",
+      "definitions": [
+        {
+          "text": "Full of moaning; expressing sorrow.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "moat": {
       "word": "MOAT",
       "definitions": [
@@ -647,7 +657,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The scale as affected by the various positions in it of the minor intervals; as, the Dorian mode, the Ionic mode, etc., of ancient Greek music.",
+          "text": "The scale as affected by the various positions in it of the minor intervals; as, the Dorian mode, the Ionic mode, etc., of ancient Greek music. key, are recognized.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of silk. See Alamode, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1581,7 +1595,7 @@
       ],
       "relatedWords": []
     },
-    "mohammedanismmohammedism": {
+    "mohammedanism": {
       "word": "MOHAMMEDANISM; MOHAMMEDISM",
       "definitions": [
         {
@@ -1591,7 +1605,27 @@
       ],
       "relatedWords": []
     },
-    "mohammedanizemohammedize": {
+    "mohammedism": {
+      "word": "MOHAMMEDANISM; MOHAMMEDISM",
+      "definitions": [
+        {
+          "text": "The religion, or doctrines and precepts, of Mohammed, contained in the Koran; Islamism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mohammedanize": {
+      "word": "MOHAMMEDANIZE; MOHAMMEDIZE",
+      "definitions": [
+        {
+          "text": "To make conformable to the principles, or customs and rites, of Mohammedanism. [Written also Mahometanize.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mohammedize": {
       "word": "MOHAMMEDANIZE; MOHAMMEDIZE",
       "definitions": [
         {
@@ -1689,7 +1723,7 @@
       ],
       "relatedWords": []
     },
-    "mohurrummuharram": {
+    "mohurrum": {
       "word": "MOHURRUM; MUHARRAM",
       "definitions": [
         {
@@ -2037,13 +2071,15 @@
         {
           "text": "A spot; a blemish; a mole. [Obs.] Spenser.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "moldmould": {
-      "word": "MOLD; MOULD",
-      "definitions": [
+        },
+        {
+          "text": "Crumbling, soft, friable earth; esp., earth containing the remains or constituents of organic matter, and suited to the growth of plants; soil.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Earthy material; the matter of which anything is formed; composing substance; material. The etherial mold, Incapable of stain. Milton. Nature formed me of her softest mold. Addison.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To cover with mold or soil. [R.]",
           "partOfSpeech": "verb"
@@ -2119,7 +2155,97 @@
       ],
       "relatedWords": []
     },
-    "moldablemouldable": {
+    "mould": {
+      "word": "MOLD; MOULD",
+      "definitions": [
+        {
+          "text": "Crumbling, soft, friable earth; esp., earth containing the remains or constituents of organic matter, and suited to the growth of plants; soil.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Earthy material; the matter of which anything is formed; composing substance; material. The etherial mold, Incapable of stain. Milton. Nature formed me of her softest mold. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cover with mold or soil. [R.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A growth of minute fungi of various kinds, esp. those of the great groups Hyphomycetes, and Physomycetes, forming on damp or decaying organic matter. the scarlet or orange strata which grow on tubers or roots stored up for use, when commencing to decay, are familiar examples. M. J. Berkley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cause to become moldy; to cause mold to grow upon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To become moldy; to be covered or filled, in whole or in part, with a mold.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The matrix, or cavity, in which anything is shaped, and from which it takes its form; also, the body or mass containing the cavity; as, a sand mold; a jelly mold. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That on which, or in accordance with which, anything is modeled or formed; anything which serves to regulate the size, form, etc., as the pattern or templet used by a shipbuilder, carpenter, or mason. The glass of fashion and the mold of form. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Cast; form; shape; character. Crowned with an architrave of antique mold. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A group of moldings; as, the arch mold of a porch or doorway; the pier mold of a Gothic pier, meaning the whole profile, section, or combination of parts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fontanel.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Paper Making)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A frame with a wire cloth bottom, on which the pump is drained to form a sheet, in making paper by hand.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To form into a particular shape; to shape; to model; to fashion. He forgeth and moldeth metals. Sir M. Hale. Did I request thee, Maker, from my clay To mold me man Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To ornament by molding or carving the material of; as, a molded window jamb.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To knead; as, to mold dough or bread.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Founding)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To form a mold of, as in sand, in which a casting may be made.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Mold, Molder, Moldy, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "moldable": {
       "word": "MOLDABLE; MOULDABLE",
       "definitions": [
         {
@@ -2129,7 +2255,17 @@
       ],
       "relatedWords": []
     },
-    "moldboardmouldboard": {
+    "mouldable": {
+      "word": "MOLDABLE; MOULDABLE",
+      "definitions": [
+        {
+          "text": "Capable of being molded or formed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "moldboard": {
       "word": "MOLDBOARD; MOULDBOARD",
       "definitions": [
         {
@@ -2147,7 +2283,25 @@
       ],
       "relatedWords": []
     },
-    "moldermoulder": {
+    "mouldboard": {
+      "word": "MOLDBOARD; MOULDBOARD",
+      "definitions": [
+        {
+          "text": "A curved plate of iron (originally of wood) back of the share of a plow, which turns over the earth in plowing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Founding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A follow board.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "molder": {
       "word": "MOLDER; MOULDER",
       "definitions": [
         {
@@ -2165,7 +2319,29 @@
       ],
       "relatedWords": []
     },
-    "molderymouldery": {
+    "moulder": {
+      "word": "MOLDER; MOULDER",
+      "definitions": [
+        {
+          "text": "One who, or that which, molds or forms into shape; specifically (Founding), one skilled in the art of making molds for castings.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To crumble into small particles; to turn to dust by natural decay; to lose form, or waste away, by a gradual separation of the component particles, without the presence of water; to crumble away. The moldering of earth in frosts and sun. Bacon. When statues molder, and when arches fall. Prior. If he had sat still, the enemy's army would have moldered to nothing. Clarendon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To turn to dust; to cause to crumble; to cause to waste away. [Time's] gradual touch Has moldered into beauty many a tower. Mason.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Mold, Molder, Moldy, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "moldery": {
       "word": "MOLDERY; MOULDERY",
       "definitions": [
         {
@@ -2175,7 +2351,17 @@
       ],
       "relatedWords": []
     },
-    "moldinessmouldiness": {
+    "mouldery": {
+      "word": "MOLDERY; MOULDERY",
+      "definitions": [
+        {
+          "text": "Covered or filled with mold; consisting of, or resembling, mold.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "moldiness": {
       "word": "MOLDINESS; MOULDINESS",
       "definitions": [
         {
@@ -2185,7 +2371,17 @@
       ],
       "relatedWords": []
     },
-    "moldingmoulding": {
+    "mouldiness": {
+      "word": "MOLDINESS; MOULDINESS",
+      "definitions": [
+        {
+          "text": "The state of being moldy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "molding": {
       "word": "MOLDING; MOULDING",
       "definitions": [
         {
@@ -2201,17 +2397,43 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A plane, or curved, narrow surface, either sunk or projecting, used for decoration by means of the lights and shades upon its surface. Moldings vary greatly in pattern, and are generally used in",
+          "text": "A plane, or curved, narrow surface, either sunk or projecting, used for decoration by means of the lights and shades upon its surface. Moldings vary greatly in pattern, and are generally used in groups, the different members of each group projecting or retreating, one beyond another. See Cable, n., 3, and Crenelated molding, under Crenelate, v. t.",
           "partOfSpeech": "noun"
         },
         {
-          "text": "Used in making a mold or moldings; used in shaping anything",
+          "text": "Used in making a mold or moldings; used in shaping anything according to a pattern. Molding, or Moulding, board. (a) See Follow board, under Follow, v. t. (b) A board on which bread or pastry is kneaded and shaped. machine for making moldings. (b) (Founding) A machine to assist in making molds for castings. clay, used in making molds.",
           "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "moldwarpmouldwarp": {
+    "moulding": {
+      "word": "MOLDING; MOULDING",
+      "definitions": [
+        {
+          "text": "The act or process of shaping in or on a mold, or of making molds; the art or occupation of a molder.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything cast in a mold, or which appears to be so, as grooved or ornamental bars of wood or metal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plane, or curved, narrow surface, either sunk or projecting, used for decoration by means of the lights and shades upon its surface. Moldings vary greatly in pattern, and are generally used in groups, the different members of each group projecting or retreating, one beyond another. See Cable, n., 3, and Crenelated molding, under Crenelate, v. t.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Used in making a mold or moldings; used in shaping anything according to a pattern. Molding, or Moulding, board. (a) See Follow board, under Follow, v. t. (b) A board on which bread or pastry is kneaded and shaped. machine for making moldings. (b) (Founding) A machine to assist in making molds for castings. clay, used in making molds.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "moldwarp": {
       "word": "MOLDWARP; MOULDWARP",
       "definitions": [
         {
@@ -2221,12 +2443,36 @@
       ],
       "relatedWords": []
     },
-    "moldymouldy": {
+    "mouldwarp": {
+      "word": "MOLDWARP; MOULDWARP",
+      "definitions": [
+        {
+          "text": "See Mole the animal. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "moldy": {
       "word": "MOLDY; MOULDY",
       "definitions": [
         {
           "text": "Overgrown with, or containing, mold; as, moldy cheese or bread.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mouldy": {
+      "word": "MOLDY; MOULDY",
+      "definitions": [
+        {
+          "text": "Overgrown with, or containing, mold; as, moldy cheese or bread.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Mold, Molder, Moldy, etc.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -2379,7 +2625,17 @@
       ],
       "relatedWords": []
     },
-    "molendinaceousmolendinarious": {
+    "molendinaceous": {
+      "word": "MOLENDINACEOUS; MOLENDINARIOUS",
+      "definitions": [
+        {
+          "text": "Resembling the sails of a windmill.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "molendinarious": {
       "word": "MOLENDINACEOUS; MOLENDINARIOUS",
       "definitions": [
         {
@@ -2443,7 +2699,17 @@
       ],
       "relatedWords": []
     },
-    "molestiemolesty": {
+    "molestie": {
+      "word": "MOLESTIE; MOLESTY",
+      "definitions": [
+        {
+          "text": "Molestation. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "molesty": {
       "word": "MOLESTIE; MOLESTY",
       "definitions": [
         {
@@ -2801,7 +3067,17 @@
       ],
       "relatedWords": []
     },
-    "molokanemolokany": {
+    "molokane": {
+      "word": "MOLOKANE; MOLOKANY",
+      "definitions": [
+        {
+          "text": "See Raskolnik.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "molokany": {
       "word": "MOLOKANE; MOLOKANY",
       "definitions": [
         {
@@ -2857,11 +3133,23 @@
         {
           "text": "of Melt. Chaucer. Spenser.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "To shed or cast the hair, feathers, skin, horns, or the like, as an animal or a bird. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cast, as the hair, skin, feathers, or the like; to shed.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "The act or process of changing the feathers, hair, skin, etc.; molting.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "moltmoult": {
+    "moult": {
       "word": "MOLT; MOULT",
       "definitions": [
         {
@@ -2875,6 +3163,10 @@
         {
           "text": "The act or process of changing the feathers, hair, skin, etc.; molting.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Molt.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -3091,7 +3383,17 @@
       ],
       "relatedWords": []
     },
-    "momentaneousmomentany": {
+    "momentaneous": {
+      "word": "MOMENTANEOUS; MOMENTANY",
+      "definitions": [
+        {
+          "text": "Momentary. [Obs.] Hooker. \"Momentany as a sound.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "momentany": {
       "word": "MOMENTANEOUS; MOMENTANY",
       "definitions": [
         {
@@ -3149,7 +3451,7 @@
       "word": "MOMENTOUS",
       "definitions": [
         {
-          "text": "Of moment or consequence; very important; weighty; as, a",
+          "text": "Of moment or consequence; very important; weighty; as, a momentous decision; momentous affairs.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3218,6 +3520,10 @@
       "definitions": [
         {
           "text": "Same as Mono-.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A prefix signifying one, single, alone; as, monocarp, monopoly; (Chem.) indicating that a compound contains one atom, radical, or group of that to the name of which it is united; as, monoxide, monosulphide, monatomic, etc.",
           "partOfSpeech": ""
         }
       ],
@@ -3325,11 +3631,41 @@
       ],
       "relatedWords": []
     },
-    "monadelphianmonadelphous": {
+    "monadelphian": {
       "word": "MONADELPHIAN; MONADELPHOUS",
       "definitions": [
         {
           "text": "Of or pertaining to the Monadelphia; having the stamens united in one body by the filaments.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monadelphous": {
+      "word": "MONADELPHIAN; MONADELPHOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Monadelphia; having the stamens united in one body by the filaments.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monadic": {
+      "word": "MONADIC; MONADICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or like, a monad, in any of its senses. See Monad, n. Dr. H. More.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monadical": {
+      "word": "MONADIC; MONADICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or like, a monad, in any of its senses. See Monad, n. Dr. H. More.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3525,6 +3861,26 @@
       ],
       "relatedWords": []
     },
+    "monarchic": {
+      "word": "MONARCHIC; MONARCHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a monarch, or to monarchy. Burke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monarchical": {
+      "word": "MONARCHIC; MONARCHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a monarch, or to monarchy. Burke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "monarchism": {
       "word": "MONARCHISM",
       "definitions": [
@@ -3607,6 +3963,16 @@
       ],
       "relatedWords": []
     },
+    "monasterial": {
+      "word": "MONASTERIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to monastery, or to monastic life.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "monastery": {
       "word": "MONASTERY",
       "definitions": [
@@ -3623,11 +3989,19 @@
         {
           "text": "A monk.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to monasteries, or to their occupants, rules, etc., as, monastic institutions or rules.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Secluded from temporal concerns and devoted to religion; recluse. \"A life monastic.\" Denham.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "monasticmonastical": {
+    "monastical": {
       "word": "MONASTIC; MONASTICAL",
       "definitions": [
         {
@@ -3725,12 +4099,32 @@
       ],
       "relatedWords": []
     },
-    "monecianmonecious": {
+    "monecian": {
       "word": "MONECIAN; MONECIOUS",
       "definitions": [
         {
           "text": "See Monoecian, and Monoecious.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monecious": {
+      "word": "MONECIAN; MONECIOUS",
+      "definitions": [
+        {
+          "text": "See Monoecian, and Monoecious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monembryony": {
+      "word": "MONEMBRYONY",
+      "definitions": [
+        {
+          "text": "The condition of an ovule having but a single embryo.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3873,7 +4267,15 @@
       "word": "MONEY",
       "definitions": [
         {
-          "text": "A piece of metal, as gold, silver, copper, etc., coined, or stamped, and issued by the sovereign authority as a medium of exchange in financial transactions between citizens and with government; also, any number of such pieces; coin. To prevent such abuses, ... it has been found necessary ... to affix a public stamp upon certain quantities of such particular metals, as were in those countries commonly made use of to purchase goods. Hence",
+          "text": "A piece of metal, as gold, silver, copper, etc., coined, or stamped, and issued by the sovereign authority as a medium of exchange in financial transactions between citizens and with government; also, any number of such pieces; coin. To prevent such abuses, ... it has been found necessary ... to affix a public stamp upon certain quantities of such particular metals, as were in those countries commonly made use of to purchase goods. Hence the origin of coined money, and of those public offices called mints. A. Smith.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any written or stamped promise, certificate, or order, as a government note, a bank note, a certificate of deposit, etc., which is payable in standard coined money and is lawfully current in lieu of it; in a comprehensive sense, any currency usually and lawfully employed in buying and selling. effecting exchanges of property, and in the terms of which values are reckoned, as sheep, wampum, copper rings, quills of salt or of gold dust, shovel blades, etc., is, in common language, called their money.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In general, wealth; property; as, he has much money in land, or in stocks; to make, or lose, money. The love of money is a root of all kinds of evil. 1 Tim vi. 10 (Rev. Ver. ). Money bill (Legislation), a bill for raising revenue. who buys and sells bills of exchange; -- called also money changer. C. moneta) formerly much used as money by savage tribes. See Cowrie. accounts, for which there may, or may not, be an equivalent coin; e.g., the mill is a money of account in the United States, but not a coin. government order for the payment of money, issued at one post office as payable at another; -- called also postal money order. others. [Eng.] -- Money spider, Money spinner (Zoöl.), a small spider; -- so called as being popularly supposed to indicate that the person upon whom it crawls will be fortunate in money matters. paid. the time of a transaction; cash. profit in dealings.",
           "partOfSpeech": "noun"
         },
         {
@@ -4057,7 +4459,7 @@
       ],
       "relatedWords": []
     },
-    "mongolsmongolians": {
+    "mongols": {
       "word": "MONGOLS; MONGOLIANS",
       "definitions": [
         {
@@ -4067,7 +4469,27 @@
       ],
       "relatedWords": []
     },
-    "mongoosemongoos": {
+    "mongolians": {
+      "word": "MONGOLS; MONGOLIANS",
+      "definitions": [
+        {
+          "text": "One of the great races of man, including the greater part of the inhabitants of China, Japan, and the interior of Asia, with branches in Northern Europe and other parts of the world. By some American Indians are considered a branch of the Mongols. In a more restricted sense, the inhabitants of Mongolia and adjacent countries, including the Burats and the Kalmuks.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mongoose": {
+      "word": "MONGOOSE; MONGOOS",
+      "definitions": [
+        {
+          "text": "A species of ichneumon (Herpestes griseus), native of India. Applied also to other allied species, as the African banded mongoose (Crossarchus fasciatus). [Written also mungoose, mungoos, mungous.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mongoos": {
       "word": "MONGOOSE; MONGOOS",
       "definitions": [
         {
@@ -4371,7 +4793,17 @@
       ],
       "relatedWords": []
     },
-    "monitressmonitrix": {
+    "monitress": {
+      "word": "MONITRESS; MONITRIX",
+      "definitions": [
+        {
+          "text": "A female monitor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monitrix": {
       "word": "MONITRESS; MONITRIX",
       "definitions": [
         {
@@ -4535,7 +4967,7 @@
       "word": "MONKISH",
       "definitions": [
         {
-          "text": "Like a monk, or pertaining to monks; monastic; as, monkish",
+          "text": "Like a monk, or pertaining to monks; monastic; as, monkish manners; monkish dress; monkish solitude.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4571,19 +5003,13 @@
       ],
       "relatedWords": []
     },
-    "monomon": {
+    "mono": {
       "word": "MONO-; MON-",
       "definitions": [
         {
           "text": "A prefix signifying one, single, alone; as, monocarp, monopoly; (Chem.) indicating that a compound contains one atom, radical, or group of that to the name of which it is united; as, monoxide, monosulphide, monatomic, etc.",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "mono": {
-      "word": "MONO",
-      "definitions": [
+        },
         {
           "text": "The black howler of Central America (Mycetes villosus).",
           "partOfSpeech": "noun"
@@ -4645,7 +5071,17 @@
       ],
       "relatedWords": []
     },
-    "monocarpicmonocarpous": {
+    "monocarpic": {
+      "word": "MONOCARPIC; MONOCARPOUS",
+      "definitions": [
+        {
+          "text": "Bearing fruit but once, and dying after fructification, as beans, maize, mustard, etc. of longer duration, as the century plant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monocarpous": {
       "word": "MONOCARPIC; MONOCARPOUS",
       "definitions": [
         {
@@ -4957,7 +5393,17 @@
       ],
       "relatedWords": []
     },
-    "monodelphmonodelphian": {
+    "monodelph": {
+      "word": "MONODELPH; MONODELPHIAN",
+      "definitions": [
+        {
+          "text": "One of the Monodelphia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monodelphian": {
       "word": "MONODELPH; MONODELPHIAN",
       "definitions": [
         {
@@ -4977,7 +5423,7 @@
       ],
       "relatedWords": []
     },
-    "monodelphicmonodelphous": {
+    "monodelphic": {
       "word": "MONODELPHIC; MONODELPHOUS",
       "definitions": [
         {
@@ -4987,7 +5433,31 @@
       ],
       "relatedWords": []
     },
-    "monodicmonodical": {
+    "monodelphous": {
+      "word": "MONODELPHIC; MONODELPHOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Monodelphia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monodic": {
+      "word": "MONODIC; MONODICAL",
+      "definitions": [
+        {
+          "text": "Belonging to a monody.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mus.) (a) For one voice; monophonic. (b) Homophonic; -- applied to music in which the melody is confined to one part, instead of being shared by all the parts as in the style called polyphonic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monodical": {
       "word": "MONODIC; MONODICAL",
       "definitions": [
         {
@@ -5021,7 +5491,17 @@
       ],
       "relatedWords": []
     },
-    "monodramamonodrame": {
+    "monodrama": {
+      "word": "MONODRAMA; MONODRAME",
+      "definitions": [
+        {
+          "text": "A drama acted, or intended to be acted, by a single person.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monodrame": {
       "word": "MONODRAMA; MONODRAME",
       "definitions": [
         {
@@ -5147,7 +5627,25 @@
       ],
       "relatedWords": []
     },
-    "monogamianmonogamic": {
+    "monogamian": {
+      "word": "MONOGAMIAN; MONOGAMIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or involving, monogamy.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the Monogamia; having a simple flower with united anthers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monogamic": {
       "word": "MONOGAMIAN; MONOGAMIC",
       "definitions": [
         {
@@ -5445,11 +5943,21 @@
       ],
       "relatedWords": []
     },
-    "monographicmonographical": {
+    "monographic": {
       "word": "MONOGRAPHIC; MONOGRAPHICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a monograph, or to a monography; as, a",
+          "text": "Of or pertaining to a monograph, or to a monography; as, a monographic writing; a monographic picture.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monographical": {
+      "word": "MONOGRAPHIC; MONOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a monograph, or to a monography; as, a monographic writing; a monographic picture.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5645,7 +6153,17 @@
       ],
       "relatedWords": []
     },
-    "monomachiamonomachy": {
+    "monomachia": {
+      "word": "MONOMACHIA; MONOMACHY",
+      "definitions": [
+        {
+          "text": "A duel; single combat. \"The duello or monomachia.\" Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monomachy": {
       "word": "MONOMACHIA; MONOMACHY",
       "definitions": [
         {
@@ -5691,11 +6209,15 @@
         {
           "text": "A person affected by monomania.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Affected with monomania, or partial derangement of intellect; caused by, or resulting from, monomania; as, a monomaniacal delusion.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "monomaniacmonomaniacal": {
+    "monomaniacal": {
       "word": "MONOMANIAC; MONOMANIACAL",
       "definitions": [
         {
@@ -5801,7 +6323,17 @@
       ],
       "relatedWords": []
     },
-    "monomorphicmonomorphous": {
+    "monomorphic": {
+      "word": "MONOMORPHIC; MONOMORPHOUS",
+      "definitions": [
+        {
+          "text": "Having but a single form; retaining the same form throughout the various stages of development; of the same or of an essentially similar type of structure; -- opposed to dimorphic, trimorphic, and polymorphic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monomorphous": {
       "word": "MONOMORPHIC; MONOMORPHOUS",
       "definitions": [
         {
@@ -5821,7 +6353,7 @@
       ],
       "relatedWords": []
     },
-    "monomyamonomyaria": {
+    "monomya": {
       "word": "MONOMYA; MONOMYARIA",
       "definitions": [
         {
@@ -5831,7 +6363,31 @@
       ],
       "relatedWords": []
     },
-    "monomyarianmonomyary": {
+    "monomyaria": {
+      "word": "MONOMYA; MONOMYARIA",
+      "definitions": [
+        {
+          "text": "An order of lamellibranchs having but one muscle for closing the shell, as the oyster.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monomyarian": {
+      "word": "MONOMYARIAN; MONOMYARY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Monomya.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the Monomya.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monomyary": {
       "word": "MONOMYARIAN; MONOMYARY",
       "definitions": [
         {
@@ -5855,12 +6411,32 @@
       ],
       "relatedWords": []
     },
-    "monoousianmonoousious": {
+    "monoousian": {
       "word": "MONOOUSIAN; MONOOUSIOUS",
       "definitions": [
         {
           "text": "Having but one and the same nature or essence.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monoousious": {
+      "word": "MONOOUSIAN; MONOOUSIOUS",
+      "definitions": [
+        {
+          "text": "Having but one and the same nature or essence.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monopathy": {
+      "word": "MONOPATHY",
+      "definitions": [
+        {
+          "text": "Suffering or sensibility in a single organ or function.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -6239,7 +6815,17 @@
       ],
       "relatedWords": []
     },
-    "monosaccharidemonosaccharid": {
+    "monosaccharide": {
+      "word": "MONOSACCHARIDE; MONOSACCHARID",
+      "definitions": [
+        {
+          "text": "A simple sugar; any of a number of sugars (including the trioses, tetroses, pentoses, hexoses, etc.), not decomposable into simpler sugars by hydrolysis. Specif., as used by some, a hexose. The monosaccharides are all open-chain compounds containing hydroxyl groups and either an aldehyde group or a ketone group.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monosaccharid": {
       "word": "MONOSACCHARIDE; MONOSACCHARID",
       "definitions": [
         {
@@ -6269,7 +6855,17 @@
       ],
       "relatedWords": []
     },
-    "monospermalmonospermous": {
+    "monospermal": {
+      "word": "MONOSPERMAL; MONOSPERMOUS",
+      "definitions": [
+        {
+          "text": "Having only one seed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monospermous": {
       "word": "MONOSPERMAL; MONOSPERMOUS",
       "definitions": [
         {
@@ -6353,7 +6949,7 @@
       "word": "MONOSYLLABIC",
       "definitions": [
         {
-          "text": "Being a monosyllable, or composed of monosyllables; as, a",
+          "text": "Being a monosyllable, or composed of monosyllables; as, a monosyllabic word; a monosyllabic language.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6389,7 +6985,17 @@
       ],
       "relatedWords": []
     },
-    "monosymmetricmonosymmetrical": {
+    "monosymmetric": {
+      "word": "MONOSYMMETRIC; MONOSYMMETRICAL",
+      "definitions": [
+        {
+          "text": "Same as Monoclinic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monosymmetrical": {
       "word": "MONOSYMMETRIC; MONOSYMMETRICAL",
       "definitions": [
         {
@@ -6489,7 +7095,17 @@
       ],
       "relatedWords": []
     },
-    "monothelismmonothelitism": {
+    "monothelism": {
+      "word": "MONOTHELISM; MONOTHELITISM",
+      "definitions": [
+        {
+          "text": "The doctrine of the Monothelites.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monothelitism": {
       "word": "MONOTHELISM; MONOTHELITISM",
       "definitions": [
         {
@@ -6573,7 +7189,17 @@
       ],
       "relatedWords": []
     },
-    "monotonicmonotonical": {
+    "monotonic": {
+      "word": "MONOTONIC; MONOTONICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or uttered in, a monotone; monotonous. \"Monotonical declamation.\" Chesterfield.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monotonical": {
       "word": "MONOTONIC; MONOTONICAL",
       "definitions": [
         {
@@ -6597,7 +7223,7 @@
       "word": "MONOTONOUS",
       "definitions": [
         {
-          "text": "Uttered in one unvarying tone; continued with dull uniformity;",
+          "text": "Uttered in one unvarying tone; continued with dull uniformity; characterized by monotony; without change or variety; wearisome.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6667,7 +7293,17 @@
       ],
       "relatedWords": []
     },
-    "monotypemonotypic": {
+    "monotype": {
+      "word": "MONOTYPE; MONOTYPIC",
+      "definitions": [
+        {
+          "text": "Having but one type; containing but one representative; as, a monotypic genus, which contains but one species.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monotypic": {
       "word": "MONOTYPE; MONOTYPIC",
       "definitions": [
         {
@@ -6713,6 +7349,16 @@
         {
           "text": "Made of one piece of wood.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "monozoa": {
+      "word": "MONOZOA",
+      "definitions": [
+        {
+          "text": "A division of Radiolaria; -- called also Monocyttaria.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -6959,7 +7605,7 @@
       "word": "MONTANIST",
       "definitions": [
         {
-          "text": "A follower of Mintanus, a Phrygian enthusiast of the second century, who claimed that the Holy Spirit, the Paraclete, dwelt in him, and employed him as an instrument for purifying and guiding men",
+          "text": "A follower of Mintanus, a Phrygian enthusiast of the second century, who claimed that the Holy Spirit, the Paraclete, dwelt in him, and employed him as an instrument for purifying and guiding men in the Christian life.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7023,6 +7669,10 @@
         {
           "text": "See Monteth.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A vessel in which glasses are washed; -- so called from the name of the inventor. New things produce new words, and thus Monteth Has by one vessel saved his name from death. King.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -7047,6 +7697,16 @@
       ],
       "relatedWords": []
     },
+    "montero": {
+      "word": "MONTERO",
+      "definitions": [
+        {
+          "text": "An ancient kind of cap worn by horsemen or huntsmen. Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "montessorimethod": {
       "word": "MONTESSORI METHOD",
       "definitions": [
@@ -7057,7 +7717,7 @@
       ],
       "relatedWords": []
     },
-    "montethmonteith": {
+    "monteth": {
       "word": "MONTETH; MONTEITH",
       "definitions": [
         {
@@ -7411,7 +8071,17 @@
       ],
       "relatedWords": []
     },
-    "moolahmoollah": {
+    "moolah": {
+      "word": "MOOLAH; MOOLLAH",
+      "definitions": [
+        {
+          "text": "See Mollah.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "moollah": {
       "word": "MOOLAH; MOOLLAH",
       "definitions": [
         {
@@ -7427,6 +8097,18 @@
         {
           "text": "Same as Mulley.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mulley or polled animal. [U. S.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cow. [Prov. Eng.; U.S., a child's word.] Leave milking and dry up old mulley, thy cow. Tusser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Destitute of horns, although belonging to a species of animals most of which have horns; hornless; polled; as, mulley cattle; a mulley (or moolley) cow. [U. S.] [Written also muley.]",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -8055,7 +8737,15 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "A meeting for discussion and deliberation; esp., a meeting of the people of a village or district, in Anglo-Saxon times, for the discussion and settlement of matters of common interest; -- usually",
+          "text": "A meeting for discussion and deliberation; esp., a meeting of the people of a village or district, in Anglo-Saxon times, for the discussion and settlement of matters of common interest; -- usually in composition; as, folk-moot. J. R. Green.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [From Moot, v.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A discussion or debate; especially, a discussion of fictitious causes by way of practice. The pleading used in courts and chancery called moots. Sir T. Elyot. Moot case, a case or question to be mooted; a disputable case; an unsettled question. Dryden. practicing the conduct of law cases. question.",
           "partOfSpeech": "noun"
         },
         {
@@ -8085,7 +8775,17 @@
       ],
       "relatedWords": []
     },
-    "moothallmoothouse": {
+    "moothall": {
+      "word": "MOOT-HALL; MOOT-HOUSE",
+      "definitions": [
+        {
+          "text": "A hall for public meetings; a hall of judgment. [Obs.] \"The moot-hall of Herod.\" Wyclif.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "moothouse": {
       "word": "MOOT-HALL; MOOT-HOUSE",
       "definitions": [
         {
@@ -8193,6 +8893,16 @@
       ],
       "relatedWords": []
     },
+    "mopish": {
+      "word": "MOPISH",
+      "definitions": [
+        {
+          "text": "Dull; spiritless; dejected.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "moplah": {
       "word": "MOPLAH",
       "definitions": [
@@ -8221,7 +8931,21 @@
       ],
       "relatedWords": []
     },
-    "mopseymopsy": {
+    "mopsey": {
+      "word": "MOPSEY; MOPSY",
+      "definitions": [
+        {
+          "text": "A moppet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A slatternly, untidy woman. Halliwell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mopsy": {
       "word": "MOPSEY; MOPSY",
       "definitions": [
         {
@@ -8569,6 +9293,10 @@
       "word": "MORAVIAN",
       "definitions": [
         {
+          "text": "Of or pertaining to Moravia, or to the United Brethren. See Moravian, n.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "One of a religious sect called the United Brethern (an offshoot of the Hussites in Bohemia), which formed a separate church of Moravia, a northern district of Austria, about the middle of the 15th century. After being nearly extirpated by persecution, the society, under the name of The Renewed Church of the United Brethren, was reëstablished in 1722-35 on the estates of Count Zinzendorf in Saxony. Called also Herrnhuter.",
           "partOfSpeech": "noun"
         }
@@ -8669,7 +9397,17 @@
       ],
       "relatedWords": []
     },
-    "morbificmorbifical": {
+    "morbific": {
+      "word": "MORBIFIC; MORBIFICAL",
+      "definitions": [
+        {
+          "text": "Causing disease; generating a sickly state; as, a morbific matter.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "morbifical": {
       "word": "MORBIFIC; MORBIFICAL",
       "definitions": [
         {
@@ -8723,7 +9461,7 @@
       "word": "MORDACIOUS",
       "definitions": [
         {
-          "text": "Biting; given to biting; hence, figuratively, sarcastic;",
+          "text": "Biting; given to biting; hence, figuratively, sarcastic; severe; scathing.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8851,6 +9589,14 @@
         {
           "text": "A root. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Greater; superior; increased; as: (a) Greater in quality, amount, degree, quality, and the like; with the singular. He gat more money. Chaucer. If we procure not to ourselves more woe. Milton. other qualifying word, -- a, the, this, their, etc., -- which now requires the substitution of greater, further, or the like, for more. Whilst sisters nine, which dwell on Parnasse height, Do make them music for their more delight. Spenser. The more part knew not wherefore they were come together. Acts xix. 32. Wrong not that wrong with a more contempt. Shak. (b) Greater in number; exceeding in numbers; -- with the plural. The people of the children of Israel are more and mighter than we. Ex. i. 9.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Additional; other; as, he wept because there were no more words to conquer. With open arms received one poet more. Pope.",
+          "partOfSpeech": "adjective"
         },
         {
           "text": "A greater quantity, amount, or number; that which exceeds or surpasses in any way what it is compared with. And the children of Israel did so, and gathered, some more, some less. Ex. xvi. 17.",
@@ -9021,7 +9767,7 @@
       "word": "MORGANATIC",
       "definitions": [
         {
-          "text": "Pertaining to, in the manner of, or designating, a kind of marriage, called also left-handed marriage, between a man of superior rank and a woman of inferior, in which it is stipulated that neither the latter nor her children shall enjoy the rank or inherit the",
+          "text": "Pertaining to, in the manner of, or designating, a kind of marriage, called also left-handed marriage, between a man of superior rank and a woman of inferior, in which it is stipulated that neither the latter nor her children shall enjoy the rank or inherit the possessions of her husband. Brande & C.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9719,11 +10465,21 @@
       ],
       "relatedWords": []
     },
-    "morphologicmorphological": {
+    "morphologic": {
       "word": "MORPHOLOGIC; MORPHOLOGICAL",
       "definitions": [
         {
-          "text": "Of, pertaining to, or according to, the principles of",
+          "text": "Of, pertaining to, or according to, the principles of morphology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "morphological": {
+      "word": "MORPHOLOGIC; MORPHOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or according to, the principles of morphology.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9965,6 +10721,20 @@
       ],
       "relatedWords": []
     },
+    "morsel": {
+      "word": "MORSEL",
+      "definitions": [
+        {
+          "text": "A little bite or bit of food. Chaucer. Every morsel to a satisfied hunger is only a new labor to a tired digestion. South.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small quantity; a little piece; a fragment.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "morsinghorn": {
       "word": "MORSING HORN",
       "definitions": [
@@ -10197,7 +10967,17 @@
       ],
       "relatedWords": []
     },
-    "mortgageormortgagor": {
+    "mortgageor": {
+      "word": "MORTGAGEOR; MORTGAGOR",
+      "definitions": [
+        {
+          "text": "One who gives a mortgage. order to soften it; but the spelling mortgagor is in fact the prevailing form. When the word is contradistinguished from mortgagee it is accented on the last syllable (",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mortgagor": {
       "word": "MORTGAGEOR; MORTGAGOR",
       "definitions": [
         {
@@ -10403,7 +11183,17 @@
       ],
       "relatedWords": []
     },
-    "mortressmortrew": {
+    "mortress": {
+      "word": "MORTRESS; MORTREW",
+      "definitions": [
+        {
+          "text": "A dish of meats and other ingredients, cooked together; an ollapodrida. Chaucer. Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mortrew": {
       "word": "MORTRESS; MORTREW",
       "definitions": [
         {
@@ -10511,7 +11301,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Of or pertaining to the style of work called mosaic; formed by uniting pieces of different colors; variegated; tessellated; also, composed of various materials or ingredients. A very beautiful mosaic pavement. Addison. Florentine mosaic. See under Florentine. crystalline powder, and used as a pigment in bronzing and gilding wood and metal work. It was called by the alchemists aurum musivum,",
+          "text": "Of or pertaining to the style of work called mosaic; formed by uniting pieces of different colors; variegated; tessellated; also, composed of various materials or ingredients. A very beautiful mosaic pavement. Addison. Florentine mosaic. See under Florentine. crystalline powder, and used as a pigment in bronzing and gilding wood and metal work. It was called by the alchemists aurum musivum, or aurum mosaicum. Called also bronze powder.",
           "partOfSpeech": "adjective"
         },
         {
@@ -10551,7 +11341,17 @@
       ],
       "relatedWords": []
     },
-    "mosasaurmosasaurian": {
+    "mosasaur": {
+      "word": "MOSASAUR; MOSASAURIAN",
+      "definitions": [
+        {
+          "text": "One of an extinct order of reptiles, including Mosasaurus and allied genera. See Mosasauria.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mosasaurian": {
       "word": "MOSASAUR; MOSASAURIAN",
       "definitions": [
         {
@@ -10737,7 +11537,17 @@
       ],
       "relatedWords": []
     },
-    "mossbankermossbunker": {
+    "mossbanker": {
+      "word": "MOSSBANKER; MOSSBUNKER",
+      "definitions": [
+        {
+          "text": "The menhaded.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mossbunker": {
       "word": "MOSSBANKER; MOSSBUNKER",
       "definitions": [
         {
@@ -10795,7 +11605,19 @@
       "word": "MOST",
       "definitions": [
         {
-          "text": "In the greatest or highest degree. Those nearest to this king, and most his favorites, were courtiers and prelates. Milton. superlative degree, being equivalent to the termination -est; as, most vile, most wicked; most illustrious; most rapidly. Formerly, and",
+          "text": "Consisting of the greatest number or quantity; greater in number or quantity than all the rest; nearly all. \"Most men will proclaim every one his own goodness.\" Prov. xx. 6. The cities wherein most of his mighty works were done. Matt. xi. 20.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Greatest in degree; as, he has the most need of it. \"In the moste pride.\" Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Highest in rank; greatest. [Obs.] Chaucer. etc., being omitted, and has the following meanings: 1. The greatest value, number, or part; preponderating portion; highest or chief part. 2. The utmost; greatest possible amount, degree, or result; especially in the phrases to make the most of, at the most, at most. A quarter of a year or some months at the most. Bacon. A covetous man makes the most of what he has. L'Estrange. For the most part, in reference to the larger part of a thing, or to the majority of the persons, instances, or things referred to; as, human beings, for the most part, are superstitious; the view, for the most part, was pleasing. sleeps most an end.\" Massinger.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "In the greatest or highest degree. Those nearest to this king, and most his favorites, were courtiers and prelates. Milton. superlative degree, being equivalent to the termination -est; as, most vile, most wicked; most illustrious; most rapidly. Formerly, and until after the Elizabethan period of our literature, the use of the double superlative was common. See More, adv. The most unkindest cut of all. Shak. The most straitest sect of our religion. Acts xxvi. 5.",
           "partOfSpeech": "adverb"
         }
       ],
@@ -10821,7 +11643,17 @@
       ],
       "relatedWords": []
     },
-    "mosticmostick": {
+    "mostic": {
+      "word": "MOSTIC; MOSTICK",
+      "definitions": [
+        {
+          "text": "A painter's maul-stick.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mostick": {
       "word": "MOSTIC; MOSTICK",
       "definitions": [
         {
@@ -10923,6 +11755,10 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "The flourish sounded on a horn by a huntsman. See Mot, n., 3, and Mort. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "A small particle, as of floating dust; anything proverbially small; a speck. The little motes in the sun do ever stir, though there be no wind. Bacon. We are motes in the midst of generations. Landor.",
           "partOfSpeech": "noun"
         }
@@ -10954,6 +11790,34 @@
       "definitions": [
         {
           "text": "A mote. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any nocturnal lepidopterous insect, or any not included among the butterflies; as, the luna moth; Io moth; hawk moth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any lepidopterous insect that feeds upon garments, grain, etc.; as, the clothes moth; grain moth; bee moth. See these terms under Clothes, Grain, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any one of various other insects that destroy woolen and fur goods, etc., esp. the larvæ of several species of beetles of the genera Dermestes and Anthrenus. Carpet moths are often the larvæ of Anthrenus. See Carpet beetle, under Carpet, Dermestes, Anthrenus.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything which gradually and silently eats, consumes, or wastes any other thing. Moth blight (Zoöl.), any plant louse of the genus Aleurodes, and related genera. They are injurious to various plants. having fringed wings. Blattaria), having large wheel-shaped yellow or whitish flowers.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11319,6 +12183,16 @@
       ],
       "relatedWords": []
     },
+    "motivate": {
+      "word": "MOTIVATE",
+      "definitions": [
+        {
+          "text": "To provide with a motive; to move; impel; induce; incite. -- Mo`ti*va\"tion (#), n. William James.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "motive": {
       "word": "MOTIVE",
       "definitions": [
@@ -11357,6 +12231,16 @@
       ],
       "relatedWords": []
     },
+    "motiveless": {
+      "word": "MOTIVELESS",
+      "definitions": [
+        {
+          "text": "Destitute of a motive; not incited by a motive.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "motivity": {
       "word": "MOTIVITY",
       "definitions": [
@@ -11385,7 +12269,15 @@
       "word": "MOTLEY",
       "definitions": [
         {
-          "text": "Variegated in color; consisting of different colors; dappled;",
+          "text": "Variegated in color; consisting of different colors; dappled; party-colored; as, a motley coat.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Wearing motley or party-colored clothing. See Motley, n., 1. \"A motley fool.\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Composed of different or various parts; heterogeneously made or mixed up; discordantly composite; as, motley style. Byron.",
           "partOfSpeech": "adjective"
         },
         {
@@ -11433,7 +12325,7 @@
       "word": "MOTOGRAPH",
       "definitions": [
         {
-          "text": "A device utilized in the making of a loud-speaking telephone, depending on the fact that the friction between a metallic point and a moving cylinder of moistened chalk, or a moving slip of paper, on",
+          "text": "A device utilized in the making of a loud-speaking telephone, depending on the fact that the friction between a metallic point and a moving cylinder of moistened chalk, or a moving slip of paper, on which it rests is diminished by the passage of a current between the point and the moving surface. -- Mo`to*graph\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11463,11 +12355,15 @@
         {
           "text": "A prime mover; a machine by means of which a source of power, as steam, moving water, electricity, etc., is made available for doing mechanical work.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Causing or setting up motion; pertaining to organs of motion; - - applied especially in physiology to those nerves or nerve fibers which only convey impressions from a nerve center to muscles, thereby causing motion.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "motormotorymotorial": {
+    "motory": {
       "word": "MOTOR; MOTORY; MOTORIAL",
       "definitions": [
         {
@@ -11477,7 +12373,17 @@
       ],
       "relatedWords": []
     },
-    "motorcarmotorcar": {
+    "motorial": {
+      "word": "MOTOR; MOTORY; MOTORIAL",
+      "definitions": [
+        {
+          "text": "Causing or setting up motion; pertaining to organs of motion; - - applied especially in physiology to those nerves or nerve fibers which only convey impressions from a nerve center to muscles, thereby causing motion.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "motorcar": {
       "word": "MOTOR CAR; MOTORCAR",
       "definitions": [
         {
@@ -11491,7 +12397,7 @@
       ],
       "relatedWords": []
     },
-    "motorcyclemotorcycle": {
+    "motorcycle": {
       "word": "MOTOR CYCLE; MOTORCYCLE",
       "definitions": [
         {
@@ -11539,7 +12445,7 @@
       "word": "MOTORIZE",
       "definitions": [
         {
-          "text": "To substitute motor-driven vehicles, or automobiles, for the",
+          "text": "To substitute motor-driven vehicles, or automobiles, for the horses and horse-drawn vehicles of (a fire department, city, etc.). - -Mo`tor*i*za\"tion (#), n.",
           "partOfSpeech": "verb"
         }
       ],
@@ -11707,16 +12613,6 @@
       ],
       "relatedWords": []
     },
-    "mouldmouldermouldy": {
-      "word": "MOULD; MOULDER; MOULDY",
-      "definitions": [
-        {
-          "text": "See Mold, Molder, Moldy, etc.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "moule": {
       "word": "MOULE",
       "definitions": [
@@ -11727,7 +12623,7 @@
       ],
       "relatedWords": []
     },
-    "moulinemoulinet": {
+    "mouline": {
       "word": "MOULINE; MOULINET",
       "definitions": [
         {
@@ -11745,12 +12641,20 @@
       ],
       "relatedWords": []
     },
-    "moult": {
-      "word": "MOULT",
+    "moulinet": {
+      "word": "MOULINE; MOULINET",
       "definitions": [
         {
-          "text": "See Molt.",
-          "partOfSpeech": "verb"
+          "text": "The drum upon which the rope is wound in a capstan, crane, or the like.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A machine formerly used for bending a crossbow by winding it up.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In sword and saber exercises, a circular swing of the weawon.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -11803,31 +12707,25 @@
       ],
       "relatedWords": []
     },
-    "montiscflminaeprotectionseeminentmenacecffmont": {
-      "word": "montis; cf. L. minae protections, E. eminent, menace: cf. F. mont.",
-      "definitions": [
-        {
-          "text": "A mass of earth, or earth and rock, rising considerably above the common surface of the surrounding land; a mountain; a high hill; -- used always instead of mountain, when put before a proper name; as, Mount Washington; otherwise, chiefly in poetry.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A bulwark for offense or defense; a mound. [Obs.] Hew ye down trees, and cast a mount against Jerusalem. Jer. vi. 6.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Etym: [See Mont de piété.]",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A bank; a fund. Mount of piety. See Mont de piété.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "mount": {
       "word": "MOUNT",
       "definitions": [
+        {
+          "text": "A mass of earth, or earth and rock, rising considerably above the common surface of the surrounding land; a mountain; a high hill; -- used always instead of mountain, when put before a proper name; as, Mount Washington; otherwise, chiefly in poetry.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bulwark for offense or defense; a mound. [Obs.] Hew ye down trees, and cast a mount against Jerusalem. Jer. vi. 6.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [See Mont de piété.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bank; a fund. Mount of piety. See Mont de piété.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To rise on high; to go up; to be upraised or uplifted; to tower aloft; to ascend; -- often with up. Though Babylon should mount up to heaven. Jer. li. 53. The fire of trees and houses mounts on high. Cowley.",
           "partOfSpeech": "verb"
@@ -12197,7 +13095,7 @@
       "word": "MOURNFUL",
       "definitions": [
         {
-          "text": "Full of sorrow; expressing, or intended to express, sorrow; mourning; grieving; sad; also, causing sorrow; saddening; grievous;",
+          "text": "Full of sorrow; expressing, or intended to express, sorrow; mourning; grieving; sad; also, causing sorrow; saddening; grievous; as, a mournful person; mournful looks, tones, loss. calamitous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -12286,6 +13184,10 @@
         },
         {
           "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To furnish with a mouse; to secure by means of a mousing. See Mouse, n., 2.",
           "partOfSpeech": "verb"
         }
       ],
@@ -13079,7 +13981,7 @@
       ],
       "relatedWords": []
     },
-    "mozarabmozarabic": {
+    "mozarab": {
       "word": "MOZARAB; MOZARABIC",
       "definitions": [
         {
@@ -13089,7 +13991,27 @@
       ],
       "relatedWords": []
     },
-    "mozettamozzetta": {
+    "mozarabic": {
+      "word": "MOZARAB; MOZARABIC",
+      "definitions": [
+        {
+          "text": "Same as Muzarab, Muzarabic.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "mozetta": {
+      "word": "MOZETTA; MOZZETTA",
+      "definitions": [
+        {
+          "text": "A cape, with a small hood; -- worn by the pope and other dignitaries of the Roman Catholic Church.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mozzetta": {
       "word": "MOZETTA; MOZZETTA",
       "definitions": [
         {

@@ -173,7 +173,17 @@
       ],
       "relatedWords": []
     },
-    "seedlipseedlop": {
+    "seedlip": {
+      "word": "SEEDLIP; SEEDLOP",
+      "definitions": [
+        {
+          "text": "A vessel in which a sower carries the seed to be scattered. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seedlop": {
       "word": "SEEDLIP; SEEDLOP",
       "definitions": [
         {
@@ -343,6 +353,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "The rolling or agitation of a ship in a sterm. [Obs.] Sandys.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Good fortune; favorable opportunity; prosperity. [Obs.] \"So have I seel\". Chaucer.",
           "partOfSpeech": "noun"
         },
@@ -363,7 +377,7 @@
       ],
       "relatedWords": []
     },
-    "seelseeling": {
+    "seeling": {
       "word": "SEEL; SEELING",
       "definitions": [
         {
@@ -386,6 +400,10 @@
     "seem": {
       "word": "SEEM",
       "definitions": [
+        {
+          "text": "To appear, or to appear to be; to have a show or semblance; to present an appearance; to look; to strike one's apprehension or fancy as being; to be taken as. \"It now seemed probable.\" Macaulay. Thou picture of what thou seem'st. Shak. All seemed well pleased; all seemed, but were not all. Milton. There is a way which seemeth right unto a man; but the end thereof are the ways of death. Prov. xiv. 12. It seems, it appears; it is understood as true; it is said. A prince of Italy, it seems, entertained his misstress on a great lake. Addison. presented to our view; as, the sun appears; to seem is connected with the idea of semblance, and usually implies an inference of our mind as to the probability of a thing's being so; as, a storm seems to be coming. \"The story appears to be true,\" means that the facts, as presented, go to show its truth; \"the story seems to be true,\" means that it has the semblance of being so, and we infer that it is true. \"His first and principal care being to appear unto his people such as he would have them be, and to be such as he appeared.\" Sir P. Sidney. Ham. Ay, madam, it is common. Queen. If it be, Why seems it so particular with thee Ham. Seems, madam! Nay, it is; I know not \"seems.\" Shak.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To befit; to beseem. [Obs.] Spenser.",
           "partOfSpeech": "verb"
@@ -475,6 +493,10 @@
       "word": "SEEMLY",
       "definitions": [
         {
+          "text": "Suited to the object, occasion, purpose, or character; suitable; fit; becoming; comely; decorous. He had a seemly nose. Chaucer. I am a woman, lacking wit To make a seemly answer to such persons. Shak. Suspense of judgment and exercise of charity were safer and seemlier for Christian men than the hot pursuit of these controversies. Hooker. decent; decorous.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "In a decent or suitable manner; becomingly. Suddenly a men before him stood, Not rustic as before, but seemlier clad, As one in city or court or place bred. Milton.",
           "partOfSpeech": "adverb"
         }
@@ -487,16 +509,6 @@
         {
           "text": "Comely or decent appearance. [Obs.] Rom. of R. Spenser.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "seemstoissueforthbubblingandboilingfromtheearthcf": {
-      "word": "seems to issue forth bubbling and boiling from the earth. Cf.",
-      "definitions": [
-        {
-          "text": "A stream or rivulet; a burn. My little boat can safely pass this perilous bourn. Spenser.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -515,17 +527,7 @@
       ],
       "relatedWords": []
     },
-    "seepagesipage": {
-      "word": "SEEPAGE; SIPAGE",
-      "definitions": [
-        {
-          "text": "Water that seeped or oozed through a porous soil. [Scot. & U. S.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "seepsipe": {
+    "seep": {
       "word": "SEEP; SIPE",
       "definitions": [
         {
@@ -535,7 +537,17 @@
       ],
       "relatedWords": []
     },
-    "seepysipy": {
+    "seepage": {
+      "word": "SEEPAGE; SIPAGE",
+      "definitions": [
+        {
+          "text": "Water that seeped or oozed through a porous soil. [Scot. & U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seepy": {
       "word": "SEEPY; SIPY",
       "definitions": [
         {
@@ -671,28 +683,6 @@
       ],
       "relatedWords": []
     },
-    "seetameandcfdammotherdandangerdangeondungeondominie": {
-      "word": "See Tame, and cf. Dam mother, Dan, Danger, Dangeon, Dungeon, Dominie,",
-      "definitions": [
-        {
-          "text": "A mistress of a family, who is a lady; a womam in authority; especially, a lady. Then shall these lords do vex me half so much, As that proud dame, the lord protector's wife. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The mistress of a family in common life, or the mistress of a common school; as, a dame's school. In the dame's classes at the village school. Emerson.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A woman in general, esp. an elderly woman.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A mother; -- applied to human beings and quadrupeds. [Obs.] Chaucer.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "seeth": {
       "word": "SEETH",
       "definitions": [
@@ -706,6 +696,10 @@
     "seethe": {
       "word": "SEETHE",
       "definitions": [
+        {
+          "text": "To decoct or prepare for food in hot liquid; to boil; as, to seethe flesh. [Written also seeth.] Set on the great pot, and seethe pottage for the sons of the prophets. 2 Kings iv. 38.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To be a state of ebullition or violent commotion; to be hot; to boil. 1 Sam. ii. 13. A long Pointe, round which the Mississippi used to whirl, and seethe, and foam. G. W. Cable.",
           "partOfSpeech": "verb"

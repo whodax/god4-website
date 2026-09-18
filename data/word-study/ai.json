@@ -1,6 +1,28 @@
 {
   "version": "v1",
   "entries": {
+    "aiglet": {
+      "word": "AGLET; AIGLET",
+      "definitions": [
+        {
+          "text": "A tag of a lace or of the points, braids, or cords formerly used in dress. They were sometimes formed into small images. Hence, \"aglet baby\" (Shak.), an aglet image.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Haberdashery)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A round white staylace. Beck.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Aglet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "ai": {
       "word": "AI",
       "definitions": [
@@ -11,7 +33,7 @@
       ],
       "relatedWords": []
     },
-    "aiblinsablins": {
+    "aiblins": {
       "word": "AIBLINS; ABLINS",
       "definitions": [
         {
@@ -339,16 +361,6 @@
       ],
       "relatedWords": []
     },
-    "aiglet": {
-      "word": "AIGLET",
-      "definitions": [
-        {
-          "text": "Same as Aglet.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "aigre": {
       "word": "AIGRE",
       "definitions": [
@@ -369,7 +381,33 @@
       ],
       "relatedWords": []
     },
-    "aigretaigrette": {
+    "aigret": {
+      "word": "AIGRET; AIGRETTE",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The small white European heron. See Egret.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plume or tuft for the head composed of feathers, or of gems, etc. Prescott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tuft like that of the egret. (Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A feathery crown of seed; egret; as, the aigrette or down of the dandelion or the thistle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aigrette": {
       "word": "AIGRET; AIGRETTE",
       "definitions": [
         {
@@ -921,6 +959,117 @@
         }
       ],
       "relatedWords": []
+    },
+    "aimless": {
+      "word": "AIMLESS",
+      "definitions": [
+        {
+          "text": "Without aim or purpose; as, an aimless life.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "amorphous",
+        "by the way",
+        "capricious",
+        "casual",
+        "causeless",
+        "chance",
+        "designless",
+        "desultory",
+        "deviative",
+        "digressive",
+        "disarticulated",
+        "discontinuous",
+        "discursive",
+        "disjunct",
+        "disordered",
+        "dispersed",
+        "disproportionate",
+        "driftless",
+        "dysteleological",
+        "empty",
+        "episodic",
+        "erratic",
+        "excursive",
+        "feckless",
+        "fitful",
+        "formless",
+        "frivolous",
+        "garbled",
+        "gratuitous",
+        "haphazard",
+        "hit-or-miss",
+        "immethodical",
+        "importless",
+        "impotent",
+        "inane",
+        "inchoate",
+        "incoherent",
+        "indiscriminate",
+        "ineffective",
+        "ineffectual",
+        "inexplicable",
+        "insignificant",
+        "irregular",
+        "loose",
+        "maundering",
+        "meaningless",
+        "mindless",
+        "misshapen",
+        "no go",
+        "nonconnotative",
+        "nondenotative",
+        "nonsymmetrical",
+        "nonsystematic",
+        "nonuniform",
+        "null",
+        "of no use",
+        "orderless",
+        "phatic",
+        "planless",
+        "pointless",
+        "promiscuous",
+        "purportless",
+        "purposeless",
+        "rambling",
+        "random",
+        "roving",
+        "scrambled",
+        "senseless",
+        "shapeless",
+        "spasmodic",
+        "sporadic",
+        "stochastic",
+        "straggling",
+        "straggly",
+        "stray",
+        "superfluous",
+        "systemless",
+        "unaccountable",
+        "unarranged",
+        "unavailing",
+        "unclassified",
+        "undirected",
+        "ungraded",
+        "unjoined",
+        "unmeaning",
+        "unmethodical",
+        "unmotivated",
+        "unordered",
+        "unorganized",
+        "unsignificant",
+        "unsorted",
+        "unsymmetrical",
+        "unsystematic",
+        "ununiform",
+        "useless",
+        "vagrant",
+        "vague",
+        "wandering",
+        "wanton",
+        "wayward"
+      ]
     },
     "aino": {
       "word": "AINO",
@@ -1505,7 +1654,7 @@
       "word": "AIR COOLING",
       "definitions": [
         {
-          "text": "In gasoline-engine motor vehicles, the cooling of the cylinder by increasing its radiating surface by means of ribs or radiators,",
+          "text": "In gasoline-engine motor vehicles, the cooling of the cylinder by increasing its radiating surface by means of ribs or radiators, and placing it so that it is exposed to a current of air. Cf. Water cooling. -- Air\"-cooled`, a.",
           "partOfSpeech": ""
         }
       ],
@@ -2411,7 +2560,17 @@
       ],
       "relatedWords": []
     },
-    "airwardairwards": {
+    "airward": {
+      "word": "AIRWARD; AIRWARDS",
+      "definitions": [
+        {
+          "text": "Toward the air; upward. [R.] Keats.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "airwards": {
       "word": "AIRWARD; AIRWARDS",
       "definitions": [
         {

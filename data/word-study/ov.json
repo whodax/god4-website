@@ -37,7 +37,17 @@
       ],
       "relatedWords": []
     },
-    "ovalbuminovalbumen": {
+    "ovalbumin": {
+      "word": "OVALBUMIN; OVALBUMEN",
+      "definitions": [
+        {
+          "text": "The albumin from white of eggs; egg albumin; -- in distinction from serum albumin. See Albumin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ovalbumen": {
       "word": "OVALBUMIN; OVALBUMEN",
       "definitions": [
         {
@@ -77,7 +87,17 @@
       ],
       "relatedWords": []
     },
-    "ovarianovarial": {
+    "ovarian": {
+      "word": "OVARIAN; OVARIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an ovary.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ovarial": {
       "word": "OVARIAN; OVARIAL",
       "definitions": [
         {
@@ -495,6 +515,16 @@
       ],
       "relatedWords": []
     },
+    "overanxious": {
+      "word": "OVERANXIOUS",
+      "definitions": [
+        {
+          "text": "Anxious in an excessive or needless degree.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overarch": {
       "word": "OVERARCH",
       "definitions": [
@@ -677,6 +707,16 @@
         {
           "text": "To boil over or unduly. Nor is discontent to keep the mind Deep in its fountain, lest it overboil In the hot throng. Byron.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overbold": {
+      "word": "OVERBOLD",
+      "definitions": [
+        {
+          "text": "Excessively or presumptuously bold; impudent. Shak.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -925,6 +965,16 @@
       ],
       "relatedWords": []
     },
+    "overcautious": {
+      "word": "OVERCAUTIOUS",
+      "definitions": [
+        {
+          "text": "Too cautious; cautious or prudent to excess.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overchange": {
       "word": "OVERCHANGE",
       "definitions": [
@@ -1061,12 +1111,32 @@
       ],
       "relatedWords": []
     },
+    "overcoming": {
+      "word": "OVERCOMING",
+      "definitions": [
+        {
+          "text": "Conquering; subduing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overconfidence": {
       "word": "OVERCONFIDENCE",
       "definitions": [
         {
           "text": "Excessive confidence; too great reliance or trust.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overconfident": {
+      "word": "OVERCONFIDENT",
+      "definitions": [
+        {
+          "text": "Confident to excess.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1373,6 +1443,26 @@
       ],
       "relatedWords": []
     },
+    "overeager": {
+      "word": "OVEREAGER",
+      "definitions": [
+        {
+          "text": "Too eager; too impatient.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overearnest": {
+      "word": "OVEREARNEST",
+      "definitions": [
+        {
+          "text": "Too earnest.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overeat": {
       "word": "OVEREAT",
       "definitions": [
@@ -1476,6 +1566,10 @@
       "definitions": [
         {
           "text": "To expose excessively; specif. (Photog.),",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "to subject (a plate or film) too long to the actinic action of the light used in producing a picture. -- O`ver*ex*po\"sure (#), n.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1695,12 +1789,42 @@
       ],
       "relatedWords": []
     },
+    "overfond": {
+      "word": "OVERFOND",
+      "definitions": [
+        {
+          "text": ", Milton.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "overforce": {
       "word": "OVERFORCE",
       "definitions": [
         {
           "text": "Excessive force; violence.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overforward": {
+      "word": "OVERFORWARD",
+      "definitions": [
+        {
+          "text": "Forward to excess; too forward.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overfree": {
+      "word": "OVERFREE",
+      "definitions": [
+        {
+          "text": "Free to excess; too liberal; too familiar.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2161,6 +2285,16 @@
       ],
       "relatedWords": []
     },
+    "overhasty": {
+      "word": "OVERHASTY",
+      "definitions": [
+        {
+          "text": "Too hasty; precipitate; rash.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overhaul": {
       "word": "OVERHAUL",
       "definitions": [
@@ -2175,11 +2309,15 @@
         {
           "text": "To gain upon in a chase; to overtake. To overhaul a tackle, to pull on the leading parts so as to separate the blocks. hitch occurs.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A strict examination with a view to correction or repairs.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "overhauloverhauling": {
+    "overhauling": {
       "word": "OVERHAUL; OVERHAULING",
       "definitions": [
         {
@@ -2199,7 +2337,17 @@
       ],
       "relatedWords": []
     },
-    "overheadchargesoverheadexpenses": {
+    "overheadcharges": {
+      "word": "OVERHEAD CHARGES; OVERHEAD EXPENSES",
+      "definitions": [
+        {
+          "text": "Those general charges or expenses in any business which cannot be charged up as belonging exclusively to any particular part of the work or product, as where different kinds of goods are made, or where there are different departments in a business; -- called also fixed, establishment, or (in a manufacturing business) administration, selling, and distribution, charges, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "overheadexpenses": {
       "word": "OVERHEAD CHARGES; OVERHEAD EXPENSES",
       "definitions": [
         {
@@ -2625,6 +2773,16 @@
         {
           "text": "To leap over or across; hence, to omit; to ignore. \"Let me o'erleap that custom.\" Shak.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overlearned": {
+      "word": "OVERLEARNED",
+      "definitions": [
+        {
+          "text": "Too learned.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3095,6 +3253,16 @@
       ],
       "relatedWords": []
     },
+    "overmodest": {
+      "word": "OVERMODEST",
+      "definitions": [
+        {
+          "text": "Modest to excess; bashful.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overmoist": {
       "word": "OVERMOIST",
       "definitions": [
@@ -3223,6 +3391,16 @@
       ],
       "relatedWords": []
     },
+    "overnice": {
+      "word": "OVERNICE",
+      "definitions": [
+        {
+          "text": "Excessively nice; fastidious. Bp. Hall.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overnight": {
       "word": "OVERNIGHT",
       "definitions": [
@@ -3325,6 +3503,16 @@
         {
           "text": "To pass over, away, or off.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overpassionate": {
+      "word": "OVERPASSIONATE",
+      "definitions": [
+        {
+          "text": "Passionate to excess.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3507,6 +3695,16 @@
       ],
       "relatedWords": []
     },
+    "overpowering": {
+      "word": "OVERPOWERING",
+      "definitions": [
+        {
+          "text": "Excelling in power; too powerful; irresistible.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overpraise": {
       "word": "OVERPRAISE",
       "definitions": [
@@ -3567,6 +3765,16 @@
         {
           "text": "Excessive production; supply beyond the demand. J. S. Mill.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overprompt": {
+      "word": "OVERPROMPT",
+      "definitions": [
+        {
+          "text": "Too prompt; too ready or eager; precipitate.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3717,6 +3925,16 @@
         {
           "text": "To read over, or peruse. Shak.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overready": {
+      "word": "OVERREADY",
+      "definitions": [
+        {
+          "text": "Too ready.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3909,6 +4127,16 @@
       ],
       "relatedWords": []
     },
+    "overruling": {
+      "word": "OVERRULING",
+      "definitions": [
+        {
+          "text": "Exerting controlling power; as, an overruling Providence.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overrun": {
       "word": "OVERRUN",
       "definitions": [
@@ -4027,11 +4255,15 @@
         {
           "text": "Beyond the sea; foreign.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Over the sea; abroad. Milton. Tennyson.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
     },
-    "overseaoverseas": {
+    "overseas": {
       "word": "OVERSEA; OVERSEAS",
       "definitions": [
         {
@@ -5367,6 +5599,10 @@
       "word": "OVERWEENING",
       "definitions": [
         {
+          "text": "Unduly confident; arrogant; presumptuous; conceited. Here's an overweening rogue. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "Conceit; arrogance. Milton.",
           "partOfSpeech": "noun"
         }
@@ -5443,6 +5679,16 @@
       ],
       "relatedWords": []
     },
+    "overwhelming": {
+      "word": "OVERWHELMING",
+      "definitions": [
+        {
+          "text": "Overpowering; irresistible.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "overwind": {
       "word": "OVERWIND",
       "definitions": [
@@ -5459,6 +5705,16 @@
         {
           "text": "To outflank. [Obs.] Milton.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "overwise": {
+      "word": "OVERWISE",
+      "definitions": [
+        {
+          "text": "Too wise; affectedly wise.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -5745,7 +6001,17 @@
       ],
       "relatedWords": []
     },
-    "ovipositingoviposition": {
+    "ovipositing": {
+      "word": "OVIPOSITING; OVIPOSITION",
+      "definitions": [
+        {
+          "text": "The depositing of eggs, esp. by insects.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "oviposition": {
       "word": "OVIPOSITING; OVIPOSITION",
       "definitions": [
         {
@@ -5795,22 +6061,26 @@
       ],
       "relatedWords": []
     },
-    "ovoidovoidal": {
+    "ovoid": {
       "word": "OVOID; OVOIDAL",
       "definitions": [
         {
           "text": "Resembling an egg in shape; egg-shaped; ovate; as, an ovoidal apple.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A solid resembling an egg in shape.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "ovoid": {
-      "word": "OVOID",
+    "ovoidal": {
+      "word": "OVOID; OVOIDAL",
       "definitions": [
         {
-          "text": "A solid resembling an egg in shape.",
-          "partOfSpeech": "noun"
+          "text": "Resembling an egg in shape; egg-shaped; ovate; as, an ovoidal apple.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

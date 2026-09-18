@@ -19,6 +19,18 @@
         {
           "text": "Something added to, or united with, another, to lengthen it out or repair it, -- as, an addition to a beehive; a feather inserted in a broken wing of a bird; a length of twisted hair in a fishing line. [Obs. or Prov. Eng.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To graft; to insert as a scion. [Obs.] Rom. of R.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Falconry)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To graft with new feathers, as a wing; to splice a broken feather. Hence, Fig.: To repair; to extend; to increase; to strengthen to equip. [Archaic] Imp out our drooping country's broken wing. Shak. Who lazily imp their wings with other men's plumes. Fuller. Here no frail Muse shall imp her crippled wing. Holmes. Help, ye tart satirists, to imp my rage With all the scorpions that should whip this age. Cleveland.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": [
@@ -1679,7 +1691,7 @@
       "word": "IMPASSABLE",
       "definitions": [
         {
-          "text": "Incapable of being passed; not admitting a passage; as, an",
+          "text": "Incapable of being passed; not admitting a passage; as, an impassable road, mountain, or gulf. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2019,7 +2031,7 @@
       "word": "IMPASSIVE",
       "definitions": [
         {
-          "text": "Not susceptible of pain or suffering; apathetic; impassible; unmoved. Impassive as the marble in the quarry. De Quincey.",
+          "text": "Not susceptible of pain or suffering; apathetic; impassible; unmoved. Impassive as the marble in the quarry. De Quincey. On the impassive ice the lightings play. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2513,6 +2525,16 @@
         {
           "text": "To pave. [Poetic] Impaved with rude fidelity Of art mosaic. Wordsworth.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "impavid": {
+      "word": "IMPAVID",
+      "definitions": [
+        {
+          "text": "Fearless.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3420,7 +3442,17 @@
         "thrust over"
       ]
     },
-    "impendenceimpendency": {
+    "impendence": {
+      "word": "IMPENDENCE; IMPENDENCY",
+      "definitions": [
+        {
+          "text": "The state of impending; also, that which impends. \"Impendence of volcanic cloud.\" Ruskin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "impendency": {
       "word": "IMPENDENCE; IMPENDENCY",
       "definitions": [
         {
@@ -4170,7 +4202,7 @@
       "word": "IMPERCEPTIBLE",
       "definitions": [
         {
-          "text": "Not perceptible; not to be apprehended or cognized by the souses; not discernible by the mind; not easily apprehended. Almost imperceptible to the touch. Dryden.",
+          "text": "Not perceptible; not to be apprehended or cognized by the souses; not discernible by the mind; not easily apprehended. Almost imperceptible to the touch. Dryden. Its operation is slow, and in some cases almost imperceptible. Burke. Their . . . subility and imperceptibleness. Sir M. Hale.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4584,7 +4616,17 @@
       ],
       "relatedWords": []
     },
-    "imperforateimperforated": {
+    "imperforate": {
+      "word": "IMPERFORATE; IMPERFORATED",
+      "definitions": [
+        {
+          "text": "Not perforated; having no opening or aperture. Sir J. Banks.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "imperforated": {
       "word": "IMPERFORATE; IMPERFORATED",
       "definitions": [
         {
@@ -5081,7 +5123,7 @@
       "word": "IMPERISHABLE",
       "definitions": [
         {
-          "text": "Not perisha ble; not subject to decay; indestructible; enduringpermanently; as, an imperishable monument; imperishable",
+          "text": "Not perisha ble; not subject to decay; indestructible; enduringpermanently; as, an imperishable monument; imperishable renown.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5139,7 +5181,56 @@
       ],
       "relatedWords": []
     },
-    "impermanenceimpermanency": {
+    "impermanence": {
+      "word": "IMPERMANENCE; IMPERMANENCY",
+      "definitions": [
+        {
+          "text": "Want of permanence.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "adaptability",
+        "adjustability",
+        "alterability",
+        "caducity",
+        "changeability",
+        "changeableness",
+        "changefulness",
+        "corruptibility",
+        "death",
+        "ephemerality",
+        "ephemeralness",
+        "evanescence",
+        "finitude",
+        "fleetingness",
+        "flexibility",
+        "fluidity",
+        "fugacity",
+        "impermanency",
+        "instability",
+        "malleability",
+        "mobility",
+        "modifiability",
+        "momentariness",
+        "mortality",
+        "movability",
+        "mutability",
+        "nonuniformity",
+        "perishability",
+        "permutability",
+        "plasticity",
+        "resilience",
+        "rubberiness",
+        "suppleness",
+        "transience",
+        "transiency",
+        "transientness",
+        "transitoriness",
+        "volatility"
+      ]
+    },
+    "impermanency": {
       "word": "IMPERMANENCE; IMPERMANENCY",
       "definitions": [
         {
@@ -5238,7 +5329,7 @@
       "word": "IMPERMEABLE",
       "definitions": [
         {
-          "text": "Not permeable; not permitting passage, as of a fluid. through its substance; impervious; impenetrable; as, India rubber is",
+          "text": "Not permeable; not permitting passage, as of a fluid. through its substance; impervious; impenetrable; as, India rubber is impermeable to water and to air.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5533,7 +5624,7 @@
         "take off on"
       ]
     },
-    "impersonationimpersonification": {
+    "impersonation": {
       "word": "IMPERSONATION; IMPERSONIFICATION",
       "definitions": [
         {
@@ -5541,7 +5632,67 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "acting",
+        "aping",
+        "buffoonery",
+        "business",
+        "characterization",
+        "copying",
+        "counterfeiting",
+        "dumb show",
+        "embodiment",
+        "emulation",
+        "enacting",
+        "enactment",
+        "fakery",
+        "following",
+        "forgery",
+        "gag",
+        "ham",
+        "hammy acting",
+        "hit-off",
+        "hoke",
+        "hokum",
+        "imitation",
+        "imposture",
+        "impression",
+        "incarnation",
+        "masquerade",
+        "mimesis",
+        "mimicking",
+        "mimicry",
+        "miming",
+        "mirroring",
+        "mummery",
+        "onomatopoeia",
+        "overacting",
+        "pantomime",
+        "pantomiming",
+        "parody",
+        "patter",
+        "performance",
+        "performing",
+        "personation",
+        "personification",
+        "plagiarism",
+        "plagiary",
+        "playacting",
+        "playing",
+        "portrayal",
+        "posing",
+        "projection",
+        "repetition",
+        "representation",
+        "simulation",
+        "slapstick",
+        "stage business",
+        "stage directions",
+        "stage presence",
+        "stunt",
+        "takeoff",
+        "taking a role"
+      ]
     },
     "impersonator": {
       "word": "IMPERSONATOR",
@@ -5649,6 +5800,16 @@
         "vaudevillist"
       ]
     },
+    "impersonification": {
+      "word": "IMPERSONATION; IMPERSONIFICATION",
+      "definitions": [
+        {
+          "text": "The act of impersonating; personification; investment with personality; representation in a personal form.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "imperspicuity": {
       "word": "IMPERSPICUITY",
       "definitions": [
@@ -5669,11 +5830,21 @@
       ],
       "relatedWords": []
     },
+    "impersuadable": {
+      "word": "IMPERSUADABLE",
+      "definitions": [
+        {
+          "text": "Not to be persuaded; obstinate; unyielding; impersuasible.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "impersuasible": {
       "word": "IMPERSUASIBLE",
       "definitions": [
         {
-          "text": "Not persuasible; not to be moved by persuasion; inflexible;",
+          "text": "Not persuasible; not to be moved by persuasion; inflexible; impersuadable. Dr. H. More.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6349,7 +6520,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Vehement in feeling; hasty; passionate; violent; as, a man of impetuous temper. The people, on their holidays, Impetuous, insolent, unquenchable. Milton.",
+          "text": "Vehement in feeling; hasty; passionate; violent; as, a man of impetuous temper. The people, on their holidays, Impetuous, insolent, unquenchable. Milton. violent; raging; fierce; passionate.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6688,24 +6859,6 @@
       "definitions": [
         {
           "text": "A body of Kaffir warriors; a body of native armed men. [South Africa] As early as 1862 he crossed assagais with and defeated a Matabili impi (war band). James Bryce.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "impiantoimpingraftplantakintodanympeswympaohg": {
-      "word": "impian to imp, ingraft, plant; akin to Dan. ympe, Sw. ympa, OHG.",
-      "definitions": [
-        {
-          "text": "To graft; to insert as a scion. [Obs.] Rom. of R.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Falconry)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To graft with new feathers, as a wing; to splice a broken feather. Hence, Fig.: To repair; to extend; to increase; to strengthen to equip. [Archaic] Imp out our drooping country's broken wing. Shak. Who lazily imp their wings with other men's plumes. Fuller. Here no frail Muse shall imp her crippled wing. Holmes. Help, ye tart satirists, to imp my rage With all the scorpions that should whip this age. Cleveland.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7050,7 +7203,7 @@
       "word": "IMPIOUS",
       "definitions": [
         {
-          "text": "Not pious; wanting piety; irreligious; irreverent; ungodly; profane; wanting in reverence for the Supreme Being; as, an impious deed; impious language. When vice prevails, and impious men bear away, The post of honor is a private station. Addison. and profane are positive. An indifferent man may be irreligious; a profane man is irreverent in speech and conduct; an impious man is wickedly and boldly defiant in the strongest sense. Profane also has",
+          "text": "Not pious; wanting piety; irreligious; irreverent; ungodly; profane; wanting in reverence for the Supreme Being; as, an impious deed; impious language. When vice prevails, and impious men bear away, The post of honor is a private station. Addison. and profane are positive. An indifferent man may be irreligious; a profane man is irreverent in speech and conduct; an impious man is wickedly and boldly defiant in the strongest sense. Profane also has the milder sense of secular. C. J. Smith.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7524,7 +7677,7 @@
       "word": "IMPLAUSIBLE",
       "definitions": [
         {
-          "text": "Not plausible; not wearing the appearance of truth or credibility, and not likely to be believed. \"Implausible harangues.\"",
+          "text": "Not plausible; not wearing the appearance of truth or credibility, and not likely to be believed. \"Implausible harangues.\" Swift.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8538,6 +8691,62 @@
       ],
       "relatedWords": []
     },
+    "imploring": {
+      "word": "IMPLORING",
+      "definitions": [
+        {
+          "text": "That implores; beseeching; entreating.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adjuration",
+        "adjuratory",
+        "adorant",
+        "adoring",
+        "appeal",
+        "appealing",
+        "begging",
+        "beseeching",
+        "beseechment",
+        "bid",
+        "call",
+        "clamor",
+        "cry",
+        "devotional",
+        "devout",
+        "entreating",
+        "entreaty",
+        "imploration",
+        "imprecation",
+        "in the dust",
+        "invocation",
+        "invocatory plea",
+        "obsecration",
+        "obtestation",
+        "on bended knee",
+        "plea",
+        "pleading",
+        "prayer",
+        "prayerful",
+        "precative",
+        "precatory",
+        "prostrate before",
+        "reverent",
+        "reverential",
+        "rogation",
+        "solemn",
+        "suit",
+        "suppliant",
+        "supplicant",
+        "supplication",
+        "supplicatory",
+        "venerational",
+        "venerative",
+        "worshipful",
+        "worshiping"
+      ]
+    },
     "implosion": {
       "word": "IMPLOSION",
       "definitions": [
@@ -8561,6 +8770,10 @@
       "definitions": [
         {
           "text": "Formed by implosion.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An implosive sound, an implodent.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8766,7 +8979,17 @@
       ],
       "relatedWords": []
     },
-    "impolarilyimpolarly": {
+    "impolarily": {
+      "word": "IMPOLARILY; IMPOLARLY",
+      "definitions": [
+        {
+          "text": "Not according to or in, the direction of the poles. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "impolarly": {
       "word": "IMPOLARILY; IMPOLARLY",
       "definitions": [
         {
@@ -8790,7 +9013,7 @@
       "word": "IMPOLITE",
       "definitions": [
         {
-          "text": "Not polite; not of polished manners; wanting in good manners;",
+          "text": "Not polite; not of polished manners; wanting in good manners; discourteous; uncivil; rude.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10342,6 +10565,10 @@
         {
           "text": "Deceiving; deluding; misleading.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The act of imposing the columns of a page, or the pages of a sheet. See Impose, v. t., 4. Imposing stone (Print.), the stone on which the pages or columns of types are imposed or made into forms; - - called also imposing table.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -10520,6 +10747,10 @@
         },
         {
           "text": "(Print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or process of imosing pages or columns of type. See Impose, v. t., 4.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11092,7 +11323,17 @@
       ],
       "relatedWords": []
     },
-    "impostressimpostrix": {
+    "impostress": {
+      "word": "IMPOSTRESS; IMPOSTRIX",
+      "definitions": [
+        {
+          "text": "A woman who imposes upon or deceives others. [R.] Fuller.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "impostrix": {
       "word": "IMPOSTRESS; IMPOSTRIX",
       "definitions": [
         {
@@ -11279,7 +11520,162 @@
       ],
       "relatedWords": []
     },
-    "impotenceimpotency": {
+    "impotence": {
+      "word": "IMPOTENCE; IMPOTENCY",
+      "definitions": [
+        {
+          "text": "The quality or condition of being impotent; want of strength or power, animal, intellectual, or moral; weakness; feebleness; inability; imbecility. Some were poor by impotency of nature; as young fatherless children, old decrepit persons, idiots, and cripples. Hayward. O, impotence of mind in body strong! Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Want of self-restraint or self-control. [R.] Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law & Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Want of procreative power; inability to copulate, or beget children; also, sometimes, sterility; barrenness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "absurdity",
+        "adynamia",
+        "aimlessness",
+        "anemia",
+        "aridity",
+        "atony",
+        "barrenness",
+        "birth control",
+        "blah feeling",
+        "bloodlessness",
+        "bootlessness",
+        "cachexia",
+        "cachexy",
+        "carelessness",
+        "carnality",
+        "coldness",
+        "contraception",
+        "cowardice",
+        "dearth",
+        "debilitation",
+        "debility",
+        "dry womb",
+        "dryness",
+        "dullness",
+        "easiness",
+        "easygoingness",
+        "emptiness",
+        "enervation",
+        "etiolation",
+        "faintness",
+        "family planning",
+        "famine",
+        "fatigue",
+        "fatuity",
+        "fecklessness",
+        "feebleness",
+        "flabbiness",
+        "flaccidity",
+        "flesh",
+        "fleshliness",
+        "forcelessness",
+        "frailty",
+        "frigidity",
+        "fruitlessness",
+        "futility",
+        "helplessness",
+        "hollowness",
+        "impotency",
+        "imprecision",
+        "inadequacy",
+        "inanity",
+        "incompetence",
+        "indifference",
+        "ineffectiveness",
+        "ineffectuality",
+        "ineffectualness",
+        "inefficaciousness",
+        "inefficacy",
+        "ineptness",
+        "infecundity",
+        "infertility",
+        "lack of force",
+        "lack of influence",
+        "lack of magnetism",
+        "lack of personality",
+        "lack of power",
+        "languishment",
+        "languor",
+        "lassitude",
+        "laxity",
+        "laxness",
+        "leniency",
+        "libido",
+        "listlessness",
+        "looseness",
+        "loosening",
+        "love",
+        "lovemaking",
+        "marriage",
+        "meaninglessness",
+        "negligence",
+        "no say",
+        "nugacity",
+        "otiosity",
+        "overindulgence",
+        "overpermissiveness",
+        "permissiveness",
+        "planned parenthood",
+        "pointlessness",
+        "potency",
+        "powerlessness",
+        "profitlessness",
+        "prostration",
+        "purposelessness",
+        "rat race",
+        "relaxation",
+        "relaxedness",
+        "remissness",
+        "sensuality",
+        "sex drive",
+        "sexiness",
+        "sexual instinct",
+        "sexual urge",
+        "sexualism",
+        "sexuality",
+        "slackness",
+        "sloppiness",
+        "sluggishness",
+        "softness",
+        "sterileness",
+        "sterility",
+        "strengthlessness",
+        "the absurd",
+        "triviality",
+        "unauthoritativeness",
+        "unfertileness",
+        "unfruitfulness",
+        "uninfluentiality",
+        "unpersuasiveness",
+        "unproductiveness",
+        "unprofitability",
+        "unprofitableness",
+        "unrestraint",
+        "valuelessness",
+        "vanity",
+        "vicious circle",
+        "voluptuousness",
+        "weakliness",
+        "weakness",
+        "weariness",
+        "withered loins",
+        "worthlessness"
+      ]
+    },
+    "impotency": {
       "word": "IMPOTENCE; IMPOTENCY",
       "definitions": [
         {
@@ -12032,7 +12428,7 @@
       "word": "IMPREGNABLE",
       "definitions": [
         {
-          "text": "Not to be stormed, or taken by assault; incapable of being subdued; able to resist attack; unconquerable; as, an impregnable fortress; impregnable virtue. The man's affection remains wholly unconcerned and impregnable.",
+          "text": "Not to be stormed, or taken by assault; incapable of being subdued; able to resist attack; unconquerable; as, an impregnable fortress; impregnable virtue. The man's affection remains wholly unconcerned and impregnable. South.",
           "partOfSpeech": "adjective"
         },
         {
@@ -12457,7 +12853,15 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "Fig.: To fix deeply in the mind; to present forcibly to the attention, etc.; to imprint; to inculcate. Impress the motives of persuasion upon our own hearts till we feel",
+          "text": "Fig.: To fix deeply in the mind; to present forcibly to the attention, etc.; to imprint; to inculcate. Impress the motives of persuasion upon our own hearts till we feel the force of them. I. Watts.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Etym: [See Imprest, Impress, n., 5.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take by force for public service; as, to impress sailors or money. The second five thousand pounds impressed for the service of the sick and wounded prisoners. Evelyn.",
           "partOfSpeech": "verb"
         },
         {
@@ -12875,6 +13279,16 @@
         {
           "text": "The quality of being impressible; susceptibility.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "impressible": {
+      "word": "IMPRESSIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being impressed; susceptible; sensitive.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -13583,7 +13997,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Capable of being impressed. [Obs.] Drayton. - Im*press\"ive*ly,",
+          "text": "Capable of being impressed. [Obs.] Drayton. - Im*press\"ive*ly, adv.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -13824,7 +14238,17 @@
       ],
       "relatedWords": []
     },
-    "imprevalenceimprevalency": {
+    "imprevalence": {
+      "word": "IMPREVALENCE; IMPREVALENCY",
+      "definitions": [
+        {
+          "text": "Want of prevalence. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "imprevalency": {
       "word": "IMPREVALENCE; IMPREVALENCY",
       "definitions": [
         {
@@ -14444,7 +14868,7 @@
       "word": "IMPROBABLE",
       "definitions": [
         {
-          "text": "Not probable; unlikely to be true; not to be expected under the circumstances or in the usual course of events; as, an improbable story or event. He . . . sent to Elutherius, then bishop of Rome, an improbable",
+          "text": "Not probable; unlikely to be true; not to be expected under the circumstances or in the usual course of events; as, an improbable story or event. He . . . sent to Elutherius, then bishop of Rome, an improbable letter, as some of the contents discover. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -14538,7 +14962,17 @@
       ],
       "relatedWords": []
     },
-    "improbativeimprobatory": {
+    "improbative": {
+      "word": "IMPROBATIVE; IMPROBATORY",
+      "definitions": [
+        {
+          "text": "Implying, or tending to, improbation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "improbatory": {
       "word": "IMPROBATIVE; IMPROBATORY",
       "definitions": [
         {
@@ -14577,7 +15011,17 @@
         "wile"
       ]
     },
-    "improficienceimproficiency": {
+    "improficience": {
+      "word": "IMPROFICIENCE; IMPROFICIENCY",
+      "definitions": [
+        {
+          "text": "Want of proficiency. [R.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "improficiency": {
       "word": "IMPROFICIENCE; IMPROFICIENCY",
       "definitions": [
         {
@@ -14592,6 +15036,16 @@
       "definitions": [
         {
           "text": "Unprofitable. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "improgressive": {
+      "word": "IMPROGRESSIVE",
+      "definitions": [
+        {
+          "text": "Not progressive. De Quincey.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -15496,7 +15950,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Capable of being used to advantage; profitable; serviceable; advantageous. The essays of weaker heads afford improvable hints to better. Sir T.",
+          "text": "Capable of being used to advantage; profitable; serviceable; advantageous. The essays of weaker heads afford improvable hints to better. Sir T. Browne.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -16109,6 +16563,16 @@
       ],
       "relatedWords": []
     },
+    "improving": {
+      "word": "IMPROVING",
+      "definitions": [
+        {
+          "text": "Tending to improve, beneficial; growing better. to induce the tenant to make improvements on the premises.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "improvisate": {
       "word": "IMPROVISATE",
       "definitions": [
@@ -16262,7 +16726,17 @@
       ],
       "relatedWords": []
     },
-    "improvisatorialimprovisatory": {
+    "improvisatorial": {
+      "word": "IMPROVISATORIAL; IMPROVISATORY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to improvisation or extemporaneous composition.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "improvisatory": {
       "word": "IMPROVISATORIAL; IMPROVISATORY",
       "definitions": [
         {
@@ -16511,7 +16985,7 @@
       "word": "IMPRUDENT",
       "definitions": [
         {
-          "text": "Not prudent; wanting in prudence or discretion; indiscreet;",
+          "text": "Not prudent; wanting in prudence or discretion; indiscreet; injudicious; not attentive to consequence; improper. Her majesty took a great dislike at the imprudent behavior of many of the ministers and readers. Strype. heedless; careless; rash; negligent.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -18280,6 +18754,16 @@
         "veiled accusation",
         "whispering campaign"
       ]
+    },
+    "imputative": {
+      "word": "IMPUTATIVE",
+      "definitions": [
+        {
+          "text": "Transferred by imputation; that may be imputed. Actual righteousness as well as imputative. Bp. Warburton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "impute": {
       "word": "IMPUTE",

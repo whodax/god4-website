@@ -137,7 +137,17 @@
       ],
       "relatedWords": []
     },
-    "nubilosenubilous": {
+    "nubilose": {
+      "word": "NUBILOSE; NUBILOUS",
+      "definitions": [
+        {
+          "text": "Cloudy. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nubilous": {
       "word": "NUBILOSE; NUBILOUS",
       "definitions": [
         {
@@ -227,7 +237,17 @@
       ],
       "relatedWords": []
     },
-    "nuclealnuclear": {
+    "nucleal": {
+      "word": "NUCLEAL; NUCLEAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a nucleus; as, the nuclear spindle (see Illust. of Karyokinesis) or the nuclear fibrils of a cell; the nuclear part of a comet, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nuclear": {
       "word": "NUCLEAL; NUCLEAR",
       "definitions": [
         {
@@ -479,7 +499,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Naked; without consideration; void; as, a nude contract. See",
+          "text": "Naked; without consideration; void; as, a nude contract. See Nudum pactum. Blackstone. The nude, the undraped human figure in art.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1091,22 +1111,26 @@
       ],
       "relatedWords": []
     },
-    "numericnumerical": {
+    "numeric": {
       "word": "NUMERIC; NUMERICAL",
       "definitions": [
         {
           "text": "Belonging to number; denoting number; consisting in numbers; expressed by numbers, and not letters; as, numerical characters; a numerical equation; a numerical statement. irrespective of its sign; thus, -5 is numerically greater than -3, though algebraically less. 2.2. The same in number; hence, identically the same; identical; as, the same numerical body. [Obs.] South. Would to God that all my fellow brethren, which with me bemoan the loss of their books, . . . might rejoice for the recovery thereof, though not the same numerical volumes. Fuller. Numerical equation (Alg.), an equation which has all the quantities except the unknown expressed in numbers; -- distinguished from literal equation. substituting numbers for the letters, and reducing.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Any number, proper or improper fraction, or incommensurable ratio. The term also includes any imaginary expression like m + nsq. root-1, where m and n are real numerics.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "numeric": {
-      "word": "NUMERIC",
+    "numerical": {
+      "word": "NUMERIC; NUMERICAL",
       "definitions": [
         {
-          "text": "Any number, proper or improper fraction, or incommensurable ratio. The term also includes any imaginary expression like m + nsq. root-1, where m and n are real numerics.",
-          "partOfSpeech": "noun"
+          "text": "Belonging to number; denoting number; consisting in numbers; expressed by numbers, and not letters; as, numerical characters; a numerical equation; a numerical statement. irrespective of its sign; thus, -5 is numerically greater than -3, though algebraically less. 2.2. The same in number; hence, identically the same; identical; as, the same numerical body. [Obs.] South. Would to God that all my fellow brethren, which with me bemoan the loss of their books, . . . might rejoice for the recovery thereof, though not the same numerical volumes. Fuller. Numerical equation (Alg.), an equation which has all the quantities except the unknown expressed in numbers; -- distinguished from literal equation. substituting numbers for the letters, and reducing.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1163,7 +1187,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Consisting of poetic numbers; rhythmical; measured and counted; melodious; musical. [Obs.] Such prompt eloquence Flowed from their lips, in prose or numerous",
+          "text": "Consisting of poetic numbers; rhythmical; measured and counted; melodious; musical. [Obs.] Such prompt eloquence Flowed from their lips, in prose or numerous verse. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1179,7 +1203,17 @@
       ],
       "relatedWords": []
     },
-    "numismaticnumismatical": {
+    "numismatic": {
+      "word": "NUMISMATIC; NUMISMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to coins; relating to the science of coins or medals.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "numismatical": {
       "word": "NUMISMATIC; NUMISMATICAL",
       "definitions": [
         {
@@ -1249,7 +1283,25 @@
       ],
       "relatedWords": []
     },
-    "nummularnummulary": {
+    "nummular": {
+      "word": "NUMMULAR; NUMMULARY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to coin or money; pecuniary; as, the nummulary talent.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Pathol.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the appearance or form of a coin. \"Nummular sputa.\" Sir T. Watson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nummulary": {
       "word": "NUMMULAR; NUMMULARY",
       "definitions": [
         {
@@ -1473,11 +1525,15 @@
         {
           "text": "A nundinal letter.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to a fair, or to a market day. Nundinal letter, among the Romans, one of the first eight letters of the alphabet, which were repeated successively from the first to the last day of the year. One of these always expressed the market day, which returned every nine days (every eight days by our reckoning).",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "nundinalnundinary": {
+    "nundinary": {
       "word": "NUNDINAL; NUNDINARY",
       "definitions": [
         {
@@ -1531,7 +1587,7 @@
       "word": "NUNNISH",
       "definitions": [
         {
-          "text": "Of, pertaining to, or resembling a nun; characteristic of a",
+          "text": "Of, pertaining to, or resembling a nun; characteristic of a nun.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1591,7 +1647,17 @@
       ],
       "relatedWords": []
     },
-    "nuraghenuragh": {
+    "nuraghe": {
+      "word": "NURAGHE; NURAGH",
+      "definitions": [
+        {
+          "text": "One of the prehistoric towerlike structures found in Sardinia. The so-called nuraghi, conical monuments with truncated summits, 30- 60 ft. in height, 35-100 ft. in diameter at the base, constructed sometimes of hewn, and sometimes of unhewn blocks of stone without mortar. They are situated either on isolated eminences or on the slopes of the mountains, seldom on the plains, and usually occur in groups. They generally contain two (in some rare instances three) conically vaulted chambers, one above the other, and a spiral staircase constructed in the thick walls ascends to the upper stories. Baedeker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nuragh": {
       "word": "NURAGHE; NURAGH",
       "definitions": [
         {
@@ -2061,11 +2127,21 @@
       ],
       "relatedWords": []
     },
+    "nutritious": {
+      "word": "NUTRITIOUS",
+      "definitions": [
+        {
+          "text": "Nourishing; promoting growth, or preventing decay; alimental.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "nutritive": {
       "word": "NUTRITIVE",
       "definitions": [
         {
-          "text": "Of or pertaining to nutrition; as, the nutritive functions; having the quality of nourishing; nutritious; nutrimental; alimental; as, nutritive food or berries. Nutritive plasma. (Biol.) See Idioplasma.",
+          "text": "Of or pertaining to nutrition; as, the nutritive functions; having the quality of nourishing; nutritious; nutrimental; alimental; as, nutritive food or berries. Nutritive plasma. (Biol.) See Idioplasma. hydroid, or coral, which has a mouth and digestive cavity.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2167,7 +2243,19 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To go with head poised like a swine, with nose down.",
+          "text": "To go with head poised like a swine, with nose down. Sir Roger shook his ears, and nuzzled along. Arbuthnot.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Etym: [Cf. Nuzzle, v. t., 2.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hide the head, as a child in the mother's bosom; to nestle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To loiter; to idle. [Prov. Eng.] Halliwell.",
           "partOfSpeech": "verb"
         }
       ],

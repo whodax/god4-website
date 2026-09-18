@@ -5,7 +5,7 @@
       "word": "IMMACULATE",
       "definitions": [
         {
-          "text": "Without stain or blemish; spotless; undefiled; clear; pure. Were but my soul as pure From other guilt as that, Heaven did not hold One more immaculate. Denham. Thou sheer, immaculate and silver fountain. Shak. Immaculate conception (R. C. Ch.), the doctrine that the Virgin Mary",
+          "text": "Without stain or blemish; spotless; undefiled; clear; pure. Were but my soul as pure From other guilt as that, Heaven did not hold One more immaculate. Denham. Thou sheer, immaculate and silver fountain. Shak. Immaculate conception (R. C. Ch.), the doctrine that the Virgin Mary was conceived without original sin.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -187,7 +187,47 @@
       ],
       "relatedWords": []
     },
-    "immanenceimmanency": {
+    "immanence": {
+      "word": "IMMANENCE; IMMANENCY",
+      "definitions": [
+        {
+          "text": "The condition or quality of being immanent; inherence; an indwelling. [Clement] is mainly concerned in enforcing the immanence of God. Christ is everywhere presented by him as Deity indwelling in the world. A. V. G. Allen.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accessibility",
+        "actual presence",
+        "availability",
+        "being here",
+        "being there",
+        "essentiality",
+        "existence",
+        "fundamentality",
+        "hereness",
+        "immediacy",
+        "inbeing",
+        "indigenousness",
+        "indwelling",
+        "indwellingness",
+        "inherence",
+        "innateness",
+        "innerness",
+        "internality",
+        "intrinsicality",
+        "inwardness",
+        "nonobjectivity",
+        "occurrence",
+        "physical presence",
+        "presence",
+        "spiritual presence",
+        "subjectivity",
+        "thereness",
+        "ubiety",
+        "whereness"
+      ]
+    },
+    "immanency": {
       "word": "IMMANENCE; IMMANENCY",
       "definitions": [
         {
@@ -3698,7 +3738,7 @@
       ],
       "relatedWords": []
     },
-    "immoldimmould": {
+    "immold": {
       "word": "IMMOLD; IMMOULD",
       "definitions": [
         {
@@ -4279,6 +4319,16 @@
       ],
       "relatedWords": []
     },
+    "immould": {
+      "word": "IMMOLD; IMMOULD",
+      "definitions": [
+        {
+          "text": "To mold into shape, or form. [Obs.] G. Fletcher.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "immovability": {
       "word": "IMMOVABILITY",
       "definitions": [
@@ -4306,6 +4356,10 @@
         },
         {
           "text": "(Law.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not liable to be removed; permanent in place or tenure; fixed; as, an immovable estate. See Immovable, n. Blackstone. Immovable apparatus (Med.), an appliance, like the plaster of paris bandage, which keeps fractured parts firmly in place. the year and do not depend on the date of Easter; as, Christmas, the Epiphany, etc.",
           "partOfSpeech": "adjective"
         },
         {
@@ -4506,6 +4560,55 @@
         }
       ],
       "relatedWords": []
+    },
+    "immune": {
+      "word": "IMMUNE",
+      "definitions": [
+        {
+          "text": "Exempt; protected by inoculation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "chartered",
+        "excepted",
+        "excused",
+        "exempt",
+        "exempted",
+        "favored",
+        "immunized",
+        "inoculated",
+        "insured",
+        "insusceptible",
+        "intact",
+        "invulnerable",
+        "irresponsible",
+        "let off",
+        "licensed",
+        "nonsusceptible to disease",
+        "permitted",
+        "privileged",
+        "protected",
+        "released",
+        "resistant",
+        "safe",
+        "safe and sound",
+        "secure",
+        "spared",
+        "unaccountable",
+        "unaffected",
+        "unanswerable",
+        "undamaged",
+        "unharmed",
+        "unhurt",
+        "unliable",
+        "unscathed",
+        "unsubject",
+        "unsusceptible",
+        "unthreatened",
+        "untouched",
+        "vaccinated"
+      ]
     },
     "immunity": {
       "word": "IMMUNITY",
@@ -4739,7 +4842,7 @@
       "word": "IMMUTABLE",
       "definitions": [
         {
-          "text": "Not mutable; not capable or susceptible of change; unchangeable; unalterable. That by two immutable things, in which it was impossible for God to lie, we might have a strong consolation. Heb. vi. 18.",
+          "text": "Not mutable; not capable or susceptible of change; unchangeable; unalterable. That by two immutable things, in which it was impossible for God to lie, we might have a strong consolation. Heb. vi. 18. Immutable, immortal, infinite, Eternal King. Milton.",
           "partOfSpeech": "adjective"
         }
       ],

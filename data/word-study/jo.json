@@ -221,7 +221,7 @@
       "word": "JOCOSE",
       "definitions": [
         {
-          "text": "Given to jokes and jesting; containing a joke, or abounding in jokes; merry; sportive; humorous. To quit their austerity and be jocose and pleasant with an adversary. Shaftesbury. All . . . jocose or comical airs should be excluded. I. Watts.",
+          "text": "Given to jokes and jesting; containing a joke, or abounding in jokes; merry; sportive; humorous. To quit their austerity and be jocose and pleasant with an adversary. Shaftesbury. All . . . jocose or comical airs should be excluded. I. Watts. funny; comical. Spondanus imagines that Ulysses may possibly speak jocosely, but in truth Ulysses never behaves with levity. Broome. He must beware lest his letter should contain anything like jocoseness; since jesting is incompatible with a holy and serious life. Buckle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -315,7 +315,7 @@
       "word": "JOCUND",
       "definitions": [
         {
-          "text": "Merry; cheerful; gay; airy; lively; sportive. Night's candles are burnt out, and jocund day Stands tiptoe on the misty mountain tops. Shak.",
+          "text": "Merry; cheerful; gay; airy; lively; sportive. Night's candles are burnt out, and jocund day Stands tiptoe on the misty mountain tops. Shak. Rural sports and jocund strains. Prior.",
           "partOfSpeech": ""
         },
         {
@@ -373,7 +373,11 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To suggest to; to notify; to remind; to call the attention of; as,",
+          "text": "To suggest to; to notify; to remind; to call the attention of; as, to jog the memory.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to jog; to drive at a jog, as a horse. See Jog, v. i.",
           "partOfSpeech": "verb"
         },
         {
@@ -883,7 +887,7 @@
       "word": "JOIST",
       "definitions": [
         {
-          "text": "A piece of timber laid horizontally, or nearly so, to which the planks of the floor, or the laths or furring strips of a ceiling, are nailed; -- called, according to its position or use, binding joist,",
+          "text": "A piece of timber laid horizontally, or nearly so, to which the planks of the floor, or the laths or furring strips of a ceiling, are nailed; -- called, according to its position or use, binding joist, bridging joist, ceiling joist, trimming joist, etc. See Illust. of Double-framed floor, under Double, a.",
           "partOfSpeech": "noun"
         },
         {
@@ -943,7 +947,17 @@
       ],
       "relatedWords": []
     },
-    "jolejoll": {
+    "jole": {
+      "word": "JOLE; JOLL",
+      "definitions": [
+        {
+          "text": "Same as Jowl. Shak.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "joll": {
       "word": "JOLE; JOLL",
       "definitions": [
         {
@@ -1079,7 +1093,17 @@
       ],
       "relatedWords": []
     },
-    "jolterheadjolthead": {
+    "jolterhead": {
+      "word": "JOLTERHEAD; JOLTHEAD",
+      "definitions": [
+        {
+          "text": "A dunce; a blockhead. Sir T. North.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jolthead": {
       "word": "JOLTERHEAD; JOLTHEAD",
       "definitions": [
         {
@@ -1129,7 +1153,7 @@
       ],
       "relatedWords": []
     },
-    "jongleurjongler": {
+    "jongleur": {
       "word": "JONGLEUR; JONGLER",
       "definitions": [
         {
@@ -1143,7 +1167,31 @@
       ],
       "relatedWords": []
     },
-    "jonquiljonquille": {
+    "jongler": {
+      "word": "JONGLEUR; JONGLER",
+      "definitions": [
+        {
+          "text": "In the Middle Ages, a court attendant or other person who, for hire, recited or sang verses, usually of his own composition. See Troubadour. Vivacity and picturesquenees of the jongleur's verse. J R. Green.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A juggler; a conjuror. See Juggler. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jonquil": {
+      "word": "JONQUIL; JONQUILLE",
+      "definitions": [
+        {
+          "text": "A bulbous plant of the genus Narcissus (N. Jonquilla), allied to the daffodil. It has long, rushlike leaves, and yellow or white fragrant flowers. The root has emetic properties. It is sometimes called the rush-leaved daffodil. See Illust. of Corona.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jonquille": {
       "word": "JONQUIL; JONQUILLE",
       "definitions": [
         {
@@ -1163,7 +1211,21 @@
       ],
       "relatedWords": []
     },
-    "jordanjorden": {
+    "jordan": {
+      "word": "JORDAN; JORDEN",
+      "definitions": [
+        {
+          "text": "A pot or vessel with a large neck, formerly used by physicians and alchemists. [Obs.] Halliwell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A chamber pot. [Obs.] Chaucer. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jorden": {
       "word": "JORDAN; JORDEN",
       "definitions": [
         {
@@ -1347,7 +1409,7 @@
       "word": "JOULE",
       "definitions": [
         {
-          "text": "A unit of work which is equal to 107 units of work in the C. G. S. system of units (ergs), and is practically equivalent to the energy expended in one second by an electric current of one ampere in",
+          "text": "A unit of work which is equal to 107 units of work in the C. G. S. system of units (ergs), and is practically equivalent to the energy expended in one second by an electric current of one ampere in a resistance of one ohm. One joule is approximately equal to 0.738 foot pounds. Joule's equivalent. See under Equivalent, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1785,7 +1847,17 @@
       "word": "JOYFUL",
       "definitions": [
         {
-          "text": "Full of joy; having or causing joy; very glad; as, a joyful heart. \"Joyful tidings.\" Shak. My soul shall be joyful in my God. Is. lxi. 10.",
+          "text": "Full of joy; having or causing joy; very glad; as, a joyful heart. \"Joyful tidings.\" Shak. My soul shall be joyful in my God. Is. lxi. 10. Sad for their loss, but joyful of our life. Pope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "joyless": {
+      "word": "JOYLESS",
+      "definitions": [
+        {
+          "text": "Not having joy; not causing joy; unenjoyable. With downcast eyes the joyless victor sat. Dryden. Youth and health and war are joyless to him. Addison. [He] pining for the lass, Is joyless of the grove, and spurns the growing grass. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1795,7 +1867,7 @@
       "word": "JOYOUS",
       "definitions": [
         {
-          "text": "Glad; gay; merry; joyful; also, affording or inspiring joy; with of before the word or words expressing the cause of joy. Is this your joyous city Is. xxiii. 7. They all as glad as birds of joyous prime. Spenser. And joyous of our conquest early won. Dryden.",
+          "text": "Glad; gay; merry; joyful; also, affording or inspiring joy; with of before the word or words expressing the cause of joy. Is this your joyous city Is. xxiii. 7. They all as glad as birds of joyous prime. Spenser. And joyous of our conquest early won. Dryden. festive; joyful; happy; blissful; charming; delightful.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1807,6 +1879,16 @@
         {
           "text": "Causing joyfulness. [R.] This all joysome grove. T. Browne.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "joobbeh": {
+      "word": "JUBBAH; JUBBEH; JOOBBEH",
+      "definitions": [
+        {
+          "text": "A long outer garment worn by both sexes of Mohammedans of the better class.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

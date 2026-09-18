@@ -1,6 +1,20 @@
 {
   "version": "v1",
   "entries": {
+    "arnotto": {
+      "word": "ANNOTTO; ARNOTTO",
+      "definitions": [
+        {
+          "text": "A red or yellowish-red dyeing material, prepared from the pulp surrounding the seeds of a tree (Bixa orellana) belonging to the tropical regions of America. It is used for coloring cheese, butter, etc. [Written also Anatto, Anatta, Annatto, Annotta, etc.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Annotto.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "ar": {
       "word": "AR",
       "definitions": [
@@ -249,6 +263,16 @@
         {
           "text": "The language of the Arabians. very widely diffused, being the language in which all Mohammedans must read the Koran, and is spoken as a vernacular tongue in Arabia, Syria, and Northern Africa.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arabical": {
+      "word": "ARABICAL",
+      "definitions": [
+        {
+          "text": "Relating to Arabia; Arabic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -565,6 +589,16 @@
       ],
       "relatedWords": []
     },
+    "araguato": {
+      "word": "ARAGUATO",
+      "definitions": [
+        {
+          "text": "A South American monkey, the ursine howler (Mycetes ursinus). See Howler, n., 2.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "araise": {
       "word": "ARAISE",
       "definitions": [
@@ -585,7 +619,21 @@
       ],
       "relatedWords": []
     },
-    "aramaeanaramean": {
+    "aramaean": {
+      "word": "ARAMAEAN; ARAMEAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Syrians and Chaldeans, or to their language; Aramaic.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native of Aram.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aramean": {
       "word": "ARAMAEAN; ARAMEAN",
       "definitions": [
         {
@@ -623,7 +671,17 @@
       ],
       "relatedWords": []
     },
-    "araneidaaraneoidea": {
+    "araneida": {
+      "word": "ARANEIDA; ARANEOIDEA",
+      "definitions": [
+        {
+          "text": "See Araneina.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "araneoidea": {
       "word": "ARANEIDA; ARANEOIDEA",
       "definitions": [
         {
@@ -771,7 +829,7 @@
       ],
       "relatedWords": []
     },
-    "arbalestarbalist": {
+    "arbalest": {
       "word": "ARBALEST; ARBALIST",
       "definitions": [
         {
@@ -781,7 +839,27 @@
       ],
       "relatedWords": []
     },
-    "arbalesterarbalister": {
+    "arbalist": {
+      "word": "ARBALEST; ARBALIST",
+      "definitions": [
+        {
+          "text": "A crossbow, consisting of a steel bow set in a shaft of wood, furnished with a string and a trigger, and a mechanical device for bending the bow. It served to throw arrows, darts, bullets, etc. [Written also arbalet and arblast.] Fosbroke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arbalester": {
+      "word": "ARBALESTER; ARBALISTER",
+      "definitions": [
+        {
+          "text": "A crossbowman. [Obs.] Speed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arbalister": {
       "word": "ARBALESTER; ARBALISTER",
       "definitions": [
         {
@@ -1673,7 +1751,17 @@
       ],
       "relatedWords": []
     },
-    "arbutusarbute": {
+    "arbutus": {
+      "word": "ARBUTUS; ARBUTE",
+      "definitions": [
+        {
+          "text": "The strawberry tree, a genus of evergreen shrubs, of the Heath family. It has a berry externally resembling the strawberry; the arbute tree. Trailing arbutus (Bot.), a creeping or trailing plant of the Heath family (Epigæa repens), having white or usually rose- colored flowers with a delicate fragrance, growing in small axillary clusters, and appearing early in the spring; in New England known as mayflower; -- called also ground laurel. Gray.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arbute": {
       "word": "ARBUTUS; ARBUTE",
       "definitions": [
         {
@@ -1882,7 +1970,59 @@
       ],
       "relatedWords": []
     },
-    "arcadianarcadic": {
+    "arcadian": {
+      "word": "ARCADIAN; ARCADIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Arcadia; pastoral; ideally rural; as, Arcadian simplicity or scenery.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Edenic",
+        "agrarian",
+        "agrestic",
+        "agricultural",
+        "arcadian",
+        "bucolic",
+        "celestial",
+        "country",
+        "farm",
+        "genuine",
+        "heavenly",
+        "homespun",
+        "ideal",
+        "idealized",
+        "inartificial",
+        "lowland",
+        "millennial",
+        "native",
+        "natural",
+        "naturelike",
+        "paradisal",
+        "pastoral",
+        "provincial",
+        "rural",
+        "rustic",
+        "unadorned",
+        "unaffected",
+        "unartificial",
+        "unassuming",
+        "undesigning",
+        "undisguising",
+        "undissembling",
+        "undissimulating",
+        "unembellished",
+        "unfeigning",
+        "unpretending",
+        "unpretentious",
+        "unspoiled",
+        "unvarnished",
+        "upland",
+        "utopian"
+      ]
+    },
+    "arcadic": {
       "word": "ARCADIAN; ARCADIC",
       "definitions": [
         {
@@ -2397,11 +2537,21 @@
       ],
       "relatedWords": []
     },
-    "archaeologicarchaeological": {
+    "archaeologic": {
       "word": "ARCHAEOLOGIC; ARCHAEOLOGICAL",
       "definitions": [
         {
-          "text": "Relating to archæology, or antiquities; as, archæological",
+          "text": "Relating to archæology, or antiquities; as, archæological researches.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "archaeological": {
+      "word": "ARCHAEOLOGIC; ARCHAEOLOGICAL",
+      "definitions": [
+        {
+          "text": "Relating to archæology, or antiquities; as, archæological researches.",
           "partOfSpeech": ""
         }
       ],
@@ -3142,7 +3292,17 @@
       ],
       "relatedWords": []
     },
-    "archeologyarcheological": {
+    "archeology": {
+      "word": "ARCHEOLOGY; ARCHEOLOGICAL",
+      "definitions": [
+        {
+          "text": "Same as Archæology, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "archeological": {
       "word": "ARCHEOLOGY; ARCHEOLOGICAL",
       "definitions": [
         {
@@ -3669,7 +3829,21 @@
       ],
       "relatedWords": []
     },
-    "archimagearchimagus": {
+    "archimage": {
+      "word": "ARCHIMAGE; ARCHIMAGUS",
+      "definitions": [
+        {
+          "text": "The high priest of the Persian Magi, or worshipers of fire.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A great magician, wizard, or enchanter. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "archimagus": {
       "word": "ARCHIMAGE; ARCHIMAGUS",
       "definitions": [
         {
@@ -3882,7 +4056,7 @@
       ],
       "relatedWords": []
     },
-    "architectonicarchitectonical": {
+    "architectonic": {
       "word": "ARCHITECTONIC; ARCHITECTONICAL",
       "definitions": [
         {
@@ -3892,13 +4066,7 @@
         {
           "text": "Relating to the systemizing of knowledge.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "architectonic": {
-      "word": "ARCHITECTONIC",
-      "definitions": [
+        },
         {
           "text": "The science of architecture.",
           "partOfSpeech": "noun"
@@ -3906,6 +4074,20 @@
         {
           "text": "The act of arranging knowledge into a system.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "architectonical": {
+      "word": "ARCHITECTONIC; ARCHITECTONICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a master builder, or to architecture; evincing skill in designing or construction; constructive. \"Architectonic wisdom.\" Boyle. These architectonic functions which we had hitherto thought belonged. J. C. Shairp.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Relating to the systemizing of knowledge.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3944,7 +4126,7 @@
       "word": "ARCHITECTURAL",
       "definitions": [
         {
-          "text": "Of or pertaining to the art of building; conformed to the rules",
+          "text": "Of or pertaining to the art of building; conformed to the rules of architecture.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4233,7 +4415,17 @@
         "timekeeper"
       ]
     },
-    "archlutearchilute": {
+    "archlute": {
+      "word": "ARCHLUTE; ARCHILUTE",
+      "definitions": [
+        {
+          "text": "A large theorbo, or double-necked lute, formerly in use, having the bass strings doubled with an octave, and the higher strings with a unison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "archilute": {
       "word": "ARCHLUTE; ARCHILUTE",
       "definitions": [
         {
@@ -4763,7 +4955,17 @@
       ],
       "relatedWords": []
     },
-    "arcuatearcuated": {
+    "arcuate": {
+      "word": "ARCUATE; ARCUATED",
+      "definitions": [
+        {
+          "text": "Bent or curved in the form of a bow. \"Arcuate stalks.\" Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arcuated": {
       "word": "ARCUATE; ARCUATED",
       "definitions": [
         {
@@ -5729,7 +5931,29 @@
         "zone"
       ]
     },
-    "areadareed": {
+    "aread": {
+      "word": "AREAD; AREED",
+      "definitions": [
+        {
+          "text": "To tell, declare, explain, or interpret; to divine; to guess; as, to aread a riddle or a dream. [Obs.] Therefore more plain aread this doubtful case. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To read. [Obs.] Drayton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To counsel, advise, warn, or direct. But mark what I aread thee now. Avaunt! Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To decree; to adjudge. [Archaic] Ld. Lytton.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "areed": {
       "word": "AREAD; AREED",
       "definitions": [
         {
@@ -5785,7 +6009,17 @@
       ],
       "relatedWords": []
     },
-    "arecolinearecolin": {
+    "arecoline": {
+      "word": "ARECOLINE; ARECOLIN",
+      "definitions": [
+        {
+          "text": "An oily liquid substance, C8H13O2N, the chief alkaloid of the betel nut, to which the latter owes its anthelmintic action.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arecolin": {
       "word": "ARECOLINE; ARECOLIN",
       "definitions": [
         {
@@ -5990,7 +6224,17 @@
       ],
       "relatedWords": []
     },
-    "arengarenga": {
+    "areng": {
+      "word": "ARENG; ARENGA",
+      "definitions": [
+        {
+          "text": "A palm tree (Saguerus saccharifer) which furnishes sago, wine, and fibers for ropes; the gomuti palm.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arenga": {
       "word": "ARENG; ARENGA",
       "definitions": [
         {
@@ -6108,7 +6352,17 @@
       ],
       "relatedWords": []
     },
-    "areolateareolated": {
+    "areolate": {
+      "word": "AREOLATE; AREOLATED",
+      "definitions": [
+        {
+          "text": "Divided into small spaces or areolations, as the wings of insects, the leaves of plants, or the receptacle of compound flowers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "areolated": {
       "word": "AREOLATE; AREOLATED",
       "definitions": [
         {
@@ -6162,7 +6416,17 @@
       ],
       "relatedWords": []
     },
-    "areometricareometrical": {
+    "areometric": {
+      "word": "AREOMETRIC; AREOMETRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or measured by, an areometer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "areometrical": {
       "word": "AREOMETRIC; AREOMETRICAL",
       "definitions": [
         {
@@ -6322,11 +6586,15 @@
         {
           "text": "A ludicrous corruption of the Latin word ergo, therefore. Shak.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "A species of wild sheep (Ovis ammon, or O. argali), remarkable for its large horns. It inhabits the mountains of Siberia and central Asia. applied to the bighorn sheep of the Rocky Mountains. See Bighorn.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "argalargali": {
+    "argali": {
       "word": "ARGAL; ARGALI",
       "definitions": [
         {
@@ -6426,7 +6694,17 @@
       ],
       "relatedWords": []
     },
-    "argentamineargentamin": {
+    "argentamine": {
+      "word": "ARGENTAMINE; ARGENTAMIN",
+      "definitions": [
+        {
+          "text": "A solution of silver phosphate in an aqueous solution of ethylene diamine, used as an antiseptic astringent and as a disinfectant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "argentamin": {
       "word": "ARGENTAMINE; ARGENTAMIN",
       "definitions": [
         {
@@ -6588,7 +6866,7 @@
       "word": "ARGILLITE",
       "definitions": [
         {
-          "text": "Argillaceous schist or slate; clay slate. Its colors is bluish",
+          "text": "Argillaceous schist or slate; clay slate. Its colors is bluish or blackish gray, sometimes greenish gray, brownish red, etc.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7588,7 +7866,37 @@
       ],
       "relatedWords": []
     },
-    "arhizalarhizousarhythmicarhythmous": {
+    "arhizal": {
+      "word": "ARHIZAL; ARHIZOUS; ARHYTHMIC; ARHYTHMOUS",
+      "definitions": [
+        {
+          "text": "See Arrhizal, Arrhizous, Arrhythmic, Arrhythmous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arhizous": {
+      "word": "ARHIZAL; ARHIZOUS; ARHYTHMIC; ARHYTHMOUS",
+      "definitions": [
+        {
+          "text": "See Arrhizal, Arrhizous, Arrhythmic, Arrhythmous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arhythmic": {
+      "word": "ARHIZAL; ARHIZOUS; ARHYTHMIC; ARHYTHMOUS",
+      "definitions": [
+        {
+          "text": "See Arrhizal, Arrhizous, Arrhythmic, Arrhythmous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arhythmous": {
       "word": "ARHIZAL; ARHIZOUS; ARHYTHMIC; ARHYTHMOUS",
       "definitions": [
         {
@@ -7870,7 +8178,48 @@
       ],
       "relatedWords": []
     },
-    "arielarielgazelle": {
+    "ariel": {
+      "word": "ARIEL; ARIEL GAZELLE",
+      "definitions": [
+        {
+          "text": "A variety of the gazelle (Antilope, or Gazella, dorcas), found in Arabia and adjacent countries. (b) A squirrel-like Australian marsupial, a species of Petaurus. (c) A beautiful Brazilian toucan Ramphastos ariel).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Befind",
+        "Corrigan",
+        "Finnbeara",
+        "Mab",
+        "Oberon",
+        "Titania",
+        "banshee",
+        "brownie",
+        "cluricaune",
+        "dwarf",
+        "elf",
+        "fairy",
+        "fairy queen",
+        "fay",
+        "gnome",
+        "goblin",
+        "gremlin",
+        "hob",
+        "imp",
+        "kobold",
+        "leprechaun",
+        "ouphe",
+        "peri",
+        "pixie",
+        "pooka",
+        "puca",
+        "pwca",
+        "sprite",
+        "sylph",
+        "sylphid"
+      ]
+    },
+    "arielgazelle": {
       "word": "ARIEL; ARIEL GAZELLE",
       "definitions": [
         {
@@ -7922,7 +8271,17 @@
       ],
       "relatedWords": []
     },
-    "ariettaariette": {
+    "arietta": {
+      "word": "ARIETTA; ARIETTE",
+      "definitions": [
+        {
+          "text": "A short aria, or air. \"A military ariette.\" Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ariette": {
       "word": "ARIETTA; ARIETTE",
       "definitions": [
         {
@@ -7942,7 +8301,7 @@
       ],
       "relatedWords": []
     },
-    "arilarillus": {
+    "aril": {
       "word": "ARIL; ARILLUS",
       "definitions": [
         {
@@ -7952,7 +8311,37 @@
       ],
       "relatedWords": []
     },
-    "arillatearillatedariled": {
+    "arillus": {
+      "word": "ARIL; ARILLUS",
+      "definitions": [
+        {
+          "text": "A exterior covering, forming a false coat or appendage to a seed, as the loose, transparent bag inclosing the seed or the white water lily. The mace of the nutmeg is also an aril. Gray.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arillate": {
+      "word": "ARILLATE; ARILLATED; ARILED",
+      "definitions": [
+        {
+          "text": "Having an aril.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arillated": {
+      "word": "ARILLATE; ARILLATED; ARILED",
+      "definitions": [
+        {
+          "text": "Having an aril.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ariled": {
       "word": "ARILLATE; ARILLATED; ARILED",
       "definitions": [
         {
@@ -8557,7 +8946,7 @@
         "waldgrave"
       ]
     },
-    "aristocraticaristocratical": {
+    "aristocratic": {
       "word": "ARISTOCRATIC; ARISTOCRATICAL",
       "definitions": [
         {
@@ -8565,7 +8954,128 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Partaking of aristocracy; befitting aristocracy; characteristic of, or originating with, the aristocracy; as, an aristocratic",
+          "text": "Partaking of aristocracy; befitting aristocracy; characteristic of, or originating with, the aristocracy; as, an aristocratic measure; aristocratic pride or manners.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "U",
+        "absolute",
+        "absolutist",
+        "absolutistic",
+        "arbitrary",
+        "arrogant",
+        "august",
+        "authoritarian",
+        "authoritative",
+        "autocratic",
+        "autonomous",
+        "bossy",
+        "bureaucratic",
+        "chivalrous",
+        "civic",
+        "civil",
+        "constitutional",
+        "courtly",
+        "democratic",
+        "despotic",
+        "dictatorial",
+        "dignified",
+        "domineering",
+        "ducal",
+        "elitist",
+        "exalted",
+        "fascist",
+        "federal",
+        "federalist",
+        "federalistic",
+        "feudal",
+        "genteel",
+        "gentle",
+        "gentlemanlike",
+        "gentlemanly",
+        "governmental",
+        "grand",
+        "grave",
+        "grinding",
+        "gubernatorial",
+        "heteronomous",
+        "high",
+        "high and mighty",
+        "high-handed",
+        "hubristic",
+        "imperative",
+        "imperial",
+        "imperious",
+        "imposing",
+        "kinglike",
+        "kingly",
+        "knightly",
+        "ladylike",
+        "lordly",
+        "magisterial",
+        "magistral",
+        "majestic",
+        "masterful",
+        "matriarchal",
+        "matriarchic",
+        "monarchal",
+        "monarchial",
+        "monarchic",
+        "monocratic",
+        "noble",
+        "of gentle blood",
+        "of rank",
+        "official",
+        "oligarchal",
+        "oligarchic",
+        "oppressive",
+        "overbearing",
+        "overruling",
+        "parliamentarian",
+        "parliamentary",
+        "patriarchal",
+        "patriarchic",
+        "patrician",
+        "peremptory",
+        "pluralistic",
+        "political",
+        "princelike",
+        "princely",
+        "queenlike",
+        "queenly",
+        "quite the lady",
+        "regal",
+        "repressive",
+        "republican",
+        "royal",
+        "sedate",
+        "self-governing",
+        "severe",
+        "sober",
+        "solemn",
+        "stately",
+        "statuesque",
+        "strict",
+        "suppressive",
+        "theocratic",
+        "titled",
+        "totalitarian",
+        "tyrannical",
+        "tyrannous",
+        "venerable",
+        "worthy"
+      ]
+    },
+    "aristocratical": {
+      "word": "ARISTOCRATIC; ARISTOCRATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an aristocracy; consisting in, or favoring, a government of nobles, or principal men; as, an aristocratic constitution.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Partaking of aristocracy; befitting aristocracy; characteristic of, or originating with, the aristocracy; as, an aristocratic measure; aristocratic pride or manners.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8944,6 +9454,16 @@
       ],
       "relatedWords": []
     },
+    "arkose": {
+      "word": "ARKOSE",
+      "definitions": [
+        {
+          "text": "A sandstone derived from the disintegration of granite or gneiss, and characterized by feldspar fragments. -- Ar*kos\"ic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "arkshell": {
       "word": "ARK SHELL",
       "definitions": [
@@ -9218,6 +9738,41 @@
         "wall",
         "wing",
         "wrist"
+      ]
+    },
+    "armada": {
+      "word": "ARMADA",
+      "definitions": [
+        {
+          "text": "A fleet of armed ships; a squadron. Specifically, the Spanish fleet which was sent to assail England, a. d. 1558.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Naval Construction Battalion",
+        "RN",
+        "Royal Navy",
+        "Seabees",
+        "USN",
+        "United States Navy",
+        "argosy",
+        "coast guard",
+        "division",
+        "escadrille",
+        "fleet",
+        "flotilla",
+        "marine",
+        "merchant fleet",
+        "merchant marine",
+        "merchant navy",
+        "mosquito fleet",
+        "naval forces",
+        "naval militia",
+        "naval reserve",
+        "navy",
+        "squadron",
+        "task force",
+        "task group"
       ]
     },
     "armado": {
@@ -9660,6 +10215,10 @@
       "word": "ARMINIAN",
       "definitions": [
         {
+          "text": "Of or pertaining to Arminius of his followers, or to their doctrines. See note under Arminian, n.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "One who holds the tenets of Arminius, a Dutch divine (b. 1560, d. 1609). reprobation, in opposition to absolute predestination. 2. Universal redemption, or that the atonement was made by Christ for all mankind, though none but believers can be partakers of the benefit. 3. That man, in order to exercise true faith, must be regenerated and renewed by the operation of the Holy Spirit, which is the gift of God. 4. That man may resist divine grace. 5. That man may relapse from a state of grace.",
           "partOfSpeech": "noun"
         }
@@ -9696,7 +10255,17 @@
       ],
       "relatedWords": []
     },
-    "armisonantarmisonous": {
+    "armisonant": {
+      "word": "ARMISONANT; ARMISONOUS",
+      "definitions": [
+        {
+          "text": "Rustling in arms; resounding with arms. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "armisonous": {
       "word": "ARMISONANT; ARMISONOUS",
       "definitions": [
         {
@@ -9989,7 +10558,7 @@
       ],
       "relatedWords": []
     },
-    "armoricarmorican": {
+    "armoric": {
       "word": "ARMORIC; ARMORICAN",
       "definitions": [
         {
@@ -10004,8 +10573,16 @@
       "relatedWords": []
     },
     "armorican": {
-      "word": "ARMORICAN",
+      "word": "ARMORIC; ARMORICAN",
       "definitions": [
+        {
+          "text": "Of or pertaining to the northwestern part of France (formerly called Armorica, now Bretagne or Brittany), or to its people.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The language of the Armoricans, a Celtic dialect which has remained to the present times.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A native of Armorica.",
           "partOfSpeech": "noun"
@@ -10315,7 +10892,17 @@
         "yards"
       ]
     },
-    "armozeenarmozine": {
+    "armozeen": {
+      "word": "ARMOZEEN; ARMOZINE",
+      "definitions": [
+        {
+          "text": "A thick plain silk, generally black, and used for clerical. Simmonds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "armozine": {
       "word": "ARMOZEEN; ARMOZINE",
       "definitions": [
         {
@@ -10345,8 +10932,8 @@
       ],
       "relatedWords": []
     },
-    "armsorigfittingsakintoarmusshoulderandearmseearm": {
-      "word": "arms, orig. fittings, akin to armus shoulder, and E. arm. See Arm,",
+    "arms": {
+      "word": "ARMS",
       "definitions": [
         {
           "text": "Instruments or weapons of offense or defense. He lays down his arms, but not his wiles. Milton. Three horses and three goodly suits of arms. Tennyson.",
@@ -10381,7 +10968,115 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "achievement",
+        "alerion",
+        "animal charge",
+        "annulet",
+        "argent",
+        "armorial bearings",
+        "armory",
+        "art of war",
+        "azure",
+        "bandeau",
+        "bar",
+        "bar sinister",
+        "baton",
+        "bearings",
+        "bend",
+        "bend sinister",
+        "billet",
+        "blazon",
+        "blazonry",
+        "bordure",
+        "broad arrow",
+        "cadency mark",
+        "canton",
+        "chaplet",
+        "charge",
+        "chevron",
+        "chief",
+        "chivalry",
+        "coat of arms",
+        "cockatrice",
+        "coronet",
+        "crescent",
+        "crest",
+        "cross",
+        "cross moline",
+        "crown",
+        "device",
+        "difference",
+        "differencing",
+        "eagle",
+        "ermine",
+        "ermines",
+        "erminites",
+        "erminois",
+        "escutcheon",
+        "falcon",
+        "fess",
+        "fess point",
+        "field",
+        "file",
+        "flanch",
+        "fleur-de-lis",
+        "fret",
+        "fur",
+        "fusil",
+        "garland",
+        "generalship",
+        "griffin",
+        "gules",
+        "gyron",
+        "hatchment",
+        "helmet",
+        "heraldic device",
+        "honor point",
+        "impalement",
+        "impaling",
+        "inescutcheon",
+        "knighthood",
+        "label",
+        "lion",
+        "lozenge",
+        "mantling",
+        "marshaling",
+        "martlet",
+        "mascle",
+        "metal",
+        "motto",
+        "mullet",
+        "nombril point",
+        "octofoil",
+        "or",
+        "ordinary",
+        "orle",
+        "pale",
+        "paly",
+        "pean",
+        "pheon",
+        "purpure",
+        "quarter",
+        "quartering",
+        "rose",
+        "sable",
+        "saltire",
+        "scutcheon",
+        "shield",
+        "spread eagle",
+        "subordinary",
+        "tenne",
+        "tincture",
+        "torse",
+        "tressure",
+        "unicorn",
+        "vair",
+        "vert",
+        "war",
+        "wreath",
+        "yale"
+      ]
     },
     "armure": {
       "word": "ARMURE",
@@ -10553,7 +11248,17 @@
       ],
       "relatedWords": []
     },
-    "arnaarnee": {
+    "arna": {
+      "word": "ARNA; ARNEE",
+      "definitions": [
+        {
+          "text": "The wild buffalo of India (Bos, or Bubalus, arni), larger than the domestic buffalo and having enormous horns.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arnee": {
       "word": "ARNA; ARNEE",
       "definitions": [
         {
@@ -10573,7 +11278,17 @@
       ],
       "relatedWords": []
     },
-    "arnautarnaout": {
+    "arnaut": {
+      "word": "ARNAUT; ARNAOUT",
+      "definitions": [
+        {
+          "text": "An inhabitant of Albania and neighboring mountainous regions, specif. one serving as a soldier in the Turkish army.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arnaout": {
       "word": "ARNAUT; ARNAOUT",
       "definitions": [
         {
@@ -10613,7 +11328,7 @@
       ],
       "relatedWords": []
     },
-    "arnotarnut": {
+    "arnot": {
       "word": "ARNOT; ARNUT",
       "definitions": [
         {
@@ -10623,17 +11338,27 @@
       ],
       "relatedWords": []
     },
-    "arnotto": {
-      "word": "ARNOTTO",
+    "arnut": {
+      "word": "ARNOT; ARNUT",
       "definitions": [
         {
-          "text": "Same as Annotto.",
+          "text": "The earthnut. [Obs.]",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "aroidaroideous": {
+    "aroid": {
+      "word": "AROID; AROIDEOUS",
+      "definitions": [
+        {
+          "text": "Belonging to, or resembling, the Arum family of plants.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aroideous": {
       "word": "AROID; AROIDEOUS",
       "definitions": [
         {
@@ -10771,19 +11496,13 @@
         "whiff"
       ]
     },
-    "aromaticaromatical": {
+    "aromatic": {
       "word": "AROMATIC; AROMATICAL",
       "definitions": [
         {
           "text": "Pertaining to, or containing, aroma; fragrant; spicy; strong- scented; odoriferous; as, aromatic balsam. Aromatic compound (Chem.), one of a large class of organic substances, as the oils of bitter almonds, wintergreen, and turpentine, the balsams, camphors, etc., many of which have an aromatic odor. They include many of the most important of the carbon compounds and may all be derived from the benzene group, C6H6. The term is extended also to many of their derivatives.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "aromatic": {
-      "word": "AROMATIC",
-      "definitions": [
+        },
         {
           "text": "A plant, drug, or medicine, characterized by a fragrant smell, and usually by a warm, pungent taste, as ginger, cinnamon spices.",
           "partOfSpeech": "noun"
@@ -10821,6 +11540,16 @@
         "sweet-smelling",
         "thuriferous"
       ]
+    },
+    "aromatical": {
+      "word": "AROMATIC; AROMATICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or containing, aroma; fragrant; spicy; strong- scented; odoriferous; as, aromatic balsam. Aromatic compound (Chem.), one of a large class of organic substances, as the oils of bitter almonds, wintergreen, and turpentine, the balsams, camphors, etc., many of which have an aromatic odor. They include many of the most important of the carbon compounds and may all be derived from the benzene group, C6H6. The term is extended also to many of their derivatives.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "aromatization": {
       "word": "AROMATIZATION",
@@ -11252,7 +11981,17 @@
       ],
       "relatedWords": []
     },
-    "arpentarpen": {
+    "arpent": {
+      "word": "ARPENT; ARPEN",
+      "definitions": [
+        {
+          "text": "Formerly, a measure of land in France, varying in different parts of the country. The arpent of Paris was 4,088 sq. yards, or nearly five sixths of an English acre. The woodland arpent was about 1 acre, 1 rood, 1 perch, English.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arpen": {
       "word": "ARPENT; ARPEN",
       "definitions": [
         {
@@ -11292,7 +12031,17 @@
       ],
       "relatedWords": []
     },
-    "arquebusarquebuse": {
+    "arquebus": {
+      "word": "ARQUEBUS; ARQUEBUSE",
+      "definitions": [
+        {
+          "text": "A sort of hand gun or firearm a contrivance answering to a trigger, by which the burning match was applied. The musket was a later invention. [Written also harquebus.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arquebuse": {
       "word": "ARQUEBUS; ARQUEBUSE",
       "definitions": [
         {
@@ -11540,7 +12289,17 @@
         "veiled accusation"
       ]
     },
-    "arraimentarrayment": {
+    "arraiment": {
+      "word": "ARRAIMENT; ARRAYMENT",
+      "definitions": [
+        {
+          "text": "Clothes; raiment. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arrayment": {
       "word": "ARRAIMENT; ARRAYMENT",
       "definitions": [
         {
@@ -12375,7 +13134,17 @@
       ],
       "relatedWords": []
     },
-    "arraswisearrasways": {
+    "arraswise": {
+      "word": "ARRASWISE; ARRASWAYS",
+      "definitions": [
+        {
+          "text": "Placed in such a position as to exhibit the top and two sides, the corner being in front; -- said of a rectangular form. Encyc. Brit. Cussans.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arrasways": {
       "word": "ARRASWISE; ARRASWAYS",
       "definitions": [
         {
@@ -12811,7 +13580,7 @@
         "wantage"
       ]
     },
-    "arrectarrected": {
+    "arrect": {
       "word": "ARRECT; ARRECTED",
       "definitions": [
         {
@@ -12821,13 +13590,7 @@
         {
           "text": "Attentive, as a person listening. [Obs.] God speaks not the idle and unconcerned hearer, but to the vigilant and arrect. Smalridge.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "arrect": {
-      "word": "ARRECT",
-      "definitions": [
+        },
         {
           "text": "To direct. [Obs.] My supplication to you I arrect. Skelton.",
           "partOfSpeech": "verb"
@@ -12839,6 +13602,20 @@
         {
           "text": "To impute. [Obs.] Sir T. More.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arrected": {
+      "word": "ARRECT; ARRECTED",
+      "definitions": [
+        {
+          "text": "Lifted up; raised; erect.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Attentive, as a person listening. [Obs.] God speaks not the idle and unconcerned hearer, but to the vigilant and arrect. Smalridge.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -13472,7 +14249,7 @@
       ],
       "relatedWords": []
     },
-    "arrhizalarrhizous": {
+    "arrhizal": {
       "word": "ARRHIZAL; ARRHIZOUS",
       "definitions": [
         {
@@ -13482,7 +14259,27 @@
       ],
       "relatedWords": []
     },
-    "arrhythmicarrhythmous": {
+    "arrhizous": {
+      "word": "ARRHIZAL; ARRHIZOUS",
+      "definitions": [
+        {
+          "text": "Destitute of a true root, as a parasitical plant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arrhythmic": {
+      "word": "ARRHYTHMIC; ARRHYTHMOUS",
+      "definitions": [
+        {
+          "text": "Being without rhythm or regularity, as the pulse.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arrhythmous": {
       "word": "ARRHYTHMIC; ARRHYTHMOUS",
       "definitions": [
         {
@@ -15353,7 +16150,7 @@
       "word": "ARTERIOSCLEROSIS",
       "definitions": [
         {
-          "text": "Abnormal thickening and hardening of the walls of the arteries,",
+          "text": "Abnormal thickening and hardening of the walls of the arteries, esp. of the intima, occurring mostly in old age. -- Ar*te`ri*o*scle*rot\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -15939,7 +16736,75 @@
       ],
       "relatedWords": []
     },
-    "arthriticarthritical": {
+    "arthritic": {
+      "word": "ARTHRITIC; ARTHRITICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the joints. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to arthritis; gouty. Cowper.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "allergic",
+        "anemic",
+        "apoplectic",
+        "bilious",
+        "cancerous",
+        "case",
+        "chlorotic",
+        "colicky",
+        "consumptive",
+        "dropsical",
+        "dyspeptic",
+        "edematous",
+        "encephalitic",
+        "epileptic",
+        "incurable",
+        "inpatient",
+        "invalid",
+        "laryngitic",
+        "leprous",
+        "luetic",
+        "malarial",
+        "malignant",
+        "measly",
+        "nephritic",
+        "neuralgic",
+        "neuritic",
+        "outpatient",
+        "palsied",
+        "paralytic",
+        "patient",
+        "phthisic",
+        "pleuritic",
+        "pneumonic",
+        "pocky",
+        "podagric",
+        "rachitic",
+        "rheumatic",
+        "rickety",
+        "scorbutic",
+        "scrofulous",
+        "shut-in",
+        "sick person",
+        "spastic",
+        "sufferer",
+        "tabetic",
+        "tabid",
+        "terminal case",
+        "the sick",
+        "tubercular",
+        "tuberculous",
+        "tumorigenic",
+        "tumorous",
+        "valetudinarian"
+      ]
+    },
+    "arthritical": {
       "word": "ARTHRITIC; ARTHRITICAL",
       "definitions": [
         {
@@ -16136,7 +17001,17 @@
       ],
       "relatedWords": []
     },
-    "arthrodialarthrodic": {
+    "arthrodial": {
+      "word": "ARTHRODIAL; ARTHRODIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to arthrodia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "arthrodic": {
       "word": "ARTHRODIAL; ARTHRODIC",
       "definitions": [
         {
@@ -16240,7 +17115,7 @@
       "word": "ARTHROPODA",
       "definitions": [
         {
-          "text": "A large division of Articulata, embracing all those that have jointed legs. It includes Insects, Arachnida, Pychnogonida, and",
+          "text": "A large division of Articulata, embracing all those that have jointed legs. It includes Insects, Arachnida, Pychnogonida, and Crustacea.",
           "partOfSpeech": "noun"
         }
       ],
@@ -16667,11 +17542,15 @@
         {
           "text": "Of or pertaining to the joints; as, an articular disease; an articular process.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A bone in the base of the lower jaw of many birds, reptiles, amphibians, and fishes.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "articulararticulary": {
+    "articulary": {
       "word": "ARTICULAR; ARTICULARY",
       "definitions": [
         {
@@ -18238,11 +19117,97 @@
       ],
       "relatedWords": []
     },
-    "artisticartistical": {
+    "artistic": {
       "word": "ARTISTIC; ARTISTICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to art or to artists; made in the manner of an artist; conformable to art; characterized by art; showing taste or",
+          "text": "Of or pertaining to art or to artists; made in the manner of an artist; conformable to art; characterized by art; showing taste or skill.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Attic",
+        "Daedalian",
+        "adept",
+        "adroit",
+        "aesthetic",
+        "apt",
+        "art-conscious",
+        "arty",
+        "authoritative",
+        "beautiful",
+        "bravura",
+        "brilliant",
+        "chaste",
+        "choice",
+        "classic",
+        "clean",
+        "clever",
+        "coordinated",
+        "crack",
+        "crackerjack",
+        "cunning",
+        "cute",
+        "daedal",
+        "deft",
+        "dexterous",
+        "dextrous",
+        "diplomatic",
+        "excellent",
+        "expert",
+        "fancy",
+        "good",
+        "goodish",
+        "graceful",
+        "handy",
+        "in good taste",
+        "ingenious",
+        "magisterial",
+        "masterful",
+        "masterly",
+        "neat",
+        "no mean",
+        "of choice",
+        "of consummate art",
+        "of quality",
+        "ornamental",
+        "painterly",
+        "pleasing",
+        "politic",
+        "professional",
+        "proficient",
+        "pure",
+        "quick",
+        "quiet",
+        "quite some",
+        "ready",
+        "resourceful",
+        "restrained",
+        "simple",
+        "skillful",
+        "slick",
+        "some",
+        "statesmanlike",
+        "stylish",
+        "subdued",
+        "tactful",
+        "tasteful",
+        "the compleat",
+        "the complete",
+        "unaffected",
+        "understated",
+        "unobtrusive",
+        "virtuoso",
+        "well-chosen",
+        "well-done",
+        "workmanlike"
+      ]
+    },
+    "artistical": {
+      "word": "ARTISTIC; ARTISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to art or to artists; made in the manner of an artist; conformable to art; characterized by art; showing taste or skill.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -18590,7 +19555,17 @@
       ],
       "relatedWords": []
     },
-    "artocarpeousartocarpous": {
+    "artocarpeous": {
+      "word": "ARTOCARPEOUS; ARTOCARPOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the breadfruit, or to the genus Artocarpus.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "artocarpous": {
       "word": "ARTOCARPEOUS; ARTOCARPOUS",
       "definitions": [
         {
@@ -18784,40 +19759,6 @@
         {
           "text": "Ladle-shaped; -- applied to two small cartilages of the larynx, and also to the glands, muscles, etc., connected with them. The cartilages are attached to the cricoid cartilage and connected with the vocal cords.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "armytheverbalnounininghastheformofthepresentparticiple": {
-      "word": "army. The verbal noun in -ing has the form of the present participle.",
-      "definitions": [
-        {
-          "text": "Anything that partakes of the nature of different things. [Obs.] The participles or confines between plants and living creatures. Bacon.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "arrestingfrprehendreprenderetolayholdoftoseizesee": {
-      "word": "arresting, fr. prehendre, prendere, to lay hold of, to seize. See",
-      "definitions": [
-        {
-          "text": "A place where persons are confined, or restrained of personal liberty; hence, a place or state o Bring my soul out of prison, that I may praise thy name. Ps. cxlii. 7. The tyrant Æolus, . . . With power imperial, curbs the struggling winds, And sounding tempests in dark prisons binds. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Specifically, a building for the safe custody or confinement of",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "arudderahelmandprobablytoicelstaurrapalestakegr": {
-      "word": "a rudder, a helm, and probably to Icel. staurr a pale, stake, Gr.",
-      "definitions": [
-        {
-          "text": "To direct the course of; to guide; to govern; -- applied especially to a vessel in the water. That with a staff his feeble steps did steer. Spenser.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

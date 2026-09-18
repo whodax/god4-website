@@ -1,6 +1,48 @@
 {
   "version": "v1",
   "entries": {
+    "syrup": {
+      "word": "SIRUP; SYRUP",
+      "definitions": [
+        {
+          "text": "A thick and viscid liquid made from the juice of fruits, herbs, etc., boiled with sugar.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thick and viscid saccharine solution of superior quality (as sugarhouse sirup or molasses, maple sirup); specifically, in pharmacy and often in cookery, a saturated solution of sugar and water (simple sirup), or such a solution flavored or medicated. Lucent sirups tinct with cinnamon. Keats. Mixing sirup. See the Note under Dextrose.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Sirup, Sirupy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syruped": {
+      "word": "SIRUPED; SYRUPED",
+      "definitions": [
+        {
+          "text": "Moistened, covered, or sweetened with sirup, or sweet juice.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syrupy": {
+      "word": "SIRUPY; SYRUPY",
+      "definitions": [
+        {
+          "text": "Like sirup, or partaking of its qualities. Mortimer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Same as Sirup, Sirupy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "sy": {
       "word": "SY",
       "definitions": [
@@ -31,7 +73,17 @@
       ],
       "relatedWords": []
     },
-    "sybariticsybaritical": {
+    "sybaritic": {
+      "word": "SYBARITIC; SYBARITICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Sybarites; resembling the Sybarites; luxurious; wanton; effeminate. \"Sybaritic dinners.\" Bp. Warburton. \"Sybaritical cloistres.\" Bp. Hall.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sybaritical": {
       "word": "SYBARITIC; SYBARITICAL",
       "definitions": [
         {
@@ -141,7 +193,17 @@
       ],
       "relatedWords": []
     },
-    "syconiumsyconus": {
+    "syconium": {
+      "word": "SYCONIUM; SYCONUS",
+      "definitions": [
+        {
+          "text": "A collective fleshy fruit, in which the ovaries are hidden within a hollow receptacle, as in the fig.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syconus": {
       "word": "SYCONIUM; SYCONUS",
       "definitions": [
         {
@@ -197,11 +259,31 @@
       ],
       "relatedWords": []
     },
-    "sycophanticsycophantical": {
+    "sycophantic": {
       "word": "SYCOPHANTIC; SYCOPHANTICAL",
       "definitions": [
         {
           "text": "Of or pertaining to a sycophant; characteristic of a sycophant; meanly or obsequiously flattering; courting favor by mean adulation; parasitic. To be cheated and ruined by a sycophantical parasite. South. Sycophantic servants to the King of Spain. De Quincey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sycophantical": {
+      "word": "SYCOPHANTIC; SYCOPHANTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a sycophant; characteristic of a sycophant; meanly or obsequiously flattering; courting favor by mean adulation; parasitic. To be cheated and ruined by a sycophantical parasite. South. Sycophantic servants to the King of Spain. De Quincey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sycophantish": {
+      "word": "SYCOPHANTISH",
+      "definitions": [
+        {
+          "text": "Like a sycophant; obsequiously flattering. Sycophantish satirists that forever humor the prevailing folly. De Quincey.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -341,7 +423,21 @@
       ],
       "relatedWords": []
     },
-    "syllabicsyllabical": {
+    "syllabic": {
+      "word": "SYLLABIC; SYLLABICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a syllable or syllables; as, syllabic accent.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Consisting of a syllable or syllables; as, a syllabic augment. \"The syllabic stage of writing.\" Earle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syllabical": {
       "word": "SYLLABIC; SYLLABICAL",
       "definitions": [
         {
@@ -499,6 +595,26 @@
       ],
       "relatedWords": []
     },
+    "sylleptic": {
+      "word": "SYLLEPTIC; SYLLEPTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a syllepsis; containing syllepsis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sylleptical": {
+      "word": "SYLLEPTIC; SYLLEPTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a syllepsis; containing syllepsis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "syllidian": {
       "word": "SYLLIDIAN",
       "definitions": [
@@ -519,7 +635,17 @@
       ],
       "relatedWords": []
     },
-    "syllogisticsyllogistical": {
+    "syllogistic": {
+      "word": "SYLLOGISTIC; SYLLOGISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a syllogism; consisting of a syllogism, or of the form of reasoning by syllogisms; as, syllogistic arguments or reasoning.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syllogistical": {
       "word": "SYLLOGISTIC; SYLLOGISTICAL",
       "definitions": [
         {
@@ -753,7 +879,17 @@
       ],
       "relatedWords": []
     },
-    "sylvinesylvite": {
+    "sylvine": {
+      "word": "SYLVINE; SYLVITE",
+      "definitions": [
+        {
+          "text": "Native potassium chloride.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sylvite": {
       "word": "SYLVINE; SYLVITE",
       "definitions": [
         {
@@ -773,7 +909,17 @@
       ],
       "relatedWords": []
     },
-    "symarsymarr": {
+    "symar": {
+      "word": "SYMAR; SYMARR",
+      "definitions": [
+        {
+          "text": "See Simar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "symarr": {
       "word": "SYMAR; SYMARR",
       "definitions": [
         {
@@ -799,6 +945,16 @@
         {
           "text": "The living together in more or less imitative association or even close union of two dissimilar organisms. In a broad sense the term includes parasitism, or antagonistic, or antipathetic, symbiosis, in which the association is disadvantageous or destructive to one of the organisms, but ordinarily it is used of cases where the association is advantageous, or often necessary, to one or both, and not harmful to either. When there is bodily union (in extreme cases so close that the two form practically a single body, as in the union of algæ and fungi to form lichens, and in the inclusion of algæ in radiolarians) it is called conjunctive symbiosis; if there is no actual union of the organisms (as in the association of ants with myrmecophytes), disjunctive symbiosis.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "symbiotic": {
+      "word": "SYMBIOTIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or characterized by, or living in, a state of symbiosis. -- Sym`bi*ot\"ic*al (#), a. -- Sym`bi*ot\"ic*al*ly (#), adv.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -859,15 +1015,19 @@
         {
           "text": "See Symbolics.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to a symbol or symbols; of the nature of a symbol; exhibiting or expressing by resemblance or signs; representative; as, the figure of an eye is symbolic of sight and knowledge. The sacrament is a representation of Christ's death by such symbolical actions as he himself appointed. Jer. Taylor. Symbolical delivery (Law), the delivery of property sold by delivering something else as a symbol, token, or representative of it. Bouvier. Chitty.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "symbolicsymbolical": {
+    "symbolical": {
       "word": "SYMBOLIC; SYMBOLICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a symbol or symbols; of the nature of a symbol; exhibiting or expressing by resemblance or signs; representative; as, the figure of an eye is symbolic of sight and",
+          "text": "Of or pertaining to a symbol or symbols; of the nature of a symbol; exhibiting or expressing by resemblance or signs; representative; as, the figure of an eye is symbolic of sight and knowledge. The sacrament is a representation of Christ's death by such symbolical actions as he himself appointed. Jer. Taylor. Symbolical delivery (Law), the delivery of property sold by delivering something else as a symbol, token, or representative of it. Bouvier. Chitty.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -923,7 +1083,17 @@
       ],
       "relatedWords": []
     },
-    "symbolisticsymbolistical": {
+    "symbolistic": {
+      "word": "SYMBOLISTIC; SYMBOLISTICAL",
+      "definitions": [
+        {
+          "text": "Characterized by the use of symbols; as, symbolistic poetry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "symbolistical": {
       "word": "SYMBOLISTIC; SYMBOLISTICAL",
       "definitions": [
         {
@@ -1523,7 +1693,7 @@
       ],
       "relatedWords": []
     },
-    "symptomaticsymptomatical": {
+    "symptomatic": {
       "word": "SYMPTOMATIC; SYMPTOMATICAL",
       "definitions": [
         {
@@ -1531,7 +1701,21 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "According to symptoms; as, a symptomatical classification of",
+          "text": "According to symptoms; as, a symptomatical classification of diseases.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "symptomatical": {
+      "word": "SYMPTOMATIC; SYMPTOMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to symptoms; happening in concurrence with something; being a symptom; indicating the existence of something else. Symptomatic of a shallow understanding and an unamiable temper. Macaulay.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "According to symptoms; as, a symptomatical classification of diseases.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1557,7 +1741,7 @@
       ],
       "relatedWords": []
     },
-    "synacmesynacmy": {
+    "synacme": {
       "word": "SYNACME; SYNACMY",
       "definitions": [
         {
@@ -1567,11 +1751,35 @@
       ],
       "relatedWords": []
     },
-    "synaeresissyneresis": {
+    "synacmy": {
+      "word": "SYNACME; SYNACMY",
+      "definitions": [
+        {
+          "text": "Same as Synanthesis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "synaeresis": {
       "word": "SYNAERESIS; SYNERESIS",
       "definitions": [
         {
           "text": "The union, or drawing together into one syllable, of two vowels that are ordinarily separated in syllabification; synecphonesis; -- the opposite of diæresis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syneresis": {
+      "word": "SYNAERESIS; SYNERESIS",
+      "definitions": [
+        {
+          "text": "The union, or drawing together into one syllable, of two vowels that are ordinarily separated in syllabification; synecphonesis; -- the opposite of diæresis.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Synæresis.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1657,7 +1865,7 @@
       "word": "SYNANGIUM",
       "definitions": [
         {
-          "text": "The divided part beyond the pylangium in the aortic trunk of",
+          "text": "The divided part beyond the pylangium in the aortic trunk of the amphibian heart.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1753,11 +1961,21 @@
       ],
       "relatedWords": []
     },
+    "synarthrodia": {
+      "word": "SYNARTHRODIA",
+      "definitions": [
+        {
+          "text": "Synarthrosis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "synarthrosis": {
       "word": "SYNARTHROSIS",
       "definitions": [
         {
-          "text": "Immovable articulation by close union, as in sutures. It",
+          "text": "Immovable articulation by close union, as in sutures. It sometimes includes symphysial articulations also. See the Note under Articulation, n., 1.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1827,7 +2045,7 @@
       "word": "SYNCHONDROSIS",
       "definitions": [
         {
-          "text": "An immovable articulation in which the union is formed by",
+          "text": "An immovable articulation in which the union is formed by cartilage.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1863,6 +2081,16 @@
         {
           "text": "A synchronal thing or event.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "synchronical": {
+      "word": "SYNCHRONICAL",
+      "definitions": [
+        {
+          "text": "Happening at the same time; synchronous. Boyle.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1933,6 +2161,16 @@
         {
           "text": "Contemporaneous chronology.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "synchronous": {
+      "word": "SYNCHRONOUS",
+      "definitions": [
+        {
+          "text": "Happening at the same time; simultaneous.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2217,7 +2455,7 @@
       ],
       "relatedWords": []
     },
-    "syndactylsyndactyle": {
+    "syndactyl": {
       "word": "SYNDACTYL; SYNDACTYLE",
       "definitions": [
         {
@@ -2228,8 +2466,12 @@
       "relatedWords": []
     },
     "syndactyle": {
-      "word": "SYNDACTYLE",
+      "word": "SYNDACTYL; SYNDACTYLE",
       "definitions": [
+        {
+          "text": "Having two or more digits wholly or partly united. See Syndactylism.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Any bird having syndactilous feet.",
           "partOfSpeech": "noun"
@@ -2287,11 +2529,21 @@
       ],
       "relatedWords": []
     },
-    "syndeticsyndetical": {
+    "syndetic": {
       "word": "SYNDETIC; SYNDETICAL",
       "definitions": [
         {
-          "text": "Connecting; conjunctive; as, syndetic words or connectives;",
+          "text": "Connecting; conjunctive; as, syndetic words or connectives; syndetic references in a dictionary. With the syndetic juxtaposition of distinct members, the article is not often repeated. C. J. Grece (Trans. Maetzner's Gram.).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syndetical": {
+      "word": "SYNDETIC; SYNDETICAL",
+      "definitions": [
+        {
+          "text": "Connecting; conjunctive; as, syndetic words or connectives; syndetic references in a dictionary. With the syndetic juxtaposition of distinct members, the article is not often repeated. C. J. Grece (Trans. Maetzner's Gram.).",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2499,16 +2751,6 @@
       ],
       "relatedWords": []
     },
-    "syneresis": {
-      "word": "SYNERESIS",
-      "definitions": [
-        {
-          "text": "Same as Synæresis.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "synergetic": {
       "word": "SYNERGETIC",
       "definitions": [
@@ -2599,7 +2841,17 @@
       ],
       "relatedWords": []
     },
-    "syngenesiansyngenesious": {
+    "syngenesian": {
+      "word": "SYNGENESIAN; SYNGENESIOUS",
+      "definitions": [
+        {
+          "text": "Having the stamens united by the anthers; of or pertaining to the Syngenesia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syngenesious": {
       "word": "SYNGENESIAN; SYNGENESIOUS",
       "definitions": [
         {
@@ -2623,7 +2875,7 @@
       "word": "SYNGNATHI",
       "definitions": [
         {
-          "text": "A suborder of lophobranch fishes which have an elongated snout and lack the ventral and first dorsal fins. The pipefishes and sea",
+          "text": "A suborder of lophobranch fishes which have an elongated snout and lack the ventral and first dorsal fins. The pipefishes and sea horses are examples.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2763,7 +3015,29 @@
       ],
       "relatedWords": []
     },
-    "synodicsynodical": {
+    "synodic": {
+      "word": "SYNODIC; SYNODICAL",
+      "definitions": [
+        {
+          "text": "(Eccl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a synod; transacted in, or authorized by, a synod; as, synodical proceedings or forms. \"A synodical epistle.\" Bp. Stillingfleet.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Astron.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to conjunction, especially to the period between two successive conjunctions; extending from one conjunction, as of the moon or a planet with the sun, to the next; as, a synodical month (see Lunar month, under Month); the synodical revolution of the moon or a planet.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "synodical": {
       "word": "SYNODIC; SYNODICAL",
       "definitions": [
         {
@@ -2881,11 +3155,15 @@
         {
           "text": "The science, or the scientific treatment, of synonymous words.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to synonyms, or synonymic; synonymous.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "synonymicsynonymical": {
+    "synonymical": {
       "word": "SYNONYMIC; SYNONYMICAL",
       "definitions": [
         {
@@ -2929,7 +3207,7 @@
       "word": "SYNONYMOUS",
       "definitions": [
         {
-          "text": "Having the character of a synonym; expressing the same thing;",
+          "text": "Having the character of a synonym; expressing the same thing; conveying the same, or approximately the same, idea. These words consist of two propositions, which are not distinct in sense, but one and the same thing variously expressed; for wisdom and understanding are synonymous words here. Tillotson. which are identical in use and meaning, so that the one can in all cases be substituted for the other, we have scarcely ten such words in our language. But the term more properly denotes that the words in question approach so near to each other, that, in many or most cases, they can be used interchangeably. 1. Words may thus coincide in certain connections, and so be interchanged, when they can not be interchanged in other connections; thus we may speak either strength of mind or of force of mind, but we say the force (not strength) of gravitation. 2. Two words may differ slightly, but this difference may be unimportant to the speaker's object, so that he may freely interchange them; thus it makes but little difference, in most cases, whether we speak of a man's having secured his object or having attained his object. For these and other causes we have numerous words which may, in many cases or connections, be used interchangeably, and these are properly called synonyms. Synonymous words \"are words which, with great and essential resemblances of meaning, have, at the same time, small, subordinate, and partial differences, -- these differences being such as either originally and on the ground of their etymology inhered in them; or differences which they have by usage acquired in the eyes of all; or such as, though nearly latent now, they are capable of receiving at the hands of wise and discreet masters of the tongue. Synonyms are words of like significance in the main, but with a certain unlikeness as well.\" Trench.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2967,22 +3245,26 @@
       ],
       "relatedWords": []
     },
-    "synopticsynoptical": {
+    "synoptic": {
       "word": "SYNOPTIC; SYNOPTICAL",
       "definitions": [
         {
           "text": "Affording a general view of the whole, or of the principal parts of a thing; as, a synoptic table; a synoptical statement of an argument. \"The synoptic Gospels.\" Alford.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the first three Gospels of the New Testament. See Synoptist.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "synoptic": {
-      "word": "SYNOPTIC",
+    "synoptical": {
+      "word": "SYNOPTIC; SYNOPTICAL",
       "definitions": [
         {
-          "text": "One of the first three Gospels of the New Testament. See Synoptist.",
-          "partOfSpeech": "noun"
+          "text": "Affording a general view of the whole, or of the principal parts of a thing; as, a synoptic table; a synoptical statement of an argument. \"The synoptic Gospels.\" Alford.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3077,11 +3359,21 @@
       ],
       "relatedWords": []
     },
-    "syntacticsyntactical": {
+    "syntactic": {
       "word": "SYNTACTIC; SYNTACTICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to syntax; according to the rules of syntax,",
+          "text": "Of or pertaining to syntax; according to the rules of syntax, or construction.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "syntactical": {
+      "word": "SYNTACTIC; SYNTACTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to syntax; according to the rules of syntax, or construction.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3213,7 +3505,37 @@
       ],
       "relatedWords": []
     },
-    "syntheticsynthetical": {
+    "synthetic": {
+      "word": "SYNTHETIC; SYNTHETICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to synthesis; consisting in synthesis or composition; as, the synthetic method of reasoning, as opposed to analytical. Philosophers hasten too much from the analytic to the synthetic method; that is, they draw general conclusions from too small a number of particular observations and experiments. Bolingbroke.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Artificial. Cf. Synthesis, 2.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Comprising within itself structural or other characters which are usually found only in two or more diverse groups; -- said of species, genera, and higher groups. See the Note under Comprehensive,",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Synthetic, or Synthetical language, an inflectional language, or one characterized by grammatical endings; -- opposed to analytic language. R. Morris.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "synthetical": {
       "word": "SYNTHETIC; SYNTHETICAL",
       "definitions": [
         {
@@ -3277,7 +3599,7 @@
       "word": "SYNTONIC",
       "definitions": [
         {
-          "text": "Of or pert. to syntony; specif., designating, or pert. to, a system of wireless telegraphy in which the transmitting and receiving",
+          "text": "Of or pert. to syntony; specif., designating, or pert. to, a system of wireless telegraphy in which the transmitting and receiving apparatus are in syntony with, and only with, one another. -- Syn*ton\"ic*al (#), a. --Syn*ton\"ic*al*ly, adv.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3297,7 +3619,7 @@
       "word": "SYNTONIZE",
       "definitions": [
         {
-          "text": "To adjust or devise so as to emit or respond to electric oscillations of a certain wave length; to tune; specif., to put (two",
+          "text": "To adjust or devise so as to emit or respond to electric oscillations of a certain wave length; to tune; specif., to put (two or more instruments or systems of wireless telegraphy) in syntony with each other. -- Syn`to*ni*za\"tion (#), n.",
           "partOfSpeech": "verb"
         }
       ],
@@ -3689,16 +4011,6 @@
       ],
       "relatedWords": []
     },
-    "syrupsyrupy": {
-      "word": "SYRUP; SYRUPY",
-      "definitions": [
-        {
-          "text": "Same as Sirup, Sirupy.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "syssarcosis": {
       "word": "SYSSARCOSIS",
       "definitions": [
@@ -3771,7 +4083,33 @@
       ],
       "relatedWords": []
     },
-    "systematicsystematical": {
+    "systematic": {
+      "word": "SYSTEMATIC; SYSTEMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to system; consisting in system; methodical; formed with regular connection and adaptation or subordination of parts to each other, and to the design of the whole; as, a systematic arrangement of plants or animals; a systematic course of study. Now we deal much in essays, and unreasonably despise systematical learning; whereas our fathers had a just value for regularity and systems. I. Watts. A representation of phenomena, in order to answer the purposes of science, must be systematic. Whewell.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Proceeding according to system, or regular method; as, a systematic writer; systematic benevolence.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the system of the world; cosmical. These ends may be called cosmical, or systematical. Boyle.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Affecting successively the different parts of the system or set of nervous fibres; as, systematic degeneration. Systematic theology. See under Theology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "systematical": {
       "word": "SYSTEMATIC; SYSTEMATICAL",
       "definitions": [
         {
@@ -3883,7 +4221,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of or pertaining to the general system, or the body as a whole; as, systemic death, in distinction from local death; systemic",
+          "text": "Of or pertaining to the general system, or the body as a whole; as, systemic death, in distinction from local death; systemic circulation, in distinction from pulmonic circulation; systemic diseases. Systemic death. See the Note under Death, n., 1.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3991,7 +4329,7 @@
       ],
       "relatedWords": []
     },
-    "sythsythe": {
+    "syth": {
       "word": "SYTH; SYTHE",
       "definitions": [
         {
@@ -4002,8 +4340,12 @@
       "relatedWords": []
     },
     "sythe": {
-      "word": "SYTHE",
+      "word": "SYTH; SYTHE",
       "definitions": [
+        {
+          "text": "See Sith, Sithe. [Obs.] Chaucer. Piers Plowman.",
+          "partOfSpeech": "preposition"
+        },
         {
           "text": "Scythe. [Obs. or R.]",
           "partOfSpeech": "noun"

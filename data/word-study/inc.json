@@ -55,7 +55,7 @@
       "word": "INCALCULABLE",
       "definitions": [
         {
-          "text": "Not capable of being calculated; beyond calculation; very",
+          "text": "Not capable of being calculated; beyond calculation; very great.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -629,7 +629,7 @@
       "word": "INCAPACIOUS",
       "definitions": [
         {
-          "text": "Not capacious; narrow; small; weak or foolish; as, an",
+          "text": "Not capacious; narrow; small; weak or foolish; as, an incapacious soul. Bp. Burnet.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1381,7 +1381,7 @@
       "word": "INCAUTIOUS",
       "definitions": [
         {
-          "text": "Not cautious; not circumspect; not attending to the circumstances on which safety and interest depend; heedless; careless; as, an incautious step; an incautious remark. You . . . incautious tread On fire with faithless embers overspread. Francis. His rhetorical expressions may easily captivate any incautious reader. Keill.",
+          "text": "Not cautious; not circumspect; not attending to the circumstances on which safety and interest depend; heedless; careless; as, an incautious step; an incautious remark. You . . . incautious tread On fire with faithless embers overspread. Francis. His rhetorical expressions may easily captivate any incautious reader. Keill. careless; heedless; thoughtless.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1885,7 +1885,7 @@
         "work up"
       ]
     },
-    "incensebreathingincensebreathing": {
+    "incensebreathing": {
       "word": "INCENSEBREATHING; INCENSE-BREATHING",
       "definitions": [
         {
@@ -2015,6 +2015,16 @@
         "thurible",
         "vinaigrette"
       ]
+    },
+    "incensurable": {
+      "word": "INCENSURABLE",
+      "definitions": [
+        {
+          "text": "Not censurable. Dr. T. Dwight.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "incenter": {
       "word": "INCENTER",
@@ -2182,7 +2192,7 @@
       "word": "INCEPTIVE",
       "definitions": [
         {
-          "text": "Beginning; expressing or indicating beginning; as, an inceptive proposition; an inceptive verb, which expresses the beginning of",
+          "text": "Beginning; expressing or indicating beginning; as, an inceptive proposition; an inceptive verb, which expresses the beginning of action; -- called also inchoative.",
           "partOfSpeech": "adjective"
         },
         {
@@ -2271,6 +2281,16 @@
         {
           "text": "Cleaving or sticking like wax. Cotgrave.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incertain": {
+      "word": "INCERTAIN",
+      "definitions": [
+        {
+          "text": "Uncertain; doubtful; unsteady. Very questionable and of uncertain truth. Sir T. Browne.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2681,7 +2701,7 @@
       "word": "INCESTTUOUS",
       "definitions": [
         {
-          "text": "Guilty of incest; involving, or pertaining to, the crime of incest; as, an incestuous person or connection. Shak. Ere you reach to this incestuous love, You must divine and human",
+          "text": "Guilty of incest; involving, or pertaining to, the crime of incest; as, an incestuous person or connection. Shak. Ere you reach to this incestuous love, You must divine and human rights remove. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2947,7 +2967,7 @@
       "word": "INCHOATE",
       "definitions": [
         {
-          "text": "Recently, or just, begun; beginning; partially but not fully in",
+          "text": "Recently, or just, begun; beginning; partially but not fully in existence or operation; existing in its elements; incomplete. Neither a substance perfect, nor a substance inchoate. Raleigh.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3353,7 +3373,7 @@
       "word": "INCIDENTAL",
       "definitions": [
         {
-          "text": "Happening, as an occasional event, without regularity; coming without design; casual; accidental; hence, not of prime concern; subordinate; collateral; as, an incidental conversation; an incidental occurrence; incidental expenses. By some, religious duties . . . appear to be regarded . . . as an incidental business. Rogers.",
+          "text": "Happening, as an occasional event, without regularity; coming without design; casual; accidental; hence, not of prime concern; subordinate; collateral; as, an incidental conversation; an incidental occurrence; incidental expenses. By some, religious duties . . . appear to be regarded . . . as an incidental business. Rogers. See Accidental. I treat either or incidentally of colors. Boyle.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3685,7 +3705,7 @@
         "vesication"
       ]
     },
-    "incipienceincipiency": {
+    "incipience": {
       "word": "INCIPIENCE; INCIPIENCY",
       "definitions": [
         {
@@ -3695,11 +3715,42 @@
       ],
       "relatedWords": []
     },
+    "incipiency": {
+      "word": "INCIPIENCE; INCIPIENCY",
+      "definitions": [
+        {
+          "text": "Beginning; commencement; incipient state.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "babyhood",
+        "beginnings",
+        "birth",
+        "childhood",
+        "cradle",
+        "freshman year",
+        "genesis",
+        "inception",
+        "inchoation",
+        "incipience",
+        "incunabula",
+        "infancy",
+        "nascence",
+        "nascency",
+        "nativity",
+        "origin",
+        "origination",
+        "parturition",
+        "pregnancy",
+        "youth"
+      ]
+    },
     "incipient": {
       "word": "INCIPIENT",
       "definitions": [
         {
-          "text": "Beginning to be, or to show itself; commencing; initial; as,",
+          "text": "Beginning to be, or to show itself; commencing; initial; as, the incipient stage of a fever; incipient light of day.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5616,7 +5667,7 @@
       "word": "INCLINATORY",
       "definitions": [
         {
-          "text": "Having the quality of leaning or inclining; as, the inclinatory",
+          "text": "Having the quality of leaning or inclining; as, the inclinatory needle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6607,7 +6658,17 @@
       ],
       "relatedWords": []
     },
-    "incoactincoacted": {
+    "incoact": {
+      "word": "INCOACT; INCOACTED",
+      "definitions": [
+        {
+          "text": "Not compelled; unconstrained. [Obs.] Coles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incoacted": {
       "word": "INCOACT; INCOACTED",
       "definitions": [
         {
@@ -6703,7 +6764,17 @@
       ],
       "relatedWords": []
     },
-    "incogitanceincogitancy": {
+    "incogitance": {
+      "word": "INCOGITANCE; INCOGITANCY",
+      "definitions": [
+        {
+          "text": "Want of thought, or of the power of thinking; thoughtlessness; unreasonableness. 'T is folly and incogitancy to argue anything, one way or the other, from the designs of a sort of beings with whom we so little communicate. Glanvill.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incogitancy": {
       "word": "INCOGITANCE; INCOGITANCY",
       "definitions": [
         {
@@ -6934,7 +7005,35 @@
         "witless"
       ]
     },
-    "incoherenceincoherency": {
+    "incognoscible": {
+      "word": "INCOGNOSCIBLE",
+      "definitions": [
+        {
+          "text": "Incognizable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incoherence": {
+      "word": "INCOHERENCE; INCOHERENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being incoherent; want of coherence; want of cohesion or adherence. Boyle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Want of connection; incongruity; inconsistency; want of agreement or dependence of one part on another; as, the incoherence of arguments, facts, etc. Incoherences in matter, and suppositions without proofs, put handsomely together, are apt to pass for strong reason. Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is incoherent. Crude incoherencies . . . and nauseous tautologies. South.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incoherency": {
       "word": "INCOHERENCE; INCOHERENCY",
       "definitions": [
         {
@@ -7221,7 +7320,7 @@
       "word": "INCOMBUSTIBLE",
       "definitions": [
         {
-          "text": "Not combustible; not capable of being burned, decomposed, or consumed by fire; uninflammable; as, asbestus is an incombustible substance; carbon dioxide is an incombustible gas. Incombustible cloth, a tissue of amianthus or asbestus; also, a fabric imbued with",
+          "text": "Not combustible; not capable of being burned, decomposed, or consumed by fire; uninflammable; as, asbestus is an incombustible substance; carbon dioxide is an incombustible gas. Incombustible cloth, a tissue of amianthus or asbestus; also, a fabric imbued with an incombustible substance.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7493,7 +7592,7 @@
       "word": "INCOMMENSURABLE",
       "definitions": [
         {
-          "text": "Not commensurable; having no common measure or standard of comparison; as, quantities are incommensurable when no third quantity can be found that is an aliquot part of both; the side and diagonal of a square are incommensurable with each other; the diameter and circumference of a circle are incommensurable.",
+          "text": "Not commensurable; having no common measure or standard of comparison; as, quantities are incommensurable when no third quantity can be found that is an aliquot part of both; the side and diagonal of a square are incommensurable with each other; the diameter and circumference of a circle are incommensurable. They are quantities incommensurable. Burke.",
           "partOfSpeech": "adjective"
         },
         {
@@ -7665,7 +7764,7 @@
       "word": "INCOMMODIOUS",
       "definitions": [
         {
-          "text": "Tending to incommode; not commodious; not affording ease or advantage; unsuitable; giving trouble; inconvenient; annoying; as, an",
+          "text": "Tending to incommode; not commodious; not affording ease or advantage; unsuitable; giving trouble; inconvenient; annoying; as, an incommodious seat; an incommodious arrangement.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7729,7 +7828,7 @@
       "word": "INCOMMUNICABLE",
       "definitions": [
         {
-          "text": "Not communicable; incapable of being communicated, shared, told, or imparted, to others. Health and understanding are incommunicable. Southey.",
+          "text": "Not communicable; incapable of being communicated, shared, told, or imparted, to others. Health and understanding are incommunicable. Southey. Those incommunicable relations of the divine love. South.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7778,7 +7877,7 @@
       "word": "INCOMMUNICATIVE",
       "definitions": [
         {
-          "text": "Not communicative; not free or apt to impart to others in conversation; reserved; silent; as, the messenger was incommunicative; hence, not disposed to hold fellowship or intercourse with others; exclusive.",
+          "text": "Not communicative; not free or apt to impart to others in conversation; reserved; silent; as, the messenger was incommunicative; hence, not disposed to hold fellowship or intercourse with others; exclusive. The Chinese . . . an incommunicative nation. C. Buchanan. His usual incommunicativeness. G. Eliot.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7798,7 +7897,7 @@
       "word": "INCOMMUTABLE",
       "definitions": [
         {
-          "text": "Not commutable; not capable of being exchanged with, or",
+          "text": "Not commutable; not capable of being exchanged with, or substituted for, another. Cudworth.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7838,7 +7937,17 @@
         "unvarying"
       ]
     },
-    "incompactincompacted": {
+    "incompact": {
+      "word": "INCOMPACT; INCOMPACTED",
+      "definitions": [
+        {
+          "text": "Not compact; not having the parts firmly united; not solid; incoherent; loose; discrete. Boyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incompacted": {
       "word": "INCOMPACT; INCOMPACTED",
       "definitions": [
         {
@@ -7852,7 +7961,7 @@
       "word": "INCOMPARABLE",
       "definitions": [
         {
-          "text": "Not comparable; admitting of no comparison with others; unapproachably eminent; without a peer or equal; matchless; peerless; transcendent. A merchant of incomparable wealth. Shak. A new hypothesis . . . which hath the incomparable Sir Isaac Newton",
+          "text": "Not comparable; admitting of no comparison with others; unapproachably eminent; without a peer or equal; matchless; peerless; transcendent. A merchant of incomparable wealth. Shak. A new hypothesis . . . which hath the incomparable Sir Isaac Newton for a patron. Bp. Warburton. Delights incomparably all those corporeal things. Bp. Wilkins.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7954,6 +8063,16 @@
         {
           "text": "Want of compassion or pity. [Obs.] Bp. Sanderson.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incompassionate": {
+      "word": "INCOMPASSIONATE",
+      "definitions": [
+        {
+          "text": "Not compassionate; void of pity or of tenderness; remorseless.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -8257,7 +8376,110 @@
       ],
       "relatedWords": []
     },
-    "incompetenceincompetency": {
+    "incompetence": {
+      "word": "INCOMPETENCE; INCOMPETENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being incompetent; want of physical, intellectual, or moral ability; insufficiency; inadequacy; as, the incompetency of a child hard labor, or of an idiot for intellectual efforts. \"Some inherent incompetency.\" Gladstone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Want of competency or legal fitness; incapacity; disqualification, as of a person to be heard as a witness, or to act as a juror, or of a judge to try a cause. incapability; unfitness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ad lib",
+        "baseness",
+        "deficiency",
+        "disability",
+        "disablement",
+        "disqualification",
+        "extemporaneousness",
+        "failure",
+        "falling short",
+        "faultiness",
+        "fewness",
+        "imbecility",
+        "imperfection",
+        "improvisation",
+        "inability",
+        "inadeptness",
+        "inadequacy",
+        "inadequateness",
+        "inaptitude",
+        "inaptness",
+        "inattentiveness",
+        "incapability",
+        "incapacitation",
+        "incapacity",
+        "incompetency",
+        "indexterity",
+        "ineffectiveness",
+        "ineffectuality",
+        "inefficiency",
+        "ineptitude",
+        "ineptness",
+        "infancy",
+        "inferiority",
+        "insufficiency",
+        "insufficientness",
+        "lack of preparation",
+        "legal incapacity",
+        "littleness",
+        "maladjustment",
+        "maladroitness",
+        "meanness",
+        "mediocrity",
+        "minority",
+        "none to spare",
+        "nonfulfillment",
+        "nonpreparation",
+        "nonpreparedness",
+        "nonsatisfaction",
+        "pedestrianism",
+        "pettiness",
+        "planlessness",
+        "rustiness",
+        "shabbiness",
+        "short supply",
+        "skill-lessness",
+        "smallness",
+        "subnormality",
+        "thoughtlessness",
+        "too late",
+        "too little",
+        "triviality",
+        "unaptness",
+        "uncleverness",
+        "undeftness",
+        "undexterousness",
+        "undextrousness",
+        "unfitness",
+        "unfittedness",
+        "unintelligence",
+        "unpreparedness",
+        "unproficiency",
+        "unqualification",
+        "unqualifiedness",
+        "unreadiness",
+        "unschooledness",
+        "unskillfulness",
+        "unsuitability",
+        "unsuitableness",
+        "unsuitedness",
+        "untrainedness",
+        "uselessness",
+        "vulgarity",
+        "vulnerability",
+        "wardship"
+      ]
+    },
+    "incompetency": {
       "word": "INCOMPETENCE; INCOMPETENCY",
       "definitions": [
         {
@@ -8678,7 +8900,7 @@
       "word": "INCOMPLIANT",
       "definitions": [
         {
-          "text": "Not compliant; unyielding to request, solicitation, or command;",
+          "text": "Not compliant; unyielding to request, solicitation, or command; stubborn.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8704,21 +8926,11 @@
       ],
       "relatedWords": []
     },
-    "incompositionasfolkmootjrgreen": {
-      "word": "in composition; as, folk-moot. J. R. Green.",
-      "definitions": [
-        {
-          "text": "A discussion or debate; especially, a discussion of fictitious causes by way of practice. The pleading used in courts and chancery called moots. Sir T. Elyot. Moot case, a case or question to be mooted; a disputable case; an unsettled question. Dryden. practicing the conduct of law cases. question.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "incompossible": {
       "word": "INCOMPOSSIBLE",
       "definitions": [
         {
-          "text": "Not capable of joint existence; incompatible; inconsistent.",
+          "text": "Not capable of joint existence; incompatible; inconsistent. Ambition and faith . . . are . . . incompossible. Jer. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8752,7 +8964,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not capable of being comprehended or understood; beyond the reach of the human intellect; inconceivable. And all her numbered stars that seem to roll Spaces incomprehensible.",
+          "text": "Not capable of being comprehended or understood; beyond the reach of the human intellect; inconceivable. And all her numbered stars that seem to roll Spaces incomprehensible. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8901,7 +9113,7 @@
       "word": "INCOMPREHENSIVE",
       "definitions": [
         {
-          "text": "Not comprehensive; not capable of including or of",
+          "text": "Not comprehensive; not capable of including or of understanding; not extensive; limited.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8921,7 +9133,7 @@
       "word": "INCOMPRESSIBLE",
       "definitions": [
         {
-          "text": "Not compressible; incapable of being reduced by force or pressure into a smaller compass or volume; resisting compression; as,",
+          "text": "Not compressible; incapable of being reduced by force or pressure into a smaller compass or volume; resisting compression; as, many liquids and solids appear to be almost incompressible.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8961,7 +9173,7 @@
       "word": "INCONCEIVABLE",
       "definitions": [
         {
-          "text": "Not conceivable; incapable of being conceived by the mind; not explicable by the human intellect, or by any known principles or agencies; incomprehensible; as, it is inconceivable to us how the will acts in producing muscular motion. It is inconceivable to me that a spiritual substance should represent",
+          "text": "Not conceivable; incapable of being conceived by the mind; not explicable by the human intellect, or by any known principles or agencies; incomprehensible; as, it is inconceivable to us how the will acts in producing muscular motion. It is inconceivable to me that a spiritual substance should represent an extended figure. Locke. The inconceivableness of a quality existing without any subject to possess it. A. Tucker.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9124,7 +9336,7 @@
       "word": "INCONCLUSIVE",
       "definitions": [
         {
-          "text": "Not conclusive; leading to no conclusion; not closing or settling a point in debate, or a doubtful question; as, evidence is inconclusive when it does not exhibit the truth of a disputed case in such a manner as to satisfy the mind, and put an end to debate or doubt.",
+          "text": "Not conclusive; leading to no conclusion; not closing or settling a point in debate, or a doubtful question; as, evidence is inconclusive when it does not exhibit the truth of a disputed case in such a manner as to satisfy the mind, and put an end to debate or doubt. Arguments . . . inconclusive and impertinent. South.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9262,7 +9474,7 @@
       ],
       "relatedWords": []
     },
-    "incondensabilityincondensibility": {
+    "incondensability": {
       "word": "INCONDENSABILITY; INCONDENSIBILITY",
       "definitions": [
         {
@@ -9272,7 +9484,27 @@
       ],
       "relatedWords": []
     },
-    "incondensableincondensible": {
+    "incondensable": {
+      "word": "INCONDENSABLE; INCONDENSIBLE",
+      "definitions": [
+        {
+          "text": "Not condensable; incapable of being made more dense or compact, or reduced to liquid form.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incondensibility": {
+      "word": "INCONDENSABILITY; INCONDENSIBILITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being incondensable.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incondensible": {
       "word": "INCONDENSABLE; INCONDENSIBLE",
       "definitions": [
         {
@@ -9358,6 +9590,26 @@
         {
           "text": "Freedom from confusion; distinctness. [Obs.] Bacon.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "inconfutable": {
+      "word": "INCONFUTABLE",
+      "definitions": [
+        {
+          "text": "Not confutable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incongealable": {
+      "word": "INCONGEALABLE",
+      "definitions": [
+        {
+          "text": "Not congealable; incapable of being congealed.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -9548,7 +9800,7 @@
       "word": "INCONGRUOUS",
       "definitions": [
         {
-          "text": "Not congruous; reciprocally disagreeing; not capable of harmonizing or readily assimilating; inharmonious; inappropriate; unsuitable; not fitting; inconsistent; improper; as, an incongruous remark; incongruous behavior, action, dress, etc. \"Incongruous mixtures of opinions.\" I. Taylor. \"Made up of incongruous parts.\" Macaulay. Incongruous denotes that kind of absence of harmony or suitableness of which the taste and experience of men takes cognizance. C. J. Smith. Incongruous numbers (Arith.), two numbers, which, with respect to a third, are such that their difference can not be divided by it without a remainder, the two numbers being said to be incongruous with respect to the third; as, twenty-five are incongruous with respect to four.",
+          "text": "Not congruous; reciprocally disagreeing; not capable of harmonizing or readily assimilating; inharmonious; inappropriate; unsuitable; not fitting; inconsistent; improper; as, an incongruous remark; incongruous behavior, action, dress, etc. \"Incongruous mixtures of opinions.\" I. Taylor. \"Made up of incongruous parts.\" Macaulay. Incongruous denotes that kind of absence of harmony or suitableness of which the taste and experience of men takes cognizance. C. J. Smith. Incongruous numbers (Arith.), two numbers, which, with respect to a third, are such that their difference can not be divided by it without a remainder, the two numbers being said to be incongruous with respect to the third; as, twenty-five are incongruous with respect to four. inappropriate; unfit; improper. See Inconsistent.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9912,7 +10164,7 @@
       "word": "INCONSEQUENTIAL",
       "definitions": [
         {
-          "text": "Not regularly following from the premises; hence, irrelevant;",
+          "text": "Not regularly following from the premises; hence, irrelevant; unimportant; of no consequence. Chesterfield.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10727,13 +10979,13 @@
       "word": "INCONSOLABLE",
       "definitions": [
         {
-          "text": "Not consolable; incapable of being consoled; grieved beyond susceptibility of comfort; disconsolate. Dryden. With inconsolable distress she griev'd, And from her cheek the rose",
+          "text": "Not consolable; incapable of being consoled; grieved beyond susceptibility of comfort; disconsolate. Dryden. With inconsolable distress she griev'd, And from her cheek the rose of beauty fied. Falconer.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "inconsonanceinconsonancy": {
+    "inconsonance": {
       "word": "INCONSONANCE; INCONSONANCY",
       "definitions": [
         {
@@ -10742,6 +10994,156 @@
         }
       ],
       "relatedWords": []
+    },
+    "inconsonancy": {
+      "word": "INCONSONANCE; INCONSONANCY",
+      "definitions": [
+        {
+          "text": "Want of consonance or harmony of sound, action, or thought; disagreement.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inconsonant": {
+      "word": "INCONSONANT",
+      "definitions": [
+        {
+          "text": "Not consonant or agreeing; inconsistent; discordant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abnormal",
+        "absurd",
+        "anomalous",
+        "assorted",
+        "at odds",
+        "at variance",
+        "contrary",
+        "contrasted",
+        "contrasting",
+        "departing",
+        "deviating",
+        "deviative",
+        "different",
+        "differentiated",
+        "differing",
+        "disaccordant",
+        "disagreeing",
+        "disconsonant",
+        "discordant",
+        "discrepant",
+        "discrete",
+        "discriminated",
+        "disjoined",
+        "disparate",
+        "disproportionate",
+        "dissimilar",
+        "dissonant",
+        "distinct",
+        "distinguished",
+        "divergent",
+        "diverging",
+        "divers",
+        "diverse",
+        "diversified",
+        "heterogeneous",
+        "ill-matched",
+        "ill-suited",
+        "in disagreement",
+        "inaccordant",
+        "incoherent",
+        "incommensurable",
+        "incommensurate",
+        "incompatible",
+        "incongruent",
+        "incongruous",
+        "inconsequent",
+        "inconsistent",
+        "inharmonious",
+        "irreconcilable",
+        "many",
+        "mismated",
+        "motley",
+        "multifarious",
+        "out of proportion",
+        "oxymoronic",
+        "paradoxical",
+        "poles apart",
+        "poles asunder",
+        "self-contradictory",
+        "separate",
+        "separated",
+        "several",
+        "unconformable",
+        "uncongenial",
+        "unequal",
+        "unlike",
+        "variant",
+        "varied",
+        "variegated",
+        "various",
+        "varying",
+        "widely apart",
+        "worlds apart"
+      ]
+    },
+    "inconspicuous": {
+      "word": "INCONSPICUOUS",
+      "definitions": [
+        {
+          "text": "Not conspicuous or noticeable; hardly discernible.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "blear",
+        "bleared",
+        "bleary",
+        "blurred",
+        "blurry",
+        "confused",
+        "dark",
+        "dim",
+        "discreet",
+        "faint",
+        "feeble",
+        "filmy",
+        "foggy",
+        "fuzzy",
+        "half-seen",
+        "half-visible",
+        "hazy",
+        "ill-defined",
+        "indefinite",
+        "indistinct",
+        "indistinguishable",
+        "insignificant",
+        "low-profile",
+        "merely glimpsed",
+        "misty",
+        "modest",
+        "obscure",
+        "out of focus",
+        "pale",
+        "semivisible",
+        "shadowy",
+        "unassuming",
+        "uncertain",
+        "unclear",
+        "undefined",
+        "undistinguished",
+        "unemphatic",
+        "unnoticeable",
+        "unnoticed",
+        "unobtrusive",
+        "unostentatious",
+        "unplain",
+        "unrecognizable",
+        "vague",
+        "weak"
+      ]
     },
     "inconstance": {
       "word": "INCONSTANCE",
@@ -11117,7 +11519,17 @@
       "word": "INCONSUMABLE",
       "definitions": [
         {
-          "text": "Not consumable; incapable of being consumed, wasted, or spent.",
+          "text": "Not consumable; incapable of being consumed, wasted, or spent. Paley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inconsummate": {
+      "word": "INCONSUMMATE",
+      "definitions": [
+        {
+          "text": "Not consummated; not finished; incomplete. Sir M. Hale.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11128,6 +11540,16 @@
       "definitions": [
         {
           "text": "Inconsumable. [Obs.] Sir K. Digby.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incontaminate": {
+      "word": "INCONTAMINATE",
+      "definitions": [
+        {
+          "text": "Not contaminated; pure. Moore.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11157,7 +11579,7 @@
       "word": "INCONTESTABLE",
       "definitions": [
         {
-          "text": "Not contestable; not to be disputed; that cannot be called in question or controverted; incontrovertible; indisputable; as, incontestable evidence, truth, or facts. Locke.",
+          "text": "Not contestable; not to be disputed; that cannot be called in question or controverted; incontrovertible; indisputable; as, incontestable evidence, truth, or facts. Locke. unquestionable; intuitable; certain.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11220,7 +11642,157 @@
       ],
       "relatedWords": []
     },
-    "incontinenceincontinency": {
+    "incontiguous": {
+      "word": "INCONTIGUOUS",
+      "definitions": [
+        {
+          "text": "Not contiguous; not adjoining or in contact; separate. Boyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incontinence": {
+      "word": "INCONTINENCE; INCONTINENCY",
+      "definitions": [
+        {
+          "text": "Incapacity to hold; hence, incapacity to hold back or restrain; the quality or state of being incontinent; want of continence; failure to restrain the passions or appetites; indulgence of lust; lewdness. That Satan tempt you not for your incontinency. 1 Cor. vii. 5. From the rash hand of bold incontinence. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The inability of any of the animal organs to restrain the natural evacuations, so that the discharges are involuntary; as, incontinence of urine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abandon",
+        "abandonment",
+        "acquisitiveness",
+        "avarice",
+        "avariciousness",
+        "avidity",
+        "avidness",
+        "boundlessness",
+        "carpe diem",
+        "conspicuous consumption",
+        "covetousness",
+        "crapulence",
+        "crapulency",
+        "crapulousness",
+        "cupidity",
+        "dissipation",
+        "drunkenness",
+        "egregiousness",
+        "enormousness",
+        "exaggeration",
+        "excess",
+        "excessiveness",
+        "exorbitance",
+        "exorbitancy",
+        "extravagance",
+        "extravagancy",
+        "extreme",
+        "extremes",
+        "extremism",
+        "extremity",
+        "fabulousness",
+        "frenzy of desire",
+        "fury of desire",
+        "giantism",
+        "gigantism",
+        "gluttony",
+        "grasping",
+        "graspingness",
+        "greed",
+        "greediness",
+        "hoggishness",
+        "hyperbole",
+        "hypertrophy",
+        "immoderacy",
+        "immoderateness",
+        "immoderation",
+        "indiscipline",
+        "indulgence",
+        "inordinacy",
+        "inordinance",
+        "inordinate desire",
+        "inordinateness",
+        "insatiability",
+        "insatiable desire",
+        "intemperance",
+        "intemperateness",
+        "irrepressibility",
+        "itching palm",
+        "lavishness",
+        "laxness",
+        "leaking purse",
+        "licentiousness",
+        "loose purse strings",
+        "lust",
+        "monstrousness",
+        "nimiety",
+        "noncoercion",
+        "nonintimidation",
+        "outrageousness",
+        "overdevelopment",
+        "overdoing",
+        "overgenerosity",
+        "overgenerousness",
+        "overgreatness",
+        "overgreediness",
+        "overgrowth",
+        "overindulgence",
+        "overlargeness",
+        "overliberality",
+        "overmuch",
+        "overmuchness",
+        "permissiveness",
+        "piggishness",
+        "pound-foolishness",
+        "prodigality",
+        "profligacy",
+        "profuseness",
+        "profusion",
+        "radicalism",
+        "rapaciousness",
+        "rapacity",
+        "ravenousness",
+        "reckless expenditure",
+        "reckless spending",
+        "riotousness",
+        "self-indulgence",
+        "sordidness",
+        "squandering",
+        "squandermania",
+        "swinishness",
+        "too much",
+        "too-muchness",
+        "unconscionableness",
+        "unconstraint",
+        "uncontinence",
+        "uncontrol",
+        "undueness",
+        "uninhibitedness",
+        "unreasonableness",
+        "unreserve",
+        "unrestrainedness",
+        "unrestraint",
+        "unruliness",
+        "unstrictness",
+        "voraciousness",
+        "voracity",
+        "wantonness",
+        "waste",
+        "wastefulness",
+        "wildness",
+        "wolfishness"
+      ]
+    },
+    "incontinency": {
       "word": "INCONTINENCE; INCONTINENCY",
       "definitions": [
         {
@@ -11408,6 +11980,16 @@
       ],
       "relatedWords": []
     },
+    "incontrollable": {
+      "word": "INCONTROLLABLE",
+      "definitions": [
+        {
+          "text": "Not controllable; uncontrollable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "incontrovertibility": {
       "word": "INCONTROVERTIBILITY",
       "definitions": [
@@ -11422,7 +12004,7 @@
       "word": "INCONTROVERTIBLE",
       "definitions": [
         {
-          "text": "Not controvertible; too clear or certain to admit of dispute;",
+          "text": "Not controvertible; too clear or certain to admit of dispute; indisputable. Sir T. Browne.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11952,7 +12534,7 @@
       ],
       "relatedWords": []
     },
-    "incoordinateincooerdinate": {
+    "incooerdinate": {
       "word": "INCOORDINATE; INCOOERDINATE",
       "definitions": [
         {
@@ -11962,7 +12544,27 @@
       ],
       "relatedWords": []
     },
-    "incoordinationincooerdination": {
+    "incooerdination": {
+      "word": "INCOORDINATION; INCOOERDINATION",
+      "definitions": [
+        {
+          "text": "Want of coördination; lack of harmonious adjustment or action. Incoördination of muscular movement (Physiol.), irregularity in movements resulting from inharmonious action of the muscles in consequence of loss of voluntary control over them.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incoordinate": {
+      "word": "INCOORDINATE; INCOOERDINATE",
+      "definitions": [
+        {
+          "text": "Not coördinate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incoordination": {
       "word": "INCOORDINATION; INCOOERDINATION",
       "definitions": [
         {
@@ -12750,7 +13352,17 @@
       ],
       "relatedWords": []
     },
-    "incorrespondenceincorrespondency": {
+    "incorrespondence": {
+      "word": "INCORRESPONDENCE; INCORRESPONDENCY",
+      "definitions": [
+        {
+          "text": "Want of correspondence; disagreement; disproportion. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "incorrespondency": {
       "word": "INCORRESPONDENCE; INCORRESPONDENCY",
       "definitions": [
         {
@@ -13151,6 +13763,26 @@
         {
           "text": "To become thick or thicker.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Made thick or thicker; thickened; inspissated.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Thickened; becoming thicker. Martyn.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Swelled out on some particular part, as the antennæ of certain insects.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -13226,7 +13858,7 @@
         "windy"
       ]
     },
-    "incrassateincrassated": {
+    "incrassated": {
       "word": "INCRASSATE; INCRASSATED",
       "definitions": [
         {
@@ -13276,6 +13908,16 @@
         {
           "text": "A substance which has the power to thicken; formerly, a medicine supposed to thicken the humors. Harvey.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "increasable": {
+      "word": "INCREASABLE",
+      "definitions": [
+        {
+          "text": "Capable of being increased. Sherwood. An indefinite increasableness of some of our ideas. Bp. Law.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -13697,11 +14339,15 @@
         {
           "text": "To create within. [R.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Uncreated; self-existent. [R.] Bright effincreate. Milton.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "increateincreated": {
+    "increated": {
       "word": "INCREATE; INCREATED",
       "definitions": [
         {
@@ -15798,11 +16444,15 @@
         {
           "text": "Cut or stamped in, or hollowed out by engraving. \"Irregular incuse square.\" Dr. W. Smith.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To form, or mold, by striking or stamping, as a coin or medal.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "incuseincuss": {
+    "incuss": {
       "word": "INCUSE; INCUSS",
       "definitions": [
         {

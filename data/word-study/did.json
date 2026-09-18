@@ -12,8 +12,12 @@
       "relatedWords": []
     },
     "didactic": {
-      "word": "DIDACTIC",
+      "word": "DIDACTIC; DIDACTICAL",
       "definitions": [
+        {
+          "text": "Fitted or intended to teach; conveying instruction; preceptive; instructive; teaching some moral lesson; as, didactic essays. \"Didactical writings.\" Jer. Taylor. The finest didactic poem in any language. Macaulay.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A treatise on teaching or education. [Obs.] Milton.",
           "partOfSpeech": "noun"
@@ -114,22 +118,22 @@
         "warning"
       ]
     },
+    "didactical": {
+      "word": "DIDACTIC; DIDACTICAL",
+      "definitions": [
+        {
+          "text": "Fitted or intended to teach; conveying instruction; preceptive; instructive; teaching some moral lesson; as, didactic essays. \"Didactical writings.\" Jer. Taylor. The finest didactic poem in any language. Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "didactically": {
       "word": "DIDACTICALLY",
       "definitions": [
         {
           "text": "In a didactic manner.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "didacticdidactical": {
-      "word": "DIDACTIC; DIDACTICAL",
-      "definitions": [
-        {
-          "text": "Fitted or intended to teach; conveying instruction; preceptive; instructive; teaching some moral lesson; as, didactic essays. \"Didactical writings.\" Jer. Taylor. The finest didactic poem in any language. Macaulay.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -541,7 +545,17 @@
       ],
       "relatedWords": []
     },
-    "didrachmdidrachma": {
+    "didrachm": {
+      "word": "DIDRACHM; DIDRACHMA",
+      "definitions": [
+        {
+          "text": "A two-drachma piece; an ancient Greek silver coin, worth nearly forty cents.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "didrachma": {
       "word": "DIDRACHM; DIDRACHMA",
       "definitions": [
         {

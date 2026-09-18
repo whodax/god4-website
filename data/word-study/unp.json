@@ -139,7 +139,7 @@
       "word": "UNPARLIAMENTARY",
       "definitions": [
         {
-          "text": "Not parliamentary; contrary to the practice of parliamentary",
+          "text": "Not parliamentary; contrary to the practice of parliamentary bodies.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -150,6 +150,26 @@
       "definitions": [
         {
           "text": "Impartial. [Obs.] Bp. Sanderson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unpassable": {
+      "word": "UNPASSABLE",
+      "definitions": [
+        {
+          "text": "Impassable. E. A. Freeman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unpassionate": {
+      "word": "UNPASSIONATE",
+      "definitions": [
+        {
+          "text": "Not passionate; dispassionate.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -605,6 +625,16 @@
       ],
       "relatedWords": []
     },
+    "unpleasant": {
+      "word": "UNPLEASANT",
+      "definitions": [
+        {
+          "text": "Not pleasant; not amiable or agreeable; displeasing; offensive.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "unpleasantry": {
       "word": "UNPLEASANTRY",
       "definitions": [
@@ -713,6 +743,16 @@
         {
           "text": "To deprive of polish; to make impolite.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unpolite": {
+      "word": "UNPOLITE",
+      "definitions": [
+        {
+          "text": "Not polite; impolite; rude.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -895,7 +935,7 @@
       "word": "UNPRECEDENTED",
       "definitions": [
         {
-          "text": "Having no precedent or example; not preceded by a like case;",
+          "text": "Having no precedent or example; not preceded by a like case; not having the authority of prior example; novel; new; unexampled.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -993,7 +1033,7 @@
       "word": "UNPRINCIPLED",
       "definitions": [
         {
-          "text": "Being without principles; especially, being without right moral",
+          "text": "Being without principles; especially, being without right moral principles; also, characterized by absence of principle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1173,6 +1213,16 @@
         {
           "text": "To smooth away the puckers or wrinkles of.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unpure": {
+      "word": "UNPURE",
+      "definitions": [
+        {
+          "text": "Not pure; impure.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

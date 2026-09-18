@@ -263,7 +263,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The extent to which anything is retarded; the amount of retarding or delay. Retardation of the tide. (a) The lunitidal interval, or the hour angle of the moon at the time of high tide any port; the interval between the transit of the moon and the time of high tide",
+          "text": "The extent to which anything is retarded; the amount of retarding or delay. Retardation of the tide. (a) The lunitidal interval, or the hour angle of the moon at the time of high tide any port; the interval between the transit of the moon and the time of high tide next following. (b) The age of the tide; the retard of the tide. See under Retard, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -661,7 +661,21 @@
       ],
       "relatedWords": []
     },
-    "reticulatereticulated": {
+    "reticulate": {
+      "word": "RETICULATE; RETICULATED",
+      "definitions": [
+        {
+          "text": "Resembling network; having the form or appearance of a net; netted; as, a reticulated structure.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having veins, fibers, or lines crossing like the threads or fibers of a network; as, a reticulate leaf; a reticulated surface; a reticulated wing of an insect. Reticulated glass, ornamental ware made from glass in which one set of white or colored lines seems to meet and interlace with another set in a different plane. consisting of a reticule in the focus of an eyepiece. stones, or square stones placed diagonally.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reticulated": {
       "word": "RETICULATE; RETICULATED",
       "definitions": [
         {
@@ -785,7 +799,17 @@
       ],
       "relatedWords": []
     },
-    "retinasphaltretinasphaltum": {
+    "retinasphalt": {
+      "word": "RETINASPHALT; RETINASPHALTUM",
+      "definitions": [
+        {
+          "text": "Retinite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "retinasphaltum": {
       "word": "RETINASPHALT; RETINASPHALTUM",
       "definitions": [
         {
@@ -1013,7 +1037,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Withdrawn from active duty or business; as, a retired officer; a retired physician. Retired flank (Fort.), a flank bent inward toward the rear of the work. of advanced age or other disability, are relieved from active service, but still receive a specified amount of pay from the",
+          "text": "Withdrawn from active duty or business; as, a retired officer; a retired physician. Retired flank (Fort.), a flank bent inward toward the rear of the work. of advanced age or other disability, are relieved from active service, but still receive a specified amount of pay from the government.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1331,6 +1355,10 @@
       "word": "RETRACTIVE",
       "definitions": [
         {
+          "text": "Serving to retract; of the nature of a retraction.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "That which retracts, or withdraws.",
           "partOfSpeech": "noun"
         }
@@ -1371,6 +1399,16 @@
         {
           "text": "A portrait; a likeness. [Obs.] Whose fair retrait I in my shield do bear. Spenser.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "retransform": {
+      "word": "RETRANSFORM",
+      "definitions": [
+        {
+          "text": "To transform anew or back.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1547,11 +1585,31 @@
       ],
       "relatedWords": []
     },
-    "retributiveretributory": {
+    "retributive": {
       "word": "RETRIBUTIVE; RETRIBUTORY",
       "definitions": [
         {
           "text": "Of or pertaining to retribution; of the nature of retribution; involving retribution or repayment; as, retributive justice; retributory comforts.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "retributory": {
+      "word": "RETRIBUTIVE; RETRIBUTORY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to retribution; of the nature of retribution; involving retribution or repayment; as, retributive justice; retributory comforts.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "retrievable": {
+      "word": "RETRIEVABLE",
+      "definitions": [
+        {
+          "text": "That may be retrieved or recovered; admitting of retrieval.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1785,6 +1843,26 @@
       ],
       "relatedWords": []
     },
+    "retroflex": {
+      "word": "RETROFLEX; RETROFLEXED",
+      "definitions": [
+        {
+          "text": "Reflexed; bent or turned abruptly backward.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "retroflexed": {
+      "word": "RETROFLEX; RETROFLEXED",
+      "definitions": [
+        {
+          "text": "Reflexed; bent or turned abruptly backward.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "retroflexion": {
       "word": "RETROFLEXION",
       "definitions": [
@@ -1795,17 +1873,17 @@
       ],
       "relatedWords": []
     },
-    "retroflexretroflexed": {
-      "word": "RETROFLEX; RETROFLEXED",
+    "retrofract": {
+      "word": "RETROFRACT; RETROFRACTED",
       "definitions": [
         {
-          "text": "Reflexed; bent or turned abruptly backward.",
+          "text": "Refracted; as, a retrofract stem.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "retrofractretrofracted": {
+    "retrofracted": {
       "word": "RETROFRACT; RETROFRACTED",
       "definitions": [
         {
@@ -1964,6 +2042,16 @@
       "definitions": [
         {
           "text": "Driving back; repelling.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "retrorse": {
+      "word": "RETRORSE",
+      "definitions": [
+        {
+          "text": "Bent backward or downward.",
           "partOfSpeech": "adjective"
         }
       ],

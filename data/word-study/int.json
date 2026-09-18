@@ -11,7 +11,17 @@
       ],
       "relatedWords": []
     },
-    "intactibleintactable": {
+    "intactable": {
+      "word": "INTACTIBLE; INTACTABLE",
+      "definitions": [
+        {
+          "text": "Not perceptible to the touch.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "intactible": {
       "word": "INTACTIBLE; INTACTABLE",
       "definitions": [
         {
@@ -93,7 +103,7 @@
       "word": "INTANGIBLE",
       "definitions": [
         {
-          "text": "Not tangible; incapable of being touched; not perceptible to the touch; impalpable; imperceptible. Bp. Wilkins. A corporation is an artificial, invisible, intangible being.",
+          "text": "Not tangible; incapable of being touched; not perceptible to the touch; impalpable; imperceptible. Bp. Wilkins. A corporation is an artificial, invisible, intangible being. Marshall.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -243,7 +253,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The operation of finding the primitive function which has a given function for its differential coefficient. See Integral. also regarded as the limiting value of the sum of great numbers of",
+          "text": "The operation of finding the primitive function which has a given function for its differential coefficient. See Integral. also regarded as the limiting value of the sum of great numbers of differentials, when the magnitude of the differentials decreases, and their number increases indefinitely. See Limit, n. When the summation is made between specified values of the variable, the result is a definite integral, and those values of the variable are the limits of the integral. When the summation is made successively for two or more variables, the result is a multiple integral.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In the theory of evolution: The process by which the manifold is compacted into the relatively simple and permanent. It is supposed to alternate with differentiation as an agent in development.",
           "partOfSpeech": "noun"
         }
       ],
@@ -625,7 +639,17 @@
       ],
       "relatedWords": []
     },
-    "intemerateintemerated": {
+    "intemerate": {
+      "word": "INTEMERATE; INTEMERATED",
+      "definitions": [
+        {
+          "text": "Pure; undefiled. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "intemerated": {
       "word": "INTEMERATE; INTEMERATED",
       "definitions": [
         {
@@ -1003,6 +1027,20 @@
       ],
       "relatedWords": []
     },
+    "intense": {
+      "word": "INTENSE",
+      "definitions": [
+        {
+          "text": "Strained; tightly drawn; kept on the stretch; strict; very close or earnest; as, intense study or application; intense thought.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Extreme in degree; excessive; immoderate; as: (a) Ardent; fervent; as, intense heat. (b) Keen; biting; as, intense cold. (c) Vehement; earnest; exceedingly strong; as, intense passion or hate. (d) Very severe; violent; as, intense pain or anguish. (e) Deep; strong; brilliant; as, intense color or light. In this intense seclusion of the forest. Hawthorne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "intensely": {
       "word": "INTENSELY",
       "definitions": [
@@ -1023,88 +1061,6 @@
         {
           "text": "The state or quality of being intense; intensity; as, the intenseness of heat or cold; the intenseness of study or thought.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "intensfrohgziohantodrawgziehenakintoetugseetuck": {
-      "word": "intens. fr. OHG. ziohan to draw, G. ziehen, akin to E. tug. See Tuck,",
-      "definitions": [
-        {
-          "text": "To come in contact with; to hit or strike lightly against; to extend the hand, foot, or the like, so as to reach or rest on. Him thus intent Ithuriel with his spear Touched lightly. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To perceive by the sense of feeling. Nothing but body can be touched or touch. Greech.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To come to; to reach; to attain to. The god, vindictive, doomed them never more-Ah, men unblessed! -- to touch their natal shore. Pope.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To try; to prove, as with a touchstone. [Obs.] Wherein I mean to touch your love indeed. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To relate to; to concern; to affect. The quarrel toucheth none but us alone. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To handle, speak of, or deal with; to treat of. Storial thing that toucheth gentilesse. Chaucer.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To meddle or interfere with; as, I have not touched the books. Pope.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To affect the senses or the sensibility of; to move; to melt; to soften. What of sweet before Hath touched my sense, flat seems to this and harsh. Milton. The tender sire was touched with what he said. Addison.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To mark or delineate with touches; to add a slight stroke to with the pencil or brush. The lines, though touched but faintly, are drawn right. Pope.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To infect; to affect slightly. Bacon.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To make an impression on; to have effect upon. Its face . . . so hard that a file will not touch it. Moxon.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To strike; to manipulate; to play on; as, to touch an instrument of music. [They] touched their golden harps. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To perform, as a tune; to play. A person is the royal retinue touched a light and lively air on the flageolet. Sir W. Scott.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To influence by impulse; to impel forcibly. \" No decree of mine, . . . [to] touch with lightest moment of impulse his free will,\" Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To harm, afflict, or distress. Let us make a covenant with thee, that thou wilt do us no hurt, as we have not touched thee. Gen. xxvi. 28, 29.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To affect with insanity, especially in a slight degree; to make partially insane; -- rarely used except in the past participle. She feared his head was a little touched. Ld. Lytton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Geom.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To be tangent to. See Tangent, a.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To lay a hand upon for curing disease. To touch a sail (Naut.), to bring it so close to the wind that its weather leech shakes. possible.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1683,7 +1639,11 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Inserted or introduced among others in the calendar; as, an intercalary month, day, etc.; -- now applied particularly to the odd",
+          "text": "Inserted or introduced among others in the calendar; as, an intercalary month, day, etc.; -- now applied particularly to the odd day (Feb. 29) inserted in the calendar of leap year. See Bissextile, n.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Introduced or inserted among others; additional; supernumerary. \"Intercalary spines.\" Owen. This intercalary line . . . is made the last of a triplet. Beattie. Intercalary day (Med.), one on which no paroxysm of an intermittent disease occurs. Mayne.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1903,44 +1863,6 @@
       ],
       "relatedWords": []
     },
-    "interceptstheraysoflightastheshadowofamanofatreeor": {
-      "word": "intercepts the rays of light; as, the shadow of a man, of a tree, or",
-      "definitions": [
-        {
-          "text": "Darkness; shade; obscurity. Night's sable shadows from the ocean rise. Denham.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A shaded place; shelter; protection; security. In secret shadow from the sunny ray, On a sweet bed of lilies softly laid. Spenser.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A reflected image, as in a mirror or in water. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "That which follows or attends a person or thing like a shadow; an inseparable companion; hence, an obsequious follower. Sin and her shadow Death. Milton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A spirit; a ghost; a shade; a phantom. \"Hence, horrible shadow!\" Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "An imperfect and faint representation; adumbration; indistinct image; dim bodying forth; hence, mystical reprresentation; type. The law having a shadow of good things to come. Heb. x. 1. [Types] and shadows of that destined seed. Milton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A small degree; a shade. \"No variableness, neither shadow of turning.\" James i. 17.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "An uninvited guest coming with one who is invited. [A Latinism] Nares. I must not have my board pastered with shadows That under other men's protection break in Without invitement. Massinger. Shadow of death, darkness or gloom like that caused by the presence or the impending of death. Ps. xxiii. 4.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "intercession": {
       "word": "INTERCESSION",
       "definitions": [
@@ -2067,7 +1989,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Following each other in alternate succession; as, the four",
+          "text": "Following each other in alternate succession; as, the four interchangeable seasons. Holder.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2221,7 +2143,7 @@
       "word": "INTERCOLONIAL",
       "definitions": [
         {
-          "text": "Between or among colonies; pertaining to the intercourse or",
+          "text": "Between or among colonies; pertaining to the intercourse or mutual relations of colonies; as, intercolonial trade.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2373,7 +2295,17 @@
       ],
       "relatedWords": []
     },
-    "intercondylarintercondyloid": {
+    "intercondylar": {
+      "word": "INTERCONDYLAR; INTERCONDYLOID",
+      "definitions": [
+        {
+          "text": "Between condyles; as, the intercondylar fossa or notch of the femur.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "intercondyloid": {
       "word": "INTERCONDYLAR; INTERCONDYLOID",
       "definitions": [
         {
@@ -3013,7 +2945,17 @@
       ],
       "relatedWords": []
     },
-    "interfluentinterfluous": {
+    "interfluent": {
+      "word": "INTERFLUENT; INTERFLUOUS",
+      "definitions": [
+        {
+          "text": "Flowing between or among; intervening. Boyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interfluous": {
       "word": "INTERFLUENT; INTERFLUOUS",
       "definitions": [
         {
@@ -3141,7 +3083,21 @@
       ],
       "relatedWords": []
     },
-    "interhemalinterhaemal": {
+    "interhaemal": {
+      "word": "INTERHEMAL; INTERHAEMAL",
+      "definitions": [
+        {
+          "text": "Between the hemal arches or hemal spines.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An interhemal spine or cartilage.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interhemal": {
       "word": "INTERHEMAL; INTERHAEMAL",
       "definitions": [
         {
@@ -3229,7 +3185,17 @@
       ],
       "relatedWords": []
     },
-    "interjacenceinterjacency": {
+    "interjacence": {
+      "word": "INTERJACENCE; INTERJACENCY",
+      "definitions": [
+        {
+          "text": "The state of being between; a coming or lying between or among; intervention; also, that which lies between. England and Scotland is divided only by the interjacency of the Tweed. Sir M. Hale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interjacency": {
       "word": "INTERJACENCE; INTERJACENCY",
       "definitions": [
         {
@@ -3429,7 +3395,17 @@
       ],
       "relatedWords": []
     },
-    "interlamellarinterlaminar": {
+    "interlamellar": {
+      "word": "INTERLAMELLAR; INTERLAMINAR",
+      "definitions": [
+        {
+          "text": "Between lammellæ or laminæ; as, interlamellar spaces.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interlaminar": {
       "word": "INTERLAMELLAR; INTERLAMINAR",
       "definitions": [
         {
@@ -3541,11 +3517,21 @@
       ],
       "relatedWords": []
     },
-    "interlinealinterlinear": {
+    "interlineal": {
       "word": "INTERLINEAL; INTERLINEAR",
       "definitions": [
         {
-          "text": "Contained between lines; written or inserted between lines already written or printed; containing interlineations; as, an",
+          "text": "Contained between lines; written or inserted between lines already written or printed; containing interlineations; as, an interlinear manuscript, translation, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interlinear": {
+      "word": "INTERLINEAL; INTERLINEAR",
+      "definitions": [
+        {
+          "text": "Contained between lines; written or inserted between lines already written or printed; containing interlineations; as, an interlinear manuscript, translation, etc.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3821,7 +3807,17 @@
       ],
       "relatedWords": []
     },
-    "interlunarinterlunary": {
+    "interlunar": {
+      "word": "INTERLUNAR; INTERLUNARY",
+      "definitions": [
+        {
+          "text": "Belonging or pertaining to the time when the moon, at or near its conjunction with the sun, is invisible. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interlunary": {
       "word": "INTERLUNAR; INTERLUNARY",
       "definitions": [
         {
@@ -3921,6 +3917,16 @@
         {
           "text": "One who meddles with, or intrudes into, the affairs of others. Swift.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "intermeddlesome": {
+      "word": "INTERMEDDLESOME",
+      "definitions": [
+        {
+          "text": "Inclined or disposed to intermeddle.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4573,7 +4579,17 @@
       ],
       "relatedWords": []
     },
-    "internalcombustioninternalcombustionengine": {
+    "internalcombustion": {
+      "word": "INTERNAL-COMBUSTION; INTERNAL-COMBUSTION ENGINE",
+      "definitions": [
+        {
+          "text": "Designating, or pertaining to, any engine (called an Internal- combustion engine) in which the heat or pressure energy necessary to produce motion is developed in the engine cylinder, as by the explosion of a gas, and not in a separate chamber, as in a steam- engine boiler. The gas used may be a fixed gas, or one derived from alcohol, ether, gasoline (petrol), naphtha, oil (petroleum), etc. There are three main classes: (1) gas engines proper, using fixed gases, as coal, blast-furnace, or producer gas; (2) engines using the vapor of a volatile fluid, as the typical gasoline (petrol) engine; (3) oil engines, using either an atomized spray or the vapor (produced by heat) of a comparatively heavy oil, as petroleum or kerosene. In all of these the gas is mixed with a definite amount of air, the charge is composed in the cylinder and is then exploded either by a flame of gas (flame ignition -- now little used), by a hot tube (tube ignition) or the like, by an electric spark (electric ignition, the usual method is gasoline engines, or by the heat of compression, as in the Diesel engine. Gas and oil engines are chiefly of the stationary type. Gasoline engines are largely used for automobile vehicles, boats, etc. Most internal-combustion engines use the Otto (four-stroke) cycle, though many use the two-stroke cycle. They are almost universally trunk engines and single-acting. Because of the intense heat produced by the frequent explosions, the cylinders must be cooled by a water jacket (water-cooled) or by air currents (air cooled) to give the maximum thermodynamic efficiency and to avoid excessive friction or seizing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "internalcombustionengine": {
       "word": "INTERNAL-COMBUSTION; INTERNAL-COMBUSTION ENGINE",
       "definitions": [
         {
@@ -4697,7 +4713,17 @@
       ],
       "relatedWords": []
     },
-    "interneciaryinternecinal": {
+    "interneciary": {
+      "word": "INTERNECIARY; INTERNECINAL",
+      "definitions": [
+        {
+          "text": "Internecine.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "internecinal": {
       "word": "INTERNECIARY; INTERNECINAL",
       "definitions": [
         {
@@ -4975,7 +5001,17 @@
       ],
       "relatedWords": []
     },
-    "interossealinterosseous": {
+    "interosseal": {
+      "word": "INTEROSSEAL; INTEROSSEOUS",
+      "definitions": [
+        {
+          "text": "Situated between bones; as, an interosseous ligament.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interosseous": {
       "word": "INTEROSSEAL; INTEROSSEOUS",
       "definitions": [
         {
@@ -5257,6 +5293,28 @@
         {
           "text": "That may be interpolated; suitable to be interpolated. A most interpolable clause of one sentence. De Morgan.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interpolate": {
+      "word": "INTERPOLATE",
+      "definitions": [
+        {
+          "text": "To renew; to carry on with intermission. [Obs.] Motion . . . partly continued and unintermitted, . . . partly interpolated and interrupted. Sir M. Hale.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To alter or corrupt by the insertion of new or foreign matter; especially, to change, as a book or text, by the insertion of matter that is new, or foreign to the purpose of the author. How strangely Ignatius is mangled and interpolated, you may see by the vast difference of all copies and editions. Bp. Barlow. The Athenians were put in possession of Salamis by another law, which was cited by Solon, or, as some think, interpolated by him for that purpose. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fill up intermediate terms of, as of a series, according to the law of the series; to introduce, as a number or quantity, in a partial series, according to the law of that part of the series.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -5759,16 +5817,6 @@
       ],
       "relatedWords": []
     },
-    "interrogativelypronouninashwawhowhoandcfeither": {
-      "word": "interrogatively pronoun, in AS. hwa who. Who, and cf. Either,",
-      "definitions": [
-        {
-          "text": "Which (of two); which one (of two); -- used interrogatively and relatively. [Archaic] Now choose yourself whether that you liketh. Chaucer. One day in doubt I cast for to compare Whether in beauties' glory did exceed. Spenser. Whether of them twain did the will of his father Matt. xxi. 31.",
-          "partOfSpeech": "conjunction"
-        }
-      ],
-      "relatedWords": []
-    },
     "interrogator": {
       "word": "INTERROGATOR",
       "definitions": [
@@ -5883,7 +5931,7 @@
       "word": "INTERRUPTIVE",
       "definitions": [
         {
-          "text": "Tending to interrupt; interrupting. \"Interruptive forces.\" H.",
+          "text": "Tending to interrupt; interrupting. \"Interruptive forces.\" H. Bushnell.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6147,7 +6195,17 @@
       ],
       "relatedWords": []
     },
-    "interspinalinterspinous": {
+    "interspinal": {
+      "word": "INTERSPINAL; INTERSPINOUS",
+      "definitions": [
+        {
+          "text": "Between spines; esp., between the spinous processes of the vertebral column.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interspinous": {
       "word": "INTERSPINAL; INTERSPINOUS",
       "definitions": [
         {
@@ -6503,7 +6561,17 @@
       ],
       "relatedWords": []
     },
-    "interungularinterungulate": {
+    "interungular": {
+      "word": "INTERUNGULAR; INTERUNGULATE",
+      "definitions": [
+        {
+          "text": "Between ungulæ; as, interungular glands.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interungulate": {
       "word": "INTERUNGULAR; INTERUNGULATE",
       "definitions": [
         {
@@ -6545,15 +6613,19 @@
         {
           "text": "Difference in pitch between any two tones. At intervals, coming or happening with intervals between; now and then. \"And Miriam watch'd and dozed at intervals.\" Tennyson. or half a tone.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tract of low ground between hills, or along the banks of a stream, usually alluvial land, enriched by the overflowings of the river, or by fertilizing deposits of earth from the adjacent hills. Cf. Bottom, n., 7. [Local, U. S.] The woody intervale just beyond the marshy land. The Century.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "intervalintervale": {
+    "intervale": {
       "word": "INTERVAL; INTERVALE",
       "definitions": [
         {
-          "text": "A tract of low ground between hills, or along the banks of a stream, usually alluvial land, enriched by the overflowings of the",
+          "text": "A tract of low ground between hills, or along the banks of a stream, usually alluvial land, enriched by the overflowings of the river, or by fertilizing deposits of earth from the adjacent hills. Cf. Bottom, n., 7. [Local, U. S.] The woody intervale just beyond the marshy land. The Century.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6629,7 +6701,17 @@
       ],
       "relatedWords": []
     },
-    "intervenienceinterveniency": {
+    "intervenience": {
+      "word": "INTERVENIENCE; INTERVENIENCY",
+      "definitions": [
+        {
+          "text": "Intervention; interposition. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "interveniency": {
       "word": "INTERVENIENCE; INTERVENIENCY",
       "definitions": [
         {
@@ -6873,7 +6955,17 @@
       ],
       "relatedWords": []
     },
-    "interwoveinterwoven": {
+    "interwove": {
+      "word": "INTERWOVE; INTERWOVEN",
+      "definitions": [
+        {
+          "text": "imp. & p. p. of Interweave.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "interwoven": {
       "word": "INTERWOVE; INTERWOVEN",
       "definitions": [
         {
@@ -6935,7 +7027,7 @@
       "word": "INTESTINAL",
       "definitions": [
         {
-          "text": "Of or pertaining to the intestines of an animal; as, the",
+          "text": "Of or pertaining to the intestines of an animal; as, the intestinal tube; intestinal digestion; intestinal ferments. Intestinal canal. Same as Intestine, n. intestinal canal of any animal. The species are numerous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7009,44 +7101,12 @@
       ],
       "relatedWords": []
     },
-    "inthe17thcenturyandlater": {
-      "word": "in the 17th century and later.",
-      "definitions": [
-        {
-          "text": "A fuller. [Prov. Eng.]",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "inthirst": {
       "word": "INTHIRST",
       "definitions": [
         {
           "text": "To make thirsty. [Obs.]",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "inthissenseitincludesthehexapodaorsixleggedinsectsandthe": {
-      "word": "In this sense it includes the Hexapoda, or six-legged insects and the",
-      "definitions": [
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "In a more restricted sense, the Hexapoda alone. See Hexapoda.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "In the most general sense, the Hexapoda, Myriapoda, and Arachnoidea, combined. several orders, viz.: Hymenoptera, as the bees and ants; Diptera, as the common flies and gnats; Aphaniptera, or fleas; Lepidoptera, or moths and butterflies; Neuroptera, as the ant-lions and hellgamite; Coleoptera, or beetles; Hemiptera, as bugs, lice, aphids; Orthoptera, as grasshoppers and cockroaches; Pseudoneuroptera, as the dragon flies and termites; Euplexoptera, or earwings; Thysanura, as the springtails, podura, and lepisma. See these words in the Vocabulary.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -7135,8 +7195,28 @@
       "word": "INTIMATE",
       "definitions": [
         {
+          "text": "Innermost; inward; internal; deep-seated; hearty. \"I knew from intimate impulse.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Near; close; direct; thorough; complete. He was honored with an intimate and immediate admission. South.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Close in friendship or acquaintance; familiar; confidential; as, an intimate friend.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "An intimate friend or associate; a confidant. Gov. of the Tongue.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To announce; to declare; to publish; to communicate; to make known. [Obs.] He, incontinent, did proclaim and intimate open war. E. Hall. So both conspiring 'gan to intimate Each other's grief. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To suggest obscurely or indirectly; to refer to remotely; to give slight notice of; to hint; as, he intimated his intention of resigning his office. The names of simple ideas and substances, with the abstract ideas in the mind, intimate some real existence, from which was derived their original pattern. Locke.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -7281,7 +7361,17 @@
       ],
       "relatedWords": []
     },
-    "intireintirely": {
+    "intire": {
+      "word": "INTIRE; INTIRELY",
+      "definitions": [
+        {
+          "text": "See Entire, a., Entirely, adv.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "intirely": {
       "word": "INTIRE; INTIRELY",
       "definitions": [
         {
@@ -7359,7 +7449,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Enormous.",
+          "text": "Enormous. This intolerable deal of sack. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7697,7 +7787,7 @@
       "word": "INTRACTABLE",
       "definitions": [
         {
-          "text": "Not tractable; not easily governed, managed, or directed; indisposed to be taught, disciplined, or tamed; violent; stubborn; obstinate; refractory; as, an intractable child.",
+          "text": "Not tractable; not easily governed, managed, or directed; indisposed to be taught, disciplined, or tamed; violent; stubborn; obstinate; refractory; as, an intractable child. unruly; headstrong; violent; ungovernable; unteachable.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8357,7 +8447,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Included wholly within an organ or limb, as certain groups of muscles; -- opposed to extrinsic. Intrinsic energy of a body (Physics), the work it can do in virtue of its actual condition, without any supply of energy from without. expresses the relation which the length of a curve, measured from a given point of it, to a movable point, has to the angle which the",
+          "text": "Included wholly within an organ or limb, as certain groups of muscles; -- opposed to extrinsic. Intrinsic energy of a body (Physics), the work it can do in virtue of its actual condition, without any supply of energy from without. expresses the relation which the length of a curve, measured from a given point of it, to a movable point, has to the angle which the tangent to the curve at the movable point makes with a fixed line.",
           "partOfSpeech": "adjective"
         },
         {
@@ -8519,6 +8609,16 @@
         {
           "text": "A formal and elaborate preliminary treatise; specifically, a treatise introductory to other treatises, or to a course of study; a guide; as, an introduction to English literature.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "introductive": {
+      "word": "INTRODUCTIVE",
+      "definitions": [
+        {
+          "text": "Serving to introduce; introductory.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -8937,7 +9037,7 @@
       "word": "INTRUSIVE",
       "definitions": [
         {
-          "text": "Apt to intrude; characterized by intrusion; entering without right or welcome. Intrusive rocks (Geol.), rocks which have been forced, while in a plastic or melted state, into the cavities or between the cracks or layers of other rocks. The term is sometimes used as equivalent to plutonic rocks. It is then contrasted with",
+          "text": "Apt to intrude; characterized by intrusion; entering without right or welcome. Intrusive rocks (Geol.), rocks which have been forced, while in a plastic or melted state, into the cavities or between the cracks or layers of other rocks. The term is sometimes used as equivalent to plutonic rocks. It is then contrasted with effusive or volcanic rocks.",
           "partOfSpeech": "adjective"
         }
       ],

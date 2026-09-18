@@ -1253,7 +1253,17 @@
       ],
       "relatedWords": []
     },
-    "conferruminateconferruminated": {
+    "conferruminate": {
+      "word": "CONFERRUMINATE; CONFERRUMINATED",
+      "definitions": [
+        {
+          "text": "Closely united by the coalescence, or sticking together, of contiguous faces, as in the case of the cotyledons of the live-oak acorn.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conferruminated": {
       "word": "CONFERRUMINATE; CONFERRUMINATED",
       "definitions": [
         {
@@ -1730,7 +1740,74 @@
         "zebra"
       ]
     },
-    "confidantconfidante": {
+    "confidant": {
+      "word": "CONFIDANT; CONFIDANTE",
+      "definitions": [
+        {
+          "text": "One to whom secrets, especially those relating to affairs of love, are confided or intrusted; a confidential or bosom friend. You love me for no other end Than to become my confidant and friend; As such I keep no secret from your sight. Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Dutch uncle",
+        "Polonius",
+        "acquaintance",
+        "admonisher",
+        "adviser",
+        "advocate",
+        "alter ego",
+        "amigo",
+        "backer",
+        "backseat driver",
+        "best friend",
+        "bosom friend",
+        "brother",
+        "buttinsky",
+        "casual acquaintance",
+        "close acquaintance",
+        "close friend",
+        "confidante",
+        "consultant",
+        "counsel",
+        "counselor",
+        "expert",
+        "familiar",
+        "favorer",
+        "fellow",
+        "fellow creature",
+        "fellowman",
+        "fidus Achates",
+        "friend",
+        "guide",
+        "inseparable friend",
+        "instructor",
+        "intimate",
+        "kibitzer",
+        "lover",
+        "man Friday",
+        "mate",
+        "meddler",
+        "mentor",
+        "monitor",
+        "neighbor",
+        "nestor",
+        "orienter",
+        "other self",
+        "partisan",
+        "pickup",
+        "preceptist",
+        "repository",
+        "right hand",
+        "right-hand man",
+        "second self",
+        "strong right hand",
+        "supporter",
+        "sympathizer",
+        "teacher",
+        "well-wisher"
+      ]
+    },
+    "confidante": {
       "word": "CONFIDANT; CONFIDANTE",
       "definitions": [
         {
@@ -2220,6 +2297,55 @@
         }
       ],
       "relatedWords": []
+    },
+    "confiding": {
+      "word": "CONFIDING",
+      "definitions": [
+        {
+          "text": "That confides; trustful; unsuspicious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "artless",
+        "bluff",
+        "blunt",
+        "born yesterday",
+        "candid",
+        "childlike",
+        "credulous",
+        "dependent",
+        "depending",
+        "direct",
+        "frank",
+        "guileless",
+        "ingenu",
+        "ingenuous",
+        "innocent",
+        "naive",
+        "open",
+        "openhearted",
+        "outspoken",
+        "plain",
+        "reliant",
+        "relying",
+        "simple",
+        "simplehearted",
+        "simpleminded",
+        "sincere",
+        "single-hearted",
+        "single-minded",
+        "trustful",
+        "trusting",
+        "trusty",
+        "unguarded",
+        "unreserved",
+        "unsophisticated",
+        "unsuspecting",
+        "unsuspicious",
+        "unwary",
+        "without suspicion"
+      ]
     },
     "configurate": {
       "word": "CONFIGURATE",
@@ -3142,6 +3268,16 @@
         "witness"
       ]
     },
+    "confirmative": {
+      "word": "CONFIRMATIVE",
+      "definitions": [
+        {
+          "text": "Tending confirm or establish. Sherwood.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "confirmator": {
       "word": "CONFIRMATOR",
       "definitions": [
@@ -3445,6 +3581,14 @@
     "conflict": {
       "word": "CONFLICT",
       "definitions": [
+        {
+          "text": "A striking or dashing together; violent collision; as, a conflict of elements or waves.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A strife for the mastery; hostile contest; battle; struggle; fighting. As soon as he [Atterbury] was himself again, he became eager for action and conflict. Macaulay. An irrepressible conflict between opposing and enduring forces. W. H. Seward. Conflict of laws, that branch of jurisprudence which deals with individual litigation claimed to be subject to the conflicting laws of two or more states or nations; -- often used as synonymous with Private international law. battle; fight; encounter. See Contest.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To strike or dash together; to meet in violent collision; to collide. Shak. Fire and water conflicting together. Bacon.",
           "partOfSpeech": "verb"
@@ -6027,16 +6171,6 @@
       "definitions": [
         {
           "text": "A state of confusion. Norris.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "confusedwithlsecaresectumtocutseesuetofollowandcf": {
-      "word": "confused with L. secare, sectum, to cut. See Sue to follow, and cf.",
-      "definitions": [
-        {
-          "text": "Those following a particular leader or authority, or attached to a certain opinion; a company or set having a common belief or allegiance distinct from others; in religion, the believers in a particular creed, or upholders of a particular practice; especially, in modern times, a party dissenting from an established church; a denomination; in philosophy, the disciples of a particular master; a school; in society and the state, an order, rank, class, or party. He beareth the sign of poverty, And in that sect our Savior saved all mankind. Piers Plowman. As of the sect of which that he was born, He kept his lay, to which that he was sworn. Chaucer. The cursed sect of that detestable and false prophet Mohammed. Fabyan. As concerning this sect [Christians], we know that everywhere it is spoken against. Acts xxviii. 22.",
           "partOfSpeech": "noun"
         }
       ],

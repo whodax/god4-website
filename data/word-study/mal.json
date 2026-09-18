@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "mal": {
+      "word": "MAL-",
+      "definitions": [
+        {
+          "text": ". A prefix in composition denoting ill,or evil, F. male, adv., fr. malus, bad, ill. In some words it has the form male-, as in malediction, malevolent. See Malice. alone or with other letters, is pronounced as a separate syllable, as in malediction, malefactor, maleficent, etc. Where this is not the case, as in malfeasance or male-feasance, malformation or male- formation, etc., as also where the word to which it is prefixed commences with a vowel, as in maladministration, etc., the form malis to be preferred, and is the one commonly employed.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "mala": {
       "word": "MALA",
       "definitions": [
@@ -45,7 +55,7 @@
       "word": "MALACHITE",
       "definitions": [
         {
-          "text": "Native hydrous carbonate of copper, usually occurring in green mammillary masses with concentric fibrous structure. and is sometimes used for ornamental work. Blue malachite, or",
+          "text": "Native hydrous carbonate of copper, usually occurring in green mammillary masses with concentric fibrous structure. and is sometimes used for ornamental work. Blue malachite, or azurite, is a related species of a deep blue color. Malachite green. See Emerald green, under Green, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -285,7 +295,7 @@
       "word": "MALADROIT",
       "definitions": [
         {
-          "text": "Of a quality opposed to adroitness; clumsy; awkward;",
+          "text": "Of a quality opposed to adroitness; clumsy; awkward; unskillful.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -413,7 +423,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "A malapert person. Are you growing malapert! Will you force me to make use of my",
+          "text": "A malapert person. Are you growing malapert! Will you force me to make use of my authority Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -481,7 +491,17 @@
       ],
       "relatedWords": []
     },
-    "malarialmalarianmalarious": {
+    "malarial": {
+      "word": "MALARIAL; MALARIAN; MALARIOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining, to or infected by, malaria. Malarial fever (Med.), a fever produced by malaria, and characterized by the occurrence of chills, fever, and sweating in distinct paroxysms, At intervals of definite and often uniform duration, in which these symptoms are wholly absent (intermittent fever), or only partially so (remittent fever); fever and ague; chills and fever.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "malarian": {
       "word": "MALARIAL; MALARIAN; MALARIOUS",
       "definitions": [
         {
@@ -497,6 +517,16 @@
         {
           "text": "Any of several minute protozoans of the genus Plasmodium (syn. Hæmatozoön) which in their adult condition live in the tissues of mosquitoes of the genus Anopheles (which see) and when transferred to the blood of man, by the bite of the mosquito, produce malaria. The young parasites, or sporozoites, enter the red blood corpuscles, growing at their expense, undergoing sporulation, and finally destroying the corpuscles, thus liberating in the blood plasma an immense number of small spores called merozoites. An indefinite but not ultimated number of such generations may follow, but if meanwhile the host is bitten by a mosquito, the parasites develop into gametes in the stomach of the insect. These conjugate, the zygote thus produced divides, forming spores, and eventually sporozoites, which, penetrating to the salivary glands of the mosquito, may be introduced into a new host. The attacks of the disease coincide with the dissolution of the corpuscles and liberation of the spores and products of growth of the parasites into the blood plasma. Several species of the parasite are distinguished, as P. vivax, producing tertian malaria; P. malariæ, quartan malaria; and P. (subgenus Laverania) falciferum, the malarial fever of summer and autumn common in the tropics.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "malarious": {
+      "word": "MALARIAL; MALARIAN; MALARIOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining, to or infected by, malaria. Malarial fever (Med.), a fever produced by malaria, and characterized by the occurrence of chills, fever, and sweating in distinct paroxysms, At intervals of definite and often uniform duration, in which these symptoms are wholly absent (intermittent fever), or only partially so (remittent fever); fever and ague; chills and fever.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -521,6 +551,26 @@
       ],
       "relatedWords": []
     },
+    "malax": {
+      "word": "MALAX; MALAXATE",
+      "definitions": [
+        {
+          "text": "To soften by kneading or stirring with some thinner substance. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "malaxate": {
+      "word": "MALAX; MALAXATE",
+      "definitions": [
+        {
+          "text": "To soften by kneading or stirring with some thinner substance. [R.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "malaxation": {
       "word": "MALAXATION",
       "definitions": [
@@ -541,22 +591,20 @@
       ],
       "relatedWords": []
     },
-    "malaxmalaxate": {
-      "word": "MALAX; MALAXATE",
-      "definitions": [
-        {
-          "text": "To soften by kneading or stirring with some thinner substance. [R.]",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "malay": {
       "word": "MALAY",
       "definitions": [
         {
           "text": "One of a race of a brown or copper complexion in the Malay Peninsula and the western islands of the Indian Archipelago.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the Malays or their country.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The Malay language. Malay apple (Bot.), a myrtaceous tree (Eugenia Malaccensis) common in India; also, its applelike fruit.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -571,7 +619,7 @@
       ],
       "relatedWords": []
     },
-    "malaymalayan": {
+    "malayan": {
       "word": "MALAY; MALAYAN",
       "definitions": [
         {
@@ -619,6 +667,16 @@
       ],
       "relatedWords": []
     },
+    "malcontented": {
+      "word": "MALCONTENTED",
+      "definitions": [
+        {
+          "text": "Malcontent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "maldanian": {
       "word": "MALDANIAN",
       "definitions": [
@@ -643,6 +701,34 @@
         {
           "text": "Same as Mail, a bag. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the sex that begets or procreates young, or (in a wider sense) to the sex that produces spermatozoa, by which the ova are fertilized; not female; as, male organs.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Capable of producing fertilization, but not of bearing fruit; - - said of stamens and antheridia, and of the plants, or parts of plants, which bear them.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Suitable to the male sex; characteristic or suggestive of a male; masculine; as, male courage.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Consisting of males; as, a male choir.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Adapted for entering another corresponding piece (the female piece) which is hollow and which it fits; as, a male gauge, for gauging the size or shape of a hole; a male screw, etc. Male berry (Bot.), a kind of coffee. See Pea berry. used in medicine as an anthelmintic, esp. against the tapeworm. Aspidium marginale in America, and A. athamanticum in South Africa, are used as good substitutes for the male fern in medical practice. See Female fern, under Female. laid, afraid, dismayed. See Female rhyme, under Female. which enter the grooves upon the inside of a corresponding nut or female screw.",
+          "partOfSpeech": "adjective"
         },
         {
           "text": "An animal of the male sex.",
@@ -1131,7 +1217,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "With wicked or mischievous intentions or motives; wrongful and done intentionally without just cause or excuse; as, a malicious act. Malicious abandonment, the desertion of a wife or husband without just cause. Burrill. another; -- an offense at common law. Wharton. arrest, by regular process in a civil or criminal proceeding, without probable cause. Bouvier.",
+          "text": "With wicked or mischievous intentions or motives; wrongful and done intentionally without just cause or excuse; as, a malicious act. Malicious abandonment, the desertion of a wife or husband without just cause. Burrill. another; -- an offense at common law. Wharton. arrest, by regular process in a civil or criminal proceeding, without probable cause. Bouvier. invidious; spiteful; bitter; malignant; rancorous; malign.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1167,7 +1253,33 @@
       ],
       "relatedWords": []
     },
-    "malignancemalignancy": {
+    "malignance": {
+      "word": "MALIGNANCE; MALIGNANCY",
+      "definitions": [
+        {
+          "text": "The state or quality of being malignant; extreme malevolence; bitter enmity; malice; as, malignancy of heart.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Unfavorableness; evil nature. The malignancy of my fate might perhaps distemner yours. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Virulence; tendency to a fatal issue; as, the malignancy of an ulcer or of a fever.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being a malignant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "malignancy": {
       "word": "MALIGNANCE; MALIGNANCY",
       "definitions": [
         {
@@ -1493,7 +1605,17 @@
       ],
       "relatedWords": []
     },
-    "mallemockmallemoke": {
+    "mallemock": {
+      "word": "MALLEMOCK; MALLEMOKE",
+      "definitions": [
+        {
+          "text": "See Mollemoke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mallemoke": {
       "word": "MALLEMOCK; MALLEMOKE",
       "definitions": [
         {
@@ -1601,7 +1723,17 @@
       ],
       "relatedWords": []
     },
-    "mallowmallows": {
+    "mallow": {
+      "word": "MALLOW; MALLOWS",
+      "definitions": [
+        {
+          "text": "A genus of plants (Malva) having mucilaginous qualities. See Malvaceous. medicine. The dwarf mallow (M. rotundifolia) is a common weed, and its flattened, dick-shaped fruits are called cheeses by children. Tree mallow (M. Mauritiana and Lavatera arborea), musk mallow (M. moschata), rose mallow or hollyhock, and curled mallow (M. crispa), are less commonly seen. Indian mallow. See Abutilon. the Jews of Egypt and Syria.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mallows": {
       "word": "MALLOW; MALLOWS",
       "definitions": [
         {
@@ -1616,6 +1748,16 @@
       "definitions": [
         {
           "text": "Any plant of the order Malvaceæ.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "malm": {
+      "word": "MALM; MALMBRICK",
+      "definitions": [
+        {
+          "text": "A kind of brick of a light brown or yellowish color, made of sand, clay, and chalk.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1641,7 +1783,7 @@
       ],
       "relatedWords": []
     },
-    "malmmalmbrick": {
+    "malmbrick": {
       "word": "MALM; MALMBRICK",
       "definitions": [
         {
@@ -1875,21 +2017,31 @@
       ],
       "relatedWords": []
     },
-    "malting": {
-      "word": "MALTING",
+    "maltin": {
+      "word": "MALTIN; MALTINE",
       "definitions": [
         {
-          "text": "The process of making, or of becoming malt.",
+          "text": "The fermentative principle of malt; malt diastase; also, a name given to various medicinal preparations made from or containing malt.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "maltinmaltine": {
+    "maltine": {
       "word": "MALTIN; MALTINE",
       "definitions": [
         {
           "text": "The fermentative principle of malt; malt diastase; also, a name given to various medicinal preparations made from or containing malt.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "malting": {
+      "word": "MALTING",
+      "definitions": [
+        {
+          "text": "The process of making, or of becoming malt.",
           "partOfSpeech": "noun"
         }
       ],

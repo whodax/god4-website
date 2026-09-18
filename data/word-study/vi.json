@@ -11,44 +11,6 @@
       ],
       "relatedWords": []
     },
-    "violentlytohandlemanagetreatvintensfromtrahere": {
-      "word": "violently, to handle, manage, treat, v. intens. from trahere,",
-      "definitions": [
-        {
-          "text": "To handle; to manage; to use; to bear one's self toward; as, to treat prisoners cruelly; to treat children kindly.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To discourse on; to handle in a particular manner, in writing or speaking; as, to treat a subject diffusely.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To entertain with food or drink, especially the latter, as a compliment, or as an expression of friendship or regard; as, to treat the whole company.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To negotiate; to settle; to make terms for. [Obs.] To treat the peace, a hundred senators Shall be commissioned. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Med.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To care for medicinally or surgically; to manage in the use of remedies or appliances; as, to treat a disease, a wound, or a patient.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To subject to some action; to apply something to; as, to treat a substance with sulphuric acid. Ure.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To entreat; to beseech. [Obs.] Ld. Berners.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "via": {
       "word": "VIA",
       "definitions": [
@@ -270,6 +232,18 @@
     "vibrate": {
       "word": "VIBRATE",
       "definitions": [
+        {
+          "text": "To brandish; to move to and fro; to swing; as, to vibrate a sword or a staff.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark or measure by moving to and fro; as, a pendulum vibrating seconds.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To affect with vibratory motion; to set in vibration. Breath vocalized, that is, vibrated or undulated, may . . . impress a swift, tremulous motion. Holder. Star to star vibrates light. Tennyson.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To move to and fro, or from side to side, as a pendulum, an elastic rod, or a stretched string, when disturbed from its position of rest; to swing; to oscillate.",
           "partOfSpeech": "verb"
@@ -507,6 +481,32 @@
         {
           "text": "Delegated office or power; vicarship; the office or oversight of a vicar. The vicariate of that part of Germany which is governed by the Saxon laws devolved on the elector of Saxony. Robertson.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vicarious": {
+      "word": "VICARIOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a vicar, substitute, or deputy; deputed; delegated; as, vicarious power or authority.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Acting of suffering for another; as, a vicarious agent or officer. The soul in the body is but a subordinate efficient, and vicarious . . . in the hands of the Almighty. Sir M. Hale.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Performed of suffered in the place of another; substituted; as, a vicarious sacrifice; vicarious punishment. The vicarious work of the Great Deliverer. I. Taylor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Acting as a substitute; -- said of abnormal action which replaces a suppressed normal function; as, vicarious hemorrhage replacing menstruation.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1059,7 +1059,7 @@
       "word": "VICTORIOUS",
       "definitions": [
         {
-          "text": "Of or pertaining to victory, or a victor' being a victor; bringing or causing a victory; conquering; winning; triumphant; as, a victorious general; victorious troops; a victorious day. But I shall rise victorious, and subdue My vanquisher. Milton.",
+          "text": "Of or pertaining to victory, or a victor' being a victor; bringing or causing a victory; conquering; winning; triumphant; as, a victorious general; victorious troops; a victorious day. But I shall rise victorious, and subdue My vanquisher. Milton. Now are our brows bound wind victorious wreaths. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1195,7 +1195,27 @@
       ],
       "relatedWords": []
     },
-    "vicunavicunyavicugna": {
+    "vicuna": {
+      "word": "VICUNA; VICUNYA; VICUGNA",
+      "definitions": [
+        {
+          "text": "A South American mammal (Auchenia vicunna) native of the elevated plains of the Andes, allied to the llama but smaller. It has a thick coat of very fine reddish brown wool, and long, pendent white hair on the breast and belly. It is hunted for its wool and flesh.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vicunya": {
+      "word": "VICUNA; VICUNYA; VICUGNA",
+      "definitions": [
+        {
+          "text": "A South American mammal (Auchenia vicunna) native of the elevated plains of the Andes, allied to the llama but smaller. It has a thick coat of very fine reddish brown wool, and long, pendent white hair on the breast and belly. It is hunted for its wool and flesh.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vicugna": {
       "word": "VICUNA; VICUNYA; VICUGNA",
       "definitions": [
         {
@@ -1463,7 +1483,17 @@
       ],
       "relatedWords": []
     },
-    "viewlyviewsome": {
+    "viewly": {
+      "word": "VIEWLY; VIEWSOME",
+      "definitions": [
+        {
+          "text": "Pleasing to the sight; sightly. [Prov. Eng.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "viewsome": {
       "word": "VIEWLY; VIEWSOME",
       "definitions": [
         {
@@ -1713,7 +1743,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Exhibiting strength, either of body or mind; powerful; strong; forcible; energetic; as, vigorous exertions; a vigorous prosecution of a war. The beginnings of confederacies have been always vigorous and",
+          "text": "Exhibiting strength, either of body or mind; powerful; strong; forcible; energetic; as, vigorous exertions; a vigorous prosecution of a war. The beginnings of confederacies have been always vigorous and successful. Davenant.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1953,7 +1983,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Sorry; mean; mischievous; -- in a familiar sense. \"A villainous trick of thine eye.\" Shak. Villainous judgment (O. E. Law), a",
+          "text": "Sorry; mean; mischievous; -- in a familiar sense. \"A villainous trick of thine eye.\" Shak. Villainous judgment (O. E. Law), a judgment that casts reproach on the guilty person. --- Vil\"lain*ous*ly, adv. Vil\"lain*ous*ness, n.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2075,7 +2105,27 @@
       ],
       "relatedWords": []
     },
-    "villanousvillanouslyvillanousness": {
+    "villanous": {
+      "word": "VILLANOUS; VILLANOUSLY; VILLANOUSNESS",
+      "definitions": [
+        {
+          "text": "See Villainous, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "villanously": {
+      "word": "VILLANOUS; VILLANOUSLY; VILLANOUSNESS",
+      "definitions": [
+        {
+          "text": "See Villainous, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "villanousness": {
       "word": "VILLANOUS; VILLANOUSLY; VILLANOUSNESS",
       "definitions": [
         {
@@ -2473,6 +2523,16 @@
       ],
       "relatedWords": []
     },
+    "vindicable": {
+      "word": "VINDICABLE",
+      "definitions": [
+        {
+          "text": "Capable of being vindicated.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "vindicate": {
       "word": "VINDICATE",
       "definitions": [
@@ -2529,7 +2589,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Revengeful; vindictive. [Obs.] Vindicative persons live the life of witches, who, as they are",
+          "text": "Revengeful; vindictive. [Obs.] Vindicative persons live the life of witches, who, as they are mischievous, so end they infortunate. Bacon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2563,7 +2623,11 @@
       "word": "VINDICTIVE",
       "definitions": [
         {
-          "text": "Disposed to revenge; prompted or characterized by revenge; revengeful.",
+          "text": "Disposed to revenge; prompted or characterized by revenge; revengeful. I am vindictive enough to repel force by force. Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Punitive. [Obs.] Vindictive damages. (Law) See under Damage, n.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3001,6 +3065,16 @@
       ],
       "relatedWords": []
     },
+    "violable": {
+      "word": "VIOLABLE",
+      "definitions": [
+        {
+          "text": "Capable of being violated, broken, or injured.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "violaceous": {
       "word": "VIOLACEOUS",
       "definitions": [
@@ -3385,7 +3459,17 @@
       ],
       "relatedWords": []
     },
-    "viperoideaviperoides": {
+    "viperoidea": {
+      "word": "VIPEROIDEA; VIPEROIDES",
+      "definitions": [
+        {
+          "text": "A division of serpents which includes the true vipers of the Old World and the rattlesnakes and moccasin snakes of America; -- called also Viperina.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "viperoides": {
       "word": "VIPEROIDEA; VIPEROIDES",
       "definitions": [
         {
@@ -3971,7 +4055,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "One of the orders of the celestial hierarchy.",
+          "text": "One of the orders of the celestial hierarchy. Thrones, dominations, princedoms, virtues, powers. Milton. Cardinal virtues. See under Cardinal, a. used to travel through Greece by virtue of this fable, which procured him reception in all the towns.\" Addison. \"This they shall attain, partly in virtue of the promise made by God, and partly in virtue of piety.\" Atterbury. See 1 Cor. xiii. 13.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4041,13 +4125,27 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Chaste; pure; -- applied especially to women. Mistress Ford . . . the virtuous creature, that hath the jealous fool",
+          "text": "Chaste; pure; -- applied especially to women. Mistress Ford . . . the virtuous creature, that hath the jealous fool to her husband. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "virulencevirulency": {
+    "virulence": {
+      "word": "VIRULENCE; VIRULENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being virulent or venomous; poisonousness; malignancy.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Extreme bitterness or malignity of disposition. \"Refuted without satirical virulency.\" Barrow. The virulence of one declaimer, or the profundities and sublimities of the other. I. Taylor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "virulency": {
       "word": "VIRULENCE; VIRULENCY",
       "definitions": [
         {
@@ -4203,11 +4301,25 @@
       ],
       "relatedWords": []
     },
-    "viscachavizcacha": {
+    "viscacha": {
       "word": "VISCACHA; VIZ-CACHA",
       "definitions": [
         {
           "text": "A large burrowing South American rodent (Lagostomus trichodactylus) allied to the chinchillas, but much larger. Its fur is soft and rather long, mottled gray above, white or yellowish white beneath. There is a white band across the muzzle, and a dark band on each cheek. It inhabits grassy plains, and is noted for its extensive burrows and for heaping up miscellaneous articles at the mouth of its burrows. Called also biscacha, bizcacha, vischacha, vishatscha.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vizcacha": {
+      "word": "VISCACHA; VIZ-CACHA",
+      "definitions": [
+        {
+          "text": "A large burrowing South American rodent (Lagostomus trichodactylus) allied to the chinchillas, but much larger. Its fur is soft and rather long, mottled gray above, white or yellowish white beneath. There is a white band across the muzzle, and a dark band on each cheek. It inhabits grassy plains, and is noted for its extensive burrows and for heaping up miscellaneous articles at the mouth of its burrows. Called also biscacha, bizcacha, vischacha, vishatscha.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Viscacha.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4341,7 +4453,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A nobleman of the fourth rank, next in order below an earl and",
+          "text": "A nobleman of the fourth rank, next in order below an earl and next above a baron; also, his degree or title of nobility. See Peer, n., 3. [Eng.] Chaucer.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4367,7 +4479,17 @@
       ],
       "relatedWords": []
     },
-    "viscountshipviscounty": {
+    "viscountship": {
+      "word": "VISCOUNTSHIP; VISCOUNTY",
+      "definitions": [
+        {
+          "text": "The quality, rank, or office of a viscount.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "viscounty": {
       "word": "VISCOUNTSHIP; VISCOUNTY",
       "definitions": [
         {
@@ -4381,7 +4503,7 @@
       "word": "VISCOUS",
       "definitions": [
         {
-          "text": "Adhesive or sticky, and having a ropy or glutinous consistency;",
+          "text": "Adhesive or sticky, and having a ropy or glutinous consistency; viscid; glutinous; clammy; tenacious; as, a viscous juice. and viscid.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4473,6 +4595,16 @@
         {
           "text": "A system of characters invented by Prof. Alexander Melville Bell to represent all sounds that may be uttered by the speech organs, and intended to be suggestive of the position of the organs of speech in uttering them.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "visigoth": {
+      "word": "VISIGOTH",
+      "definitions": [
+        {
+          "text": "One of the West Goths. See the Note under Goth.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -4731,7 +4863,7 @@
           "partOfSpeech": ""
         },
         {
-          "text": "A superior, or a person lawfully appointed for the purpose, who",
+          "text": "A superior, or a person lawfully appointed for the purpose, who makes formal visits of inspection to a corporation or an institution. See Visit, v. t., 2, and Visitation, n., 2. The king is the visitor of all lay corporations. Blackstone.",
           "partOfSpeech": ""
         }
       ],
@@ -5207,7 +5339,27 @@
       ],
       "relatedWords": []
     },
-    "vitiousvitiouslyvitiousness": {
+    "vitious": {
+      "word": "VITIOUS; VITIOUSLY; VITIOUSNESS",
+      "definitions": [
+        {
+          "text": "See Vicious, Viciously, Viciousness.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vitiously": {
+      "word": "VITIOUS; VITIOUSLY; VITIOUSNESS",
+      "definitions": [
+        {
+          "text": "See Vicious, Viciously, Viciousness.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vitiousness": {
       "word": "VITIOUS; VITIOUSLY; VITIOUSNESS",
       "definitions": [
         {
@@ -5657,7 +5809,7 @@
       "word": "VITUPERATIVE",
       "definitions": [
         {
-          "text": "Uttering or writing censure; containing, or characterized by,",
+          "text": "Uttering or writing censure; containing, or characterized by, abuse; scolding; abusive. Vituperative appellations derived from their real or supposed ill qualities. B. Jonson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5709,7 +5861,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Living through the winter, or from year to year; perennial. [R.]",
+          "text": "Living through the winter, or from year to year; perennial. [R.] hearted.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5877,7 +6029,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Forming brilliant images, or painting in lively colors; lively; sprightly; as, a vivid imagination. Body is a fit workhouse for sprightly, vivid faculties to exercise . . . themselves in. South.",
+          "text": "Forming brilliant images, or painting in lively colors; lively; sprightly; as, a vivid imagination. Body is a fit workhouse for sprightly, vivid faculties to exercise . . . themselves in. South. active.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5893,7 +6045,17 @@
       ],
       "relatedWords": []
     },
-    "vivificvivifical": {
+    "vivific": {
+      "word": "VIVIFIC; VIVIFICAL",
+      "definitions": [
+        {
+          "text": "Giving life; reviving; enlivening. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vivifical": {
       "word": "VIVIFIC; VIVIFICAL",
       "definitions": [
         {
@@ -6131,16 +6293,6 @@
       ],
       "relatedWords": []
     },
-    "vizcacha": {
-      "word": "VIZCACHA",
-      "definitions": [
-        {
-          "text": "Same as Viscacha.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "vizier": {
       "word": "VIZIER",
       "definitions": [
@@ -6197,34 +6349,6 @@
         {
           "text": "See Visor.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "viskandperhapstolvirgaatwigrodcfvergearodwhisk": {
-      "word": "visk, and perhaps to L. virga a twig, rod. Cf. Verge a rod, Whisk,",
-      "definitions": [
-        {
-          "text": "A small bundle, as of straw or other like substance. In a small basket, on a wisp of hay. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A whisk, or small broom.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A Will-o'-the-wisp; an ignis fatuus. The wisp that flickers where no foot can tread. Tennyson.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "vitatomulctandewitcfaswitantoseelanimadvertereto": {
-      "word": "vita to mulct, and E. wit; cf. AS. witan to see, L. animadvertere to",
-      "definitions": [
-        {
-          "text": "To reproach; to blame; to censure; also, to impute as blame. [Obs. or Scot.] Spenser. Though that I be jealous, wite me not. Chaucer. There if that I misspeak or say, Wite it the ale of Southwark, I you pray. Chaucer.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

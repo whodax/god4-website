@@ -1,16 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "getmeanironcrowandbringitstraightuntomycellshak": {
-      "word": "Get me an iron crow, and bring it straight Unto my cell. Shak.",
-      "definitions": [
-        {
-          "text": "The mesentery of a beast; -- so called by butchers. Carrion crow. See under Carrion. called also purple grackle. believed by the natives to give omens. See Coucal. or Strepera, mostly from Australia. or grievance (with any one).",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "ge": {
       "word": "GE-",
       "definitions": [
@@ -191,7 +181,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Anything worthless; stuff; nonsense; rubbish. [Obs. or Prov. Eng.] Wright. That servant of his that confessed and uttered this gear was an honest man. Latimer. Bever gear. See Bevel gear. under Mortise. cutting off steam at a certain part of the stroke, so as to leave it",
+          "text": "Anything worthless; stuff; nonsense; rubbish. [Obs. or Prov. Eng.] Wright. That servant of his that confessed and uttered this gear was an honest man. Latimer. Bever gear. See Bevel gear. under Mortise. cutting off steam at a certain part of the stroke, so as to leave it to act upon the piston expansively; the cut-off. See under Expansion. wheels by cutting. (wheelwork or couplings, etc.); to put in, or out of, working relation.",
           "partOfSpeech": "noun"
         },
         {
@@ -474,7 +464,17 @@
       ],
       "relatedWords": []
     },
-    "gedgedd": {
+    "ged": {
+      "word": "GED; GEDD",
+      "definitions": [
+        {
+          "text": "The European pike.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gedd": {
       "word": "GED; GEDD",
       "definitions": [
         {
@@ -526,7 +526,17 @@
         "tally"
       ]
     },
-    "geergeering": {
+    "geer": {
+      "word": "GEER; GEERING",
+      "definitions": [
+        {
+          "text": "See Gear, Gearing.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "geering": {
       "word": "GEER; GEERING",
       "definitions": [
         {
@@ -784,12 +794,112 @@
       ],
       "relatedWords": []
     },
-    "gelatingelatine": {
+    "gelatin": {
       "word": "GELATIN; GELATINE",
       "definitions": [
         {
           "text": ", Gel\"a*tine (, n. Etym: [F. gélatine, fr. L. gelare to congeal. See Geal.] (Chem.) Animal jelly; glutinous material obtained from animal tissues by prolonged boiling. Specifically (Physiol. Chem.), a nitrogeneous colloid, not existing as such in the animal body, but formed by the hydrating action of boiling water on the collagen of various kinds of connective tissue (as tendons, bones, ligaments, etc.). Its distinguishing character is that of dissolving in hot water, and forming a jelly on cooling. It is an important ingredient of calf's-foot jelly, isinglass, glue, etc. It is used as food, but its nutritious qualities are of a low order. tendency of writers on physiological chemistry favors the form in - in, as in the United States Dispensatory, the United States Pharmacopoeia, Fownes' Watts' Chemistry, Brande & Cox's Dictionary. Blasting gelatin, an explosive, containing about ninety-five parts of nitroglycerin and five of collodion. arts, involving the use of gelatin. Especially: (a) (Photog.) A dry- plate process in which gelatin is used as a substitute for collodion as the sensitized material. This is the dry-plate process in general use, and plates of extreme sensitiveness are produced by it. (b) (Print.) A method of producing photographic copies of drawings, engravings, printed pages, etc., and also of photographic pictures, which can be printed from in a press with ink, or (in some applications of the process) which can be used as the molds of stereotype or electrotype plates. (c) (Print. or Copying) A method of producing facsimile copies of an original, written or drawn in aniline ink upon paper, thence transferred to a cake of gelatin softened with glycerin, from which impressions are taken upon ordinary paper.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "Jell-O",
+        "albumen",
+        "arc",
+        "arc light",
+        "batter",
+        "blancmange",
+        "bonnyclabber",
+        "butter",
+        "candy",
+        "clabber",
+        "color filter",
+        "comfit",
+        "compote",
+        "confection",
+        "confectionery",
+        "confiture",
+        "conserve",
+        "cornstarch",
+        "cream",
+        "curd",
+        "dimmer",
+        "dough",
+        "egg white",
+        "floats",
+        "flood",
+        "floodlight",
+        "footlights",
+        "foots",
+        "frosting",
+        "gaum",
+        "gel",
+        "glair",
+        "glaze",
+        "glop",
+        "glue",
+        "gluten",
+        "goo",
+        "gook",
+        "goop",
+        "gruel",
+        "gumbo",
+        "gunk",
+        "honey",
+        "icing",
+        "jam",
+        "jell",
+        "jelly",
+        "klieg light",
+        "light plot",
+        "lights",
+        "limelight",
+        "loblolly",
+        "marmalade",
+        "marquee",
+        "medium",
+        "meringue",
+        "molasses",
+        "mousse",
+        "mucilage",
+        "mucus",
+        "pap",
+        "paste",
+        "porridge",
+        "preserve",
+        "pudding",
+        "pulp",
+        "puree",
+        "putty",
+        "rob",
+        "semifluid",
+        "semiliquid",
+        "size",
+        "soup",
+        "spot",
+        "spotlight",
+        "starch",
+        "sticky mess",
+        "sweet",
+        "sweet stuff",
+        "sweetmeat",
+        "sweets",
+        "syrup",
+        "treacle",
+        "tutti-frutti",
+        "whipped cream"
+      ]
+    },
+    "gelatine": {
+      "word": "GELATIN; GELATINE",
+      "definitions": [
+        {
+          "text": ", Gel\"a*tine (, n. Etym: [F. gélatine, fr. L. gelare to congeal. See Geal.] (Chem.) Animal jelly; glutinous material obtained from animal tissues by prolonged boiling. Specifically (Physiol. Chem.), a nitrogeneous colloid, not existing as such in the animal body, but formed by the hydrating action of boiling water on the collagen of various kinds of connective tissue (as tendons, bones, ligaments, etc.). Its distinguishing character is that of dissolving in hot water, and forming a jelly on cooling. It is an important ingredient of calf's-foot jelly, isinglass, glue, etc. It is used as food, but its nutritious qualities are of a low order. tendency of writers on physiological chemistry favors the form in - in, as in the United States Dispensatory, the United States Pharmacopoeia, Fownes' Watts' Chemistry, Brande & Cox's Dictionary. Blasting gelatin, an explosive, containing about ninety-five parts of nitroglycerin and five of collodion. arts, involving the use of gelatin. Especially: (a) (Photog.) A dry- plate process in which gelatin is used as a substitute for collodion as the sensitized material. This is the dry-plate process in general use, and plates of extreme sensitiveness are produced by it. (b) (Print.) A method of producing photographic copies of drawings, engravings, printed pages, etc., and also of photographic pictures, which can be printed from in a press with ink, or (in some applications of the process) which can be used as the molds of stereotype or electrotype plates. (c) (Print. or Copying) A method of producing facsimile copies of an original, written or drawn in aniline ink upon paper, thence transferred to a cake of gelatin softened with glycerin, from which impressions are taken upon ordinary paper.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Same as Gelatin.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -813,16 +923,6 @@
       "definitions": [
         {
           "text": "The act of process of converting into gelatin, or a substance like jelly.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "gelatine": {
-      "word": "GELATINE",
-      "definitions": [
-        {
-          "text": "Same as Gelatin.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1523,6 +1623,10 @@
         {
           "text": "(Heb.)",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the barrulets placed parallel and closed to each other. Cf. Bars gemel, under Gemel, a. Two gemels silver between two griffins passant. Strype. Gemel hinge (Locksmithing), a hinge consisting of an eye or loop and a hook.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1867,7 +1971,17 @@
       ],
       "relatedWords": []
     },
-    "gemmiparagemmipares": {
+    "gemmipara": {
+      "word": "GEMMIPARA; GEMMIPARES",
+      "definitions": [
+        {
+          "text": "Animals which increase by budding, as hydroids.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "gemmipares": {
       "word": "GEMMIPARA; GEMMIPARES",
       "definitions": [
         {
@@ -2183,7 +2297,7 @@
       "word": "GENEALOGICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to genealogy; as, a genealogical table;",
+          "text": "Of or pertaining to genealogy; as, a genealogical table; genealogical order. genealogy drawn out under the form of a tree and its branches.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2291,7 +2405,39 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Usual; common, on most occasions; as, his general habit or method. chief or superior; as, attorney-general; adjutant general; commissary general; quartermaster general; vicar-general, etc. General agent (Law), an agent whom a principal employs to transact all his business of a particular kind, or to act in his affairs generally. judicial tribunal. common use. general terms, as insufficient, without specifying the defects. Abbott. left, general guide) posted opposite the right and left flanks of an infantry battalion, to preserve accuracy in marching. Farrow. and wounded sent from the field hospitals. Farrow. General issue (Law), an issue made by a general plea, which traverses the whole declaration or indictment at once, without offering any special matter to evade it. Bouvier. Burrill. payment is made of any balance due on a general account. colonel. whole command. medicine in all its branches without confining himself to any specialty; in England, one who practices both as physician and as surgeon. conception or notion. civil actions, \"for the plaintiff\" or \"for the defendant\". Burrill. suspected persons, without naming individuals. which many share; and hence, that which is often met with. General is stronger, denoting that which pertains to a majority of the individuals which compose a genus, or whole. Universal, that which pertains to all without exception. To be able to read and write is so common an attainment in the United States, that we may pronounce it",
+          "text": "Usual; common, on most occasions; as, his general habit or method. chief or superior; as, attorney-general; adjutant general; commissary general; quartermaster general; vicar-general, etc. General agent (Law), an agent whom a principal employs to transact all his business of a particular kind, or to act in his affairs generally. judicial tribunal. common use. general terms, as insufficient, without specifying the defects. Abbott. left, general guide) posted opposite the right and left flanks of an infantry battalion, to preserve accuracy in marching. Farrow. and wounded sent from the field hospitals. Farrow. General issue (Law), an issue made by a general plea, which traverses the whole declaration or indictment at once, without offering any special matter to evade it. Bouvier. Burrill. payment is made of any balance due on a general account. colonel. whole command. medicine in all its branches without confining himself to any specialty; in England, one who practices both as physician and as surgeon. conception or notion. civil actions, \"for the plaintiff\" or \"for the defendant\". Burrill. suspected persons, without naming individuals. which many share; and hence, that which is often met with. General is stronger, denoting that which pertains to a majority of the individuals which compose a genus, or whole. Universal, that which pertains to all without exception. To be able to read and write is so common an attainment in the United States, that we may pronounce it general, though by no means universal. Syn: Gen\"er*al, n. Etym: [F. général. See General., a.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The whole; the total; that which comprehends or relates to all, or the chief part; -- opposed to particular. In particulars our knowledge begins, and so spreads itself by degrees to generals. Locke.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the chief military officers of a government or country; the commander of an army, of a body of men not less than a brigade. In European armies, the highest military rank next below field marshal. created by temporary laws, and has been held only by Generals U. S. Grant, W. T. Sherman, and P. H. Sheridan. Popularly, the title General is given to various general officers, as General, Lieutenant general, Major general, Brigadier general, Commissary general, etc. See Brigadier general, Lieutenant general, Major general, in the Vocabulary.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The roll of the drum which calls the troops together; as, to beat the general.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Eccl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The chief of an order of monks, or of all the houses or congregations under the same rule.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The public; the people; the vulgar. [Obs.] Shak. In general, in the main; for the most part.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2553,44 +2699,6 @@
         "widespread",
         "worldwide"
       ]
-    },
-    "generalthoughbynomeansuniversal": {
-      "word": "general, though by no means universal.",
-      "definitions": [
-        {
-          "text": "The whole; the total; that which comprehends or relates to all, or the chief part; -- opposed to particular. In particulars our knowledge begins, and so spreads itself by degrees to generals. Locke.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Mil.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "One of the chief military officers of a government or country; the commander of an army, of a body of men not less than a brigade. In European armies, the highest military rank next below field marshal. created by temporary laws, and has been held only by Generals U. S. Grant, W. T. Sherman, and P. H. Sheridan. Popularly, the title General is given to various general officers, as General, Lieutenant general, Major general, Brigadier general, Commissary general, etc. See Brigadier general, Lieutenant general, Major general, in the Vocabulary.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Mil.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The roll of the drum which calls the troops together; as, to beat the general.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Eccl.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The chief of an order of monks, or of all the houses or congregations under the same rule.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The public; the people; the vulgar. [Obs.] Shak. In general, in the main; for the most part.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
     },
     "generalia": {
       "word": "GENERALIA",
@@ -3704,7 +3812,45 @@
       ],
       "relatedWords": []
     },
-    "genericgenerical": {
+    "generic": {
+      "word": "GENERIC; GENERICAL",
+      "definitions": [
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to a genus or kind; relating to a genus, as distinct from a species, or from another genus; as, a generic description; a generic difference; a generic name.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Very comprehensive; pertaining or appropriate to large classes or their characteristics; -- opposed to Ant: specific.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abstract",
+        "bland",
+        "broad",
+        "collective",
+        "common",
+        "featureless",
+        "general",
+        "generalized",
+        "indefinite",
+        "indeterminate",
+        "nebulous",
+        "neutral",
+        "nonspecific",
+        "uncharacterized",
+        "undifferentiated",
+        "universal",
+        "unspecified",
+        "vague",
+        "wide"
+      ]
+    },
+    "generical": {
       "word": "GENERIC; GENERICAL",
       "definitions": [
         {
@@ -4278,7 +4424,7 @@
         "youth"
       ]
     },
-    "genetgenette": {
+    "genet": {
       "word": "GENET; GENETTE",
       "definitions": [
         {
@@ -4292,15 +4438,27 @@
         {
           "text": "The fur of the common genet (Genetta vulgaris); also, any skin dressed in imitation of this fur.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small-sized, well-proportioned, Spanish horse; a jennet. Shak.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "genet": {
-      "word": "GENET",
+    "genette": {
+      "word": "GENET; GENETTE",
       "definitions": [
         {
-          "text": "A small-sized, well-proportioned, Spanish horse; a jennet. Shak.",
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of several species of small Carnivora of the genus Genetta, allied to the civets, but having the scent glands less developed, and without a pouch. Minor, and North Africa, is dark gray, spotted with black. The long tail is banded with black and white. The Cape genet (G. felina), and the berbe (G. pardina), are related African species.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fur of the common genet (Genetta vulgaris); also, any skin dressed in imitation of this fur.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4986,7 +5144,21 @@
       ],
       "relatedWords": []
     },
-    "genipgeniptree": {
+    "genip": {
+      "word": "GENIP; GENIP TREE",
+      "definitions": [
+        {
+          "text": "Any tree or shrub of the genus Genipa.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The West Indian sapindaceous tree Melicocca bijuga, which yields the honeyberry; also, the related trees Exothea paniculata and E. trifoliata.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geniptree": {
       "word": "GENIP; GENIP TREE",
       "definitions": [
         {
@@ -5140,7 +5312,7 @@
       "word": "GENITIVAL",
       "definitions": [
         {
-          "text": "Possessing genitive from; pertaining to, or derived from, the",
+          "text": "Possessing genitive from; pertaining to, or derived from, the genitive case; as, a genitival adverb.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5984,7 +6156,17 @@
       ],
       "relatedWords": []
     },
-    "genteriegentrie": {
+    "genterie": {
+      "word": "GENTERIE; GENTRIE",
+      "definitions": [
+        {
+          "text": "Nobility of birth or of character; gentility. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gentrie": {
       "word": "GENTERIE; GENTRIE",
       "definitions": [
         {
@@ -6067,6 +6249,10 @@
     "gentile": {
       "word": "GENTILE",
       "definitions": [
+        {
+          "text": "One of a non-Jewish nation; one neither a Jew nor a Christian; a worshiper of false gods; a heathen. tribes of men who had not received the true faith, and were not circumcised. The Christians translated goyim by the L. gentes, and imitated the Jews in giving the name gentiles to all nations who were neither Jews nor Christians. In civil affairs, the denomination was given to all nations who were not Romans.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Belonging to the nations at large, as distinguished from the Jews; ethnic; of pagan or heathen people.",
           "partOfSpeech": "adjective"
@@ -6173,7 +6359,21 @@
       ],
       "relatedWords": []
     },
-    "gentilitialgentilitious": {
+    "gentilitial": {
+      "word": "GENTILITIAL; GENTILITIOUS",
+      "definitions": [
+        {
+          "text": "Peculiar to a people; national. Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Hereditary; entailed on a family. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gentilitious": {
       "word": "GENTILITIAL; GENTILITIOUS",
       "definitions": [
         {
@@ -6672,12 +6872,32 @@
         "yoke"
       ]
     },
-    "gentlefolkgentlefolks": {
+    "gentlefolk": {
       "word": "GENTLEFOLK; GENTLEFOLKS",
       "definitions": [
         {
           "text": "Persons of gentle or good family and breeding. Etym: [Generally in the United States in the plural form.] Shak.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gentlefolks": {
+      "word": "GENTLEFOLK; GENTLEFOLKS",
+      "definitions": [
+        {
+          "text": "Persons of gentle or good family and breeding. Etym: [Generally in the United States in the plural form.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gentlehearted": {
+      "word": "GENTLE-HEARTED",
+      "definitions": [
+        {
+          "text": "Having a kind or gentle disposition. Shak.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6830,7 +7050,7 @@
       ],
       "relatedWords": []
     },
-    "gentlemanlikegentlemanly": {
+    "gentlemanlike": {
       "word": "GENTLEMANLIKE; GENTLEMANLY",
       "definitions": [
         {
@@ -6839,6 +7059,55 @@
         }
       ],
       "relatedWords": []
+    },
+    "gentlemanly": {
+      "word": "GENTLEMANLIKE; GENTLEMANLY",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, resembling, or becoming, a gentleman; well- behaved; courteous; polite.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "andric",
+        "aristocratic",
+        "bull",
+        "chivalrous",
+        "cultivated",
+        "cultured",
+        "ducal",
+        "exalted",
+        "genteel",
+        "gentle",
+        "gentlemanlike",
+        "high",
+        "highbred",
+        "kinglike",
+        "kingly",
+        "knightly",
+        "ladylike",
+        "male",
+        "manful",
+        "manlike",
+        "manly",
+        "mannish",
+        "masculine",
+        "noble",
+        "of gentle blood",
+        "of rank",
+        "patrician",
+        "polished",
+        "princelike",
+        "princely",
+        "queenlike",
+        "queenly",
+        "quite the lady",
+        "refined",
+        "titled",
+        "uneffeminate",
+        "well-bred",
+        "well-brought-up"
+      ]
     },
     "gentlemanliness": {
       "word": "GENTLEMANLINESS",
@@ -7214,23 +7483,94 @@
       ],
       "relatedWords": []
     },
-    "gentriseandofgentelisegenteriseegentilessealsooe": {
-      "word": "gentrise, and OF. gentelise, genterise, E. gentilesse, also OE.",
+    "gentry": {
+      "word": "GENTRY",
       "definitions": [
         {
           "text": "Birth; condition; rank by birth. [Obs.] \"Pride of gentrie.\" Chaucer. She conquers him by high almighty Jove, By knighthood, gentry, and sweet friendship's oath. Shak.",
-          "partOfSpeech": "adjective"
+          "partOfSpeech": "noun"
         },
         {
           "text": "People of education and good breeding; in England, in a restricted sense, those between the nobility and the yeomanry. Macaulay.",
-          "partOfSpeech": "adjective"
+          "partOfSpeech": "noun"
         },
         {
           "text": "Courtesy; civility; complaisance. [Obs.] To show us so much gentry and good will. Shak.",
-          "partOfSpeech": "adjective"
+          "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Everyman",
+        "John Doe",
+        "Public",
+        "absolute",
+        "aristocracy",
+        "better sort",
+        "body politic",
+        "bona fide",
+        "citizenry",
+        "common man",
+        "commonwealth",
+        "community",
+        "community at large",
+        "cream",
+        "elite",
+        "estate",
+        "everybody",
+        "everyman",
+        "everyone",
+        "everywoman",
+        "factual",
+        "flower",
+        "folk",
+        "folks",
+        "general public",
+        "gentility",
+        "gentlefolk",
+        "gentlefolks",
+        "hard",
+        "honest",
+        "indubitable",
+        "landed gentry",
+        "lesser nobility",
+        "men",
+        "nation",
+        "nationality",
+        "people",
+        "people in general",
+        "persons",
+        "petite noblesse",
+        "polity",
+        "populace",
+        "population",
+        "positive",
+        "public",
+        "quality",
+        "real",
+        "reliable",
+        "samurai",
+        "sincere",
+        "society",
+        "squirearchy",
+        "state",
+        "sure-enough",
+        "true",
+        "trustworthy",
+        "unaffected",
+        "undesigning",
+        "undissembled",
+        "undoubted",
+        "unfeigned",
+        "unimpeachable",
+        "unquestionable",
+        "upper class",
+        "upper classes",
+        "upper crust",
+        "veritable",
+        "very",
+        "world",
+        "you and me"
+      ]
     },
     "genty": {
       "word": "GENTY",
@@ -7332,7 +7672,7 @@
       "word": "GENUINE",
       "definitions": [
         {
-          "text": "Belonging to, or proceeding from, the original stock; native; hence, not counterfeit, spurious, false, or adulterated; authentic; real; natural; true; pure; as, a genuine text; a genuine production; genuine materials. \"True, genuine night.\" Dryden.",
+          "text": "Belonging to, or proceeding from, the original stock; native; hence, not counterfeit, spurious, false, or adulterated; authentic; real; natural; true; pure; as, a genuine text; a genuine production; genuine materials. \"True, genuine night.\" Dryden. Authentic. The evidence, both internal and external, against the genuineness of these letters, is overwhelming. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7605,7 +7945,7 @@
       "word": "GEOCHEMISTRY",
       "definitions": [
         {
-          "text": "The study of the chemical composition of, and of actual or",
+          "text": "The study of the chemical composition of, and of actual or possible chemical changes in, the crust of the earth. -- Ge`o*chem\"ic*al (#), a. --Ge`o*chem\"ist (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7645,22 +7985,26 @@
       ],
       "relatedWords": []
     },
-    "geodesicgeodesical": {
+    "geodesic": {
       "word": "GEODESIC; GEODESICAL",
       "definitions": [
         {
           "text": "Of or pertaining to geodetic.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A geodetic line or curve.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "geodesic": {
-      "word": "GEODESIC",
+    "geodesical": {
+      "word": "GEODESIC; GEODESICAL",
       "definitions": [
         {
-          "text": "A geodetic line or curve.",
-          "partOfSpeech": "noun"
+          "text": "Of or pertaining to geodetic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7685,7 +8029,45 @@
       ],
       "relatedWords": []
     },
-    "geodeticgeodetical": {
+    "geodetic": {
+      "word": "GEODETIC; GEODETICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to gebdesy; obtained or determined by the operations of geodesy; engaged in geodesy; geodesic; as, geodetic surveying; geodetic observers. Geodetic line or curve, the shortest line that can be drawn between two points on the elipsoidal surface of the earth; a curve drawn on any given surface so that the osculating plane of the curve at every point shall contain the normal to the surface; the minimum line that can be drawn on any surface between any two points.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "approximative",
+        "cartographic",
+        "chorographic",
+        "estimative",
+        "geodesic",
+        "geographic",
+        "geological",
+        "geophysical",
+        "hypsographic",
+        "locational",
+        "measuring",
+        "mensural",
+        "mensurational",
+        "mensurative",
+        "metric",
+        "navigational",
+        "numerative",
+        "oceanographic",
+        "physiographic",
+        "positional",
+        "quantitative",
+        "regional",
+        "situal",
+        "situational",
+        "topographic",
+        "valuational",
+        "valuative"
+      ]
+    },
+    "geodetical": {
       "word": "GEODETIC; GEODETICAL",
       "definitions": [
         {
@@ -7805,7 +8187,17 @@
       ],
       "relatedWords": []
     },
-    "geognosticgeognostical": {
+    "geognostic": {
+      "word": "GEOGNOSTIC; GEOGNOSTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to geognosy, or to a knowledge of the structure of the earth; geological. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geognostical": {
       "word": "GEOGNOSTIC; GEOGNOSTICAL",
       "definitions": [
         {
@@ -7825,7 +8217,17 @@
       ],
       "relatedWords": []
     },
-    "geogonicgeogonical": {
+    "geogonic": {
+      "word": "GEOGONIC; GEOGONICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to geogony, or to the formation of the earth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geogonical": {
       "word": "GEOGONIC; GEOGONICAL",
       "definitions": [
         {
@@ -7855,7 +8257,7 @@
       ],
       "relatedWords": []
     },
-    "geographicgeographical": {
+    "geographic": {
       "word": "GEOGRAPHIC; GEOGRAPHICAL",
       "definitions": [
         {
@@ -7863,7 +8265,57 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "areal",
+        "cartographic",
+        "chorographic",
+        "geodesic",
+        "geodetic",
+        "geographical",
+        "geological",
+        "geophysical",
+        "locational",
+        "navigational",
+        "physiographic",
+        "positional",
+        "regional",
+        "sectional",
+        "situal",
+        "situational",
+        "territorial",
+        "topographic",
+        "zonal"
+      ]
+    },
+    "geographical": {
+      "word": "GEOGRAPHIC; GEOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to geography. Geographical distribution. See under Distribution. line perpendicular or normal to the level surface of water at rest at the place, and the plane of the equator; differing slightly from the geocentric latitude by reason of the difference between the earth's figure and a true sphere. dependent on climate or other geographical conditions.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "areal",
+        "cartographic",
+        "chorographic",
+        "geodesic",
+        "geodetic",
+        "geographic",
+        "geological",
+        "geophysical",
+        "locational",
+        "navigational",
+        "physiographic",
+        "positional",
+        "regional",
+        "sectional",
+        "situal",
+        "situational",
+        "territorial",
+        "topographic",
+        "zonal"
+      ]
     },
     "geographically": {
       "word": "GEOGRAPHICALLY",
@@ -7953,7 +8405,7 @@
       ],
       "relatedWords": []
     },
-    "geologergeologian": {
+    "geologer": {
       "word": "GEOLOGER; GEOLOGIAN",
       "definitions": [
         {
@@ -7963,7 +8415,27 @@
       ],
       "relatedWords": []
     },
-    "geologicgeological": {
+    "geologian": {
+      "word": "GEOLOGER; GEOLOGIAN",
+      "definitions": [
+        {
+          "text": "A geologist.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geologic": {
+      "word": "GEOLOGIC; GEOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to geology, or the science of the earth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geological": {
       "word": "GEOLOGIC; GEOLOGICAL",
       "definitions": [
         {
@@ -8083,7 +8555,17 @@
       ],
       "relatedWords": []
     },
-    "geomanticgeomantical": {
+    "geomantic": {
+      "word": "GEOMANTIC; GEOMANTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining or belonging to geomancy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geomantical": {
       "word": "GEOMANTIC; GEOMANTICAL",
       "definitions": [
         {
@@ -8121,7 +8603,17 @@
       ],
       "relatedWords": []
     },
-    "geometricgeometrical": {
+    "geometric": {
+      "word": "GEOMETRIC; GEOMETRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or according to the rules or principles of, geometry; determined by geometry; as, a geometrical solution of a problem. processes or solutions in which the propositions or principles of geometry are made use of rather than those of algebra. sense, as opposed to mechanical; thus, a construction or solution is geometrical which can be made by ruler and compasses, i. e., by means of right lines and circles. Every construction or solution which requires any other curve, or such motion of a line or circle as would generate any other curve, is not geometrical, but mechanical. By another distinction, a geometrical solution is one obtained by the rules of geometry, or processes of analysis, and hence is exact; while a mechanical solution is one obtained by trial, by actual measurements, with instruments, etc., and is only approximate and empirical. Geometrical curve. Same as Algebraic curve; -- so called because their different points may be constructed by the operations of elementary geometry. with complicated patterns of interlacing lines; -- called also cycloidal engine. which the movements of a pen or pencil attached to a revolving arm of ajustable length may be indefinitely varied by changing the toothed wheels which give motion to the arm. Progression, Proportion and Ratio. a cogwheel. Knight. spin a geometrical web. They mostly belong to Epeira and allied genera, as the garden spider. See Garden spider. frame for ascertaining distances and heights by measuring angles. the wall at one end only. arranged in geometrical figures.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geometrical": {
       "word": "GEOMETRIC; GEOMETRICAL",
       "definitions": [
         {
@@ -8229,7 +8721,17 @@
       ],
       "relatedWords": []
     },
-    "geoponicgeoponical": {
+    "geoponic": {
+      "word": "GEOPONIC; GEOPONICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to tillage of the earth, or agriculture.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geoponical": {
       "word": "GEOPONIC; GEOPONICAL",
       "definitions": [
         {
@@ -8357,11 +8859,15 @@
         {
           "text": "A rural poem; a poetical composition on husbandry, containing rules for cultivating lands, etc.; as, the Georgics of Virgil.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Relating to agriculture and rural affairs.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "georgicgeorgical": {
+    "georgical": {
       "word": "GEORGIC; GEORGICAL",
       "definitions": [
         {
@@ -8521,7 +9027,29 @@
       ],
       "relatedWords": []
     },
-    "geraniinegeranine": {
+    "geraniine": {
+      "word": "GERANIINE; GERANINE",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A valuable astringet obtained from the root of the Geranium maculatum or crane's-bill.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A liquid terpene, obtained from the crane's-bill (Geranium maculatum), and having a peculiar mulberry odor. [Written also geranium.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "geranine": {
       "word": "GERANIINE; GERANINE",
       "definitions": [
         {
@@ -8585,7 +9113,17 @@
       ],
       "relatedWords": []
     },
-    "gerbilgerbille": {
+    "gerbil": {
+      "word": "GERBIL; GERBILLE",
+      "definitions": [
+        {
+          "text": "One of several species of small, jumping, murine rodents, of the genus Gerbillus. In their leaping powers they resemble the jerboa. They inhabit Africa, India, and Southern Europe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gerbille": {
       "word": "GERBIL; GERBILLE",
       "definitions": [
         {
@@ -8645,7 +9183,17 @@
       ],
       "relatedWords": []
     },
-    "gerlandgerlond": {
+    "gerland": {
+      "word": "GERLAND; GERLOND",
+      "definitions": [
+        {
+          "text": "A garland. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gerlond": {
       "word": "GERLAND; GERLOND",
       "definitions": [
         {
@@ -11086,7 +11634,7 @@
       "word": "GEUSDISM",
       "definitions": [
         {
-          "text": "The Marxian socialism and programme of reform through",
+          "text": "The Marxian socialism and programme of reform through revolution as advocated by the French political leader Jules Basile Guesde (pron. ged) (1845- ). -- Guesd\"ist (#), n. & a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11095,6 +11643,10 @@
     "gewgaw": {
       "word": "GEWGAW",
       "definitions": [
+        {
+          "text": "A showy trifle; a toy; a splendid plaything; a pretty but worthless bauble. A heavy gewgaw called a crown. Dryden.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Showy; unreal; pretentious. Seeing his gewgaw castle shine. Tennyson.",
           "partOfSpeech": "adjective"
@@ -11242,94 +11794,6 @@
       "definitions": [
         {
           "text": "A loose hydrated form of silica, a variety of opal, deposited in concretionary cauliflowerlike masses, around some hot springs and geysers.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "gesiehgesyhakintodgezichtgsichtgesichtdansigtesw": {
-      "word": "gesieh, gesyh; akin to D. gezicht, G. sicht, gesicht, Dan. sigte, Sw.",
-      "definitions": [
-        {
-          "text": "The act of seeing; perception of objects by the eye; view; as, to gain sight of land. A cloud received him out of their sight. Acts. i. 9.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The power of seeing; the faculty of vision, or of perceiving objects by the instrumentality of the eyes. Thy sight is young, And thou shalt read when mine begin to dazzle. Shak. O loss of sight, of thee I most complain! Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The state of admitting unobstructed vision; visibility; open view; region which the eye at one time surveys; space through which the power of vision extends; as, an object within sight.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A spectacle; a view; a show; something worth seeing. Moses said, I will now turn aside and see this great sight, why the bush is not burnt. Ex. iii. 3. They never saw a sight so fair. Spenser.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The instrument of seeing; the eye. Why cloud they not their sights Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Inspection; examination; as, a letter intended for the sight of only one person.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Mental view; opinion; judgment; as, in their sight it was harmless. Wake. That which is highly esteemed among men is abomination in the sight of God. Luke xvi. 15.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A small aperture through which objects are to be seen, and by which their direction is settled or ascertained; as, the sight of a quadrant. Thier eyes of fire sparking through sights of steel. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A small piece of metal, fixed or movable, on the breech, muzzle, center, or trunnion of a gun, or on the breech and the muzzle of a rifle, pistol, etc., by means of which the eye is guided in aiming. Farrow.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "In a drawing, picture, etc., that part of the surface, as of paper or canvas, which is within the frame or the border or margin. In a frame or the like, the open space, the opening.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A great number, quantity, or sum; as, a sight of money. [Now colloquial] usage. \"A sight of lawyers.\" Latimer. A wonder sight of flowers. Gower. At sight, as soon as seen, or presented to sight; as, a draft payable at sight: to read Greek at sight; to shoot a person at sight. objects aimed at may be seen, in distinction from one that hides the object. (b) A rear sight having an open notch instead of an aperture. of money at sight. a piece of artillery, or the like.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "gewrohtakintoofrieswerkawirkaoswirkiandwerkeng": {
-      "word": "gewroht); akin to OFries. werka, wirka, OS. wirkian, D. werken, G.",
-      "definitions": [
-        {
-          "text": "To exert one's self for a purpose; to put forth effort for the attainment of an object; to labor; to be engaged in the performance of a task, a duty, or the like. O thou good Kent, how shall I live and work, To match thy goodness Shak. Go therefore now, and work; for there shall no straw be given you. Ex. v. 18. Whether we work or play, or sleep or wake, Our life doth pass. Sir J. Davies.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Hence, in a general sense, to operate; to act; to perform; as, a machine works well. We bend to that the working of the heart. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Hence, figuratively, to be effective; to have effect or influence; to conduce. We know that all things work together for good to them that love God. Rom. viii. 28. This so wrought upon the child, that afterwards he desired to be taught. Locke. She marveled how she could ever have been wrought upon to marry him. Hawthorne.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To carry on business; to be engaged or employed customarily; to perform the part of a laborer; to labor; to toil. They that work in fine flax . . . shall be confounded. Isa. xix. 9.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To be in a state of severe exertion, or as if in such a state; to be tossed or agitated; to move heavily; to strain; to labor; as, a ship works in a heavy sea. Confused with working sands and rolling waves. Addison.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To make one's way slowly and with difficulty; to move or penetrate laboriously; to proceed with effort; -- with a following preposition, as down, out, into, up, through, and the like; as, scheme works out by degrees; to work into the earth. Till body up to spirit work, in bounds Proportioned to each kind. Milton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To ferment, as a liquid. The working of beer when the barm is put in. Bacon.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To act or operate on the stomach and bowels, as a cathartic. Purges . . . work best, that is, cause the blood so to do, . . . in warm weather or in a warm room. Grew. To work at, to be engaged in or upon; to be employed in. tack to windward. Mar. Dict.",
           "partOfSpeech": "noun"
         }
       ],

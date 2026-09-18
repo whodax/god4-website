@@ -259,7 +259,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The knave of a suit of playing cards. designates something cut short or diminished in size; as, a jack timber; a jack rafter; a jack arch, etc. Jack arch, an arch of the thickness of one brick. receives the wort. See under 1st Back. rigging, used for raising and lowering light masts and spars. century by soldiers; afterwards by fishermen, etc. (n.), above. deep-well-boring apparatus. contributions to which are made by each player successively, till such a hand is turned as shall take the \"pot,\" which is the sum total of all the bets. hares, having very large ears and long legs. The California species (Lepus Californicus), and that of Texas and New Mexico (L. callotis), have the tail black above, and the ears black at the tip. They do not become white in winter. The more northern prairie hare (L. campestris) has the upper side of the tail white, and in winter its fur becomes nearly white. in constructing a hip or valley roof; in the United States, any secondary roof timber, as the common rafters resting on purlins in a trussed roof; also, one of the pieces simulating extended rafters, used under the eaves in some styles of building. (Mach.), the first intermediate shaft, in a factory or mill, which receives power, through belts or gearing, from a prime mover, and transmits it, by the same means, to other intermediate shafts or to a line shaft. jack to depress the loop of thread between two needles. the jack is hoisted. which, being intercepted, is shorter than the others.",
+          "text": "The knave of a suit of playing cards. designates something cut short or diminished in size; as, a jack timber; a jack rafter; a jack arch, etc. Jack arch, an arch of the thickness of one brick. receives the wort. See under 1st Back. rigging, used for raising and lowering light masts and spars. century by soldiers; afterwards by fishermen, etc. (n.), above. deep-well-boring apparatus. contributions to which are made by each player successively, till such a hand is turned as shall take the \"pot,\" which is the sum total of all the bets. hares, having very large ears and long legs. The California species (Lepus Californicus), and that of Texas and New Mexico (L. callotis), have the tail black above, and the ears black at the tip. They do not become white in winter. The more northern prairie hare (L. campestris) has the upper side of the tail white, and in winter its fur becomes nearly white. in constructing a hip or valley roof; in the United States, any secondary roof timber, as the common rafters resting on purlins in a trussed roof; also, one of the pieces simulating extended rafters, used under the eaves in some styles of building. (Mach.), the first intermediate shaft, in a factory or mill, which receives power, through belts or gearing, from a prime mover, and transmits it, by the same means, to other intermediate shafts or to a line shaft. jack to depress the loop of thread between two needles. the jack is hoisted. which, being intercepted, is shorter than the others. roof has not its full section. gaff. Blue jack, blue vitriol; sulphate of copper. consisting of a compact portable hydrostatic press, with its pump and a reservoir containing a supply of liquid, as oil. in an emergency. (b) An itinerant parson who conducts an occasional service for a fee. work. alliaria, or Alliaria officinalis), which grows under hedges. It bears a white flower and has a taste not unlike garlic. Called also, in England, sauce-alone. Eng. Cyc. which bears a drupe that rattles when dry in the inflated calyx. (b) A child's toy, consisting of a box, out of which, when the lid is raised, a figure springs. (c) (Mech.) An epicyclic train of bevel gears for transmitting rotary motion to two parts in such a manner that their relative rotation may be variable; applied to driving the wheels of tricycles, road locomotives, and to cotton machinery, etc.; an equation box; a jack frame; -- called also compensating gearing. (d) A large wooden screw turning in a nut attached to the crosspiece of a rude press. Cylindrostachya). boughs, carried in Mayday processions. or Indian turnip, in which the upright spadix is inclosed. which struck the time on the bell. Shak. will-o'-the-wisp. \"[Newspaper speculations] supplying so many more jack-o'-lanterns to the future historian.\" Lowell. (b) A lantern made of a pumpkin so prepared as to show in illumination the features of a human face, etc. See Yellow flag, under Flag.",
           "partOfSpeech": "noun"
         },
         {
@@ -269,6 +269,14 @@
         {
           "text": "A pitcher or can of waxed leather; -- called also black jack.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To hunt game at night by means of a jack. See 2d Jack, n., 4, n.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move or lift, as a house, by means of a jack or jacks. See 2d Jack, n., 5.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -325,22 +333,26 @@
       ],
       "relatedWords": []
     },
-    "jackaroojackeroo": {
+    "jackaroo": {
       "word": "JACKAROO; JACKEROO",
       "definitions": [
         {
           "text": "A young man living as an apprentice on a sheep station, or otherwise engaged in acquainting himself with colonial life. [Colloq., Australia]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To be a jackaroo; to pass one's time as a jackaroo. [Colloq., Australia]",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "jackaroo": {
-      "word": "JACKAROO",
+    "jackeroo": {
+      "word": "JACKAROO; JACKEROO",
       "definitions": [
         {
-          "text": "To be a jackaroo; to pass one's time as a jackaroo. [Colloq., Australia]",
-          "partOfSpeech": "verb"
+          "text": "A young man living as an apprentice on a sheep station, or otherwise engaged in acquainting himself with colonial life. [Colloq., Australia]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -515,6 +527,16 @@
       ],
       "relatedWords": []
     },
+    "jackscrew": {
+      "word": "JACKSCREW",
+      "definitions": [
+        {
+          "text": "A jack in which a screw is used for lifting, or exerting pressure. See Illust. of 2d Jack, n., 5.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "jackslave": {
       "word": "JACKSLAVE",
       "definitions": [
@@ -589,7 +611,17 @@
       ],
       "relatedWords": []
     },
-    "jacobeanjacobian": {
+    "jacobean": {
+      "word": "JACOBEAN; JACOBIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a style of architecture and decoration in the time of James the First, of England. \"A Jacobean table.\" C. L. Eastlake.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jacobian": {
       "word": "JACOBEAN; JACOBIAN",
       "definitions": [
         {
@@ -639,11 +671,21 @@
       ],
       "relatedWords": []
     },
-    "jacobinicjacobinical": {
+    "jacobinic": {
       "word": "JACOBINIC; JACOBINICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to the Jacobins of France; revolutionary; of",
+          "text": "Of or pertaining to the Jacobins of France; revolutionary; of the nature of, or characterized by, Jacobinism. Burke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jacobinical": {
+      "word": "JACOBINIC; JACOBINICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Jacobins of France; revolutionary; of the nature of, or characterized by, Jacobinism. Burke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -690,6 +732,26 @@
         },
         {
           "text": "Of or pertaining to the Jacobites.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jacobitic": {
+      "word": "JACOBITIC; JACOBITICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Jacobites; characterized by Jacobitism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jacobitical": {
+      "word": "JACOBITIC; JACOBITICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Jacobites; characterized by Jacobitism.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -981,7 +1043,7 @@
       ],
       "relatedWords": []
     },
-    "jaganathajaganatha": {
+    "jaganatha": {
       "word": "JAGANATHA; JAGANATHA",
       "definitions": [
         {
@@ -991,7 +1053,17 @@
       ],
       "relatedWords": []
     },
-    "jagannathjagannathajuggernaut": {
+    "jagannath": {
+      "word": "JAGANNATH; JAGANNATHA; JUGGERNAUT",
+      "definitions": [
+        {
+          "text": "A particular form of Vishnu, or of Krishna, whose chief idol and worship are at Puri, in Orissa. The idol is considered to contain the bones of Krishna and to possess a soul. The principal festivals are the Snanayatra, when the idol is bathed, and the Rathayatra, when the image is drawn upon a car adorned with obscene paintings. Formerly it was erroneously supposed that devotees allowed themselves to be crushed beneath the wheels of this car. It is now known that any death within the temple of Jagannath is considered to render the place unclean, and any spilling of blood in the presence of the idol is a pollution.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jagannatha": {
       "word": "JAGANNATH; JAGANNATHA; JUGGERNAUT",
       "definitions": [
         {
@@ -1048,6 +1120,10 @@
       "definitions": [
         {
           "text": "One who carries about a small load; a peddler. See 2d Jag. [Scot.] Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who, or that which, jags; specifically: (a) jagging iron used for crimping pies, cakes, etc. (b) A toothed chisel. See Jag, v. t. Jagger spring, a spring beneath a seat, and resting on cleats or blocks in the body of a vehicle. Knight.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1143,7 +1219,21 @@
       ],
       "relatedWords": []
     },
-    "jahvistjahvistic": {
+    "jahvist": {
+      "word": "JAHVIST; JAHVISTIC",
+      "definitions": [
+        {
+          "text": "See Jehovist, Jehovistic.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The author of the passages of the Old Testament, esp. those of the Hexateuch, in which God is styled Yahweh, or Jehovah; the author of the Yahwistic, or Jehovistic, Prophetic Document (J); also, the document itself.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jahvistic": {
       "word": "JAHVIST; JAHVISTIC",
       "definitions": [
         {
@@ -1177,7 +1267,17 @@
       ],
       "relatedWords": []
     },
-    "jainjaina": {
+    "jain": {
+      "word": "JAIN; JAINA",
+      "definitions": [
+        {
+          "text": "One of a numerous sect in British India, holding the tenets of Jainism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jaina": {
       "word": "JAIN; JAINA",
       "definitions": [
         {
@@ -1431,6 +1531,10 @@
         {
           "text": "Any thick mass of rock which prevents miners from following the lode or vein.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Jam, v. t.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1445,7 +1549,17 @@
       ],
       "relatedWords": []
     },
-    "jambesjambeux": {
+    "jambes": {
+      "word": "JAMBES; JAMBEUX",
+      "definitions": [
+        {
+          "text": "In the Middle Ages, armor for the legs below the knees. [Written also giambeux.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jambeux": {
       "word": "JAMBES; JAMBEUX",
       "definitions": [
         {
@@ -1465,7 +1579,17 @@
       ],
       "relatedWords": []
     },
-    "jambooljambul": {
+    "jambool": {
+      "word": "JAMBOOL; JAMBUL",
+      "definitions": [
+        {
+          "text": "The Java plum; also, a drug obtained from its bark and seeds, used as a remedy for diabetes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jambul": {
       "word": "JAMBOOL; JAMBUL",
       "definitions": [
         {
@@ -1661,7 +1785,17 @@
       ],
       "relatedWords": []
     },
-    "janitressjanitrix": {
+    "janitress": {
+      "word": "JANITRESS; JANITRIX",
+      "definitions": [
+        {
+          "text": "A female janitor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "janitrix": {
       "word": "JANITRESS; JANITRIX",
       "definitions": [
         {
@@ -2243,7 +2377,21 @@
       ],
       "relatedWords": []
     },
-    "jarveyjarvy": {
+    "jarvey": {
+      "word": "JARVEY; JARVY",
+      "definitions": [
+        {
+          "text": "The driver of a hackney coach. [Slang, Eng.] Carlyle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hackney coach. [Slang, Eng.] The litter at the bottom of the jarvy. T. Hook.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jarvy": {
       "word": "JARVEY; JARVY",
       "definitions": [
         {
@@ -2357,7 +2505,17 @@
       ],
       "relatedWords": []
     },
-    "jaspideanjaspideous": {
+    "jaspidean": {
+      "word": "JASPIDEAN; JASPIDEOUS",
+      "definitions": [
+        {
+          "text": "Consisting of jasper, or containing jasper; jaspery; jasperlike.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jaspideous": {
       "word": "JASPIDEAN; JASPIDEOUS",
       "definitions": [
         {
@@ -2726,6 +2884,50 @@
       "definitions": [
         {
           "text": "A coat of defense made of small plates of metal sewed upon linen or the like; also, this kind of armor taken generally; as, a coat of jazerant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jahveh": {
+      "word": "YAHWEH; YAHWE; JAHVEH; JAHVE",
+      "definitions": [
+        {
+          "text": "A modern transliteration of the Hebrew word translated Jehovah in the Bible; -- used by some critics to discriminate the tribal god of the ancient Hebrews from the Christian Jehovah. Yahweh or Yahwe is the spelling now generally adopted by scholars.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jahve": {
+      "word": "YAHWEH; YAHWE; JAHVEH; JAHVE",
+      "definitions": [
+        {
+          "text": "A modern transliteration of the Hebrew word translated Jehovah in the Bible; -- used by some critics to discriminate the tribal god of the ancient Hebrews from the Christian Jehovah. Yahweh or Yahwe is the spelling now generally adopted by scholars.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jahvism": {
+      "word": "YAHWISM; JAHVISM",
+      "definitions": [
+        {
+          "text": "The religion or worship of Yahweh (Jehovah), or the system of doctrines, etc., connected with it.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Use of Yahweh as a name of God.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "jahwist": {
+      "word": "YAHWIST; JAHVIST; JAHWIST; JEHOVIST",
+      "definitions": [
+        {
+          "text": "The author of the passages of the Old Testament, esp. those of the Hexateuch, in which God is styled Yahweh, or Jehovah; the author of the Yahwistic, or Jehovistic, Prophetic Document (J); also, the document itself.",
           "partOfSpeech": "noun"
         }
       ],

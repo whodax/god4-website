@@ -351,7 +351,17 @@
       ],
       "relatedWords": []
     },
-    "caracorecaracora": {
+    "caracora": {
+      "word": "CARACORE; CARACORA",
+      "definitions": [
+        {
+          "text": "A light vessel or proa used by the people of Borneo, etc., and by the Dutch in the East Indies.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caracore": {
       "word": "CARACORE; CARACORA",
       "definitions": [
         {
@@ -381,7 +391,17 @@
       ],
       "relatedWords": []
     },
-    "carageencaragheen": {
+    "carageen": {
+      "word": "CARAGEEN; CARAGHEEN",
+      "definitions": [
+        {
+          "text": "See Carrageen.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caragheen": {
       "word": "CARAGEEN; CARAGHEEN",
       "definitions": [
         {
@@ -903,29 +923,13 @@
       ],
       "relatedWords": []
     },
-    "carbonadecarbonado": {
+    "carbonade": {
       "word": "CARBONADE; CARBONADO",
       "definitions": [
         {
           "text": "Flesh, fowl, etc., cut across, seasoned, and broiled on coals; a chop. [Obs.]",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "carbonado": {
-      "word": "CARBONADO",
-      "definitions": [
-        {
-          "text": "A black variety of diamond, found in Brazil, and used for diamond drills. It occurs in irregular or rounded fragments, rarely distinctly crystallized, with a texture varying from compact to porous.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "carbonadocarbonade": {
-      "word": "CARBONADO; CARBONADE",
-      "definitions": [
+        },
         {
           "text": "To cut (meat) across for frying or broiling; to cut or slice and broil. [Obs.] A short-legged hen daintily carbonadoed. Bean. & Fl.",
           "partOfSpeech": "verb"
@@ -933,6 +937,28 @@
         {
           "text": "To cut or hack, as in fighting. [Obs.] I'll so carbonado your shanks. Shak.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "carbonado": {
+      "word": "CARBONADE; CARBONADO",
+      "definitions": [
+        {
+          "text": "Flesh, fowl, etc., cut across, seasoned, and broiled on coals; a chop. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cut (meat) across for frying or broiling; to cut or slice and broil. [Obs.] A short-legged hen daintily carbonadoed. Bean. & Fl.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cut or hack, as in fighting. [Obs.] I'll so carbonado your shanks. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A black variety of diamond, found in Brazil, and used for diamond drills. It occurs in irregular or rounded fragments, rarely distinctly crystallized, with a texture varying from compact to porous.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1179,7 +1205,17 @@
       ],
       "relatedWords": []
     },
-    "carborundumclothcarborundumpaper": {
+    "carborundumcloth": {
+      "word": "CARBORUNDUM CLOTH; CARBORUNDUM PAPER",
+      "definitions": [
+        {
+          "text": "Cloth or paper covered with powdered carborundum.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "carborundumpaper": {
       "word": "CARBORUNDUM CLOTH; CARBORUNDUM PAPER",
       "definitions": [
         {
@@ -1418,11 +1454,15 @@
         {
           "text": "An apparatus in which coal gas, hydrogen, or air is passed through or over a volatile hydrocarbon, in order to confer or increase illuminating power. [Written also carburettor.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "One that carburets; specif., an apparatus in which air or gas is carbureted, as by passing it through a light petroleum oil. The carburetor for a gasoline engine is usually either a surface carburetor, or a float, float-feed, or spray, carburetor. In the former air is charged by being passed over the surface of gasoline. In the latter a fine spray of gasoline is drawn from an atomizing nozzle by a current of air induced by the suction of the engine piston, the supply of gasoline being regulated by a float which actuates a needle valve controlling the outlet of the feed pipe. Alcohol and other volatile inflammable liquids may be used instead of gasoline.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "carburetorcarburettor": {
+    "carburettor": {
       "word": "CARBURETOR; CARBURETTOR",
       "definitions": [
         {
@@ -2052,7 +2092,17 @@
       ],
       "relatedWords": []
     },
-    "cardialglacardialgy": {
+    "cardialgla": {
+      "word": "CARDIALGLA; CARDIALGY",
+      "definitions": [
+        {
+          "text": "A burning or gnawing pain, or feeling of distress, referred to the region of the heart, accompanied with cardisc palpitation; heartburn. It is usually a symptom of indigestion.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cardialgy": {
       "word": "CARDIALGLA; CARDIALGY",
       "definitions": [
         {
@@ -4382,7 +4432,7 @@
       ],
       "relatedWords": []
     },
-    "caribbeancaribbee": {
+    "caribbean": {
       "word": "CARIBBEAN; CARIBBEE",
       "definitions": [
         {
@@ -4393,8 +4443,12 @@
       "relatedWords": []
     },
     "caribbee": {
-      "word": "CARIBBEE",
+      "word": "CARIBBEAN; CARIBBEE",
       "definitions": [
+        {
+          "text": "Of or pertaining to the Caribs, to their islands (the eastern and southern West Indies), or to the sea (called the Caribbean sa) lying between those islands and Central America.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A Carib.",
           "partOfSpeech": "noun"
@@ -4755,7 +4809,17 @@
       ],
       "relatedWords": []
     },
-    "carinatecarinated": {
+    "carinate": {
+      "word": "CARINATE; CARINATED",
+      "definitions": [
+        {
+          "text": "Shaped like the keel or prow of a ship; having a carina or keel; as, a carinate calyx or leaf; a carinate sternum (of a bird).",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "carinated": {
       "word": "CARINATE; CARINATED",
       "definitions": [
         {
@@ -4865,22 +4929,16 @@
       ],
       "relatedWords": []
     },
-    "carlinecarling": {
-      "word": "CARLINE; CARLING",
-      "definitions": [
-        {
-          "text": "A short timber running lengthwise of a ship, from one transverse desk beam to another; also, one of the cross timbers that strengthen a hath; -- usually in pl.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "carlinecaroline": {
+    "carline": {
       "word": "CARLINE; CAROLINE",
       "definitions": [
         {
           "text": "A silver coin once current in some parts of Italy, worth about seven cents. Simmonds.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A short timber running lengthwise of a ship, from one transverse desk beam to another; also, one of the cross timbers that strengthen a hath; -- usually in pl.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -4890,6 +4948,16 @@
       "definitions": [
         {
           "text": "A prickly plant of the genus Carlina (C. vulgaris), found in Europe and Asia.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "carling": {
+      "word": "CARLINE; CARLING",
+      "definitions": [
+        {
+          "text": "A short timber running lengthwise of a ship, from one transverse desk beam to another; also, one of the cross timbers that strengthen a hath; -- usually in pl.",
           "partOfSpeech": ""
         }
       ],
@@ -4969,9 +5037,23 @@
       ],
       "relatedWords": []
     },
-    "carmelite": {
-      "word": "CARMELITE",
+    "carmelin": {
+      "word": "CARMELITE; CARMELIN",
       "definitions": [
+        {
+          "text": "Of or pertaining to the order of Carmelites.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "carmelite": {
+      "word": "CARMELITE; CARMELIN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the order of Carmelites.",
+          "partOfSpeech": ""
+        },
         {
           "text": "(Eccl. Hist.)",
           "partOfSpeech": "noun"
@@ -4983,16 +5065,6 @@
         {
           "text": "A nun of the Order of Our lady of Mount Carmel.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "carmelitecarmelin": {
-      "word": "CARMELITE; CARMELIN",
-      "definitions": [
-        {
-          "text": "Of or pertaining to the order of Carmelites.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -5912,7 +5984,7 @@
         "vegetarian"
       ]
     },
-    "carnosecarnous": {
+    "carnose": {
       "word": "CARNOSE; CARNOUS",
       "definitions": [
         {
@@ -5954,6 +6026,24 @@
         {
           "text": "An ideal heat-engine cycle in which the working fluid goes through the following four successive operations: (1) Isothermal expansion to a desired point; (2) adiabatic expansion to a desired point; (3) isothermal compression to such a point that (4) adiabatic compression brings it back to its initial state.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "carnous": {
+      "word": "CARNOSE; CARNOUS",
+      "definitions": [
+        {
+          "text": "Of a pertaining to flesh; fleshy. A distinct carnose muscle. Ray.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of a fleshy consistence; -- applied to succulent leaves, stems, etc.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6010,6 +6100,22 @@
       "word": "CAROL",
       "definitions": [
         {
+          "text": "A round dance. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A song of joy, exultation, or mirth; a lay. The costly feast, the carol, and the dance. Dryden It was the carol of a bird. Byron.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A song of praise of devotion; as, a Christmas or Easter carol. Heard a carol, mournful, holy. Tennyson. In the darkness sing your carol of high praise. Keble.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Joyful music, as of a song. I heard the bells on Christmans Day Their old, familiar carol play. Longfellow.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To praise or celebrate in song. The Shepherds at their festivals Carol her goodness. Milton.",
           "partOfSpeech": "verb"
         },
@@ -6020,6 +6126,10 @@
         {
           "text": "To sing; esp. to sing joyfully; to warble. And carol of love's high praise. Spenser. The gray linnets carol from the hill. Beattie.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A small closet or inclosure built against a window on the inner side, to sit in for study. The word was used as late as the 16th century. A bay window may thus be called a carol. Parker.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -6160,16 +6270,6 @@
         "yodel"
       ]
     },
-    "carolcarrol": {
-      "word": "CAROL; CARROL",
-      "definitions": [
-        {
-          "text": "A small closet or inclosure built against a window on the inner side, to sit in for study. The word was used as late as the 16th century. A bay window may thus be called a carol. Parker.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "carolin": {
       "word": "CAROLIN",
       "definitions": [
@@ -6191,8 +6291,12 @@
       "relatedWords": []
     },
     "caroline": {
-      "word": "CAROLINE",
+      "word": "CARLINE; CAROLINE",
       "definitions": [
+        {
+          "text": "A silver coin once current in some parts of Italy, worth about seven cents. Simmonds.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A coin. See Carline.",
           "partOfSpeech": "noun"
@@ -6394,11 +6498,15 @@
         {
           "text": "One of the two main arteries of the neck, by which blood is conveyed from the aorta to the head.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, or near, the carotids or one of them; as, the carotid gland.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "carotidcarotidal": {
+    "carotidal": {
       "word": "CAROTID; CAROTIDAL",
       "definitions": [
         {
@@ -6715,7 +6823,7 @@
       ],
       "relatedWords": []
     },
-    "carpelcarpellum": {
+    "carpel": {
       "word": "CARPEL; CARPELLUM",
       "definitions": [
         {
@@ -6731,6 +6839,16 @@
         {
           "text": "Belonging to, forming, or containing carpels.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "carpellum": {
+      "word": "CARPEL; CARPELLUM",
+      "definitions": [
+        {
+          "text": "A simple pistil or single-celled ovary or seed vessel, or one of the parts of a compound pistil, ovary, or seed vessel. See Illust of Carpaphore.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -6965,6 +7083,74 @@
       ],
       "relatedWords": []
     },
+    "carping": {
+      "word": "CARPING",
+      "definitions": [
+        {
+          "text": "Fault-finding; censorious caviling. See Captious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adverse criticism",
+        "animadversion",
+        "aspersion",
+        "bad notices",
+        "bad press",
+        "blameful",
+        "captious",
+        "captiousness",
+        "cavil",
+        "caviling",
+        "censorious",
+        "censoriousness",
+        "condemnatory",
+        "critical",
+        "criticism",
+        "cynical",
+        "damnatory",
+        "exception",
+        "faultfinding",
+        "flak",
+        "hairsplitting",
+        "hit",
+        "home thrust",
+        "hostile criticism",
+        "hypercritical",
+        "hypercriticalness",
+        "hypercriticism",
+        "imputation",
+        "jawing",
+        "knock",
+        "nagging",
+        "niggle",
+        "niggling",
+        "nit",
+        "nit-picking",
+        "objurgatory",
+        "obloquy",
+        "overcritical",
+        "overcriticalness",
+        "pestering",
+        "pettifogging",
+        "priggishness",
+        "quibble",
+        "quibbling",
+        "railing",
+        "rap",
+        "reflection",
+        "reproachful",
+        "reproachfulness",
+        "slam",
+        "stricture",
+        "swipe",
+        "taking exception",
+        "trichoschistic",
+        "trichoschistism",
+        "ultracritical",
+        "upbraiding"
+      ]
+    },
     "carpintero": {
       "word": "CARPINTERO",
       "definitions": [
@@ -7095,7 +7281,7 @@
       ],
       "relatedWords": []
     },
-    "carrageencarrigeen": {
+    "carrageen": {
       "word": "CARRAGEEN; CARRIGEEN",
       "definitions": [
         {
@@ -7483,7 +7669,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "That which drives or carries; as: (a) A piece which communicates to an object in a lathe the motion of the face plate; a lathe dog. (b) A spool holder or bobbin holder in a braiding machine. (c) A movable piece in magazine guns which transfers the cartridge to a position from which it can be thrust into the barrel. Carrier pigeon (Zoöl.), a variety of the domestic pigeon used to convey letters from a distant point to to its home. so called because it fastens bits of stones and broken shells to its",
+          "text": "That which drives or carries; as: (a) A piece which communicates to an object in a lathe the motion of the face plate; a lathe dog. (b) A spool holder or bobbin holder in a braiding machine. (c) A movable piece in magazine guns which transfers the cartridge to a position from which it can be thrust into the barrel. Carrier pigeon (Zoöl.), a variety of the domestic pigeon used to convey letters from a distant point to to its home. so called because it fastens bits of stones and broken shells to its own shell, to such an extent as almost to conceal it.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7667,6 +7853,16 @@
         "zoogenic infection"
       ]
     },
+    "carrigeen": {
+      "word": "CARRAGEEN; CARRIGEEN",
+      "definitions": [
+        {
+          "text": "A small, purplish, branching, cartilaginous seaweed (Chondrus crispus), which, when bleached, is the Irish moss of commerce. [Also written carragheen, carageen.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "carrion": {
       "word": "CARRION",
       "definitions": [
@@ -7775,8 +7971,12 @@
       ]
     },
     "carrol": {
-      "word": "CARROL",
+      "word": "CAROL; CARROL",
       "definitions": [
+        {
+          "text": "A small closet or inclosure built against a window on the inner side, to sit in for study. The word was used as late as the 16th century. A bay window may thus be called a carol. Parker.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See 4th Carol.",
           "partOfSpeech": "noun"
@@ -8984,22 +9184,32 @@
       ],
       "relatedWords": []
     },
+    "cartographic": {
+      "word": "CARTOGRAPHIC; CARTOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to cartography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cartographical": {
+      "word": "CARTOGRAPHIC; CARTOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to cartography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "cartographically": {
       "word": "CARTOGRAPHICALLY",
       "definitions": [
         {
           "text": "By cartography.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "cartographiccartographical": {
-      "word": "CARTOGRAPHIC; CARTOGRAPHICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to cartography.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -9508,7 +9718,7 @@
       ],
       "relatedWords": []
     },
-    "carunclecaruncula": {
+    "caruncle": {
       "word": "CARUNCLE; CARUNCULA",
       "definitions": [
         {
@@ -9538,7 +9748,37 @@
       ],
       "relatedWords": []
     },
-    "caruncularcarunculous": {
+    "caruncula": {
+      "word": "CARUNCLE; CARUNCULA",
+      "definitions": [
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small fleshy prominence or excrescence; especially the small, reddish body, the caruncula lacrymalis, in the inner angle of the eye.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An excrescence or appendage surrounding or near the hilum of a seed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A naked, flesh appendage, on the head of a bird, as the wattles of a turkey, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caruncular": {
       "word": "CARUNCULAR; CARUNCULOUS",
       "definitions": [
         {
@@ -9548,11 +9788,31 @@
       ],
       "relatedWords": []
     },
-    "carunculatecarunculated": {
+    "carunculate": {
       "word": "CARUNCULATE; CARUNCULATED",
       "definitions": [
         {
           "text": "Having a caruncle or caruncles; caruncular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "carunculated": {
+      "word": "CARUNCULATE; CARUNCULATED",
+      "definitions": [
+        {
+          "text": "Having a caruncle or caruncles; caruncular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "carunculous": {
+      "word": "CARUNCULAR; CARUNCULOUS",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or like, a caruncle; furnished with caruncles.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10006,7 +10266,7 @@
       ],
       "relatedWords": []
     },
-    "caryaticcaryatid": {
+    "caryatic": {
       "word": "CARYATIC; CARYATID",
       "definitions": [
         {
@@ -10017,8 +10277,12 @@
       "relatedWords": []
     },
     "caryatid": {
-      "word": "CARYATID",
+      "word": "CARYATIC; CARYATID",
       "definitions": [
+        {
+          "text": "Of or pertaining to a caryatid.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "(Arch.) A draped female figure supporting an entablature, in the place of a column or pilaster.",
           "partOfSpeech": "noun"

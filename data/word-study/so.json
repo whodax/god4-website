@@ -41,7 +41,7 @@
           "partOfSpeech": "adverb"
         },
         {
-          "text": "About the number, time, or quantity specified; thereabouts; more or less; as, I will spend a week or so in the country; I have read only a page or so.",
+          "text": "About the number, time, or quantity specified; thereabouts; more or less; as, I will spend a week or so in the country; I have read only a page or so. A week or so will probably reconcile us. Gay. used as a demonstrative correlative of as when it is the puprpose to emphasize the equality or comparison suggested, esp. in negative assertions, and questions implying a negative answer. By Shakespeare and others so . . . as was much used where as . . . as is now common. See the Note under As, 1. So do, as thou hast said. Gen. xviii. 5. As a flower of the field, so he flourisheth. Ps. ciii. 15. Had woman been so strong as men. Shak. No country suffered so much as England. Macaulay. moral, and so far was right.\" Cowper. or a similar kind. See And so forth, under And. fast.\" Dryden. Also, moderately or tolerably well; passably; as, he succeeded but so so. \"His leg is but so so.\" Shak. result that.",
           "partOfSpeech": "adverb"
         },
         {
@@ -113,6 +113,16 @@
         {
           "text": "A hard drinker. [Slang] South.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "soaking": {
+      "word": "SOAKING",
+      "definitions": [
+        {
+          "text": "Wetting thoroughly; drenching; as, a soaking rain.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -287,6 +297,16 @@
       ],
       "relatedWords": []
     },
+    "soaring": {
+      "word": "SOARING",
+      "definitions": [
+        {
+          "text": "from Soar.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "soave": {
       "word": "SOAVE",
       "definitions": [
@@ -392,6 +412,16 @@
         },
         {
           "text": "Grave; serious; solemn; sad. [Obs.] [He] looked hollow and thereto soberly. Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "soberminded": {
+      "word": "SOBER-MINDED",
+      "definitions": [
+        {
+          "text": "Having a disposition or temper habitually sober.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -605,11 +635,15 @@
         {
           "text": "One who advocates or practices the doctrines of socialism.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, or of the nature of, socialism.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "socialistsocialistic": {
+    "socialistic": {
       "word": "SOCIALIST; SOCIALISTIC",
       "definitions": [
         {
@@ -757,6 +791,26 @@
         {
           "text": "To cause to conform to Socinianism; to regulate by, or imbue with, the principles of Socinianism.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sociologic": {
+      "word": "SOCIOLOGIC; SOCIOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to sociology, or social science.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sociological": {
+      "word": "SOCIOLOGIC; SOCIOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to sociology, or social science.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -909,7 +963,17 @@
       ],
       "relatedWords": []
     },
-    "socraticsocratical": {
+    "socratic": {
+      "word": "SOCRATIC; SOCRATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Socrates, the Grecian sage and teacher. (b. c. 469-399), or to his manner of teaching and philosophizing. series of questions leading the one to whom they were addressed to perceive and admit what was true or false in doctrine, or right or wrong in conduct.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "socratical": {
       "word": "SOCRATIC; SOCRATICAL",
       "definitions": [
         {
@@ -1131,6 +1195,16 @@
       ],
       "relatedWords": []
     },
+    "sodomitical": {
+      "word": "SODOMITICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or of the nature of, sodomy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "sodomy": {
       "word": "SODOMY",
       "definitions": [
@@ -1204,6 +1278,66 @@
     "soft": {
       "word": "SOFT",
       "definitions": [
+        {
+          "text": "Easily yielding to pressure; easily impressed, molded, or cut; not firm in resisting; impressible; yielding; also, malleable; -- opposed to Ant: hard; as, a soft bed; a soft peach; soft earth; soft wood or metal.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not rough, rugged, or harsh to the touch; smooth; delicate; fine; as, soft silk; a soft skin. They that wear soft clothing are in king's houses. Matt. xi. 8.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Hence, agreeable to feel, taste, or inhale; not irritating to the tissues; as, a soft liniment; soft wines. \"The soft, delicious air.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not harsh or offensive to the sight; not glaring; pleasing to the eye; not exciting by intensity of color or violent contrast; as, soft hues or tints. The sun, shining upon the upper part of the clouds . . . made the softest lights imaginable. Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not harsh or rough in sound; gentle and pleasing to the ear; flowing; as, soft whispers of music. Her voice was ever soft, Gentle, and low, -- an excellent thing in woman. Shak. Soft were my numbers; who could take offense Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Easily yielding; susceptible to influence; flexible; gentle; kind. I would to God my heart were flint, like Edward's; Or Edward's soft and pitiful, like mine. Shak. The meek or soft shall inherit the earth. Tyndale.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Expressing gentleness, tenderness, or the like; mild; conciliatory; courteous; kind; as, soft eyes. A soft answer turneth away wrath. Prov. xv. 1. A face with gladness overspread, Soft smiles, by human kindness bred. Wordsworth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Effeminate; not courageous or manly, weak. A longing after sensual pleasures is a dissolution of the spirit of a man, and makes it loose, soft, and wandering. Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Gentle in action or motion; easy. On her soft axle, white she paces even, And bears thee soft with the smooth air along. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Weak in character; impressible. The deceiver soon found this soft place of Adam's. Glanvill.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Somewhat weak in intellect. [Colloq.] He made soft fellows stark noddies, and such as were foolish quite mad. Burton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Quiet; undisturbed; paceful; as, soft slumbers.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having, or consisting of, a gentle curve or curves; not angular or abrupt; as, soft outlines.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not tinged with mineral salts; adapted to decompose soap; as, soft water is the best for washing.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Phonetics) (a) Applied to a palatal, a sibilant, or a dental consonant (as g in gem, c in cent, etc.) as distinguished from a guttural mute (as g in go, c in cone, etc.); -- opposed to hard. (b) Belonging to the class of sonant elements as distinguished from the surd, and considered as involving less force in utterance; as, b, d, g, z, v, etc., in contrast with p, t, k, s, f, etc. Soft clam (Zoöl.), the common or long clam (Mya arenaria). See Mya. hard, coal. fishes when supported by soft rays. money. [Colloq. U.S.] -- Soft mute. (Phonetics) See Media. branched. ship bread. See Trionyx.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A soft or foolish person; an idiot. [Colloq.] G. Eliot.",
           "partOfSpeech": "noun"
@@ -1287,7 +1421,7 @@
       "word": "SOFT-HEARTED",
       "definitions": [
         {
-          "text": "Having softness or tenderness of heart; susceptible of pity or",
+          "text": "Having softness or tenderness of heart; susceptible of pity or other kindly affection; gentle; meek.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1343,7 +1477,17 @@
       ],
       "relatedWords": []
     },
-    "softshellsoftshelled": {
+    "softshell": {
+      "word": "SOFT-SHELL; SOFT-SHELLED",
+      "definitions": [
+        {
+          "text": "Having a soft or fragile shell. Soft-shell clam (Zoöl.), the long clam. See Mya.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "softshelled": {
       "word": "SOFT-SHELL; SOFT-SHELLED",
       "definitions": [
         {
@@ -1449,6 +1593,14 @@
         {
           "text": "A marshy or miry place to which a hunted boar resorts for refuge; hence, a wet place, stream, or tract of water, sought for by other game, as deer. As deer, being stuck, fly through many soils, Yet still the shaft sticks fast. Marston. To take soil, to run into the mire or water; hence, to take refuge or shelter. O, sir, have you taken soil here It is well a man may reach you after three hours' running. B. Jonson.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make dirty or unclean on the surface; to foul; to dirty; to defile; as, to soil a garment with dust. Our wonted ornaments now soiled and stained. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To stain or mar, as with infamy or disgrace; to tarnish; to sully. Shak. bedaub; stain; tarnish; sully; defile; pollute.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To become soiled; as, light colors soil sooner than dark ones.",
@@ -1683,6 +1835,10 @@
         {
           "text": "A leguminous plant (Æschynomene aspera) growing in moist places in Southern India and the East Indies. Its pithlike stem is used for making hats, swimming-jackets, etc. [Written also solah, shola.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Alone; -- chiefly used in stage directions, and the like.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -2051,6 +2207,34 @@
       "word": "SOLDIER",
       "definitions": [
         {
+          "text": "One who is engaged in military service as an officer or a private; one who serves in an army; one of an organized body of combatants. I am a soldier and unapt to weep. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Especially, a private in military service, as distinguished from an officer. It were meet that any one, before he came to be a captain, should have been a soldier. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A brave warrior; a man of military experience and skill, or a man of distinguished valor; -- used by way of emphasis or distinction. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The red or cuckoo gurnard (Trigla pini.) [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the asexual polymorphic forms of white ants, or termites, in which the head and jaws are very large and strong. The soldiers serve to defend the nest. See Termite. Soldier beetle (Zoöl.), an American carabid beetle (Chauliognathus Americanus) whose larva feeds upon other insects, such as the plum curculio. and allied genera, as the spined soldier bug (Podius spinosus). These bugs suck the blood of other insects. (Etheostoma coeruleum) found in the Mississippi River; -- called also blue darter, and rainbow darter. dipterous flies of the genus Stratyomys and allied genera. They are often bright green, with a metallic luster, and are ornamented on the sides of the back with markings of yellow, like epaulets or shoulder straps. militaris), having the wings bright yellow with bluish black lines and spots.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To serve as a soldier.",
           "partOfSpeech": "verb"
         },
@@ -2075,7 +2259,11 @@
       "word": "SOLDIERING",
       "definitions": [
         {
-          "text": "The act of serving as a soldier; the state of being a soldier; the",
+          "text": "The act of serving as a soldier; the state of being a soldier; the occupation of a soldier.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of feigning to work. See the Note under Soldier, v. i., 2. [Colloq. U.S.]",
           "partOfSpeech": "noun"
         }
       ],
@@ -2557,7 +2745,17 @@
       ],
       "relatedWords": []
     },
-    "solersolere": {
+    "soler": {
+      "word": "SOLER; SOLERE",
+      "definitions": [
+        {
+          "text": "A loft or garret. See Solar, n. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "solere": {
       "word": "SOLER; SOLERE",
       "definitions": [
         {
@@ -2769,7 +2967,7 @@
       "word": "SOLICITOUS",
       "definitions": [
         {
-          "text": "Disposed to solicit; eager to obtain something desirable, or to avoid anything evil; concerned; anxious; careful. \"Solicitous of my reputation.\" Dryden. \"He was solicitous for his advice.\" Calerendon. Enjoy the present, whatsoever it be, and be not solicitous about the future. Jer. Taylor. The colonel had been intent upon other things, and not enough",
+          "text": "Disposed to solicit; eager to obtain something desirable, or to avoid anything evil; concerned; anxious; careful. \"Solicitous of my reputation.\" Dryden. \"He was solicitous for his advice.\" Calerendon. Enjoy the present, whatsoever it be, and be not solicitous about the future. Jer. Taylor. The colonel had been intent upon other things, and not enough solicitous to finish the fortifications. Clarendon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2855,7 +3053,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "United; without division; unanimous; as, the delegation is solid for a candidate. [Polit. Cant. U.S.] Solid angle. (Geom.) See under Angle. are each a cube of fixed linear magnitude, as a cubic foot, yard, or the like; thus, a foot, in solid measure, or a solid foot, contains 1,728 solid inches.",
+          "text": "United; without division; unanimous; as, the delegation is solid for a candidate. [Polit. Cant. U.S.] Solid angle. (Geom.) See under Angle. are each a cube of fixed linear magnitude, as a cubic foot, yard, or the like; thus, a foot, in solid measure, or a solid foot, contains 1,728 solid inches. stairs are built, in distinction from a hollow newel. See under Hollow, a. geometrically, only by the intersection of a circle and a conic section or of two conic sections. Hutton. and files are equal. valid; true; just; weighty; profound; grave; important. of bodies; but hardnotes a more impenetrable nature or a firmer adherence of the component parts than solid. Hard is opposed to soft, and solid to fluid, liquid, open, or hollow. Wood is usually solid; but some kinds of wood are hard, and others are soft. Repose you there; while I [return] to this hard house, More harder than the stones whereof 't is raised. Shak. I hear his thundering voice resound, And trampling feet than shake the solid ground. Dryden.",
           "partOfSpeech": "adjective"
         },
         {
@@ -2867,7 +3065,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A magnitude which has length, breadth, and thickness; a part of",
+          "text": "A magnitude which has length, breadth, and thickness; a part of space bounded on all sides. Solid of revolution. (Geom.) See Revolution, n., 5.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3407,7 +3605,7 @@
       "word": "SOLOMON",
       "definitions": [
         {
-          "text": "One of the kings of Israel, noted for his superior wisdom and",
+          "text": "One of the kings of Israel, noted for his superior wisdom and magnificent reign; hence, a very wise man. plant of the genus Polygonatum, having simple erect or curving stems rising from thick and knotted rootstocks, and with white or greenish nodding flowers. The commonest European species is Polygonatum multiflorum. P. biflorum and P. giganteum are common in the Eastern United States. See Illust. of Rootstock. False Solomon's seal (Bot.), any plant of the liliaceous genus Smilacina having small whitish flowers in terminal racemes or panicles.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3462,6 +3660,20 @@
       "definitions": [
         {
           "text": "Same as Solifugæ.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "solstice": {
+      "word": "SOLSTICE",
+      "definitions": [
+        {
+          "text": "A stopping or standing still of the sun. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Astron.) (a) The point in the ecliptic at which the sun is farthest from the equator, north or south, namely, the first point of the sign Cancer and the first point of the sign Capricorn, the former being the summer solstice, latter the winter solstice, in northern latitudes; - - so called because the sun then apparently stands still in its northward or southward motion. (b) The time of the sun's passing the solstices, or solstitial points, namely, about June 21 and December 21. See Illust. in Appendix.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3527,7 +3739,7 @@
       ],
       "relatedWords": []
     },
-    "solussola": {
+    "solus": {
       "word": "SOLUS; SOLA",
       "definitions": [
         {
@@ -3753,7 +3965,7 @@
       ],
       "relatedWords": []
     },
-    "somajsamaj": {
+    "somaj": {
       "word": "SOMAJ; SAMAJ",
       "definitions": [
         {
@@ -3763,7 +3975,17 @@
       ],
       "relatedWords": []
     },
-    "somalisomal": {
+    "somali": {
+      "word": "SOMALI; SOMAL",
+      "definitions": [
+        {
+          "text": "A Hamitic people of East Central Africa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "somal": {
       "word": "SOMALI; SOMAL",
       "definitions": [
         {
@@ -3781,7 +4003,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of or pertaining to the wall of the body; somatopleuric; parietal;",
+          "text": "Of or pertaining to the wall of the body; somatopleuric; parietal; as, the somatic stalk of the yolk sac of an embryo. Somatic death. See the Note under Death, n., 1.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3881,7 +4103,7 @@
       ],
       "relatedWords": []
     },
-    "sombersombre": {
+    "somber": {
       "word": "SOMBER; SOMBRE",
       "definitions": [
         {
@@ -3903,7 +4125,29 @@
       ],
       "relatedWords": []
     },
-    "somberlysombrely": {
+    "sombre": {
+      "word": "SOMBER; SOMBRE",
+      "definitions": [
+        {
+          "text": "Dull; dusky; somewhat dark; gloomy; as, a somber forest; a somber house.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Melancholy; sad; grave; depressing; as, a somber person; somber reflections. The dinner was silent and somber; happily it was also short. Beaconsfield.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To make somber, or dark; to make shady. [R.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Gloom; obscurity; duskiness; somberness. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "somberly": {
       "word": "SOMBERLY; SOMBRELY",
       "definitions": [
         {
@@ -3913,7 +4157,27 @@
       ],
       "relatedWords": []
     },
-    "sombernesssombreness": {
+    "sombrely": {
+      "word": "SOMBERLY; SOMBRELY",
+      "definitions": [
+        {
+          "text": "In a somber manner; sombrously; gloomily; despondingly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "somberness": {
+      "word": "SOMBERNESS; SOMBRENESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being somber; gloominess.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sombreness": {
       "word": "SOMBERNESS; SOMBRENESS",
       "definitions": [
         {
@@ -3946,6 +4210,40 @@
         },
         {
           "text": "An adjective suffix having primarily the sense of like or same, and indicating a considerable degree of the thing or quality denoted in the first part of the compound; as in mettlesome, full of mettle or spirit; gladsome, full of gladness; winsome, blithesome, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "some": {
+      "word": "SOME",
+      "definitions": [
+        {
+          "text": "Consisting of a greater or less portion or sum; composed of a quantity or number which is not stated; -- used to express an indefinite quantity or number; as, some wine; some water; some persons. Used also pronominally; as, I have some. Some theoretical writers allege that there was a time when there was no such thing as society. Blackstone.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A certain; one; -- indicating a person, thing, event, etc., as not known individually, or designated more specifically; as, some man, that is, some one man. \"Some brighter clime.\" Mrs. Barbauld. Some man praiseth his neighbor by a wicked intent. Chaucer. Most gentlemen of property, at some period or other of their lives, are ambitious of representing their county in Parliament. Blackstone.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not much; a little; moderate; as, the censure was to some extent just.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "About; near; more or less; -- used commonly with numerals, but formerly also with a singular substantive of time or distance; as, a village of some eighty houses; some two or three persons; some hour hence. Shak. The number slain on the rebel's part were some two thousand. Bacon.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Considerable in number or quality. \"Bore us some leagues to sea.\" Shak. On its outer point, some miles away. The lighthouse lifts its massive masonry. Longfellow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Certain; those of one part or portion; -- in distinct from other or others; as, some men believe one thing, and others another. Some [seeds] fell among thorns; . . . but other fell into good ground. Matt. xiii. 7, 8.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A part; a portion; -- used pronominally, and followed sometimes by of; as, some of our provisions. Your edicts some reclaim from sins, But most your life and blest example wins. Dryden. All and some, one and all. See under All, adv. [Obs.] as an adverb, instead of somewhat, or an equivalent expression; as, I am some tired; he is some better; it rains some, etc. Some . . . some, one part . . . another part; these . . . those; -- used distributively. Some to the shores do fly, Some to the woods, or whither fear advised. Daniel. that one; one . . . another. Some in his bed, some in the deep sea. Chaucer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3985,7 +4283,17 @@
       ],
       "relatedWords": []
     },
-    "somersaultsomerset": {
+    "somersault": {
+      "word": "SOMERSAULT; SOMERSET",
+      "definitions": [
+        {
+          "text": "A leap in which a person turns his heels over his head and lights upon his feet; a turning end over end. [Written also summersault, sommerset, summerset, etc.] \"The vaulter's sombersalts.\" Donne. Now I'll only Make him break his neck in doing a sommerset. Beau. & Fl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "somerset": {
       "word": "SOMERSAULT; SOMERSET",
       "definitions": [
         {
@@ -4119,7 +4427,7 @@
       "word": "SOMITE",
       "definitions": [
         {
-          "text": "One of the actual or ideal serial segments of which an animal,",
+          "text": "One of the actual or ideal serial segments of which an animal, esp. an articulate or vertebrate, is composed; somatome; metamere.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4395,12 +4703,32 @@
       ],
       "relatedWords": []
     },
-    "somnolencesomnolency": {
+    "somnolence": {
       "word": "SOMNOLENCE; SOMNOLENCY",
       "definitions": [
         {
           "text": "Sleepiness; drowsiness; inclination to sleep.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "somnolency": {
+      "word": "SOMNOLENCE; SOMNOLENCY",
+      "definitions": [
+        {
+          "text": "Sleepiness; drowsiness; inclination to sleep.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "somnolent": {
+      "word": "SOMNOLENT",
+      "definitions": [
+        {
+          "text": "Sleepy; drowsy; inclined to sleep. He had no eye for such phenomens, because he had a somnolent want of interest in them. De Quincey.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4435,7 +4763,17 @@
       ],
       "relatedWords": []
     },
-    "somonauncesomonce": {
+    "somonaunce": {
+      "word": "SOMONAUNCE; SOMONCE",
+      "definitions": [
+        {
+          "text": "A summons; a citation. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "somonce": {
       "word": "SOMONAUNCE; SOMONCE",
       "definitions": [
         {
@@ -4470,6 +4808,40 @@
       "definitions": [
         {
           "text": "A summoner. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "son": {
+      "word": "SON",
+      "definitions": [
+        {
+          "text": "A male child; the male issue, or offspring, of a parent, father or mother. Sarah conceived, and bare Abraham a son. Gen. xxi. 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A male descendant, however distant; hence, in the plural, descendants in general. I am the son of the wise, the son of ancient kings. Isa. xix. 11. I am the Lord, I change not; therefore ye sons of Jacob are not consumed. Mal. iii. 6.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any young male person spoken of as a child; an adopted male child; a pupil, ward, or any other male dependent. The child grew, and she brought him unto Pharaoh's daughter, and he became her son. Ex. ii. 10. Be plain, good son, and homely in thy drift. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A native or inhabitant of some specified place; as, sons of Albion; sons of New England.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The produce of anything. Earth's tall sons, the cedar, oak, and pine. Blackmore.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Commonly with the def. article)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Jesus Christ, the Savior; -- called the Son of God, and the Son of man. We . . . do testify that the Father sent the Son to be the Savior of the world. 1 John iv. 14. Who gave His Son sure all has given. Keble. Hebraisms, which denote persons possessing the qualitites of pride, of light, or of Belial, as children inherit the qualities of their ancestors. Sons of the prophets. See School of the prophets, under Prophet.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4531,7 +4903,7 @@
       ],
       "relatedWords": []
     },
-    "soncysonsy": {
+    "soncy": {
       "word": "SONCY; SONSY",
       "definitions": [
         {
@@ -4541,7 +4913,31 @@
       ],
       "relatedWords": []
     },
-    "sondsonde": {
+    "sonsy": {
+      "word": "SONCY; SONSY",
+      "definitions": [
+        {
+          "text": "Lucky; fortunate; thriving; plump. [Prov. Eng. & Scot.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Soncy. [Scot.] Burns.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sond": {
+      "word": "SOND; SONDE",
+      "definitions": [
+        {
+          "text": "That which is sent; a message or messenger; hence, also, a visitation of providence; an affliction or trial. [Obs.] Ye have enough, parde, of Goddes sond. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sonde": {
       "word": "SOND; SONDE",
       "definitions": [
         {
@@ -4873,7 +5269,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Sonant; vibrant; hence, of sounds produced in a cavity, deep- toned; as, sonorous rhonchi. Sonorous figures (Physics), figures formed by the vibrations of a substance capable of emitting a musical tone, as when the bow of a violin is drawn along the edge of a piece of glass or metal on which sand is strewed, and the sand arranges itself in figures according to the musical tone. Called also acoustic figures.",
+          "text": "Sonant; vibrant; hence, of sounds produced in a cavity, deep- toned; as, sonorous rhonchi. Sonorous figures (Physics), figures formed by the vibrations of a substance capable of emitting a musical tone, as when the bow of a violin is drawn along the edge of a piece of glass or metal on which sand is strewed, and the sand arranges itself in figures according to the musical tone. Called also acoustic figures. sound on percussion.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4885,16 +5281,6 @@
         {
           "text": "The state of being a son, or of bearing the relation of a son; filiation. Dr. H. More.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sonsy": {
-      "word": "SONSY",
-      "definitions": [
-        {
-          "text": "See Soncy. [Scot.] Burns.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4939,7 +5325,17 @@
       ],
       "relatedWords": []
     },
-    "soofeesoofeeism": {
+    "soofee": {
+      "word": "SOOFEE; SOOFEEISM",
+      "definitions": [
+        {
+          "text": "Same as Sufi, Sufism.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "soofeeism": {
       "word": "SOOFEE; SOOFEEISM",
       "definitions": [
         {
@@ -5075,11 +5471,15 @@
         {
           "text": "To cover or dress with soot; to smut with, or as with, soot; as, to soot land. Mortimer.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Sweet. [Obs.] \"The soote savour of the vine.\" Chaucer.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "sootsoote": {
+    "soote": {
       "word": "SOOT; SOOTE",
       "definitions": [
         {
@@ -5156,6 +5556,10 @@
     "soothfast": {
       "word": "SOOTHFAST",
       "definitions": [
+        {
+          "text": "Firmly fixed in, or founded upon, the thruth; true; genuine; real; also, truthful; faithful. [Archaic] -- Sooth\"fast`ness, n. [Archaic] \"In very soothfastness.\" Chaucer. Why do not you . . . bear leal and soothfast evidence in her behalf, as ye may with a clear conscience! Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Soothly; really; in fact. [Archaic] I care not if the pomps you show Be what they soothfast appear. Emerson.",
           "partOfSpeech": "adverb"
@@ -5351,7 +5755,17 @@
       ],
       "relatedWords": []
     },
-    "sophicsophical": {
+    "sophic": {
+      "word": "SOPHIC; SOPHICAL",
+      "definitions": [
+        {
+          "text": "Teaching wisdom. [Obs.] S. Harris.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sophical": {
       "word": "SOPHIC; SOPHICAL",
       "definitions": [
         {
@@ -5417,11 +5831,21 @@
       ],
       "relatedWords": []
     },
-    "sophisticsophistical": {
+    "sophistic": {
       "word": "SOPHISTIC; SOPHISTICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a sophist; embodying sophistry; fallaciously subtile; not sound.",
+          "text": "Of or pertaining to a sophist; embodying sophistry; fallaciously subtile; not sound. His argument . . . is altogether sophistical. Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sophistical": {
+      "word": "SOPHISTIC; SOPHISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a sophist; embodying sophistry; fallaciously subtile; not sound. His argument . . . is altogether sophistical. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5433,11 +5857,15 @@
         {
           "text": "To render worthless by admixture; to adulterate; to damage; to pervert; as, to sophisticate wine. Howell. To sophisticate the understanding. Southey. Yet Butler professes to stick to plain facts, not to sophisticate, not to refine. M. Arnold. They purchase but sophisticated ware. Dryden.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Adulterated; not pure; not genuine. So truth, while only one supplied the state, Grew scare and dear, and yet sophisticate. Dryden.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "sophisticatesophisticated": {
+    "sophisticated": {
       "word": "SOPHISTICATE; SOPHISTICATED",
       "definitions": [
         {
@@ -5491,7 +5919,17 @@
       ],
       "relatedWords": []
     },
-    "sophomoricsophomorical": {
+    "sophomoric": {
+      "word": "SOPHOMORIC; SOPHOMORICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a sophomore; resembling a sophomore; hence, pretentious; inflated in style or manner; as, sophomoric affectation. [U. S.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sophomorical": {
       "word": "SOPHOMORIC; SOPHOMORICAL",
       "definitions": [
         {
@@ -5575,7 +6013,17 @@
       ],
       "relatedWords": []
     },
-    "soporosesoporous": {
+    "soporose": {
+      "word": "SOPOROSE; SOPOROUS",
+      "definitions": [
+        {
+          "text": "Causing sleep; sleepy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "soporous": {
       "word": "SOPOROSE; SOPOROUS",
       "definitions": [
         {
@@ -5743,7 +6191,7 @@
       "word": "SORBITE",
       "definitions": [
         {
-          "text": "A sugarlike substance, isomeric with mannite and dulcite, found with sorbin in the ripe berries of the sorb, and extracted as a sirup",
+          "text": "A sugarlike substance, isomeric with mannite and dulcite, found with sorbin in the ripe berries of the sorb, and extracted as a sirup or a white crystalline substance.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5765,6 +6213,16 @@
         {
           "text": "Belonging to the Sorbonne or to a Sorbonist. Bale.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sorbonist": {
+      "word": "SORBONIST",
+      "definitions": [
+        {
+          "text": "A doctor of the Sorbonne, or theological college, in the University of Paris, founded by Robert de Sorbon, a. d. 1252. It was suppressed in the Revolution of 1789.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -5805,6 +6263,16 @@
         {
           "text": "Of or pertaining to sorcery.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sorcery": {
+      "word": "SORCERY",
+      "definitions": [
+        {
+          "text": "Divination by the assistance, or supposed assistance, of evil spirits, or the power of commanding evil spirits; magic; necromancy; witchcraft; enchantment. Adder's wisdom I have learned, To fence my ear against thy sorceries. Milton.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -5931,7 +6399,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Fig.: Grief; affliction; trouble; difficulty. Chaucer.",
+          "text": "Fig.: Grief; affliction; trouble; difficulty. Chaucer. I see plainly where his sore lies. Sir W. Scott. Gold sore. (Med.) See under Gold, n.",
           "partOfSpeech": "noun"
         },
         {
@@ -5965,7 +6433,17 @@
       ],
       "relatedWords": []
     },
-    "sorediferoussorediiferous": {
+    "sorediferous": {
+      "word": "SOREDIFEROUS; SOREDIIFEROUS",
+      "definitions": [
+        {
+          "text": "Bearing soredia; sorediate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sorediiferous": {
       "word": "SOREDIFEROUS; SOREDIIFEROUS",
       "definitions": [
         {
@@ -6221,6 +6699,10 @@
       "word": "SORREL",
       "definitions": [
         {
+          "text": "Of a yellowish or redish brown color; as, a sorrel horse.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A yellowish or redish brown color.",
           "partOfSpeech": "noun"
         },
@@ -6293,7 +6775,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Producing sorrow; exciting grief; mournful; lamentable; grievous; as, a sorrowful accident.",
+          "text": "Producing sorrow; exciting grief; mournful; lamentable; grievous; as, a sorrowful accident. lamentable; doleful; distressing.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6691,7 +7173,17 @@
       ],
       "relatedWords": []
     },
-    "sotelsotil": {
+    "sotel": {
+      "word": "SOTEL; SOTIL",
+      "definitions": [
+        {
+          "text": "Subtile. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sotil": {
       "word": "SOTEL; SOTIL",
       "definitions": [
         {
@@ -6729,11 +7221,21 @@
       ],
       "relatedWords": []
     },
-    "sothiacsothic": {
+    "sothiac": {
       "word": "SOTHIAC; SOTHIC",
       "definitions": [
         {
-          "text": "Of or pertaining to Sothis, the Egyptian name for the Dog Star; taking its name from the Dog Star; canicular. Sothiac, or Sothic, year (Chronol.), the Egyptian year of 365 days and 6 hours, as distinguished from the Egyptian vague year, which contained 365 days.",
+          "text": "Of or pertaining to Sothis, the Egyptian name for the Dog Star; taking its name from the Dog Star; canicular. Sothiac, or Sothic, year (Chronol.), the Egyptian year of 365 days and 6 hours, as distinguished from the Egyptian vague year, which contained 365 days. The Sothic period consists of 1,460 Sothic years, being equal to 1,461 vague years. One of these periods ended in July, a. d. 139.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sothic": {
+      "word": "SOTHIAC; SOTHIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Sothis, the Egyptian name for the Dog Star; taking its name from the Dog Star; canicular. Sothiac, or Sothic, year (Chronol.), the Egyptian year of 365 days and 6 hours, as distinguished from the Egyptian vague year, which contained 365 days. The Sothic period consists of 1,460 Sothic years, being equal to 1,461 vague years. One of these periods ended in July, a. d. 139.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6905,7 +7407,17 @@
       ],
       "relatedWords": []
     },
-    "soudedsoudet": {
+    "souded": {
+      "word": "SOUDED; SOUDET",
+      "definitions": [
+        {
+          "text": "United; consolidated; made firm; strengthened. [Obs.] O martyr souded for virginity! Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "soudet": {
       "word": "SOUDED; SOUDET",
       "definitions": [
         {
@@ -7025,7 +7537,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A pure or disembodied spirit. That to his only Son . . . every soul in heaven Shall bend the knee. Milton. which are of obvious signification; as, soul-betraying, soul- consuming, soul-destroying, soul-distracting, soul-enfeebling, soul- exalting, soul-felt, soul-harrowing, soul-piercing, soul-quickening, soul-reviving, soul-stirring, soul-subduing, soul-withering, etc.",
+          "text": "A pure or disembodied spirit. That to his only Son . . . every soul in heaven Shall bend the knee. Milton. which are of obvious signification; as, soul-betraying, soul- consuming, soul-destroying, soul-distracting, soul-enfeebling, soul- exalting, soul-felt, soul-harrowing, soul-piercing, soul-quickening, soul-reviving, soul-stirring, soul-subduing, soul-withering, etc. 2. shot. Etym: [Soul + scot, or shot; cf. AS. sawelsceat.] (O. Eccl. Law) A funeral duty paid in former times for a requiem for the soul. Ayliffe.",
           "partOfSpeech": "noun"
         },
         {
@@ -7315,6 +7827,10 @@
         {
           "text": "Not capable of being sounded or fathomed; unfathomable. Shak.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having no sound; noiseless; silent.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7593,7 +8109,7 @@
       ],
       "relatedWords": []
     },
-    "soussouse": {
+    "sous": {
       "word": "SOUS; SOUSE",
       "definitions": [
         {
@@ -7604,8 +8120,12 @@
       "relatedWords": []
     },
     "souse": {
-      "word": "SOUSE",
+      "word": "SOUS; SOUSE",
       "definitions": [
+        {
+          "text": "A corrupt form of Sou. [Obs.] Colman, the Elder.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Pickle made with salt.",
           "partOfSpeech": "noun"
@@ -7632,6 +8152,10 @@
         },
         {
           "text": "To drench, as by an immersion; to wet throughly. Although I be well soused in this shower. Gascoigne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To swoop or plunge, as a bird upon its prey; to fall suddenly; to rush with speed; to make a sudden attack. For then I viewed his plunge and souse Into the foamy main. Marston. Jove's bird will souse upon the timorous hare. J. Dryden. Jr.",
           "partOfSpeech": "verb"
         },
         {
@@ -7753,12 +8277,16 @@
           "partOfSpeech": "adjective"
         },
         {
+          "text": ", adv.",
+          "partOfSpeech": ""
+        },
+        {
           "text": "Toward the south; southward.",
-          "partOfSpeech": "adverb"
+          "partOfSpeech": ""
         },
         {
           "text": "From the south; as, the wind blows south. Bacon.",
-          "partOfSpeech": "adverb"
+          "partOfSpeech": ""
         },
         {
           "text": "To turn or move toward the south; to veer toward the south.",
@@ -7771,6 +8299,10 @@
         {
           "text": "To come to the meridian; to cross the north and south line; -- said chiefly of the moon; as, the moon souths at nine.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "the old squaw; -- so called in imitation of its cry. Called also southerly, and southerland. See under Old.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -7837,7 +8369,17 @@
       ],
       "relatedWords": []
     },
-    "southeastwardsoutheastwardly": {
+    "southeastward": {
+      "word": "SOUTHEASTWARD; SOUTHEASTWARDLY",
+      "definitions": [
+        {
+          "text": "Toward the southeast.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "southeastwardly": {
       "word": "SOUTHEASTWARD; SOUTHEASTWARDLY",
       "definitions": [
         {
@@ -7873,6 +8415,10 @@
         {
           "text": "Southern.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "the old squaw; -- so called in imitation of its cry. Called also southerly, and southerland. See under Old.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -8059,29 +8605,13 @@
       ],
       "relatedWords": []
     },
-    "southsoutherly": {
-      "word": "SOUTH; SOUTHERLY",
-      "definitions": [
-        {
-          "text": "the old squaw; -- so called in imitation of its cry. Called also southerly, and southerland. See under Old.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "southwardsouthwards": {
+    "southward": {
       "word": "SOUTHWARD; SOUTHWARDS",
       "definitions": [
         {
           "text": "Toward the south, or toward a point nearer the south than the east or west point; as, to go southward.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "southward": {
-      "word": "SOUTHWARD",
-      "definitions": [
+        },
         {
           "text": "Toward the south.",
           "partOfSpeech": "adjective"
@@ -8089,6 +8619,16 @@
         {
           "text": "The southern regions or countries; the south. Sir W. Raleigh.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "southwards": {
+      "word": "SOUTHWARD; SOUTHWARDS",
+      "definitions": [
+        {
+          "text": "Toward the south, or toward a point nearer the south than the east or west point; as, to go southward.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -8151,7 +8691,7 @@
       ],
       "relatedWords": []
     },
-    "southwestwardsouthwestwardly": {
+    "southwestward": {
       "word": "SOUTHWESTWARD; SOUTHWESTWARDLY",
       "definitions": [
         {
@@ -8161,7 +8701,27 @@
       ],
       "relatedWords": []
     },
-    "souvenancesovenaunce": {
+    "southwestwardly": {
+      "word": "SOUTHWESTWARD; SOUTHWESTWARDLY",
+      "definitions": [
+        {
+          "text": "Toward the southwest.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "souvenance": {
+      "word": "SOUVENANCE; SOVENAUNCE",
+      "definitions": [
+        {
+          "text": "Remembrance. [Obs.] Of his way he had no sovenance. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sovenaunce": {
       "word": "SOUVENANCE; SOVENAUNCE",
       "definitions": [
         {
@@ -8403,7 +8963,21 @@
       ],
       "relatedWords": []
     },
-    "sowlsowle": {
+    "sowl": {
+      "word": "SOWL; SOWLE",
+      "definitions": [
+        {
+          "text": "To pull by the ears; to drag about. [Obs.] hak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Soul, v. i. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sowle": {
       "word": "SOWL; SOWLE",
       "definitions": [
         {

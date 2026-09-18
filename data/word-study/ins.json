@@ -1483,7 +1483,33 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "One of the classes of Arthropoda, including those that have one pair of antennæ, three pairs of mouth organs, and breathe air by means of tracheæ, opening by spiracles along the sides of the body.",
+          "text": "One of the classes of Arthropoda, including those that have one pair of antennæ, three pairs of mouth organs, and breathe air by means of tracheæ, opening by spiracles along the sides of the body. In this sense it includes the Hexapoda, or six-legged insects and the Myriapoda, with numerous legs. See Insect, n.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In a more restricted sense, the Hexapoda alone. See Hexapoda.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In the most general sense, the Hexapoda, Myriapoda, and Arachnoidea, combined. several orders, viz.: Hymenoptera, as the bees and ants; Diptera, as the common flies and gnats; Aphaniptera, or fleas; Lepidoptera, or moths and butterflies; Neuroptera, as the ant-lions and hellgamite; Coleoptera, or beetles; Hemiptera, as bugs, lice, aphids; Orthoptera, as grasshoppers and cockroaches; Pseudoneuroptera, as the dragon flies and termites; Euplexoptera, or earwings; Thysanura, as the springtails, podura, and lepisma. See these words in the Vocabulary.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "insectary": {
+      "word": "INSECTARY",
+      "definitions": [
+        {
+          "text": "A place for keeping living insects.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1523,7 +1549,7 @@
       "word": "INSECTICIDE",
       "definitions": [
         {
-          "text": "An agent or preparation for destroying insects; an insect",
+          "text": "An agent or preparation for destroying insects; an insect powder.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1992,7 +2018,7 @@
       "word": "INSENSATE",
       "definitions": [
         {
-          "text": "Wanting sensibility; destitute of sense; stupid; foolish. The silence and the calm Of mute, insensate things. Wordsworth.",
+          "text": "Wanting sensibility; destitute of sense; stupid; foolish. The silence and the calm Of mute, insensate things. Wordsworth. The meddling folly or insensate ambition of statesmen. Buckle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3455,7 +3481,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Intended to entrap; characterized by treachery and deceit; as, insidious arts. The insidious whisper of the bad angel. Hawthorne. Insidious disease (Med.), a disease existing, without marked symptoms, but ready to become active upon some slight occasion; a disease not appearing to be as bad as it really is.",
+          "text": "Intended to entrap; characterized by treachery and deceit; as, insidious arts. The insidious whisper of the bad angel. Hawthorne. Insidious disease (Med.), a disease existing, without marked symptoms, but ready to become active upon some slight occasion; a disease not appearing to be as bad as it really is. treacherous; deceitful; deceptive.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5006,7 +5032,7 @@
         "wooden"
       ]
     },
-    "insipidityinsipidness": {
+    "insipidity": {
       "word": "INSIPIDITY; INSIPIDNESS",
       "definitions": [
         {
@@ -5022,6 +5048,16 @@
         {
           "text": "In an insipid manner; without taste, life, or spirit; flatly. Locke. Sharp.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "insipidness": {
+      "word": "INSIPIDITY; INSIPIDNESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being insipid; vapidity. \"Dryden's lines shine strongly through the insipidity of Tate's.\" Pope.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -5599,24 +5635,6 @@
       ],
       "relatedWords": []
     },
-    "inspectionaforester": {
-      "word": "inspection; a forester.",
-      "definitions": [
-        {
-          "text": "A fuller of cloth. [Obs. or Prov. Eng. & Scot.] She cursed the weaver and the walker The cloth that had wrought. Percy's Reliques.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Any ambulatorial orthopterous insect, as a stick insect.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "inspective": {
       "word": "INSPECTIVE",
       "definitions": [
@@ -5768,6 +5786,16 @@
       "definitions": [
         {
           "text": "One who holds to inspiration.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inspirator": {
+      "word": "INSPIRATOR",
+      "definitions": [
+        {
+          "text": "A kind of injector for forcing water by steam. See Injector, n., 2.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6051,7 +6079,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A day of the present or current month; as, the sixth instant; --",
+          "text": "A day of the present or current month; as, the sixth instant; -- an elliptical expression equivalent to the sixth of the month instant, i. e., the current month. See Instant, a., 3.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6075,7 +6103,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "At or during a given instant; as, instantaneous acceleration, velocity, etc. Instantaneous center of rotation (Kinematics), in a plane or in a plane figure which has motions both of translation and of rotation in the plane, is the point which for the instant is at rest. motions both of translation and rotation, is a line, which is supposed to be rigidly united with the body, and which for the instant is at rest. The motion of the body is for the instant simply",
+          "text": "At or during a given instant; as, instantaneous acceleration, velocity, etc. Instantaneous center of rotation (Kinematics), in a plane or in a plane figure which has motions both of translation and of rotation in the plane, is the point which for the instant is at rest. motions both of translation and rotation, is a line, which is supposed to be rigidly united with the body, and which for the instant is at rest. The motion of the body is for the instant simply that of rotation about the instantaneous axis.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6499,25 +6527,9 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Hence: An elementary and necessary principle; a precept, maxim, or rule, recognized as established and authoritative; usually in the plural, a collection of such principles and precepts; esp., a comprehensive summary of legal principles and decisions; as, the",
+          "text": "Hence: An elementary and necessary principle; a precept, maxim, or rule, recognized as established and authoritative; usually in the plural, a collection of such principles and precepts; esp., a comprehensive summary of legal principles and decisions; as, the Institutes of Justinian; Coke's Institutes of the Laws of England. Cf. Digest, n. They made a sort of institute and digest of anarchy. Burke. To make the Stoics' institutes thy own. Dryden.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "instituter": {
-      "word": "INSTITUTER",
-      "definitions": [
-        {
-          "text": "An institutor. [R.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "institutesofjustiniancoke'sinstitutesofthelawsofengland": {
-      "word": "Institutes of Justinian; Coke's Institutes of the Laws of England.",
-      "definitions": [
+        },
         {
           "text": "An institution; a society established for the promotion of learning, art, science, etc.; a college; as, the Institute of Technology; also, a building owned or occupied by such an institute; as, the Cooper Institute.",
           "partOfSpeech": "noun"
@@ -6528,6 +6540,16 @@
         },
         {
           "text": "The person to whom an estate is first given by destination or limitation. Tomlins. Institutes of medicine, theoretical medicine; that department of medical science which attempts to account philosophically for the various phenomena of health as well as of disease; physiology applied to the practice of medicine. Dunglison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "instituter": {
+      "word": "INSTITUTER",
+      "definitions": [
+        {
+          "text": "An institutor. [R.]",
           "partOfSpeech": "noun"
         }
       ],
@@ -6820,7 +6842,7 @@
       "word": "INSTRUCTIVE",
       "definitions": [
         {
-          "text": "Conveying knowledge; serving to instruct or inform; as, experience furnishes very instructive lessons. Addison.",
+          "text": "Conveying knowledge; serving to instruct or inform; as, experience furnishes very instructive lessons. Addison. In various talk the instructive hours they past. Pope. The pregnant instructiveness of the Scripture. Boyle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6906,7 +6928,7 @@
       "word": "INSTRUMENTALISM",
       "definitions": [
         {
-          "text": "The view that the sanction of truth is its utility, or that",
+          "text": "The view that the sanction of truth is its utility, or that truth is genuine only in so far as it is a valuable instrument. -- In`stru*men\"tal*ist, n. Instrumentalism views truth as simply the value belonging to certain ideas in so far as these ideas are biological functions of our organisms, and psychological functions whereby we direct our choices and attain our successes. Josiah Royce.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7466,7 +7488,7 @@
       "word": "INSULTING",
       "definitions": [
         {
-          "text": "Containing, or characterized by, insult or abuse; tending to",
+          "text": "Containing, or characterized by, insult or abuse; tending to insult or affront; as, insulting language, treatment, etc. Insolent.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7516,7 +7538,7 @@
       "word": "INSUPPORTABLE",
       "definitions": [
         {
-          "text": "Incapable of being supported or borne; unendurable; insufferable; intolerable; as, insupportable burdens; insupportable",
+          "text": "Incapable of being supported or borne; unendurable; insufferable; intolerable; as, insupportable burdens; insupportable pain.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7527,6 +7549,16 @@
       "definitions": [
         {
           "text": "Incapable of being supposed; not supposable; inconceivable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "insuppressible": {
+      "word": "INSUPPRESSIBLE",
+      "definitions": [
+        {
+          "text": "That can not be suppressed or concealed; irrepressible. Young.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7556,7 +7588,19 @@
       "word": "INSURANCE",
       "definitions": [
         {
-          "text": "The act of insuring, or assuring, against loss or damage by a contingent event; a contract whereby, for a stipulated consideration,",
+          "text": "The act of insuring, or assuring, against loss or damage by a contingent event; a contract whereby, for a stipulated consideration, called premium, one party undertakes to indemnify or guarantee another against loss by certain specified risks. Cf. Assurance, n., 6. insurer; the danger against which he undertakes, the risk; the person protected, the insured; the sum which he pays for the protection, the premium; and the contract itself, when reduced to form, the policy. Johnson's Cyc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The premium paid for insuring property or life.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The sum for which life or property is insured.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A guaranty, security, or pledge; assurance. [Obs.] The most acceptable insurance of the divine protection. Mickle. Accident insurance, insurance against pecuniary loss by reason of accident to the person. and investment such that if the person upon whose life a risk is taken dies before a certain specified time the insurance becomes due at once, and if he survives, it becomes due at the time specified. to insure against loss, damage, or death. containing the contract made by an insurance company with a person whose property or life is insured.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7610,7 +7654,17 @@
       ],
       "relatedWords": []
     },
-    "insurgenceinsurgency": {
+    "insurgence": {
+      "word": "INSURGENCE; INSURGENCY",
+      "definitions": [
+        {
+          "text": "A state of insurrection; an uprising; an insurrection. A moral insurgence in the minds of grave men against the Court of Rome. G. Eliot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "insurgency": {
       "word": "INSURGENCE; INSURGENCY",
       "definitions": [
         {

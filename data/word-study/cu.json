@@ -1,20 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "cunnantoknowbeableandderivedfromthiscunniantotry": {
-      "word": "cunnan to know, be able, and (derived from this) cunnian to try,",
-      "definitions": [
-        {
-          "text": "To know; to understand; to acknowledge. [Obs.] Of muses, Hobbinol, I con no skill. Spenser. They say they con to heaven the highway. Spenser.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To study in order to know; to peruse; to learn; to commit to memory; to regard studiously. Fixedly did look Upon the muddy waters which he conned As if he had been reading in a book. Wodsworth. I did not come into Parliament to con my lesson. Burke. To con answer, to be able to answer. [Obs.] -- To con thanks, to thank; to acknowledge obligation. [Obs.] Shak.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "cub": {
       "word": "CUB",
       "definitions": [
@@ -151,7 +137,7 @@
       ],
       "relatedWords": []
     },
-    "cubbycubbyhole": {
+    "cubby": {
       "word": "CUBBY; CUBBYHOLE",
       "definitions": [
         {
@@ -160,6 +146,63 @@
         }
       ],
       "relatedWords": []
+    },
+    "cubbyhole": {
+      "word": "CUBBY; CUBBYHOLE",
+      "definitions": [
+        {
+          "text": "A snug or confined place.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "alcove",
+        "asylum",
+        "bay",
+        "bolt-hole",
+        "cache",
+        "carrel",
+        "concealment",
+        "corner",
+        "cove",
+        "cover",
+        "covert",
+        "coverture",
+        "cranny",
+        "cubby",
+        "cubicle",
+        "dark corner",
+        "den",
+        "doghouse",
+        "dugout",
+        "foxhole",
+        "funk hole",
+        "hideaway",
+        "hideout",
+        "hidey hole",
+        "hiding",
+        "hiding place",
+        "hole",
+        "lair",
+        "mousehole",
+        "niche",
+        "nook",
+        "oriel",
+        "pigeonhole",
+        "pinch",
+        "playhouse",
+        "recess",
+        "refuge",
+        "retreat",
+        "roomlet",
+        "sanctuary",
+        "secret place",
+        "snuggery",
+        "stash",
+        "tight spot",
+        "tight squeeze",
+        "undercovert"
+      ]
     },
     "cubdrawn": {
       "word": "CUBDRAWN",
@@ -227,7 +270,66 @@
       ],
       "relatedWords": []
     },
-    "cubiccubical": {
+    "cubic": {
+      "word": "CUBIC; CUBICAL",
+      "definitions": [
+        {
+          "text": "Having the form or properties of a cube; contained, or capable of being contained, in a cube.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Crystallog.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Isometric or monometric; as, cubic cleavage. See Crystallization. Cubic equation, an equation in which the highest power of the unknown quantity is a cube. a foot in each of its dimensions. itself, and that product again by the same number. See Cube. plane, and one on space of three dimensions.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A curve of the third degree. Circular cubic. See under Circular.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "3-D",
+        "cube-shaped",
+        "cubed",
+        "cubiform",
+        "cuboid",
+        "diced",
+        "dimensional",
+        "flat",
+        "foursquare",
+        "fourth-dimensional",
+        "oblong",
+        "orthogonal",
+        "proportional",
+        "quadrangular",
+        "quadrate",
+        "quadriform",
+        "quadrilateral",
+        "rectangular",
+        "rhombic",
+        "rhomboid",
+        "space",
+        "space-time",
+        "spatial",
+        "spatiotemporal",
+        "spherical",
+        "square",
+        "stereoscopic",
+        "superficial",
+        "surface",
+        "tetragonal",
+        "tetrahedral",
+        "three-dimensional",
+        "trapezohedral",
+        "trapezoid",
+        "two-dimensional",
+        "volumetric"
+      ]
+    },
+    "cubical": {
       "word": "CUBIC; CUBICAL",
       "definitions": [
         {
@@ -243,20 +345,11 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
-    },
-    "cubic": {
-      "word": "CUBIC",
-      "definitions": [
-        {
-          "text": "A curve of the third degree. Circular cubic. See under Circular.",
-          "partOfSpeech": "noun"
-        }
-      ],
       "relatedWords": [
         "3-D",
         "cube-shaped",
         "cubed",
+        "cubic",
         "cubiform",
         "cuboid",
         "diced",
@@ -380,6 +473,16 @@
       "definitions": [
         {
           "text": "A mucilagenous secretion of certain birds found as the characteristic ingredient of edible bird's-nests.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cubism": {
+      "word": "CUBISM",
+      "definitions": [
+        {
+          "text": "A movement or phase in post-impressionism (which see, below). - - Cu\"bist (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -803,7 +906,29 @@
       ],
       "relatedWords": []
     },
-    "cucullatecucullated": {
+    "cucullate": {
+      "word": "CUCULLATE; CUCULLATED",
+      "definitions": [
+        {
+          "text": "Hooded; cowled; covered, as with a hood. Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the edges toward the base rolled inward, as the leaf of the commonest American blue violet.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.) (a) Having the prothorax elevated so as to form a sort of hood, receiving the head, as in certain insects. (b) Having a hoodlike crest on the head, as certain birds, mammals, and reptiles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cucullated": {
       "word": "CUCULLATE; CUCULLATED",
       "definitions": [
         {
@@ -883,7 +1008,17 @@
       ],
       "relatedWords": []
     },
-    "cucurbitcucurbite": {
+    "cucurbit": {
+      "word": "CUCURBIT; CUCURBITE",
+      "definitions": [
+        {
+          "text": "A vessel of flask for distillation, used with, or forming part of, an alembic; a matrass; -- originally in the shape of a gourd, with a wide mouth. See Alembic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cucurbite": {
       "word": "CUCURBIT; CUCURBITE",
       "definitions": [
         {
@@ -2977,7 +3112,17 @@
       ],
       "relatedWords": []
     },
-    "cultratecultrated": {
+    "cultrate": {
+      "word": "CULTRATE; CULTRATED",
+      "definitions": [
+        {
+          "text": "Sharp-edged and pointed; shaped like a pruning knife, as the beak of certain birds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cultrated": {
       "word": "CULTRATE; CULTRATED",
       "definitions": [
         {
@@ -3452,7 +3597,17 @@
       ],
       "relatedWords": []
     },
-    "culver'sphysicculver'sroot": {
+    "culver'sphysic": {
+      "word": "CULVER'S PHYSIC; CULVER'S ROOT",
+      "definitions": [
+        {
+          "text": "The root of a handsome erect herb (Leptandra, syn. Veronica, Virginica) common in most moist woods of North America , used as an active cathartic and emetic; also, the plant itself.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "culver'sroot": {
       "word": "CULVER'S PHYSIC; CULVER'S ROOT",
       "definitions": [
         {
@@ -3570,7 +3725,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not easily managed; as, a cumbersome contrivance or machine. He holds them in utter contempt, as lumbering, cumbersome,",
+          "text": "Not easily managed; as, a cumbersome contrivance or machine. He holds them in utter contempt, as lumbering, cumbersome, circuitous. I. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3670,7 +3825,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Giving trouble; vexatious. [Obs.]",
+          "text": "Giving trouble; vexatious. [Obs.] A clud of cumbrous gnats. Spenser.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4292,7 +4447,17 @@
       ],
       "relatedWords": []
     },
-    "cuneatecuneated": {
+    "cuneate": {
+      "word": "CUNEATE; CUNEATED",
+      "definitions": [
+        {
+          "text": "Wedge-shaped; (Bot.), wedge-shaped, with the point at the base; as, a cuneate leaf.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cuneated": {
       "word": "CUNEATE; CUNEATED",
       "definitions": [
         {
@@ -4312,7 +4477,63 @@
       ],
       "relatedWords": []
     },
-    "cuneiformcuniform": {
+    "cuneiform": {
+      "word": "CUNEIFORM; CUNIFORM",
+      "definitions": [
+        {
+          "text": "Wedge-shaped; as, a cuneiform bone; -- especially applied to the wedge-shaped or arrowheaded characters of ancient Persian and Assyrian inscriptions. See Arrowheaded.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to, or versed in, the ancient wedge-shaped characters, or the inscriptions in them. \"A cuneiform scholar.\" Rawlinson.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The wedge-shaped characters used in ancient Persian and Assyrian inscriptions. I. Taylor (The Alphabet).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.) (a) One of the three tarsal bones supporting the first, second third metatarsals. They are usually designated as external, middle, and internal, or ectocuniform, mesocuniform, and entocuniform, respectively. (b) One of the carpal bones usually articulating wich the ulna; -- called also pyramidal and ulnare.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "arrowhead",
+        "character",
+        "cuneate",
+        "cuneated",
+        "deltoid",
+        "demotic character",
+        "determinative",
+        "grammalogue",
+        "hieratic symbol",
+        "hieroglyph",
+        "hieroglyphic",
+        "hieroglyphics",
+        "hiragana",
+        "ideogram",
+        "ideograph",
+        "kana",
+        "katakana",
+        "logogram",
+        "logograph",
+        "ogham",
+        "oxygonal",
+        "phonetic",
+        "phonetic symbol",
+        "pictogram",
+        "pictograph",
+        "radical",
+        "rune",
+        "shorthand",
+        "triangular",
+        "trigonal",
+        "trilateral",
+        "wedge",
+        "word letter"
+      ]
+    },
+    "cuniform": {
       "word": "CUNEIFORM; CUNIFORM",
       "definitions": [
         {
@@ -5543,7 +5764,7 @@
       "word": "CURABLE",
       "definitions": [
         {
-          "text": "Capable of being cured; admitting remedy. \"Curable diseases.\"",
+          "text": "Capable of being cured; admitting remedy. \"Curable diseases.\" Harvey.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5570,7 +5791,17 @@
         "reversible"
       ]
     },
-    "curacaocuracoa": {
+    "curacao": {
+      "word": "CURACAO; CURACOA",
+      "definitions": [
+        {
+          "text": "A liqueur, or cordial, flavored with orange peel, cinnamon, and mace; -- first made at the island of Curaçcao.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "curacoa": {
       "word": "CURACAO; CURACOA",
       "definitions": [
         {
@@ -5633,7 +5864,17 @@
         "vicarship"
       ]
     },
-    "curarecurari": {
+    "curare": {
+      "word": "CURARE; CURARI",
+      "definitions": [
+        {
+          "text": "A black resinoid extract prepared by the South American Indians from the bark of several species of Strychnos (S. toxifera, etc.). It sometimes has little effect when taken internally, but is quickly fatal when introduced into the blood, and used by the Indians as an arrow poison. [Written also urari, woorali, woorari, etc.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "curari": {
       "word": "CURARE; CURARI",
       "definitions": [
         {
@@ -8419,7 +8660,7 @@
       "word": "CURRISH",
       "definitions": [
         {
-          "text": "Having the qualities, or exhibiting the characteristics, of a cur; snarling; quarrelsome; snappish; churlish; hence, also malicious; malignant; brutal. Thy currish spirit Governed a wolf. Shak.",
+          "text": "Having the qualities, or exhibiting the characteristics, of a cur; snarling; quarrelsome; snappish; churlish; hence, also malicious; malignant; brutal. Thy currish spirit Governed a wolf. Shak. Some currish plot, -- some trick. Lockhart.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8437,7 +8678,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To beat or bruise; to drub; -- said of persons. I have seen him curry a fellow's carcass handsomely. Beau. & FL.",
+          "text": "To beat or bruise; to drub; -- said of persons. I have seen him curry a fellow's carcass handsomely. Beau. & FL. To curry favor, to seek to gain favor by flattery or attentions. See Favor, n.",
           "partOfSpeech": "verb"
         },
         {
@@ -9962,7 +10203,27 @@
       ],
       "relatedWords": []
     },
-    "curtalaxcurtleaxcurtelasse": {
+    "curtalax": {
+      "word": "CURTAL AX; CURTLE AX; CURTELASSE",
+      "definitions": [
+        {
+          "text": "A corruption of Cutlass.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "curtleax": {
+      "word": "CURTAL AX; CURTLE AX; CURTELASSE",
+      "definitions": [
+        {
+          "text": "A corruption of Cutlass.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "curtelasse": {
       "word": "CURTAL AX; CURTLE AX; CURTELASSE",
       "definitions": [
         {
@@ -10282,7 +10543,7 @@
       ],
       "relatedWords": []
     },
-    "curvalcurvant": {
+    "curval": {
       "word": "CURVAL; CURVANT",
       "definitions": [
         {
@@ -10292,7 +10553,27 @@
       ],
       "relatedWords": []
     },
-    "curvatecurvated": {
+    "curvant": {
+      "word": "CURVAL; CURVANT",
+      "definitions": [
+        {
+          "text": "Bowed; bent; curved.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "curvate": {
+      "word": "CURVATE; CURVATED",
+      "definitions": [
+        {
+          "text": "Bent in a regular form; curved.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "curvated": {
       "word": "CURVATE; CURVATED",
       "definitions": [
         {
@@ -10659,7 +10940,17 @@
       ],
       "relatedWords": []
     },
-    "curvilinealcurvilinear": {
+    "curvilineal": {
+      "word": "CURVILINEAL; CURVILINEAR",
+      "definitions": [
+        {
+          "text": "Consisting of, or bounded by, curved lines; as, a curvilinear figure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "curvilinear": {
       "word": "CURVILINEAL; CURVILINEAR",
       "definitions": [
         {
@@ -11329,11 +11620,15 @@
         {
           "text": "To make pointed or sharp.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Having a sharp end, like the point of a spear; terminating in a hard point; as, a cuspidate leaf.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "cuspidatecuspidated": {
+    "cuspidated": {
       "word": "CUSPIDATE; CUSPIDATED",
       "definitions": [
         {
@@ -15102,11 +15397,23 @@
         {
           "text": "A knife. [Obs.] Bale.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cephalopod of the genus Sepia, having an internal shell, large eyes, and ten arms furnished with denticulated suckers, by means of which it secures its prey. The name is sometimes applied to dibranchiate cephalopods generally. pursued, it throws out a dark liquid that clouds the water, enabling it to escape observation.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A foul-mouthed fellow. \"An you play the saucy cuttle me.\" Shak.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "cuttlecuttlefish": {
+    "cuttlefish": {
       "word": "CUTTLE; CUTTLEFISH",
       "definitions": [
         {
@@ -15249,16 +15556,6 @@
         },
         {
           "text": "A small vessel with at least two flat and transparent sides, used to hold a liquid sample to be analysed in the light path of a spectrometer. quartz is typically used. For visible-light spectrometry, plastic cuvettes may be employed. Occasionally, small vessels used for other laboratory purposes are called cuvettes. cuvette holder, (Spectrometry) A small device used to hold one or more cuvettes[3], shaped specifically to fit in the sample chamber of a particular type of spectrometer, with openings to permit light to pass through the holder and the cuvettes, and designed so as to hold the cuvette accurately and reproducibly within the light path of the spectrometer. For cuvettes with a square horizontal cross-section, the compartments will have a corresponding square cross-section, usu. slightly larger than the cuvette.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "curryohggarawengarwentomakereadycfcarousegarb": {
-      "word": "curry, OHG. garawen, garwen, to make ready. Cf. Carouse, Garb",
-      "definitions": [
-        {
-          "text": "Ready; dexterous; eager; lively; quick to move. [Obs.] \"Be yare in thy preparation.\" Shak. The lesser [ship] will come and go, leave or take, and is yare; whereas the greater is slow. Sir W. Raleigh.",
           "partOfSpeech": "noun"
         }
       ],

@@ -1154,8 +1154,12 @@
       ]
     },
     "capel": {
-      "word": "CAPEL",
+      "word": "CAPEL; CAPLE",
       "definitions": [
+        {
+          "text": "A horse; a nag. [Obs.] Chaucer. Holland.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A composite stone (quartz, schorl, and hornlende) in the walls of tin and copper lodes.",
           "partOfSpeech": "noun"
@@ -1168,16 +1172,6 @@
       "definitions": [
         {
           "text": "See Capelin.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "capelcaple": {
-      "word": "CAPEL; CAPLE",
-      "definitions": [
-        {
-          "text": "A horse; a nag. [Obs.] Chaucer. Holland.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1386,7 +1380,7 @@
       ],
       "relatedWords": []
     },
-    "caperbushcapertree": {
+    "caperbush": {
       "word": "CAPER BUSH; CAPER TREE",
       "definitions": [
         {
@@ -1396,7 +1390,17 @@
       ],
       "relatedWords": []
     },
-    "capercailziecapercally": {
+    "capercailzie": {
+      "word": "CAPERCAILZIE; CAPERCALLY",
+      "definitions": [
+        {
+          "text": "A species of grouse (Tetrao uragallus) of large size and fine flavor, found in northern Europe and formerly in Scotland; -- called also cock of the woods. [Written also capercaillie, capercaili.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capercally": {
       "word": "CAPERCAILZIE; CAPERCALLY",
       "definitions": [
         {
@@ -1422,6 +1426,16 @@
         {
           "text": "One who capers, leaps, and skips about, or dances. The nimble capperer on the cord. Dryden.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capertree": {
+      "word": "CAPER BUSH; CAPER TREE",
+      "definitions": [
+        {
+          "text": "See Capper, a plant, 2.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1692,7 +1706,39 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Money, property, or stock employed in trade, manufactures,",
+          "text": "Money, property, or stock employed in trade, manufactures, etc.; the sum invested or lent, as distinguished from the income or interest. See Capital stock, under Capital, a.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Polit. Econ.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That portion of the produce of industry, which may be directly employed either to support human beings or to assist in production. M'Culloch. The capital of a civilized community includes fixed capital (i.e. buildings, machines, and roads used in the course of production and exchange) amd circulating capital (i.e., food, fuel, money, etc., spent in the course of production and exchange). T. Raleing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything which can be used to increase one's power or influence. He tried to make capital out of his rival's discomfiture. London Times.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Fort.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An imaginary line dividing a bastion, ravelin, or other work, into two equal parts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A chapter, or section, of a book. [Obs.] Holy St. Bernard hath said in the 59th capital. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Capital letter, under Capital, a. Active capital. See under Active, -- Small capital (Print.), a small capital letter. See under Capital, a. producing or accumulating anything to replace it.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2153,7 +2199,17 @@
       ],
       "relatedWords": []
     },
-    "capitanpashacapitanpacha": {
+    "capitanpacha": {
+      "word": "CAPITAN PASHA; CAPITAN PACHA",
+      "definitions": [
+        {
+          "text": "The chief admiral of the Turkish fleet.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitanpasha": {
       "word": "CAPITAN PASHA; CAPITAN PACHA",
       "definitions": [
         {
@@ -2249,7 +2305,17 @@
       ],
       "relatedWords": []
     },
-    "capitoliancapitoline": {
+    "capitolian": {
+      "word": "CAPITOLIAN; CAPITOLINE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Capitol in Rome. \"Capitolian Jove.\" Macaulay. Capitoline games (Antiq.), annual games instituted at Rome by Camillus, in honor of Jupter Capitolinus, on account of the preservation of the Capitol from the Gauls; when reinstituted by Domitian, arter a period of neglect, they were held every fifth year.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capitoline": {
       "word": "CAPITOLIAN; CAPITOLINE",
       "definitions": [
         {
@@ -2504,8 +2570,12 @@
       "relatedWords": []
     },
     "caple": {
-      "word": "CAPLE",
+      "word": "CAPEL; CAPLE",
       "definitions": [
+        {
+          "text": "A horse; a nag. [Obs.] Chaucer. Holland.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Capel.",
           "partOfSpeech": "noun"
@@ -2519,11 +2589,15 @@
         {
           "text": "See Capelin.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The cap or coupling of a flail, through which the thongs pass which connect the handle and swingel. Wright.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "caplincapling": {
+    "capling": {
       "word": "CAPLIN; CAPLING",
       "definitions": [
         {
@@ -2831,7 +2905,92 @@
       ],
       "relatedWords": []
     },
-    "capriciosocapriccioso": {
+    "capriccioso": {
+      "word": "CAPRICIOSO; CAPRICCIOSO",
+      "definitions": [
+        {
+          "text": "In a free, fantastic style.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caprice": {
+      "word": "CAPRICE",
+      "definitions": [
+        {
+          "text": "An abrupt change in feeling, opinion, or action, proceeding from some whim or fancy; a freak; a notion. \"Caprices of appetite.\" W. Irving.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Capriccio.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "arbitrariness",
+        "bee",
+        "boutade",
+        "capriccio",
+        "capriciousness",
+        "carelessness",
+        "characteristic",
+        "conceit",
+        "contrariety",
+        "crank",
+        "crankiness",
+        "crotchet",
+        "crotchetiness",
+        "divertissement",
+        "fancifulness",
+        "fancy",
+        "fantasia",
+        "fantasticality",
+        "foible",
+        "freak",
+        "freakishness",
+        "habit",
+        "heedlessness",
+        "humor",
+        "humoresque",
+        "humorsomeness",
+        "inconsiderateness",
+        "inconsideration",
+        "inconsistency",
+        "maggot",
+        "mannerism",
+        "medley",
+        "megrim",
+        "mood",
+        "moodiness",
+        "motivelessness",
+        "notion",
+        "peculiarity",
+        "perversity",
+        "petulance",
+        "potpourri",
+        "quirkiness",
+        "romance",
+        "romanza",
+        "temper",
+        "temperamentalness",
+        "thoughtlessness",
+        "trait",
+        "trick",
+        "unthoughtfulness",
+        "vagary",
+        "vein",
+        "whim",
+        "whimsicality",
+        "whimsicalness",
+        "whimsy"
+      ]
+    },
+    "capricioso": {
       "word": "CAPRICIOSO; CAPRICCIOSO",
       "definitions": [
         {
@@ -2845,7 +3004,7 @@
       "word": "CAPRICIOUS",
       "definitions": [
         {
-          "text": "Governed or characterized by caprice; apt to change suddenly; freakish; whimsical; changeable. \"Capricious poet.\" Shak. \"Capricious humor.\" Hugh Miller. A capricious partiality to the Romish practices. Hallam.",
+          "text": "Governed or characterized by caprice; apt to change suddenly; freakish; whimsical; changeable. \"Capricious poet.\" Shak. \"Capricious humor.\" Hugh Miller. A capricious partiality to the Romish practices. Hallam. wayward; changeable; unsteady; uncertain; inconstant; arbitrary.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3511,7 +3670,7 @@
       ],
       "relatedWords": []
     },
-    "capsularcapsulary": {
+    "capsular": {
       "word": "CAPSULAR; CAPSULARY",
       "definitions": [
         {
@@ -3521,7 +3680,27 @@
       ],
       "relatedWords": []
     },
-    "capsulatecapsulated": {
+    "capsulary": {
+      "word": "CAPSULAR; CAPSULARY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a capsule; having the nature of a capsula; hollow and fibrous. Capsular ligament (Anat.), a ligamentous bag or capsule surrounding many movable joints in the skeleton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsulate": {
+      "word": "CAPSULATE; CAPSULATED",
+      "definitions": [
+        {
+          "text": "Inclosed in a capsule, or as in a chest or box.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "capsulated": {
       "word": "CAPSULATE; CAPSULATED",
       "definitions": [
         {
@@ -4272,7 +4451,7 @@
       "word": "CAPTIVATING",
       "definitions": [
         {
-          "text": "Having power to captivate or cham; fascinating; as, captivating",
+          "text": "Having power to captivate or cham; fascinating; as, captivating smiles.",
           "partOfSpeech": "adjective"
         }
       ],

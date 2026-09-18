@@ -398,6 +398,16 @@
       ],
       "relatedWords": []
     },
+    "concavous": {
+      "word": "CONCAVOUS",
+      "definitions": [
+        {
+          "text": "Concave. Abp. potter.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "conceal": {
       "word": "CONCEAL",
       "definitions": [
@@ -478,6 +488,111 @@
         }
       ],
       "relatedWords": []
+    },
+    "concealed": {
+      "word": "CONCEALED",
+      "definitions": [
+        {
+          "text": "Hidden; kept from sight; secreted. so carried on the person as to be knowingly or willfully concealed from sight, -- a practice forbidden by statute.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abstruse",
+        "arcane",
+        "beclouded",
+        "behind the curtain",
+        "behind the scenes",
+        "blind",
+        "buried",
+        "cabalistic",
+        "camouflaged",
+        "censored",
+        "classified",
+        "close",
+        "closed",
+        "clouded",
+        "covered",
+        "covert",
+        "cryptic",
+        "dark",
+        "disguised",
+        "eclipsed",
+        "enigmatic",
+        "esoteric",
+        "guarded",
+        "hermetic",
+        "hid",
+        "hidden",
+        "hush-hush",
+        "imperceptible",
+        "in a cloud",
+        "in a fog",
+        "in eclipse",
+        "in purdah",
+        "in the wings",
+        "incommunicado",
+        "indiscernible",
+        "insensible",
+        "invisible",
+        "latent",
+        "mysterious",
+        "obfuscated",
+        "obscure",
+        "obscured",
+        "occult",
+        "out of sight",
+        "privy",
+        "recondite",
+        "restricted",
+        "secluded",
+        "secluse",
+        "secret",
+        "sequestered",
+        "shrouded",
+        "sightless",
+        "smothered",
+        "stifled",
+        "submerged",
+        "suppressed",
+        "top secret",
+        "ulterior",
+        "unapparent",
+        "unbeheld",
+        "unbeholdable",
+        "unbreatheable",
+        "under an eclipse",
+        "under cover",
+        "under house arrest",
+        "under security",
+        "under wraps",
+        "underground",
+        "undiscernible",
+        "undisclosable",
+        "undisclosed",
+        "undivulgable",
+        "undivulged",
+        "unknown",
+        "unnoticed",
+        "unobserved",
+        "unperceivable",
+        "unperceived",
+        "unrealized",
+        "unrevealable",
+        "unrevealed",
+        "unseeable",
+        "unseen",
+        "unspoken",
+        "untellable",
+        "untold",
+        "unutterable",
+        "unuttered",
+        "unviewed",
+        "unwhisperable",
+        "unwitnessed",
+        "viewless",
+        "wrapped in clouds"
+      ]
     },
     "concealer": {
       "word": "CONCEALER",
@@ -1056,7 +1171,7 @@
       "word": "CONCEIVABLE",
       "definitions": [
         {
-          "text": "Capable of being conceived, imagined, or understood. \"Any conceivable weight.\" Bp. Wilkins. It is not conceivable that it should be indeed that very person whose",
+          "text": "Capable of being conceived, imagined, or understood. \"Any conceivable weight.\" Bp. Wilkins. It is not conceivable that it should be indeed that very person whose shape and voice it assumed. Atterbury.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1412,7 +1527,7 @@
       ],
       "relatedWords": []
     },
-    "concenterconcentre": {
+    "concenter": {
       "word": "CONCENTER; CONCENTRE",
       "definitions": [
         {
@@ -1915,12 +2030,40 @@
       ],
       "relatedWords": []
     },
-    "concentric": {
-      "word": "CONCENTRIC",
+    "concentre": {
+      "word": "CONCENTER; CONCENTRE",
       "definitions": [
+        {
+          "text": "To come to one point; to meet in, or converge toward, a common center; to have a common center. God, in whom all perfections concenter. Bp. Beveridge.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To draw or direct to a common center; to bring together at a focus or point, as two or more lines; to concentrate. In thee concentering all their precious beams. Milton. All is concentered in a life intense. Byren.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "concentric": {
+      "word": "CONCENTRIC; CONCENTRICAL",
+      "definitions": [
+        {
+          "text": "Having a common center, as circles of different size, one within another. Concentric circles upon the surface of the water. Sir I. Newton. Concentrical rings like those of an onion. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "That which has a common center with something else. Its pecular relations to its concentrics. Coleridge.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "concentrical": {
+      "word": "CONCENTRIC; CONCENTRICAL",
+      "definitions": [
+        {
+          "text": "Having a common center, as circles of different size, one within another. Concentric circles upon the surface of the water. Sir I. Newton. Concentrical rings like those of an onion. Arbuthnot.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1931,16 +2074,6 @@
         {
           "text": "In a concentric manner.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "concentricconcentrical": {
-      "word": "CONCENTRIC; CONCENTRICAL",
-      "definitions": [
-        {
-          "text": "Having a common center, as circles of different size, one within another. Concentric circles upon the surface of the water. Sir I. Newton. Concentrical rings like those of an onion. Arbuthnot.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3560,7 +3693,7 @@
       ],
       "relatedWords": []
     },
-    "concertofeuropeeuropeanconcert": {
+    "concertofeurope": {
       "word": "CONCERT OF EUROPE; EUROPEAN CONCERT",
       "definitions": [
         {
@@ -3764,7 +3897,7 @@
         "yielding"
       ]
     },
-    "concessionaireconcessionnaire": {
+    "concessionaire": {
       "word": "CONCESSIONAIRE; CONCESSIONNAIRE",
       "definitions": [
         {
@@ -3793,6 +3926,16 @@
       "definitions": [
         {
           "text": "One who favors concession.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "concessionnaire": {
+      "word": "CONCESSIONAIRE; CONCESSIONNAIRE",
+      "definitions": [
+        {
+          "text": "The beneficiary of a concession or grant.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3869,6 +4012,14 @@
         },
         {
           "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Concha, n.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The external ear. See Concha, n., 2.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4056,7 +4207,7 @@
       ],
       "relatedWords": []
     },
-    "conchylaceousconchyliaceous": {
+    "conchylaceous": {
       "word": "CONCHYLACEOUS; CONCHYLIACEOUS",
       "definitions": [
         {
@@ -4066,7 +4217,27 @@
       ],
       "relatedWords": []
     },
-    "conchyliologistconchyliology": {
+    "conchyliaceous": {
+      "word": "CONCHYLACEOUS; CONCHYLIACEOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to shells; resembling a shell; as, conchyliaceous impressions. Kirwan.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conchyliologist": {
+      "word": "CONCHYLIOLOGIST; CONCHYLIOLOGY",
+      "definitions": [
+        {
+          "text": "See Conchologist, and Conchology.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "conchyliology": {
       "word": "CONCHYLIOLOGIST; CONCHYLIOLOGY",
       "definitions": [
         {
@@ -4154,7 +4325,17 @@
       ],
       "relatedWords": []
     },
-    "conciliarconciliary": {
+    "conciliar": {
+      "word": "CONCILIAR; CONCILIARY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or issued by, a council. Jer. Taylor.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "conciliary": {
       "word": "CONCILIAR; CONCILIARY",
       "definitions": [
         {
@@ -5619,7 +5800,25 @@
       ],
       "relatedWords": []
     },
-    "concomitanceconcomitancy": {
+    "concomitance": {
+      "word": "CONCOMITANCE; CONCOMITANCY",
+      "definitions": [
+        {
+          "text": "The state of accompanying; accompaniment. The secondary action subsisteth not alone, but in concomitancy with the other. Sir T. Browne.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(R.C.Ch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The doctrine of the existence of the entire body of Christ in the eucharist, under each element, so that the body and blood are both received by comunication in one kind only.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "concomitancy": {
       "word": "CONCOMITANCE; CONCOMITANCY",
       "definitions": [
         {
@@ -5767,16 +5966,6 @@
         {
           "text": "In company with others; unitedly; concurrently. Bp. pearson.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "concon": {
-      "word": "CON; CON-",
-      "definitions": [
-        {
-          "text": "- (cum, signifying with, together, etc. See Com-.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []

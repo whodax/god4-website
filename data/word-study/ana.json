@@ -144,7 +144,17 @@
       ],
       "relatedWords": []
     },
-    "anabaptisticanabaptistical": {
+    "anabaptistic": {
+      "word": "ANABAPTISTIC; ANABAPTISTICAL",
+      "definitions": [
+        {
+          "text": "Relating or attributed to the Anabaptists, or their doctrines. Milton. Bp. Bull.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anabaptistical": {
       "word": "ANABAPTISTIC; ANABAPTISTICAL",
       "definitions": [
         {
@@ -310,7 +320,7 @@
       ],
       "relatedWords": []
     },
-    "anacanthinianacanths": {
+    "anacanthini": {
       "word": "ANACANTHINI; ANACANTHS",
       "definitions": [
         {
@@ -326,6 +336,16 @@
         {
           "text": "Spineless, as certain fishes.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anacanths": {
+      "word": "ANACANTHINI; ANACANTHS",
+      "definitions": [
+        {
+          "text": "A group of teleostean fishes destitute of spiny fin-rays, as the cod.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -384,7 +404,17 @@
       ],
       "relatedWords": []
     },
-    "anachoretanachoretical": {
+    "anachoret": {
+      "word": "ANACHORET; ANACHORETICAL",
+      "definitions": [
+        {
+          "text": "See Anchoret, Anchoretic. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anachoretical": {
       "word": "ANACHORET; ANACHORETICAL",
       "definitions": [
         {
@@ -404,7 +434,17 @@
       ],
       "relatedWords": []
     },
-    "anachronicanachronical": {
+    "anachronic": {
+      "word": "ANACHRONIC; ANACHRONICAL",
+      "definitions": [
+        {
+          "text": "Characterized by, or involving, anachronism; anachronistic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anachronical": {
       "word": "ANACHRONIC; ANACHRONICAL",
       "definitions": [
         {
@@ -488,6 +528,16 @@
       ],
       "relatedWords": []
     },
+    "anachronous": {
+      "word": "ANACHRONOUS",
+      "definitions": [
+        {
+          "text": "Containing an anachronism; anachronistic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "anaclastic": {
       "word": "ANACLASTIC",
       "definitions": [
@@ -522,6 +572,16 @@
         {
           "text": "A figure by which a speaker appeals to his hearers or opponents for their opinion on the point in debate. Walker.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anacoluthic": {
+      "word": "ANACOLUTHIC",
+      "definitions": [
+        {
+          "text": "Lacking grammatical sequence.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -662,7 +722,17 @@
       ],
       "relatedWords": []
     },
-    "anaerobiaanaerobes": {
+    "anaerobes": {
+      "word": "ANAEROBIA; ANAEROBES",
+      "definitions": [
+        {
+          "text": "Anaërobic bacteria. They are called facultative anaërobia when able to live either in the presence or absence of free oxygen; obligate, or obligatory, anaërobia when they thrive only in its absence.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anaerobia": {
       "word": "ANAEROBIA; ANAEROBES",
       "definitions": [
         {
@@ -768,11 +838,15 @@
         {
           "text": "Work chased or embossed relief.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to the art of chasing or embossing in relief; anaglyptic; -- opposed to diaglyptic or sunk work.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "anaglyphicanaglyphical": {
+    "anaglyphical": {
       "word": "ANAGLYPHIC; ANAGLYPHICAL",
       "definitions": [
         {
@@ -856,11 +930,21 @@
       ],
       "relatedWords": []
     },
-    "anagogicanagogical": {
+    "anagogic": {
       "word": "ANAGOGIC; ANAGOGICAL",
       "definitions": [
         {
-          "text": "Mystical; having a secondary spiritual meaning; as, the rest of the Sabbath, in an anagogical sense, signifies the repose of the",
+          "text": "Mystical; having a secondary spiritual meaning; as, the rest of the Sabbath, in an anagogical sense, signifies the repose of the saints in heaven; an anagogical explication.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anagogical": {
+      "word": "ANAGOGIC; ANAGOGICAL",
+      "definitions": [
+        {
+          "text": "Mystical; having a secondary spiritual meaning; as, the rest of the Sabbath, in an anagogical sense, signifies the repose of the saints in heaven; an anagogical explication.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -926,6 +1010,26 @@
         "wordplay"
       ]
     },
+    "anagrammatic": {
+      "word": "ANAGRAMMATIC; ANAGRAMMATICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, containing, or making, anagram.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anagrammatical": {
+      "word": "ANAGRAMMATIC; ANAGRAMMATICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, containing, or making, anagram.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "anagrammatism": {
       "word": "ANAGRAMMATISM",
       "definitions": [
@@ -966,7 +1070,17 @@
       ],
       "relatedWords": []
     },
-    "anakimanaks": {
+    "anakim": {
+      "word": "ANAKIM; ANAKS",
+      "definitions": [
+        {
+          "text": "A race of giants living in Palestine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anaks": {
       "word": "ANAKIM; ANAKS",
       "definitions": [
         {
@@ -1062,6 +1176,16 @@
       ],
       "relatedWords": []
     },
+    "analecta": {
+      "word": "ANALECTS; ANALECTA",
+      "definitions": [
+        {
+          "text": "A collection of literary fragments.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "analectic": {
       "word": "ANALECTIC",
       "definitions": [
@@ -1072,7 +1196,7 @@
       ],
       "relatedWords": []
     },
-    "analectsanalecta": {
+    "analects": {
       "word": "ANALECTS; ANALECTA",
       "definitions": [
         {
@@ -1080,7 +1204,83 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Festschrift",
+        "adage",
+        "album",
+        "ana",
+        "anthology",
+        "aphorism",
+        "apothegm",
+        "axiom",
+        "beauties",
+        "byword",
+        "canon",
+        "catchword",
+        "chrestomathy",
+        "clippings",
+        "collectanea",
+        "collected sayings",
+        "collected works",
+        "collection",
+        "compilation",
+        "complete works",
+        "current saying",
+        "cuttings",
+        "delectus",
+        "dictate",
+        "dictum",
+        "distich",
+        "epigram",
+        "excerpta",
+        "excerpts",
+        "expression",
+        "extracts",
+        "florilegium",
+        "flowers",
+        "fragments",
+        "garden",
+        "garland",
+        "gleanings",
+        "gnome",
+        "golden saying",
+        "maxim",
+        "miscellanea",
+        "miscellany",
+        "moral",
+        "mot",
+        "motto",
+        "omnibus",
+        "oracle",
+        "photograph album",
+        "phrase",
+        "pithy saying",
+        "posy",
+        "precept",
+        "prescript",
+        "proverb",
+        "proverbial saying",
+        "proverbs",
+        "quotation book",
+        "saw",
+        "saying",
+        "scrapbook",
+        "sentence",
+        "sententious expression",
+        "sloka",
+        "stock saying",
+        "sutra",
+        "symposium",
+        "teaching",
+        "text",
+        "verse",
+        "wisdom",
+        "wisdom literature",
+        "wise saying",
+        "witticism",
+        "word",
+        "words of wisdom"
+      ]
     },
     "analemma": {
       "word": "ANALEMMA",
@@ -1146,7 +1346,17 @@
         "tonic"
       ]
     },
-    "analgenanalgene": {
+    "analgen": {
+      "word": "ANALGEN; ANALGENE",
+      "definitions": [
+        {
+          "text": "A crystalline compound used as an antipyretic and analgesic, employed chiefly in rheumatism and neuralgia. It is a complex derivative of quinoline.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "analgene": {
       "word": "ANALGEN; ANALGENE",
       "definitions": [
         {
@@ -1650,7 +1860,17 @@
         "weighing"
       ]
     },
-    "analyseanalyser": {
+    "analyse": {
+      "word": "ANALYSE; ANALYSER",
+      "definitions": [
+        {
+          "text": "Same as Analyze, Analyzer, etc.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "analyser": {
       "word": "ANALYSE; ANALYSER",
       "definitions": [
         {
@@ -1977,22 +2197,143 @@
         "tryer-out"
       ]
     },
+    "analytic": {
+      "word": "ANALYTIC; ANALYTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to analysis; resolving into elements or constituent parts; as, an analytical experiment; analytic reasoning; Geometry. characterized by grammatical endings. characteristics of the species or other groups are arranged so as to facilitate the determination of their names.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "a fortiori",
+        "a posteriori",
+        "a priori",
+        "acute",
+        "algebraic",
+        "analytical",
+        "categorical",
+        "classificatory",
+        "conditional",
+        "deductive",
+        "deep",
+        "dialectic",
+        "discursive",
+        "enthymematic",
+        "enumerative",
+        "epagogic",
+        "examinational",
+        "examinatorial",
+        "examining",
+        "explorational",
+        "explorative",
+        "exploratory",
+        "fact-finding",
+        "feeling",
+        "geometric",
+        "groping",
+        "heuristic",
+        "hypothetical",
+        "indagative",
+        "inductive",
+        "inferential",
+        "inspectional",
+        "inspectorial",
+        "investigational",
+        "investigative",
+        "investigatory",
+        "keen",
+        "maieutic",
+        "mathematical",
+        "numeric",
+        "penetrating",
+        "piercing",
+        "profound",
+        "ratiocinative",
+        "ratiocinatory",
+        "rational",
+        "reasoning",
+        "schematic",
+        "segmental",
+        "sharp",
+        "soritical",
+        "subtle",
+        "syllogistic",
+        "synthetic",
+        "tentative",
+        "testing",
+        "trying",
+        "zetetic"
+      ]
+    },
+    "analytical": {
+      "word": "ANALYTIC; ANALYTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to analysis; resolving into elements or constituent parts; as, an analytical experiment; analytic reasoning; Geometry. characterized by grammatical endings. characteristics of the species or other groups are arranged so as to facilitate the determination of their names.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "a fortiori",
+        "a posteriori",
+        "a priori",
+        "algebraic",
+        "analytic",
+        "categorical",
+        "classificatory",
+        "conditional",
+        "deductive",
+        "dialectic",
+        "discursive",
+        "enthymematic",
+        "enumerative",
+        "epagogic",
+        "examinational",
+        "examinatorial",
+        "examining",
+        "explorational",
+        "explorative",
+        "exploratory",
+        "fact-finding",
+        "feeling",
+        "geometric",
+        "groping",
+        "heuristic",
+        "hypothetical",
+        "indagative",
+        "inductive",
+        "inferential",
+        "inspectional",
+        "inspectorial",
+        "investigational",
+        "investigative",
+        "investigatory",
+        "maieutic",
+        "mathematical",
+        "numeric",
+        "ratiocinative",
+        "ratiocinatory",
+        "rational",
+        "reasoning",
+        "schematic",
+        "segmental",
+        "soritical",
+        "subtle",
+        "syllogistic",
+        "synthetic",
+        "tentative",
+        "testing",
+        "trying",
+        "zetetic"
+      ]
+    },
     "analytically": {
       "word": "ANALYTICALLY",
       "definitions": [
         {
           "text": "In an analytical manner.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "analyticanalytical": {
-      "word": "ANALYTIC; ANALYTICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to analysis; resolving into elements or constituent parts; as, an analytical experiment; analytic reasoning; Geometry. characterized by grammatical endings. characteristics of the species or other groups are arranged so as to facilitate the determination of their names.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2391,7 +2732,17 @@
       ],
       "relatedWords": []
     },
-    "anapaestanapaestic": {
+    "anapaest": {
+      "word": "ANAPAEST; ANAPAESTIC",
+      "definitions": [
+        {
+          "text": "Same as Anapest, Anapestic.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "anapaestic": {
       "word": "ANAPAEST; ANAPAESTIC",
       "definitions": [
         {
@@ -2675,7 +3026,160 @@
       ],
       "relatedWords": []
     },
-    "anarchicanarchical": {
+    "anarchic": {
+      "word": "ANARCHIC; ANARCHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to anarchy; without rule or government; in political confusion; tending to produce anarchy; as, anarchic despotism; anarchical opinions.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Bolshevik",
+        "Bolshevist",
+        "Carbonarist",
+        "Castroist",
+        "Castroite",
+        "Communist",
+        "Fenian",
+        "Guevarist",
+        "Jacobinic",
+        "Leninist",
+        "Maoist",
+        "Marxist",
+        "Mau-Mau",
+        "Trotskyist",
+        "Trotskyite",
+        "Vietcong",
+        "actionable",
+        "against the law",
+        "agin the government",
+        "amorphic",
+        "amorphous",
+        "anarchial",
+        "anarchistic",
+        "angry",
+        "anomic",
+        "antinomian",
+        "arsy-varsy",
+        "ass-backwards",
+        "baggy",
+        "balled up",
+        "black-market",
+        "blobby",
+        "blurred",
+        "blurry",
+        "blustering",
+        "blusterous",
+        "blustery",
+        "bollixed up",
+        "bootleg",
+        "chaotic",
+        "characterless",
+        "chargeable",
+        "confused",
+        "contraband",
+        "contrary to law",
+        "criminal",
+        "disorderly",
+        "disorganized",
+        "featureless",
+        "felonious",
+        "flawed",
+        "formless",
+        "fouled up",
+        "frantic",
+        "frenzied",
+        "furious",
+        "fuzzy",
+        "galley-west",
+        "hazy",
+        "hellish",
+        "helter-skelter",
+        "higgledy-piggledy",
+        "hugger-mugger",
+        "illegal",
+        "illegitimate",
+        "illicit",
+        "impermissible",
+        "in a mess",
+        "inchoate",
+        "indecisive",
+        "indefinite",
+        "indeterminate",
+        "inform",
+        "infuriate",
+        "insensate",
+        "irregular",
+        "jumbled",
+        "justiciable",
+        "kaleidoscopic",
+        "lawless",
+        "lumpen",
+        "mad",
+        "mindless",
+        "misty",
+        "mixed up",
+        "mucked up",
+        "muddled",
+        "nihilistic",
+        "nonconstitutional",
+        "nondescript",
+        "nonlegal",
+        "nonlicit",
+        "obscure",
+        "orderless",
+        "orgasmic",
+        "orgastic",
+        "outlaw",
+        "outlawed",
+        "pandemoniac",
+        "punishable",
+        "raging",
+        "ravening",
+        "raving",
+        "revolutionist",
+        "rip-roaring",
+        "sans-culottic",
+        "sans-culottish",
+        "scattered",
+        "screwed up",
+        "shapeless",
+        "skimble-skamble",
+        "snafu",
+        "storming",
+        "stormy",
+        "syndicalistic",
+        "tempestuous",
+        "terrorist",
+        "topsy-turvy",
+        "triable",
+        "troublous",
+        "tumultuous",
+        "turbulent",
+        "unallowed",
+        "unauthorized",
+        "unclear",
+        "unconstitutional",
+        "undefined",
+        "under-the-counter",
+        "under-the-table",
+        "unlawful",
+        "unofficial",
+        "unordered",
+        "unorganized",
+        "unruly",
+        "unstatutory",
+        "unwarrantable",
+        "unwarranted",
+        "uproarious",
+        "upside-down",
+        "vague",
+        "wild",
+        "wrongful"
+      ]
+    },
+    "anarchical": {
       "word": "ANARCHIC; ANARCHICAL",
       "definitions": [
         {
@@ -3166,6 +3670,26 @@
         "whammy"
       ]
     },
+    "anathematic": {
+      "word": "ANATHEMATIC; ANATHEMATICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or having the nature of, an anathema.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anathematical": {
+      "word": "ANATHEMATIC; ANATHEMATICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or having the nature of, an anathema.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "anathematism": {
       "word": "ANATHEMATISM",
       "definitions": [
@@ -3256,22 +3780,32 @@
       ],
       "relatedWords": []
     },
+    "anatomic": {
+      "word": "ANATOMIC; ANATOMICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to anatomy or dissection; as, the anatomic art; anatomical observations. Hume.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anatomical": {
+      "word": "ANATOMIC; ANATOMICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to anatomy or dissection; as, the anatomic art; anatomical observations. Hume.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "anatomically": {
       "word": "ANATOMICALLY",
       "definitions": [
         {
           "text": "In an anatomical manner; by means of dissection.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "anatomicanatomical": {
-      "word": "ANATOMIC; ANATOMICAL",
-      "definitions": [
-        {
-          "text": "Of or relating to anatomy or dissection; as, the anatomic art; anatomical observations. Hume.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3658,7 +4192,17 @@
       ],
       "relatedWords": []
     },
-    "anatropalanatropous": {
+    "anatropal": {
+      "word": "ANATROPAL; ANATROPOUS",
+      "definitions": [
+        {
+          "text": "Having the ovule inverted at an early period in its development, so that the chalaza is as the apparent apex; -- opposed to orthotropous. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anatropous": {
       "word": "ANATROPAL; ANATROPOUS",
       "definitions": [
         {

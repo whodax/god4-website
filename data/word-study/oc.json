@@ -729,11 +729,25 @@
       ],
       "relatedWords": []
     },
-    "ocherousochreous": {
+    "ocherous": {
       "word": "OCHEROUS; OCHREOUS",
       "definitions": [
         {
           "text": "Of or pertaining to ocher; containing or resembling ocher; as, ocherous matter; ocherous soil.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ochreous": {
+      "word": "OCHEROUS; OCHREOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to ocher; containing or resembling ocher; as, ocherous matter; ocherous soil.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Ocherous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -779,11 +793,21 @@
       ],
       "relatedWords": []
     },
-    "ochlocraticochlocratical": {
+    "ochlocratic": {
       "word": "OCHLOCRATIC; OCHLOCRATICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to ochlocracy; having the form or character of",
+          "text": "Of or pertaining to ochlocracy; having the form or character of an ochlocracy; mobocratic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ochlocratical": {
+      "word": "OCHLOCRATIC; OCHLOCRATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to ochlocracy; having the form or character of an ochlocracy; mobocratic.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -831,7 +855,7 @@
       ],
       "relatedWords": []
     },
-    "ochreateochreated": {
+    "ochreate": {
       "word": "OCHREATE; OCHREATED",
       "definitions": [
         {
@@ -849,11 +873,19 @@
       ],
       "relatedWords": []
     },
-    "ochreous": {
-      "word": "OCHREOUS",
+    "ochreated": {
+      "word": "OCHREATE; OCHREATED",
       "definitions": [
         {
-          "text": "See Ocherous.",
+          "text": "Wearing or furnished with an ochrea or legging; wearing boots; booted. A scholar undertook...to address himself ochreated unto the vice chancellor. Fuller.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Provided with ochrea, or sheathformed stipules, as the rhubarb, yellow dock, and knotgrass.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -923,7 +955,17 @@
       ],
       "relatedWords": []
     },
-    "ocreateocreated": {
+    "ocreate": {
+      "word": "OCREATE; OCREATED",
+      "definitions": [
+        {
+          "text": "Same as Ochreate, Ochreated.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ocreated": {
       "word": "OCREATE; OCREATED",
       "definitions": [
         {
@@ -938,6 +980,10 @@
       "definitions": [
         {
           "text": "A prefix meaning eight. See Octo-.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A combining form meaning eight; as in octodecimal, octodecimal, octolocular.",
           "partOfSpeech": ""
         }
       ],
@@ -1091,7 +1137,17 @@
       ],
       "relatedWords": []
     },
-    "octandrianoctandrous": {
+    "octandrian": {
+      "word": "OCTANDRIAN; OCTANDROUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Octandria; having eight distinct stamens.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "octandrous": {
       "word": "OCTANDRIAN; OCTANDROUS",
       "definitions": [
         {
@@ -1107,6 +1163,16 @@
         {
           "text": "Any one of a group of metametric hydrocarcons (C8H18) of the methane series. The most important is a colorless, volatile, inflammable liquid, found in petroleum, and a constituent of benzene or ligroin.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "octangular": {
+      "word": "OCTANGULAR",
+      "definitions": [
+        {
+          "text": "Having eight angles; eight-angled.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1253,7 +1319,7 @@
       "word": "OCTENNIAL",
       "definitions": [
         {
-          "text": "Happening every eighth year; also, lasting a period of eight",
+          "text": "Happening every eighth year; also, lasting a period of eight years. Johnson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1303,7 +1369,7 @@
       ],
       "relatedWords": []
     },
-    "octoocta": {
+    "octo": {
       "word": "OCTO-; OCTA-",
       "definitions": [
         {
@@ -1481,7 +1547,17 @@
       ],
       "relatedWords": []
     },
-    "octogynianoctogynous": {
+    "octogynian": {
+      "word": "OCTOGYNIAN; OCTOGYNOUS",
+      "definitions": [
+        {
+          "text": "Having eight pistils; octagynous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "octogynous": {
       "word": "OCTOGYNIAN; OCTOGYNOUS",
       "definitions": [
         {
@@ -1645,7 +1721,17 @@
       ],
       "relatedWords": []
     },
-    "octosyllabicoctosyllabical": {
+    "octosyllabic": {
+      "word": "OCTOSYLLABIC; OCTOSYLLABICAL",
+      "definitions": [
+        {
+          "text": "Consisting of or containing eight syllables.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "octosyllabical": {
       "word": "OCTOSYLLABIC; OCTOSYLLABICAL",
       "definitions": [
         {
@@ -1785,7 +1871,21 @@
       ],
       "relatedWords": []
     },
-    "oculateoculated": {
+    "oculate": {
+      "word": "OCULATE; OCULATED",
+      "definitions": [
+        {
+          "text": "Furnished with eyes.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having spots or holes resembling eyes; ocellated.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "oculated": {
       "word": "OCULATE; OCULATED",
       "definitions": [
         {

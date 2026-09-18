@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "ann": {
+      "word": "ANN; ANNAT",
+      "definitions": [
+        {
+          "text": "A half years's stipend, over and above what is owing for the incumbency, due to a minister's heirs after his decease.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "anna": {
       "word": "ANNA",
       "definitions": [
@@ -226,7 +236,7 @@
         "vestige"
       ]
     },
-    "annannat": {
+    "annat": {
       "word": "ANN; ANNAT",
       "definitions": [
         {
@@ -236,7 +246,17 @@
       ],
       "relatedWords": []
     },
-    "annatsannates": {
+    "annates": {
+      "word": "ANNATS; ANNATES",
+      "definitions": [
+        {
+          "text": "The first year's profits of a spiritual preferment, anciently paid by the clergy to the pope; first fruits. In England, they now form a fund for the augmentation of poor livings.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "annats": {
       "word": "ANNATS; ANNATES",
       "definitions": [
         {
@@ -294,6 +314,20 @@
       ],
       "relatedWords": []
     },
+    "annelid": {
+      "word": "ANNELID; ANNELIDAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Annelida.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the Annelida.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "annelida": {
       "word": "ANNELIDA",
       "definitions": [
@@ -304,7 +338,7 @@
       ],
       "relatedWords": []
     },
-    "annelidannelidan": {
+    "annelidan": {
       "word": "ANNELID; ANNELIDAN",
       "definitions": [
         {
@@ -728,6 +762,16 @@
       ],
       "relatedWords": []
     },
+    "annicut": {
+      "word": "ANICUT; ANNICUT",
+      "definitions": [
+        {
+          "text": "A dam or mole made in the course of a stream for the purpose of regulating the flow of a system of irrigation. [India] Brande & C.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "annihilable": {
       "word": "ANNIHILABLE",
       "definitions": [
@@ -1035,7 +1079,7 @@
       "word": "ANNIVERSARY",
       "definitions": [
         {
-          "text": "Returning with the year, at a stated time; annual; yearly; as,",
+          "text": "Returning with the year, at a stated time; annual; yearly; as, an anniversary feast. Anniversary day (R. C. Ch.). See Anniversary, n., 2. meetings of religious and benevolent societies are held in Boston and New York. [Eastern U. S.]",
           "partOfSpeech": "adjective"
         },
         {
@@ -1338,7 +1382,7 @@
       ],
       "relatedWords": []
     },
-    "annottoarnotto": {
+    "annotto": {
       "word": "ANNOTTO; ARNOTTO",
       "definitions": [
         {
@@ -2023,6 +2067,69 @@
       ],
       "relatedWords": []
     },
+    "annoying": {
+      "word": "ANNOYING",
+      "definitions": [
+        {
+          "text": "That annoys; molesting; vexatious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "aggravating",
+        "aggravative",
+        "backbreaking",
+        "besetting",
+        "bothering",
+        "bothersome",
+        "burdensome",
+        "chafing",
+        "contentious",
+        "crushing",
+        "disquieting",
+        "distressful",
+        "distressing",
+        "disturbing",
+        "exasperating",
+        "exasperative",
+        "fretting",
+        "galling",
+        "grueling",
+        "harassing",
+        "heavy",
+        "hefty",
+        "importunate",
+        "importune",
+        "irking",
+        "irksome",
+        "irritating",
+        "onerous",
+        "oppressive",
+        "painful",
+        "pesky",
+        "pestering",
+        "pestiferous",
+        "pestilent",
+        "pestilential",
+        "plaguesome",
+        "plaguey",
+        "plaguing",
+        "provocative",
+        "provoking",
+        "teasing",
+        "tiresome",
+        "tormenting",
+        "troublesome",
+        "troubling",
+        "trying",
+        "upsetting",
+        "vexatious",
+        "vexing",
+        "wearisome",
+        "worrisome",
+        "worrying"
+      ]
+    },
     "annoyous": {
       "word": "ANNOYOUS",
       "definitions": [
@@ -2504,11 +2611,23 @@
         {
           "text": "One of the Annulata.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Furnished with, or composed of, rings; ringed; surrounded by rings of color.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Of or pertaining to the Annulata.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "annulateannulated": {
+    "annulated": {
       "word": "ANNULATE; ANNULATED",
       "definitions": [
         {

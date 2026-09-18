@@ -601,7 +601,36 @@
       ],
       "relatedWords": []
     },
-    "ciliateciliated": {
+    "ciliate": {
+      "word": "CILIATE; CILIATED",
+      "definitions": [
+        {
+          "text": "Provided with, or surrounded by, cilia; as, a ciliate leaf; endowed with vibratory motion; as, the ciliated epithelium of the windpipe.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bristly",
+        "bushy",
+        "cirrose",
+        "fleecy",
+        "flocculent",
+        "furry",
+        "fuzzy",
+        "hairy",
+        "hirsute",
+        "hispid",
+        "lanate",
+        "matted",
+        "pilose",
+        "pubescent",
+        "shagged",
+        "shaggy",
+        "unshorn",
+        "woolly"
+      ]
+    },
+    "ciliated": {
       "word": "CILIATE; CILIATED",
       "definitions": [
         {
@@ -645,7 +674,17 @@
       ],
       "relatedWords": []
     },
-    "ciliformciliiform": {
+    "ciliform": {
+      "word": "CILIFORM; CILIIFORM",
+      "definitions": [
+        {
+          "text": "Having the form of cilia; very fine or slender.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ciliiform": {
       "word": "CILIFORM; CILIIFORM",
       "definitions": [
         {
@@ -670,6 +709,16 @@
       "definitions": [
         {
           "text": "See Cilia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cill": {
+      "word": "CILL",
+      "definitions": [
+        {
+          "text": "See Sill., n. a foundation.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1136,7 +1185,7 @@
       "word": "CINCINNUS",
       "definitions": [
         {
-          "text": "A form of monochasium in which the lateral branches arise",
+          "text": "A form of monochasium in which the lateral branches arise alternately on opposite sides of the false axis; -- called also scorpioid cyme. --Cin*cin\"nal (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1343,7 +1392,17 @@
       ],
       "relatedWords": []
     },
-    "cinematiccinematical": {
+    "cinematic": {
+      "word": "CINEMATIC; CINEMATICAL",
+      "definitions": [
+        {
+          "text": "See Kinematic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cinematical": {
       "word": "CINEMATIC; CINEMATICAL",
       "definitions": [
         {
@@ -1372,6 +1431,16 @@
         },
         {
           "text": "A camera for taking chronophotographs for exhibition by the instrument described above.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cinematographer": {
+      "word": "CINEMATOGRAPHER",
+      "definitions": [
+        {
+          "text": "One who exhibits moving pictures or who takes chronophotographs by the cinematograph. -- Cin`e*mat`o*graph\"ic (#), a. -- Cin`e*mat`o*graph\"ic*al*ly (#), adv.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2048,7 +2117,17 @@
       ],
       "relatedWords": []
     },
-    "circensialcircensian": {
+    "circensial": {
+      "word": "CIRCENSIAL; CIRCENSIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or held in, the Circus, In Rome. The pleasure of the Circensian shows. Holyday.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "circensian": {
       "word": "CIRCENSIAL; CIRCENSIAN",
       "definitions": [
         {
@@ -2537,7 +2616,7 @@
       "word": "CIRCLER",
       "definitions": [
         {
-          "text": "A mean or inferior poet, perhaps from his habit of wandering",
+          "text": "A mean or inferior poet, perhaps from his habit of wandering around as a stroller; an itinerant poet. Also, a name given to the cyclic poets. See under Cyclic, a. [Obs.] B. Jonson.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2882,7 +2961,7 @@
       "word": "CIRCUITOUS",
       "definitions": [
         {
-          "text": "Going round in a circuit; roundabout; indirect; as, a",
+          "text": "Going round in a circuit; roundabout; indirect; as, a circuitous road; a circuitous manner of accompalishing an end.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3714,6 +3793,16 @@
       ],
       "relatedWords": []
     },
+    "circumambulate": {
+      "word": "CIRCUMAMBULATE",
+      "definitions": [
+        {
+          "text": "To walk round about.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "circumbendibus": {
       "word": "CIRCUMBENDIBUS",
       "definitions": [
@@ -4186,7 +4275,7 @@
       ],
       "relatedWords": []
     },
-    "circumfluentcircumfluous": {
+    "circumfluent": {
       "word": "CIRCUMFLUENT; CIRCUMFLUOUS",
       "definitions": [
         {
@@ -4196,7 +4285,27 @@
       ],
       "relatedWords": []
     },
-    "circumforaneancircumforaneous": {
+    "circumfluous": {
+      "word": "CIRCUMFLUENT; CIRCUMFLUOUS",
+      "definitions": [
+        {
+          "text": "Flowing round; surrounding in the manner of a fluid. \"The deep, circumfluent waves.\" Pope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "circumforanean": {
+      "word": "CIRCUMFORANEAN; CIRCUMFORANEOUS",
+      "definitions": [
+        {
+          "text": "Going about or abroad; walking or wandering from house to house. Addison.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "circumforaneous": {
       "word": "CIRCUMFORANEAN; CIRCUMFORANEOUS",
       "definitions": [
         {
@@ -4605,7 +4714,17 @@
       ],
       "relatedWords": []
     },
-    "circumrotarycircumrotatory": {
+    "circumrotary": {
+      "word": "CIRCUMROTARY; CIRCUMROTATORY",
+      "definitions": [
+        {
+          "text": "turning, rolling, or whirling round.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "circumrotatory": {
       "word": "CIRCUMROTARY; CIRCUMROTATORY",
       "definitions": [
         {

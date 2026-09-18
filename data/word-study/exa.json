@@ -1134,6 +1134,93 @@
         "wrench"
       ]
     },
+    "exaggerated": {
+      "word": "EXAGGERATED",
+      "definitions": [
+        {
+          "text": "Enlarged beyond bounds or the truth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "a bit much",
+        "abandoned",
+        "aggrandized",
+        "amplified",
+        "ballyhooed",
+        "boundless",
+        "disproportionate",
+        "egregious",
+        "enormous",
+        "excessive",
+        "exorbitant",
+        "extravagant",
+        "extreme",
+        "fabulous",
+        "fancy",
+        "gigantic",
+        "gluttonous",
+        "grandiloquent",
+        "high",
+        "high-flown",
+        "hyperbolic",
+        "hypertrophied",
+        "immoderate",
+        "incontinent",
+        "inflated",
+        "inordinate",
+        "intemperate",
+        "magnified",
+        "monstrous",
+        "out of bounds",
+        "out of sight",
+        "outrageous",
+        "overbig",
+        "overdeveloped",
+        "overdone",
+        "overdrawn",
+        "overemphasized",
+        "overemphatic",
+        "overestimated",
+        "overgreat",
+        "overgrown",
+        "overlarge",
+        "overmuch",
+        "overpraised",
+        "overrated",
+        "oversold",
+        "overstated",
+        "overstressed",
+        "overvalued",
+        "overweening",
+        "overwrought",
+        "prodigal",
+        "profuse",
+        "puffed",
+        "puffed up",
+        "steep",
+        "stiff",
+        "stretched",
+        "superlative",
+        "too much",
+        "touted",
+        "unbridled",
+        "unconscionable",
+        "undue",
+        "unreasonable",
+        "unrestrained"
+      ]
+    },
+    "exaggerating": {
+      "word": "EXAGGERATING",
+      "definitions": [
+        {
+          "text": "That exaggerates; enlarging beyond bounds.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "exaggeration": {
       "word": "EXAGGERATION",
       "definitions": [
@@ -1396,16 +1483,6 @@
         {
           "text": "Agitation. [Obs.] Bailey.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "exagmenfrexigeretoweighaccuratelytotreatcffexamen": {
-      "word": "exagmen, fr. exigere to weigh accurately, to treat: cf. F. examen.",
-      "definitions": [
-        {
-          "text": "Examination; inquiry. [R.] \"A critical examen of the two pieces.\" Cowper.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1818,7 +1895,7 @@
       "word": "EXALTED",
       "definitions": [
         {
-          "text": "Raised to lofty height; elevated; extolled; refined; dignified; sublime. Wiser far than Solomon, Of more exalted mind. Milton. Time never fails to bring every exalted reputation to a strict",
+          "text": "Raised to lofty height; elevated; extolled; refined; dignified; sublime. Wiser far than Solomon, Of more exalted mind. Milton. Time never fails to bring every exalted reputation to a strict scrutiny. Ames.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2072,6 +2149,16 @@
       "definitions": [
         {
           "text": "Exaltation. [Obs.] Barrow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "examen": {
+      "word": "EXAMEN",
+      "definitions": [
+        {
+          "text": "Examination; inquiry. [R.] \"A critical examen of the two pieces.\" Cowper.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2803,7 +2890,17 @@
       ],
       "relatedWords": []
     },
-    "exanthematicexanthematous": {
+    "exanthematic": {
+      "word": "EXANTHEMATIC; EXANTHEMATOUS",
+      "definitions": [
+        {
+          "text": "Of, relating to, or characterized by, exanthema; efflorescent; as, an exanthematous eruption.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exanthematous": {
       "word": "EXANTHEMATIC; EXANTHEMATOUS",
       "definitions": [
         {

@@ -1043,6 +1043,20 @@
       ],
       "relatedWords": []
     },
+    "chokey": {
+      "word": "CHOKY; CHOKEY",
+      "definitions": [
+        {
+          "text": "Tending to choke or suffocate, or having power to suffocate.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Inclined to choke, as a person affected with strong emotion. \"A deep and choky voice.\" Aytoun. The allusion to his mother made Tom feel rather chokey. T. Hughes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "choking": {
       "word": "CHOKING",
       "definitions": [
@@ -1202,7 +1216,7 @@
       ],
       "relatedWords": []
     },
-    "chokychokey": {
+    "choky": {
       "word": "CHOKY; CHOKEY",
       "definitions": [
         {
@@ -1618,7 +1632,7 @@
       ],
       "relatedWords": []
     },
-    "choliambcholiambic": {
+    "choliamb": {
       "word": "CHOLIAMB; CHOLIAMBIC",
       "definitions": [
         {
@@ -1628,7 +1642,17 @@
       ],
       "relatedWords": []
     },
-    "choliccholinic": {
+    "choliambic": {
+      "word": "CHOLIAMB; CHOLIAMBIC",
+      "definitions": [
+        {
+          "text": "A verse having an iambus in the fifth place, and a spondee in the sixth or last.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cholic": {
       "word": "CHOLIC; CHOLINIC",
       "definitions": [
         {
@@ -1644,6 +1668,16 @@
         {
           "text": "See Neurine.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cholinic": {
+      "word": "CHOLIC; CHOLINIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or obtained from, the bile. Cholic acid (Chem.), a complex organic acid found as a natural constituent of taurocholic and glycocholic acids in the bile, and extracted as a resinous substance, convertible under the influence of ether into white crystals.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2104,6 +2138,10 @@
         {
           "text": "A change; a vicissitude. Marryat.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To crack. See Chap, v. t. & i.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "The act of chopping; a stroke.",
@@ -2824,6 +2862,16 @@
         "yap"
       ]
     },
+    "chopsooy": {
+      "word": "CHOP SUEY; CHOP SOOY",
+      "definitions": [
+        {
+          "text": "A mélange served in Chinese restaurants to be eaten with rice, noodles, etc. It consists typically of bean sprouts, onions, mushrooms, etc., and sliced meats, fried and flavored with sesame oil. [U. S.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "chopstick": {
       "word": "CHOPSTICK",
       "definitions": [
@@ -2834,7 +2882,7 @@
       ],
       "relatedWords": []
     },
-    "chopsueychopsooy": {
+    "chopsuey": {
       "word": "CHOP SUEY; CHOP SOOY",
       "definitions": [
         {
@@ -3275,7 +3323,17 @@
       ],
       "relatedWords": []
     },
-    "choregraphicchoregraphical": {
+    "choregraphic": {
+      "word": "CHOREGRAPHIC; CHOREGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to choregraphy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "choregraphical": {
       "word": "CHOREGRAPHIC; CHOREGRAPHICAL",
       "definitions": [
         {
@@ -3451,6 +3509,16 @@
         {
           "text": "A geographical antiquary; one who investigates the locality of ancient places.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chorographical": {
+      "word": "CHOROGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to chorography.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

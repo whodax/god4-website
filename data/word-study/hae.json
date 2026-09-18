@@ -11,6 +11,16 @@
       ],
       "relatedWords": []
     },
+    "haema": {
+      "word": "HAEMA-; HAEMATO-; HAEMO-",
+      "definitions": [
+        {
+          "text": "Combining forms indicating relation or resemblance to blood, association with blood; as, hæmapod, hæmatogenesis, hæmoscope. hæmato-, hæmo-.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "haemachrome": {
       "word": "HAEMACHROME",
       "definitions": [
@@ -51,7 +61,7 @@
       ],
       "relatedWords": []
     },
-    "haemadrometerhaemadromometer": {
+    "haemadrometer": {
       "word": "HAEMADROMETER; HAEMADROMOMETER",
       "definitions": [
         {
@@ -61,7 +71,7 @@
       ],
       "relatedWords": []
     },
-    "haemadrometryhaemadromometry": {
+    "haemadrometry": {
       "word": "HAEMADROMETRY; HAEMADROMOMETRY",
       "definitions": [
         {
@@ -81,7 +91,27 @@
       ],
       "relatedWords": []
     },
-    "haemadynameterhaemadynamometer": {
+    "haemadromometer": {
+      "word": "HAEMADROMETER; HAEMADROMOMETER",
+      "definitions": [
+        {
+          "text": "Same as Hemadrometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "haemadromometry": {
+      "word": "HAEMADROMETRY; HAEMADROMOMETRY",
+      "definitions": [
+        {
+          "text": "Same as Hemadrometry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "haemadynameter": {
       "word": "HAEMADYNAMETER; HAEMADYNAMOMETER",
       "definitions": [
         {
@@ -101,11 +131,11 @@
       ],
       "relatedWords": []
     },
-    "haemahaematohaemo": {
-      "word": "HAEMA-; HAEMATO-; HAEMO-",
+    "haemadynamometer": {
+      "word": "HAEMADYNAMETER; HAEMADYNAMOMETER",
       "definitions": [
         {
-          "text": "Combining forms indicating relation or resemblance to blood, association with blood; as, hæmapod, hæmatogenesis, hæmoscope. hæmato-, hæmo-.",
+          "text": "Same as Hemadynamometer.",
           "partOfSpeech": ""
         }
       ],
@@ -157,6 +187,16 @@
         {
           "text": "Bloodforming; as, the hæmapoietic function of the spleen.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "haemapophysis": {
+      "word": "HAEMAPOPHYSIS",
+      "definitions": [
+        {
+          "text": "Same as Hemapophysis.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -262,8 +302,12 @@
       "relatedWords": []
     },
     "haemato": {
-      "word": "HAEMATO-",
+      "word": "HAEMA-; HAEMATO-; HAEMO-",
       "definitions": [
+        {
+          "text": "Combining forms indicating relation or resemblance to blood, association with blood; as, hæmapod, hæmatogenesis, hæmoscope. hæmato-, hæmo-.",
+          "partOfSpeech": ""
+        },
         {
           "text": "See Hæma-.",
           "partOfSpeech": ""
@@ -401,6 +445,16 @@
       ],
       "relatedWords": []
     },
+    "haematolysis": {
+      "word": "HAEMATOLYSIS",
+      "definitions": [
+        {
+          "text": "Dissolution of the red blood corpuscles with diminished coagulability of the blood; hæmolysis. -- Hæm`a*to*lyt\"ic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "haematophilina": {
       "word": "HAEMATOPHILINA",
       "definitions": [
@@ -531,7 +585,17 @@
       ],
       "relatedWords": []
     },
-    "haematozoonhaematozooen": {
+    "haematozooen": {
+      "word": "HAEMATOZOON; HAEMATOZOOEN",
+      "definitions": [
+        {
+          "text": "A parasite inhabiting the blood; esp.: (a) Certain species of nematodes of the genus Filaria, sometimes found in the blood of man, the horse, the dog, etc. (b) The trematode, Bilharzia hæmatobia, which infests the inhabitants of Egypt and other parts of Africa, often causing death.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "haematozoon": {
       "word": "HAEMATOZOON; HAEMATOZOOEN",
       "definitions": [
         {
@@ -562,8 +626,12 @@
       "relatedWords": []
     },
     "haemo": {
-      "word": "HAEMO-",
+      "word": "HAEMA-; HAEMATO-; HAEMO-",
       "definitions": [
+        {
+          "text": "Combining forms indicating relation or resemblance to blood, association with blood; as, hæmapod, hæmatogenesis, hæmoscope. hæmato-, hæmo-.",
+          "partOfSpeech": ""
+        },
         {
           "text": "See Hæma-.",
           "partOfSpeech": ""
@@ -721,7 +789,17 @@
       ],
       "relatedWords": []
     },
-    "haemolysishaemolytic": {
+    "haemolysis": {
+      "word": "HAEMOLYSIS; HAEMOLYTIC",
+      "definitions": [
+        {
+          "text": "Same as Hæmatolysis, Hæmatolytic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "haemolytic": {
       "word": "HAEMOLYSIS; HAEMOLYTIC",
       "definitions": [
         {

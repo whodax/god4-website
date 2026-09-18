@@ -122,7 +122,7 @@
       "word": "INACCESSIBLE",
       "definitions": [
         {
-          "text": "Not accessible; not to be reached, obtained, or approached; as,",
+          "text": "Not accessible; not to be reached, obtained, or approached; as, an inaccessible rock, fortress, document, prince, etc.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1042,7 +1042,7 @@
       "word": "INADEQUATE",
       "definitions": [
         {
-          "text": "Not adequate; unequal to the purpose; insufficient; deficient; as, inadequate resources, power, conceptions, representations, etc.",
+          "text": "Not adequate; unequal to the purpose; insufficient; deficient; as, inadequate resources, power, conceptions, representations, etc. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1245,7 +1245,7 @@
       "word": "INADMISSIBLE",
       "definitions": [
         {
-          "text": "Not admissible; not proper to be admitted, allowed, or received; as, inadmissible testimony; an inadmissible proposition, or",
+          "text": "Not admissible; not proper to be admitted, allowed, or received; as, inadmissible testimony; an inadmissible proposition, or explanation.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1346,7 +1346,98 @@
         "xenophobic"
       ]
     },
-    "inadvertenceinadvertency": {
+    "inadvertence": {
+      "word": "INADVERTENCE; INADVERTENCY",
+      "definitions": [
+        {
+          "text": "The quality of being inadvertent; lack of heedfulness or attentiveness; inattention; negligence; as, many mistakes proceed from inadvertence. Inadvertency, or want of attendance to the sense and intention of our prayers. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An effect of inattention; a result of carelessness; an oversight, mistake, or fault from negligence. The productions of a great genius, with many lapses an inadvertencies, are infinitely preferable to works of an inferior kind of author which are scrupulously exact. Addison. thoughtlessness. See Inattention.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "absentmindedness",
+        "balk",
+        "bevue",
+        "carelessness",
+        "culpa",
+        "culpable negligence",
+        "default",
+        "dereliction",
+        "disregard",
+        "disregardfulness",
+        "distraction",
+        "failure",
+        "false move",
+        "false step",
+        "flightiness",
+        "flippancy",
+        "frivolousness",
+        "giddiness",
+        "heedlessness",
+        "inadvertency",
+        "inattention",
+        "inattentiveness",
+        "inconsideration",
+        "incuriosity",
+        "indifference",
+        "inobservance",
+        "laches",
+        "laissez-faire",
+        "lapse",
+        "lapsus calami",
+        "lapsus linguae",
+        "laxity",
+        "laxness",
+        "levity",
+        "lightmindedness",
+        "loose thread",
+        "looseness",
+        "miscue",
+        "misstep",
+        "neglect",
+        "neglectfulness",
+        "negligence",
+        "nonfeasance",
+        "noninterference",
+        "nonobservance",
+        "nonperformance",
+        "nonrestriction",
+        "obliviousness",
+        "omission",
+        "overlooking",
+        "oversight",
+        "permissiveness",
+        "poor stewardship",
+        "procrastination",
+        "regardlessness",
+        "remissness",
+        "shallowness",
+        "slackness",
+        "slight",
+        "slip",
+        "slipup",
+        "stumble",
+        "superficiality",
+        "thoughtlessness",
+        "trip",
+        "unalertness",
+        "unawareness",
+        "unconsciousness",
+        "unheedfulness",
+        "unintentiveness",
+        "unmindfulness",
+        "unobservance",
+        "unrigorousness",
+        "unwariness",
+        "unwatchfulness",
+        "wrong step"
+      ]
+    },
+    "inadvertency": {
       "word": "INADVERTENCE; INADVERTENCY",
       "definitions": [
         {
@@ -1364,7 +1455,7 @@
       "word": "INADVERTENT",
       "definitions": [
         {
-          "text": "Not turning the mind to a matter; heedless; careless; negligent; inattentive. An inadvertent step may crush the snail That crawls at evening in the",
+          "text": "Not turning the mind to a matter; heedless; careless; negligent; inattentive. An inadvertent step may crush the snail That crawls at evening in the public path. Cowper.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1458,6 +1549,88 @@
         "unwatchful",
         "unwilled",
         "wrecking"
+      ]
+    },
+    "inadvisable": {
+      "word": "INADVISABLE",
+      "definitions": [
+        {
+          "text": "Not advisable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bad",
+        "careless",
+        "foolhardy",
+        "foolish",
+        "futile",
+        "harebrained",
+        "ill-advised",
+        "ill-considered",
+        "ill-contrived",
+        "ill-devised",
+        "ill-gauged",
+        "ill-judged",
+        "ill-suited",
+        "ill-timed",
+        "impolitic",
+        "improper",
+        "imprudent",
+        "inappropriate",
+        "inapt",
+        "incautious",
+        "incongruous",
+        "inconsiderate",
+        "indiscreet",
+        "inept",
+        "inexpedient",
+        "infelicitous",
+        "injudicious",
+        "inopportune",
+        "insensate",
+        "irrational",
+        "mal a propos",
+        "malapropos",
+        "mindless",
+        "misadvised",
+        "misguided",
+        "myopic",
+        "out of place",
+        "pointless",
+        "rash",
+        "reasonless",
+        "reckless",
+        "senseless",
+        "shortsighted",
+        "thoughtless",
+        "unadvised",
+        "unbefitting",
+        "unconsidered",
+        "undesirable",
+        "undiscerning",
+        "unfit",
+        "unfitting",
+        "unforeseeing",
+        "unfortunate",
+        "unhappy",
+        "unmeet",
+        "unprofitable",
+        "unreasonable",
+        "unreflecting",
+        "unreflective",
+        "unseasonable",
+        "unseeing",
+        "unseemly",
+        "unsensible",
+        "unsound",
+        "unsuitable",
+        "unthinking",
+        "unthoughtful",
+        "untimely",
+        "unwise",
+        "witless",
+        "wrong"
       ]
     },
     "inaffability": {
@@ -1610,7 +1783,7 @@
       "word": "INALTERABLE",
       "definitions": [
         {
-          "text": "Not alterable; incapable of being altered or changed;",
+          "text": "Not alterable; incapable of being altered or changed; unalterable.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1745,6 +1918,16 @@
         "truelove",
         "woman"
       ]
+    },
+    "inamorate": {
+      "word": "INAMORATE",
+      "definitions": [
+        {
+          "text": "Enamored. Chapman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "inamorato": {
       "word": "INAMORATO",
@@ -2093,7 +2276,17 @@
       ],
       "relatedWords": []
     },
-    "inaniloquentinaniloquous": {
+    "inaniloquent": {
+      "word": "INANILOQUENT; INANILOQUOUS",
+      "definitions": [
+        {
+          "text": "Given to talking inanely; loquacious; garrulous. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inaniloquous": {
       "word": "INANILOQUENT; INANILOQUOUS",
       "definitions": [
         {
@@ -2590,7 +2783,74 @@
       ],
       "relatedWords": []
     },
-    "inappetenceinappetency": {
+    "inappetence": {
+      "word": "INAPPETENCE; INAPPETENCY",
+      "definitions": [
+        {
+          "text": "Want of appetency; want of desire.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "acedia",
+        "aloofness",
+        "anorexia",
+        "anorexia nervosa",
+        "apathy",
+        "ataraxia",
+        "ataraxy",
+        "benumbedness",
+        "blah",
+        "blahs",
+        "comatoseness",
+        "desirelessness",
+        "detachment",
+        "disinterest",
+        "dispassion",
+        "dullness",
+        "heartlessness",
+        "hebetude",
+        "hopelessness",
+        "indifference",
+        "insouciance",
+        "lack of appetite",
+        "languidness",
+        "lethargicalness",
+        "lethargy",
+        "listlessness",
+        "lovelessness",
+        "nirvana",
+        "nonchalance",
+        "numbness",
+        "passionlessness",
+        "passiveness",
+        "passivity",
+        "phlegm",
+        "phlegmaticalness",
+        "phlegmaticness",
+        "plucklessness",
+        "resignation",
+        "resignedness",
+        "sloth",
+        "sluggishness",
+        "sopor",
+        "soporifousness",
+        "spiritlessness",
+        "spunklessness",
+        "stupefaction",
+        "stupor",
+        "supineness",
+        "torpidity",
+        "torpidness",
+        "torpor",
+        "unambitiousness",
+        "unconcern",
+        "undesirousness",
+        "uneagerness",
+        "withdrawnness"
+      ]
+    },
+    "inappetency": {
       "word": "INAPPETENCE; INAPPETENCY",
       "definitions": [
         {
@@ -2614,7 +2874,7 @@
       "word": "INAPPLICABLE",
       "definitions": [
         {
-          "text": "Not applicable; incapable of being applied; not adapted; not suitable; as, the argument is inapplicable to the case. J. S. Mill.",
+          "text": "Not applicable; incapable of being applied; not adapted; not suitable; as, the argument is inapplicable to the case. J. S. Mill. irrelevant.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2711,6 +2971,79 @@
         }
       ],
       "relatedWords": []
+    },
+    "inapposite": {
+      "word": "INAPPOSITE",
+      "definitions": [
+        {
+          "text": "Not apposite; not fit or suitable; not pertinent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adrift",
+        "beside the mark",
+        "beside the point",
+        "beside the question",
+        "extraneous",
+        "extrinsic",
+        "foreign",
+        "ill-adapted",
+        "ill-assorted",
+        "ill-chosen",
+        "ill-fitted",
+        "ill-matched",
+        "ill-sorted",
+        "ill-suited",
+        "ill-timed",
+        "immaterial",
+        "impertinent",
+        "improper",
+        "inadmissible",
+        "inapplicable",
+        "inappropriate",
+        "inapt",
+        "incidental",
+        "inconsequent",
+        "inept",
+        "infelicitous",
+        "irrelative",
+        "irrelevant",
+        "mal a propos",
+        "maladjusted",
+        "malapropos",
+        "misjoined",
+        "mismatched",
+        "mismated",
+        "misplaced",
+        "nihil ad rem",
+        "nonessential",
+        "not at issue",
+        "off the subject",
+        "out of character",
+        "out of joint",
+        "out of keeping",
+        "out of line",
+        "out of place",
+        "out of proportion",
+        "out of season",
+        "out of time",
+        "out of tune",
+        "out-of-the-way",
+        "parenthetical",
+        "unadapted",
+        "unapt",
+        "unbecoming",
+        "unbefitting",
+        "unessential",
+        "unfit",
+        "unfitted",
+        "unfitting",
+        "unqualified",
+        "unseasonable",
+        "unseemly",
+        "unsuitable"
+      ]
     },
     "inappreciable": {
       "word": "INAPPRECIABLE",
@@ -2816,11 +3149,21 @@
       ],
       "relatedWords": []
     },
+    "inapproachable": {
+      "word": "INAPPROACHABLE",
+      "definitions": [
+        {
+          "text": "Not approachable; unapproachable; inaccessible; unequaled.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "inappropriate": {
       "word": "INAPPROPRIATE",
       "definitions": [
         {
-          "text": "Not instrument (to); not appropriate; unbecoming; unsuitable;",
+          "text": "Not instrument (to); not appropriate; unbecoming; unsuitable; not specially fitted; -- followed by to or for.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2975,6 +3318,106 @@
         "wicked",
         "wrong",
         "wrongful"
+      ]
+    },
+    "inapt": {
+      "word": "INAPT",
+      "definitions": [
+        {
+          "text": "Unapt; not apt; unsuitable; inept.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "artless",
+        "awkward",
+        "bad",
+        "banal",
+        "clumsy",
+        "flat",
+        "futile",
+        "gauche",
+        "half-assed",
+        "ill-adapted",
+        "ill-advised",
+        "ill-assorted",
+        "ill-chosen",
+        "ill-considered",
+        "ill-fitted",
+        "ill-matched",
+        "ill-sorted",
+        "ill-suited",
+        "ill-timed",
+        "impolitic",
+        "improper",
+        "inadept",
+        "inadmissible",
+        "inadvisable",
+        "inapplicable",
+        "inapposite",
+        "inappropriate",
+        "inattentive",
+        "incongruous",
+        "inefficient",
+        "inept",
+        "inexpedient",
+        "inexpert",
+        "infelicitous",
+        "inopportune",
+        "insipid",
+        "irrelevant",
+        "jejune",
+        "mal a propos",
+        "maladjusted",
+        "maladroit",
+        "malapropos",
+        "mediocre",
+        "misjoined",
+        "mismatched",
+        "mismated",
+        "misplaced",
+        "out of character",
+        "out of joint",
+        "out of keeping",
+        "out of line",
+        "out of place",
+        "out of proportion",
+        "out of season",
+        "out of time",
+        "out of tune",
+        "pedestrian",
+        "poor",
+        "skill-less",
+        "thoughtless",
+        "unadapted",
+        "unapt",
+        "unbecoming",
+        "unbefitting",
+        "undeft",
+        "undesirable",
+        "undexterous",
+        "undextrous",
+        "undue",
+        "unfacile",
+        "unfit",
+        "unfitted",
+        "unfitting",
+        "unfortunate",
+        "unhandy",
+        "unhappy",
+        "unintelligent",
+        "unmeet",
+        "unproficient",
+        "unprofitable",
+        "unqualified",
+        "unseasonable",
+        "unseemly",
+        "unskillful",
+        "unsuitable",
+        "unsuited",
+        "untimely",
+        "unwise",
+        "wrong"
       ]
     },
     "inaptitude": {
@@ -3277,7 +3720,7 @@
       "word": "INARTIFICIAL",
       "definitions": [
         {
-          "text": "Not artificial; not made or elaborated by art; natural; simple;",
+          "text": "Not artificial; not made or elaborated by art; natural; simple; artless; as, an inartificial argument; an inartificial character.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3375,6 +3818,16 @@
         "virginal",
         "word-for-word"
       ]
+    },
+    "inasmuch": {
+      "word": "INASMUCH",
+      "definitions": [
+        {
+          "text": "In like degree; in like manner; seeing that; considering that; since; -- followed by as. See In as much as, under In, prep. Inasmuch as ye did it not to one of the least of these, ye did it not to me. Matt. xxv. 45.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
     },
     "inattention": {
       "word": "INATTENTION",
@@ -3493,7 +3946,7 @@
       "word": "INATTENTIVE",
       "definitions": [
         {
-          "text": "Not attentive; not fixing the mind on an object; heedless; careless; negligent; regardless; as, an inattentive spectator or hearer; an inattentive habit. I. Watts.",
+          "text": "Not attentive; not fixing the mind on an object; heedless; careless; negligent; regardless; as, an inattentive spectator or hearer; an inattentive habit. I. Watts. inadvertent.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3610,6 +4063,38 @@
         }
       ],
       "relatedWords": []
+    },
+    "inaudible": {
+      "word": "INAUDIBLE",
+      "definitions": [
+        {
+          "text": "Not audible; incapable of being heard; silent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "echoless",
+        "hush as death",
+        "hushed",
+        "mousy",
+        "noiseless",
+        "quiescent",
+        "quiet",
+        "silent",
+        "soundless",
+        "still",
+        "still as death",
+        "stilly",
+        "subaudible",
+        "unarticulated",
+        "unhearable",
+        "unpronounced",
+        "unsounded",
+        "unuttered",
+        "unvocalized",
+        "unvoiced",
+        "whist"
+      ]
     },
     "inaugur": {
       "word": "INAUGUR",

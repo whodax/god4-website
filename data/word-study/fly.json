@@ -117,7 +117,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A batted ball that flies to a considerable distance, usually high in the air; also, the flight of a ball so struck; as, it was caught on the fly. Black fly, Cheese fly, Dragon fly, etc. See under Black, Cheese, etc. narcotic juice which, in sufficient quantities, is poisonous. working of the tackle with which it is connected; -- used in the hoisting tackle of yards. deposited by the fly. Kingsley. fly wheel, the driving power being applied by the hand through a cord winding in reverse directions upon the spindle as it rotates backward and forward. Knight. artificial flies. Walton. etc., by the resistance of vanes revolving in the air. (Lonicera), having a bushy stem and the flowers in pairs, as L. ciliata and L. Xylosteum. circular, programme, etc. resemble flies. upon or are entangled by it. by hand and having a heavy fly. a table. allied to the chatterers and shrikes. The male is glossy blue-black; the female brownish gray. equalize the movement (opposing any sudden acceleration by its inertia and any retardation by its momentum), and to accumulate or",
+          "text": "A batted ball that flies to a considerable distance, usually high in the air; also, the flight of a ball so struck; as, it was caught on the fly. Black fly, Cheese fly, Dragon fly, etc. See under Black, Cheese, etc. narcotic juice which, in sufficient quantities, is poisonous. working of the tackle with which it is connected; -- used in the hoisting tackle of yards. deposited by the fly. Kingsley. fly wheel, the driving power being applied by the hand through a cord winding in reverse directions upon the spindle as it rotates backward and forward. Knight. artificial flies. Walton. etc., by the resistance of vanes revolving in the air. (Lonicera), having a bushy stem and the flowers in pairs, as L. ciliata and L. Xylosteum. circular, programme, etc. resemble flies. upon or are entangled by it. by hand and having a heavy fly. a table. allied to the chatterers and shrikes. The male is glossy blue-black; the female brownish gray. equalize the movement (opposing any sudden acceleration by its inertia and any retardation by its momentum), and to accumulate or give out energy for a variable or intermitting resistance. See Fly, n., 9. caught before touching the ground..",
           "partOfSpeech": "noun"
         },
         {
@@ -429,7 +429,7 @@
         "zoom"
       ]
     },
-    "flyamanitaflyfungus": {
+    "flyamanita": {
       "word": "FLY AMANITA; FLY FUNGUS",
       "definitions": [
         {
@@ -645,7 +645,19 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The pair of arms attached to the spindle of a spinning frame, over",
+          "text": "The pair of arms attached to the spindle of a spinning frame, over which the thread passes to the bobbin; -- so called from their swift revolution. See Fly, n., 11.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fan wheel that rotates the cap of a windmill as the wind veers. Internat. Cyc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Stock Jobbing)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small operation not involving considerable part of one's capital, or not in the line of one's ordinary business; a venture. [Cant] Bartlett.",
           "partOfSpeech": "noun"
         }
       ],
@@ -784,6 +796,16 @@
         {
           "text": "To angle, using flies for bait. Walton.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "flyfungus": {
+      "word": "FLY AMANITA; FLY FUNGUS",
+      "definitions": [
+        {
+          "text": "A poisonous mushroom (Amanita muscaria, syn. Agaricus muscarius), having usually a bright red or yellowish cap covered with irregular white spots. It has a distinct volva at the base, generally an upper ring on the stalk, and white spores. Called also fly agaric, deadly amanita.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1107,6 +1129,16 @@
         "whit"
       ]
     },
+    "flyte": {
+      "word": "FLITE; FLYTE",
+      "definitions": [
+        {
+          "text": "Strife; dispute; abusive or upbraiding talk, as in fliting; wrangling. [Obs. or Scot. & Prov. Eng.] The bird of Pallas has also a good \"flyte\" on the moral side . . . in his suggestion that the principal effect of the nightingale's song is to make women false to their husbands. Saintsbury.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "flytrap": {
       "word": "FLYTRAP",
       "definitions": [
@@ -1120,6 +1152,16 @@
         },
         {
           "text": "A plant (Dionæa muscipula), called also Venus's flytrap, the leaves of which are fringed with stiff bristles, and fold together when certain hairs on their upper surface are touched, thus seizing insects that light on them. The insects so caught are afterwards digested by a secretion from the upper surface of the leaves.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "flytting": {
+      "word": "FLITTING; FLYTTING",
+      "definitions": [
+        {
+          "text": "Contention; strife; scolding; specif., a kind of metrical contest between two persons, popular in Scotland in the 16th century. [Obs. or Scot.] These \"flytings\" consisted of alternate torrents of sheer Billingsgate poured upon each other by the combatants. Saintsbury.",
           "partOfSpeech": "noun"
         }
       ],

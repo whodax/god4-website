@@ -504,6 +504,149 @@
         "zealot"
       ]
     },
+    "fanatical": {
+      "word": "FANATICAL",
+      "definitions": [
+        {
+          "text": "Characteristic of, or relating to, fanaticism; fanatic. - Fa*nat\"ic*al*ly, adv.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "agog",
+        "ardent",
+        "at fever pitch",
+        "authoritarian",
+        "balking",
+        "balky",
+        "bigot",
+        "bigoted",
+        "borne",
+        "bulldogged",
+        "bulletheaded",
+        "bullheaded",
+        "burning",
+        "case-hardened",
+        "closed",
+        "compulsive",
+        "constricted",
+        "cramped",
+        "creedbound",
+        "deaf",
+        "deaf to reason",
+        "delirious",
+        "distracted",
+        "dogged",
+        "dogmatic",
+        "enthusiastic",
+        "excessive",
+        "extravagant",
+        "extreme",
+        "extremist",
+        "fanatic",
+        "febrile",
+        "fervent",
+        "fervid",
+        "feverish",
+        "fiery",
+        "flaming",
+        "frantic",
+        "frenetic",
+        "frenzied",
+        "furious",
+        "haggard",
+        "hard-core",
+        "hardheaded",
+        "headstrong",
+        "heated",
+        "hectic",
+        "hidebound",
+        "hot",
+        "hotheaded",
+        "hysteric",
+        "illiberal",
+        "immoderate",
+        "infatuated",
+        "inflamed",
+        "inordinate",
+        "insane",
+        "insular",
+        "intolerant",
+        "irrational",
+        "little",
+        "little-minded",
+        "mad",
+        "madcap",
+        "maniacal",
+        "mean",
+        "mean-minded",
+        "mean-spirited",
+        "monomaniacal",
+        "mulish",
+        "narrow",
+        "narrow-hearted",
+        "narrow-minded",
+        "narrow-souled",
+        "narrow-spirited",
+        "nearsighted",
+        "obsessive",
+        "obstinate",
+        "opinionated",
+        "overanxious",
+        "overdesirous",
+        "overdevout",
+        "overeager",
+        "overenthusiastic",
+        "overreligious",
+        "overrighteous",
+        "overzealous",
+        "parochial",
+        "passionate",
+        "perfervid",
+        "persevering",
+        "pertinacious",
+        "petty",
+        "pigheaded",
+        "provincial",
+        "purblind",
+        "rabid",
+        "red-hot",
+        "restive",
+        "sanctimonious",
+        "scorching",
+        "self-willed",
+        "set",
+        "shortsighted",
+        "small",
+        "small-minded",
+        "stiff-necked",
+        "straitlaced",
+        "strong-willed",
+        "strongheaded",
+        "stubborn",
+        "stuffy",
+        "sulky",
+        "sullen",
+        "tenacious",
+        "totally committed",
+        "ultrareligious",
+        "ultrazealous",
+        "uncatholic",
+        "uncharitable",
+        "uncooperative",
+        "ungenerous",
+        "unliberal",
+        "unreasonable",
+        "unregenerate",
+        "white-hot",
+        "wild",
+        "wild-eyed",
+        "wild-looking",
+        "willful",
+        "zealotic",
+        "zealous"
+      ]
+    },
     "fanaticism": {
       "word": "FANATICISM",
       "definitions": [
@@ -754,7 +897,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Curiously shaped or constructed; as, she wore a fanciful headdress. Gather up all fancifullest shells. Keats. fantastical; wild. which is irregular in taste and judgment; we speak of it as fantastical when it becomes grotesque and extravagant as well as irregular; we speak of it as visionary when it is wholly unfounded in the nature of things. Fanciful notions are the product of a heated fancy, without any tems are made up of oddly assorted fancies, aften of the most whimsical kind; visionary expectations are those which",
+          "text": "Curiously shaped or constructed; as, she wore a fanciful headdress. Gather up all fancifullest shells. Keats. fantastical; wild. which is irregular in taste and judgment; we speak of it as fantastical when it becomes grotesque and extravagant as well as irregular; we speak of it as visionary when it is wholly unfounded in the nature of things. Fanciful notions are the product of a heated fancy, without any tems are made up of oddly assorted fancies, aften of the most whimsical kind; visionary expectations are those which can never be realized in fact.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1821,6 +1964,14 @@
       "word": "FANG",
       "definitions": [
         {
+          "text": "To catch; to seize, as with the teeth; to lay hold of; to gripe; to clutch. [Obs.] Shak. He's in the law's clutches; you see he's fanged. J. Webster.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To enable to catch or tear; to furnish with fangs. \"Chariots fanged with scythes.\" Philips.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "(Zoöl.)",
           "partOfSpeech": "noun"
         },
@@ -2107,6 +2258,16 @@
         {
           "text": "Any palm tree having fan-shaped or radiate leaves; as the Chamærops humilis of Southern Europe; the species of Sabal and Thrinax in the West Indies, Florida, etc.; and especially the great talipot tree (Corypha umbraculifera) of Ceylon and Malaya. The leaves of the latter are often eighteen feet long and fourteen wide, and are used for umbrellas, tents, and roofs. When cut up, they are used for books and manuscripts.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "fantad": {
+      "word": "FANTOD; FANTAD",
+      "definitions": [
+        {
+          "text": "State of worry or excitement; fidget; fuss; also, indisposition; pet; sulks. [Slang]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2885,7 +3046,17 @@
         "wraith"
       ]
     },
-    "fantiguefantique": {
+    "fantigue": {
+      "word": "FANTIGUE; FANTIQUE",
+      "definitions": [
+        {
+          "text": "State of worry or excitment; fidget; ill humor. [Prov. Eng.] Dickens.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fantique": {
       "word": "FANTIGUE; FANTIQUE",
       "definitions": [
         {
@@ -2905,7 +3076,7 @@
       ],
       "relatedWords": []
     },
-    "fantodfantad": {
+    "fantod": {
       "word": "FANTOD; FANTAD",
       "definitions": [
         {

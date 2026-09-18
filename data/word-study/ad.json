@@ -5,7 +5,7 @@
       "word": "AD-",
       "definitions": [
         {
-          "text": "As a prefix ad- assumes the forms ac-, af-, ag-, al-, an-, ap-, ar-, as-, at-, assimilating the d with the first letter of the word",
+          "text": "As a prefix ad- assumes the forms ac-, af-, ag-, al-, an-, ap-, ar-, as-, at-, assimilating the d with the first letter of the word to which ad- is prefixed. It remains unchanged before vowels, and before d, h, j, m, v. Examples: adduce, adhere, adjacent, admit, advent, accord, affect, aggregate, allude, annex, appear, etc. It becomes ac- before qu, as in acquiesce.",
           "partOfSpeech": ""
         }
       ],
@@ -287,7 +287,17 @@
       ],
       "relatedWords": []
     },
-    "adamicadamical": {
+    "adamic": {
+      "word": "ADAMIC; ADAMICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Adam, or resembling him. Adamic earth, a name given to common red clay, from a notion that Adam means red earth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adamical": {
       "word": "ADAMIC; ADAMICAL",
       "definitions": [
         {
@@ -341,6 +351,16 @@
         {
           "text": "Dangling. Browning.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adansonia": {
+      "word": "ADANSONIA",
+      "definitions": [
+        {
+          "text": "A genus of great trees related to the Bombax. There are two species, A. digitata, the baobab or monkey-bread of Africa and India, and A. Gregorii, the sour gourd or cream-of-tartar tree of Australia. Both have a trunk of moderate height, but of enormous diameter, and a wide-spreading head. The fruit is oblong, and filled with pleasantly acid pulp. The wood is very soft, and the bark is used by the natives for making ropes and cloth. D. C. Eaton.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -512,7 +532,17 @@
         "yield"
       ]
     },
-    "adaptabilityadaptableness": {
+    "adaptability": {
+      "word": "ADAPTABILITY; ADAPTABLENESS",
+      "definitions": [
+        {
+          "text": "The quality of being adaptable; suitableness. \"General adaptability for every purpose.\" Farrar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adaptableness": {
       "word": "ADAPTABILITY; ADAPTABLENESS",
       "definitions": [
         {
@@ -871,7 +901,7 @@
       "word": "ADAPTIVE",
       "definitions": [
         {
-          "text": "Suited, given, or tending, to adaptation; characterized by",
+          "text": "Suited, given, or tending, to adaptation; characterized by adaptation; capable of adapting. Coleridge.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2072,7 +2102,7 @@
         "upset"
       ]
     },
-    "addlebrainaddleheadaddlepate": {
+    "addlebrain": {
       "word": "ADDLE-BRAIN; ADDLE-HEAD; ADDLE-PATE",
       "definitions": [
         {
@@ -2082,7 +2112,68 @@
       ],
       "relatedWords": []
     },
-    "addlebrainedaddleheadedaddlepated": {
+    "addlehead": {
+      "word": "ADDLE-BRAIN; ADDLE-HEAD; ADDLE-PATE",
+      "definitions": [
+        {
+          "text": "A foolish or dull-witted fellow. [Colloq.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "addlepate": {
+      "word": "ADDLE-BRAIN; ADDLE-HEAD; ADDLE-PATE",
+      "definitions": [
+        {
+          "text": "A foolish or dull-witted fellow. [Colloq.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "addlebrain",
+        "addlehead",
+        "beefhead",
+        "blockhead",
+        "blubberhead",
+        "blunderhead",
+        "bonehead",
+        "bufflehead",
+        "cabbagehead",
+        "chowderhead",
+        "chucklehead",
+        "clodhead",
+        "clodpate",
+        "clodpoll",
+        "dolthead",
+        "dullhead",
+        "dumbhead",
+        "dunderhead",
+        "dunderpate",
+        "fathead",
+        "jolterhead",
+        "jughead",
+        "knucklehead",
+        "lunkhead",
+        "meathead",
+        "muddlehead",
+        "mushhead",
+        "muttonhead",
+        "noodlehead",
+        "numskull",
+        "peabrain",
+        "pinbrain",
+        "pinhead",
+        "puddinghead",
+        "pumpkin head",
+        "puzzlehead",
+        "stupidhead",
+        "thickhead",
+        "thickskull",
+        "tottyhead"
+      ]
+    },
+    "addlebrained": {
       "word": "ADDLE-BRAINED; ADDLE-HEADED; ADDLE-PATED",
       "definitions": [
         {
@@ -2091,6 +2182,50 @@
         }
       ],
       "relatedWords": []
+    },
+    "addleheaded": {
+      "word": "ADDLE-BRAINED; ADDLE-HEADED; ADDLE-PATED",
+      "definitions": [
+        {
+          "text": "Dull-witted; stupid. \"The addle-brained Oberstein.\" Motley. Dull and addle-pated. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "addlepated": {
+      "word": "ADDLE-BRAINED; ADDLE-HEADED; ADDLE-PATED",
+      "definitions": [
+        {
+          "text": "Dull-witted; stupid. \"The addle-brained Oberstein.\" Motley. Dull and addle-pated. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "addlebrained",
+        "addled",
+        "addleheaded",
+        "beclouded",
+        "befuddled",
+        "blear-witted",
+        "cloudy",
+        "dizzy",
+        "fogged",
+        "foggy",
+        "fuddlebrained",
+        "fuddled",
+        "hazy",
+        "in a fog",
+        "in a muddle",
+        "misted",
+        "misty",
+        "muddled",
+        "muddleheaded",
+        "muddybrained",
+        "muzzy",
+        "puzzleheaded",
+        "scramblebrained"
+      ]
     },
     "addlepatedness": {
       "word": "ADDLE-PATEDNESS",
@@ -2894,7 +3029,7 @@
       ],
       "relatedWords": []
     },
-    "adenadeno": {
+    "aden": {
       "word": "ADEN-; ADENO-",
       "definitions": [
         {
@@ -2904,7 +3039,27 @@
       ],
       "relatedWords": []
     },
-    "adenalgiaadenalgy": {
+    "adeno": {
+      "word": "ADEN-; ADENO-",
+      "definitions": [
+        {
+          "text": "Combining forms of the Greek word for gland; -- used in words relating to the structure, diseases, etc., of the glands.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "adenalgia": {
+      "word": "ADENALGIA; ADENALGY",
+      "definitions": [
+        {
+          "text": "(Med.) Pain in a gland.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adenalgy": {
       "word": "ADENALGIA; ADENALGY",
       "definitions": [
         {
@@ -2954,7 +3109,17 @@
       ],
       "relatedWords": []
     },
-    "adenoidadenoidal": {
+    "adenoid": {
+      "word": "ADENOID; ADENOIDAL",
+      "definitions": [
+        {
+          "text": "Glandlike; glandular.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "adenoidal": {
       "word": "ADENOID; ADENOIDAL",
       "definitions": [
         {
@@ -2979,6 +3144,16 @@
       "definitions": [
         {
           "text": "The part of physiology that treats of the glands.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adenoma": {
+      "word": "ADENOMA",
+      "definitions": [
+        {
+          "text": "A benign tumor of a glandlike structure; morbid enlargement of a gland. -- Ad`e*nom\"a*tous, a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4125,6 +4300,16 @@
       ],
       "relatedWords": []
     },
+    "adiabatic": {
+      "word": "ADIABATIC",
+      "definitions": [
+        {
+          "text": "Not giving out or receiving heat. exhibiting the variations of pressure and volume of a fluid when it expands without either receiving or giving out heat. Rankine.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "adiactinic": {
       "word": "ADIACTINIC",
       "definitions": [
@@ -4479,6 +4664,16 @@
       ],
       "relatedWords": []
     },
+    "adipoma": {
+      "word": "ADIPOMA",
+      "definitions": [
+        {
+          "text": "A mass of fat found internally; also, a fatty tumor. -- Ad`i*pom\"a*tous, a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "adipose": {
       "word": "ADIPOSE",
       "definitions": [
@@ -4565,7 +4760,17 @@
         "well-fed"
       ]
     },
-    "adiposenessadiposity": {
+    "adiposeness": {
+      "word": "ADIPOSENESS; ADIPOSITY",
+      "definitions": [
+        {
+          "text": "The state of being fat; fatness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adiposity": {
       "word": "ADIPOSENESS; ADIPOSITY",
       "definitions": [
         {
@@ -4657,7 +4862,21 @@
         "way in"
       ]
     },
-    "adjacenceadjacency": {
+    "adjacence": {
+      "word": "ADJACENCE; ADJACENCY",
+      "definitions": [
+        {
+          "text": "The state of being adjacent or contiguous; contiguity; as, the adjacency of lands or buildings.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "That which is adjacent.[R.] Sir T. Browne.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "adjacency": {
       "word": "ADJACENCE; ADJACENCY",
       "definitions": [
         {
@@ -5975,7 +6194,17 @@
       ],
       "relatedWords": []
     },
-    "adjustingplaneadjustingsurface": {
+    "adjustingplane": {
+      "word": "ADJUSTING PLANE; ADJUSTING SURFACE",
+      "definitions": [
+        {
+          "text": "A small plane or surface, usually capable of adjustment but not of manipulation, for preserving lateral balance in an aëroplane or flying machine.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "adjustingsurface": {
       "word": "ADJUSTING PLANE; ADJUSTING SURFACE",
       "definitions": [
         {
@@ -7007,7 +7236,7 @@
       "word": "ADMINISTRATIVE",
       "definitions": [
         {
-          "text": "Pertaining to administration; administering; executive; as, an",
+          "text": "Pertaining to administration; administering; executive; as, an administrative body, ability, or energy.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7582,6 +7811,16 @@
         "worshiper"
       ]
     },
+    "admiring": {
+      "word": "ADMIRING",
+      "definitions": [
+        {
+          "text": "Expressing admiration; as, an admiring glance.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "admissibility": {
       "word": "ADMISSIBILITY",
       "definitions": [
@@ -7689,7 +7928,7 @@
       "word": "ADMISSIBLE",
       "definitions": [
         {
-          "text": "Entitled to be admitted, or worthy of being admitted; that may be allowed or conceded; allowable; as, the supposition is hardly",
+          "text": "Entitled to be admitted, or worthy of being admitted; that may be allowed or conceded; allowable; as, the supposition is hardly admissible.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8380,7 +8619,109 @@
       ],
       "relatedWords": []
     },
-    "admittedadmittedly": {
+    "admitted": {
+      "word": "ADMITTED; ADMITTEDLY",
+      "definitions": [
+        {
+          "text": "Received as true or valid; acknowledged.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Confessedly.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "accepted",
+        "acclaimed",
+        "acknowledged",
+        "admired",
+        "advocated",
+        "affirmed",
+        "allowed",
+        "applauded",
+        "approved",
+        "authenticated",
+        "avowed",
+        "backed",
+        "being done",
+        "certified",
+        "comme il faut",
+        "conceded",
+        "confessed",
+        "confirmed",
+        "conformable",
+        "conventional",
+        "correct",
+        "countersigned",
+        "cried up",
+        "customary",
+        "de rigueur",
+        "decent",
+        "decorous",
+        "endorsed",
+        "established",
+        "favored",
+        "favorite",
+        "fixed",
+        "folk",
+        "formal",
+        "granted",
+        "hallowed",
+        "handed down",
+        "heroic",
+        "highly touted",
+        "hoary",
+        "immemorial",
+        "in good odor",
+        "inveterate",
+        "legendary",
+        "long-established",
+        "long-standing",
+        "meet",
+        "mythological",
+        "notarized",
+        "of long standing",
+        "of the folk",
+        "on sufferance",
+        "oral",
+        "orthodox",
+        "permitted",
+        "popular",
+        "prescriptive",
+        "professed",
+        "proper",
+        "ratified",
+        "received",
+        "recognized",
+        "recommended",
+        "right",
+        "rooted",
+        "sealed",
+        "seemly",
+        "signed",
+        "stamped",
+        "supported",
+        "sworn and affirmed",
+        "sworn to",
+        "time-honored",
+        "tolerated",
+        "traditional",
+        "tried and true",
+        "true-blue",
+        "understood",
+        "underwritten",
+        "unforbidden",
+        "unprohibited",
+        "unwritten",
+        "validated",
+        "venerable",
+        "warranted",
+        "well-thought-of",
+        "worshipful"
+      ]
+    },
+    "admittedly": {
       "word": "ADMITTED; ADMITTEDLY",
       "definitions": [
         {
@@ -8719,7 +9060,7 @@
       "word": "ADMONITORY",
       "definitions": [
         {
-          "text": "That conveys admonition; warning or reproving; as, an",
+          "text": "That conveys admonition; warning or reproving; as, an admonitory glance.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8801,6 +9142,16 @@
         {
           "text": "The adhesion or cohesion of different floral verticils or sets of organs.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adnominal": {
+      "word": "ADNOMINAL",
+      "definitions": [
+        {
+          "text": "Pertaining to an adnoun; adjectival; attached to a noun. Gibbs.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -9155,7 +9506,17 @@
       ],
       "relatedWords": []
     },
-    "adooradoors": {
+    "adoor": {
+      "word": "ADOOR; ADOORS",
+      "definitions": [
+        {
+          "text": "At the door; of the door; as, out adoors. Shak. I took him in adoors. Vicar's Virgil (1630).",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "adoors": {
       "word": "ADOOR; ADOORS",
       "definitions": [
         {
@@ -9259,7 +9620,7 @@
       "word": "ADOPTED",
       "definitions": [
         {
-          "text": "Taken by adoption; taken up as one's own; as, an adopted son,",
+          "text": "Taken by adoption; taken up as one's own; as, an adopted son, citizen, country, word.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9418,7 +9779,7 @@
       "word": "ADOPTIVE",
       "definitions": [
         {
-          "text": "Pertaining to adoption; made or acquired by adoption; fitted to",
+          "text": "Pertaining to adoption; made or acquired by adoption; fitted to adopt; as, an adoptive father, an child; an adoptive language.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9963,6 +10324,16 @@
       ],
       "relatedWords": []
     },
+    "adpress": {
+      "word": "ADPRESS",
+      "definitions": [
+        {
+          "text": "See Appressed.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "adrad": {
       "word": "ADRAD",
       "definitions": [
@@ -10013,7 +10384,17 @@
       ],
       "relatedWords": []
     },
-    "adrenalineadrenalin": {
+    "adrenaline": {
+      "word": "ADRENALINE; ADRENALIN",
+      "definitions": [
+        {
+          "text": "A crystalline substance, C9H13O3N, obtained from suprarenal extract, of which it is regarded as the active principle. It is used in medicine as a stimulant and hemostatic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adrenalin": {
       "word": "ADRENALINE; ADRENALIN",
       "definitions": [
         {
@@ -10682,7 +11063,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Debased by the admixture of a foreign substance; adulterated;",
+          "text": "Debased by the admixture of a foreign substance; adulterated; spurious.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11135,7 +11516,17 @@
       ],
       "relatedWords": []
     },
-    "aduncadunque": {
+    "adunc": {
+      "word": "ADUNC; ADUNQUE",
+      "definitions": [
+        {
+          "text": "Hooked; as, a parrot has an adunc bill.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "adunque": {
       "word": "ADUNC; ADUNQUE",
       "definitions": [
         {
@@ -12732,6 +13123,10 @@
         {
           "text": "(Med.)",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Acquired, as diseases; accidental.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -13147,6 +13542,40 @@
         "would-be gentleman"
       ]
     },
+    "adventuresome": {
+      "word": "ADVENTURESOME",
+      "definitions": [
+        {
+          "text": "Full of risk; adventurous; venturesome.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adventurous",
+        "aggressive",
+        "ambitious",
+        "audacious",
+        "daredevil",
+        "daring",
+        "driving",
+        "dynamic",
+        "enterprising",
+        "foolhardy",
+        "forceful",
+        "go-ahead",
+        "hustling",
+        "overbold",
+        "pushful",
+        "pushing",
+        "pushy",
+        "rash",
+        "reckless",
+        "temerarious",
+        "up-and-coming",
+        "venturesome",
+        "venturous"
+      ]
+    },
     "adventuress": {
       "word": "ADVENTURESS",
       "definitions": [
@@ -13469,7 +13898,7 @@
       "word": "ADVERSATIVE",
       "definitions": [
         {
-          "text": "Expressing contrariety, opposition, or antithesis; as, an adversative conjunction (but, however, yet, etc. ); an adversative",
+          "text": "Expressing contrariety, opposition, or antithesis; as, an adversative conjunction (but, however, yet, etc. ); an adversative force.",
           "partOfSpeech": "adjective"
         },
         {
@@ -13610,7 +14039,17 @@
       ],
       "relatedWords": []
     },
-    "adversifoliateadversifolious": {
+    "adversifoliate": {
+      "word": "ADVERSIFOLIATE; ADVERSIFOLIOUS",
+      "definitions": [
+        {
+          "text": "Having opposite leaves, as plants which have the leaves so arranged on the stem.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "adversifolious": {
       "word": "ADVERSIFOLIATE; ADVERSIFOLIOUS",
       "definitions": [
         {
@@ -13650,7 +14089,7 @@
       ],
       "relatedWords": []
     },
-    "advertenceadvertency": {
+    "advertence": {
       "word": "ADVERTENCE; ADVERTENCY",
       "definitions": [
         {
@@ -13659,6 +14098,59 @@
         }
       ],
       "relatedWords": []
+    },
+    "advertency": {
+      "word": "ADVERTENCE; ADVERTENCY",
+      "definitions": [
+        {
+          "text": "The act of adverting, of the quality of being advertent; attention; notice; regard; heedfulness. To this difference it is right that advertence should be had in regulating taxation. J. S. Mill.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "advertent": {
+      "word": "ADVERTENT",
+      "definitions": [
+        {
+          "text": "Attentive; heedful; regardful. Sir M. Hale.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "agog",
+        "alert",
+        "all ears",
+        "all eyes",
+        "assiduous",
+        "attentive",
+        "aware",
+        "careful",
+        "concentrated",
+        "conscious",
+        "diligent",
+        "earnest",
+        "finical",
+        "finicking",
+        "finicky",
+        "heedful",
+        "intense",
+        "intent",
+        "intentive",
+        "meticulous",
+        "mindful",
+        "nice",
+        "niggling",
+        "observant",
+        "observing",
+        "on the ball",
+        "on the job",
+        "open-eared",
+        "open-eyed",
+        "openmouthed",
+        "regardful",
+        "watchful"
+      ]
     },
     "advertise": {
       "word": "ADVERTISE",
@@ -14707,7 +15199,17 @@
       ],
       "relatedWords": []
     },
-    "advoutryadvowtry": {
+    "advoutry": {
+      "word": "ADVOUTRY; ADVOWTRY",
+      "definitions": [
+        {
+          "text": "Adultery. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "advowtry": {
       "word": "ADVOUTRY; ADVOWTRY",
       "definitions": [
         {
@@ -14815,13 +15317,7 @@
         {
           "text": "To cut with an adz. [R.] Carlyle.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "adzadze": {
-      "word": "ADZ; ADZE",
-      "definitions": [
+        },
         {
           "text": "A carpenter's or cooper's tool, formed with a thin arching blade set at right angles to the handle. It is used for chipping or slicing away the surface of wood.",
           "partOfSpeech": "noun"
@@ -14829,11 +15325,11 @@
       ],
       "relatedWords": []
     },
-    "adventureone'sselfthroughashortenedforms'auntrersee": {
-      "word": "adventure (one's self), through a shortened form s'auntrer. See",
+    "adze": {
+      "word": "ADZ; ADZE",
       "definitions": [
         {
-          "text": "To wander or walk about idly and in a leisurely or lazy manner; to lounge; to stroll; to loiter. One could lie under elm trees in a lawn, or saunter in meadows by the side of a stream. Masson.",
+          "text": "A carpenter's or cooper's tool, formed with a thin arching blade set at right angles to the handle. It is used for chipping or slicing away the surface of wood.",
           "partOfSpeech": "noun"
         }
       ],

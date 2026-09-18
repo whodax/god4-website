@@ -550,24 +550,6 @@
       ],
       "relatedWords": []
     },
-    "dimfrrondforsense2cffrondellearoundaroundshield": {
-      "word": "dim. fr. rond; for sense 2, cf. F. rondelle a round, a round shield.",
-      "definitions": [
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A rondelay. \"Sung all the roundel lustily.\" Chaucer. Come, now a roundel and a fairy song. Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Anything having a round form; a round figure; a circle. The Spaniards, casting themselves into roundels, . . . made a flying march to Calais. Bacon. Specifically: (a) A small circular shield, sometimes not more than a foot in diameter, used by soldiers in the fourteenth and fifteenth centuries. (b) (Her.) A circular spot; a sharge in the form of a small circle. (c) (Fort.) A bastion of a circular form.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "dimication": {
       "word": "DIMICATION",
       "definitions": [
@@ -1321,7 +1303,17 @@
       ],
       "relatedWords": []
     },
-    "dimmishdimmy": {
+    "dimmish": {
+      "word": "DIMMISH; DIMMY",
+      "definitions": [
+        {
+          "text": "Somewhat dim; as, dimmish eyes. \"Dimmy clouds.\" Sir P. Sidney.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimmy": {
       "word": "DIMMISH; DIMMY",
       "definitions": [
         {
@@ -1479,28 +1471,6 @@
         "yokelism"
       ]
     },
-    "dimofblancwhiteblanquetteakindofwhitepearfrblanc": {
-      "word": "dim. of blanc white; blanquette a kind of white pear, fr. blanc",
-      "definitions": [
-        {
-          "text": "A heavy, loosely woven fabric, usually of wool, and having a nap, used in bed clothing; also, a similar fabric used as a robe; or any fabric used as a cover for a horse.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Print.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A piece of rubber, felt, or woolen cloth, used in the tympan to make it soft and elastic.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A streak or layer of blubber in whales. the following figure of Shakespeare. Nares. Nor heaven peep through the blanket of the dark To cry, \"Hold, hold!\" Shak. Blanket sheet, a newspaper of folio size. discour",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "dimorph": {
       "word": "DIMORPH",
       "definitions": [
@@ -1641,7 +1611,76 @@
       ],
       "relatedWords": []
     },
-    "dimyadimyaria": {
+    "dimsighted": {
+      "word": "DIM-SIGHTED",
+      "definitions": [
+        {
+          "text": "Having dim sight; lacking perception.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ableptical",
+        "amaurotic",
+        "benighted",
+        "bereft of light",
+        "blear-eyed",
+        "bleary-eyed",
+        "blind",
+        "blindfold",
+        "blindfolded",
+        "color-blind",
+        "dark",
+        "dim",
+        "dim-eyed",
+        "dull-sighted",
+        "eyeless",
+        "feeble-eyed",
+        "filmy-eyed",
+        "gravel-blind",
+        "half-blind",
+        "hemeralopic",
+        "imperceptive",
+        "impercipient",
+        "in darkness",
+        "insensible",
+        "mind-blind",
+        "mole-eyed",
+        "myopic",
+        "nearsighted",
+        "nonunderstanding",
+        "nyctalopic",
+        "purblind",
+        "rayless",
+        "sand-blind",
+        "shortsighted",
+        "sightless",
+        "spiritually blind",
+        "stark blind",
+        "stone-blind",
+        "unapprehending",
+        "uncomprehending",
+        "undiscerning",
+        "unenlightened",
+        "unobserving",
+        "unperceiving",
+        "unperceptive",
+        "unseeing",
+        "visionless",
+        "weak-eyed"
+      ]
+    },
+    "dimya": {
+      "word": "DIMYA; DIMYARIA",
+      "definitions": [
+        {
+          "text": "An order of lamellibranchiate mollusks having an anterior and posterior adductor muscle, as the common clam. See Bivalve.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dimyaria": {
       "word": "DIMYA; DIMYARIA",
       "definitions": [
         {

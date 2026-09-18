@@ -1,38 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "worthyfrworthyweighingasmuchascftoleaddrivealsoto": {
-      "word": "worthy, fr. worthy, weighing as much as; cf. to lead, drive, also to",
-      "definitions": [
-        {
-          "text": "(Logic & Math.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A self-evident and necessary truth, or a proposition whose truth is so evident as first sight that no reasoning or demonstration can make it plainer; a proposition which it is necessary to take for granted; as, \"The whole is greater than a part;\" \"A thing can not, at the same time, be and not be.\"",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "An established principle in some art or science, which, though not a necessary truth, is universally received; as, the axioms of political economy. which is taken for granted as the basis of reasoning. A maxim is a guiding principle sanctioned by experience, and relating especially to the practical concerns of life. An aphorism is a short sentence pithily expressing some valuable and general truth or sentiment. An adage is a saying of long-established authority and of universal application.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "wonnegothwunantorejoiceinunwunandssadaswunianto": {
-      "word": "wonne, Goth. wunan to rejoice (in unwunands sad), AS. wunian to",
-      "definitions": [
-        {
-          "text": "Cheerful; merry; gay; light-hearted. Misled by ill example, and a winsome nature. Jeffrey.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Causing joy or pleasure; gladsome; pleasant. Still plotting how their hungry ear That winsome voice again might hear. Emerson.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "wo": {
       "word": "WO",
       "definitions": [
@@ -143,7 +111,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A curse; a malediction. Can there be a woe or curse in all the stores of vengeance equal to the malignity of such a practice South. Woe is me! for I am undone.\" Isa. vi. 5. O! woe were us alive [i.e., in life]. Chaucer.",
+          "text": "A curse; a malediction. Can there be a woe or curse in all the stores of vengeance equal to the malignity of such a practice South. Woe is me! for I am undone.\" Isa. vi. 5. O! woe were us alive [i.e., in life]. Chaucer. Woe unto him that striveth with his Maker! Isa. xlv. 9. Woe worth, Woe be to. See Worth, v. i. Woe worth the chase, woe worth the day, That costs thy life, my gallant gray! Sir W. Scott.",
           "partOfSpeech": "noun"
         },
         {
@@ -163,7 +131,7 @@
       ],
       "relatedWords": []
     },
-    "woefulwoful": {
+    "woeful": {
       "word": "WOEFUL; WOFUL",
       "definitions": [
         {
@@ -181,7 +149,25 @@
       ],
       "relatedWords": []
     },
-    "woefullywofully": {
+    "woful": {
+      "word": "WOEFUL; WOFUL",
+      "definitions": [
+        {
+          "text": "Full of woe; sorrowful; distressed with grief or calamity; afflicted; wretched; unhappy; sad. How many woeful widows left to bow To sad disgrace! Daniel.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Bringing calamity, distress, or affliction; as, a woeful event; woeful want. O woeful day! O day of woe! Philips.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Wretched; paltry; miserable; poor. What woeful stuff this madrigal would be! Pope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "woefully": {
       "word": "WOEFULLY; WOFULLY",
       "definitions": [
         {
@@ -191,7 +177,27 @@
       ],
       "relatedWords": []
     },
-    "woefulnesswofulness": {
+    "wofully": {
+      "word": "WOEFULLY; WOFULLY",
+      "definitions": [
+        {
+          "text": "In a woeful manner; sorrowfully; mournfully; miserably; dolefully.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "woefulness": {
+      "word": "WOEFULNESS; WOFULNESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being woeful; misery; wretchedness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "wofulness": {
       "word": "WOEFULNESS; WOFULNESS",
       "definitions": [
         {
@@ -339,7 +345,7 @@
       "word": "WOLFISH",
       "definitions": [
         {
-          "text": "Like a wolf; having the qualities or form of a wolf; as, a",
+          "text": "Like a wolf; having the qualities or form of a wolf; as, a wolfish visage; wolfish designs.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -505,7 +511,25 @@
       ],
       "relatedWords": []
     },
-    "wolverenewolverine": {
+    "wolverene": {
+      "word": "WOLVERENE; WOLVERINE",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The glutton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A nickname for an inhabitant of Michigan. [U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "wolverine": {
       "word": "WOLVERENE; WOLVERINE",
       "definitions": [
         {
@@ -583,7 +607,17 @@
       ],
       "relatedWords": []
     },
-    "womanheadwomanhede": {
+    "womanhead": {
+      "word": "WOMANHEAD; WOMANHEDE",
+      "definitions": [
+        {
+          "text": "Womanhood. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "womanhede": {
       "word": "WOMANHEAD; WOMANHEDE",
       "definitions": [
         {
@@ -611,7 +645,7 @@
       "word": "WOMANISH",
       "definitions": [
         {
-          "text": "Suitable to a woman, having the qualities of a woman; effeminate; not becoming a man; -- usually in a reproachful sense. See the Note under Effeminate. \" Thy tears are womanish.\" Shak. \" Womanish entreaties.\" Macaulay. A voice not soft, weak, piping, and womanish, but audible, strong,",
+          "text": "Suitable to a woman, having the qualities of a woman; effeminate; not becoming a man; -- usually in a reproachful sense. See the Note under Effeminate. \" Thy tears are womanish.\" Shak. \" Womanish entreaties.\" Macaulay. A voice not soft, weak, piping, and womanish, but audible, strong, and manlike. Ascham.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -937,7 +971,7 @@
           "partOfSpeech": "adverb"
         },
         {
-          "text": "Wonderful; astonishing; admirable; marvelous; such as excite surprise and astonishment; strange.",
+          "text": "Wonderful; astonishing; admirable; marvelous; such as excite surprise and astonishment; strange. That I may . . . tell of all thy wondrous works. Ps. xxvi. 7. Chloe complains, and wondrously's aggrieved. Granville.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1299,7 +1333,17 @@
       ],
       "relatedWords": []
     },
-    "woodhackwoodhacker": {
+    "woodhack": {
+      "word": "WOODHACK; WOODHACKER",
+      "definitions": [
+        {
+          "text": "The yaffle. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "woodhacker": {
       "word": "WOODHACK; WOODHACKER",
       "definitions": [
         {
@@ -1399,6 +1443,16 @@
         {
           "text": "A young oak, or other timber plant, laid down in a hedge among the whitethorn or other plants used in hedges.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "woodless": {
+      "word": "WOODLESS",
+      "definitions": [
+        {
+          "text": "Having no wood; destitute of wood. Mitford.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1505,7 +1559,17 @@
       ],
       "relatedWords": []
     },
-    "woodruffwoodroof": {
+    "woodruff": {
+      "word": "WOODRUFF; WOODROOF",
+      "definitions": [
+        {
+          "text": "A little European herb (Asperula odorata) having a pleasant taste. It is sometimes used for flavoring wine. See Illust. of Whorl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "woodroof": {
       "word": "WOODRUFF; WOODROOF",
       "definitions": [
         {
@@ -1615,7 +1679,27 @@
       ],
       "relatedWords": []
     },
-    "woodwashwoodwaxwoodwaxen": {
+    "woodwash": {
+      "word": "WOOD-WASH; WOOD-WAX; WOOD-WAXEN",
+      "definitions": [
+        {
+          "text": "Same as Woadwaxen.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "woodwax": {
+      "word": "WOOD-WASH; WOOD-WAX; WOOD-WAXEN",
+      "definitions": [
+        {
+          "text": "Same as Woadwaxen.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "woodwaxen": {
       "word": "WOOD-WASH; WOOD-WAX; WOOD-WAXEN",
       "definitions": [
         {
@@ -1753,7 +1837,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A sort of pubescence, or a clothing of dense, curling hairs on the surface of certain plants. Dead pulled wool, wool pulled from a carcass. matter, from wool, or the surface of woolen cloth. machine for combing wool.",
+          "text": "A sort of pubescence, or a clothing of dense, curling hairs on the surface of certain plants. Dead pulled wool, wool pulled from a carcass. matter, from wool, or the surface of woolen cloth. machine for combing wool. numerous clustered woolly spikes. pustule, occurring among those who handle the wool of goats and sheep. king's staple for sale. [Eng.] -- Wool stapler. (a) One who deals in wool. (b) One who sorts wool according to its staple, or its adaptation to different manufacturing purposes. bundles to be packed for sale.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1868,6 +1952,16 @@
         },
         {
           "text": "Indulgence in idle imagination; a foolish or useless pursuit or design. His wits were a woolgathering, as they say. Burton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "woolgrower": {
+      "word": "WOOLGROWER",
+      "definitions": [
+        {
+          "text": "One who raises sheep for the production of wool.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2119,7 +2213,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A brief remark or observation; an expression; a phrase, clause, or short sentence. All the law is fulfilled in one word, even in this; Thou shalt love thy neighbor as thyself. Gal. v. 14. She said; but at the happy word \"he lives,\" My father stooped, re- fathered, o'er my wound. Tennyson. There is only one other point on which I offer a word of remark. Dickens.",
+          "text": "A brief remark or observation; an expression; a phrase, clause, or short sentence. All the law is fulfilled in one word, even in this; Thou shalt love thy neighbor as thyself. Gal. v. 14. She said; but at the happy word \"he lives,\" My father stooped, re- fathered, o'er my wound. Tennyson. There is only one other point on which I offer a word of remark. Dickens. By word of mouth, orally; by actual speaking. Boyle. harmless fellow a good word.\" Pope. . . . but in deed and in truth.\" 1 John iii. 8. in France in 1625, and approved in 1638. The order, which also exists in the United States, was instituted for the purpose of doing honor to the \"Mystery of the Incarnation of the Son of God.\" -- The word, or The Word. (Theol.) (a) The gospel message; esp., the Scriptures, as a revelation of God. \"Bold to speak the word without fear.\" Phil. i. 14. (b) The second person in the Trinity before his manifestation in time by the incarnation; among those who reject a Trinity of persons, some one or all of the divine attributes personified. John i. 1. \"Our host hadde the wordes for us all.\" Chaucer. written words or symbols, although the person affected may be able to see quite well, speak fluently, and write correctly. Landois & Stirling. though the person affected may hear them and other sounds, and hence is not deaf. language, though the power of speech is unimpaired. as, to repeat anything word for word. by words only, so as to present it clearly to the mind, as if in a picture. an object clearly to the mind, as if in a picture. vertically and horizontally with like results.",
           "partOfSpeech": "noun"
         },
         {
@@ -2349,6 +2443,38 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To exert one's self for a purpose; to put forth effort for the attainment of an object; to labor; to be engaged in the performance of a task, a duty, or the like. O thou good Kent, how shall I live and work, To match thy goodness Shak. Go therefore now, and work; for there shall no straw be given you. Ex. v. 18. Whether we work or play, or sleep or wake, Our life doth pass. Sir J. Davies.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Hence, in a general sense, to operate; to act; to perform; as, a machine works well. We bend to that the working of the heart. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Hence, figuratively, to be effective; to have effect or influence; to conduce. We know that all things work together for good to them that love God. Rom. viii. 28. This so wrought upon the child, that afterwards he desired to be taught. Locke. She marveled how she could ever have been wrought upon to marry him. Hawthorne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To carry on business; to be engaged or employed customarily; to perform the part of a laborer; to labor; to toil. They that work in fine flax . . . shall be confounded. Isa. xix. 9.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be in a state of severe exertion, or as if in such a state; to be tossed or agitated; to move heavily; to strain; to labor; as, a ship works in a heavy sea. Confused with working sands and rolling waves. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make one's way slowly and with difficulty; to move or penetrate laboriously; to proceed with effort; -- with a following preposition, as down, out, into, up, through, and the like; as, scheme works out by degrees; to work into the earth. Till body up to spirit work, in bounds Proportioned to each kind. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To ferment, as a liquid. The working of beer when the barm is put in. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To act or operate on the stomach and bowels, as a cathartic. Purges . . . work best, that is, cause the blood so to do, . . . in warm weather or in a warm room. Grew. To work at, to be engaged in or upon; to be employed in. tack to windward. Mar. Dict.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To labor or operate upon; to give exertion and effort to; to prepare for use, or to utilize, by labor. He could have told them of two or three gold mines, and a silver mine, and given the reason why they forbare to work them at that time. Sir W. Raleigh.",
           "partOfSpeech": "verb"
         },
@@ -2519,7 +2645,7 @@
       "word": "WORKING",
       "definitions": [
         {
-          "text": "a & n. from Work.",
+          "text": "a & n. from Work. The word must cousin be to the working. Chaucer. Working beam. See Beam, n. 10. labor, or are dependent upon it for support; laborers; operatives; -- chiefly used in the plural. structure, machine, etc., made to a scale, and intended to be followed by the workmen. Working drawings are either general or detail drawings. required; the point where the useful work is done.",
           "partOfSpeech": ""
         }
       ],
@@ -2671,7 +2797,17 @@
       ],
       "relatedWords": []
     },
-    "workwaysworkwise": {
+    "workways": {
+      "word": "WORKWAYS; WORKWISE",
+      "definitions": [
+        {
+          "text": "In a working position or manner; as, a T rail placed workwise, i.e., resting on its base.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "workwise": {
       "word": "WORKWAYS; WORKWISE",
       "definitions": [
         {
@@ -2789,13 +2925,13 @@
       "word": "WORLDLY-MINDED",
       "definitions": [
         {
-          "text": "Devoted to worldly interests; mindful of the affairs of the present life, and forgetful of those of the future; loving and pursuing this world's goods, to the exclusion of piety and attention",
+          "text": "Devoted to worldly interests; mindful of the affairs of the present life, and forgetful of those of the future; loving and pursuing this world's goods, to the exclusion of piety and attention to spiritual concerns.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "worldlywiseworldlywise": {
+    "worldlywise": {
       "word": "WORLDLYWISE; WORLDLY-WISE",
       "definitions": [
         {
@@ -3057,7 +3193,17 @@
       ],
       "relatedWords": []
     },
-    "worralworrel": {
+    "worral": {
+      "word": "WORRAL; WORREL",
+      "definitions": [
+        {
+          "text": "An Egyptian fork-tongued lizard, about four feet long when full grown.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "worrel": {
       "word": "WORRAL; WORREL",
       "definitions": [
         {
@@ -3165,6 +3311,10 @@
         {
           "text": "In a worse degree; in a manner more evil or bad. Now will we deal worse with thee than with them. Gen. xix. 9.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "To make worse; to put disadvantage; to discomfit; to worst. See Worst, v. Weapons more violent, when next we meet, May serve to better us and worse our foes. Milton.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -3349,6 +3499,10 @@
       "word": "WORTH",
       "definitions": [
         {
+          "text": "To be; to become; to betide; -- now used only in the phrases, woe worth the day, woe worth the man, etc., in which the verb is in the imperative, and the nouns day, man, etc., are in the dative. Woe be to the day, woe be to the man, etc., are equivalent phrases. I counsel . . . to let the cat worthe. Piers Plowman. He worth upon [got upon] his steed gray. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "Valuable; of worthy; estimable; also, worth while. [Obs.] It was not worth to make it wise. Chaucer.",
           "partOfSpeech": "adjective"
         },
@@ -3361,7 +3515,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having possessions equal to; having wealth or estate to the value of. At Geneva are merchants reckoned worth twenty hundred crowns.",
+          "text": "Having possessions equal to; having wealth or estate to the value of. At Geneva are merchants reckoned worth twenty hundred crowns. Addison. Worth while, or Worth the while. See under While, n.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3461,7 +3615,17 @@
       ],
       "relatedWords": []
     },
-    "wotestwottest": {
+    "wot": {
+      "word": "WOT",
+      "definitions": [
+        {
+          "text": "1st & 3d pers. sing. pres. of Wit, to know. See the Note under Wit, v. [Obs.] Brethren, I wot that through ignorance ye did it. Acts iii. 17.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "wotest": {
       "word": "WOTEST; WOTTEST",
       "definitions": [
         {
@@ -3471,7 +3635,27 @@
       ],
       "relatedWords": []
     },
-    "wotethwotteth": {
+    "wottest": {
+      "word": "WOTEST; WOTTEST",
+      "definitions": [
+        {
+          "text": "2d pers. sing. pres. of Wit, to know. [Obs.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "woteth": {
+      "word": "WOTETH; WOTTETH",
+      "definitions": [
+        {
+          "text": "3d pers. sing. pres. of Wit, to know. [Obs.] \"He wotteth neither what he babbleth, nor what he meaneth.\" Tyndale.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "wotteth": {
       "word": "WOTETH; WOTTETH",
       "definitions": [
         {

@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "ano": {
+      "word": "ANI; ANO",
+      "definitions": [
+        {
+          "text": "A black bird of tropical America, the West Indies and Florida (Crotophaga ani), allied to the cuckoos, and remarkable for communistic nesting.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "anoa": {
       "word": "ANOA",
       "definitions": [
@@ -346,8 +356,12 @@
       "relatedWords": []
     },
     "anomaliped": {
-      "word": "ANOMALIPED",
+      "word": "ANOMALIPED; ANOMALIPEDE",
       "definitions": [
+        {
+          "text": "Having anomalous feet.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One of a group of perching birds, having the middle toe more or less united to the outer and inner ones.",
           "partOfSpeech": "noun"
@@ -355,7 +369,7 @@
       ],
       "relatedWords": []
     },
-    "anomalipedanomalipede": {
+    "anomalipede": {
       "word": "ANOMALIPED; ANOMALIPEDE",
       "definitions": [
         {
@@ -375,17 +389,7 @@
       ],
       "relatedWords": []
     },
-    "anomalistically": {
-      "word": "ANOMALISTICALLY",
-      "definitions": [
-        {
-          "text": "With irregularity.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "anomalisticanomalistical": {
+    "anomalistic": {
       "word": "ANOMALISTIC; ANOMALISTICAL",
       "definitions": [
         {
@@ -399,6 +403,34 @@
         {
           "text": "Pertaining to the anomaly, or angular distance of a planet from its perihelion. Anomalistic month. See under Month. goes through the complete cycles of its changes of anomaly, or from any point in its elliptic orbit to the same again.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anomalistical": {
+      "word": "ANOMALISTIC; ANOMALISTICAL",
+      "definitions": [
+        {
+          "text": "Irregular; departing from common or established rules.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Astron.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the anomaly, or angular distance of a planet from its perihelion. Anomalistic month. See under Month. goes through the complete cycles of its changes of anomaly, or from any point in its elliptic orbit to the same again.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anomalistically": {
+      "word": "ANOMALISTICALLY",
+      "definitions": [
+        {
+          "text": "With irregularity.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -655,7 +687,7 @@
       ],
       "relatedWords": []
     },
-    "anomuraanomoura": {
+    "anomoura": {
       "word": "ANOMURA; ANOMOURA",
       "definitions": [
         {
@@ -665,7 +697,17 @@
       ],
       "relatedWords": []
     },
-    "anomuralanomuran": {
+    "anomura": {
+      "word": "ANOMURA; ANOMOURA",
+      "definitions": [
+        {
+          "text": "A group of decapod Crustacea, of which the hermit crab in an example.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anomural": {
       "word": "ANOMURAL; ANOMURAN",
       "definitions": [
         {
@@ -676,8 +718,12 @@
       "relatedWords": []
     },
     "anomuran": {
-      "word": "ANOMURAN",
+      "word": "ANOMURAL; ANOMURAN",
       "definitions": [
+        {
+          "text": "Irregular in the character of the tail or abdomen; as, the anomural crustaceans. [Written also anomoural, anomouran.]",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One of the Anomura.",
           "partOfSpeech": "noun"
@@ -883,7 +929,17 @@
       ],
       "relatedWords": []
     },
-    "anoplothereanoplotherium": {
+    "anoplothere": {
+      "word": "ANOPLOTHERE; ANOPLOTHERIUM",
+      "definitions": [
+        {
+          "text": "A genus of extinct quadrupeds of the order Ungulata, whose were first found in the gypsum quarries near Paris; characterized by the shortness and feebleness of their canine teeth (whence the name).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anoplotherium": {
       "word": "ANOPLOTHERE; ANOPLOTHERIUM",
       "definitions": [
         {
@@ -903,7 +959,7 @@
       ],
       "relatedWords": []
     },
-    "anopsiaanopsy": {
+    "anopsia": {
       "word": "ANOPSIA; ANOPSY",
       "definitions": [
         {
@@ -913,7 +969,27 @@
       ],
       "relatedWords": []
     },
-    "anorexiaanorexy": {
+    "anopsy": {
+      "word": "ANOPSIA; ANOPSY",
+      "definitions": [
+        {
+          "text": "Want or defect of sight; blindness.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anorexia": {
+      "word": "ANOREXIA; ANOREXY",
+      "definitions": [
+        {
+          "text": "Want of appetite, without a loathing of food. Coxe.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "anorexy": {
       "word": "ANOREXIA; ANOREXY",
       "definitions": [
         {
@@ -1077,46 +1153,6 @@
         "unique"
       ]
     },
-    "anotherakintogrwechselachangeandprobablyalsotoeweak": {
-      "word": "another; akin to Gr. wechsel a change, and probably also to E. weak.",
-      "definitions": [
-        {
-          "text": "Of or pertaining to a vicar, substitute, or deputy; deputed; delegated; as, vicarious power or authority.",
-          "partOfSpeech": "preposition"
-        },
-        {
-          "text": "Acting of suffering for another; as, a vicarious agent or officer. The soul in the body is but a subordinate efficient, and vicarious . . . in the hands of the Almighty. Sir M. Hale.",
-          "partOfSpeech": "preposition"
-        },
-        {
-          "text": "Performed of suffered in the place of another; substituted; as, a vicarious sacrifice; vicarious punishment. The vicarious work of the Great Deliverer. I. Taylor.",
-          "partOfSpeech": "preposition"
-        },
-        {
-          "text": "(Med.)",
-          "partOfSpeech": "preposition"
-        },
-        {
-          "text": "Acting as a substitute; -- said of abnormal action which replaces a suppressed normal function; as, vicarious hemorrhage replacing menstruation.",
-          "partOfSpeech": "preposition"
-        }
-      ],
-      "relatedWords": []
-    },
-    "anotherasslenderproofswhichrathershowthecontrarysee": {
-      "word": "another; as, slender proofs which rather show the contrary. See",
-      "definitions": [
-        {
-          "text": "(Logic)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "See Contraries. On the contrary, in opposition; on the other hand. Swift. side. \"They did it, not for want of instruction to the contrary.\" Bp. Stillingfleet.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "anothergaines": {
       "word": "ANOTHER-GAINES",
       "definitions": [
@@ -1177,7 +1213,17 @@
       ],
       "relatedWords": []
     },
-    "anoxaemiaanoxemia": {
+    "anoxaemia": {
+      "word": "ANOXAEMIA; ANOXEMIA",
+      "definitions": [
+        {
+          "text": "An abnormal condition due to deficient aëration of the blood, as in balloon sickness, mountain sickness. -- An`ox*æ\"mic, *e\"mic (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anoxemia": {
       "word": "ANOXAEMIA; ANOXEMIA",
       "definitions": [
         {

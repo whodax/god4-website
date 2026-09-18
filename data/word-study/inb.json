@@ -116,7 +116,17 @@
         "tersely"
       ]
     },
-    "inbreakinbreaking": {
+    "inbreak": {
+      "word": "INBREAK; INBREAKING",
+      "definitions": [
+        {
+          "text": "A breaking in; inroad; invasion.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inbreaking": {
       "word": "INBREAK; INBREAKING",
       "definitions": [
         {
@@ -187,7 +197,11 @@
       "word": "INBREED",
       "definitions": [
         {
-          "text": "To produce or generate within. Bp. Reynolds.",
+          "text": "To produce or generate within. Bp. Reynolds. To inbreed and cherish . . . the seeds of virtue. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To breed in and in. See under Breed, v. i.",
           "partOfSpeech": "verb"
         }
       ],

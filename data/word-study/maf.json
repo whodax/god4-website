@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "entries": {
-    "maffiamafia": {
+    "maffia": {
       "word": "MAFFIA; MAFIA",
       "definitions": [
         {
@@ -11,7 +11,7 @@
       ],
       "relatedWords": []
     },
-    "maffiosomafioso": {
+    "maffioso": {
       "word": "MAFFIOSO; MAFIOSO",
       "definitions": [
         {
@@ -36,6 +36,26 @@
       "definitions": [
         {
           "text": "A stammerer. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mafia": {
+      "word": "MAFFIA; MAFIA",
+      "definitions": [
+        {
+          "text": "A secret society which organized in Sicily as a political organization, but is now widespread among Italians, and is used to further or protect private interests, reputedly by illegal methods.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mafioso": {
+      "word": "MAFFIOSO; MAFIOSO",
+      "definitions": [
+        {
+          "text": "A member of the maffia.",
           "partOfSpeech": "noun"
         }
       ],

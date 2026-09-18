@@ -217,7 +217,11 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "The cover, or case, of a bed, mattress, etc., which contains the",
+          "text": "The cover, or case, of a bed, mattress, etc., which contains the straw, feathers, hair, or other filling.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Ticking. See Ticking, n.",
           "partOfSpeech": "noun"
         },
         {
@@ -275,6 +279,10 @@
       "word": "TICKET",
       "definitions": [
         {
+          "text": "A small piece of paper, cardboard, or the like, serving as a notice, certificate, or distinguishing token of something. Specifically: -- (a) A little note or notice. [Obs. or Local] He constantly read his lectures twice a week for above forty years, giving notice of the time to his auditors in a ticket on the school doors. Fuller. (b) A tradesman's bill or account. [Obs.] abbreviation, came the phrase on tick. See 1st Tick. Your courtier is mad to take up silks and velvets On ticket for his mistress. J. Cotgrave. (c) A certificate or token of right of admission to a place of assembly, or of passage in a public conveyance; as, a theater ticket; a railroad or steamboat ticket. (d) A label to show the character or price of goods. (e) A certificate or token of a share in a lottery or other scheme for distributing money, goods, or the like. (f) (Politics) A printed list of candidates to be voted for at an election; a set of nominations by one party for election; a ballot. [U.S.] The old ticket forever! We have it by thirty-four votes. Sarah Franklin (1766). Scratched ticket, a ticket from which the names of one or more of the candidates are scratched out. party, or containing candidates selected from two or more parties. party, without change. stock exchange, when the names of the actual purchasers are rendered in by one stockbroker to another. [Eng.] Simmonds. prisoner of the crown, to go at large, and to labor for himself before the expiration of his sentence, subject to certain specific conditions. [Eng.] Simmonds. be identified. [Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To distinguish by a ticket; to put a ticket on; as, to ticket goods.",
           "partOfSpeech": "verb"
         },
@@ -308,6 +316,14 @@
     "tickle": {
       "word": "TICKLE",
       "definitions": [
+        {
+          "text": "To touch lightly, so as to produce a peculiar thrilling sensation, which commonly causes laughter, and a kind of spasm which become dengerous if too long protracted. If you tickle us, do we not laugh Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To please; to gratify; to make joyous. Pleased with a rattle, tickled with a straw. Pope. Such a nature Tickled with good success, disdains the shadow Which he treads on at noon. Shak.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To feel titillation. He with secret joy therefore Did tickle inwardly in every vein. Spenser.",
           "partOfSpeech": "verb"
@@ -395,7 +411,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Difficult; nice; critical; as, a ticklish business. Surely princes had need, in tender matters and ticklish times, to",
+          "text": "Difficult; nice; critical; as, a ticklish business. Surely princes had need, in tender matters and ticklish times, to beware what they say. Bacon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -483,7 +499,17 @@
       ],
       "relatedWords": []
     },
-    "tiddertiddle": {
+    "tidder": {
+      "word": "TIDDER; TIDDLE",
+      "definitions": [
+        {
+          "text": "To use with tenderness; to fondle. [Obs. or Prov. Eng.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tiddle": {
       "word": "TIDDER; TIDDLE",
       "definitions": [
         {
@@ -541,7 +567,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The period of twelve hours. Atmospheric tides, tidal movements of the atmosphere similar to those of the ocean, and produced in the",
+          "text": "The period of twelve hours. Atmospheric tides, tidal movements of the atmosphere similar to those of the ocean, and produced in the same manner by the attractive forces of the sun and moon. maxima of the resultant wave at the same place. Its length varies as the components of sun and moon waves approach to, or recede from, one another. A retardation from this cause is called the lagging of the tide, while the acceleration of the recurrence of high water is termed the priming of the tide. See Lag of the tide, under 2d Lag. when the tide sets in one direction, but which closes automatically and prevents the water from flowing in the other direction. (b) (Naut.) A place where the tide runs with great velocity, as through a gate. especially, a contrivance for registering the state of the tide continuously at every instant of time. Brande & C. and the tide water of a harbor or river, when they are on different levels, so that craft can pass either way at all times of the tide; - - called also guard lock. for clearing lands from tide water. tides or currents. tide at any place. broadly, the seaboard. That of the ocean is called primitive; that of bays or channels derivative. Whewell. ebb or flow of the tide.",
           "partOfSpeech": "noun"
         },
         {
@@ -672,6 +698,16 @@
       "definitions": [
         {
           "text": "Tidings. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tidings": {
+      "word": "TIDINGS",
+      "definitions": [
+        {
+          "text": "Account of what has taken place, and was not before known; news. I shall make my master glad with these tidings. Shak. Full well the busy whisper, circling round, Conveyed the dismal tidings when he frowned. Goldsmith. singular. By Shakespeare it was used indiscriminately as a singular or plural. Now near the tidings of our comfort is. Shak. Tidings to the contrary Are brought your eyes. Shak. quarter; the term tidings denotes intelligence expected from a particular quarter, showing what has there betided. We may be indifferent as to news, but are always more or less interested in tidings. We read the news daily; we wait for tidings respecting an absent friend or an impending battle. We may be curious to hear the news; we are always anxious for tidings. Evil news rides post, while good news baits. Milton. What tidings dost thou bring Addison.",
           "partOfSpeech": "noun"
         }
       ],
@@ -849,6 +885,10 @@
         {
           "text": "A chold's apron covering the upper part of the body, and tied with tape or cord; a pinafore. [Written also tire.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A row or rank, especially one of two or more rows placed one above, or higher than, another; as, a tier of seats in a theater. Tiers of a cable, the ranges of fakes, or windings, of a cable, laid one within another when coiled.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -899,7 +939,17 @@
       ],
       "relatedWords": []
     },
-    "tierceltiercelet": {
+    "tiercel": {
+      "word": "TIERCEL; TIERCELET",
+      "definitions": [
+        {
+          "text": "The male of various falcons, esp. of the peregrine; also, the male of the goshawk. Encyc. Brit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tiercelet": {
       "word": "TIERCEL; TIERCELET",
       "definitions": [
         {
@@ -1060,6 +1110,32 @@
       "definitions": [
         {
           "text": "Same as Tigella.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tiger": {
+      "word": "TIGER",
+      "definitions": [
+        {
+          "text": "A very large and powerful carnivore (Felis tigris) native of Southern Asia and the East Indies. Its back and sides are tawny or rufous yellow, transversely striped with black, the tail is ringed with black, the throat and belly are nearly white. When full grown, it equals or exceeds the lion in size and strength. Called also royal tiger, and Bengal tiger.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fig.: A ferocious, bloodthirsty person. As for heinous tiger, Tamora. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A servant in livery, who rids with his master or mistress. Dickens.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of growl or screech, after cheering; as, three cheers and a tiger. [Colloq. U.S.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pneumatic box or pan used in refining sugar. American tiger. (Zoöl.) (a) The puma. (b) The jaguar. (Felis macrocelis or F. marmorata) native of the East Indies and Southern Asia. Its body is about three and a half feet long, and its tail about three feet long. Its ground color is brownish gray, and the dark markings are irregular stripes, spots, and rings, but there are always two dark bands on the face, one extending back from the eye, and one from the angle of the mouth. Called also tortoise-shell tiger. carnivorous beetles of the family Cicindelidæ. They usually inhabit dry or sandy places, and fly rapidly. moderate size with dark transverse bars or stripes somewhat resembling those of the tiger. (as T. conchiflora, T. grandiflora, etc.) having showy flowers, spotted or streaked somewhat like the skin of a tiger. Ritchieana). It is used in many ways by the natives. J. Smith (Dict. Econ. Plants). family Arctiadæ which are striped or barred with black and white or with other conspicuous colors. The larvæ are called woolly bears. tigrinus) more or less barred or spotted with yellow. It is found in both the Atlantic and Indian Ocean. Called also zebra shark. (Cypræa tigris); -- so called from its fancied resemblance to a tiger in color and markings. Called also tiger cowrie. Schomburgkii) found in Guiana.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1325,7 +1401,17 @@
       ],
       "relatedWords": []
     },
-    "tikurtikoor": {
+    "tikur": {
+      "word": "TIKUR; TIKOOR",
+      "definitions": [
+        {
+          "text": "An East Indian tree (Garcinia pedunculata) having a large yellow fleshy fruit with a pleasant acid flavor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tikoor": {
       "word": "TIKUR; TIKOOR",
       "definitions": [
         {
@@ -1547,8 +1633,20 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To; unto; up to; as far as; until; -- now used only in respect to time, but formerly, also, of place, degree, etc., and still so used in Scotland and in parts of England and Ireland; as, I worked till four o'clock; I will wait till next week. He . . . came till an house. Chaucer. Women, up till this Cramped under worse than South-sea-isle taboo. Tennyson. Similar sentiments will recur to every one familiar with his writings Till now, to the present time.",
+          "partOfSpeech": "preposition"
+        },
+        {
           "text": "As far as; up to the place or degree that; especially, up to the time that; that is, to the time specified in the sentence or clause following; until. And said unto them, Occupy till I come. Luke xix. 13. Mediate so long till you make some act of prayer to God. Jer. Taylor. There was no outbreak till the regiment arrived. Macaulay. the time when, the proper conjunction or conjunctive adverb begin when.",
           "partOfSpeech": "conjunction"
+        },
+        {
+          "text": "To plow and prepare for seed, and to sow, dress, raise crops from, etc., to cultivate; as, to till the earth, a field, a farm. No field nolde [would not] tilye. P. Plowman. the Lord God sent him forth from the garden of Eden, to till the ground from whence he was taken. Gen. iii. 23.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To prepare; to get. [Obs.] W. Browne.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To cultivate land. Piers Plowman.",
@@ -1633,7 +1731,17 @@
       ],
       "relatedWords": []
     },
-    "tilleytilleyseed": {
+    "tilley": {
+      "word": "TILLEY; TILLEY SEED",
+      "definitions": [
+        {
+          "text": "The seeds of a small tree (Croton Pavana) common in the Malay Archipelago. These seeds furnish croton oil, like those of Croton Tiglium. [Written also tilly.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tilleyseed": {
       "word": "TILLEY; TILLEY SEED",
       "definitions": [
         {
@@ -2081,7 +2189,17 @@
       ],
       "relatedWords": []
     },
-    "timbreledtimbrelled": {
+    "timbreled": {
+      "word": "TIMBRELED; TIMBRELLED",
+      "definitions": [
+        {
+          "text": "Sung to the sound of the timbrel. \"In vain with timbreled anthems dark.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "timbrelled": {
       "word": "TIMBRELED; TIMBRELLED",
       "definitions": [
         {
@@ -2149,7 +2267,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The measured duration of sounds; measure; tempo; rate of movement; rhythmical division; as, common or triple time; the musician keeps good time. Some few lines set unto a solemn time. Beau. & Fl. explaining; as, time-battered, time-beguiling, time-consecrated, time-consuming, time-enduring, time-killing, time-sanctioned, time- scorner, time-wasting, time-worn, etc. Absolute time, time irrespective of local standards or epochs; as, all spectators see a lunar eclipse at the same instant of absolute time. o'clock at the place is the instant of the transit of the sun's center over the meridian. continuously up to twenty-four from one noon to the next. times he reads, at other times he rides. distinct periods, as years, months, days, hours, etc., the latter, among most modern nations, being divided into two series of twelve each, and reckoned, the first series from midnight to noon, the second, from noon to midnight. ninety steps, each twenty-eight inches in length, are taken in one",
+          "text": "The measured duration of sounds; measure; tempo; rate of movement; rhythmical division; as, common or triple time; the musician keeps good time. Some few lines set unto a solemn time. Beau. & Fl. explaining; as, time-battered, time-beguiling, time-consecrated, time-consuming, time-enduring, time-killing, time-sanctioned, time- scorner, time-wasting, time-worn, etc. Absolute time, time irrespective of local standards or epochs; as, all spectators see a lunar eclipse at the same instant of absolute time. o'clock at the place is the instant of the transit of the sun's center over the meridian. continuously up to twenty-four from one noon to the next. times he reads, at other times he rides. distinct periods, as years, months, days, hours, etc., the latter, among most modern nations, being divided into two series of twelve each, and reckoned, the first series from midnight to noon, the second, from noon to midnight. ninety steps, each twenty-eight inches in length, are taken in one minute. in time to see the exhibition. (b) After a considerable space of duration; eventually; finally; as, you will in time recover your health and strength. twenty steps, each thirty inches in length, are taken in one minute. by general usage over a region or country. In England the standard time is Greenwich mean solar time. In the United States and Canada four kinds of standard time have been adopted by the railroads and accepted by the people, viz., Eastern, Central, Mountain, and Pacific time, corresponding severally to the mean local times of the 75th, 90th, 105th, and 120th meridians west from Greenwich, and being therefore five, six, seven, and eight hours slower than Greenwich time. indicate true midday time, as at Greenwich Observatory, England. Nichol. merchandise, or of stock in the public funds, at a certain time in the future. which is kept a record of the time persons have worked. and indicating the exact time when a watchman visits certain stations in his beat. . . . came time enough to save his life.\" Bacon. so arranged as to ignite the charge at a certain definite interval after being itself ignited. Immemorial. up, prevents the bolt from being withdrawn when locked, until a certain interval of time has elapsed. \"good morning,\" \"good evening,\" and the like; greeting. time in doing something; as, the trotting horse made fast time. distance without a competitor, in the quickest possible time; or, to accomplish the greatest distance which can be passed over in a given time; as, the horse is to run against time. (Astron.) Apparent time as reckoned from the transit of the sun's center over the meridian.",
           "partOfSpeech": "noun"
         },
         {
@@ -2413,7 +2531,7 @@
       "word": "TIMID",
       "definitions": [
         {
-          "text": "Wanting courage to meet danger; easily frightened; timorous; not bold; fearful; shy. Poor is the triumph o'er the timid hare. Thomson.",
+          "text": "Wanting courage to meet danger; easily frightened; timorous; not bold; fearful; shy. Poor is the triumph o'er the timid hare. Thomson. hearted; shrinking; retiring.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2511,7 +2629,17 @@
       ],
       "relatedWords": []
     },
-    "timothytimothygrass": {
+    "timothy": {
+      "word": "TIMOTHY; TIMOTHY GRASS",
+      "definitions": [
+        {
+          "text": "A kind of grass (Phleum pratense) with long cylindrical spikes; cat's-tail grass. It is much prized for fodder. See Illustration in Appendix.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "timothygrass": {
       "word": "TIMOTHY; TIMOTHY GRASS",
       "definitions": [
         {
@@ -2989,7 +3117,7 @@
       ],
       "relatedWords": []
     },
-    "tinkershiretinkle": {
+    "tinkershire": {
       "word": "TINKERSHIRE; TINKLE",
       "definitions": [
         {
@@ -3000,8 +3128,12 @@
       "relatedWords": []
     },
     "tinkle": {
-      "word": "TINKLE",
+      "word": "TINKERSHIRE; TINKLE",
       "definitions": [
+        {
+          "text": "The common guillemot. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To make, or give forth, small, quick, sharp sounds, as a piece of metal does when struck; to clink. As sounding brass, or a tinkling cymbal. 1 Cor. xiii. 1. The sprightly horse Moves to the music of his tinkling bells. Dodsley.",
           "partOfSpeech": "verb"
@@ -3261,7 +3393,17 @@
       ],
       "relatedWords": []
     },
-    "tintinnabulartintinnabulary": {
+    "tintinnabular": {
+      "word": "TINTINNABULAR; TINTINNABULARY",
+      "definitions": [
+        {
+          "text": "Having or making the sound of a bell; tinkling.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tintinnabulary": {
       "word": "TINTINNABULAR; TINTINNABULARY",
       "definitions": [
         {
@@ -3789,7 +3931,7 @@
       "word": "TIRESOME",
       "definitions": [
         {
-          "text": "Fitted or tending to tire; exhausted; wearisome; fatiguing;",
+          "text": "Fitted or tending to tire; exhausted; wearisome; fatiguing; tedious; as, a tiresome journey; a tiresome discourse.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3937,22 +4079,26 @@
       ],
       "relatedWords": []
     },
-    "tisictisical": {
+    "tisic": {
       "word": "TISIC; TISICAL",
       "definitions": [
         {
           "text": "Consumptive, phthisical.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Consumption; phthisis. See Phthisis.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "tisic": {
-      "word": "TISIC",
+    "tisical": {
+      "word": "TISIC; TISICAL",
       "definitions": [
         {
-          "text": "Consumption; phthisis. See Phthisis.",
-          "partOfSpeech": "noun"
+          "text": "Consumptive, phthisical.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4371,7 +4517,17 @@
       ],
       "relatedWords": []
     },
-    "titivatetittivate": {
+    "titivate": {
+      "word": "TITIVATE; TITTIVATE",
+      "definitions": [
+        {
+          "text": "To dress or smarten up; to spruce. --Tit`i*va\"tion, Tit`ti*va\"tion (#), n. [Both Humorous] \"Come here, an' let me titivate you.\" He sat down beside her, and submitted to be dusted. Quiller-Couch.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tittivate": {
       "word": "TITIVATE; TITTIVATE",
       "definitions": [
         {

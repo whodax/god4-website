@@ -379,8 +379,12 @@
       "relatedWords": []
     },
     "dextrer": {
-      "word": "DEXTRER",
+      "word": "DESTRER; DEXTRER",
       "definitions": [
+        {
+          "text": "A war horse. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A war horse; a destrer. [Obs.] \"By him baiteth his dextrer.\" Chaucer.",
           "partOfSpeech": "noun"
@@ -472,7 +476,17 @@
       ],
       "relatedWords": []
     },
-    "dextrorsaldextrorse": {
+    "dextrorsal": {
+      "word": "DEXTRORSAL; DEXTRORSE",
+      "definitions": [
+        {
+          "text": "Turning from the left to the right, in the ascending line, as in the spiral inclination of the stem of the common morning-glóry. quality of the plant regarded objectively; formerly the plant was regarded subjectively, and what is now called dextrorse was then considered sinistrorse.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dextrorse": {
       "word": "DEXTRORSAL; DEXTRORSE",
       "definitions": [
         {
@@ -492,7 +506,80 @@
       ],
       "relatedWords": []
     },
-    "dextrousdextrouslydextrousness": {
+    "dextrous": {
+      "word": "DEXTROUS; DEXTROUSLY; DEXTROUSNESS",
+      "definitions": [
+        {
+          "text": "Same as Dexterous, Dexterously, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Daedalian",
+        "adept",
+        "adroit",
+        "apt",
+        "artistic",
+        "authoritative",
+        "bravura",
+        "brilliant",
+        "clean",
+        "clever",
+        "coordinated",
+        "crack",
+        "crackerjack",
+        "cunning",
+        "cute",
+        "daedal",
+        "deft",
+        "dexterous",
+        "dextromanual",
+        "diplomatic",
+        "excellent",
+        "expert",
+        "fancy",
+        "good",
+        "goodish",
+        "graceful",
+        "handy",
+        "ingenious",
+        "magisterial",
+        "masterful",
+        "masterly",
+        "neat",
+        "no mean",
+        "politic",
+        "professional",
+        "proficient",
+        "quick",
+        "quite some",
+        "ready",
+        "resourceful",
+        "right-handed",
+        "skillful",
+        "slick",
+        "some",
+        "statesmanlike",
+        "stylish",
+        "tactful",
+        "the compleat",
+        "the complete",
+        "virtuoso",
+        "well-done",
+        "workmanlike"
+      ]
+    },
+    "dextrously": {
+      "word": "DEXTROUS; DEXTROUSLY; DEXTROUSNESS",
+      "definitions": [
+        {
+          "text": "Same as Dexterous, Dexterously, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dextrousness": {
       "word": "DEXTROUS; DEXTROUSLY; DEXTROUSNESS",
       "definitions": [
         {

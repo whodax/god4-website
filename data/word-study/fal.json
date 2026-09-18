@@ -21,7 +21,44 @@
       ],
       "relatedWords": []
     },
-    "falcatefalcated": {
+    "falcate": {
+      "word": "FALCATE; FALCATED",
+      "definitions": [
+        {
+          "text": "Hooked or bent like a sickle; as, a falcate leaf; a falcate claw; -- said also of the moon, or a planet, when horned or crescent- formed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Cynthian",
+        "S-shaped",
+        "bicorn",
+        "corniform",
+        "crescent",
+        "crescent-shaped",
+        "crescentic",
+        "crescentiform",
+        "crescentlike",
+        "falciform",
+        "horn-shaped",
+        "horned",
+        "lunar",
+        "lunate",
+        "luniform",
+        "lunular",
+        "menisciform",
+        "meniscoid",
+        "moon-shaped",
+        "moonlike",
+        "semicircular",
+        "semilunar",
+        "sickle-like",
+        "sickle-shaped",
+        "sigmoid",
+        "two-horned"
+      ]
+    },
+    "falcated": {
       "word": "FALCATE; FALCATED",
       "definitions": [
         {
@@ -958,7 +995,7 @@
       "word": "FALLACIOUS",
       "definitions": [
         {
-          "text": "Embodying or pertaining to a fallacy; illogical; fitted to",
+          "text": "Embodying or pertaining to a fallacy; illogical; fitted to deceive; misleading; delusive; as, fallacious arguments or reasoning.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1320,7 +1357,7 @@
         "wrongness"
       ]
     },
-    "fallalsfallals": {
+    "fallals": {
       "word": "FALLALS; FAL-LALS",
       "definitions": [
         {
@@ -1686,6 +1723,100 @@
       ],
       "relatedWords": []
     },
+    "falling": {
+      "word": "FALLING",
+      "definitions": [
+        {
+          "text": "from Fall, v. i. Falling away, Falling off, etc. See To fall away, To fall off, etc., under Fall, v. i. the doublet, worn in the early part of the 17th century. meteorite; an aërolite.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "cascading",
+        "collapsing",
+        "coming apart",
+        "cracking",
+        "crumbling",
+        "dangling",
+        "decadent",
+        "deciduous",
+        "declined",
+        "declining",
+        "declivate",
+        "declivitous",
+        "declivous",
+        "decurrent",
+        "degenerate",
+        "dependent",
+        "depending",
+        "descendant",
+        "descending",
+        "deteriorating",
+        "dipping",
+        "disintegrating",
+        "down",
+        "down-reaching",
+        "downcoming",
+        "downfalling",
+        "downgoing",
+        "downgrade",
+        "downhill",
+        "downsinking",
+        "downward",
+        "draining",
+        "drooping",
+        "dropping",
+        "dwindling",
+        "ebbing",
+        "effete",
+        "fading",
+        "failing",
+        "falling loosely",
+        "flagging",
+        "flowing",
+        "fragmenting",
+        "going to pieces",
+        "hanging",
+        "hung",
+        "languishing",
+        "marcescent",
+        "on the descendant",
+        "on the downgrade",
+        "pendent",
+        "pending",
+        "pendulant",
+        "pendular",
+        "penduline",
+        "pendulous",
+        "pensile",
+        "pining",
+        "plummeting",
+        "plunging",
+        "regressive",
+        "retrograde",
+        "retrogressive",
+        "sagging",
+        "setting",
+        "shriveling",
+        "sinking",
+        "sliding",
+        "slipping",
+        "slumping",
+        "submerging",
+        "subsiding",
+        "suspended",
+        "swinging",
+        "tabetic",
+        "tottering",
+        "tumbledown",
+        "waning",
+        "wasting",
+        "weeping",
+        "wilting",
+        "withering",
+        "worsening"
+      ]
+    },
     "fallopian": {
       "word": "FALLOPIAN",
       "definitions": [
@@ -1699,6 +1830,18 @@
     "fallow": {
       "word": "FALLOW",
       "definitions": [
+        {
+          "text": "Pale red or pale yellow; as, a fallow deer or greyhound. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Etym: [Cf. Fallow, n.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Left untilled or unsowed after plowing; uncultivated; as, fallow ground. Fallow chat, Fallow finch (Zoöl.), a small European bird, the wheatear (Saxicola ænanthe). See Wheatear.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Plowed land. [Obs.] Who . . . pricketh his blind horse over the fallows. Chaucer.",
           "partOfSpeech": "noun"
@@ -2294,7 +2437,7 @@
       "word": "FALSE-HEARTED",
       "definitions": [
         {
-          "text": "Hollow or unsound at the core; treacherous; deceitful;",
+          "text": "Hollow or unsound at the core; treacherous; deceitful; perfidious. Bacon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3403,6 +3546,10 @@
       "definitions": [
         {
           "text": "Hesitating; trembling. \"With faltering speech.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Falter; halting; hesitation.",
           "partOfSpeech": "adjective"
         }
       ],

@@ -250,7 +250,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not held by honorable service; as, a base estate, one held by services not honorable; held by villenage. Such a tenure is called base, or low, and the tenant, a base tenant. Base fee, formerly, an",
+          "text": "Not held by honorable service; as, a base estate, one held by services not honorable; held by villenage. Such a tenure is called base, or low, and the tenant, a base tenant. Base fee, formerly, an estate held at the will of the lord; now, a qualified fee. See note under Fee, n., 4. degraded. here arranged in the order of their strength, the strongest being placed first. Base marks a high degree of moral turpitude; vile and mean denote, in different degrees, the want of what is valuable or worthy of esteem. What is base excites our abhorrence; what is vile provokes our disgust or indignation; what is mean awakens contempt. Base is opposed to high-minded; vile, to noble; mean, to liberal or generous. Ingratitude is base; sycophancy is vile; undue compliances are mean.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1126,7 +1126,7 @@
       "word": "BASEMENT",
       "definitions": [
         {
-          "text": "The outer wall of the ground story of a building, or of a part",
+          "text": "The outer wall of the ground story of a building, or of a part of that story, when treated as a distinct substructure. ( See Base, n., 3 (a).) Hence: The rooms of a ground floor, collectively. Basement membrane (Anat.), a delicate membrane composed of a single layer of flat cells, forming the substratum upon which, in many organs, the epithelioid cells are disposed.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1454,20 +1454,6 @@
       "definitions": [
         {
           "text": "See Bascinet. [Obs.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "baseswilledwiththewildandwastefuloceanshak": {
-      "word": "base, Swilled with the wild and wasteful ocean. Shak.",
-      "definitions": [
-        {
-          "text": "To drink in great draughts; to swallow greedily. Well-dressed people, of both sexes, . . . devouring sliced beef, and swilling pork, and punch, and cider. Smollett.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To inebriate; to fill with drink. I should be loth To meet the rudeness and swilled insolence Of such late wassailers. Milton.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1965,6 +1951,16 @@
       ],
       "relatedWords": []
     },
+    "basidiospore": {
+      "word": "BASIDIOSPORE",
+      "definitions": [
+        {
+          "text": "A spore borne by a basidium.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "basidium": {
       "word": "BASIDIUM",
       "definitions": [
@@ -2057,7 +2053,21 @@
       ],
       "relatedWords": []
     },
-    "basilarbasilary": {
+    "basilar": {
+      "word": "BASILAR; BASILARY",
+      "definitions": [
+        {
+          "text": "Relating to, or situated at, the base.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lower; inferior; applied to impulses or springs of action. [R.] \"Basilar instincts.\" H. W. Beecher.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilary": {
       "word": "BASILAR; BASILARY",
       "definitions": [
         {
@@ -2077,6 +2087,18 @@
         {
           "text": "Basilica.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Royal; kingly; also, basilican.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to certain parts, anciently supposed to have a specially important function in the animal economy, as the middle vein of the right arm.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2099,17 +2121,7 @@
       ],
       "relatedWords": []
     },
-    "basilican": {
-      "word": "BASILICAN",
-      "definitions": [
-        {
-          "text": "Of, relating to, or resembling, a basilica; basilical. There can be no doubt that the first churches in Constantinople were in the basilican form. Milman.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "basilicbasilical": {
+    "basilical": {
       "word": "BASILIC; BASILICAL",
       "definitions": [
         {
@@ -2122,6 +2134,16 @@
         },
         {
           "text": "Pertaining to certain parts, anciently supposed to have a specially important function in the animal economy, as the middle vein of the right arm.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "basilican": {
+      "word": "BASILICAN",
+      "definitions": [
+        {
+          "text": "Of, relating to, or resembling, a basilica; basilical. There can be no doubt that the first churches in Constantinople were in the basilican form. Milman.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2440,7 +2462,7 @@
       "word": "BASIPTERYGIUM",
       "definitions": [
         {
-          "text": "A bar of cartilage at the base of the embryonic fins of some",
+          "text": "A bar of cartilage at the base of the embryonic fins of some fishes. It develops into the metapterygium.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2669,8 +2691,12 @@
       "relatedWords": []
     },
     "basisphenoid": {
-      "word": "BASISPHENOID",
+      "word": "BASISPHENOID; BASISPHENOIDAL",
       "definitions": [
+        {
+          "text": "Of or pertaining to that part of the base of the cranium between the basioccipital and the presphenoid, which usually ossifies separately in the embryo or in the young, and becomes a part of the sphenoid in the adult.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "The basisphenoid bone.",
           "partOfSpeech": "noun"
@@ -2678,7 +2704,7 @@
       ],
       "relatedWords": []
     },
-    "basisphenoidbasisphenoidal": {
+    "basisphenoidal": {
       "word": "BASISPHENOID; BASISPHENOIDAL",
       "definitions": [
         {
@@ -2691,6 +2717,10 @@
     "bask": {
       "word": "BASK",
       "definitions": [
+        {
+          "text": "To lie in warmth; to be exposed to genial heat. Basks in the glare, and stems the tepid wave. Goldsmith.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To warm by continued exposure to heat; to warm with genial heat. Basks at the fire his hairy strength. Milton.",
           "partOfSpeech": "verb"
@@ -3207,12 +3237,32 @@
         "yodeler"
       ]
     },
-    "bassabassaw": {
+    "bassa": {
       "word": "BASSA; BASSAW",
       "definitions": [
         {
           "text": "See Bashaw.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassaw": {
+      "word": "BASSA; BASSAW",
+      "definitions": [
+        {
+          "text": "See Bashaw.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassdrum": {
+      "word": "BASS DRUM",
+      "definitions": [
+        {
+          "text": "The largest of the different kinds of drums, having two heads, and emitting a deep, grave sound. See Bass, a.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -3439,7 +3489,17 @@
       ],
       "relatedWords": []
     },
-    "bassorilievobassorelievo": {
+    "bassorelievo": {
+      "word": "BASSO-RILIEVO; BASSO-RELIEVO",
+      "definitions": [
+        {
+          "text": "Same as Bas-relief.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassorilievo": {
       "word": "BASSO-RILIEVO; BASSO-RELIEVO",
       "definitions": [
         {
@@ -3465,6 +3525,16 @@
         {
           "text": "Some as Bas-relief.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bassviol": {
+      "word": "BASS VIOL",
+      "definitions": [
+        {
+          "text": "A stringed instrument of the viol family, used for playing bass. See 3d Bass, n., and Violoncello.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -3887,7 +3957,7 @@
         "wig"
       ]
     },
-    "bastilebastille": {
+    "bastile": {
       "word": "BASTILE; BASTILLE",
       "definitions": [
         {
@@ -3904,6 +3974,83 @@
         }
       ],
       "relatedWords": []
+    },
+    "bastille": {
+      "word": "BASTILE; BASTILLE",
+      "definitions": [
+        {
+          "text": "(Feud. Fort.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tower or an elevated work, used for the defense, or in the siege, of a fortified place. The high bastiles . . . which overtopped the walls. Holland.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "\"The Bastille\", formerly a castle or fortress in Paris, used as a prison, especially for political offenders; hence, a rhetorical name for a prison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "POW camp",
+        "black hole",
+        "borstal",
+        "borstal institution",
+        "bridewell",
+        "brig",
+        "bucket",
+        "caboose",
+        "calaboose",
+        "can",
+        "cell",
+        "chokey",
+        "concentration camp",
+        "condemned cell",
+        "confine",
+        "constrain",
+        "death cell",
+        "death house",
+        "death row",
+        "detention camp",
+        "federal prison",
+        "forced-labor camp",
+        "gaol",
+        "guardhouse",
+        "hoosegow",
+        "house of correction",
+        "house of detention",
+        "immure",
+        "incarcerate",
+        "industrial school",
+        "intern",
+        "internment camp",
+        "jail",
+        "jailhouse",
+        "jug",
+        "keep",
+        "labor camp",
+        "lockup",
+        "maximum-security prison",
+        "minimum-security prison",
+        "oubliette",
+        "pen",
+        "penal colony",
+        "penal institution",
+        "penal settlement",
+        "penitentiary",
+        "prison",
+        "prison camp",
+        "prisonhouse",
+        "quod",
+        "reform school",
+        "reformatory",
+        "sponging house",
+        "state prison",
+        "stockade",
+        "the hole",
+        "tollbooth",
+        "training school"
+      ]
     },
     "bastinade": {
       "word": "BASTINADE",

@@ -4642,6 +4642,16 @@
       ],
       "relatedWords": []
     },
+    "infinito": {
+      "word": "INFINITO",
+      "definitions": [
+        {
+          "text": "Infinite; perpetual, as a canon whose end leads back to the beginning. See Infinite, a., 5.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "infinitude": {
       "word": "INFINITUDE",
       "definitions": [
@@ -8225,16 +8235,6 @@
         "zenith"
       ]
     },
-    "influencedbywordsakintoefloatseefluctuateandcffloat": {
-      "word": "influenced by words akin to E. float. See Fluctuate, and cf. Float,",
-      "definitions": [
-        {
-          "text": "A little fleet, or a fleet of small vessels.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "influencer": {
       "word": "INFLUENCER",
       "definitions": [
@@ -10002,7 +10002,17 @@
       ],
       "relatedWords": []
     },
-    "infraspinateinfraspinous": {
+    "infraspinate": {
+      "word": "INFRASPINATE; INFRASPINOUS",
+      "definitions": [
+        {
+          "text": "Below the spine; infraspinal; esp., below the spine of the scapula; as, the infraspinous fossa; the infraspinate muscle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "infraspinous": {
       "word": "INFRASPINATE; INFRASPINOUS",
       "definitions": [
         {
@@ -10066,7 +10076,7 @@
       ],
       "relatedWords": []
     },
-    "infrequenceinfrequency": {
+    "infrequence": {
       "word": "INFREQUENCE; INFREQUENCY",
       "definitions": [
         {
@@ -10079,6 +10089,42 @@
         }
       ],
       "relatedWords": []
+    },
+    "infrequency": {
+      "word": "INFREQUENCE; INFREQUENCY",
+      "definitions": [
+        {
+          "text": "The state of rarely occuring; uncommonness; rareness; as, the infrquence of his visits.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of not being frequented; solitude; isolation; retirement; seclusion. [R.] The solitude and infrequency of the place. Bp. Hall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "chinchiness",
+        "chintziness",
+        "exiguity",
+        "fewness",
+        "meagerness",
+        "miserliness",
+        "niggardliness",
+        "paucity",
+        "rarity",
+        "restrictedness",
+        "scantiness",
+        "scarcity",
+        "scrimpiness",
+        "skimpiness",
+        "smallness",
+        "sparseness",
+        "sparsity",
+        "stinginess",
+        "stringency",
+        "thinness",
+        "tightness"
+      ]
     },
     "infrequent": {
       "word": "INFREQUENT",
@@ -10568,7 +10614,61 @@
       ],
       "relatedWords": []
     },
-    "infundibularinfundibulate": {
+    "infundibular": {
+      "word": "INFUNDIBULAR; INFUNDIBULATE",
+      "definitions": [
+        {
+          "text": "Having the form of a funnel; pertaining to an infundibulum. Infundibulate Bryozoa (Zoöl.),a group of marine Bryozoa having a circular arrangement of the tentacles upon the disk.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "boat-shaped",
+        "boatlike",
+        "bowl-shaped",
+        "bowllike",
+        "cavelike",
+        "cavernous",
+        "concave",
+        "concaved",
+        "cone-shaped",
+        "coned",
+        "conelike",
+        "conic",
+        "craterlike",
+        "cup-shaped",
+        "cupped",
+        "cymbiform",
+        "dish-shaped",
+        "dished",
+        "dishing",
+        "dishlike",
+        "funnel-breasted",
+        "funnel-chested",
+        "funnel-shaped",
+        "funnelform",
+        "funnelled",
+        "funnellike",
+        "hollow",
+        "hollowed",
+        "incurved",
+        "incurving",
+        "incurvous",
+        "infundibuliform",
+        "navicular",
+        "naviform",
+        "retiring",
+        "retreating",
+        "saucer-shaped",
+        "scaphoid",
+        "scyphate",
+        "spheroconic",
+        "spoonlike",
+        "sunk",
+        "sunken"
+      ]
+    },
+    "infundibulate": {
       "word": "INFUNDIBULAR; INFUNDIBULATE",
       "definitions": [
         {

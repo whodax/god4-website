@@ -1,44 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "etcthesuminvestedorlentasdistinguishedfromtheincomeor": {
-      "word": "etc.; the sum invested or lent, as distinguished from the income or",
-      "definitions": [
-        {
-          "text": "(Polit. Econ.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "That portion of the produce of industry, which may be directly employed either to support human beings or to assist in production. M'Culloch. The capital of a civilized community includes fixed capital (i.e. buildings, machines, and roads used in the course of production and exchange) amd circulating capital (i.e., food, fuel, money, etc., spent in the course of production and exchange). T. Raleing.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Anything which can be used to increase one's power or influence. He tried to make capital out of his rival's discomfiture. London Times.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Fort.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "An imaginary line dividing a bastion, ravelin, or other work, into two equal parts.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A chapter, or section, of a book. [Obs.] Holy St. Bernard hath said in the 59th capital. Sir W. Scott.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Print.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "See Capital letter, under Capital, a. Active capital. See under",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "etaac": {
       "word": "ETAAC",
       "definitions": [
@@ -121,7 +83,36 @@
       ],
       "relatedWords": []
     },
-    "etceteraetcaetera": {
+    "etcetera": {
+      "word": "ET CETERA; ET CAETERA",
+      "definitions": [
+        {
+          "text": "Others of the like kind; and the rest; and so on; -- used to point out that other things which could be mentioned are to be understood. Usually abbreviated into etc. or &c. (&c). Shak.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "and all",
+        "and all that",
+        "and everything else",
+        "and other things",
+        "and others",
+        "and so forth",
+        "and so on",
+        "and suchlike",
+        "and the following",
+        "and the like",
+        "and the rest",
+        "and then some",
+        "and what not",
+        "et alii",
+        "et seq",
+        "et sequens",
+        "in the majority",
+        "und so weiter"
+      ]
+    },
+    "etcaetera": {
       "word": "ET CETERA; ET CAETERA",
       "definitions": [
         {
@@ -230,7 +221,15 @@
       "word": "ETCHING",
       "definitions": [
         {
-          "text": "The act, art, or practice of engraving by means of acid which eats",
+          "text": "The act, art, or practice of engraving by means of acid which eats away lines or surfaces left unprotected in metal, glass, or the like. See Etch, v. t.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A design carried out by means of the above process; a pattern on metal, glass, etc., produced by etching.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An impression on paper, parchment, or other material, taken in ink from an etched plate. Etching figures (Min.), markings produced on the face of a crystal by the action of an appropriate solvent. They have usually a definite form, and are important as revealing the molecular structure. are drawn in the ground or varnish in etching.",
           "partOfSpeech": "noun"
         }
       ],
@@ -346,11 +345,25 @@
       ],
       "relatedWords": []
     },
-    "eterneterne": {
+    "etern": {
       "word": "ETERN; ETERNE",
       "definitions": [
         {
           "text": "Eternal. [Poetic] Shak. Built up to eterne significance. Mrs. Browning.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eterne": {
+      "word": "ETERN; ETERNE",
+      "definitions": [
+        {
+          "text": "Eternal. [Poetic] Shak. Built up to eterne significance. Mrs. Browning.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Etern.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -582,16 +595,6 @@
         "without limit",
         "world without end"
       ]
-    },
-    "eterne": {
-      "word": "ETERNE",
-      "definitions": [
-        {
-          "text": "See Etern.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
     },
     "eternify": {
       "word": "ETERNIFY",
@@ -1460,7 +1463,7 @@
       ],
       "relatedWords": []
     },
-    "ethicethical": {
+    "ethic": {
       "word": "ETHIC; ETHICAL",
       "definitions": [
         {
@@ -1469,6 +1472,89 @@
         }
       ],
       "relatedWords": []
+    },
+    "ethical": {
+      "word": "ETHIC; ETHICAL",
+      "definitions": [
+        {
+          "text": "Of, or belonging to, morals; treating of the moral feelings or duties; containing percepts of morality; moral; as, ethic discourses or epistles; an ethical system; ethical philosophy. The ethical meaning of the miracles. Trench. Ethical dative (Gram.), a use of the dative of a pronoun to signify that the person or thing spoken of is regarded with interest by some one; as, Quid mihi Celsus agit How does my friend Celsus do",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Christian",
+        "axiological",
+        "blameless",
+        "clean",
+        "conscientious",
+        "correct",
+        "creditable",
+        "decent",
+        "deferential",
+        "duteous",
+        "dutiful",
+        "elevated",
+        "erect",
+        "estimable",
+        "ethological",
+        "fair",
+        "full of integrity",
+        "good",
+        "high-minded",
+        "high-principled",
+        "highly respectable",
+        "honest",
+        "honorable",
+        "immaculate",
+        "inviolate",
+        "irreproachable",
+        "just",
+        "law-abiding",
+        "law-loving",
+        "law-revering",
+        "manly",
+        "moral",
+        "moralistic",
+        "noble",
+        "obedient",
+        "observant",
+        "open",
+        "principled",
+        "proper",
+        "pure",
+        "reputable",
+        "respectable",
+        "respectful",
+        "right",
+        "right-minded",
+        "righteous",
+        "scrupulous",
+        "spotless",
+        "stainless",
+        "sterling",
+        "straightforward",
+        "true-dealing",
+        "true-devoted",
+        "true-disposing",
+        "true-souled",
+        "true-spirited",
+        "truehearted",
+        "unblemished",
+        "uncorrupt",
+        "uncorrupted",
+        "undefiled",
+        "unimpeachable",
+        "unspotted",
+        "unstained",
+        "unsullied",
+        "untarnished",
+        "upright",
+        "uprighteous",
+        "upstanding",
+        "virtuous",
+        "worthy",
+        "yeomanly"
+      ]
     },
     "ethically": {
       "word": "ETHICALLY",
@@ -1595,7 +1681,7 @@
       ],
       "relatedWords": []
     },
-    "ethiopethiopian": {
+    "ethiop": {
       "word": "ETHIOP; ETHIOPIAN",
       "definitions": [
         {
@@ -1605,9 +1691,13 @@
       ],
       "relatedWords": []
     },
-    "ethiopianethiopic": {
-      "word": "ETHIOPIAN; ETHIOPIC",
+    "ethiopian": {
+      "word": "ETHIOP; ETHIOPIAN",
       "definitions": [
+        {
+          "text": "A native or inhabitant of Ethiopia; also, in a general sense, a negro or black man.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Of or relating to Ethiopia or the Ethiopians.",
           "partOfSpeech": "adjective"
@@ -1616,8 +1706,12 @@
       "relatedWords": []
     },
     "ethiopic": {
-      "word": "ETHIOPIC",
+      "word": "ETHIOPIAN; ETHIOPIC",
       "definitions": [
+        {
+          "text": "Of or relating to Ethiopia or the Ethiopians.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "The language of ancient Ethiopia; the language of the ancient Abyssinian empire (in Ethiopia), now used only in the Abyssinian church. It is of Semitic origin, and is also called Geez.",
           "partOfSpeech": "noun"
@@ -1689,7 +1783,7 @@
       ],
       "relatedWords": []
     },
-    "ethnicethnical": {
+    "ethnic": {
       "word": "ETHNIC; ETHNICAL",
       "definitions": [
         {
@@ -1699,16 +1793,24 @@
         {
           "text": "Pertaining to the gentiles, or nations not converted to Christianity; heathen; pagan; -- opposed to Jewish and Christian.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A heathen; a pagan. [Obs.] No better reported than impure ethnic and lay dogs. Milton.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "ethnic": {
-      "word": "ETHNIC",
+    "ethnical": {
+      "word": "ETHNIC; ETHNICAL",
       "definitions": [
         {
-          "text": "A heathen; a pagan. [Obs.] No better reported than impure ethnic and lay dogs. Milton.",
-          "partOfSpeech": ""
+          "text": "Belonging to races or nations; based on distinctions of race; ethnological.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the gentiles, or nations not converted to Christianity; heathen; pagan; -- opposed to Jewish and Christian.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1743,7 +1845,17 @@
       ],
       "relatedWords": []
     },
-    "ethnographicethnographical": {
+    "ethnographic": {
+      "word": "ETHNOGRAPHIC; ETHNOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "pertaining to ethnography.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ethnographical": {
       "word": "ETHNOGRAPHIC; ETHNOGRAPHICAL",
       "definitions": [
         {
@@ -1773,7 +1885,17 @@
       ],
       "relatedWords": []
     },
-    "ethnologicethnological": {
+    "ethnologic": {
+      "word": "ETHNOLOGIC; ETHNOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to ethnology.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ethnological": {
       "word": "ETHNOLOGIC; ETHNOLOGICAL",
       "definitions": [
         {
@@ -1813,7 +1935,17 @@
       ],
       "relatedWords": []
     },
-    "ethologicethological": {
+    "ethologic": {
+      "word": "ETHOLOGIC; ETHOLOGICAL",
+      "definitions": [
+        {
+          "text": "treating of, or pertaining to, ethnic or morality, or the science of character. J. S. Mill.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ethological": {
       "word": "ETHOLOGIC; ETHOLOGICAL",
       "definitions": [
         {
@@ -2153,11 +2285,15 @@
         {
           "text": "To cause to grow pale by disease or absence of light.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Having a blanched or faded appearance, as birds inhabiting desert regions.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "etiolateetiolated": {
+    "etiolated": {
       "word": "ETIOLATE; ETIOLATED",
       "definitions": [
         {
@@ -2579,6 +2715,16 @@
         {
           "text": "An etymologist.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "etymological": {
+      "word": "ETYMOLOGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to etymology, or the derivation of words.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

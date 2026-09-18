@@ -1,16 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "schoolseebroadchurch": {
-      "word": "school. See Broad Church.",
-      "definitions": [
-        {
-          "text": "On account of the abuse of its powers it was abolished in 1641. ceremonial. sport. [Colloq.] \"All the high jinks of the county, when the lad comes of age.\" F. Harrison. consequently, a latitude remote from the equator. successive grindings and intermediate sorting, instead of by a single grinding. were offered. part of the ocean not in the territorial waters of any particular sovereignty, usually distant three miles or more from the coast line. Wharton. of great excitement or enjoyment; a carousal. [Slang] -- High treason, treason against the sovereign or the state, the highest civil offense. See Treason. simply, seeing that petty treason, as a distinct offense, has been abolished. Mozley & W. also, the time of such elevation. waters ordinarily reach at high water. (b) A mark showing the highest level reached by water in a river or other body of fresh water, as in time of freshet. growing in salt marshes along the Atlantic coast of the United States. alcohol; -- usually in the plural. loftily. [Colloq.] -- With a high hand. (a) With power; in force; triumphantly. \"The children of Israel went out with a high hand.\" Ex. xiv. 8.(b) In an overbearing manner, arbitrarily. \"They governed the city with a high hand.\" Jowett (Thucyd. ). violent; full; dear. See Tall.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "scab": {
       "word": "SCAB",
       "definitions": [
@@ -325,7 +315,17 @@
       ],
       "relatedWords": []
     },
-    "scaladescalado": {
+    "scalade": {
+      "word": "SCALADE; SCALADO",
+      "definitions": [
+        {
+          "text": "See Escalade. Fairfax.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scalado": {
       "word": "SCALADE; SCALADO",
       "definitions": [
         {
@@ -1047,7 +1047,17 @@
       ],
       "relatedWords": []
     },
-    "scamellscammel": {
+    "scamell": {
+      "word": "SCAMELL; SCAMMEL",
+      "definitions": [
+        {
+          "text": "The female bar-tailed godwit. [Prov. Eng.] ii. 2] is not known.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scammel": {
       "word": "SCAMELL; SCAMMEL",
       "definitions": [
         {
@@ -1122,6 +1132,10 @@
     "scamper": {
       "word": "SCAMPER",
       "definitions": [
+        {
+          "text": "To run with speed; to run or move in a quick, hurried manner; to hasten away. Macaulay. The lady, however, . . . could not help scampering about the room after a mouse. S. Sharpe.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "A scampering; a hasty flight.",
           "partOfSpeech": "noun"
@@ -1421,6 +1435,26 @@
         {
           "text": "Not plentiful; small; scanty. [Obs.] Jer. Taylor.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A fragment; a bit; a little piece. Specifically: (a) A piece or quantity cut for a special purpose; a sample. [Obs.] Such as exceed not this scantling; -- to be solace to the sovereign and harmless to the people. Bacon. A pretty scantling of his knowledge may taken by his deferring to be baptized so many years. Milton. (b) A small quantity; a little bit; not much. [Obs.] Reducing them to narrow scantlings. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece of timber sawed or cut of a small size, as for studs, rails, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The dimensions of a piece of timber with regard to its breadth and thickness; hence, the measure or dimensions of anything.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rough draught; a rude sketch or outline.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A frame for casks to lie upon; a trestle. Knight.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1741,13 +1775,7 @@
         {
           "text": "One of a special group of feathers which arise from each of the scapular regions and lie along the sides of the back.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "scapularscapulary": {
-      "word": "SCAPULAR; SCAPULARY",
-      "definitions": [
+        },
         {
           "text": "(R.C.Ch.) (a) A loose sleeveless vestment falling in front and behind, worn by certain religious orders and devout persons. (b) The name given to two pieces of cloth worn under the ordinary garb and over the shoulders as an act of devotion. Addis & Arnold.",
           "partOfSpeech": "noun"
@@ -1764,8 +1792,20 @@
       "relatedWords": []
     },
     "scapulary": {
-      "word": "SCAPULARY",
+      "word": "SCAPULAR; SCAPULARY",
       "definitions": [
+        {
+          "text": "(R.C.Ch.) (a) A loose sleeveless vestment falling in front and behind, worn by certain religious orders and devout persons. (b) The name given to two pieces of cloth worn under the ordinary garb and over the shoulders as an act of devotion. Addis & Arnold.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Surg.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bandage passing over the shoulder to support it, or to retain another bandage in place.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Scapular, a.",
           "partOfSpeech": "adjective"
@@ -1841,7 +1881,17 @@
       ],
       "relatedWords": []
     },
-    "scarabscarabee": {
+    "scarab": {
+      "word": "SCARAB; SCARABEE",
+      "definitions": [
+        {
+          "text": "Any one of numerous species of lamellicorn beetles of the genus Scarabæus, or family Scarabæidæ, especially the sacred, or Egyptian, species (Scarabæus sacer, and S. Egyptiorum).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scarabee": {
       "word": "SCARAB; SCARABEE",
       "definitions": [
         {
@@ -1899,11 +1949,19 @@
         {
           "text": "Sparing; frugal; parsimonious; stingy. [Obs.] \"Too scarce ne too sparing.\" Chaucer. To make one's self scarce, to decamp; to depart. [Slang]",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "With difficulty; hardly; scantly; barely; but just. With a scarce well-lighted flame. Milton. The eldest scarcely five year was of age. Chaucer. Slowly she sails, and scarcely stems the tides. Dryden. He had scarcely finished, when the laborer arrived who had been sent for my ransom. W. Irwing.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Frugally; penuriously. [Obs.] haucer.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
     },
-    "scarcescarcely": {
+    "scarcely": {
       "word": "SCARCE; SCARCELY",
       "definitions": [
         {
@@ -1927,7 +1985,17 @@
       ],
       "relatedWords": []
     },
-    "scarcenessscarcity": {
+    "scarceness": {
+      "word": "SCARCENESS; SCARCITY",
+      "definitions": [
+        {
+          "text": "The quality or condition of being scarce; smallness of quantity in proportion to the wants or demands; deficiency; lack of plenty; short supply; penury; as, a scarcity of grain; a great scarcity of beauties. Chaucer. A scarcity of snow would raise a mutiny at Naples. Addison. Praise . . . owes its value to its scarcity. Rambler. The value of an advantage is enhanced by its scarceness. Collier. infrequency.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scarcity": {
       "word": "SCARCENESS; SCARCITY",
       "definitions": [
         {
@@ -2093,12 +2161,32 @@
       ],
       "relatedWords": []
     },
-    "scariosescarious": {
+    "scariose": {
       "word": "SCARIOSE; SCARIOUS",
       "definitions": [
         {
           "text": "Thin, dry, membranous, and not green. Gray.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scarious": {
+      "word": "SCARIOSE; SCARIOUS",
+      "definitions": [
+        {
+          "text": "Thin, dry, membranous, and not green. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scarlatina": {
+      "word": "SCARLATINA",
+      "definitions": [
+        {
+          "text": "Scarlet fever.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2135,7 +2223,17 @@
       ],
       "relatedWords": []
     },
-    "scarmagescarmoge": {
+    "scarmage": {
+      "word": "SCARMAGE; SCARMOGE",
+      "definitions": [
+        {
+          "text": "A slight contest; a skirmish. See Skirmish. [Obs.] Such cruel game my scarmoges disarms. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scarmoge": {
       "word": "SCARMAGE; SCARMOGE",
       "definitions": [
         {
@@ -2261,13 +2359,17 @@
           "partOfSpeech": "interjection"
         },
         {
+          "text": "Tribute. [R.] \"Seizing scatt and treasure.\" Longfellow.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "A shower of rain. [Prov. Eng.] Wright.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "scatscatt": {
+    "scatt": {
       "word": "SCAT; SCATT",
       "definitions": [
         {
@@ -2317,22 +2419,36 @@
       ],
       "relatedWords": []
     },
-    "sceathascathafoeinjurerosskathodschadeschadencf": {
-      "word": "sceatha, scatha, foe, injurer, OS. skatho, D. schade, schaden; cf.",
+    "scath": {
+      "word": "SCATH",
       "definitions": [
         {
           "text": "Harm; damage; injury; hurt; waste; misfortune. [Written also scathe.] But she was somedeal deaf, and that was skathe. Chaucer. Great mercy, sure, for to enlarge a thrall, Whose freedom shall thee turn to greatest scath. Spenser. Wherein Rome hath done you any scath, Let him make treble satisfaction. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To do harm to; to injure; to damage; to waste; to destroy. As when heaven's fire Hath scathed the forest oaks or mountain pines. Milton. Strokes of calamity that scathe and scorch the soul. W. Irwing.",
           "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "scathescath": {
+    "scathe": {
       "word": "SCATHE; SCATH",
       "definitions": [
         {
           "text": "To do harm to; to injure; to damage; to waste; to destroy. As when heaven's fire Hath scathed the forest oaks or mountain pines. Milton. Strokes of calamity that scathe and scorch the soul. W. Irwing.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scathful": {
+      "word": "SCATHFUL",
+      "definitions": [
+        {
+          "text": "Harmful; doing damage; pernicious. Shak.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2411,7 +2527,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Irregular in position; having no regular order; as, scattered",
+          "text": "Irregular in position; having no regular order; as, scattered leaves.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2535,6 +2651,16 @@
         {
           "text": "To cleanse, as streets, from filth. C. Kingsley.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scavenger": {
+      "word": "SCAVENGER",
+      "definitions": [
+        {
+          "text": "A person whose employment is to clean the streets of a city, by scraping or sweeping, and carrying off the fifth. The name is also applied to any animal which devours refuse, carrion, or anything injurious to health. Scavenger beetle (Zoöl.), any beetle which feeds on decaying substances, as the carrion beetle. the spider crab. an instrument of torture invented by Sir W. Skevington, which so compressed the body as to force the blood to flow from nostrils. and sometimes from the hands and feet. Am. Cyc.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2691,7 +2817,17 @@
       ],
       "relatedWords": []
     },
-    "scenicscenical": {
+    "scenic": {
+      "word": "SCENIC; SCENICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to scenery; of the nature of scenery; theatrical. All these situations communicate a scenical animation to the wild romance, if treated dramatically. De Quincey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scenical": {
       "word": "SCENIC; SCENICAL",
       "definitions": [
         {
@@ -2707,6 +2843,26 @@
         {
           "text": "A perspective representation or general view of an object.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scenographic": {
+      "word": "SCENOGRAPHIC; SCENOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to scenography; drawn in perspective.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scenographical": {
+      "word": "SCENOGRAPHIC; SCENOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to scenography; drawn in perspective.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2799,7 +2955,25 @@
       ],
       "relatedWords": []
     },
-    "sceptersceptre": {
+    "scepter": {
+      "word": "SCEPTER; SCEPTRE",
+      "definitions": [
+        {
+          "text": "A staff or baton borne by a sovereign, as a ceremonial badge or emblem of authority; a royal mace. And the king held out Esther the golden scepter that was in his hand. Esther v. 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, royal or imperial power or authority; sovereignty; as, to assume the scepter. The scepter shall not depart from Judah, nor a lawgiver from between his feet, until Shilon come. Gen. xlix. 10.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To endow with the scepter, or emblem of authority; to invest with royal authority. To Britain's queen the sceptered suppliant bends. Tickell.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sceptre": {
       "word": "SCEPTER; SCEPTRE",
       "definitions": [
         {
@@ -2827,7 +3001,7 @@
       ],
       "relatedWords": []
     },
-    "scepterlesssceptreless": {
+    "scepterless": {
       "word": "SCEPTERLESS; SCEPTRELESS",
       "definitions": [
         {
@@ -2837,7 +3011,37 @@
       ],
       "relatedWords": []
     },
-    "scepticscepticalscepticism": {
+    "sceptreless": {
+      "word": "SCEPTERLESS; SCEPTRELESS",
+      "definitions": [
+        {
+          "text": "Having no scepter; without authority; powerless; as, a scepterless king.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sceptic": {
+      "word": "SCEPTIC; SCEPTICAL; SCEPTICISM",
+      "definitions": [
+        {
+          "text": "etc. See Skeptic, Skeptical, Skepticism, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sceptical": {
+      "word": "SCEPTIC; SCEPTICAL; SCEPTICISM",
+      "definitions": [
+        {
+          "text": "etc. See Skeptic, Skeptical, Skepticism, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "scepticism": {
       "word": "SCEPTIC; SCEPTICAL; SCEPTICISM",
       "definitions": [
         {
@@ -3103,6 +3307,16 @@
       ],
       "relatedWords": []
     },
+    "scheming": {
+      "word": "SCHEMING",
+      "definitions": [
+        {
+          "text": "Given to forming schemes; artful; intriguing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "schemist": {
       "word": "SCHEMIST",
       "definitions": [
@@ -3191,7 +3405,17 @@
       ],
       "relatedWords": []
     },
-    "scheticschetical": {
+    "schetic": {
+      "word": "SCHETIC; SCHETICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the habit of the body; constitutional.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "schetical": {
       "word": "SCHETIC; SCHETICAL",
       "definitions": [
         {
@@ -3295,6 +3519,16 @@
       ],
       "relatedWords": []
     },
+    "schismatical": {
+      "word": "SCHISMATICAL",
+      "definitions": [
+        {
+          "text": "Same as Schismatic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "schismatize": {
       "word": "SCHISMATIZE",
       "definitions": [
@@ -3345,7 +3579,17 @@
       ],
       "relatedWords": []
     },
-    "schistoseschistous": {
+    "schistose": {
+      "word": "SCHISTOSE; SCHISTOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to schist; having the structure of a schist.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "schistous": {
       "word": "SCHISTOSE; SCHISTOUS",
       "definitions": [
         {
@@ -3511,11 +3755,15 @@
         {
           "text": "one of the Schizopoda. Also used adjectively.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to a schizopod, or the Schizopoda.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "schizopodschizopodous": {
+    "schizopodous": {
       "word": "SCHIZOPOD; SCHIZOPODOUS",
       "definitions": [
         {
@@ -4069,6 +4317,16 @@
       ],
       "relatedWords": []
     },
+    "schoolteacher": {
+      "word": "SCHOOL-TEACHER",
+      "definitions": [
+        {
+          "text": "One who teaches or instructs a school.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "schoolward": {
       "word": "SCHOOLWARD",
       "definitions": [
@@ -4133,7 +4391,17 @@
       ],
       "relatedWords": []
     },
-    "schottishschottische": {
+    "schottish": {
+      "word": "SCHOTTISH; SCHOTTISCHE",
+      "definitions": [
+        {
+          "text": "A Scotch round dance in 2-4 time, similar to the polka, only slower; also, the music for such a dance; -- not to be confounded with the Écossaise.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "schottische": {
       "word": "SCHOTTISH; SCHOTTISCHE",
       "definitions": [
         {
@@ -4193,7 +4461,7 @@
       ],
       "relatedWords": []
     },
-    "schweitzerkaseschweitzerkaese": {
+    "schweitzerkase": {
       "word": "SCHWEITZERKASE; SCHWEITZERKAESE",
       "definitions": [
         {
@@ -4203,7 +4471,27 @@
       ],
       "relatedWords": []
     },
-    "schwenkfelderschwenkfeldian": {
+    "schweitzerkaese": {
+      "word": "SCHWEITZERKASE; SCHWEITZERKAESE",
+      "definitions": [
+        {
+          "text": "Gruyère cheese.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "schwenkfelder": {
+      "word": "SCHWENKFELDER; SCHWENKFELDIAN",
+      "definitions": [
+        {
+          "text": "A member of a religious sect founded by Kaspar von Schwenkfeld, a Silesian reformer who disagreed with Luther, especially on the deification of the body of Christ.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "schwenkfeldian": {
       "word": "SCHWENKFELDER; SCHWENKFELDIAN",
       "definitions": [
         {
@@ -4245,6 +4533,16 @@
       ],
       "relatedWords": []
     },
+    "sciagraphical": {
+      "word": "SCIAGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to sciagraphy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "sciagraphy": {
       "word": "SCIAGRAPHY",
       "definitions": [
@@ -4273,7 +4571,17 @@
       ],
       "relatedWords": []
     },
-    "sciathericsciatherical": {
+    "sciatheric": {
+      "word": "SCIATHERIC; SCIATHERICAL",
+      "definitions": [
+        {
+          "text": "Belonging to a sundial. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sciatherical": {
       "word": "SCIATHERIC; SCIATHERICAL",
       "definitions": [
         {
@@ -4475,7 +4783,21 @@
       ],
       "relatedWords": []
     },
-    "scimiterscimitar": {
+    "scimiter": {
+      "word": "SCIMITER; SCIMITAR",
+      "definitions": [
+        {
+          "text": "A saber with a much curved blade having the edge on the convex side, -- in use among Mohammedans, esp., the Arabs and persians. [Written also cimeter, and scymetar.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A long-handled billhook. See Billhook. Scimiter pods (Bot.), the immense curved woody pods of a leguminous woody climbing plant (Entada scandens) growing in tropical India and America. They contain hard round flattish seeds two inches in diameter, which are made into boxes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scimitar": {
       "word": "SCIMITER; SCIMITAR",
       "definitions": [
         {
@@ -5051,7 +5373,17 @@
       ],
       "relatedWords": []
     },
-    "sclavsclave": {
+    "sclav": {
+      "word": "SCLAV; SCLAVE",
+      "definitions": [
+        {
+          "text": "Same as Slav.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sclave": {
       "word": "SCLAV; SCLAVE",
       "definitions": [
         {
@@ -5197,7 +5529,7 @@
       "word": "SCLEROBASE",
       "definitions": [
         {
-          "text": "The calcareous or hornlike coral forming the central stem or axis of most compound alcyonarians; -- called also foot secretion.",
+          "text": "The calcareous or hornlike coral forming the central stem or axis of most compound alcyonarians; -- called also foot secretion. See Illust. under Gorgoniacea, and Coenenchyma.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5405,7 +5737,7 @@
       "word": "SCLEROTOME",
       "definitions": [
         {
-          "text": "One of the bony, cartilaginous, or membranous partitoins which",
+          "text": "One of the bony, cartilaginous, or membranous partitoins which separate the myotomes.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5569,6 +5901,16 @@
         {
           "text": "(Zoöl.) (a) The oyster catcher; -- so called from its shrill cries. (b) The old squaw. [Local U.S.]",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scolding": {
+      "word": "SCOLDING",
+      "definitions": [
+        {
+          "text": "a. & n. from Scold, v. Scolding bridle, an iron frame. See Brank, n., 2.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -6069,7 +6411,17 @@
       ],
       "relatedWords": []
     },
-    "scopticscoptical": {
+    "scoptic": {
+      "word": "SCOPTIC; SCOPTICAL",
+      "definitions": [
+        {
+          "text": "Jesting; jeering; scoffing. [Obs.] South.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scoptical": {
       "word": "SCOPTIC; SCOPTICAL",
       "definitions": [
         {
@@ -6109,11 +6461,21 @@
       ],
       "relatedWords": []
     },
-    "scorbuticscorbutical": {
+    "scorbutic": {
       "word": "SCORBUTIC; SCORBUTICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to scurvy; of the nature of, or resembling, scurvy; diseased with scurvy; as, a scorbutic person; scorbutic",
+          "text": "Of or pertaining to scurvy; of the nature of, or resembling, scurvy; diseased with scurvy; as, a scorbutic person; scorbutic complaints or symptoms.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scorbutical": {
+      "word": "SCORBUTIC; SCORBUTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to scurvy; of the nature of, or resembling, scurvy; diseased with scurvy; as, a scorbutic person; scorbutic complaints or symptoms.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6161,6 +6523,16 @@
         {
           "text": "To burn or be burnt. he laid his long forefinger on the scarlet letter, which forthwith seemed to scoch into Hester's breast, as if it had been red hot. Hawthorne.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scorching": {
+      "word": "SCORCHING",
+      "definitions": [
+        {
+          "text": "Burning; parching or shriveling with heat.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6230,6 +6602,18 @@
         },
         {
           "text": "(Mus.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To write down in proper order and arrangement; as, to score an overture for an orchestra. See Score, n., 9.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark with parallel lines or scratches; as, the rocks of New England and the Western States were scored in the drift epoch.",
           "partOfSpeech": "verb"
         }
       ],
@@ -6471,7 +6855,17 @@
       ],
       "relatedWords": []
     },
-    "scorpioidscorpioidal": {
+    "scorpioid": {
+      "word": "SCORPIOID; SCORPIOIDAL",
+      "definitions": [
+        {
+          "text": "Having the inflorescence curved or circinate at the end, like a scorpion's tail.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scorpioidal": {
       "word": "SCORPIOID; SCORPIOIDAL",
       "definitions": [
         {
@@ -6615,7 +7009,17 @@
       ],
       "relatedWords": []
     },
-    "scotalscotale": {
+    "scotal": {
+      "word": "SCOTAL; SCOTALE",
+      "definitions": [
+        {
+          "text": "The keeping of an alehouse by an officer of a forest, and drawing people to spend their money for liquor, for fear of his displeasure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scotale": {
       "word": "SCOTAL; SCOTALE",
       "definitions": [
         {
@@ -7209,6 +7613,24 @@
       ],
       "relatedWords": []
     },
+    "scrag": {
+      "word": "SCRAG",
+      "definitions": [
+        {
+          "text": "Something thin, lean, or rough; a bony piece; especially, a bony neckpiece of meat; hence, humorously or in contempt, the neck. Lady MacScrew, who . . . serves up a scrag of mutton on silver. Thackeray.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rawboned person. [Low] Halliwell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ragged, stunted tree or branch. Scrag whale (Zoöl.), a North Atlantic whalebone whale (Agaphelus giddosus). By some it is considered the young of the right whale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "scragged": {
       "word": "SCRAGGED",
       "definitions": [
@@ -7337,6 +7759,16 @@
         {
           "text": "A greedy and unceremonious contestant.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scrambling": {
+      "word": "SCRAMBLING",
+      "definitions": [
+        {
+          "text": "Confused and irregular; awkward; scambling. A huge old scrambling bedroom. Sir W. Scott.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7507,7 +7939,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Resembling the act of, or the effect produced by, one who, or",
+          "text": "Resembling the act of, or the effect produced by, one who, or that which, scrapes; as, a scraping noise; a scraping miser.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7681,7 +8113,17 @@
       ],
       "relatedWords": []
     },
-    "scratchplayerscratchrunner": {
+    "scratchplayer": {
+      "word": "SCRATCH PLAYER; SCRATCH RUNNER",
+      "definitions": [
+        {
+          "text": "One that starts from the scratch; hence, one of first-rate ability.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "scratchrunner": {
       "word": "SCRATCH PLAYER; SCRATCH RUNNER",
       "definitions": [
         {
@@ -7858,6 +8300,10 @@
     "screech": {
       "word": "SCREECH",
       "definitions": [
+        {
+          "text": "To utter a harsh, shrill cry; to make a sharp outcry, as in terror or acute pain; to scream; to shriek. \"The screech owl, screeching loud.\" Shak.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "A harsh, shrill cry, as of one in acute pain or in fright; a shriek; a scream. Screech bird, or Screech thrush (Zoöl.), the fieldfare; -- so called from its harsh cry before rain. its note. [Prov. Eng.] -- Screech owl. (Zoöl.) (a) A small American owl (Scops asio), either gray or reddish in color. (b) The European barn owl. The name is applied also to other species.",
           "partOfSpeech": "noun"
@@ -8629,7 +9075,7 @@
       ],
       "relatedWords": []
     },
-    "scrobiculatescrobiculated": {
+    "scrobiculate": {
       "word": "SCROBICULATE; SCROBICULATED",
       "definitions": [
         {
@@ -8639,7 +9085,27 @@
       ],
       "relatedWords": []
     },
-    "scrodscrode": {
+    "scrobiculated": {
+      "word": "SCROBICULATE; SCROBICULATED",
+      "definitions": [
+        {
+          "text": "Having numerous small, shallow depressions or hollows; pitted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scrod": {
+      "word": "SCROD; SCRODE",
+      "definitions": [
+        {
+          "text": "A young codfish, especially when cut open on the back and dressed. [Written also escrod.] [Local, U.S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scrode": {
       "word": "SCROD; SCRODE",
       "definitions": [
         {
@@ -8687,7 +9153,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Diseased or affected with scrofula.",
+          "text": "Diseased or affected with scrofula. Scrofulous persons can never be duly nourished. Arbuthnot.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9157,6 +9623,16 @@
       ],
       "relatedWords": []
     },
+    "scrutinous": {
+      "word": "SCRUTINOUS",
+      "definitions": [
+        {
+          "text": "Closely examining, or inquiring; careful; sctrict.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "scrutiny": {
       "word": "SCRUTINY",
       "definitions": [
@@ -9365,7 +9841,17 @@
       ],
       "relatedWords": []
     },
-    "sculksculker": {
+    "sculk": {
+      "word": "SCULK; SCULKER",
+      "definitions": [
+        {
+          "text": "See Skulk, Skulker.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sculker": {
       "word": "SCULK; SCULKER",
       "definitions": [
         {
@@ -9543,23 +10029,17 @@
       ],
       "relatedWords": []
     },
-    "schumdschuimohgscgschaumprobablyfromarootmeaning": {
-      "word": "schum, D. schuim, OHG. sc, G. schaum; probably from a root meaning,",
-      "definitions": [
-        {
-          "text": "The extraneous matter or impurities which rise to the surface of liquids in boiling or fermentation, or which form on the surface by other means; also, the scoria of metals in a molten state; dross. Some to remove the scum it did rise. Spenser.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "refuse; recrement; anything vile or worthless. The great and innocent are insulted by the scum and refuse of the people. Addison.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "scum": {
       "word": "SCUM",
       "definitions": [
+        {
+          "text": "The extraneous matter or impurities which rise to the surface of liquids in boiling or fermentation, or which form on the surface by other means; also, the scoria of metals in a molten state; dross. Some to remove the scum it did rise. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "refuse; recrement; anything vile or worthless. The great and innocent are insulted by the scum and refuse of the people. Addison.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To take the scum from; to clear off the impure matter from the surface of; to skim. You that scum the molten lead. Dryden & Lee.",
           "partOfSpeech": "verb"
@@ -9819,7 +10299,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Containing low indecency or abuse; mean; foul; vile; obscenely jocular; as, scurrilous language. The absurd and scurrilous sermon which had very unwisely been honored with impeachment. Macaulay. offensive; gross; vile; vulgar; low; foul; foul-mounthed; indecent;",
+          "text": "Containing low indecency or abuse; mean; foul; vile; obscenely jocular; as, scurrilous language. The absurd and scurrilous sermon which had very unwisely been honored with impeachment. Macaulay. offensive; gross; vile; vulgar; low; foul; foul-mounthed; indecent; scurrile; mean.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10055,7 +10535,29 @@
       ],
       "relatedWords": []
     },
-    "scutellatescutellated": {
+    "scutellate": {
+      "word": "SCUTELLATE; SCUTELLATED",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Formed like a plate or salver; composed of platelike surfaces; as, the scutellated bone of a sturgeon. Woodward.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Etym: [See Scutellum.] (Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the tarsi covered with broad transverse scales, or scutella; -- said of certain birds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scutellated": {
       "word": "SCUTELLATE; SCUTELLATED",
       "definitions": [
         {
@@ -10425,7 +10927,17 @@
       ],
       "relatedWords": []
     },
-    "scyphomedusascyphomedusae": {
+    "scyphomedusa": {
+      "word": "SCYPHOMEDUSA; SCYPHOMEDUSAE",
+      "definitions": [
+        {
+          "text": "Same as Acraspeda, or Discophora.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "scyphomedusae": {
       "word": "SCYPHOMEDUSA; SCYPHOMEDUSAE",
       "definitions": [
         {
@@ -10553,182 +11065,12 @@
       ],
       "relatedWords": []
     },
-    "schinkenhamohgscinchashankdanswskanksqroot161cf": {
-      "word": "schinken ham, OHG. scincha shank, Dan. & Sw. skank. sq. root161. Cf.",
+    "sciascope": {
+      "word": "SKIASCOPE; SCIASCOPE",
       "definitions": [
         {
-          "text": "The part of the leg from the knee to the foot; the shin; the shin bone; also, the whole leg. His youthful hose, well saved, a world too wide For his shrunk shank. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Hence, that part of an instrument, tool, or other thing, which connects the acting part with a handle or other part, by which it is held or moved. Specifically: (a) That part of a key which is between the bow and the part which enters the wards of the lock. (b) The middle part of an anchor, or that part which is between the ring and the arms. See Illustr. of Anchor. (c) That part of a hoe, rake, knife, or the like, by which it is secured to a handle. (d) A loop forming an eye to a button.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Arch.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The space between two channels of the Doric triglyph. Gwilt.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Founding)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A large ladle for molten metal, fitted with long bars for handling it.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Print.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The body of a type.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Shoemaking)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The part of the sole beneath the instep connecting the broader front part with the heel.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A wading bird with long legs; as, the green-legged shank, or knot; the yellow shank, or tattler; -- called also shanks.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "pl.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Flat-nosed pliers, used by opticians for nipping off the edges of pieces of glass to make them round. Shank painter (Naut.), a short rope or chain which holds the shank of an anchor against the side of a vessel when it is secured for a voyage.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "scheldtromeaguardsquadronasscildtrumaatroopofmenwith": {
-      "word": "scheldtrome, a guard, squadron, AS. scildtruma a troop of men with",
-      "definitions": [
-        {
-          "text": "That which covers or defends from injury or annoyance; a protection; a screen. The sick and weak the healing plant shall aid, From storms a shelter, and from heat a shade. Pope.",
+          "text": "A device for determining the refractive state of the eye by observing the movements of the retinal lights and shadows. -- Ski*as\"co*py (#), Ski*as\"co*py (#), n.",
           "partOfSpeech": "noun"
-        },
-        {
-          "text": "One who protects; a guardian; a defender. Thou [God] hast been a shelter for me. Ps. lxi. 3.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The state of being covered and protected; protection; security. Who into shelter takes their tender bloom. Young. Shelter tent,a small tent made of pieces of cotton duck arranged to button together. In field service the soldiers carry the pieces. security.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "scimaalightbrightnessicelskimagothskeimaatorcha": {
-      "word": "scima a light, brightness, Icel. skima, Goth. skeima a torch, a",
-      "definitions": [
-        {
-          "text": "To shine with a tremulous or intermittent light; to shine faintly; to gleam; to glisten; to glimmer. The shimmering glimpses of a stream. Tennyson.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "schortasscortsceortakintoohgscurzicelskortatobe": {
-      "word": "schort, AS. scort, sceort; akin to OHG. scurz, Icel. skorta to be",
-      "definitions": [
-        {
-          "text": "Not long; having brief length or linear extension; as, a short distance; a short piece of timber; a short flight. The bed is shorter than that a man can stretch himself on it. Isa. xxviii. 20.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Not extended in time; having very limited duration; not protracted; as, short breath. The life so short, the craft so long to learn. Chaucer. To short absense I could yield. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Limited in quantity; inadequate; insufficient; scanty; as, a short supply of provisions, or of water.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Insufficiently provided; inadequately supplied; scantily furnished; lacking; not coming up to a resonable, or the ordinary, standard; -- usually with of; as, to be short of money. We shall be short in our provision. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Deficient; defective; imperfect; not coming up, as to a measure or standard; as, an account which is short of the trith.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Not distant in time; near at hand. Marinell was sore offended That his departure thence should be so short. Spenser. He commanded those who were appointed to attend him to be ready by a short day. Clarendon.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Limited in intellectual power or grasp; not comprehensive; narrow; not tenacious, as memory. Their own short understandings reach No farther than the present. Rowe.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Less important, efficaceous, or powerful; not equal or equivalent; less (than); -- with of. Hardly anything short of an invasion could rouse them again to war. Landor.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Abrupt; brief; pointed; petulant; as, he gave a short answer to the question.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Cookery)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Breaking or crumbling readily in the mouth; crisp; as, short pastry.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Metal)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Brittle. be hot-short, owing to the presence of sulphur. Those that are brittle when cold are called cold-short; as, cast iron may be cold- short, on account of the presence of phosphorus.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Stock Exchange)",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "scrincanakintoodschrinckenandprobablytoswskrynkaa": {
-      "word": "scrincan; akin to OD. schrincken, and probably to Sw. skrynka a",
-      "definitions": [
-        {
-          "text": "To wrinkle, bend, or curl; to shrivel; hence, to contract into a less extent or compass; to gather together; to become compacted. And on a broken reed he still did stay His feeble steps, which shrunk when hard thereon he lay. Spenser. I have not found that water, by mixture of ashes, will shrink or draw into less room. Bacon. Against this fire do I shrink up. Shak. And shrink like parchment in consuming fire. Dryden. All the boards did shrink. Coleridge.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To withdraw or retire, as from danger; to decline action from fear; to recoil, as in fear, horror, or distress. What happier natures shrink at with affright, The hard inhabitant contends is right. Pope. They assisted us against the Thebans when you shrank from the task. Jowett (Thucyd.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To express fear, horror, or pain by contracting the body, or part of it; to shudder; to quake. [R.] Shak.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "schnabelohgsnabulsnebsnebbeofriessnavelmouthdan": {
-      "word": "schnabel, OHG. snabul,. sneb, snebbe, OFries. snavel mouth, Dan. &",
-      "definitions": [
-        {
-          "text": "A kind of bridle bit, having a joint in the part to be placed in the mouth, and rings and cheek pieces at the ends, but having no curb; -- called also snaffle bit.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

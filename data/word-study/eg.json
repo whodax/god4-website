@@ -51,22 +51,30 @@
       ],
       "relatedWords": []
     },
-    "egeregre": {
+    "eger": {
       "word": "EGER; EGRE",
       "definitions": [
         {
           "text": "Sharp; bitter; acid; sour. [Obs.] The egre words of thy friend. Chaucer.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An impetuous flood; a bore. See Eagre.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "eger": {
-      "word": "EGER",
+    "egre": {
+      "word": "EGER; EGRE",
       "definitions": [
         {
-          "text": "An impetuous flood; a bore. See Eagre.",
-          "partOfSpeech": "noun"
+          "text": "Sharp; bitter; acid; sour. [Obs.] The egre words of thy friend. Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Eager, and Eagre. [Obs.]",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -165,7 +173,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Anything resembling an egg in form. explaining compounds; as, egg beater or egg-beater, egg case, egg ladle, egg-shaped, etc. Egg and anchor (Arch.), an egg-shaped ornament, alternating with another in the form of a dart, used to",
+          "text": "Anything resembling an egg in form. explaining compounds; as, egg beater or egg-beater, egg case, egg ladle, egg-shaped, etc. Egg and anchor (Arch.), an egg-shaped ornament, alternating with another in the form of a dart, used to enrich the ovolo; -- called also egg and dart, and egg and tongue. See Anchor, n., 5. Ogilvie. which the egg undergoes endogenous division with formation of a mass of nearly similar cells, from the growth and differentiation of which the new organism is ultimately formed. See Segmentation of the ovum, under Segmentation. egg, by which the embryo is formed. Nothrus ovivorus, which destroys those of the canker worm. the larval stage, lives within the eggs of other insects. Many genera and species are known.",
           "partOfSpeech": "noun"
         },
         {
@@ -468,7 +476,17 @@
       ],
       "relatedWords": []
     },
-    "eglanduloseeglandulous": {
+    "eglandulose": {
+      "word": "EGLANDULOSE; EGLANDULOUS",
+      "definitions": [
+        {
+          "text": "Destitute of glands.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eglandulous": {
       "word": "EGLANDULOSE; EGLANDULOUS",
       "definitions": [
         {
@@ -662,7 +680,17 @@
       ],
       "relatedWords": []
     },
-    "egoisticegoistical": {
+    "egoistic": {
+      "word": "EGOISTIC; EGOISTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to egoism; imbued with egoism or excessive thoughts of self; self-loving. Ill-natured feeling, or egoistic pleasure in making men miserable. G. Eliot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "egoistical": {
       "word": "EGOISTIC; EGOISTICAL",
       "definitions": [
         {
@@ -841,7 +869,7 @@
         "tufthunter"
       ]
     },
-    "egotisticegotistical": {
+    "egotistic": {
       "word": "EGOTISTIC; EGOTISTICAL",
       "definitions": [
         {
@@ -849,7 +877,115 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "acquisitive",
+        "ambitious for self",
+        "autistic",
+        "boastful",
+        "careerist",
+        "cocky",
+        "conceited",
+        "egocentric",
+        "egocentristic",
+        "egoistic",
+        "egomaniacal",
+        "egotistical",
+        "grasping",
+        "greedy",
+        "individualistic",
+        "inflated",
+        "narcissan",
+        "narcissine",
+        "narcissistic",
+        "narcistic",
+        "personalistic",
+        "possessive",
+        "pretentious",
+        "privatistic",
+        "proud",
+        "puffed up",
+        "remote",
+        "self-absorbed",
+        "self-admiring",
+        "self-advancing",
+        "self-besot",
+        "self-centered",
+        "self-concerned",
+        "self-considerative",
+        "self-contained",
+        "self-devoted",
+        "self-esteeming",
+        "self-indulgent",
+        "self-interested",
+        "self-jealous",
+        "self-occupied",
+        "self-pleasing",
+        "self-satisfied",
+        "self-seeking",
+        "self-serving",
+        "self-sufficient",
+        "selfish",
+        "stuck-up"
+      ]
+    },
+    "egotistical": {
+      "word": "EGOTISTIC; EGOTISTICAL",
+      "definitions": [
+        {
+          "text": "Addicted to, or manifesting, egotism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "acquisitive",
+        "ambitious for self",
+        "autistic",
+        "boastful",
+        "boasting",
+        "bragging",
+        "careerist",
+        "conceited",
+        "crowing",
+        "egocentric",
+        "egocentristic",
+        "egoistic",
+        "egotistic",
+        "grasping",
+        "greedy",
+        "individualistic",
+        "narcissan",
+        "narcissine",
+        "narcissistic",
+        "narcistic",
+        "overweening",
+        "personalistic",
+        "possessive",
+        "privatistic",
+        "proud",
+        "remote",
+        "self-absorbed",
+        "self-admiring",
+        "self-advancing",
+        "self-besot",
+        "self-centered",
+        "self-considerative",
+        "self-contained",
+        "self-devoted",
+        "self-esteeming",
+        "self-indulgent",
+        "self-interested",
+        "self-jealous",
+        "self-occupied",
+        "self-pleasing",
+        "self-seeking",
+        "self-serving",
+        "self-sufficient",
+        "selfish",
+        "swelled-headed",
+        "vain",
+        "vainglorious",
+        "vaunting"
+      ]
     },
     "egotistically": {
       "word": "EGOTISTICALLY",
@@ -876,16 +1012,6 @@
       "definitions": [
         {
           "text": "Having no granules, as chlorophyll in certain conditions. R. Brown.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "egre": {
-      "word": "EGRE",
-      "definitions": [
-        {
-          "text": "See Eager, and Eagre. [Obs.]",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1371,7 +1497,17 @@
       ],
       "relatedWords": []
     },
-    "egyptologeregyptologist": {
+    "egyptologer": {
+      "word": "EGYPTOLOGER; EGYPTOLOGIST",
+      "definitions": [
+        {
+          "text": "One skilled in the antiquities of Egypt; a student of Egyptology.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "egyptologist": {
       "word": "EGYPTOLOGER; EGYPTOLOGIST",
       "definitions": [
         {

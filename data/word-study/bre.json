@@ -2915,6 +2915,10 @@
         {
           "text": "To meet, with the breast; to struggle with or oppose manfully; as, to breast the storm or waves. The court breasted the popular current by sustaining the demurrer. Wirt. To breast up a hedge, to cut the face of it on one side so as to lay bare the principal upright stems of the plants.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A torus. [Obs.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -3259,7 +3263,17 @@
       ],
       "relatedWords": []
     },
-    "breastplowbreastplough": {
+    "breastplough": {
+      "word": "BREASTPLOW; BREASTPLOUGH",
+      "definitions": [
+        {
+          "text": "A kind of plow, driven by the breast of the workman; -- used to cut or pare turf.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "breastplow": {
       "word": "BREASTPLOW; BREASTPLOUGH",
       "definitions": [
         {
@@ -4259,7 +4273,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A mark to indicate aspiration or its absence. See Rough breathing, Smooth breathing, below. Breathing place. (a) A pause. \"That cæsura, or breathing place, in the midst of the verse.\" Sir P. Sidney. (b) A vent.",
+          "text": "A mark to indicate aspiration or its absence. See Rough breathing, Smooth breathing, below. Breathing place. (a) A pause. \"That cæsura, or breathing place, in the midst of the verse.\" Sir P. Sidney. (b) A vent. time. Shak. absence of the sound of h, as in 'ie`nai (ienai).",
           "partOfSpeech": "noun"
         }
       ],
@@ -4618,20 +4632,14 @@
       "relatedWords": []
     },
     "brede": {
-      "word": "BREDE",
-      "definitions": [
-        {
-          "text": "A braid. [R.] Half lapped in glowing gauze and golden brede. Tennyson.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bredebreede": {
       "word": "BREDE; BREEDE",
       "definitions": [
         {
           "text": "Breadth. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A braid. [R.] Half lapped in glowing gauze and golden brede. Tennyson.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4868,7 +4876,17 @@
       ],
       "relatedWords": []
     },
-    "breechpinbreechscrew": {
+    "breechpin": {
+      "word": "BREECH PIN; BREECH SCREW",
+      "definitions": [
+        {
+          "text": "A strong iron or steel plug screwed into the breech of a musket or other firearm, to close the bottom of the bore.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "breechscrew": {
       "word": "BREECH PIN; BREECH SCREW",
       "definitions": [
         {
@@ -5222,6 +5240,16 @@
       ],
       "relatedWords": []
     },
+    "breede": {
+      "word": "BREDE; BREEDE",
+      "definitions": [
+        {
+          "text": "Breadth. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "breeder": {
       "word": "BREEDER",
       "definitions": [
@@ -5430,8 +5458,12 @@
       ]
     },
     "breeze": {
-      "word": "BREEZE",
+      "word": "BREEZE; BREEZE FLY",
       "definitions": [
+        {
+          "text": "A fly of various species, of the family Tabanidæ, noted for buzzing about animals, and tormenting them by sucking their blood; -- called also horsefly, and gadfly. They are among the largest of two- winged or dipterous insects. The name is also given to different species of botflies. [Written also breese and brize.]",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A light, gentle wind; a fresh, soft-blowing wind. Into a gradual calm the breezes sink. Wordsworth.",
           "partOfSpeech": "noun"
@@ -5585,7 +5617,7 @@
         "zoom"
       ]
     },
-    "breezebreezefly": {
+    "breezefly": {
       "word": "BREEZE; BREEZE FLY",
       "definitions": [
         {
@@ -5790,21 +5822,15 @@
       "relatedWords": []
     },
     "bren": {
-      "word": "BREN",
-      "definitions": [
-        {
-          "text": "Bran. [Obs.] Chaucer.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "brenbrenne": {
       "word": "BREN; BRENNE",
       "definitions": [
         {
           "text": "To burn. [Obs.] Chaucer. Consuming fire brent his shearing house or stall. W. Browne.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Bran. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -5815,6 +5841,16 @@
         {
           "text": "A tribute which tenants paid to their lord, in lieu of bran, which they were obliged to furnish for his hounds.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brenne": {
+      "word": "BREN; BRENNE",
+      "definitions": [
+        {
+          "text": "To burn. [Obs.] Chaucer. Consuming fire brent his shearing house or stall. W. Browne.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -5830,20 +5866,6 @@
       "relatedWords": []
     },
     "brent": {
-      "word": "BRENT",
-      "definitions": [
-        {
-          "text": "of Bren. Burnt. [Obs.]",
-          "partOfSpeech": ""
-        },
-        {
-          "text": "A brant. See Brant.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "brentbrant": {
       "word": "BRENT; BRANT",
       "definitions": [
         {
@@ -5853,6 +5875,14 @@
         {
           "text": "Smooth; unwrinkled. [Scot.] Your bonnie brow was brent. Burns.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "of Bren. Burnt. [Obs.]",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A brant. See Brant.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -5883,13 +5913,7 @@
         {
           "text": "for Bursteth. [Obs.]",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "brestbreast": {
-      "word": "BREST; BREAST",
-      "definitions": [
+        },
         {
           "text": "A torus. [Obs.]",
           "partOfSpeech": "noun"
@@ -6315,7 +6339,17 @@
       ],
       "relatedWords": []
     },
-    "brevirostralbrevirostrate": {
+    "brevirostral": {
+      "word": "BREVIROSTRAL; BREVIROSTRATE",
+      "definitions": [
+        {
+          "text": "Short-billed; having a short beak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brevirostrate": {
       "word": "BREVIROSTRAL; BREVIROSTRATE",
       "definitions": [
         {

@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "pointillism": {
+      "word": "NEOIMPRESSIONISM; POINTILLISM",
+      "definitions": [
+        {
+          "text": "A theory or practice which is a further development, on more rigorously scientific lines, of the theory and practice of Impressionism, originated by George Seurat (1859-91), and carried on by Paul Signac (1863- -) and others. Its method is marked by the laying of pure primary colors in minute dots upon a white ground, any given line being produced by a variation in the proportionate quantity of the primary colors employed. This method is also known as Pointillism (stippling).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "poa": {
       "word": "POA",
       "definitions": [
@@ -14,6 +24,14 @@
     "poach": {
       "word": "POACH",
       "definitions": [
+        {
+          "text": "To cook, as eggs, by breaking them into boiling water; also, to cook with butter after breaking in a vessel. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To rob of game; to pocket and convey away by stealth, as game; hence, to plunder. Garth.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To steal or pocket game, or to carry it away privately, as in a bag; to kill or destroy game contrary to law, especially by night; to hunt or fish unlawfully; as, to poach for rabbits or for salmon.",
           "partOfSpeech": "verb"
@@ -79,7 +97,17 @@
       ],
       "relatedWords": []
     },
-    "poakpoake": {
+    "poak": {
+      "word": "POAK; POAKE",
+      "definitions": [
+        {
+          "text": "Waste matter from the preparation of skins, consisting of hair, lime, oil, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poake": {
       "word": "POAK; POAKE",
       "definitions": [
         {
@@ -179,7 +207,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Same as Pouch. compound words usually of obvious signification; as, pocket comb, pocket compass, pocket edition, pocket handkerchief, pocket money,",
+          "text": "Same as Pouch. compound words usually of obvious signification; as, pocket comb, pocket compass, pocket edition, pocket handkerchief, pocket money, pocket picking, or pocket-picking, etc. Out of pocket. See under Out, prep. Borough. [Eng.] -- Pocket gopher (Zoöl.), any one of several species of American rodents of the genera Geomys, and Thomomys, family Geomydæ. They have large external cheek pouches, and are fossorial in their habits. they inhabit North America, from the Mississippi Valley west to the Pacific. Called also pouched gopher. Saccomyidæ. They have external cheek pouches. Some of them are adapted for leaping (genus Dipadomys), and are called kangaroo mice. They are native of the Southwestern United States, Mexico, etc. authority of the crown, without a nomination by the judges in the exchequer. Burrill. deep pocket, or deep pockets, wealth or substantial financial assets. defendant with \"deep pockets\", so as to be able to actually obtain the sum of damages which may be judged due to him. This contrasts with a \"judgment-proof\" defendant, one who has neither assets nor insurance, and against whom a judgment for monetary damages would be worthless.",
           "partOfSpeech": "noun"
         },
         {
@@ -431,7 +459,21 @@
       ],
       "relatedWords": []
     },
-    "podagricpodagrical": {
+    "podagric": {
+      "word": "PODAGRIC; PODAGRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the gout; gouty; caused by gout.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Afflicted with gout. Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "podagrical": {
       "word": "PODAGRIC; PODAGRICAL",
       "definitions": [
         {
@@ -829,6 +871,10 @@
         {
           "text": "Same as Poicile.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The frescoed porch or gallery in Athens where Zeno taught. R. Browning.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -891,7 +937,7 @@
       "word": "POEPHAGA",
       "definitions": [
         {
-          "text": "A group of herbivorous marsupials including the kangaroos and",
+          "text": "A group of herbivorous marsupials including the kangaroos and their allies.",
           "partOfSpeech": "noun"
         }
       ],
@@ -955,7 +1001,7 @@
       ],
       "relatedWords": []
     },
-    "poeticpoetical": {
+    "poetic": {
       "word": "POETIC; POETICAL",
       "definitions": [
         {
@@ -963,7 +1009,21 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Expressed in metrical form; exhibiting the imaginative or the",
+          "text": "Expressed in metrical form; exhibiting the imaginative or the rhythmical quality of poetry; as, a poetical composition; poetical prose. Poetic license. See License, n., 4.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poetical": {
+      "word": "POETIC; POETICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to poetry; suitable for poetry, or for writing poetry; as, poetic talent, theme, work, sentiments. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Expressed in metrical form; exhibiting the imaginative or the rhythmical quality of poetry; as, a poetical composition; poetical prose. Poetic license. See License, n., 4.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1093,7 +1153,7 @@
       ],
       "relatedWords": []
     },
-    "poicilepoecile": {
+    "poicile": {
       "word": "POICILE; POECILE",
       "definitions": [
         {
@@ -1157,7 +1217,17 @@
       ],
       "relatedWords": []
     },
-    "poikilothermalpoikilothermic": {
+    "poikilothermal": {
+      "word": "POIKILOTHERMAL; POIKILOTHERMIC",
+      "definitions": [
+        {
+          "text": "Having a varying body temperature. See Homoiothermal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poikilothermic": {
       "word": "POIKILOTHERMAL; POIKILOTHERMIC",
       "definitions": [
         {
@@ -1361,7 +1431,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A movement executed with the saber or foil; as, tierce point. particularly in mathematics, mechanics, perspective, and physics, but generally either in the geometrical sense, or in that of degree, or condition of change, and with some accompanying descriptive or qualifying term, under which, in the vocabulary, the specific uses are explained; as, boiling point, carbon point, dry point, freezing point, melting point, vanishing point, etc. At all points, in every particular, completely; perfectly. Shak. on the verge; about (see About, prep., 6); as, at the point of death; he was on the point of speaking. \"In point to fall down.\" Chaucer. \"Caius Sidius Geta, at point to have been taken, recovered himself so valiantly as brought day on his side.\" Milton. objects are seen distinctly. In normal eyes the nearest point at which objects are seen distinctly; either with the two eyes together (binocular near point), or with each eye separately (monocular near point). weight of authority. that made on the pillow. (Brussels ground). not a point of tangency or of intersection, as, for instance, that in which a cycloid meets its base. direction of curvature, or at which its convexity and concavity change sides. propriety under the rules. assumed as that occupied by the eye of the spectator. or any subject is considered. of the compass card in the mariner's compass; the corresponding points by which the circle of the horizon is supposed to be divided, of which the four marking the directions of east, west, north, and",
+          "text": "A movement executed with the saber or foil; as, tierce point. particularly in mathematics, mechanics, perspective, and physics, but generally either in the geometrical sense, or in that of degree, or condition of change, and with some accompanying descriptive or qualifying term, under which, in the vocabulary, the specific uses are explained; as, boiling point, carbon point, dry point, freezing point, melting point, vanishing point, etc. At all points, in every particular, completely; perfectly. Shak. on the verge; about (see About, prep., 6); as, at the point of death; he was on the point of speaking. \"In point to fall down.\" Chaucer. \"Caius Sidius Geta, at point to have been taken, recovered himself so valiantly as brought day on his side.\" Milton. objects are seen distinctly. In normal eyes the nearest point at which objects are seen distinctly; either with the two eyes together (binocular near point), or with each eye separately (monocular near point). weight of authority. that made on the pillow. (Brussels ground). not a point of tangency or of intersection, as, for instance, that in which a cycloid meets its base. direction of curvature, or at which its convexity and concavity change sides. propriety under the rules. assumed as that occupied by the eye of the spectator. or any subject is considered. of the compass card in the mariner's compass; the corresponding points by which the circle of the horizon is supposed to be divided, of which the four marking the directions of east, west, north, and south, are called cardinal points, and the rest are named from their respective directions, as N. by E., N. N. E., N. E. by N., N. E., etc. See Illust. under Compass. transferring a design. property not possessed by points in general on the curve, as a cusp, a point of inflection, a node, etc. controversy. also, to make advance by a step, grade, or position. note down, or to make, a successful hit, run, etc. stretch one's authority or conscience. languages, a mark placed above or below the consonant, or attached to it, representing the vowel, or vocal sound, which precedes or follows the consonant.",
           "partOfSpeech": "noun"
         },
         {
@@ -1509,7 +1579,21 @@
       ],
       "relatedWords": []
     },
-    "pointdevicepointdevise": {
+    "pointdevice": {
+      "word": "POINT-DEVICE; POINT-DEVISE",
+      "definitions": [
+        {
+          "text": "Uncommonly nice and exact; precise; particular. You are rather point-devise in your accouterments. Shak. Thus he grew up, in logic point-devise, Perfect in grammar, and in rhetoric nice. Longfellow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Exactly. [Obs.] Shak.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pointdevise": {
       "word": "POINT-DEVICE; POINT-DEVISE",
       "definitions": [
         {
@@ -1531,7 +1615,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Characterized by sharpness, directness, or pithiness of expression; terse; epigrammatic; especially, directed to a particular person or thing. His moral pleases, not his pointed wit. Pope. Pointed arch (Arch.), an arch with a pointed crown. in which the pointed arch is the predominant feature; -- more",
+          "text": "Characterized by sharpness, directness, or pithiness of expression; terse; epigrammatic; especially, directed to a particular person or thing. His moral pleases, not his pointed wit. Pope. Pointed arch (Arch.), an arch with a pointed crown. in which the pointed arch is the predominant feature; -- more commonly called Gothic.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1673,6 +1757,22 @@
       "word": "POISE",
       "definitions": [
         {
+          "text": "Weight; gravity; that which causes a body to descend; heaviness. \"Weights of an extraordinary poise.\" Evelyn.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The weight, or mass of metal, used in weighing, to balance the substance weighed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being balanced by equal weight or power; equipoise; balance; equilibrium; rest. Bentley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which causes a balance; a counterweight. Men of unbounded imagination often want the poise of judgment. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To balance; to make of equal weight; as, to poise the scales of a balance.",
           "partOfSpeech": "verb"
         },
@@ -1781,7 +1881,7 @@
       "word": "POISONOUS",
       "definitions": [
         {
-          "text": "Having the qualities or effects of poison; venomous; baneful;",
+          "text": "Having the qualities or effects of poison; venomous; baneful; corrupting; noxious. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2213,7 +2313,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A property of the conic sections by virtue of which a given",
+          "text": "A property of the conic sections by virtue of which a given point determines a corresponding right line and a given right line determines a corresponding point. See Polar, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2381,7 +2481,17 @@
       ],
       "relatedWords": []
     },
-    "poleaxpoleaxe": {
+    "poleax": {
+      "word": "POLEAX; POLEAXE",
+      "definitions": [
+        {
+          "text": "Anciently, a kind of battle-ax with a long handle; later, an ax or hatchet with a short handle, and a head variously patterned; -- used by soldiers, and also by sailors in boarding a vessel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poleaxe": {
       "word": "POLEAX; POLEAXE",
       "definitions": [
         {
@@ -2439,6 +2549,16 @@
         {
           "text": "A polemic argument or controversy.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polemical": {
+      "word": "POLEMICAL",
+      "definitions": [
+        {
+          "text": "Polemic; controversial; disputatious. Polemical and impertinent disputations. Jer. Taylor.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3417,6 +3537,10 @@
         {
           "text": "Pollinose.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To apply pollen to (a stigma).",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -3479,7 +3603,17 @@
       ],
       "relatedWords": []
     },
-    "polliwigpolliwog": {
+    "polliwig": {
+      "word": "POLLIWIG; POLLIWOG",
+      "definitions": [
+        {
+          "text": "A tadpole; -- called also purwiggy and porwigle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polliwog": {
       "word": "POLLIWIG; POLLIWOG",
       "definitions": [
         {
@@ -3535,12 +3669,32 @@
       ],
       "relatedWords": []
     },
+    "polluted": {
+      "word": "POLLUTED",
+      "definitions": [
+        {
+          "text": "Defiled; made unclean or impure; debauched.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "polluter": {
       "word": "POLLUTER",
       "definitions": [
         {
           "text": "One who pollutes. Dryden.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polluting": {
+      "word": "POLLUTING",
+      "definitions": [
+        {
+          "text": "Adapted or tending to pollute; causing defilement or pollution.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3699,7 +3853,17 @@
       ],
       "relatedWords": []
     },
-    "poltfootpoltfooted": {
+    "poltfoot": {
+      "word": "POLT-FOOT; POLT-FOOTED",
+      "definitions": [
+        {
+          "text": "Having a distorted foot, or a clubfoot or clubfeet. B. Jonson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poltfooted": {
       "word": "POLT-FOOT; POLT-FOOTED",
       "definitions": [
         {
@@ -3841,7 +4005,17 @@
       ],
       "relatedWords": []
     },
-    "polyadelphianpolyadelphous": {
+    "polyadelphian": {
+      "word": "POLYADELPHIAN; POLYADELPHOUS",
+      "definitions": [
+        {
+          "text": "Belonging to the class Polyadelphia; having stamens united in three or more bundles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polyadelphous": {
       "word": "POLYADELPHIAN; POLYADELPHOUS",
       "definitions": [
         {
@@ -4161,7 +4335,7 @@
       "word": "POLYCOTYLEDON",
       "definitions": [
         {
-          "text": "A plant that has many, or more than two, cotyledons in the",
+          "text": "A plant that has many, or more than two, cotyledons in the seed.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4519,7 +4693,17 @@
       ],
       "relatedWords": []
     },
-    "polygenesispolygeny": {
+    "polygenesis": {
+      "word": "POLYGENESIS; POLYGENY",
+      "definitions": [
+        {
+          "text": "The theory that living organisms originate in cells or embryos of different kinds, instead of coming from a single cell; -- opposed to monogenesis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polygeny": {
       "word": "POLYGENESIS; POLYGENY",
       "definitions": [
         {
@@ -4725,7 +4909,21 @@
       ],
       "relatedWords": []
     },
-    "polygraphicpolygraphical": {
+    "polygraphic": {
+      "word": "POLYGRAPHIC; POLYGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or employed in, polygraphy; as, a polygraphic instrument.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Done with a polygraph; as, a polygraphic copy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polygraphical": {
       "word": "POLYGRAPHIC; POLYGRAPHICAL",
       "definitions": [
         {
@@ -4787,7 +4985,17 @@
       ],
       "relatedWords": []
     },
-    "polygynianpolygynous": {
+    "polygynian": {
+      "word": "POLYGYNIAN; POLYGYNOUS",
+      "definitions": [
+        {
+          "text": "Having many styles; belonging to the order Polygynia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polygynous": {
       "word": "POLYGYNIAN; POLYGYNOUS",
       "definitions": [
         {
@@ -4827,7 +5035,17 @@
       ],
       "relatedWords": []
     },
-    "polyhedralpolyhedrical": {
+    "polyhedral": {
+      "word": "POLYHEDRAL; POLYHEDRICAL",
+      "definitions": [
+        {
+          "text": "Having many sides, as a solid body. Polyhedral angle, an angle bounded by three or more plane angles having a common vertex.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polyhedrical": {
       "word": "POLYHEDRAL; POLYHEDRICAL",
       "definitions": [
         {
@@ -5303,7 +5521,17 @@
       ],
       "relatedWords": []
     },
-    "polyoptronpolyoptrum": {
+    "polyoptron": {
+      "word": "POLYOPTRON; POLYOPTRUM",
+      "definitions": [
+        {
+          "text": "A glass through which objects appear multiplied, but diminished in size. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polyoptrum": {
       "word": "POLYOPTRON; POLYOPTRUM",
       "definitions": [
         {
@@ -5545,7 +5773,17 @@
       ],
       "relatedWords": []
     },
-    "polyphotalpolyphote": {
+    "polyphotal": {
+      "word": "POLYPHOTAL; POLYPHOTE",
+      "definitions": [
+        {
+          "text": "Pertaining to or designating arc lamps so constructed that more than one can be used on a single circuit.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polyphote": {
       "word": "POLYPHOTAL; POLYPHOTE",
       "definitions": [
         {
@@ -5779,7 +6017,17 @@
       ],
       "relatedWords": []
     },
-    "polypragmaticpolypragmatical": {
+    "polypragmatic": {
+      "word": "POLYPRAGMATIC; POLYPRAGMATICAL",
+      "definitions": [
+        {
+          "text": "Overbusy; officious. [R.] Heywood.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polypragmatical": {
       "word": "POLYPRAGMATIC; POLYPRAGMATICAL",
       "definitions": [
         {
@@ -6021,7 +6269,17 @@
       ],
       "relatedWords": []
     },
-    "polysyllabicpolysyllabical": {
+    "polysyllabic": {
+      "word": "POLYSYLLABIC; POLYSYLLABICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a polysyllable; containing, or characterized by, polysyllables; consisting of more than three syllables.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polysyllabical": {
       "word": "POLYSYLLABIC; POLYSYLLABICAL",
       "definitions": [
         {
@@ -6075,7 +6333,7 @@
       "word": "POLYSYNDETIC",
       "definitions": [
         {
-          "text": "Characterized by polysyndeton, or the multiplication of",
+          "text": "Characterized by polysyndeton, or the multiplication of conjunctions.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6199,11 +6457,21 @@
       ],
       "relatedWords": []
     },
-    "polytheisticpolytheistical": {
+    "polytheistic": {
       "word": "POLYTHEISTIC; POLYTHEISTICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to polytheism; characterized by polytheism; professing or advocating polytheism; as, polytheistic worship; a",
+          "text": "Of or pertaining to polytheism; characterized by polytheism; professing or advocating polytheism; as, polytheistic worship; a polytheistic author, or nation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polytheistical": {
+      "word": "POLYTHEISTIC; POLYTHEISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to polytheism; characterized by polytheism; professing or advocating polytheism; as, polytheistic worship; a polytheistic author, or nation.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6379,7 +6647,17 @@
       ],
       "relatedWords": []
     },
-    "polyzoonpolyzooen": {
+    "polyzoon": {
+      "word": "POLYZOON; POLYZOOEN",
+      "definitions": [
+        {
+          "text": "One of the individual zooids forming the compound organism of a polyzoan.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "polyzooen": {
       "word": "POLYZOON; POLYZOOEN",
       "definitions": [
         {
@@ -6893,7 +7171,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Ostentatious; pretentious; boastful; vainlorious; as, pompous manners; a pompous style. \"Pompous in high presumption.\" Chaucer.",
+          "text": "Ostentatious; pretentious; boastful; vainlorious; as, pompous manners; a pompous style. \"Pompous in high presumption.\" Chaucer. he pompous vanity of the old schoolmistress. Thackeray.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6989,6 +7267,16 @@
       ],
       "relatedWords": []
     },
+    "ponderable": {
+      "word": "PONDERABLE",
+      "definitions": [
+        {
+          "text": "Capable of being weighed; having appreciable weight.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "ponderal": {
       "word": "PONDERAL",
       "definitions": [
@@ -7049,6 +7337,16 @@
         {
           "text": "One who ponders.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pondering": {
+      "word": "PONDERING",
+      "definitions": [
+        {
+          "text": "Deliberating.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7801,6 +8099,16 @@
       ],
       "relatedWords": []
     },
+    "poorspirited": {
+      "word": "POOR-SPIRITED",
+      "definitions": [
+        {
+          "text": "Of a mean spirit; cowardly; base.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "poorwill": {
       "word": "POOR-WILL",
       "definitions": [
@@ -7993,7 +8301,7 @@
       "word": "POPISH",
       "definitions": [
         {
-          "text": "Of or pertaining to the pope; taught or ordained by the pope; hence, of or pertaining to the Roman Catholic Church; -- often used",
+          "text": "Of or pertaining to the pope; taught or ordained by the pope; hence, of or pertaining to the Roman Catholic Church; -- often used opprobriously.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8151,11 +8459,15 @@
         {
           "text": "Any plant or species of the genus Papaver, herbs with showy polypetalous flowers and a milky juice. From one species (Papaver somniferum) opium is obtained, though all the species contain it to some extent; also, a flower of the plant. See Illust. of Capsule. California poppy (Bot.), any yellow-flowered plant of the genus Eschscholtzia. uses pieces cut from poppy petals for the lining of its cells; -- called also upholsterer bee. of the Poppy family, but as prickly as a thistle. Catchfly.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A raised ornament frequently having the form of a final. It is generally used on the tops of the upright ends or elbows which terminate seats, etc., in Gothic churches.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "poppypoppyhead": {
+    "poppyhead": {
       "word": "POPPY; POPPYHEAD",
       "definitions": [
         {
@@ -8469,7 +8781,25 @@
       ],
       "relatedWords": []
     },
-    "porcelaneousporcellaneous": {
+    "porcelaneous": {
+      "word": "PORCELANEOUS; PORCELLANEOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to porcelain; resembling porcelain; as, porcelaneous shells.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having a smooth, compact shell without pores; -- said of certain Foraminifera.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "porcellaneous": {
       "word": "PORCELANEOUS; PORCELLANEOUS",
       "definitions": [
         {
@@ -8497,7 +8827,17 @@
       ],
       "relatedWords": []
     },
-    "porcelanousporcellanous": {
+    "porcelanous": {
+      "word": "PORCELANOUS; PORCELLANOUS",
+      "definitions": [
+        {
+          "text": "Porcelaneous. Ure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "porcellanous": {
       "word": "PORCELANOUS; PORCELLANOUS",
       "definitions": [
         {
@@ -8677,7 +9017,7 @@
       ],
       "relatedWords": []
     },
-    "porismaticporismatical": {
+    "porismatic": {
       "word": "PORISMATIC; PORISMATICAL",
       "definitions": [
         {
@@ -8687,7 +9027,27 @@
       ],
       "relatedWords": []
     },
-    "poristicporistical": {
+    "porismatical": {
+      "word": "PORISMATIC; PORISMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a porism; poristic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poristic": {
+      "word": "PORISTIC; PORISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a porism; of the nature of a porism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poristical": {
       "word": "PORISTIC; PORISTICAL",
       "definitions": [
         {
@@ -9469,7 +9829,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Hence: Monstrous; prodigious; wonderful; dreadful; as, a beast of",
+          "text": "Hence: Monstrous; prodigious; wonderful; dreadful; as, a beast of portentous size. Roscommon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9579,7 +9939,17 @@
       ],
       "relatedWords": []
     },
-    "portgreveportgrave": {
+    "portgreve": {
+      "word": "PORTGREVE; PORTGRAVE",
+      "definitions": [
+        {
+          "text": "In old English law, the chief magistrate of a port or maritime town.; a portreeve. [Obs.] Fabyan.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "portgrave": {
       "word": "PORTGREVE; PORTGRAVE",
       "definitions": [
         {
@@ -9961,8 +10331,8 @@
       ],
       "relatedWords": []
     },
-    "pourtrairefportrairefrlprotrahereprotractumtodrawor": {
-      "word": "pourtraire, F. portraire, fr. L. protrahere, protractum, to draw or",
+    "portray": {
+      "word": "PORTRAY",
       "definitions": [
         {
           "text": "To paint or draw the likeness of; as, to portray a king on horseback. Take a tile, and lay it before thee, and portray upon it the city, even Jerusalem. Ezek. iv. 1.",
@@ -10157,7 +10527,17 @@
       ],
       "relatedWords": []
     },
-    "poseurposeuse": {
+    "poseur": {
+      "word": "POSEUR; POSEUSE",
+      "definitions": [
+        {
+          "text": "A person who poses or attitudizes, esp. mentally.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poseuse": {
       "word": "POSEUR; POSEUSE",
       "definitions": [
         {
@@ -10208,6 +10588,30 @@
     "position": {
       "word": "POSITION",
       "definitions": [
+        {
+          "text": "The state of being posited, or placed; the manner in which anything is placed; attitude; condition; as, a firm, an inclined, or an upright position. We have different prospects of the same thing, according to our different positions to it. Locke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The spot where a person or thing is placed or takes a place; site; place; station; situation; as, the position of man in creation; the fleet changed its position.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence: The ground which any one takes in an argument or controversy; the point of view from which any one proceeds to a discussion; also, a principle laid down as the basis of reasoning; a proposition; a thesis; as, to define one's position; to appear in a false position. Let not the proof of any position depend on the positions that follow, but always on those which go before. I. Watts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Relative place or standing; social or official rank; as, a person of position; hence, office; post; as, to lose one's position.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arith.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A method of solving a problem by one or two suppositions; -- called also the rule of trial and error. Angle of position (Astron.), the angle which any line (as that joining two stars) makes with another fixed line, specifically with a circle of declination. proceeding with each of two assumed numbers, according to the conditions of the problem, and by comparing the difference of the results with those of the numbers, deducing the correction to be applied to one of them to obtain the true result. quick movements. astronomical telescope for measuring angles of position in the field of view. which the result obtained by operating with an assumed number is to the true result as the number assumed is to the number required. large detachment of troops for the purpose of checking or observing an opposing force. proposition; assertion; thesis.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To indicate the position of; to place. [R.] Encyc. Brit.",
           "partOfSpeech": "verb"
@@ -10313,6 +10717,16 @@
       ],
       "relatedWords": []
     },
+    "positiveness": {
+      "word": "POSITIVENESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being positive; reality; actualness; certainty; confidence; peremptoriness; dogmatism. See Positive, a. Positiveness, pedantry, and ill manners. Swift. The positiveness of sins of commission lies both in the habitude of the will and in the executed act too; the positiveness of sins of omission is in the habitude of the will only. Norris.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "positivism": {
       "word": "POSITIVISM",
       "definitions": [
@@ -10367,7 +10781,17 @@
       ],
       "relatedWords": []
     },
-    "posologicposological": {
+    "posologic": {
+      "word": "POSOLOGIC; POSOLOGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to posology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "posological": {
       "word": "POSOLOGIC; POSOLOGICAL",
       "definitions": [
         {
@@ -10835,11 +11259,21 @@
       ],
       "relatedWords": []
     },
+    "postcava": {
+      "word": "POSTCAVA",
+      "definitions": [
+        {
+          "text": "The inferior vena cava.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "postclavicle": {
       "word": "POSTCLAVICLE",
       "definitions": [
         {
-          "text": "A bone in the pectoral girdle of many fishes projecting",
+          "text": "A bone in the pectoral girdle of many fishes projecting backward from the clavicle.",
           "partOfSpeech": "noun"
         }
       ],
@@ -10909,7 +11343,7 @@
       ],
       "relatedWords": []
     },
-    "postdiluvialpostdiluvian": {
+    "postdiluvial": {
       "word": "POSTDILUVIAL; POSTDILUVIAN",
       "definitions": [
         {
@@ -10920,8 +11354,12 @@
       "relatedWords": []
     },
     "postdiluvian": {
-      "word": "POSTDILUVIAN",
+      "word": "POSTDILUVIAL; POSTDILUVIAN",
       "definitions": [
+        {
+          "text": "Being or happening after the flood in Noah's days.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One who lived after the flood.",
           "partOfSpeech": "noun"
@@ -11125,7 +11563,21 @@
       ],
       "relatedWords": []
     },
-    "postexilianpostexilic": {
+    "postexilian": {
+      "word": "POSTEXILIAN; POSTEXILIC",
+      "definitions": [
+        {
+          "text": "After the exile; specif. (Jewish Hist.),",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "belonging to a period subsequent to the Babylonian captivity or exile (b. c. 597 or about 586-about 537).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "postexilic": {
       "word": "POSTEXILIAN; POSTEXILIC",
       "definitions": [
         {
@@ -11313,7 +11765,17 @@
       ],
       "relatedWords": []
     },
-    "posthumeposthumed": {
+    "posthume": {
+      "word": "POSTHUME; POSTHUMED",
+      "definitions": [
+        {
+          "text": "Posthumos. [Obs.] I. Watts. Fuller.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "posthumed": {
       "word": "POSTHUME; POSTHUMED",
       "definitions": [
         {
@@ -11503,7 +11965,29 @@
       ],
       "relatedWords": []
     },
-    "postliminiumpostliminy": {
+    "postliminium": {
+      "word": "POSTLIMINIUM; POSTLIMINY",
+      "definitions": [
+        {
+          "text": "(Rom. Antiq.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The return to his own country, and his former privileges, of a person who had gone to sojourn in a foreign country, or had been banished, or taken by an enemy. Burrill.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Internat. Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The right by virtue of which persons and things taken by an enemy in war are restored to their former state when coming again under the power of the nation to which they belonged. Kent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "postliminy": {
       "word": "POSTLIMINIUM; POSTLIMINY",
       "definitions": [
         {
@@ -11675,7 +12159,21 @@
       ],
       "relatedWords": []
     },
-    "postobitpostobitbond": {
+    "postobit": {
+      "word": "POST-OBIT; POST-OBIT BOND",
+      "definitions": [
+        {
+          "text": "A bond in which the obligor, in consideration of having received a certain sum of money, binds himself to pay a larger sum, on unusual interest, on the death of some specified individual from whom he has expectations. Bouvier.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bond in which the obligor, in consideration of having received a certain sum of money, binds himself to pay a larger sum, on unusual interest, on the death of some specified individual from whom he has expectations. Bouvier.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "postobitbond": {
       "word": "POST-OBIT; POST-OBIT BOND",
       "definitions": [
         {
@@ -11865,7 +12363,7 @@
       "word": "POSTPOSITIVE",
       "definitions": [
         {
-          "text": "Placed after another word; as, a postpositive conjunction; a",
+          "text": "Placed after another word; as, a postpositive conjunction; a postpositive letter.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -12871,7 +13369,17 @@
       ],
       "relatedWords": []
     },
-    "potichomaniapotichomanie": {
+    "potichomania": {
+      "word": "POTICHOMANIA; POTICHOMANIE",
+      "definitions": [
+        {
+          "text": "The art or process of coating the inside of glass vessels with engravings or paintings, so as to give them the appearance of painted ware.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "potichomanie": {
       "word": "POTICHOMANIA; POTICHOMANIE",
       "definitions": [
         {
@@ -13013,7 +13521,17 @@
       ],
       "relatedWords": []
     },
-    "potshardpotshare": {
+    "potshard": {
+      "word": "POTSHARD; POTSHARE",
+      "definitions": [
+        {
+          "text": "A potsherd. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "potshare": {
       "word": "POTSHARD; POTSHARE",
       "definitions": [
         {
@@ -13393,7 +13911,17 @@
       ],
       "relatedWords": []
     },
-    "poulppoulpe": {
+    "poulp": {
+      "word": "POULP; POULPE",
+      "definitions": [
+        {
+          "text": "Same as Octopus. Musk poulp (Zoöl.), a Mediterranean octopod (Eledone moschata) which emits a strong odor of musk.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poulpe": {
       "word": "POULP; POULPE",
       "definitions": [
         {
@@ -13697,7 +14225,7 @@
       ],
       "relatedWords": []
     },
-    "poundkeeperpoundkeeper": {
+    "poundkeeper": {
       "word": "POUNDKEEPER; POUND-KEEPER",
       "definitions": [
         {
@@ -14017,7 +14545,17 @@
       ],
       "relatedWords": []
     },
-    "powanpowen": {
+    "powan": {
+      "word": "POWAN; POWEN",
+      "definitions": [
+        {
+          "text": "A small British lake whitefish (Coregonus clupeoides, or C. ferus); -- called also gwyniad and lake herring.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "powen": {
       "word": "POWAN; POWEN",
       "definitions": [
         {
@@ -14275,7 +14813,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Large; capacious; -- said of veins of ore.",
+          "text": "Large; capacious; -- said of veins of ore. intense.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -14285,7 +14823,7 @@
       "word": "POWERLESS",
       "definitions": [
         {
-          "text": "Destitute of power, force, or energy; weak; impotent; not able",
+          "text": "Destitute of power, force, or energy; weak; impotent; not able to produce any effect.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -14297,6 +14835,16 @@
         {
           "text": "Same as Pauldron.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "powp": {
+      "word": "POWP",
+      "definitions": [
+        {
+          "text": "See Poop, v. i. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -14379,7 +14927,17 @@
       ],
       "relatedWords": []
     },
-    "poyndpoynder": {
+    "poynd": {
+      "word": "POYND; POYNDER",
+      "definitions": [
+        {
+          "text": "See Poind, Poinder.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "poynder": {
       "word": "POYND; POYNDER",
       "definitions": [
         {
@@ -14429,7 +14987,7 @@
       ],
       "relatedWords": []
     },
-    "pozzuolanapozzolana": {
+    "pozzuolana": {
       "word": "POZZUOLANA; POZZOLANA",
       "definitions": [
         {
@@ -14439,12 +14997,12 @@
       ],
       "relatedWords": []
     },
-    "pofvulgaretomakegeneralorcommonfrvulgusthemultitude": {
-      "word": "p. of vulgare to make general, or common, fr. vulgus the multitude:",
+    "pozzolana": {
+      "word": "POZZUOLANA; POZZOLANA",
       "definitions": [
         {
-          "text": "An ancient Latin version of the Scripture, and the only version which the Roman Church admits to be authentic; -- so called from its common use in the Latin Church. The Old Testament he translated mostly from the Hebrew and Chaldaic, and the New Testament he revised from an older Latin version. The Douay version, so called, is an English translation from the Vulgate. See Douay Bible.",
-          "partOfSpeech": "adjective"
+          "text": "Volcanic ashes from Pozzuoli, in Italy, used in the manufacture of a kind of mortar which hardens under water.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

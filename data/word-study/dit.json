@@ -342,7 +342,17 @@
       ],
       "relatedWords": []
     },
-    "dithecaldithecous": {
+    "dithecal": {
+      "word": "DITHECAL; DITHECOUS",
+      "definitions": [
+        {
+          "text": "Having two thecæ, cells, or compartments.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dithecous": {
       "word": "DITHECAL; DITHECOUS",
       "definitions": [
         {
@@ -400,7 +410,17 @@
       ],
       "relatedWords": []
     },
-    "ditheisticditheistical": {
+    "ditheistic": {
+      "word": "DITHEISTIC; DITHEISTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to ditheism; dualistic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ditheistical": {
       "word": "DITHEISTIC; DITHEISTICAL",
       "definitions": [
         {
@@ -546,6 +566,20 @@
       ],
       "relatedWords": []
     },
+    "ditt": {
+      "word": "DITT",
+      "definitions": [
+        {
+          "text": "See Dit, n.,",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "[Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "dittander": {
       "word": "DITTANDER",
       "definitions": [
@@ -562,16 +596,6 @@
         {
           "text": "Set, sung, or composed as a ditty; -- usually in composition. Who, with his soft pipe, and smooth-dittied song. Milton.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "dittn": {
-      "word": "Ditt, n.",
-      "definitions": [
-        {
-          "text": "[Obs.] Spenser.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -782,6 +806,14 @@
     "ditty": {
       "word": "DITTY",
       "definitions": [
+        {
+          "text": "A saying or utterance; especially, one that is short and frequently repeated; a theme. O, too high ditty for my simple rhyme. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A song; a lay; a little poem intended to be sung. \"Religious, martial, or civil ditties.\" Milton.ditties sing. Sandys.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To sing; to warble a little tune. Beasts fain would sing; birds ditty to their notes. Herbert.",
           "partOfSpeech": "verb"

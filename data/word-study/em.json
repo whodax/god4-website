@@ -1,6 +1,42 @@
 {
   "version": "v1",
   "entries": {
+    "embassade": {
+      "word": "AMBASSADE; EMBASSADE",
+      "definitions": [
+        {
+          "text": "The mission of an ambassador. [Obs.] Carew.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An embassy. [Obs.] Strype.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An embassy. See Ambassade. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "embassador": {
+      "word": "AMBASSADOR; EMBASSADOR",
+      "definitions": [
+        {
+          "text": "A minister of the highest rank sent a foreign court to represent there his sovereign or country. that is, sent upon some special or unusual occasion or errand. Abbott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An official messenger and representative.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Ambassador. Stilbon, that was a wise embassadour, Was sent to Corinth. Chaucer. Myself my king's embassador will go. Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "em": {
       "word": "EM",
       "definitions": [
@@ -121,7 +157,7 @@
       ],
       "relatedWords": []
     },
-    "emailombrantaemailombrant": {
+    "emailombrant": {
       "word": "EMAIL OMBRANT; AEMAIL OMBRANT",
       "definitions": [
         {
@@ -438,11 +474,31 @@
         {
           "text": "To take away the margin of.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Having the margin interrupted by a notch or shallow sinus.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Notched at the summit.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Cryst.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the edges truncated.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "emarginateemarginated": {
+    "emarginated": {
       "word": "EMARGINATE; EMARGINATED",
       "definitions": [
         {
@@ -1561,26 +1617,6 @@
       "definitions": [
         {
           "text": "Act of bringing down; depravation; deterioration. South.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "embassade": {
-      "word": "EMBASSADE",
-      "definitions": [
-        {
-          "text": "An embassy. See Ambassade. [Obs.] Shak.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "embassador": {
-      "word": "EMBASSADOR",
-      "definitions": [
-        {
-          "text": "Same as Ambassador. Stilbon, that was a wise embassadour, Was sent to Corinth. Chaucer. Myself my king's embassador will go. Dryden.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2925,11 +2961,21 @@
         "wand"
       ]
     },
-    "emblematicemblematical": {
+    "emblematic": {
       "word": "EMBLEMATIC; EMBLEMATICAL",
       "definitions": [
         {
-          "text": "Pertaining to, containing, or consisting in, an emblem; symbolic; typically representative; representing as an emblem; as, emblematic language or ornaments; a crown is emblematic of royalty;",
+          "text": "Pertaining to, containing, or consisting in, an emblem; symbolic; typically representative; representing as an emblem; as, emblematic language or ornaments; a crown is emblematic of royalty; white is emblematic of purity.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "emblematical": {
+      "word": "EMBLEMATIC; EMBLEMATICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, containing, or consisting in, an emblem; symbolic; typically representative; representing as an emblem; as, emblematic language or ornaments; a crown is emblematic of royalty; white is emblematic of purity.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3597,7 +3643,7 @@
       ],
       "relatedWords": []
     },
-    "embolismaticembolismatical": {
+    "embolismatic": {
       "word": "EMBOLISMATIC; EMBOLISMATICAL",
       "definitions": [
         {
@@ -3607,7 +3653,27 @@
       ],
       "relatedWords": []
     },
-    "embolismicembolismical": {
+    "embolismatical": {
+      "word": "EMBOLISMATIC; EMBOLISMATICAL",
+      "definitions": [
+        {
+          "text": "Embolismic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "embolismic": {
+      "word": "EMBOLISMIC; EMBOLISMICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to embolism or intercalation; intercalated; as, an embolismic year, i. e., the year in which there is intercalation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "embolismical": {
       "word": "EMBOLISMIC; EMBOLISMICAL",
       "definitions": [
         {
@@ -5042,7 +5108,27 @@
       ],
       "relatedWords": []
     },
-    "embroudeembrowdeembroyde": {
+    "embroude": {
+      "word": "EMBROUDE; EMBROWDE; EMBROYDE",
+      "definitions": [
+        {
+          "text": "To embroider; to adorn. [Obs.] Embrowded was he, as it were a mead All full of fresshe flowers, white and red. Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "embrowde": {
+      "word": "EMBROUDE; EMBROWDE; EMBROYDE",
+      "definitions": [
+        {
+          "text": "To embroider; to adorn. [Obs.] Embrowded was he, as it were a mead All full of fresshe flowers, white and red. Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "embroyde": {
       "word": "EMBROUDE; EMBROWDE; EMBROYDE",
       "definitions": [
         {
@@ -5136,7 +5222,17 @@
       ],
       "relatedWords": []
     },
-    "embryologicembryological": {
+    "embryologic": {
+      "word": "EMBRYOLOGIC; EMBRYOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to embryology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "embryological": {
       "word": "EMBRYOLOGIC; EMBRYOLOGICAL",
       "definitions": [
         {
@@ -5235,7 +5331,17 @@
       ],
       "relatedWords": []
     },
-    "embryonateembryonated": {
+    "embryonate": {
+      "word": "EMBRYONATE; EMBRYONATED",
+      "definitions": [
+        {
+          "text": "In the state of, or having, an embryonal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "embryonated": {
       "word": "EMBRYONATE; EMBRYONATED",
       "definitions": [
         {
@@ -5543,6 +5649,10 @@
       "definitions": [
         {
           "text": "Same as Emir.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An Arabian military commander, independent chieftain, or ruler of a province; also, an honorary title given to the descendants of Mohammed, in the line of his daughter Fatima; among the Turks, likewise, a title of dignity, given to certain high officials.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6122,7 +6232,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Suddenly appearing; arising unexpectedly; Protection granted in emergent danger. Burke. Emergent year (Chron.), the epoch or date from which any people begin to compute their time or dates; as, the emergent year of Christendom is that of the birth of Christ; the emergent year of the United",
+          "text": "Suddenly appearing; arising unexpectedly; Protection granted in emergent danger. Burke. Emergent year (Chron.), the epoch or date from which any people begin to compute their time or dates; as, the emergent year of Christendom is that of the birth of Christ; the emergent year of the United States is that of the declaration of their independence.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6234,7 +6344,17 @@
         "visiting professor"
       ]
     },
-    "emerodsemeroids": {
+    "emerods": {
+      "word": "EMERODS; EMEROIDS",
+      "definitions": [
+        {
+          "text": "Hemorrhoids; piles; tumors; boils. [R.] Deut. xxviii. 27.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "emeroids": {
       "word": "EMERODS; EMEROIDS",
       "definitions": [
         {
@@ -6399,6 +6519,16 @@
         "wash"
       ]
     },
+    "emetical": {
+      "word": "EMETICAL",
+      "definitions": [
+        {
+          "text": "Inducing to vomit; producing vomiting; emetic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "emetine": {
       "word": "EMETINE",
       "definitions": [
@@ -6419,7 +6549,17 @@
       ],
       "relatedWords": []
     },
-    "emeuemew": {
+    "emeu": {
+      "word": "EMEU; EMEW",
+      "definitions": [
+        {
+          "text": "See Emu.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "emew": {
       "word": "EMEU; EMEW",
       "definitions": [
         {
@@ -7147,7 +7287,7 @@
         "worthily"
       ]
     },
-    "emiremeer": {
+    "emir": {
       "word": "EMIR; EMEER",
       "definitions": [
         {
@@ -7155,9 +7295,56 @@
           "partOfSpeech": "noun"
         }
       ],
+      "relatedWords": [
+        "Esquire",
+        "Great Mogul",
+        "Master",
+        "Mister",
+        "Mogul",
+        "Muslim rulers",
+        "Prinz",
+        "Sir",
+        "atheling",
+        "caliph",
+        "cham",
+        "crown prince",
+        "effendi",
+        "hakim",
+        "heir apparent",
+        "heir presumptive",
+        "imam",
+        "khan",
+        "king",
+        "knez",
+        "mirza",
+        "nawab",
+        "nizam",
+        "prince",
+        "prince consort",
+        "prince regent",
+        "princeling",
+        "princes of India",
+        "sahib",
+        "shahzada",
+        "sheikh",
+        "sherif",
+        "sirdar",
+        "sire",
+        "sirrah",
+        "sultan"
+      ]
+    },
+    "emirship": {
+      "word": "EMIRSHIP; EMEERSHIP",
+      "definitions": [
+        {
+          "text": "The rank or office of an Emir.",
+          "partOfSpeech": "noun"
+        }
+      ],
       "relatedWords": []
     },
-    "emirshipemeership": {
+    "emeership": {
       "word": "EMIRSHIP; EMEERSHIP",
       "definitions": [
         {
@@ -7733,7 +7920,17 @@
       ],
       "relatedWords": []
     },
-    "emongemongst": {
+    "emong": {
+      "word": "EMONG; EMONGST",
+      "definitions": [
+        {
+          "text": ", (prep. Among. [Obs.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "emongst": {
       "word": "EMONG; EMONGST",
       "definitions": [
         {
@@ -8027,6 +8224,46 @@
         }
       ],
       "relatedWords": []
+    },
+    "emotive": {
+      "word": "EMOTIVE",
+      "definitions": [
+        {
+          "text": "Attended by, or having the character of, emotion. H. Brooke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "affecting",
+        "affectional",
+        "affective",
+        "demonstrative",
+        "emotiometabolic",
+        "emotiomotor",
+        "emotional",
+        "emotionalistic",
+        "emotiovascular",
+        "feeling",
+        "glandular",
+        "gut",
+        "hammy",
+        "histrionic",
+        "hysteric",
+        "melodramatic",
+        "moving",
+        "nonrational",
+        "of soul",
+        "overdemonstrative",
+        "overemotional",
+        "pathetic",
+        "sensational",
+        "sensationalistic",
+        "soulful",
+        "theatrical",
+        "touching",
+        "unreasoning",
+        "visceral"
+      ]
     },
     "emotiveness": {
       "word": "EMOTIVENESS",
@@ -8543,7 +8780,93 @@
         "underscore"
       ]
     },
-    "emphaticemphatical": {
+    "emphatic": {
+      "word": "EMPHATIC; EMPHATICAL",
+      "definitions": [
+        {
+          "text": "Uttered with emphasis; made prominent and impressive by a peculiar stress of voice; laying stress; deserving of stress or emphasis; forcible; impressive; strong; as, to remonstrate in am emphatic manner; an emphatic word; an emphatic tone; emphatic reasoning.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Striking the sense; attracting special attention; impressive; forcible. \"Emphatical colors.\" Boyle. \"Emphatical evils.\" Bp. Reynolds. important; special; significant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "absolute",
+        "accented",
+        "accentuated",
+        "affirmative",
+        "affirmatory",
+        "aggressive",
+        "ardent",
+        "assertative",
+        "assertional",
+        "assertive",
+        "burning",
+        "categorical",
+        "certain",
+        "decided",
+        "declarative",
+        "declaratory",
+        "definite",
+        "definitive",
+        "determined",
+        "direct",
+        "distinct",
+        "dogged",
+        "dogmatic",
+        "earnest",
+        "emphasized",
+        "energetic",
+        "enthusiastic",
+        "exciting",
+        "explicit",
+        "express",
+        "fervent",
+        "fiery",
+        "firm",
+        "forceful",
+        "forcible",
+        "glowing",
+        "impassioned",
+        "in red letters",
+        "incisive",
+        "insistent",
+        "intense",
+        "italicized",
+        "marked",
+        "passionate",
+        "peremptory",
+        "pointed",
+        "positive",
+        "predicational",
+        "predicative",
+        "pronounced",
+        "provoking",
+        "punctuated",
+        "resolute",
+        "resounding",
+        "specific",
+        "starred",
+        "stimulating",
+        "stirring",
+        "stressed",
+        "strong",
+        "sure",
+        "unambiguous",
+        "uncompromising",
+        "underlined",
+        "underscored",
+        "unequivocal",
+        "unmistakable",
+        "urgent",
+        "vehement",
+        "vigorous",
+        "warm"
+      ]
+    },
+    "emphatical": {
       "word": "EMPHATIC; EMPHATICAL",
       "definitions": [
         {
@@ -8952,11 +9275,19 @@
         {
           "text": "One who confines himself to applying the results of mere experience or his own observation; especially, in medicine, one who deviates from the rules of science and regular practice; an ignorant and unlicensed pretender; a quack; a charlatan. Among the Greek physicians, those who founded their practice on experience called themselves empirics. Krauth-Fleming. Swallow down opinions as silly people do empirics' pills. Locke.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, or founded upon, experiment or experience; depending upon the observation of phenomena; versed in experiments. In philosophical language, the term empirical means simply what belongs to or is the product of experience or observation. Sir W. Hamilton. The village carpenter . . . lays out his work by empirical rules learnt in his apprenticeship. H. Spencer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Depending upon experience or observation alone, without due regard to science and theory; -- said especially of medical practice, remedies, etc.; wanting in science and deep insight; as, empiric skill, remedies. Empirical formula. (Chem.) See under Formula.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "empiricempirical": {
+    "empirical": {
       "word": "EMPIRIC; EMPIRICAL",
       "definitions": [
         {
@@ -8968,7 +9299,73 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Cyrenaic",
+        "Eleatic",
+        "Epicurean",
+        "Megarian",
+        "Stoic",
+        "animist",
+        "animistic",
+        "atomistic",
+        "cosmotheistic",
+        "cut-and-try",
+        "eclectic",
+        "eudaemonistic",
+        "existential",
+        "experiential",
+        "experimental",
+        "factual",
+        "hedonic",
+        "hedonist",
+        "hedonistic",
+        "heuristic",
+        "hit-or-miss",
+        "humanist",
+        "humanistic",
+        "idealistic",
+        "instrumentalist",
+        "materialistic",
+        "mechanistic",
+        "metaphysical",
+        "monistic",
+        "naturalistic",
+        "nominalist",
+        "observed",
+        "panlogistical",
+        "pantheistic",
+        "pilot",
+        "positivist",
+        "positivistic",
+        "practical",
+        "pragmatic",
+        "pragmatist",
+        "probationary",
+        "probative",
+        "probatory",
+        "proving",
+        "provisional",
+        "rationalistic",
+        "realist",
+        "realistic",
+        "scholastic",
+        "sensationalistic",
+        "syncretistic",
+        "tentative",
+        "test",
+        "testing",
+        "theistic",
+        "transcendentalist",
+        "transcendentalistic",
+        "trial",
+        "trial-and-error",
+        "trying",
+        "utilitarian",
+        "verificatory",
+        "vitalistic",
+        "voluntarist",
+        "voluntaristic"
+      ]
     },
     "empirically": {
       "word": "EMPIRICALLY",
@@ -9814,7 +10211,17 @@
       ],
       "relatedWords": []
     },
-    "emporeticemporetical": {
+    "emporetic": {
+      "word": "EMPORETIC; EMPORETICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to an emporium; relating to merchandise. [Obs.] Johnson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "emporetical": {
       "word": "EMPORETIC; EMPORETICAL",
       "definitions": [
         {
@@ -10904,7 +11311,17 @@
       ],
       "relatedWords": []
     },
-    "empyreumaticempyreumatical": {
+    "empyreumatic": {
+      "word": "EMPYREUMATIC; EMPYREUMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to empyreuma; as, an empyreumatic odor. Empyreumatic oils, oils obtained by distilling various organic substances at high temperatures. Brande & C.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "empyreumatical": {
       "word": "EMPYREUMATIC; EMPYREUMATICAL",
       "definitions": [
         {
@@ -11332,46 +11749,6 @@
         {
           "text": "A group of chelonians which comprises many species of fresh- water tortoises and terrapins.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "emayakintodmagtosmahtgmachticelmattrgoth": {
-      "word": "E. may; akin to D. magt, OS. maht, G. macht, Icel. mattr, Goth.",
-      "definitions": [
-        {
-          "text": "Force or power of any kind, whether of body or mind; energy or intensity of purpose, feeling, or action; means or resources to effect an object; strength; force; power; ability; capacity. What so strong, But wanting rest, will also want of might Spenser. Thou shalt love the Lord thy God with all thine heart, and with all thy soul, and with all thy might. Deut. vi. 5. With might and main. See under 2d Main.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "emptytobefreeorunoccupiedtohaveleisurealsovocareakin": {
-      "word": "empty, to be free or unoccupied, to have leisure, also vocare; akin",
-      "definitions": [
-        {
-          "text": "Deprived of contents; not filled; empty; as, a vacant room. Stuffs out his vacant garments with his form. Shak. Being of those virtues vacant. Shak. There is no fireside, howsoe'er defended, But has one vacant chair. Longfellow.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Unengaged with business or care; unemployed; unoccupied; disengaged; free; as, vacant hours. Religion is the interest of all; but philosophy of those . . . at leisure, and vacant from the affairs of the world. Dr. H. More. There was not a minute of the day which he left vacant. Bp. Fell.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Not filled or occupied by an incumbent, possessor, or officer; as, a vacant throne; a vacant parish. Special dignities which vacant lie For thy best use and wearing. Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Empty of thought; thoughtless; not occupied with study or reflection; as, a vacant mind. The duke had a pleasant and vacant face. Sir H. Wotton. When on my couch I lie In vacant or in pensive mood. Wordsworth.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Abandoned; having no heir, possessor, claimant, or occupier; as, a vacant estate. Bouvier. Vacant succession (Law), one that is claimed by no person, or where all the heirs are unknown, or where all the known heirs to it have renounced it. Burrill. uncrowded; idle. an empty room, or an empty noddle. Vacant adds the idea of having been previously filled, or intended to be filled or occupied; as, a vacant seat at table; a vacant office; vacant hours. When we speak of a vacant look or a vacant mind, we imply the absence of the intelligence naturally to be expected there.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

@@ -243,7 +243,7 @@
       "word": "REFERENTIAL",
       "definitions": [
         {
-          "text": "Containing a reference; pointing to something out of itself;",
+          "text": "Containing a reference; pointing to something out of itself; as, notes for referential use.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -263,20 +263,6 @@
         {
           "text": "To ferment, or cause to ferment, again. Blackmore.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "referredtothethinkingsubjecttheegoobjectivewhatbelongsto": {
-      "word": "referred to the thinking subject, the ego; objective, what belongs to",
-      "definitions": [
-        {
-          "text": "(Lit. & Art)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Modified by, or making prominent, the individuality of a writer or an artist; as, a subjective drama or painting; a subjective writer. sensations occurring when stimuli due to internal causes excite the nervous apparatus of the sense organs, as when a person imagines he",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -361,7 +347,7 @@
       "word": "REFINED",
       "definitions": [
         {
-          "text": "Freed from impurities or alloy; purifed; polished; cultured; delicate; as; refined gold; refined language; refined sentiments.",
+          "text": "Freed from impurities or alloy; purifed; polished; cultured; delicate; as; refined gold; refined language; refined sentiments. Refined wits who honored poesy with their pens. Peacham.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -597,6 +583,10 @@
         {
           "text": "(Gram.)",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Reflexive; reciprocal.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -737,7 +727,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having for its direct object a pronoun which refers to the agent or subject as its antecedent; -- said of certain verbs; as, the witness perjured himself; I bethought myself. Applied also to",
+          "text": "Having for its direct object a pronoun which refers to the agent or subject as its antecedent; -- said of certain verbs; as, the witness perjured himself; I bethought myself. Applied also to pronouns of this class; reciprocal; reflective.",
           "partOfSpeech": "adjective"
         },
         {
@@ -817,7 +807,17 @@
       ],
       "relatedWords": []
     },
-    "refluencerefluency": {
+    "refluence": {
+      "word": "REFLUENCE; REFLUENCY",
+      "definitions": [
+        {
+          "text": "The quality of being refluent; a flowing back.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "refluency": {
       "word": "REFLUENCE; REFLUENCY",
       "definitions": [
         {
@@ -1437,7 +1437,7 @@
       "word": "REFRANGIBLE",
       "definitions": [
         {
-          "text": "Capable of being refracted, or turned out of a direct course,",
+          "text": "Capable of being refracted, or turned out of a direct course, in passing from one medium to another, as rays of light.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1453,23 +1453,17 @@
       ],
       "relatedWords": []
     },
-    "refreschircfofrafraischirrafreschirfrafraprefrere": {
-      "word": "refreschir (cf. OF. rafraischir, rafreschir, F. rafra); pref. re- re-",
-      "definitions": [
-        {
-          "text": "To make fresh again; to restore strength, spirit, animation, or the like, to; to relieve from fatigue or depression; to reinvigorate; to enliven anew; to reanimate; as, sleep refreshes the body and the mind. Chaucer. Foer they have refreshed my spirit and yours. 1 Cor. xvi. 18. And labor shall refresh itself with hope. Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To make as if new; to repair; to restore. The rest refresh the scaly snakes that folDryden. To refresh the memory, to quicken or strengthen it, as by a reference, review, memorandum, or suggestion. renew; restore; recreate; enliven; cheer.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "refresh": {
       "word": "REFRESH",
       "definitions": [
+        {
+          "text": "To make fresh again; to restore strength, spirit, animation, or the like, to; to relieve from fatigue or depression; to reinvigorate; to enliven anew; to reanimate; as, sleep refreshes the body and the mind. Chaucer. Foer they have refreshed my spirit and yours. 1 Cor. xvi. 18. And labor shall refresh itself with hope. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make as if new; to repair; to restore. The rest refresh the scaly snakes that folDryden. To refresh the memory, to quicken or strengthen it, as by a reference, review, memorandum, or suggestion. renew; restore; recreate; enliven; cheer.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "The act of refreshing. [Obs.] Daniel.",
           "partOfSpeech": "noun"
@@ -1491,6 +1485,26 @@
         {
           "text": "An extra fee paid to counsel in a case that has been adjourned from one term to another, or that is unusually protracted. Ten guineas a day is the highest refresher which a counsel can charge. London Truth.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "refreshful": {
+      "word": "REFRESHFUL",
+      "definitions": [
+        {
+          "text": "Full of power to refresh; refreshing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "refreshing": {
+      "word": "REFRESHING",
+      "definitions": [
+        {
+          "text": "Reviving; reanimating.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1691,7 +1705,17 @@
       ],
       "relatedWords": []
     },
-    "refulgencerefulgency": {
+    "refulgence": {
+      "word": "REFULGENCE; REFULGENCY",
+      "definitions": [
+        {
+          "text": "The quality of being refulgent; brilliancy; splender; radiance.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "refulgency": {
       "word": "REFULGENCE; REFULGENCY",
       "definitions": [
         {
@@ -1705,7 +1729,7 @@
       "word": "REFULGENT",
       "definitions": [
         {
-          "text": "Casting a bright light; radiant; brilliant; resplendent;",
+          "text": "Casting a bright light; radiant; brilliant; resplendent; shining; splendid; as, refulgent beams. So conspicuous and refulgent a truth. Boyle.",
           "partOfSpeech": "adjective"
         }
       ],

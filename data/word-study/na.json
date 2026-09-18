@@ -1,68 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "naballanenginebeambunchblasttricktauntscoffasa": {
-      "word": "n., a ball, an engine beam, bunch, blast, trick, taunt, scoff; as, a",
-      "definitions": [
-        {
-          "text": "Anything that hangs so as to play loosely, or with a short abrupt motion, as at the end of a string; a pendant; as, the bob at the end of a kite's tail. In jewels dressed and at each ear a bob. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A knot of worms, or of rags, on a string, used in angling, as for eels; formerly, a worm suitable for bait. Or yellow bobs, turned up before the plow, Are chiefest baits, with cork and lead enow. Lauson.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A small piece of cork or light wood attached to a fishing line to show when a fish is biting; a float.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The ball or heavy part of a pendulum; also, the ball or weight at the end of a plumb line.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A small wheel, made of leather, with rounded edges, used in polishing spoons, etc.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A short, jerking motion; act of bobbing; as, a bob of the head.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Steam Engine)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A working beam.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A knot or short curl of hair; also, a bob wig. A plain brown bob he wore. Shenstone.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A peculiar mode of ringing changes on bells.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The refrain of a song. To bed, to bed, will be the bob of the song. L'Estrange.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A blow; a shake or jog; a rap, as with the fist.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A jeer or flout; a sharp jest or taunt; a trick. He that a fool doth very wisely hit, Doth very foolishly, although he smart, Not to seem senseless of the bob. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A shilling. [Slang, Eng.] Dickens.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "na": {
       "word": "NA",
       "definitions": [
@@ -199,7 +137,17 @@
       ],
       "relatedWords": []
     },
-    "nadnadde": {
+    "nad": {
+      "word": "NAD; NADDE",
+      "definitions": [
+        {
+          "text": "Had not. [Obs.] Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "nadde": {
       "word": "NAD; NADDE",
       "definitions": [
         {
@@ -609,6 +557,16 @@
       ],
       "relatedWords": []
     },
+    "nake": {
+      "word": "NAKE",
+      "definitions": [
+        {
+          "text": ",v.t. To make naked. [Obs.] Chaucer. Come, be ready, nake your swords. Old Play.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "naked": {
       "word": "NAKED",
       "definitions": [
@@ -923,7 +881,17 @@
       ],
       "relatedWords": []
     },
-    "nandounandu": {
+    "nandou": {
+      "word": "NANDOU; NANDU",
+      "definitions": [
+        {
+          "text": "Any one of three species of South American ostriches of the genera Rhea and Pterocnemia. See Rhea. [Written also nandow.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nandu": {
       "word": "NANDOU; NANDU",
       "definitions": [
         {
@@ -1151,7 +1119,17 @@
       ],
       "relatedWords": []
     },
-    "naphthalinnaphthaline": {
+    "naphthalin": {
+      "word": "NAPHTHALIN; NAPHTHALINE",
+      "definitions": [
+        {
+          "text": "See Naphthalene.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "naphthaline": {
       "word": "NAPHTHALIN; NAPHTHALINE",
       "definitions": [
         {
@@ -1251,7 +1229,7 @@
       ],
       "relatedWords": []
     },
-    "napieriannaperian": {
+    "napierian": {
       "word": "NAPIERIAN; NAPERIAN",
       "definitions": [
         {
@@ -1261,7 +1239,27 @@
       ],
       "relatedWords": []
     },
-    "napier'sbonesnapier'srods": {
+    "naperian": {
+      "word": "NAPIERIAN; NAPERIAN",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or discovered by, Napier, or Naper. Naperian logarithms. See under Logarithms.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "napier'sbones": {
+      "word": "NAPIER'S BONES; NAPIER'S RODS",
+      "definitions": [
+        {
+          "text": "A set of rods, made of bone or other material, each divided into nine spaces, and containing the numbers of a column of the multiplication table; -- a contrivance of Baron Napier, the inventor of logarithms, for facilitating the operations of multiplication and division.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "napier'srods": {
       "word": "NAPIER'S BONES; NAPIER'S RODS",
       "definitions": [
         {
@@ -1491,8 +1489,22 @@
       "word": "NARCOTIC",
       "definitions": [
         {
+          "text": "Having the properties of a narcotic; operating as a narcotic.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A drug which, in medicinal doses, generally allays morbid susceptibility, relieves pain, and produces sleep; but which, in poisonous doses, produces stupor, coma, or convulsions, and, when given in sufficient quantity, causes death. The best examples are opium (with morphine), belladonna (with atropine), and conium. Nercotykes and opye (opium) of Thebes. Chaucer.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "narcotical": {
+      "word": "NARCOTICAL",
+      "definitions": [
+        {
+          "text": "Narcotic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1603,7 +1615,17 @@
       ],
       "relatedWords": []
     },
-    "nargilenargileh": {
+    "nargile": {
+      "word": "NARGILE; NARGILEH",
+      "definitions": [
+        {
+          "text": "An apparatus for smoking tobacco. It has a long flexible tube, and the smoke is drawn through water.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nargileh": {
       "word": "NARGILE; NARGILEH",
       "definitions": [
         {
@@ -1789,7 +1811,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Formed (as a vowel) by a close position of some part of the tongue in relation to the palate; or (according to Bell) by a tense condition of the pharynx; -- distinguished from wide; as e (eve) and oo (food), etc., from ì (ìll) and oo (foot), etc. See Guide to Pronunciation, § 13. participles and adjectives, forming compounds of obvious signification; as, narrow-bordered, narrow-brimmed, narrow-breasted, narrow-edged, narrow-faced, narrow-headed, narrow-leaved, narrow-",
+          "text": "Formed (as a vowel) by a close position of some part of the tongue in relation to the palate; or (according to Bell) by a tense condition of the pharynx; -- distinguished from wide; as e (eve) and oo (food), etc., from ì (ìll) and oo (foot), etc. See Guide to Pronunciation, § 13. participles and adjectives, forming compounds of obvious signification; as, narrow-bordered, narrow-brimmed, narrow-breasted, narrow-edged, narrow-faced, narrow-headed, narrow-leaved, narrow- pointed, narrow-souled, narrow-sphered, etc. Narrow gauge. (Railroad) See Note under Gauge, n., 6.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1881,6 +1903,16 @@
         {
           "text": "Sparingly; parsimoniously.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "narrowminded": {
+      "word": "NARROW-MINDED",
+      "definitions": [
+        {
+          "text": "Of narrow mental scope; illiberal; mean.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2201,7 +2233,17 @@
       ],
       "relatedWords": []
     },
-    "nasopalatalnasopalatine": {
+    "nasopalatal": {
+      "word": "NASOPALATAL; NASOPALATINE",
+      "definitions": [
+        {
+          "text": "Connected with both the nose and the palate; as, the nasopalatine or incisor, canal connecting the mouth and the nasal chamber in some animals; the nasopalatine nerve.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nasopalatine": {
       "word": "NASOPALATAL; NASOPALATINE",
       "definitions": [
         {
@@ -2249,7 +2291,7 @@
       "word": "NASSA",
       "definitions": [
         {
-          "text": "Any species of marine gastropods, of the genera Nassa, Tritia, and other allied genera of the family Nassidæ; a dog whelk. See",
+          "text": "Any species of marine gastropods, of the genera Nassa, Tritia, and other allied genera of the family Nassidæ; a dog whelk. See Illust. under Gastropoda.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2391,7 +2433,17 @@
       ],
       "relatedWords": []
     },
-    "natalitialnatalitious": {
+    "natalitial": {
+      "word": "NATALITIAL; NATALITIOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to one's birth or birthday, or one's nativity. Cartwright.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "natalitious": {
       "word": "NATALITIAL; NATALITIOUS",
       "definitions": [
         {
@@ -3019,7 +3071,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "(Mus.) (a) Produced by natural organs, as those of the human throat, in distinction from instrumental music. (b) of or pertaining to a key which has neither a flat nor a sharp for its signature, as the key of C major. (c) Applied to an air or modulation of harmony which moves by easy and smooth transitions, digressing but little from the original key. Moore (Encyc. of Music). Natural day, the space of twenty-four hours. Chaucer. of nature as a whole, incuding the sciences of botany, zoölogy, geology, mineralogy, paleontology, chemistry, and physics. In recent usage the term is often restricted to the sciences of botany and zoölogy collectively, and sometimes to the science of zoology alone. wrong, which is native in mankind, as distinguished from specifically revealed divine law, and formulated human law. relative keys. in modern usage, that branch of physical science, commonly called physics, which treats of the phenomena and laws of matter and considers those effects only which are unaccompanied by any change of a chemical nature; -- contrasted with mental and moral philosophy. sharps. Model would be a preferable term, as less likely to mislead, the so-called artificial scales (scales represented by the use of flats and sharps) being equally natural with the so-called natural scale -- Natural science, natural history, in its broadest sense; -- used especially in contradistinction to mental or moral science. analogous, in its operation and results, to designed selection in breeding plants and animals, and resulting in the survival of the fittest. The theory of natural selection supposes that this has been brought about mainly by gradual changes of environment which have led to corresponding changes of structure, and that those forms which have become so modified as to be best adapted to the changed environment have tended to survive and leave similarly adapted descendants, while those less perfectly adapted have tended to die out though lack of fitness for the environment, thus resulting in the survival of the fittest. See Darwinism. affinities, as shown in the structure of all parts of the organisms, and by their embryology. It should be borne in mind that the natural system of botany is natural only in the constitution of its genera, tribes, orders, etc., and in its grand divisions. Gray. science which treats of those evidences of the existence and attributes of the Supreme Being which are exhibited in nature; --",
+          "text": "(Mus.) (a) Produced by natural organs, as those of the human throat, in distinction from instrumental music. (b) of or pertaining to a key which has neither a flat nor a sharp for its signature, as the key of C major. (c) Applied to an air or modulation of harmony which moves by easy and smooth transitions, digressing but little from the original key. Moore (Encyc. of Music). Natural day, the space of twenty-four hours. Chaucer. of nature as a whole, incuding the sciences of botany, zoölogy, geology, mineralogy, paleontology, chemistry, and physics. In recent usage the term is often restricted to the sciences of botany and zoölogy collectively, and sometimes to the science of zoology alone. wrong, which is native in mankind, as distinguished from specifically revealed divine law, and formulated human law. relative keys. in modern usage, that branch of physical science, commonly called physics, which treats of the phenomena and laws of matter and considers those effects only which are unaccompanied by any change of a chemical nature; -- contrasted with mental and moral philosophy. sharps. Model would be a preferable term, as less likely to mislead, the so-called artificial scales (scales represented by the use of flats and sharps) being equally natural with the so-called natural scale -- Natural science, natural history, in its broadest sense; -- used especially in contradistinction to mental or moral science. analogous, in its operation and results, to designed selection in breeding plants and animals, and resulting in the survival of the fittest. The theory of natural selection supposes that this has been brought about mainly by gradual changes of environment which have led to corresponding changes of structure, and that those forms which have become so modified as to be best adapted to the changed environment have tended to survive and leave similarly adapted descendants, while those less perfectly adapted have tended to die out though lack of fitness for the environment, thus resulting in the survival of the fittest. See Darwinism. affinities, as shown in the structure of all parts of the organisms, and by their embryology. It should be borne in mind that the natural system of botany is natural only in the constitution of its genera, tribes, orders, etc., and in its grand divisions. Gray. science which treats of those evidences of the existence and attributes of the Supreme Being which are exhibited in nature; -- distinguished from revealed religion. See Quotation under Natural, a., 3. etc.; -- so called as being uttered in the easiest open position of the mouth organs. See Neutral vowel, under Neutral and Guide to Pronunciation, § 17.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3379,7 +3431,17 @@
       ],
       "relatedWords": []
     },
-    "nauheimtreatmentnauheimbath": {
+    "nauheimtreatment": {
+      "word": "NAUHEIM TREATMENT; NAUHEIM BATH",
+      "definitions": [
+        {
+          "text": "Orig., a method of therapeutic treatment administered, esp. for chronic diseases of the curculatory system, at Bad Nauheim, Germany, by G. Schott, consisting in baths in the natural mineral waters of that place, which are charged with carbonic acid, and the use of a graduated course of rest, physical exercises, massage, etc.; hence, any similar treatment using waters artificially charged with the essential ingredients of the natural mineral waters of Bad Nauheim. Hence, Nauheim bath, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "nauheimbath": {
       "word": "NAUHEIM TREATMENT; NAUHEIM BATH",
       "definitions": [
         {
@@ -3499,7 +3561,7 @@
       "word": "NAUSEOUS",
       "definitions": [
         {
-          "text": "Causing, or fitted to cause, nausea; sickening; loathsome;",
+          "text": "Causing, or fitted to cause, nausea; sickening; loathsome; disgusting; exciting abhorrence; as, a nauseous drug or medicine. The nauseousness of such company disgusts a reasonable man. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3781,7 +3843,7 @@
       "word": "NAVIGABLE",
       "definitions": [
         {
-          "text": "Capable of being navigated; deep enough and wide enough to afford passage to vessels; as, a navigable river. far as the tide ebbs and flows in it. This is also the doctrine in several of the United tates. In other States, the doctrine of thje civil law prevails, which is, that a navigable river is a river capable of being navigated, in the common sense of the term. Kent.",
+          "text": "Capable of being navigated; deep enough and wide enough to afford passage to vessels; as, a navigable river. far as the tide ebbs and flows in it. This is also the doctrine in several of the United tates. In other States, the doctrine of thje civil law prevails, which is, that a navigable river is a river capable of being navigated, in the common sense of the term. Kent. Burrill.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4037,36 +4099,6 @@
         {
           "text": "A Nazarite.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "nawreckwrakentorejectthrowofficelrekathingdrifted": {
-      "word": "n., a wreck, wraken to reject, throw off, Icel. rek a thing drifted",
-      "definitions": [
-        {
-          "text": "The destruction or injury of a vessel by being cast on shore, or on rocks, or by being disabled or sunk by the force of winds or waves; shipwreck. Hard and obstinate As is a rock amidst the raging floods, 'Gainst which a ship, of succor desolate, Doth suffer wreck, both of herself and goods. Spenser.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Destruction or injury of anything, especially by violence; ruin; as, the wreck of a railroad train. The wreck of matter and the crush of worlds. Addison. Its intellectual life was thus able to go on amidst the wreck of its political life. J. R. Green.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The ruins of a ship stranded; a ship dashed against rocks or land, and broken, or otherwise rendered useless, by violence and fracture; as, they burned the wreck.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The remain of anything ruined or fatally injured. To the fair haven of my native home, The wreck of what I was, fatigued I come. Cowper.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Goods, etc., which, after a shipwreck, are cast upon the land by the sea. Bouvier.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

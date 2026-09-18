@@ -25,7 +25,17 @@
       ],
       "relatedWords": []
     },
-    "demagogicdemagogical": {
+    "demagogic": {
+      "word": "DEMAGOGIC; DEMAGOGICAL",
+      "definitions": [
+        {
+          "text": "Relating to, or like, a demagogue; factious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "demagogical": {
       "word": "DEMAGOGIC; DEMAGOGICAL",
       "definitions": [
         {
@@ -1102,6 +1112,72 @@
       ],
       "relatedWords": []
     },
+    "demented": {
+      "word": "DEMENTED",
+      "definitions": [
+        {
+          "text": "Insane; mad; of unsound mind.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abnormal",
+        "bereft of reason",
+        "brainsick",
+        "crackbrained",
+        "cracked",
+        "crazed",
+        "crazy",
+        "daft",
+        "delirious",
+        "deluded",
+        "deprived of reason",
+        "deranged",
+        "disoriented",
+        "distraught",
+        "flighty",
+        "frenzied",
+        "hallucinated",
+        "hysterical",
+        "insane",
+        "irrational",
+        "loco",
+        "lunatic",
+        "mad",
+        "maddened",
+        "maniac",
+        "manic",
+        "mazed",
+        "mental",
+        "mentally deficient",
+        "meshuggah",
+        "moon-struck",
+        "non compos",
+        "non compos mentis",
+        "not all there",
+        "not right",
+        "odd",
+        "of unsound mind",
+        "off",
+        "psycho",
+        "queer",
+        "reasonless",
+        "senseless",
+        "sick",
+        "stark-mad",
+        "stark-staring mad",
+        "strange",
+        "tetched",
+        "touched",
+        "unbalanced",
+        "unhinged",
+        "unsane",
+        "unsettled",
+        "unsound",
+        "wandering",
+        "witless"
+      ]
+    },
     "dementia": {
       "word": "DEMENTIA",
       "definitions": [
@@ -1162,6 +1238,16 @@
         "unsoundness of mind",
         "witlessness"
       ]
+    },
+    "demephitize": {
+      "word": "DEMEPHITIZE",
+      "definitions": [
+        {
+          "text": "To purify from mephitic.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
     },
     "demerge": {
       "word": "DEMERGE",
@@ -1682,7 +1768,17 @@
       ],
       "relatedWords": []
     },
-    "demireliefdemirelievo": {
+    "demirelief": {
+      "word": "DEMIRELIEF; DEMIRELIEVO",
+      "definitions": [
+        {
+          "text": "Half relief. See Demi-rilievo.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "demirelievo": {
       "word": "DEMIRELIEF; DEMIRELIEVO",
       "definitions": [
         {
@@ -2416,7 +2512,7 @@
       "word": "DEMOGRAPHY",
       "definitions": [
         {
-          "text": "The study of races, as to births, marriages, mortality, health,",
+          "text": "The study of races, as to births, marriages, mortality, health, etc.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2704,8 +2800,16 @@
       "relatedWords": []
     },
     "demoniac": {
-      "word": "DEMONIAC",
+      "word": "DEMONIAC; DEMONIACAL",
       "definitions": [
+        {
+          "text": "Pertaining to, or characteristic of, a demon or evil spirit; devilish; as, a demoniac being; demoniacal practices. Sarcastic, demoniacal laughter. Thackeray.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Influenced or produced by a demon or evil spirit; as, demoniac or demoniacal power. \"Demoniac frenzy.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A human being possessed by a demon or evil spirit; one whose faculties are directly controlled by a demon. The demoniac in the gospel was sometimes cast into the fire. Bates.",
           "partOfSpeech": "noun"
@@ -2757,17 +2861,7 @@
         "weirdo"
       ]
     },
-    "demoniacally": {
-      "word": "DEMONIACALLY",
-      "definitions": [
-        {
-          "text": "In a demoniacal manner.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "demoniacdemoniacal": {
+    "demoniacal": {
       "word": "DEMONIAC; DEMONIACAL",
       "definitions": [
         {
@@ -2777,6 +2871,118 @@
         {
           "text": "Influenced or produced by a demon or evil spirit; as, demoniac or demoniacal power. \"Demoniac frenzy.\" Milton.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Draconian",
+        "Mephistophelian",
+        "Tartarean",
+        "abandoned",
+        "amok",
+        "animal",
+        "anthropophagous",
+        "atrocious",
+        "barbaric",
+        "barbarous",
+        "beastly",
+        "bellowing",
+        "berserk",
+        "bestial",
+        "bloodthirsty",
+        "bloody",
+        "bloody-minded",
+        "brutal",
+        "brutalized",
+        "brute",
+        "brutish",
+        "cannibalistic",
+        "carried away",
+        "cruel",
+        "cruel-hearted",
+        "cursed",
+        "damnable",
+        "delirious",
+        "demoniac",
+        "demonic",
+        "demonish",
+        "demonlike",
+        "devil-like",
+        "devilish",
+        "diabolic",
+        "distracted",
+        "ecstatic",
+        "enraptured",
+        "execrable",
+        "fell",
+        "feral",
+        "ferocious",
+        "fiendish",
+        "fiendlike",
+        "fierce",
+        "frantic",
+        "frenzied",
+        "fulminating",
+        "furious",
+        "ghoulish",
+        "haggard",
+        "hellborn",
+        "hellish",
+        "hog-wild",
+        "howling",
+        "hysterical",
+        "in a transport",
+        "in hysterics",
+        "infernal",
+        "inhuman",
+        "inhumane",
+        "intoxicated",
+        "mad",
+        "madding",
+        "maniac",
+        "murderous",
+        "ogreish",
+        "orgasmic",
+        "orgiastic",
+        "possessed",
+        "rabid",
+        "raging",
+        "ramping",
+        "ranting",
+        "raving",
+        "ravished",
+        "roaring",
+        "running mad",
+        "ruthless",
+        "sadistic",
+        "sanguinary",
+        "sanguineous",
+        "satanic",
+        "savage",
+        "sharkish",
+        "slavering",
+        "storming",
+        "subhuman",
+        "transported",
+        "truculent",
+        "unchristian",
+        "uncivilized",
+        "uncontrollable",
+        "ungodly",
+        "unhuman",
+        "vicious",
+        "violent",
+        "wild",
+        "wild-eyed",
+        "wild-looking",
+        "wolfish"
+      ]
+    },
+    "demoniacally": {
+      "word": "DEMONIACALLY",
+      "definitions": [
+        {
+          "text": "In a demoniacal manner.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -2961,7 +3167,17 @@
       ],
       "relatedWords": []
     },
-    "demonologicdemonological": {
+    "demonologic": {
+      "word": "DEMONOLOGIC; DEMONOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or Pertaining to demonology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "demonological": {
       "word": "DEMONOLOGIC; DEMONOLOGICAL",
       "definitions": [
         {
@@ -4176,7 +4392,25 @@
       ],
       "relatedWords": []
     },
-    "dempsterdemster": {
+    "dempster": {
+      "word": "DEMPSTER; DEMSTER",
+      "definitions": [
+        {
+          "text": "A deemster.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(O. Scots Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An officer whose duty it was to announce the doom or sentence pronounced by the court.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "demster": {
       "word": "DEMPSTER; DEMSTER",
       "definitions": [
         {

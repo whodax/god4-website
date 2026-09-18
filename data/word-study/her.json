@@ -7,6 +7,10 @@
         {
           "text": "The form of the objective and the possessive case of the personal pronoun she; as, I saw her with her purse out. in agrees is not given, but implied. \"And what his fortune wanted, hers could mend.\" Dryden.",
           "partOfSpeech": "pronoun"
+        },
+        {
+          "text": "Of them; their. [Obs.] Piers Plowman. On here bare knees adown they fall. Chaucer.",
+          "partOfSpeech": "pronoun"
         }
       ],
       "relatedWords": [
@@ -722,7 +726,17 @@
       ],
       "relatedWords": []
     },
-    "herberghherberwe": {
+    "herbergh": {
+      "word": "HERBERGH; HERBERWE",
+      "definitions": [
+        {
+          "text": "A harbor. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "herberwe": {
       "word": "HERBERGH; HERBERWE",
       "definitions": [
         {
@@ -971,7 +985,17 @@
       ],
       "relatedWords": []
     },
-    "herboseherbous": {
+    "herbose": {
+      "word": "HERBOSE; HERBOUS",
+      "definitions": [
+        {
+          "text": "Abounding with herbs. \"Fields poetically called herbose.\" Byrom.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "herbous": {
       "word": "HERBOSE; HERBOUS",
       "definitions": [
         {
@@ -1389,7 +1413,7 @@
       ],
       "relatedWords": []
     },
-    "herdmanherdsman": {
+    "herdman": {
       "word": "HERDMAN; HERDSMAN",
       "definitions": [
         {
@@ -1398,6 +1422,66 @@
         }
       ],
       "relatedWords": []
+    },
+    "herdsman": {
+      "word": "HERDMAN; HERDSMAN",
+      "definitions": [
+        {
+          "text": "The owner or keeper of a herd or of herds; one employed in tending a herd of cattle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Gyropilot",
+        "automatic pilot",
+        "boatheader",
+        "boatsteerer",
+        "cattleman",
+        "cicerone",
+        "courier",
+        "cowboy",
+        "cowgirl",
+        "cowhand",
+        "cowherd",
+        "cowman",
+        "cowpuncher",
+        "coxswain",
+        "dragoman",
+        "drover",
+        "gaucho",
+        "goatherd",
+        "gooseboy",
+        "gooseherd",
+        "guide",
+        "guidepost",
+        "guider",
+        "helmsman",
+        "herd",
+        "herder",
+        "hogherd",
+        "horse wrangler",
+        "horseherd",
+        "mercury",
+        "navigator",
+        "pigman",
+        "pilot",
+        "pointer",
+        "puncher",
+        "river pilot",
+        "sheepherder",
+        "sheepman",
+        "shepherd",
+        "shepherdess",
+        "steerer",
+        "steersman",
+        "swanherd",
+        "swineherd",
+        "tour director",
+        "tour guide",
+        "vaquero",
+        "waddy",
+        "wrangler"
+      ]
     },
     "herdswoman": {
       "word": "HERDSWOMAN",
@@ -1410,8 +1494,12 @@
       "relatedWords": []
     },
     "here": {
-      "word": "HERE",
+      "word": "HER; HERE",
       "definitions": [
+        {
+          "text": "Of them; their. [Obs.] Piers Plowman. On here bare knees adown they fall. Chaucer.",
+          "partOfSpeech": "pronoun"
+        },
         {
           "text": "Hair. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
@@ -1487,7 +1575,21 @@
         "with us"
       ]
     },
-    "hereabouthereabouts": {
+    "hereabout": {
+      "word": "HEREA-BOUT; HEREABOUTS",
+      "definitions": [
+        {
+          "text": "About this place; in this vicinity.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Concerning this. [Obs.]",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hereabouts": {
       "word": "HEREA-BOUT; HEREABOUTS",
       "definitions": [
         {
@@ -1880,7 +1982,17 @@
       ],
       "relatedWords": []
     },
-    "heremitheremite": {
+    "heremit": {
+      "word": "HEREMIT; HEREMITE",
+      "definitions": [
+        {
+          "text": "A hermit. [Obs.] Bp. Hall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heremite": {
       "word": "HEREMIT; HEREMITE",
       "definitions": [
         {
@@ -2379,7 +2491,7 @@
       ],
       "relatedWords": []
     },
-    "heretochheretog": {
+    "heretoch": {
       "word": "HERETOCH; HERETOG",
       "definitions": [
         {
@@ -2444,6 +2556,16 @@
         "yet"
       ]
     },
+    "heretog": {
+      "word": "HERETOCH; HERETOG",
+      "definitions": [
+        {
+          "text": "The leader or commander of an army; also, a marshal. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "hereunto": {
       "word": "HEREUNTO",
       "definitions": [
@@ -2499,16 +2621,6 @@
         "wherewithal",
         "with"
       ]
-    },
-    "herhere": {
-      "word": "HER; HERE",
-      "definitions": [
-        {
-          "text": "Of them; their. [Obs.] Piers Plowman. On here bare knees adown they fall. Chaucer.",
-          "partOfSpeech": "pronoun"
-        }
-      ],
-      "relatedWords": []
     },
     "herie": {
       "word": "HERIE",
@@ -2688,7 +2800,7 @@
       ],
       "relatedWords": []
     },
-    "herlinghirling": {
+    "herling": {
       "word": "HERLING; HIRLING",
       "definitions": [
         {
@@ -2742,11 +2854,21 @@
       ],
       "relatedWords": []
     },
-    "hermaphroditichermaphroditical": {
+    "hermaphroditic": {
       "word": "HERMAPHRODITIC; HERMAPHRODITICAL",
       "definitions": [
         {
-          "text": "Partaking of the characteristics of both sexes; characterized",
+          "text": "Partaking of the characteristics of both sexes; characterized by hermaphroditism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hermaphroditical": {
+      "word": "HERMAPHRODITIC; HERMAPHRODITICAL",
+      "definitions": [
+        {
+          "text": "Partaking of the characteristics of both sexes; characterized by hermaphroditism.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2762,22 +2884,32 @@
       ],
       "relatedWords": []
     },
+    "hermeneutic": {
+      "word": "HERMENEUTIC; HERMENEUTICAL",
+      "definitions": [
+        {
+          "text": "Unfolding the signification; of or pertaining to interpretation; exegetical; explanatory; as, hermeneutic theology, or the art of expounding the Scriptures; a hermeneutic phrase.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hermeneutical": {
+      "word": "HERMENEUTIC; HERMENEUTICAL",
+      "definitions": [
+        {
+          "text": "Unfolding the signification; of or pertaining to interpretation; exegetical; explanatory; as, hermeneutic theology, or the art of expounding the Scriptures; a hermeneutic phrase.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "hermeneutically": {
       "word": "HERMENEUTICALLY",
       "definitions": [
         {
           "text": "According to the principles of interpretation; as, a verse of Scripture was examined hermeneutically.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "hermeneutichermeneutical": {
-      "word": "HERMENEUTIC; HERMENEUTICAL",
-      "definitions": [
-        {
-          "text": "Unfolding the signification; of or pertaining to interpretation; exegetical; explanatory; as, hermeneutic theology, or the art of expounding the Scriptures; a hermeneutic phrase.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2906,21 +3038,7 @@
         "runner"
       ]
     },
-    "hermetically": {
-      "word": "HERMETICALLY",
-      "definitions": [
-        {
-          "text": "In an hermetical manner; chemically. Boyle.",
-          "partOfSpeech": "adverb"
-        },
-        {
-          "text": "By fusion, so as to form an air-tight closure. completely against the passage of air or other fluid by fusing the extremity; -- sometimes less properly applied to any air-tight closure.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "hermetichermetical": {
+    "hermetic": {
       "word": "HERMETIC; HERMETICAL",
       "definitions": [
         {
@@ -2934,6 +3052,140 @@
         {
           "text": "Made perfectly close or air-tight by fusion, so that no gas or spirit can enter or escape; as, an hermetic seal. See Note under Hermetically. Hermetic art, alchemy. astrology. (b) Books which treat of universal principles, of the nature and orders of celestial beings, of medicine, and other topics.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abstruse",
+        "airtight",
+        "arcane",
+        "ballproof",
+        "bombproof",
+        "bulletproof",
+        "burglarproof",
+        "cabalistic",
+        "censored",
+        "classified",
+        "cloistered",
+        "close",
+        "closed",
+        "compact",
+        "concealed",
+        "corrosionproof",
+        "cryptic",
+        "dampproof",
+        "dark",
+        "deep",
+        "dustproof",
+        "dusttight",
+        "enigmatic",
+        "esoteric",
+        "fast",
+        "fire-resisting",
+        "fireproof",
+        "firm",
+        "flameproof",
+        "foolproof",
+        "gasproof",
+        "gastight",
+        "heavy",
+        "hermetical",
+        "hermetically sealed",
+        "hidden",
+        "holeproof",
+        "hush-hush",
+        "impervious",
+        "impervious to",
+        "latent",
+        "leakproof",
+        "lightproof",
+        "lighttight",
+        "mysterious",
+        "noiseproof",
+        "occult",
+        "oilproof",
+        "oiltight",
+        "profound",
+        "proof",
+        "proof against",
+        "punctureproof",
+        "rainproof",
+        "raintight",
+        "recluse",
+        "resistant",
+        "restricted",
+        "rustproof",
+        "sealed",
+        "secluse",
+        "seclusive",
+        "secret",
+        "sequestered",
+        "shatterproof",
+        "shellproof",
+        "shut fast",
+        "smokeproof",
+        "smoketight",
+        "smothered",
+        "snug",
+        "soundproof",
+        "staunch",
+        "stifled",
+        "stormproof",
+        "stormtight",
+        "suppressed",
+        "tight",
+        "top secret",
+        "ulterior",
+        "unbreatheable",
+        "under security",
+        "under wraps",
+        "undisclosable",
+        "undisclosed",
+        "undivulgable",
+        "undivulged",
+        "unrevealable",
+        "unrevealed",
+        "unspoken",
+        "untellable",
+        "untold",
+        "unutterable",
+        "unuttered",
+        "unwhisperable",
+        "water-repellant",
+        "waterproof",
+        "watertight",
+        "weatherproof",
+        "windproof",
+        "windtight"
+      ]
+    },
+    "hermetical": {
+      "word": "HERMETIC; HERMETICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or taught by, Hermes Trismegistus; as, hermetic philosophy. Hence: Alchemical; chemic. \"Delusions of the hermetic art.\" Burke. The alchemists, as the people were called who tried to make gold, considered themselves followers of Hermes, and often called themselves Hermetic philosophers. A. B. Buckley.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the system which explains the causes of diseases and the operations of medicine on the principles of the hermetic philosophy, and which made much use, as a remedy, of an alkali and an acid; as, hermetic medicine.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Made perfectly close or air-tight by fusion, so that no gas or spirit can enter or escape; as, an hermetic seal. See Note under Hermetically. Hermetic art, alchemy. astrology. (b) Books which treat of universal principles, of the nature and orders of celestial beings, of medicine, and other topics.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hermetically": {
+      "word": "HERMETICALLY",
+      "definitions": [
+        {
+          "text": "In an hermetical manner; chemically. Boyle.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "By fusion, so as to form an air-tight closure. completely against the passage of air or other fluid by fusing the extremity; -- sometimes less properly applied to any air-tight closure.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -3379,7 +3631,17 @@
       "word": "HERODIONES",
       "definitions": [
         {
-          "text": "A division of wading birds, including the herons, storks, and",
+          "text": "A division of wading birds, including the herons, storks, and allied forms. Called also Herodii.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heroelogist": {
+      "word": "HEROLOGIST; HEROELOGIST",
+      "definitions": [
+        {
+          "text": "One who treats of heroes. [R.] T. Warton.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3633,7 +3895,17 @@
       ],
       "relatedWords": []
     },
-    "heroicomicheroicomical": {
+    "heroicomic": {
+      "word": "HEROICOMIC; HEROICOMICAL",
+      "definitions": [
+        {
+          "text": "Combining the heroic and the ludicrous; denoting high burlesque; as, a heroicomic poem.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heroicomical": {
       "word": "HEROICOMIC; HEROICOMICAL",
       "definitions": [
         {
@@ -3844,7 +4116,7 @@
         "virtue"
       ]
     },
-    "herologistheroelogist": {
+    "herologist": {
       "word": "HEROLOGIST; HEROELOGIST",
       "definitions": [
         {
@@ -4098,7 +4370,17 @@
       ],
       "relatedWords": []
     },
-    "herpetologicherpetological": {
+    "herpetologic": {
+      "word": "HERPETOLOGIC; HERPETOLOGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to herpetology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "herpetological": {
       "word": "HERPETOLOGIC; HERPETOLOGICAL",
       "definitions": [
         {
@@ -4282,6 +4564,10 @@
         {
           "text": "A funeral ceremonial. [Obs.] Spenser.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Hearse, v. t. Chapman.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

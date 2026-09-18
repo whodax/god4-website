@@ -13,7 +13,11 @@
           "partOfSpeech": "conjunction"
         },
         {
-          "text": "It is sometimes, in old songs, a mere expletive.",
+          "text": "It is sometimes, in old songs, a mere expletive. When that I was and a little tiny boy. Shak.",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "text": "If; though. See An, conj. [Obs.] Chaucer. As they will set an house on fire, and it were but to roast their eggs. Bacon. And so forth, and others; and the rest; and similar things; and other things or ingredients. The abbreviation, etc. (et cetera), or &c., is usually read and so forth.",
           "partOfSpeech": "conjunction"
         }
       ],
@@ -25,36 +29,6 @@
         {
           "text": "Doubt; uncertainty. [Obs.] Shelford.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "andakintotorreretoparchetorridandthirstseethirstand": {
-      "word": "and akin to torrere to parch, E. torrid, and thirst. See Thirst, and",
-      "definitions": [
-        {
-          "text": "A raised level space, shelf, or platform of earth, supported on one or more sides by a wall, a bank of tuft, or the like, whether designed for use or pleasure.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A balcony, especially a large and uncovered one.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A flat roof to a house; as, the buildings of the Oriental nations are covered with terraces.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A street, or a row of houses, on a bank or the side of a hill; hence, any street, or row of houses.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Geol.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A level plain, usually with a steep front, bordering a river, a lake, or sometimes the sea.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -185,20 +159,6 @@
       ],
       "relatedWords": []
     },
-    "andbasinefivegrfllupusgrfoxvixenfragile": {
-      "word": "and b; as in E. five, Gr. f, L. lupus, Gr. fox, vixen ; fragile,",
-      "definitions": [
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The name of the fourth tone of the model scale, or scale of C. F sharp (F #) is a tone intermediate between F and G. F clef, the bass clef. See under Clef.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "andean": {
       "word": "ANDEAN",
       "definitions": [
@@ -225,16 +185,6 @@
         {
           "text": "An eruptive rock allied to trachyte, consisting essentially of a triclinic feldspar, with pyroxene, hornblende, or hypersthene.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "andfirstusedofanupwardswoodthenofaswoopingeneralbut": {
-      "word": "and first used of an upward swood, then of a swoop in general, but",
-      "definitions": [
-        {
-          "text": "To swoop or plunge, as a bird upon its prey; to fall suddenly; to rush with speed; to make a sudden attack. For then I viewed his plunge and souse Into the foamy main. Marston. Jove's bird will souse upon the timorous hare. J. Dryden. Jr.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -284,24 +234,6 @@
         "turnspit"
       ]
     },
-    "andperhtoelightnotheavycffleviercfalleviate": {
-      "word": "and perh. to E. light not heavy: cf. F. levier. Cf. Alleviate,",
-      "definitions": [
-        {
-          "text": "(Mech.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A rigid piece which is capable of turning about one point, or axis (the fulcrum), and in which are two or more other points where forces are applied; -- used for transmitting and modifying force and motion. Specif., a bar of metal, wood, or other rigid substance, used to exert a pressure, or sustain a weight, at one point of its length, by receiving a force or power at a second, and turning at a third on a fixed point called a fulcrum. It is usually named as the first of the six mechanical powers, and is three kinds, according as either the fulcrum F, the weight W, or the power P. respectively, is situated between the other two, as in the figures.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Mach.) (a) A bar, as a capstan bar, applied to a rotatory piece to turn it. (b) An arm on a rock shaft, to give motion to the shaft or to obtain motion from it. Compound lever, a machine consisting of two or more levers acting upon each other. action of the escape wheel with that of the balance. Universal lever, a machine formed by a combination of a lever with the wheel and axle, in such a manner as to convert the reciprocating motion of the lever into a continued rectilinear motion of some body to which the power is applied.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "andranatomy": {
       "word": "ANDRANATOMY",
       "definitions": [
@@ -322,12 +254,50 @@
       ],
       "relatedWords": []
     },
+    "androdiecious": {
+      "word": "ANDRODIOECIOUS; ANDRODIECIOUS",
+      "definitions": [
+        {
+          "text": "Having perfect and staminate flowers on different plants. -- An`dro*di*o\"cism, -di*e\"cism (#), n.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "androdioecious": {
+      "word": "ANDRODIOECIOUS; ANDRODIECIOUS",
+      "definitions": [
+        {
+          "text": "Having perfect and staminate flowers on different plants. -- An`dro*di*o\"cism, -di*e\"cism (#), n.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "androecium": {
       "word": "ANDROECIUM",
       "definitions": [
         {
           "text": "The stamens of a flower taken collectively.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "androgynal": {
+      "word": "ANDROGYNOUS; ANDROGYNAL",
+      "definitions": [
+        {
+          "text": "Uniting both sexes in one, or having the characteristics of both; being in nature both male and female; hermaphroditic. Owen. The truth is, a great mind must be androgynous. Coleridge.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Bearing both staminiferous and pistilliferous flowers in the same cluster.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -350,7 +320,17 @@
       ],
       "relatedWords": []
     },
-    "androgynousandrogynal": {
+    "androgynism": {
+      "word": "ANDROGYNY; ANDROGYNISM",
+      "definitions": [
+        {
+          "text": "Union of both sexes in one individual; hermaphroditism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "androgynous": {
       "word": "ANDROGYNOUS; ANDROGYNAL",
       "definitions": [
         {
@@ -368,7 +348,7 @@
       ],
       "relatedWords": []
     },
-    "androgynyandrogynism": {
+    "androgyny": {
       "word": "ANDROGYNY; ANDROGYNISM",
       "definitions": [
         {
@@ -376,7 +356,27 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "androgynism",
+        "effeminacy",
+        "effeminateness",
+        "epicenism",
+        "epicenity",
+        "feminism",
+        "gynandrism",
+        "gynandry",
+        "hermaphroditism",
+        "intersexualism",
+        "intersexuality",
+        "muliebrity",
+        "prissiness",
+        "pseudohermaphroditism",
+        "sissiness",
+        "transsexualism",
+        "transsexuality",
+        "unmanliness",
+        "womanishness"
+      ]
     },
     "android": {
       "word": "ANDROID",
@@ -384,15 +384,29 @@
         {
           "text": "Resembling a man.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A machine or automaton in the form of a human being.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "androidandroides": {
+    "androides": {
       "word": "ANDROID; ANDROIDES",
       "definitions": [
         {
           "text": "A machine or automaton in the form of a human being.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "andromed": {
+      "word": "ANDROMEDE; ANDROMED",
+      "definitions": [
+        {
+          "text": "A meteor appearing to radiate from a point in the constellation Andromeda, -- whence the name. A shower of these meteors takes place every year on November 27th or 28th. The Andromedes are also called Bielids, as they are connected with Biela's comet and move in its orbit.",
           "partOfSpeech": "noun"
         }
       ],
@@ -420,7 +434,7 @@
       ],
       "relatedWords": []
     },
-    "andromedeandromed": {
+    "andromede": {
       "word": "ANDROMEDE; ANDROMED",
       "definitions": [
         {

@@ -21,7 +21,17 @@
       ],
       "relatedWords": []
     },
-    "convalescenceconvalescency": {
+    "convalescence": {
+      "word": "CONVALESCENCE; CONVALESCENCY",
+      "definitions": [
+        {
+          "text": "The recovery of heath and strength after disease; the state of a body renewing its vigor after sickness or weakness; the time between the subsidence of a disease and complete restoration to health.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "convalescency": {
       "word": "CONVALESCENCE; CONVALESCENCY",
       "definitions": [
         {
@@ -283,7 +293,175 @@
       ],
       "relatedWords": []
     },
-    "convenienceconveniency": {
+    "convenience": {
+      "word": "CONVENIENCE; CONVENIENCY",
+      "definitions": [
+        {
+          "text": "The state or quality of being convenient; fitness or suitableness, as of place, time, etc.; propriety. Let's futher think of this; Weigh what convenience both of time and means May fit us to our shape. Shak. With all brief and plain conveniency, Let me have judgment. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Freedom from discomfort, difficulty, or trouble; commodiousness; ease; accommodation. Thus necessity invented stools, Convenience next suggested elbow chairs. Cowper. We are rather intent upon the end of God's glory than our own conveniency. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is convenient; that which promotes comfort or advantage; that which is suited to one's wants; an accommodation. A pair of spectacles and several other little conveniences. Swift.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A convenient or fit time; opportunity; as, to do something at one's convenience.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "WC",
+        "accommodate",
+        "accommodation",
+        "adaptability",
+        "advantage",
+        "advantageousness",
+        "advisability",
+        "amenity",
+        "appliance",
+        "appropriateness",
+        "appurtenance",
+        "auspiciousness",
+        "avail",
+        "backhouse",
+        "basement",
+        "bathroom",
+        "behalf",
+        "behoof",
+        "beneficialness",
+        "benefit",
+        "can",
+        "chargedness",
+        "closet",
+        "comfort",
+        "comfort station",
+        "commodiousness",
+        "coziness",
+        "crapper",
+        "criticality",
+        "crucialness",
+        "cushioniness",
+        "decency",
+        "desirability",
+        "drive",
+        "ductility",
+        "earth closet",
+        "ease",
+        "easiness",
+        "engine",
+        "enginery",
+        "expedience",
+        "expediency",
+        "facility",
+        "favor",
+        "favorableness",
+        "feasibility",
+        "felicitousness",
+        "fitness",
+        "fittingness",
+        "fixture",
+        "flexibility",
+        "free time",
+        "freedom",
+        "friendliness",
+        "fruitfulness",
+        "goof-off time",
+        "handiness",
+        "head",
+        "homelikeness",
+        "homeliness",
+        "homeyness",
+        "hospitality",
+        "idle hours",
+        "interest",
+        "john",
+        "johnny",
+        "johnny house",
+        "latrine",
+        "lavatory",
+        "leisure",
+        "loadedness",
+        "loo",
+        "luxuriousness",
+        "machine",
+        "machinery",
+        "malleability",
+        "manageability",
+        "manageableness",
+        "maneuverability",
+        "mechanical aid",
+        "mechanical device",
+        "mechanism",
+        "meetness",
+        "motive power",
+        "motor",
+        "necessary",
+        "odd moments",
+        "opportuneness",
+        "outhouse",
+        "peace",
+        "peacefulness",
+        "percentage",
+        "pliability",
+        "pliancy",
+        "point",
+        "politicness",
+        "powder room",
+        "power plant",
+        "power source",
+        "practicality",
+        "pregnancy",
+        "privy",
+        "profit",
+        "profitability",
+        "propitiousness",
+        "propriety",
+        "prudence",
+        "repose",
+        "reposefulness",
+        "rest",
+        "rest room",
+        "restfulness",
+        "retirement",
+        "rightness",
+        "ripeness",
+        "roominess",
+        "seasonableness",
+        "seemliness",
+        "semiretirement",
+        "service",
+        "snugness",
+        "softness",
+        "spare time",
+        "suitability",
+        "throne",
+        "time",
+        "time to kill",
+        "time to spare",
+        "timeliness",
+        "toilet",
+        "toilet room",
+        "untroublesomeness",
+        "urinal",
+        "use",
+        "usefulness",
+        "utility",
+        "value",
+        "warmness",
+        "washroom",
+        "water closet",
+        "wieldableness",
+        "wieldiness",
+        "wisdom",
+        "worth",
+        "worthwhileness"
+      ]
+    },
+    "conveniency": {
       "word": "CONVENIENCE; CONVENIENCY",
       "definitions": [
         {
@@ -813,7 +991,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "(Fine Arts) (a) Based upon tradition, whether religious and historical or of artistic rules. (b) Abstracted; removed from close representation of nature by the deliberate selection of what is to be represented and what is to be",
+          "text": "(Fine Arts) (a) Based upon tradition, whether religious and historical or of artistic rules. (b) Abstracted; removed from close representation of nature by the deliberate selection of what is to be represented and what is to be rejected; as, a conventional flower; a conventional shell. Cf. Conventionalize, v. t.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -990,6 +1168,10 @@
         {
           "text": "(Fine Arts)",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The principles or practice of conventionalizing. See Conventionalize, v. t.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1027,6 +1209,10 @@
         },
         {
           "text": "(Fine Arts) (a) To represent by selecting the important features and those which are expressible in the medium employed, and omitting the others. (b) To represent according to an established principle, whether religious or traditional, or based upon certain artistic rules of supposed importance.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make designs in art, according to conventional principles. Cf. Conventionalize, v. t., 2.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1182,7 +1368,17 @@
         "unite"
       ]
     },
-    "convergenceconvergency": {
+    "convergence": {
+      "word": "CONVERGENCE; CONVERGENCY",
+      "definitions": [
+        {
+          "text": "The condition or quality of converging; tendency to one point. The convergence or divergence of the rays falling on the pupil. Berkeley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "convergency": {
       "word": "CONVERGENCE; CONVERGENCY",
       "definitions": [
         {
@@ -3428,7 +3624,7 @@
       "word": "CONVICTIVE",
       "definitions": [
         {
-          "text": "Convincing. [R.]",
+          "text": "Convincing. [R.] The best and most convictive argument. Glanwill.",
           "partOfSpeech": "adjective"
         }
       ],

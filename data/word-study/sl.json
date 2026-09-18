@@ -1,31 +1,33 @@
 {
   "version": "v1",
   "entries": {
-    "slavishrudeignorantakintolbalbusstammeringskrbarbara": {
-      "word": "slavish, rude, ignorant; akin to L. balbus stammering, Skr. barbara",
-      "definitions": [
-        {
-          "text": "Being in the state of a barbarian; uncivilized; rude; peopled with barbarians; as, a barbarous people; a barbarous country.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Foreign; adapted to a barbaric taste.[Obs.] Barbarous gold. Dryden.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Cruel; ferocious; inhuman; merciless. By their barbarous usage he died within a few days, to the grief of all that knew him. Clarendon.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Contrary to the pure idioms of a language. A barbarous expression G. Campbell. merciless; brutal. See Ferocious.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "slab": {
       "word": "SLAB",
       "definitions": [
+        {
+          "text": "A thin piece of anything, especially of marble or other stone, having plane surfaces. Gwilt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An outside piece taken from a log or timber in sawing it into boards, planks, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The wryneck. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The slack part of a sail. Slab line (Naut.), a line or small rope by which seamen haul up the foot of the mainsail or foresail. Totten.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Thick; viscous. [Obs.] Make the gruel thick and slab. Shak.",
           "partOfSpeech": "adjective"
@@ -157,13 +159,7 @@
         {
           "text": "The part of anything that hangs loose, having no strain upon it; as, the slack of a rope or of a sail.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "slackslacken": {
-      "word": "SLACK; SLACKEN",
-      "definitions": [
+        },
         {
           "text": "To become slack; to be made less tense, firm, or rigid; to decrease in tension; as, a wet cord slackens in dry weather.",
           "partOfSpeech": "verb"
@@ -216,8 +212,56 @@
       "relatedWords": []
     },
     "slacken": {
-      "word": "SLACKEN",
+      "word": "SLACK; SLACKEN",
       "definitions": [
+        {
+          "text": "To become slack; to be made less tense, firm, or rigid; to decrease in tension; as, a wet cord slackens in dry weather.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be remiss or backward; to be negligent.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lose cohesion or solidity by a chemical combination with water; to slake; as, lime slacks.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To abate; to become less violent. Whence these raging fires Will slacken, if his breath stir not their flames. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lose rapidity; to become more slow; as, a current of water slackens.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To languish; to fail; to flag.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To end; to cease; to desist; to slake. [Obs.] That through your death your lineage should slack. Chaucer. They will not of that firste purpose slack. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To render slack; to make less tense or firm; as, to slack a rope; to slacken a bandage. Wycklif (Acts xxvii. 40)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To neglect; to be remiss in. [Obs.] Shak. Slack not the pressage. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To deprive of cohesion by combining chemically with water; to slake; as, to slack lime.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to become less eager; to repress; to make slow or less rapid; to retard; as, to slacken pursuit; to slacken industry. \"Rancor for to slack.\" Chaucer. I should be grieved, young prince, to think my presence Unbent your thoughts, and slackened 'em to arms. Addison. In this business of growing rich, poor men should slack their pace. South. With such delay Well plased, they slack their course. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to become less intense; to mitigate; to abate; to ease. To respite, or deceive, or slack thy pain Of this ill mansion. Milton. Air-slacked lime, lime slacked by exposure to the air, in consequence of the absorption of carton dioxide and water, by which it is converted into carbonate of lime and hydrate of lime.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "A spongy, semivitrifled substance which miners or smelters mix with the ores of metals to prevent their fusion. [Written also slakin.]",
           "partOfSpeech": "noun"
@@ -254,6 +298,20 @@
         },
         {
           "text": "The sole of a plow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "slag": {
+      "word": "SLAG",
+      "definitions": [
+        {
+          "text": "The dross, or recrement, of a metal; also, vitrified cinders.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The scoria of a volcano. Slag furnace, or Slag hearth (Metal.), a furnace, or hearth, for extracting lead from slags or poor ore.",
           "partOfSpeech": "noun"
         }
       ],
@@ -389,7 +447,17 @@
       ],
       "relatedWords": []
     },
-    "slamkinslammerkin": {
+    "slamkin": {
+      "word": "SLAMKIN; SLAMMERKIN",
+      "definitions": [
+        {
+          "text": "A slut; a slatternly woman. [Obs. or Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "slammerkin": {
       "word": "SLAMKIN; SLAMMERKIN",
       "definitions": [
         {
@@ -447,7 +515,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Embodying or containing slander; calumnious; as, slanderous words,",
+          "text": "Embodying or containing slander; calumnious; as, slanderous words, speeches, or reports.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -555,7 +623,27 @@
       ],
       "relatedWords": []
     },
-    "slantwiseslantly": {
+    "slanting": {
+      "word": "SLANTING",
+      "definitions": [
+        {
+          "text": "Oblique; sloping.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "slantwise": {
+      "word": "SLANTWISE; SLANTLY",
+      "definitions": [
+        {
+          "text": "In an inclined direction; obliquely; slopingly.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "slantly": {
       "word": "SLANTWISE; SLANTLY",
       "definitions": [
         {
@@ -641,11 +729,15 @@
         {
           "text": "Anything monstrous; a whopper. [Slang] Grose.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Very large; monstrous; big. [Slang.]",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "slapperslapping": {
+    "slapping": {
       "word": "SLAPPER; SLAPPING",
       "definitions": [
         {
@@ -957,19 +1049,13 @@
       ],
       "relatedWords": []
     },
-    "slainfleshmodifiedbyoeslaughtslahtslaughterfras": {
-      "word": "slain flesh, modified by OE. slaught, slaht, slaughter, fr. AS.",
-      "definitions": [
-        {
-          "text": "The act of killing. Specifically: (a) The extensive, violent, bloody, or wanton destruction of life; carnage. On war and mutual slaughter bent. Milton. (b) The act of killing cattle or other beasts for market.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "slaughter": {
       "word": "SLAUGHTER",
       "definitions": [
+        {
+          "text": "The act of killing. Specifically: (a) The extensive, violent, bloody, or wanton destruction of life; carnage. On war and mutual slaughter bent. Milton. (b) The act of killing cattle or other beasts for market.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To visit with great destruction of life; to kill; to slay in battle. Your castle is surprised; your wife and babes Savagely slaughtered. Shak.",
           "partOfSpeech": "verb"
@@ -1007,6 +1093,16 @@
         {
           "text": "One employed in slaughtering. Shak.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "slaughterous": {
+      "word": "SLAUGHTEROUS",
+      "definitions": [
+        {
+          "text": "Destructive; murderous. Shak. M. Arnold.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1135,6 +1231,16 @@
       ],
       "relatedWords": []
     },
+    "slavering": {
+      "word": "SLAVERING",
+      "definitions": [
+        {
+          "text": "Drooling; defiling with saliva.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "slavery": {
       "word": "SLAVERY",
       "definitions": [
@@ -1181,7 +1287,7 @@
       "word": "SLAVISH",
       "definitions": [
         {
-          "text": "Of or pertaining to slaves; such as becomes or befits a slave; servile; excessively laborious; as, a slavish life; a slavish",
+          "text": "Of or pertaining to slaves; such as becomes or befits a slave; servile; excessively laborious; as, a slavish life; a slavish dependance on the great.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1207,7 +1313,25 @@
       ],
       "relatedWords": []
     },
-    "slavonianslavonic": {
+    "slavonian": {
+      "word": "SLAVONIAN; SLAVONIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Slavonia, or its inhabitants.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the Slavs, or their language.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or inhabitant of Slavonia; ethnologically, a Slav.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "slavonic": {
       "word": "SLAVONIAN; SLAVONIC",
       "definitions": [
         {
@@ -1221,17 +1345,17 @@
       ],
       "relatedWords": []
     },
-    "slavonian": {
-      "word": "SLAVONIAN",
+    "slavophil": {
+      "word": "SLAVOPHIL; SLAVOPHILE",
       "definitions": [
         {
-          "text": "A native or inhabitant of Slavonia; ethnologically, a Slav.",
+          "text": "One, not being a Slav, who is interested in the development and prosperity of that race.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "slavophilslavophile": {
+    "slavophile": {
       "word": "SLAVOPHIL; SLAVOPHILE",
       "definitions": [
         {
@@ -1247,11 +1371,15 @@
         {
           "text": "Sliced cabbage served as a salad, cooked or uncooked.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "p. p. of Slee, to slay. With a sword drawn out he would have slaw himself. Wyclif (Acts xvi. 27.)",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "slawslawen": {
+    "slawen": {
       "word": "SLAW; SLAWEN",
       "definitions": [
         {
@@ -1557,6 +1685,16 @@
       ],
       "relatedWords": []
     },
+    "sleepful": {
+      "word": "SLEEPFUL",
+      "definitions": [
+        {
+          "text": "Strongly inclined to sleep; very sleepy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "sleepily": {
       "word": "SLEEPILY",
       "definitions": [
@@ -1605,7 +1743,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having no rest; perpetually agitated. \"Biscay's sleepless bay.\"",
+          "text": "Having no rest; perpetually agitated. \"Biscay's sleepless bay.\" Byron.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1943,7 +2081,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Uttered with a thin tone; -- the opposite of broad; as, the",
+          "text": "Uttered with a thin tone; -- the opposite of broad; as, the slender vowels long e and i.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2075,6 +2213,14 @@
       "word": "SLICE",
       "definitions": [
         {
+          "text": "A thin, broad piece cut off; as, a slice of bacon; a slice of cheese; a slice of bread.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is thin and broad, like a slice. Specifically: (a) A broad, thin piece of plaster. (b) A salver, platter, or tray. [Obs.] (c) A knife with a thin, broad blade for taking up or serving fish; also, a spatula for spreading anything, as paint or ink. (d) A plate of iron with a handle, forming a kind of chisel, or a spadelike implement, variously proportioned, and used for various purposes, as for stripping the planking from a vessel's side, for cutting blubber from a whale, or for stirring a fire of coals; a slice bar; a peel; a fire shovel. [Cant] (e) (Shipbuilding) One of the wedges by which the cradle and the ship are lifted clear of the building blocks to prepare for launching. (f) (Printing) A removable sliding bottom to galley. Slice bar, a kind of fire iron resembling a poker, with a broad, flat end, for stirring a fire of coals, and clearing it and the grate bars from clinkers, ashes, etc.; a slice.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To cut into thin pieces, or to cut off a thin, broad piece from.",
           "partOfSpeech": "verb"
         },
@@ -2099,7 +2245,7 @@
       ],
       "relatedWords": []
     },
-    "slichslick": {
+    "slich": {
       "word": "SLICH; SLICK",
       "definitions": [
         {
@@ -2110,8 +2256,12 @@
       "relatedWords": []
     },
     "slick": {
-      "word": "SLICK",
+      "word": "SLICH; SLICK",
       "definitions": [
+        {
+          "text": "See Schlich.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Sleek; smooth. \"Both slick and dainty.\" Chapman.",
           "partOfSpeech": "adjective"
@@ -2229,11 +2379,25 @@
         {
           "text": "To slide with interruption. [Obs.] Dryden.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Slippery. [Obs.] To a drunk man the way is slidder. Chaucer.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "slidderslidderlysliddery": {
+    "slidderly": {
+      "word": "SLIDDER; SLIDDERLY; SLIDDERY",
+      "definitions": [
+        {
+          "text": "Slippery. [Obs.] To a drunk man the way is slidder. Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sliddery": {
       "word": "SLIDDER; SLIDDERLY; SLIDDERY",
       "definitions": [
         {
@@ -2793,6 +2957,26 @@
       "word": "SLIP",
       "definitions": [
         {
+          "text": "To move along the surface of a thing without bounding, rolling, or stepping; to slide; to glide.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To slide; to lose one's footing or one's hold; not to tread firmly; as, it is necessary to walk carefully lest the foot should slip.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move or fly (out of place); to shoot; -- often with out, off, etc.; as, a bone may slip out of its place.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To depart, withdraw, enter, appear, intrude, or escape as if by sliding; to go or come in a quiet, furtive manner; as, some errors slipped into the work. Thus one tradesman slips away, To give his partner fairer play. Prior. Thrice the flitting shadow slipped away. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To err; to fall into error or fault. There is one that slippeth in his speech, but not from his heart. Ecclus. xix. 16. To let slip, to loose from the slip or noose, as a hound; to allow to escape. Cry, \"Havoc,\" and let slip the dogs of war. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To cause to move smoothly and quickly; to slide; to convey gently or secretly. He tried to slip a powder into her drink. Arbuthnot.",
           "partOfSpeech": "verb"
         },
@@ -3199,6 +3383,18 @@
           "partOfSpeech": ""
         },
         {
+          "text": "To cut lengthwise; to cut into long pieces or strips; as, to slit iron bars into nail rods; to slit leather into straps.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cut or make a long fissure in or upon; as, to slit the ear or the nose.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cut; to sever; to divide. [Obs.] And slits the thin-spun life. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "A long cut; a narrow opening; as, a slit in the ear. Gill slit. (Anat.) See Gill opening, under Gill.",
           "partOfSpeech": "noun"
         }
@@ -3369,7 +3565,17 @@
       ],
       "relatedWords": []
     },
-    "slockslocken": {
+    "slock": {
+      "word": "SLOCK; SLOCKEN",
+      "definitions": [
+        {
+          "text": "To quench; to allay; to slake. See Slake. [Obs. or Scot.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "slocken": {
       "word": "SLOCK; SLOCKEN",
       "definitions": [
         {
@@ -3449,11 +3655,41 @@
       ],
       "relatedWords": []
     },
-    "slooslue": {
+    "sloo": {
       "word": "SLOO; SLUE",
       "definitions": [
         {
           "text": "A slough; a run or wet place. See 2d Slough, 2.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "slue": {
+      "word": "SLOO; SLUE",
+      "definitions": [
+        {
+          "text": "A slough; a run or wet place. See 2d Slough, 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To turn about a fixed point, usually the center or axis, as a spar or piece of timber; to turn; -- used also of any heavy body.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "In general, to turn about; to twist; -- often used reflexively and followed by round. [Colloq.] They laughed, and slued themselves round. Dickens.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To turn about; to turn from the course; to slip or slide and turn from an expected or desired course; -- often followed by round.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Sloough, 2. [Local]",
           "partOfSpeech": "noun"
         }
       ],
@@ -3519,28 +3755,22 @@
         {
           "text": "To overflow or be spilled as a liquid, by the motion of the vessel containing it; -- often with over.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "slideakintoicelslopprathingarmentcfohgsloufagarment": {
-      "word": "slide; akin to Icel sloppr a thin garment; cf. OHG. slouf a garment.",
-      "definitions": [
+        },
         {
           "text": "Any kind of outer garment made of linen or cotton, as a night dress, or a smock frock. [Obs.] Halliwell.",
-          "partOfSpeech": "verb"
+          "partOfSpeech": "noun"
         },
         {
           "text": "A loose lower garment; loose breeches; chiefly used in the plural. \"A pair of slops.\" Sir P. Sidney. There's a French salutation to your French slop. Shak.",
-          "partOfSpeech": "verb"
+          "partOfSpeech": "noun"
         },
         {
           "text": "pl.",
-          "partOfSpeech": "verb"
+          "partOfSpeech": "noun"
         },
         {
           "text": "Ready-made clothes; also, among seamen, clothing, bedding, and other furnishings.",
-          "partOfSpeech": "verb"
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3603,7 +3833,7 @@
       "word": "SLOPING",
       "definitions": [
         {
-          "text": "Inclining or inclined from the plane of the horizon, or from a",
+          "text": "Inclining or inclined from the plane of the horizon, or from a horizontal or other right line; oblique; declivous; slanting. The sloping land recedes into the clouds. Cowper.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3669,7 +3899,17 @@
       ],
       "relatedWords": []
     },
-    "sloshsloshy": {
+    "slosh": {
+      "word": "SLOSH; SLOSHY",
+      "definitions": [
+        {
+          "text": "See Slush, Slushy.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sloshy": {
       "word": "SLOSH; SLOSHY",
       "definitions": [
         {
@@ -3735,7 +3975,7 @@
       "word": "SLOTHFUL",
       "definitions": [
         {
-          "text": "Addicted to sloth; inactive; sluggish; lazy; indolent; idle. He also that is slothful in his work is brother to him that is a",
+          "text": "Addicted to sloth; inactive; sluggish; lazy; indolent; idle. He also that is slothful in his work is brother to him that is a great waster. Prov. xviii. 9.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4217,32 +4457,6 @@
       ],
       "relatedWords": []
     },
-    "slue": {
-      "word": "SLUE",
-      "definitions": [
-        {
-          "text": "(Naut.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To turn about a fixed point, usually the center or axis, as a spar or piece of timber; to turn; -- used also of any heavy body.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "In general, to turn about; to twist; -- often used reflexively and followed by round. [Colloq.] They laughed, and slued themselves round. Dickens.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To turn about; to turn from the course; to slip or slide and turn from an expected or desired course; -- often followed by round.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "See Sloough, 2. [Local]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "slug": {
       "word": "SLUG",
       "definitions": [
@@ -4383,7 +4597,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Characteristic of a sluggard; dull; stupid; tame; simple. [R.] \"So sluggish a conceit.\" Milton.",
+          "text": "Characteristic of a sluggard; dull; stupid; tame; simple. [R.] \"So sluggish a conceit.\" Milton. drowsy; inactive. See Inert.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4853,7 +5067,7 @@
       "word": "SLUTTISH",
       "definitions": [
         {
-          "text": "Like a slut; untidy; indecently negligent of cleanliness; disorderly; as, a sluttish woman. Why is thy lord so slutish, I thee pray. Chaucer. An air of liberal, though sluttish, plenty, indicated the wealthy",
+          "text": "Like a slut; untidy; indecently negligent of cleanliness; disorderly; as, a sluttish woman. Why is thy lord so slutish, I thee pray. Chaucer. An air of liberal, though sluttish, plenty, indicated the wealthy farmer. Sir W. Scott.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4862,6 +5076,22 @@
     "sly": {
       "word": "SLY",
       "definitions": [
+        {
+          "text": "Dexterous in performing an action, so as to escape notice; nimble; skillful; cautious; shrewd; knowing; -- in a good sense. Be ye sly as serpents, and simple as doves. Wyclif (Matt. x. 16). Whom graver age And long experience hath made wise and sly. Fairfax.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Artfully cunning; secretly mischievous; wily. For my sly wiles and subtle craftiness, The litle of the kingdom I possess. Spenser.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Done with, and marked by, artful and dexterous secrecy; subtle; as, a sly trick. Envy works in a sly and imperceptible manner. I. Watts.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Light or delicate; slight; thin. [Obs.] By the sly, or On the sly, in a sly or secret manner. [Colloq.] \"Gazed on Hetty's charms by the sly.\" G. Eliot. craftiness.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Slyly. [Obs. or Poetic] Spenser.",
           "partOfSpeech": "adverb"

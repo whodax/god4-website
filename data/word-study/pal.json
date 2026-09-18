@@ -59,7 +59,17 @@
       ],
       "relatedWords": []
     },
-    "palaeographerpalaeographic": {
+    "palaeographer": {
+      "word": "PALAEOGRAPHER; PALAEOGRAPHIC",
+      "definitions": [
+        {
+          "text": "See Paleographer, Paleographic, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palaeographic": {
       "word": "PALAEOGRAPHER; PALAEOGRAPHIC",
       "definitions": [
         {
@@ -73,7 +83,7 @@
       "word": "PALAEOTYPE",
       "definitions": [
         {
-          "text": "A system of representing all spoken sounds by means of the",
+          "text": "A system of representing all spoken sounds by means of the printing types in common use. Ellis.",
           "partOfSpeech": "noun"
         }
       ],
@@ -113,7 +123,7 @@
       "word": "PALAETIOLOGY",
       "definitions": [
         {
-          "text": "The science which explains, by the law of causation, the past",
+          "text": "The science which explains, by the law of causation, the past condition and changes of the earth.",
           "partOfSpeech": "noun"
         }
       ],
@@ -381,7 +391,7 @@
       "word": "PALATIZE",
       "definitions": [
         {
-          "text": "To modify, as the tones of the voice, by means of the palate;",
+          "text": "To modify, as the tones of the voice, by means of the palate; as, to palatize a letter or sound.",
           "partOfSpeech": "verb"
         }
       ],
@@ -534,16 +544,6 @@
       "definitions": [
         {
           "text": "Chaffy; resembling or consisting of paleæ, or chaff; furnished with chaff; as, a paleaceous receptacle.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "paleakintoicelbleikjaswblekadanblegedbleekeng": {
-      "word": "pale; akin to Icel. bleikja, Sw. bleka, Dan. blege, D. bleeken, G.",
-      "definitions": [
-        {
-          "text": "To make white, or whiter; to remove the color, or stains, from; to blanch; to whiten. The destruction of the coloring matters attached to the bodies to be bleached is effected either by the action of the air and light, of chlorine, or of sulphurous acid. Ure. Immortal liberty, whose look sublime Hath bleached the tyrant's cheek in every varying clime. Smollett.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -733,7 +733,17 @@
       ],
       "relatedWords": []
     },
-    "paleographicpaleographical": {
+    "paleographic": {
+      "word": "PALEOGRAPHIC; PALEOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to paleography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "paleographical": {
       "word": "PALEOGRAPHIC; PALEOGRAPHICAL",
       "definitions": [
         {
@@ -833,6 +843,16 @@
         {
           "text": "The description of fossil remains.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "paleontological": {
+      "word": "PALEONTOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to paleontology.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -991,7 +1011,7 @@
       ],
       "relatedWords": []
     },
-    "paleozoologypaleozooelogy": {
+    "paleozooelogy": {
       "word": "PALEOZOOLOGY; PALEOZOOELOGY",
       "definitions": [
         {
@@ -1001,7 +1021,17 @@
       ],
       "relatedWords": []
     },
-    "palesiepalesy": {
+    "paleozoology": {
+      "word": "PALEOZOOLOGY; PALEOZOOELOGY",
+      "definitions": [
+        {
+          "text": "The science of extinct animals, a branch of paleontology.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palesie": {
       "word": "PALESIE; PALESY",
       "definitions": [
         {
@@ -1011,7 +1041,7 @@
       ],
       "relatedWords": []
     },
-    "palestinianpalestinean": {
+    "palestinean": {
       "word": "PALESTINIAN; PALESTINEAN",
       "definitions": [
         {
@@ -1021,12 +1051,52 @@
       ],
       "relatedWords": []
     },
-    "palestrianpalestricpalestrical": {
+    "palestinian": {
+      "word": "PALESTINIAN; PALESTINEAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Palestine.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palestrian": {
       "word": "PALESTRIAN; PALESTRIC; PALESTRICAL",
       "definitions": [
         {
           "text": "Of or pertaining to the palestra, or to wrestling.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palestric": {
+      "word": "PALESTRIAN; PALESTRIC; PALESTRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the palestra, or to wrestling.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palestrical": {
+      "word": "PALESTRIAN; PALESTRIC; PALESTRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the palestra, or to wrestling.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palesy": {
+      "word": "PALESIE; PALESY",
+      "definitions": [
+        {
+          "text": "Palsy. [Obs.] Wyclif.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1183,7 +1253,17 @@
       ],
       "relatedWords": []
     },
-    "palindromicpalindromical": {
+    "palindromic": {
+      "word": "PALINDROMIC; PALINDROMICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or like, a palindrome.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palindromical": {
       "word": "PALINDROMIC; PALINDROMICAL",
       "definitions": [
         {
@@ -1227,7 +1307,7 @@
       ],
       "relatedWords": []
     },
-    "palingenesispalingenesy": {
+    "palingenesis": {
       "word": "PALINGENESIS; PALINGENESY",
       "definitions": [
         {
@@ -1241,6 +1321,34 @@
         {
           "text": "That form of evolution in which the truly ancestral characters conserved by heredity are reproduced in development; original simple descent; -- distinguished from kenogenesis. Sometimes, in zoölogy, the abrupt metamorphosis of insects, crustaceans, etc.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palingenesy": {
+      "word": "PALINGENESIS; PALINGENESY",
+      "definitions": [
+        {
+          "text": "A new birth; a re-creation; a regeneration; a continued existence in different manner or form.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That form of evolution in which the truly ancestral characters conserved by heredity are reproduced in development; original simple descent; -- distinguished from kenogenesis. Sometimes, in zoölogy, the abrupt metamorphosis of insects, crustaceans, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palingenetic": {
+      "word": "PALINGENETIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to palingenesis: as, a palingenetic process.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1807,6 +1915,16 @@
       ],
       "relatedWords": []
     },
+    "pallometa": {
+      "word": "PALOMETA; PALLOMETA",
+      "definitions": [
+        {
+          "text": "A pompano.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "pallone": {
       "word": "PALLONE",
       "definitions": [
@@ -1979,21 +2097,27 @@
         {
           "text": "(Chem.) A salt of palmic acid; a ricinoleate. [Obsoles.]",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "palmately": {
-      "word": "PALMATELY",
-      "definitions": [
+        },
         {
-          "text": "In a palmate manner.",
-          "partOfSpeech": "adverb"
+          "text": "Having the shape of the hand; resembling a hand with the fingers spread.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Spreading from the apex of a petiole, as the divisions of a leaf, or leaflets, so as to resemble the hand with outspread fingers. Gray.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.) (a) Having the anterior toes united by a web, as in most swimming birds; webbed. See Illust. (i) under Aves. (b) Having the distal portion broad, flat, and more or less divided into lobes; -- said of certain corals, antlers, etc.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "palmatepalmated": {
+    "palmated": {
       "word": "PALMATE; PALMATED",
       "definitions": [
         {
@@ -2011,6 +2135,16 @@
         {
           "text": "(Zoöl.) (a) Having the anterior toes united by a web, as in most swimming birds; webbed. See Illust. (i) under Aves. (b) Having the distal portion broad, flat, and more or less divided into lobes; -- said of certain corals, antlers, etc.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palmately": {
+      "word": "PALMATELY",
+      "definitions": [
+        {
+          "text": "In a palmate manner.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -2035,7 +2169,17 @@
       ],
       "relatedWords": []
     },
-    "palmatisectpalmatisected": {
+    "palmatisect": {
+      "word": "PALMATISECT; PALMATISECTED",
+      "definitions": [
+        {
+          "text": "Divided, as a palmate leaf, down to the midrib, so that the parenchyma is interrupted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palmatisected": {
       "word": "PALMATISECT; PALMATISECTED",
       "definitions": [
         {
@@ -2267,36 +2411,6 @@
       ],
       "relatedWords": []
     },
-    "palmorgreatblackcockatooofaustraliaismicroglossusaterrimus": {
-      "word": "palm or great black cockatoo of Australia is Microglossus aterrimus.",
-      "definitions": [
-        {
-          "text": "A fabulous serpent whose breath and look were said to be fatal. See Basilisk. That bare vowel, I, shall poison more Than the death-darting eye of cockatrice. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Her.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A representation of this serpent. It has the head, wings, and legs of a bird, and tail of a serpent.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Script.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A venomous serpent which which cannot now be identified. The weaned child shall put his hand on the cockatrice's",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Any venomous or deadly thing. This little cockatrice of a king. Bacon.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "palmsunday": {
       "word": "PALM SUNDAY",
       "definitions": [
@@ -2351,7 +2465,7 @@
       ],
       "relatedWords": []
     },
-    "palolopaloloworm": {
+    "palolo": {
       "word": "PALOLO; PALOLO WORM",
       "definitions": [
         {
@@ -2361,7 +2475,17 @@
       ],
       "relatedWords": []
     },
-    "palometapallometa": {
+    "paloloworm": {
+      "word": "PALOLO; PALOLO WORM",
+      "definitions": [
+        {
+          "text": "A polystome worm (Palolo viridis) that burrows in the coral reefs of certain of the Pacific Islands. A little before the last quarter of the moon in October and November, they swarm in vast numbers at the surface of the sea for breeding, and are gathered and highly esteemed as food by the natives. An allied species inhabits the tropical Atlantic and swarms in June or July.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "palometa": {
       "word": "PALOMETA; PALLOMETA",
       "definitions": [
         {

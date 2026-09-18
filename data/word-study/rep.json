@@ -435,6 +435,16 @@
       ],
       "relatedWords": []
     },
+    "repealable": {
+      "word": "REPEALABLE",
+      "definitions": [
+        {
+          "text": "Capable of being repealed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "repealer": {
       "word": "REPEALER",
       "definitions": [
@@ -517,7 +527,7 @@
       "word": "REPEATING",
       "definitions": [
         {
-          "text": "Doing the same thing over again; accomplishing a given result",
+          "text": "Doing the same thing over again; accomplishing a given result many times in succession; as, a repeating firearm; a repeating watch. Repeating circle. See the Note under Circle, n., 3. Decimal. quick succession; especially: (a) A form of firearm so constructed that by the action of the mechanism the charges are successively introduced from a chamber containing them into the breech of the barrel, and fired. (b) A form in which the charges are held in, and discharged from, a revolving chamber at the breech of the barrel. See Revolver, and Magazine gun, under Magazine. observing angles, as a circle, theodolite, etc., so constructed that the angle may be measured several times in succession, and different, but successive and contiguous, portions of the graduated limb, before reading off the aggregate result, which aggregate, divided by the number of measurements, gives the angle, freed in a measure from errors of eccentricity and graduation.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -551,7 +561,17 @@
       ],
       "relatedWords": []
     },
-    "repellencerepellency": {
+    "repellence": {
+      "word": "REPELLENCE; REPELLENCY",
+      "definitions": [
+        {
+          "text": "The principle of repulsion; the quality or capacity of repelling; repulsion.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "repellency": {
       "word": "REPELLENCE; REPELLENCY",
       "definitions": [
         {
@@ -907,7 +927,17 @@
       ],
       "relatedWords": []
     },
-    "repetitionalrepetitionary": {
+    "repetitional": {
+      "word": "REPETITIONAL; REPETITIONARY",
+      "definitions": [
+        {
+          "text": "Of the nature of, or containing, repetition. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "repetitionary": {
       "word": "REPETITIONAL; REPETITIONARY",
       "definitions": [
         {
@@ -1225,6 +1255,16 @@
       ],
       "relatedWords": []
     },
+    "repletive": {
+      "word": "REPLETIVE",
+      "definitions": [
+        {
+          "text": "Tending to make replete; filling.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "repletory": {
       "word": "REPLETORY",
       "definitions": [
@@ -1341,11 +1381,15 @@
         {
           "text": "To reply. [Obs.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Folded over or backward; folded back upon itself; as, a replicate leaf or petal; a replicate margin of a shell.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "replicatereplicated": {
+    "replicated": {
       "word": "REPLICATE; REPLICATED",
       "definitions": [
         {
@@ -1665,6 +1709,16 @@
       ],
       "relatedWords": []
     },
+    "reposed": {
+      "word": "REPOSED",
+      "definitions": [
+        {
+          "text": "Composed; calm; tranquil; at rest. Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "reposeful": {
       "word": "REPOSEFUL",
       "definitions": [
@@ -1815,12 +1869,32 @@
       ],
       "relatedWords": []
     },
+    "reprehensible": {
+      "word": "REPREHENSIBLE",
+      "definitions": [
+        {
+          "text": "Worthy of reprehension; culpable; censurable; blamable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "reprehension": {
       "word": "REPREHENSION",
       "definitions": [
         {
           "text": "Reproof; censure; blame; disapproval. This Basilius took as though his mistress had given him a secret reprehension that he had not showed more gratefulness to Dorus. Sir P. Sidney.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reprehensive": {
+      "word": "REPREHENSIVE",
+      "definitions": [
+        {
+          "text": "Containing reprehension; conveying reproof. South.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2105,7 +2179,7 @@
       "word": "REPRESSIVE",
       "definitions": [
         {
-          "text": "Having power, or tending, to repress; as, repressive acts or",
+          "text": "Having power, or tending, to repress; as, repressive acts or measures.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2407,7 +2481,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Occasioning or deserving reproach; shameful; base; as, a reproachful life. contemptuous; scornful; insolent; scurrilous; disreputable; discreditable; dishonorable; shameful; disgraceful; scandalous; base;",
+          "text": "Occasioning or deserving reproach; shameful; base; as, a reproachful life. contemptuous; scornful; insolent; scurrilous; disreputable; discreditable; dishonorable; shameful; disgraceful; scandalous; base; vile; infamous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2989,7 +3063,17 @@
       ],
       "relatedWords": []
     },
-    "repugnancerepugnancy": {
+    "repugnance": {
+      "word": "REPUGNANCE; REPUGNANCY",
+      "definitions": [
+        {
+          "text": "The state or condition of being repugnant; opposition; contrariety; especially, a strong instinctive antagonism; aversion; reluctance; unwillingness, as of mind, passions, principles, qualities, and the like. That which causes us to lose most of our time is the repugnance which we naturally have to labor. Dryden. Let the foes quietly cut their throats, Without repugnancy. Shak. hostility; irreconcilableness; contrariety; inconsistency. See Dislike.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "repugnancy": {
       "word": "REPUGNANCE; REPUGNANCY",
       "definitions": [
         {

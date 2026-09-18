@@ -1161,6 +1161,89 @@
       ],
       "relatedWords": []
     },
+    "honk": {
+      "word": "HONK",
+      "definitions": [
+        {
+          "text": "The cry of a wild goose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bay",
+        "beep",
+        "bell",
+        "blare",
+        "blast",
+        "blat",
+        "blow",
+        "blow the horn",
+        "bray",
+        "bugle",
+        "cackle",
+        "call",
+        "carol",
+        "caw",
+        "chatter",
+        "cheep",
+        "chirk",
+        "chirp",
+        "chirr",
+        "chirrup",
+        "chitter",
+        "chuck",
+        "clack",
+        "clarion",
+        "cluck",
+        "cock-a-doodle-doo",
+        "coo",
+        "croak",
+        "cronk",
+        "crow",
+        "cuckoo",
+        "drum",
+        "fanfare",
+        "flourish of trumpets",
+        "gabble",
+        "gaggle",
+        "gobble",
+        "guggle",
+        "hoo",
+        "hoot",
+        "peal",
+        "peep",
+        "pip",
+        "pipe",
+        "quack",
+        "roll",
+        "scold",
+        "shriek",
+        "sing",
+        "sound",
+        "sound a tattoo",
+        "sound taps",
+        "squawk",
+        "squeal",
+        "tantara",
+        "tantarara",
+        "taps",
+        "tarantara",
+        "tattoo",
+        "toot",
+        "tootle",
+        "trill",
+        "trumpet",
+        "trumpet blast",
+        "trumpet call",
+        "tweedle",
+        "tweet",
+        "twit",
+        "twitter",
+        "warble",
+        "whistle",
+        "wind"
+      ]
+    },
     "honor": {
       "word": "HONOR",
       "definitions": [
@@ -1792,7 +1875,7 @@
         "worthily"
       ]
     },
-    "honorariumhonorary": {
+    "honorarium": {
       "word": "HONORARIUM; HONORARY",
       "definitions": [
         {
@@ -1808,11 +1891,79 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Trinkgeld",
+        "amends",
+        "atonement",
+        "blood money",
+        "bonus",
+        "bounty",
+        "bribe",
+        "compensation",
+        "consideration",
+        "damages",
+        "donative",
+        "double time",
+        "emolument",
+        "fee",
+        "gratuity",
+        "gravy",
+        "grease",
+        "guerdon",
+        "incentive pay",
+        "indemnification",
+        "indemnity",
+        "inducement",
+        "lagniappe",
+        "largess",
+        "liberality",
+        "meed",
+        "palm oil",
+        "pay",
+        "payment",
+        "perks",
+        "perquisite",
+        "pourboire",
+        "premium",
+        "price",
+        "quittance",
+        "recompense",
+        "redress",
+        "remuneration",
+        "reparation",
+        "requital",
+        "requitement",
+        "restitution",
+        "retribution",
+        "return",
+        "reward",
+        "salvage",
+        "salve",
+        "satisfaction",
+        "smart money",
+        "solatium",
+        "something extra",
+        "sportula",
+        "sweetener",
+        "tip",
+        "wergild"
+      ]
     },
     "honorary": {
-      "word": "HONORARY",
+      "word": "HONORARIUM; HONORARY",
       "definitions": [
+        {
+          "text": "A fee offered to professional men for their services; as, an honorarium of one thousand dollars. S. Longfellow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An honorary payment, usually in recognition of services for which it is not usual or not lawful to assign a fixed business price. Heumann.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Done as a sign or evidence of honor; as, honorary services. Macaulay.",
           "partOfSpeech": "adjective"

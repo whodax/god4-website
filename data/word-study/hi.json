@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "hirling": {
+      "word": "HERLING; HIRLING",
+      "definitions": [
+        {
+          "text": "The young of the sea trout. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "hiation": {
       "word": "HIATION",
       "definitions": [
@@ -341,7 +351,17 @@
       ],
       "relatedWords": []
     },
-    "hibernicismhibernianism": {
+    "hibernicism": {
+      "word": "HIBERNICISM; HIBERNIANISM",
+      "definitions": [
+        {
+          "text": "An idiom or mode of speech peculiar to the Irish. Todd.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hibernianism": {
       "word": "HIBERNICISM; HIBERNIANISM",
       "definitions": [
         {
@@ -425,7 +445,17 @@
       ],
       "relatedWords": []
     },
-    "hickwallhickway": {
+    "hickwall": {
+      "word": "HICKWALL; HICKWAY",
+      "definitions": [
+        {
+          "text": "The lesser spotted woodpecker (Dendrocopus minor) of Europe. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hickway": {
       "word": "HICKWALL; HICKWAY",
       "definitions": [
         {
@@ -1475,11 +1505,51 @@
       ],
       "relatedWords": []
     },
-    "hierarchalhierarchic": {
+    "hierarchal": {
       "word": "HIERARCHAL; HIERARCHIC",
       "definitions": [
         {
           "text": "Pertaining to a hierarch. \"The great hierarchal standard.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hierarchic": {
+      "word": "HIERARCHAL; HIERARCHIC",
+      "definitions": [
+        {
+          "text": "Pertaining to a hierarch. \"The great hierarchal standard.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "assorted",
+        "cataloged",
+        "classified",
+        "filed",
+        "graded",
+        "grouped",
+        "hierarchal",
+        "indexed",
+        "on file",
+        "pigeonholed",
+        "placed",
+        "pyramidal",
+        "ranked",
+        "rated",
+        "sorted",
+        "stratified",
+        "tabular",
+        "theocratic",
+        "theocratist"
+      ]
+    },
+    "hierarchical": {
+      "word": "HIERARCHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a hierarchy.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1731,7 +1801,7 @@
       ],
       "relatedWords": []
     },
-    "hieroglyphhieroglyphic": {
+    "hieroglyph": {
       "word": "HIEROGLYPH; HIEROGLYPHIC",
       "definitions": [
         {
@@ -1745,7 +1815,102 @@
       ],
       "relatedWords": []
     },
-    "hieroglyphichieroglyphical": {
+    "hieroglyphic": {
+      "word": "HIEROGLYPH; HIEROGLYPHIC",
+      "definitions": [
+        {
+          "text": "A sacred character; a character in picture writing, as of the ancient Egyptians, Mexicans, etc. Specifically, in the plural, the picture writing of the ancient Egyptian priests. It is made up of three, or, as some say, four classes of characters: first, the hieroglyphic proper, or figurative, in which the representation of the object conveys the idea of the object itself; second, the ideographic, consisting of symbols representing ideas, not sounds, as an ostrich feather is a symbol of truth; third, the phonetic, consisting of symbols employed as syllables of a word, or as letters of the alphabet, having a certain sound, as a hawk represented the vowel a.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any character or figure which has, or is supposed to have, a hidden or mysterious significance; hence, any unintelligible or illegible character or mark. [Colloq.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Emblematic; expressive of some meaning by characters, pictures, or figures; as, hieroglyphic writing; a hieroglyphic obelisk. Pages no better than blanks to common minds, to his, hieroglyphical of wisest secrets. Prof. Wilson.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Resembling hieroglyphics; not decipherable. \"An hieroglyphical scrawl.\" Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "alphabet",
+        "arrowhead",
+        "art",
+        "blueprint",
+        "character",
+        "charactering",
+        "characterization",
+        "chart",
+        "choreography",
+        "conventional representation",
+        "cuneiform",
+        "dance notation",
+        "delineation",
+        "demonstration",
+        "demotic character",
+        "depiction",
+        "depictment",
+        "determinative",
+        "diagram",
+        "drama",
+        "drawing",
+        "exemplification",
+        "figuration",
+        "grammalogue",
+        "hieratic symbol",
+        "hieroglyph",
+        "hieroglyphics",
+        "hiragana",
+        "iconography",
+        "ideogram",
+        "ideograph",
+        "illustration",
+        "imagery",
+        "imaging",
+        "kana",
+        "katakana",
+        "letter",
+        "limning",
+        "logogram",
+        "logograph",
+        "map",
+        "musical notation",
+        "notation",
+        "ogham",
+        "phonetic",
+        "phonetic symbol",
+        "pictogram",
+        "pictograph",
+        "picturization",
+        "plan",
+        "portraiture",
+        "portrayal",
+        "prefigurement",
+        "presentment",
+        "printing",
+        "projection",
+        "radical",
+        "realization",
+        "rendering",
+        "rendition",
+        "representation",
+        "rune",
+        "schema",
+        "score",
+        "script",
+        "shorthand",
+        "syllabary",
+        "symbol",
+        "tablature",
+        "wedge",
+        "word letter",
+        "writing"
+      ]
+    },
+    "hieroglyphical": {
       "word": "HIEROGLYPHIC; HIEROGLYPHICAL",
       "definitions": [
         {
@@ -1809,7 +1974,17 @@
       ],
       "relatedWords": []
     },
-    "hierographichierographical": {
+    "hierographic": {
+      "word": "HIEROGRAPHIC; HIEROGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to sacred writing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hierographical": {
       "word": "HIEROGRAPHIC; HIEROGRAPHICAL",
       "definitions": [
         {
@@ -1839,7 +2014,17 @@
       ],
       "relatedWords": []
     },
-    "hierologichierological": {
+    "hierologic": {
+      "word": "HIEROLOGIC; HIEROLOGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to hierology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hierological": {
       "word": "HIEROLOGIC; HIEROLOGICAL",
       "definitions": [
         {
@@ -2105,7 +2290,11 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Made with a high position of some part of the tongue in relation to the palate, as e (eve), oo (food). See Guide to Pronunciation, §§ 10, 11. High admiral, the chief admiral. which deals with lofty and dignified subjects and is characterized by an elevated style avoiding all meretricious display. Church of England and the Protestant Episcopal Church. The high- churchmen emphasize the doctrine of the apostolic succession, and hold, in general, to a sacramental presence in the Eucharist, to baptismal regeneration, and to the sole validity of Episcopal ordination. They attach much importance to ceremonies and symbols in worship. Low-churchmen lay less stress on these points, and, in many instances, reject altogether the peculiar tenets of the high-church",
+          "text": "Made with a high position of some part of the tongue in relation to the palate, as e (eve), oo (food). See Guide to Pronunciation, §§ 10, 11. High admiral, the chief admiral. which deals with lofty and dignified subjects and is characterized by an elevated style avoiding all meretricious display. Church of England and the Protestant Episcopal Church. The high- churchmen emphasize the doctrine of the apostolic succession, and hold, in general, to a sacramental presence in the Eucharist, to baptismal regeneration, and to the sole validity of Episcopal ordination. They attach much importance to ceremonies and symbols in worship. Low-churchmen lay less stress on these points, and, in many instances, reject altogether the peculiar tenets of the high-church school. See Broad Church. 2. England erected and united to the regal power by Queen Elizabeth in",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "On account of the abuse of its powers it was abolished in 1641. ceremonial. sport. [Colloq.] \"All the high jinks of the county, when the lad comes of age.\" F. Harrison. consequently, a latitude remote from the equator. successive grindings and intermediate sorting, instead of by a single grinding. were offered. part of the ocean not in the territorial waters of any particular sovereignty, usually distant three miles or more from the coast line. Wharton. of great excitement or enjoyment; a carousal. [Slang] -- High treason, treason against the sovereign or the state, the highest civil offense. See Treason. simply, seeing that petty treason, as a distinct offense, has been abolished. Mozley & W. also, the time of such elevation. waters ordinarily reach at high water. (b) A mark showing the highest level reached by water in a river or other body of fresh water, as in time of freshet. growing in salt marshes along the Atlantic coast of the United States. alcohol; -- usually in the plural. loftily. [Colloq.] -- With a high hand. (a) With power; in force; triumphantly. \"The children of Israel went out with a high hand.\" Ex. xiv. 8.(b) In an overbearing manner, arbitrarily. \"They governed the city with a high hand.\" Jowett (Thucyd. ). violent; full; dear. See Tall.",
           "partOfSpeech": "adjective"
         },
         {
@@ -2898,6 +3087,39 @@
       ],
       "relatedWords": []
     },
+    "highchurch": {
+      "word": "HIGH-CHURCH",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or favoring, the party called the High Church, or their doctrines or policy. See High Church, under High, a.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Anglicanism",
+        "Anglo-Catholicism",
+        "Broad Church",
+        "Church of England",
+        "Established Church",
+        "Free Church",
+        "High-Churchism",
+        "Low Church",
+        "baptismal",
+        "ceremonial",
+        "ceremonious",
+        "eucharistic",
+        "formal",
+        "formular",
+        "formulary",
+        "liturgic",
+        "liturgistic",
+        "paschal",
+        "ritual",
+        "ritualistic",
+        "sacramental",
+        "sacramentarian"
+      ]
+    },
     "highchurchism": {
       "word": "HIGH-CHURCHISM",
       "definitions": [
@@ -3377,6 +3599,16 @@
         "tyrannical",
         "tyrannous"
       ]
+    },
+    "highhearted": {
+      "word": "HIGH-HEARTED",
+      "definitions": [
+        {
+          "text": "Full of courage or nobleness; high-souled.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "highhoe": {
       "word": "HIGH-HOE",
@@ -4437,7 +4669,17 @@
       ],
       "relatedWords": []
     },
-    "hijerahijra": {
+    "hijera": {
+      "word": "HIJERA; HIJRA",
+      "definitions": [
+        {
+          "text": "See Hegira.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hijra": {
       "word": "HIJERA; HIJRA",
       "definitions": [
         {
@@ -5222,11 +5464,29 @@
         {
           "text": "One's true or real character; one's natural temper and disposition; the state of being in one's right or sane mind (after unconsciousness, passion, delirium, or abasement); as, the man has come to himself. By himself, alone; unaccompanied; apart; sequestered; as, he sits or studies by himself. his own course.",
           "partOfSpeech": "pronoun"
+        },
+        {
+          "text": "Themselves. See Hemself. [Obs.] Chaucer.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "himselfhimselvehimselven": {
+    "himselve": {
+      "word": "HIMSELF; HIMSELVE; HIMSELVEN",
+      "definitions": [
+        {
+          "text": "Themselves. See Hemself. [Obs.] Chaucer.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "See 1st Himself. [Obs.]",
+          "partOfSpeech": "pronoun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "himselven": {
       "word": "HIMSELF; HIMSELVE; HIMSELVEN",
       "definitions": [
         {
@@ -5236,17 +5496,17 @@
       ],
       "relatedWords": []
     },
-    "himselve": {
-      "word": "HIMSELVE",
+    "himyaric": {
+      "word": "HIMYARIC; HIMYARITIC",
       "definitions": [
         {
-          "text": "See 1st Himself. [Obs.]",
-          "partOfSpeech": "pronoun"
+          "text": "Pertaining to Himyar, an ancient king of Yemen, in Arabia, or to his successors or people; as, the Himjaritic characters, language, etc.; applied esp. to certain ancient inscriptions showing the primitive type of the oldest form of the Arabic, still spoken in Southern Arabia. Brande & C.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "himyarichimyaritic": {
+    "himyaritic": {
       "word": "HIMYARIC; HIMYARITIC",
       "definitions": [
         {
@@ -5407,6 +5667,18 @@
     "hinder": {
       "word": "HINDER",
       "definitions": [
+        {
+          "text": "Of or belonging to that part or end which is in the rear, or which follows; as, the hinder part of a wagon; the hinder parts of a horse. He was in the hinder part of the ship. Mark iv. 38.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To keep back or behind; to prevent from starting or moving forward; to check; to retard; to obstruct; to bring to a full stop; - - often followed by from; as, an accident hindered the coach; drought hinders the growth of plants; to hinder me from going. Them that were entering in ye hindered. Luke xi. 52. I hinder you too long. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To prevent or embarrass; to debar; to shut out. What hinders younger brothers, being fathers of families, from having the same right Locke. interrupt; counteract; thwart; oppose; obstruct; debar; embarrass.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To interpose obstacles or impediments; to be a hindrance. This objection hinders not but that the heroic action of some commander . . . may be written. Dryden.",
           "partOfSpeech": "verb"
@@ -5593,6 +5865,53 @@
       ],
       "relatedWords": []
     },
+    "hindermost": {
+      "word": "HINDERMOST; HINDMOST",
+      "definitions": [
+        {
+          "text": "Furthest in or toward the rear; last. \"Rachel and Joseph hindermost.\" Gen. xxxiii. 2.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hindmost": {
+      "word": "HINDERMOST; HINDMOST",
+      "definitions": [
+        {
+          "text": "Furthest in or toward the rear; last. \"Rachel and Joseph hindermost.\" Gen. xxxiii. 2.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "aft",
+        "after",
+        "aftermost",
+        "back",
+        "backward",
+        "closing",
+        "concluding",
+        "eventual",
+        "final",
+        "hind",
+        "hinder",
+        "hindermost",
+        "hindhand",
+        "lag",
+        "latest",
+        "latter",
+        "posterior",
+        "postern",
+        "rear",
+        "rearmost",
+        "rearward",
+        "retral",
+        "retrograde",
+        "tail",
+        "terminal",
+        "ultimate"
+      ]
+    },
     "hindgut": {
       "word": "HINDGUT",
       "definitions": [
@@ -5623,7 +5942,7 @@
       ],
       "relatedWords": []
     },
-    "hindoohindu": {
+    "hindoo": {
       "word": "HINDOO; HINDU",
       "definitions": [
         {
@@ -5633,7 +5952,21 @@
       ],
       "relatedWords": []
     },
-    "hindoocalendarhinducalendar": {
+    "hindu": {
+      "word": "HINDOO; HINDU",
+      "definitions": [
+        {
+          "text": "A native inhabitant of Hindostan. As an ethnical term it is confined to the Dravidian and Aryan races; as a religious name it is restricted to followers of the Veda.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Hindoo.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hindoocalendar": {
       "word": "HINDOO CALENDAR; HINDU CALENDAR",
       "definitions": [
         {
@@ -5643,7 +5976,17 @@
       ],
       "relatedWords": []
     },
-    "hindooismhinduism": {
+    "hinducalendar": {
+      "word": "HINDOO CALENDAR; HINDU CALENDAR",
+      "definitions": [
+        {
+          "text": "A lunisolar calendar of India, according to which the year is divided into twelve months, with an extra month inserted after every month in which two new moons occur (once in three years). The intercalary month has the name of the one which precedes it. The year usually commences about April 11. The months are follows: Baisakh . . . . . . . . . . April-May Jeth . . . . . . . . . . . . . May-June Asarh . . . . . . . . . . . . June-July Sawan (Sarawan) . . . . . . . July-Aug. Bhadon . . . . . . . . . . . Aug.-Sept. Asin (Kuar). . . . . . . . . . Sept.-Oct. Katik (Kartik) . . . . . . . . Oct.-Nov. Aghan . . . . . . . . . . . . Nov.-Dec. Pus . . . . . . . . . . . . . Dec.-Jan. Magh . . . . . . . . . . . . . Jan.-Feb. Phagun (Phalgun) . . . . . . . Feb.-March Chait . . . . . . . . . . . . March-April",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hindooism": {
       "word": "HINDOOISM; HINDUISM",
       "definitions": [
         {
@@ -5653,7 +5996,31 @@
       ],
       "relatedWords": []
     },
-    "hindoostaneehindustani": {
+    "hinduism": {
+      "word": "HINDOOISM; HINDUISM",
+      "definitions": [
+        {
+          "text": "The religious doctrines and rites of the Hindoos; Brahmanism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hindoostanee": {
+      "word": "HINDOOSTANEE; HINDUSTANI",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Hindoos or their language.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The language of Hindostan; the name given by Europeans to the most generally spoken of the modern Aryan languages of India. It is Hindi with the addition of Persian and Arabic words.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hindustani": {
       "word": "HINDOOSTANEE; HINDUSTANI",
       "definitions": [
         {
@@ -5764,16 +6131,6 @@
         "time lag",
         "wait"
       ]
-    },
-    "hindu": {
-      "word": "HINDU",
-      "definitions": [
-        {
-          "text": "Same as Hindoo.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
     },
     "hine": {
       "word": "HINE",
@@ -5999,7 +6356,7 @@
       ],
       "relatedWords": []
     },
-    "hinniatehinny": {
+    "hinniate": {
       "word": "HINNIATE; HINNY",
       "definitions": [
         {
@@ -6010,8 +6367,12 @@
       "relatedWords": []
     },
     "hinny": {
-      "word": "HINNY",
+      "word": "HINNIATE; HINNY",
       "definitions": [
+        {
+          "text": "To neigh; to whinny. [Obs.]",
+          "partOfSpeech": ""
+        },
         {
           "text": "A hybrid between a stallion and an ass.",
           "partOfSpeech": "noun"
@@ -6450,6 +6811,10 @@
         {
           "text": "Used to excite attention or as a signal; as, hip, hip, hurra!",
           "partOfSpeech": "interjection"
+        },
+        {
+          "text": "See Hyp, n. [Colloq.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -6558,19 +6923,23 @@
         "wrist"
       ]
     },
-    "hipehype": {
-      "word": "HIPE; HYPE",
+    "hipps": {
+      "word": "HIP; HIPPS",
       "definitions": [
         {
-          "text": "A throw in which the wrestler lifts his opponent from the ground, swings him to one side, knocks up his nearer thigh from the back with the knee, and throws him on his back.",
+          "text": "See Hyp, n. [Colloq.]",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
     "hipe": {
-      "word": "HIPE",
+      "word": "HIPE; HYPE",
       "definitions": [
+        {
+          "text": "A throw in which the wrestler lifts his opponent from the ground, swings him to one side, knocks up his nearer thigh from the back with the knee, and throws him on his back.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To throw by means of a hipe. -- Hip\"er (#), n.",
           "partOfSpeech": "verb"
@@ -6598,7 +6967,17 @@
       ],
       "relatedWords": []
     },
-    "hippahippe": {
+    "hippa": {
+      "word": "HIPPA; HIPPE",
+      "definitions": [
+        {
+          "text": "A genus of marine decapod crustaceans, which burrow rapidly in the sand by pushing themselves backward; -- called also bait bug. See Illust. under Anomura.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hippe": {
       "word": "HIPPA; HIPPE",
       "definitions": [
         {
@@ -6618,7 +6997,17 @@
       ],
       "relatedWords": []
     },
-    "hippedhippish": {
+    "hipped": {
+      "word": "HIPPED; HIPPISH",
+      "definitions": [
+        {
+          "text": "Somewhat hypochondriac; melancholy. See Hyppish. [Colloq.] When we are hipped or in high spirits. R. L. Stevenson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hippish": {
       "word": "HIPPED; HIPPISH",
       "definitions": [
         {
@@ -6632,7 +7021,7 @@
       "word": "HIPPOBOSCA",
       "definitions": [
         {
-          "text": "A genus of dipterous insects including the horsefly or horse",
+          "text": "A genus of dipterous insects including the horsefly or horse tick.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7045,7 +7434,21 @@
       ],
       "relatedWords": []
     },
-    "hircinehircinous": {
+    "hircine": {
+      "word": "HIRCINE; HIRCINOUS",
+      "definitions": [
+        {
+          "text": "Goatlike; of or pertaining to a goat or the goats.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of a strong goatish smell.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hircinous": {
       "word": "HIRCINE; HIRCINOUS",
       "definitions": [
         {
@@ -7077,6 +7480,18 @@
         {
           "text": "A bailment by which the use of a thing, or the services and labor of a person, are contracted for at a certain price or reward. Story.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To procure (any chattel or estate) from another person, for temporary use, for a compensation or equivalent; to purchase the use or enjoyment of for a limited time; as, to hire a farm for a year; to hire money.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To engage or purchase the service, labor, or interest of (any one) for a specific purpose, by payment of wages; as, to hire a servant, an agent, or an advocate.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To grant the temporary use of, for compensation; to engage to give the service of, for a price; to let; to lease; -- now usually with out, and often reflexively; as, he has hired out his horse, or his time. They . . . have hired out themselves for bread. 1 Sam. ii. 5.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": [
@@ -7192,24 +7607,6 @@
         "wharfage"
       ]
     },
-    "hirenhurenashakintodhurengheuerndanhyresw": {
-      "word": "hiren, huren, AS. h; akin to D. huren, G. heuern, Dan. hyre, Sw.",
-      "definitions": [
-        {
-          "text": "To procure (any chattel or estate) from another person, for temporary use, for a compensation or equivalent; to purchase the use or enjoyment of for a limited time; as, to hire a farm for a year; to hire money.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To engage or purchase the service, labor, or interest of (any one) for a specific purpose, by payment of wages; as, to hire a servant, an agent, or an advocate.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To grant the temporary use of, for compensation; to engage to give the service of, for a price; to let; to lease; -- now usually with out, and often reflexively; as, he has hired out his horse, or his time. They . . . have hired out themselves for bread. 1 Sam. ii. 5.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "hireless": {
       "word": "HIRELESS",
       "definitions": [
@@ -7260,7 +7657,108 @@
         "worker"
       ]
     },
-    "hirepurchasehirepurchaseagreementhireandpurchaseagreement": {
+    "hirepurchase": {
+      "word": "HIRE PURCHASE; HIRE PURCHASE AGREEMENT; HIRE AND PURCHASE AGREEMENT",
+      "definitions": [
+        {
+          "text": "A contract (more fully called contract of hire with an option of purchase) in which a person hires goods for a specified period and at a fixed rent, with the added condition that if he shall retain the goods for the full period and pay all the installments of rent as they become due the contract shall determine and the title vest absolutely in him, and that if he chooses he may at any time during the term surrender the goods and be quit of any liability for future installments upon the contract. In the United States such a contract is generally treated as a conditional sale, and the term hire purchase is also sometimes applied to a contract in which the hirer is not free to avoid future liability by surrender of the goods. In England, however, if the hirer does not have this right the contract is a sale.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "acquitment",
+        "acquittal",
+        "acquittance",
+        "amortization",
+        "amortizement",
+        "binder",
+        "borrowing",
+        "buy",
+        "buying",
+        "buying power",
+        "buying up",
+        "cash",
+        "cash payment",
+        "catalog buying",
+        "clearance",
+        "coemption",
+        "consumer power",
+        "consumer sovereignty",
+        "consumerism",
+        "cornering",
+        "debt",
+        "debt service",
+        "debtor",
+        "defrayal",
+        "defrayment",
+        "deposit",
+        "disbursal",
+        "discharge",
+        "doling out",
+        "down payment",
+        "earnest",
+        "earnest money",
+        "emption",
+        "financing",
+        "hire purchase plan",
+        "hitting",
+        "hitting-up",
+        "hocking",
+        "impulse buying",
+        "installment",
+        "installment buying",
+        "installment plan",
+        "interest payment",
+        "liquidation",
+        "mail-order buying",
+        "marketing",
+        "money illusion",
+        "money-raising",
+        "monthly payments",
+        "mortgaging",
+        "never-never",
+        "pawning",
+        "paying",
+        "paying off",
+        "paying out",
+        "paying up",
+        "payment",
+        "payment in kind",
+        "payoff",
+        "pledging",
+        "prepayment",
+        "purchase",
+        "purchasing",
+        "purchasing power",
+        "quarterly payments",
+        "quittance",
+        "rebuying",
+        "regular payments",
+        "remittance",
+        "repurchase",
+        "retirement",
+        "satisfaction",
+        "settlement",
+        "shopping",
+        "shopping spree",
+        "sinking-fund payment",
+        "spot cash",
+        "touching",
+        "weekly payments",
+        "window-shopping"
+      ]
+    },
+    "hirepurchaseagreement": {
+      "word": "HIRE PURCHASE; HIRE PURCHASE AGREEMENT; HIRE AND PURCHASE AGREEMENT",
+      "definitions": [
+        {
+          "text": "A contract (more fully called contract of hire with an option of purchase) in which a person hires goods for a specified period and at a fixed rent, with the added condition that if he shall retain the goods for the full period and pay all the installments of rent as they become due the contract shall determine and the title vest absolutely in him, and that if he chooses he may at any time during the term surrender the goods and be quit of any liability for future installments upon the contract. In the United States such a contract is generally treated as a conditional sale, and the term hire purchase is also sometimes applied to a contract in which the hirer is not free to avoid future liability by surrender of the goods. In England, however, if the hirer does not have this right the contract is a sale.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hireandpurchaseagreement": {
       "word": "HIRE PURCHASE; HIRE PURCHASE AGREEMENT; HIRE AND PURCHASE AGREEMENT",
       "definitions": [
         {
@@ -7276,6 +7774,26 @@
         {
           "text": "One who hires.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hires": {
+      "word": "HIRES; HIRS",
+      "definitions": [
+        {
+          "text": "Hers; theirs. See Here, pron. [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hirs": {
+      "word": "HIRES; HIRS",
+      "definitions": [
+        {
+          "text": "Hers; theirs. See Here, pron. [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
         }
       ],
       "relatedWords": []
@@ -7949,11 +8467,21 @@
       ],
       "relatedWords": []
     },
-    "histologichistological": {
+    "histologic": {
       "word": "HISTOLOGIC; HISTOLOGICAL",
       "definitions": [
         {
-          "text": "Pertaining to histology, or to the microscopic structure of the",
+          "text": "Pertaining to histology, or to the microscopic structure of the tissues of living organisms.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "histological": {
+      "word": "HISTOLOGIC; HISTOLOGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to histology, or to the microscopic structure of the tissues of living organisms.",
           "partOfSpeech": ""
         }
       ],
@@ -8063,15 +8591,104 @@
       ],
       "relatedWords": []
     },
-    "historichistorical": {
+    "historic": {
       "word": "HISTORIC; HISTORICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to history, or the record of past events; as,",
+          "text": "Of or pertaining to history, or the record of past events; as, an historical poem; the historic page. There warriors frowning in historic brass. Pope. Historical painting, that branch of painting which represents the events of history. the circumstances of time, place, etc., under which it was written. unity and significance of a past era or age.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
+    },
+    "historical": {
+      "word": "HISTORIC; HISTORICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to history, or the record of past events; as, an historical poem; the historic page. There warriors frowning in historic brass. Pope. Historical painting, that branch of painting which represents the events of history. the circumstances of time, place, etc., under which it was written. unity and significance of a past era or age.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "absolute",
+        "actual",
+        "admitting no question",
+        "ascertained",
+        "attested",
+        "authentic",
+        "authenticated",
+        "autobiographical",
+        "biographical",
+        "categorically true",
+        "certain",
+        "certified",
+        "chronologic",
+        "confirmable",
+        "confirmed",
+        "corroborated",
+        "de facto",
+        "demonstrable",
+        "demonstratable",
+        "demonstrated",
+        "determined",
+        "documentary",
+        "documented",
+        "effectual",
+        "established",
+        "factual",
+        "for real",
+        "genuine",
+        "hagiographic",
+        "historic",
+        "historied",
+        "historiographic",
+        "honest-to-God",
+        "inappealable",
+        "incontestable",
+        "incontrovertible",
+        "indisputable",
+        "indubitable",
+        "irrefragable",
+        "irrefutable",
+        "legendary",
+        "martyrologic",
+        "not in error",
+        "objectively true",
+        "positive",
+        "provable",
+        "proved",
+        "real",
+        "recorded",
+        "reliable",
+        "self-evident",
+        "substantial",
+        "substantiated",
+        "sure-enough",
+        "testable",
+        "traditional",
+        "true",
+        "true as gospel",
+        "truthful",
+        "unanswerable",
+        "unconfutable",
+        "unconfuted",
+        "undeniable",
+        "undenied",
+        "undoubted",
+        "unerroneous",
+        "unfallacious",
+        "unfalse",
+        "unimpeachable",
+        "unmistaken",
+        "unquestionable",
+        "unrefutable",
+        "unrefuted",
+        "validated",
+        "veracious",
+        "verifiable",
+        "verified",
+        "veritable"
+      ]
     },
     "historically": {
       "word": "HISTORICALLY",
@@ -8387,11 +9004,74 @@
       ],
       "relatedWords": []
     },
-    "histrionichistrionical": {
+    "histrionic": {
       "word": "HISTRIONIC; HISTRIONICAL",
       "definitions": [
         {
-          "text": "Of or relating to the stage or a stageplayer; befitting a",
+          "text": "Of or relating to the stage or a stageplayer; befitting a theatre; theatrical; -- sometimes in a bad sense. Tainted with false and histrionic feeling. De Quincey.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "actor-proof",
+        "affected",
+        "all-star",
+        "artificial",
+        "ballet",
+        "balletic",
+        "cinematic",
+        "cinematographic",
+        "dramatic",
+        "dramatical",
+        "dramaturgic",
+        "emotionalistic",
+        "emotive",
+        "film",
+        "filmic",
+        "ham",
+        "hammy",
+        "hysteric",
+        "insincere",
+        "la-di-da",
+        "legitimate",
+        "maniere",
+        "mannered",
+        "melodramatic",
+        "milked",
+        "monodramatic",
+        "movie",
+        "nonrational",
+        "operatic",
+        "overacted",
+        "overdone",
+        "overemotional",
+        "overplayed",
+        "pretentious",
+        "scenic",
+        "sensational",
+        "sensationalistic",
+        "spectacular",
+        "stagelike",
+        "stageworthy",
+        "stagy",
+        "starstruck",
+        "stellar",
+        "theaterlike",
+        "theatrical",
+        "thespian",
+        "thrown away",
+        "underacted",
+        "underplayed",
+        "unnatural",
+        "unreasoning",
+        "vaudevillian"
+      ]
+    },
+    "histrionical": {
+      "word": "HISTRIONIC; HISTRIONICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to the stage or a stageplayer; befitting a theatre; theatrical; -- sometimes in a bad sense. Tainted with false and histrionic feeling. De Quincey.",
           "partOfSpeech": "adjective"
         }
       ],

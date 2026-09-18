@@ -362,7 +362,17 @@
       ],
       "relatedWords": []
     },
-    "ilkonilkoon": {
+    "ilkon": {
+      "word": "ILKON; ILKOON",
+      "definitions": [
+        {
+          "text": "Each one; every one. [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ilkoon": {
       "word": "ILKON; ILKOON",
       "definitions": [
         {
@@ -700,7 +710,7 @@
       "word": "ILLAUDABLE",
       "definitions": [
         {
-          "text": "Not laudable; not praise-worthy; worthy of censure or",
+          "text": "Not laudable; not praise-worthy; worthy of censure or disapprobation. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -715,6 +725,63 @@
         }
       ],
       "relatedWords": []
+    },
+    "illbred": {
+      "word": "ILL-BRED",
+      "definitions": [
+        {
+          "text": "Badly educated or brought up; impolite; incivil; rude. See Note under Ill, adv.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Gothic",
+        "Neanderthal",
+        "animal",
+        "barbarian",
+        "barbaric",
+        "barbarous",
+        "bestial",
+        "boorish",
+        "brutal",
+        "brutish",
+        "caddish",
+        "coarse",
+        "crude",
+        "impolite",
+        "inconsiderate",
+        "insensitive",
+        "loutish",
+        "louty",
+        "nasty",
+        "noncivilized",
+        "offensive",
+        "outlandish",
+        "primitive",
+        "rough-and-ready",
+        "savage",
+        "tactless",
+        "troglodytic",
+        "uncivil",
+        "uncivilized",
+        "uncombed",
+        "uncouth",
+        "uncultivated",
+        "uncultured",
+        "unfeminine",
+        "ungenteel",
+        "ungentle",
+        "ungentlemanly",
+        "unkempt",
+        "unladylike",
+        "unlicked",
+        "unpolished",
+        "unrefined",
+        "unsolicitous",
+        "untamed",
+        "vulgar",
+        "wild"
+      ]
     },
     "illecebration": {
       "word": "ILLECEBRATION",
@@ -948,7 +1015,7 @@
       "word": "ILLEGIBLE",
       "definitions": [
         {
-          "text": "Incapable of being read; not legible; as, illegible",
+          "text": "Incapable of being read; not legible; as, illegible handwriting; an illegible inscription.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1159,7 +1226,7 @@
       "word": "ILL-FAVORED",
       "definitions": [
         {
-          "text": "Wanting beauty or attractiveness; deformed; ugly; ill-looking.",
+          "text": "Wanting beauty or attractiveness; deformed; ugly; ill-looking. Ill-favored and lean-fleshed. Gen. xli. 3.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1338,7 +1405,7 @@
       "word": "ILLICIT",
       "definitions": [
         {
-          "text": "Not permitted or allowed; prohibited; unlawful; as, illicit trade; illicit intercourse; illicit pleasure.",
+          "text": "Not permitted or allowed; prohibited; unlawful; as, illicit trade; illicit intercourse; illicit pleasure. One illicit . . . transaction always leads to another. Burke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1448,7 +1515,7 @@
       "word": "ILLIMITABLE",
       "definitions": [
         {
-          "text": "Incapable of being limited or bounded; immeasurable; limitless; boundless; as, illimitable space. The wild, the irregular, the illimitable, and the luxuriant, have their appropriate force of beauty. De Quincey.",
+          "text": "Incapable of being limited or bounded; immeasurable; limitless; boundless; as, illimitable space. The wild, the irregular, the illimitable, and the luxuriant, have their appropriate force of beauty. De Quincey. infinite; immense; vast.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1460,6 +1527,16 @@
         {
           "text": "State of being illimitable; want of, or freedom from, limitation. Bp. Hall.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "illimited": {
+      "word": "ILLIMITED",
+      "definitions": [
+        {
+          "text": "Not limited; interminable. Bp. Hall. The absoluteness and illimitedness of his commission was generally much spoken of. Clarendon.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1546,7 +1623,7 @@
       "word": "ILLITERATE",
       "definitions": [
         {
-          "text": "Ignorant of letters or books; unlettered; uninstructed; uneducated; as, an illiterate man, or people.",
+          "text": "Ignorant of letters or books; unlettered; uninstructed; uneducated; as, an illiterate man, or people. Ignorant.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1683,7 +1760,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Intractable; not yielding to culture. [R.] \"Ill-natured land.\" J.",
+          "text": "Intractable; not yielding to culture. [R.] \"Ill-natured land.\" J. Philips.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1827,7 +1904,7 @@
       "word": "ILLOGICAL",
       "definitions": [
         {
-          "text": "Ignorant or negligent of the rules of logic or correct reasoning; as, an illogical disputant; contrary of the rules of logic",
+          "text": "Ignorant or negligent of the rules of logic or correct reasoning; as, an illogical disputant; contrary of the rules of logic or sound reasoning; as, an illogical inference.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2472,6 +2549,69 @@
         }
       ],
       "relatedWords": []
+    },
+    "illuminating": {
+      "word": "ILLUMINATING",
+      "definitions": [
+        {
+          "text": "Giving or producing light; used for illumination. Illuminating gas. See Gas, n., 2 (a).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "allegorizing",
+        "annotative",
+        "autodidactic",
+        "brightening",
+        "clarifying",
+        "coeducational",
+        "critical",
+        "cultural",
+        "demonstrative",
+        "demythologizing",
+        "didactic",
+        "disciplinary",
+        "edifying",
+        "editorial",
+        "educating",
+        "educational",
+        "educative",
+        "elucidative",
+        "enlightening",
+        "euhemeristic",
+        "exegetic",
+        "exemplificative",
+        "exhortatory",
+        "explaining",
+        "explanatory",
+        "explicative",
+        "explicatory",
+        "expositive",
+        "expository",
+        "glossarial",
+        "homiletic",
+        "hortatory",
+        "illuminant",
+        "illuminative",
+        "illumining",
+        "illustrative",
+        "informative",
+        "initiatory",
+        "instructive",
+        "introductory",
+        "lecturing",
+        "lightening",
+        "lighting",
+        "preaching",
+        "preceptive",
+        "propaedeutic",
+        "rationalistic",
+        "rationalizing",
+        "scholiastic",
+        "self-teaching",
+        "teaching",
+        "tuitionary"
+      ]
     },
     "illumination": {
       "word": "ILLUMINATION",

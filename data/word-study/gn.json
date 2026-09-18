@@ -338,7 +338,17 @@
       ],
       "relatedWords": []
     },
-    "gnathonicgnathonical": {
+    "gnathonic": {
+      "word": "GNATHONIC; GNATHONICAL",
+      "definitions": [
+        {
+          "text": "Flattering; deceitful. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gnathonical": {
       "word": "GNATHONIC; GNATHONICAL",
       "definitions": [
         {
@@ -807,7 +817,7 @@
         "words of wisdom"
       ]
     },
-    "gnomicgnomical": {
+    "gnomic": {
       "word": "GNOMIC; GNOMICAL",
       "definitions": [
         {
@@ -815,11 +825,60 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Spartan",
+        "abbreviated",
+        "abridged",
+        "aphoristic",
+        "aposiopestic",
+        "axiomatic",
+        "brief",
+        "brusque",
+        "clipped",
+        "close",
+        "compact",
+        "compendious",
+        "compressed",
+        "concise",
+        "condensed",
+        "contracted",
+        "crisp",
+        "curt",
+        "cut",
+        "docked",
+        "elliptic",
+        "epigrammatic",
+        "formulaic",
+        "formulistic",
+        "laconic",
+        "pithy",
+        "platitudinous",
+        "pointed",
+        "proverbial",
+        "pruned",
+        "pungent",
+        "reserved",
+        "sententious",
+        "short",
+        "short and sweet",
+        "shortened",
+        "succinct",
+        "summary",
+        "synopsized",
+        "taciturn",
+        "terse",
+        "tight",
+        "to the point",
+        "truncated"
+      ]
     },
     "gnomical": {
-      "word": "GNOMICAL",
+      "word": "GNOMIC; GNOMICAL",
       "definitions": [
+        {
+          "text": "Sententious; uttering or containing maxims, or striking detached thoughts; aphoristic. A city long famous as the seat of elegiac and gnomic poetry. G. R. Lewes. Gnomic Poets, Greek poets, as Theognis and Solon, of the sixth century B. C., whose writings consist of short sententious precepts and reflections.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Gnomonical. Boyle.",
           "partOfSpeech": "adjective"
@@ -837,7 +896,17 @@
       ],
       "relatedWords": []
     },
-    "gnomologicgnomological": {
+    "gnomologic": {
+      "word": "GNOMOLOGIC; GNOMOLOGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, of the nature of, or resembling, a gnomology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gnomological": {
       "word": "GNOMOLOGIC; GNOMOLOGICAL",
       "definitions": [
         {
@@ -891,7 +960,17 @@
       ],
       "relatedWords": []
     },
-    "gnomonicgnomonical": {
+    "gnomonic": {
+      "word": "GNOMONIC; GNOMONICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the gnomon, or the art of dialing. Gnomonic projection, a projection of the circles of the sphere, in which the point of sight is taken at the center of the sphere, and the principal plane is tangent to the surface of the sphere. \"The gnomonic projection derives its name from the connection between the methods of describing it and those for the construction of a gnomon or dial.\" Cyc. of Arts & Sciences.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gnomonical": {
       "word": "GNOMONIC; GNOMONICAL",
       "definitions": [
         {

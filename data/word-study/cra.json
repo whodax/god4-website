@@ -1405,6 +1405,16 @@
       ],
       "relatedWords": []
     },
+    "crackaloo": {
+      "word": "CRACK-LOO; CRACKALOO",
+      "definitions": [
+        {
+          "text": "A kind of gambling game consisting in pitching coins to or towards the ceiling of a room so that they shall fall as near as possible to a certain crack in the floor. [Gamblers' Cant, U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "crackbrained": {
       "word": "CRACK-BRAINED",
       "definitions": [
@@ -1753,6 +1763,16 @@
         "zwieback"
       ]
     },
+    "crackerstate": {
+      "word": "CRACKER STATE",
+      "definitions": [
+        {
+          "text": "Georgia; -- a nickname. See Cracker, n. 5.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "crackle": {
       "word": "CRACKLE",
       "definitions": [
@@ -1884,7 +1904,7 @@
       ],
       "relatedWords": []
     },
-    "crackloocrackaloo": {
+    "crackloo": {
       "word": "CRACK-LOO; CRACKALOO",
       "definitions": [
         {
@@ -3177,6 +3197,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "A boast. See Crack, n. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Any species or rail of the genera Crex and Porzana; -- so called from its singular cry. See Corncrake.",
           "partOfSpeech": "noun"
         }
@@ -3433,7 +3457,17 @@
       ],
       "relatedWords": []
     },
-    "cramoisiecramoisy": {
+    "cramoisie": {
+      "word": "CRAMOISIE; CRAMOISY",
+      "definitions": [
+        {
+          "text": "Crimson. [Obs.] A splendid seignior, magnificent in cramoisy velevet. Motley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cramoisy": {
       "word": "CRAMOISIE; CRAMOISY",
       "definitions": [
         {
@@ -3956,6 +3990,16 @@
       ],
       "relatedWords": []
     },
+    "cran": {
+      "word": "CRAN; CRANE",
+      "definitions": [
+        {
+          "text": "A measure for fresh herrings, -- as many as will fill a barrel. [Scot.] H. Miller.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "cranage": {
       "word": "CRANAGE",
       "definitions": [
@@ -3990,16 +4034,6 @@
       ],
       "relatedWords": []
     },
-    "crancrane": {
-      "word": "CRAN; CRANE",
-      "definitions": [
-        {
-          "text": "A measure for fresh herrings, -- as many as will fill a barrel. [Scot.] H. Miller.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "crandall": {
       "word": "CRANDALL",
       "definitions": [
@@ -4015,8 +4049,12 @@
       "relatedWords": []
     },
     "crane": {
-      "word": "CRANE",
+      "word": "CRAN; CRANE",
       "definitions": [
+        {
+          "text": "A measure for fresh herrings, -- as many as will fill a barrel. [Scot.] H. Miller.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "(Zoöl.)",
           "partOfSpeech": "noun"
@@ -4281,7 +4319,17 @@
       ],
       "relatedWords": []
     },
-    "craniometriccraniometrical": {
+    "craniometric": {
+      "word": "CRANIOMETRIC; CRANIOMETRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to craniometry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "craniometrical": {
       "word": "CRANIOMETRIC; CRANIOMETRICAL",
       "definitions": [
         {
@@ -4960,7 +5008,17 @@
       ],
       "relatedWords": []
     },
-    "crannogcrannoge": {
+    "crannog": {
+      "word": "CRANNOG; CRANNOGE",
+      "definitions": [
+        {
+          "text": "One of the stockaded islands in Scotland and Ireland which in ancient times were numerous in the lakes of both countries. They may be regarded as the very latest class of prehistoric strongholds, reaching their greatest development in early historic times, and surviving through the Middle Ages. See also Lake dwellings, under Lake. Encyc. Brit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crannoge": {
       "word": "CRANNOG; CRANNOGE",
       "definitions": [
         {
@@ -5405,7 +5463,17 @@
       ],
       "relatedWords": []
     },
-    "crapulacrapule": {
+    "crapula": {
+      "word": "CRAPULA; CRAPULE",
+      "definitions": [
+        {
+          "text": "Same as Crapulence.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crapule": {
       "word": "CRAPULA; CRAPULE",
       "definitions": [
         {
@@ -5425,7 +5493,17 @@
       ],
       "relatedWords": []
     },
-    "crapulentcrapulous": {
+    "crapulent": {
+      "word": "CRAPULENT; CRAPULOUS",
+      "definitions": [
+        {
+          "text": "Surcharged with liquor; sick from excessive indulgence in liquor; drunk; given to excesses. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crapulous": {
       "word": "CRAPULENT; CRAPULOUS",
       "definitions": [
         {
@@ -6061,7 +6139,17 @@
         "wrongheaded"
       ]
     },
-    "crassamentcrassamentum": {
+    "crassament": {
+      "word": "CRASSAMENT; CRASSAMENTUM",
+      "definitions": [
+        {
+          "text": "A semisolid mass or clot, especially that formed in coagulation of the blood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crassamentum": {
       "word": "CRASSAMENT; CRASSAMENTUM",
       "definitions": [
         {
@@ -6420,20 +6508,6 @@
       ],
       "relatedWords": []
     },
-    "craticulafinehurdleworkasmallgridirondimofcrateshurdle": {
-      "word": "craticula fine hurdlework, a small gridiron, dim. of crates hurdle.",
-      "definitions": [
-        {
-          "text": "To broil on a grill or gridiron. Boiling of men in caldrons, grilling them on gridirons. Marvell.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To torment, as if by broiling. Dickens.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "craunch": {
       "word": "CRAUNCH",
       "definitions": [
@@ -6561,6 +6635,10 @@
           "partOfSpeech": "adjective"
         },
         {
+          "text": "A recreant; a coward; a weak-hearted, spiritless fellow. See Recreant, n. King Henry. Is it fit this soldier keep his oath Fluellen.He is a craven and a villain else. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To make recreant, weak, spiritless, or cowardly. [Obs.] There is a prohibition so divine, That cravens my weak hand. Shak.",
           "partOfSpeech": "verb"
         }
@@ -6601,7 +6679,7 @@
       "word": "CRAVING",
       "definitions": [
         {
-          "text": "Vehement or urgent desire; longing for; beseeching.",
+          "text": "Vehement or urgent desire; longing for; beseeching. A succession of cravings and satiety. L'Estrange.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6660,7 +6738,7 @@
         "withdrawal symptoms"
       ]
     },
-    "crawfishcrayfish": {
+    "crawfish": {
       "word": "CRAWFISH; CRAYFISH",
       "definitions": [
         {
@@ -6910,7 +6988,17 @@
       ],
       "relatedWords": []
     },
-    "craycrayer": {
+    "cray": {
+      "word": "CRAY; CRAYER",
+      "definitions": [
+        {
+          "text": "See Crare. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crayer": {
       "word": "CRAY; CRAYER",
       "definitions": [
         {
@@ -6921,8 +7009,12 @@
       "relatedWords": []
     },
     "crayfish": {
-      "word": "CRAYFISH",
+      "word": "CRAWFISH; CRAYFISH",
       "definitions": [
+        {
+          "text": "Any crustacean of the family Astacidæ, resembling the lobster, but smaller, and found in fresh waters. Crawfishes are esteemed very delicate food both in Europe and America. The North American species are numerous and mostly belong to the genus Cambarus. The blind crawfish of the Mamoth Cave is Cambarus pellucidus. The common European species is Astacus fluviatilis.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Crawfish.",
           "partOfSpeech": "noun"
@@ -7288,7 +7380,7 @@
       ],
       "relatedWords": []
     },
-    "crazemillcrazingmill": {
+    "crazemill": {
       "word": "CRAZE-MILL; CRAZING-MILL",
       "definitions": [
         {
@@ -7317,6 +7409,16 @@
         },
         {
           "text": "The state of being broken in mind; imbecility or weakness of intellect; derangement.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crazingmill": {
+      "word": "CRAZE-MILL; CRAZING-MILL",
+      "definitions": [
+        {
+          "text": "A mill for grinding tin ore.",
           "partOfSpeech": "noun"
         }
       ],

@@ -1,24 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "onroughbrokengroundfrtherootofebreakseebreakvt": {
-      "word": "on rough, broken ground, fr. the root of E. break. See Break, v. t.,",
-      "definitions": [
-        {
-          "text": "(Bot.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A fern of the genus Pteris, esp. the P. aquilina, common in almost all countries. It has solitary stems dividing into three principal branches. Less properly: Any fern.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A thicket; a place overgrown with shrubs and brambles, with undergrowth and ferns, or with canes. Rounds rising hillocks, brakes obscure and rough, To shelter thee from tempest and from rain. Shak. He stayed not for brake, and he stopped not for stone. Sir W. Scott. Cane brake, a thicket of canes. See Canebrake.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "on": {
       "word": "ON",
       "definitions": [
@@ -149,7 +131,17 @@
       ],
       "relatedWords": []
     },
-    "onagraceousonagrarieous": {
+    "onagraceous": {
+      "word": "ONAGRACEOUS; ONAGRARIEOUS",
+      "definitions": [
+        {
+          "text": "Pertaining to, or resembling, a natural order of plants (Onagraceæ or Onagrarieæ), which includes the fuchsia, the willow- herb (Epilobium), and the evening primrose ().",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "onagrarieous": {
       "word": "ONAGRACEOUS; ONAGRARIEOUS",
       "definitions": [
         {
@@ -423,11 +415,15 @@
         {
           "text": "An interpreter of dreams. Bp. Warburton. Addison.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the interpretation of dreams. Addison.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "oneirocriticoneirocritical": {
+    "oneirocritical": {
       "word": "ONEIROCRITIC; ONEIROCRITICAL",
       "definitions": [
         {
@@ -437,7 +433,17 @@
       ],
       "relatedWords": []
     },
-    "oneirocriticismoneirocritics": {
+    "oneirocriticism": {
+      "word": "ONEIROCRITICISM; ONEIROCRITICS",
+      "definitions": [
+        {
+          "text": "The art of interpreting dreams.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "oneirocritics": {
       "word": "ONEIROCRITICISM; ONEIROCRITICS",
       "definitions": [
         {
@@ -596,6 +602,10 @@
         },
         {
           "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Growing on one side of a stem; as, one-sided flowers.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -779,7 +789,17 @@
       ],
       "relatedWords": []
     },
-    "onomanticonomantical": {
+    "onomantic": {
+      "word": "ONOMANTIC; ONOMANTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to onomancy. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "onomantical": {
       "word": "ONOMANTIC; ONOMANTICAL",
       "definitions": [
         {
@@ -979,12 +999,32 @@
       ],
       "relatedWords": []
     },
-    "ontogenesisontogeny": {
+    "ontogenesis": {
       "word": "ONTOGENESIS; ONTOGENY",
       "definitions": [
         {
           "text": "The history of the individual development of an organism; the history of the evolution of the germ; the development of an individual organism, -- in distinction from phylogeny, or evolution of the tribe. Called also henogenesis, henogeny.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ontogeny": {
+      "word": "ONTOGENESIS; ONTOGENY",
+      "definitions": [
+        {
+          "text": "The history of the individual development of an organism; the history of the evolution of the germ; the development of an individual organism, -- in distinction from phylogeny, or evolution of the tribe. Called also henogenesis, henogeny.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ontogenetic": {
+      "word": "ONTOGENETIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to ontogenesis; as, ontogenetic phenomena.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

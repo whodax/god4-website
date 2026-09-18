@@ -11,7 +11,7 @@
       ],
       "relatedWords": []
     },
-    "gybgybe": {
+    "gyb": {
       "word": "GYB; GYBE",
       "definitions": [
         {
@@ -22,8 +22,12 @@
       "relatedWords": []
     },
     "gybe": {
-      "word": "GYBE",
+      "word": "GYB; GYBE",
       "definitions": [
+        {
+          "text": "See Jib. [Obs.]",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Gibe.",
           "partOfSpeech": "noun"
@@ -205,22 +209,26 @@
       ],
       "relatedWords": []
     },
-    "gymnasticgymnastical": {
+    "gymnastic": {
       "word": "GYMNASTIC; GYMNASTICAL",
       "definitions": [
         {
           "text": "Pertaining to athletic exercises intended for health, defense, or diversion; -- said of games or exercises, as running, leaping, wrestling, throwing the discus, the javelin, etc.; also, pertaining to disciplinary exercises for the intellect; athletic; as, gymnastic exercises, contests, etc.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A gymnast. [Obs.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "gymnastic": {
-      "word": "GYMNASTIC",
+    "gymnastical": {
+      "word": "GYMNASTIC; GYMNASTICAL",
       "definitions": [
         {
-          "text": "A gymnast. [Obs.]",
-          "partOfSpeech": "noun"
+          "text": "Pertaining to athletic exercises intended for health, defense, or diversion; -- said of games or exercises, as running, leaping, wrestling, throwing the discus, the javelin, etc.; also, pertaining to disciplinary exercises for the intellect; athletic; as, gymnastic exercises, contests, etc.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -279,22 +287,26 @@
         "yoga"
       ]
     },
-    "gymnicgymnical": {
+    "gymnic": {
       "word": "GYMNIC; GYMNICAL",
       "definitions": [
         {
           "text": "Athletic; gymnastic. [Obs.] Have they not swordplayers, and every sort Of gymnic artists, wrestlers, riders, runners Milton.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "Athletic exercise. [Obs.] Burton.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "gymnic": {
-      "word": "GYMNIC",
+    "gymnical": {
+      "word": "GYMNIC; GYMNICAL",
       "definitions": [
         {
-          "text": "Athletic exercise. [Obs.] Burton.",
-          "partOfSpeech": "noun"
+          "text": "Athletic; gymnastic. [Obs.] Have they not swordplayers, and every sort Of gymnic artists, wrestlers, riders, runners Milton.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -419,7 +431,17 @@
       ],
       "relatedWords": []
     },
-    "gymnolaemagymnolaemata": {
+    "gymnolaema": {
+      "word": "GYMNOLAEMA; GYMNOLAEMATA",
+      "definitions": [
+        {
+          "text": "An order of Bryozoa, having no epistome.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gymnolaemata": {
       "word": "GYMNOLAEMA; GYMNOLAEMATA",
       "definitions": [
         {
@@ -559,7 +581,17 @@
       ],
       "relatedWords": []
     },
-    "gynaeceumgynaecium": {
+    "gynaeceum": {
+      "word": "GYNAECEUM; GYNAECIUM",
+      "definitions": [
+        {
+          "text": "The part of a large house, among the ancients, exclusively appropriated to women. [Written also gyneceum, gynecium.] Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gynaecium": {
       "word": "GYNAECEUM; GYNAECIUM",
       "definitions": [
         {
@@ -609,7 +641,17 @@
       ],
       "relatedWords": []
     },
-    "gynandriangynandrous": {
+    "gynandrian": {
+      "word": "GYNANDRIAN; GYNANDROUS",
+      "definitions": [
+        {
+          "text": "Having stamens inserted in the pistil; belonging to the class Gynandria.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gynandrous": {
       "word": "GYNANDRIAN; GYNANDROUS",
       "definitions": [
         {
@@ -1097,7 +1139,7 @@
       ],
       "relatedWords": []
     },
-    "gypsymothgipsymoth": {
+    "gypsymoth": {
       "word": "GYPSY MOTH; GIPSY MOTH",
       "definitions": [
         {
@@ -1470,7 +1512,7 @@
       "word": "GYRENCEPHALA",
       "definitions": [
         {
-          "text": "The higher orders of Mammalia, in which the cerebrum is",
+          "text": "The higher orders of Mammalia, in which the cerebrum is convoluted.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1602,7 +1644,7 @@
       ],
       "relatedWords": []
     },
-    "gyropigeongyropigeon": {
+    "gyropigeon": {
       "word": "GYROPIGEON; GYRO-PIGEON",
       "definitions": [
         {

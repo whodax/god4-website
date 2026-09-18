@@ -1020,6 +1020,10 @@
       "word": "DEBAUCH",
       "definitions": [
         {
+          "text": "To lead away from purity or excellence; to corrupt in character or principles; to mar; to vitiate; to pollute; to seduce; as, to debauch one's self by intemperance; to debauch a woman; to debauch an army. Learning not debauched by ambition. Burke. A man must have got his conscience thoroughly debauched and hardened before he can arrive to the height of sin. South. Her pride debauched her judgment and her eyes. Cowley.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "Excess in eating or drinking; intemperance; drunkenness; lewdness; debauchery. The first physicians by debauch were made. Dryden.",
           "partOfSpeech": "noun"
         },
@@ -2416,7 +2420,7 @@
         "unveiling"
       ]
     },
-    "debutantdebutante": {
+    "debutant": {
       "word": "DEBUTANT; DEBUTANTE",
       "definitions": [
         {
@@ -2424,7 +2428,73 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "abecedarian",
+        "alphabetarian",
+        "apprentice",
+        "articled clerk",
+        "baby",
+        "beginner",
+        "boot",
+        "catechumen",
+        "deb",
+        "entrant",
+        "fledgling",
+        "freshman",
+        "greenhorn",
+        "greeny",
+        "ignoramus",
+        "inductee",
+        "infant",
+        "initiate",
+        "learner",
+        "neophyte",
+        "nestling",
+        "new boy",
+        "newcomer",
+        "novice",
+        "novitiate",
+        "postulant",
+        "probationer",
+        "probationist",
+        "raw recruit",
+        "recruit",
+        "rookie",
+        "tenderfoot",
+        "trainee",
+        "tyro"
+      ]
+    },
+    "debutante": {
+      "word": "DEBUTANT; DEBUTANTE",
+      "definitions": [
+        {
+          "text": "A person who makes his (or her) first appearance before the public.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Beau Brummel",
+        "arbiter of fashion",
+        "clotheshorse",
+        "clubman",
+        "clubwoman",
+        "dandy",
+        "deb",
+        "fashion plate",
+        "fashionable",
+        "fop",
+        "man-about-town",
+        "mondain",
+        "mondaine",
+        "socialite",
+        "subdeb",
+        "subdebutante",
+        "swinger",
+        "taste-maker",
+        "tone-setter",
+        "trend-setter"
+      ]
     }
   }
 }

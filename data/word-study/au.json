@@ -1261,19 +1261,13 @@
       ],
       "relatedWords": []
     },
-    "aughtaucht": {
+    "aught": {
       "word": "AUGHT; AUCHT",
       "definitions": [
         {
           "text": "Property; possession. [Scot.] Sir W. Scott.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "aught": {
-      "word": "AUGHT",
-      "definitions": [
+        },
         {
           "text": "Anything; any part. [Also written ought.] There failed not aught of any good thing which the Lord has spoken. Josh. xxi. 45 But go, my son, and see if aught be wanting. Addison.",
           "partOfSpeech": "noun"
@@ -1323,6 +1317,16 @@
         "zero",
         "zilch"
       ]
+    },
+    "aucht": {
+      "word": "AUGHT; AUCHT",
+      "definitions": [
+        {
+          "text": "Property; possession. [Scot.] Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     },
     "augite": {
       "word": "AUGITE",
@@ -1532,7 +1536,7 @@
       "word": "AUGMENTATIVE",
       "definitions": [
         {
-          "text": "Having the quality or power of augmenting; expressing",
+          "text": "Having the quality or power of augmenting; expressing augmentation.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1928,7 +1932,7 @@
       ],
       "relatedWords": []
     },
-    "augustineaugustinian": {
+    "augustine": {
       "word": "AUGUSTINE; AUGUSTINIAN",
       "definitions": [
         {
@@ -1939,8 +1943,12 @@
       "relatedWords": []
     },
     "augustinian": {
-      "word": "AUGUSTINIAN",
+      "word": "AUGUSTINE; AUGUSTINIAN",
       "definitions": [
+        {
+          "text": "A member of one of the religious orders called after St. Augustine; an Austin friar.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Of or pertaining to St. Augustine, bishop of Hippo in Northern Africa (b. 354 -- d. 430), or to his doctrines. Augustinian canons, an order of monks once popular in England and Ireland; -- called also regular canons of St. Austin, and black canons. established in 1265 by Pope Alexander IV. It was introduced into the United States from Ireland in 1790. Augustine. 109th letter of St. Augustine, and adopted by the Augustinian orders.",
           "partOfSpeech": "adjective"
@@ -1952,7 +1960,17 @@
       ],
       "relatedWords": []
     },
-    "augustinianismaugustinism": {
+    "augustinianism": {
+      "word": "AUGUSTINIANISM; AUGUSTINISM",
+      "definitions": [
+        {
+          "text": "The doctrines held by Augustine or by the Augustinians.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "augustinism": {
       "word": "AUGUSTINIANISM; AUGUSTINISM",
       "definitions": [
         {
@@ -2070,7 +2088,17 @@
       ],
       "relatedWords": []
     },
-    "aulnageaulnager": {
+    "aulnage": {
+      "word": "AULNAGE; AULNAGER",
+      "definitions": [
+        {
+          "text": "See Alnage and Alnager.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aulnager": {
       "word": "AULNAGE; AULNAGER",
       "definitions": [
         {
@@ -2218,11 +2246,15 @@
         {
           "text": "Adventure; hap. [Obs.] In aunters, perchance.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To venture; to dare. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "aunterauntre": {
+    "auntre": {
       "word": "AUNTER; AUNTRE",
       "definitions": [
         {
@@ -2232,7 +2264,17 @@
       ],
       "relatedWords": []
     },
-    "auntieaunty": {
+    "auntie": {
+      "word": "AUNTIE; AUNTY",
+      "definitions": [
+        {
+          "text": "A familiar name for an aunt. In the southern United States a familiar term applied to aged negro women.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aunty": {
       "word": "AUNTIE; AUNTY",
       "definitions": [
         {
@@ -2416,7 +2458,7 @@
       ],
       "relatedWords": []
     },
-    "aureolaaureole": {
+    "aureola": {
       "word": "AUREOLA; AUREOLE",
       "definitions": [
         {
@@ -2445,6 +2487,93 @@
         }
       ],
       "relatedWords": []
+    },
+    "aureole": {
+      "word": "AUREOLA; AUREOLE",
+      "definitions": [
+        {
+          "text": "(R. C. Theol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A celestial crown or accidental glory added to the bliss of heaven, as a reward to those (as virgins, martyrs, preachers, etc.) who have overcome the world, the flesh, and the devil.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The circle of rays, or halo of light, with which painters surround the figure and represent the glory of Christ, saints, and others held in special reverence. envelops the whole body, an aureola. Fairholt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A halo, actual or figurative. The glorious aureole of light seen around the sun during total eclipses. Proctor. The aureole of young womanhood. O. W. Holmes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Areola, 2.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "O",
+        "annular muscle",
+        "annulus",
+        "anthelion",
+        "antisun",
+        "areola",
+        "aura",
+        "chaplet",
+        "circle",
+        "circuit",
+        "circumference",
+        "circus",
+        "closed circle",
+        "corona",
+        "coronet",
+        "countersun",
+        "crown",
+        "cycle",
+        "diadem",
+        "discus",
+        "disk",
+        "eternal return",
+        "fairy ring",
+        "garland",
+        "glory",
+        "halo",
+        "lasso",
+        "logical circle",
+        "loop",
+        "looplet",
+        "lunar corona",
+        "lunar halo",
+        "magic circle",
+        "mock moon",
+        "mock sun",
+        "moon dog",
+        "nimbus",
+        "noose",
+        "orbit",
+        "paraselene",
+        "parhelic circle",
+        "parhelion",
+        "radius",
+        "rainbow",
+        "ring",
+        "rondelle",
+        "round",
+        "roundel",
+        "saucer",
+        "solar corona",
+        "solar halo",
+        "sphincter",
+        "sun dog",
+        "vicious circle",
+        "wheel",
+        "wreath"
+      ]
     },
     "aurevoir": {
       "word": "AU REVOIR",
@@ -2624,7 +2753,17 @@
       ],
       "relatedWords": []
     },
-    "auriculateauriculated": {
+    "auriculate": {
+      "word": "AURICULATE; AURICULATED",
+      "definitions": [
+        {
+          "text": "Having ears or appendages like ears; eared. Esp.: (a) (Bot.) Having lobes or appendages like the ear; shaped like the ear; auricled. (b) (Zoöl.) Having an angular projection on one or both sides, as in certain bivalve shells, the foot of some gastropods, etc. Auriculate leaf, one having small appended leaves or lobes on each side of its petiole or base.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "auriculated": {
       "word": "AURICULATE; AURICULATED",
       "definitions": [
         {
@@ -2974,6 +3113,24 @@
         {
           "text": "To practice auscultation; to examine by auscultation.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "auscultation": {
+      "word": "AUSCULTATION",
+      "definitions": [
+        {
+          "text": "The act of listening or hearkening to. Hickes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An examination by listening either directly with the ear (immediate auscultation) applied to parts of the body, as the abdomen; or with the stethoscope (mediate ~), in order to distinguish sounds recognized as a sign of health or of disease.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3727,43 +3884,37 @@
         "welfare state"
       ]
     },
-    "authorityfromgrsonsandperhorigfromthepproftobe": {
-      "word": "authority, from Gr. sons and perh. orig. from the p. pr. of to be,",
-      "definitions": [
-        {
-          "text": "Having a genuine original or authority, in opposition to that which is false, fictitious, counterfeit, or apocryphal; being what it purports to be; genuine; not of doubtful origin; real; as, an authentic paper or register. To be avenged On him who had stole Jove's authentic fire. Milton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Authoritative. [Obs.] Milton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Of approved authority; true; trustworthy; credible; as, an authentic writer; an authentic portrait; authentic information.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Vested with all due formalities, and legally attested.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Having as immediate relation to the tonic, in distinction from plagal, which has a correspondent relation to the dominant in the octave below the tonic. to historical documents. We call a document genuine when it can be traced back ultimately to the author or authors from whom it professes to emanate. Hence, the word has the meaning, \"not changed from the original, uncorrupted, unadulterated:\" as, a genuine text. We call a document authentic when, on the ground of its being thus traced back, it may be relied on as true and authoritative (from the primary sense of \"having an author, vouched for\"); hence its extended signification, in general literature, of trustworthy, as resting on unquestionable authority or evidence; as, an authentic history; an authentic report of facts. A genuine book is that which was written by the person whose name it bears, as the author of it. An authentic book is that which relates matters of fact as they really happened. A book may be genuine without being, authentic, and a book may be authentic without being genuine. Bp. Watson. an authentic document) in the sense of \"produced by its professed author, not counterfeit.\"",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "authentic": {
       "word": "AUTHENTIC",
       "definitions": [
+        {
+          "text": "Having a genuine original or authority, in opposition to that which is false, fictitious, counterfeit, or apocryphal; being what it purports to be; genuine; not of doubtful origin; real; as, an authentic paper or register. To be avenged On him who had stole Jove's authentic fire. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Authoritative. [Obs.] Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of approved authority; true; trustworthy; credible; as, an authentic writer; an authentic portrait; authentic information.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Vested with all due formalities, and legally attested.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having as immediate relation to the tonic, in distinction from plagal, which has a correspondent relation to the dominant in the octave below the tonic. to historical documents. We call a document genuine when it can be traced back ultimately to the author or authors from whom it professes to emanate. Hence, the word has the meaning, \"not changed from the original, uncorrupted, unadulterated:\" as, a genuine text. We call a document authentic when, on the ground of its being thus traced back, it may be relied on as true and authoritative (from the primary sense of \"having an author, vouched for\"); hence its extended signification, in general literature, of trustworthy, as resting on unquestionable authority or evidence; as, an authentic history; an authentic report of facts. A genuine book is that which was written by the person whose name it bears, as the author of it. An authentic book is that which relates matters of fact as they really happened. A book may be genuine without being, authentic, and a book may be authentic without being genuine. Bp. Watson. an authentic document) in the sense of \"produced by its professed author, not counterfeit.\"",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "An original (book or document). [Obs.] \"Authentics and transcripts.\" Fuller.",
           "partOfSpeech": "noun"
@@ -4193,8 +4344,8 @@
       ],
       "relatedWords": []
     },
-    "auctorsometimesbuterroneouslywrittenautororauthorfr": {
-      "word": "auctor, sometimes, but erroneously, written autor or author, fr.",
+    "author": {
+      "word": "AUTHOR",
       "definitions": [
         {
           "text": "The beginner, former, or first mover of anything; hence, the efficient cause of a thing; a creator; an originator. Eternal King; thee, Author of all being. Milton.",
@@ -4211,13 +4362,7 @@
         {
           "text": "An informant. [Archaic] Chaucer.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "author": {
-      "word": "AUTHOR",
-      "definitions": [
+        },
         {
           "text": "To occasion; to originate. [Obs.] Such an overthrow . . . I have authored. Chapman.",
           "partOfSpeech": "verb"
@@ -4452,7 +4597,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having an air of authority; positive; dictatorial; peremptory; as, an authoritative tone. The mock authoritative manner of the one, and the insipid mirth of",
+          "text": "Having an air of authority; positive; dictatorial; peremptory; as, an authoritative tone. The mock authoritative manner of the one, and the insipid mirth of the other. Swift.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5830,11 +5975,21 @@
       ],
       "relatedWords": []
     },
-    "autobiographicautobiographical": {
+    "autobiographic": {
       "word": "AUTOBIOGRAPHIC; AUTOBIOGRAPHICAL",
       "definitions": [
         {
-          "text": "Pertaining to, or containing, autobiography; as, an autobiographical sketch. \"Such traits of the autobiographic sort.\"",
+          "text": "Pertaining to, or containing, autobiography; as, an autobiographical sketch. \"Such traits of the autobiographic sort.\" Carlyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "autobiographical": {
+      "word": "AUTOBIOGRAPHIC; AUTOBIOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or containing, autobiography; as, an autobiographical sketch. \"Such traits of the autobiographic sort.\" Carlyle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5900,7 +6055,17 @@
         "theory of history"
       ]
     },
-    "autocarpousautocarpian": {
+    "autocarpous": {
+      "word": "AUTOCARPOUS; AUTOCARPIAN",
+      "definitions": [
+        {
+          "text": "Consisting of the pericarp of the ripened pericarp with no other parts adnate to it, as a peach, a poppy capsule, or a grape.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "autocarpian": {
       "word": "AUTOCARPOUS; AUTOCARPIAN",
       "definitions": [
         {
@@ -5914,7 +6079,7 @@
       "word": "AUTOCATALYSIS",
       "definitions": [
         {
-          "text": "Self-catalysis; catalysis of a substance by one of its own",
+          "text": "Self-catalysis; catalysis of a substance by one of its own products, as of silver oxide by the silver formed by reduction of a small portion of it. -- Au`to*cat`a*lyt\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5954,7 +6119,7 @@
       ],
       "relatedWords": []
     },
-    "autochthonalauthochthonicautochthonous": {
+    "autochthonal": {
       "word": "AUTOCHTHONAL; AUTHOCHTHONIC; AUTOCHTHONOUS",
       "definitions": [
         {
@@ -5963,6 +6128,95 @@
         }
       ],
       "relatedWords": []
+    },
+    "authochthonic": {
+      "word": "AUTOCHTHONAL; AUTHOCHTHONIC; AUTOCHTHONOUS",
+      "definitions": [
+        {
+          "text": "Aboriginal; indigenous; native.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "autochthonous": {
+      "word": "AUTOCHTHONAL; AUTHOCHTHONIC; AUTOCHTHONOUS",
+      "definitions": [
+        {
+          "text": "Aboriginal; indigenous; native.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abecedarian",
+        "aboriginal",
+        "ancestral",
+        "antenatal",
+        "antepatriarchal",
+        "atavistic",
+        "beginning",
+        "budding",
+        "creative",
+        "elemental",
+        "elementary",
+        "embryonic",
+        "endemic",
+        "fetal",
+        "formative",
+        "foundational",
+        "fundamental",
+        "gestatory",
+        "homebred",
+        "homegrown",
+        "humanoid",
+        "in embryo",
+        "in its infancy",
+        "in the bud",
+        "inaugural",
+        "inceptive",
+        "inchoate",
+        "inchoative",
+        "incipient",
+        "incunabular",
+        "indigenous",
+        "infant",
+        "infantile",
+        "initial",
+        "initiative",
+        "initiatory",
+        "introductory",
+        "inventive",
+        "nascent",
+        "natal",
+        "native",
+        "native-born",
+        "original",
+        "parturient",
+        "patriarchal",
+        "postnatal",
+        "preadamite",
+        "preglacial",
+        "pregnant",
+        "prehistoric",
+        "prehuman",
+        "prenatal",
+        "primal",
+        "primary",
+        "prime",
+        "primeval",
+        "primitive",
+        "primogenial",
+        "primoprimitive",
+        "primordial",
+        "pristine",
+        "procreative",
+        "protohistoric",
+        "protohuman",
+        "rudimental",
+        "rudimentary",
+        "ur",
+        "vernacular"
+      ]
     },
     "autochthonism": {
       "word": "AUTOCHTHONISM",
@@ -6079,11 +6333,124 @@
         "warlord"
       ]
     },
-    "autocraticautocratical": {
+    "autocratic": {
       "word": "AUTOCRATIC; AUTOCRATICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to autocracy or to an autocrat; absolute;",
+          "text": "Of or pertaining to autocracy or to an autocrat; absolute; holding independent and arbitrary powers of government.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "absolute",
+        "absolutist",
+        "absolutistic",
+        "arbitrary",
+        "aristocratic",
+        "arrogant",
+        "ascendant",
+        "autarchic",
+        "authoritarian",
+        "authoritative",
+        "authorized",
+        "autonomous",
+        "bossy",
+        "bureaucratic",
+        "civic",
+        "civil",
+        "clothed with authority",
+        "commanding",
+        "competent",
+        "consequential",
+        "considerable",
+        "constitutional",
+        "controlling",
+        "democratic",
+        "despotic",
+        "dictatorial",
+        "dominant",
+        "domineering",
+        "duly constituted",
+        "eminent",
+        "empowered",
+        "ex officio",
+        "fascist",
+        "federal",
+        "federalist",
+        "federalistic",
+        "feudal",
+        "governing",
+        "governmental",
+        "great",
+        "grinding",
+        "gubernatorial",
+        "haughty",
+        "hegemonic",
+        "hegemonistic",
+        "heteronomous",
+        "high-handed",
+        "imperative",
+        "imperial",
+        "imperious",
+        "important",
+        "influential",
+        "leading",
+        "lordly",
+        "magisterial",
+        "magistral",
+        "masterful",
+        "matriarchal",
+        "matriarchic",
+        "mighty",
+        "momentous",
+        "monarchal",
+        "monarchial",
+        "monarchic",
+        "monocratic",
+        "official",
+        "oligarchal",
+        "oligarchic",
+        "oppressive",
+        "overbearing",
+        "overruling",
+        "overweening",
+        "parliamentarian",
+        "parliamentary",
+        "patriarchal",
+        "patriarchic",
+        "peremptory",
+        "pluralistic",
+        "political",
+        "potent",
+        "powerful",
+        "preeminent",
+        "prestigious",
+        "prominent",
+        "puissant",
+        "ranking",
+        "repressive",
+        "republican",
+        "ruling",
+        "self-governing",
+        "senior",
+        "severe",
+        "strict",
+        "substantial",
+        "superior",
+        "suppressive",
+        "supreme",
+        "theocratic",
+        "totalitarian",
+        "tyrannical",
+        "tyrannous",
+        "weighty"
+      ]
+    },
+    "autocratical": {
+      "word": "AUTOCRATIC; AUTOCRATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to autocracy or to an autocrat; absolute; holding independent and arbitrary powers of government.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6414,7 +6781,21 @@
       ],
       "relatedWords": []
     },
-    "autographicautographical": {
+    "autographic": {
+      "word": "AUTOGRAPHIC; AUTOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to an autograph, or one's own handwriting; of the nature of an autograph.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to, or used in, the process of autography; as, autographic ink, paper, or press.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "autographical": {
       "word": "AUTOGRAPHIC; AUTOGRAPHICAL",
       "definitions": [
         {
@@ -6556,7 +6937,181 @@
       ],
       "relatedWords": []
     },
-    "automaticautomatical": {
+    "automatic": {
+      "word": "AUTOMATIC; AUTOMATICAL",
+      "definitions": [
+        {
+          "text": "Having an inherent power of action or motion. Nothing can be said to be automatic. Sir H. Davy.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to, or produced by, an automaton; of the nature of an automaton; self-acting or self-regulating under fixed conditions; -- esp. applied to machinery or devices in which certain things formerly or usually done by hand are done by the machine or device itself; as, the automatic feed of a lathe; automatic gas lighting; an automatic engine or switch; an automatic mouse.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not voluntary; not depending on the will; mechanical; as, automatic movements or functions. Unconscious or automatic reasoning. H. Spenser. Automatic arts, such economic arts or manufacture as are carried on by self-acting machinery. Ure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "accordant",
+        "accustomed",
+        "alike",
+        "automated",
+        "automatic device",
+        "automaton",
+        "automatous",
+        "balanced",
+        "beaten",
+        "blind",
+        "blowgun",
+        "blowpipe",
+        "casual",
+        "compulsive",
+        "conditioned",
+        "confirmed",
+        "consistent",
+        "consonant",
+        "constant",
+        "continuous",
+        "correspondent",
+        "cybernated",
+        "cyborg",
+        "equable",
+        "equal",
+        "even",
+        "firearm",
+        "flamethrower",
+        "flat",
+        "forced",
+        "frequent",
+        "gat",
+        "gun",
+        "gut",
+        "habitual",
+        "habituated",
+        "hackneyed",
+        "handgun",
+        "heater",
+        "homogeneous",
+        "ill-advised",
+        "ill-considered",
+        "ill-devised",
+        "immutable",
+        "impulsive",
+        "inadvertent",
+        "indeliberate",
+        "ineluctable",
+        "inescapable",
+        "inevitable",
+        "inherent",
+        "innate",
+        "instinctive",
+        "instinctual",
+        "invariable",
+        "involuntary",
+        "level",
+        "libidinal",
+        "measured",
+        "mechanical",
+        "mechanical man",
+        "methodic",
+        "monolithic",
+        "musket",
+        "natural",
+        "of a piece",
+        "ordered",
+        "orderly",
+        "peashooter",
+        "persistent",
+        "piece",
+        "pistol",
+        "prompt",
+        "quick",
+        "ready",
+        "recurrent",
+        "recurring",
+        "reflex",
+        "reflexive",
+        "regular",
+        "repeater",
+        "repetitive",
+        "revolver",
+        "rifle",
+        "robot",
+        "robotlike",
+        "rod",
+        "routine",
+        "sawed-off shotgun",
+        "self-acting",
+        "self-active",
+        "self-adjusting",
+        "self-closing",
+        "self-controlled",
+        "self-cooking",
+        "self-directed",
+        "self-directing",
+        "self-dumping",
+        "self-governed",
+        "self-governing",
+        "self-lighting",
+        "self-mover",
+        "self-operative",
+        "self-regulating",
+        "self-regulative",
+        "self-starting",
+        "self-winding",
+        "self-working",
+        "semiautomatic",
+        "shooting iron",
+        "shotgun",
+        "six-gun",
+        "six-shooter",
+        "smooth",
+        "snap",
+        "spontaneous",
+        "stable",
+        "steadfast",
+        "steady",
+        "stereotyped",
+        "subliminal",
+        "systematic",
+        "trite",
+        "unadvised",
+        "unavoidable",
+        "unbroken",
+        "uncalculated",
+        "unchangeable",
+        "unchanged",
+        "unchanging",
+        "unconscious",
+        "unconsidered",
+        "undeliberate",
+        "undeliberated",
+        "undesigned",
+        "undeviating",
+        "undifferentiated",
+        "undiversified",
+        "uniform",
+        "unintended",
+        "unintentional",
+        "unlearned",
+        "unmeditated",
+        "unpremeditated",
+        "unprompted",
+        "unruffled",
+        "unstudied",
+        "unthinking",
+        "unvaried",
+        "unvarying",
+        "unwilled",
+        "unwilling",
+        "unwitting",
+        "well-trodden",
+        "well-worn"
+      ]
+    },
+    "automatical": {
       "word": "AUTOMATIC; AUTOMATICAL",
       "definitions": [
         {
@@ -6829,6 +7384,16 @@
         "wreck",
         "wrecker"
       ]
+    },
+    "automobilism": {
+      "word": "AUTOMOBILISM",
+      "definitions": [
+        {
+          "text": "The use of automobiles, or the practices, methods, or the like, of those who use them. -- Au`to*mo\"bil*ist, n.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     },
     "automorphic": {
       "word": "AUTOMORPHIC",
@@ -7173,7 +7738,17 @@
       ],
       "relatedWords": []
     },
-    "autopsicautopsical": {
+    "autopsic": {
+      "word": "AUTOPSIC; AUTOPSICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to autopsy; autoptical. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "autopsical": {
       "word": "AUTOPSIC; AUTOPSICAL",
       "definitions": [
         {
@@ -7252,7 +7827,17 @@
         "take the measure"
       ]
     },
-    "autopticautoptical": {
+    "autoptic": {
+      "word": "AUTOPTIC; AUTOPTICAL",
+      "definitions": [
+        {
+          "text": "Seen with one's own eyes; belonging to, or connected with, personal observation; as, autoptic testimony or experience.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "autoptical": {
       "word": "AUTOPTIC; AUTOPTICAL",
       "definitions": [
         {
@@ -7272,7 +7857,17 @@
       ],
       "relatedWords": []
     },
-    "autoschediasticautoschediastical": {
+    "autoschediastic": {
+      "word": "AUTOSCHEDIASTIC; AUTOSCHEDIASTICAL",
+      "definitions": [
+        {
+          "text": "Extemporary; offhand. [R.] Dean Martin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "autoschediastical": {
       "word": "AUTOSCHEDIASTIC; AUTOSCHEDIASTICAL",
       "definitions": [
         {
@@ -7355,7 +7950,17 @@
       ],
       "relatedWords": []
     },
-    "autotoxaemiaautotoxemia": {
+    "autotoxaemia": {
+      "word": "AUTOTOXAEMIA; AUTOTOXEMIA",
+      "definitions": [
+        {
+          "text": "Self-intoxication. See Auto-intoxication.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "autotoxemia": {
       "word": "AUTOTOXAEMIA; AUTOTOXEMIA",
       "definitions": [
         {
@@ -7589,7 +8194,7 @@
       "word": "AUXILIARY",
       "definitions": [
         {
-          "text": "Conferring aid or help; helping; aiding; assisting; subsidiary;",
+          "text": "Conferring aid or help; helping; aiding; assisting; subsidiary; as auxiliary troops. Auxiliary scales (Mus.), the scales of relative or attendant keys. See under Attendant, a.",
           "partOfSpeech": "adjective"
         },
         {

@@ -532,6 +532,62 @@
       "word": "BLOCK",
       "definitions": [
         {
+          "text": "A piece of wood more or less bulky; a solid mass of wood, stone, etc., usually with one or more plane, or approximately plane, faces; as, a block on which a butcher chops his meat; a block by which to mount a horse; children's playing blocks, etc. Now all our neighbors' chimneys smoke, And Christmas blocks are burning. Wither. All her labor was but as a block Left in the quarry. Tennyson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The solid piece of wood on which condemned persons lay their necks when they are beheaded. Noble heads which have been brought to the block. E. Everett.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The wooden mold on which hats, bonnets, etc., are shaped. Hence: The pattern on shape of a hat. He wears his faith but as the fashion of his hat; it ever changes with the next block. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A large or long building divided into separate houses or shops, or a number of houses or shops built in contact with each other so as to form one building; a row of houses or shops.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A square, or portion of a city inclosed by streets, whether occupied by buildings or not. The new city was laid out in rectangular blocks, each block containing thirty building lots. Such an average block, comprising 282 houses and covering nine acres of ground, exists in Oxford Street. Lond. Quart. Rev.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A grooved pulley or sheave incased in a frame or shell which is provided with a hook, eye, or strap, by which it may be attached to an object. It is used to change the direction of motion, as in raising a heavy object that can not be conveniently reached, and also, when two or more such sheaves are compounded, to change the rate of motion, or to exert increased force; -- used especially in the rigging of ships, and in tackles.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Falconry)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The perch on which a bird of prey is kept.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any obstruction, or cause of obstruction; a stop; a hindrance; an obstacle; as, a block in the way.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece of box or other wood for engravers' work.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece of hard wood (as mahogany or cherry) on which a stereotype or electrotype plate is mounted to make it type high.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A blockhead; a stupid fellow; a dolt. [Obs.] What a block art thou ! Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A section of a railroad where the block system is used. See Block system, below. A block of shares (Stock Exchange), a large number of shares in a stock company, sold in a lump. Bartlett. Japan) from engraved boards by means of a sheet of paper laid on the linked surface and rubbed with a brush. S. W. Williams. (b) A method of printing cotton cloth and paper hangings with colors, by pressing them upon an engraved surface coated with coloring matter. into sections of three or four miles, and trains are so run by the guidance of electric signals that no train enters a section or block before the preceding train has left it.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To obstruct so as to prevent passage or progress; to prevent passage from, through, or into, by obstructing the way; -- used both of persons and things; -- often followed by up; as, to block up a road or harbor. With moles . . . would block the port. Rowe. A city . . . besieged and blocked about. Milton.",
           "partOfSpeech": "verb"
         },
@@ -1023,7 +1079,15 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "To shut up, as a town or fortress, by investing it with troops or",
+          "text": "To shut up, as a town or fortress, by investing it with troops or vessels or war for the purpose of preventing ingress or egress, or the introduction of supplies. See note under Blockade, n. \"Blockaded the place by sea.\" Gilpin.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Hence, to shut in so as to prevent egress. Till storm and driving ice blockade him there. Wordsworth.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To obstruct entrance to or egress from. Huge bales of British cloth blockade the door. Pope.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1769,7 +1833,7 @@
       ],
       "relatedWords": []
     },
-    "bloncketblonket": {
+    "bloncket": {
       "word": "BLONCKET; BLONKET",
       "definitions": [
         {
@@ -1779,9 +1843,52 @@
       ],
       "relatedWords": []
     },
-    "blonde": {
-      "word": "BLONDE",
+    "blond": {
+      "word": "BLOND; BLONDE",
       "definitions": [
+        {
+          "text": "Of a fair color; light-colored; as, blond hair; a blond complexion.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ash blond",
+        "ash-blond",
+        "bleached blond",
+        "bleached-blond",
+        "blond-haired",
+        "blond-headed",
+        "brunet",
+        "carrottop",
+        "champagne",
+        "flaxen",
+        "flaxen-haired",
+        "golden",
+        "golden-haired",
+        "goldilocks",
+        "honey blond",
+        "honey-blond",
+        "light",
+        "peroxide blond",
+        "peroxide-blond",
+        "platinum",
+        "platinum blond",
+        "platinum-blond",
+        "redhead",
+        "straw",
+        "strawberry blond",
+        "towhead",
+        "towheaded",
+        "xanthous"
+      ]
+    },
+    "blonde": {
+      "word": "BLOND; BLONDE",
+      "definitions": [
+        {
+          "text": "Of a fair color; light-colored; as, blond hair; a blond complexion.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A person of very fair complexion, with light hair and light blue eyes. [Written also blond.]",
           "partOfSpeech": "noun"
@@ -1813,6 +1920,16 @@
         {
           "text": "The state of being blond. G. Eliot.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blonket": {
+      "word": "BLONCKET; BLONKET",
+      "definitions": [
+        {
+          "text": "Gray; bluish gray. [Obs.] Our bloncket liveries been all too sad. Spenser.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2376,7 +2493,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Without spirit or activity.",
+          "text": "Without spirit or activity. Thou bloodless remnant of that royal blood ! Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3004,7 +3121,17 @@
       ],
       "relatedWords": []
     },
-    "bloodwitebloodwit": {
+    "bloodwit": {
+      "word": "BLOODWITE; BLOODWIT",
+      "definitions": [
+        {
+          "text": "A fine or amercement paid as a composition for the shedding of blood; also, a riot wherein blood was spilled.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bloodwite": {
       "word": "BLOODWITE; BLOODWIT",
       "definitions": [
         {
@@ -5342,7 +5469,7 @@
       ],
       "relatedWords": []
     },
-    "blowenblowess": {
+    "blowen": {
       "word": "BLOWEN; BLOWESS",
       "definitions": [
         {
@@ -5430,6 +5557,16 @@
         "windscoop",
         "windy"
       ]
+    },
+    "blowess": {
+      "word": "BLOWEN; BLOWESS",
+      "definitions": [
+        {
+          "text": "A prostitute; a courtesan; a strumpet. [Low] Smart.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     },
     "blowfly": {
       "word": "BLOWFLY",
@@ -5843,32 +5980,6 @@
       "definitions": [
         {
           "text": "See Blowze.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "blowswpuffatopushtocuffdanpuffetopopthumpseepuff": {
-      "word": "blow, Sw. puffa to push, to cuff, Dan. puffe to pop, thump. See Puff,",
-      "definitions": [
-        {
-          "text": "To blow in puffs, or with short and sudden whiffs.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To blow, as an expression of scorn; -- with at. It is really to defy Heaven to puff at damnation. South.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To breathe quick and hard, or with puffs, as after violent exertion. The ass comes back again, puffing and blowing, from the chase. L' Estrange.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To swell with air; to be dilated or inflated. Boyle.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To breathe in a swelling, inflated, or pompous manner; hence, to assume importance. Then came brave Glory puffing by. Herbert.",
           "partOfSpeech": "noun"
         }
       ],

@@ -307,6 +307,36 @@
       ],
       "relatedWords": []
     },
+    "senhor": {
+      "word": "SENOR; SENHOR",
+      "definitions": [
+        {
+          "text": "A Spanish title of courtesy corresponding to the English Mr. or Sir; also, a gentleman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senhora": {
+      "word": "SENORA; SENHORA",
+      "definitions": [
+        {
+          "text": "A Spanish title of courtesy given to a lady; Mrs.; Madam; also, a lady.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senhorita": {
+      "word": "SENORITA; SENHORITA",
+      "definitions": [
+        {
+          "text": "A Spanish title of courtesy given to a young lady; Miss; also, a young lady.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "senile": {
       "word": "SENILE",
       "definitions": [
@@ -481,7 +511,17 @@
       ],
       "relatedWords": []
     },
-    "senorasenhora": {
+    "senor": {
+      "word": "SENOR; SENHOR",
+      "definitions": [
+        {
+          "text": "A Spanish title of courtesy corresponding to the English Mr. or Sir; also, a gentleman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "senora": {
       "word": "SENORA; SENHORA",
       "definitions": [
         {
@@ -491,21 +531,11 @@
       ],
       "relatedWords": []
     },
-    "senoritasenhorita": {
+    "senorita": {
       "word": "SENORITA; SENHORITA",
       "definitions": [
         {
           "text": "A Spanish title of courtesy given to a young lady; Miss; also, a young lady.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "senorsenhor": {
-      "word": "SENOR; SENHOR",
-      "definitions": [
-        {
-          "text": "A Spanish title of courtesy corresponding to the English Mr. or Sir; also, a gentleman.",
           "partOfSpeech": "noun"
         }
       ],
@@ -527,11 +557,15 @@
         {
           "text": "To feel or apprehend more or less distinctly through a sense, or the senses; as, to sensate light, or an odor. As those of the one are sensated by the ear, so those of the other are by the eye. R. Hooke.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Felt or apprehended through a sense, or the senses. [R.] Baxter.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "sensatesensated": {
+    "sensated": {
       "word": "SENSATE; SENSATED",
       "definitions": [
         {
@@ -621,37 +655,47 @@
       "word": "SENSE",
       "definitions": [
         {
+          "text": "(Physiol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A faculty, possessed by animals, of perceiving external objects by means of impressions made upon certain organs (sensory or sense organs) of the body, or of perceiving changes in the condition of the body; as, the senses of sight, smell, hearing, taste, and touch. See Muscular sense, under Muscular, and Temperature sense, under Temperature. Let fancy still my sense in Lethe steep. Shak. What surmounts the reach Of human sense I shall delineate. Milton. The traitor Sense recalls The soaring soul from rest. Keble.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Perception by the sensory organs of the body; sensation; sensibility; feeling. In a living creature, though never so great, the sense and the affects of any one part of the body instantly make a transcursion through the whole. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Perception through the intellect; apprehension; recognition; understanding; discernment; appreciation. This Basilius, having the quick sense of a lover. Sir P. Sidney. High disdain from sense of injured merit. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sound perception and reasoning; correct judgment; good mental capacity; understanding; also, that which is sound, true, or reasonable; rational meaning. \"He speaks sense.\" Shak. He raves; his words are loose As heaps of sand, and scattering wide from sense. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is felt or is held as a sentiment, view, or opinion; judgment; notion; opinion. I speak my private but impartial sense With freedom. Roscommon. The municipal council of the city had ceased to speak the sense of the citizens. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Meaning; import; signification; as, the true sense of words or phrases; the sense of a remark. So they read in the book in the law of God distinctly, and gave the sense. Neh. viii. 8. I think 't was in another sense. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Moral perception or appreciation. Some are so hardened in wickedness as to have no sense of the most friendly offices. L' Estrange.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geom.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of two opposite directions in which a line, surface, or volume, may be supposed to be described by the motion of a point, line, or surface. Common sense, according to Sir W. Hamilton: (a) \"The complement of those cognitions or convictions which we receive from nature, which all men possess in common, and by which they test the truth of knowledge and the morality of actions.\" (b) \"The faculty of first principles.\" These two are the philosophical significations. (c) \"Such ordinary complement of intelligence, that,if a person be deficient therein, he is accounted mad or foolish.\" (d) When the substantive is emphasized: \"Native practical intelligence, natural prudence, mother wit, tact in behavior, acuteness in the observation of character, in contrast to habits of acquired learning or of speculation.\" -- Moral sense. See under Moral, (a). of its own states; consciousness; reflection. \"This source of ideas every man has wholly in himself, and though it be not sense, as having nothing to do with external objects, yet it is very like it, and might properly enough be called internal sense.\" Locke. which inclose, more or less completely, the organs of smell, sight, and hearing. some one natural force or form of energy is enabled to excite sensory nerves; as the eye, ear, an end bulb or tactile corpuscle, etc. or near which the fibers of the sensory nerves terminate. technical signification to these terms, which may here be stated. Sense is the mind's acting in the direct cognition either of material objects or of its own mental states. In the first case it is called the outer, in the second the inner, sense. Understanding is the logical faculty, i. e., the power of apprehending under general conceptions, or the power of classifying, arranging, and making deductions. Reason is the power of apprehending those first or fundamental truths or principles which are the conditions of all real and scientific knowledge, and which control the mind in all its processes of investigation and deduction. These distinctions are given, not as established, but simply because they often occur in writers of the present day.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To perceive by the senses; to recognize. [Obs. or Colloq.] Is he sure that objects are not otherwise sensed by others than they are by him Glanvill.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sense1ofcreissantincreasingfcroissantpprofcroof": {
-      "word": "sense 1), OF. creissant increasing, F. croissant, p. pr. of cro, OF.",
-      "definitions": [
-        {
-          "text": "The increasing moon; the moon in her first quarter, or when defined by a concave and a convex edge; also, applied improperly to the old or decreasing moon in a like state.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Anything having the shape of a crescent or new moon.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A representation of the increasing moon, often used as an emblem or badge; as: (a) A symbol of Artemis, or Diana. (b) The ancient symbol of Byzantium or Constantinople. Hence: (c) The emblem of the Turkish Empire, adopted after the taking of Constantinople. The cross of our faith is replanted, The pale, dying crescent is daunted. Campbell.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Any one of three orders of knighthood; the first instituted by Charles I., king of Naples and Sicily, in 1268; the second by René of Anjou, in 1448; and the third by the Sultan Selim III., in 1801, to be conferred upon foreigners to whom Turkey might be indebted for valuable services. Brande & C.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Her.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The emblem of the increasing moon with horns directed upward, when used in a coat of arms; -- often used as a mark of cadency to distinguish a second son and his descendants.",
           "partOfSpeech": "verb"
         }
       ],
@@ -671,18 +715,8 @@
       "word": "SENSELESS",
       "definitions": [
         {
-          "text": "Destitute of, deficient in, or contrary to, sense; without sensibility or feeling; unconscious; stupid; foolish; unwise; unreasonable. You blocks, you stones, you worse than senseless things. Shak. The ears are senseless that should give us hearing. Shak. The senseless grave feels not your pious sorrows. Rowe. They were a senseless, stupid race. Swift. They would repent this their senseless perverseness when it would be",
+          "text": "Destitute of, deficient in, or contrary to, sense; without sensibility or feeling; unconscious; stupid; foolish; unwise; unreasonable. You blocks, you stones, you worse than senseless things. Shak. The ears are senseless that should give us hearing. Shak. The senseless grave feels not your pious sorrows. Rowe. They were a senseless, stupid race. Swift. They would repent this their senseless perverseness when it would be too late. Clarendon.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "senseormoreprobfrdgekscherentojeerlittoshearthe": {
-      "word": "sense; or more prob. fr. D. gekscheren to jeer, lit., to shear the",
-      "definitions": [
-        {
-          "text": "To utter sarcastic or scoffing reflections; to speak with mockery or derision; to use taunting language; to scoff; as, to jeer at a speaker. But when he saw her toy and gibe and jeer. Spenser.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -737,7 +771,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Possessing or containing sense or reason; giftedwith, or characterized by, good or common sense; intelligent; wise. Now a sensible man, by and by a fool. Shak. Sensible note or tone (Mus.), the major seventh note of any scale; -- so called because, being but a half step below the octave, or key tone, and naturally leading up to that, it makes the ear sensible of",
+          "text": "Possessing or containing sense or reason; giftedwith, or characterized by, good or common sense; intelligent; wise. Now a sensible man, by and by a fool. Shak. Sensible note or tone (Mus.), the major seventh note of any scale; -- so called because, being but a half step below the octave, or key tone, and naturally leading up to that, it makes the ear sensible of its approaching sound. Called also the leading tone. conduct are marked and governed by sound judgment or good common semse. We call one intelligent who is quick and clear in his understanding, i. e., who discriminates readily and nicely in respect to difficult and important distinction. The sphere of the sensible man lies in matters of practical concern; of the intelligent man, in subjects of intellectual interest. \"I have been tired with accounts from sensible men, furnished with matters of fact which have happened within their own knowledge.\" Addison. \"Trace out numerous footsteps . . . of a most wise and intelligent architect throughout all this stupendous fabric.\" Woodward.",
           "partOfSpeech": "adjective"
         },
         {
@@ -869,7 +903,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of or pertaining to sensation; depending on sensation; as, sensitive motions; sensitive muscular motions excited by irritation. E. Darwin. Sensitive fern (Bot.), an American fern (Onoclea sensibilis), the leaves of which, when plucked, show a slight tendency to fold together. suitable adjustment of pressure it is exceedingly sensitive to sounds, being caused to roar, flare, or become suddenly shortened or extinguished, by slight sounds of the proper pitch. (Æschynomene hispida), with sensitive foliage. rendered sensitive to the effect of light. M. sensitiva, and other allied species), the leaves of which close at the slightest touch. (b) Any plant showing motions after irritation, as the sensitive brier (Schrankia) of the Southern States, two common American species of Cassia (C. nictitans, and C. Chamæcrista), a kind",
+          "text": "Of or pertaining to sensation; depending on sensation; as, sensitive motions; sensitive muscular motions excited by irritation. E. Darwin. Sensitive fern (Bot.), an American fern (Onoclea sensibilis), the leaves of which, when plucked, show a slight tendency to fold together. suitable adjustment of pressure it is exceedingly sensitive to sounds, being caused to roar, flare, or become suddenly shortened or extinguished, by slight sounds of the proper pitch. (Æschynomene hispida), with sensitive foliage. rendered sensitive to the effect of light. M. sensitiva, and other allied species), the leaves of which close at the slightest touch. (b) Any plant showing motions after irritation, as the sensitive brier (Schrankia) of the Southern States, two common American species of Cassia (C. nictitans, and C. Chamæcrista), a kind of sorrel (Oxalis sensitiva), etc.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1153,6 +1187,10 @@
       "word": "SENT",
       "definitions": [
         {
+          "text": "See Scent, v. & n. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "obs. 3d pers. sing. pres. of Send, for sendeth.",
           "partOfSpeech": ""
         },
@@ -1166,6 +1204,30 @@
     "sentence": {
       "word": "SENTENCE",
       "definitions": [
+        {
+          "text": "Sense; meaning; significance. [Obs.] Tales of best sentence and most solace. Chaucer. The discourse itself, voluble enough, and full of sentence. Milton. 2. (a) An opinion; a decision; a determination; a judgment, especially one of an unfavorable nature. My sentence is for open war. Milton. That by them [Luther's works] we may pass sentence upon his doctrines. Atterbury. (b) A philosophical or theological opinion; a dogma; as, Summary of the Sentences; Book of the Sentences.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In civil and admiralty law, the judgment of a court pronounced in a cause; in criminal and ecclesiastical courts, a judgment passed on a criminal by a court or judge; condemnation pronounced by a judgical tribunal; doom. In common law, the term is exclusively used to denote the judgment in criminal cases. Received the sentence of the law. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A short saying, usually containing moral instruction; a maxim; an axiom; a saw. Broome.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Gram.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A combination of words which is complete as expressing a thought, and in writing is marked at the close by a period, or full point. See Proposition, 4. one subject and one finite verb; as, \"The Lord reigns.\" A compound sentence contains two or more subjects and finite verbs, as in this verse: - He fills, he bounds, connects, and equals all. Pope. Dark sentence, a saving not easily explained. A king . . . understanding dark sentences. Dan. vii. 23.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To pass or pronounce judgment upon; to doom; to condemn to punishment; to prescribe the punishment of. Nature herself is sentenced in your doom. Dryden.",
           "partOfSpeech": "verb"
@@ -1289,7 +1351,17 @@
       ],
       "relatedWords": []
     },
-    "sentiencesentiency": {
+    "sentience": {
+      "word": "SENTIENCE; SENTIENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being sentient; esp., the quality or state of having sensation. G. H. Lewes An example of harmonious action between the intelligence and the sentieny of the mind. Earle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentiency": {
       "word": "SENTIENCE; SENTIENCY",
       "definitions": [
         {
@@ -1319,6 +1391,28 @@
         {
           "text": "In a sentient or perceptive way.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sentiment": {
+      "word": "SENTIMENT",
+      "definitions": [
+        {
+          "text": "A thought prompted by passion or feeling; a state of mind in view of some subject; feeling toward or respecting some person or thing; disposition prompting to action or expression. The word sentiment, agreeably to the use made of it by our best English writers, expresses, in my own opinion very happily, those complex determinations of the mind which result from the coöperation of our rational powers and of our moral feelings. Stewart. Alike to council or the assembly came, With equal souls and sentiments the same. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, generally, a decision of the mind formed by deliberation or reasoning; thought; opinion; notion; judgment; as, to express one's sentiments on a subject. Sentiments of philosophers about the perception of external objects. Reid. Sentiment, as here and elsewhere employed by Reid in the meaning of opinion (sententia), is not to be imitated. Sir W. Hamilton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sentence, or passage, considered as the expression of a thought; a maxim; a saying; a toast.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sensibility; feeling; tender susceptibility. Mr. Hume sometimes employs (after the manner of the French metaphysicians) sentiment as synonymous with feeling; a use of the word quite unprecedented in our tongue. Stewart. Less of sentiment than sense. Tennyson. judgment in respect to any and every kind of truth. Feeling describes those affections of pleasure and pain which spring from the exercise of our sentient and emotional powers. Sentiment (particularly in the plural) lies between them, denoting settled opinions or principles in regard to subjects which interest the feelings strongly, and are presented more or less constantly in practical life. Hence, it is more appropriate to speak of our religious sentiments than opinions, unless we mean to exclude all reference to our feelings. The word sentiment, in the singular, leans ordinarily more to the side of feeling, and denotes a refined sensibility on subjects affecting the heart. \"On questions of feeling, taste, observation, or report, we define our sentiments. On questions of science, argument, or metaphysical abstraction, we define our opinions. The sentiments of the heart. The opinions of the mind . . . There is more of instinct in sentiment, and more of definition in opinion. The admiration of a work of art which results from first impressions is classed with our sentiments; and, when we have accounted to ourselves for the approbation, it is classed with our opinions.\" W. Taylor.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1431,36 +1525,6 @@
         {
           "text": "To furnish with a sentinel; to place under the guard of a sentinel or sentinels.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sentiretodiscernbythesensesandthemindtofeeltothinksee": {
-      "word": "sentire to discern by the senses and the mind, to feel, to think. See",
-      "definitions": [
-        {
-          "text": "Sense; meaning; significance. [Obs.] Tales of best sentence and most solace. Chaucer. The discourse itself, voluble enough, and full of sentence. Milton. 2. (a) An opinion; a decision; a determination; a judgment, especially one of an unfavorable nature. My sentence is for open war. Milton. That by them [Luther's works] we may pass sentence upon his doctrines. Atterbury. (b) A philosophical or theological opinion; a dogma; as, Summary of the Sentences; Book of the Sentences.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "In civil and admiralty law, the judgment of a court pronounced in a cause; in criminal and ecclesiastical courts, a judgment passed on a criminal by a court or judge; condemnation pronounced by a judgical tribunal; doom. In common law, the term is exclusively used to denote the judgment in criminal cases. Received the sentence of the law. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A short saying, usually containing moral instruction; a maxim; an axiom; a saw. Broome.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Gram.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A combination of words which is complete as expressing a thought, and in writing is marked at the close by a period, or full point. See Proposition, 4. one subject and one finite verb; as, \"The Lord reigns.\" A compound sentence contains two or more subjects and finite verbs, as in this verse: - He fills, he bounds, connects, and equals all. Pope. Dark sentence, a saving not easily explained. A king . . . understanding dark sentences. Dan. vii. 23.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "entries": {
-    "bibi": {
+    "bi": {
       "word": "BI; BI-",
       "definitions": [
         {
@@ -49,7 +49,17 @@
       ],
       "relatedWords": []
     },
-    "biangulatebiangulated": {
+    "biangulate": {
+      "word": "BIANGULATE; BIANGULATED",
+      "definitions": [
+        {
+          "text": "Biangular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biangulated": {
       "word": "BIANGULATE; BIANGULATED",
       "definitions": [
         {
@@ -474,6 +484,26 @@
       ],
       "relatedWords": []
     },
+    "biaxal": {
+      "word": "BIAXAL; BIAXIAL",
+      "definitions": [
+        {
+          "text": "Having two axes; as, biaxial polarization. Brewster.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biaxial": {
+      "word": "BIAXAL; BIAXIAL",
+      "definitions": [
+        {
+          "text": "Having two axes; as, biaxial polarization. Brewster.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "bib": {
       "word": "BIB",
       "definitions": [
@@ -494,13 +524,17 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To drink; to tipple. [Obs.] This miller hath . . . bibbed ale. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To drink; to sip; to tipple. He was constantly bibbing. Locke.",
           "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "bibbibbe": {
+    "bibbe": {
       "word": "BIB; BIBBE",
       "definitions": [
         {
@@ -536,6 +570,16 @@
         {
           "text": "Having to hydrogen atoms which can be replaced by positive or basic atoms or radicals to form salts; -- said of acids. See Dibasic.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bibb": {
+      "word": "BIBB",
+      "definitions": [
+        {
+          "text": "A bibcock. See Bib, n., 3.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -917,6 +961,26 @@
         "writer"
       ]
     },
+    "bibliographic": {
+      "word": "BIBLIOGRAPHIC; BIBLIOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to bibliography, or the history of books.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bibliographical": {
+      "word": "BIBLIOGRAPHIC; BIBLIOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to bibliography, or the history of books.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "bibliography": {
       "word": "BIBLIOGRAPHY",
       "definitions": [
@@ -1030,7 +1094,17 @@
         "verso"
       ]
     },
-    "bibliolaterbibliolatrist": {
+    "bibliolater": {
+      "word": "BIBLIOLATER; BIBLIOLATRIST",
+      "definitions": [
+        {
+          "text": "A worshiper of books; especially, a worshiper of the Bible; a believer in its verbal inspiration. De Quincey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bibliolatrist": {
       "word": "BIBLIOLATER; BIBLIOLATRIST",
       "definitions": [
         {
@@ -1325,7 +1399,17 @@
       ],
       "relatedWords": []
     },
-    "bibliopolicbibliopolar": {
+    "bibliopolic": {
+      "word": "BIBLIOPOLIC; BIBLIOPOLAR",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the sale of books. \"Bibliopolic difficulties.\" Carlyle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bibliopolar": {
       "word": "BIBLIOPOLIC; BIBLIOPOLAR",
       "definitions": [
         {
@@ -1365,7 +1449,17 @@
       ],
       "relatedWords": []
     },
-    "bibliotaphbibliotaphist": {
+    "bibliotaph": {
+      "word": "BIBLIOTAPH; BIBLIOTAPHIST",
+      "definitions": [
+        {
+          "text": "One who hides away books, as in a tomb. [R.] Crabb.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bibliotaphist": {
       "word": "BIBLIOTAPH; BIBLIOTAPHIST",
       "definitions": [
         {
@@ -1537,7 +1631,17 @@
       ],
       "relatedWords": []
     },
-    "bicallosebicallous": {
+    "bicallose": {
+      "word": "BICALLOSE; BICALLOUS",
+      "definitions": [
+        {
+          "text": "Having two callosities or hard spots. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bicallous": {
       "word": "BICALLOSE; BICALLOUS",
       "definitions": [
         {
@@ -1600,7 +1704,17 @@
       ],
       "relatedWords": []
     },
-    "bicarburetedbicarburetted": {
+    "bicarbureted": {
+      "word": "BICARBURETED; BICARBURETTED",
+      "definitions": [
+        {
+          "text": "Containing two atoms or equivalents of carbon in the molecule. [Obs. or R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bicarburetted": {
       "word": "BICARBURETED; BICARBURETTED",
       "definitions": [
         {
@@ -1650,11 +1764,29 @@
       ],
       "relatedWords": []
     },
-    "bicebise": {
+    "bice": {
       "word": "BICE; BISE",
       "definitions": [
         {
           "text": "A pale blue pigment, prepared from the native blue carbonate of copper, or from smalt; -- called also blue bice. Green bice is prepared from the blue, by adding yellow orpiment, or by grinding down the green carbonate of copper. Cooley. Brande & C.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bise": {
+      "word": "BICE; BISE",
+      "definitions": [
+        {
+          "text": "A pale blue pigment, prepared from the native blue carbonate of copper, or from smalt; -- called also blue bice. Green bice is prepared from the blue, by adding yellow orpiment, or by grinding down the green carbonate of copper. Cooley. Brande & C.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cold north wind which prevails on the northern coasts of the Mediterranean and in Switzerland, etc.; -- nearly the same as the mistral.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Bice.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2257,7 +2389,27 @@
       ],
       "relatedWords": []
     },
-    "bickfordfusebickfordfuzebickfordmatch": {
+    "bickfordfuse": {
+      "word": "BICKFORD FUSE; BICKFORD FUZE; BICKFORD MATCH",
+      "definitions": [
+        {
+          "text": "A fuse used in blasting, consisting of a long cylinder of explosive material inclosed in a varnished wrapping of rope or hose. It burns from 2 to 4 feet a minute.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bickfordfuze": {
+      "word": "BICKFORD FUSE; BICKFORD FUZE; BICKFORD MATCH",
+      "definitions": [
+        {
+          "text": "A fuse used in blasting, consisting of a long cylinder of explosive material inclosed in a varnished wrapping of rope or hose. It burns from 2 to 4 feet a minute.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bickfordmatch": {
       "word": "BICKFORD FUSE; BICKFORD FUZE; BICKFORD MATCH",
       "definitions": [
         {
@@ -2277,7 +2429,7 @@
       ],
       "relatedWords": []
     },
-    "bicolorbicolored": {
+    "bicolor": {
       "word": "BICOLOR; BICOLORED",
       "definitions": [
         {
@@ -2286,6 +2438,51 @@
         }
       ],
       "relatedWords": []
+    },
+    "bicolored": {
+      "word": "BICOLOR; BICOLORED",
+      "definitions": [
+        {
+          "text": "Of two colors.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bicolor",
+        "colorful",
+        "colory",
+        "crazy",
+        "daedal",
+        "dichromatic",
+        "divers-colored",
+        "harlequin",
+        "kaleidoscopic",
+        "many-colored",
+        "medley",
+        "motley",
+        "multicolor",
+        "multicolored",
+        "multicolorous",
+        "parti-color",
+        "parti-colored",
+        "polychromatic",
+        "polychrome",
+        "polychromic",
+        "prismal",
+        "shot",
+        "shot through",
+        "spectral",
+        "thunder and lightning",
+        "trichromatic",
+        "trichromic",
+        "tricolor",
+        "tricolored",
+        "two-tone",
+        "varicolored",
+        "variegated",
+        "versicolor",
+        "versicolored"
+      ]
     },
     "biconcave": {
       "word": "BICONCAVE",
@@ -2317,7 +2514,54 @@
       ],
       "relatedWords": []
     },
-    "bicornbicornedbicornous": {
+    "bicorn": {
+      "word": "BICORN; BICORNED; BICORNOUS",
+      "definitions": [
+        {
+          "text": "Having two horns; two-horned; crescentlike.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Cynthian",
+        "S-shaped",
+        "corniform",
+        "crescent",
+        "crescent-shaped",
+        "crescentic",
+        "crescentiform",
+        "crescentlike",
+        "falcate",
+        "falciform",
+        "horn-shaped",
+        "horned",
+        "lunar",
+        "lunate",
+        "luniform",
+        "lunular",
+        "menisciform",
+        "meniscoid",
+        "moon-shaped",
+        "moonlike",
+        "semicircular",
+        "semilunar",
+        "sickle-like",
+        "sickle-shaped",
+        "sigmoid",
+        "two-horned"
+      ]
+    },
+    "bicorned": {
+      "word": "BICORN; BICORNED; BICORNOUS",
+      "definitions": [
+        {
+          "text": "Having two horns; two-horned; crescentlike.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bicornous": {
       "word": "BICORN; BICORNED; BICORNOUS",
       "definitions": [
         {
@@ -2387,21 +2631,15 @@
       ],
       "relatedWords": []
     },
-    "bicuspidbicuspidate": {
+    "bicuspid": {
       "word": "BICUSPID; BICUSPIDATE",
       "definitions": [
         {
           "text": "Having two points or prominences; ending in two points; -- said of teeth, leaves, fruit, etc.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bicuspid": {
-      "word": "BICUSPID",
-      "definitions": [
+        },
         {
-          "text": "One of the two double-pointed teeth which intervene between the",
+          "text": "One of the two double-pointed teeth which intervene between the canines (cuspids) and the molars, on each side of each jaw. See Tooth, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2466,6 +2704,16 @@
         "unibivalent",
         "wisdom tooth"
       ]
+    },
+    "bicuspidate": {
+      "word": "BICUSPID; BICUSPIDATE",
+      "definitions": [
+        {
+          "text": "Having two points or prominences; ending in two points; -- said of teeth, leaves, fruit, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "bicyanide": {
       "word": "BICYANIDE",
@@ -2581,6 +2829,26 @@
     "bid": {
       "word": "BID",
       "definitions": [
+        {
+          "text": "To make an offer of; to propose. Specifically : To offer to pay ( a certain price, as for a thing put up at auction), or to take (a certain price, as for work to be done under a contract).",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To offer in words; to declare, as a wish, a greeting, a threat, or defiance, etc.; as, to bid one welcome; to bid good morning, farewell, etc. Neither bid him God speed. 2. John 10. He bids defiance to the gaping crowd. Granrille.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To proclaim; to declare publicly; to make known. [Mostly obs.] \"Our banns thrice bid !\" Gay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To order; to direct; to enjoin; to command. That Power who bids the ocean ebb and flow. Pope Lord, if it be thou, bid me come unto thee. Matt. xiv. 28 I was bid to pick up shells. D. Jerrold.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To invite; to call in; to request to come. As many as ye shall find, bid to the marriage. Matt. xxii. 9 To bid beads, to pray with beads, as the Roman Catholics; to distinguish each bead by a prayer. [Obs.] -- To bid defiance to , to defy openly; to brave. seem likely. charge; enjoin.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "imp. & p. p. of Bid.",
           "partOfSpeech": ""
@@ -2748,7 +3016,17 @@
       ],
       "relatedWords": []
     },
-    "bidarkeebidarka": {
+    "bidarkee": {
+      "word": "BIDARKEE; BIDARKA",
+      "definitions": [
+        {
+          "text": "A portable boat made of skins stretched on a frame. [Alaska] The Century.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bidarka": {
       "word": "BIDARKEE; BIDARKA",
       "definitions": [
         {
@@ -3011,8 +3289,8 @@
         "witch"
       ]
     },
-    "bidenasbidanakintoohgbitangothbeidanicelbiperh": {
-      "word": "biden, AS. bidan; akin to OHG. bitan, Goth. beidan, Icel. bi; perh.",
+    "bide": {
+      "word": "BIDE",
       "definitions": [
         {
           "text": "To dwell; to inhabit; to abide; to stay. All knees to thee shall bow of them that bide In heaven or earth, or under earth, in hell. Milton.",
@@ -3021,13 +3299,7 @@
         {
           "text": "To remain; to continue or be permanent in a place or state; to continue to be. Shak.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bide": {
-      "word": "BIDE",
-      "definitions": [
+        },
         {
           "text": "To encounter; to remain firm under (a hardship); to endure; to suffer; to undergo. Poor naked wretches, wheresoe'er you are, That bide the pelting of this pitiless storm. Shak.",
           "partOfSpeech": "verb"
@@ -3469,7 +3741,7 @@
       ],
       "relatedWords": []
     },
-    "biestingsbeestings": {
+    "biestings": {
       "word": "BIESTINGS; BEESTINGS",
       "definitions": [
         {
@@ -3591,7 +3863,17 @@
       ],
       "relatedWords": []
     },
-    "bifloratebiflorous": {
+    "biflorate": {
+      "word": "BIFLORATE; BIFLOROUS",
+      "definitions": [
+        {
+          "text": "Bearing two flowers; two-flowered.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biflorous": {
       "word": "BIFLORATE; BIFLOROUS",
       "definitions": [
         {
@@ -3731,22 +4013,26 @@
       ],
       "relatedWords": []
     },
-    "bifurcatebifurcated": {
+    "bifurcate": {
       "word": "BIFURCATE; BIFURCATED",
       "definitions": [
         {
           "text": "Two-pronged; forked.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To divide into two branches.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "bifurcate": {
-      "word": "BIFURCATE",
+    "bifurcated": {
+      "word": "BIFURCATE; BIFURCATED",
       "definitions": [
         {
-          "text": "To divide into two branches.",
-          "partOfSpeech": "verb"
+          "text": "Two-pronged; forked.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3857,6 +4143,14 @@
         {
           "text": "Having greatness, fullness, importance, inflation, distention, etc., whether in a good or a bad sense; as, a big heart; a big voice; big looks; to look big. As applied to looks, it indicates haughtiness or pride. God hath not in heaven a bigger argument. Jer. Taylor. big-sounding; big-named; big-voiced. To talk big, to talk loudly, arrogantly, or pretentiously. I talked big to them at first. De Foe.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Barley, especially the hardy four-rowed kind. \"Bear interchanges in local use, now with barley, now with bigg.\" New English Dict.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To build. [Scot. & North of Eng. Dial.] Sir W. Scott.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": [
@@ -4042,7 +4336,7 @@
         "world-shaking"
       ]
     },
-    "bigbigg": {
+    "bigg": {
       "word": "BIG; BIGG",
       "definitions": [
         {
@@ -4052,6 +4346,10 @@
         {
           "text": "To build. [Scot. & North of Eng. Dial.] Sir W. Scott.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Big, n. & v.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -4127,7 +4425,17 @@
         "trigamy"
       ]
     },
-    "bigarreaubigaroon": {
+    "bigarreau": {
+      "word": "BIGARREAU; BIGAROON",
+      "definitions": [
+        {
+          "text": "The large white-heart cherry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bigaroon": {
       "word": "BIGARREAU; BIGAROON",
       "definitions": [
         {
@@ -4227,11 +4535,15 @@
         {
           "text": "A coffeepot with a strainer or perforated metallic vessel for holding the ground coffee, through which boiling water is poured; -- so called from Mr. Biggin, the inventor.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A building. [Obs.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "bigginbigging": {
+    "bigging": {
       "word": "BIGGIN; BIGGING",
       "definitions": [
         {
@@ -4241,7 +4553,17 @@
       ],
       "relatedWords": []
     },
-    "biggonbiggonnet": {
+    "biggon": {
+      "word": "BIGGON; BIGGONNET",
+      "definitions": [
+        {
+          "text": "A cap or hood with pieces covering the ears.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biggonnet": {
       "word": "BIGGON; BIGGONNET",
       "definitions": [
         {
@@ -4270,6 +4592,94 @@
         }
       ],
       "relatedWords": []
+    },
+    "bight": {
+      "word": "BIGHT",
+      "definitions": [
+        {
+          "text": "A corner, bend, or angle; a hollow; as, the bight of a horse's knee; the bight of an elbow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Geog.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bend in a coast forming an open bay; as, the Bight of Benin.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The double part of a rope when folded, in distinction from the ends; that is, a round, bend, or coil not including the ends; a loop.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "L",
+        "angle",
+        "apex",
+        "arm",
+        "armlet",
+        "bay",
+        "bayou",
+        "belt",
+        "bend",
+        "bifurcation",
+        "boca",
+        "cant",
+        "chevron",
+        "coin",
+        "corner",
+        "cove",
+        "crank",
+        "creek",
+        "crook",
+        "crotchet",
+        "deflection",
+        "dogleg",
+        "elbow",
+        "ell",
+        "estuary",
+        "euripus",
+        "fjord",
+        "fork",
+        "frith",
+        "furcation",
+        "gulf",
+        "gut",
+        "harbor",
+        "hook",
+        "inflection",
+        "inlet",
+        "knee",
+        "kyle",
+        "loch",
+        "mouth",
+        "narrow",
+        "narrow seas",
+        "narrows",
+        "natural harbor",
+        "nook",
+        "point",
+        "quoin",
+        "reach",
+        "road",
+        "roads",
+        "roadstead",
+        "slough",
+        "sound",
+        "strait",
+        "straits",
+        "swerve",
+        "veer",
+        "vertex",
+        "zag",
+        "zig",
+        "zigzag"
+      ]
     },
     "biglandular": {
       "word": "BIGLANDULAR",
@@ -4931,7 +5341,7 @@
       ],
       "relatedWords": []
     },
-    "bilamellatebilamellated": {
+    "bilamellate": {
       "word": "BILAMELLATE; BILAMELLATED",
       "definitions": [
         {
@@ -4941,7 +5351,27 @@
       ],
       "relatedWords": []
     },
-    "bilaminarbilaminate": {
+    "bilamellated": {
+      "word": "BILAMELLATE; BILAMELLATED",
+      "definitions": [
+        {
+          "text": "Formed of two plates, as the stigma of the Mimulus; also, having two elevated ridges, as in the lip of certain flowers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bilaminar": {
+      "word": "BILAMINAR; BILAMINATE",
+      "definitions": [
+        {
+          "text": "Formed of, or having, two laminæ, or thin plates.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bilaminate": {
       "word": "BILAMINAR; BILAMINATE",
       "definitions": [
         {
@@ -5435,7 +5865,17 @@
       ],
       "relatedWords": []
     },
-    "bilimbibilimbing": {
+    "bilimbi": {
+      "word": "BILIMBI; BILIMBING",
+      "definitions": [
+        {
+          "text": "The berries of two East Indian species of Averrhoa, of the Oxalideæ or Sorrel family. They are very acid, and highly esteemed when preserved or pickled. The juice is used as a remedy for skin diseases. [Written also blimbi and blimbing.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bilimbing": {
       "word": "BILIMBI; BILIMBING",
       "definitions": [
         {
@@ -5479,7 +5919,7 @@
       "word": "BILINGUAL",
       "definitions": [
         {
-          "text": "Containing, or consisting of, two languages; expressed in two",
+          "text": "Containing, or consisting of, two languages; expressed in two languages; as, a bilingual inscription; a bilingual dictionary.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6200,7 +6640,17 @@
       ],
       "relatedWords": []
     },
-    "billbeetlebillbug": {
+    "billbeetle": {
+      "word": "BILLBEETLE; BILLBUG",
+      "definitions": [
+        {
+          "text": "A weevil or curculio of various species, as the corn weevil. See Curculio.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "billbug": {
       "word": "BILLBEETLE; BILLBUG",
       "definitions": [
         {
@@ -6937,7 +7387,17 @@
         "wavy"
       ]
     },
-    "billposterbillsticker": {
+    "billposter": {
+      "word": "BILLPOSTER; BILLSTICKER",
+      "definitions": [
+        {
+          "text": "One whose occupation is to post handbills or posters in public places.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "billsticker": {
       "word": "BILLPOSTER; BILLSTICKER",
       "definitions": [
         {
@@ -6975,7 +7435,17 @@
       ],
       "relatedWords": []
     },
-    "billycockbillycockhat": {
+    "billycock": {
+      "word": "BILLYCOCK; BILLYCOCK HAT",
+      "definitions": [
+        {
+          "text": "A round, low-crowned felt hat; a wideawake. \"The undignified billycocks and pantaloons of the West.\" B. H. Chamberlain. Little acquiesced, and Ransome disguised him in a beard, and a loose set of clothes, and a billicock hat. Charles Reade.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "billycockhat": {
       "word": "BILLYCOCK; BILLYCOCK HAT",
       "definitions": [
         {
@@ -7271,6 +7741,10 @@
         {
           "text": "An old form of Be and Been. [Obs.]",
           "partOfSpeech": ""
+        },
+        {
+          "text": "A euphonic form of the prefix Bi-.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": [
@@ -7334,16 +7808,6 @@
         "warehouse",
         "wine cellar"
       ]
-    },
-    "binbin": {
-      "word": "BIN; BIN-",
-      "definitions": [
-        {
-          "text": "A euphonic form of the prefix Bi-.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
     },
     "binal": {
       "word": "BINAL",
@@ -8406,7 +8870,17 @@
       ],
       "relatedWords": []
     },
-    "binuclearbinucleate": {
+    "binuclear": {
+      "word": "BINUCLEAR; BINUCLEATE",
+      "definitions": [
+        {
+          "text": "Having two nuclei; as, binucleate cells.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "binucleate": {
       "word": "BINUCLEAR; BINUCLEATE",
       "definitions": [
         {
@@ -8495,7 +8969,17 @@
         "zoology"
       ]
     },
-    "biodynamicbiodynamical": {
+    "biodynamic": {
+      "word": "BIODYNAMIC; BIODYNAMICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to biodynamics, or the doctrine of vital forces or energy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biodynamical": {
       "word": "BIODYNAMIC; BIODYNAMICAL",
       "definitions": [
         {
@@ -8589,6 +9073,26 @@
       ],
       "relatedWords": []
     },
+    "biographic": {
+      "word": "BIOGRAPHIC; BIOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to biography; containing biography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biographical": {
+      "word": "BIOGRAPHIC; BIOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to biography; containing biography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "biographize": {
       "word": "BIOGRAPHIZE",
       "definitions": [
@@ -8653,6 +9157,26 @@
         "story",
         "theory of history"
       ]
+    },
+    "biologic": {
+      "word": "BIOLOGIC; BIOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to biology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biological": {
+      "word": "BIOLOGIC; BIOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to biology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "biologist": {
       "word": "BIOLOGIST",
@@ -8838,7 +9362,17 @@
       ],
       "relatedWords": []
     },
-    "biophorbiophore": {
+    "biophor": {
+      "word": "BIOPHOR; BIOPHORE",
+      "definitions": [
+        {
+          "text": "One of the smaller vital units of a cell, the bearer of vitality and heredity. See Pangen, in Supplement.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biophore": {
       "word": "BIOPHOR; BIOPHORE",
       "definitions": [
         {
@@ -8898,7 +9432,17 @@
       ],
       "relatedWords": []
     },
-    "biopsychicbiopsychical": {
+    "biopsychic": {
+      "word": "BIOPSYCHIC; BIOPSYCHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to psychical phenomena in their relation to the living organism or to the general phenomena of life.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biopsychical": {
       "word": "BIOPSYCHIC; BIOPSYCHICAL",
       "definitions": [
         {
@@ -9120,7 +9664,17 @@
       ],
       "relatedWords": []
     },
-    "bipectinatebipectinated": {
+    "bipectinate": {
+      "word": "BIPECTINATE; BIPECTINATED",
+      "definitions": [
+        {
+          "text": "Having two margins toothed like a comb.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bipectinated": {
       "word": "BIPECTINATE; BIPECTINATED",
       "definitions": [
         {
@@ -9209,7 +9763,17 @@
       ],
       "relatedWords": []
     },
-    "bipennatebipennated": {
+    "bipennate": {
+      "word": "BIPENNATE; BIPENNATED",
+      "definitions": [
+        {
+          "text": "Having two wings. \"Bipennated insects.\" Derham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bipennated": {
       "word": "BIPENNATE; BIPENNATED",
       "definitions": [
         {
@@ -9249,7 +9813,17 @@
       ],
       "relatedWords": []
     },
-    "bipinnatebipinnated": {
+    "bipinnate": {
+      "word": "BIPINNATE; BIPINNATED",
+      "definitions": [
+        {
+          "text": "Twice pinnate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bipinnated": {
       "word": "BIPINNATE; BIPINNATED",
       "definitions": [
         {
@@ -9323,7 +9897,17 @@
       ],
       "relatedWords": []
     },
-    "bipontbipontine": {
+    "bipont": {
+      "word": "BIPONT; BIPONTINE",
+      "definitions": [
+        {
+          "text": "Relating to books printed at Deuxponts, or Bipontium (Zweibrücken), in Bavaria.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bipontine": {
       "word": "BIPONT; BIPONTINE",
       "definitions": [
         {
@@ -9417,7 +10001,17 @@
       ],
       "relatedWords": []
     },
-    "biradiatebiradiated": {
+    "biradiate": {
+      "word": "BIRADIATE; BIRADIATED",
+      "definitions": [
+        {
+          "text": "Having two rays; as, a biradiate fin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biradiated": {
       "word": "BIRADIATE; BIRADIATED",
       "definitions": [
         {
@@ -9615,7 +10209,7 @@
       ],
       "relatedWords": []
     },
-    "birdcagebirdcage": {
+    "birdcage": {
       "word": "BIRD CAGE; BIRDCAGE",
       "definitions": [
         {
@@ -9623,7 +10217,29 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "aviary",
+        "birdhouse",
+        "bones",
+        "columbary",
+        "crap game",
+        "crap shooting",
+        "craps",
+        "crooked dice",
+        "cubes",
+        "dice",
+        "die",
+        "dovecote",
+        "ivories",
+        "loaded dice",
+        "perch",
+        "pigeon house",
+        "pigeon loft",
+        "poker dice",
+        "roost",
+        "roosting place",
+        "teeth"
+      ]
     },
     "birdcall": {
       "word": "BIRDCALL",
@@ -9906,7 +10522,7 @@
       ],
       "relatedWords": []
     },
-    "bird'snestbird'snest": {
+    "bird'snest": {
       "word": "BIRD'S NEST; BIRD'S-NEST",
       "definitions": [
         {
@@ -10074,7 +10690,17 @@
       ],
       "relatedWords": []
     },
-    "birostratebirostrated": {
+    "birostrate": {
+      "word": "BIROSTRATE; BIROSTRATED",
+      "definitions": [
+        {
+          "text": "Having a double beak, or two processes resembling beaks. The capsule is bilocular and birostrated. Ed. Encyc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "birostrated": {
       "word": "BIROSTRATE; BIROSTRATED",
       "definitions": [
         {
@@ -10684,13 +11310,7 @@
         {
           "text": "Twice; -- a word showing that something is, or is to be, repeated; as a passage of music, or an item in accounts.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bisbis": {
-      "word": "BIS; BIS-",
-      "definitions": [
+        },
         {
           "text": "A form of Bi-, sometimes used before s, c, or a vowel.",
           "partOfSpeech": ""
@@ -10831,20 +11451,6 @@
       ],
       "relatedWords": []
     },
-    "bise": {
-      "word": "BISE",
-      "definitions": [
-        {
-          "text": "A cold north wind which prevails on the northern coasts of the Mediterranean and in Switzerland, etc.; -- nearly the same as the mistral.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "See Bice.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "bisect": {
       "word": "BISECT",
       "definitions": [
@@ -10966,7 +11572,17 @@
       ],
       "relatedWords": []
     },
-    "biserialbiseriate": {
+    "biserial": {
+      "word": "BISERIAL; BISERIATE",
+      "definitions": [
+        {
+          "text": "In two rows or series.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "biseriate": {
       "word": "BISERIAL; BISERIATE",
       "definitions": [
         {
@@ -10998,7 +11614,17 @@
       ],
       "relatedWords": []
     },
-    "bisetosebisetous": {
+    "bisetose": {
+      "word": "BISETOSE; BISETOUS",
+      "definitions": [
+        {
+          "text": "Having two bristles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bisetous": {
       "word": "BISETOSE; BISETOUS",
       "definitions": [
         {
@@ -11497,7 +12123,7 @@
       ],
       "relatedWords": []
     },
-    "biskaraboilbiskarabutton": {
+    "biskaraboil": {
       "word": "BISKARA BOIL; BISKARA BUTTON",
       "definitions": [
         {
@@ -11507,7 +12133,17 @@
       ],
       "relatedWords": []
     },
-    "bismarebismer": {
+    "biskarabutton": {
+      "word": "BISKARA BOIL; BISKARA BUTTON",
+      "definitions": [
+        {
+          "text": "Same as Aleppo boil.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bismare": {
       "word": "BISMARE; BISMER",
       "definitions": [
         {
@@ -11518,8 +12154,12 @@
       "relatedWords": []
     },
     "bismer": {
-      "word": "BISMER",
+      "word": "BISMARE; BISMER",
       "definitions": [
+        {
+          "text": "Shame; abuse. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A rule steelyard. [Scot.]",
           "partOfSpeech": "noun"
@@ -11595,7 +12235,17 @@
       ],
       "relatedWords": []
     },
-    "bismuthinebismuthinite": {
+    "bismuthine": {
+      "word": "BISMUTHINE; BISMUTHINITE",
+      "definitions": [
+        {
+          "text": "Native bismuth sulphide; -- sometimes called bismuthite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bismuthinite": {
       "word": "BISMUTHINE; BISMUTHINITE",
       "definitions": [
         {
@@ -11745,11 +12395,25 @@
       ],
       "relatedWords": []
     },
-    "bisterbistre": {
+    "bister": {
       "word": "BISTER; BISTRE",
       "definitions": [
         {
           "text": "A dark brown pigment extracted from the soot of wood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bistre": {
+      "word": "BISTER; BISTRE",
+      "definitions": [
+        {
+          "text": "A dark brown pigment extracted from the soot of wood.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Bister.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11780,16 +12444,6 @@
       "definitions": [
         {
           "text": "A surgical instrument consisting of a slender knife, either straight or curved, generally used by introducing it beneath the part to be divided, and cutting towards the surface.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bistre": {
-      "word": "BISTRE",
-      "definitions": [
-        {
-          "text": "See Bister.",
           "partOfSpeech": "noun"
         }
       ],
@@ -13116,6 +13770,16 @@
       ],
       "relatedWords": []
     },
+    "biternate": {
+      "word": "BITERNATE",
+      "definitions": [
+        {
+          "text": "Doubly ternate, as when a petiole has three ternate leaflets.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "bitheism": {
       "word": "BITHEISM",
       "definitions": [
@@ -13332,7 +13996,17 @@
       ],
       "relatedWords": []
     },
-    "bitobitotree": {
+    "bito": {
+      "word": "BITO; BITO TREE",
+      "definitions": [
+        {
+          "text": "A small scrubby tree (Balanites Ægyptiaca) growing in dry regions of tropical Africa and Asia. The hard yellowish white wood is made into plows in Abyssinia; the bark is used in Farther India to stupefy fish; the ripe fruit is edible, when green it is an anthelmintic; the fermented juice is used as a beverage; the seeds yield a medicinal oil called zachun. The African name of the tree is hajilij.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bitotree": {
       "word": "BITO; BITO TREE",
       "definitions": [
         {
@@ -14107,7 +14781,17 @@
       ],
       "relatedWords": []
     },
-    "bittorbittour": {
+    "bittor": {
+      "word": "BITTOR; BITTOUR",
+      "definitions": [
+        {
+          "text": "The bittern. Dryden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bittour": {
       "word": "BITTOR; BITTOUR",
       "definitions": [
         {
@@ -14373,6 +15057,10 @@
         {
           "text": "Occurring or appearing once every two weeks; fortnightly.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A publication issued every two weeks.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -14540,18 +15228,8 @@
       "word": "BIZET",
       "definitions": [
         {
-          "text": "The upper faceted portion of a brilliant-cut diamond, which",
+          "text": "The upper faceted portion of a brilliant-cut diamond, which projects from the setting and occupies the zone between the girdle and the table. See Brilliant, n.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "birdfcoquelinertodandlecotgravetoimitatethecrowofa": {
-      "word": "bird, F. coqueliner to dandle (Cotgrave), to imitate the crow of a",
-      "definitions": [
-        {
-          "text": "Th treat with too great tenderness; to fondle; to indulge; to pamper. Cocker thy child and he shall make thee afraid. Ecclesiasticus xxx. 9. Poor folks cannot afford to cocker themselves up. J. Ingelow.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

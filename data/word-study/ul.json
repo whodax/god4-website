@@ -1,28 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "ultimatebyanymeansatpresentknownelementarythusatomsare": {
-      "word": "ultimate by any means at present known; elementary; thus, atoms are",
-      "definitions": [
-        {
-          "text": "(Min.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Homogenous.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Consisting of a single individual or zooid; as, a simple ascidian; -- opposed to compound. Simple contract (Law), any contract, whether verbal or written, which is not of record or under seal. J. W. Smith. Chitty. quantity, and that quantity only in the first degree. Ant: compound eye. for its execution upon any event provided for by the parties, or is not to become void on the happening of any such event. Burrill. elementary; plain; artless; sincere; harmless; undesigning; frank; open; unaffected; inartificial; unadorned; credulous; silly; foolish; shallow; unwise. inexperienced in duplicity, -- hence liable to be duped. A silly person is one who is ignorant or weak and also self-confident; hence, one who shows in speech and act a lack of good sense. Simplicity is incompatible with duplicity, artfulness, or vanity, while silliness is consistent with all three. Simplicity denotes lack of knowledge or of guile; silliness denotes want of judgment or right purpose, a defect of character as well as of education. I am a simple woman, much too weak To oppose your cunning. Shak. He is the companion of the silliest people in their most silly pleasure; he is ready for every impertinent entertainment and diversion. Law.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "ulan": {
       "word": "ULAN",
       "definitions": [
@@ -137,13 +115,23 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Affected with an ulcer or ulcers; ulcerated.",
+          "text": "Affected with an ulcer or ulcers; ulcerated. It will but skin and film the ulcerous place. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "ulcuscleulcuscule": {
+    "ulcuscle": {
+      "word": "ULCUSCLE; ULCUSCULE",
+      "definitions": [
+        {
+          "text": "A little ulcer. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ulcuscule": {
       "word": "ULCUSCLE; ULCUSCULE",
       "definitions": [
         {
@@ -183,7 +171,17 @@
       ],
       "relatedWords": []
     },
-    "uliginoseuliginous": {
+    "uliginose": {
+      "word": "ULIGINOSE; ULIGINOUS",
+      "definitions": [
+        {
+          "text": "Muddy; oozy; slimy; also, growing in muddy places. [R.] Woodward.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "uliginous": {
       "word": "ULIGINOSE; ULIGINOUS",
       "definitions": [
         {

@@ -491,7 +491,7 @@
       ],
       "relatedWords": []
     },
-    "sunrisesunrising": {
+    "sunrise": {
       "word": "SUNRISE; SUNRISING",
       "definitions": [
         {
@@ -505,7 +505,35 @@
       ],
       "relatedWords": []
     },
-    "sunsetsunsetting": {
+    "sunrising": {
+      "word": "SUNRISE; SUNRISING",
+      "definitions": [
+        {
+          "text": "The first appearance of the sun above the horizon in the morning; more generally, the time of such appearance, whether in fair or cloudy weather; as, to begin work at sunrise. \"The tide of sunrise swells.\" Keble.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, the region where the sun rises; the east. Which were beyond Jordan toward the sunrising. Deut. iv. 47 (Rev. Ver.) Full hot and fast the Saxon rides, with rein of travel slack, And, bending o'ev his saddle, leaves the sunrise at his back. Whittier.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sunset": {
+      "word": "SUNSET; SUNSETTING",
+      "definitions": [
+        {
+          "text": "The descent of the sun below the horizon; also, the time when the sun sets; evening. Also used figuratively. 'T is the sunset of life gives me mystical lore. Campbell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, the region where the sun sets; the west. Sunset shell (Zoöl.), a West Indian marine bivalve (Tellina radiata) having a smooth shell marked with radiating bands of varied colors resembling those seen at sunset or before sunrise; -- called also rising sun.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sunsetting": {
       "word": "SUNSET; SUNSETTING",
       "definitions": [
         {
@@ -630,40 +658,6 @@
       "definitions": [
         {
           "text": "Sunrise. [Local, U.S.] Such a horse as that might get over a good deal of ground atwixt sunup and sundown. Cooper.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sunuslithsunusrusssuin'skrsunufromsutobegetto": {
-      "word": "sunus, Lith. sunus, Russ. suin', Skr. sunu (from su to beget, to",
-      "definitions": [
-        {
-          "text": "A male child; the male issue, or offspring, of a parent, father or mother. Sarah conceived, and bare Abraham a son. Gen. xxi. 2.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A male descendant, however distant; hence, in the plural, descendants in general. I am the son of the wise, the son of ancient kings. Isa. xix. 11. I am the Lord, I change not; therefore ye sons of Jacob are not consumed. Mal. iii. 6.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Any young male person spoken of as a child; an adopted male child; a pupil, ward, or any other male dependent. The child grew, and she brought him unto Pharaoh's daughter, and he became her son. Ex. ii. 10. Be plain, good son, and homely in thy drift. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A native or inhabitant of some specified place; as, sons of Albion; sons of New England.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The produce of anything. Earth's tall sons, the cedar, oak, and pine. Blackmore.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Commonly with the def. article)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Jesus Christ, the Savior; -- called the Son of God, and the Son of man. We . . . do testify that the Father sent the Son to be the Savior of the world. 1 John iv. 14. Who gave His Son sure all has given. Keble. Hebraisms, which denote persons possessing the qualitites of pride, of light, or of Belial, as children inherit the qualities of their ancestors. Sons of the prophets. See School of the prophets, under Prophet.",
           "partOfSpeech": "noun"
         }
       ],

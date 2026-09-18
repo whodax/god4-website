@@ -1,11 +1,41 @@
 {
   "version": "v1",
   "entries": {
-    "hetairismhetarism": {
+    "hetaera": {
+      "word": "HETAERA; HETAIRA",
+      "definitions": [
+        {
+          "text": "A female paramour; a mistress, concubine, or harlot. -- He*tæ\"ric, He*tai\"ric (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hetaira": {
+      "word": "HETAERA; HETAIRA",
+      "definitions": [
+        {
+          "text": "A female paramour; a mistress, concubine, or harlot. -- He*tæ\"ric, He*tai\"ric (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hetairism": {
       "word": "HETAIRISM; HETARISM",
       "definitions": [
         {
-          "text": "A supposed primitive state of society, in which all the women",
+          "text": "A supposed primitive state of society, in which all the women of a tribe were held in common. H. Spencer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hetarism": {
+      "word": "HETAIRISM; HETARISM",
+      "definitions": [
+        {
+          "text": "A supposed primitive state of society, in which all the women of a tribe were held in common. H. Spencer.",
           "partOfSpeech": "noun"
         }
       ],
@@ -141,7 +171,17 @@
       ],
       "relatedWords": []
     },
-    "heterochronismheterochrony": {
+    "heterochronism": {
+      "word": "HETEROCHRONISM; HETEROCHRONY",
+      "definitions": [
+        {
+          "text": "In evolution, a deviation from the typical sequence in the formation of organs or parts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heterochrony": {
       "word": "HETEROCHRONISM; HETEROCHRONY",
       "definitions": [
         {
@@ -173,7 +213,17 @@
       ],
       "relatedWords": []
     },
-    "heterocliticheteroclitical": {
+    "heteroclitic": {
+      "word": "HETEROCLITIC; HETEROCLITICAL",
+      "definitions": [
+        {
+          "text": "Deviating from ordinary forms or rules; irregular; anomalous; abnormal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heteroclitical": {
       "word": "HETEROCLITIC; HETEROCLITICAL",
       "definitions": [
         {
@@ -423,7 +473,7 @@
       "word": "HETEROECIOUS",
       "definitions": [
         {
-          "text": "Passing through the different stages in its life history on an alternation of hosts, as the common wheat-rust fungus (Puccinia",
+          "text": "Passing through the different stages in its life history on an alternation of hosts, as the common wheat-rust fungus (Puccinia graminis), and certain other parasitic fungi; -- contrasted with autocious. -- Het`er*o\"cism (#), n.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -495,7 +545,7 @@
       "word": "HETEROGENEOUS",
       "definitions": [
         {
-          "text": "Differing in kind; having unlike qualities; possessed of different characteristics; dissimilar; -- opposed to homogeneous, and said of two or more connected objects, or of a conglomerate mass,",
+          "text": "Differing in kind; having unlike qualities; possessed of different characteristics; dissimilar; -- opposed to homogeneous, and said of two or more connected objects, or of a conglomerate mass, considered in respect to the parts of which it is made up. having different genders in the singular and plural numbers; as, hic locus, of the masculine gender in the singular, and hi loci and hæc loca, both masculine and neuter in the plural; hoc cælum, neuter in the singular; hi cæli, masculine in the plural. incapable of being compared together in respect to magnitude, and surfaces and solids. signs.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -656,6 +706,16 @@
       ],
       "relatedWords": []
     },
+    "heterogonous": {
+      "word": "HETEROGONOUS",
+      "definitions": [
+        {
+          "text": "Characterized by heterogony.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "heterogony": {
       "word": "HETEROGONY",
       "definitions": [
@@ -774,7 +834,7 @@
       ],
       "relatedWords": []
     },
-    "heteromorphismheteromorphy": {
+    "heteromorphism": {
       "word": "HETEROMORPHISM; HETEROMORPHY",
       "definitions": [
         {
@@ -790,6 +850,16 @@
         {
           "text": "Heteromorphic.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heteromorphy": {
+      "word": "HETEROMORPHISM; HETEROMORPHY",
+      "definitions": [
+        {
+          "text": "The state or quality of being heteromorphic.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -894,7 +964,7 @@
       "word": "HETERONYMOUS",
       "definitions": [
         {
-          "text": "Having different names or designations; standing in opposite",
+          "text": "Having different names or designations; standing in opposite relations. J. Le Conte.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1118,7 +1188,17 @@
       ],
       "relatedWords": []
     },
-    "heterosporicheterosporous": {
+    "heterosporic": {
+      "word": "HETEROSPORIC; HETEROSPOROUS",
+      "definitions": [
+        {
+          "text": "Producing two kinds of spores unlike each other.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heterosporous": {
       "word": "HETEROSPORIC; HETEROSPOROUS",
       "definitions": [
         {
@@ -1168,7 +1248,29 @@
       ],
       "relatedWords": []
     },
-    "heterotopismheterotopy": {
+    "heterotopism": {
+      "word": "HETEROTOPISM; HETEROTOPY",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A deviation from the natural position; -- a term applied in the case of organs or growths which are abnormal in situation.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Biol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A deviation from the natural position of parts, supposed to be effected in thousands of years, by the gradual displacement of germ cells.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heterotopy": {
       "word": "HETEROTOPISM; HETEROTOPY",
       "definitions": [
         {
@@ -1200,7 +1302,17 @@
       ],
       "relatedWords": []
     },
-    "heterotropalheterotropous": {
+    "heterotropal": {
+      "word": "HETEROTROPAL; HETEROTROPOUS",
+      "definitions": [
+        {
+          "text": "Having the embryo or ovule oblique or transverse to the funiculus; amphitropous. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "heterotropous": {
       "word": "HETEROTROPAL; HETEROTROPOUS",
       "definitions": [
         {

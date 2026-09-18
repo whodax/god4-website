@@ -1384,7 +1384,7 @@
       "word": "CONSENTANEOUS",
       "definitions": [
         {
-          "text": "Consistent; agreeable; suitable; accordant to; harmonious; concurrent.",
+          "text": "Consistent; agreeable; suitable; accordant to; harmonious; concurrent. A good law and consentaneous to reason. Howell.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1784,7 +1784,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Assuming or exhibiting an air of consequence; pretending to",
+          "text": "Assuming or exhibiting an air of consequence; pretending to importance; pompous; self-important; as, a consequential man. See Consequence, n., 4. His stately and consequential pace. Sir W. Scott. Consequential damage (Law) (a) Damage so remote as not to be actionable (b) Damage which although remote is actionable. (c) Actionable damage, but not following as an immediate result of an act.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2971,7 +2971,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having respect to; regardful. [R.] They may be . . . more considerate of praise. Dr. H. More.",
+          "text": "Having respect to; regardful. [R.] They may be . . . more considerate of praise. Dr. H. More. serious. See Thoughtful.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3451,16 +3451,6 @@
       "definitions": [
         {
           "text": "One who considers. [Obs.] Sir T. Browne.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "consideredbymarinersashigherinrankcfdlaaglowakintoe": {
-      "word": "considered by mariners as higher in rank; cf. D. laag low, akin to E.",
-      "definitions": [
-        {
-          "text": "The left-hand side of a ship to one on board facing toward the bow; port; -- opposed to Ant: starboard. port to avoid liability of confusion with starboard, owing to similarity of sound.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3966,7 +3956,17 @@
       ],
       "relatedWords": []
     },
-    "consimilitudeconsimility": {
+    "consimilitude": {
+      "word": "CONSIMILITUDE; CONSIMILITY",
+      "definitions": [
+        {
+          "text": "Common resemblance. [Obs.] Aubrey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "consimility": {
       "word": "CONSIMILITUDE; CONSIMILITY",
       "definitions": [
         {
@@ -4022,7 +4022,7 @@
         "subsist"
       ]
     },
-    "consistenceconsistency": {
+    "consistence": {
       "word": "CONSISTENCE; CONSISTENCY",
       "definitions": [
         {
@@ -4047,6 +4047,203 @@
         }
       ],
       "relatedWords": []
+    },
+    "consistency": {
+      "word": "CONSISTENCE; CONSISTENCY",
+      "definitions": [
+        {
+          "text": "The condition of standing or adhering together, or being fixed in union, as the parts of a body; existence; firmness; coherence; solidity. Water, being divided, maketh many circles, till it restore itself to the natural consistence. Bacon. We are as water, weak, and of no consistence. Jer. Taylor. The same form, substance, and consistency. T. Burned.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A degree of firmness, density, or spissitude. Let the expressed juices be boiled into the consistence of a sirup. Arbuthnot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which stands together as a united whole; a combination. The church of God, as meaning whole consistence of orders and members. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Firmness of constitution or character; substantiality; durability; persistency. His friendship is of a noble make and a lasting consistency. South.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Agreement or harmony of all parts of a complex thing among themselves, or of the same thing with itself at different times; the harmony of conduct with profession; congruity; correspondence; as, the consistency of laws, regulations, or judicial decisions; consistency of opinions; consistency of conduct or of character. That consistency of behavior whereby he inflexibly pursues those measures which appear the most just. Addison. Consistency, thou art a jewel. Popular Saying.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accommodation",
+        "accord",
+        "accordance",
+        "acquiescence",
+        "adaptation",
+        "adaption",
+        "adhesiveness",
+        "adjustment",
+        "affinity",
+        "agreement",
+        "apposition",
+        "aptness",
+        "assent",
+        "balance",
+        "bilateral symmetry",
+        "bullheadedness",
+        "calm",
+        "chorus",
+        "clarity",
+        "clear-cutness",
+        "clearness",
+        "closeness",
+        "coherence",
+        "cohesiveness",
+        "coincidence",
+        "compactness",
+        "compatibility",
+        "compliance",
+        "concert",
+        "concord",
+        "concordance",
+        "conformance",
+        "conformation",
+        "conformation other-direction",
+        "conformity",
+        "congeniality",
+        "congestedness",
+        "congestion",
+        "congruence",
+        "congruency",
+        "congruity",
+        "connectedness",
+        "connection",
+        "consecutiveness",
+        "consistence",
+        "consonance",
+        "consort",
+        "constancy",
+        "continuity",
+        "conventionality",
+        "cooperation",
+        "correspondence",
+        "crowdedness",
+        "crystallinity",
+        "definition",
+        "denseness",
+        "density",
+        "directness",
+        "distinctness",
+        "dynamic symmetry",
+        "equability",
+        "equality",
+        "equanimity",
+        "equilibrium",
+        "equivalence",
+        "eurythmics",
+        "eurythmy",
+        "evenness",
+        "explicitness",
+        "felicity",
+        "finish",
+        "firmness",
+        "fitness",
+        "flexibility",
+        "gluiness",
+        "glutinosity",
+        "gumminess",
+        "hardness",
+        "harmony",
+        "homogeneity",
+        "impenetrability",
+        "impermeability",
+        "imporosity",
+        "incompressibility",
+        "intersection",
+        "jammedness",
+        "keeping",
+        "likeness",
+        "limpidity",
+        "line",
+        "lucidity",
+        "malleability",
+        "monolithism",
+        "multilateral symmetry",
+        "obedience",
+        "observance",
+        "obstinacy",
+        "oneness",
+        "orderliness",
+        "orthodoxy",
+        "overlap",
+        "parallelism",
+        "peace",
+        "pellucidity",
+        "persistence",
+        "persistency",
+        "perspicuity",
+        "plain English",
+        "plain speech",
+        "plain style",
+        "plainness",
+        "pliancy",
+        "polarity",
+        "proportion",
+        "proportionality",
+        "rapport",
+        "reconcilement",
+        "reconciliation",
+        "regularity",
+        "relative density",
+        "retention",
+        "self-consistency",
+        "sequence",
+        "shapeliness",
+        "similarity",
+        "simplicity",
+        "snugness",
+        "solidity",
+        "solidness",
+        "specific gravity",
+        "spissitude",
+        "stability",
+        "steadfastness",
+        "steadiness",
+        "stick-to-itiveness",
+        "stickiness",
+        "straightforwardness",
+        "strictness",
+        "structure",
+        "stubbornness",
+        "suitability",
+        "symmetricalness",
+        "symmetry",
+        "sync",
+        "synchronism",
+        "tackiness",
+        "tally",
+        "tenaciousness",
+        "tenacity",
+        "thickness",
+        "tightness",
+        "timing",
+        "toughness",
+        "traditionalism",
+        "transparency",
+        "transpicuity",
+        "trilateral symmetry",
+        "unadorned style",
+        "unambiguousness",
+        "unequivocalness",
+        "uniformity",
+        "union",
+        "unison",
+        "unisonance",
+        "unity",
+        "unmistakableness",
+        "unruffledness",
+        "viscidity",
+        "viscosity",
+        "viscousness"
+      ]
     },
     "consistent": {
       "word": "CONSISTENT",
@@ -5072,7 +5269,119 @@
         "won ton soup"
       ]
     },
-    "consonanceconsonancy": {
+    "consonance": {
+      "word": "CONSONANCE; CONSONANCY",
+      "definitions": [
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Accord or agreement of sounds produced simultaneously, as a note with its third, fifth, and eighth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Agreement or congruity; harmony; accord; consistency; suitableness. The perfect consonancy of our persecuted church to the doctrines of Scripture and antiquity. Hammond. The optic nerve responds to the waves with which it is in consonance. Tyndall.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Friendship; concord. [Obs.] By the consonancy of our youth. Shak. suitableness; agreeableness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accord",
+        "accordance",
+        "affinity",
+        "agreement",
+        "alliteration",
+        "assent",
+        "assonance",
+        "attune",
+        "attunement",
+        "blank verse",
+        "calm",
+        "chime",
+        "chiming",
+        "chorus",
+        "clink",
+        "coherence",
+        "coincidence",
+        "compatibility",
+        "concentus",
+        "concert",
+        "concord",
+        "concordance",
+        "conformance",
+        "conformation",
+        "conformity",
+        "congeniality",
+        "congruence",
+        "congruency",
+        "congruity",
+        "consistency",
+        "consonancy",
+        "consort",
+        "constancy",
+        "continuity",
+        "cooperation",
+        "correspondence",
+        "crambo",
+        "diapason",
+        "double rhyme",
+        "equability",
+        "equanimity",
+        "equilibrium",
+        "equivalence",
+        "euphony",
+        "evenness",
+        "eye rhyme",
+        "harmonics",
+        "harmony",
+        "heavy harmony",
+        "homogeneity",
+        "homophony",
+        "intersection",
+        "monochord",
+        "monody",
+        "monolithism",
+        "near rhyme",
+        "oneness",
+        "overlap",
+        "parallelism",
+        "peace",
+        "persistence",
+        "rapport",
+        "rhyme",
+        "rhyme royal",
+        "rhyme scheme",
+        "rhyming dictionary",
+        "self-consistency",
+        "single rhyme",
+        "slant rhyme",
+        "stability",
+        "steadfastness",
+        "steadiness",
+        "symmetry",
+        "symphony",
+        "sync",
+        "synchronism",
+        "synchronization",
+        "tail rhyme",
+        "tally",
+        "three-part harmony",
+        "timing",
+        "tune",
+        "uniformity",
+        "union",
+        "unison",
+        "unisonance",
+        "unity",
+        "unrhymed poetry",
+        "unruffledness"
+      ]
+    },
+    "consonancy": {
       "word": "CONSONANCE; CONSONANCY",
       "definitions": [
         {
@@ -5758,7 +6067,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Obvious to the mental eye; easily recognized; clearly defined; notable; prominent; eminent; distinguished; as, a conspicuous exellence, or fault. A man who holds a conspicuous place in the political, eccesiastical, and literary history of England. Macaulay.",
+          "text": "Obvious to the mental eye; easily recognized; clearly defined; notable; prominent; eminent; distinguished; as, a conspicuous exellence, or fault. A man who holds a conspicuous place in the political, eccesiastical, and literary history of England. Macaulay. celebrated. See Distinguished.",
           "partOfSpeech": "adjective"
         }
       ],

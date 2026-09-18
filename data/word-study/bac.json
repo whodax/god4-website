@@ -33,7 +33,7 @@
       ],
       "relatedWords": []
     },
-    "baccarabaccarat": {
+    "baccara": {
       "word": "BACCARA; BACCARAT",
       "definitions": [
         {
@@ -43,7 +43,17 @@
       ],
       "relatedWords": []
     },
-    "baccarebackare": {
+    "baccarat": {
+      "word": "BACCARA; BACCARAT",
+      "definitions": [
+        {
+          "text": "A French game of cards, played by a banker and punters.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baccare": {
       "word": "BACCARE; BACKARE",
       "definitions": [
         {
@@ -259,7 +269,43 @@
       ],
       "relatedWords": []
     },
-    "bacchicbacchical": {
+    "bacchic": {
+      "word": "BACCHIC; BACCHICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to Bacchus; hence, jovial, or riotous,with intoxication.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Dionysiac",
+        "amok",
+        "berserk",
+        "corybantic",
+        "desperate",
+        "frantic",
+        "frenetic",
+        "frenzied",
+        "furious",
+        "like one possessed",
+        "mad",
+        "madding",
+        "maenadic",
+        "maniac",
+        "maniacal",
+        "rabid",
+        "raging",
+        "ranting",
+        "raving",
+        "raving mad",
+        "running wild",
+        "stark-raving mad",
+        "uncontrollable",
+        "violent",
+        "wild"
+      ]
+    },
+    "bacchical": {
       "word": "BACCHIC; BACCHICAL",
       "definitions": [
         {
@@ -410,7 +456,7 @@
       ],
       "relatedWords": []
     },
-    "bacharachbackarack": {
+    "bacharach": {
       "word": "BACHARACH; BACKARACK",
       "definitions": [
         {
@@ -419,6 +465,69 @@
         }
       ],
       "relatedWords": []
+    },
+    "bachelor": {
+      "word": "BACHELOR",
+      "definitions": [
+        {
+          "text": "A man of any age who has not been married. As merry and mellow an old bachelor as ever followed a hound. W. Irving.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An unmarried woman. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A person who has taken the first or lowest degree in the liberal arts, or in some branch of science, at a college or university; as, a bachelor of arts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A knight who had no standard of his own, but fought under the standard of another in the field; often, a young knight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In the companies of London tradesmen, one not yet admitted to wear the livery; a junior member. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of bass, an edible fresh-water fish (Pomoxys annularis) of the southern United States.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Bayard",
+        "Don Quixote",
+        "Gawain",
+        "Lancelot",
+        "Ritter",
+        "Sidney",
+        "Sir Galahad",
+        "baccalaureate",
+        "baccalaureus",
+        "bach",
+        "banneret",
+        "baronet",
+        "caballero",
+        "cavalier",
+        "chevalier",
+        "companion",
+        "confirmed bachelor",
+        "degree",
+        "doctor",
+        "doctorate",
+        "knight",
+        "knight bachelor",
+        "knight banneret",
+        "knight baronet",
+        "knight-errant",
+        "master",
+        "old bach",
+        "single man"
+      ]
     },
     "bachelor'sbutton": {
       "word": "BACHELOR'S BUTTON",
@@ -1469,8 +1578,12 @@
       ]
     },
     "backarack": {
-      "word": "BACKARACK",
+      "word": "BACHARACH; BACKARACK",
       "definitions": [
+        {
+          "text": "A kind of wine made at Bacharach on the Rhine.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Bacharach.",
           "partOfSpeech": "noun"
@@ -1479,8 +1592,12 @@
       "relatedWords": []
     },
     "backare": {
-      "word": "BACKARE",
+      "word": "BACCARE; BACKARE",
       "definitions": [
+        {
+          "text": "Stand back! give place! -- a cant word of the Elizabethan writers, probably in ridicule of some person who pretended to a knowledge of Latin which he did not possess. Baccare! you are marvelous forward. Shak.",
+          "partOfSpeech": "interjection"
+        },
         {
           "text": "Same as Baccare.",
           "partOfSpeech": "interjection"
@@ -2147,7 +2264,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "Of a Bunsen or similar air-fed burner, to light so that the flame",
+          "text": "Of a Bunsen or similar air-fed burner, to light so that the flame proceeds from the internal gas jet instead of from the external jet of mixed gas and air. -- Back\"-fir`ing, n.",
           "partOfSpeech": "verb"
         }
       ],
@@ -3109,7 +3226,7 @@
         "yule log"
       ]
     },
-    "backpiecebackplate": {
+    "backpiece": {
       "word": "BACKPIECE; BACKPLATE",
       "definitions": [
         {
@@ -3119,7 +3236,27 @@
       ],
       "relatedWords": []
     },
-    "backrackbackrag": {
+    "backplate": {
+      "word": "BACKPIECE; BACKPLATE",
+      "definitions": [
+        {
+          "text": "A piece, or plate which forms the back of anything, or which covers the back; armor for the back.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "backrack": {
+      "word": "BACKRACK; BACKRAG",
+      "definitions": [
+        {
+          "text": "See Bacharach.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "backrag": {
       "word": "BACKRACK; BACKRAG",
       "definitions": [
         {
@@ -3177,7 +3314,17 @@
       ],
       "relatedWords": []
     },
-    "backsheeshbackshish": {
+    "backsheesh": {
+      "word": "BACKSHEESH; BACKSHISH",
+      "definitions": [
+        {
+          "text": "In Egypt and the Turkish empire, a gratuity; a \"tip\".",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "backshish": {
       "word": "BACKSHEESH; BACKSHISH",
       "definitions": [
         {
@@ -3201,7 +3348,7 @@
       "word": "BACKSIGHT",
       "definitions": [
         {
-          "text": "The reading of the leveling staff in its unchanged position when the leveling instrument has been taken to a new position; a",
+          "text": "The reading of the leveling staff in its unchanged position when the leveling instrument has been taken to a new position; a sight directed backwards to a station previously occupied. Cf. Foresight, n., 3.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3438,12 +3585,26 @@
       ],
       "relatedWords": []
     },
+    "backstair": {
+      "word": "BACKSTAIRS; BACKSTAIR",
+      "definitions": [
+        {
+          "text": "Private; indirect; secret; intriguing; as if finding access by the back stairs. A backstairs influence. Burke. Female caprice and backstairs influence. Trevelyan.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "backstairs": {
       "word": "BACK STAIRS",
       "definitions": [
         {
           "text": "Stairs in the back part of a house, as distinguished from the front stairs; hence, a private or indirect way.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "Private; indirect; secret; intriguing; as if finding access by the back stairs. A backstairs influence. Burke. Female caprice and backstairs influence. Trevelyan.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -3474,16 +3635,6 @@
         "underhanded",
         "unobtrusive"
       ]
-    },
-    "backstairsbackstair": {
-      "word": "BACKSTAIRS; BACKSTAIR",
-      "definitions": [
-        {
-          "text": "Private; indirect; secret; intriguing; as if finding access by the back stairs. A backstairs influence. Burke. Female caprice and backstairs influence. Trevelyan.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
     },
     "backstay": {
       "word": "BACKSTAY",
@@ -3684,8 +3835,36 @@
       "relatedWords": []
     },
     "backward": {
-      "word": "BACKWARD",
+      "word": "BACKWARD; BACKWARDS",
       "definitions": [
+        {
+          "text": "With the back in advance or foremost; as, to ride backward.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Toward the back; toward the rear; as, to throw the arms backward.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "On the back, or with the back downward. Thou wilt fall backward. Shak.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Toward, or in, past time or events; ago. Some reigns backward. Locke.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "By way of reflection; reflexively. Sir J. Davies.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "From a better to a worse state, as from honor to shame, from religion to sin. The work went backward. Dryden.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "In a contrary or reverse manner, way, or direction; contrarily; as, to read backwards. We might have . . . beat them backward home. Shak.",
+          "partOfSpeech": "adverb"
+        },
         {
           "text": "Directed to the back or rear; as, backward glances.",
           "partOfSpeech": "adjective"
@@ -4086,7 +4265,31 @@
       ],
       "relatedWords": []
     },
-    "backwardbackwards": {
+    "backwardly": {
+      "word": "BACKWARDLY",
+      "definitions": [
+        {
+          "text": "Reluctantly; slowly; aversely. [Obs.] Sir P. Sidney.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Perversely; ill.[Obs.] And does he think so backwardly of me Shak.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "backwardness": {
+      "word": "BACKWARDNESS",
+      "definitions": [
+        {
+          "text": "The state of being backward.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "backwards": {
       "word": "BACKWARD; BACKWARDS",
       "definitions": [
         {
@@ -4116,30 +4319,6 @@
         {
           "text": "In a contrary or reverse manner, way, or direction; contrarily; as, to read backwards. We might have . . . beat them backward home. Shak.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "backwardly": {
-      "word": "BACKWARDLY",
-      "definitions": [
-        {
-          "text": "Reluctantly; slowly; aversely. [Obs.] Sir P. Sidney.",
-          "partOfSpeech": "adverb"
-        },
-        {
-          "text": "Perversely; ill.[Obs.] And does he think so backwardly of me Shak.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "backwardness": {
-      "word": "BACKWARDNESS",
-      "definitions": [
-        {
-          "text": "The state of being backward.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -4700,7 +4879,17 @@
       ],
       "relatedWords": []
     },
-    "bacteroidbacteroidal": {
+    "bacteroid": {
+      "word": "BACTEROID; BACTEROIDAL",
+      "definitions": [
+        {
+          "text": "Resembling bacteria; as, bacteroid particles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bacteroidal": {
       "word": "BACTEROID; BACTEROIDAL",
       "definitions": [
         {

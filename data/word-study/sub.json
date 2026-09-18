@@ -177,7 +177,17 @@
       ],
       "relatedWords": []
     },
-    "subahdarysubahship": {
+    "subahdary": {
+      "word": "SUBAHDARY; SUBAHSHIP",
+      "definitions": [
+        {
+          "text": "The office or jurisdiction of a subahdar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subahship": {
       "word": "SUBAHDARY; SUBAHSHIP",
       "definitions": [
         {
@@ -335,7 +345,7 @@
       ],
       "relatedWords": []
     },
-    "subaquaticsubaqueous": {
+    "subaquatic": {
       "word": "SUBAQUATIC; SUBAQUEOUS",
       "definitions": [
         {
@@ -353,7 +363,35 @@
       ],
       "relatedWords": []
     },
-    "subarachnoidsubarachnoidal": {
+    "subaqueous": {
+      "word": "SUBAQUATIC; SUBAQUEOUS",
+      "definitions": [
+        {
+          "text": "Being under water, or beneath the surface of water; adapted for use under water; submarine; as, a subaqueous helmet.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Formed in or under water; as, subaqueous deposits.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subarachnoid": {
+      "word": "SUBARACHNOID; SUBARACHNOIDAL",
+      "definitions": [
+        {
+          "text": "Situated under the arachnoid membrane.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subarachnoidal": {
       "word": "SUBARACHNOID; SUBARACHNOIDAL",
       "definitions": [
         {
@@ -373,7 +411,17 @@
       ],
       "relatedWords": []
     },
-    "subarcuatesubarcuated": {
+    "subarcuate": {
+      "word": "SUBARCUATE; SUBARCUATED",
+      "definitions": [
+        {
+          "text": "Having a figure resembling that of a bow; somewhat curved or arched.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subarcuated": {
       "word": "SUBARCUATE; SUBARCUATED",
       "definitions": [
         {
@@ -937,11 +985,31 @@
       ],
       "relatedWords": []
     },
-    "subcultratesubcultrated": {
+    "subcultrate": {
       "word": "SUBCULTRATE; SUBCULTRATED",
       "definitions": [
         {
           "text": "Having a form resembling that of a colter, or straight on one side and curved on the other.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subcultrated": {
+      "word": "SUBCULTRATE; SUBCULTRATED",
+      "definitions": [
+        {
+          "text": "Having a form resembling that of a colter, or straight on one side and curved on the other.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subcutaneous": {
+      "word": "SUBCUTANEOUS",
+      "definitions": [
+        {
+          "text": "Situated under the skin; hypodermic. operation performed without opening that part of the skin opposite to, or over, the internal section.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -957,7 +1025,17 @@
       ],
       "relatedWords": []
     },
-    "subcylindricalsubcylindric": {
+    "subcylindric": {
+      "word": "SUBCYLINDRICAL; SUBCYLINDRIC",
+      "definitions": [
+        {
+          "text": "Imperfectly cylindrical; approximately cylindrical.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subcylindrical": {
       "word": "SUBCYLINDRICAL; SUBCYLINDRIC",
       "definitions": [
         {
@@ -977,7 +1055,17 @@
       ],
       "relatedWords": []
     },
-    "subdeaconrysubdeaconship": {
+    "subdeaconry": {
+      "word": "SUBDEACONRY; SUBDEACONSHIP",
+      "definitions": [
+        {
+          "text": "The order or office of subdeacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subdeaconship": {
       "word": "SUBDEACONRY; SUBDEACONSHIP",
       "definitions": [
         {
@@ -1253,7 +1341,21 @@
       ],
       "relatedWords": []
     },
-    "subducesubduct": {
+    "subduce": {
+      "word": "SUBDUCE; SUBDUCT",
+      "definitions": [
+        {
+          "text": "To withdraw; to take away. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To subtract by arithmetical operation; to deduct. If, out of that infinite multitude of antecedent generations, we should subduce ten. Sir M. Hale.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subduct": {
       "word": "SUBDUCE; SUBDUCT",
       "definitions": [
         {
@@ -1543,7 +1645,17 @@
       ],
       "relatedWords": []
     },
-    "suberosesuberous": {
+    "suberose": {
+      "word": "SUBEROSE; SUBEROUS",
+      "definitions": [
+        {
+          "text": "Having a corky texture.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suberous": {
       "word": "SUBEROSE; SUBEROUS",
       "definitions": [
         {
@@ -1989,7 +2101,23 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Hence, that substance or being which is conscious of its own",
+          "text": "Hence, that substance or being which is conscious of its own operations; the mind; the thinking agent or principal; the ego. Cf. Object, n., 2. The philosophers of mind have, in a manner, usurped and appropriated this expression to themselves. Accordingly, in their hands, the phrases conscious or thinking subject, and subject, mean precisely the same thing. Sir W. Hamilton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The principal theme, or leading thought or phrase, on which a composition or a movement is based. The earliest known form of subject is the ecclesiastical cantus firmus, or plain song. Rockstro.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Fine Arts)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The incident, scene, figure, group, etc., which it is the aim of the artist to represent.",
           "partOfSpeech": "noun"
         },
         {
@@ -2065,7 +2193,15 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Especially, pertaining to, or derived from, one's own consciousness, in distinction from external observation; ralating to the mind, or intellectual world, in distinction from the outward or material excessively occupied with, or brooding over, one's own internal states.",
+          "text": "Especially, pertaining to, or derived from, one's own consciousness, in distinction from external observation; ralating to the mind, or intellectual world, in distinction from the outward or material excessively occupied with, or brooding over, one's own internal states. referred to the thinking subject, the ego; objective, what belongs to the object of thought, the non-ego. See Objective, a., 2. Sir W. Hamilton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Lit. & Art)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Modified by, or making prominent, the individuality of a writer or an artist; as, a subjective drama or painting; a subjective writer. sensations occurring when stimuli due to internal causes excite the nervous apparatus of the sense organs, as when a person imagines he sees figures which have no objective reality.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2373,9 +2509,27 @@
       ],
       "relatedWords": []
     },
+    "sublimable": {
+      "word": "SUBLIMABLE",
+      "definitions": [
+        {
+          "text": "Capable of being sublimed or sublimated.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "sublimate": {
       "word": "SUBLIMATE",
       "definitions": [
+        {
+          "text": "To bring by heat into the state of vapor, which, on cooling, returns again to the solid state; as, to sublimate sulphur or camphor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To refine and exalt; to heighten; to elevate. The precepts of Christianity are . . . so apt to cleanse and sublimate the more gross and corrupt. Dr. H. More.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "A product obtained by sublimation; hence, also, a purified product so obtained. Corrosive sublimate. (Chem.) See under Corrosive.",
           "partOfSpeech": "noun"
@@ -2611,7 +2765,7 @@
       ],
       "relatedWords": []
     },
-    "sublunarsublunary": {
+    "sublunar": {
       "word": "SUBLUNAR; SUBLUNARY",
       "definitions": [
         {
@@ -2622,8 +2776,12 @@
       "relatedWords": []
     },
     "sublunary": {
-      "word": "SUBLUNARY",
+      "word": "SUBLUNAR; SUBLUNARY",
       "definitions": [
+        {
+          "text": "Situated beneath the moon; hence, of or pertaining to this world; terrestrial; earthly. All things sublunary are subject to change. Dryden. All sublunary comforts imitate the changeableness, as well as feel the influence, of the planet they are under. South.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Any worldly thing. [Obs.]",
           "partOfSpeech": "noun"
@@ -2889,7 +3047,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Showing a readiness to submit; expressing submission; as, a submissive demeanor. With a submissive step I hasted down. Prior.",
+          "text": "Showing a readiness to submit; expressing submission; as, a submissive demeanor. With a submissive step I hasted down. Prior. modest; passive.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3133,7 +3291,17 @@
       ],
       "relatedWords": []
     },
-    "suboctavesuboctuple": {
+    "suboctave": {
+      "word": "SUBOCTAVE; SUBOCTUPLE",
+      "definitions": [
+        {
+          "text": "Containing one part of eight; having the ratio of one to eight. Bp. Wilkins.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suboctuple": {
       "word": "SUBOCTAVE; SUBOCTUPLE",
       "definitions": [
         {
@@ -3187,7 +3355,7 @@
       ],
       "relatedWords": []
     },
-    "suborbicularsuborbiculate": {
+    "suborbicular": {
       "word": "SUBORBICULAR; SUBORBICULATE",
       "definitions": [
         {
@@ -3197,7 +3365,27 @@
       ],
       "relatedWords": []
     },
-    "suborbitalsuborbitar": {
+    "suborbiculate": {
+      "word": "SUBORBICULAR; SUBORBICULATE",
+      "definitions": [
+        {
+          "text": "Almost orbiculate or orbicular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suborbital": {
+      "word": "SUBORBITAL; SUBORBITAR",
+      "definitions": [
+        {
+          "text": "Situated under or below the orbit.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suborbitar": {
       "word": "SUBORBITAL; SUBORBITAR",
       "definitions": [
         {
@@ -3227,7 +3415,17 @@
       ],
       "relatedWords": []
     },
-    "subordinancesubordinancy": {
+    "subordinance": {
+      "word": "SUBORDINANCE; SUBORDINANCY",
+      "definitions": [
+        {
+          "text": "Subordinacy; subordination. [Obs.] Dr. H. More. Sir W. Temple.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subordinancy": {
       "word": "SUBORDINANCE; SUBORDINANCY",
       "definitions": [
         {
@@ -3267,7 +3465,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To make subject; to subject or subdue; as, to subordinate the",
+          "text": "To make subject; to subject or subdue; as, to subordinate the passions to reason.",
           "partOfSpeech": "verb"
         }
       ],
@@ -3795,7 +3993,17 @@
       ],
       "relatedWords": []
     },
-    "subscapularsubscapulary": {
+    "subscapular": {
+      "word": "SUBSCAPULAR; SUBSCAPULARY",
+      "definitions": [
+        {
+          "text": "Situated beneath the scapula; infrascapular; as, the subscapular muscle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subscapulary": {
       "word": "SUBSCAPULAR; SUBSCAPULARY",
       "definitions": [
         {
@@ -3887,7 +4095,7 @@
       "word": "SUBSCRIPT",
       "definitions": [
         {
-          "text": "Written below or underneath; as, iota subscript. (See under Iota.) Specifically (Math.), said of marks, figures, or letters (suffixes), written below and usually to the right of other letters",
+          "text": "Written below or underneath; as, iota subscript. (See under Iota.) Specifically (Math.), said of marks, figures, or letters (suffixes), written below and usually to the right of other letters to distinguish them; as, a, n, 2, in the symbols Xa, An, Y2. See Suffix, n., 2, and Subindex.",
           "partOfSpeech": "adjective"
         },
         {
@@ -4005,7 +4213,17 @@
       ],
       "relatedWords": []
     },
-    "subsequencesubsequency": {
+    "subsequence": {
+      "word": "SUBSEQUENCE; SUBSEQUENCY",
+      "definitions": [
+        {
+          "text": "The act or state of following; -- opposed to precedence.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subsequency": {
       "word": "SUBSEQUENCE; SUBSEQUENCY",
       "definitions": [
         {
@@ -4063,7 +4281,17 @@
       ],
       "relatedWords": []
     },
-    "subserviencesubserviency": {
+    "subservience": {
+      "word": "SUBSERVIENCE; SUBSERVIENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being subservient; instrumental fitness or use; hence, willingness to serve another's purposes; in a derogatory sense, servility. The body wherein appears much fitness, use, and subserviency to infinite functions. Bentley. There is a regular subordination and subserviency among all the parts to beneficial ends. Cheyne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subserviency": {
       "word": "SUBSERVIENCE; SUBSERVIENCY",
       "definitions": [
         {
@@ -4131,7 +4359,17 @@
       ],
       "relatedWords": []
     },
-    "subsidencesubsidency": {
+    "subsidence": {
+      "word": "SUBSIDENCE; SUBSIDENCY",
+      "definitions": [
+        {
+          "text": "The act or process of subsiding. The subdual or subsidence of the more violent passions. Bp. Warburton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subsidency": {
       "word": "SUBSIDENCE; SUBSIDENCY",
       "definitions": [
         {
@@ -4531,7 +4769,7 @@
       "word": "SUBSTANTIVAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a substantive; of the nature of",
+          "text": "Of or pertaining to a substantive; of the nature of substantive.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4707,7 +4945,7 @@
       "word": "SUBSTITUTIONAL",
       "definitions": [
         {
-          "text": "Of or pertaining to substitution; standing in the place of",
+          "text": "Of or pertaining to substitution; standing in the place of another; substituted.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5053,7 +5291,17 @@
       ],
       "relatedWords": []
     },
-    "subterfluentsubterfluous": {
+    "subterfluent": {
+      "word": "SUBTERFLUENT; SUBTERFLUOUS",
+      "definitions": [
+        {
+          "text": "Running under or beneath. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subterfluous": {
       "word": "SUBTERFLUENT; SUBTERFLUOUS",
       "definitions": [
         {
@@ -5093,11 +5341,21 @@
       ],
       "relatedWords": []
     },
-    "subterraneansubterraneous": {
+    "subterranean": {
       "word": "SUBTERRANEAN; SUBTERRANEOUS",
       "definitions": [
         {
-          "text": "Being or lying under the surface of the earth; situated within the earth, or under ground; as, subterranean springs; a subterraneous",
+          "text": "Being or lying under the surface of the earth; situated within the earth, or under ground; as, subterranean springs; a subterraneous passage.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subterraneous": {
+      "word": "SUBTERRANEAN; SUBTERRANEOUS",
+      "definitions": [
+        {
+          "text": "Being or lying under the surface of the earth; situated within the earth, or under ground; as, subterranean springs; a subterraneous passage.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5177,7 +5435,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Sly; artful; cunning; crafty; subtle; as, a subtile person; a subtile adversary; a subtile scheme. [In this sense now commonly written subtle.] in subtile that of a thread spun out to fineness. The acute intellect pierces to its aim; the subtile (or subtle) intellect winds its way",
+          "text": "Sly; artful; cunning; crafty; subtle; as, a subtile person; a subtile adversary; a subtile scheme. [In this sense now commonly written subtle.] in subtile that of a thread spun out to fineness. The acute intellect pierces to its aim; the subtile (or subtle) intellect winds its way through obstacles.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5607,7 +5865,17 @@
       ],
       "relatedWords": []
     },
-    "subulatesubulated": {
+    "subulate": {
+      "word": "SUBULATE; SUBULATED",
+      "definitions": [
+        {
+          "text": "Very narrow, and tapering gradually to a fine point from a broadish base; awl-shaped; linear.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "subulated": {
       "word": "SUBULATE; SUBULATED",
       "definitions": [
         {
@@ -5725,7 +5993,7 @@
       ],
       "relatedWords": []
     },
-    "suburbialsuburbian": {
+    "suburbial": {
       "word": "SUBURBIAL; SUBURBIAN",
       "definitions": [
         {
@@ -5735,7 +6003,27 @@
       ],
       "relatedWords": []
     },
-    "suburbicariansuburbicary": {
+    "suburbian": {
+      "word": "SUBURBIAL; SUBURBIAN",
+      "definitions": [
+        {
+          "text": "Suburban. [Obs.] \"Suburbial fields.\" Warton. \"Suburbian muse.\" Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suburbicarian": {
+      "word": "SUBURBICARIAN; SUBURBICARY",
+      "definitions": [
+        {
+          "text": "Being in the suburbs; -- applied to the six dioceses in the suburbs of Rome subject to the pope as bishop of Rome. The pope having stretched his authority beyond the bounds of his suburbicarian precincts. Barrow.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suburbicary": {
       "word": "SUBURBICARIAN; SUBURBICARY",
       "definitions": [
         {

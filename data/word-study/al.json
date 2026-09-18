@@ -15,6 +15,10 @@
         {
           "text": "To; at; on; -- in OF. shortened to a-. See Ad-. (c) The Arabic definite article answering to the English the; as, Alkoran, the Koran or the Book; alchemy, the chemistry.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "Although; if. [Obs.] See All, conj.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -391,7 +395,17 @@
       ],
       "relatedWords": []
     },
-    "alalongaalilonghi": {
+    "alalonga": {
+      "word": "ALALONGA; ALILONGHI",
+      "definitions": [
+        {
+          "text": "The tunny. See Albicore.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alilonghi": {
       "word": "ALALONGA; ALILONGHI",
       "definitions": [
         {
@@ -793,7 +807,7 @@
       "word": "ALARMING",
       "definitions": [
         {
-          "text": "Exciting, or calculated to excite, alarm; causing apprehension",
+          "text": "Exciting, or calculated to excite, alarm; causing apprehension of danger; as, an alarming crisis or report.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -879,11 +893,15 @@
         {
           "text": "Lately; of late. [Archaic] There hath been alate such tales spread abroad. Latimer.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Winged; having wings, or side appendages like wings.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "alatealated": {
+    "alated": {
       "word": "ALATE; ALATED",
       "definitions": [
         {
@@ -893,7 +911,17 @@
       ],
       "relatedWords": []
     },
-    "alaternalaternus": {
+    "alatern": {
+      "word": "ALATERN; ALATERNUS",
+      "definitions": [
+        {
+          "text": "An ornamental evergreen shrub (Rhamnus alaternus) belonging to the buckthorns.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alaternus": {
       "word": "ALATERN; ALATERNUS",
       "definitions": [
         {
@@ -987,7 +1015,17 @@
       ],
       "relatedWords": []
     },
-    "albealbee": {
+    "albe": {
+      "word": "ALBE; ALBEE",
+      "definitions": [
+        {
+          "text": "Although; albeit. [Obs.] Albe Clarissa were their chiefest founderess. Spenser.",
+          "partOfSpeech": "conjunction"
+        }
+      ],
+      "relatedWords": []
+    },
+    "albee": {
       "word": "ALBE; ALBEE",
       "definitions": [
         {
@@ -1133,7 +1171,17 @@
       ],
       "relatedWords": []
     },
-    "albigensesalbigeois": {
+    "albigenses": {
+      "word": "ALBIGENSES; ALBIGEOIS",
+      "definitions": [
+        {
+          "text": "A sect of reformers opposed to the church of Rome in the 12th centuries. were exterminated by crusades and the Inquisition. They were distinct from the Waldenses.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "albigeois": {
       "word": "ALBIGENSES; ALBIGEOIS",
       "definitions": [
         {
@@ -1663,6 +1711,10 @@
         {
           "text": "A diffusible substance formed from albumin by the action of natural or artificial gastric juice. See Peptone.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, or containing, albumen; having the properties of, or resembling, albumen or albumin.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1677,11 +1729,11 @@
       ],
       "relatedWords": []
     },
-    "albuminousalbuminose": {
+    "albuminous": {
       "word": "ALBUMINOUS; ALBUMINOSE",
       "definitions": [
         {
-          "text": "Pertaining to, or containing, albumen; having the properties",
+          "text": "Pertaining to, or containing, albumen; having the properties of, or resembling, albumen or albumin.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1777,7 +1829,7 @@
       ],
       "relatedWords": []
     },
-    "alcaidalcayde": {
+    "alcaid": {
       "word": "ALCAID; ALCAYDE",
       "definitions": [
         {
@@ -1786,6 +1838,24 @@
         },
         {
           "text": "The warden, or keeper of a jail.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alcayde": {
+      "word": "ALCAID; ALCAYDE",
+      "definitions": [
+        {
+          "text": "A commander of a castle or fortress among the Spaniards, Portuguese, and Moors.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The warden, or keeper of a jail.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Alcaid.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1841,16 +1911,6 @@
       ],
       "relatedWords": []
     },
-    "alcayde": {
-      "word": "ALCAYDE",
-      "definitions": [
-        {
-          "text": "Same as Alcaid.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "alcazar": {
       "word": "ALCAZAR",
       "definitions": [
@@ -1871,7 +1931,17 @@
       ],
       "relatedWords": []
     },
-    "alchemicalchemical": {
+    "alchemic": {
+      "word": "ALCHEMIC; ALCHEMICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to alchemy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alchemical": {
       "word": "ALCHEMIC; ALCHEMICAL",
       "definitions": [
         {
@@ -1901,7 +1971,17 @@
       ],
       "relatedWords": []
     },
-    "alchemisticalchemistical": {
+    "alchemistic": {
+      "word": "ALCHEMISTIC; ALCHEMISTICAL",
+      "definitions": [
+        {
+          "text": "Relating to or practicing alchemy. Metaphysical and alchemistical legislators. Burke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alchemistical": {
       "word": "ALCHEMISTIC; ALCHEMISTICAL",
       "definitions": [
         {
@@ -2012,7 +2092,37 @@
         "wizardry"
       ]
     },
-    "alchymicalchymistalchymisticalchymy": {
+    "alchymic": {
+      "word": "ALCHYMIC; ALCHYMIST; ALCHYMISTIC; ALCHYMY",
+      "definitions": [
+        {
+          "text": "See Alchemic, Alchemist, Alchemistic, Alchemy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alchymist": {
+      "word": "ALCHYMIC; ALCHYMIST; ALCHYMISTIC; ALCHYMY",
+      "definitions": [
+        {
+          "text": "See Alchemic, Alchemist, Alchemistic, Alchemy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alchymistic": {
+      "word": "ALCHYMIC; ALCHYMIST; ALCHYMISTIC; ALCHYMY",
+      "definitions": [
+        {
+          "text": "See Alchemic, Alchemist, Alchemistic, Alchemy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alchymy": {
       "word": "ALCHYMIC; ALCHYMIST; ALCHYMISTIC; ALCHYMY",
       "definitions": [
         {
@@ -2032,7 +2142,17 @@
       ],
       "relatedWords": []
     },
-    "alcoatealcohate": {
+    "alcoate": {
+      "word": "ALCOATE; ALCOHATE",
+      "definitions": [
+        {
+          "text": "Shortened forms of Alcoholate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alcohate": {
       "word": "ALCOATE; ALCOHATE",
       "definitions": [
         {
@@ -2603,7 +2723,7 @@
       ],
       "relatedWords": []
     },
-    "alcoholometeralcoholmeter": {
+    "alcoholometer": {
       "word": "ALCOHOLOMETER; ALCOHOLMETER",
       "definitions": [
         {
@@ -2613,7 +2733,37 @@
       ],
       "relatedWords": []
     },
-    "alcoholometricalcoholometricalalcoholmetrical": {
+    "alcoholmeter": {
+      "word": "ALCOHOLOMETER; ALCOHOLMETER",
+      "definitions": [
+        {
+          "text": "An instrument for determining the strength of spirits, with a scale graduated so as to indicate the percentage of pure alcohol, either by weight or volume. It is usually a form of hydrometer with a special scale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alcoholometric": {
+      "word": "ALCOHOLOMETRIC; ALCOHOLOMETRICAL; ALCOHOLMETRICAL",
+      "definitions": [
+        {
+          "text": "Relating to the alcoholometer or alcoholometry. The alcoholometrical strength of spirituous liquors. Ure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alcoholometrical": {
+      "word": "ALCOHOLOMETRIC; ALCOHOLOMETRICAL; ALCOHOLMETRICAL",
+      "definitions": [
+        {
+          "text": "Relating to the alcoholometer or alcoholometry. The alcoholometrical strength of spirituous liquors. Ure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alcoholmetrical": {
       "word": "ALCOHOLOMETRIC; ALCOHOLOMETRICAL; ALCOHOLMETRICAL",
       "definitions": [
         {
@@ -2633,7 +2783,7 @@
       ],
       "relatedWords": []
     },
-    "alcohometeralcohometric": {
+    "alcohometer": {
       "word": "ALCOHOMETER; ALCOHOMETRIC",
       "definitions": [
         {
@@ -2643,7 +2793,27 @@
       ],
       "relatedWords": []
     },
-    "alcoometryalcooemetry": {
+    "alcohometric": {
+      "word": "ALCOHOMETER; ALCOHOMETRIC",
+      "definitions": [
+        {
+          "text": "Same as Alcoholometer, Alcoholometric.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alcoometry": {
+      "word": "ALCOOMETRY; ALCOOEMETRY",
+      "definitions": [
+        {
+          "text": "See Alcoholometry. suppression of a syllable in order to avoid a disagreeable sequence of sounds. (Cf. Idolatry.) Littré.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alcooemetry": {
       "word": "ALCOOMETRY; ALCOOEMETRY",
       "definitions": [
         {
@@ -2866,15 +3036,23 @@
         {
           "text": "A tree, usually growing in moist land, and belonging to the genus Alnus. The wood is used by turners, etc.; the bark by dyers and tanners. In the U. S. the species of alder are usually shrubs or small trees. Black alder. (a) A European shrub (Rhamnus frangula); Alder buckthorn. (b) An American species of holly (Ilex verticillata), bearing red berries.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of all; -- used in composition; as, alderbest, best of all, alderwisest, wisest of all. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "alderaller": {
+    "aller": {
       "word": "ALDER; ALLER",
       "definitions": [
         {
           "text": "Of all; -- used in composition; as, alderbest, best of all, alderwisest, wisest of all. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Same as Alder, of all. [Obs.] Chaucer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3539,7 +3717,27 @@
       ],
       "relatedWords": []
     },
-    "aleppoboilaleppobuttonaleppoevil": {
+    "aleppoboil": {
+      "word": "ALEPPO BOIL; ALEPPO BUTTON; ALEPPO EVIL",
+      "definitions": [
+        {
+          "text": "A chronic skin affection terminating in an ulcer, most commonly of the face. It is endemic along the Mediterranean, and is probably due to a specific bacillus. Called also Aleppo ulcer, Biskara boil, Delhi boil, Oriental sore, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "aleppobutton": {
+      "word": "ALEPPO BOIL; ALEPPO BUTTON; ALEPPO EVIL",
+      "definitions": [
+        {
+          "text": "A chronic skin affection terminating in an ulcer, most commonly of the face. It is endemic along the Mediterranean, and is probably due to a specific bacillus. Called also Aleppo ulcer, Biskara boil, Delhi boil, Oriental sore, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "aleppoevil": {
       "word": "ALEPPO BOIL; ALEPPO BUTTON; ALEPPO EVIL",
       "definitions": [
         {
@@ -3877,7 +4075,17 @@
       ],
       "relatedWords": []
     },
-    "aleutianaleutic": {
+    "aleutian": {
+      "word": "ALEUTIAN; ALEUTIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a chain of islands between Alaska and Kamtchatka; also, designating these islands.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aleutic": {
       "word": "ALEUTIAN; ALEUTIC",
       "definitions": [
         {
@@ -3921,7 +4129,17 @@
       ],
       "relatedWords": []
     },
-    "alexandersalisanders": {
+    "alexanders": {
+      "word": "ALEXANDERS; ALISANDERS",
+      "definitions": [
+        {
+          "text": "A name given to two species of the genus Smyrnium, formerly cultivated and used as celery now is; -- called also horse parsely.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alisanders": {
       "word": "ALEXANDERS; ALISANDERS",
       "definitions": [
         {
@@ -3935,7 +4153,11 @@
       "word": "ALEXANDRIAN",
       "definitions": [
         {
-          "text": "Of or pertaining to Alexandria in Egypt; as, the Alexandrian",
+          "text": "Of or pertaining to Alexandria in Egypt; as, the Alexandrian library.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Applied to a kind of heroic verse. See Alexandrine, n.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3955,7 +4177,17 @@
       ],
       "relatedWords": []
     },
-    "alexipharmacalexipharmacal": {
+    "alexipharmac": {
+      "word": "ALEXIPHARMAC; ALEXIPHARMACAL",
+      "definitions": [
+        {
+          "text": "Alexipharmic. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alexipharmacal": {
       "word": "ALEXIPHARMAC; ALEXIPHARMACAL",
       "definitions": [
         {
@@ -3971,11 +4203,15 @@
         {
           "text": "An antidote against poison or infection; a counterpoison.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Expelling or counteracting poison; antidotal.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "alexipharmicalexipharmical": {
+    "alexipharmical": {
       "word": "ALEXIPHARMIC; ALEXIPHARMICAL",
       "definitions": [
         {
@@ -4005,11 +4241,15 @@
         {
           "text": "A preservative against contagious and infectious diseases, and the effects of poison in general. Brande & C.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Resisting poison; obviating the effects of venom; alexipharmic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "alexitericalexiterical": {
+    "alexiterical": {
       "word": "ALEXITERIC; ALEXITERICAL",
       "definitions": [
         {
@@ -4019,7 +4259,17 @@
       ],
       "relatedWords": []
     },
-    "alfaalfagrass": {
+    "alfa": {
+      "word": "ALFA ; ALFA GRASS",
+      "definitions": [
+        {
+          "text": "A plant (Macrochloa tenacissima) of North Africa; also, its fiber, used in paper making.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alfagrass": {
       "word": "ALFA ; ALFA GRASS",
       "definitions": [
         {
@@ -4079,7 +4329,17 @@
       ],
       "relatedWords": []
     },
-    "alfileriaalfilerilla": {
+    "alfileria": {
+      "word": "ALFILERIA; ALFILERILLA",
+      "definitions": [
+        {
+          "text": "Same as Alfilaria.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alfilerilla": {
       "word": "ALFILERIA; ALFILERILLA",
       "definitions": [
         {
@@ -4164,7 +4424,17 @@
       ],
       "relatedWords": []
     },
-    "algarotalgaroth": {
+    "algarot": {
+      "word": "ALGAROT; ALGAROTH",
+      "definitions": [
+        {
+          "text": "A term used for the Powder of Algaroth, a white powder which is a compound of trichloride and trioxide of antimony. It was formerly used in medicine as an emetic, purgative, and diaphoretic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "algaroth": {
       "word": "ALGAROT; ALGAROTH",
       "definitions": [
         {
@@ -4184,7 +4454,25 @@
       ],
       "relatedWords": []
     },
-    "algatealgates": {
+    "algate": {
+      "word": "ALGATE; ALGATES",
+      "definitions": [
+        {
+          "text": "Always; wholly; everywhere. [Obs.] Ulna now he algates must forego. Spenser. \"everywhere.\"",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "By any or means; at all events. [Obs.] Fairfax.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Notwithstanding; yet. [Obs.] Chaucer.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "algates": {
       "word": "ALGATE; ALGATES",
       "definitions": [
         {
@@ -4230,7 +4518,17 @@
       ],
       "relatedWords": []
     },
-    "algebraicalgebraical": {
+    "algebraic": {
+      "word": "ALGEBRAIC; ALGEBRAICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to algebra; containing an operation of algebra, or deduced from such operation; as, algebraic characters; algebraical writings. Algebraic curve, a curve such that the equation which expresses the relation between the coördinates of its points involves only the ordinary operations of algebra; -- opposed to a transcendental curve.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "algebraical": {
       "word": "ALGEBRAIC; ALGEBRAICAL",
       "definitions": [
         {
@@ -4472,7 +4770,7 @@
       "word": "ALGOMETER",
       "definitions": [
         {
-          "text": "An instrument for measuring sensations of pain due to pressure.",
+          "text": "An instrument for measuring sensations of pain due to pressure. It has a piston rod with a blunted tip which is pressed against the skin. -- Al*gom\"e*try (#), n. -- Al`go*met\"ric (#), *met\"ric*al (#), a. --Al`go*met\"ric*al*ly, adv.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4510,7 +4808,17 @@
       ],
       "relatedWords": []
     },
-    "algonquinalgonkin": {
+    "algonquin": {
+      "word": "ALGONQUIN; ALGONKIN",
+      "definitions": [
+        {
+          "text": "One of a widely spread family of Indians, including many distinct tribes, which formerly occupied most of the northern and eastern part of North America. The name was originally applied to a group of Indian tribes north of the River St. Lawrence.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "algonkin": {
       "word": "ALGONQUIN; ALGONKIN",
       "definitions": [
         {
@@ -4530,7 +4838,7 @@
       ],
       "relatedWords": []
     },
-    "algorismalgorithm": {
+    "algorism": {
       "word": "ALGORISM; ALGORITHM",
       "definitions": [
         {
@@ -4543,6 +4851,72 @@
         }
       ],
       "relatedWords": []
+    },
+    "algorithm": {
+      "word": "ALGORISM; ALGORITHM",
+      "definitions": [
+        {
+          "text": "The art of calculating by nine figures and zero.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The art of calculating with any species of notation; as, the algorithms of fractions, proportions, surds, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Arabic numerals",
+        "MO",
+        "Roman numerals",
+        "algorism",
+        "applied mathematics",
+        "approach",
+        "attack",
+        "binary system",
+        "course",
+        "decimal system",
+        "duodecimal system",
+        "fashion",
+        "figures",
+        "form",
+        "guise",
+        "hexadecimal system",
+        "higher mathematics",
+        "line",
+        "line of action",
+        "lines",
+        "manner",
+        "manner of working",
+        "math",
+        "mathematic",
+        "mathematics",
+        "means",
+        "method",
+        "methodology",
+        "mode",
+        "mode of operation",
+        "mode of procedure",
+        "modus operandi",
+        "numbers",
+        "octal system",
+        "order",
+        "practice",
+        "procedure",
+        "proceeding",
+        "process",
+        "pure mathematics",
+        "routine",
+        "style",
+        "system",
+        "tack",
+        "technique",
+        "the drill",
+        "the how",
+        "the way of",
+        "tone",
+        "way",
+        "wise"
+      ]
     },
     "algous": {
       "word": "ALGOUS",
@@ -4570,6 +4944,10 @@
         {
           "text": "Same as Almug (and etymologically preferable). 2 Chron. ii. 8.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tree or wood of the Bible (2 Chron. ii. 8; 1 K. x. 11). be the red sandalwood of China and the Indian Archipelago. W. Smith.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -4584,7 +4962,17 @@
       ],
       "relatedWords": []
     },
-    "alhambraicalhambresque": {
+    "alhambraic": {
+      "word": "ALHAMBRAIC; ALHAMBRESQUE",
+      "definitions": [
+        {
+          "text": "Made or decorated after the fanciful style of the ornamentation in the Alhambra, which affords an unusually fine exhibition of Saracenic or Arabesque architecture.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alhambresque": {
       "word": "ALHAMBRAIC; ALHAMBRESQUE",
       "definitions": [
         {
@@ -5480,7 +5868,17 @@
       ],
       "relatedWords": []
     },
-    "aliethmoidaliethmoidal": {
+    "aliethmoid": {
+      "word": "ALIETHMOID; ALIETHMOIDAL",
+      "definitions": [
+        {
+          "text": "Pertaining to expansions of the ethmoid bone or",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aliethmoidal": {
       "word": "ALIETHMOID; ALIETHMOIDAL",
       "definitions": [
         {
@@ -5533,6 +5931,18 @@
     "alight": {
       "word": "ALIGHT",
       "definitions": [
+        {
+          "text": "To spring down, get down, or descend, as from on horseback or from a carriage; to dismount.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To descend and settle, lodge, rest, or stop; as, a flying bird alights on a tree; snow alights on a roof.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To come or chance (upon). [R.]",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "Lighted; lighted up; in a flame. \"The lamps were alight.\" Dickens.",
           "partOfSpeech": "adjective"
@@ -6337,11 +6747,15 @@
         {
           "text": "The alisphenoid bone.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to or forming the wing of the sphenoid; relating to a bone in the base of the skull, which in the adult is often consolidated with the sphenoid; as, alisphenoid bone; alisphenoid canal.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "alisphenoidalisphenoidal": {
+    "alisphenoidal": {
       "word": "ALISPHENOID; ALISPHENOIDAL",
       "definitions": [
         {
@@ -6593,7 +7007,7 @@
       "word": "ALKAHEST",
       "definitions": [
         {
-          "text": "The fabled \"universal solvent\" of the alchemists; a menstruum",
+          "text": "The fabled \"universal solvent\" of the alchemists; a menstruum capable of dissolving all bodies.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6609,7 +7023,17 @@
       ],
       "relatedWords": []
     },
-    "alkalescencealkalescency": {
+    "alkalescence": {
+      "word": "ALKALESCENCE; ALKALESCENCY",
+      "definitions": [
+        {
+          "text": "A tendency to become alkaline; or the state of a substance in which alkaline properties begin to be developed, or to predominant. Ure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alkalescency": {
       "word": "ALKALESCENCE; ALKALESCENCY",
       "definitions": [
         {
@@ -6731,7 +7155,17 @@
       ],
       "relatedWords": []
     },
-    "alkalimetricalkalimetrical": {
+    "alkalimetric": {
+      "word": "ALKALIMETRIC; ALKALIMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to alkalimetry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alkalimetrical": {
       "word": "ALKALIMETRIC; ALKALIMETRICAL",
       "definitions": [
         {
@@ -6869,11 +7303,15 @@
         {
           "text": "An organic base, especially one of a class of substances occurring ready formed in the tissues of plants and the bodies of animals. of them also contain oxygen. They include many of the active principles in plants; thus, morphine and narcotine are alkaloids found in opium.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, resembling, or containing, alkali.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "alkaloidalkaloidal": {
+    "alkaloidal": {
       "word": "ALKALOID; ALKALOIDAL",
       "definitions": [
         {
@@ -7215,7 +7653,21 @@
       ],
       "relatedWords": []
     },
-    "allantoidallantoidal": {
+    "allantoid": {
+      "word": "ALLANTOID; ALLANTOIDAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the allantois.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A membranous appendage of the embryos of mammals, birds, and reptiles, -- in mammals serving to connect the fetus with the parent; the urinary vesicle.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "allantoidal": {
       "word": "ALLANTOID; ALLANTOIDAL",
       "definitions": [
         {
@@ -7245,7 +7697,7 @@
       ],
       "relatedWords": []
     },
-    "allantoisallantoid": {
+    "allantois": {
       "word": "ALLANTOIS; ALLANTOID",
       "definitions": [
         {
@@ -7810,7 +8262,7 @@
       ],
       "relatedWords": []
     },
-    "alleghenianalleghanian": {
+    "alleghenian": {
       "word": "ALLEGHENIAN; ALLEGHANIAN",
       "definitions": [
         {
@@ -7820,7 +8272,31 @@
       ],
       "relatedWords": []
     },
-    "alleghenyalleghany": {
+    "alleghanian": {
+      "word": "ALLEGHENIAN; ALLEGHANIAN",
+      "definitions": [
+        {
+          "text": "Pertaining to or designating the humid division of the Transition zone extending across the northern United States from New England to eastern Dakota, and including also most of Pennsylvania and the mountainous region as far south as northern Georgia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "allegheny": {
+      "word": "ALLEGHENY; ALLEGHANY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Allegheny Mountains, or the region where they are situated. Also Al\"le*gha`ny.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "[From the Allegheny River, Pennsylvania.] (Geol.) Pertaining to or designating a subdivision of the Pennsylvanian coal measure.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alleghany": {
       "word": "ALLEGHENY; ALLEGHANY",
       "definitions": [
         {
@@ -7924,15 +8400,71 @@
       ],
       "relatedWords": []
     },
-    "allegoricallegorical": {
+    "allegoric": {
       "word": "ALLEGORIC; ALLEGORICAL",
       "definitions": [
         {
-          "text": "Belonging to, or consisting of, allegory; of the nature of an allegory; describing by resemblances; figurative. \"An allegoric tale.\" Falconer. \"An allegorical application.\" Pope. Allegorical being . . . that kind of language which says one thing,",
+          "text": "Belonging to, or consisting of, allegory; of the nature of an allegory; describing by resemblances; figurative. \"An allegoric tale.\" Falconer. \"An allegorical application.\" Pope. Allegorical being . . . that kind of language which says one thing, but means another. Max Miller. Al`le*gor\"ic*al*ly, adv.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
+    },
+    "allegorical": {
+      "word": "ALLEGORIC; ALLEGORICAL",
+      "definitions": [
+        {
+          "text": "Belonging to, or consisting of, allegory; of the nature of an allegory; describing by resemblances; figurative. \"An allegoric tale.\" Falconer. \"An allegorical application.\" Pope. Allegorical being . . . that kind of language which says one thing, but means another. Max Miller. Al`le*gor\"ic*al*ly, adv.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "allegoric",
+        "anagogic",
+        "associational",
+        "connotational",
+        "connotative",
+        "definable",
+        "denotational",
+        "denotative",
+        "expressive",
+        "extended",
+        "extensional",
+        "fabulous",
+        "fictional",
+        "figurative",
+        "full of meaning",
+        "full of point",
+        "full of substance",
+        "indicative",
+        "intelligible",
+        "intensional",
+        "interpretable",
+        "legendary",
+        "meaning",
+        "meaningful",
+        "meaty",
+        "metaphorical",
+        "mythic",
+        "mythological",
+        "mythopoeic",
+        "mythopoetic",
+        "parabolic",
+        "pithy",
+        "pointed",
+        "pregnant",
+        "readable",
+        "referential",
+        "romantic",
+        "romanticized",
+        "sententious",
+        "significant",
+        "significative",
+        "substantial",
+        "suggestive",
+        "symbolic",
+        "transferred"
+      ]
     },
     "allegorist": {
       "word": "ALLEGORIST",
@@ -8290,13 +8822,75 @@
       "word": "ALLELOMORPH",
       "definitions": [
         {
-          "text": "One of the pure unit characters commonly existing singly or in pairs in the germ cells of Mendelian hybrids, and exhibited in varying proportion among the organisms themselves. Allelomorphs which",
+          "text": "One of the pure unit characters commonly existing singly or in pairs in the germ cells of Mendelian hybrids, and exhibited in varying proportion among the organisms themselves. Allelomorphs which under certain circumstances are themselves compound are called hypallelomorphs. See Mendel's law. -- Al*le`lo*mor\"phic (#), a. As we know that the several unit characters are of such a nature that any one of them is capable of independently displacing or being displaced by one or more alternative characters taken singly, we may recognize this fact by naming such characters allelomorphs. Bateson.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "alleluiaalleluiah": {
+    "alleluia": {
+      "word": "ALLELUIA; ALLELUIAH",
+      "definitions": [
+        {
+          "text": "An exclamation signifying Praise ye Jehovah. Hence: A song of praise to God. See Hallelujah, the commoner form. I heard a great voice of much people in heaven, saying, Alleluia. Rev. xix. 1.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Agnus Dei",
+        "Benedicite",
+        "Gloria",
+        "Gloria Patri",
+        "Gloria in Excelsis",
+        "Introit",
+        "Magnificat",
+        "Miserere",
+        "Nunc Dimittis",
+        "Te Deum",
+        "Trisagion",
+        "Vedic hymn",
+        "answer",
+        "anthem",
+        "antiphon",
+        "antiphony",
+        "applause",
+        "canticle",
+        "chant",
+        "cheer",
+        "chorale",
+        "chorus of cheers",
+        "cry",
+        "doxology",
+        "hallelujah",
+        "hooray",
+        "hosanna",
+        "hurrah",
+        "hurray",
+        "huzzah",
+        "hymn",
+        "hymn of praise",
+        "hymnody",
+        "hymnography",
+        "hymnology",
+        "laud",
+        "mantra",
+        "motet",
+        "offertory",
+        "offertory sentence",
+        "paean",
+        "psalm",
+        "psalmody",
+        "rah",
+        "report",
+        "response",
+        "responsory",
+        "shout",
+        "versicle",
+        "yell",
+        "yippee"
+      ]
+    },
+    "alleluiah": {
       "word": "ALLELUIA; ALLELUIAH",
       "definitions": [
         {
@@ -8340,16 +8934,6 @@
         {
           "text": "Solely; only. [Scot.] Sir W. Scott.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "aller": {
-      "word": "ALLER",
-      "definitions": [
-        {
-          "text": "Same as Alder, of all. [Obs.] Chaucer.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -8873,11 +9457,19 @@
         {
           "text": "The evening before Allhallows. See Halloween.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "All the saints (in heaven). [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "All Saints' Day, November 1st. [Archaic]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "allhallowallhallows": {
+    "allhallows": {
       "word": "ALLHALLOW; ALLHALLOWS",
       "definitions": [
         {
@@ -9260,7 +9852,17 @@
       ],
       "relatedWords": []
     },
-    "alliceallis": {
+    "allice": {
+      "word": "ALLICE; ALLIS",
+      "definitions": [
+        {
+          "text": "The European shad (Clupea vulgaris); allice shad. See Alose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "allis": {
       "word": "ALLICE; ALLIS",
       "definitions": [
         {
@@ -9487,7 +10089,17 @@
       ],
       "relatedWords": []
     },
-    "allineationalineeation": {
+    "allineation": {
+      "word": "ALLINEATION; ALINEEATION",
+      "definitions": [
+        {
+          "text": "Alignment; position in a straight line, as of two planets with the sun. Whewell. The allineation of the two planets. C. A. Young.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alineeation": {
       "word": "ALLINEATION; ALINEEATION",
       "definitions": [
         {
@@ -9582,7 +10194,7 @@
       "word": "ALLITERATIVE",
       "definitions": [
         {
-          "text": "Pertaining to, or characterized by, alliteration; as,",
+          "text": "Pertaining to, or characterized by, alliteration; as, alliterative poetry.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10178,7 +10790,17 @@
       ],
       "relatedWords": []
     },
-    "allophylicallophylian": {
+    "allophylic": {
+      "word": "ALLOPHYLIC; ALLOPHYLIAN",
+      "definitions": [
+        {
+          "text": "Pertaining to a race or a language neither Aryan nor Semitic. J. Prichard.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "allophylian": {
       "word": "ALLOPHYLIC; ALLOPHYLIAN",
       "definitions": [
         {
@@ -10504,6 +11126,26 @@
       ],
       "relatedWords": []
     },
+    "allotropic": {
+      "word": "ALLOTROPIC; ALLOTROPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to allotropism. conditions which occur in a case of allotropism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "allotropical": {
+      "word": "ALLOTROPIC; ALLOTROPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to allotropism. conditions which occur in a case of allotropism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "allotropicity": {
       "word": "ALLOTROPICITY",
       "definitions": [
@@ -10514,7 +11156,7 @@
       ],
       "relatedWords": []
     },
-    "allotropismallotropy": {
+    "allotropism": {
       "word": "ALLOTROPISM; ALLOTROPY",
       "definitions": [
         {
@@ -10523,6 +11165,35 @@
         }
       ],
       "relatedWords": []
+    },
+    "allotropy": {
+      "word": "ALLOTROPISM; ALLOTROPY",
+      "definitions": [
+        {
+          "text": "The property of existing in two or more conditions which are distinct in their physical or chemical relations. related forms, in a state of extreme hardness, in the diamond; it occurs in hexagonal forms, and of little hardness, in black lead; and again occurs in a third form, with entire softness, in lampblack and charcoal. In some cases, one of these is peculiarly an active state, and the other a passive one. Thus, ozone is an active state of oxygen, and is distinct from ordinary oxygen, which is the element in its passive state.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Proteus",
+        "allotropism",
+        "diversification",
+        "diversity",
+        "her infinite variety",
+        "heterogeneity",
+        "heteromorphism",
+        "manifoldness",
+        "multifariousness",
+        "multiplicity",
+        "nonuniformity",
+        "omnifariousness",
+        "omniformity",
+        "polymorphism",
+        "shapeshifter",
+        "variation",
+        "variegation",
+        "variety"
+      ]
     },
     "allotropize": {
       "word": "ALLOTROPIZE",
@@ -11406,7 +12077,7 @@
       ],
       "relatedWords": []
     },
-    "allsaintsallsaints": {
+    "allsaints": {
       "word": "ALL SAINTS; ALL SAINTS'",
       "definitions": [
         {
@@ -11631,6 +12302,94 @@
         }
       ],
       "relatedWords": []
+    },
+    "alluring": {
+      "word": "ALLURING",
+      "definitions": [
+        {
+          "text": "That allures; attracting; charming; tempting.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adductive",
+        "appealing",
+        "appetizing",
+        "attracting",
+        "attractive",
+        "attrahent",
+        "beguiling",
+        "bewitching",
+        "blandishing",
+        "cajoling",
+        "captivating",
+        "catching",
+        "challenging",
+        "charismatic",
+        "charming",
+        "coaxing",
+        "come-hither",
+        "coquettish",
+        "delusive",
+        "dragging",
+        "drawing",
+        "enchanting",
+        "encouraging",
+        "energizing",
+        "engaging",
+        "enravishing",
+        "enthralling",
+        "enticing",
+        "entrancing",
+        "exciting",
+        "exotic",
+        "fascinating",
+        "fetching",
+        "flirtatious",
+        "galvanic",
+        "galvanizing",
+        "glamorous",
+        "hypnotic",
+        "interesting",
+        "intriguing",
+        "inviting",
+        "irresistible",
+        "magnetic",
+        "magnetized",
+        "mesmeric",
+        "mouth-watering",
+        "piquant",
+        "prepossessing",
+        "prompting",
+        "provocative",
+        "provoking",
+        "provoquant",
+        "pulling",
+        "ravishing",
+        "rousing",
+        "seducing",
+        "seductive",
+        "siren",
+        "sirenic",
+        "spellbinding",
+        "spellful",
+        "stimulant",
+        "stimulating",
+        "stimulative",
+        "stirring",
+        "sympathetic",
+        "taking",
+        "tantalizing",
+        "teasing",
+        "tempting",
+        "tickling",
+        "titillating",
+        "titillative",
+        "tugging",
+        "winning",
+        "winsome",
+        "witching"
+      ]
     },
     "allusion": {
       "word": "ALLUSION",
@@ -12168,7 +12927,17 @@
       ],
       "relatedWords": []
     },
-    "almaalmah": {
+    "alma": {
+      "word": "ALMA; ALMAH",
+      "definitions": [
+        {
+          "text": "Same as Alme.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "almah": {
       "word": "ALMA; ALMAH",
       "definitions": [
         {
@@ -12198,7 +12967,51 @@
       ],
       "relatedWords": []
     },
-    "almainalmaynealman": {
+    "almain": {
+      "word": "ALMAIN; ALMAYNE; ALMAN",
+      "definitions": [
+        {
+          "text": "A German. Also adj.,",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "German. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The German language. J. Foxe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of dance. See Allemande. Almain rivets, Almayne rivets, or Alman rivets, a sort of light armor from Germany, characterized by overlapping plates, arranged to slide on rivets, and thus afford great flexibility.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "almayne": {
+      "word": "ALMAIN; ALMAYNE; ALMAN",
+      "definitions": [
+        {
+          "text": "A German. Also adj.,",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "German. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The German language. J. Foxe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of dance. See Allemande. Almain rivets, Almayne rivets, or Alman rivets, a sort of light armor from Germany, characterized by overlapping plates, arranged to slide on rivets, and thus afford great flexibility.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alman": {
       "word": "ALMAIN; ALMAYNE; ALMAN",
       "definitions": [
         {
@@ -12275,7 +13088,17 @@
       ],
       "relatedWords": []
     },
-    "almealmeh": {
+    "alme": {
+      "word": "ALME; ALMEH",
+      "definitions": [
+        {
+          "text": "An Egyptian dancing girl; an Alma. The Almehs lift their arms in dance. Bayard Taylor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "almeh": {
       "word": "ALME; ALMEH",
       "definitions": [
         {
@@ -12315,7 +13138,17 @@
       ],
       "relatedWords": []
     },
-    "almightfulalmightiful": {
+    "almightful": {
+      "word": "ALMIGHTFUL; ALMIGHTIFUL",
+      "definitions": [
+        {
+          "text": "All-powerful; almighty. [Obs.] Udall.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "almightiful": {
       "word": "ALMIGHTFUL; ALMIGHTIFUL",
       "definitions": [
         {
@@ -12765,7 +13598,7 @@
       ],
       "relatedWords": []
     },
-    "almugalgum": {
+    "almug": {
       "word": "ALMUG; ALGUM",
       "definitions": [
         {
@@ -13112,6 +13945,10 @@
         {
           "text": "By the length of, as distinguished from across. \"Along the lowly lands.\" Dryden. The kine . . . went along the highway. 1 Sam. vi. 12.",
           "partOfSpeech": "preposition"
+        },
+        {
+          "text": "(Now heard only in the prep. phrase along of.) Along of, Along on, often shortened to Long of, prep. phr., owing to; on account of. [Obs. or Low. Eng.] \"On me is not along thin evil fare.\" Chaucer. \"And all this is long of you.\" Shak. \"This increase of price is all along of the foreigners.\" London Punch.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": [
@@ -13404,7 +14241,17 @@
       ],
       "relatedWords": []
     },
-    "alopeciaalopecy": {
+    "alopecia": {
+      "word": "ALOPECIA; ALOPECY",
+      "definitions": [
+        {
+          "text": "Loss of the hair; baldness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alopecy": {
       "word": "ALOPECIA; ALOPECY",
       "definitions": [
         {
@@ -13528,7 +14375,17 @@
       ],
       "relatedWords": []
     },
-    "alpenhornalphorn": {
+    "alpenhorn": {
+      "word": "ALPENHORN; ALPHORN",
+      "definitions": [
+        {
+          "text": "A curved wooden horn about three feet long, with a cupped mouthpiece and a bell, used by the Swiss to sound the ranz des vaches and other melodies. Its notes are open harmonics of the tube.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alphorn": {
       "word": "ALPENHORN; ALPHORN",
       "definitions": [
         {
@@ -13762,7 +14619,7 @@
         "tyro"
       ]
     },
-    "alphabeticalphabetical": {
+    "alphabetic": {
       "word": "ALPHABETIC; ALPHABETICAL",
       "definitions": [
         {
@@ -13774,7 +14631,60 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "abecedarian",
+        "allographic",
+        "capital",
+        "graphemic",
+        "ideographic",
+        "lettered",
+        "lexigraphic",
+        "literal",
+        "logogrammatic",
+        "logographic",
+        "lower-case",
+        "majuscule",
+        "minuscular",
+        "minuscule",
+        "pictographic",
+        "transliterated",
+        "uncial",
+        "upper-case"
+      ]
+    },
+    "alphabetical": {
+      "word": "ALPHABETIC; ALPHABETICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, furnished with, expressed by, or in the order of, the letters of the alphabet; as, alphabetic characters, writing, languages, arrangement.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Literal. [Obs.] \"Alphabetical servility.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abecedarian",
+        "allographic",
+        "alphabetic",
+        "capital",
+        "graphemic",
+        "ideographic",
+        "lettered",
+        "lexigraphic",
+        "literal",
+        "logogrammatic",
+        "logographic",
+        "lower-case",
+        "majuscule",
+        "minuscular",
+        "minuscule",
+        "pictographic",
+        "transliterated",
+        "uncial",
+        "upper-case"
+      ]
     },
     "alphabetically": {
       "word": "ALPHABETICALLY",
@@ -13941,7 +14851,17 @@
       ],
       "relatedWords": []
     },
-    "alpistalpia": {
+    "alpist": {
+      "word": "ALPIST; ALPIA",
+      "definitions": [
+        {
+          "text": "The seed of canary grass (Phalaris Canariensis), used for feeding cage birds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "alpia": {
       "word": "ALPIST; ALPIA",
       "definitions": [
         {
@@ -14126,7 +15046,17 @@
       ],
       "relatedWords": []
     },
-    "altaianaltaic": {
+    "altaian": {
+      "word": "ALTAIAN; ALTAIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Altai, a mountain chain in Central Asia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "altaic": {
       "word": "ALTAIAN; ALTAIC",
       "definitions": [
         {
@@ -16153,7 +17083,7 @@
       "word": "ALTRUISTIC",
       "definitions": [
         {
-          "text": "Regardful of others; beneficent; unselfish; -- opposed to Ant:",
+          "text": "Regardful of others; beneficent; unselfish; -- opposed to Ant: egoistic or Ant: selfish. Bain.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -16360,7 +17290,7 @@
       "word": "ALUMINOGRAPHY",
       "definitions": [
         {
-          "text": "Art or process of producing, and printing from, aluminium",
+          "text": "Art or process of producing, and printing from, aluminium plates, after the manner of ordinary lithography. -- A*lu`mi*no*graph\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -16426,7 +17356,17 @@
       ],
       "relatedWords": []
     },
-    "alumschistalumshale": {
+    "alumschist": {
+      "word": "ALUM SCHIST; ALUM SHALE",
+      "definitions": [
+        {
+          "text": "A variety of shale or clay slate, containing iron pyrites, the decomposition of which leads to the formation of alum, which often effloresces on the rock.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "alumshale": {
       "word": "ALUM SCHIST; ALUM SHALE",
       "definitions": [
         {
@@ -16910,80 +17850,6 @@
         {
           "text": "A genus of cruciferous plants; madwort. The sweet alyssum (A. maritimum), cultivated for bouquets, bears small, white, sweet- scented flowers.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "alleviationmitigationbuttakeninthesenseofaraisingthat": {
-      "word": "alleviation, mitigation; but taken in the sense of, a raising, that",
-      "definitions": [
-        {
-          "text": "Any substance that produces, or is designed to produce, fermentation, as in dough or liquids; esp., a portion of fermenting dough, which, mixed with a larger quantity of dough, produces a general change in the mass, and renders it light; yeast; barm.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Anything which makes a general assimilating (especially a corrupting) change in the mass. Beware of the leaven of the Pharisees, which is hypocrisy. Luke xii. 1.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "alittlewheeldimofrotawheelakintogradandtoskrratha": {
-      "word": "a little wheel, dim. of rota wheel; akin to G. rad, and to Skr. ratha",
-      "definitions": [
-        {
-          "text": "To cause to revolve by turning over and over; to move by turning on an axis; to impel forward by causing to turn over and over on a supporting surface; as, to roll a wheel, a ball, or a barrel.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To wrap round on itself; to form into a spherical or cylindrical body by causing to turn over and over; as, to roll a sheet of paper; to roll parchment; to roll clay or putty into a ball.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To bind or involve by winding, as in a bandage; to inwrap; -- often with up; as, to roll up a parcel.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To drive or impel forward with an easy motion, as of rolling; as, a river rolls its waters to the ocean. The flood of Catholic reaction was rolled over Europe. J. A. Symonds.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To utter copiously, esp. with sounding words; to utter with a deep sound; -- often with forth, or out; as, to roll forth some one's praises; to roll out sentences. Who roll'd the psalm to wintry skies. Tennyson.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To press or level with a roller; to spread or form with a roll, roller, or rollers; as, to roll a field; to roll paste; to roll steel rails, etc.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To move, or cause to be moved, upon, or by means of, rollers or small wheels.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To beat with rapid, continuous strokes, as a drum; to sound a roll upon.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Geom.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To apply (one line or surface) to another without slipping; to bring all the parts of (one line or surface) into successive contact with another, in suck manner that at every instant the parts that have been in contact are equal.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To turn over in one's mind; to revolve. Full oft in heart he rolleth up and down The beauty of these florins new and bright. Chaucer. To roll one's self, to wallow. succession.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "alsousedalwayssubstantivelyandeitherassingularorplural": {
-      "word": "also; -- used always substantively, and either as singular or plural.",
-      "definitions": [
-        {
-          "text": "One; any; one. [Obs., except in the archaic phrase, as who should say.] As who should say, it were a very dangerous matter if a man in any point should be found wiser than his forefathers were. Robynson (More's Utopia).",
-          "partOfSpeech": "pronoun"
         }
       ],
       "relatedWords": []

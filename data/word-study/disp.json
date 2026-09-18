@@ -920,7 +920,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not dictated by passion; not proceeding from temper or bias; impartial; as, dispassionate proceedings; a dispassionate view.",
+          "text": "Not dictated by passion; not proceeding from temper or bias; impartial; as, dispassionate proceedings; a dispassionate view. impartial; unruffled.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2539,6 +2539,115 @@
         "zigzag"
       ]
     },
+    "dispersed": {
+      "word": "DISPERSED",
+      "definitions": [
+        {
+          "text": "Scattered. the tones composing the chord are widely separated, as by an octave or more.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "aimless",
+        "alienated",
+        "amorphous",
+        "broadcast",
+        "capricious",
+        "casual",
+        "deflected",
+        "deflective",
+        "desultory",
+        "detached",
+        "diffracted",
+        "diffractive",
+        "diffuse",
+        "diffused",
+        "disarticulated",
+        "disconnected",
+        "discontinuous",
+        "discrete",
+        "disengaged",
+        "disjoined",
+        "disjoint",
+        "disjointed",
+        "disjunct",
+        "dislocated",
+        "disordered",
+        "dispread",
+        "disproportionate",
+        "disseminated",
+        "dissipated",
+        "distorted",
+        "distributed",
+        "disunited",
+        "divided",
+        "divorced",
+        "erratic",
+        "estranged",
+        "fitful",
+        "flectional",
+        "flexed",
+        "formless",
+        "frivolous",
+        "gratuitous",
+        "haphazard",
+        "hit-or-miss",
+        "immethodical",
+        "inchoate",
+        "incoherent",
+        "indiscriminate",
+        "inflective",
+        "irregular",
+        "isolated",
+        "meaningless",
+        "misshapen",
+        "nonsymmetrical",
+        "nonsystematic",
+        "nonuniform",
+        "orderless",
+        "planless",
+        "promiscuous",
+        "random",
+        "refracted",
+        "refractile",
+        "refractive",
+        "refrangible",
+        "removed",
+        "scattered",
+        "segregated",
+        "senseless",
+        "separated",
+        "sequestered",
+        "shapeless",
+        "shut off",
+        "skew",
+        "skewed",
+        "sparse",
+        "spasmodic",
+        "sporadic",
+        "spread",
+        "straggling",
+        "straggly",
+        "strewn",
+        "strown",
+        "systemless",
+        "unarranged",
+        "unclassified",
+        "undirected",
+        "ungraded",
+        "unjoined",
+        "unmethodical",
+        "unordered",
+        "unorganized",
+        "unsorted",
+        "unsymmetrical",
+        "unsystematic",
+        "ununiform",
+        "vague",
+        "wandering",
+        "widespread"
+      ]
+    },
     "disperseness": {
       "word": "DISPERSENESS",
       "definitions": [
@@ -2694,7 +2803,7 @@
       "word": "DISPERSIVE",
       "definitions": [
         {
-          "text": "Tending to disperse. Dispersive power (Opt.), the relative effect of a material in separating the different rays of light by",
+          "text": "Tending to disperse. Dispersive power (Opt.), the relative effect of a material in separating the different rays of light by refraction, as when the substance is formed into a prism.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2748,12 +2857,90 @@
         "weigh upon"
       ]
     },
+    "dispirited": {
+      "word": "DISPIRITED",
+      "definitions": [
+        {
+          "text": "Depressed in spirits; disheartened; daunted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "blase",
+        "blue",
+        "bowed-down",
+        "cast down",
+        "dashed",
+        "dejected",
+        "depressed",
+        "despairing",
+        "despondent",
+        "desponding",
+        "disconsolate",
+        "discouraged",
+        "disheartened",
+        "down",
+        "downcast",
+        "downhearted",
+        "drooping",
+        "droopy",
+        "fed-up",
+        "feeling low",
+        "good and tired",
+        "heartless",
+        "hypochondriac",
+        "hypochondriacal",
+        "in low spirits",
+        "in the depths",
+        "in the doldrums",
+        "in the dumps",
+        "irked",
+        "jaded",
+        "languishing",
+        "life-weary",
+        "low",
+        "low-spirited",
+        "melancholic",
+        "melancholy",
+        "pessimistic",
+        "pining",
+        "sad",
+        "satiated",
+        "sick",
+        "sick of",
+        "spiritless",
+        "splenetic",
+        "subdued",
+        "suicidal",
+        "tired",
+        "tired of",
+        "tired of living",
+        "tired to death",
+        "wearied",
+        "weariful",
+        "weary",
+        "weary of life",
+        "weary unto death",
+        "woebegone",
+        "world-weary"
+      ]
+    },
     "dispiritment": {
       "word": "DISPIRITMENT",
       "definitions": [
         {
           "text": "Depression of spirits; discouragement. [R.] Procter, in evident distress and dispiritment, was waiting the slow conclusion of this. Carlyle.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dispiteous": {
+      "word": "DISPITEOUS",
+      "definitions": [
+        {
+          "text": "Full of despite; cruel; spiteful; pitiless. Spenser.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3683,7 +3870,7 @@
       "word": "DISPLEASING",
       "definitions": [
         {
-          "text": "Causing displeasure or dissatisfaction; offensive;",
+          "text": "Causing displeasure or dissatisfaction; offensive; disagreeable.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3886,7 +4073,17 @@
       ],
       "relatedWords": []
     },
-    "displicencedisplicency": {
+    "displicence": {
+      "word": "DISPLICENCE; DISPLICENCY",
+      "definitions": [
+        {
+          "text": "Dislike; dissatisfaction; discontent. [Obs.] W. Montagu.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "displicency": {
       "word": "DISPLICENCE; DISPLICENCY",
       "definitions": [
         {
@@ -5586,7 +5783,7 @@
       "word": "DISPROPORTIONABLE",
       "definitions": [
         {
-          "text": "Disproportional; unsuitable in form, size, quantity, or",
+          "text": "Disproportional; unsuitable in form, size, quantity, or adaptation; disproportionate; inadequate.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5626,7 +5823,7 @@
       "word": "DISPROPORTIONATE",
       "definitions": [
         {
-          "text": "Not proportioned; unsymmetrical; unsuitable to something else in bulk, form, value, or extent; out of proportion; inadequate; as, in a perfect body none of the limbs are disproportionate; it is",
+          "text": "Not proportioned; unsymmetrical; unsuitable to something else in bulk, form, value, or extent; out of proportion; inadequate; as, in a perfect body none of the limbs are disproportionate; it is wisdom not to undertake a work disproportionate means.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6179,7 +6376,7 @@
       "word": "DISPUTATIOUS",
       "definitions": [
         {
-          "text": "Inclined to dispute; apt to civil or controvert; characterized by dispute; as, a disputatious person or temper. The Christian doctrine of a future life was no recommendation of the new religion to the wits and philosophers of that disputations",
+          "text": "Inclined to dispute; apt to civil or controvert; characterized by dispute; as, a disputatious person or temper. The Christian doctrine of a future life was no recommendation of the new religion to the wits and philosophers of that disputations period. Buckminster.",
           "partOfSpeech": "adjective"
         }
       ],

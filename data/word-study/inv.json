@@ -251,7 +251,7 @@
       "word": "INVARIABLE",
       "definitions": [
         {
-          "text": "Not given to variation or change; unalterable; unchangeable; always uniform.",
+          "text": "Not given to variation or change; unalterable; unchangeable; always uniform. Physical laws which are invariable. I. Taylor.",
           "partOfSpeech": "adjective"
         },
         {
@@ -433,6 +433,16 @@
       ],
       "relatedWords": []
     },
+    "invendible": {
+      "word": "INVENDIBLE",
+      "definitions": [
+        {
+          "text": "Not vendible or salable. Jefferson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "invenom": {
       "word": "INVENOM",
       "definitions": [
@@ -549,7 +559,7 @@
       "word": "INVENTIVE",
       "definitions": [
         {
-          "text": "Able and apt to invent; quick at contrivance; ready at",
+          "text": "Able and apt to invent; quick at contrivance; ready at expedients; as, an inventive head or genius. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -561,6 +571,16 @@
         {
           "text": "One who invents or finds out something new; a contriver; especially, one who invents mechanical devices.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inventorial": {
+      "word": "INVENTORIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an inventory.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -609,7 +629,17 @@
       ],
       "relatedWords": []
     },
-    "invernessinvernesscape": {
+    "inverness": {
+      "word": "INVERNESS; INVERNESS CAPE",
+      "definitions": [
+        {
+          "text": "A kind of full sleeveless cape, fitting closely about the neck. Robert's wind-blown head and tall form wrapped in an Inverness cape. Mrs. Humphry Ward.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "invernesscape": {
       "word": "INVERNESS; INVERNESS CAPE",
       "definitions": [
         {
@@ -754,6 +784,10 @@
         },
         {
           "text": "(Chem.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To convert; to reverse; to decompose by, or subject to, inversion. See Inversion, n., 10.",
           "partOfSpeech": "verb"
         },
         {
@@ -1071,7 +1105,11 @@
       "word": "INVETERACY",
       "definitions": [
         {
-          "text": "Firm establishment by long continuance; firmness or deep-rooted obstinacy of any quality or state acquired by time; as, the inveteracy of custom, habit, or disease; -- usually in a bad sense; as, the inveteracy of prejudice or of error.",
+          "text": "Firm establishment by long continuance; firmness or deep-rooted obstinacy of any quality or state acquired by time; as, the inveteracy of custom, habit, or disease; -- usually in a bad sense; as, the inveteracy of prejudice or of error. An inveteracy of evil habits that will prompt him to contract more. A. Tucker.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Malignity; spitefulness; virulency. The rancor of pamphlets, the inveteracy of epigrams, an the mortification of lampoons. Guardian.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1155,13 +1193,23 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Likely to incur or produce ill will, or to provoke envy; hateful; as, invidious distinctions. Agamemnon found it an invidious affair to give the preference to any",
+          "text": "Likely to incur or produce ill will, or to provoke envy; hateful; as, invidious distinctions. Agamemnon found it an invidious affair to give the preference to any one of the Grecian heroes. Broome.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "invigilanceinvigilancy": {
+    "invigilance": {
+      "word": "INVIGILANCE; INVIGILANCY",
+      "definitions": [
+        {
+          "text": "Want of vigilance; neglect of watching; carelessness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "invigilancy": {
       "word": "INVIGILANCE; INVIGILANCY",
       "definitions": [
         {
@@ -1235,7 +1283,7 @@
       "word": "INVINCIBLE",
       "definitions": [
         {
-          "text": "Incapable of being conquered, overcome, or subdued; unconquerable; insuperable; as, an invincible army, or obstacle.",
+          "text": "Incapable of being conquered, overcome, or subdued; unconquerable; insuperable; as, an invincible army, or obstacle. Lead forth to battle these my sons Invincible. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1299,7 +1347,21 @@
       ],
       "relatedWords": []
     },
-    "inviolateinviolated": {
+    "inviolate": {
+      "word": "INVIOLATE; INVIOLATED",
+      "definitions": [
+        {
+          "text": "Not violated; uninjured; unhurt; unbroken. His fortune of arms was still inviolate. Bacon.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not corrupted, defiled, or profaned; chaste; pure. \"Inviolate truth.\" Denham. There chaste Alceste lives inviolate. Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inviolated": {
       "word": "INVIOLATE; INVIOLATED",
       "definitions": [
         {
@@ -1541,7 +1603,7 @@
       "word": "INVITING",
       "definitions": [
         {
-          "text": "Alluring; tempting; as, an inviting amusement or prospect. Nothing is so easy and inviting as the retort of abuse and sarcasm.",
+          "text": "Alluring; tempting; as, an inviting amusement or prospect. Nothing is so easy and inviting as the retort of abuse and sarcasm. W. Irving.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1667,7 +1729,17 @@
       ],
       "relatedWords": []
     },
-    "involucrateinvolucrated": {
+    "involucrate": {
+      "word": "INVOLUCRATE; INVOLUCRATED",
+      "definitions": [
+        {
+          "text": "Having an involucre; involucred.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "involucrated": {
       "word": "INVOLUCRATE; INVOLUCRATED",
       "definitions": [
         {
@@ -1758,8 +1830,20 @@
       "relatedWords": []
     },
     "involute": {
-      "word": "INVOLUTE",
+      "word": "INVOLUTE; INVOLUTED",
       "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Rolled inward from the edges; -- said of leaves in vernation, or of the petals of flowers in æstivation. Gray.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.) (a) Turned inward at the margin, as the exterior lip of the Cyprea. (b) Rolled inward spirally.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A curve traced by the end of a string wound upon another curve, or unwound from it; -- called also evolvent. See Evolute.",
           "partOfSpeech": "noun"
@@ -1767,7 +1851,7 @@
       ],
       "relatedWords": []
     },
-    "involuteinvoluted": {
+    "involuted": {
       "word": "INVOLUTE; INVOLUTED",
       "definitions": [
         {
@@ -1818,6 +1902,18 @@
         },
         {
           "text": "(Geom.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The relation which exists between three or more sets of points, a.a', b.b', c.c', so related to a point O on the line, that the product Oa.Oa' = Ob.Ob' = Oc.Oc' is constant. Sets of lines or surfaces possessing corresponding properties may be in involution.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The return of an enlarged part or organ to its normal size, as of the uterus after pregnancy.",
           "partOfSpeech": "noun"
         }
       ],

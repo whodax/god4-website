@@ -255,6 +255,16 @@
       ],
       "relatedWords": []
     },
+    "reddish": {
+      "word": "REDDISH",
+      "definitions": [
+        {
+          "text": "Somewhat red; moderately red.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "reddition": {
       "word": "REDDITION",
       "definitions": [
@@ -289,7 +299,7 @@
       ],
       "relatedWords": []
     },
-    "reddogflourreddogflour": {
+    "reddogflour": {
       "word": "RED DOG FLOUR; RED-DOG FLOUR",
       "definitions": [
         {
@@ -645,7 +655,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "to intensify (a developed image), as by bleaching with mercuric",
+          "text": "to intensify (a developed image), as by bleaching with mercuric chloride and subsequently subjecting anew to a developing agent. -- Re`de*vel\"op*er (#), n. --Re`de*vel\"op*ment (#), n.",
           "partOfSpeech": "verb"
         }
       ],
@@ -689,7 +699,17 @@
       ],
       "relatedWords": []
     },
-    "redhandredhanded": {
+    "redhand": {
+      "word": "RED-HAND; RED-HANDED",
+      "definitions": [
+        {
+          "text": "Having hands red with blood; in the very act, as if with red or bloody hands; -- said of a person taken in the act of homicide; hence, fresh from the commission of crime; as, he was taken red-hand or red-handed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "redhanded": {
       "word": "RED-HAND; RED-HANDED",
       "definitions": [
         {
@@ -971,6 +991,16 @@
       ],
       "relatedWords": []
     },
+    "redistribute": {
+      "word": "REDISTRIBUTE",
+      "definitions": [
+        {
+          "text": "To distribute again.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "redistrict": {
       "word": "REDISTRICT",
       "definitions": [
@@ -1061,7 +1091,17 @@
       ],
       "relatedWords": []
     },
-    "redolenceredolency": {
+    "redolence": {
+      "word": "REDOLENCE; REDOLENCY",
+      "definitions": [
+        {
+          "text": "The quality of being redolent; sweetness of scent; pleasant odor; fragrance.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "redolency": {
       "word": "REDOLENCE; REDOLENCY",
       "definitions": [
         {
@@ -1085,7 +1125,7 @@
       "word": "REDOUBLE",
       "definitions": [
         {
-          "text": "To double again or repeatedly; to increase by continued or repeated additions; to augment greatly; to multiply.",
+          "text": "To double again or repeatedly; to increase by continued or repeated additions; to augment greatly; to multiply. So they Doubly redoubled strokes upon the foe. Shak. n. An optional bid made by the side currently holding the highest bid for the contract, after the opposing side has doubled. This bid increases the score for successfully making the contract, and increases the penalties for failing. The score or penalty depends on the number of tricks over or under the contract, according to a defined schedule, and depending on the vulnerability of the side attempting the contract.",
           "partOfSpeech": "verb"
         },
         {
@@ -1355,7 +1395,7 @@
       "word": "RED-SHORT",
       "definitions": [
         {
-          "text": "Hot-short; brittle when red-hot; -- said of certain kinds of",
+          "text": "Hot-short; brittle when red-hot; -- said of certain kinds of iron.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1390,6 +1430,16 @@
       "definitions": [
         {
           "text": "Having a red tail. Red-tailed hawk (Zoöl.), a large North American hawk (Buteo borealis). When adult its tail is chestnut red. Called also hen hawck, and red-tailed buzzard.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "redtape": {
+      "word": "RED-TAPE",
+      "definitions": [
+        {
+          "text": "Pertaining to, or characterized by, official formality. See Red tape, under Red, a.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1585,6 +1635,42 @@
         {
           "text": "(Arith. & Alq.)",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or process of reducing. See Reduce, v. t., 6. and To reduce an equation, To reduce an expression, under Reduce, v. t.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Astron.) (a) The correction of observations for known errors of instruments, etc. (b) The preparation of the facts and measurements of observations in order to deduce a general result.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The process of making a copy of something, as a figure, design, or draught, on a smaller scale, preserving the proper proportions. Fairholt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Logic)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The bringing of a syllogism in one of the so-called imperfect modes into a mode in the first figure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Chem. & Metal.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act, process, or result of reducing; as, the reduction of iron from its ores; the reduction of aldehyde from alcohol.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The operation of restoring a dislocated or fractured part to its former place. Reduction ascending (Arith.), the operation of changing numbers of a lower into others of a higher denomination, as cents to dollars. of a higher into others of a lower denomination, as dollars to cents. conquest; subjection.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1623,7 +1709,29 @@
       ],
       "relatedWords": []
     },
-    "redundanceredundancy": {
+    "redundance": {
+      "word": "REDUNDANCE; REDUNDANCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being redundant; superfluity; superabundance; excess.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is redundant or in excess; anything superfluous or superabundant. Labor . . . throws off redundacies. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Surplusage inserted in a pleading which may be rejected by the court without impairing the validity of what remains.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "redundancy": {
       "word": "REDUNDANCE; REDUNDANCY",
       "definitions": [
         {

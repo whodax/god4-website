@@ -1,24 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "varietiesofhoneybeesasthealigusticaofspainanditalythe": {
-      "word": "varieties of honeybees, as the A. ligustica of Spain and Italy; the",
-      "definitions": [
-        {
-          "text": "A neighborly gathering of people who engage in united labor for the benefit of an individual or family; as, a quilting bee; a husking bee; a raising bee. [U. S.] The cellar . . . was dug by a bee in a single day. S. G. Goodrich.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "pl. Etym: [Prob. fr. AS. beáh ring, fr. b to bend. See 1st Bow.] (Naut.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Pieces of hard wood bolted to the sides of the bowsprit, to reeve the fore-topmast stays through; -- called also bee blocks. Bee beetle (Zoöl.), a beetle (Trichodes apiarius) parasitic in beehives. flycatcher, and the American kingbird. apifera), whose flowers have some resemblance to bees, flies, and other insects. species, in the larval state, are parasitic upon bees. Mortimer. combs to the hives, and close up the cells; -- called also propolis. (esp. Trupanea apivora) which feeds upon the honeybee. See Robber fly. cæca) parasitic on hive bees. occasionally feeds on bees. honeycomb, occasioning great damage in beehives. beetle. fancies; to be a little crazy. \"She's whiles crack-brained, and has a bee in her head.\" Sir W. Scott.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "vaagmer": {
       "word": "VAAGMER",
       "definitions": [
@@ -39,6 +21,36 @@
         {
           "text": "That which is vacant. Specifically: -- (a) Empty space; vacuity; vacuum. How is't with you, That you do bend your eye on vacancy Shak. (b) An open or unoccupied space between bodies or things; an interruption of continuity; chasm; gap; as, a vacancy between buildings; a vacancy between sentences or thoughts. (c) Unemployed time; interval of leisure; time of intermission; vacation. Time lost partly in too oft idle vacancies given both to schools and universities. Milton. No interim, not a minute's vacancy. Shak. Those little vacancies from toil are sweet. Dryden. (d) A place or post unfilled; an unoccupied office; as, a vacancy in the senate, in a school, etc.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vacant": {
+      "word": "VACANT",
+      "definitions": [
+        {
+          "text": "Deprived of contents; not filled; empty; as, a vacant room. Stuffs out his vacant garments with his form. Shak. Being of those virtues vacant. Shak. There is no fireside, howsoe'er defended, But has one vacant chair. Longfellow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Unengaged with business or care; unemployed; unoccupied; disengaged; free; as, vacant hours. Religion is the interest of all; but philosophy of those . . . at leisure, and vacant from the affairs of the world. Dr. H. More. There was not a minute of the day which he left vacant. Bp. Fell.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not filled or occupied by an incumbent, possessor, or officer; as, a vacant throne; a vacant parish. Special dignities which vacant lie For thy best use and wearing. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Empty of thought; thoughtless; not occupied with study or reflection; as, a vacant mind. The duke had a pleasant and vacant face. Sir H. Wotton. When on my couch I lie In vacant or in pensive mood. Wordsworth.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Abandoned; having no heir, possessor, claimant, or occupier; as, a vacant estate. Bouvier. Vacant succession (Law), one that is claimed by no person, or where all the heirs are unknown, or where all the known heirs to it have renounced it. Burrill. uncrowded; idle. an empty room, or an empty noddle. Vacant adds the idea of having been previously filled, or intended to be filled or occupied; as, a vacant seat at table; a vacant office; vacant hours. When we speak of a vacant look or a vacant mind, we imply the absence of the intelligence naturally to be expected there.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -277,6 +289,16 @@
         {
           "text": "To fluctuate in mind or opinion; to be unsteady or inconstant; to waver.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vacillating": {
+      "word": "VACILLATING",
+      "definitions": [
+        {
+          "text": "Inclined to fluctuate; wavering. Tennyson.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -699,7 +721,17 @@
       ],
       "relatedWords": []
     },
-    "vaginatevaginated": {
+    "vaginate": {
+      "word": "VAGINATE; VAGINATED",
+      "definitions": [
+        {
+          "text": "Invested with, or as if with, a sheath; as, a vaginate stem, or one invested by the tubular base of a leaf.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vaginated": {
       "word": "VAGINATE; VAGINATED",
       "definitions": [
         {
@@ -1421,6 +1453,10 @@
       "word": "VALETUDINARY",
       "definitions": [
         {
+          "text": "Infirm; sickly; valetudinarian. It renders the habit of society dangerously. Burke.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A valetudinarian.",
           "partOfSpeech": "noun"
         }
@@ -1455,7 +1491,17 @@
       ],
       "relatedWords": []
     },
-    "valiancevaliancy": {
+    "valiance": {
+      "word": "VALIANCE; VALIANCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being valiant; bravery; valor. [Obs.] \"His doughty valiance.\" Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "valiancy": {
       "word": "VALIANCE; VALIANCY",
       "definitions": [
         {
@@ -1767,7 +1813,7 @@
       "word": "VALOROUS",
       "definitions": [
         {
-          "text": "Possessing or exhibiting valor; brave; courageous; valiant;",
+          "text": "Possessing or exhibiting valor; brave; courageous; valiant; intrepid.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1963,7 +2009,17 @@
       ],
       "relatedWords": []
     },
-    "valvalvalvar": {
+    "valval": {
+      "word": "VALVAL; VALVAR",
+      "definitions": [
+        {
+          "text": "Valvular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "valvar": {
       "word": "VALVAL; VALVAR",
       "definitions": [
         {
@@ -2407,11 +2463,15 @@
         {
           "text": "Hence, one who willfully destroys or defaces any work of art or literature. The Vandals of our isle, Sworn foes to sense and law. Cowper.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the Vandals; resembling the Vandals in barbarism and destructiveness.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "vandalvandalic": {
+    "vandalic": {
       "word": "VANDAL; VANDALIC",
       "definitions": [
         {
@@ -2843,7 +2903,17 @@
       ],
       "relatedWords": []
     },
-    "vantbracevantbrass": {
+    "vantbrace": {
+      "word": "VANTBRACE; VANTBRASS",
+      "definitions": [
+        {
+          "text": "Armor for the arm; vambrace. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "vantbrass": {
       "word": "VANTBRACE; VANTBRASS",
       "definitions": [
         {
@@ -2897,7 +2967,7 @@
       "word": "VAPID",
       "definitions": [
         {
-          "text": "Having lost its life and spirit; dead; spiritless; insipid; flat; dull; unanimated; as, vapid beer; a vapid speech; a vapid state of the blood. A cheap, bloodless reformation, a guiltless liberty, appear flat and",
+          "text": "Having lost its life and spirit; dead; spiritless; insipid; flat; dull; unanimated; as, vapid beer; a vapid speech; a vapid state of the blood. A cheap, bloodless reformation, a guiltless liberty, appear flat and vapid to their taste. Burke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3085,6 +3155,16 @@
       ],
       "relatedWords": []
     },
+    "vaporing": {
+      "word": "VAPORING",
+      "definitions": [
+        {
+          "text": "Talking idly; boasting; vaunting.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "vaporish": {
       "word": "VAPORISH",
       "definitions": [
@@ -3123,7 +3203,7 @@
       "word": "VAPORIZE",
       "definitions": [
         {
-          "text": "To convert into vapor, as by the application of heat, whether",
+          "text": "To convert into vapor, as by the application of heat, whether naturally or artificially. Vaporizing surface. (Steam Boilers) See Evaporating surface, under Evaporate, v. t.",
           "partOfSpeech": "verb"
         },
         {
@@ -3185,7 +3265,17 @@
       ],
       "relatedWords": []
     },
-    "vaporpressurevaportension": {
+    "vaporpressure": {
+      "word": "VAPOR PRESSURE; VAPOR TENSION",
+      "definitions": [
+        {
+          "text": "The pressure or tension of a confined body of vapor. The pressure of a given saturated vapor is a function of the temperature only, and may be measured by introducing a small quantity of the substance into a barometer and noting the depression of the column of mercury.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "vaportension": {
       "word": "VAPOR PRESSURE; VAPOR TENSION",
       "definitions": [
         {
@@ -3579,7 +3669,7 @@
       "word": "VARIED",
       "definitions": [
         {
-          "text": "Changed; altered; various; diversified; as, a varied",
+          "text": "Changed; altered; various; diversified; as, a varied experience; varied interests; varied scenery. The varied fields of science, ever new. Cowper.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4709,11 +4799,19 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A leap or bound. Specifically: -- (a) (Man.) The bound or leap of a horse; a curvet. (b) A leap by aid of the hands, or of a pole, springboard, or the like. pronunciation. Barrel, Cradle, Cylindrical, or Wagon, vault (Arch.), a kind of vault having two parallel abutments, and the same section or profile at all points. It may be rampant, as over a staircase (see Rampant vault, under Rampant), or curved in plan, as around the apse",
+          "text": "A leap or bound. Specifically: -- (a) (Man.) The bound or leap of a horse; a curvet. (b) A leap by aid of the hands, or of a pole, springboard, or the like. pronunciation. Barrel, Cradle, Cylindrical, or Wagon, vault (Arch.), a kind of vault having two parallel abutments, and the same section or profile at all points. It may be rampant, as over a staircase (see Rampant vault, under Rampant), or curved in plan, as around the apse of a church. which different cylindrical surfaces intersect one another, as distinguished from a barrel, or wagon, vault. solid ribs which bear the weight of the vaulted surface. True Gothic vaults are of this character. ceiling to admit light to a vault below.",
           "partOfSpeech": "noun"
         },
         {
-          "text": "To form with a vault, or to cover with a vault; to give the shape of an arch to; to arch; as, vault a roof; to vault a passage to a court.",
+          "text": "To form with a vault, or to cover with a vault; to give the shape of an arch to; to arch; as, vault a roof; to vault a passage to a court. The shady arch that vaulted the broad green alley. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Etym: [See Vault, v. i.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To leap over; esp., to leap over by aid of the hands or a pole; as, to vault a fence. I will vault credit, and affect high pleasures. Webster (1623).",
           "partOfSpeech": "verb"
         },
         {

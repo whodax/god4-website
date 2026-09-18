@@ -747,7 +747,7 @@
         "wreath"
       ]
     },
-    "cycliccyclical": {
+    "cyclic": {
       "word": "CYCLIC; CYCLICAL",
       "definitions": [
         {
@@ -755,7 +755,249 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "alternate",
+        "annular",
+        "annulate",
+        "annulose",
+        "articulated",
+        "atomatic",
+        "atomic",
+        "atomiferous",
+        "atomistic",
+        "beating",
+        "catenated",
+        "ceaseless",
+        "circinate",
+        "circling",
+        "circular",
+        "concatenated",
+        "connected",
+        "constant",
+        "continual",
+        "continued",
+        "continuing",
+        "continuous",
+        "coronary",
+        "crownlike",
+        "cyclical",
+        "cycloid",
+        "diatomic",
+        "dibasic",
+        "direct",
+        "discoid",
+        "disklike",
+        "endless",
+        "epochal",
+        "even",
+        "ever-recurring",
+        "every other",
+        "featureless",
+        "frequent",
+        "gapless",
+        "haunting",
+        "heteroatomic",
+        "heterocyclic",
+        "hexatomic",
+        "homocyclic",
+        "immediate",
+        "incessant",
+        "interminable",
+        "intermittent",
+        "isobaric",
+        "isochronal",
+        "isocyclic",
+        "isoteric",
+        "isotopic",
+        "joined",
+        "jointless",
+        "linked",
+        "measured",
+        "metronomic",
+        "monatomic",
+        "monotonous",
+        "never-ending",
+        "nonstop",
+        "oscillatory",
+        "pentatomic",
+        "perennial",
+        "periodic",
+        "periodical",
+        "pulsing",
+        "reappearing",
+        "reciprocal",
+        "recurrent",
+        "recurring",
+        "repetitive",
+        "returning",
+        "revenant",
+        "rhythmic",
+        "ring-shaped",
+        "ringlike",
+        "rotary",
+        "round",
+        "round-the-clock",
+        "rounded",
+        "running",
+        "seamless",
+        "seasonal",
+        "serial",
+        "serried",
+        "smooth",
+        "stable",
+        "steady",
+        "straight",
+        "subatomic",
+        "tetratomic",
+        "thematic",
+        "thick-coming",
+        "triatomic",
+        "tribasic",
+        "twenty-four-hour",
+        "ubiquitous",
+        "unbroken",
+        "unceasing",
+        "undifferentiated",
+        "undulant",
+        "undulatory",
+        "unending",
+        "uniform",
+        "unintermitted",
+        "unintermittent",
+        "unintermitting",
+        "uninterrupted",
+        "unrelieved",
+        "unremitting",
+        "unstopped",
+        "wavelike",
+        "wheeling"
+      ]
+    },
+    "cyclical": {
+      "word": "CYCLIC; CYCLICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a cycle or circle; moving in cycles; as, cyclical time. Coleridge. Cyclic chorus, the chorus which performed the songs and dances of the dithyrambic odes at Athens, dancing round the altar of Bacchus in a circle. merely on the Trojan war and its heroes; -- so called because keeping within the circle of a singe subject. Also, any series or coterie of poets writing on one subject. Milman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "alternate",
+        "annular",
+        "annulate",
+        "annulose",
+        "articulated",
+        "atomatic",
+        "atomic",
+        "atomiferous",
+        "atomistic",
+        "beating",
+        "catenated",
+        "ceaseless",
+        "circinate",
+        "circling",
+        "circular",
+        "concatenated",
+        "connected",
+        "constant",
+        "continual",
+        "continued",
+        "continuing",
+        "continuous",
+        "coronary",
+        "crownlike",
+        "cyclic",
+        "cycloid",
+        "diatomic",
+        "dibasic",
+        "direct",
+        "discoid",
+        "disklike",
+        "endless",
+        "epochal",
+        "even",
+        "ever-recurring",
+        "every other",
+        "featureless",
+        "frequent",
+        "gapless",
+        "haunting",
+        "heteroatomic",
+        "heterocyclic",
+        "hexatomic",
+        "homocyclic",
+        "immediate",
+        "incessant",
+        "interminable",
+        "intermittent",
+        "isobaric",
+        "isochronal",
+        "isocyclic",
+        "isoteric",
+        "isotopic",
+        "joined",
+        "jointless",
+        "linked",
+        "measured",
+        "metronomic",
+        "monatomic",
+        "monotonous",
+        "never-ending",
+        "nonstop",
+        "oscillatory",
+        "pentatomic",
+        "perennial",
+        "periodic",
+        "periodical",
+        "pulsing",
+        "reappearing",
+        "reciprocal",
+        "recurrent",
+        "recurring",
+        "repetitive",
+        "returning",
+        "revenant",
+        "rhythmic",
+        "ring-shaped",
+        "ringlike",
+        "rotary",
+        "round",
+        "round-the-clock",
+        "rounded",
+        "running",
+        "seamless",
+        "seasonal",
+        "serial",
+        "serried",
+        "smooth",
+        "stable",
+        "steady",
+        "straight",
+        "subatomic",
+        "tetratomic",
+        "thematic",
+        "thick-coming",
+        "triatomic",
+        "tribasic",
+        "twenty-four-hour",
+        "ubiquitous",
+        "unbroken",
+        "unceasing",
+        "undifferentiated",
+        "undulant",
+        "undulatory",
+        "unending",
+        "uniform",
+        "unintermitted",
+        "unintermittent",
+        "unintermitting",
+        "uninterrupted",
+        "unrelieved",
+        "unremitting",
+        "unstopped",
+        "wavelike",
+        "wheeling"
+      ]
     },
     "cyclide": {
       "word": "CYCLIDE",
@@ -985,7 +1227,17 @@
         "windstorm"
       ]
     },
-    "cyclonecellarcyclonepit": {
+    "cyclonecellar": {
+      "word": "CYCLONE CELLAR; CYCLONE PIT",
+      "definitions": [
+        {
+          "text": "A cellar or excavation used for refuge from a cyclone, or tornado. [Middle U. S.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cyclonepit": {
       "word": "CYCLONE CELLAR; CYCLONE PIT",
       "definitions": [
         {
@@ -1118,7 +1370,52 @@
         "vast"
       ]
     },
-    "cyclopediacyclopaedia": {
+    "cyclopedia": {
+      "word": "CYCLOPEDIA; CYCLOPAEDIA",
+      "definitions": [
+        {
+          "text": "The circle or compass of the arts and sciences (originally, of the seven so-called liberal arts and sciences); circle of human knowledge. Hence, a work containing, in alphabetical order, information in all departments of knowledge, or on a particular department or branch; as, a cyclopedia of the physical sciences, or of mechanics. See Encyclopedia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "atlas",
+        "bibliography",
+        "body of knowledge",
+        "body of learning",
+        "calendar",
+        "casebook",
+        "catalog",
+        "catalogue raisonne",
+        "city directory",
+        "classified catalog",
+        "concordance",
+        "diatesseron",
+        "dictionary catalog",
+        "directory",
+        "encyclopedia",
+        "gazetteer",
+        "harmony",
+        "index",
+        "literature",
+        "lore",
+        "materials",
+        "phone book",
+        "polyglot",
+        "publications",
+        "record book",
+        "reference book",
+        "source book",
+        "store of knowledge",
+        "studbook",
+        "system of knowledge",
+        "telephone book",
+        "telephone directory",
+        "treasury of information",
+        "work of reference"
+      ]
+    },
+    "cyclopaedia": {
       "word": "CYCLOPEDIA; CYCLOPAEDIA",
       "definitions": [
         {
@@ -1308,11 +1605,15 @@
         {
           "text": "A division of Bryozoa, in which the cells have circular apertures.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to the Cyclostomi.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "cyclostomecyclostomous": {
+    "cyclostomous": {
       "word": "CYCLOSTOME; CYCLOSTOMOUS",
       "definitions": [
         {
@@ -1472,11 +1773,21 @@
       ],
       "relatedWords": []
     },
-    "cylindriccylindrical": {
+    "cylindric": {
       "word": "CYLINDRIC; CYLINDRICAL",
       "definitions": [
         {
-          "text": "Having the form of a cylinder, or of a section of its convex surface; partaking of the properties of the cylinder. Cylindrical lens, a lens having one, or more than one, cylindrical surface. by a straight line that moves according to any law, but so as to be",
+          "text": "Having the form of a cylinder, or of a section of its convex surface; partaking of the properties of the cylinder. Cylindrical lens, a lens having one, or more than one, cylindrical surface. by a straight line that moves according to any law, but so as to be constantly parallel to a given line.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cylindrical": {
+      "word": "CYLINDRIC; CYLINDRICAL",
+      "definitions": [
+        {
+          "text": "Having the form of a cylinder, or of a section of its convex surface; partaking of the properties of the cylinder. Cylindrical lens, a lens having one, or more than one, cylindrical surface. by a straight line that moves according to any law, but so as to be constantly parallel to a given line.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1731,7 +2042,17 @@
       ],
       "relatedWords": []
     },
-    "cymlingcymbling": {
+    "cymling": {
+      "word": "CYMLING; CYMBLING",
+      "definitions": [
+        {
+          "text": "A scalloped or \"pattypan\" variety of summer squash.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cymbling": {
       "word": "CYMLING; CYMBLING",
       "definitions": [
         {
@@ -1815,7 +2136,17 @@
       ],
       "relatedWords": []
     },
-    "cymosecymous": {
+    "cymose": {
+      "word": "CYMOSE; CYMOUS",
+      "definitions": [
+        {
+          "text": "Having the nature of a cyme, or derived from a cyme; bearing, or pertaining to, a cyme or cymes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cymous": {
       "word": "CYMOSE; CYMOUS",
       "definitions": [
         {
@@ -1909,7 +2240,7 @@
       ],
       "relatedWords": []
     },
-    "cyniccynical": {
+    "cynic": {
       "word": "CYNIC; CYNICAL",
       "definitions": [
         {
@@ -1927,13 +2258,7 @@
         {
           "text": "Given to sneering at rectitude and the conduct of life by moral principles; disbelieving in the reality of any human purposes which are not suggested or directed by self-interest or self-indulgence; as, a cynical man who scoffs at pretensions of integrity; characterized by such opinions; as, cynical views of human nature. and 4. Cynic spasm (Med.), a convulsive contraction of the muscles of one side of the face, producing a sort of grin, suggesting certain movements in the upper lip of a dog.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "cynic": {
-      "word": "CYNIC",
-      "definitions": [
+        },
         {
           "text": "One of a sect or school of philosophers founded by Antisthenes, and of whom Diogenes was a disciple. The first Cynics were noted for austere lives and their scorn for social customs and current philosophical opinions. Hence the term Cynic symbolized, in the popular judgment, moroseness, and contempt for the views of others.",
           "partOfSpeech": "noun"
@@ -1985,6 +2310,70 @@
         "traducer",
         "woman-hater",
         "worrywart"
+      ]
+    },
+    "cynical": {
+      "word": "CYNIC; CYNICAL",
+      "definitions": [
+        {
+          "text": "Having the qualities of a surly dog; snarling; captious; currish. I hope it is no very cynical asperity not to confess obligations where no benefit has been received. Johnson.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the Dog Star; as, the cynic, or Sothic, year; cynic cycle.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Belonging to the sect of philosophers called cynics; having the qualities of a cynic; pertaining to, or resembling, the doctrines of the cynics.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Given to sneering at rectitude and the conduct of life by moral principles; disbelieving in the reality of any human purposes which are not suggested or directed by self-interest or self-indulgence; as, a cynical man who scoffs at pretensions of integrity; characterized by such opinions; as, cynical views of human nature. and 4. Cynic spasm (Med.), a convulsive contraction of the muscles of one side of the face, producing a sort of grin, suggesting certain movements in the upper lip of a dog.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Cassandra-like",
+        "Cassandran",
+        "Cassandrian",
+        "Rabelaisian",
+        "Timonistic",
+        "antisocial",
+        "captious",
+        "carping",
+        "caustic",
+        "caviling",
+        "critical",
+        "defeatist",
+        "dismal",
+        "downbeat",
+        "dry",
+        "faultfinding",
+        "gloomy",
+        "hairsplitting",
+        "hypercritical",
+        "ironic",
+        "man-hating",
+        "misogynous",
+        "nagging",
+        "negative",
+        "negativistic",
+        "niggling",
+        "nihilistic",
+        "overcritical",
+        "pessimist",
+        "pessimistic",
+        "pettifogging",
+        "quibbling",
+        "sarcastic",
+        "sardonic",
+        "satiric",
+        "sexist",
+        "trichoschistic",
+        "ultracritical",
+        "uncheerful",
+        "unsociable",
+        "woman-hating"
       ]
     },
     "cynically": {
@@ -2377,6 +2766,10 @@
         {
           "text": "Pertaining to Cyrenaica, an ancient country of northern Africa, and to Cyrene, its principal city; also, to a school of philosophy founded by Aristippus, a native of Cyrene.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native of Cyrenaica; also, a disciple of the school of Aristippus. See Cyrenian, n.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2523,7 +2916,17 @@
       ],
       "relatedWords": []
     },
-    "cysticercecysticercus": {
+    "cysticerce": {
+      "word": "CYSTICERCE; CYSTICERCUS",
+      "definitions": [
+        {
+          "text": "The larval form of a tapeworm, having the head and neck of a tapeworm attached to a saclike body filled with fluid; -- called also bladder worm, hydatid, and measle (as, pork measle). and, when swallowed by a suitable carnivorous animal, develop into adult tapeworms in the intestine. See Measles, 4, Tapeworm.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cysticercus": {
       "word": "CYSTICERCE; CYSTICERCUS",
       "definitions": [
         {
@@ -2623,7 +3026,17 @@
       ],
       "relatedWords": []
     },
-    "cystoidcystoidean": {
+    "cystoid": {
+      "word": "CYSTOID; CYSTOIDEAN",
+      "definitions": [
+        {
+          "text": "Same as Cystidean.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cystoidean": {
       "word": "CYSTOID; CYSTOIDEAN",
       "definitions": [
         {
@@ -2775,7 +3188,17 @@
       ],
       "relatedWords": []
     },
-    "cytogeniccytogenetic": {
+    "cytogenic": {
+      "word": "CYTOGENIC; CYTOGENETIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to cytogenesis or cell development.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cytogenetic": {
       "word": "CYTOGENIC; CYTOGENETIC",
       "definitions": [
         {
@@ -2819,7 +3242,7 @@
       "word": "CYTOPLASM",
       "definitions": [
         {
-          "text": "The substance of the body of a cell, as distinguished from the",
+          "text": "The substance of the body of a cell, as distinguished from the karyoplasma, or substance of the nucleus.",
           "partOfSpeech": "noun"
         }
       ],

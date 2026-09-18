@@ -612,7 +612,17 @@
       ],
       "relatedWords": []
     },
-    "enamelerenamelist": {
+    "enameler": {
+      "word": "ENAMELER; ENAMELIST",
+      "definitions": [
+        {
+          "text": "One who enamels; a workman or artist who applies enamels in ornamental work. [Written also enameller, enamellist.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enamelist": {
       "word": "ENAMELER; ENAMELIST",
       "definitions": [
         {
@@ -754,6 +764,16 @@
       "definitions": [
         {
           "text": "A detailed exposition; relation. [Obs.] Hakewill.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enarthrodia": {
+      "word": "ENARTHRODIA",
+      "definitions": [
+        {
+          "text": "See Enarthrosis.",
           "partOfSpeech": "noun"
         }
       ],

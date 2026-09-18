@@ -1,0 +1,933 @@
+{
+  "version": "v1",
+  "entries": {
+    "dot": {
+      "word": "DOT",
+      "definitions": [
+        {
+          "text": "A marriage portion; dowry. [Louisiana]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small point or spot, made with a pen or other pointed instrument; a speck, or small mark.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything small and like a speck comparatively; a small portion or specimen; as, a dot of a child.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To mark with dots or small spots; as, to dot a line.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark or diversify with small detached objects; as, a landscape dotted with cottages.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make dots or specks.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "accent",
+        "accent mark",
+        "ace",
+        "appanage",
+        "atom",
+        "band",
+        "bar",
+        "bespangle",
+        "bespeckle",
+        "bespot",
+        "besprinkle",
+        "birthmark",
+        "bit",
+        "blaze",
+        "blaze a trail",
+        "blemish",
+        "blotch",
+        "brand",
+        "bread",
+        "cancel",
+        "caste mark",
+        "chalk",
+        "chalk up",
+        "character",
+        "check",
+        "check off",
+        "checker",
+        "checkmark",
+        "cicatrix",
+        "cicatrize",
+        "crumb",
+        "custos",
+        "cut",
+        "dab",
+        "dapple",
+        "dappledness",
+        "dappleness",
+        "dash",
+        "define",
+        "delimit",
+        "demarcate",
+        "direct",
+        "discolor",
+        "discoloration",
+        "dole",
+        "dottedness",
+        "dower",
+        "dowry",
+        "dram",
+        "dredge",
+        "dribble",
+        "driblet",
+        "drop",
+        "droplet",
+        "dust",
+        "dwarf",
+        "earmark",
+        "endowment",
+        "engrave",
+        "engraving",
+        "expression mark",
+        "farthing",
+        "fermata",
+        "flake",
+        "fleck",
+        "flick",
+        "flour",
+        "flyspeck",
+        "foundation",
+        "fragment",
+        "freckle",
+        "freckliness",
+        "gash",
+        "gnat",
+        "gobbet",
+        "grain",
+        "granule",
+        "graving",
+        "groat",
+        "hack",
+        "hair",
+        "handful",
+        "harlequin",
+        "hatch",
+        "hold",
+        "impress",
+        "imprint",
+        "investment",
+        "iota",
+        "iris",
+        "jointure",
+        "jot",
+        "key signature",
+        "lead",
+        "legal jointure",
+        "lentigo",
+        "ligature",
+        "line",
+        "little",
+        "little bit",
+        "macula",
+        "maculate",
+        "maculation",
+        "macule",
+        "make a mark",
+        "marble",
+        "marbleize",
+        "mark",
+        "mark off",
+        "mark out",
+        "marking",
+        "marriage portion",
+        "measure",
+        "metronomic mark",
+        "microbe",
+        "microorganism",
+        "midge",
+        "minim",
+        "minimum",
+        "minutia",
+        "minutiae",
+        "mite",
+        "modicum",
+        "mole",
+        "molecule",
+        "mote",
+        "motley",
+        "mottle",
+        "mottledness",
+        "nevus",
+        "nick",
+        "notation",
+        "notch",
+        "nutshell",
+        "ounce",
+        "particle",
+        "patch",
+        "pause",
+        "pebble",
+        "pencil",
+        "pepper",
+        "pimple",
+        "pinch",
+        "pinhead",
+        "pinpoint",
+        "pittance",
+        "point",
+        "pointillage",
+        "pointillism",
+        "polka dot",
+        "polychrome",
+        "polychromize",
+        "portion",
+        "powder",
+        "presa",
+        "prick",
+        "print",
+        "punch",
+        "punctuate",
+        "puncture",
+        "rainbow",
+        "riddle",
+        "scar",
+        "scarification",
+        "scarify",
+        "score",
+        "scotch",
+        "scrap",
+        "scratch",
+        "scratching",
+        "scruple",
+        "seal",
+        "seam",
+        "segno",
+        "settlement",
+        "sign",
+        "signature",
+        "slur",
+        "smidgen",
+        "smitch",
+        "snip",
+        "snippet",
+        "spangle",
+        "spatter",
+        "speck",
+        "speckle",
+        "speckliness",
+        "splash",
+        "splatter",
+        "splotch",
+        "spoonful",
+        "spot",
+        "spottedness",
+        "spottiness",
+        "sprinkle",
+        "stain",
+        "stamp",
+        "stigma",
+        "stigmatize",
+        "stipple",
+        "stippledness",
+        "stippling",
+        "strawberry mark",
+        "streak",
+        "striate",
+        "stripe",
+        "stud",
+        "swell",
+        "symbol",
+        "tattoo",
+        "tattoo mark",
+        "tempo mark",
+        "tessellate",
+        "thimbleful",
+        "thirds",
+        "tick",
+        "tick off",
+        "tie",
+        "time signature",
+        "tiny bit",
+        "tittle",
+        "trace",
+        "trifling amount",
+        "trivia",
+        "underline",
+        "underscore",
+        "vanishing point",
+        "variegate",
+        "vein",
+        "vinculum",
+        "watermark",
+        "whit"
+      ]
+    },
+    "dotage": {
+      "word": "DOTAGE",
+      "definitions": [
+        {
+          "text": "Feebleness or imbecility of understanding or mind, particularly in old age; the childishness of old age; senility; as, a venerable man, now in his dotage. Capable of distinguishing between the infancy and the dotage of Greek literature. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Foolish utterance; drivel. The sapless dotages of old Paris and Salamanca. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Excessive fondness; weak and foolish affection. The dotage of the nation on presbytery. Bp. Burnet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "advanced age",
+        "advanced years",
+        "age",
+        "age of retirement",
+        "an incurable disease",
+        "anility",
+        "blind faith",
+        "caducity",
+        "childishness",
+        "credulity",
+        "credulousness",
+        "debility",
+        "decline",
+        "decline of life",
+        "declining years",
+        "decrepitude",
+        "disposition to believe",
+        "dotardism",
+        "ease of belief",
+        "eld",
+        "elderliness",
+        "feebleness",
+        "fondness",
+        "green old age",
+        "gross credulity",
+        "hale old age",
+        "hoary age",
+        "infatuation",
+        "infirm old age",
+        "infirmity",
+        "infirmity of age",
+        "longevity",
+        "old age",
+        "oldness",
+        "overcredulity",
+        "overcredulousness",
+        "overopenness to conviction",
+        "overtrustfulness",
+        "pensionable age",
+        "rash conviction",
+        "ricketiness",
+        "ripe old age",
+        "second childhood",
+        "senectitude",
+        "senile debility",
+        "senile dementia",
+        "senile psychosis",
+        "senile weakness",
+        "senilism",
+        "senility",
+        "senior citizenship",
+        "superannuation",
+        "the downward slope",
+        "the golden years",
+        "trustfulness",
+        "uncritical acceptance",
+        "uncriticalness",
+        "unquestioning belief",
+        "unripe acceptation",
+        "unskepticalness",
+        "unsuspectingness",
+        "unsuspiciousness",
+        "vale of years",
+        "white hairs",
+        "will to believe",
+        "willingness to believe",
+        "wishful belief",
+        "wishful thinking"
+      ]
+    },
+    "dotal": {
+      "word": "DOTAL",
+      "definitions": [
+        {
+          "text": "Pertaining to dower, or a woman's marriage portion; constituting dower, or comprised in it. Garth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dotant": {
+      "word": "DOTANT",
+      "definitions": [
+        {
+          "text": "A dotard. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dotard": {
+      "word": "DOTARD",
+      "definitions": [
+        {
+          "text": "One whose mind is impaired by age; one in second childhood. The sickly dotard wants a wife. Prior.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Father Time",
+        "Methuselah",
+        "Nestor",
+        "Old Paar",
+        "centenarian",
+        "elder",
+        "fogy",
+        "fuddy-duddy",
+        "gaffer",
+        "geezer",
+        "golden-ager",
+        "gramps",
+        "grandfather",
+        "grandsire",
+        "graybeard",
+        "nonagenarian",
+        "octogenarian",
+        "old chap",
+        "old codger",
+        "old dog",
+        "old duffer",
+        "old fart",
+        "old fogy",
+        "old geezer",
+        "old gent",
+        "old gentleman",
+        "old man",
+        "old party",
+        "old-timer",
+        "older",
+        "oldster",
+        "pantaloon",
+        "patriarch",
+        "presbyter",
+        "senile",
+        "senior citizen",
+        "septuagenarian",
+        "sexagenarian",
+        "the quiet-voiced elders",
+        "venerable sir",
+        "veteran"
+      ]
+    },
+    "dotardly": {
+      "word": "DOTARDLY",
+      "definitions": [
+        {
+          "text": "Foolish; weak. Dr. H. More.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dotary": {
+      "word": "DOTARY",
+      "definitions": [
+        {
+          "text": "A dotard's weakness; dotage. [Obs.] Drayton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dotation": {
+      "word": "DOTATION",
+      "definitions": [
+        {
+          "text": "The act of endowing, or bestowing a marriage portion on a woman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Endowment; establishment of funds for support, as of a hospital or eleemosynary corporation. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dote": {
+      "word": "DOTE",
+      "definitions": [
+        {
+          "text": "A marriage portion. [Obs.] See 1st Dot, n. Wyatt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Natural endowments. [Obs.] B. Jonson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To act foolishly. [Obs.] He wol make him doten anon right. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be weak-minded, silly, or idiotic; to have the intellect impaired, especially by age, so that the mind wanders or wavers; to drivel. Time has made you dote, and vainly tell Of arms imagined in your lonely cell. Dryden. He survived the use of his reason, grew infatuated, and doted long before he died. South.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be excessively or foolishly fond; to love to excess; to be weakly affectionate; -- with on or upon; as, the mother dotes on her child. Sing, siren, for thyself, and I will dote. Shak. What dust we dote on, when 't is man we love. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "An imbecile; a dotard. Halliwell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "adore",
+        "babble",
+        "be fond of",
+        "be insane",
+        "be stupid",
+        "blather",
+        "blither",
+        "burble",
+        "coddle",
+        "dither",
+        "drivel",
+        "drool",
+        "enjoy",
+        "fancy",
+        "have a demon",
+        "hold dear",
+        "idolize",
+        "indulge",
+        "like",
+        "love",
+        "make much of",
+        "maunder",
+        "pamper",
+        "rage",
+        "ramble",
+        "rant",
+        "rave",
+        "run amok",
+        "run mad",
+        "slaver",
+        "slobber",
+        "spoil",
+        "wander",
+        "worship"
+      ]
+    },
+    "doted": {
+      "word": "DOTED",
+      "definitions": [
+        {
+          "text": "Stupid; foolish. [Obs.] Senseless speech and doted ignorance. Spenser.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Half-rotten; as, doted wood. [Local, U. S.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dotehead": {
+      "word": "DOTEHEAD",
+      "definitions": [
+        {
+          "text": "A dotard. [R.] Tyndale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doter": {
+      "word": "DOTER",
+      "definitions": [
+        {
+          "text": "One who dotes; a man whose understanding is enfeebled by age; a dotard. Burton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One excessively fond, or weak in love. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dotery": {
+      "word": "DOTERY",
+      "definitions": [
+        {
+          "text": "The acts or speech of a dotard; drivel. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "doth": {
+      "word": "DOTH",
+      "definitions": [
+        {
+          "text": "of Do.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "doting": {
+      "word": "DOTING",
+      "definitions": [
+        {
+          "text": "That dotes; silly; excessively fond.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "affectionate",
+        "aging",
+        "apish",
+        "asinine",
+        "batty",
+        "befooled",
+        "beguiled",
+        "besotted",
+        "brainless",
+        "buffoonish",
+        "childish",
+        "childlike",
+        "cockeyed",
+        "crazy",
+        "credulous",
+        "daffy",
+        "daft",
+        "dazed",
+        "dear",
+        "declining",
+        "decrepit",
+        "devoted",
+        "dizzy",
+        "doddering",
+        "doddery",
+        "doited",
+        "dumb",
+        "easily taken in",
+        "easy of belief",
+        "fading",
+        "fatuitous",
+        "fatuous",
+        "flaky",
+        "fond",
+        "fool",
+        "foolheaded",
+        "foolish",
+        "fuddled",
+        "futile",
+        "gaga",
+        "getting on",
+        "goofy",
+        "growing old",
+        "gulled",
+        "idiotic",
+        "imbecile",
+        "inane",
+        "inclined to believe",
+        "inept",
+        "infatuated",
+        "insane",
+        "kooky",
+        "loony",
+        "lovesome",
+        "mad",
+        "maudlin",
+        "moronic",
+        "nutty",
+        "overconfiding",
+        "overcredulous",
+        "overtrustful",
+        "overtrusting",
+        "sappy",
+        "screwy",
+        "senescent",
+        "senile",
+        "senseless",
+        "sentimental",
+        "silly",
+        "simple",
+        "sinking",
+        "stupid",
+        "superstitious",
+        "thoughtless",
+        "trustful",
+        "trusting",
+        "uncritical",
+        "undoubting",
+        "unskeptical",
+        "unsuspecting",
+        "unsuspicious",
+        "wacky",
+        "waning",
+        "wasting",
+        "wet",
+        "witless"
+      ]
+    },
+    "dotish": {
+      "word": "DOTISH",
+      "definitions": [
+        {
+          "text": "Foolish; weak; imbecile. Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dottard": {
+      "word": "DOTTARD",
+      "definitions": [
+        {
+          "text": "An old, decayed tree. [R.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dotted": {
+      "word": "DOTTED",
+      "definitions": [
+        {
+          "text": "Marked with, or made of, dots or small spots; diversified with small, detached objects. Dotted note (Mus.), a note followed by a dot to indicate an increase of length equal to one half of its simple value; thus, a dotted semibreve is equal to three minims, and a dotted quarter to three eighth notes. dotted note. an increase of length equal to three quarters of their simple value, and they are then said to be double-dotted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "bespangled",
+        "blotched",
+        "blotchy",
+        "dotty",
+        "dusted",
+        "flea-bitten",
+        "flecked",
+        "fleckered",
+        "frecked",
+        "freckled",
+        "freckly",
+        "macular",
+        "maculate",
+        "maculated",
+        "patchy",
+        "peppered",
+        "pocked",
+        "pockmarked",
+        "pocky",
+        "pointille",
+        "pointillistic",
+        "polka-dot",
+        "powdered",
+        "punctated",
+        "spangled",
+        "spattered",
+        "specked",
+        "speckled",
+        "speckledy",
+        "speckly",
+        "splattered",
+        "splotched",
+        "splotchy",
+        "spotted",
+        "spotty",
+        "sprinkled",
+        "stippled",
+        "studded"
+      ]
+    },
+    "dotterel": {
+      "word": "DOTTEREL",
+      "definitions": [
+        {
+          "text": "Decayed. \"Some old dotterel trees.\" [Obs.] Ascham.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A European bird of the Plover family (Eudromias, or Charadrius, morinellus). It is tame and easily taken, and is popularly believed to imitate the movements of the fowler. In catching of dotterels we see how the foolish bird playeth the ape in gestures. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A silly fellow; a dupe; a gull. Barrow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dottingpen": {
+      "word": "DOTTING PEN",
+      "definitions": [
+        {
+          "text": "See under Pun.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dottrel": {
+      "word": "DOTTREL",
+      "definitions": [
+        {
+          "text": "See Dotterel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dotty": {
+      "word": "DOTTY",
+      "definitions": [
+        {
+          "text": "Composed of, or characterized by, dots.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "[Perh. a different word; cf. Totty.] Unsteady in gait; hence, feeble; half-witted. [Eng.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abnormal",
+        "absurd",
+        "anomalous",
+        "balmy",
+        "bananas",
+        "barmy",
+        "bats",
+        "batty",
+        "beany",
+        "besotted",
+        "bespangled",
+        "blotched",
+        "blotchy",
+        "bonkers",
+        "buggy",
+        "bughouse",
+        "bugs",
+        "crackers",
+        "crank",
+        "crankish",
+        "cranky",
+        "crazy",
+        "crotchety",
+        "cuckoo",
+        "daffy",
+        "deviant",
+        "deviative",
+        "different",
+        "dippy",
+        "divergent",
+        "dotted",
+        "eccentric",
+        "enamored",
+        "erratic",
+        "exceptional",
+        "fantastic",
+        "fey",
+        "flaky",
+        "flea-bitten",
+        "flecked",
+        "fleckered",
+        "flipped",
+        "freaked-out",
+        "freakish",
+        "frecked",
+        "freckled",
+        "freckly",
+        "fruitcakey",
+        "fruity",
+        "funny",
+        "gaga",
+        "goofy",
+        "haywire",
+        "idiocratic",
+        "idiosyncratic",
+        "infatuate",
+        "insane",
+        "irregular",
+        "just plain nuts",
+        "kinky",
+        "kooky",
+        "loony",
+        "loopy",
+        "macular",
+        "maculate",
+        "maculated",
+        "maggoty",
+        "nuts",
+        "nutty",
+        "odd",
+        "oddball",
+        "off the hinges",
+        "off the track",
+        "off the wall",
+        "patchy",
+        "peculiar",
+        "peppered",
+        "pocked",
+        "pockmarked",
+        "pocky",
+        "pointille",
+        "pointillistic",
+        "polka-dot",
+        "potty",
+        "preposterous",
+        "punctated",
+        "queer",
+        "quirky",
+        "round the bend",
+        "screwball",
+        "screwballs",
+        "screwy",
+        "singular",
+        "slaphappy",
+        "spangled",
+        "specked",
+        "speckled",
+        "speckledy",
+        "speckly",
+        "splotched",
+        "splotchy",
+        "spotted",
+        "spotty",
+        "sprinkled",
+        "stippled",
+        "strange",
+        "studded",
+        "twisted",
+        "unconventional",
+        "unnatural",
+        "wacky",
+        "whimsical"
+      ]
+    },
+    "doty": {
+      "word": "DOTY",
+      "definitions": [
+        {
+          "text": "Half-rotten; as, doty timber. [Local, U. S.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    }
+  }
+}

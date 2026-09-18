@@ -693,7 +693,7 @@
       ],
       "relatedWords": []
     },
-    "surfelsurfle": {
+    "surfel": {
       "word": "SURFEL; SURFLE",
       "definitions": [
         {
@@ -709,6 +709,16 @@
         {
           "text": "The surf duck. [U. S.]",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "surfle": {
+      "word": "SURFEL; SURFLE",
+      "definitions": [
+        {
+          "text": "To wash, as the face, with a cosmetic water, said by some to be prepared from the sulphur. [Obs.] She shall no oftener powder her hair, [or] surfel her cheeks, . . . but she shall as often gaze on my picture. Ford.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -963,6 +973,24 @@
       ],
       "relatedWords": []
     },
+    "surly": {
+      "word": "SURLY",
+      "definitions": [
+        {
+          "text": "Arrogant; haughty. [Obs.] Cotgrave.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Gloomily morose; ill-natured, abrupt, and rude; severe; sour; crabbed; rough; sullen; gloomy; as, a surly groom; a surly dog; surly language; a surly look. \"That surly spirit, melancholy.\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Rough; dark; tempestuous. Now softened into joy the surly storm. Thomson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "surmark": {
       "word": "SURMARK",
       "definitions": [
@@ -1045,6 +1073,16 @@
         {
           "text": "To surpass; to exceed. Spenser. What surmounts the reach Of human sense I shall delineate. Milton.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "surmountable": {
+      "word": "SURMOUNTABLE",
+      "definitions": [
+        {
+          "text": "Capable of being surmounted or overcome; superable.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1325,13 +1363,13 @@
       "word": "SURPRISING",
       "definitions": [
         {
-          "text": "Exciting surprise; extraordinary; of a nature to excite wonder and astonishment; as, surprising bravery; a surprising escape from",
+          "text": "Exciting surprise; extraordinary; of a nature to excite wonder and astonishment; as, surprising bravery; a surprising escape from danger.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "surquedoussurquedrous": {
+    "surquedous": {
       "word": "SURQUEDOUS; SURQUEDROUS",
       "definitions": [
         {
@@ -1341,7 +1379,27 @@
       ],
       "relatedWords": []
     },
-    "surquedrysurquidry": {
+    "surquedrous": {
+      "word": "SURQUEDOUS; SURQUEDROUS",
+      "definitions": [
+        {
+          "text": "Having or exhibiting surquedry; arrogant; insolent. [Obs.] Gower. James II. of Scot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "surquedry": {
+      "word": "SURQUEDRY; SURQUIDRY",
+      "definitions": [
+        {
+          "text": "Overweening pride; arrogance; presumption; insolence. [Obs.] Chaucer. Then pay you the price of your surquedry. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "surquidry": {
       "word": "SURQUEDRY; SURQUIDRY",
       "definitions": [
         {
@@ -1511,7 +1569,7 @@
       "word": "SURREPTITIOUS",
       "definitions": [
         {
-          "text": "Done or made by stealth, or without proper authority; made or introduced fraudulently; clandestine; stealthy; as, a surreptitious",
+          "text": "Done or made by stealth, or without proper authority; made or introduced fraudulently; clandestine; stealthy; as, a surreptitious passage in an old manuscript; a surreptitious removal of goods.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1616,6 +1674,16 @@
         },
         {
           "text": "The things which surround or environ; external or attending circumstances or conditions.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "surrow": {
+      "word": "SEROW; SURROW",
+      "definitions": [
+        {
+          "text": "The thar.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1831,7 +1899,7 @@
       "word": "SURVEYING",
       "definitions": [
         {
-          "text": "That branch of applied mathematics which teaches the art of determining the area of any portion of the earth's surface, the length and directions of the bounding lines, the contour of the surface, etc., with an accurate delineation of the whole on paper; the act or occupation of making surveys. Geodetic surveying, geodesy. determines the forms of coasts and harbors, the entrances of rivers, with the position of islands, rocks, and shoals, the depth of water,",
+          "text": "That branch of applied mathematics which teaches the art of determining the area of any portion of the earth's surface, the length and directions of the bounding lines, the contour of the surface, etc., with an accurate delineation of the whole on paper; the act or occupation of making surveys. Geodetic surveying, geodesy. determines the forms of coasts and harbors, the entrances of rivers, with the position of islands, rocks, and shoals, the depth of water, etc. the process of ascertaining and representing upon a plane surface the contour, physical features, etc., of any portion of the surface of the earth.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1911,7 +1979,17 @@
       ],
       "relatedWords": []
     },
-    "survivancesurvivancy": {
+    "survivance": {
+      "word": "SURVIVANCE; SURVIVANCY",
+      "definitions": [
+        {
+          "text": "Survivorship. [R.] His son had the survivance of the stadtholdership. Bp. Burnet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "survivancy": {
       "word": "SURVIVANCE; SURVIVANCY",
       "definitions": [
         {

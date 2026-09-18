@@ -11,7 +11,17 @@
       ],
       "relatedWords": []
     },
-    "sulcatesulcated": {
+    "sulcate": {
+      "word": "SULCATE; SULCATED",
+      "definitions": [
+        {
+          "text": "Scored with deep and regular furrows; furrowed or grooved; as, a sulcated stem.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sulcated": {
       "word": "SULCATE; SULCATED",
       "definitions": [
         {
@@ -161,6 +171,10 @@
         {
           "text": "(Hydraul. Engin.)",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Silt; mud deposited by water. Sullage piece (Founding), the sprue of a casting. See Sprue, n., 1 (b).",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -168,6 +182,30 @@
     "sullen": {
       "word": "SULLEN",
       "definitions": [
+        {
+          "text": "Lonely; solitary; desolate. [Obs.] Wyclif (Job iii. 14).",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Gloomy; dismal; foreboding. Milton. Solemn hymns so sullen dirges change. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Mischievous; malignant; unpropitious. Such sullen planets at my birth did shine. Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Gloomily angry and silent; cross; sour; affected with ill humor; morose. And sullen I forsook the imperfect feast. Prior.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Obstinate; intractable. Things are as sullen as we are. Tillotson.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Heavy; dull; sluggish. \"The larger stream was placid, and even sullen, in its course.\" Sir W. Scott. humored; petulant; gloomy; malign; intractable. demeanor. Sullenness seems to be an habitual sulkiness, and sulkiness a temporary sullenness. The former may be an innate disposition; the latter, a disposition occasioned by recent injury. Thus we are in a sullen mood, and in a sulky fit. No cheerful breeze this sullen region knows; The dreaded east is all the wind that blows. Pope.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One who is solitary, or lives alone; a hermit. [Obs.] Piers Plowman.",
           "partOfSpeech": "noun"
@@ -229,7 +267,7 @@
       "word": "SULPHACID",
       "definitions": [
         {
-          "text": "An acid in which, to a greater or less extent, sulphur plays a part analogous to that of oxygen in an oxyacid; thus, thiosulphuric",
+          "text": "An acid in which, to a greater or less extent, sulphur plays a part analogous to that of oxygen in an oxyacid; thus, thiosulphuric and sulpharsenic acids are sulphacids; -- called also sulphoacid. See the Note under Acid, n., 2.",
           "partOfSpeech": "noun"
         }
       ],
@@ -805,7 +843,7 @@
       "word": "SULPHUREOUS",
       "definitions": [
         {
-          "text": "Consisting of sulphur; having the qualities of sulphur, or brimstone; impregnated with sulphur.",
+          "text": "Consisting of sulphur; having the qualities of sulphur, or brimstone; impregnated with sulphur. Her snakes united, sulphureous waters drink. Pope.",
           "partOfSpeech": "adjective"
         }
       ],

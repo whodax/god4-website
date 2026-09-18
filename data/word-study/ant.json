@@ -132,6 +132,16 @@
       ],
       "relatedWords": []
     },
+    "antae": {
+      "word": "ANTES; ANTAE",
+      "definitions": [
+        {
+          "text": "See Anta.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "antaean": {
       "word": "ANTAEAN",
       "definitions": [
@@ -422,11 +432,203 @@
         "walking part"
       ]
     },
-    "antagonisticantagonistical": {
+    "antagonistic": {
       "word": "ANTAGONISTIC; ANTAGONISTICAL",
       "definitions": [
         {
-          "text": "Opposing in combat, combating; contending or acting against;",
+          "text": "Opposing in combat, combating; contending or acting against; as, antagonistic forces. They were distinct, adverse, even antagonistic. Milman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "acrid",
+        "adversary",
+        "adversative",
+        "adverse",
+        "adversive",
+        "aggressive",
+        "alien",
+        "anti",
+        "antipathetic",
+        "antithetic",
+        "antonymous",
+        "at cross-purposes",
+        "at loggerheads",
+        "at odds",
+        "at variance",
+        "at war",
+        "averse",
+        "balancing",
+        "battling",
+        "bellicose",
+        "belligerent",
+        "bitter",
+        "bloodthirsty",
+        "bloody",
+        "bloody-minded",
+        "breakaway",
+        "caustic",
+        "chauvinist",
+        "chauvinistic",
+        "clashing",
+        "colliding",
+        "combative",
+        "compensating",
+        "competitive",
+        "con",
+        "conflicting",
+        "confronting",
+        "contentious",
+        "contradicting",
+        "contradictory",
+        "contradistinct",
+        "contrapositive",
+        "contrarious",
+        "contrary",
+        "contrasted",
+        "converse",
+        "counter",
+        "counteractant",
+        "counteracting",
+        "counteractive",
+        "counterbalancing",
+        "counterpoised",
+        "countervailing",
+        "counterworking",
+        "cranky",
+        "cross",
+        "crotchety",
+        "dead against",
+        "despiteful",
+        "detrimental",
+        "differing",
+        "difficult",
+        "disaccordant",
+        "disagreeable",
+        "disagreeing",
+        "discordant",
+        "discrepant",
+        "disharmonious",
+        "disinclined",
+        "disproportionate",
+        "dissentient",
+        "dissident",
+        "dissonant",
+        "divergent",
+        "enemy",
+        "eyeball to eyeball",
+        "ferocious",
+        "fierce",
+        "fighting",
+        "fractious",
+        "full of fight",
+        "full of hate",
+        "grating",
+        "hard",
+        "harmful",
+        "hateful",
+        "hawkish",
+        "hostile",
+        "immiscible",
+        "in opposition",
+        "inaccordant",
+        "incompatible",
+        "inconsistent",
+        "inconsonant",
+        "indisposed",
+        "inharmonious",
+        "inimical",
+        "inverse",
+        "jangling",
+        "jarring",
+        "jingo",
+        "jingoish",
+        "jingoist",
+        "jingoistic",
+        "malevolent",
+        "malicious",
+        "malignant",
+        "martial",
+        "militant",
+        "militaristic",
+        "military",
+        "miserable",
+        "negative",
+        "nonconformist",
+        "noncooperative",
+        "not easy",
+        "obstinate",
+        "obverse",
+        "offensive",
+        "opponent",
+        "opposed",
+        "opposing",
+        "opposite",
+        "oppositional",
+        "oppositive",
+        "oppugnant",
+        "out of accord",
+        "out of whack",
+        "overthwart",
+        "perverse",
+        "pugnacious",
+        "quarrelsome",
+        "rancorous",
+        "reactionary",
+        "reactive",
+        "recalcitrant",
+        "refractory",
+        "renitent",
+        "repugnant",
+        "resistant",
+        "reverse",
+        "revolutionary",
+        "rigorous",
+        "rival",
+        "saber-rattling",
+        "sanguinary",
+        "sanguineous",
+        "savage",
+        "scrappy",
+        "set against",
+        "sinister",
+        "soldierlike",
+        "soldierly",
+        "sore",
+        "spiteful",
+        "squared off",
+        "stressful",
+        "trigger-happy",
+        "troublesome",
+        "troublous",
+        "truculent",
+        "trying",
+        "uncongenial",
+        "uncooperative",
+        "unfavorable",
+        "unfriendly",
+        "unharmonious",
+        "unpacific",
+        "unpeaceable",
+        "unpeaceful",
+        "unpropitious",
+        "untoward",
+        "unwilling",
+        "variant",
+        "venomous",
+        "virulent",
+        "vitriolic",
+        "warlike",
+        "warmongering",
+        "warring",
+        "wretched"
+      ]
+    },
+    "antagonistical": {
+      "word": "ANTAGONISTIC; ANTAGONISTICAL",
+      "definitions": [
+        {
+          "text": "Opposing in combat, combating; contending or acting against; as, antagonistic forces. They were distinct, adverse, even antagonistic. Milman.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -539,7 +741,7 @@
       ],
       "relatedWords": []
     },
-    "antalkaliantalkaline": {
+    "antalkali": {
       "word": "ANTALKALI; ANTALKALINE",
       "definitions": [
         {
@@ -550,8 +752,12 @@
       "relatedWords": []
     },
     "antalkaline": {
-      "word": "ANTALKALINE",
+      "word": "ANTALKALI; ANTALKALINE",
       "definitions": [
+        {
+          "text": "Anything that neutralizes, or that counteracts an alkaline tendency in the system. Hoopplw.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Of power to counteract alkalies.",
           "partOfSpeech": "adjective"
@@ -645,7 +851,17 @@
       ],
       "relatedWords": []
     },
-    "antarchisticantarchistical": {
+    "antarchistic": {
+      "word": "ANTARCHISTIC; ANTARCHISTICAL",
+      "definitions": [
+        {
+          "text": "Opposed to all human government. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antarchistical": {
       "word": "ANTARCHISTIC; ANTARCHISTICAL",
       "definitions": [
         {
@@ -1682,6 +1898,16 @@
       ],
       "relatedWords": []
     },
+    "antemeridian": {
+      "word": "ANTEMERIDIAN",
+      "definitions": [
+        {
+          "text": "Being before noon; in or pertaining to the forenoon. (Abbrev. a. m.)",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "antemetic": {
       "word": "ANTEMETIC",
       "definitions": [
@@ -1919,7 +2145,17 @@
       ],
       "relatedWords": []
     },
-    "antepenultantepenultima": {
+    "antepenult": {
+      "word": "ANTEPENULT; ANTEPENULTIMA",
+      "definitions": [
+        {
+          "text": "The last syllable of a word except two, as -syl in monosyllable.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antepenultima": {
       "word": "ANTEPENULT; ANTEPENULTIMA",
       "definitions": [
         {
@@ -2141,7 +2377,7 @@
       ],
       "relatedWords": []
     },
-    "antesantae": {
+    "antes": {
       "word": "ANTES; ANTAE",
       "definitions": [
         {
@@ -2400,7 +2636,7 @@
       "word": "ANTHER",
       "definitions": [
         {
-          "text": "That part of the stamen containing the pollen, or fertilizing dust, which, when mature, is emitted for the impregnation of the",
+          "text": "That part of the stamen containing the pollen, or fertilizing dust, which, when mature, is emitted for the impregnation of the ovary.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2410,7 +2646,7 @@
       "word": "ANTHERIDIUM",
       "definitions": [
         {
-          "text": "The male reproductive apparatus in the lower, consisting of a cell or other cavity in which spermatozoids are produced; -- called",
+          "text": "The male reproductive apparatus in the lower, consisting of a cell or other cavity in which spermatozoids are produced; -- called also spermary.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2446,7 +2682,17 @@
       ],
       "relatedWords": []
     },
-    "antherozoidantherozooid": {
+    "antherozoid": {
+      "word": "ANTHEROZOID; ANTHEROZOOID",
+      "definitions": [
+        {
+          "text": "One of the mobile male reproductive bodies in the antheridia of cryptogams.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antherozooid": {
       "word": "ANTHEROZOID; ANTHEROZOOID",
       "definitions": [
         {
@@ -2759,7 +3005,7 @@
       "word": "ANTHOPHYLLITE",
       "definitions": [
         {
-          "text": "A mineral of the hornblende group, of a yellowish gray or clove",
+          "text": "A mineral of the hornblende group, of a yellowish gray or clove brown color.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3191,7 +3437,17 @@
       ],
       "relatedWords": []
     },
-    "anthropicanthropical": {
+    "anthropic": {
+      "word": "ANTHROPIC; ANTHROPICAL",
+      "definitions": [
+        {
+          "text": "Like or related to man; human. [R.] Owen.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anthropical": {
       "word": "ANTHROPIC; ANTHROPICAL",
       "definitions": [
         {
@@ -3245,7 +3501,7 @@
       "word": "ANTHROPOGEOGRAPHY",
       "definitions": [
         {
-          "text": "The science of the human species as to geographical distribution and environment. Broadly, it includes industrial, commercial, and political geography, and that part of ethnology which",
+          "text": "The science of the human species as to geographical distribution and environment. Broadly, it includes industrial, commercial, and political geography, and that part of ethnology which deals with distribution and physical environment. -- An`thro*po*ge*og\"ra*pher (#), n. -- An`thro*po*ge`o*graph\"ic*al (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3354,7 +3610,17 @@
       ],
       "relatedWords": []
     },
-    "anthropologicanthropological": {
+    "anthropologic": {
+      "word": "ANTHROPOLOGIC; ANTHROPOLOGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to anthropology; belonging to the nature of man. \"Anthropologic wisdom.\" Kingsley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anthropological": {
       "word": "ANTHROPOLOGIC; ANTHROPOLOGICAL",
       "definitions": [
         {
@@ -3444,7 +3710,17 @@
       ],
       "relatedWords": []
     },
-    "anthropometricanthropometrical": {
+    "anthropometric": {
+      "word": "ANTHROPOMETRIC; ANTHROPOMETRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to anthropometry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anthropometrical": {
       "word": "ANTHROPOMETRIC; ANTHROPOMETRICAL",
       "definitions": [
         {
@@ -3470,6 +3746,16 @@
         {
           "text": "The manlike, or anthropoid, apes.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anthropomorphic": {
+      "word": "ANTHROPOMORPHIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to anthromorphism. Hadley.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3599,17 +3885,27 @@
       ],
       "relatedWords": []
     },
-    "anthroponomicsanthroponomy": {
+    "anthroponomics": {
       "word": "ANTHROPONOMICS; ANTHROPONOMY",
       "definitions": [
         {
-          "text": "The science of the laws of the development of the human",
+          "text": "The science of the laws of the development of the human organism in relation to other organisms and to environment. -- An`thro*po*nom\"ic*al (#), a.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "anthropopathicanthropopathical": {
+    "anthroponomy": {
+      "word": "ANTHROPONOMICS; ANTHROPONOMY",
+      "definitions": [
+        {
+          "text": "The science of the laws of the development of the human organism in relation to other organisms and to environment. -- An`thro*po*nom\"ic*al (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anthropopathic": {
       "word": "ANTHROPOPATHIC; ANTHROPOPATHICAL",
       "definitions": [
         {
@@ -3619,7 +3915,17 @@
       ],
       "relatedWords": []
     },
-    "anthropopathismanthropopathy": {
+    "anthropopathical": {
+      "word": "ANTHROPOPATHIC; ANTHROPOPATHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to anthropopathy. [R.] -- An`thro*po*path\"ic*al*ly, adv. The daring anthropopathic imagery by which the prophets often represent God as chiding, upbraiding, threatening. H. Rogers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anthropopathism": {
       "word": "ANTHROPOPATHISM; ANTHROPOPATHY",
       "definitions": [
         {
@@ -3639,6 +3945,16 @@
       ],
       "relatedWords": []
     },
+    "anthropopathy": {
+      "word": "ANTHROPOPATHISM; ANTHROPOPATHY",
+      "definitions": [
+        {
+          "text": "The ascription of human feelings or passions to God, or to a polytheistic deity. In its recoil from the gross anthropopathy of the vulgar notions, it falls into the vacuum of absolute apathy. Hare.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "anthropophagi": {
       "word": "ANTHROPOPHAGI",
       "definitions": [
@@ -3649,7 +3965,17 @@
       ],
       "relatedWords": []
     },
-    "anthropophagicanthropophagical": {
+    "anthropophagic": {
+      "word": "ANTHROPOPHAGIC; ANTHROPOPHAGICAL",
+      "definitions": [
+        {
+          "text": "Relating to cannibalism or anthropophagy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anthropophagical": {
       "word": "ANTHROPOPHAGIC; ANTHROPOPHAGICAL",
       "definitions": [
         {
@@ -4351,7 +4677,17 @@
       ],
       "relatedWords": []
     },
-    "antichristianismantichristianity": {
+    "antichristianism": {
+      "word": "ANTICHRISTIANISM; ANTICHRISTIANITY",
+      "definitions": [
+        {
+          "text": "Opposition or contrariety to the Christian religion.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antichristianity": {
       "word": "ANTICHRISTIANISM; ANTICHRISTIANITY",
       "definitions": [
         {
@@ -4367,6 +4703,16 @@
         {
           "text": "In an antichristian manner.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antichronical": {
+      "word": "ANTICHRONICAL",
+      "definitions": [
+        {
+          "text": "Deviating from the proper order of time.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4824,7 +5170,11 @@
       "word": "ANTICLIMAX",
       "definitions": [
         {
-          "text": "A sentence in which the ideas fall, or become less important and striking, at the close; -- the opposite of climax. It produces a ridiculous effect. Example: Next comes Dalhousie, the great god of war,",
+          "text": "A sentence in which the ideas fall, or become less important and striking, at the close; -- the opposite of climax. It produces a ridiculous effect. Example: Next comes Dalhousie, the great god of war, Lieutenant-colonel to the Earl ANTICLINAL An`ti*cli\"nal, a. Etym: [Pref. anti- + Gr.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Inclining or dipping in opposite directions. See Synclinal. Anticlinal line, Anticlinal axis (Geol.), a line from which strata dip in opposite directions, as from the ridge of a roof. many animals has an upright spine toward which the spines of the neighboring vertebræ are inclined.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4954,7 +5304,7 @@
       "word": "ANTICYCLONE",
       "definitions": [
         {
-          "text": "A movement of the atmosphere opposite in character, as regards direction of the wind and distribution of barometric pressure, to",
+          "text": "A movement of the atmosphere opposite in character, as regards direction of the wind and distribution of barometric pressure, to that of a cyclone.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4978,7 +5328,7 @@
       "word": "ANTIDOTAL",
       "definitions": [
         {
-          "text": "Having the quality an antidote; fitted to counteract the",
+          "text": "Having the quality an antidote; fitted to counteract the effects of poison. Sir T. Browne.",
           "partOfSpeech": ""
         }
       ],
@@ -5046,6 +5396,16 @@
         "theriac",
         "theriaca"
       ]
+    },
+    "antidotical": {
+      "word": "ANTIDOTICAL",
+      "definitions": [
+        {
+          "text": "Serving as an antidote.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "antidromous": {
       "word": "ANTIDROMOUS",
@@ -5293,7 +5653,7 @@
       "word": "ANTI-IMPERIALISM",
       "definitions": [
         {
-          "text": "Opposition to imperialism; -- applied specif., in the United States, after the Spanish-American war (1898), to the attitude or principles of those opposing territorial expansion; in England, of those, often called Little Englanders, opposing the extension of the",
+          "text": "Opposition to imperialism; -- applied specif., in the United States, after the Spanish-American war (1898), to the attitude or principles of those opposing territorial expansion; in England, of those, often called Little Englanders, opposing the extension of the empire and the closer relation of its parts, esp. in matters of commerce and imperial defense. -- An`ti-im*pe\"ri*al*ist, n. -- An`ti- im*pe`ri*al*is\"tic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5337,7 +5697,7 @@
       "word": "ANTILOGARITHM",
       "definitions": [
         {
-          "text": "The number corresponding to a logarithm. The word has been sometimes, though rarely, used to denote the complement of a given logarithm; also the logarithmic cosine corresponding to a given",
+          "text": "The number corresponding to a logarithm. The word has been sometimes, though rarely, used to denote the complement of a given logarithm; also the logarithmic cosine corresponding to a given logarithmic sine.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5453,6 +5813,16 @@
       ],
       "relatedWords": []
     },
+    "antimason": {
+      "word": "ANTIMASON",
+      "definitions": [
+        {
+          "text": "One opposed to Freemasonry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "antimasonry": {
       "word": "ANTIMASONRY",
       "definitions": [
@@ -5517,7 +5887,17 @@
       ],
       "relatedWords": []
     },
-    "antimonarchicantimonarchical": {
+    "antimonarchic": {
+      "word": "ANTIMONARCHIC; ANTIMONARCHICAL",
+      "definitions": [
+        {
+          "text": "Opposed to monarchial government. Bp. Benson. Addison.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "antimonarchical": {
       "word": "ANTIMONARCHIC; ANTIMONARCHICAL",
       "definitions": [
         {
@@ -5852,7 +6232,150 @@
       ],
       "relatedWords": []
     },
-    "antipatheticantipathetical": {
+    "antipathetic": {
+      "word": "ANTIPATHETIC; ANTIPATHETICAL",
+      "definitions": [
+        {
+          "text": "Having a natural contrariety, or constitutional aversion, to a thing; characterized by antipathy; -- often followed by to. Fuller.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abhorrent",
+        "acrid",
+        "adversary",
+        "adversative",
+        "adverse",
+        "adversive",
+        "alien",
+        "antagonistic",
+        "anti",
+        "antipodal",
+        "antithetic",
+        "antithetical",
+        "antonymous",
+        "at cross-purposes",
+        "at daggers drawn",
+        "at loggerheads",
+        "at odds",
+        "at variance",
+        "at war",
+        "balancing",
+        "belligerent",
+        "bitter",
+        "breakaway",
+        "caustic",
+        "clashing",
+        "colliding",
+        "compensating",
+        "competitive",
+        "con",
+        "conflicting",
+        "confronting",
+        "contradicting",
+        "contradictory",
+        "contradistinct",
+        "contrapositive",
+        "contrarious",
+        "contrary",
+        "contrasted",
+        "converse",
+        "counter",
+        "counteractant",
+        "counteracting",
+        "counteractive",
+        "counterbalancing",
+        "counterpoised",
+        "countervailing",
+        "counterworking",
+        "cranky",
+        "cross",
+        "crotchety",
+        "dead against",
+        "despiteful",
+        "differing",
+        "disaccordant",
+        "disagreeable",
+        "disagreeing",
+        "discordant",
+        "discrepant",
+        "disgusting",
+        "disharmonious",
+        "disproportionate",
+        "dissentient",
+        "dissident",
+        "dissonant",
+        "distasteful",
+        "divergent",
+        "enemy",
+        "eyeball to eyeball",
+        "fractious",
+        "full of hate",
+        "grating",
+        "hateful",
+        "hostile",
+        "immiscible",
+        "inaccordant",
+        "incompatible",
+        "inconsistent",
+        "inharmonious",
+        "inimical",
+        "inverse",
+        "jangling",
+        "jarring",
+        "loathsome",
+        "malevolent",
+        "malicious",
+        "malignant",
+        "negative",
+        "nonconformist",
+        "noncooperative",
+        "obnoxious",
+        "obstinate",
+        "obverse",
+        "opponent",
+        "opposed",
+        "opposing",
+        "opposite",
+        "oppositional",
+        "oppositive",
+        "oppugnant",
+        "out of accord",
+        "out of whack",
+        "overthwart",
+        "perverse",
+        "quarrelsome",
+        "rancorous",
+        "reactionary",
+        "recalcitrant",
+        "refractory",
+        "renitent",
+        "repellent",
+        "repugnant",
+        "repulsive",
+        "resistant",
+        "reverse",
+        "revolutionary",
+        "rival",
+        "set against",
+        "sore",
+        "spiteful",
+        "squared off",
+        "uncongenial",
+        "uncooperative",
+        "unfavorable",
+        "unfriendly",
+        "ungenial",
+        "unharmonious",
+        "unpropitious",
+        "unsympathetic",
+        "variant",
+        "venomous",
+        "virulent",
+        "vitriolic"
+      ]
+    },
+    "antipathetical": {
       "word": "ANTIPATHETIC; ANTIPATHETICAL",
       "definitions": [
         {
@@ -6259,7 +6782,7 @@
       "word": "ANTIPHONAL",
       "definitions": [
         {
-          "text": "Of or pertaining to antiphony, or alternate singing; sung",
+          "text": "Of or pertaining to antiphony, or alternate singing; sung alternately by a divided choir or opposite choirs. Wheatly.",
           "partOfSpeech": "adjective"
         },
         {
@@ -6329,6 +6852,26 @@
         {
           "text": "The use of words in a sense opposite to their proper meaning; as when a court of justice is called a court of vengeance.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antiphrastic": {
+      "word": "ANTIPHRASTIC; ANTIPHRASTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to antiphrasis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antiphrastical": {
+      "word": "ANTIPHRASTIC; ANTIPHRASTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to antiphrasis.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6621,7 +7164,17 @@
       ],
       "relatedWords": []
     },
-    "antiputrefactiveantiputrescent": {
+    "antiputrefactive": {
+      "word": "ANTIPUTREFACTIVE; ANTIPUTRESCENT",
+      "definitions": [
+        {
+          "text": "Counteracting, or preserving from, putrefaction; antiseptic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antiputrescent": {
       "word": "ANTIPUTREFACTIVE; ANTIPUTRESCENT",
       "definitions": [
         {
@@ -7282,7 +7835,7 @@
       "word": "ANTIRENTER",
       "definitions": [
         {
-          "text": "One opposed to the payment of rent; esp. one of those who in 1840-47 resisted the collection of rents claimed by the patroons from",
+          "text": "One opposed to the payment of rent; esp. one of those who in 1840-47 resisted the collection of rents claimed by the patroons from the settlers on certain manorial lands in the State of New York.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7308,7 +7861,7 @@
       ],
       "relatedWords": []
     },
-    "antisciansantiscii": {
+    "antiscians": {
       "word": "ANTISCIANS; ANTISCII",
       "definitions": [
         {
@@ -7318,7 +7871,27 @@
       ],
       "relatedWords": []
     },
-    "antiscoleticantiscolic": {
+    "antiscii": {
+      "word": "ANTISCIANS; ANTISCII",
+      "definitions": [
+        {
+          "text": "The inhabitants of the earth, living on different sides of the equator, whose shadows at noon are cast in opposite directions. The inhabitants of the north and south temperate zones are always Antiscians. Brande & C.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antiscoletic": {
+      "word": "ANTISCOLETIC; ANTISCOLIC",
+      "definitions": [
+        {
+          "text": "Anthelmintic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antiscolic": {
       "word": "ANTISCOLETIC; ANTISCOLIC",
       "definitions": [
         {
@@ -7455,8 +8028,12 @@
       "relatedWords": []
     },
     "antiseptic": {
-      "word": "ANTISEPTIC",
+      "word": "ANTISEPTIC; ANTISEPTICAL",
       "definitions": [
+        {
+          "text": "Counteracting or preventing putrefaction, or a putrescent tendency in the system; antiputrefactive. Antiseptic surgery, that system of surgical practice which insists upon a systematic use of antiseptics in the performance of operations and the dressing of wounds.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A substance which prevents or retards putrefaction, or destroys, or protects from, putrefactive organisms; as, salt, carbolic acid, alcohol, cinchona.",
           "partOfSpeech": "noun"
@@ -7541,22 +8118,22 @@
         "weed killer"
       ]
     },
+    "antiseptical": {
+      "word": "ANTISEPTIC; ANTISEPTICAL",
+      "definitions": [
+        {
+          "text": "Counteracting or preventing putrefaction, or a putrescent tendency in the system; antiputrefactive. Antiseptic surgery, that system of surgical practice which insists upon a systematic use of antiseptics in the performance of operations and the dressing of wounds.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "antiseptically": {
       "word": "ANTISEPTICALLY",
       "definitions": [
         {
           "text": "By means of antiseptics.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "antisepticantiseptical": {
-      "word": "ANTISEPTIC; ANTISEPTICAL",
-      "definitions": [
-        {
-          "text": "Counteracting or preventing putrefaction, or a putrescent tendency in the system; antiputrefactive. Antiseptic surgery, that system of surgical practice which insists upon a systematic use of antiseptics in the performance of operations and the dressing of wounds.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7759,6 +8336,16 @@
       ],
       "relatedWords": []
     },
+    "antitheism": {
+      "word": "ANTITHEISM",
+      "definitions": [
+        {
+          "text": "The doctrine of antitheists.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "antitheist": {
       "word": "ANTITHEIST",
       "definitions": [
@@ -7864,6 +8451,99 @@
       ],
       "relatedWords": []
     },
+    "antithetic": {
+      "word": "ANTITHETIC; ANTITHETICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to antithesis, or opposition of words and sentiments; containing, or of the nature of, antithesis; contrasted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antithetical": {
+      "word": "ANTITHETIC; ANTITHETICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to antithesis, or opposition of words and sentiments; containing, or of the nature of, antithesis; contrasted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "adversary",
+        "adversative",
+        "adverse",
+        "adversive",
+        "alien",
+        "antagonistic",
+        "anti",
+        "antipathetic",
+        "antipodal",
+        "antipodean",
+        "antithetic",
+        "antonymous",
+        "at cross-purposes",
+        "balancing",
+        "clashing",
+        "compensating",
+        "competitive",
+        "con",
+        "conflicting",
+        "confronting",
+        "contradictory",
+        "contradistinct",
+        "contrapositive",
+        "contrarious",
+        "contrary",
+        "contrasted",
+        "converse",
+        "counter",
+        "counterbalancing",
+        "counterpoised",
+        "countervailing",
+        "cross",
+        "dead against",
+        "disaccordant",
+        "discordant",
+        "discrepant",
+        "dissentient",
+        "enemy",
+        "eyeball to eyeball",
+        "eyeball-to-eyeball",
+        "facing",
+        "fractious",
+        "hostile",
+        "inconsistent",
+        "inimical",
+        "inverse",
+        "negative",
+        "noncooperative",
+        "obstinate",
+        "obverse",
+        "opponent",
+        "opposed",
+        "opposing",
+        "opposite",
+        "oppositional",
+        "oppositive",
+        "oppugnant",
+        "overthwart",
+        "perverse",
+        "polar",
+        "polaric",
+        "polarized",
+        "recalcitrant",
+        "refractory",
+        "repugnant",
+        "reverse",
+        "rival",
+        "squared off",
+        "uncooperative",
+        "unfavorable",
+        "unfriendly",
+        "unpropitious"
+      ]
+    },
     "antithetically": {
       "word": "ANTITHETICALLY",
       "definitions": [
@@ -7874,17 +8554,49 @@
       ],
       "relatedWords": []
     },
-    "antitheticantithetical": {
-      "word": "ANTITHETIC; ANTITHETICAL",
+    "antitoxin": {
+      "word": "ANTITOXIN; ANTITOXINE",
       "definitions": [
         {
-          "text": "Pertaining to antithesis, or opposition of words and sentiments; containing, or of the nature of, antithesis; contrasted.",
-          "partOfSpeech": "adjective"
+          "text": "A substance (sometimes the product of a specific micro-organism and sometimes naturally present in the blood or tissues of an animal), capable of producing immunity from certain diseases, or of counteracting the poisonous effects of pathogenic bacteria.",
+          "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Rh factor",
+        "agglutinin",
+        "allergen",
+        "anaphylactin",
+        "antiantibody",
+        "antibody",
+        "antigen",
+        "antiserum",
+        "antitoxic serum",
+        "antivenin",
+        "bang",
+        "booster",
+        "booster shot",
+        "fix",
+        "hit",
+        "hypodermic",
+        "hypodermic injection",
+        "incomplete antibody",
+        "injection",
+        "inoculation",
+        "interferon",
+        "jet injection",
+        "mainlining",
+        "narcotic injection",
+        "precipitin",
+        "serum",
+        "shooting up",
+        "shot",
+        "skin-popping",
+        "vaccination",
+        "vaccine"
+      ]
     },
-    "antitoxinantitoxine": {
+    "antitoxine": {
       "word": "ANTITOXIN; ANTITOXINE",
       "definitions": [
         {
@@ -7924,7 +8636,17 @@
       ],
       "relatedWords": []
     },
-    "antitropalantitropous": {
+    "antitropal": {
+      "word": "ANTITROPAL; ANTITROPOUS",
+      "definitions": [
+        {
+          "text": "At the extremity most remote from the hilum, as the embryo, or inverted with respect to the seed, as the radicle. Lindley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antitropous": {
       "word": "ANTITROPAL; ANTITROPOUS",
       "definitions": [
         {
@@ -7979,6 +8701,16 @@
         "type specimen",
         "urtext"
       ]
+    },
+    "antitypical": {
+      "word": "ANTITYPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an antitype; explaining the type.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "antitypous": {
       "word": "ANTITYPOUS",
@@ -8144,7 +8876,17 @@
       ],
       "relatedWords": []
     },
-    "antoeciantoecians": {
+    "antoeci": {
+      "word": "ANTOECI; ANTOECIANS",
+      "definitions": [
+        {
+          "text": "Those who live under the same meridian, but on opposite parallels of latitude, north and south of the equator.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antoecians": {
       "word": "ANTOECI; ANTOECIANS",
       "definitions": [
         {
@@ -8160,6 +8902,16 @@
         {
           "text": "The use of some epithet or the name of some office, dignity, or the like, instead of the proper name of the person; as when his majesty is used for a king, or when, instead of Aristotle, we say, the philosopher; or, conversely, the use of a proper name instead of an appellative, as when a wise man is called a Solomon, or an eminent orator a Cicero.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "antonomastic": {
+      "word": "ANTONOMASTIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or characterized by, antonomasia.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

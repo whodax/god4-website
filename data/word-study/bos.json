@@ -185,7 +185,7 @@
       ],
       "relatedWords": []
     },
-    "bosketbosquet": {
+    "bosket": {
       "word": "BOSKET; BOSQUET",
       "definitions": [
         {
@@ -542,8 +542,12 @@
       "relatedWords": []
     },
     "bosquet": {
-      "word": "BOSQUET",
+      "word": "BOSKET; BOSQUET",
       "definitions": [
+        {
+          "text": "A grove; a thicket; shrubbery; an inclosure formed by branches of trees, regularly or irregularly disposed.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Bosket.",
           "partOfSpeech": "noun"

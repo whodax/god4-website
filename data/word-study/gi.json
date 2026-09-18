@@ -1,52 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "givenbyinspirationthebiblealsoanyoneofthecanonical": {
-      "word": "given by inspiration; the Bible; also, any one of the canonical",
-      "definitions": [
-        {
-          "text": "In monasteries, a book containing the rules of a religious order.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A catalogue of saints sckowledged and canonized in the Roman Catholic Church.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A member of a cathedral chapter; a person who possesses a prebend in a cathedral or collegiate church.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A musical composition in which the voice begin one after another, at regular intervals, succesively taking up the same subject. It either winds up with a coda (tailpiece), or, as each voice finishes, commences anew, thus forming a perpetual fugue or round. It is the strictest form of imitation. See Imitation.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Print.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The largest size of type having a specific name; -- so called from having been used for printing the canons of the church.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The part of a bell by which it is suspended; -- called also ear and shank.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Billiards)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "See Carom. Apostolical canons. See under Apostolical. cathedral chapter (during a part or the whole of the year). the Sanctus, which never changes. kept the canonical hours. chapter, but has not yet received a prebend. community and follower the rule of St. Austin; a Black canon. but kept the hours.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "giallolino": {
       "word": "GIALLOLINO",
       "definitions": [
@@ -256,6 +210,10 @@
         },
         {
           "text": "To secure or fasten with a gib, or gibs; to provide with a gib, or gibs. Gibbed lathe, an engine lathe in which the tool carriage is held down to the bed by a gib instead of by a weight.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To balk. See Jib, v. i. Youatt.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1329,6 +1287,30 @@
       "word": "GIFT",
       "definitions": [
         {
+          "text": "Anything given; anything voluntarily transferred by one person to another without compensation; a present; an offering. Shall I receive by gift, what of my own, . . . I can command Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act, right, or power of giving or bestowing; as, the office is in the gift of the President.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bribe; anything given to corrupt. Neither take a gift, for a gift doth blind the eyes of the wise. Deut. xvi. 19.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Some quality or endowment given to man by God; a preëminent and special talent or aptitude; power; faculty; as, the gift of wit; a gift for speaking.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A voluntary transfer of real or personal property, without any consideration. It can be perfected only by deed, or in case of personal property, by an actual delivery of possession. Bouvier. Burrill. Gift rope (Naut), a rope extended to a boat for towing it; a guest rope. gratuity; endowment; talent; faculty. something gratuitously imparted to another out of one's property. A gift is something given whether by a superior or an inferior, and is usually designed for the relief or benefit of him who receives it. A present is ordinarly from an equal or inferior, and is always intended as a compliment or expression of kindness. Donation is a word of more dignity, denoting, properly, a gift of considerable value, and ordinarly a gift made either to some public institution, or to an individual on account of his services to the public; as, a donation to a hospital, a charitable society, or a minister.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To endow with some power or faculty. He was gifted . . . with philosophical sagacity. I. Taylor.",
           "partOfSpeech": "verb"
         }
@@ -1833,7 +1815,7 @@
       ],
       "relatedWords": []
     },
-    "gigeguige": {
+    "gige": {
       "word": "GIGE; GUIGE",
       "definitions": [
         {
@@ -1964,6 +1946,14 @@
         {
           "text": "See Gigot. [Obs.] Chapman.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A leg of mutton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small piece of flesh; a slice. [Obs.] The rest in giggots cut, they spit. Chapman.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1978,7 +1968,21 @@
       ],
       "relatedWords": []
     },
-    "giglotgiglet": {
+    "giglot": {
+      "word": "GIGLOT; GIGLET",
+      "definitions": [
+        {
+          "text": "A wanton; a lascivious or light, giddy girl. [Obs.] The giglet is willful, and is running upon her fate. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Giddi; light; inconstant; wanton. [Obs.] \"O giglot fortune!\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "giglet": {
       "word": "GIGLOT; GIGLET",
       "definitions": [
         {
@@ -1988,17 +1992,7 @@
       ],
       "relatedWords": []
     },
-    "giglot": {
-      "word": "GIGLOT",
-      "definitions": [
-        {
-          "text": "Giddi; light; inconstant; wanton. [Obs.] \"O giglot fortune!\" Shak.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "gigotgiggot": {
+    "gigot": {
       "word": "GIGOT; GIGGOT",
       "definitions": [
         {
@@ -2408,7 +2402,17 @@
       ],
       "relatedWords": []
     },
-    "gilliegilly": {
+    "gillie": {
+      "word": "GILLIE; GILLY",
+      "definitions": [
+        {
+          "text": "A boy or young man; a manservant; a male attendant, in the Scottish Highlands. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gilly": {
       "word": "GILLIE; GILLY",
       "definitions": [
         {
@@ -2678,7 +2682,7 @@
         "yellowish"
       ]
     },
-    "giltedgegiltedged": {
+    "giltedge": {
       "word": "GILT-EDGE; GILT-EDGED",
       "definitions": [
         {
@@ -2691,6 +2695,41 @@
         }
       ],
       "relatedWords": []
+    },
+    "giltedged": {
+      "word": "GILT-EDGE; GILT-EDGED",
+      "definitions": [
+        {
+          "text": "Having a gilt edge; as, gilt-edged paper.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of the best quality; -- said of negotiable paper, etc. [Slang, U. S.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "divine",
+        "exquisite",
+        "glorious",
+        "golden",
+        "heavenly",
+        "immense",
+        "magnificent",
+        "marvelous",
+        "sensational",
+        "splendid",
+        "splendiferous",
+        "sterling",
+        "super",
+        "superb",
+        "supereminent",
+        "superexcellent",
+        "superfine",
+        "terrific",
+        "tremendous",
+        "wonderful"
+      ]
     },
     "gilthead": {
       "word": "GILTHEAD",
@@ -2732,7 +2771,17 @@
       ],
       "relatedWords": []
     },
-    "gimbalgimbals": {
+    "gimbal": {
+      "word": "GIMBAL; GIMBALS",
+      "definitions": [
+        {
+          "text": "A contrivance for permitting a body to incline freely in all directions, or for suspending anything, as a barometer, ship's compass, chronometer, etc., so that it will remain plumb, or level, when its support is tipped, as by the rolling of a ship. It consists of a ring in which the body can turn on an axis through a diameter of the ring, while the ring itself is so pivoted to its support that it can turn about a diameter at right angles to the first. Gimbal joint (Mach.), a universal joint embodying the principle of the gimbal. upper millstone is supported on the spindle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gimbals": {
       "word": "GIMBAL; GIMBALS",
       "definitions": [
         {
@@ -2882,6 +2931,10 @@
       "word": "GIMLET",
       "definitions": [
         {
+          "text": "A small tool for boring holes. It has a leading screw, a grooved body, and a cross handle. Gimlet eye, a squint-eye. [Colloq.] Wright.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To pierce or make with a gimlet.",
           "partOfSpeech": "verb"
         },
@@ -2914,7 +2967,17 @@
       ],
       "relatedWords": []
     },
-    "gimmergimmor": {
+    "gimmer": {
+      "word": "GIMMER; GIMMOR",
+      "definitions": [
+        {
+          "text": "A piece of mechanism; mechanical device or contrivance; a gimcrack. [Obs.] Bp. Hall. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gimmor": {
       "word": "GIMMER; GIMMOR",
       "definitions": [
         {
@@ -2952,6 +3015,10 @@
         {
           "text": "If. [Scotch] Jamieson.",
           "partOfSpeech": "conjunction"
+        },
+        {
+          "text": "To begin; -- often followed by an infinitive without to; as, gan tell. See Gan. [Obs. or Archaic] \"He gan to pray.\" Chaucer.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "A strong alcoholic liquor, distilled from rye and barley, and flavored with juniper berries; -- also called Hollands and Holland gin, because originally, and still very extensively, manufactured in Holland. Common gin is usually flavored with turpentine.",
@@ -3085,6 +3152,16 @@
         "wind",
         "winnow"
       ]
+    },
+    "ging": {
+      "word": "GING",
+      "definitions": [
+        {
+          "text": "Same as Gang, n., 2. [Obs.] There is a knot, a ging, a pack, a conspiracy against me. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     },
     "gingal": {
       "word": "GINGAL",
@@ -3376,7 +3453,17 @@
       ],
       "relatedWords": []
     },
-    "ginglymoidginglymoidal": {
+    "ginglymoid": {
+      "word": "GINGLYMOID; GINGLYMOIDAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or resembling, a ginglymus, or hinge joint; ginglyform.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ginglymoidal": {
       "word": "GINGLYMOID; GINGLYMOIDAL",
       "definitions": [
         {
@@ -3500,7 +3587,17 @@
       ],
       "relatedWords": []
     },
-    "gipsergipsire": {
+    "gipser": {
+      "word": "GIPSER; GIPSIRE",
+      "definitions": [
+        {
+          "text": "A kind of pouch formerly worn at the girdle. Ld. Lytton. A gipser all of silk, Hung at his girdle, white as morné milk. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gipsire": {
       "word": "GIPSER; GIPSIRE",
       "definitions": [
         {
@@ -3604,7 +3701,29 @@
       ],
       "relatedWords": []
     },
-    "girasolegirasol": {
+    "girasole": {
+      "word": "GIRASOLE; GIRASOL",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Heliotrope. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A variety of opal which is usually milk white, bluish white, or sky blue; but in a bright light it reflects a reddish color.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "girasol": {
       "word": "GIRASOLE; GIRASOL",
       "definitions": [
         {
@@ -4245,7 +4364,7 @@
       "word": "GIRLISH",
       "definitions": [
         {
-          "text": "Like, or characteristic of, a girl; of or pertaining to girlhood; innocent; artless; immature; weak; as, girlish ways;",
+          "text": "Like, or characteristic of, a girl; of or pertaining to girlhood; innocent; artless; immature; weak; as, girlish ways; girlish grief.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4716,7 +4835,7 @@
       ],
       "relatedWords": []
     },
-    "gismondinegismondite": {
+    "gismondine": {
       "word": "GISMONDINE; GISMONDITE",
       "definitions": [
         {
@@ -4725,6 +4844,191 @@
         }
       ],
       "relatedWords": []
+    },
+    "gismondite": {
+      "word": "GISMONDINE; GISMONDITE",
+      "definitions": [
+        {
+          "text": "A native hydrated silicate of alumina, lime, and potash, first noticed near Rome.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gist": {
+      "word": "GIST",
+      "definitions": [
+        {
+          "text": "A resting place. [Obs.] These quails have their set gists; to wit, ordinary resting and baiting places. Holland.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The main point, as of a question; the point on which an action rests; the pith of a matter; as, the gist of a question.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "affective meaning",
+        "axiom",
+        "basis",
+        "bearing",
+        "bench mark",
+        "best part",
+        "better part",
+        "body",
+        "bulk",
+        "burden",
+        "cardinal point",
+        "case",
+        "center",
+        "chapter",
+        "chief thing",
+        "climax",
+        "coloring",
+        "concern",
+        "connotation",
+        "consequence",
+        "core",
+        "cornerstone",
+        "crisis",
+        "critical point",
+        "crux",
+        "denotation",
+        "direction",
+        "distillate",
+        "distillation",
+        "drift",
+        "effect",
+        "elixir",
+        "essence",
+        "essential",
+        "essential matter",
+        "extension",
+        "fabric",
+        "flower",
+        "focus",
+        "focus of attention",
+        "focus of interest",
+        "force",
+        "fundamental",
+        "generality",
+        "grammatical meaning",
+        "gravamen",
+        "great point",
+        "head",
+        "heading",
+        "heart",
+        "high point",
+        "hypostasis",
+        "idea",
+        "impact",
+        "implication",
+        "import",
+        "important thing",
+        "inner essence",
+        "intension",
+        "issue",
+        "kernel",
+        "keystone",
+        "landmark",
+        "lexical meaning",
+        "literal meaning",
+        "living issue",
+        "main body",
+        "main idea",
+        "main point",
+        "main thing",
+        "major part",
+        "majority",
+        "marrow",
+        "mass",
+        "material",
+        "material point",
+        "matter",
+        "matter in hand",
+        "meaning",
+        "meat",
+        "medium",
+        "milestone",
+        "most",
+        "motif",
+        "motive",
+        "nub",
+        "nucleus",
+        "nuts and bolts",
+        "overtone",
+        "pertinence",
+        "pith",
+        "pivot",
+        "plurality",
+        "point",
+        "point at issue",
+        "point in question",
+        "postulate",
+        "practical consequence",
+        "principle",
+        "problem",
+        "purport",
+        "question",
+        "quid",
+        "quiddity",
+        "quintessence",
+        "range of meaning",
+        "real issue",
+        "real meaning",
+        "recap",
+        "recapitulation",
+        "reference",
+        "referent",
+        "relation",
+        "relevance",
+        "resume",
+        "rubric",
+        "run-through",
+        "rundown",
+        "salient point",
+        "sap",
+        "scope",
+        "semantic cluster",
+        "semantic field",
+        "sense",
+        "short",
+        "significance",
+        "signification",
+        "significatum",
+        "signifie",
+        "sine qua non",
+        "soul",
+        "span of meaning",
+        "spirit",
+        "structural meaning",
+        "stuff",
+        "subject",
+        "subject matter",
+        "subject of thought",
+        "substance",
+        "substantive point",
+        "sum",
+        "sum and substance",
+        "summary",
+        "summation",
+        "symbolic meaning",
+        "tenor",
+        "text",
+        "the bottom line",
+        "the nitty-gritty",
+        "the point",
+        "theme",
+        "thrust",
+        "topic",
+        "totality of associations",
+        "transferred meaning",
+        "turning point",
+        "unadorned meaning",
+        "undertone",
+        "upshot",
+        "value"
+      ]
     },
     "git": {
       "word": "GIT",
@@ -4736,7 +5040,17 @@
       ],
       "relatedWords": []
     },
-    "gitanagitano": {
+    "gitana": {
+      "word": "GITANA; GITANO",
+      "definitions": [
+        {
+          "text": "A Spanish gypsy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gitano": {
       "word": "GITANA; GITANO",
       "definitions": [
         {
@@ -4817,6 +5131,62 @@
     "give": {
       "word": "GIVE",
       "definitions": [
+        {
+          "text": "To bestow without receiving a return; to confer without compensation; to impart, as a possession; to grant, as authority or permission; to yield up or allow. For generous lords had rather give than pay. Young.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To yield possesion of; to deliver over, as property, in exchange for something; to pay; as, we give the value of what we buy. What shall a man give in exchange for his soul Matt. xvi. 26.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To yield; to furnish; to produce; to emit; as, flint and steel give sparks.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To communicate or announce, as advice, tidings, etc.; to pronounce; to render or utter, as an opinion, a judgment, a sentence, a shout, etc.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To grant power or license to; to permit; to allow; to license; to commission. It is given me once again to behold my friend. Rowe. Then give thy friend to shed the sacred wine. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To exhibit as a product or result; to produce; to show; as, the number of men, divided by the number of ships, gives four hundred to each ship.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To devote; to apply; used reflexively, to devote or apply one's self; as, the soldiers give themselves to plunder; also in this sense used very frequently in the past participle; as, the people are given to luxury and pleasure; the youth is given to study.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Logic & Math.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To set forth as a known quantity or a known relation, or as a premise from which to reason; -- used principally in the passive form given.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To allow or admit by way of supposition. I give not heaven for lost. Mlton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To attribute; to assign; to adjudge. I don't wonder at people's giving him to me as a lover. Sheridan.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To excite or cause to exist, as a sensation; as, to give offense; to give pleasure or pain.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pledge; as, to give one's word.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause; to make; -- with the infinitive; as, to give one to understand, to know, etc. But there the duke was given to understand That in a gondola were seen together Lorenzo and his amorous Jessica. Shak. To give away, to make over to another; to transfer. Whatsoever we employ in charitable uses during our lives, is given away from ourselves. Atterbury. I fear our ears have given us the bag. J. Webster. originate; to give existence to, as an enterprise, idea. known; to announce; to tender; as, to give in one's adhesion to a party. one's cause, an unintentional disclosure of one's purposes, or the like. [Colloq.] -- To give out. (a) To utter publicly; to report; to announce or declare. One that gives out himself Prince Florizel. Shak. Give out you are of Epidamnum. Shak. (b) To send out; to emit; to distribute; as, a substance gives out steam or odors. To despair of. (c) To addict, resign, or apply (one's self). The Babylonians had given themselves over to all manner of vice. Grew. conceding a certain advantage; to allow a handicap. (b) To give useful suggestions. [Colloq.] -- To give rein. See under Rein, n. exchange freely, as blows, sarcasms, etc. debtor. Abbott. appropriate to the hour, as \"good morning.\" \"good evening\", etc. ship.\" He has . . . given up For certain drops of salt, your city Rome. Shak. (b) To make public; to reveal. I'll not state them By giving up their characters. Beau. & Fl. (c) (Used also reflexively.) -- To give up the ghost. See under Ghost. one's self. force or pressure; as, the scaffolding gave way. (c) (Naut.) To begin to row; or to row with increased energy. (d) (Stock Exchange). To depreciate or decline in value; as, railroad securities gave way two per cent. all the rest. To confer was originally used of persons in power, who gave permanent grants or privileges; as, to confer the order of knighthood; and hence it still denotes the giving of something which might have been withheld; as, to confer a favor. To grant is to give in answer to a petition or request, or to one who is in some way dependent or inferior.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To give a gift or gifts.",
           "partOfSpeech": "verb"
@@ -5711,40 +6081,12 @@
         "works"
       ]
     },
-    "givehimalwaysoftheprimeswift": {
-      "word": "Give him always of the prime. Swift.",
+    "gipsymoth": {
+      "word": "GYPSY MOTH; GIPSY MOTH",
       "definitions": [
         {
-          "text": "The morning; specifically (R. C. Ch.), the first canonical hour, succeeding to lauds. Early and late it rung, at evening and at prime. Spenser. day, reckoned from 6 a. m. to 6 p. m. Afterwards, it denoted the end of the first quarter, that is, 9 a. a. Specifically, it denoted the first canonical hour, as now. Chaucer uses it in all these senses, and also in the sense of def. 1, above. They sleep till that it was pryme large. Chaucer.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Fencing)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The first of the chief guards.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Chem.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Any number expressing the combining weight or equivalent of any particular element; -- so called because these numbers were respectively reduced to their lowest relative terms on the fixed standard of hydrogen as 1. [Obs. or Archaic]",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Arith.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A prime number. See under Prime, a.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "An inch, as composed of twelve seconds in the duodecimal system; - - denoted by [']. See 2d Inch, n., 1. Prime of the moon, the new moon at its first appearance.",
-          "partOfSpeech": "adjective"
+          "text": "A tussock moth (Ocneria dispar) native of the Old World, but accidentally introduced into eastern Massachusetts about 1869, where its caterpillars have done great damage to fruit, shade, and forest trees of many kinds. The male gypsy moth is yellowish brown, the female white, and larger than the male. In both sexes the wings are marked by dark lines and a dark lunule. The caterpillars, when full- grown, have a grayish mottled appearance, with blue tubercles on the anterior and red tubercles on the posterior part of the body, all giving rise to long yellow and black hairs. They usually pupate in July and the moth appears in August. The eggs are laid on tree trunks, rocks, etc., and hatch in the spring.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []

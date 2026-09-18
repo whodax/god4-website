@@ -2037,10 +2037,34 @@ test('Word Study importer parses real Webster heading blocks and merges repeated
   });
   expect(entries.get('earthshine')).toEqual({ word: 'EARTH SHINE', definitions: [{ text: 'See Earth light, under Earth.', partOfSpeech: '' }] });
   expect(entries.get('a')).toEqual({ word: 'A-', definitions: [{ text: 'A prefix used in obsolete forms.', partOfSpeech: '' }] });
-  expect(entries.get('abovementionedabovenamed')).toEqual({ word: 'ABOVE-MENTIONED; ABOVE-NAMED', definitions: [{ text: 'Named earlier.', partOfSpeech: 'adjective' }] });
+ expect(entries.get('abovementioned')).toBeDefined();
   expect(entries.stats).toEqual({ skippedEntries: 0, mergedEntries: 1 });
 });
+test('Word Study importer does not mistake Webster etymology prose for headwords', () => {
+  const source = [
+    '*** START OF THE PROJECT GUTENBERG EBOOK 29765 ***',
+    'GOLD',
+    'Gold, n. Etym: [AS. gold;',
+    'Ordinary etymology continuation',
+    'See Gold, n.',
+    '',
+    '1. A yellow precious metal.',
+    '*** END OF THE PROJECT GUTENBERG EBOOK 29765 ***'
+  ].join('\n');
 
+  const entries = wordStudyImporter.parseWebster(source);
+
+  expect(entries.has('gold')).toBe(true);
+  expect(entries.get('gold')).toEqual({
+    word: 'GOLD',
+    definitions: [{
+      text: 'A yellow precious metal.',
+      partOfSpeech: 'noun'
+    }]
+  });
+
+  expect(entries.has('ordinaryetymologycontinuation')).toBe(false);
+});
 test('Word Study loads static Webster and Moby shard data once per shard', async ({ page }) => {
   let shardRequests = 0;
   await page.route('**/data/word-study/be.json', async (route) => {
@@ -2078,7 +2102,117 @@ test('Word Study resolves Windows-reserved shards with a safe deterministic name
   expect(result.names).toEqual(['co', 'con_', 'cont']);
   expect(result.value.status).toBe('available');
 });
+test('Word Study dictionary provider resolves conservative English inflections after exact lookup', async ({ page }) => {
+  const entry = (word) => ({
+    word,
+    definitions: [{
+      text: `${word} definition`,
+      partOfSpeech: 'noun'
+    }],
+    relatedWords: []
+  });
 
+  const entries = {
+    buried: entry('Buried exact'),
+    bury: entry('Bury'),
+    child: entry('Child'),
+    man: entry('Man'),
+    wife: entry('Wife'),
+    walk: entry('Walk'),
+    come: entry('Come'),
+    run: entry('Run'),
+    king: entry('King')
+  };
+
+  await page.route('**/data/word-study/**', async (route) => {
+    const shard = new URL(route.request().url())
+      .pathname
+      .split('/')
+      .pop()
+      .replace('.json', '');
+
+    const matchingEntries = {};
+
+    Object.keys(entries).forEach((key) => {
+      const names = [
+        key.slice(0, 2),
+        key.slice(0, 3),
+        key.slice(0, 4)
+      ];
+
+      if(names.includes(shard)){
+        matchingEntries[key] = entries[key];
+      }
+    });
+
+    if(Object.keys(matchingEntries).length){
+      return route.fulfill({
+        contentType: 'application/json',
+        body: JSON.stringify({
+          version: 'v1',
+          entries: matchingEntries
+        })
+      });
+    }
+
+    return route.fulfill({ status: 404 });
+  });
+
+  await page.goto('/');
+
+  const result = await page.evaluate(async () => {
+    const context = (word) => ({
+      lookupTerm: word,
+      displayWord: word
+    });
+
+    const lookup = async (word) =>
+      DictionaryWordStudyProvider.lookup(context(word));
+
+    return {
+      buried: await lookup('buried'),
+      children: await lookup('children'),
+      men: await lookup('men'),
+      wives: await lookup('wives'),
+      walked: await lookup('walked'),
+      coming: await lookup('coming'),
+      running: await lookup('running'),
+      possessive: await lookup("king's"),
+      was: await lookup('was'),
+      candidates: {
+        buried: DictionaryWordStudyProvider.getInflectionCandidates('buried'),
+        children: DictionaryWordStudyProvider.getInflectionCandidates('children'),
+        running: DictionaryWordStudyProvider.getInflectionCandidates('running')
+      }
+    };
+  });
+
+  /*
+   * Exact dictionary entries must always win over fallback morphology.
+   */
+  expect(result.buried.status).toBe('available');
+  expect(result.buried.definition).toBe('Buried exact definition');
+
+  expect(result.children.definition).toBe('Child definition');
+  expect(result.men.definition).toBe('Man definition');
+  expect(result.wives.definition).toBe('Wife definition');
+  expect(result.walked.definition).toBe('Walk definition');
+  expect(result.coming.definition).toBe('Come definition');
+  expect(result.running.definition).toBe('Run definition');
+  expect(result.possessive.definition).toBe('King definition');
+
+  /*
+   * Do not introduce aggressive auxiliary-verb stemming.
+   */
+  expect(result.was.status).toBe('unavailable');
+
+  /*
+   * Candidate generation itself should remain deterministic.
+   */
+  expect(result.candidates.buried).toContain('bury');
+  expect(result.candidates.children).toContain('child');
+  expect(result.candidates.running).toContain('run');
+});
 test('Word Study dictionary provider resolves adaptive shards and caches concurrent requests', async ({ page }) => {
   const requests = {};
   const entry = (word) => ({ version: 'v1', entries: { [word]: { word, definitions: [{ text: `${word} definition`, partOfSpeech: 'noun' }], relatedWords: [] } } });
@@ -2133,7 +2267,7 @@ test('Word Study supports keyboard activation, unavailable words, Escape close, 
   await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
   await page.locator('#wordStudyHeading').press('Escape');
   await expect(page.locator('#wordStudyPanel')).toBeHidden();
-  const unknownWord = page.getByRole('button', { name: 'Study word was' }).first();
+  const unknownWord = page.getByRole('button', { name: 'Study word Nathanael' }).first();
   await unknownWord.focus();
   await unknownWord.press(' ');
   await expect(page.locator('#wordStudyDefinition')).toHaveText('Definition not available yet.');

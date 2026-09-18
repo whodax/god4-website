@@ -1,6 +1,77 @@
 {
   "version": "v1",
   "entries": {
+    "fad": {
+      "word": "FAD",
+      "definitions": [
+        {
+          "text": "A hobby ; freak; whim. It is your favorite fad to draw plans. G. Eliot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "best seller",
+        "big hit",
+        "boutade",
+        "brainstorm",
+        "brilliant success",
+        "capriccio",
+        "caprice",
+        "chic",
+        "conceit",
+        "crank",
+        "craze",
+        "crazy idea",
+        "crotchet",
+        "cry",
+        "faddiness",
+        "faddishness",
+        "faddism",
+        "faddist",
+        "fancy",
+        "fantastic notion",
+        "fantasy",
+        "flimflam",
+        "fool notion",
+        "freak",
+        "freakish inspiration",
+        "furore",
+        "gas",
+        "gasser",
+        "great success",
+        "harebrained idea",
+        "hit",
+        "humor",
+        "killing",
+        "kink",
+        "maggot",
+        "megrim",
+        "meteoric success",
+        "mode",
+        "momentary success",
+        "notion",
+        "novelty",
+        "passing fancy",
+        "quirk",
+        "rage",
+        "resounding triumph",
+        "riot",
+        "roaring success",
+        "sensation",
+        "smash",
+        "smash hit",
+        "style",
+        "toy",
+        "triumph",
+        "vagary",
+        "vogue",
+        "whim",
+        "whim-wham",
+        "whimsy",
+        "wow",
+        "wrinkle"
+      ]
+    },
     "fadaise": {
       "word": "FADAISE",
       "definitions": [
@@ -31,6 +102,18 @@
         {
           "text": "Weak; insipid; tasteless; commonplace. [R.] \"Passages that are somewhat fade.\" Jeffrey. His masculine taste gave him a sense of something fade and ludicrous. De Quincey.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "To become fade; to grow weak; to lose strength; to decay; to perish gradually; to wither, as a plant. The earth mourneth and fadeth away. Is. xxiv. 4.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lose freshness, color, or brightness; to become faint in hue or tint; hence, to be wanting in color. \"Flowers that never fade.\" Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sink away; to disappear gradually; to grow dim; to vanish. The stars shall fade away. Addison He makes a swanlike end, Fading in music. Shak.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To cause to wither; to deprive of freshness or vigor; to wear away. No winter could his laurels fade. Dryden.",
@@ -479,24 +562,6 @@
       ],
       "relatedWords": []
     },
-    "fadenvadenprobfrfadeacfprovdvaddentofade": {
-      "word": "faden, vaden, prob. fr. fade, a.; cf. Prov. D. vadden to fade,",
-      "definitions": [
-        {
-          "text": "To become fade; to grow weak; to lose strength; to decay; to perish gradually; to wither, as a plant. The earth mourneth and fadeth away. Is. xxiv. 4.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To lose freshness, color, or brightness; to become faint in hue or tint; hence, to be wanting in color. \"Flowers that never fade.\" Milton.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To sink away; to disappear gradually; to grow dim; to vanish. The stars shall fade away. Addison He makes a swanlike end, Fading in music. Shak.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "fader": {
       "word": "FADER",
       "definitions": [
@@ -526,6 +591,10 @@
       "definitions": [
         {
           "text": "Losing freshness, color, brightness, or vigor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Loss of color, freshness, or vigor.",
           "partOfSpeech": "adjective"
         },
         {

@@ -117,7 +117,11 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To cause to appear as if at a distance; to make seem remote. His peculiar art of distancing an object to aggrandize his space. H.",
+          "text": "To cause to appear as if at a distance; to make seem remote. His peculiar art of distancing an object to aggrandize his space. H. Miller.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To outstrip by as much as a distance (see Distance, n., 3); to leave far behind; to surpass greatly. He distanced the most skillful of his contemporaries. Milner.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1236,11 +1240,15 @@
         {
           "text": "A couple of verses or poetic lines making complete sense; an epigram of two verses.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Disposed in two vertical rows; two-ranked.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "distichdistichous": {
+    "distichous": {
       "word": "DISTICH; DISTICHOUS",
       "definitions": [
         {
@@ -4148,7 +4156,15 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To compel by pain or suffering.",
+          "text": "To compel by pain or suffering. Men who can neither be distressed nor won into a sacrifice of duty. A. Hamilton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To seize for debt; to distrain.",
           "partOfSpeech": "verb"
         }
       ],
@@ -5365,6 +5381,16 @@
         "yellow",
         "yellow-eyed"
       ]
+    },
+    "distrusting": {
+      "word": "DISTRUSTING",
+      "definitions": [
+        {
+          "text": "That distrusts; suspicious; lacking confidence in.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "distrustless": {
       "word": "DISTRUSTLESS",

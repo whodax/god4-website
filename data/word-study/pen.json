@@ -41,6 +41,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To shut up, as in a pen or cage; to confine in a small inclosure or narrow space; to coop up, or shut in; to inclose. \"Away with her, and pen her up.\" Shak. Watching where shepherds pen their flocks at eve. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "A small inclosure; as, a pen for sheep or for pigs. My father stole two geese out of a pen. Shak.",
           "partOfSpeech": "noun"
         }
@@ -335,7 +339,17 @@
       ],
       "relatedWords": []
     },
-    "pencillatepencillated": {
+    "pencillate": {
+      "word": "PENCILLATE; PENCILLATED",
+      "definitions": [
+        {
+          "text": "Shaped like a pencil; penicillate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pencillated": {
       "word": "PENCILLATE; PENCILLATED",
       "definitions": [
         {
@@ -653,7 +667,7 @@
       "word": "PENETRABLE",
       "definitions": [
         {
-          "text": "Capable of being penetrated, entered, or pierced. Used also figuratively. And pierce his only penetrable part. Dryden.",
+          "text": "Capable of being penetrated, entered, or pierced. Used also figuratively. And pierce his only penetrable part. Dryden. I am not made of stones, But penetrable to your kind entreats. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -683,7 +697,17 @@
       ],
       "relatedWords": []
     },
-    "penetrancepenetrancy": {
+    "penetrance": {
+      "word": "PENETRANCE; PENETRANCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being penetrant; power of entering or piercing; penetrating power of quality; as, the penetrancy of subtile effluvia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "penetrancy": {
       "word": "PENETRANCE; PENETRANCY",
       "definitions": [
         {
@@ -1105,6 +1129,16 @@
       ],
       "relatedWords": []
     },
+    "penk": {
+      "word": "PENK",
+      "definitions": [
+        {
+          "text": "A minnow. See Pink, n., 4. [Prov. Eng.] Walton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "penknife": {
       "word": "PENKNIFE",
       "definitions": [
@@ -1189,7 +1223,25 @@
       ],
       "relatedWords": []
     },
-    "pennatepennated": {
+    "pennate": {
+      "word": "PENNATE; PENNATED",
+      "definitions": [
+        {
+          "text": "Winged; plume-shaped.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Same as Pinnate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pennated": {
       "word": "PENNATE; PENNATED",
       "definitions": [
         {
@@ -1275,6 +1327,16 @@
       ],
       "relatedWords": []
     },
+    "penniless": {
+      "word": "PENNILESS",
+      "definitions": [
+        {
+          "text": "Destitute of money; impecunious; poor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "penninerved": {
       "word": "PENNINERVED",
       "definitions": [
@@ -1309,7 +1371,17 @@
       ],
       "relatedWords": []
     },
-    "pennoncelpennoncelle": {
+    "pennoncel": {
+      "word": "PENNONCEL; PENNONCELLE",
+      "definitions": [
+        {
+          "text": "See Pencel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pennoncelle": {
       "word": "PENNONCEL; PENNONCELLE",
       "definitions": [
         {
@@ -1653,28 +1725,6 @@
       ],
       "relatedWords": []
     },
-    "pensumaportionweighedoutpenderetoweighweighoutcf": {
-      "word": "pensum a portion weighed out, pendere to weigh, weigh out. Cf.",
-      "definitions": [
-        {
-          "text": "Weight; gravity; that which causes a body to descend; heaviness. \"Weights of an extraordinary poise.\" Evelyn.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The weight, or mass of metal, used in weighing, to balance the substance weighed.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The state of being balanced by equal weight or power; equipoise; balance; equilibrium; rest. Bentley.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "That which causes a balance; a counterweight. Men of unbounded imagination often want the poise of judgment. Dryden.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "pent": {
       "word": "PENT",
       "definitions": [
@@ -1871,17 +1921,7 @@
       ],
       "relatedWords": []
     },
-    "pentadactyloid": {
-      "word": "PENTADACTYLOID",
-      "definitions": [
-        {
-          "text": "Having the form of, or a structure modified from, a pentadactyl limb.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pentadactylpentadactyle": {
+    "pentadactyl": {
       "word": "PENTADACTYL; PENTADACTYLE",
       "definitions": [
         {
@@ -1894,6 +1934,34 @@
         },
         {
           "text": "Having five appendages resembling fingers or toes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pentadactyle": {
+      "word": "PENTADACTYL; PENTADACTYLE",
+      "definitions": [
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having five digits to the hand or foot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having five appendages resembling fingers or toes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pentadactyloid": {
+      "word": "PENTADACTYLOID",
+      "definitions": [
+        {
+          "text": "Having the form of, or a structure modified from, a pentadactyl limb.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2009,7 +2077,17 @@
       ],
       "relatedWords": []
     },
-    "pentagraphicpentagraphical": {
+    "pentagraphic": {
+      "word": "PENTAGRAPHIC; PENTAGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pantographic. See Pantograph.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pentagraphical": {
       "word": "PENTAGRAPHIC; PENTAGRAPHICAL",
       "definitions": [
         {
@@ -2029,7 +2107,17 @@
       ],
       "relatedWords": []
     },
-    "pentagynianpentagynous": {
+    "pentagynian": {
+      "word": "PENTAGYNIAN; PENTAGYNOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to plants of the order Pentagyna; having five styles.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pentagynous": {
       "word": "PENTAGYNIAN; PENTAGYNOUS",
       "definitions": [
         {
@@ -2185,7 +2273,17 @@
       ],
       "relatedWords": []
     },
-    "pentandrianpentandrous": {
+    "pentandrian": {
+      "word": "PENTANDRIAN; PENTANDROUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the class Pentadria; having five stamens.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pentandrous": {
       "word": "PENTANDRIAN; PENTANDROUS",
       "definitions": [
         {
@@ -2463,7 +2561,17 @@
       ],
       "relatedWords": []
     },
-    "pentelicpentelican": {
+    "pentelic": {
+      "word": "PENTELIC; PENTELICAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Mount Pentelicus, near Athens, famous for its fine white marble quarries; obtained from Mount Pentelicus; as, the Pentelic marble of which the Parthenon is built.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pentelican": {
       "word": "PENTELIC; PENTELICAN",
       "definitions": [
         {
@@ -2547,7 +2655,17 @@
       ],
       "relatedWords": []
     },
-    "pentosanpentosane": {
+    "pentosan": {
+      "word": "PENTOSAN; PENTOSANE",
+      "definitions": [
+        {
+          "text": "One of a class of substances (complex carbohydrates widely distributed in plants, as in fruits, gums, woods, hay, etc.) which yield pentoses on hydrolysis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pentosane": {
       "word": "PENTOSAN; PENTOSANE",
       "definitions": [
         {
@@ -2637,7 +2755,7 @@
       ],
       "relatedWords": []
     },
-    "penuchlepinocle": {
+    "penuchle": {
       "word": "PENUCHLE; PINOCLE",
       "definitions": [
         {

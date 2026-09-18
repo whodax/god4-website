@@ -9,7 +9,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Happening unexpectedly; unforeseen. [Obs.]",
+          "text": "Happening unexpectedly; unforeseen. [Obs.] The unware woe of harm that cometh behind. Chaucer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -79,7 +79,7 @@
       "word": "UNWARRANTABLE",
       "definitions": [
         {
-          "text": "Not warrantable; indefensible; not vindicable; not justifiable;",
+          "text": "Not warrantable; indefensible; not vindicable; not justifiable; illegal; unjust; improper.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -147,7 +147,7 @@
       "word": "UNWEARIED",
       "definitions": [
         {
-          "text": "Not wearied; not fatigued or tired; hence, persistent; not",
+          "text": "Not wearied; not fatigued or tired; hence, persistent; not tiring or wearying; indefatigable.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -213,7 +213,17 @@
       ],
       "relatedWords": []
     },
-    "unweldunweldy": {
+    "unweld": {
+      "word": "UNWELD; UNWELDY",
+      "definitions": [
+        {
+          "text": "Unwieldy; unmanageable; clumsy. [Obs.] Our old limbs move [may] well be unweld. Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unweldy": {
       "word": "UNWELD; UNWELDY",
       "definitions": [
         {
@@ -417,6 +427,16 @@
       ],
       "relatedWords": []
     },
+    "unwitting": {
+      "word": "UNWITTING",
+      "definitions": [
+        {
+          "text": "Not knowing; unconscious; ignorant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "unwoman": {
       "word": "UNWOMAN",
       "definitions": [
@@ -471,6 +491,16 @@
       ],
       "relatedWords": []
     },
+    "unworldly": {
+      "word": "UNWORLDLY",
+      "definitions": [
+        {
+          "text": "Not worldly; spiritual; holy. Hawthorne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "unwormed": {
       "word": "UNWORMED",
       "definitions": [
@@ -513,7 +543,7 @@
       "word": "UNWORTHY",
       "definitions": [
         {
-          "text": "Not worthy; wanting merit, value, or fitness; undeserving;",
+          "text": "Not worthy; wanting merit, value, or fitness; undeserving; worthless; unbecoming; -- often with of.",
           "partOfSpeech": "adjective"
         }
       ],

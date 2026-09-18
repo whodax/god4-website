@@ -131,7 +131,7 @@
       "word": "EXTEMPORANEOUS",
       "definitions": [
         {
-          "text": "Composed, performed, or uttered on the spur of the moment, or without previous study; unpremeditated; off-hand; extempore;",
+          "text": "Composed, performed, or uttered on the spur of the moment, or without previous study; unpremeditated; off-hand; extempore; extemporary; as, an extemporaneous address or production.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2284,7 +2284,7 @@
       "word": "EXTERRITORIAL",
       "definitions": [
         {
-          "text": "Beyond the territorial limits; foreign to, or exempt from, the",
+          "text": "Beyond the territorial limits; foreign to, or exempt from, the territorial jurisdiction.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3658,7 +3658,17 @@
       ],
       "relatedWords": []
     },
-    "extraaxillarextraaxillary": {
+    "extraaxillar": {
+      "word": "EXTRAAXILLAR; EXTRAAXILLARY",
+      "definitions": [
+        {
+          "text": "Growing outside of the axils; as, an extra-axillary bud.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "extraaxillary": {
       "word": "EXTRAAXILLAR; EXTRAAXILLARY",
       "definitions": [
         {
@@ -3720,7 +3730,27 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A solid preparation obtained by evaporating a solution of a",
+          "text": "A solid preparation obtained by evaporating a solution of a drug, etc., or the fresh juice of a plant; -- distinguished from an abstract. See Abstract, n., 4.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Old Chem.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A peculiar principle once erroneously supposed to form the basis of all vegetable extracts; -- called also the extractive principle. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Extraction; descent. [Obs.] South.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Scots Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A draught or copy of writing; certified copy of the proceedings in an action and the judgement therein, with an order for execution. Tomlins. Fluid extract (Med.), a concentrated liquid preparation, containing a definite proportion of the active principles of a medicinal substance. At present a fluid gram of extract should represent a gram of the crude drug.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3983,7 +4013,17 @@
         "yank"
       ]
     },
-    "extractableextractible": {
+    "extractable": {
+      "word": "EXTRACTABLE; EXTRACTIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being extracted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "extractible": {
       "word": "EXTRACTABLE; EXTRACTIBLE",
       "definitions": [
         {
@@ -4495,6 +4535,16 @@
       ],
       "relatedWords": []
     },
+    "extralogical": {
+      "word": "EXTRALOGICAL",
+      "definitions": [
+        {
+          "text": "Lying outside of the domain of logic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "extramission": {
       "word": "EXTRAMISSION",
       "definitions": [
@@ -4652,7 +4702,7 @@
       "word": "EXTRANEOUS",
       "definitions": [
         {
-          "text": "Not belonging to, or dependent upon, a thing; without or beyond a thing; not essential or intrinsic; foreign; as, to separate gold from extraneous matter.",
+          "text": "Not belonging to, or dependent upon, a thing; without or beyond a thing; not essential or intrinsic; foreign; as, to separate gold from extraneous matter. Nothing is admitted extraneous from the indictment. Landor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5008,6 +5058,16 @@
         "wondrous"
       ]
     },
+    "extraparochial": {
+      "word": "EXTRAPAROCHIAL",
+      "definitions": [
+        {
+          "text": "Beyond the limits of a parish.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "extraphysical": {
       "word": "EXTRAPHYSICAL",
       "definitions": [
@@ -5066,7 +5126,7 @@
       "word": "EXTRATERRITORIAL",
       "definitions": [
         {
-          "text": "Beyond the limits of a territory or particular jurisdiction;",
+          "text": "Beyond the limits of a territory or particular jurisdiction; exterritorial.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6174,7 +6234,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Extended or contracted as much as possible; -- said of intervals; as, an extreme sharp second; an extreme flat forth. Extreme and mean ratio (Geom.), the relation of a line and its segments when the line is so divided that the whole is to the greater",
+          "text": "Extended or contracted as much as possible; -- said of intervals; as, an extreme sharp second; an extreme flat forth. Extreme and mean ratio (Geom.), the relation of a line and its segments when the line is so divided that the whole is to the greater segment is to the less. not properly subject to comparison, the superlative form not unfrequently occurs, especially in the older writers. \"Tried in his extremest state.\" Spenser. \"Extremest hardships.\" Sharp. \"Extremest of evils.\" Bacon. \"Extremest verge of the swift brook.\" Shak. \"The sea's extremest borders.\" Addison.",
           "partOfSpeech": "adjective"
         },
         {
@@ -7404,7 +7464,70 @@
         "unrelated"
       ]
     },
-    "extrinsicalityextrinsicalness": {
+    "extrinsical": {
+      "word": "EXTRINSICAL",
+      "definitions": [
+        {
+          "text": "Extrinsic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "extrinsicality": {
+      "word": "EXTRINSICALITY; EXTRINSICALNESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being extrinsic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "alienage",
+        "alienism",
+        "appearance",
+        "buckram",
+        "ceremonial",
+        "ceremoniousness",
+        "ceremony",
+        "dignity",
+        "exteriority",
+        "externality",
+        "externalness",
+        "extraneousness",
+        "foreignness",
+        "form",
+        "formality",
+        "formalization",
+        "gravity",
+        "impersonality",
+        "intrusion",
+        "manner",
+        "mien",
+        "nonassimilation",
+        "nonconformity",
+        "openness",
+        "outerness",
+        "outward appearance",
+        "outwardness",
+        "pomp",
+        "pomposity",
+        "primness",
+        "rigidness",
+        "ritual",
+        "rituality",
+        "seeming",
+        "shallowness",
+        "solemnity",
+        "starchiness",
+        "stiffness",
+        "stiltedness",
+        "stylization",
+        "superficiality",
+        "weight"
+      ]
+    },
+    "extrinsicalness": {
       "word": "EXTRINSICALITY; EXTRINSICALNESS",
       "definitions": [
         {

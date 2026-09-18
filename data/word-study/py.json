@@ -175,7 +175,25 @@
       ],
       "relatedWords": []
     },
-    "pygargpygargus": {
+    "pygarg": {
+      "word": "PYGARG; PYGARGUS",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A quadruped, probably the addax, an antelope having a white rump. Deut. xiv. 5.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Zoöl.) (a) The female of the hen harrier. (b) The sea eagle.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "pygargus": {
       "word": "PYGARG; PYGARGUS",
       "definitions": [
         {
@@ -203,19 +221,13 @@
       ],
       "relatedWords": []
     },
-    "pygmypygmean": {
+    "pygmy": {
       "word": "PYGMY; PYGMEAN",
       "definitions": [
         {
           "text": "Of or pertaining to a pygmy; resembling a pygmy or dwarf; dwarfish; very small. \" Like that Pygmean race.\" Milton. Pygmy antelope (Zoöl.), the kleeneboc. Nettapus, native of Africa, India, and Australia. several species of very small green parrots (Nasiternæ), native of New Guinea and adjacent islands. They are not larger than sparrows. Pygmy chimpanzee, a species of anthropoid ape (Pan paniscus) resembling the chimpanzee, but somewhat smaller; also called bonobo. It is considered (1996) as having the closest genetic relationship to humans of any other animal. It is found in forests in Zaire, and is an endangered species.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pygmy": {
-      "word": "PYGMY",
-      "definitions": [
+        },
         {
           "text": "(Class. Myth.)",
           "partOfSpeech": "noun"
@@ -227,6 +239,16 @@
         {
           "text": "Hence, a short, insignificant person; a dwarf. Pygmies are pygmies still, though perched on Alps. And pyramids are pyramids in vales. Young.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pygmean": {
+      "word": "PYGMY; PYGMEAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a pygmy; resembling a pygmy or dwarf; dwarfish; very small. \" Like that Pygmean race.\" Milton. Pygmy antelope (Zoöl.), the kleeneboc. Nettapus, native of Africa, India, and Australia. several species of very small green parrots (Nasiternæ), native of New Guinea and adjacent islands. They are not larger than sparrows. Pygmy chimpanzee, a species of anthropoid ape (Pan paniscus) resembling the chimpanzee, but somewhat smaller; also called bonobo. It is considered (1996) as having the closest genetic relationship to humans of any other animal. It is found in forests in Zaire, and is an endangered species.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -313,7 +335,7 @@
       ],
       "relatedWords": []
     },
-    "pyjamaspajamas": {
+    "pyjamas": {
       "word": "PYJAMAS; PAJAMAS",
       "definitions": [
         {
@@ -357,7 +379,7 @@
       "word": "PYLANGIUM",
       "definitions": [
         {
-          "text": "The first and undivided part of the aortic trunk in the",
+          "text": "The first and undivided part of the aortic trunk in the amphibian heart.",
           "partOfSpeech": "noun"
         }
       ],
@@ -541,7 +563,17 @@
       ],
       "relatedWords": []
     },
-    "pyramidicpyramidical": {
+    "pyramidic": {
+      "word": "PYRAMIDIC; PYRAMIDICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a pyramid; having the form of a pyramid; pyramidal. \" A pyramidical rock.\" Goldsmith. \"Gold in pyramidic plenty piled.\" Shenstone.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyramidical": {
       "word": "PYRAMIDIC; PYRAMIDICAL",
       "definitions": [
         {
@@ -601,7 +633,17 @@
       ],
       "relatedWords": []
     },
-    "pyrazinepyrazin": {
+    "pyrazine": {
+      "word": "PYRAZINE; PYRAZIN",
+      "definitions": [
+        {
+          "text": "A feebly basic solid, C4H4N2, obtained by distilling piperazine with zinc dust, and in other ways. Also, by extension, any of various derivatives of the same.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyrazin": {
       "word": "PYRAZINE; PYRAZIN",
       "definitions": [
         {
@@ -719,7 +761,17 @@
       ],
       "relatedWords": []
     },
-    "pyrexialpyrexical": {
+    "pyrexial": {
+      "word": "PYREXIAL; PYREXICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to fever; feverish.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyrexical": {
       "word": "PYREXIAL; PYREXICAL",
       "definitions": [
         {
@@ -819,7 +871,17 @@
       ],
       "relatedWords": []
     },
-    "pyriticpyritical": {
+    "pyritic": {
+      "word": "PYRITIC; PYRITICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pyrites; consisting of, or resembling, pyrites.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyritical": {
       "word": "PYRITIC; PYRITICAL",
       "definitions": [
         {
@@ -899,22 +961,26 @@
       ],
       "relatedWords": []
     },
-    "pyropyr": {
+    "pyro": {
       "word": "PYRO-; PYR-",
       "definitions": [
         {
           "text": "Combining forms designating fire or heat; specifically (Chem.), used to imply an actual or theoretical derivative by the action of heat; as in pyrophosphoric, pyrosulphuric, pyrotartaric, pyrotungstic, etc.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "Abbreviation of pyrogallic acid. [Colloq.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "pyro": {
-      "word": "PYRO",
+    "pyr": {
+      "word": "PYRO-; PYR-",
       "definitions": [
         {
-          "text": "Abbreviation of pyrogallic acid. [Colloq.]",
-          "partOfSpeech": "noun"
+          "text": "Combining forms designating fire or heat; specifically (Chem.), used to imply an actual or theoretical derivative by the action of heat; as in pyrophosphoric, pyrosulphuric, pyrotartaric, pyrotungstic, etc.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1201,7 +1267,17 @@
       ],
       "relatedWords": []
     },
-    "pyroligneouspyrolignic": {
+    "pyroligneous": {
+      "word": "PYROLIGNEOUS; PYROLIGNIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or designating, the acid liquid obtained in the distillation of wood, consisting essentially of impure acetic acid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyrolignic": {
       "word": "PYROLIGNEOUS; PYROLIGNIC",
       "definitions": [
         {
@@ -1357,7 +1433,17 @@
       ],
       "relatedWords": []
     },
-    "pyrometricpyrometrical": {
+    "pyrometric": {
+      "word": "PYROMETRIC; PYROMETRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or obtained by, the pyrometer; as, pyrometrical instruments; pyrometrical measurements.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyrometrical": {
       "word": "PYROMETRIC; PYROMETRICAL",
       "definitions": [
         {
@@ -1477,7 +1563,17 @@
       ],
       "relatedWords": []
     },
-    "pyrophoricpyrophorous": {
+    "pyrophoric": {
+      "word": "PYROPHORIC; PYROPHOROUS",
+      "definitions": [
+        {
+          "text": "Light-producing; of or pertaining to pyrophorus. Pyrophoric iron (Chem.), finely reduced iron, which ignites spontaneously on contact with air.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyrophorous": {
       "word": "PYROPHORIC; PYROPHOROUS",
       "definitions": [
         {
@@ -1617,7 +1713,17 @@
       ],
       "relatedWords": []
     },
-    "pyrotechnicpyrotechnical": {
+    "pyrotechnic": {
+      "word": "PYROTECHNIC; PYROTECHNICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to fireworks, or the art of forming them. Pyrotechnical sponge. See under Sponge.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyrotechnical": {
       "word": "PYROTECHNIC; PYROTECHNICAL",
       "definitions": [
         {
@@ -1715,7 +1821,17 @@
       ],
       "relatedWords": []
     },
-    "pyrouricpyroueric": {
+    "pyrouric": {
+      "word": "PYROURIC; PYROUERIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or designating, an acid now called cyanuric acid. See Cyanuric.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyroueric": {
       "word": "PYROURIC; PYROUERIC",
       "definitions": [
         {
@@ -1849,7 +1965,17 @@
       ],
       "relatedWords": []
     },
-    "pyrrhoneanpyrrhonic": {
+    "pyrrhonean": {
+      "word": "PYRRHONEAN; PYRRHONIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pyrrhonism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyrrhonic": {
       "word": "PYRRHONEAN; PYRRHONIC",
       "definitions": [
         {
@@ -1879,7 +2005,17 @@
       ],
       "relatedWords": []
     },
-    "pyrrhotinepyrrhotite": {
+    "pyrrhotine": {
+      "word": "PYRRHOTINE; PYRRHOTITE",
+      "definitions": [
+        {
+          "text": "A bronze-colored mineral, of metallic luster. It is a sulphide of iron, and is remarkable for being attracted by the magnet. Called also magnetic pyrites.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pyrrhotite": {
       "word": "PYRRHOTINE; PYRRHOTITE",
       "definitions": [
         {
@@ -1983,7 +2119,17 @@
       ],
       "relatedWords": []
     },
-    "pythagoricpythagorical": {
+    "pythagoric": {
+      "word": "PYTHAGORIC; PYTHAGORICAL",
+      "definitions": [
+        {
+          "text": "See Pythagorean, a.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pythagorical": {
       "word": "PYTHAGORIC; PYTHAGORICAL",
       "definitions": [
         {

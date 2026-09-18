@@ -87,7 +87,17 @@
         "sylphid"
       ]
     },
-    "hobanobhobandnob": {
+    "hobandnob": {
+      "word": "HOBANOB; HOBANDNOB",
+      "definitions": [
+        {
+          "text": "Same as Hobnob. Tennyson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hobanob": {
       "word": "HOBANOB; HOBANDNOB",
       "definitions": [
         {
@@ -396,7 +406,7 @@
       ],
       "relatedWords": []
     },
-    "hobbledehoyhobbletehoy": {
+    "hobbledehoy": {
       "word": "HOBBLEDEHOY; HOBBLETEHOY",
       "definitions": [
         {
@@ -415,6 +425,26 @@
         },
         {
           "text": "One who by his tenure was to maintain a horse for military service; a kind of light horseman in the Middle Ages who was mounted on a hobby. Hallam. Sir J. Davies.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hobbleskirt": {
+      "word": "HOBBLE SKIRT",
+      "definitions": [
+        {
+          "text": "A woman's skirt so scant at the bottom as to restrain freedom of movement after the fashion of a hobble. -- Hob\"ble-skirt`ed, a.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hobbletehoy": {
+      "word": "HOBBLEDEHOY; HOBBLETEHOY",
+      "definitions": [
+        {
+          "text": "A youth between boy and man; an awkward, gawky young fellow . [Colloq.] All the men, boys, and hobbledehoys attached to the farm. Dickens. .",
           "partOfSpeech": "noun"
         }
       ],
@@ -446,11 +476,23 @@
         {
           "text": "A small, strong-winged European falcon (Falco subbuteo), formerly trained for hawking.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A strong, active horse, of a middle size, said to have been originally from Ireland; an ambling nag. Johnson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stick, often with the head or figure of a horse, on which boys make believe to ride. [ Usually under the form hobbyhorse.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A subject or plan upon which one is constantly setting off; a favorite and ever-recurring theme of discourse, thought, or effort; that which occupies one's attention unduly, or to the weariness of others; a ruling passion. [Usually under the form hobby.] Not one of them has any hobbyhorse, to use the phrase of Sterne. Macaulay.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "hobbyhobbyhorse": {
+    "hobbyhorse": {
       "word": "HOBBY; HOBBYHORSE",
       "definitions": [
         {
@@ -466,7 +508,59 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "agate",
+        "avocation",
+        "ball",
+        "baseball bat",
+        "bat",
+        "battledore",
+        "bauble",
+        "blocks",
+        "by-line",
+        "checkerboard",
+        "chessboard",
+        "club",
+        "cockhorse",
+        "cricket bat",
+        "cue",
+        "doll",
+        "doll carriage",
+        "gewgaw",
+        "gimcrack",
+        "golf club",
+        "hobby",
+        "jack-in-the-box",
+        "jacks",
+        "jackstones",
+        "jackstraws",
+        "kickshaw",
+        "knickknack",
+        "marble",
+        "marionette",
+        "mig",
+        "paper doll",
+        "pastime",
+        "pick-up sticks",
+        "pinwheel",
+        "plaything",
+        "puppet",
+        "racket",
+        "rag doll",
+        "rocking horse",
+        "side interest",
+        "sideline",
+        "spare-time activity",
+        "sport",
+        "steelie",
+        "taw",
+        "teetotum",
+        "top",
+        "toy",
+        "toy soldier",
+        "trinket",
+        "whim-wham"
+      ]
     },
     "hobbyhorsical": {
       "word": "HOBBYHORSICAL",
@@ -598,7 +692,7 @@
       "word": "HOBO",
       "definitions": [
         {
-          "text": "A professional tramp; one who spends his life traveling from",
+          "text": "A professional tramp; one who spends his life traveling from place to place, esp. by stealing rides on trains, and begging for a living. [U. S.] -- Ho\"bo*ism (#), n.",
           "partOfSpeech": "noun"
         }
       ],

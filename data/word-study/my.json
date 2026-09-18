@@ -55,7 +55,7 @@
       "word": "MYCELIUM",
       "definitions": [
         {
-          "text": "The white threads or filamentous growth from which a mushroom",
+          "text": "The white threads or filamentous growth from which a mushroom or fungus is developed; the so-called mushroom spawn.",
           "partOfSpeech": "noun"
         }
       ],
@@ -91,6 +91,16 @@
       ],
       "relatedWords": []
     },
+    "mycetozoa": {
+      "word": "MYCETOZOA",
+      "definitions": [
+        {
+          "text": "The Myxomycetes; -- so called by those who regard them as a class of animals. -- My*ce`to*zo\"an (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "mycoderma": {
       "word": "MYCODERMA",
       "definitions": [
@@ -109,7 +119,17 @@
       ],
       "relatedWords": []
     },
-    "mycologicmycological": {
+    "mycologic": {
+      "word": "MYCOLOGIC; MYCOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to mycology, or the fungi.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mycological": {
       "word": "MYCOLOGIC; MYCOLOGICAL",
       "definitions": [
         {
@@ -565,7 +585,17 @@
       ],
       "relatedWords": []
     },
-    "myographicmyographical": {
+    "myographic": {
+      "word": "MYOGRAPHIC; MYOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to myography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "myographical": {
       "word": "MYOGRAPHIC; MYOGRAPHICAL",
       "definitions": [
         {
@@ -625,7 +655,17 @@
       ],
       "relatedWords": []
     },
-    "myologicmyological": {
+    "myologic": {
+      "word": "MYOLOGIC; MYOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to myology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "myological": {
       "word": "MYOLOGIC; MYOLOGICAL",
       "definitions": [
         {
@@ -927,7 +967,7 @@
       ],
       "relatedWords": []
     },
-    "myriagrammyriagramme": {
+    "myriagram": {
       "word": "MYRIAGRAM; MYRIAGRAMME",
       "definitions": [
         {
@@ -937,7 +977,17 @@
       ],
       "relatedWords": []
     },
-    "myrialitermyrialitre": {
+    "myriagramme": {
+      "word": "MYRIAGRAM; MYRIAGRAMME",
+      "definitions": [
+        {
+          "text": "A metric weight, consisting of ten thousand grams or ten kilograms. It is equal to 22.046 lbs. avoirdupois.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "myrialiter": {
       "word": "MYRIALITER; MYRIALITRE",
       "definitions": [
         {
@@ -947,7 +997,27 @@
       ],
       "relatedWords": []
     },
-    "myriametermyriametre": {
+    "myrialitre": {
+      "word": "MYRIALITER; MYRIALITRE",
+      "definitions": [
+        {
+          "text": "A metric measure of capacity, containing ten thousand liters. It is equal to 2641.7 wine gallons.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "myriameter": {
+      "word": "MYRIAMETER; MYRIAMETRE",
+      "definitions": [
+        {
+          "text": "A metric measure of length, containing ten thousand meters. It is equal to 6.2137 miles.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "myriametre": {
       "word": "MYRIAMETER; MYRIAMETRE",
       "definitions": [
         {
@@ -1141,7 +1211,7 @@
       "word": "MYRMECOPHYTE",
       "definitions": [
         {
-          "text": "A plant that affords shelter and food to certain species of ants which live in symbiotic relations with it. Special adaptations for this purpose exist; thus, Acacia spadicigera has large hollows",
+          "text": "A plant that affords shelter and food to certain species of ants which live in symbiotic relations with it. Special adaptations for this purpose exist; thus, Acacia spadicigera has large hollows thorns, and species of Cecropia have stem cavities. -- Myr`me*co*phyt\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1191,7 +1261,17 @@
       ],
       "relatedWords": []
     },
-    "myrobalanmyrobolan": {
+    "myrobalan": {
+      "word": "MYROBALAN; MYROBOLAN",
+      "definitions": [
+        {
+          "text": "A dried astringent fruit much resembling a prune. It contains tannin, and was formerly used in medicine, but is now chiefly used in tanning and dyeing. Myrobolans are produced by various species of Terminalia of the East Indies, and of Spondias of South America.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "myrobolan": {
       "word": "MYROBALAN; MYROBOLAN",
       "definitions": [
         {
@@ -1341,7 +1421,17 @@
       ],
       "relatedWords": []
     },
-    "mystagogicmystagogical": {
+    "mystagogic": {
+      "word": "MYSTAGOGIC; MYSTAGOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to interpretation of mysteries or to mystagogue; of the nature of mystagogy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mystagogical": {
       "word": "MYSTAGOGIC; MYSTAGOGICAL",
       "definitions": [
         {
@@ -1473,7 +1563,7 @@
       ],
       "relatedWords": []
     },
-    "mysticmystical": {
+    "mystic": {
       "word": "MYSTIC; MYSTICAL",
       "definitions": [
         {
@@ -1481,18 +1571,26 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Importing or implying mysticism; involving some secret meaning; allegorical; emblematical; as, a mystic dance; mystic Babylon. Thus, then, did the spirit of unity and meekness inspire every joint",
+          "text": "Importing or implying mysticism; involving some secret meaning; allegorical; emblematical; as, a mystic dance; mystic Babylon. Thus, then, did the spirit of unity and meekness inspire every joint and sinew of the mystical body. Milton.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One given to mysticism; one who holds mystical views, interpretations, etc.; especially, in ecclesiastical history, one who professed mysticism. See Mysticism.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "mystic": {
-      "word": "MYSTIC",
+    "mystical": {
+      "word": "MYSTIC; MYSTICAL",
       "definitions": [
         {
-          "text": "One given to mysticism; one who holds mystical views, interpretations, etc.; especially, in ecclesiastical history, one who professed mysticism. See Mysticism.",
-          "partOfSpeech": "noun"
+          "text": "Remote from or beyond human comprehension; baffling human understanding; unknowable; obscure; mysterious. Heaven's numerous hierarchy span The mystic gulf from God to man. Emerson. God hath revealed a way mystical and supernatural. Hooker.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Importing or implying mysticism; involving some secret meaning; allegorical; emblematical; as, a mystic dance; mystic Babylon. Thus, then, did the spirit of unity and meekness inspire every joint and sinew of the mystical body. Milton.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1601,11 +1699,21 @@
       ],
       "relatedWords": []
     },
-    "mythicmythical": {
+    "mythic": {
       "word": "MYTHIC; MYTHICAL",
       "definitions": [
         {
-          "text": "Of or relating to myths; described in a myth; of the nature of",
+          "text": "Of or relating to myths; described in a myth; of the nature of a myth; fabulous; imaginary; fanciful. The mythic turf where danced the nymphs. Mrs. Browning. Hengist and Horsa, Vortigern and Rowena, Arthur and Mordred, are mythical persons, whose very existence may be questioned. Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mythical": {
+      "word": "MYTHIC; MYTHICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to myths; described in a myth; of the nature of a myth; fabulous; imaginary; fanciful. The mythic turf where danced the nymphs. Mrs. Browning. Hengist and Horsa, Vortigern and Rowena, Arthur and Mordred, are mythical persons, whose very existence may be questioned. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1637,6 +1745,26 @@
         {
           "text": "A mythologist.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mythologic": {
+      "word": "MYTHOLOGIC; MYTHOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to mythology or to myths; mythical; fabulous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mythological": {
+      "word": "MYTHOLOGIC; MYTHOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to mythology or to myths; mythical; fabulous.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1807,7 +1935,7 @@
       "word": "MYXOEDEMA",
       "definitions": [
         {
-          "text": "A disease producing a peculiar cretinoid appearance of the",
+          "text": "A disease producing a peculiar cretinoid appearance of the face, slow speech, and dullness of intellect, and due to failure of the functions of the thyroid gland. -- Myx`o*dem\"a*tous (#), a., Myx`o*dem\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1827,7 +1955,7 @@
       "word": "MYXOMYCETES",
       "definitions": [
         {
-          "text": "A class of peculiar organisms, the slime molds, formerly regarded as animals (Mycetozoa), but now generally thought to be plants and often separated as a distinct phylum (Myxophyta). They are found on damp earth and decaying vegetable matter, and consist of naked masses of protoplasm, often of considerable size, which creep",
+          "text": "A class of peculiar organisms, the slime molds, formerly regarded as animals (Mycetozoa), but now generally thought to be plants and often separated as a distinct phylum (Myxophyta). They are found on damp earth and decaying vegetable matter, and consist of naked masses of protoplasm, often of considerable size, which creep very slowly over the surface and ingest solid food. -- Myx`o*my*ce\"tous (#), a.",
           "partOfSpeech": "noun"
         }
       ],

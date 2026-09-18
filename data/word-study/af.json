@@ -1701,7 +1701,17 @@
       ],
       "relatedWords": []
     },
-    "affeereraffeeror": {
+    "affeerer": {
+      "word": "AFFEERER; AFFEEROR",
+      "definitions": [
+        {
+          "text": "One who affeers. Cowell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "affeeror": {
       "word": "AFFEERER; AFFEEROR",
       "definitions": [
         {
@@ -2386,6 +2396,16 @@
       "definitions": [
         {
           "text": "Joined in affinity or by any tie. [Obs.] \"All affined and kin.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "affinitative": {
+      "word": "AFFINITATIVE",
+      "definitions": [
+        {
+          "text": "Of the nature of affinity.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3673,7 +3693,7 @@
       "word": "AFFLICTING",
       "definitions": [
         {
-          "text": "Grievously painful; distressing; afflictive; as, an afflicting",
+          "text": "Grievously painful; distressing; afflictive; as, an afflicting event.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4819,6 +4839,16 @@
       ],
       "relatedWords": []
     },
+    "affrightful": {
+      "word": "AFFRIGHTFUL",
+      "definitions": [
+        {
+          "text": "Terrifying; frightful. Bugbears or affrightful apparitions. Cudworth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "affrightment": {
       "word": "AFFRIGHTMENT",
       "definitions": [
@@ -5542,6 +5572,16 @@
       ],
       "relatedWords": []
     },
+    "afoam": {
+      "word": "AFOAM",
+      "definitions": [
+        {
+          "text": "In a foaming state; as, the sea is all afoam.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
     "afofl": {
       "word": "A. F. OF L.",
       "definitions": [
@@ -5866,6 +5906,10 @@
         {
           "text": "Same as Afrit.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A powerful evil jinnee, demon, or monstrous giant.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -5964,7 +6008,17 @@
       ],
       "relatedWords": []
     },
-    "afritafriteafreet": {
+    "afrit": {
+      "word": "AFRIT; AFRITE; AFREET",
+      "definitions": [
+        {
+          "text": "A powerful evil jinnee, demon, or monstrous giant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "afrite": {
       "word": "AFRIT; AFRITE; AFREET",
       "definitions": [
         {
@@ -6071,7 +6125,7 @@
           "partOfSpeech": "preposition"
         },
         {
-          "text": "Subsequently in time or place; behind; afterward; as, he follows after. It was about the space of three hours after. Acts. v. 7. retaining its usual signification. The prefix may be adverbial, prepositional, or adjectival; as in after- described, after-dinner,",
+          "text": "Subsequently in time or place; behind; afterward; as, he follows after. It was about the space of three hours after. Acts. v. 7. retaining its usual signification. The prefix may be adverbial, prepositional, or adjectival; as in after- described, after-dinner, after-part. The hyphen is sometimes needlessly used to connect the adjective after with its noun. See Note under After, a., 1.",
           "partOfSpeech": "adverb"
         }
       ],
@@ -6808,7 +6862,50 @@
         "wait"
       ]
     },
-    "afterwardsafterward": {
+    "afterwards": {
+      "word": "AFTERWARDS; AFTERWARD",
+      "definitions": [
+        {
+          "text": "At a later or succeeding time.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "after",
+        "after a time",
+        "after a while",
+        "after all",
+        "after that",
+        "afterward",
+        "anon",
+        "before long",
+        "by and by",
+        "by destiny",
+        "ex post facto",
+        "fatally",
+        "hopefully",
+        "imminently",
+        "in aftertime",
+        "in the aftermath",
+        "in the future",
+        "in the sequel",
+        "later",
+        "next",
+        "predictably",
+        "probably",
+        "proximo",
+        "since",
+        "soon",
+        "subsequently",
+        "then",
+        "thereafter",
+        "thereon",
+        "thereupon",
+        "therewith",
+        "tomorrow"
+      ]
+    },
+    "afterward": {
       "word": "AFTERWARDS; AFTERWARD",
       "definitions": [
         {
@@ -6864,24 +6961,6 @@
         {
           "text": "Toward the stern.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "afantasticalgoatleapfrlcapercapragoatcfcapriole": {
-      "word": "a fantastical goat leap), fr. L. caper, capra, goat. Cf Capriole,",
-      "definitions": [
-        {
-          "text": "An abrupt change in feeling, opinion, or action, proceeding from some whim or fancy; a freak; a notion. \"Caprices of appetite.\" W. Irving.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "See Capriccio.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

@@ -129,7 +129,7 @@
         "upper case"
       ]
     },
-    "beveledbevelled": {
+    "beveled": {
       "word": "BEVELED; BEVELLED",
       "definitions": [
         {
@@ -141,7 +141,43 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "aslant",
+        "aslope",
+        "atilt",
+        "bevel",
+        "bias",
+        "biased",
+        "canting",
+        "careening",
+        "inclinational",
+        "inclinatory",
+        "inclined",
+        "inclining",
+        "leaning",
+        "listing",
+        "out of plumb",
+        "out of square",
+        "pitched",
+        "raking",
+        "recumbent",
+        "shelving",
+        "shelvy",
+        "sideling",
+        "sidelong",
+        "slant",
+        "slanted",
+        "slanting",
+        "slantways",
+        "slantwise",
+        "sloped",
+        "sloping",
+        "tilted",
+        "tilting",
+        "tipped",
+        "tipping",
+        "tipsy"
+      ]
     },
     "bevelgear": {
       "word": "BEVEL GEAR",
@@ -149,6 +185,20 @@
         {
           "text": "A kind of gear in which the two wheels working together lie in different planes, and have their teeth cut at right angles to the surfaces of two cones whose apices coincide with the point where the axes of the wheels would meet.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bevelled": {
+      "word": "BEVELED; BEVELLED",
+      "definitions": [
+        {
+          "text": "Formed to a bevel angle; sloping; as, the beveled edge of a table.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Min.) Replaced by two planes inclining equally upon the adjacent planes, as an edge; having its edges replaces by sloping planes, as a cube or other solid.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -305,7 +355,17 @@
       ],
       "relatedWords": []
     },
-    "beviledbevilled": {
+    "beviled": {
+      "word": "BEVILED; BEVILLED",
+      "definitions": [
+        {
+          "text": "Notched with an angle like that inclosed by a carpenter's bevel; -- said of a partition line of a shield.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bevilled": {
       "word": "BEVILED; BEVILLED",
       "definitions": [
         {
