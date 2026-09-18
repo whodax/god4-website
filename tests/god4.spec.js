@@ -12,6 +12,7 @@ test.beforeEach(async ({ page }) => {
     if (sessionStorage.getItem(key)) return;
     localStorage.removeItem('god4.translation');
     localStorage.removeItem('god4.compare');
+    localStorage.removeItem('god4.plan.completedDays');
     sessionStorage.setItem(key, 'true');
   }, resetKey);
   await page.goto('/');
@@ -661,25 +662,38 @@ test('translation selector keeps a visible label when changed', async ({ page })
   await translation.selectOption('web');
   await expect(translation).toHaveValue('web');
   await expect(translation.locator('option:checked')).toHaveText(/WEB.*World English Bible Protestant Edition/);
-  await translation.selectOption('demo-local');
-  await expect(translation.locator('option:checked')).toHaveText(/DEMO.*Current Demo Bible/);
+  await translation.selectOption('asv');
+  await expect(translation.locator('option:checked')).toHaveText(/ASV.*American Standard Version/);
 });
 
 test('translation preference persists across reloads', async ({ page }) => {
   await page.goto('/');
   const translation = page.locator('#readerTranslation');
-  await translation.selectOption('demo-local');
+  await translation.selectOption('asv');
   await page.reload();
-  await expect(translation).toHaveValue('demo-local');
-  await expect(translation.locator('option:checked')).toHaveText(/DEMO.*Current Demo Bible/);
+  await expect(translation).toHaveValue('asv');
+  await expect(translation.locator('option:checked')).toHaveText(/ASV.*American Standard Version/);
 });
 
-test('translation selector safely selects the first option when state is invalid', async ({ page }) => {
-  await page.addInitScript(() => localStorage.setItem('god4.translation', 'missing-translation'));
-  await page.goto('/');
-  const translation = page.locator('#readerTranslation');
-  await expect(translation).toHaveValue('demo-local');
-  await expect(translation.locator('option:checked')).not.toHaveText('');
+for (const storedTranslation of ['missing-translation', 'demo-local']) {
+  test(`Reader falls back to WEB for saved ${storedTranslation}`, async ({ page }) => {
+    await page.evaluate((value) => localStorage.setItem('god4.translation', value), storedTranslation);
+    await page.reload();
+    const translation = page.locator('#readerTranslation');
+    await expect(translation).toHaveValue('web');
+    await expect(translation.locator('option:checked')).toHaveText(/WEB.*World English Bible Protestant Edition/);
+    await expect(translation.locator('option[value="demo-local"]')).toHaveCount(0);
+    await expect(page.locator('#readerContent [data-translation-id="web"]')).not.toHaveCount(0);
+    expect(await page.evaluate(() => localStorage.getItem('god4.translation'))).toBe('web');
+    await page.reload();
+    await expect(translation).toHaveValue('web');
+  });
+}
+
+test('Reader offers real translations while retaining demo fixtures', async ({ page }) => {
+  const ids = await page.locator('#readerTranslation option').evaluateAll((options) => options.map((option) => option.value));
+  expect(ids).toEqual(['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv']);
+  expect(await page.evaluate(() => BibleData.getVerse('demo-local', 'john', 1, 1).text)).toBeTruthy();
 });
 
 test('WEB data is complete, attributed, searchable, and selectable', async ({ page }) => {
@@ -772,7 +786,7 @@ test('reader read-aloud controls speak only chapter verses and manage playback',
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
   });
   await page.goto('/');
-  await page.locator('#readerTranslation').selectOption('demo-local');
+  await page.locator('#readerTranslation').selectOption('web');
 
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
@@ -830,7 +844,7 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
   });
   await page.goto('/');
-  await page.locator('#readerTranslation').selectOption('demo-local');
+  await page.locator('#readerTranslation').selectOption('web');
 
   await expect(page.locator('#readAloudSpeed option')).toHaveText(['50%', '75%', '100%', '125%', '150%', '175%', '200%', '225%', '250%']);
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1');
@@ -940,6 +954,34 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
 
   await page.getByRole('button', { name: 'Reader' }).click();
   await expect(reader).toHaveClass(/active/);
+});
+
+test('saved-verses drawer and fullscreen Reader keep keyboard focus and close with Escape', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#heroFav').click();
+  const savedButton = page.locator('.saved-pill');
+  await savedButton.click();
+  const tray = page.locator('#tray');
+  const closeTray = page.locator('#closeTray');
+  await expect(tray).toHaveAttribute('aria-hidden', 'false');
+  await expect(closeTray).toBeFocused();
+  await closeTray.press('Shift+Tab');
+  await expect(tray.getByRole('button', { name: 'Remove' })).toBeFocused();
+  await tray.getByRole('button', { name: 'Remove' }).press('Tab');
+  await expect(closeTray).toBeFocused();
+  await closeTray.press('Escape');
+  await expect(tray).toHaveAttribute('aria-hidden', 'true');
+  await expect(savedButton).toBeFocused();
+
+  const fullscreen = page.locator('#fullscreenBtn');
+  await fullscreen.click();
+  const overlay = page.locator('#fsOverlay');
+  const exit = overlay.getByRole('button', { name: 'Exit Fullscreen' });
+  await expect(overlay).toHaveAttribute('aria-hidden', 'false');
+  await expect(exit).toBeFocused();
+  await exit.press('Escape');
+  await expect(overlay).toHaveAttribute('aria-hidden', 'true');
+  await expect(fullscreen).toBeFocused();
 });
 
 test('Compare follows the Reader current passage and translation choices from BibleData', async ({ page }) => {
@@ -1708,12 +1750,12 @@ test('ordinal Bible book names normalize to numbered metadata books', async ({ p
 
 test('manual verse selector updates with the chapter and focuses the selected verse', async ({ page }) => {
   await page.goto('/');
-  await page.locator('#readerTranslation').selectOption('demo-local');
+  await page.locator('#readerTranslation').selectOption('web');
   await page.locator('#bookSelect').selectOption('genesis');
   await page.locator('#chapterSelect').selectOption('1');
 
   const chapterOneVerseOptionCount = await page.evaluate(() =>
-    BibleData.getChapter('demo-local', 'genesis', 1).verses.length + 1
+    BibleData.getChapter('web', 'genesis', 1).verses.length + 1
   );
   await expect(page.locator('#verseSelect option')).toHaveCount(chapterOneVerseOptionCount);
 
@@ -1724,7 +1766,7 @@ test('manual verse selector updates with the chapter and focuses the selected ve
   await expect(page.locator('#verseSelect')).toHaveValue('');
 
   const chapterTwoVerseOptionCount = await page.evaluate(() =>
-    BibleData.getChapter('demo-local', 'genesis', 2).verses.length + 1
+    BibleData.getChapter('web', 'genesis', 2).verses.length + 1
   );
   await expect(page.locator('#verseSelect option')).toHaveCount(chapterTwoVerseOptionCount);
 });
@@ -2293,3 +2335,35 @@ test('unified Reader audio controls fit the narrow viewport without horizontal o
   await expect(page.locator('#wordStudyPanel')).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(600);
 });
+
+test('Reading Plan starts empty and saves completion and undo across reloads', async ({ page }) => {
+  await page.getByRole('button', { name: 'Plan', exact: true }).click();
+  const firstDay = page.getByRole('button', { name: 'Day 1: Matthew 1-2', exact: true });
+  await expect(page.locator('#planDone')).toHaveText('0 of 30 days');
+  await expect(page.locator('#planPct')).toHaveText('0%');
+  await expect(page.locator('#planDays [aria-pressed="true"]')).toHaveCount(0);
+  await expect(firstDay).toHaveClass(/today/);
+  await firstDay.click();
+  await expect(page.locator('#planDone')).toHaveText('1 of 30 days');
+  await expect(page.locator('#planPct')).toHaveText('3%');
+  await expect(firstDay).toHaveAttribute('aria-pressed', 'true');
+  await page.reload();
+  await page.getByRole('button', { name: 'Plan', exact: true }).click();
+  await expect(firstDay).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#planDone')).toHaveText('1 of 30 days');
+  await firstDay.click();
+  await page.reload();
+  await page.getByRole('button', { name: 'Plan', exact: true }).click();
+  await expect(page.locator('#planDone')).toHaveText('0 of 30 days');
+  await expect(firstDay).toHaveAttribute('aria-pressed', 'false');
+});
+
+for (const savedProgress of ['broken-json', '{}', '[1,1,31,"2",null]']) {
+  test(`Reading Plan safely handles saved progress ${savedProgress}`, async ({ page }) => {
+    await page.evaluate((value) => localStorage.setItem('god4.plan.completedDays', value), savedProgress);
+    await page.reload();
+    await page.getByRole('button', { name: 'Plan', exact: true }).click();
+    await expect(page.locator('#planDone')).toHaveText(savedProgress.startsWith('[') ? '1 of 30 days' : '0 of 30 days');
+    await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
+  });
+}

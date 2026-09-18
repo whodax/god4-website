@@ -265,6 +265,20 @@ function renderTray(){
 }
 
 var trayOpen = false;
+function trapDialogFocus(event, dialog){
+  var focusable = Array.from(dialog.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+  if(!focusable.length) return;
+  var first = focusable[0];
+  var last = focusable[focusable.length - 1];
+  if(event.shiftKey && document.activeElement === first){
+    event.preventDefault();
+    last.focus();
+  } else if(!event.shiftKey && document.activeElement === last){
+    event.preventDefault();
+    first.focus();
+  }
+}
+
 function toggleTray(){
   trayOpen = !trayOpen;
   var tray = document.getElementById('tray');
@@ -313,6 +327,16 @@ function initializeApp(){
   }
   document.addEventListener('click', function(event){
     if(!event.target.closest('.search-translation-control')) closeSearchTranslationMenu();
+  });
+  document.addEventListener('keydown', function(event){
+    if(!trayOpen) return;
+    var tray = document.getElementById('tray');
+    if(event.key === 'Escape'){
+      event.preventDefault();
+      toggleTray();
+    } else if(event.key === 'Tab' && tray){
+      trapDialogFocus(event, tray);
+    }
   });
   var brandMark = document.getElementById('brandMark');
   if(brandMark){
