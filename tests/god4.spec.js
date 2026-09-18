@@ -2367,6 +2367,46 @@ test('Word Study supports keyboard activation, unavailable words, Escape close, 
   await expect(page.locator('#readerContent')).toContainText('John 1');
 });
 
+test('Word Study moves focus into every result state and restores it after Escape', async ({ page }) => {
+  await page.goto('/');
+  const panel = page.locator('#wordStudyPanel');
+  const heading = page.locator('#wordStudyHeading');
+  const close = page.locator('#wordStudyClose');
+  const knownWord = page.getByRole('button', { name: 'Study word beginning' }).first();
+  const unknownWord = page.getByRole('button', { name: 'Study word Nathanael' }).first();
+
+  await knownWord.click();
+  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
+  await expect(heading).toBeFocused();
+  await close.focus();
+  await close.press('Escape');
+  await expect(panel).toBeHidden();
+  await expect(knownWord).toBeFocused();
+
+  await unknownWord.click();
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('Definition not available yet.');
+  await expect(heading).toBeFocused();
+  await heading.press('Escape');
+  await expect(panel).toBeHidden();
+  await expect(unknownWord).toBeFocused();
+
+  await page.evaluate(() => {
+    window.__wordStudyLookupFailed = false;
+    WordStudyProvider.lookup = () => {
+      window.__wordStudyLookupFailed = true;
+      return Promise.reject(new Error('Lookup failed'));
+    };
+  });
+  await knownWord.click();
+  await expect.poll(() => page.evaluate(() => window.__wordStudyLookupFailed)).toBeTruthy();
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('Definition not available yet.');
+  await expect(heading).toBeFocused();
+  await close.focus();
+  await close.press('Escape');
+  await expect(panel).toBeHidden();
+  await expect(knownWord).toBeFocused();
+});
+
 test('unified Reader audio controls fit the narrow viewport without horizontal overflow', async ({ page }) => {
   await page.setViewportSize({ width: 600, height: 800 });
   await page.goto('/');

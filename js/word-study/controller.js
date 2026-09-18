@@ -35,6 +35,8 @@ var WordStudyController = (function createWordStudyController(){
     view.related.textContent = state === 'available' && Array.isArray(result.relatedWords) && result.relatedWords.length ? 'Related words: ' + result.relatedWords.join(', ') : '';
     view.source.textContent = state === 'available' ? 'Public Domain Word Study' : '';
     view.status.textContent = state === 'loading' ? 'Looking up ' + context.displayWord + '.' : 'Studying ' + context.displayWord + ', ' + context.bookName + ' ' + context.chapter + ':' + context.verse + '.';
+    var heading = document.getElementById('wordStudyHeading');
+    if(heading) heading.focus();
   }
 
   function clearOriginalLanguage(){
@@ -123,8 +125,6 @@ var WordStudyController = (function createWordStudyController(){
     WordStudyProvider.lookup(context).then(function(result){
       if(activeRequest !== requestId) return;
       setPanelState(result.status, context, result);
-      var heading = document.getElementById('wordStudyHeading');
-      if(heading) heading.focus();
     }).catch(function(){
       if(activeRequest !== requestId) return;
       setPanelState('unavailable', context, { message: 'Definition not available yet.' });
