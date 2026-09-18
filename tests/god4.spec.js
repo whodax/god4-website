@@ -316,6 +316,52 @@ test('Custom Search translation dropdown visibly selects and refreshes DBY', asy
   await expect(results.locator('.result-card, .search-more, .search-status, .no-results')).toHaveCount(0);
 });
 
+test('Custom Search translation dropdown supports keyboard focus, navigation, selection, and Escape', async ({ page }) => {
+  await page.goto('/');
+  const toggle = page.locator('#searchTranslationToggle');
+  const menu = page.locator('#searchTranslationMenu');
+  const option = (id) => menu.locator(`[data-translation-id="${id}"]`);
+
+  await toggle.focus();
+  await toggle.press('Enter');
+  await expect(menu).toBeVisible();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+  await expect(toggle).toHaveAttribute('aria-controls', 'searchTranslationMenu');
+  await expect(option('web')).toBeFocused();
+
+  await option('web').press('ArrowDown');
+  await expect(option('asv')).toBeFocused();
+  await option('asv').press('End');
+  await expect(option('gnv')).toBeFocused();
+  await option('gnv').press('ArrowUp');
+  await expect(option('rv')).toBeFocused();
+  await option('rv').press('Home');
+  await expect(option('web')).toBeFocused();
+  await option('web').press('Escape');
+  await expect(menu).toBeHidden();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+  await expect(toggle).toBeFocused();
+  await expect(page.locator('#searchTranslation')).toHaveValue('web');
+
+  await toggle.press(' ');
+  await expect(option('web')).toBeFocused();
+  await option('web').press('ArrowDown');
+  await option('asv').press(' ');
+  await expect(menu).toBeHidden();
+  await expect(toggle).toBeFocused();
+  await expect(toggle).toContainText('ASV');
+  await expect(option('asv')).toHaveAttribute('aria-selected', 'true');
+  await expect(page.locator('#searchTranslation')).toHaveValue('asv');
+
+  await toggle.press('Enter');
+  await expect(option('asv')).toBeFocused();
+  await option('asv').press('End');
+  await option('gnv').press('Enter');
+  await expect(menu).toBeHidden();
+  await expect(toggle).toContainText('GNV');
+  await expect(option('gnv')).toHaveAttribute('aria-selected', 'true');
+});
+
 test('Bible data interface exposes the current local dataset', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('#readerTranslation')).toHaveValue('web');
