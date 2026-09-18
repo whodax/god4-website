@@ -891,6 +891,9 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
   });
   await page.goto('/');
   await page.locator('#readerTranslation').selectOption('web');
+  const expectedWebVerse = await page.evaluate(() => (
+    BibleData.getVerse('web', 'john', 1, 2).text
+  ));
 
   await expect(page.locator('#readAloudSpeed option')).toHaveText(['50%', '75%', '100%', '125%', '150%', '175%', '200%', '225%', '250%']);
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1');
@@ -918,14 +921,19 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
   });
 
   const cancelsBeforeVerse = await page.evaluate(() => window.__speech.cancels);
-  await page.locator('#readerContent [data-verse-speech="2"]').click();
+  const verse = page.locator('#readerContent .reader-verse[data-book-id="john"][data-chapter="1"][data-verse-number="2"]');
+  await expect(verse).toHaveAttribute('data-translation-id', 'web');
+  await expect(verse).toHaveAttribute('data-verse-text', expectedWebVerse);
+  await expect(verse).toContainText(expectedWebVerse);
+  const verseSpeech = verse.locator('[data-verse-speech="2"]');
+  await verseSpeech.click();
   expect(await page.evaluate(() => ({
     utterance: window.__speech.spoken[1],
     cancels: window.__speech.cancels,
     storedSpeed: localStorage.getItem('god4.speech.speed'),
     storedVoice: localStorage.getItem('god4.speech.voice')
   }))).toEqual({
-    utterance: expect.objectContaining({ text: 'He was with God in the beginning.' }),
+    utterance: expect.objectContaining({ text: expectedWebVerse }),
     cancels: cancelsBeforeVerse + 1,
     storedSpeed: '1.5',
     storedVoice: 'Samantha'
