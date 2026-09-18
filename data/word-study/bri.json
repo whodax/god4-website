@@ -7,6 +7,14 @@
         {
           "text": "Same as Brier.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A plant with a slender woody stem bearing stout prickles; especially, species of Rosa, Rubus, and Smilax.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fig.: Anything sharp or unpleasant to the feelings. The thorns and briers of reproof. Cowper. Brier root, the root of the southern Smilax laurifolia and S. Walleri; -- used for tobacco pipes. rotundifolia, etc.) -- Sweet brier (Rosa rubiginosa). See Sweetbrier.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -235,7 +243,7 @@
       ],
       "relatedWords": []
     },
-    "bricabracbricabracbricabrac": {
+    "bricabrac": {
       "word": "BRIC-A BRAC; BRIC-A-BRAC; BRIC A BRAC",
       "definitions": [
         {
@@ -243,7 +251,62 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "art object",
+        "bauble",
+        "bibelot",
+        "brainchild",
+        "chaff",
+        "chicken feed",
+        "chickenshit",
+        "classic",
+        "composition",
+        "creation",
+        "design",
+        "details",
+        "fribble",
+        "froth",
+        "gaud",
+        "gewgaw",
+        "gimcrack",
+        "gimcrackery",
+        "grotesque",
+        "kickshaw",
+        "kitsch",
+        "knack",
+        "knickknack",
+        "knickknackery",
+        "master",
+        "masterpiece",
+        "masterwork",
+        "minutiae",
+        "mobile",
+        "museum piece",
+        "nude",
+        "old master",
+        "pasticcio",
+        "pastiche",
+        "peanuts",
+        "piece",
+        "piece of virtu",
+        "rubbish",
+        "small beer",
+        "small change",
+        "stabile",
+        "statue",
+        "still life",
+        "study",
+        "toy",
+        "trash",
+        "trifles",
+        "trinket",
+        "trivia",
+        "trumpery",
+        "virtu",
+        "whim-wham",
+        "work",
+        "work of art"
+      ]
     },
     "brick": {
       "word": "BRICK",
@@ -509,6 +572,16 @@
       ],
       "relatedWords": []
     },
+    "brickmaker": {
+      "word": "BRICKMAKER",
+      "definitions": [
+        {
+          "text": "One whose occupation is to make bricks.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "brickwork": {
       "word": "BRICKWORK",
       "definitions": [
@@ -665,7 +738,17 @@
       ],
       "relatedWords": []
     },
-    "bridemaidbrideman": {
+    "bridemaid": {
+      "word": "BRIDEMAID; BRIDEMAN",
+      "definitions": [
+        {
+          "text": "See Bridesmaid, Bridesman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brideman": {
       "word": "BRIDEMAID; BRIDEMAN",
       "definitions": [
         {
@@ -1149,7 +1232,7 @@
         "ward"
       ]
     },
-    "bridgeingbridging": {
+    "bridgeing": {
       "word": "BRIDGEING; BRIDGING",
       "definitions": [
         {
@@ -1209,6 +1292,16 @@
         {
           "text": "Full of bridges. [R.] Sherwood.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bridging": {
+      "word": "BRIDGEING; BRIDGING",
+      "definitions": [
+        {
+          "text": "The system of bracing used between floor or other timbers to distribute the weight. Bridging joist. Same as Binding joist.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1861,7 +1954,7 @@
       ],
       "relatedWords": []
     },
-    "brierbriar": {
+    "brier": {
       "word": "BRIER; BRIAR",
       "definitions": [
         {
@@ -1873,7 +1966,51 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "adherent",
+        "adhesive",
+        "barnacle",
+        "bramble",
+        "brier bush",
+        "bristle",
+        "bulldog",
+        "burr",
+        "bush",
+        "cactus",
+        "catchweed",
+        "cement",
+        "cleavers",
+        "decal",
+        "decalcomania",
+        "glue",
+        "goose grass",
+        "gunk",
+        "leech",
+        "limpet",
+        "molasses",
+        "mucilage",
+        "needle",
+        "nettle",
+        "paste",
+        "pine needle",
+        "plaster",
+        "prickle",
+        "quill",
+        "remora",
+        "scrub",
+        "shrub",
+        "shrubbery",
+        "spicule",
+        "spiculum",
+        "spike",
+        "spikelet",
+        "spine",
+        "sticker",
+        "syrup",
+        "thistle",
+        "thorn",
+        "yucca"
+      ]
     },
     "briered": {
       "word": "BRIERED",
@@ -2158,6 +2295,10 @@
       "word": "BRIGHT",
       "definitions": [
         {
+          "text": "See Brite, v. i.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "Radiating or reflecting light; shedding or having much light; shining; luminous; not dark. The sun was bright o'erhead. Longfellow. The earth was dark, but the heavens were bright. Drake. The public places were as bright as at noonday. Macaulay.",
           "partOfSpeech": "adjective"
         },
@@ -2196,6 +2337,10 @@
         {
           "text": "Brightly. Chaucer. I say it is the moon that shines so bright. Shak.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "To be or become overripe, as wheat, barley, or hops. [Prov. Eng.]",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": [
@@ -4560,7 +4705,7 @@
       ],
       "relatedWords": []
     },
-    "britebright": {
+    "brite": {
       "word": "BRITE; BRIGHT",
       "definitions": [
         {

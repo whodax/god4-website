@@ -505,7 +505,17 @@
       ],
       "relatedWords": []
     },
-    "elaineelain": {
+    "elaine": {
+      "word": "ELAINE; ELAIN",
+      "definitions": [
+        {
+          "text": "Same as Olein.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "elain": {
       "word": "ELAINE; ELAIN",
       "definitions": [
         {
@@ -1729,6 +1739,10 @@
         {
           "text": "A clergyman authorized to administer all the sacraments; as, a traveling elder. Presiding elder (Meth. Ch.), an elder commissioned by a bishop to have the oversight of the churches and preachers in a certain district. session. Schaff.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A genus of shrubs (Sambucus) having broad umbels of white flowers, and small black or red berries. common European species (S. nigra) forms a small tree. The red- berried elder is S. pubens. The berries are diaphoretic and aperient. Box elder. See under 1st Box.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -2146,7 +2160,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Born or living first, or before the others, as a son, daughter, brother, etc.; first in origin. See Elder. \"My lady's eldest son.\" Shak. Their eldest historians are of suspected credit. Bp. Stillingfleet.",
+          "text": "Born or living first, or before the others, as a son, daughter, brother, etc.; first in origin. See Elder. \"My lady's eldest son.\" Shak. Their eldest historians are of suspected credit. Bp. Stillingfleet. Eldest hand (Card Playing), the player on the dealer's left hand. R. A. Proctor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2845,7 +2859,21 @@
       ],
       "relatedWords": []
     },
-    "electreelecter": {
+    "electre": {
+      "word": "ELECTRE; ELECTER",
+      "definitions": [
+        {
+          "text": "Amber. See Electrum. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A metallic substance compounded of gold and silver; an alloy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "electer": {
       "word": "ELECTRE; ELECTER",
       "definitions": [
         {
@@ -2879,7 +2907,7 @@
       ],
       "relatedWords": []
     },
-    "electricelectrical": {
+    "electric": {
       "word": "ELECTRIC; ELECTRICAL",
       "definitions": [
         {
@@ -2893,13 +2921,7 @@
         {
           "text": "Electrifying; thrilling; magnetic. \"Electric Pindar.\" Mrs. Browning. Electric atmosphere, or Electric aura. See under Aura. African catfish of the genus Malapterurus (esp. M. electricus of the Nile). They have a large electrical organ and are able to give powerful shocks; -- called also sheathfish. closed circuit formed of conducting substances, or passing by means of conductors from one body to another which is in a different electrical state. fresh-water fish of the genus Gymnotus (G. electricus), from two to five feet in length, capable of giving a violent electric shock. See Gymnotus. by means of which it can give an electrical shock. The best known kinds are the torpedo, the gymnotus, or electrical eel, and the electric cat. See Torpedo, and Gymnotus. regarded as forming, by an analogy with optical phenomena, an image of certain other electrical points, and used in the solution of electrical problems. Sir W. Thomson. which in passing through a resisting medium heats it to incandescence or burns it. See under Carbon. collecting, or exciting, electricity, as by friction. 2. multiplying writings. It has a puncturing needle driven at great speed by a very small magneto-electric engine on the penhandle. cars is driven by an electric current.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "electric": {
-      "word": "ELECTRIC",
-      "definitions": [
+        },
         {
           "text": "A nonconductor of electricity, as amber, glass, resin, etc., employed to excite or accumulate electricity.",
           "partOfSpeech": "noun"
@@ -2962,6 +2984,93 @@
         "tube",
         "underground",
         "way train"
+      ]
+    },
+    "electrical": {
+      "word": "ELECTRIC; ELECTRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to electricity; consisting of, containing, derived from, or produced by, electricity; as, electric power or virtue; an electric jar; electric effects; an electric spark.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Capable of occasioning the phenomena of electricity; as, an electric or electrical machine or substance.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Electrifying; thrilling; magnetic. \"Electric Pindar.\" Mrs. Browning. Electric atmosphere, or Electric aura. See under Aura. African catfish of the genus Malapterurus (esp. M. electricus of the Nile). They have a large electrical organ and are able to give powerful shocks; -- called also sheathfish. closed circuit formed of conducting substances, or passing by means of conductors from one body to another which is in a different electrical state. fresh-water fish of the genus Gymnotus (G. electricus), from two to five feet in length, capable of giving a violent electric shock. See Gymnotus. by means of which it can give an electrical shock. The best known kinds are the torpedo, the gymnotus, or electrical eel, and the electric cat. See Torpedo, and Gymnotus. regarded as forming, by an analogy with optical phenomena, an image of certain other electrical points, and used in the solution of electrical problems. Sir W. Thomson. which in passing through a resisting medium heats it to incandescence or burns it. See under Carbon. collecting, or exciting, electricity, as by friction. 2. multiplying writings. It has a puncturing needle driven at great speed by a very small magneto-electric engine on the penhandle. cars is driven by an electric current.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "agitating",
+        "battery-powered",
+        "breathtaking",
+        "charged",
+        "cliff-hanging",
+        "disquieting",
+        "distracting",
+        "disturbing",
+        "dynamoelectric",
+        "electric",
+        "electric-powered",
+        "electrified",
+        "electrifying",
+        "electrochemical",
+        "electrodynamic",
+        "electrokinetic",
+        "electromechanical",
+        "electrometric",
+        "electromotive",
+        "electropneumatic",
+        "electrostatic",
+        "electrothermal",
+        "exciting",
+        "exhilarating",
+        "galvanic",
+        "galvanometric",
+        "heady",
+        "heart-expanding",
+        "heart-stirring",
+        "heart-swelling",
+        "heart-thrilling",
+        "hydroelectric",
+        "impressive",
+        "inflammatory",
+        "intoxicating",
+        "jarring",
+        "jolting",
+        "maddening",
+        "mind-blowing",
+        "moving",
+        "overcoming",
+        "overmastering",
+        "overpowering",
+        "overwhelming",
+        "perturbing",
+        "photoelectric",
+        "piezoelectric",
+        "piquant",
+        "provocative",
+        "provoking",
+        "ravishing",
+        "soul-stirring",
+        "spirit-stirring",
+        "static",
+        "stimulating",
+        "stimulative",
+        "stirring",
+        "striking",
+        "suspenseful",
+        "suspensive",
+        "tantalizing",
+        "telling",
+        "thrilling",
+        "thrilly",
+        "troubling",
+        "unsettling",
+        "upsetting",
+        "voltaic"
       ]
     },
     "electrically": {
@@ -3398,6 +3507,16 @@
       ],
       "relatedWords": []
     },
+    "electrocute": {
+      "word": "ELECTROCUTE",
+      "definitions": [
+        {
+          "text": "To execute or put to death by electricity.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "electrode": {
       "word": "ELECTRODE",
       "definitions": [
@@ -3408,7 +3527,17 @@
       ],
       "relatedWords": []
     },
-    "electrodynamicelectrodynamical": {
+    "electrodynamic": {
+      "word": "ELECTRO-DYNAMIC; ELECTRO-DYNAMICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the movements or force of electric or galvanic currents; dependent on electric force.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "electrodynamical": {
       "word": "ELECTRO-DYNAMIC; ELECTRO-DYNAMICAL",
       "definitions": [
         {
@@ -3656,6 +3785,26 @@
       ],
       "relatedWords": []
     },
+    "electrolytic": {
+      "word": "ELECTROLYTIC; ELECTROLYTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to electrolysis; as, electrolytic action.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "electrolytical": {
+      "word": "ELECTROLYTIC; ELECTROLYTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to electrolysis; as, electrolytic action.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "electrolyzable": {
       "word": "ELECTROLYZABLE",
       "definitions": [
@@ -3804,7 +3953,17 @@
       ],
       "relatedWords": []
     },
-    "electrometricelectrometrical": {
+    "electrometric": {
+      "word": "ELECTRO-METRIC; ELECTRO-METRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to electrometry; made by means of electrometer; as, an electrometrical experiment.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "electrometrical": {
       "word": "ELECTRO-METRIC; ELECTRO-METRICAL",
       "definitions": [
         {
@@ -4068,7 +4227,17 @@
         "silver plate"
       ]
     },
-    "electropoionelectropoionfluid": {
+    "electropoion": {
+      "word": "ELECTROPOION; ELECTROPOION FLUID",
+      "definitions": [
+        {
+          "text": "An exciting and depolarizing acid solution used in certain cells or batteries, as the Grenet battery. Electropoion is best prepared by mixing one gallon of concentrated sulphuric acid diluted with three gallons of water, with a solution of six pounds of potassium bichromate in two gallons of boiling water. It should be used cold.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "electropoionfluid": {
       "word": "ELECTROPOION; ELECTROPOION FLUID",
       "definitions": [
         {
@@ -4114,7 +4283,17 @@
       ],
       "relatedWords": []
     },
-    "electropuncturationelectropuncturing": {
+    "electropuncturation": {
+      "word": "ELECTRO-PUNCTURATION; ELECTRO-PUNCTURING",
+      "definitions": [
+        {
+          "text": "See Electropuncture.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "electropuncturing": {
       "word": "ELECTRO-PUNCTURATION; ELECTRO-PUNCTURING",
       "definitions": [
         {
@@ -4316,6 +4495,10 @@
         {
           "text": "A facsimile plate made by electrotypy for use in printing; also, an impression or print from such plate. Also used adjectively. silver, or the like, produced by the action of an electrical current upon a plate of metal and a wax mold suspended in an acid bath and connected with opposite poles of the battery. It is backed up with a solid filling of type metal.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make facsimile plates of by the electrotype process; as to electrotype a page of type, a book, etc. See Electrotype, n.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -4345,6 +4528,16 @@
       "definitions": [
         {
           "text": "The act or the process of making electrotypes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "electrotypy": {
+      "word": "ELECTROTYPY",
+      "definitions": [
+        {
+          "text": "The process of producing electrotype plates. See Note under Electrotype, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4473,7 +4666,206 @@
         "without charge"
       ]
     },
-    "eleganceelegancy": {
+    "elegance": {
+      "word": "ELEGANCE; ELEGANCY",
+      "definitions": [
+        {
+          "text": "The state or quality of being elegant; beauty as resulting from choice qualities and the complete absence of what deforms or impresses unpleasantly; grace given by art or practice; fine polish; refinement; -- said of manners, language, style, form, architecture, etc. That grace that elegance affords. Drayton. The endearing elegance of female friendship. Johnson. A trait of native elegance, seldom seen in the masculine character after childhood or early youth, was shown in the General's fondness for the sight and fragrance of flowers. Hawthorne.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is elegant; that which is tasteful and highly attractive. The beautiful wildness of nature, without the nicer elegancies of art. Spectator. beauty, which is usually produced by art, skill, or training; as, elegance of manners, composition, handwriting, etc.; elegant furniture; an elegant house, etc. Grace, as the word is here used, refers to bodily movements, and is a lower order of beauty. It may be a natural gift; thus, the manners of a peasant girl may be graceful, but can hardly be called elegant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Babylonian splendor",
+        "acquired taste",
+        "amenities",
+        "appreciation of excellence",
+        "arabesque",
+        "attractiveness",
+        "baroque",
+        "baroqueness",
+        "beauteousness",
+        "beautifulness",
+        "beauty",
+        "beauty unadorned",
+        "bloom",
+        "breeding",
+        "brilliance",
+        "charm",
+        "cheeseparing",
+        "chic",
+        "chinoiserie",
+        "choiceness",
+        "civilities",
+        "civility",
+        "civilized taste",
+        "civilizedness",
+        "clothes-consciousness",
+        "comity",
+        "convention",
+        "courtliness",
+        "coxcombry",
+        "cultivated taste",
+        "cultivation",
+        "culture",
+        "daintiness",
+        "dandyism",
+        "decencies",
+        "decency",
+        "decorousness",
+        "decorum",
+        "delicacy",
+        "dignity",
+        "diplomatic code",
+        "discrimination",
+        "ease",
+        "economy",
+        "economy of assumption",
+        "economy of means",
+        "elaborateness",
+        "elegancies",
+        "etiquette",
+        "euphemism",
+        "euphuism",
+        "excellence",
+        "exquisite manners",
+        "exquisiteness",
+        "facility",
+        "fanciness",
+        "fastidiousness",
+        "fineness",
+        "finesse",
+        "flamboyance",
+        "floridity",
+        "floridness",
+        "flow",
+        "floweriness",
+        "fluency",
+        "foppery",
+        "foppishness",
+        "formalism",
+        "formalities",
+        "formality",
+        "frugality",
+        "genteelness",
+        "gentility",
+        "gentlemanlikeness",
+        "gentlemanliness",
+        "gentleness",
+        "glory",
+        "glow",
+        "good breeding",
+        "good form",
+        "good manners",
+        "good taste",
+        "goody-goodness",
+        "goody-goodyism",
+        "gorgeousness",
+        "grace",
+        "gracefulness",
+        "gracility",
+        "graciosity",
+        "graciousness",
+        "grandeur",
+        "grandiosity",
+        "grandness",
+        "handsomeness",
+        "imposingness",
+        "impressiveness",
+        "jauntiness",
+        "ladylikeness",
+        "lavishness",
+        "law of parsimony",
+        "loveliness",
+        "lushness",
+        "luxuriance",
+        "luxuriousness",
+        "luxury",
+        "magnificence",
+        "majesty",
+        "manners",
+        "modesty",
+        "mores",
+        "moresque",
+        "nattiness",
+        "natural politeness",
+        "neatness",
+        "niceness",
+        "nicety",
+        "nobility",
+        "ostentation",
+        "overelaborateness",
+        "overelegance",
+        "overniceness",
+        "overornamentation",
+        "overpreciseness",
+        "overrefinement",
+        "parsimoniousness",
+        "parsimony",
+        "pedantry",
+        "pinching",
+        "plushness",
+        "poetry",
+        "point of etiquette",
+        "polish",
+        "politeness",
+        "politesse",
+        "poshness",
+        "preciosity",
+        "preciousness",
+        "precisianism",
+        "prettiness",
+        "proprieties",
+        "propriety",
+        "protocol",
+        "proudness",
+        "pudency",
+        "pudicity",
+        "pulchritude",
+        "punctilio",
+        "purism",
+        "quality",
+        "quiet good manners",
+        "refinement",
+        "resplendence",
+        "richness",
+        "ritziness",
+        "rococo",
+        "rules of conduct",
+        "scrimping",
+        "seemliness",
+        "shame",
+        "sharpness",
+        "skimping",
+        "sleekness",
+        "smartness",
+        "smoothness",
+        "social code",
+        "social conduct",
+        "social graces",
+        "social procedures",
+        "social usage",
+        "sophistication",
+        "spiffiness",
+        "splendidness",
+        "splendiferousness",
+        "splendor",
+        "state",
+        "stateliness",
+        "stinting",
+        "style",
+        "subtlety",
+        "sumptuousness",
+        "taste",
+        "tastefulness",
+        "the beautiful",
+        "trimness"
+      ]
+    },
+    "elegancy": {
       "word": "ELEGANCE; ELEGANCY",
       "definitions": [
         {
@@ -5024,7 +5416,17 @@
       ],
       "relatedWords": []
     },
-    "elemefigselemifigs": {
+    "elemefigs": {
+      "word": "ELEME FIGS; ELEMI FIGS",
+      "definitions": [
+        {
+          "text": "A kind of figs of superior quality.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "elemifigs": {
       "word": "ELEME FIGS; ELEMI FIGS",
       "definitions": [
         {
@@ -5769,7 +6171,17 @@
       ],
       "relatedWords": []
     },
-    "elenchticelenchtical": {
+    "elenchtic": {
+      "word": "ELENCHTIC; ELENCHTICAL",
+      "definitions": [
+        {
+          "text": "Same as Elenctic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "elenchtical": {
       "word": "ELENCHTIC; ELENCHTICAL",
       "definitions": [
         {
@@ -5789,7 +6201,17 @@
       ],
       "relatedWords": []
     },
-    "elencticelenctical": {
+    "elenctic": {
+      "word": "ELENCTIC; ELENCTICAL",
+      "definitions": [
+        {
+          "text": "Serving to refute; refutative; -- applied to indirect modes of proof, and opposed to deictic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "elenctical": {
       "word": "ELENCTIC; ELENCTICAL",
       "definitions": [
         {
@@ -6276,7 +6698,17 @@
         "wooden"
       ]
     },
-    "elephantoidelephantoidal": {
+    "elephantoid": {
+      "word": "ELEPHANTOID; ELEPHANTOIDAL",
+      "definitions": [
+        {
+          "text": "Resembling an elephant in form or appearance.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "elephantoidal": {
       "word": "ELEPHANTOID; ELEPHANTOIDAL",
       "definitions": [
         {
@@ -8606,6 +9038,10 @@
         {
           "text": "A large deer, of several species. The European elk (Alces machlis or Cervus alces) is closely allied to the American moose. The American elk, or wapiti (Cervus Canadensis), is closely related to the European stag. See Moose, and Wapiti. Irish elk (Paleon.), a large, extinct, Quaternary deer (Cervus giganteus) with widely spreading antlers. Its remains have been found beneath the peat of swamps in Ireland and England. See Illustration in Appendix; also Illustration of Antler.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The European wild or whistling swan (Cygnus ferus).",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -8644,7 +9080,7 @@
         "wildebeest"
       ]
     },
-    "elkelke": {
+    "elke": {
       "word": "ELK; ELKE",
       "definitions": [
         {
@@ -8775,7 +9211,37 @@
       ],
       "relatedWords": []
     },
-    "ellengeellingeellengenessellingeness": {
+    "ellenge": {
+      "word": "ELLENGE; ELLINGE; ELLENGENESS; ELLINGENESS",
+      "definitions": [
+        {
+          "text": "See Elenge, Elengeness. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ellinge": {
+      "word": "ELLENGE; ELLINGE; ELLENGENESS; ELLINGENESS",
+      "definitions": [
+        {
+          "text": "See Elenge, Elengeness. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ellengeness": {
+      "word": "ELLENGE; ELLINGE; ELLENGENESS; ELLINGENESS",
+      "definitions": [
+        {
+          "text": "See Elenge, Elengeness. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ellingeness": {
       "word": "ELLENGE; ELLINGE; ELLENGENESS; ELLINGENESS",
       "definitions": [
         {
@@ -8906,7 +9372,52 @@
       ],
       "relatedWords": []
     },
-    "ellipsoidellipsoidal": {
+    "ellipsoid": {
+      "word": "ELLIPSOID",
+      "definitions": [
+        {
+          "text": "A solid, all plane sections of which are ellipses or circles. See Conoid, n., 2 (a). each at right angles to the other two, and each dividing the solid into two equal and symmetrical parts. The lines of meeting of these principal sections are the axes, or principal diameters of the ellipsoid. The point where the three planes meet is the center. Ellipsoid of revolution, a spheroid; a solid figure generated by the revolution of an ellipse about one of its axes. It is called a prolate spheroid, or prolatum, when the ellipse is revolved about the major axis, and an oblate spheroid, or oblatum, when it is revolved about the minor axis.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, or shaped like, an ellipsoid; as, ellipsoid or ellipsoidal form.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ball",
+        "balloon",
+        "bladder",
+        "blob",
+        "boll",
+        "bolus",
+        "bubble",
+        "bulb",
+        "bulbil",
+        "bulblet",
+        "geoid",
+        "globe",
+        "globelet",
+        "globoid",
+        "globule",
+        "glomerulus",
+        "gob",
+        "gobbet",
+        "knob",
+        "knot",
+        "oblate spheroid",
+        "orb",
+        "orbit",
+        "orblet",
+        "pellet",
+        "prolate spheroid",
+        "rondure",
+        "sphere",
+        "spheroid",
+        "spherule"
+      ]
+    },
+    "ellipsoidal": {
       "word": "ELLIPSOID; ELLIPSOIDAL",
       "definitions": [
         {
@@ -8914,9 +9425,44 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "bell-like",
+        "bell-shaped",
+        "bulblike",
+        "bulbous",
+        "campaniform",
+        "campanular",
+        "campanulate",
+        "ellipsoid",
+        "elliptic",
+        "global",
+        "globate",
+        "globe-shaped",
+        "globed",
+        "globelike",
+        "globoid",
+        "globose",
+        "globular",
+        "hemispheric",
+        "obovoid",
+        "orb",
+        "orbed",
+        "orbic",
+        "orbicular",
+        "orbiculate",
+        "orblike",
+        "orby",
+        "ovoid",
+        "parabolic",
+        "saucer-shaped",
+        "sphere-shaped",
+        "spherelike",
+        "spheric",
+        "spheriform",
+        "spheroid"
+      ]
     },
-    "ellipticelliptical": {
+    "elliptic": {
       "word": "ELLIPTIC; ELLIPTICAL",
       "definitions": [
         {
@@ -8928,7 +9474,167 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Spartan",
+        "abbreviated",
+        "abridged",
+        "abstracted",
+        "aposiopestic",
+        "bell-like",
+        "bell-shaped",
+        "bobbed",
+        "brief",
+        "brusque",
+        "campaniform",
+        "campanular",
+        "campanulate",
+        "capsule",
+        "capsulized",
+        "clipped",
+        "close",
+        "compact",
+        "compendious",
+        "compressed",
+        "concise",
+        "condensed",
+        "contracted",
+        "crisp",
+        "cropped",
+        "curt",
+        "curtailed",
+        "cut",
+        "cut short",
+        "digested",
+        "docked",
+        "elided",
+        "ellipsoid",
+        "elliptical",
+        "elongated",
+        "epigrammatic",
+        "gnomic",
+        "laconic",
+        "mowed",
+        "mown",
+        "nipped",
+        "oblong",
+        "oblongated",
+        "oblongitudinal",
+        "parabolic",
+        "pithy",
+        "pointed",
+        "pollard",
+        "polled",
+        "pruned",
+        "reaped",
+        "rectangular",
+        "reserved",
+        "saucer-shaped",
+        "sententious",
+        "shaved",
+        "sheared",
+        "short",
+        "short and sweet",
+        "short-cut",
+        "shortened",
+        "snub",
+        "snubbed",
+        "succinct",
+        "summary",
+        "synopsized",
+        "taciturn",
+        "terse",
+        "tight",
+        "to the point",
+        "trimmed",
+        "truncated"
+      ]
+    },
+    "elliptical": {
+      "word": "ELLIPTIC; ELLIPTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an ellipse; having the form of an ellipse; oblong, with rounded ends. The planets move in elliptic orbits. Cheyne.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having a part omitted; as, an elliptical phrase. Elliptic chuck. See under Chuck.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Spartan",
+        "abbreviated",
+        "abridged",
+        "abstracted",
+        "aposiopestic",
+        "bell-like",
+        "bell-shaped",
+        "bobbed",
+        "brief",
+        "brusque",
+        "campaniform",
+        "campanular",
+        "campanulate",
+        "capsule",
+        "capsulized",
+        "clipped",
+        "close",
+        "compact",
+        "compendious",
+        "compressed",
+        "concise",
+        "condensed",
+        "contracted",
+        "crisp",
+        "cropped",
+        "curt",
+        "curtailed",
+        "cut",
+        "cut short",
+        "digested",
+        "docked",
+        "elided",
+        "ellipsoid",
+        "elliptic",
+        "elongated",
+        "epigrammatic",
+        "gnomic",
+        "laconic",
+        "mowed",
+        "mown",
+        "nipped",
+        "oblong",
+        "oblongated",
+        "oblongitudinal",
+        "parabolic",
+        "pithy",
+        "pointed",
+        "pollard",
+        "polled",
+        "pruned",
+        "reaped",
+        "rectangular",
+        "reserved",
+        "saucer-shaped",
+        "sententious",
+        "shaved",
+        "sheared",
+        "short",
+        "short and sweet",
+        "short-cut",
+        "shortened",
+        "snub",
+        "snubbed",
+        "succinct",
+        "summary",
+        "synopsized",
+        "taciturn",
+        "terse",
+        "tight",
+        "to the point",
+        "trimmed",
+        "truncated"
+      ]
     },
     "elliptically": {
       "word": "ELLIPTICALLY",
@@ -9165,7 +9871,17 @@
       ],
       "relatedWords": []
     },
-    "elogiumelogy": {
+    "elogium": {
+      "word": "ELOGIUM; ELOGY",
+      "definitions": [
+        {
+          "text": "The praise bestowed on a person or thing; panegyric; eulogy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "elogy": {
       "word": "ELOGIUM; ELOGY",
       "definitions": [
         {
@@ -9644,7 +10360,17 @@
       ],
       "relatedWords": []
     },
-    "elrichelritch": {
+    "elrich": {
+      "word": "ELRICH; ELRITCH",
+      "definitions": [
+        {
+          "text": "Ghastly; preternatural. Same as Eldritch. [Scot. & Local, Eng.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "elritch": {
       "word": "ELRICH; ELRITCH",
       "definitions": [
         {
@@ -10187,7 +10913,7 @@
       "word": "ELUSIVE",
       "definitions": [
         {
-          "text": "Tending to elude; using arts or deception to escape; adroitly escaping or evading; eluding the grasp; fallacious. Elusive of the bridal day, she gives Fond hopes to all, and all with",
+          "text": "Tending to elude; using arts or deception to escape; adroitly escaping or evading; eluding the grasp; fallacious. Elusive of the bridal day, she gives Fond hopes to all, and all with hopes deceives. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10219,7 +10945,7 @@
       "word": "ELUSORY",
       "definitions": [
         {
-          "text": "Tending to elude or deceive; evasive; fraudulent; fallacious;",
+          "text": "Tending to elude or deceive; evasive; fraudulent; fallacious; deceitful; deceptive.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10289,11 +11015,15 @@
         {
           "text": "Of or pertaining to certain veins of feldspathic or porphyritic rock crossing metalliferous veins in the mining districts of Cornwall; as, an elvan course.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The rock of an elvan vein, or the elvan vein itself; an elvan course.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "elvanelvanite": {
+    "elvanite": {
       "word": "ELVAN; ELVANITE",
       "definitions": [
         {
@@ -10462,20 +11192,6 @@
         {
           "text": "An obsolete or colloquial contraction of the old form hem, them. Addison.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "elevatefrsublimishighcffsublimerseesublimeaandcf": {
-      "word": "elevate, fr. sublimis high: cf. F. sublimer. See Sublime, a., and cf.",
-      "definitions": [
-        {
-          "text": "To bring by heat into the state of vapor, which, on cooling, returns again to the solid state; as, to sublimate sulphur or camphor.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To refine and exalt; to heighten; to elevate. The precepts of Christianity are . . . so apt to cleanse and sublimate the more gross and corrupt. Dr. H. More.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

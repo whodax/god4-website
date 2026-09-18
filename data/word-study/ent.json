@@ -1005,7 +1005,7 @@
         "visceral"
       ]
     },
-    "enteringedgeentrantedge": {
+    "enteringedge": {
       "word": "ENTERING EDGE; ENTRANT EDGE",
       "definitions": [
         {
@@ -1613,7 +1613,7 @@
       "word": "ENTERPRISING",
       "definitions": [
         {
-          "text": "Having a disposition for enterprise; characterized by enterprise; resolute, active or prompt to attempt; as, an",
+          "text": "Having a disposition for enterprise; characterized by enterprise; resolute, active or prompt to attempt; as, an enterprising man or firm.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1856,6 +1856,35 @@
       ],
       "relatedWords": []
     },
+    "entertaining": {
+      "word": "ENTERTAINING",
+      "definitions": [
+        {
+          "text": "Affording entertainment; pleasing; amusing; diverting.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "amusing",
+        "beguiling",
+        "comic",
+        "delightful",
+        "diverting",
+        "engaging",
+        "enjoyable",
+        "fun",
+        "funny",
+        "humorous",
+        "interesting",
+        "pleasant",
+        "pleasing",
+        "pleasurable",
+        "recreational",
+        "titillating",
+        "titillative",
+        "witty"
+      ]
+    },
     "entertainment": {
       "word": "ENTERTAINMENT",
       "definitions": [
@@ -2014,7 +2043,17 @@
       ],
       "relatedWords": []
     },
-    "enthealenthean": {
+    "entheal": {
+      "word": "ENTHEAL; ENTHEAN",
+      "definitions": [
+        {
+          "text": "Divinely inspired; wrought up to enthusiasm. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enthean": {
       "word": "ENTHEAL; ENTHEAN",
       "definitions": [
         {
@@ -2034,6 +2073,16 @@
       ],
       "relatedWords": []
     },
+    "entheastic": {
+      "word": "ENTHEASTIC",
+      "definitions": [
+        {
+          "text": "Of godlike energy; inspired.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "entheat": {
       "word": "ENTHEAT",
       "definitions": [
@@ -2044,7 +2093,17 @@
       ],
       "relatedWords": []
     },
-    "enthelminthaenthelminthes": {
+    "enthelmintha": {
+      "word": "ENTHELMINTHA; ENTHELMINTHES",
+      "definitions": [
+        {
+          "text": "Intestinal worms. See Helminthes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enthelminthes": {
       "word": "ENTHELMINTHA; ENTHELMINTHES",
       "definitions": [
         {
@@ -2495,8 +2554,12 @@
       ]
     },
     "enthusiastic": {
-      "word": "ENTHUSIASTIC",
+      "word": "ENTHUSIASTIC; ENTHUSIASTICAL",
       "definitions": [
+        {
+          "text": "Filled with enthusiasm; characterized by enthusiasm; zealous; as, an enthusiastic lover of art. \"Enthusiastical raptures.\" Calamy. A young man . . . of a visionary and enthusiastic character. W. Irving.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "An enthusiast; a zealot. [Obs.]",
           "partOfSpeech": "noun"
@@ -2655,7 +2718,7 @@
         "zippy"
       ]
     },
-    "enthusiasticenthusiastical": {
+    "enthusiastical": {
       "word": "ENTHUSIASTIC; ENTHUSIASTICAL",
       "definitions": [
         {
@@ -2665,7 +2728,17 @@
       ],
       "relatedWords": []
     },
-    "enthymematicenthymematical": {
+    "enthymematic": {
+      "word": "ENTHYMEMATIC; ENTHYMEMATICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or of the form of, an enthymeme.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enthymematical": {
       "word": "ENTHYMEMATIC; ENTHYMEMATICAL",
       "definitions": [
         {
@@ -3226,7 +3299,7 @@
       "word": "ENTITATIVE",
       "definitions": [
         {
-          "text": "Considered as pure entity; abstracted from all circumstances.",
+          "text": "Considered as pure entity; abstracted from all circumstances. Ellis.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3390,7 +3463,17 @@
       ],
       "relatedWords": []
     },
-    "entocuneiformentocuniform": {
+    "entocuneiform": {
+      "word": "ENTOCUNEIFORM; ENTOCUNIFORM",
+      "definitions": [
+        {
+          "text": "One of the bones of the tarsus. See Cuneiform.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "entocuniform": {
       "word": "ENTOCUNEIFORM; ENTOCUNIFORM",
       "definitions": [
         {
@@ -3410,7 +3493,17 @@
       ],
       "relatedWords": []
     },
-    "entodermalentodermic": {
+    "entodermal": {
+      "word": "ENTODERMAL; ENTODERMIC",
+      "definitions": [
+        {
+          "text": "Relating to the entoderm.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "entodermic": {
       "word": "ENTODERMAL; ENTODERMIC",
       "definitions": [
         {
@@ -3523,7 +3616,17 @@
       ],
       "relatedWords": []
     },
-    "entomicentomical": {
+    "entomic": {
+      "word": "ENTOMIC; ENTOMICAL",
+      "definitions": [
+        {
+          "text": "Relating to insects; entomological.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "entomical": {
       "word": "ENTOMIC; ENTOMICAL",
       "definitions": [
         {
@@ -3563,6 +3666,26 @@
         {
           "text": "A fossil insect.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "entomologic": {
+      "word": "ENTOMOLOGIC; ENTOMOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to entomology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "entomological": {
+      "word": "ENTOMOLOGIC; ENTOMOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to entomology.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3833,6 +3956,16 @@
       ],
       "relatedWords": []
     },
+    "entosternum": {
+      "word": "ENTOSTERNUM",
+      "definitions": [
+        {
+          "text": "See Entoplastron.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "entosthoblast": {
       "word": "ENTOSTHOBLAST",
       "definitions": [
@@ -3937,7 +4070,7 @@
       ],
       "relatedWords": []
     },
-    "entozoalentozoic": {
+    "entozoal": {
       "word": "ENTOZOAL; ENTOZOIC",
       "definitions": [
         {
@@ -3947,7 +4080,17 @@
       ],
       "relatedWords": []
     },
-    "entozoologistentozooelogist": {
+    "entozoic": {
+      "word": "ENTOZOAL; ENTOZOIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or consisting of, the Entozoa.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "entozooelogist": {
       "word": "ENTOZOOLOGIST; ENTOZOOELOGIST",
       "definitions": [
         {
@@ -3957,7 +4100,27 @@
       ],
       "relatedWords": []
     },
-    "entozoonentozooen": {
+    "entozooen": {
+      "word": "ENTOZOON; ENTOZOOEN",
+      "definitions": [
+        {
+          "text": "One of the Entozoa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "entozoologist": {
+      "word": "ENTOZOOLOGIST; ENTOZOOELOGIST",
+      "definitions": [
+        {
+          "text": "One versed in the science of the Entozoa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "entozoon": {
       "word": "ENTOZOON; ENTOZOOEN",
       "definitions": [
         {
@@ -4397,6 +4560,16 @@
         "visitant",
         "visitor"
       ]
+    },
+    "entrantedge": {
+      "word": "ENTERING EDGE; ENTRANT EDGE",
+      "definitions": [
+        {
+          "text": "= Advancing edge.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
     },
     "entrap": {
       "word": "ENTRAP",
@@ -5207,7 +5380,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The exhibition or depositing of a ship's papers at the customhouse, to procure license to land goods; or the giving an",
+          "text": "The exhibition or depositing of a ship's papers at the customhouse, to procure license to land goods; or the giving an account of a ship's cargo to the officer of the customs, and obtaining his permission to land the goods. See Enter, v. t., 8, and Entrance, n., 5.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law) (a) The actual taking possession of lands or tenements, by entering or setting foot on them. (b) A putting upon record in proper form and order. (c) The act in addition to breaking essential to constitute the offense or burglary. Burrill. Bill of entry. See under Bill. transactions in a business. possession of land from one who has unlawfully entered and continues in possession. Bouvier.",
           "partOfSpeech": "noun"
         }
       ],

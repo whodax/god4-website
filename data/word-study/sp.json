@@ -71,7 +71,17 @@
       ],
       "relatedWords": []
     },
-    "spacebarspacekey": {
+    "spacebar": {
+      "word": "SPACE BAR; SPACE KEY",
+      "definitions": [
+        {
+          "text": "A bar or key, in a typewriter or typesetting machine, used for spacing between letters.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "spacekey": {
       "word": "SPACE BAR; SPACE KEY",
       "definitions": [
         {
@@ -129,7 +139,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Inclosing an extended space; having large or ample room; not contracted or narrow; capacious; roomy; as, spacious bounds; a",
+          "text": "Inclosing an extended space; having large or ample room; not contracted or narrow; capacious; roomy; as, spacious bounds; a spacious church; a spacious hall.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -385,22 +395,26 @@
       ],
       "relatedWords": []
     },
-    "spagyricspagyrical": {
+    "spagyric": {
       "word": "SPAGYRIC; SPAGYRICAL",
       "definitions": [
         {
           "text": "Chemical; alchemical. [Obs.]",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A spagyrist. [Obs.] Bp. Hall.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "spagyric": {
-      "word": "SPAGYRIC",
+    "spagyrical": {
+      "word": "SPAGYRIC; SPAGYRICAL",
       "definitions": [
         {
-          "text": "A spagyrist. [Obs.] Bp. Hall.",
-          "partOfSpeech": "noun"
+          "text": "Chemical; alchemical. [Obs.]",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -419,7 +433,21 @@
       ],
       "relatedWords": []
     },
-    "spahispahee": {
+    "spahi": {
+      "word": "SPAHI; SPAHEE",
+      "definitions": [
+        {
+          "text": "Formerly, one of the Turkish cavalry.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An Algerian cavalryman in the French army.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spahee": {
       "word": "SPAHI; SPAHEE",
       "definitions": [
         {
@@ -1065,7 +1093,27 @@
       ],
       "relatedWords": []
     },
-    "sparagesparagussparagrass": {
+    "sparage": {
+      "word": "SPARAGE; SPARAGUS; SPARAGRASS",
+      "definitions": [
+        {
+          "text": "Obs. or corrupt forms of Asparagus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sparagus": {
+      "word": "SPARAGE; SPARAGUS; SPARAGRASS",
+      "definitions": [
+        {
+          "text": "Obs. or corrupt forms of Asparagus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sparagrass": {
       "word": "SPARAGE; SPARAGUS; SPARAGRASS",
       "definitions": [
         {
@@ -1281,6 +1329,16 @@
       ],
       "relatedWords": []
     },
+    "sparing": {
+      "word": "SPARING",
+      "definitions": [
+        {
+          "text": "Spare; saving; frugal; merciful. Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "spark": {
       "word": "SPARK",
       "definitions": [
@@ -1439,7 +1497,7 @@
       "word": "SPARKLING",
       "definitions": [
         {
-          "text": "Emitting sparks; glittering; flashing; brilliant; lively; as,",
+          "text": "Emitting sparks; glittering; flashing; brilliant; lively; as, sparkling wine; sparkling eyes.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1723,6 +1781,16 @@
         {
           "text": "A medicine for spasm.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spasmodical": {
+      "word": "SPASMODICAL",
+      "definitions": [
+        {
+          "text": "Same as Spasmodic, a.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2233,7 +2301,17 @@
       ],
       "relatedWords": []
     },
-    "spayadspayade": {
+    "spayad": {
+      "word": "SPAYAD; SPAYADE",
+      "definitions": [
+        {
+          "text": "A spay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spayade": {
       "word": "SPAYAD; SPAYADE",
       "definitions": [
         {
@@ -2377,7 +2455,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The rod to which the bucket, or plunger, of a pump is attached; a",
+          "text": "The rod to which the bucket, or plunger, of a pump is attached; a pump rod. Spear foot, the off hind foot of a horse. meadow grass. See under Meadow. hand. Crabb.",
           "partOfSpeech": "noun"
         },
         {
@@ -2650,6 +2728,52 @@
         },
         {
           "text": "Coin; hard money.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "species": {
+      "word": "SPECIES",
+      "definitions": [
+        {
+          "text": "Visible or sensible presentation; appearance; a sensible percept received by the imagination; an image. [R.] \"The species of the letters illuminated with indigo and violet.\" Sir I. Newton. Wit, . . . the faculty of imagination in the writer, which searches over all the memory for the species or ideas of those things which it designs to represent. Dryden. intelligible. The sensible species was that in any material, object which was in fact discerned by the mind through the organ of perception, or that in any object which rendered it possible that it should be perceived. The sensible species, as apprehended by the understanding in any of the relations of thought, was called an intelligible species. \"An apparent diversity between the species visible and audible is, that the visible doth not mingle in the medium, but the audible doth.\" Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Logic)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A group of individuals agreeing in common attributes, and designated by a common name; a conception subordinated to another conception, called a genus, or generic conception, from which it differs in containing or comprehending more attributes, and extending to fewer individuals. Thus, man is a species, under animal as a genus; and man, in its turn, may be regarded as a genus with respect to European, American, or the like, as species.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In science, a more or less permanent group of existing things or beings, associated according to attributes, or properties determined by scientific observation. definite chemical structure, and are fundamentally the same in crystallization and physical characters, are classed as belonging to a species. In zoölogy and botany, a species is an ideal group of individuals which are believed to have descended from common ancestors, which agree in essential characteristics, and are capable of indefinitely continued fertile reproduction through the sexes. A species, as thus defined, differs from a variety or subspecies only in the greater stability of its characters and in the absence of individuals intermediate between the related groups.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sort; a kind; a variety; as, a species of low cunning; a species of generosity; a species of cloth.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Coin, or coined silver, gold, ot other metal, used as a circulating medium; specie. [Obs.] There was, in the splendor of the Roman empire, a less quantity of current species in Europe than there is now. Arbuthnot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A public spectacle or exhibition. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Pharmacy) (a) A component part of compound medicine; a simple. (b) (Med.) An officinal mixture or compound powder of any kind; esp., one used for making an aromatic tea or tisane; a tea mixture. Quincy.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Civil Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The form or shape given to materials; fashion or shape; form; figure. Burill. Incipient species (Zoöl.), a subspecies, or variety, which is in process of becoming permanent, and thus changing to a true species, usually by isolation in localities from which other varieties are excluded.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3049,7 +3173,7 @@
       ],
       "relatedWords": []
     },
-    "spectatressspectatrix": {
+    "spectatress": {
       "word": "SPECTATRESS; SPECTATRIX",
       "definitions": [
         {
@@ -3059,7 +3183,17 @@
       ],
       "relatedWords": []
     },
-    "specterspectre": {
+    "spectatrix": {
+      "word": "SPECTATRESS; SPECTATRIX",
+      "definitions": [
+        {
+          "text": "A female beholder or looker-on. \"A spectatress of the whole scene.\" Jeffrey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "specter": {
       "word": "SPECTER; SPECTRE",
       "definitions": [
         {
@@ -3068,6 +3202,24 @@
         },
         {
           "text": "(Zoöl.) (a) The tarsius. (b) A stick insect. Specter bat (Zoöl.), any phyllostome bat.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spectre": {
+      "word": "SPECTER; SPECTRE",
+      "definitions": [
+        {
+          "text": "Something preternaturally visible; an apparition; a ghost; a phantom. The ghosts of traitors from the bridge descend, With bold fanatic specters to rejoice. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.) (a) The tarsius. (b) A stick insect. Specter bat (Zoöl.), any phyllostome bat.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Specter.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3107,16 +3259,6 @@
         {
           "text": "In the form or manner of a specter.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "spectre": {
-      "word": "SPECTRE",
-      "definitions": [
-        {
-          "text": "See Specter.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3165,7 +3307,7 @@
       "word": "SPECTROHELIOGRAPH",
       "definitions": [
         {
-          "text": "An apparatus for making spectroheliograms, consisting of a spectroscopic camera used in combination with a telescope, and",
+          "text": "An apparatus for making spectroheliograms, consisting of a spectroscopic camera used in combination with a telescope, and provided with clockwork for moving the sun's image across the slit.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3175,7 +3317,7 @@
       "word": "SPECTROLOGICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to spectrology; as, spectrological studies or",
+          "text": "Of or pertaining to spectrology; as, spectrological studies or experiments.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3201,11 +3343,21 @@
       ],
       "relatedWords": []
     },
+    "spectrometry": {
+      "word": "SPECTROMETRY",
+      "definitions": [
+        {
+          "text": "Art or process of using the spectrometer, or of measuring wave lengths of rays of a spectrum. -- Spec`tro*met\"ric (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "spectrophone": {
       "word": "SPECTROPHONE",
       "definitions": [
         {
-          "text": "An instrument constructed on the principle of the photophone",
+          "text": "An instrument constructed on the principle of the photophone and used in spectrum analysis as an adjunct to the spectroscope. -- Spec`tro*phon\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3225,7 +3377,7 @@
       "word": "SPECTROPHOTOMETRY",
       "definitions": [
         {
-          "text": "The art of comparing, photometrically, the brightness of two",
+          "text": "The art of comparing, photometrically, the brightness of two spectra, wave length by wave length; the use of the spectrophotometer. --Spec`tro*pho`to*met\"ric (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3237,6 +3389,26 @@
         {
           "text": "An optical instrument for forming and examining spectra (as that of solar light, or those produced by flames in which different substances are volatilized), so as to determine, from the position of the spectral lines, the composition of the substance.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spectroscopic": {
+      "word": "SPECTROSCOPIC; SPECTROSCOPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a spectroscope, or spectroscopy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spectroscopical": {
+      "word": "SPECTROSCOPIC; SPECTROSCOPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a spectroscope, or spectroscopy.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3383,7 +3555,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of or pertaining to speculation in land, goods, shares, etc.; as, a speculative dealer or enterprise. The speculative merchant exercises no one regular, established, or",
+          "text": "Of or pertaining to speculation in land, goods, shares, etc.; as, a speculative dealer or enterprise. The speculative merchant exercises no one regular, established, or well-known branch of business. A. Smith.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3589,7 +3761,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not speaking for a time; dumb; mute; silent.",
+          "text": "Not speaking for a time; dumb; mute; silent. Speechless with wonder, and half dead with fear. Addison.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3965,7 +4137,7 @@
       "word": "SPELLBIND",
       "definitions": [
         {
-          "text": "To bind or hold by, or as if by, a spell or charm; to",
+          "text": "To bind or hold by, or as if by, a spell or charm; to fascinate, esp. by eloquence of speech, as in a political campaign. - - Spell\"bind`er (#), n.",
           "partOfSpeech": "verb"
         }
       ],
@@ -4231,7 +4403,17 @@
       ],
       "relatedWords": []
     },
-    "spersperre": {
+    "sper": {
+      "word": "SPER; SPERRE",
+      "definitions": [
+        {
+          "text": "To shut in; to support; to inclose; to fasten. [Obs.] \"To sperre the gate.\" Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sperre": {
       "word": "SPER; SPERRE",
       "definitions": [
         {
@@ -4423,7 +4605,17 @@
       ],
       "relatedWords": []
     },
-    "spermatospermo": {
+    "spermato": {
+      "word": "SPERMATO-; SPERMO-",
+      "definitions": [
+        {
+          "text": "Combining forms from Gr. seed, sperm, semen (of plants or animals); as, spermatoblast, spermoblast.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "spermo": {
       "word": "SPERMATO-; SPERMO-",
       "definitions": [
         {
@@ -4513,6 +4705,26 @@
       ],
       "relatedWords": []
     },
+    "spermatoon": {
+      "word": "SPERMATOON; SPERMATOOEN",
+      "definitions": [
+        {
+          "text": "A spermoblast.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spermatooen": {
+      "word": "SPERMATOON; SPERMATOOEN",
+      "definitions": [
+        {
+          "text": "A spermoblast.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "spermatophore": {
       "word": "SPERMATOPHORE",
       "definitions": [
@@ -4565,7 +4777,17 @@
       ],
       "relatedWords": []
     },
-    "spermatorrheaspermatorrhoea": {
+    "spermatorrhea": {
+      "word": "SPERMATORRHEA; SPERMATORRHOEA",
+      "definitions": [
+        {
+          "text": "Abnormally frequent involuntary emission of the semen without copulation.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spermatorrhoea": {
       "word": "SPERMATORRHEA; SPERMATORRHOEA",
       "definitions": [
         {
@@ -4605,7 +4827,17 @@
       ],
       "relatedWords": []
     },
-    "spermatozoonspermatozooen": {
+    "spermatozoon": {
+      "word": "SPERMATOZOON; SPERMATOZOOEN",
+      "definitions": [
+        {
+          "text": "Same as Spermatozoid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spermatozooen": {
       "word": "SPERMATOZOON; SPERMATOZOOEN",
       "definitions": [
         {
@@ -4935,11 +5167,15 @@
         {
           "text": "To affect with gangrene.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Affected with gangrene; mortified.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "sphacelatesphacelated": {
+    "sphacelated": {
       "word": "SPHACELATE; SPHACELATED",
       "definitions": [
         {
@@ -5303,7 +5539,7 @@
       ],
       "relatedWords": []
     },
-    "sphericalspheric": {
+    "spherical": {
       "word": "SPHERICAL; SPHERIC",
       "definitions": [
         {
@@ -5315,7 +5551,25 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of or pertaining to the heavenly orbs, or to the sphere or spheres in which, according to ancient astronomy and astrology, they were set. Knaves, thieves, and treachers by spherical predominance. Shak. Though the stars were suns, and overburned Their spheric limitations. Mrs. Browning. Spherical angle, Spherical coördinate, Spherical excess, etc. See under Angle, Coordinate, etc. spherical magnitudes; the doctrine of the sphere, especially of the",
+          "text": "Of or pertaining to the heavenly orbs, or to the sphere or spheres in which, according to ancient astronomy and astrology, they were set. Knaves, thieves, and treachers by spherical predominance. Shak. Though the stars were suns, and overburned Their spheric limitations. Mrs. Browning. Spherical angle, Spherical coördinate, Spherical excess, etc. See under Angle, Coordinate, etc. spherical magnitudes; the doctrine of the sphere, especially of the circles described on its surface. between two great semicircles having a common diameter. by the portion within the solid angle of the surface of any sphere whose center is the angular point. the arcs of three or more great circles. upon a plane. See Projection. arcs of three great circles which intersect each other.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spheric": {
+      "word": "SPHERICAL; SPHERIC",
+      "definitions": [
+        {
+          "text": "Having the form of a sphere; like a sphere; globular; orbicular; as, a spherical body.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a sphere.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the heavenly orbs, or to the sphere or spheres in which, according to ancient astronomy and astrology, they were set. Knaves, thieves, and treachers by spherical predominance. Shak. Though the stars were suns, and overburned Their spheric limitations. Mrs. Browning. Spherical angle, Spherical coördinate, Spherical excess, etc. See under Angle, Coordinate, etc. spherical magnitudes; the doctrine of the sphere, especially of the circles described on its surface. between two great semicircles having a common diameter. by the portion within the solid angle of the surface of any sphere whose center is the angular point. the arcs of three or more great circles. upon a plane. See Projection. arcs of three great circles which intersect each other.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5391,7 +5645,17 @@
       ],
       "relatedWords": []
     },
-    "spheroidicspheroidical": {
+    "spheroidal": {
+      "word": "SPHEROIDAL",
+      "definitions": [
+        {
+          "text": "Having the form of a spheroid. liquid, as water, when, on being thrown on a surface of highly heated metal, it rolls about in spheroidal drops or masses, at a temperature several degrees below ebullition, and without actual contact with the heated surface, -- a phenomenon due to the repulsive force of heat, the intervention of a cushion of nonconducting vapor, and the cooling effect of evaporation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spheroidic": {
       "word": "SPHEROIDIC; SPHEROIDICAL",
       "definitions": [
         {
@@ -5401,7 +5665,27 @@
       ],
       "relatedWords": []
     },
-    "spheroidicityspheroidity": {
+    "spheroidical": {
+      "word": "SPHEROIDIC; SPHEROIDICAL",
+      "definitions": [
+        {
+          "text": "See Spheroidal. Cheyne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spheroidicity": {
+      "word": "SPHEROIDICITY; SPHEROIDITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being spheroidal.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spheroidity": {
       "word": "SPHEROIDICITY; SPHEROIDITY",
       "definitions": [
         {
@@ -5721,7 +6005,17 @@
       ],
       "relatedWords": []
     },
-    "spicatespicated": {
+    "spicate": {
+      "word": "SPICATE; SPICATED",
+      "definitions": [
+        {
+          "text": "Having the form of a spike, or ear; arranged in a spike or spikes. Lee.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spicated": {
       "word": "SPICATE; SPICATED",
       "definitions": [
         {
@@ -5745,7 +6039,15 @@
       "word": "SPICE",
       "definitions": [
         {
-          "text": "Species; kind. [Obs.]",
+          "text": "Species; kind. [Obs.] The spices of penance ben three. Chaucer. Abstain you from all evil spice. Wyclif (1. Thess,v. 22). Justice, although it be but one entire virtue, yet is described in two kinds of spices. The one is named justice distributive, the other is called commutative. Sir T. Elyot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A vegetable production of many kinds, fragrant or aromatic and pungent to the taste, as pepper, cinnamon, nutmeg, mace, allspice, ginger, cloves, etc., which are used in cookery and to flavor sauces, pickles, etc. Hast thou aught in thy purse [bag] any hot spices Piers Plowman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Figuratively, that which enriches or alters the quality of a thing in a small degree, as spice alters the taste of food; that which gives zest or pungency; a slight flavoring; a relish; hence, a small quantity or admixture; a sprinkling; as, a spice of mischief. So much of the will, with a spice of the willful. Coleridge.",
           "partOfSpeech": "noun"
         },
         {
@@ -6095,7 +6397,17 @@
       ],
       "relatedWords": []
     },
-    "spiderwebspider'sweb": {
+    "spiderweb": {
+      "word": "SPIDER WEB; SPIDER'S WEB",
+      "definitions": [
+        {
+          "text": "The silken web which is formed by most kinds of spiders, particularly the web spun to entrap their prey. See Geometric spider, Triangle spider, under Geometric, and Triangle.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "spider'sweb": {
       "word": "SPIDER WEB; SPIDER'S WEB",
       "definitions": [
         {
@@ -6417,7 +6729,17 @@
       ],
       "relatedWords": []
     },
-    "spilletfishingspilliardfishing": {
+    "spilletfishing": {
+      "word": "SPILLET FISHING; SPILLIARD FISHING",
+      "definitions": [
+        {
+          "text": "A system or method of fishing by means of a number of hooks set on snoods all on one line; -- in North America, called trawl fishing, bultow, or bultow fishing, and long-line fishing.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "spilliardfishing": {
       "word": "SPILLET FISHING; SPILLIARD FISHING",
       "definitions": [
         {
@@ -6477,8 +6799,8 @@
       ],
       "relatedWords": []
     },
-    "spinnadanspindegothspinnanandprobablytoespansq": {
-      "word": "spinna, Dan. spinde, Goth. spinnan, and probably to E. span. sq.",
+    "spin": {
+      "word": "SPIN",
       "definitions": [
         {
           "text": "To draw out, and twist into threads, either by the hand or machinery; as, to spin wool, cotton, or flax; to spin goat's hair; to produce by drawing out and twisting a fibrous material. All the yarn she [Penelope] spun in Ulysses' absence did but fill Ithaca full of moths. Shak.",
@@ -6507,13 +6829,7 @@
         {
           "text": "To shape, as malleable sheet metal, into a hollow form, by bending or buckling it by pressing against it with a smooth hand tool or roller while the metal revolves, as in a lathe. To spin a yarn (Naut.), to tell a story, esp. a long or fabulous tale. carriage on an expedition.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "spin": {
-      "word": "SPIN",
-      "definitions": [
+        },
         {
           "text": "To practice spinning; to work at drawing and twisting threads; to make yarn or thread from fiber; as, the woman knows how to spin; a machine or jenny spins with great exactness. They neither know to spin, nor care to toll. Prior.",
           "partOfSpeech": "verb"
@@ -6565,7 +6881,17 @@
       ],
       "relatedWords": []
     },
-    "spinachspinage": {
+    "spinach": {
+      "word": "SPINACH; SPINAGE",
+      "definitions": [
+        {
+          "text": "A common pot herb (Spinacia oleracea) belonging to the Goosefoot family. Mountain spinach. See Garden orache, under Orache. poor substitute for spinach.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spinage": {
       "word": "SPINACH; SPINAGE",
       "definitions": [
         {
@@ -6817,21 +7143,25 @@
       ],
       "relatedWords": []
     },
-    "spinelspinelle": {
+    "spinel": {
       "word": "SPINEL; SPINELLE",
       "definitions": [
         {
           "text": "A mineral occuring in octahedrons of great hardness and various colors, as red, green, blue, brown, and black, the red variety being the gem spinel ruby. It consist essentially of alumina and magnesia, but commonly contains iron and sometimes also chromium. chromite, franklinite, gahnite, etc., all of which may be regarded as composed of a sesquioxide and a protoxide in equal proportions.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Bleached yarn in making the linen tape called inkle; unwrought inkle. Knight.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "spinel": {
-      "word": "SPINEL",
+    "spinelle": {
+      "word": "SPINEL; SPINELLE",
       "definitions": [
         {
-          "text": "Bleached yarn in making the linen tape called inkle; unwrought inkle. Knight.",
+          "text": "A mineral occuring in octahedrons of great hardness and various colors, as red, green, blue, brown, and black, the red variety being the gem spinel ruby. It consist essentially of alumina and magnesia, but commonly contains iron and sometimes also chromium. chromite, franklinite, gahnite, etc., all of which may be regarded as composed of a sesquioxide and a protoxide in equal proportions.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7173,7 +7503,7 @@
       "word": "SPINTHARISCOPE",
       "definitions": [
         {
-          "text": "A small instrument containing a minute particle of a radium compound mounted in front of a fluorescent screen and viewed with magnifying lenses. The tiny flashes produced by the continual",
+          "text": "A small instrument containing a minute particle of a radium compound mounted in front of a fluorescent screen and viewed with magnifying lenses. The tiny flashes produced by the continual bombardment of the screen by the a rays are thus rendered visible. -- Spin*thar`i*scop\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7199,7 +7529,17 @@
       ],
       "relatedWords": []
     },
-    "spinulosespinulous": {
+    "spinulose": {
+      "word": "SPINULOSE; SPINULOUS",
+      "definitions": [
+        {
+          "text": "Covered with small spines.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spinulous": {
       "word": "SPINULOSE; SPINULOUS",
       "definitions": [
         {
@@ -7319,7 +7659,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of or pertaining to a spiral; like a spiral. Spiral gear, or Spiral wheel (Mach.), a gear resembling in general a spur gear, but having its teeth cut at an angle with its axis, or so that they form small portions of screws or spirals. machinery, in which spiral gears, instead of bevel gears, are used to transmit motion between shafts that are not parallel.",
+          "text": "Of or pertaining to a spiral; like a spiral. Spiral gear, or Spiral wheel (Mach.), a gear resembling in general a spur gear, but having its teeth cut at an angle with its axis, or so that they form small portions of screws or spirals. machinery, in which spiral gears, instead of bevel gears, are used to transmit motion between shafts that are not parallel. helix.",
           "partOfSpeech": "adjective"
         },
         {
@@ -7434,6 +7774,10 @@
         },
         {
           "text": "(Geom.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The part of a spiral generated in one revolution of the straight line about the pole. See Spiral, n. Spire bearer. (Paleon.) Same as Spirifer.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7611,7 +7955,7 @@
       "word": "SPIRITFUL",
       "definitions": [
         {
-          "text": "Full of spirit; spirited. [R.]",
+          "text": "Full of spirit; spirited. [R.] The spiritful and orderly life of our own grown men. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7851,7 +8195,7 @@
       "word": "SPIRITUAL-MINDED",
       "definitions": [
         {
-          "text": "Having the mind set on spiritual things, or filled with holy",
+          "text": "Having the mind set on spiritual things, or filled with holy desires and affections.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7955,7 +8299,17 @@
       ],
       "relatedWords": []
     },
-    "spirochaetaspirochaete": {
+    "spirochaeta": {
+      "word": "SPIROCHAETA; SPIROCHAETE",
+      "definitions": [
+        {
+          "text": "A genus of Spirobacteria similar to Spirillum, but distinguished by its motility. One species, the Spirochæte Obermeyeri, is supposed to be the cause of relapsing fever.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spirochaete": {
       "word": "SPIROCHAETA; SPIROCHAETE",
       "definitions": [
         {
@@ -8005,7 +8359,17 @@
       ],
       "relatedWords": []
     },
-    "spiroylicspiroylous": {
+    "spiroylic": {
+      "word": "SPIROYLIC; SPIROYLOUS",
+      "definitions": [
+        {
+          "text": "Pertaining to, or designating, a substance now called salicylal. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spiroylous": {
       "word": "SPIROYLIC; SPIROYLOUS",
       "definitions": [
         {
@@ -8127,6 +8491,14 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To eject from the mouth; to throw out, as saliva or other matter, from the mouth. \"Thus spit I out my venom.\" Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To eject; to throw out; to belch. participle. \"He . . . shall be mocked, and spitefully entreated, and spitted on.\" Luke xviii. 32.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "The secretion formed by the glands of the mouth; spitle; saliva; sputum.",
           "partOfSpeech": "noun"
         },
@@ -8137,20 +8509,6 @@
         {
           "text": "To rain or snow slightly, or with sprinkles. It had been spitting with rain. Dickens. To spit on or upon, to insult grossly; to treat with contempt. \"Spitting upon all antiquity.\" South.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "spottaicelspandprobespewthepasttensespatisduetoas": {
-      "word": "spotta,Icel. sp, and prob. E. spew. The past tense spat is due to AS.",
-      "definitions": [
-        {
-          "text": "To eject from the mouth; to throw out, as saliva or other matter, from the mouth. \"Thus spit I out my venom.\" Chaucer.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To eject; to throw out; to belch. participle. \"He . . . shall be mocked, and spitefully entreated, and spitted on.\" Luke xviii. 32.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -8263,7 +8621,7 @@
       "word": "SPITEFUL",
       "definitions": [
         {
-          "text": "Filled with, or showing, spite; having a desire to vex, annoy,",
+          "text": "Filled with, or showing, spite; having a desire to vex, annoy, or injure; malignant; malicious; as, a spiteful person or act. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8435,7 +8793,7 @@
       "word": "SPLANCHNAPOPHYSIS",
       "definitions": [
         {
-          "text": "Any element of the skeleton in relation with the alimentary",
+          "text": "Any element of the skeleton in relation with the alimentary canal, as the jaws and hyoidean apparatus.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8475,7 +8833,7 @@
       "word": "SPLANCHNOPLEURE",
       "definitions": [
         {
-          "text": "The inner, or visceral, one of the two lamellæ into which the vertebrate blastoderm divides on either side of the notochord, and from which the walls of the enteric canal and the umbilical vesicle",
+          "text": "The inner, or visceral, one of the two lamellæ into which the vertebrate blastoderm divides on either side of the notochord, and from which the walls of the enteric canal and the umbilical vesicle are developed. See Somatopleure.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8631,11 +8989,15 @@
         {
           "text": "A foot that is abnormally flattened and spread out; flat foot.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Having a splayfoot or splayfeet.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "splayfootsplayfooted": {
+    "splayfooted": {
       "word": "SPLAYFOOT; SPLAYFOOTED",
       "definitions": [
         {
@@ -8722,6 +9084,16 @@
       "definitions": [
         {
           "text": "Displaying, or affected with, spleen; angry; fretful; melancholy. Myself have calmed their spleenful mutiny. Shak. Then rode Geraint, a little spleenful yet, Across the bridge that spann'd the dry ravine. Tennyson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spleenish": {
+      "word": "SPLEENISH",
+      "definitions": [
+        {
+          "text": "Spleeny; affected with spleen; fretful.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8891,7 +9263,17 @@
       ],
       "relatedWords": []
     },
-    "splendroussplendorous": {
+    "splendrous": {
+      "word": "SPLENDROUS; SPLENDOROUS",
+      "definitions": [
+        {
+          "text": "Splendid. Drayton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "splendorous": {
       "word": "SPLENDROUS; SPLENDOROUS",
       "definitions": [
         {
@@ -8941,6 +9323,16 @@
         {
           "text": "The splenial bone.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "splenic": {
+      "word": "SPLENIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the spleen; lienal; as, the splenic vein. Splenic apoplexy or fever. (Med.) See Anthrax, n., 3.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -9079,8 +9471,8 @@
       ],
       "relatedWords": []
     },
-    "splisseandesplitfromthedividingorsplittingtheends": {
-      "word": "splisse, and E. split; -- from the dividing or splitting the ends",
+    "splice": {
+      "word": "SPLICE",
       "definitions": [
         {
           "text": "To unite, as two ropes, or parts of a rope, by a particular manner of interweaving the strands, -- the union being between two ends, or between an end and the body of a rope.",
@@ -9093,13 +9485,7 @@
         {
           "text": "To unite in marrige. [Slang] Splice grafting.ee under Grafting. allowance of spirits on occasion of special exposure to wet or cold, or to severe fatigue; hence, to take a dram.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "splice": {
-      "word": "SPLICE",
-      "definitions": [
+        },
         {
           "text": "A junction or joining made by splicing.",
           "partOfSpeech": "noun"
@@ -9131,55 +9517,49 @@
       ],
       "relatedWords": []
     },
-    "splintswsplintakindofspikeaforelockinnauticalusesw": {
-      "word": "splint, Sw. splint a kind of spike, a forelock (in nautical use), Sw.",
-      "definitions": [
-        {
-          "text": "A piece split off; a splinter.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Surg.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A thin piece of wood, or other substance, used to keep in place, or protect, an injured part, especially a broken bone when set.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Anat.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A splint bone.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Far.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A disease affecting the splint bones, as a callosity or hard excrescence.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Anc. Armor.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "One of the small plates of metal used in making splint armor. See Splint armor, below. The knees and feet were defended by splints, or thin plates of steel. Sir. W. Scott.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Splint, or splent, coal. See Splent coal, under Splent. Splint armor,a kind of ancient armor formed of thin plates of metal, usually overlapping each other and allowing the limbs to move freely. metacarpal or metatarsal bones on either side of the cannon bone in the limbs of the horse and allied animals.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "splint": {
       "word": "SPLINT",
       "definitions": [
+        {
+          "text": "A piece split off; a splinter.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Surg.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thin piece of wood, or other substance, used to keep in place, or protect, an injured part, especially a broken bone when set.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A splint bone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Far.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A disease affecting the splint bones, as a callosity or hard excrescence.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anc. Armor.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the small plates of metal used in making splint armor. See Splint armor, below. The knees and feet were defended by splints, or thin plates of steel. Sir. W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Splint, or splent, coal. See Splent coal, under Splent. Splint armor,a kind of ancient armor formed of thin plates of metal, usually overlapping each other and allowing the limbs to move freely. metacarpal or metatarsal bones on either side of the cannon bone in the limbs of the horse and allied animals.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To split into splints, or thin, slender pieces; to splinter; to shiver. [Obs. or R.] Florio.",
           "partOfSpeech": "verb"
@@ -9355,7 +9735,17 @@
       ],
       "relatedWords": []
     },
-    "splitshotsplitstroke": {
+    "splitshot": {
+      "word": "SPLIT SHOT; SPLIT STROKE",
+      "definitions": [
+        {
+          "text": "In croquet, etc., a shot or stroke in which one drives in different directions one's own and the opponent's ball placed in contact.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "splitstroke": {
       "word": "SPLIT SHOT; SPLIT STROKE",
       "definitions": [
         {
@@ -9775,7 +10165,21 @@
       ],
       "relatedWords": []
     },
-    "spondaicspondaical": {
+    "spondaic": {
+      "word": "SPONDAIC; SPONDAICAL",
+      "definitions": [
+        {
+          "text": "Or of pertaining to a spondee; consisting of spondees.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Containing spondees in excess; marked by spondees; as, a spondaic hexameter, i. e., one which has a spondee instead of a dactyl in the fifth foot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spondaical": {
       "word": "SPONDAIC; SPONDAICAL",
       "definitions": [
         {
@@ -9809,7 +10213,17 @@
       ],
       "relatedWords": []
     },
-    "spondylspondyle": {
+    "spondyl": {
+      "word": "SPONDYL; SPONDYLE",
+      "definitions": [
+        {
+          "text": "A joint of the backbone; a vertebra.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spondyle": {
       "word": "SPONDYL; SPONDYLE",
       "definitions": [
         {
@@ -10037,7 +10451,17 @@
       ],
       "relatedWords": []
     },
-    "spongiosespongious": {
+    "spongiose": {
+      "word": "SPONGIOSE; SPONGIOUS",
+      "definitions": [
+        {
+          "text": "Somewhat spongy; spongelike; full of small cavities like sponge; as, spongious bones.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spongious": {
       "word": "SPONGIOSE; SPONGIOUS",
       "definitions": [
         {
@@ -10213,7 +10637,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Produced without being planted, or without human labor; as, a spontaneous growth of wood. Spontaneous combustion, combustion produced in a substance by the evolution of heat through the chemical action of its own elements; as, the spontaneous combustion of waste matter saturated with oil. volition, or act of choice; it therefore implies some degree of consideration, and may be the result of mere reason without excited feeling. What is spontaneous springs wholly from feeling, or a sudden impulse which admits of no reflection; as, a spontaneous burst of applause. Hence, the term is also applied to things inanimate when they are produced without the determinate purpose or care of man. \"Abstinence which is but voluntary fasting, and . . . exercise which is but voluntary labor.\" J. Seed. Spontaneous joys, where nature has its play, The soul adopts, and",
+          "text": "Produced without being planted, or without human labor; as, a spontaneous growth of wood. Spontaneous combustion, combustion produced in a substance by the evolution of heat through the chemical action of its own elements; as, the spontaneous combustion of waste matter saturated with oil. volition, or act of choice; it therefore implies some degree of consideration, and may be the result of mere reason without excited feeling. What is spontaneous springs wholly from feeling, or a sudden impulse which admits of no reflection; as, a spontaneous burst of applause. Hence, the term is also applied to things inanimate when they are produced without the determinate purpose or care of man. \"Abstinence which is but voluntary fasting, and . . . exercise which is but voluntary labor.\" J. Seed. Spontaneous joys, where nature has its play, The soul adopts, and owns their firstborn away. Goldsmith.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10467,7 +10891,7 @@
       "word": "SPORADIC",
       "definitions": [
         {
-          "text": "Occuring singly, or apart from other things of the same kind, or in scattered instances; separate; single; as, a sporadic fireball; a sporadic case of disease; a sporadic example of a flower. Sporadic",
+          "text": "Occuring singly, or apart from other things of the same kind, or in scattered instances; separate; single; as, a sporadic fireball; a sporadic case of disease; a sporadic example of a flower. Sporadic disease (Med.), a disease which occurs in single and scattered cases. See the Note under Endemic, a.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10623,7 +11047,7 @@
       "word": "SPOROPHYTE",
       "definitions": [
         {
-          "text": "In plants exhibiting alternation of generations, the generation which bears asexual spores; -- opposed to gametophyte. It is not",
+          "text": "In plants exhibiting alternation of generations, the generation which bears asexual spores; -- opposed to gametophyte. It is not clearly differentiated in the life cycle of the lower plants. -- Spo`ro*phyt\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -10721,7 +11145,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To assume suddenly a new and different character from the rest",
+          "text": "To assume suddenly a new and different character from the rest of the plant or from the type of the species; -- said of a bud, shoot, plant, or animal. See Sport, n., 6. Darwin.",
           "partOfSpeech": "verb"
         },
         {
@@ -10737,7 +11161,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To give utterance to in a sportive manner; to throw out in an easy",
+          "text": "To give utterance to in a sportive manner; to throw out in an easy and copious manner; -- with off; as, to sport off epigrams. Addison. To sport one's oak. See under Oak, n.",
           "partOfSpeech": "verb"
         }
       ],
@@ -10781,7 +11205,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Done in jest, or for mere play; sportive.",
+          "text": "Done in jest, or for mere play; sportive. They are no sportful productions of the soil. Bentley.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10811,7 +11235,7 @@
       "word": "SPORTIVE",
       "definitions": [
         {
-          "text": "Tending to, engaged in, or provocate of, sport; gay; froliscome; playful; merry.",
+          "text": "Tending to, engaged in, or provocate of, sport; gay; froliscome; playful; merry. Is it I That drive thee from the sportive court Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10989,7 +11413,7 @@
       "word": "SPOTLESS",
       "definitions": [
         {
-          "text": "Without a spot; especially, free from reproach or impurity; pure; untained; innocent; as, a spotless mind; spotless behavior. A spotless virgin, and a faultless wife. Waller.",
+          "text": "Without a spot; especially, free from reproach or impurity; pure; untained; innocent; as, a spotless mind; spotless behavior. A spotless virgin, and a faultless wife. Waller. irreproachable. See Blameless.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11267,6 +11691,10 @@
         {
           "text": "To prop or sustain with a sprag.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Sprack, a. Shak.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -11461,6 +11889,10 @@
         {
           "text": "An unlimited expanse of discontinuous points.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "imp. & p. p. of Spread, v. Spread eagle. (a) An eagle with outspread wings, the national emblem of the United States. (b) The figure of an eagle, with its wings elevated and its legs extended; often met as a device upon military ornaments, and the like. (c) (Her.) An eagle displayed; an eagle with the wings and legs extended on each side of the body, as in the double-headed eagle of Austria and Russia. See Displayed, 2.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -11655,6 +12087,16 @@
       ],
       "relatedWords": []
     },
+    "sprightful": {
+      "word": "SPRIGHTFUL",
+      "definitions": [
+        {
+          "text": "Full of spirit or of life; earnest; vivacious; lively; brisk; nimble; gay. [Obs.] -- Spright\"ful*ly, adv. [Obs.] Shak. Spoke like a sprightful gentlemen. Shak. Steeds sprightful as the light. Cowley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "sprightless": {
       "word": "SPRIGHTLESS",
       "definitions": [
@@ -11795,7 +12237,21 @@
       ],
       "relatedWords": []
     },
-    "springalspringaldspringall": {
+    "springal": {
+      "word": "SPRINGAL; SPRINGALD; SPRINGALL",
+      "definitions": [
+        {
+          "text": "An active, springly young man. [Obs.] \"There came two springals of full tender years.\" Spenser. Joseph, when he was sold to Potiphar, that great man, was a fair young springall. Latimer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An ancient military engine for casting stones and arrows by means of a spring.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "springald": {
       "word": "SPRINGAL; SPRINGALD; SPRINGALL",
       "definitions": [
         {
@@ -11805,12 +12261,12 @@
       ],
       "relatedWords": []
     },
-    "springal": {
-      "word": "SPRINGAL",
+    "springall": {
+      "word": "SPRINGAL; SPRINGALD; SPRINGALL",
       "definitions": [
         {
-          "text": "An ancient military engine for casting stones and arrows by means of a spring.",
-          "partOfSpeech": "noun"
+          "text": "An active, springly young man. [Obs.] \"There came two springals of full tender years.\" Spenser. Joseph, when he was sold to Potiphar, that great man, was a fair young springall. Latimer.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -11825,7 +12281,17 @@
       ],
       "relatedWords": []
     },
-    "springbokspringbuck": {
+    "springbok": {
+      "word": "SPRINGBOK; SPRINGBUCK",
+      "definitions": [
+        {
+          "text": "A South African gazelle (Gazella euchore) noted for its graceful form and swiftness, and for its peculiar habit of springing lighty and suddenly into the air. It has a white dorsal stripe, expanding into a broad patch of white on the rump and tail. Called also springer. [Written also springboc, and springbock.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "springbuck": {
       "word": "SPRINGBOK; SPRINGBUCK",
       "definitions": [
         {
@@ -12013,8 +12479,8 @@
       ],
       "relatedWords": []
     },
-    "springantospringakintodsprenkelentosprinklegsprengen": {
-      "word": "springan to spring; akin to D. sprenkelen to sprinkle, G. sprengen.",
+    "sprinkle": {
+      "word": "SPRINKLE",
       "definitions": [
         {
           "text": "To scatter in small drops or particles, as water, seed, etc.",
@@ -12027,13 +12493,7 @@
         {
           "text": "To baptize by the application of a few drops, or a small quantity, of water; hence, to cleanse; to purify. Having our hearts sprinkled from an evil conscience. Heb. x. 22.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sprinkle": {
-      "word": "SPRINKLE",
-      "definitions": [
+        },
         {
           "text": "To scatter a liquid, or any fine substance, so that it may fall in particles. And the priest shall . . . sprinkle of the oil with his finger seven times before the Lord. Lev. xiv. 16.",
           "partOfSpeech": "verb"
@@ -12157,7 +12617,37 @@
       ],
       "relatedWords": []
     },
-    "spritefulspritefullyspritelinessspritely": {
+    "spriteful": {
+      "word": "SPRITEFUL; SPRITEFULLY; SPRITELINESS; SPRITELY",
+      "definitions": [
+        {
+          "text": "See Sprightful, Sprightfully, Sprightliness, Sprightly, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spritefully": {
+      "word": "SPRITEFUL; SPRITEFULLY; SPRITELINESS; SPRITELY",
+      "definitions": [
+        {
+          "text": "See Sprightful, Sprightfully, Sprightliness, Sprightly, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spriteliness": {
+      "word": "SPRITEFUL; SPRITEFULLY; SPRITELINESS; SPRITELY",
+      "definitions": [
+        {
+          "text": "See Sprightful, Sprightfully, Sprightliness, Sprightly, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spritely": {
       "word": "SPRITEFUL; SPRITEFULLY; SPRITELINESS; SPRITELY",
       "definitions": [
         {
@@ -12197,8 +12687,8 @@
       ],
       "relatedWords": []
     },
-    "spruitengspriessenswsprutatosquirttospoutcfspritv": {
-      "word": "spruiten, G. spriessen, Sw. spruta to squirt, to spout. Cf. Sprit, v.",
+    "sprout": {
+      "word": "SPROUT",
       "definitions": [
         {
           "text": "To shoot, as the seed of a plant; to germinate; to push out new shoots; hence, to grow like shoots of plants.",
@@ -12207,13 +12697,7 @@
         {
           "text": "To shoot into ramifications. [Obs.] Bacon.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sprout": {
-      "word": "SPROUT",
-      "definitions": [
+        },
         {
           "text": "To cause to sprout; as, the rain will sprout the seed.",
           "partOfSpeech": "verb"
@@ -12237,45 +12721,33 @@
       ],
       "relatedWords": []
     },
-    "sproutswereusedformakingsprucebeercfsprucebeerbelow": {
-      "word": "sprouts were used for making, spruce beer. Cf. Spruce beer, below,",
-      "definitions": [
-        {
-          "text": "(Bot.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Any coniferous tree of the genus Picea, as the Norway spruce (P. excelsa), and the white and black spruces of America (P. alba and P. nigra), besides several others in the far Northwest. See Picea.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The wood or timber of the spruce tree.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Prussia leather; pruce. [Obs.] Spruce, a sort of leather corruptly so called for Prussia leather. E. Phillips. Douglas spruce (Bot.), a valuable timber tree (Pseudotsuga Douglasii) of Northwestern America. acidulous liquid made by evaporating a decoction of the young branches of spruce. Canadensis) of North America. Its timber is valuable, and the bark is largely used in tanning leather. to E. sprout, n.) + bier beer. The word was changed into spruce",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "spruceasortofleatherfromprussiawhichwasanarticleof": {
-      "word": "spruce a sort of leather from Prussia, which was an article of",
-      "definitions": [
-        {
-          "text": "Neat, without elegance or dignity; -- formerly applied to things with a serious meaning; now chiefly applied to persons. \"Neat and spruce array.\" Remedy of Love.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Sprightly; dashing. [Obs.] \"Now, my spruce companions.\" Shak. He is so spruce that he can never be genteel. Tatler.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "spruce": {
       "word": "SPRUCE",
       "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any coniferous tree of the genus Picea, as the Norway spruce (P. excelsa), and the white and black spruces of America (P. alba and P. nigra), besides several others in the far Northwest. See Picea.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The wood or timber of the spruce tree.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Prussia leather; pruce. [Obs.] Spruce, a sort of leather corruptly so called for Prussia leather. E. Phillips. Douglas spruce (Bot.), a valuable timber tree (Pseudotsuga Douglasii) of Northwestern America. acidulous liquid made by evaporating a decoction of the young branches of spruce. Canadensis) of North America. Its timber is valuable, and the bark is largely used in tanning leather. to E. sprout, n.) + bier beer. The word was changed into spruce because the beer came from Prussia (OE. Spruce), or because it was made from the sprouts of the spruce. See Sprout, n., Beer, and cf. Spruce, n.] A kind of beer which is tinctured or flavored with spruce, either by means of the extract or by decoction. Canadensis) found in Canada and the Northern United States; -- called also Canada grouse.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Neat, without elegance or dignity; -- formerly applied to things with a serious meaning; now chiefly applied to persons. \"Neat and spruce array.\" Remedy of Love.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Sprightly; dashing. [Obs.] \"Now, my spruce companions.\" Shak. He is so spruce that he can never be genteel. Tatler.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "To dress with affected neatness; to trim; to make spruce.",
           "partOfSpeech": "verb"
@@ -12517,7 +12989,17 @@
       ],
       "relatedWords": []
     },
-    "spumousspumy": {
+    "spumous": {
+      "word": "SPUMOUS; SPUMY",
+      "definitions": [
+        {
+          "text": "Consisting of, containing, or covered with, froth, scum, or foam; frothy; foamy. The spumous and florid state of the blood. Arbuthnot. The spumy waves proclaim the watery war. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "spumy": {
       "word": "SPUMOUS; SPUMY",
       "definitions": [
         {
@@ -12709,7 +13191,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not legitimate; bastard; as, spurious issue. \"Her spurious firstborn.\" Milton. Spurious primary, or Spurious quill (Zoöl.), the first, or outer, primary quill when rudimentary or much reduced in size, as in certain singing birds.",
+          "text": "Not legitimate; bastard; as, spurious issue. \"Her spurious firstborn.\" Milton. Spurious primary, or Spurious quill (Zoöl.), the first, or outer, primary quill when rudimentary or much reduced in size, as in certain singing birds. bastard.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -12880,6 +13362,10 @@
     "spurt": {
       "word": "SPURT",
       "definitions": [
+        {
+          "text": "To gush or issue suddenly or violently out in a stream, as liquor from a cask; to rush from a confined place in a small stream or jet; to spirt. Thus the small jet, which hasty hands unlock, Spurts in the gardener's eyes who turns the cock. Pope.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To throw out, as a liquid, in a stream or jet; to drive or force out with violence, as a liquid from a pipe or small orifice; as, to spurt water from the mouth.",
           "partOfSpeech": "verb"
@@ -13087,7 +13573,7 @@
       ],
       "relatedWords": []
     },
-    "spynacespyne": {
+    "spynace": {
       "word": "SPYNACE; SPYNE",
       "definitions": [
         {
@@ -13097,24 +13583,12 @@
       ],
       "relatedWords": []
     },
-    "speechswtaldantalnumbertalespeechgothtalzjanto": {
-      "word": "speech, Sw. tal, Dan. tal number, tale speech, Goth. talzjan to",
+    "spyne": {
+      "word": "SPYNACE; SPYNE",
       "definitions": [
         {
-          "text": "That which is told; an oral relation or recital; any rehearsal of what has occured; narrative; discourse; statement; history; story. \"The tale of Troy divine.\" Milton. \"In such manner rime is Dante's tale.\" Chaucer. We spend our years as a tale that is told. Ps. xc. 9.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A number told or counted off; a reckoning by count; an enumeration; a count, in distinction from measure or weight; a number reckoned or stated. The ignorant, . . . who measure by tale, and not by weight. Hooker. And every shepherd tells his tale, Under the hawthornn in the dale. Milton. In packing, they keep a just tale of the number. Carew.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A count or declaration. [Obs.] To tell tale of, to make account of. [Obs.] Therefore little tale hath he told Of any dream, so holy was his heart. Chaucer. legend; narrative.",
-          "partOfSpeech": "verb"
+          "text": "See Pinnace, n., 1 (a).",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

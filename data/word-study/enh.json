@@ -277,17 +277,7 @@
       ],
       "relatedWords": []
     },
-    "enharmonically": {
-      "word": "ENHARMONICALLY",
-      "definitions": [
-        {
-          "text": "In the enharmonic style or system; in just intonation.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "enharmonicenharmonical": {
+    "enharmonic": {
       "word": "ENHARMONIC; ENHARMONICAL",
       "definitions": [
         {
@@ -301,6 +291,34 @@
         {
           "text": "(Mus.) (a) Pertaining to a change of notes to the eye, while, as the same keys are used, the instrument can mark no difference to the ear, as the substitution of A for G#. (b) Pertaining to a scale of perfect intonation which recognizes all the notes and intervals that result from the exact tuning of diatonic scales and their transposition into other keys.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enharmonical": {
+      "word": "ENHARMONIC; ENHARMONICAL",
+      "definitions": [
+        {
+          "text": "(Anc. Mus.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to that one of the three kinds of musical scale (diatonic, chromatic, enharmonic) recognized by the ancient Greeks, which consisted of quarter tones and major thirds, and was regarded as the most accurate.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Mus.) (a) Pertaining to a change of notes to the eye, while, as the same keys are used, the instrument can mark no difference to the ear, as the substitution of A for G#. (b) Pertaining to a scale of perfect intonation which recognizes all the notes and intervals that result from the exact tuning of diatonic scales and their transposition into other keys.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "enharmonically": {
+      "word": "ENHARMONICALLY",
+      "definitions": [
+        {
+          "text": "In the enharmonic style or system; in just intonation.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []

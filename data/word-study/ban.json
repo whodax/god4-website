@@ -473,21 +473,21 @@
       ],
       "relatedWords": []
     },
-    "bancal": {
-      "word": "BANCAL",
+    "banc": {
+      "word": "BANC; BANCUS; BANK",
       "definitions": [
         {
-          "text": "An ornamental covering, as of carpet or leather, for a bench or form.",
+          "text": "A bench; a high seat, or seat of distinction or judgment; a tribunal or court. In banc, In banco (the ablative of bancus), In bank, in full court, or with full judicial authority; as, sittings in banc (distinguished from sittings at nisi prius).",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "bancbancusbank": {
-      "word": "BANC; BANCUS; BANK",
+    "bancal": {
+      "word": "BANCAL",
       "definitions": [
         {
-          "text": "A bench; a high seat, or seat of distinction or judgment; a tribunal or court. In banc, In banco (the ablative of bancus), In bank, in full court, or with full judicial authority; as, sittings in banc (distinguished from sittings at nisi prius).",
+          "text": "An ornamental covering, as of carpet or leather, for a bench or form.",
           "partOfSpeech": "noun"
         }
       ],
@@ -503,9 +503,87 @@
       ],
       "relatedWords": []
     },
+    "bancus": {
+      "word": "BANC; BANCUS; BANK",
+      "definitions": [
+        {
+          "text": "A bench; a high seat, or seat of distinction or judgment; a tribunal or court. In banc, In banco (the ablative of bancus), In bank, in full court, or with full judicial authority; as, sittings in banc (distinguished from sittings at nisi prius).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "band": {
       "word": "BAND",
       "definitions": [
+        {
+          "text": "A fillet, strap, or any narrow ligament with which a thing is encircled, or fastened, or by which a number of things are tied, bound together, or confined; a fetter. Every one's bands were loosed. Acis xvi 26.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.) (a) A continuous tablet, stripe, or series of ornaments, as of carved foliage, of color, or of brickwork, etc. (b) In Gothic architecture, the molding, or suite of moldings, which encircles the pillars and small shafts.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which serves as the means of union or connection between persons; a tie. \"To join in Hymen's bands.\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A linen collar or ruff worn in the 16th and 17th centuries.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Two strips of linen hanging from the neck in front as part of a clerical, legal, or academic dress.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A narrow strip of cloth or other material on any article of dress, to bind, strengthen, ornament, or complete it. \"Band and gusset and seam.\" Hood.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A company of persons united in any common design, especially a body of armed men. Troops of horsemen with his bands of foot. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A number of musicians who play together upon portable musical instruments, especially those making a loud sound, as certain wind instruments (trumpets, clarinets, etc.), and drums, or cymbals.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A space between elevated lines or ribs, as of the fruits of umbelliferous plants.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stripe, streak, or other mark transverse to the axis of the body.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A belt or strap.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bond [Obs.] \"Thy oath and band.\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pledge; security. [Obs.] Spenser. Band saw, a saw in the form of an endless steel belt, with teeth on one edge, running over wheels.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To bind or tie with a band.",
           "partOfSpeech": "verb"
@@ -1152,6 +1230,34 @@
       ],
       "relatedWords": []
     },
+    "bandana": {
+      "word": "BANDANNA; BANDANA",
+      "definitions": [
+        {
+          "text": "A species of silk or cotton handkerchief, having a uniformly dyed ground, usually of red or blue, with white or yellow figures of a circular, lozenge, or other simple form.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A style of calico printing, in which white or bright spots are produced upon cloth previously dyed of a uniform red or dark color, by discharging portions of the color by chemical means, while the rest of the cloth is under pressure. Ure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bandanna": {
+      "word": "BANDANNA; BANDANA",
+      "definitions": [
+        {
+          "text": "A species of silk or cotton handkerchief, having a uniformly dyed ground, usually of red or blue, with white or yellow figures of a circular, lozenge, or other simple form.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A style of calico printing, in which white or bright spots are produced upon cloth previously dyed of a uniform red or dark color, by discharging portions of the color by chemical means, while the rest of the cloth is under pressure. Ure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "bandbox": {
       "word": "BANDBOX",
       "definitions": [
@@ -1335,7 +1441,7 @@
         "yale"
       ]
     },
-    "bandeletbandlet": {
+    "bandelet": {
       "word": "BANDELET; BANDLET",
       "definitions": [
         {
@@ -1375,7 +1481,7 @@
       ],
       "relatedWords": []
     },
-    "banderolebandrol": {
+    "banderole": {
       "word": "BANDEROLE; BANDROL",
       "definitions": [
         {
@@ -1458,8 +1564,12 @@
       "relatedWords": []
     },
     "bandlet": {
-      "word": "BANDLET",
+      "word": "BANDELET; BANDLET",
       "definitions": [
+        {
+          "text": "A small band or fillet; any little band or flat molding, compassing a column, like a ring. Gwilt.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Bandelet.",
           "partOfSpeech": "noun"
@@ -1512,8 +1622,22 @@
         "working dog"
       ]
     },
-    "bandolieraspbandolerafrfbandebandspitbandaseeband": {
-      "word": "bandoliera, Sp.bandolera), fr.F. bande band, Sp.&It. banda. See Band,",
+    "bandoleer": {
+      "word": "BANDOLEER; BANDOLIER",
+      "definitions": [
+        {
+          "text": "A broad leather belt formerly worn by soldiers over the right shoulder and across the breast under the left arm. Originally it was used for supporting the musket and twelve cases for charges, but later only as a cartridge belt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the leather or wooden cases in which the charges of powder were carried. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bandolier": {
+      "word": "BANDOLEER; BANDOLIER",
       "definitions": [
         {
           "text": "A broad leather belt formerly worn by soldiers over the right shoulder and across the breast under the left arm. Originally it was used for supporting the musket and twelve cases for charges, but later only as a cartridge belt.",
@@ -1557,8 +1681,12 @@
       "relatedWords": []
     },
     "bandrol": {
-      "word": "BANDROL",
+      "word": "BANDEROLE; BANDROL",
       "definitions": [
+        {
+          "text": "A little banner, flag, or streamer. [Written also bannerol.] From the extremity of which fluttered a small banderole or streamer bearing a cross. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Banderole.",
           "partOfSpeech": "noun"
@@ -1862,7 +1990,7 @@
       "word": "BANEFUL",
       "definitions": [
         {
-          "text": "Having poisonous qualities; deadly; destructive; injurious; noxious; pernicious. \"Baneful hemlock.\" Garth. \"Baneful wrath.\"",
+          "text": "Having poisonous qualities; deadly; destructive; injurious; noxious; pernicious. \"Baneful hemlock.\" Garth. \"Baneful wrath.\" Chapman.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2042,6 +2170,10 @@
         },
         {
           "text": "The short, front hair combed down over the forehead, esp. when cut squarely across; a false front of hair similarly worn. His hair cut in front like a young lady's bang. W. D. Howells.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Bhang.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2361,16 +2493,6 @@
         "zipper"
       ]
     },
-    "bangbangue": {
-      "word": "BANG; BANGUE",
-      "definitions": [
-        {
-          "text": "See Bhang.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "banging": {
       "word": "BANGING",
       "definitions": [
@@ -2450,6 +2572,16 @@
         "wristband",
         "wristlet"
       ]
+    },
+    "bangue": {
+      "word": "BANG; BANGUE",
+      "definitions": [
+        {
+          "text": "See Bhang.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     },
     "banian": {
       "word": "BANIAN",
@@ -2707,8 +2839,12 @@
       "relatedWords": []
     },
     "bank": {
-      "word": "BANK",
+      "word": "BANC; BANCUS; BANK",
       "definitions": [
+        {
+          "text": "A bench; a high seat, or seat of distinction or judgment; a tribunal or court. In banc, In banco (the ablative of bancus), In bank, in full court, or with full judicial authority; as, sittings in banc (distinguished from sittings at nisi prius).",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A mound, pile, or ridge of earth, raised above the surrounding level; hence, anything shaped like a mound or ridge of earth; as, a bank of clouds; a bank of snow. They cast up a bank against the city. 2 Sam. xx. 15.",
           "partOfSpeech": "noun"
@@ -3588,6 +3724,26 @@
       "word": "BANKRUPT",
       "definitions": [
         {
+          "text": "(Old Eng. Low)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A trader who secretes himself, or does certain other acts tending to defraud his creditors. Blackstone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A trader who becomes unable to pay his debts; an insolvent trader; popularly, any person who is unable to pay his debts; an insolvent person. M",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A person who, in accordance with the terms of a law relating to bankruptcy, has been judicially declared to be unable to meet his liabilities. made a bankrupt; a non-trader failing to meet his liabilities being an \"insolvent\". But this distinction was abolished by the Bankruptcy Act of 1861. The laws of 1841 and 1867 of the United States relating to bankruptcy applied this designation bankrupt to others besides those engaged in trade.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Being a bankrupt or in a condition of bankruptcy; unable to pay, or legally discharged from paying, one's debts; as, a bankrupt merchant.",
           "partOfSpeech": "adjective"
         },
@@ -3600,7 +3756,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Destitute of, or wholly wanting (something once possessed, or something one should possess). \"Bankrupt in gratitude.\" Sheridan. Bankrupt law, a law by which the property of a person who is unable or unwilling to pay his debts may be taken and distributed to his creditors, and by which a person who has made a full surrender of his",
+          "text": "Destitute of, or wholly wanting (something once possessed, or something one should possess). \"Bankrupt in gratitude.\" Sheridan. Bankrupt law, a law by which the property of a person who is unable or unwilling to pay his debts may be taken and distributed to his creditors, and by which a person who has made a full surrender of his property, and is free from fraud, may be discharged from the legal obligation of his debts. See Insolvent, a.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3801,32 +3957,6 @@
         "weakening"
       ]
     },
-    "bankrupthadhisbenchiemoneytablebrokensee1stbankand": {
-      "word": "bankrupt had his bench ( i.e., money table) broken. See 1st Bank, and",
-      "definitions": [
-        {
-          "text": "(Old Eng. Low)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A trader who secretes himself, or does certain other acts tending to defraud his creditors. Blackstone.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A trader who becomes unable to pay his debts; an insolvent trader; popularly, any person who is unable to pay his debts; an insolvent person. M",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A person who, in accordance with the terms of a law relating to bankruptcy, has been judicially declared to be unable to meet his liabilities. made a bankrupt; a non-trader failing to meet his liabilities being an \"insolvent\". But this distinction was abolished by the Bankruptcy Act of 1861. The laws of 1841 and 1867 of the United States relating to bankruptcy applied this designation bankrupt to others besides those engaged in trade.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "bankside": {
       "word": "BANKSIDE",
       "definitions": [
@@ -3866,6 +3996,189 @@
         }
       ],
       "relatedWords": []
+    },
+    "banner": {
+      "word": "BANNER",
+      "definitions": [
+        {
+          "text": "A kind of flag attached to a spear or pike by a crosspiece, and used by a chief as his standard in battle. Hang out our banners on the outward walls. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A large piece of silk or other cloth, with a device or motto, extended on a crosspiece, and borne in a procession, or suspended in some conspicuous place.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any flag or standard; as, the star-spangled banner. Banner fish (Zoöl.), a large fish of the genus Histiophorus, of the Swordfish family, having a broad bannerlike dorsal fin; the sailfish. One species (H. Americanus) inhabits the North Atlantic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Communist threat",
+        "Dannebrog",
+        "Jolly Roger",
+        "Old Glory",
+        "Star-Spangled Banner",
+        "Stars and Stripes",
+        "Union Flag",
+        "Union Jack",
+        "Western imperialism",
+        "and blue",
+        "arch",
+        "atrocity story",
+        "badge",
+        "banderole",
+        "bang-up",
+        "banner head",
+        "banneret",
+        "battle hymn",
+        "black flag",
+        "bloody shirt",
+        "blue ensign",
+        "blue-ribbon",
+        "bunting",
+        "burgee",
+        "capital",
+        "caption",
+        "cardinal",
+        "central",
+        "champion",
+        "character",
+        "characteristic",
+        "chief",
+        "coachwhip",
+        "color",
+        "colors",
+        "crostarie",
+        "crowning",
+        "device",
+        "differentia",
+        "dominant",
+        "drop head",
+        "dropline",
+        "earmark",
+        "ensign",
+        "epigraph",
+        "expansionism",
+        "face",
+        "fiery cross",
+        "first",
+        "first-class",
+        "first-rate",
+        "first-string",
+        "flag",
+        "focal",
+        "foremost",
+        "gonfalon",
+        "gonfanon",
+        "great",
+        "guidon",
+        "hallmark",
+        "hanger",
+        "head",
+        "heading",
+        "headline",
+        "headmost",
+        "hegemonic",
+        "house flag",
+        "idiosyncrasy",
+        "image",
+        "imperialist threat",
+        "important",
+        "independence",
+        "index",
+        "indicant",
+        "indicator",
+        "insignia",
+        "jack",
+        "jump head",
+        "keynote",
+        "leading",
+        "legend",
+        "long pennant",
+        "magisterial",
+        "main",
+        "manifest destiny",
+        "mark",
+        "martial music",
+        "master",
+        "measure",
+        "memorable",
+        "merchant flag",
+        "momentous",
+        "motto",
+        "national anthem",
+        "national flag",
+        "notable",
+        "note",
+        "noteworthy",
+        "oriflamme",
+        "overline",
+        "overruling",
+        "paramount",
+        "peculiarity",
+        "pendant",
+        "pennant",
+        "pennon",
+        "pennoncel",
+        "picture",
+        "predominant",
+        "preeminent",
+        "preponderant",
+        "prevailing",
+        "primal",
+        "primary",
+        "prime",
+        "principal",
+        "property",
+        "ranking",
+        "red",
+        "red ensign",
+        "representation",
+        "representative",
+        "royal standard",
+        "rubric",
+        "ruling",
+        "running head",
+        "running title",
+        "scarehead",
+        "screamer",
+        "seal",
+        "self-determination",
+        "sigil",
+        "sign",
+        "signal",
+        "signal flag",
+        "signature",
+        "sovereign",
+        "spread",
+        "spreadhead",
+        "stamp",
+        "standard",
+        "star",
+        "stellar",
+        "streamer",
+        "subhead",
+        "subheading",
+        "subtitle",
+        "supereminent",
+        "superscription",
+        "sure sign",
+        "swallowtail",
+        "symbol",
+        "symptom",
+        "telltale sign",
+        "title",
+        "title page",
+        "top-notch",
+        "topflight",
+        "trait",
+        "tricolor",
+        "vexillum",
+        "war song",
+        "white",
+        "yellow peril"
+      ]
     },
     "bannered": {
       "word": "BANNERED",
@@ -4123,6 +4436,16 @@
         "wine and dine"
       ]
     },
+    "banqueter": {
+      "word": "BANQUETTER; BANQUETER",
+      "definitions": [
+        {
+          "text": "One who banquets; one who feasts or makes feasts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "banquette": {
       "word": "BANQUETTE",
       "definitions": [
@@ -4145,7 +4468,7 @@
       ],
       "relatedWords": []
     },
-    "banquetterbanqueter": {
+    "banquetter": {
       "word": "BANQUETTER; BANQUETER",
       "definitions": [
         {
@@ -4155,7 +4478,7 @@
       ],
       "relatedWords": []
     },
-    "bansheebanshie": {
+    "banshee": {
       "word": "BANSHEE; BANSHIE",
       "definitions": [
         {
@@ -4163,9 +4486,102 @@
           "partOfSpeech": "noun"
         }
       ],
+      "relatedWords": [
+        "Ariel",
+        "Befind",
+        "Corrigan",
+        "Finnbeara",
+        "Mab",
+        "Masan",
+        "Oberon",
+        "Titania",
+        "apparition",
+        "appearance",
+        "astral",
+        "astral spirit",
+        "brownie",
+        "cluricaune",
+        "control",
+        "departed spirit",
+        "disembodied spirit",
+        "duppy",
+        "dwarf",
+        "dybbuk",
+        "eidolon",
+        "elf",
+        "fairy",
+        "fairy queen",
+        "fay",
+        "form",
+        "ghost",
+        "gnome",
+        "goblin",
+        "grateful dead",
+        "gremlin",
+        "guide",
+        "hant",
+        "haunt",
+        "hob",
+        "idolum",
+        "immateriality",
+        "imp",
+        "incorporeal",
+        "incorporeal being",
+        "incorporeity",
+        "kobold",
+        "larva",
+        "lemures",
+        "leprechaun",
+        "manes",
+        "materialization",
+        "oni",
+        "ouphe",
+        "peri",
+        "phantasm",
+        "phantasma",
+        "phantom",
+        "pixie",
+        "poltergeist",
+        "pooka",
+        "presence",
+        "puca",
+        "pwca",
+        "revenant",
+        "shade",
+        "shadow",
+        "shape",
+        "shrouded spirit",
+        "specter",
+        "spectral ghost",
+        "spirit",
+        "spook",
+        "sprite",
+        "sylph",
+        "sylphid",
+        "theophany",
+        "unsubstantiality",
+        "vision",
+        "walking dead man",
+        "wandering soul",
+        "wraith",
+        "zombie"
+      ]
+    },
+    "banshie": {
+      "word": "BANSHEE; BANSHIE",
+      "definitions": [
+        {
+          "text": "A supernatural being supposed by the Irish and Scotch peasantry to warn a family of the speedy death of one of its members, by wailing or singing in a mournful voice under the windows of the house.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A supernatural being supposed to warn a family of the approaching death of one of its members, by wailing or singing in a mournful voice.",
+          "partOfSpeech": "noun"
+        }
+      ],
       "relatedWords": []
     },
-    "banssheebanshie": {
+    "bansshee": {
       "word": "BANSSHEE; BANSHIE",
       "definitions": [
         {
@@ -4425,7 +4841,7 @@
       "word": "BANTU",
       "definitions": [
         {
-          "text": "A member of one of the great family of Negroid tribes occupying equatorial and southern Africa. These tribes include, as important divisions, the Kafirs, Damaras, Bechuanas, and many tribes whose names begin with Aba-, Ama-, Ba-, Ma-, Wa-, variants of the Bantu plural personal prefix Aba-, as in Ba-ntu, or Aba-ntu, itself a",
+          "text": "A member of one of the great family of Negroid tribes occupying equatorial and southern Africa. These tribes include, as important divisions, the Kafirs, Damaras, Bechuanas, and many tribes whose names begin with Aba-, Ama-, Ba-, Ma-, Wa-, variants of the Bantu plural personal prefix Aba-, as in Ba-ntu, or Aba-ntu, itself a combination of this prefix with the syllable -ntu, a person. -- Ban\"tu, a.",
           "partOfSpeech": "noun"
         }
       ],

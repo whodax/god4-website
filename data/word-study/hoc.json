@@ -29,6 +29,10 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "The popliteal space; the ham.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To disable by cutting the tendons of the hock; to hamstring; to hough.",
           "partOfSpeech": "verb"
         }
@@ -137,16 +141,6 @@
       ],
       "relatedWords": []
     },
-    "hockhough": {
-      "word": "HOCK; HOUGH",
-      "definitions": [
-        {
-          "text": "The popliteal space; the ham.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "hockle": {
       "word": "HOCKLE",
       "definitions": [
@@ -187,7 +181,7 @@
       ],
       "relatedWords": []
     },
-    "hocuspocushocuspocus": {
+    "hocuspocus": {
       "word": "HOCUSPOCUS; HOCUS-POCUS",
       "definitions": [
         {
@@ -207,7 +201,36 @@
           "partOfSpeech": "verb"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "abracadabra",
+        "artifice",
+        "cheat",
+        "chicanery",
+        "con game",
+        "conjuring",
+        "deceit",
+        "deception",
+        "duplicity",
+        "flimflam",
+        "gibberish",
+        "hanky-panky",
+        "hoax",
+        "humbug",
+        "incantation",
+        "jiggery-pokery",
+        "jugglery",
+        "legerdemain",
+        "magic",
+        "mischief",
+        "mumbo-jumbo",
+        "nonsense",
+        "prestidigitation",
+        "rigmarole",
+        "sleight of hand",
+        "swindle",
+        "trick",
+        "trickery"
+      ]
     }
   }
 }

@@ -32,7 +32,7 @@
         "train"
       ]
     },
-    "cavalerocavaliero": {
+    "cavalero": {
       "word": "CAVALERO; CAVALIERO",
       "definitions": [
         {
@@ -233,6 +233,16 @@
       "definitions": [
         {
           "text": "A disdanful manner.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cavaliero": {
+      "word": "CAVALERO; CAVALIERO",
+      "definitions": [
+        {
+          "text": "A cavalier; a gallant; a libertine. Shak.",
           "partOfSpeech": "noun"
         }
       ],
@@ -673,7 +683,7 @@
       ],
       "relatedWords": []
     },
-    "cavessoncavezon": {
+    "cavesson": {
       "word": "CAVESSON; CAVEZON",
       "definitions": [
         {
@@ -693,7 +703,50 @@
       ],
       "relatedWords": []
     },
-    "caviarecaviar": {
+    "cavezon": {
+      "word": "CAVESSON; CAVEZON",
+      "definitions": [
+        {
+          "text": "A kind of noseband used in breaking and training horses. [Written also caveson, causson.] White.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caviar": {
+      "word": "CAVIARE; CAVIAR",
+      "definitions": [
+        {
+          "text": "The roes of the sturgeon, prepared and salted; -- used as a relish, esp. in Russia. time, but was not relished by most. Hence Hamlet says of a certain play. \"'T was caviare to the general,\" i. e., above the taste of the common people.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "albumen",
+        "anguille",
+        "eel",
+        "egg",
+        "egg white",
+        "eggshell",
+        "fish",
+        "fish eggs",
+        "glair",
+        "kipper",
+        "kippered salmon",
+        "ovule",
+        "poisson",
+        "red herring",
+        "roe",
+        "seafood",
+        "smoked herring",
+        "spawn",
+        "vitellus",
+        "white",
+        "yellow",
+        "yolk"
+      ]
+    },
+    "caviare": {
       "word": "CAVIARE; CAVIAR",
       "definitions": [
         {
@@ -736,6 +789,10 @@
         },
         {
           "text": "A captious or frivolous objection. All the cavils of prejudice and unbelief. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who cavils. Cavilers at the style of the Scriptures. Boyle.",
           "partOfSpeech": "noun"
         }
       ],
@@ -859,7 +916,7 @@
         "wrangle"
       ]
     },
-    "cavilcavilercaviller": {
+    "caviler": {
       "word": "CAVIL; CAVILER; CAVILLER",
       "definitions": [
         {
@@ -920,7 +977,27 @@
       ],
       "relatedWords": []
     },
-    "cavilouscavillous": {
+    "caviller": {
+      "word": "CAVIL; CAVILER; CAVILLER",
+      "definitions": [
+        {
+          "text": "One who cavils. Cavilers at the style of the Scriptures. Boyle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cavillous": {
+      "word": "CAVILOUS; CAVILLOUS",
+      "definitions": [
+        {
+          "text": "Characterized by caviling, or disposed to cavil; quibbing. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cavilous": {
       "word": "CAVILOUS; CAVILLOUS",
       "definitions": [
         {

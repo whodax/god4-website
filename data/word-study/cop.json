@@ -98,7 +98,17 @@
         "walk off with"
       ]
     },
-    "copaibacopaiva": {
+    "copaiba": {
+      "word": "COPAIBA; COPAIVA",
+      "definitions": [
+        {
+          "text": "A more or less viscid, vellowish liquid, the bitter oleoresin of several species of Copaifera, a genus of trees growing in South America and the West Indies. It is stimulant and diuretic, and is much used in affections of the mucous membranes; -- called also balsam of copaiba. [Written also capivi.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "copaiva": {
       "word": "COPAIBA; COPAIVA",
       "definitions": [
         {
@@ -192,7 +202,11 @@
       "word": "COPARTNERSHIP",
       "definitions": [
         {
-          "text": "The state of being a copartner or of having a joint interest in",
+          "text": "The state of being a copartner or of having a joint interest in any matter.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A partnership or firm; as, A. and B. have this day formed a copartnership.",
           "partOfSpeech": "noun"
         }
       ],

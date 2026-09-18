@@ -642,22 +642,115 @@
       ],
       "relatedWords": []
     },
+    "cryptic": {
+      "word": "CRYPTIC; CRYPTICAL",
+      "definitions": [
+        {
+          "text": "Hidden; secret; occult. \"Her [nature's] more cryptic ways of working.\" Glanvill.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abstruse",
+        "arcane",
+        "between the lines",
+        "cabalistic",
+        "cabbalistic",
+        "censored",
+        "classified",
+        "close",
+        "closed",
+        "concealed",
+        "covert",
+        "dark",
+        "delitescent",
+        "dormant",
+        "enigmatic",
+        "equivocal",
+        "esoteric",
+        "evasive",
+        "hermetic",
+        "hibernating",
+        "hidden",
+        "hush-hush",
+        "incomprehensible",
+        "inexplicable",
+        "inscrutable",
+        "latent",
+        "lurking",
+        "muffled",
+        "murky",
+        "mysterious",
+        "mystic",
+        "mystical",
+        "mystifying",
+        "nebulous",
+        "obfuscated",
+        "obscure",
+        "obscured",
+        "occult",
+        "opaque",
+        "perplexing",
+        "possible",
+        "potential",
+        "puzzling",
+        "recondite",
+        "restricted",
+        "riddling",
+        "secret",
+        "secretive",
+        "sleeping",
+        "smothered",
+        "sphinxlike",
+        "stifled",
+        "strange",
+        "submerged",
+        "suppressed",
+        "tenebrous",
+        "top secret",
+        "ulterior",
+        "unbreatheable",
+        "unclear",
+        "under security",
+        "under the surface",
+        "under wraps",
+        "underlying",
+        "undisclosable",
+        "undisclosed",
+        "undivulgable",
+        "undivulged",
+        "unfathomable",
+        "uninformative",
+        "unmanifested",
+        "unrevealable",
+        "unrevealed",
+        "unspoken",
+        "untellable",
+        "untold",
+        "unutterable",
+        "unuttered",
+        "unwhisperable",
+        "vague",
+        "veiled",
+        "virtual"
+      ]
+    },
+    "cryptical": {
+      "word": "CRYPTIC; CRYPTICAL",
+      "definitions": [
+        {
+          "text": "Hidden; secret; occult. \"Her [nature's] more cryptic ways of working.\" Glanvill.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "cryptically": {
       "word": "CRYPTICALLY",
       "definitions": [
         {
           "text": "Secretly; occultly.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "crypticcryptical": {
-      "word": "CRYPTIC; CRYPTICAL",
-      "definitions": [
-        {
-          "text": "Hidden; secret; occult. \"Her [nature's] more cryptic ways of working.\" Glanvill.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -712,7 +805,17 @@
       ],
       "relatedWords": []
     },
-    "cryptogamiancryptogamiccryptogamous": {
+    "cryptogamian": {
+      "word": "CRYPTOGAMIAN; CRYPTOGAMIC; CRYPTOGAMOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the series Cryptogamia, or to plants of that series.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cryptogamic": {
       "word": "CRYPTOGAMIAN; CRYPTOGAMIC; CRYPTOGAMOUS",
       "definitions": [
         {
@@ -728,6 +831,16 @@
         {
           "text": "One skilled in cryptogamic botany.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cryptogamous": {
+      "word": "CRYPTOGAMIAN; CRYPTOGAMIC; CRYPTOGAMOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the series Cryptogamia, or to plants of that series.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -772,7 +885,17 @@
       ],
       "relatedWords": []
     },
-    "cryptographiccryptographical": {
+    "cryptographic": {
+      "word": "CRYPTOGRAPHIC; CRYPTOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Relating to cryptography; written in secret characters or in cipher, or with sympathetic ink.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cryptographical": {
       "word": "CRYPTOGRAPHIC; CRYPTOGRAPHICAL",
       "definitions": [
         {
@@ -1234,7 +1357,17 @@
         "turn to stone"
       ]
     },
-    "crystallogeniccrystallogenical": {
+    "crystallogenic": {
+      "word": "CRYSTALLOGENIC; CRYSTALLOGENICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the production of crystals; crystal-producing; as, crystallogenic attraction.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crystallogenical": {
       "word": "CRYSTALLOGENIC; CRYSTALLOGENICAL",
       "definitions": [
         {
@@ -1264,22 +1397,32 @@
       ],
       "relatedWords": []
     },
+    "crystallographic": {
+      "word": "CRYSTALLOGRAPHIC; CRYSTALLOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to crystallography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crystallographical": {
+      "word": "CRYSTALLOGRAPHIC; CRYSTALLOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to crystallography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "crystallographically": {
       "word": "CRYSTALLOGRAPHICALLY",
       "definitions": [
         {
           "text": "In the manner of crystallography.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "crystallographiccrystallographical": {
-      "word": "CRYSTALLOGRAPHIC; CRYSTALLOGRAPHICAL",
-      "definitions": [
-        {
-          "text": "Pertaining to crystallography.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1373,7 +1516,7 @@
       ],
       "relatedWords": []
     },
-    "crystallologycristallology": {
+    "crystallology": {
       "word": "CRYSTALLOLOGY; CRISTALLOLOGY",
       "definitions": [
         {

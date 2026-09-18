@@ -1003,7 +1003,27 @@
         "well-grounded"
       ]
     },
-    "dependantdependancedependancy": {
+    "dependance": {
+      "word": "DEPENDANT; DEPENDANCE; DEPENDANCY",
+      "definitions": [
+        {
+          "text": "See Dependent, Dependence, Dependency. French; the forms dependent, etc., are from the Latin. Some authorities give preference to the form dependant when the word is a noun, thus distinguishing it from the adjective, usually written dependent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dependancy": {
+      "word": "DEPENDANT; DEPENDANCE; DEPENDANCY",
+      "definitions": [
+        {
+          "text": "See Dependent, Dependence, Dependency. French; the forms dependent, etc., are from the Latin. Some authorities give preference to the form dependant when the word is a noun, thus distinguishing it from the adjective, usually written dependent.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dependant": {
       "word": "DEPENDANT; DEPENDANCE; DEPENDANCY",
       "definitions": [
         {
@@ -1544,7 +1564,7 @@
       "word": "DEPHLOGISTICCATE",
       "definitions": [
         {
-          "text": "To deprive of phlogiston, or the supposed principle of inflammability. Priestley. Dephlogisticated air, oxygen gas; -- so",
+          "text": "To deprive of phlogiston, or the supposed principle of inflammability. Priestley. Dephlogisticated air, oxygen gas; -- so called by Dr. Priestly and others of his time.",
           "partOfSpeech": "verb"
         }
       ],
@@ -2363,6 +2383,10 @@
         {
           "text": "To open out; to unfold; to spread out (a body of troops) in such a way that they shall display a wider front and less depth; -- the reverse of ploy; as, to deploy a column of troops into line of battle.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "The act of deploying; a spreading out of a body of men in order to extend their front. -Wilhelm. Deployments . . . which cause the soldier to turn his back to the enemy are not suited to war.H.L. Scott.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -2481,7 +2505,7 @@
         "zero in on"
       ]
     },
-    "deploydeployment": {
+    "deployment": {
       "word": "DEPLOY; DEPLOYMENT",
       "definitions": [
         {
@@ -2489,7 +2513,108 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "aberration",
+        "addition",
+        "adjunct",
+        "aggrandizement",
+        "allocation",
+        "allotment",
+        "ampliation",
+        "amplification",
+        "apportionment",
+        "arrangement",
+        "array",
+        "arraying",
+        "assignment",
+        "augmentation",
+        "battle array",
+        "broadening",
+        "centrifugence",
+        "close formation",
+        "collation",
+        "collocation",
+        "concord",
+        "constitution",
+        "crescendo",
+        "decentralization",
+        "deposit",
+        "deposition",
+        "deviation",
+        "dispersion",
+        "disposal",
+        "disposition",
+        "distribution",
+        "divarication",
+        "divergence",
+        "divergency",
+        "division",
+        "echelon",
+        "emplacement",
+        "enlargement",
+        "expansion",
+        "extension",
+        "fanning",
+        "fanning out",
+        "flare",
+        "form",
+        "formation",
+        "formulation",
+        "harmony",
+        "hiking",
+        "increase",
+        "lading",
+        "layout",
+        "lineup",
+        "loading",
+        "localization",
+        "locating",
+        "location",
+        "magnification",
+        "marshaling",
+        "open order",
+        "order",
+        "order of battle",
+        "ordering",
+        "organization",
+        "packing",
+        "peace",
+        "pinpointing",
+        "placement",
+        "placing",
+        "positioning",
+        "posting",
+        "proportion",
+        "putting",
+        "quiet",
+        "quietude",
+        "raising",
+        "regimentation",
+        "regularity",
+        "reposition",
+        "routine",
+        "separation",
+        "setup",
+        "situation",
+        "splay",
+        "splaying",
+        "spotting",
+        "spread",
+        "spreading",
+        "spreading out",
+        "stationing",
+        "storage",
+        "stowage",
+        "structure",
+        "structuring",
+        "symmetry",
+        "syntax",
+        "system",
+        "tranquillity",
+        "uniformity",
+        "upping",
+        "widening"
+      ]
     },
     "deplumate": {
       "word": "DEPLUMATE",
@@ -4310,6 +4435,16 @@
       ],
       "relatedWords": []
     },
+    "deprecative": {
+      "word": "DEPRECATIVE",
+      "definitions": [
+        {
+          "text": "Serving to deprecate; deprecatory.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "deprecator": {
       "word": "DEPRECATOR",
       "definitions": [
@@ -4761,7 +4896,7 @@
       "word": "DEPRECIATIVE",
       "definitions": [
         {
-          "text": "Tending, or intended, to depreciate; expressing depreciation;",
+          "text": "Tending, or intended, to depreciate; expressing depreciation; undervaluing.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5742,6 +5877,16 @@
         "woefulness",
         "wretchedness"
       ]
+    },
+    "depressive": {
+      "word": "DEPRESSIVE",
+      "definitions": [
+        {
+          "text": "Able or tending to depress or cast down.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "depressomotor": {
       "word": "DEPRESSOMOTOR",

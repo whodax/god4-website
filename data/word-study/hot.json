@@ -543,7 +543,7 @@
       ],
       "relatedWords": []
     },
-    "hotbulbhotpot": {
+    "hotbulb": {
       "word": "HOT BULB; HOT POT",
       "definitions": [
         {
@@ -563,7 +563,7 @@
       ],
       "relatedWords": []
     },
-    "hotchpothotchpotch": {
+    "hotchpot": {
       "word": "HOTCHPOT; HOTCHPOTCH",
       "definitions": [
         {
@@ -580,6 +580,46 @@
         }
       ],
       "relatedWords": []
+    },
+    "hotchpotch": {
+      "word": "HOTCHPOT; HOTCHPOTCH",
+      "definitions": [
+        {
+          "text": "A mingled mass; a confused mixture; a stew of various ingredients; a hodgepodge. A mixture or hotchpotch of many tastes. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A blending of property for equality of division, as when lands given in frank-marriage to one daughter were, after the death of the ancestor, blended with the lands descending to her and to her sisters from the same ancestor, and then divided in equal portions among all the daughters. In modern usage, a mixing together, or throwing into a common mass or stock, of the estate left by a person deceased and the amounts advanced to any particular child or children, for the purpose of a more equal division, or of equalizing the shares of all the children; the property advanced being accounted for at its value when given. Bouvier. Tomlins. corresponds in a measure with collation in the civil and Scotch law. See Collation. Bouvier. Tomlins.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "agglomeration",
+        "conglomeration",
+        "farrago",
+        "gallimaufry",
+        "hash",
+        "hodgepodge",
+        "jumble",
+        "medley",
+        "melange",
+        "mess",
+        "miscellany",
+        "mishmash",
+        "mixed bag",
+        "mixture",
+        "olio",
+        "olla podrida",
+        "omnium gatherum",
+        "patchwork",
+        "potpourri",
+        "tangle",
+        "welter"
+      ]
     },
     "hotcockles": {
       "word": "HOTCOCKLES",
@@ -1025,6 +1065,16 @@
       ],
       "relatedWords": []
     },
+    "hotpot": {
+      "word": "HOT BULB; HOT POT",
+      "definitions": [
+        {
+          "text": "See Semi-diesel, below.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "hotpress": {
       "word": "HOTPRESS",
       "definitions": [
@@ -1071,11 +1121,15 @@
         {
           "text": "A rash, hot-headed man. Holinshed.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Violent; impetuous; headstrong. Spenser. Peacham.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "hotspurhotspurred": {
+    "hotspurred": {
       "word": "HOTSPUR; HOTSPURRED",
       "definitions": [
         {

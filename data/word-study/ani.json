@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "entries": {
-    "aniano": {
+    "ani": {
       "word": "ANI; ANO",
       "definitions": [
         {
@@ -11,7 +11,7 @@
       ],
       "relatedWords": []
     },
-    "anicutannicut": {
+    "anicut": {
       "word": "ANICUT; ANNICUT",
       "definitions": [
         {
@@ -21,7 +21,7 @@
       ],
       "relatedWords": []
     },
-    "anidiomaticanidiomaticalunidiomaticunidiomatical": {
+    "anidiomatic": {
       "word": "ANIDIOMATIC; ANIDIOMATICAL; UNIDIOMATIC; UNIDIOMATICAL",
       "definitions": [
         {
@@ -31,7 +31,27 @@
       ],
       "relatedWords": []
     },
-    "anientanientise": {
+    "anidiomatical": {
+      "word": "ANIDIOMATIC; ANIDIOMATICAL; UNIDIOMATIC; UNIDIOMATICAL",
+      "definitions": [
+        {
+          "text": "Not idiomatic. [R.] Landor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anient": {
+      "word": "ANIENT; ANIENTISE",
+      "definitions": [
+        {
+          "text": "To frustrate; to bring to naught; to annihilate. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anientise": {
       "word": "ANIENT; ANIENTISE",
       "definitions": [
         {
@@ -51,7 +71,17 @@
       ],
       "relatedWords": []
     },
-    "anightanights": {
+    "anight": {
+      "word": "ANIGHT; ANIGHTS",
+      "definitions": [
+        {
+          "text": "In the night time; at night. [Archaic] Does he hawk anights still Marston.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anights": {
       "word": "ANIGHT; ANIGHTS",
       "definitions": [
         {
@@ -817,7 +847,7 @@
         "zoril"
       ]
     },
-    "animalcularanimalculine": {
+    "animalcular": {
       "word": "ANIMALCULAR; ANIMALCULINE",
       "definitions": [
         {
@@ -841,6 +871,16 @@
         {
           "text": "An animal, invisible, or nearly so, to the naked eye. See Infusoria. having locomotive powers something like those of animals. Among these are Volvox, the Desmidiacæ, and the siliceous Diatomaceæ. Spermatic animalcules. See Spermatozoa.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "animalculine": {
+      "word": "ANIMALCULAR; ANIMALCULINE",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or resembling, animalcules. \"Animalcular life.\" Tyndall.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1829,7 +1869,7 @@
       ],
       "relatedWords": []
     },
-    "animoseanimous": {
+    "animose": {
       "word": "ANIMOSE; ANIMOUS",
       "definitions": [
         {
@@ -1912,6 +1952,16 @@
         "virulence",
         "vitriol"
       ]
+    },
+    "animous": {
+      "word": "ANIMOSE; ANIMOUS",
+      "definitions": [
+        {
+          "text": "Full of spirit; hot; vehement; resolute. [Obs.] Ash.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "animus": {
       "word": "ANIMUS",
@@ -2061,16 +2111,6 @@
         "will power",
         "wish"
       ]
-    },
-    "aninveteracyofevilhabitsthatwillprompthimtocontractmore": {
-      "word": "An inveteracy of evil habits that will prompt him to contract more.",
-      "definitions": [
-        {
-          "text": "Malignity; spitefulness; virulency. The rancor of pamphlets, the inveteracy of epigrams, an the mortification of lampoons. Guardian.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
     },
     "anion": {
       "word": "ANION",
@@ -2322,7 +2362,17 @@
       ],
       "relatedWords": []
     },
-    "anisotropeanisotropic": {
+    "anisotrope": {
+      "word": "ANISOTROPE; ANISOTROPIC",
+      "definitions": [
+        {
+          "text": "Not isotropic; having different properties in different directions; thus, crystals of the isometric system are optically isotropic, but all other crystals are anisotropic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anisotropic": {
       "word": "ANISOTROPE; ANISOTROPIC",
       "definitions": [
         {

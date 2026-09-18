@@ -61,7 +61,7 @@
       ],
       "relatedWords": []
     },
-    "aquarialaquarian": {
+    "aquarial": {
       "word": "AQUARIAL; AQUARIAN",
       "definitions": [
         {
@@ -72,8 +72,12 @@
       "relatedWords": []
     },
     "aquarian": {
-      "word": "AQUARIAN",
+      "word": "AQUARIAL; AQUARIAN",
       "definitions": [
+        {
+          "text": "Of or pertaining to an aquarium.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One of a sect of Christian in the primitive church who used water instead of wine in the Lord's Supper.",
           "partOfSpeech": "noun"
@@ -184,7 +188,59 @@
       ],
       "relatedWords": []
     },
-    "aquatintaquatinta": {
+    "aquatint": {
+      "word": "AQUATINT; AQUATINTA",
+      "definitions": [
+        {
+          "text": "A kind of etching in which spaces are bitten by the use of aqua fortis, by which an effect is produced resembling a drawing in water colors or India ink; also, the engraving produced by this method.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "autolithograph",
+        "block",
+        "block print",
+        "cerography",
+        "chalcography",
+        "chromolithograph",
+        "color print",
+        "copperplate",
+        "copperplate print",
+        "crayon engraving",
+        "cribbling",
+        "cut",
+        "drypoint",
+        "engravement",
+        "engraving",
+        "etching",
+        "graphotype",
+        "impress",
+        "impression",
+        "imprint",
+        "intaglio",
+        "linoleum-block print",
+        "lithograph",
+        "metal cut",
+        "mezzotint",
+        "negative",
+        "photoengraving",
+        "plate engraving",
+        "print",
+        "pyrogravure",
+        "relief method",
+        "rubber-block print",
+        "steel engraving",
+        "vignette",
+        "wood engraving",
+        "woodblock",
+        "woodburning",
+        "woodcut",
+        "woodprint",
+        "xylograph",
+        "zincography"
+      ]
+    },
+    "aquatinta": {
       "word": "AQUATINT; AQUATINTA",
       "definitions": [
         {

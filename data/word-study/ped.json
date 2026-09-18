@@ -37,11 +37,15 @@
         {
           "text": "See Pedagogics.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to a pedagogue; suited to, or characteristic of, a pedagogue.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "pedagogicpedagogical": {
+    "pedagogical": {
       "word": "PEDAGOGIC; PEDAGOGICAL",
       "definitions": [
         {
@@ -185,6 +189,26 @@
       ],
       "relatedWords": []
     },
+    "pedantic": {
+      "word": "PEDANTIC; PEDANTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a pedant; characteristic of, or resembling, a pedant; ostentatious of learning; as, a pedantic writer; a pedantic description; a pedantical affectation. \"Figures pedantical.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pedantical": {
+      "word": "PEDANTIC; PEDANTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a pedant; characteristic of, or resembling, a pedant; ostentatious of learning; as, a pedantic writer; a pedantic description; a pedantical affectation. \"Figures pedantical.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "pedantically": {
       "word": "PEDANTICALLY",
       "definitions": [
@@ -201,16 +225,6 @@
         {
           "text": "Pedantically. [R.]",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pedanticpedantical": {
-      "word": "PEDANTIC; PEDANTICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to a pedant; characteristic of, or resembling, a pedant; ostentatious of learning; as, a pedantic writer; a pedantic description; a pedantical affectation. \"Figures pedantical.\" Shak.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -299,7 +313,7 @@
       "word": "PEDATE",
       "definitions": [
         {
-          "text": "Palmate, with the lateral lobes cleft into two or more",
+          "text": "Palmate, with the lateral lobes cleft into two or more segments; -- said of a leaf.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -515,6 +529,16 @@
         {
           "text": "Proceeding step by step; advancing cautiously. [R.] That pedetentous pace and pedetentous mind in which it behooves the wise and virtuous improver to walk. Sydney Smith.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pedi": {
+      "word": "PEDI-; PEDO-",
+      "definitions": [
+        {
+          "text": "Combining forms from L. pes, pedis, foot, as pedipalp, pedireme, pedometer.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -863,16 +887,6 @@
       ],
       "relatedWords": []
     },
-    "pedipedo": {
-      "word": "PEDI-; PEDO-",
-      "definitions": [
-        {
-          "text": "Combining forms from L. pes, pedis, foot, as pedipalp, pedireme, pedometer.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "pedireme": {
       "word": "PEDIREME",
       "definitions": [
@@ -883,12 +897,32 @@
       ],
       "relatedWords": []
     },
-    "pedlarpedler": {
+    "pedlar": {
       "word": "PEDLAR; PEDLER",
       "definitions": [
         {
           "text": "See Peddler.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pedler": {
+      "word": "PEDLAR; PEDLER",
+      "definitions": [
+        {
+          "text": "See Peddler.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pedo": {
+      "word": "PEDI-; PEDO-",
+      "definitions": [
+        {
+          "text": "Combining forms from L. pes, pedis, foot, as pedipalp, pedireme, pedometer.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -953,7 +987,17 @@
       ],
       "relatedWords": []
     },
-    "pedometricpedometrical": {
+    "pedometric": {
+      "word": "PEDOMETRIC; PEDOMETRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or measured by, a pedometer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pedometrical": {
       "word": "PEDOMETRIC; PEDOMETRICAL",
       "definitions": [
         {
@@ -1053,7 +1097,17 @@
       ],
       "relatedWords": []
     },
-    "pedunculatepedunculated": {
+    "pedunculate": {
+      "word": "PEDUNCULATE; PEDUNCULATED",
+      "definitions": [
+        {
+          "text": "Having a peduncle; growing on a peduncle; as, a pedunculate flower; a pedunculate eye, as in a lobster.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pedunculated": {
       "word": "PEDUNCULATE; PEDUNCULATED",
       "definitions": [
         {

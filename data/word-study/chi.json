@@ -21,11 +21,21 @@
       ],
       "relatedWords": []
     },
-    "chiasmchiasma": {
+    "chiasm": {
       "word": "CHIASM; CHIASMA",
       "definitions": [
         {
-          "text": "A commissure; especially, the optic commissure, or crucial",
+          "text": "A commissure; especially, the optic commissure, or crucial union of the optic nerves.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chiasma": {
+      "word": "CHIASM; CHIASMA",
+      "definitions": [
+        {
+          "text": "A commissure; especially, the optic commissure, or crucial union of the optic nerves.",
           "partOfSpeech": "noun"
         }
       ],
@@ -61,7 +71,17 @@
       ],
       "relatedWords": []
     },
-    "chibouquechibouk": {
+    "chibouk": {
+      "word": "CHIBOUQUE; CHIBOUK",
+      "definitions": [
+        {
+          "text": "A Turkish pipe, usually with a mouthpiece of amber, a stem, four or five feet long and not pliant, of some valuable wood, and a bowl of baked clay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chibouque": {
       "word": "CHIBOUQUE; CHIBOUK",
       "definitions": [
         {
@@ -422,7 +442,17 @@
       ],
       "relatedWords": []
     },
-    "chichlingchichlingvetch": {
+    "chichling": {
+      "word": "CHICHLING; CHICHLING VETCH",
+      "definitions": [
+        {
+          "text": "A leguminous plant (Lathyrus sativus), with broad flattened seeds which are sometimes used for food.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chichlingvetch": {
       "word": "CHICHLING; CHICHLING VETCH",
       "definitions": [
         {
@@ -1070,7 +1100,17 @@
       ],
       "relatedWords": []
     },
-    "chiclechiclegum": {
+    "chicle": {
+      "word": "CHICLE; CHICLE GUM",
+      "definitions": [
+        {
+          "text": "A gumlike substance obtained from the bully tree (Mimusops globosa) and sometimes also from the naseberry or sapodilla (Sapota zapotilla). It is more plastic than caoutchouc and more elastic than gutta-percha, as an adulterant of which it is used in England. It is used largely in the United States in making chewing gum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chiclegum": {
       "word": "CHICLE; CHICLE GUM",
       "definitions": [
         {
@@ -1828,7 +1868,152 @@
         "tetrarch"
       ]
     },
-    "chieftaincychieftainship": {
+    "chieftaincy": {
+      "word": "CHIEFTAINCY; CHIEFTAINSHIP",
+      "definitions": [
+        {
+          "text": "The rank, dignity, or office of a chieftain.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aedileship",
+        "ally",
+        "archbishopric",
+        "archduchy",
+        "archdukedom",
+        "archiepiscopacy",
+        "archiepiscopate",
+        "aristocracy",
+        "bishopric",
+        "body politic",
+        "buffer state",
+        "captive nation",
+        "chairmanship",
+        "chancellery",
+        "chancellorate",
+        "chancellorship",
+        "chiefery",
+        "chiefry",
+        "chieftainry",
+        "chieftainship",
+        "city-state",
+        "colony",
+        "commonweal",
+        "commonwealth",
+        "consulate",
+        "consulship",
+        "country",
+        "county",
+        "deanery",
+        "dictatorship",
+        "dictature",
+        "directorship",
+        "domain",
+        "dominion",
+        "duchy",
+        "dukedom",
+        "earldom",
+        "emirate",
+        "empery",
+        "empire",
+        "episcopacy",
+        "free city",
+        "governorship",
+        "grand duchy",
+        "headship",
+        "hegemony",
+        "hierarchy",
+        "kingdom",
+        "land",
+        "leadership",
+        "lordship",
+        "magistracy",
+        "magistrateship",
+        "magistrature",
+        "mandant",
+        "mandate",
+        "mandated territory",
+        "mandatee",
+        "mandatory",
+        "masterdom",
+        "mastership",
+        "mastery",
+        "mayoralty",
+        "mayorship",
+        "metropolitanate",
+        "metropolitanship",
+        "nation",
+        "nationality",
+        "nobility",
+        "papacy",
+        "pashadom",
+        "pashalic",
+        "patriarchate",
+        "patriarchy",
+        "polis",
+        "polity",
+        "pontificality",
+        "pontificate",
+        "popedom",
+        "popehood",
+        "popeship",
+        "possession",
+        "power",
+        "prefectship",
+        "prefecture",
+        "premiership",
+        "presidency",
+        "presidentship",
+        "prime-ministership",
+        "prime-ministry",
+        "princedom",
+        "princeship",
+        "principality",
+        "principate",
+        "proconsulate",
+        "proconsulship",
+        "protectorate",
+        "protectorship",
+        "province",
+        "provostry",
+        "provostship",
+        "puppet government",
+        "puppet regime",
+        "realm",
+        "rectorate",
+        "rectorship",
+        "regency",
+        "regentship",
+        "republic",
+        "ruling class",
+        "satellite",
+        "seigniory",
+        "seneschalship",
+        "seneschalsy",
+        "seneschalty",
+        "settlement",
+        "sheikhdom",
+        "sheriffalty",
+        "sheriffcy",
+        "sheriffdom",
+        "shrievalty",
+        "sovereign nation",
+        "state",
+        "sultanate",
+        "superpower",
+        "supervisorship",
+        "suzerainship",
+        "suzerainty",
+        "territory",
+        "toparchia",
+        "toparchy",
+        "tribunate",
+        "vizierate",
+        "viziership"
+      ]
+    },
+    "chieftainship": {
       "word": "CHIEFTAINCY; CHIEFTAINSHIP",
       "definitions": [
         {
@@ -1858,6 +2043,16 @@
       ],
       "relatedWords": []
     },
+    "chieve": {
+      "word": "CHIEVE",
+      "definitions": [
+        {
+          "text": "See Cheve, v. i. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "chiffchaff": {
       "word": "CHIFF-CHAFF",
       "definitions": [
@@ -1882,7 +2077,25 @@
       ],
       "relatedWords": []
     },
-    "chiffonierchiffoniere": {
+    "chiffonier": {
+      "word": "CHIFFONIER; CHIFFONIERE",
+      "definitions": [
+        {
+          "text": "One who gathers rags and odds and ends; a ragpicker.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A receptacle for rags or shreds.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A movable and ornamental closet or piece of furniture with shelves or drawers. G. Eliot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chiffoniere": {
       "word": "CHIFFONIER; CHIFFONIERE",
       "definitions": [
         {
@@ -1910,7 +2123,17 @@
       ],
       "relatedWords": []
     },
-    "chigoechigre": {
+    "chigoe": {
+      "word": "CHIGOE; CHIGRE",
+      "definitions": [
+        {
+          "text": "A species of flea (Pulex penetrans), common in the West Indies and South America, which often attacks the feet or any exposed part of the human body, and burrowing beneath the skin produces great irritation. When the female is allowed to remain and breed, troublesome sores result, which are sometimes dangerous. See Jigger. [Written also chegre, chegoe, chique, chigger, jigger.] ticks having similar habits.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chigre": {
       "word": "CHIGOE; CHIGRE",
       "definitions": [
         {
@@ -2788,11 +3011,15 @@
         {
           "text": "A native or citizen of Chili.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The commander or chief of a thousand men.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "chilianchiliarch": {
+    "chiliarch": {
       "word": "CHILIAN; CHILIARCH",
       "definitions": [
         {
@@ -3324,7 +3551,7 @@
       "word": "CHILLING",
       "definitions": [
         {
-          "text": "Making chilly or cold; depressing; discouraging; cold; distant;",
+          "text": "Making chilly or cold; depressing; discouraging; cold; distant; as, a chilling breeze; a chilling manner.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3604,7 +3831,17 @@
       ],
       "relatedWords": []
     },
-    "chilostomachilostomata": {
+    "chilostoma": {
+      "word": "CHILOSTOMA; CHILOSTOMATA",
+      "definitions": [
+        {
+          "text": "An extensive suborder of marine Bryozoa, mostly with calcareous shells. They have a movable lip and a lid to close the aperture of the cells. [Also written Chillostomata.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chilostomata": {
       "word": "CHILOSTOMA; CHILOSTOMATA",
       "definitions": [
         {
@@ -4595,7 +4832,17 @@
       ],
       "relatedWords": []
     },
-    "chinchonachincona": {
+    "chinchona": {
+      "word": "CHINCHONA; CHINCONA",
+      "definitions": [
+        {
+          "text": "See Cinchona.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "chincona": {
       "word": "CHINCHONA; CHINCONA",
       "definitions": [
         {
@@ -5436,7 +5683,7 @@
       "word": "CHIPPENDALE",
       "definitions": [
         {
-          "text": "Designating furniture designed, or like that designed, by Thomas Chippendale, an English cabinetmaker of the 18th century. Chippendale furniture was generally of simple but graceful outline with delicately carved rococo ornamentation, sculptured either in the solid wood or, in the cheaper specimens, separately and glued on. In the more elaborate pieces three types are recognized: French Chippendale, having much detail, like Louis Quatorze and Louis Quinze; Chinese Chippendale, marked by latticework and pagodalike pediments; and Gothic Chippendale, attempting to adapt medieval details. The forms, as of the cabriole and chairbacks, often resemble Queen Anne. In chairs, the seat is widened at the front, and the back toward the top widened and bent backward, except in Chinese",
+          "text": "Designating furniture designed, or like that designed, by Thomas Chippendale, an English cabinetmaker of the 18th century. Chippendale furniture was generally of simple but graceful outline with delicately carved rococo ornamentation, sculptured either in the solid wood or, in the cheaper specimens, separately and glued on. In the more elaborate pieces three types are recognized: French Chippendale, having much detail, like Louis Quatorze and Louis Quinze; Chinese Chippendale, marked by latticework and pagodalike pediments; and Gothic Chippendale, attempting to adapt medieval details. The forms, as of the cabriole and chairbacks, often resemble Queen Anne. In chairs, the seat is widened at the front, and the back toward the top widened and bent backward, except in Chinese Chippendale, in which the backs are usually rectangular. -- Chip\"pen*dal*ism (#), n. It must be clearly and unmistakably understood, then, that, whenever painted (that is to say, decorated with painted enrichment) or inlaid furniture is described as Chippendale, no matter where or by whom, it is a million chances to one that the description is incorrect. R. D. Benn.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5770,6 +6017,10 @@
         {
           "text": "To chirp or to make a mournful cry, as a bird. [Obs.] Huloet.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Clamor, or confused noise; buzzing. [Obs.] The churme of a thousand taunts and reproaches. Bacon.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -5818,7 +6069,17 @@
       ],
       "relatedWords": []
     },
-    "chirographicchirographical": {
+    "chirographic": {
+      "word": "CHIROGRAPHIC; CHIROGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to chirography.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "chirographical": {
       "word": "CHIROGRAPHIC; CHIROGRAPHICAL",
       "definitions": [
         {
@@ -5916,7 +6177,7 @@
       ],
       "relatedWords": []
     },
-    "chiromanistchiromantist": {
+    "chiromanist": {
       "word": "CHIROMANIST; CHIROMANTIST",
       "definitions": [
         {
@@ -5926,11 +6187,31 @@
       ],
       "relatedWords": []
     },
-    "chiromanticchiromantical": {
+    "chiromantic": {
       "word": "CHIROMANTIC; CHIROMANTICAL",
       "definitions": [
         {
           "text": "Of or pertaining to chiromancy.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "chiromantical": {
+      "word": "CHIROMANTIC; CHIROMANTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to chiromancy.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "chiromantist": {
+      "word": "CHIROMANIST; CHIROMANTIST",
+      "definitions": [
+        {
+          "text": "A chiromancer.",
           "partOfSpeech": ""
         }
       ],
@@ -6283,7 +6564,17 @@
       ],
       "relatedWords": []
     },
-    "chirurgicchirurgical": {
+    "chirurgic": {
+      "word": "CHIRURGIC; CHIRURGICAL",
+      "definitions": [
+        {
+          "text": "Surgical [Obs.] \"Chirurgical lore\" Longfellow.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chirurgical": {
       "word": "CHIRURGIC; CHIRURGICAL",
       "definitions": [
         {
@@ -6297,7 +6588,7 @@
       "word": "CHISEL",
       "definitions": [
         {
-          "text": "A tool with a cutting edge on one end of a metal blade, used in",
+          "text": "A tool with a cutting edge on one end of a metal blade, used in dressing, shaping, or working in timber, stone, metal, etc.; -- usually driven by a mallet or hammer. Cold chisel. See under Cold, a.",
           "partOfSpeech": "noun"
         },
         {
@@ -7018,7 +7309,17 @@
         "war"
       ]
     },
-    "chivarraschivarros": {
+    "chivarras": {
+      "word": "CHIVARRAS; CHIVARROS",
+      "definitions": [
+        {
+          "text": "Leggings. [Mex. & Southwestern U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "chivarros": {
       "word": "CHIVARRAS; CHIVARROS",
       "definitions": [
         {

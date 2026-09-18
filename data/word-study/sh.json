@@ -1,26 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "shoewornasapartofthehighlandcostumecloutedbroguespatched": {
-      "word": "shoe worn as a part of the Highland costume. Clouted brogues, patched",
-      "definitions": [
-        {
-          "text": "A dialectic pronunciation; esp. the Irish manner of pronouncing English. Or take, Hibernis, thy still ranker brogue. Lloyd.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "shapedorhollowarticlesbyhammeringstampingorspinning": {
-      "word": "shaped or hollow articles, by hammering, stamping, or spinning.",
-      "definitions": [
-        {
-          "text": "[U.S.] W. Irving. sheet metal. which a roof is raised and rests.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "shab": {
       "word": "SHAB",
       "definitions": [
@@ -69,7 +49,7 @@
       ],
       "relatedWords": []
     },
-    "shabbleshabble": {
+    "shabble": {
       "word": "SHABBLE; SHABBLE",
       "definitions": [
         {
@@ -401,7 +381,39 @@
       "word": "SHADOW",
       "definitions": [
         {
-          "text": "Shade within defined limits; obscurity or deprivation of light, apparent on a surface, and representing the form of the body which",
+          "text": "Shade within defined limits; obscurity or deprivation of light, apparent on a surface, and representing the form of the body which intercepts the rays of light; as, the shadow of a man, of a tree, or of a tower. See the Note under Shade, n., 1.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Darkness; shade; obscurity. Night's sable shadows from the ocean rise. Denham.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A shaded place; shelter; protection; security. In secret shadow from the sunny ray, On a sweet bed of lilies softly laid. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A reflected image, as in a mirror or in water. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which follows or attends a person or thing like a shadow; an inseparable companion; hence, an obsequious follower. Sin and her shadow Death. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spirit; a ghost; a shade; a phantom. \"Hence, horrible shadow!\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An imperfect and faint representation; adumbration; indistinct image; dim bodying forth; hence, mystical reprresentation; type. The law having a shadow of good things to come. Heb. x. 1. [Types] and shadows of that destined seed. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small degree; a shade. \"No variableness, neither shadow of turning.\" James i. 17.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An uninvited guest coming with one who is invited. [A Latinism] Nares. I must not have my board pastered with shadows That under other men's protection break in Without invitement. Massinger. Shadow of death, darkness or gloom like that caused by the presence or the impending of death. Ps. xxiii. 4.",
           "partOfSpeech": "noun"
         },
         {
@@ -657,7 +669,17 @@
       ],
       "relatedWords": []
     },
-    "shaftmanshaftment": {
+    "shaftman": {
+      "word": "SHAFTMAN; SHAFTMENT",
+      "definitions": [
+        {
+          "text": "A measure of about six inches. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shaftment": {
       "word": "SHAFTMAN; SHAFTMENT",
       "definitions": [
         {
@@ -725,6 +747,16 @@
       ],
       "relatedWords": []
     },
+    "shagged": {
+      "word": "SHAGGED",
+      "definitions": [
+        {
+          "text": "Shaggy; rough. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "shagginess": {
       "word": "SHAGGINESS",
       "definitions": [
@@ -783,11 +815,23 @@
         {
           "text": "The skin of various small sharks and other fishes when having small, rough, bony scales. The dogfishes of the genus Scyllium furnish a large part of that used in the arts.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Made or covered with the leather called shagreen. \"A shagreen case of lancets.\" T. Hook.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Covered with rough scales or points like those on shagreen.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "shagreenshagreened": {
+    "shagreened": {
       "word": "SHAGREEN; SHAGREENED",
       "definitions": [
         {
@@ -845,7 +889,21 @@
       ],
       "relatedWords": []
     },
-    "shaitansheitan": {
+    "shaitan": {
+      "word": "SHAITAN; SHEITAN",
+      "definitions": [
+        {
+          "text": "Among Mohammedans: (a) An evil spirit; the evil one; the devil. (b) One of bad disposition; a fiend. [Colloq.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Meteor.) A dust storm. [India]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sheitan": {
       "word": "SHAITAN; SHEITAN",
       "definitions": [
         {
@@ -865,6 +923,26 @@
         {
           "text": "obs. p. p. of Shake. Chaucer.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "To cause to move with quick or violent vibrations; to move rapidly one way and the other; to make to tremble or shiver; to agitate. As a fig tree casteth her untimely figs, when she is shaken of a mighty wind. Rev. vi. 13. Ascend my chariot; guide the rapid wheels That shake heaven's basis. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Fig.: To move from firmness; to weaken the stability of; to cause to waver; to impair the resolution of. When his doctrines grew too strong to be shook by his enemies, they persecuted his reputation. Atterbury. Thy equal fear that my firm faith and love Can by his fraud be shaken or seduced. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To give a tremulous tone to; to trill; as, to shake a note in music.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To move or remove by agitating; to throw off by a jolting or vibrating motion; to rid one's self of; -- generally with an adverb, as off, out, etc.; as, to shake fruit down from a tree. Shake off the golden slumber of repose. Shak. 'Tis our fast intent To shake all cares and business from our age. Shak. I could scarcely shake him out of my company. Bunyan. To shake a cask (Naut.), to knock a cask to pieces and pack the staves. clasping and moving hands, as an expression of greeting, farewell, good will, agreement, etc. more canvas. sails to shiver. Ham. Nav. Encyc.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To be agitated with a waving or vibratory motion; to tremble; to shiver; to quake; to totter. Under his burning wheels The steadfast empyrean shook throughout, All but the throne itself of God. Milton. What danger Who 's that that shakes behind there Beau & FL. Shaking piece, a name given by butchers to the piece of beef cut from the under side of the neck. See Illust. of Beef.",
@@ -1095,7 +1173,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "As an auxiliary, shall indicates a duty or necessity whose obligation is derived from the person speaking; as, you shall go; he shall go; that is, I order or promise your going. It thus ordinarily expresses, in the second and third persons, a command, a threat, or a promise. If the auxillary be emphasized, the command is made more imperative, the promise or that more positive and sure. It is also employed in the language of prophecy; as, \"the day shall come when . . . , \" since a promise or threat and an authoritative prophecy nearly coincide in significance. In shall with the first person, the necessity of the action is sometimes implied as residing elsewhere than in the speaker; as, I shall suffer; we shall see; and there is always a less distinct and positive assertion of his volition than is indicated by will. \"I shall go\" implies nearly a simple futurity; more exactly, a foretelling or an expectation of my going, in which, naturally enough, a certain degree of plan or intention may be included; emphasize the shall, and the event is described as certain to occur, and the expression approximates in meaning to our emphatic \"I will go.\" In a question, the relation of speaker and source of obligation is of course transferred to the person addressed; as, \"Shall you go\" (answer, \"I shall go\"); \"Shall he go\" i. e., \"Do you require or promise his going\" (answer, \"He shall go\".) The same relation is transferred to either second or third person in such phrases as \"You say, or think, you shall go;\" \"He says, or thinks, he shall go.\" After a conditional conjunction (as if, whether) shall is used in all persons to express futurity simply; as, if I, you, or he shall say they are right. Should is everywhere used in the same connection and the same senses as shall, as its imperfect. It also expresses duty or moral obligation; as, he should do it whether he will or not. In the early English, and hence in our English Bible,",
+          "text": "As an auxiliary, shall indicates a duty or necessity whose obligation is derived from the person speaking; as, you shall go; he shall go; that is, I order or promise your going. It thus ordinarily expresses, in the second and third persons, a command, a threat, or a promise. If the auxillary be emphasized, the command is made more imperative, the promise or that more positive and sure. It is also employed in the language of prophecy; as, \"the day shall come when . . . , \" since a promise or threat and an authoritative prophecy nearly coincide in significance. In shall with the first person, the necessity of the action is sometimes implied as residing elsewhere than in the speaker; as, I shall suffer; we shall see; and there is always a less distinct and positive assertion of his volition than is indicated by will. \"I shall go\" implies nearly a simple futurity; more exactly, a foretelling or an expectation of my going, in which, naturally enough, a certain degree of plan or intention may be included; emphasize the shall, and the event is described as certain to occur, and the expression approximates in meaning to our emphatic \"I will go.\" In a question, the relation of speaker and source of obligation is of course transferred to the person addressed; as, \"Shall you go\" (answer, \"I shall go\"); \"Shall he go\" i. e., \"Do you require or promise his going\" (answer, \"He shall go\".) The same relation is transferred to either second or third person in such phrases as \"You say, or think, you shall go;\" \"He says, or thinks, he shall go.\" After a conditional conjunction (as if, whether) shall is used in all persons to express futurity simply; as, if I, you, or he shall say they are right. Should is everywhere used in the same connection and the same senses as shall, as its imperfect. It also expresses duty or moral obligation; as, he should do it whether he will or not. In the early English, and hence in our English Bible, shall is the auxiliary mainly used, in all the persons, to express simple futurity. (Cf. Will, v. t.) Shall may be used elliptically; thus, with an adverb or other word expressive of motion go may be omitted. \"He to England shall along with you.\" Shak. writers. Say: I shall be glad to see you. Shall I do this Shall I help you (not Will I do this) See Will.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1463,7 +1541,17 @@
       "word": "SHAMEFACED",
       "definitions": [
         {
-          "text": "Easily confused or put out of countenance; diffident; bashful; modest. Your shamefaced virtue shunned the people's prise. Dryden. shamefastness, like steadfast and steadfastness; but the ordinary manifestations of shame being by the face, have brought it to its",
+          "text": "Easily confused or put out of countenance; diffident; bashful; modest. Your shamefaced virtue shunned the people's prise. Dryden. shamefastness, like steadfast and steadfastness; but the ordinary manifestations of shame being by the face, have brought it to its present orthography. Trench.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shamefast": {
+      "word": "SHAMEFAST",
+      "definitions": [
+        {
+          "text": "Modest; shamefaced. Shamefast she was in maiden shamefastness. Chaucer. [Conscience] is a blushing shamefast spirit. Shak. Modest apparel with shamefastness. 1 Tim. ii. 9 (Rev. Ver.).",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1477,7 +1565,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Exciting the feeling of shame in others; indecent; as, a shameful picture; a shameful sight. Spenser.",
+          "text": "Exciting the feeling of shame in others; indecent; as, a shameful picture; a shameful sight. Spenser. scandalous; ignominious; infamous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1545,7 +1633,17 @@
       ],
       "relatedWords": []
     },
-    "shamoisshamoy": {
+    "shamois": {
+      "word": "SHAMOIS; SHAMOY",
+      "definitions": [
+        {
+          "text": "See Shammy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shamoy": {
       "word": "SHAMOIS; SHAMOY",
       "definitions": [
         {
@@ -1645,6 +1743,62 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "The part of the leg from the knee to the foot; the shin; the shin bone; also, the whole leg. His youthful hose, well saved, a world too wide For his shrunk shank. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, that part of an instrument, tool, or other thing, which connects the acting part with a handle or other part, by which it is held or moved. Specifically: (a) That part of a key which is between the bow and the part which enters the wards of the lock. (b) The middle part of an anchor, or that part which is between the ring and the arms. See Illustr. of Anchor. (c) That part of a hoe, rake, knife, or the like, by which it is secured to a handle. (d) A loop forming an eye to a button.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The space between two channels of the Doric triglyph. Gwilt.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Founding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A large ladle for molten metal, fitted with long bars for handling it.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The body of a type.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Shoemaking)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The part of the sole beneath the instep connecting the broader front part with the heel.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A wading bird with long legs; as, the green-legged shank, or knot; the yellow shank, or tattler; -- called also shanks.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Flat-nosed pliers, used by opticians for nipping off the edges of pieces of glass to make them round. Shank painter (Naut.), a short rope or chain which holds the shank of an anchor against the side of a vessel when it is secured for a voyage.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To fall off, as a leaf, flower, or capsule, on account of disease affecting the supporting footstalk; -- usually followed by off. Darwin.",
           "partOfSpeech": "verb"
         }
@@ -1737,8 +1891,48 @@
       "word": "SHAPE",
       "definitions": [
         {
+          "text": "To form or create; especially, to mold or make into a particular form; to give proper form or figure to. I was shapen in iniquity. Ps. li. 5. Grace shaped her limbs, and beauty decked her face. Prior.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To adapt to a purpose; to regulate; to adjust; to direct; as, to shape the course of a vessel. To the stream, when neither friends, nor force, Nor spead nor art avail, he shapes his course. Denham. Charmed by their eyes, their manners I acqire, And shape my foolishness to their desire. Prior.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To image; to conceive; to body forth. Oft my jealousy Shapes faults that are not. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To design; to prepare; to plan; to arrange. When shapen was all this conspiracy, From point to point. Chaucer. Shaping machine. (Mach.) Same as Shaper. I will early shape me therefor. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To suit; to be adjusted or conformable. [R.] Shak.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Character or construction of a thing as determining its external appearance; outward aspect; make; figure; form; guise; as, the shape of a tree; the shape of the head; an elegant shape. He beat me grievously, in the shape of a woman. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which has form or figure; a figure; an appearance; a being. Before the gates three sat, On either side, a formidable shape. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A model; a pattern; a mold.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Form of embodiment, as in words; form, as of thought or conception; concrete embodiment or example, as of some quality. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Dress for disguise; guise. [Obs.] Look better on this virgin, and consider This Persian shape laid by, and she appearing In a Greekish dress. Messinger.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Iron Manuf.) (a) A rolled or hammered piece, as a bar, beam, angle iron, etc., having a cross section different from merchant bar. (b) A piece which has been roughly forged nearly to the form it will receive when completely forged or fitted. To take shape, to assume a definite form.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1747,7 +1941,7 @@
       "word": "SHAPELESS",
       "definitions": [
         {
-          "text": "Destitute of shape or regular form; wanting symmetry of",
+          "text": "Destitute of shape or regular form; wanting symmetry of dimensions; misshapen; -- opposed to Ant: shapely. The shapeless rock, or hanging precipice. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2281,7 +2475,7 @@
       "word": "SHARP-SIGHTED",
       "definitions": [
         {
-          "text": "Having quick or acute sight; -- used literally and",
+          "text": "Having quick or acute sight; -- used literally and figuratively.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2351,7 +2545,17 @@
       ],
       "relatedWords": []
     },
-    "shastershastra": {
+    "shaster": {
+      "word": "SHASTER; SHASTRA",
+      "definitions": [
+        {
+          "text": "A treatise for authoritative instruction among the Hindoos; a book of institutes; especially, a treatise explaining the Vedas. [Written also sastra.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shastra": {
       "word": "SHASTER; SHASTRA",
       "definitions": [
         {
@@ -2397,7 +2601,17 @@
       ],
       "relatedWords": []
     },
-    "shatterbrainedshatterpated": {
+    "shatterbrained": {
+      "word": "SHATTER-BRAINED; SHATTER-PATED",
+      "definitions": [
+        {
+          "text": "Disordered or wandering in intellect; hence, heedless; wild. J. Goodman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shatterpated": {
       "word": "SHATTER-BRAINED; SHATTER-PATED",
       "definitions": [
         {
@@ -2909,6 +3123,20 @@
       ],
       "relatedWords": []
     },
+    "sheath": {
+      "word": "SHEATH",
+      "definitions": [
+        {
+          "text": "A case for the reception of a sword, hunting knife, or other long and slender instrument; a scabbard. The dead knight's sword out of his sheath he drew. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any sheathlike covering, organ, or part. Specifically: (a) (Bot.) The base of a leaf when sheathing or investing a stem or branch, as in grasses. (b) (Zoöl.) One of the elytra of an insect. Medullary sheath. (Anat.) See under Medullary.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "sheathbill": {
       "word": "SHEATHBILL",
       "definitions": [
@@ -3205,7 +3433,17 @@
       ],
       "relatedWords": []
     },
-    "sheelfashilfa": {
+    "sheelfa": {
+      "word": "SHEELFA; SHILFA",
+      "definitions": [
+        {
+          "text": "The chaffinch; -- so named from its call note. [Prov. Eng.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shilfa": {
       "word": "SHEELFA; SHILFA",
       "definitions": [
         {
@@ -3238,6 +3476,10 @@
     "sheen": {
       "word": "SHEEN",
       "definitions": [
+        {
+          "text": "Bright; glittering; radiant; fair; showy; sheeny. [R., except in poetry.] This holy maiden, that is so bright and sheen. Chaucer. Up rose each warrier bold and brave, Glistening in filed steel and armor sheen. Fairfax.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "To shine; to glisten. [Poetic] This town, That, sheening far, celestial seems to be. Byron.",
           "partOfSpeech": "verb"
@@ -3335,7 +3577,17 @@
       ],
       "relatedWords": []
     },
-    "sheepcotsheepcote": {
+    "sheepcot": {
+      "word": "SHEEPCOT; SHEEPCOTE",
+      "definitions": [
+        {
+          "text": "A small inclosure for sheep; a pen; a fold.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sheepcote": {
       "word": "SHEEPCOT; SHEEPCOTE",
       "definitions": [
         {
@@ -3393,7 +3645,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Like a sheep; bashful; over-modest; meanly or foolishly diffident; timorous to excess. Wanting change of company, he will, when he comes abroad, be a",
+          "text": "Like a sheep; bashful; over-modest; meanly or foolishly diffident; timorous to excess. Wanting change of company, he will, when he comes abroad, be a sheepish or conceited creature. Locke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3591,6 +3843,18 @@
       "word": "SHEET",
       "definitions": [
         {
+          "text": "In general, a large, broad piece of anything thin, as paper, cloth, etc.; a broad, thin portion of any substance; an expanded superficies. Specifically: (a) A broad piece of cloth, usually linen or cotton, used for wrapping the body or for a covering; especially, one used as an article of bedding next to the body. He fell into a trance, and saw heaven opened, and a certain vessel descending unto him, as it had been a great sheet knit at the four corners. Acts x. 10, 11. If I do die before thee, prithee, shroud me In one of those same sheets. Shak. (b) A broad piece of paper, whether folded or unfolded, whether blank or written or printed upon; hence, a letter; a newspaper, etc. (c) A single signature of a book or a pamphlet; in pl., the book itself. To this the following sheets are intended for a full and distinct answer. Waterland. (d) A broad, thinly expanded portion of metal or other substance; as, a sheet of copper, of glass, or the like; a plate; a leaf. (e) A broad expanse of water, or the like. \"The two beautiful sheets of water.\" Macaulay. (f) A sail. Dryden. (g) (Geol.) An extensive bed of an eruptive rock intruded between, or overlying, other strata.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [AS. sceáta. See the Etymology above.] (Naut.) (a) A rope or chain which regulates the angle of adjustment of a sail in relation in relation to the wind; -- usually attached to the lower corner of a sail, or to a yard or a boom. (b) pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The space in the forward or the after part of a boat where there are no rowers; as, fore sheets; stern sheets. that the substance to the name of which it is prefixed is in the form of sheets, or thin plates or leaves; as, sheet brass, or sheet-brass; sheet glass, or sheet-glass; sheet gold, or sheet-gold; sheet iron, or sheet-iron, etc. A sheet in the wind, half drunk. [Sailors' Slang] sheets, lying flat or expanded; not folded, or folded but not bound; fastening a rope to the bight of another rope or to an eye. etc.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To furnish with a sheet or sheets; to wrap in, or cover with, a sheet, or as with a sheet. \"The sheeted dead.\" \"When snow the pasture sheets.\" Shak.",
           "partOfSpeech": "verb"
         },
@@ -3681,7 +3945,17 @@
       ],
       "relatedWords": []
     },
-    "sheilsheiling": {
+    "sheil": {
+      "word": "SHEIL; SHEILING",
+      "definitions": [
+        {
+          "text": "See Sheeling.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sheiling": {
       "word": "SHEIL; SHEILING",
       "definitions": [
         {
@@ -3729,7 +4003,17 @@
       ],
       "relatedWords": []
     },
-    "sheldaflesheldaple": {
+    "sheldafle": {
+      "word": "SHELDAFLE; SHELDAPLE",
+      "definitions": [
+        {
+          "text": "A chaffinch. [Written also sheldapple, and shellapple.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sheldaple": {
       "word": "SHELDAFLE; SHELDAPLE",
       "definitions": [
         {
@@ -3772,6 +4056,40 @@
       "definitions": [
         {
           "text": "The sheldrake. [Written also shellduck.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shelf": {
+      "word": "SHELF",
+      "definitions": [
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A flat tablet or ledge of any material set horizontally at a distance from the floor, to hold objects of use or ornament.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sand bank in the sea, or a rock, or ledge of rocks, rendering the water shallow, and dangerous to ships. On the tawny sands and shelves. Milton. On the secret shelves with fury cast. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stratum lying in a very even manner; a flat, projecting layer of rock.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A piece of timber running the whole length of a vessel inside the timberheads. D. Kemp. To lay on the shelf, to lay aside as unnecessary or useless; to dismiss; to discard.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3877,7 +4195,17 @@
       ],
       "relatedWords": []
     },
-    "shellacshelllac": {
+    "shellac": {
+      "word": "SHELLAC; SHELL-LAC",
+      "definitions": [
+        {
+          "text": "See the Note under 2d Lac.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shelllac": {
       "word": "SHELLAC; SHELL-LAC",
       "definitions": [
         {
@@ -3991,6 +4319,18 @@
       "word": "SHELTER",
       "definitions": [
         {
+          "text": "That which covers or defends from injury or annoyance; a protection; a screen. The sick and weak the healing plant shall aid, From storms a shelter, and from heat a shade. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who protects; a guardian; a defender. Thou [God] hast been a shelter for me. Ps. lxi. 3.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of being covered and protected; protection; security. Who into shelter takes their tender bloom. Young. Shelter tent,a small tent made of pieces of cotton duck arranged to button together. In field service the soldiers carry the pieces. security.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To be a shelter for; to provide with a shelter; to cover from injury or annoyance; to shield; to protect. Those ruins sheltered once his sacred head. Dryden. You have no convents . . . in which such persons may be received and sheltered. Southey.",
           "partOfSpeech": "verb"
         },
@@ -4029,7 +4369,17 @@
       ],
       "relatedWords": []
     },
-    "sheltieshelty": {
+    "sheltie": {
+      "word": "SHELTIE; SHELTY",
+      "definitions": [
+        {
+          "text": "A Shetland pony.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shelty": {
       "word": "SHELTIE; SHELTY",
       "definitions": [
         {
@@ -4099,7 +4449,17 @@
       ],
       "relatedWords": []
     },
-    "shemiticshemitish": {
+    "shemitic": {
+      "word": "SHEMITIC; SHEMITISH",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Shem, the son of Noah, or his descendants. See Semitic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shemitish": {
       "word": "SHEMITIC; SHEMITISH",
       "definitions": [
         {
@@ -4115,6 +4475,20 @@
         {
           "text": "See Semitism.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shend": {
+      "word": "SHEND",
+      "definitions": [
+        {
+          "text": "To injure, mar, spoil, or harm. [Obs.] \"Loss of time shendeth us.\" Chaucer. I fear my body will be shent. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To blame, reproach, or revile; to degrade, disgrace, or put to shame. [Archaic] R. Browning. The famous name of knighthood foully shend. Spenser. She passed the rest as Cynthia doth shend The lesser stars. Spenser.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -4299,7 +4673,17 @@
       ],
       "relatedWords": []
     },
-    "shereefsherif": {
+    "shereef": {
+      "word": "SHEREEF; SHERIF",
+      "definitions": [
+        {
+          "text": "A member of an Arab princely family descended from Mohammed through his son-in-law Ali and daughter Fatima. The Grand Shereef is the governor of Mecca.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sherif": {
       "word": "SHEREEF; SHERIF",
       "definitions": [
         {
@@ -4329,7 +4713,47 @@
       ],
       "relatedWords": []
     },
-    "sheriffaltysheriffdomsheriffrysheriffshipsheriffwick": {
+    "sheriffalty": {
+      "word": "SHERIFFALTY; SHERIFFDOM; SHERIFFRY; SHERIFFSHIP; SHERIFFWICK",
+      "definitions": [
+        {
+          "text": "The office or jurisdiction of sheriff. See Shrievalty.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sheriffdom": {
+      "word": "SHERIFFALTY; SHERIFFDOM; SHERIFFRY; SHERIFFSHIP; SHERIFFWICK",
+      "definitions": [
+        {
+          "text": "The office or jurisdiction of sheriff. See Shrievalty.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sheriffry": {
+      "word": "SHERIFFALTY; SHERIFFDOM; SHERIFFRY; SHERIFFSHIP; SHERIFFWICK",
+      "definitions": [
+        {
+          "text": "The office or jurisdiction of sheriff. See Shrievalty.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sheriffship": {
+      "word": "SHERIFFALTY; SHERIFFDOM; SHERIFFRY; SHERIFFSHIP; SHERIFFWICK",
+      "definitions": [
+        {
+          "text": "The office or jurisdiction of sheriff. See Shrievalty.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sheriffwick": {
       "word": "SHERIFFALTY; SHERIFFDOM; SHERIFFRY; SHERIFFSHIP; SHERIFFWICK",
       "definitions": [
         {
@@ -4478,6 +4902,10 @@
       "definitions": [
         {
           "text": "Same as Shiite.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A member of that branch of the Mohammedans to which the Persians belong. They reject the first three caliphs, and consider Ali as being the first and only rightful successor of Mohammed. They do not acknowledge the Sunna, or body of traditions respecting Mohammed, as any part of the law, and on these accounts are treated as heretics by the Sunnites, or orthodox Mohammedans.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4641,6 +5069,16 @@
       ],
       "relatedWords": []
     },
+    "shieldless": {
+      "word": "SHIELDLESS",
+      "definitions": [
+        {
+          "text": "Destitute of a shield, or of protection.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "shieldtail": {
       "word": "SHIELDTAIL",
       "definitions": [
@@ -4664,6 +5102,30 @@
     "shift": {
       "word": "SHIFT",
       "definitions": [
+        {
+          "text": "To divide; to distribute; to apportion. [Obs.] To which God of his bounty would shift Crowns two of flowers well smelling. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To change the place of; to move or remove from one place to another; as, to shift a burden from one shoulder to another; to shift the blame. Hastily he schifte him[self]. Piers Plowman. Pare saffron between the two St. Mary's days, Or set or go shift it that knowest the ways. Tusser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To change the position of; to alter the bearings of; to turn; as, to shift the helm or sails. Carrying the oar loose, [they] shift it hither and thither at pleasure. Sir W. Raleigh.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To exchange for another of the same class; to remove and to put some similar thing in its place; to change; as, to shift the clothes; to shift the scenes. I would advise you to shift a shirt. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To change the clothing of; -- used reflexively. [Obs.] As it were to ride day and night; and . . . not to have patience to shift me. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put off or out of the way by some expedient. \"I shifted him away.\" Shak. To shift off, to delay; to defer; to put off; to lay aside. as in a play or a story. Shift the scene for half an hour; Time and place are in thy power. Swift.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To divide; to distribute. [Obs.] Some this, some that, as that him liketh shift. Chaucer.",
           "partOfSpeech": "verb"
@@ -4793,7 +5255,7 @@
       "word": "SHIFTLESS",
       "definitions": [
         {
-          "text": "Destitute of expedients, or not using successful expedients; characterized by failure, especially by failure to provide for one's own support, through negligence or incapacity; hence, lazy; improvident; thriftless; as, a shiftless fellow; shiftless",
+          "text": "Destitute of expedients, or not using successful expedients; characterized by failure, especially by failure to provide for one's own support, through negligence or incapacity; hence, lazy; improvident; thriftless; as, a shiftless fellow; shiftless management.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4809,7 +5271,7 @@
       ],
       "relatedWords": []
     },
-    "shiiteshiah": {
+    "shiite": {
       "word": "SHIITE; SHIAH",
       "definitions": [
         {
@@ -4819,7 +5281,17 @@
       ],
       "relatedWords": []
     },
-    "shikareeshikari": {
+    "shikaree": {
+      "word": "SHIKAREE; SHIKARI",
+      "definitions": [
+        {
+          "text": "A sportsman; esp., a native hunter. [India]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "shikari": {
       "word": "SHIKAREE; SHIKARI",
       "definitions": [
         {
@@ -4853,7 +5325,17 @@
       ],
       "relatedWords": []
     },
-    "shillalahshillelah": {
+    "shillalah": {
+      "word": "SHILLALAH; SHILLELAH",
+      "definitions": [
+        {
+          "text": "An oaken sapling or cudgel; any cudgel; -- so called from Shillelagh, a place in Ireland of that name famous for its oaks. [Irish] [Written also shillaly, and shillely.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shillelah": {
       "word": "SHILLALAH; SHILLELAH",
       "definitions": [
         {
@@ -4881,7 +5363,7 @@
       ],
       "relatedWords": []
     },
-    "shillishallishillyshally": {
+    "shillishalli": {
       "word": "SHILL-I-SHALL-I; SHILLY-SHALLY",
       "definitions": [
         {
@@ -4892,8 +5374,12 @@
       "relatedWords": []
     },
     "shillyshally": {
-      "word": "SHILLY-SHALLY",
+      "word": "SHILL-I-SHALL-I; SHILLY-SHALLY",
       "definitions": [
+        {
+          "text": "In an irresolute, undecided, or hesitating manner. I am somewhat dainty in making a resolution, because when I make it, I keep it; I don't stand shill-I-shall-I then; if I say 't, I'll do 't. Congreve.",
+          "partOfSpeech": "adverb"
+        },
         {
           "text": "To hesitate; to act in an irresolute manner; hence, to occupy one's self with trifles.",
           "partOfSpeech": "verb"
@@ -4946,6 +5432,10 @@
     "shimmer": {
       "word": "SHIMMER",
       "definitions": [
+        {
+          "text": "To shine with a tremulous or intermittent light; to shine faintly; to gleam; to glisten; to glimmer. The shimmering glimpses of a stream. Tennyson.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "A faint, tremulous light; a gleaming; a glimmer. TWo silver lamps, fed with perfumed oil, diffused . . . a trembling twilight-seeming shimmer through the quiet apartment. Sir W. Scott.",
           "partOfSpeech": "noun"
@@ -5263,7 +5753,7 @@
       ],
       "relatedWords": []
     },
-    "shintiyanshintyan": {
+    "shintiyan": {
       "word": "SHINTIYAN; SHINTYAN",
       "definitions": [
         {
@@ -5273,7 +5763,27 @@
       ],
       "relatedWords": []
     },
-    "shintoshintiism": {
+    "shintyan": {
+      "word": "SHINTIYAN; SHINTYAN",
+      "definitions": [
+        {
+          "text": "A kind of wide loose drawers or trousers worn by women in Mohammedan countries.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shinto": {
+      "word": "SHINTO; SHINTIISM",
+      "definitions": [
+        {
+          "text": "One of the two great systems of religious belief in Japan. Its essence is ancestor worship, and sacrifice to dead heroes. [Written also Sintu, and Sintuism.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shintiism": {
       "word": "SHINTO; SHINTIISM",
       "definitions": [
         {
@@ -5821,6 +6331,16 @@
       ],
       "relatedWords": []
     },
+    "shirtless": {
+      "word": "SHIRTLESS",
+      "definitions": [
+        {
+          "text": "Not having or wearing a shirt. Pope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "shirtwaist": {
       "word": "SHIRT WAIST",
       "definitions": [
@@ -5841,7 +6361,7 @@
       ],
       "relatedWords": []
     },
-    "shistshistose": {
+    "shist": {
       "word": "SHIST; SHISTOSE",
       "definitions": [
         {
@@ -5851,7 +6371,17 @@
       ],
       "relatedWords": []
     },
-    "shittahshittahtree": {
+    "shistose": {
+      "word": "SHIST; SHISTOSE",
+      "definitions": [
+        {
+          "text": "See Shist, Schistose.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "shittah": {
       "word": "SHITTAH; SHITTAH TREE",
       "definitions": [
         {
@@ -5861,7 +6391,27 @@
       ],
       "relatedWords": []
     },
-    "shittimshittimwood": {
+    "shittahtree": {
+      "word": "SHITTAH; SHITTAH TREE",
+      "definitions": [
+        {
+          "text": "A tree that furnished the precious wood of which the ark, tables, altars, boards, etc., of the Jewish tabernacle were made; -- now believed to have been the wood of the Acacia Seyal, which is hard, fine grained, and yellowish brown in color.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shittim": {
+      "word": "SHITTIM; SHITTIM WOOD",
+      "definitions": [
+        {
+          "text": "The wood of the shittah tree.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shittimwood": {
       "word": "SHITTIM; SHITTIM WOOD",
       "definitions": [
         {
@@ -6241,7 +6791,7 @@
       "word": "SHOCKING",
       "definitions": [
         {
-          "text": "Causing to shake or tremble, as by a blow; especially, causing to recoil with horror or disgust; extremely offensive or disgusting.",
+          "text": "Causing to shake or tremble, as by a blow; especially, causing to recoil with horror or disgust; extremely offensive or disgusting. The grossest and most shocking villainies. Secker.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6305,11 +6855,15 @@
         {
           "text": "The top of the head; the head. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Shoad, Shoading.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "shodeshoding": {
+    "shoding": {
       "word": "SHODE; SHODING",
       "definitions": [
         {
@@ -6385,7 +6939,21 @@
       ],
       "relatedWords": []
     },
-    "shoehornshoeinghorn": {
+    "shoehorn": {
+      "word": "SHOEHORN; SHOEING-HORN",
+      "definitions": [
+        {
+          "text": "A curved piece of polished horn, wood, or metal used to facilitate the entrance of the foot into a shoe.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Figuratively: (a) Anything by which a transaction is facilitated; a medium; -- by way of contempt. Spectator. (b) Anything which draws on or allures; an inducement. [Low] Beau & Fl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shoeinghorn": {
       "word": "SHOEHORN; SHOEING-HORN",
       "definitions": [
         {
@@ -6595,6 +7163,42 @@
         {
           "text": "An inclined plane, either artificial or natural, down which timber, coal, etc., are caused to slide; also, a narrow passage, either natural or artificial, in a stream, where the water rushes rapidly; esp., a channel, having a swift current, connecting the ends of a bend in the stream, so as to shorten the course. [Written also chute, and shute.] [U. S.] To take a shoot, to pass through a shoot instead of the main channel; to take the most direct course. [U.S.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To let fly, or cause to be driven, with force, as an arrow or a bullet; -- followed by a word denoting the missile, as an object. If you please To shoot an arrow that self way. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To discharge, causing a missile to be driven forth; -- followed by a word denoting the weapon or instrument, as an object; -- often with off; as, to shoot a gun. The two ends od a bow, shot off, fly from one another. Boyle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To strike with anything shot; to hit with a missile; often, to kill or wound with a firearm; -- followed by a word denoting the person or thing hit, as an object. When Roger shot the hawk hovering over his master's dove house. A. Tucker.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To send out or forth, especially with a rapid or sudden motion; to cast with the hand; to hurl; to discharge; to emit. An honest weaver as ever shot shuttle. Beau & Fl. A pit into which the dead carts had nightly shot corpses by scores. Macaulay.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To push or thrust forward; to project; to protrude; -- often with out; as, a plant shoots out a bud. They shoot out the lip, they shake the head. Ps. xxii. 7. Beware the secret snake that shoots a sting. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Carp.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To plane straight; to fit by planing. Two pieces of wood that are shot, that is, planed or else pared with a paring chisel. Moxon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pass rapidly through, over, or under; as, to shoot a rapid or a bridge; to shoot a sand bar. She . . . shoots the Stygian sound. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To variegate as if by sprinkling or intermingling; to color in spots or patches. The tangled water courses slept, Shot over with purple, and green, and yellow. Tennyson. To be shot of, to be discharged, cleared, or rid of. [Colloq.] \"Are you not glad to be shot of him\" Sir W. Scott.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To cause an engine or weapon to discharge a missile; -- said of a person or an agent; as, they shot at a target; he shoots better than he rides. The archers have . . . shot at him. Gen. xlix. 23.",
@@ -6969,6 +7573,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "The coast or land adjacent to a large body of water, as an ocean, lake, or large river. Michael Cassio, Lieutenant to the warlike Moor Othello, Is come shore. Shak. The fruitful shore of muddy Nile. Spenser. In shore, near the shore. Marryat. birds found on the seashore. tides, especially any one of various species of grapsoid crabs, as Heterograpsus nudus of California. found in winter, both on the seacoast and on the Western plains. Its upper parts are varied with dark brown and light brown. It has a yellow throat, yellow local streaks, a black crescent on its breast, a black streak below each eye, and two small black erectile ear tufts. Called also horned lark. magnirostris). It lives on the seashore, and feeds on crustaceans, etc. Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To set on shore. [Obs.] Shak.",
           "partOfSpeech": "verb"
         }
@@ -7029,7 +7637,17 @@
       ],
       "relatedWords": []
     },
-    "shorlshorlaceous": {
+    "shorl": {
+      "word": "SHORL; SHORLACEOUS",
+      "definitions": [
+        {
+          "text": "See Schorl, Schorlaceous.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shorlaceous": {
       "word": "SHORL; SHORLACEOUS",
       "definitions": [
         {
@@ -7066,6 +7684,74 @@
     "short": {
       "word": "SHORT",
       "definitions": [
+        {
+          "text": "Not long; having brief length or linear extension; as, a short distance; a short piece of timber; a short flight. The bed is shorter than that a man can stretch himself on it. Isa. xxviii. 20.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not extended in time; having very limited duration; not protracted; as, short breath. The life so short, the craft so long to learn. Chaucer. To short absense I could yield. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Limited in quantity; inadequate; insufficient; scanty; as, a short supply of provisions, or of water.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Insufficiently provided; inadequately supplied; scantily furnished; lacking; not coming up to a resonable, or the ordinary, standard; -- usually with of; as, to be short of money. We shall be short in our provision. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Deficient; defective; imperfect; not coming up, as to a measure or standard; as, an account which is short of the trith.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not distant in time; near at hand. Marinell was sore offended That his departure thence should be so short. Spenser. He commanded those who were appointed to attend him to be ready by a short day. Clarendon.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Limited in intellectual power or grasp; not comprehensive; narrow; not tenacious, as memory. Their own short understandings reach No farther than the present. Rowe.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Less important, efficaceous, or powerful; not equal or equivalent; less (than); -- with of. Hardly anything short of an invasion could rouse them again to war. Landor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Abrupt; brief; pointed; petulant; as, he gave a short answer to the question.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Cookery)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Breaking or crumbling readily in the mouth; crisp; as, short pastry.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Metal)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Brittle. be hot-short, owing to the presence of sulphur. Those that are brittle when cold are called cold-short; as, cast iron may be cold- short, on account of the presence of phosphorus.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Stock Exchange)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Engaging or engaged to deliver what is not possessed; as, short contracts; to be short of stock. See The shorts, under Short, n., and To sell short, under Short, adv. payable at short sight, that is, in a little time after being presented to the payer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Phon.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not prolonged, or relatively less prolonged, in utterance; -- opposed to long, and applied to vowels or to syllables. In English, the long and short of the same letter are not, in most cases, the long and short of the same sound; thus, the i in ill is the short sound, not of i in isle, but of ee in eel, and the e in pet is the short sound of a in pate, etc. See Quantity, and Guide to Pronunciation, §§22, 30. explaining compounds; as, short-armed, short-billed, short-fingered, short-haired, short-necked, short-sleeved, short-tailed, short- winged, short-wooled, etc. At short notice, in a brief time; promptly. than three. R. A. Proctor. Cut, etc.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A summary account. The short and the long is, our play is preferred. Shak.",
           "partOfSpeech": "noun"
@@ -7439,7 +8125,31 @@
           "partOfSpeech": ""
         },
         {
+          "text": "Woven in such a way as to produce an effect of variegation, of changeable tints, or of being figured; as, shot silks. See Shoot, v. t., 8.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A share or proportion; a reckoning; a scot. Here no shots are where all shares be. Chapman. A man is never . . . welcome to a place till some certain shot be paid and the hostess say \"Welcome.\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of shooting; discharge of a firearm or other weapon which throws a missile. He caused twenty shot of his greatest cannon to be made at the king's army. Clarendon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A missile weapon, particularly a ball or bullet; specifically, whatever is discharged as a projectile from firearms or cannon by the force of an explosive. the material of which it is composed, into lead, wrought-iron, and cast-iron; according to form, into spherical and oblong; according to structure and modes of operation, into solid, hollow, and case. See Bar shot, Chain shot, etc., under Bar, Chain, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Small globular masses of lead, of various sizes, -- used chiefly for killing game; as, bird shot; buckshot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The flight of a missile, or the distance which it is, or can be, thrown; as, the vessel was distant more than a cannon shot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A marksman; one who practices shooting; as, an exellent shot. Shot belt, a belt having a pouch or compartment for carrying shot. forming a charge for a shotgun. the coamings and ledges round the hatchways of a ship. shot. Totten. a vessel, for containing shot. together, or the whole length of the cables thus united. stop a hole made by the shot of an enemy in a ship's side. summit melted lead in slender streams. The lead forms spherical drops which cool in the descent, and are received in water or other liquid. Halliwell, explains it as a window that opens and shuts; and Wodrow describes it as a window of shutters made of timber and a few inches of glass above them.",
           "partOfSpeech": "noun"
         },
         {
@@ -7723,7 +8433,17 @@
       ],
       "relatedWords": []
     },
-    "shoveboardshovegroat": {
+    "shoveboard": {
+      "word": "SHOVEBOARD; SHOVEGROAT",
+      "definitions": [
+        {
+          "text": "The same as Shovelboard.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shovegroat": {
       "word": "SHOVEBOARD; SHOVEGROAT",
       "definitions": [
         {
@@ -7736,6 +8456,10 @@
     "shovel": {
       "word": "SHOVEL",
       "definitions": [
+        {
+          "text": "An implement consisting of a broad scoop, or more or less hollow blade, with a handle, used for lifting and throwing earth, coal, grain, or other loose substances. Shovel hat, a broad-brimmed hat, turned up at the sides, and projecting in front like a shovel, - - worn by some clergy of the English Church. [Colloq.] -- Shovelspur (Zoöl.), a flat, horny process on the tarsus of some toads, -- used in burrowing. steam engine, for excavating earth, as in making railway cuttings.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To take up and throw with a shovel; as, to shovel earth into a heap, or into a cart, or out of a pit.",
           "partOfSpeech": "verb"
@@ -8137,7 +8861,17 @@
       ],
       "relatedWords": []
     },
-    "shrapshrape": {
+    "shrap": {
+      "word": "SHRAP; SHRAPE",
+      "definitions": [
+        {
+          "text": "A place baited with chaff to entice birds. [Written also scrap.] [Obs.] Bp. Bedell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "shrape": {
       "word": "SHRAP; SHRAPE",
       "definitions": [
         {
@@ -8265,7 +8999,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Able or clever in practical affairs; sharp in business; astute; sharp-witted; sagacious; keen; as, a shrewd observer; a shrewd design; a shrewd reply. Professing to despise the ill opinion of mankind creates a shrewd suspicion that we have deserved it. Secker. acute; penetrating. penetrate disguises, to foresee and guard against the selfishness of others. Shrewd is a word of less dignity than sagacious, which implies a comprehensive as well as penetrating mind, whereas shrewd",
+          "text": "Able or clever in practical affairs; sharp in business; astute; sharp-witted; sagacious; keen; as, a shrewd observer; a shrewd design; a shrewd reply. Professing to despise the ill opinion of mankind creates a shrewd suspicion that we have deserved it. Secker. acute; penetrating. penetrate disguises, to foresee and guard against the selfishness of others. Shrewd is a word of less dignity than sagacious, which implies a comprehensive as well as penetrating mind, whereas shrewd does not.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8275,7 +9009,7 @@
       "word": "SHREWISH",
       "definitions": [
         {
-          "text": "having the qualities of a shrew; having a scolding disposition; froward; peevish.",
+          "text": "having the qualities of a shrew; having a scolding disposition; froward; peevish. My wife is shrewish when I keep not hours. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8510,6 +9244,18 @@
     "shrink": {
       "word": "SHRINK",
       "definitions": [
+        {
+          "text": "To wrinkle, bend, or curl; to shrivel; hence, to contract into a less extent or compass; to gather together; to become compacted. And on a broken reed he still did stay His feeble steps, which shrunk when hard thereon he lay. Spenser. I have not found that water, by mixture of ashes, will shrink or draw into less room. Bacon. Against this fire do I shrink up. Shak. And shrink like parchment in consuming fire. Dryden. All the boards did shrink. Coleridge.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To withdraw or retire, as from danger; to decline action from fear; to recoil, as in fear, horror, or distress. What happier natures shrink at with affright, The hard inhabitant contends is right. Pope. They assisted us against the Thebans when you shrank from the task. Jowett (Thucyd.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To express fear, horror, or pain by contracting the body, or part of it; to shudder; to quake. [R.] Shak.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To cause to contract or shrink; as, to shrink finnel by imersing it in boiling water.",
           "partOfSpeech": "verb"
@@ -9247,7 +9993,7 @@
       "word": "SHUNT WINDING",
       "definitions": [
         {
-          "text": "A winding so arranged as to divide the armature current and",
+          "text": "A winding so arranged as to divide the armature current and lead a portion of it around the field-magnet coils; -- opposed to series winding. --Shunt\"-wound` (#), a.",
           "partOfSpeech": ""
         }
       ],
@@ -9419,7 +10165,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Cautious; wary; suspicious. I am very shy of using corrosive liquors in the preparation of medicines. Boyle. Princes are, by wisdom of state, somewhat shy of thier successors.",
+          "text": "Cautious; wary; suspicious. I am very shy of using corrosive liquors in the preparation of medicines. Boyle. Princes are, by wisdom of state, somewhat shy of thier successors. Sir H. Wotton. To fight shy. See under Fight, v. i.",
           "partOfSpeech": "adjective"
         },
         {
@@ -9467,66 +10213,6 @@
         {
           "text": "A trickish knave; one who carries on any business, especially legal business, in a mean and dishonest way. [Slang, U.S.]",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "shapeformaparticularsortkindorqualityaspeciessee": {
-      "word": "shape, form, a particular sort, kind, or quality, a species. See",
-      "definitions": [
-        {
-          "text": "Visible or sensible presentation; appearance; a sensible percept received by the imagination; an image. [R.] \"The species of the letters illuminated with indigo and violet.\" Sir I. Newton. Wit, . . . the faculty of imagination in the writer, which searches over all the memory for the species or ideas of those things which it designs to represent. Dryden. intelligible. The sensible species was that in any material, object which was in fact discerned by the mind through the organ of perception, or that in any object which rendered it possible that it should be perceived. The sensible species, as apprehended by the understanding in any of the relations of thought, was called an intelligible species. \"An apparent diversity between the species visible and audible is, that the visible doth not mingle in the medium, but the audible doth.\" Bacon.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Logic)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A group of individuals agreeing in common attributes, and designated by a common name; a conception subordinated to another conception, called a genus, or generic conception, from which it differs in containing or comprehending more attributes, and extending to fewer individuals. Thus, man is a species, under animal as a genus; and man, in its turn, may be regarded as a genus with respect to European, American, or the like, as species.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "In science, a more or less permanent group of existing things or beings, associated according to attributes, or properties determined by scientific observation. definite chemical structure, and are fundamentally the same in crystallization and physical characters, are classed as belonging to a species. In zoölogy and botany, a species is an ideal group of individuals which are believed to have descended from common ancestors, which agree in essential characteristics, and are capable of indefinitely continued fertile reproduction through the sexes. A species, as thus defined, differs from a variety or subspecies only in the greater stability of its characters and in the absence of individuals intermediate between the related groups.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A sort; a kind; a variety; as, a species of low cunning; a species of generosity; a species of cloth.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Coin, or coined silver, gold, ot other metal, used as a circulating medium; specie. [Obs.] There was, in the splendor of the Roman empire, a less quantity of current species in Europe than there is now. Arbuthnot.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A public spectacle or exhibition. [Obs.] Bacon.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Pharmacy) (a) A component part of compound medicine; a simple. (b) (Med.) An officinal mixture or compound powder of any kind; esp., one used for making an aromatic tea or tisane; a tea mixture. Quincy.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Civil Law)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The form or shape given to materials; fashion or shape; form; figure. Burill. Incipient species (Zoöl.), a subspecies, or variety, which is in process of becoming permanent, and thus changing to a true species, usually by isolation in localities from which other varieties are excluded.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "shouldtakewhichisbesttoliveortodieseethenoteunder": {
-      "word": "should take; which is best, to live or to die See the Note under",
-      "definitions": [
-        {
-          "text": "A relative pronoun, used esp. in referring to an antecedent noun or clause, but sometimes with reference to what is specified or implied in a sentence, or to a following noun or clause (generally involving a reference, however, to something which has preceded). It is used in all numbers and genders, and was formerly used of persons. And when thou fail'st -- as God forbid the hour! --Must Edward fall, which peril heaven forfend! Shak. God . . . rested on the seventh day from all his work which he had made. Gen. ii. 2. Our Father, which art in heaven. Matt. vi. 9. The temple of God is holy, which temple ye are. 1 Cor. iii. 17.",
-          "partOfSpeech": "pronoun"
-        },
-        {
-          "text": "A compound relative or indefinite pronoun, standing for any one which, whichever, that which, those which, the . . . which, and the like; as, take which you will. which that, which as, were also sometimes used by way of emphasis. Do not they blaspheme that worthy name by the which ye are called James ii. 7. of a sentence, may have all joined to it adjectively. \"All which, as a method of a proclamation, is very convenient.\" Carlyle.",
-          "partOfSpeech": "pronoun"
         }
       ],
       "relatedWords": []

@@ -1,16 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "lyftairgluftdanloftloftgothluftusaircfliftv": {
-      "word": "lyft air, G. luft, Dan. loft loft, Goth. luftus air. Cf. Lift, v. &",
-      "definitions": [
-        {
-          "text": "That which is lifted up; an elevation. Hence, especially: (a) The room or space under a roof and above the ceiling of the uppermost story. (b) A gallery or raised apartment in a church, hall, etc.; as, an organ loft. (c) A floor or room placed above another; a story. Eutychus . . . fell down from the third loft. Acts xx. 9. On loft, aloft; on high. Cf. Onloft. [Obs.] Chaucer.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "lyam": {
       "word": "LYAM",
       "definitions": [
@@ -411,7 +401,17 @@
       ],
       "relatedWords": []
     },
-    "lymlymhound": {
+    "lym": {
+      "word": "LYM; LYMHOUND",
+      "definitions": [
+        {
+          "text": "A dog held in a leam; a bloodhound; a limehound. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lymhound": {
       "word": "LYM; LYMHOUND",
       "definitions": [
         {
@@ -507,7 +507,17 @@
       ],
       "relatedWords": []
     },
-    "lymphatelymphated": {
+    "lymphate": {
+      "word": "LYMPHATE; LYMPHATED",
+      "definitions": [
+        {
+          "text": "Frightened into madness; raving. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lymphated": {
       "word": "LYMPHATE; LYMPHATED",
       "definitions": [
         {
@@ -663,7 +673,17 @@
       ],
       "relatedWords": []
     },
-    "lyndelynden": {
+    "lynde": {
+      "word": "LYNDE; LYNDEN",
+      "definitions": [
+        {
+          "text": "See Linden.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lynden": {
       "word": "LYNDE; LYNDEN",
       "definitions": [
         {
@@ -767,7 +787,29 @@
       ],
       "relatedWords": []
     },
-    "lyratelyrated": {
+    "lyrate": {
+      "word": "LYRATE; LYRATED",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lyre-shaped, or spatulate and oblong, with small lobes toward the base; as, a lyrate leaf.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Shaped like a lyre, as the tail of the blackcock, or that of the lyre bird.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lyrated": {
       "word": "LYRATE; LYRATED",
       "definitions": [
         {
@@ -821,7 +863,7 @@
       ],
       "relatedWords": []
     },
-    "lyriclyrical": {
+    "lyric": {
       "word": "LYRIC; LYRICAL",
       "definitions": [
         {
@@ -831,13 +873,7 @@
         {
           "text": "Fitted to be sung to the lyre; hence, also, appropriate for song; of the poet. \"Sweet lyric song.\" Milton.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "lyric": {
-      "word": "LYRIC",
-      "definitions": [
+        },
         {
           "text": "A lyric poem; a lyrical composition.",
           "partOfSpeech": "noun"
@@ -853,6 +889,20 @@
         {
           "text": "The words of a song.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lyrical": {
+      "word": "LYRIC; LYRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a lyre or harp.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fitted to be sung to the lyre; hence, also, appropriate for song; of the poet. \"Sweet lyric song.\" Milton.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -981,7 +1031,17 @@
       ],
       "relatedWords": []
     },
-    "lythonthripticlythontriptic": {
+    "lythonthriptic": {
+      "word": "LYTHONTHRIPTIC; LYTHONTRIPTIC",
+      "definitions": [
+        {
+          "text": "See Lithontriptic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lythontriptic": {
       "word": "LYTHONTHRIPTIC; LYTHONTRIPTIC",
       "definitions": [
         {

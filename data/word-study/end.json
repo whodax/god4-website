@@ -47,6 +47,10 @@
         {
           "text": "To come to the ultimate point; to be finished; to come to a close; to cease; to terminate; as, a voyage ends; life ends; winter ends.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A combining form signifying within; as, endocarp, endogen, endocuneiform, endaspidean.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": [
@@ -605,7 +609,7 @@
       ],
       "relatedWords": []
     },
-    "endallendall": {
+    "endall": {
       "word": "ENDALL; END-ALL",
       "definitions": [
         {
@@ -613,7 +617,26 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "KO",
+        "clincher",
+        "crusher",
+        "death stroke",
+        "deathblow",
+        "ender",
+        "final stroke",
+        "finisher",
+        "finishing stroke",
+        "kayo",
+        "kayo punch",
+        "knockout",
+        "knockout blow",
+        "last dab",
+        "quietus",
+        "settler",
+        "sockdolager",
+        "stopper"
+      ]
     },
     "endamage": {
       "word": "ENDAMAGE",
@@ -779,6 +802,16 @@
         {
           "text": "State of being endeared.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "endearing": {
+      "word": "ENDEARING",
+      "definitions": [
+        {
+          "text": "Making dear or beloved; causing love.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1076,8 +1109,12 @@
       "relatedWords": []
     },
     "endemic": {
-      "word": "ENDEMIC",
+      "word": "ENDEMIC; ENDEMICAL",
       "definitions": [
+        {
+          "text": "Peculiar to a district or particular locality, or class of persons; as, an endemic disease. greater or less degree in any place, as distinguished from an epidemic disease, which prevails widely at some one time, or periodically, and from a sporadic disease, of which a few instances occur now and then.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "An endemic disease. Fear, which is an endemic latent in every human heart, sometimes rises into an epidemic. J. B. Heard.",
           "partOfSpeech": "noun"
@@ -1185,22 +1222,22 @@
         "zymotic"
       ]
     },
+    "endemical": {
+      "word": "ENDEMIC; ENDEMICAL",
+      "definitions": [
+        {
+          "text": "Peculiar to a district or particular locality, or class of persons; as, an endemic disease. greater or less degree in any place, as distinguished from an epidemic disease, which prevails widely at some one time, or periodically, and from a sporadic disease, of which a few instances occur now and then.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "endemically": {
       "word": "ENDEMICALLY",
       "definitions": [
         {
           "text": "In an endemic manner.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "endemicendemical": {
-      "word": "ENDEMIC; ENDEMICAL",
-      "definitions": [
-        {
-          "text": "Peculiar to a district or particular locality, or class of persons; as, an endemic disease. greater or less degree in any place, as distinguished from an epidemic disease, which prevails widely at some one time, or periodically, and from a sporadic disease, of which a few instances occur now and then.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1289,7 +1326,7 @@
       "word": "ENDERON",
       "definitions": [
         {
-          "text": "The deep sensitive and vascular layer of the skin and mucous",
+          "text": "The deep sensitive and vascular layer of the skin and mucous membranes.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1790,6 +1827,16 @@
       ],
       "relatedWords": []
     },
+    "endo": {
+      "word": "ENDO-; END-",
+      "definitions": [
+        {
+          "text": "A combining form signifying within; as, endocarp, endogen, endocuneiform, endaspidean.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "endoblast": {
       "word": "ENDOBLAST",
       "definitions": [
@@ -1810,7 +1857,25 @@
       ],
       "relatedWords": []
     },
-    "endocardiacendocardial": {
+    "endocardiac": {
+      "word": "ENDOCARDIAC; ENDOCARDIAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the endocardium.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Seated or generated within the heart; as, endocardial murmurs.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "endocardial": {
       "word": "ENDOCARDIAC; ENDOCARDIAL",
       "definitions": [
         {
@@ -1898,7 +1963,17 @@
       ],
       "relatedWords": []
     },
-    "endodermalendodermic": {
+    "endodermal": {
+      "word": "ENDODERMAL; ENDODERMIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the endoderm.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "endodermic": {
       "word": "ENDODERMAL; ENDODERMIC",
       "definitions": [
         {
@@ -1914,16 +1989,6 @@
         {
           "text": "A layer of cells forming a kind of cuticle inside of the proper cortical layer, or surrounding an individual fibrovascular bundle.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "endoend": {
-      "word": "ENDO-; END-",
-      "definitions": [
-        {
-          "text": "A combining form signifying within; as, endocarp, endogen, endocuneiform, endaspidean.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -2260,7 +2325,17 @@
       ],
       "relatedWords": []
     },
-    "endorhizalendorhizous": {
+    "endorhizal": {
+      "word": "ENDORHIZAL; ENDORHIZOUS",
+      "definitions": [
+        {
+          "text": "Having the radicle of the embryo sheathed by the cotyledon, through which the embryo bursts in germination, as in many monocotyledonous plants.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "endorhizous": {
       "word": "ENDORHIZAL; ENDORHIZOUS",
       "definitions": [
         {
@@ -2642,7 +2717,17 @@
       ],
       "relatedWords": []
     },
-    "endosmoseendosmosis": {
+    "endosmose": {
+      "word": "ENDOSMOSE; ENDOSMOSIS",
+      "definitions": [
+        {
+          "text": "The transmission of a fluid or gas from without inward in the phenomena, or by the process, of osmose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "endosmosis": {
       "word": "ENDOSMOSE; ENDOSMOSIS",
       "definitions": [
         {
@@ -2808,7 +2893,7 @@
       "word": "ENDOTHECA",
       "definitions": [
         {
-          "text": "The tissue which partially fills the interior of the interseptal chambers of most madreporarian corals. It usually",
+          "text": "The tissue which partially fills the interior of the interseptal chambers of most madreporarian corals. It usually consists of a series of oblique tranverse septa, one above another.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3243,6 +3328,16 @@
         {
           "text": "Act of enduing; induement.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "endurable": {
+      "word": "ENDURABLE",
+      "definitions": [
+        {
+          "text": "Capable of being endured or borne; sufferable. Macaulay.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3859,7 +3954,59 @@
         "well-made"
       ]
     },
-    "endwaysendwise": {
+    "endways": {
+      "word": "ENDWAYS; ENDWISE",
+      "definitions": [
+        {
+          "text": "On end; erectly; in an upright position.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "With the end forward.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "adjacent",
+        "adjoining",
+        "along",
+        "at attention",
+        "at length",
+        "bolt upright",
+        "bordering",
+        "connecting",
+        "conterminous",
+        "contiguous",
+        "coterminous",
+        "end to end",
+        "endlong",
+        "endwise",
+        "erectly",
+        "face to face",
+        "immediate",
+        "in length",
+        "joined",
+        "juxtaposed",
+        "juxtapositional",
+        "juxtapositive",
+        "lengthways",
+        "lengthwise",
+        "longitudinally",
+        "longways",
+        "longwise",
+        "neighbor",
+        "neighboring",
+        "next",
+        "on end",
+        "right on end",
+        "up",
+        "up on end",
+        "upright",
+        "uprightly",
+        "upstandingly"
+      ]
+    },
+    "endwise": {
       "word": "ENDWAYS; ENDWISE",
       "definitions": [
         {

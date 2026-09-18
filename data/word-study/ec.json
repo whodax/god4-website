@@ -910,6 +910,16 @@
       ],
       "relatedWords": []
     },
+    "ecderon": {
+      "word": "ECDERON",
+      "definitions": [
+        {
+          "text": "See Ecteron.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "ecdysis": {
       "word": "ECDYSIS",
       "definitions": [
@@ -1044,7 +1054,17 @@
       ],
       "relatedWords": []
     },
-    "echinateechinated": {
+    "echinate": {
+      "word": "ECHINATE; ECHINATED",
+      "definitions": [
+        {
+          "text": "Set with prickles; prickly, like a hedgehog; bristled; as, an echinated pericarp.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "echinated": {
       "word": "ECHINATE; ECHINATED",
       "definitions": [
         {
@@ -1588,7 +1608,17 @@
       ],
       "relatedWords": []
     },
-    "echonechoon": {
+    "echon": {
+      "word": "ECHON; ECHOON",
+      "definitions": [
+        {
+          "text": "Each one. [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "echoon": {
       "word": "ECHON; ECHOON",
       "definitions": [
         {
@@ -2378,7 +2408,7 @@
       ],
       "relatedWords": []
     },
-    "economiceconomical": {
+    "economic": {
       "word": "ECONOMIC; ECONOMICAL",
       "definitions": [
         {
@@ -2406,7 +2436,152 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Scotch",
+        "budget",
+        "budgetary",
+        "canny",
+        "careful",
+        "chary",
+        "cheap",
+        "cheeseparing",
+        "commercial",
+        "conserving",
+        "easy",
+        "economizing",
+        "economy",
+        "financial",
+        "fiscal",
+        "forehanded",
+        "frugal",
+        "inexpensive",
+        "labor-saving",
+        "low",
+        "low-priced",
+        "manageable",
+        "mercantile",
+        "moderate",
+        "modest",
+        "monetary",
+        "money-saving",
+        "nominal",
+        "parsimonious",
+        "pecuniary",
+        "penny-wise",
+        "politico-economic",
+        "productive",
+        "profitable",
+        "provident",
+        "prudent",
+        "prudential",
+        "reasonable",
+        "remunerative",
+        "saving",
+        "scrimping",
+        "sensible",
+        "shabby",
+        "shoddy",
+        "skimping",
+        "socio-economic",
+        "solvent",
+        "spare",
+        "sparing",
+        "thrifty",
+        "time-saving",
+        "token",
+        "trade",
+        "unexpensive",
+        "unwasteful",
+        "within means",
+        "worth the money"
+      ]
+    },
+    "economical": {
+      "word": "ECONOMIC; ECONOMICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the household; domestic. \"In this economical misfortune [of ill-assorted matrimony.]\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Relating to domestic economy, or to the management of household affairs. And doth employ her economic art And busy care, her household to preserve. Sir J. Davies.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Managing with frugality; guarding against waste or unnecessary expense; careful and frugal in management and in expenditure; -- said of character or habits. Just rich enough, with economic care, To save a pittance. Harte.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Managed with frugality; not marked with waste or extravagance; frugal; -- said of acts; saving; as, an economical use of money or of time.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Relating to the means of living, or the resources and wealth of a country; relating to political economy; as, economic purposes; economical truths. These matters economical and political. J. C. Shairp. There was no economical distress in England to prompt the enterprises of colonization. Palfrey. Economic questions, such as money, usury, taxes, lands, and the employment of the people. H. C. Baird.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Regulative; relating to the adaptation of means to an end. Grew. economic is the form commonly used when meaning pertaining to the management of a household, or of public affairs.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Scotch",
+        "budget",
+        "canny",
+        "careful",
+        "chary",
+        "cheap",
+        "cheeseparing",
+        "close",
+        "conservative",
+        "conserving",
+        "easy",
+        "economic",
+        "economizing",
+        "economy",
+        "forehanded",
+        "frugal",
+        "inexpensive",
+        "labor-saving",
+        "low",
+        "low-priced",
+        "manageable",
+        "mean",
+        "miserly",
+        "moderate",
+        "modest",
+        "money-saving",
+        "niggardly",
+        "nominal",
+        "parsimonious",
+        "penny-pinching",
+        "penny-wise",
+        "penurious",
+        "politico-economic",
+        "provident",
+        "prudent",
+        "prudential",
+        "reasonable",
+        "saving",
+        "scrimping",
+        "sensible",
+        "shabby",
+        "shoddy",
+        "skimping",
+        "socio-economic",
+        "spare",
+        "sparing",
+        "stingy",
+        "thrifty",
+        "tight",
+        "tight-fisted",
+        "time-saving",
+        "token",
+        "unexpensive",
+        "unwasteful",
+        "within means",
+        "worth the money"
+      ]
     },
     "economically": {
       "word": "ECONOMICALLY",
@@ -3143,11 +3318,25 @@
       ],
       "relatedWords": []
     },
-    "ectecto": {
+    "ect": {
       "word": "ECT-; ECTO-",
       "definitions": [
         {
           "text": "A combining form signifying without, outside, external.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ecto": {
+      "word": "ECT-; ECTO-",
+      "definitions": [
+        {
+          "text": "A combining form signifying without, outside, external.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "See Ect-.",
           "partOfSpeech": ""
         }
       ],
@@ -3207,7 +3396,7 @@
       "word": "ECTERON",
       "definitions": [
         {
-          "text": "The external layer of the skin and mucous membranes;",
+          "text": "The external layer of the skin and mucous membranes; epithelium; ecderon.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3261,16 +3450,6 @@
       ],
       "relatedWords": []
     },
-    "ecto": {
-      "word": "ECTO-",
-      "definitions": [
-        {
-          "text": "See Ect-.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "ectobronchium": {
       "word": "ECTOBRONCHIUM",
       "definitions": [
@@ -3281,7 +3460,17 @@
       ],
       "relatedWords": []
     },
-    "ectocuneriformectocuniform": {
+    "ectocuneriform": {
+      "word": "ECTOCUNERIFORM; ECTOCUNIFORM",
+      "definitions": [
+        {
+          "text": "One of the bones of the tarsus. See Cuneiform.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ectocuniform": {
       "word": "ECTOCUNERIFORM; ECTOCUNIFORM",
       "definitions": [
         {
@@ -3301,7 +3490,17 @@
       ],
       "relatedWords": []
     },
-    "ectodermalectodermic": {
+    "ectodermal": {
+      "word": "ECTODERMAL; ECTODERMIC",
+      "definitions": [
+        {
+          "text": "Of or relating to the ectoderm.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ectodermic": {
       "word": "ECTODERMAL; ECTODERMIC",
       "definitions": [
         {
@@ -3335,7 +3534,7 @@
       "word": "ECTOPARASITE",
       "definitions": [
         {
-          "text": "Any parasite which lives on the exterior of animals; -- opposed",
+          "text": "Any parasite which lives on the exterior of animals; -- opposed to endoparasite.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3441,7 +3640,17 @@
       ],
       "relatedWords": []
     },
-    "ectozoonectozooen": {
+    "ectozoon": {
+      "word": "ECTOZOON; ECTOZOOEN",
+      "definitions": [
+        {
+          "text": "See Epizoön.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ectozooen": {
       "word": "ECTOZOON; ECTOZOOEN",
       "definitions": [
         {
@@ -3515,7 +3724,7 @@
       ],
       "relatedWords": []
     },
-    "ecumenicecumenical": {
+    "ecumenic": {
       "word": "ECUMENIC; ECUMENICAL",
       "definitions": [
         {
@@ -3524,6 +3733,99 @@
         }
       ],
       "relatedWords": []
+    },
+    "ecumenical": {
+      "word": "ECUMENIC; ECUMENICAL",
+      "definitions": [
+        {
+          "text": "General; universal; in ecclesiastical usage, that which concerns the whole church; as, an ecumenical council. [Written also .] Ecumenical Bishop, a title assumed by the popes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "all-comprehending",
+        "all-comprehensive",
+        "all-covering",
+        "all-embracing",
+        "all-encompassing",
+        "all-filling",
+        "all-including",
+        "all-inclusive",
+        "all-pervading",
+        "allover",
+        "broad",
+        "broad-gauged",
+        "broad-minded",
+        "catholic",
+        "coacting",
+        "coactive",
+        "coadjutant",
+        "coadjuvant",
+        "coefficient",
+        "collaborative",
+        "collective",
+        "collectivist",
+        "collectivistic",
+        "collusive",
+        "combined",
+        "commensal",
+        "common",
+        "communal",
+        "communalist",
+        "communalistic",
+        "communist",
+        "communistic",
+        "communitarian",
+        "comprehensive",
+        "concerted",
+        "concordant",
+        "concurrent",
+        "concurring",
+        "conniving",
+        "cooperant",
+        "cooperating",
+        "cooperative",
+        "cosmic",
+        "cosmopolitan",
+        "country-wide",
+        "ecumenic",
+        "ecumenistic",
+        "fellow",
+        "galactic",
+        "general",
+        "global",
+        "harmonious",
+        "harmonized",
+        "heaven-wide",
+        "inclusive",
+        "international",
+        "joint",
+        "mutual",
+        "national",
+        "noncompetitive",
+        "nondenominational",
+        "noninsular",
+        "nonsectarian",
+        "planetary",
+        "reciprocal",
+        "spacious of mind",
+        "symbiotic",
+        "synergetic",
+        "synergic",
+        "synergistic",
+        "total",
+        "unbigoted",
+        "uncompetitive",
+        "unfanatical",
+        "unhidebound",
+        "universal",
+        "unparochial",
+        "unprovincial",
+        "wide",
+        "wide-minded",
+        "world-wide",
+        "worldwide"
+      ]
     },
     "ecurie": {
       "word": "ECURIE",

@@ -269,6 +269,16 @@
       ],
       "relatedWords": []
     },
+    "regardful": {
+      "word": "REGARDFUL",
+      "definitions": [
+        {
+          "text": "Heedful; attentive; observant. Let a man be very tender and regardful of every pious motion made by the Spirit of God to his heart. South.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "regarding": {
       "word": "REGARDING",
       "definitions": [
@@ -287,7 +297,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not regarded; slighted. [R.] Spectator.",
+          "text": "Not regarded; slighted. [R.] Spectator. inattentive; unobservant; neglectful.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -879,7 +889,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "(Print.) (a) The inner part of the mold in which types are cast. (b) The correspondence of pages, columns, or lines on the opposite or reverse sides of the sheet. (c) The correspondence or adjustment of the several impressions in a",
+          "text": "(Print.) (a) The inner part of the mold in which types are cast. (b) The correspondence of pages, columns, or lines on the opposite or reverse sides of the sheet. (c) The correspondence or adjustment of the several impressions in a design which is printed in parts, as in chromolithographic printing, or in the manufacture of paper hangings. See Register, v. i. 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.) (a) The compass of a voice or instrument; a specified portion of the compass of a voice, or a series of vocal tones of a given compass; as, the upper, middle, or lower register; the soprano register; the tenor register. extends below from the F on the lower space of the treble staff. The thin register extends an octave above this. The small register is above the thin. The voice in the thick register is called the chest voice; in the thin, the head voice. Falsetto is a kind off voice, of a thin, shrull quality, made by using the mechanism of the upper thin register for tones below the proper limit on the scale. E. Behnke. (b) A stop or set of pipes in an organ. Parish register, A book in which are recorded the births, baptisms, marriages, deaths, and burials in a parish. List.",
           "partOfSpeech": "noun"
         },
         {
@@ -930,6 +944,16 @@
       "definitions": [
         {
           "text": "One who registers; esp., one who , by virtue of securing an official registration, obtains a certain right or title of possession, as to a trade-mark.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "registrar": {
+      "word": "REGISTRAR",
+      "definitions": [
+        {
+          "text": "One who registers; a recorder; a keeper of records; as, a registrar of births, deaths, and marriages. See Register, n., 3.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1365,6 +1389,16 @@
       ],
       "relatedWords": []
     },
+    "regretful": {
+      "word": "REGRETFUL",
+      "definitions": [
+        {
+          "text": "Full of regret; indulging in regrets; repining.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "regrow": {
       "word": "REGROW",
       "definitions": [
@@ -1401,52 +1435,6 @@
         {
           "text": "To reward. [Obs.] Shak.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "regulaarulerrulemodelfrregererectumtoleadstraightto": {
-      "word": "regula a ruler, rule, model, fr. regere, rectum, to lead straight, to",
-      "definitions": [
-        {
-          "text": "That which is prescribed or laid down as a guide for conduct or action; a governing direction for a specific purpose; an authoritative enactment; a regulation; a prescription; a precept; as, the rules of various societies; the rules governing a school; a rule of etiquette or propriety; the rules of cricket. We profess to have embraced a religion which contains the most exact rules for the government of our lives. Tillotson.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Hence: (a) Uniform or established course of things. 'T is against the rule of nature. Shak. (b) Systematic method or practice; as, my ule is to rise at six o'clock. (c) Ordibary course of procedure; usual way; comon state or condition of things; as, it is a rule to which there are many exeptions. (d) Conduct in general; behavior. [Obs.] This uncivil rule; she shall know of it. Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The act of ruling; administration of law; government; empire; authority; control. Obey them that have the rule over you. Heb. xiii. 17. His stern rule the groaning land obeyed. Pope.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "An order regulating the practice of the courts, or an order made between parties to an action or a suit. Wharton.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Math.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A determinate method prescribed for performing any operation and producing a certain result; as, a rule for extracting the cube root.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Gram.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A general principle concerning the formation or use of words, or a concise statement thereof; thus, it is a rule in England, that s or es , added to a noun in the singular number, forms the plural of that noun; but \"man\" forms its plural \"men\", and is an exception to the rule. 7. (a) A straight strip of wood, metal, or the like, which serves as a guide in drawing a straight line; a ruler. (b) A measuring instrument consisting of a graduated bar of wood, ivory, metal, or the like, which is usually marked so as to show inches and fractions of an inch, and jointed so that it may be folded compactly. A judicious artist will use his eye, but he will trust only to his rule. South.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Print.) (a) A thin plate of metal (usually brass) of the same height as the type, and used for printing lines, as between columns on the same page, or in tabular work. (b) A composing rule. See under Conposing. As a rule, as a general thing; in the main; usually; as, he behaves well, as a rule. connected pieces come in line with each other, and thus permit folding in one direction only. are given, how to find a fourth, which shall have the same ratio to the third term as the second has to the first; proportion. See Proportion, 5 (b). the thumb as a rule in measuring; hence, judgment and practical experience as distinguished from scientific knowledge. direction; control; government; sway; empire.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

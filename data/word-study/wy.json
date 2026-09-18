@@ -31,7 +31,17 @@
       ],
       "relatedWords": []
     },
-    "wyclifitewycliffite": {
+    "wyclifite": {
+      "word": "WYCLIFITE; WYCLIFFITE",
+      "definitions": [
+        {
+          "text": "A follower of Wyclif, the English reformer; a Lollard.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "wycliffite": {
       "word": "WYCLIFITE; WYCLIFFITE",
       "definitions": [
         {
@@ -85,11 +95,25 @@
       ],
       "relatedWords": []
     },
-    "wynwynnwen": {
+    "wyn": {
       "word": "WYN; WYNN; WEN",
       "definitions": [
         {
           "text": "One of the runes adopted into the Anglo-Saxon, or Old English, alphabet. It had the value of modern English w, and was replaced from about a. d. 1280 at first by uu, later by w.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "wynn": {
+      "word": "WYN; WYNN; WEN",
+      "definitions": [
+        {
+          "text": "One of the runes adopted into the Anglo-Saxon, or Old English, alphabet. It had the value of modern English w, and was replaced from about a. d. 1280 at first by uu, later by w.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of timber truck, or carriage.",
           "partOfSpeech": "noun"
         }
       ],
@@ -115,16 +139,6 @@
       ],
       "relatedWords": []
     },
-    "wynn": {
-      "word": "WYNN",
-      "definitions": [
-        {
-          "text": "A kind of timber truck, or carriage.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "wype": {
       "word": "WYPE",
       "definitions": [
@@ -145,12 +159,32 @@
       ],
       "relatedWords": []
     },
-    "wytewyten": {
+    "wyte": {
       "word": "WYTE; WYTEN",
       "definitions": [
         {
           "text": "pl. pres. of Wit.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "wyten": {
+      "word": "WYTE; WYTEN",
+      "definitions": [
+        {
+          "text": "pl. pres. of Wit.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "wythe": {
+      "word": "WYTHE",
+      "definitions": [
+        {
+          "text": "Same as Withe, n., 4.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

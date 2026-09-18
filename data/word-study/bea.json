@@ -522,7 +522,7 @@
         "wristlet"
       ]
     },
-    "beadhousebedehouse": {
+    "beadhouse": {
       "word": "BEADHOUSE; BEDEHOUSE",
       "definitions": [
         {
@@ -716,7 +716,7 @@
       ],
       "relatedWords": []
     },
-    "beadsmanbedesman": {
+    "beadsman": {
       "word": "BEADSMAN; BEDESMAN",
       "definitions": [
         {
@@ -736,7 +736,7 @@
       ],
       "relatedWords": []
     },
-    "beadswomanbedeswoman": {
+    "beadswoman": {
       "word": "BEADSWOMAN; BEDESWOMAN",
       "definitions": [
         {
@@ -2080,6 +2080,10 @@
         {
           "text": "To endeavor to depress the price of, or prices in; as, to bear a railroad stock; to bear the market.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Barley; the six-rowed barley or the four-rowed barley, commonly the former (Hord. vulgare). [Obs. except in North of Eng. and Scot.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -2524,12 +2528,12 @@
       ],
       "relatedWords": []
     },
-    "bearbere": {
-      "word": "BEAR; BERE",
+    "bearable": {
+      "word": "BEARABLE",
       "definitions": [
         {
-          "text": "Barley; the six-rowed barley or the four-rowed barley, commonly the former (Hord. vulgare). [Obs. except in North of Eng. and Scot.]",
-          "partOfSpeech": "noun"
+          "text": "Capable of being borne or endured; tolerable.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4035,7 +4039,19 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A sudden swelling or reënforcement of a sound, recurring at regular intervals, and produced by the interference of sound waves of slightly different periods of vibrations; applied also, by analogy, to other kinds of wave motions; the pulsation or throbbing produced",
+          "text": "A sudden swelling or reënforcement of a sound, recurring at regular intervals, and produced by the interference of sound waves of slightly different periods of vibrations; applied also, by analogy, to other kinds of wave motions; the pulsation or throbbing produced by the vibrating together of two tones not quite in unison. See Beat, v. i., 8.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A round or course which is frequently gone over; as, a watchman's beat.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A place of habitual or frequent resort.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cheat or swindler of the lowest grade; -- often emphasized by dead; as, a dead beat. [Low] Beat of drum (Mil.), a succession of strokes varied, in different ways, for particular purposes, as to regulate a march, to call soldiers to their arms or quarters, to direct an attack, or retreat, etc. of the escapement. A clock is in beat or out of beat, according as the strokes is at equal or unequal intervals.",
           "partOfSpeech": "noun"
         },
         {
@@ -5065,6 +5081,26 @@
       ],
       "relatedWords": []
     },
+    "beatific": {
+      "word": "BEATIFIC; BEATIFICAL",
+      "definitions": [
+        {
+          "text": "Having the power to impart or complete blissful enjoyment; blissful. \"The beatific vision.\" South.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "beatifical": {
+      "word": "BEATIFIC; BEATIFICAL",
+      "definitions": [
+        {
+          "text": "Having the power to impart or complete blissful enjoyment; blissful. \"The beatific vision.\" South.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "beatificate": {
       "word": "BEATIFICATE",
       "definitions": [
@@ -5166,16 +5202,6 @@
         "upthrow",
         "upthrust"
       ]
-    },
-    "beatificbeatifical": {
-      "word": "BEATIFIC; BEATIFICAL",
-      "definitions": [
-        {
-          "text": "Having the power to impart or complete blissful enjoyment; blissful. \"The beatific vision.\" South.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
     },
     "beatify": {
       "word": "BEATIFY",
@@ -5804,7 +5830,7 @@
       "word": "BEAUTIFUL",
       "definitions": [
         {
-          "text": "Having the qualities which constitute beauty; pleasing to the sight or the mind. A circle is more beautiful than a square; a square is more beautiful than a parallelogram. Lord Kames.",
+          "text": "Having the qualities which constitute beauty; pleasing to the sight or the mind. A circle is more beautiful than a square; a square is more beautiful than a parallelogram. Lord Kames. delightful. See Fine.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6042,8 +6068,12 @@
       "relatedWords": []
     },
     "beauxite": {
-      "word": "BEAUXITE",
+      "word": "BAUXITE; BEAUXITE",
       "definitions": [
+        {
+          "text": "A ferruginous hydrate of alumina. It is largely used in the preparation of aluminium and alumina, and for the lining of furnaces which are exposed to intense heat.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Bauxite.",
           "partOfSpeech": "noun"

@@ -1,6 +1,52 @@
 {
   "version": "v1",
   "entries": {
+    "bur": {
+      "word": "BUR; BURR",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any rough or prickly envelope of the seeds of plants, whether a pericarp, a persistent calyx, or an involucre, as of the chestnut and burdock. Also, any weed which bears burs. Amongst rude burs and thistles. Milton. Bur and brake and brier. Tennyson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The thin ridge left by a tool in cutting or shaping metal. See Burr, n., 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ring of iron on a lance or spear. See Burr, n., 4.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The lobe of the ear. See Burr, n., 5.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The sweetbread.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A clinker; a partially vitrified brick.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.) (a) A small circular saw. (b) A triangular chisel. (c) A drill with a serrated head larger than the shank; -- used by dentists.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. Gael. borr, borra, a knob, bunch.] (Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The round knob of an antler next to a deer's head. [Commonly written burr.] Bur oak (Bot.), a useful and ornamental species of oak (Quercus macrocarpa) with ovoid acorns inclosed in deep cups imbricated with pointed scales. It grows in the Middle and Western United States, and its wood is tough, close-grained, and durable. ribbonlike leaves.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "burbolt": {
       "word": "BURBOLT",
       "definitions": [
@@ -16,24 +62,6 @@
       "definitions": [
         {
           "text": "A fresh-water fish of the genus Lota, having on the nose two very small barbels, and a larger one on the chin. [Written also burbolt.] the codfish. The Lota vulgaris is a common European species. An American species (L. maculosa) is found in New England, the Great Lakes, and farther north.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "burburr": {
-      "word": "BUR; BURR",
-      "definitions": [
-        {
-          "text": "(Bot.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Any rough or prickly envelope of the seeds of plants, whether a pericarp, a persistent calyx, or an involucre, as of the chestnut and burdock. Also, any weed which bears burs. Amongst rude burs and thistles. Milton. Bur and brake and brier. Tennyson.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The thin ridge left by a tool in cutting or shaping metal. See",
           "partOfSpeech": "noun"
         }
       ],
@@ -570,7 +598,7 @@
       "word": "BURDENSOME",
       "definitions": [
         {
-          "text": "Grievous to be borne; causing uneasiness or fatigue; oppressive. The debt immense of endless gratitude So burdensome. Milton.",
+          "text": "Grievous to be borne; causing uneasiness or fatigue; oppressive. The debt immense of endless gratitude So burdensome. Milton. troublesome.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -658,6 +686,51 @@
       ],
       "relatedWords": []
     },
+    "bureau": {
+      "word": "BUREAU",
+      "definitions": [
+        {
+          "text": "Originally, a desk or writing table with drawers for papers. Swift.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The place where such a bureau is used; an office where business requiring writing is transacted.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence: A department of public business requiring a force of clerks; the body of officials in a department who labor under the direction of a chief. countries, have the name of bureaux; as, the Bureau of the Minister of Foreign Affairs. In England and America, the term is confined to inferior and subordinate departments; as, the \"Pension Bureau,\" a subdepartment of the Department of the Interior. [Obs.] In Spanish, bureo denotes a court of justice for the trial of persons belonging to the king's household.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A chest of drawers for clothes, especially when made as an ornamental piece of furniture. [U.S.] Bureau system. See Bureaucracy. underwriters, for the survey and rating of vessels all over the world. It was founded in Belgium in 1828, removed to Paris in 1830, and reëstablished in Brussels in 1870.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "agency",
+        "bailiwick",
+        "chest",
+        "chest of drawers",
+        "chiffonier",
+        "commissariat",
+        "constablery",
+        "constablewick",
+        "constabulary",
+        "department",
+        "desk",
+        "division",
+        "dresser",
+        "ministry",
+        "municipality",
+        "office",
+        "secretariat",
+        "section",
+        "sheriffalty",
+        "sheriffwick",
+        "shrievalty",
+        "subdivision"
+      ]
+    },
     "bureaucracy": {
       "word": "BUREAUCRACY",
       "definitions": [
@@ -731,7 +804,61 @@
       ],
       "relatedWords": []
     },
-    "bureaucraticbureaucratical": {
+    "bureaucratic": {
+      "word": "BUREAUCRATIC; BUREAUCRATICAL",
+      "definitions": [
+        {
+          "text": "Of, relating to, or resembling, a bureaucracy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "absolute",
+        "administrative",
+        "aristocratic",
+        "authoritarian",
+        "autocratic",
+        "autonomous",
+        "civic",
+        "civil",
+        "constitutional",
+        "democratic",
+        "despotic",
+        "dictatorial",
+        "directing",
+        "executive",
+        "fascist",
+        "federal",
+        "federalist",
+        "federalistic",
+        "governmental",
+        "gubernatorial",
+        "heteronomous",
+        "managing",
+        "matriarchal",
+        "matriarchic",
+        "ministerial",
+        "monarchal",
+        "monarchial",
+        "monarchic",
+        "monocratic",
+        "official",
+        "oligarchal",
+        "oligarchic",
+        "parliamentarian",
+        "parliamentary",
+        "patriarchal",
+        "patriarchic",
+        "pluralistic",
+        "political",
+        "republican",
+        "self-governing",
+        "supervisory",
+        "theocratic",
+        "totalitarian"
+      ]
+    },
+    "bureaucratical": {
       "word": "BUREAUCRATIC; BUREAUCRATICAL",
       "definitions": [
         {
@@ -1401,7 +1528,7 @@
       ],
       "relatedWords": []
     },
-    "burhelburrhel": {
+    "burhel": {
       "word": "BURHEL; BURRHEL",
       "definitions": [
         {
@@ -1586,14 +1713,6 @@
         {
           "text": "To dispose of quietly or indirectly; to suppress; to smother; to shelve; as, to burke a parliamentary question. The court could not burke an inquiry, supported by such a mass of a affidavits. C. Reade.",
           "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Gram.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To derive by grammatical rules, as by adding the proper suffixes and affixes.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2198,7 +2317,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The operation or result of burning or baking, as in brickmaking;",
+          "text": "The operation or result of burning or baking, as in brickmaking; as, they have a good burn.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A disease in vegetables. See Brand, n., 6.",
           "partOfSpeech": "noun"
         },
         {
@@ -3252,6 +3375,10 @@
       "word": "BURNISH",
       "definitions": [
         {
+          "text": "To cause to shine; to make smooth and bright; to polish; specifically, to polish by rubbing with something hard and smooth; as, to burnish brass or paper. The frame of burnished steel, that east a glare From far, and seemed to thaw the freezing air. Dryden. Now the village windows blaze, Burnished by the setting sun. Cunningham. Burnishing machine, a machine for smoothing and polishing by compression, as in making paper collars.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To shine forth; to brighten; to become smooth and glossy, as from swelling or filling out; hence, to grow large. A slender poet must have time to grow, And spread and burnish as his brothers do. Dryden. My thoughts began to burnish, sprout, and swell. Herbert.",
           "partOfSpeech": "verb"
         },
@@ -3299,7 +3426,21 @@
       ],
       "relatedWords": []
     },
-    "burnooseburnous": {
+    "burnoose": {
+      "word": "BURNOOSE; BURNOUS",
+      "definitions": [
+        {
+          "text": "A cloaklike garment and hood woven in one piece, worn by Arabs.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A combination cloak and hood worn by women. [Variously written bournous, bernouse, bornous, etc.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "burnous": {
       "word": "BURNOOSE; BURNOUS",
       "definitions": [
         {
@@ -3334,8 +3475,48 @@
       "relatedWords": []
     },
     "burr": {
-      "word": "BURR",
+      "word": "BUR; BURR",
       "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any rough or prickly envelope of the seeds of plants, whether a pericarp, a persistent calyx, or an involucre, as of the chestnut and burdock. Also, any weed which bears burs. Amongst rude burs and thistles. Milton. Bur and brake and brier. Tennyson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The thin ridge left by a tool in cutting or shaping metal. See Burr, n., 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ring of iron on a lance or spear. See Burr, n., 4.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The lobe of the ear. See Burr, n., 5.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The sweetbread.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A clinker; a partially vitrified brick.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.) (a) A small circular saw. (b) A triangular chisel. (c) A drill with a serrated head larger than the shank; -- used by dentists.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Cf. Gael. borr, borra, a knob, bunch.] (Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The round knob of an antler next to a deer's head. [Commonly written burr.] Bur oak (Bot.), a useful and ornamental species of oak (Quercus macrocarpa) with ovoid acorns inclosed in deep cups imbricated with pointed scales. It grows in the Middle and Western United States, and its wood is tough, close-grained, and durable. ribbonlike leaves.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A prickly seed vessel. See Bur, 1.",
           "partOfSpeech": "noun"
@@ -3361,7 +3542,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A guttural pronounciation of the letter r, produced by trilling the extremity of the soft palate against the back part of the tongue; rotacism; -- often called the Newcastle, Northumberland, or",
+          "text": "A guttural pronounciation of the letter r, produced by trilling the extremity of the soft palate against the back part of the tongue; rotacism; -- often called the Newcastle, Northumberland, or Tweedside, burr.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The knot at the bottom of an antler. See Bur, n., 8.",
           "partOfSpeech": "noun"
         },
         {
@@ -3524,6 +3709,16 @@
       ],
       "relatedWords": []
     },
+    "burrhel": {
+      "word": "BURHEL; BURRHEL",
+      "definitions": [
+        {
+          "text": "The wild Himalayan, or blue, sheep (Ovis burrhel).",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "burringmachine": {
       "word": "BURRING MACHINE",
       "definitions": [
@@ -3540,36 +3735,6 @@
         {
           "text": "See Buhrstone.",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "burrn2": {
-      "word": "Burr, n., 2.",
-      "definitions": [
-        {
-          "text": "The lobe of the ear. See Burr, n., 5.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The sweetbread.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A clinker; a partially vitrified brick.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Mech.) (a) A small circular saw. (b) A triangular chisel. (c) A drill with a serrated head larger than the shank; -- used by dentists.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Etym: [Cf. Gael. borr, borra, a knob, bunch.] (Zoöl.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The round knob of an antler next to a deer's head. [Commonly written burr.] Bur oak (Bot.), a useful and ornamental species of oak (Quercus macrocarpa) with ovoid acorns inclosed in deep cups imbricated with pointed scales. It grows in the Middle and Western United States, and its wood is tough, close-grained, and durable. ribbonlike leaves.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3607,6 +3772,14 @@
         },
         {
           "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A heap or heaps of rubbish or refuse.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mound. See 3d Barrow, and Camp, n., 5.",
           "partOfSpeech": "noun"
         },
         {
@@ -3889,7 +4062,11 @@
       "word": "BURSCHENSCHAFT",
       "definitions": [
         {
-          "text": "In Germany, any of various associations of university students formed (the original one at Jena in 1815) to support liberal ideas, or the organization formed by the affiliation of the local bodies. The organization was suppressed by the government in 1819, but was secretly revived, and is now openly maintained as a social",
+          "text": "In Germany, any of various associations of university students formed (the original one at Jena in 1815) to support liberal ideas, or the organization formed by the affiliation of the local bodies. The organization was suppressed by the government in 1819, but was secretly revived, and is now openly maintained as a social organization, the restrictive laws having been repealed prior to",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "-- Bur\"schen*schaft`ler (#), -schaf`ter (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4424,7 +4601,17 @@
         "whelm"
       ]
     },
-    "buryinggroundburyingplace": {
+    "buryingground": {
+      "word": "BURYING GROUND; BURYING PLACE",
+      "definitions": [
+        {
+          "text": "The ground or place for burying the dead; burial place.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "buryingplace": {
       "word": "BURYING GROUND; BURYING PLACE",
       "definitions": [
         {

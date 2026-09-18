@@ -211,7 +211,25 @@
       ],
       "relatedWords": []
     },
-    "patchoulipatchouly": {
+    "patchouli": {
+      "word": "PATCHOULI; PATCHOULY",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mintlike plant (Pogostemon Patchouli) of the East Indies, yielding an essential oil from which a highly valued perfume is made.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The perfume made from this plant. Patchouly camphor (Chem.), a substance homologous with and resembling borneol, found in patchouly oil.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "patchouly": {
       "word": "PATCHOULI; PATCHOULY",
       "definitions": [
         {
@@ -811,6 +829,26 @@
       ],
       "relatedWords": []
     },
+    "pathologic": {
+      "word": "PATHOLOGIC; PATHOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pathology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pathological": {
+      "word": "PATHOLOGIC; PATHOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pathology.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "pathologist": {
       "word": "PATHOLOGIST",
       "definitions": [
@@ -977,6 +1015,16 @@
       ],
       "relatedWords": []
     },
+    "patin": {
+      "word": "PATIN; PATINE",
+      "definitions": [
+        {
+          "text": "A plate. See Paten. \"Inlaid with patines of bright gold.\" Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "patina": {
       "word": "PATINA",
       "definitions": [
@@ -995,7 +1043,7 @@
       ],
       "relatedWords": []
     },
-    "patinpatine": {
+    "patine": {
       "word": "PATIN; PATINE",
       "definitions": [
         {
@@ -1146,6 +1194,10 @@
         },
         {
           "text": "(Ethnol.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A patriarchal form of government or society. See Patriarchal, a., 3.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1341,6 +1393,16 @@
       ],
       "relatedWords": []
     },
+    "patriotical": {
+      "word": "PATRIOTICAL",
+      "definitions": [
+        {
+          "text": "Patriotic; that pertains to a patriot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "patriotism": {
       "word": "PATRIOTISM",
       "definitions": [
@@ -1365,7 +1427,7 @@
       "word": "PATRIPASSIAN",
       "definitions": [
         {
-          "text": "One of a body of believers in the early church who denied the independent preëxistent personality of Christ, and who, accordingly,",
+          "text": "One of a body of believers in the early church who denied the independent preëxistent personality of Christ, and who, accordingly, held that the Father suffered in the Son; a monarchian.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1381,7 +1443,17 @@
       ],
       "relatedWords": []
     },
-    "patristicpatristical": {
+    "patristic": {
+      "word": "PATRISTIC; PATRISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Fathers of the Christian church. The voluminous editor of Jerome anf of tons of patristic theology. I. Taylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "patristical": {
       "word": "PATRISTIC; PATRISTICAL",
       "definitions": [
         {
@@ -1444,6 +1516,10 @@
     "patrol": {
       "word": "PATROL",
       "definitions": [
+        {
+          "text": "To go the rounds along a chain of sentinels; to traverse a police district or beat.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "t To go the rounds of, as a sentry, guard, or policeman; as, to patrol a frontier; to patrol a beat.",
           "partOfSpeech": "verb"
@@ -1631,7 +1707,7 @@
       "word": "PATRONIZING",
       "definitions": [
         {
-          "text": "Showing condescending favor; assuming the manner of airs of a",
+          "text": "Showing condescending favor; assuming the manner of airs of a superior toward another.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1701,6 +1777,26 @@
       ],
       "relatedWords": []
     },
+    "patte": {
+      "word": "PATTE; PATTEE",
+      "definitions": [
+        {
+          "text": "Narrow at the inner, and very broad at the other, end, or having its arms of that shape; -- said of a cross. See Illust. (8) of Cross. [Written also paté, patee.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pattee": {
+      "word": "PATTE; PATTEE",
+      "definitions": [
+        {
+          "text": "Narrow at the inner, and very broad at the other, end, or having its arms of that shape; -- said of a cross. See Illust. (8) of Cross. [Written also paté, patee.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "pattemar": {
       "word": "PATTEMAR",
       "definitions": [
@@ -1730,16 +1826,6 @@
       "definitions": [
         {
           "text": "Wearing pattens. \"Some pattened girl.\" Jane Austen.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pattepattee": {
-      "word": "PATTE; PATTEE",
-      "definitions": [
-        {
-          "text": "Narrow at the inner, and very broad at the other, end, or having its arms of that shape; -- said of a cross. See Illust. (8) of Cross. [Written also paté, patee.]",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1838,32 +1924,6 @@
         },
         {
           "text": "To serve as an example for; also, to parallel. To pattern after, to imitate; to follow.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "patternexampleinsomesensesconfusedwithscantinsufficient": {
-      "word": "pattern, example. In some senses confused with scant insufficient.",
-      "definitions": [
-        {
-          "text": "A fragment; a bit; a little piece. Specifically: (a) A piece or quantity cut for a special purpose; a sample. [Obs.] Such as exceed not this scantling; -- to be solace to the sovereign and harmless to the people. Bacon. A pretty scantling of his knowledge may taken by his deferring to be baptized so many years. Milton. (b) A small quantity; a little bit; not much. [Obs.] Reducing them to narrow scantlings. Jer. Taylor.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A piece of timber sawed or cut of a small size, as for studs, rails, etc.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The dimensions of a piece of timber with regard to its breadth and thickness; hence, the measure or dimensions of anything.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A rough draught; a rude sketch or outline.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A frame for casks to lie upon; a trestle. Knight.",
           "partOfSpeech": "verb"
         }
       ],

@@ -1,16 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "obtaininghispermissiontolandthegoodsseeentervt8and": {
-      "word": "obtaining his permission to land the goods. See Enter, v. t., 8, and",
-      "definitions": [
-        {
-          "text": "(Law) (a) The actual taking possession of lands or tenements, by entering or setting foot on them. (b) A putting upon record in proper form and order. (c) The act in addition to breaking essential to constitute the offense or burglary. Burrill. Bill of entry. See under Bill. transactions in a business. possession of land from one who has unlawfully entered and continues in possession. Bouvier.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "ob": {
       "word": "OB-",
       "definitions": [
@@ -41,7 +31,17 @@
       ],
       "relatedWords": []
     },
-    "obconicobconical": {
+    "obconic": {
+      "word": "OBCONIC; OBCONICAL",
+      "definitions": [
+        {
+          "text": "Conical, but having the apex downward; inversely conical.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "obconical": {
       "word": "OBCONIC; OBCONICAL",
       "definitions": [
         {
@@ -139,7 +139,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Hard; harsh; rugged; rough; intractable. \"Obdurate consonants.\" Swift. older poets. There is no flesh in man's obdurate heart. Cowper. obstinate; impenitent; callous; unfeeling; insensible; unsusceptible. sensibilities; as. a callous conscience. Hardened implies a general and settled disregard for the claims of interest, duty, and sympathy; as, hardened in vice. Obdurate implies an active resistance of the",
+          "text": "Hard; harsh; rugged; rough; intractable. \"Obdurate consonants.\" Swift. older poets. There is no flesh in man's obdurate heart. Cowper. obstinate; impenitent; callous; unfeeling; insensible; unsusceptible. sensibilities; as. a callous conscience. Hardened implies a general and settled disregard for the claims of interest, duty, and sympathy; as, hardened in vice. Obdurate implies an active resistance of the heart and will aganst the pleadings of compassion and humanity.",
           "partOfSpeech": "adjective"
         },
         {
@@ -165,11 +165,15 @@
         {
           "text": "To harden. [Obs.] Milton.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Obdurate; hard. [Obs.] This saw his hapless foes, but stood obdured. Milton.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "obdureobdured": {
+    "obdured": {
       "word": "OBDURE; OBDURED",
       "definitions": [
         {
@@ -179,7 +183,17 @@
       ],
       "relatedWords": []
     },
-    "obdurenessobduredness": {
+    "obdureness": {
+      "word": "OBDURENESS; OBDUREDNESS",
+      "definitions": [
+        {
+          "text": "Hardness. [Obs.] Bp. Hall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "obduredness": {
       "word": "OBDURENESS; OBDUREDNESS",
       "definitions": [
         {
@@ -479,7 +493,17 @@
       ],
       "relatedWords": []
     },
-    "obfirmobfirmate": {
+    "obfirm": {
+      "word": "OBFIRM; OBFIRMATE",
+      "definitions": [
+        {
+          "text": "To make firm; to harden in resolution. [Obs.] Bp. Hall. Sheldon.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "obfirmate": {
       "word": "OBFIRM; OBFIRMATE",
       "definitions": [
         {
@@ -571,6 +595,16 @@
         {
           "text": "A service for the soul of a deceased person on the anniversary of the day of his death. The emoluments and advantages from oblations, obits, and other sources, increased in value. Milman. Post obit Etym: [L. post obitum]. See Post-obit.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "obiter": {
+      "word": "OBITER",
+      "definitions": [
+        {
+          "text": "In passing; incidentally; by the way. Obiter dictum (Law), an incidental and collateral opinion uttered by a judge. See Dictum, n., 2(a).",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -705,7 +739,7 @@
       "word": "OBJECTIONABLE",
       "definitions": [
         {
-          "text": "Liable to objection; likely to be objected to or disapproved",
+          "text": "Liable to objection; likely to be objected to or disapproved of; offensive; as, objectionable words.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -761,11 +795,23 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Pertaining to, or designating, the case which follows a",
+          "text": "Pertaining to, or designating, the case which follows a transitive verb or a preposition, being that case in which the direct object of the verb is placed. See Accusative, n. esp. in designations of time or space, where a preposition, as at, in, on, etc., may be supplied. My troublous dream [on] this night make me sad. Shak. To write of victories [in or for] next year. Hudibras. Objective line (Perspective), a line drawn on the geometrical plane which is represented or sought to be represented. that is represented. an army are directed. By extension, the point or purpose to which anything, as a journey or an argument, is directed. the mind, and objects of its attention; subjective, to the operations of the mind itself. Hence, an objective motive is some outward thing awakening desire; a subjective motive is some internal feeling or propensity. Objective views are those governed by outward things; subjective views are produced or modified by internal feeling. Sir Walter Scott's poetry is chiefly objective; that of Wordsworth is eminently subjective. In the philosophy of mind, subjective denotes what is to be referred to the thinking subject, the ego; objective what belongs to the object of thought, the non-ego. Sir. W. Hamilton",
           "partOfSpeech": "adjective"
         },
         {
           "text": "(Gram.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The objective case.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An object glass. See under Object, n.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Objective point, under Objective, a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1195,7 +1241,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not direct in descent; not following the line of father and son; collateral. His natural affection in a direct line was strong, in an oblique but weak. Baker. Oblique angle, Oblique ascension, etc. See under Angle,Ascension, etc.",
+          "text": "Not direct in descent; not following the line of father and son; collateral. His natural affection in a direct line was strong, in an oblique but weak. Baker. Oblique angle, Oblique ascension, etc. See under Angle,Ascension, etc. with the face, and whose intrados is in consequence askew. n. the axis of the primitive plane. perpendicular to the line fired at. of the opposite bastion may be discovered. Wilhelm. normal position. (b) A leaf having one half different from the other. another, makes oblique angles with it. one part ascends or descends, while the other prolongs or repeats the same tone, as in the accompanying example. the mesial plane of the body, or to the associated muscles; -- applied especially to two muscles of the eyeball. or incline toward the horizon. upon some rhumb between the four cardinal points, making an oblique angle with the meridian. a different person from that employed by the original speaker. sphere when its axis is oblique to the horizon of the place; or as it appears to an observer at any point on the earth except the poles and the equator. while advancing, gradually takes ground to the right or left at an angle of about 25º. It is not now practiced. Wilhelm. the coördinate axes are oblique to each other.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1331,7 +1377,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Evincing oblivion; forgetful.",
+          "text": "Evincing oblivion; forgetful. Through are both weak in body and oblivious. Latimer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1491,7 +1537,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Offensive; odious; hateful; as, an obnoxious statesman; a minister",
+          "text": "Offensive; odious; hateful; as, an obnoxious statesman; a minister obnoxious to the Whigs. Burke.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1923,7 +1969,7 @@
       "word": "OBSERVABLE",
       "definitions": [
         {
-          "text": "Worthy or capable of being observed; discernible; noticeable; remarkable. Sir. T. Browne.",
+          "text": "Worthy or capable of being observed; discernible; noticeable; remarkable. Sir. T. Browne. The difference is sufficiently observable. Southey.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2175,7 +2221,7 @@
       "word": "OBSERVING",
       "definitions": [
         {
-          "text": "Giving particular attention; habitually attentive to what",
+          "text": "Giving particular attention; habitually attentive to what passes; as, an observing person; an observing mind.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2385,7 +2431,17 @@
       ],
       "relatedWords": []
     },
-    "obstetricobstetrical": {
+    "obstetric": {
+      "word": "OBSTETRIC; OBSTETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to midwifery, or the delivery of women in childbed; as, the obstetric art. Obstetrical toad (Zoöl.), a European toad of the genus Alytes, especially A. obstetricans. The eggs are laid in a string which the male winds around his legs, and carries about until the young are hatched.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "obstetrical": {
       "word": "OBSTETRIC; OBSTETRICAL",
       "definitions": [
         {
@@ -2481,7 +2537,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not yielding; not easily subdued or removed; as, obstinate fever; obstinate obstructions. headstrong; opinionated; unyielding; refractory; contumacious. See",
+          "text": "Not yielding; not easily subdued or removed; as, obstinate fever; obstinate obstructions. headstrong; opinionated; unyielding; refractory; contumacious. See Stubborn.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2519,7 +2575,7 @@
       "word": "OBSTREPEROUS",
       "definitions": [
         {
-          "text": "Attended by, or making, a loud and tumultuous noise; clamorous; noisy; vociferous. \"The obstreperous city.\" Wordsworth. \"Obstreperous approbation.\" Addison.",
+          "text": "Attended by, or making, a loud and tumultuous noise; clamorous; noisy; vociferous. \"The obstreperous city.\" Wordsworth. \"Obstreperous approbation.\" Addison. Beating the air with their obstreperous beaks. B. Jonson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2615,7 +2671,7 @@
       "word": "OBSTRUCTIVE",
       "definitions": [
         {
-          "text": "Tending to obstruct; presenting obstacles; hindering; causing",
+          "text": "Tending to obstruct; presenting obstacles; hindering; causing impediment.",
           "partOfSpeech": "adjective"
         },
         {
@@ -2907,7 +2963,7 @@
       "word": "OBTRUSIVE",
       "definitions": [
         {
-          "text": "Disposed to obtrude; inclined to intrude or thrust one's self or one's opinions upon others, or to enter uninvited; forward;",
+          "text": "Disposed to obtrude; inclined to intrude or thrust one's self or one's opinions upon others, or to enter uninvited; forward; pushing; intrusive. Not obvious, not obtrusive, but retired. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3017,7 +3073,17 @@
       ],
       "relatedWords": []
     },
-    "obtuseangledobtuseangular": {
+    "obtuseangled": {
+      "word": "OBTUSE-ANGLED; OBTUSE-ANGULAR",
+      "definitions": [
+        {
+          "text": "Having an obtuse angle; as, an obtuse-angled triangle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "obtuseangular": {
       "word": "OBTUSE-ANGLED; OBTUSE-ANGULAR",
       "definitions": [
         {
@@ -3229,7 +3295,17 @@
       ],
       "relatedWords": []
     },
-    "obvoluteobvoluted": {
+    "obvolute": {
+      "word": "OBVOLUTE; OBVOLUTED",
+      "definitions": [
+        {
+          "text": "Overlapping; contorted; convolute; -- applied primarily, in botany, to two opposite leaves, each of which has one edge overlapping the nearest edge of the other, and secondarily to a circle of several leaves or petals which thus overlap.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "obvoluted": {
       "word": "OBVOLUTE; OBVOLUTED",
       "definitions": [
         {
@@ -3245,118 +3321,6 @@
         {
           "text": "See Obi.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "objectslettersetcinallpossibleordersoneaftertheother": {
-      "word": "objects, letters, etc., in all possible orders, one after the other;",
-      "definitions": [
-        {
-          "text": "(Law)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Barter; exchange. Permutation lock, a lock in which the parts can be transposed or shifted, so as to require different arrangements of the tumblers on different occasions of unlocking.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "obstructionsasthepurlofabrook": {
-      "word": "obstructions; as, the purl of a brook.",
-      "definitions": [
-        {
-          "text": "Malt liquor, medicated or spiced; formerly, ale or beer in which wormwood or other bitter herbs had been infused, and which was regarded as tonic; at present, hot beer mixed with gin, sugar, and spices. \"Drank a glass of purl to recover appetite.\" Addison. \"Drinking hot purl, and smoking pipes.\" Dickens.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A tern. [Prov. Eng.]",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "obstacleobstinateprestnrestremaindersolticestablea": {
-      "word": "Obstacle, Obstinate, Prest, n., Rest remainder, Soltice, Stable, a. &",
-      "definitions": [
-        {
-          "text": "To be at rest in an erect position; to be fixed in an upright or firm position; as: (a) To be supported on the feet, in an erect or nearly erect position; -- opposed to lie, sit, kneel, etc. \"I pray you all, stand up!\" Shak. (b) To continue upright in a certain locality, as a tree fixed by the roots, or a building resting on its foundation. It stands as it were to the ground yglued. Chaucer. The ruined wall Stands when its wind worn battlements are gone. Byron.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To occupy or hold a place; to have a situation; to be situated or located; as, Paris stands on the Seine. Wite ye not where there stands a little town Chaucer.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To cease from progress; not to proceed; to stop; to pause; to halt; to remain stationary. I charge thee, stand, And tell thy name. Dryden. The star, which they saw in the east, went before them, till it came and stood over where the young child was. Matt. ii. 9.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To remain without ruin or injury; to hold good against tendencies to impair or injure; to be permanent; to endure; to last; hence, to find endurance, strength, or resources. My mind on its own center stands unmoved. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To maintain one's ground; to be acquitted; not to fail or yield; to be safe. Readers by whose judgment I would stand or fall. Spectator.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To maintain an invincible or permanent attitude; to be fixed, steady, or firm; to take a position in resistance or opposition. \"The standing pattern of their imitation.\" South. The king granted the Jews . . . to gather themselves together, and to stand for their life. Esther viii. 11.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To adhere to fixed principles; to maintain moral rectitude; to keep from falling into error or vice. We must labor so as to stand with godliness, according to his appointment. Latimer.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To have or maintain a position, order, or rank; to be in a particular relation; as, Christian charity, or love, stands first in the rank of gifts.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To be in some particular state; to have essence or being; to be; to consist. \"Sacrifices . . . which stood only in meats and drinks.\" Heb. ix. 10. Accomplish what your signs foreshow; I stand resigned, and am prepared to go. Dryden. Thou seest how it stands with me, and that I may not tarry. Sir W. Scott.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To be consistent; to agree; to accord. Doubt me not; by heaven, I will do nothing But what may stand with honor. Massinger.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Naut.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To hold a course at sea; as, to stand from the shore; to stand for the harbor. From the same parts of heaven his navy stands. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To offer one's self, or to be offered, as a candidate. He stood to be elected one of the proctors of the university. Walton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To stagnate; not to flow; to be motionless. Or the black water of Pomptina stands. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To measure when erect on the feet. Six feet two, as I think, he stands. Tennyson.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Law) (a) To be or remain as it is; to continue in force; to have efficacy or validity; to abide. Bouvier. (b) To appear in court. Burrill. Stand by (Naut.), a preparatory order, equivalent to Be ready. (b) To be aside; to be aside with disregard. \"In the interim [we] let the commands stand by neglected.\" Dr. H. More. (c) To maintain; to defend; to support; not to desert; as, to stand by one's principles or party. (d) To rest on for support; to be supported by. Whitgift. statement of fact. Wycherley. be a secure fool, and stands so firmly on his wife's frailty.\" Shak. support; to maintain, or to profess or attempt to maintain; to defend. \"I stand wholly for you.\" Shak. (b) To be in the place of; to be the substitute or to represent; as, a cipher at the left hand of a figure stands for nothing. \"I will not trouble myself, whether these names stand for the same thing, or really include one another.\" Locke. Robynson (More's Utopia). The Punic wars could not have stood the human race in less than three millions of the species. Burke. or advantageous. To keep at a distance in friendship, social intercourse, or acquaintance. (d) To appear prominent; to have relief. \"Picture is best when it standeth off, as if it were carved.\" Sir H. Wotton. toward land and then from it. out with fatness.\" Psalm lxxiii. 7. (b) To persist in opposition or resistance; not to yield or comply; not to give way or recede. His spirit is come in, That so stood out against the holy church. Shak. your tackles, mates, and stretch your oars.\" Dryden. (b) To remain fixed in a purpose or opinion. \"I will stand to it, that this is his sense.\" Bp. Stillingfleet. (c) To abide by; to adhere to; as to a contrast, assertion, promise, etc.; as, to stand to an award; to stand to one's word. (d) Not to yield; not to fly; to maintain, as one's ground. \"Their lives and fortunes were put in safety, whether they stood to it or ran away.\" Bacon. (e) To be consistent with; to agree with; as, it stands to reason that he could not have done so. (f) To support; to uphold. \"Stand to me in this cause.\" Shak. arise in order to speak or act. \"Against whom, when the accusers stood up, they brought none accusation of such things as I supposed.\" Acts xxv. 18. (c) To rise and stand on end, as the hair. (d) To put one's self in opposition; to contend. \"Once we stood up about the corn.\" Shak. support; as, to stand up for the administration. esteem. \"We highly esteem and stand much upon our birth.\" Ray. (c) To insist on; to attach much importance to; as, to stand upon security; to stand upon ceremony. (d) To attack; to assault. [A Hebraism] \"So I stood upon him, and slew him.\" 2 Sam. i. 10. they should be rewarded liberally.\" Sir J. Davies.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "objectohgzilgothtilsgatilsfitconvenientandetillto": {
-      "word": "object, OHG. zil, Goth. tils, gatils, fit, convenient, and E. till to",
-      "definitions": [
-        {
-          "text": "To; unto; up to; as far as; until; -- now used only in respect to time, but formerly, also, of place, degree, etc., and still so used in Scotland and in parts of England and Ireland; as, I worked till four o'clock; I will wait till next week. He . . . came till an house. Chaucer. Women, up till this Cramped under worse than South-sea-isle taboo. Tennyson. Similar sentiments will recur to every one familiar with his writings Till now, to the present time.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

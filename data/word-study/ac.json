@@ -23,7 +23,17 @@
       ],
       "relatedWords": []
     },
-    "acacinacacine": {
+    "acacin": {
+      "word": "ACACIN; ACACINE",
+      "definitions": [
+        {
+          "text": "Gum arabic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acacine": {
       "word": "ACACIN; ACACINE",
       "definitions": [
         {
@@ -73,6 +83,14 @@
         {
           "text": "A member of an academy, college, or university; an academician.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Belonging to the school or philosophy of Plato; as, the Academic sect or philosophy.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Belonging to an academy or other higher institution of learning; scholarly; literary or classical, in distinction from scientific. \"Academic courses.\" Warburton. \"Academical study.\" Berkeley.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -148,7 +166,7 @@
         "visionary"
       ]
     },
-    "academicacademical": {
+    "academical": {
       "word": "ACADEMIC; ACADEMICAL",
       "definitions": [
         {
@@ -332,7 +350,17 @@
       ],
       "relatedWords": []
     },
-    "acalephacalephan": {
+    "acaleph": {
+      "word": "ACALEPH; ACALEPHAN",
+      "definitions": [
+        {
+          "text": "One of the Acalephæ.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "acalephan": {
       "word": "ACALEPH; ACALEPHAN",
       "definitions": [
         {
@@ -362,7 +390,17 @@
       ],
       "relatedWords": []
     },
-    "acalycineacalysinous": {
+    "acalycine": {
+      "word": "ACALYCINE; ACALYSINOUS",
+      "definitions": [
+        {
+          "text": "Without a calyx, or outer floral envelope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acalysinous": {
       "word": "ACALYCINE; ACALYSINOUS",
       "definitions": [
         {
@@ -752,7 +790,17 @@
       ],
       "relatedWords": []
     },
-    "acauloseacaulous": {
+    "acaulose": {
+      "word": "ACAULOSE; ACAULOUS",
+      "definitions": [
+        {
+          "text": "Same as Acaulescent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acaulous": {
       "word": "ACAULOSE; ACAULOUS",
       "definitions": [
         {
@@ -766,7 +814,7 @@
       "word": "ACCADIAN",
       "definitions": [
         {
-          "text": "Pertaining to a race supposed to have lived in Babylonia before",
+          "text": "Pertaining to a race supposed to have lived in Babylonia before the Assyrian conquest.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6508,7 +6556,7 @@
       "word": "ACCORDING",
       "definitions": [
         {
-          "text": "Agreeing; in agreement or harmony; harmonious. \"This according voice of national wisdom.\" Burke. \"Mind and soul according well.\" Tennyson. According to him, every person was to be bought. Macaulay. Our zeal should be according to knowledge. Sprat. strictly speaking, according is a participle in the sense of agreeing, acceding, and to alone is the preposition. According as, precisely as; the same as; corresponding to the way in which.",
+          "text": "Agreeing; in agreement or harmony; harmonious. \"This according voice of national wisdom.\" Burke. \"Mind and soul according well.\" Tennyson. According to him, every person was to be bought. Macaulay. Our zeal should be according to knowledge. Sprat. strictly speaking, according is a participle in the sense of agreeing, acceding, and to alone is the preposition. According as, precisely as; the same as; corresponding to the way in which. According as is an adverbial phrase, of which the propriety has been doubted; but good usage sanctions it. See According, adv. Is all things well, According as I gave directions Shak. The land which the Lord will give you according as he hath promised. Ex. xii. 25. p. 13",
           "partOfSpeech": ""
         },
         {
@@ -7313,7 +7361,7 @@
       ],
       "relatedWords": []
     },
-    "accouteraccoutre": {
+    "accouter": {
       "word": "ACCOUTER; ACCOUTRE",
       "definitions": [
         {
@@ -7323,7 +7371,27 @@
       ],
       "relatedWords": []
     },
-    "accoutermentsaccoutrements": {
+    "accoutre": {
+      "word": "ACCOUTER; ACCOUTRE",
+      "definitions": [
+        {
+          "text": "To furnish with dress, or equipments, esp. those for military service; to equip; to attire; to array. Bot accoutered like young men. Shak. For this, in rags accoutered are they seen. Dryden. Accoutered with his burden and his staff. Wordsworth.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "accouterments": {
+      "word": "ACCOUTERMENTS; ACCOUTREMENTS",
+      "definitions": [
+        {
+          "text": "Dress; trappings; equipment; specifically, the devices and equipments worn by soldiers. How gay with all the accouterments of war!",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "accoutrements": {
       "word": "ACCOUTERMENTS; ACCOUTREMENTS",
       "definitions": [
         {
@@ -8199,7 +8267,7 @@
       "word": "ACCUMULATIVE",
       "definitions": [
         {
-          "text": "Characterized by accumulation; serving to collect or amass;",
+          "text": "Characterized by accumulation; serving to collect or amass; cumulative; additional.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8446,11 +8514,21 @@
       ],
       "relatedWords": []
     },
-    "accursedaccurst": {
+    "accursed": {
       "word": "ACCURSED; ACCURST",
       "definitions": [
         {
-          "text": "Doomed to destruction or misery; cursed; hence, bad enough to be under the curse; execrable; detestable; exceedingly hateful; --",
+          "text": "Doomed to destruction or misery; cursed; hence, bad enough to be under the curse; execrable; detestable; exceedingly hateful; -- as, an accursed deed. Shak.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "accurst": {
+      "word": "ACCURSED; ACCURST",
+      "definitions": [
+        {
+          "text": "Doomed to destruction or misery; cursed; hence, bad enough to be under the curse; execrable; detestable; exceedingly hateful; -- as, an accursed deed. Shak.",
           "partOfSpeech": ""
         }
       ],
@@ -9620,7 +9698,17 @@
       ],
       "relatedWords": []
     },
-    "acescenceacescency": {
+    "acescence": {
+      "word": "ACESCENCE; ACESCENCY",
+      "definitions": [
+        {
+          "text": "The quality of being acescent; the process of acetous fermentation; a moderate degree of sourness. Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acescency": {
       "word": "ACESCENCE; ACESCENCY",
       "definitions": [
         {
@@ -9886,7 +9974,17 @@
       ],
       "relatedWords": []
     },
-    "acetonaemiaacetonemia": {
+    "acetonaemia": {
+      "word": "ACETONAEMIA; ACETONEMIA",
+      "definitions": [
+        {
+          "text": "A morbid condition characterized by the presence of acetone in the blood, as in diabetes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acetonemia": {
       "word": "ACETONAEMIA; ACETONEMIA",
       "definitions": [
         {
@@ -9990,7 +10088,7 @@
       ],
       "relatedWords": []
     },
-    "achache": {
+    "ach": {
       "word": "ACH; ACHE",
       "definitions": [
         {
@@ -10000,75 +10098,13 @@
       ],
       "relatedWords": []
     },
-    "achaeanachaian": {
-      "word": "ACHAEAN; ACHAIAN",
-      "definitions": [
-        {
-          "text": "Of or pertaining to Achaia in Greece; also, Grecian.",
-          "partOfSpeech": ""
-        },
-        {
-          "text": "A native of Achaia; a Greek.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "acharnement": {
-      "word": "ACHARNEMENT",
-      "definitions": [
-        {
-          "text": "Savage fierceness; ferocity.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "achate": {
-      "word": "ACHATE",
-      "definitions": [
-        {
-          "text": "An agate. [Obs.] Evelyn.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Purchase; bargaining. [Obs.] Chaucer.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "pl.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Provisions. Same as Cates. [Obs.] Spenser.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "achatina": {
-      "word": "ACHATINA",
-      "definitions": [
-        {
-          "text": "A genus of land snails, often large, common in the warm parts of America and Africa.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "achatour": {
-      "word": "ACHATOUR",
-      "definitions": [
-        {
-          "text": "Purveyor; acater. [Obs.] Chaucer.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "ache": {
-      "word": "ACHE",
+      "word": "ACH; ACHE",
       "definitions": [
+        {
+          "text": "A name given to several species of plants; as, smallage, wild celery, parsley. [Obs.] Holland.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Continued pain, as distinguished from sudden twinges, or spasmodic pain. \"Such an ache in my bones.\" Shak. toothache.",
           "partOfSpeech": "noun"
@@ -10228,6 +10264,86 @@
         "yen for"
       ]
     },
+    "achaean": {
+      "word": "ACHAEAN; ACHAIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Achaia in Greece; also, Grecian.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A native of Achaia; a Greek.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "achaian": {
+      "word": "ACHAEAN; ACHAIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Achaia in Greece; also, Grecian.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A native of Achaia; a Greek.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "acharnement": {
+      "word": "ACHARNEMENT",
+      "definitions": [
+        {
+          "text": "Savage fierceness; ferocity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "achate": {
+      "word": "ACHATE",
+      "definitions": [
+        {
+          "text": "An agate. [Obs.] Evelyn.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Purchase; bargaining. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "pl.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Provisions. Same as Cates. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "achatina": {
+      "word": "ACHATINA",
+      "definitions": [
+        {
+          "text": "A genus of land snails, often large, common in the warm parts of America and Africa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "achatour": {
+      "word": "ACHATOUR",
+      "definitions": [
+        {
+          "text": "Purveyor; acater. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "achean": {
       "word": "ACHEAN",
       "definitions": [
@@ -10238,7 +10354,17 @@
       ],
       "relatedWords": []
     },
-    "acheneachenium": {
+    "achene": {
+      "word": "ACHENE; ACHENIUM",
+      "definitions": [
+        {
+          "text": "A small, dry, indehiscent fruit, containing a single seed, as in the buttercup; -- called a naked seed by the earlier botanists. [Written also akene and achænium.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "achenium": {
       "word": "ACHENE; ACHENIUM",
       "definitions": [
         {
@@ -10682,6 +10808,106 @@
       ],
       "relatedWords": []
     },
+    "aching": {
+      "word": "ACHING",
+      "definitions": [
+        {
+          "text": "That aches; continuously painful. See Ache. The aching heart, the aching head. Longfellow.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Heimweh",
+        "ache",
+        "achy",
+        "afflictive",
+        "algetic",
+        "angina",
+        "backache",
+        "bellyache",
+        "blow",
+        "cephalalgia",
+        "chilblains",
+        "chill",
+        "chilliness",
+        "chilling",
+        "cold creeps",
+        "cold shivers",
+        "colic",
+        "collywobbles",
+        "cramp",
+        "creeps",
+        "cryopathy",
+        "cut",
+        "desiderium",
+        "distress",
+        "dithers",
+        "dolor",
+        "duck bumps",
+        "earache",
+        "fret",
+        "frostbite",
+        "gnawing",
+        "goose bumps",
+        "goose pimples",
+        "gooseflesh",
+        "grief",
+        "gripe",
+        "gripes",
+        "gut-ache",
+        "hankering",
+        "headache",
+        "heartburn",
+        "hemicrania",
+        "homesickness",
+        "honing",
+        "horripilation",
+        "hurt",
+        "hurtful",
+        "hurting",
+        "injury",
+        "kibe",
+        "languishing",
+        "languishment",
+        "lesion",
+        "longing",
+        "mal du pays",
+        "maladie du pays",
+        "megrim",
+        "migraine",
+        "nasty blow",
+        "nostalgia",
+        "nostomania",
+        "odontalgia",
+        "otalgia",
+        "pain",
+        "pang",
+        "passion",
+        "pining",
+        "pyrosis",
+        "shivering",
+        "shivers",
+        "shock",
+        "sick headache",
+        "sore",
+        "sore spot",
+        "spasm",
+        "splitting headache",
+        "stomachache",
+        "stress",
+        "stress of life",
+        "stroke",
+        "suffering",
+        "tender spot",
+        "throbbing pain",
+        "throes",
+        "toothache",
+        "wound",
+        "wrench",
+        "yearning",
+        "yen"
+      ]
+    },
     "achiote": {
       "word": "ACHIOTE",
       "definitions": [
@@ -10910,7 +11136,17 @@
       ],
       "relatedWords": []
     },
-    "achroodextrinachrooedextrin": {
+    "achroodextrin": {
+      "word": "ACHROODEXTRIN; ACHROOEDEXTRIN",
+      "definitions": [
+        {
+          "text": "Dextrin not colorable by iodine. See Dextrin.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "achrooedextrin": {
       "word": "ACHROODEXTRIN; ACHROOEDEXTRIN",
       "definitions": [
         {
@@ -11457,7 +11693,7 @@
       "word": "ACIDIMETRY",
       "definitions": [
         {
-          "text": "The measurement of the strength of acids, especially by a chemical process based on the law of chemical combinations, or the fact that, to produce a complete reaction, a certain definite weight",
+          "text": "The measurement of the strength of acids, especially by a chemical process based on the law of chemical combinations, or the fact that, to produce a complete reaction, a certain definite weight of reagent is required.",
           "partOfSpeech": "noun"
         }
       ],
@@ -11801,7 +12037,17 @@
       ],
       "relatedWords": []
     },
-    "acinoseacinous": {
+    "acinose": {
+      "word": "ACINOSE; ACINOUS",
+      "definitions": [
+        {
+          "text": "Consisting of acini, or minute granular concretions; as, acinose or acinous glands. Kirwan.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "acinous": {
       "word": "ACINOSE; ACINOUS",
       "definitions": [
         {
@@ -12621,7 +12867,17 @@
       ],
       "relatedWords": []
     },
-    "aconddyloseacondylous": {
+    "aconddylose": {
+      "word": "ACONDDYLOSE; ACONDYLOUS",
+      "definitions": [
+        {
+          "text": "Being without joints; jointless.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acondylous": {
       "word": "ACONDDYLOSE; ACONDYLOUS",
       "definitions": [
         {
@@ -13214,6 +13470,16 @@
         {
           "text": "An acquaintance. [R.] Swift.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acquainted": {
+      "word": "ACQUAINTED",
+      "definitions": [
+        {
+          "text": "Personally known; familiar. See To be acquainted with, under Acquaint, v. t.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -14246,7 +14512,7 @@
       ],
       "relatedWords": []
     },
-    "acraseacraze": {
+    "acrase": {
       "word": "ACRASE; ACRAZE",
       "definitions": [
         {
@@ -14260,7 +14526,31 @@
       ],
       "relatedWords": []
     },
-    "acrasiaacrasy": {
+    "acraze": {
+      "word": "ACRASE; ACRAZE",
+      "definitions": [
+        {
+          "text": "To craze. [Obs.] Grafton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To impair; to destroy. [Obs.] Hacket.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acrasia": {
+      "word": "ACRASIA; ACRASY",
+      "definitions": [
+        {
+          "text": "Excess; intemperance. [Obs. except in Med.] Farindon.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "acrasy": {
       "word": "ACRASIA; ACRASY",
       "definitions": [
         {
@@ -14457,7 +14747,73 @@
         "withering"
       ]
     },
-    "acridityacridness": {
+    "acridity": {
+      "word": "ACRIDITY; ACRIDNESS",
+      "definitions": [
+        {
+          "text": "The quality of being acrid or pungent; irritant bitterness; acrimony; as, the acridity of a plant, of a speech.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "acerbity",
+        "acidity",
+        "acidness",
+        "acidulousness",
+        "acridness",
+        "acrimony",
+        "acuity",
+        "acumination",
+        "acuteness",
+        "asperity",
+        "astringence",
+        "astringency",
+        "bite",
+        "bitingness",
+        "bitter pill",
+        "bitterness",
+        "causticity",
+        "causticness",
+        "corrosiveness",
+        "cuttingness",
+        "edge",
+        "fierceness",
+        "gall",
+        "gall and wormwood",
+        "grip",
+        "harshness",
+        "incisiveness",
+        "keenness",
+        "mordacity",
+        "mordancy",
+        "mucronation",
+        "piercingness",
+        "piquancy",
+        "poignancy",
+        "point",
+        "pointedness",
+        "prickliness",
+        "pungency",
+        "rigor",
+        "roughness",
+        "severity",
+        "sharpness",
+        "sourness",
+        "spinosity",
+        "stabbingness",
+        "sting",
+        "stridency",
+        "stringency",
+        "tartness",
+        "teeth",
+        "thorniness",
+        "trenchancy",
+        "vehemence",
+        "violence",
+        "virulence"
+      ]
+    },
+    "acridness": {
       "word": "ACRIDITY; ACRIDNESS",
       "definitions": [
         {
@@ -14664,7 +15020,25 @@
         "vitriol"
       ]
     },
-    "acrisiaacrisy": {
+    "acrisia": {
+      "word": "ACRISIA; ACRISY",
+      "definitions": [
+        {
+          "text": "Inability to judge.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Undecided character of a disease. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acrisy": {
       "word": "ACRISIA; ACRISY",
       "definitions": [
         {
@@ -14752,7 +15126,17 @@
       ],
       "relatedWords": []
     },
-    "acroamaticacroamatical": {
+    "acroamatic": {
+      "word": "ACROAMATIC; ACROAMATICAL",
+      "definitions": [
+        {
+          "text": "Communicated orally; oral; -- applied to the esoteric teachings of Aristotle, those intended for his genuine disciples, in distinction from his exoteric doctrines, which were adapted to outsiders or the public generally. Hence: Abstruse; profound.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acroamatical": {
       "word": "ACROAMATIC; ACROAMATICAL",
       "definitions": [
         {
@@ -14807,6 +15191,16 @@
         "tumbler",
         "weightlifter"
       ]
+    },
+    "acrobatic": {
+      "word": "ACROBATIC",
+      "definitions": [
+        {
+          "text": "Pertaining to an acrobat.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "acrobatism": {
       "word": "ACROBATISM",
@@ -14908,7 +15302,17 @@
       ],
       "relatedWords": []
     },
-    "acrolithanacrolithic": {
+    "acrolithan": {
+      "word": "ACROLITHAN; ACROLITHIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or like, an acrolith.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acrolithic": {
       "word": "ACROLITHAN; ACROLITHIC",
       "definitions": [
         {
@@ -14958,7 +15362,17 @@
       ],
       "relatedWords": []
     },
-    "acronycacronychal": {
+    "acronyc": {
+      "word": "ACRONYC; ACRONYCHAL",
+      "definitions": [
+        {
+          "text": "Rising at sunset and setting at sunrise, as a star; -- opposed to cosmical. achronychal, acronichal, and acronical.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "acronychal": {
       "word": "ACRONYC; ACRONYCHAL",
       "definitions": [
         {
@@ -15008,9 +15422,13 @@
       ],
       "relatedWords": []
     },
-    "acrophonyachrophony": {
+    "acrophony": {
       "word": "ACROPHONY; ACHROPHONY",
       "definitions": [
+        {
+          "text": "The use of a picture symbol of an object to represent phonetically the initial sound of the name of the object.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "The use of a picture symbol of an object to represent phonetically the initial sound of the name of the object.",
           "partOfSpeech": "noun"
@@ -15018,8 +15436,8 @@
       ],
       "relatedWords": []
     },
-    "acrophony": {
-      "word": "ACROPHONY",
+    "achrophony": {
+      "word": "ACROPHONY; ACHROPHONY",
       "definitions": [
         {
           "text": "The use of a picture symbol of an object to represent phonetically the initial sound of the name of the object.",
@@ -15204,6 +15622,10 @@
         {
           "text": "A Hebrew poem in which the lines or stanzas begin with the letters of the alphabet in regular order (as Psalm cxix.). See Abecedarian. Double acrostic, a species of enigma, in which words are to be guessed whose initial and final letters form other words.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, or characterized by, acrostics.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -15245,7 +15667,7 @@
         "wordplay"
       ]
     },
-    "acrosticacrostical": {
+    "acrostical": {
       "word": "ACROSTIC; ACROSTICAL",
       "definitions": [
         {
@@ -15403,6 +15825,26 @@
         {
           "text": "Process of doing; action. In act, in the very doing; on the point of (doing). \"In act to shoot.\" Dryden. This woman was taken . . . in the very act. John viii. 4. Act of attainder. (Law) See Attainder. liable to be adjudged a bankrupt. interruption of the usual course of events as is not to be looked for in advance, and against which ordinary prudence could not guard. declaring pardon or amnesty to numerous offenders, as at the beginning of a new reign. who have committed some illegal act subjecting them to penalties. Abbott. country), and not a matter of record.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To move to action; to actuate; to animate. [Obs.] Self-love, the spring of motion, acts the soul. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To perform; to execute; to do. [Archaic] That we act our temporal affairs with a desire no greater than our necessity. Jer. Taylor. Industry doth beget by producing good habits, and facility of acting things expedient for us to do. Barrow. Uplifted hands that at convenient times Could act extortion and the worst of crimes. Cowper.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To perform, as an actor; to represent dramatically on the stage.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To assume the office or character of; to play; to personate; as, to act the hero.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To feign or counterfeit; to simulate. With acted fear the villain thus pursued. Dryden. To act a part, to sustain the part of one of the characters in a play; hence, to simulate; to dissemble. duties of.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To exert power; to produce an effect; as, the stomach acts upon food.",
@@ -15704,32 +16146,6 @@
         "workings",
         "works"
       ]
-    },
-    "actusppofageretodriveleaddobutinfluencedbyeact": {
-      "word": "actus, p. p. of agere to drive, lead, do; but influenced by E. act,",
-      "definitions": [
-        {
-          "text": "To move to action; to actuate; to animate. [Obs.] Self-love, the spring of motion, acts the soul. Pope.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To perform; to execute; to do. [Archaic] That we act our temporal affairs with a desire no greater than our necessity. Jer. Taylor. Industry doth beget by producing good habits, and facility of acting things expedient for us to do. Barrow. Uplifted hands that at convenient times Could act extortion and the worst of crimes. Cowper.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To perform, as an actor; to represent dramatically on the stage.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To assume the office or character of; to play; to personate; as, to act the hero.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To feign or counterfeit; to simulate. With acted fear the villain thus pursued. Dryden. To act a part, to sustain the part of one of the characters in a play; hence, to simulate; to dissemble. duties of.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
     },
     "actable": {
       "word": "ACTABLE",
@@ -16067,7 +16483,7 @@
       "word": "ACTINOMYCOSIS",
       "definitions": [
         {
-          "text": "A chronic infectious disease of cattle and man due to the presence of Actinomyces bovis. It causes local suppurating tumors,",
+          "text": "A chronic infectious disease of cattle and man due to the presence of Actinomyces bovis. It causes local suppurating tumors, esp. about the jaw. Called also lumpy jaw or big jaw. -- Ac`ti*no*my*cot\"ic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -16163,7 +16579,17 @@
       ],
       "relatedWords": []
     },
-    "actinozoonactinozooen": {
+    "actinozoon": {
+      "word": "ACTINOZOON; ACTINOZOOEN",
+      "definitions": [
+        {
+          "text": "One of the Actinozoa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "actinozooen": {
       "word": "ACTINOZOON; ACTINOZOOEN",
       "definitions": [
         {
@@ -16686,7 +17112,17 @@
       ],
       "relatedWords": []
     },
-    "actionaryactionist": {
+    "actionary": {
+      "word": "ACTIONARY; ACTIONIST",
+      "definitions": [
+        {
+          "text": "A shareholder in joint-stock company. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "actionist": {
       "word": "ACTIONARY; ACTIONIST",
       "definitions": [
         {
@@ -18852,36 +19288,6 @@
         {
           "text": "An acid radical, as acetyl, malonyl, or benzoyl.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "acquitquitllquietarefrlquietaretocalmtoquietfr": {
-      "word": "acquit, quit, LL. quietare, fr. L. quietare to calm, to quiet, fr.",
-      "definitions": [
-        {
-          "text": "To set at rest; to free, as from anything harmful or oppressive; to relieve; to clear; to liberate. [R.] To quit you of this fear, you have already looked Death in the face; what have you found so terrible in it Wake.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To release from obligation, accusation, penalty, or the like; to absolve; to acquit. There may no gold them quyte. Chaucer. God will relent, and quit thee all his debt. Milton.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To discharge, as an obligation or duty; to meet and satisfy, as a claim or debt; to make payment for or of; to requite; to repay. The blissful martyr quyte you your meed. Chaucer. Enkindle all the sparks of nature To quit this horrid act. Shak. Before that judge that quits each soul his hire. Fairfax.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To meet the claims upon, or expectations entertained of; to conduct; to acquit; -- used reflexively. Be strong, and quit yourselves like men. I Sam. iv. 9. Samson hath guit himself Like Samson. Milton.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To carry through; to go through to the end. [Obs.] Never worthy prince a day did quit With greater hazard and with more renown. Daniel.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To have done with; to cease from; to stop; hence, to depart from; to leave; to forsake; as, to quit work; to quit the place; to quit jesting. Such a superficial way of examining is to quit truth for appearance. Locke. To quit cost, to pay; to reimburse. Does not the earth quit scores with all the elements in the noble fruits that issue from it South. discharge; requite. departure; quit implies a going without intention of return, a final and absolute abandonment.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

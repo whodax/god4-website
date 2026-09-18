@@ -994,6 +994,14 @@
       "word": "FAIN",
       "definitions": [
         {
+          "text": "Well-pleased; glad; apt; wont; fond; inclined. Men and birds are fain of climbing high. Shak. To a busy man, temptation is fainto climb up together with his business. Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Satisfied; contented; also, constrained. Shak. The learned Castalio was fain to make trechers at Basle to keep himself from starving. Locke.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "With joy; gladly; -- with wold. He would fain have filled his belly with the husks that the swine did eat. Luke xv. 16. Fain Would I woo her, yet I dare not. Shak.",
           "partOfSpeech": "adverb"
         },
@@ -1060,7 +1068,17 @@
         "zealous"
       ]
     },
-    "faineancefaineancy": {
+    "faineance": {
+      "word": "FAINEANCE; FAINEANCY",
+      "definitions": [
+        {
+          "text": "Do-nothingness; inactivity; indolence. The mask of sneering faineance was gone. C. Kingsley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "faineancy": {
       "word": "FAINEANCE; FAINEANCY",
       "definitions": [
         {
@@ -1114,7 +1132,19 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "To become weak or wanting in vigor; to grow feeble; to lose",
+          "text": "The act of fainting, or the state of one who has fainted; a swoon. [R.] See Fainting, n. The saint, Who propped the Virgin in her faint. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To become weak or wanting in vigor; to grow feeble; to lose strength and color, and the control of the bodily or mental functions; to swoon; -- sometimes with away. See Fainting, n. Hearing the honor intended her, she fainted away. Guardian. If I send them away fasting . . . they will faint by the way. Mark viii. 8.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To sink into dejection; to lose courage or spirit; to become depressed or despondent. If thou faint in the day of adversity, thy strength is small. Prov. xxiv. 10.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To decay; to disappear; to vanish. Gilded clouds, while we gaze upon them, faint before the eye. Pope.",
           "partOfSpeech": "verb"
         },
         {
@@ -1442,15 +1472,63 @@
         "yield"
       ]
     },
-    "faintheartedfainthearted": {
+    "fainthearted": {
       "word": "FAINTHEARTED; FAINT-HEARTED",
       "definitions": [
         {
-          "text": "Wanting in courage; depressed by fear; easily discouraged or frightened; cowardly; timorous; dejected.",
+          "text": "Wanting in courage; depressed by fear; easily discouraged or frightened; cowardly; timorous; dejected. Fear not, neither be faint-hearted. Is. vii. 4.",
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "abulic",
+        "afraid",
+        "chicken",
+        "chickenhearted",
+        "coward",
+        "cowardly",
+        "cowed",
+        "daunted",
+        "dismayed",
+        "faint",
+        "fearful",
+        "feeble",
+        "feebleminded",
+        "frail",
+        "funking",
+        "funky",
+        "henhearted",
+        "infirm",
+        "intimidated",
+        "invertebrate",
+        "lily-livered",
+        "milk-livered",
+        "milksoppish",
+        "milksoppy",
+        "mousy",
+        "overtimid",
+        "overtimorous",
+        "panic-prone",
+        "panicky",
+        "pigeonhearted",
+        "pliable",
+        "rabbity",
+        "sissified",
+        "sissy",
+        "soft",
+        "spineless",
+        "timid",
+        "timorous",
+        "unmanly",
+        "unmanned",
+        "weak",
+        "weak-kneed",
+        "weak-minded",
+        "weak-willed",
+        "weakhearted",
+        "white-livered",
+        "yellow"
+      ]
     },
     "fainting": {
       "word": "FAINTING",
@@ -1458,6 +1536,16 @@
         {
           "text": "Syncope, or loss of consciousness owing to a sudden arrest of the blood supply to the brain, the face becoming pallid, the respiration feeble, and the heat's beat weak. Fainting fit, a fainting or swoon; syncope. [Colloq.]",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "faintish": {
+      "word": "FAINTISH",
+      "definitions": [
+        {
+          "text": "Slightly faint; somewhat faint.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2311,6 +2399,16 @@
         "well enough",
         "without distinction"
       ]
+    },
+    "fairminded": {
+      "word": "FAIR-MINDED",
+      "definitions": [
+        {
+          "text": "Unprejudiced; just; judicial; honest.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "fairnatured": {
       "word": "FAIR-NATURED",

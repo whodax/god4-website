@@ -1067,7 +1067,17 @@
         "wrap up"
       ]
     },
-    "bedeguarbedegar": {
+    "bedegar": {
+      "word": "BEDEGUAR; BEDEGAR",
+      "definitions": [
+        {
+          "text": "A gall produced on rosebushes, esp. on the sweetbrier or eglantine, by a puncture from the ovipositor of a gallfly (Rhodites rosæ). It was once supposed to have medicinal properties.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedeguar": {
       "word": "BEDEGUAR; BEDEGAR",
       "definitions": [
         {
@@ -1078,8 +1088,12 @@
       "relatedWords": []
     },
     "bedehouse": {
-      "word": "BEDEHOUSE",
+      "word": "BEADHOUSE; BEDEHOUSE",
       "definitions": [
+        {
+          "text": "An almshouse for poor people who pray daily for their benefactors.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": ",n.Same as Beadhouse.",
           "partOfSpeech": ""
@@ -1087,7 +1101,17 @@
       ],
       "relatedWords": []
     },
-    "bedelbedell": {
+    "bedel": {
+      "word": "BEDEL; BEDELL",
+      "definitions": [
+        {
+          "text": ",n.Same as Beadle.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedell": {
       "word": "BEDEL; BEDELL",
       "definitions": [
         {
@@ -1118,10 +1142,24 @@
       "relatedWords": []
     },
     "bedesman": {
-      "word": "BEDESMAN",
+      "word": "BEADSMAN; BEDESMAN",
       "definitions": [
         {
+          "text": "A poor man, supported in a beadhouse, and required to pray for the soul of its founder; an almsman. Whereby ye shall bind me to be your poor beadsman for ever unto Almighty God. Fuller.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Same as Beadsman. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedeswoman": {
+      "word": "BEADSWOMAN; BEDESWOMAN",
+      "definitions": [
+        {
+          "text": "Fem. of Beadsman.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1316,7 +1354,7 @@
         "yokemate"
       ]
     },
-    "bedferebedphere": {
+    "bedfere": {
       "word": "BEDFERE; BEDPHERE",
       "definitions": [
         {
@@ -1600,7 +1638,17 @@
       ],
       "relatedWords": []
     },
-    "bedmoldingbedmoulding": {
+    "bedmolding": {
+      "word": "BED-MOLDING; BED-MOULDING",
+      "definitions": [
+        {
+          "text": "The molding of a cornice immediately below the corona. Oxf. Gloss.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedmoulding": {
       "word": "BED-MOLDING; BED-MOULDING",
       "definitions": [
         {
@@ -1624,7 +1672,7 @@
       "word": "BEDOUIN",
       "definitions": [
         {
-          "text": "One of the nomadic Arabs who live in tents, and are scattered",
+          "text": "One of the nomadic Arabs who live in tents, and are scattered over Arabia, Syria, and northern Africa, esp. in the deserts.",
           "partOfSpeech": "noun"
         },
         {
@@ -1671,8 +1719,12 @@
       ]
     },
     "bedphere": {
-      "word": "BEDPHERE",
+      "word": "BEDFERE; BEDPHERE",
       "definitions": [
+        {
+          "text": "A bedfellow. [Obs.] Chapman.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Bedfere. [Obs.] B. Jonson.",
           "partOfSpeech": "noun"
@@ -1680,7 +1732,17 @@
       ],
       "relatedWords": []
     },
-    "bedpiecebedplate": {
+    "bedpiece": {
+      "word": "BEDPIECE; BEDPLATE",
+      "definitions": [
+        {
+          "text": "The foundation framing or piece, by which the other parts are supported and held in place; the bed; -- called also baseplate and soleplate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedplate": {
       "word": "BEDPIECE; BEDPLATE",
       "definitions": [
         {
@@ -1754,7 +1816,7 @@
       ],
       "relatedWords": []
     },
-    "bedridbedridden": {
+    "bedrid": {
       "word": "BEDRID; BEDRIDDEN",
       "definitions": [
         {
@@ -1764,7 +1826,27 @@
       ],
       "relatedWords": []
     },
-    "bedrightbedrite": {
+    "bedridden": {
+      "word": "BEDRID; BEDRIDDEN",
+      "definitions": [
+        {
+          "text": "Confined to the bed by sickness or infirmity. \"Her decrepit, sick, and bedrid father.\" Shak. \"The estate of a bedridden old gentleman.\" Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedright": {
+      "word": "BEDRIGHT; BEDRITE",
+      "definitions": [
+        {
+          "text": "The duty or privilege of the marriage bed. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bedrite": {
       "word": "BEDRIGHT; BEDRITE",
       "definitions": [
         {

@@ -201,7 +201,7 @@
       ],
       "relatedWords": []
     },
-    "hemadrometerhemadromometer": {
+    "hemadrometer": {
       "word": "HEMADROMETER; HEMADROMOMETER",
       "definitions": [
         {
@@ -211,7 +211,27 @@
       ],
       "relatedWords": []
     },
-    "hemadrometryhemadromometry": {
+    "hemadrometry": {
+      "word": "HEMADROMETRY; HEMADROMOMETRY",
+      "definitions": [
+        {
+          "text": "The act of measuring the velocity with which the blood circulates in the arteries; hæmotachometry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemadromometer": {
+      "word": "HEMADROMETER; HEMADROMOMETER",
+      "definitions": [
+        {
+          "text": "An instrument for measuring the velocity with which the blood moves in the arteries.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemadromometry": {
       "word": "HEMADROMETRY; HEMADROMOMETRY",
       "definitions": [
         {
@@ -265,13 +285,23 @@
       "word": "HEMAPOPHYSIS",
       "definitions": [
         {
-          "text": "The second element in each half of a hemal arch, corresponding",
+          "text": "The second element in each half of a hemal arch, corresponding to the sternal part of a rib. Owen.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "hemastatichemastatical": {
+    "hemastatic": {
+      "word": "HEMASTATIC; HEMASTATICAL",
+      "definitions": [
+        {
+          "text": "Same as Hemostatic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemastatical": {
       "word": "HEMASTATIC; HEMASTATICAL",
       "definitions": [
         {
@@ -583,7 +613,17 @@
       ],
       "relatedWords": []
     },
-    "hemelytronhemelytrum": {
+    "hemelytron": {
+      "word": "HEMELYTRON; HEMELYTRUM",
+      "definitions": [
+        {
+          "text": "One of the partially thickened anterior wings of certain insects, as of many Hemiptera, the earwigs, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemelytrum": {
       "word": "HEMELYTRON; HEMELYTRUM",
       "definitions": [
         {
@@ -811,7 +851,7 @@
       "word": "HEMIHEDRAL",
       "definitions": [
         {
-          "text": "Having half of the similar parts of a crystals, instead of all; consisting of half the planes which full symmetry would require, as when a cube has planes only on half of its eight solid angles, or one plane out of a pair on each of its edges; or as in the case of a tetrahedron, which is hemihedral to an octahedron, it being contained",
+          "text": "Having half of the similar parts of a crystals, instead of all; consisting of half the planes which full symmetry would require, as when a cube has planes only on half of its eight solid angles, or one plane out of a pair on each of its edges; or as in the case of a tetrahedron, which is hemihedral to an octahedron, it being contained under four of the planes of an octahedron.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1013,7 +1053,17 @@
       ],
       "relatedWords": []
     },
-    "hemiopiahemiopsia": {
+    "hemiopia": {
+      "word": "HEMIOPIA; HEMIOPSIA",
+      "definitions": [
+        {
+          "text": "A defect of vision in consequence of which a person sees but half of an object looked at.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiopsia": {
       "word": "HEMIOPIA; HEMIOPSIA",
       "definitions": [
         {
@@ -1038,6 +1088,16 @@
       "definitions": [
         {
           "text": "A product of the gastric and pancreatic digestion of albuminous matter. by the continued action of pancreatic juice. See Peptone. It is also formed from hemialbumose and albumin by the action of boiling dilute sulphuric acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemiplegia": {
+      "word": "HEMIPLEGIA",
+      "definitions": [
+        {
+          "text": "A palsy that affects one side only of the body.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1093,7 +1153,7 @@
       ],
       "relatedWords": []
     },
-    "hemipteralhemipterous": {
+    "hemipteral": {
       "word": "HEMIPTERAL; HEMIPTEROUS",
       "definitions": [
         {
@@ -1109,6 +1169,16 @@
         {
           "text": "One of the Hemiptera; an hemipter.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemipterous": {
+      "word": "HEMIPTERAL; HEMIPTEROUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Hemiptera.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1185,7 +1255,17 @@
         "walk"
       ]
     },
-    "hemispherichemispherical": {
+    "hemispheric": {
+      "word": "HEMISPHERIC; HEMISPHERICAL",
+      "definitions": [
+        {
+          "text": "Containing, or pertaining to, a hemisphere; as, a hemispheric figure or form; a hemispherical body.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemispherical": {
       "word": "HEMISPHERIC; HEMISPHERICAL",
       "definitions": [
         {
@@ -1265,7 +1345,7 @@
       ],
       "relatedWords": []
     },
-    "hemitropalhemitropous": {
+    "hemitropal": {
       "word": "HEMITROPAL; HEMITROPOUS",
       "definitions": [
         {
@@ -1293,6 +1373,24 @@
         {
           "text": "That which is hemitropal in construction; (Crystallog.) a twin crystal having a hemitropal structure.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemitropous": {
+      "word": "HEMITROPAL; HEMITROPOUS",
+      "definitions": [
+        {
+          "text": "Turned half round; half inverted.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having the raphe terminating about half way between the chalaza and the orifice; amphitropous; -- said of an ovule. Gray.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1761,7 +1859,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The fiber of the skin or rind of the plant, prepared for spinning. The name has also been extended to various fibers resembling the true hemp. African hemp, Bowstring hemp. See under African, and Bowstring. fiber of which was used by the Indians. cannabinum), much like the American boneset.",
+          "text": "The fiber of the skin or rind of the plant, prepared for spinning. The name has also been extended to various fibers resembling the true hemp. African hemp, Bowstring hemp. See under African, and Bowstring. fiber of which was used by the Indians. cannabinum), much like the American boneset. belonging to the Mint family. juncea). to the amaranth.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1859,7 +1957,27 @@
       ],
       "relatedWords": []
     },
-    "hemselfhemselvehemselven": {
+    "hemself": {
+      "word": "HEMSELF; HEMSELVE; HEMSELVEN",
+      "definitions": [
+        {
+          "text": "Themselves; -- used reflexively. [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemselve": {
+      "word": "HEMSELF; HEMSELVE; HEMSELVEN",
+      "definitions": [
+        {
+          "text": "Themselves; -- used reflexively. [Obs.] Chaucer.",
+          "partOfSpeech": "pronoun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hemselven": {
       "word": "HEMSELF; HEMSELVE; HEMSELVEN",
       "definitions": [
         {

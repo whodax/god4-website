@@ -268,7 +268,17 @@
         "yield the ghost"
       ]
     },
-    "dieciandiecious": {
+    "diecian": {
+      "word": "DIECIAN; DIECIOUS",
+      "definitions": [
+        {
+          "text": "See Dioecian, and Dioecious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diecious": {
       "word": "DIECIAN; DIECIOUS",
       "definitions": [
         {
@@ -348,8 +358,20 @@
       "relatedWords": []
     },
     "dieresis": {
-      "word": "DIERESIS",
+      "word": "DIAERESIS; DIERESIS",
       "definitions": [
+        {
+          "text": "(Gram.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The separation or resolution of one syllable into two; -- the opposite of synæresis.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mark consisting of two dots [..], placed over the second of two adjacent vowels, to denote that they are to be pronounced as distinct letters; as, coöperate, aërial.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Diæresis.",
           "partOfSpeech": "noun"
@@ -357,7 +379,17 @@
       ],
       "relatedWords": []
     },
-    "dieselenginedieselmotor": {
+    "dieselengine": {
+      "word": "DIESEL ENGINE; DIESEL MOTOR",
+      "definitions": [
+        {
+          "text": "A type of internal-combustion engine in which the air drawn in by the suction stroke is so highly compressed that the heat generated ignites the fuel (usually crude oil), the fuel being automatically sprayed into the cylinder under pressure. The Diesel engine has a very high thermal efficiency.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dieselmotor": {
       "word": "DIESEL ENGINE; DIESEL MOTOR",
       "definitions": [
         {
@@ -683,22 +715,71 @@
       ],
       "relatedWords": []
     },
+    "dietetic": {
+      "word": "DIETETIC; DIETETICAL",
+      "definitions": [
+        {
+          "text": "Of or performance to diet, or to the rules for regulating the kind and quantity of food to be eaten.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "cannibal",
+        "cannibalistic",
+        "carnivorous",
+        "commensal",
+        "dietary",
+        "dietic",
+        "dining",
+        "eating",
+        "feeding",
+        "flesh-eating",
+        "fruitarian",
+        "gastronomic",
+        "gluttonous",
+        "grain-eating",
+        "graminivorous",
+        "granivorous",
+        "grass-eating",
+        "herbivorous",
+        "insect-eating",
+        "insectivorous",
+        "lactovegetarian",
+        "man-eating",
+        "meat-eating",
+        "mensal",
+        "nourishing",
+        "nutritious",
+        "omnivorous",
+        "omophagous",
+        "pantophagous",
+        "phytivorous",
+        "phytophagous",
+        "plant-eating",
+        "postprandial",
+        "prandial",
+        "predacious",
+        "preprandial",
+        "vegetable-eating",
+        "vegetarian"
+      ]
+    },
+    "dietetical": {
+      "word": "DIETETIC; DIETETICAL",
+      "definitions": [
+        {
+          "text": "Of or performance to diet, or to the rules for regulating the kind and quantity of food to be eaten.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "dietetically": {
       "word": "DIETETICALLY",
       "definitions": [
         {
           "text": "In a dietetical manner.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "dieteticdietetical": {
-      "word": "DIETETIC; DIETETICAL",
-      "definitions": [
-        {
-          "text": "Of or performance to diet, or to the rules for regulating the kind and quantity of food to be eaten.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -791,7 +872,17 @@
       ],
       "relatedWords": []
     },
-    "dietistdietitian": {
+    "dietist": {
+      "word": "DIETIST; DIETITIAN",
+      "definitions": [
+        {
+          "text": "One skilled in dietetics. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dietitian": {
       "word": "DIETIST; DIETITIAN",
       "definitions": [
         {

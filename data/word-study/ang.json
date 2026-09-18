@@ -11,7 +11,17 @@
       ],
       "relatedWords": []
     },
-    "angeiologyangeiotomy": {
+    "angeiology": {
+      "word": "ANGEIOLOGY; ANGEIOTOMY",
+      "definitions": [
+        {
+          "text": "Same as Angiology, Angiotomy, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "angeiotomy": {
       "word": "ANGEIOLOGY; ANGEIOTOMY",
       "definitions": [
         {
@@ -264,8 +274,12 @@
       "relatedWords": []
     },
     "angelic": {
-      "word": "ANGELIC",
+      "word": "ANGELIC; ANGELICAL",
       "definitions": [
+        {
+          "text": "Belonging to, or proceeding from, angels; resembling, characteristic of, or partaking of the nature of, an angel; heavenly; divine. \"Angelic harps.\" Thomson.\"Angelical actions.\" Hooker. The union of womanly tenderness and angelic patience. Macaulay. Angelic Hymn, a very ancient hymn of the Christian Church; -- so called from its beginning with the song of the heavenly host recorded in Luke ii. 14. Eadie.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Of or derived from angelica; as, angelic acid; angelic ether. Angelic acid, an acid obtained from angelica and some other plants.",
           "partOfSpeech": "adjective"
@@ -365,6 +379,16 @@
       ],
       "relatedWords": []
     },
+    "angelical": {
+      "word": "ANGELIC; ANGELICAL",
+      "definitions": [
+        {
+          "text": "Belonging to, or proceeding from, angels; resembling, characteristic of, or partaking of the nature of, an angel; heavenly; divine. \"Angelic harps.\" Thomson.\"Angelical actions.\" Hooker. The union of womanly tenderness and angelic patience. Macaulay. Angelic Hymn, a very ancient hymn of the Christian Church; -- so called from its beginning with the song of the heavenly host recorded in Luke ii. 14. Eadie.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "angelically": {
       "word": "ANGELICALLY",
       "definitions": [
@@ -381,16 +405,6 @@
         {
           "text": "The quality of being angelic; excellence more than human.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "angelicangelical": {
-      "word": "ANGELIC; ANGELICAL",
-      "definitions": [
-        {
-          "text": "Belonging to, or proceeding from, angels; resembling, characteristic of, or partaking of the nature of, an angel; heavenly; divine. \"Angelic harps.\" Thomson.\"Angelical actions.\" Hooker. The union of womanly tenderness and angelic patience. Macaulay. Angelic Hymn, a very ancient hymn of the Christian Church; -- so called from its beginning with the song of the heavenly host recorded in Luke ii. 14. Eadie.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -757,7 +771,17 @@
         "ventricular fibrillation"
       ]
     },
-    "anginousanginose": {
+    "anginose": {
+      "word": "ANGINOUS; ANGINOSE",
+      "definitions": [
+        {
+          "text": "Pertaining to angina or angina pectoris.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anginous": {
       "word": "ANGINOUS; ANGINOSE",
       "definitions": [
         {
@@ -813,6 +837,16 @@
         {
           "text": "Producing one seed only in a seed pod.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "angioneurosis": {
+      "word": "ANGIONEUROSIS",
+      "definitions": [
+        {
+          "text": "Any disorder of the vasomotor system; neurosis of a blood vessel. --An`gi*o*neu*rot\"ic (#), a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1453,7 +1487,7 @@
       "word": "ANGLO-",
       "definitions": [
         {
-          "text": "A combining form meaning the same as English; or English and, or English conjoined with; as, Anglo-Turkish treaty, Anglo-German, Anglo-Irish. Anglo-American, . Of or pertaining to the English and Americans, or to the descendants of Englishmen in America.",
+          "text": "A combining form meaning the same as English; or English and, or English conjoined with; as, Anglo-Turkish treaty, Anglo-German, Anglo-Irish. Anglo-American, . Of or pertaining to the English and Americans, or to the descendants of Englishmen in America. United States. Anglo-Danish, a. Of or pertaining to the English and Danes, or to the Danes who settled in England. Anglo-Indian, a. Of or pertaining to the English in India, or to the English and East Indian peoples or languages. Indies. Anglo-Norman, a. Of or pertaining to the English and Normans, or to the Normans who settled in England. England. Anglo-Saxon. See Anglo-Saxon in the Vocabulary.",
           "partOfSpeech": ""
         }
       ],
@@ -1498,6 +1532,16 @@
       "definitions": [
         {
           "text": "One affected with Anglomania.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anglophobia": {
+      "word": "ANGLOPHOBIA",
+      "definitions": [
+        {
+          "text": "Intense dread of, or aversion to, England or the English.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2098,11 +2142,15 @@
         {
           "text": "To make angular.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Having angles or corners; angled; as, angulate leaves.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "angulateangulated": {
+    "angulated": {
       "word": "ANGULATE; ANGULATED",
       "definitions": [
         {
@@ -2212,7 +2260,17 @@
       ],
       "relatedWords": []
     },
-    "angustifoliateangustifolious": {
+    "angustifoliate": {
+      "word": "ANGUSTIFOLIATE; ANGUSTIFOLIOUS",
+      "definitions": [
+        {
+          "text": "Having narrow leaves. Wright.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "angustifolious": {
       "word": "ANGUSTIFOLIATE; ANGUSTIFOLIOUS",
       "definitions": [
         {

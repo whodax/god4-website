@@ -391,6 +391,10 @@
         {
           "text": ". A contraction of have not or has not; as, I hain't, he hain't, we hain't. [Colloq. or illiterate speech.] [Written also han't.]",
           "partOfSpeech": ""
+        },
+        {
+          "text": "A contraction of have not, or has not, used in illiterate speech. In the United States the commoner spelling is hain't.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -628,6 +632,16 @@
         "wool"
       ]
     },
+    "hair'sbreadth": {
+      "word": "HAIRBREADTH; HAIR'SBREADTH",
+      "definitions": [
+        {
+          "text": "The diameter or breadth of a hair; a very small distance; sometimes, definitely, the forty-eighth part of an inch. Every one could sling stones at an hairbreadth and not miss. Judg. xx. 16",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "hairbell": {
       "word": "HAIRBELL",
       "definitions": [
@@ -659,8 +673,12 @@
       "relatedWords": []
     },
     "hairbreadth": {
-      "word": "HAIRBREADTH",
+      "word": "HAIRBREADTH; HAIR'SBREADTH",
       "definitions": [
+        {
+          "text": "The diameter or breadth of a hair; a very small distance; sometimes, definitely, the forty-eighth part of an inch. Every one could sling stones at an hairbreadth and not miss. Judg. xx. 16",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Having the breadth of a hair; very narrow; as, a hairbreadth escape.",
           "partOfSpeech": "adjective"
@@ -708,16 +726,6 @@
         "tightness",
         "whisker"
       ]
-    },
-    "hairbreadthhair'sbreadth": {
-      "word": "HAIRBREADTH; HAIR'SBREADTH",
-      "definitions": [
-        {
-          "text": "The diameter or breadth of a hair; a very small distance; sometimes, definitely, the forty-eighth part of an inch. Every one could sling stones at an hairbreadth and not miss. Judg. xx. 16",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
     },
     "hairbrown": {
       "word": "HAIR-BROWN",

@@ -1,38 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "leathernbagorknapsackagallicwordcfoirbolcgaelbolg": {
-      "word": "leathern bag or knapsack; a Gallic word; cf. OIr. bolc, Gael. bolg.",
-      "definitions": [
-        {
-          "text": "A kind of fur prepared from lambskin dressed with the wool on; habits.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "leathernsackskrbtobelargestrongtherootmeaningtoswell": {
-      "word": "leathern sack, Skr. b to be large, strong; the root meaning to swell.",
-      "definitions": [
-        {
-          "text": "The bilge or protuberant part of a cask.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A swelling, protuberant part; a bending outward, esp. when caused by pressure; as, a bulge in a wall.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Naut.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The bilge of a vessel. See Bilge, 2. Bulge ways. (Naut.) See Bilge ways.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "lea": {
       "word": "LEA",
       "definitions": [
@@ -307,7 +275,7 @@
       "word": "LEADING",
       "definitions": [
         {
-          "text": "Guiding; directing; controlling; foremost; as, a leading",
+          "text": "Guiding; directing; controlling; foremost; as, a leading motive; a leading man; a leading example. has come to be regarded as settling the law of the question involved. Abbott. guiding theme; in the modern music drama of Wagner, a marked melodic phrase or short passage which always accompanies the reappearance of a certain person, situation, abstract idea, or allusion in the course of the play; a sort of musical label. major scale; the sensible note. questioned in making his reply. beginning to walk. dependence, or under the guidance of others. locomotive engine.",
           "partOfSpeech": "adjective"
         },
         {
@@ -465,7 +433,7 @@
       "word": "LEAFLESS",
       "definitions": [
         {
-          "text": "Having no leaves or foliage; bearing no foliage. \"Leafless groves.\" Cowper.",
+          "text": "Having no leaves or foliage; bearing no foliage. \"Leafless groves.\" Cowper. though leaves may be present in the form of scales and bracts. See Leaf, n., 1 and 2.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -955,6 +923,14 @@
         {
           "text": "Lore; lesson. [Obs.] Spenser.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Leer, a. [Prov. Eng.] Halliwell.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An annealing oven. See Leer, n.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -991,7 +967,7 @@
       "word": "LEARNED",
       "definitions": [
         {
-          "text": "Of or pertaining to learning; possessing, or characterized by, learning, esp. scholastic learning; erudite; well-informed; as, a learned scholar, writer, or lawyer; a learned book; a learned theory. The learnedlover lost no time. Spenser. Men of much reading are greatly learned, but may be little knowing. Locke. Words of learned length and thundering sound. Goldsmith.",
+          "text": "Of or pertaining to learning; possessing, or characterized by, learning, esp. scholastic learning; erudite; well-informed; as, a learned scholar, writer, or lawyer; a learned book; a learned theory. The learnedlover lost no time. Spenser. Men of much reading are greatly learned, but may be little knowing. Locke. Words of learned length and thundering sound. Goldsmith. The learned, learned men; men of erudition; scholars. Every coxcomb swears as learnedly as they. Swift.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1075,6 +1051,16 @@
       ],
       "relatedWords": []
     },
+    "leaseholder": {
+      "word": "LEASEHOLDER",
+      "definitions": [
+        {
+          "text": "A tenant under a lease.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "leaser": {
       "word": "LEASER",
       "definitions": [
@@ -1149,11 +1135,25 @@
         {
           "text": "In the smallest or lowest degree; in a degree below all others; as, to reward those who least deserve it.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "See Lest, conj. [Obs.] Spenser.",
+          "partOfSpeech": "conjunction"
         }
       ],
       "relatedWords": []
     },
-    "leastwaysleastwise": {
+    "leastways": {
+      "word": "LEASTWAYS; LEASTWISE",
+      "definitions": [
+        {
+          "text": "At least; at all events. [Colloq.] At leastways, or At leastwise, at least. [Obs.] Fuller.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leastwise": {
       "word": "LEASTWAYS; LEASTWISE",
       "definitions": [
         {
@@ -1211,7 +1211,17 @@
       ],
       "relatedWords": []
     },
-    "leatheretleatherette": {
+    "leatheret": {
+      "word": "LEATHERET; LEATHERETTE",
+      "definitions": [
+        {
+          "text": "An imitation of leather, made of paper and cloth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leatherette": {
       "word": "LEATHERET; LEATHERETTE",
       "definitions": [
         {
@@ -1291,6 +1301,34 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To withdraw one's self from; to go away from; to depart from; as, to leave the house. Therefore shall a man leave his father and his mother, and shall cleave unto his wife. Gen. ii. 24.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To let remain unremoved or undone; to let stay or continue, in distinction from what is removed or changed. If grape gatherers come to thee, would they not leave some gleaning grapes Jer. xlix. 9. These ought ye to have done, and not to leave the other undone. Matt. xxiii. 23. Besides it leaveth a suspicion, as if more might be said than is expressed. Bacon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cease from; to desist from; to abstain from. Now leave complaining and begin your tea. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To desert; to abandon; to forsake; hence, to give up; to relinquish. Lo, we have left all, and have followed thee. Mark x. 28. The heresies that men do leave. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To let be or do without interference; as, I left him to his reflections; I leave my hearers to judge. I will leave you now to your gossiplike humor. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put; to place; to deposit; to deliver; to commit; to submit -- with a sense of withdrawing one's self from; as, leave your hat in the hall; we left our cards; to leave the matter to arbitrators. Leave there thy gift before the altar and go thy way. Matt. v. 24. The foot That leaves the print of blood where'er it walks. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have remaining at death; hence, to bequeath; as, he left a large estate; he left a good name; he left a legacy to his niece. To leave alone. (a) To leave in solitude. (b) To desist or refrain from having to do with; as, to leave dangerous chemicals alone. leave off work at six o'clock. (b) To cease wearing or using; to omit to put in the usual position; as, to leave off a garment; to leave off the tablecloth. (c) To forsake; as, to leave off a bad habit. writing. for (one). bequeath; give up; forego; resign; surrender; forbear. See Quit.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To depart; to set out. [Colloq.] By the time I left for Scotland. Carlyle.",
           "partOfSpeech": "verb"
         },
@@ -1324,6 +1362,14 @@
     "leaven": {
       "word": "LEAVEN",
       "definitions": [
+        {
+          "text": "Any substance that produces, or is designed to produce, fermentation, as in dough or liquids; esp., a portion of fermenting dough, which, mixed with a larger quantity of dough, produces a general change in the mass, and renders it light; yeast; barm.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything which makes a general assimilating (especially a corrupting) change in the mass. Beware of the leaven of the Pharisees, which is hypocrisy. Luke xii. 1.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To make light by the action of leaven; to cause to ferment. A little leaven leaveneth the whole lump. 1 Cor. v. 6.",
           "partOfSpeech": "verb"
@@ -1423,7 +1469,17 @@
       ],
       "relatedWords": []
     },
-    "lebanlebban": {
+    "leban": {
+      "word": "LEBAN; LEBBAN",
+      "definitions": [
+        {
+          "text": "Coagulated sour milk diluted with water; -- a common beverage among the Arabs. Also, a fermented liquor made of the same.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lebban": {
       "word": "LEBAN; LEBBAN",
       "definitions": [
         {
@@ -1707,7 +1763,17 @@
       ],
       "relatedWords": []
     },
-    "ledenledden": {
+    "leden": {
+      "word": "LEDEN; LEDDEN",
+      "definitions": [
+        {
+          "text": "Language; speech; voice; cry. [Obs.] Chaucer. Spenser.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ledden": {
       "word": "LEDEN; LEDDEN",
       "definitions": [
         {
@@ -1769,7 +1835,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "(Arch.) (a) A large flat stone, esp. one laid over a tomb. Oxf. Gloss. (b) A horizontal piece of timber secured to the uprights and supporting floor timbers, a staircase, scaffolding, or the like. It differs from an intertie in being intended to carry weight. [Written also ligger.] Ledger bait, fishing bait attached to a floating line",
+          "text": "(Arch.) (a) A large flat stone, esp. one laid over a tomb. Oxf. Gloss. (b) A horizontal piece of timber secured to the uprights and supporting floor timbers, a staircase, scaffolding, or the like. It differs from an intertie in being intended to carry weight. [Written also ligger.] Ledger bait, fishing bait attached to a floating line fastened to the bank of a stream, pond, etc. Walton. J. H. Walsh. Raymond.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1805,13 +1871,17 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Of or pertaining to the part or side opposite to that against",
+          "text": "That part of the hemisphere, as one stands on shipboard, toward which the wind blows. See Lee, a. By the lee, To bring by the lee. See under By, and Bring. as, to be under the lee of a ship.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the part or side opposite to that against which the wind blows; -- opposed to weather; as, the lee side or lee rail of a vessel. Lee gauge. See Gauge, n. (Naut.) -- Lee shore, the shore on the lee side of a vessel. blows. angles to the length of the vessel and to the leeward.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "leeangleliangle": {
+    "leeangle": {
       "word": "LEEANGLE; LIANGLE",
       "definitions": [
         {
@@ -1837,6 +1907,10 @@
         {
           "text": "See 2d Leach.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Leach, v. t.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "The border or edge at the side of a sail. [Written also leach.] Leech line, a line attached to the leech ropes of sails, passing up through blocks on the yards, to haul the leeches by. Totten. is sewed.",
@@ -1883,7 +1957,17 @@
       ],
       "relatedWords": []
     },
-    "leedleede": {
+    "leed": {
+      "word": "LEED; LEEDE",
+      "definitions": [
+        {
+          "text": "A caldron; a copper kettle. [Obs.] \"A furnace of a leed.\" Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leede": {
       "word": "LEED; LEEDE",
       "definitions": [
         {
@@ -2129,7 +2213,17 @@
       ],
       "relatedWords": []
     },
-    "lefthandednesslefthandiness": {
+    "lefthandedness": {
+      "word": "LEFT-HANDEDNESS; LEFT-HANDINESS",
+      "definitions": [
+        {
+          "text": "The state or quality of being left-handed; awkwardness. An awkward address, ungraceful attitudes and actions, and a certain left-handiness (if I may use the expression) proclaim low education. Chesterfield.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lefthandiness": {
       "word": "LEFT-HANDEDNESS; LEFT-HANDINESS",
       "definitions": [
         {
@@ -2623,7 +2717,7 @@
       ],
       "relatedWords": []
     },
-    "leggiadroleggiero": {
+    "leggiadro": {
       "word": "LEGGIADRO; LEGGIERO",
       "definitions": [
         {
@@ -2633,22 +2727,36 @@
       ],
       "relatedWords": []
     },
-    "leggingleggin": {
-      "word": "LEGGING; LEGGIN",
+    "leggiero": {
+      "word": "LEGGIADRO; LEGGIERO",
       "definitions": [
         {
-          "text": "A cover for the leg, like a long gaiter.",
-          "partOfSpeech": "noun"
+          "text": "Light or graceful; in a light, delicate, and brick style.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
     "legging": {
-      "word": "LEGGING",
+      "word": "LEGGING; LEGGIN",
       "definitions": [
+        {
+          "text": "A cover for the leg, like a long gaiter.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": ", from Leg, v. t.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leggin": {
+      "word": "LEGGING; LEGGIN",
+      "definitions": [
+        {
+          "text": "A cover for the leg, like a long gaiter.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2865,7 +2973,17 @@
       ],
       "relatedWords": []
     },
-    "legislatresslegislatrix": {
+    "legislatress": {
+      "word": "LEGISLATRESS; LEGISLATRIX",
+      "definitions": [
+        {
+          "text": "A woman who makes laws. Shaftesbury.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "legislatrix": {
       "word": "LEGISLATRESS; LEGISLATRIX",
       "definitions": [
         {
@@ -3201,7 +3319,7 @@
       ],
       "relatedWords": []
     },
-    "leisterlister": {
+    "leister": {
       "word": "LEISTER; LISTER",
       "definitions": [
         {
@@ -3351,7 +3469,17 @@
       ],
       "relatedWords": []
     },
-    "lemniscatalemniscate": {
+    "lemniscata": {
+      "word": "LEMNISCATA; LEMNISCATE",
+      "definitions": [
+        {
+          "text": "A curve in the form of the figure 8, with both parts symmetrical, generated by the point in which a tangent to an equilateral hyperbola meets the perpendicular on it drawn from the center.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lemniscate": {
       "word": "LEMNISCATA; LEMNISCATE",
       "definitions": [
         {
@@ -3439,7 +3567,17 @@
       ],
       "relatedWords": []
     },
-    "lemuridouslemurine": {
+    "lemuridous": {
+      "word": "LEMURIDOUS; LEMURINE",
+      "definitions": [
+        {
+          "text": "Lemuroid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lemurine": {
       "word": "LEMURIDOUS; LEMURINE",
       "definitions": [
         {
@@ -3589,7 +3727,17 @@
       ],
       "relatedWords": []
     },
-    "lengerlengest": {
+    "lenger": {
+      "word": "LENGER; LENGEST",
+      "definitions": [
+        {
+          "text": "Longer; longest; -- obsolete compar. and superl. of long. Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lengest": {
       "word": "LENGER; LENGEST",
       "definitions": [
         {
@@ -3677,7 +3825,17 @@
       ],
       "relatedWords": []
     },
-    "lengthwayslengthwise": {
+    "lengthways": {
+      "word": "LENGTHWAYS; LENGTHWISE",
+      "definitions": [
+        {
+          "text": "In the direction of the length; in a longitudinal direction.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lengthwise": {
       "word": "LENGTHWAYS; LENGTHWISE",
       "definitions": [
         {
@@ -3697,7 +3855,17 @@
       ],
       "relatedWords": []
     },
-    "lenienceleniency": {
+    "lenience": {
+      "word": "LENIENCE; LENIENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being lenient; lenity; clemency.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leniency": {
       "word": "LENIENCE; LENIENCY",
       "definitions": [
         {
@@ -4037,7 +4205,17 @@
       ],
       "relatedWords": []
     },
-    "lentiscuslentisk": {
+    "lentiscus": {
+      "word": "LENTISCUS; LENTISK",
+      "definitions": [
+        {
+          "text": "A tree; the mastic. See Mastic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lentisk": {
       "word": "LENTISCUS; LENTISK",
       "definitions": [
         {
@@ -4183,7 +4361,7 @@
       "word": "LEONINE",
       "definitions": [
         {
-          "text": "Pertaining to, or characteristic of, the lion; as, a leonine",
+          "text": "Pertaining to, or characteristic of, the lion; as, a leonine look; leonine repacity. end of the line rhymes with the middle; -- so named from Leo, or Leoninus, a Benedictine and canon of Paris in the twelfth century, who wrote largely in this measure, though he was not the inventor. The following line is an example: Gloria factorum temere conceditur horum.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4423,7 +4601,17 @@
       ],
       "relatedWords": []
     },
-    "lepidopterallepidopterous": {
+    "lepidopteral": {
+      "word": "LEPIDOPTERAL; LEPIDOPTEROUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Lepidoptera.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lepidopterous": {
       "word": "LEPIDOPTERAL; LEPIDOPTEROUS",
       "definitions": [
         {
@@ -4463,7 +4651,17 @@
       ],
       "relatedWords": []
     },
-    "lepidotelepidoted": {
+    "lepidote": {
+      "word": "LEPIDOTE; LEPIDOTED",
+      "definitions": [
+        {
+          "text": "Having a coat of scurfy scales, as the leaves of the oleaster.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lepidoted": {
       "word": "LEPIDOTE; LEPIDOTED",
       "definitions": [
         {
@@ -4562,6 +4760,10 @@
         },
         {
           "text": "(Nat. Hist.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Leprose.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4717,6 +4919,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "Empty. [Obs.] See Lere, a.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "Flesh; skin. [Obs.] \"His white leer.\" Chaucer.",
           "partOfSpeech": "noun"
         }
@@ -4855,7 +5061,7 @@
           "partOfSpeech": "conjunction"
         },
         {
-          "text": "Smaller; not so large or great; not so much; shorter; inferior; as, a less quantity or number; a horse of less size or value; in less time than before.",
+          "text": "Smaller; not so large or great; not so much; shorter; inferior; as, a less quantity or number; a horse of less size or value; in less time than before. purse contained less (money) than ten dollars. See Less, n. Thus in less [time] than a hundred years from the coming of Augustine, all England became Christian. E. A. Freeman.",
           "partOfSpeech": "adjective"
         },
         {
@@ -5147,11 +5353,21 @@
       ],
       "relatedWords": []
     },
-    "lethargiclethargical": {
+    "lethargic": {
       "word": "LETHARGIC; LETHARGICAL",
       "definitions": [
         {
-          "text": "Pertaining to, affected with, or resembling, lethargy; morbidly",
+          "text": "Pertaining to, affected with, or resembling, lethargy; morbidly drowsy; dull; heavy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lethargical": {
+      "word": "LETHARGIC; LETHARGICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, affected with, or resembling, lethargy; morbidly drowsy; dull; heavy.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5521,6 +5737,10 @@
         {
           "text": ". Same as Leuco-.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "A combining form signifying white, colorless; specif. (Chem.), denoting an extensive series of colorless organic compounds, obtained by reduction from certain other colored compounds; as, leucaniline, leucaurin, etc.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -5555,7 +5775,17 @@
       ],
       "relatedWords": []
     },
-    "leucicleucinic": {
+    "leucic": {
+      "word": "LEUCIC; LEUCINIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or designating, an acid obtained from leucin, and called also oxycaproic acid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leucinic": {
       "word": "LEUCIC; LEUCINIC",
       "definitions": [
         {
@@ -5617,7 +5847,7 @@
       ],
       "relatedWords": []
     },
-    "leucoleuc": {
+    "leuco": {
       "word": "LEUCO-; LEUC-",
       "definitions": [
         {
@@ -5637,7 +5867,17 @@
       ],
       "relatedWords": []
     },
-    "leucocythaemialeucocythemia": {
+    "leucocythaemia": {
+      "word": "LEUCOCYTHAEMIA; LEUCOCYTHEMIA",
+      "definitions": [
+        {
+          "text": "A disease in which the white corpuscles of the blood are largely increased in number, and there is enlargement of the spleen, or the lymphatic glands; leuchæmia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leucocythemia": {
       "word": "LEUCOCYTHAEMIA; LEUCOCYTHEMIA",
       "definitions": [
         {
@@ -5777,7 +6017,17 @@
       ],
       "relatedWords": []
     },
-    "leucoplastleucoplastid": {
+    "leucoplast": {
+      "word": "LEUCOPLAST; LEUCOPLASTID",
+      "definitions": [
+        {
+          "text": "One of certain very minute whitish or colorless granules occurring in the protoplasm of plants and supposed to be the nuclei around which starch granules will form.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leucoplastid": {
       "word": "LEUCOPLAST; LEUCOPLASTID",
       "definitions": [
         {
@@ -5887,7 +6137,17 @@
       ],
       "relatedWords": []
     },
-    "leukeleukeness": {
+    "leuke": {
+      "word": "LEUKE; LEUKENESS",
+      "definitions": [
+        {
+          "text": "See Luke, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leukeness": {
       "word": "LEUKE; LEUKENESS",
       "definitions": [
         {
@@ -6223,7 +6483,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The art or operation of using a leveling instrument for finding a horizontal line, for ascertaining the differences of level between different points of the earth's surface included in a survey, for establishing grades, etc., as in finding the descent of a river, or",
+          "text": "The art or operation of using a leveling instrument for finding a horizontal line, for ascertaining the differences of level between different points of the earth's surface included in a survey, for establishing grades, etc., as in finding the descent of a river, or locating a line of railroad. Leveling instrument. See Surveyor's level, under Level, n. a leveling instrument for measuring differences of level between points.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6279,6 +6539,18 @@
         {
           "text": "Bather. [Obs.] Chaucer. For lever had I die than see his deadly face. Spenser.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A rigid piece which is capable of turning about one point, or axis (the fulcrum), and in which are two or more other points where forces are applied; -- used for transmitting and modifying force and motion. Specif., a bar of metal, wood, or other rigid substance, used to exert a pressure, or sustain a weight, at one point of its length, by receiving a force or power at a second, and turning at a third on a fixed point called a fulcrum. It is usually named as the first of the six mechanical powers, and is three kinds, according as either the fulcrum F, the weight W, or the power P. respectively, is situated between the other two, as in the figures.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mach.) (a) A bar, as a capstan bar, applied to a rotatory piece to turn it. (b) An arm on a rock shaft, to give motion to the shaft or to obtain motion from it. Compound lever, a machine consisting of two or more levers acting upon each other. action of the escape wheel with that of the balance. Universal lever, a machine formed by a combination of a lever with the wheel and axle, in such a manner as to convert the reciprocating motion of the lever into a continued rectilinear motion of some body to which the power is applied.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -6445,7 +6717,17 @@
       ],
       "relatedWords": []
     },
-    "levirateleviratical": {
+    "levirate": {
+      "word": "LEVIRATE; LEVIRATICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or in accordance with, a law of the ancient Israelites and other tribes and races, according to which a woman, whose husband died without issue, was married to the husband's brother. The firstborn son of a leviratical marriage was reckoned and registered as the son of the deceased brother. Alford.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "leviratical": {
       "word": "LEVIRATE; LEVIRATICAL",
       "definitions": [
         {
@@ -6703,7 +6985,17 @@
       ],
       "relatedWords": []
     },
-    "levynelevynite": {
+    "levyne": {
+      "word": "LEVYNE; LEVYNITE",
+      "definitions": [
+        {
+          "text": "A whitish, reddish, or yellowish, transparent or translucent mineral, allied to chabazite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "levynite": {
       "word": "LEVYNE; LEVYNITE",
       "definitions": [
         {
@@ -6739,7 +7031,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Suiting, or proceeding from, lustfulness; involving unlawful sexual desire; as, lewd thoughts, conduct, or language.",
+          "text": "Suiting, or proceeding from, lustfulness; involving unlawful sexual desire; as, lewd thoughts, conduct, or language. unchaste; impure; lascivious; lecherous; rakish; debauched.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6755,7 +7047,21 @@
       ],
       "relatedWords": []
     },
-    "lewislewisson": {
+    "lewis": {
+      "word": "LEWIS; LEWISSON",
+      "definitions": [
+        {
+          "text": "An iron dovetailed tenon, made in sections, which can be fitted into a dovetail mortise; -- used in hoisting large stones, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of shears used in cropping woolen cloth. Lewis hole, a hole wider at the bottom than at the mouth, into which a lewis is fitted. De Foe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lewisson": {
       "word": "LEWIS; LEWISSON",
       "definitions": [
         {
@@ -6783,7 +7089,7 @@
       "word": "LEXICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a lexicon, to lexicography, or words;",
+          "text": "Of or pertaining to a lexicon, to lexicography, or words; according or conforming to a lexicon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6795,6 +7101,26 @@
         {
           "text": "The author or compiler of a lexicon or dictionary. Every other author may aspire to praise; the lexicographer can only hope to escape reproach; and even this negative recompense has been yet granted to very few. Johnson.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lexicographic": {
+      "word": "LEXICOGRAPHIC; LEXICOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or according to, lexicography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lexicographical": {
+      "word": "LEXICOGRAPHIC; LEXICOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to, or according to, lexicography.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6935,7 +7261,17 @@
       ],
       "relatedWords": []
     },
-    "leydenjarleydenphial": {
+    "leydenjar": {
+      "word": "LEYDEN JAR; LEYDEN PHIAL",
+      "definitions": [
+        {
+          "text": "A glass jar or bottle used to accumulate electricity. It is coated with tin foil, within and without, nearly to its top, and is surmounted by a brass knob which communicates with the inner coating, for the purpose of charging it with electricity. It is so named from having been invented in Leyden, Holland.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "leydenphial": {
       "word": "LEYDEN JAR; LEYDEN PHIAL",
       "definitions": [
         {
@@ -6961,20 +7297,6 @@
         {
           "text": "Any crime committed against the sovereign power.",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "legislationusedindistinctionfraomcommonlawseecommonlaw": {
-      "word": "legislation; -- used in distinction fraom common law. See Common law,",
-      "definitions": [
-        {
-          "text": "An act of a corporation or of its founder, intended as a permanent rule or law; as, the statutes of a university.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "An assemblage of farming servants (held possibly by statute) for the purpose of being hired; -- called also statute fair. [Eng.] Cf. 3d Mop, 2. Halliwell. Statute book, a record of laws or legislative acts. Blackstone. to be worn by a statute, dated in 1571, in behalf of the trade of cappers. [Obs.] Halliwell. service in making roads, bridges, etc., as in certain English colonies. stat. 13 Edw. I., acknowledged in form prescribed, on which, if not paid at the day, an execution might be awarded against the body, lands, and goods of the debtor, and the obligee might hold the lands until out of the rents and profits of them the debt was satisfied; -- called also a pocket judgment. It is now fallen into disuse. Tomlins. Bouvier. after which rights can not be enforced by action. the staple, by virtue of which the creditor may, on nonpayment, forthwith have execution against the body, lands, and goods of the debtor, as in the statute merchant. It is now disused. Blackstone.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

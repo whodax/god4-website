@@ -1,7 +1,17 @@
 {
   "version": "v1",
   "entries": {
-    "twaddelltwaddell'shydrometer": {
+    "twaddell": {
+      "word": "TWADDELL; TWADDELL'S HYDROMETER",
+      "definitions": [
+        {
+          "text": "A form of hydrometer for liquids heavier than water, graduated with an arbitrary scale such that the readings when multiplied by .005 and added to unity give the specific gravity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "twaddell'shydrometer": {
       "word": "TWADDELL; TWADDELL'S HYDROMETER",
       "definitions": [
         {
@@ -203,11 +213,15 @@
         {
           "text": "To tweak. [Obs.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A pinching condition; perplexity; trouble; distress. [Obs. or Prov. Eng.] This put the old fellow in a rare tweague. Arbuthnot.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "tweagtweague": {
+    "tweague": {
       "word": "TWEAG; TWEAGUE",
       "definitions": [
         {
@@ -293,7 +307,17 @@
       ],
       "relatedWords": []
     },
-    "tweesetweeze": {
+    "tweese": {
+      "word": "TWEESE; TWEEZE",
+      "definitions": [
+        {
+          "text": "A surgeon's case of instruments. Howell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tweeze": {
       "word": "TWEESE; TWEEZE",
       "definitions": [
         {
@@ -785,7 +809,7 @@
       "word": "TWILLY",
       "definitions": [
         {
-          "text": "A machine for cleansing or loosening wool by the action of a revolving cylinder covered with long iron spikes or teeth; a willy or",
+          "text": "A machine for cleansing or loosening wool by the action of a revolving cylinder covered with long iron spikes or teeth; a willy or willying machine; -- called also twilly devil, and devil. See Devil, n., 6, and Willy. Tomlinson.",
           "partOfSpeech": "noun"
         }
       ],
@@ -822,6 +846,10 @@
         },
         {
           "text": "(Crystallog.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Composed of parts united according to some definite law of twinning. See Twin, n., 4. Twin boat, or Twin ship (Naut.), a vessel whose deck and upper works rest on two parallel hulls. of northern climates, which has pretty, fragrant, pendulous flowers borne in pairs on a slender stalk. on either side of the plane of the keel.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1071,12 +1099,32 @@
       ],
       "relatedWords": []
     },
+    "twinlike": {
+      "word": "TWINLIKE",
+      "definitions": [
+        {
+          "text": "Closely resembling; being a counterpart.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "twinling": {
       "word": "TWINLING",
       "definitions": [
         {
           "text": "A young or little twin, especially a twin lamb.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "twinned": {
+      "word": "TWINNED",
+      "definitions": [
+        {
+          "text": "Composed of parts united according to a law of twinning. See Twin, n., 4.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1095,7 +1143,7 @@
       "word": "TWINNING",
       "definitions": [
         {
-          "text": "The assemblage of two or more crystals, or parts of crystals, in reversed position with reference to each other in accordance with some definite law; also, rarely, in artificial twinning (accomplished for example by pressure), the process by which this reversal is brought about. Polysynthetic twinning, repeated twinning of crystal lamellæ, as that of the triclinic feldspars.",
+          "text": "The assemblage of two or more crystals, or parts of crystals, in reversed position with reference to each other in accordance with some definite law; also, rarely, in artificial twinning (accomplished for example by pressure), the process by which this reversal is brought about. Polysynthetic twinning, repeated twinning of crystal lamellæ, as that of the triclinic feldspars. of crystals.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1295,6 +1343,16 @@
       ],
       "relatedWords": []
     },
+    "twisting": {
+      "word": "TWISTING",
+      "definitions": [
+        {
+          "text": "a. & n. from Twist. Twisting pair. (Kinematics) See under Pair, n., 7.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "twit": {
       "word": "TWIT",
       "definitions": [
@@ -1448,6 +1506,10 @@
     "two": {
       "word": "TWO",
       "definitions": [
+        {
+          "text": "One and one; twice one. \"Two great lights.\" Gen. i. 16. \"Two black clouds.\" Milton. signifying divided into, consisting of, or having, two parts, divisions, organs, or the like; as two-bladed, two-celled, two-eared, two-flowered, twohand, two-headed, two-horse, two-leafed or two- leaved, two-legged, two-lobed, two-masted, two-named, two-part, two- petaled, two-pronged, two-seeded, two-sided, two-story, two-stringed, two-foothed, two-valved, two-winged, and the like. One or two, a phrase often used indefinitely for a small number.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "The sum of one; the number next greater than one, and next less than three; two units or objects.",
           "partOfSpeech": "noun"
@@ -1633,7 +1695,17 @@
       ],
       "relatedWords": []
     },
-    "twophasetwophaser": {
+    "twophase": {
+      "word": "TWO-PHASE; TWO-PHASER",
+      "definitions": [
+        {
+          "text": "Same as Diphase, Diphaser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "twophaser": {
       "word": "TWO-PHASE; TWO-PHASER",
       "definitions": [
         {
@@ -1751,28 +1823,6 @@
         {
           "text": "See Twayblade.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "twistweaveorthekindredicelbregedhatodrawbrandishbraid": {
-      "word": "twist, weave, or the kindred Icel. bregedha to draw, brandish, braid,",
-      "definitions": [
-        {
-          "text": "To charge with something wrong or disgraceful; to reproach; to cast something in the teeth of; -- followed by with or for, and formerly of, before the thing imputed. And upbraided them with their unbelief. Mark xvi. 14. Vet do not Upbraid us our distress. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To reprove severely; to rebuke; to chide. Then began he to upbraid the cities wherein most of his mighty works were done. Matt. xi. 20 How much doth thy kindness upbraid my wickedness! Sir P. Sidney.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To treat with contempt. [Obs.] Spenser.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To object or urge as a matter of reproach; to cast up; -- with to before the person. [Obs.] Bacon.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

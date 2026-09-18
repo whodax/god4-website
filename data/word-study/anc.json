@@ -684,7 +684,7 @@
       ],
       "relatedWords": []
     },
-    "anchoretanchorite": {
+    "anchoret": {
       "word": "ANCHORET; ANCHORITE",
       "definitions": [
         {
@@ -694,7 +694,17 @@
       ],
       "relatedWords": []
     },
-    "anchoreticanchoretical": {
+    "anchoretic": {
+      "word": "ANCHORETIC; ANCHORETICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to an anchoret or hermit; after the manner of an anchoret.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anchoretical": {
       "word": "ANCHORETIC; ANCHORETICAL",
       "definitions": [
         {
@@ -739,8 +749,12 @@
       "relatedWords": []
     },
     "anchorite": {
-      "word": "ANCHORITE",
+      "word": "ANCHORET; ANCHORITE",
       "definitions": [
+        {
+          "text": "One who renounces the world and secludes himself, usually for religious reasons; a hermit; a recluse. [Written by some authors anachoret.] Our Savior himself . . . did not choose an anchorite's or a monastic life, but a social and affable way of conversing with mortals. Boyle.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Anchoret.",
           "partOfSpeech": "noun"
@@ -896,7 +910,7 @@
       ],
       "relatedWords": []
     },
-    "anchylosisankylosis": {
+    "anchylosis": {
       "word": "ANCHYLOSIS; ANKYLOSIS",
       "definitions": [
         {
@@ -1156,24 +1170,6 @@
       ],
       "relatedWords": []
     },
-    "ancientlyusedtorepresent11withadashoverito": {
-      "word": "anciently used to represent 11: with a dash over it (O",
-      "definitions": [
-        {
-          "text": "The letter O, or its sound. \"Mouthing out his hollow oes and aes.\" Tennyson.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Something shaped like the letter O; a circle or oval. \"This wooden O [Globe Theater]\". Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A cipher; zero. [R.] Thou art an O without a figure. Shak.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "ancientness": {
       "word": "ANCIENTNESS",
       "definitions": [
@@ -1298,7 +1294,17 @@
       ],
       "relatedWords": []
     },
-    "ancipitalancipitous": {
+    "ancipital": {
+      "word": "ANCIPITAL; ANCIPITOUS",
+      "definitions": [
+        {
+          "text": "Two-edged instead of round; -- said of certain flattened stems, as those of blue grass, and rarely also of leaves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ancipitous": {
       "word": "ANCIPITAL; ANCIPITOUS",
       "definitions": [
         {
@@ -1348,7 +1354,17 @@
       ],
       "relatedWords": []
     },
-    "anconalanconeal": {
+    "anconal": {
+      "word": "ANCONAL; ANCONEAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the ancon or elbow. \"The olecranon on anconeal process.\" Flower.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "anconeal": {
       "word": "ANCONAL; ANCONEAL",
       "definitions": [
         {

@@ -224,6 +224,16 @@
         "wampum"
       ]
     },
+    "booetes": {
+      "word": "BOOTES; BOOETES",
+      "definitions": [
+        {
+          "text": "A northern constellation, containing the bright star Arcturus.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "boohoe": {
       "word": "BOOHOE",
       "definitions": [
@@ -878,7 +888,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Characterized by a method of expression generally found in books; formal; labored; pedantic; as, a bookish way of talking; bookish",
+          "text": "Characterized by a method of expression generally found in books; formal; labored; pedantic; as, a bookish way of talking; bookish sentences.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1004,7 +1014,7 @@
       ],
       "relatedWords": []
     },
-    "booklandbockland": {
+    "bookland": {
       "word": "BOOKLAND; BOCKLAND",
       "definitions": [
         {
@@ -1391,16 +1401,6 @@
         "used-car lot"
       ]
     },
-    "bookwhichancientlywasarollofparchmentisunfoldedandof": {
-      "word": "book (which anciently was a roll of parchment) is unfolded (and, of",
-      "definitions": [
-        {
-          "text": "A word formerly used (as finis is now) at the conclusion of a book to indicate the end.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "bookwork": {
       "word": "BOOKWORK",
       "definitions": [
@@ -1553,6 +1553,22 @@
         },
         {
           "text": "To extend, or push, with a boom or pole; as, to boom out a sail; to boom off a boat.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cry with a hollow note; to make a hollow sound, as the bittern, and some insects. At eve the beetle boometh Athwart the thicket lone. Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make a hollow sound, as of waves or cannon. Alarm guns booming through the night air. W. Irving.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To rush with violence and noise, as a ship under a press of sail, before a free wind. She comes booming down before it. Totten.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have a rapid growth in market value or in popular favor; to go on rushingly.",
           "partOfSpeech": "verb"
         },
         {
@@ -2376,6 +2392,121 @@
         "vulgarist",
         "yahoo",
         "yokel"
+      ]
+    },
+    "boorish": {
+      "word": "BOORISH",
+      "definitions": [
+        {
+          "text": "Like a boor; clownish; uncultured; unmannerly. Which is in truth a gross and boorish opinion. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "all thumbs",
+        "awkward",
+        "barbarian",
+        "barbaric",
+        "blunderheaded",
+        "blundering",
+        "bucolic",
+        "bumbling",
+        "bungling",
+        "butterfingered",
+        "caddish",
+        "careless",
+        "carlish",
+        "churlish",
+        "cloddish",
+        "clodhopping",
+        "clownish",
+        "clumsy",
+        "clumsy-fisted",
+        "coarse",
+        "countrified",
+        "country-born",
+        "country-bred",
+        "crude",
+        "cumbersome",
+        "farmerish",
+        "fingers all thumbs",
+        "from the sticks",
+        "fumbling",
+        "gauche",
+        "gawkish",
+        "gawky",
+        "graceless",
+        "ham-fisted",
+        "ham-handed",
+        "hayseed",
+        "heavy-handed",
+        "hick",
+        "hicky",
+        "hobnailed",
+        "hooliganish",
+        "hulking",
+        "hulky",
+        "ill-bred",
+        "ill-mannered",
+        "impolite",
+        "inconsiderate",
+        "inelegant",
+        "insensitive",
+        "inurbane",
+        "left-hand",
+        "left-handed",
+        "loobyish",
+        "loutish",
+        "louty",
+        "lowbred",
+        "lubberly",
+        "lumbering",
+        "lumpen",
+        "lumpish",
+        "maladroit",
+        "nasty",
+        "oafish",
+        "offensive",
+        "outlandish",
+        "ponderous",
+        "provincial",
+        "raffish",
+        "robustious",
+        "roughneck",
+        "rowdy",
+        "rowdyish",
+        "rube",
+        "rude",
+        "ruffianly",
+        "rugged",
+        "rustic",
+        "sloppy",
+        "stiff",
+        "tactless",
+        "tasteless",
+        "uncivil",
+        "uncivilized",
+        "uncouth",
+        "uncultivated",
+        "uncultured",
+        "unfeminine",
+        "ungainly",
+        "ungenteel",
+        "ungentle",
+        "ungentlemanly",
+        "ungraceful",
+        "ungracious",
+        "unhandy",
+        "unladylike",
+        "unpoised",
+        "unpolished",
+        "unrefined",
+        "unsolicitous",
+        "unwieldy",
+        "up-country",
+        "vulgar",
+        "yokel",
+        "yokelish"
       ]
     },
     "boort": {
@@ -3266,7 +3397,7 @@
       ],
       "relatedWords": []
     },
-    "bootesbooetes": {
+    "bootes": {
       "word": "BOOTES; BOOETES",
       "definitions": [
         {
@@ -3357,6 +3488,10 @@
         {
           "text": "See Bothy.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A wooden hut or humble cot, esp. a rude hut or barrack for unmarried farm servants; a shepherd's or hunter's hut; a booth. [Scot.]",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -3407,7 +3542,7 @@
       "word": "BOOTLESS",
       "definitions": [
         {
-          "text": "Unavailing; unprofitable; useless; without advantage or success. Chaucer.",
+          "text": "Unavailing; unprofitable; useless; without advantage or success. Chaucer. I'll follow him no more with bootless prayers. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3471,6 +3606,16 @@
       "definitions": [
         {
           "text": "A toady. [Low, U. S.] Bartlett.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bootmaker": {
+      "word": "BOOTMAKER",
+      "definitions": [
+        {
+          "text": "One who makes boots.",
           "partOfSpeech": "noun"
         }
       ],

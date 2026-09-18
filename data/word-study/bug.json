@@ -425,7 +425,7 @@
         "zealot"
       ]
     },
-    "bugaboobugbear": {
+    "bugaboo": {
       "word": "BUGABOO; BUGBEAR",
       "definitions": [
         {
@@ -446,8 +446,12 @@
       "relatedWords": []
     },
     "bugbear": {
-      "word": "BUGBEAR",
+      "word": "BUGABOO; BUGBEAR",
       "definitions": [
+        {
+          "text": "Something frightful, as a specter; anything imaginary that causes needless fright; something used to excite needless fear; also, something really dangerous, used to frighten children, etc. \"Bugaboos to fright ye.\" Lloyd. But, to the world no bugbear is so great As want of figure and a small estate. Pope. The bugaboo of the liberals is the church pray. S. B. Griffin. The great bugaboo of the birds is the owl. J. Burroughs.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Bugaboo.",
           "partOfSpeech": "noun"

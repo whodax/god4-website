@@ -9,6 +9,10 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "See Peak, n., 3.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "(Bot.)",
           "partOfSpeech": "noun"
         },
@@ -47,6 +51,10 @@
       "word": "PEACE",
       "definitions": [
         {
+          "text": "A state of quiet or tranquillity; freedom from disturbance or agitation; calm; repose; specifically: (a) Exemption from, or cessation of, war with public enemies. (b) Public quiet, order, and contentment in obedience to law. (c) Exemption from, or subjection of, agitating passions; tranquillity of mind or conscience. (d) Reconciliation; agreement after variance; harmony; concord. \"The eternal love and pees.\" Chaucer. silence, quiet, or order. \"Peace! foolish woman.\" Shak. At peace, in a state of peace. as denoting a state of peace and good conduct. (b) (Theol.) The peace of heart which is the gift of God. in token of devout homage and of a sense of friendly communion with Him. (b) A gift or service offered as satisfaction to an offended person. public peace, to prevent riots, etc., as a sheriff or constable. cause with, or to become reconciled with, another. \"I will make your peace with him.\" Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To make or become quiet; to be silent; to stop. [R.] \"Peace your tattlings.\" Shak. When the thunder would not peace at my bidding. Shak.",
           "partOfSpeech": "verb"
         }
@@ -57,8 +65,18 @@
       "word": "PEACEABLE",
       "definitions": [
         {
-          "text": "Begin in or at peace; tranquil; quiet; free from, or not",
+          "text": "Begin in or at peace; tranquil; quiet; free from, or not disposed to, war, disorder, or excitement; not quarrelsome. still. individual, nation, etc., in reference to external hostility, attack, etc.; peaceful, in respect to internal disturbance. The former denotes \"in the spirit of peace;\" latter; \"in the possession or enjoyment of peace.\" A peaceable adjustment of difficulties; a peaceful life, scene.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "peacebreaker": {
+      "word": "PEACEBREAKER",
+      "definitions": [
+        {
+          "text": "One who disturbs the public peace.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -83,6 +101,16 @@
         {
           "text": "Without peace; disturbed. Sandys.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "peacemaker": {
+      "word": "PEACEMAKER",
+      "definitions": [
+        {
+          "text": "One who makes peace by reconciling parties that are at variance. Matt. v. 9. --Peace\"mak`ing, n.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -581,7 +609,7 @@
       ],
       "relatedWords": []
     },
-    "pearlinspearlings": {
+    "pearlings": {
       "word": "PEARLINS; PEARLINGS",
       "definitions": [
         {
@@ -591,7 +619,27 @@
       ],
       "relatedWords": []
     },
-    "pearlitepearlstone": {
+    "pearlins": {
+      "word": "PEARLINS; PEARLINGS",
+      "definitions": [
+        {
+          "text": "A kind of lace of silk or thread. [Scot.] Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pearlite": {
+      "word": "PEARLITE; PEARLSTONE",
+      "definitions": [
+        {
+          "text": "A glassy volcanic rock of a grayish color and pearly luster, often having a spherulitic concretionary structure due to the curved cracks produced by contraction in cooling. See Illust. under Perlitic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pearlstone": {
       "word": "PEARLITE; PEARLSTONE",
       "definitions": [
         {
@@ -761,7 +809,17 @@
       ],
       "relatedWords": []
     },
-    "peaveypeavy": {
+    "peavey": {
+      "word": "PEAVEY; PEAVY",
+      "definitions": [
+        {
+          "text": "A cant hook having the end of its lever armed with a spike.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "peavy": {
       "word": "PEAVEY; PEAVY",
       "definitions": [
         {

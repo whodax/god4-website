@@ -121,6 +121,16 @@
       ],
       "relatedWords": []
     },
+    "steak": {
+      "word": "STEAK",
+      "definitions": [
+        {
+          "text": "A slice of beef, broiled, or cut for broiling; -- also extended to the meat of other large animals; as, venison steak; bear steak; pork steak; turtle steak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "steal": {
       "word": "STEAL",
       "definitions": [
@@ -579,7 +589,27 @@
       ],
       "relatedWords": []
     },
-    "stedstedfaststedfastly": {
+    "sted": {
+      "word": "STED; STEDFAST; STEDFASTLY",
+      "definitions": [
+        {
+          "text": "See Stead, Steadfast, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stedfast": {
+      "word": "STED; STEDFAST; STEDFASTLY",
+      "definitions": [
+        {
+          "text": "See Stead, Steadfast, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stedfastly": {
       "word": "STED; STEDFAST; STEDFASTLY",
       "definitions": [
         {
@@ -619,7 +649,7 @@
       ],
       "relatedWords": []
     },
-    "steeksteik": {
+    "steek": {
       "word": "STEEK; STEIK",
       "definitions": [
         {
@@ -703,16 +733,6 @@
       ],
       "relatedWords": []
     },
-    "steelgstielcflstilusstakestalkstemgrstallstalk": {
-      "word": "steel, G. stiel; cf. L. stilus stake, stalk, stem, Gr. stall, stalk,",
-      "definitions": [
-        {
-          "text": "The stock or handle of anything; as, the stale of a rake. [Written also steal, stele, etc.] But seeling the arrow's stale without, and that the head did go No further than it might be seen. Chapman.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "steelhead": {
       "word": "STEELHEAD",
       "definitions": [
@@ -740,6 +760,16 @@
       "definitions": [
         {
           "text": "The quality of being steely.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "steeling": {
+      "word": "STEELING",
+      "definitions": [
+        {
+          "text": "The process of pointing, edging, or overlaying with steel; specifically, acierage. See Steel, v.",
           "partOfSpeech": "noun"
         }
       ],
@@ -778,6 +808,14 @@
         },
         {
           "text": "See 1st and 2nd Stem. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To gleam. [Obs.] His head bald, that shone as any glass, . . . [And] stemed as a furnace of a leed [caldron]. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A gleam of light; flame. [Obs.]",
           "partOfSpeech": "noun"
         }
       ],
@@ -821,7 +859,7 @@
       ],
       "relatedWords": []
     },
-    "steenkirksteinkirk": {
+    "steenkirk": {
       "word": "STEENKIRK; STEINKIRK",
       "definitions": [
         {
@@ -853,6 +891,18 @@
         {
           "text": "A rennet bag. [Prov. Eng.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Making a large angle with the plane of the horizon; ascending or descending rapidly with respect to a horizontal line or a level; precipitous; as, a steep hill or mountain; a steep roof; a steep ascent; a steep declivity; a steep barometric gradient.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Difficult of access; not easy reached; lofty; elevated; high.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Excessive; as, a steep price. [Slang]",
+          "partOfSpeech": "adjective"
         },
         {
           "text": "A precipitous place, hill, mountain, rock, or ascent; any elevated object sloping with a large angle to the plane of the horizon; a precipice. Dryden. We had on each side naked rocks and mountains broken into a thousand irregular steeps and precipices. Addison. Bare steeps, where desolation stalks. Wordsworth.",
@@ -1011,6 +1061,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To direct the course of; to guide; to govern; -- applied especially to a vessel in the water. That with a staff his feeble steps did steer. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To direct a vessel in its course; to direct one's course. \"No helmsman steers.\" Tennyson.",
           "partOfSpeech": "verb"
         },
@@ -1131,32 +1185,6 @@
         {
           "text": "One who steers; steersman. [Obs.] Milton.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "steertdstaartgsterzicelstertrdanstiertswstjert": {
-      "word": "steert, D. staart, G. sterz, Icel. stertr, Dan. stiert, Sw. stjert.",
-      "definitions": [
-        {
-          "text": "A tail, or anything projecting like a tail.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The handle, or tail, of a plow; also, any long handle. [Prov. Eng.]",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The curved or inclined front and bottom of a water-wheel bucket.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Mining)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The arm, or level, of a gin, drawn around by a horse.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1326,8 +1354,12 @@
       "relatedWords": []
     },
     "steik": {
-      "word": "STEIK",
+      "word": "STEEK; STEIK",
       "definitions": [
+        {
+          "text": "To pierce with a sharp instrument; hence, to stitch; to sew; also, to fix; to fasten. [Scot.]",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "See Steek. [Scot.]",
           "partOfSpeech": "verb"
@@ -1366,8 +1398,12 @@
       "relatedWords": []
     },
     "steinkirk": {
-      "word": "STEINKIRK",
+      "word": "STEENKIRK; STEINKIRK",
       "definitions": [
+        {
+          "text": "A kind of neckcloth worn in a loose and disorderly fashion.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Steenkirk.",
           "partOfSpeech": "noun"
@@ -1437,7 +1473,7 @@
       ],
       "relatedWords": []
     },
-    "stellarstellary": {
+    "stellar": {
       "word": "STELLAR; STELLARY",
       "definitions": [
         {
@@ -1451,7 +1487,39 @@
       ],
       "relatedWords": []
     },
-    "stellatestellated": {
+    "stellary": {
+      "word": "STELLAR; STELLARY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to stars; astral; as, a stellar figure; stellary orbs. [These soft fires] in part shed down Their stellar virtue. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Full of stars; starry; as, stellar regions.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stellate": {
+      "word": "STELLATE; STELLATED",
+      "definitions": [
+        {
+          "text": "Resembling a star; pointed or radiated, like the emblem of a star.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Starlike; having similar parts radiating from a common center; as, stellate flowers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stellated": {
       "word": "STELLATE; STELLATED",
       "definitions": [
         {
@@ -1489,44 +1557,6 @@
       ],
       "relatedWords": []
     },
-    "stellentoplacegrstandstandandcfapostleepistle": {
-      "word": "stellen to place, Gr. stand. Stand, and cf. Apostle, Epistle,",
-      "definitions": [
-        {
-          "text": "A stand; a station; a fixed spot; hence, the stand or place where a horse or an ox kept and fed; the division of a stable, or the compartment, for one horse, ox, or other animal. \"In an oxes stall.\" Chaucer.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A stable; a place for cattle. At last he found a stall where oxen stood. Dryden.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A small apartment or shed in which merchandise is exposed for sale; as, a butcher's stall; a bookstall.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A bench or table on which small articles of merchandise are exposed for sale. How peddlers' stalls with glittering toys are laid. Gay.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A seat in the choir of a church, for one of the officiating clergy. It is inclosed, either wholly or partially, at the back and sides. The stalls are frequently very rich, with canopies and elaborate carving. The dignifird clergy, out of humanility, have called their thrones by the names of stalls. Bp. Warburton. Loud the monks in their stalls. Longfellow.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "In the theater, a seat with arms or otherwise partly inclosed, as distinguished from the benches, sofas, etc.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Mining)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The space left by excavation between pillars. See Post and stall, under Post. Stall reader, one who reads books at a stall where they are exposed for sale. Cries the stall reader, \"Bless us! what a word on A titlepage is this!\" Milton.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "steller": {
       "word": "STELLER",
       "definitions": [
@@ -1557,7 +1587,17 @@
       ],
       "relatedWords": []
     },
-    "stelleridanstelleridean": {
+    "stelleridan": {
+      "word": "STELLERIDAN; STELLERIDEAN",
+      "definitions": [
+        {
+          "text": "A starfish, or brittle star.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stelleridean": {
       "word": "STELLERIDAN; STELLERIDEAN",
       "definitions": [
         {
@@ -1662,8 +1702,16 @@
       "relatedWords": []
     },
     "stem": {
-      "word": "STEM",
+      "word": "STEM; STEEM",
       "definitions": [
+        {
+          "text": "To gleam. [Obs.] His head bald, that shone as any glass, . . . [And] stemed as a furnace of a leed [caldron]. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A gleam of light; flame. [Obs.]",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "The principal body of a tree, shrub, or plant, of any kind; the main stock; the part which supports the branches or the head or top. After they are shot up thirty feet in length, they spread a very large top, having no bough nor twig in the trunk or the stem. Sir W. Raleigh. The lowering spring, with lavish rain, Beats down the slender stem and breaded grain. Dryden.",
           "partOfSpeech": "noun"
@@ -1823,20 +1871,6 @@
       ],
       "relatedWords": []
     },
-    "stemsteem": {
-      "word": "STEM; STEEM",
-      "definitions": [
-        {
-          "text": "To gleam. [Obs.] His head bald, that shone as any glass, . . . [And] stemed as a furnace of a leed [caldron]. Chaucer.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A gleam of light; flame. [Obs.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "stemwinder": {
       "word": "STEM-WINDER",
       "definitions": [
@@ -1957,7 +1991,17 @@
       ],
       "relatedWords": []
     },
-    "stenographicstenographical": {
+    "stenographic": {
+      "word": "STENOGRAPHIC; STENOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to stenography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stenographical": {
       "word": "STENOGRAPHIC; STENOGRAPHICAL",
       "definitions": [
         {
@@ -2124,6 +2168,22 @@
     "step": {
       "word": "STEP",
       "definitions": [
+        {
+          "text": "To move the foot in walking; to advance or recede by raising and moving one of the feet to another resting place, or by moving both feet in succession.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To walk; to go on foot; esp., to walk a little distance; as, to step to one of the neighbors.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To walk slowly, gravely, or resolutely. Home the swain retreats, His flock before him stepping to the fold. Thomson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Fig.: To move mentally; to go in imagination. They are stepping almost three thousand years back into the remotest antiquity. Pope. To step aside, to walk a little distance from the rest; to retire from company. or to advance suddenly in. Whosoever then first, after the troubling of the water, stepped in, was made whole of whatsoever disease he had. John v. 4. (b) To enter for a short time; as, I just stepped into the house. (c) To obtain possession without trouble; to enter upon easily or suddenly; as, to step into an estate. rapidity, of the step, extending it to thirty-tree inches. (b) To go out for a short distance or a short time. step according to the established rules.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To set, as the foot.",
           "partOfSpeech": "verb"
@@ -2332,28 +2392,6 @@
       "definitions": [
         {
           "text": "The wife of one's father by a subsequent marriage.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "stepohgstepfentostepgstapfeafootstepohgstapfog": {
-      "word": "step, OHG. stepfen to step, G. stapfe a footstep, OHG. stapfo, G.",
-      "definitions": [
-        {
-          "text": "To move the foot in walking; to advance or recede by raising and moving one of the feet to another resting place, or by moving both feet in succession.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To walk; to go on foot; esp., to walk a little distance; as, to step to one of the neighbors.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To walk slowly, gravely, or resolutely. Home the swain retreats, His flock before him stepping to the fold. Thomson.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Fig.: To move mentally; to go in imagination. They are stepping almost three thousand years back into the remotest antiquity. Pope. To step aside, to walk a little distance from the rest; to retire from company. or to advance suddenly in. Whosoever then first, after the troubling of the water, stepped in, was made whole of whatsoever disease he had. John v. 4. (b) To enter for a short time; as, I just stepped into the house. (c) To obtain possession without trouble; to enter upon easily or suddenly; as, to step into an estate. rapidity, of the step, extending it to thirty-tree inches. (b) To go out for a short distance or a short time. step according to the established rules.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2639,7 +2677,17 @@
       ],
       "relatedWords": []
     },
-    "stereochemicstereochemical": {
+    "stereochemic": {
+      "word": "STEREO-CHEMIC; STEREO-CHEMICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or illustrating, the hypothetical space relations of atoms in the molecule; as, a stereo-chemic formula.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stereochemical": {
       "word": "STEREO-CHEMIC; STEREO-CHEMICAL",
       "definitions": [
         {
@@ -2673,7 +2721,7 @@
       "word": "STEREOCHROMIC",
       "definitions": [
         {
-          "text": "Pertaining to the art of stereochromy; produced by",
+          "text": "Pertaining to the art of stereochromy; produced by stereochromy.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2719,22 +2767,32 @@
       ],
       "relatedWords": []
     },
+    "stereographic": {
+      "word": "STEREOGRAPHIC; STEREOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Made or done according to the rules of stereography; delineated on a plane; as, a stereographic chart of the earth. Stereographic projection (Geom.), a method of representing the sphere in which the center of projection is taken in the surface of the sphere, and the plane upon which the projection is made is at right andles to the diameter passing through the center of projection.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stereographical": {
+      "word": "STEREOGRAPHIC; STEREOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Made or done according to the rules of stereography; delineated on a plane; as, a stereographic chart of the earth. Stereographic projection (Geom.), a method of representing the sphere in which the center of projection is taken in the surface of the sphere, and the plane upon which the projection is made is at right andles to the diameter passing through the center of projection.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "stereographically": {
       "word": "STEREOGRAPHICALLY",
       "definitions": [
         {
           "text": "In a stereographical manner; by delineation on a plane.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "stereographicstereographical": {
-      "word": "STEREOGRAPHIC; STEREOGRAPHICAL",
-      "definitions": [
-        {
-          "text": "Made or done according to the rules of stereography; delineated on a plane; as, a stereographic chart of the earth. Stereographic projection (Geom.), a method of representing the sphere in which the center of projection is taken in the surface of the sphere, and the plane upon which the projection is made is at right andles to the diameter passing through the center of projection.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2763,11 +2821,21 @@
       ],
       "relatedWords": []
     },
-    "stereometricstereometrical": {
+    "stereometric": {
       "word": "STEREOMETRIC; STEREOMETRICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to stereometry; performed or obtained by",
+          "text": "Of or pertaining to stereometry; performed or obtained by stereometry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stereometrical": {
+      "word": "STEREOMETRIC; STEREOMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to stereometry; performed or obtained by stereometry.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2823,11 +2891,21 @@
       ],
       "relatedWords": []
     },
-    "stereoscopicstereoscopical": {
+    "stereoscopic": {
       "word": "STEREOSCOPIC; STEREOSCOPICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to the stereoscope; characteristic of, or adapted to, the stereoscope; as, a stereoscopic effect; the",
+          "text": "Of or pertaining to the stereoscope; characteristic of, or adapted to, the stereoscope; as, a stereoscopic effect; the stereoscopic function of the eyeglasses; stereoscopic views.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stereoscopical": {
+      "word": "STEREOSCOPIC; STEREOSCOPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the stereoscope; characteristic of, or adapted to, the stereoscope; as, a stereoscopic effect; the stereoscopic function of the eyeglasses; stereoscopic views.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2863,7 +2941,17 @@
       ],
       "relatedWords": []
     },
-    "stereotomicstereotomical": {
+    "stereotomic": {
+      "word": "STEREOTOMIC; STEREOTOMICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to stereotomy; performed by stereotomy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stereotomical": {
       "word": "STEREOTOMIC; STEREOTOMICAL",
       "definitions": [
         {
@@ -3145,7 +3233,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Being in the stern, or being astern; as, the stern davits.",
+          "text": "Being in the stern, or being astern; as, the stern davits. Stern board (Naut.), a going or falling astern; a loss of way in making a tack; as, to make a stern board. See Board, n., 8 (b). backward, and intended to annoy a ship that is in pursuit. other vessel, as to a wharf or buoy. ship. the stern and the aftmost seat of the rowers, -- usually furnished with seats for passengers. steamboat which it propels.stern wheeler.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3161,11 +3249,31 @@
       ],
       "relatedWords": []
     },
+    "sternal": {
+      "word": "STERNAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the sternum; in the region of the sternum. Sternal ribs. See the Note under Rib, n., 1.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "sternbergite": {
       "word": "STERNBERGITE",
       "definitions": [
         {
           "text": "A sulphide of silver and iron, occurring in soft flexible laminæ varying in color from brown to black.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sternebra": {
+      "word": "STERNEBRA",
+      "definitions": [
+        {
+          "text": "One of the segments of the sternum.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3565,11 +3673,21 @@
       ],
       "relatedWords": []
     },
-    "stethoscopicstethoscopical": {
+    "stethoscopic": {
       "word": "STETHOSCOPIC; STETHOSCOPICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a stethoscope; obtained or made by means of",
+          "text": "Of or pertaining to a stethoscope; obtained or made by means of a stethoscope.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "stethoscopical": {
+      "word": "STETHOSCOPIC; STETHOSCOPICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a stethoscope; obtained or made by means of a stethoscope.",
           "partOfSpeech": "adjective"
         }
       ],

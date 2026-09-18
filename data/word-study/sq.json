@@ -383,7 +383,17 @@
       ],
       "relatedWords": []
     },
-    "squamatesquamated": {
+    "squamate": {
+      "word": "SQUAMATE; SQUAMATED",
+      "definitions": [
+        {
+          "text": "Same as Squamose.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "squamated": {
       "word": "SQUAMATE; SQUAMATED",
       "definitions": [
         {
@@ -491,7 +501,25 @@
       ],
       "relatedWords": []
     },
-    "squamosesquamous": {
+    "squamose": {
+      "word": "SQUAMOSE; SQUAMOUS",
+      "definitions": [
+        {
+          "text": "Covered with, or consisting of, scales; resembling a scale; scaly; as, the squamose cones of the pine; squamous epithelial cells; the squamous portion of the temporal bone, which is so called from a fancied resemblance to a scale.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Of or pertaining to the squamosal bone; squamosal.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "squamous": {
       "word": "SQUAMOSE; SQUAMOUS",
       "definitions": [
         {
@@ -713,7 +741,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "At right angles with the mast or the keel, and parallel to the horizon; -- said of the yards of a square-rigged vessel when they are so braced. combination, as in square-built, square-cornered, square-cut, square- nosed, etc. Square foot, an area equal to that of a square the sides of which are twelwe inches; 144 square inches. parallel to each other; a reef knot. See Illust. under Knot. depends on the length and breadth taken conjointly. The units of square measure are squares whose sides are the linear measures; as,",
+          "text": "At right angles with the mast or the keel, and parallel to the horizon; -- said of the yards of a square-rigged vessel when they are so braced. combination, as in square-built, square-cornered, square-cut, square- nosed, etc. Square foot, an area equal to that of a square the sides of which are twelwe inches; 144 square inches. parallel to each other; a reef knot. See Illust. under Knot. depends on the length and breadth taken conjointly. The units of square measure are squares whose sides are the linear measures; as, square inches, square feet, square meters, etc. quantity which, multiplied by itself produces the given number or quantity. suspended by the middle; sometimes, the foresail of a schooner set upon a yard; also, a cutter's or sloop's sail boomed out. See Illust of Sail. counter timbers at an angle, as distinguished from a round stern, which has no transom. sides; as, a three-square file.",
           "partOfSpeech": "adjective"
         },
         {
@@ -903,6 +931,10 @@
         {
           "text": "A plant and its fruit of the genus Cucurbita, or gourd kind. Cucurbita verrucosa, the Barbary or China squash, C. moschata, and the great winter squash, C. maxima, but the distinctions are not clear. Squash beetle (Zoöl.), a small American beetle (Diabrotica, or Galeruca vittata) which is often abundant and very injurious to the leaves of squash, cucumber, etc. It is striped with yellow and black. The name is applied also to other allied species. (Coreus, or Anasa, tristis) injurious to squash vines.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To beat or press into pulp or a flat mass; to crush.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "Something soft and easily crushed; especially, an unripe pod of pease. Not yet old enough for a man, nor young enough for a boy; as a squash is before 't is a peascod. Shak.",
@@ -1317,6 +1349,14 @@
         {
           "text": "pl.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is forced out by pressure; dregs.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Squeeze, n., 2.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1348,6 +1388,30 @@
     "squib": {
       "word": "SQUIB",
       "definitions": [
+        {
+          "text": "A little pipe, or hollow cylinder of paper, filled with powder or combustible matter, to be thrown into the air while burning, so as to burst there with a crack. Lampoons, like squibs, may make a present blaze. Waller. The making and selling of fireworks, and squibs . . . is punishable. Blackstone.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of slow match or safety fuse.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sarcastic speech or publication; a petty lampoon; a brief, witty essay. Who copied his squibs, and reëchoed his jokes. Goldsmith.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A writer of lampoons. [Obs.] The squibs are those who in the common phrase of the world are called libelers, lampooners, and pamphleteers. Tatler.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A paltry fellow. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To throw squibs; to utter sarcatic or severe reflections; to contend in petty dispute; as, to squib a little debate. [Colloq.]",
           "partOfSpeech": "verb"
@@ -1383,7 +1447,17 @@
       ],
       "relatedWords": []
     },
-    "squieriesquiery": {
+    "squierie": {
+      "word": "SQUIERIE; SQUIERY",
+      "definitions": [
+        {
+          "text": "A company of squires; the whole body of squires. modern editions.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "squiery": {
       "word": "SQUIERIE; SQUIERY",
       "definitions": [
         {
@@ -1461,7 +1535,29 @@
       ],
       "relatedWords": []
     },
-    "squinancesquinancy": {
+    "squinance": {
+      "word": "SQUINANCE; SQUINANCY",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The quinsy. See Quinsy. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A European perennial herb (Asperula cynanchica) with narrowly linear whorled leaves; -- formerly thought to cure the quinsy. Also called quincewort. Squinancy berries, black currants; -- so called because used to cure the quinsy. Dr. Prior.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "squinancy": {
       "word": "SQUINANCE; SQUINANCY",
       "definitions": [
         {
@@ -1605,6 +1701,16 @@
       ],
       "relatedWords": []
     },
+    "squinting": {
+      "word": "SQUINTING",
+      "definitions": [
+        {
+          "text": "a. & n. from Squint, v.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "squiny": {
       "word": "SQUINY",
       "definitions": [
@@ -1625,11 +1731,25 @@
       ],
       "relatedWords": []
     },
-    "squirsquirr": {
+    "squir": {
       "word": "SQUIR; SQUIRR",
       "definitions": [
         {
           "text": "To throw with a jerk; to throw edge foremost. [Obs.] [Written also squirr.] Addison.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "squirr": {
+      "word": "SQUIR; SQUIRR",
+      "definitions": [
+        {
+          "text": "To throw with a jerk; to throw edge foremost. [Obs.] [Written also squirr.] Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Squir.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1640,6 +1760,16 @@
       "definitions": [
         {
           "text": "Same as Squirarchy. That such weight and influence be put thereby into the hands of the squiralty of my kingdom. Sterne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "squirarch": {
+      "word": "SQUIRARCH",
+      "definitions": [
+        {
+          "text": "One who belongs to the squirarchy.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1744,16 +1874,6 @@
       "definitions": [
         {
           "text": "To twist about briskly with contor",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "squirr": {
-      "word": "SQUIRR",
-      "definitions": [
-        {
-          "text": "See Squir.",
           "partOfSpeech": "verb"
         }
       ],

@@ -174,8 +174,12 @@
       "relatedWords": []
     },
     "cosmetic": {
-      "word": "COSMETIC",
+      "word": "COSMETIC; COSMETICAL",
       "definitions": [
+        {
+          "text": "Imparting or improving beauty, particularly the beauty of the complexion; as, a cosmetical preparation. First, robed in white, the nymph intent adores, With head uncovered, the cosmetic powers. Pope.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Any external application intended to beautify and improve the complexion.",
           "partOfSpeech": "noun"
@@ -183,7 +187,7 @@
       ],
       "relatedWords": []
     },
-    "cosmeticcosmetical": {
+    "cosmetical": {
       "word": "COSMETIC; COSMETICAL",
       "definitions": [
         {
@@ -193,21 +197,7 @@
       ],
       "relatedWords": []
     },
-    "cosmically": {
-      "word": "COSMICALLY",
-      "definitions": [
-        {
-          "text": "With the sun at rising or setting; as, a star is said to rise or set cosmically when it rises or sets with the sun.",
-          "partOfSpeech": "adverb"
-        },
-        {
-          "text": "Universally. [R.] Emerson.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "cosmiccosmical": {
+    "cosmic": {
       "word": "COSMIC; COSMICAL",
       "definitions": [
         {
@@ -231,9 +221,150 @@
           "partOfSpeech": "adjective"
         }
       ],
+      "relatedWords": [
+        "Gargantuan",
+        "amplitudinous",
+        "astronomical",
+        "awesome",
+        "boundless",
+        "bulky",
+        "colossal",
+        "cosmogonal",
+        "cosmogonic",
+        "cosmologic",
+        "enormous",
+        "extensive",
+        "galactic",
+        "gigantic",
+        "huge",
+        "immeasurable",
+        "immense",
+        "infinite",
+        "king-size",
+        "large",
+        "mammoth",
+        "massive",
+        "massy",
+        "monster",
+        "monstrous",
+        "monumental",
+        "mountainous",
+        "outsize",
+        "overgrown",
+        "prodigious",
+        "sizable",
+        "spacious",
+        "stupendous",
+        "titanic",
+        "tremendous",
+        "universal",
+        "vast",
+        "voluminous",
+        "weighty"
+      ]
+    },
+    "cosmical": {
+      "word": "COSMIC; COSMICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the universe, and having special reference to universal law or order, or to the one grand harmonious system of things; hence; harmonious; orderly.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to the solar system as a whole, and not to the earth alone.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Characteristic of the cosmos or universe; inconceivably great; vast; as, cosmic speed. \"Cosmic ranges of time.\" Tyndall.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Astron.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Rising or setting with the sun; -- the opposite of acronycal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Gargantuan",
+        "amplitudinous",
+        "astronomical",
+        "awesome",
+        "boundless",
+        "bulky",
+        "colossal",
+        "cosmic",
+        "cosmogonal",
+        "cosmogonic",
+        "cosmologic",
+        "enormous",
+        "extensive",
+        "galactic",
+        "gigantic",
+        "huge",
+        "immeasurable",
+        "immense",
+        "infinite",
+        "king-size",
+        "large",
+        "mammoth",
+        "massive",
+        "massy",
+        "monster",
+        "monstrous",
+        "monumental",
+        "mountainous",
+        "outsize",
+        "overgrown",
+        "prodigious",
+        "sizable",
+        "spacious",
+        "stupendous",
+        "titanic",
+        "tremendous",
+        "universal",
+        "vast",
+        "voluminous",
+        "weighty"
+      ]
+    },
+    "cosmically": {
+      "word": "COSMICALLY",
+      "definitions": [
+        {
+          "text": "With the sun at rising or setting; as, a star is said to rise or set cosmically when it rises or sets with the sun.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Universally. [R.] Emerson.",
+          "partOfSpeech": "adverb"
+        }
+      ],
       "relatedWords": []
     },
-    "cosmogonalcosmogoniccosmogonical": {
+    "cosmogonal": {
+      "word": "COSMOGONAL; COSMOGONIC; COSMOGONICAL",
+      "definitions": [
+        {
+          "text": "Belonging to cosmogony. B. Powell. Gladstone.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cosmogonic": {
+      "word": "COSMOGONAL; COSMOGONIC; COSMOGONICAL",
+      "definitions": [
+        {
+          "text": "Belonging to cosmogony. B. Powell. Gladstone.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "cosmogonical": {
       "word": "COSMOGONAL; COSMOGONIC; COSMOGONICAL",
       "definitions": [
         {
@@ -273,22 +404,32 @@
       ],
       "relatedWords": []
     },
+    "cosmographic": {
+      "word": "COSMOGRAPHIC; COSMOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to cosmography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cosmographical": {
+      "word": "COSMOGRAPHIC; COSMOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to cosmography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "cosmographically": {
       "word": "COSMOGRAPHICALLY",
       "definitions": [
         {
           "text": "In a cosmographic manner; in accordance with cosmography.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "cosmographiccosmographical": {
-      "word": "COSMOGRAPHIC; COSMOGRAPHICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to cosmography.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -423,7 +564,7 @@
       ],
       "relatedWords": []
     },
-    "cosmopolitancosmopolite": {
+    "cosmopolitan": {
       "word": "COSMOPOLITAN; COSMOPOLITE",
       "definitions": [
         {
@@ -439,7 +580,127 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "all-comprehending",
+        "all-comprehensive",
+        "all-covering",
+        "all-embracing",
+        "all-encompassing",
+        "all-filling",
+        "all-including",
+        "all-inclusive",
+        "all-pervading",
+        "allover",
+        "blase",
+        "braw",
+        "broad",
+        "broad-gauged",
+        "broad-minded",
+        "catholic",
+        "chic",
+        "citizen",
+        "citizen by adoption",
+        "city slicker",
+        "civic",
+        "civil",
+        "classy",
+        "clothes-conscious",
+        "common",
+        "communal",
+        "cosmopolite",
+        "country-wide",
+        "dapper",
+        "dashing",
+        "dressed to advantage",
+        "dressed to kill",
+        "ecumenic",
+        "ecumenical",
+        "ecumenistic",
+        "elegant",
+        "experienced",
+        "exquisite",
+        "galactic",
+        "general",
+        "genteel",
+        "hyphenate",
+        "hyphenated American",
+        "immigrant",
+        "international",
+        "jaunty",
+        "knowing",
+        "man of experience",
+        "man-about-town",
+        "mature",
+        "matured",
+        "metic",
+        "national",
+        "natty",
+        "naturalized citizen",
+        "neat",
+        "nifty",
+        "nobby",
+        "nondenominational",
+        "noninsular",
+        "nonnative citizen",
+        "nonsectarian",
+        "not born yesterday",
+        "old",
+        "planetary",
+        "posh",
+        "practiced",
+        "public",
+        "recherche",
+        "ripe",
+        "ripened",
+        "ritzy",
+        "sagacious",
+        "seasoned",
+        "sharp",
+        "sleek",
+        "slicker",
+        "smart",
+        "smug",
+        "snazzy",
+        "social",
+        "societal",
+        "soigne",
+        "soignee",
+        "sophisticate",
+        "sophisticated",
+        "spacious of mind",
+        "spiffy",
+        "spruce",
+        "state",
+        "style-conscious",
+        "subject",
+        "supranational",
+        "swank",
+        "swanky",
+        "swell",
+        "total",
+        "traveled",
+        "tricksy",
+        "tried",
+        "tried and true",
+        "trig",
+        "trim",
+        "unbigoted",
+        "unfanatical",
+        "unhidebound",
+        "universal",
+        "unparochial",
+        "unprovincial",
+        "veteran",
+        "well-dressed",
+        "well-groomed",
+        "well-traveled",
+        "wide",
+        "wide-minded",
+        "world-wide",
+        "world-wise",
+        "worldly",
+        "worldly-wise"
+      ]
     },
     "cosmopolitanism": {
       "word": "COSMOPOLITANISM",
@@ -452,8 +713,20 @@
       "relatedWords": []
     },
     "cosmopolite": {
-      "word": "COSMOPOLITE",
+      "word": "COSMOPOLITAN; COSMOPOLITE",
       "definitions": [
+        {
+          "text": "One who has no fixed residence, or who is at home in every place; a citizen of the world.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Having no fixed residence; at home in any place; free from local attachments or prejudices; not provincial; liberal. In other countries taste is perphaps too exclusively national, in Germany it is certainly too cosmopolite. Sir W. Hamilton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Common everywhere; widely spread; found in all parts of the world. The Cheiroptera are cosmopolitan. R. Owen.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "See Cosmopolitan.",
           "partOfSpeech": "adjective"
@@ -693,7 +966,17 @@
       ],
       "relatedWords": []
     },
-    "cossiccossical": {
+    "cossic": {
+      "word": "COSSIC; COSSICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to algebra; as, cossic numbers, or the cossic art. [Obs.] \"Art of numbers cossical.\" Digges (1579).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cossical": {
       "word": "COSSIC; COSSICAL",
       "definitions": [
         {
@@ -939,7 +1222,17 @@
       ],
       "relatedWords": []
     },
-    "costatecostated": {
+    "costate": {
+      "word": "COSTATE; COSTATED",
+      "definitions": [
+        {
+          "text": "Having ribs, or the appearance of ribs; (Bot.) having one or more longitudinal ribs.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "costated": {
       "word": "COSTATE; COSTATED",
       "definitions": [
         {

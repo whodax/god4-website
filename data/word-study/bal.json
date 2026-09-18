@@ -63,7 +63,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "(Astron.) (a) The constellation Libra. (b) The seventh sign in the Zodiac, called Libra, which the sun",
+          "text": "(Astron.) (a) The constellation Libra. (b) The seventh sign in the Zodiac, called Libra, which the sun enters at the equinox in September.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A movement in dancing. See Balance, v. i., S. Balance electrometer, a kind of balance, with a poised beam, which indicates, by weights suspended from one arm, the mutual attraction of oppositely electrified surfaces. Knight. overbalances the blade, and so keeps it from contact with the table. sovereign states that no one state is in a position to interfere with the independence of the others; international equilibrium; also, the ability ( of a state or a third party within a state) to control the relations between sovereign states or between dominant parties in a state. open accounts of a business, the debit and credit balances footing up equally, if the system of accounts be complete and the balances correctly taken. the movement of the mercurial column changes the indication of the tube. With the aid of electrical or mechanical devices adapted to it, it is used for the automatic regulation of the temperature of rooms warmed artificially, and as a fire alarm. values of the exports and imports of a country; or more commonly, the amount required on one side or the other to make such an equilibrium. fluid pressure tending to seat, and that tending to unseat the valve, are nearly in equilibrium; esp., a puppet valve which is made to operate easily by the admission of steam to both sides. See Puppet valve. Chaucer. and credit sides of an account.",
           "partOfSpeech": "noun"
         },
         {
@@ -107,7 +111,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To contract, as a sail, into a narrower compass; as, to balance",
+          "text": "To contract, as a sail, into a narrower compass; as, to balance the boom mainsail. Balanced valve. See Balance valve, under Balance, n.",
           "partOfSpeech": "verb"
         },
         {
@@ -818,7 +822,17 @@
       ],
       "relatedWords": []
     },
-    "balbutiatebalbucinate": {
+    "balbucinate": {
+      "word": "BALBUTIATE; BALBUCINATE",
+      "definitions": [
+        {
+          "text": "To stammer. [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "balbutiate": {
       "word": "BALBUTIATE; BALBUCINATE",
       "definitions": [
         {
@@ -1311,11 +1325,15 @@
         {
           "text": "The American widgeon (Anas Americana).",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Destitute of hair on the head; baldheaded. Shak.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "baldpatebaldpated": {
+    "baldpated": {
       "word": "BALDPATE; BALDPATED",
       "definitions": [
         {
@@ -1330,6 +1348,16 @@
       "definitions": [
         {
           "text": "A piece of pork cut lower down than the sparerib, and destitute of fat. [Eng.] Southey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "baldric": {
+      "word": "BALDRIC",
+      "definitions": [
+        {
+          "text": "A broad belt, sometimes richly ornamented, worn over one shoulder, across the breast, and under the opposite arm; less properly, any belt. [Also spelt bawdrick.] A radiant baldric o'er his shoulder tied Sustained the sword that glittered at his side. Pope.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1354,6 +1382,10 @@
         },
         {
           "text": "To make up in a bale. Goldsmith.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Bail, v. t., to lade.",
           "partOfSpeech": "verb"
         },
         {
@@ -1763,6 +1795,38 @@
       "word": "BALK",
       "definitions": [
         {
+          "text": "A ridge of land left unplowed between furrows, or at the end of a field; a piece missed by the plow slipping aside. Bad plowmen made balks of such ground. Fuller.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A great beam, rafter, or timber; esp., the tie-beam of a house. The loft above was called \"the balks.\" Tubs hanging in the balks. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of the beams connecting the successive supports of a trestle bridge or bateau bridge.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hindrance or disappointment; a check. A balk to the confidence of the bold undertaker. South.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sudden and obstinate stop; a failure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Baseball)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A deceptive gesture of the pitcher, as if to deliver the ball. Balk line (Billiards), a line across a billiard table near one end, marking a limit within which the cue balls are placed in beginning a game; also, a line around the table, parallel to the sides, used in playing a particular game, called the balk line game.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To leave or make balks in. [Obs.] Gower.",
           "partOfSpeech": "verb"
         },
@@ -2045,6 +2109,10 @@
         {
           "text": "To form or wind into a ball; as, to ball cotton.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A social assembly for the purpose of dancing.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -2311,6 +2379,10 @@
       "word": "BALLAD",
       "definitions": [
         {
+          "text": "A popular kind of narrative poem, adapted for recitation or singing; as, the ballad of Chevy Chase; esp., a sentimental or romantic poem in short stanzas.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To make or sing ballads. [Obs.]",
           "partOfSpeech": "verb"
         },
@@ -2443,16 +2515,6 @@
         "wedding song"
       ]
     },
-    "balladaadancingsongfrballaretodancecfitballatasee2d": {
-      "word": "ballada a dancing song, fr. ballare to dance; cf. It. ballata. See 2d",
-      "definitions": [
-        {
-          "text": "A popular kind of narrative poem, adapted for recitation or singing; as, the ballad of Chevy Chase; esp., a sentimental or romantic poem in short stanzas.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "ballade": {
       "word": "BALLADE",
       "definitions": [
@@ -2564,7 +2626,17 @@
       ],
       "relatedWords": []
     },
-    "ballahooballahou": {
+    "ballahoo": {
+      "word": "BALLAHOO; BALLAHOU",
+      "definitions": [
+        {
+          "text": "A fast-sailing schooner, used in the Bermudas and West Indies.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ballahou": {
       "word": "BALLAHOO; BALLAHOU",
       "definitions": [
         {
@@ -2587,6 +2659,30 @@
     "ballast": {
       "word": "BALLAST",
       "definitions": [
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any heavy substance, as stone, iron, etc., put into the hold to sink a vessel in the water to such a depth as to prevent capsizing.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any heavy matter put into the car of a balloon to give it steadiness.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Gravel, broken stone, etc., laid in the bed of a railroad to make it firm and solid.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The larger solids, as broken stone or gravel, used in making concrete.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fig.: That which gives, or helps to maintain, uprightness, steadiness, and security. It [piety] is the right ballast of prosperity. Barrow. Ballast engine, a steam engine used in excavating and for digging and raising stones and gravel for ballast.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To steady, as a vessel, by putting heavy substances in the hold.",
           "partOfSpeech": "verb"
@@ -4163,7 +4259,17 @@
       ],
       "relatedWords": []
     },
-    "balsamicbalsamical": {
+    "balsamic": {
+      "word": "BALSAMIC; BALSAMICAL",
+      "definitions": [
+        {
+          "text": "Having the qualities of balsam; containing, or resembling, balsam; soft; mitigative; soothing; restorative.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "balsamical": {
       "word": "BALSAMIC; BALSAMICAL",
       "definitions": [
         {
@@ -4223,7 +4329,17 @@
       ],
       "relatedWords": []
     },
-    "baltimorebirdbaltimoreoriole": {
+    "baltimorebird": {
+      "word": "BALTIMORE BIRD; BALTIMORE ORIOLE",
+      "definitions": [
+        {
+          "text": "A common American bird (Icterus galbula), named after Lord Baltimore, because its colors (black and orange red) are like those of his coat of arms; -- called also golden robin.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "baltimoreoriole": {
       "word": "BALTIMORE BIRD; BALTIMORE ORIOLE",
       "definitions": [
         {

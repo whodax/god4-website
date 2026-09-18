@@ -1,7 +1,17 @@
 {
   "version": "v1",
   "entries": {
-    "mascagninmascagnite": {
+    "mascagnin": {
+      "word": "MASCAGNIN; MASCAGNITE",
+      "definitions": [
+        {
+          "text": "Native sulphate of ammonia, found in volcanic districts; -- so named from Mascagni, who discovered it.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mascagnite": {
       "word": "MASCAGNIN; MASCAGNITE",
       "definitions": [
         {
@@ -31,7 +41,17 @@
       ],
       "relatedWords": []
     },
-    "mascotmascotte": {
+    "mascot": {
+      "word": "MASCOT; MASCOTTE",
+      "definitions": [
+        {
+          "text": "A person who is supposed to bring good luck to the household to which he or she belongs; anything that brings good luck.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mascotte": {
       "word": "MASCOT; MASCOTTE",
       "definitions": [
         {
@@ -71,42 +91,8 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having the inflections of, or construed with, words pertaining especially to male beings, as distinguished from feminine and neuter.",
+          "text": "Having the inflections of, or construed with, words pertaining especially to male beings, as distinguished from feminine and neuter. See Gender.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "masculinedimofmasamalepossiblyakintoemancf": {
-      "word": "masculine, dim. of mas a male; possibly akin to E. man. Cf.",
-      "definitions": [
-        {
-          "text": "Of or pertaining to the sex that begets or procreates young, or (in a wider sense) to the sex that produces spermatozoa, by which the ova are fertilized; not female; as, male organs.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Bot.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Capable of producing fertilization, but not of bearing fruit; - - said of stamens and antheridia, and of the plants, or parts of plants, which bear them.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Suitable to the male sex; characteristic or suggestive of a male; masculine; as, male courage.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Consisting of males; as, a male choir.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Mech.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Adapted for entering another corresponding piece (the female piece) which is hollow and which it fits; as, a male gauge, for gauging the size or shape of a hole; a male screw, etc. Male berry (Bot.), a kind of coffee. See Pea berry. used in medicine as an anthelmintic, esp. against the tapeworm. Aspidium marginale in America, and A. athamanticum in South Africa, are used as good substitutes for the male fern in medical practice. See Female fern, under Female. laid, afraid, dismayed. See Female rhyme, under Female. which enter the grooves upon the inside of a corresponding nut or female screw.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -191,7 +177,7 @@
       ],
       "relatedWords": []
     },
-    "mashiemashy": {
+    "mashie": {
       "word": "MASHIE; MASHY",
       "definitions": [
         {
@@ -212,8 +198,12 @@
       "relatedWords": []
     },
     "mashy": {
-      "word": "MASHY",
+      "word": "MASHIE; MASHY",
       "definitions": [
+        {
+          "text": "A golf club like the iron, but with a shorter head, slightly more lofted, used chiefly for short approaches.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Produced by crushing or bruising; resembling, or consisting of, a mash.",
           "partOfSpeech": "adjective"
@@ -461,7 +451,17 @@
       ],
       "relatedWords": []
     },
-    "masoreticmasoretical": {
+    "masoretic": {
+      "word": "MASORETIC; MASORETICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to the Masora, or to its authors. Masoretic points and accents, the vowel points and accents of the Hebrew text of the Bible, of which the first mention is in the Masora.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "masoretical": {
       "word": "MASORETIC; MASORETICAL",
       "definitions": [
         {
@@ -659,7 +659,7 @@
       ],
       "relatedWords": []
     },
-    "massemasseshot": {
+    "masse": {
       "word": "MASSE; MASSE SHOT",
       "definitions": [
         {
@@ -674,6 +674,16 @@
       "definitions": [
         {
           "text": "A priest who celebrates Mass. [R.] Bale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "masseshot": {
+      "word": "MASSE; MASSE SHOT",
+      "definitions": [
+        {
+          "text": "A stroke made with the cue held vertically.",
           "partOfSpeech": "noun"
         }
       ],
@@ -709,7 +719,17 @@
       ],
       "relatedWords": []
     },
-    "masseurmasseuse": {
+    "masseur": {
+      "word": "MASSEUR; MASSEUSE",
+      "definitions": [
+        {
+          "text": "One who performs massage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "masseuse": {
       "word": "MASSEUR; MASSEUSE",
       "definitions": [
         {
@@ -847,7 +867,21 @@
       ],
       "relatedWords": []
     },
-    "mastabamastabah": {
+    "mastaba": {
+      "word": "MASTABA; MASTABAH",
+      "definitions": [
+        {
+          "text": "In Mohammedan countries, a fixed seat, common in dwellings and in public places.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Egyptology) A type of tomb, of the time of the Memphite dynasties, comprising an oblong structure with sloping sides (sometimes containing a decorated chamber, sometimes of solid masonry), and connected with a mummy chamber in the rock beneath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mastabah": {
       "word": "MASTABA; MASTABAH",
       "definitions": [
         {
@@ -907,7 +941,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A person holding an office of authority among the Freemasons, esp. the presiding officer; also, a person holding a similar office in other civic societies. Little masters, certain German engravers of the 16th century, so called from the extreme smallness of their prints. an assistant to the chancellor or judge, by inquiring into various matters referred to him, and reporting thereon to the court.",
+          "text": "A person holding an office of authority among the Freemasons, esp. the presiding officer; also, a person holding a similar office in other civic societies. Little masters, certain German engravers of the 16th century, so called from the extreme smallness of their prints. an assistant to the chancellor or judge, by inquiring into various matters referred to him, and reporting thereon to the court. also, the degree or title itself, indicated by the abbreviation M. A., or A. M. court, having the management of the royal stables, etc. In ceremonial cavalcades he rides next to the sovereign. rolls and patents that pass the great seal, and of the records of the chancery, and acts as assistant judge of the court. Bouvier. Wharton. Freemasons or in a society similarly organized. painters; especially, the celebrated painters of the 16th and 17th centuries. be governed by passion. without dictation from anybody. thoroughly skilled, etc., is often used adjiectively or in compounds; as, master builder or master-builder, master chord or master-chord, master mason or master-mason, master workman or master-workman, master mechanic, master mind, master spirit, master passion, etc. Throughout the city by the master gate. Chaucer. Master joint (Geol.), a quarryman's term for the more prominent and extended joints traversing a rock mass. somewhat from each other; figuratively, a rule or principle of general application in solving difficulties. certified to be competent to command a merchant vessel. horse, and divides it from the bone by a hollow place, where the windgalls are usually seated. consummate action; as, a master stroke of policy. cutting die. part of a performance which exhibits very skillful work or treatment. \"Some master touches of this admirable piece.\" Tatler. person, as in architecture, literature, etc.; also, a work which shows the skill of a master; a masterpiece. or trade, or who is an overseer, foreman, or employer.",
           "partOfSpeech": "noun"
         },
         {
@@ -969,6 +1003,16 @@
         {
           "text": "The state of being a master; hence, disposition to command or hector. C. Bronté.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "masterless": {
+      "word": "MASTERLESS",
+      "definitions": [
+        {
+          "text": "Destitute of a master or owner; ungoverned or ungovernable.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1371,7 +1415,17 @@
       ],
       "relatedWords": []
     },
-    "mastodyniamastodyny": {
+    "mastodynia": {
+      "word": "MASTODYNIA; MASTODYNY",
+      "definitions": [
+        {
+          "text": "Pain occuring in the mamma or female breast, -- a form of neuralgia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mastodyny": {
       "word": "MASTODYNIA; MASTODYNY",
       "definitions": [
         {

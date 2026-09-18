@@ -252,6 +252,10 @@
       "word": "CATACAUSTIC",
       "definitions": [
         {
+          "text": "Relating to, or having the properties of, a caustic curve formed by reflection. See Caustic, a. Nichol.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A caustic curve formed by reflection of light. Nichol.",
           "partOfSpeech": "noun"
         }
@@ -268,11 +272,21 @@
       ],
       "relatedWords": []
     },
-    "catachresticcatachrestical": {
+    "catachrestic": {
       "word": "CATACHRESTIC; CATACHRESTICAL",
       "definitions": [
         {
-          "text": "Belonging to, or in the manner of, a catachresis; wrested from",
+          "text": "Belonging to, or in the manner of, a catachresis; wrested from its natural sense or form; forced; far-fatched. [A] catachrestical and improper way of speaking. Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catachrestical": {
+      "word": "CATACHRESTIC; CATACHRESTICAL",
+      "definitions": [
+        {
+          "text": "Belonging to, or in the manner of, a catachresis; wrested from its natural sense or form; forced; far-fatched. [A] catachrestical and improper way of speaking. Jer. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -398,7 +412,7 @@
         "wreck"
       ]
     },
-    "cataclysmalcataclysmic": {
+    "cataclysmal": {
       "word": "CATACLYSMAL; CATACLYSMIC",
       "definitions": [
         {
@@ -407,6 +421,74 @@
         }
       ],
       "relatedWords": []
+    },
+    "cataclysmic": {
+      "word": "CATACLYSMAL; CATACLYSMIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a cataclysm.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "baneful",
+        "black",
+        "calamitous",
+        "cataclysmal",
+        "catastrophic",
+        "consuming",
+        "consumptive",
+        "convulsive",
+        "deadly",
+        "demolishing",
+        "demolitionary",
+        "depredatory",
+        "desolating",
+        "destroying",
+        "destructive",
+        "devastating",
+        "dire",
+        "disastrous",
+        "doomful",
+        "fatal",
+        "fateful",
+        "fratricidal",
+        "grievous",
+        "herky-jerky",
+        "insurrectionary",
+        "internecine",
+        "jerky",
+        "nihilist",
+        "nihilistic",
+        "orgasmic",
+        "paroxysmal",
+        "radical",
+        "ravaging",
+        "revolutional",
+        "revolutionary",
+        "revulsionary",
+        "revulsive",
+        "ruining",
+        "ruinous",
+        "seismic",
+        "self-destructive",
+        "spasmodic",
+        "spastic",
+        "subversionary",
+        "subversive",
+        "suicidal",
+        "sweeping",
+        "tragic",
+        "transilient",
+        "upheaving",
+        "vandalic",
+        "vandalish",
+        "vandalistic",
+        "wasteful",
+        "wasting",
+        "withering",
+        "wreckful"
+      ]
     },
     "cataclysmist": {
       "word": "CATACLYSMIST",
@@ -442,7 +524,7 @@
       "word": "CATACROTIC",
       "definitions": [
         {
-          "text": "Designating, pertaining to, or characterized by, that form of pulse tracing, or sphygmogram, in which the descending portion of the",
+          "text": "Designating, pertaining to, or characterized by, that form of pulse tracing, or sphygmogram, in which the descending portion of the curve is marked by secondary elevations due to two or more expansions of the artery in the same beat. -- Ca*tac\"rotism (#), n.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -458,7 +540,17 @@
       ],
       "relatedWords": []
     },
-    "catadioptriccatadioptrical": {
+    "catadioptric": {
+      "word": "CATADIOPTRIC; CATADIOPTRICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, produced by, or involving, both the reflection and refraction of light; as, a catadioptric light. Hutton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catadioptrical": {
       "word": "CATADIOPTRIC; CATADIOPTRICAL",
       "definitions": [
         {
@@ -620,7 +712,7 @@
       ],
       "relatedWords": []
     },
-    "catalepsycatalepsis": {
+    "catalepsis": {
       "word": "CATALEPSY; CATALEPSIS",
       "definitions": [
         {
@@ -629,6 +721,102 @@
         }
       ],
       "relatedWords": []
+    },
+    "catalepsy": {
+      "word": "CATALEPSY; CATALEPSIS",
+      "definitions": [
+        {
+          "text": "A sudden suspension of sensation and volition, the body and limbs preserving the position that may be given them, while the action of the heart and lungs continues.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "KO",
+        "abeyance",
+        "amnesia",
+        "apathy",
+        "apoplexy",
+        "blackout",
+        "cataplexy",
+        "catatonia",
+        "catatonic stupor",
+        "catatony",
+        "coma",
+        "daydreaming",
+        "daze",
+        "deadliness",
+        "deathliness",
+        "diplegia",
+        "dormancy",
+        "dream state",
+        "encephalitis lethargica",
+        "entropy",
+        "faint",
+        "fugue",
+        "fugue state",
+        "grayout",
+        "hemiplegia",
+        "high",
+        "hypnotic trance",
+        "indifference",
+        "indolence",
+        "inertia",
+        "inertness",
+        "infantile paralysis",
+        "kayo",
+        "knockout",
+        "languor",
+        "latency",
+        "lethargy",
+        "lipothymia",
+        "lipothymy",
+        "lotus-eating",
+        "narcohypnosis",
+        "narcolepsy",
+        "narcoma",
+        "narcosis",
+        "narcotic stupor",
+        "narcotization",
+        "nirvana",
+        "nirvana principle",
+        "nod",
+        "nothingness",
+        "oblivion",
+        "obliviousness",
+        "palsy",
+        "paralysis",
+        "paraplegia",
+        "paresis",
+        "passiveness",
+        "passivity",
+        "polio",
+        "poliomyelitis",
+        "reverie",
+        "sedation",
+        "semiconsciousness",
+        "senselessness",
+        "sensory paralysis",
+        "shock",
+        "sleep",
+        "sleeping sickness",
+        "sleepwalking",
+        "somnambulism",
+        "sopor",
+        "stagnancy",
+        "stagnation",
+        "stasis",
+        "stroke",
+        "stupor",
+        "suspense",
+        "swoon",
+        "syncope",
+        "thanatosis",
+        "torpor",
+        "trance",
+        "unconsciousness",
+        "vegetation",
+        "vis inertiae"
+      ]
     },
     "cataleptic": {
       "word": "CATALEPTIC",
@@ -1233,6 +1421,16 @@
       "definitions": [
         {
           "text": "A soft and moist substance applied externally to some part of the body; a poultice. Dunglison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cataplexy": {
+      "word": "CATAPLEXY",
+      "definitions": [
+        {
+          "text": "A morbid condition caused by an overwhelming shock or extreme fear and marked by rigidity of the muscles. -- Cat`a*plec\"tic (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1943,6 +2141,50 @@
     "catch": {
       "word": "CATCH",
       "definitions": [
+        {
+          "text": "To lay hold on; to seize, especially with the hand; to grasp (anything) in motion, with the effect of holding; as, to catch a ball.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To seize after pursuing; to arrest; as, to catch a thief. \"They pursued . . . and caught him.\" Judg. i. 6.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take captive, as in a snare or net, or on a hook; as, to catch a bird or fish.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Hence: To insnare; to entangle. \"To catch him in his words\". Mark xii. 13.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To seize with the senses or the mind; to apprehend; as, to catch a melody. \"Fiery thoughts . . . whereof I catch the issue.\" Tennyson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To communicate to; to fasten upon; as, the fire caught the adjoining building.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To engage and attach; to please; to charm. The soothing arts that catch the fair. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To get possession of; to attain. Torment myself to catch the English throne. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take or receive; esp. to take by sympathy, contagion, infection, or exposure; as, to catch the spirit of an occasion; to catch the measles or smallpox; to catch cold; the house caught fire.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To come upon unexpectedly or by surprise; to find; as, to catch one in the act of stealing.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To reach in time; to come up with; as, to catch a train. To catch fire, to become inflamed or ignited. [Colloq.] -- To catch one's eye, to interrupt captiously while speaking. [Colloq.] \"You catch me up so very short.\" Dickens.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To attain possession. [Obs.] Have is have, however men do catch. Shak.",
           "partOfSpeech": "verb"
@@ -2767,7 +3009,7 @@
       ],
       "relatedWords": []
     },
-    "catchupcatsup": {
+    "catchup": {
       "word": "CATCHUP; CATSUP",
       "definitions": [
         {
@@ -2775,7 +3017,39 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "abduct",
+        "carry off",
+        "catch up with",
+        "come up to",
+        "come up with",
+        "ensnare",
+        "entangle",
+        "entrap",
+        "fascinate",
+        "gain on",
+        "gain upon",
+        "grip",
+        "hold",
+        "kidnap",
+        "lap",
+        "leave behind",
+        "leave standing",
+        "mesmerize",
+        "outpace",
+        "outrun",
+        "outsail",
+        "outstrip",
+        "overhaul",
+        "overtake",
+        "pass",
+        "shanghai",
+        "snare",
+        "spellbind",
+        "tangle",
+        "throttle",
+        "trap"
+      ]
     },
     "catchwater": {
       "word": "CATCHWATER",
@@ -3121,22 +3395,32 @@
       ],
       "relatedWords": []
     },
+    "catechetic": {
+      "word": "CATECHETIC; CATECHETICAL",
+      "definitions": [
+        {
+          "text": "Relating to or consisting in, asking questions and receiving answers, according to the ancient manner of teaching. Socrates introduced a catechetical method of arguing. Addison.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catechetical": {
+      "word": "CATECHETIC; CATECHETICAL",
+      "definitions": [
+        {
+          "text": "Relating to or consisting in, asking questions and receiving answers, according to the ancient manner of teaching. Socrates introduced a catechetical method of arguing. Addison.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "catechetically": {
       "word": "CATECHETICALLY",
       "definitions": [
         {
           "text": "In a catechetical manner; by question and answer.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "catecheticcatechetical": {
-      "word": "CATECHETIC; CATECHETICAL",
-      "definitions": [
-        {
-          "text": "Relating to or consisting in, asking questions and receiving answers, according to the ancient manner of teaching. Socrates introduced a catechetical method of arguing. Addison.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3273,7 +3557,17 @@
       ],
       "relatedWords": []
     },
-    "catechisticcatechistical": {
+    "catechistic": {
+      "word": "CATECHISTIC; CATECHISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a catechist or to a catechism. Dr. H. More.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catechistical": {
       "word": "CATECHISTIC; CATECHISTICAL",
       "definitions": [
         {
@@ -3808,9 +4102,23 @@
       ],
       "relatedWords": []
     },
-    "catenary": {
-      "word": "CATENARY",
+    "catenarian": {
+      "word": "CATENARY; CATENARIAN",
       "definitions": [
+        {
+          "text": "Relating to a chain; like a chain; as, a catenary curve.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catenary": {
+      "word": "CATENARY; CATENARIAN",
+      "definitions": [
+        {
+          "text": "Relating to a chain; like a chain; as, a catenary curve.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "The curve formed by a rope or chain of uniform density and perfect flexibility, hanging freely between two points of suspension, not in the same vertical line.",
           "partOfSpeech": "noun"
@@ -3848,16 +4156,6 @@
         "swag",
         "tracery"
       ]
-    },
-    "catenarycatenarian": {
-      "word": "CATENARY; CATENARIAN",
-      "definitions": [
-        {
-          "text": "Relating to a chain; like a chain; as, a catenary curve.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
     },
     "catenate": {
       "word": "CATENATE",
@@ -4243,6 +4541,24 @@
       ],
       "relatedWords": []
     },
+    "catharical": {
+      "word": "CATHARTIC; CATHARICAL",
+      "definitions": [
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Cleansing the bowels; promoting evacuations by stool; purgative.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the purgative principle of senna, as cathartic acid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "catharinewheel": {
       "word": "CATHARINE WHEEL",
       "definitions": [
@@ -4346,10 +4662,22 @@
       ]
     },
     "cathartic": {
-      "word": "CATHARTIC",
+      "word": "CATHARTIC; CATHARICAL",
       "definitions": [
         {
-          "text": "A medicine that promotes alvine discharges; a purge; a purgative of moderate activity. the laxatives, which simply increase the tendency to alvine evacuation; and less powerful and irritaint that the drastic purges,",
+          "text": "(Med.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Cleansing the bowels; promoting evacuations by stool; purgative.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the purgative principle of senna, as cathartic acid.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A medicine that promotes alvine discharges; a purge; a purgative of moderate activity. the laxatives, which simply increase the tendency to alvine evacuation; and less powerful and irritaint that the drastic purges, which cause profuse, repeated, and watery evacuations.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4422,24 +4750,6 @@
         "toothpaste",
         "wash"
       ]
-    },
-    "catharticcatharical": {
-      "word": "CATHARTIC; CATHARICAL",
-      "definitions": [
-        {
-          "text": "(Med.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Cleansing the bowels; promoting evacuations by stool; purgative.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Of or pertaining to the purgative principle of senna, as cathartic acid.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
     },
     "cathartin": {
       "word": "CATHARTIN",
@@ -4628,7 +4938,17 @@
         "water pipe"
       ]
     },
-    "catheterismcatheterization": {
+    "catheterism": {
+      "word": "CATHETERISM; CATHETERIZATION",
+      "definitions": [
+        {
+          "text": "The operation of introducing a catheter.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catheterization": {
       "word": "CATHETERISM; CATHETERIZATION",
       "definitions": [
         {
@@ -4678,6 +4998,16 @@
       ],
       "relatedWords": []
     },
+    "cathodegraph": {
+      "word": "CATHODOGRAPH; CATHODEGRAPH",
+      "definitions": [
+        {
+          "text": "A picture produced by the Röntgen rays; a radiograph.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "cathodic": {
       "word": "CATHODIC",
       "definitions": [
@@ -4688,7 +5018,7 @@
       ],
       "relatedWords": []
     },
-    "cathodographcathodegraph": {
+    "cathodograph": {
       "word": "CATHODOGRAPH; CATHODEGRAPH",
       "definitions": [
         {
@@ -5017,7 +5347,17 @@
       ],
       "relatedWords": []
     },
-    "catnipcatmint": {
+    "catmint": {
+      "word": "CATNIP; CATMINT",
+      "definitions": [
+        {
+          "text": "A well-know plant of the genus Nepeta (N. Cataria), somewhat like mint, having a string scent, and sometimes used in medicine. It is so called because cats have a peculiar fondness for it.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catnip": {
       "word": "CATNIP; CATMINT",
       "definitions": [
         {
@@ -5067,7 +5407,7 @@
       ],
       "relatedWords": []
     },
-    "catoptercatoptron": {
+    "catopter": {
       "word": "CATOPTER; CATOPTRON",
       "definitions": [
         {
@@ -5077,7 +5417,17 @@
       ],
       "relatedWords": []
     },
-    "catoptriccatoptrical": {
+    "catoptric": {
+      "word": "CATOPTRIC; CATOPTRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to catoptrics; produced by reflection. Catoptric light, a light in which the rays are concentrated by reflectors into a beam visible at a distance.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catoptrical": {
       "word": "CATOPTRIC; CATOPTRICAL",
       "definitions": [
         {
@@ -5102,6 +5452,16 @@
       "definitions": [
         {
           "text": "A species of divination, which was perforned by letting down a mirror into water, for a sick person to look at his face in it. If his countenance appeared distorted and ghastly, it was an ill omen; if fresh and healthy, it was favorable.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "catoptron": {
+      "word": "CATOPTER; CATOPTRON",
+      "definitions": [
+        {
+          "text": "A reflecting optical glass or instrument; a mirror. [Obs.]",
           "partOfSpeech": "noun"
         }
       ],
@@ -5188,8 +5548,12 @@
       "relatedWords": []
     },
     "catsup": {
-      "word": "CATSUP",
+      "word": "CATCHUP; CATSUP",
       "definitions": [
+        {
+          "text": "A table sauce made from mushrooms, tomatoes, walnuts, etc. [Written also ketchup.]",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Same as Catchup, and Ketchup.",
           "partOfSpeech": "noun"

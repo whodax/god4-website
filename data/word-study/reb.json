@@ -11,7 +11,7 @@
       ],
       "relatedWords": []
     },
-    "rebaptisationrebaptization": {
+    "rebaptisation": {
       "word": "REBAPTISATION; REBAPTIZATION",
       "definitions": [
         {
@@ -26,6 +26,16 @@
       "definitions": [
         {
           "text": "A second baptism.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rebaptization": {
+      "word": "REBAPTISATION; REBAPTIZATION",
+      "definitions": [
+        {
+          "text": "A second baptism. [Obs.] Hooker.",
           "partOfSpeech": "noun"
         }
       ],
@@ -47,6 +57,16 @@
         {
           "text": "One who rebaptizes.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rebarbarize": {
+      "word": "REBARBARIZE",
+      "definitions": [
+        {
+          "text": "To reduce again to barbarism. Germany . . . rebarbarized by polemical theology and religious wars. Sir W. Hamilton.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

@@ -1459,7 +1459,17 @@
         "zodiac"
       ]
     },
-    "horoscoperhoroscopist": {
+    "horoscoper": {
+      "word": "HOROSCOPER; HOROSCOPIST",
+      "definitions": [
+        {
+          "text": "One versed in horoscopy; an astrologer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "horoscopist": {
       "word": "HOROSCOPER; HOROSCOPIST",
       "definitions": [
         {

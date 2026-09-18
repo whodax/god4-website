@@ -21,7 +21,7 @@
       ],
       "relatedWords": []
     },
-    "deraignderain": {
+    "deraign": {
       "word": "DERAIGN; DERAIN",
       "definitions": [
         {
@@ -31,7 +31,7 @@
       ],
       "relatedWords": []
     },
-    "deraignmentderainment": {
+    "deraignment": {
       "word": "DERAIGNMENT; DERAINMENT",
       "definitions": [
         {
@@ -60,6 +60,30 @@
       "definitions": [
         {
           "text": "The act of going off, or the state of being off, the rails of a railroad.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derain": {
+      "word": "DERAIGN; DERAIN",
+      "definitions": [
+        {
+          "text": "To prove or to refute by proof; to clear (one's self). [Obs.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "derainment": {
+      "word": "DERAIGNMENT; DERAINMENT",
+      "definitions": [
+        {
+          "text": "The act of deraigning. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The renunciation of religious or monastic vows. [Obs.] Blount.",
           "partOfSpeech": "noun"
         }
       ],
@@ -525,7 +549,7 @@
       ],
       "relatedWords": []
     },
-    "dereinedereyne": {
+    "dereine": {
       "word": "DEREINE; DEREYNE",
       "definitions": [
         {
@@ -890,6 +914,16 @@
         {
           "text": "Darling. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dereyne": {
+      "word": "DEREINE; DEREYNE",
+      "definitions": [
+        {
+          "text": "Same as Darraign. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1537,7 +1571,7 @@
       "word": "DERIVATIVE",
       "definitions": [
         {
-          "text": "Obtained by derivation; derived; not radical, original, or fundamental; originating, deduced, or formed from something else; secondary; as, a derivative conveyance; a derivative word. Derivative circulation, a modification of the circulation found in some parts of the body, in which the arteries empty directly into the veins without",
+          "text": "Obtained by derivation; derived; not radical, original, or fundamental; originating, deduced, or formed from something else; secondary; as, a derivative conveyance; a derivative word. Derivative circulation, a modification of the circulation found in some parts of the body, in which the arteries empty directly into the veins without the interposition of capillaries. Flint.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1875,7 +1909,7 @@
         "testaceous"
       ]
     },
-    "dermapteradermapteran": {
+    "dermaptera": {
       "word": "DERMAPTERA; DERMAPTERAN",
       "definitions": [
         {
@@ -1885,7 +1919,27 @@
       ],
       "relatedWords": []
     },
-    "dermaticdermatine": {
+    "dermapteran": {
+      "word": "DERMAPTERA; DERMAPTERAN",
+      "definitions": [
+        {
+          "text": "See Dermoptera, Dermopteran.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatic": {
+      "word": "DERMATIC; DERMATINE",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the skin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dermatine": {
       "word": "DERMATIC; DERMATINE",
       "definitions": [
         {
@@ -2483,6 +2537,46 @@
         "wane"
       ]
     },
+    "derogative": {
+      "word": "DEROGATIVE",
+      "definitions": [
+        {
+          "text": "Derogatory.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abusive",
+        "back-biting",
+        "belittling",
+        "bitchy",
+        "calumniatory",
+        "calumnious",
+        "catty",
+        "censorious",
+        "contemptuous",
+        "contumelious",
+        "defamatory",
+        "deprecatory",
+        "depreciative",
+        "depreciatory",
+        "derisive",
+        "derisory",
+        "derogatory",
+        "detractory",
+        "disparaging",
+        "libelous",
+        "minimizing",
+        "pejorative",
+        "ridiculing",
+        "scandalous",
+        "scurrile",
+        "scurrilous",
+        "slanderous",
+        "slighting",
+        "vilifying"
+      ]
+    },
     "derogator": {
       "word": "DEROGATOR",
       "definitions": [
@@ -2712,7 +2806,7 @@
       ],
       "relatedWords": []
     },
-    "dervishdervisedervis": {
+    "dervis": {
       "word": "DERVISH; DERVISE; DERVIS",
       "definitions": [
         {
@@ -2721,6 +2815,68 @@
         }
       ],
       "relatedWords": []
+    },
+    "dervise": {
+      "word": "DERVISH; DERVISE; DERVIS",
+      "definitions": [
+        {
+          "text": "A Turkish or Persian monk, especially one who professes extreme poverty and leads an austere life.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dervish": {
+      "word": "DERVISH; DERVISE; DERVIS",
+      "definitions": [
+        {
+          "text": "A Turkish or Persian monk, especially one who professes extreme poverty and leads an austere life.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Albigensian",
+        "Black Muslim",
+        "Catharist",
+        "Franciscan",
+        "Mohammedan",
+        "Moslem",
+        "Motazilite",
+        "Muhammadan",
+        "Muslim",
+        "Mussulman",
+        "Sabbatarian",
+        "Sectary",
+        "Shia",
+        "Shiite",
+        "Sufi",
+        "Sunnite",
+        "Trappist",
+        "Wahabi",
+        "Waldensian",
+        "abdal",
+        "abstainer",
+        "anchorite",
+        "ascetic",
+        "bhikshu",
+        "fakir",
+        "flagellant",
+        "hajji",
+        "hermit",
+        "imam",
+        "mendicant",
+        "muezzin",
+        "mufti",
+        "mullah",
+        "murshid",
+        "puritan",
+        "qadi",
+        "sannyasi",
+        "santon",
+        "sheikh",
+        "yogi",
+        "yogin"
+      ]
     },
     "derworth": {
       "word": "DERWORTH",

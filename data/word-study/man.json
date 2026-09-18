@@ -632,8 +632,12 @@
       "relatedWords": []
     },
     "mandibulate": {
-      "word": "MANDIBULATE",
+      "word": "MANDIBULATE; MANDIBULATED",
       "definitions": [
+        {
+          "text": "Provided with mandibles adapted for biting, as many insects.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "An insect having mandibles.",
           "partOfSpeech": "noun"
@@ -641,7 +645,7 @@
       ],
       "relatedWords": []
     },
-    "mandibulatemandibulated": {
+    "mandibulated": {
       "word": "MANDIBULATE; MANDIBULATED",
       "definitions": [
         {
@@ -701,7 +705,17 @@
       ],
       "relatedWords": []
     },
-    "mandiocmandioca": {
+    "mandioc": {
+      "word": "MANDIOC; MANDIOCA",
+      "definitions": [
+        {
+          "text": "See Manioc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mandioca": {
       "word": "MANDIOC; MANDIOCA",
       "definitions": [
         {
@@ -741,7 +755,17 @@
       ],
       "relatedWords": []
     },
-    "mandolinmandoline": {
+    "mandolin": {
+      "word": "MANDOLIN; MANDOLINE",
+      "definitions": [
+        {
+          "text": "A small and beautifully shaped instrument resembling the lute.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mandoline": {
       "word": "MANDOLIN; MANDOLINE",
       "definitions": [
         {
@@ -967,17 +991,7 @@
       ],
       "relatedWords": []
     },
-    "maneuverermanoeuvrer": {
-      "word": "MANEUVERER; MANOEUVRER",
-      "definitions": [
-        {
-          "text": "One who maneuvers. This charming widow Beaumont is a nanoeuvrer. We can't well make an English word of it. Miss Edgeworth.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "maneuvermanoeuvre": {
+    "maneuver": {
       "word": "MANEUVER; MANOEUVRE",
       "definitions": [
         {
@@ -1003,6 +1017,16 @@
       ],
       "relatedWords": []
     },
+    "maneuverer": {
+      "word": "MANEUVERER; MANOEUVRER",
+      "definitions": [
+        {
+          "text": "One who maneuvers. This charming widow Beaumont is a nanoeuvrer. We can't well make an English word of it. Miss Edgeworth.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "manful": {
       "word": "MANFUL",
       "definitions": [
@@ -1018,24 +1042,6 @@
       "definitions": [
         {
           "text": "Any one of several African monkeys of the genus Cercocebus, as the sooty mangabey (C. fuliginosus), which is sooty black. [Also written mangaby.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "mangaelsgreagachdryshriveledrockyseeshrinkandcf": {
-      "word": "man, Gael. sgreagach dry, shriveled, rocky. See Shrink, and cf.",
-      "definitions": [
-        {
-          "text": "Something thin, lean, or rough; a bony piece; especially, a bony neckpiece of meat; hence, humorously or in contempt, the neck. Lady MacScrew, who . . . serves up a scrag of mutton on silver. Thackeray.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A rawboned person. [Low] Halliwell.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A ragged, stunted tree or branch. Scrag whale (Zoöl.), a North Atlantic whalebone whale (Agaphelus giddosus). By some it is considered the young of the right whale.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1375,7 +1381,17 @@
       ],
       "relatedWords": []
     },
-    "mangosteenmangostan": {
+    "mangostan": {
+      "word": "MANGOSTEEN; MANGOSTAN",
+      "definitions": [
+        {
+          "text": "A tree of the East Indies of the genus Garcinia (G. Mangostana). The tree grows to the height of eighteen feet, and bears fruit also called mangosteen, of the size of a small apple, the pulp of which is very delicious food.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mangosteen": {
       "word": "MANGOSTEEN; MANGOSTAN",
       "definitions": [
         {
@@ -1533,6 +1549,16 @@
       ],
       "relatedWords": []
     },
+    "maniacal": {
+      "word": "MANIACAL",
+      "definitions": [
+        {
+          "text": "Affected with, or characterized by, madness; maniac.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "manic": {
       "word": "MANIC",
       "definitions": [
@@ -1553,9 +1579,13 @@
       ],
       "relatedWords": []
     },
-    "manichaeanmanichean": {
-      "word": "MANICHAEAN; MANICHEAN",
+    "manichaean": {
+      "word": "MANICHAEAN; MANICHEAN; MANICHEE",
       "definitions": [
+        {
+          "text": "A believer in the doctrines of Manes, a Persian of the third century A. D., who taught a dualism in which Light is regarded as the source of Good, and Darkness as the source of Evil. The Manichæans stand as representatives of dualism pushed to its utmost development. Tylor.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Of or pertaining to the Manichæans.",
           "partOfSpeech": "adjective"
@@ -1563,7 +1593,31 @@
       ],
       "relatedWords": []
     },
-    "manichaeanmanicheanmanichee": {
+    "manichaeism": {
+      "word": "MANICHAEISM; MANICHEISM",
+      "definitions": [
+        {
+          "text": "The doctrines taught, or system of principles maintained, by the Manichæans.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manichean": {
+      "word": "MANICHAEAN; MANICHEAN; MANICHEE",
+      "definitions": [
+        {
+          "text": "A believer in the doctrines of Manes, a Persian of the third century A. D., who taught a dualism in which Light is regarded as the source of Good, and Darkness as the source of Evil. The Manichæans stand as representatives of dualism pushed to its utmost development. Tylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the Manichæans.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manichee": {
       "word": "MANICHAEAN; MANICHEAN; MANICHEE",
       "definitions": [
         {
@@ -1573,7 +1627,7 @@
       ],
       "relatedWords": []
     },
-    "manichaeismmanicheism": {
+    "manicheism": {
       "word": "MANICHAEISM; MANICHEISM",
       "definitions": [
         {
@@ -1593,7 +1647,17 @@
       ],
       "relatedWords": []
     },
-    "manichordmanichordon": {
+    "manichord": {
+      "word": "MANICHORD; MANICHORDON",
+      "definitions": [
+        {
+          "text": "The clavichord or clarichord; -- called also dumb spinet.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "manichordon": {
       "word": "MANICHORD; MANICHORDON",
       "definitions": [
         {
@@ -1823,7 +1887,17 @@
       ],
       "relatedWords": []
     },
-    "manihocmanihot": {
+    "manihoc": {
+      "word": "MANIHOC; MANIHOT",
+      "definitions": [
+        {
+          "text": "See Manioc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manihot": {
       "word": "MANIHOC; MANIHOT",
       "definitions": [
         {
@@ -1847,7 +1921,7 @@
       ],
       "relatedWords": []
     },
-    "manilamanilla": {
+    "manila": {
       "word": "MANILA; MANILLA",
       "definitions": [
         {
@@ -1868,8 +1942,12 @@
       "relatedWords": []
     },
     "manilla": {
-      "word": "MANILLA",
+      "word": "MANILA; MANILLA",
       "definitions": [
+        {
+          "text": "Of or pertaining to Manila or Manilla, the capital of the Philippine Islands; made in, or exported from, that city. Manila cheroot or cigar, a cheroot or cigar made of tobacco grown in the Philippine Islands. a plant allied to the banana, growing in the Philippine and other East India islands; -- called also by the native name abaca. From it matting, canvas, ropes, and cables are made. used as a wrapping paper, and as a cheap printing and writing paper. The name is also given to inferior papers, made of other fiber.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A ring worn upon the arm or leg as an ornament, especially among the tribes of Africa.",
           "partOfSpeech": "noun"
@@ -2013,7 +2091,17 @@
       ],
       "relatedWords": []
     },
-    "manitomanitoumanitu": {
+    "manito": {
+      "word": "MANITO; MANITOU; MANITU",
+      "definitions": [
+        {
+          "text": "A name given by tribes of American Indians to a great spirit, whether good or evil, or to any object of worship. Tylor. Gitche Manito the mighty, The Great Spirit, the creator, Smiled upon his helpless children! Longfellow. Mitche Manito the mighty, He the dreadful Spirit of Evil, As a serpent was depicted. Longfellow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manitou": {
       "word": "MANITO; MANITOU; MANITU",
       "definitions": [
         {
@@ -2028,6 +2116,16 @@
       "definitions": [
         {
           "text": "The anterior segment of the thorax in insects. See Insect.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manitu": {
+      "word": "MANITO; MANITOU; MANITU",
+      "definitions": [
+        {
+          "text": "A name given by tribes of American Indians to a great spirit, whether good or evil, or to any object of worship. Tylor. Gitche Manito the mighty, The Great Spirit, the creator, Smiled upon his helpless children! Longfellow. Mitche Manito the mighty, He the dreadful Spirit of Evil, As a serpent was depicted. Longfellow.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2396,10 +2494,40 @@
       "relatedWords": []
     },
     "manoeuvre": {
-      "word": "MANOEUVRE",
+      "word": "MANEUVER; MANOEUVRE",
       "definitions": [
         {
+          "text": "Management; dexterous movement; specif., a military or naval evolution, movement, or change of position.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Management with address or artful design; adroit proceeding; stratagem.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To perform a movement or movements in military or naval tactics; to make changes in position with reference to getting advantage in attack or defense.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To manage with address or art; to scheme.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To change the positions of, as of troops of ships.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "See Maneuver.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manoeuvrer": {
+      "word": "MANEUVERER; MANOEUVRER",
+      "definitions": [
+        {
+          "text": "One who maneuvers. This charming widow Beaumont is a nanoeuvrer. We can't well make an English word of it. Miss Edgeworth.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2435,7 +2563,17 @@
       ],
       "relatedWords": []
     },
-    "manometricmanometrical": {
+    "manometric": {
+      "word": "MANOMETRIC; MANOMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the manometer; made by the manometer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manometrical": {
       "word": "MANOMETRIC; MANOMETRICAL",
       "definitions": [
         {
@@ -2517,7 +2655,17 @@
       ],
       "relatedWords": []
     },
-    "manredmanrent": {
+    "manred": {
+      "word": "MANRED; MANRENT",
+      "definitions": [
+        {
+          "text": "Homage or service rendered to a superior, as to a lord; vassalage. [Obs. or Scots Law] Jamieson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manrent": {
       "word": "MANRED; MANRENT",
       "definitions": [
         {
@@ -3533,13 +3681,23 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Interested in, and having an aptitude for, many unlike pursuits or",
+          "text": "Interested in, and having an aptitude for, many unlike pursuits or objects of attention; versatile.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "manywaysmanywise": {
+    "manyways": {
+      "word": "MANYWAYS; MANYWISE",
+      "definitions": [
+        {
+          "text": "In many different ways; variously.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "manywise": {
       "word": "MANYWAYS; MANYWISE",
       "definitions": [
         {

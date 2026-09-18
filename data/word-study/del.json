@@ -179,6 +179,10 @@
       "word": "DELAY",
       "definitions": [
         {
+          "text": "A putting off or deferring; procrastination; lingering inactivity; stop; detention; hindrance. Without any delay, on the morrow I sat on the judgment seat. Acts xxv. 17. The government ought to be settled without the delay of a day. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To put off; to defer; to procrastinate; to prolong the time of or before. My lord delayeth his coming. Matt. xxiv. 48.",
           "partOfSpeech": "verb"
         },
@@ -557,7 +561,7 @@
       "word": "DELECTABLE",
       "definitions": [
         {
-          "text": "Highly pleasing; delightful.",
+          "text": "Highly pleasing; delightful. Delectable both to behold and taste. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1007,7 +1011,7 @@
       "word": "DELETERIOUS",
       "definitions": [
         {
-          "text": "Hurtful; noxious; destructive; pernicious; as, a deleterious",
+          "text": "Hurtful; noxious; destructive; pernicious; as, a deleterious plant or quality; a deleterious example.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3355,6 +3359,16 @@
         "yummy"
       ]
     },
+    "delighting": {
+      "word": "DELIGHTING",
+      "definitions": [
+        {
+          "text": "Giving delight; gladdening.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "delightless": {
       "word": "DELIGHTLESS",
       "definitions": [
@@ -3379,7 +3393,7 @@
       "word": "DELIGHTSOME",
       "definitions": [
         {
-          "text": "Very pleasing; delightful. \"Delightsome vigor.\" Grew.",
+          "text": "Very pleasing; delightful. \"Delightsome vigor.\" Grew. Ye shall be a delightsome land, . . . saith the Lord. Mal. iii. 12.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4418,7 +4432,7 @@
       "word": "DELIRIOUS",
       "definitions": [
         {
-          "text": "Having a delirium; wandering in mind; light-headed; insane;",
+          "text": "Having a delirium; wandering in mind; light-headed; insane; raving; wild; as, a delirious patient; delirious fancies.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5625,8 +5639,12 @@
       "relatedWords": []
     },
     "delphin": {
-      "word": "DELPHIN",
+      "word": "DELPHIN; DELPHINE",
       "definitions": [
+        {
+          "text": "Pertaining to the dauphin of France; as, the Delphin classics, an edition of the Latin classics, prepared in the reign of Louis XIV., for the use of the dauphin (in usum Delphini).",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A fatty substance contained in the oil of the dolphin and the porpoise; -- called also phocenin.",
           "partOfSpeech": "noun"
@@ -5634,19 +5652,13 @@
       ],
       "relatedWords": []
     },
-    "delphindelphine": {
+    "delphine": {
       "word": "DELPHIN; DELPHINE",
       "definitions": [
         {
           "text": "Pertaining to the dauphin of France; as, the Delphin classics, an edition of the Latin classics, prepared in the reign of Louis XIV., for the use of the dauphin (in usum Delphini).",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "delphine": {
-      "word": "DELPHINE",
-      "definitions": [
+        },
         {
           "text": "Pertaining to the dolphin, a genus of fishes.",
           "partOfSpeech": "adjective"
@@ -5720,7 +5732,17 @@
       ],
       "relatedWords": []
     },
-    "delsartedelsartesystem": {
+    "delsarte": {
+      "word": "DELSARTE; DELSARTE SYSTEM",
+      "definitions": [
+        {
+          "text": "A system of calisthenics patterned on the theories of François Delsarte (1811 -- 71), a French teacher of dramatic and musical expression.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "delsartesystem": {
       "word": "DELSARTE; DELSARTE SYSTEM",
       "definitions": [
         {
@@ -6575,7 +6597,7 @@
       "word": "DELUSIVE",
       "definitions": [
         {
-          "text": "Apt or fitted to delude; tending to mislead the mind; deceptive; beguiling; delusory; as, delusive arts; a delusive dream.",
+          "text": "Apt or fitted to delude; tending to mislead the mind; deceptive; beguiling; delusory; as, delusive arts; a delusive dream. Delusive and unsubstantial ideas. Whewell.",
           "partOfSpeech": "adjective"
         }
       ],

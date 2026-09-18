@@ -1,7 +1,57 @@
 {
   "version": "v1",
   "entries": {
-    "bazaarbazar": {
+    "bazaar": {
+      "word": "BAZAAR; BAZAR",
+      "definitions": [
+        {
+          "text": "In the East, an exchange, marketplace, or assemblage of shops where goods are exposed for sale.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spacious hall or suite of rooms for the sale of goods, as at a fair.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fair for the sale of fancy wares, toys, etc., commonly for a charitable objects. Macaulay.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "auto show",
+        "boat show",
+        "closing-out sale",
+        "commercial complex",
+        "distress sale",
+        "emporium",
+        "exposition",
+        "fair",
+        "flea fair",
+        "flea market",
+        "garage sale",
+        "going-out-of-business sale",
+        "inventory-clearance sale",
+        "market",
+        "market overt",
+        "marketplace",
+        "mart",
+        "open market",
+        "plaza",
+        "rialto",
+        "rummage sale",
+        "sale",
+        "shopping center",
+        "shopping mall",
+        "shopping plaza",
+        "show",
+        "staple",
+        "street market",
+        "tax sale",
+        "trade fair",
+        "white elephant sale"
+      ]
+    },
+    "bazar": {
       "word": "BAZAAR; BAZAR",
       "definitions": [
         {

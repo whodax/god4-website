@@ -43,7 +43,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Capable of being used; passable; as, a practicable weapon; a practicable road. Practicable breach (Mil.), a breach which admits of approach and entrance by an assailing party. forbidden by any law of nature, and yet may not now be practicable",
+          "text": "Capable of being used; passable; as, a practicable weapon; a practicable road. Practicable breach (Mil.), a breach which admits of approach and entrance by an assailing party. forbidden by any law of nature, and yet may not now be practicable for want of the means requisite to its performance.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -285,7 +285,7 @@
       "word": "PRACTISE",
       "definitions": [
         {
-          "text": "See Practice. verb which are pronounced alike should agree in spelling. Thus we",
+          "text": "See Practice. verb which are pronounced alike should agree in spelling. Thus we have notice (n. & v.), noticed, noticing, noticer; poultice (n. & v.); apprentice (n. & v.); office (n. & v.), officer (n.); lattice (n.), latticed (a.); benefice (n.), beneficed (a.), etc. Cf. sacrifice (surmise (promise (compromise (advice (advise (device (devise (",
           "partOfSpeech": "verb"
         }
       ],
@@ -345,6 +345,16 @@
         {
           "text": "A prefix. See Pre-.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "praecava": {
+      "word": "PRAECAVA",
+      "definitions": [
+        {
+          "text": "The superior vena cava.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -549,7 +559,17 @@
       ],
       "relatedWords": []
     },
-    "praeoralpraepubispraescapulapraescutumpraesternum": {
+    "praeoperculum": {
+      "word": "PRAEOPERCULUM",
+      "definitions": [
+        {
+          "text": "Same as Preoperculum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "praeoral": {
       "word": "PRAEORAL; PRAEPUBIS; PRAESCAPULA; PRAESCUTUM; PRAESTERNUM",
       "definitions": [
         {
@@ -559,28 +579,42 @@
       ],
       "relatedWords": []
     },
-    "praetenderepraetentumtostretchforwardpretendsimulate": {
-      "word": "praetendere, praetentum, to stretch forward, pretend, simulate,",
+    "praepubis": {
+      "word": "PRAEORAL; PRAEPUBIS; PRAESCAPULA; PRAESCUTUM; PRAESTERNUM",
       "definitions": [
         {
-          "text": "To lay a claim to; to allege a title to; to claim. Chiefs shall be grudged the part which they pretend. Dryden.",
-          "partOfSpeech": "verb"
-        },
+          "text": "Same as Preoral, Prepubis, Prescapula, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "praescapula": {
+      "word": "PRAEORAL; PRAEPUBIS; PRAESCAPULA; PRAESCUTUM; PRAESTERNUM",
+      "definitions": [
         {
-          "text": "To hold before, or put forward, as a cloak or disguise for something else; to exhibit as a veil for something hidden. [R.] Lest that too heavenly form, pretended To hellish falsehood, snare them. Milton.",
-          "partOfSpeech": "verb"
-        },
+          "text": "Same as Preoral, Prepubis, Prescapula, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "praescutum": {
+      "word": "PRAEORAL; PRAEPUBIS; PRAESCAPULA; PRAESCUTUM; PRAESTERNUM",
+      "definitions": [
         {
-          "text": "To hold out, or represent, falsely; to put forward, or offer, as true or real (something untrue or unreal); to show hypocritically, or for the purpose of deceiving; to simulate; to feign; as, to pretend friendship. This let him know, Lest, willfully transgressing, he pretend Surprisal. Milton.",
-          "partOfSpeech": "verb"
-        },
+          "text": "Same as Preoral, Prepubis, Prescapula, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "praesternum": {
+      "word": "PRAEORAL; PRAEPUBIS; PRAESCAPULA; PRAESCUTUM; PRAESTERNUM",
+      "definitions": [
         {
-          "text": "To intend; to design; to plot; to attempt. [Obs.] Such as shall pretend Malicious practices against his state. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To hold before one; to extend. [Obs.] \"His target always over her pretended.\" Spenser.",
-          "partOfSpeech": "verb"
+          "text": "Same as Preoral, Prepubis, Prescapula, etc.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -676,8 +710,20 @@
       "relatedWords": []
     },
     "pragmatic": {
-      "word": "PRAGMATIC",
+      "word": "PRAGMATIC; PRAGMATICAL",
       "definitions": [
+        {
+          "text": "Of or pertaining to business or to affairs; of the nature of business; practical; material; businesslike in habit or manner. The next day . . . I began to be very pragmatical. Evelyn. We can not always be contemplative, diligent, or pragmatical, abroad; but have need of some delightful intermissions. Milton. Low, pragmatical, earthly views of the gospel. Hare.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Busy; specifically, busy in an objectionable way; officious; fussy and positive; meddlesome. \"Pragmatical officers of justice.\" Sir W. Scott. The fellow grew so pragmatical that he took upon him the government of my whole family. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Philosophical; dealing with causes, reasons, and effects, rather than with details and circumstances; -- said of literature. \"Pragmatic history.\" Sir W. Hamilton. \"Pragmatic poetry.\" M. Arnold. Pragmatic sanction, a solemn ordinance or decree issued by the head or legislature of a state upon weighty matters; -- a term derived from the Byzantine empire. In European history, two decrees under this name are particularly celebrated. One of these, issued by Charles VII. of France, A. D. 1438, was the foundation of the liberties of the Gallican church; the other, issued by Charles VI. of Germany, A. D. 1724, settled his hereditary dominions on his eldest daughter, the Archduchess Maria Theresa.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One skilled in affairs. My attorney and solicitor too; a fine pragmatic. B. Jonson.",
           "partOfSpeech": "noun"
@@ -685,6 +731,24 @@
         {
           "text": "A solemn public ordinance or decree. A royal pragmatic was accordingly passed. Prescott.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pragmatical": {
+      "word": "PRAGMATIC; PRAGMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to business or to affairs; of the nature of business; practical; material; businesslike in habit or manner. The next day . . . I began to be very pragmatical. Evelyn. We can not always be contemplative, diligent, or pragmatical, abroad; but have need of some delightful intermissions. Milton. Low, pragmatical, earthly views of the gospel. Hare.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Busy; specifically, busy in an objectionable way; officious; fussy and positive; meddlesome. \"Pragmatical officers of justice.\" Sir W. Scott. The fellow grew so pragmatical that he took upon him the government of my whole family. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Philosophical; dealing with causes, reasons, and effects, rather than with details and circumstances; -- said of literature. \"Pragmatic history.\" Sir W. Hamilton. \"Pragmatic poetry.\" M. Arnold. Pragmatic sanction, a solemn ordinance or decree issued by the head or legislature of a state upon weighty matters; -- a term derived from the Byzantine empire. In European history, two decrees under this name are particularly celebrated. One of these, issued by Charles VII. of France, A. D. 1438, was the foundation of the liberties of the Gallican church; the other, issued by Charles VI. of Germany, A. D. 1724, settled his hereditary dominions on his eldest daughter, the Archduchess Maria Theresa.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -705,24 +769,6 @@
         {
           "text": "The quality or state of being pragmatical.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pragmaticpragmatical": {
-      "word": "PRAGMATIC; PRAGMATICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to business or to affairs; of the nature of business; practical; material; businesslike in habit or manner. The next day . . . I began to be very pragmatical. Evelyn. We can not always be contemplative, diligent, or pragmatical, abroad; but have need of some delightful intermissions. Milton. Low, pragmatical, earthly views of the gospel. Hare.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Busy; specifically, busy in an objectionable way; officious; fussy and positive; meddlesome. \"Pragmatical officers of justice.\" Sir W. Scott. The fellow grew so pragmatical that he took upon him the government of my whole family. Arbuthnot.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Philosophical; dealing with causes, reasons, and effects, rather than with details and circumstances; -- said of literature. \"Pragmatic history.\" Sir W. Hamilton. \"Pragmatic poetry.\" M. Arnold. Pragmatic sanction, a solemn ordinance or decree issued by the head or legislature of a state upon weighty matters; -- a term derived from the Byzantine empire. In European history, two decrees under",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -814,6 +860,18 @@
     "praise": {
       "word": "PRAISE",
       "definitions": [
+        {
+          "text": "To commend; to applaud; to express approbation of; to laud; -- applied to a person or his acts. \"I praise well thy wit.\" Chaucer. Let her own works praise her in the gates. Prov. xxxi. 31. We praise not Hector, though his name, we know, Is great in arms; 't is hard to praise a foe. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To extol in words or song; to magnify; to glorify on account of perfections or excellent works; to do honor to; to display the excellence of; -- applied especially to the Divine Being. Praise ye him, all his angels; praise ye him, all his hosts! Ps. cxlviii. 2.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To value; to appraise. [Obs.] Piers Plowman. applaud is to greet with clapping; to extol is to bear aloft, to exalt. We may praise in the exercise of calm judgment; we usually applaud from impulse, and on account of some specific act; we extol under the influence of high admiration, and usually in strong, if not extravagant, language.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "Commendation for worth; approval expressed; honor rendered because of excellence or worth; laudation; approbation. There are men who always confound the praise of goodness with the practice. Rambler. fame, renown, and celebrity, which are always the expression of the approbation of numbers, or public commendation.",
           "partOfSpeech": "noun"
@@ -957,7 +1015,17 @@
       ],
       "relatedWords": []
     },
-    "pramprame": {
+    "pram": {
+      "word": "PRAM; PRAME",
+      "definitions": [
+        {
+          "text": "See Praam.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "prame": {
       "word": "PRAM; PRAME",
       "definitions": [
         {

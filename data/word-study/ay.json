@@ -11,6 +11,14 @@
         {
           "text": "Same as Aye.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Yes; yea; -- a word expressing assent, or an affirmative answer to a question. It is much used in viva voce voting in legislative bodies, etc. other old writers.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Always; ever; continually; for an indefinite time. For his mercies aye endure. Milton. For aye, always; forever; eternally.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -25,7 +33,7 @@
       ],
       "relatedWords": []
     },
-    "ayeay": {
+    "aye": {
       "word": "AYE; AY",
       "definitions": [
         {
@@ -33,18 +41,12 @@
           "partOfSpeech": "adverb"
         },
         {
-          "text": "Always; ever; continually; for an indefinite time. For his mercies aye endure. Milton. For aye, always; forever; eternally.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "aye": {
-      "word": "AYE",
-      "definitions": [
-        {
           "text": "An affirmative vote; one who votes in the affirmative; as, \"To call for the ayes and noes;\" \"The ayes have it.\"",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Always; ever; continually; for an indefinite time. For his mercies aye endure. Milton. For aye, always; forever; eternally.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": [
@@ -166,7 +168,27 @@
       ],
       "relatedWords": []
     },
-    "ayenayeinayeins": {
+    "ayen": {
+      "word": "AYEN; AYEIN; AYEINS",
+      "definitions": [
+        {
+          "text": "Again; back against. [Obs.] Chaucer.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ayein": {
+      "word": "AYEN; AYEIN; AYEINS",
+      "definitions": [
+        {
+          "text": "Again; back against. [Obs.] Chaucer.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ayeins": {
       "word": "AYEN; AYEIN; AYEINS",
       "definitions": [
         {
@@ -226,7 +248,17 @@
       ],
       "relatedWords": []
     },
-    "ayrieayry": {
+    "ayrie": {
+      "word": "AYRIE; AYRY",
+      "definitions": [
+        {
+          "text": "See Aerie. Drayton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ayry": {
       "word": "AYRIE; AYRY",
       "definitions": [
         {

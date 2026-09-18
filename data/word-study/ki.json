@@ -1,16 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "kielschweinapparentlycompoundedofthewordskeelandswinebut": {
-      "word": "kielschwein; apparently compounded of the words keel and swine; but",
-      "definitions": [
-        {
-          "text": "A piece of timber in a ship laid on the middle of the floor timbers over the keel, and binding the floor timbers to the keel; in iron vessels, a structure of plates, situated like the keelson of a timber ship. Cross keelson, a similar structure lying athwart the main keelson, to support the engines and boilers.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "kiaboocawood": {
       "word": "KIABOOCA WOOD",
       "definitions": [
@@ -235,22 +225,26 @@
       ],
       "relatedWords": []
     },
-    "kicksywicksykickywisky": {
+    "kicksywicksy": {
       "word": "KICKSY-WICKSY; KICKY-WISKY",
       "definitions": [
         {
           "text": "That which is restless and uneasy. contemptuously to a wife by Shakespeare, in \"All's Well that Ends Well,\" ii. 3, 297.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Fantastic; restless; as, kicksy-wicksy flames. Nares.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "kicksywicksy": {
-      "word": "KICKSY-WICKSY",
+    "kickywisky": {
+      "word": "KICKSY-WICKSY; KICKY-WISKY",
       "definitions": [
         {
-          "text": "Fantastic; restless; as, kicksy-wicksy flames. Nares.",
-          "partOfSpeech": "adjective"
+          "text": "That which is restless and uneasy. contemptuously to a wife by Shakespeare, in \"All's Well that Ends Well,\" ii. 3, 297.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -307,6 +301,10 @@
         {
           "text": "of Kythe. [Obs.] Gower. Chaucer.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "See Kiddy, v. t. [Slang]",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -385,7 +383,7 @@
       ],
       "relatedWords": []
     },
-    "kidfoxkidfox": {
+    "kidfox": {
       "word": "KIDFOX; KID-FOX",
       "definitions": [
         {
@@ -415,7 +413,17 @@
       ],
       "relatedWords": []
     },
-    "kidnaperkidnapper": {
+    "kidnaper": {
+      "word": "KIDNAPER; KIDNAPPER",
+      "definitions": [
+        {
+          "text": "One who steals or forcibly carries away a human being; a manstealer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kidnapper": {
       "word": "KIDNAPER; KIDNAPPER",
       "definitions": [
         {
@@ -447,7 +455,17 @@
       ],
       "relatedWords": []
     },
-    "kidneyformkidneyshaped": {
+    "kidneyform": {
+      "word": "KIDNEY-FORM; KIDNEY-SHAPED",
+      "definitions": [
+        {
+          "text": "Having the form or shape of a kidney; reniform; as, a kidney- shaped leaf. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kidneyshaped": {
       "word": "KIDNEY-FORM; KIDNEY-SHAPED",
       "definitions": [
         {
@@ -503,6 +521,16 @@
         {
           "text": "Hydrous sulphate of magnesia found at the salt mines of Stassfurt, Prussian Saxony.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "kieve": {
+      "word": "KIEVE",
+      "definitions": [
+        {
+          "text": "See Keeve, n.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -581,7 +609,17 @@
       ],
       "relatedWords": []
     },
-    "killdeekilldeer": {
+    "killdee": {
+      "word": "KILLDEE; KILLDEER",
+      "definitions": [
+        {
+          "text": "A small American plover (Ægialitis vocifera). are yellowish rufous; the belly, throat, and a line over the eyes, white; a ring round the neck and band across the breast, black.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "killdeer": {
       "word": "KILLDEE; KILLDEER",
       "definitions": [
         {
@@ -643,7 +681,7 @@
       "word": "KILLING",
       "definitions": [
         {
-          "text": "Literally, that kills; having power to kill; fatal; in a",
+          "text": "Literally, that kills; having power to kill; fatal; in a colloquial sense, conquering; captivating; irresistible. Those eyes are made so killing. Pope. Nothing could be more killingly spoken. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -727,7 +765,7 @@
       ],
       "relatedWords": []
     },
-    "kilogramkilogramme": {
+    "kilogram": {
       "word": "KILOGRAM; KILOGRAMME",
       "definitions": [
         {
@@ -737,7 +775,17 @@
       ],
       "relatedWords": []
     },
-    "kilogrammeterkilogrammetre": {
+    "kilogramme": {
+      "word": "KILOGRAM; KILOGRAMME",
+      "definitions": [
+        {
+          "text": "A measure of weight, being a thousand grams, equal to 2.2046 pounds avoirdupois (15,432.34 grains). It is equal to the weight of a cubic decimeter of distilled water at the temperature of maximum density, or 39º Fahrenheit.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kilogrammeter": {
       "word": "KILOGRAMMETER; KILOGRAMMETRE",
       "definitions": [
         {
@@ -747,7 +795,17 @@
       ],
       "relatedWords": []
     },
-    "kiloliterkilolitre": {
+    "kilogrammetre": {
+      "word": "KILOGRAMMETER; KILOGRAMMETRE",
+      "definitions": [
+        {
+          "text": "A measure of energy or work done, being the amount expended in raising one kilogram through the height of one meter, in the latitude of Paris.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kiloliter": {
       "word": "KILOLITER; KILOLITRE",
       "definitions": [
         {
@@ -757,7 +815,27 @@
       ],
       "relatedWords": []
     },
-    "kilometerkilometre": {
+    "kilolitre": {
+      "word": "KILOLITER; KILOLITRE",
+      "definitions": [
+        {
+          "text": "A measure of capacity equal to a cubic meter, or a thousand liters. It is equivalent to 35.315 cubic feet, and to 220.04 imperial gallons, or 264.18 American gallons of 321 cubic inches.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kilometer": {
+      "word": "KILOMETER; KILOMETRE",
+      "definitions": [
+        {
+          "text": "A measure of length, being a thousand meters. It is equal to 3,280.8 feet, or 62137 of a mile.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kilometre": {
       "word": "KILOMETER; KILOMETRE",
       "definitions": [
         {
@@ -967,7 +1045,17 @@
       ],
       "relatedWords": []
     },
-    "kinaesthetickinesthetic": {
+    "kinaesthetic": {
+      "word": "KINAESTHETIC; KINESTHETIC",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or involving, kinæsthesis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kinesthetic": {
       "word": "KINAESTHETIC; KINESTHETIC",
       "definitions": [
         {
@@ -1233,7 +1321,17 @@
       ],
       "relatedWords": []
     },
-    "kinematickinematical": {
+    "kinematic": {
+      "word": "KINEMATIC; KINEMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to kinematics. Kinematic curves, curves produced by machinery, or a combination of motions, as distinguished from mathematical curves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kinematical": {
       "word": "KINEMATIC; KINEMATICAL",
       "definitions": [
         {
@@ -1307,6 +1405,16 @@
         {
           "text": "Conveying motion; as; kinesodic substance; -- applied esp. to the spinal cord, because it is capable of conveying doth voluntary and reflex motor impulses, without itself being affected by motor impulses applied to it directly.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kinetic": {
+      "word": "KINETIC",
+      "definitions": [
+        {
+          "text": "Moving or causing motion; motory; active, as opposed to latent. Kinetic energy. See Energy, n. 4.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1597,7 +1705,17 @@
       ],
       "relatedWords": []
     },
-    "kingstonkingstone": {
+    "kingston": {
+      "word": "KINGSTON; KINGSTONE",
+      "definitions": [
+        {
+          "text": "The black angel fish. See Angel fish, under Angel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kingstone": {
       "word": "KINGSTON; KINGSTONE",
       "definitions": [
         {
@@ -2333,11 +2451,29 @@
       ],
       "relatedWords": []
     },
-    "kiteflyingkiteflier": {
+    "kiteflying": {
       "word": "KITEFLYING; KITEFLIER",
       "definitions": [
         {
-          "text": "A mode of raising money, or sustaining one's credit, by the use",
+          "text": "A mode of raising money, or sustaining one's credit, by the use of paper which is merely nominal; -- called also kiting.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Kite, n., 6. [Cant] McElrath. Thackeray.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kiteflier": {
+      "word": "KITEFLYING; KITEFLIER",
+      "definitions": [
+        {
+          "text": "A mode of raising money, or sustaining one's credit, by the use of paper which is merely nominal; -- called also kiting.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Kite, n., 6. [Cant] McElrath. Thackeray.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2368,6 +2504,10 @@
       "definitions": [
         {
           "text": "See Kythe. Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make known; to manifest; to show; to declare. [Obs: or Scot.] For gentle hearte kytheth gentilesse. Chaucer.",
           "partOfSpeech": "verb"
         }
       ],
@@ -2533,7 +2673,17 @@
       ],
       "relatedWords": []
     },
-    "kivikivikiwikiwi": {
+    "kivikivi": {
+      "word": "KIVIKIVI; KIWIKIWI",
+      "definitions": [
+        {
+          "text": "Any species of Apteryx, esp. A. australis; -- so called in imitation of its notes. Called also kiwi. See Apteryx.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "kiwikiwi": {
       "word": "KIVIKIVI; KIWIKIWI",
       "definitions": [
         {

@@ -82,27 +82,7 @@
       ],
       "relatedWords": []
     },
-    "fiberedfibred": {
-      "word": "FIBERED; FIBRED",
-      "definitions": [
-        {
-          "text": "Having fibers; made up of fibers.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "fiberfacedfibrefaced": {
-      "word": "FIBER-FACED; FIBRE-FACED",
-      "definitions": [
-        {
-          "text": "Having a visible fiber embodied in the surface of; -- applied esp. to a kind of paper for checks, drafts, etc.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "fiberfibre": {
+    "fiber": {
       "word": "FIBER; FIBRE",
       "definitions": [
         {
@@ -122,9 +102,227 @@
           "partOfSpeech": "noun"
         }
       ],
+      "relatedWords": [
+        "Aralac",
+        "Avisco",
+        "Celanese",
+        "Chemstrand",
+        "Dacron",
+        "Dynel",
+        "Lastex",
+        "Manila",
+        "Orlon",
+        "Terylene",
+        "Velon",
+        "Vicara",
+        "acetate rayon",
+        "all that lives",
+        "alpaca",
+        "angora",
+        "animal fiber",
+        "artificial fiber",
+        "bast",
+        "biosphere",
+        "biota",
+        "body-build",
+        "brand",
+        "brawn",
+        "capillament",
+        "cashmere",
+        "cast",
+        "character",
+        "characteristic",
+        "characteristics",
+        "cilium",
+        "cirrus",
+        "cobweb",
+        "coir",
+        "complexion",
+        "composition",
+        "constituents",
+        "constitution",
+        "cotton",
+        "crasis",
+        "denier",
+        "dharma",
+        "diathesis",
+        "disposition",
+        "ecosphere",
+        "ethos",
+        "fabric",
+        "fibrilla",
+        "filament",
+        "filamentule",
+        "flagellum",
+        "flax",
+        "flesh",
+        "flora and fauna",
+        "floss",
+        "frame",
+        "genius",
+        "gossamer",
+        "grain",
+        "habit",
+        "hair",
+        "hank",
+        "hemp",
+        "horsehair",
+        "hue",
+        "humor",
+        "humors",
+        "ilk",
+        "jute",
+        "kapok",
+        "kind",
+        "linen",
+        "living matter",
+        "living nature",
+        "llama hair",
+        "makeup",
+        "merino",
+        "mohair",
+        "mold",
+        "nature",
+        "near-silk",
+        "noosphere",
+        "nylon",
+        "oakum",
+        "organic matter",
+        "organic nature",
+        "organized matter",
+        "physique",
+        "plasm",
+        "property",
+        "quality",
+        "raffia",
+        "rayon",
+        "silk",
+        "sisal",
+        "skein",
+        "somatotype",
+        "sort",
+        "spandex",
+        "spirit",
+        "spun rayon",
+        "stamp",
+        "strand",
+        "streak",
+        "stripe",
+        "suchness",
+        "suture",
+        "system",
+        "temper",
+        "temperament",
+        "tendency",
+        "tendril",
+        "tenor",
+        "thread",
+        "threadlet",
+        "tissue",
+        "tone",
+        "tussah",
+        "type",
+        "vein",
+        "way",
+        "web",
+        "wool",
+        "worsted",
+        "yarn",
+        "zephyr"
+      ]
+    },
+    "fibered": {
+      "word": "FIBERED; FIBRED",
+      "definitions": [
+        {
+          "text": "Having fibers; made up of fibers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
       "relatedWords": []
     },
-    "fiberlessfibreless": {
+    "fiberfaced": {
+      "word": "FIBER-FACED; FIBRE-FACED",
+      "definitions": [
+        {
+          "text": "Having a visible fiber embodied in the surface of; -- applied esp. to a kind of paper for checks, drafts, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fiberless": {
+      "word": "FIBERLESS; FIBRELESS",
+      "definitions": [
+        {
+          "text": "Having no fibers; destitute of fibers or fiber.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibre": {
+      "word": "FIBER; FIBRE",
+      "definitions": [
+        {
+          "text": "One of the delicate, threadlike portions of which the tissues of plants and animals are in part constituted; as, the fiber of flax or of muscle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any fine, slender thread, or threadlike substance; as, a fiber of spun glass; especially, one of the slender rootlets of a plant.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sinew; strength; toughness; as, a man of real fiber. Yet had no fibers in him, nor no force. Chapman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A general name for the raw material, such as cotton, flax, hemp, etc., used in textile manufactures. Fiber gun, a kind of steam gun for converting, wood, straw, etc., into fiber. The material is shut up in the gun with steam, air, or gas at a very high pressure which is afterward relieved suddenly by letting a lid at the muzzle fly open, when the rapid expansion separates the fibers. the arts, as hemp, flax, ramie, agave, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "cast",
+        "character",
+        "composition",
+        "constitution",
+        "essence",
+        "fabric",
+        "filament",
+        "material",
+        "mould",
+        "nature",
+        "quality",
+        "strand",
+        "stripe",
+        "structure",
+        "substance",
+        "tendril",
+        "texture",
+        "thread"
+      ]
+    },
+    "fibred": {
+      "word": "FIBERED; FIBRED",
+      "definitions": [
+        {
+          "text": "Having fibers; made up of fibers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibrefaced": {
+      "word": "FIBER-FACED; FIBRE-FACED",
+      "definitions": [
+        {
+          "text": "Having a visible fiber embodied in the surface of; -- applied esp. to a kind of paper for checks, drafts, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fibreless": {
       "word": "FIBERLESS; FIBRELESS",
       "definitions": [
         {
@@ -422,7 +620,7 @@
       "word": "FIBROCARTILAGE",
       "definitions": [
         {
-          "text": "A kind of cartilage with a fibrous matrix and approaching",
+          "text": "A kind of cartilage with a fibrous matrix and approaching fibrous connective tissue in structure.",
           "partOfSpeech": "noun"
         }
       ],
@@ -496,7 +694,7 @@
       "word": "FIBROUS",
       "definitions": [
         {
-          "text": "Containing, or consisting of, fibers; as, the fibrous coat of",
+          "text": "Containing, or consisting of, fibers; as, the fibrous coat of the cocoanut; the fibrous roots of grasses.",
           "partOfSpeech": "adjective"
         }
       ],

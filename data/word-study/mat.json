@@ -43,7 +43,17 @@
       ],
       "relatedWords": []
     },
-    "matabelematabeles": {
+    "matabele": {
+      "word": "MATABELE; MATABELES",
+      "definitions": [
+        {
+          "text": "A warlike South African Kaffir tribe.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "matabeles": {
       "word": "MATABELE; MATABELES",
       "definitions": [
         {
@@ -73,7 +83,25 @@
       ],
       "relatedWords": []
     },
-    "matadorematador": {
+    "matador": {
+      "word": "MATADORE; MATADOR",
+      "definitions": [
+        {
+          "text": "The killer; the man appointed to kill the bull in bullfights.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Card Playing)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In the game of quadrille or omber, the three principal trumps, the ace of spades being the first, the ace of clubs the third, and the second being the deuce of a black trump or the seven of a red one. When Lady Tricksey played a four, You took it with a matadore. Swift.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "matadore": {
       "word": "MATADORE; MATADOR",
       "definitions": [
         {
@@ -149,6 +177,38 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "A person or thing equal or similar to another; one able to mate or cope with another; an equal; a mate. Government . . . makes an innocent man, though of the lowest rank, a match for the mightiest of his fellow subjects. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bringing together of two parties suited to one another, as for a union, a trial of skill or force, a contest, or the like; as, specifically: (a) A contest to try strength or skill, or to determine superiority; an emulous struggle. \"Many a warlike match.\" Drayton. A solemn match was made; he lost the prize. Dryden. (b) A matrimonial union; a marriage.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An agreement, compact, etc. \"Thy hand upon that match.\" Shak. Love doth seldom suffer itself to be confined by other matches than those of its own making. Boyle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A candidate for matrimony; one to be gained in marriage. \"She . . . was looked upon as the richest match of the West.\" Clarendon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Equality of conditions in contest or competition. It were no match, your nail against his horn. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Suitable combination or bringing together; that which corresponds or harmonizes with something else; as, the carpet and curtains are a match.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Founding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A perforated board, block of plaster, hardened sand, etc., in which a pattern is partly imbedded when a mold is made, for giving shape to the surfaces of separation between the parts of the mold. Match boarding (Carp.), boards fitted together with tongue and groove, or prepared to be so fitted. edges of boards which are joined by grooving and tonguing. which the halves of a pattern are fastened, to facilitate molding. Knight. another wheel; specifically, one of a pair of cogwheels of equal size.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To be a mate or match for; to be able to complete with; to rival successfully; to equal. No settled senses of the world can match The pleasure of that madness. Shak.",
           "partOfSpeech": "verb"
         },
@@ -191,7 +251,7 @@
       "word": "MATCHABLE",
       "definitions": [
         {
-          "text": "Capable of being matched; comparable on equal conditions;",
+          "text": "Capable of being matched; comparable on equal conditions; adapted to being joined together; correspondent. Sir Walter Raleigh . . . is matchable with the best of the ancients. Hakewill.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -245,7 +305,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Unlike each other; unequal; unsuited. [Obs.] \"Matchless ears.\"",
+          "text": "Unlike each other; unequal; unsuited. [Obs.] \"Matchless ears.\" Spenser.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -391,11 +451,19 @@
         {
           "text": "A dish of food composed of many kings of fish.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stew, commonly of fish, flavored with wine, and served with a wine sauce containing onions, mushrooms, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An old dance of sailors, in double time, and somewhat like a hornpipe.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "matelotematelotte": {
+    "matelotte": {
       "word": "MATELOTE; MATELOTTE",
       "definitions": [
         {
@@ -505,7 +573,17 @@
       ],
       "relatedWords": []
     },
-    "materialisticmaterialistical": {
+    "materialistic": {
+      "word": "MATERIALISTIC; MATERIALISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to materialism or materialists; of the nature of materialism. But to me his very spiritualism seemed more materialistic than his physics. C. Kingsley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "materialistical": {
       "word": "MATERIALISTIC; MATERIALISTICAL",
       "definitions": [
         {
@@ -621,7 +699,17 @@
       ],
       "relatedWords": []
     },
-    "materiatemateriated": {
+    "materiate": {
+      "word": "MATERIATE; MATERIATED",
+      "definitions": [
+        {
+          "text": "Consisting of matter. [Obs.] Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "materiated": {
       "word": "MATERIATE; MATERIATED",
       "definitions": [
         {
@@ -725,7 +813,7 @@
       "word": "MATHEMATICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to mathematics; according to mathematics; hence, theoretically precise; accurate; as, mathematical geography;",
+          "text": "Of or pertaining to mathematics; according to mathematics; hence, theoretically precise; accurate; as, mathematical geography; mathematical instruments; mathematical exactness.",
           "partOfSpeech": "adjective"
         }
       ],

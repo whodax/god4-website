@@ -273,7 +273,7 @@
       "word": "REACTIVE",
       "definitions": [
         {
-          "text": "Having power to react; tending to reaction; of the nature of",
+          "text": "Having power to react; tending to reaction; of the nature of reaction.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -365,6 +365,10 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "imp. & p. p. of Read, v. t. & i.",
+          "partOfSpeech": ""
+        },
+        {
           "text": "Instructed or knowing by reading; versed in books; learned. A poet . . . well read in Longinus. Addison.",
           "partOfSpeech": "adjective"
         }
@@ -385,7 +389,7 @@
       "word": "READABLE",
       "definitions": [
         {
-          "text": "Such as can be read; legible; fit or suitable to be read; worth",
+          "text": "Such as can be read; legible; fit or suitable to be read; worth reading; interesting.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -711,7 +715,17 @@
       ],
       "relatedWords": []
     },
-    "reaffirmancereaffirmation": {
+    "reaffirmance": {
+      "word": "REAFFIRMANCE; REAFFIRMATION",
+      "definitions": [
+        {
+          "text": "A second affirmation.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "reaffirmation": {
       "word": "REAFFIRMANCE; REAFFIRMATION",
       "definitions": [
         {
@@ -995,7 +1009,7 @@
       "word": "REALIZING",
       "definitions": [
         {
-          "text": "Serving to make real, or to impress on the mind as a reality;",
+          "text": "Serving to make real, or to impress on the mind as a reality; as, a realizing view of the danger incurred.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1048,24 +1062,6 @@
         },
         {
           "text": "Hence, in general, province; region; country; domain; department; division; as, the realm of fancy.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "realmdidnotcoalescemotley": {
-      "word": "realm did not coalesce. Motley.",
-      "definitions": [
-        {
-          "text": "Dissonant; not in harmony or musical concord; harsh; jarring; as, discordant notes or sounds. For still their music seemed to start Discordant echoes in each heart. Longfellow.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Geol.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Said of strata which lack conformity in direction of bedding, either as in unconformability, or as caused by a fault.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1417,7 +1413,17 @@
       ],
       "relatedWords": []
     },
-    "reardorsereardoss": {
+    "reardorse": {
+      "word": "REARDORSE; REARDOSS",
+      "definitions": [
+        {
+          "text": "A reredos.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reardoss": {
       "word": "REARDORSE; REARDOSS",
       "definitions": [
         {
@@ -1487,7 +1493,7 @@
       ],
       "relatedWords": []
     },
-    "rearmousereremouse": {
+    "rearmouse": {
       "word": "REARMOUSE; REREMOUSE",
       "definitions": [
         {
@@ -1787,11 +1793,31 @@
       ],
       "relatedWords": []
     },
+    "reassimilate": {
+      "word": "REASSIMILATE",
+      "definitions": [
+        {
+          "text": "To assimilate again.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "reassociate": {
       "word": "REASSOCIATE",
       "definitions": [
         {
           "text": "To associate again; to bring again into close relatoins.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reassume": {
+      "word": "REASSUME",
+      "definitions": [
+        {
+          "text": "To assume again or anew; to resume.",
           "partOfSpeech": "verb"
         }
       ],
@@ -1843,7 +1869,7 @@
       "word": "REASTY",
       "definitions": [
         {
-          "text": "Rusty and rancid; -- applied to salt meat. [Obs. or Prov. Eng.]",
+          "text": "Rusty and rancid; -- applied to salt meat. [Obs. or Prov. Eng.] Tusser.",
           "partOfSpeech": "adjective"
         }
       ],

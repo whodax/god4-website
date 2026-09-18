@@ -25,6 +25,10 @@
       "word": "BLEACH",
       "definitions": [
         {
+          "text": "To make white, or whiter; to remove the color, or stains, from; to blanch; to whiten. The destruction of the coloring matters attached to the bodies to be bleached is effected either by the action of the air and light, of chlorine, or of sulphurous acid. Ure. Immortal liberty, whose look sublime Hath bleached the tyrant's cheek in every varying clime. Smollett.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To grow white or lose color; to whiten.",
           "partOfSpeech": "verb"
         }
@@ -448,6 +452,16 @@
       ],
       "relatedWords": []
     },
+    "bleared": {
+      "word": "BLEARED",
+      "definitions": [
+        {
+          "text": "Dimmed, as by a watery humor; affected with rheum. Dardanian wives, With bleared visages, come forth to view The issue of the exploit. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "bleareye": {
       "word": "BLEAREYE",
       "definitions": [
@@ -832,7 +846,7 @@
         "whipped"
       ]
     },
-    "bleckblek": {
+    "bleck": {
       "word": "BLECK; BLEK",
       "definitions": [
         {
@@ -1062,6 +1076,16 @@
         {
           "text": "A running or issuing of blood, as from the nose or a wound; a hemorrhage; the operation of letting blood, as in surgery; a drawing or running of sap from a tree or plant.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blek": {
+      "word": "BLECK; BLEK",
+      "definitions": [
+        {
+          "text": "To blacken; also, to defile. [Obs. or Dial.] Wyclif.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1747,7 +1771,17 @@
       ],
       "relatedWords": []
     },
-    "blennioidblenniid": {
+    "blenniid": {
+      "word": "BLENNIOID; BLENNIID",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or resembling, the blennies.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "blennioid": {
       "word": "BLENNIOID; BLENNIID",
       "definitions": [
         {

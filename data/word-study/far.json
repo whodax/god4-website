@@ -9,6 +9,26 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "Distant in any direction; not near; remote; mutually separated by a wide space or extent. They said, . . . We be come from a far country. Josh. ix. 6. The nations far and near contend in choice. Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Remote from purpose; contrary to design or wishes; as, far be it from me to justify cruelty.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Remote in affection or obedience; at a distance, morally or spiritually; t enmity with; alienated. They that are far from thee ahsll perish. Ps. lxxiii. 27.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Widely different in nature or quality; opposite in character. He was far from ill looking, though he thought himself still farther. F. Anstey.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The more distant of two; as, the far side (called also off side) of a horse, that is, the right side, or the one opposite to the rider when he mounts. is sometimes not easily discriminated. By far, by much; by a great difference. long intervals. \"The examinations are few and far between.\" Farrar.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "To a great extent or distance of space; widely; as, we are separated far from each other.",
           "partOfSpeech": "adverb"
         },
@@ -89,12 +109,32 @@
       ],
       "relatedWords": []
     },
-    "faradismfaradization": {
+    "faradism": {
       "word": "FARADISM; FARADIZATION",
       "definitions": [
         {
           "text": "The treatment with faradic or induced currents of electricity for remedial purposes.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "faradization": {
+      "word": "FARADISM; FARADIZATION",
+      "definitions": [
+        {
+          "text": "The treatment with faradic or induced currents of electricity for remedial purposes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "faradize": {
+      "word": "FARADIZE",
+      "definitions": [
+        {
+          "text": "To stimulate with, or subject to, faradic, or inducted, electric currents. --Far\"a*diz`er (#), n.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -324,7 +364,7 @@
       "word": "FARCICAL",
       "definitions": [
         {
-          "text": "Pertaining to farce; appropriated to farce; ludicrous; unnatural; unreal.",
+          "text": "Pertaining to farce; appropriated to farce; ludicrous; unnatural; unreal. They deny the characters to be farcical, because they are Gay.",
           "partOfSpeech": "adjective"
         },
         {
@@ -375,7 +415,17 @@
       ],
       "relatedWords": []
     },
-    "farcimenfarcin": {
+    "farcimen": {
+      "word": "FARCIMEN; FARCIN",
+      "definitions": [
+        {
+          "text": "Same as Farcy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "farcin": {
       "word": "FARCIMEN; FARCIN",
       "definitions": [
         {
@@ -486,6 +536,26 @@
     "fare": {
       "word": "FARE",
       "definitions": [
+        {
+          "text": "To go; to pass; to journey; to travel. So on he fares, and to the border comes Of Eden. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be in any state, or pass through any experience, good or bad; to be attended with any circummstances or train of events, fortunate or unfortunate; as, he fared well, or ill. So fares the stag among the enraged hounds. Denham. I bid you most heartily well to fare. Robynson (More's Utopia). So fared the knight between two foes. Hudibras.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be treated or entertained at table, or with bodily or social comforts; to live. There was a certain rich man wwhich . . . fared sumptuously every day. Luke xvi. 19.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To happen well, or ill; -- used impersonally; as, we shall see how it will fare with him. Sso fares it when with truth falsehood contends. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To behave; to conduct one's self. [Obs.] She ferde [fared] as she would die. Chaucer.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "A journey; a passage. [Obs.] That nought might stay his fare. Spenser.",
           "partOfSpeech": "noun"
@@ -1332,20 +1402,6 @@
       ],
       "relatedWords": []
     },
-    "farmerwhichtheyestimatebythestockthathehasuponthefarm": {
-      "word": "farmer, which they estimate by the stock that he has upon the farm.",
-      "definitions": [
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The French name for the tenor voice or part; also, for the tenor viol or viola.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "farmery": {
       "word": "FARMERY",
       "definitions": [
@@ -1838,18 +1894,12 @@
       "relatedWords": []
     },
     "farstretched": {
-      "word": "FAR-STRETCHED",
+      "word": "FAR-STRETCHED; FARSTRETCHED",
       "definitions": [
         {
           "text": "Stretched beyond ordinary limits.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "farstretchedfarstretched": {
-      "word": "FAR-STRETCHED; FARSTRETCHED",
-      "definitions": [
+        },
         {
           "text": "Stretched beyond ordinary limits.",
           "partOfSpeech": "adjective"

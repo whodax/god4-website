@@ -432,6 +432,10 @@
         {
           "text": "See Clake.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The bernicle goose; -- called also clack goose.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1007,7 +1011,7 @@
         "telepathic"
       ]
     },
-    "clakeclaik": {
+    "clake": {
       "word": "CLAKE; CLAIK",
       "definitions": [
         {
@@ -1534,7 +1538,7 @@
       "word": "CLAMOROUS",
       "definitions": [
         {
-          "text": "Speaking and repeating loud words; full of clamor; calling or demanding loudly or urgently; vociferous; noisy; bawling; loud; turbulent. \"My young ones were clamorous for a morning's excursion.\"",
+          "text": "Speaking and repeating loud words; full of clamor; calling or demanding loudly or urgently; vociferous; noisy; bawling; loud; turbulent. \"My young ones were clamorous for a morning's excursion.\" Southey.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1744,6 +1748,162 @@
       ],
       "relatedWords": []
     },
+    "clan": {
+      "word": "CLAN",
+      "definitions": [
+        {
+          "text": "A tribe or collection of families, united under a chieftain, regarded as having the same common ancestor, and bearing the same surname; as, the clan of Macdonald. \"I have marshaled my clan.\" Campbell.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A clique; a sect, society, or body of persons; esp., a body of persons united by some common interest or pursuit; -- sometimes used contemptuously. Partidge and the rest of his clan may hoot me. Smolett. The whole clan of the enlightened among us. Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "animal kingdom",
+        "ashram",
+        "band",
+        "blood",
+        "body",
+        "bracket",
+        "branch",
+        "brand",
+        "breed",
+        "brood",
+        "brotherhood",
+        "bunch",
+        "cabal",
+        "cadre",
+        "camarilla",
+        "camp",
+        "cast",
+        "caste",
+        "category",
+        "cell",
+        "character",
+        "charmed circle",
+        "circle",
+        "class",
+        "clique",
+        "closed circle",
+        "colony",
+        "color",
+        "commonwealth",
+        "commune",
+        "community",
+        "coterie",
+        "crew",
+        "crowd",
+        "deme",
+        "denomination",
+        "description",
+        "designation",
+        "division",
+        "dynasty",
+        "economic class",
+        "elite",
+        "elite group",
+        "endogamous group",
+        "estate",
+        "extended family",
+        "faction",
+        "family",
+        "feather",
+        "fellowship",
+        "folk",
+        "form",
+        "fraternity",
+        "gang",
+        "genre",
+        "gens",
+        "genus",
+        "grade",
+        "grain",
+        "group",
+        "grouping",
+        "head",
+        "heading",
+        "house",
+        "ilk",
+        "ingroup",
+        "inner circle",
+        "junta",
+        "junto",
+        "kidney",
+        "kin",
+        "kind",
+        "kindred",
+        "kinship group",
+        "label",
+        "level",
+        "line",
+        "lineage",
+        "lot",
+        "make",
+        "manner",
+        "mark",
+        "matriclan",
+        "mob",
+        "moiety",
+        "mold",
+        "nation",
+        "nature",
+        "nuclear family",
+        "number",
+        "order",
+        "outfit",
+        "party",
+        "patriclan",
+        "people",
+        "persuasion",
+        "phratria",
+        "phratry",
+        "phyle",
+        "phylum",
+        "pigeonhole",
+        "plant kingdom",
+        "position",
+        "predicament",
+        "race",
+        "rank",
+        "rating",
+        "ring",
+        "rubric",
+        "section",
+        "sept",
+        "set",
+        "settlement",
+        "shape",
+        "sly",
+        "social class",
+        "society",
+        "sort",
+        "species",
+        "stamp",
+        "station",
+        "status",
+        "stem",
+        "stirps",
+        "stock",
+        "strain",
+        "stratum",
+        "stripe",
+        "style",
+        "subcaste",
+        "subdivision",
+        "subgroup",
+        "suborder",
+        "the like of",
+        "the likes of",
+        "title",
+        "totem",
+        "tribe",
+        "type",
+        "variety",
+        "we-group"
+      ]
+    },
     "clancular": {
       "word": "CLANCULAR",
       "definitions": [
@@ -1768,7 +1928,7 @@
       "word": "CLANDESTINE",
       "definitions": [
         {
-          "text": "Conducted with secrecy; withdrawn from public notice, usually for an evil purpose; kept secret; hidden; private; underhand; as, a clandestine marriage. Locke.",
+          "text": "Conducted with secrecy; withdrawn from public notice, usually for an evil purpose; kept secret; hidden; private; underhand; as, a clandestine marriage. Locke. surreptitious; furtive; fraudulent.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2071,25 +2231,11 @@
       ],
       "relatedWords": []
     },
-    "clannclandoffspringtribefamilyperhfromlplaniascion": {
-      "word": "clann, cland, offspring, tribe, family; perh. from L. plania scion,",
-      "definitions": [
-        {
-          "text": "A tribe or collection of families, united under a chieftain, regarded as having the same common ancestor, and bearing the same surname; as, the clan of Macdonald. \"I have marshaled my clan.\" Campbell.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A clique; a sect, society, or body of persons; esp., a body of persons united by some common interest or pursuit; -- sometimes used contemptuously. Partidge and the rest of his clan may hoot me. Smolett. The whole clan of the enlightened among us. Burke.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "clannish": {
       "word": "CLANNISH",
       "definitions": [
         {
-          "text": "Of or pertaining to a clan; closely united, like a clan; disposed to associate only with one's clan or clique; actuated by the",
+          "text": "Of or pertaining to a clan; closely united, like a clan; disposed to associate only with one's clan or clique; actuated by the traditions, prejudices, habits, etc., of a clan.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2251,6 +2397,10 @@
         },
         {
           "text": "(Falconry)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The nether part of the beak of a hawk. Clap dish. See Clack dish, under Clack, n.",
           "partOfSpeech": "noun"
         },
         {
@@ -2600,7 +2750,17 @@
         "wood"
       ]
     },
-    "clapbreadclapcake": {
+    "clapbread": {
+      "word": "CLAPBREAD; CLAPCAKE",
+      "definitions": [
+        {
+          "text": "Oatmeal cake or bread clapped or beaten till it is thin. [Obs.] Halliwell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "clapcake": {
       "word": "CLAPBREAD; CLAPCAKE",
       "definitions": [
         {
@@ -2896,7 +3056,17 @@
       ],
       "relatedWords": []
     },
-    "clarenceuxclarencieux": {
+    "clarenceux": {
+      "word": "CLARENCEUX; CLARENCIEUX",
+      "definitions": [
+        {
+          "text": "See King-at-arms.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "clarencieux": {
       "word": "CLARENCEUX; CLARENCIEUX",
       "definitions": [
         {
@@ -4593,8 +4763,20 @@
       "relatedWords": []
     },
     "classic": {
-      "word": "CLASSIC",
+      "word": "CLASSIC; CLASSICAL",
       "definitions": [
+        {
+          "text": "Of or relating to the first class or rank, especially in literature or art. Give, as thy last memorial to the age, One classic drama, and reform the stage. Byron. Mr. Greaves may justly be reckoned a classical author on this subject [Roman weights and coins]. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the ancient Greeks and Romans, esp. to Greek or Roman authors of the highest rank, or of the period when their best literature was produced; of or pertaining to places inhabited by the ancient Greeks and Romans, or rendered famous by their deeds. Though throned midst Latium's classic plains. Mrs. Hemans. The epithet classical, as applied to ancient authors, is determined less by the purity of their style than by the period at which they wrote. Brande & C. He [Atterbury] directed the classical studies of the undergraduates of his college. Macaulay.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Conforming to the best authority in literature and art; chaste; pure; refined; as, a classical style. Classical, provincial, and national synods. Macaulay. Classicals orders. (Arch.) See under Order.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A work of acknowledged excellence and authrity, or its author; -- originally used of Greek and Latin works or authors, but now applied to authors and works of a like character in any language. In is once raised him to the rank of a legitimate English classic. Macaulay.",
           "partOfSpeech": "noun"
@@ -4758,6 +4940,182 @@
         "writing"
       ]
     },
+    "classical": {
+      "word": "CLASSIC; CLASSICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to the first class or rank, especially in literature or art. Give, as thy last memorial to the age, One classic drama, and reform the stage. Byron. Mr. Greaves may justly be reckoned a classical author on this subject [Roman weights and coins]. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the ancient Greeks and Romans, esp. to Greek or Roman authors of the highest rank, or of the period when their best literature was produced; of or pertaining to places inhabited by the ancient Greeks and Romans, or rendered famous by their deeds. Though throned midst Latium's classic plains. Mrs. Hemans. The epithet classical, as applied to ancient authors, is determined less by the purity of their style than by the period at which they wrote. Brande & C. He [Atterbury] directed the classical studies of the undergraduates of his college. Macaulay.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Conforming to the best authority in literature and art; chaste; pure; refined; as, a classical style. Classical, provincial, and national synods. Macaulay. Classicals orders. (Arch.) See under Order.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Attic",
+        "Ciceronian",
+        "Gothic",
+        "Greek",
+        "Latin",
+        "Roman",
+        "Victorian",
+        "absolute",
+        "aesthetic",
+        "antediluvian",
+        "antiquated",
+        "antique",
+        "archaic",
+        "archetypical",
+        "arrant",
+        "artistic",
+        "authoritative",
+        "belletristic",
+        "capital",
+        "champion",
+        "chaste",
+        "choice",
+        "classic",
+        "clear",
+        "common",
+        "commonplace",
+        "complete",
+        "consummate",
+        "crass",
+        "decided",
+        "definitive",
+        "developed",
+        "direct",
+        "downright",
+        "easy",
+        "egregious",
+        "elegant",
+        "established",
+        "everyday",
+        "excellent",
+        "exemplary",
+        "expert",
+        "famous",
+        "fine",
+        "finished",
+        "flagrant",
+        "fossil",
+        "fossilized",
+        "fully developed",
+        "garden",
+        "garden-variety",
+        "glaring",
+        "graceful",
+        "gracile",
+        "gross",
+        "grown old",
+        "homely",
+        "homespun",
+        "household",
+        "ideal",
+        "in good taste",
+        "influential",
+        "intolerable",
+        "limpid",
+        "literary",
+        "lucid",
+        "masterful",
+        "masterly",
+        "matter-of-fact",
+        "mature",
+        "matured",
+        "medieval",
+        "mid-Victorian",
+        "model",
+        "natural",
+        "neat",
+        "nondescript",
+        "of choice",
+        "of other times",
+        "of quality",
+        "old-world",
+        "ordinary",
+        "out-and-out",
+        "outright",
+        "paradigmatic",
+        "pellucid",
+        "perfect",
+        "perfected",
+        "perspicuous",
+        "petrified",
+        "plain",
+        "pleasing",
+        "polished",
+        "positive",
+        "precedential",
+        "precious",
+        "prime",
+        "proficient",
+        "profound",
+        "pronounced",
+        "proper",
+        "prosaic",
+        "prosy",
+        "prototypal",
+        "pure",
+        "pure and simple",
+        "quiet",
+        "quintessential",
+        "rank",
+        "refined",
+        "regular",
+        "representative",
+        "restrained",
+        "ripe",
+        "ripened",
+        "round",
+        "serious",
+        "shattering",
+        "shocking",
+        "simple",
+        "standard",
+        "stark",
+        "stark-staring",
+        "straightforward",
+        "subdued",
+        "superannuated",
+        "superior",
+        "superlative",
+        "surpassing",
+        "tasteful",
+        "terse",
+        "the veriest",
+        "thorough",
+        "thoroughgoing",
+        "top",
+        "top-notch",
+        "total",
+        "traditional",
+        "trim",
+        "typical",
+        "unaffected",
+        "unbearable",
+        "unconscionable",
+        "undeniable",
+        "understated",
+        "unequivocal",
+        "unlabored",
+        "unmitigated",
+        "unobtrusive",
+        "unqualified",
+        "unrelieved",
+        "unspoiled",
+        "utter",
+        "weighty",
+        "well-chosen",
+        "workaday",
+        "workday"
+      ]
+    },
     "classicalism": {
       "word": "CLASSICALISM",
       "definitions": [
@@ -4782,7 +5140,7 @@
       ],
       "relatedWords": []
     },
-    "classicalityclassicalness": {
+    "classicality": {
       "word": "CLASSICALITY; CLASSICALNESS",
       "definitions": [
         {
@@ -4802,6 +5160,16 @@
         {
           "text": "In the manner of classes; according to a regular order of classes or sets.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "classicalness": {
+      "word": "CLASSICALITY; CLASSICALNESS",
+      "definitions": [
+        {
+          "text": "The quality of being classical.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -5558,24 +5926,6 @@
         "word-group"
       ]
     },
-    "claustrabarboltboundsfrclaudereclausumtoclosesee": {
-      "word": "claustra, bar, bolt, bounds, fr. claudere, clausum, to close. See",
-      "definitions": [
-        {
-          "text": "An inclosed place. [Obs.] Chaucer.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A covered passage or ambulatory on one side of a court; (pl.) the series of such passages on the different sides of any court, esp. that of a monastery or a college. But let my due feet never fail To walk the studious cloister's pale. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A monastic establishment; a place for retirement from the world for religious duties. Fitter for a cloister than a crown. Daniel. Cloister garth (Arch.), the garden or open part of a court inclosed by the cloisters. and convent are generic terms, and denote a place of seclusion from the world for persons who devote their lives to religious purposes. They differ is that the distinctive idea of cloister is that of seclusion from the world, that of convent, community of living. Both terms denote houses for recluses of either sex. A cloister or convent for monks is called a monastery; for nuns, a nunnery. An abbey is a convent or monastic institution governed by an abbot or an abbess; a priory is one governed by a prior or a prioress, and is usually affiliated to an abbey.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "claustral": {
       "word": "CLAUSTRAL",
       "definitions": [
@@ -5590,7 +5940,7 @@
       "word": "CLAUSTRUM",
       "definitions": [
         {
-          "text": "A thin lamina of gray matter in each cerebral hemiphere of the",
+          "text": "A thin lamina of gray matter in each cerebral hemiphere of the brain of man.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5616,7 +5966,17 @@
       ],
       "relatedWords": []
     },
-    "clavateclavated": {
+    "clavate": {
+      "word": "CLAVATE; CLAVATED",
+      "definitions": [
+        {
+          "text": "Club-shaped; having the form of a club; growing gradually thicker toward the top.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "clavated": {
       "word": "CLAVATE; CLAVATED",
       "definitions": [
         {

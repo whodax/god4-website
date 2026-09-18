@@ -383,7 +383,7 @@
       ],
       "relatedWords": []
     },
-    "grudgeonsgurgeons": {
+    "grudgeons": {
       "word": "GRUDGEONS; GURGEONS",
       "definitions": [
         {
@@ -535,8 +535,16 @@
       "relatedWords": []
     },
     "gruesome": {
-      "word": "GRUESOME",
+      "word": "GREWSOME; GRUESOME",
       "definitions": [
+        {
+          "text": ", Grue\"some, a. Etym: [From a word akin to Dan. gru horror, terror + -some; cf. D. gruwzaam, G. grausam. Cf. Grisly.]",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Ugly; frightful. Grewsome sights of war. C. Kingsley.",
+          "partOfSpeech": ""
+        },
         {
           "text": "Same as Grewsome. [Scot.]",
           "partOfSpeech": "adjective"
@@ -626,7 +634,7 @@
       "word": "GRUFF",
       "definitions": [
         {
-          "text": "Of a rough or stern manner, voice, or countenance; sour; surly; severe; harsh. Addison.",
+          "text": "Of a rough or stern manner, voice, or countenance; sour; surly; severe; harsh. Addison. Gruff, disagreeable, sarcastic remarks. Thackeray.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1263,6 +1271,18 @@
         },
         {
           "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of several American marine fishes. See Sea robin, and Grunt, n., 2.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Brass Founding)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hook used in lifting a crucible.",
           "partOfSpeech": "noun"
         }
       ],

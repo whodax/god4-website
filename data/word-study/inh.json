@@ -127,7 +127,25 @@
       ],
       "relatedWords": []
     },
-    "inhabitanceinhabitancy": {
+    "inhabitance": {
+      "word": "INHABITANCE; INHABITANCY",
+      "definitions": [
+        {
+          "text": "The act of inhabiting, or the state of being inhabited; the condition of an inhabitant; residence; occupancy. Ruins yet resting in the wild moors testify a former inhabitance. Carew.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of having legal right to claim the privileges of a recognized inhabitant; especially, the right to support in case of poverty, acquired by residence in a town; habitancy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inhabitancy": {
       "word": "INHABITANCE; INHABITANCY",
       "definitions": [
         {
@@ -514,7 +532,17 @@
       ],
       "relatedWords": []
     },
-    "inharmonicinharmonical": {
+    "inharmonic": {
+      "word": "INHARMONIC; INHARMONICAL",
+      "definitions": [
+        {
+          "text": "Not harmonic; inharmonious; discordant; dissonant.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inharmonical": {
       "word": "INHARMONIC; INHARMONICAL",
       "definitions": [
         {
@@ -801,7 +829,17 @@
         "with one voice"
       ]
     },
-    "inhaulinhauler": {
+    "inhaul": {
+      "word": "INHAUL; INHAULER",
+      "definitions": [
+        {
+          "text": "A rope used to draw in the jib boom, or flying jib boom.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "inhauler": {
       "word": "INHAUL; INHAULER",
       "definitions": [
         {
@@ -864,7 +902,47 @@
         "subsist in"
       ]
     },
-    "inherenceinherency": {
+    "inherence": {
+      "word": "INHERENCE; INHERENCY",
+      "definitions": [
+        {
+          "text": "The state of inhering; permanent existence in something; innateness; inseparable and essential connection. Jer. Taylor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "accessibility",
+        "actual presence",
+        "availability",
+        "being here",
+        "being there",
+        "essentiality",
+        "existence",
+        "fundamentality",
+        "hereness",
+        "immanence",
+        "immediacy",
+        "inbeing",
+        "indigenousness",
+        "indwelling",
+        "indwellingness",
+        "innateness",
+        "innerness",
+        "internality",
+        "intrinsicality",
+        "inwardness",
+        "nonobjectivity",
+        "occurrence",
+        "physical presence",
+        "presence",
+        "spiritual presence",
+        "subjectivity",
+        "thereness",
+        "ubiety",
+        "whereness"
+      ]
+    },
+    "inherency": {
       "word": "INHERENCE; INHERENCY",
       "definitions": [
         {

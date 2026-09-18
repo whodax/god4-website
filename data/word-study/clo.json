@@ -578,6 +578,80 @@
         "yokel"
       ]
     },
+    "cloddish": {
+      "word": "CLODDISH",
+      "definitions": [
+        {
+          "text": "Resembling clods; gross; low; stupid; boorish. Hawthorne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Boeotian",
+        "asinine",
+        "beef-brained",
+        "beef-witted",
+        "blockish",
+        "boorish",
+        "bovine",
+        "carlish",
+        "chumpish",
+        "churlish",
+        "clodhopping",
+        "clownish",
+        "countrified",
+        "country-born",
+        "country-bred",
+        "cowish",
+        "crass",
+        "dense",
+        "doltish",
+        "dullard",
+        "dumb",
+        "duncical",
+        "duncish",
+        "farmerish",
+        "fat",
+        "from the sticks",
+        "gross",
+        "hayseed",
+        "hick",
+        "hicky",
+        "hobnailed",
+        "hooliganish",
+        "ill-bred",
+        "ineducable",
+        "inurbane",
+        "klutzy",
+        "loobyish",
+        "loutish",
+        "lubberly",
+        "lumpen",
+        "lumpish",
+        "oafish",
+        "opaque",
+        "raffish",
+        "roughneck",
+        "rowdy",
+        "rowdyish",
+        "rube",
+        "ruffianly",
+        "sottish",
+        "stupid",
+        "thick",
+        "uncivilized",
+        "uncouth",
+        "uncultivated",
+        "uncultured",
+        "unpolished",
+        "unrefined",
+        "unteachable",
+        "up-country",
+        "wrongheaded",
+        "yokel",
+        "yokelish"
+      ]
+    },
     "cloddy": {
       "word": "CLODDY",
       "definitions": [
@@ -839,6 +913,18 @@
     "cloister": {
       "word": "CLOISTER",
       "definitions": [
+        {
+          "text": "An inclosed place. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A covered passage or ambulatory on one side of a court; (pl.) the series of such passages on the different sides of any court, esp. that of a monastery or a college. But let my due feet never fail To walk the studious cloister's pale. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A monastic establishment; a place for retirement from the world for religious duties. Fitter for a cloister than a crown. Daniel. Cloister garth (Arch.), the garden or open part of a court inclosed by the cloisters. and convent are generic terms, and denote a place of seclusion from the world for persons who devote their lives to religious purposes. They differ is that the distinctive idea of cloister is that of seclusion from the world, that of convent, community of living. Both terms denote houses for recluses of either sex. A cloister or convent for monks is called a monastery; for nuns, a nunnery. An abbey is a convent or monastic institution governed by an abbot or an abbess; a priory is one governed by a prior or a prioress, and is usually affiliated to an abbey.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To confine in, or as in, a cloister; to seclude from the world; to immure. None among them are throught worthy to be styled religious persons but those that cloister themselves up in a monastery. Sharp.",
           "partOfSpeech": "verb"
@@ -1152,7 +1238,17 @@
       ],
       "relatedWords": []
     },
-    "clombclomben": {
+    "clomb": {
+      "word": "CLOMB; CLOMBEN",
+      "definitions": [
+        {
+          "text": "imp. & p. p. of Climb (for climbed). [Obs.] The sonne, he sayde, is clomben up on hevene. Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "clomben": {
       "word": "CLOMB; CLOMBEN",
       "definitions": [
         {
@@ -1253,6 +1349,22 @@
     "close": {
       "word": "CLOSE",
       "definitions": [
+        {
+          "text": "To stop, or fill up, as an opening; to shut; as, to close the eyes; to close a door.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bring together the parts of; to consolidate; as, to close the ranks of an army; -- often used with up.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bring to an end or period; to conclude; to complete; to finish; to end; to consummate; as, to close a bargain; to close a course of instruction. One frugal supper did our studies close. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To come or gather around; to inclose; to encompass; to confine. The depth closed me round about. Jonah ii. 5. But now thou dost thyself immure and close In some one corner of a feeble heart. Herbert. A closed sea, a sea within the jurisdiction of some particular nation, which controls its navigation.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To come together; to unite or coalesce, as the parts of a wound, or parts separated. What deep wounds ever closed without a scar Byron.",
           "partOfSpeech": "verb"
@@ -2357,6 +2469,16 @@
         "ungenerous"
       ]
     },
+    "closehanded": {
+      "word": "CLOSEHANDED",
+      "definitions": [
+        {
+          "text": "Covetous; penurious; stingy; closefisted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "closehauled": {
       "word": "CLOSEHAULED",
       "definitions": [
@@ -3032,6 +3154,10 @@
     "clot": {
       "word": "CLOT",
       "definitions": [
+        {
+          "text": "A concretion or coagulation; esp. a soft, slimy, coagulated mass, as of blood; a coagulum. \"Clots of pory gore.\" Addison. Doth bake the egg into clots as if it began to poach. Bacon. used by early writers; but in present use clod is applied to a mass of earth or the like, and clot to a concretion or coagulation of soft matter.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To concrete, coagulate, or thicken, as soft or fluid matter by evaporation; to become a cot or clod.",
           "partOfSpeech": "verb"
@@ -4404,7 +4530,7 @@
       "word": "CLOUDLESS",
       "definitions": [
         {
-          "text": "Without a cloud; clear; bright.",
+          "text": "Without a cloud; clear; bright. A cloudless winter sky. Bankroft.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4921,7 +5047,17 @@
         "torn"
       ]
     },
-    "clovenfootedclovenhoofed": {
+    "clovenfooted": {
+      "word": "CLOVEN-FOOTED; CLOVEN-HOOFED",
+      "definitions": [
+        {
+          "text": "Having the foot or hoof divided into two parts, as the ox.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "clovenhoofed": {
       "word": "CLOVEN-FOOTED; CLOVEN-HOOFED",
       "definitions": [
         {
@@ -5036,6 +5172,18 @@
     "clown": {
       "word": "CLOWN",
       "definitions": [
+        {
+          "text": "A man of coarse nature and manners; an awkward fellow; an illbred person; a boor. Sir P. Sidney.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who works upon the soil; a rustic; a churl. The clown, the child of nature, without guile. Cowper.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The fool or buffoon in a play, circus, etc. The clown shall make those laugh whose lungs are tickle o'the sere. Shak.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To act as a clown; -- with it [Obs.] Beclowns it properly indeed. B. Jonson.",
           "partOfSpeech": "verb"
@@ -5234,7 +5382,7 @@
       "word": "CLOWNISH",
       "definitions": [
         {
-          "text": "Of or resembling a clown, or characteristic of a clown; ungainly; awkward. \"Clownish hands.\" Spenser. \"Clownish mimic.\"",
+          "text": "Of or resembling a clown, or characteristic of a clown; ungainly; awkward. \"Clownish hands.\" Spenser. \"Clownish mimic.\" Prior. bred; boorish; rustic; untutored.",
           "partOfSpeech": "adjective"
         }
       ],

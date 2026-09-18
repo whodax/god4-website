@@ -448,16 +448,6 @@
         "work together"
       ]
     },
-    "coactaretoconstrainfromcogerecoactumtocompelcfcogent": {
-      "word": "coactare to constrain, from cogere, coactum, to compel. Cf. Cogent,",
-      "definitions": [
-        {
-          "text": "To beat or press into pulp or a flat mass; to crush.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "coaction": {
       "word": "COACTION",
       "definitions": [
@@ -748,7 +738,17 @@
       ],
       "relatedWords": []
     },
-    "coadjutresscoadjutrix": {
+    "coadjutress": {
+      "word": "COADJUTRESS; COADJUTRIX",
+      "definitions": [
+        {
+          "text": "A female coadjutor or assistant. Holland. Smollett.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coadjutrix": {
       "word": "COADJUTRESS; COADJUTRIX",
       "definitions": [
         {
@@ -1103,6 +1103,10 @@
     "coak": {
       "word": "COAK",
       "definitions": [
+        {
+          "text": "See Coke, n.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "(Carp.)",
           "partOfSpeech": "noun"
@@ -1690,6 +1694,16 @@
       ],
       "relatedWords": []
     },
+    "coaltit": {
+      "word": "COLETIT; COALTIT",
+      "definitions": [
+        {
+          "text": "A small European titmouse (Parus ater), so named from its black color; -- called also coalmouse and colemouse.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "coalwhipper": {
       "word": "COAL-WHIPPER",
       "definitions": [
@@ -1750,9 +1764,31 @@
       ],
       "relatedWords": []
     },
-    "coarctate": {
-      "word": "COARCTATE",
+    "coarct": {
+      "word": "COARCT; COARCTATE",
       "definitions": [
+        {
+          "text": "To press together; to crowd; to straiten; to confine closely.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To restrain; to confine. [Obs.] Ayliffe.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coarctate": {
+      "word": "COARCT; COARCTATE",
+      "definitions": [
+        {
+          "text": "To press together; to crowd; to straiten; to confine closely.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To restrain; to confine. [Obs.] Ayliffe.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "Pressed together; closely connected; -- applied to insects having the abdomen separated from the thorax only by a constriction. Coarctate pupa (Zoöl.), a pupa closely covered by the old larval skin, as in most Diptera.",
           "partOfSpeech": "adjective"
@@ -1778,20 +1814,6 @@
         {
           "text": "A stricture or narrowing, as of a canal, cavity, or orifice.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "coarctcoarctate": {
-      "word": "COARCT; COARCTATE",
-      "definitions": [
-        {
-          "text": "To press together; to crowd; to straiten; to confine closely.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To restrain; to confine. [Obs.] Ayliffe.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -2677,7 +2699,17 @@
       ],
       "relatedWords": []
     },
-    "coastwisecoastways": {
+    "coastways": {
+      "word": "COASTWISE; COASTWAYS",
+      "definitions": [
+        {
+          "text": "By way of, or along, the coast.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coastwise": {
       "word": "COASTWISE; COASTWAYS",
       "definitions": [
         {

@@ -26,8 +26,12 @@
       "relatedWords": []
     },
     "reecho": {
-      "word": "REECHO",
+      "word": "REECHO; RE-ECHO",
       "definitions": [
+        {
+          "text": "To echo back; to reverberate again; as, the hills reëcho the roar of cannon.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To give echoes; to return back, or be reverberated, as an echo; to resound; to be resonant. And a loud groan reëchoes from the main. Pope.",
           "partOfSpeech": "verb"
@@ -35,16 +39,6 @@
         {
           "text": "The echo of an echo; a repeated or second echo.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "reechoreecho": {
-      "word": "REECHO; RE-ECHO",
-      "definitions": [
-        {
-          "text": "To echo back; to reverberate again; as, the hills reëcho the roar of cannon.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -445,7 +439,7 @@
       "word": "REELIGIBLE",
       "definitions": [
         {
-          "text": "Eligble again; capable of reëlection; as, reëligible to the",
+          "text": "Eligble again; capable of reëlection; as, reëligible to the same office.",
           "partOfSpeech": "adjective"
         }
       ],

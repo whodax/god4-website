@@ -1,7 +1,17 @@
 {
   "version": "v1",
   "entries": {
-    "hektarehektogramhektoliterhektometer": {
+    "hektare": {
+      "word": "HEKTARE; HEKTOGRAM; HEKTOLITER; HEKTOMETER",
+      "definitions": [
+        {
+          "text": "Same as Hectare, Hectogram, Hectoliter, and Hectometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hektogram": {
       "word": "HEKTARE; HEKTOGRAM; HEKTOLITER; HEKTOMETER",
       "definitions": [
         {
@@ -16,6 +26,26 @@
       "definitions": [
         {
           "text": "See Hectograph.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hektoliter": {
+      "word": "HEKTARE; HEKTOGRAM; HEKTOLITER; HEKTOMETER",
+      "definitions": [
+        {
+          "text": "Same as Hectare, Hectogram, Hectoliter, and Hectometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hektometer": {
+      "word": "HEKTARE; HEKTOGRAM; HEKTOLITER; HEKTOMETER",
+      "definitions": [
+        {
+          "text": "Same as Hectare, Hectogram, Hectoliter, and Hectometer.",
           "partOfSpeech": "noun"
         }
       ],

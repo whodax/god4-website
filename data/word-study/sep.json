@@ -75,7 +75,7 @@
       "word": "SEPARABLE",
       "definitions": [
         {
-          "text": "Capable of being separated, disjoined, disunited, or divided; as, the separable parts of plants; qualities not separable from the",
+          "text": "Capable of being separated, disjoined, disunited, or divided; as, the separable parts of plants; qualities not separable from the substance in which they exist. Trials permit me not to doubt of the separableness of a yellow tincture from gold. Boyle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -109,7 +109,7 @@
           "partOfSpeech": ""
         },
         {
-          "text": "Disunited from the body; disembodied; as, a separate spirit; the separate state of souls. Separate estate (Law), an estate limited to a married woman independent of her husband.",
+          "text": "Disunited from the body; disembodied; as, a separate spirit; the separate state of souls. Separate estate (Law), an estate limited to a married woman independent of her husband. husband under deed of separation.",
           "partOfSpeech": ""
         }
       ],
@@ -691,6 +691,20 @@
         {
           "text": "The north or northern regions. Shak. Both East West, South and Septentrioun. Chaucer.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the north; northern. \"From cold septentrion blasts.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "septentrional": {
+      "word": "SEPTENTRION; SEPTENTRIONAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the north; northern. \"From cold septentrion blasts.\" Milton.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -725,17 +739,25 @@
       ],
       "relatedWords": []
     },
-    "septentrionseptentrional": {
-      "word": "SEPTENTRION; SEPTENTRIONAL",
+    "septet": {
+      "word": "SEPTET; SEPTETTE",
       "definitions": [
         {
-          "text": "Of or pertaining to the north; northern. \"From cold septentrion blasts.\" Milton.",
-          "partOfSpeech": "adjective"
+          "text": "A set of seven persons or objects; as, a septet of singers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A musical composition for seven instruments or seven voices; -- called also septuor.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "septetseptette": {
+    "septette": {
       "word": "SEPTET; SEPTETTE",
       "definitions": [
         {
@@ -805,6 +827,10 @@
           "partOfSpeech": "adjective"
         },
         {
+          "text": "Having power to promote putrefaction.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A substance that promotes putrefaction.",
           "partOfSpeech": "noun"
         }
@@ -817,6 +843,16 @@
         {
           "text": "A poisoned condition of the blood produced by the absorption into it of septic or putrescent material; blood poisoning. It is marked by chills, fever, prostration, and inflammation of the different serous membranes and of the lungs, kidneys, and other organs.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "septical": {
+      "word": "SEPTIC; SEPTICAL",
+      "definitions": [
+        {
+          "text": "Having power to promote putrefaction.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -847,16 +883,6 @@
         {
           "text": "Tendency to putrefaction; septic quality.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "septicseptical": {
-      "word": "SEPTIC; SEPTICAL",
-      "definitions": [
-        {
-          "text": "Having power to promote putrefaction.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1129,7 +1155,7 @@
       ],
       "relatedWords": []
     },
-    "sepulchersepulchre": {
+    "sepulcher": {
       "word": "SEPULCHER; SEPULCHRE",
       "definitions": [
         {
@@ -1153,6 +1179,20 @@
         {
           "text": "Unnaturally low and grave; hollow in tone; -- said of sound, especially of the voice. This exaggerated dulling of the voice . . . giving what is commonly called a sepulchral tone. H. Sweet.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sepulchre": {
+      "word": "SEPULCHER; SEPULCHRE",
+      "definitions": [
+        {
+          "text": "The place in which the dead body of a human being is interred, or a place set apart for that purpose; a grave; a tomb. The stony entrance of this sepulcher. Shak. The first day of the week cometh Mary Magdalene early, when it was yet dark, unto the sepulcher. John xx. 1. A whited sepulcher. Fig.: Any person who is fair outwardly but unclean or vile within. See Matt. xxiii.27.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To bury; to inter; to entomb; as, obscurely sepulchered. And so sepulchered in such pomp dost lie That kings for such a tomb would wish to die. Milton.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

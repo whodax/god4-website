@@ -5,7 +5,7 @@
       "word": "EDACIOUS",
       "definitions": [
         {
-          "text": "Given to eating; voracious; devouring.",
+          "text": "Given to eating; voracious; devouring. Swallowed in the depths of edacious Time. Carlyle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -21,7 +21,17 @@
       ],
       "relatedWords": []
     },
-    "edamedamcheese": {
+    "edam": {
+      "word": "EDAM; EDAM CHEESE",
+      "definitions": [
+        {
+          "text": "A Dutch pressed cheese of yellow color and fine flavor, made in balls weighing three or four pounds, and usually colored crimson outside; -- so called from the village of Edam, near Amsterdam. Also, cheese of the same type, wherever made.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "edamcheese": {
       "word": "EDAM; EDAM CHEESE",
       "definitions": [
         {
@@ -45,7 +55,17 @@
       ],
       "relatedWords": []
     },
-    "eddaiceddic": {
+    "eddaic": {
+      "word": "EDDAIC; EDDIC",
+      "definitions": [
+        {
+          "text": "Relating to the Eddas; resembling the Eddas.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eddic": {
       "word": "EDDAIC; EDDIC",
       "definitions": [
         {
@@ -400,7 +420,17 @@
         "windiness"
       ]
     },
-    "edematousedematose": {
+    "edematous": {
+      "word": "EDEMATOUS; EDEMATOSE",
+      "definitions": [
+        {
+          "text": "Same as oedematous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "edematose": {
       "word": "EDEMATOUS; EDEMATOSE",
       "definitions": [
         {
@@ -954,7 +984,7 @@
       ],
       "relatedWords": []
     },
-    "edgewaysedgewise": {
+    "edgeways": {
       "word": "EDGEWAYS; EDGEWISE",
       "definitions": [
         {
@@ -963,6 +993,40 @@
         }
       ],
       "relatedWords": []
+    },
+    "edgewise": {
+      "word": "EDGEWAYS; EDGEWISE",
+      "definitions": [
+        {
+          "text": "With the edge towards anything; in the direction of the edge. Glad to get in a word, as they say, edgeways. Sir W. Scott.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": [
+        "aside",
+        "askance",
+        "askant",
+        "asquint",
+        "broadside",
+        "broadside on",
+        "crabwise",
+        "edgeway",
+        "edgeways",
+        "glancingly",
+        "laterad",
+        "laterally",
+        "on its side",
+        "on the beam",
+        "right and left",
+        "sideling",
+        "sidelong",
+        "sideward",
+        "sidewards",
+        "sideway",
+        "sideways",
+        "sidewise",
+        "sidling"
+      ]
     },
     "edging": {
       "word": "EDGING",
@@ -1487,6 +1551,41 @@
         "transform",
         "upgrade",
         "uplift"
+      ]
+    },
+    "edifying": {
+      "word": "EDIFYING",
+      "definitions": [
+        {
+          "text": "Instructing; improving; as, an edifying conversation.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "autodidactic",
+        "coeducational",
+        "cultural",
+        "didactic",
+        "disciplinary",
+        "educating",
+        "educational",
+        "educative",
+        "enlightening",
+        "exhortatory",
+        "homiletic",
+        "hortatory",
+        "illuminating",
+        "informative",
+        "initiatory",
+        "instructive",
+        "introductory",
+        "lecturing",
+        "preaching",
+        "preceptive",
+        "propaedeutic",
+        "self-teaching",
+        "teaching",
+        "tuitionary"
       ]
     },
     "edile": {
@@ -2467,7 +2566,7 @@
       "word": "EDUCTION",
       "definitions": [
         {
-          "text": "The act of drawing out or bringing into view. Eduction pipe,",
+          "text": "The act of drawing out or bringing into view. Eduction pipe, and Eduction port. See Exhaust pipe and Exhaust port, under Exhaust, a.",
           "partOfSpeech": "noun"
         }
       ],

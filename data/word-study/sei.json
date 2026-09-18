@@ -231,7 +231,17 @@
       ],
       "relatedWords": []
     },
-    "seismicseismal": {
+    "seismal": {
+      "word": "SEISMIC; SEISMAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an earthquake; caused by an earthquake. Seismic vertical, the point upon the earth's surface vertically over the center of effort or focal point whence the earthquake's impulse proceeds, or the vertical line connecting these two points.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seismic": {
       "word": "SEISMIC; SEISMAL",
       "definitions": [
         {
@@ -281,6 +291,16 @@
         {
           "text": "The art of registering the shocks and undulatory movements of earthquakes.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seismological": {
+      "word": "SEISMOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to seismology.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -351,6 +371,48 @@
         {
           "text": "That may be seized.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seize": {
+      "word": "SEIZE",
+      "definitions": [
+        {
+          "text": "To fall or rush upon suddenly and lay hold of; to gripe or grasp suddenly; to reach and grasp. For by no means the high bank he could seize. Spenser. Seek you to seize and gripe into your hands The royalties and rights of banished Hereford Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take possession of by force. At last they seize The scepter, and regard not David's sons. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To invade suddenly; to take sudden hold of; to come upon suddenly; as, a fever seizes a patient. Hope and deubt alternate seize her seul. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take possession of by virtue of a warrant or other legal authority; as, the sheriff seized the debtor's goods.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fasten; to fix. [Obs.] As when a bear hath seized her cruel claws Upon the carcass of some beast too weak. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To grap with the mind; to comprehend fully and distinctly; as, to seize an idea.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bind or fasten together with a lashing of small stuff, as yarn or marline; as, to seize ropes. phrase to be seised of (an estate), as also, in composition, disseise, disseisin. To be seized of, to have possession, or right of possession; as, A B was seized and possessed of the manor of Dale. \"Whom age might see seized of what youth made prize.\" Chapman. take possession of suddenly and forcibly. capture.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

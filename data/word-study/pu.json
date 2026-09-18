@@ -1,30 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "purchasegkauficelkaupbargaincfcheapenchapmanchaffer": {
-      "word": "purchase, G. Kauf, ICel. kaup bargain. Cf. Cheapen, Chapman, Chaffer,",
-      "definitions": [
-        {
-          "text": "A bargain; a purchase; cheapness. [Obs.] The sack that thou hast drunk me would have bought me lights as good cheap at the dearest chandler's in Europe. Shak.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pulldrawohgholhalgholendanhaletohaulswhalaand": {
-      "word": "pull, draw, OHG. hol, hal, G. holen, Dan. hale to haul, Sw. hala, and",
-      "definitions": [
-        {
-          "text": "To pull or draw with force; to drag. Some dance, some haul the rope. Denham. Thither they bent, and hauled their ships to land. Pope. Romp-loving miss Is hauled about in gallantry robust. Thomson.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To transport by drawing, as with horses or oxen; as, to haul logs to a sawmill. When I was seven or eight years of age, I began hauling all the wood used in the house and shops. U. S. Grant. To haul over the coals. See under Coal. the point from which the wind blows.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "pubble": {
       "word": "PUBBLE",
       "definitions": [
@@ -269,6 +245,16 @@
       ],
       "relatedWords": []
     },
+    "publicminded": {
+      "word": "PUBLIC-MINDED",
+      "definitions": [
+        {
+          "text": "Public-spirited.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "publicness": {
       "word": "PUBLICNESS",
       "definitions": [
@@ -283,7 +269,7 @@
       ],
       "relatedWords": []
     },
-    "publicservicecorporationquasipubliccorporation": {
+    "publicservicecorporation": {
       "word": "PUBLIC-SERVICE CORPORATION; QUASI-PUBLIC CORPORATION",
       "definitions": [
         {
@@ -301,7 +287,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Dictated by a regard to public good; as, a public-spirited project",
+          "text": "Dictated by a regard to public good; as, a public-spirited project or measure. Addison.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -579,7 +565,47 @@
       ],
       "relatedWords": []
     },
-    "puddingfishpuddingwife": {
+    "pudding": {
+      "word": "PUDDING",
+      "definitions": [
+        {
+          "text": "A species of food of a soft or moderately hard consistence, variously made, but often a compound of flour or meal, with milk and eggs, etc. And solid pudding against empty praise. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Anything resembling, or of the softness and consistency of, pudding.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An intestine; especially, an intestine stuffed with meat, etc.; a sausage. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any food or victuals. Eat your pudding, slave, and hold your tongue. Prior.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Puddening. Pudding grass (Bot.), the true pennyroyal (Mentha Pulegium), formerly used to flavor stuffing for roast meat. Dr. Prior. tree Cassia Fistula. The seeds are separately imbedded in a sweetish pulp. See Cassia. gown. Swift. dish first eaten. [Obs.] Johnson. (b) The nick of time; critical time. [Obs.] Mars, that still protects the stout, In pudding time came to his aid. Hudibras.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "puddingfish": {
+      "word": "PUDDING FISH; PUDDING WIFE",
+      "definitions": [
+        {
+          "text": "A large, handsomely colored, blue and bronze, labroid fish (Iridio, syn. Platyglossus, radiatus) of Florida, Bermuda, and the West Indies. Called also pudiano, doncella, and, at Bermuda, bluefish.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "puddingwife": {
       "word": "PUDDING FISH; PUDDING WIFE",
       "definitions": [
         {
@@ -659,15 +685,9 @@
       "word": "PUDDLING",
       "definitions": [
         {
-          "text": "(Hydraul. Engin.) (a) The process of working clay, loam, pulverized ore, etc., with water, to render it compact, or impervious to liquids; also, the process of rendering anything impervious to liquids by means of",
+          "text": "(Hydraul. Engin.) (a) The process of working clay, loam, pulverized ore, etc., with water, to render it compact, or impervious to liquids; also, the process of rendering anything impervious to liquids by means of puddled material. (b) Puddle. See Puddle, n., 2.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "puddledmaterial": {
-      "word": "puddled material.",
-      "definitions": [
+        },
         {
           "text": "(Metal.)",
           "partOfSpeech": "noun"
@@ -927,6 +947,26 @@
         {
           "text": "An exaggerated or empty expression of praise, especially one in a public journal. Puff adder. (Zoöl.) (a) Any South African viper belonging to Clotho and allied genera. They are exceedingly venomous, and have the power of greatly distending their bodies when irritated. The common puff adder (Vipera, or Clotho, arietans) is the largest species, becoming over four feet long. The plumed puff adder (C. cornuta) has a plumelike appendage over each eye. (b) A North American harmless snake (Heterodon platyrrhinos) which has the power of puffing up its body. Called also hog-nose snake, flathead, spreading adder, and blowing adder. Puff bird (Zoöl.), any bird of the genus Bucco, or family Bucconidæ. They are small birds, usually with dull-colored and loose plumage, and have twelve tail feathers. See Barbet (b).",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To blow in puffs, or with short and sudden whiffs.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To blow, as an expression of scorn; -- with at. It is really to defy Heaven to puff at damnation. South.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To breathe quick and hard, or with puffs, as after violent exertion. The ass comes back again, puffing and blowing, from the chase. L' Estrange.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To swell with air; to be dilated or inflated. Boyle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To breathe in a swelling, inflated, or pompous manner; hence, to assume importance. Then came brave Glory puffing by. Herbert.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To drive with a puff, or with puffs. The clearing north will puff the clouds away. Dryden.",
@@ -1219,7 +1259,17 @@
       ],
       "relatedWords": []
     },
-    "puggrypuggree": {
+    "puggry": {
+      "word": "PUGGRY; PUGGREE",
+      "definitions": [
+        {
+          "text": "A light scarf wound around a hat or helmet to protect the head from the sun. [India] Yule. A blue-gray felt hat with a gold puggaree. Kipling.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "puggree": {
       "word": "PUGGRY; PUGGREE",
       "definitions": [
         {
@@ -1279,12 +1329,32 @@
       ],
       "relatedWords": []
     },
+    "pugnacious": {
+      "word": "PUGNACIOUS",
+      "definitions": [
+        {
+          "text": "Disposed to fight; inclined to fighting; quarrelsome; fighting.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "pugnacity": {
       "word": "PUGNACITY",
       "definitions": [
         {
           "text": "Inclination or readiness to fight; quarrelsomeness. \" A national pugnacity of character.\" Motley.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pugnose": {
+      "word": "PUG NOSE",
+      "definitions": [
+        {
+          "text": "A short, thick nose; a snubnose. (Simenchelys parasiticus) which sometimes burrows into the flesh of the halibut.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1499,7 +1569,17 @@
       ],
       "relatedWords": []
     },
-    "pulicosepulicous": {
+    "pulicose": {
+      "word": "PULICOSE; PULICOUS",
+      "definitions": [
+        {
+          "text": "Abounding with fleas.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pulicous": {
       "word": "PULICOSE; PULICOUS",
       "definitions": [
         {
@@ -1711,7 +1791,7 @@
       "word": "PULLEY",
       "definitions": [
         {
-          "text": "A wheel with a broad rim, or grooved rim, for transmitting power from, or imparting power to, the different parts of machinery, or for changing the direction of motion, by means of a belt, cord, rope, or chain. simplest form, of a grooved wheel, called a sheave, turning within a movable frame or block, by means of a cord or rope attached at one end to a fixed point. The force, acting on the free end of the rope, is thus doubled, but can move the load through only half the space traversed by itself. The rope may also pass over a sheave in another block that is fixed. The end of the rope may be fastened to the movable block, instead of a fixed point, with an additional gain of power, and using either one or two sheaves in the fixed block. Other sheaves may be added, and the power multiplied accordingly. Such an apparatus is called by workmen a block and tackle, or a fall and tackle. See Block. A single fixed pulley gives no increase of power, but serves simply for changing the direction of motion. Band pulley, or Belt pulley, a pulley with a broad face for transmitting power between revolving shafts by means of a belt, or for guiding a belt. of a truncated cone, for varying velocities. transmission of motion in machinery. See Fast and loose pulleys, under Fast. Parting pulley, a belt pulley made in semicircular halves, which can be bolted together, to facilitate application to,",
+          "text": "A wheel with a broad rim, or grooved rim, for transmitting power from, or imparting power to, the different parts of machinery, or for changing the direction of motion, by means of a belt, cord, rope, or chain. simplest form, of a grooved wheel, called a sheave, turning within a movable frame or block, by means of a cord or rope attached at one end to a fixed point. The force, acting on the free end of the rope, is thus doubled, but can move the load through only half the space traversed by itself. The rope may also pass over a sheave in another block that is fixed. The end of the rope may be fastened to the movable block, instead of a fixed point, with an additional gain of power, and using either one or two sheaves in the fixed block. Other sheaves may be added, and the power multiplied accordingly. Such an apparatus is called by workmen a block and tackle, or a fall and tackle. See Block. A single fixed pulley gives no increase of power, but serves simply for changing the direction of motion. Band pulley, or Belt pulley, a pulley with a broad face for transmitting power between revolving shafts by means of a belt, or for guiding a belt. of a truncated cone, for varying velocities. transmission of motion in machinery. See Fast and loose pulleys, under Fast. Parting pulley, a belt pulley made in semicircular halves, which can be bolted together, to facilitate application to, or removal from, a shaft. a pulley is fixed and along which the sash slides. Split pulley, a parting pulley.",
           "partOfSpeech": "noun"
         },
         {
@@ -1771,7 +1851,17 @@
       ],
       "relatedWords": []
     },
-    "pulmobranchiatapulmobranchiate": {
+    "pulmobranchiata": {
+      "word": "PULMOBRANCHIATA; PULMOBRANCHIATE",
+      "definitions": [
+        {
+          "text": "Same as Pulmonibranchiata, -ate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pulmobranchiate": {
       "word": "PULMOBRANCHIATA; PULMOBRANCHIATE",
       "definitions": [
         {
@@ -2099,6 +2189,16 @@
       ],
       "relatedWords": []
     },
+    "pulsate": {
+      "word": "PULSATE",
+      "definitions": [
+        {
+          "text": "To throb, as a pulse; to beat, as the heart. The heart of a viper or frog will continue to pulsate long after it is taken from the body. E. Darwin.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "pulsatile": {
       "word": "PULSATILE",
       "definitions": [
@@ -2315,7 +2415,17 @@
       ],
       "relatedWords": []
     },
-    "pultessepultise": {
+    "pultesse": {
+      "word": "PULTESSE; PULTISE",
+      "definitions": [
+        {
+          "text": "Poultry. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pultise": {
       "word": "PULTESSE; PULTISE",
       "definitions": [
         {
@@ -2463,7 +2573,17 @@
       ],
       "relatedWords": []
     },
-    "pulvilliopulvillo": {
+    "pulvillio": {
+      "word": "PULVILLIO; PULVILLO",
+      "definitions": [
+        {
+          "text": "A kind of perfume in the form of a powder, formerly much used, Smells of incense, ambergris, and pulvillios. Addison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pulvillo": {
       "word": "PULVILLIO; PULVILLO",
       "definitions": [
         {
@@ -2493,7 +2613,21 @@
       ],
       "relatedWords": []
     },
-    "pulvinatepulvinated": {
+    "pulvinate": {
+      "word": "PULVINATE; PULVINATED",
+      "definitions": [
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Curved convexly or swelled; as, a pulvinated frieze. Brande &",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pulvinated": {
       "word": "PULVINATE; PULVINATED",
       "definitions": [
         {
@@ -2809,7 +2943,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A prop, as for the roof of a mine. Bell punch. See under Bell.",
+          "text": "A prop, as for the roof of a mine. Bell punch. See under Bell. for lacings in the ends of driving belts. attached to one of the jaws, for perforating leather, paper, and the like.",
           "partOfSpeech": "noun"
         },
         {
@@ -2889,7 +3023,7 @@
       ],
       "relatedWords": []
     },
-    "punctatedpunctated": {
+    "punctated": {
       "word": "PUNCTATED; PUNCTATED",
       "definitions": [
         {
@@ -2951,7 +3085,7 @@
       "word": "PUNCTILIOUS",
       "definitions": [
         {
-          "text": "Attentive to punctilio; very nice or exact in the forms of behavior, etiquette, or mutual intercourse; precise; exact in the smallest particulars. \"A punctilious observance of divine laws.\" Rogers. \"Very punctilious copies of any letters. The Nation. Punctilious in the simple and intelligible instances of common life.",
+          "text": "Attentive to punctilio; very nice or exact in the forms of behavior, etiquette, or mutual intercourse; precise; exact in the smallest particulars. \"A punctilious observance of divine laws.\" Rogers. \"Very punctilious copies of any letters. The Nation. Punctilious in the simple and intelligible instances of common life. I. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3099,7 +3233,17 @@
       ],
       "relatedWords": []
     },
-    "punctulatepunctulated": {
+    "punctulate": {
+      "word": "PUNCTULATE; PUNCTULATED",
+      "definitions": [
+        {
+          "text": "Marked with small spots. The studs have their surface punctulated, as if set all over with other studs infinitely lesser. Woodward.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "punctulated": {
       "word": "PUNCTULATE; PUNCTULATED",
       "definitions": [
         {
@@ -3225,6 +3369,28 @@
       ],
       "relatedWords": []
     },
+    "pungent": {
+      "word": "PUNGENT",
+      "definitions": [
+        {
+          "text": "Causing a sharp sensation, as of the taste, smell, or feelings; pricking; biting; acrid; as, a pungent spice. Pungent radish biting infant's tongue. Shenstone. The pungent grains of titillating dust. Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Sharply painful; penetrating; poignant; severe; caustic; stinging. With pungent pains on every side. Swift. His pungent pen played its part in rousing the nation. J. R. Green.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Prickly-pointed; hard and sharp. biting; stinging.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "pungently": {
       "word": "PUNGENTLY",
       "definitions": [
@@ -3283,7 +3449,17 @@
       ],
       "relatedWords": []
     },
-    "puniceouspunicial": {
+    "puniceous": {
+      "word": "PUNICEOUS; PUNICIAL",
+      "definitions": [
+        {
+          "text": "Of a bright red or purple color. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "punicial": {
       "word": "PUNICEOUS; PUNICIAL",
       "definitions": [
         {
@@ -3325,7 +3501,7 @@
       "word": "PUNISHABLE",
       "definitions": [
         {
-          "text": "Deserving of, or liable to, punishment; capable of being punished by law or right; -- said of person or offenses. That time was, when to be a Protestant, to be a Christian, was by law",
+          "text": "Deserving of, or liable to, punishment; capable of being punished by law or right; -- said of person or offenses. That time was, when to be a Protestant, to be a Christian, was by law as punishable as to be a traitor. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3553,7 +3729,17 @@
       ],
       "relatedWords": []
     },
-    "puntilpuntel": {
+    "puntil": {
+      "word": "PUNTIL; PUNTEL",
+      "definitions": [
+        {
+          "text": "See Pontee.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "puntel": {
       "word": "PUNTIL; PUNTEL",
       "definitions": [
         {
@@ -3602,6 +3788,16 @@
         },
         {
           "text": "A youth; a novice. [R.] Fuller.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "puoy": {
+      "word": "PUOY",
+      "definitions": [
+        {
+          "text": "Same as Poy, n., 3.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3987,7 +4183,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Nearsighted, or dim-sighted; seeing obscurely; as, a purblind eye; a purblind mole. The saints have not so sharp eyes to see down from heaven; they be purblindand sand-blind. Latimer.",
+          "text": "Nearsighted, or dim-sighted; seeing obscurely; as, a purblind eye; a purblind mole. The saints have not so sharp eyes to see down from heaven; they be purblindand sand-blind. Latimer. O purblind race of miserable men. Tennyson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4213,11 +4409,23 @@
         {
           "text": "To ornament with a bordure of emines, furs, and the like; also, with gold studs or mountings.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A hem, border., or trimming, as of embroidered work.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Her.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A border of any heraldic fur.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "purflepurflew": {
+    "purflew": {
       "word": "PURFLE; PURFLEW",
       "definitions": [
         {
@@ -4315,7 +4523,7 @@
       ],
       "relatedWords": []
     },
-    "purgatorialpurgatorian": {
+    "purgatorial": {
       "word": "PURGATORIAL; PURGATORIAN",
       "definitions": [
         {
@@ -4326,8 +4534,12 @@
       "relatedWords": []
     },
     "purgatorian": {
-      "word": "PURGATORIAN",
+      "word": "PURGATORIAL; PURGATORIAN",
       "definitions": [
+        {
+          "text": "Of or pertaining to purgatory; expiatory.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One who holds to the doctrine of purgatory. Boswell.",
           "partOfSpeech": "noun"
@@ -4571,7 +4783,17 @@
       ],
       "relatedWords": []
     },
-    "puristicpuristical": {
+    "puristic": {
+      "word": "PURISTIC; PURISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to purists or purism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "puristical": {
       "word": "PURISTIC; PURISTICAL",
       "definitions": [
         {
@@ -4603,7 +4825,21 @@
       ],
       "relatedWords": []
     },
-    "puritanicpuritanical": {
+    "puritanic": {
+      "word": "PURITANIC; PURITANICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the Puritans, or to their doctrines and practice.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Precise in observance of legal or religious requirements; strict; overscrupulous; rigid; -- often used by way of reproach or contempt. Paritanical circles, from which plays and novels were strictly excluded. Macaulay. He had all the puritanic traits, both good and evil. Hawthorne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "puritanical": {
       "word": "PURITANIC; PURITANICAL",
       "definitions": [
         {
@@ -4683,7 +4919,15 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "To run swiftly round, as a small stream flowing among stones or other obstructions; to eddy; also, to make a murmuring sound, as water does in running over or through obstructions. Swift o'er the rolling pebbles, down the hills, Louder and louder",
+          "text": "To run swiftly round, as a small stream flowing among stones or other obstructions; to eddy; also, to make a murmuring sound, as water does in running over or through obstructions. Swift o'er the rolling pebbles, down the hills, Louder and louder purl the falling rills. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Etym: [Perh. fr. F. perler to pearl, to bead. See Pearl, v. & n.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To rise in circles, ripples, or undulations; to curl; to mantle. thin winding breath which purled up to the sky. Shak.",
           "partOfSpeech": "verb"
         },
         {
@@ -4691,18 +4935,24 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A gentle murmur, as that produced by the running of a liquid among",
+          "text": "A gentle murmur, as that produced by the running of a liquid among obstructions; as, the purl of a brook.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "purlthefallingrillspope": {
-      "word": "purl the falling rills. Pope.",
-      "definitions": [
+        },
         {
-          "text": "To rise in circles, ripples, or undulations; to curl; to mantle. thin winding breath which purled up to the sky. Shak.",
-          "partOfSpeech": "verb"
+          "text": "Etym: [Perh. from F.perler, v. See Purl to mantle.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Malt liquor, medicated or spiced; formerly, ale or beer in which wormwood or other bitter herbs had been infused, and which was regarded as tonic; at present, hot beer mixed with gin, sugar, and spices. \"Drank a glass of purl to recover appetite.\" Addison. \"Drinking hot purl, and smoking pipes.\" Dickens.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tern. [Prov. Eng.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -4721,7 +4971,17 @@
       ],
       "relatedWords": []
     },
-    "purlinpurline": {
+    "purlin": {
+      "word": "PURLIN; PURLINE",
+      "definitions": [
+        {
+          "text": "In root construction, a horizontal member supported on the principals and supporting the common rafters.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "purline": {
       "word": "PURLIN; PURLINE",
       "definitions": [
         {
@@ -4948,6 +5208,16 @@
       "definitions": [
         {
           "text": "Important; material. \"Purposeful accounts.\" Tylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "purposeless": {
+      "word": "PURPOSELESS",
+      "definitions": [
+        {
+          "text": "Having no purpose or result; objectless. Bp. Hall.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5365,11 +5635,15 @@
         {
           "text": "Acting in consequence or in prosecution (of anything); hence, agreeable; conformable; following; according; -- with to or of. The conclusion which I draw from these premises, pursuant to the query laid down, is, etc. Waterland.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Agreeably; conformably.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
     },
-    "pursuantpursuantly": {
+    "pursuantly": {
       "word": "PURSUANT; PURSUANTLY",
       "definitions": [
         {
@@ -5511,7 +5785,17 @@
       ],
       "relatedWords": []
     },
-    "purulencepurulency": {
+    "purulence": {
+      "word": "PURULENCE; PURULENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being purulent; the generation of pus; also, the pus itself. Arbuthnot.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "purulency": {
       "word": "PURULENCE; PURULENCY",
       "definitions": [
         {
@@ -5541,7 +5825,17 @@
       ],
       "relatedWords": []
     },
-    "purveancepurveiaunce": {
+    "purveance": {
+      "word": "PURVEANCE; PURVEIAUNCE",
+      "definitions": [
+        {
+          "text": "Purveyance. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "purveiaunce": {
       "word": "PURVEANCE; PURVEIAUNCE",
       "definitions": [
         {
@@ -5657,7 +5951,7 @@
       ],
       "relatedWords": []
     },
-    "puseyisticpuseyite": {
+    "puseyistic": {
       "word": "PUSEYISTIC; PUSEYITE",
       "definitions": [
         {
@@ -5668,8 +5962,12 @@
       "relatedWords": []
     },
     "puseyite": {
-      "word": "PUSEYITE",
+      "word": "PUSEYISTIC; PUSEYITE",
       "definitions": [
+        {
+          "text": "Of or pertaining to Puseyism.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "One who holds the principles of Puseyism; -- often used opprobriously.",
           "partOfSpeech": "noun"
@@ -5759,7 +6057,7 @@
       "word": "PUSHING",
       "definitions": [
         {
-          "text": "Pressing forward in business; enterprising; driving; energetic;",
+          "text": "Pressing forward in business; enterprising; driving; energetic; also, forward; officious, intrusive.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5899,11 +6197,15 @@
         {
           "text": "To form into pustules, or blisters.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Covered with pustulelike prominences; pustular; pustulous; as, a pustulate leaf; a pustulate shell or coral.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "pustulatepustulated": {
+    "pustulated": {
       "word": "PUSTULATE; PUSTULATED",
       "definitions": [
         {
@@ -5957,6 +6259,46 @@
         {
           "text": "A rustic; a clown; an awkward or uncouth person. Queer country puts extol Queen Bess's reign. Bramston. What droll puts the citizens seem in it all. F. Harrison.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To move in any direction; to impel; to thrust; to push; -- nearly obsolete, except with adverbs, as with by (to put by = to thrust aside; to divert); or with forth (to put forth = to thrust out). His chief designs are . . . to put thee by from thy spiritual employment. Jer. Taylor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bring to a position or place; to place; to lay; to set; figuratively, to cause to be or exist in a specified relation, condition, or the like; to bring to a stated mental or moral condition; as, to put one in fear; to put a theory in practice; to put an enemy to fight. This present dignity, In which that I have put you. Chaucer. I will put enmity between thee and the woman. Gen. iii. 15. He put no trust in his servants. Job iv. 18. When God into the hands of their deliverer Puts invincible might. Milton. In the mean time other measures were put in operation. Sparks.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To attach or attribute; to assign; as, to put a wrong construction on an act or expression.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lay down; to give up; to surrender. [Obs.] No man hath more love than this, that a man put his life for his friends. Wyclif (John xv. 13).",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To set before one for judgment, acceptance, or rejection; to bring to the attention; to offer; to state; to express; figuratively, to assume; to suppose; -- formerly sometimes followed by that introducing a proposition; as, to put a question; to put a case. Let us now put that ye have leave. Chaucer. Put the perception and you put the mind. Berkeley. These verses, originally Greek, were put in Latin. Milton. All this is ingeniously and ably put. Hare.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To incite; to entice; to urge; to constrain; to oblige. These wretches put us upon all mischief. Swift. Put me not use the carnal weapon in my own defense. Sir W. Scott. Thank him who puts me, loath, to this revenge. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To throw or cast with a pushing motion \"overhand,\" the hand being raised from the shoulder; a practice in athletics; as, to put the shot or weight.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To convey coal in the mine, as from the working to the tramway. Raymond. Put case, formerly, an elliptical expression for, put or suppose the case to be. Put case that the soul after departure from the body may live. Bp. Hall. divorce. to delay. (b) To refuse; to deny. Coming from thee, I could not put him back. Shak. (c) To set, as the hands of a clock, to an earlier hour. (d) To restore to the original place; to replace. question by.\" Tennyson. (b) To lay aside; to keep; to sore up; as, to put by money. lower; to diminish; as, to put down prices. (c) To deprive of position or power; to put a stop to; to suppress; to abolish; to confute; as, to put down rebellion of traitors. Mark, how a plain tale shall put you down. Shak. Sugar hath put down the use of honey. Bacon. (d) To subscribe; as, to put down one's name. to come or push out; as, a tree puts forth leaves. (b) To make manifest; to develop; also, to bring into action; to exert; as, to put forth strength. (c) To propose, as a question, a riddle, and the like. (d) To publish, as a book. responsibility; to promote. (b) To cause to make progress; to aid. (c) To set, as the hands of a clock, to a later hour. to introduce with difficulty; as, to put in a word while others are discoursing. (b) (Naut.) To conduct into a harbor, as a ship. (c) (Law) To place in due form before a court; to place among the records of a court. Burrill. (d) (Med.) To restore, as a dislocated part, to its place. to put off mortality. \"Put off thy shoes from off thy feet.\" Ex. iii.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(b) To turn aside; to elude; to disappoint; to frustrate; to baffle. I hoped for a demonstration, but Themistius hoped to put me off with an harangue. Boyle. We might put him off with this answer. Bentley. (c) To delay; to defer; to postpone; as, to put off repentance. (d) To get rid of; to dispose of; especially, to pass fraudulently; as, to put off a counterfeit note, or an ingenious theory. (e) To push from land; as, to put off a boat. assume. \"Mercury . . . put on the shape of a man.\" L'Estrange. (b) To impute (something) to; to charge upon; as, to put blame on or upon another. (c) To advance; to promote. [Obs.] \"This came handsomely to put on the peace.\" Bacon. (d) To impose; to inflict. \"That which thou puttest on me, will I bear.\" 2 Kings xviii. 14. (e) To apply; as, to put on workmen; to put on steam. (f) To deceive; to trick. \"The stork found he was put upon.\" L'Estrange. (g) To place upon, as a means or condition; as, he put him upon bread and water. \"This caution will put them upon considering.\" Locke. (h) (Law) To rest upon; to submit to; as, a defendant puts himself on or upon the country. Burrill. forth; to shoot, as a bud, or sprout. (c) To extinguish; as, to put out a candle, light, or fire. (d) To place at interest; to loan; as, to put out funds. (e) To provoke, as by insult; to displease; to vex; as, he was put out by my reply. [Colloq.] (f) To protrude; to stretch forth; as, to put out the hand. (g) To publish; to make public; as, to put out a pamphlet. (h) To confuse; to disconcert; to interrupt; as, to put one out in reading or speaking. (i) (Law) To open; as, to put out lights, that is, to open or cut windows. Burrill. (j) (Med.) To place out of joint; to dislocate; as, to put out the ankle. (k) To cause to cease playing, or to prevent from playing longer in a certain inning, as in base ball. put a general over a division of an army. (b) To refer. For the certain knowledge of that knowledge of that truthput you o'er to heaven and to my mother. Shak. (c) To defer; to postpone; as, the court put over the cause to the next term. (d) To transfer (a person or thing) across; as, to put one over the river. instrument of labor; as, to put the hand to the plow; hence, to engage in (any task or affair); as, to put one's hand to the work. (b) To take or seize, as in theft. \"He hath not put his hand unto his neighbor's goods.\" Ex. xxii. 11. of a progress; hence, to push to completion; to accomplish; as, he put through a measure of legislation; he put through a railroad enterprise. [U.S.] -- To put to. (a) To add; to unite; as, to put one sum to another. (b) To refer to; to expose; as, to put the safety of the state to hazard. \"That dares not put it to the touch.\" Montrose. (c) To attach (something) to; to harness beasts to. Dickens. difficulties. To deliver in, or to make ready for, childbirth. inference; to form a correct conclusion. difficulty to. \"O gentle lady, do not put me to 't.\" Shak. compose rightly. resent; to put up with; as, to put up indignities. [Obs.] \"Such national injuries are not to be put up.\" Addison. (b) To send forth or upward; as, to put up goods for sale. (d) To start from a cover, as game. \"She has been frightened; she has been put up.\" C. Kingsley. (e) To hoard. \"Himself never put up any of the rent.\" Spelman. (f) To lay side or preserve; to pack away; to store; to pickle; as, to put up pork, beef, or fish. (g) To place out of sight, or away; to put in its proper place; as, put up that letter. Shak. (h) To incite; to instigate; -- followed by to; as, he put the lad up to mischief. (i) To raise; to erect; to build; as, to put up a tent, or a house. (j) To lodge; to entertain; as, to put up travelers. position of some object, and are often used interchangeably. To put is the least definite, denoting merely to move to a place. To place has more particular reference to the precise location, as to put with care in a certain or proper place. To set or to lay may be used when there is special reference to the position of the object.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To go or move; as, when the air first puts up. [Obs.] Bacon.",
@@ -6079,7 +6421,17 @@
       ],
       "relatedWords": []
     },
-    "putidityputidness": {
+    "putidity": {
+      "word": "PUTIDITY; PUTIDNESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being putrid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "putidness": {
       "word": "PUTIDITY; PUTIDNESS",
       "definitions": [
         {
@@ -6233,6 +6585,20 @@
         {
           "text": "A nontoxic diamine, C4H12N2, formed in the putrefaction of the flesh of mammals and some other animals.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "putrid": {
+      "word": "PUTRID",
+      "definitions": [
+        {
+          "text": "Tending to decomposition or decay; decomposed; rotten; -- said of animal or vegetable matter; as, putrid flesh. See Putrefaction.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Indicating or proceeding from a decayed state of animal or vegetable matter; as, a putrid smell. Putrid fever (Med.), typhus fever; -- so called from the decomposing and offensive state of the discharges and diseased textures of the body. fauces and pharynx.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6551,7 +6917,17 @@
       ],
       "relatedWords": []
     },
-    "puzzolanpuzzolana": {
+    "puzzolan": {
+      "word": "PUZZOLAN; PUZZOLANA",
+      "definitions": [
+        {
+          "text": "See Pozzuolana.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "puzzolana": {
       "word": "PUZZOLAN; PUZZOLANA",
       "definitions": [
         {

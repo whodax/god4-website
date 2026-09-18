@@ -359,7 +359,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "That which is received; that which comes in, in distinction from what is expended, paid out, sent away, and the like; -- usually in",
+          "text": "That which is received; that which comes in, in distinction from what is expended, paid out, sent away, and the like; -- usually in the plural; as, the receipts amounted to a thousand dollars. Cross receipts. See under Gross, a.",
           "partOfSpeech": "noun"
         },
         {
@@ -413,6 +413,16 @@
         {
           "text": "The quality of being receivable; receivableness.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "receivable": {
+      "word": "RECEIVABLE",
+      "definitions": [
+        {
+          "text": "Capable of being received.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -539,6 +549,16 @@
         {
           "text": "The state or office of a receiver.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recelebrate": {
+      "word": "RECELEBRATE",
+      "definitions": [
+        {
+          "text": "To celebrate again, or anew.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1025,6 +1045,16 @@
       ],
       "relatedWords": []
     },
+    "recidivist": {
+      "word": "RECIDIVIST",
+      "definitions": [
+        {
+          "text": "One who is recidivous or is characterized by recidivism; an incorrigible criminal. -- Re*cid`i*vis\"tic (#), a. The criminal by passion never becomes a recidivist, it is the social, not the antisocial, instincts that are strong within him, his crime is a solitary event in his life. Havelock Ellis.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "recidivous": {
       "word": "RECIDIVOUS",
       "definitions": [
@@ -1055,7 +1085,17 @@
       ],
       "relatedWords": []
     },
-    "recipiencerecipiency": {
+    "recipience": {
+      "word": "RECIPIENCE; RECIPIENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being recipient; a receiving; reception; receptiveness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recipiency": {
       "word": "RECIPIENCE; RECIPIENCY",
       "definitions": [
         {
@@ -1319,7 +1359,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Of or pertaining to recitation; intended for musical recitation",
+          "text": "Of or pertaining to recitation; intended for musical recitation or declamation; in the style or manner of recitative.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1405,7 +1445,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Rashly negligent; utterly careless or heedless. It made the king as reckless as them diligent. Sir P. Sidney.",
+          "text": "Rashly negligent; utterly careless or heedless. It made the king as reckless as them diligent. Sir P. Sidney. indifferent; regardless; unconcerned; inattentive; remiss; rash.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1428,6 +1468,22 @@
     "reckon": {
       "word": "RECKON",
       "definitions": [
+        {
+          "text": "To count; to enumerate; to number; also, to compute; to calculate. The priest shall reckon to him the money according to the years that remain. Lev. xxvii. 18. I reckoned above two hundred and fifty on the outside of the church. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To count as in a number, rank, or series; to estimate by rank or quality; to place by estimation; to account; to esteem; to repute. He was reckoned among the transgressors. Luke xxii. 37. For him I reckon not in high estate. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To charge, attribute, or adjudge to one, as having a certain quality or value. Faith was reckoned to Abraham for righteousness. Rom. iv. 9. Without her eccentricities being reckoned to her for a crime. Hawthorne.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To conclude, as by an enumeration and balancing of chances; hence, to think; to suppose; -- followed by an objective clause; as, I reckon he won't try that again. [Prov. Eng. & Colloq. U. S.] esteem; account; repute. See Calculate, Guess.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To make an enumeration or computation; to engage in numbering or computing. Shak.",
           "partOfSpeech": "verb"
@@ -1799,6 +1855,16 @@
       ],
       "relatedWords": []
     },
+    "recognisor": {
+      "word": "RECOGNIZOR; RECOGNISOR",
+      "definitions": [
+        {
+          "text": "One who enters into a recognizance. [Written also recognisor.] Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "recognition": {
       "word": "RECOGNITION",
       "definitions": [
@@ -1931,7 +1997,7 @@
       ],
       "relatedWords": []
     },
-    "recognizorrecognisor": {
+    "recognizor": {
       "word": "RECOGNIZOR; RECOGNISOR",
       "definitions": [
         {
@@ -2223,7 +2289,7 @@
       "word": "RECOMMENDABLE",
       "definitions": [
         {
-          "text": "Suitable to be recommended; worthy of praise; commendable.",
+          "text": "Suitable to be recommended; worthy of praise; commendable. Glanvill.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2297,7 +2363,17 @@
       ],
       "relatedWords": []
     },
-    "recommitmentrecommittal": {
+    "recommitment": {
+      "word": "RECOMMITMENT; RECOMMITTAL",
+      "definitions": [
+        {
+          "text": "A second or renewed commitment; a renewed reference to a committee.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recommittal": {
       "word": "RECOMMITMENT; RECOMMITTAL",
       "definitions": [
         {
@@ -2489,7 +2565,7 @@
       "word": "RECONCILABLE",
       "definitions": [
         {
-          "text": "Capable of being reconciled; as, reconcilable adversaries; an act reconciable with previous acts. The different accounts of the numbers of ships are reconcilable.",
+          "text": "Capable of being reconciled; as, reconcilable adversaries; an act reconciable with previous acts. The different accounts of the numbers of ships are reconcilable. Arbuthnot.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2649,7 +2725,7 @@
       ],
       "relatedWords": []
     },
-    "reconnoissancereconnaissance": {
+    "reconnaissance": {
       "word": "RECONNOISSANCE; RECONNAISSANCE",
       "definitions": [
         {
@@ -2663,7 +2739,35 @@
       ],
       "relatedWords": []
     },
-    "reconnoiterreconnoitre": {
+    "reconnoissance": {
+      "word": "RECONNOISSANCE; RECONNAISSANCE",
+      "definitions": [
+        {
+          "text": "The act of reconnoitering; preliminary examination or survey. Specifically: (a) (Geol.) An examination or survey of a region in reference to its general geological character. (b) (Engin.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An examination of a region as to its general natural features, preparatory to a more particular survey for the purposes of triangulation, or of determining the location of a public work. (c) (Mil.) An examination of a territory, or of an enemy's position, for the purpose of obtaining information necessary for directing military operations; a preparatory expedition. Reconnoissance in force (Mil.), a demonstration or attack by a large force of troops for the purpose of discovering the position and strength of an enemy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reconnoiter": {
+      "word": "RECONNOITER; RECONNOITRE",
+      "definitions": [
+        {
+          "text": "To examine with the eye to make a preliminary examination or survey of; esp., to survey with a view to military or engineering operations.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To recognize. [Obs.] Sir H. Walpole.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reconnoitre": {
       "word": "RECONNOITER; RECONNOITRE",
       "definitions": [
         {
@@ -3081,27 +3185,7 @@
       ],
       "relatedWords": []
     },
-    "recouper": {
-      "word": "RECOUPER",
-      "definitions": [
-        {
-          "text": "One who recoups. Story.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "recoupment": {
-      "word": "RECOUPMENT",
-      "definitions": [
-        {
-          "text": "The act of recouping. from which thw principal demand arises, set-off to cross-demands which may be independent in origin. Abbott.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "recouprecoupe": {
+    "recoup": {
       "word": "RECOUP; RECOUPE",
       "definitions": [
         {
@@ -3119,6 +3203,48 @@
         {
           "text": "To reimburse; to indemnify; -- often used reflexively and in the passive. Elizabeth had lost her venture; but if she was bold, she might recoup herself at Philip's cost. Froude. Industry is sometimes recouped for a small price by extensive custom. Duke of Argyll.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recoupe": {
+      "word": "RECOUP; RECOUPE",
+      "definitions": [
+        {
+          "text": "(Law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To keep back rightfully (a part), as if by cutting off, so as to diminish a sum due; to take off (a part) from damages; to deduct; as, where a landlord recouped the rent of premises from damages awarded to the plaintiff for eviction.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To get an equivalent or compensation for; as, to recoup money lost at the gaming table; to recoup one's losses in the share market.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To reimburse; to indemnify; -- often used reflexively and in the passive. Elizabeth had lost her venture; but if she was bold, she might recoup herself at Philip's cost. Froude. Industry is sometimes recouped for a small price by extensive custom. Duke of Argyll.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recouper": {
+      "word": "RECOUPER",
+      "definitions": [
+        {
+          "text": "One who recoups. Story.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recoupment": {
+      "word": "RECOUPMENT",
+      "definitions": [
+        {
+          "text": "The act of recouping. from which thw principal demand arises, set-off to cross-demands which may be independent in origin. Abbott.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3225,7 +3351,7 @@
       "word": "RECOVERABLE",
       "definitions": [
         {
-          "text": "Capable of being recovered or regained; capable of being brought back to a former condition, as from sickness, misfortune, etc.; obtainable from a debtor or possessor; as, the debt is recoverable; goods lost or sunk in the ocean are not recoverable. A prodigal course Is like the sun's; but not, like his, recoverable. Shak.",
+          "text": "Capable of being recovered or regained; capable of being brought back to a former condition, as from sickness, misfortune, etc.; obtainable from a debtor or possessor; as, the debt is recoverable; goods lost or sunk in the ocean are not recoverable. A prodigal course Is like the sun's; but not, like his, recoverable. Shak. If I am recoverable, why am I thus Cowper.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3383,7 +3509,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Tending to recreate or refresh; recreating; giving new vigor or animation; reinvigorating; giving relief after labor or pain; amusing; diverting.",
+          "text": "Tending to recreate or refresh; recreating; giving new vigor or animation; reinvigorating; giving relief after labor or pain; amusing; diverting. Let the music of them be recreative. Bacon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3517,7 +3643,25 @@
       ],
       "relatedWords": []
     },
-    "recrudescencerecrudescency": {
+    "recrudescence": {
+      "word": "RECRUDESCENCE; RECRUDESCENCY",
+      "definitions": [
+        {
+          "text": "The state or condition of being recrudescent. A recrudescence of barbarism may condemn it [land] to chronic poverty and waste. Duke of Argyll.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Increased severity of a disease after temporary remission. Dunglison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recrudescency": {
       "word": "RECRUDESCENCE; RECRUDESCENCY",
       "definitions": [
         {
@@ -3657,6 +3801,16 @@
       ],
       "relatedWords": []
     },
+    "rectangular": {
+      "word": "RECTANGULAR",
+      "definitions": [
+        {
+          "text": "Right-angled; having one or more angles of ninety degrees.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "rectangularity": {
       "word": "RECTANGULARITY",
       "definitions": [
@@ -3763,11 +3917,21 @@
       ],
       "relatedWords": []
     },
-    "rectilinealrectilinear": {
+    "rectilineal": {
       "word": "RECTILINEAL; RECTILINEAR",
       "definitions": [
         {
-          "text": "Straight; consisting of a straight line or lines; bounded by straight lines; as, a rectineal angle; a rectilinear figure or",
+          "text": "Straight; consisting of a straight line or lines; bounded by straight lines; as, a rectineal angle; a rectilinear figure or course.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rectilinear": {
+      "word": "RECTILINEAL; RECTILINEAR",
+      "definitions": [
+        {
+          "text": "Straight; consisting of a straight line or lines; bounded by straight lines; as, a rectineal angle; a rectilinear figure or course.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4075,11 +4239,15 @@
         {
           "text": "To recoil. [Obs.] Spenser.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Recoil. [Obs.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "reculereculement": {
+    "reculement": {
       "word": "RECULE; RECULEMENT",
       "definitions": [
         {
@@ -4123,7 +4291,7 @@
       "word": "RECUMBENT",
       "definitions": [
         {
-          "text": "Leaning; reclining; lying; as, the recumbent posture of the",
+          "text": "Leaning; reclining; lying; as, the recumbent posture of the Romans at their meals. Hence, figuratively; Resting; inactive; idle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4163,7 +4331,7 @@
       ],
       "relatedWords": []
     },
-    "recuperativerecuperatory": {
+    "recuperative": {
       "word": "RECUPERATIVE; RECUPERATORY",
       "definitions": [
         {
@@ -4179,6 +4347,16 @@
         {
           "text": "Same as Regenerator.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recuperatory": {
+      "word": "RECUPERATIVE; RECUPERATORY",
+      "definitions": [
+        {
+          "text": "Of or pertaining to recuperation; tending to recovery.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4237,7 +4415,17 @@
       ],
       "relatedWords": []
     },
-    "recurrencerecurrency": {
+    "recurrence": {
+      "word": "RECURRENCE; RECURRENCY",
+      "definitions": [
+        {
+          "text": "The act of recurring, or state of being recurrent; return; resort; recourse. I shall insensibly go on from a rare to a frequent recurrence to the dangerous preparations. I. Taylor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "recurrency": {
       "word": "RECURRENCE; RECURRENCY",
       "definitions": [
         {

@@ -53,7 +53,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "That may be suffered, tolerated, or permitted; allowable;",
+          "text": "That may be suffered, tolerated, or permitted; allowable; tolerable.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -109,6 +109,10 @@
         {
           "text": "The bearing of pain, inconvenience, or loss; pain endured; distress, loss, or injury incurred; as, sufferings by pain or sorrow; sufferings by want or by wrongs. \"Souls in sufferings tried.\" Keble.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Being in pain or grief; having loss, injury, distress, etc.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -195,6 +199,16 @@
         {
           "text": "To a sufficient degree; to a degree that answers the purpose, or gives content; enough; as, we are sufficiently supplied with food; a man sufficiently qualified for the discharge of his official duties.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sufficing": {
+      "word": "SUFFICING",
+      "definitions": [
+        {
+          "text": "Affording enough; satisfying.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -313,6 +327,16 @@
         {
           "text": "To become choked, stifled, or smothered. \"A swelling discontent is apt to suffocate and strangle without passage.\" collier.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "suffocating": {
+      "word": "SUFFOCATING",
+      "definitions": [
+        {
+          "text": "from Suffocate, v.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

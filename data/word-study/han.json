@@ -11,7 +11,7 @@
       ],
       "relatedWords": []
     },
-    "han'thain't": {
+    "han't": {
       "word": "HAN'T; HAIN'T",
       "definitions": [
         {
@@ -31,17 +31,43 @@
       ],
       "relatedWords": []
     },
+    "hanaper": {
+      "word": "HANAPER",
+      "definitions": [
+        {
+          "text": "A kind of basket, usually of wickerwork, and adapted for the packing and carrying of articles; a hamper. Hanaper office, an office of the English court of chancery in which writs relating to the business of the public, and the returns to them, were anciently kept in a hanaper or hamper. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "hance": {
       "word": "HANCE",
       "definitions": [
         {
           "text": "To raise; to elevate. [Obs.] Lydgate.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Arch.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "See Hanse.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A sudden fall or break, as the fall of the fife rail down to the gangway.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
     },
-    "hancehanch": {
+    "hanch": {
       "word": "HANCE; HANCH",
       "definitions": [
         {
@@ -2251,7 +2277,85 @@
         "well-made"
       ]
     },
-    "handmaidhandmaiden": {
+    "handmaid": {
+      "word": "HANDMAID; HANDMAIDEN",
+      "definitions": [
+        {
+          "text": "A maid that waits at hand; a female servant or attendant.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Charlie McCarthy",
+        "abigail",
+        "agent",
+        "amah",
+        "ancilla",
+        "appliance",
+        "au pair girl",
+        "ayah",
+        "betweenmaid",
+        "biddy",
+        "chambermaid",
+        "chaperon",
+        "companion",
+        "contrivance",
+        "cook",
+        "creature",
+        "device",
+        "duenna",
+        "dummy",
+        "dupe",
+        "femme de chambre",
+        "fille de chambre",
+        "gentlewoman",
+        "girl",
+        "go-between",
+        "handmaiden",
+        "hired girl",
+        "housemaid",
+        "implement",
+        "instrument",
+        "interagent",
+        "intermediary",
+        "intermediate",
+        "intermedium",
+        "kitchenmaid",
+        "lady-help",
+        "lady-in-waiting",
+        "lever",
+        "live-in maid",
+        "live-out maid",
+        "maid",
+        "maidservant",
+        "mechanism",
+        "mediator",
+        "medium",
+        "midwife",
+        "minion",
+        "nursemaid",
+        "organ",
+        "parlormaid",
+        "pawn",
+        "plaything",
+        "puppet",
+        "scullery maid",
+        "servant",
+        "servant girl",
+        "servitress",
+        "slave",
+        "soubrette",
+        "stooge",
+        "tool",
+        "toy",
+        "tweeny",
+        "upstairs maid",
+        "vehicle",
+        "waiting maid",
+        "wench"
+      ]
+    },
+    "handmaiden": {
       "word": "HANDMAID; HANDMAIDEN",
       "definitions": [
         {
@@ -2761,6 +2865,34 @@
     "hang": {
       "word": "HANG",
       "definitions": [
+        {
+          "text": "To suspend; to fasten to some elevated point without support from below; -- often used with up or out; as, to hang a coat on a hook; to hang up a sign; to hang out a banner.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fasten in a manner which will allow of free motion upon the point or points of suspension; -- said of a pendulum, a swing, a door, gate, etc.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fit properly, as at a proper angle (a part of an implement that is swung in using), as a scythe to its snath, or an ax to its helve. [U. S.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To put to death by suspending by the neck; -- a form of capital punishment; as, to hang a murderer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cover, decorate, or furnish by hanging pictures trophies, drapery, and the like, or by covering with paper hangings; -- said of a wall, a room, etc. Hung be the heavens with black. Shak. And hung thy holy roofs with savage spoils. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To paste, as paper hangings, on the walls of a room.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hold or bear in a suspended or inclined manner or position instead of erect; to droop; as, he hung his head in shame. Cowslips wan that hang the pensive head. Milton. To hang down, to let fall below the proper position; to bend down; to decline; as, to hang down the head, or, elliptically, to hang the head. vent to the charge; as, the gun hangs fire; hence, to hesitate, to hold back as if in suspense.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To be suspended or fastened to some elevated point without support from below; to dangle; to float; to rest; to remain; to stay.",
           "partOfSpeech": "verb"
@@ -3465,52 +3597,6 @@
         "woodcut"
       ]
     },
-    "hangingagoldenstampabouttheirnecksshak": {
-      "word": "hanging a golden stamp about their necks. Shak.",
-      "definitions": [
-        {
-          "text": "A picture cut in wood or metal, or made by impression; a cut; a plate. [Obs.] At Venice they put out very curious stamps of the several edifices which are most famous for their beauty and magnificence. Addison.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "An offical mark set upon things chargeable with a duty or tax to government, as evidence that the duty or tax is paid; as, the stamp on a bill of exchange.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Hence, a stamped or printed device, issued by the government at a fixed price, and required by law to be affixed to, or stamped on, certain papers, as evidence that the government dues are paid; as, a postage stamp; a receipt stamp, etc.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "An instrument for cutting out, or shaping, materials, as paper, leather, etc., by a downward pressure.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A character or reputation, good or bad, fixed on anything as if by an imprinted mark; current value; authority; as, these persons have the stamp of dishonesty; the Scriptures bear the stamp of a divine origin. Of the same stamp is that which is obtruded on us, that an adamant suspends the attraction of the loadstone. Sir T. Browne.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Make; cast; form; character; as, a man of the same stamp, or of a different stamp. A soldier of this season's stamp. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A kind of heavy hammer, or pestle, raised by water or steam power, for beating ores to powder; anything like a pestle, used for pounding or bathing.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A half-penny. [Obs.] au. & Fl.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "pl.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Money, esp. paper money. [Slang, U.S.] Stamp act, an act of the British Parliament [1765] imposing a duty on all paper, vellum, and parchment used in the American colonies, and declaring all writings on unstamped materials to be null an void. duties; one who collects postage or other stamps. for certain writings, as deeds, conveyances, etc., the evidence of the payment of the duty or tax being a stamp. [Eng.] -- Stamp hammer, a hammer, worked by power, which rises and falls vertically, like a stamp in a stamp mill. of a bar, which is lifted and let fall, in a stamp mill. also, a machine for stamping ore. which allows goods to be received by the captain of a ship as freight. [Eng.] -- Stamp office, an office for the issue of stamps and the reception of stamp duties.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "hangman": {
       "word": "HANGMAN",
       "definitions": [
@@ -3756,7 +3842,7 @@
       ],
       "relatedWords": []
     },
-    "hansomhansomcab": {
+    "hansom": {
       "word": "HANSOM; HANSOM CAB",
       "definitions": [
         {
@@ -3766,7 +3852,27 @@
       ],
       "relatedWords": []
     },
-    "hanukkahanukkah": {
+    "hansomcab": {
+      "word": "HANSOM; HANSOM CAB",
+      "definitions": [
+        {
+          "text": "A light, low, two-wheeled covered carriage with the driver's seat elevated behind, the reins being passed over the top. He hailed a cruising hansom . . . \" 'Tis the gondola of London,\" said Lothair. Beaconsfield.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hanukka": {
+      "word": "HANUKKA; HANUKKAH",
+      "definitions": [
+        {
+          "text": "The Jewish Feast of the Dedication, instituted by Judas Maccabæus, his brothers, and the whole congregation of Israel, in 165 b. c., to commemorate the dedication of the new altar set up at the purification of the temple of Jerusalem to replace the altar which had been polluted by Antiochus Epiphanes (1 Maccabees i. 58, iv. 59). The feast, which is mentioned in John x. 22, is held for eight days (beginning with the 25th day of Kislev, corresponding to December), and is celebrated everywhere, chiefly as a festival of lights, by the Jews.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hanukkah": {
       "word": "HANUKKA; HANUKKAH",
       "definitions": [
         {

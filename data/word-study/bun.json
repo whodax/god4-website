@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "entries": {
-    "bunbunn": {
+    "bun": {
       "word": "BUN; BUNN",
       "definitions": [
         {
@@ -9,7 +9,45 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Danish",
+        "Danish pastry",
+        "English muffin",
+        "Parker House roll",
+        "Yorkshire pudding",
+        "bagel",
+        "bialy",
+        "bialystoker",
+        "braid",
+        "chignon",
+        "clover-leaf roll",
+        "coffee cake",
+        "coil",
+        "crescent roll",
+        "croissant",
+        "cross bun",
+        "crumpet",
+        "cue",
+        "gem",
+        "hard roll",
+        "hot cross bun",
+        "kaiser roll",
+        "knot",
+        "muffin",
+        "onion roll",
+        "pigtail",
+        "pinwheel roll",
+        "plait",
+        "popover",
+        "queue",
+        "rattail",
+        "roll",
+        "scone",
+        "soft roll",
+        "tail",
+        "topknot",
+        "twist"
+      ]
     },
     "bunch": {
       "word": "BUNCH",
@@ -465,7 +503,7 @@
       ],
       "relatedWords": []
     },
-    "buncombebunkum": {
+    "buncombe": {
       "word": "BUNCOMBE; BUNKUM",
       "definitions": [
         {
@@ -473,7 +511,87 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Washingtonese",
+        "adulation",
+        "balls",
+        "baloney",
+        "big talk",
+        "bilge",
+        "blague",
+        "blah",
+        "blah-blah",
+        "blandishment",
+        "blarney",
+        "bop",
+        "bosh",
+        "bull",
+        "bullshit",
+        "bunk",
+        "bunkum",
+        "cajolement",
+        "cajolery",
+        "claptrap",
+        "compliment",
+        "crap",
+        "eyewash",
+        "fair words",
+        "fancy talk",
+        "fawning",
+        "federalese",
+        "fine talk",
+        "fish story",
+        "flam",
+        "flapdoodle",
+        "flattery",
+        "flimflam",
+        "gammon",
+        "gas",
+        "gobbledygook",
+        "grease",
+        "guff",
+        "gup",
+        "highfalutin",
+        "highfaluting",
+        "hogwash",
+        "hoke",
+        "hokum",
+        "honeyed phrases",
+        "honeyed words",
+        "hooey",
+        "hot air",
+        "humbug",
+        "humbuggery",
+        "incense",
+        "jiggery-pokery",
+        "malarkey",
+        "moonshine",
+        "official jargon",
+        "officialese",
+        "oil",
+        "palaver",
+        "piffle",
+        "political doubletalk",
+        "poppycock",
+        "praise",
+        "pretty lies",
+        "pussyfooting",
+        "rot",
+        "scat",
+        "shit",
+        "soap",
+        "soft soap",
+        "sweet nothings",
+        "sweet talk",
+        "sweet words",
+        "sycophancy",
+        "tall story",
+        "tall talk",
+        "tommyrot",
+        "tripe",
+        "wheedling",
+        "wind"
+      ]
     },
     "bund": {
       "word": "BUND",
@@ -1124,6 +1242,10 @@
         {
           "text": "Same as Bunyon.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "An enlargement and inflammation of a small membranous sac (one of the bursæ muscosæ), usually occurring on the first joint of the great toe.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -1638,8 +1760,12 @@
       "relatedWords": []
     },
     "bunkum": {
-      "word": "BUNKUM",
+      "word": "BUNCOMBE; BUNKUM",
       "definitions": [
+        {
+          "text": "Speech-making for the gratification of constituents, or to gain public applause; flattering talk for a selfish purpose; anything said for mere show. [Cant or Slang, U.S.] All that flourish about right of search was bunkum -- all that brag about hanging your Canada sheriff was bunkum . . . slavery speeches are all bunkum. Haliburton. To speak for Buncombe, to speak for mere show, or popularly. famous 'Missouri Question,' in the 16th Congress. It was then used by Felix Walker -- a naïve old mountaineer, who resided at Waynesville, in Haywood, the most western country of North Carolina, near the border of the adjacent country of Buncombe, which formed part of his district. The old man rose to speak, while the house was impatiently calling for the 'Question,' and several members gathered round him, begging him to desist. He preserved, however, for a while, declaring that the people of his district expected it, and that he was bound to 'make a speech for Buncombe.'\" W. Darlington.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Buncombe.",
           "partOfSpeech": "noun"
@@ -1744,8 +1870,12 @@
       ]
     },
     "bunn": {
-      "word": "BUNN",
+      "word": "BUN; BUNN",
       "definitions": [
+        {
+          "text": "A slightly sweetened raised cake or bisquit with a glazing of sugar and milk on the top crust.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Bun.",
           "partOfSpeech": "noun"
@@ -1816,7 +1946,7 @@
         "stunner"
       ]
     },
-    "bunodontabunodonts": {
+    "bunodonta": {
       "word": "BUNODONTA; BUNODONTS",
       "definitions": [
         {
@@ -1826,7 +1956,27 @@
       ],
       "relatedWords": []
     },
-    "bunsen'sbatterybunsen'sburner": {
+    "bunodonts": {
+      "word": "BUNODONTA; BUNODONTS",
+      "definitions": [
+        {
+          "text": "A division of the herbivorous mammals including the hogs and hippopotami; -- so called because the teeth are tuberculated.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bunsen'sbattery": {
+      "word": "BUNSEN'S BATTERY; BUNSEN'S BURNER",
+      "definitions": [
+        {
+          "text": "See under Battery, and Burner.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "bunsen'sburner": {
       "word": "BUNSEN'S BATTERY; BUNSEN'S BURNER",
       "definitions": [
         {
@@ -1970,11 +2120,25 @@
       ],
       "relatedWords": []
     },
+    "buntine": {
+      "word": "BUNTING; BUNTINE",
+      "definitions": [
+        {
+          "text": "A thin woolen stuff, used chiefly for flags, colors, and ships' signals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "bunting": {
       "word": "BUNTING",
       "definitions": [
         {
           "text": "A bird of the genus Emberiza, or of an allied genus, related to the finches and sparrows (family Fringillidæ). miliaria); the ortolan (E. hortulana); the cirl (E. cirlus); and the black-headed (Granitivora melanocephala). American species are the bay-winged or grass (Poöcætes or Pooecetes gramineus); the black- throated (Spiza Americana); the towhee bunting or chewink (Pipilo); the snow bunting (Plectrophanax nivalis); the rice bunting or bobolink, and others. See Ortolan, Chewick, Snow bunting, Lark bunting.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A thin woolen stuff, used chiefly for flags, colors, and ships' signals.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2021,16 +2185,6 @@
         "white"
       ]
     },
-    "buntingbuntine": {
-      "word": "BUNTING; BUNTINE",
-      "definitions": [
-        {
-          "text": "A thin woolen stuff, used chiefly for flags, colors, and ships' signals.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "buntline": {
       "word": "BUNTLINE",
       "definitions": [
@@ -2041,7 +2195,7 @@
       ],
       "relatedWords": []
     },
-    "bunyonbunion": {
+    "bunyon": {
       "word": "BUNYON; BUNION",
       "definitions": [
         {

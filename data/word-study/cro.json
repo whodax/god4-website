@@ -767,7 +767,17 @@
       ],
       "relatedWords": []
     },
-    "croisadecroisado": {
+    "croisade": {
+      "word": "CROISADE; CROISADO",
+      "definitions": [
+        {
+          "text": "A holy war; a crusade. [Obs.] Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "croisado": {
       "word": "CROISADE; CROISADO",
       "definitions": [
         {
@@ -2441,7 +2451,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Made in an opposite direction, or an inverse relation; mutually inverse; interchanged; as, cross interrogatories; cross marriages, as when a brother and sister marry persons standing in the same relation to each other. Cross action (Law), an action brought by a party who is sued against the person who has sued him, upon the same subject matter, as upon the same contract. Burrill. cruciform church. levers at opposite ends, as in the copperplate printing press. (b) A driving axle. with cranks set at an angle of 90º with each other. Cross bill. See in the Vocabulary. stretcher course come midway between those of the stretcher courses",
+          "text": "Made in an opposite direction, or an inverse relation; mutually inverse; interchanged; as, cross interrogatories; cross marriages, as when a brother and sister marry persons standing in the same relation to each other. Cross action (Law), an action brought by a party who is sued against the person who has sued him, upon the same subject matter, as upon the same contract. Burrill. cruciform church. levers at opposite ends, as in the copperplate printing press. (b) A driving axle. with cranks set at an angle of 90º with each other. Cross bill. See in the Vocabulary. stretcher course come midway between those of the stretcher courses above and below, a course of headers and stretchers intervening. See Bond, n., 8. unexpected defeat or repulse. Smollet. country ride.\" Cowper. one physiological individual by the male products of another, -- as the fertilization of the ovules of one plant by pollen from another. See Fertilization. or crosses of fine wheells. places, crossing each other. receive the water running in them and conduct it to the side of the field. tool, as in the augur. Knight. lode. register to another part, where the same or an allied subject is treated of. contrary directions. letter t. telescope, and moved by a screw with a graduated head, used for delicate astronomical observations; spider lines. Fixed cross wires are also used in microscopes, etc.",
           "partOfSpeech": "adjective"
         },
         {
@@ -4616,7 +4626,17 @@
       ],
       "relatedWords": []
     },
-    "crossspalecrossspall": {
+    "crossspale": {
+      "word": "CROSS-SPALE; CROSS-SPALL",
+      "definitions": [
+        {
+          "text": "One of the temporary wooden braces, placed horizontally across a frame to hold it in position until the deck beams are in; a cross- pawl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "crossspall": {
       "word": "CROSS-SPALE; CROSS-SPALL",
       "definitions": [
         {
@@ -5603,6 +5623,26 @@
         {
           "text": "To utter a sound expressive of joy or pleasure. The sweetest little maid, That ever crowed for kisses. Tennyson. To crow over, to exult over a vanquished antagonist. Sennacherib crowing over poor Jerusalem. Bp. Hall.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bird, usually black, of the genus Corvus, having a strong conical beak, with projecting bristles. It has a harsh, croaking note. See Caw. common American crow is C. Americanus. See Carrion crow, and Illustr., under Carrion.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A bar of iron with a beak, crook, or claw; a bar of iron used as a lever; a crowbar. Get me an iron crow, and bring it straight Unto my cell. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The cry of the cock. See Crow, v. i., 1.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The mesentery of a beast; -- so called by butchers. Carrion crow. See under Carrion. called also purple grackle. believed by the natives to give omens. See Coucal. or Strepera, mostly from Australia. or grievance (with any one).",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -6560,6 +6600,34 @@
         {
           "text": "An ornaments or decoration representing a crown; as, the paper is stamped with a crown. Crown of aberration (Astron.), a spurious circle around the true circle of the sun. also, an antler having a cuplike top, with tines springing from the rim. steam-boiler furnace. wearing the crown. [Eng.] \"She pawned and set to sale the crown jewels.\" Milton. sovereign. Crown lawyer, one employed by the crown, as in criminal cases. [Eng.] horse's hoof. fire box of an internally fired steam boiler. required annually from the Jews by the king of Syria, in the time of the Maccabees. 1 Macc. x. 20.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To cover, decorate, or invest with a crown; hence, to invest with royal dignity and power. Her who fairest does appear, Crown her queen of all the year. Dryden. Crown him, and say, \"Long live our emperor.\" Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bestow something upon as a mark of honor, dignity, or recompense; to adorn; to dignify. Thou . . . hast crowned him with glory and honor. Ps. viii. 5.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To form the topmost or finishing part of; to complete; to consummate; to perfect. Amidst the grove that crowns yon tufted hill. Byron. One day shall crown the alliance. Shak. To crown the whole, came a proposition. Motley.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to round upward; to make anything higher at the middle than at the edges, as the face of a machine pulley.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To effect a lodgment upon, as upon the crest of the glacis, or the summit of the breach. To crown a knot (Naut.), to lay the ends of the strands over and under each other.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": [
@@ -7161,32 +7229,6 @@
       ],
       "relatedWords": []
     },
-    "crownoftheheadgwirbelwhirlcrownoftheheaddwervelsee": {
-      "word": "crown of the head, G. wirbel whirl, crown of the head, D. wervel. See",
-      "definitions": [
-        {
-          "text": "A turning with rapidity or velocity; rapid rotation or circumvolution; quick gyration; rapid or confusing motion; as, the whirl of a top; the whirl of a wheel. \"In no breathless whirl.\" J. H. Newman. The rapid . . . whirl of things here below interrupt not the inviolable rest and calmness of the noble beings above. South.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Anything that moves with a whirling motion. He saw Falmouth under gray, iron skies, and whirls of March dust. Carlyle.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A revolving hook used in twisting, as the hooked spindle of a rope machine, to which the threads to be twisted are attached.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Bot. & Zoöl.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A whorl. See Whorl.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "crownpost": {
       "word": "CROWN-POST",
       "definitions": [
@@ -7340,6 +7382,16 @@
       "definitions": [
         {
           "text": "Crystallized cawk, in which the crystals are small.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "croys": {
+      "word": "CROYS",
+      "definitions": [
+        {
+          "text": "See Cross, n. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
         }
       ],

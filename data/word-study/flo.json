@@ -496,7 +496,17 @@
         "waterskiing"
       ]
     },
-    "floatingchargefloatinglien": {
+    "floatingcharge": {
+      "word": "FLOATING CHARGE; FLOATING LIEN",
+      "definitions": [
+        {
+          "text": "A charge, lien, etc., that successively attaches to such assets as a person may have from time to time, leaving him more or less free to dispose of or encumber them as if no such charge or lien existed.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "floatinglien": {
       "word": "FLOATING CHARGE; FLOATING LIEN",
       "definitions": [
         {
@@ -906,28 +916,6 @@
       ],
       "relatedWords": []
     },
-    "flodgothflodusfromtherootofeflowsqroot80seeflow": {
-      "word": "flod, Goth. flodus; from the root of E. flow. sq. root80. See Flow,",
-      "definitions": [
-        {
-          "text": "A great flow of water; a body of moving water; the flowing stream, as of a river; especially, a body of water, rising, swelling, and overflowing land not usually thus covered; a deluge; a freshet; an inundation. A covenant never to destroy The earth again by flood. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The flowing in of the tide; the semidiurnal swell or rise of water in the ocean; -- opposed to ebb; as, young flood; high flood. There is a tide in the affairs of men, Which, taken at the flood, leads on to fortune. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A great flow or stream of any fluid substance; as, a flood of light; a flood of lava; hence, a great quantity widely diffused; an overflowing; a superabundance; as, a flood of bank notes; a flood of paper currency.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Menstrual disharge; menses. Harvey. Flood anchor (Naut.) , the anchor by which a ship is held while the tide is rising. a flood. body of water; a tide gate. rises; high-water mark.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "floe": {
       "word": "FLOE",
       "definitions": [
@@ -1106,6 +1094,22 @@
     "flood": {
       "word": "FLOOD",
       "definitions": [
+        {
+          "text": "A great flow of water; a body of moving water; the flowing stream, as of a river; especially, a body of water, rising, swelling, and overflowing land not usually thus covered; a deluge; a freshet; an inundation. A covenant never to destroy The earth again by flood. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The flowing in of the tide; the semidiurnal swell or rise of water in the ocean; -- opposed to ebb; as, young flood; high flood. There is a tide in the affairs of men, Which, taken at the flood, leads on to fortune. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A great flow or stream of any fluid substance; as, a flood of light; a flood of lava; hence, a great quantity widely diffused; an overflowing; a superabundance; as, a flood of bank notes; a flood of paper currency.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Menstrual disharge; menses. Harvey. Flood anchor (Naut.) , the anchor by which a ship is held while the tide is rising. a flood. body of water; a tide gate. rises; high-water mark.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To overflow; to inundate; to deluge; as, the swollen river flooded the valley.",
           "partOfSpeech": "verb"
@@ -1518,7 +1522,7 @@
       ],
       "relatedWords": []
     },
-    "flookanflukan": {
+    "flookan": {
       "word": "FLOOKAN; FLUKAN",
       "definitions": [
         {
@@ -2027,6 +2031,104 @@
         }
       ],
       "relatedWords": []
+    },
+    "flooring": {
+      "word": "FLOORING",
+      "definitions": [
+        {
+          "text": "A platform; the bottom of a room; a floor; pavement. See Floor, n. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Material for the construction of a floor or floors.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "adobe",
+        "ashlar",
+        "base",
+        "basement",
+        "basis",
+        "bearing wall",
+        "bed",
+        "bedding",
+        "bedrock",
+        "brick",
+        "bricks and mortar",
+        "carpet",
+        "carpeting",
+        "cement",
+        "clinker",
+        "concrete",
+        "cover",
+        "covering materials",
+        "deck",
+        "doormat",
+        "drop cloth",
+        "duckboards",
+        "earth",
+        "ferroconcrete",
+        "firebrick",
+        "flag",
+        "flagstone",
+        "floor",
+        "floor covering",
+        "floorboards",
+        "fond",
+        "footing",
+        "foundation",
+        "fundament",
+        "fundamental",
+        "ground",
+        "ground cloth",
+        "ground-sheet",
+        "grounds",
+        "groundwork",
+        "hardpan",
+        "lath and plaster",
+        "masonry",
+        "mat",
+        "mortar",
+        "parquet",
+        "pave",
+        "pavement",
+        "paving",
+        "paving material",
+        "plasters",
+        "prestressed concrete",
+        "principle",
+        "radical",
+        "riprap",
+        "rock bottom",
+        "roofage",
+        "roofing",
+        "rudiment",
+        "rug",
+        "seat",
+        "siding",
+        "sill",
+        "solid ground",
+        "solid rock",
+        "stereobate",
+        "stone",
+        "stylobate",
+        "substratum",
+        "substruction",
+        "substructure",
+        "surfacing",
+        "terra firma",
+        "tile",
+        "tiling",
+        "underbuilding",
+        "undercarriage",
+        "undergirding",
+        "underpinning",
+        "understruction",
+        "understructure",
+        "walling",
+        "welcome mat"
+      ]
     },
     "floorless": {
       "word": "FLOORLESS",
@@ -3537,7 +3639,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The science of floating bodies. Center of flotation. (Shipbuilding) (a) The center of any given plane of flotation. (b) More commonly, the middle of the length of the load water line. Rankine.",
+          "text": "The science of floating bodies. Center of flotation. (Shipbuilding) (a) The center of any given plane of flotation. (b) More commonly, the middle of the length of the load water line. Rankine. horizontal surface of a fluid cuts a body floating in it. See Bearing, n., 9 (c). all the planes of flotation touch when a vessel rolls or pitches; the envelope of all such planes.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3600,7 +3702,58 @@
       ],
       "relatedWords": []
     },
-    "flotsamflotson": {
+    "flotilla": {
+      "word": "FLOTILLA",
+      "definitions": [
+        {
+          "text": "A little fleet, or a fleet of small vessels.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Naval Construction Battalion",
+        "RN",
+        "Royal Navy",
+        "Seabees",
+        "USN",
+        "United States Navy",
+        "argosy",
+        "armada",
+        "bottoms",
+        "coast guard",
+        "division",
+        "escadrille",
+        "fleet",
+        "line",
+        "marine",
+        "merchant fleet",
+        "merchant marine",
+        "merchant navy",
+        "mosquito fleet",
+        "naval forces",
+        "naval militia",
+        "naval reserve",
+        "navy",
+        "shipping",
+        "ships",
+        "squadron",
+        "task force",
+        "task group",
+        "tonnage",
+        "whaling fleet"
+      ]
+    },
+    "flotsam": {
+      "word": "FLOTSAM; FLOTSON",
+      "definitions": [
+        {
+          "text": "Goods lost by shipwreck, and floating on the sea; -- in distinction from jetsam or jetson. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "flotson": {
       "word": "FLOTSAM; FLOTSON",
       "definitions": [
         {
@@ -4760,6 +4913,10 @@
     "flow": {
       "word": "FLOW",
       "definitions": [
+        {
+          "text": "imp. sing. of Fly, v. i. Chaucer.",
+          "partOfSpeech": ""
+        },
         {
           "text": "To move with a continual change of place among the particles or parts, as a fluid; to change place or circulate, as a liquid; as, rivers flow from springs and lakes; tears flow from the eyes.",
           "partOfSpeech": "verb"

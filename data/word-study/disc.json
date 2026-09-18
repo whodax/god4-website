@@ -860,7 +860,7 @@
       ],
       "relatedWords": []
     },
-    "discerpibilitydiscerptibility": {
+    "discerpibility": {
       "word": "DISCERPIBILITY; DISCERPTIBILITY",
       "definitions": [
         {
@@ -870,7 +870,27 @@
       ],
       "relatedWords": []
     },
-    "discerpiblediscerptible": {
+    "discerpible": {
+      "word": "DISCERPIBLE; DISCERPTIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being discerped. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "discerptibility": {
+      "word": "DISCERPIBILITY; DISCERPTIBILITY",
+      "definitions": [
+        {
+          "text": "Capability or liableness to be discerped. [R.] Wollaston.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "discerptible": {
       "word": "DISCERPIBLE; DISCERPTIBLE",
       "definitions": [
         {
@@ -998,7 +1018,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A flowing or issuing out; emission; vent; evacuation; also, that which is discharged or emitted; as, a rapid discharge of water from the pipe. The hemorrhage being stopped, the next occurrence is a thin serous",
+          "text": "A flowing or issuing out; emission; vent; evacuation; also, that which is discharged or emitted; as, a rapid discharge of water from the pipe. The hemorrhage being stopped, the next occurrence is a thin serous discharge. S. Sharp. Charge and discharge. (Equity Practice) See under Charge, n. gland resulting from the cutting of all of its nerves.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1710,7 +1730,17 @@
       ],
       "relatedWords": []
     },
-    "discifloraldisciflorous": {
+    "discifloral": {
+      "word": "DISCIFLORAL; DISCIFLOROUS",
+      "definitions": [
+        {
+          "text": "Bearing the stamens on a discoid outgrowth of the receptacle; - - said of a subclass of plants. Cf. Calycifloral.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "disciflorous": {
       "word": "DISCIFLORAL; DISCIFLOROUS",
       "definitions": [
         {
@@ -1764,7 +1794,7 @@
       "word": "DISCIPLE",
       "definitions": [
         {
-          "text": "One who receives instruction from another; a scholar; a learner; especially, a follower who has learned to believe in the truth of the doctrine of his teacher; an adherent in doctrine; as, the disciples of Plato; the disciples of our Savior. The disciples, or The twelve disciples, the twelve selected companions of Jesus; --",
+          "text": "One who receives instruction from another; a scholar; a learner; especially, a follower who has learned to believe in the truth of the doctrine of his teacher; an adherent in doctrine; as, the disciples of Plato; the disciples of our Savior. The disciples, or The twelve disciples, the twelve selected companions of Jesus; -- also called the apostles.",
           "partOfSpeech": "noun"
         },
         {
@@ -4042,7 +4072,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Destitute of comfort; uncomfortable. [R.]",
+          "text": "Destitute of comfort; uncomfortable. [R.] A labyrinth of little discomfortable garrets. Thackeray.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4058,6 +4088,16 @@
         {
           "text": "To expose to censure or ill favor; to put out of the good graces of any one. A compliance will discommend me to Mr. Coventry. Pepys.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "discommendable": {
+      "word": "DISCOMMENDABLE",
+      "definitions": [
+        {
+          "text": "Deserving, disapprobation or blame.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4394,6 +4434,125 @@
         "whisk",
         "work up",
         "worry"
+      ]
+    },
+    "discomposed": {
+      "word": "DISCOMPOSED",
+      "definitions": [
+        {
+          "text": "Disordered; disturbed; disquieted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abashed",
+        "abroad",
+        "adrift",
+        "afflicted",
+        "agitated",
+        "amiss",
+        "askew",
+        "astray",
+        "at sea",
+        "awry",
+        "balled-up",
+        "beset",
+        "bewildered",
+        "bothered",
+        "cast down",
+        "chagrined",
+        "chaotic",
+        "chapfallen",
+        "clueless",
+        "cockeyed",
+        "confused",
+        "convulsed",
+        "deranged",
+        "disarranged",
+        "discomfited",
+        "discomforted",
+        "disconcerted",
+        "dislocated",
+        "dismayed",
+        "disordered",
+        "disorderly",
+        "disorganized",
+        "disoriented",
+        "disquieted",
+        "distracted",
+        "distraught",
+        "distressed",
+        "disturbed",
+        "embarrassed",
+        "excited",
+        "feverish",
+        "fidgety",
+        "flurried",
+        "flustered",
+        "fluttered",
+        "fussed",
+        "guessing",
+        "haywire",
+        "hung up",
+        "ill at ease",
+        "in a fix",
+        "in a jumble",
+        "in a maze",
+        "in a pickle",
+        "in a pother",
+        "in a pucker",
+        "in a scrape",
+        "in a stew",
+        "in a sweat",
+        "in a swivet",
+        "in a tizzy",
+        "in disorder",
+        "jittery",
+        "jumbled",
+        "jumpy",
+        "lost",
+        "mazed",
+        "misplaced",
+        "mixed-up",
+        "mortified",
+        "nervous",
+        "nervy",
+        "off the track",
+        "on the fritz",
+        "out of countenance",
+        "out of gear",
+        "out of joint",
+        "out of kelter",
+        "out of kilter",
+        "out of order",
+        "out of place",
+        "out of tune",
+        "out of whack",
+        "perplexed",
+        "perturbed",
+        "put-out",
+        "put-upon",
+        "rattled",
+        "restless",
+        "roily",
+        "ruffled",
+        "shaken",
+        "shaken up",
+        "shook",
+        "shuffled",
+        "stirred up",
+        "troubled",
+        "troublous",
+        "turbid",
+        "turbulent",
+        "turned around",
+        "uncomfortable",
+        "uneasy",
+        "unpeaceful",
+        "unquiet",
+        "unsettled",
+        "upset",
+        "without a clue"
       ]
     },
     "discomposition": {
@@ -4981,7 +5140,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Inspiring dejection; saddening; cheerless; as, the disconsolate darkness of the winter nights. Ray.",
+          "text": "Inspiring dejection; saddening; cheerless; as, the disconsolate darkness of the winter nights. Ray. gloomy.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5214,7 +5373,7 @@
       "word": "DISCONTENTED",
       "definitions": [
         {
-          "text": "Dissatisfied; uneasy in mind; malcontent. And every one that was in distress, and every one that was in debt, and every one that was discontented, gathered themselves unto him. 1",
+          "text": "Dissatisfied; uneasy in mind; malcontent. And every one that was in distress, and every one that was in debt, and every one that was discontented, gathered themselves unto him. 1 Sam. xxii. 2.",
           "partOfSpeech": ""
         }
       ],
@@ -5908,7 +6067,7 @@
       "word": "DISCOPHORA",
       "definitions": [
         {
-          "text": "A division of acalephs or jellyfishes, including most of the",
+          "text": "A division of acalephs or jellyfishes, including most of the large disklike species.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5917,6 +6076,18 @@
     "discord": {
       "word": "DISCORD",
       "definitions": [
+        {
+          "text": "Want of concord or agreement; absence of unity or harmony in sentiment or action; variance leading to contention and strife; disagreement; -- applied to persons or to things, and to thoughts, feelings, or purposes. A false witness that speaketh lies, and he that soweth discord among brethren. Prov. vi. 19. Peace to arise out of universal discord fomented in all parts of the empire. Burke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mus.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Union of musical sounds which strikes the ear harshly or disagreeably, owing to the incommensurability of the vibrations which they produce; want of musical concord or harmony; a chord demanding resolution into a concord. For a discord itself is but a harshness of divers sounds mBacon. Apple of discord. See under Apple. dissension; contention; strife; disagreement; dissonance.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To disagree; to be discordant; to jar; to clash; not to suit. The one discording with the other. Bacon.",
           "partOfSpeech": "verb"
@@ -6071,7 +6242,7 @@
       ],
       "relatedWords": []
     },
-    "discordancediscordancy": {
+    "discordance": {
       "word": "DISCORDANCE; DISCORDANCY",
       "definitions": [
         {
@@ -6081,15 +6252,188 @@
       ],
       "relatedWords": []
     },
-    "discordantfdiscordantpprofdiscorderofalsodescorder": {
-      "word": "discordant, F. discordant, p. pr. of discorder, OF. also, descorder.",
+    "discordancy": {
+      "word": "DISCORDANCE; DISCORDANCY",
       "definitions": [
         {
-          "text": "Disagreeing; incongruous; being at variance; clashing; opposing; not harmonious. The discordant elements out of which the emperor had compounded his",
+          "text": "State or quality of being discordant; disagreement; inconsistency. There will arise a thousand discordances of opinion. I. Taylor.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
+    },
+    "discordant": {
+      "word": "DISCORDANT",
+      "definitions": [
+        {
+          "text": "Disagreeing; incongruous; being at variance; clashing; opposing; not harmonious. The discordant elements out of which the emperor had compounded his realm did not coalesce. Motley.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Etym: [See Discord, n., 2.] (Mus.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Dissonant; not in harmony or musical concord; harsh; jarring; as, discordant notes or sounds. For still their music seemed to start Discordant echoes in each heart. Longfellow.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Geol.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Said of strata which lack conformity in direction of bedding, either as in unconformability, or as caused by a fault. contrary; inconsistent; dissonant; harsh; jarring; irreconcilable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "absonant",
+        "adversative",
+        "adverse",
+        "adversive",
+        "antagonistic",
+        "anti",
+        "antipathetic",
+        "antithetic",
+        "antonymous",
+        "assorted",
+        "at cross-purposes",
+        "at loggerheads",
+        "at odds",
+        "at variance",
+        "at war",
+        "atonal",
+        "balancing",
+        "cacophonic",
+        "cacophonous",
+        "clashing",
+        "colliding",
+        "compensating",
+        "conflicting",
+        "confronting",
+        "contradictory",
+        "contradistinct",
+        "contrapositive",
+        "contrarious",
+        "contrary",
+        "contrasted",
+        "contrasting",
+        "converse",
+        "counter",
+        "counterbalancing",
+        "counterpoised",
+        "countervailing",
+        "cracked",
+        "cranky",
+        "cross",
+        "dead against",
+        "departing",
+        "deviating",
+        "deviative",
+        "diaphonic",
+        "different",
+        "differentiated",
+        "differing",
+        "disaccordant",
+        "disagreeable",
+        "disagreeing",
+        "disconsonant",
+        "discrepant",
+        "discrete",
+        "discriminated",
+        "disharmonic",
+        "disharmonious",
+        "disjoined",
+        "disparate",
+        "disproportionate",
+        "dissentient",
+        "dissident",
+        "dissimilar",
+        "dissonant",
+        "distinct",
+        "distinguished",
+        "divergent",
+        "diverging",
+        "divers",
+        "diverse",
+        "diversified",
+        "eyeball to eyeball",
+        "flat",
+        "grating",
+        "harsh",
+        "heterogeneous",
+        "hostile",
+        "immelodious",
+        "immiscible",
+        "in disagreement",
+        "inaccordant",
+        "incompatible",
+        "incongruent",
+        "incongruous",
+        "inconsistent",
+        "inconsonant",
+        "inharmonic",
+        "inharmonious",
+        "inimical",
+        "inverse",
+        "irreconcilable",
+        "jangling",
+        "jarring",
+        "many",
+        "motley",
+        "multifarious",
+        "musicless",
+        "negative",
+        "nonmelodious",
+        "obverse",
+        "off",
+        "off-color",
+        "off-key",
+        "off-tone",
+        "opposed",
+        "opposing",
+        "opposite",
+        "oppositional",
+        "oppositive",
+        "oppugnant",
+        "out of accord",
+        "out of pitch",
+        "out of tone",
+        "out of tune",
+        "out of whack",
+        "perverse",
+        "poles apart",
+        "poles asunder",
+        "raucous",
+        "repugnant",
+        "reverse",
+        "separate",
+        "separated",
+        "several",
+        "sharp",
+        "shrill",
+        "sour",
+        "squared off",
+        "strident",
+        "tuneless",
+        "unconformable",
+        "uncongenial",
+        "unequal",
+        "unharmonious",
+        "unlike",
+        "unmelodious",
+        "unmusical",
+        "untunable",
+        "untuned",
+        "untuneful",
+        "variant",
+        "varied",
+        "variegated",
+        "various",
+        "varying",
+        "widely apart",
+        "worlds apart"
+      ]
     },
     "discordful": {
       "word": "DISCORDFUL",
@@ -6569,6 +6913,62 @@
       ],
       "relatedWords": []
     },
+    "discouraging": {
+      "word": "DISCOURAGING",
+      "definitions": [
+        {
+          "text": "Causing or indicating discouragement.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "admonitory",
+        "alarming",
+        "awing",
+        "black",
+        "bleak",
+        "cautionary",
+        "chilling",
+        "daunting",
+        "depressant",
+        "depressing",
+        "depressive",
+        "deterrent",
+        "deterring",
+        "disconcerting",
+        "disheartening",
+        "disinclining",
+        "dismal",
+        "dismaying",
+        "dispiriting",
+        "disquieting",
+        "dissuading",
+        "dissuasive",
+        "down",
+        "dreary",
+        "expostulatory",
+        "fear-inspiring",
+        "fearful",
+        "fearsome",
+        "forbidding",
+        "forestalling",
+        "frightening",
+        "frightful",
+        "hindering",
+        "intimidating",
+        "monitory",
+        "oppressive",
+        "overawing",
+        "preclusive",
+        "preventative",
+        "preventive",
+        "prohibitive",
+        "prophylactic",
+        "scaring",
+        "scary",
+        "startling"
+      ]
+    },
     "discoure": {
       "word": "DISCOURE",
       "definitions": [
@@ -6931,7 +7331,7 @@
       "word": "DISCOURTEOUS",
       "definitions": [
         {
-          "text": "Uncivil; rude; wanting in courtesy or good manners;",
+          "text": "Uncivil; rude; wanting in courtesy or good manners; uncourteous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7610,7 +8010,7 @@
       "word": "DISCREDITABLE",
       "definitions": [
         {
-          "text": "Not creditable; injurious to reputation; disgraceful;",
+          "text": "Not creditable; injurious to reputation; disgraceful; disreputable.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7749,7 +8149,7 @@
         "withdrawn"
       ]
     },
-    "discrepancediscrepancy": {
+    "discrepance": {
       "word": "DISCREPANCE; DISCREPANCY",
       "definitions": [
         {
@@ -7758,6 +8158,109 @@
         }
       ],
       "relatedWords": []
+    },
+    "discrepancy": {
+      "word": "DISCREPANCE; DISCREPANCY",
+      "definitions": [
+        {
+          "text": "The state or quality of being discrepant; disagreement; variance; discordance; dissimilarity; contrariety. There hath been ever a discrepance of vesture of youth and age, men and women. Sir T. Elyot. There is no real discrepancy between these two genealogies. G. S. Faber.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "antagonism",
+        "antipathy",
+        "antithesis",
+        "argumentation",
+        "balance",
+        "clashing",
+        "collision",
+        "conflict",
+        "confrontation",
+        "contradiction",
+        "contradistinction",
+        "contraindication",
+        "contraposition",
+        "contrariety",
+        "contrast",
+        "controversy",
+        "counterposition",
+        "credit",
+        "cross-purposes",
+        "deficit",
+        "departure",
+        "deviation",
+        "difference",
+        "disaccord",
+        "disaccordance",
+        "disagreement",
+        "disconformity",
+        "discongruity",
+        "discord",
+        "discordance",
+        "discordancy",
+        "discreteness",
+        "disharmony",
+        "disparity",
+        "dissemblance",
+        "dissension",
+        "dissent",
+        "dissidence",
+        "dissimilarity",
+        "dissimilitude",
+        "dissonance",
+        "distinction",
+        "distinctness",
+        "disunion",
+        "disunity",
+        "divergence",
+        "divergency",
+        "diversity",
+        "epact",
+        "faction",
+        "far cry",
+        "gap",
+        "heterogeneity",
+        "hostility",
+        "inaccordance",
+        "incompatibility",
+        "incongruity",
+        "inconsistency",
+        "inconsonance",
+        "inequality",
+        "inharmoniousness",
+        "inharmony",
+        "inimicalness",
+        "irreconcilability",
+        "jarring",
+        "lacuna",
+        "mixture",
+        "negation",
+        "net",
+        "nonconformity",
+        "odds",
+        "oppositeness",
+        "opposition",
+        "opposure",
+        "oppugnance",
+        "oppugnancy",
+        "otherness",
+        "perversity",
+        "polarity",
+        "remainder",
+        "repugnance",
+        "separateness",
+        "showdown",
+        "surplus",
+        "unconformity",
+        "unharmoniousness",
+        "unlikeness",
+        "unorthodoxy",
+        "variance",
+        "variation",
+        "variegation",
+        "variety"
+      ]
     },
     "discrepant": {
       "word": "DISCREPANT",
@@ -7903,7 +8406,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Separate; not coalescent; -- said of things usually coalescent.",
+          "text": "Separate; not coalescent; -- said of things usually coalescent. Discrete movement. See Concrete movement of the voice, under Concrete, a. different from that of either couplet; as, 3:6::8:16, 3 bearing the same proportion to 6 as 8 does to 16. But 3 is not to 6 as 6 to 8. It is thus opposed to continued or continual proportion; as, 3:6::12:24. number, and is opposed to continued quantity, as duration, or extension.",
           "partOfSpeech": "adjective"
         },
         {
@@ -8279,7 +8782,7 @@
         "withdrawnness"
       ]
     },
-    "discretionaldiscretionary": {
+    "discretional": {
       "word": "DISCRETIONAL; DISCRETIONARY",
       "definitions": [
         {
@@ -8289,7 +8792,7 @@
       ],
       "relatedWords": []
     },
-    "discretionallydiscretionarily": {
+    "discretionally": {
       "word": "DISCRETIONALLY; DISCRETIONARILY",
       "definitions": [
         {
@@ -8298,6 +8801,62 @@
         }
       ],
       "relatedWords": []
+    },
+    "discretionarily": {
+      "word": "DISCRETIONALLY; DISCRETIONARILY",
+      "definitions": [
+        {
+          "text": "At discretion; according to one's discretion or judgment.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "discretionary": {
+      "word": "DISCRETIONAL; DISCRETIONARY",
+      "definitions": [
+        {
+          "text": "Left to discretion; unrestrained except by discretion or judgment; as, an ambassador with discretionary powers.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "arbitrary",
+        "autonomous",
+        "discretional",
+        "elective",
+        "free",
+        "free will",
+        "gratuitous",
+        "independent",
+        "nonmandatory",
+        "offered",
+        "optional",
+        "proffered",
+        "self-acting",
+        "self-active",
+        "self-determined",
+        "self-determining",
+        "spontaneous",
+        "unasked",
+        "unbesought",
+        "unbidden",
+        "uncalled-for",
+        "uncoerced",
+        "uncompelled",
+        "unforced",
+        "uninfluenced",
+        "uninvited",
+        "unpressured",
+        "unprompted",
+        "unrequested",
+        "unrequired",
+        "unsolicited",
+        "unsought",
+        "voluntary",
+        "volunteer",
+        "willful"
+      ]
     },
     "discretive": {
       "word": "DISCRETIVE",
@@ -8454,6 +9013,107 @@
         }
       ],
       "relatedWords": []
+    },
+    "discriminating": {
+      "word": "DISCRIMINATING",
+      "definitions": [
+        {
+          "text": "Marking a difference; distinguishing. And finds with keen discriminating sight, Black's not so black; -- nor white so very white. Canning.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "accurate",
+        "adoptive",
+        "appointive",
+        "appreciative",
+        "careful",
+        "censorious",
+        "characteristic",
+        "characterizing",
+        "choicy",
+        "choosing",
+        "choosy",
+        "circumspect",
+        "civilized",
+        "conscientious",
+        "considerate",
+        "constituent",
+        "contrastive",
+        "critical",
+        "cultivated",
+        "cultured",
+        "dainty",
+        "delicate",
+        "diacritical",
+        "diagnostic",
+        "differencing",
+        "differential",
+        "differentiative",
+        "discerning",
+        "discreet",
+        "discriminate",
+        "discriminative",
+        "distinctive",
+        "distinguishing",
+        "eclectic",
+        "elective",
+        "electoral",
+        "elegant",
+        "enlightened",
+        "exact",
+        "exacting",
+        "fastidious",
+        "fine",
+        "fussy",
+        "graceful",
+        "gracile",
+        "gracious",
+        "idiosyncratic",
+        "individualizing",
+        "individuating",
+        "judgmatic",
+        "judicial",
+        "judicious",
+        "keen",
+        "meticulous",
+        "nice",
+        "particular",
+        "peculiar",
+        "perceptive",
+        "perfectionistic",
+        "personalizing",
+        "picky",
+        "polished",
+        "politic",
+        "precise",
+        "precisianistic",
+        "priggish",
+        "provident",
+        "prudent",
+        "prudential",
+        "prudish",
+        "punctilious",
+        "puristic",
+        "puritanic",
+        "refined",
+        "reflecting",
+        "reflective",
+        "scrupulous",
+        "select",
+        "selecting",
+        "selective",
+        "sensitive",
+        "separative",
+        "sophisticated",
+        "strict",
+        "subtle",
+        "tactful",
+        "thoughtful",
+        "well-advised",
+        "well-judged",
+        "wise"
+      ]
     },
     "discrimination": {
       "word": "DISCRIMINATION",
@@ -8983,7 +9643,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Reasoning; proceeding from one ground to another, as in reasoning; argumentative.",
+          "text": "Reasoning; proceeding from one ground to another, as in reasoning; argumentative. Reason is her being, Discursive or intuitive. Milton.",
           "partOfSpeech": "adjective"
         }
       ],

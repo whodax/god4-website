@@ -1088,7 +1088,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The difference between the speed of a screw steamer under sail and that of the screw when the ship outruns the screw; or between the",
+          "text": "The difference between the speed of a screw steamer under sail and that of the screw when the ship outruns the screw; or between the propulsive effects of the different floats of a paddle wheel. See Citation under Drag, v. i., 3. Drag sail (Naut.), a sail or canvas rigged on a stout frame, to be dragged by a vessel through the water in order to keep her head to the wind or to prevent drifting; -- called also drift sail, drag sheet, drag anchor, sea anchor, floating anchor, etc. cleaning drilled holes.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1612,7 +1612,17 @@
       ],
       "relatedWords": []
     },
-    "draglinedragrope": {
+    "dragline": {
+      "word": "DRAG LINE; DRAG ROPE",
+      "definitions": [
+        {
+          "text": "A guide rope.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dragrope": {
       "word": "DRAG LINE; DRAG ROPE",
       "definitions": [
         {
@@ -1976,7 +1986,27 @@
       ],
       "relatedWords": []
     },
-    "dragon'sblooddragon'sheaddragon'stail": {
+    "dragon'sblood": {
+      "word": "DRAGON'S BLOOD; DRAGON'S HEAD; DRAGON'S TAIL",
+      "definitions": [
+        {
+          "text": "See Dragon's blood, Dragon's head, etc., under Dragon.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dragon'shead": {
+      "word": "DRAGON'S BLOOD; DRAGON'S HEAD; DRAGON'S TAIL",
+      "definitions": [
+        {
+          "text": "See Dragon's blood, Dragon's head, etc., under Dragon.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dragon'stail": {
       "word": "DRAGON'S BLOOD; DRAGON'S HEAD; DRAGON'S TAIL",
       "definitions": [
         {
@@ -3298,7 +3328,130 @@
         "writing"
       ]
     },
-    "dramaticdramatical": {
+    "dramatic": {
+      "word": "DRAMATIC; DRAMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the drama; appropriate to, or having the qualities of, a drama; theatrical; vivid. The emperor . . . performed his part with much dramatic effect. Motley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Alcaic",
+        "Anacreontic",
+        "Castalian",
+        "Homeric",
+        "Hudibrastic",
+        "Pierian",
+        "Pindaric",
+        "Theocritean",
+        "actor-proof",
+        "all-star",
+        "alto",
+        "ballet",
+        "balletic",
+        "bardic",
+        "baritone",
+        "bass",
+        "bravura",
+        "breathtaking",
+        "bucolic",
+        "choral",
+        "choric",
+        "cinematic",
+        "cinematographic",
+        "coloratura",
+        "colorful",
+        "complete",
+        "considerable",
+        "didactic",
+        "dithyrambic",
+        "dramatical",
+        "dramatist",
+        "dramatizer",
+        "dramaturge",
+        "dramaturgic",
+        "eclogic",
+        "effective",
+        "elegiac",
+        "epic",
+        "exaggerated",
+        "expressive",
+        "extraordinary",
+        "falsetto",
+        "film",
+        "filmic",
+        "flamboyant",
+        "graphic",
+        "ham",
+        "hammy",
+        "heroic",
+        "histrionic",
+        "hymnal",
+        "idyllic",
+        "impressive",
+        "legitimate",
+        "liturgical",
+        "lyric",
+        "major",
+        "marked",
+        "melodramatic",
+        "milked",
+        "mock-heroic",
+        "monodramatic",
+        "movie",
+        "narrative",
+        "noticeable",
+        "operatic",
+        "overacted",
+        "overdone",
+        "overplayed",
+        "pastoral",
+        "poetic",
+        "poetico-mystical",
+        "poetico-mythological",
+        "poetico-philosophic",
+        "poetlike",
+        "psalmic",
+        "psalmodial",
+        "psalmodic",
+        "radical",
+        "rhapsodic",
+        "runic",
+        "sacred",
+        "sapphic",
+        "scenic",
+        "sensational",
+        "shocking",
+        "showy",
+        "singing",
+        "skaldic",
+        "soprano",
+        "spectacular",
+        "stage",
+        "stagelike",
+        "stageworthy",
+        "stagy",
+        "starstruck",
+        "startling",
+        "stellar",
+        "stirring",
+        "striking",
+        "sudden",
+        "tenor",
+        "theaterlike",
+        "theatrical",
+        "thespian",
+        "thrown away",
+        "treble",
+        "underacted",
+        "underplayed",
+        "vaudevillian",
+        "vivid",
+        "vocal"
+      ]
+    },
+    "dramatical": {
       "word": "DRAMATIC; DRAMATICAL",
       "definitions": [
         {
@@ -4106,6 +4259,70 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "The act of selecting or detaching soldiers; a draft (see Draft, n., 2) (g) The act of drawing up, marking out, or delineating; representation. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is drawn; as: (a) That which is taken by sweeping with a net. Launch out into the deep, and let down your nets for a draught. Luke v. 4. He laid down his pipe, and cast his net, which brought him a very great draught. L'Estrange. (b) (Mil.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The force drawn; a detachment; -- in this sense usually written draft. (c) The quantity drawn in at once in drinking; a potion or potation. Disguise thyself as thou wilt, still, Slavery, . . . still thou art a bitter draught. Sterne. Low lies that house where nut-brown draughts inspired. Goldsmith. (d) A sketch, outline, or representation, whether written, designed, or drawn; a delineation. A draught of a Toleration Act was offered to the Parliament by a private member. Macaulay. No picture or draught of these things from the report of the eye. South. (e) (Com.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An order for the payment of money; -- in this sense almost always written draft. (f) A current of air moving through an inclosed place, as through a room or up a chimney. Thackeray. He preferred to go and sit upon the stairs, in . . . a strong draught of air, until he was again sent for. Dickens.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which draws; as: (a) A team of oxen or horses. Blackstone. (b) A sink or drain; a privy. Shak. Matt. xv. 17. (c) pl. (Med.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mild vesicatory; a sinapism; as, to apply draughts to the feet.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Capacity of being drawn; force necessary to draw; traction. The Hertfordshire wheel plow . . . is of the easiest draught. Mortimer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The depth of water necessary to float a ship, or the depth a ship sinks in water, especially when laden; as, a ship of twelve feet draught.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Com.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An allowance on weighable goods. [Eng.] See Draft, 4.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A move, as at chess or checkers. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The bevel given to the pattern for a casting, in order that it may be drawn from the sand without injury to the mold.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Masonry)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Draft, n.,",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Angle of draught, the angle made with the plane over which a body is drawn by the line in which the pulling force acts, when the latter has the direction best adapted to overcome the obstacles of friction and the weight of the body. blower, as by blowing in air beneath a fire or drawing out the gases from above it. by its own weight, into a chimney wherein the air is rarefied by heat. etc.) in distinction from being bottled; as, ale on draught.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Used for drawing vehicles, loads, etc.; as, a draught beast; draught hooks.",
           "partOfSpeech": "adjective"
         },
@@ -4516,6 +4733,10 @@
     "draughts": {
       "word": "DRAUGHTS",
       "definitions": [
+        {
+          "text": "A mild vesicatory. See Draught, n., 3 (c).",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A game, now more commonly called checkers. See Checkers. divided into 100 squares. Am. Cyc.",
           "partOfSpeech": "noun"
@@ -6560,7 +6781,25 @@
         "writing"
       ]
     },
-    "drawingknifedrawknife": {
+    "drawingknife": {
+      "word": "DRAWING KNIFE; DRAWKNIFE",
+      "definitions": [
+        {
+          "text": "A joiner's tool having a blade with a handle at each end, used to shave off surfaces, by drawing it toward one; a shave; -- called also drawshave, and drawing shave.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Carp.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A tool used for the purpose of making an incision along the path a saw is to follow, to prevent it from tearing the surface of the wood.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "drawknife": {
       "word": "DRAWING KNIFE; DRAWKNIFE",
       "definitions": [
         {
@@ -6788,6 +7027,16 @@
       ],
       "relatedWords": []
     },
+    "drawling": {
+      "word": "DRAWLING",
+      "definitions": [
+        {
+          "text": "The act of speaking with a drawl; a drawl.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "drawlink": {
       "word": "DRAWLINK",
       "definitions": [
@@ -6811,6 +7060,74 @@
         }
       ],
       "relatedWords": []
+    },
+    "drawn": {
+      "word": "DRAWN",
+      "definitions": [
+        {
+          "text": "See Draw, v. t. & i. Drawn butter, butter melter and prepared to be used as a sort of gravy. equally contested. cloth, and uniting the cross threads, to form a pattern.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "alike",
+        "at par",
+        "au pair",
+        "careworn",
+        "commensurate",
+        "dragged out",
+        "drawn out",
+        "elongated",
+        "equal",
+        "equalized",
+        "even",
+        "even stephen",
+        "exhausted",
+        "extended",
+        "fatigued",
+        "fifty-fifty",
+        "haggard",
+        "half-and-half",
+        "hollow-eyed",
+        "knotted",
+        "lengthened",
+        "level",
+        "like",
+        "nip and tuck",
+        "on a footing",
+        "on a level",
+        "on a par",
+        "on even ground",
+        "par",
+        "pinched",
+        "prolongated",
+        "prolonged",
+        "proportionate",
+        "protracted",
+        "pulled",
+        "quits",
+        "ravaged",
+        "spun out",
+        "square",
+        "stalemated",
+        "straggling",
+        "strained",
+        "stretched",
+        "stretched out",
+        "strung out",
+        "taut",
+        "tense",
+        "tied",
+        "tight",
+        "tired",
+        "tired-eyed",
+        "tired-faced",
+        "tired-looking",
+        "wan",
+        "weary-looking",
+        "worn",
+        "worn out"
+      ]
     },
     "drawnet": {
       "word": "DRAWNET",
@@ -8001,6 +8318,16 @@
         "wrong impression"
       ]
     },
+    "dreamless": {
+      "word": "DREAMLESS",
+      "definitions": [
+        {
+          "text": "Free from, or without, dreams. Camden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "dreamy": {
       "word": "DREAMY",
       "definitions": [
@@ -8200,7 +8527,17 @@
       ],
       "relatedWords": []
     },
-    "dreariheaddrearihood": {
+    "drearihead": {
+      "word": "DREARIHEAD; DREARIHOOD",
+      "definitions": [
+        {
+          "text": "Affliction; dreariness. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "drearihood": {
       "word": "DREARIHEAD; DREARIHOOD",
       "definitions": [
         {
@@ -8771,7 +9108,17 @@
       ],
       "relatedWords": []
     },
-    "dreintedreint": {
+    "dreinte": {
+      "word": "DREINTE; DREINT",
+      "definitions": [
+        {
+          "text": "p. p. of Drench to drown. [Obs.] Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dreint": {
       "word": "DREINTE; DREINT",
       "definitions": [
         {
@@ -9498,7 +9845,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "An assistant in a hospital, whose office it is to dress wounds,",
+          "text": "An assistant in a hospital, whose office it is to dress wounds, sores, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [F. dressoir. See Dress, v. t.] (a) A table or bench on which meat and other things are dressed, or prepared for use. (b) A cupboard or set of shelves to receive dishes and cooking utensils. The pewter plates on the dresser Caught and reflected the flame, as shields of armies the sunshine. Longfellow.",
           "partOfSpeech": "noun"
         }
       ],
@@ -9817,7 +10168,17 @@
       ],
       "relatedWords": []
     },
-    "dreyntedreynt": {
+    "dreynte": {
+      "word": "DREYNTE; DREYNT",
+      "definitions": [
+        {
+          "text": "p. p., of Drench to drown. [Obs.] Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dreynt": {
       "word": "DREYNTE; DREYNT",
       "definitions": [
         {
@@ -9993,7 +10354,7 @@
       ],
       "relatedWords": []
     },
-    "dribbletdriblet": {
+    "dribblet": {
       "word": "DRIBBLET; DRIBLET",
       "definitions": [
         {
@@ -10002,6 +10363,69 @@
         }
       ],
       "relatedWords": []
+    },
+    "driblet": {
+      "word": "DRIBBLET; DRIBLET",
+      "definitions": [
+        {
+          "text": "A small piece or part; a small sum; a small quantity of money in making up a sum; as, the money was paid in dribblets. When made up in dribblets, as they could, their best securities were at an interest of twelve per cent. Burke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ace",
+        "atom",
+        "bit",
+        "dab",
+        "dole",
+        "dot",
+        "dram",
+        "dribble",
+        "droplet",
+        "dwarf",
+        "farthing",
+        "fleck",
+        "flyspeck",
+        "fragment",
+        "globule",
+        "gobbet",
+        "grain",
+        "granule",
+        "groat",
+        "hair",
+        "handful",
+        "iota",
+        "jot",
+        "little",
+        "little bit",
+        "minim",
+        "minimum",
+        "minutiae",
+        "mite",
+        "modicum",
+        "molecule",
+        "mote",
+        "nutshell",
+        "ounce",
+        "particle",
+        "pebble",
+        "pinch",
+        "pittance",
+        "point",
+        "scrimption",
+        "scruple",
+        "smidgen",
+        "smitch",
+        "speck",
+        "spoonful",
+        "spot",
+        "thimbleful",
+        "tiny bit",
+        "tittle",
+        "trifling amount",
+        "trivia",
+        "whit"
+      ]
     },
     "drie": {
       "word": "DRIE",
@@ -10060,6 +10484,10 @@
         {
           "text": "Drying oil; a substance mingled with the oil used in oil painting to make it dry quickly.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "of Dry, a.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": [
@@ -10142,7 +10570,7 @@
         "wash coat"
       ]
     },
-    "drierdriest": {
+    "driest": {
       "word": "DRIER; DRIEST",
       "definitions": [
         {
@@ -10220,7 +10648,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The difference between the size of a bolt and the hole into which it is driven, or between the circumference of a hoop and that of the mast on which it is to be driven.",
+          "text": "The difference between the size of a bolt and the hole into which it is driven, or between the circumference of a hoop and that of the mast on which it is to be driven. compound. See Drift, a. Drift of the forest (O. Eng. Law), an examination or view of the cattle in a forest, in order to see whose they are, whether they are commonable, and to determine whether or not the forest is surcharged. Burrill.",
           "partOfSpeech": "noun"
         },
         {
@@ -10256,7 +10684,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "That causes drifting or that is drifted; movable by wind or",
+          "text": "That causes drifting or that is drifted; movable by wind or currents; as, drift currents; drift ice; drift mud. Kane. Drift anchor. See Sea anchor, and also Drag sail, under Drag, n.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -13222,7 +13650,17 @@
       ],
       "relatedWords": []
     },
-    "droflanddryfland": {
+    "drofland": {
+      "word": "DROFLAND; DRYFLAND",
+      "definitions": [
+        {
+          "text": "An ancient yearly payment made by some tenants to the king, or to their landlords, for the privilege of driving their cattle through a manor to fairs or markets. Cowell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dryfland": {
       "word": "DROFLAND; DRYFLAND",
       "definitions": [
         {
@@ -13242,11 +13680,31 @@
       ],
       "relatedWords": []
     },
-    "drogmandrogoman": {
+    "drogman": {
       "word": "DROGMAN; DROGOMAN",
       "definitions": [
         {
           "text": "See Dragoman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "drogoman": {
+      "word": "DROGMAN; DROGOMAN",
+      "definitions": [
+        {
+          "text": "See Dragoman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "drogue": {
+      "word": "DROGUE",
+      "definitions": [
+        {
+          "text": "See Drag, n., 6, and Drag sail, under Drag, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -13568,7 +14026,17 @@
         "wildebeest"
       ]
     },
-    "dromonddromon": {
+    "dromond": {
+      "word": "DROMOND; DROMON",
+      "definitions": [
+        {
+          "text": "In the Middle Ages, a large, fast-sailing galley, or cutter; a large, swift war vessel. [Hist. or Archaic] Fuller. The great dromond swinging from the quay. W. Morris.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "dromon": {
       "word": "DROMOND; DROMON",
       "definitions": [
         {
@@ -13894,6 +14362,16 @@
         {
           "text": "A passerine bird of the family Dicruridæ. They are usually black with a deeply forked tail. They are natives of Asia, Africa, and Australia; -- called also drongo shrikes.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dronish": {
+      "word": "DRONISH",
+      "definitions": [
+        {
+          "text": "Like a drone; indolent; slow. Burke.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -15183,7 +15661,17 @@
       ],
       "relatedWords": []
     },
-    "dropmealdropmele": {
+    "dropmeal": {
+      "word": "DROPMEAL; DROPMELE",
+      "definitions": [
+        {
+          "text": "By drops or small portions. [Obs.] Distilling dropmeal, a little at once. Holland.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dropmele": {
       "word": "DROPMEAL; DROPMELE",
       "definitions": [
         {
@@ -15400,6 +15888,16 @@
         "wasting",
         "windiness"
       ]
+    },
+    "dropt": {
+      "word": "DROPT",
+      "definitions": [
+        {
+          "text": "imp. & p. p. of Drop, v. G. Eliot.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
     },
     "dropwise": {
       "word": "DROPWISE",
@@ -16918,7 +17416,17 @@
       ],
       "relatedWords": []
     },
-    "druidicdruidical": {
+    "druidic": {
+      "word": "DRUIDIC; DRUIDICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or resembling, the Druids. Druidical circles. See under Circle.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "druidical": {
       "word": "DRUIDIC; DRUIDICAL",
       "definitions": [
         {
@@ -18067,7 +18575,17 @@
         "wooziness"
       ]
     },
-    "drunkenshipdrunkship": {
+    "drunkenship": {
+      "word": "DRUNKENSHIP; DRUNKSHIP",
+      "definitions": [
+        {
+          "text": "The state of being drunk; drunkenness. [Obs.] Gower.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "drunkship": {
       "word": "DRUNKENSHIP; DRUNKSHIP",
       "definitions": [
         {
@@ -18107,7 +18625,17 @@
       ],
       "relatedWords": []
     },
-    "drupeldrupelet": {
+    "drupel": {
+      "word": "DRUPEL; DRUPELET",
+      "definitions": [
+        {
+          "text": "A small drupe, as one of the pulpy grains of the blackberry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "drupelet": {
       "word": "DRUPEL; DRUPELET",
       "definitions": [
         {
@@ -18131,7 +18659,7 @@
       ],
       "relatedWords": []
     },
-    "drusydrused": {
+    "drusy": {
       "word": "DRUSY; DRUSED",
       "definitions": [
         {
@@ -18141,7 +18669,27 @@
       ],
       "relatedWords": []
     },
-    "druxeydruxy": {
+    "drused": {
+      "word": "DRUSY; DRUSED",
+      "definitions": [
+        {
+          "text": "Covered with a large number of minute crystals.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "druxey": {
+      "word": "DRUXEY; DRUXY",
+      "definitions": [
+        {
+          "text": "Having decayed spots or streaks of a whitish color; -- said of timber. Weale.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "druxy": {
       "word": "DRUXEY; DRUXY",
       "definitions": [
         {
@@ -19015,7 +19563,7 @@
       ],
       "relatedWords": []
     },
-    "drythdrith": {
+    "dryth": {
       "word": "DRYTH; DRITH",
       "definitions": [
         {
@@ -19025,104 +19573,12 @@
       ],
       "relatedWords": []
     },
-    "drugetcorthefreshjuiceofaplantdistinguishedfroman": {
-      "word": "drug, etc., or the fresh juice of a plant; -- distinguished from an",
+    "drith": {
+      "word": "DRYTH; DRITH",
       "definitions": [
         {
-          "text": "(Old Chem.)",
+          "text": "Drought. [Obs.] Tyndale.",
           "partOfSpeech": "noun"
-        },
-        {
-          "text": "A peculiar principle once erroneously supposed to form the basis of all vegetable extracts; -- called also the extractive principle. [Obs.]",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Extraction; descent. [Obs.] South.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Scots Law)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A draught or copy of writing; certified copy of the proceedings in an action and the judgement therein, with an order for execution. Tomlins. Fluid extract (Med.), a concentrated liquid preparation, containing a definite proportion of the active principles of a medicinal substance. At present a fluid gram of extract should represent a gram of the crude drug.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "driveorpressintotoannouncemakeknownfromintimusthe": {
-      "word": "drive, or press into, to announce, make known, from intimus the",
-      "definitions": [
-        {
-          "text": "To announce; to declare; to publish; to communicate; to make known. [Obs.] He, incontinent, did proclaim and intimate open war. E. Hall. So both conspiring 'gan to intimate Each other's grief. Spenser.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "To suggest obscurely or indirectly; to refer to remotely; to give slight notice of; to hint; as, he intimated his intention of resigning his office. The names of simple ideas and substances, with the abstract ideas in the mind, intimate some real existence, from which was derived their original pattern. Locke.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "draaijengdrehenohgdrajanlterebraanaugergimletgr": {
-      "word": "draaijen, G. drehen, OHG. drajan, L. terebra an auger, gimlet, Gr.",
-      "definitions": [
-        {
-          "text": "To fling, cast, or hurl with a certain whirling motion of the arm, to throw a ball; -- distinguished from to toss, or to bowl.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To fling or cast in any manner; to drive to a distance from the hand or from an engine; to propel; to send; as, to throw stones or dust with the hand; a cannon throws a ball; a fire engine throws a stream of water to extinguish flames.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To drive by violence; as, a vessel or sailors may be thrown upon a rock.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Mil.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To cause to take a strategic position; as, he threw a detachment of his army across the river.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To overturn; to prostrate in wrestling; as, a man throws his antagonist.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To cast, as dice; to venture at dice. Set less than thou throwest. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To put on hastily; to spread carelessly. O'er his fair limbs a flowery vest he threw. Pope.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To divest or strip one's self of; to put off. There the snake throws her enameled skin. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Pottery)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To form or shape roughly on a throwing engine, or potter's wheel, as earthen vessels.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To give forcible utterance to; to cast; to vent. I have thrown A brave defiance in King Henry's teeth. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To bring forth; to produce, as young; to bear; -- said especially of rabbits.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To twist two or more filaments of, as silk, so as to form one thread; to twist together, as singles, in a direction contrary to the twist of the singles themselves; -- sometimes applied to the whole class of operations by which silk is prepared for the weaver. Tomlinson. To throw away. (a) To lose by neglect or folly; to spend in vain; to bestow without a compensation; as, to throw away time; to throw away money. (b) To reject; as, to throw away a good book, or a good offer. reject; to refuse. (c) To reflect, as light. to throw by a garment. down a fence or wall. with others; to contribute; as, to throw in a few dollars to help make up a fund; to throw in an occasional comment. (c) To add without enumeration or valuation, as something extra to clinch a bargain. off a disease. (b) To reject; to discard; to abandon; as, to throw off all sense of shame; to throw off a dependent. (c) To make a start in a hunt or race. [Eng.](e) To disconcert or confuse. Same as to throw out (f). one's self to the favor, clemency, or sustain power of (another); to repose upon. \"The other two, whom they had thrown out, they were content should enjoy their exile.\" Swift. \"The bill was thrown out.\" Swift. (b) To utter; to give utterance to; to speak; as, to throw out insinuation or observation. \"She throws out thrilling shrieks.\" Spenser. (c) To distance; to leave behind. Addison. (d) To cause to project; as, to throw out a pier or an abutment. (e) To give forth; to emit; as, an electric lamp throws out a brilliant light. (f) To put out; to confuse; as, a sudden question often throws out an orator. as, to throw over a friend in difficulties. a commission. \"Experienced gamesters throw up their cards when they know that the game is in the enemy's hand.\" Addison. (b) To reject from the stomach; to vomit. (c) To construct hastily; as, to throw up a breastwork of earth.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

@@ -21,7 +21,21 @@
       ],
       "relatedWords": []
     },
-    "yodelyodle": {
+    "yodel": {
+      "word": "YODEL; YODLE",
+      "definitions": [
+        {
+          "text": "To sing in a manner common among the Swiss and Tyrolese mountaineers, by suddenly changing from the head voice, or falsetto, to the chest voice, and the contrary; to warble.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "A song sung by yodeling, as by the Swiss mountaineers.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "yodle": {
       "word": "YODEL; YODLE",
       "definitions": [
         {
@@ -303,6 +317,10 @@
         {
           "text": "Furious; mad; angry; fierce. [Obs.] \"Then wexeth wood and yond.\" Spenser.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Yonder. [Obs.] \"Yond in the garden.\" Chaucer.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -377,6 +395,16 @@
         {
           "text": "A county in the north of England. Yorkshire grit, a kind of stone used for polishing marble, and copperplates for engravers. Simmonds.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "yorkuse": {
+      "word": "YORK USE",
+      "definitions": [
+        {
+          "text": "The one of the three printed uses of England which was followed in the north. It was based on the Sarum use. See Use, n., 6. Shipley.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []

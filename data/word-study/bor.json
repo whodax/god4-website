@@ -115,7 +115,7 @@
       "word": "BORAX",
       "definitions": [
         {
-          "text": "A white or gray crystalline salt, with a slight alkaline taste, used as a flux, in soldering metals, making enamels, fixing colors on porcelain, and as a soap. It occurs native in certain mineral springs, and is made from the boric acid of hot springs in Tuscany. It was originally obtained from a lake in Thibet, and was sent to",
+          "text": "A white or gray crystalline salt, with a slight alkaline taste, used as a flux, in soldering metals, making enamels, fixing colors on porcelain, and as a soap. It occurs native in certain mineral springs, and is made from the boric acid of hot springs in Tuscany. It was originally obtained from a lake in Thibet, and was sent to Europe under the name of tincal. Borax is a pyroborate or tetraborate of sodium, Na2B4O7.10H2O. Borax bead. (Chem.) See Bead, n., 3.",
           "partOfSpeech": "noun"
         }
       ],
@@ -148,28 +148,6 @@
         },
         {
           "text": "See Bourd. [Obs.] Spenser.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bordaborderofgermanorigincfmhgbortebordertrimmingg": {
-      "word": "bord a border; of German origin; cf. MHG. borte border, trimming, G.",
-      "definitions": [
-        {
-          "text": "The outer part or edge of anything, as of a garment, a garden, etc.; margin; verge; brink. Upon the borders of these solitudes. Bentham. In the borders of death. Barrow.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A boundary; a frontier of a state or of the settled part of a country; a frontier district.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A strip or stripe arranged along or near the edge of something, as an ornament or finish.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A narrow flower bed. Border land, land on the frontiers of two adjoining countries; debatable land; -- often used figuratively; as, the border land of science. Scotland and England which lie adjacent.",
           "partOfSpeech": "noun"
         }
       ],
@@ -219,8 +197,8 @@
       ],
       "relatedWords": []
     },
-    "bordehutcabinofgermanoriginandakintoeboardnsee": {
-      "word": "borde hut, cabin, of German origin, and akin to E. board,n.See.",
+    "bordel": {
+      "word": "BORDEL; BORDELLO",
       "definitions": [
         {
           "text": "A brothel; a bawdyhouse; a house devoted to prostitution.",
@@ -249,9 +227,66 @@
       ],
       "relatedWords": []
     },
+    "bordello": {
+      "word": "BORDEL; BORDELLO",
+      "definitions": [
+        {
+          "text": "A brothel; a bawdyhouse; a house devoted to prostitution.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "bagnio",
+        "bawdy house",
+        "bawdyhouse",
+        "brothel",
+        "cathouse",
+        "clip joint",
+        "crib",
+        "den",
+        "den of thieves",
+        "den of vice",
+        "disorderly house",
+        "dive",
+        "dump",
+        "fleshpots",
+        "gyp joint",
+        "hole",
+        "house of assignation",
+        "house of joy",
+        "house of prostitution",
+        "joint",
+        "lair",
+        "panel den",
+        "panel house",
+        "red-light district",
+        "sink of iniquity",
+        "sporting house",
+        "stew",
+        "stews",
+        "tenderloin",
+        "whorehouse"
+      ]
+    },
     "border": {
       "word": "BORDER",
       "definitions": [
+        {
+          "text": "The outer part or edge of anything, as of a garment, a garden, etc.; margin; verge; brink. Upon the borders of these solitudes. Bentham. In the borders of death. Barrow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A boundary; a frontier of a state or of the settled part of a country; a frontier district.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A strip or stripe arranged along or near the edge of something, as an ornament or finish.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A narrow flower bed. Border land, land on the frontiers of two adjoining countries; debatable land; -- often used figuratively; as, the border land of science. Scotland and England which lie adjacent.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To touch at the edge or boundary; to be contiguous or adjacent; -- with on or upon as, Connecticut borders on Massachusetts.",
           "partOfSpeech": "verb"
@@ -571,7 +606,17 @@
       ],
       "relatedWords": []
     },
-    "bordragbordraging": {
+    "bordrag": {
+      "word": "BORDRAG; BORDRAGING",
+      "definitions": [
+        {
+          "text": "An incursion upon the borders of a country; a raid. [Obs.] Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bordraging": {
       "word": "BORDRAG; BORDRAGING",
       "definitions": [
         {
@@ -1413,6 +1458,39 @@
         "wholesale"
       ]
     },
+    "borne": {
+      "word": "BORNE",
+      "definitions": [
+        {
+          "text": "Carried; conveyed; supported; defrayed. See Bear, v. t.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "based on",
+        "bolstered",
+        "braced",
+        "buttressed",
+        "founded on",
+        "grounded on",
+        "guyed",
+        "held",
+        "ineffectual",
+        "limited",
+        "maintained",
+        "mean",
+        "narrow",
+        "paltry",
+        "propped",
+        "set",
+        "shored up",
+        "small",
+        "stayed",
+        "supported",
+        "sustained",
+        "upheld"
+      ]
+    },
     "borneol": {
       "word": "BORNEOL",
       "definitions": [
@@ -1473,6 +1551,100 @@
       ],
       "relatedWords": []
     },
+    "borough": {
+      "word": "BOROUGH",
+      "definitions": [
+        {
+          "text": "In England, an incorporated town that is not a city; also, a town that sends members to parliament; in Scotland, a body corporate, consisting of the inhabitants of a certain district, erected by the sovereign, with a certain jurisdiction; in America, an incorporated town or village, as in Pennsylvania and Connecticut. Burrill. Erskine.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The collective body of citizens or inhabitants of a borough; as, the borough voted to lay a tax. Close borough, or Pocket borough, a borough having the right of sending a member to Parliament, whose nomination is in the hands of a single person. the passage of the Reform Bill of 1832, contained but few voters, yet retained the privilege of sending a member to Parliament.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Kreis",
+        "Stadt",
+        "archbishopric",
+        "archdiocese",
+        "arrondissement",
+        "bailiwick",
+        "banlieue",
+        "bishopric",
+        "boom town",
+        "bourg",
+        "burg",
+        "burgh",
+        "canton",
+        "city",
+        "close borough",
+        "commune",
+        "congressional district",
+        "constablewick",
+        "conurbation",
+        "county",
+        "departement",
+        "diocese",
+        "district",
+        "duchy",
+        "election district",
+        "electoral district",
+        "electorate",
+        "exurb",
+        "exurbia",
+        "faubourg",
+        "gerrymander",
+        "gerrymandered district",
+        "ghost town",
+        "government",
+        "greater city",
+        "hamlet",
+        "hundred",
+        "magistracy",
+        "market town",
+        "megalopolis",
+        "metropolis",
+        "metropolitan area",
+        "municipality",
+        "oblast",
+        "okrug",
+        "outskirts",
+        "parish",
+        "pocket borough",
+        "polis",
+        "precinct",
+        "principality",
+        "province",
+        "region",
+        "riding",
+        "rotten borough",
+        "safe district",
+        "sheriffalty",
+        "sheriffwick",
+        "shire",
+        "shrievalty",
+        "silk-stocking district",
+        "single-member district",
+        "soke",
+        "spread city",
+        "stake",
+        "state",
+        "suburb",
+        "suburbia",
+        "swing district",
+        "territory",
+        "town",
+        "township",
+        "urban complex",
+        "urban sprawl",
+        "urbs",
+        "village",
+        "ville",
+        "wapentake",
+        "ward"
+      ]
+    },
     "boroughenglish": {
       "word": "BOROUGH-ENGLISH",
       "definitions": [
@@ -1523,7 +1695,17 @@
       ],
       "relatedWords": []
     },
-    "boroughmongeringboroughmongery": {
+    "boroughmongering": {
+      "word": "BOROUGHMONGERING; BOROUGHMONGERY",
+      "definitions": [
+        {
+          "text": "The practices of a boroughmonger.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boroughmongery": {
       "word": "BOROUGHMONGERING; BOROUGHMONGERY",
       "definitions": [
         {
@@ -1543,7 +1725,17 @@
       ],
       "relatedWords": []
     },
-    "borrageborraginaceous": {
+    "borrage": {
+      "word": "BORRAGE; BORRAGINACEOUS",
+      "definitions": [
+        {
+          "text": "See Borage, n., etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "borraginaceous": {
       "word": "BORRAGE; BORRAGINACEOUS",
       "definitions": [
         {

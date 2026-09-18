@@ -85,7 +85,7 @@
       "word": "UNACCEPTABLE",
       "definitions": [
         {
-          "text": "Not acceptable; not pleasing; not welcome; unpleasant;",
+          "text": "Not acceptable; not pleasing; not welcome; unpleasant; disagreeable; displeasing; offensive.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -139,7 +139,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not to be accounted for; inexplicable; not consonant with reason",
+          "text": "Not to be accounted for; inexplicable; not consonant with reason or rule; strange; mysterious.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -237,7 +237,7 @@
       ],
       "relatedWords": []
     },
-    "unadmissibleunadmittable": {
+    "unadmissible": {
       "word": "UNADMISSIBLE; UNADMITTABLE",
       "definitions": [
         {
@@ -247,11 +247,41 @@
       ],
       "relatedWords": []
     },
-    "unadulterateunadulterated": {
+    "unadmittable": {
+      "word": "UNADMISSIBLE; UNADMITTABLE",
+      "definitions": [
+        {
+          "text": "Inadmissible. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unadulterate": {
       "word": "UNADULTERATE; UNADULTERATED",
       "definitions": [
         {
           "text": "Not adulterated; pure. \"Unadulterate air.\" Cowper.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unadulterated": {
+      "word": "UNADULTERATE; UNADULTERATED",
+      "definitions": [
+        {
+          "text": "Not adulterated; pure. \"Unadulterate air.\" Cowper.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unadvisable": {
+      "word": "UNADVISABLE",
+      "definitions": [
+        {
+          "text": "Not advisable; inadvisable; inexpedient. Lowth.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -265,7 +295,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Done without due consideration; wanton; rash; inconsiderate; as,",
+          "text": "Done without due consideration; wanton; rash; inconsiderate; as, an unadvised proceeding.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -279,7 +309,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Free from affectation; plain; simple; natural; real; sincere;",
+          "text": "Free from affectation; plain; simple; natural; real; sincere; genuine; as, unaffected sorrow.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -314,6 +344,16 @@
       "definitions": [
         {
           "text": "Incapable of being aided. \"Her unaidable estate.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unalienable": {
+      "word": "UNALIENABLE",
+      "definitions": [
+        {
+          "text": "Inalienable; as, unalienable rights. Swift.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -389,6 +429,16 @@
       ],
       "relatedWords": []
     },
+    "unamiable": {
+      "word": "UNAMIABLE",
+      "definitions": [
+        {
+          "text": "Not amiable; morose; ill-natured; repulsive.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "unanchor": {
       "word": "UNANCHOR",
       "definitions": [
@@ -437,7 +487,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Formed with unanimity; indicating unanimity; having the agreement and consent of all; agreed upon without the opposition or",
+          "text": "Formed with unanimity; indicating unanimity; having the agreement and consent of all; agreed upon without the opposition or contradiction of any; as, a unanimous opinion; a unanimous vote.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -457,7 +507,7 @@
       "word": "UNANSWERABLE",
       "definitions": [
         {
-          "text": "Not answerable; irrefutable; conclusive; decisive; as, he have",
+          "text": "Not answerable; irrefutable; conclusive; decisive; as, he have an unanswerable argument.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -509,7 +559,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not to be appealed from; -- said of a judge or a judgment that can not be overruled. The infallible, unappealable Judge [God]. South.",
+          "text": "Not to be appealed from; -- said of a judge or a judgment that can not be overruled. The infallible, unappealable Judge [God]. South. We submitted to a galling yet unappealable necessity. Shelley.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -597,7 +647,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not accustomed and not likely; not disposed.",
+          "text": "Not accustomed and not likely; not disposed. I am a soldier and unapt to weep. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -672,6 +722,16 @@
         },
         {
           "text": "Not artificial; plain; simple. [Obs.] Feltham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unartful": {
+      "word": "UNARTFUL",
+      "definitions": [
+        {
+          "text": "Lacking art or skill; artless. Congreve.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -857,7 +917,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not voidable; incapable of being made null or void. Blackstone. Unavoidable hemorrhage (Med.), hemorrhage produced by the afterbirth, or placenta, being situated over the mouth of the womb so as to",
+          "text": "Not voidable; incapable of being made null or void. Blackstone. Unavoidable hemorrhage (Med.), hemorrhage produced by the afterbirth, or placenta, being situated over the mouth of the womb so as to require detachment before the child can be born.",
           "partOfSpeech": "adjective"
         }
       ],

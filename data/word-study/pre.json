@@ -501,7 +501,11 @@
       "word": "PREBENDARY",
       "definitions": [
         {
-          "text": "A clergyman attached to a collegiate or cathedral church who",
+          "text": "A clergyman attached to a collegiate or cathedral church who enjoys a prebend in consideration of his officiating at stated times in the church. See Note under Benefice, n., 3. Hook.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A prebendaryship. [Obs.] Bailey.",
           "partOfSpeech": "noun"
         }
       ],
@@ -575,7 +579,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Held by a doubtful tenure; depending on unknown causes or events; exposed to constant risk; not to be depended on for certainty or stability; uncertain; as, a precarious state of health; precarious fortunes. \"Intervals of partial and precarious liberty.\" Macaulay. Derived originally from the Latin precari, it first signified \"granted to entreaty,\" and, hence, \"wholly dependent on the will of another.\" Thus it came to express the highest species of uncertainty,",
+          "text": "Held by a doubtful tenure; depending on unknown causes or events; exposed to constant risk; not to be depended on for certainty or stability; uncertain; as, a precarious state of health; precarious fortunes. \"Intervals of partial and precarious liberty.\" Macaulay. Derived originally from the Latin precari, it first signified \"granted to entreaty,\" and, hence, \"wholly dependent on the will of another.\" Thus it came to express the highest species of uncertainty, and is applied to such things as depend wholly on future casualties.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -591,7 +595,17 @@
       ],
       "relatedWords": []
     },
-    "precativeprecatory": {
+    "precative": {
+      "word": "PRECATIVE; PRECATORY",
+      "definitions": [
+        {
+          "text": "Suppliant; beseeching. Bp. Hopkins. Precatory words (Law), words of recommendation, request, entreaty, wish, or expectation, employed in wills, as distinguished from express directions; -- in some cases creating a trust. Jarman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "precatory": {
       "word": "PRECATIVE; PRECATORY",
       "definitions": [
         {
@@ -643,6 +657,16 @@
       ],
       "relatedWords": []
     },
+    "precautious": {
+      "word": "PRECAUTIOUS",
+      "definitions": [
+        {
+          "text": "Taking or using precaution; precautionary.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "precedaneous": {
       "word": "PRECEDANEOUS",
       "definitions": [
@@ -671,7 +695,21 @@
       ],
       "relatedWords": []
     },
-    "precedenceprecedency": {
+    "precedence": {
+      "word": "PRECEDENCE; PRECEDENCY",
+      "definitions": [
+        {
+          "text": "The act or state of preceding or going before in order of time; priority; as, one event has precedence of another.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act or state of going or being before in rank or dignity, or the place of honor; right to a more honorable place; superior rank; as, barons have precedence of commoners. Which of them [the different desires] has the precedency in determining the will to the next action Locke.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "precedency": {
       "word": "PRECEDENCE; PRECEDENCY",
       "definitions": [
         {
@@ -773,7 +811,17 @@
       ],
       "relatedWords": []
     },
-    "precellenceprecellency": {
+    "precellence": {
+      "word": "PRECELLENCE; PRECELLENCY",
+      "definitions": [
+        {
+          "text": "Excellence; superiority. [Obs.] Sheldon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "precellency": {
       "word": "PRECELLENCE; PRECELLENCY",
       "definitions": [
         {
@@ -895,6 +943,10 @@
         {
           "text": "Preceptive. \"A law preceptory.\" Anderson (1573).",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A religious house of the Knights Templars, subordinate to the temple or principal house of the order in London. See Commandery, n., 2.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1059,7 +1111,27 @@
       ],
       "relatedWords": []
     },
-    "precipitanceprecipitancy": {
+    "precipitable": {
+      "word": "PRECIPITABLE",
+      "definitions": [
+        {
+          "text": "Capable of being precipitated, or cast to the bottom, as a substance in solution. See Precipitate, n. (Chem.)",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "precipitance": {
+      "word": "PRECIPITANCE; PRECIPITANCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being precipitant, or precipitate; headlong hurry; excessive or rash haste in resolving, forming an opinion, or executing a purpose; precipitation; as, the precipitancy of youth. \"Precipitance of judgment.\" I. Watts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "precipitancy": {
       "word": "PRECIPITANCE; PRECIPITANCY",
       "definitions": [
         {
@@ -1157,6 +1229,10 @@
         {
           "text": "(Chem.)",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "To separate from a solution as a precipitate. See Precipitate, n.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -1253,7 +1329,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Strictly adhering or conforming to rule; very nice or exact; punctilious in conduct or ceremony; formal; ceremonious. Addison. He was ever precise in promise-keeping. Shak.",
+          "text": "Strictly adhering or conforming to rule; very nice or exact; punctilious in conduct or ceremony; formal; ceremonious. Addison. He was ever precise in promise-keeping. Shak. particular; nice; formal. See Accurate.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1337,6 +1413,16 @@
       ],
       "relatedWords": []
     },
+    "preclusive": {
+      "word": "PRECLUSIVE",
+      "definitions": [
+        {
+          "text": "Shutting out; precluding, or tending to preclude; hindering.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "precoce": {
       "word": "PRECOCE",
       "definitions": [
@@ -1381,7 +1467,17 @@
       ],
       "relatedWords": []
     },
-    "precociousnessprecocity": {
+    "precociousness": {
+      "word": "PRECOCIOUSNESS; PRECOCITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being precocious; untimely ripeness; premature development, especially of the mental powers; forwardness. Saucy precociousness in learning. Bp. Mannyngham. That precocity which sometimes distinguishes uncommon genius. Wirt.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "precocity": {
       "word": "PRECOCIOUSNESS; PRECOCITY",
       "definitions": [
         {
@@ -1523,12 +1619,32 @@
       ],
       "relatedWords": []
     },
+    "preconcerted": {
+      "word": "PRECONCERTED",
+      "definitions": [
+        {
+          "text": "Previously arranged; agreed upon beforehand.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "preconcertion": {
       "word": "PRECONCERTION",
       "definitions": [
         {
           "text": "The act of preconcerting; preconcert. Dr. T. Dwight.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "precondemn": {
+      "word": "PRECONDEMN",
+      "definitions": [
+        {
+          "text": "To condemn beforehand.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -2323,7 +2439,7 @@
       "word": "PREDICATIVE",
       "definitions": [
         {
-          "text": "Expressing affirmation or predication; affirming; predicating,",
+          "text": "Expressing affirmation or predication; affirming; predicating, as, a predicative term.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2388,6 +2504,16 @@
       "definitions": [
         {
           "text": "Prophetic; prognostic. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "predictive": {
+      "word": "PREDICTIVE",
+      "definitions": [
+        {
+          "text": "Foretelling; prophetic; foreboding.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3839,7 +3965,7 @@
           "partOfSpeech": ""
         },
         {
-          "text": "Tending to obstruct or impair; hurtful; injurious; disadvantageous; detrimental. Hooker. His going away . . . was most prejudicial and most ruinous to the",
+          "text": "Tending to obstruct or impair; hurtful; injurious; disadvantageous; detrimental. Hooker. His going away . . . was most prejudicial and most ruinous to the king's affairs. Clarendon.",
           "partOfSpeech": ""
         }
       ],
@@ -3933,22 +4059,32 @@
       ],
       "relatedWords": []
     },
+    "prelatic": {
+      "word": "PRELATIC; PRELATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to prelates or prelacy; as, prelatical authority. Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "prelatical": {
+      "word": "PRELATIC; PRELATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to prelates or prelacy; as, prelatical authority. Macaulay.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "prelatically": {
       "word": "PRELATICALLY",
       "definitions": [
         {
           "text": "In a prelatical manner; with reference to prelates. Milton. The last Georgic was a good prelude to the Æneis.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "prelaticprelatical": {
-      "word": "PRELATIC; PRELATICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to prelates or prelacy; as, prelatical authority. Macaulay.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4007,7 +4143,17 @@
       ],
       "relatedWords": []
     },
-    "prelatureprelatureship": {
+    "prelature": {
+      "word": "PRELATURE; PRELATURESHIP",
+      "definitions": [
+        {
+          "text": "The state or dignity of a prelate; prelacy. Milman.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "prelatureship": {
       "word": "PRELATURE; PRELATURESHIP",
       "definitions": [
         {
@@ -4223,7 +4369,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Arriving or received without due authentication or evidence; as, a",
+          "text": "Arriving or received without due authentication or evidence; as, a premature report.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4321,7 +4467,17 @@
       ],
       "relatedWords": []
     },
-    "premialpremiant": {
+    "premial": {
+      "word": "PREMIAL; PREMIANT",
+      "definitions": [
+        {
+          "text": "Serving to reward; rewarding. [R.] Baxter.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "premiant": {
       "word": "PREMIAL; PREMIANT",
       "definitions": [
         {
@@ -4545,7 +4701,7 @@
       "word": "PREMONITORY",
       "definitions": [
         {
-          "text": "Giving previous warning or notice; as, premonitory symptoms of",
+          "text": "Giving previous warning or notice; as, premonitory symptoms of disease.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5171,7 +5327,7 @@
       "word": "PREPARED",
       "definitions": [
         {
-          "text": "Made fit or suitable; adapted; ready; as, prepared food;",
+          "text": "Made fit or suitable; adapted; ready; as, prepared food; prepared questions.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5245,7 +5401,17 @@
       ],
       "relatedWords": []
     },
-    "prepollenceprepollency": {
+    "prepollence": {
+      "word": "PREPOLLENCE; PREPOLLENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being prepollent; superiority of power; predominance; prevalence. [R.] Coventry.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "prepollency": {
       "word": "PREPOLLENCE; PREPOLLENCY",
       "definitions": [
         {
@@ -5279,7 +5445,25 @@
       ],
       "relatedWords": []
     },
-    "preponderancepreponderancy": {
+    "preponderance": {
+      "word": "PREPONDERANCE; PREPONDERANCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being preponderant; superiority or excess of weight, influence, or power, etc.; an outweighing. The mind should . . . reject or receive proportionably to the preponderancy of the greater grounds of probability. Locke. In a few weeks he had changed the relative position of all the states in Europe, and had restored the equilibrium which the preponderance of one power had destroyed. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Gun.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The excess of weight of that part of a canon behind the trunnions over that in front of them.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "preponderancy": {
       "word": "PREPONDERANCE; PREPONDERANCY",
       "definitions": [
         {
@@ -5301,7 +5485,7 @@
       "word": "PREPONDERANT",
       "definitions": [
         {
-          "text": "Preponderating; outweighing; overbalancing; -- used literally and figuratively; as, a preponderant weight; of preponderant",
+          "text": "Preponderating; outweighing; overbalancing; -- used literally and figuratively; as, a preponderant weight; of preponderant importance.",
           "partOfSpeech": ""
         }
       ],
@@ -5381,7 +5565,7 @@
       "word": "PREPOSITIONAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a preposition; of the nature of a",
+          "text": "Of or pertaining to a preposition; of the nature of a preposition. Early.",
           "partOfSpeech": ""
         }
       ],
@@ -5439,7 +5623,7 @@
       "word": "PREPOSSESSING",
       "definitions": [
         {
-          "text": "Tending to invite favor; attracting confidence, favor, esteem,",
+          "text": "Tending to invite favor; attracting confidence, favor, esteem, or love; attractive; as, a prepossessing manner.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5477,7 +5661,7 @@
           "partOfSpeech": ""
         },
         {
-          "text": "Contrary to nature or reason; not adapted to the end; utterly and glaringly foolish; unreasonably absurd; perverted. \"Most preposterous conclusions.\" Shak. Preposterous ass, that never read so far! Shak.",
+          "text": "Contrary to nature or reason; not adapted to the end; utterly and glaringly foolish; unreasonably absurd; perverted. \"Most preposterous conclusions.\" Shak. Preposterous ass, that never read so far! Shak. Absurd.",
           "partOfSpeech": ""
         }
       ],
@@ -5579,7 +5763,7 @@
       ],
       "relatedWords": []
     },
-    "preraphaelismpreraphaelitism": {
+    "preraphaelism": {
       "word": "PRERAPHAELISM; PRERAPHAELITISM",
       "definitions": [
         {
@@ -5602,6 +5786,16 @@
         },
         {
           "text": "Popularly, any modern artist thought to be a would-be restorer of early ideas or methods, as one of the German painters often called Nazarenes, or one who paints and draws with extreme minuteness of detail.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "preraphaelitism": {
+      "word": "PRERAPHAELISM; PRERAPHAELITISM",
+      "definitions": [
+        {
+          "text": "The doctrine or practice of a school of modern painters who profess to be followers of the painters before Raphael. Its adherents advocate careful study from nature, delicacy and minuteness of workmanship, and an exalted and delicate conception of the subject.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6483,7 +6677,7 @@
       "word": "PRESENTIAL",
       "definitions": [
         {
-          "text": "Implying actual presence; present, immediate. [Obs.]",
+          "text": "Implying actual presence; present, immediate. [Obs.] God's mercy is made presential to us. Jer. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6573,7 +6767,7 @@
       "word": "PRESENTIVE",
       "definitions": [
         {
-          "text": "Bringing a conception or notion directly before the mind; presenting an object to the memory of imagination; -- distinguished from symbolic. How greatly the word \"will\" is felt to have lost presentive power in",
+          "text": "Bringing a conception or notion directly before the mind; presenting an object to the memory of imagination; -- distinguished from symbolic. How greatly the word \"will\" is felt to have lost presentive power in the last three centuries. Earle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6635,7 +6829,17 @@
       ],
       "relatedWords": []
     },
-    "presentvaluepresentworth": {
+    "presentvalue": {
+      "word": "PRESENT VALUE; PRESENT WORTH",
+      "definitions": [
+        {
+          "text": "The principal which, drawing interest at a given rate, will amount to the given sum at the date on which this is to be paid; thus, interest being at 6%, the present value of $106 due one year hence is $100.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "presentworth": {
       "word": "PRESENT VALUE; PRESENT WORTH",
       "definitions": [
         {
@@ -6857,7 +7061,7 @@
       ],
       "relatedWords": []
     },
-    "presidialpresidiary": {
+    "presidial": {
       "word": "PRESIDIAL; PRESIDIARY",
       "definitions": [
         {
@@ -6868,8 +7072,12 @@
       "relatedWords": []
     },
     "presidiary": {
-      "word": "PRESIDIARY",
+      "word": "PRESIDIAL; PRESIDIARY",
       "definitions": [
+        {
+          "text": "Of or pertaining to a garrison; having a garrison. There are three presidial castles in this city. Howell.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A guard. [Obs.] \"Heavenly presidiaries.\" Bp. Hall.",
           "partOfSpeech": "noun"
@@ -6957,6 +7165,10 @@
         {
           "text": "An East Indian insectivore (Tupaia ferruginea). It is arboreal in its habits, and has a bushy tail. The fur is soft, and varies from rusty red to maroon and to brownish black.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To force into service, particularly into naval service; to impress. To peaceful peasant to the wars is pressed. Dryden.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "A commission to force men into public service, particularly into the navy. I have misused the king's press. Shak. Press gang, or Pressgang, a detachment of seamen under the command of an officer empowered to force men into the naval service. See Impress gang, under Impress. See Prest money, under Prest, a.",
@@ -7077,6 +7289,16 @@
         {
           "text": "See Press gang, under Press.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pressing": {
+      "word": "PRESSING",
+      "definitions": [
+        {
+          "text": "Urgent; exacting; importunate; as, a pressing necessity.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7336,6 +7558,16 @@
         },
         {
           "text": "A priest or presbyter; as, Prester John. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "presternum": {
+      "word": "PRESTERNUM",
+      "definitions": [
+        {
+          "text": "The anterior segment of the sternum; the manubrium.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7703,7 +7935,43 @@
       ],
       "relatedWords": []
     },
-    "pretencepretencefulpretenceless": {
+    "pretence": {
+      "word": "PRETENCE; PRETENCEFUL; PRETENCELESS",
+      "definitions": [
+        {
+          "text": "See Pretense, Pretenseful, Pretenseless.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of laying claim; the claim laid; assumption; pretension. Spenser. Primogeniture can not have any pretense to a right of solely inheriting property or power. Locke. I went to Lambeth with Sir R. Brown's pretense to the wardenship of Merton College, Oxford. Evelyn.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of holding out, or offering, to others something false or feigned; presentation of what is deceptive or hypocritical; deception by showing what is unreal and concealing what is real; false show; simulation; as, pretense of illness; under pretense of patriotism; on pretense of revenging Cæsar's death.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is pretended; false, deceptive, or hypocritical show, argument, or reason; pretext; feint. Let not the Trojans, with a feigned pretense Of proffered peace, delude the Latian prince. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Intention; design. [Obs.] A very pretense and purpose of unkindness. Shak. it is not so, thus falsifying the truth. A pretext is something woven up in order to cover or conceal one's true motives, feelings, or reasons. Pretext is often, but not always, used in a bad sense.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pretenceful": {
+      "word": "PRETENCE; PRETENCEFUL; PRETENCELESS",
+      "definitions": [
+        {
+          "text": "See Pretense, Pretenseful, Pretenseless.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pretenceless": {
       "word": "PRETENCE; PRETENCEFUL; PRETENCELESS",
       "definitions": [
         {
@@ -7716,6 +7984,26 @@
     "pretend": {
       "word": "PRETEND",
       "definitions": [
+        {
+          "text": "To lay a claim to; to allege a title to; to claim. Chiefs shall be grudged the part which they pretend. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hold before, or put forward, as a cloak or disguise for something else; to exhibit as a veil for something hidden. [R.] Lest that too heavenly form, pretended To hellish falsehood, snare them. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hold out, or represent, falsely; to put forward, or offer, as true or real (something untrue or unreal); to show hypocritically, or for the purpose of deceiving; to simulate; to feign; as, to pretend friendship. This let him know, Lest, willfully transgressing, he pretend Surprisal. Milton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To intend; to design; to plot; to attempt. [Obs.] Such as shall pretend Malicious practices against his state. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hold before one; to extend. [Obs.] \"His target always over her pretended.\" Spenser.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To put in, or make, a claim, truly or falsely; to allege a title; to lay claim to, or strive after, something; -- usually with to. \"Countries that pretend to freedom.\" Swift. For to what fine he would anon pretend, That know I well. Chaucer.",
           "partOfSpeech": "verb"
@@ -7733,6 +8021,16 @@
         {
           "text": "A pretender; a claimant.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pretended": {
+      "word": "PRETENDED",
+      "definitions": [
+        {
+          "text": "Making a false appearance; unreal; false; as, pretended friend.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7785,12 +8083,24 @@
       ],
       "relatedWords": []
     },
-    "pretendtocheapengoodsbutnothingbuyswift": {
-      "word": "Pretend to cheapen goods, but nothing buy. Swift.",
+    "pretense": {
+      "word": "PRETENSE; PRETENCE",
       "definitions": [
         {
-          "text": "To beat down the price of; to lessen the value of; to depreciate. Pope. My proffered love has cheapened me. Dryden.",
-          "partOfSpeech": "adjective"
+          "text": "The act of laying claim; the claim laid; assumption; pretension. Spenser. Primogeniture can not have any pretense to a right of solely inheriting property or power. Locke. I went to Lambeth with Sir R. Brown's pretense to the wardenship of Merton College, Oxford. Evelyn.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of holding out, or offering, to others something false or feigned; presentation of what is deceptive or hypocritical; deception by showing what is unreal and concealing what is real; false show; simulation; as, pretense of illness; under pretense of patriotism; on pretense of revenging Cæsar's death.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is pretended; false, deceptive, or hypocritical show, argument, or reason; pretext; feint. Let not the Trojans, with a feigned pretense Of proffered peace, delude the Latian prince. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Intention; design. [Obs.] A very pretense and purpose of unkindness. Shak. it is not so, thus falsifying the truth. A pretext is something woven up in order to cover or conceal one's true motives, feelings, or reasons. Pretext is often, but not always, used in a bad sense.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -7825,28 +8135,6 @@
       ],
       "relatedWords": []
     },
-    "pretensepretence": {
-      "word": "PRETENSE; PRETENCE",
-      "definitions": [
-        {
-          "text": "The act of laying claim; the claim laid; assumption; pretension. Spenser. Primogeniture can not have any pretense to a right of solely inheriting property or power. Locke. I went to Lambeth with Sir R. Brown's pretense to the wardenship of Merton College, Oxford. Evelyn.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The act of holding out, or offering, to others something false or feigned; presentation of what is deceptive or hypocritical; deception by showing what is unreal and concealing what is real; false show; simulation; as, pretense of illness; under pretense of patriotism; on pretense of revenging Cæsar's death.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "That which is pretended; false, deceptive, or hypocritical show, argument, or reason; pretext; feint. Let not the Trojans, with a feigned pretense Of proffered peace, delude the Latian prince. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Intention; design. [Obs.] A very pretense and purpose of unkindness. Shak. it is not so, thus falsifying the truth. A pretext is something woven up in order to cover or conceal one's true motives, feelings, or reasons. Pretext is often, but not always, used in a bad sense.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "pretension": {
       "word": "PRETENSION",
       "definitions": [
@@ -7875,7 +8163,7 @@
       "word": "PRETENTIOUS",
       "definitions": [
         {
-          "text": "Full of pretension; disposed to lay claim to more than is",
+          "text": "Full of pretension; disposed to lay claim to more than is one's; presuming; assuming.",
           "partOfSpeech": "adjective"
         }
       ],

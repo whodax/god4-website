@@ -1,7 +1,25 @@
 {
   "version": "v1",
   "entries": {
-    "besaielbesailebesayle": {
+    "besaiel": {
+      "word": "BESAIEL; BESAILE; BESAYLE",
+      "definitions": [
+        {
+          "text": "A great-grandfather. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of writ which formerly lay where a great-grandfather died seized of lands in fee simple, and on the day of his death a stranger abated or entered and kept the heir out. This is now abolished. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "besaile": {
       "word": "BESAIEL; BESAILE; BESAYLE",
       "definitions": [
         {
@@ -44,6 +62,24 @@
       "definitions": [
         {
           "text": "Same as Bez-antler.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "besayle": {
+      "word": "BESAIEL; BESAILE; BESAYLE",
+      "definitions": [
+        {
+          "text": "A great-grandfather. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A kind of writ which formerly lay where a great-grandfather died seized of lands in fee simple, and on the day of his death a stranger abated or entered and kept the heir out. This is now abolished. Blackstone.",
           "partOfSpeech": "noun"
         }
       ],
@@ -113,7 +149,17 @@
       ],
       "relatedWords": []
     },
-    "bescumberbescummer": {
+    "bescumber": {
+      "word": "BESCUMBER; BESCUMMER",
+      "definitions": [
+        {
+          "text": "To discharge ordure or dung upon. [Obs.] B. Jonson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bescummer": {
       "word": "BESCUMBER; BESCUMMER",
       "definitions": [
         {
@@ -190,6 +236,16 @@
         {
           "text": "One who beseeches.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "beseeching": {
+      "word": "BESEECHING",
+      "definitions": [
+        {
+          "text": "Entreating urgently; imploring; as, a beseeching look.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -756,6 +812,14 @@
         {
           "text": "Over and above; distinct from; in addition to. Wise and learned men beside those whose names are in the Christian records. Addison. To be beside one's self, to be out ob one's wits or senses. Paul, thou art beside thyself. Acts xxvi. 24. adverbs, have been considered strictly synonymous, from an early period of our literature, and have been freely interchanged by our best writers. There is, however, a tendency, in present usage, to make the following distinction between them: 1. That beside be used only and always as a preposition, with the original meaning \"by the side of; \" as, to sit beside a fountain; or with the closely allied meaning \"aside from\", \"apart from\", or \"out of\"; as, this is beside our present purpose; to be beside one's self with joy. The adverbial sense to be wholly transferred to the cognate word. 2. That besides, as a preposition, take the remaining sense \"in addition to\", as, besides all this; besides the considerations here offered. \"There was a famine in the land besides the first famine.\" Gen. xxvi. 1. And that it also take the adverbial sense of \"moreover\", \"beyond\", etc., which had been divided between the words; as, besides, there are other considerations which belong to this case. The following passages may serve to illustrate this use of the words: -- Lovely Thais sits beside thee. Dryden. Only be patient till we have appeased The multitude, beside themselves with fear. Shak. It is beside my present business to enlarge on this speculation. Locke. Besides this, there are persons in certain situations who are expected to be charitable. Bp. Porteus. And, besides, the Moor May unfold me to him; there stand I in much peril. Shak. That man that does not know those things which are of necessity for him to know is but an ignorant man, whatever he may know besides. Tillotson.",
           "partOfSpeech": "preposition"
+        },
+        {
+          "text": "On one side. [Obs.] Chaucer. Shak.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "More than that; over and above; not included in the number, or in what has been mentioned; moreover; in addition. The men said unto Lot, Hast thou here any besides Gen. xix. 12. To all beside, as much an empty shade, An Eugene living, as a Cæsar dead. Pope.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": [
@@ -853,7 +917,7 @@
         "yet"
       ]
     },
-    "besidesbeside": {
+    "besides": {
       "word": "BESIDES; BESIDE",
       "definitions": [
         {
@@ -863,9 +927,56 @@
         {
           "text": "More than that; over and above; not included in the number, or in what has been mentioned; moreover; in addition. The men said unto Lot, Hast thou here any besides Gen. xix. 12. To all beside, as much an empty shade, An Eugene living, as a Cæsar dead. Pope.",
           "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Over and above; separate or distinct from; in addition to; other than; else than. See Beside, prep., 3, and Syn. under Beside. Besides your cheer, you shall have sport. Shak.",
+          "partOfSpeech": "preposition"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "above and beyond",
+        "added",
+        "additionally",
+        "along",
+        "along with",
+        "also",
+        "apart from",
+        "as well",
+        "as well as",
+        "aside from",
+        "bar",
+        "barring",
+        "beside",
+        "beyond",
+        "but",
+        "else",
+        "except for",
+        "excepting",
+        "excluding",
+        "exclusive of",
+        "farther",
+        "further",
+        "furthermore",
+        "in addition",
+        "in addition to",
+        "into the bargain",
+        "likewise",
+        "more",
+        "moreover",
+        "new",
+        "not counting",
+        "other",
+        "other than",
+        "otherwise",
+        "outside of",
+        "over and above",
+        "save",
+        "then",
+        "to boot",
+        "together with",
+        "too",
+        "yet"
+      ]
     },
     "besiege": {
       "word": "BESIEGE",
@@ -984,40 +1095,12 @@
       ],
       "relatedWords": []
     },
-    "besiegingallultimatelyfrlsederetositseesitandcfsee": {
-      "word": "besieging; all ultimately fr. L. sedere to sit. See Sit, and cf. See,",
+    "besieging": {
+      "word": "BESIEGING",
       "definitions": [
         {
-          "text": "A seat; especially, a royal seat; a throne. [Obs.] \"Upon the very siege of justice.\" Shak. A stately siege of sovereign majesty, And thereon sat a woman gorgeous gay. Spenser. In our great hall there stood a vacant chair . . . And Merlin called it \"The siege perilous.\" Tennyson.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Hence, place or situation; seat. [Obs.] Ah! traitorous eyes, come out of your shameless siege forever. Painter (Palace of Pleasure).",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Rank; grade; station; estimation. [Obs.] I fetch my life and being From men of royal siege. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Passage of excrements; stool; fecal matter. [Obs.] The siege of this mooncalf. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The sitting of an army around or before a fortified place for the purpose of compelling the garrison to surrender; the surrounding or investing of a place by an army, and approaching it by passages and advanced works, which cover the besiegers from the enemy's fire. See the Note under Blockade.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Hence, a continued attempt to gain possession. Love stood the siege, and would not yield his breast. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The floor of a glass-furnace.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A workman's bench. Knught. Siege gun, a heavy gun for siege operations.",
-          "partOfSpeech": "noun"
+          "text": "That besieges; laying siege to.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1367,20 +1450,6 @@
       ],
       "relatedWords": []
     },
-    "besoftoffatsubstancesquabbeafatlumpoffleshadewlapd": {
-      "word": "be soft, of fat substances, quabbe a fat lump of flesh, a dewlap, D.",
-      "definitions": [
-        {
-          "text": "To tremble; to vibrate; to shake. Sir I. Newton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Especially, to shake the voice; to utter or form sound with rapid or tremulous vibrations, as in singing; also, to trill on a musical instrument",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "besogne": {
       "word": "BESOGNE",
       "definitions": [
@@ -1477,7 +1546,7 @@
       "word": "BESOTTED",
       "definitions": [
         {
-          "text": "Made sottish, senseless, or infatuated; characterized by drunken stupidity, or by infatuation; stupefied. \"Besotted devotion.\"",
+          "text": "Made sottish, senseless, or infatuated; characterized by drunken stupidity, or by infatuation; stupefied. \"Besotted devotion.\" Sir W. Scott.",
           "partOfSpeech": "adjective"
         }
       ],

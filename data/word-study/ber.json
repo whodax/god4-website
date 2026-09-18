@@ -131,6 +131,24 @@
       ],
       "relatedWords": []
     },
+    "bere": {
+      "word": "BEAR; BERE",
+      "definitions": [
+        {
+          "text": "Barley; the six-rowed barley or the four-rowed barley, commonly the former (Hord. vulgare). [Obs. except in North of Eng. and Scot.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": ", v. t. Etym: [Cf. OIcel. berja to strike.] To pierce. [Obs.] Chaucer.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": ",n.See Bear, barley. [Scot.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "bereave": {
       "word": "BEREAVE",
       "definitions": [
@@ -578,7 +596,7 @@
       "word": "BERKELEIAN",
       "definitions": [
         {
-          "text": ",a.Of or relating to Bishop Berkeley or his system of idealism;",
+          "text": ",a.Of or relating to Bishop Berkeley or his system of idealism; as, Berkeleian philosophy.",
           "partOfSpeech": ""
         }
       ],
@@ -598,7 +616,95 @@
       ],
       "relatedWords": []
     },
-    "bermberme": {
+    "berm": {
+      "word": "BERM; BERME",
+      "definitions": [
+        {
+          "text": "(Fort.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A narrow shelf or path between the bottom of a parapet and the ditch.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Engineering)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ledge at the bottom of a bank or cutting, to catch earth that may roll down the slope, or to strengthen the bank.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "alameda",
+        "bank",
+        "beach",
+        "beaten path",
+        "beaten track",
+        "bicycle path",
+        "boardwalk",
+        "bridle path",
+        "catwalk",
+        "coast",
+        "coastland",
+        "coastline",
+        "embankment",
+        "esplanade",
+        "fastwalk",
+        "foot pavement",
+        "footpath",
+        "footway",
+        "foreshore",
+        "garden path",
+        "groove",
+        "hiking trail",
+        "ironbound coast",
+        "lido",
+        "littoral",
+        "mall",
+        "parade",
+        "path",
+        "pathway",
+        "plage",
+        "playa",
+        "prado",
+        "promenade",
+        "public walk",
+        "riverside",
+        "riviera",
+        "rockbound coast",
+        "run",
+        "runway",
+        "rut",
+        "sands",
+        "sea margin",
+        "seabank",
+        "seabeach",
+        "seaboard",
+        "seacliff",
+        "seacoast",
+        "seashore",
+        "seaside",
+        "shingle",
+        "shore",
+        "shoreline",
+        "sidewalk",
+        "strand",
+        "submerged coast",
+        "tidewater",
+        "towing path",
+        "towpath",
+        "track",
+        "trail",
+        "trottoir",
+        "walk",
+        "walkway",
+        "waterfront",
+        "waterside"
+      ]
+    },
+    "berme": {
       "word": "BERM; BERME",
       "definitions": [
         {
@@ -917,7 +1023,82 @@
       ],
       "relatedWords": []
     },
-    "berserkberserker": {
+    "berserk": {
+      "word": "BERSERK; BERSERKER",
+      "definitions": [
+        {
+          "text": "(Scand. Myth.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One of a class of legendary heroes, who fought frenzied by intoxicating liquors, and naked, regardless of wounds. Longfellow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "One who fights as if frenzied, like a Berserker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Dionysiac",
+        "abandoned",
+        "amok",
+        "bacchic",
+        "bellowing",
+        "carried away",
+        "corybantic",
+        "crazed",
+        "delirious",
+        "demoniac",
+        "desperate",
+        "distracted",
+        "ecstatic",
+        "enraptured",
+        "feral",
+        "ferocious",
+        "fierce",
+        "frantic",
+        "frenetic",
+        "frenzied",
+        "fulminating",
+        "furious",
+        "haggard",
+        "hog-wild",
+        "howling",
+        "hysterical",
+        "in a transport",
+        "in hysterics",
+        "intoxicated",
+        "like one possessed",
+        "mad",
+        "madding",
+        "maenadic",
+        "maniac",
+        "maniacal",
+        "orgasmic",
+        "orgiastic",
+        "possessed",
+        "rabid",
+        "raging",
+        "ramping",
+        "ranting",
+        "raving",
+        "raving mad",
+        "ravished",
+        "roaring",
+        "running mad",
+        "running wild",
+        "stark-raving mad",
+        "storming",
+        "transported",
+        "uncontrollable",
+        "violent",
+        "wild",
+        "wild-eyed",
+        "wild-looking"
+      ]
+    },
+    "berserker": {
       "word": "BERSERK; BERSERKER",
       "definitions": [
         {

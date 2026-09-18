@@ -11,6 +11,41 @@
       ],
       "relatedWords": []
     },
+    "fief": {
+      "word": "FIEF",
+      "definitions": [
+        {
+          "text": "An estate held of a superior on condition of military service; a fee; a feud. See under Benefice, n., 2.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "copyhold",
+        "equitable estate",
+        "estate at sufferance",
+        "estate for life",
+        "estate for years",
+        "estate in expectancy",
+        "estate in fee",
+        "estate in possession",
+        "estate tail",
+        "fee",
+        "fee simple",
+        "fee tail",
+        "feod",
+        "feodum",
+        "feud",
+        "feudal estate",
+        "lease",
+        "leasehold",
+        "legal estate",
+        "paramount estate",
+        "particular estate",
+        "remainder",
+        "reversion",
+        "vested estate"
+      ]
+    },
     "field": {
       "word": "FIELD",
       "definitions": [
@@ -774,11 +809,21 @@
         "zealot"
       ]
     },
+    "fiendful": {
+      "word": "FIENDFUL",
+      "definitions": [
+        {
+          "text": "Full of fiendish spirit or arts. Marlowe.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "fiendish": {
       "word": "FIENDISH",
       "definitions": [
         {
-          "text": "Like a fiend; diabolically wicked or cruel; infernal;",
+          "text": "Like a fiend; diabolically wicked or cruel; infernal; malignant; devilish; hellish.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -904,7 +949,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Excessively earnest, eager, or ardent.",
+          "text": "Excessively earnest, eager, or ardent. See Ferocious.",
           "partOfSpeech": "adjective"
         }
       ],

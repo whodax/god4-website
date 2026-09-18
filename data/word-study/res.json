@@ -611,7 +611,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To recognize; to perceive, especially as if by smelling; --",
+          "text": "To recognize; to perceive, especially as if by smelling; -- associated in meaning with sent, the older spelling of scent to smell. See Resent, v. i. [Obs.] This bird of prey resented a worse than earthly savor in the soul of Saul. Fuller. Our King Henry the Seventh quickly resented his drift. Fuller.",
           "partOfSpeech": "verb"
         },
         {
@@ -631,6 +631,16 @@
         {
           "text": "One who resents. Sir H. Wotton.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "resentful": {
+      "word": "RESENTFUL",
+      "definitions": [
+        {
+          "text": "Inclined to resent; easily provoked to anger; irritable.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -833,7 +843,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Restrained from freedom in words or actions; backward, or cautious, in communicating one's thoughts and feelings; not free or frank. To all obliging, yet reserved to all. Walsh.",
+          "text": "Restrained from freedom in words or actions; backward, or cautious, in communicating one's thoughts and feelings; not free or frank. To all obliging, yet reserved to all. Walsh. Nothing reserved or sullen was to see. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1387,7 +1397,25 @@
       ],
       "relatedWords": []
     },
-    "resilienceresiliency": {
+    "resilience": {
+      "word": "RESILIENCE; RESILIENCY",
+      "definitions": [
+        {
+          "text": "The act of resiling, springing back, or rebounding; as, the resilience of a ball or of sound.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech. & Engyn.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The mechanical work required to strain an elastic body, as a deflected beam, stretched spring, etc., to the elastic limit; also, the work performed by the body in recovering from such strain.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "resiliency": {
       "word": "RESILIENCE; RESILIENCY",
       "definitions": [
         {
@@ -1673,6 +1701,26 @@
       ],
       "relatedWords": []
     },
+    "resistible": {
+      "word": "RESISTIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being resisted; as, a resistible force. Sir M. Hale.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "resisting": {
+      "word": "RESISTING",
+      "definitions": [
+        {
+          "text": "Making resistance; opposing; as, a resisting medium.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "resistive": {
       "word": "RESISTIVE",
       "definitions": [
@@ -1691,7 +1739,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Incapable of being resisted; irresistible. Masters' commands come with a power resistless To such as owe them",
+          "text": "Incapable of being resisted; irresistible. Masters' commands come with a power resistless To such as owe them absolute subjection. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1701,7 +1749,7 @@
       "word": "RESOLUBLE",
       "definitions": [
         {
-          "text": "Admitting of being resolved; resolvable; as, bodies resoluble",
+          "text": "Admitting of being resolved; resolvable; as, bodies resoluble by fire. Boyle.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1797,7 +1845,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The passing of a dissonant into a consonant chord by the rising",
+          "text": "The passing of a dissonant into a consonant chord by the rising or falling of the note which makes the discord. Joint resolution. See under Joint, a. single force or motion into two or more which have different directions, and, taken together, are an equivalent for the single one; -- the opposite of Ant: composition of a force. by a telescope of such power as to show it to be composed of small stars. resolvedness; resoluteness; firmness; constancy; perseverance; steadfastness; fortitude; boldness; purpose; resolve. See Decision.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2273,6 +2321,16 @@
       ],
       "relatedWords": []
     },
+    "resourceless": {
+      "word": "RESOURCELESS",
+      "definitions": [
+        {
+          "text": "Destitute of resources. Burke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "resow": {
       "word": "RESOW",
       "definitions": [
@@ -2413,7 +2471,7 @@
       "word": "RESPECTFUL",
       "definitions": [
         {
-          "text": "Marked or characterized by respect; as, respectful deportment.",
+          "text": "Marked or characterized by respect; as, respectful deportment. With humble joi and with respectful fear. Prior.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2491,7 +2549,7 @@
       "word": "RESPECTLESS",
       "definitions": [
         {
-          "text": "Having no respect; without regard; regardless.",
+          "text": "Having no respect; without regard; regardless. Rather than again Endure, respectless, their so moving cChapman.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2547,6 +2605,16 @@
         {
           "text": "The quality or state of being respirable; respirableness.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "respirable": {
+      "word": "RESPIRABLE",
+      "definitions": [
+        {
+          "text": "Suitable for being breathed; adapted for respiration.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2611,7 +2679,7 @@
       "word": "RESPIRATORY",
       "definitions": [
         {
-          "text": "Of or pertaining to respiration; serving for respiration; as, the respiratory organs; respiratory nerves; the respiratory function;",
+          "text": "Of or pertaining to respiration; serving for respiration; as, the respiratory organs; respiratory nerves; the respiratory function; respiratory changes. Respiratory foods. (Physiol.) See 2d Note under Food, n., 1. holothurians.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2675,12 +2743,32 @@
       ],
       "relatedWords": []
     },
-    "resplendenceresplendency": {
+    "resplendence": {
       "word": "RESPLENDENCE; RESPLENDENCY",
       "definitions": [
         {
           "text": "The quality or state of being resplendent; brilliant luster; vivid brightness; splendor. Son! thou in whom my glory I behold In full resplendence, heir of all my might. Milton. The resplendency of his own almighty goodness. Dr. J. Scott.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "resplendency": {
+      "word": "RESPLENDENCE; RESPLENDENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being resplendent; brilliant luster; vivid brightness; splendor. Son! thou in whom my glory I behold In full resplendence, heir of all my might. Milton. The resplendency of his own almighty goodness. Dr. J. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "resplendent": {
+      "word": "RESPLENDENT",
+      "definitions": [
+        {
+          "text": "Shining with brilliant luster; very bright. With royal arras and resplendent gold. Spenser.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2761,7 +2849,17 @@
       ],
       "relatedWords": []
     },
-    "respondencerespondency": {
+    "respondence": {
+      "word": "RESPONDENCE; RESPONDENCY",
+      "definitions": [
+        {
+          "text": "The act of responding; the state of being respondent; an answering. A. Chalmers. The angelical soft trembling voice made To the instruments divine respondence meet. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "respondency": {
       "word": "RESPONDENCE; RESPONDENCY",
       "definitions": [
         {
@@ -2882,6 +2980,10 @@
         },
         {
           "text": "(University of Oxford)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The first university examination; -- called also little go. See under Little, a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3187,7 +3289,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Giving rest; freeing from toil, trouble, etc.",
+          "text": "Giving rest; freeing from toil, trouble, etc. Tired with all these, for restful death I cry. Shak.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3357,7 +3459,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Uneasy; restless; averse to standing still; fidgeting about; --",
+          "text": "Uneasy; restless; averse to standing still; fidgeting about; -- applied especially to horses. Trench.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3383,7 +3485,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Not affording rest; as, a restless chair. Cowper. Restless thrush. (Zoöl.) See Grinder, 3.",
+          "text": "Not affording rest; as, a restless chair. Cowper. Restless thrush. (Zoöl.) See Grinder, 3. unsettled; roving; wandering.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3393,7 +3495,7 @@
       "word": "RESTORABLE",
       "definitions": [
         {
-          "text": "Admitting of being restored; capable of being reclaimed; as,",
+          "text": "Admitting of being restored; capable of being reclaimed; as, restorable land. Swift.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3765,6 +3867,16 @@
         {
           "text": "A second subjection.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "resublime": {
+      "word": "RESUBLIME",
+      "definitions": [
+        {
+          "text": "To sublime again. Newton.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

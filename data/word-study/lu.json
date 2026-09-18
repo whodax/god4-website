@@ -1,16 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "luxuriouscfofgorgiasruffneckhandkerchiefandfgorge": {
-      "word": "luxurious; cf. OF. gorgias ruff, neck handkerchief, and F. gorge",
-      "definitions": [
-        {
-          "text": "Imposing through splendid or various colors; showy; fine; magnificent. Cloud-land, gorgeous land. Coleridge.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "lu": {
       "word": "LU",
       "definitions": [
@@ -59,7 +49,21 @@
       ],
       "relatedWords": []
     },
-    "lubriclubrical": {
+    "lubric": {
+      "word": "LUBRIC; LUBRICAL",
+      "definitions": [
+        {
+          "text": "Having a smooth surface; slippery. [R.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lascivious; wanton; lewd. [R.] This lubric and adulterate age. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lubrical": {
       "word": "LUBRIC; LUBRICAL",
       "definitions": [
         {
@@ -163,7 +167,17 @@
       ],
       "relatedWords": []
     },
-    "lubrificationlubrifaction": {
+    "lubrification": {
+      "word": "LUBRIFICATION; LUBRIFACTION",
+      "definitions": [
+        {
+          "text": "The act of lubricating, or making smooth. Ray. Bacon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lubrifaction": {
       "word": "LUBRIFICATION; LUBRIFACTION",
       "definitions": [
         {
@@ -483,7 +497,7 @@
       "word": "LUCKLESS",
       "definitions": [
         {
-          "text": "Being without luck; unpropitious; unfortunate; unlucky; meeting with ill success or bad fortune; as, a luckless gamester; a luckless maid.",
+          "text": "Being without luck; unpropitious; unfortunate; unlucky; meeting with ill success or bad fortune; as, a luckless gamester; a luckless maid. Prayers made and granted in a luckless hour. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -727,7 +741,7 @@
       "word": "LUDICROUS",
       "definitions": [
         {
-          "text": "Adapted to excite laughter, without scorn or contempt; sportive. Broome. A chapter upon German rhetoric would be in the same ludicrous predicament as Van Troil's chapter on the snakes of Iceland, which delivers its business in one summary sentence, announcing, that snakes in Iceland -- there are none. De Quincey. ludicrous when it tends to produce laughter; as laughable when the impression is somewhat stronger; as ridiculous when more or less",
+          "text": "Adapted to excite laughter, without scorn or contempt; sportive. Broome. A chapter upon German rhetoric would be in the same ludicrous predicament as Van Troil's chapter on the snakes of Iceland, which delivers its business in one summary sentence, announcing, that snakes in Iceland -- there are none. De Quincey. ludicrous when it tends to produce laughter; as laughable when the impression is somewhat stronger; as ridiculous when more or less contempt is mingled with the merriment created.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -923,7 +937,7 @@
       "word": "LUGUBRIOUS",
       "definitions": [
         {
-          "text": "Mournful; indicating sorrow, often ridiculously or feignedly; doleful; woful; pitiable; as, a whining tone and a lugubrious look. Crossbones, scythes, hourglasses, and other lugubrious emblems of",
+          "text": "Mournful; indicating sorrow, often ridiculously or feignedly; doleful; woful; pitiable; as, a whining tone and a lugubrious look. Crossbones, scythes, hourglasses, and other lugubrious emblems of mortality. Hawthorne.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -939,11 +953,21 @@
       ],
       "relatedWords": []
     },
+    "luke": {
+      "word": "LUKE",
+      "definitions": [
+        {
+          "text": "Moderately warm; not hot; tepid. Nine penn'orth o'brandy and water luke. Dickens.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "lukewarm": {
       "word": "LUKEWARM",
       "definitions": [
         {
-          "text": "Moderately warm; neither cold nor hot; tepid; not ardent; not zealous; cool; indifferent. \" Lukewarm blood.\" Spenser. \" Lukewarm patriots.\" Addison. An obedience so lukewarm and languishing that it merits not the name",
+          "text": "Moderately warm; neither cold nor hot; tepid; not ardent; not zealous; cool; indifferent. \" Lukewarm blood.\" Spenser. \" Lukewarm patriots.\" Addison. An obedience so lukewarm and languishing that it merits not the name of passion. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1023,7 +1047,17 @@
       ],
       "relatedWords": []
     },
-    "lumachellumachella": {
+    "lumachel": {
+      "word": "LUMACHEL; LUMACHELLA",
+      "definitions": [
+        {
+          "text": "A grayish brown limestone, containing fossil shells, which reflect a beautiful play of colors. It is also called fire marble, from its fiery reflections.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lumachella": {
       "word": "LUMACHEL; LUMACHELLA",
       "definitions": [
         {
@@ -1053,7 +1087,17 @@
       ],
       "relatedWords": []
     },
-    "lumbarlumbal": {
+    "lumbar": {
+      "word": "LUMBAR; LUMBAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or near, the loins; as, the lumbar arteries. Lumbar region (Anat.), the region of the loin; specifically, a region between the hypochondriac and ilias regions, and outside of the umbilical region.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lumbal": {
       "word": "LUMBAR; LUMBAL",
       "definitions": [
         {
@@ -1551,7 +1595,17 @@
       ],
       "relatedWords": []
     },
-    "lunatelunated": {
+    "lunate": {
+      "word": "LUNATE; LUNATED",
+      "definitions": [
+        {
+          "text": "Crescent-shaped; as, a lunate leaf; a lunate beak; a lunated cross. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lunated": {
       "word": "LUNATE; LUNATED",
       "definitions": [
         {
@@ -1847,6 +1901,16 @@
       ],
       "relatedWords": []
     },
+    "lunitidal": {
+      "word": "LUNITIDAL",
+      "definitions": [
+        {
+          "text": "Pertaining to tidal movements dependent on the moon. Bache. Lunitidal interval. See Retard, n.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "lunt": {
       "word": "LUNT",
       "definitions": [
@@ -1881,7 +1945,17 @@
       ],
       "relatedWords": []
     },
-    "lunulatelunulated": {
+    "lunulate": {
+      "word": "LUNULATE; LUNULATED",
+      "definitions": [
+        {
+          "text": "Resembling a small crescent. Gray.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lunulated": {
       "word": "LUNULATE; LUNULATED",
       "definitions": [
         {
@@ -2347,7 +2421,27 @@
       ],
       "relatedWords": []
     },
-    "lusoriouslusory": {
+    "luskish": {
+      "word": "LUSKISH",
+      "definitions": [
+        {
+          "text": "Inclined to be lazy. Marston.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lusorious": {
+      "word": "LUSORIOUS; LUSORY",
+      "definitions": [
+        {
+          "text": "Used in play; sportive; playful. [Obs.] Bp. Sanderson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lusory": {
       "word": "LUSORIOUS; LUSORY",
       "definitions": [
         {
@@ -2407,13 +2501,7 @@
         {
           "text": "One who lusts.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "lusterlustre": {
-      "word": "LUSTER; LUSTRE",
-      "definitions": [
+        },
         {
           "text": "A period of five years; a lustrum. Both of us have closed the tenth luster. Bolingbroke.",
           "partOfSpeech": "noun"
@@ -2453,6 +2541,52 @@
       ],
       "relatedWords": []
     },
+    "lustre": {
+      "word": "LUSTER; LUSTRE",
+      "definitions": [
+        {
+          "text": "A period of five years; a lustrum. Both of us have closed the tenth luster. Bolingbroke.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Brilliancy; splendor; brightness; glitter. The right mark and very true luster of the diamond. Sir T. More. The scorching sun was mounted high, In all its luster, to the noonday sky. Addison. to the brightness of things which do not shine with their own light, or at least do not blaze or glow with heat. One speaks of the luster of a diamond, or of silk, or even of the stars, but not often now of the luster of the sun, a coal of fire, or the like.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Renown; splendor; distinction; glory. His ancestors continued about four hundred years, rather without obscurity than with any great luster. Sir H. Wotton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A candlestick, chandelier, girandole, or the like, generally of an ornamental character. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The appearance of the surface of a mineral as affected by, or dependent upon, peculiarities of its reflecting qualities. adamantine, vitreous, resinous, greasy, pearly, and silky. With respect to intensity, luster is characterized as splendent, shining, glistening, glimmering, and dull.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A substance which imparts luster to a surface, as plumbago and some of the glazes.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fabric of wool and cotton with a lustrous surface, -- used for women's dresses. Luster ware, earthenware decorated by applying to the glazing metallic oxides, which acquire brilliancy in the process of baking.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make lustrous. [R. & Poetic] Flooded and lustered with her loosened gold. Lowell.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Same as Luster.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "lustering": {
       "word": "LUSTERING",
       "definitions": [
@@ -2467,7 +2601,17 @@
       ],
       "relatedWords": []
     },
-    "lusterlesslustreless": {
+    "lusterless": {
+      "word": "LUSTERLESS; LUSTRELESS",
+      "definitions": [
+        {
+          "text": "Destitute of luster; dim; dull.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lustreless": {
       "word": "LUSTERLESS; LUSTRELESS",
       "definitions": [
         {
@@ -2489,7 +2633,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Strong; lusty. [Obs.] \" Lustful health.\" Sackville.",
+          "text": "Strong; lusty. [Obs.] \" Lustful health.\" Sackville. impure; libidinous; lecherous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2596,16 +2740,6 @@
         },
         {
           "text": "A sacrifice, or ceremony, by which cities, fields, armies, or people, defiled by crimes, pestilence, or other cause of uncleanness, were purified.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "lustre": {
-      "word": "LUSTRE",
-      "definitions": [
-        {
-          "text": "Same as Luster.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2903,11 +3037,31 @@
       ],
       "relatedWords": []
     },
-    "lutheranismlutherism": {
+    "lutheranism": {
       "word": "LUTHERANISM; LUTHERISM",
       "definitions": [
         {
           "text": "The doctrines taught by Luther or held by the Lutheran Church.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lutherism": {
+      "word": "LUTHERANISM; LUTHERISM",
+      "definitions": [
+        {
+          "text": "The doctrines taught by Luther or held by the Lutheran Church.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "luthern": {
+      "word": "LUTHERN",
+      "definitions": [
+        {
+          "text": "A dormer window. See Dormer.",
           "partOfSpeech": "noun"
         }
       ],

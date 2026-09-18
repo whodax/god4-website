@@ -1,16 +1,16 @@
 {
   "version": "v1",
   "entries": {
-    "mulmohgmoltmoltaicelmolddanmuldswmullgothmulda": {
-      "word": "mulm, OHG. molt, molta, Icel. mold, Dan. muld, Sw. mull, Goth. mulda,",
+    "muharram": {
+      "word": "MOHURRUM; MUHARRAM",
       "definitions": [
         {
-          "text": "Crumbling, soft, friable earth; esp., earth containing the remains or constituents of organic matter, and suited to the growth of plants; soil.",
-          "partOfSpeech": "verb"
+          "text": "The first month of the Mohammedan year. Whitworth.",
+          "partOfSpeech": "noun"
         },
         {
-          "text": "Earthy material; the matter of which anything is formed; composing substance; material. The etherial mold, Incapable of stain. Milton. Nature formed me of her softest mold. Addison.",
-          "partOfSpeech": "verb"
+          "text": "A festival of the Shiah sect of the Mohammedans held during the first ten days of the month Mohurrum.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -125,6 +125,16 @@
       ],
       "relatedWords": []
     },
+    "mucid": {
+      "word": "MUCID",
+      "definitions": [
+        {
+          "text": "Musty; moldy; slimy; mucous.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "mucific": {
       "word": "MUCIFIC",
       "definitions": [
@@ -207,7 +217,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Soluble in water, but not in alcohol; yielding mucilage; as,",
+          "text": "Soluble in water, but not in alcohol; yielding mucilage; as, mucilaginous gums or plants.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -363,7 +373,21 @@
       ],
       "relatedWords": []
     },
-    "muckrakemuckrakemuckraker": {
+    "muckrake": {
+      "word": "MUCK RAKE",
+      "definitions": [
+        {
+          "text": "A rake for scraping up muck or dung. See Muckrake, v. i., below.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "To seek for, expose, or charge, esp. habitually, corruption, real or alleged, on the part of public men and corporations. On April 14, 1906, President Roosevelt delivered a speech on \"The Man with the Muck Rake,\" in which he deprecated sweeping and unjust charges of corruption against public men and corporations. The phrase was taken up by the press, and the verb to muck\"rake`, in the above sense, and the noun muck\"rak`er, to designate one so engaged, were speedily coined and obtained wide currency. The original allusion was to a character in Bunyan's \"Pilgrim's Progress\" so intent on raking up muck that he could not see a celestial crown held above him.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "muckraker": {
       "word": "MUCK-RAKE; MUCKRAKE; MUCKRAKER",
       "definitions": [
         {
@@ -519,11 +543,21 @@
       ],
       "relatedWords": []
     },
-    "mucronatemucronated": {
+    "mucronate": {
       "word": "MUCRONATE; MUCRONATED",
       "definitions": [
         {
-          "text": "Ending abruptly in a sharp point; abruptly tipped with a short",
+          "text": "Ending abruptly in a sharp point; abruptly tipped with a short and sharp point; as, a mucronate leaf.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mucronated": {
+      "word": "MUCRONATE; MUCRONATED",
+      "definitions": [
+        {
+          "text": "Ending abruptly in a sharp point; abruptly tipped with a short and sharp point; as, a mucronate leaf.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1065,7 +1099,27 @@
       ],
       "relatedWords": []
     },
-    "muggermuggarmuggur": {
+    "mugger": {
+      "word": "MUGGER; MUGGAR; MUGGUR",
+      "definitions": [
+        {
+          "text": "The common crocodile (Crocodilus palustris) of India, the East Indies, etc. It becomes twelve feet or more long.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "muggar": {
+      "word": "MUGGER; MUGGAR; MUGGUR",
+      "definitions": [
+        {
+          "text": "The common crocodile (Crocodilus palustris) of India, the East Indies, etc. It becomes twelve feet or more long.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "muggur": {
       "word": "MUGGER; MUGGAR; MUGGUR",
       "definitions": [
         {
@@ -1227,7 +1281,7 @@
       ],
       "relatedWords": []
     },
-    "mugwumperymugwumpism": {
+    "mugwumpery": {
       "word": "MUGWUMPERY; MUGWUMPISM",
       "definitions": [
         {
@@ -1237,7 +1291,27 @@
       ],
       "relatedWords": []
     },
-    "muhammadanmuhammedan": {
+    "mugwumpism": {
+      "word": "MUGWUMPERY; MUGWUMPISM",
+      "definitions": [
+        {
+          "text": "The acts and views of the mugwumps. [Political Cant, U.S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "muhammadan": {
+      "word": "MUHAMMADAN; MUHAMMEDAN",
+      "definitions": [
+        {
+          "text": "Mohammedan.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "muhammedan": {
       "word": "MUHAMMADAN; MUHAMMEDAN",
       "definitions": [
         {
@@ -1355,7 +1429,17 @@
       ],
       "relatedWords": []
     },
-    "mulctarymulctuary": {
+    "mulctary": {
+      "word": "MULCTARY; MULCTUARY",
+      "definitions": [
+        {
+          "text": "Imposing a pecuniary penalty; consisting of, or paid as, a fine. Fines, or some known mulctuary punishments. Sir W. Temple.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mulctuary": {
       "word": "MULCTARY; MULCTUARY",
       "definitions": [
         {
@@ -1517,6 +1601,16 @@
       ],
       "relatedWords": []
     },
+    "mulish": {
+      "word": "MULISH",
+      "definitions": [
+        {
+          "text": "Like a mule; sullen; stubborn.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "mull": {
       "word": "MULL",
       "definitions": [
@@ -1637,7 +1731,17 @@
       ],
       "relatedWords": []
     },
-    "mullerianmuellerian": {
+    "mullerian": {
+      "word": "MULLERIAN; MUELLERIAN",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or discovered by, Johannes Müller. Müllerian ducts (Anat.), a pair of embryonic ducts which give rise to the genital passages in the female, but disappear in the male. fibers which form the framework of the retina.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "muellerian": {
       "word": "MULLERIAN; MUELLERIAN",
       "definitions": [
         {
@@ -1677,7 +1781,7 @@
       ],
       "relatedWords": []
     },
-    "mulleymoolley": {
+    "mulley": {
       "word": "MULLEY; MOOLLEY",
       "definitions": [
         {
@@ -1785,6 +1889,20 @@
         {
           "text": "See Multi-.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "A prefix signifying much or many; several; more than one; as, multiaxial, multocular.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "multangular": {
+      "word": "MULTANGULAR",
+      "definitions": [
+        {
+          "text": "Having many angles.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1819,7 +1937,7 @@
       ],
       "relatedWords": []
     },
-    "multimult": {
+    "multi": {
       "word": "MULTI-; MULT-",
       "definitions": [
         {
@@ -2217,7 +2335,17 @@
       ],
       "relatedWords": []
     },
-    "multiloquentmultiloquous": {
+    "multiloquent": {
+      "word": "MULTILOQUENT; MULTILOQUOUS",
+      "definitions": [
+        {
+          "text": "Speaking much; very talkative; loquacious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "multiloquous": {
       "word": "MULTILOQUENT; MULTILOQUOUS",
       "definitions": [
         {
@@ -2267,7 +2395,17 @@
       ],
       "relatedWords": []
     },
-    "multinominalmultinominous": {
+    "multinominal": {
+      "word": "MULTINOMINAL; MULTINOMINOUS",
+      "definitions": [
+        {
+          "text": "Having many names or terms.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "multinominous": {
       "word": "MULTINOMINAL; MULTINOMINOUS",
       "definitions": [
         {
@@ -2287,7 +2425,17 @@
       ],
       "relatedWords": []
     },
-    "multinucleatemultinucleated": {
+    "multinucleate": {
+      "word": "MULTINUCLEATE; MULTINUCLEATED",
+      "definitions": [
+        {
+          "text": "Multinuclear.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "multinucleated": {
       "word": "MULTINUCLEATE; MULTINUCLEATED",
       "definitions": [
         {
@@ -2382,6 +2530,16 @@
       "definitions": [
         {
           "text": "Manifold; multiple.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "multipliable": {
+      "word": "MULTIPLIABLE",
+      "definitions": [
+        {
+          "text": "Capable of being multiplied.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2789,7 +2947,17 @@
       ],
       "relatedWords": []
     },
-    "multivagantmultivagous": {
+    "multivagant": {
+      "word": "MULTIVAGANT; MULTIVAGOUS",
+      "definitions": [
+        {
+          "text": "Wandering much. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "multivagous": {
       "word": "MULTIVAGANT; MULTIVAGOUS",
       "definitions": [
         {
@@ -2815,11 +2983,23 @@
         {
           "text": "Any mollusk which has a shell composed of more than two pieces.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Having many valves.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Many-valved; having more than two valves; -- said of certain shells, as the chitons.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "multivalvemultivalvular": {
+    "multivalvular": {
       "word": "MULTIVALVE; MULTIVALVULAR",
       "definitions": [
         {
@@ -2983,6 +3163,16 @@
         {
           "text": "One who mumbles.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mumbling": {
+      "word": "MUMBLING",
+      "definitions": [
+        {
+          "text": "Low; indistinct; inarticulate.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3191,6 +3381,16 @@
       ],
       "relatedWords": []
     },
+    "mumpish": {
+      "word": "MUMPISH",
+      "definitions": [
+        {
+          "text": "Sullen, sulky.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "mumps": {
       "word": "MUMPS",
       "definitions": [
@@ -3267,7 +3467,7 @@
       "word": "MUNDANE",
       "definitions": [
         {
-          "text": "Of or pertaining to the world; worldly; earthly; terrestrial;",
+          "text": "Of or pertaining to the world; worldly; earthly; terrestrial; as, the mundane sphere. The defilement of mundane passions. I. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3461,7 +3661,17 @@
       ],
       "relatedWords": []
     },
-    "mungoosemungoos": {
+    "mungoose": {
+      "word": "MUNGOOSE; MUNGOOS",
+      "definitions": [
+        {
+          "text": "See Mongoose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "mungoos": {
       "word": "MUNGOOSE; MUNGOOS",
       "definitions": [
         {
@@ -3573,7 +3783,7 @@
       "word": "MUNIFICENT",
       "definitions": [
         {
-          "text": "Very liberal in giving or bestowing; lavish; as, a munificent",
+          "text": "Very liberal in giving or bestowing; lavish; as, a munificent benefactor.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3675,7 +3885,17 @@
       ],
       "relatedWords": []
     },
-    "muntinmunting": {
+    "muntin": {
+      "word": "MUNTIN; MUNTING",
+      "definitions": [
+        {
+          "text": "Same as Mullion; -- especially used in joiner's work.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "munting": {
       "word": "MUNTIN; MUNTING",
       "definitions": [
         {
@@ -3715,7 +3935,17 @@
       ],
       "relatedWords": []
     },
-    "muraenoidmurenoid": {
+    "muraenoid": {
+      "word": "MURAENOID; MURENOID",
+      "definitions": [
+        {
+          "text": "Like or pertaining to the genus Muræna, or family Murænidæ.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "murenoid": {
       "word": "MURAENOID; MURENOID",
       "definitions": [
         {
@@ -3743,7 +3973,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Resembling a wall; perpendicular or steep; as, a mural precipice. Mural circle (Astron.), a graduated circle, in the plane of the",
+          "text": "Resembling a wall; perpendicular or steep; as, a mural precipice. Mural circle (Astron.), a graduated circle, in the plane of the meridian, attached permanently to a perpendicular wall; -- used for measuring arcs of the meridian. See Circle, n., 3. indented so as to resemble a battlement, bestowed on him who first mounted the wall of a besieged place, and there lodged a standard.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3945,7 +4175,17 @@
       ],
       "relatedWords": []
     },
-    "muricatemuricated": {
+    "muricate": {
+      "word": "MURICATE; MURICATED",
+      "definitions": [
+        {
+          "text": "Formed with sharp points; full of sharp points or of pickles; covered, or roughened, as a surface, with sharp points or excrescences.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "muricated": {
       "word": "MURICATE; MURICATED",
       "definitions": [
         {
@@ -4119,6 +4359,16 @@
         {
           "text": "One who murmurs.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "murmuring": {
+      "word": "MURMURING",
+      "definitions": [
+        {
+          "text": "Uttering murmurs; making low sounds; complaining.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4883,6 +5133,18 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To think closely; to study in silence; to meditate. \"Thereon mused he.\" Chaucer. He mused upon some dangerous plot. Sir P. Sidney.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be absent in mind; to be so occupied in study or contemplation as not to observe passing scenes or things present; to be in a brown study. Daniel.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To wonder. [Obs.] Spenser. B. Jonson.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To think on; to meditate on. Come, then, expressive Silence, muse his praise. Thomson.",
           "partOfSpeech": "verb"
         },
@@ -4896,24 +5158,6 @@
         },
         {
           "text": "Wonder, or admiration. [Obs.] Spenser.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "mususmorsusmuzzlesnoutfrlmorsusabitingbitefr": {
-      "word": "musus, morsus, muzzle, snout, fr. L. morsus a biting, bite, fr.",
-      "definitions": [
-        {
-          "text": "To think closely; to study in silence; to meditate. \"Thereon mused he.\" Chaucer. He mused upon some dangerous plot. Sir P. Sidney.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To be absent in mind; to be so occupied in study or contemplation as not to observe passing scenes or things present; to be in a brown study. Daniel.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To wonder. [Obs.] Spenser. B. Jonson.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5469,7 +5713,17 @@
       ],
       "relatedWords": []
     },
-    "musrolemusrol": {
+    "musrole": {
+      "word": "MUSROLE; MUSROL",
+      "definitions": [
+        {
+          "text": "The nose band of a horse's bridle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "musrol": {
       "word": "MUSROLE; MUSROL",
       "definitions": [
         {
@@ -6041,7 +6295,17 @@
       ],
       "relatedWords": []
     },
-    "muticmuticous": {
+    "mutic": {
+      "word": "MUTIC; MUTICOUS",
+      "definitions": [
+        {
+          "text": "Without a point or pointed process; blunt.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "muticous": {
       "word": "MUTIC; MUTICOUS",
       "definitions": [
         {
@@ -6149,7 +6413,7 @@
       "word": "MUTINOUS",
       "definitions": [
         {
-          "text": "Disposed to mutiny; in a state of mutiny; characterized by mutiny; seditious; insubordinate.",
+          "text": "Disposed to mutiny; in a state of mutiny; characterized by mutiny; seditious; insubordinate. The city was becoming mutinous. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6415,7 +6679,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A fastening or covering (as a band or cage) for the mouth of an animal, to prevent eating or vicious biting.",
+          "text": "A fastening or covering (as a band or cage) for the mouth of an animal, to prevent eating or vicious biting. With golden muzzles all their mouths were bound Dryden. Muzzle sight. (Gun.) See Dispart, n., 2.",
           "partOfSpeech": "noun"
         },
         {

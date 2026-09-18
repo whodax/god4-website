@@ -309,7 +309,7 @@
       "word": "EXPANSIBLE",
       "definitions": [
         {
-          "text": "Capable of being expanded or spread out widely.",
+          "text": "Capable of being expanded or spread out widely. Bodies are not expansible in proposition to their weight. Ex*pab\"si*ble*ness ,n. -Ex*pan\"si*bly ,adv.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -602,7 +602,7 @@
       "word": "EXPANSIVE",
       "definitions": [
         {
-          "text": "Having a capacity or tendency to expand or dilate; diffusive; of much expanse; wide-extending; as, the expansive force of heat; the expansive quality of air. A more expansive and generous compassion. Eustace.",
+          "text": "Having a capacity or tendency to expand or dilate; diffusive; of much expanse; wide-extending; as, the expansive force of heat; the expansive quality of air. A more expansive and generous compassion. Eustace. His forehead was broad and expansive. Prescott.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1092,7 +1092,21 @@
       ],
       "relatedWords": []
     },
-    "expectanceexpectancy": {
+    "expectance": {
+      "word": "EXPECTANCE; EXPECTANCY",
+      "definitions": [
+        {
+          "text": "The act of expecting ; expectation. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is expected, or looked or waited for with interest; the object of expectation or hope. The expectancy and rose of the fair state. Shak. Estate in expectancy (Law), one the possession of which a person is entitled to have at some future time, either as a remainder or reversion, or on the death of some one. Burrill.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "expectancy": {
       "word": "EXPECTANCE; EXPECTANCY",
       "definitions": [
         {
@@ -1464,7 +1478,7 @@
       ],
       "relatedWords": []
     },
-    "expedienceexpediency": {
+    "expedience": {
       "word": "EXPEDIENCE; EXPEDIENCY",
       "definitions": [
         {
@@ -1480,7 +1494,109 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "advantageousness",
+        "agreeableness",
+        "appropriateness",
+        "auspiciousness",
+        "beneficialness",
+        "benevolence",
+        "benignity",
+        "chargedness",
+        "class",
+        "cogency",
+        "convenience",
+        "criticality",
+        "crucialness",
+        "desert",
+        "excellence",
+        "fairness",
+        "favorableness",
+        "felicitousness",
+        "fineness",
+        "first-rateness",
+        "fitness",
+        "fittingness",
+        "goodliness",
+        "goodness",
+        "grace",
+        "healthiness",
+        "helpfulness",
+        "kindness",
+        "loadedness",
+        "meetness",
+        "merit",
+        "niceness",
+        "opportuneness",
+        "pleasantness",
+        "pregnancy",
+        "profitableness",
+        "propitiousness",
+        "propriety",
+        "quality",
+        "rewardingness",
+        "rightness",
+        "ripeness",
+        "seasonableness",
+        "skillfulness",
+        "soundness",
+        "suitability",
+        "superiority",
+        "timeliness",
+        "usefulness",
+        "validity",
+        "value",
+        "virtue",
+        "virtuousness",
+        "wholeness",
+        "worth"
+      ]
+    },
+    "expediency": {
+      "word": "EXPEDIENCE; EXPEDIENCY",
+      "definitions": [
+        {
+          "text": "The quality of being expedient or advantageous; fitness or suitableness to effect a purpose intended; adaptedness to self- interest; desirableness; advantage; advisability; -- sometimes contradistinguished from moral rectitude. Divine wisdom discovers no expediency in vice. Cogan. To determine concerning the expedience of action. Sharp. Much declamation may be heard in the present day against expediency, as if it were not the proper object of a deliberative assembly, and as if it were only pursued by the unprincipled. Whately.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Expedition; haste; dispatch. [Obs.] Making hither with all due expedience. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An expedition; enterprise; adventure. [Obs.] Forwarding this dear expedience. Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "appositeness",
+        "appropriateness",
+        "aptness",
+        "careworn",
+        "convenience",
+        "dernier ressort",
+        "design",
+        "expedient",
+        "fitness",
+        "makeshift",
+        "measure",
+        "meetness",
+        "order",
+        "propitiousness",
+        "propriety",
+        "recourse",
+        "resort",
+        "rightness",
+        "shift",
+        "step",
+        "stopgap",
+        "strategy",
+        "substitute",
+        "suitability",
+        "suitableness",
+        "surrogate",
+        "tactic"
+      ]
     },
     "expedient": {
       "word": "EXPEDIENT",
@@ -2036,7 +2152,7 @@
       "word": "EXPEDITIOUS",
       "definitions": [
         {
-          "text": "Possessed of, or characterized by, expedition, or efficiency and rapidity in action; performed with, or acting with, expedition; quick; having celerity; speedily; as, an expeditious march or",
+          "text": "Possessed of, or characterized by, expedition, or efficiency and rapidity in action; performed with, or acting with, expedition; quick; having celerity; speedily; as, an expeditious march or messenger.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3046,7 +3162,7 @@
       "word": "EXPERIENTIAL",
       "definitions": [
         {
-          "text": "Derived from, or pertaining to, experience. Coleridge. It is called empirical or experiential . . . because it is divan to us by experience or observation, and not obtained as the result of",
+          "text": "Derived from, or pertaining to, experience. Coleridge. It is called empirical or experiential . . . because it is divan to us by experience or observation, and not obtained as the result of inference or reasoning. Sir. W. Hamiltion.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4638,7 +4754,17 @@
         "scholiastic"
       ]
     },
-    "explatexplate": {
+    "explat": {
+      "word": "EXPLAT; EXPLATE",
+      "definitions": [
+        {
+          "text": "To explain; to unfold. [Obs.] Like Solon's self explatest the knotty laws. B. Jonson.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "explate": {
       "word": "EXPLAT; EXPLATE",
       "definitions": [
         {
@@ -4959,6 +5085,10 @@
       "word": "EXPLICIT",
       "definitions": [
         {
+          "text": "A word formerly used (as finis is now) at the conclusion of a book to indicate the end.",
+          "partOfSpeech": ""
+        },
+        {
           "text": "Not implied merely, or conveyed by implication; distinctly stated; plain in language; open to the understanding; clear; not obscure or ambiguous; express; unequivocal; as, an explicit declaration. The language of the charter was too explicit to admit of a doubt. Bancroft.",
           "partOfSpeech": "adjective"
         },
@@ -5260,7 +5390,11 @@
       "word": "EXPLODENT",
       "definitions": [
         {
-          "text": "An instrument or agent causing explosion; an exploder; also, an",
+          "text": "An instrument or agent causing explosion; an exploder; also, an explosive.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Explosive, n., 2.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7109,7 +7243,7 @@
       ],
       "relatedWords": []
     },
-    "expostfactoexpostfacto": {
+    "expostfacto": {
       "word": "EXPOST FACTO; EXPOSTFACTO",
       "definitions": [
         {
@@ -7121,7 +7255,30 @@
           "partOfSpeech": ""
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "a priori",
+        "after",
+        "after all",
+        "after that",
+        "afterwards",
+        "back",
+        "backward",
+        "early",
+        "in the aftermath",
+        "in the sequel",
+        "into the past",
+        "later",
+        "next",
+        "retroactive",
+        "retrospective",
+        "since",
+        "subsequently",
+        "then",
+        "thereafter",
+        "thereon",
+        "thereupon",
+        "therewith"
+      ]
     },
     "expostulate": {
       "word": "EXPOSTULATE",
@@ -7571,7 +7728,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Intended for a particular purpose; relating to an express; sent on a particular errand; dispatched with special speed; as, an express messenger or train. Also used adverbially.",
+          "text": "Intended for a particular purpose; relating to an express; sent on a particular errand; dispatched with special speed; as, an express messenger or train. Also used adverbially. A messenger sent express from the other world. Atterbury. Express color. (Law) See the Note under Color, n., 8.",
           "partOfSpeech": "adjective"
         },
         {
@@ -8193,7 +8350,7 @@
       "word": "EXPRESSIBLE",
       "definitions": [
         {
-          "text": "Capable of being expressed, squeezed out, shown, represented,",
+          "text": "Capable of being expressed, squeezed out, shown, represented, or uttered.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8614,7 +8771,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Full of expression; vividly representing the meaning or feeling meant to be conveyed; significant; emphatic; as, expressive looks or words. You have restrained yourself within the list of too cold an adieu; be more expressive to them. Shak.",
+          "text": "Full of expression; vividly representing the meaning or feeling meant to be conveyed; significant; emphatic; as, expressive looks or words. You have restrained yourself within the list of too cold an adieu; be more expressive to them. Shak. Through her expressive eyes her soul distinctly spoke. Littelton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8901,7 +9058,17 @@
       ],
       "relatedWords": []
     },
-    "exprobrativeexprobratory": {
+    "exprobrative": {
+      "word": "EXPROBRATIVE; EXPROBRATORY",
+      "definitions": [
+        {
+          "text": "Expressing reproach; upbraiding; reproachful. [R.] Sir A. Shirley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exprobratory": {
       "word": "EXPROBRATIVE; EXPROBRATORY",
       "definitions": [
         {

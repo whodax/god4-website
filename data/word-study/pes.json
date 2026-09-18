@@ -81,7 +81,17 @@
       ],
       "relatedWords": []
     },
-    "peshitopeshitto": {
+    "peshito": {
+      "word": "PESHITO; PESHITTO",
+      "definitions": [
+        {
+          "text": "The earliest Syriac version of the Old Testament, translated from Hebrew; also, the incomplete Syriac version of the New Testament. [Written also peschito.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "peshitto": {
       "word": "PESHITO; PESHITTO",
       "definitions": [
         {
@@ -143,6 +153,20 @@
         {
           "text": "One who looks on the dark side of things.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to pessimism; characterized by pessimism; gloomy; foreboding. \"Giving utterance to pessimistic doubt.\" Encyc. Brit.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pessimistic": {
+      "word": "PESSIMIST; PESSIMISTIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pessimism; characterized by pessimism; gloomy; foreboding. \"Giving utterance to pessimistic doubt.\" Encyc. Brit.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -152,16 +176,6 @@
       "definitions": [
         {
           "text": "Pessimistic.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pessimistpessimistic": {
-      "word": "PESSIMIST; PESSIMISTIC",
-      "definitions": [
-        {
-          "text": "Of or pertaining to pessimism; characterized by pessimism; gloomy; foreboding. \"Giving utterance to pessimistic doubt.\" Encyc. Brit.",
           "partOfSpeech": "adjective"
         }
       ],

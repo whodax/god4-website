@@ -761,11 +761,31 @@
       ],
       "relatedWords": []
     },
+    "reintroduce": {
+      "word": "REINTRODUCE",
+      "definitions": [
+        {
+          "text": "To introduce again.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "reinvest": {
       "word": "REINVEST",
       "definitions": [
         {
           "text": "To invest again or anew.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "reinvestigate": {
+      "word": "REINVESTIGATE",
+      "definitions": [
+        {
+          "text": "To investigate again.",
           "partOfSpeech": "verb"
         }
       ],

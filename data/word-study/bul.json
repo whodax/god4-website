@@ -357,6 +357,22 @@
       "word": "BULGE",
       "definitions": [
         {
+          "text": "The bilge or protuberant part of a cask.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A swelling, protuberant part; a bending outward, esp. when caused by pressure; as, a bulge in a wall.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The bilge of a vessel. See Bilge, 2. Bulge ways. (Naut.) See Bilge ways.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To swell or jut out; to bend outward, as a wall when it yields to pressure; to be protuberant; as, the wall bulges.",
           "partOfSpeech": "verb"
         },
@@ -502,7 +518,7 @@
       ],
       "relatedWords": []
     },
-    "bulimiabulimy": {
+    "bulimia": {
       "word": "BULIMIA; BULIMY",
       "definitions": [
         {
@@ -522,9 +538,39 @@
       ],
       "relatedWords": []
     },
+    "bulimy": {
+      "word": "BULIMIA; BULIMY",
+      "definitions": [
+        {
+          "text": "A disease in which there is a perpetual and insatiable appetite for food; a diseased and voracious appetite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "bulk": {
       "word": "BULK",
       "definitions": [
+        {
+          "text": "Magnitude of material substance; dimensions; mass; size; as, an ox or ship of great bulk. Against these forces there were prepared near one hundred ships; not so great of bulk indeed, but of a more nimble motion, and more serviceable. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The main mass or body; the largest or principal portion; the majority; as, the bulk of a debt. The bulk of the people must labor, Burke told them, \"to obtain what by labor can be obtained.\" J. Morley.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The cargo of a vessel when stowed.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The body. [Obs.] Shak. My liver leaped within my bulk. Turbervile. Barrel bulk. See under Barrel. divided into separate parts; in such shape that any desired quantity may be taken or sold. or not inclosed in boxes, bales, or casks. measure. massiveness.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To appear or seem to be, as to bulk or extent; to swell. The fame of Warburton possibly bulked larger for the moment. Leslie Stephen.",
           "partOfSpeech": "verb"
@@ -1055,6 +1101,10 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "One who operates in expectation of a rise in the price of stocks, or in order to effect such a rise. See 4th Bear, n., 5. Bull baiting, the practice of baiting bulls, or rendering them furious, as by setting dogs to attack them. an Englishman. \"Good-looking young John Bull.\" W. D.Howells. instead of avoiding it.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Of or pertaining to a bull; resembling a bull; male; large; fierce. Bull bat (Zoöl.), the night hawk; -- so called from the loud noise it makes while feeding on the wing, in the evening. which the steam cylinder is placed above the pump. lifting heavy articles, as logs, the tools in well boring, etc.",
           "partOfSpeech": "adjective"
         },
@@ -1063,8 +1113,20 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To endeavor to raise the market price of; as, to bull railroad",
+          "text": "To endeavor to raise the market price of; as, to bull railroad bonds; to bull stocks; to bull Lake Shore; to endeavor to raise prices in; as, to bull the market. See 1st Bull, n., 4.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A seal. See Bulla.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A letter, edict, or respect, of the pope, written in Gothic characters on rough parchment, sealed with a bulla, and dated \"a die Incarnationis,\" i. e., \"from the day of the Incarnation.\" See Apostolical brief, under Brief. A fresh bull of Leo's had declared how inflexible the court of Rome was in the point of abuses. Atterbury.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A grotesque blunder in language; an apparent congruity, but real incongruity, of ideas, contained in a form of expression; so called, perhaps, from the apparent incongruity between the dictatorial nature of the pope's bulls and his professions of humility. And whereas the papist boasts himself to be a Roman Catholic, it is a mere contradiction, one of the pope's bulls, as if he should say universal particular; a Catholic schimatic. Milton. The Golden Bull, an edict or imperial constitution made by the emperor Charles IV. (1356), containing what became the fundamental law of the German empire; -- so called from its golden seal.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -2041,11 +2103,71 @@
       ],
       "relatedWords": []
     },
-    "bullfightbullfighting": {
+    "bullfice": {
+      "word": "BULLFIST; BULLFICE",
+      "definitions": [
+        {
+          "text": "A kind of fungus. See Puffball.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bullfight": {
       "word": "BULLFIGHT; BULLFIGHTING",
       "definitions": [
         {
-          "text": "A barbarous sport, of great antiquity, in which men torment, and fight with, a bull or bulls in an arena, for public amusement, --",
+          "text": "A barbarous sport, of great antiquity, in which men torment, and fight with, a bull or bulls in an arena, for public amusement, -- still popular in Spain.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "action",
+        "aerial combat",
+        "affray",
+        "armored combat",
+        "battle",
+        "battle royal",
+        "brush",
+        "clash",
+        "clash of arms",
+        "cockfight",
+        "combat",
+        "conflict",
+        "dogfight",
+        "embroilment",
+        "exchange of blows",
+        "fight",
+        "fire fight",
+        "fray",
+        "ground combat",
+        "hand-to-hand combat",
+        "hand-to-hand fight",
+        "house-to-house combat",
+        "naval combat",
+        "passage of arms",
+        "pitched battle",
+        "quarrel",
+        "rumble",
+        "running fight",
+        "scramble",
+        "scrimmage",
+        "scuffle",
+        "shoving match",
+        "skirmish",
+        "stand-up fight",
+        "street fight",
+        "struggle",
+        "tauromachy",
+        "tug-of-war",
+        "tussle"
+      ]
+    },
+    "bullfighting": {
+      "word": "BULLFIGHT; BULLFIGHTING",
+      "definitions": [
+        {
+          "text": "A barbarous sport, of great antiquity, in which men torment, and fight with, a bull or bulls in an arena, for public amusement, -- still popular in Spain.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2061,7 +2183,7 @@
       ],
       "relatedWords": []
     },
-    "bullfistbullfice": {
+    "bullfist": {
       "word": "BULLFIST; BULLFICE",
       "definitions": [
         {
@@ -2071,7 +2193,7 @@
       ],
       "relatedWords": []
     },
-    "bullflybullfly": {
+    "bullfly": {
       "word": "BULL FLY; BULLFLY",
       "definitions": [
         {
@@ -2413,6 +2535,10 @@
         {
           "text": "To act as a bully.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Pickled or canned beef.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": [
@@ -2694,7 +2820,7 @@
         "wrangler"
       ]
     },
-    "bullybullybeef": {
+    "bullybeef": {
       "word": "BULLY; BULLY BEEF",
       "definitions": [
         {

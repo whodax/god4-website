@@ -150,7 +150,17 @@
       ],
       "relatedWords": []
     },
-    "dioeciandioecious": {
+    "dioecian": {
+      "word": "DIOECIAN; DIOECIOUS",
+      "definitions": [
+        {
+          "text": "Having the sexes in applied to plants in which the female flowers occur on one individual and the male flowers on another of the same species, and to animals in which the ovum is produced by one individual and the sperm cell by another; -- opposed to monoecious.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dioecious": {
       "word": "DIOECIAN; DIOECIOUS",
       "definitions": [
         {
@@ -290,7 +300,17 @@
       ],
       "relatedWords": []
     },
-    "diopterdioptra": {
+    "diopter": {
+      "word": "DIOPTER; DIOPTRA",
+      "definitions": [
+        {
+          "text": "An optical instrument, invented by Hipparchus, for taking altitudes, leveling, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dioptra": {
       "word": "DIOPTER; DIOPTRA",
       "definitions": [
         {
@@ -320,11 +340,15 @@
         {
           "text": "A dioptre. See Dioptre.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to dioptrics; assisting vision by means of the refraction of light; refractive; as, the dioptric system; a dioptric glass or telescope. \"Dioptrical principles.\" Nichol. Dioptric curve (Geom.), a Cartesian oval. See under Cartesian.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "dioptricdioptrical": {
+    "dioptrical": {
       "word": "DIOPTRIC; DIOPTRICAL",
       "definitions": [
         {

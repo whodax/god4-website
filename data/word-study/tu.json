@@ -1,46 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "tulkotitointerpretrusstolkovatetointerprettotalkabout": {
-      "word": "tulkoti, to interpret, Russ. tolkovate to interpret, to talk about;",
-      "definitions": [
-        {
-          "text": "To utter words; esp., to converse familiarly; to speak, as in familiar discourse, when two or more persons interchange thoughts. I will buy with you, sell with you, talk with you, walk with you, and so following, but I will not eat with you. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To confer; to reason; to consult. Let me talk with thee of thy judgments. Jer. xii. 1.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To prate; to speak impertinently. [Colloq.] To talk of, to relate; to tell; to give an account of; as, authors talk of the wonderful remains of Palmyra. \"The natural histories of Switzerland talk much of the fall of these rocks, and the great damage done.\" Addison. talk to my son respecting his conduct. [Colloq.]",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "turnonalatheandperhapstoequeercfcontortdistort": {
-      "word": "turn on a lathe, and perhaps to E. queer. Cf. Contort, Distort,",
-      "definitions": [
-        {
-          "text": "Extreme pain; anguish of body or mind; pang; agony; torment; as, torture of mind. Shak. Ghastly spasm or racking torture. Milton.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Especially, severe pain inflicted judicially, either as punishment for a crime, or for the purpose of extorting a confession from an accused person, as by water or fire, by the boot or thumbkin, or by the rack or wheel.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The act or process of torturing. Torture, whitch had always been deciared illegal, and which had recently been declared illegal even by the servile judges of that age, was inflicted for the last time in England in the month of May,",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Macaulay.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "tuatara": {
       "word": "TUATARA",
       "definitions": [
@@ -271,7 +231,17 @@
       ],
       "relatedWords": []
     },
-    "tuberculatetuberculated": {
+    "tuberculate": {
+      "word": "TUBERCULATE; TUBERCULATED",
+      "definitions": [
+        {
+          "text": "Tubercled; tubercular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tuberculated": {
       "word": "TUBERCULATE; TUBERCULATED",
       "definitions": [
         {
@@ -331,7 +301,17 @@
       ],
       "relatedWords": []
     },
-    "tuberculosetuberculous": {
+    "tuberculose": {
+      "word": "TUBERCULOSE; TUBERCULOUS",
+      "definitions": [
+        {
+          "text": "Having tubercles; affected with, or characterized by, tubercles; tubercular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tuberculous": {
       "word": "TUBERCULOSE; TUBERCULOUS",
       "definitions": [
         {
@@ -418,6 +398,10 @@
         },
         {
           "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Consisting of, or bearing, tubers; resembling a tuber.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -789,7 +773,21 @@
       ],
       "relatedWords": []
     },
-    "tubulosetubulous": {
+    "tubulose": {
+      "word": "TUBULOSE; TUBULOUS",
+      "definitions": [
+        {
+          "text": "Resembling, or in the form of, a tube; longitudinally hollow; specifically (Bot.), having a hollow cylindrical corolla, often expanded or toothed at the border; as, a tubulose flower.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Containing, or consisting of, small tubes; specifically (Bot.), composed wholly of tubulous florets; as, a tubulous compound flower. Tubulous boiler, a steam boiler composed chiefly of tubes containing water and surrounded by flame and hot gases; -- sometimes distinguished from tubular boiler.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tubulous": {
       "word": "TUBULOSE; TUBULOUS",
       "definitions": [
         {
@@ -923,7 +921,15 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A narrow piece of linen or the like, folded across the breast, or attached to the gown at the neck, forming a part of a woman's dress",
+          "text": "A narrow piece of linen or the like, folded across the breast, or attached to the gown at the neck, forming a part of a woman's dress in the 17th century and later.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [See Tuck, v. t., 4.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A fuller. [Prov. Eng.]",
           "partOfSpeech": "noun"
         },
         {
@@ -1178,6 +1184,14 @@
     "tug": {
       "word": "TUG",
       "definitions": [
+        {
+          "text": "To pull or draw with great effort; to draw along with continued exertion; to haul along; to tow; as, to tug a loaded cart; to tug a ship into port. There sweat, there strain, tug the laborious oar. Roscommon.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To pull; to pluck. [Obs.] To ease the pain, His tugged cars suffered with a strain. Hudibras.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To pull with great effort; to strain in labor; as, to tug at the oar; to tug against the stream. He tugged, he shook, till down they came. Milton.",
           "partOfSpeech": "verb"
@@ -1561,7 +1575,43 @@
       ],
       "relatedWords": []
     },
-    "tumbreltumbril": {
+    "tumbling": {
+      "word": "TUMBLING",
+      "definitions": [
+        {
+          "text": "a. & vb. n. from Tumble, v. Tumbling barrel. Same as Rumble, n., 4.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "tumbrel": {
+      "word": "TUMBREL; TUMBRIL",
+      "definitions": [
+        {
+          "text": "A cucking stool for the punishment of scolds.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A rough cart. Tusser. Tatler.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A cart or carriage with two wheels, which accompanies troops or artillery, to convey the tools of pioneers, cartridges, and the like.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A kind of basket or cage of osiers, willows, or the like, to hold hay and other food for sheep. [Eng.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "tumbril": {
       "word": "TUMBREL; TUMBRIL",
       "definitions": [
         {
@@ -1653,7 +1703,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Swelling in sound or sense; pompous; puffy; inflated; bombastic;",
+          "text": "Swelling in sound or sense; pompous; puffy; inflated; bombastic; falsely sublime; turgid; as, a tumid expression; a tumid style.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1915,7 +1965,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Turbulent; violent; as, a tumultuous speech.",
+          "text": "Turbulent; violent; as, a tumultuous speech. agitated; disturbed; boisterous; lawless; riotous; seditious.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1995,7 +2045,7 @@
       "word": "TUNABLE",
       "definitions": [
         {
-          "text": "Capable of being tuned, or made harmonious; hence, harmonious;",
+          "text": "Capable of being tuned, or made harmonious; hence, harmonious; musical; tuneful. And tunable as sylvan pipe or song. Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2299,7 +2349,7 @@
       ],
       "relatedWords": []
     },
-    "tunicatetunicated": {
+    "tunicate": {
       "word": "TUNICATE; TUNICATED",
       "definitions": [
         {
@@ -2313,16 +2363,28 @@
         {
           "text": "(Zoöl.) (a) Having a tunic, or mantle; of or pertaining to the Tunicata. (b) Having each joint buried in the preceding funnel-shaped one, as in certain antennæ of insects.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the Tunicata.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "tunicate": {
-      "word": "TUNICATE",
+    "tunicated": {
+      "word": "TUNICATE; TUNICATED",
       "definitions": [
         {
-          "text": "One of the Tunicata.",
-          "partOfSpeech": "noun"
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Covered with a tunic; covered or coated with layers; as, a tunicated bulb.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.) (a) Having a tunic, or mantle; of or pertaining to the Tunicata. (b) Having each joint buried in the preceding funnel-shaped one, as in certain antennæ of insects.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2805,11 +2867,39 @@
         {
           "text": "To revolve or spin like a top; to whirl. [R.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Whirling in the manner of a top. A spiral and turbinated motion of the whole. Bentley.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Shaped like a top, or inverted cone; narrow at the base, and broad at the apex; as, a turbinated ovary, pericarp, or root.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Turbinal.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Spiral with the whorls decreasing rapidly from a large base to a pointed apex; -- said of certain shells.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "turbinateturbinated": {
+    "turbinated": {
       "word": "TURBINATE; TURBINATED",
       "definitions": [
         {
@@ -3191,7 +3281,21 @@
       ],
       "relatedWords": []
     },
-    "turgescenceturgescency": {
+    "turgescence": {
+      "word": "TURGESCENCE; TURGESCENCY",
+      "definitions": [
+        {
+          "text": "The act of swelling, or the state of being swollen, or turgescent. Sir T. Browne.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Empty magnificence or pompousness; inflation; bombast; turgidity. Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "turgescency": {
       "word": "TURGESCENCE; TURGESCENCY",
       "definitions": [
         {
@@ -3223,7 +3327,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Swelling in style or language; vainly ostentatious; bombastic;",
+          "text": "Swelling in style or language; vainly ostentatious; bombastic; pompous; as, a turgid style of speaking.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3387,7 +3491,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "The language spoken by Turks, esp. that of the people of",
+          "text": "The language spoken by Turks, esp. that of the people of Turkey.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3903,7 +4007,7 @@
       "word": "TURNIX",
       "definitions": [
         {
-          "text": "Any one of numerous species of birds belonging to Turnix or Hemipodius and allied genera of the family Turnicidæ. These birds resemble quails and partridges in general appearance and in some of their habits, but differ in important anatomical characteristics. The hind toe is usually lacking. They are found in Asia, Africa, Southern",
+          "text": "Any one of numerous species of birds belonging to Turnix or Hemipodius and allied genera of the family Turnicidæ. These birds resemble quails and partridges in general appearance and in some of their habits, but differ in important anatomical characteristics. The hind toe is usually lacking. They are found in Asia, Africa, Southern Europe, the East Indian Islands, and esp. in Australia and adjacent islands, where they are called quails (see Quail, n., 3.). See Turnicimorphæ.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4069,7 +4173,11 @@
       "word": "TURNSTILE",
       "definitions": [
         {
-          "text": "A revolving frame in a footpath, preventing the passage of horses",
+          "text": "A revolving frame in a footpath, preventing the passage of horses or cattle, but admitting that of persons; a turnpike. See Turnpike, n., 1.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A similar arrangement for registering the number of persons passing through a gateway, doorway, or the like.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4187,22 +4295,26 @@
       ],
       "relatedWords": []
     },
-    "turquoiseturquois": {
+    "turquoise": {
       "word": "TURQUOISE; TURQUOIS",
       "definitions": [
         {
           "text": "A hydrous phosphate of alumina containing a little copper; calaite. It has a blue, or bluish green, color, and usually occurs in reniform masses with a botryoidal surface. [Formerly written also turcois, and turkois.] blue color is much esteemed as a gem. The finest specimens come from Persia. It is also found in New Mexico and Arizona, and is regarded as identical with the chalchihuitl of the Mexicans.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Having a fine light blue color, like that of choice mineral turquoise.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "turquoise": {
-      "word": "TURQUOISE",
+    "turquois": {
+      "word": "TURQUOISE; TURQUOIS",
       "definitions": [
         {
-          "text": "Having a fine light blue color, like that of choice mineral turquoise.",
-          "partOfSpeech": "adjective"
+          "text": "A hydrous phosphate of alumina containing a little copper; calaite. It has a blue, or bluish green, color, and usually occurs in reniform masses with a botryoidal surface. [Formerly written also turcois, and turkois.] blue color is much esteemed as a gem. The finest specimens come from Persia. It is also found in New Mexico and Arizona, and is regarded as identical with the chalchihuitl of the Mexicans.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -4309,7 +4421,17 @@
       ],
       "relatedWords": []
     },
-    "turriculateturriculated": {
+    "turriculate": {
+      "word": "TURRICULATE; TURRICULATED",
+      "definitions": [
+        {
+          "text": "Furnished with, or formed like, a small turret or turrets; somewhat turreted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "turriculated": {
       "word": "TURRICULATE; TURRICULATED",
       "definitions": [
         {
@@ -4505,7 +4627,17 @@
       ],
       "relatedWords": []
     },
-    "tuschetushetousche": {
+    "tusche": {
+      "word": "TUSCHE; TUSHE; TOUSCHE",
+      "definitions": [
+        {
+          "text": "A lithographic drawing or painting material of the same nature as lithographic ink. It is also used as a resistant in the biting-in process.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tushe": {
       "word": "TUSCHE; TUSHE; TOUSCHE",
       "definitions": [
         {
@@ -4627,7 +4759,17 @@
       ],
       "relatedWords": []
     },
-    "tussahtusseh": {
+    "tussah": {
+      "word": "TUSSAH; TUSSEH",
+      "definitions": [
+        {
+          "text": "An undomesticated East Indian silkworn (Antheræa mylitta), that feeds on the leaves of the oak and other plants.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tusseh": {
       "word": "TUSSAH; TUSSEH",
       "definitions": [
         {
@@ -4769,7 +4911,17 @@
       ],
       "relatedWords": []
     },
-    "tutelartutelary": {
+    "tutelar": {
+      "word": "TUTELAR; TUTELARY",
+      "definitions": [
+        {
+          "text": "Having the guardianship or charge of protecting a person or a thing; guardian; protecting; as, tutelary goddesses. This, of all advantages, is the greatest . . . the most tutelary of morals. Landor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tutelary": {
       "word": "TUTELAR; TUTELARY",
       "definitions": [
         {
@@ -4991,7 +5143,7 @@
       ],
       "relatedWords": []
     },
-    "tuwhittuwhoo": {
+    "tuwhit": {
       "word": "TU-WHIT; TU-WHOO",
       "definitions": [
         {
@@ -5001,7 +5153,27 @@
       ],
       "relatedWords": []
     },
-    "tuxedocoattuxedo": {
+    "tuwhoo": {
+      "word": "TU-WHIT; TU-WHOO",
+      "definitions": [
+        {
+          "text": "Words imitative of the notes of the owl. Thy tu-whits are lulled, I wot, Thy tu-whoos of yesternight. Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tuxedocoat": {
+      "word": "TUXEDO COAT; TUXEDO",
+      "definitions": [
+        {
+          "text": "A kind of black coat for evening dress made without skirts; -- so named after a fashionable country club at Tuxedo Park, New York. [U. S.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tuxedo": {
       "word": "TUXEDO COAT; TUXEDO",
       "definitions": [
         {

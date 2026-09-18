@@ -822,7 +822,7 @@
       "word": "DISADVANTAGEOUS",
       "definitions": [
         {
-          "text": "Attended with disadvantage; unfavorable to success or prosperity; inconvenient; prejudicial; -- opposed to advantageous; as, the situation of an army is disadvantageous for attack or defense. Even in the disadvantageous position in which he had been placed, he",
+          "text": "Attended with disadvantage; unfavorable to success or prosperity; inconvenient; prejudicial; -- opposed to advantageous; as, the situation of an army is disadvantageous for attack or defense. Even in the disadvantageous position in which he had been placed, he gave clear indications of future excellence. Prescott.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -925,6 +925,47 @@
         }
       ],
       "relatedWords": []
+    },
+    "disaffected": {
+      "word": "DISAFFECTED",
+      "definitions": [
+        {
+          "text": "Alienated in feeling; not wholly loyal. J. H. Newman.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "alienated",
+        "allergic",
+        "averse",
+        "derelict",
+        "disenchanted",
+        "disinclined",
+        "disloyal",
+        "displeased",
+        "disunited",
+        "divided",
+        "estranged",
+        "faithless",
+        "false",
+        "fickle",
+        "hostile",
+        "inconstant",
+        "irreconcilable",
+        "not charmed",
+        "not true to",
+        "of bad faith",
+        "put off",
+        "recreant",
+        "separated",
+        "torn",
+        "trothless",
+        "unfaithful",
+        "unfriendly",
+        "unloyal",
+        "unsteadfast",
+        "untrue"
+      ]
     },
     "disaffection": {
       "word": "DISAFFECTION",
@@ -1850,6 +1891,16 @@
         "withhold"
       ]
     },
+    "disallowable": {
+      "word": "DISALLOWABLE",
+      "definitions": [
+        {
+          "text": "Not allowable; not to be suffered. Raleigh.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "disallowance": {
       "word": "DISALLOWANCE",
       "definitions": [
@@ -2484,6 +2535,16 @@
         "unspelling",
         "vexation of spirit"
       ]
+    },
+    "disappreciate": {
+      "word": "DISAPPRECIATE",
+      "definitions": [
+        {
+          "text": "To undervalue; not to esteem.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
     },
     "disapprobation": {
       "word": "DISAPPROBATION",
@@ -3163,6 +3224,67 @@
       ],
       "relatedWords": []
     },
+    "disarticulate": {
+      "word": "DISARTICULATE",
+      "definitions": [
+        {
+          "text": "To sunder; to separate, as joints.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": [
+        "abrupt",
+        "alienate",
+        "cast off",
+        "cast out",
+        "cut adrift",
+        "cut off",
+        "cut out",
+        "delete",
+        "depart",
+        "disarrange",
+        "disconnect",
+        "disengage",
+        "disjoin",
+        "disjoint",
+        "dislocate",
+        "displace",
+        "dissociate",
+        "disunite",
+        "divide",
+        "divorce",
+        "eject",
+        "estrange",
+        "expel",
+        "isolate",
+        "leave",
+        "luxate",
+        "part",
+        "pull away",
+        "pull back",
+        "pull out",
+        "segregate",
+        "separate",
+        "sequester",
+        "set apart",
+        "set aside",
+        "shut off",
+        "split",
+        "stand aloof",
+        "stand apart",
+        "stand aside",
+        "step aside",
+        "subtract",
+        "throw off",
+        "throw out",
+        "uncouple",
+        "unhinge",
+        "unjoint",
+        "unseat",
+        "unyoke",
+        "withdraw"
+      ]
+    },
     "disarticulator": {
       "word": "DISARTICULATOR",
       "definitions": [
@@ -3346,7 +3468,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Attended with suffering or disaster; very unfortunate; calamitous; ill-fated; as, a disastrous day; a disastrous termination of an undertaking.",
+          "text": "Attended with suffering or disaster; very unfortunate; calamitous; ill-fated; as, a disastrous day; a disastrous termination of an undertaking. Wherein I spake of most disastrous chances. Shak.",
           "partOfSpeech": "adjective"
         }
       ],

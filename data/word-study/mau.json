@@ -21,6 +21,16 @@
       ],
       "relatedWords": []
     },
+    "maudeline": {
+      "word": "MAUDLIN; MAUDELINE",
+      "definitions": [
+        {
+          "text": "An aromatic composite herb, the costmary; also, the South European Achillea Ageratum, a kind of yarrow.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "maudle": {
       "word": "MAUDLE",
       "definitions": [
@@ -41,6 +51,10 @@
         {
           "text": "Drunk, or somewhat drunk; fuddled; given to drunkenness. Maudlin Clarence in his malmsey butt. Byron.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An aromatic composite herb, the costmary; also, the South European Achillea Ageratum, a kind of yarrow.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -50,16 +64,6 @@
       "definitions": [
         {
           "text": "A maudlin state. Dickens.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "maudlinmaudeline": {
-      "word": "MAUDLIN; MAUDELINE",
-      "definitions": [
-        {
-          "text": "An aromatic composite herb, the costmary; also, the South European Achillea Ageratum, a kind of yarrow.",
           "partOfSpeech": "noun"
         }
       ],
@@ -75,7 +79,7 @@
       ],
       "relatedWords": []
     },
-    "maugermaugre": {
+    "mauger": {
       "word": "MAUGER; MAUGRE",
       "definitions": [
         {
@@ -86,8 +90,12 @@
       "relatedWords": []
     },
     "maugre": {
-      "word": "MAUGRE",
+      "word": "MAUGER; MAUGRE",
       "definitions": [
+        {
+          "text": "In spite of; in opposition to; notwithstanding. A man must needs love maugre his heed. Chaucer. This mauger all the world will I keep safe. Shak.",
+          "partOfSpeech": "preposition"
+        },
         {
           "text": "To defy. [Obs.] J. Webster.",
           "partOfSpeech": "verb"
@@ -195,13 +203,29 @@
         {
           "text": "An East Indian weight, varying in different localities from 25 to about 82 pounds avoirdupois.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To beg. [Obs.] B. Jonson. Beau. & Fl.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mutter; to mumble; to grumble; to speak indistinctly or disconnectedly; to talk incoherently. He was ever maundering by the how that he met a party of scarlet devils. Sir W. Scott.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
     "maunder": {
-      "word": "MAUNDER",
+      "word": "MAUND; MAUNDER",
       "definitions": [
+        {
+          "text": "To beg. [Obs.] B. Jonson. Beau. & Fl.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mutter; to mumble; to grumble; to speak indistinctly or disconnectedly; to talk incoherently. He was ever maundering by the how that he met a party of scarlet devils. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To utter in a grumbling manner; to mutter.",
           "partOfSpeech": "verb"
@@ -223,20 +247,6 @@
       ],
       "relatedWords": []
     },
-    "maundmaunder": {
-      "word": "MAUND; MAUNDER",
-      "definitions": [
-        {
-          "text": "To beg. [Obs.] B. Jonson. Beau. & Fl.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To mutter; to mumble; to grumble; to speak indistinctly or disconnectedly; to talk incoherently. He was ever maundering by the how that he met a party of scarlet devils. Sir W. Scott.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "maundril": {
       "word": "MAUNDRIL",
       "definitions": [
@@ -247,7 +257,17 @@
       ],
       "relatedWords": []
     },
-    "maundycoinsmaundymoney": {
+    "maundycoins": {
+      "word": "MAUNDY COINS; MAUNDY MONEY",
+      "definitions": [
+        {
+          "text": "Silver coins or money of the nominal value of 1d., 2d., 3d., and 4d., struck annually for the Maundy alms.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "maundymoney": {
       "word": "MAUNDY COINS; MAUNDY MONEY",
       "definitions": [
         {

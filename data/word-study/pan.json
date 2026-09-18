@@ -2,8 +2,12 @@
   "version": "v1",
   "entries": {
     "pan": {
-      "word": "PAN",
+      "word": "PAN-; PANTA-; PANTO-",
       "definitions": [
+        {
+          "text": "Combining forms signifying all, every; as, panorama, pantheism, pantagraph, pantograph. Pan- becomes pam- before b or p, as pamprodactylous.",
+          "partOfSpeech": ""
+        },
         {
           "text": "A part; a portion.",
           "partOfSpeech": "noun"
@@ -139,7 +143,7 @@
       ],
       "relatedWords": []
     },
-    "panadapanade": {
+    "panada": {
       "word": "PANADA; PANADE",
       "definitions": [
         {
@@ -150,8 +154,12 @@
       "relatedWords": []
     },
     "panade": {
-      "word": "PANADE",
+      "word": "PANADA; PANADE",
       "definitions": [
+        {
+          "text": "Bread boiled in water to the consistence of pulp, and sweetened or flavored. [Written also panado.]",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "A dagger. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
@@ -323,11 +331,15 @@
         {
           "text": "Having all or many degrees of power; having a great range of power; -- said of an eyepiece made adjustable so as to give a varying magnifying power.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the pancratium; athletic. Sir T. Browne",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "pancraticpancratical": {
+    "pancratical": {
       "word": "PANCRATIC; PANCRATICAL",
       "definitions": [
         {
@@ -689,7 +701,17 @@
       ],
       "relatedWords": []
     },
-    "panduratepanduriform": {
+    "pandurate": {
+      "word": "PANDURATE; PANDURIFORM",
+      "definitions": [
+        {
+          "text": "Obovate, with a concavity in each side, like the body of a violin; fiddle-shaped; as, a panduriform leaf; panduriform color markings of an animal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "panduriform": {
       "word": "PANDURATE; PANDURIFORM",
       "definitions": [
         {
@@ -749,11 +771,15 @@
         {
           "text": "An oration or eulogy in praise of some person or achievement; a formal or elaborate encomium; a laudatory discourse; laudation. See Synonym of Eulogy.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Containing praise or eulogy; encomiastic; laudatory. \"Panegyric strains.\" Pope. Some of his odes are panegyrical. Dryden.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "panegyricpanegyrical": {
+    "panegyrical": {
       "word": "PANEGYRIC; PANEGYRICAL",
       "definitions": [
         {
@@ -1119,7 +1145,7 @@
       ],
       "relatedWords": []
     },
-    "panicstrickenpanicstruck": {
+    "panicstricken": {
       "word": "PANIC-STRICKEN; PANIC-STRUCK",
       "definitions": [
         {
@@ -1129,7 +1155,27 @@
       ],
       "relatedWords": []
     },
-    "paniculatepaniculated": {
+    "panicstruck": {
+      "word": "PANIC-STRICKEN; PANIC-STRUCK",
+      "definitions": [
+        {
+          "text": "Struck with a panic, or sudden fear. Burke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "paniculate": {
+      "word": "PANICULATE; PANICULATED",
+      "definitions": [
+        {
+          "text": "Same as Panicled.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "paniculated": {
       "word": "PANICULATE; PANICULATED",
       "definitions": [
         {
@@ -1413,7 +1459,17 @@
       ],
       "relatedWords": []
     },
-    "panoramicpanoramical": {
+    "panoramic": {
+      "word": "PANORAMIC; PANORAMICAL",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or like, a panorama. Panoramic camera. See under Camera.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "panoramical": {
       "word": "PANORAMIC; PANORAMICAL",
       "definitions": [
         {
@@ -1447,16 +1503,6 @@
       ],
       "relatedWords": []
     },
-    "panpantapanto": {
-      "word": "PAN-; PANTA-; PANTO-",
-      "definitions": [
-        {
-          "text": "Combining forms signifying all, every; as, panorama, pantheism, pantagraph, pantograph. Pan- becomes pam- before b or p, as pamprodactylous.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "panpharmacon": {
       "word": "PANPHARMACON",
       "definitions": [
@@ -1481,13 +1527,43 @@
       "word": "PANPSYCHISM",
       "definitions": [
         {
-          "text": "The theory that all nature is psychical or has a psychical",
+          "text": "The theory that all nature is psychical or has a psychical aspect; the theory that every particle of matter has a psychical character or aspect. -- Pan*psy\"chic (#), a. -- Pan*psy\"chist (#), n. Fechner affords a conspicuous instance of the idealistic tendency to mysterize nature in his panpsychicism, or that form of noumenal idealism which holds that the universe is a vast communion of spirits, souls of men, of animals, of plants, of earth and other planets, of the sun, all embraced as different members in the soul of the world. Encyc. Brit.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "pansclavicpansclavismpansclavistpansclavonian": {
+    "pansclavic": {
+      "word": "PANSCLAVIC; PANSCLAVISM; PANSCLAVIST; PANSCLAVONIAN",
+      "definitions": [
+        {
+          "text": "See Panslavic, Panslavism, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "pansclavism": {
+      "word": "PANSCLAVIC; PANSCLAVISM; PANSCLAVIST; PANSCLAVONIAN",
+      "definitions": [
+        {
+          "text": "See Panslavic, Panslavism, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "pansclavist": {
+      "word": "PANSCLAVIC; PANSCLAVISM; PANSCLAVIST; PANSCLAVONIAN",
+      "definitions": [
+        {
+          "text": "See Panslavic, Panslavism, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "pansclavonian": {
       "word": "PANSCLAVIC; PANSCLAVISM; PANSCLAVIST; PANSCLAVONIAN",
       "definitions": [
         {
@@ -1577,7 +1653,7 @@
       ],
       "relatedWords": []
     },
-    "panspermatistpanspermist": {
+    "panspermatist": {
       "word": "PANSPERMATIST; PANSPERMIST",
       "definitions": [
         {
@@ -1593,6 +1669,16 @@
         {
           "text": "Of or pertaining to panspermy; as, the panspermic hypothesis.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "panspermist": {
+      "word": "PANSPERMATIST; PANSPERMIST",
+      "definitions": [
+        {
+          "text": "A believer in panspermy; one who rejects the theory of spontaneous generation; a biogenist.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1656,8 +1742,12 @@
       "relatedWords": []
     },
     "panta": {
-      "word": "PANTA-",
+      "word": "PAN-; PANTA-; PANTO-",
       "definitions": [
+        {
+          "text": "Combining forms signifying all, every; as, panorama, pantheism, pantagraph, pantograph. Pan- becomes pam- before b or p, as pamprodactylous.",
+          "partOfSpeech": ""
+        },
         {
           "text": "See Pan-.",
           "partOfSpeech": ""
@@ -1877,11 +1967,21 @@
       ],
       "relatedWords": []
     },
-    "pantheisticpantheistical": {
+    "pantheistic": {
       "word": "PANTHEISTIC; PANTHEISTICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to pantheism; founded in, or leading to,",
+          "text": "Of or pertaining to pantheism; founded in, or leading to, pantheism.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pantheistical": {
+      "word": "PANTHEISTIC; PANTHEISTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pantheism; founded in, or leading to, pantheism.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2034,8 +2134,12 @@
       "relatedWords": []
     },
     "panto": {
-      "word": "PANTO-",
+      "word": "PAN-; PANTA-; PANTO-",
       "definitions": [
+        {
+          "text": "Combining forms signifying all, every; as, panorama, pantheism, pantagraph, pantograph. Pan- becomes pam- before b or p, as pamprodactylous.",
+          "partOfSpeech": ""
+        },
         {
           "text": "See Pan-.",
           "partOfSpeech": ""
@@ -2073,7 +2177,17 @@
       ],
       "relatedWords": []
     },
-    "pantographicpantographical": {
+    "pantographic": {
+      "word": "PANTOGRAPHIC; PANTOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a pantograph; relating to pantography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pantographical": {
       "word": "PANTOGRAPHIC; PANTOGRAPHICAL",
       "definitions": [
         {
@@ -2169,7 +2283,17 @@
       ],
       "relatedWords": []
     },
-    "pantomimicpantomimical": {
+    "pantomimic": {
+      "word": "PANTOMIMIC; PANTOMIMICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the pantomime; representing by dumb show. \"Pantomimic gesture.\" Bp. Warburton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pantomimical": {
       "word": "PANTOMIMIC; PANTOMIMICAL",
       "definitions": [
         {

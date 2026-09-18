@@ -572,7 +572,17 @@
         "whistle"
       ]
     },
-    "exultanceexultancy": {
+    "exultance": {
+      "word": "EXULTANCE; EXULTANCY",
+      "definitions": [
+        {
+          "text": "Exultation. [Obs.] Burton. Hammond.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exultancy": {
       "word": "EXULTANCE; EXULTANCY",
       "definitions": [
         {
@@ -646,6 +656,16 @@
         {
           "text": "The act of exulting; lively joy at success or victory, or at any advantage gained; rapturous delight; triumph. His bosom swelled with exultation. Prescott.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exulting": {
+      "word": "EXULTING",
+      "definitions": [
+        {
+          "text": "Rejoicing triumphantly or exceedingly; exultant.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

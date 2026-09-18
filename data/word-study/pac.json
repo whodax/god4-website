@@ -111,21 +111,15 @@
       ],
       "relatedWords": []
     },
-    "pachisiparchesi": {
-      "word": "PACHISI; PARCHESI",
-      "definitions": [
-        {
-          "text": "A game, somewhat resembling backgammon, originating in India.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pachisiparchesiparchisiparcheesi": {
+    "pachisi": {
       "word": "PACHISI; PARCHESI; PARCHISI; PARCHEESI",
       "definitions": [
         {
           "text": "A game adopted from the Indian game, using disks, as of pasteboard, and dice. [U. S. & Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A game, somewhat resembling backgammon, originating in India.",
           "partOfSpeech": "noun"
         }
       ],
@@ -445,6 +439,18 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To envelop in a wet or dry sheet, within numerous coverings. See Pack, n., 5.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To render impervious, as by filling or surrounding with suitable material, or to fit or adjust so as to move without giving passage to air, water, or steam; as, to pack a joint; to pack the piston of a steam engine.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To make up packs, bales, or bundles; to stow articles securely for transportation.",
           "partOfSpeech": "verb"
         },
@@ -507,7 +513,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Originally, a vessel employed by government to convey dispatches or mails; hence, a vessel employed in conveying dispatches, mails,",
+          "text": "Originally, a vessel employed by government to convey dispatches or mails; hence, a vessel employed in conveying dispatches, mails, passengers, and goods, and having fixed days of sailing; a mail boat. Packet boat, ship, or vessel. See Packet, n., 2. sailing day.",
           "partOfSpeech": "noun"
         },
         {
@@ -521,36 +527,6 @@
         {
           "text": "To ply with a packet or dispatch boat.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "packetgroupofgorigincfgkrepfcrawcroptumorbunch": {
-      "word": "packet, group; of G. origin: cf. G. krepf craw, crop, tumor, bunch.",
-      "definitions": [
-        {
-          "text": "A cluster, crowd, or throng; an assemblage, either of persons or things, collected without any regular form or arrangement; as, a group of men or of trees; a group of isles.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "An assemblage of objects in a certain order or relation, or having some resemblance or common characteristic; as, groups of strata.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Biol.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A variously limited assemblage of animals or planta, having some resemblance, or common characteristics in form or structure. The term has different uses, and may be made to include certain species of a genus, or a whole genus, or certain genera, or even several orders.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A number of eighth, sixteenth, etc., notes joined at the stems; few short notes.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -625,7 +601,17 @@
       ],
       "relatedWords": []
     },
-    "packsaddlepackthread": {
+    "packsaddle": {
+      "word": "PACK SADDLE; PACK THREAD",
+      "definitions": [
+        {
+          "text": "See under 2d Pack.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "packthread": {
       "word": "PACK SADDLE; PACK THREAD",
       "definitions": [
         {
@@ -655,7 +641,7 @@
       ],
       "relatedWords": []
     },
-    "pacopacos": {
+    "paco": {
       "word": "PACO; PACOS",
       "definitions": [
         {
@@ -672,6 +658,38 @@
         },
         {
           "text": "An earthy-looking ore, consisting of brown oxide of iron with minute particles of native silver. Ure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pacos": {
+      "word": "PACO; PACOS",
+      "definitions": [
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Alpaca.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Etym: [Peruv. paco, pacu, red, reddish, reddish ore containing silver; perh. a different word.] (Min.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An earthy-looking ore, consisting of brown oxide of iron with minute particles of native silver. Ure.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pact": {
+      "word": "PACT",
+      "definitions": [
+        {
+          "text": "An agreement; a league; a compact; a covenant. Bacon. The engagement and pact of society whish goes by the name of the constitution. Burke.",
           "partOfSpeech": "noun"
         }
       ],

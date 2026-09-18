@@ -221,22 +221,26 @@
       ],
       "relatedWords": []
     },
-    "rabbinicrabbinical": {
+    "rabbinic": {
       "word": "RABBINIC; RABBINICAL",
       "definitions": [
         {
           "text": "Of or pertaining to the rabbins or rabbis, or pertaining to the opinions, learning, or language of the rabbins. \"Comments staler than rabbinic.\" Lowell. We will not buy your rabbinical fumes. Milton.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "The language or dialect of the rabbins; the later Hebrew.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "rabbinic": {
-      "word": "RABBINIC",
+    "rabbinical": {
+      "word": "RABBINIC; RABBINICAL",
       "definitions": [
         {
-          "text": "The language or dialect of the rabbins; the later Hebrew.",
-          "partOfSpeech": "noun"
+          "text": "Of or pertaining to the rabbins or rabbis, or pertaining to the opinions, learning, or language of the rabbins. \"Comments staler than rabbinic.\" Lowell. We will not buy your rabbinical fumes. Milton.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -689,7 +693,17 @@
       ],
       "relatedWords": []
     },
-    "rachrache": {
+    "rach": {
+      "word": "RACH; RACHE",
+      "definitions": [
+        {
+          "text": "A dog that pursued his prey by scent, as distinguished from the greyhound.[Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rache": {
       "word": "RACH; RACHE",
       "definitions": [
         {
@@ -1329,7 +1343,17 @@
       ],
       "relatedWords": []
     },
-    "radianceradiancy": {
+    "radiance": {
+      "word": "RADIANCE; RADIANCY",
+      "definitions": [
+        {
+          "text": "The quality of being radiant; brilliancy; effulgence; vivid brightness; as, the radiance of the sun. Girt with omnipotence, with radiance crowned. Milton. What radiancy of glory, What light beyond compare ! Neale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "radiancy": {
       "word": "RADIANCE; RADIANCY",
       "definitions": [
         {
@@ -1367,7 +1391,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having a raylike appearance, as the large marginal flowers of certain umbelliferous plants; -- said also of the cluster which has such marginal flowers. Radiant energy (Physics), energy given out or transmitted by radiation, as in the case of light and radiant heat. heated body, after the manner of light, in distinction from heat",
+          "text": "Having a raylike appearance, as the large marginal flowers of certain umbelliferous plants; -- said also of the cluster which has such marginal flowers. Radiant energy (Physics), energy given out or transmitted by radiation, as in the case of light and radiant heat. heated body, after the manner of light, in distinction from heat conducted or carried by intervening media.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1935,6 +1959,16 @@
       ],
       "relatedWords": []
     },
+    "radiometry": {
+      "word": "RADIOMETRY",
+      "definitions": [
+        {
+          "text": "The use of the radiometer, or the measurement of radiation. -- Ra`di*o*met\"ric (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "radiomicrometer": {
       "word": "RADIOMICROMETER",
       "definitions": [
@@ -2271,6 +2305,14 @@
       "word": "RAFFLE",
       "definitions": [
         {
+          "text": "A kind of lottery, in which several persons pay, in shares, the value of something put up as a stake, and then determine by chance (as by casting dice) which one of them shall become the sole possessor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A game of dice in which he who threw three alike won all the stakes. [Obs.] Cotgrave.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To engage in a raffle; as, to raffle for a watch.",
           "partOfSpeech": "verb"
         },
@@ -2309,16 +2351,6 @@
           "partOfSpeech": ""
         },
         {
-          "text": "To transport on a raft, or in the form of a raft; to make into a raft; as, to raft timber.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "rafterakintodanraftprovgraffaraftersparcfohg": {
-      "word": "rafter; akin to Dan. raft, Prov. G. raff a rafter, spar; cf. OHG.",
-      "definitions": [
-        {
           "text": "A collection of logs, boards, pieces of timber, or the like, fastened, together, either for their own collective conveyance on the water, or to serve as a support in conveying other things; a float.",
           "partOfSpeech": "noun"
         },
@@ -2333,6 +2365,10 @@
         {
           "text": "A large collection of people or things taken indiscriminately. [Slang, U. S.] \"A whole raft of folks.\" W. D. Howells. Raft bridge. (a) A bridge whose points of support are rafts. (b) A bridge that consists of floating timbers fastened together. flocks.] (Zoöl.) (a) The bluebill, or greater scaup duck; -- called also flock duck. See Scaup. (b) The redhead. loading or unloading timber or other bulky articles; a timber or lumber port.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To transport on a raft, or in the form of a raft; to make into a raft; as, to raft timber.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -2465,7 +2501,17 @@
       ],
       "relatedWords": []
     },
-    "ragabashragabrash": {
+    "ragabash": {
+      "word": "RAGABASH; RAGABRASH",
+      "definitions": [
+        {
+          "text": "An idle, ragged person. Nares. Grose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ragabrash": {
       "word": "RAGABASH; RAGABRASH",
       "definitions": [
         {
@@ -2579,13 +2625,23 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Rough; shaggy; rugged. What shepherd owns those ragged sheep Dryden. Ragged lady (Bot.), the fennel flower (Nigella Damascena). cuculi), cultivated for its handsome flowers, which have the petals cut into narrow lobes.",
+          "text": "Rough; shaggy; rugged. What shepherd owns those ragged sheep Dryden. Ragged lady (Bot.), the fennel flower (Nigella Damascena). cuculi), cultivated for its handsome flowers, which have the petals cut into narrow lobes. taught and in part fed; -- a name given at first because they came in their common clothing. [Eng.] -- Rag\"ged*ly, adv.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "raggieraggy": {
+    "raggie": {
+      "word": "RAGGIE; RAGGY",
+      "definitions": [
+        {
+          "text": "Ragged; rough. [Obs.] \"A stony and raggie hill.\" Holland.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "raggy": {
       "word": "RAGGIE; RAGGY",
       "definitions": [
         {
@@ -2601,6 +2657,16 @@
         {
           "text": "A celebrated Sanskrit poem having for its subject the Raghu dynasty.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "raging": {
+      "word": "RAGING",
+      "definitions": [
+        {
+          "text": "a. & n. from Rage, v. i.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -2639,7 +2705,17 @@
       ],
       "relatedWords": []
     },
-    "ragnarokragnarok": {
+    "ragman'sroll": {
+      "word": "RAGMAN'S ROLL",
+      "definitions": [
+        {
+          "text": "The rolls of deeds on parchment in which the Scottish nobility and gentry subscribed allegiance to Edward I. of England, A. D. 1296. [Also written ragman-roll.]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ragnarok": {
       "word": "RAGNAROK; RAGNAROK",
       "definitions": [
         {
@@ -2679,7 +2755,17 @@
       ],
       "relatedWords": []
     },
-    "raguledragguled": {
+    "raguled": {
+      "word": "RAGULED; RAGGULED",
+      "definitions": [
+        {
+          "text": "Notched in regular diagonal breaks; -- said of a line, or a bearing having such an edge.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ragguled": {
       "word": "RAGULED; RAGGULED",
       "definitions": [
         {
@@ -2897,7 +2983,21 @@
       ],
       "relatedWords": []
     },
-    "railroadrailway": {
+    "railroad": {
+      "word": "RAILROAD; RAILWAY",
+      "definitions": [
+        {
+          "text": "A road or way consisting of one or more parallel series of iron or steel rails, patterned and adjusted to be tracks for the wheels of vehicles, and suitably supported on a bed or substructure. older tramway.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The road, track, etc., with al the lands, buildings, rolling stock, franchises, etc., pertaining to them and constituting one property; as, certain railroad has been put into the hands of a receiver. word in the United States. used interchangeably: --Atmospheric railway, Elevated railway, etc. See under Atmospheric, Elevated, etc. runs, fro carrying a train of cars across a water course. run by gravity down gentle slopes for long distances after having been hauled up steep inclines to an elevated point by stationary engines. locomotives. for running on a railway. [U.S.] -- Railway carriage, a railway passenger car. [Eng.] -- Railway scale, a platform scale bearing a track which forms part of the line of a railway, for weighing loaded cars. concussion of the spinal cord, such as occurs in railroad accidents. It is characterized by ataxia and other disturbances of muscular function, sensory disorders, pain in the back, impairment of general health, and cerebral disturbance, -- the symptoms often not developing till some months after the injury. running through a tunnel, as beneath the streets of a city. (b) Formerly, a system of coöperation among certain active antislavery people in the United States, by which fugitive slaves were secretly helped to reach Canada. \"Their house was a principal entrepôt of the underground railroad.\" W. D. Howells.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "railway": {
       "word": "RAILROAD; RAILWAY",
       "definitions": [
         {
@@ -2943,7 +3043,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "Water falling in drops from the clouds; the descent of water from the clouds in drops. Rain is water by the heat of the sun divided into very small parts ascending in the air, till, encountering the cold, it be condensed into clouds, and descends in drops. Ray. Fair days have oft contracted wind and rain. Milton. are distinctly visible. When water falls in very small drops or particles, it is called mist; and fog is composed of particles so fine as to be not only individually indistinguishable, but to float or be suspended in the air. See Fog, and Mist. Rain band (Meteorol.), a dark band in the yellow portion of the solar spectrum near the sodium line, caused by the presence of watery vapor in the atmosphere, and hence sometimes used in weather predictions. The name is also applied to various other birds, as to Saurothera vetula of the West Indies. Hollandiæ) of Australia. of rain that falls at any given place in a given time; a pluviometer; an ombrometer. presenting an appearance similar to those made by rain on mud and",
+          "text": "Water falling in drops from the clouds; the descent of water from the clouds in drops. Rain is water by the heat of the sun divided into very small parts ascending in the air, till, encountering the cold, it be condensed into clouds, and descends in drops. Ray. Fair days have oft contracted wind and rain. Milton. are distinctly visible. When water falls in very small drops or particles, it is called mist; and fog is composed of particles so fine as to be not only individually indistinguishable, but to float or be suspended in the air. See Fog, and Mist. Rain band (Meteorol.), a dark band in the yellow portion of the solar spectrum near the sodium line, caused by the presence of watery vapor in the atmosphere, and hence sometimes used in weather predictions. The name is also applied to various other birds, as to Saurothera vetula of the West Indies. Hollandiæ) of Australia. of rain that falls at any given place in a given time; a pluviometer; an ombrometer. presenting an appearance similar to those made by rain on mud and sand, and believed to have been so produced.",
           "partOfSpeech": "noun"
         },
         {
@@ -3127,7 +3227,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Leavened; made with leaven, or yeast; -- used of bread, cake,",
+          "text": "Leavened; made with leaven, or yeast; -- used of bread, cake, etc., as distinguished from that made with cream of tartar, soda, etc. See Raise, v. t., 4. Raised beach. See under Beach, n.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3169,7 +3269,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The operation of embossing sheet metal, or of forming it into cup-",
+          "text": "The operation of embossing sheet metal, or of forming it into cup- shaped or hollow articles, by hammering, stamping, or spinning. Raising bee, a bee for raising the frame of a building. See Bee, n.,",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "[U.S.] W. Irving. sheet metal. which a roof is raised and rests.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3235,7 +3339,17 @@
       ],
       "relatedWords": []
     },
-    "rajpootrajput": {
+    "rajpoot": {
+      "word": "RAJPOOT; RAJPUT",
+      "definitions": [
+        {
+          "text": "A Hindoo of the second, or royal and military, caste; a Kshatriya; especially, an inhabitant of the country of Rajpootana, in northern central India.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rajput": {
       "word": "RAJPOOT; RAJPUT",
       "definitions": [
         {
@@ -3345,11 +3459,15 @@
         {
           "text": "A lewd, dissolute fellow; a debauchee; a rake. It seldom doth happen, in any way of life, that a sluggard and a rakehell do not go together. Barrow.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Dissolute; wild; lewd; rakish. [Obs.] Spenser. B. Jonson.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "rakehellrakehelly": {
+    "rakehelly": {
       "word": "RAKEHELL; RAKEHELLY",
       "definitions": [
         {
@@ -3427,7 +3545,17 @@
       ],
       "relatedWords": []
     },
-    "rakirakee": {
+    "raki": {
+      "word": "RAKI; RAKEE",
+      "definitions": [
+        {
+          "text": "A kind of ardent spirits used in southern Europe and the East, distilled from grape juice, grain, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rakee": {
       "word": "RAKI; RAKEE",
       "definitions": [
         {
@@ -4693,6 +4821,26 @@
       "word": "RANDOM",
       "definitions": [
         {
+          "text": "Force; violence. [Obs.] For courageously the two kings newly fought with great random and force. E. Hall.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A roving motion; course without definite direction; want of direction, rule, or method; hazard; chance; -- commonly used in the phrase at random, that is, without a settled point of direction; at hazard. Counsels, when they fly At random, sometimes hit most happily. Herrick. O, many a shaft, at random sent, Finds mark the archer little meant ! Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Distance to which a missile is cast; range; reach; as, the random of a rifle ball. Sir K. Digby.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The direction of a rake-vein. Raymond.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Going at random or by chance; done or made at hazard, or without settled direction, aim, or purpose; hazarded without previous calculation; left to chance; haphazard; as, a random guess. Some random truths he can impart. Wordsworth. So sharp a spur to the lazy, and so strong a bridle to the random. H. Spencer. Random courses (Masonry), courses of unequal thickness. object, or a shot with the muzzle of the gun much elevated. sizes fitted together, but not in courses nor always with flat beds.",
           "partOfSpeech": "adjective"
         }
@@ -4749,6 +4897,16 @@
         {
           "text": "See Reënforce. [Obs.] Bailey.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rang": {
+      "word": "RANG",
+      "definitions": [
+        {
+          "text": "imp. of Ring, v. t. & i.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -4861,7 +5019,15 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "In the public land system of the United States, a row or line of townships lying between two succession meridian lines six miles apart. order east and west from the \"principal meridian\" of that survey, and",
+          "text": "In the public land system of the United States, a row or line of townships lying between two succession meridian lines six miles apart. order east and west from the \"principal meridian\" of that survey, and the townships in the range are numbered north and south from the \"base line,\" which runs east and west; as, township No. 6, N., range 7, W., from the fifth principal meridian.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Range of cable, below. Range of accommodation (Optics), the distance between the near point and the far point of distinct vision, if added to the refracting media of the eye would cause the rays from the near point to appear as if they came from the far point. constructed, for ascertaining the distance of an inaccessible object, to hit the object; a position finder. along the deck preparatory to letting go the anchor. each of which is of even height throughout the length of the wall; -- distinguished from broken range work, which consists of squared stones laid in courses not continuously of even height. which the piece must be raised to reach (the object) without carrying beyond.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5355,6 +5521,22 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To snatch away; to seize and hurry off. And through the Greeks and Ilians they rapt The whirring chariot. Chapman. From Oxford I was rapt by my nephew, Sir Edmund Bacon, to Redgrove. Sir H. Wotton.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hasten. [Obs.] Piers Plowman.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To seize and bear away, as the mind or thoughts; to transport out of one's self; to affect with ecstasy or rapture; as, rapt into admiration. I'm rapt with joy to see my Marcia's tears. Addison. Rapt into future times, the bard begun. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To exchange; to truck. [Obs. & Law] To rap and ren, To rap and rend. Etym: [Perhaps fr. Icel. hrapa to hurry and ræna plunder, fr. ran plunder, E. ran.] To seize and plunder; to snatch by violence. Dryden. \"[Ye] waste all that ye may rape and renne.\" Chaucer. All they could rap and rend pilfer. Hudibras. A judge who rapped out a great oath. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "A popular name for any of the tokens that passed current for a half-penny in Ireland in the early part of the eighteenth century; any coin of trifling value. Many counterfeits passed about under the name of raps. Swift. Tie it [her money] up so tight that you can't touch a rap, save with her consent. Mrs. Alexander. Not to care a rap, to care nothing.",
           "partOfSpeech": "noun"
         }
@@ -5435,6 +5617,22 @@
         {
           "text": "(Law)",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Sexual connection with a woman without her consent. See Age of consent, under Consent, n. statutory rape.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is snatched away. [Obs.] Where now are all my hopes O, never more. Shall they revive! nor death her rapes restore. Sandys.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Movement, as in snatching; haste; hurry. [Obs.] rape of the land by mining companies.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To commit rape upon; to ravish. raped first by their assailant, and then by the Justice system. Corresponds to 2nd rape, n. 5. To rape and ren. See under Rap, v. t., to snatch.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To rob; to pillage. [Obs.] Heywood.",
@@ -5569,7 +5767,25 @@
       ],
       "relatedWords": []
     },
-    "rapidfirerapidfiring": {
+    "rapidfire": {
+      "word": "RAPID-FIRE; RAPID-FIRING",
+      "definitions": [
+        {
+          "text": "In the United States navy, designating such a gun using fixed ammunition or metallic cartridge cases; -- distinguished from breech- loading (abbr. B. L.), applied to all guns loading with the charge in bags, and formerly from quick-fire. Rapid-fire guns in the navy also sometimes include automatic or semiautomatic rapid-fire guns; the former being automatic guns of not less than one inch caliber, firing a shell of not less than one pound weight, the explosion of each cartridge operating the mechanism for ejecting the empty shell, loading, and firing the next shot, the latter being guns that require one operation of the hand at each discharge, to load the gun. (2)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "In the United States army, designating such a gun, whether using fixed or separate ammunition, designed chiefly for use in coast batteries against torpedo vessels and the lightly armored batteries or other war vessels and for the protection of defensive mine fields;",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "In Great Britain and Europe used, rarely, as synonymous with quick-fire.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "rapidfiring": {
       "word": "RAPID-FIRE; RAPID-FIRING",
       "definitions": [
         {
@@ -5797,6 +6013,14 @@
         {
           "text": "Transported with love, admiration, delight, etc.; enraptured. \"The rapt musician.\" Longfellow. 3. Wholly absorbed or engrossed, as in work or meditation. \"Rapt in secret studies.\" Shak.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "An ecstasy; a trance. [Obs.] Bp. Morton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Rapidity. [Obs.] Sir T. Browne.",
+          "partOfSpeech": "noun"
         },
         {
           "text": "To transport or ravish. [Obs.] Drayton.",
@@ -6080,6 +6304,14 @@
     "rascal": {
       "word": "RASCAL",
       "definitions": [
+        {
+          "text": "One of the rabble; a low, common sort of person or creature; collectively, the rabble; the common herd; also, a lean, ill- conditioned beast, esp. a deer. [Obs.] He smote of the people seventy men, and fifty thousand of the rascal. Wyclif (1 Kings [1 Samuel] vi. 19). Poor men alone No, no; the noblest deer hath them [horns] as huge as the rascal. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A mean, trickish fellow; a base, dishonest person; a rogue; a scoundrel; a trickster. For I have sense to serve my turn in store, And he's a rascal who pretends to more. Dryden.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Of or pertaining to the common herd or common people; low; mean; base. \"The rascal many.\" Spencer. \"The rascal people.\" Shak. While she called me rascal fiddler. Shak.",
           "partOfSpeech": "adjective"
@@ -6699,11 +6931,19 @@
         {
           "text": "A kind of ancient fortification found in Ireland.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Coming before others, or before the usual time; early. [Obs. or Poetic] Bring the rathe primrose that forsaken dies. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Early; soon; betimes. [Obs. or Poetic] Why rise ye up so rathe Chaucer. Too rathe cut off by practice criminal. Spencer.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
     },
-    "rathrathe": {
+    "rathe": {
       "word": "RATH; RATHE",
       "definitions": [
         {
@@ -6963,11 +7203,21 @@
       ],
       "relatedWords": []
     },
-    "rationalisticrationalistical": {
+    "rationalistic": {
       "word": "RATIONALISTIC; RATIONALISTICAL",
       "definitions": [
         {
-          "text": "Belonging to, or in accordance with, the principles of",
+          "text": "Belonging to, or in accordance with, the principles of rationalism.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "rationalistical": {
+      "word": "RATIONALISTIC; RATIONALISTICAL",
+      "definitions": [
+        {
+          "text": "Belonging to, or in accordance with, the principles of rationalism.",
           "partOfSpeech": ""
         }
       ],
@@ -7077,7 +7327,17 @@
       ],
       "relatedWords": []
     },
-    "ratlinesratlins": {
+    "ratlines": {
+      "word": "RATLINES; RATLINS",
+      "definitions": [
+        {
+          "text": "The small transverse ropes attached to the shrouds and forming the steps of a rope ladder. [Written also ratlings, and rattlings.] Totten.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ratlins": {
       "word": "RATLINES; RATLINS",
       "definitions": [
         {
@@ -7711,6 +7971,10 @@
         {
           "text": "Eagerness for plunder; rapacity; extortion. Luke xi. 39.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Greedily devouring; rapacious; as, ravening wolves.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7723,7 +7987,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Eager for prey or gratification; as, a ravenous appetite or",
+          "text": "Eager for prey or gratification; as, a ravenous appetite or desire.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7755,13 +8019,7 @@
         {
           "text": "Ravenous. [Obs.] Shak.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "ravinravine": {
-      "word": "RAVIN; RAVINE",
-      "definitions": [
+        },
         {
           "text": "Food obtained by violence; plunder; prey; raven. \"Fowls of ravyne.\" Chaucer. Though Nature, red in tooth and claw With ravine, shrieked against his creed. Tennyson.",
           "partOfSpeech": "noun"
@@ -7774,8 +8032,16 @@
       "relatedWords": []
     },
     "ravine": {
-      "word": "RAVINE",
+      "word": "RAVIN; RAVINE",
       "definitions": [
+        {
+          "text": "Food obtained by violence; plunder; prey; raven. \"Fowls of ravyne.\" Chaucer. Though Nature, red in tooth and claw With ravine, shrieked against his creed. Tennyson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Raven, v. t. & i.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "A torrent of water. [Obs.] Cotgrave.",
           "partOfSpeech": "noun"
@@ -7783,6 +8049,16 @@
         {
           "text": "A deep and narrow hollow, usually worn by a stream or torrent of water; a gorge; a mountain cleft.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "raving": {
+      "word": "RAVING",
+      "definitions": [
+        {
+          "text": "Talking irrationally and wildly; as, a raving lunatic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -8193,16 +8469,6 @@
         {
           "text": "A plundering and destructive incursion; a foray; a rai",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "rankbutcfalsoftirertodrawpullofteutonicorigincf": {
-      "word": "rank. But cf. also F. tirer to draw, pull; of Teutonic origin. Cf.",
-      "definitions": [
-        {
-          "text": "A row or rank, especially one of two or more rows placed one above, or higher than, another; as, a tier of seats in a theater. Tiers of a cable, the ranges of fakes, or windings, of a cable, laid one within another when coiled.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

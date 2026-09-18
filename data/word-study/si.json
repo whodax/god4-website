@@ -1,54 +1,40 @@
 {
   "version": "v1",
   "entries": {
-    "sideoffrashealfhalfalsosidepartakintoghalbhalf": {
-      "word": "side of, fr. AS. healf half, also side, part: akin to G. halb half,",
+    "sipe": {
+      "word": "SEEP; SIPE",
       "definitions": [
         {
-          "text": "Advantage; favor; stead; benefit; interest; profit; support; defense; vindication. In behalf of his mistress's beauty. Sir P. Sidney. Against whom he had contracted some prejudice in behalf of his nation. Clarendon. In behalf of, in the interest of.",
+          "text": "To run or soak through fine pores and interstices; to ooze. [Scot. & U. S.] Water seeps up through the sidewalks. G. W. Cable.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Seep. [Scot. & U.S.]",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sipage": {
+      "word": "SEEPAGE; SIPAGE",
+      "definitions": [
+        {
+          "text": "Water that seeped or oozed through a porous soil. [Scot. & U. S.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Seepage. [Scot. & U.S.]",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "sirrogershookhisearsandnuzzledalongarbuthnot": {
-      "word": "Sir Roger shook his ears, and nuzzled along. Arbuthnot.",
+    "sipy": {
+      "word": "SEEPY; SIPY",
       "definitions": [
         {
-          "text": "To hide the head, as a child in the mother's bosom; to nestle.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To loiter; to idle. [Prov. Eng.] Halliwell.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "similislikeandesomeasomesqroot191cfanomalous": {
-      "word": "similis like, and E. some, a., -some. sq. root191. Cf. Anomalous,",
-      "definitions": [
-        {
-          "text": "Not different or other; not another or others; identical; unchanged. Thou art the same, and thy years shall have no end. Ps. cii. 27.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Of like kind, species, sort, dimensions, or the like; not differing in character or in the quality or qualities compared; corresponding; not discordant; similar; like. The ethereal vigor is in all the same. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Just mentioned, or just about to be mentioned. What ye know, the same do I know. Job. xiii. 2. Do but think how well the same he spends, Who spends his blood his country to relieve. Daniel. used substantively as in the citations above. In a comparative use it is followed by as or with. Bees like the same odors as we do. Lubbock. [He] held the same political opinions with his illustrious friend. Macaulay.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "siedenohgsiodangsiedenicelsjswsjudadansydegoth": {
-      "word": "sieden, OHG. siodan, G. sieden, Icel. sj, Sw. sjuda, Dan. syde, Goth.",
-      "definitions": [
-        {
-          "text": "To decoct or prepare for food in hot liquid; to boil; as, to seethe flesh. [Written also seeth.] Set on the great pot, and seethe pottage for the sons of the prophets. 2 Kings iv. 38.",
-          "partOfSpeech": "noun"
+          "text": "Oozy; -- applied to land under cultivation that is not well drained.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -153,7 +139,17 @@
       ],
       "relatedWords": []
     },
-    "sibilancesibilancy": {
+    "sibilance": {
+      "word": "SIBILANCE; SIBILANCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being sibilant; sibilation. Milton would not have avoided them for their sibilancy, he who wrote . . . verses that hiss like Medusa's head in wrath. Lowell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sibilancy": {
       "word": "SIBILANCE; SIBILANCY",
       "definitions": [
         {
@@ -485,7 +481,7 @@
       "word": "SICKENING",
       "definitions": [
         {
-          "text": "Causing sickness; specif., causing surfeit or disgust;",
+          "text": "Causing sickness; specif., causing surfeit or disgust; nauseating.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -497,13 +493,7 @@
         {
           "text": "To percolate, trickle, or ooze, as water through a crack. [Also written sigger, zigger, and zifhyr.] [Prov. Eng.]",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sickersiker": {
-      "word": "SICKER; SIKER",
-      "definitions": [
+        },
         {
           "text": "Sure; certain; trusty. [Obs. or Prov. Eng. & Scot.] Burns. When he is siker of his good name. Chaucer.",
           "partOfSpeech": "adjective"
@@ -515,7 +505,25 @@
       ],
       "relatedWords": []
     },
-    "sickerlysikerly": {
+    "siker": {
+      "word": "SICKER; SIKER",
+      "definitions": [
+        {
+          "text": "Sure; certain; trusty. [Obs. or Prov. Eng. & Scot.] Burns. When he is siker of his good name. Chaucer.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Surely; certainly. [Obs.] Believe this as siker as your creed. Chaucer. Sicker, Willye, thou warnest well. Spenser.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "See 2d Sicker, Sickerly, etc. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sickerly": {
       "word": "SICKERLY; SIKERLY",
       "definitions": [
         {
@@ -525,12 +533,40 @@
       ],
       "relatedWords": []
     },
-    "sickernesssikerness": {
+    "sikerly": {
+      "word": "SICKERLY; SIKERLY",
+      "definitions": [
+        {
+          "text": "Surely; securely. [Obs.] But sikerly, withouten any fable. Chaucer.",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "See 2d Sicker, Sickerly, etc. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sickerness": {
       "word": "SICKERNESS; SIKERNESS",
       "definitions": [
         {
           "text": "The quality or state of being sicker, or certain. [Obs.] Chaucer. Spenser.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sikerness": {
+      "word": "SICKERNESS; SIKERNESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being sicker, or certain. [Obs.] Chaucer. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See 2d Sicker, Sickerly, etc. [Obs.]",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -733,7 +769,15 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Hence, indirect; oblique; collateral; incidental; as, a side issue; a side view or remark.",
+          "text": "Hence, indirect; oblique; collateral; incidental; as, a side issue; a side view or remark. The law hath no side respect to their persons. Hooker.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Etym: [AS. sid. Cf Side, n.]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Long; large; extensive. [Obs. or Scot.] Shak. His gown had side sleeves down to mid leg. Laneham. Side action, in breech-loading firearms, a mechanism for operating the breech block, which is moved by a lever that turns sidewise. etc. granted by their officers as a matter of course, without formal application being made to them in open court; -- so called because anciently moved for by the attorneys at side bar, that is, informally. Burril. To insure a side-box station at half price. Cowper. locomotive, at the sides. to something, as a bench. each side of the cylinder, near the bottom of the engine, communicating motion to a crank that is above them. upper and lower steam chests of the cylinder of a beam engine. the side of the stock. each post set at the same distance from the middle of the truss, for supporting the principal rafters, hanging the tiebeam, etc. crosshead with the side levers, in a side-lever engine. (b) See Parallel rod, under Parallel. secured to the side of a firearm stock. the principal table. having the cutting edge at the side instead of at the point. indirect means. Wright.",
           "partOfSpeech": "adjective"
         },
         {
@@ -977,7 +1021,17 @@
       ],
       "relatedWords": []
     },
-    "siderographicsiderographical": {
+    "siderographic": {
+      "word": "SIDEROGRAPHIC; SIDEROGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to siderography; executed by engraved plates of steel; as, siderographic art; siderographic impressions.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "siderographical": {
       "word": "SIDEROGRAPHIC; SIDEROGRAPHICAL",
       "definitions": [
         {
@@ -1226,6 +1280,38 @@
     "siege": {
       "word": "SIEGE",
       "definitions": [
+        {
+          "text": "A seat; especially, a royal seat; a throne. [Obs.] \"Upon the very siege of justice.\" Shak. A stately siege of sovereign majesty, And thereon sat a woman gorgeous gay. Spenser. In our great hall there stood a vacant chair . . . And Merlin called it \"The siege perilous.\" Tennyson.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, place or situation; seat. [Obs.] Ah! traitorous eyes, come out of your shameless siege forever. Painter (Palace of Pleasure).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Rank; grade; station; estimation. [Obs.] I fetch my life and being From men of royal siege. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Passage of excrements; stool; fecal matter. [Obs.] The siege of this mooncalf. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The sitting of an army around or before a fortified place for the purpose of compelling the garrison to surrender; the surrounding or investing of a place by an army, and approaching it by passages and advanced works, which cover the besiegers from the enemy's fire. See the Note under Blockade.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, a continued attempt to gain possession. Love stood the siege, and would not yield his breast. Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The floor of a glass-furnace.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A workman's bench. Knught. Siege gun, a heavy gun for siege operations.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To besiege; to beset. [R.] Through all the dangers that can siege The life of man. Buron.",
           "partOfSpeech": "verb"
@@ -1515,7 +1601,7 @@
       "word": "SIGHING",
       "definitions": [
         {
-          "text": "Uttering sighs; grieving; lamenting. \"Sighing millions.\"",
+          "text": "Uttering sighs; grieving; lamenting. \"Sighing millions.\" Cowper.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1524,6 +1610,50 @@
     "sight": {
       "word": "SIGHT",
       "definitions": [
+        {
+          "text": "The act of seeing; perception of objects by the eye; view; as, to gain sight of land. A cloud received him out of their sight. Acts. i. 9.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The power of seeing; the faculty of vision, or of perceiving objects by the instrumentality of the eyes. Thy sight is young, And thou shalt read when mine begin to dazzle. Shak. O loss of sight, of thee I most complain! Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The state of admitting unobstructed vision; visibility; open view; region which the eye at one time surveys; space through which the power of vision extends; as, an object within sight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A spectacle; a view; a show; something worth seeing. Moses said, I will now turn aside and see this great sight, why the bush is not burnt. Ex. iii. 3. They never saw a sight so fair. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The instrument of seeing; the eye. Why cloud they not their sights Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Inspection; examination; as, a letter intended for the sight of only one person.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Mental view; opinion; judgment; as, in their sight it was harmless. Wake. That which is highly esteemed among men is abomination in the sight of God. Luke xvi. 15.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small aperture through which objects are to be seen, and by which their direction is settled or ascertained; as, the sight of a quadrant. Thier eyes of fire sparking through sights of steel. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small piece of metal, fixed or movable, on the breech, muzzle, center, or trunnion of a gun, or on the breech and the muzzle of a rifle, pistol, etc., by means of which the eye is guided in aiming. Farrow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "In a drawing, picture, etc., that part of the surface, as of paper or canvas, which is within the frame or the border or margin. In a frame or the like, the open space, the opening.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A great number, quantity, or sum; as, a sight of money. [Now colloquial] usage. \"A sight of lawyers.\" Latimer. A wonder sight of flowers. Gower. At sight, as soon as seen, or presented to sight; as, a draft payable at sight: to read Greek at sight; to shoot a person at sight. objects aimed at may be seen, in distinction from one that hides the object. (b) A rear sight having an open notch instead of an aperture. of money at sight. a piece of artillery, or the like.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To get sight of; to see; as, to sight land; to sight a wreck. Kane.",
           "partOfSpeech": "verb"
@@ -1783,7 +1913,17 @@
       ],
       "relatedWords": []
     },
-    "sigmoidsigmoidal": {
+    "sigmoid": {
+      "word": "SIGMOID; SIGMOIDAL",
+      "definitions": [
+        {
+          "text": "Curved in two directions, like the letter S, or the Greek s. Sigmoid flexure (Anat.), the last curve of the colon before it terminates in the rectum. See Illust. under Digestive.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sigmoidal": {
       "word": "SIGMOID; SIGMOIDAL",
       "definitions": [
         {
@@ -1815,6 +1955,26 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To represent by a sign; to make known in a typical or emblematic manner, in distinction from speech; to signify. I signed to Browne to make his retreat. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make a sign upon; to mark with a sign. We receive this child into the congregation of Christ's flock, and do sign him with the sign of the cross. Bk. of Com Prayer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To affix a signature to; to ratify by hand or seal; to subscribe in one's own handwriting. Inquire the Jew's house out, give him this deed, And let him sign it. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To assign or convey formally; -- used with away.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To mark; to make distinguishable. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To be a sign or omen. [Obs.] Shak.",
           "partOfSpeech": "verb"
         },
@@ -1825,32 +1985,6 @@
         {
           "text": "To write one's name, esp. as a token of assent, responsibility, or obligation.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "signertomarktosigninsense3frlsignaretomarkseta": {
-      "word": "signer, to mark, to sign (in sense 3), fr. L. signare to mark, set a",
-      "definitions": [
-        {
-          "text": "To represent by a sign; to make known in a typical or emblematic manner, in distinction from speech; to signify. I signed to Browne to make his retreat. Sir W. Scott.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To make a sign upon; to mark with a sign. We receive this child into the congregation of Christ's flock, and do sign him with the sign of the cross. Bk. of Com Prayer.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To affix a signature to; to ratify by hand or seal; to subscribe in one's own handwriting. Inquire the Jew's house out, give him this deed, And let him sign it. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To assign or convey formally; -- used with away.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To mark; to make distinguishable. Shak.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2115,7 +2249,25 @@
       ],
       "relatedWords": []
     },
-    "significancesignificancy": {
+    "significance": {
+      "word": "SIGNIFICANCE; SIGNIFICANCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being significant.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is signified; meaning; import; as, the significance of a nod, of a motion of the hand, or of a word or expression.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Importance; moment; weight; consequence. With this brain I must work, in order to give significancy and value to the few facts which I possess. De Quincey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "significancy": {
       "word": "SIGNIFICANCE; SIGNIFICANCY",
       "definitions": [
         {
@@ -2193,7 +2345,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having signification or meaning; expressive of a meaning or purpose; significant. Neither in the degrees of kindred they were destitute of",
+          "text": "Having signification or meaning; expressive of a meaning or purpose; significant. Neither in the degrees of kindred they were destitute of significative words. Camden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2291,7 +2443,17 @@
       ],
       "relatedWords": []
     },
-    "signorsignore": {
+    "signor": {
+      "word": "SIGNOR; SIGNORE",
+      "definitions": [
+        {
+          "text": "Sir; Mr; -- a title of address or respect among the Italians. Before a noun the form is Signor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "signore": {
       "word": "SIGNOR; SIGNORE",
       "definitions": [
         {
@@ -2331,7 +2493,7 @@
       ],
       "relatedWords": []
     },
-    "siksike": {
+    "sik": {
       "word": "SIK; SIKE",
       "definitions": [
         {
@@ -2342,8 +2504,12 @@
       "relatedWords": []
     },
     "sike": {
-      "word": "SIKE",
+      "word": "SIK; SIKE",
       "definitions": [
+        {
+          "text": "Such. See Such. [Obs.] \"Sike fancies weren foolerie.\" Spenser.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A gutter; a stream, such as is usually dry in summer. [Prov. Eng. & Scot.]",
           "partOfSpeech": "noun"
@@ -2359,16 +2525,6 @@
         {
           "text": "A sigh. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sikersikerlysikerness": {
-      "word": "SIKER; SIKERLY; SIKERNESS",
-      "definitions": [
-        {
-          "text": "See 2d Sicker, Sickerly, etc. [Obs.]",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2981,7 +3137,17 @@
       ],
       "relatedWords": []
     },
-    "siliquosesiliquous": {
+    "siliquose": {
+      "word": "SILIQUOSE; SILIQUOUS",
+      "definitions": [
+        {
+          "text": "Bearing siliques; as, siliquose plants; pertaining to, or resembling, siliques; as, siliquose capsules.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "siliquous": {
       "word": "SILIQUOSE; SILIQUOUS",
       "definitions": [
         {
@@ -3381,7 +3547,7 @@
       ],
       "relatedWords": []
     },
-    "silvasselvas": {
+    "silvas": {
       "word": "SILVAS; SELVAS",
       "definitions": [
         {
@@ -3421,7 +3587,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The color of silver. meaning; as, silver-armed, silver-bright, silver-buskined, silver- coated, silver-footed, silver-haired, silver-headed, silver-mantled,",
+          "text": "The color of silver. meaning; as, silver-armed, silver-bright, silver-buskined, silver- coated, silver-footed, silver-haired, silver-headed, silver-mantled, silver-plated, silver-slippered, silver-sounding, silver-studded, silver-tongued, silver-white. See Silver, a. Black silver (Min.), stephanite; -- called also brittle silver ore, or brittle silver glance. Ag2O.(NH3)2, obtained by dissolving silver oxide in aqua ammonia. When dry it explodes violently on the slightest percussion. (b) Silver fulminate, a white crystalline substance, Ag2C2N2O2, obtained by adding alcohol to a solution of silver nitrate. When dry it is violently explosive. Pyrargyrite. foil.",
           "partOfSpeech": "noun"
         },
         {
@@ -3979,7 +4145,7 @@
       "word": "SIMONIACAL",
       "definitions": [
         {
-          "text": "Of or pertaining to simony; guilty of simony; consisting of",
+          "text": "Of or pertaining to simony; guilty of simony; consisting of simony. The flagitious profligacy of their lives, and the simoniacal arts by which they grasped at the popedom. J. S. Harford.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4045,7 +4211,17 @@
       ],
       "relatedWords": []
     },
-    "simoomsimoon": {
+    "simoom": {
+      "word": "SIMOOM; SIMOON",
+      "definitions": [
+        {
+          "text": "A hot, dry, suffocating, dust-laden wind, that blows occasionally in Arabia, Syria, and neighboring countries, generated by the extreme heat of the parched deserts or sandy plains.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "simoon": {
       "word": "SIMOOM; SIMOON",
       "definitions": [
         {
@@ -4127,6 +4303,74 @@
       "word": "SIMPLE",
       "definitions": [
         {
+          "text": "Single; not complex; not infolded or entangled; uncombined; not compounded; not blended with something else; not complicated; as, a simple substance; a simple idea; a simple sound; a simple machine; a simple problem; simple tasks.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Plain; unadorned; as, simple dress. \"Simple truth.\" Spenser. \"His simple story.\" Burns.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Mere; not other than; being only. A medicine . . . whose simple touch Is powerful to araise King Pepin. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not given to artifice, stratagem, or duplicity; undesigning; sincere; true. Full many fine men go upon my score, as simple as I stand here, and I trust them. Marston. Must thou trust Tradition's simple tongue Byron. To be simple is to be great. Emerson.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Artless in manner; unaffected; unconstrained; natural; inartificial;; straightforward. In simple manners all the secret lies. Young.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Direct; clear; intelligible; not abstruse or enigmatical; as, a simple statement; simple language.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Weak in intellect; not wise or sagacious; of but moderate understanding or attainments; hence, foolish; silly. \"You have simple wits.\" Shak. The simple believeth every word; but the prudent man looketh well to his going. Prov. xiv. 15.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not luxurious; without much variety; plain; as, a simple diet; a simple way of living. Thy simple fare and all thy plain delights. Cowper.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Humble; lowly; undistinguished. A simple husbandman in garments gray. Spenser. Clergy and laity, male and female, gentle and simple made the fuel of the same fire. Fuller.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(BOt.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Without subdivisions; entire; as, a simple stem; a simple leaf.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not capable of being decomposed into anything more simple or ultimate by any means at present known; elementary; thus, atoms are regarded as simple bodies. Cf. Ultimate, a. are indications that many of our simple elements are still compound bodies, though their actual decomposition into anything simpler may never be accomplished.fundamental particle",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Min.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Homogenous.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Consisting of a single individual or zooid; as, a simple ascidian; -- opposed to compound. Simple contract (Law), any contract, whether verbal or written, which is not of record or under seal. J. W. Smith. Chitty. quantity, and that quantity only in the first degree. Ant: compound eye. for its execution upon any event provided for by the parties, or is not to become void on the happening of any such event. Burrill. elementary; plain; artless; sincere; harmless; undesigning; frank; open; unaffected; inartificial; unadorned; credulous; silly; foolish; shallow; unwise. inexperienced in duplicity, -- hence liable to be duped. A silly person is one who is ignorant or weak and also self-confident; hence, one who shows in speech and act a lack of good sense. Simplicity is incompatible with duplicity, artfulness, or vanity, while silliness is consistent with all three. Simplicity denotes lack of knowledge or of guile; silliness denotes want of judgment or right purpose, a defect of character as well as of education. I am a simple woman, much too weak To oppose your cunning. Shak. He is the companion of the silliest people in their most silly pleasure; he is ready for every impertinent entertainment and diversion. Law.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "Something not mixed or compounded. \"Compounded of many simples.\" Shak.",
           "partOfSpeech": "noun"
         },
@@ -4171,7 +4415,7 @@
       "word": "SIMPLE-MINDED",
       "definitions": [
         {
-          "text": "Artless; guileless; simple-hearted; undesigning; unsuspecting;",
+          "text": "Artless; guileless; simple-hearted; undesigning; unsuspecting; devoid of duplicity. Blackstone.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4271,7 +4515,7 @@
       "word": "SIMPLIFY",
       "definitions": [
         {
-          "text": "To make simple; to make less complex; to make clear by giving the explanation for; to show an easier or shorter process for doing or making.",
+          "text": "To make simple; to make less complex; to make clear by giving the explanation for; to show an easier or shorter process for doing or making. The collection of duties is drawn to a point, and so far simplified. A. Hamilton. It is important, in scientific pursuits, to be caitious in simplifying our deductions. W. Nicholson.",
           "partOfSpeech": "verb"
         }
       ],
@@ -4335,7 +4579,17 @@
       ],
       "relatedWords": []
     },
-    "simulachersimulachre": {
+    "simulacher": {
+      "word": "SIMULACHER; SIMULACHRE",
+      "definitions": [
+        {
+          "text": "See Simulacrum. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "simulachre": {
       "word": "SIMULACHER; SIMULACHRE",
       "definitions": [
         {
@@ -4427,7 +4681,7 @@
       "word": "SIMULTANEOUS",
       "definitions": [
         {
-          "text": "Existing, happening, or done, at the same time; as,",
+          "text": "Existing, happening, or done, at the same time; as, simultaneous events. more equations in which the values of the unknown quantities entering them are the same at the same time in both or in all.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4477,7 +4731,17 @@
       ],
       "relatedWords": []
     },
-    "sinaicsinaitic": {
+    "sinaic": {
+      "word": "SINAIC; SINAITIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Mount Sinai; given or made at Mount Sinai; as, the Sinaitic law. Sinaitic manuscript, a fourth century Greek manuscript of the part Bible, discovered at Mount Sinai (the greater part of it in 1859) by Tisschendorf, a German Biblical critic; -- called also Codex Sinaiticus.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sinaitic": {
       "word": "SINAIC; SINAITIC",
       "definitions": [
         {
@@ -4915,34 +5179,8 @@
       "word": "SINFUL",
       "definitions": [
         {
-          "text": "Tainted with, or full of, sin; wicked; iniquitous; criminal; unholy; as, sinful men; sinful thoughts. Piers Plowman.",
+          "text": "Tainted with, or full of, sin; wicked; iniquitous; criminal; unholy; as, sinful men; sinful thoughts. Piers Plowman. Ah sinful nation, a people laden with iniquity. Isa. i. 4.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "singenicelsyngjaswsjungadansyngegothsiggwanand": {
-      "word": "singen, Icel. syngja, Sw. sjunga, Dan. synge, Goth. siggwan, and",
-      "definitions": [
-        {
-          "text": "To utter sounds with musical inflections or melodious modulations of voice, as fancy may dictate, or according to the notes of a song or tune, or of a given part (as alto, tenor, etc.) in a chorus or concerted piece. The noise of them that sing do I hear. Ex. xxxii. 18.",
-          "partOfSpeech": "transitive verb"
-        },
-        {
-          "text": "To utter sweet melodious sounds, as birds do. On every bough the briddes heard I sing. Chaucer. Singing birds, in silver cages hung. Dryden.",
-          "partOfSpeech": "transitive verb"
-        },
-        {
-          "text": "To make a small, shrill sound; as, the air sings in passing through a crevice. O'er his head the flying spear Sang innocent, and spent its force in air. Pope.",
-          "partOfSpeech": "transitive verb"
-        },
-        {
-          "text": "To tell or relate something in numbers or verse; to celebrate something in poetry. Milton. Bid her . . . sing Of human hope by cross event destroyed. Prior.",
-          "partOfSpeech": "transitive verb"
-        },
-        {
-          "text": "Ti cry out; to complain. [Obs.] They should sing if thet they were bent. Chaucer.",
-          "partOfSpeech": "transitive verb"
         }
       ],
       "relatedWords": []
@@ -4950,6 +5188,26 @@
     "sing": {
       "word": "SING",
       "definitions": [
+        {
+          "text": "To utter sounds with musical inflections or melodious modulations of voice, as fancy may dictate, or according to the notes of a song or tune, or of a given part (as alto, tenor, etc.) in a chorus or concerted piece. The noise of them that sing do I hear. Ex. xxxii. 18.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To utter sweet melodious sounds, as birds do. On every bough the briddes heard I sing. Chaucer. Singing birds, in silver cages hung. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make a small, shrill sound; as, the air sings in passing through a crevice. O'er his head the flying spear Sang innocent, and spent its force in air. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To tell or relate something in numbers or verse; to celebrate something in poetry. Milton. Bid her . . . sing Of human hope by cross event destroyed. Prior.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Ti cry out; to complain. [Obs.] They should sing if thet they were bent. Chaucer.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To utter with musical infections or modulations of voice. And they sing the song of Moses, the servant of God, and the song of the Lamb. Rev. xv. 3. And in the darkness sing your carol of high praise. Keble.",
           "partOfSpeech": "verb"
@@ -5143,11 +5401,31 @@
       ],
       "relatedWords": []
     },
+    "singlefoot": {
+      "word": "SINGLE-FOOT",
+      "definitions": [
+        {
+          "text": "An irregular gait of a horse; -- called also single-footed pace. See Single, v. i. Single-foot is an irregular pace, rather rare, distinguished by the posterior extremities moving in the order of a fast walk, and the anterior extremities in that of a slow trot. Stillman (The Horse in Motion.)",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "singlehanded": {
       "word": "SINGLE-HANDED",
       "definitions": [
         {
           "text": "Having but one hand, or one workman; also, alone; unassisted.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "singlehearted": {
+      "word": "SINGLE-HEARTED",
+      "definitions": [
+        {
+          "text": "Having an honest heart; free from duplicity.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5211,7 +5489,7 @@
       "word": "SINGLE TAX",
       "definitions": [
         {
-          "text": "A tax levied upon land alone, irrespective of improvements, -- advocated by certain economists as the sole source of public revenue. Whatever may be thought of Henry George's single-tax theory as a whole, there can be little question that a relatively higher assessment of ground rent, with corresponding relief for those who",
+          "text": "A tax levied upon land alone, irrespective of improvements, -- advocated by certain economists as the sole source of public revenue. Whatever may be thought of Henry George's single-tax theory as a whole, there can be little question that a relatively higher assessment of ground rent, with corresponding relief for those who have made improvements, is a much-needed reform. A. T. Hadley.",
           "partOfSpeech": ""
         }
       ],
@@ -5729,7 +6007,7 @@
       "word": "SINKER",
       "definitions": [
         {
-          "text": "One who, or that which, sinks. Specifically: (a) A weight on something, as on a fish line, to sink it. (b) In knitting machines, one of the thin plates, blades, or other devices, that depress the loops upon or between the needles. Dividing sinker, in knitting machines, a sinker between two jack sinkers and",
+          "text": "One who, or that which, sinks. Specifically: (a) A weight on something, as on a fish line, to sink it. (b) In knitting machines, one of the thin plates, blades, or other devices, that depress the loops upon or between the needles. Dividing sinker, in knitting machines, a sinker between two jack sinkers and acting alternately with them. the sinkers is attached. (b) In deep well boring, a heavy bar forming a connection between the lifting rope and the boring tools, above the jars.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5741,6 +6019,16 @@
         {
           "text": "from Sink. Sinking fund. See under Fund. the casting shrinks. See Riser, n., 4. shaft as the level of the water sinks.",
           "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sinless": {
+      "word": "SINLESS",
+      "definitions": [
+        {
+          "text": "Free from sin. Piers Plowman.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -5829,7 +6117,17 @@
       ],
       "relatedWords": []
     },
-    "sinopiasinopis": {
+    "sinopia": {
+      "word": "SINOPIA; SINOPIS",
+      "definitions": [
+        {
+          "text": "A red pigment made from sinopite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sinopis": {
       "word": "SINOPIA; SINOPIS",
       "definitions": [
         {
@@ -5893,7 +6191,37 @@
       ],
       "relatedWords": []
     },
-    "sintosintusintoismsintoist": {
+    "sinto": {
+      "word": "SINTO; SINTU; SINTOISM; SINTOIST",
+      "definitions": [
+        {
+          "text": "See Shinto, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sintu": {
+      "word": "SINTO; SINTU; SINTOISM; SINTOIST",
+      "definitions": [
+        {
+          "text": "See Shinto, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sintoism": {
+      "word": "SINTO; SINTU; SINTOISM; SINTOIST",
+      "definitions": [
+        {
+          "text": "See Shinto, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sintoist": {
       "word": "SINTO; SINTU; SINTOISM; SINTOIST",
       "definitions": [
         {
@@ -5975,7 +6303,7 @@
       "word": "SINUOUS",
       "definitions": [
         {
-          "text": "Bending in and out; of a serpentine or undulating form;",
+          "text": "Bending in and out; of a serpentine or undulating form; winding; crooked. Streaking the ground with sinuous trace. Milton. Gardens bright with sinuous rills. Coleridge.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6089,8 +6417,8 @@
       ],
       "relatedWords": []
     },
-    "sippenakintoodsippenandasstosipsuckupdrinksee": {
-      "word": "sippen; akin to OD. sippen, and AS. s to sip, suck up, drink. See",
+    "sip": {
+      "word": "SIP",
       "definitions": [
         {
           "text": "To drink or imbibe in small quantities; especially, to take in with the lips in small quantities, as a liquid; as, to sip tea. \"Every herb that sips the dew.\" Milton.",
@@ -6103,13 +6431,7 @@
         {
           "text": "To taste the liquor of; to drink out of. [Poetic] They skim the floods, and sip the purple flowers. Dryden.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sip": {
-      "word": "SIP",
-      "definitions": [
+        },
         {
           "text": "To drink a small quantity; to take a fluid with the lips; to take a sip or sips of something. [She] raised it to her mouth with sober grace; Then, sipping, offered to the next in place. Dryden.",
           "partOfSpeech": "verb"
@@ -6121,26 +6443,6 @@
         {
           "text": "A small draught taken with the lips; a slight taste. One sip of this Will bathe the drooping spirits in delight Beyond the bliss of dreams. Milton. A sip is all that the public ever care to take from reservoirs of abstract philosophy. De Quincey.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sipage": {
-      "word": "SIPAGE",
-      "definitions": [
-        {
-          "text": "See Seepage. [Scot. & U.S.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sipe": {
-      "word": "SIPE",
-      "definitions": [
-        {
-          "text": "See Seep. [Scot. & U.S.]",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -6211,7 +6513,7 @@
       "word": "SIPHONARID",
       "definitions": [
         {
-          "text": "Any one of numerous species of limpet-shaped pulmonate gastropods of the genus Siphonaria. They cling to rocks between high",
+          "text": "Any one of numerous species of limpet-shaped pulmonate gastropods of the genus Siphonaria. They cling to rocks between high and low water marks and have both lunglike organs and gills.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6833,7 +7135,7 @@
       ],
       "relatedWords": []
     },
-    "sirupsyrup": {
+    "sirup": {
       "word": "SIRUP; SYRUP",
       "definitions": [
         {
@@ -6847,7 +7149,7 @@
       ],
       "relatedWords": []
     },
-    "sirupedsyruped": {
+    "siruped": {
       "word": "SIRUPED; SYRUPED",
       "definitions": [
         {
@@ -6857,12 +7159,22 @@
       ],
       "relatedWords": []
     },
-    "sirupysyrupy": {
+    "sirupy": {
       "word": "SIRUPY; SYRUPY",
       "definitions": [
         {
           "text": "Like sirup, or partaking of its qualities. Mortimer.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sirvente": {
+      "word": "SIRVENTE",
+      "definitions": [
+        {
+          "text": "A peculiar species of poetry, for the most part devoted to moral and religious topics, and commonly satirical, -- often used by the troubadours of the Middle Ages.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -6881,7 +7193,17 @@
       ],
       "relatedWords": []
     },
-    "sisalgrasssisalhemp": {
+    "sisalgrass": {
+      "word": "SISAL GRASS; SISAL HEMP",
+      "definitions": [
+        {
+          "text": "The prepared fiber of the Agave Americana, or American aloe, used for cordage; -- so called from Sisal, a port in Yucatan. See Sisal hemp, under Hemp.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "sisalhemp": {
       "word": "SISAL GRASS; SISAL HEMP",
       "definitions": [
         {
@@ -6935,7 +7257,17 @@
       ],
       "relatedWords": []
     },
-    "siserarasiserary": {
+    "siserara": {
+      "word": "SISERARA; SISERARY",
+      "definitions": [
+        {
+          "text": "A hard blow. [Prov. Eng.] Halliwell.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "siserary": {
       "word": "SISERARA; SISERARY",
       "definitions": [
         {
@@ -7145,6 +7477,50 @@
           "partOfSpeech": ""
         },
         {
+          "text": "To rest upon the haunches, or the lower extremity of the trunk of the body; -- said of human beings, and sometimes of other animals; as, to sit on a sofa, on a chair, or on the ground. And he came and took the book put of the right hand of him that sate upon the seat. Bible (1551) (Rev. v. 7.) I pray you, jest, sir, as you sit at dinner. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To perch; to rest with the feet drawn up, as birds do on a branch, pole, etc.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To remain in a state of repose; to rest; to abide; to rest in any position or condition. And Moses said to . . . the children of Reuben, Shall your brothren go to war, and shall ye sit here Num. xxxii. 6. Like a demigod here sit I in the sky. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To lie, rest, or bear; to press or weigh; -- with on; as, a weight or burden sits lightly upon him. The calamity sits heavy on us. Jer. Taylor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be adjusted; to fit; as, a coat sts well or ill. This new and gorgeous garment, majesty, Sits not so easy on me as you think. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To suit one well or ill, as an act; to become; to befit; -- used impersonally. [Obs.] Chaucer.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cover and warm eggs for hatching, as a fowl; to brood; to incubate. As the partridge sitteth on eggs, and hatcheth them not. Jer. xvii. 11.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have position, as at the point blown from; to hold a relative position; to have direction. Like a good miller that knows how to grind, which way soever the wind sits. Selden. Sits the wind in that quarter Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To occupy a place or seat as a member of an official body; as, to sit in Congress.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To hold a session; to be in session for official business; -- said of legislative assemblies, courts, etc.; as, the court sits in January; the aldermen sit to-night.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take a position for the purpose of having some artistic representation of one's self made, as a picture or a bust; as, to sit to a painter. To sit at, to rest under; to be subject to. [Obs.] \"A farmer can not husband his ground so well if he sit at a great rent\". Bacon. as, to sit down when tired. (b) To begin a siege; as, the enemy sat down before the town. (c) To settle; to fix a permanent abode. Spenser. (d) To rest; to cease as satisfied. \"Here we can not sit down, but still proceed in our search.\" Rogers. a view to obtaining a fellowship. [Eng. Univ.] -- To sit out. (a) To be without engagement or employment. [Obs.] Bp. Sanderson. (b) To outstay. as, to sit under a preacher; to sit under good preaching. from sleep; to sit with the body upright; as, to sit up late at night; also, to watch; as, to sit up with a sick person. \"He that was dead sat up, and began to speak.\" Luke vii. 15.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To sit upon; to keep one's seat upon; as, he sits a horse well. Hardly the muse can sit the headstrong horse. Prior.",
           "partOfSpeech": "verb"
         },
@@ -7207,13 +7583,7 @@
         {
           "text": "Since; afterwards; seeing that. [Obs.] We need not fear them, sith Christ is with us. Latimer. Sith thou art rightful judge. Chaucer.",
           "partOfSpeech": "preposition"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sithsithe": {
-      "word": "SITH; SITHE",
-      "definitions": [
+        },
         {
           "text": "Time. [Obs.] Chaucer. And humbly thanked him a thousand sithes. Spenser.",
           "partOfSpeech": "noun"
@@ -7222,8 +7592,12 @@
       "relatedWords": []
     },
     "sithe": {
-      "word": "SITHE",
+      "word": "SITH; SITHE",
       "definitions": [
+        {
+          "text": "Time. [Obs.] Chaucer. And humbly thanked him a thousand sithes. Spenser.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To sigh.",
           "partOfSpeech": "verb"
@@ -7269,7 +7643,17 @@
       ],
       "relatedWords": []
     },
-    "sithencesithens": {
+    "sithence": {
+      "word": "SITHENCE; SITHENS",
+      "definitions": [
+        {
+          "text": "Since. See Sith, and Sithen. [Obs.] Piers Plowman.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sithens": {
       "word": "SITHENCE; SITHENS",
       "definitions": [
         {
@@ -7377,7 +7761,7 @@
       ],
       "relatedWords": []
     },
-    "situatesituated": {
+    "situate": {
       "word": "SITUATE; SITUATED",
       "definitions": [
         {
@@ -7387,16 +7771,24 @@
         {
           "text": "Placed; residing. Pleasure situate in hill and dale. Milton. authorized.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "To place. [R.] Landor.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "situate": {
-      "word": "SITUATE",
+    "situated": {
+      "word": "SITUATE; SITUATED",
       "definitions": [
         {
-          "text": "To place. [R.] Landor.",
-          "partOfSpeech": "verb"
+          "text": "Having a site, situation, or location; being in a relative position; permanently fixed; placed; located; as, a town situated, or situate, on a hill or on the seashore.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Placed; residing. Pleasure situate in hill and dale. Milton. authorized.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -7952,24 +8344,6 @@
       "definitions": [
         {
           "text": "from Sizzle.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "sirandoriginallymeaningsirlikeieproudseesirandlike": {
-      "word": "sir, and originally meaning, sirlike, i.e., proud. See Sir, and Like,",
-      "definitions": [
-        {
-          "text": "Arrogant; haughty. [Obs.] Cotgrave.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Gloomily morose; ill-natured, abrupt, and rude; severe; sour; crabbed; rough; sullen; gloomy; as, a surly groom; a surly dog; surly language; a surly look. \"That surly spirit, melancholy.\" Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Rough; dark; tempestuous. Now softened into joy the surly storm. Thomson.",
           "partOfSpeech": "adjective"
         }
       ],

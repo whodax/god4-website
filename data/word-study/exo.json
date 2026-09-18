@@ -1,7 +1,27 @@
 {
   "version": "v1",
   "entries": {
-    "exocardiacexocardial": {
+    "exo": {
+      "word": "EXO; EXO-",
+      "definitions": [
+        {
+          "text": "A prefix signifying out of, outside; as in exocarp, exogen, exoskeleton.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "exocardiac": {
+      "word": "EXOCARDIAC; EXOCARDIAL",
+      "definitions": [
+        {
+          "text": "Situated or arising outside of the heat; as, exocardial murmurs; -- opposed to endocardiac.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exocardial": {
       "word": "EXOCARDIAC; EXOCARDIAL",
       "definitions": [
         {
@@ -35,7 +55,17 @@
       ],
       "relatedWords": []
     },
-    "exocetusexocoetus": {
+    "exocetus": {
+      "word": "EXOCETUS; EXOCOETUS",
+      "definitions": [
+        {
+          "text": "A genus of fishes, including the common flying fishes. See Flying fish.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exocoetus": {
       "word": "EXOCETUS; EXOCOETUS",
       "definitions": [
         {
@@ -180,16 +210,6 @@
         {
           "text": "Exodus; withdrawal. [Obs.] The time of the Jewish exody. Sir M. Hale.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "exoexo": {
-      "word": "EXO; EXO-",
-      "definitions": [
-        {
-          "text": "A prefix signifying out of, outside; as in exocarp, exogen, exoskeleton.",
-          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -521,7 +541,17 @@
       ],
       "relatedWords": []
     },
-    "exophthalmosexophthalmus": {
+    "exophthalmos": {
+      "word": "EXOPHTHALMOS; EXOPHTHALMUS",
+      "definitions": [
+        {
+          "text": "Same as Exophthalmia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exophthalmus": {
       "word": "EXOPHTHALMOS; EXOPHTHALMUS",
       "definitions": [
         {
@@ -621,7 +651,99 @@
       ],
       "relatedWords": []
     },
-    "exorbitanceexorbitancy": {
+    "exorbitance": {
+      "word": "EXORBITANCE; EXORBITANCY",
+      "definitions": [
+        {
+          "text": "A going out of or beyond the usual or due limit; hence, enormity; extravagance; gross deviation from rule, right, or propriety; as, the exorbitances of the tongue or of deportment; exorbitance of demands. \"a curb to your exorbitancies.\" Dryden. The lamentable exorbitances of their superstitions. Bp. Hall.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "abandon",
+        "aggrandizement",
+        "amplification",
+        "ballyhoo",
+        "big talk",
+        "blowing up",
+        "boundlessness",
+        "burlesque",
+        "caricature",
+        "dilatation",
+        "dilation",
+        "egregiousness",
+        "enhancement",
+        "enlargement",
+        "enormousness",
+        "exaggerating",
+        "exaggeration",
+        "excess",
+        "excessiveness",
+        "exorbitancy",
+        "expansion",
+        "extortionateness",
+        "extravagance",
+        "extravagancy",
+        "extreme",
+        "extremes",
+        "extremism",
+        "extremity",
+        "fabulousness",
+        "giantism",
+        "gigantism",
+        "gluttony",
+        "grandiloquence",
+        "heightening",
+        "huckstering",
+        "hyperbole",
+        "hyperbolism",
+        "hypertrophy",
+        "immoderacy",
+        "immoderateness",
+        "immoderation",
+        "incontinence",
+        "inflation",
+        "inordinacy",
+        "inordinance",
+        "inordinateness",
+        "intemperance",
+        "intemperateness",
+        "magnification",
+        "monstrousness",
+        "nimiety",
+        "outrageousness",
+        "overdevelopment",
+        "overemphasis",
+        "overestimation",
+        "overgreatness",
+        "overgrowth",
+        "overindulgence",
+        "overkill",
+        "overlargeness",
+        "overmuch",
+        "overmuchness",
+        "overstatement",
+        "preposterousness",
+        "prodigality",
+        "profuseness",
+        "puffery",
+        "puffing up",
+        "radicalism",
+        "sensationalism",
+        "stretching",
+        "superlative",
+        "tall talk",
+        "too much",
+        "too-muchness",
+        "touting",
+        "travesty",
+        "unconscionableness",
+        "undueness",
+        "unreasonableness",
+        "unrestrainedness"
+      ]
+    },
+    "exorbitancy": {
       "word": "EXORBITANCE; EXORBITANCY",
       "definitions": [
         {
@@ -918,7 +1040,17 @@
       ],
       "relatedWords": []
     },
-    "exorhizalexorhizous": {
+    "exorhizal": {
+      "word": "EXORHIZAL; EXORHIZOUS",
+      "definitions": [
+        {
+          "text": "Having a radicle which is not inclosed by the cotyledons or plumule; of or relating to an exorhiza.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "exorhizous": {
       "word": "EXORHIZAL; EXORHIZOUS",
       "definitions": [
         {
@@ -1080,7 +1212,17 @@
       ],
       "relatedWords": []
     },
-    "exotericexoterical": {
+    "exoteric": {
+      "word": "EXOTERIC; EXOTERICAL",
+      "definitions": [
+        {
+          "text": "External; public; suitable to be imparted to the public; hence, capable of being readily or fully comprehended; -- opposed to esoteric, or secret. The foppery of an exoteric and esoteric doctrine. De Quincey.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "exoterical": {
       "word": "EXOTERIC; EXOTERICAL",
       "definitions": [
         {

@@ -1,6 +1,84 @@
 {
   "version": "v1",
   "entries": {
+    "hype": {
+      "word": "HIPE; HYPE",
+      "definitions": [
+        {
+          "text": "A throw in which the wrestler lifts his opponent from the ground, swings him to one side, knocks up his nearer thigh from the back with the knee, and throws him on his back.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Intense publicity for a future event, performed in a showy or excessively dramatic manner suggesting an importance not justified by the event; as, the hype surrounding the superbowl is usually ludicrous. [PJC]",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "to publicize [e.g. a product or a future event] insistently, in a manner exaggerating the importance of; to promote flamboyantly. [wns=1] [WordNet 1.5]",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "To stimulate or excite (a person); --usually used with up, and often in the passive form; as, she was all hyped up over her upcoming wedding. [PJC]",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "LSD user",
+        "acidhead",
+        "acknowledgment",
+        "addict",
+        "advocate",
+        "alcoholic",
+        "appreciation",
+        "back",
+        "blurb",
+        "boost",
+        "buildup",
+        "chain smoker",
+        "cocaine sniffer",
+        "cokie",
+        "commend",
+        "commendation",
+        "cry up",
+        "cubehead",
+        "dipsomaniac",
+        "dope fiend",
+        "doper",
+        "drug abuser",
+        "drug addict",
+        "drug user",
+        "drunkard",
+        "fiend",
+        "freak",
+        "glue sniffer",
+        "good word",
+        "habitual",
+        "head",
+        "heavy smoker",
+        "honorable mention",
+        "hophead",
+        "junkie",
+        "marijuana smoker",
+        "methhead",
+        "narcotics addict",
+        "pillhead",
+        "plug",
+        "pothead",
+        "promote",
+        "promotion",
+        "puff",
+        "recognition",
+        "recommend",
+        "snowbird",
+        "speak highly of",
+        "speak warmly of",
+        "speak well of",
+        "speed freak",
+        "support",
+        "tout",
+        "tripper",
+        "user"
+      ]
+    },
     "hy": {
       "word": "HY",
       "definitions": [
@@ -59,7 +137,74 @@
       ],
       "relatedWords": []
     },
-    "hyadeshyads": {
+    "hyades": {
+      "word": "HYADES; HYADS",
+      "definitions": [
+        {
+          "text": "A cluster of five stars in the face of the constellation Taurus, supposed by the ancients to indicate the coming of rainy weather when they rose with the sun. Thro' scudding drifts the rainy Hyaned Vext the dim sea. Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Atlantides",
+        "Beehive",
+        "Cepheid variable",
+        "Hertzsprung-Russell diagram",
+        "Messier catalog",
+        "NGC",
+        "Napaea",
+        "Pleiades",
+        "Seven Sisters",
+        "absolute magnitude",
+        "binary star",
+        "black hole",
+        "double star",
+        "dryad",
+        "dwarf star",
+        "fixed star",
+        "flower nymph",
+        "giant star",
+        "glen nymph",
+        "globular cluster",
+        "gravity star",
+        "hamadryad",
+        "limoniad",
+        "magnitude",
+        "main sequence star",
+        "mass-luminosity law",
+        "mountain nymph",
+        "neutron star",
+        "nova",
+        "nymph",
+        "nymphet",
+        "nymphlin",
+        "open cluster",
+        "oread",
+        "populations",
+        "pulsar",
+        "quasar",
+        "quasi-stellar radio source",
+        "radio star",
+        "red giant star",
+        "relative magnitude",
+        "sky atlas",
+        "spectrum-luminosity diagram",
+        "star",
+        "star catalog",
+        "star chart",
+        "star cloud",
+        "star cluster",
+        "stellar magnitude",
+        "supernova",
+        "tree nymph",
+        "variable star",
+        "vila",
+        "white dwarf star",
+        "willi",
+        "wood nymph"
+      ]
+    },
+    "hyads": {
       "word": "HYADES; HYADS",
       "definitions": [
         {
@@ -240,7 +385,27 @@
       ],
       "relatedWords": []
     },
-    "hybernaclehybernatehybernation": {
+    "hybernacle": {
+      "word": "HYBERNACLE; HYBERNATE; HYBERNATION",
+      "definitions": [
+        {
+          "text": "See Hibernacle, Hibernate, Hibernation.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hybernate": {
+      "word": "HYBERNACLE; HYBERNATE; HYBERNATION",
+      "definitions": [
+        {
+          "text": "See Hibernacle, Hibernate, Hibernation.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "hybernation": {
       "word": "HYBERNACLE; HYBERNATE; HYBERNATION",
       "definitions": [
         {
@@ -493,6 +658,18 @@
       "definitions": [
         {
           "text": ". See under Hydro-.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A combining form from Gr. Hydra).",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "(Chem.)",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A combining form of hydrogen, indicating hydrogen as an ingredient, as hydrochloric; or a reduction product obtained by hydrogen, as hydroquinone.",
           "partOfSpeech": ""
         }
       ],
@@ -987,7 +1164,7 @@
       ],
       "relatedWords": []
     },
-    "hydrohydr": {
+    "hydro": {
       "word": "HYDRO-; HYDR-",
       "definitions": [
         {
@@ -1049,7 +1226,7 @@
       "word": "HYDROBRANCHIATA",
       "definitions": [
         {
-          "text": "An extensive artificial division of gastropod mollusks, including those that breathe by gills, as contrasted with the",
+          "text": "An extensive artificial division of gastropod mollusks, including those that breathe by gills, as contrasted with the Pulmonifera.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1255,7 +1432,17 @@
       ],
       "relatedWords": []
     },
-    "hydrodynamichydrodynamical": {
+    "hydrodynamic": {
+      "word": "HYDRODYNAMIC; HYDRODYNAMICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to, or derived from, the dynamical action of water of a liquid; of or pertaining to water power. Hydrodynamic friction, friction produced by the viscosity of a liquid in motion.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hydrodynamical": {
       "word": "HYDRODYNAMIC; HYDRODYNAMICAL",
       "definitions": [
         {
@@ -1572,7 +1759,17 @@
       ],
       "relatedWords": []
     },
-    "hydrographichydrographical": {
+    "hydrographic": {
+      "word": "HYDROGRAPHIC; HYDROGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to hydrography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hydrographical": {
       "word": "HYDROGRAPHIC; HYDROGRAPHICAL",
       "definitions": [
         {
@@ -1787,7 +1984,7 @@
       "word": "HYDROMETALLURGICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to hydrometallurgy; involving the use of",
+          "text": "Of or pertaining to hydrometallurgy; involving the use of liquid reagents in the treatment or reduction of ores.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1851,7 +2048,25 @@
       ],
       "relatedWords": []
     },
-    "hydrometrichydrometrical": {
+    "hydrometric": {
+      "word": "HYDROMETRIC; HYDROMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an hydrometer, or to the determination of the specific gravity of fluids.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to measurement of the velocity, discharge, etc., of running water.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Made by means of an hydrometer; as, hydrometric observations. Hydrometric pendulum, a species of hydrometer consisting of a hollow ball of ivory or metal suspended by a treated from the center of a graduated quadrant, and held in a stream to measure the velocity of the water by the inclination given to the thread; a kind of current gauge.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hydrometrical": {
       "word": "HYDROMETRIC; HYDROMETRICAL",
       "definitions": [
         {
@@ -1923,7 +2138,17 @@
       ],
       "relatedWords": []
     },
-    "hydropathichydropathical": {
+    "hydropathic": {
+      "word": "HYDROPATHIC; HYDROPATHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to hydropathy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hydropathical": {
       "word": "HYDROPATHIC; HYDROPATHICAL",
       "definitions": [
         {
@@ -2073,7 +2298,17 @@
       ],
       "relatedWords": []
     },
-    "hydropichydropical": {
+    "hydropic": {
+      "word": "HYDROPIC; HYDROPICAL",
+      "definitions": [
+        {
+          "text": "Dropsical, or resembling dropsy. Every lust is a kind of hydropic distemper, and the more we drink the more we shall thirst. Tillotson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hydropical": {
       "word": "HYDROPIC; HYDROPICAL",
       "definitions": [
         {
@@ -2226,7 +2461,17 @@
       ],
       "relatedWords": []
     },
-    "hydrosomehydrosoma": {
+    "hydrosome": {
+      "word": "HYDROSOME; HYDROSOMA",
+      "definitions": [
+        {
+          "text": "All the zooids of a hydroid colony collectively, including the nutritive and reproductive zooids, and often other kinds.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hydrosoma": {
       "word": "HYDROSOME; HYDROSOMA",
       "definitions": [
         {
@@ -2322,7 +2567,17 @@
       ],
       "relatedWords": []
     },
-    "hydrostatichydrostatical": {
+    "hydrostatic": {
+      "word": "HYDROSTATIC; HYDROSTATICAL",
+      "definitions": [
+        {
+          "text": "Of or relating to hydrostatics; pertaining to, or in accordance with, the principles of the equilibrium of fluids. The first discovery made in hydrostatics since the time of Archimedes is due to Stevinus. Hallam. Hydrostatic balance, a balance for weighing substances in water, for the purpose of ascertaining their specific gravities. bellowslike case with a long, upright tube, into which water may be poured to illustrate the hydrostatic paradox. quantity of water, however small, may be made to counterbalance any weight, however great; or the law of the equality of pressure of fluids in all directions. motion, is communicated to a large plunger by means of water forced into the cylinder in which it moves, by a forcing pump of small diameter, to which the power is applied, the principle involved being the same as in the hydrostatic bellows. Also called hydraulic press, and Bramah press. In the illustration, a is a pump with a small plunger b, which forces the water into the cylinder c, thus driving upward the large plunder d, which performs the reduced work, such as compressing cotton bales, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hydrostatical": {
       "word": "HYDROSTATIC; HYDROSTATICAL",
       "definitions": [
         {
@@ -2694,7 +2949,17 @@
       ],
       "relatedWords": []
     },
-    "hydrozoonhydrozooen": {
+    "hydrozoon": {
+      "word": "HYDROZOON; HYDROZOOEN",
+      "definitions": [
+        {
+          "text": "One of the Hydrozoa.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hydrozooen": {
       "word": "HYDROZOON; HYDROZOOEN",
       "definitions": [
         {
@@ -2869,6 +3134,16 @@
       "definitions": [
         {
           "text": "The branch of physical science which treats of the geographical distribution of rain.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hyetology": {
+      "word": "HYETOLOGY",
+      "definitions": [
+        {
+          "text": "The science which treats of the precipitation of rain, snow, etc. -- Hy`e*to*log\"ic*al, a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3102,7 +3377,21 @@
         "weatherglass"
       ]
     },
-    "hygrometrichygrometrical": {
+    "hygrometric": {
+      "word": "HYGROMETRIC; HYGROMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to hygrometry; made with, or according to, the hygrometer; as, hygrometric observations.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Readily absorbing and retaining moisture; as, hygrometric substances, like potash.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hygrometrical": {
       "word": "HYGROMETRIC; HYGROMETRICAL",
       "definitions": [
         {
@@ -3220,7 +3509,17 @@
       ],
       "relatedWords": []
     },
-    "hylaeosaurhylaeosaurus": {
+    "hylaeosaur": {
+      "word": "HYLAEOSAUR; HYLAEOSAURUS",
+      "definitions": [
+        {
+          "text": "A large Wealden dinosaur from the Tilgate Forest, England. It was about twenty feet long, protected by bony plates in the skin, and armed with spines.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hylaeosaurus": {
       "word": "HYLAEOSAUR; HYLAEOSAURUS",
       "definitions": [
         {
@@ -3485,7 +3784,21 @@
         "wedding veil"
       ]
     },
-    "hymenealhymenean": {
+    "hymeneal": {
+      "word": "HYMENEAL; HYMENEAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to marriage; as, hymeneal rites. Pope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A marriage song. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hymenean": {
       "word": "HYMENEAL; HYMENEAN",
       "definitions": [
         {
@@ -3559,7 +3872,17 @@
       ],
       "relatedWords": []
     },
-    "hymenopteralhymenopterous": {
+    "hymenopteral": {
+      "word": "HYMENOPTERAL; HYMENOPTEROUS",
+      "definitions": [
+        {
+          "text": "Like, or characteristic of, the Hymenoptera; pertaining to the Hymenoptera.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hymenopterous": {
       "word": "HYMENOPTERAL; HYMENOPTEROUS",
       "definitions": [
         {
@@ -3945,7 +4268,7 @@
       "word": "HYOGANOIDEI",
       "definitions": [
         {
-          "text": "A division of ganoid fishes, including the gar pikes and",
+          "text": "A division of ganoid fishes, including the gar pikes and bowfins.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3983,7 +4306,17 @@
       ],
       "relatedWords": []
     },
-    "hyoidealhyoidean": {
+    "hyoideal": {
+      "word": "HYOIDEAL; HYOIDEAN",
+      "definitions": [
+        {
+          "text": "Same as Hyoid, a.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hyoidean": {
       "word": "HYOIDEAL; HYOIDEAN",
       "definitions": [
         {
@@ -4103,7 +4436,17 @@
       ],
       "relatedWords": []
     },
-    "hypaethralhypethral": {
+    "hypaethral": {
+      "word": "HYPAETHRAL; HYPETHRAL",
+      "definitions": [
+        {
+          "text": "Exposed to the air; wanting a roof; -- applied to a building or part of a building. Gwilt.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypethral": {
       "word": "HYPAETHRAL; HYPETHRAL",
       "definitions": [
         {
@@ -4183,80 +4526,6 @@
       ],
       "relatedWords": []
     },
-    "hype": {
-      "word": "HYPE",
-      "definitions": [
-        {
-          "text": "Intense publicity for a future event, performed in a showy or excessively dramatic manner suggesting an importance not justified by the event; as, the hype surrounding the superbowl is usually ludicrous. [PJC]",
-          "partOfSpeech": ""
-        },
-        {
-          "text": "to publicize [e.g. a product or a future event] insistently, in a manner exaggerating the importance of; to promote flamboyantly. [wns=1] [WordNet 1.5]",
-          "partOfSpeech": ""
-        },
-        {
-          "text": "To stimulate or excite (a person); --usually used with up, and often in the passive form; as, she was all hyped up over her upcoming wedding. [PJC]",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": [
-        "LSD user",
-        "acidhead",
-        "acknowledgment",
-        "addict",
-        "advocate",
-        "alcoholic",
-        "appreciation",
-        "back",
-        "blurb",
-        "boost",
-        "buildup",
-        "chain smoker",
-        "cocaine sniffer",
-        "cokie",
-        "commend",
-        "commendation",
-        "cry up",
-        "cubehead",
-        "dipsomaniac",
-        "dope fiend",
-        "doper",
-        "drug abuser",
-        "drug addict",
-        "drug user",
-        "drunkard",
-        "fiend",
-        "freak",
-        "glue sniffer",
-        "good word",
-        "habitual",
-        "head",
-        "heavy smoker",
-        "honorable mention",
-        "hophead",
-        "junkie",
-        "marijuana smoker",
-        "methhead",
-        "narcotics addict",
-        "pillhead",
-        "plug",
-        "pothead",
-        "promote",
-        "promotion",
-        "puff",
-        "recognition",
-        "recommend",
-        "snowbird",
-        "speak highly of",
-        "speak warmly of",
-        "speak well of",
-        "speed freak",
-        "support",
-        "tout",
-        "tripper",
-        "user"
-      ]
-    },
     "hyper": {
       "word": "HYPER-",
       "definitions": [
@@ -4279,7 +4548,7 @@
       "word": "HYPERAEMIA",
       "definitions": [
         {
-          "text": "A superabundance or congestion of blood in an organ or part of the body. Active hyperæmia, cognestion d%ue to increased flow of blood to a part.",
+          "text": "A superabundance or congestion of blood in an organ or part of the body. Active hyperæmia, cognestion d%ue to increased flow of blood to a part. of blood from a part.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4289,7 +4558,7 @@
       "word": "HYPERAESTHESIA",
       "definitions": [
         {
-          "text": "A state of exalted or morbidly increased sensibility of the",
+          "text": "A state of exalted or morbidly increased sensibility of the body, or of a part of it.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4299,7 +4568,7 @@
       "word": "HYPERAPOPHYSIS",
       "definitions": [
         {
-          "text": "A lateral and backward-projecting process on the dorsal side of",
+          "text": "A lateral and backward-projecting process on the dorsal side of a vertebra.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4480,7 +4749,29 @@
         "unrestrainedness"
       ]
     },
-    "hyperbolichyperbolical": {
+    "hyperbolic": {
+      "word": "HYPERBOLIC; HYPERBOLICAL",
+      "definitions": [
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Belonging to the hyperbola; having the nature of the hyperbola.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Rhet.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Relating to, containing, or of the nature of, hyperbole; exaggerating or diminishing beyond the fact; exceeding the truth; as, an hyperbolical expression. \"This hyperbolical epitaph.\" Fuller. Hyperbolic functions (Math.), certain functions which have relations to the hyperbola corresponding to those which sines, cosines, tangents, etc., have to the circle; and hence, called hyperbolic sines, hyperbolic cosines, etc. that the distance from the pole to the generating point varies inversely as the angle swept over by the radius vector.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hyperbolical": {
       "word": "HYPERBOLIC; HYPERBOLICAL",
       "definitions": [
         {
@@ -5076,11 +5367,21 @@
       ],
       "relatedWords": []
     },
-    "hypermetropiahypermetropy": {
+    "hypermetropia": {
       "word": "HYPERMETROPIA; HYPERMETROPY",
       "definitions": [
         {
-          "text": "A condition of the eye in which, through shortness of the eyeball or fault of the refractive media, the rays of light come to a focus behind the retina; farsightedness; -- called also hyperopia. Cf. Emmetropia. better absolutely, is better than that for near objects, and hence, the individual is said to be farsighted. It is corrected by the use",
+          "text": "A condition of the eye in which, through shortness of the eyeball or fault of the refractive media, the rays of light come to a focus behind the retina; farsightedness; -- called also hyperopia. Cf. Emmetropia. better absolutely, is better than that for near objects, and hence, the individual is said to be farsighted. It is corrected by the use of convex glasses.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypermetropy": {
+      "word": "HYPERMETROPIA; HYPERMETROPY",
+      "definitions": [
+        {
+          "text": "A condition of the eye in which, through shortness of the eyeball or fault of the refractive media, the rays of light come to a focus behind the retina; farsightedness; -- called also hyperopia. Cf. Emmetropia. better absolutely, is better than that for near objects, and hence, the individual is said to be farsighted. It is corrected by the use of convex glasses.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5111,6 +5412,16 @@
       "definitions": [
         {
           "text": "An order of marsipobranchs including the lampreys. The suckerlike moth contains numerous teeth; the nasal opening is in the middle of the head above, but it does not connect with the mouth. See Cyclostoma, and Lamprey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hyperopia": {
+      "word": "HYPEROPIA",
+      "definitions": [
+        {
+          "text": "Hypermetropia.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5156,7 +5467,17 @@
       ],
       "relatedWords": []
     },
-    "hyperoxygenatedhyperoxygenized": {
+    "hyperoxygenated": {
+      "word": "HYPEROXYGENATED; HYPEROXYGENIZED",
+      "definitions": [
+        {
+          "text": "Combined with a relatively large amount of oxygen; -- said of higher oxides. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hyperoxygenized": {
       "word": "HYPEROXYGENATED; HYPEROXYGENIZED",
       "definitions": [
         {
@@ -5304,7 +5625,17 @@
       ],
       "relatedWords": []
     },
-    "hypertrophichypertrophical": {
+    "hypertrophic": {
+      "word": "HYPERTROPHIC; HYPERTROPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to hypertrophy; affected with, or tending to, hypertrophy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypertrophical": {
       "word": "HYPERTROPHIC; HYPERTROPHICAL",
       "definitions": [
         {
@@ -5462,7 +5793,7 @@
       "word": "HYPIDIOMORPHIC",
       "definitions": [
         {
-          "text": "Partly idiomorphic; -- said of rock a portion only of whose",
+          "text": "Partly idiomorphic; -- said of rock a portion only of whose constituents have a distinct crystalline form.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6121,7 +6452,17 @@
       ],
       "relatedWords": []
     },
-    "hypocarphypocarpium": {
+    "hypocarp": {
+      "word": "HYPOCARP; HYPOCARPIUM",
+      "definitions": [
+        {
+          "text": "A fleshy enlargement of the receptacle, or for the stem, below the proper fruit, as in the cashew. See Illust. of Cashew.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypocarpium": {
       "word": "HYPOCARP; HYPOCARPIUM",
       "definitions": [
         {
@@ -6387,6 +6728,16 @@
         "woebegone",
         "world-weary"
       ]
+    },
+    "hypochondriacal": {
+      "word": "HYPOCHONDRIACAL",
+      "definitions": [
+        {
+          "text": "Same as Hypochondriac, 2.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
     },
     "hypochondriacism": {
       "word": "HYPOCHONDRIACISM",
@@ -6704,7 +7055,7 @@
       "word": "HYPOCRITICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to a hypocrite, or to hypocrisy; as, a hypocriticalperson; a hypocritical look; a hypocritical action. Hypocritical professions of friendship and of pacific intentions were",
+          "text": "Of or pertaining to a hypocrite, or to hypocrisy; as, a hypocriticalperson; a hypocritical look; a hypocritical action. Hypocritical professions of friendship and of pacific intentions were not spared. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6849,11 +7200,21 @@
       ],
       "relatedWords": []
     },
+    "hypodermatic": {
+      "word": "HYPODERMATIC",
+      "definitions": [
+        {
+          "text": "Hypodermic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "hypodermic": {
       "word": "HYPODERMIC",
       "definitions": [
         {
-          "text": "Of or pertaining to the parts under the skin. Hypodermic medication, the application of remedies under the epidermis, usually",
+          "text": "Of or pertaining to the parts under the skin. Hypodermic medication, the application of remedies under the epidermis, usually by means of a small syringe, called the hypodermic syringe.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6917,7 +7278,17 @@
       ],
       "relatedWords": []
     },
-    "hypodicrotichypodicrotous": {
+    "hypodicrotic": {
+      "word": "HYPODICROTIC; HYPODICROTOUS",
+      "definitions": [
+        {
+          "text": "Exhibiting retarded dicrotism; as, a hypodicrotic pulse curve.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypodicrotous": {
       "word": "HYPODICROTIC; HYPODICROTOUS",
       "definitions": [
         {
@@ -7360,7 +7731,29 @@
       ],
       "relatedWords": []
     },
-    "hypostatichypostatical": {
+    "hypostatic": {
+      "word": "HYPOSTATIC; HYPOSTATICAL",
+      "definitions": [
+        {
+          "text": "Relating to hypostasis, or substance; hence, constitutive, or elementary. The grand doctrine of the chymists, touching their three hypostatical principles. Boyle.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Personal, or distinctly personal; relating to the divine hypostases, or substances. Bp. Pearson.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Med.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Depending upon, or due to, deposition or setting; as, hypostatic cognestion, cognestion due to setting of blood by gravitation. Hypostatic union (Theol.), the union of the divine with the human nature of Christ. Tillotson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypostatical": {
       "word": "HYPOSTATIC; HYPOSTATICAL",
       "definitions": [
         {
@@ -7416,7 +7809,17 @@
       ],
       "relatedWords": []
     },
-    "hypostomehypostoma": {
+    "hypostome": {
+      "word": "HYPOSTOME; HYPOSTOMA",
+      "definitions": [
+        {
+          "text": "The lower lip of trilobites, crustaceans, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypostoma": {
       "word": "HYPOSTOME; HYPOSTOMA",
       "definitions": [
         {
@@ -7470,17 +7873,31 @@
       "word": "HYPOTARSUS",
       "definitions": [
         {
-          "text": "A process on the posterior side of the tarsometatarsus of many",
+          "text": "A process on the posterior side of the tarsometatarsus of many birds; the calcaneal process.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "hypotenusehypothenuse": {
+    "hypotenuse": {
       "word": "HYPOTENUSE; HYPOTHENUSE",
       "definitions": [
         {
           "text": "The side of a right-angled triangle that is opposite to the right angle.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypothenuse": {
+      "word": "HYPOTENUSE; HYPOTHENUSE",
+      "definitions": [
+        {
+          "text": "The side of a right-angled triangle that is opposite to the right angle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Hypotenuse.",
           "partOfSpeech": "noun"
         }
       ],
@@ -7548,7 +7965,7 @@
       ],
       "relatedWords": []
     },
-    "hypothenalhypothenar": {
+    "hypothenal": {
       "word": "HYPOTHENAL; HYPOTHENAR",
       "definitions": [
         {
@@ -7559,8 +7976,12 @@
       "relatedWords": []
     },
     "hypothenar": {
-      "word": "HYPOTHENAR",
+      "word": "HYPOTHENAL; HYPOTHENAR",
       "definitions": [
+        {
+          "text": "Of or pertaining to the prominent part of the palm of the hand above the base of the little finger, or a corresponding part in the forefoot of an animal; as, the hypothenar eminence.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "The hypothenar eminence.",
           "partOfSpeech": "noun"
@@ -7574,16 +7995,6 @@
         {
           "text": "Of or pertaining to hypothenuse. [R.]",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "hypothenuse": {
-      "word": "HYPOTHENUSE",
-      "definitions": [
-        {
-          "text": "Same as Hypotenuse.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -7655,15 +8066,74 @@
         "working hypothesis"
       ]
     },
-    "hypothetichypothetical": {
+    "hypothetic": {
       "word": "HYPOTHETIC; HYPOTHETICAL",
       "definitions": [
         {
-          "text": "Characterized by, or of the nature of, an hypothesis; conditional; assumed without proof, for the purpose of reasoning and deducing proof, or of accounting for some fact or phenomenon. Causes hypothetical at least, if not real, for the various phenomena of the existence of which our experience informs us. Sir W. Hamilton. Hypothetical baptism (Ch. of Eng.), baptism administered to persons in respect to whom it is doubtful whether they have or have not been",
+          "text": "Characterized by, or of the nature of, an hypothesis; conditional; assumed without proof, for the purpose of reasoning and deducing proof, or of accounting for some fact or phenomenon. Causes hypothetical at least, if not real, for the various phenomena of the existence of which our experience informs us. Sir W. Hamilton. Hypothetical baptism (Ch. of Eng.), baptism administered to persons in respect to whom it is doubtful whether they have or have not been baptized before. Hook.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
+    },
+    "hypothetical": {
+      "word": "HYPOTHETIC; HYPOTHETICAL",
+      "definitions": [
+        {
+          "text": "Characterized by, or of the nature of, an hypothesis; conditional; assumed without proof, for the purpose of reasoning and deducing proof, or of accounting for some fact or phenomenon. Causes hypothetical at least, if not real, for the various phenomena of the existence of which our experience informs us. Sir W. Hamilton. Hypothetical baptism (Ch. of Eng.), baptism administered to persons in respect to whom it is doubtful whether they have or have not been baptized before. Hook.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "a fortiori",
+        "a posteriori",
+        "a priori",
+        "abstract",
+        "academic",
+        "analytic",
+        "armchair",
+        "assumed",
+        "categorical",
+        "conditional",
+        "conjectural",
+        "conjectured",
+        "deductive",
+        "dialectic",
+        "discursive",
+        "doubtful",
+        "enthymematic",
+        "epagogic",
+        "guessed",
+        "hypothesized",
+        "hypothetic",
+        "ideal",
+        "imagined",
+        "impractical",
+        "inductive",
+        "inferential",
+        "maieutic",
+        "moot",
+        "notional",
+        "postulatory",
+        "presumed",
+        "problematic",
+        "putative",
+        "reputed",
+        "soritical",
+        "speculative",
+        "supposed",
+        "suppositional",
+        "supposititious",
+        "suppositive",
+        "suppository",
+        "surmised",
+        "suspected",
+        "syllogistic",
+        "synthetic",
+        "theoretical",
+        "transcendent",
+        "transcendental"
+      ]
     },
     "hypothetist": {
       "word": "HYPOTHETIST",
@@ -7775,7 +8245,17 @@
       ],
       "relatedWords": []
     },
-    "hypsometrichypsometrical": {
+    "hypsometric": {
+      "word": "HYPSOMETRIC; HYPSOMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to hypsometry.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hypsometrical": {
       "word": "HYPSOMETRIC; HYPSOMETRICAL",
       "definitions": [
         {
@@ -7839,7 +8319,17 @@
       ],
       "relatedWords": []
     },
-    "hyrcanianhyrcan": {
+    "hyrcanian": {
+      "word": "HYRCANIAN; HYRCAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Hyrcania, an ancient country or province of Asia, southeast of the Caspian (which was also called the Hyracanian) Sea. \"The Hyrcan tiger.\" \"Hyracanian deserts.\" Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hyrcan": {
       "word": "HYRCANIAN; HYRCAN",
       "definitions": [
         {
@@ -8054,7 +8544,7 @@
         "withdrawal"
       ]
     },
-    "hysterichysterical": {
+    "hysteric": {
       "word": "HYSTERIC; HYSTERICAL",
       "definitions": [
         {
@@ -8063,6 +8553,105 @@
         }
       ],
       "relatedWords": []
+    },
+    "hysterical": {
+      "word": "HYSTERIC; HYSTERICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to hysteria; affected, or troubled, with hysterics; convulsive, fitful. With no hysteric weakness or feverish excitement, they preserved their peace and patience. Bancroft.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abandoned",
+        "amok",
+        "at fever pitch",
+        "bellowing",
+        "berserk",
+        "carried away",
+        "comical",
+        "crazed",
+        "delirious",
+        "demoniac",
+        "disordered",
+        "distracted",
+        "disturbed",
+        "ecstatic",
+        "emotionalistic",
+        "emotive",
+        "enraptured",
+        "fanatical",
+        "farcical",
+        "febrile",
+        "feral",
+        "ferocious",
+        "feverish",
+        "fierce",
+        "frantic",
+        "frenetic",
+        "frenzied",
+        "fulminating",
+        "funny",
+        "furious",
+        "haggard",
+        "hammy",
+        "hectic",
+        "hilarious",
+        "histrionic",
+        "hog-wild",
+        "howling",
+        "hypochondriac",
+        "hysteric",
+        "in a transport",
+        "in hysterics",
+        "infatuated",
+        "insane",
+        "intoxicated",
+        "irrational",
+        "mad",
+        "madding",
+        "maniac",
+        "melodramatic",
+        "neurasthenic",
+        "neurotic",
+        "nonrational",
+        "orgasmic",
+        "orgiastic",
+        "overanxious",
+        "overdesirous",
+        "overeager",
+        "overemotional",
+        "overenthusiastic",
+        "overzealous",
+        "perfervid",
+        "phobic",
+        "possessed",
+        "psychasthenic",
+        "psychoneurotic",
+        "rabid",
+        "raging",
+        "ramping",
+        "ranting",
+        "raving",
+        "ravished",
+        "roaring",
+        "running mad",
+        "sensational",
+        "sensationalistic",
+        "storming",
+        "theatrical",
+        "transported",
+        "ultrazealous",
+        "uncontrollable",
+        "uncontrolled",
+        "unreasoning",
+        "unrestrained",
+        "uproarious",
+        "violent",
+        "wild",
+        "wild-eyed",
+        "wild-looking"
+      ]
     },
     "hysterics": {
       "word": "HYSTERICS",
@@ -8078,7 +8667,7 @@
       "word": "HYSTEROEPILEPSY",
       "definitions": [
         {
-          "text": "A disease resembling hysteria in its nature, and characterized by the occurrence of epileptiform convulsions, which can often be controlled or excited by pressure on the ovaries, and upon other",
+          "text": "A disease resembling hysteria in its nature, and characterized by the occurrence of epileptiform convulsions, which can often be controlled or excited by pressure on the ovaries, and upon other definite points in the body.",
           "partOfSpeech": "noun"
         }
       ],
@@ -8108,7 +8697,7 @@
       "word": "HYSTEROPHYTE",
       "definitions": [
         {
-          "text": "A plant, like the fungus, which lives on dead or living organic",
+          "text": "A plant, like the fungus, which lives on dead or living organic matter.",
           "partOfSpeech": "noun"
         }
       ],

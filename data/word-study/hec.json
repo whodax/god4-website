@@ -365,7 +365,7 @@
       ],
       "relatedWords": []
     },
-    "hectoliterhectolitre": {
+    "hectoliter": {
       "word": "HECTOLITER; HECTOLITRE",
       "definitions": [
         {
@@ -375,7 +375,27 @@
       ],
       "relatedWords": []
     },
-    "hectometerhectometre": {
+    "hectolitre": {
+      "word": "HECTOLITER; HECTOLITRE",
+      "definitions": [
+        {
+          "text": "A measure of liquids, containing a hundred liters; equal to a tenth of a cubic meter, nearly 26",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hectometer": {
+      "word": "HECTOMETER; HECTOMETRE",
+      "definitions": [
+        {
+          "text": "A measure of length, equal to a hundred meters. It is equivalent to 328.09 feet.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hectometre": {
       "word": "HECTOMETER; HECTOMETRE",
       "definitions": [
         {

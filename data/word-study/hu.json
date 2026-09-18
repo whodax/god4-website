@@ -1,16 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "hutcffbaugelairofawildboarprobfromgoricelcf": {
-      "word": "hut, cf. F. bauge lair of a wild boar; prob. from G. or Icel., cf.",
-      "definitions": [
-        {
-          "text": "To lead away from purity or excellence; to corrupt in character or principles; to mar; to vitiate; to pollute; to seduce; as, to debauch one's self by intemperance; to debauch a woman; to debauch an army. Learning not debauched by ambition. Burke. A man must have got his conscience thoroughly debauched and hardened before he can arrive to the height of sin. South. Her pride debauched her judgment and her eyes. Cowley.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "huanaco": {
       "word": "HUANACO",
       "definitions": [
@@ -365,7 +355,7 @@
       ],
       "relatedWords": []
     },
-    "hubnerhuebner": {
+    "hubner": {
       "word": "HUBNER; HUEBNER",
       "definitions": [
         {
@@ -375,7 +365,27 @@
       ],
       "relatedWords": []
     },
-    "huchhuchen": {
+    "huebner": {
+      "word": "HUBNER; HUEBNER",
+      "definitions": [
+        {
+          "text": "A mineral of brownish black color, occurring in columnar or foliated masses. It is native manganese tungstate.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "huch": {
+      "word": "HUCH; HUCHEN",
+      "definitions": [
+        {
+          "text": "A large salmon (Salmo, or Salvelinus, hucho) inhabiting the Danube; -- called also huso, and bull trout.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "huchen": {
       "word": "HUCH; HUCHEN",
       "definitions": [
         {
@@ -888,6 +898,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To remove from the board (the piece which could have captured an opposing piece). See Huff, v. i., 3.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To enlarge; to swell up; as, bread huffs.",
           "partOfSpeech": "verb"
         },
@@ -1098,6 +1112,16 @@
         {
           "text": "Blusteringly; arrogantly. [R.] And huffingly doth this bonny Scot ride. Old Ballad.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "huffish": {
+      "word": "HUFFISH",
+      "definitions": [
+        {
+          "text": "Disposed to be blustering or arrogant; petulant.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1717,7 +1741,70 @@
         "wreck"
       ]
     },
-    "hulkinghulky": {
+    "hulking": {
+      "word": "HULKING; HULKY",
+      "definitions": [
+        {
+          "text": "Bulky; unwiedly. [R.] \"A huge hulking fellow.\" H. Brooke.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "all thumbs",
+        "awkward",
+        "blunderheaded",
+        "blundering",
+        "boorish",
+        "bulky",
+        "bumbling",
+        "bungling",
+        "butterfingered",
+        "careless",
+        "clownish",
+        "clumsy",
+        "clumsy-fisted",
+        "contrary",
+        "crosswise",
+        "cumbersome",
+        "cumbrous",
+        "elephantine",
+        "fingers all thumbs",
+        "fumbling",
+        "gauche",
+        "gawkish",
+        "gawky",
+        "graceless",
+        "ham-fisted",
+        "ham-handed",
+        "heavy-handed",
+        "hulky",
+        "impractical",
+        "inconvenient",
+        "inelegant",
+        "left-hand",
+        "left-handed",
+        "loutish",
+        "lubberly",
+        "lumbering",
+        "lumpish",
+        "lumpy",
+        "maladroit",
+        "massive",
+        "massy",
+        "oafish",
+        "perverse",
+        "ponderous",
+        "sloppy",
+        "stiff",
+        "uncouth",
+        "ungainly",
+        "ungraceful",
+        "unhandy",
+        "unmanageable",
+        "unwieldy"
+      ]
+    },
+    "hulky": {
       "word": "HULKING; HULKY",
       "definitions": [
         {
@@ -1977,7 +2064,23 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To make a nasal sound, like that of the letter m prolonged, without opening the mouth, or articulating; to mumble in monotonous undertone; to drone.",
+          "text": "To make a nasal sound, like that of the letter m prolonged, without opening the mouth, or articulating; to mumble in monotonous undertone; to drone. The cloudy messenger turns me his back, And hums. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Etym: [Cf. Hum, interj.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make an inarticulate sound, like h'm, through the nose in the process of speaking, from embarrassment or a affectation; to hem.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To express satisfaction by a humming noise. Here the spectators hummed. Trial of the Regicides. humming and displeasure by hissing.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have the sensation of a humming noise; as, my head hums, -- a pathological condition.",
           "partOfSpeech": "verb"
         },
         {
@@ -2345,7 +2448,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Humanizing; exalting; tending to refine.",
+          "text": "Humanizing; exalting; tending to refine. tender; merciful.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3632,7 +3735,17 @@
         "wet blanket"
       ]
     },
-    "humecthumectate": {
+    "humect": {
+      "word": "HUMECT; HUMECTATE",
+      "definitions": [
+        {
+          "text": "To moisten; to wet. [Obs.] Howell.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "humectate": {
       "word": "HUMECT; HUMECTATE",
       "definitions": [
         {
@@ -5838,7 +5951,7 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To have an eager desire; to long.",
+          "text": "To have an eager desire; to long. Blessed are they which do hunger and thirst after righteouness. Matt. v. 6.",
           "partOfSpeech": "verb"
         },
         {
@@ -5971,7 +6084,17 @@
         "yen"
       ]
     },
-    "hungerbithungerbitten": {
+    "hungerbit": {
+      "word": "HUNGER-BIT; HUNGER-BITTEN",
+      "definitions": [
+        {
+          "text": "Pinched or weakened by hunger. [Obs.] Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hungerbitten": {
       "word": "HUNGER-BIT; HUNGER-BITTEN",
       "definitions": [
         {
@@ -7248,19 +7371,13 @@
       ],
       "relatedWords": []
     },
-    "hurrahhurra": {
+    "hurrah": {
       "word": "HURRAH; HURRA",
       "definitions": [
         {
           "text": "A word used as a shout of joy, triumph, applause, encouragement, or welcome. Hurrah! hurrah! for Ivry and Henry of Navarre. Macaulay.",
           "partOfSpeech": "interjection"
-        }
-      ],
-      "relatedWords": []
-    },
-    "hurrah": {
-      "word": "HURRAH",
-      "definitions": [
+        },
         {
           "text": "A cheer; a shout of joy, etc. Hurrah's nest, state of utmost confusion. [Colloq. U.S.] A perfect hurrah's nest in our kitchen. Mrs. Stowe.",
           "partOfSpeech": "noun"
@@ -7341,6 +7458,16 @@
         "yowl",
         "zeal"
       ]
+    },
+    "hurra": {
+      "word": "HURRAH; HURRA",
+      "definitions": [
+        {
+          "text": "A word used as a shout of joy, triumph, applause, encouragement, or welcome. Hurrah! hurrah! for Ivry and Henry of Navarre. Macaulay.",
+          "partOfSpeech": "interjection"
+        }
+      ],
+      "relatedWords": []
     },
     "hurricane": {
       "word": "HURRICANE",
@@ -8204,7 +8331,7 @@
       "word": "HURTFUL",
       "definitions": [
         {
-          "text": "Tending to impair or damage; injurious; mischievous; occasioning loss or injury; as, hurtful words or conduct. disadvantageous; mischievous; injurious; noxious; unwholesome;",
+          "text": "Tending to impair or damage; injurious; mischievous; occasioning loss or injury; as, hurtful words or conduct. disadvantageous; mischievous; injurious; noxious; unwholesome; destructive.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8466,7 +8593,7 @@
       "word": "HURTLESS",
       "definitions": [
         {
-          "text": "Doing no injury; harmless; also, unhurt; without injury or harm.",
+          "text": "Doing no injury; harmless; also, unhurt; without injury or harm. Gentle dame so hurtless and so true. Spenser.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9985,16 +10112,6 @@
         {
           "text": "To receive or attend with huzzas. He was huzzaed into the court. Addison.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "huntsmanmonteamountainforestlmonsmontismountainsee": {
-      "word": "huntsman, monte a mountain, forest, L. mons, montis, mountain. See",
-      "definitions": [
-        {
-          "text": "An ancient kind of cap worn by horsemen or huntsmen. Bacon.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

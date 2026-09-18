@@ -2,8 +2,12 @@
   "version": "v1",
   "entries": {
     "col": {
-      "word": "COL",
+      "word": "COL; COL-",
       "definitions": [
+        {
+          "text": "- (with, together. See Com-.",
+          "partOfSpeech": ""
+        },
         {
           "text": "A short ridge connecting two higher elevations or mountains; the pass over such a ridge.",
           "partOfSpeech": "noun"
@@ -154,7 +158,17 @@
         "winnowing machine"
       ]
     },
-    "colanutcolaseed": {
+    "colanut": {
+      "word": "COLA NUT; COLA SEED",
+      "definitions": [
+        {
+          "text": "The bitter fruit of Cola acuminata, which is nearly as large as a chestnut, and furnishes a stimulant, which is used in medicine.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "colaseed": {
       "word": "COLA NUT; COLA SEED",
       "definitions": [
         {
@@ -224,16 +238,6 @@
       ],
       "relatedWords": []
     },
-    "colcol": {
-      "word": "COL; COL-",
-      "definitions": [
-        {
-          "text": "- (with, together. See Com-.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "colcothar": {
       "word": "COLCOTHAR",
       "definitions": [
@@ -247,6 +251,50 @@
     "cold": {
       "word": "COLD",
       "definitions": [
+        {
+          "text": "Deprived of heat, or having a low temperature; not warm or hot; gelid; frigid. \"The snowy top of cold Olympis.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Lacking the sensation of warmth; suffering from the absence of heat; chilly; shivering; as, to be cold.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not pungent or acrid. \"Cold plants.\" Bacon",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Wanting in ardor, intensity, warmth, zeal, or passion; spiritless; unconcerned; reserved. A cold and unconcerned spectator. T. Burnet. No cold relation is a zealous citizen. Burke.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Unwelcome; disagreeable; unsatisfactory. \"Cold news for me.\" \"Cold comfort.\" Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Wanting in power to excite; dull; uninteresting. What a deal of cold business doth a man misspend the better part of life in! B. Jonson. The jest grows cold . . . when in comes on in a second scene. Addison.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Affecting the sense of smell (as of hunting dogs) but feebly; having lost its odor; as, a cold scent.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Not sensitive; not acute. Smell this business with a sense as cold As is a dead man's nose. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Distant; -- said, in the game of hunting for some object, of a seeker remote from the thing concealed.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Paint.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having a bluish effect. Cf. Warm, 8. Cold abscess. See under Abscess. n., 8. cutting cold metal. Weale. He was slain in cold blood after thefight was over. Sir W. Scott. To give one the cold shoulder, to treat one with neglect. passionless; reserved; unfeeling; stoical.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "The relative absence of heat or warmth.",
           "partOfSpeech": "noun"
@@ -751,6 +799,81 @@
       ],
       "relatedWords": []
     },
+    "coldhearted": {
+      "word": "COLD-HEARTED",
+      "definitions": [
+        {
+          "text": "Wanting passion or feeling; indifferent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "affectless",
+        "anesthetized",
+        "arctic",
+        "autistic",
+        "blunt",
+        "callous",
+        "calloused",
+        "catatonic",
+        "chill",
+        "chilly",
+        "cold",
+        "cold as charity",
+        "cold of heart",
+        "cold-blooded",
+        "coldblooded",
+        "cool",
+        "dispassionate",
+        "drugged",
+        "dull",
+        "emotionally dead",
+        "emotionless",
+        "flinthearted",
+        "frigid",
+        "frosted",
+        "frosty",
+        "frozen",
+        "hard",
+        "hard of heart",
+        "hardened",
+        "hardhearted",
+        "heartless",
+        "icy",
+        "immovable",
+        "impassible",
+        "impassive",
+        "inexcitable",
+        "insensitive",
+        "insusceptible",
+        "ironhearted",
+        "nonemotional",
+        "obdurate",
+        "objective",
+        "obtuse",
+        "out of touch",
+        "passionless",
+        "self-absorbed",
+        "soulless",
+        "spiritless",
+        "stonyhearted",
+        "unaffectionate",
+        "uncompassionate",
+        "unemotional",
+        "unfeeling",
+        "unimpassioned",
+        "unimpressionable",
+        "unloving",
+        "unmerciful",
+        "unnatural",
+        "unpassionate",
+        "unresponding",
+        "unresponsive",
+        "unsusceptible",
+        "unsympathetic",
+        "untouchable"
+      ]
+    },
     "coldish": {
       "word": "COLDISH",
       "definitions": [
@@ -1129,7 +1252,7 @@
       ],
       "relatedWords": []
     },
-    "coleopteralcoleopterous": {
+    "coleopteral": {
       "word": "COLEOPTERAL; COLEOPTEROUS",
       "definitions": [
         {
@@ -1155,6 +1278,16 @@
         {
           "text": "One versed in the study of the Coleoptera.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coleopterous": {
+      "word": "COLEOPTERAL; COLEOPTEROUS",
+      "definitions": [
+        {
+          "text": "Having wings covered with a case or sheath; belonging to the Coleoptera.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -1249,7 +1382,7 @@
       ],
       "relatedWords": []
     },
-    "coletcollet": {
+    "colet": {
       "word": "COLET; COLLET",
       "definitions": [
         {
@@ -1259,7 +1392,7 @@
       ],
       "relatedWords": []
     },
-    "coletitcoaltit": {
+    "coletit": {
       "word": "COLETIT; COALTIT",
       "definitions": [
         {
@@ -2373,6 +2506,54 @@
       "word": "COLLAR",
       "definitions": [
         {
+          "text": "Something worn round the neck, whether for use, ornament, restraint, or identification; as, the collar of a coat; a lady's collar; the collar of a dog.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Arch.) (a) A ring or cinture. (b) A collar beam.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The neck or line of junction between the root of a plant and its stem. Gray.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An ornament worn round the neck by knights, having on it devises to designate their rank or order.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.) (a) A ringlike part of a mollusk in connection with esophagus. (b) A colored ring round the neck of a bird or mammal.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A ring or round flange upon, surrounding, or against an object, and used for rastraining motion within given limits, or for holding something to its place, or for hibing an opening around an object; as, a collar on a shaft, used to prevent endwise motion of the shaft; a collar surrounding a stovepipe at the place where it enters a wall. The flanges of a piston and the gland of a stuffing box are sometimes called collars.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An eye formed in the bight or bend of a shroud or stay to go over the masthead; also, a rope to which certain parts of rigging, as dead-eyes, are secured.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A curb, or a horizontal timbering, around the mouth of a shaft. Raymond. Collar beam (Arch.), a horizontal piece of timber connecting and tying together two opposite rafters; -- also, called simply collar. [Eng.] Johnson. persons, who are dignitaries of honorary orders, wear the collars of those orders. difficulty, labor, or engagement. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To seize by the collar.",
           "partOfSpeech": "verb"
         },
@@ -2662,7 +2843,17 @@
       ],
       "relatedWords": []
     },
-    "collaretcollarette": {
+    "collaret": {
+      "word": "COLLARET; COLLARETTE",
+      "definitions": [
+        {
+          "text": "A small collar; specif., a woman's collar of lace, fur, or other fancy material.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "collarette": {
       "word": "COLLARET; COLLARETTE",
       "definitions": [
         {
@@ -3028,6 +3219,58 @@
     "collation": {
       "word": "COLLATION",
       "definitions": [
+        {
+          "text": "The act of collating or comparing; a comparison of one copy er thing (as of a book, or manuscript) with another of a like kind; comparison, in general. Pope.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Print.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The gathering and examination of sheets preparatory to binding.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of conferring or bestowing. [Obs.] Not by the collation of the king . . . but by the people. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A conference. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eccl. Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The presentation of a clergyman to a benefice by a bishop, who has it in his own gift.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law) (a) The act of comparing the copy of any paper with its original to ascertain its conformity. (b) The report of the act made by the proper officers.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Scots Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The right which an heir has of throwing the whole heritable and movable estates of the deceased into one mass, and sharing it equaly with others who are of the same degree of kindred. Louisiana. Bouvier.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Eccles.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A collection of the Lives of the Fathers or other devout work read daily in monasteries.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A light repast or luncheon; as, a cold collation; -- first applied to the refreshment on fast days that accompanied the reading of the collation in monasteries. A collation of wine and sweetmeats. Whiston. Collation of seals (Old Law), a method of ascertaining the genuineness of a seal by comparing it with another known to be genuine. Bouvier.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To partake of a collation. [Obs.] May 20, 1658, I . . . collationed in Spring Garden. Evelyn.",
           "partOfSpeech": "verb"
@@ -4679,8 +4922,12 @@
       "relatedWords": []
     },
     "collet": {
-      "word": "COLLET",
+      "word": "COLET; COLLET",
       "definitions": [
+        {
+          "text": "An inferior church servant. [Obs.] See Acolyte.",
+          "partOfSpeech": ""
+        },
         {
           "text": "A small collar or neckband. Foxe.",
           "partOfSpeech": "noun"
@@ -5609,7 +5856,7 @@
       "word": "COLLOQUIAL",
       "definitions": [
         {
-          "text": "Pertaining to, or used in, conversation, esp. common and familiar conversation; conversational; hence, unstudied; informal;",
+          "text": "Pertaining to, or used in, conversation, esp. common and familiar conversation; conversational; hence, unstudied; informal; as, colloquial intercourse; colloquial phrases; a colloquial style. His [Johnson's] colloquial talents were, indeed, of the highest order. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8403,6 +8650,40 @@
       ],
       "relatedWords": []
     },
+    "colorblind": {
+      "word": "COLOR-BLIND",
+      "definitions": [
+        {
+          "text": "Affected with color blindness. See Color blindness, under Color, n.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "ableptical",
+        "amaurotic",
+        "benighted",
+        "bereft of light",
+        "blind",
+        "dark",
+        "dim-sighted",
+        "eyeless",
+        "hemeralopic",
+        "in darkness",
+        "mind-blind",
+        "nyctalopic",
+        "rayless",
+        "sightless",
+        "spiritually blind",
+        "stark blind",
+        "stone-blind",
+        "undiscerning",
+        "unenlightened",
+        "unobserving",
+        "unperceiving",
+        "unseeing",
+        "visionless"
+      ]
+    },
     "colored": {
       "word": "COLORED",
       "definitions": [
@@ -9569,7 +9850,7 @@
       "word": "COLTISH",
       "definitions": [
         {
-          "text": "Like a colt; wanton; frisky.",
+          "text": "Like a colt; wanton; frisky. He was all coltish, full of ragery. Chaucer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -9965,7 +10246,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The body formed by the union of the stamens in the Mallow",
+          "text": "The body formed by the union of the stamens in the Mallow family, or of the stamens and pistil in the orchids. Attached column. See under Attach, v. t. the form, and making a line between them in printing.",
           "partOfSpeech": "noun"
         }
       ],

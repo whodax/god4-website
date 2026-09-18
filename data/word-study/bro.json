@@ -718,7 +718,21 @@
         "young thing"
       ]
     },
-    "broadaxbroadaxe": {
+    "broadax": {
+      "word": "BROADAX; BROADAXE",
+      "definitions": [
+        {
+          "text": "An ancient military weapon; a battle-ax.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An ax with a broad edge, for hewing timber.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadaxe": {
       "word": "BROADAX; BROADAXE",
       "definitions": [
         {
@@ -1156,7 +1170,17 @@
       ],
       "relatedWords": []
     },
-    "broadleavedbroadleafed": {
+    "broadleafed": {
+      "word": "BROAD-LEAVED; BROAD-LEAFED",
+      "definitions": [
+        {
+          "text": "Having broad, or relatively broad, leaves. Keats.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "broadleaved": {
       "word": "BROAD-LEAVED; BROAD-LEAFED",
       "definitions": [
         {
@@ -1613,7 +1637,17 @@
       ],
       "relatedWords": []
     },
-    "brockenspecterbrockenspectre": {
+    "brockenspecter": {
+      "word": "BROCKEN SPECTER; BROCKEN SPECTRE",
+      "definitions": [
+        {
+          "text": "A mountain specter (which see), esp. that observed on the Brocken, in the Harz Mountains.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "brockenspectre": {
       "word": "BROCKEN SPECTER; BROCKEN SPECTRE",
       "definitions": [
         {
@@ -1703,7 +1737,11 @@
       "word": "BROGUE",
       "definitions": [
         {
-          "text": "A stout, coarse shoe; a brogan. horsehide or deerskin, untanned or tenned with the hair on, gathered round the ankle with a thong. The name was afterward given to any",
+          "text": "A stout, coarse shoe; a brogan. horsehide or deerskin, untanned or tenned with the hair on, gathered round the ankle with a thong. The name was afterward given to any shoe worn as a part of the Highland costume. Clouted brogues, patched brogues; also, brogues studded with nails. See under Clout, v. t.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A dialectic pronunciation; esp. the Irish manner of pronouncing English. Or take, Hibernis, thy still ranker brogue. Lloyd.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2637,6 +2675,100 @@
       ],
       "relatedWords": []
     },
+    "broker": {
+      "word": "BROKER",
+      "definitions": [
+        {
+          "text": "One who transacts business for another; an agent.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An agent employed to effect bargains and contracts, as a middleman or negotiator, between other persons, for a compensation commonly called brokerage. He takes no possession, as broker, of the subject matter of the negotiation. He generally contracts in the names of those who employ him, and not in his own. Story.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A dealer in money, notes, bills of exchange, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A dealer in secondhand goods. [Eng.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A pimp or procurer. [Obs.] Shak. Bill broker, one who buys and sells notes and bills of exchange. member of the Stock Exchange) who executes orders by running from office to office, or by transactions on the street. [U.S.] -- Exchange broker, one who buys and sells uncurrent money, and deals in exchanges relating to money. vessels, or against fire. loans, etc., upon mortgage. procuring freight, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Realtor",
+        "Wall Streeter",
+        "agent",
+        "arbitrator",
+        "bill broker",
+        "bond crowd",
+        "cambist",
+        "connection",
+        "contact",
+        "cotton broker",
+        "curb broker",
+        "dealer",
+        "diamond broker",
+        "discount broker",
+        "distributor",
+        "estate agent",
+        "floor broker",
+        "floor trader",
+        "floorman",
+        "furniture broker",
+        "go-between",
+        "grain broker",
+        "hotel broker",
+        "insurance broker",
+        "interagent",
+        "interceder",
+        "intercessor",
+        "intermediary",
+        "intermediate",
+        "intermediator",
+        "intermedium",
+        "internuncio",
+        "interpleader",
+        "jobber",
+        "land broker",
+        "liaison",
+        "link",
+        "mediary",
+        "mediator",
+        "medium",
+        "middleman",
+        "money broker",
+        "money changer",
+        "mortgage broker",
+        "negotiant",
+        "negotiator",
+        "note broker",
+        "odd-lot dealer",
+        "pawnbroker",
+        "pit man",
+        "real estate agent",
+        "real estate broker",
+        "registered representative",
+        "sharebroker",
+        "ship broker",
+        "specialist",
+        "stock dealer",
+        "stock-exchange broker",
+        "stockbroker",
+        "stockjobber",
+        "tie",
+        "two-dollar broker",
+        "wholesaler"
+      ]
+    },
     "brokerage": {
       "word": "BROKERAGE",
       "definitions": [
@@ -2907,7 +3039,7 @@
         "twice-told tale"
       ]
     },
-    "bromidepaperbromidpaper": {
+    "bromidepaper": {
       "word": "BROMIDE PAPER; BROMID PAPER",
       "definitions": [
         {
@@ -2923,6 +3055,16 @@
         {
           "text": "A conventional comment or saying, such as those characteristic of bromides. [Slang]",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "bromidpaper": {
+      "word": "BROMIDE PAPER; BROMID PAPER",
+      "definitions": [
+        {
+          "text": "A sensitized paper coated with gelatin impregnated with bromide of silver, used in contact printing and in enlarging.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -3407,7 +3549,17 @@
       ],
       "relatedWords": []
     },
-    "brontolitebrontolith": {
+    "brontolite": {
+      "word": "BRONTOLITE; BRONTOLITH",
+      "definitions": [
+        {
+          "text": "An aërolite. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "brontolith": {
       "word": "BRONTOLITE; BRONTOLITH",
       "definitions": [
         {
@@ -3897,6 +4049,10 @@
     "brook": {
       "word": "BROOK",
       "definitions": [
+        {
+          "text": "A natural stream of water smaller than a river or creek. The Lord thy God bringeth thee into a good land, a land of brooks of water. Deut. viii. 7. Empires itself, as doth an inland brook Into the main of waters. Shak.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To use; to enjoy. [Obs.] Chaucer.",
           "partOfSpeech": "verb"
@@ -5451,16 +5607,6 @@
       ],
       "relatedWords": []
     },
-    "brownpolishfbrunirfrfbrunbrownfrohgbrcfmhg": {
-      "word": "brown, polish, F. brunir, fr. F. brun brown, fr. OHG. br; cf. MHG.",
-      "definitions": [
-        {
-          "text": "To cause to shine; to make smooth and bright; to polish; specifically, to polish by rubbing with something hard and smooth; as, to burnish brass or paper. The frame of burnished steel, that east a glare From far, and seemed to thaw the freezing air. Dryden. Now the village windows blaze, Burnished by the setting sun. Cunningham. Burnishing machine, a machine for smoothing and polishing by compression, as in making paper collars.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "brownrace": {
       "word": "BROWN RACE",
       "definitions": [
@@ -5524,6 +5670,10 @@
     "browse": {
       "word": "BROWSE",
       "definitions": [
+        {
+          "text": "The tender branches or twigs of trees and shrubs, fit for the food of cattle and other animals; green food. Spenser. Sheep, goats, and oxen, and the nobler steed, On browse, and corn, and flowery meadows feed. Dryden.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To eat or nibble off, as the tender branches of trees, shrubs, etc.; -- said of cattle, sheep, deer, and some other animals. Yes, like the stag, when snow the plasture sheets, The barks of trees thou browsedst. Shak.",
           "partOfSpeech": "verb"
@@ -5590,16 +5740,6 @@
       "definitions": [
         {
           "text": "Srubs and bushes upon which animals browse.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "browsewoodprobfrohgburstgborstebristlecfalsoarmor": {
-      "word": "browsewood, prob. fr. OHG. burst, G. borste, bristle; cf. also Armor.",
-      "definitions": [
-        {
-          "text": "The tender branches or twigs of trees and shrubs, fit for the food of cattle and other animals; green food. Spenser. Sheep, goats, and oxen, and the nobler steed, On browse, and corn, and flowery meadows feed. Dryden.",
           "partOfSpeech": "noun"
         }
       ],

@@ -553,7 +553,17 @@
       ],
       "relatedWords": []
     },
-    "seacrawfishseacrayfish": {
+    "seacrawfish": {
+      "word": "SEA CRAWFISH; SEA CRAYFISH",
+      "definitions": [
+        {
+          "text": "Any crustacean of the genus Palinurus and allied genera, as the European spiny lobster (P. vulgaris), which is much used as an article of food. See Lobster.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "seacrayfish": {
       "word": "SEA CRAWFISH; SEA CRAYFISH",
       "definitions": [
         {
@@ -851,7 +861,17 @@
       ],
       "relatedWords": []
     },
-    "seagateseagait": {
+    "seagait": {
+      "word": "SEA-GATE; SEA-GAIT",
+      "definitions": [
+        {
+          "text": "A long, rolling swell of the sea. Ham. Nav. Encyc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seagate": {
       "word": "SEA-GATE; SEA-GAIT",
       "definitions": [
         {
@@ -871,7 +891,7 @@
       ],
       "relatedWords": []
     },
-    "seagherkinseagirkin": {
+    "seagherkin": {
       "word": "SEA GHERKIN; SEA GIRKIN",
       "definitions": [
         {
@@ -896,6 +916,16 @@
       "definitions": [
         {
           "text": "A kind of kelp (Laminaria digitata) with palmately cleft fronds; -- called also sea wand, seaware, and tangle.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "seagirkin": {
+      "word": "SEA GHERKIN; SEA GIRKIN",
+      "definitions": [
+        {
+          "text": "Any small holothurian resembling in form a gherkin.",
           "partOfSpeech": ""
         }
       ],
@@ -1199,6 +1229,26 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "An engraved or inscribed stamp, used for marking an impression in wax or other soft substance, to be attached to a document, or otherwise used by way of authentication or security.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Wax, wafer, or other tenacious substance, set to an instrument, and impressed or stamped with a seal; as, to give a deed under hand and seal. Till thou canst rail the seal from off my bond Thou but offend;st thy lungs to speak so loud. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which seals or fastens; esp., the wax or wafer placed on a letter or other closed paper, etc., to fasten it.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which confirms, ratifies, or makes stable; that which authenticates; that which secures; assurance. \"under the seal of silence.\" Milton. Like a red seal is the setting sun On the good and the evil men have done. Lonfellow.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An arrangement for preventing the entrance or return of gas or air into a pipe, by which the open end of the pipe dips beneath the surface of water or other liquid, or a deep bend or sag in the pipe is filled with the liquid; a draintrap. Great seal. See under Great. such a way that the lock can not be opened without rupturing the seal. Seal manual. See under Manual, a. with a device resembling a seal; a signet ring. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To set or affix a seal to; hence, to authenticate; to confirm; to ratify; to establish; as, to seal a deed. And with my hand I seal my true heart's love. Shak.",
           "partOfSpeech": "verb"
         },
@@ -1367,7 +1417,7 @@
       ],
       "relatedWords": []
     },
-    "sealghselch": {
+    "sealgh": {
       "word": "SEALGH; SELCH",
       "definitions": [
         {
@@ -1413,24 +1463,6 @@
         {
           "text": "The three-bearded rockling. See Rockling.",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "sealorstampcffbullecfbullawritingbowlaballboil": {
-      "word": "seal or stamp: cf. F. bulle. Cf. Bull a writing, Bowl a ball, Boil,",
-      "definitions": [
-        {
-          "text": "A seal. See Bulla.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A letter, edict, or respect, of the pope, written in Gothic characters on rough parchment, sealed with a bulla, and dated \"a die Incarnationis,\" i. e., \"from the day of the Incarnation.\" See Apostolical brief, under Brief. A fresh bull of Leo's had declared how inflexible the court of Rome was in the point of abuses. Atterbury.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A grotesque blunder in language; an apparent congruity, but real incongruity, of ideas, contained in a form of expression; so called, perhaps, from the apparent incongruity between the dictatorial nature of the pope's bulls and his professions of humility. And whereas the papist boasts himself to be a Roman Catholic, it is a mere contradiction, one of the pope's bulls, as if he should say universal particular; a Catholic schimatic. Milton. The Golden Bull, an edict or imperial constitution made by the emperor Charles IV. (1356), containing what became the fundamental law of the German empire; -- so called from its golden seal.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -2029,7 +2061,17 @@
       ],
       "relatedWords": []
     },
-    "seapoacherseapoker": {
+    "seapoacher": {
+      "word": "SEA POACHER; SEA POKER",
+      "definitions": [
+        {
+          "text": "The lyrie.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "seapoker": {
       "word": "SEA POACHER; SEA POKER",
       "definitions": [
         {
@@ -2170,8 +2212,12 @@
       "relatedWords": []
     },
     "sear": {
-      "word": "SEAR",
+      "word": "SEAR; SERE",
       "definitions": [
+        {
+          "text": "[OE. seer, AS. seár (assumed) fr. seárian to wither; akin to D. zoor dry, LG. soor, OHG. soren to to wither, Gr. sush) to dry, to wither, Zend hush to dry. sq. root152. Cf. Austere, Sorrel, a.] Dry; withered; no longer green; -- applied to leaves. Milton. I have lived long enough; my way of life Is fall'n into the sear, the yellow leaf. Shak.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "To wither; to dry up. Shak.",
           "partOfSpeech": "verb"
@@ -2427,16 +2473,6 @@
       ],
       "relatedWords": []
     },
-    "searsere": {
-      "word": "SEAR; SERE",
-      "definitions": [
-        {
-          "text": "[OE. seer, AS. seár (assumed) fr. seárian to wither; akin to D.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "seasalt": {
       "word": "SEA SALT",
       "definitions": [
@@ -2601,6 +2637,22 @@
       "word": "SEASON",
       "definitions": [
         {
+          "text": "One of the divisions of the year, marked by alternations in the length of day and night, or by distinct conditions of temperature, moisture, etc., caused mainly by the relative position of the earth with respect to the sun. In the north temperate zone, four seasons, namely, spring, summer, autumn, and winter, are generally recognized. Some parts of the world have three seasons, -- the dry, the rainy, and the cold; other parts have but two, -- the dry and the rainy. The several seasons of the year in their beauty. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Hence, a period of time, especially as regards its fitness for anything contemplated or done; a suitable or convenient time; proper conjuncture; as, the season for planting; the season for rest. The season, prime for sweetest scents and airs. Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A period of time not very long; a while; a time. Thou shalt be blind, not seeing the sun for a season. Acts xiii. 11.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which gives relish; seasoning. [Obs.] You lack the season of all natures, sleep. Shak. In season, in good time, or sufficiently early for the purpose. appointed time.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To render suitable or appropriate; to prepare; to fit. He is fit and seasoned for his passage. Shak.",
           "partOfSpeech": "verb"
         },
@@ -2651,7 +2703,7 @@
       "word": "SEASONABLE",
       "definitions": [
         {
-          "text": "Occurring in good time, in due season, or in proper time for the purpose; suitable to the season; opportune; timely; as, a seasonable supply of rain.",
+          "text": "Occurring in good time, in due season, or in proper time for the purpose; suitable to the season; opportune; timely; as, a seasonable supply of rain. Mercy is seasonable in the time of affliction. Ecclus. xxxv. 20.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2766,6 +2818,34 @@
     "seat": {
       "word": "SEAT",
       "definitions": [
+        {
+          "text": "The place or thing upon which one sits; hence; anything made to be sat in or upon, as a chair, bench, stool, saddle, or the like. And Jesus . . . overthrew the tables of the money changers, and the seats of them that sold doves. Matt. xxi. 12.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The place occupied by anything, or where any person or thing is situated, resides, or abides; a site; an abode, a station; a post; a situation. Where thou dwellest, even where Satan's seat is. Rev. ii. 13. He that builds a fair house upon an ill seat committeth himself to prison. Bacon. A seat of plenty, content, and tranquillity. Macaulay.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That part of a thing on which a person sits; as, the seat of a chair or saddle; the seat of a pair of pantaloons.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A sitting; a right to sit; regular or appropriate place of sitting; as, a seat in a church; a seat for the season in the opera house.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Posture, or way of sitting, on horseback. She had so good a seat and hand she might be trusted with any mount. G. Eliot.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mach.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A part or surface on which another part or surface rests; as, a valve seat. Seat worm (Zoöl.), the pinworm.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To place on a seat; to cause to sit down; as, to seat one's self. The guests were no sooner seated but they entered into a warm debate. Arbuthnot.",
           "partOfSpeech": "verb"
@@ -2963,6 +3043,16 @@
       ],
       "relatedWords": []
     },
+    "seawan": {
+      "word": "SEAWAN; SEAWANT",
+      "definitions": [
+        {
+          "text": "The name used by the Algonquin Indians for the shell beads which passed among the Indians as money. or purple, -- the former having half the value of the latter. Many writers, however, use the terms seawan and wampum indiscriminately. Bartlett.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "seawand": {
       "word": "SEAWAND",
       "definitions": [
@@ -2973,7 +3063,7 @@
       ],
       "relatedWords": []
     },
-    "seawanseawant": {
+    "seawant": {
       "word": "SEAWAN; SEAWANT",
       "definitions": [
         {

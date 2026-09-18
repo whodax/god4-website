@@ -47,7 +47,17 @@
       ],
       "relatedWords": []
     },
-    "psalmodicpsalmodical": {
+    "psalmodic": {
+      "word": "PSALMODIC; PSALMODICAL",
+      "definitions": [
+        {
+          "text": "Relating to psalmody.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmodical": {
       "word": "PSALMODIC; PSALMODICAL",
       "definitions": [
         {
@@ -97,7 +107,17 @@
       ],
       "relatedWords": []
     },
-    "psalmographerpsalmographist": {
+    "psalmographer": {
+      "word": "PSALMOGRAPHER; PSALMOGRAPHIST",
+      "definitions": [
+        {
+          "text": "A writer of psalms, or sacred songs and hymns.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psalmographist": {
       "word": "PSALMOGRAPHER; PSALMOGRAPHIST",
       "definitions": [
         {
@@ -159,6 +179,16 @@
       ],
       "relatedWords": []
     },
+    "psammite": {
+      "word": "PSAMMITE",
+      "definitions": [
+        {
+          "text": "A species of micaceous sandstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "psarolite": {
       "word": "PSAROLITE",
       "definitions": [
@@ -199,7 +229,7 @@
       ],
       "relatedWords": []
     },
-    "pseudepigraphicpseudepigraphic": {
+    "pseudepigraphic": {
       "word": "PSEUDEPIGRAPHIC; PSEUDEPIGRAPHIC",
       "definitions": [
         {
@@ -274,6 +304,16 @@
       "definitions": [
         {
           "text": "Same as Pseudobranchia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pseudobranchia": {
+      "word": "PSEUDOBRANCHIA",
+      "definitions": [
+        {
+          "text": "A rudimentary branchia, or gill.",
           "partOfSpeech": "noun"
         }
       ],
@@ -585,6 +625,16 @@
       ],
       "relatedWords": []
     },
+    "pseudonymous": {
+      "word": "PSEUDONYMOUS",
+      "definitions": [
+        {
+          "text": "Bearing a false or fictitious name; as, a pseudonymous work.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "pseudoperipteral": {
       "word": "PSEUDO-PERIPTERAL",
       "definitions": [
@@ -773,7 +823,7 @@
       "word": "PSEUDOTETRAMERA",
       "definitions": [
         {
-          "text": "A division of beetles having the fifth tarsal joint minute and",
+          "text": "A division of beetles having the fifth tarsal joint minute and obscure, so that there appear to be but four joints.",
           "partOfSpeech": "noun"
         }
       ],
@@ -923,7 +973,21 @@
       ],
       "relatedWords": []
     },
-    "psittaceouspsittacid": {
+    "psittaceous": {
+      "word": "PSITTACEOUS; PSITTACID",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the parrots, or the Psittaci.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of the Psittaci.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psittacid": {
       "word": "PSITTACEOUS; PSITTACID",
       "definitions": [
         {
@@ -1031,7 +1095,7 @@
       "word": "PSYCHANALYSIS",
       "definitions": [
         {
-          "text": "A method or process of psychotherapeutic analysis based on the work of Dr. Sigmund Freud (1856- --) of Vienna. The method rests upon the theory that hysteria is characteristically due to repression of desires consciously rejected but subconsciously persistent; it consists in a close analysis of the patient's mental history, stress",
+          "text": "A method or process of psychotherapeutic analysis based on the work of Dr. Sigmund Freud (1856- --) of Vienna. The method rests upon the theory that hysteria is characteristically due to repression of desires consciously rejected but subconsciously persistent; it consists in a close analysis of the patient's mental history, stress being laid upon the dream life, and of treatment by means of suggestion. -- Psy*chan`a*lyt\"ic (#), a. -- Psy`cha*nal\"y*sist (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1073,7 +1137,17 @@
       ],
       "relatedWords": []
     },
-    "psychiatriapsychiatry": {
+    "psychiatria": {
+      "word": "PSYCHIATRIA; PSYCHIATRY",
+      "definitions": [
+        {
+          "text": "The application of the healing art to mental diseases. Dunglison.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychiatry": {
       "word": "PSYCHIATRIA; PSYCHIATRY",
       "definitions": [
         {
@@ -1093,7 +1167,21 @@
       ],
       "relatedWords": []
     },
-    "psychicpsychical": {
+    "psychic": {
+      "word": "PSYCHIC; PSYCHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the human soul, or to the living principle in man. psychological. Recent metaphysicians, however, have employed it to mark the difference between psychh` the living principle in man, and pney^ma the rational or spiritual part of his nature. In this use, the word describes the human soul in its relation to sense, appetite, and the outer visible world, as distinguished from spiritual or rational faculties, which have to do with the supersensible world. Heyse.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to the mind, or its functions and diseases; mental; -- contrasted with physical. Psychical blindness, Psychical deafness (Med.), forms of nervous disease in which, while the senses of sight and hearing remain unimpaired, the mind fails to appreciate the significance of the sounds heard or the images seen. functional nervous disease, by mere force of example. mental diseases.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychical": {
       "word": "PSYCHIC; PSYCHICAL",
       "definitions": [
         {
@@ -1137,7 +1225,17 @@
       ],
       "relatedWords": []
     },
-    "psychoanalysispsychoanalytic": {
+    "psychoanalysis": {
+      "word": "PSYCHOANALYSIS; PSYCHOANALYTIC",
+      "definitions": [
+        {
+          "text": "= Psychanalysis, Psychanalytic.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychoanalytic": {
       "word": "PSYCHOANALYSIS; PSYCHOANALYTIC",
       "definitions": [
         {
@@ -1171,6 +1269,26 @@
         {
           "text": "Spirit writing.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychologic": {
+      "word": "PSYCHOLOGIC; PSYCHOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to psychology. See Note under Psychic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychological": {
+      "word": "PSYCHOLOGIC; PSYCHOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to psychology. See Note under Psychic.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1229,7 +1347,7 @@
       "word": "PSYCHOMETRY",
       "definitions": [
         {
-          "text": "The art of measuring the duration of mental processes, or of",
+          "text": "The art of measuring the duration of mental processes, or of determining the time relations of mental phenomena.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1249,7 +1367,17 @@
       "word": "PSYCHOPANNYCHISM",
       "definitions": [
         {
-          "text": "The doctrine that the soul falls asleep at death, and does not",
+          "text": "The doctrine that the soul falls asleep at death, and does not wake until the resurrection of the body.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "psychopathy": {
+      "word": "PSYCHOPATHY",
+      "definitions": [
+        {
+          "text": "Mental disease. See Psychosis, 2.",
           "partOfSpeech": "noun"
         }
       ],

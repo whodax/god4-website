@@ -153,7 +153,7 @@
       ],
       "relatedWords": []
     },
-    "yahwehyahwejahvehjahve": {
+    "yahweh": {
       "word": "YAHWEH; YAHWE; JAHVEH; JAHVE",
       "definitions": [
         {
@@ -163,7 +163,17 @@
       ],
       "relatedWords": []
     },
-    "yahwismjahvism": {
+    "yahwe": {
+      "word": "YAHWEH; YAHWE; JAHVEH; JAHVE",
+      "definitions": [
+        {
+          "text": "A modern transliteration of the Hebrew word translated Jehovah in the Bible; -- used by some critics to discriminate the tribal god of the ancient Hebrews from the Christian Jehovah. Yahweh or Yahwe is the spelling now generally adopted by scholars.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "yahwism": {
       "word": "YAHWISM; JAHVISM",
       "definitions": [
         {
@@ -177,7 +187,7 @@
       ],
       "relatedWords": []
     },
-    "yahwistjahvistjahwistjehovist": {
+    "yahwist": {
       "word": "YAHWIST; JAHVIST; JAHWIST; JEHOVIST",
       "definitions": [
         {
@@ -455,6 +465,34 @@
       "word": "YARD",
       "definitions": [
         {
+          "text": "A rod; a stick; a staff. [Obs.] P. Plowman. If men smote it with a yerde. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A branch; a twig. [Obs.] The bitter frosts with the sleet and rain Destroyed hath the green in every yerd. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A long piece of timber, as a rafter, etc. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A measure of length, equaling three feet, or thirty-six inches, being the standard of English and American measure.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The penis.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A long piece of timber, nearly cylindrical, tapering toward the ends, and designed to support and extend a square sail. A yard is usually hung by the center to the mast. See Illust. of Ship. Golden Yard, or Yard and Ell (Astron.), a popular name the three stars in the belt of Orion. Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "An inclosure; usually, a small inclosed place in front of, or around, a house or barn; as, a courtyard; a cowyard; a barnyard. A yard . . . inclosed all about with sticks In which she had a cock, hight chanticleer. Chaucer.",
           "partOfSpeech": "noun"
         },
@@ -522,6 +560,10 @@
     "yare": {
       "word": "YARE",
       "definitions": [
+        {
+          "text": "Ready; dexterous; eager; lively; quick to move. [Obs.] \"Be yare in thy preparation.\" Shak. The lesser [ship] will come and go, leave or take, and is yare; whereas the greater is slow. Sir W. Raleigh.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Soon. [Obs.] Cursor Mundi.",
           "partOfSpeech": "adverb"

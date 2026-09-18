@@ -236,7 +236,17 @@
       ],
       "relatedWords": []
     },
-    "caudatecaudated": {
+    "caudate": {
+      "word": "CAUDATE; CAUDATED",
+      "definitions": [
+        {
+          "text": "Having a taill; having a termination like a tail.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "caudated": {
       "word": "CAUDATE; CAUDATED",
       "definitions": [
         {
@@ -256,7 +266,17 @@
       ],
       "relatedWords": []
     },
-    "caudiclecaudicula": {
+    "caudicle": {
+      "word": "CAUDICLE; CAUDICULA",
+      "definitions": [
+        {
+          "text": "A slender, elastic process, to which the masses of pollen in orchidaceous plants are attached.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caudicula": {
       "word": "CAUDICLE; CAUDICULA",
       "definitions": [
         {
@@ -346,7 +366,17 @@
         "wedged"
       ]
     },
-    "caukcauker": {
+    "cauk": {
+      "word": "CAUK; CAUKER",
+      "definitions": [
+        {
+          "text": "See Cawk, Calker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cauker": {
       "word": "CAUK; CAUKER",
       "definitions": [
         {
@@ -510,6 +540,16 @@
         {
           "text": "Having stems which bear flowers and fruit year after year, as most trees and shrubs.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caulome": {
+      "word": "CAULOME",
+      "definitions": [
+        {
+          "text": "A stem structure or stem axis of a plant, viewed as a whole. -- Cau*lom\"ic (#), a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1020,7 +1060,102 @@
       ],
       "relatedWords": []
     },
-    "causewaycausey": {
+    "causeway": {
+      "word": "CAUSEWAY; CAUSEY",
+      "definitions": [
+        {
+          "text": "A way or road rasid above the natural level of the ground, serving as a dry passage over wet or marshy ground. But that broad causeway will direct your way. Dryden. The other way Satan went down The causey to Hell-gate. Milton.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Autobahn",
+        "US highway",
+        "alley",
+        "alleyway",
+        "arterial",
+        "arterial highway",
+        "arterial street",
+        "artery",
+        "autoroute",
+        "autostrada",
+        "avenue",
+        "belt highway",
+        "blind alley",
+        "boulevard",
+        "bypass",
+        "byway",
+        "camino real",
+        "carriageway",
+        "causey",
+        "chaussee",
+        "circumferential",
+        "close",
+        "corduroy road",
+        "county road",
+        "court",
+        "crescent",
+        "cul-de-sac",
+        "dead-end street",
+        "dike",
+        "dirt road",
+        "drive",
+        "driveway",
+        "expressway",
+        "freeway",
+        "gravel road",
+        "highroad",
+        "highway",
+        "highways and byways",
+        "interstate highway",
+        "lane",
+        "local road",
+        "main drag",
+        "main road",
+        "mews",
+        "motorway",
+        "parkway",
+        "pave",
+        "paved road",
+        "pike",
+        "place",
+        "plank road",
+        "primary highway",
+        "private road",
+        "right-of-way",
+        "ring road",
+        "road",
+        "roadbed",
+        "roadway",
+        "route nationale",
+        "row",
+        "royal road",
+        "secondary road",
+        "speedway",
+        "state highway",
+        "street",
+        "superhighway",
+        "terrace",
+        "thoroughfare",
+        "through street",
+        "thruway",
+        "toll road",
+        "township road",
+        "turnpike",
+        "wynd"
+      ]
+    },
+    "causewayed": {
+      "word": "CAUSEWAYED; CAUSEYED",
+      "definitions": [
+        {
+          "text": "Having a raised way (causeway or causey); paved. Sir W. Scott. C. Bronté.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "causey": {
       "word": "CAUSEWAY; CAUSEY",
       "definitions": [
         {
@@ -1030,7 +1165,7 @@
       ],
       "relatedWords": []
     },
-    "causewayedcauseyed": {
+    "causeyed": {
       "word": "CAUSEWAYED; CAUSEYED",
       "definitions": [
         {
@@ -1051,8 +1186,16 @@
       "relatedWords": []
     },
     "caustic": {
-      "word": "CAUSTIC",
+      "word": "CAUSTIC; CAUSTICAL",
       "definitions": [
+        {
+          "text": "Capable of destroying the texture of anything or eating away its substance by chemical action; burning; corrosive; searing.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Severe; satirical; sharp; as, a caustic remark. Caustic curve (Optics), a curve to which the ray of light, reflected or refracted by another curve, are tangents, the reflecting or refracting curve and the luminous point being in one plane. potash, KOH, and soda, NaOH, or solutions of the same. refracted by another surface are tangents. Caustic curves and surfaces are called catacaustic when formed by reflection, and diacaustic when formed by refraction.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Any substance or means which, applied to animal or other organic tissue, burns, corrodes, or destroys it by chemical action; an escharotic.",
           "partOfSpeech": "noun"
@@ -1205,17 +1348,7 @@
         "withering"
       ]
     },
-    "caustically": {
-      "word": "CAUSTICALLY",
-      "definitions": [
-        {
-          "text": "In a caustic manner.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "causticcaustical": {
+    "caustical": {
       "word": "CAUSTIC; CAUSTICAL",
       "definitions": [
         {
@@ -1225,6 +1358,16 @@
         {
           "text": "Severe; satirical; sharp; as, a caustic remark. Caustic curve (Optics), a curve to which the ray of light, reflected or refracted by another curve, are tangents, the reflecting or refracting curve and the luminous point being in one plane. potash, KOH, and soda, NaOH, or solutions of the same. refracted by another surface are tangents. Caustic curves and surfaces are called catacaustic when formed by reflection, and diacaustic when formed by refraction.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "caustically": {
+      "word": "CAUSTICALLY",
+      "definitions": [
+        {
+          "text": "In a caustic manner.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []

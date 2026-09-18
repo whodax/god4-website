@@ -9,6 +9,30 @@
           "partOfSpeech": "noun"
         },
         {
+          "text": "To ask earnestly for; to entreat or supplicate for; to beseech. I do beg your good will in this case. Shak. [Joseph] begged the body of Jesus. Matt. xxvii. 58. earnest, asking; as, I beg your pardon; I beg leave to disagree with you.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To ask for as a charity, esp. to ask for habitually or from house to house. Yet have I not seen the righteous forsaken, nor his seed begging bread. Ps. xxxvii. 25.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make petition to; to entreat; as, to beg a person to grant a favor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take for granted; to assume without proof.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Old Law)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To ask to be appointed guardian for, or to ask to have a guardian appointed for. Else some will beg thee, in the court of wards. Harrington. Hence: To beg (one) for a fool, to take him for a fool. I beg to, is an elliptical expression for I beg leave to; as, I beg to inform you. discussion, instead of adducing the proof or sustaining the point by argument. demand for something which elsewhere brings a price; as, grapes are so plentiful there that they go a-begging. the generic term which embraces all these words. To request is only a polite mode of asking. To beg, in its original sense, was to ask with earnestness, and implied submission, or at least deference. At present, however, in polite life, beg has dropped its original meaning, and has taken the place of both ask and request, on the ground of its expressing more of deference and respect. Thus, we beg a person's acceptance of a present; we beg him to favor us with his company; a tradesman begs to announce the arrival of new goods, etc. Crabb remarks that, according to present usage, \"we can never talk of asking a person's acceptance of a thing, or of asking him to do us a favor.\" This can be more truly said of usage in England than in America.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To ask alms or charity, especially to ask habitually by the wayside or from house to house; to live by asking alms. I can not dig; to beg I am ashamed. Luke xvi. 3.",
           "partOfSpeech": "verb"
         }
@@ -215,24 +239,6 @@
         {
           "text": "One who begets; a father.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "begettingbirthgenerationfrgeneregigneretobegetcff": {
-      "word": "begetting, birth, generation, fr. genere, gignere, to beget: cf. F.",
-      "definitions": [
-        {
-          "text": "The state of being the firstborn of the same parents; seniority by birth among children of the same family.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Eng. Law)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "The exclusive right of inheritance which belongs to the eldest son. Thus in England the right of inheriting the estate of the father belongs to the eldest son, and in the royal family the eldest son of the sovereign is entitled to the throne by primogeniture. In exceptional cases, among the female children, the crown descends by right of primogeniture to the eldest daughter only and her issue. Blackstone.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -685,36 +691,6 @@
         "wantage"
       ]
     },
-    "beggenperhfrasbedecianakintogothbedagwabeggarbiddan": {
-      "word": "beggen, perh. fr. AS. bedecian (akin to Goth. bedagwa beggar), biddan",
-      "definitions": [
-        {
-          "text": "To ask earnestly for; to entreat or supplicate for; to beseech. I do beg your good will in this case. Shak. [Joseph] begged the body of Jesus. Matt. xxvii. 58. earnest, asking; as, I beg your pardon; I beg leave to disagree with you.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To ask for as a charity, esp. to ask for habitually or from house to house. Yet have I not seen the righteous forsaken, nor his seed begging bread. Ps. xxxvii. 25.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To make petition to; to entreat; as, to beg a person to grant a favor.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To take for granted; to assume without proof.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Old Law)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To ask to be appointed guardian for, or to ask to have a guardian appointed for. Else some will beg thee, in the court of wards. Harrington. Hence: To beg (one) for a fool, to take him for a fool. I beg to, is an elliptical expression for I beg leave to; as, I beg to inform you. discussion, instead of adducing the proof or sustaining the point by argument. demand for something which elsewhere brings a price; as, grapes are so plentiful there that they go a-begging. the generic term which embraces all these words. To request is only a polite mode of asking. To beg, in its original sense, was to ask with earnestness, and implied submission, or at least deference. At present, however, in polite life, beg has dropped its original meaning, and has taken the place of both ask and request, on the ground of its expressing more of deference and respect. Thus, we beg a person's acceptance of a present; we beg him to favor us with his company; a tradesman begs to announce the arrival of new goods, etc. Crabb remarks that, according to present usage, \"we can never talk of asking a person's acceptance of a thing, or of asking him to do us a favor.\" This can be more truly said of usage in England than in America.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "beggestere": {
       "word": "BEGGESTERE",
       "definitions": [
@@ -725,7 +701,7 @@
       ],
       "relatedWords": []
     },
-    "beghardbeguard": {
+    "beghard": {
       "word": "BEGHARD; BEGUARD",
       "definitions": [
         {
@@ -1422,6 +1398,20 @@
         "would rather not"
       ]
     },
+    "beguard": {
+      "word": "BEGHARD; BEGUARD",
+      "definitions": [
+        {
+          "text": "One of an association of religious laymen living in imitation of the Beguines. They arose in the thirteenth century, were afterward subjected to much persecution, and were suppressed by Innocent X. in",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Called also Beguins.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "beguile": {
       "word": "BEGUILE",
       "definitions": [
@@ -1611,6 +1601,124 @@
         }
       ],
       "relatedWords": []
+    },
+    "beguiling": {
+      "word": "BEGUILING",
+      "definitions": [
+        {
+          "text": "Alluring by guile; deluding; misleading; diverting.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "alluring",
+        "amusing",
+        "appealing",
+        "appetizing",
+        "attractive",
+        "bewildering",
+        "bewitching",
+        "blandishing",
+        "cajoling",
+        "captivating",
+        "catching",
+        "catchy",
+        "charismatic",
+        "charming",
+        "coaxing",
+        "come-hither",
+        "coquettish",
+        "deceiving",
+        "deceptive",
+        "delightful",
+        "deluding",
+        "delusive",
+        "delusory",
+        "diverting",
+        "dubious",
+        "enchanting",
+        "engaging",
+        "enigmatic",
+        "enravishing",
+        "entertaining",
+        "enthralling",
+        "enticing",
+        "entrancing",
+        "exceptional",
+        "exciting",
+        "exotic",
+        "extraordinary",
+        "fabulous",
+        "fallacious",
+        "false",
+        "fantastic",
+        "fascinating",
+        "fetching",
+        "fishy",
+        "flirtatious",
+        "fun",
+        "glamorous",
+        "hallucinatory",
+        "humorous",
+        "hypnotic",
+        "illusive",
+        "illusory",
+        "incomprehensible",
+        "inconceivable",
+        "incredible",
+        "interesting",
+        "intriguing",
+        "inviting",
+        "irresistible",
+        "marvelous",
+        "mesmeric",
+        "miraculous",
+        "misleading",
+        "mouth-watering",
+        "outlandish",
+        "passing strange",
+        "phenomenal",
+        "piquant",
+        "prepossessing",
+        "prodigious",
+        "provocative",
+        "provoquant",
+        "puzzling",
+        "questionable",
+        "rare",
+        "ravishing",
+        "recreational",
+        "remarkable",
+        "seducing",
+        "seductive",
+        "sensational",
+        "siren",
+        "sirenic",
+        "spellbinding",
+        "spellful",
+        "strange",
+        "striking",
+        "stupendous",
+        "taking",
+        "tantalizing",
+        "teasing",
+        "tempting",
+        "tickling",
+        "titillating",
+        "titillative",
+        "trickish",
+        "tricksy",
+        "tricky",
+        "unheard-of",
+        "unimaginable",
+        "unique",
+        "unprecedented",
+        "winning",
+        "winsome",
+        "witching",
+        "wonderful",
+        "wondrous"
+      ]
     },
     "beguin": {
       "word": "BEGUIN",

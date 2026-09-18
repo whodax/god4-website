@@ -277,6 +277,16 @@
       ],
       "relatedWords": []
     },
+    "perceivable": {
+      "word": "PERCEIVABLE",
+      "definitions": [
+        {
+          "text": "Capable of being perceived; perceptible.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "perceivance": {
       "word": "PERCEIVANCE",
       "definitions": [
@@ -300,40 +310,6 @@
         },
         {
           "text": "To be affected of influented by. [R.] The upper regions of the air perceive the collection of the matter of tempests before the air here below. Bacon. presented to the senses or the intellect; to discern is to mark differences, or to see a thing as distinguished from others around it. We may perceive two persons afar off without being able to discern whether they are men or women. Hence, discern is often used of an act of the senses or the mind involving close, discriminating, analytical attention. We perceive that which is clear or obvious; we discern that which requires much attention to get an idea of it. \"We perceive light, darkness, colors, or the truth or falsehood of anything. We discern characters, motives, the tendency and consequences of actions, etc.\" Crabb.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "perceivedecidedetermineakintogrconcerncriticcrime": {
-      "word": "perceive, decide, determine; akin to Gr. concern, critic, crime,",
-      "definitions": [
-        {
-          "text": "Assured in mind; having no doubts; free from suspicions concerning. To make her certain of the sad event. Dryden. I myself am certain of you. Wyclif.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Determined; resolved; -- used with an infinitive. However, I with thee have fixed my lot, Certain to undergo like doom. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Not to be doubted or denied; established as a fact. The dream is certain, and the interpretation thereof sure. Dan. ii. 45.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Actually existing; sure to happen; inevitable. Virtue that directs our ways Through certain dangers to uncertain praise. Dryden. Death, as the Psalmist saith, is certain to all. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Unfailing; infallible. I have often wished that I knew as certain a remedy for any other distemper. Mead.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Fixed or stated; regular; determinate. The people go out and gather a certain rate every day. Ex. xvi. 4.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Not specifically named; indeterminate; indefinite; one or some; -- sometimes used independenty as a noun, and meaning certain persons. It came to pass when he was in a certain city. Luke. v. 12. About everything he wrote there was a certain natural grace und decorum. Macaulay. For certain, assuredly. indubitable; indisputable; incontrovertible; unhesitating; undoubting; fixed; stated.",
           "partOfSpeech": "verb"
         }
       ],
@@ -397,7 +373,7 @@
       "word": "PERCEPTIBLE",
       "definitions": [
         {
-          "text": "Capable of being perceived; cognizable; discernible; perceivable.",
+          "text": "Capable of being perceived; cognizable; discernible; perceivable. With a perceptible blast of the air. Bacon.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -605,7 +581,17 @@
       ],
       "relatedWords": []
     },
-    "percipiencepercipiency": {
+    "percipience": {
+      "word": "PERCIPIENCE; PERCIPIENCY",
+      "definitions": [
+        {
+          "text": "The faculty, act or power of perceiving; perception. Mrs. Browning.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "percipiency": {
       "word": "PERCIPIENCE; PERCIPIENCY",
       "definitions": [
         {
@@ -889,6 +875,28 @@
         {
           "text": "A soldier sent on a forlorn hope. Shak.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Lost to view; in concealment or ambush; close. He should lie perdue who is to walk the round. Fuller.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Accustomed to, or employed in, desperate enterprises; hence, reckless; hopeless. \"A perdue captain.\" Beau. & Fl.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perdue": {
+      "word": "PERDU; PERDUE",
+      "definitions": [
+        {
+          "text": "Lost to view; in concealment or ambush; close. He should lie perdue who is to walk the round. Fuller.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Accustomed to, or employed in, desperate enterprises; hence, reckless; hopeless. \"A perdue captain.\" Beau. & Fl.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -913,20 +921,6 @@
       ],
       "relatedWords": []
     },
-    "perduperdue": {
-      "word": "PERDU; PERDUE",
-      "definitions": [
-        {
-          "text": "Lost to view; in concealment or ambush; close. He should lie perdue who is to walk the round. Fuller.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Accustomed to, or employed in, desperate enterprises; hence, reckless; hopeless. \"A perdue captain.\" Beau. & Fl.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "perdurability": {
       "word": "PERDURABILITY",
       "definitions": [
@@ -941,13 +935,23 @@
       "word": "PERDURABLE",
       "definitions": [
         {
-          "text": "Very durable; lasting; continuing long. [Archaic] Chaucer.",
+          "text": "Very durable; lasting; continuing long. [Archaic] Chaucer. Shak.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "perduranceperduration": {
+    "perdurance": {
+      "word": "PERDURANCE; PERDURATION",
+      "definitions": [
+        {
+          "text": "Long continuance. [Archaic]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perduration": {
       "word": "PERDURANCE; PERDURATION",
       "definitions": [
         {
@@ -1553,11 +1557,15 @@
         {
           "text": "To bore through; to pierce through with a pointed instrument; to make a hole or holes through by boring or piercing; to pierce or penetrate the surface of. Bacon.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "Pierced with a hole or holes, or with pores; having transparent dots resembling holes.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "perforateperforated": {
+    "perforated": {
       "word": "PERFORATE; PERFORATED",
       "definitions": [
         {
@@ -1815,7 +1823,17 @@
       ],
       "relatedWords": []
     },
-    "pergamenouspergamentaceous": {
+    "pergamenous": {
+      "word": "PERGAMENOUS; PERGAMENTACEOUS",
+      "definitions": [
+        {
+          "text": "Like parchment.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pergamentaceous": {
       "word": "PERGAMENOUS; PERGAMENTACEOUS",
       "definitions": [
         {
@@ -1849,114 +1867,12 @@
       ],
       "relatedWords": []
     },
-    "perhakintoohgholantarholuntargholunderorperhtoe": {
-      "word": "perh. akin to OHG. holantar, holuntar, G. holunder; or perh. to E.",
-      "definitions": [
-        {
-          "text": "A genus of shrubs (Sambucus) having broad umbels of white flowers, and small black or red berries. common European species (S. nigra) forms a small tree. The red- berried elder is S. pubens. The berries are diaphoretic and aperient. Box elder. See under 1st Box.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "perhakintowpwtiotobuttpokethrustcfalsogaelputto": {
-      "word": "perh. akin to W. pwtio to butt, poke, thrust; cf. also Gael. put to",
-      "definitions": [
-        {
-          "text": "To move in any direction; to impel; to thrust; to push; -- nearly obsolete, except with adverbs, as with by (to put by = to thrust aside; to divert); or with forth (to put forth = to thrust out). His chief designs are . . . to put thee by from thy spiritual employment. Jer. Taylor.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To bring to a position or place; to place; to lay; to set; figuratively, to cause to be or exist in a specified relation, condition, or the like; to bring to a stated mental or moral condition; as, to put one in fear; to put a theory in practice; to put an enemy to fight. This present dignity, In which that I have put you. Chaucer. I will put enmity between thee and the woman. Gen. iii. 15. He put no trust in his servants. Job iv. 18. When God into the hands of their deliverer Puts invincible might. Milton. In the mean time other measures were put in operation. Sparks.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To attach or attribute; to assign; as, to put a wrong construction on an act or expression.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To lay down; to give up; to surrender. [Obs.] No man hath more love than this, that a man put his life for his friends. Wyclif (John xv. 13).",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To set before one for judgment, acceptance, or rejection; to bring to the attention; to offer; to state; to express; figuratively, to assume; to suppose; -- formerly sometimes followed by that introducing a proposition; as, to put a question; to put a case. Let us now put that ye have leave. Chaucer. Put the perception and you put the mind. Berkeley. These verses, originally Greek, were put in Latin. Milton. All this is ingeniously and ably put. Hare.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To incite; to entice; to urge; to constrain; to oblige. These wretches put us upon all mischief. Swift. Put me not use the carnal weapon in my own defense. Sir W. Scott. Thank him who puts me, loath, to this revenge. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To throw or cast with a pushing motion \"overhand,\" the hand being raised from the shoulder; a practice in athletics; as, to put the shot or weight.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Mining)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To convey coal in the mine, as from the working to the tramway. Raymond. Put case, formerly, an elliptical expression for, put or suppose the case to be. Put case that the soul after departure from the body may live. Bp. Hall. divorce. to delay. (b) To refuse; to deny. Coming from thee, I could not put him back. Shak. (c) To set, as the hands of a clock, to an earlier hour. (d) To restore to the original place; to replace. question by.\" Tennyson. (b) To lay aside; to keep; to sore up; as, to put by money. lower; to diminish; as, to put down prices. (c) To deprive of position or power; to put a stop to; to suppress; to abolish; to confute; as, to put down rebellion of traitors. Mark, how a plain tale shall put you down. Shak. Sugar hath put down the use of honey. Bacon. (d) To subscribe; as, to put down one's name. to come or push out; as, a tree puts forth leaves. (b) To make manifest; to develop; also, to bring into action; to exert; as, to put forth strength. (c) To propose, as a question, a riddle, and the like. (d) To publish, as a book. responsibility; to promote. (b) To cause to make progress; to aid. (c) To set, as the hands of a clock, to a later hour. to introduce with difficulty; as, to put in a word while others are discoursing. (b) (Naut.) To conduct into a harbor, as a ship. (c) (Law) To place in due form before a court; to place among the records of a court. Burrill. (d) (Med.) To restore, as a dislocated part, to its place. to put off mortality. \"Put off thy shoes from off thy feet.\" Ex. iii.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(b) To turn aside; to elude; to disappoint; to frustrate; to baffle. I hoped for a demonstration, but Themistius hoped to put me off with an harangue. Boyle. We might put him off with this answer. Bentley. (c) To delay; to defer; to postpone; as, to put off repentance. (d) To get rid of; to dispose of; especially, to pass fraudulently; as, to put off a counterfeit note, or an ingenious theory. (e) To push from land; as, to put off a boat. assume. \"Mercury . . . put on the shape of a man.\" L'Estrange. (b) To impute (something) to; to charge upon; as, to put blame on or upon another. (c) To advance; to promote. [Obs.] \"This came handsomely to put on the peace.\" Bacon. (d) To impose; to inflict. \"That which thou puttest on me, will I bear.\" 2 Kings xviii. 14. (e) To apply; as, to put on workmen; to put on steam. (f) To deceive; to trick. \"The stork found he was put upon.\" L'Estrange. (g) To place upon, as a means or condition; as, he put him upon bread and water. \"This caution will put them upon considering.\" Locke. (h) (Law) To rest upon; to submit to; as, a defendant puts himself on or upon the country. Burrill. forth; to shoot, as a bud, or sprout. (c) To extinguish; as, to put out a candle, light, or fire. (d) To place at interest; to loan; as, to put out funds. (e) To provoke, as by insult; to displease; to vex; as, he was put out by my reply. [Colloq.] (f) To protrude; to stretch forth; as, to put out the hand. (g) To publish; to make public; as, to put out a pamphlet. (h) To confuse; to disconcert; to interrupt; as, to put one out in reading or speaking. (i) (Law) To open; as, to put out lights, that is, to open or cut windows. Burrill. (j) (Med.) To place out of joint; to dislocate; as, to put out the ankle. (k) To cause to cease playing, or to prevent from playing longer in a certain inning, as in base ball. put a general over a division of an army. (b) To refer. For the certain knowledge of that knowledge of that truthput you o'er to heaven and to my mother. Shak. (c) To defer; to postpone; as, the court put over the cause to the next term. (d) To transfer (a person or thing) across; as, to put one over the river. instrument of labor; as, to put the hand to the plow; hence, to engage in (any task or affair); as, to put one's hand to the work. (b) To take or seize, as in theft. \"He hath not put his hand unto his neighbor's goods.\" Ex. xxii. 11. of a progress; hence, to push to completion; to accomplish; as, he put through a measure of legislation; he put through a railroad enterprise. [U.S.] -- To put to. (a) To add; to unite; as, to put one sum to another. (b) To refer to; to expose; as, to put the safety of the state to hazard. \"That dares not put it to the touch.\" Montrose. (c) To attach (something) to; to harness beasts to. Dickens. difficulties. To deliver in, or to make ready for, childbirth. inference; to form a correct conclusion. difficulty to. \"O gentle lady, do not put me to 't.\" Shak. compose rightly. resent; to put up with; as, to put up indignities. [Obs.] \"Such national injuries are not to be put up.\" Addison. (b) To send forth or upward; as, to put up goods for sale. (d) To start from a cover, as game. \"She has been frightened; she has been put up.\" C. Kingsley. (e) To hoard. \"Himself never put up any of the rent.\" Spelman. (f) To lay side or preserve; to pack away; to store; to pickle; as, to put up pork, beef, or fish. (g) To place out of sight, or away; to put in its proper place; as, put up that letter. Shak. (h) To incite; to instigate; -- followed by to; as, he put the lad up to mischief. (i) To raise; to erect; to build; as, to put up a tent, or a house. (j) To lodge; to entertain; as, to put up travelers. position of some object, and are often used interchangeably. To put is the least definite, denoting merely to move to a place. To place has more particular reference to the precise location, as to put with care in a certain or proper place. To set or to lay may be used when there is special reference to the position of the object.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "perhaps": {
       "word": "PERHAPS",
       "definitions": [
         {
           "text": "By chance; peradventure; perchance; it may be. And pray God, if perhaps the thought of thine heart may be forgiven thee. Acts viii. 22.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "perhapsofteutonicoriginandakintoestopcfstopvt": {
-      "word": "perhaps of Teutonic origin, and akin to E. stop. Cf. Stop, v. t.,",
-      "definitions": [
-        {
-          "text": "To fill by crowding something into; to cram with something; to load to excess; as, to stuff a bedtick. Sometimes this crook drew hazel bought adown, And stuffed her apron wide with nuts so brown. Gay. Lest the gods, for sin, Should with a swelling dropsy stuff thy skin. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To thrust or crowd; to press; to pack. Put roses into a glass with a narrow mouth, stuffing them close together . . . and they retain smell and color. Bacon.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To fill by being pressed or packed into. With inward arms the dire machine they load, And iron bowels stuff the dark abode. Dryden.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Cookery)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To fill with a seasoning composition of bread, meat, condiments, etc.; as, to stuff a turkey.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To obstruct, as any of the organs; to affect with some obstruction in the organs of sense or respiration. I'm stuffed, cousin; I can not smell. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To fill the skin of, for the purpose of preserving as a specimen;",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To form or fashion by packing with the necessary material. An Eastern king put a judge to death for an iniquitous sentence, and ordered his hide to be stuffed into a cushion, and placed upon the tribunal. Swift.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To crowd with facts; to cram the mind of; sometimes, to crowd or fill with false or idle tales or fancies.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To put fraudulent votes into (a ballot box). [U. S.]",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2039,7 +1955,7 @@
       "word": "PERIBLAST",
       "definitions": [
         {
-          "text": "The protoplasmic matter which surrounds the entoblast, or cell",
+          "text": "The protoplasmic matter which surrounds the entoblast, or cell nucleus, and undergoes segmentation.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2089,7 +2005,17 @@
       ],
       "relatedWords": []
     },
-    "pericardiacpericardial": {
+    "pericardiac": {
+      "word": "PERICARDIAC; PERICARDIAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to pericardium; situated around the heart. Pericardial fluid (Physiol.), a serous fluid of a pale yellow color contained in the pericardium.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pericardial": {
       "word": "PERICARDIAC; PERICARDIAL",
       "definitions": [
         {
@@ -2149,7 +2075,17 @@
       ],
       "relatedWords": []
     },
-    "pericarpialpericarpic": {
+    "pericarpial": {
+      "word": "PERICARPIAL; PERICARPIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a pericarp.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pericarpic": {
       "word": "PERICARPIAL; PERICARPIC",
       "definitions": [
         {
@@ -2259,7 +2195,17 @@
       ],
       "relatedWords": []
     },
-    "periclasepericlasite": {
+    "periclase": {
+      "word": "PERICLASE; PERICLASITE",
+      "definitions": [
+        {
+          "text": "A grayish or dark green mineral, consisting essentially of magnesia (magnesium oxide), occurring in granular forms or in isometric crystals.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "periclasite": {
       "word": "PERICLASE; PERICLASITE",
       "definitions": [
         {
@@ -2507,7 +2453,7 @@
       ],
       "relatedWords": []
     },
-    "perigeeperigeum": {
+    "perigee": {
       "word": "PERIGEE; PERIGEUM",
       "definitions": [
         {
@@ -2533,6 +2479,16 @@
         {
           "text": "Of or pertaining to perigenesis.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perigeum": {
+      "word": "PERIGEE; PERIGEUM",
+      "definitions": [
+        {
+          "text": "That point in the orbit of the moon which is nearest to the earth; -- opposed to Ant: apogee. It is sometimes, but rarely, used of the nearest points of other orbits, as of a comet, a planet, etc. Called also epigee, epigeum.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2605,7 +2561,17 @@
       ],
       "relatedWords": []
     },
-    "perihelionperihelium": {
+    "perihelion": {
+      "word": "PERIHELION; PERIHELIUM",
+      "definitions": [
+        {
+          "text": "That point of the orbit of a planet or comet which is nearest to the sun; -- opposed to Ant: aphelion.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perihelium": {
       "word": "PERIHELION; PERIHELIUM",
       "definitions": [
         {
@@ -2651,7 +2617,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Daring; reckless; dangerous. [Obs.] Latimer.",
+          "text": "Daring; reckless; dangerous. [Obs.] Latimer. For I am perilous with knife in hand. Chaucer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2695,7 +2661,17 @@
       ],
       "relatedWords": []
     },
-    "perimetricperimetrical": {
+    "perimetric": {
+      "word": "PERIMETRIC; PERIMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the perimeter, or to perimetry; as, a perimetric chart of the eye.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perimetrical": {
       "word": "PERIMETRIC; PERIMETRICAL",
       "definitions": [
         {
@@ -2770,6 +2746,16 @@
       "definitions": [
         {
           "text": "The operation of sewing up a ruptured perineum.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perinephritis": {
+      "word": "PERINEPHRITIS",
+      "definitions": [
+        {
+          "text": "Inflammation of the cellular tissue around the kidney.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2905,13 +2891,53 @@
         {
           "text": "Pertaining to, derived from, or designating, the highest oxygen acid (HIO",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a period or periods, or to division by periods. The periodicaltimes of all the satellites. Sir J. Herschel.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Performed in a period, or regular revolution; proceeding in a series of successive circuits; as, the periodical motion of the planets round the sun.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Happening, by revolution, at a stated time; returning regularly, after a certain period of time; acting, happening, or appearing, at fixed intervals; recurring; as, periodical epidemics. The periodic return of a plant's flowering. Henslow. To influence opinion through the periodical press. Courthope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Rhet.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a period; constituting a complete sentence. Periodic comet (Astron.), a comet that moves about the sun in an elliptic orbit; a comet that has been seen at two of its approaches to the sun. intervals as the variable uniformly increases. The trigonomertic functions, as sin x, tan x, etc., are periodic functions. Exponential functions are also periodic, having an imaginary period, and the elliptic functions have not only a real but an imaginary period, and are hence called doubly periodic. the chemical elements are periodic functions of their atomic wieghts. \"In other words, if the elements are grouped in the order of their atomic weights, it will be found that nearly the same properties recur periodically throughout the entire series.\" The following tabular arrangement of the atomic weights shows the regular recurrence of groups (under I., II., III., IV., etc.), each consisting of members of the same natural family. The gaps in the table indicate the probable existence of unknown elements. TABLE OF THE PERIODIC LAW OF THE CHEMICAL ELEMENTS (The vertical columns contain the periodic groups) Series1{ 2{ 3{ 4{ 5{ 6{ 7{ 8{ 9{ 10{ 11{ 12{ ---------------------------------------------------------",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
     "periodical": {
-      "word": "PERIODICAL",
+      "word": "PERIODIC; PERIODICAL",
       "definitions": [
+        {
+          "text": "Of or pertaining to a period or periods, or to division by periods. The periodicaltimes of all the satellites. Sir J. Herschel.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Performed in a period, or regular revolution; proceeding in a series of successive circuits; as, the periodical motion of the planets round the sun.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Happening, by revolution, at a stated time; returning regularly, after a certain period of time; acting, happening, or appearing, at fixed intervals; recurring; as, periodical epidemics. The periodic return of a plant's flowering. Henslow. To influence opinion through the periodical press. Courthope.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Rhet.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a period; constituting a complete sentence. Periodic comet (Astron.), a comet that moves about the sun in an elliptic orbit; a comet that has been seen at two of its approaches to the sun. intervals as the variable uniformly increases. The trigonomertic functions, as sin x, tan x, etc., are periodic functions. Exponential functions are also periodic, having an imaginary period, and the elliptic functions have not only a real but an imaginary period, and are hence called doubly periodic. the chemical elements are periodic functions of their atomic wieghts. \"In other words, if the elements are grouped in the order of their atomic weights, it will be found that nearly the same properties recur periodically throughout the entire series.\" The following tabular arrangement of the atomic weights shows the regular recurrence of groups (under I., II., III., IV., etc.), each consisting of members of the same natural family. The gaps in the table indicate the probable existence of unknown elements. TABLE OF THE PERIODIC LAW OF THE CHEMICAL ELEMENTS (The vertical columns contain the periodic groups) Series1{ 2{ 3{ 4{ 5{ 6{ 7{ 8{ 9{ 10{ 11{ 12{ ---------------------------------------------------------",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A magazine or other publication which appears at stated or regular intervals.",
           "partOfSpeech": "noun"
@@ -2959,32 +2985,6 @@
       ],
       "relatedWords": []
     },
-    "periodicperiodical": {
-      "word": "PERIODIC; PERIODICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to a period or periods, or to division by periods. The periodicaltimes of all the satellites. Sir J. Herschel.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Performed in a period, or regular revolution; proceeding in a series of successive circuits; as, the periodical motion of the planets round the sun.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Happening, by revolution, at a stated time; returning regularly, after a certain period of time; acting, happening, or appearing, at fixed intervals; recurring; as, periodical epidemics. The periodic return of a plant's flowering. Henslow. To influence opinion through the periodical press. Courthope.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Rhet.)",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Of or pertaining to a period; constituting a complete sentence. Periodic comet (Astron.), a comet that moves about the sun in an elliptic orbit; a comet that has been seen at two of its approaches to the sun. intervals as the variable uniformly increases. The trigonomertic functions, as sin x, tan x, etc., are periodic functions. Exponential functions are also periodic, having an imaginary period, and the elliptic functions have not only a real but an imaginary period, and are hence called doubly periodic. the chemical elements are periodic functions of their atomic wieghts. \"In other words, if the elements are grouped in the order of their atomic weights, it will be found that nearly the same properties recur periodically throughout the entire series.\" The following tabular arrangement of the atomic weights shows the regular recurrence of groups (under I., II., III., IV., etc.), each consisting of members of the same natural family. The gaps in the table indicate the probable existence of unknown elements. TABLE OF THE PERIODIC LAW OF THE CHEMICAL ELEMENTS (The vertical columns contain the periodic groups) Series1{ 2{ 3{ 4{ 5{ 6{ 7{ 8{ 9{ 10{ 11{ 12{ ---------------------------------------------------------",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "periodide": {
       "word": "PERIODIDE",
       "definitions": [
@@ -3015,7 +3015,17 @@
       ],
       "relatedWords": []
     },
-    "perioeciperioecians": {
+    "perioeci": {
+      "word": "PERIOECI; PERIOECIANS",
+      "definitions": [
+        {
+          "text": "Those who live on the same parallel of latitude but on opposite meridians, so that it is noon in one place when it is midnight in the other. Compare Antoeci.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perioecians": {
       "word": "PERIOECI; PERIOECIANS",
       "definitions": [
         {
@@ -3141,6 +3151,16 @@
       ],
       "relatedWords": []
     },
+    "peripateticism": {
+      "word": "PERIPATETICISM",
+      "definitions": [
+        {
+          "text": "The doctrines or philosophical system of the peripatetics. See Peripatetic, n., 2. Lond. Sat. Rev.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "peripatus": {
       "word": "PERIPATUS",
       "definitions": [
@@ -3179,7 +3199,17 @@
       ],
       "relatedWords": []
     },
-    "periphericperipherical": {
+    "peripheric": {
+      "word": "PERIPHERIC; PERIPHERICAL",
+      "definitions": [
+        {
+          "text": "See Peripheral.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "peripherical": {
       "word": "PERIPHERIC; PERIPHERICAL",
       "definitions": [
         {
@@ -3235,6 +3265,26 @@
       ],
       "relatedWords": []
     },
+    "periphrastic": {
+      "word": "PERIPHRASTIC; PERIPHRASTICAL",
+      "definitions": [
+        {
+          "text": "Expressing, or expressed, in more words than are necessary; characterized by periphrase; circumlocutory. Periphrastic conjugation (Gram.), a conjugation formed by the use of the simple verb with one or more auxiliaries.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "periphrastical": {
+      "word": "PERIPHRASTIC; PERIPHRASTICAL",
+      "definitions": [
+        {
+          "text": "Expressing, or expressed, in more words than are necessary; characterized by periphrase; circumlocutory. Periphrastic conjugation (Gram.), a conjugation formed by the use of the simple verb with one or more auxiliaries.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "periphrastically": {
       "word": "PERIPHRASTICALLY",
       "definitions": [
@@ -3245,17 +3295,17 @@
       ],
       "relatedWords": []
     },
-    "periphrasticperiphrastical": {
-      "word": "PERIPHRASTIC; PERIPHRASTICAL",
+    "periplast": {
+      "word": "PERIPLAST",
       "definitions": [
         {
-          "text": "Expressing, or expressed, in more words than are necessary; characterized by periphrase; circumlocutory. Periphrastic conjugation (Gram.), a conjugation formed by the use of the simple verb with one or more auxiliaries.",
-          "partOfSpeech": "adjective"
+          "text": "Same as Periblast.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "peripneumoniaperipneumony": {
+    "peripneumonia": {
       "word": "PERIPNEUMONIA; PERIPNEUMONY",
       "definitions": [
         {
@@ -3271,6 +3321,16 @@
         {
           "text": "Of or pertaining to peripneumonia.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "peripneumony": {
+      "word": "PERIPNEUMONIA; PERIPNEUMONY",
+      "definitions": [
+        {
+          "text": "Pneumonia. (Obsoles.)",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3367,7 +3427,17 @@
       ],
       "relatedWords": []
     },
-    "perisciansperiscii": {
+    "periscians": {
+      "word": "PERISCIANS; PERISCII",
+      "definitions": [
+        {
+          "text": "Those who live within a polar circle, whose shadows, during some summer days, will move entirely round, falling toward every point of the compass.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "periscii": {
       "word": "PERISCIANS; PERISCII",
       "definitions": [
         {
@@ -3485,13 +3555,23 @@
       "word": "PERISPERM",
       "definitions": [
         {
-          "text": "The albumen of a seed, especially that portion which is formed",
+          "text": "The albumen of a seed, especially that portion which is formed outside of the embryo sac.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "perisphericperispherical": {
+    "perispheric": {
+      "word": "PERISPHERIC; PERISPHERICAL",
+      "definitions": [
+        {
+          "text": "Exactly spherical; globular.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perispherical": {
       "word": "PERISPHERIC; PERISPHERICAL",
       "definitions": [
         {
@@ -3595,7 +3675,7 @@
       "word": "PERISTALTIC",
       "definitions": [
         {
-          "text": "Applied to the peculiar wormlike wave motion of the intestines and other similar structures, produced by the successive contraction of the muscular fibers of their walls, forcing their contents",
+          "text": "Applied to the peculiar wormlike wave motion of the intestines and other similar structures, produced by the successive contraction of the muscular fibers of their walls, forcing their contents onwards; as, peristaltic movement.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3999,7 +4079,17 @@
       ],
       "relatedWords": []
     },
-    "perjuriousperjurous": {
+    "perjurious": {
+      "word": "PERJURIOUS; PERJUROUS",
+      "definitions": [
+        {
+          "text": "Guilty of perjury; containing perjury. [Obs.] Quarles. B. Johnson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "perjurous": {
       "word": "PERJURIOUS; PERJUROUS",
       "definitions": [
         {
@@ -4149,7 +4239,17 @@
       ],
       "relatedWords": []
     },
-    "permanencepermanency": {
+    "permanence": {
+      "word": "PERMANENCE; PERMANENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being permanent; continuance in the same state or place; duration; fixedness; as, the permanence of institutions; the permanence of nature.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "permanency": {
       "word": "PERMANENCE; PERMANENCY",
       "definitions": [
         {
@@ -4341,6 +4441,16 @@
       ],
       "relatedWords": []
     },
+    "permissible": {
+      "word": "PERMISSIBLE",
+      "definitions": [
+        {
+          "text": "That may be permitted; allowable; admissible.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "permission": {
       "word": "PERMISSION",
       "definitions": [
@@ -4471,6 +4581,16 @@
       ],
       "relatedWords": []
     },
+    "permutable": {
+      "word": "PERMUTABLE",
+      "definitions": [
+        {
+          "text": "Capable of being permuted; exchangeable.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "permutation": {
       "word": "PERMUTATION",
       "definitions": [
@@ -4479,7 +4599,15 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "(Math.) (a) The arrangement of any determinate number of things, as units,",
+          "text": "(Math.) (a) The arrangement of any determinate number of things, as units, objects, letters, etc., in all possible orders, one after the other; (b) Any one of such possible arrangements.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Barter; exchange. Permutation lock, a lock in which the parts can be transposed or shifted, so as to require different arrangements of the tumblers on different occasions of unlocking.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4561,7 +4689,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Having the quality of injuring or killing; destructive; very mischievous; baleful; malicious; wicked. Let this pernicious hour Stand aye accursed in the calendar. Shak. Pernicious to his health. Prescott.",
+          "text": "Having the quality of injuring or killing; destructive; very mischievous; baleful; malicious; wicked. Let this pernicious hour Stand aye accursed in the calendar. Shak. Pernicious to his health. Prescott. deleterious; hurtful; mischievous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5051,7 +5179,7 @@
       "word": "PERPLEXED",
       "definitions": [
         {
-          "text": "Entangled, involved, or confused; hence, embarrassd; puzzled;",
+          "text": "Entangled, involved, or confused; hence, embarrassd; puzzled; doubtful; anxious.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5419,6 +5547,16 @@
       ],
       "relatedWords": []
     },
+    "persevering": {
+      "word": "PERSEVERING",
+      "definitions": [
+        {
+          "text": "Characterized by perseverance; persistent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "persian": {
       "word": "PERSIAN",
       "definitions": [
@@ -5573,7 +5711,25 @@
       ],
       "relatedWords": []
     },
-    "persistencepersistency": {
+    "persistence": {
+      "word": "PERSISTENCE; PERSISTENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being persistent; staying or continuing quality; hence, in an unfavorable sense, doggedness; obstinacy.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The continuance of an effect after the cause which first gave rise to it is removed; as: (a) (Physics)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The persistence of motion. (b) (Physiol.) Visual persistence, or persistence of the visual impression; auditory persistence, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "persistency": {
       "word": "PERSISTENCE; PERSISTENCY",
       "definitions": [
         {
@@ -5615,6 +5771,16 @@
         {
           "text": "In a persistent manner.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "persisting": {
+      "word": "PERSISTING",
+      "definitions": [
+        {
+          "text": "Inclined to persist; tenacious of purpose; persistent.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -6241,6 +6407,16 @@
       ],
       "relatedWords": []
     },
+    "persuadable": {
+      "word": "PERSUADABLE",
+      "definitions": [
+        {
+          "text": "That may be persuaded.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "persuade": {
       "word": "PERSUADE",
       "definitions": [
@@ -6267,6 +6443,16 @@
         {
           "text": "Persuasion. [Obs.] Beau. & Fl.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "persuaded": {
+      "word": "PERSUADED",
+      "definitions": [
+        {
+          "text": "Prevailed upon; influenced by argument or entreaty; convinced.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -6339,7 +6525,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "That which persuades; an inducement; an incitement; an",
+          "text": "That which persuades; an inducement; an incitement; an exhortation.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6475,7 +6661,7 @@
       "word": "PERTHITE",
       "definitions": [
         {
-          "text": "A kind of feldspar consisting of a laminated intertexture of",
+          "text": "A kind of feldspar consisting of a laminated intertexture of albite and orthoclase, usually of different colors.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6489,7 +6675,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Resolute; persevering; constant; steady. Diligence is a steady, constant, and pertinacious study. South.",
+          "text": "Resolute; persevering; constant; steady. Diligence is a steady, constant, and pertinacious study. South. determined; firm; constant; steady.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6539,7 +6725,17 @@
       ],
       "relatedWords": []
     },
-    "pertinencepertinency": {
+    "pertinence": {
+      "word": "PERTINENCE; PERTINENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being pertinent; justness of relation to the subject or matter in hand; fitness; appositeness; relevancy; suitableness. The fitness and pertinency of the apostle's discourse. Bentley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pertinency": {
       "word": "PERTINENCE; PERTINENCY",
       "definitions": [
         {
@@ -6699,6 +6895,16 @@
       ],
       "relatedWords": []
     },
+    "perturbed": {
+      "word": "PERTURBED",
+      "definitions": [
+        {
+          "text": "Agitated; disturbed; troubled. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "perturber": {
       "word": "PERTURBER",
       "definitions": [
@@ -6719,7 +6925,17 @@
       ],
       "relatedWords": []
     },
-    "pertusepertused": {
+    "pertuse": {
+      "word": "PERTUSE; PERTUSED",
+      "definitions": [
+        {
+          "text": "Punched; pierced with, or having, holes.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pertused": {
       "word": "PERTUSE; PERTUSED",
       "definitions": [
         {
@@ -7045,7 +7261,7 @@
       "word": "PERVICACIOUS",
       "definitions": [
         {
-          "text": "Obstinate; willful; refractory. [Obs.] -- Per`vi*ca\"cious*ly,",
+          "text": "Obstinate; willful; refractory. [Obs.] -- Per`vi*ca\"cious*ly, adv.",
           "partOfSpeech": "adjective"
         }
       ],

@@ -1,6 +1,16 @@
 {
   "version": "v1",
   "entries": {
+    "dia": {
+      "word": "DIA-; DI-",
+      "definitions": [
+        {
+          "text": "A prefix denoting through; also, between, apart, asunder, across. Before a vowel dia- becomes di-; as, diactinic; dielectric, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "diabase": {
       "word": "DIABASE",
       "definitions": [
@@ -31,7 +41,59 @@
       ],
       "relatedWords": []
     },
-    "diabeticdiabetical": {
+    "diabetic": {
+      "word": "DIABETIC; DIABETICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to diabetes; as, diabetic or diabetical treatment. Quian. Diabetic sugar. (Chem.) Same as Dextrose.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "allergic",
+        "anemic",
+        "apoplectic",
+        "arthritic",
+        "bilious",
+        "cancerous",
+        "chlorotic",
+        "colicky",
+        "consumptive",
+        "dropsical",
+        "dyspeptic",
+        "edematous",
+        "encephalitic",
+        "epileptic",
+        "laryngitic",
+        "leprous",
+        "luetic",
+        "malarial",
+        "malignant",
+        "measly",
+        "nephritic",
+        "neuralgic",
+        "neuritic",
+        "palsied",
+        "paralytic",
+        "phthisic",
+        "pleuritic",
+        "pneumonic",
+        "pocky",
+        "podagric",
+        "rachitic",
+        "rheumatic",
+        "rickety",
+        "scorbutic",
+        "scrofulous",
+        "tabetic",
+        "tabid",
+        "tubercular",
+        "tuberculous",
+        "tumorigenic",
+        "tumorous"
+      ]
+    },
+    "diabetical": {
       "word": "DIABETIC; DIABETICAL",
       "definitions": [
         {
@@ -41,7 +103,7 @@
       ],
       "relatedWords": []
     },
-    "diableriediabley": {
+    "diablerie": {
       "word": "DIABLERIE; DIABLEY",
       "definitions": [
         {
@@ -51,15 +113,191 @@
       ],
       "relatedWords": []
     },
-    "diabolicdiabolical": {
-      "word": "DIABOLIC; DIABOLICAL",
+    "diabley": {
+      "word": "DIABLERIE; DIABLEY",
       "definitions": [
         {
-          "text": "Pertaining to the devil; resembling, or appropriate, or appropriate to, the devil; devilish; infernal; impious; atrocious; nefarious; outrageously wicked; as, a diabolic or diabolical temper or act. \"Diabolic power.\" Milton. \"The diabolical institution.\"",
-          "partOfSpeech": "adjective"
+          "text": "Devilry; sorcery or incantation; a diabolical deed; mischief.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
+    },
+    "diabolic": {
+      "word": "DIABOLIC; DIABOLICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the devil; resembling, or appropriate, or appropriate to, the devil; devilish; infernal; impious; atrocious; nefarious; outrageously wicked; as, a diabolic or diabolical temper or act. \"Diabolic power.\" Milton. \"The diabolical institution.\" Motley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Draconian",
+        "Mephistophelian",
+        "Tartarean",
+        "abominable",
+        "accursed",
+        "animal",
+        "anthropophagous",
+        "appalling",
+        "atrocious",
+        "awful",
+        "bad",
+        "barbaric",
+        "barbarous",
+        "base",
+        "beastly",
+        "bestial",
+        "bloodthirsty",
+        "bloody",
+        "bloody-minded",
+        "brutal",
+        "brutalized",
+        "brute",
+        "brutish",
+        "cannibalistic",
+        "corrupt",
+        "cruel",
+        "cruel-hearted",
+        "cursed",
+        "damnable",
+        "demoniac",
+        "demoniacal",
+        "demonic",
+        "demonish",
+        "demonlike",
+        "depraved",
+        "devil-like",
+        "devilish",
+        "diabolical",
+        "dreadful",
+        "evil",
+        "execrable",
+        "fell",
+        "feral",
+        "ferocious",
+        "fiendish",
+        "fiendlike",
+        "fierce",
+        "flagitious",
+        "foul",
+        "ghoulish",
+        "heinous",
+        "hellborn",
+        "hellish",
+        "hideous",
+        "horrible",
+        "horrid",
+        "ill",
+        "impious",
+        "infernal",
+        "inhuman",
+        "inhumane",
+        "iniquitous",
+        "maleficent",
+        "malevolent",
+        "malicious",
+        "malign",
+        "monstrous",
+        "murderous",
+        "odious",
+        "ogreish",
+        "ruthless",
+        "sadistic",
+        "sanguinary",
+        "sanguineous",
+        "satanic",
+        "savage",
+        "serpentine",
+        "sharkish",
+        "sinful",
+        "sinister",
+        "slavering",
+        "subhuman",
+        "terrible",
+        "truculent",
+        "unchristian",
+        "uncivilized",
+        "ungodly",
+        "unhallowed",
+        "unhuman",
+        "vicious",
+        "vile",
+        "wicked",
+        "wolfish"
+      ]
+    },
+    "diabolical": {
+      "word": "DIABOLIC; DIABOLICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to the devil; resembling, or appropriate, or appropriate to, the devil; devilish; infernal; impious; atrocious; nefarious; outrageously wicked; as, a diabolic or diabolical temper or act. \"Diabolic power.\" Milton. \"The diabolical institution.\" Motley.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Draconian",
+        "Mephistophelian",
+        "Tartarean",
+        "animal",
+        "anthropophagous",
+        "atrocious",
+        "barbaric",
+        "barbarous",
+        "beastly",
+        "bestial",
+        "bloodthirsty",
+        "bloody",
+        "bloody-minded",
+        "brutal",
+        "brutalized",
+        "brute",
+        "brutish",
+        "cannibalistic",
+        "cruel",
+        "cruel-hearted",
+        "cursed",
+        "damnable",
+        "demoniac",
+        "demoniacal",
+        "demonic",
+        "demonish",
+        "demonlike",
+        "devil-like",
+        "devilish",
+        "diabolic",
+        "execrable",
+        "fell",
+        "feral",
+        "ferocious",
+        "fiendish",
+        "fiendlike",
+        "fierce",
+        "ghoulish",
+        "hellborn",
+        "hellish",
+        "infernal",
+        "inhuman",
+        "inhumane",
+        "murderous",
+        "ogreish",
+        "ruthless",
+        "sadistic",
+        "sanguinary",
+        "sanguineous",
+        "satanic",
+        "savage",
+        "sharkish",
+        "slavering",
+        "subhuman",
+        "truculent",
+        "unchristian",
+        "uncivilized",
+        "ungodly",
+        "unhuman",
+        "vicious",
+        "wolfish"
+      ]
     },
     "diabolify": {
       "word": "DIABOLIFY",
@@ -161,12 +399,32 @@
       ],
       "relatedWords": []
     },
-    "diachylondiachylum": {
+    "diachylon": {
       "word": "DIACHYLON; DIACHYLUM",
       "definitions": [
         {
           "text": "A plaster originally composed of the juices of several plants (whence its name), but now made of an oxide of lead and oil, and consisting essentially of glycerin mixed with lead salts of the fat acids.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diachylum": {
+      "word": "DIACHYLON; DIACHYLUM",
+      "definitions": [
+        {
+          "text": "A plaster originally composed of the juices of several plants (whence its name), but now made of an oxide of lead and oil, and consisting essentially of glycerin mixed with lead salts of the fat acids.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diacid": {
+      "word": "DIACID",
+      "definitions": [
+        {
+          "text": "Divalent; -- said of a base or radical as capable of saturating two acid monad radicals or a dibasic acid. Cf. Dibasic, a., and Biacid.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -235,7 +493,17 @@
       ],
       "relatedWords": []
     },
-    "diacriticdiacritical": {
+    "diacritic": {
+      "word": "DIACRITIC; DIACRITICAL",
+      "definitions": [
+        {
+          "text": "That separates or distinguishes; -- applied to points or marks used to distinguish letters of similar form, or different sounds of the same letter, as, a, â, ä, o, ô, etc. \"Diacritical points.\" Sir W. Jones. A glance at this typography will reveal great difficulties, which diacritical marks necessarily throw in the way of both printer and writer. A. J. Ellis.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diacritical": {
       "word": "DIACRITIC; DIACRITICAL",
       "definitions": [
         {
@@ -265,7 +533,17 @@
       ],
       "relatedWords": []
     },
-    "diadelphiandiadelphous": {
+    "diadelphian": {
+      "word": "DIADELPHIAN; DIADELPHOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to the class Diadelphia; having the stamens united into two bodies by their filaments (said of a plant or flower); grouped into two bundles or sets by coalescence of the filaments (said of stamens).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diadelphous": {
       "word": "DIADELPHIAN; DIADELPHOUS",
       "definitions": [
         {
@@ -387,16 +665,6 @@
         "wristlet"
       ]
     },
-    "diadi": {
-      "word": "DIA-; DI-",
-      "definitions": [
-        {
-          "text": "A prefix denoting through; also, between, apart, asunder, across. Before a vowel dia- becomes di-; as, diactinic; dielectric, etc.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "diadrom": {
       "word": "DIADROM",
       "definitions": [
@@ -407,7 +675,7 @@
       ],
       "relatedWords": []
     },
-    "diaeresisdieresis": {
+    "diaeresis": {
       "word": "DIAERESIS; DIERESIS",
       "definitions": [
         {
@@ -423,7 +691,90 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Alexandrine",
+        "accent",
+        "accentuation",
+        "amphibrach",
+        "amphimacer",
+        "anacrusis",
+        "analysis",
+        "anapest",
+        "anatomy",
+        "antispast",
+        "arsis",
+        "bacchius",
+        "beat",
+        "breakdown",
+        "cadence",
+        "caesura",
+        "catalexis",
+        "chloriamb",
+        "chloriambus",
+        "colon",
+        "counterpoint",
+        "cretic",
+        "dactyl",
+        "dactylic hexameter",
+        "dimeter",
+        "dipody",
+        "dissection",
+        "dochmiac",
+        "elegiac",
+        "elegiac couplet",
+        "elegiac pentameter",
+        "emphasis",
+        "epitrite",
+        "feminine caesura",
+        "foot",
+        "heptameter",
+        "heptapody",
+        "heroic couplet",
+        "hexameter",
+        "hexapody",
+        "iamb",
+        "iambic",
+        "iambic pentameter",
+        "ictus",
+        "ionic",
+        "jingle",
+        "lilt",
+        "masculine caesura",
+        "measure",
+        "meter",
+        "metrical accent",
+        "metrical foot",
+        "metrical group",
+        "metrical unit",
+        "metron",
+        "molossus",
+        "mora",
+        "movement",
+        "numbers",
+        "paeon",
+        "pentameter",
+        "pentapody",
+        "period",
+        "proceleusmatic",
+        "pyrrhic",
+        "quantity",
+        "resolution",
+        "rhythm",
+        "spondee",
+        "sprung rhythm",
+        "stress",
+        "swing",
+        "syzygy",
+        "tetrameter",
+        "tetrapody",
+        "tetraseme",
+        "thesis",
+        "tribrach",
+        "trimeter",
+        "tripody",
+        "triseme",
+        "trochee"
+      ]
     },
     "diaeretic": {
       "word": "DIAERETIC",
@@ -465,7 +816,17 @@
       ],
       "relatedWords": []
     },
-    "diaglyphicdiaglyphtic": {
+    "diaglyphic": {
+      "word": "DIAGLYPHIC; DIAGLYPHTIC",
+      "definitions": [
+        {
+          "text": "Represented or formed by depressions in the general surface; as, diaglyphic sculpture or engraving; -- opposed to anaglyphic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diaglyphtic": {
       "word": "DIAGLYPHIC; DIAGLYPHTIC",
       "definitions": [
         {
@@ -716,7 +1077,7 @@
       "word": "DIAGONAL",
       "definitions": [
         {
-          "text": "Joining two not adjacent angles of a quadrilateral or multilateral figure; running across from corner to corner; crossing",
+          "text": "Joining two not adjacent angles of a quadrilateral or multilateral figure; running across from corner to corner; crossing at an angle with one of the sides. Diagonal bond (Masonry), herringbone work. See Herringbone, a. two layers of planking, making angles of about 45º with the keel, in opposite directions. lines, with other lines crossing them obliquely, so that their intersections furnish smaller subdivisions of the unit of measure than could be conveniently marked on a plain scale. Cross, a.",
           "partOfSpeech": "adjective"
         },
         {
@@ -1007,7 +1368,7 @@
       "word": "DIAGRAMMATIC",
       "definitions": [
         {
-          "text": "Pertaining to, or of the nature of, a diagram; showing by",
+          "text": "Pertaining to, or of the nature of, a diagram; showing by diagram.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1023,7 +1384,17 @@
       ],
       "relatedWords": []
     },
-    "diagraphicdiagraphical": {
+    "diagraphic": {
+      "word": "DIAGRAPHIC; DIAGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Descriptive.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diagraphical": {
       "word": "DIAGRAPHIC; DIAGRAPHICAL",
       "definitions": [
         {
@@ -1259,6 +1630,14 @@
         {
           "text": "Same as Dialectics. Plato placed his dialectic above all sciences. Liddell & Scott.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to dialectics; logical; argumental.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to a dialect or to dialects. Earle.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -1317,17 +1696,7 @@
         "ventilation"
       ]
     },
-    "dialectically": {
-      "word": "DIALECTICALLY",
-      "definitions": [
-        {
-          "text": "In a dialectical manner.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "dialecticdialectical": {
+    "dialectical": {
       "word": "DIALECTIC; DIALECTICAL",
       "definitions": [
         {
@@ -1339,54 +1708,47 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "a fortiori",
+        "a posteriori",
+        "a priori",
+        "analytic",
+        "argumental",
+        "argumentative",
+        "categorical",
+        "combative",
+        "conditional",
+        "contentious",
+        "controversial",
+        "deductive",
+        "dialectic",
+        "discursive",
+        "disputatious",
+        "enthymematic",
+        "epagogic",
+        "eristic",
+        "hypothetical",
+        "ill-humored",
+        "inductive",
+        "inferential",
+        "litigious",
+        "logomachic",
+        "maieutic",
+        "pilpulistic",
+        "polemic",
+        "pro and con",
+        "quarrelsome",
+        "soritical",
+        "syllogistic",
+        "synthetic"
+      ]
     },
-    "dialecticformofchaciertohuntfchasserfrassumendll": {
-      "word": "dialectic form of chacier to hunt, F. chasser, fr. (assumend) LL.",
+    "dialectically": {
+      "word": "DIALECTICALLY",
       "definitions": [
         {
-          "text": "To lay hold on; to seize, especially with the hand; to grasp (anything) in motion, with the effect of holding; as, to catch a ball.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To seize after pursuing; to arrest; as, to catch a thief. \"They pursued . . . and caught him.\" Judg. i. 6.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To take captive, as in a snare or net, or on a hook; as, to catch a bird or fish.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Hence: To insnare; to entangle. \"To catch him in his words\". Mark xii. 13.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To seize with the senses or the mind; to apprehend; as, to catch a melody. \"Fiery thoughts . . . whereof I catch the issue.\" Tennyson.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To communicate to; to fasten upon; as, the fire caught the adjoining building.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To engage and attach; to please; to charm. The soothing arts that catch the fair. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To get possession of; to attain. Torment myself to catch the English throne. Shak.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To take or receive; esp. to take by sympathy, contagion, infection, or exposure; as, to catch the spirit of an occasion; to catch the measles or smallpox; to catch cold; the house caught fire.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To come upon unexpectedly or by surprise; to find; as, to catch one in the act of stealing.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To reach in time; to come up with; as, to catch a train. To catch fire, to become inflamed or ignited. [Colloq.] -- To catch one's eye, to interrupt captiously while speaking. [Colloq.] \"You catch me up so very short.\" Dickens.",
-          "partOfSpeech": "verb"
+          "text": "In a dialectical manner.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -1566,11 +1928,21 @@
       ],
       "relatedWords": []
     },
-    "dialogisticdialogistical": {
+    "dialogistic": {
       "word": "DIALOGISTIC; DIALOGISTICAL",
       "definitions": [
         {
-          "text": "Pertaining to a dialogue; having the form or nature of a",
+          "text": "Pertaining to a dialogue; having the form or nature of a dialogue.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dialogistical": {
+      "word": "DIALOGISTIC; DIALOGISTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a dialogue; having the form or nature of a dialogue.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2069,17 +2441,7 @@
       ],
       "relatedWords": []
     },
-    "diametrically": {
-      "word": "DIAMETRICALLY",
-      "definitions": [
-        {
-          "text": "In a diametrical manner; directly; as, diametrically opposite. Whose principles were diametrically opposed to his. Macaulay.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "diametricdiametrical": {
+    "diametric": {
       "word": "DIAMETRIC; DIAMETRICAL",
       "definitions": [
         {
@@ -2089,6 +2451,30 @@
         {
           "text": "As remote as possible, as if at the opposite end of a diameter; directly adverse.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diametrical": {
+      "word": "DIAMETRIC; DIAMETRICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a diameter.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "As remote as possible, as if at the opposite end of a diameter; directly adverse.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diametrically": {
+      "word": "DIAMETRICALLY",
+      "definitions": [
+        {
+          "text": "In a diametrical manner; directly; as, diametrically opposite. Whose principles were diametrically opposed to his. Macaulay.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -2341,7 +2727,7 @@
         "worthy"
       ]
     },
-    "diamondanniversarydiamondjubilee": {
+    "diamondanniversary": {
       "word": "DIAMOND ANNIVERSARY; DIAMOND JUBILEE",
       "definitions": [
         {
@@ -2381,6 +2767,16 @@
         {
           "text": "To set with diamonds; to adorn; to enrich. [R.] Diamondizing of your subject. B. Jonson.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diamondjubilee": {
+      "word": "DIAMOND ANNIVERSARY; DIAMOND JUBILEE",
+      "definitions": [
+        {
+          "text": "One celebrated upon the completion of sixty, or, according to some, seventy-five, years from the beginning of the thing commemorated.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -3061,7 +3457,17 @@
       ],
       "relatedWords": []
     },
-    "diaphonicdiaphonical": {
+    "diaphonic": {
+      "word": "DIAPHONIC; DIAPHONICAL",
+      "definitions": [
+        {
+          "text": "Diacoustic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diaphonical": {
       "word": "DIAPHONIC; DIAPHONICAL",
       "definitions": [
         {
@@ -3092,8 +3498,12 @@
       "relatedWords": []
     },
     "diaphoretic": {
-      "word": "DIAPHORETIC",
+      "word": "DIAPHORETIC; DIAPHORETICAL",
       "definitions": [
+        {
+          "text": "Having the power to increase perspiration.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A medicine or agent which promotes perspiration. the insensible perspiration, the latter excite the sensible discharge called sweat. Parr.",
           "partOfSpeech": "noun"
@@ -3101,7 +3511,7 @@
       ],
       "relatedWords": []
     },
-    "diaphoreticdiaphoretical": {
+    "diaphoretical": {
       "word": "DIAPHORETIC; DIAPHORETICAL",
       "definitions": [
         {
@@ -3368,7 +3778,17 @@
       ],
       "relatedWords": []
     },
-    "diarialdiarian": {
+    "diarial": {
+      "word": "DIARIAL; DIARIAN",
+      "definitions": [
+        {
+          "text": "Pertaining to a diary; daily.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diarian": {
       "word": "DIARIAL; DIARIAN",
       "definitions": [
         {
@@ -3461,7 +3881,7 @@
         "writer"
       ]
     },
-    "diarrheadiarrhoea": {
+    "diarrhea": {
       "word": "DIARRHEA; DIARRHOEA",
       "definitions": [
         {
@@ -3469,9 +3889,111 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "BM",
+        "abscess",
+        "ague",
+        "anemia",
+        "ankylosis",
+        "anoxia",
+        "apnea",
+        "asphyxiation",
+        "asthma",
+        "ataxia",
+        "atrophy",
+        "backache",
+        "bleeding",
+        "blennorhea",
+        "bloody flux",
+        "bowel movement",
+        "cachexia",
+        "cachexy",
+        "cardialgia",
+        "catharsis",
+        "chill",
+        "chills",
+        "cholera morbus",
+        "colic",
+        "constipation",
+        "convulsion",
+        "costiveness",
+        "coughing",
+        "crap",
+        "cyanosis",
+        "defecation",
+        "dejection",
+        "dizziness",
+        "dropsy",
+        "dysentery",
+        "dyspepsia",
+        "dyspnea",
+        "edema",
+        "emaciation",
+        "evacuation",
+        "fainting",
+        "fatigue",
+        "fever",
+        "fibrillation",
+        "flux",
+        "gripe",
+        "gripes",
+        "growth",
+        "heartburn",
+        "hemorrhage",
+        "high blood pressure",
+        "hydrops",
+        "hypertension",
+        "hypotension",
+        "icterus",
+        "indigestion",
+        "inflammation",
+        "insomnia",
+        "irregularity",
+        "itching",
+        "jaundice",
+        "labored breathing",
+        "lientery",
+        "loose bowels",
+        "low blood pressure",
+        "lumbago",
+        "marasmus",
+        "movement",
+        "nasal discharge",
+        "nausea",
+        "necrosis",
+        "obstipation",
+        "pain",
+        "paralysis",
+        "pruritus",
+        "purgation",
+        "purge",
+        "pyrosis",
+        "rash",
+        "rheum",
+        "runs",
+        "sclerosis",
+        "seizure",
+        "shit",
+        "shits",
+        "shock",
+        "skin eruption",
+        "sneezing",
+        "sore",
+        "spasm",
+        "stool",
+        "tabes",
+        "tachycardia",
+        "trots",
+        "tumor",
+        "turistas",
+        "upset stomach",
+        "vertigo",
+        "voidance",
+        "vomiting",
+        "wasting"
+      ]
     },
-    "diarrhealdiarrhoeal": {
+    "diarrheal": {
       "word": "DIARRHEAL; DIARRHOEAL",
       "definitions": [
         {
@@ -3481,7 +4003,37 @@
       ],
       "relatedWords": []
     },
-    "diarrheticdiarrhoetic": {
+    "diarrhetic": {
+      "word": "DIARRHETIC; DIARRHOETIC",
+      "definitions": [
+        {
+          "text": "Producing diarrhea, or a purging.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diarrhoea": {
+      "word": "DIARRHEA; DIARRHOEA",
+      "definitions": [
+        {
+          "text": "A morbidly frequent and profuse discharge of loose or fluid evacuations from the intestines, without tenesmus; a purging or looseness of the bowels; a flux.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diarrhoeal": {
+      "word": "DIARRHEAL; DIARRHOEAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to diarrhea; like diarrhea.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "diarrhoetic": {
       "word": "DIARRHETIC; DIARRHOETIC",
       "definitions": [
         {
@@ -3841,7 +4393,17 @@
       ],
       "relatedWords": []
     },
-    "diathermancydiathermaneity": {
+    "diathermancy": {
+      "word": "DIATHERMANCY; DIATHERMANEITY",
+      "definitions": [
+        {
+          "text": "The property of transmitting radiant heat; the quality of being diathermous. Melloni.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diathermaneity": {
       "word": "DIATHERMANCY; DIATHERMANEITY",
       "definitions": [
         {
@@ -4195,7 +4757,17 @@
       ],
       "relatedWords": []
     },
-    "diazeucticdiazeutic": {
+    "diazeuctic": {
+      "word": "DIAZEUCTIC; DIAZEUTIC",
+      "definitions": [
+        {
+          "text": "Disjoining two fourths; as, the diazeutic tone, which, like that from F to G in modern music, lay between two fourths, and, being joined to either, made a fifth. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diazeutic": {
       "word": "DIAZEUCTIC; DIAZEUTIC",
       "definitions": [
         {

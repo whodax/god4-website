@@ -127,6 +127,16 @@
         "whorehouse"
       ]
     },
+    "denarcotize": {
+      "word": "DENARCOTIZE",
+      "definitions": [
+        {
+          "text": "To deprive of narcotine; as, to denarcotize opium.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "denarius": {
       "word": "DENARIUS",
       "definitions": [
@@ -334,7 +344,17 @@
       ],
       "relatedWords": []
     },
-    "dendriticdendritical": {
+    "dendritic": {
+      "word": "DENDRITIC; DENDRITICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to a dendrite, or to arborescent crystallization; having a form resembling a shrub or tree; arborescent.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dendritical": {
       "word": "DENDRITIC; DENDRITICAL",
       "definitions": [
         {
@@ -354,7 +374,17 @@
       ],
       "relatedWords": []
     },
-    "dendroiddendroidal": {
+    "dendroid": {
+      "word": "DENDROID; DENDROIDAL",
+      "definitions": [
+        {
+          "text": "Resembling a shrub or tree in form; treelike.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dendroidal": {
       "word": "DENDROID; DENDROIDAL",
       "definitions": [
         {
@@ -2529,6 +2559,65 @@
       ],
       "relatedWords": []
     },
+    "dentate": {
+      "word": "DENTATE; DENTATED",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Toothed; especially, with the teeth projecting straight out, not pointed either forward or backward; as, a dentate leaf.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having teeth or toothlike points. See Illust. of Antennæ.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "battlemented",
+        "chopped",
+        "clawed",
+        "crenate",
+        "crenated",
+        "crenellated",
+        "crenulate",
+        "dentated",
+        "digital",
+        "digitate",
+        "digitated",
+        "embrasured",
+        "erose",
+        "fanged",
+        "fingered",
+        "gashed",
+        "incised",
+        "indented",
+        "jagged",
+        "jaggy",
+        "jawed",
+        "lacerate",
+        "lacerated",
+        "nicked",
+        "notched",
+        "prehensile",
+        "raptorial",
+        "saw-toothed",
+        "sawlike",
+        "scalloped",
+        "scored",
+        "serrate",
+        "serrated",
+        "serrulated",
+        "taloned",
+        "toothed"
+      ]
+    },
     "dentateciliate": {
       "word": "DENTATE-CILIATE",
       "definitions": [
@@ -2539,7 +2628,7 @@
       ],
       "relatedWords": []
     },
-    "dentatedentated": {
+    "dentated": {
       "word": "DENTATE; DENTATED",
       "definitions": [
         {
@@ -2696,11 +2785,21 @@
         "wisdom tooth"
       ]
     },
-    "denticulatedenticulated": {
+    "denticulate": {
       "word": "DENTICULATE; DENTICULATED",
       "definitions": [
         {
-          "text": "Furnished with denticles; notched into little toothlike",
+          "text": "Furnished with denticles; notched into little toothlike projections; as, a denticulate leaf of calyx.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "denticulated": {
+      "word": "DENTICULATE; DENTICULATED",
+      "definitions": [
+        {
+          "text": "Furnished with denticles; notched into little toothlike projections; as, a denticulate leaf of calyx.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2974,7 +3073,17 @@
       ],
       "relatedWords": []
     },
-    "dentisticdentistical": {
+    "dentistic": {
+      "word": "DENTISTIC; DENTISTICAL",
+      "definitions": [
+        {
+          "text": "Pertaining to dentistry or to dentists. [R.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dentistical": {
       "word": "DENTISTIC; DENTISTICAL",
       "definitions": [
         {

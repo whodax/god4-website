@@ -1,12 +1,30 @@
 {
   "version": "v1",
   "entries": {
-    "urure": {
+    "ur": {
       "word": "UR; URE",
       "definitions": [
         {
           "text": "The urus.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ure": {
+      "word": "UR; URE",
+      "definitions": [
+        {
+          "text": "The urus.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Use; practice; exercise. [Obs.] Fuller. Let us be sure of this, to put the best in ure That lies in us. Chapman.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "To use; to exercise; to inure; to accustom by practice. [Obs.] The French soldiers . . . from their youth have been practiced and ured in feats of arms. Sir T. More.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -91,7 +109,17 @@
       ],
       "relatedWords": []
     },
-    "uralianuralic": {
+    "uralian": {
+      "word": "URALIAN; URALIC",
+      "definitions": [
+        {
+          "text": "Of or relating to the Ural Mountains.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "uralic": {
       "word": "URALIAN; URALIC",
       "definitions": [
         {
@@ -221,7 +249,17 @@
       ],
       "relatedWords": []
     },
-    "uraniscoraphyuraniscorrhaphy": {
+    "uraniscoraphy": {
+      "word": "URANISCORAPHY; URANISCORRHAPHY",
+      "definitions": [
+        {
+          "text": "Suture of the palate. See Staphyloraphy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "uraniscorrhaphy": {
       "word": "URANISCORAPHY; URANISCORRHAPHY",
       "definitions": [
         {
@@ -261,7 +299,17 @@
       ],
       "relatedWords": []
     },
-    "uranographicuranographical": {
+    "uranographic": {
+      "word": "URANOGRAPHIC; URANOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to uranography; as, an uranographic treatise.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "uranographical": {
       "word": "URANOGRAPHIC; URANOGRAPHICAL",
       "definitions": [
         {
@@ -423,7 +471,17 @@
       ],
       "relatedWords": []
     },
-    "urareurari": {
+    "urare": {
+      "word": "URARE; URARI",
+      "definitions": [
+        {
+          "text": "See Curare.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "urari": {
       "word": "URARE; URARI",
       "definitions": [
         {
@@ -541,7 +599,17 @@
       ],
       "relatedWords": []
     },
-    "urceolateurcelate": {
+    "urceolate": {
+      "word": "URCEOLATE; URCELATE",
+      "definitions": [
+        {
+          "text": "Shaped like a pitcher or urn; swelling below, and contrasted at the orifice, as a calyx or corolla.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "urcelate": {
       "word": "URCEOLATE; URCELATE",
       "definitions": [
         {
@@ -625,20 +693,6 @@
         {
           "text": "The language more generally called Hindoostanee.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "ure": {
-      "word": "URE",
-      "definitions": [
-        {
-          "text": "Use; practice; exercise. [Obs.] Fuller. Let us be sure of this, to put the best in ure That lies in us. Chapman.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To use; to exercise; to inure; to accustom by practice. [Obs.] The French soldiers . . . from their youth have been practiced and ured in feats of arms. Sir T. More.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -803,7 +857,7 @@
       "word": "URETHROPLASTY",
       "definitions": [
         {
-          "text": "An operation for the repair of an injury or a defect in the",
+          "text": "An operation for the repair of an injury or a defect in the walls of the urethra.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1113,7 +1167,17 @@
       ],
       "relatedWords": []
     },
-    "urinoseurinous": {
+    "urinose": {
+      "word": "URINOSE; URINOUS",
+      "definitions": [
+        {
+          "text": "Of or pertaining to urine, or partaking of its qualities; having the character or odor of urine; similar to urine. Arbuthnot.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "urinous": {
       "word": "URINOSE; URINOUS",
       "definitions": [
         {
@@ -1775,6 +1839,16 @@
         {
           "text": "The nettle rash, a disease characterized by a transient eruption of red pimples and of wheals, accompanied with a burning or stinging sensation and with itching; uredo.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "urticate": {
+      "word": "URTICATE",
+      "definitions": [
+        {
+          "text": "To sting with, or as with, nettles; to irritate; to annoy. G. A. Sala.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

@@ -552,7 +552,17 @@
         "zoster"
       ]
     },
-    "diphtherialdiphtheric": {
+    "diphtherial": {
+      "word": "DIPHTHERIAL; DIPHTHERIC",
+      "definitions": [
+        {
+          "text": "Relating to diphtheria; diphtheritic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diphtheric": {
       "word": "DIPHTHERIAL; DIPHTHERIC",
       "definitions": [
         {
@@ -658,7 +668,7 @@
       "word": "DIPHTHONGAL",
       "definitions": [
         {
-          "text": "Relating or belonging to a diphthong; having the nature of a",
+          "text": "Relating or belonging to a diphthong; having the nature of a diphthong.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -862,7 +872,7 @@
       "word": "DIPLOGRAPH",
       "definitions": [
         {
-          "text": "An instrument used for double writing, as one for producing",
+          "text": "An instrument used for double writing, as one for producing embossed writing for the blind and ordinary writing at the same time.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1068,7 +1078,7 @@
         "world politics"
       ]
     },
-    "diplomatdiplomate": {
+    "diplomat": {
       "word": "DIPLOMAT; DIPLOMATE",
       "definitions": [
         {
@@ -1076,11 +1086,84 @@
           "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Admirable Crichton",
+        "Machiavel",
+        "Machiavellian",
+        "Machiavellianist",
+        "adept",
+        "ambassador",
+        "ambassadress",
+        "apostolic delegate",
+        "artisan",
+        "artist",
+        "attache",
+        "authority",
+        "career diplomat",
+        "chancellor",
+        "charge",
+        "commercial attache",
+        "connaisseur",
+        "connoisseur",
+        "consul",
+        "consul general",
+        "consular agent",
+        "consultant",
+        "cordon bleu",
+        "crack shot",
+        "craftsman",
+        "dead shot",
+        "diplomatic",
+        "diplomatic agent",
+        "diplomatist",
+        "elder statesman",
+        "emissary",
+        "envoy",
+        "envoy extraordinary",
+        "experienced hand",
+        "expert",
+        "expert consultant",
+        "foreign service officer",
+        "graduate",
+        "handy man",
+        "influence peddler",
+        "internuncio",
+        "journeyman",
+        "legate",
+        "marksman",
+        "military attache",
+        "minister",
+        "minister plenipotentiary",
+        "minister resident",
+        "no slouch",
+        "nuncio",
+        "plenipotentiary",
+        "political realist",
+        "politician",
+        "power broker",
+        "pro",
+        "professional",
+        "professor",
+        "proficient",
+        "resident",
+        "savant",
+        "secretary of legation",
+        "shark",
+        "sharp",
+        "statesman",
+        "technical adviser",
+        "technician",
+        "vice-consul",
+        "vice-legate"
+      ]
     },
     "diplomate": {
-      "word": "DIPLOMATE",
+      "word": "DIPLOMAT; DIPLOMATE",
       "definitions": [
+        {
+          "text": "A diplomatist.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To invest with a title o [R.] Wood.",
           "partOfSpeech": "verb"
@@ -1099,8 +1182,20 @@
       "relatedWords": []
     },
     "diplomatic": {
-      "word": "DIPLOMATIC",
+      "word": "DIPLOMATIC; DIPLOMATICAL",
       "definitions": [
+        {
+          "text": "Pertaining to diplomacy; relating to the foreign ministers at a court, who are called the diplomatic body.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Characterized by tact and shrewdness; dexterous; artful; as, diplomatic management.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Pertaining to diplomatics; paleographic. Astle.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A minister, official agent, or envoy to a foreign court; a diplomatist.",
           "partOfSpeech": "noun"
@@ -1234,17 +1329,7 @@
         "workmanlike"
       ]
     },
-    "diplomatically": {
-      "word": "DIPLOMATICALLY",
-      "definitions": [
-        {
-          "text": "According to the rules of diplomacy; in the manner of a diplomatist; artfully.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "diplomaticdiplomatical": {
+    "diplomatical": {
       "word": "DIPLOMATIC; DIPLOMATICAL",
       "definitions": [
         {
@@ -1258,6 +1343,16 @@
         {
           "text": "Pertaining to diplomatics; paleographic. Astle.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplomatically": {
+      "word": "DIPLOMATICALLY",
+      "definitions": [
+        {
+          "text": "According to the rules of diplomacy; in the manner of a diplomatist; artfully.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []
@@ -1292,7 +1387,7 @@
       ],
       "relatedWords": []
     },
-    "diplopiadiplopy": {
+    "diplopia": {
       "word": "DIPLOPIA; DIPLOPY",
       "definitions": [
         {
@@ -1317,6 +1412,16 @@
       "definitions": [
         {
           "text": "An order of myriapods having two pairs of legs on each segment; the Chilognatha.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "diplopy": {
+      "word": "DIPLOPIA; DIPLOPY",
+      "definitions": [
+        {
+          "text": "The act or state of seeing double. eye is upon the left hand, and that seen by the left eye is upon the right hand. In homonymous diplopia the image seen by the right eye is on the right side, that by the left eye on the left side. In vertical diplopia one image stands above the other.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1527,7 +1632,25 @@
       ],
       "relatedWords": []
     },
-    "dipseydipsiedipsy": {
+    "dipsey": {
+      "word": "DIPSEY; DIPSIE; DIPSY",
+      "definitions": [
+        {
+          "text": "Deep-sea; as, a dipsey line; a dipsy lead. [Sailor's Cant]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A sinker attached to a fishing line; also, a line having several branches, each with such a sinker, used in deep-sea fishing. [Local, U. S.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.) A deep-sea lead. [Rare]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipsie": {
       "word": "DIPSEY; DIPSIE; DIPSY",
       "definitions": [
         {
@@ -1715,6 +1838,24 @@
       "definitions": [
         {
           "text": "Excessive thirst produced by disease.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dipsy": {
+      "word": "DIPSEY; DIPSIE; DIPSY",
+      "definitions": [
+        {
+          "text": "Deep-sea; as, a dipsey line; a dipsy lead. [Sailor's Cant]",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A sinker attached to a fishing line; also, a line having several branches, each with such a sinker, used in deep-sea fishing. [Local, U. S.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Naut.) A deep-sea lead. [Rare]",
           "partOfSpeech": "noun"
         }
       ],

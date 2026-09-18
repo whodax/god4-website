@@ -1,75 +1,124 @@
 {
   "version": "v1",
   "entries": {
-    "fradimofaurisorigausisearseeauricleandcfscout": {
-      "word": "fr. a dim. of auris, orig. ausis, ear. See Auricle, and cf. Scout,",
-      "definitions": [
-        {
-          "text": "The act of listening or hearkening to. Hickes.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Med.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "An examination by listening either directly with the ear (immediate auscultation) applied to parts of the body, as the abdomen; or with the stethoscope (mediate ~), in order to distinguish sounds recognized as a sign of health or of disease.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "friesklclowndialswklunnlogdankluntlogblockande": {
-      "word": "Fries. kl clown, dial. Sw. klunn log, Dan. klunt log block, and E.",
-      "definitions": [
-        {
-          "text": "A man of coarse nature and manners; an awkward fellow; an illbred person; a boor. Sir P. Sidney.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "One who works upon the soil; a rustic; a churl. The clown, the child of nature, without guile. Cowper.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The fool or buffoon in a play, circus, etc. The clown shall make those laugh whose lungs are tickle o'the sere. Shak.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "frfinaretopayafineorsubsidycfoffinertofinishpay": {
-      "word": "fr. finare to pay a fine or subsidy (cf. OF. finer to finish, pay),",
-      "definitions": [
-        {
-          "text": "The income of a ruler or of a state; revennue; public money; sometimes, the income of an individual; often used in the plural for funds; available money; resources. All the finances or revenues of the imperial crown. Bacon.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The science of raising and expending the public revenue. \"Versed in the details of finance.\" Macaulay.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "frumistfrumafirstseeforeadvandcffirstformerframe": {
-      "word": "frumist, fruma, first. See Fore, adv., and cf. First, Former, Frame,",
-      "definitions": [
-        {
-          "text": "First in time or place; most advanced; chief in rank or dignity; as, the foremost troops of an army. THat struck the foremost man of all this world. Shak.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "fracassaretobreakinpiecesperhfrfrawithinamonglinfra": {
-      "word": "fracassare to break in pieces, perh. fr. fra within, among (L. infra)",
+    "fracas": {
+      "word": "FRACAS",
       "definitions": [
         {
           "text": "An uproar; a noisy quarrel; a disturbance; a brawl.",
-          "partOfSpeech": "verb"
+          "partOfSpeech": "noun"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "Bedlam let loose",
+        "ado",
+        "affray",
+        "altercation",
+        "argument",
+        "barney",
+        "bedlam",
+        "bicker",
+        "bickering",
+        "blast",
+        "blood feud",
+        "bobbery",
+        "bother",
+        "brannigan",
+        "brawl",
+        "broil",
+        "brouhaha",
+        "charivari",
+        "chirm",
+        "clamor",
+        "clangor",
+        "clap",
+        "clatter",
+        "commotion",
+        "contention",
+        "controversy",
+        "din",
+        "disagreement",
+        "discord",
+        "disorder",
+        "dispute",
+        "disturbance",
+        "donnybrook",
+        "donnybrook fair",
+        "drunken brawl",
+        "dustup",
+        "embroilment",
+        "feud",
+        "fight",
+        "flap",
+        "fliting",
+        "foofaraw",
+        "fray",
+        "free-for-all",
+        "fuss",
+        "hassle",
+        "hell broke loose",
+        "helter-skelter",
+        "howl",
+        "hubbub",
+        "hue and cry",
+        "hullabaloo",
+        "imbroglio",
+        "jangle",
+        "knock-down-and-drag-out",
+        "logomachy",
+        "loud noise",
+        "melee",
+        "noise",
+        "noise and shouting",
+        "open quarrel",
+        "outcry",
+        "pandemonium",
+        "pell-mell",
+        "polemic",
+        "pother",
+        "quarrel",
+        "racket",
+        "rampage",
+        "rattle",
+        "rhubarb",
+        "riot",
+        "roar",
+        "rough-and-tumble",
+        "roughhouse",
+        "row",
+        "ruckus",
+        "ruction",
+        "rumble",
+        "rumpus",
+        "run-in",
+        "scramble",
+        "scrap",
+        "scrimmage",
+        "scuffle",
+        "set-to",
+        "sharp words",
+        "shindy",
+        "shivaree",
+        "slanging match",
+        "snarl",
+        "spat",
+        "squabble",
+        "stir",
+        "strife",
+        "thunder",
+        "thunderclap",
+        "tiff",
+        "tintamarre",
+        "to-do",
+        "trouble",
+        "tumult",
+        "turmoil",
+        "tussle",
+        "uproar",
+        "vendetta",
+        "words",
+        "wrangle"
+      ]
     },
     "fra": {
       "word": "FRA",
@@ -691,11 +740,37 @@
       ],
       "relatedWords": []
     },
-    "fraenumfrenum": {
+    "fraenum": {
       "word": "FRAENUM; FRENUM",
       "definitions": [
         {
           "text": "A connecting fold of membrane serving to support or restrain any part; as, the frænum of the tongue.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frenum": {
+      "word": "FRAENUM; FRENUM",
+      "definitions": [
+        {
+          "text": "A connecting fold of membrane serving to support or restrain any part; as, the frænum of the tongue.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A cheek stripe of color.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Anat.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Frænum.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1178,7 +1253,45 @@
       ],
       "relatedWords": []
     },
-    "fragrancefragrancy": {
+    "fragrance": {
+      "word": "FRAGRANCE; FRAGRANCY",
+      "definitions": [
+        {
+          "text": "The quality of being fragrant; sweetness of smell; a sweet smell; a pleasing odor; perfume. Eve separate he spies, Veiled in a cloud of fragrance. Milton. The goblet crowned, Breathed aromatic fragrancies around. Pope.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "aroma",
+        "balm",
+        "bouquet",
+        "breath",
+        "definite odor",
+        "detectable odor",
+        "effluvium",
+        "emanation",
+        "essence",
+        "exhalation",
+        "flavor",
+        "fragrancy",
+        "fume",
+        "incense",
+        "odor",
+        "perfume",
+        "redolence",
+        "savor",
+        "scent",
+        "smell",
+        "spice",
+        "spoor",
+        "stench",
+        "subtle odor",
+        "trace",
+        "trail",
+        "whiff"
+      ]
+    },
+    "fragrancy": {
       "word": "FRAGRANCE; FRAGRANCY",
       "definitions": [
         {
@@ -1192,7 +1305,7 @@
       "word": "FRAGRANT",
       "definitions": [
         {
-          "text": "[fragrans. -antis, p.pr. of fragrare to emit a smell of fragrance: cf. OF. fragrant. Affecting the olfactory nerves agreeably; sweet of smell; odorous; having or emitting an agreeable perfume. Fragrant the fertile earth After soft showers. Milton.",
+          "text": "[fragrans. -antis, p.pr. of fragrare to emit a smell of fragrance: cf. OF. fragrant. Affecting the olfactory nerves agreeably; sweet of smell; odorous; having or emitting an agreeable perfume. Fragrant the fertile earth After soft showers. Milton. ambrosial; balmy; spicy; aromatic.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1760,7 +1873,27 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To construct by fitting and uniting the several parts of the skeleton of any structure; specifically, in woodwork, to put together",
+          "text": "To construct by fitting and uniting the several parts of the skeleton of any structure; specifically, in woodwork, to put together by cutting parts of one member to fit parts of another. See Dovetail, Halve, v. t., Miter, Tenon, Tooth, Tusk, Scarf, and Splice.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To originate; to plan; to devise; to contrive; to compose; in a bad sense, to invent or fabricate, as something false. How many excellent reasonings are framed in the mind of a man of wisdom and study in a length of years. I. Watts.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fit to something else, or for some specific end; to adjust; to regulate; to shape; to conform. And frame my face to all occasions. Shak. We may in some measure frame our minds for the reception of happiness. Landor. The human mind is framed to be influenced. I. Taylor.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause; to bring about; to produce. [Obs.] Fear frames disorder, and disorder wounds. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To support. [Obs. & R.] That on a staff his feeble steps did frame. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To provide with a frame, as a picture.",
           "partOfSpeech": "verb"
         },
         {
@@ -2406,7 +2539,17 @@
       ],
       "relatedWords": []
     },
-    "frampelframpoid": {
+    "frampel": {
+      "word": "FRAMPEL; FRAMPOID",
+      "definitions": [
+        {
+          "text": "Peevish; cross; vexatious; quarrelsome. [Obs.] Shak. Is Pompey grown so malapert, so frampel Beau. & Fl.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frampoid": {
       "word": "FRAMPEL; FRAMPOID",
       "definitions": [
         {
@@ -2810,7 +2953,7 @@
       ],
       "relatedWords": []
     },
-    "frangipanifrangipanni": {
+    "frangipani": {
       "word": "FRANGIPANI; FRANGIPANNI",
       "definitions": [
         {
@@ -2820,7 +2963,27 @@
       ],
       "relatedWords": []
     },
-    "frangulicfrangulinic": {
+    "frangipanni": {
+      "word": "FRANGIPANI; FRANGIPANNI",
+      "definitions": [
+        {
+          "text": "A perfume derived from, or imitating the odor of, the flower of the red jasmine, a West Indian tree of the genus Plumeria.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frangulic": {
+      "word": "FRANGULIC; FRANGULINIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or drived from, frangulin, or a species (Rhamnus Frangula) of the buckthorn. Frangulinic acid (Chem.), a yellow crystalline substance, resembling alizarin, and obtained by the decomposition of frangulin.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frangulinic": {
       "word": "FRANGULIC; FRANGULINIC",
       "definitions": [
         {
@@ -2864,6 +3027,22 @@
         {
           "text": "The common heron; -- so called from its note. [Prov. Eng.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Unbounded by restrictions, limitations, etc.; free. [R.] \"It is of frank gift.\" Spenser.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Free in uttering one's real sentiments; not reserved; using no disguise; candid; ingenuous; as, a frank nature, conversation, manner, etc.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Liberal; generous; profuse. [Obs.] Frank of civilities that cost them nothing. L'Estrange.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Unrestrained; loose; licentious; -- used in a bad sense. Spenser. sincere. See Candid, Ingenuous.",
+          "partOfSpeech": "adjective"
         },
         {
           "text": "To send by public conveyance free of expense. Dickens.",
@@ -3398,7 +3577,7 @@
       "word": "FRANTIC",
       "definitions": [
         {
-          "text": "Mad; raving; furious; violent; wild and disorderly; distracted. Die, frantic wretch, for this accursed deed! Shak.",
+          "text": "Mad; raving; furious; violent; wild and disorderly; distracted. Die, frantic wretch, for this accursed deed! Shak. Torrents of frantic abuse. Macaulay.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3591,7 +3770,7 @@
       "word": "FRATERNAL",
       "definitions": [
         {
-          "text": "Pf, pertaining to, or involving, brethren; becoming to",
+          "text": "Pf, pertaining to, or involving, brethren; becoming to brothers; brotherly; as, fraternal affection; a fraternal embrace. An abhorred, a cursed, a fraternal war. Milton. Fraternal love and friendship. Addison.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3658,7 +3837,17 @@
       ],
       "relatedWords": []
     },
-    "fraternationfraternism": {
+    "fraternation": {
+      "word": "FRATERNATION; FRATERNISM",
+      "definitions": [
+        {
+          "text": "Fraternization. [R.] Jefferson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fraternism": {
       "word": "FRATERNATION; FRATERNISM",
       "definitions": [
         {
@@ -4281,13 +4470,80 @@
       "word": "FRAUDFUL",
       "definitions": [
         {
-          "text": "Full of fraud, deceit, or treachery; trickish; treacherous;",
+          "text": "Full of fraud, deceit, or treachery; trickish; treacherous; fraudulent; -- applied to persons or things. I. Taylor.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "fraudulencefraudulency": {
+    "fraudless": {
+      "word": "FRAUDLESS",
+      "definitions": [
+        {
+          "text": "Free from fraud.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fraudulence": {
+      "word": "FRAUDULENCE; FRAUDULENCY",
+      "definitions": [
+        {
+          "text": "The quality of being fraudulent; deliberate deceit; trickishness. Hooker.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ballot-box stuffing",
+        "bunco",
+        "cardsharping",
+        "cheat",
+        "cheating",
+        "corruptedness",
+        "corruption",
+        "corruptness",
+        "cozenage",
+        "criminality",
+        "crookedness",
+        "deviousness",
+        "diddle",
+        "diddling",
+        "dishonesty",
+        "dishonor",
+        "dodge",
+        "evasiveness",
+        "feloniousness",
+        "fishy transaction",
+        "flam",
+        "flimflam",
+        "fraud",
+        "fraudulency",
+        "gerrymandering",
+        "graft",
+        "grift",
+        "gyp",
+        "gyp joint",
+        "illicit business",
+        "imposition",
+        "imposture",
+        "improbity",
+        "indirection",
+        "racket",
+        "scam",
+        "shadiness",
+        "shiftiness",
+        "slipperiness",
+        "swindle",
+        "trickiness",
+        "unconscientiousness",
+        "underhandedness",
+        "unsavoriness",
+        "unscrupulousness",
+        "unstraightforwardness"
+      ]
+    },
+    "fraudulency": {
       "word": "FRAUDULENCE; FRAUDULENCY",
       "definitions": [
         {
@@ -5134,7 +5390,7 @@
       "word": "FREAKISH",
       "definitions": [
         {
-          "text": "Apt to change the mind suddenly; whimsical; capricious. It may be a question whether the wife or the woman was the more freakish of the two. L'Estrange.",
+          "text": "Apt to change the mind suddenly; whimsical; capricious. It may be a question whether the wife or the woman was the more freakish of the two. L'Estrange. Freakish when well, and fretful when she's sick. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6502,7 +6758,7 @@
       "word": "FREE-HEARTED",
       "definitions": [
         {
-          "text": "Open; frank; unreserved; liberal; generous; as, free-hearted",
+          "text": "Open; frank; unreserved; liberal; generous; as, free-hearted mirth.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6974,11 +7230,97 @@
       "word": "FREE-SOIL",
       "definitions": [
         {
-          "text": "Pertaining to, or advocating, the non-extension of slavery; --",
+          "text": "Pertaining to, or advocating, the non-extension of slavery; -- esp. applied to a party which was active during the period 1846-1856. [U.S.] -- Free\"soil`er, n. [U.S.] -- Free\"-soil`ism, n. [U.S.]",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
+    },
+    "freespoken": {
+      "word": "FREE-SPOKEN",
+      "definitions": [
+        {
+          "text": "Accustomed to speak without reserve. Bacon.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "accessible",
+        "approachable",
+        "articulate",
+        "artless",
+        "bluff",
+        "blunt",
+        "broad",
+        "brusque",
+        "candid",
+        "communicative",
+        "conversable",
+        "demonstrative",
+        "direct",
+        "downright",
+        "effusive",
+        "eloquent",
+        "expansive",
+        "explicit",
+        "extroverted",
+        "forthright",
+        "frank",
+        "frankhearted",
+        "free",
+        "free hand",
+        "free-acting",
+        "free-going",
+        "free-moving",
+        "free-speaking",
+        "free-tongued",
+        "freehanded",
+        "genuine",
+        "gossipy",
+        "heart-to-heart",
+        "ingenuous",
+        "loud-speaking",
+        "loud-spoken",
+        "newsy",
+        "open",
+        "openhearted",
+        "outgoing",
+        "outspoken",
+        "plain",
+        "plain-speaking",
+        "plain-spoken",
+        "round",
+        "self-revealing",
+        "self-revelatory",
+        "sincere",
+        "sociable",
+        "soft-speaking",
+        "soft-spoken",
+        "speaking",
+        "straight",
+        "straight-out",
+        "straightforward",
+        "talkative",
+        "talking",
+        "transparent",
+        "true-speaking",
+        "unchecked",
+        "unconstrained",
+        "unequivocal",
+        "unguarded",
+        "unhampered",
+        "unrepressed",
+        "unreserved",
+        "unrestrained",
+        "unrestricted",
+        "unreticent",
+        "unsecretive",
+        "unshrinking",
+        "unsilent",
+        "unsuppressed",
+        "vocal",
+        "well-spoken"
+      ]
     },
     "freestone": {
       "word": "FREESTONE",
@@ -7476,7 +7818,7 @@
       "word": "FREEZING",
       "definitions": [
         {
-          "text": "Tending to freeze; for freezing; hence, cold or distant in",
+          "text": "Tending to freeze; for freezing; hence, cold or distant in manner. salts) for producing intense cold. begins to freeze; -- applied particularly to water, whose freezing point is at 32º Fahr., and at 0º Centigrade.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8050,7 +8392,17 @@
       ],
       "relatedWords": []
     },
-    "fremdfremed": {
+    "fremd": {
+      "word": "FREMD; FREMED",
+      "definitions": [
+        {
+          "text": "Strange; foreign. [Old Eng. & Scot.] Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "fremed": {
       "word": "FREMD; FREMED",
       "definitions": [
         {
@@ -8194,24 +8546,12 @@
         "wild"
       ]
     },
-    "frenum": {
-      "word": "FRENUM",
+    "frenetical": {
+      "word": "FRENETICAL",
       "definitions": [
         {
-          "text": "(Zoöl.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A cheek stripe of color.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Anat.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "Same as Frænum.",
-          "partOfSpeech": "noun"
+          "text": "Frenetic; frantic; frenzied.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -8225,6 +8565,111 @@
         }
       ],
       "relatedWords": []
+    },
+    "frenzied": {
+      "word": "FRENZIED",
+      "definitions": [
+        {
+          "text": "Affected with frenzy; frantic; maddened. The people frenzied by centuries of oppression. Buckle. Up starting with a frenzied look. Sir W Scott.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "Dionysiac",
+        "abandoned",
+        "amok",
+        "anarchic",
+        "angry",
+        "at fever pitch",
+        "bacchic",
+        "bellowing",
+        "berserk",
+        "blustering",
+        "blusterous",
+        "blustery",
+        "carried away",
+        "chaotic",
+        "corybantic",
+        "delirious",
+        "demoniac",
+        "desperate",
+        "distracted",
+        "ecstatic",
+        "enraptured",
+        "fanatical",
+        "febrile",
+        "feral",
+        "ferocious",
+        "feverish",
+        "fierce",
+        "frantic",
+        "frenetic",
+        "fulminating",
+        "furious",
+        "haggard",
+        "hectic",
+        "hellish",
+        "hog-wild",
+        "howling",
+        "hyperactive",
+        "hyperkinetic",
+        "hysteric",
+        "hysterical",
+        "in a transport",
+        "in hysterics",
+        "infatuated",
+        "infuriate",
+        "insane",
+        "insensate",
+        "intoxicated",
+        "intrusive",
+        "like one possessed",
+        "mad",
+        "madding",
+        "maenadic",
+        "maniac",
+        "maniacal",
+        "mindless",
+        "officious",
+        "orgasmic",
+        "orgastic",
+        "orgiastic",
+        "overanxious",
+        "overdesirous",
+        "overeager",
+        "overenthusiastic",
+        "overzealous",
+        "pandemoniac",
+        "perfervid",
+        "possessed",
+        "rabid",
+        "raging",
+        "ramping",
+        "ranting",
+        "ravening",
+        "raving",
+        "raving mad",
+        "ravished",
+        "rip-roaring",
+        "roaring",
+        "running mad",
+        "running wild",
+        "stark-raving mad",
+        "storming",
+        "stormy",
+        "tempestuous",
+        "transported",
+        "troublous",
+        "tumultuous",
+        "turbulent",
+        "ultrazealous",
+        "uncontrollable",
+        "uproarious",
+        "violent",
+        "wild",
+        "wild-eyed",
+        "wild-looking"
+      ]
     },
     "frenzy": {
       "word": "FRENZY",
@@ -9714,7 +10159,17 @@
       ],
       "relatedWords": []
     },
-    "fresnellampfresnellantern": {
+    "fresnellamp": {
+      "word": "FRESNEL LAMP; FRESNEL LANTERN",
+      "definitions": [
+        {
+          "text": "A lantern having a lamp surrounded by a hollow cylindrical Fresnel lens.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "fresnellantern": {
       "word": "FRESNEL LAMP; FRESNEL LANTERN",
       "definitions": [
         {
@@ -10316,7 +10771,7 @@
       "word": "FRETFUL",
       "definitions": [
         {
-          "text": "Disposed to fret; ill-humored; peevish; angry; in a state of",
+          "text": "Disposed to fret; ill-humored; peevish; angry; in a state of vexation; as, a fretful temper. petulant; splenetic; spleeny; passionate; angry. working and expression of temper. Peevish marks more especially the inward spirit: a peevish man is always ready to find fault. Fretful points rather to the outward act, and marks a complaining impatience: sickly children are apt to be fretful. Crossness is peevishness mingled with vexation or anger.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11038,7 +11493,17 @@
       ],
       "relatedWords": []
     },
-    "friborgfriborgh": {
+    "friborg": {
+      "word": "FRIBORG; FRIBORGH",
+      "definitions": [
+        {
+          "text": "The pledge and tithing, afterwards called by the Normans frankpledge. See Frankpledge. [Written also friburgh and fribourg.] Burril.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "friborgh": {
       "word": "FRIBORG; FRIBORGH",
       "definitions": [
         {
@@ -11062,7 +11527,17 @@
       ],
       "relatedWords": []
     },
-    "fricandeaufricando": {
+    "fricandeau": {
+      "word": "FRICANDEAU; FRICANDO",
+      "definitions": [
+        {
+          "text": "A ragout or fricassee of veal; a fancy dish of veal or of boned turkey, served as an entrée, -- called also fricandel. A. J. Cooley.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fricando": {
       "word": "FRICANDEAU; FRICANDO",
       "definitions": [
         {
@@ -11393,7 +11868,17 @@
       ],
       "relatedWords": []
     },
-    "fridstolfrithstool": {
+    "fridstol": {
+      "word": "FRIDSTOL; FRITHSTOOL",
+      "definitions": [
+        {
+          "text": "A seat in churches near the altar, to which offenders formerly fled for sanctuary. [Written variously fridstool, freedstool, etc.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frithstool": {
       "word": "FRIDSTOL; FRITHSTOOL",
       "definitions": [
         {
@@ -11598,6 +12083,65 @@
         }
       ],
       "relatedWords": []
+    },
+    "friendless": {
+      "word": "FRIENDLESS",
+      "definitions": [
+        {
+          "text": "Destitute of friends; forsaken.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "abandoned",
+        "aidless",
+        "alienated",
+        "alone",
+        "aloof",
+        "apart",
+        "companionless",
+        "defenseless",
+        "deserted",
+        "desolate",
+        "detached",
+        "fatherless",
+        "forlorn",
+        "forsaken",
+        "godforsaken",
+        "guideless",
+        "helpless",
+        "homeless",
+        "insular",
+        "isolated",
+        "kithless",
+        "leaderless",
+        "lone",
+        "lonely",
+        "lonesome",
+        "motherless",
+        "outcast",
+        "pregnable",
+        "removed",
+        "rootless",
+        "separate",
+        "separated",
+        "single-handed",
+        "solitary",
+        "solo",
+        "unabetted",
+        "unaccompanied",
+        "unaided",
+        "unassisted",
+        "unattended",
+        "unescorted",
+        "unfriended",
+        "unprotected",
+        "unseconded",
+        "unsupported",
+        "untenable",
+        "vulnerable",
+        "withdrawn"
+      ]
     },
     "friendlily": {
       "word": "FRIENDLILY",
@@ -11846,6 +12390,16 @@
       ],
       "relatedWords": []
     },
+    "friese": {
+      "word": "FRIESE",
+      "definitions": [
+        {
+          "text": "Same as Friesic, n.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "friesic": {
       "word": "FRIESIC",
       "definitions": [
@@ -11876,6 +12430,14 @@
         {
           "text": "A kind of coarse woolen cloth or stuff with a shaggy or tufted (friezed) nap on one side. \"Robes of frieze.\" Goldsmith.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To make a nap on (cloth); to friz. See Friz, v. t.,",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Friezing machine, a machine for friezing cloth; a friezing machine.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": [
@@ -11935,12 +12497,12 @@
         "volute"
       ]
     },
-    "friezevt": {
-      "word": "Frieze, v. t.",
+    "friezed": {
+      "word": "FRIEZED",
       "definitions": [
         {
-          "text": "Friezing machine, a machine for friezing cloth; a friezing machine.",
-          "partOfSpeech": "verb"
+          "text": "Gathered, or having the map gathered, into little tufts, knots, or protuberances. Cf. Frieze, v. t., and Friz, v. t., 2.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -12019,7 +12581,65 @@
       ],
       "relatedWords": []
     },
-    "friggfrigga": {
+    "frigg": {
+      "word": "FRIGG; FRIGGA",
+      "definitions": [
+        {
+          "text": "The wife of Odin and mother of the gods; the supreme goddess; the Juno of the Valhalla. Cf. Freya.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": [
+        "Aesir",
+        "Balder",
+        "Bor",
+        "Bori",
+        "Bragi",
+        "Donar",
+        "Forseti",
+        "Frey",
+        "Freya",
+        "Freyja",
+        "Freyr",
+        "Frigga",
+        "Heimdall",
+        "Hel",
+        "Hera",
+        "Hertha",
+        "Hoenir",
+        "Hymen",
+        "Idun",
+        "Ing",
+        "Ithunn",
+        "Juno",
+        "Loki",
+        "Nanna",
+        "Nerthus",
+        "Njord",
+        "Njorth",
+        "Odin",
+        "Pronuba",
+        "Reimthursen",
+        "Sif",
+        "Sigyn",
+        "Teleia",
+        "Thor",
+        "Tiu",
+        "Tyr",
+        "Ull",
+        "Ullr",
+        "Vali",
+        "Vanir",
+        "Vidar",
+        "Vitharr",
+        "Wayland",
+        "Weland",
+        "Woden",
+        "Wotan",
+        "Wyrd"
+      ]
+    },
+    "frigga": {
       "word": "FRIGG; FRIGGA",
       "definitions": [
         {
@@ -12586,7 +13206,7 @@
       ],
       "relatedWords": []
     },
-    "frigorificfrigorifical": {
+    "frigorific": {
       "word": "FRIGORIFIC; FRIGORIFICAL",
       "definitions": [
         {
@@ -12596,7 +13216,45 @@
       ],
       "relatedWords": []
     },
-    "frijolfrijolefrejol": {
+    "frigorifical": {
+      "word": "FRIGORIFIC; FRIGORIFICAL",
+      "definitions": [
+        {
+          "text": "Causing cold; producing or generating cold. Quincy.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "frijol": {
+      "word": "FRIJOL; FRIJOLE; FREJOL",
+      "definitions": [
+        {
+          "text": "In Mexico, the southwestern United States, and the West Indies, any cultivated bean of the genus Phaseolus, esp. the black seed of a variety of P. vulgaris.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The beanlike seed of any of several related plants, as the cowpea. Frijoles are an important article of diet among Spanish- American peoples, being used as an ingredient of many dishes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frijole": {
+      "word": "FRIJOL; FRIJOLE; FREJOL",
+      "definitions": [
+        {
+          "text": "In Mexico, the southwestern United States, and the West Indies, any cultivated bean of the genus Phaseolus, esp. the black seed of a variety of P. vulgaris.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The beanlike seed of any of several related plants, as the cowpea. Frijoles are an important article of diet among Spanish- American peoples, being used as an ingredient of many dishes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frejol": {
       "word": "FRIJOL; FRIJOLE; FREJOL",
       "definitions": [
         {
@@ -13214,11 +13872,25 @@
         "whim-wham"
       ]
     },
-    "frisettefrizette": {
+    "frisette": {
       "word": "FRISETTE; FRIZETTE",
       "definitions": [
         {
           "text": "a fringe of hair or curls worn about the forehead by women.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frizette": {
+      "word": "FRISETTE; FRIZETTE",
+      "definitions": [
+        {
+          "text": "a fringe of hair or curls worn about the forehead by women.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A curl of hair or silk; a pad of frizzed hair or silk worn by women under the hair to stuff it out.",
           "partOfSpeech": "noun"
         }
       ],
@@ -13240,6 +13912,10 @@
         {
           "text": "Of or pertaining to Friesland, a province of the Netherlands; Friesic.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A native or inhabitant of Friesland; also, the language spoken in Friesland. See Friesic, n.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -13581,6 +14257,14 @@
         },
         {
           "text": "A kind of weir for catching fish. [Eng.] Carew.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A forest; a woody place. [Obs.] Drayton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A small field taken out of a common, by inclosing it; an inclosure. [Obs.] Sir J. Wynne.",
           "partOfSpeech": "noun"
         }
       ],
@@ -14082,12 +14766,12 @@
       ],
       "relatedWords": []
     },
-    "frizette": {
-      "word": "FRIZETTE",
+    "frizz": {
+      "word": "FRIZZ",
       "definitions": [
         {
-          "text": "A curl of hair or silk; a pad of frizzed hair or silk worn by women under the hair to stuff it out.",
-          "partOfSpeech": "noun"
+          "text": "See Friz, v. t. & n.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -14161,7 +14845,17 @@
       ],
       "relatedWords": []
     },
-    "frizzlyfrizzy": {
+    "frizzly": {
+      "word": "FRIZZLY; FRIZZY",
+      "definitions": [
+        {
+          "text": "Curled or crisped; as, frizzly, hair.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frizzy": {
       "word": "FRIZZLY; FRIZZY",
       "definitions": [
         {
@@ -14329,6 +15023,10 @@
         {
           "text": "The loop of the scabbard of a bayonet or sword. Cross frog (Railroads), a frog adapted for tracks that cross at right angles. a Frenchman by the vulgar class of English. on plants. The larvæ are inclosed are frothy liquid called cuckoo spit or frog spit. called also frog spittle. See Cuckoo spit, under Cuckoo.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To ornament or fasten (a coat, etc.) with trogs. See Frog, n., 4.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": [
@@ -14394,6 +15092,16 @@
       "definitions": [
         {
           "text": "Spotted with whitish specks due to a disease, or produced artificially by spraying; -- said of tobacco used for cigar wrappers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frogged": {
+      "word": "FROGGED",
+      "definitions": [
+        {
+          "text": "Provided or ornamented with frogs; as, a frogged coat. See Frog, n., 4. Ld. Lytton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -14620,7 +15328,7 @@
       "word": "FROLICSOME",
       "definitions": [
         {
-          "text": "Full of gayety and mirth; given to pranks; sportive. Old England, who takes a frolicsome brain fever once every two or",
+          "text": "Full of gayety and mirth; given to pranks; sportive. Old England, who takes a frolicsome brain fever once every two or three years, for the benefit of her doctors. Sir W. Scott.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -14664,7 +15372,7 @@
           "partOfSpeech": "preposition"
         },
         {
-          "text": "In certain constructions, as from forth, from out, etc., the ordinary and more obvious arrangment is inverted, the sense being more distinctly forth from, out from -- from being virtually the",
+          "text": "In certain constructions, as from forth, from out, etc., the ordinary and more obvious arrangment is inverted, the sense being more distinctly forth from, out from -- from being virtually the governing preposition, and the word the adverb. See From off, under Off, adv., and From afar, under Afar, adv. Sudden partings such as press The life from out young hearts. Byron.",
           "partOfSpeech": "preposition"
         }
       ],
@@ -14691,7 +15399,17 @@
         "without"
       ]
     },
-    "fromwardfromwards": {
+    "fromward": {
+      "word": "FROMWARD; FROMWARDS",
+      "definitions": [
+        {
+          "text": "A way from; -- the contrary of toward. [Obs.] Towards or fromwards the zenith. Cheyne.",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fromwards": {
       "word": "FROMWARD; FROMWARDS",
       "definitions": [
         {
@@ -15717,7 +16435,17 @@
         "window dressing"
       ]
     },
-    "frontatefrontated": {
+    "frontate": {
+      "word": "FRONTATE; FRONTATED",
+      "definitions": [
+        {
+          "text": "Growing broader and broader, as a leaf; truncate.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frontated": {
       "word": "FRONTATE; FRONTATED",
       "definitions": [
         {
@@ -16035,7 +16763,25 @@
         "woodsman"
       ]
     },
-    "frontignacfrontignan": {
+    "frontignac": {
+      "word": "FRONTIGNAC; FRONTIGNAN",
+      "definitions": [
+        {
+          "text": "A sweet muscadine wine made in Frontignan (Languedoc), France.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A grape of many varieties and colors.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "frontignan": {
       "word": "FRONTIGNAC; FRONTIGNAN",
       "definitions": [
         {
@@ -17325,7 +18071,7 @@
       "word": "FROWARD",
       "definitions": [
         {
-          "text": "Not willing to yield or compIy with what is required or is reasonable; perverse; disobedient; peevish; as, a froward child. A froward man soweth strife. Prov. xvi. 28. A froward retention of custom is as turbulent a thing as innovation. Bacon.",
+          "text": "Not willing to yield or compIy with what is required or is reasonable; perverse; disobedient; peevish; as, a froward child. A froward man soweth strife. Prov. xvi. 28. A froward retention of custom is as turbulent a thing as innovation. Bacon. obstinate; petulant; cross; peevish. See Perverse.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -17990,7 +18736,7 @@
       "word": "FRUCTUOUS",
       "definitions": [
         {
-          "text": "Fruitful; productive; profitable. [Obs.]",
+          "text": "Fruitful; productive; profitable. [Obs.] Nothing fructuous or profitable. Chaucer.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -18052,6 +18798,128 @@
         }
       ],
       "relatedWords": []
+    },
+    "frugal": {
+      "word": "FRUGAL",
+      "definitions": [
+        {
+          "text": "Economical in the use or appropriation of resources; not wasteful or lavish; wise in the expenditure or application of force, materials, time, etc.; characterized by frugality; sparing; economical; saving; as, a frugal housekeeper; frugal of time. I oft admire How Nature, wise and frugal, could commit Such disproportions. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Obtained by, or appropriate to, economy; as, a frugal fortune. \"Frugal fare.\" Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Lenten",
+        "Scotch",
+        "Spartan",
+        "abstemious",
+        "ascetic",
+        "austere",
+        "budget",
+        "canny",
+        "careful",
+        "chary",
+        "cheap",
+        "cheeseparing",
+        "conservational",
+        "conservative",
+        "conserving",
+        "discreet",
+        "dwarfed",
+        "dwarfish",
+        "easy",
+        "economic",
+        "economical",
+        "economizing",
+        "economy",
+        "exiguous",
+        "forehanded",
+        "frugal to excess",
+        "impoverished",
+        "inexpensive",
+        "jejune",
+        "labor-saving",
+        "lean",
+        "limited",
+        "low",
+        "low-priced",
+        "manageable",
+        "meager",
+        "mean",
+        "measured",
+        "meticulous",
+        "miserly",
+        "moderate",
+        "modest",
+        "money-saving",
+        "narrow",
+        "negligible",
+        "niggardly",
+        "nominal",
+        "overfrugal",
+        "paltry",
+        "parsimonious",
+        "penny-pinching",
+        "penny-wise",
+        "penny-wise and pound-foolish",
+        "penurious",
+        "piddling",
+        "poor",
+        "preserving",
+        "provident",
+        "prudent",
+        "prudential",
+        "puny",
+        "reasonable",
+        "restrained",
+        "saving",
+        "scamping",
+        "scant",
+        "scanty",
+        "scrawny",
+        "scrimp",
+        "scrimping",
+        "scrimpy",
+        "sensible",
+        "shabby",
+        "shoddy",
+        "skimp",
+        "skimping",
+        "skimpy",
+        "slender",
+        "slight",
+        "slim",
+        "small",
+        "sober",
+        "spare",
+        "sparing",
+        "starvation",
+        "stingy",
+        "stinted",
+        "stinting",
+        "straitened",
+        "stunted",
+        "subsistence",
+        "temperate",
+        "thin",
+        "thrifty",
+        "tight-fisted",
+        "time-saving",
+        "token",
+        "too frugal",
+        "unexpensive",
+        "unnourishing",
+        "unnutritious",
+        "unwasteful",
+        "wary",
+        "watered",
+        "watery",
+        "within means",
+        "worth the money"
+      ]
     },
     "frugality": {
       "word": "FRUGALITY",
@@ -18176,6 +19044,42 @@
     "fruit": {
       "word": "FRUIT",
       "definitions": [
+        {
+          "text": "Whatever is produced for the nourishment or enjoyment of man or animals by the processes of vegetable growth, as corn, grass, cotton, flax, etc.; -- commonly used in the plural. Six years thou shalt sow thy land, and shalt gather in the fruits thereof. Ex. xxiii. 10.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Hort.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The pulpy, edible seed vessels of certain plants, especially those grown on branches above ground, as apples, oranges, grapes, melons, berries, etc. See 3.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ripened ovary of a flowering plant, with its contents and whatever parts are consolidated with it. fruits include berries, gourds, and melons, orangelike fruita and pomes; drupaceous fruits are stony within and fleshy without, as peaches, plums, and chercies;and dry fruits are further divided into achenes, follicles, legumes, capsules, nuts, and several other kinds.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The spore cases or conceptacles of flowerless plants, as of ferns, mosses, algae, etc., with the spores contained in them.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The produce of animals; offspring; young; as, the fruit of the womb, of the loins, of the body. King Edward's fruit, true heir to the English crown. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "That which is produced; the effect or consequence of any action; advantageous or desirable product or result; disadvantageous or evil consequence or effect; as, the fruits of labor, of self-denial, of intemperance. The fruit of rashness. Shak. What I obtained was the fruit of no bargain. Burke. They shall eat the fruit of their doings. Is. iii 10. The fruits of this education became visible. Macaulay. pertaining to a fruit or fruits; as, fruit bud; fruit frame; fruit jar; fruit knife; fruit loft; fruit show; fruit stall; fruit tree; etc. Fruit bat (Zoöl.), one of the Frugivora; -- called also fruit- eating bat. the same as the power bud. Fruit dot (Bot.), a collection of fruit cases, as in ferns. See Sorus. Drosophila, which lives in fruit, in the larval state. glass or earthenware. family Carpophagidæ, inhabiting India, Australia, and the Pacific Islands. They feed largely upon fruit. and are noted for their beautiful colors. in many ripe fruits, and in honey; levulose. The name is also, though rarely, applied to invert sugar, or to the natural mixture or dextrose and levulose resembling it, and found in fruits and honey. which live in the interior of fruit. They are mostly small species of Lepidoptera and Diptera.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "To bear fruit. Chesterfield.",
           "partOfSpeech": "verb"
@@ -18512,7 +19416,7 @@
       "word": "FRUITFUL",
       "definitions": [
         {
-          "text": "Full of fruit; producing fruit abundantly; bearing results; prolific; fertile; liberal; bountiful; as, a fruitful tree, or",
+          "text": "Full of fruit; producing fruit abundantly; bearing results; prolific; fertile; liberal; bountiful; as, a fruitful tree, or season, or soil; a fruitful wife. Be fruitful and multiply and replenish the earth. Gen. i. 28. [Nature] By disburdening grows More fruitful. Milton. The great fruitfulness of the poet's fancy. Addison. plenteous. See Fertile.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -18675,7 +19579,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Productive of no advantage or good effect; vain; idle; useless; unprofitable; as, a fruitless attempt; a fruitless controversy. They in mutual accusation spent The fruitless hours. Milton.",
+          "text": "Productive of no advantage or good effect; vain; idle; useless; unprofitable; as, a fruitless attempt; a fruitless controversy. They in mutual accusation spent The fruitless hours. Milton. profitless. See Useless.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -19055,13 +19959,7 @@
         {
           "text": "Noise; clatter; crash. [R.] Southey.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "froschfrogtheanimalalsocarneyorlampassofhorsesseefrog": {
-      "word": "frosch frog (the animal), also carney or lampass of horses. See Frog,",
-      "definitions": [
+        },
         {
           "text": "(Far.)",
           "partOfSpeech": "noun"
@@ -19636,190 +20534,6 @@
         {
           "text": "The process denoted by the verb fry. Frying pan, an iron pan with a long handle, used for frying meat. vegetables, etc.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "frofhardirtomakeboldofgermanorigincfohghertanto": {
-      "word": "fr. OF. hardir to make bold; of German origin, cf. OHG. hertan to",
-      "definitions": [
-        {
-          "text": "Bold; brave; stout; daring; resolue; intrepid. Hap helpeth hardy man alway. Chaucer.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Confident; full of assurance; in a bad sense, morally hardened; shameless.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Strong; firm; compact. [A] blast may shake in pieces his hardy fabric. South.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Inured to fatigue or hardships; strong; capable of endurance; as, a hardy veteran; a hardy mariner.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Able to withstand the cold of winter. Half-hardy plants are those which are able to withstand mild winters or moderate frosts.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "frpretiumpriceseepricenandcfappreciatepraisen": {
-      "word": "fr. pretium price. See Price, n., and cf. Appreciate, Praise, n.,",
-      "definitions": [
-        {
-          "text": "To commend; to applaud; to express approbation of; to laud; -- applied to a person or his acts. \"I praise well thy wit.\" Chaucer. Let her own works praise her in the gates. Prov. xxxi. 31. We praise not Hector, though his name, we know, Is great in arms; 't is hard to praise a foe. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To extol in words or song; to magnify; to glorify on account of perfections or excellent works; to do honor to; to display the excellence of; -- applied especially to the Divine Being. Praise ye him, all his angels; praise ye him, all his hosts! Ps. cxlviii. 2.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To value; to appraise. [Obs.] Piers Plowman. applaud is to greet with clapping; to extol is to bear aloft, to exalt. We may praise in the exercise of calm judgment; we usually applaud from impulse, and on account of some specific act; we extol under the influence of high admiration, and usually in strong, if not extravagant, language.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "fromofprudefemepreudefemeadiscreetorexcellentwomanof": {
-      "word": "from OF. prudefeme, preudefeme, a discreet or excellent woman; OF.",
-      "definitions": [
-        {
-          "text": "A woman of affected modesty, reserve, or coyness; one who is overscrupulous or sensitive; one who affects extraordinary prudence in conduct and speech. Less modest than the speech of prudes. Swift.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "frlsatioasowingaplantingfrsereresatumtosowplant": {
-      "word": "fr. L. satio a sowing, a planting, fr. serere, satum, to sow, plant;",
-      "definitions": [
-        {
-          "text": "One of the divisions of the year, marked by alternations in the length of day and night, or by distinct conditions of temperature, moisture, etc., caused mainly by the relative position of the earth with respect to the sun. In the north temperate zone, four seasons, namely, spring, summer, autumn, and winter, are generally recognized. Some parts of the world have three seasons, -- the dry, the rainy, and the cold; other parts have but two, -- the dry and the rainy. The several seasons of the year in their beauty. Addison.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Hence, a period of time, especially as regards its fitness for anything contemplated or done; a suitable or convenient time; proper conjuncture; as, the season for planting; the season for rest. The season, prime for sweetest scents and airs. Milton.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A period of time not very long; a while; a time. Thou shalt be blind, not seeing the sun for a season. Acts xiii. 11.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "That which gives relish; seasoning. [Obs.] You lack the season of all natures, sleep. Shak. In season, in good time, or sufficiently early for the purpose. appointed time.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "frsbecomingfitakintosamrsameesamethesensebeing": {
-      "word": "fr. s becoming, fit; akin to samr same, E. same; the sense being",
-      "definitions": [
-        {
-          "text": "Suited to the object, occasion, purpose, or character; suitable; fit; becoming; comely; decorous. He had a seemly nose. Chaucer. I am a woman, lacking wit To make a seemly answer to such persons. Shak. Suspense of judgment and exercise of charity were safer and seemlier for Christian men than the hot pursuit of these controversies. Hooker. decent; decorous.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "frlsentiretoperceivebythesensesandmindtofeeltothink": {
-      "word": "fr. L. sentire to perceive by the senses and mind, to feel, to think.",
-      "definitions": [
-        {
-          "text": "A thought prompted by passion or feeling; a state of mind in view of some subject; feeling toward or respecting some person or thing; disposition prompting to action or expression. The word sentiment, agreeably to the use made of it by our best English writers, expresses, in my own opinion very happily, those complex determinations of the mind which result from the coöperation of our rational powers and of our moral feelings. Stewart. Alike to council or the assembly came, With equal souls and sentiments the same. Pope.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Hence, generally, a decision of the mind formed by deliberation or reasoning; thought; opinion; notion; judgment; as, to express one's sentiments on a subject. Sentiments of philosophers about the perception of external objects. Reid. Sentiment, as here and elsewhere employed by Reid in the meaning of opinion (sententia), is not to be imitated. Sir W. Hamilton.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "A sentence, or passage, considered as the expression of a thought; a maxim; a saying; a toast.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Sensibility; feeling; tender susceptibility. Mr. Hume sometimes employs (after the manner of the French metaphysicians) sentiment as synonymous with feeling; a use of the word quite unprecedented in our tongue. Stewart. Less of sentiment than sense. Tennyson. judgment in respect to any and every kind of truth. Feeling describes those affections of pleasure and pain which spring from the exercise of our sentient and emotional powers. Sentiment (particularly in the plural) lies between them, denoting settled opinions or principles in regard to subjects which interest the feelings strongly, and are presented more or less constantly in practical life. Hence, it is more appropriate to speak of our religious sentiments than opinions, unless we mean to exclude all reference to our feelings. The word sentiment, in the singular, leans ordinarily more to the side of feeling, and denotes a refined sensibility on subjects affecting the heart. \"On questions of feeling, taste, observation, or report, we define our sentiments. On questions of science, argument, or metaphysical abstraction, we define our opinions. The sentiments of the heart. The opinions of the mind . . . There is more of instinct in sentiment, and more of definition in opinion. The admiration of a work of art which results from first impressions is classed with our sentiments; and, when we have accounted to ourselves for the approbation, it is classed with our opinions.\" W. Taylor.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "frenchfrassumedllsolanussolitaryfrlsolusalonesee": {
-      "word": "French fr. (assumed) LL. solanus solitary, fr. L. solus alone. See",
-      "definitions": [
-        {
-          "text": "Lonely; solitary; desolate. [Obs.] Wyclif (Job iii. 14).",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Gloomy; dismal; foreboding. Milton. Solemn hymns so sullen dirges change. Shak.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Mischievous; malignant; unpropitious. Such sullen planets at my birth did shine. Dryden.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Gloomily angry and silent; cross; sour; affected with ill humor; morose. And sullen I forsook the imperfect feast. Prior.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Obstinate; intractable. Things are as sullen as we are. Tillotson.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Heavy; dull; sluggish. \"The larger stream was placid, and even sullen, in its course.\" Sir W. Scott. humored; petulant; gloomy; malign; intractable. demeanor. Sullenness seems to be an habitual sulkiness, and sulkiness a temporary sullenness. The former may be an innate disposition; the latter, a disposition occasioned by recent injury. Thus we are in a sullen mood, and in a sulky fit. No cheerful breeze this sullen region knows; The dreaded east is all",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "fromtherootofvelletowillpprvolensakintoewillcf": {
-      "word": "from the root of velle to will, p. pr. volens; akin to E. will: cf.",
-      "definitions": [
-        {
-          "text": "Proceeding from the will; produced in or by an act of choice. That sin or guilt pertains exclusively to voluntary action is the true principle of orthodoxy. N. W. Taylor.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Unconstrained by the interference of another; unimpelled by the influence of another; not prompted or persuaded by another; done of his or its own accord; spontaneous; acting of one's self, or of itself; free. Our voluntary service he requires. Milton. She fell to lust a voluntary prey. Pope.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Done by design or intention; intentional; purposed; intended; not accidental; as, if a man kills another by lopping a tree, it is not voluntary manslaughter.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Physiol.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Of or pertaining to the will; subject to, or regulated by, the will; as, the voluntary motions of an animal, such as the movements of the leg or arm (in distinction from involuntary motions, such as the movements of the heart); the voluntary muscle fibers, which are the agents in voluntary motion.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Endowed with the power of willing; as, man is a voluntary agent. God did not work as a necessary, but a voluntary, agent, intending beforehand, and decreeing with himself, that which did outwardly proceed from him. Hooker.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Law)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Free; without compulsion; according to the will, consent, or agreement, of a party; without consideration; gratuitous; without valuable consideration.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "(Eccl.)",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Of or pertaining to voluntaryism; as, a voluntary church, in distinction from an established or state church. Voluntary affidavit or oath (Law), an affidavit or oath made in extrajudicial matter. consideration. consent of the sheriff.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

@@ -137,6 +137,16 @@
       ],
       "relatedWords": []
     },
+    "traceable": {
+      "word": "TRACEABLE",
+      "definitions": [
+        {
+          "text": "Capable of being traced.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "tracer": {
       "word": "TRACER",
       "definitions": [
@@ -405,6 +415,16 @@
       ],
       "relatedWords": []
     },
+    "trachoma": {
+      "word": "TRACHOMA",
+      "definitions": [
+        {
+          "text": "Granular conjunctivitis due to a specific micrococcus. -- Tra*chom\"a*tous (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "trachycarpous": {
       "word": "TRACHYCARPOUS",
       "definitions": [
@@ -579,11 +599,21 @@
       ],
       "relatedWords": []
     },
+    "tracklayer": {
+      "word": "TRACKLAYER",
+      "definitions": [
+        {
+          "text": "Any workman engaged in work involved in putting the track in place. [U. S. & Canada] -- Track\"lay`ing, n.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "trackless": {
       "word": "TRACKLESS",
       "definitions": [
         {
-          "text": "Having no track; marked by no footsteps; untrodden; as, a trackless desert.",
+          "text": "Having no track; marked by no footsteps; untrodden; as, a trackless desert. To climb the trackless mountain all unseen. Byron.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -599,7 +629,7 @@
       ],
       "relatedWords": []
     },
-    "trackmasterroadmaster": {
+    "trackmaster": {
       "word": "TRACKMASTER; ROADMASTER",
       "definitions": [
         {
@@ -654,6 +684,46 @@
       "definitions": [
         {
           "text": "A written discourse or dissertation, generally of short extent; a short treatise, especially on practical religion. The church clergy at that writ the best collection of tracts against popery that ever appeared. Swift. Tracts for the Times. See Tractarian.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Something drawn out or extended; expanse. \"The deep tract of hell.\" Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A region or quantity of land or water, of indefinite extent; an area; as, an unexplored tract of sea. A very high mountain joined to the mainland by a narrowtract of earth. Addison.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Traits; features; lineaments. [Obs.] The discovery of a man's self by the tracts of his countenance is a great weakness. Bacon.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The footprint of a wild beast. [Obs.] Dryden.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Track; trace. [Obs.] Efface all tract of its traduction. Sir T. Browne. But flies an eagle flight, bold, and forthon, Leaving no tract behind. Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Treatment; exposition. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Continuity or extension of anything; as, the tract of speech.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Continued or protracted duration; length; extent. \"Improved by tract of time.\" Milton.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(R. C. Ch.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Verses of Scripture sung at Mass, instead of the Alleluia, from Septuagesima Sunday till the Saturday befor Easter;-so called because sung tractim,or without a break, by one voice, instead of by many as in the antiphons.",
           "partOfSpeech": "noun"
         },
         {
@@ -851,7 +921,17 @@
       ],
       "relatedWords": []
     },
-    "tractorscrewtractorpropeller": {
+    "tractorpropeller": {
+      "word": "TRACTOR SCREW; TRACTOR PROPELLER",
+      "definitions": [
+        {
+          "text": "A propeller screw placed in front of the supporting planes of an aëroplane instead of behind them, so that it exerts a pull instead of a push. Hence, Tractor monoplane, Tractor biplane, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "tractorscrew": {
       "word": "TRACTOR SCREW; TRACTOR PROPELLER",
       "definitions": [
         {
@@ -1065,17 +1145,7 @@
       ],
       "relatedWords": []
     },
-    "tradesunionisttradeunionist": {
-      "word": "TRADES-UNIONIST; TRADE-UNIONIST",
-      "definitions": [
-        {
-          "text": "A member of a trades union, or a supporter of trades unions.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "tradesuniontradeunion": {
+    "tradesunion": {
       "word": "TRADES UNION; TRADE UNION",
       "definitions": [
         {
@@ -1085,11 +1155,41 @@
       ],
       "relatedWords": []
     },
+    "tradesunionist": {
+      "word": "TRADES-UNIONIST; TRADE-UNIONIST",
+      "definitions": [
+        {
+          "text": "A member of a trades union, or a supporter of trades unions.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "tradeswoman": {
       "word": "TRADESWOMAN",
       "definitions": [
         {
           "text": "A woman who trades, or is skilled in trade.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tradeunion": {
+      "word": "TRADES UNION; TRADE UNION",
+      "definitions": [
+        {
+          "text": "An organized combination among workmen for the purpose of maintaining their rights, privileges, and interests with respect to wages, hours of labor, customs, etc.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "tradeunionist": {
+      "word": "TRADES-UNIONIST; TRADE-UNIONIST",
+      "definitions": [
+        {
+          "text": "A member of a trades union, or a supporter of trades unions.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1207,7 +1307,17 @@
       ],
       "relatedWords": []
     },
-    "traditionertraditionist": {
+    "traditioner": {
+      "word": "TRADITIONER; TRADITIONIST",
+      "definitions": [
+        {
+          "text": "One who adheres to tradition.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "traditionist": {
       "word": "TRADITIONER; TRADITIONIST",
       "definitions": [
         {
@@ -1532,8 +1642,20 @@
       "relatedWords": []
     },
     "tragic": {
-      "word": "TRAGIC",
+      "word": "TRAGIC; TRAGICAL",
       "definitions": [
+        {
+          "text": "Of or pertaining to tragedy; of the nature or character of tragedy; as, a tragic poem; a tragic play or representation.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fatal to life; mournful; terrible; calamitous; as, the tragic scenes of the French revolution.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Mournful; expressive of tragedy, the loss of life, or of sorrow. Why look you still so stern and tragical Shak.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A writer of tragedy. [Obs.]",
           "partOfSpeech": "noun"
@@ -1541,6 +1663,24 @@
         {
           "text": "A tragedy; a tragic drama. [Obs.]",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tragical": {
+      "word": "TRAGIC; TRAGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to tragedy; of the nature or character of tragedy; as, a tragic poem; a tragic play or representation.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Fatal to life; mournful; terrible; calamitous; as, the tragic scenes of the French revolution.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Mournful; expressive of tragedy, the loss of life, or of sorrow. Why look you still so stern and tragical Shak.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1555,11 +1695,21 @@
       ],
       "relatedWords": []
     },
-    "tragicomictragicomical": {
+    "tragicomic": {
       "word": "TRAGI-COMIC; TRAGI-COMICAL",
       "definitions": [
         {
-          "text": "Of or pertaining to tragi-comedy; partaking of grave and comic",
+          "text": "Of or pertaining to tragi-comedy; partaking of grave and comic scenes. Julian felt toward him that tragi-comic sensation which makes us pity the object which excites it not the less that we are somewhat inclined to laugh amid our sympathy. Sir W. Scott.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tragicomical": {
+      "word": "TRAGI-COMIC; TRAGI-COMICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to tragi-comedy; partaking of grave and comic scenes. Julian felt toward him that tragi-comic sensation which makes us pity the object which excites it not the less that we are somewhat inclined to laugh amid our sympathy. Sir W. Scott.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1570,24 +1720,6 @@
       "definitions": [
         {
           "text": "Partaking of the nature of, or combining, tragedy, comedy, and pastoral poetry. [R.] Gay.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "tragictragical": {
-      "word": "TRAGIC; TRAGICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to tragedy; of the nature or character of tragedy; as, a tragic poem; a tragic play or representation.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Fatal to life; mournful; terrible; calamitous; as, the tragic scenes of the French revolution.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "Mournful; expressive of tragedy, the loss of life, or of sorrow.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1619,6 +1751,30 @@
         {
           "text": "See under T.",
           "partOfSpeech": ""
+        },
+        {
+          "text": "To hunt by the track; to track. Halliwell.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To draw or drag, as along the ground. And hung his head, and trailed his legs along. Dryden. They shall not trail me through their streets Like a wild beast. Milton. Long behind he trails his pompous robe. Pope.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Mil.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To carry, as a firearm, with the breech near the ground and the upper part inclined forward, the piece being held by the right hand near the middle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To tread down, as grass, by walking through it; to lay flat. Longfellow.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To take advantage of the ignorance of; to impose upon. [Prov. Eng.] I presently perceived she was (what is vernacularly termed) trailing Mrs. Dent; that is, playing on her ignorance. C. Bronte.",
+          "partOfSpeech": "verb"
         },
         {
           "text": "To be drawn out in length; to follow after. When his brother saw the red blood trail. Spenser.",
@@ -1877,7 +2033,7 @@
       "word": "TRAINING",
       "definitions": [
         {
-          "text": "The act of one who trains; the act or process of exercising, disciplining, etc.; education. Fan training (Hort.), the operation of training fruit trees, grapevines, etc., so that the branches shall radiate from the stem like a fan. trees, grapevines, etc., so that the branches shall spread out",
+          "text": "The act of one who trains; the act or process of exercising, disciplining, etc.; education. Fan training (Hort.), the operation of training fruit trees, grapevines, etc., so that the branches shall radiate from the stem like a fan. trees, grapevines, etc., so that the branches shall spread out laterally in a horizontal direction. drill or parade. [U. S.] -- Training ship, a vessel on board of which boys are trained as sailors.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1913,7 +2069,7 @@
       ],
       "relatedWords": []
     },
-    "traistrays": {
+    "trais": {
       "word": "TRAIS; TRAYS",
       "definitions": [
         {
@@ -1997,7 +2153,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Consisting in treason; partaking of treason; implying breach of",
+          "text": "Consisting in treason; partaking of treason; implying breach of allegiance; as, a traitorous scheme.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2069,7 +2225,27 @@
       ],
       "relatedWords": []
     },
-    "trajettrajetourtrajetry": {
+    "trajet": {
+      "word": "TRAJET; TRAJETOUR; TRAJETRY",
+      "definitions": [
+        {
+          "text": "See Treget, Tregetour, and Tregetry. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "trajetour": {
+      "word": "TRAJET; TRAJETOUR; TRAJETRY",
+      "definitions": [
+        {
+          "text": "See Treget, Tregetour, and Tregetry. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "trajetry": {
       "word": "TRAJET; TRAJETOUR; TRAJETRY",
       "definitions": [
         {
@@ -2309,6 +2485,18 @@
       "word": "TRAMP",
       "definitions": [
         {
+          "text": "To tread upon forcibly and repeatedly; to trample.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To travel or wander through; as, to tramp the country. [Colloq.]",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cleanse, as clothes, by treading upon them in water. [Scot.] Jamieson.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To travel; to wander; to stroll.",
           "partOfSpeech": "verb"
         },
@@ -2509,7 +2697,7 @@
       ],
       "relatedWords": []
     },
-    "tranquilizationtranquillization": {
+    "tranquilization": {
       "word": "TRANQUILIZATION; TRANQUILLIZATION",
       "definitions": [
         {
@@ -2519,17 +2707,7 @@
       ],
       "relatedWords": []
     },
-    "tranquilizertranquillizer": {
-      "word": "TRANQUILIZER; TRANQUILLIZER",
-      "definitions": [
-        {
-          "text": "One who, or that which, tranquilizes.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "tranquilizetranquillize": {
+    "tranquilize": {
       "word": "TRANQUILIZE; TRANQUILLIZE",
       "definitions": [
         {
@@ -2539,11 +2717,21 @@
       ],
       "relatedWords": []
     },
-    "tranquilizingtranquillizing": {
+    "tranquilizer": {
+      "word": "TRANQUILIZER; TRANQUILLIZER",
+      "definitions": [
+        {
+          "text": "One who, or that which, tranquilizes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tranquilizing": {
       "word": "TRANQUILIZING; TRANQUILLIZING",
       "definitions": [
         {
-          "text": "Making tranquil; calming. \" The tranquilizing power of time.\"",
+          "text": "Making tranquil; calming. \" The tranquilizing power of time.\" Wordsworth.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2555,6 +2743,46 @@
         {
           "text": "The quality or state of being tranquil; calmness; composure.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tranquillization": {
+      "word": "TRANQUILIZATION; TRANQUILLIZATION",
+      "definitions": [
+        {
+          "text": "The act of tranquilizing, or the state of being tranquilized.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tranquillize": {
+      "word": "TRANQUILIZE; TRANQUILLIZE",
+      "definitions": [
+        {
+          "text": "To render tranquil; to allay when agitated; to compose; to make calm and peaceful; as, to tranquilize a state disturbed by factions or civil commotions; to tranquilize the mind.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tranquillizer": {
+      "word": "TRANQUILIZER; TRANQUILLIZER",
+      "definitions": [
+        {
+          "text": "One who, or that which, tranquilizes.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "tranquillizing": {
+      "word": "TRANQUILIZING; TRANQUILLIZING",
+      "definitions": [
+        {
+          "text": "Making tranquil; calming. \" The tranquilizing power of time.\" Wordsworth.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -2739,7 +2967,21 @@
       ],
       "relatedWords": []
     },
-    "transcendencetranscendency": {
+    "transcendence": {
+      "word": "TRANSCENDENCE; TRANSCENDENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being transcendent; superior excellence; supereminence. The Augustinian theology rests upon the transcendence of Deity at its controlling principle. A. V. G. Allen.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "Elevation above truth; exaggeration. [Obs.] \"Where transcendencies are more allowed.\" Bacon.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "transcendency": {
       "word": "TRANSCENDENCE; TRANSCENDENCY",
       "definitions": [
         {
@@ -2989,6 +3231,16 @@
       ],
       "relatedWords": []
     },
+    "transcriptive": {
+      "word": "TRANSCRIPTIVE",
+      "definitions": [
+        {
+          "text": "Done as from a copy; having the style or appearance of a transcription. [R.] -- Tran*scrip\"tive*ly, adv. [R.] Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "transcur": {
       "word": "TRANSCUR",
       "definitions": [
@@ -3049,22 +3301,32 @@
       ],
       "relatedWords": []
     },
+    "transelement": {
+      "word": "TRANSELEMENT; TRANSELEMENTATE",
+      "definitions": [
+        {
+          "text": "To change or transpose the elements of; to transubstantiate.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "transelementate": {
+      "word": "TRANSELEMENT; TRANSELEMENTATE",
+      "definitions": [
+        {
+          "text": "To change or transpose the elements of; to transubstantiate.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "transelementation": {
       "word": "TRANSELEMENTATION",
       "definitions": [
         {
           "text": "Transubstantiation. [Obs.]",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "transelementtranselementate": {
-      "word": "TRANSELEMENT; TRANSELEMENTATE",
-      "definitions": [
-        {
-          "text": "To change or transpose the elements of; to transubstantiate.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -3453,7 +3715,17 @@
       ],
       "relatedWords": []
     },
-    "transfugetransfugitive": {
+    "transfuge": {
+      "word": "TRANSFUGE; TRANSFUGITIVE",
+      "definitions": [
+        {
+          "text": "One who flees from one side to another; hence, a deserter; a turncoat; an apostate. [R.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "transfugitive": {
       "word": "TRANSFUGE; TRANSFUGITIVE",
       "definitions": [
         {
@@ -3651,7 +3923,17 @@
       ],
       "relatedWords": []
     },
-    "transiencetransiency": {
+    "transience": {
+      "word": "TRANSIENCE; TRANSIENCY",
+      "definitions": [
+        {
+          "text": "The quality of being transient; transientness.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "transiency": {
       "word": "TRANSIENCE; TRANSIENCY",
       "definitions": [
         {
@@ -3673,7 +3955,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Staying for a short time; not regular or permanent; as, a transient guest; transient boarders. [Colloq. U.S.] brief at the best; transitory, as liable at any moment to pass away. Fleeting goes further, and represents it as in the act of taking its flight. Life is transient; its joys are transitory; its hours are fleeting. What is loose love A transient gust. Pope If [we love] transitory things, which soon decay, Age must be loveliest at the latest day. Donne.",
+          "text": "Staying for a short time; not regular or permanent; as, a transient guest; transient boarders. [Colloq. U.S.] brief at the best; transitory, as liable at any moment to pass away. Fleeting goes further, and represents it as in the act of taking its flight. Life is transient; its joys are transitory; its hours are fleeting. What is loose love A transient gust. Pope If [we love] transitory things, which soon decay, Age must be loveliest at the latest day. Donne. O fleeting joys Of Paradise, dear bought with lasting woes. Milton.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3683,7 +3965,17 @@
       ],
       "relatedWords": []
     },
-    "transiliencetransiliency": {
+    "transilience": {
+      "word": "TRANSILIENCE; TRANSILIENCY",
+      "definitions": [
+        {
+          "text": "A leap across or from one thing to another. [R.] \"An unadvised transiliency.\" Glanvill.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "transiliency": {
       "word": "TRANSILIENCE; TRANSILIENCY",
       "definitions": [
         {
@@ -3733,7 +4025,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "An instrument resembling a theodolite, used by surveyors and engineers; -- called also transit compass, and surveyor's transit. the horizontal axis attached directly to the telescope which is not mounted in Y's and can be turned completely over about the axis. Lower transit (Astron.), the passage of a heavenly body across that part of the meridian which is below the polar axis.",
+          "text": "An instrument resembling a theodolite, used by surveyors and engineers; -- called also transit compass, and surveyor's transit. the horizontal axis attached directly to the telescope which is not mounted in Y's and can be turned completely over about the axis. Lower transit (Astron.), the passage of a heavenly body across that part of the meridian which is below the polar axis. circle attached, used for observing the time of transit and the declination at one observation. See Circle, n., 3. angles to a horizontal axis, on which it revolves with its line of collimation in the plane of the meridian, -- used in connection with a clock for observing the time of transit of a heavenly body over the meridian of a place. (b) (Surv.) A surveyor's transit. See Transit, 5, above. goods through a country to their destination. that part of the meridian which is above the polar axis.",
           "partOfSpeech": "noun"
         },
         {
@@ -3823,7 +4115,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Passing over to an object; expressing an action which is not limited to the agent or subject, but which requires an object to complete the sense; as, a transitive verb, for example, he holds the",
+          "text": "Passing over to an object; expressing an action which is not limited to the agent or subject, but which requires an object to complete the sense; as, a transitive verb, for example, he holds the book.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4069,7 +4361,17 @@
       ],
       "relatedWords": []
     },
-    "translucencetranslucency": {
+    "translucence": {
+      "word": "TRANSLUCENCE; TRANSLUCENCY",
+      "definitions": [
+        {
+          "text": "The quality or state of being translucent; clearness; partial transparency. Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "translucency": {
       "word": "TRANSLUCENCE; TRANSLUCENCY",
       "definitions": [
         {
@@ -4133,7 +4435,17 @@
       ],
       "relatedWords": []
     },
-    "transmeabletransmeatable": {
+    "transmeable": {
+      "word": "TRANSMEABLE; TRANSMEATABLE",
+      "definitions": [
+        {
+          "text": "Capable of being passed over or traversed; passable. [Obs.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "transmeatable": {
       "word": "TRANSMEABLE; TRANSMEATABLE",
       "definitions": [
         {
@@ -4401,7 +4713,7 @@
       "word": "TRANSMUTABLE",
       "definitions": [
         {
-          "text": "Capable of being transmuted or changed into a different substance, or into into something of a different form a nature; transformable. The fluids and solids of an animal body are easily transmutable into",
+          "text": "Capable of being transmuted or changed into a different substance, or into into something of a different form a nature; transformable. The fluids and solids of an animal body are easily transmutable into one another. Arbuthnot.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4601,7 +4913,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Admitting the passage of light; open; porous; as, a transparent veil. Dryden.",
+          "text": "Admitting the passage of light; open; porous; as, a transparent veil. Dryden. See Translucent.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4949,7 +5261,7 @@
       "word": "TRANSPORTED",
       "definitions": [
         {
-          "text": "Conveyed from one place to another; figuratively, carried away",
+          "text": "Conveyed from one place to another; figuratively, carried away with passion or pleasure; entranced.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5334,6 +5646,10 @@
     "transversal": {
       "word": "TRANSVERSAL",
       "definitions": [
+        {
+          "text": "Running or lying across; transverse; as, a transversal line.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "A straight line which traverses or intersects any system of other lines, as a line intersecting the three sides of a triangle or the sides produced.",
           "partOfSpeech": "noun"
@@ -6426,8 +6742,12 @@
       "relatedWords": []
     },
     "trays": {
-      "word": "TRAYS",
+      "word": "TRAIS; TRAYS",
       "definitions": [
+        {
+          "text": "Traces. [Obs.] Four white bulls in the trays. Chaucer.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Trais. Chaucer.",
           "partOfSpeech": "noun"

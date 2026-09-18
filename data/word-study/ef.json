@@ -984,6 +984,16 @@
         "zenith"
       ]
     },
+    "effectless": {
+      "word": "EFFECTLESS",
+      "definitions": [
+        {
+          "text": "Without effect or advantage; useless; bootless. Shak.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "effector": {
       "word": "EFFECTOR",
       "definitions": [
@@ -1263,7 +1273,17 @@
       ],
       "relatedWords": []
     },
-    "effectuoseeffectuous": {
+    "effectuose": {
+      "word": "EFFECTUOSE; EFFECTUOUS",
+      "definitions": [
+        {
+          "text": "Effective. [Obs.] B. Jonson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "effectuous": {
       "word": "EFFECTUOSE; EFFECTUOUS",
       "definitions": [
         {
@@ -1542,7 +1562,132 @@
         "zip"
       ]
     },
-    "effervescenceeffervescency": {
+    "effervescence": {
+      "word": "EFFERVESCENCE; EFFERVESCENCY",
+      "definitions": [
+        {
+          "text": "A kind of natural ebullition; that commotion of a fluid which takes place when some part of the mass flies off in a gaseous form, producing innumerable small bubbles; as, the effervescence of a carbonate with citric acid.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ado",
+        "agitation",
+        "animation",
+        "assibilation",
+        "boiling",
+        "breeziness",
+        "briskness",
+        "brouhaha",
+        "bubbliness",
+        "bubbling",
+        "buoyancy",
+        "bustle",
+        "buzz",
+        "carbonation",
+        "commotion",
+        "disturbance",
+        "ebullience",
+        "ebulliency",
+        "ebullition",
+        "eddy",
+        "effervescency",
+        "effervescing",
+        "embroilment",
+        "energy",
+        "exuberance",
+        "feery-fary",
+        "ferment",
+        "fermentation",
+        "fizz",
+        "fizzing",
+        "fizzle",
+        "fizzling",
+        "flurry",
+        "foaming",
+        "frication",
+        "frictional rustling",
+        "frothiness",
+        "frothing",
+        "fume",
+        "hiss",
+        "hissing",
+        "hurly-burly",
+        "hurry",
+        "hurry-scurry",
+        "hush",
+        "hushing",
+        "life",
+        "lisp",
+        "liveliness",
+        "moxie",
+        "pell-mell",
+        "pep",
+        "peppiness",
+        "perturbation",
+        "piss and vinegar",
+        "pizzazz",
+        "rhonchus",
+        "ruffle",
+        "shush",
+        "shushing",
+        "sibilance",
+        "sibilation",
+        "siffle",
+        "sigmatism",
+        "siss",
+        "sissing",
+        "sizz",
+        "sizzle",
+        "sizzling",
+        "sneeze",
+        "sneezing",
+        "sniff",
+        "sniffle",
+        "snore",
+        "snort",
+        "snuff",
+        "snuffle",
+        "sparkle",
+        "spirit",
+        "spiritedness",
+        "spit",
+        "splutter",
+        "sprightliness",
+        "spumescence",
+        "sputter",
+        "squash",
+        "squelch",
+        "squish",
+        "sternutation",
+        "stertor",
+        "stir",
+        "swirl",
+        "swirling",
+        "swish",
+        "to-do",
+        "tumult",
+        "turbulence",
+        "turmoil",
+        "uproar",
+        "verve",
+        "vim",
+        "vivaciousness",
+        "vivacity",
+        "vortex",
+        "wheeze",
+        "whirl",
+        "whish",
+        "whistle",
+        "whistling",
+        "white noise",
+        "whiz",
+        "whoosh",
+        "yeastiness",
+        "zip"
+      ]
+    },
+    "effervescency": {
       "word": "EFFERVESCENCE; EFFERVESCENCY",
       "definitions": [
         {
@@ -1997,7 +2142,7 @@
       ],
       "relatedWords": []
     },
-    "efficienceefficiency": {
+    "efficience": {
       "word": "EFFICIENCE; EFFICIENCY",
       "definitions": [
         {
@@ -2014,6 +2159,140 @@
         }
       ],
       "relatedWords": []
+    },
+    "efficiency": {
+      "word": "EFFICIENCE; EFFICIENCY",
+      "definitions": [
+        {
+          "text": "The quality of being efficient or producing an effect or effects; efficient power; effectual agency. The manner of this divine efficiency being far above us. Hooker.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mech.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The ratio of useful work to energy expended. Rankine. Efficiency of a heat engine, the ratio of the work done an engine, to the work due to the heat supplied to it.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "ability",
+        "able",
+        "ableness",
+        "address",
+        "adept",
+        "adeptness",
+        "adequacy",
+        "adroitness",
+        "airmanship",
+        "applicability",
+        "artfulness",
+        "artisanship",
+        "artistry",
+        "availability",
+        "bravura",
+        "brilliance",
+        "caliber",
+        "capability",
+        "capable",
+        "capableness",
+        "capacity",
+        "cleverness",
+        "command",
+        "competence",
+        "competent",
+        "control",
+        "coordination",
+        "craft",
+        "craftsmanship",
+        "cunning",
+        "deftness",
+        "dexterity",
+        "dexterousness",
+        "dextrousness",
+        "diplomacy",
+        "effectiveness",
+        "effectual",
+        "efficacious",
+        "efficaciousness",
+        "efficacy",
+        "efficient",
+        "experience",
+        "expert",
+        "expertise",
+        "expertness",
+        "facility",
+        "faculty",
+        "finesse",
+        "fitness",
+        "fitted",
+        "flair",
+        "functionality",
+        "genius",
+        "grace",
+        "grip",
+        "handiness",
+        "helpfulness",
+        "horsemanship",
+        "ingeniousness",
+        "ingenuity",
+        "know-how",
+        "marksmanship",
+        "masterly",
+        "mastership",
+        "mastery",
+        "operability",
+        "performance",
+        "potency",
+        "practicability",
+        "practical ability",
+        "practical utility",
+        "practicality",
+        "productivity",
+        "proficiency",
+        "proficient",
+        "profitability",
+        "prowess",
+        "qualification",
+        "qualified",
+        "quickness",
+        "readiness",
+        "resource",
+        "resourcefulness",
+        "savoir-faire",
+        "savvy",
+        "seamanship",
+        "serviceability",
+        "skill",
+        "skilled",
+        "skillful",
+        "skillfulness",
+        "style",
+        "sufficiency",
+        "susceptibility",
+        "tact",
+        "tactfulness",
+        "talent",
+        "technical brilliance",
+        "technical mastery",
+        "technical skill",
+        "technique",
+        "the goods",
+        "the stuff",
+        "timing",
+        "usability",
+        "use",
+        "usefulness",
+        "utility",
+        "utilizability",
+        "virtuosity",
+        "virtuous",
+        "what it takes",
+        "wit",
+        "wizardry",
+        "workmanship"
+      ]
     },
     "efficient": {
       "word": "EFFICIENT",
@@ -3141,7 +3420,7 @@
       "word": "EFFUSIVE",
       "definitions": [
         {
-          "text": "Pouring out; pouring forth freely. \"Washed with the effusive wave.\" Pope. Effusive rocks (Geol.), volcanic rocks, in distinction",
+          "text": "Pouring out; pouring forth freely. \"Washed with the effusive wave.\" Pope. Effusive rocks (Geol.), volcanic rocks, in distinction from so-called intrusive, or plutonic, rocks.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3265,7 +3544,17 @@
       ],
       "relatedWords": []
     },
-    "eftsooneftsoons": {
+    "eftsoon": {
+      "word": "EFTSOON; EFTSOONS",
+      "definitions": [
+        {
+          "text": "Again; anew; a second time; at once; speedily. [Archaic] And, if he fall from his capel [horse] eftsone. Chaucer. The champion stout eftsoons dismounted. Spenser.",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eftsoons": {
       "word": "EFTSOON; EFTSOONS",
       "definitions": [
         {

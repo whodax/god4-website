@@ -1,6 +1,28 @@
 {
   "version": "v1",
   "entries": {
+    "hoa": {
+      "word": "HO; HOA",
+      "definitions": [
+        {
+          "text": "A stop; a halt; a moderation of pace. There is no ho with them. Decker.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Halloo! attend! -- a call to excite attention, or to give notice of approach. \"What noise there, ho\" Shak. \"Ho! who's within\" Shak.",
+          "partOfSpeech": "interjection"
+        },
+        {
+          "text": "Etym: [Perhaps corrupted fr. hold; but cf. F. hau stop! and E. whoa.]",
+          "partOfSpeech": "interjection"
+        },
+        {
+          "text": "Stop! stand still! hold! -- a word now used by teamsters, but formerly to order the cessation of anything. [Written also whoa, and, formerly, hoo.] The duke . . . pulled out his sword and cried \"Hoo!\" Chaucer. An herald on a scaffold made an hoo. Chaucer.",
+          "partOfSpeech": "interjection"
+        }
+      ],
+      "relatedWords": []
+    },
     "hoar": {
       "word": "HOAR",
       "definitions": [
@@ -264,6 +286,16 @@
         {
           "text": "Moldy; musty. [Obs.] Granmer.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hoarfrost": {
+      "word": "HOARFROST",
+      "definitions": [
+        {
+          "text": "The white particles formed by the congelation of dew; white frost. [Written also horefrost. See Hoar, a.] He scattereth the hoarfrost like ashes. Ps. cxlvii. 16.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []

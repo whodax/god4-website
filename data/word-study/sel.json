@@ -61,6 +61,16 @@
       ],
       "relatedWords": []
     },
+    "selch": {
+      "word": "SEALGH; SELCH",
+      "definitions": [
+        {
+          "text": "A seal. [Scotch]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "selcouth": {
       "word": "SELCOUTH",
       "definitions": [
@@ -301,7 +311,17 @@
       ],
       "relatedWords": []
     },
-    "seleniticselenitical": {
+    "selenitic": {
+      "word": "SELENITIC; SELENITICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to selenite; resembling or containing selenite.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "selenitical": {
       "word": "SELENITIC; SELENITICAL",
       "definitions": [
         {
@@ -371,7 +391,17 @@
       ],
       "relatedWords": []
     },
-    "selenographicselenographical": {
+    "selenographic": {
+      "word": "SELENOGRAPHIC; SELENOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to selenography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "selenographical": {
       "word": "SELENOGRAPHIC; SELENOGRAPHICAL",
       "definitions": [
         {
@@ -396,6 +426,16 @@
       "definitions": [
         {
           "text": "The science that treats of the physical features of the moon; - - corresponding to physical geography in respect to the earth. \"Accurate selenography, or description of the moon.\" Sir T. Browne.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "selenology": {
+      "word": "SELENOLOGY",
+      "definitions": [
+        {
+          "text": "That branch of astronomy which treats of the moon.",
           "partOfSpeech": "noun"
         }
       ],
@@ -745,7 +785,7 @@
       ],
       "relatedWords": []
     },
-    "selfcenteredselfcentred": {
+    "selfcentered": {
       "word": "SELF-CENTERED; SELF-CENTRED",
       "definitions": [
         {
@@ -755,7 +795,7 @@
       ],
       "relatedWords": []
     },
-    "selfcenteringselfcentring": {
+    "selfcentering": {
       "word": "SELF-CENTERING; SELF-CENTRING",
       "definitions": [
         {
@@ -771,6 +811,26 @@
         {
           "text": "The quality or state of being self-centered.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "selfcentred": {
+      "word": "SELF-CENTERED; SELF-CENTRED",
+      "definitions": [
+        {
+          "text": "Centered in itself, or in one's self. There hangs the ball of earth and water mixt, Self-centered and unmoved. Dryden.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "selfcentring": {
+      "word": "SELF-CENTERING; SELF-CENTRING",
+      "definitions": [
+        {
+          "text": "Centering in one's self.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -879,7 +939,7 @@
       "word": "SELF-CONCEITED",
       "definitions": [
         {
-          "text": "Having an overweening opinion of one's own powers, attainments;",
+          "text": "Having an overweening opinion of one's own powers, attainments; vain; conceited.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -919,7 +979,7 @@
       "word": "SELF-CONFIDENT",
       "definitions": [
         {
-          "text": "Confident of one's own strength or powers; relying on one's",
+          "text": "Confident of one's own strength or powers; relying on one's judgment or ability; self-reliant.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1187,6 +1247,16 @@
       ],
       "relatedWords": []
     },
+    "selfdenying": {
+      "word": "SELF-DENYING",
+      "definitions": [
+        {
+          "text": "Refusing to gratify one's self; self-sacrificing.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "selfdependent": {
       "word": "SELF-DEPENDENT",
       "definitions": [
@@ -1411,7 +1481,7 @@
       "word": "SELF-EVIDENT",
       "definitions": [
         {
-          "text": "Evident without proof or reasoning; producing certainty or conviction upon a bare presentation to the mind; as, a self-evident",
+          "text": "Evident without proof or reasoning; producing certainty or conviction upon a bare presentation to the mind; as, a self-evident proposition or truth.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1565,7 +1635,7 @@
       "word": "SELF-HARDENING",
       "definitions": [
         {
-          "text": "Designating, or pert. to, any of various steels that harden when heated to above a red heat and cooled in air, usually in a blast of cold air with moderate rapidity, without quenching. Such steels are alloys of iron and carbon with manganese, tungsten and manganese,",
+          "text": "Designating, or pert. to, any of various steels that harden when heated to above a red heat and cooled in air, usually in a blast of cold air with moderate rapidity, without quenching. Such steels are alloys of iron and carbon with manganese, tungsten and manganese, chromium, molybdenum and manganese, etc. They are chiefly used as high-speed steels. -- Self`-hard\"en*ed, a.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2243,6 +2313,16 @@
       ],
       "relatedWords": []
     },
+    "selfreproaching": {
+      "word": "SELF-REPROACHING",
+      "definitions": [
+        {
+          "text": "Reproaching one's self.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "selfreproof": {
       "word": "SELF-REPROOF",
       "definitions": [
@@ -2495,7 +2575,7 @@
       "word": "SELF-SUFFICING",
       "definitions": [
         {
-          "text": "Sufficing for one's self or for itself, without needing",
+          "text": "Sufficing for one's self or for itself, without needing external aid; self-sufficient.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2641,19 +2721,23 @@
       ],
       "relatedWords": []
     },
+    "seljuckian": {
+      "word": "SELJUKIAN; SELJUCKIAN",
+      "definitions": [
+        {
+          "text": "A member of the family of Seljuk; an adherent of that family, or subject of its government; (pl.) the dynasty of Turkish sultans sprung from Seljuk.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "seljukian": {
       "word": "SELJUKIAN",
       "definitions": [
         {
           "text": "Of or pertaining to Seljuk, a Tartar chief who embraced Mohammedanism, and began the subjection of Western Asia to that faith and rule; of or pertaining to the dynasty founded by him, or the empire maintained by his descendants from the 10th to the 13th century. J. H. Newman.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "seljukianseljuckian": {
-      "word": "SELJUKIAN; SELJUCKIAN",
-      "definitions": [
+        },
         {
           "text": "A member of the family of Seljuk; an adherent of that family, or subject of its government; (pl.) the dynasty of Turkish sultans sprung from Seljuk.",
           "partOfSpeech": "noun"
@@ -2711,7 +2795,17 @@
       ],
       "relatedWords": []
     },
-    "sellanderssellenders": {
+    "sellanders": {
+      "word": "SELLANDERS; SELLENDERS",
+      "definitions": [
+        {
+          "text": "See Sallenders.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sellenders": {
       "word": "SELLANDERS; SELLENDERS",
       "definitions": [
         {
@@ -2761,7 +2855,29 @@
       ],
       "relatedWords": []
     },
-    "selvagedselvedged": {
+    "selvage": {
+      "word": "SELVAGE; SELVEDGE",
+      "definitions": [
+        {
+          "text": "The edge of cloth which is woven in such a manner as to prevent raveling.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The edge plate of a lock, through which the bolt passes. Knight.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A layer of clay or decomposed rock along the wall of a vein. See Gouge, n., 4. Raymond.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "selvaged": {
       "word": "SELVAGED; SELVEDGED",
       "definitions": [
         {
@@ -2781,7 +2897,27 @@
       ],
       "relatedWords": []
     },
-    "selvageselvedge": {
+    "selvas": {
+      "word": "SILVAS; SELVAS",
+      "definitions": [
+        {
+          "text": "Vast woodland plains of South America.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "selve": {
+      "word": "SELVE",
+      "definitions": [
+        {
+          "text": "Self; same. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "selvedge": {
       "word": "SELVAGE; SELVEDGE",
       "definitions": [
         {
@@ -2795,15 +2931,19 @@
         {
           "text": "(Mining.)",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A layer of clay or decomposed rock along the wall of a vein. See Gouge, n., 4. Raymond.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "selve": {
-      "word": "SELVE",
+    "selvedged": {
+      "word": "SELVAGED; SELVEDGED",
       "definitions": [
         {
-          "text": "Self; same. [Obs.] Chaucer.",
+          "text": "Having a selvage.",
           "partOfSpeech": "adjective"
         }
       ],

@@ -41,22 +41,46 @@ function parseWebster(source) {
   function saveCurrent() {
     if (!current) return;
     const definitions = current.definitions.map((definition) => definition.replace(/\s+/g, ' ').trim()).filter(Boolean);
-    if (!current.key || !definitions.length) {
-      skippedEntries++;
-      return;
-    }
-    const existing = entries.get(current.key);
-    if (existing) {
-      existing.definitions.push(...definitions.map((text) => ({ text, partOfSpeech: current.partOfSpeech })));
-      mergedEntries++;
-    } else {
-      entries.set(current.key, { word: current.word, definitions: definitions.map((text) => ({ text, partOfSpeech: current.partOfSpeech })) });
-    }
+     if (!current.keys.length || !definitions.length) {
+  skippedEntries++;
+  return;
+}
+
+current.keys.forEach((key) => {
+  const existing = entries.get(key);
+
+  if (existing) {
+    existing.definitions.push(...definitions.map((text) => ({
+      text,
+      partOfSpeech: current.partOfSpeech
+    })));
+    mergedEntries++;
+  } else {
+    entries.set(key, {
+      word: current.word,
+      definitions: definitions.map((text) => ({
+        text,
+        partOfSpeech: current.partOfSpeech
+      }))
+    });
   }
+}); }
 
   function startEntry(word, partOfSpeech, definition) {
     saveCurrent();
-    current = { word, key: normalizeWord(word), partOfSpeech: normalizePartOfSpeech(partOfSpeech), definitions: definition ? [definition] : [], definitionIndex: definition ? 0 : -1, awaitingSourceLine: !definition };
+   current = {
+  word,
+  keys: [...new Set(
+    String(word || '')
+      .split(/\s*;\s*/)
+      .map(normalizeWord)
+      .filter(Boolean)
+  )],
+  partOfSpeech: normalizePartOfSpeech(partOfSpeech),
+  definitions: definition ? [definition] : [],
+  definitionIndex: definition ? 0 : -1,
+  awaitingSourceLine: !definition
+}; 
   }
 
   function nextNonEmptyLine(index) {
@@ -66,17 +90,25 @@ function parseWebster(source) {
     return '';
   }
 
-  function looksLikeHeading(value, followingValue) {
-    if (!/^[A-Za-z][A-Za-z0-9 .,';:&!?()/-]{0,80}$/.test(value)) return false;
-    if (/^[A-Z][A-Z0-9 .,';:&!?()/-]{0,80}$/.test(value)) return true;
-    return /(?:^|,\s*)(v\.t\.|v\.i\.|n\.|v\.|a\.|adv\.|pron\.|prep\.|conj\.|interj\.)/i.test(followingValue);
-  }
+  function looksLikeHeading(value) {
+  if (!/^[A-Za-z][A-Za-z0-9 .,';:&!?()/-]{0,80}$/.test(value)) return false;
+
+  /*
+   * Project Gutenberg Webster entries use uppercase canonical heading lines.
+   *
+   * Do not infer headings from surrounding part-of-speech text. Etymology
+   * paragraphs frequently contain abbreviations such as "v. t." and were
+   * previously being mistaken for new dictionary entries, which caused the
+   * real headword to be saved before its definitions were reached.
+   */
+  return /^[A-Z][A-Z0-9 .,';:&!?()/-]{0,80}$/.test(value);
+}
 
   for (let index = 0; index < lines.length; index++) {
     const line = lines[index];
     const trimmed = line.trim();
     const inlineMatch = /^([A-Za-z][A-Za-z' -]{0,60})\s+\\[^\\]*\\,?\s*((?:v\.t\.|v\.i\.|n\.|v\.|a\.|adv\.|pron\.|prep\.|conj\.|interj\.))?\s*(.*)$/.exec(trimmed);
-    const headingMatch = looksLikeHeading(trimmed, nextNonEmptyLine(index));
+    const headingMatch = looksLikeHeading(trimmed);
     if (inlineMatch) {
       startEntry(inlineMatch[1].trim(), inlineMatch[2], inlineMatch[3].replace(/^\d+\.\s*/, ''));
       continue;

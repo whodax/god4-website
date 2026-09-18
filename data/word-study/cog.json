@@ -5,6 +5,14 @@
       "word": "COG",
       "definitions": [
         {
+          "text": "To seduce, or draw away, by adulation, artifice, or falsehood; to wheedle; to cozen; to cheat. [R.] I'll . . . cog their hearts from them. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To obtrude or thrust in, by falsehood or deception; as, to cog in a word; to palm off. [R.] Fustian tragedies . . . have, by concerted applauses, been cogged upon the town for masterpieces. J. Dennis To cog a die, to load so as to direct its fall; to cheat in playing dice. Swift.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To deceive; to cheat; to play false; to lie; to wheedle; to cajole. For guineas in other men's breeches, Your gamesters will palm and will cog. Swift.",
           "partOfSpeech": "verb"
         },
@@ -795,7 +803,17 @@
       ],
       "relatedWords": []
     },
-    "cognisorcognisee": {
+    "cognisee": {
+      "word": "COGNISOR; COGNISEE",
+      "definitions": [
+        {
+          "text": "See Cognizor, Cognizee.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cognisor": {
       "word": "COGNISOR; COGNISEE",
       "definitions": [
         {

@@ -1,19 +1,13 @@
 {
   "version": "v1",
   "entries": {
-    "axaxe": {
+    "ax": {
       "word": "AX; AXE",
       "definitions": [
         {
           "text": "A tool or instrument of steel, or of iron with a steel edge or blade, for felling trees, chopping and splitting wood, hewing timber, etc. It is wielded by a wooden helve or handle, so fixed in a socket or eye as to be in the same plane with the blade. The broadax, or carpenter's ax, is an ax for hewing timber, made heavier than the chopping ax, and with a broader and thinner blade and a shorter handle. ax head; ax helve; ax handle; ax shaft; ax-shaped; axlike. nearly every corresponding word of one syllable: as, flaxe, taxe, waxe, sixe, mixe, pixe, oxe, fluxe, etc. This superfluous e is not dropped; so that, in more than a hundred words ending in x, no one thinks of retaining the e except in axe. Analogy requires its exclusion here. phonology, and analogy, than axe, which has of late become prevalent.\" New English Dict. (Murray).",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "ax": {
-      "word": "AX",
-      "definitions": [
+        },
         {
           "text": "To ask; to inquire or inquire of. Formerly it was in good use, but now is regarded as a vulgarism. It is still dialectic in England, and is sometimes heard among the uneducated in the United States. \"And Pilate axide him, Art thou king of Jewis\" \"Or if he axea fish.\" Wyclif. 'bdThe king axed after your Grace's welfare.\" Pegge.",
           "partOfSpeech": "verb"
@@ -161,6 +155,20 @@
         "whittle"
       ]
     },
+    "axe": {
+      "word": "AX; AXE",
+      "definitions": [
+        {
+          "text": "A tool or instrument of steel, or of iron with a steel edge or blade, for felling trees, chopping and splitting wood, hewing timber, etc. It is wielded by a wooden helve or handle, so fixed in a socket or eye as to be in the same plane with the blade. The broadax, or carpenter's ax, is an ax for hewing timber, made heavier than the chopping ax, and with a broader and thinner blade and a shorter handle. ax head; ax helve; ax handle; ax shaft; ax-shaped; axlike. nearly every corresponding word of one syllable: as, flaxe, taxe, waxe, sixe, mixe, pixe, oxe, fluxe, etc. This superfluous e is not dropped; so that, in more than a hundred words ending in x, no one thinks of retaining the e except in axe. Analogy requires its exclusion here. phonology, and analogy, than axe, which has of late become prevalent.\" New English Dict. (Murray).",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Ax, Axman.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
     "axal": {
       "word": "AXAL",
       "definitions": [
@@ -171,7 +179,7 @@
       ],
       "relatedWords": []
     },
-    "axeaxeman": {
+    "axeman": {
       "word": "AXE; AXEMAN",
       "definitions": [
         {
@@ -307,7 +315,17 @@
       ],
       "relatedWords": []
     },
-    "axillariesaxillars": {
+    "axillaries": {
+      "word": "AXILLARIES; AXILLARS",
+      "definitions": [
+        {
+          "text": "Feathers connecting the under surface of the wing and the body, and concealed by the closed wing.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "axillars": {
       "word": "AXILLARIES; AXILLARS",
       "definitions": [
         {
@@ -359,7 +377,278 @@
       ],
       "relatedWords": []
     },
-    "axiomaticaxiomatical": {
+    "axiom": {
+      "word": "AXIOM",
+      "definitions": [
+        {
+          "text": "(Logic & Math.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A self-evident and necessary truth, or a proposition whose truth is so evident as first sight that no reasoning or demonstration can make it plainer; a proposition which it is necessary to take for granted; as, \"The whole is greater than a part;\" \"A thing can not, at the same time, be and not be.\"",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An established principle in some art or science, which, though not a necessary truth, is universally received; as, the axioms of political economy. which is taken for granted as the basis of reasoning. A maxim is a guiding principle sanctioned by experience, and relating especially to the practical concerns of life. An aphorism is a short sentence pithily expressing some valuable and general truth or sentiment. An adage is a saying of long-established authority and of universal application.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "a belief",
+        "a priori principle",
+        "a priori truth",
+        "absolute fact",
+        "accepted fact",
+        "actual fact",
+        "adage",
+        "admitted fact",
+        "affirmation",
+        "ana",
+        "analects",
+        "aphorism",
+        "apothegm",
+        "apriorism",
+        "article of faith",
+        "assertion",
+        "assumed position",
+        "assumption",
+        "bald fact",
+        "bare fact",
+        "basis",
+        "brocard",
+        "brutal fact",
+        "byword",
+        "canon",
+        "catchword",
+        "categorical proposition",
+        "center",
+        "circumstance",
+        "cold fact",
+        "collected sayings",
+        "conceded fact",
+        "conjecture",
+        "core",
+        "current saying",
+        "data",
+        "datum",
+        "demonstrable fact",
+        "dictate",
+        "dictum",
+        "distich",
+        "doctrine",
+        "dogma",
+        "elixir",
+        "empirical fact",
+        "epigram",
+        "essence",
+        "essential",
+        "established fact",
+        "expression",
+        "fact",
+        "fact of experience",
+        "first principles",
+        "flower",
+        "focus",
+        "formula",
+        "foundation",
+        "fundamental",
+        "gist",
+        "given fact",
+        "gnome",
+        "golden rule",
+        "golden saying",
+        "gravamen",
+        "ground",
+        "guesswork",
+        "hard fact",
+        "heart",
+        "hypostasis",
+        "hypothesis",
+        "hypothesis ad hoc",
+        "indisputable fact",
+        "inescapable fact",
+        "inference",
+        "inner essence",
+        "kernel",
+        "law",
+        "lemma",
+        "major premise",
+        "marrow",
+        "matter of fact",
+        "maxim",
+        "meat",
+        "minor premise",
+        "moral",
+        "mot",
+        "motto",
+        "naked fact",
+        "not guesswork",
+        "not opinion",
+        "nub",
+        "nucleus",
+        "nuts and bolts",
+        "oracle",
+        "philosopheme",
+        "philosophical proposition",
+        "phrase",
+        "pith",
+        "pithy saying",
+        "plain",
+        "position",
+        "positive fact",
+        "postulate",
+        "postulation",
+        "postulatum",
+        "precept",
+        "premise",
+        "prescript",
+        "presumption",
+        "presupposal",
+        "presupposition",
+        "principium",
+        "principle",
+        "proposition",
+        "propositional function",
+        "provable fact",
+        "proverb",
+        "proverbial saying",
+        "proverbs",
+        "quid",
+        "quiddity",
+        "quintessence",
+        "rule",
+        "salient fact",
+        "sap",
+        "saw",
+        "saying",
+        "self-evident fact",
+        "self-evident truth",
+        "sentence",
+        "sententious expression",
+        "set of postulates",
+        "settled principle",
+        "significant fact",
+        "simple fact",
+        "sloka",
+        "sober fact",
+        "soul",
+        "spirit",
+        "statement",
+        "stock saying",
+        "stubborn fact",
+        "stuff",
+        "substance",
+        "sumption",
+        "supposal",
+        "supposing",
+        "supposition",
+        "surmise",
+        "sutra",
+        "teaching",
+        "tenet",
+        "text",
+        "the case",
+        "the nitty-gritty",
+        "theorem",
+        "thesis",
+        "truism",
+        "truth",
+        "truth table",
+        "truth-function",
+        "truth-value",
+        "undeniable fact",
+        "universal truth",
+        "verse",
+        "well-known fact",
+        "wisdom",
+        "wisdom literature",
+        "wise saying",
+        "witticism",
+        "word",
+        "words of wisdom",
+        "working hypothesis"
+      ]
+    },
+    "axiomatic": {
+      "word": "AXIOMATIC; AXIOMATICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to an axiom; having the nature of an axiom; self-evident; characterized by axioms. \"Axiomatical truth.\" Johnson. The stores of axiomatic wisdom. I. Taylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "absolute",
+        "actual",
+        "admitting no question",
+        "aphoristic",
+        "apparent",
+        "clear",
+        "clear as crystal",
+        "confirmable",
+        "crisp",
+        "crystal-clear",
+        "demonstrable",
+        "demonstratable",
+        "discernible",
+        "distinct",
+        "epigrammatic",
+        "evident",
+        "explicit",
+        "express",
+        "factual",
+        "formulaic",
+        "formulistic",
+        "gnomic",
+        "historical",
+        "inappealable",
+        "incontestable",
+        "incontrovertible",
+        "indisputable",
+        "indubitable",
+        "irrefragable",
+        "irrefutable",
+        "manifest",
+        "noticeable",
+        "observable",
+        "obvious",
+        "open-and-shut",
+        "palpable",
+        "patent",
+        "perceivable",
+        "perceptible",
+        "perspicuous",
+        "pithy",
+        "plain",
+        "plain as day",
+        "platitudinous",
+        "pointed",
+        "provable",
+        "proverbial",
+        "pungent",
+        "real",
+        "seeable",
+        "self-evident",
+        "self-explaining",
+        "self-explanatory",
+        "sententious",
+        "succinct",
+        "tangible",
+        "terse",
+        "testable",
+        "to be seen",
+        "unanswerable",
+        "unconfutable",
+        "undeniable",
+        "unimpeachable",
+        "unmistakable",
+        "unquestionable",
+        "unrefutable",
+        "verifiable",
+        "visible"
+      ]
+    },
+    "axiomatical": {
       "word": "AXIOMATIC; AXIOMATICAL",
       "definitions": [
         {

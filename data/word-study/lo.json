@@ -1,20 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "loosevainworthlessfromtherootoffunderetopouroutcff": {
-      "word": "loose, vain, worthless, from the root of fundere to pour out: cf. F.",
-      "definitions": [
-        {
-          "text": "Talkative; loquacious; tattling. [Obs.] Talkers and futile persons. Bacon.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "Of no importance; answering no useful end; useless; vain; worthless. \"Futile theories.\" I. Taylor. His reasoning . . . was singularly futile. Macaulay.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "lo": {
       "word": "LO",
       "definitions": [
@@ -113,7 +99,7 @@
       ],
       "relatedWords": []
     },
-    "loadmanagelodemanage": {
+    "loadmanage": {
       "word": "LOADMANAGE; LODEMANAGE",
       "definitions": [
         {
@@ -123,7 +109,21 @@
       ],
       "relatedWords": []
     },
-    "loadsmanlodesman": {
+    "lodemanage": {
+      "word": "LOADMANAGE; LODEMANAGE",
+      "definitions": [
+        {
+          "text": "Pilotage; skill of a pilot or loadsman. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pilotage. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "loadsman": {
       "word": "LOADSMAN; LODESMAN",
       "definitions": [
         {
@@ -133,7 +133,21 @@
       ],
       "relatedWords": []
     },
-    "loadstarlodestar": {
+    "lodesman": {
+      "word": "LOADSMAN; LODESMAN",
+      "definitions": [
+        {
+          "text": "A pilot. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Loadsman. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "loadstar": {
       "word": "LOADSTAR; LODESTAR",
       "definitions": [
         {
@@ -143,11 +157,39 @@
       ],
       "relatedWords": []
     },
-    "loadstonelodestone": {
+    "lodestar": {
+      "word": "LOADSTAR; LODESTAR",
+      "definitions": [
+        {
+          "text": "A star that leads; a guiding star; esp., the polestar; the cynosure. Chaucer. \" Your eyes are lodestars.\" Shak. The pilot can no loadstar see. Spenser.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Loadstar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "loadstone": {
       "word": "LOADSTONE; LODESTONE",
       "definitions": [
         {
           "text": "A piece of magnetic iron ore possessing polarity like a magnetic needle. See Magnetite.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lodestone": {
+      "word": "LOADSTONE; LODESTONE",
+      "definitions": [
+        {
+          "text": "A piece of magnetic iron ore possessing polarity like a magnetic needle. See Magnetite.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Loadstone.",
           "partOfSpeech": "noun"
         }
       ],
@@ -193,7 +235,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A mixture of sand, clay, and other materials, used in making",
+          "text": "A mixture of sand, clay, and other materials, used in making molds for large castings, often without a pattern. Loam mold (Founding), a mold made with loam. See Loam, n., 2. plate, an iron plate upon which a section of a loam mold rests, or from which it is suspended.",
           "partOfSpeech": "noun"
         },
         {
@@ -245,7 +287,17 @@
       ],
       "relatedWords": []
     },
-    "loaninloaning": {
+    "loanin": {
+      "word": "LOANIN; LOANING",
+      "definitions": [
+        {
+          "text": "An open space between cultivated fields through which cattle are driven, and where the cows are sometimes milked; also, a lane. [Scot.] Sir W. Scott.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "loaning": {
       "word": "LOANIN; LOANING",
       "definitions": [
         {
@@ -425,6 +477,10 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "See Cob, v. t.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "The European pollock.",
           "partOfSpeech": "noun"
         }
@@ -441,7 +497,25 @@
       ],
       "relatedWords": []
     },
-    "lobatelobated": {
+    "lobate": {
+      "word": "LOBATE; LOBATED",
+      "definitions": [
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Consisting of, or having, lobes; lobed; as, a lobate leaf.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Zoöl.) (a) Having lobes; -- said of the tails of certain fishes having the integument continued to the bases of the fin rays. (b) Furnished with membranous flaps, as the toes of a coot. See Illust. (m) under Aves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lobated": {
       "word": "LOBATE; LOBATED",
       "definitions": [
         {
@@ -715,7 +789,17 @@
       ],
       "relatedWords": []
     },
-    "lobulatelobulated": {
+    "lobulate": {
+      "word": "LOBULATE; LOBULATED",
+      "definitions": [
+        {
+          "text": "Made up of, or divided into, lobules; as, a lobulated gland.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lobulated": {
       "word": "LOBULATE; LOBULATED",
       "definitions": [
         {
@@ -953,7 +1037,17 @@
       ],
       "relatedWords": []
     },
-    "lochaberaxlochaberaxe": {
+    "lochaberax": {
+      "word": "LOCHABER AX; LOCHABER AXE",
+      "definitions": [
+        {
+          "text": "A weapon of war, consisting of a pole armed with an axhead at its end, formerly used by the Scotch Highlanders.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "lochaberaxe": {
       "word": "LOCHABER AX; LOCHABER AXE",
       "definitions": [
         {
@@ -1361,7 +1455,17 @@
       ],
       "relatedWords": []
     },
-    "locomotivenesslocomotivity": {
+    "locomotiveness": {
+      "word": "LOCOMOTIVENESS; LOCOMOTIVITY",
+      "definitions": [
+        {
+          "text": "The power of changing place.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "locomotivity": {
       "word": "LOCOMOTIVENESS; LOCOMOTIVITY",
       "definitions": [
         {
@@ -1431,7 +1535,17 @@
       ],
       "relatedWords": []
     },
-    "loculoseloculous": {
+    "loculose": {
+      "word": "LOCULOSE; LOCULOUS",
+      "definitions": [
+        {
+          "text": "Divided by internal partitions into cells, as the pith of the pokeweed.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "loculous": {
       "word": "LOCULOSE; LOCULOUS",
       "definitions": [
         {
@@ -1611,51 +1725,11 @@
       ],
       "relatedWords": []
     },
-    "lodemanage": {
-      "word": "LODEMANAGE",
-      "definitions": [
-        {
-          "text": "Pilotage. [Obs.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "lodeship": {
       "word": "LODE-SHIP",
       "definitions": [
         {
           "text": "An old name for a pilot boat.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "lodesman": {
-      "word": "LODESMAN",
-      "definitions": [
-        {
-          "text": "Same as Loadsman. [Obs.]",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "lodestar": {
-      "word": "LODESTAR",
-      "definitions": [
-        {
-          "text": "Same as Loadstar.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "lodestone": {
-      "word": "LODESTONE",
-      "definitions": [
-        {
-          "text": "Same as Loadstone.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1681,7 +1755,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A family of North American Indians, or the persons who usually occupy an Indian lodge, -- as a unit of enumeration, reckoned from four to six persons; as, the tribe consists of about two hundred",
+          "text": "A family of North American Indians, or the persons who usually occupy an Indian lodge, -- as a unit of enumeration, reckoned from four to six persons; as, the tribe consists of about two hundred lodges, that is, of about a thousand individuals. Lodge gate, a park gate, or entrance gate, near the lodge. See Lodge, n., 1 (b).",
           "partOfSpeech": "noun"
         },
         {
@@ -1861,6 +1935,10 @@
       "word": "LOFT",
       "definitions": [
         {
+          "text": "That which is lifted up; an elevation. Hence, especially: (a) The room or space under a roof and above the ceiling of the uppermost story. (b) A gallery or raised apartment in a church, hall, etc.; as, an organ loft. (c) A floor or room placed above another; a story. Eutychus . . . fell down from the third loft. Acts xx. 9. On loft, aloft; on high. Cf. Onloft. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "Lofty; proud. [R. & Obs.] Surrey.",
           "partOfSpeech": "adjective"
         }
@@ -2001,7 +2079,17 @@
       ],
       "relatedWords": []
     },
-    "logarithmeticlogarithmetical": {
+    "logarithmetic": {
+      "word": "LOGARITHMETIC; LOGARITHMETICAL",
+      "definitions": [
+        {
+          "text": "See Logarithmic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "logarithmetical": {
       "word": "LOGARITHMETIC; LOGARITHMETICAL",
       "definitions": [
         {
@@ -2021,7 +2109,17 @@
       ],
       "relatedWords": []
     },
-    "logarithmiclogarithmical": {
+    "logarithmic": {
+      "word": "LOGARITHMIC; LOGARITHMICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to logarithms; consisting of logarithms. Logarithmic curve (Math.), a curve which, referred to a system of rectangular coördinate axes, is such that the ordinate of any point will be the logarithm of its abscissa. pole or eye at equal angles with each other are in continual proportion. See Spiral.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "logarithmical": {
       "word": "LOGARITHMIC; LOGARITHMICAL",
       "definitions": [
         {
@@ -2045,7 +2143,7 @@
       "word": "LOG-CHIP",
       "definitions": [
         {
-          "text": "A thin, flat piece of board in the form of a quadrant of a",
+          "text": "A thin, flat piece of board in the form of a quadrant of a circle attached to the log line; -- called also log-ship. See 2d Log, n., 2.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2289,7 +2387,25 @@
       ],
       "relatedWords": []
     },
-    "logisticlogistical": {
+    "logistic": {
+      "word": "LOGISTIC; LOGISTICAL",
+      "definitions": [
+        {
+          "text": "Logical. [Obs.] Berkeley.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Math.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Sexagesimal, or made on the scale of 60; as, logistic, or sexagesimal, arithmetic. Logistic, or Proportional, logarithms, certain logarithmic numbers used to shorten the calculation of the fourth term of a proportion of which one of the terms is a given constant quantity, commonly one hour, while the other terms are expressed in minutes and seconds; -- not now used.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "logistical": {
       "word": "LOGISTIC; LOGISTICAL",
       "definitions": [
         {
@@ -2373,7 +2489,17 @@
       ],
       "relatedWords": []
     },
-    "logographiclogographical": {
+    "logographic": {
+      "word": "LOGOGRAPHIC; LOGOGRAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to logography.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "logographical": {
       "word": "LOGOGRAPHIC; LOGOGRAPHICAL",
       "definitions": [
         {
@@ -2625,7 +2751,17 @@
       ],
       "relatedWords": []
     },
-    "lokloki": {
+    "lok": {
+      "word": "LOK; LOKI",
+      "definitions": [
+        {
+          "text": "The evil deity, the author of all calamities and mischief, answering to the African of the Persians.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "loki": {
       "word": "LOK; LOKI",
       "definitions": [
         {
@@ -2697,7 +2833,17 @@
       ],
       "relatedWords": []
     },
-    "lollardismlollardy": {
+    "lollardism": {
+      "word": "LOLLARDISM; LOLLARDY",
+      "definitions": [
+        {
+          "text": "The doctrines or principles of the Lollards.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lollardy": {
       "word": "LOLLARDISM; LOLLARDY",
       "definitions": [
         {
@@ -2815,7 +2961,21 @@
       ],
       "relatedWords": []
     },
-    "lombardhouselombarhouse": {
+    "lombardhouse": {
+      "word": "LOMBARD-HOUSE; LOMBAR-HOUSE",
+      "definitions": [
+        {
+          "text": "A bank or a pawnbroker's shop.",
+          "partOfSpeech": ""
+        },
+        {
+          "text": "A public institution for lending money to the poor at a moderate interest, upon articles deposited and pledged; -- called also mont de piété.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "lombarhouse": {
       "word": "LOMBARD-HOUSE; LOMBAR-HOUSE",
       "definitions": [
         {
@@ -3041,7 +3201,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Conscious of, and somewhat depressed by, solitude; as, to feel",
+          "text": "Conscious of, and somewhat depressed by, solitude; as, to feel lonesome.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3086,6 +3246,10 @@
         },
         {
           "text": "(Phonetics)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Prolonged, or relatively more prolonged, in utterance; -- said of vowels and syllables. See Short, a., 13, and Guide to Pronunciation, §§ 22, 30. adjectives which are mostly of obvious meaning; as, long-armed, long- beaked, long-haired, long-horned, long-necked, long-sleeved, long- tailed, long- worded, etc. In the long run, in the whole course of things taken together; in the ultimate result; eventually. United States and Canada; -- called also soft-shell clam and long- neck clam. See Mya. feet. 3, 1640, and was dissolved by Cromwell, April 20, 1653. the Orchis mascula. Dr. Prior. three cards. R. A. Proctor. of a vessel. (b) A long trough for washing auriferous earth. [Western U.S.] (c) (Zoöl.) The long-tailed titmouse. removed and the roof allowed to fall in, as the work progresses, except where passages are needed. market, etc. (Stock Exchange), to hold stock for a rise in price, or to have a contract under which one can demand stock on or before a certain day at a stipulated price; -- opposed to short in such phrases as, to be short of stock, to sell short, etc. [Cant] See Short.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3287,6 +3451,16 @@
         {
           "text": "The written characters used in the common method of writing; -- opposed to shorthand.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "longheaded": {
+      "word": "LONGHEADED",
+      "definitions": [
+        {
+          "text": "Having unusual foresight or sagacity.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3821,7 +3995,7 @@
       "word": "LONG-WINDED",
       "definitions": [
         {
-          "text": "Long-breathed; hence, tediously long in speaking; consuming",
+          "text": "Long-breathed; hence, tediously long in speaking; consuming much time; as, a long-winded talker. A tedious, long-winded harangue. South.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -4773,6 +4947,10 @@
         {
           "text": "Of or pertaining to the lores.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to the lore; -- said of certain feathers of birds, scales of reptiles, etc.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -4987,7 +5165,7 @@
       ],
       "relatedWords": []
     },
-    "lorealloral": {
+    "loreal": {
       "word": "LOREAL; LORAL",
       "definitions": [
         {
@@ -5027,7 +5205,17 @@
       ],
       "relatedWords": []
     },
-    "loretonunslorettonuns": {
+    "loretonuns": {
+      "word": "LORETO NUNS; LORETTO NUNS",
+      "definitions": [
+        {
+          "text": "Members of a congregation of nuns founded by Mrs. Mary Teresa Ball, near Dublin, Ireland, in 1822, and now spread over Ireland, India, Canada, and the United States. The nuns are called also Ladies of Loreto. They are engaged in teaching girls.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "lorettonuns": {
       "word": "LORETO NUNS; LORETTO NUNS",
       "definitions": [
         {
@@ -5149,7 +5337,17 @@
       ],
       "relatedWords": []
     },
-    "lorimerloriner": {
+    "lorimer": {
+      "word": "LORIMER; LORINER",
+      "definitions": [
+        {
+          "text": "A maker of bits, spurs, and metal mounting for bridles and saddles; hence, a saddler. [Obs.] Holinshed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "loriner": {
       "word": "LORIMER; LORINER",
       "definitions": [
         {
@@ -5203,7 +5401,17 @@
       ],
       "relatedWords": []
     },
-    "lorrielorry": {
+    "lorrie": {
+      "word": "LORRIE; LORRY",
+      "definitions": [
+        {
+          "text": "A small cart or wagon, as those used on the tramways in mines to carry coal or rubbish; also, a barrow or truck for shifting baggage, as at railway stations.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lorry": {
       "word": "LORRIE; LORRY",
       "definitions": [
         {
@@ -5261,7 +5469,35 @@
           "partOfSpeech": "verb"
         },
         {
-          "text": "To cease to have; to possess no longer; to suffer diminution of; as, to lose one's relish for anything; to lose one's health.",
+          "text": "To cease to have; to possess no longer; to suffer diminution of; as, to lose one's relish for anything; to lose one's health. If the salt hath lost his savor, wherewith shall it be salted Matt. v. 13.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Not to employ; to employ ineffectually; to throw away; to waste; to squander; as, to lose a day; to lose the benefits of instruction. The unhappy have but hours, and these they lose. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To wander from; to miss, so as not to be able to and; to go astray from; as, to lose one's way. He hath lost his fellows. Shak",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To ruin; to destroy; as destroy; as, the ship was lost on the ledge. The woman that deliberates is lost. Addison.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To be deprived of the view of; to cease to see or know the whereabouts of; as, he lost his companion in the crowd. Like following life thro' creatures you dissect, You lose it in the moment you detect. Pope .",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To fail to obtain or enjoy; to fail to gain or win; hence, to fail to catch with the mind or senses; to miss; as, I lost a part of what he said. He shall in no wise lose his reward. Matt. x. 42. I fought the battle bravely which I lost, And lost it but to Macedonians. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cause to part with; to deprive of. [R.] How should you go about to lose him a wife he loves with so much passion Sir W. Temple.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To prevent from gaining or obtaining. O false heart ! thou hadst almost betrayed me to eternal flames, and lost me this glory. Baxter. To lose ground, to fall behind; to suffer gradual loss or disadvantage. lost heart.\" Macaulay. use of one's good sense or judgment. In the excitement of such a discovery, many scholars lost their heads. Whitney. surrounding objects; as, to lose one's self in a great city. (b) To have the perceptive and rational power temporarily suspended; as, we lose ourselves in sleep. land. (b) To overlook; to forget; to fail to perceive; as, he lost sight of the issue.",
           "partOfSpeech": "verb"
         },
         {
@@ -5499,7 +5735,27 @@
       ],
       "relatedWords": []
     },
-    "lothlothlylothsome": {
+    "loth": {
+      "word": "LOTH; LOTHLY; LOTHSOME",
+      "definitions": [
+        {
+          "text": "See Loath, Loathly, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lothly": {
+      "word": "LOTH; LOTHLY; LOTHSOME",
+      "definitions": [
+        {
+          "text": "See Loath, Loathly, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lothsome": {
       "word": "LOTH; LOTHLY; LOTHSOME",
       "definitions": [
         {
@@ -5625,7 +5881,17 @@
       ],
       "relatedWords": []
     },
-    "lotuseaterlotoseater": {
+    "lotuseater": {
+      "word": "LOTUS-EATER; LOTOS-EATER",
+      "definitions": [
+        {
+          "text": "One who ate the fruit or leaf of the lotus, and, as a consequence, gave himself up to indolence and daydreams; one of the Lotophagi. The mild-eyed melancholy Lotos-eaters. Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lotoseater": {
       "word": "LOTUS-EATER; LOTOS-EATER",
       "definitions": [
         {
@@ -5768,6 +6034,10 @@
     "lounge": {
       "word": "LOUNGE",
       "definitions": [
+        {
+          "text": "To spend time lazily, whether lolling or idly sauntering; to pass time indolently; to stand, sit, or recline, in an indolent manner. We lounge over the sciences, dawdle through literature, yawn over politics. J. Hannay.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "An idle gait or stroll; the state of reclining indolently; a place of lounging. She went with Lady Stock to a bookseller's whose shop lounge. Miss Edgeworth.",
           "partOfSpeech": "noun"
@@ -5977,7 +6247,17 @@
       ],
       "relatedWords": []
     },
-    "louverlouvre": {
+    "louver": {
+      "word": "LOUVER; LOUVRE",
+      "definitions": [
+        {
+          "text": "A small lantern. See Lantern, 2 (a) [Written also lover, loover, lovery, and luffer.] Louver boards or boarding, the sloping boards set to shed rainwater outward in openings which are to be left otherwise unfilled; as belfry windows, the openings of a louver, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "louvre": {
       "word": "LOUVER; LOUVRE",
       "definitions": [
         {
@@ -6227,11 +6507,15 @@
         {
           "text": "One who has a strong liking for anything, as books, science, or music. \"A lover of knowledge.\" T. Burnet.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Louver. [Obs.] Bp. Hall.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "loverlovery": {
+    "lovery": {
       "word": "LOVER; LOVERY",
       "definitions": [
         {
@@ -6653,7 +6937,7 @@
       "word": "LOWER-CASE",
       "definitions": [
         {
-          "text": "Pertaining to, or kept in, the lower case; -- used to denote",
+          "text": "Pertaining to, or kept in, the lower case; -- used to denote the small letters, in distinction from capitals and small capitals. See the Note under 1st Case, n., 3.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -6699,7 +6983,17 @@
       ],
       "relatedWords": []
     },
-    "lowghlowh": {
+    "lowgh": {
+      "word": "LOWGH; LOWH",
+      "definitions": [
+        {
+          "text": "strong imp. of Laugh. Etym: [Cf. 1st Low and 2d Lough.] Chaucer.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "lowh": {
       "word": "LOWGH; LOWH",
       "definitions": [
         {
@@ -6759,7 +7053,17 @@
       ],
       "relatedWords": []
     },
-    "lowlihoodlowlihead": {
+    "lowlihood": {
+      "word": "LOWLIHOOD; LOWLIHEAD",
+      "definitions": [
+        {
+          "text": "A lowly state. [R.] Tennyson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lowlihead": {
       "word": "LOWLIHOOD; LOWLIHEAD",
       "definitions": [
         {
@@ -6907,7 +7211,7 @@
       "word": "LOW-SPIRITED",
       "definitions": [
         {
-          "text": "Deficient in animation and courage; dejected; depressed; not",
+          "text": "Deficient in animation and courage; dejected; depressed; not sprightly.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7069,7 +7373,17 @@
       ],
       "relatedWords": []
     },
-    "lozengedlozengeshaped": {
+    "lozenged": {
+      "word": "LOZENGED; LOZENGE-SHAPED",
+      "definitions": [
+        {
+          "text": "Having the form of a lozenge or rhomb. The lozenged panes of a very small latticed window. C. Bronté.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "lozengeshaped": {
       "word": "LOZENGED; LOZENGE-SHAPED",
       "definitions": [
         {

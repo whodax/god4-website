@@ -1,6 +1,62 @@
 {
   "version": "v1",
   "entries": {
+    "esopian": {
+      "word": "AESOPIAN; ESOPIAN",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Æsop, or in his manner.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Same as Æsopian, Æsopic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "esopic": {
+      "word": "AESOPIC; ESOPIC",
+      "definitions": [
+        {
+          "text": "Same as Æsopian.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Same as Æsopian, Æsopic.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "esthesiometer": {
+      "word": "AESTHESIOMETER; ESTHESIOMETER",
+      "definitions": [
+        {
+          "text": "An instrument to measure the degree of sensation, by determining at how short a distance two impressions upon the skin can be distinguished, and thus to determine whether the condition of tactile sensibility is normal or altered.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Æsthesiometer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "esthetics": {
+      "word": "AESTHETICS; ESTHETICS",
+      "definitions": [
+        {
+          "text": "The theory or philosophy of taste; the science of the beautiful in nature and art; esp. that which treats of the expression and embodiment of beauty by art.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Same as Æsthete, Æsthetic, Æsthetical, Æsthetics, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "escalade": {
       "word": "ESCALADE",
       "definitions": [
@@ -148,6 +204,14 @@
     "escape": {
       "word": "ESCAPE",
       "definitions": [
+        {
+          "text": "To flee from and avoid; to be saved or exempt from; to shun; to obtain security from; as, to escape danger. \"Sailors that escaped the wreck.\" Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To avoid the notice of; to pass unobserved by; to evade; as, the fact escaped our attention. They escaped the search of the enemy. Ludlow.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To flee, and become secure from danger; -- often followed by from or out of. Haste, for thy life escape, nor look behindKeble.",
           "partOfSpeech": "verb"
@@ -907,7 +971,17 @@
       ],
       "relatedWords": []
     },
-    "escopetescopette": {
+    "escopet": {
+      "word": "ESCOPET; ESCOPETTE",
+      "definitions": [
+        {
+          "text": "A kind of firearm; a carbine.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "escopette": {
       "word": "ESCOPET; ESCOPETTE",
       "definitions": [
         {
@@ -1087,7 +1161,21 @@
       ],
       "relatedWords": []
     },
-    "escrolescroll": {
+    "escrol": {
+      "word": "ESCROL; ESCROLL",
+      "definitions": [
+        {
+          "text": "A scroll. [Obs.]",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Her.) (a) A long strip or scroll resembling a ribbon or a band of parchment, or the like, anciently placed above the shield, and supporting the crest. (b) In modern heraldry, a similar ribbon on which the motto is inscribed.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "escroll": {
       "word": "ESCROL; ESCROLL",
       "definitions": [
         {
@@ -1411,7 +1499,17 @@
       ],
       "relatedWords": []
     },
-    "eskaresker": {
+    "eskar": {
+      "word": "ESKAR; ESKER",
+      "definitions": [
+        {
+          "text": "See Eschar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "esker": {
       "word": "ESKAR; ESKER",
       "definitions": [
         {
@@ -1507,16 +1605,6 @@
         {
           "text": "That part of the alimentary canal between the pharynx and the stomach; the gullet. See Illust. of Digestive apparatus, under Digestive. [Written also .]",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "esopianesopic": {
-      "word": "ESOPIAN; ESOPIC",
-      "definitions": [
-        {
-          "text": "Same as Æsopian, Æsopic.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1976,7 +2064,7 @@
       "word": "ESPERANTO",
       "definitions": [
         {
-          "text": "An artificial language, intended to be universal, devised by Dr. Zamenhof, a Russian, who adopted the pseudonym \"Dr. Esperanto\" in publishing his first pamphlet regarding it in 1887. The vocabulary is very largely based upon words common to the chief European languages, and sounds peculiar to any one language are eliminated. The spelling",
+          "text": "An artificial language, intended to be universal, devised by Dr. Zamenhof, a Russian, who adopted the pseudonym \"Dr. Esperanto\" in publishing his first pamphlet regarding it in 1887. The vocabulary is very largely based upon words common to the chief European languages, and sounds peculiar to any one language are eliminated. The spelling is phonetic, and the accent (stress) is always on the penult. -- Es`pe*ran\"tist (#), n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2901,7 +2989,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A composition treating of any particular subject; -- usually shorter and less methodical than a formal, finished treatise; as, an essay on the life and writings of Homer; an essay on fossils, or on",
+          "text": "A composition treating of any particular subject; -- usually shorter and less methodical than a formal, finished treatise; as, an essay on the life and writings of Homer; an essay on fossils, or on commerce.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An assay. See Assay, n. [Obs.] disquisition.",
           "partOfSpeech": "noun"
         },
         {
@@ -3850,7 +3942,7 @@
       ],
       "relatedWords": []
     },
-    "essoinessoign": {
+    "essoin": {
       "word": "ESSOIN; ESSOIGN",
       "definitions": [
         {
@@ -3864,16 +3956,28 @@
         {
           "text": "Excuse; exemption. [Obs.] From every work he challenged essoin. Spenser. Essoin day (Eng. Law), the first general return day of the term, on which the court sits to receive essoins. Blackstone.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "To excuse for nonappearance in court. \"I 'll not essoin thee.\" Quarles.",
+          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
     },
-    "essoin": {
-      "word": "ESSOIN",
+    "essoign": {
+      "word": "ESSOIN; ESSOIGN",
       "definitions": [
         {
-          "text": "To excuse for nonappearance in court. \"I 'll not essoin thee.\" Quarles.",
-          "partOfSpeech": "verb"
+          "text": "(Eng. Law)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An excuse for not appearing in court at the return of process; the allegation of an excuse to the court.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Excuse; exemption. [Obs.] From every work he challenged essoin. Spenser. Essoin day (Eng. Law), the first general return day of the term, on which the court sits to receive essoins. Blackstone.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -4335,7 +4439,17 @@
       ],
       "relatedWords": []
     },
-    "estafetestafette": {
+    "estafet": {
+      "word": "ESTAFET; ESTAFETTE",
+      "definitions": [
+        {
+          "text": "A courier who conveys messages to another courier; a military courier sent from one part of an army to another.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "estafette": {
       "word": "ESTAFET; ESTAFETTE",
       "definitions": [
         {
@@ -4562,7 +4676,17 @@
         "you and me"
       ]
     },
-    "estatlichestatly": {
+    "estatlich": {
+      "word": "ESTATLICH; ESTATLY",
+      "definitions": [
+        {
+          "text": "Stately; dignified. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "estatly": {
       "word": "ESTATLICH; ESTATLY",
       "definitions": [
         {
@@ -4863,17 +4987,27 @@
         "volatile oil"
       ]
     },
-    "esthesiometer": {
-      "word": "ESTHESIOMETER",
+    "esthete": {
+      "word": "ESTHETE; ESTHETIC; ESTHETICAL; ESTHETICS",
       "definitions": [
         {
-          "text": "Same as Æsthesiometer.",
+          "text": "Same as Æsthete, Æsthetic, Æsthetical, Æsthetics, etc.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "estheteestheticestheticalesthetics": {
+    "esthetic": {
+      "word": "ESTHETE; ESTHETIC; ESTHETICAL; ESTHETICS",
+      "definitions": [
+        {
+          "text": "Same as Æsthete, Æsthetic, Æsthetical, Æsthetics, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "esthetical": {
       "word": "ESTHETE; ESTHETIC; ESTHETICAL; ESTHETICS",
       "definitions": [
         {
@@ -5524,7 +5658,27 @@
       ],
       "relatedWords": []
     },
-    "estivalestivateestivation": {
+    "estival": {
+      "word": "ESTIVAL; ESTIVATE; ESTIVATION",
+      "definitions": [
+        {
+          "text": "Same as Æstival, Æstivate, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "estivate": {
+      "word": "ESTIVAL; ESTIVATE; ESTIVATION",
+      "definitions": [
+        {
+          "text": "Same as Æstival, Æstivate, etc.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "estivation": {
       "word": "ESTIVAL; ESTIVATE; ESTIVATION",
       "definitions": [
         {
@@ -5586,7 +5740,7 @@
       "word": "ESTOVERS",
       "definitions": [
         {
-          "text": "Necessaries or supples; an allowance to a person out of an estate or other thing for support; as of wood to a tenant for life, etc., of sustenance to a man confined for felony of his estate, or",
+          "text": "Necessaries or supples; an allowance to a person out of an estate or other thing for support; as of wood to a tenant for life, etc., of sustenance to a man confined for felony of his estate, or alimony to a woman divorced out of her husband's estate. Blackstone. Common of estovers. See under Common, n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -6025,48 +6179,6 @@
         {
           "text": "A noun suffix with a diminutive force; as in baronet, pocket, facet, floweret, latchet.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "espacoarseorinferiorkindofflour": {
-      "word": "esp., a coarse or inferior kind of flour.",
-      "definitions": [
-        {
-          "text": "The sixtieth part of a minute of time or of a minute of space, that is, the second regular subdivision of the degree; as, sound moves about 1,140 English feet in a second; five minutes and ten seconds north of this place.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "In the duodecimal system of mensuration, the twelfth part of an inch or prime; a line. See Inch, and Prime, n., 8.",
-          "partOfSpeech": "adjective"
-        },
-        {
-          "text": "(Mus.) (a) The interval between any tone and the tone which is represented on the degree of the staff next above it. (b) The second part in a concerted piece; -- often popularly applied to the alto. Second hand, the hand which marks the seconds on the dial of a watch or a clock.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "esclichiertobreaktopiecesofgermanorigincfohgslizanto": {
-      "word": "esclichier, to break to pieces, of German origin; cf. OHG. slizan to",
-      "definitions": [
-        {
-          "text": "A thin, broad piece cut off; as, a slice of bacon; a slice of cheese; a slice of bread.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "That which is thin and broad, like a slice. Specifically: (a) A broad, thin piece of plaster. (b) A salver, platter, or tray. [Obs.] (c) A knife with a thin, broad blade for taking up or serving fish; also, a spatula for spreading anything, as paint or ink. (d) A plate of iron with a handle, forming a kind of chisel, or a spadelike implement, variously proportioned, and used for various purposes, as for stripping the planking from a vessel's side, for cutting blubber from a whale, or for stirring a fire of coals; a slice bar; a peel; a fire shovel. [Cant] (e) (Shipbuilding) One of the wedges by which the cradle and the ship are lifted clear of the building blocks to prepare for launching. (f) (Printing) A removable sliding bottom to galley. Slice bar, a kind of fire iron resembling a poker, with a broad, flat end, for stirring a fire of coals, and clearing it and the grate bars from clinkers, ashes, etc.; a slice.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "estampidoacracklingakintoestampartostampofgermanorigin": {
-      "word": "estampido a crackling, akin to estampar to stamp, of German origin.",
-      "definitions": [
-        {
-          "text": "A wild, headlong scamper, or running away, of a number of animals; usually caused by fright; hence, any sudden flight or dispersion, as of a crowd or an army in consequence of a panic. She and her husband would join in the general stampede. W. Black.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []

@@ -225,7 +225,17 @@
         "wheedling"
       ]
     },
-    "greasecockgreasecup": {
+    "greasecock": {
+      "word": "GREASE COCK; GREASE CUP",
+      "definitions": [
+        {
+          "text": "A cock or cup containing grease, to serve as a lubricator.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "greasecup": {
       "word": "GREASE COCK; GREASE CUP",
       "definitions": [
         {
@@ -332,6 +342,10 @@
         },
         {
           "text": "(Far.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Affected with the disease called grease; as, the heels of a horse. See Grease, n., 2.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1332,6 +1346,16 @@
       ],
       "relatedWords": []
     },
+    "grecianize": {
+      "word": "GRECIZE; GRECIANIZE",
+      "definitions": [
+        {
+          "text": "To conform to the Greek custom, especially in speech.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "grecism": {
       "word": "GRECISM",
       "definitions": [
@@ -1352,13 +1376,7 @@
         {
           "text": "To translate into Greek.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "grecizegrecianize": {
-      "word": "GRECIZE; GRECIANIZE",
-      "definitions": [
+        },
         {
           "text": "To conform to the Greek custom, especially in speech.",
           "partOfSpeech": "verb"
@@ -1681,7 +1699,7 @@
       ],
       "relatedWords": []
     },
-    "greegreegrigri": {
+    "greegree": {
       "word": "GREEGREE; GRIGRI",
       "definitions": [
         {
@@ -1791,7 +1809,7 @@
       ],
       "relatedWords": []
     },
-    "greekcalendsgreekkalends": {
+    "greekcalends": {
       "word": "GREEK CALENDS; GREEK KALENDS",
       "definitions": [
         {
@@ -1817,6 +1835,16 @@
         {
           "text": "Peculiar to Greece.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "greekkalends": {
+      "word": "GREEK CALENDS; GREEK KALENDS",
+      "definitions": [
+        {
+          "text": "A time that will never come, as the Greeks had no calends.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -2336,7 +2364,17 @@
         "wine merchant"
       ]
     },
-    "greenheadgreenhood": {
+    "greenhead": {
+      "word": "GREENHEAD; GREENHOOD",
+      "definitions": [
+        {
+          "text": "A state of greenness; verdancy. Chaucer.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "greenhood": {
       "word": "GREENHEAD; GREENHOOD",
       "definitions": [
         {
@@ -2492,6 +2530,16 @@
         {
           "text": "A greenish apple, of several varieties, among which the Rhode Island greening is the best known for its fine-grained acid flesh and its excellent keeping quality.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "greenish": {
+      "word": "GREENISH",
+      "definitions": [
+        {
+          "text": "Somewhat green; having a tinge of green; as, a greenish yellow.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3018,6 +3066,10 @@
         {
           "text": "See Grieve, an overseer.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A manager of a farm, or overseer of any work; a reeve; a manorial bailiff. [Scot.] Their children were horsewhipped by the grieve. Sir W. Scott.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3062,9 +3114,23 @@
       ],
       "relatedWords": []
     },
-    "gregarine": {
-      "word": "GREGARINE",
+    "gregarinae": {
+      "word": "GREGARINE; GREGARINAE",
       "definitions": [
+        {
+          "text": "An order of Protozoa, allied to the Rhizopoda, and parasitic in other animals, as in the earthworm, lobster, etc. When adult, they have a small, wormlike body inclosing a nucleus, but without external organs; in one of the young stages, they are amoebiform; -- called also Gregarinida, and Gregarinaria.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gregarine": {
+      "word": "GREGARINE; GREGARINAE",
+      "definitions": [
+        {
+          "text": "An order of Protozoa, allied to the Rhizopoda, and parasitic in other animals, as in the earthworm, lobster, etc. When adult, they have a small, wormlike body inclosing a nucleus, but without external organs; in one of the young stages, they are amoebiform; -- called also Gregarinida, and Gregarinaria.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Of or pertaining to the Gregarinæ.",
           "partOfSpeech": "adjective"
@@ -3072,16 +3138,6 @@
         {
           "text": "One of the Gregarinæ.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "gregarinegregarinae": {
-      "word": "GREGARINE; GREGARINAE",
-      "definitions": [
-        {
-          "text": "An order of Protozoa, allied to the Rhizopoda, and parasitic in other animals, as in the earthworm, lobster, etc. When adult, they have a small, wormlike body inclosing a nucleus, but without external organs; in one of the young stages, they are amoebiform; -- called also Gregarinida, and Gregarinaria.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3100,7 +3156,7 @@
       "word": "GREGARIOUS",
       "definitions": [
         {
-          "text": "Habitually living or moving in flocks or herds; tending to flock or herd together; not habitually solitary or living alone. Burke.",
+          "text": "Habitually living or moving in flocks or herds; tending to flock or herd together; not habitually solitary or living alone. Burke. No birds of prey are gregarious. Ray.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3156,7 +3212,7 @@
         "windy"
       ]
     },
-    "gregegregge": {
+    "grege": {
       "word": "GREGE; GREGGE",
       "definitions": [
         {
@@ -3166,7 +3222,27 @@
       ],
       "relatedWords": []
     },
-    "greggoegrego": {
+    "gregge": {
+      "word": "GREGE; GREGGE",
+      "definitions": [
+        {
+          "text": "To make heavy; to increase. [Obs.] Wyclif.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "greggoe": {
+      "word": "GREGGOE; GREGO",
+      "definitions": [
+        {
+          "text": "A short jacket or cloak, made of very thick, coarse cloth, with a hood attached, worn by the Greeks and others in the Levant. [Written also griego.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "grego": {
       "word": "GREGGOE; GREGO",
       "definitions": [
         {
@@ -3391,7 +3467,7 @@
       ],
       "relatedWords": []
     },
-    "gressorialgressorious": {
+    "gressorial": {
       "word": "GRESSORIAL; GRESSORIOUS",
       "definitions": [
         {
@@ -3401,7 +3477,27 @@
       ],
       "relatedWords": []
     },
-    "gretgrete": {
+    "gressorious": {
+      "word": "GRESSORIAL; GRESSORIOUS",
+      "definitions": [
+        {
+          "text": "Adapted for walking; anisodactylous; as the feet of certain birds and insects. See Illust. under Aves.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "gret": {
+      "word": "GRET; GRETE",
+      "definitions": [
+        {
+          "text": "Great. [Obs.] Chaucer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "grete": {
       "word": "GRET; GRETE",
       "definitions": [
         {
@@ -3441,7 +3537,7 @@
       ],
       "relatedWords": []
     },
-    "grewsomegruesome": {
+    "grewsome": {
       "word": "GREWSOME; GRUESOME",
       "definitions": [
         {

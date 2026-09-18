@@ -167,7 +167,7 @@
       "word": "DISSATISFACTORY",
       "definitions": [
         {
-          "text": "Causing dissatisfaction; unable to give content; unsatisfactory; displeasing. To have reduced the different qualifications in the different States to one uniform rule, would probably have been as dissatisfactory to",
+          "text": "Causing dissatisfaction; unable to give content; unsatisfactory; displeasing. To have reduced the different qualifications in the different States to one uniform rule, would probably have been as dissatisfactory to some of the States, as difficult for the Convention. A. Hamilton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -545,6 +545,16 @@
         {
           "text": "One who dissembles; one who conceals his opinions or dispositions under a false appearance; a hypocrite. It is the weakest sort of politicians that are the greatest dissemblers. Bacon. Priests, princes, women, no dissemblers here. Pope. reference to his concealment of his real character, and a hypocrite with reference to his assumption of a false character. But hypocrite is the stronger word, being commonly used to characterize a person who is habitually insincere and false, especially one who makes professions of goodness when his aims are selfish and his life corrupt.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dissembling": {
+      "word": "DISSEMBLING",
+      "definitions": [
+        {
+          "text": "That dissembles; hypocritical; false.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1516,7 +1526,7 @@
       "word": "DISSENTIOUS",
       "definitions": [
         {
-          "text": "Marked by dissensions; apt to breed discord; quarrelsome;",
+          "text": "Marked by dissensions; apt to breed discord; quarrelsome; contentious; factious.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1715,7 +1725,7 @@
       "word": "DISSERVICEABLE",
       "definitions": [
         {
-          "text": "Calculated to do disservice or harm; not serviceable;",
+          "text": "Calculated to do disservice or harm; not serviceable; injurious; harmful; unserviceable. Shaftesbury.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2058,7 +2068,17 @@
       ],
       "relatedWords": []
     },
-    "dissiliencedissiliency": {
+    "dissilience": {
+      "word": "DISSILIENCE; DISSILIENCY",
+      "definitions": [
+        {
+          "text": "The act of leaping or starting asunder. Johnson.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "dissiliency": {
       "word": "DISSILIENCE; DISSILIENCY",
       "definitions": [
         {
@@ -3496,7 +3516,7 @@
       "word": "DISSOLVABLE",
       "definitions": [
         {
-          "text": "Capable of being dissolved, or separated into component parts;",
+          "text": "Capable of being dissolved, or separated into component parts; capable of being liquefied; soluble. Though everything which is compacted be in its own nature dissolvable. Cudworth. Such things as are not dissolvable by the moisture of the tongue. Sir I. Newton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -3777,6 +3797,35 @@
         }
       ],
       "relatedWords": []
+    },
+    "dissolving": {
+      "word": "DISSOLVING",
+      "definitions": [
+        {
+          "text": "Melting; breaking up; vanishing. and is gradually replaced by another on the same field; -- an effect produced by magic lanterns.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "colliquative",
+        "disappearing",
+        "dissolutional",
+        "dissolutive",
+        "evanescent",
+        "evaporating",
+        "fading",
+        "fleeting",
+        "flying",
+        "fugitive",
+        "fusing",
+        "liquefactive",
+        "liquefying",
+        "melting",
+        "passing",
+        "thawing",
+        "transient",
+        "vanishing"
+      ]
     },
     "dissonance": {
       "word": "DISSONANCE",
@@ -4094,7 +4143,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "A dissuasive argument or counsel; dissuasion; dehortation.",
+          "text": "A dissuasive argument or counsel; dissuasion; dehortation. Prynne.",
           "partOfSpeech": "adjective"
         }
       ],

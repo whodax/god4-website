@@ -1096,7 +1096,17 @@
       ],
       "relatedWords": []
     },
-    "abannationabannition": {
+    "abannation": {
+      "word": "ABANNATION; ABANNITION",
+      "definitions": [
+        {
+          "text": "Banishment. [Obs.] Bailey.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abannition": {
       "word": "ABANNATION; ABANNITION",
       "definitions": [
         {
@@ -1332,7 +1342,17 @@
       ],
       "relatedWords": []
     },
-    "abassiabassis": {
+    "abassi": {
+      "word": "ABASSI; ABASSIS",
+      "definitions": [
+        {
+          "text": "A silver coin of Persia, worth about twenty cents.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abassis": {
       "word": "ABASSI; ABASSIS",
       "definitions": [
         {
@@ -1772,7 +1792,74 @@
       ],
       "relatedWords": []
     },
-    "abatisabattis": {
+    "abatis": {
+      "word": "ABATIS; ABATTIS",
+      "definitions": [
+        {
+          "text": "A means of defense formed by felled trees, the ends of whose branches are sharpened and directed outwards, or against the enemy.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "advanced work",
+        "balistraria",
+        "bank",
+        "banquette",
+        "barbed-wire entanglement",
+        "barbican",
+        "barricade",
+        "barrier",
+        "bartizan",
+        "bastion",
+        "battlement",
+        "breastwork",
+        "bulwark",
+        "casemate",
+        "cheval-de-frise",
+        "circumvallation",
+        "contravallation",
+        "counterscarp",
+        "curtain",
+        "demibastion",
+        "dike",
+        "drawbridge",
+        "earthwork",
+        "enclosure",
+        "entanglement",
+        "escarp",
+        "escarpment",
+        "fence",
+        "fieldwork",
+        "fortalice",
+        "fortification",
+        "glacis",
+        "loophole",
+        "lunette",
+        "machicolation",
+        "mantelet",
+        "merlon",
+        "mound",
+        "outwork",
+        "palisade",
+        "parados",
+        "parapet",
+        "portcullis",
+        "postern gate",
+        "rampart",
+        "ravelin",
+        "redan",
+        "redoubt",
+        "sally port",
+        "scarp",
+        "sconce",
+        "stockade",
+        "tenaille",
+        "vallation",
+        "vallum",
+        "work"
+      ]
+    },
+    "abattis": {
       "word": "ABATIS; ABATTIS",
       "definitions": [
         {
@@ -1842,7 +1929,17 @@
       ],
       "relatedWords": []
     },
-    "abaxialabaxile": {
+    "abaxial": {
+      "word": "ABAXIAL; ABAXILE",
+      "definitions": [
+        {
+          "text": "Away from the axis or central line; eccentric. Balfour.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abaxile": {
       "word": "ABAXIAL; ABAXILE",
       "definitions": [
         {
@@ -3013,6 +3110,10 @@
         {
           "text": "One engaged in teaching the alphabet. Wood.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Pertaining to, or formed by, the letters of the alphabet; alphabetic; hence, rudimentary. Abecedarian psalms, hymns, etc., compositions in which (like the 119th psalm in Hebrew) distinct portions or verses commence with successive letters of the alphabet. Hook.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -3142,19 +3243,13 @@
         "ur"
       ]
     },
-    "abecedarianabecedary": {
+    "abecedary": {
       "word": "ABECEDARIAN; ABECEDARY",
       "definitions": [
         {
           "text": "Pertaining to, or formed by, the letters of the alphabet; alphabetic; hence, rudimentary. Abecedarian psalms, hymns, etc., compositions in which (like the 119th psalm in Hebrew) distinct portions or verses commence with successive letters of the alphabet. Hook.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "abecedary": {
-      "word": "ABECEDARY",
-      "definitions": [
+        },
         {
           "text": "A primer; the first principle or rudiment of anything. [R.] Fuller.",
           "partOfSpeech": "noun"
@@ -3225,7 +3320,27 @@
       ],
       "relatedWords": []
     },
-    "abelianabeliteabelonian": {
+    "abelian": {
+      "word": "ABELIAN; ABELITE; ABELONIAN",
+      "definitions": [
+        {
+          "text": "One of a sect in Africa (4th century), mentioned by St. Augustine, who states that they married, but lived in continence, after the manner, as they pretended, of Abel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abelite": {
+      "word": "ABELIAN; ABELITE; ABELONIAN",
+      "definitions": [
+        {
+          "text": "One of a sect in Africa (4th century), mentioned by St. Augustine, who states that they married, but lived in continence, after the manner, as they pretended, of Abel.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abelonian": {
       "word": "ABELIAN; ABELITE; ABELONIAN",
       "definitions": [
         {
@@ -3265,7 +3380,17 @@
       ],
       "relatedWords": []
     },
-    "aberranceaberrancy": {
+    "aberrance": {
+      "word": "ABERRANCE; ABERRANCY",
+      "definitions": [
+        {
+          "text": "State of being aberrant; a wandering from the right way; deviation from truth, rectitude, etc. Aberrancy of curvature (Geom.), the deviation of a curve from a circular form.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "aberrancy": {
       "word": "ABERRANCE; ABERRANCY",
       "definitions": [
         {
@@ -3875,7 +4000,7 @@
       ],
       "relatedWords": []
     },
-    "abetterabettor": {
+    "abetter": {
       "word": "ABETTER; ABETTOR",
       "definitions": [
         {
@@ -3884,6 +4009,90 @@
         }
       ],
       "relatedWords": []
+    },
+    "abettor": {
+      "word": "ABETTER; ABETTOR",
+      "definitions": [
+        {
+          "text": "One who abets; an instigator of an offense or an offender. degrees of complicity in some deed or crime. An abettor is one who incites or encourages to the act, without sharing in its performance. An accessory supposes a principal offender. One who is neither the chief actor in an offense, nor present at its performance, but accedes to or becomes involved in its guilt, either by some previous or subsequent act, as of instigating, encouraging, aiding, or concealing, etc., is an accessory. An accomplice is one who participates in the commission of an offense, whether as principal or accessory. Thus in treason, there are no abettors or accessories, but all are held to be principals or accomplices.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Maecenas",
+        "accessory",
+        "accomplice",
+        "accomplice in crime",
+        "actuator",
+        "admirer",
+        "advocate",
+        "aficionado",
+        "angel",
+        "animator",
+        "apologist",
+        "backer",
+        "buff",
+        "cajoler",
+        "champion",
+        "coax",
+        "coaxer",
+        "coconspirator",
+        "cohort",
+        "confederate",
+        "conspirator",
+        "defender",
+        "dependence",
+        "encourager",
+        "endorser",
+        "energizer",
+        "exponent",
+        "fan",
+        "favorer",
+        "fellow conspirator",
+        "firer",
+        "friend at court",
+        "gadfly",
+        "galvanizer",
+        "impeller",
+        "inducer",
+        "inspirer",
+        "lover",
+        "mainstay",
+        "maintainer",
+        "mover",
+        "moving spirit",
+        "paranymph",
+        "partisan",
+        "patron",
+        "persuader",
+        "pleader",
+        "prime mover",
+        "promoter",
+        "prompter",
+        "protagonist",
+        "reliance",
+        "second",
+        "seconder",
+        "sectary",
+        "sider",
+        "socius criminis",
+        "spark",
+        "spark plug",
+        "sparker",
+        "sponsor",
+        "stalwart",
+        "standby",
+        "stimulator",
+        "support",
+        "supporter",
+        "sustainer",
+        "sympathizer",
+        "tempter",
+        "upholder",
+        "votary",
+        "well-wisher",
+        "wheedler"
+      ]
     },
     "abevacuation": {
       "word": "ABEVACUATION",
@@ -4612,7 +4821,17 @@
       ],
       "relatedWords": []
     },
-    "abietinabietine": {
+    "abietin": {
+      "word": "ABIETIN; ABIETINE",
+      "definitions": [
+        {
+          "text": "A resinous obtained from Strasburg turpentine or Canada balsam. It is without taste or smell, is insoluble in water, but soluble in alcohol (especially at the boiling point), in strong acetic acid, and in ether. Watts.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abietine": {
       "word": "ABIETIN; ABIETINE",
       "definitions": [
         {
@@ -4805,7 +5024,17 @@
         "workmanship"
       ]
     },
-    "abimeabyme": {
+    "abime": {
+      "word": "ABIME; ABYME",
+      "definitions": [
+        {
+          "text": "A abyss. [Obs.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abyme": {
       "word": "ABIME; ABYME",
       "definitions": [
         {
@@ -5847,6 +6076,10 @@
         {
           "text": "To vouch for. \"I 'll able them.\" Shak.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "An adjective suffix now usually in a passive sense; able to be; fit to be; expressing capacity or worthiness in a passive sense; as, movable, able to be moved; amendable, able to be amended; blamable, fit to be blamed; salable. -ible. \"Yet a rule may be laid down as to when we are to use it. To all verbs, then, from the Anglo-Saxon, to all based on the uncorrupted infinitival stems of Latin verbs of the first conjugation, and to all substantives, whencesoever sprung, we annex - able only.\" Fitzed. Hall.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": [
@@ -5929,16 +6162,6 @@
         "worthy"
       ]
     },
-    "ableableibleible": {
-      "word": "ABLE; -ABLE; IBLE; -IBLE",
-      "definitions": [
-        {
-          "text": "An adjective suffix now usually in a passive sense; able to be; fit to be; expressing capacity or worthiness in a passive sense; as, movable, able to be moved; amendable, able to be amended; blamable, fit to be blamed; salable. -ible. \"Yet a rule may be laid down as to when we are to use it. To all verbs, then, from the Anglo-Saxon, to all based on the uncorrupted infinitival stems of Latin verbs of the first conjugation, and to all substantives, whencesoever sprung, we annex - able only.\" Fitzed. Hall.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "ablebodied": {
       "word": "ABLE-BODIED",
       "definitions": [
@@ -5973,6 +6196,16 @@
       ],
       "relatedWords": []
     },
+    "ableminded": {
+      "word": "ABLE-MINDED",
+      "definitions": [
+        {
+          "text": "Having much intellectual power.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "ableness": {
       "word": "ABLENESS",
       "definitions": [
@@ -5993,7 +6226,31 @@
       ],
       "relatedWords": []
     },
-    "abletablen": {
+    "abler": {
+      "word": "ABLER",
+      "definitions": [
+        {
+          "text": "comp. of Able.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "superl. of Able.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ablet": {
+      "word": "ABLET; ABLEN",
+      "definitions": [
+        {
+          "text": "A small fresh-water fish (Leuciscus alburnus); the bleak.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ablen": {
       "word": "ABLET; ABLEN",
       "definitions": [
         {
@@ -6028,6 +6285,10 @@
       "definitions": [
         {
           "text": "Perhaps. [Scot.]",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "text": "Perhaps; possibly. [Scotch] Burns.",
           "partOfSpeech": "adverb"
         }
       ],
@@ -7178,7 +7439,17 @@
       ],
       "relatedWords": []
     },
-    "abomasumabomasus": {
+    "abomasum": {
+      "word": "ABOMASUM; ABOMASUS",
+      "definitions": [
+        {
+          "text": "The fourth or digestive stomach of a ruminant, which leads from the third stomach omasum. See Ruminantia.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abomasus": {
       "word": "ABOMASUM; ABOMASUS",
       "definitions": [
         {
@@ -8268,7 +8539,7 @@
           "partOfSpeech": "preposition"
         },
         {
-          "text": "Surpassing in number or quantity; more than; as, above a hundred. (Passing into the adverbial sense. See Above, adv., 4.) above all,",
+          "text": "Surpassing in number or quantity; more than; as, above a hundred. (Passing into the adverbial sense. See Above, adv., 4.) above all, before every other consideration; chiefly; in preference to other things. Over and above, prep. or adv., besides; in addition to.",
           "partOfSpeech": "preposition"
         },
         {
@@ -8476,7 +8747,17 @@
       ],
       "relatedWords": []
     },
-    "abovementionedabovenamed": {
+    "abovementioned": {
+      "word": "ABOVE-MENTIONED; ABOVE-NAMED",
+      "definitions": [
+        {
+          "text": "Mentioned or named before; aforesaid.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abovenamed": {
       "word": "ABOVE-MENTIONED; ABOVE-NAMED",
       "definitions": [
         {
@@ -8712,7 +8993,7 @@
       ],
       "relatedWords": []
     },
-    "abrahamiticabrahamitical": {
+    "abrahamitic": {
       "word": "ABRAHAMITIC; ABRAHAMITICAL",
       "definitions": [
         {
@@ -8722,7 +9003,27 @@
       ],
       "relatedWords": []
     },
-    "abrahammanabramman": {
+    "abrahamitical": {
+      "word": "ABRAHAMITIC; ABRAHAMITICAL",
+      "definitions": [
+        {
+          "text": "Relating to the patriarch Abraham.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abrahamman": {
+      "word": "ABRAHAM-MAN; ABRAM-MAN",
+      "definitions": [
+        {
+          "text": "One of a set of vagabonds who formerly roamed through England, feigning lunacy for the sake of obtaining alms. Nares. To sham Abraham, to feign sickness. Goldsmith.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abramman": {
       "word": "ABRAHAM-MAN; ABRAM-MAN",
       "definitions": [
         {
@@ -8987,7 +9288,17 @@
         "wearing away"
       ]
     },
-    "abraumabraumsalts": {
+    "abraum": {
+      "word": "ABRAUM; ABRAUM SALTS",
+      "definitions": [
+        {
+          "text": "A red ocher used to darken mahogany and for making chloride of potassium.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abraumsalts": {
       "word": "ABRAUM; ABRAUM SALTS",
       "definitions": [
         {
@@ -10492,6 +10803,80 @@
       ],
       "relatedWords": []
     },
+    "absentminded": {
+      "word": "ABSENT-MINDED",
+      "definitions": [
+        {
+          "text": "Absent in mind; abstracted; preoccupied.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "Lethean",
+        "absent",
+        "absorbed",
+        "abstracted",
+        "amnestic",
+        "bemused",
+        "blocked",
+        "castle-building",
+        "converted",
+        "daydreaming",
+        "daydreamy",
+        "distracted",
+        "distrait",
+        "dreaming",
+        "dreamy",
+        "drowsing",
+        "ecstatic",
+        "elsewhere",
+        "engrossed",
+        "faraway",
+        "forgetful",
+        "forgetting",
+        "half-awake",
+        "heedless",
+        "in a reverie",
+        "in a trance",
+        "in the clouds",
+        "inadvertent",
+        "inattentive",
+        "inclined to forget",
+        "lost",
+        "lost in thought",
+        "meditative",
+        "mooning",
+        "moonraking",
+        "museful",
+        "musing",
+        "napping",
+        "nodding",
+        "oblivious",
+        "off",
+        "pensive",
+        "pipe-dreaming",
+        "preoccupied",
+        "rapt",
+        "repressed",
+        "somewhere else",
+        "stargazing",
+        "suppressed",
+        "taken up",
+        "transported",
+        "unaware",
+        "unconscious",
+        "unheedful",
+        "unheeding",
+        "unmindful",
+        "unnoticing",
+        "unobserving",
+        "unperceiving",
+        "unseeing",
+        "withdrawn",
+        "woolgathering",
+        "wrapped in thought"
+      ]
+    },
     "absentness": {
       "word": "ABSENTNESS",
       "definitions": [
@@ -10522,7 +10907,21 @@
       ],
       "relatedWords": []
     },
-    "absintheabsinth": {
+    "absinthe": {
+      "word": "ABSINTHE; ABSINTH",
+      "definitions": [
+        {
+          "text": "The plant absinthium or common wormwood.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A strong spirituous liqueur made from wormwood and brandy or alcohol.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "absinth": {
       "word": "ABSINTHE; ABSINTH",
       "definitions": [
         {
@@ -11937,6 +12336,51 @@
         }
       ],
       "relatedWords": []
+    },
+    "absorbing": {
+      "word": "ABSORBING",
+      "definitions": [
+        {
+          "text": "Swallowing, engrossing; as, an absorbing pursuit.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "acute",
+        "arresting",
+        "attractive",
+        "captivating",
+        "consuming",
+        "deep",
+        "deep-felt",
+        "deepgoing",
+        "enchanting",
+        "engaging",
+        "engrossing",
+        "enthralling",
+        "fascinating",
+        "gripping",
+        "heartfelt",
+        "holding",
+        "homefelt",
+        "hypnotic",
+        "indelible",
+        "keen",
+        "magnetic",
+        "mesmeric",
+        "mesmerizing",
+        "monopolizing",
+        "obsessing",
+        "obsessive",
+        "penetrating",
+        "pervading",
+        "piercing",
+        "poignant",
+        "profound",
+        "riveting",
+        "sharp",
+        "spellbinding"
+      ]
     },
     "absorbition": {
       "word": "ABSORBITION",
@@ -15090,7 +15534,21 @@
       ],
       "relatedWords": []
     },
-    "abyabye": {
+    "aby": {
+      "word": "ABY; ABYE",
+      "definitions": [
+        {
+          "text": "To pay for; to suffer for; to atone for; to make amends for; to give satisfaction. [Obs.] Lest to thy peril thou aby it dear. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To endure; to abide. [Obs.] But nought that wanteth rest can long aby. Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "abye": {
       "word": "ABY; ABYE",
       "definitions": [
         {
@@ -15343,52 +15801,6 @@
         {
           "text": "A member of the Abyssinian Church.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "abubblingmotionfrombullabubbleakintogrlithbumbuls": {
-      "word": "a bubbling motion, from bulla bubble; akin to Gr. , Lith. bumbuls.",
-      "definitions": [
-        {
-          "text": "To be agitated, or tumultuously moved, as a liquid by the generation and rising of bubbles of steam (or vapor), or of currents produced by heating it to the boiling point; to be in a state of ebullition; as, the water boils.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To be agitated like boiling water, by any other cause than heat; to bubble; to effervesce; as, the boiling waves. He maketh the deep to boil like a pot. Job xii. 31.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To pass from a liquid to an aëriform state or vapor when heated; as, the water boils away.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To be moved or excited with passion; to be hot or fervid; as, his blood boils with anger. Then boiled my breast with flame and burning wrath. Surrey.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To be in boiling water, as in cooking; as, the potatoes are boiling. To boil away, to vaporize; to evaporate or be evaporated by the action of heat. thrown into violent agitation by heat or other cause of effervescence; to be excited with ardor or passion so as to lose self-control.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "aboutpatrolfrpatteapawcfdpootpawgpfoteande": {
-      "word": "about, patrol, fr. patte a paw; cf. D. poot paw, G. pfote, and E.",
-      "definitions": [
-        {
-          "text": "To go the rounds along a chain of sentinels; to traverse a police district or beat.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "aboutfrequentlytoturnovertobeengagedinathingpassiveof": {
-      "word": "about frequently, to turn over, to be engaged in a thing, passive of",
-      "definitions": [
-        {
-          "text": "Acquainted or familiar, as the result of experience, study, practice, etc.; skilled; practiced. Deep versed in books and shallow in himself. Milton. Opinions . . . derived from studying the Scriptures, wherein he was versed beyond any person of his age. Southey. These men were versed in the details of business. Macaulay.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

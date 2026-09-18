@@ -179,6 +179,16 @@
       ],
       "relatedWords": []
     },
+    "oldwomanish": {
+      "word": "OLD-WOMANISH",
+      "definitions": [
+        {
+          "text": "Like an old woman; anile.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "olea": {
       "word": "OLEA",
       "definitions": [
@@ -445,13 +455,23 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A liquid or semiliquid preparation extracted (as from capsicum, cubebs, or ginger) by means of ether, and consisting of fixed or",
+          "text": "A liquid or semiliquid preparation extracted (as from capsicum, cubebs, or ginger) by means of ether, and consisting of fixed or volatile oil holding resin in solution.",
           "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "oleoseoleous": {
+    "oleose": {
+      "word": "OLEOSE; OLEOUS",
+      "definitions": [
+        {
+          "text": "Oily. [R.] Ray. Floyer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "oleous": {
       "word": "OLEOSE; OLEOUS",
       "definitions": [
         {
@@ -565,7 +585,17 @@
       ],
       "relatedWords": []
     },
-    "olidolidous": {
+    "olid": {
+      "word": "OLID; OLIDOUS",
+      "definitions": [
+        {
+          "text": "Having a strong, disagreeable smell; fetid. [Obs.] Boyle. Sir T. Browne.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "olidous": {
       "word": "OLID; OLIDOUS",
       "definitions": [
         {
@@ -629,7 +659,17 @@
       ],
       "relatedWords": []
     },
-    "oligarchicoligarchical": {
+    "oligarchic": {
+      "word": "OLIGARCHIC; OLIGARCHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to oligarchy, or government by a few. \"Oligarchical exiles.\" Jowett (Thucyd. ).",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "oligarchical": {
       "word": "OLIGARCHIC; OLIGARCHICAL",
       "definitions": [
         {
@@ -665,11 +705,15 @@
         {
           "text": "Hematite or specular iron ore; -- prob. so called in allusion to its feeble magnetism, as compared with magnetite.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to hematite.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "oligistoligistic": {
+    "oligistic": {
       "word": "OLIGIST; OLIGISTIC",
       "definitions": [
         {
@@ -1073,7 +1117,17 @@
       ],
       "relatedWords": []
     },
-    "olympianolympic": {
+    "olympian": {
+      "word": "OLYMPIAN; OLYMPIC",
+      "definitions": [
+        {
+          "text": "Of or pertaining to Olympus, a mountain of Thessaly, fabled as the seat of the gods, or to Olympia, a small plain in Elis. Olympic games, or Olympics (Greek Antiq.), the greatest of the national festivals of the ancient Greeks, consisting of athletic games and races, dedicated to Olympian Zeus, celebrated once in four years at Olympia, and continuing five days.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "olympic": {
       "word": "OLYMPIAN; OLYMPIC",
       "definitions": [
         {
@@ -1093,7 +1147,17 @@
       ],
       "relatedWords": []
     },
-    "olympicgamesolympiangames": {
+    "olympicgames": {
+      "word": "OLYMPIC GAMES; OLYMPIAN GAMES",
+      "definitions": [
+        {
+          "text": "A modified revival of the ancient Olympian games, consisting of international athletic games, races, etc., now held once in four years, the first having been at Athens in 1896.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "olympiangames": {
       "word": "OLYMPIC GAMES; OLYMPIAN GAMES",
       "definitions": [
         {

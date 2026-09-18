@@ -235,7 +235,7 @@
       "word": "UNBECOMING",
       "definitions": [
         {
-          "text": "Not becoming; unsuitable; unfit; indecorous; improper.",
+          "text": "Not becoming; unsuitable; unfit; indecorous; improper. My grief lets unbecoming speeches fall. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -291,7 +291,17 @@
       ],
       "relatedWords": []
     },
-    "unbegotunbegotten": {
+    "unbegot": {
+      "word": "UNBEGOT; UNBEGOTTEN",
+      "definitions": [
+        {
+          "text": "Not begot; not yet generated; also, having never been generated; self-existent; eternal.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unbegotten": {
       "word": "UNBEGOT; UNBEGOTTEN",
       "definitions": [
         {
@@ -397,7 +407,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Believing the thing alleged no to be true; disbelieving; especially, believing that Bible is not a divine revelation, or that Christ was not a divine or a supernatural person. \"Unbelieving Jews.\"",
+          "text": "Believing the thing alleged no to be true; disbelieving; especially, believing that Bible is not a divine revelation, or that Christ was not a divine or a supernatural person. \"Unbelieving Jews.\" Acts xiv. 2.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -455,7 +465,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Devoted to relaxation or amusement. [R.]",
+          "text": "Devoted to relaxation or amusement. [R.] It may entertain your lordships at an unbending hour. Rowe.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -521,6 +531,16 @@
       ],
       "relatedWords": []
     },
+    "unbeseeming": {
+      "word": "UNBESEEMING",
+      "definitions": [
+        {
+          "text": "Unbecoming; not befitting.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "unbespeak": {
       "word": "UNBESPEAK",
       "definitions": [
@@ -571,7 +591,35 @@
       ],
       "relatedWords": []
     },
-    "unbidunbidden": {
+    "unbiased": {
+      "word": "UNBIASED",
+      "definitions": [
+        {
+          "text": "Free from bias or prejudice; unprejudiced; impartial.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unbid": {
+      "word": "UNBID; UNBIDDEN",
+      "definitions": [
+        {
+          "text": "Not bidden; not commanded. Thorns also and thistles it shall bring thee forth Unbid; and thou shalt eat the herb of the field. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Uninvited; as, unbidden guests. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Being without a prayer. [Obs.] Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unbidden": {
       "word": "UNBID; UNBIDDEN",
       "definitions": [
         {
@@ -639,7 +687,17 @@
       ],
       "relatedWords": []
     },
-    "unblessedunblest": {
+    "unblessed": {
+      "word": "UNBLESSED; UNBLEST",
+      "definitions": [
+        {
+          "text": "Not blest; excluded from benediction; hence, accursed; wretched. \"Unblessed enchanter.\" Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unblest": {
       "word": "UNBLESSED; UNBLEST",
       "definitions": [
         {
@@ -684,6 +742,16 @@
       "definitions": [
         {
           "text": "Not bloody. Dryden. Unbloody sacrifice. (a) A sacrifice in which no victim is slain. (b) (R. C. Ch.) The Mass.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "unblushing": {
+      "word": "UNBLUSHING",
+      "definitions": [
+        {
+          "text": "Not blushing; shameless.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -847,7 +915,7 @@
       "word": "UNBOUNDED",
       "definitions": [
         {
-          "text": "Having no bound or limit; as, unbounded space; an, unbounded",
+          "text": "Having no bound or limit; as, unbounded space; an, unbounded ambition. Addison.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1007,7 +1075,7 @@
       "word": "UNBRIDLED",
       "definitions": [
         {
-          "text": "Loosed from the bridle, or as from the bridle; hence, unrestrained; licentious; violent; as, unbridled passions. \"Unbridled boldness.\" B. Jonson.",
+          "text": "Loosed from the bridle, or as from the bridle; hence, unrestrained; licentious; violent; as, unbridled passions. \"Unbridled boldness.\" B. Jonson. Lands deluged by unbridled floods. Wordsworth.",
           "partOfSpeech": "adjective"
         }
       ],

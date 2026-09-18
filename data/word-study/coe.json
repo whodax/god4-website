@@ -11,6 +11,16 @@
       ],
       "relatedWords": []
     },
+    "coeducation": {
+      "word": "COEDUCATION",
+      "definitions": [
+        {
+          "text": "An educating together, as of persons of different sexes or races. Co*ed`u*ca\"tion*al (, a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "coefficacy": {
       "word": "COEFFICACY",
       "definitions": [
@@ -132,7 +142,17 @@
       ],
       "relatedWords": []
     },
-    "coelenteracoelenterata": {
+    "coelentera": {
+      "word": "COELENTERA; COELENTERATA",
+      "definitions": [
+        {
+          "text": "A comprehensive group of Invertebrata, mostly marine, comprising the Anthozoa, Hydrozoa, and Ctenophora. The name implies that the stomach and body cavities are one. The group is sometimes enlarged so as to include the sponges.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coelenterata": {
       "word": "COELENTERA; COELENTERATA",
       "definitions": [
         {
@@ -166,7 +186,7 @@
       ],
       "relatedWords": []
     },
-    "coeliacceliac": {
+    "coeliac": {
       "word": "COELIAC; CELIAC",
       "definitions": [
         {
@@ -230,7 +250,17 @@
       ],
       "relatedWords": []
     },
-    "coenenchymcoenenchyma": {
+    "coenenchym": {
+      "word": "COENENCHYM; COENENCHYMA",
+      "definitions": [
+        {
+          "text": "The common tissue which unites the polyps or zooids of a compound anthozoan or coral. It may be soft or more or less ossified. See Coral.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "coenenchyma": {
       "word": "COENENCHYM; COENENCHYMA",
       "definitions": [
         {
@@ -467,6 +497,16 @@
         "weigh heavy on"
       ]
     },
+    "coercible": {
+      "word": "COERCIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being coerced.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "coercion": {
       "word": "COERCION",
       "definitions": [
@@ -516,12 +556,32 @@
       ],
       "relatedWords": []
     },
+    "coercive": {
+      "word": "COERCIVE",
+      "definitions": [
+        {
+          "text": "Serving or intended to coerce; having power to constrain. Coercive power can only influence us to outward practice. Bp. Warburton. Coercive or Coercitive force (Magnetism), the power or force which in iron or steel produces a slowness or difficulty in imparting magnetism to it, and also interposes an obstacle to the return of a bar to its natural state when active magnetism has ceased. It plainly depends on the molecular constitution of the metal. Nichol. The power of resisting magnetization or demagnization is sometimes called coercive force. S. Thompson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "coerulignone": {
       "word": "COERULIGNONE",
       "definitions": [
         {
           "text": "A bluish violet, crystalline substance obtained in the purification of crude wood vinegar. It is regarded as a complex quinone derivative of diphenyl; -- called also cedriret.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "coessential": {
+      "word": "COESSENTIAL",
+      "definitions": [
+        {
+          "text": "Partaking of the same essence. We bless and magnify that coessential Spirit, eternally proceeding from both [The Father and the Son]. Hooker.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -570,11 +630,78 @@
       "word": "COETANEOUS",
       "definitions": [
         {
-          "text": "Of the same age; beginning to exist at the same time;",
+          "text": "Of the same age; beginning to exist at the same time; contemporaneous. And all [members of the body] are coetaneous. Bentley.",
           "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
+    },
+    "coeternal": {
+      "word": "COETERNAL",
+      "definitions": [
+        {
+          "text": "Equally eternal. Hail, holy Light, offspring of Heaven first born! Or of the Eternal coeternal beam. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "accompanying",
+        "ageless",
+        "agreeing",
+        "ceaseless",
+        "coetaneous",
+        "coeval",
+        "coexistent",
+        "coexisting",
+        "coinstantaneous",
+        "collateral",
+        "concomitant",
+        "concurrent",
+        "constant",
+        "contemporaneous",
+        "contemporary",
+        "conterminous",
+        "continual",
+        "continuous",
+        "coterminous",
+        "dateless",
+        "endless",
+        "eternal",
+        "eterne",
+        "ever-being",
+        "ever-durable",
+        "ever-during",
+        "everlasting",
+        "everliving",
+        "immemorial",
+        "incessant",
+        "indestructible",
+        "infinite",
+        "interminable",
+        "isochronal",
+        "isochronous",
+        "never-ceasing",
+        "never-ending",
+        "nonstop",
+        "nonterminating",
+        "nonterminous",
+        "olamic",
+        "perdurable",
+        "permanent",
+        "perpetual",
+        "sempiternal",
+        "simultaneous",
+        "steady",
+        "timeless",
+        "unceasing",
+        "unending",
+        "unintermitting",
+        "uninterrupted",
+        "unison",
+        "unisonous",
+        "unremitting",
+        "without end"
+      ]
     },
     "coeternity": {
       "word": "COETERNITY",
@@ -902,7 +1029,7 @@
       "word": "COEXTENSIVE",
       "definitions": [
         {
-          "text": "Equally extensive; having as, consciousness and knowledge are",
+          "text": "Equally extensive; having as, consciousness and knowledge are coextensive. Sir W. Hamilton.",
           "partOfSpeech": "adjective"
         }
       ],

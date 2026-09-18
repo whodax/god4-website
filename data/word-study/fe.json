@@ -1,28 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "fencingexercisesofsoldiersandgladiatorsfrbatueretostrike": {
-      "word": "fencing exercises of soldiers and gladiators, fr. batuere to strike,",
-      "definitions": [
-        {
-          "text": "A general action, fight, or encounter, in which all the divisions of an army are or may be engaged; an engagement; a combat.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A struggle; a contest; as, the battle of life. The whole intellectual battle that had at its center the best poem of the best poet of that day. H. Morley.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "A division of an army; a battalion. [Obs.] The king divided his army into three battles. Bacon. The cavalry, by way of distinction, was called the battle, and on it alone depended the fate of every action. Robertson.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "The main body, as distinct from the van and rear; battalia. [Obs.] Hayward. explaining compound; as, battle brand, a \"brand\" or sword used in battle; battle cry; battlefield; battle ground; battlearray; battle song. Battle piece, a painting, or a musical composition, representing a battle. one that stands longest is the victor. Grose. (b) A contest with fists or cudgels in which more than two are engaged; a mêlée. Thackeray.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
     "feaberry": {
       "word": "FEABERRY",
       "definitions": [
@@ -1043,7 +1021,7 @@
       "word": "FEASTFUL",
       "definitions": [
         {
-          "text": "Festive; festal; joyful; sumptuous; luxurious. \"Feastful days.\"",
+          "text": "Festive; festal; joyful; sumptuous; luxurious. \"Feastful days.\" Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1710,7 +1688,11 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The act of turning the blade of the oar, as it rises from the",
+          "text": "The act of turning the blade of the oar, as it rises from the water in rowing, from a vertical to a horizontal position. See To feather an oar, under Feather, v. t.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A covering of feathers. Feathering float (Naut.), the float or paddle of a feathering wheel. may be turned so as to move edgewise through the water when the vessel is moving under sail alone. automatically so as to dip about perpendicularly into the water and leave in it the same way, avoiding beating on the water in the descent and lifting water in the ascent.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4178,7 +4160,7 @@
       "word": "FEEBLE-MINDED",
       "definitions": [
         {
-          "text": "Weak in intellectual power; wanting firmness or constancy; irresolute; vacilating; imbecile. \"comfort the feeble-minded.\" 1",
+          "text": "Weak in intellectual power; wanting firmness or constancy; irresolute; vacilating; imbecile. \"comfort the feeble-minded.\" 1 Thess. v. 14.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5525,7 +5507,17 @@
       ],
       "relatedWords": []
     },
-    "fehmfehmgericht": {
+    "fehm": {
+      "word": "FEHM; FEHMGERICHT",
+      "definitions": [
+        {
+          "text": "Same as Vehm, Vehmgericht.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fehmgericht": {
       "word": "FEHM; FEHMGERICHT",
       "definitions": [
         {
@@ -5604,7 +5596,7 @@
       "word": "FEIGNED",
       "definitions": [
         {
-          "text": "Not real or genuine; pretended; counterfeit; insincere; false. \"A feigned friend.\" Shak. Give ear unto my prayer, that goeth not out of feigned lips. Ps.",
+          "text": "Not real or genuine; pretended; counterfeit; insincere; false. \"A feigned friend.\" Shak. Give ear unto my prayer, that goeth not out of feigned lips. Ps. xvii. 1. Her treacherous sister Judah hath not turned unto me with her whole heart, but feignedly. Jer. iii. 10. Feigned issue (Law), an issue produced in a pretended action between two parties for the purpose of trying before a jury a question of fact which it becomes necessary to settle in the progress of a cause. Burill. Bouvier.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -5675,6 +5667,16 @@
         {
           "text": "One who feigns or pretends.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "feigning": {
+      "word": "FEIGNING",
+      "definitions": [
+        {
+          "text": "That feigns; insincere; not genuine; false.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -5903,6 +5905,16 @@
       ],
       "relatedWords": []
     },
+    "feize": {
+      "word": "FEIZE",
+      "definitions": [
+        {
+          "text": "See Feeze, v. t.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "felanders": {
       "word": "FELANDERS",
       "definitions": [
@@ -5913,7 +5925,7 @@
       ],
       "relatedWords": []
     },
-    "feldsparfeldspath": {
+    "feldspar": {
       "word": "FELDSPAR; FELDSPATH",
       "definitions": [
         {
@@ -5923,7 +5935,27 @@
       ],
       "relatedWords": []
     },
-    "feldspathicfeldspathose": {
+    "feldspath": {
+      "word": "FELDSPAR; FELDSPATH",
+      "definitions": [
+        {
+          "text": "A name given to a group of minerals, closely related in crystalline form, and all silicates of alumina with either potash, soda, lime, or, in one case, baryta. They occur in crystals and crystalline masses, vitreous in luster, and breaking rather easily in two directions at right angles to each other, or nearly so. The colors are usually white or nearly white, flesh-red, bluish, or greenish. orthoclase or common potash feldspar, and the rare hyalophane or baryta feldspar; also the triclinic species (called in general plagioclase) microcline, like orthoclase a potash feldspar; anorthite or lime feldspar; albite or soda feldspar; also intermediate between the last two species, labradorite, andesine, oligoclase, containing both lime and soda in varying amounts. The feldspars are essential constituents of nearly all crystalline rocks, as granite, gneiss, mica, slate, most kinds of basalt and trachyte, etc. The decomposition of feldspar has yielded a large part of the clay of the soil, also the mineral kaolin, an essential material in the making of fine pottery. Common feldspar is itself largely used for the same purpose.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "feldspathic": {
+      "word": "FELDSPATHIC; FELDSPATHOSE",
+      "definitions": [
+        {
+          "text": "Pertaining to, or consisting of, feldspar.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "feldspathose": {
       "word": "FELDSPATHIC; FELDSPATHOSE",
       "definitions": [
         {
@@ -5985,7 +6017,7 @@
       "word": "FELICITOUS",
       "definitions": [
         {
-          "text": "Characterized by felicity; happy; prosperous; delightful; skilful; successful; happily applied or expressed; appropriate.",
+          "text": "Characterized by felicity; happy; prosperous; delightful; skilful; successful; happily applied or expressed; appropriate. Felicitous words and images. M. Arnold.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -7634,6 +7666,10 @@
         {
           "text": "(Eccl.) To acknowledge as of good standing, or in communion according to standards of faith and practice; to admit to Christian fellowship.",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "companionableness; the spirit and disposition befitting comrades. There's neither honesty, manhood, nor good fellowship in thee. Shak.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": [
@@ -7902,16 +7938,6 @@
         "welfare payments"
       ]
     },
-    "fellowshipgoodfellowship": {
-      "word": "FELLOWSHIP; GOOD FELLOWSHIP",
-      "definitions": [
-        {
-          "text": "companionableness; the spirit and disposition befitting comrades. There's neither honesty, manhood, nor good fellowship in thee. Shak.",
-          "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
     "felly": {
       "word": "FELLY",
       "definitions": [
@@ -8067,7 +8093,7 @@
       "word": "FELONIOUS",
       "definitions": [
         {
-          "text": "Having the quality of felony; malignant; malicious; villainous; traitorous; perfidious; in a legal sense, done with intent to commit a crime; as, felonious homicide. O thievish Night, Why should'st thou, but for some felonious end, In",
+          "text": "Having the quality of felony; malignant; malicious; villainous; traitorous; perfidious; in a legal sense, done with intent to commit a crime; as, felonious homicide. O thievish Night, Why should'st thou, but for some felonious end, In thy dark lantern thus close up the stars Milton.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -8212,6 +8238,10 @@
         {
           "text": "A heinous crime; especially, a crime punishable by death or imprisonment. United States, the term felony, in American law, has lost this point of distinction; and its meaning, where not fixed by statute, is somewhat vague and undefined; generally, however, it is used to denote an offense of a high grade, punishable either capitally or by a term of imprisonment. In Massachusetts, by statute, any crime punishable by death or imprisonment in the state prison, and no other, is a felony; so in New York. the tendency now is to obliterate the distinction between felonies and misdemeanors; and this has been done partially in England, and completely in some of the States of the Union. The distinction is purely arbitrary, and its entire abolition is only a question of time. is, otherwise than by enumerating the various kinds of offenses which are so called. originally, the word felony had a meaning: it denoted all offenses the penalty of which included forfeiture of goods; but subsequent acts of Parliament have declared various offenses to be felonies, without enjoining that penalty, and have taken away the penalty from others, which continue, nevertheless, to be called felonies, insomuch that the acts so called have now no property whatever in common, save that of being unlawful and purnishable. J. S. Mill.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": ". See under Compound, v. t.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": [
@@ -8289,7 +8319,17 @@
       ],
       "relatedWords": []
     },
-    "felsparfelspath": {
+    "felspar": {
+      "word": "FELSPAR; FELSPATH",
+      "definitions": [
+        {
+          "text": "See Feldspar.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "felspath": {
       "word": "FELSPAR; FELSPATH",
       "definitions": [
         {
@@ -8532,6 +8572,16 @@
       ],
       "relatedWords": []
     },
+    "feme": {
+      "word": "FEME",
+      "definitions": [
+        {
+          "text": "A woman. Burrill. Feme covert (Law), a married woman. See Covert, a., 3. never been married, or who has been divorced, or whose husband is dead. custom of London, engages in business on her own account, inpendently of her husband.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "femeral": {
       "word": "FEMERAL",
       "definitions": [
@@ -8672,6 +8722,16 @@
         {
           "text": "The quality of being feminine; womanliness; womanishness.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "femininerhyme": {
+      "word": "FEMININE RHYME",
+      "definitions": [
+        {
+          "text": "See Female rhyme, under Female, a.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []
@@ -9859,11 +9919,15 @@
       "relatedWords": []
     },
     "feoff": {
-      "word": "Feoff",
+      "word": "FEOFF",
       "definitions": [
         {
+          "text": ", v. t. [imp. & p. p. Feoffed; p. pr. & vb. n.. Feoffing.] cf. LL. feoffare, fefare. See Fief.] (Law)",
+          "partOfSpeech": ""
+        },
+        {
           "text": "To invest with a fee or feud; to give or grant a corporeal hereditament to; to enfeoff.",
-          "partOfSpeech": "verb"
+          "partOfSpeech": ""
         },
         {
           "text": "A fief. See Fief.",
@@ -9882,7 +9946,17 @@
       ],
       "relatedWords": []
     },
-    "feoforfeoffer": {
+    "feofor": {
+      "word": "FEOFOR; FEOFFER",
+      "definitions": [
+        {
+          "text": "One who enfeoffs or grants a fee.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "feoffer": {
       "word": "FEOFOR; FEOFFER",
       "definitions": [
         {
@@ -10257,6 +10331,10 @@
         {
           "text": "Wild; untamed; savage; as, lions, tigers, wolves, and bears are ferine beasts. Sir M. Hale.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A wild beast; a beast of prey.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -10295,7 +10373,17 @@
       ],
       "relatedWords": []
     },
-    "fermferme": {
+    "ferm": {
+      "word": "FERM; FERME",
+      "definitions": [
+        {
+          "text": "Rent for a farm; a farm; also, an abode; a place of residence; as, he let his land to ferm. [Obs.] Out of her fleshy ferme fled to the place of pain. Spenser.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ferme": {
       "word": "FERM; FERME",
       "definitions": [
         {
@@ -10798,7 +10886,7 @@
       "word": "FERMENTATIVE",
       "definitions": [
         {
-          "text": "Causing, or having power to cause, fermentation; produced by",
+          "text": "Causing, or having power to cause, fermentation; produced by fermentation; fermenting; as, a fermentative process.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -10952,7 +11040,7 @@
       "word": "FEROCIOUS",
       "definitions": [
         {
-          "text": "Fierce; savage; wild; indicating cruelty; ravenous; rapacious; as, ferocious look or features; a ferocious lion. The humbled power of a ferocious enemy. Lowth. applied to human feelings or conduct, ferocious describes the disposition; fierce, the haste and violence of an act; barbarous, the coarseness and brutality by which it was marked; savage, the cruel and unfeeling spirit which it showed. A man is ferocious in his temper, fierce in his actions, barbarous in the manner of carrying out his purposes, savage in the spirit and feelings expressed in his",
+          "text": "Fierce; savage; wild; indicating cruelty; ravenous; rapacious; as, ferocious look or features; a ferocious lion. The humbled power of a ferocious enemy. Lowth. applied to human feelings or conduct, ferocious describes the disposition; fierce, the haste and violence of an act; barbarous, the coarseness and brutality by which it was marked; savage, the cruel and unfeeling spirit which it showed. A man is ferocious in his temper, fierce in his actions, barbarous in the manner of carrying out his purposes, savage in the spirit and feelings expressed in his words or deeds. It [Christianity] has adapted the ferociousness of war. Blair.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -11208,7 +11296,17 @@
       ],
       "relatedWords": []
     },
-    "ferranticablesferrantimains": {
+    "ferranticables": {
+      "word": "FERRANTI CABLES; FERRANTI MAINS",
+      "definitions": [
+        {
+          "text": "A form of conductor, designed by Ferranti, for currents of high potential, and consisting of concentric tubes of copper separated by an insulating material composed of paper saturated with black mineral wax.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "ferrantimains": {
       "word": "FERRANTI CABLES; FERRANTI MAINS",
       "definitions": [
         {
@@ -11272,7 +11370,17 @@
       ],
       "relatedWords": []
     },
-    "ferreferrer": {
+    "ferre": {
+      "word": "FERRE; FERRER",
+      "definitions": [
+        {
+          "text": "compar. of Fer.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "ferrer": {
       "word": "FERRE; FERRER",
       "definitions": [
         {
@@ -12379,7 +12487,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Warm in feeling; ardent in temperament; earnest; full of fervor; zealous; glowing. Not slothful in business; fervent in spirit. Rom. iii. 11. So spake the fervent angel. Milton.",
+          "text": "Warm in feeling; ardent in temperament; earnest; full of fervor; zealous; glowing. Not slothful in business; fervent in spirit. Rom. iii. 11. So spake the fervent angel. Milton. A fervent desire to promote the happiness of mankind. Macaulay. Laboring fervently for you in prayers. Col. iv. 12.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -12515,7 +12623,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Ardent; vehement; zealous.",
+          "text": "Ardent; vehement; zealous. The fervid wishes, holy fires. Parnell.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -12792,7 +12900,17 @@
       ],
       "relatedWords": []
     },
-    "fessfesse": {
+    "fess": {
+      "word": "FESS; FESSE",
+      "definitions": [
+        {
+          "text": "A band drawn horizontally across the center of an escutcheon, and containing in breadth the third part of it; one of the nine honorable ordinaries. Fess point (Her.), the exact center of the escutcheon. See Escutcheon.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fesse": {
       "word": "FESS; FESSE",
       "definitions": [
         {
@@ -12828,11 +12946,15 @@
         {
           "text": "The fist. [Obs.] Chaucer.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A feast. [Obs.] Chaucer.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "festfeste": {
+    "feste": {
       "word": "FEST; FESTE",
       "definitions": [
         {
@@ -13141,7 +13263,7 @@
       "word": "FESTIVE",
       "definitions": [
         {
-          "text": "Pertaining to, or becoming, a feast; festal; joyous; gay;",
+          "text": "Pertaining to, or becoming, a feast; festal; joyous; gay; mirthful; sportive. The glad circle round them yield their souls To festive mirth and wit that knows no gall. Thomson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -13586,8 +13708,8 @@
       ],
       "relatedWords": []
     },
-    "fetianorcffaciantowishtogetofriesfakatopreparesq": {
-      "word": "fetian; or cf. facian to wish to get, OFries. faka to prepare. sq.",
+    "fetch": {
+      "word": "FETCH",
       "definitions": [
         {
           "text": "To bear toward the person speaking, or the person or thing from whose point of view the action is contemplated; to go and bring; to get. Time will run back and fetch the age of gold. Milton. He called to her, and said, Fetch me, I pray thee, a little water in a vessel, that I may drink. And as she was going to fetch it he called to her, and said, Bring me, I pray thee, a morsel of bred in thine hand. 1 Kings xvii. 11, 12.",
@@ -13616,13 +13738,7 @@
         {
           "text": "To cause to come; to bring to a particular state. They could n't fetch the butter in the churn. W. Barnes. To fetch a compass (Naut.), to make a sircuit; to take a circuitious route going to a place. top and working the handle. the colors [of marble]\" Addison. fetch up the tortoise when I please.\" L'Estrange. (b) To stop suddenly.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "fetch": {
-      "word": "FETCH",
-      "definitions": [
+        },
         {
           "text": "To bring one's self; to make headway; to veer; as, to fetch about; to fetch to windward. Totten. To fetch away (Naut.), to break loose; to roll slide to leeward. spaniel.",
           "partOfSpeech": "verb"
@@ -14035,7 +14151,7 @@
         "wayzgoose"
       ]
     },
-    "fetichfetish": {
+    "fetich": {
       "word": "FETICH; FETISH",
       "definitions": [
         {
@@ -14049,7 +14165,77 @@
       ],
       "relatedWords": []
     },
-    "fetichismfetishism": {
+    "fetish": {
+      "word": "FETICH; FETISH",
+      "definitions": [
+        {
+          "text": "A material object supposed among certain African tribes to represent in such a way, or to be so connected with, a supernatural being, that the possession of it gives to the possessor power to control that being.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Any object to which one is excessively devoted.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Fetich, n., Fetichism, n., Fetichistic, a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Baal",
+        "Juggernaut",
+        "amulet",
+        "bias",
+        "charm",
+        "compulsion",
+        "devil-god",
+        "fixation",
+        "fylfot",
+        "gammadion",
+        "golden calf",
+        "good-luck charm",
+        "graven image",
+        "hoodoo",
+        "idee fixe",
+        "idol",
+        "joss",
+        "juju",
+        "leaning",
+        "love charm",
+        "luck",
+        "lucky bean",
+        "lucky piece",
+        "madstone",
+        "mania",
+        "mascot",
+        "mumbo jumbo",
+        "obeah",
+        "obsession",
+        "partiality",
+        "penchant",
+        "periapt",
+        "philter",
+        "phylactery",
+        "predilection",
+        "prejudice",
+        "preoccupation",
+        "prepossession",
+        "proclivity",
+        "propensity",
+        "scarab",
+        "scarabaeus",
+        "scarabee",
+        "sudarium",
+        "swastika",
+        "talisman",
+        "thing",
+        "totem",
+        "veronica",
+        "voodoo",
+        "whammy"
+      ]
+    },
+    "fetichism": {
       "word": "FETICHISM; FETISHISM",
       "definitions": [
         {
@@ -14063,7 +14249,125 @@
       ],
       "relatedWords": []
     },
-    "fetichistfetishist": {
+    "fetishism": {
+      "word": "FETICHISM; FETISHISM",
+      "definitions": [
+        {
+          "text": "The doctrine or practice of belief in fetiches.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Excessive devotion to one object or one idea; abject superstition; blind adoration. The real and absolute worship of fire falls into two great divisions, the first belonging rather to fetichism, the second to polytheism proper. Tylor.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Fetich, n., Fetichism, n., Fetichistic, a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": [
+        "Druidism",
+        "Parsiism",
+        "Sabaism",
+        "Zoroastrianism",
+        "active algolagnia",
+        "alchemy",
+        "algolagnia",
+        "algolagny",
+        "amphierotism",
+        "animal worship",
+        "autoeroticism",
+        "bewitchery",
+        "bisexuality",
+        "charm",
+        "coprophilia",
+        "demonism",
+        "demonolatry",
+        "devil worship",
+        "divination",
+        "enchantment",
+        "exhibitionism",
+        "fire worship",
+        "glamour",
+        "gramarye",
+        "heathenism",
+        "hero worship",
+        "heterosexuality",
+        "homoeroticism",
+        "homosexualism",
+        "homosexuality",
+        "hoodoo",
+        "iconoduly",
+        "iconolatry",
+        "idol worship",
+        "idolatrousness",
+        "idolatry",
+        "idolism",
+        "idolodulia",
+        "idolomancy",
+        "image worship",
+        "incest",
+        "incestuousness",
+        "juju",
+        "jujuism",
+        "lesbianism",
+        "magic",
+        "masochism",
+        "narcissism",
+        "natural magic",
+        "necromancy",
+        "necrophilia",
+        "obeah",
+        "paganism",
+        "paraphilia",
+        "passive algolagnia",
+        "pedophilia",
+        "phallic worship",
+        "phallicism",
+        "pyrolatry",
+        "rune",
+        "sadism",
+        "sadomasochism",
+        "sapphism",
+        "scotophilia",
+        "sexual inversion",
+        "sexual normality",
+        "sexual preference",
+        "shamanism",
+        "snake worship",
+        "sorcery",
+        "sortilege",
+        "spell",
+        "spellbinding",
+        "spellcasting",
+        "star worship",
+        "sun worship",
+        "swinging both ways",
+        "sympathetic magic",
+        "thaumaturgia",
+        "thaumaturgics",
+        "thaumaturgism",
+        "thaumaturgy",
+        "theurgy",
+        "transvestitism",
+        "tree worship",
+        "tribadism",
+        "tribady",
+        "vampirism",
+        "voodoo",
+        "voodooism",
+        "voyeurism",
+        "wanga",
+        "white magic",
+        "witchcraft",
+        "witchery",
+        "witchwork",
+        "wizardry",
+        "zooerastia",
+        "zoophilia"
+      ]
+    },
+    "fetichist": {
       "word": "FETICHIST; FETISHIST",
       "definitions": [
         {
@@ -14073,12 +14377,40 @@
       ],
       "relatedWords": []
     },
-    "fetichisticfetishistic": {
+    "fetishist": {
+      "word": "FETICHIST; FETISHIST",
+      "definitions": [
+        {
+          "text": "A believer in fetiches. He was by nature a fetichist. H. Holbeach.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Fetich, n., Fetichism, n., Fetichistic, a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fetichistic": {
       "word": "FETICHISTIC; FETISHISTIC",
       "definitions": [
         {
           "text": "Pertaining to, or involving, fetichism. A man of the fifteenth century, inheriting its strange web of belief and unbelief, of epicurean levity and fetichistic dread. G. Eliot.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fetishistic": {
+      "word": "FETICHISTIC; FETISHISTIC",
+      "definitions": [
+        {
+          "text": "Pertaining to, or involving, fetichism. A man of the fifteenth century, inheriting its strange web of belief and unbelief, of epicurean levity and fetichistic dread. G. Eliot.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Fetich, n., Fetichism, n., Fetichistic, a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -14315,16 +14647,6 @@
         {
           "text": "Neatly; gracefully; properly. [Obs.] Chaucer.",
           "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "fetishfetishismfetishistfetishistic": {
-      "word": "FETISH; FETISHISM; FETISHIST; FETISHISTIC",
-      "definitions": [
-        {
-          "text": "See Fetich, n., Fetichism, n., Fetichistic, a.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -14570,6 +14892,18 @@
     "fettle": {
       "word": "FETTLE",
       "definitions": [
+        {
+          "text": "1. To repair; to prepare; to put in order. [Prov. Eng.] Carlyle.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "(Metal.)",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To cover or line with a mixture of ore, cinders, etc., as the hearth of a puddling furnace.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To make preparations; to put things in order; to do trifling business. [Prov. Eng.] Bp. Hall.",
           "partOfSpeech": "verb"
@@ -15427,7 +15761,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Disordered as by fever; excited; restless; as, the feverish condition of the commercial world.",
+          "text": "Disordered as by fever; excited; restless; as, the feverish condition of the commercial world. Strive to keep up a frail and feverish bing. Milton.",
           "partOfSpeech": "adjective"
         }
       ],

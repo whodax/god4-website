@@ -1,60 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "necklacecollarfrofcolneckfcoufrlcollumakinto": {
-      "word": "necklace, collar, fr. OF. col neck, F. cou, fr. L. collum; akin to",
-      "definitions": [
-        {
-          "text": "Something worn round the neck, whether for use, ornament, restraint, or identification; as, the collar of a coat; a lady's collar; the collar of a dog.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Arch.) (a) A ring or cinture. (b) A collar beam.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Bot.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "The neck or line of junction between the root of a plant and its stem. Gray.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "An ornament worn round the neck by knights, having on it devises to designate their rank or order.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Zoöl.) (a) A ringlike part of a mollusk in connection with esophagus. (b) A colored ring round the neck of a bird or mammal.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Mech.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A ring or round flange upon, surrounding, or against an object, and used for rastraining motion within given limits, or for holding something to its place, or for hibing an opening around an object; as, a collar on a shaft, used to prevent endwise motion of the shaft; a collar surrounding a stovepipe at the place where it enters a wall. The flanges of a piston and the gland of a stuffing box are sometimes called collars.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Naut.)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "An eye formed in the bight or bend of a shroud or stay to go over the masthead; also, a rope to which certain parts of rigging, as dead-eyes, are secured.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "(Mining)",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "A curb, or a horizontal timbering, around the mouth of a shaft. Raymond. Collar beam (Arch.), a horizontal piece of timber connecting and tying together two opposite rafters; -- also, called simply collar. [Eng.] Johnson. persons, who are dignitaries of honorary orders, wear the collars of those orders. difficulty, labor, or engagement. Spenser.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "ne": {
       "word": "NE",
       "definitions": [
@@ -75,6 +21,10 @@
         {
           "text": "See 2d Neif. Shak.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The first. [Obs.] \"I kiss thy neif.\" \"Give me your neaf.\" Shak.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -93,7 +43,27 @@
       ],
       "relatedWords": []
     },
-    "neanderthalneanderthalraceneanderthalman": {
+    "neanderthal": {
+      "word": "NEANDERTHAL; NEANDERTHAL RACE; NEANDERTHAL MAN",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or named from, the Neanderthal, a valley in the Rhine Province, in which were found parts of a skeleton of an early type of man. The skull is characterized by extreme dolichocephaly, flat, retreating forehead, with closed frontal sutures, and enormous superciliary ridges. The cranial capacity is estimated at about 1,220 cubic centimeters, being about midway between that of the Pithecanthropus and modern man. Hence, designating the Neanderthal race, or man, a species supposed to have been widespread in paleolithic Europe.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neanderthalrace": {
+      "word": "NEANDERTHAL; NEANDERTHAL RACE; NEANDERTHAL MAN",
+      "definitions": [
+        {
+          "text": "Of, pertaining to, or named from, the Neanderthal, a valley in the Rhine Province, in which were found parts of a skeleton of an early type of man. The skull is characterized by extreme dolichocephaly, flat, retreating forehead, with closed frontal sutures, and enormous superciliary ridges. The cranial capacity is estimated at about 1,220 cubic centimeters, being about midway between that of the Pithecanthropus and modern man. Hence, designating the Neanderthal race, or man, a species supposed to have been widespread in paleolithic Europe.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neanderthalman": {
       "word": "NEANDERTHAL; NEANDERTHAL RACE; NEANDERTHAL MAN",
       "definitions": [
         {
@@ -191,8 +161,20 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Next to the driver, when he is on foot; in the Unted States, on",
+          "text": "Next to the driver, when he is on foot; in the Unted States, on the left of an animal or a team; as, the near ox; the near leg. See Off side, under Off, a.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Immediate; direct; close; short. \"The nearest way.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Close-fisted; parsimonious. [Obs. or Low, Eng.] approached'; but more frequently to is omitted, and the adjective or the adverb is regarded as a preposition. The same is also true of the word nigh. intimate; dear.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Adjacent to; close by; not far from; nigh; as, the ship sailed near the land. See the Note under near, a.",
+          "partOfSpeech": "preposition"
         },
         {
           "text": "To approach; to come nearer; as, the ship neared the land.",
@@ -261,6 +243,34 @@
         {
           "text": "The state or quality of being near; -- used in the various senses of the adjective.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nearsighted": {
+      "word": "NEARSIGHTED; NEARSIGHTEDNESS",
+      "definitions": [
+        {
+          "text": "Seeing distinctly at short distances only; shortsighted.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Myopic, and Myopia.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nearsightedness": {
+      "word": "NEARSIGHTED; NEARSIGHTEDNESS",
+      "definitions": [
+        {
+          "text": "Seeing distinctly at short distances only; shortsighted.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Myopic, and Myopia.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -447,16 +457,24 @@
         {
           "text": "A little cloud; a cloud. [Obs.] O light without nebule. Old Ballad.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Composed of successive short curves supposed to resemble a cloud; -- said of a heraldic line by which an ordinary or subordinary may be bounded.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "nebulenebuly": {
+    "nebuly": {
       "word": "NEBULE; NEBULY",
       "definitions": [
         {
           "text": "Composed of successive short curves supposed to resemble a cloud; -- said of a heraldic line by which an ordinary or subordinary may be bounded.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A line or a direction composed of successive short curves or waves supposed to resembe a cloud. See NÉbulÉ",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -527,18 +545,8 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Of, pertaining to, or having the appearance of, a nebula;",
+          "text": "Of, pertaining to, or having the appearance of, a nebula; nebular; cloudlike.",
           "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "nebuly": {
-      "word": "NEBULY",
-      "definitions": [
-        {
-          "text": "A line or a direction composed of successive short curves or waves supposed to resembe a cloud. See NÉbulÉ",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -687,7 +695,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Narrow; destitute; pinching; pinched; as, necessitous",
+          "text": "Narrow; destitute; pinching; pinched; as, necessitous circumstances.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -887,7 +895,17 @@
       ],
       "relatedWords": []
     },
-    "neckmoldneckmould": {
+    "neckmold": {
+      "word": "NECKMOLD; NECKMOULD",
+      "definitions": [
+        {
+          "text": "A small convex molding surrounding a column at the jinction of the shaft and capital. Weale.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neckmould": {
       "word": "NECKMOLD; NECKMOULD",
       "definitions": [
         {
@@ -967,7 +985,17 @@
       ],
       "relatedWords": []
     },
-    "necrologicnecrological": {
+    "necrologic": {
+      "word": "NECROLOGIC; NECROLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to necrology; of the nature of necrology; relating to, or giving, an account of the dead, or of deaths.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "necrological": {
       "word": "NECROLOGIC; NECROLOGICAL",
       "definitions": [
         {
@@ -1023,6 +1051,20 @@
         {
           "text": "Conjuration. [R.] With all the necromantics of their art. Young.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to necromancy; performed by necromancy.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "necromantical": {
+      "word": "NECROMANTIC; NECROMANTICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to necromancy; performed by necromancy.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -1101,7 +1143,17 @@
       ],
       "relatedWords": []
     },
-    "necroscopicnecroscopical": {
+    "necroscopic": {
+      "word": "NECROSCOPIC; NECROSCOPICAL",
+      "definitions": [
+        {
+          "text": "Or or relating to post-mortem examinations.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "necroscopical": {
       "word": "NECROSCOPIC; NECROSCOPICAL",
       "definitions": [
         {
@@ -1159,6 +1211,16 @@
         {
           "text": "Affected with necrosis; as, necrotic tissue; characterized by, or producing, necrosis; as, a necrotic process.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "necrotomy": {
+      "word": "NECROTOMY",
+      "definitions": [
+        {
+          "text": "The dissection of dead bodies; also, excision of necrosed bone.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1227,7 +1289,7 @@
       "word": "NECTAREOUS",
       "definitions": [
         {
-          "text": "Of, pertaining to, containing, or resembling nectar; delicious;",
+          "text": "Of, pertaining to, containing, or resembling nectar; delicious; nectarean. Pope.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1307,7 +1369,17 @@
       ],
       "relatedWords": []
     },
-    "nectosacnectosack": {
+    "nectosac": {
+      "word": "NECTOSAC; NECTOSACK",
+      "definitions": [
+        {
+          "text": "The cavity of a nectocalyx.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nectosack": {
       "word": "NECTOSAC; NECTOSACK",
       "definitions": [
         {
@@ -1409,7 +1481,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Necessary for supply or relief; requisite.",
+          "text": "Necessary for supply or relief; requisite. All things needful for defense abound. Dryden.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1647,7 +1719,17 @@
       ],
       "relatedWords": []
     },
-    "neeldneele": {
+    "neeld": {
+      "word": "NEELD; NEELE",
+      "definitions": [
+        {
+          "text": "A needle. [Obs.] Shak.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neele": {
       "word": "NEELD; NEELE",
       "definitions": [
         {
@@ -1747,7 +1829,17 @@
       ],
       "relatedWords": []
     },
-    "nefandnefandous": {
+    "nefand": {
+      "word": "NEFAND; NEFANDOUS",
+      "definitions": [
+        {
+          "text": "Unfit to speak of; unmentionable; impious; execrable. [Obs.] \"Nefand adominations.\" Sheldon. \"Nefandous high treason.\" Cotton Mather.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nefandous": {
       "word": "NEFAND; NEFANDOUS",
       "definitions": [
         {
@@ -1761,7 +1853,7 @@
       "word": "NEFARIOUS",
       "definitions": [
         {
-          "text": "Wicked in the extreme; abominable; iniquitous; atrociously villainous; execrable; detestably vile.",
+          "text": "Wicked in the extreme; abominable; iniquitous; atrociously villainous; execrable; detestably vile. impious. See Iniquitous.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1901,7 +1993,17 @@
       ],
       "relatedWords": []
     },
-    "negativenessnegativity": {
+    "negativeness": {
+      "word": "NEGATIVENESS; NEGATIVITY",
+      "definitions": [
+        {
+          "text": "The quality or state of being negative.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "negativity": {
       "word": "NEGATIVENESS; NEGATIVITY",
       "definitions": [
         {
@@ -1985,7 +2087,7 @@
       "word": "NEGLECTFUL",
       "definitions": [
         {
-          "text": "Full of neglect; heedless; careless; negligent; inattentive; indifferent. Pope. A cold and neglectful countenance. Locke. Though the Romans had no great genius for trade, yet they were not",
+          "text": "Full of neglect; heedless; careless; negligent; inattentive; indifferent. Pope. A cold and neglectful countenance. Locke. Though the Romans had no great genius for trade, yet they were not entirely neglectful of it. Arbuthnot.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -2349,21 +2451,25 @@
       ],
       "relatedWords": []
     },
-    "neifneife": {
+    "neif": {
       "word": "NEIF; NEIFE",
       "definitions": [
         {
           "text": "A woman born in the state of villeinage; a female serf. Blackstone.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The first. [Obs.] \"I kiss thy neif.\" \"Give me your neaf.\" Shak.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "neifneaf": {
-      "word": "NEIF; NEAF",
+    "neife": {
+      "word": "NEIF; NEIFE",
       "definitions": [
         {
-          "text": "The first. [Obs.] \"I kiss thy neif.\" \"Give me your neaf.\" Shak.",
+          "text": "A woman born in the state of villeinage; a female serf. Blackstone.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2511,6 +2617,16 @@
       ],
       "relatedWords": []
     },
+    "nelumbo": {
+      "word": "NELUMBO",
+      "definitions": [
+        {
+          "text": "A genus of great water lilies. The North American species is Nelumbo lutea, the Asiatic is the sacred lotus, N. speciosa. [Written also Nelumbium.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "nemaline": {
       "word": "NEMALINE",
       "definitions": [
@@ -2551,7 +2667,17 @@
       ],
       "relatedWords": []
     },
-    "nemathelminthesnematelminthes": {
+    "nemathelminthes": {
+      "word": "NEMATHELMINTHES; NEMATELMINTHES",
+      "definitions": [
+        {
+          "text": "An order of helminths, including the Nematoidea and Gordiacea; the roundworms. [Written also Nematelminthea.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nematelminthes": {
       "word": "NEMATHELMINTHES; NEMATELMINTHES",
       "definitions": [
         {
@@ -2987,7 +3113,7 @@
       "word": "NEO-DARWINISM",
       "definitions": [
         {
-          "text": "The theory which holds natural selection, as explained by Darwin, to be the chief factor in the evolution of plants and animals, and denies the inheritance of acquired characters; -- esp.",
+          "text": "The theory which holds natural selection, as explained by Darwin, to be the chief factor in the evolution of plants and animals, and denies the inheritance of acquired characters; -- esp. opposed to Neo-Lamarckism. Weismannism is an example of extreme Neo- Darwinism. -- Ne`o-Dar*win\"i*an, a. & n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3037,7 +3163,7 @@
       "word": "NEOGRAMMARIAN",
       "definitions": [
         {
-          "text": "One of a group of philologists who apply phonetic laws more",
+          "text": "One of a group of philologists who apply phonetic laws more widely and strictly than was formerly done, and who maintain that these laws admit of no real exceptions. --Ne`o*gram*mat\"ic*al (#), a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3121,7 +3247,7 @@
       ],
       "relatedWords": []
     },
-    "neoimpressionismpointillism": {
+    "neoimpressionism": {
       "word": "NEOIMPRESSIONISM; POINTILLISM",
       "definitions": [
         {
@@ -3159,7 +3285,7 @@
       "word": "NEO-LAMARCKISM",
       "definitions": [
         {
-          "text": "Lamarckism as revived, modified, and expounded by recent biologists, esp. as maintaining that the offspring inherits characters acquired by the parent from change of environment, use or",
+          "text": "Lamarckism as revived, modified, and expounded by recent biologists, esp. as maintaining that the offspring inherits characters acquired by the parent from change of environment, use or disuse of parts, etc.; -- opposed of Neo-Darwinism (which see, above). -- Ne`o-La*marck\"i*an, a. & n.",
           "partOfSpeech": "noun"
         }
       ],
@@ -3209,7 +3335,17 @@
       ],
       "relatedWords": []
     },
-    "neologicneological": {
+    "neologic": {
+      "word": "NEOLOGIC; NEOLOGICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to neology; employing new words; of the nature of, or containing, new words or new doctrines. A genteel neological dictionary. Chesterfield.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neological": {
       "word": "NEOLOGIC; NEOLOGICAL",
       "definitions": [
         {
@@ -3261,7 +3397,17 @@
       ],
       "relatedWords": []
     },
-    "neologisticneologistical": {
+    "neologistic": {
+      "word": "NEOLOGISTIC; NEOLOGISTICAL",
+      "definitions": [
+        {
+          "text": "of or pertaining to neology; neological.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neologistical": {
       "word": "NEOLOGISTIC; NEOLOGISTICAL",
       "definitions": [
         {
@@ -3537,22 +3683,26 @@
       ],
       "relatedWords": []
     },
-    "neotericneoterical": {
+    "neoteric": {
       "word": "NEOTERIC; NEOTERICAL",
       "definitions": [
         {
           "text": "Recent in origin; modern; new. \"Our neoteric verbs.\" Fitzed. Hall. Some being ancient, others neoterical. Bacon.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One of modern times; a modern.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "neoteric": {
-      "word": "NEOTERIC",
+    "neoterical": {
+      "word": "NEOTERIC; NEOTERICAL",
       "definitions": [
         {
-          "text": "One of modern times; a modern.",
-          "partOfSpeech": "noun"
+          "text": "Recent in origin; modern; new. \"Our neoteric verbs.\" Fitzed. Hall. Some being ancient, others neoterical. Bacon.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3709,7 +3859,17 @@
       ],
       "relatedWords": []
     },
-    "nephelinenephelite": {
+    "nepheline": {
+      "word": "NEPHELINE; NEPHELITE",
+      "definitions": [
+        {
+          "text": "A mineral occuring at Vesuvius, in glassy agonal crystals; also elsewhere, in grayish or greenish masses having a greasy luster, as the variety elæolite. It is a silicate of aluminia, soda, and potash.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nephelite": {
       "word": "NEPHELINE; NEPHELITE",
       "definitions": [
         {
@@ -3777,7 +3937,17 @@
       ],
       "relatedWords": []
     },
-    "nephralgianephralgy": {
+    "nephralgia": {
+      "word": "NEPHRALGIA; NEPHRALGY",
+      "definitions": [
+        {
+          "text": "Neuralgia of the kidneys; a disease characterized by pain in the region of the kidneys without any structural lesion of the latter. Quain.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "nephralgy": {
       "word": "NEPHRALGIA; NEPHRALGY",
       "definitions": [
         {
@@ -3817,7 +3987,7 @@
       ],
       "relatedWords": []
     },
-    "nephriticnephritical": {
+    "nephritic": {
       "word": "NEPHRITIC; NEPHRITICAL",
       "definitions": [
         {
@@ -3827,16 +3997,24 @@
         {
           "text": "(Med.) (a) Affected with a disease of the kidneys; as, a nephritic patient. (b) Relieving disorders of the kidneys; affecting the kidneys; as, a nephritic medicine. Nephritic stone (Min.), nephrite; jade. See Nephrite.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "A medicine adapted to relieve or cure disease of the kidneys.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "nephritic": {
-      "word": "NEPHRITIC",
+    "nephritical": {
+      "word": "NEPHRITIC; NEPHRITICAL",
       "definitions": [
         {
-          "text": "A medicine adapted to relieve or cure disease of the kidneys.",
-          "partOfSpeech": "noun"
+          "text": "Of or pertaining to the kidneys or urinary organs; renal; as, a nephritic disease.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Med.) (a) Affected with a disease of the kidneys; as, a nephritic patient. (b) Relieving disorders of the kidneys; affecting the kidneys; as, a nephritic medicine. Nephritic stone (Min.), nephrite; jade. See Nephrite.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -3981,11 +4159,15 @@
         {
           "text": "Formed by water or aqueous solution; as, Neptunian rocks. Neptunian races (Ethnol.), the Malay and Polynesian races. the formation of all rocks and strata to the agency of water; -- opposed to the Plutonic theory.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "One who adopts the neptunian theory.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "neptunianneptunist": {
+    "neptunist": {
       "word": "NEPTUNIAN; NEPTUNIST",
       "definitions": [
         {
@@ -4163,7 +4345,7 @@
       "word": "NERO",
       "definitions": [
         {
-          "text": "A Roman emperor notorius for debauchery and barbarous cruelty;",
+          "text": "A Roman emperor notorius for debauchery and barbarous cruelty; hence, any profligate and cruel ruler or merciless tyrant.",
           "partOfSpeech": "noun"
         }
       ],
@@ -4733,6 +4915,16 @@
       ],
       "relatedWords": []
     },
+    "nether": {
+      "word": "NETHER",
+      "definitions": [
+        {
+          "text": "Situated down or below; lying beneath, or in the lower part; having a lower position; belonging to the region below; lower; under; 'Twixt upper, nether, and surrounding fires. Milton. This darksome nether world her light Doth dim with horror and deformity. Spenser. All my nether shape thus grew transformed. Milton.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "nethermore": {
       "word": "NETHERMORE",
       "definitions": [
@@ -4799,7 +4991,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A network of ropes used for various purposes, as for holding the hammocks when not in use, also for stowing sails, and for hoisting from the gunwale to the rigging to hinder an enemy from",
+          "text": "A network of ropes used for various purposes, as for holding the hammocks when not in use, also for stowing sails, and for hoisting from the gunwale to the rigging to hinder an enemy from boarding. Totten. Netting needle, a kind of slender shuttle used in netting. See Needle, n., 3.",
           "partOfSpeech": "noun"
         },
         {
@@ -5067,7 +5259,17 @@
       ],
       "relatedWords": []
     },
-    "neurochordneurochordal": {
+    "neurochord": {
+      "word": "NEUROCHORD; NEUROCHORDAL",
+      "definitions": [
+        {
+          "text": "See Neurocord.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neurochordal": {
       "word": "NEUROCHORD; NEUROCHORDAL",
       "definitions": [
         {
@@ -5087,7 +5289,17 @@
       ],
       "relatedWords": []
     },
-    "neurocoeleneurocele": {
+    "neurocoele": {
+      "word": "NEUROCOELE; NEUROCELE",
+      "definitions": [
+        {
+          "text": "The central canal and ventricles of the spinal cord and brain; the myelencephalic cavity.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neurocele": {
       "word": "NEUROCOELE; NEUROCELE",
       "definitions": [
         {
@@ -5101,7 +5313,7 @@
       "word": "NEUROCORD",
       "definitions": [
         {
-          "text": "A cordlike organ composed of elastic fibers situated above the",
+          "text": "A cordlike organ composed of elastic fibers situated above the ventral nervous cord of annelids, like the earthworm.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5495,6 +5707,10 @@
           "partOfSpeech": "adjective"
         },
         {
+          "text": "Having no generative organs, or imperfectly developed ones; sexless. See Neuter, n., 3.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "A person who takes no part in a contest; one who is either indifferent to a cause or forbears to interfere; a neutral. The world's no neuter; it will wound or save. Young.",
           "partOfSpeech": "noun"
         },
@@ -5603,7 +5819,7 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "The act or process by which an acid and a base are combined in",
+          "text": "The act or process by which an acid and a base are combined in such proportions that the resulting compound is neutral. See Neutral, a., 4.",
           "partOfSpeech": "noun"
         }
       ],
@@ -5647,6 +5863,26 @@
         {
           "text": "In a neutral manner; without taking part with either side; indifferently.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neutrophile": {
+      "word": "NEUTROPHILE; NEUTROPHIL",
+      "definitions": [
+        {
+          "text": "One of a group of leucocytes whose granules stain only with neutral dyes. -- Neu\"tro*phil\"ic (#), a., Neu*troph\"i*lous (#), a.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "neutrophil": {
+      "word": "NEUTROPHILE; NEUTROPHIL",
+      "definitions": [
+        {
+          "text": "One of a group of leucocytes whose granules stain only with neutral dyes. -- Neu\"tro*phil\"ic (#), a., Neu*troph\"i*lous (#), a.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -6225,16 +6461,6 @@
         {
           "text": "A tribe of Indians, mostly inhabiting Idaho.",
           "partOfSpeech": ""
-        }
-      ],
-      "relatedWords": []
-    },
-    "neartoapproachfrproximusthenearestnestsuperlofpropior": {
-      "word": "near, to approach, fr. proximus the nearest, nest, superl. of propior",
-      "definitions": [
-        {
-          "text": "Nearest; next immediately preceding or following. \"Proximate ancestors.\" J. S. Harford. The proximate natural causes of it [the deluge]. T. Burnet. Proximate analysis (Chem.), an analysis which determines the proximate principles of any substance, as contrasted with an ultimate analysis. produces the effect, as distinguished from the remote, mediate, or predisposing cause. I. Watts. (b) That which in ordinary natural sequence produces a specific result, no independent disturbing agencies intervening. existing ready formed in animal and vegetable tissues, and separable by chemical analysis, as albumin, sugar, collagen, fat, etc.",
-          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []

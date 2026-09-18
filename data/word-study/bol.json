@@ -25,6 +25,30 @@
       "word": "BOLD",
       "definitions": [
         {
+          "text": "Forward to meet danger; venturesome; daring; not timorous or shrinking from risk; brave; courageous. Throngs of knights and barons bold. Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Exhibiting or requiring spirit and contempt of danger; planned with courage; daring; vigorous. \"The bold design leased highly.\" Milton.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "In a bad sense, too forward; taking undue liberties; over assuming or confident; lacking proper modesty or restraint; rude; impudent. Thou art too wild, too rude and bold of voice. Shak.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Somewhat overstepping usual bounds, or conventional rules, as in art, literature, etc.; taking liberties in o composition or expression; as, the figures of an author are bold. \"Bold tales.\" Waller. The cathedral church is a very bold work. Addison.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Standing prominently out to view; markedly conspicuous; striking the eye; in high relief. Shadows in painting . . . make the figure bolder. Dryden.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Steep; abrupt; prominent. Where the bold cape its warning forehead rears. Trumbull.",
+          "partOfSpeech": "adjective"
+        },
+        {
           "text": "To make bold or daring. [Obs.] Shak.",
           "partOfSpeech": "verb"
         },
@@ -341,7 +365,17 @@
       ],
       "relatedWords": []
     },
-    "boldoboldu": {
+    "boldo": {
+      "word": "BOLDO; BOLDU",
+      "definitions": [
+        {
+          "text": "A fragrant evergreen shrub of Chili (Peumus Boldus). The bark is used in tanning, the wood for making charcoal, the leaves in medicine, and the drupes are eaten.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "boldu": {
       "word": "BOLDO; BOLDU",
       "definitions": [
         {
@@ -360,6 +394,10 @@
         },
         {
           "text": "An aperture, with a wooden shutter, in the wall of a house, for giving, occasionally, air or light; also, a small closet. [Scot.] Open the bole wi'speed, that I may see if this be the right Lord Geraldin. Sir W. Scott.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A measure. See Boll, n., 2. Mortimer.",
           "partOfSpeech": "noun"
         },
         {
@@ -465,7 +503,7 @@
       ],
       "relatedWords": []
     },
-    "boleybolye": {
+    "boley": {
       "word": "BOLEY; BOLYE",
       "definitions": [
         {
@@ -600,6 +638,10 @@
         {
           "text": "See Boln, a.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Swollen; puffed out. Thin, and boln out like a sail. B. Jonson.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -630,13 +672,7 @@
         {
           "text": "To swell; to puff. Holland.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "bolnbollen": {
-      "word": "BOLN; BOLLEN",
-      "definitions": [
+        },
         {
           "text": "Swollen; puffed out. Thin, and boln out like a sail. B. Jonson.",
           "partOfSpeech": "adjective"
@@ -1612,6 +1648,16 @@
         "tablet",
         "troche"
       ]
+    },
+    "bolye": {
+      "word": "BOLEY; BOLYE",
+      "definitions": [
+        {
+          "text": "Same as Booly.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
     }
   }
 }

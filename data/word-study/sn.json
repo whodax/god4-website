@@ -39,6 +39,10 @@
       "word": "SNAFFLE",
       "definitions": [
         {
+          "text": "A kind of bridle bit, having a joint in the part to be placed in the mouth, and rings and cheek pieces at the ends, but having no curb; -- called also snaffle bit.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To put a snaffle in the mouth of; to subject to the snaffle; to bridle.",
           "partOfSpeech": "verb"
         }
@@ -319,39 +323,33 @@
       ],
       "relatedWords": []
     },
-    "snabendansnappeandtodsnavelbeakbillcfnebsnaffle": {
-      "word": "snaben, Dan. snappe, and to D. snavel beak, bill. Cf. Neb, Snaffle,",
-      "definitions": [
-        {
-          "text": "To break at once; to break short, as substances that are brittle. Breaks the doors open, snaps the locks. Prior.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To strike, to hit, or to shut, with a sharp sound.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To bite or seize suddenly, especially with the teeth. He, by playing too often at the mouth of death, has been snapped by it at last. South.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To break upon suddenly with sharp, angry words; to treat snappishly; -- usually with up. Granville.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To crack; to cause to make a sharp, cracking noise; as, to snap a whip. MacMorian snapped his fingers repeatedly. Sir W. Scott.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To project with a snap. To snap back (Football), to roll the ball back with the foot; -- done only by the center rush, who thus delivers the ball to the quarter back on his own side when both sides are ranged in line.",
-          "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
     "snap": {
       "word": "SNAP",
       "definitions": [
+        {
+          "text": "To break at once; to break short, as substances that are brittle. Breaks the doors open, snaps the locks. Prior.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To strike, to hit, or to shut, with a sharp sound.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To bite or seize suddenly, especially with the teeth. He, by playing too often at the mouth of death, has been snapped by it at last. South.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To break upon suddenly with sharp, angry words; to treat snappishly; -- usually with up. Granville.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To crack; to cause to make a sharp, cracking noise; as, to snap a whip. MacMorian snapped his fingers repeatedly. Sir W. Scott.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To project with a snap. To snap back (Football), to roll the ball back with the foot; -- done only by the center rush, who thus delivers the ball to the quarter back on his own side when both sides are ranged in line.",
+          "partOfSpeech": "verb"
+        },
         {
           "text": "To break short, or at once; to part asunder suddenly; as, a mast snaps; a needle snaps. But this weapon will snap short, unfaithful to the hand that employs it. Burke.",
           "partOfSpeech": "verb"
@@ -535,7 +533,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Sharp in reply; apt to speak angrily or testily; easily provoked; tart; peevish.",
+          "text": "Sharp in reply; apt to speak angrily or testily; easily provoked; tart; peevish. The taunting address of a snappish missanthrope. Jeffrey.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -561,7 +559,7 @@
       ],
       "relatedWords": []
     },
-    "snapshotsnapshot": {
+    "snapshot": {
       "word": "SNAPSHOT; SNAP SHOT",
       "definitions": [
         {
@@ -909,7 +907,7 @@
       "word": "SNEAKING",
       "definitions": [
         {
-          "text": "Marked by cowardly concealment; deficient in openness and",
+          "text": "Marked by cowardly concealment; deficient in openness and courage; underhand; mean; crouching.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -953,7 +951,17 @@
       ],
       "relatedWords": []
     },
-    "sneathsneathe": {
+    "sneath": {
+      "word": "SNEATH; SNEATHE",
+      "definitions": [
+        {
+          "text": "See Snath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sneathe": {
       "word": "SNEATH; SNEATHE",
       "definitions": [
         {
@@ -1003,11 +1011,15 @@
         {
           "text": "To lop; to snathe. [Prov. Eng.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "See Snath.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "snedsneed": {
+    "sneed": {
       "word": "SNED; SNEED",
       "definitions": [
         {
@@ -1265,7 +1277,17 @@
       ],
       "relatedWords": []
     },
-    "sniderriflesnider": {
+    "sniderrifle": {
+      "word": "SNIDER RIFLE; SNIDER",
+      "definitions": [
+        {
+          "text": "A breech-loading rifle formerly used in the British service; -- so called from the inventor.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "snider": {
       "word": "SNIDER RIFLE; SNIDER",
       "definitions": [
         {
@@ -1359,11 +1381,15 @@
         {
           "text": "To sneak. [Prov. Eng.]",
           "partOfSpeech": "verb"
+        },
+        {
+          "text": "A small eel. [Prov. Eng.]",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "snigsnigg": {
+    "snigg": {
       "word": "SNIG; SNIGG",
       "definitions": [
         {
@@ -1551,7 +1577,17 @@
       ],
       "relatedWords": []
     },
-    "snithesnithy": {
+    "snithe": {
+      "word": "SNITHE; SNITHY",
+      "definitions": [
+        {
+          "text": "Sharp; piercing; cutting; -- applied to the wind. [Prov. Eng.]",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "snithy": {
       "word": "SNITHE; SNITHY",
       "definitions": [
         {
@@ -1639,7 +1675,7 @@
       "word": "SNOBBISH",
       "definitions": [
         {
-          "text": "Of or pertaining to a snob; characteristic of, or befitting, a",
+          "text": "Of or pertaining to a snob; characteristic of, or befitting, a snob; vulgarly pretentious.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1905,6 +1941,22 @@
       "word": "SNOUT",
       "definitions": [
         {
+          "text": "The long, projecting nose of a beast, as of swine.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The nose of a man; -- in contempt. Hudibras.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "The nozzle of a pipe, hose, etc.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Zoöl.) (a) The anterior prolongation of the head of a gastropod; -- called also rostrum. (b) The anterior prolongation of the head of weevils and allied beetles. Snout beetle (Zoöl.), any one of many species of beetles having an elongated snout and belonging to the tribe Rhynchophora; a weevil.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To furnish with a nozzle or point.",
           "partOfSpeech": "verb"
         }
@@ -1993,6 +2045,16 @@
       ],
       "relatedWords": []
     },
+    "snowblind": {
+      "word": "SNOW-BLIND",
+      "definitions": [
+        {
+          "text": "Affected with blindness by the brilliancy of snow.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "snowbound": {
       "word": "SNOW-BOUND",
       "definitions": [
@@ -2047,7 +2109,7 @@
       "word": "SNOWDROP",
       "definitions": [
         {
-          "text": "A bulbous plant (Galanthus nivalis) bearing white flowers, which often appear while the snow is on the ground. It is cultivated",
+          "text": "A bulbous plant (Galanthus nivalis) bearing white flowers, which often appear while the snow is on the ground. It is cultivated in gardens for its beauty. Snowdrop tree. See Silver-bell tree, under Silver, a.",
           "partOfSpeech": "noun"
         }
       ],
@@ -2109,7 +2171,17 @@
       ],
       "relatedWords": []
     },
-    "snowplowsnowplough": {
+    "snowplow": {
+      "word": "SNOWPLOW; SNOWPLOUGH",
+      "definitions": [
+        {
+          "text": "An implement operating like a plow, but on a larger scale, for clearing away the snow from roads, railways, etc.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "snowplough": {
       "word": "SNOWPLOW; SNOWPLOUGH",
       "definitions": [
         {
@@ -2273,6 +2345,14 @@
           "partOfSpeech": "verb"
         },
         {
+          "text": "To draw in, or to inhale, forcibly through the nose; to sniff. He snuffs the wind, his heels the sand excite. Dryden.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To perceive by the nose; to scent; to smell.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To inhale air through the nose with violence or with noise, as do dogs and horses. Dryden.",
           "partOfSpeech": "verb"
         },
@@ -2291,20 +2371,6 @@
         {
           "text": "Resentment, displeasure, or contempt, expressed by a snuffing of the nose. [Obs.] Snuff dipping. See Dipping, n., 5. [Slang]",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "snuffschnupfenacoldintheheadschnuppentosnuffairalso": {
-      "word": "snuff, schnupfen a cold in the head, schnuppen to snuff (air), also,",
-      "definitions": [
-        {
-          "text": "To draw in, or to inhale, forcibly through the nose; to sniff. He snuffs the wind, his heels the sand excite. Dryden.",
-          "partOfSpeech": "verb"
-        },
-        {
-          "text": "To perceive by the nose; to scent; to smell.",
-          "partOfSpeech": "verb"
         }
       ],
       "relatedWords": []
@@ -2421,6 +2487,10 @@
         {
           "text": "Compact, convenient, and comfortable; as, a snug farm, house, or property.",
           "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Same as Lug, n., 3.",
+          "partOfSpeech": "noun"
         },
         {
           "text": "To lie close; to snuggle; to snudge; -- often with up, or together; as, a child snugs up to its mother.",

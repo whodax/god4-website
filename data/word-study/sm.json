@@ -1,34 +1,6 @@
 {
   "version": "v1",
   "entries": {
-    "smallfrassumedllminutiareforminutarefrlminutus": {
-      "word": "small, fr. (assumed) LL. minutiare, for minutare, fr. L. minutus",
-      "definitions": [
-        {
-          "text": "To diminish; to lessen. The living of poor men thereby minished. Latimer.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
-    "smallgminderlessohgminniroaminadvicelminnia": {
-      "word": "small, G. minder less, OHG. minniro, a., min, adv., Icel. minni, a.,",
-      "definitions": [
-        {
-          "text": "Inferior in bulk, degree, importance, etc.; less; smaller; of little account; as, minor divisions of a body.",
-          "partOfSpeech": "adverb"
-        },
-        {
-          "text": "(Mus.)",
-          "partOfSpeech": "adverb"
-        },
-        {
-          "text": "Less by a semitone in interval or difference of pitch; as, a minor third. Asia Minor (Geog.), the Lesser Asia; that part of Asia which lies between the Euxine, or Black Sea, on the north, and the Mediterranean on the south. sixth are minor, -- much used for mournful and solemn subjects. ecclesiastical offices who are not in holy orders, as doorkeepers, acolytes, etc. strictly correct form has the third and sixth minor, with a semitone between the seventh and eighth, which involves an augmented second interval, or three semitones, between the sixth and seventh, as, 6/F, 7/G#, 8/A. But, for melodic purposes, both the sixth and the seventh are sometimes made major in the ascending, and minor in the descending, scale, thus: --See Major.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
     "smack": {
       "word": "SMACK",
       "definitions": [
@@ -61,6 +33,22 @@
           "partOfSpeech": "adverb"
         },
         {
+          "text": "To have a smack; to be tinctured with any particular taste.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To have or exhibit indications of the presence of any character or quality. All sects, all ages, smack of this vice. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To kiss with a close compression of the lips, so as to make a sound when they separate; to kiss with a sharp noise; to buss.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To make a noise by the separation of the lips after tasting anything.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "To kiss with a sharp noise; to buss.",
           "partOfSpeech": "verb"
         },
@@ -71,28 +59,6 @@
         {
           "text": "To make a sharp noise by striking; to crack; as, to smack a whip. \"She smacks the silken thong.\" Young.",
           "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "smatzensmackzeenicelsmakkatotasteswsmakadansmagesee": {
-      "word": "smatzen, smackzeen), Icel smakka to taste, Sw. smaka, Dan. smage. See",
-      "definitions": [
-        {
-          "text": "To have a smack; to be tinctured with any particular taste.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To have or exhibit indications of the presence of any character or quality. All sects, all ages, smack of this vice. Shak.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To kiss with a close compression of the lips, so as to make a sound when they separate; to kiss with a sharp noise; to buss.",
-          "partOfSpeech": "noun"
-        },
-        {
-          "text": "To make a noise by the separation of the lips after tasting anything.",
-          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -219,6 +185,16 @@
       ],
       "relatedWords": []
     },
+    "smalls": {
+      "word": "SMALLS",
+      "definitions": [
+        {
+          "text": "See Small, n., 2, 3.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "smallsword": {
       "word": "SMALLSWORD",
       "definitions": [
@@ -239,6 +215,16 @@
       ],
       "relatedWords": []
     },
+    "smalt": {
+      "word": "SMALT",
+      "definitions": [
+        {
+          "text": "A deep blue pigment or coloring material used in various arts. It is a vitreous substance made of cobalt, potash, and calcined quartz fused, and reduced to a powder.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "smaltblue": {
       "word": "SMALT-BLUE",
       "definitions": [
@@ -249,7 +235,17 @@
       ],
       "relatedWords": []
     },
-    "smaltinesmaltite": {
+    "smaltine": {
+      "word": "SMALTINE; SMALTITE",
+      "definitions": [
+        {
+          "text": "A tin-white or gray mineral of metallic luster. It is an arsenide of cobalt, nickel, and iron. Called also speiskobalt.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "smaltite": {
       "word": "SMALTINE; SMALTITE",
       "definitions": [
         {
@@ -509,6 +505,14 @@
       "word": "SMEAR",
       "definitions": [
         {
+          "text": "To overspread with anything unctuous, viscous, or adhesive; to daub; as, to smear anything with oil. \"Smear the sleepy grooms with blood.\" Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To soil in any way; to contaminate; to pollute; to stain morally; as, to be smeared with infamy. Shak.",
+          "partOfSpeech": "verb"
+        },
+        {
           "text": "A fat, oily substance; oinment. Johnson.",
           "partOfSpeech": "noun"
         },
@@ -745,13 +749,7 @@
         {
           "text": "Fig.: A gull; a simpleton. [Obs.] eau & Fl. Sand smelt (Zoöl.), the silverside.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "smeltagschmelzenohgsmelzansmelzenprobablyakintogr": {
-      "word": "smelta, G. schmelzen OHG. smelzan, smelzen; probably akin to Gr.",
-      "definitions": [
+        },
         {
           "text": "To melt or fuse, as, ore, for the purpose of separating and refining the metal; hence, to reduce; to refine; to flux or scorify; as, to smelt tin.",
           "partOfSpeech": "verb"
@@ -805,11 +803,15 @@
         {
           "text": "See Smirk.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Smart; jaunty; spruce. See Smirk, a. [Obs.] So smerk, so smooth, his pricked ears. Spenser.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "smerksmerky": {
+    "smerky": {
       "word": "SMERK; SMERKY",
       "definitions": [
         {
@@ -1301,11 +1303,15 @@
         {
           "text": "Infection. [Pov. Eng.] Wright.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Infectious; catching. [Scot. & Prov. Eng.] H. Kingsley.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
     },
-    "smittlesmittlish": {
+    "smittlish": {
       "word": "SMITTLE; SMITTLISH",
       "definitions": [
         {
@@ -1591,7 +1597,7 @@
       ],
       "relatedWords": []
     },
-    "smoldersmoulder": {
+    "smolder": {
       "word": "SMOLDER; SMOULDER",
       "definitions": [
         {
@@ -1613,7 +1619,33 @@
       ],
       "relatedWords": []
     },
-    "smolderingsmouldering": {
+    "smoulder": {
+      "word": "SMOLDER; SMOULDER",
+      "definitions": [
+        {
+          "text": "To burn and smoke without flame; to waste away by a slow and supressed combustion. The smoldering dust did round about him smoke. Spenser.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To exist in a state of suppressed or smothered activity; to burn inwardly; as, a smoldering feud.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To smother; to suffocate; to choke. [Obs.] Holinshed. Palsgrave.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "Smoke; smother. [Obs.] The smolder stops our nose with stench. Gascoigne.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "See Smolder.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "smoldering": {
       "word": "SMOLDERING; SMOULDERING",
       "definitions": [
         {
@@ -1623,7 +1655,17 @@
       ],
       "relatedWords": []
     },
-    "smolderingnesssmoulderingness": {
+    "smouldering": {
+      "word": "SMOLDERING; SMOULDERING",
+      "definitions": [
+        {
+          "text": "Being in a state of suppressed activity; quiet but not dead. Some evil chance Will make the smoldering scandal break and blaze. Tennyson.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "smolderingness": {
       "word": "SMOLDERINGNESS; SMOULDERINGNESS",
       "definitions": [
         {
@@ -1633,11 +1675,35 @@
       ],
       "relatedWords": []
     },
-    "smoldrysmouldry": {
+    "smoulderingness": {
+      "word": "SMOLDERINGNESS; SMOULDERINGNESS",
+      "definitions": [
+        {
+          "text": "The state of smoldering.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "smoldry": {
       "word": "SMOLDRY; SMOULDRY",
       "definitions": [
         {
           "text": "Smoldering; suffocating; smothery. [Obs.] A flaming fire ymixt with smoldry smoke. Spenser.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "smouldry": {
+      "word": "SMOLDRY; SMOULDRY",
+      "definitions": [
+        {
+          "text": "Smoldering; suffocating; smothery. [Obs.] A flaming fire ymixt with smoldry smoke. Spenser.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "See Smoldry.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1831,7 +1897,17 @@
       ],
       "relatedWords": []
     },
-    "smorzandosmorsato": {
+    "smorzando": {
+      "word": "SMORZANDO; SMORSATO",
+      "definitions": [
+        {
+          "text": "Growing gradually fainter and softer; dying away; morendo.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "smorsato": {
       "word": "SMORZANDO; SMORSATO",
       "definitions": [
         {
@@ -1953,26 +2029,6 @@
       ],
       "relatedWords": []
     },
-    "smoulder": {
-      "word": "SMOULDER",
-      "definitions": [
-        {
-          "text": "See Smolder.",
-          "partOfSpeech": "verb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "smouldry": {
-      "word": "SMOULDRY",
-      "definitions": [
-        {
-          "text": "See Smoldry.",
-          "partOfSpeech": "adjective"
-        }
-      ],
-      "relatedWords": []
-    },
     "smudge": {
       "word": "SMUDGE",
       "definitions": [
@@ -1995,6 +2051,16 @@
         {
           "text": "To smear; to smutch; to soil; to blacken with smoke.",
           "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "smudginess": {
+      "word": "SMUDGINESS",
+      "definitions": [
+        {
+          "text": "The quality or state of being smudged, soiled, or blurred. C. A. Young.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -2069,6 +2135,30 @@
       "word": "SMUT",
       "definitions": [
         {
+          "text": "Foul matter, like soot or coal dust; also, a spot or soil made by such matter.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Mining)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Bad, soft coal, containing much earthy matter, found in the immediate locality of faults.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An affection of cereal grains producing a swelling which is at length resolved into a powdery sooty mass. It is caused by parasitic fungi of the genus Ustilago. Ustilago segetum, or U. Carbo, is the commonest kind; that of Indian corn is Ustilago maydis.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Obscene language; ribaldry; obscenity. He does not stand upon decency . . . but will talk smut, though a priest and his mother be in the room. Addison. Smut mill, a machine for cleansing grain from smut.",
+          "partOfSpeech": "noun"
+        },
+        {
           "text": "To stain or mark with smut; to blacken with coal, soot, or other dirty substance.",
           "partOfSpeech": "verb"
         },
@@ -2131,7 +2221,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Obscene; not modest or pure; as, a smutty saying.",
+          "text": "Obscene; not modest or pure; as, a smutty saying. The smutty joke, ridiculously lewd. Smollett.",
           "partOfSpeech": "adjective"
         }
       ],

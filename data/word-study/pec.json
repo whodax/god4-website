@@ -293,17 +293,7 @@
       ],
       "relatedWords": []
     },
-    "pectinately": {
-      "word": "PECTINATELY",
-      "definitions": [
-        {
-          "text": "In a pectinate manner.",
-          "partOfSpeech": "adverb"
-        }
-      ],
-      "relatedWords": []
-    },
-    "pectinatepectinated": {
+    "pectinate": {
       "word": "PECTINATE; PECTINATED",
       "definitions": [
         {
@@ -321,6 +311,38 @@
         {
           "text": "Interlaced, like two combs. [R.] \"Our fingers pectinated, or shut together.\" Sir T. Browne. Pectinate claw (Zoöl.), a claw having a serrate edge, found in some birds, and supposed to be used in cleaning the feathers.",
           "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pectinated": {
+      "word": "PECTINATE; PECTINATED",
+      "definitions": [
+        {
+          "text": "Resembling the teeth of a comb.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Nat. Hist.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Having very narrow, close divisions, in arrangement and regularity resembling those of a comb; comblike; as, a pectinate leaf; pectinated muscles. See Illust. (e) of Antennæ.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Interlaced, like two combs. [R.] \"Our fingers pectinated, or shut together.\" Sir T. Browne. Pectinate claw (Zoöl.), a claw having a serrate edge, found in some birds, and supposed to be used in cleaning the feathers.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "pectinately": {
+      "word": "PECTINATELY",
+      "definitions": [
+        {
+          "text": "In a pectinate manner.",
+          "partOfSpeech": "adverb"
         }
       ],
       "relatedWords": []

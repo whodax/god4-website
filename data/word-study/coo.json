@@ -5,7 +5,11 @@
       "word": "COO",
       "definitions": [
         {
-          "text": "To make a low repeated cry or sound, like the characteristic note of pigeons or doves. The stockdove only through the forest cooes, Mournfully hoarse.",
+          "text": "To make a low repeated cry or sound, like the characteristic note of pigeons or doves. The stockdove only through the forest cooes, Mournfully hoarse. Thomson.",
+          "partOfSpeech": "verb"
+        },
+        {
+          "text": "To show affection; to act in a loving way. See under Bill, v. i. \"Billing or cooing.\" Byron.",
           "partOfSpeech": "verb"
         }
       ],
@@ -104,7 +108,17 @@
         "yelp"
       ]
     },
-    "cooeycooee": {
+    "cooee": {
+      "word": "COOEY; COOEE",
+      "definitions": [
+        {
+          "text": "A peculiar whistling sound made by the Australian aborigenes as a call or signal. [Written also cooie.]",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cooey": {
       "word": "COOEY; COOEE",
       "definitions": [
         {
@@ -419,7 +433,17 @@
         "warmer"
       ]
     },
-    "cookeycookie": {
+    "cookey": {
+      "word": "COOKEY; COOKIE",
+      "definitions": [
+        {
+          "text": "See Cooky.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "cookie": {
       "word": "COOKEY; COOKIE",
       "definitions": [
         {
@@ -1178,11 +1202,25 @@
         "wine cooler"
       ]
     },
+    "coolheaded": {
+      "word": "COOL-HEADED",
+      "definitions": [
+        {
+          "text": "Having a temper not easily excited; free from passion.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "coolie": {
       "word": "COOLIE",
       "definitions": [
         {
           "text": "Same as Cooly.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "An East Indian porter or carrier; a laborer transported from the East Indies, China, or Japan, for service in some other country.",
           "partOfSpeech": "noun"
         }
       ],
@@ -1283,7 +1321,7 @@
       ],
       "relatedWords": []
     },
-    "coolycoolie": {
+    "cooly": {
       "word": "COOLY; COOLIE",
       "definitions": [
         {
@@ -1309,11 +1347,15 @@
         {
           "text": "A dry measure of four bushels, or half a quarter. [Written also comb.]",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A hollow in a hillside. [Prov. Eng.] See Comb, Combe.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
     },
-    "coombcoombe": {
+    "coombe": {
       "word": "COOMB; COOMBE",
       "definitions": [
         {

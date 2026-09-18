@@ -79,22 +79,32 @@
       ],
       "relatedWords": []
     },
+    "seraphic": {
+      "word": "SERAPHIC; SERAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a seraph; becoming, or suitable to, a seraph; angelic; sublime; pure; refined. \"Seraphic arms and trophies.\" Milton. \"Seraphical fervor.\" Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seraphical": {
+      "word": "SERAPHIC; SERAPHICAL",
+      "definitions": [
+        {
+          "text": "Of or pertaining to a seraph; becoming, or suitable to, a seraph; angelic; sublime; pure; refined. \"Seraphic arms and trophies.\" Milton. \"Seraphical fervor.\" Jer. Taylor.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
     "seraphicism": {
       "word": "SERAPHICISM",
       "definitions": [
         {
           "text": "The character, quality, or state of a seraph; seraphicalness. [R.] Cudworth.",
           "partOfSpeech": "noun"
-        }
-      ],
-      "relatedWords": []
-    },
-    "seraphicseraphical": {
-      "word": "SERAPHIC; SERAPHICAL",
-      "definitions": [
-        {
-          "text": "Of or pertaining to a seraph; becoming, or suitable to, a seraph; angelic; sublime; pure; refined. \"Seraphic arms and trophies.\" Milton. \"Seraphical fervor.\" Jer. Taylor.",
-          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -170,8 +180,12 @@
       "relatedWords": []
     },
     "sere": {
-      "word": "SERE",
+      "word": "SEAR; SERE",
       "definitions": [
+        {
+          "text": "[OE. seer, AS. seár (assumed) fr. seárian to wither; akin to D. zoor dry, LG. soor, OHG. soren to to wither, Gr. sush) to dry, to wither, Zend hush to dry. sq. root152. Cf. Austere, Sorrel, a.] Dry; withered; no longer green; -- applied to leaves. Milton. I have lived long enough; my way of life Is fall'n into the sear, the yellow leaf. Shak.",
+          "partOfSpeech": "adjective"
+        },
         {
           "text": "Dry; withered. Same as Sear. But with its sound it shook the sails That were so thin and sere. Coleridge.",
           "partOfSpeech": "adjective"
@@ -217,7 +231,17 @@
       ],
       "relatedWords": []
     },
-    "serenataserenate": {
+    "serenata": {
+      "word": "SERENATA; SERENATE",
+      "definitions": [
+        {
+          "text": "A piece of vocal music, especially one on an amoreus subject; a serenade. Or serenate, which the starved lover sings To his pround fair. Milton. Handel, and by Handel himself, to a cantata of a pastoreal of dramatic character, to a secular ode, etc.; also by Mozart and others to an orchectral composition, in several movements, midway between the suite of an earlier period and the modern symphony. Grove.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "serenate": {
       "word": "SERENATA; SERENATE",
       "definitions": [
         {
@@ -305,7 +329,17 @@
       ],
       "relatedWords": []
     },
-    "serfageserfdom": {
+    "serf": {
+      "word": "SERF",
+      "definitions": [
+        {
+          "text": "A servant or slave employed in husbandry, and in some countries attached to the soil and transferred with it, as formerly in Russia. In England, at least from the reign of Henry II, one only, and that the inferior species [of villeins], existed . . . But by the customs of France and Germany, persons in this abject state seem to have been called serfs, and distinguished from villeins, who were only bound to fixed payments and duties in respect of their lord, though, as it seems, without any legal redress if injured by him. Hallam. may be sold in any way. A serf, according to the strict sense of the term, is one bound to work on a certain estate, and thus attached to the soil, and sold with it into the service of whoever purchases the land.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "serfage": {
       "word": "SERFAGE; SERFDOM",
       "definitions": [
         {
@@ -315,7 +349,27 @@
       ],
       "relatedWords": []
     },
-    "serfhoodserfism": {
+    "serfdom": {
+      "word": "SERFAGE; SERFDOM",
+      "definitions": [
+        {
+          "text": "The state or condition of a serf.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "serfhood": {
+      "word": "SERFHOOD; SERFISM",
+      "definitions": [
+        {
+          "text": "Serfage.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "serfism": {
       "word": "SERFHOOD; SERFISM",
       "definitions": [
         {
@@ -461,6 +515,16 @@
         {
           "text": "In a series, or regular order; in a serial manner; as, arranged serially; published serially.",
           "partOfSpeech": "adverb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seriate": {
+      "word": "SERIATE",
+      "definitions": [
+        {
+          "text": "Arranged in a series or succession; pertaining to a series.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []
@@ -611,7 +675,7 @@
       "word": "SERIES WINDING",
       "definitions": [
         {
-          "text": "A winding in which the armature coil and the field-magnet coil",
+          "text": "A winding in which the armature coil and the field-magnet coil are in series with the external circuits; -- opposed to shunt winding. --Se\"ries-wound`, a.",
           "partOfSpeech": ""
         }
       ],
@@ -647,7 +711,17 @@
       ],
       "relatedWords": []
     },
-    "seriocomicseriocomical": {
+    "seriocomic": {
+      "word": "SERIO-COMIC; SERIO-COMICAL",
+      "definitions": [
+        {
+          "text": "Having a mixture of seriousness and sport; serious and comical.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seriocomical": {
       "word": "SERIO-COMIC; SERIO-COMICAL",
       "definitions": [
         {
@@ -689,7 +763,17 @@
       ],
       "relatedWords": []
     },
-    "serjeantserjeantcy": {
+    "serjeant": {
+      "word": "SERJEANT; SERJEANTCY",
+      "definitions": [
+        {
+          "text": "See Sergeant, Sergeantcy, etc. Serjeant-at-arms. See Sergeant- at-arms, under Sergeant.",
+          "partOfSpeech": ""
+        }
+      ],
+      "relatedWords": []
+    },
+    "serjeantcy": {
       "word": "SERJEANT; SERJEANTCY",
       "definitions": [
         {
@@ -779,7 +863,17 @@
       ],
       "relatedWords": []
     },
-    "sermonicsermonical": {
+    "sermonic": {
+      "word": "SERMONIC; SERMONICAL",
+      "definitions": [
+        {
+          "text": "Like, or appropriate to, a sermon; grave and didactic. [R.] \"Conversation . . . satirical or sermonic.\" Prof. Wilson. \"Sermonical style.\" V. Knox.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "sermonical": {
       "word": "SERMONIC; SERMONICAL",
       "definitions": [
         {
@@ -847,7 +941,17 @@
       ],
       "relatedWords": []
     },
-    "seronseroon": {
+    "seron": {
+      "word": "SERON; SEROON",
+      "definitions": [
+        {
+          "text": "Same as Ceroon. signification. McElrath.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "seroon": {
       "word": "SERON; SEROON",
       "definitions": [
         {
@@ -905,7 +1009,7 @@
       ],
       "relatedWords": []
     },
-    "serowsurrow": {
+    "serow": {
       "word": "SEROW; SURROW",
       "definitions": [
         {
@@ -1061,6 +1165,16 @@
       ],
       "relatedWords": []
     },
+    "serpentinize": {
+      "word": "SERPENTINIZE",
+      "definitions": [
+        {
+          "text": "To convert (a magnesian silicate) into serpentine.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
     "serpentinous": {
       "word": "SERPENTINOUS",
       "definitions": [
@@ -1165,7 +1279,17 @@
       ],
       "relatedWords": []
     },
-    "serpulianserpulidan": {
+    "serpulian": {
+      "word": "SERPULIAN; SERPULIDAN",
+      "definitions": [
+        {
+          "text": "A serpula.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "serpulidan": {
       "word": "SERPULIAN; SERPULIDAN",
       "definitions": [
         {
@@ -1209,7 +1333,25 @@
       ],
       "relatedWords": []
     },
-    "serrateserrated": {
+    "serrate": {
+      "word": "SERRATE; SERRATED",
+      "definitions": [
+        {
+          "text": "Notched on the edge, like a saw.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "(Bot.)",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Beset with teeth pointing forwards or upwards; as, serrate leaves. Doubly serrate, having small serratures upon the large ones, as the leaves of the elm. serratures; -- said of a leaf.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "serrated": {
       "word": "SERRATE; SERRATED",
       "definitions": [
         {
@@ -1349,7 +1491,17 @@
       ],
       "relatedWords": []
     },
-    "serrulateserrulated": {
+    "serrulate": {
+      "word": "SERRULATE; SERRULATED",
+      "definitions": [
+        {
+          "text": "Finely serrate; having very minute teeth.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": []
+    },
+    "serrulated": {
       "word": "SERRULATE; SERRULATED",
       "definitions": [
         {
@@ -1630,8 +1782,12 @@
       "relatedWords": []
     },
     "service": {
-      "word": "SERVICE",
+      "word": "SERVICE; SERVICE",
       "definitions": [
+        {
+          "text": "A name given to several trees and shrubs of the genus Pyrus, as Pyrus domestica and P. torminalis of Europe, the various species of mountain ash or rowan tree, and the American shad bush (see Shad bush, under Shad). They have clusters of small, edible, applelike berries. Service berry (Bot.), the fruit of any kind of service tree. In British America the name is especially applied to that of the several species or varieties of the shad bush (Amelanchier.)",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "The act of serving; the occupation of a servant; the performance of labor for the benefit of another, or at another's command; attendance of an inferior, hired helper. slave, etc., on a superior, employer, master, or the like; also, spiritual obedience and love. \"O God . . . whose service is perfect freedom.\" Bk. of Com. Prayer. Madam, I entreat true peace of you, Which I will purchase with my duteous service. Shak. God requires no man's service upon hard and unreasonable terms. Tillotson.",
           "partOfSpeech": "noun"
@@ -1683,6 +1839,14 @@
         {
           "text": "(Tennis)",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "The act of serving the ball.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "Act of serving or covering. See Serve, v. t., 13. Service book, a prayer book or missal. distance of 21 feet from it. communication of the writ or process, etc., to the party to be affected by it, so as to subject him to its operation; the reading of it to the person to whom notice is intended to be given, or the leaving of an attested copy with the person or his attorney, or at his usual place of abode. goods according to the direction. estate, or person of the defendant. pipes, and the like. Tomlinson. or in actual war.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -1695,7 +1859,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Prepared for rendering service; capable of, or fit for, the performance of duty; hence, active; diligent. Courteous he was, lowly, and servysable. Chaucer. Bright-hearnessed angels sit in order serviceable. Milton.",
+          "text": "Prepared for rendering service; capable of, or fit for, the performance of duty; hence, active; diligent. Courteous he was, lowly, and servysable. Chaucer. Bright-hearnessed angels sit in order serviceable. Milton. Seeing her so sweet and serviceable. Tennnyson.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1711,7 +1875,7 @@
       ],
       "relatedWords": []
     },
-    "servicecapservicehat": {
+    "servicecap": {
       "word": "SERVICE CAP; SERVICE HAT",
       "definitions": [
         {
@@ -1721,12 +1885,12 @@
       ],
       "relatedWords": []
     },
-    "serviceservice": {
-      "word": "SERVICE; SERVICE",
+    "servicehat": {
+      "word": "SERVICE CAP; SERVICE HAT",
       "definitions": [
         {
-          "text": "A name given to several trees and shrubs of the genus Pyrus, as Pyrus domestica and P. torminalis of Europe, the various species of mountain ash or rowan tree, and the American shad bush (see Shad bush, under Shad). They have clusters of small, edible, applelike berries. Service berry (Bot.), the fruit of any kind of service tree. In British America the name is especially applied to that of the several species or varieties of the shad bush (Amelanchier.)",
-          "partOfSpeech": "noun"
+          "text": "A cap or hat worn by officers or enlisted men when full-dress uniform, or dress uniform, is not worn. In the United States army the service cap is round, about 3½ inches high, flat-topped, with a visor. The service hat is of soft felt of khaki color, with broad brim and high crown, creased down the middle.",
+          "partOfSpeech": ""
         }
       ],
       "relatedWords": []

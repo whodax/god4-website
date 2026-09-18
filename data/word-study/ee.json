@@ -1,7 +1,17 @@
 {
   "version": "v1",
   "entries": {
-    "eekeeke": {
+    "eek": {
+      "word": "EEK; EEKE",
+      "definitions": [
+        {
+          "text": "See Eke. [Obs.] Spenser.",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "relatedWords": []
+    },
+    "eeke": {
       "word": "EEK; EEKE",
       "definitions": [
         {
@@ -91,7 +101,92 @@
       ],
       "relatedWords": []
     },
-    "eerieeery": {
+    "eerie": {
+      "word": "EERIE; EERY",
+      "definitions": [
+        {
+          "text": "Serving to inspire fear, esp. a dread of seeing ghosts; wild; weird; as, eerie stories. She whose elfin prancer springs By night to eery warblings. Tennyson.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Affected with fear; affrighted. Burns.",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "relatedWords": [
+        "arcane",
+        "awe-inspiring",
+        "awesome",
+        "awful",
+        "awing",
+        "bizarre",
+        "blue",
+        "cadaverous",
+        "corpselike",
+        "crawly",
+        "creepy",
+        "deadly",
+        "deathlike",
+        "deathly",
+        "deathly pale",
+        "dreadful",
+        "eldritch",
+        "esoteric",
+        "extramundane",
+        "extraterrestrial",
+        "fantastic",
+        "fey",
+        "frightening",
+        "ghastly",
+        "ghostlike",
+        "ghostly",
+        "grisly",
+        "grotesque",
+        "gruesome",
+        "haggard",
+        "hypernormal",
+        "hyperphysical",
+        "livid",
+        "lurid",
+        "macabre",
+        "mortuary",
+        "mysterious",
+        "numinous",
+        "occult",
+        "otherworldly",
+        "pale",
+        "preterhuman",
+        "preternatural",
+        "preternormal",
+        "pretersensual",
+        "psychic",
+        "scary",
+        "spectral",
+        "spiritual",
+        "spookish",
+        "spooky",
+        "strange",
+        "superhuman",
+        "supernatural",
+        "supernormal",
+        "superphysical",
+        "supersensible",
+        "supersensual",
+        "supramundane",
+        "supranatural",
+        "transcendental",
+        "transmundane",
+        "uncanny",
+        "unco",
+        "uncolike",
+        "unearthly",
+        "unhuman",
+        "unworldly",
+        "wan",
+        "weird"
+      ]
+    },
+    "eery": {
       "word": "EERIE; EERY",
       "definitions": [
         {

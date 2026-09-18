@@ -358,6 +358,16 @@
         "zephyr"
       ]
     },
+    "fluegel": {
+      "word": "FLUGEL; FLUEGEL",
+      "definitions": [
+        {
+          "text": "A grand piano or a harpsichord, both being wing-shaped.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
     "fluence": {
       "word": "FLUENCE",
       "definitions": [
@@ -975,7 +985,7 @@
       "word": "FLUFFY",
       "definitions": [
         {
-          "text": "Pertaining to, or resembling, fluff or nap; soft and downy. \"The carpets were fluffy.\" Thackeray. The present Barnacle . . . had a youthful aspect, and the fluffiest",
+          "text": "Pertaining to, or resembling, fluff or nap; soft and downy. \"The carpets were fluffy.\" Thackeray. The present Barnacle . . . had a youthful aspect, and the fluffiest little whisker, perhaps, that ever was seen. Dickens.",
           "partOfSpeech": "adjective"
         }
       ],
@@ -1053,7 +1063,7 @@
         "yeasty"
       ]
     },
-    "flugelfluegel": {
+    "flugel": {
       "word": "FLUGEL; FLUEGEL",
       "definitions": [
         {
@@ -1364,8 +1374,12 @@
       "relatedWords": []
     },
     "flukan": {
-      "word": "FLUKAN",
+      "word": "FLOOKAN; FLUKAN",
       "definitions": [
+        {
+          "text": "See Flucan.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "Flucan.",
           "partOfSpeech": "noun"
@@ -1978,7 +1992,17 @@
       ],
       "relatedWords": []
     },
-    "fluocerinefluocerite": {
+    "fluocerine": {
+      "word": "FLUOCERINE; FLUOCERITE",
+      "definitions": [
+        {
+          "text": "A fluoride of cerium, occuring near Fahlun in Sweden. Tynosite, from Colorado, is probably the same mineral.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fluocerite": {
       "word": "FLUOCERINE; FLUOCERITE",
       "definitions": [
         {
@@ -2743,7 +2767,7 @@
           "partOfSpeech": "adjective"
         },
         {
-          "text": "Consisting of cards of one suit. Flush bolt. (a) A screw bolt whose head is countersunk, so as to be flush with a surface. (b) A sliding bolt let into the face or edge of a door, so as to be flush",
+          "text": "Consisting of cards of one suit. Flush bolt. (a) A screw bolt whose head is countersunk, so as to be flush with a surface. (b) A sliding bolt let into the face or edge of a door, so as to be flush therewith. flushing drainpipes, etc.",
           "partOfSpeech": "adjective"
         },
         {
@@ -3664,7 +3688,19 @@
           "partOfSpeech": "noun"
         },
         {
-          "text": "A channel of curved section; -- usually applied to one of a",
+          "text": "A channel of curved section; -- usually applied to one of a vertical series of such channels used to decorate columns and pilasters in classical architecture. See Illust. under Base, n.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A similar channel or groove made in wood or other material, esp. in plaited cloth, as in a lady's ruffle.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A long French breakfast roll. Simonds.",
+          "partOfSpeech": "noun"
+        },
+        {
+          "text": "A stop in an organ, having a flutelike sound. Flute bit, a boring tool for piercing ebony, rosewood, and other hard woods. imparts vibrations to Knight.",
           "partOfSpeech": "noun"
         },
         {
@@ -4971,6 +5007,16 @@
         {
           "text": "The quality of being fluxible. Hammond.",
           "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "fluxible": {
+      "word": "FLUXIBLE",
+      "definitions": [
+        {
+          "text": "Capable of being melted or fused, as a mineral. Holland.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": []

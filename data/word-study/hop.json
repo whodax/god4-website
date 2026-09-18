@@ -333,7 +333,17 @@
         "yellow jacket"
       ]
     },
-    "hopbinehopbind": {
+    "hopbind": {
+      "word": "HOPBINE; HOPBIND",
+      "definitions": [
+        {
+          "text": "The climbing stem of the hop. Blackstone.",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "relatedWords": []
+    },
+    "hopbine": {
       "word": "HOPBINE; HOPBIND",
       "definitions": [
         {
@@ -980,7 +990,7 @@
       ],
       "relatedWords": []
     },
-    "hopo'mythumbhopthumb": {
+    "hopo'mythumb": {
       "word": "HOP-O'-MY-THUMB; HOP-THUMB",
       "definitions": [
         {
@@ -1169,8 +1179,12 @@
       "relatedWords": []
     },
     "hopthumb": {
-      "word": "HOP-THUMB",
+      "word": "HOP-O'-MY-THUMB; HOP-THUMB",
       "definitions": [
+        {
+          "text": "A very diminutive person. [Colloq.] liwell.",
+          "partOfSpeech": "noun"
+        },
         {
           "text": "See Hop-o'-my-thumb.",
           "partOfSpeech": "noun"

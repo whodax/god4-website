@@ -1940,6 +1940,14 @@
         {
           "text": "A school, or a session of a school or class, in which medicine or surgery is taught by the examination and treatment of patients in the presence of the pupils.",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "Of or pertaining to a bed, especially, a sick bed.",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "text": "Of or pertaining to a clinic, or to the study of disease in the living subject. Clinical baptism, baptism administered to a person on a sick bed. illustrared by the exhibition and examination of living patients. surgery which is occupied with the investigation of disease in the living subject.",
+          "partOfSpeech": "adjective"
         }
       ],
       "relatedWords": [
@@ -2006,7 +2014,7 @@
         "well-baby clinic"
       ]
     },
-    "clinicalclinic": {
+    "clinical": {
       "word": "CLINICAL; CLINIC",
       "definitions": [
         {
@@ -2018,7 +2026,27 @@
           "partOfSpeech": "adjective"
         }
       ],
-      "relatedWords": []
+      "relatedWords": [
+        "allopathic",
+        "chiropodic",
+        "chiropractic",
+        "dental",
+        "exodontic",
+        "homeopathic",
+        "hydropathic",
+        "iatric",
+        "medical",
+        "naturopathic",
+        "neurological",
+        "obstetric",
+        "orthodontic",
+        "orthopedic",
+        "osteopathic",
+        "pediatric",
+        "periodontic",
+        "prosthodontic",
+        "surgical"
+      ]
     },
     "clinically": {
       "word": "CLINICALLY",
@@ -2926,6 +2954,10 @@
         {
           "text": "(Naut.)",
           "partOfSpeech": "noun"
+        },
+        {
+          "text": "A vessel with a sharp bow, built and rigged for fast sailing. privateers in the early wars of the United States.",
+          "partOfSpeech": "noun"
         }
       ],
       "relatedWords": []
@@ -3129,7 +3161,7 @@
       "word": "CLIQUISH",
       "definitions": [
         {
-          "text": "Of or pertaining to a clique; disposed to from cliques;",
+          "text": "Of or pertaining to a clique; disposed to from cliques; exclusive in spirit.",
           "partOfSpeech": "adjective"
         }
       ],
