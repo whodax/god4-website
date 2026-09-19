@@ -97,6 +97,7 @@ function populateSearchTranslations(){
   if(label) label.textContent = selectedTranslation.abbreviation;
   if(toggle) toggle.innerHTML = escapeHtml(selectedTranslation.abbreviation) + ' <span aria-hidden="true">▼</span>';
   if(menu){
+    if(toggle) toggle.setAttribute('aria-controls', menu.id);
     menu.innerHTML = '';
     translations.forEach(function(translation){
       var option = document.createElement('button');
@@ -107,28 +108,47 @@ function populateSearchTranslations(){
       option.setAttribute('aria-selected', translation.id === searchTranslationId ? 'true' : 'false');
       option.textContent = translation.abbreviation;
       option.addEventListener('click', function(){
-        select.value = translation.id;
-        select.dispatchEvent(new Event('change', { bubbles: true }));
-        closeSearchTranslationMenu();
+        selectSearchTranslationOption(option);
       });
       menu.appendChild(option);
     });
   }
 }
 
-function closeSearchTranslationMenu(){
+function getSearchTranslationOptions(){
+  var menu = document.getElementById('searchTranslationMenu');
+  return menu ? Array.from(menu.querySelectorAll('[role="option"]')) : [];
+}
+
+function closeSearchTranslationMenu(restoreFocus){
   var menu = document.getElementById('searchTranslationMenu');
   var toggle = document.getElementById('searchTranslationToggle');
   if(menu) menu.hidden = true;
   if(toggle) toggle.setAttribute('aria-expanded', 'false');
+  if(restoreFocus && toggle) toggle.focus();
+}
+
+function selectSearchTranslationOption(option){
+  var select = document.getElementById('searchTranslation');
+  if(!option || !select) return;
+  select.value = option.getAttribute('data-translation-id');
+  select.dispatchEvent(new Event('change', { bubbles: true }));
+  closeSearchTranslationMenu(true);
 }
 
 function toggleSearchTranslationMenu(){
   var menu = document.getElementById('searchTranslationMenu');
   var toggle = document.getElementById('searchTranslationToggle');
   if(!menu || !toggle) return;
-  menu.hidden = !menu.hidden;
-  toggle.setAttribute('aria-expanded', menu.hidden ? 'false' : 'true');
+  if(!menu.hidden){
+    closeSearchTranslationMenu(false);
+    return;
+  }
+  menu.hidden = false;
+  toggle.setAttribute('aria-expanded', 'true');
+  var selectedId = document.getElementById('searchTranslation').value;
+  var selectedOption = getSearchTranslationOptions().find(function(option){ return option.getAttribute('data-translation-id') === selectedId; });
+  (selectedOption || getSearchTranslationOptions()[0]).focus();
 }
 
 function getSearchTranslation(){
@@ -265,6 +285,20 @@ function renderTray(){
 }
 
 var trayOpen = false;
+function trapDialogFocus(event, dialog){
+  var focusable = Array.from(dialog.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+  if(!focusable.length) return;
+  var first = focusable[0];
+  var last = focusable[focusable.length - 1];
+  if(event.shiftKey && document.activeElement === first){
+    event.preventDefault();
+    last.focus();
+  } else if(!event.shiftKey && document.activeElement === last){
+    event.preventDefault();
+    first.focus();
+  }
+}
+
 function toggleTray(){
   trayOpen = !trayOpen;
   var tray = document.getElementById('tray');
@@ -308,11 +342,47 @@ function initializeApp(){
     searchTranslationToggle.addEventListener('click', toggleSearchTranslationMenu);
     searchTranslationToggle.addEventListener('keydown', function(event){
       if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); toggleSearchTranslationMenu(); }
-      if(event.key === 'Escape') closeSearchTranslationMenu();
+      if(event.key === 'Escape') closeSearchTranslationMenu(true);
     });
   }
+  var searchTranslationMenu = document.getElementById('searchTranslationMenu');
+  if(searchTranslationMenu) searchTranslationMenu.addEventListener('keydown', function(event){
+    var option = event.target.closest('[role="option"]');
+    if(!option || !searchTranslationMenu.contains(option)) return;
+    var options = getSearchTranslationOptions();
+    var index = options.indexOf(option);
+    if(event.key === 'ArrowDown'){
+      event.preventDefault();
+      options[Math.min(index + 1, options.length - 1)].focus();
+    } else if(event.key === 'ArrowUp'){
+      event.preventDefault();
+      options[Math.max(index - 1, 0)].focus();
+    } else if(event.key === 'Home'){
+      event.preventDefault();
+      options[0].focus();
+    } else if(event.key === 'End'){
+      event.preventDefault();
+      options[options.length - 1].focus();
+    } else if(event.key === 'Enter' || event.key === ' '){
+      event.preventDefault();
+      selectSearchTranslationOption(option);
+    } else if(event.key === 'Escape'){
+      event.preventDefault();
+      closeSearchTranslationMenu(true);
+    }
+  });
   document.addEventListener('click', function(event){
     if(!event.target.closest('.search-translation-control')) closeSearchTranslationMenu();
+  });
+  document.addEventListener('keydown', function(event){
+    if(!trayOpen) return;
+    var tray = document.getElementById('tray');
+    if(event.key === 'Escape'){
+      event.preventDefault();
+      toggleTray();
+    } else if(event.key === 'Tab' && tray){
+      trapDialogFocus(event, tray);
+    }
   });
   var brandMark = document.getElementById('brandMark');
   if(brandMark){

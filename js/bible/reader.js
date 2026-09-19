@@ -317,7 +317,7 @@ function populateBooks(){
 function populateTranslations(){
   var translationSelect = document.getElementById('readerTranslation');
   if(!translationSelect || typeof BibleData === 'undefined') return;
-  var translations = BibleData.listTranslations();
+  var translations = BibleData.listTranslations().filter(function(translation){ return translation.id !== 'demo-local'; });
   translationSelect.innerHTML = '';
   translations.forEach(function(translation){
     var option = document.createElement('option');
@@ -445,6 +445,33 @@ function toggleFullscreen(){
   var isActive = overlay.classList.contains('active');
   overlay.setAttribute('aria-hidden', isActive ? 'false' : 'true');
   if(fullscreenButton) fullscreenButton.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+  if(isActive){
+    var closeButton = overlay.querySelector('.fs-close');
+    if(closeButton) closeButton.focus();
+  } else if(fullscreenButton){
+    fullscreenButton.focus();
+  }
 }
+
+document.addEventListener('keydown', function(event){
+  var overlay = document.getElementById('fsOverlay');
+  if(!overlay || !overlay.classList.contains('active')) return;
+  if(event.key === 'Escape'){
+    event.preventDefault();
+    toggleFullscreen();
+  } else if(event.key === 'Tab'){
+    var focusable = Array.from(overlay.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+    if(!focusable.length) return;
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+    if(event.shiftKey && document.activeElement === first){
+      event.preventDefault();
+      last.focus();
+    } else if(!event.shiftKey && document.activeElement === last){
+      event.preventDefault();
+      first.focus();
+    }
+  }
+});
 
 if(typeof WordStudyController !== 'undefined') WordStudyController.initialize();
