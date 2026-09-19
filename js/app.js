@@ -323,7 +323,11 @@ function renderTray(){
     remove.textContent = 'Remove';
     remove.addEventListener('click', function(){
       toggleFav(v.ref);
-      document.getElementById('closeTray').focus();
+      if(!saved.length && trayOpen){
+        toggleTray();
+      } else {
+        document.getElementById('closeTray').focus();
+      }
     });
     details.append(reference, remove);
     row.append(content, details);
