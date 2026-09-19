@@ -2489,7 +2489,11 @@ test('Saved Verses persists save and removal across reloads with drawer keyboard
   await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'true');
   await opener.click();
   await remove.click();
-  await expect(close).toBeFocused();
+  await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'true');
+  await expect(page.locator('#tray')).toHaveCSS('right', '-360px');
+  await expect(opener).toHaveAttribute('aria-expanded', 'false');
+  await expect(opener).toBeFocused();
+  await expect(page.locator('#savedCount')).toHaveText('0');
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.savedVerses')))).toEqual([]);
   await page.reload();
   await expect(page.locator('#savedCount')).toHaveText('0');
@@ -2559,7 +2563,7 @@ for (const failure of ['unavailable', 'quota']) {
     await page.locator('.saved-pill').click();
     await page.locator('#trayList').getByRole('button', { name: 'Remove' }).click();
     await expect(page.locator('#savedCount')).toHaveText('0');
-    await page.locator('#closeTray').press('Escape');
+    await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'true');
     await expect(page.locator('.saved-pill')).toBeFocused();
     expect(errors).toEqual([]);
   });
@@ -2579,4 +2583,34 @@ test('Saved Verses storage helper handles a throwing localStorage getter', async
     }
   });
   expect(result).toEqual([]);
+});
+
+
+test('Saved Verses keeps the drawer open and focus usable when another saved verse remains', async ({ page }) => {
+  const entries = [
+    { ref: 'John 3:16', text: 'For God so loved the world.' },
+    { ref: 'Genesis 1:1', text: 'In the beginning God created the heaven and the earth.' }
+  ];
+  await page.evaluate(entries => localStorage.setItem('god4.savedVerses', JSON.stringify(entries)), entries);
+  await page.reload();
+  const opener = page.locator('.saved-pill');
+  const close = page.locator('#closeTray');
+  const tray = page.locator('#tray');
+  await opener.click();
+  await page.locator('#trayList').getByRole('button', { name: 'Remove' }).first().click();
+  await expect(page.locator('#savedCount')).toHaveText('1');
+  await expect(tray).toHaveAttribute('aria-hidden', 'false');
+  await expect(tray).toHaveCSS('right', '0px');
+  await expect(opener).toHaveAttribute('aria-expanded', 'true');
+  await expect(close).toBeFocused();
+  await expect(page.locator('#trayList > div')).toHaveCount(1);
+  await expect(page.locator('#trayList')).toContainText('Genesis 1:1');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.savedVerses')))).toEqual([entries[1]]);
+  await close.press('Shift+Tab');
+  await expect(page.locator('#trayList').getByRole('button', { name: 'Remove' })).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expect(close).toBeFocused();
+  await close.press('Escape');
+  await expect(tray).toHaveAttribute('aria-hidden', 'true');
+  await expect(opener).toBeFocused();
 });
