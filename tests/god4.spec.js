@@ -13,6 +13,7 @@ test.beforeEach(async ({ page }) => {
     localStorage.removeItem('god4.translation');
     localStorage.removeItem('god4.compare');
     localStorage.removeItem('god4.plan.completedDays');
+    localStorage.removeItem('god4.savedVerses');
     sessionStorage.setItem(key, 'true');
   }, resetKey);
   await page.goto('/');
@@ -2461,3 +2462,121 @@ for (const savedProgress of ['broken-json', '{}', '[1,1,31,"2",null]']) {
     await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
   });
 }
+
+
+test('Saved Verses persists save and removal across reloads with drawer keyboard access', async ({ page }) => {
+  const hero = page.locator('#heroFav');
+  const ref = await page.locator('#verseRef').textContent();
+  await hero.click();
+  await expect(hero).toHaveClass(/active/);
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.savedVerses')).length)).toBe(1);
+  await page.reload();
+  await expect(page.locator('#savedCount')).toHaveText('1');
+  await expect(hero).toHaveAttribute('aria-pressed', 'true');
+  await expect(hero).toHaveClass(/active/);
+  const opener = page.locator('.saved-pill');
+  const close = page.locator('#closeTray');
+  await opener.click();
+  await expect(page.locator('#trayList')).toContainText(ref);
+  await expect(close).toBeFocused();
+  await close.press('Shift+Tab');
+  const remove = page.locator('#trayList').getByRole('button', { name: 'Remove' });
+  await expect(remove).toBeFocused();
+  await remove.press('Tab');
+  await expect(close).toBeFocused();
+  await close.press('Escape');
+  await expect(opener).toBeFocused();
+  await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'true');
+  await opener.click();
+  await remove.click();
+  await expect(close).toBeFocused();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.savedVerses')))).toEqual([]);
+  await page.reload();
+  await expect(page.locator('#savedCount')).toHaveText('0');
+  await expect(hero).toHaveAttribute('aria-pressed', 'false');
+  await expect(hero).not.toHaveClass(/active/);
+  await opener.click();
+  await expect(page.locator('#trayList > div')).toHaveCount(0);
+  await expect(page.locator('#trayEmpty')).toBeVisible();
+});
+
+for (const value of ['{broken-json', '{}', 'null', '42']) {
+  test(`Saved Verses safely handles malformed or non-array storage ${value}`, async ({ page }) => {
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.evaluate(value => localStorage.setItem('god4.savedVerses', value), value);
+    await page.reload();
+    await expect(page.locator('#savedCount')).toHaveText('0');
+    await page.locator('#heroFav').click();
+    await page.reload();
+    await expect(page.locator('#savedCount')).toHaveText('1');
+    expect(errors).toEqual([]);
+  });
+}
+
+test('Saved Verses validates entries, deduplicates references, and renders persisted HTML as text', async ({ page }) => {
+  const ref = "<b>John's</b>";
+  const text = '<svg onload="window.savedHtmlExecuted=true">verse</svg>';
+  await page.evaluate(({ ref, text }) => localStorage.setItem('god4.savedVerses', JSON.stringify([
+    null, 42, [], {}, { ref: 'missing text' }, { ref: 1, text: 'wrong ref' },
+    { ref: 'wrong text', text: {} }, { ref: ' ', text: 'empty ref' },
+    { ref: 'empty text', text: ' ' }, { ref, text, html: '<b>extra</b>' },
+    { ref, text: 'duplicate' }
+  ])), { ref, text });
+  await page.reload();
+  await expect(page.locator('#savedCount')).toHaveText('1');
+  await page.locator('.saved-pill').click();
+  await expect(page.locator('#trayList')).toContainText(ref);
+  await expect(page.locator('#trayList')).toContainText(text);
+  await expect(page.locator('#trayList img, #trayList svg, #trayList b')).toHaveCount(0);
+  expect(await page.evaluate(() => window.savedHtmlExecuted)).toBeUndefined();
+  await page.locator('#trayList').getByRole('button', { name: 'Remove' }).click();
+  await page.reload();
+  await expect(page.locator('#savedCount')).toHaveText('0');
+});
+
+for (const failure of ['unavailable', 'quota']) {
+  test(`Saved Verses remains usable when storage is ${failure}`, async ({ page }) => {
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.addInitScript(failure => {
+      // Other features have independent storage behavior outside this task.
+      const getItem = Storage.prototype.getItem;
+      const setItem = Storage.prototype.setItem;
+      Storage.prototype.getItem = function(key) {
+        if (key === 'god4.savedVerses' && failure === 'unavailable') throw new DOMException('Blocked', 'SecurityError');
+        return getItem.call(this, key);
+      };
+      Storage.prototype.setItem = function(key, value) {
+        if (key === 'god4.savedVerses') throw new DOMException('Cannot write', failure === 'quota' ? 'QuotaExceededError' : 'SecurityError');
+        return setItem.call(this, key, value);
+      };
+    }, failure);
+    await page.reload();
+    await expect(page.locator('#savedCount')).toHaveText('0');
+    await page.locator('#heroFav').click();
+    await expect(page.locator('#savedCount')).toHaveText('1');
+    await page.locator('.saved-pill').click();
+    await page.locator('#trayList').getByRole('button', { name: 'Remove' }).click();
+    await expect(page.locator('#savedCount')).toHaveText('0');
+    await page.locator('#closeTray').press('Escape');
+    await expect(page.locator('.saved-pill')).toBeFocused();
+    expect(errors).toEqual([]);
+  });
+}
+
+
+test('Saved Verses storage helper handles a throwing localStorage getter', async ({ page }) => {
+  const result = await page.evaluate(() => {
+    const descriptor = Object.getOwnPropertyDescriptor(window, 'localStorage');
+    try {
+      Object.defineProperty(window, 'localStorage', { configurable: true, get() { throw new DOMException('Blocked', 'SecurityError'); } });
+      const restored = savedVersesStorage.load();
+      savedVersesStorage.save([{ ref: 'John 3:16', text: 'Test verse' }]);
+      return restored;
+    } finally {
+      Object.defineProperty(window, 'localStorage', descriptor);
+    }
+  });
+  expect(result).toEqual([]);
+});

@@ -14,6 +14,36 @@ const verses = [
 
 let idx = 0;
 let saved = [];
+// Provider boundary: Saved Verses UI only calls load/save, not browser storage.
+const savedVersesStorage = {
+  key: 'god4.savedVerses',
+  load: function(){
+    try {
+      return validateSavedVerses(JSON.parse(window.localStorage.getItem(this.key)));
+    } catch(error){
+      return [];
+    }
+  },
+  save: function(entries){
+    try {
+      window.localStorage.setItem(this.key, JSON.stringify(validateSavedVerses(entries)));
+    } catch(error){
+      // Keep in-memory saving usable when storage is blocked or full.
+    }
+  }
+};
+
+function validateSavedVerses(entries){
+  if(!Array.isArray(entries)) return [];
+  var seen = new Set();
+  return entries.filter(function(entry){
+    if(!entry || typeof entry !== 'object' || Array.isArray(entry) ||
+      typeof entry.ref !== 'string' || !entry.ref.trim() ||
+      typeof entry.text !== 'string' || !entry.text.trim() || seen.has(entry.ref)) return false;
+    seen.add(entry.ref);
+    return true;
+  }).map(function(entry){ return {ref: entry.ref, text: entry.text}; });
+}
 const SEARCH_BATCH_SIZE = 10;
 let searchMatches = [];
 let searchVisibleCount = 0;
@@ -54,12 +84,13 @@ function toggleFav(ref, text, btnEl){
   } else {
     saved.push({ref:ref, text:text});
   }
+  savedVersesStorage.save(saved);
   var savedCount = document.getElementById('savedCount');
   if(savedCount) savedCount.textContent = saved.length;
   renderTray();
   renderLeaf();
   if(btnEl){
-    btnEl.classList.toggle('active');
+    btnEl.classList.toggle('active', isSaved(ref));
     btnEl.textContent = isSaved(ref) ? '♥' : '♡';
     btnEl.setAttribute('aria-pressed', isSaved(ref) ? 'true' : 'false');
   }
@@ -278,8 +309,24 @@ function renderTray(){
   saved.forEach(function(v){
     var row = document.createElement('div');
     row.style.cssText = 'border-bottom:1px solid var(--line);padding-bottom:12px;';
-    var safeRef = v.ref.replace(/'/g, "\\'");
-    row.innerHTML = '<div style="font-style:italic;font-size:14px;line-height:1.4;">"' + v.text + '"</div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;"><span style="font-family:\'Inter\',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);">' + v.ref + '</span><button onclick="toggleFav(\'' + safeRef + '\')" style="background:none;border:none;color:var(--oxblood);font-size:12px;cursor:pointer;font-family:\'Inter\',sans-serif;">Remove</button></div>';
+    var content = document.createElement('div');
+    content.style.cssText = 'font-style:italic;font-size:14px;line-height:1.4;';
+    content.textContent = '"' + v.text + '"';
+    var details = document.createElement('div');
+    details.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin-top:6px;';
+    var reference = document.createElement('span');
+    reference.style.cssText = "font-family:'Inter',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);";
+    reference.textContent = v.ref;
+    var remove = document.createElement('button');
+    remove.type = 'button';
+    remove.style.cssText = "background:none;border:none;color:var(--oxblood);font-size:12px;cursor:pointer;font-family:'Inter',sans-serif;";
+    remove.textContent = 'Remove';
+    remove.addEventListener('click', function(){
+      toggleFav(v.ref);
+      document.getElementById('closeTray').focus();
+    });
+    details.append(reference, remove);
+    row.append(content, details);
     list.appendChild(row);
   });
 }
@@ -320,6 +367,10 @@ var appInitialized = false;
 function initializeApp(){
   if(appInitialized) return;
   appInitialized = true;
+  saved = savedVersesStorage.load();
+  var savedCount = document.getElementById('savedCount');
+  if(savedCount) savedCount.textContent = saved.length;
+  renderTray();
   var searchInput = document.getElementById('searchInput');
   if(searchInput) searchInput.addEventListener('input', function(){
     if(!searchInput.value.trim()) clearSearch();
