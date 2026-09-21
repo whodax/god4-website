@@ -1,18 +1,15 @@
-const COMPARE_STATE_KEY = 'god4.compare';
 const compareState = { count: 2, selections: ['', '', '', ''], persisted: false };
 const compareReference = { bookId: '', chapter: 1, verse: null };
 
 function loadCompareState(){
-  try {
-    var stored = JSON.parse(localStorage.getItem(COMPARE_STATE_KEY) || '{}');
-    if([2, 3, 4].indexOf(stored.count) !== -1) compareState.count = stored.count;
-    if(Array.isArray(stored.selections)) stored.selections.slice(0, 4).forEach(function(value, index){ compareState.selections[index] = value; });
-    compareState.persisted = stored.persisted === true;
-  } catch(error) {}
+  var stored = UserData.compare.load();
+  compareState.count = stored.count;
+  compareState.selections = stored.selections;
+  compareState.persisted = stored.persisted;
 }
 
 function saveCompareState(){
-  localStorage.setItem(COMPARE_STATE_KEY, JSON.stringify(compareState));
+  UserData.compare.save(compareState);
 }
 
 function syncCompareDefaultTranslation(){

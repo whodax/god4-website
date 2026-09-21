@@ -1,8 +1,7 @@
 /* ===== SCRIPTURE COMPANION STATE & FUNCTIONS ===== */
 let currentBook = 'john';
 let currentChapter = 1;
-const TRANSLATION_STORAGE_KEY = 'god4.translation';
-let currentTranslation = localStorage.getItem(TRANSLATION_STORAGE_KEY) || 'web';
+let currentTranslation = UserData.translation.load();
 let voiceRecognition = null;
 let voiceCommandsListening = false;
 let voiceCommandsStopping = false;
@@ -330,7 +329,7 @@ function populateTranslations(){
   if(selectedIndex >= 0){
     currentTranslation = translations[selectedIndex].id;
     translationSelect.selectedIndex = selectedIndex;
-    localStorage.setItem(TRANSLATION_STORAGE_KEY, currentTranslation);
+    UserData.translation.save(currentTranslation);
   }
 }
 
@@ -339,7 +338,7 @@ function changeTranslation(translationId){
   var bookSelect = document.getElementById('bookSelect');
   if(bookSelect && bookSelect.value) currentBook = bookSelect.value;
   currentTranslation = translationId;
-  localStorage.setItem(TRANSLATION_STORAGE_KEY, currentTranslation);
+  UserData.translation.save(currentTranslation);
   var translationSelect = document.getElementById('readerTranslation');
   if(translationSelect) translationSelect.value = currentTranslation;
   populateBooks();
