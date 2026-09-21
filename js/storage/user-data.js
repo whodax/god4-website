@@ -3,7 +3,8 @@ var UserData = (function(storage){
   var keys = {
     saved: 'god4.savedVerses', plan: 'god4.plan.completedDays',
     translation: 'god4.translation', compare: 'god4.compare',
-    speed: 'god4.speech.speed', voice: 'god4.speech.voice'
+    speed: 'god4.speech.speed', voice: 'god4.speech.voice',
+    readerPosition: 'god4.reader.position'
   };
   var speeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5];
   function readJSON(key){
@@ -46,6 +47,14 @@ var UserData = (function(storage){
     return speeds.indexOf(number) >= 0 ? number : 1;
   }
   function voice(value){ return typeof value === 'string' ? value : ''; }
+  function readerPosition(value){
+    if(!value || typeof value !== 'object' || Array.isArray(value) ||
+      typeof value.bookId !== 'string' || !value.bookId.trim() ||
+      !Number.isInteger(value.chapter) || value.chapter < 1){
+      return {bookId: 'john', chapter: 1};
+    }
+    return {bookId: value.bookId, chapter: value.chapter};
+  }
   return {
     savedVerses: {
       load: function(){ return savedVerses(readJSON(keys.saved)); },
@@ -71,6 +80,10 @@ var UserData = (function(storage){
     speechVoice: {
       load: function(){ return voice(storage.read(keys.voice)); },
       save: function(value){ return storage.write(keys.voice, voice(value)); }
+    },
+    readerPosition: {
+      load: function(){ return readerPosition(readJSON(keys.readerPosition)); },
+      save: function(value){ return storage.write(keys.readerPosition, JSON.stringify(readerPosition(value))); }
     }
   };
 })(LocalStorageProvider);

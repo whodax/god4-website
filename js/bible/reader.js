@@ -1,6 +1,7 @@
 /* ===== SCRIPTURE COMPANION STATE & FUNCTIONS ===== */
-let currentBook = 'john';
-let currentChapter = 1;
+const initialReaderPosition = UserData.readerPosition.load();
+let currentBook = initialReaderPosition.bookId;
+let currentChapter = initialReaderPosition.chapter;
 let currentTranslation = UserData.translation.load();
 let voiceRecognition = null;
 let voiceCommandsListening = false;
@@ -304,13 +305,19 @@ function populateBooks(){
   var bookSelect = document.getElementById('bookSelect');
   if(!bookSelect || typeof BibleData === 'undefined') return;
   bookSelect.innerHTML = '';
-  BibleData.listBooks(currentTranslation).forEach(function(book){
+  var books = BibleData.listBooks(currentTranslation);
+  books.forEach(function(book){
     var option = document.createElement('option');
     option.value = book.id;
     option.textContent = book.name;
     bookSelect.appendChild(option);
   });
-  if(Array.from(bookSelect.options).some(function(option){ return option.value === currentBook; })) bookSelect.value = currentBook;
+  if(!books.some(function(book){ return book.id === currentBook; })){
+    var defaultBook = books.find(function(book){ return book.id === 'john'; }) || books[0];
+    currentBook = defaultBook ? defaultBook.id : 'john';
+    currentChapter = 1;
+  }
+  bookSelect.value = currentBook;
 }
 
 function populateTranslations(){
@@ -358,10 +365,21 @@ function populateChapters(){
   var sel = document.getElementById('chapterSelect');
   if(!bookSelect || !sel || typeof BibleData === 'undefined') return;
   var book = bookSelect.value;
+  var chapterCount = BibleData.getChapterCount(currentTranslation, book);
+  if(!Number.isInteger(currentChapter) || currentChapter < 1 || currentChapter > chapterCount) currentChapter = 1;
   sel.innerHTML = '';
-  for(var i = 1; i <= BibleData.getChapterCount(currentTranslation, book); i++){
+  for(var i = 1; i <= chapterCount; i++){
     sel.innerHTML += '<option>' + i + '</option>';
   }
+  sel.value = String(currentChapter);
+}
+
+function changeReaderBook(){
+  var bookSelect = document.getElementById('bookSelect');
+  if(!bookSelect) return;
+  currentBook = bookSelect.value;
+  populateChapters();
+  loadPassage();
 }
 
 function renderPassage(bookKey, chapterNum, containerId){
@@ -391,6 +409,7 @@ function loadPassage(){
   currentBook = bookSelect.value;
   currentChapter = parseInt(chapterSelect.value, 10);
   if(!BibleData.getChapter(currentTranslation, currentBook, currentChapter)) return;
+  UserData.readerPosition.save({bookId: currentBook, chapter: currentChapter});
   renderPassage(currentBook, currentChapter, 'readerContent');
   updateReaderControls();
 }
