@@ -483,7 +483,6 @@ function stopReadAloud(){
 
 function prevChapter(){
   if(currentChapter > 1){
-    currentVerse = null;
     currentChapter--;
     document.getElementById('chapterSelect').value = currentChapter;
     populateVerses();
@@ -492,7 +491,6 @@ function prevChapter(){
 }
 function nextChapter(){
   if(currentChapter < BibleData.getChapterCount(currentTranslation, currentBook)){
-    currentVerse = null;
     currentChapter++;
     document.getElementById('chapterSelect').value = currentChapter;
     populateVerses();
