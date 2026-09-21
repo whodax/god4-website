@@ -53,7 +53,9 @@ var UserData = (function(storage){
       !Number.isInteger(value.chapter) || value.chapter < 1){
       return {bookId: 'john', chapter: 1};
     }
-    return {bookId: value.bookId, chapter: value.chapter};
+    var result = {bookId: value.bookId, chapter: value.chapter};
+    if(Number.isInteger(value.verse) && value.verse > 0) result.verse = value.verse;
+    return result;
   }
   return {
     savedVerses: {
