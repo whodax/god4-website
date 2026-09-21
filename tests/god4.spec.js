@@ -2614,3 +2614,108 @@ test('Saved Verses keeps the drawer open and focus usable when another saved ver
   await expect(tray).toHaveAttribute('aria-hidden', 'true');
   await expect(opener).toBeFocused();
 });
+
+
+for (const failure of ['getter', 'methods', 'quota', 'null']) {
+  test(`User data storage initializes and remains usable with globally failing storage: ${failure}`, async ({ page }) => {
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.addInitScript(failure => {
+      if(failure === 'getter') Object.defineProperty(window, 'localStorage', { get() { throw new DOMException('Blocked', 'SecurityError'); } });
+      else if(failure === 'null') Object.defineProperty(window, 'localStorage', { value: null });
+      else {
+        if(failure === 'methods') Storage.prototype.getItem = function() { throw new DOMException('Blocked', 'SecurityError'); };
+        Storage.prototype.setItem = function() { throw new DOMException('Cannot write', 'QuotaExceededError'); };
+        Storage.prototype.removeItem = function() { throw new DOMException('Cannot remove', 'SecurityError'); };
+      }
+    }, failure);
+    // The beforeEach reset has already run. These failures apply to production startup.
+    await page.reload();
+    await expect(page.locator('#readerContent')).toContainText('John 1');
+    await page.locator('#readerTranslation').selectOption('asv');
+    await expect(page.locator('#readerTranslation')).toHaveValue('asv');
+    await page.locator('#heroFav').click();
+    await page.locator('.saved-pill').click();
+    await page.locator('#trayList').getByRole('button', { name: 'Remove' }).click();
+    await expect(page.locator('.saved-pill')).toBeFocused();
+    await expect(page.locator('#savedCount')).toHaveText('0');
+    await page.getByRole('button', { name: 'Plan', exact: true }).click();
+    await page.getByRole('button', { name: 'Day 1: Matthew 1-2', exact: true }).click();
+    await expect(page.locator('#planDone')).toHaveText('1 of 30 days');
+    await page.getByRole('button', { name: 'Compare', exact: true }).click();
+    await expect(page.locator('#view-compare')).toHaveClass(/active/);
+    const values = await page.evaluate(() => {
+      UserData.speechSpeed.save(1.5);
+      UserData.speechVoice.save('Device voice');
+      return [UserData.translation.load(), UserData.plan.load(), UserData.savedVerses.load(), UserData.speechSpeed.load(), UserData.speechVoice.load()];
+    });
+    expect(values).toEqual(['asv', [1], [], 1.5, 'Device voice']);
+    expect(errors).toEqual([]);
+  });
+}
+
+test('User data storage preserves all six legacy keys and serialized formats across reload', async ({ page }) => {
+  const legacy = {
+    'god4.savedVerses': JSON.stringify([{ref: 'John 3:16', text: 'Legacy saved text'}]),
+    'god4.plan.completedDays': '[1,3]',
+    'god4.translation': 'asv',
+    'god4.compare': JSON.stringify({count: 3, selections: ['asv', 'kjv', 'web', 'ylt'], persisted: true}),
+    'god4.speech.speed': '1.5',
+    'god4.speech.voice': 'Samantha'
+  };
+  await page.evaluate(values => Object.entries(values).forEach(([key, value]) => localStorage.setItem(key, value)), legacy);
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'speechSynthesis', { value: {
+      getVoices: () => [{name: 'Samantha', lang: 'en-US', localService: true}],
+      addEventListener() {}, cancel() {}, speak() {}, pause() {}, resume() {}
+    }});
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { value: function(text) { this.text = text; } });
+  });
+  await page.reload();
+  await expect(page.locator('#savedCount')).toHaveText('1');
+  await expect(page.locator('#heroFav')).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#readerTranslation')).toHaveValue('asv');
+  await expect(page.locator('#readAloudSpeed')).toHaveValue('1.5');
+  await expect(page.locator('#readAloudVoice')).toHaveValue('Samantha');
+  await page.getByRole('button', {name: 'Plan', exact: true}).click();
+  await expect(page.locator('#planDone')).toHaveText('2 of 30 days');
+  expect(await page.evaluate(keys => Object.fromEntries(keys.map(key => [key, localStorage.getItem(key)])), Object.keys(legacy))).toEqual(legacy);
+  await page.getByRole('button', {name: 'Reader', exact: true}).click();
+  await page.locator('#readAloudSpeed').selectOption('2');
+  await page.locator('#readAloudVoice').selectOption('');
+  await page.reload();
+  await expect(page.locator('#readAloudSpeed')).toHaveValue('2');
+  await expect(page.locator('#readAloudVoice')).toHaveValue('');
+});
+
+test('User data storage validates malformed domains and keeps failed writes and removals in memory', async ({ page }) => {
+  await page.evaluate(() => {
+    localStorage.setItem('god4.savedVerses', '{bad');
+    localStorage.setItem('god4.plan.completedDays', '[1,1,31,"2",null]');
+    localStorage.setItem('god4.compare', '{"count":9,"selections":[null,42,"web","web"],"persisted":"true"}');
+    localStorage.setItem('god4.translation', 'missing');
+    localStorage.setItem('god4.speech.speed', 'nonsense');
+  });
+  await page.reload();
+  await expect(page.locator('#readerTranslation')).toHaveValue('web');
+  expect(await page.evaluate(() => ({saved: UserData.savedVerses.load(), plan: UserData.plan.load(), speed: UserData.speechSpeed.load(), compare: UserData.compare.load()}))).toEqual({
+    saved: [], plan: [1], speed: 1,
+    compare: {count: 2, selections: expect.arrayContaining(['web']), persisted: false}
+  });
+  const result = await page.evaluate(() => {
+    const original = Storage.prototype.setItem;
+    const remove = Storage.prototype.removeItem;
+    try {
+      Storage.prototype.setItem = () => { throw new Error('Full'); };
+      Storage.prototype.removeItem = () => { throw new Error('Blocked'); };
+      const written = UserData.translation.save('asv');
+      const value = UserData.translation.load();
+      const removed = LocalStorageProvider.remove('god4.translation');
+      return {written, value, removed, fallback: UserData.translation.load()};
+    } finally {
+      Storage.prototype.setItem = original;
+      Storage.prototype.removeItem = remove;
+    }
+  });
+  expect(result).toEqual({written: false, value: 'asv', removed: false, fallback: 'web'});
+});

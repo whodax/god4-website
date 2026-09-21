@@ -1,8 +1,6 @@
 /* ===== SCRIPTURE READ ALOUD ===== */
 var BibleSpeech = (function createBibleSpeech(){
   var SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5];
-  var SPEED_STORAGE_KEY = 'god4.speech.speed';
-  var VOICE_STORAGE_KEY = 'god4.speech.voice';
   var state = 'idle';
   var verses = [];
   var verseIndex = 0;
@@ -26,12 +24,11 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function readSpeedPreference(){
-    var stored = Number(localStorage.getItem(SPEED_STORAGE_KEY));
-    return SPEEDS.indexOf(stored) >= 0 ? stored : 1;
+    return UserData.speechSpeed.load();
   }
 
   function readVoicePreference(){
-    return localStorage.getItem(VOICE_STORAGE_KEY) || '';
+    return UserData.speechVoice.load();
   }
 
   function voices(){
@@ -164,7 +161,7 @@ var BibleSpeech = (function createBibleSpeech(){
     var nextSpeed = Number(value);
     if(SPEEDS.indexOf(nextSpeed) < 0) return;
     speed = nextSpeed;
-    localStorage.setItem(SPEED_STORAGE_KEY, String(speed));
+    UserData.speechSpeed.save(speed);
     updateControls();
   }
 
@@ -172,7 +169,7 @@ var BibleSpeech = (function createBibleSpeech(){
     var available = curatedVoices();
     if(name && !available.some(function(voice){ return voice.name === name; })) return;
     voiceName = name || '';
-    localStorage.setItem(VOICE_STORAGE_KEY, voiceName);
+    UserData.speechVoice.save(voiceName);
     populateVoiceSelector();
   }
 

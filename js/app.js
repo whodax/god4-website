@@ -17,33 +17,9 @@ let saved = [];
 // Provider boundary: Saved Verses UI only calls load/save, not browser storage.
 const savedVersesStorage = {
   key: 'god4.savedVerses',
-  load: function(){
-    try {
-      return validateSavedVerses(JSON.parse(window.localStorage.getItem(this.key)));
-    } catch(error){
-      return [];
-    }
-  },
-  save: function(entries){
-    try {
-      window.localStorage.setItem(this.key, JSON.stringify(validateSavedVerses(entries)));
-    } catch(error){
-      // Keep in-memory saving usable when storage is blocked or full.
-    }
-  }
+  load: function(){ return UserData.savedVerses.load(); },
+  save: function(entries){ return UserData.savedVerses.save(entries); }
 };
-
-function validateSavedVerses(entries){
-  if(!Array.isArray(entries)) return [];
-  var seen = new Set();
-  return entries.filter(function(entry){
-    if(!entry || typeof entry !== 'object' || Array.isArray(entry) ||
-      typeof entry.ref !== 'string' || !entry.ref.trim() ||
-      typeof entry.text !== 'string' || !entry.text.trim() || seen.has(entry.ref)) return false;
-    seen.add(entry.ref);
-    return true;
-  }).map(function(entry){ return {ref: entry.ref, text: entry.text}; });
-}
 const SEARCH_BATCH_SIZE = 10;
 let searchMatches = [];
 let searchVisibleCount = 0;

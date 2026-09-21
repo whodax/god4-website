@@ -30,15 +30,8 @@ const plan = [
   {d:29, ref:'Luke 13-14', done:false},
   {d:30, ref:'Luke 15-16', done:false}
 ];
-const PLAN_STORAGE_KEY = 'god4.plan.completedDays';
-try {
-  var completedDays = JSON.parse(localStorage.getItem(PLAN_STORAGE_KEY) || '[]');
-  if(Array.isArray(completedDays)){
-    plan.forEach(function(day){ day.done = completedDays.includes(day.d); });
-  }
-} catch(error) {
-  // Missing or unreadable saved progress starts with no completed days.
-}
+var completedDays = UserData.plan.load();
+plan.forEach(function(day){ day.done = completedDays.includes(day.d); });
 
 function renderPlan(){
   var nextDay = plan.find(function(day){ return !day.done; });
@@ -62,11 +55,7 @@ function toggleDay(d){
   var day = plan.find(function(x){ return x.d === d; });
   if(day){
     day.done = !day.done;
-    try {
-      localStorage.setItem(PLAN_STORAGE_KEY, JSON.stringify(plan.filter(function(item){ return item.done; }).map(function(item){ return item.d; })));
-    } catch(error) {
-      // Keep the plan usable for this visit if browser storage is unavailable.
-    }
+    UserData.plan.save(plan.filter(function(item){ return item.done; }).map(function(item){ return item.d; }));
     renderPlan();
   }
 }
