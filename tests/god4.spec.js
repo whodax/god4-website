@@ -2736,6 +2736,126 @@ test('Reader restores a different book and chapter with the persisted translatio
   await expect(page.locator('#readerContent')).toContainText('Genesis 3');
 });
 
+test('Reader selected verse persists across reload without restoring keyboard focus', async ({ page }) => {
+  await page.locator('#bookSelect').selectOption('john');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'john', chapter: 3, verse: 16
+  });
+
+  await page.reload();
+
+  await expect(page.locator('#readerTranslation')).toHaveValue('web');
+  await expect(page.locator('#bookSelect')).toHaveValue('john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('16');
+  await expect(page.locator('#readerContent [data-verse-number="16"]')).toHaveClass(/verse-focused/);
+  await expect(page.locator('#readerContent [data-verse-number="16"]')).not.toBeFocused();
+});
+
+test('Reader selected verse persists when the numbered highlight control is used', async ({ page }) => {
+  await page.locator('#readerContent [data-verse-number="4"] .vnum').click();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'john', chapter: 1, verse: 4
+  });
+
+  await page.reload();
+
+  await expect(page.locator('#verseSelect')).toHaveValue('4');
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
+});
+
+test('legacy Reader position without a selected verse remains compatible', async ({ page }) => {
+  await page.evaluate(() => localStorage.setItem('god4.reader.position', JSON.stringify({
+    bookId: 'exodus', chapter: 5
+  })));
+  await page.reload();
+
+  await expect(page.locator('#bookSelect')).toHaveValue('exodus');
+  await expect(page.locator('#chapterSelect')).toHaveValue('5');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  await expect(page.locator('#readerContent')).toContainText('Exodus 5');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'exodus', chapter: 5
+  });
+});
+
+test('invalid Reader selected verse preserves its valid book and chapter', async ({ page }) => {
+  await page.evaluate(() => localStorage.setItem('god4.reader.position', JSON.stringify({
+    bookId: 'exodus', chapter: 5, verse: 999
+  })));
+  await page.reload();
+
+  await expect(page.locator('#bookSelect')).toHaveValue('exodus');
+  await expect(page.locator('#chapterSelect')).toHaveValue('5');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  await expect(page.locator('#readerContent')).toContainText('Exodus 5');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'exodus', chapter: 5
+  });
+});
+
+test('Reader selected verse clears for manual and Previous or Next chapter navigation', async ({ page }) => {
+  await page.locator('#chapterSelect').selectOption('2');
+  await page.locator('#verseSelect').selectOption('3');
+  await page.locator('#chapterSelect').selectOption('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'john', chapter: 3
+  });
+
+  await page.locator('#verseSelect').selectOption('4');
+  await page.locator('[data-reader-action="previous"]').first().click();
+  await expect(page.locator('#chapterSelect')).toHaveValue('2');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'john', chapter: 2
+  });
+
+  await page.locator('#verseSelect').selectOption('5');
+  await page.locator('[data-reader-action="next"]').first().click();
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'john', chapter: 3
+  });
+});
+
+test('Reader selected verse clears when a different book is opened', async ({ page }) => {
+  await page.locator('#chapterSelect').selectOption('2');
+  await page.locator('#verseSelect').selectOption('3');
+  await page.locator('#bookSelect').selectOption('genesis');
+
+  await expect(page.locator('#bookSelect')).toHaveValue('genesis');
+  await expect(page.locator('#chapterSelect')).toHaveValue('2');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'genesis', chapter: 2
+  });
+
+  await page.reload();
+  await expect(page.locator('#bookSelect')).toHaveValue('genesis');
+  await expect(page.locator('#chapterSelect')).toHaveValue('2');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+});
+
+test('Reader selected verse follows existing voice reference navigation and clears for chapter-only voice navigation', async ({ page }) => {
+  await page.evaluate(() => handleVoiceCommand('John 3:16'));
+  await expect(page.locator('#verseSelect')).toHaveValue('16');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'john', chapter: 3, verse: 16
+  });
+
+  await page.evaluate(() => handleVoiceCommand('Open Genesis 1'));
+  await expect(page.locator('#bookSelect')).toHaveValue('genesis');
+  await expect(page.locator('#chapterSelect')).toHaveValue('1');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'genesis', chapter: 1
+  });
+});
+
 test('Reader persists manual chapter selection across reload', async ({ page }) => {
   await page.locator('#chapterSelect').selectOption('3');
   await expect(page.locator('#readerContent')).toContainText('John 3');
@@ -2758,33 +2878,86 @@ test('Reader persists Previous and Next chapter navigation across reloads', asyn
   await expect(page.locator('#readerContent')).toContainText('John 2');
 });
 
-test('Reader persists a Search result destination without persisting the selected verse', async ({ page }) => {
+test('Reader selected verse persists when a specific Search result opens it', async ({ page }) => {
   await page.locator('#searchInput').fill('Genesis 2:1');
   await page.getByRole('button', { name: 'Search', exact: true }).click();
   await page.locator('#results .result-card').click();
   await expect(page.locator('#bookSelect')).toHaveValue('genesis');
   await expect(page.locator('#chapterSelect')).toHaveValue('2');
   await expect(page.locator('#verseSelect')).toHaveValue('1');
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId: 'genesis', chapter: 2});
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'genesis', chapter: 2, verse: 1
+  });
   await page.reload();
   await expect(page.locator('#bookSelect')).toHaveValue('genesis');
   await expect(page.locator('#chapterSelect')).toHaveValue('2');
-  await expect(page.locator('#verseSelect')).toHaveValue('');
+  await expect(page.locator('#verseSelect')).toHaveValue('1');
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-focused/);
   await expect(page.locator('#readerContent')).toContainText('Genesis 2');
 });
 
-test('Reader preserves a valid position when translation changes', async ({ page }) => {
+test('Reader selected verse remains selected when translation changes and the verse is valid', async ({ page }) => {
   await page.locator('#bookSelect').selectOption('john');
   await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('16');
   await page.locator('#readerTranslation').selectOption('asv');
   await expect(page.locator('#bookSelect')).toHaveValue('john');
   await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('16');
+  await expect(page.locator('#readerContent [data-verse-number="16"]')).toHaveClass(/verse-focused/);
   await expect(page.locator('#readerContent')).toContainText('John 3');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'john', chapter: 3, verse: 16
+  });
   await page.reload();
   await expect(page.locator('#readerTranslation')).toHaveValue('asv');
   await expect(page.locator('#bookSelect')).toHaveValue('john');
   await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('16');
 });
+
+test('Reader selected verse clears across translation changes when only the verse is invalid', async ({ page }) => {
+  await page.locator('#bookSelect').selectOption('psalms');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.locator('#verseSelect').selectOption('12');
+  await page.locator('#readerTranslation').selectOption('asv');
+
+  await expect(page.locator('#readerTranslation')).toHaveValue('asv');
+  await expect(page.locator('#bookSelect')).toHaveValue('psalms');
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  await expect(page.locator('#readerContent')).toContainText('Psalms 3');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+    bookId: 'psalms', chapter: 3
+  });
+
+  await page.reload();
+  await expect(page.locator('#readerTranslation')).toHaveValue('asv');
+  await expect(page.locator('#bookSelect')).toHaveValue('psalms');
+  await expect(page.locator('#chapterSelect')).toHaveValue('3');
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+});
+
+for (const [name, verse] of [
+  ['string', '4'],
+  ['zero', 0],
+  ['negative', -1],
+  ['fractional', 2.5]
+]) {
+  test(`Reader selected verse ignores an invalid ${name} value without losing book or chapter`, async ({ page }) => {
+    await page.evaluate(verse => localStorage.setItem('god4.reader.position', JSON.stringify({
+      bookId: 'exodus', chapter: 5, verse
+    })), verse);
+    await page.reload();
+
+    await expect(page.locator('#bookSelect')).toHaveValue('exodus');
+    await expect(page.locator('#chapterSelect')).toHaveValue('5');
+    await expect(page.locator('#verseSelect')).toHaveValue('');
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
+      bookId: 'exodus', chapter: 5
+    });
+  });
+}
 
 for (const [name, value] of [
   ['malformed JSON', '{bad'],
@@ -2817,7 +2990,9 @@ test('Reader position storage remains usable in memory when localStorage is glob
   await expect(page.locator('#readerContent')).toContainText('John 1');
   await page.locator('#bookSelect').selectOption('genesis');
   await page.locator('#chapterSelect').selectOption('2');
+  await page.locator('#verseSelect').selectOption('3');
   await expect(page.locator('#readerContent')).toContainText('Genesis 2');
-  expect(await page.evaluate(() => UserData.readerPosition.load())).toEqual({bookId: 'genesis', chapter: 2});
+  await expect(page.locator('#readerContent [data-verse-number="3"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => UserData.readerPosition.load())).toEqual({bookId: 'genesis', chapter: 2, verse: 3});
   expect(errors).toEqual([]);
 });
