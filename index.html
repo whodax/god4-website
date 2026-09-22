@@ -153,8 +153,10 @@
           </select>
         </div>
         <div class="reader-controls reader-controls-top" data-reader-controls>
-          <button type="button" data-reader-action="previous" onclick="prevChapter()">← Previous</button>
-          <button type="button" data-reader-action="next" onclick="nextChapter()">Next →</button>
+          <button type="button" data-reader-action="previous" aria-label="Previous chapter" onclick="prevChapter()">← Previous</button>
+          <button type="button" data-reader-action="next" aria-label="Next chapter" onclick="nextChapter()">Next →</button>
+          <button type="button" data-reader-action="previous-verse" aria-label="Previous Verse" onclick="previousReaderVerse()">← Previous Verse</button>
+          <button type="button" data-reader-action="next-verse" aria-label="Next Verse" onclick="nextReaderVerse()">Next Verse →</button>
         </div>
         <div class="voice-status" id="voiceStatusTop" role="status" aria-live="polite">Ready for a voice command.</div>
         <div class="reader-audio-controls" role="group" aria-label="Read chapter aloud">
