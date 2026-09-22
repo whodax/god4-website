@@ -2132,8 +2132,9 @@ test('invalid chapter and verse references report a concise status', async ({ pa
 test('recognized navigation commands execute Reader actions through the recognition callback', async ({ page }) => {
   await page.addInitScript(() => {
     window.__speech = { spoken: [] };
+    window.__voiceStarts = 0;
     function FakeRecognition() { window.fakeRecognition = this; }
-    FakeRecognition.prototype.start = function() {};
+    FakeRecognition.prototype.start = function() { window.__voiceStarts++; };
     FakeRecognition.prototype.stop = function() {};
     Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
@@ -2144,20 +2145,26 @@ test('recognized navigation commands execute Reader actions through the recognit
   });
   await page.goto('/');
   const voiceButton = page.locator('.reader-audio-controls [data-voice-command-button]');
+  await voiceButton.click();
   const recognize = async (transcript) => {
-    await voiceButton.click();
-    await page.evaluate((value) => window.fakeRecognition.onresult({
-      resultIndex: 0,
-      results: [Object.assign([{ transcript: value }], { isFinal: true })]
-    }), transcript);
+    const starts = await page.evaluate(() => window.__voiceStarts);
+    const recognizedStatus = await page.evaluate((value) => {
+      window.fakeRecognition.onresult({
+        resultIndex: 0,
+        results: [Object.assign([{ transcript: value }], { isFinal: true })]
+      });
+      const status = document.getElementById('voiceStatusTop').textContent;
+      window.fakeRecognition.onend();
+      return status;
+    }, transcript);
+    expect(recognizedStatus).toBe('Command recognized: ' + transcript);
+    await expect.poll(() => page.evaluate(() => window.__voiceStarts)).toBe(starts + 1);
   };
 
   await recognize('Next chapter');
   await expect(page.locator('#bookSelect')).toHaveValue('john');
   await expect(page.locator('#chapterSelect')).toHaveValue('2');
   await expect(page.locator('#readerContent')).toContainText('John 2');
-  await expect(page.locator('#voiceStatusTop')).toHaveText('Command recognized: Next chapter');
-
   await recognize('previous');
   await expect(page.locator('#chapterSelect')).toHaveValue('1');
   await expect(page.locator('#readerContent')).toContainText('John 1');
@@ -3515,4 +3522,222 @@ test('Reader position storage remains usable in memory when localStorage is glob
   await expect(page.locator('#readerContent [data-verse-number="3"]')).toHaveClass(/verse-focused/);
   expect(await page.evaluate(() => UserData.readerPosition.load())).toEqual({bookId: 'genesis', chapter: 2, verse: 3});
   expect(errors).toEqual([]);
+});
+
+
+async function installVoicePlaybackMocks(page) {
+  await page.addInitScript(() => {
+    window.__voice = { instances: 0, starts: 0, startAttempts: 0, stops: 0, failStarts: 0 };
+    function FakeRecognition() {
+      window.__voice.instances++;
+      window.__voice.instance = this;
+      this.active = false;
+    }
+    FakeRecognition.prototype.start = function() {
+      window.__voice.startAttempts++;
+      if (window.__voice.failStarts > 0) {
+        window.__voice.failStarts--;
+        throw new DOMException('Recognition is still ending', 'InvalidStateError');
+      }
+      if (this.active) throw new DOMException('Recognition already started', 'InvalidStateError');
+      this.active = true;
+      window.__voice.starts++;
+      if (this.onstart) this.onstart();
+    };
+    FakeRecognition.prototype.stop = function() {
+      window.__voice.stops++;
+      this.active = false;
+    };
+    window.__voice.emit = (transcript) => window.__voice.instance.onresult({
+      resultIndex: 0,
+      results: [Object.assign([{ transcript }], { isFinal: true })]
+    });
+    window.__voice.end = () => {
+      window.__voice.instance.active = false;
+      window.__voice.instance.onend();
+    };
+    Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
+    Object.defineProperty(window, 'webkitSpeechRecognition', { configurable: true, value: FakeRecognition });
+    Object.defineProperty(navigator, 'permissions', { configurable: true, value: {
+      query: async () => ({ state: 'granted', onchange: null })
+    } });
+
+    window.__speech = { utterances: [], pauses: 0, resumes: 0, cancels: 0 };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+      configurable: true,
+      value: function(text) { this.text = text; }
+    });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) {
+        window.__speech.utterances.push(utterance);
+        if (utterance.onstart) utterance.onstart();
+      },
+      pause() { window.__speech.pauses++; },
+      resume() { window.__speech.resumes++; },
+      cancel() { window.__speech.cancels++; }
+    } });
+  });
+  await page.goto('/');
+  await expect.poll(() => page.evaluate(() => window.__voice.starts)).toBe(1);
+}
+
+async function recognizePlaybackCommand(page, transcript) {
+  const starts = await page.evaluate(() => window.__voice.starts);
+  await page.evaluate((value) => {
+    window.__voice.emit(value);
+    window.__voice.end();
+  }, transcript);
+  await expect.poll(() => page.evaluate(() => window.__voice.starts)).toBe(starts + 1);
+}
+
+test('voice play resumes a paused session; resume and continue only act while paused', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'resume');
+  await recognizePlaybackCommand(page, 'continue');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(0);
+  expect(await page.evaluate(() => window.__speech.resumes)).toBe(0);
+
+  await recognizePlaybackCommand(page, 'play');
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(1);
+  for (const alias of ['resume', 'continue', 'play']) {
+    await recognizePlaybackCommand(page, 'pause');
+    await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
+    await recognizePlaybackCommand(page, alias);
+    await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+    await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
+    expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(1);
+  }
+  expect(await page.evaluate(() => window.__speech.resumes)).toBe(3);
+  await recognizePlaybackCommand(page, 'continue');
+  await recognizePlaybackCommand(page, 'resume');
+  expect(await page.evaluate(() => window.__speech.resumes)).toBe(3);
+});
+
+test('voice stop runs once on a final result and listening promptly restarts', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'play');
+  const cancelsBeforeStop = await page.evaluate(() => window.__speech.cancels);
+  const startsBeforeStop = await page.evaluate(() => window.__voice.starts);
+  await page.evaluate(() => {
+    window.__voice.emit('stop');
+    window.__voice.emit('stop');
+    window.__voice.end();
+    window.__voice.end();
+  });
+  await expect.poll(() => page.evaluate(() => window.__voice.starts)).toBe(startsBeforeStop + 1);
+  expect(await page.evaluate(() => window.__speech.cancels)).toBe(cancelsBeforeStop + 1);
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  await expect(page.locator('[data-voice-command-button]').first()).toHaveAttribute('aria-pressed', 'true');
+  expect(await page.evaluate(() => window.__voice.instances)).toBe(1);
+  expect(await page.evaluate(() => window.__voice.startAttempts)).toBe(await page.evaluate(() => window.__voice.starts));
+  await recognizePlaybackCommand(page, 'play');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(2);
+  const cancelsBeforeSecondStop = await page.evaluate(() => window.__speech.cancels);
+  await recognizePlaybackCommand(page, 'stop');
+  expect(await page.evaluate(() => window.__speech.cancels)).toBe(cancelsBeforeSecondStop + 1);
+});
+
+test('repeat replays the last verse that began speaking without changing Reader selection', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await page.locator('#verseSelect').selectOption('4');
+  const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
+  await recognizePlaybackCommand(page, 'repeat');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(0);
+  await recognizePlaybackCommand(page, 'play');
+  await page.evaluate(() => window.__speech.utterances[0].onend());
+  const secondVerseText = await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 2).text);
+  expect(await page.evaluate(() => window.__speech.utterances[1].text)).toBe(secondVerseText);
+
+  for (const alias of ['repeat', 'repeat verse', 'repeat last verse']) {
+    const count = await page.evaluate(() => window.__speech.utterances.length);
+    await recognizePlaybackCommand(page, alias);
+    expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(count + 1);
+    expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(secondVerseText);
+    await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+    await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
+  }
+  const countAfterRepeat = await page.evaluate(() => window.__speech.utterances.length);
+  await page.evaluate(() => window.__speech.utterances[1].onend());
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(countAfterRepeat);
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).toBe(storedPosition);
+
+  await page.locator('#chapterSelect').selectOption('2');
+  const countBeforeStaleRepeat = await page.evaluate(() => window.__speech.utterances.length);
+  await recognizePlaybackCommand(page, 'repeat');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(countBeforeStaleRepeat);
+  await page.reload();
+  await recognizePlaybackCommand(page, 'repeat last verse');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(0);
+});
+
+test('recognition retries one ending race and explicit disable prevents another restart', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await page.evaluate(() => {
+    window.__voice.failStarts = 1;
+    window.__voice.end();
+    window.__voice.end();
+  });
+  await expect.poll(() => page.evaluate(() => window.__voice.starts)).toBe(2);
+  expect(await page.evaluate(() => window.__voice.startAttempts)).toBe(3);
+  expect(await page.evaluate(() => window.__voice.instances)).toBe(1);
+  await recognizePlaybackCommand(page, 'play');
+  await page.locator('[data-voice-command-button]').first().click();
+  await expect(page.locator('[data-voice-command-button]').first()).toHaveAttribute('aria-pressed', 'false');
+  await page.evaluate(() => window.__voice.end());
+  const startsAfterDisable = await page.evaluate(() => window.__voice.starts);
+  await page.waitForTimeout(150);
+  expect(await page.evaluate(() => window.__voice.starts)).toBe(startsAfterDisable);
+});
+
+
+test('repeat keeps a valid verse through translation and drops one missing from the new translation', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await page.evaluate(() => readVerseAloud(2));
+  await page.locator('#readerTranslation').selectOption('asv');
+  await recognizePlaybackCommand(page, 'repeat verse');
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('asv', 'john', 1, 2).text)
+  );
+
+  await page.locator('#bookSelect').selectOption('psalms');
+  await page.locator('#readerTranslation').selectOption('web');
+  await page.locator('#chapterSelect').selectOption('3');
+  await page.evaluate(() => readVerseAloud(12));
+  const count = await page.evaluate(() => window.__speech.utterances.length);
+  await page.locator('#readerTranslation').selectOption('asv');
+  await recognizePlaybackCommand(page, 'repeat last verse');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(count);
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+});
+
+
+test('empty recognition cycles pace restarts and cannot accept a late result', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  const cancels = await page.evaluate(() => window.__speech.cancels);
+  await page.evaluate(() => {
+    window.__voice.end();
+    window.__voice.emit('stop');
+  });
+  expect(await page.evaluate(() => window.__speech.cancels)).toBe(cancels);
+  await page.waitForTimeout(50);
+  expect(await page.evaluate(() => window.__voice.starts)).toBe(1);
+  await expect.poll(() => page.evaluate(() => window.__voice.starts)).toBe(2);
+  expect(await page.evaluate(() => window.__voice.instances)).toBe(1);
+});
+
+test('recognition stops after the bounded InvalidStateError retries', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await page.evaluate(() => {
+    window.__voice.failStarts = 5;
+    window.__voice.end();
+  });
+  await expect(page.locator('[data-voice-command-button]').first()).toHaveAttribute('aria-pressed', 'false');
+  expect(await page.evaluate(() => window.__voice.startAttempts)).toBe(5);
+  const attempts = await page.evaluate(() => window.__voice.startAttempts);
+  await page.waitForTimeout(150);
+  expect(await page.evaluate(() => window.__voice.startAttempts)).toBe(attempts);
+  expect(await page.evaluate(() => window.__voice.instances)).toBe(1);
 });

@@ -95,6 +95,11 @@ var BibleSpeech = (function createBibleSpeech(){
     playbackListener.onVerseStart(verseNumber);
   }
 
+  function notifyVerseSpoken(verseNumber){
+    if(!playbackListener || typeof playbackListener.onVerseSpoken !== 'function') return;
+    playbackListener.onVerseSpoken(verseNumber);
+  }
+
   function notifyPlaybackEnd(){
     if(!playbackListener || typeof playbackListener.onEnd !== 'function') return;
     playbackListener.onEnd();
@@ -132,6 +137,10 @@ var BibleSpeech = (function createBibleSpeech(){
     }
     var activeVerse = verses[verseIndex];
     var utterance = configureUtterance(new window.SpeechSynthesisUtterance(activeVerse.text));
+    utterance.onstart = function(){
+      if(activeSession !== session) return;
+      notifyVerseSpoken(activeVerse.verseNumber);
+    };
     utterance.onend = function(){
       if(activeSession !== session) return;
       verseIndex++;
