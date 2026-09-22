@@ -3,6 +3,7 @@ const initialReaderPosition = UserData.readerPosition.load();
 let currentBook = initialReaderPosition.bookId;
 let currentChapter = initialReaderPosition.chapter;
 let currentVerse = initialReaderPosition.verse || null;
+let readerSelectionPending = Boolean(currentVerse);
 let currentSpokenVerse = null;
 let lastSpokenVerse = null;
 let currentTranslation = UserData.translation.load();
@@ -54,18 +55,26 @@ function getReaderText(){
   return passage ? passage.innerText : '';
 }
 
-function playReader(){
+function getReaderPlayStartVerse(explicitVerse){
+  if(Number.isInteger(explicitVerse) && BibleData.getVerse(currentTranslation, currentBook, currentChapter, explicitVerse)) return explicitVerse;
+  if(readerSelectionPending && Number.isInteger(currentVerse) && BibleData.getVerse(currentTranslation, currentBook, currentChapter, currentVerse)) return currentVerse;
+  return getLastSpokenVerseForCurrentPassage() || (Number.isInteger(currentVerse) && BibleData.getVerse(currentTranslation, currentBook, currentChapter, currentVerse) ? currentVerse : 1);
+}
+
+function playReader(explicitVerse, pauseAfterFirst, restartSequence){
   if(typeof BibleSpeech === 'undefined') return;
-  if(BibleSpeech.getState() === 'paused'){
+  if(BibleSpeech.getState() === 'paused' && !restartSequence){
     BibleSpeech.pauseResume();
     return;
   }
-  if(BibleSpeech.getState() === 'playing') return;
-  readCurrentChapterAloud(getLastSpokenVerseForCurrentPassage());
+  if(BibleSpeech.getState() === 'playing' && !restartSequence) return;
+  var startVerse = getReaderPlayStartVerse(explicitVerse);
+  readerSelectionPending = false;
+  readCurrentChapterAloud(startVerse, pauseAfterFirst);
 }
 
 function pauseReader(){
-  pauseResumeReadAloud();
+  if(typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() === 'playing') BibleSpeech.pauseResume();
 }
 
 function resumeReader(){
@@ -123,6 +132,7 @@ function saveReaderPosition(){
 
 function clearReaderVerseSelection(){
   currentVerse = null;
+  readerSelectionPending = false;
   var select = document.getElementById('verseSelect');
   if(select) select.value = '';
   document.querySelectorAll('#readerContent [data-verse-number], #fsContent [data-verse-number]').forEach(function(element){
@@ -182,7 +192,8 @@ function getLastSpokenVerseForCurrentPassage(){
 function repeatLastSpokenVerse(){
   var verseNumber = getLastSpokenVerseForCurrentPassage();
   if(!verseNumber || typeof BibleSpeech === 'undefined') return;
-  readCurrentChapterAloud(verseNumber, BibleSpeech.getState() === 'paused');
+  if(BibleSpeech.repeatVerse(verseNumber)) return;
+  playReader(verseNumber, BibleSpeech.getState() === 'paused', true);
 }
 
 function populateVerses(){
@@ -203,6 +214,7 @@ function setReaderVerse(verseNumber, shouldFocus){
   var verse = BibleData.getVerse(currentTranslation, currentBook, currentChapter, Number(verseNumber));
   if(!verse || !applyReaderVerseSelection(verse.verse, shouldFocus)) return false;
   currentVerse = verse.verse;
+  readerSelectionPending = true;
   saveReaderPosition();
   updateReaderControls();
   return true;
@@ -237,6 +249,8 @@ function navigateToSpokenBook(bookText, chapterNumber, verseNumber){
 }
 
 function handleSpokenReferenceCommand(command){
+  var trailingPlay = /\s+(play|read)$/.exec(command);
+  if(trailingPlay) command = command.slice(0, trailingPlay.index);
   var actionMatch = /^(play|read|open|go to)\s+(.+)$/.exec(command);
   var action = actionMatch ? actionMatch[1] : '';
   var reference = normalizeBookName(actionMatch ? actionMatch[2] : command);
@@ -264,12 +278,7 @@ function handleSpokenReferenceCommand(command){
     setVoiceStatus('Book, chapter, or verse not found.');
     return true;
   }
-  if(action === 'play' || action === 'read'){
-    if(verseNumber){
-      var verse = BibleData.getVerse(currentTranslation, currentBook, currentChapter, Number(verseNumber));
-      BibleSpeech.playVerse(verse.text, verse.verse);
-    } else readCurrentChapterAloud();
-  }
+  if(action === 'play' || action === 'read' || trailingPlay) playReader(verseNumber ? Number(verseNumber) : undefined);
   return true;
 }
 
@@ -278,7 +287,7 @@ function handleVoiceCommand(transcript){
   setVoiceStatus('Command recognized: ' + transcript);
   if(/^(repeat|repeat verse|repeat last verse)$/.test(command)) repeatLastSpokenVerse();
   else if(/^play( the passage)?$/.test(command)) playReader();
-  else if(/^read( the passage)?$/.test(command)) readCurrentChapterAloud();
+  else if(/^read( the passage)?$/.test(command)) playReader();
   else if(command === 'pause') pauseReader();
   else if(command === 'resume') resumeReader();
   else if(command === 'continue') continueReader();
@@ -320,12 +329,15 @@ function createVoiceRecognition(){
     if(voiceCommandsListening) setVoiceStatus('Listening for a command...');
   };
   voiceRecognition.onresult = function(event){
-    if(!voiceCommandsListening || !voiceRecognitionActive || voiceResultHandled) return;
-    var resultIndex = Number.isInteger(event.resultIndex) ? event.resultIndex : event.results.length - 1;
-    var result = event.results && event.results[resultIndex];
-    if(!result || result.isFinal === false || !result[0] || !result[0].transcript) return;
-    voiceResultHandled = true;
-    handleVoiceCommand(result[0].transcript);
+    if(!voiceCommandsListening || !voiceRecognitionActive || voiceResultHandled || !event.results) return;
+    var resultIndex = Number.isInteger(event.resultIndex) ? event.resultIndex : 0;
+    for(var index = resultIndex; index < event.results.length; index++){
+      var result = event.results[index];
+      if(!result || result.isFinal === false || !result[0] || !result[0].transcript) continue;
+      voiceResultHandled = true;
+      handleVoiceCommand(result[0].transcript);
+      return;
+    }
   };
   voiceRecognition.onerror = function(event){
     var intentionalStop = voiceCommandsStopping || !voiceCommandsListening;
@@ -361,8 +373,8 @@ function startVoiceRecognition(){
   voiceRecognitionActive = true;
   setVoiceStatus('Listening for a command...');
   try {
-    recognition.start();
     voiceResultHandled = false;
+    recognition.start();
   } catch(error){
     voiceRecognitionActive = false;
     if(error && error.name === 'InvalidStateError' && voiceRestartAttempts < 3){
@@ -659,6 +671,7 @@ function highlightVerse(el){
   if(!Number.isInteger(verseNumber) || verseNumber < 1) return;
   if(el.classList.contains('highlighted')){
     currentVerse = verseNumber;
+    readerSelectionPending = true;
     applyReaderVerseSelection(currentVerse, false);
   } else if(currentVerse === verseNumber){
     clearReaderVerseSelection();

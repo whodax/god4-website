@@ -878,20 +878,20 @@ test('Read Aloud highlights each spoken verse without changing the selected vers
   await page.locator('#readAloudPlay').click();
 
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
-  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-spoken/);
   await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
   expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).toBe(storedPosition);
 
   await page.evaluate(() => window.__speech.utterances[0].onend());
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
-  await expect(page.locator('#readerContent [data-verse-number="1"]')).not.toHaveClass(/verse-spoken/);
-  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).not.toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="5"]')).toHaveClass(/verse-spoken/);
   await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
 
   await page.getByRole('button', { name: 'Pause reading aloud' }).click();
-  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="5"]')).toHaveClass(/verse-spoken/);
   await page.getByRole('button', { name: 'Resume reading aloud' }).click();
-  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="5"]')).toHaveClass(/verse-spoken/);
   expect(await page.evaluate(() => ({ pauses: window.__speech.pauses, resumes: window.__speech.resumes }))).toEqual({
     pauses: 1, resumes: 1
   });
@@ -3640,11 +3640,11 @@ test('voice stop runs once on a final result and listening promptly restarts', a
 
 test('repeat aliases replay the last spoken verse and continue sequentially', async ({ page }) => {
   await installVoicePlaybackMocks(page);
-  await page.locator('#verseSelect').selectOption('4');
-  const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
   await recognizePlaybackCommand(page, 'repeat');
   expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(0);
   await recognizePlaybackCommand(page, 'play');
+  await page.locator('#verseSelect').selectOption('4');
+  const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
   await page.evaluate(() => window.__speech.utterances[0].onend());
 
   for (const [index, alias] of ['repeat', 'repeat verse', 'repeat last verse'].entries()) {
@@ -3873,4 +3873,123 @@ test('repeating the final verse finishes at the current chapter boundary', async
   await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
   expect(await page.evaluate(() => window.__speech.paused)).toBe(false);
+});
+
+
+test('combined spoken reference and Play starts a sequence at its selected verse', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'John 1 verse 20 play');
+  await expect(page.locator('#bookSelect')).toHaveValue('john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('1');
+  await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-focused/);
+  await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-spoken/);
+  expect(await page.evaluate(() => window.__speech.utterances[0].text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 20).text)
+  );
+  await page.evaluate(() => window.__speech.utterances[0].onend());
+  expect(await page.evaluate(() => window.__speech.utterances[1].text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 21).text)
+  );
+  await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-focused/);
+  await expect(page.locator('#readerContent [data-verse-number="21"]')).toHaveClass(/verse-spoken/);
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId:'john', chapter:1, verse:20});
+});
+
+test('visible Play begins at a manually selected verse and leaves selection unchanged as speech advances', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await page.locator('#verseSelect').selectOption('20');
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => window.__speech.utterances[0].text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 20).text)
+  );
+  await page.evaluate(() => window.__speech.utterances[0].onend());
+  await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-focused/);
+  await expect(page.locator('#readerContent [data-verse-number="21"]')).toHaveClass(/verse-spoken/);
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId:'john', chapter:1, verse:20});
+});
+
+test('Repeat after Stop rejoins sequential playback after the repeated verse', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'John 1 verse 20 play');
+  for(let index = 0; index < 2; index++) await page.evaluate((value) => window.__speech.utterances[value].onend(), index);
+  await expect(page.locator('#readerContent [data-verse-number="22"]')).toHaveClass(/verse-spoken/);
+  await recognizePlaybackCommand(page, 'stop');
+  await recognizePlaybackCommand(page, 'repeat');
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 22).text)
+  );
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 23).text)
+  );
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 24).text)
+  );
+});
+
+test('a later recognition cycle accepts the same Pause command after resuming', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'play');
+  await recognizePlaybackCommand(page, 'pause');
+  expect(await page.evaluate(() => window.__speech.pauses)).toBe(1);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
+  await recognizePlaybackCommand(page, 'resume');
+  await recognizePlaybackCommand(page, 'pause');
+  expect(await page.evaluate(() => window.__speech.pauses)).toBe(2);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
+  await recognizePlaybackCommand(page, 'pause');
+  expect(await page.evaluate(() => window.__speech.pauses)).toBe(2);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
+});
+
+
+test('active Repeat replays verse 22 and rejoins verse 23 while preserving a separate selection', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'John 1 verse 20 play');
+  for(let index = 0; index < 2; index++) await page.evaluate((value) => window.__speech.utterances[value].onend(), index);
+  const oldUtterance = await page.evaluate(() => window.__speech.utterances.length - 1);
+  await recognizePlaybackCommand(page, 'repeat verse');
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 22).text)
+  );
+  await page.evaluate((value) => window.__speech.utterances[value].onend(), oldUtterance);
+  await expect(page.locator('#readerContent [data-verse-number="22"]')).toHaveClass(/verse-spoken/);
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 23).text)
+  );
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 24).text)
+  );
+  await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId:'john', chapter:1, verse:20});
+});
+
+test('stopped Play prefers the last spoken verse over an unchanged selected verse', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'John 1 verse 20 play');
+  for(let index = 0; index < 2; index++) await page.evaluate((value) => window.__speech.utterances[value].onend(), index);
+  await recognizePlaybackCommand(page, 'stop');
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 22).text)
+  );
+  await recognizePlaybackCommand(page, 'stop');
+  await recognizePlaybackCommand(page, 'continue');
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 22).text)
+  );
+});
+
+test('recognition accepts the first final result after an interim result in the same event', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'play');
+  await page.evaluate(() => window.__voice.instance.onresult({
+    resultIndex: 0,
+    results: [Object.assign([{transcript:'pause'}], {isFinal:false}), Object.assign([{transcript:'pause'}], {isFinal:true})]
+  }));
+  expect(await page.evaluate(() => window.__speech.pauses)).toBe(1);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
 });

@@ -6,6 +6,7 @@ var BibleSpeech = (function createBibleSpeech(){
   var verseIndex = 0;
   var pendingNext = false;
   var pauseAfterCurrent = false;
+  var sequenceIsChapter = false;
   var session = 0;
   var speed = readSpeedPreference();
   var voiceName = readVoicePreference();
@@ -130,6 +131,7 @@ var BibleSpeech = (function createBibleSpeech(){
     verseIndex = 0;
     pendingNext = false;
     pauseAfterCurrent = false;
+    sequenceIsChapter = false;
     updateControls();
     notifyPlaybackEnd();
   }
@@ -191,6 +193,7 @@ var BibleSpeech = (function createBibleSpeech(){
     verseIndex = startIndex < 0 ? 0 : startIndex;
     pendingNext = false;
     pauseAfterCurrent = Boolean(pauseAfterFirst);
+    sequenceIsChapter = true;
     state = verses.length ? 'playing' : 'idle';
     updateControls();
     if(verses.length) speakNext(session);
@@ -212,9 +215,26 @@ var BibleSpeech = (function createBibleSpeech(){
     verseIndex = 0;
     pendingNext = false;
     pauseAfterCurrent = false;
+    sequenceIsChapter = false;
     state = 'playing';
     updateControls();
     speakNext(session);
+  }
+  function repeatVerse(verseNumber){
+    if(!supported() || !sequenceIsChapter || state === 'idle') return false;
+    var repeatIndex = verses.findIndex(function(verse){ return verse.verseNumber === verseNumber; });
+    if(repeatIndex < 0) return false;
+    var wasPaused = state === 'paused';
+    session++;
+    window.speechSynthesis.cancel();
+    if(wasPaused) window.speechSynthesis.resume();
+    verseIndex = repeatIndex;
+    pendingNext = false;
+    pauseAfterCurrent = wasPaused;
+    state = 'playing';
+    updateControls();
+    speakNext(session);
+    return true;
   }
   function setSpeed(value){
     var nextSpeed = Number(value);
@@ -257,6 +277,7 @@ var BibleSpeech = (function createBibleSpeech(){
     verseIndex = 0;
     pendingNext = false;
     pauseAfterCurrent = false;
+    sequenceIsChapter = false;
     updateControls();
     notifyPlaybackEnd();
   }
@@ -268,6 +289,7 @@ var BibleSpeech = (function createBibleSpeech(){
   return {
     playChapter: playChapter,
     playVerse: playVerse,
+    repeatVerse: repeatVerse,
     pauseResume: pauseResume,
     stop: stop,
     setSpeed: setSpeed,
