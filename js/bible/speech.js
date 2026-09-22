@@ -4,6 +4,8 @@ var BibleSpeech = (function createBibleSpeech(){
   var state = 'idle';
   var verses = [];
   var verseIndex = 0;
+  var pendingNext = false;
+  var pauseAfterCurrent = false;
   var session = 0;
   var speed = readSpeedPreference();
   var voiceName = readVoicePreference();
@@ -107,7 +109,7 @@ var BibleSpeech = (function createBibleSpeech(){
   function updateControls(){
     var controls = elements();
     var unavailable = !supported();
-    if(controls.play) controls.play.disabled = unavailable || state === 'playing' || state === 'paused';
+    if(controls.play) controls.play.disabled = unavailable || state === 'playing';
     if(controls.pause){
       controls.pause.disabled = unavailable || (state !== 'playing' && state !== 'paused');
       controls.pause.textContent = state === 'paused' ? 'Resume' : 'Pause';
@@ -126,6 +128,8 @@ var BibleSpeech = (function createBibleSpeech(){
     state = 'idle';
     verses = [];
     verseIndex = 0;
+    pendingNext = false;
+    pauseAfterCurrent = false;
     updateControls();
     notifyPlaybackEnd();
   }
@@ -137,13 +141,31 @@ var BibleSpeech = (function createBibleSpeech(){
     }
     var activeVerse = verses[verseIndex];
     var utterance = configureUtterance(new window.SpeechSynthesisUtterance(activeVerse.text));
+    var ended = false;
     utterance.onstart = function(){
       if(activeSession !== session) return;
       notifyVerseSpoken(activeVerse.verseNumber);
     };
     utterance.onend = function(){
-      if(activeSession !== session) return;
+      if(activeSession !== session || ended) return;
+      ended = true;
       verseIndex++;
+      if(pauseAfterCurrent){
+        pauseAfterCurrent = false;
+        if(verseIndex >= verses.length){
+          finish(activeSession);
+          return;
+        }
+        state = 'paused';
+        pendingNext = true;
+        window.speechSynthesis.pause();
+        updateControls();
+        return;
+      }
+      if(state === 'paused'){
+        pendingNext = true;
+        return;
+      }
       speakNext(activeSession);
     };
     utterance.onerror = function(){
@@ -153,17 +175,22 @@ var BibleSpeech = (function createBibleSpeech(){
     notifyVerseStart(activeVerse.verseNumber);
     window.speechSynthesis.speak(utterance);
   }
-  function playChapter(chapter){
+  function playChapter(chapter, startVerse, pauseAfterFirst){
     if(!supported() || !chapter || !Array.isArray(chapter.verses)){
       updateControls();
       return;
     }
+    var wasPaused = state === 'paused';
     session++;
     window.speechSynthesis.cancel();
+    if(wasPaused) window.speechSynthesis.resume();
     verses = chapter.verses.map(function(verse, index){
       return {text:String(verse).trim(), verseNumber:index + 1};
     }).filter(function(verse){ return Boolean(verse.text); });
-    verseIndex = 0;
+    var startIndex = verses.findIndex(function(verse){ return verse.verseNumber === startVerse; });
+    verseIndex = startIndex < 0 ? 0 : startIndex;
+    pendingNext = false;
+    pauseAfterCurrent = Boolean(pauseAfterFirst);
     state = verses.length ? 'playing' : 'idle';
     updateControls();
     if(verses.length) speakNext(session);
@@ -174,13 +201,17 @@ var BibleSpeech = (function createBibleSpeech(){
       updateControls();
       return;
     }
+    var wasPaused = state === 'paused';
     session++;
     window.speechSynthesis.cancel();
+    if(wasPaused) window.speechSynthesis.resume();
     verses = [{
       text:String(text).trim(),
       verseNumber:Number.isInteger(Number(verseNumber)) && Number(verseNumber) > 0 ? Number(verseNumber) : null
     }];
     verseIndex = 0;
+    pendingNext = false;
+    pauseAfterCurrent = false;
     state = 'playing';
     updateControls();
     speakNext(session);
@@ -204,11 +235,16 @@ var BibleSpeech = (function createBibleSpeech(){
   function pauseResume(){
     if(!supported()) return;
     if(state === 'playing'){
-      window.speechSynthesis.pause();
       state = 'paused';
+      window.speechSynthesis.pause();
     } else if(state === 'paused'){
-      window.speechSynthesis.resume();
       state = 'playing';
+      pauseAfterCurrent = false;
+      window.speechSynthesis.resume();
+      if(pendingNext){
+        pendingNext = false;
+        speakNext(session);
+      }
     }
     updateControls();
   }
@@ -219,6 +255,8 @@ var BibleSpeech = (function createBibleSpeech(){
     state = 'idle';
     verses = [];
     verseIndex = 0;
+    pendingNext = false;
+    pauseAfterCurrent = false;
     updateControls();
     notifyPlaybackEnd();
   }

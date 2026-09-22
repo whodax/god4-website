@@ -3562,7 +3562,7 @@ async function installVoicePlaybackMocks(page) {
       query: async () => ({ state: 'granted', onchange: null })
     } });
 
-    window.__speech = { utterances: [], pauses: 0, resumes: 0, cancels: 0 };
+    window.__speech = { utterances: [], pauses: 0, resumes: 0, cancels: 0, paused: false };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', {
       configurable: true,
       value: function(text) { this.text = text; }
@@ -3572,8 +3572,8 @@ async function installVoicePlaybackMocks(page) {
         window.__speech.utterances.push(utterance);
         if (utterance.onstart) utterance.onstart();
       },
-      pause() { window.__speech.pauses++; },
-      resume() { window.__speech.resumes++; },
+      pause() { window.__speech.pauses++; window.__speech.paused = true; },
+      resume() { window.__speech.resumes++; window.__speech.paused = false; },
       cancel() { window.__speech.cancels++; }
     } });
   });
@@ -3638,7 +3638,7 @@ test('voice stop runs once on a final result and listening promptly restarts', a
   expect(await page.evaluate(() => window.__speech.cancels)).toBe(cancelsBeforeSecondStop + 1);
 });
 
-test('repeat replays the last verse that began speaking without changing Reader selection', async ({ page }) => {
+test('repeat aliases replay the last spoken verse and continue sequentially', async ({ page }) => {
   await installVoicePlaybackMocks(page);
   await page.locator('#verseSelect').selectOption('4');
   const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
@@ -3646,22 +3646,26 @@ test('repeat replays the last verse that began speaking without changing Reader 
   expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(0);
   await recognizePlaybackCommand(page, 'play');
   await page.evaluate(() => window.__speech.utterances[0].onend());
-  const secondVerseText = await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 2).text);
-  expect(await page.evaluate(() => window.__speech.utterances[1].text)).toBe(secondVerseText);
 
-  for (const alias of ['repeat', 'repeat verse', 'repeat last verse']) {
+  for (const [index, alias] of ['repeat', 'repeat verse', 'repeat last verse'].entries()) {
+    const verseNumber = index + 2;
     const count = await page.evaluate(() => window.__speech.utterances.length);
+    const oldUtterance = await page.evaluate(() => window.__speech.utterances.length - 1);
     await recognizePlaybackCommand(page, alias);
     expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(count + 1);
-    expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(secondVerseText);
-    await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+    expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+      await page.evaluate((number) => BibleData.getVerse('web', 'john', 1, number).text, verseNumber)
+    );
+    await expect(page.locator('#readerContent [data-verse-number="' + verseNumber + '"]')).toHaveClass(/verse-spoken/);
+    await page.evaluate((oldIndex) => window.__speech.utterances[oldIndex].onend(), oldUtterance);
+    expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(count + 1);
+    await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+    expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+      await page.evaluate((number) => BibleData.getVerse('web', 'john', 1, number).text, verseNumber + 1)
+    );
+    await expect(page.locator('#readerContent [data-verse-number="' + (verseNumber + 1) + '"]')).toHaveClass(/verse-spoken/);
     await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
   }
-  const countAfterRepeat = await page.evaluate(() => window.__speech.utterances.length);
-  await page.evaluate(() => window.__speech.utterances[1].onend());
-  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(countAfterRepeat);
-  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
-  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
   expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).toBe(storedPosition);
 
   await page.locator('#chapterSelect').selectOption('2');
@@ -3740,4 +3744,133 @@ test('recognition stops after the bounded InvalidStateError retries', async ({ p
   await page.waitForTimeout(150);
   expect(await page.evaluate(() => window.__voice.startAttempts)).toBe(attempts);
   expect(await page.evaluate(() => window.__voice.instances)).toBe(1);
+});
+
+
+test('stopped Play and Continue restart at the last spoken verse, including the visible Play button', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => window.__speech.utterances[0].text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 1).text)
+  );
+  for (let index = 0; index < 6; index++) {
+    await page.evaluate((value) => window.__speech.utterances[value].onend(), index);
+  }
+  await expect(page.locator('#readerContent [data-verse-number="7"]')).toHaveClass(/verse-spoken/);
+  await recognizePlaybackCommand(page, 'stop');
+  const stoppedCount = await page.evaluate(() => window.__speech.utterances.length);
+  const resumes = await page.evaluate(() => window.__speech.resumes);
+  await recognizePlaybackCommand(page, 'resume');
+  expect(await page.evaluate(() => window.__speech.resumes)).toBe(resumes);
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(stoppedCount);
+
+  await recognizePlaybackCommand(page, 'play');
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 7).text)
+  );
+  await expect(page.locator('#readerContent [data-verse-number="7"]')).toHaveClass(/verse-spoken/);
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 8).text)
+  );
+
+  await recognizePlaybackCommand(page, 'stop');
+  await recognizePlaybackCommand(page, 'continue');
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 8).text)
+  );
+  await recognizePlaybackCommand(page, 'stop');
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 8).text)
+  );
+  await recognizePlaybackCommand(page, 'stop');
+  await page.locator('#chapterSelect').selectOption('2');
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 2, 1).text)
+  );
+});
+
+test('recognized Pause applies before recognition restart and cannot advance a verse during pause', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'play');
+  await page.evaluate(() => {
+    window.__speech.paused = false;
+    window.__speech.startedAfterRace = [];
+    window.speechSynthesis.speak = function(utterance) {
+      window.__speech.utterances.push(utterance);
+      if (!window.__speech.paused) {
+        window.__speech.startedAfterRace.push(utterance.text);
+        if (utterance.onstart) utterance.onstart();
+      }
+    };
+    window.speechSynthesis.pause = function() {
+      window.__speech.pauses++;
+      window.__speech.paused = true;
+      window.__speech.utterances.at(-1).onend();
+    };
+    window.speechSynthesis.resume = function() {
+      window.__speech.resumes++;
+      window.__speech.paused = false;
+    };
+    window.__voice.emit('pause');
+  });
+  expect(await page.evaluate(() => window.__speech.pauses)).toBe(1);
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(1);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
+  await page.evaluate(() => window.__voice.end());
+  await expect.poll(() => page.evaluate(() => window.__voice.starts)).toBe(3);
+  await recognizePlaybackCommand(page, 'resume');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(2);
+  expect(await page.evaluate(() => window.__speech.resumes)).toBe(1);
+  expect(await page.evaluate(() => window.__speech.startedAfterRace)).toEqual([
+    await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 2).text)
+  ]);
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+});
+
+test('Repeat while paused replays the verse, then waits for Resume at the next verse', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await recognizePlaybackCommand(page, 'play');
+  await page.evaluate(() => window.__speech.utterances[0].onend());
+  await recognizePlaybackCommand(page, 'pause');
+  await recognizePlaybackCommand(page, 'repeat');
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  const repeatedCount = await page.evaluate(() => window.__speech.utterances.length);
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
+  expect(await page.evaluate(() => window.__speech.paused)).toBe(true);
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(repeatedCount);
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(() => window.__speech.paused)).toBe(false);
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(repeatedCount + 1);
+  await expect(page.locator('#readerContent [data-verse-number="3"]')).toHaveClass(/verse-spoken/);
+});
+
+test('repeating the final verse finishes at the current chapter boundary', async ({ page }) => {
+  await installVoicePlaybackMocks(page);
+  await page.locator('#bookSelect').selectOption('3-john');
+  const finalVerse = await page.evaluate(() => BibleData.getChapter('web', '3-john', 1).verses.length);
+  await page.evaluate((number) => readVerseAloud(number), finalVerse);
+  const count = await page.evaluate(() => window.__speech.utterances.length);
+  await recognizePlaybackCommand(page, 'repeat last verse');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(count + 1);
+  await expect(page.locator('#readerContent [data-verse-number="' + finalVerse + '"]')).toHaveClass(/verse-spoken/);
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  await expect(page.locator('#bookSelect')).toHaveValue('3-john');
+  await expect(page.locator('#chapterSelect')).toHaveValue('1');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(count + 1);
+
+  await page.evaluate((number) => readVerseAloud(number), finalVerse);
+  await recognizePlaybackCommand(page, 'pause');
+  await recognizePlaybackCommand(page, 'repeat');
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  expect(await page.evaluate(() => window.__speech.paused)).toBe(false);
 });
