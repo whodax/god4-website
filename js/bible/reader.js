@@ -6,10 +6,11 @@ let currentVerse = initialReaderPosition.verse || null;
 let currentTranslation = UserData.translation.load();
 let voiceRecognition = null;
 let voiceCommandsListening = false;
+let voiceRecognitionActive = false;
 let voiceCommandsStopping = false;
-let voiceCommandTimer = null;
-let voiceCommandStatusTimer = null;
-let voiceCommandResultReceived = false;
+let voiceRecognitionBlocked = false;
+let voiceRestartTimer = null;
+let voicePermissionChecked = false;
 
 function getReaderControls(){
   return document.querySelectorAll('[data-reader-controls]');
@@ -225,95 +226,155 @@ function handleVoiceCommand(transcript){
   else if(command === 'pause') pauseReader();
   else if(command === 'resume') resumeReader();
   else if(command === 'stop') stopReader();
+  else if(command === 'next verse') nextReaderVerse();
+  else if(/^(previous verse|back verse)$/.test(command)) previousReaderVerse();
   else if(/^(next chapter|next|go to next chapter)$/.test(command)) nextChapter();
-  else if(/^(previous chapter|previous|go to previous chapter)$/.test(command)) prevChapter();
+  else if(/^(previous chapter|previous|back|go to previous chapter)$/.test(command)) prevChapter();
   else if(handleSpokenReferenceCommand(command)) return;
   else setVoiceStatus('Unrecognized command: ' + transcript);
 }
 
 function clearVoiceCommandTimers(){
-  if(voiceCommandTimer){
-    clearTimeout(voiceCommandTimer);
-    voiceCommandTimer = null;
-  }
-  if(voiceCommandStatusTimer){
-    clearTimeout(voiceCommandStatusTimer);
-    voiceCommandStatusTimer = null;
+  if(voiceRestartTimer){
+    clearTimeout(voiceRestartTimer);
+    voiceRestartTimer = null;
   }
 }
 
 function finishVoiceCommands(showReadyStatus){
   clearVoiceCommandTimers();
   voiceCommandsListening = false;
+  voiceRecognitionActive = false;
   voiceCommandsStopping = false;
   setVoiceButtonState(false);
   if(showReadyStatus) setVoiceStatus('Ready for a voice command.');
 }
 
-function toggleVoiceCommands(){
+function createVoiceRecognition(){
   var Recognition = getVoiceRecognition();
-  if(!Recognition){
+  if(!Recognition || voiceRecognition) return voiceRecognition;
+  voiceRecognition = new Recognition();
+  voiceRecognition.continuous = false;
+  voiceRecognition.interimResults = false;
+  voiceRecognition.lang = 'en-US';
+  voiceRecognition.onstart = function(){
+    voiceRecognitionActive = true;
+    if(voiceCommandsListening) setVoiceStatus('Listening for a command...');
+  };
+  voiceRecognition.onresult = function(event){
+    var resultIndex = Number.isInteger(event.resultIndex) ? event.resultIndex : event.results.length - 1;
+    var result = event.results && event.results[resultIndex];
+    if(!result || result.isFinal === false || !result[0] || !result[0].transcript) return;
+    handleVoiceCommand(result[0].transcript);
+  };
+  voiceRecognition.onerror = function(event){
+    voiceRecognitionActive = false;
+    var intentionalStop = voiceCommandsStopping || !voiceCommandsListening;
+    if(intentionalStop && event.error === 'aborted') return;
+    if(event.error === 'no-speech'){
+      setVoiceStatus(getVoiceRecognitionErrorMessage(event.error));
+      return;
+    }
+    voiceRecognitionBlocked = event.error === 'not-allowed' || event.error === 'service-not-allowed' || event.error === 'audio-capture';
+    setVoiceStatus(getVoiceRecognitionErrorMessage(event.error));
+    finishVoiceCommands(false);
+  };
+  voiceRecognition.onend = function(){
+    voiceRecognitionActive = false;
+    if(voiceCommandsStopping || !voiceCommandsListening){
+      voiceCommandsStopping = false;
+      return;
+    }
+    scheduleVoiceRecognitionRestart();
+  };
+  return voiceRecognition;
+}
+
+function startVoiceRecognition(){
+  if(!voiceCommandsListening || voiceRecognitionBlocked || voiceRecognitionActive || voiceRestartTimer) return;
+  var recognition = createVoiceRecognition();
+  if(!recognition) return;
+  voiceCommandsStopping = false;
+  voiceRecognitionActive = true;
+  setVoiceStatus('Listening for a command...');
+  try {
+    recognition.start();
+  } catch(error){
+    if(error && error.name === 'InvalidStateError') return;
+    voiceRecognitionActive = false;
+    setVoiceStatus('Voice command error: ' + (error && error.message ? error.message : 'Unable to start recognition.'));
+    finishVoiceCommands(false);
+  }
+}
+
+function scheduleVoiceRecognitionRestart(){
+  if(!voiceCommandsListening || voiceRecognitionBlocked || voiceRestartTimer) return;
+  voiceRestartTimer = setTimeout(function(){
+    voiceRestartTimer = null;
+    startVoiceRecognition();
+  }, 250);
+}
+
+function enableVoiceCommands(){
+  if(!getVoiceRecognition()){
     setVoiceStatus('Voice commands are not supported in this browser. Read Aloud is still available.');
     return;
   }
-  if(voiceCommandsListening){
-    voiceCommandsStopping = true;
-    if(voiceRecognition && typeof voiceRecognition.stop === 'function'){
-      voiceRecognition.stop();
-    } else {
-      finishVoiceCommands(true);
-    }
-    return;
-  }
-  if(!voiceRecognition){
-    voiceRecognition = new Recognition();
-    voiceRecognition.continuous = false;
-    voiceRecognition.interimResults = false;
-    voiceRecognition.lang = 'en-US';
-    voiceRecognition.onresult = function(event){
-      var resultIndex = Number.isInteger(event.resultIndex) ? event.resultIndex : event.results.length - 1;
-      var result = event.results && event.results[resultIndex];
-      if(!result || result.isFinal === false || !result[0] || !result[0].transcript) return;
-      voiceCommandResultReceived = true;
-      handleVoiceCommand(result[0].transcript);
-      finishVoiceCommands(false);
-      voiceCommandStatusTimer = setTimeout(function(){ setVoiceStatus('Ready for a voice command.'); }, 1200);
-    };
-    voiceRecognition.onerror = function(event){
-      var intentionalStop = event.error === 'aborted' || voiceCommandsStopping;
-      if(!intentionalStop) setVoiceStatus(getVoiceRecognitionErrorMessage(event.error));
-      finishVoiceCommands(intentionalStop);
-      if(!intentionalStop) voiceCommandStatusTimer = setTimeout(function(){ setVoiceStatus('Ready for a voice command.'); }, 1200);
-    };
-    voiceRecognition.onend = function(){
-      if(voiceCommandsStopping){
-        finishVoiceCommands(true);
-        return;
-      }
-      if(voiceCommandResultReceived) return;
-    };
-  }
-  if(voiceCommandsListening) return;
+  clearVoiceCommandTimers();
+  voiceRecognitionBlocked = false;
   voiceCommandsStopping = false;
-  voiceCommandResultReceived = false;
   voiceCommandsListening = true;
   setVoiceButtonState(true);
-  setVoiceStatus('Listening for a command...');
-  voiceCommandTimer = setTimeout(function(){
-    if(!voiceCommandsListening) return;
-    finishVoiceCommands(true);
-  }, 6000);
-  try {
-    voiceRecognition.start();
-  } catch(error){
-    if(error && error.name !== 'InvalidStateError'){
-      setVoiceStatus('Voice command error: ' + error.message);
-      finishVoiceCommands(false);
-      voiceCommandStatusTimer = setTimeout(function(){ setVoiceStatus('Ready for a voice command.'); }, 1200);
-    } else {
-      finishVoiceCommands(true);
-    }
+  startVoiceRecognition();
+}
+
+function disableVoiceCommands(){
+  clearVoiceCommandTimers();
+  voiceCommandsListening = false;
+  voiceCommandsStopping = true;
+  setVoiceButtonState(false);
+  setVoiceStatus('Ready for a voice command.');
+  if(voiceRecognitionActive && voiceRecognition && typeof voiceRecognition.stop === 'function'){
+    voiceRecognition.stop();
+  } else {
+    voiceRecognitionActive = false;
+    voiceCommandsStopping = false;
   }
+}
+
+function toggleVoiceCommands(){
+  if(voiceCommandsListening) disableVoiceCommands();
+  else enableVoiceCommands();
+}
+
+function initializeVoiceCommands(){
+  if(voicePermissionChecked) return;
+  voicePermissionChecked = true;
+  if(!getVoiceRecognition() || !navigator.permissions || typeof navigator.permissions.query !== 'function') return;
+  var permissionRequest;
+  try {
+    permissionRequest = navigator.permissions.query({name:'microphone'});
+  } catch(error){
+    return;
+  }
+  Promise.resolve(permissionRequest).then(function(permission){
+    if(!permission) return;
+    if(permission.state === 'granted') enableVoiceCommands();
+    else if(permission.state === 'denied'){
+      voiceRecognitionBlocked = true;
+      setVoiceStatus(getVoiceRecognitionErrorMessage('not-allowed'));
+    }
+    permission.onchange = function(){
+      if(permission.state === 'granted' && !voiceCommandsListening) enableVoiceCommands();
+      else if(permission.state === 'denied' && voiceCommandsListening){
+        voiceRecognitionBlocked = true;
+        disableVoiceCommands();
+        setVoiceStatus(getVoiceRecognitionErrorMessage('not-allowed'));
+      }
+    };
+  }).catch(function(){
+    // Permission probing is optional. The button remains the explicit fallback.
+  });
 }
 
 function escapeHtml(value){
@@ -539,16 +600,21 @@ function highlightVerse(el){
 function toggleFullscreen(){
   var overlay = document.getElementById('fsOverlay');
   var fullscreenButton = document.getElementById('fullscreenBtn');
+  var verseNavigation = document.getElementById('readerVerseNavigation');
+  var readerContent = document.getElementById('readerContent');
+  var fullscreenContent = document.getElementById('fsContent');
   if(!overlay) return;
   overlay.classList.toggle('active');
   var isActive = overlay.classList.contains('active');
   overlay.setAttribute('aria-hidden', isActive ? 'false' : 'true');
   if(fullscreenButton) fullscreenButton.setAttribute('aria-pressed', isActive ? 'true' : 'false');
   if(isActive){
+    if(verseNavigation && fullscreenContent) overlay.insertBefore(verseNavigation, fullscreenContent);
     var closeButton = overlay.querySelector('.fs-close');
     if(closeButton) closeButton.focus();
-  } else if(fullscreenButton){
-    fullscreenButton.focus();
+  } else {
+    if(verseNavigation && readerContent && readerContent.parentNode) readerContent.parentNode.insertBefore(verseNavigation, readerContent);
+    if(fullscreenButton) fullscreenButton.focus();
   }
 }
 
@@ -574,3 +640,5 @@ document.addEventListener('keydown', function(event){
 });
 
 if(typeof WordStudyController !== 'undefined') WordStudyController.initialize();
+if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeVoiceCommands, { once: true });
+else initializeVoiceCommands();
