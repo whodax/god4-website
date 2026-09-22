@@ -855,6 +855,149 @@ test('reader read-aloud controls speak only chapter verses and manage playback',
   await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
 });
 
+test('Read Aloud highlights each spoken verse without changing the selected verse', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { utterances: [], pauses: 0, resumes: 0, cancels: 0 };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+      configurable: true,
+      value: function(text) { this.text = text; }
+    });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.utterances.push(utterance); },
+      pause() { window.__speech.pauses++; },
+      resume() { window.__speech.resumes++; },
+      cancel() { window.__speech.cancels++; }
+    } });
+  });
+  await page.goto('/');
+  await page.locator('#bookSelect').selectOption('exodus');
+  await page.locator('#chapterSelect').selectOption('5');
+  await page.locator('#verseSelect').selectOption('4');
+
+  const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
+  await page.locator('#readAloudPlay').click();
+
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).toBe(storedPosition);
+
+  await page.evaluate(() => window.__speech.utterances[0].onend());
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).not.toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
+
+  await page.getByRole('button', { name: 'Pause reading aloud' }).click();
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  await page.getByRole('button', { name: 'Resume reading aloud' }).click();
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  expect(await page.evaluate(() => ({ pauses: window.__speech.pauses, resumes: window.__speech.resumes }))).toEqual({
+    pauses: 1, resumes: 1
+  });
+
+  await page.locator('#readAloudStop').click();
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  await expect(page.locator('#readerContent [data-verse-number="4"]')).toHaveClass(/verse-focused/);
+  expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).toBe(storedPosition);
+
+  const utteranceCountAfterStop = await page.evaluate(() => window.__speech.utterances.length);
+  await page.evaluate(() => window.__speech.utterances[1].onend());
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(utteranceCountAfterStop);
+});
+
+test('single-verse Read Aloud combines spoken and selected states and clears on natural completion', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { utterances: [] };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+      configurable: true,
+      value: function(text) { this.text = text; }
+    });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.utterances.push(utterance); },
+      pause() {},
+      resume() {},
+      cancel() {}
+    } });
+  });
+  await page.goto('/');
+  await page.locator('#verseSelect').selectOption('2');
+  const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
+
+  await page.locator('#readerContent [data-verse-speech="2"]').click();
+  const verse = page.locator('#readerContent [data-verse-number="2"]');
+  await expect(verse).toHaveClass(/verse-focused/);
+  await expect(verse).toHaveClass(/verse-spoken/);
+
+  await page.evaluate(() => window.__speech.utterances[0].onend());
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  await expect(verse).toHaveClass(/verse-focused/);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
+  expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).toBe(storedPosition);
+});
+
+test('Reader chapter and book navigation clear stale spoken highlights', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { utterances: [], cancels: 0 };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+      configurable: true,
+      value: function(text) { this.text = text; }
+    });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.utterances.push(utterance); },
+      pause() {},
+      resume() {},
+      cancel() { window.__speech.cancels++; }
+    } });
+  });
+  await page.goto('/');
+
+  await page.locator('#readAloudPlay').click();
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
+  await page.locator('#chapterSelect').selectOption('2');
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
+
+  await page.locator('#readAloudPlay').click();
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
+  await page.locator('#bookSelect').selectOption('genesis');
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
+});
+
+test('fullscreen Reader mirrors spoken-verse progression without moving focus', async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__speech = { utterances: [] };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+      configurable: true,
+      value: function(text) { this.text = text; }
+    });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      speak(utterance) { window.__speech.utterances.push(utterance); },
+      pause() {},
+      resume() {},
+      cancel() {}
+    } });
+  });
+  await page.goto('/');
+  await page.locator('#readAloudPlay').click();
+  await page.locator('#fullscreenBtn').click();
+
+  const exit = page.getByRole('button', { name: 'Exit Fullscreen' });
+  await expect(exit).toBeFocused();
+  await expect(page.locator('#fsContent .verse-spoken')).toHaveCount(1);
+  await expect(page.locator('#fsContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
+
+  await page.evaluate(() => window.__speech.utterances[0].onend());
+  await expect(page.locator('#fsContent .verse-spoken')).toHaveCount(1);
+  await expect(page.locator('#fsContent [data-verse-number="1"]')).not.toHaveClass(/verse-spoken/);
+  await expect(page.locator('#fsContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  await expect(exit).toBeFocused();
+
+  await page.evaluate(() => BibleSpeech.stop());
+  await expect(page.locator('#fsContent .verse-spoken')).toHaveCount(0);
+});
 test('reader read-aloud controls are disabled when Web Speech API is unavailable', async ({ page }) => {
   await page.addInitScript(() => {
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: undefined });

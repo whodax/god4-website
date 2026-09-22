@@ -7,6 +7,7 @@ var BibleSpeech = (function createBibleSpeech(){
   var session = 0;
   var speed = readSpeedPreference();
   var voiceName = readVoicePreference();
+  var playbackListener = null;
 
   function supported(){
     return typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined' && typeof window.SpeechSynthesisUtterance !== 'undefined';
@@ -85,6 +86,19 @@ var BibleSpeech = (function createBibleSpeech(){
     return utterance;
   }
 
+  function setPlaybackListener(listener){
+    playbackListener = listener && typeof listener === 'object' ? listener : null;
+  }
+
+  function notifyVerseStart(verseNumber){
+    if(!playbackListener || typeof playbackListener.onVerseStart !== 'function') return;
+    playbackListener.onVerseStart(verseNumber);
+  }
+
+  function notifyPlaybackEnd(){
+    if(!playbackListener || typeof playbackListener.onEnd !== 'function') return;
+    playbackListener.onEnd();
+  }
   function updateControls(){
     var controls = elements();
     var unavailable = !supported();
@@ -108,55 +122,60 @@ var BibleSpeech = (function createBibleSpeech(){
     verses = [];
     verseIndex = 0;
     updateControls();
+    notifyPlaybackEnd();
   }
-
   function speakNext(activeSession){
     if(activeSession !== session || state !== 'playing') return;
     if(verseIndex >= verses.length){
       finish(activeSession);
       return;
     }
-    var utterance = configureUtterance(new window.SpeechSynthesisUtterance(verses[verseIndex]));
+    var activeVerse = verses[verseIndex];
+    var utterance = configureUtterance(new window.SpeechSynthesisUtterance(activeVerse.text));
     utterance.onend = function(){
       if(activeSession !== session) return;
       verseIndex++;
       speakNext(activeSession);
     };
-    utterance.onerror = function(event){
-      if(activeSession !== session || event.error === 'interrupted' || event.error === 'canceled') return;
+    utterance.onerror = function(){
+      if(activeSession !== session) return;
       finish(activeSession);
     };
+    notifyVerseStart(activeVerse.verseNumber);
     window.speechSynthesis.speak(utterance);
   }
-
   function playChapter(chapter){
     if(!supported() || !chapter || !Array.isArray(chapter.verses)){
       updateControls();
       return;
     }
-    window.speechSynthesis.cancel();
     session++;
-    verses = chapter.verses.map(function(verse){ return String(verse).trim(); }).filter(Boolean);
+    window.speechSynthesis.cancel();
+    verses = chapter.verses.map(function(verse, index){
+      return {text:String(verse).trim(), verseNumber:index + 1};
+    }).filter(function(verse){ return Boolean(verse.text); });
     verseIndex = 0;
     state = verses.length ? 'playing' : 'idle';
     updateControls();
-    speakNext(session);
+    if(verses.length) speakNext(session);
+    else notifyPlaybackEnd();
   }
-
-  function playVerse(text){
+  function playVerse(text, verseNumber){
     if(!supported() || !String(text || '').trim()){
       updateControls();
       return;
     }
-    window.speechSynthesis.cancel();
     session++;
-    verses = [String(text).trim()];
+    window.speechSynthesis.cancel();
+    verses = [{
+      text:String(text).trim(),
+      verseNumber:Number.isInteger(Number(verseNumber)) && Number(verseNumber) > 0 ? Number(verseNumber) : null
+    }];
     verseIndex = 0;
     state = 'playing';
     updateControls();
     speakNext(session);
   }
-
   function setSpeed(value){
     var nextSpeed = Number(value);
     if(SPEEDS.indexOf(nextSpeed) < 0) return;
@@ -192,8 +211,8 @@ var BibleSpeech = (function createBibleSpeech(){
     verses = [];
     verseIndex = 0;
     updateControls();
+    notifyPlaybackEnd();
   }
-
   if(typeof window !== 'undefined' && window.speechSynthesis && typeof window.speechSynthesis.addEventListener === 'function'){
     window.speechSynthesis.addEventListener('voiceschanged', populateVoiceSelector);
   }
@@ -206,6 +225,7 @@ var BibleSpeech = (function createBibleSpeech(){
     stop: stop,
     setSpeed: setSpeed,
     setVoice: setVoice,
+    setPlaybackListener: setPlaybackListener,
     getSpeed: function(){ return speed; },
     getVoice: function(){ return selectedVoice(); },
     getSpeedOptions: function(){ return SPEEDS.slice(); },
