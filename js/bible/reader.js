@@ -248,6 +248,20 @@ function navigateToSpokenBook(bookText, chapterNumber, verseNumber){
   return true;
 }
 
+function parseSpokenReferenceNumber(value){
+  var words = String(value || '').split(/\s+/);
+  if(words.length === 1 && /^\d+$/.test(words[0])) return Number(words[0]);
+  var units = {one:1, two:2, three:3, four:4, five:5, six:6, seven:7, eight:8, nine:9,
+    ten:10, eleven:11, twelve:12, thirteen:13, fourteen:14, fifteen:15, sixteen:16,
+    seventeen:17, eighteen:18, nineteen:19};
+  var tens = {twenty:20, thirty:30, forty:40, fifty:50, sixty:60, seventy:70, eighty:80, ninety:90};
+  if(words.length === 1) return units[words[0]] || tens[words[0]] || null;
+  if(words.length === 2 && tens[words[0]] && units[words[1]] && units[words[1]] < 10){
+    return tens[words[0]] + units[words[1]];
+  }
+  return null;
+}
+
 function handleSpokenReferenceCommand(command){
   var trailingPlay = /\s+(play|read)$/.exec(command);
   if(trailingPlay) command = command.slice(0, trailingPlay.index);
@@ -266,19 +280,19 @@ function handleSpokenReferenceCommand(command){
     return Boolean(actionMatch || /\d/.test(reference));
   }
   var remainder = reference.slice(normalizeBookName(book.name).length).trim();
-  var match = /^(?:chapter\s+)?(\d+)(?:\s*:\s*|\s+verse\s+|\s+)(\d+)$/.exec(remainder);
-  var chapterOnly = /^(?:chapter\s+)?(\d+)$/.exec(remainder);
-  if(remainder && !match && !chapterOnly){
+  var match = /^(?:chapter\s+)?(.+?)\s+verse\s+(.+)$/.exec(remainder) || /^(?:chapter\s+)?(\d+)\s+(\d+)$/.exec(remainder);
+  var chapterOnly = match ? null : /^(?:chapter\s+)?(.+)$/.exec(remainder);
+  var chapterNumber = match ? parseSpokenReferenceNumber(match[1]) : chapterOnly ? parseSpokenReferenceNumber(chapterOnly[1]) : undefined;
+  var verseNumber = match ? parseSpokenReferenceNumber(match[2]) : undefined;
+  if(remainder && (!chapterNumber || (match && !verseNumber))){
     setVoiceStatus('Book or chapter not found.');
     return true;
   }
-  var chapterNumber = match ? match[1] : chapterOnly ? chapterOnly[1] : undefined;
-  var verseNumber = match ? match[2] : undefined;
   if(!navigateToSpokenBook(book.name, chapterNumber, verseNumber)){
     setVoiceStatus('Book, chapter, or verse not found.');
     return true;
   }
-  if(action === 'play' || action === 'read' || trailingPlay) playReader(verseNumber ? Number(verseNumber) : undefined);
+  if(action === 'play' || action === 'read' || trailingPlay) playReader(verseNumber || undefined);
   return true;
 }
 
@@ -316,12 +330,17 @@ function finishVoiceCommands(showReadyStatus){
   if(showReadyStatus) setVoiceStatus('Ready for a voice command.');
 }
 
+function isInterimPlaybackCommand(transcript){
+  var command = String(transcript || '').toLowerCase().trim().replace(/[.!?]+$/, '').replace(/\s+/g, ' ');
+  return /^(pause|stop|play|resume|continue|repeat|repeat verse|repeat last verse)$/.test(command);
+}
+
 function createVoiceRecognition(){
   var Recognition = getVoiceRecognition();
   if(!Recognition || voiceRecognition) return voiceRecognition;
   voiceRecognition = new Recognition();
   voiceRecognition.continuous = false;
-  voiceRecognition.interimResults = false;
+  voiceRecognition.interimResults = true;
   voiceRecognition.lang = 'en-US';
   voiceRecognition.onstart = function(){
     voiceRecognitionActive = true;
@@ -333,15 +352,20 @@ function createVoiceRecognition(){
     var resultIndex = Number.isInteger(event.resultIndex) ? event.resultIndex : 0;
     for(var index = resultIndex; index < event.results.length; index++){
       var result = event.results[index];
-      if(!result || result.isFinal === false || !result[0] || !result[0].transcript) continue;
+      if(!result || !result[0] || !result[0].transcript) continue;
+      var interim = result.isFinal === false;
+      if(interim && !isInterimPlaybackCommand(result[0].transcript)) continue;
       voiceResultHandled = true;
       handleVoiceCommand(result[0].transcript);
+      if(interim && typeof voiceRecognition.stop === 'function'){
+        try { voiceRecognition.stop(); } catch(error) { /* Recognition may already be ending. */ }
+      }
       return;
     }
   };
   voiceRecognition.onerror = function(event){
     var intentionalStop = voiceCommandsStopping || !voiceCommandsListening;
-    if(intentionalStop && event.error === 'aborted') return;
+    if((intentionalStop || voiceResultHandled) && event.error === 'aborted') return;
     if(event.error === 'no-speech'){
       setVoiceStatus(getVoiceRecognitionErrorMessage(event.error));
       return;

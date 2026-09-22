@@ -7,6 +7,8 @@ var BibleSpeech = (function createBibleSpeech(){
   var pendingNext = false;
   var pauseAfterCurrent = false;
   var sequenceIsChapter = false;
+  var repeatState = null;
+  var currentVerseIndex = -1;
   var session = 0;
   var speed = readSpeedPreference();
   var voiceName = readVoicePreference();
@@ -132,6 +134,8 @@ var BibleSpeech = (function createBibleSpeech(){
     pendingNext = false;
     pauseAfterCurrent = false;
     sequenceIsChapter = false;
+    repeatState = null;
+    currentVerseIndex = -1;
     updateControls();
     notifyPlaybackEnd();
   }
@@ -141,11 +145,12 @@ var BibleSpeech = (function createBibleSpeech(){
       finish(activeSession);
       return;
     }
+    currentVerseIndex = verseIndex;
     var activeVerse = verses[verseIndex];
     var utterance = configureUtterance(new window.SpeechSynthesisUtterance(activeVerse.text));
     var ended = false;
     utterance.onstart = function(){
-      if(activeSession !== session) return;
+      if(activeSession !== session || ended) return;
       notifyVerseSpoken(activeVerse.verseNumber);
     };
     utterance.onend = function(){
@@ -171,7 +176,8 @@ var BibleSpeech = (function createBibleSpeech(){
       speakNext(activeSession);
     };
     utterance.onerror = function(){
-      if(activeSession !== session) return;
+      if(activeSession !== session || ended) return;
+      ended = true;
       finish(activeSession);
     };
     notifyVerseStart(activeVerse.verseNumber);
@@ -193,6 +199,8 @@ var BibleSpeech = (function createBibleSpeech(){
     verseIndex = startIndex < 0 ? 0 : startIndex;
     pendingNext = false;
     pauseAfterCurrent = Boolean(pauseAfterFirst);
+    repeatState = null;
+    currentVerseIndex = -1;
     sequenceIsChapter = true;
     state = verses.length ? 'playing' : 'idle';
     updateControls();
@@ -215,26 +223,79 @@ var BibleSpeech = (function createBibleSpeech(){
     verseIndex = 0;
     pendingNext = false;
     pauseAfterCurrent = false;
+    repeatState = null;
+    currentVerseIndex = -1;
     sequenceIsChapter = false;
     state = 'playing';
     updateControls();
     speakNext(session);
   }
+  function speakRepeat(activeSession, detour){
+    if(activeSession !== session || repeatState !== detour) return;
+    var activeVerse = verses[detour.repeatVerseIndex];
+    var utterance = configureUtterance(new window.SpeechSynthesisUtterance(activeVerse.text));
+    var ended = false;
+    currentVerseIndex = detour.repeatVerseIndex;
+    utterance.onstart = function(){
+      if(activeSession === session && repeatState === detour && !ended) notifyVerseSpoken(activeVerse.verseNumber);
+    };
+    utterance.onend = function(){
+      if(activeSession !== session || repeatState !== detour || ended) return;
+      ended = true;
+      repeatState = null;
+      verseIndex = detour.nextVerseIndexAfterRepeat;
+      if(verseIndex >= verses.length){
+        finish(activeSession);
+      } else if(detour.wasPausedBeforeRepeat || state === 'paused'){
+        state = 'paused';
+        pendingNext = true;
+        window.speechSynthesis.pause();
+        updateControls();
+      } else {
+        state = 'playing';
+        pendingNext = false;
+        speakNext(activeSession);
+      }
+    };
+    utterance.onerror = function(){
+      if(activeSession === session && repeatState === detour) finish(activeSession);
+    };
+    notifyVerseStart(activeVerse.verseNumber);
+    window.speechSynthesis.speak(utterance);
+  }
   function repeatVerse(verseNumber){
     if(!supported() || !sequenceIsChapter || state === 'idle') return false;
     var repeatIndex = verses.findIndex(function(verse){ return verse.verseNumber === verseNumber; });
     if(repeatIndex < 0) return false;
-    var wasPaused = state === 'paused';
+    var wasPaused = state === 'paused' || Boolean(repeatState && repeatState.wasPausedBeforeRepeat);
     session++;
     window.speechSynthesis.cancel();
     if(wasPaused) window.speechSynthesis.resume();
-    verseIndex = repeatIndex;
+    var detour = {
+      repeatVerseIndex: repeatIndex,
+      nextVerseIndexAfterRepeat: repeatIndex + 1,
+      wasPausedBeforeRepeat: wasPaused
+    };
+    repeatState = detour;
     pendingNext = false;
-    pauseAfterCurrent = wasPaused;
+    pauseAfterCurrent = false;
     state = 'playing';
     updateControls();
-    speakNext(session);
+    speakRepeat(session, detour);
     return true;
+  }
+  function getPlaybackSnapshot(){
+    var nextIndex = repeatState ? repeatState.nextVerseIndexAfterRepeat : pendingNext ? verseIndex : verseIndex + 1;
+    return {
+      status: state,
+      currentVerse: currentVerseIndex >= 0 && verses[currentVerseIndex] ? verses[currentVerseIndex].verseNumber : null,
+      nextVerse: state !== 'idle' && verses[nextIndex] ? verses[nextIndex].verseNumber : null,
+      repeatActive: Boolean(repeatState),
+      repeatVerse: repeatState ? verses[repeatState.repeatVerseIndex].verseNumber : null,
+      repeatNextVerse: repeatState && verses[repeatState.nextVerseIndexAfterRepeat] ? verses[repeatState.nextVerseIndexAfterRepeat].verseNumber : null,
+      wasPausedBeforeRepeat: repeatState ? repeatState.wasPausedBeforeRepeat : null,
+      pendingNextWhilePaused: pendingNext
+    };
   }
   function setSpeed(value){
     var nextSpeed = Number(value);
@@ -259,6 +320,7 @@ var BibleSpeech = (function createBibleSpeech(){
       window.speechSynthesis.pause();
     } else if(state === 'paused'){
       state = 'playing';
+      if(repeatState) repeatState.wasPausedBeforeRepeat = false;
       pauseAfterCurrent = false;
       window.speechSynthesis.resume();
       if(pendingNext){
@@ -278,6 +340,8 @@ var BibleSpeech = (function createBibleSpeech(){
     pendingNext = false;
     pauseAfterCurrent = false;
     sequenceIsChapter = false;
+    repeatState = null;
+    currentVerseIndex = -1;
     updateControls();
     notifyPlaybackEnd();
   }
@@ -290,6 +354,7 @@ var BibleSpeech = (function createBibleSpeech(){
     playChapter: playChapter,
     playVerse: playVerse,
     repeatVerse: repeatVerse,
+    getPlaybackSnapshot: getPlaybackSnapshot,
     pauseResume: pauseResume,
     stop: stop,
     setSpeed: setSpeed,
