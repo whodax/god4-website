@@ -1,0 +1,46 @@
+/* Optional account controls follow the existing header palette and type scale. */
+.header-actions{display:flex;align-items:center;gap:8px;margin-left:16px;}
+.account-trigger{
+  max-width:180px;min-height:32px;padding:7px 12px;border:1px solid var(--ink);
+  border-radius:20px;background:transparent;color:var(--ink);cursor:pointer;
+  font:12px 'Inter',sans-serif;letter-spacing:.05em;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.account-trigger:hover{border-color:var(--oxblood);color:var(--oxblood);}
+.account-dialog{
+  width:min(420px,calc(100vw - 32px));max-height:calc(100dvh - 32px);
+  padding:26px;border:1px solid var(--line);border-radius:3px;
+  background:var(--vellum-card);color:var(--ink);box-shadow:var(--shadow);
+  overflow:auto;
+}
+.account-dialog::backdrop{background:rgba(27,42,68,.55);}
+.account-dialog [hidden]{display:none!important;}
+.account-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;}
+.account-heading h2{margin:0;font:600 28px 'Cormorant Garamond',serif;}
+.account-close{border:0;background:none;color:var(--ink-soft);font-size:24px;cursor:pointer;min-width:36px;min-height:36px;}
+.account-dialog p{line-height:1.5;}
+.account-form{display:grid;gap:10px;}
+.account-form label{font:12px 'Inter',sans-serif;letter-spacing:.04em;}
+.account-form input{
+  width:100%;min-height:42px;padding:9px 11px;border:1px solid var(--line);
+  border-radius:2px;background:#fff9ea;color:var(--ink);font:15px 'Inter',sans-serif;
+}
+.account-form input[aria-invalid="true"]{border-color:var(--oxblood);}
+.account-submit{
+  min-height:42px;margin-top:10px;padding:9px 16px;border:0;border-radius:2px;
+  background:var(--ink);color:var(--vellum-card);cursor:pointer;
+  font:13px 'Inter',sans-serif;
+}
+.account-submit:hover:not(:disabled){background:var(--oxblood);}
+.account-submit:disabled{opacity:.6;cursor:wait;}
+.account-switch{
+  width:max-content;min-height:36px;padding:6px 0;border:0;background:none;
+  color:var(--oxblood);cursor:pointer;text-decoration:underline;
+  font:13px 'Inter',sans-serif;
+}
+.account-error{margin:14px 0 0;color:var(--oxblood);font:13px/1.5 'Inter',sans-serif;}
+#accountConfirmation h3{margin:0;font:600 22px 'Cormorant Garamond',serif;}
+@media (max-width:430px){
+  nav{flex-wrap:wrap;}
+  .header-actions{width:100%;justify-content:flex-end;margin:2px 0 0;}
+}
