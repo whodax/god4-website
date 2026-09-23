@@ -4135,3 +4135,180 @@ test('interim Play, Continue, Stop, and Resume obey playback state and cycle ded
   expect(await page.evaluate(() => BibleSpeech.getPlaybackSnapshot())).toMatchObject({status:'playing', currentVerse:1, nextVerse:2});
   expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(utterances + 1);
 });
+
+
+async function installSpokenFollowMocks(page, deferStart = false) {
+  await page.addInitScript((shouldDeferStart) => {
+    window.__speech = {utterances: [], paused: false};
+    window.__followScrolls = [];
+    const windowScrollBy = window.scrollBy.bind(window);
+    window.scrollBy = (options) => {
+      window.__followScrolls.push({target: 'window', behavior: options.behavior});
+      windowScrollBy(options);
+    };
+    const elementScrollBy = Element.prototype.scrollBy;
+    Element.prototype.scrollBy = function(options) {
+      if (this.id === 'fsContent') window.__followScrolls.push({target: 'fsContent', behavior: options.behavior});
+      return elementScrollBy.call(this, options);
+    };
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+      configurable: true,
+      value: function(text) { this.text = text; }
+    });
+    Object.defineProperty(window, 'speechSynthesis', {configurable: true, value: {
+      speak(utterance) {
+        window.__speech.utterances.push(utterance);
+        if (!shouldDeferStart && utterance.onstart) utterance.onstart();
+      },
+      pause() { window.__speech.paused = true; },
+      resume() { window.__speech.paused = false; },
+      cancel() {}
+    }});
+  }, deferStart);
+  await page.goto('/');
+}
+
+test('spoken follow scrolls an offscreen verse below sticky controls without changing selection or focus', async ({ page }) => {
+  await installSpokenFollowMocks(page);
+  await page.locator('#verseSelect').selectOption('20');
+  await page.evaluate(() => { window.scrollTo(0, 0); window.__followScrolls.length = 0; });
+  await page.evaluate(() => playReader());
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'smooth'}]);
+  await expect.poll(() => page.evaluate(() => {
+    const verse = document.querySelector('#readerContent [data-verse-number="20"]');
+    const row = document.getElementById('readerVerseNavigation');
+    const rect = verse.getBoundingClientRect();
+    return rect.top > row.getBoundingClientRect().bottom + 12 && rect.bottom < innerHeight - 12;
+  })).toBe(true);
+  expect(await page.evaluate(() => document.activeElement === document.querySelector('#readerContent [data-verse-number="20"]'))).toBe(true);
+  await page.evaluate(() => { window.scrollTo(0, 0); window.__speech.utterances[0].onend(); });
+  expect(await page.evaluate(() => window.__followScrolls.length)).toBe(2);
+  await expect.poll(() => page.evaluate(() => {
+    const verse = document.querySelector('#readerContent [data-verse-number="21"]');
+    const rect = verse.getBoundingClientRect();
+    return rect.top > document.getElementById('readerVerseNavigation').getBoundingClientRect().bottom + 12 && rect.bottom < innerHeight - 12;
+  })).toBe(true);
+  await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-focused/);
+  await expect(page.locator('#readerContent [data-verse-number="21"]')).toHaveClass(/verse-spoken/);
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId:'john', chapter:1, verse:20});
+});
+
+test('spoken follow leaves a comfortably visible verse and the user scroll position alone', async ({ page }) => {
+  await installSpokenFollowMocks(page);
+  await page.evaluate(() => {
+    document.querySelector('#readerContent [data-verse-number="1"]').scrollIntoView({block:'center', behavior:'instant'});
+    window.__followScrolls.length = 0;
+  });
+  const before = await page.evaluate(() => window.scrollY);
+  await page.evaluate(() => readCurrentChapterAloud(1));
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([]);
+  expect(await page.evaluate(() => window.scrollY)).toBe(before);
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
+});
+
+test('spoken follow waits through Pause and Repeat and does not scroll on Stop', async ({ page }) => {
+  await installSpokenFollowMocks(page);
+  await page.evaluate(() => {
+    document.querySelector('#readerContent [data-verse-number="20"]').scrollIntoView({block:'center', behavior:'instant'});
+    window.__followScrolls.length = 0;
+    readCurrentChapterAloud(20);
+  });
+  expect(await page.evaluate(() => window.__followScrolls.length)).toBe(0);
+  await page.evaluate(() => {
+    BibleSpeech.pauseResume();
+    window.__speech.utterances[0].onend();
+  });
+  const pausedScrolls = await page.evaluate(() => window.__followScrolls.length);
+  expect(await page.evaluate(() => BibleSpeech.getState())).toBe('paused');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(1);
+  await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-spoken/);
+  await page.evaluate(() => repeatLastSpokenVerse());
+  expect(await page.evaluate(() => window.__followScrolls.length)).toBe(pausedScrolls);
+  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
+  expect(await page.evaluate(() => BibleSpeech.getState())).toBe('paused');
+  expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(2);
+  expect(await page.evaluate(() => window.__followScrolls.length)).toBe(pausedScrolls);
+  await page.evaluate(() => BibleSpeech.pauseResume());
+  await expect(page.locator('#readerContent [data-verse-number="21"]')).toHaveClass(/verse-spoken/);
+  const beforeStop = await page.evaluate(() => window.__followScrolls.length);
+  await page.evaluate(() => BibleSpeech.stop());
+  expect(await page.evaluate(() => window.__followScrolls.length)).toBe(beforeStop);
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
+});
+
+test('fullscreen spoken follow scrolls only its visible passage and keeps keyboard focus', async ({ page }) => {
+  await installSpokenFollowMocks(page);
+  await page.locator('#fullscreenBtn').click();
+  const exit = page.getByRole('button', {name:'Exit Fullscreen'});
+  await expect(exit).toBeFocused();
+  const windowPosition = await page.evaluate(() => window.scrollY);
+  await page.evaluate(() => {
+    document.getElementById('fsContent').scrollTop = 0;
+    window.__followScrolls.length = 0;
+    readCurrentChapterAloud(30);
+  });
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'fsContent', behavior:'smooth'}]);
+  await expect.poll(() => page.evaluate(() => {
+    const content = document.getElementById('fsContent');
+    const verse = content.querySelector('[data-verse-number="30"]');
+    const bounds = content.getBoundingClientRect();
+    const rect = verse.getBoundingClientRect();
+    return content.scrollTop > 0 && rect.top > bounds.top + 12 && rect.bottom < bounds.bottom - 12;
+  })).toBe(true);
+  expect(await page.evaluate(() => window.scrollY)).toBe(windowPosition);
+  await expect(exit).toBeFocused();
+  await expect(page.locator('#fsContent [data-verse-number="30"]')).toHaveClass(/verse-spoken/);
+});
+
+test('spoken follow uses immediate scrolling when reduced motion is preferred', async ({ page }) => {
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await installSpokenFollowMocks(page);
+  await page.evaluate(() => { window.scrollTo(0, 0); readCurrentChapterAloud(30); });
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'auto'}]);
+  await expect.poll(() => page.evaluate(() => {
+    const rect = document.querySelector('#readerContent [data-verse-number="30"]').getBoundingClientRect();
+    return rect.top > 0 && rect.bottom < innerHeight;
+  })).toBe(true);
+});
+
+test('spoken follow waits for the utterance to actually start', async ({ page }) => {
+  await installSpokenFollowMocks(page, true);
+  await page.evaluate(() => {
+    window.scrollTo(0, 0);
+    readCurrentChapterAloud(30);
+  });
+  await expect(page.locator('#readerContent [data-verse-number="30"]')).toHaveClass(/verse-spoken/);
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([]);
+  await page.evaluate(() => window.__speech.utterances[0].onstart());
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'smooth'}]);
+});
+
+test('spoken follow places the start of an unusually tall verse below sticky controls', async ({ page }) => {
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await installSpokenFollowMocks(page);
+  await page.evaluate(() => {
+    const verse = document.querySelector('#readerContent [data-verse-number="30"]');
+    verse.style.display = 'block';
+    verse.style.minHeight = '1200px';
+    window.scrollTo(0, 0);
+    readCurrentChapterAloud(30);
+  });
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'auto'}]);
+  await expect.poll(() => page.evaluate(() => {
+    const verse = document.querySelector('#readerContent [data-verse-number="30"]');
+    const controls = document.getElementById('readerVerseNavigation');
+    const gap = verse.getBoundingClientRect().top - controls.getBoundingClientRect().bottom;
+    return gap >= 12 && gap <= 80;
+  })).toBe(true);
+});
+test('Stop cancels an in-flight spoken follow without moving the viewport afterward', async ({ page }) => {
+  await installSpokenFollowMocks(page);
+  const atStop = await page.evaluate(() => {
+    window.scrollTo(0, 0);
+    readCurrentChapterAloud(30);
+    BibleSpeech.stop();
+    return window.scrollY;
+  });
+  await page.waitForTimeout(600);
+  expect(await page.evaluate(() => window.scrollY)).toBe(atStop);
+});

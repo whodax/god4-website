@@ -5,6 +5,7 @@ let currentChapter = initialReaderPosition.chapter;
 let currentVerse = initialReaderPosition.verse || null;
 let readerSelectionPending = Boolean(currentVerse);
 let currentSpokenVerse = null;
+let spokenFollowScrollTarget = null;
 let lastSpokenVerse = null;
 let currentTranslation = UserData.translation.load();
 let voiceRecognition = null;
@@ -157,11 +158,64 @@ function applyReaderVerseSelection(verseNumber, shouldFocus){
   return true;
 }
 
+function cancelSpokenFollow(){
+  if(!spokenFollowScrollTarget) return;
+  var target = spokenFollowScrollTarget === 'fullscreen' ? document.getElementById('fsContent') : window;
+  spokenFollowScrollTarget = null;
+  if(!target) return;
+  var top = target === window ? window.scrollY : target.scrollTop;
+  target.scrollTo({top:top, behavior:'instant'});
+}
+
 function clearSpokenVerseHighlight(){
+  cancelSpokenFollow();
   currentSpokenVerse = null;
   document.querySelectorAll('#readerContent .verse-spoken, #fsContent .verse-spoken').forEach(function(element){
     element.classList.remove('verse-spoken');
   });
+}
+
+function followSpokenVerse(){
+  var overlay = document.getElementById('fsOverlay');
+  var fullscreen = overlay && overlay.classList.contains('active');
+  var container = document.getElementById(fullscreen ? 'fsContent' : 'readerContent');
+  var activeVerse = container && container.querySelector('.verse-spoken');
+  if(!activeVerse || !activeVerse.getClientRects().length) return;
+
+  var top = 0;
+  var bottom = window.innerHeight;
+  if(fullscreen){
+    var containerRect = container.getBoundingClientRect();
+    top = containerRect.top;
+    bottom = containerRect.bottom;
+  } else {
+    var siteNav = document.querySelector('nav');
+    if(siteNav && getComputedStyle(siteNav).position === 'sticky'){
+      var navRect = siteNav.getBoundingClientRect();
+      if(navRect.top <= 0 && navRect.bottom > 0) top = navRect.bottom;
+    }
+    var verseNavigation = document.getElementById('readerVerseNavigation');
+    if(verseNavigation && getComputedStyle(verseNavigation).position === 'sticky'){
+      var controlsRect = verseNavigation.getBoundingClientRect();
+      var stickyTop = parseFloat(getComputedStyle(verseNavigation).top);
+      if(Number.isFinite(stickyTop)) top = Math.max(top, stickyTop + controlsRect.height);
+    }
+  }
+
+  var usableHeight = bottom - top;
+  if(usableHeight <= 0) return;
+  var margin = Math.min(48, Math.max(16, usableHeight * 0.08));
+  var verseRect = activeVerse.getBoundingClientRect();
+  if(verseRect.top >= top + margin && verseRect.bottom <= bottom - margin) return;
+
+  var offset = verseRect.height > usableHeight - 2 * margin
+    ? verseRect.top - (top + margin)
+    : (verseRect.top + verseRect.bottom) / 2 - (top + bottom) / 2;
+  var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var options = {top:offset, behavior:reducedMotion ? 'auto' : 'smooth'};
+  spokenFollowScrollTarget = fullscreen ? 'fullscreen' : 'window';
+  if(fullscreen) container.scrollBy(options);
+  else window.scrollBy(options);
 }
 
 function applySpokenVerseHighlight(verseNumber){
@@ -172,6 +226,11 @@ function applySpokenVerseHighlight(verseNumber){
   document.querySelectorAll('#readerContent [data-verse-number="' + verse + '"], #fsContent [data-verse-number="' + verse + '"]').forEach(function(element){
     element.classList.add('verse-spoken');
   });
+}
+
+function handleSpokenVerseStart(verseNumber){
+  rememberSpokenVerse(verseNumber);
+  followSpokenVerse();
 }
 
 function rememberSpokenVerse(verseNumber){
@@ -711,6 +770,7 @@ function toggleFullscreen(){
   var readerContent = document.getElementById('readerContent');
   var fullscreenContent = document.getElementById('fsContent');
   if(!overlay) return;
+  cancelSpokenFollow();
   overlay.classList.toggle('active');
   var isActive = overlay.classList.contains('active');
   overlay.setAttribute('aria-hidden', isActive ? 'false' : 'true');
@@ -749,7 +809,7 @@ document.addEventListener('keydown', function(event){
 if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener === 'function'){
   BibleSpeech.setPlaybackListener({
     onVerseStart: applySpokenVerseHighlight,
-    onVerseSpoken: rememberSpokenVerse,
+    onVerseSpoken: handleSpokenVerseStart,
     onEnd: clearSpokenVerseHighlight
   });
 }
