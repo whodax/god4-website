@@ -39,8 +39,26 @@
   font:13px 'Inter',sans-serif;
 }
 .account-error{margin:14px 0 0;color:var(--oxblood);font:13px/1.5 'Inter',sans-serif;}
-#accountConfirmation h3{margin:0;font:600 22px 'Cormorant Garamond',serif;}
+#accountConfirmation h3,#accountResetSent h3{margin:0;font:600 22px 'Cormorant Garamond',serif;}
 @media (max-width:430px){
   nav{flex-wrap:wrap;}
   .header-actions{width:100%;justify-content:flex-end;margin:2px 0 0;}
 }
+
+/* The callback is a small stand-alone account page. */
+.auth-callback{min-height:100dvh;display:grid;place-items:center;padding:24px;}
+.callback-card{
+  width:min(440px,100%);padding:32px;border:1px solid var(--line);
+  border-radius:3px;background:var(--vellum-card);box-shadow:var(--shadow);
+}
+.callback-card [hidden]{display:none!important;}
+.callback-brand{margin:0 0 20px;font:600 21px 'Cormorant Garamond',serif;color:var(--ink);}
+.callback-card h1{margin:0 0 20px;font:600 30px 'Cormorant Garamond',serif;}
+.callback-card h2{margin:0 0 10px;font:600 23px 'Cormorant Garamond',serif;}
+.callback-card p{line-height:1.5;}
+.callback-card .account-form{margin-top:12px;}
+.callback-continue{
+  display:inline-flex;align-items:center;min-height:42px;margin-top:20px;
+  color:var(--oxblood);font:13px 'Inter',sans-serif;text-decoration:underline;
+}
+@media (max-width:430px){.callback-card{padding:24px;}}

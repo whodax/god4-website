@@ -8,6 +8,7 @@ function createGod4Auth(provider){
   var actionVersion = 0;
   var signOutPending = false;
   var signedOutFence = false;
+  var recoveryCompleted = false;
 
   function getState(){
     return {
@@ -48,9 +49,10 @@ function createGod4Auth(provider){
       revision++;
       publish(event.user ? 'signed-in' : 'guest', event.user, false);
     } else if(event.type === 'signed-in' || event.type === 'recovery'){
-      if(signOutPending || signedOutFence) return;
+      if(signOutPending || signedOutFence || (event.type === 'recovery' && recoveryCompleted)) return;
       revision++;
-      publish(event.user ? 'signed-in' : 'unavailable', event.user, event.type === 'recovery');
+      publish(event.user ? 'signed-in' : 'unavailable', event.user,
+        event.type === 'recovery' || state.recovery);
     } else if(event.type === 'signed-out'){
       revision++;
       signedOutFence = true;
@@ -137,6 +139,7 @@ function createGod4Auth(provider){
     }
     if(version === actionVersion){
       signedOutFence = false;
+      recoveryCompleted = false;
       publish(user ? 'signed-in' : 'unavailable', user, false);
     }
     return user;
@@ -180,10 +183,10 @@ function createGod4Auth(provider){
       if(version === actionVersion && state.status === 'restoring') publish('guest', null, false);
       throw authFailure('password_reset_failed', 'Password reset failed');
     }
-    if(version === actionVersion && user){
-      signedOutFence = false;
-      publish('signed-in', user, false);
-    }
+    if(version !== actionVersion || signedOutFence || !user)
+      throw authFailure('password_reset_failed', 'Password reset failed');
+    recoveryCompleted = true;
+    publish('signed-in', user, false);
     return user;
   }
 
@@ -202,5 +205,8 @@ var God4Auth = createGod4Auth((function(){
 function initializeGod4Auth(){
   Promise.resolve().then(function(){ return God4Auth.initialize(); });
 }
-if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeGod4Auth, {once: true});
+if(typeof God4AuthConfig !== 'undefined' && window.location.pathname === God4AuthConfig.callbackPath)
+  initializeGod4Auth();
+else if(document.readyState === 'loading')
+  window.addEventListener('DOMContentLoaded', initializeGod4Auth, {once: true});
 else initializeGod4Auth();

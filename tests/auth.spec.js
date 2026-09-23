@@ -39,7 +39,7 @@ test('auth foundation provider failure leaves Reader and local features usable',
   });
   await page.route('**/js/auth/config.js', route => route.fulfill({
     contentType: 'text/javascript',
-    body: 'var God4AuthConfig={enabled:true,supabaseUrl:"https://example.supabase.co",publishableKey:"test-public",allowedHosts:["127.0.0.1"]};'
+    body: 'var God4AuthConfig={enabled:true,supabaseUrl:"https://example.supabase.co",publishableKey:"test-public",allowedHosts:["127.0.0.1"],allowedOrigins:["http://127.0.0.1:4173"],callbackPath:"/auth/callback/"};'
   }));
   await page.goto('/');
   await expect.poll(() => page.evaluate(() => God4Auth.getState().status)).toBe('unavailable');
@@ -177,14 +177,16 @@ test('auth foundation Supabase adapter maps events and returns no tokens', async
     const client = {auth: {
       getSession: async () => ({data: {session: {user, access_token: 'hidden'}}, error: null}),
       onAuthStateChange(listener) { callback = listener; return {data: {subscription: {unsubscribe() { calls.push('unsubscribe'); }}}}; },
-      signUp: async () => ({data: {user, session: null}, error: null}),
+      signUp: async credentials => { calls.push(['signup-redirect', credentials.options.emailRedirectTo]);
+        return {data: {user, session: null}, error: null}; },
       signInWithPassword: async () => ({data: {user, session: {user}}, error: null}),
       signOut: async () => ({error: null}),
-      resetPasswordForEmail: async () => ({error: null}),
+      resetPasswordForEmail: async (email, options) => { calls.push(['reset', email, options.redirectTo]); return {error: null}; },
       updateUser: async () => ({data: {user}, error: null})
     }};
     const provider = SupabaseAuthProvider.create({enabled: true, supabaseUrl: 'https://example.supabase.co',
-      publishableKey: 'test-public', allowedHosts: [location.hostname]}, client);
+      publishableKey: 'test-public', allowedHosts: [location.hostname],
+      allowedOrigins: [location.origin], callbackPath: '/auth/callback/'}, client);
     const unsubscribe = provider.subscribe(event => events.push(event));
     const restored = await provider.initialize();
     callback('INITIAL_SESSION', {user});
@@ -204,7 +206,8 @@ test('auth foundation Supabase adapter maps events and returns no tokens', async
   expect(result.signup).toEqual({user: result.restored, signedIn: false, needsConfirmation: true});
   expect(result.signedIn).toEqual(result.restored);
   expect(result.updated).toEqual(result.restored);
-  expect(result.calls).toEqual(['unsubscribe']);
+  expect(result.calls).toEqual([['signup-redirect', 'http://127.0.0.1:4173/auth/callback/'],
+    ['reset', 'reader@example.test', 'http://127.0.0.1:4173/auth/callback/'], 'unsubscribe']);
   expect(JSON.stringify(result)).not.toContain('hidden');
 });
 

@@ -9,6 +9,9 @@
     var title = document.getElementById('accountTitle');
     var signInForm = document.getElementById('accountSignInForm');
     var signUpForm = document.getElementById('accountSignUpForm');
+    var resetForm = document.getElementById('accountResetForm');
+    var resetSentPanel = document.getElementById('accountResetSent');
+    var resetSentTitle = document.getElementById('accountResetSentTitle');
     var signedInPanel = document.getElementById('accountSignedIn');
     var identity = document.getElementById('accountIdentity');
     var unavailablePanel = document.getElementById('accountUnavailable');
@@ -19,6 +22,7 @@
     var signOutButton = document.getElementById('accountSignOut');
     var mode = 'sign-in';
     var busy = false;
+    var resetRequestVersion = 0;
     var state = God4Auth.getState();
 
     function clearError(){
@@ -56,6 +60,8 @@
       if(state.status === 'restoring') return restoringPanel;
       if(state.status === 'signed-in') return signedInPanel;
       if(mode === 'confirmation') return confirmationPanel;
+      if(mode === 'reset') return resetForm;
+      if(mode === 'reset-sent') return resetSentPanel;
       return mode === 'sign-up' ? signUpForm : signInForm;
     }
 
@@ -64,6 +70,8 @@
       if(panel === signInForm) signInForm.elements.email.focus();
       else if(panel === signUpForm) signUpForm.elements.email.focus();
       else if(panel === confirmationPanel) confirmationTitle.focus();
+      else if(panel === resetForm) resetForm.elements.email.focus();
+      else if(panel === resetSentPanel) resetSentTitle.focus();
       else if(panel === signedInPanel) signOutButton.focus();
       else closeButton.focus();
     }
@@ -75,11 +83,12 @@
       trigger.setAttribute('aria-label', state.status === 'signed-in' && state.user ?
         'Account: ' + (state.user.email || state.user.id) : 'Account');
       var panel = activePanel();
-      [signInForm, signUpForm, signedInPanel, unavailablePanel, restoringPanel, confirmationPanel].forEach(function(item){
+      [signInForm, signUpForm, resetForm, resetSentPanel, signedInPanel, unavailablePanel, restoringPanel, confirmationPanel].forEach(function(item){
         item.hidden = item !== panel;
       });
       title.textContent = panel === signInForm ? 'Sign In' :
-        panel === signUpForm ? 'Create Account' : 'Account';
+        panel === signUpForm ? 'Create Account' :
+        panel === resetForm || panel === resetSentPanel ? 'Reset Password' : 'Account';
       if(dialog.open && !dialog.contains(document.activeElement)) focusPanel();
     }
 
@@ -138,6 +147,12 @@
     dialog.addEventListener('close', function(){
       trigger.setAttribute('aria-expanded', 'false');
       clearError();
+      if(mode === 'reset' || mode === 'reset-sent'){
+        resetRequestVersion++;
+        setBusy(false);
+        resetForm.reset();
+        mode = 'sign-in';
+      }
       trigger.focus();
     });
     dialog.addEventListener('cancel', function(event){
@@ -159,8 +174,36 @@
       }
     });
     document.getElementById('accountShowSignUp').addEventListener('click', function(){ setMode('sign-up'); });
+    document.getElementById('accountShowReset').addEventListener('click', function(){ setMode('reset'); });
+    document.getElementById('accountResetBack').addEventListener('click', function(){ setMode('sign-in'); });
+    document.getElementById('accountResetSentSignIn').addEventListener('click', function(){ setMode('sign-in'); });
     document.getElementById('accountShowSignIn').addEventListener('click', function(){ setMode('sign-in'); });
     document.getElementById('accountConfirmationSignIn').addEventListener('click', function(){ setMode('sign-in'); });
+
+    resetForm.addEventListener('submit', async function(event){
+      event.preventDefault();
+      if(busy) return;
+      var email = resetForm.elements.email;
+      if(!email.value.trim() || !email.checkValidity()){
+        showError('Enter a valid email address.', email);
+        return;
+      }
+      clearError();
+      setBusy(true);
+      var requestVersion = ++resetRequestVersion;
+      try {
+        await God4Auth.requestPasswordReset(email.value.trim());
+        if(requestVersion !== resetRequestVersion) return;
+        mode = 'reset-sent';
+        render();
+        resetSentTitle.focus();
+      } catch(error){
+        if(requestVersion === resetRequestVersion)
+          showError('Could not send a reset link. Check your connection and try again.');
+      } finally {
+        if(requestVersion === resetRequestVersion) setBusy(false);
+      }
+    });
 
     signInForm.addEventListener('submit', async function(event){
       event.preventDefault();

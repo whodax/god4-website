@@ -185,3 +185,75 @@ test('Account control and dialog fit a narrow viewport', async ({page}) => {
   expect(dialogBounds.x + dialogBounds.width).toBeLessThanOrEqual(375);
   await expect(page.locator('#accountSignInEmail')).toBeFocused();
 });
+
+test('Forgot Password opens a labeled email form and returns to Sign In with focus', async ({page}) => {
+  await useFakeAuth(page);
+  await page.goto('/');
+  await page.locator('#accountTrigger').click();
+  await page.locator('#accountShowReset').click();
+  await expect(page.getByRole('dialog', {name: 'Reset Password'})).toBeVisible();
+  await expect(page.locator('#accountResetEmail')).toBeFocused();
+  await expect(page.locator('#accountResetEmail')).toHaveAttribute('type', 'email');
+  await page.locator('#accountResetBack').click();
+  await expect(page.locator('#accountSignInEmail')).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#accountTrigger')).toBeFocused();
+});
+
+test('reset request sends one generic response and preserves local data', async ({page}) => {
+  await useFakeAuth(page, `requestPasswordReset: async email => {
+    window.accountFake.calls.push(['reset', email]);
+  }`);
+  await page.goto('/');
+  await page.evaluate(() => localStorage.setItem('god4.savedVerses', '[{"ref":"John 3:16","text":"Saved"}]'));
+  await page.locator('#accountTrigger').click();
+  await page.locator('#accountShowReset').click();
+  await page.locator('#accountResetEmail').fill('reader@example.test');
+  await page.locator('#accountResetForm button[type=submit]').click();
+  await expect(page.locator('#accountResetSent')).toContainText(
+    'If an account exists for that email, a reset link has been sent.');
+  await expect(page.locator('#accountResetSentTitle')).toBeFocused();
+  expect(await page.evaluate(() => window.accountFake.calls)).toEqual([['reset', 'reader@example.test']]);
+  expect(await page.evaluate(() => localStorage.getItem('god4.savedVerses'))).toContain('John 3:16');
+  await page.keyboard.press('Escape');
+  await page.locator('#accountTrigger').click();
+  await expect(page.locator('#accountSignInEmail')).toBeFocused();
+});
+
+test('reset request failure is controlled and retry succeeds', async ({page}) => {
+  await useFakeAuth(page, `requestPasswordReset: async email => {
+    window.accountFake.calls.push(email);
+    if(window.accountFake.calls.length === 1) throw new Error('raw provider token secret');
+  }`);
+  await page.goto('/');
+  await page.locator('#accountTrigger').click();
+  await page.locator('#accountShowReset').click();
+  await page.locator('#accountResetEmail').fill('reader@example.test');
+  await page.locator('#accountResetForm button[type=submit]').click();
+  await expect(page.locator('#accountError')).toContainText('Could not send a reset link');
+  await expect(page.locator('#accountError')).not.toContainText('provider');
+  await expect(page.locator('#accountError')).toBeFocused();
+  await page.locator('#accountResetForm button[type=submit]').click();
+  await expect(page.locator('#accountResetSent')).toBeVisible();
+  expect(await page.evaluate(() => window.accountFake.calls.length)).toBe(2);
+});
+
+test('pending reset request prevents duplicate submissions and ignores a late close response', async ({page}) => {
+  await useFakeAuth(page, `requestPasswordReset: email => {
+    window.accountFake.calls.push(email);
+    return new Promise(resolve => { window.accountFake.finishReset = resolve; });
+  }`);
+  await page.goto('/');
+  await page.locator('#accountTrigger').click();
+  await page.locator('#accountShowReset').click();
+  await page.locator('#accountResetEmail').fill('reader@example.test');
+  await page.locator('#accountResetForm button[type=submit]').click();
+  await expect(page.locator('#accountResetForm button[type=submit]')).toBeDisabled();
+  await page.locator('#accountResetForm').evaluate(form => form.requestSubmit());
+  expect(await page.evaluate(() => window.accountFake.calls.length)).toBe(1);
+  await page.keyboard.press('Escape');
+  await page.evaluate(() => window.accountFake.finishReset());
+  await page.locator('#accountTrigger').click();
+  await expect(page.locator('#accountSignInEmail')).toBeFocused();
+  await expect(page.locator('#accountResetSent')).toBeHidden();
+});

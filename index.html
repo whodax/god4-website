@@ -381,12 +381,24 @@
     <p>Confirm your account using the email we sent you, then sign in.</p>
     <button id="accountConfirmationSignIn" class="account-switch" type="button">Sign In</button>
   </div>
+  <div id="accountResetSent" hidden>
+    <h3 id="accountResetSentTitle" tabindex="-1">Check your email</h3>
+    <p>If an account exists for that email, a reset link has been sent.</p>
+    <button id="accountResetSentSignIn" class="account-switch" type="button">Back to Sign In</button>
+  </div>
+  <form id="accountResetForm" class="account-form" novalidate hidden>
+    <label for="accountResetEmail">Email</label>
+    <input id="accountResetEmail" name="email" type="email" autocomplete="email" required>
+    <button class="account-submit" type="submit">Send reset link</button>
+    <button id="accountResetBack" class="account-switch" type="button">Back to Sign In</button>
+  </form>
   <form id="accountSignInForm" class="account-form" novalidate hidden>
     <label for="accountSignInEmail">Email</label>
     <input id="accountSignInEmail" name="email" type="email" autocomplete="email" required>
     <label for="accountSignInPassword">Password</label>
     <input id="accountSignInPassword" name="password" type="password" autocomplete="current-password" required>
     <button class="account-submit" type="submit">Sign In</button>
+    <button id="accountShowReset" class="account-switch" type="button">Forgot password?</button>
     <button id="accountShowSignUp" class="account-switch" type="button">Create Account</button>
   </form>
   <form id="accountSignUpForm" class="account-form" novalidate hidden>

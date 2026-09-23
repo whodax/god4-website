@@ -19,7 +19,8 @@ var SupabaseAuthProvider = (function(){
     if(!config || config.enabled !== true ||
       typeof config.supabaseUrl !== 'string' || !/^https:\/\//.test(config.supabaseUrl) ||
       typeof config.publishableKey !== 'string' || !config.publishableKey ||
-      !Array.isArray(config.allowedHosts) || config.allowedHosts.indexOf(window.location.hostname) < 0) return null;
+      !Array.isArray(config.allowedHosts) || config.allowedHosts.indexOf(window.location.hostname) < 0 ||
+      !Array.isArray(config.allowedOrigins) || config.allowedOrigins.indexOf(window.location.origin) < 0) return null;
 
     var client = suppliedClient;
     if(!client){
@@ -32,6 +33,10 @@ var SupabaseAuthProvider = (function(){
 
     return {
       initialize: async function(){
+        if(window.location.pathname === config.callbackPath && typeof auth.initialize === 'function'){
+          var callbackResult = await auth.initialize();
+          if(callbackResult && callbackResult.error) throw callbackResult.error;
+        }
         var result = await auth.getSession();
         if(result.error) throw result.error;
         return userIdentity(result.data && result.data.session && result.data.session.user);
@@ -45,7 +50,10 @@ var SupabaseAuthProvider = (function(){
         return function(){ if(subscription && typeof subscription.unsubscribe === 'function') subscription.unsubscribe(); };
       },
       signUp: async function(email, password){
-        var result = await auth.signUp({email: email, password: password});
+        var redirectTo = God4AuthUrls.callbackUrl(config);
+        if(!redirectTo) throw new Error('Callback URL unavailable');
+        var result = await auth.signUp({email: email, password: password,
+          options: {emailRedirectTo: redirectTo}});
         if(result.error) throw result.error;
         return {
           user: userIdentity(result.data && result.data.user),
@@ -63,7 +71,9 @@ var SupabaseAuthProvider = (function(){
         if(result.error) throw result.error;
       },
       requestPasswordReset: async function(email){
-        var result = await auth.resetPasswordForEmail(email);
+        var redirectTo = God4AuthUrls.callbackUrl(config);
+        if(!redirectTo) throw new Error('Callback URL unavailable');
+        var result = await auth.resetPasswordForEmail(email, {redirectTo: redirectTo});
         if(result.error) throw result.error;
       },
       completePasswordReset: async function(password){
