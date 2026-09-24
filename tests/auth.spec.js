@@ -102,6 +102,32 @@ test('auth foundation ignores stale restoration and sign-in after sign-out', asy
   expect(result).toEqual({status: 'guest', user: null, recovery: false});
 });
 
+test('provider sign-out supersedes pending sign-in and immediate-session signup', async ({page}) => {
+  await page.goto('/');
+  const states = await page.evaluate(async () => {
+    const snapshots = [];
+    for(const action of ['signIn', 'signUp']){
+      let notify;
+      let finish;
+      const auth = createGod4Auth({
+        initialize: async () => null,
+        subscribe(listener) { notify = listener; return () => {}; },
+        signIn: () => new Promise(resolve => { finish = resolve; }),
+        signUp: () => new Promise(resolve => { finish = resolve; })
+      });
+      await auth.initialize();
+      const pending = action === 'signIn' ? auth.signIn('reader@example.test', 'password') :
+        auth.signUp('reader@example.test', 'password');
+      notify({type: 'signed-out'});
+      finish(action === 'signIn' ? {id: 'stale-user'} :
+        {user: {id: 'stale-user'}, signedIn: true, needsConfirmation: false});
+      await pending;
+      snapshots.push(auth.getState().status);
+    }
+    return snapshots;
+  });
+  expect(states).toEqual(['guest', 'guest']);
+});
 test('auth foundation keeps a newer event subscription when restoration fails', async ({page}) => {
   await page.goto('/');
   const result = await page.evaluate(async () => {

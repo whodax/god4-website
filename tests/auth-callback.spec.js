@@ -26,6 +26,8 @@ const recovery = `initialize: async () => {
 test('recovery callback shows a labeled new-password form and scrubs URL values', async ({page}) => {
   await useFakeCallback(page, recovery);
   await page.goto('/auth/callback/?code=private-code&type=recovery#access_token=private-token');
+  await expect(page).toHaveTitle('Account callback — GOD4.us');
+  await expect(page.locator('#callbackStatus')).toHaveText('Checking your account link…');
   await expect(page.getByRole('heading', {name: 'Set new password'})).toBeVisible();
   await expect(page.locator('#callbackResetTitle')).toBeFocused();
   await expect(page.locator('#callbackPassword')).toHaveAttribute('autocomplete', 'new-password');

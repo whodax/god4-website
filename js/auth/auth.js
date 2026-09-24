@@ -55,6 +55,7 @@ function createGod4Auth(provider){
         event.type === 'recovery' || state.recovery);
     } else if(event.type === 'signed-out'){
       revision++;
+      if(!signOutPending) actionVersion++;
       signedOutFence = true;
       publish('guest', null, false);
     } else if(event.type === 'user-updated' && state.status === 'signed-in' && event.user){
