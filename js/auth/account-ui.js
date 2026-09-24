@@ -24,6 +24,19 @@
     var busy = false;
     var resetRequestVersion = 0;
     var state = God4Auth.getState();
+    function passwordVisibility(form, toggleId){
+      var toggle = document.getElementById(toggleId);
+      var fields = Array.from(form.querySelectorAll('input[type="password"]'));
+      function update(){
+        fields.forEach(function(field){ field.type = toggle.checked ? 'text' : 'password'; });
+      }
+      toggle.addEventListener('change', update);
+      return function(){ toggle.checked = false; update(); };
+    }
+
+    var hideSignInPassword = passwordVisibility(signInForm, 'accountSignInShowPassword');
+    var hideSignUpPassword = passwordVisibility(signUpForm, 'accountSignUpShowPassword');
+    function hidePasswords(){ hideSignInPassword(); hideSignUpPassword(); }
 
     function clearError(){
       errorText.textContent = '';
@@ -95,6 +108,7 @@
     function openDialog(){
       if(dialog.open) return;
       clearError();
+      hidePasswords();
       dialog.showModal();
       trigger.setAttribute('aria-expanded', 'true');
       render();
@@ -108,6 +122,7 @@
     function setMode(nextMode){
       if(busy) return;
       mode = nextMode;
+      hidePasswords();
       clearError();
       render();
       if(dialog.open) focusPanel();
@@ -145,6 +160,7 @@
     trigger.addEventListener('click', openDialog);
     closeButton.addEventListener('click', closeDialog);
     dialog.addEventListener('close', function(){
+      hidePasswords();
       trigger.setAttribute('aria-expanded', 'false');
       clearError();
       if(mode === 'reset' || mode === 'reset-sent'){
