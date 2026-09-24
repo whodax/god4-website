@@ -257,3 +257,72 @@ test('pending reset request prevents duplicate submissions and ignores a late cl
   await expect(page.locator('#accountSignInEmail')).toBeFocused();
   await expect(page.locator('#accountResetSent')).toBeHidden();
 });
+
+test('Sign In Show password preserves the value, works after validation errors, and supports Space', async ({page}) => {
+  await useFakeAuth(page);
+  await page.goto('/');
+  await page.locator('#accountTrigger').click();
+  const password = page.locator('#accountSignInPassword');
+  const toggle = page.getByRole('checkbox', {name: 'Show password'});
+  await expect(password).toHaveAttribute('type', 'password');
+  await expect(toggle).not.toBeChecked();
+  await password.fill('keep-this-value');
+  await page.locator('#accountSignInForm button[type=submit]').click();
+  await expect(page.locator('#accountError')).toHaveText('Enter a valid email address.');
+  await toggle.focus();
+  await expect(toggle).toBeFocused();
+  await page.keyboard.press('Space');
+  await expect(toggle).toBeChecked();
+  await expect(toggle).toBeFocused();
+  await expect(password).toHaveAttribute('type', 'text');
+  await expect(password).toHaveValue('keep-this-value');
+  await toggle.uncheck();
+  await expect(password).toHaveAttribute('type', 'password');
+  await expect(password).toHaveValue('keep-this-value');
+});
+
+test('Create Account Show password resets on form switches and dialog reopen', async ({page}) => {
+  await useFakeAuth(page);
+  await page.goto('/');
+  await page.locator('#accountTrigger').click();
+  await page.locator('#accountShowSignUp').click();
+  const password = page.locator('#accountSignUpPassword');
+  const toggle = page.locator('#accountSignUpShowPassword');
+  await expect(password).toHaveAttribute('type', 'password');
+  await expect(toggle).not.toBeChecked();
+  await password.fill('keep-signup-value');
+  await toggle.check();
+  await expect(password).toHaveAttribute('type', 'text');
+  await expect(password).toHaveValue('keep-signup-value');
+  await toggle.uncheck();
+  await expect(password).toHaveAttribute('type', 'password');
+  await expect(password).toHaveValue('keep-signup-value');
+  await toggle.check();
+  await page.locator('#accountShowSignIn').click();
+  await page.locator('#accountShowSignUp').click();
+  await expect(toggle).not.toBeChecked();
+  await expect(password).toHaveAttribute('type', 'password');
+  await toggle.check();
+  await page.locator('#accountClose').click();
+  await page.locator('#accountTrigger').click();
+  await expect(toggle).not.toBeChecked();
+  await expect(password).toHaveAttribute('type', 'password');
+});
+
+test('Show password remains available during pending Sign In', async ({page}) => {
+  await useFakeAuth(page, `signIn: () => new Promise(resolve => { window.accountFake.finishSignIn = resolve; })`);
+  await page.goto('/');
+  await page.locator('#accountTrigger').click();
+  await page.locator('#accountSignInEmail').fill('reader@example.test');
+  await page.locator('#accountSignInPassword').fill('pending-value');
+  await page.locator('#accountSignInForm button[type=submit]').click();
+  await expect(page.locator('#accountSignInForm button[type=submit]')).toBeDisabled();
+  const toggle = page.locator('#accountSignInShowPassword');
+  await toggle.check();
+  await expect(page.locator('#accountSignInPassword')).toHaveAttribute('type', 'text');
+  await expect(page.locator('#accountSignInPassword')).toHaveValue('pending-value');
+  await toggle.uncheck();
+  await expect(page.locator('#accountSignInPassword')).toHaveAttribute('type', 'password');
+  await page.evaluate(() => window.accountFake.finishSignIn({id: 'pending-user', email: 'reader@example.test'}));
+  await expect(page.locator('#accountDialog')).not.toBeVisible();
+});

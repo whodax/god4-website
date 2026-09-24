@@ -21,6 +21,11 @@
     var successTitle = document.getElementById('callbackResetSuccessTitle');
     var formError = document.getElementById('callbackFormError');
     var continueLink = document.getElementById('callbackContinue');
+    var showPassword = document.getElementById('callbackShowPassword');
+    var passwordFields = [resetForm.elements.password, resetForm.elements.confirmation];
+    showPassword.addEventListener('change', function(){
+      passwordFields.forEach(function(field){ field.type = showPassword.checked ? 'text' : 'password'; });
+    });
     var view = 'checking';
     var ready = false;
     var busy = false;

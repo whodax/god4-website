@@ -26,6 +26,10 @@
   border-radius:2px;background:#fff9ea;color:var(--ink);font:15px 'Inter',sans-serif;
 }
 .account-form input[aria-invalid="true"]{border-color:var(--oxblood);}
+.account-visibility{display:flex;align-items:center;gap:8px;min-height:24px;}
+.account-form .account-visibility input{width:16px;min-height:16px;margin:0;padding:0;accent-color:var(--ink);}
+.account-visibility label{cursor:pointer;}
+.account-form .account-visibility input:focus-visible{outline:2px solid var(--oxblood);outline-offset:2px;}
 .account-submit{
   min-height:42px;margin-top:10px;padding:9px 16px;border:0;border-radius:2px;
   background:var(--ink);color:var(--vellum-card);cursor:pointer;

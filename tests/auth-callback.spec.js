@@ -178,3 +178,29 @@ test('recovery is consumed after completion and a late recovery event cannot reo
   expect(await page.evaluate(() => God4Auth.getState().recovery)).toBe(false);
   await expect(page.locator('#callbackResetForm')).toBeHidden();
 });
+
+test('recovery Show password reveals both fields, preserves values, and keeps checkbox focus', async ({page}) => {
+  await useFakeCallback(page, recovery);
+  await page.goto('/auth/callback/?code=one&type=recovery');
+  const password = page.locator('#callbackPassword');
+  const confirmation = page.locator('#callbackPasswordConfirm');
+  const toggle = page.getByRole('checkbox', {name: 'Show password'});
+  await expect(password).toHaveAttribute('type', 'password');
+  await expect(confirmation).toHaveAttribute('type', 'password');
+  await expect(toggle).not.toBeChecked();
+  await password.fill('new-private-value');
+  await confirmation.fill('new-private-value');
+  await toggle.focus();
+  await page.keyboard.press('Space');
+  await expect(toggle).toBeChecked();
+  await expect(toggle).toBeFocused();
+  await expect(password).toHaveAttribute('type', 'text');
+  await expect(confirmation).toHaveAttribute('type', 'text');
+  await expect(password).toHaveValue('new-private-value');
+  await expect(confirmation).toHaveValue('new-private-value');
+  await toggle.uncheck();
+  await expect(password).toHaveAttribute('type', 'password');
+  await expect(confirmation).toHaveAttribute('type', 'password');
+  await expect(password).toHaveValue('new-private-value');
+  await expect(confirmation).toHaveValue('new-private-value');
+});
