@@ -44,11 +44,11 @@ function renderLeaf(){
 
 function nextVerse(){
   const card = document.getElementById('leafCard');
-  card.style.opacity = 0;
+  card.classList.add('is-fading');
   setTimeout(function(){
     idx = (idx+1) % verses.length;
     renderLeaf();
-    card.style.opacity = 1;
+    card.classList.remove('is-fading');
   }, 200);
 }
 
@@ -192,8 +192,7 @@ function navigateSearchResult(result){
 function createSearchResultCard(result, index){
   var card = document.createElement('button');
   card.type = 'button';
-  card.className = 'result-card result-card-button';
-  card.style.animationDelay = (index * 0.03) + 's';
+  card.className = 'result-card result-card-button search-delay-' + Math.min(index, 9);
   var reference = result.isChapter ? result.bookName + ' ' + result.chapter : result.bookName + ' ' + result.chapter + ':' + result.verse;
   card.innerHTML = '<span><span class="txt">&quot;' + escapeHtml(result.text) + '&quot;</span><span class="ref">' + escapeHtml(reference) + ' <small>' + escapeHtml(result.translationAbbreviation || '') + '</small></span></span><span class="result-open">Open</span>';
   card.addEventListener('click', function(){ navigateSearchResult(result); });
@@ -281,21 +280,21 @@ function renderTray(){
   var list = document.getElementById('trayList');
   var empty = document.getElementById('trayEmpty');
   list.innerHTML = '';
-  empty.style.display = saved.length ? 'none' : 'block';
+  empty.hidden = saved.length > 0;
   saved.forEach(function(v){
     var row = document.createElement('div');
-    row.style.cssText = 'border-bottom:1px solid var(--line);padding-bottom:12px;';
+    row.className = 'saved-verse-row';
     var content = document.createElement('div');
-    content.style.cssText = 'font-style:italic;font-size:14px;line-height:1.4;';
+    content.className = 'saved-verse-text';
     content.textContent = '"' + v.text + '"';
     var details = document.createElement('div');
-    details.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin-top:6px;';
+    details.className = 'saved-verse-details';
     var reference = document.createElement('span');
-    reference.style.cssText = "font-family:'Inter',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);";
+    reference.className = 'saved-verse-reference';
     reference.textContent = v.ref;
     var remove = document.createElement('button');
     remove.type = 'button';
-    remove.style.cssText = "background:none;border:none;color:var(--oxblood);font-size:12px;cursor:pointer;font-family:'Inter',sans-serif;";
+    remove.className = 'saved-verse-remove';
     remove.textContent = 'Remove';
     remove.addEventListener('click', function(){
       toggleFav(v.ref);
@@ -331,7 +330,7 @@ function toggleTray(){
   var tray = document.getElementById('tray');
   var savedPill = document.querySelector('.saved-pill');
   if(!tray) return;
-  tray.style.right = trayOpen ? '0' : '-360px';
+  tray.classList.toggle('is-open', trayOpen);
   tray.setAttribute('aria-hidden', trayOpen ? 'false' : 'true');
   if(savedPill) savedPill.setAttribute('aria-expanded', trayOpen ? 'true' : 'false');
   if(trayOpen){

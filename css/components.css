@@ -24,6 +24,7 @@
     min-height:290px;
     transition:opacity .5s ease;
   }
+  .leaf.is-fading{opacity:0;}
   .leaf::before, .leaf::after{
     content:"";position:absolute;width:26px;height:26px;
     border-top:2px solid var(--gold);border-left:2px solid var(--gold);
@@ -89,6 +90,16 @@
     display:flex;justify-content:space-between;align-items:flex-start;gap:20px;
     opacity:0;transform:translateY(6px);animation:rise .4s forwards;
   }
+  .search-delay-0{animation-delay:0.00s;}
+  .search-delay-1{animation-delay:0.03s;}
+  .search-delay-2{animation-delay:0.06s;}
+  .search-delay-3{animation-delay:0.09s;}
+  .search-delay-4{animation-delay:0.12s;}
+  .search-delay-5{animation-delay:0.15s;}
+  .search-delay-6{animation-delay:0.18s;}
+  .search-delay-7{animation-delay:0.21s;}
+  .search-delay-8{animation-delay:0.24s;}
+  .search-delay-9{animation-delay:0.27s;}
   @keyframes rise{to{opacity:1;transform:translateY(0);}}
   .result-card .txt{font-size:17px;font-style:italic;line-height:1.5;}
   .result-card .ref{font-family:'Inter',sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;margin-top:3px;}
@@ -117,3 +128,19 @@
     display:inline-block;margin-top:8px;font-family:'Inter',sans-serif;font-size:10px;
     letter-spacing:.06em;text-transform:uppercase;color:var(--gold);
   }
+
+  .saved-tray{
+    position:fixed;top:0;right:-360px;width:340px;height:100%;background:var(--vellum-card);
+    border-left:1px solid var(--line);box-shadow:-8px 0 30px rgba(27,42,68,0.15);transition:right .3s ease;z-index:100;padding:30px 26px;
+  }
+  .saved-tray.is-open{right:0;}
+  .saved-tray-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+  .saved-tray-title{font-family:'Cormorant Garamond',serif;font-size:20px;margin:0;}
+  .saved-tray-close{background:none;border:none;font-size:18px;cursor:pointer;color:var(--ink-soft);}
+  .saved-tray-list{display:flex;flex-direction:column;gap:14px;}
+  .saved-tray-empty{color:var(--ink-soft);font-style:italic;font-size:14px;}
+  .saved-verse-row{border-bottom:1px solid var(--line);padding-bottom:12px;}
+  .saved-verse-text{font-style:italic;font-size:14px;line-height:1.4;}
+  .saved-verse-details{display:flex;justify-content:space-between;align-items:center;margin-top:6px;}
+  .saved-verse-reference{font-family:'Inter',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);}
+  .saved-verse-remove{background:none;border:none;color:var(--oxblood);font-size:12px;cursor:pointer;font-family:'Inter',sans-serif;}

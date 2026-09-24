@@ -23,11 +23,38 @@ for (const file of htmlFiles(root)) {
     console.error(`Inline event handler(s) in ${path.relative(root, file)}: ${handlers.join(', ')}`);
     process.exit(1);
   }
+  if (/\sstyle\s*=\s*["']/i.test(source) || /<style\b/i.test(source)) {
+    console.error(`Inline style in ${path.relative(root, file)}`);
+    process.exit(1);
+  }
+}
+for (const file of htmlFiles(root)) {
+  const source = fs.readFileSync(file, 'utf8');
+  if (/<script\b(?![^>]*\bsrc\s*=)[^>]*>/i.test(source)) {
+    console.error(`Inline script in ${path.relative(root, file)}`);
+    process.exit(1);
+  }
 }
 for (const relativePath of ['js/bible/reader.js', 'js/bible/plans.js']) {
   const source = fs.readFileSync(path.join(root, relativePath), 'utf8');
   if (/\s+on(?:click|change|keydown)\s*=/.test(source)) {
     console.error(`Unexpected generated inline event handler in ${relativePath}`);
+    process.exit(1);
+  }
+}
+function firstPartyJavaScript(directory) {
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    if (entry.isDirectory()) {
+      return entry.name === 'vendor' ? [] : firstPartyJavaScript(path.join(directory, entry.name));
+    }
+    if (!entry.isFile() || !entry.name.endsWith('.js')) return [];
+    return [path.join(directory, entry.name)];
+  });
+}
+for (const file of firstPartyJavaScript(path.join(root, 'js'))) {
+  const source = fs.readFileSync(file, 'utf8');
+  if (/\.style\s*(?:\.|\[|=)|\bcssText\b|setAttribute\s*\(\s*["']style["']|\sstyle\s*=\s*["']/i.test(source)) {
+    console.error(`Runtime inline-style pattern in ${path.relative(root, file)}`);
     process.exit(1);
   }
 }

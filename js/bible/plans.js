@@ -46,7 +46,7 @@ function renderPlan(){
       '</button>';
   }).join('');
   var pct = Math.round((doneCount / plan.length) * 100);
-  document.getElementById('planFill').style.width = pct + '%';
+  document.getElementById('planFill').className = 'plan-progress-fill plan-progress-days-' + doneCount;
   document.getElementById('planDone').textContent = doneCount + ' of ' + plan.length + ' days';
   document.getElementById('planPct').textContent = pct + '%';
 }
