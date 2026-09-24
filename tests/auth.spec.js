@@ -34,9 +34,10 @@ test('auth foundation restores guest or a safe signed-in identity and notifies s
 });
 
 test('auth foundation provider failure leaves Reader and local features usable', async ({page}) => {
-  await page.addInitScript(() => {
-    window.supabase = {createClient() { throw new Error('Unavailable'); }};
-  });
+  await page.route('**/js/vendor/supabase-js-2.117.0.min.js', route => route.fulfill({
+    contentType: 'text/javascript',
+    body: 'window.supabase = {createClient() { throw new Error("Unavailable"); }};'
+  }));
   await page.route('**/js/auth/config.js', route => route.fulfill({
     contentType: 'text/javascript',
     body: 'var God4AuthConfig={enabled:true,supabaseUrl:"https://example.supabase.co",publishableKey:"test-public",allowedHosts:["127.0.0.1"],allowedOrigins:["http://127.0.0.1:4173"],callbackPath:"/auth/callback/"};'

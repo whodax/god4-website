@@ -1,10 +1,10 @@
-/* Public browser configuration only. Auth remains disabled until explicitly configured. */
+/* Public browser configuration for the one approved staging preview only. */
 var God4AuthConfig = Object.freeze({
-  enabled: false,
-  supabaseUrl: '',
-  publishableKey: '',
-  allowedHosts: [],
-  allowedOrigins: ['https://god4.us', 'http://127.0.0.1:4173'],
+  enabled: true,
+  supabaseUrl: 'https://ikzvyuvrvxemliirlfmn.supabase.co',
+  publishableKey: 'sb_publishable_sfb2p-E6DmnOvyBsC_cRHA_d9JPeC8Y',
+  allowedHosts: ['19ed50af.god4-us.pages.dev'],
+  allowedOrigins: ['https://19ed50af.god4-us.pages.dev', 'http://127.0.0.1:4173'],
   callbackPath: '/auth/callback/'
 });
 
