@@ -17,38 +17,62 @@ function loadAt(origin, runtime){
   return context;
 }
 
-test('stable staging alias alone creates the provider and uses exact callback and return URLs', () => {
+const production = 'https://god4.us';
+const staging = 'https://feature-optional-user-accoun.god4-us.pages.dev';
+
+function enabledAt(origin, expectedProject){
   const calls = [];
-  const preview = 'https://feature-optional-user-accoun.god4-us.pages.dev';
-  const context = loadAt(preview, {createClient(url, key){
+  const context = loadAt(origin, {createClient(url, key){
     calls.push({url, publishable: key.startsWith('sb_publishable_')});
     return {auth: {}};
   }});
   const config = context.God4AuthConfig;
   expect(config.enabled).toBe(true);
-  expect(Array.from(config.allowedHosts)).toEqual(['feature-optional-user-accoun.god4-us.pages.dev']);
-  expect(Array.from(config.allowedOrigins)).toEqual([preview, 'http://127.0.0.1:4173']);
+  expect(Array.from(config.allowedHosts)).toEqual([new URL(origin).hostname]);
+  expect(Array.from(config.allowedOrigins)).toEqual([origin]);
   expect(config.callbackPath).toBe('/auth/callback/');
   expect(context.SupabaseAuthProvider.create(config)).not.toBeNull();
-  expect(calls).toEqual([{url: 'https://ikzvyuvrvxemliirlfmn.supabase.co', publishable: true}]);
-  expect(context.God4AuthUrls.callbackUrl(config)).toBe(preview + '/auth/callback/');
-  expect(context.God4AuthUrls.returnUrl(config)).toBe(preview + '/');
+  expect(calls).toEqual([{url: expectedProject, publishable: true}]);
+  expect(context.God4AuthUrls.callbackUrl(config)).toBe(origin + '/auth/callback/');
+  expect(context.God4AuthUrls.returnUrl(config)).toBe(origin + '/');
+  return config;
+}
+
+test('production origin selects the production project and exact redirects', () => {
+  enabledAt(production, 'https://apkiqgxmfqohznxpqfcx.supabase.co');
 });
 
-test('production and unapproved Pages deployments cannot create a provider or callback redirect', () => {
-  for(const origin of ['https://god4.us', 'https://19ed50af.god4-us.pages.dev',
-    'https://fcfb63df.god4-us.pages.dev', 'https://random.god4-us.pages.dev', 'https://evil.example']){
+test('stable staging alias selects the staging project and exact redirects', () => {
+  enabledAt(staging, 'https://ikzvyuvrvxemliirlfmn.supabase.co');
+});
+
+test('production and staging use distinct projects and browser publishable keys', () => {
+  const productionConfig = loadAt(production).God4AuthConfig;
+  const stagingConfig = loadAt(staging).God4AuthConfig;
+  expect(productionConfig.supabaseUrl).not.toBe(stagingConfig.supabaseUrl);
+  expect(productionConfig.publishableKey).not.toBe(stagingConfig.publishableKey);
+  expect(productionConfig.publishableKey.startsWith('sb_publishable_')).toBe(true);
+  expect(stagingConfig.publishableKey.startsWith('sb_publishable_')).toBe(true);
+});
+
+test('unapproved hosts cannot create a provider or callback redirect', () => {
+  for(const origin of ['http://god4.us', 'https://www.god4.us',
+    'https://19ed50af.god4-us.pages.dev', 'https://fcfb63df.god4-us.pages.dev',
+    'https://random.god4-us.pages.dev', 'https://evil.example', 'http://127.0.0.1:4173']){
     let creations = 0;
     const context = loadAt(origin, {createClient(){ creations++; return {auth: {}}; }});
+    expect(context.God4AuthConfig.enabled).toBe(false);
     expect(context.SupabaseAuthProvider.create(context.God4AuthConfig)).toBeNull();
     expect(context.God4AuthUrls.callbackUrl(context.God4AuthConfig)).toBeNull();
     expect(creations).toBe(0);
   }
 });
 
-test('stable staging alias remains unavailable without the browser runtime', () => {
-  const context = loadAt('https://feature-optional-user-accoun.god4-us.pages.dev');
-  expect(context.SupabaseAuthProvider.create(context.God4AuthConfig)).toBeNull();
+test('approved origins remain unavailable without the browser runtime', () => {
+  for(const origin of [production, staging]){
+    const context = loadAt(origin);
+    expect(context.SupabaseAuthProvider.create(context.God4AuthConfig)).toBeNull();
+  }
 });
 
 test('both pages load the same pinned browser client before the adapter', () => {
