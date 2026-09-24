@@ -12,10 +12,8 @@ var God4AuthConfig = (function(){
     enabled: true,
     supabaseUrl: 'https://ikzvyuvrvxemliirlfmn.supabase.co',
     publishableKey: 'sb_publishable_sfb2p-E6DmnOvyBsC_cRHA_d9JPeC8Y',
-    allowedHosts: ['feature-optional-user-accoun.god4-us.pages.dev',
-      'feature-account-show-password.god4-us.pages.dev'],
-    allowedOrigins: ['https://feature-optional-user-accoun.god4-us.pages.dev',
-      'https://feature-account-show-password.god4-us.pages.dev'],
+    allowedHosts: ['feature-optional-user-accoun.god4-us.pages.dev'],
+    allowedOrigins: ['https://feature-optional-user-accoun.god4-us.pages.dev'],
     callbackPath: '/auth/callback/'
   });
   var unavailable = Object.freeze({
@@ -27,7 +25,6 @@ var God4AuthConfig = (function(){
 
   if(window.location.origin === 'https://god4.us') return production;
   if(window.location.origin === 'https://feature-optional-user-accoun.god4-us.pages.dev') return staging;
-  if(window.location.origin === 'https://feature-account-show-password.god4-us.pages.dev') return staging;
   return unavailable;
 })();
 
