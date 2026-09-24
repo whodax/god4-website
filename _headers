@@ -3,3 +3,4 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), geolocation=(), payment=(), usb=(), microphone=(self)
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'self' https://apkiqgxmfqohznxpqfcx.supabase.co https://ikzvyuvrvxemliirlfmn.supabase.co; frame-src 'none'; worker-src 'none'; media-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';
