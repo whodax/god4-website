@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Account callback — GOD4.us</title>
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="../../css/reset.css">
+<link rel="stylesheet" href="../../css/base.css">
+<link rel="stylesheet" href="../../css/account.css">
+</head>
+<body class="auth-callback">
+<main class="callback-card">
+  <p class="callback-brand">GOD4.us</p>
+  <h1>Account confirmation</h1>
+  <p id="callbackStatus" role="status">Checking your account link…</p>
+  <section id="callbackError" hidden>
+    <h2 id="callbackErrorTitle" tabindex="-1">Link unavailable</h2>
+    <p id="callbackErrorText">This link is invalid or has expired. You can return to GOD4.us and try again.</p>
+  </section>
+  <section id="callbackConfirmed" hidden>
+    <h2 id="callbackConfirmedTitle" tabindex="-1">Account confirmed</h2>
+    <p>Your account is ready. Continue to GOD4.us.</p>
+  </section>
+  <form id="callbackResetForm" class="account-form" novalidate hidden>
+    <h2 id="callbackResetTitle" tabindex="-1">Set new password</h2>
+    <label for="callbackPassword">New Password</label>
+    <input id="callbackPassword" name="password" type="password" autocomplete="new-password" required>
+    <label for="callbackPasswordConfirm">Confirm Password</label>
+    <input id="callbackPasswordConfirm" name="confirmation" type="password" autocomplete="new-password" required>
+    <button class="account-submit" type="submit">Update password</button>
+    <p id="callbackFormError" class="account-error" role="alert" hidden></p>
+  </form>
+  <section id="callbackResetSuccess" hidden>
+    <h2 id="callbackResetSuccessTitle" tabindex="-1">Password updated</h2>
+    <p>Your password has been updated.</p>
+  </section>
+  <a id="callbackContinue" class="callback-continue" href="https://god4.us/">Continue to GOD4.us</a>
+</main>
+<script defer src="../../js/auth/config.js"></script>
+<script defer src="../../js/vendor/supabase-js-2.117.0.min.js"></script>
+<script defer src="../../js/auth/supabase-provider.js"></script>
+<script defer src="../../js/auth/auth.js"></script>
+<script defer src="../../js/auth/callback.js"></script>
+</body>
+</html>
