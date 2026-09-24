@@ -17,16 +17,17 @@ function loadAt(origin, runtime){
   return context;
 }
 
-test('approved preview alone creates the provider and uses exact callback and return URLs', () => {
+test('stable staging alias alone creates the provider and uses exact callback and return URLs', () => {
   const calls = [];
-  const preview = 'https://19ed50af.god4-us.pages.dev';
+  const preview = 'https://feature-optional-user-accoun.god4-us.pages.dev';
   const context = loadAt(preview, {createClient(url, key){
     calls.push({url, publishable: key.startsWith('sb_publishable_')});
     return {auth: {}};
   }});
   const config = context.God4AuthConfig;
   expect(config.enabled).toBe(true);
-  expect(Array.from(config.allowedHosts)).toEqual(['19ed50af.god4-us.pages.dev']);
+  expect(Array.from(config.allowedHosts)).toEqual(['feature-optional-user-accoun.god4-us.pages.dev']);
+  expect(Array.from(config.allowedOrigins)).toEqual([preview, 'http://127.0.0.1:4173']);
   expect(config.callbackPath).toBe('/auth/callback/');
   expect(context.SupabaseAuthProvider.create(config)).not.toBeNull();
   expect(calls).toEqual([{url: 'https://ikzvyuvrvxemliirlfmn.supabase.co', publishable: true}]);
@@ -34,8 +35,9 @@ test('approved preview alone creates the provider and uses exact callback and re
   expect(context.God4AuthUrls.returnUrl(config)).toBe(preview + '/');
 });
 
-test('production and other Pages deployments cannot create a provider or callback redirect', () => {
-  for(const origin of ['https://god4.us', 'https://random.god4-us.pages.dev', 'https://evil.example']){
+test('production and unapproved Pages deployments cannot create a provider or callback redirect', () => {
+  for(const origin of ['https://god4.us', 'https://19ed50af.god4-us.pages.dev',
+    'https://fcfb63df.god4-us.pages.dev', 'https://random.god4-us.pages.dev', 'https://evil.example']){
     let creations = 0;
     const context = loadAt(origin, {createClient(){ creations++; return {auth: {}}; }});
     expect(context.SupabaseAuthProvider.create(context.God4AuthConfig)).toBeNull();
@@ -44,8 +46,8 @@ test('production and other Pages deployments cannot create a provider or callbac
   }
 });
 
-test('approved preview remains unavailable without the browser runtime', () => {
-  const context = loadAt('https://19ed50af.god4-us.pages.dev');
+test('stable staging alias remains unavailable without the browser runtime', () => {
+  const context = loadAt('https://feature-optional-user-accoun.god4-us.pages.dev');
   expect(context.SupabaseAuthProvider.create(context.God4AuthConfig)).toBeNull();
 });
 
