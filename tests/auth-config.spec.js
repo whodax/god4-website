@@ -19,6 +19,7 @@ function loadAt(origin, runtime){
 
 const production = 'https://god4.us';
 const staging = 'https://feature-optional-user-accoun.god4-us.pages.dev';
+const showPasswordPreview = 'https://feature-account-show-password.god4-us.pages.dev';
 
 function enabledAt(origin, expectedProject){
   const calls = [];
@@ -28,8 +29,10 @@ function enabledAt(origin, expectedProject){
   }});
   const config = context.God4AuthConfig;
   expect(config.enabled).toBe(true);
-  expect(Array.from(config.allowedHosts)).toEqual([new URL(origin).hostname]);
-  expect(Array.from(config.allowedOrigins)).toEqual([origin]);
+  expect(Array.from(config.allowedHosts)).toEqual(origin === production ? ['god4.us'] :
+    [new URL(staging).hostname, new URL(showPasswordPreview).hostname]);
+  expect(Array.from(config.allowedOrigins)).toEqual(origin === production ? [production] :
+    [staging, showPasswordPreview]);
   expect(config.callbackPath).toBe('/auth/callback/');
   expect(context.SupabaseAuthProvider.create(config)).not.toBeNull();
   expect(calls).toEqual([{url: expectedProject, publishable: true}]);
@@ -46,11 +49,18 @@ test('stable staging alias selects the staging project and exact redirects', () 
   enabledAt(staging, 'https://ikzvyuvrvxemliirlfmn.supabase.co');
 });
 
+test('Show Password preview alias selects the same staging project and exact redirects', () => {
+  enabledAt(showPasswordPreview, 'https://ikzvyuvrvxemliirlfmn.supabase.co');
+});
+
 test('production and staging use distinct projects and browser publishable keys', () => {
   const productionConfig = loadAt(production).God4AuthConfig;
   const stagingConfig = loadAt(staging).God4AuthConfig;
+  const previewConfig = loadAt(showPasswordPreview).God4AuthConfig;
   expect(productionConfig.supabaseUrl).not.toBe(stagingConfig.supabaseUrl);
   expect(productionConfig.publishableKey).not.toBe(stagingConfig.publishableKey);
+  expect(previewConfig.supabaseUrl).toBe(stagingConfig.supabaseUrl);
+  expect(previewConfig.publishableKey).toBe(stagingConfig.publishableKey);
   expect(productionConfig.publishableKey.startsWith('sb_publishable_')).toBe(true);
   expect(stagingConfig.publishableKey.startsWith('sb_publishable_')).toBe(true);
 });
@@ -58,6 +68,7 @@ test('production and staging use distinct projects and browser publishable keys'
 test('unapproved hosts cannot create a provider or callback redirect', () => {
   for(const origin of ['http://god4.us', 'https://www.god4.us',
     'https://19ed50af.god4-us.pages.dev', 'https://fcfb63df.god4-us.pages.dev',
+    'https://b0d66394.god4-us.pages.dev',
     'https://random.god4-us.pages.dev', 'https://evil.example', 'http://127.0.0.1:4173']){
     let creations = 0;
     const context = loadAt(origin, {createClient(){ creations++; return {auth: {}}; }});
@@ -69,7 +80,7 @@ test('unapproved hosts cannot create a provider or callback redirect', () => {
 });
 
 test('approved origins remain unavailable without the browser runtime', () => {
-  for(const origin of [production, staging]){
+  for(const origin of [production, staging, showPasswordPreview]){
     const context = loadAt(origin);
     expect(context.SupabaseAuthProvider.create(context.God4AuthConfig)).toBeNull();
   }
