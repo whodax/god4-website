@@ -9,8 +9,10 @@ const references = [
   ...[...html.matchAll(/<script[^>]+src=["']([^"']+)["']/g)].map((m) => m[1]),
 ];
 const external = /^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i;
-const missing = references
+const localReferences = references
   .filter((reference) => !external.test(reference))
+  .map((reference) => reference.split(/[?#]/, 1)[0]);
+const missing = localReferences
   .filter((reference) => !fs.existsSync(path.join(root, reference)));
 
 if (missing.length) {
@@ -18,8 +20,7 @@ if (missing.length) {
   process.exit(1);
 }
 
-const javascript = references
-  .filter((reference) => !external.test(reference))
+const javascript = localReferences
   .filter((reference) => /\.js$/i.test(reference))
   .map((reference) => path.join(root, reference));
 for (const file of javascript) {
