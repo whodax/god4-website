@@ -342,6 +342,17 @@ function toggleTray(){
   }
 }
 
+function initializeGoogleFonts(){
+  var fontLink = document.getElementById('googleFontsStylesheet');
+  if(!fontLink || fontLink.media === 'all') return;
+  var activateFonts = function(){ fontLink.media = 'all'; };
+  // A cached stylesheet can finish before this deferred script runs.
+  if(fontLink.sheet){
+    activateFonts();
+    return;
+  }
+  fontLink.addEventListener('load', activateFonts, { once: true });
+}
 /* ===== INIT ===== */
 var appInitialized = false;
 function initializeApp(){
@@ -450,5 +461,6 @@ function initializeApp(){
   renderLeaf();
 }
 
+initializeGoogleFonts();
 if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeApp, { once: true });
 else initializeApp();
