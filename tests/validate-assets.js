@@ -4,6 +4,18 @@ const cp = require('child_process');
 
 const root = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const inlineHandlers = [...html.matchAll(/\s(on[a-z]+)\s*=/gi)].map((match) => match[1].toLowerCase());
+if (inlineHandlers.length !== 1 || inlineHandlers[0] !== 'onload' || !html.includes("onload=\"this.media='all'\"")) {
+  console.error('Unexpected inline event handler in index.html');
+  process.exit(1);
+}
+for (const relativePath of ['js/bible/reader.js', 'js/bible/plans.js']) {
+  const source = fs.readFileSync(path.join(root, relativePath), 'utf8');
+  if (/\s+on(?:click|change|keydown)\s*=/.test(source)) {
+    console.error(`Unexpected generated inline event handler in ${relativePath}`);
+    process.exit(1);
+  }
+}
 const references = [
   ...[...html.matchAll(/<link[^>]+href=["']([^"']+)["']/g)].map((m) => m[1]),
   ...[...html.matchAll(/<script[^>]+src=["']([^"']+)["']/g)].map((m) => m[1]),

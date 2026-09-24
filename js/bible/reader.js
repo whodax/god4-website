@@ -663,7 +663,7 @@ function renderPassage(bookKey, chapterNum, containerId){
   if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
   html += '<div style="text-align:center;color:var(--ink-soft);font-size:14px;margin-bottom:20px;font-style:italic;">' + escapeHtml(data.title) + '</div>';
   for(var i = 0; i < data.verses.length; i++){
-    html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '" onclick="highlightVerse(this)">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + ' <button type="button" class="verse-speak" data-verse-speech="' + escapeHtml(i+1) + '" aria-label="Read verse ' + escapeHtml(i+1) + ' aloud" onclick="readVerseAloud(' + escapeHtml(i+1) + ')">Read aloud</button></span> ';
+    html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + ' <button type="button" class="verse-speak" data-verse-speech="' + escapeHtml(i+1) + '" aria-label="Read verse ' + escapeHtml(i+1) + ' aloud">Read aloud</button></span> ';
   }
   var container = document.getElementById(containerId);
   var fsTitle = document.getElementById('fsTitle');
@@ -806,6 +806,56 @@ document.addEventListener('keydown', function(event){
   }
 });
 
+function initializeReaderControls(){
+  document.querySelectorAll('.bs-btn[aria-controls^="view-"]').forEach(function(button){
+    button.addEventListener('click', function(){
+      switchView(button.getAttribute('aria-controls').slice(5), button);
+    });
+  });
+  [
+    ['fullscreenBtn', 'click', toggleFullscreen],
+    ['readerTranslation', 'change', function(event){ changeTranslation(event.target.value); }],
+    ['bookSelect', 'change', changeReaderBook],
+    ['chapterSelect', 'change', loadPassage],
+    ['verseSelect', 'change', function(event){ selectReaderVerse(event.target.value); }],
+    ['readAloudPlay', 'click', playReader],
+    ['readAloudPause', 'click', pauseResumeReadAloud],
+    ['readAloudStop', 'click', stopReadAloud],
+    ['readAloudVoice', 'change', function(event){ BibleSpeech.setVoice(event.target.value); }],
+    ['readAloudSpeed', 'change', function(event){ BibleSpeech.setSpeed(event.target.value); }]
+  ].forEach(function(binding){
+    var element = document.getElementById(binding[0]);
+    if(element) element.addEventListener(binding[1], binding[2]);
+  });
+  var fullscreenClose = document.querySelector('.fs-close');
+  if(fullscreenClose) fullscreenClose.addEventListener('click', toggleFullscreen);
+  document.querySelectorAll('[data-reader-action]').forEach(function(button){
+    var action = button.getAttribute('data-reader-action');
+    var handlers = {
+      previous: prevChapter,
+      next: nextChapter,
+      'previous-verse': previousReaderVerse,
+      'next-verse': nextReaderVerse
+    };
+    if(handlers[action]) button.addEventListener('click', handlers[action]);
+  });
+  document.querySelectorAll('[data-voice-command-button]').forEach(function(button){
+    button.addEventListener('click', toggleVoiceCommands);
+  });
+  ['readerContent', 'fsContent'].forEach(function(id){
+    var container = document.getElementById(id);
+    if(!container) return;
+    container.addEventListener('click', function(event){
+      var highlight = event.target.closest('.vnum');
+      if(highlight && container.contains(highlight)){
+        highlightVerse(highlight);
+        return;
+      }
+      var speak = event.target.closest('.verse-speak');
+      if(speak && container.contains(speak)) readVerseAloud(Number(speak.getAttribute('data-verse-speech')));
+    });
+  });
+}
 if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener === 'function'){
   BibleSpeech.setPlaybackListener({
     onVerseStart: applySpokenVerseHighlight,
@@ -814,5 +864,5 @@ if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener 
   });
 }
 if(typeof WordStudyController !== 'undefined') WordStudyController.initialize();
-if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeVoiceCommands, { once: true });
-else initializeVoiceCommands();
+if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', function(){ initializeReaderControls(); initializeVoiceCommands(); }, { once: true });
+else { initializeReaderControls(); initializeVoiceCommands(); }

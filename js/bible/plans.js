@@ -40,7 +40,7 @@ function renderPlan(){
   container.innerHTML = plan.map(function(day){
     if(day.done) doneCount++;
     var cls = day.done ? 'past completed' : (day === nextDay ? 'today' : 'future');
-    return '<button type="button" class="plan-day ' + cls + '" aria-label="Day ' + day.d + ': ' + day.ref + '" aria-pressed="' + (day.done ? 'true' : 'false') + '" onclick="toggleDay(' + day.d + ')">' +
+    return '<button type="button" class="plan-day ' + cls + '" aria-label="Day ' + day.d + ': ' + day.ref + '" aria-pressed="' + (day.done ? 'true' : 'false') + '" data-plan-day="' + day.d + '">' +
       '<div class="day-num">' + day.d + '</div>' +
       '<div class="day-ref">' + day.ref + '</div>' +
       '</button>';
@@ -59,3 +59,15 @@ function toggleDay(d){
     renderPlan();
   }
 }
+
+function initializePlanControls(){
+  var container = document.getElementById('planDays');
+  if(!container) return;
+  container.addEventListener('click', function(event){
+    var button = event.target.closest('[data-plan-day]');
+    if(button && container.contains(button)) toggleDay(Number(button.getAttribute('data-plan-day')));
+  });
+}
+
+if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializePlanControls, { once: true });
+else initializePlanControls();
