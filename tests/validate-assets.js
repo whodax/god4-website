@@ -4,10 +4,25 @@ const cp = require('child_process');
 
 const root = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const inlineHandlers = [...html.matchAll(/\s(on[a-z]+)\s*=/gi)].map((match) => match[1].toLowerCase());
-if (inlineHandlers.length !== 1 || inlineHandlers[0] !== 'onload' || !html.includes("onload=\"this.media='all'\"")) {
-  console.error('Unexpected inline event handler in index.html');
-  process.exit(1);
+function htmlFiles(directory) {
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    if (entry.isDirectory()) {
+      return ['.git', 'node_modules', 'test-results'].includes(entry.name)
+        ? []
+        : htmlFiles(path.join(directory, entry.name));
+    }
+    return entry.isFile() && entry.name.endsWith('.html')
+      ? [path.join(directory, entry.name)]
+      : [];
+  });
+}
+for (const file of htmlFiles(root)) {
+  const source = fs.readFileSync(file, 'utf8');
+  const handlers = [...source.matchAll(/\s(on[a-z]+)\s*=/gi)].map((match) => match[1]);
+  if (handlers.length) {
+    console.error(`Inline event handler(s) in ${path.relative(root, file)}: ${handlers.join(', ')}`);
+    process.exit(1);
+  }
 }
 for (const relativePath of ['js/bible/reader.js', 'js/bible/plans.js']) {
   const source = fs.readFileSync(path.join(root, relativePath), 'utf8');
