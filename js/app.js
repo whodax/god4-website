@@ -352,6 +352,22 @@ function initializeApp(){
   if(savedCount) savedCount.textContent = saved.length;
   renderTray();
   var searchInput = document.getElementById('searchInput');
+  var savedPill = document.querySelector('.saved-pill');
+  if(savedPill) savedPill.addEventListener('click', toggleTray);
+  var closeTrayButton = document.getElementById('closeTray');
+  if(closeTrayButton) closeTrayButton.addEventListener('click', toggleTray);
+  var refreshVerseButton = document.querySelector('.refresh-btn');
+  if(refreshVerseButton) refreshVerseButton.addEventListener('click', nextVerse);
+  var heroFavButton = document.getElementById('heroFav');
+  if(heroFavButton) heroFavButton.addEventListener('click', toggleFavFromHero);
+  var searchButton = document.querySelector('.search-box > button:not(#searchClear)');
+  if(searchButton) searchButton.addEventListener('click', doSearch);
+  var searchClearButton = document.getElementById('searchClear');
+  if(searchClearButton) searchClearButton.addEventListener('click', clearSearch);
+  if(searchInput) searchInput.addEventListener('keydown', function(event){
+    if(event.key === 'Enter') doSearch();
+    if(event.key === 'Escape') clearSearch();
+  });
   if(searchInput) searchInput.addEventListener('input', function(){
     if(!searchInput.value.trim()) clearSearch();
   });

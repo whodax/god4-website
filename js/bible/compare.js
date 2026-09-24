@@ -360,6 +360,15 @@ function initializeCompare(){
     var element = document.getElementById(id);
     if(element) element.addEventListener('change', function(){ updateCompareReferenceFromControls(id); });
   });
+  [
+    ['compareChapterPrevious', -1, navigateCompareChapter],
+    ['compareChapterNext', 1, navigateCompareChapter],
+    ['compareVersePrevious', -1, navigateCompareVerse],
+    ['compareVerseNext', 1, navigateCompareVerse]
+  ].forEach(function(binding){
+    var button = document.getElementById(binding[0]);
+    if(button) button.addEventListener('click', function(){ binding[2](binding[1]); });
+  });
   document.querySelectorAll('[data-compare-count]').forEach(function(button){
     button.addEventListener('click', function(){ setCompareEditionCount(Number(button.getAttribute('data-compare-count'))); });
   });

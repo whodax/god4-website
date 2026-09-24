@@ -92,7 +92,7 @@ test('hero verse can be saved, unsaved, and shown in the saved-verses tray', asy
   await expect(page.locator('#tray')).toHaveCSS('right', '0px');
   await expect(page.locator('#trayList')).toContainText('John 3:16');
 
-  await page.locator('#tray button[onclick="toggleTray()"]').click();
+  await page.locator('#closeTray').click();
   await saveButton.click();
   await expect(page.locator('#savedCount')).toHaveText('0');
 });
@@ -110,6 +110,24 @@ test('verse rotation and Scripture search work', async ({ page }) => {
   await expect(page.locator('#results .search-status')).toContainText(/Showing 10 of \d+ matches/);
 });
 
+test('CSP-ready controls retain keyboard search and delegated plan actions', async ({ page }) => {
+  const search = page.locator('#searchInput');
+  await search.fill('John 3:16');
+  await search.press('Enter');
+  await expect(page.locator('#results .result-card')).toHaveCount(1);
+  await search.press('Escape');
+  await expect(search).toHaveValue('');
+  await expect(page.locator('#results .result-card')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Plan', exact: true }).click();
+  const firstDay = page.locator('#planDays [data-plan-day="1"]');
+  await expect(firstDay).toHaveAttribute('aria-pressed', 'false');
+  await firstDay.click();
+  await expect(firstDay).toHaveAttribute('aria-pressed', 'true');
+  await firstDay.click();
+  await expect(firstDay).toHaveAttribute('aria-pressed', 'false');
+  await expect(page.locator('#planDone')).toHaveText('0 of 30 days');
+});
 test('Search the Word searches complete BibleData and opens references', async ({ page }) => {
   await page.goto('/');
   await page.locator('#readerTranslation').selectOption('web');
