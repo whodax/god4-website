@@ -64,6 +64,7 @@
     font-size:14px;margin-bottom:22px;font-style:italic;
     font-family:'EB Garamond',serif;
   }
+  .reader-chapter-caption{text-align:center;color:var(--ink-soft);font-size:14px;margin-bottom:20px;font-style:italic;}
   .reader-passage p{margin-bottom:14px;text-indent:0;}
   .reader-passage .vnum{
     background:none;border:0;
@@ -249,6 +250,37 @@
     height:100%;background:var(--gold);border-radius:3px;
     transition:width .5s ease;
   }
+  .plan-progress-days-0{width:0%;}
+  .plan-progress-days-1{width:3%;}
+  .plan-progress-days-2{width:7%;}
+  .plan-progress-days-3{width:10%;}
+  .plan-progress-days-4{width:13%;}
+  .plan-progress-days-5{width:17%;}
+  .plan-progress-days-6{width:20%;}
+  .plan-progress-days-7{width:23%;}
+  .plan-progress-days-8{width:27%;}
+  .plan-progress-days-9{width:30%;}
+  .plan-progress-days-10{width:33%;}
+  .plan-progress-days-11{width:37%;}
+  .plan-progress-days-12{width:40%;}
+  .plan-progress-days-13{width:43%;}
+  .plan-progress-days-14{width:47%;}
+  .plan-progress-days-15{width:50%;}
+  .plan-progress-days-16{width:53%;}
+  .plan-progress-days-17{width:57%;}
+  .plan-progress-days-18{width:60%;}
+  .plan-progress-days-19{width:63%;}
+  .plan-progress-days-20{width:67%;}
+  .plan-progress-days-21{width:70%;}
+  .plan-progress-days-22{width:73%;}
+  .plan-progress-days-23{width:77%;}
+  .plan-progress-days-24{width:80%;}
+  .plan-progress-days-25{width:83%;}
+  .plan-progress-days-26{width:87%;}
+  .plan-progress-days-27{width:90%;}
+  .plan-progress-days-28{width:93%;}
+  .plan-progress-days-29{width:97%;}
+  .plan-progress-days-30{width:100%;}
   .plan-progress-label{
     display:flex;justify-content:space-between;
     font-family:'Inter',sans-serif;font-size:11px;

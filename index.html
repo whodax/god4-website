@@ -246,7 +246,7 @@
           <p>Read the story of Jesus and the early church in one month</p>
         </div>
         <div class="plan-progress">
-          <div class="plan-progress-bar"><div class="plan-progress-fill" id="planFill" style="width:0%"></div></div>
+          <div class="plan-progress-bar"><div class="plan-progress-fill plan-progress-days-0" id="planFill"></div></div>
           <div class="plan-progress-label"><span id="planDone">0 of 30 days</span><span id="planPct">0%</span></div>
         </div>
         <div class="plan-days" id="planDays"></div>
@@ -307,13 +307,13 @@
         <div class="eth-stat"><b>46</b><span>Old Testament</span></div>
         <div class="eth-stat"><b>35</b><span>New Testament</span></div>
       </div>
-      <div style="margin-top:30px;">
-        <a class="btn-primary" href="#" style="background:var(--gold-bright);color:var(--ink);">Open Digital Edition →</a>
+      <div class="eth-action">
+        <a class="btn-primary eth-cta" href="#">Open Digital Edition →</a>
       </div>
     </div>
     <div class="eth-visual">
       "Be still, and know that I am God."
-      <div style="text-align:right;margin-top:14px;font-family:'Inter',sans-serif;font-style:normal;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(247,241,222,0.6);">Psalm 46:10</div>
+      <div class="eth-attribution">Psalm 46:10</div>
     </div>
   </div>
 </section>
@@ -351,14 +351,13 @@
     <span>Last updated July 2026</span>
   </div>
 </footer>
-<div id="tray" aria-hidden="true" aria-modal="true" role="dialog" aria-labelledby="savedVersesTitle" style="position:fixed;top:0;right:-360px;width:340px;height:100%;background:var(--vellum-card);
-  border-left:1px solid var(--line);box-shadow:-8px 0 30px rgba(27,42,68,0.15);transition:right .3s ease;z-index:100;padding:30px 26px;">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
-    <h3 id="savedVersesTitle" style="font-family:'Cormorant Garamond',serif;font-size:20px;margin:0;">Saved Verses</h3>
-    <button id="closeTray" type="button" aria-label="Close saved verses" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--ink-soft);">✕</button>
+<div id="tray" aria-hidden="true" aria-modal="true" role="dialog" aria-labelledby="savedVersesTitle" class="saved-tray">
+  <div class="saved-tray-heading">
+    <h3 id="savedVersesTitle" class="saved-tray-title">Saved Verses</h3>
+    <button id="closeTray" type="button" aria-label="Close saved verses" class="saved-tray-close">✕</button>
   </div>
-  <div id="trayList" style="display:flex;flex-direction:column;gap:14px;"></div>
-  <p id="trayEmpty" style="color:var(--ink-soft);font-style:italic;font-size:14px;">Tap the ♡ on any verse to save it here — no account needed.</p>
+  <div id="trayList" class="saved-tray-list"></div>
+  <p id="trayEmpty" class="saved-tray-empty">Tap the ♡ on any verse to save it here — no account needed.</p>
 </div>
 
 <dialog id="accountDialog" class="account-dialog" aria-labelledby="accountTitle">
