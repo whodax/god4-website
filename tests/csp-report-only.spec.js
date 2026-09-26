@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
-const {startCspServer, reportOnly} = require('./csp-server');
+const {startCspServer, policy} = require('./csp-server');
 
 const authSource = fs.readFileSync(path.join(__dirname, '..', 'js/auth/auth.js'), 'utf8');
 const production = 'https://apkiqgxmfqohznxpqfcx.supabase.co';
@@ -97,13 +97,13 @@ async function mockApprovedAuth(page, siteOrigin, apiOrigin) {
   return apiPaths;
 }
 
-test('test server applies the exact Report-Only header and preserves asset MIME', async ({request}) => {
+test('test server applies the exact enforcing CSP header and preserves asset MIME', async ({request}) => {
   for(const [name, mime] of [['/', /text\/html/], ['/js/app.js', /javascript/], ['/css/components.css', /text\/css/], ['/auth/callback/', /text\/html/]]) {
     const response = await request.get(server.origin + name);
     expect(response.ok()).toBe(true);
     expect(response.headers()['content-type']).toMatch(mime);
-    expect(response.headers()['content-security-policy-report-only']).toBe(reportOnly);
-    expect(response.headers()['content-security-policy']).toBeUndefined();
+    expect(response.headers()['content-security-policy']).toBe(policy);
+    expect(response.headers()['content-security-policy-report-only']).toBeUndefined();
   }
 });
 
