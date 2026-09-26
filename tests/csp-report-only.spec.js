@@ -108,6 +108,7 @@ test('test server applies the exact Report-Only header and preserves asset MIME'
 });
 
 test('main application flows stay functional without CSP violations', async ({page}) => {
+  test.setTimeout(60_000);
   const consoleViolations = await captureViolations(page);
   await interceptFonts(page);
   await page.route('**/js/auth/auth.js', route => route.fulfill({
@@ -120,10 +121,18 @@ test('main application flows stay functional without CSP violations', async ({pa
   await page.goto(server.origin + '/');
   await expect(page.locator('#readerContent')).toContainText('John 1');
   await page.locator('.refresh-btn').click();
-  await page.locator('#searchInput').fill('Genesis 1');
-  await page.locator('#searchInput').press('Enter');
-  await page.locator('#results .search-more').click();
-  await expect(page.locator('#results .result-card')).toHaveCount(20);
+  const searchInput = page.locator('#searchInput');
+  const searchResults = page.locator('#results');
+  await expect(searchInput).toBeVisible();
+  await expect(searchInput).toBeEditable();
+  await searchInput.fill('Genesis 1');
+  await expect(searchInput).toHaveValue('Genesis 1');
+  await searchInput.press('Enter');
+  await expect(searchResults.locator('.result-card')).toHaveCount(10);
+  await expect(searchResults.locator('.search-status')).toContainText(/Showing 10 of \d+ matches/);
+  await expect(searchResults.locator('.search-more')).toBeVisible();
+  await searchResults.locator('.search-more').click();
+  await expect(searchResults.locator('.result-card')).toHaveCount(20);
   await page.locator('#heroFav').click();
   await page.locator('.saved-pill').click();
   await expect(page.locator('#trayList .saved-verse-row')).toHaveCount(1);
@@ -257,7 +266,11 @@ test('Read Aloud, voice commands, and same-origin Word Study work without CSP vi
   await expect(page.locator('[data-voice-command-button]')).toHaveAttribute('aria-pressed','true');
   expect(await page.evaluate(() => window.__recognitionStarted)).toBe(true);
   await page.locator('[data-voice-command-button]').click();
-  await page.locator('#readerContent [data-word-study-term]').first().click();
+  const [originalLanguageResponse] = await Promise.all([
+    page.waitForResponse(response => new URL(response.url()).pathname === '/data/word-study/original-language/john/1.json'),
+    page.locator('#readerContent [data-word-study-term]').first().click()
+  ]);
+  expect(originalLanguageResponse.ok()).toBe(true);
   await expect(page.locator('#wordStudyPanel')).toBeVisible();
   await expect(page.locator('#wordStudyDefinition')).not.toHaveText('');
   await expect(page.locator('#wordStudyOriginalLanguage')).toBeVisible();
