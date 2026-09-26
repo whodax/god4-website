@@ -4,8 +4,8 @@ const path = require('path');
 
 const root = path.resolve(__dirname, '..');
 const headerSource = fs.readFileSync(path.join(root, '_headers'), 'utf8');
-const reportOnly = /^\s+Content-Security-Policy-Report-Only:\s*(.+)$/m.exec(headerSource)?.[1];
-if (!reportOnly) throw new Error('Missing CSP Report-Only header');
+const policy = /^\s+Content-Security-Policy:\s*(.+)$/m.exec(headerSource)?.[1];
+if (!policy) throw new Error('Missing enforcing CSP header');
 
 const types = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
@@ -30,7 +30,7 @@ async function startCspServer() {
       if (!stat.isFile()) throw new Error('Not a file');
       response.writeHead(200, {
         'Content-Type': types[path.extname(file).toLowerCase()] || 'application/octet-stream',
-        'Content-Security-Policy-Report-Only': reportOnly,
+        'Content-Security-Policy': policy,
         'X-Content-Type-Options': 'nosniff',
         'Permissions-Policy': 'camera=(), geolocation=(), payment=(), usb=(), microphone=(self)'
       });
@@ -49,4 +49,4 @@ async function startCspServer() {
   };
 }
 
-module.exports = { startCspServer, reportOnly };
+module.exports = { startCspServer, policy };

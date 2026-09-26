@@ -20,19 +20,19 @@ test('Cloudflare Pages static headers keep microphone access for this site', () 
   const headers = parsedHeaders();
   expect([...headers.keys()]).toEqual([
     'X-Content-Type-Options', 'X-Frame-Options', 'Referrer-Policy',
-    'Permissions-Policy', 'Content-Security-Policy-Report-Only'
+    'Permissions-Policy', 'Content-Security-Policy'
   ]);
   expect(headers.get('X-Content-Type-Options')).toBe('nosniff');
   expect(headers.get('X-Frame-Options')).toBe('DENY');
   expect(headers.get('Referrer-Policy')).toBe('strict-origin-when-cross-origin');
   expect(headers.get('Permissions-Policy')).toBe('camera=(), geolocation=(), payment=(), usb=(), microphone=(self)');
-  expect(headers.has('Content-Security-Policy')).toBe(false);
+  expect(headers.has('Content-Security-Policy-Report-Only')).toBe(false);
   expect(headers.has('Strict-Transport-Security')).toBe(false);
 });
 
-test('strict CSP exists only as Report-Only with exact reviewed directives', () => {
+test('strict CSP is enforced with exact reviewed directives', () => {
   const headers = parsedHeaders();
-  const policy = headers.get('Content-Security-Policy-Report-Only');
+  const policy = headers.get('Content-Security-Policy');
   expect(policy).toBe([
     "default-src 'self'", "script-src 'self'", "script-src-attr 'none'",
     "style-src 'self' https://fonts.googleapis.com", "style-src-attr 'none'",
@@ -42,7 +42,8 @@ test('strict CSP exists only as Report-Only with exact reviewed directives', () 
     "base-uri 'self'", "form-action 'self'", "frame-ancestors 'none'"
   ].join('; ') + ';');
   expect(policy).not.toMatch(/unsafe-inline|unsafe-eval|(?:^|[\s;])\*|data:|blob:|report-uri|report-to/i);
-  expect([...headers.keys()].filter(name => name === 'Content-Security-Policy-Report-Only')).toHaveLength(1);
+  expect([...headers.keys()].filter(name => name === 'Content-Security-Policy')).toHaveLength(1);
+  expect(headers.has('Content-Security-Policy-Report-Only')).toBe(false);
 });
 
 test('local account JavaScript and CSS have MIME types compatible with nosniff', async ({request}) => {
