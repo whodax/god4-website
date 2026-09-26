@@ -2,6 +2,7 @@ const {test, expect} = require('@playwright/test');
 
 test('auth foundation starts unavailable without config while guest features initialize', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent [data-verse-number]')).not.toHaveCount(0);
   await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
   await expect.poll(() => page.evaluate(() => God4Auth.getState().status)).toBe('unavailable');
@@ -44,6 +45,7 @@ test('auth foundation provider failure leaves Reader and local features usable',
   }));
   await page.goto('/');
   await expect.poll(() => page.evaluate(() => God4Auth.getState().status)).toBe('unavailable');
+  await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent [data-verse-number]')).not.toHaveCount(0);
   await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
   await page.locator('#heroFav').click();

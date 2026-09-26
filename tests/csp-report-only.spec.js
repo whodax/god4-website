@@ -119,6 +119,7 @@ test('main application flows stay functional without CSP violations', async ({pa
   page.on('request', request => resourceTypes.push(request.resourceType()));
   page.on('worker', worker => workers.push(worker.url()));
   await page.goto(server.origin + '/');
+  await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent')).toContainText('John 1');
   await page.locator('.refresh-btn').click();
   const searchInput = page.locator('#searchInput');

@@ -391,6 +391,58 @@ function initializeGoogleFonts(){
   }
   fontLink.addEventListener('load', activateFonts, { once: true });
 }
+var bibleExperienceReady = false;
+var bibleExperienceRequest = null;
+
+function initializeBibleExperience(){
+  if(bibleExperienceReady) return Promise.resolve(true);
+  if(bibleExperienceRequest) return bibleExperienceRequest;
+
+  bibleExperienceRequest = Promise.resolve().then(async function(){
+    var loaded = typeof BibleTranslationLoader !== 'undefined'
+      ? await BibleTranslationLoader.ensure(currentTranslation)
+      : BibleData.isTranslationLoaded(currentTranslation);
+    if(!loaded && currentTranslation !== 'web'){
+      currentTranslation = 'web';
+      UserData.translation.save(currentTranslation);
+      var readerTranslation = document.getElementById('readerTranslation');
+      if(readerTranslation) readerTranslation.value = currentTranslation;
+      updateSearchTranslationSelection(currentTranslation);
+      loaded = typeof BibleTranslationLoader !== 'undefined'
+        ? await BibleTranslationLoader.ensure(currentTranslation)
+        : BibleData.isTranslationLoaded(currentTranslation);
+    }
+    if(!loaded){
+      bibleExperienceRequest = null;
+      return false;
+    }
+    if(typeof populateBooks === 'function') populateBooks();
+    if(typeof populateChapters === 'function') populateChapters();
+    if(typeof loadPassage === 'function') loadPassage();
+    if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
+    bibleExperienceReady = true;
+    return true;
+  }).catch(function(){
+    bibleExperienceRequest = null;
+    return false;
+  });
+  return bibleExperienceRequest;
+}
+
+function initializeBibleExperienceTriggers(){
+  document.querySelectorAll('a[href="#companion"]').forEach(function(link){
+    link.addEventListener('click', initializeBibleExperience);
+  });
+  var companion = document.getElementById('companion');
+  if(!companion || typeof IntersectionObserver === 'undefined') return;
+  var observer = new IntersectionObserver(function(entries){
+    if(!entries.some(function(entry){ return entry.isIntersecting; })) return;
+    initializeBibleExperience().then(function(loaded){
+      if(loaded) observer.disconnect();
+    });
+  }, { threshold: 0.01 });
+  observer.observe(companion);
+}
 /* ===== INIT ===== */
 var appInitialized = false;
 async function initializeApp(){
@@ -483,20 +535,8 @@ async function initializeApp(){
     requestAnimationFrame(function(){ pulseBrandMark(); });
   }
   if(typeof populateTranslations === 'function') populateTranslations();
-  var initialTranslationLoaded = typeof BibleTranslationLoader !== 'undefined'
-    ? await BibleTranslationLoader.ensure(currentTranslation)
-    : BibleData.isTranslationLoaded(currentTranslation);
-  if(!initialTranslationLoaded){
-    currentTranslation = 'web';
-    UserData.translation.save(currentTranslation);
-    var readerTranslation = document.getElementById('readerTranslation');
-    if(readerTranslation) readerTranslation.value = currentTranslation;
-    updateSearchTranslationSelection(currentTranslation);
-  }
-  if(typeof populateBooks === 'function') populateBooks();
-  if(typeof populateChapters === 'function') populateChapters();
-  if(typeof loadPassage === 'function') loadPassage();
   if(typeof renderPlan === 'function') renderPlan();
+  initializeBibleExperienceTriggers();
   renderLeaf();
 }
 

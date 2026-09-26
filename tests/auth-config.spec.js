@@ -91,6 +91,7 @@ test('both pages load the same pinned browser client before the adapter', () => 
 
 test('local guest Reader works with the real browser bundle and auth leaves site keys alone', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent [data-verse-number]')).not.toHaveCount(0);
   await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
   const result = await page.evaluate(async () => {

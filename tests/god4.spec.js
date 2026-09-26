@@ -21,6 +21,9 @@ test.beforeEach(async ({ page }) => {
     localStorage.removeItem('god4.reader.position');
     sessionStorage.setItem(key, 'true');
   }, resetKey);
+  await page.addInitScript(() => {
+    window.addEventListener('DOMContentLoaded', () => initializeBibleExperience());
+  });
   await page.goto('/');
 });
 

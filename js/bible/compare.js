@@ -304,6 +304,7 @@ async function loadCompare(){
       : Promise.resolve(BibleData.isTranslationLoaded(translationId));
   }));
   if(requestId !== compareLoadRequest) return;
+  if(!compareReference.bookId) initializeCompareReference();
   updateCompareSummary();
   updateCompareNavigation();
   var columns = [];
