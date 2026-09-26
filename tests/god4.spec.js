@@ -45,7 +45,7 @@ test('homepage and primary navigation load without browser errors', async ({ pag
   expect([...errors, ...failedLocalRequests], [...errors, ...failedLocalRequests].join('\n')).toEqual([]);
 });
 
-test('header cross mark includes an activated heart and four motion rays', async ({ page }) => {
+test('header cross mark opens with three heart pulses and four motion rays', async ({ page }) => {
   await page.goto('/');
   const mark = page.locator('#brandMark');
   await expect(mark).toHaveAccessibleName('Activate cross heart');
@@ -58,7 +58,14 @@ test('header cross mark includes an activated heart and four motion rays', async
     rayCount: element.querySelectorAll('.brand-rays path').length,
     heartCenter: (() => { const box = element.querySelector('.brand-heart').getBBox(); return { x: box.x + box.width / 2, y: box.y + box.height / 2 }; })(),
     heartAnimation: getComputedStyle(element.querySelector('.brand-heart')).animationDuration,
-    raysAnimation: getComputedStyle(element.querySelector('.brand-rays')).animationDuration
+    heartIterations: getComputedStyle(element.querySelector('.brand-heart')).animationIterationCount,
+    raysAnimation: getComputedStyle(element.querySelector('.brand-rays')).animationDuration,
+    pulsePeaks: (() => {
+      const layoutSheet = Array.from(document.styleSheets).find((sheet) => sheet.href && new URL(sheet.href).pathname.endsWith('/css/layout.css'));
+      const keyframes = Array.from(layoutSheet.cssRules).find((rule) => rule.name === 'brand-heart-pulse');
+      const peakRule = Array.from(keyframes.cssRules).find((rule) => rule.style.transform.includes('scale(1.35)'));
+      return peakRule.keyText.split(',').length;
+    })()
   }));
   expect(initial.width).toBe(60);
   expect(initial.height).toBe(60);
@@ -68,17 +75,55 @@ test('header cross mark includes an activated heart and four motion rays', async
   expect(initial.rayCount).toBe(4);
   expect(initial.heartCenter.x).toBeCloseTo(36, 1);
   expect(initial.heartCenter.y).toBeCloseTo(36, 1);
-    expect(initial.heartAnimation).toBe('3s');
-    expect(initial.raysAnimation).toBe('3s');
+  expect(initial.heartAnimation).toBe('4.8s');
+  expect(initial.heartIterations).toBe('1');
+  expect(initial.raysAnimation).toBe('4.8s');
+  expect(initial.pulsePeaks).toBe(3);
   await expect(mark).toHaveClass(/brand-mark--pulse/);
 
   await mark.click();
   await expect(mark).toHaveClass(/brand-mark--pulse/);
-  await expect.poll(() => mark.evaluate((element) => ({ heart: getComputedStyle(element.querySelector('.brand-heart')).animationDuration, rays: getComputedStyle(element.querySelector('.brand-rays')).animationDuration }))).toEqual({ heart: '3s', rays: '3s' });
+  await expect.poll(() => mark.evaluate((element) => ({ heart: getComputedStyle(element.querySelector('.brand-heart')).animationDuration, rays: getComputedStyle(element.querySelector('.brand-rays')).animationDuration }))).toEqual({ heart: '4.8s', rays: '4.8s' });
 
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await mark.click();
   await expect.poll(() => mark.evaluate((element) => ({ heart: getComputedStyle(element.querySelector('.brand-heart')).animationName, rays: getComputedStyle(element.querySelector('.brand-rays')).animationName }))).toEqual({ heart: 'none', rays: 'none' });
+});
+
+test('header brand keeps clear responsive spacing from navigation and actions', async ({ page }) => {
+  for (const width of [1280, 900]) {
+    await page.setViewportSize({ width, height: 800 });
+    await page.goto('/');
+    const spacing = await page.evaluate(() => {
+      const brand = document.querySelector('.brand').getBoundingClientRect();
+      const firstLink = document.querySelector('.navlinks a').getBoundingClientRect();
+      const nav = document.querySelector('nav');
+      return {
+        gap: firstLink.left - brand.right,
+        linksDisplay: getComputedStyle(document.querySelector('.navlinks')).display,
+        fits: nav.scrollWidth <= nav.clientWidth
+      };
+    });
+    expect(spacing.linksDisplay).toBe('flex');
+    expect(spacing.gap).toBeGreaterThanOrEqual(24);
+    expect(spacing.fits).toBe(true);
+  }
+
+  await page.setViewportSize({ width: 390, height: 800 });
+  await page.goto('/');
+  const mobile = await page.evaluate(() => {
+    const nav = document.querySelector('nav');
+    const brand = document.querySelector('.brand').getBoundingClientRect();
+    const actions = document.querySelector('.header-actions').getBoundingClientRect();
+    return {
+      linksDisplay: getComputedStyle(document.querySelector('.navlinks')).display,
+      groupsDoNotOverlap: brand.bottom <= actions.top || brand.right <= actions.left,
+      fits: nav.scrollWidth <= nav.clientWidth
+    };
+  });
+  expect(mobile.linksDisplay).toBe('none');
+  expect(mobile.groupsDoNotOverlap).toBe(true);
+  expect(mobile.fits).toBe(true);
 });
 
 test('hero verse can be saved, unsaved, and shown in the saved-verses tray', async ({ page }) => {
