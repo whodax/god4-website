@@ -6,6 +6,10 @@ const { execFileSync } = require('child_process');
 const wordStudyImporter = require('../tools/import-word-study');
 const originalLanguageImporter = require('../tools/import-original-language');
 
+async function ensureTranslation(page, translationId) {
+  expect(await page.evaluate((id) => BibleTranslationLoader.ensure(id), translationId)).toBe(true);
+}
+
 test.beforeEach(async ({ page }) => {
   const resetKey = `god4.testReset.${Date.now()}.${Math.random()}`;
   await page.addInitScript((key) => {
@@ -446,6 +450,7 @@ test('Bible data interface exposes the current local dataset', async ({ page }) 
 
 test('ASV is complete and available through BibleData', async ({ page }) => {
   await page.goto('/');
+  await ensureTranslation(page, 'asv');
   const result = await page.evaluate(() => ({
     metadata: BibleData.listTranslations().find((translation) => translation.id === 'asv'),
     bookCount: BibleData.listBooks('asv').length,
@@ -497,6 +502,7 @@ test('Compare renders WEB and ASV for the same current reference and excludes DE
 
 test('KJV is complete and preserves the imported source wording', async ({ page }) => {
   await page.goto('/');
+  await ensureTranslation(page, 'kjv');
   const result = await page.evaluate(() => ({
     metadata: BibleData.listTranslations().find((translation) => translation.id === 'kjv'),
     bookCount: BibleData.listBooks('kjv').length,
@@ -546,6 +552,7 @@ test('Compare independently selects WEB, ASV, and KJV without exposing DEMO', as
 
 test('YLT is complete and Compare keeps all real translations independent', async ({ page }) => {
   await page.goto('/');
+  await ensureTranslation(page, 'ylt');
   const result = await page.evaluate(() => ({
     metadata: BibleData.listTranslations().find((translation) => translation.id === 'ylt'),
     bookCount: BibleData.listBooks('ylt').length,
@@ -582,6 +589,7 @@ test('YLT is complete and Compare keeps all real translations independent', asyn
 
 test('DBY is complete and independently available in Reader and Compare', async ({ page }) => {
   await page.goto('/');
+  await ensureTranslation(page, 'dby');
   const result = await page.evaluate(() => ({
     metadata: BibleData.listTranslations().find((translation) => translation.id === 'dby'),
     bookCount: BibleData.listBooks('dby').length,
@@ -619,6 +627,7 @@ test('DBY is complete and independently available in Reader and Compare', async 
 
 test('WBS is complete and independently available in Reader and Compare', async ({ page }) => {
   await page.goto('/');
+  await ensureTranslation(page, 'webster');
   const result = await page.evaluate(() => ({
     metadata: BibleData.listTranslations().find((translation) => translation.id === 'webster'),
     bookCount: BibleData.listBooks('webster').length,
@@ -659,6 +668,7 @@ test('WBS is complete and independently available in Reader and Compare', async 
 
 test('RV is complete and independently available in Reader and Compare', async ({ page }) => {
   await page.goto('/');
+  await ensureTranslation(page, 'rv');
   const result = await page.evaluate(() => ({
     metadata: BibleData.listTranslations().find((translation) => translation.id === 'rv'),
     bookCount: BibleData.listBooks('rv').length,
@@ -697,6 +707,7 @@ test('RV is complete and independently available in Reader and Compare', async (
 
 test('GNV preserves historical spelling and works independently in Reader and Compare', async ({ page }) => {
   await page.goto('/');
+  await ensureTranslation(page, 'gnv');
   const result = await page.evaluate(() => ({
     metadata: BibleData.listTranslations().find((translation) => translation.id === 'gnv'),
     bookCount: BibleData.listBooks('gnv').length,
@@ -744,6 +755,7 @@ test('GNV preserves historical spelling and works independently in Reader and Co
 
 test('DBY strips inline USFM markup without losing verse words', async ({ page }) => {
   await page.goto('/');
+  await ensureTranslation(page, 'dby');
   const result = await page.evaluate(() => {
     const residual = [];
     BibleData.listBooks('dby').forEach((book) => {
@@ -781,6 +793,7 @@ test('translation preference persists across reloads', async ({ page }) => {
   await page.goto('/');
   const translation = page.locator('#readerTranslation');
   await translation.selectOption('asv');
+  await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
   await page.reload();
   await expect(translation).toHaveValue('asv');
   await expect(translation.locator('option:checked')).toHaveText(/ASV.*American Standard Version/);
@@ -1382,8 +1395,10 @@ test('Study Desk panes use document scrolling instead of inner vertical scrollba
   expect(readerHeight.pageHeight).toBeGreaterThanOrEqual(before);
 
   await page.getByRole('button', { name: 'Compare' }).click();
-  await page.locator('#compareBook').selectOption('psalms');
-  await page.locator('#compareChapter').selectOption('23');
+  await page.waitForFunction(() => BibleData.isTranslationLoaded('asv'));
+  const compareVerseCount = await page.evaluate(() => BibleData.getChapter('web', 'john', 1).verses.length);
+  await expect(page.locator('#compareGrid .compare-col').first().locator('.vnum')).toHaveCount(compareVerseCount);
+  await expect(page.locator('#compareGrid .compare-col').nth(1).locator('.vnum')).toHaveCount(compareVerseCount);
   const compareFlow = await page.locator('#view-compare').evaluate((view) => ({
     pageHeight: document.documentElement.scrollHeight,
     paneOverflow: getComputedStyle(view).overflowY,
@@ -3491,6 +3506,7 @@ test('Reader selected verse remains selected when translation changes and the ve
   await page.locator('#chapterSelect').selectOption('3');
   await page.locator('#verseSelect').selectOption('16');
   await page.locator('#readerTranslation').selectOption('asv');
+  await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
   await expect(page.locator('#bookSelect')).toHaveValue('john');
   await expect(page.locator('#chapterSelect')).toHaveValue('3');
   await expect(page.locator('#verseSelect')).toHaveValue('16');
@@ -3771,6 +3787,7 @@ test('repeat keeps a valid verse through translation and drops one missing from 
   await installVoicePlaybackMocks(page);
   await page.evaluate(() => readVerseAloud(2));
   await page.locator('#readerTranslation').selectOption('asv');
+  await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
   await recognizePlaybackCommand(page, 'repeat verse');
   expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
     await page.evaluate(() => BibleData.getVerse('asv', 'john', 1, 2).text)
@@ -3778,10 +3795,12 @@ test('repeat keeps a valid verse through translation and drops one missing from 
 
   await page.locator('#bookSelect').selectOption('psalms');
   await page.locator('#readerTranslation').selectOption('web');
+  await expect.poll(() => page.evaluate(() => currentTranslation)).toBe('web');
   await page.locator('#chapterSelect').selectOption('3');
   await page.evaluate(() => readVerseAloud(12));
   const count = await page.evaluate(() => window.__speech.utterances.length);
   await page.locator('#readerTranslation').selectOption('asv');
+  await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
   await recognizePlaybackCommand(page, 'repeat last verse');
   expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(count);
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);

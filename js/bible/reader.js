@@ -8,6 +8,7 @@ let currentSpokenVerse = null;
 let spokenFollowScrollTarget = null;
 let lastSpokenVerse = null;
 let currentTranslation = UserData.translation.load();
+let translationChangeRequest = 0;
 let voiceRecognition = null;
 let voiceCommandsListening = false;
 let voiceRecognitionActive = false;
@@ -609,13 +610,23 @@ function populateTranslations(){
   }
 }
 
-function changeTranslation(translationId){
-  if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return;
+async function changeTranslation(translationId){
+  if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return false;
+  var previousTranslation = currentTranslation;
+  var translationSelect = document.getElementById('readerTranslation');
+  var requestId = ++translationChangeRequest;
+  var loaded = typeof BibleTranslationLoader !== 'undefined'
+    ? await BibleTranslationLoader.ensure(translationId)
+    : BibleData.isTranslationLoaded(translationId);
+  if(requestId !== translationChangeRequest) return false;
+  if(!loaded){
+    if(translationSelect) translationSelect.value = previousTranslation;
+    return false;
+  }
   var bookSelect = document.getElementById('bookSelect');
   if(bookSelect && bookSelect.value) currentBook = bookSelect.value;
   currentTranslation = translationId;
   UserData.translation.save(currentTranslation);
-  var translationSelect = document.getElementById('readerTranslation');
   if(translationSelect) translationSelect.value = currentTranslation;
   populateBooks();
   if(!bookSelect || !BibleData.getChapterCount(currentTranslation, currentBook)){
@@ -628,6 +639,9 @@ function changeTranslation(translationId){
   populateChapters();
   populateVerses();
   loadPassage();
+  if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
+  if(typeof syncCompareFromReader === 'function') syncCompareFromReader();
+  return true;
 }
 
 function populateChapters(){
