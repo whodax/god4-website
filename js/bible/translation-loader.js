@@ -1,6 +1,7 @@
 /* ===== ON-DEMAND BIBLE TRANSLATION LOADER ===== */
 var BibleTranslationLoader = (function createBibleTranslationLoader(){
   var paths = {
+    web: 'js/bible/web.js',
     asv: 'js/bible/asv.js',
     kjv: 'js/bible/kjv.js',
     ylt: 'js/bible/ylt.js',

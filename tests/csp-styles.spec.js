@@ -6,6 +6,7 @@ async function expectNoAppInlineStyles(page) {
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
+  await page.evaluate(() => initializeBibleExperience());
 });
 
 test('search results use finite stagger classes and never create inline styles', async ({ page }) => {

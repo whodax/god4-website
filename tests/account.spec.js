@@ -57,6 +57,7 @@ test('Sign In success updates account identity without a page reload', async ({p
   await page.locator('#accountSignInForm button[type=submit]').click();
   await expect(page.locator('#accountDialog')).not.toBeVisible();
   await expect(page.locator('#accountTrigger')).toContainText('reader@example.test');
+  await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent [data-verse-number]')).not.toHaveCount(0);
   await expect.poll(() => page.evaluate(() => window.accountFake.calls.length)).toBe(1);
 });
@@ -117,6 +118,7 @@ test('Sign Out returns to guest without clearing local GOD4.us data', async ({pa
   await useFakeAuth(page, `initialize: async () => ({id: 'user-3', email: 'reader@example.test'}),
     signOut: async () => { window.accountFake.calls.push('signOut'); }`);
   await page.goto('/');
+  await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#accountTrigger')).toContainText('reader@example.test');
   await page.locator('#heroFav').click();
   const before = await page.evaluate(() => {
@@ -142,6 +144,7 @@ test('disabled auth reports unavailable while Reader and Saved Verses remain usa
   await page.keyboard.press('Escape');
   await page.locator('#heroFav').click();
   await expect(page.locator('#savedCount')).toHaveText('1');
+  await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent [data-verse-number]')).not.toHaveCount(0);
 });
 

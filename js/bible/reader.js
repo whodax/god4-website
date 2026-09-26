@@ -820,19 +820,35 @@ document.addEventListener('keydown', function(event){
   }
 });
 
+function runWithBibleExperience(action){
+  if(typeof bibleExperienceReady !== 'undefined' && bibleExperienceReady){
+    action();
+    return Promise.resolve(true);
+  }
+  var ready = typeof initializeBibleExperience === 'function'
+    ? initializeBibleExperience()
+    : Promise.resolve(true);
+  return ready.then(function(loaded){
+    if(!loaded) return false;
+    action();
+    return true;
+  });
+}
 function initializeReaderControls(){
   document.querySelectorAll('.bs-btn[aria-controls^="view-"]').forEach(function(button){
     button.addEventListener('click', function(){
-      switchView(button.getAttribute('aria-controls').slice(5), button);
+      var view = button.getAttribute('aria-controls').slice(5);
+      if(view === 'reader') runWithBibleExperience(function(){ switchView(view, button); });
+      else switchView(view, button);
     });
   });
   [
-    ['fullscreenBtn', 'click', toggleFullscreen],
+    ['fullscreenBtn', 'click', function(){ runWithBibleExperience(toggleFullscreen); }],
     ['readerTranslation', 'change', function(event){ changeTranslation(event.target.value); }],
-    ['bookSelect', 'change', changeReaderBook],
-    ['chapterSelect', 'change', loadPassage],
-    ['verseSelect', 'change', function(event){ selectReaderVerse(event.target.value); }],
-    ['readAloudPlay', 'click', playReader],
+    ['bookSelect', 'change', function(){ runWithBibleExperience(changeReaderBook); }],
+    ['chapterSelect', 'change', function(){ runWithBibleExperience(loadPassage); }],
+    ['verseSelect', 'change', function(event){ runWithBibleExperience(function(){ selectReaderVerse(event.target.value); }); }],
+    ['readAloudPlay', 'click', function(){ runWithBibleExperience(playReader); }],
     ['readAloudPause', 'click', pauseResumeReadAloud],
     ['readAloudStop', 'click', stopReadAloud],
     ['readAloudVoice', 'change', function(event){ BibleSpeech.setVoice(event.target.value); }],
@@ -851,10 +867,10 @@ function initializeReaderControls(){
       'previous-verse': previousReaderVerse,
       'next-verse': nextReaderVerse
     };
-    if(handlers[action]) button.addEventListener('click', handlers[action]);
+    if(handlers[action]) button.addEventListener('click', function(){ runWithBibleExperience(handlers[action]); });
   });
   document.querySelectorAll('[data-voice-command-button]').forEach(function(button){
-    button.addEventListener('click', toggleVoiceCommands);
+    button.addEventListener('click', function(){ runWithBibleExperience(toggleVoiceCommands); });
   });
   ['readerContent', 'fsContent'].forEach(function(id){
     var container = document.getElementById(id);
