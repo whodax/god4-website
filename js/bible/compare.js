@@ -1,5 +1,6 @@
 const compareState = { count: 2, selections: ['', '', '', ''], persisted: false };
 const compareReference = { bookId: '', chapter: 1, verse: null };
+let compareLoadRequest = 0;
 
 function loadCompareState(){
   var stored = UserData.compare.load();
@@ -26,7 +27,7 @@ function syncCompareDefaultTranslation(){
 function getCompareTranslations(){
   if(typeof BibleData === 'undefined') return [];
   return BibleData.listTranslations().filter(function(translation){
-    return translation.provider !== 'demo-library' && BibleData.listBooks(translation.id).length > 0;
+    return translation.provider !== 'demo-library';
   }).map(function(translation){
     return { id: translation.id, abbreviation: translation.abbreviation || translation.id.toUpperCase(), name: translation.name };
   });
@@ -291,10 +292,18 @@ function renderCompareColumn(translationId, index){
   return content + '</div></div>';
 }
 
-function loadCompare(){
+async function loadCompare(){
   var grid = document.getElementById('compareGrid');
   if(!grid) return;
   ensureCompareSelections();
+  var requestId = ++compareLoadRequest;
+  var requestedTranslations = compareState.selections.slice(0, compareState.count);
+  await Promise.all(requestedTranslations.map(function(translationId){
+    return typeof BibleTranslationLoader !== 'undefined'
+      ? BibleTranslationLoader.ensure(translationId)
+      : Promise.resolve(BibleData.isTranslationLoaded(translationId));
+  }));
+  if(requestId !== compareLoadRequest) return;
   updateCompareSummary();
   updateCompareNavigation();
   var columns = [];
@@ -355,7 +364,6 @@ function initializeCompare(){
   loadCompareState();
   initializeCompareReference();
   ensureCompareSelections();
-  loadCompare();
   ['compareBook', 'compareChapter', 'compareVerse'].forEach(function(id){
     var element = document.getElementById(id);
     if(element) element.addEventListener('change', function(){ updateCompareReferenceFromControls(id); });
@@ -372,9 +380,9 @@ function initializeCompare(){
   document.querySelectorAll('[data-compare-count]').forEach(function(button){
     button.addEventListener('click', function(){ setCompareEditionCount(Number(button.getAttribute('data-compare-count'))); });
   });
-  ['bookSelect', 'chapterSelect', 'verseSelect', 'readerTranslation'].forEach(function(id){
+  ['bookSelect', 'chapterSelect', 'verseSelect'].forEach(function(id){
     var element = document.getElementById(id);
-    if(element) element.addEventListener('change', id === 'readerTranslation' ? function(){ syncCompareDefaultTranslation(); syncCompareFromReader(); } : syncCompareFromReader);
+    if(element) element.addEventListener('change', syncCompareFromReader);
   });
 }
 

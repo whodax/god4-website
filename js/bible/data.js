@@ -127,6 +127,10 @@ const BibleData = (function createBibleDataAccess(){
     return translations.map(function(translation){ return Object.assign({}, translation); });
   }
 
+  function isTranslationLoaded(translationId){
+    return Boolean(getLibrary(translationId));
+  }
+
   function listBooks(translationId){
     var source = getLibrary(translationId);
     if(!source) return [];
@@ -194,6 +198,7 @@ const BibleData = (function createBibleDataAccess(){
 
   return {
     listTranslations: listTranslations,
+    isTranslationLoaded: isTranslationLoaded,
     listBooks: listBooks,
     getChapterCount: getChapterCount,
     getChapter: getChapter,
