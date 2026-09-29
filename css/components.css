@@ -107,6 +107,27 @@
   .result-card-button{width:100%;text-align:left;cursor:pointer;font:inherit;}
   .result-card-button .result-open{font-family:'Inter','Inter Fallback',sans-serif;font-size:10px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;}
   .search-status{grid-column:1/-1;text-align:center;color:var(--ink-soft);font:11px 'Inter','Inter Fallback',sans-serif;}
+
+  .pwa-status{
+    position:fixed;right:18px;bottom:18px;z-index:1200;max-width:min(360px,calc(100vw - 36px));
+    display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);
+    border-radius:10px;background:var(--vellum-card);box-shadow:var(--shadow);
+    color:var(--ink);font:13px/1.45 'Inter','Inter Fallback',sans-serif;
+  }
+  .pwa-status[hidden]{display:none;}
+  .pwa-status button{
+    flex:none;border:1px solid var(--gold);border-radius:999px;background:transparent;color:var(--ink);
+    padding:7px 11px;font:600 12px 'Inter','Inter Fallback',sans-serif;cursor:pointer;
+  }
+  .pwa-status button:focus-visible{outline:3px solid var(--gold-bright);outline-offset:2px;}
+
+  .offline-page{
+    width:min(680px,calc(100% - 36px));margin:clamp(72px,14vh,140px) auto;padding:clamp(28px,6vw,54px);
+    border:1px solid var(--line);border-radius:18px;background:var(--vellum-card);box-shadow:var(--shadow);
+    text-align:center;
+  }
+  .offline-page h1{margin:8px 0 14px;}
+  .offline-page p:not(.eyebrow){margin:0 auto 24px;max-width:520px;color:var(--ink-soft);}
   .search-more{grid-column:1/-1;justify-self:center;border:1px solid var(--line);border-radius:2px;background:var(--vellum-card);color:var(--ink-soft);padding:7px 14px;font:11px 'Inter','Inter Fallback',sans-serif;cursor:pointer;}
   .search-more:hover{border-color:var(--gold);color:var(--gold);}
   .no-results{color:var(--ink-soft);font-style:italic;padding:14px 0;}

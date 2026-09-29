@@ -31,7 +31,7 @@ test('Cloudflare Pages static headers keep microphone access for this site', () 
   expect(headers.has('Strict-Transport-Security')).toBe(false);
 });
 
-test('strict CSP permits the reviewed Cloudflare Web Analytics origin with exact directives', () => {
+test('strict CSP permits reviewed analytics and the same-origin service worker with exact directives', () => {
   const headers = parsedHeaders();
   const policy = headers.get('Content-Security-Policy');
   expect(policy).toBe([
@@ -39,7 +39,7 @@ test('strict CSP permits the reviewed Cloudflare Web Analytics origin with exact
     "style-src 'self' https://fonts.googleapis.com", "style-src-attr 'none'",
     "font-src 'self' https://fonts.gstatic.com", "img-src 'self'",
     `connect-src 'self' ${production} ${staging}`, "frame-src 'none'",
-    "worker-src 'none'", "media-src 'none'", "object-src 'none'",
+    "worker-src 'self'", "media-src 'none'", "object-src 'none'",
     "base-uri 'self'", "form-action 'self'", "frame-ancestors 'none'"
   ].join('; ') + ';');
   expect(policy).not.toMatch(/unsafe-inline|unsafe-eval|(?:^|[\s;])\*|data:|blob:|report-uri|report-to/i);
