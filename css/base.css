@@ -1,10 +1,37 @@
+@font-face{
+  font-family:'Cormorant Garamond Fallback';
+  src:local('Times New Roman');
+  font-display:swap;
+  size-adjust:89.5068%;
+  ascent-override:102.7855%;
+  descent-override:32.3998%;
+  line-gap-override:0%;
+}
+@font-face{
+  font-family:'EB Garamond Fallback';
+  src:local('Times New Roman');
+  font-display:swap;
+  size-adjust:93.4181%;
+  ascent-override:108.1161%;
+  descent-override:32.1137%;
+  line-gap-override:0%;
+}
+@font-face{
+  font-family:'Inter Fallback';
+  src:local('Arial');
+  font-display:swap;
+  size-adjust:105.0968%;
+  ascent-override:92.2959%;
+  descent-override:22.8361%;
+  line-gap-override:0%;
+}
   body{
     margin:0;
     background:
       radial-gradient(ellipse at 50% -10%, rgba(184,134,43,0.16), transparent 60%),
       var(--vellum);
     color:var(--ink);
-    font-family:'EB Garamond', serif;
+    font-family:'EB Garamond','EB Garamond Fallback',serif;
     -webkit-font-smoothing:antialiased;
   }
   a{color:inherit;}
