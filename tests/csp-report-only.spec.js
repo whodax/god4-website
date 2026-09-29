@@ -6,6 +6,7 @@ const {startCspServer, policy} = require('./csp-server');
 const authSource = fs.readFileSync(path.join(__dirname, '..', 'js/auth/auth.js'), 'utf8');
 const production = 'https://apkiqgxmfqohznxpqfcx.supabase.co';
 const staging = 'https://ikzvyuvrvxemliirlfmn.supabase.co';
+const cloudflareAnalytics = 'https://static.cloudflareinsights.com';
 let server;
 
 test.beforeAll(async () => { server = await startCspServer(); });
@@ -186,6 +187,59 @@ test('Google stylesheet and font origins are allowed and font loader activates',
   expect(stylesheetRequests).toBeGreaterThan(0);
   expect(fontRequests).toBeGreaterThan(0);
   await expectCleanPolicy(page, consoleViolations, 'Google Fonts');
+});
+
+test('Cloudflare Web Analytics is allowed while unapproved and inline scripts stay blocked', async ({page}) => {
+  const consoleViolations = await captureViolations(page);
+  let analyticsRequests = 0;
+  let unapprovedRequests = 0;
+  await page.route(`${cloudflareAnalytics}/**`, route => {
+    analyticsRequests++;
+    return route.fulfill({
+      status: 200,
+      contentType: 'text/javascript',
+      body: 'window.__cloudflareAnalyticsProbe = true;',
+      headers: {'access-control-allow-origin': '*', 'content-type': 'text/javascript'}
+    });
+  });
+  await page.route('https://unapproved.example/**', route => {
+    unapprovedRequests++;
+    return route.fulfill({status: 200, contentType: 'text/javascript', body: 'window.__unapprovedProbe = true;'});
+  });
+  await interceptFonts(page);
+  await page.goto(server.origin + '/');
+  await page.evaluate(({analyticsOrigin}) => {
+    const analytics = document.createElement('script');
+    analytics.type = 'module';
+    analytics.src = analyticsOrigin + '/beacon.min.js/test-version';
+    document.head.appendChild(analytics);
+
+    const unapproved = document.createElement('script');
+    unapproved.src = 'https://unapproved.example/probe.js';
+    document.head.appendChild(unapproved);
+
+    const inline = document.createElement('script');
+    inline.textContent = 'window.__inlineScriptProbe = true;';
+    document.head.appendChild(inline);
+  }, {analyticsOrigin: cloudflareAnalytics});
+
+  await expect.poll(() => page.evaluate(() => window.__cloudflareAnalyticsProbe)).toBe(true);
+  await expect.poll(() => page.evaluate(() => window.__cspViolations.length)).toBe(2);
+  const violations = await page.evaluate(() => window.__cspViolations);
+  expect(analyticsRequests).toBe(1);
+  expect(unapprovedRequests).toBe(0);
+  expect(await page.evaluate(() => window.__unapprovedProbe)).toBeUndefined();
+  expect(await page.evaluate(() => window.__inlineScriptProbe)).toBeUndefined();
+  expect(violations).toEqual(expect.arrayContaining([
+    expect.objectContaining({effectiveDirective: 'script-src-elem', blockedURI: 'https://unapproved.example/probe.js'}),
+    expect.objectContaining({effectiveDirective: 'script-src-elem', blockedURI: 'inline'})
+  ]));
+  expect(violations.some(violation => violation.blockedURI.startsWith(cloudflareAnalytics))).toBe(false);
+  expect(consoleViolations).toEqual(expect.arrayContaining([
+    expect.stringMatching(/unapproved\.example/),
+    expect.stringMatching(/inline script|inline execution/i)
+  ]));
+  // Cloudflare JavaScript Detection still injects inline code in production and remains blocked by this policy.
 });
 
 for(const [label, site, api] of [
