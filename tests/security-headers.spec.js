@@ -5,6 +5,7 @@ const path = require('path');
 const headersFile = path.join(__dirname, '..', '_headers');
 const production = 'https://apkiqgxmfqohznxpqfcx.supabase.co';
 const staging = 'https://ikzvyuvrvxemliirlfmn.supabase.co';
+const cloudflareAnalytics = 'https://static.cloudflareinsights.com';
 
 function parsedHeaders() {
   const lines = fs.readFileSync(headersFile, 'utf8').trim().split(/\r?\n/).map(line => line.trim());
@@ -30,11 +31,11 @@ test('Cloudflare Pages static headers keep microphone access for this site', () 
   expect(headers.has('Strict-Transport-Security')).toBe(false);
 });
 
-test('strict CSP is enforced with exact reviewed directives', () => {
+test('strict CSP permits the reviewed Cloudflare Web Analytics origin with exact directives', () => {
   const headers = parsedHeaders();
   const policy = headers.get('Content-Security-Policy');
   expect(policy).toBe([
-    "default-src 'self'", "script-src 'self'", "script-src-attr 'none'",
+    "default-src 'self'", `script-src 'self' ${cloudflareAnalytics}`, "script-src-attr 'none'",
     "style-src 'self' https://fonts.googleapis.com", "style-src-attr 'none'",
     "font-src 'self' https://fonts.gstatic.com", "img-src 'self'",
     `connect-src 'self' ${production} ${staging}`, "frame-src 'none'",
