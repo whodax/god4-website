@@ -86,6 +86,51 @@ for (const file of javascript) {
   }
 }
 
+for (const relativePath of ['sw.js']) {
+  try {
+    cp.execFileSync(process.execPath, ['--check', path.join(root, relativePath)], { stdio: 'pipe' });
+  } catch (error) {
+    console.error(`JavaScript syntax error in ${relativePath}\n${error.stderr.toString()}`);
+    process.exit(1);
+  }
+}
+
+const manifestPath = path.join(root, 'manifest.webmanifest');
+let manifest;
+try { manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')); }
+catch (error) {
+  console.error(`Invalid manifest.webmanifest: ${error.message}`);
+  process.exit(1);
+}
+if (manifest.id !== '/' || manifest.start_url !== '/' || manifest.scope !== '/' ||
+  manifest.display !== 'standalone' || !manifest.name || !manifest.short_name ||
+  !Array.isArray(manifest.icons)) {
+  console.error('manifest.webmanifest is missing required install metadata');
+  process.exit(1);
+}
+for (const icon of manifest.icons) {
+  const dimensions = /^(\d+)x(\d+)$/.exec(icon.sizes || '');
+  const iconPath = path.join(root, String(icon.src || '').replace(/^\//, ''));
+  if (!dimensions || icon.type !== 'image/png' || !fs.existsSync(iconPath)) {
+    console.error(`Invalid manifest icon: ${icon.src || '(missing source)'}`);
+    process.exit(1);
+  }
+  const data = fs.readFileSync(iconPath);
+  const pngSignature = data.subarray(0, 8).toString('hex');
+  const width = data.length >= 24 ? data.readUInt32BE(16) : 0;
+  const height = data.length >= 24 ? data.readUInt32BE(20) : 0;
+  if (pngSignature !== '89504e470d0a1a0a' || width !== Number(dimensions[1]) || height !== Number(dimensions[2])) {
+    console.error(`Manifest icon dimensions do not match: ${icon.src}`);
+    process.exit(1);
+  }
+}
+const workerSource = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+const shellList = /const SHELL_ASSETS = \[([\s\S]*?)\n\];/.exec(workerSource);
+if (!shellList || /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js/.test(shellList[1])) {
+  console.error('Service worker shell cache must not contain Bible translation bundles');
+  process.exit(1);
+}
+
 const dbyFile = path.join(root, 'js', 'bible', 'dby.js');
 if (fs.existsSync(dbyFile)) {
   const dbySource = fs.readFileSync(dbyFile, 'utf8');
@@ -124,3 +169,4 @@ if (fs.existsSync(gnvFile)) {
 
 console.log(`Parsed ${references.length} asset reference(s); checked local files for existence.`);
 console.log(`Checked JavaScript syntax for ${javascript.length} file(s).`);
+console.log(`Validated ${manifest.icons.length} manifest icon(s) and the Phase 1 service worker.`);
