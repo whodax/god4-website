@@ -19,7 +19,7 @@ The service worker uses exact same-origin asset paths. It does not cache arbitra
 
 ## Navigation and updates
 
-Same-origin navigations use the network first. The cached homepage is used for the canonical home route when the network is unavailable, and other failed navigations receive `offline.html`. Authentication callbacks always try the network and may receive only the generic offline page when unreachable.
+Same-origin navigations use the network first. The cached homepage is used for the canonical home route when the network is unavailable, and other failed navigations receive the canonical `/offline` page. Cloudflare Pages redirects `/offline.html` to `/offline`, so the service worker precaches `/offline` directly to keep the stored fallback response usable and non-redirected. Authentication callbacks always try the network and may receive only the generic offline page when unreachable.
 
 Each release uses a new cache name. A newly installed worker waits while the current worker and page remain active. The page announces that an update is ready and activates it only after the visitor selects **Update when ready**. No reading session is reloaded automatically.
 

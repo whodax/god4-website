@@ -64,10 +64,22 @@ test('service worker installs a versioned shell without requesting or caching tr
     }
     return {names, urls};
   });
-  expect(state.names).toEqual(['god4-shell-230d01a-pwa1']);
-  expect(state.urls).toContain('/offline.html');
+  expect(state.names).toEqual(['god4-shell-230d01a-pwa2']);
+  expect(state.urls).toContain('/offline');
   expect(state.urls).toContain('/js/app.js');
   expect(state.urls.some(url => translationPattern.test(url))).toBe(false);
+
+  const fallback = await page.evaluate(async () => {
+    const response = await caches.match('/offline');
+    return response && {
+      ok: response.ok,
+      redirected: response.redirected,
+      pathname: new URL(response.url).pathname,
+      body: await response.clone().text()
+    };
+  });
+  expect(fallback).toMatchObject({ok: true, redirected: false, pathname: '/offline'});
+  expect(fallback.body).toContain('You are offline');
 });
 
 test('canonical homepage and controlled fallback remain usable offline', async ({page, context}) => {
