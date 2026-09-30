@@ -64,7 +64,7 @@ test('service worker installs a versioned shell without requesting or caching tr
     }
     return {names, urls};
   });
-  expect(state.names).toEqual(['god4-shell-230d01a-pwa2']);
+  expect(state.names).toEqual(['god4-shell-33bda91-phase2a1']);
   expect(state.urls).toContain('/offline');
   expect(state.urls).toContain('/js/app.js');
   expect(state.urls.some(url => translationPattern.test(url))).toBe(false);

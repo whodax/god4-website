@@ -57,6 +57,32 @@ test('ordinary homepage load requests no Bible translation and non-Bible content
   expect(await page.evaluate(() => ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'].filter(id => BibleTranslationLoader.isLoaded(id)))).toEqual([]);
 });
 
+test('generated metadata validates a loaded translation deterministically', async ({page}) => {
+  await page.goto('/');
+
+  const metadata = await page.evaluate(() => ({
+    ids: Object.keys(BibleTranslationManifest),
+    web: BibleTranslationManifest.web,
+    unloaded: BibleData.validateTranslation('web'),
+    unknown: BibleData.validateTranslation('not-allowlisted'),
+    demo: BibleData.validateTranslation('demo-local')
+  }));
+  expect(metadata.ids).toEqual(['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv']);
+  expect(metadata.web.path).toBe('/js/bible/web.js');
+  expect(metadata.web.revision).toMatch(/^[a-f0-9]{16}$/);
+  expect(metadata.web.integrity).toMatch(/^sha256-[A-Za-z0-9+/]+={0,2}$/);
+  expect(metadata.web.bytes).toBeGreaterThan(4_000_000);
+  expect(metadata.web.structure).toMatchObject({bookCount: 66, chapterCount: 1190});
+  expect(metadata.unloaded).toBe(false);
+  expect(metadata.unknown).toBe(false);
+  expect(metadata.demo).toBe(false);
+
+  expect(await page.evaluate(() => BibleTranslationLoader.ensure('web'))).toBe(true);
+  expect(await page.evaluate(() => BibleData.validateTranslation('web'))).toBe(true);
+  expect(await page.evaluate(() => webLibrary.john[1].verses.pop())).toBeTruthy();
+  expect(await page.evaluate(() => BibleData.validateTranslation('web'))).toBe(false);
+});
+
 test('entering Reader loads WEB once and renders the default passage', async ({page}) => {
   const requested = watchTranslationRequests(page);
   await page.goto('/');

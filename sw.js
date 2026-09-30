@@ -1,6 +1,6 @@
 /* GOD4.us Phase 1 offline shell. Bible translation payloads remain network-only. */
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + '230d01a-pwa2';
+const SHELL_CACHE = CACHE_PREFIX + '33bda91-phase2a1';
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -23,6 +23,7 @@ const SHELL_ASSETS = [
   '/css/companion.css',
   '/css/account.css?v=20260924-1',
   '/js/bible/library.js',
+  '/js/bible/translation-manifest.js',
   '/js/bible/data.js',
   '/js/bible/translation-loader.js',
   '/js/storage/local-provider.js',

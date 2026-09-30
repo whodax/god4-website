@@ -4,6 +4,21 @@ const cp = require('child_process');
 
 const root = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const translationManifestGenerator = require(path.join(root, 'tools', 'generate-translation-manifest.js'));
+try {
+  translationManifestGenerator.checkOutput();
+} catch (error) {
+  console.error(error.message);
+  process.exit(1);
+}
+const approvedTranslationPaths = translationManifestGenerator.translations.map((translation) => translation.path);
+const loaderSource = fs.readFileSync(path.join(root, 'js', 'bible', 'translation-loader.js'), 'utf8');
+const loaderPaths = [...loaderSource.matchAll(/^\s{4}[a-z]+: '([^']+)'[,]?$/gm)]
+  .map((match) => '/' + match[1]);
+if (JSON.stringify(loaderPaths) !== JSON.stringify(approvedTranslationPaths)) {
+  console.error('Translation loader mapping does not match the generated manifest allowlist');
+  process.exit(1);
+}
 function htmlFiles(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     if (entry.isDirectory()) {
@@ -130,6 +145,10 @@ if (!shellList || /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js/.test
   console.error('Service worker shell cache must not contain Bible translation bundles');
   process.exit(1);
 }
+if (!shellList[1].includes("'/js/bible/translation-manifest.js'")) {
+  console.error('Service worker shell cache must contain the translation metadata manifest');
+  process.exit(1);
+}
 
 const dbyFile = path.join(root, 'js', 'bible', 'dby.js');
 if (fs.existsSync(dbyFile)) {
@@ -170,3 +189,4 @@ if (fs.existsSync(gnvFile)) {
 console.log(`Parsed ${references.length} asset reference(s); checked local files for existence.`);
 console.log(`Checked JavaScript syntax for ${javascript.length} file(s).`);
 console.log(`Validated ${manifest.icons.length} manifest icon(s) and the Phase 1 service worker.`);
+console.log(`Validated generated metadata for ${translationManifestGenerator.translations.length} Bible translations.`);

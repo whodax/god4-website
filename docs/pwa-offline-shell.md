@@ -29,3 +29,26 @@ Each release uses a new cache name. A newly installed worker waits while the cur
 - Search, Reader, and Compare require a translation response unless the browser happens to have one in its ordinary HTTP cache.
 - Google Fonts are not part of the same-origin shell cache, so an offline launch may use the existing metric-adjusted fallbacks.
 - Account operations and password recovery require a connection.
+
+## Phase 2A translation metadata
+
+`js/bible/translation-manifest.js` is generated from the eight approved local translation bundles by:
+
+```text
+npm run generate:translation-manifest
+```
+
+Each manifest entry contains the fixed translation ID and same-origin path, a revision derived from the first 16 hexadecimal characters of the file's SHA-256 digest, the complete SHA-256 value in Subresource Integrity format, the decoded byte length, and structural counts for the complete translation and each canonical book.
+
+The per-book structure is stored as `[bookId, chapterCount, verseCount]` tuples. Empty verse strings used by some editions to preserve canonical verse numbering are counted as verses. WEB Psalm 1 is currently represented by an existing empty chapter array and is recorded as such; the metadata workflow does not change Bible text.
+
+`npm run test:validate` regenerates the expected manifest in memory and requires an exact match with the checked-in file. It also verifies that the loader's fixed mapping matches the generated allowlist. After an approved translation bundle changes, regenerate the manifest and review both changes together.
+
+Phase 2A adds the metadata manifest to the existing shell because it is a small startup dependency. It does not place any Bible translation payload in Cache Storage and does not change translation request behavior.
+
+### Generated manifest rules
+
+- The generator reads only WEB, ASV, KJV, YLT, DBY, Webster, RV, and GNV from their fixed local paths.
+- Missing bundles, duplicate IDs, invalid book/chapter/verse structures, stale output, and unexpected manifest or loader mappings fail validation.
+- Translation bundles remain source inputs and are never modified by the generator.
+- Service-worker candidate and ready caches, offline translation serving, promotion, and update behavior remain deferred to Phase 2B.
