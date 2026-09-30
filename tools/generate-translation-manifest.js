@@ -81,6 +81,42 @@ function structuralMetadata(definition, library){
   };
 }
 
+function canonicalDeployBytes(input){
+  const bytes = Buffer.isBuffer(input) ? input : Buffer.from(input);
+  let crlfCount = 0;
+  for(let index = 0; index + 1 < bytes.length; index++){
+    if(bytes[index] === 13 && bytes[index + 1] === 10){
+      crlfCount++;
+      index++;
+    }
+  }
+  if(crlfCount === 0) return Buffer.from(bytes);
+
+  const canonical = Buffer.allocUnsafe(bytes.length - crlfCount);
+  let outputIndex = 0;
+  for(let index = 0; index < bytes.length; index++){
+    if(bytes[index] === 13 && bytes[index + 1] === 10){
+      canonical[outputIndex++] = 10;
+      index++;
+    } else {
+      canonical[outputIndex++] = bytes[index];
+    }
+  }
+  return canonical;
+}
+
+function contentMetadata(input){
+  const canonicalBytes = canonicalDeployBytes(input);
+  const digest = crypto.createHash('sha256').update(canonicalBytes).digest();
+  return {
+    canonicalBytes,
+    source: canonicalBytes.toString('utf8'),
+    revision: digest.toString('hex').slice(0, 16),
+    integrity: `sha256-${digest.toString('base64')}`,
+    byteLength: canonicalBytes.length
+  };
+}
+
 function buildManifest(){
   const ids = translations.map((translation) => translation.id);
   if(new Set(ids).size !== translations.length){
@@ -89,17 +125,15 @@ function buildManifest(){
 
   return translations.reduce((manifest, definition) => {
     const file = approvedFile(definition);
-    const bytes = fs.readFileSync(file);
-    const digest = crypto.createHash('sha256').update(bytes).digest();
-    const source = bytes.toString('utf8');
-    const library = readLibrary(definition, source);
+    const content = contentMetadata(fs.readFileSync(file));
+    const library = readLibrary(definition, content.source);
 
     manifest[definition.id] = {
       id: definition.id,
       path: definition.path,
-      revision: digest.toString('hex').slice(0, 16),
-      integrity: `sha256-${digest.toString('base64')}`,
-      bytes: bytes.length,
+      revision: content.revision,
+      integrity: content.integrity,
+      bytes: content.byteLength,
       structure: structuralMetadata(definition, library)
     };
     return manifest;
@@ -116,6 +150,13 @@ function renderManifest(manifest){
 
 function expectedOutput(){
   return renderManifest(buildManifest());
+}
+
+function validateManifest(manifest){
+  if(renderManifest(manifest) !== expectedOutput()){
+    throw new Error('Translation manifest metadata does not match canonical deploy bytes');
+  }
+  return true;
 }
 
 function checkOutput(){
@@ -138,8 +179,11 @@ if(require.main === module){
 
 module.exports = {
   translations,
+  canonicalDeployBytes,
+  contentMetadata,
   buildManifest,
   renderManifest,
   expectedOutput,
+  validateManifest,
   checkOutput
 };

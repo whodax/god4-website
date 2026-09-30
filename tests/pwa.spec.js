@@ -1,6 +1,7 @@
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
+const translationManifestGenerator = require('../tools/generate-translation-manifest.js');
 
 const root = path.resolve(__dirname, '..');
 const translationPattern = /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/;
@@ -99,6 +100,14 @@ test('service worker installs a versioned shell without requesting or caching tr
 
 
 test('worker translation protocol requires approved messages, promotes explicitly, and survives re-registration', async ({page}) => {
+  const canonicalWeb = translationManifestGenerator.canonicalDeployBytes(
+    fs.readFileSync(path.join(root, 'js', 'bible', 'web.js'))
+  );
+  await page.context().route('**/js/bible/web.js?god4-revision=*', route => route.fulfill({
+    status:200,
+    contentType:'application/javascript',
+    body:canonicalWeb
+  }));
   await installAndControl(page);
   const metadata = await page.evaluate(() => BibleTranslationManifest.web);
   const expectedActive = {

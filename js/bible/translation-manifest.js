@@ -3,9 +3,9 @@ var BibleTranslationManifest = Object.freeze({
   "web": {
     "id": "web",
     "path": "/js/bible/web.js",
-    "revision": "a051970ce20d00b8",
-    "integrity": "sha256-oFGXDOINALjEsQmtZ81VtU6dcr9Svqh8QbbqA4hH3bY=",
-    "bytes": 4194383,
+    "revision": "e05fd1ce8dd85087",
+    "integrity": "sha256-4F/Rzo3YUIfkD4k+z7m1qZyxnr3Gp1/uKByyn3a13MU=",
+    "bytes": 4194375,
     "structure": {
       "bookCount": 66,
       "chapterCount": 1190,
@@ -347,9 +347,9 @@ var BibleTranslationManifest = Object.freeze({
   "asv": {
     "id": "asv",
     "path": "/js/bible/asv.js",
-    "revision": "824f265a9a73fd86",
-    "integrity": "sha256-gk8mWppz/YZXXBi9FLtIqhsczJhAScWmj+mmMYQ/I/c=",
-    "bytes": 4250324,
+    "revision": "f4bf443b27d3036b",
+    "integrity": "sha256-9L9EOyfTA2v2Kg3l0XXS1LlWsiUKe65oPi/ztyKzz5U=",
+    "bytes": 4250321,
     "structure": {
       "bookCount": 66,
       "chapterCount": 1189,
@@ -691,9 +691,9 @@ var BibleTranslationManifest = Object.freeze({
   "kjv": {
     "id": "kjv",
     "path": "/js/bible/kjv.js",
-    "revision": "20180b2a9c164ecf",
-    "integrity": "sha256-IBgLKpwWTs9UdhX8nwWtAK3jIDMP8cN3eaQ8JVwcQjc=",
-    "bytes": 4290299,
+    "revision": "f4fdc3e83d5359b2",
+    "integrity": "sha256-9P3D6D1TWbIFOctVricRfKFiqguK44LMKtVW081hD3o=",
+    "bytes": 4290297,
     "structure": {
       "bookCount": 66,
       "chapterCount": 1189,
@@ -1035,9 +1035,9 @@ var BibleTranslationManifest = Object.freeze({
   "ylt": {
     "id": "ylt",
     "path": "/js/bible/ylt.js",
-    "revision": "fc72e279873afe3e",
-    "integrity": "sha256-/HLieYc6/j5BRjxy/XQ42QOH1xWDx+EWq1LCpyp/z2g=",
-    "bytes": 4273418,
+    "revision": "2aa3883086135ded",
+    "integrity": "sha256-KqOIMIYTXe1jBZlZHXCLCvp4FY6ajjlsFOqhcRwfe1A=",
+    "bytes": 4273416,
     "structure": {
       "bookCount": 66,
       "chapterCount": 1189,
@@ -1379,9 +1379,9 @@ var BibleTranslationManifest = Object.freeze({
   "dby": {
     "id": "dby",
     "path": "/js/bible/dby.js",
-    "revision": "0f054e393ca443ee",
-    "integrity": "sha256-DwVOOTykQ+49edlwqRJZuYGupN975b/TnSzCsFwo8fA=",
-    "bytes": 4202904,
+    "revision": "9efe87660dfbc5ab",
+    "integrity": "sha256-nv6HZg37xauRgOlPACvxD2+RYMjS0m37BakSr6PGDO4=",
+    "bytes": 4202902,
     "structure": {
       "bookCount": 66,
       "chapterCount": 1189,
@@ -1723,9 +1723,9 @@ var BibleTranslationManifest = Object.freeze({
   "webster": {
     "id": "webster",
     "path": "/js/bible/webster.js",
-    "revision": "6b8abc81d48fd53e",
-    "integrity": "sha256-a4q8gdSP1T52KKwNiTyJ+LB3ad8hwt7U6J92+qaR7Ew=",
-    "bytes": 4256748,
+    "revision": "26d4fcf0d80c4dcd",
+    "integrity": "sha256-JtT88NgMTc2sTLBL04A4r/hOENdi4T2okjiGLnD9VXY=",
+    "bytes": 4256746,
     "structure": {
       "bookCount": 66,
       "chapterCount": 1189,
@@ -2067,9 +2067,9 @@ var BibleTranslationManifest = Object.freeze({
   "rv": {
     "id": "rv",
     "path": "/js/bible/rv.js",
-    "revision": "18e5ae45420f42ed",
-    "integrity": "sha256-GOWuRUIPQu1DXDyxkiJgLd+FZh9pav0xcQwlCEawv/M=",
-    "bytes": 4249157,
+    "revision": "255b201b594ada78",
+    "integrity": "sha256-JVsgG1lK2ngYzLR3YYh++G3HU152ase0FhW0ECZ7C+E=",
+    "bytes": 4249155,
     "structure": {
       "bookCount": 66,
       "chapterCount": 1189,
@@ -2411,9 +2411,9 @@ var BibleTranslationManifest = Object.freeze({
   "gnv": {
     "id": "gnv",
     "path": "/js/bible/gnv.js",
-    "revision": "b6a85c704ab4afca",
-    "integrity": "sha256-tqhccEq0r8qSp/C3D34+JVkgo883NlvFtLFofa6BCps=",
-    "bytes": 4284761,
+    "revision": "cf91934c9057cc6c",
+    "integrity": "sha256-z5GTTJBXzGw/Hlr5e5DW6Vy62YKpiLhCBry6mbl5OPM=",
+    "bytes": 4284759,
     "structure": {
       "bookCount": 66,
       "chapterCount": 1189,
