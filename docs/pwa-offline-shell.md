@@ -51,4 +51,22 @@ Phase 2A adds the metadata manifest to the existing shell because it is a small 
 - The generator reads only WEB, ASV, KJV, YLT, DBY, Webster, RV, and GNV from their fixed local paths.
 - Missing bundles, duplicate IDs, invalid book/chapter/verse structures, stale output, and unexpected manifest or loader mappings fail validation.
 - Translation bundles remain source inputs and are never modified by the generator.
-- Service-worker candidate and ready caches, offline translation serving, promotion, and update behavior remain deferred to Phase 2B.
+- Service-worker candidate and ready caches, offline translation serving, promotion, and update behavior were deferred to Phase 2B.
+
+## Phase 2B service-worker translation cache protocol
+
+Phase 2B adds worker-side candidate and ready caches without connecting them to Reader, Search, or Compare yet.
+
+- `god4-bible-candidates-v1` stores only responses that pass the fixed allowlist, status, redirect, JavaScript MIME, decoded byte-length, and SHA-256 checks.
+- `god4-bible-ready-v1` stores explicitly promoted payloads and the active-revision metadata response.
+- Candidate keys use `/__god4/bible-cache/candidate/<id>/<revision>`.
+- Ready keys use `/__god4/bible-cache/ready/<id>/<revision>`.
+- Active metadata keys use `/__god4/bible-cache/active/<id>`.
+
+The active revision is a small JSON response in the ready Cache Storage cache. It records the trusted manifest `id`, `revision`, `path`, `integrity`, and decoded `bytes` for the promoted payload, and survives worker restarts without adding IndexedDB. The worker ignores caller-supplied metadata.
+
+Promotion writes the new ready payload first and the active metadata second. The active metadata write is the commit point. A failure before that point preserves the previous active revision and rolls back the new ready payload when needed. Candidate deletion and obsolete ready-payload deletion happen after commit as best-effort cleanup; a cleanup failure can leave an inert extra cache entry but does not change the new active revision or report the committed promotion as failed. Candidates are never promoted automatically.
+
+The worker accepts only fixed acquire, promote, and status messages. Acquire and promote operations accept a translation ID and the current approved revision. URLs, request methods, and headers supplied by a caller are ignored. The worker constructs the same-origin request from the generated manifest.
+
+The existing page loader remains unchanged in Phase 2B. Normal translation requests remain network-only and no Bible cache is created during application-shell installation. Loader integration, offline Reader/Search/Compare behavior, and user-facing offline availability belong to Phase 2C.

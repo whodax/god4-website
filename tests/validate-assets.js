@@ -101,7 +101,7 @@ for (const file of javascript) {
   }
 }
 
-for (const relativePath of ['sw.js']) {
+for (const relativePath of ['sw.js', 'js/pwa/translation-cache-protocol.js']) {
   try {
     cp.execFileSync(process.execPath, ['--check', path.join(root, relativePath)], { stdio: 'pipe' });
   } catch (error) {
@@ -140,6 +140,17 @@ for (const icon of manifest.icons) {
   }
 }
 const workerSource = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+const translationProtocolSource = fs.readFileSync(path.join(root, 'js', 'pwa', 'translation-cache-protocol.js'), 'utf8');
+if (!workerSource.includes("importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js')")) {
+  console.error('Service worker must import the trusted translation manifest and cache protocol');
+  process.exit(1);
+}
+if (!translationProtocolSource.includes("'god4-bible-candidates-v1'") ||
+  !translationProtocolSource.includes("'god4-bible-ready-v1'") ||
+  !translationProtocolSource.includes("'/__god4/bible-cache/'")) {
+  console.error('Translation cache protocol names or key prefix changed unexpectedly');
+  process.exit(1);
+}
 const shellList = /const SHELL_ASSETS = \[([\s\S]*?)\n\];/.exec(workerSource);
 if (!shellList || /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js/.test(shellList[1])) {
   console.error('Service worker shell cache must not contain Bible translation bundles');
@@ -188,5 +199,5 @@ if (fs.existsSync(gnvFile)) {
 
 console.log(`Parsed ${references.length} asset reference(s); checked local files for existence.`);
 console.log(`Checked JavaScript syntax for ${javascript.length} file(s).`);
-console.log(`Validated ${manifest.icons.length} manifest icon(s) and the Phase 1 service worker.`);
+console.log(`Validated ${manifest.icons.length} manifest icon(s) and the PWA service worker.`);
 console.log(`Validated generated metadata for ${translationManifestGenerator.translations.length} Bible translations.`);

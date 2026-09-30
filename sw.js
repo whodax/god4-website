@@ -1,6 +1,8 @@
-/* GOD4.us Phase 1 offline shell. Bible translation payloads remain network-only. */
+/* GOD4.us Phase 2B offline shell and translation cache protocol. */
+importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
+
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + '33bda91-phase2a1';
+const SHELL_CACHE = CACHE_PREFIX + '33bda91-phase2b1';
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -46,6 +48,15 @@ const SHELL_ASSETS = [
   '/js/pwa/register.js'
 ];
 const SHELL_KEYS = new Set(SHELL_ASSETS);
+const bibleCacheProtocol = BibleTranslationCacheProtocol.create({
+  manifest:BibleTranslationManifest,
+  caches:caches,
+  fetch:function(request){ return fetch(request); },
+  crypto:crypto,
+  origin:self.location.origin,
+  Request:Request,
+  Response:Response
+});
 
 function requestKey(url){
   return url.pathname + url.search;
@@ -80,6 +91,16 @@ async function navigationResponse(request, cacheHome){
   }
 }
 
+function handleBibleProtocolMessage(event, operation){
+  var port = event.ports && event.ports[0];
+  var work = operation.catch(function(){
+    return {ok:false, error:'protocol-failure'};
+  }).then(function(result){
+    if(port) port.postMessage(result);
+  });
+  event.waitUntil(work);
+}
+
 self.addEventListener('install', function(event){
   event.waitUntil(caches.open(SHELL_CACHE).then(function(cache){
     return cache.addAll(SHELL_ASSETS);
@@ -95,7 +116,22 @@ self.addEventListener('activate', function(event){
 });
 
 self.addEventListener('message', function(event){
-  if(event.data && event.data.type === 'ACTIVATE_UPDATE') self.skipWaiting();
+  var data = event.data || {};
+  if(data.type === 'ACTIVATE_UPDATE'){
+    self.skipWaiting();
+    return;
+  }
+  if(data.type === 'BIBLE_TRANSLATION_ACQUIRE'){
+    handleBibleProtocolMessage(event, bibleCacheProtocol.acquire(data.id, data.revision));
+    return;
+  }
+  if(data.type === 'BIBLE_TRANSLATION_PROMOTE'){
+    handleBibleProtocolMessage(event, bibleCacheProtocol.promote(data.id, data.revision));
+    return;
+  }
+  if(data.type === 'BIBLE_TRANSLATION_STATUS'){
+    handleBibleProtocolMessage(event, bibleCacheProtocol.status(data.id));
+  }
 });
 
 self.addEventListener('fetch', function(event){
