@@ -22,6 +22,30 @@
     return mime === 'application/javascript' || mime === 'text/javascript';
   }
 
+  function isTrustedStructure(value){
+    if(!value || typeof value !== 'object' || Array.isArray(value)) return false;
+    if(Object.keys(value).sort().join(',') !== 'bookCount,books,chapterCount,verseCount' ||
+      !Number.isInteger(value.bookCount) || value.bookCount < 1 ||
+      !Number.isInteger(value.chapterCount) || value.chapterCount < 1 ||
+      !Number.isInteger(value.verseCount) || value.verseCount < 1 ||
+      !Array.isArray(value.books) || value.books.length !== value.bookCount) return false;
+    var bookIds = {};
+    var chapterCount = 0;
+    var verseCount = 0;
+    var valid = value.books.every(function(book){
+      if(!Array.isArray(book) || book.length !== 3 ||
+        typeof book[0] !== 'string' || !/^[a-z0-9-]+$/.test(book[0]) ||
+        !Number.isInteger(book[1]) || book[1] < 1 ||
+        !Number.isInteger(book[2]) || book[2] < 0) return false;
+      if(bookIds[book[0]]) return false;
+      bookIds[book[0]] = true;
+      chapterCount += book[1];
+      verseCount += book[2];
+      return true;
+    });
+    return valid && chapterCount === value.chapterCount && verseCount === value.verseCount;
+  }
+
   function digestBase64(bytes){
     var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
     var output = '';
@@ -56,7 +80,8 @@
         entry.revision !== revision || !isRevision(entry.revision) ||
         !Number.isInteger(entry.bytes) || entry.bytes < 1 ||
         typeof entry.integrity !== 'string' ||
-        !/^sha256-[A-Za-z0-9+/]+={0,2}$/.test(entry.integrity)) return null;
+        !/^sha256-[A-Za-z0-9+/]+={0,2}$/.test(entry.integrity) ||
+        !isTrustedStructure(entry.structure)) return null;
       return entry;
     }
 
@@ -77,6 +102,10 @@
 
     function activeKey(translationId){
       return cacheKey('active', translationId);
+    }
+
+    function activeScriptPath(translationId, revision){
+      return KEY_PREFIX + 'active-script/' + translationId + '/' + revision + '.js';
     }
 
     async function existingCache(name){
@@ -199,13 +228,14 @@
       var metadataKeys = metadata && typeof metadata === 'object'
         ? Object.keys(metadata).sort()
         : [];
-      if(metadataKeys.join(',') !== 'bytes,id,integrity,path,revision' ||
+      if(metadataKeys.join(',') !== 'bytes,id,integrity,path,revision,structure' ||
         metadata.id !== translationId ||
         metadata.path !== '/js/bible/' + translationId + '.js' ||
         !isRevision(metadata.revision) ||
         typeof metadata.integrity !== 'string' ||
         !/^sha256-[A-Za-z0-9+/]+={0,2}$/.test(metadata.integrity) ||
-        !Number.isInteger(metadata.bytes) || metadata.bytes < 1) return null;
+        !Number.isInteger(metadata.bytes) || metadata.bytes < 1 ||
+        !isTrustedStructure(metadata.structure)) return null;
 
       var ready = await readyCache.match(readyKey(translationId, metadata.revision));
       return ready ? {
@@ -213,7 +243,8 @@
         revision:metadata.revision,
         path:metadata.path,
         integrity:metadata.integrity,
-        bytes:metadata.bytes
+        bytes:metadata.bytes,
+        structure:metadata.structure
       } : null;
     }
 
@@ -225,6 +256,28 @@
         activeRevision:active ? active.revision : null,
         active:active
       };
+    }
+
+    async function serveCandidate(translationId, revision){
+      var entry = approvedEntry(translationId, revision);
+      if(!entry) return null;
+      var candidateCache = await existingCache(CANDIDATE_CACHE);
+      if(!candidateCache) return null;
+      var response = await candidateCache.match(candidateKey(translationId, revision));
+      if(!response) return null;
+      var verification = await verifyResponse(response.clone(), entry);
+      return verification.ok ? response : null;
+    }
+
+    async function serveActive(translationId, revision){
+      var active = await readActive(translationId);
+      if(!active || active.revision !== revision) return null;
+      var readyCache = await existingCache(READY_CACHE);
+      if(!readyCache) return null;
+      var response = await readyCache.match(readyKey(translationId, revision));
+      if(!response) return null;
+      var verification = await verifyResponse(response.clone(), active);
+      return verification.ok ? response : null;
     }
 
     async function promote(translationId, revision){
@@ -265,7 +318,8 @@
           revision:entry.revision,
           path:entry.path,
           integrity:entry.integrity,
-          bytes:entry.bytes
+          bytes:entry.bytes,
+          structure:entry.structure
         }), {
           status:200,
           headers:{'content-type':'application/json'}
@@ -307,9 +361,12 @@
       acquire:acquire,
       promote:promote,
       status:status,
+      serveCandidate:serveCandidate,
+      serveActive:serveActive,
       candidateKey:candidateKey,
       readyKey:readyKey,
       activeKey:activeKey,
+      activeScriptPath:activeScriptPath,
       cacheNames:{
         candidates:CANDIDATE_CACHE,
         ready:READY_CACHE

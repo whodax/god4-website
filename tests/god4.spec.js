@@ -479,6 +479,7 @@ test('Reader switches between WEB and ASV and persists ASV', async ({ page }) =>
   await page.locator('#bookSelect').selectOption('genesis');
   await expect(page.locator('#readerTranslation')).toHaveValue('asv');
   await expect(page.locator('#readerContent')).toContainText('Genesis 1');
+  await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
   await page.reload();
   await expect(page.locator('#readerTranslation')).toHaveValue('asv');
   await page.locator('#readerTranslation').selectOption('web');
@@ -683,10 +684,13 @@ test('RV is complete and independently available in Reader and Compare', async (
   expect(result.chapters.every((count) => count > 0)).toBeTruthy();
   await page.locator('#readerTranslation').selectOption('rv');
   await expect(page.locator('#readerTranslation')).toHaveValue('rv');
+  await expect(page.locator('#readerContent [data-translation-id="rv"]')).not.toHaveCount(0);
   await page.reload();
   await expect(page.locator('#readerTranslation')).toHaveValue('rv');
+  await expect(page.locator('#readerContent [data-translation-id="rv"]')).not.toHaveCount(0);
   await page.locator('#bookSelect').selectOption('john');
   await page.locator('#chapterSelect').selectOption('3');
+  await expect(page.locator('#readerContent [data-translation-id="rv"][data-book-id="john"][data-chapter="3"]')).not.toHaveCount(0);
   await expect(page.locator('#verseSelect')).toHaveValue('');
   await page.getByRole('button', { name: 'Compare' }).click();
   const left = page.locator('#compareGrid [data-compare-side="left"]');
@@ -3096,8 +3100,10 @@ test('User data storage validates malformed domains and keeps failed writes and 
 
 test('Reader restores a different book and chapter with the persisted translation', async ({ page }) => {
   await page.locator('#readerTranslation').selectOption('asv');
+  await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
   await page.locator('#bookSelect').selectOption('genesis');
   await page.locator('#chapterSelect').selectOption('3');
+  await expect(page.locator('#readerContent [data-translation-id="asv"][data-book-id="genesis"][data-chapter="3"]')).not.toHaveCount(0);
   expect(await page.evaluate(() => ({
     translation: localStorage.getItem('god4.translation'),
     position: JSON.parse(localStorage.getItem('god4.reader.position'))

@@ -1,10 +1,12 @@
 const fs = require('fs');
 const http = require('http');
 const path = require('path');
+const generator = require('../tools/generate-translation-manifest.js');
 
 const root = path.resolve(__dirname, '..');
 const headerSource = fs.readFileSync(path.join(root, '_headers'), 'utf8');
 const policy = /^\s+Content-Security-Policy:\s*(.+)$/m.exec(headerSource)?.[1];
+const translationPaths = new Set(generator.translations.map(entry => entry.path));
 if (!policy) throw new Error('Missing enforcing CSP header');
 
 const types = {
@@ -35,7 +37,8 @@ async function startCspServer() {
         'X-Content-Type-Options': 'nosniff',
         'Permissions-Policy': 'camera=(), geolocation=(), payment=(), usb=(), microphone=(self)'
       });
-      fs.createReadStream(file).pipe(response);
+      if(translationPaths.has(pathname)) response.end(generator.canonicalDeployBytes(fs.readFileSync(file)));
+      else fs.createReadStream(file).pipe(response);
     } catch {
       response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }).end('Not found');
     }

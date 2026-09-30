@@ -1,8 +1,8 @@
-/* GOD4.us Phase 2B offline shell and translation cache protocol. */
+/* GOD4.us Phase 2C offline shell and translation loader integration. */
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + '33bda91-phase2b1';
+const SHELL_CACHE = CACHE_PREFIX + '33bda91-phase2c1';
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -140,7 +140,25 @@ self.addEventListener('fetch', function(event){
 
   var url = new URL(request.url);
   if(isPrivateOrCloudflareRequest(request, url)) return;
-  if(url.origin === self.location.origin && TRANSLATION_PATHS.has(url.pathname)) return;
+  if(url.origin === self.location.origin){
+    var activeMatch = /^\/__god4\/bible-cache\/active-script\/([a-z]+)\/([a-f0-9]{16})\.js$/.exec(url.pathname);
+    if(activeMatch && !url.search){
+      event.respondWith(bibleCacheProtocol.serveActive(activeMatch[1], activeMatch[2]).then(function(response){
+        return response || new Response('Not found', {status:404, headers:{'content-type':'text/plain'}});
+      }));
+      return;
+    }
+    if(TRANSLATION_PATHS.has(url.pathname)){
+      var revision = url.searchParams.get('god4-revision');
+      var translationId = url.pathname.slice('/js/bible/'.length, -3);
+      if(revision && Array.from(url.searchParams.keys()).length === 1){
+        event.respondWith(bibleCacheProtocol.serveCandidate(translationId, revision).then(function(response){
+          return response || fetch(request);
+        }));
+      }
+      return;
+    }
+  }
 
   if(isAuthenticationCallback(url)){
     if(request.mode === 'navigate') event.respondWith(navigationResponse(request, false));

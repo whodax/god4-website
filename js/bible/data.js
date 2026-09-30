@@ -131,18 +131,19 @@ const BibleData = (function createBibleDataAccess(){
     return Boolean(getLibrary(translationId));
   }
 
-  function validateTranslation(translationId){
+  function validateTranslation(translationId, trustedStructure){
     var source = getLibrary(translationId);
     var manifest = typeof BibleTranslationManifest === 'undefined'
       ? null
       : BibleTranslationManifest[translationId];
-    if(!source || !manifest || manifest.id !== translationId ||
-      !manifest.structure || !Array.isArray(manifest.structure.books)) return false;
+    var structure = trustedStructure || (manifest && manifest.id === translationId
+      ? manifest.structure : null);
+    if(!source || !structure || !Array.isArray(structure.books)) return false;
 
     var bookIds = Object.keys(source);
-    var expectedBooks = manifest.structure.books;
-    if(bookIds.length !== manifest.structure.bookCount ||
-      expectedBooks.length !== manifest.structure.bookCount) return false;
+    var expectedBooks = structure.books;
+    if(bookIds.length !== structure.bookCount ||
+      expectedBooks.length !== structure.bookCount) return false;
 
     var chapterCount = 0;
     var verseCount = 0;
@@ -172,8 +173,8 @@ const BibleData = (function createBibleDataAccess(){
       verseCount += bookVerseCount;
     }
 
-    return chapterCount === manifest.structure.chapterCount &&
-      verseCount === manifest.structure.verseCount;
+    return chapterCount === structure.chapterCount &&
+      verseCount === structure.verseCount;
   }
 
   function listBooks(translationId){

@@ -80,7 +80,7 @@ test('service worker installs a versioned shell without requesting or caching tr
     }
     return {names, urls};
   });
-  expect(state.names).toEqual(['god4-shell-33bda91-phase2b1']);
+  expect(state.names).toEqual(['god4-shell-33bda91-phase2c1']);
   expect(state.urls).toContain('/offline');
   expect(state.urls).toContain('/js/app.js');
   expect(state.urls.some(url => translationPattern.test(url))).toBe(false);
@@ -115,7 +115,8 @@ test('worker translation protocol requires approved messages, promotes explicitl
     revision:metadata.revision,
     path:metadata.path,
     integrity:metadata.integrity,
-    bytes:metadata.bytes
+    bytes:metadata.bytes,
+    structure:metadata.structure
   };
 
   await expect(workerMessage(page, {
@@ -131,7 +132,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     url:'/js/bible/web.js'
   })).resolves.toMatchObject({ok:false, error:'not-approved'});
 
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-33bda91-phase2b1']);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-33bda91-phase2c1']);
   expect(await page.evaluate(() => BibleData.isTranslationLoaded('web'))).toBe(false);
 
   const candidate = await workerMessage(page, {
@@ -158,7 +159,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     return {names, candidates};
   });
   expect(candidateState.names).toEqual([
-    'god4-shell-33bda91-phase2b1',
+    'god4-shell-33bda91-phase2c1',
     'god4-bible-candidates-v1'
   ]);
   expect(candidateState.candidates).toEqual([
@@ -177,7 +178,8 @@ test('worker translation protocol requires approved messages, promotes explicitl
     url:'/not-used',
     path:'/caller-controlled.js',
     integrity:'sha256-caller-controlled',
-    bytes:1
+    bytes:1,
+    structure:{bookCount:999, chapterCount:999, verseCount:999, books:[]}
   });
   expect(promotion).toMatchObject({
     ok:true,
@@ -218,7 +220,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-33bda91-phase2b1');
+    const shell = await caches.open('god4-shell-33bda91-phase2c1');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
       .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
@@ -312,6 +314,11 @@ test('updates wait for explicit visitor action and the normal status is unobtrus
   const installHandler = /addEventListener\('install',[\s\S]*?\n\}\);/.exec(source)?.[0] || '';
   expect(installHandler).not.toContain('skipWaiting');
   expect(source).toContain("data.type === 'ACTIVATE_UPDATE'");
+  expect(source).toContain('serveActive(activeMatch[1], activeMatch[2])');
+
+  const loaderSource = fs.readFileSync(path.join(root, 'js', 'bible', 'translation-loader.js'), 'utf8');
+  expect(loaderSource).not.toMatch(/caches\s*\.|blob:|createObjectURL|eval\s*\(|innerHTML/);
+  expect(loaderSource).toContain('script.integrity = integrity');
 
   await page.goto('/');
   await expect(page.locator('#pwaStatus')).toBeHidden();

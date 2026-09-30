@@ -11,12 +11,10 @@ try {
   console.error(error.message);
   process.exit(1);
 }
-const approvedTranslationPaths = translationManifestGenerator.translations.map((translation) => translation.path);
 const loaderSource = fs.readFileSync(path.join(root, 'js', 'bible', 'translation-loader.js'), 'utf8');
-const loaderPaths = [...loaderSource.matchAll(/^\s{4}[a-z]+: '([^']+)'[,]?$/gm)]
-  .map((match) => '/' + match[1]);
-if (JSON.stringify(loaderPaths) !== JSON.stringify(approvedTranslationPaths)) {
-  console.error('Translation loader mapping does not match the generated manifest allowlist');
+if (!loaderSource.includes('BibleTranslationManifest[translationId]') ||
+  !loaderSource.includes("entry.path === '/js/bible/' + translationId + '.js'")) {
+  console.error('Translation loader must use the generated manifest and fixed same-origin translation paths');
   process.exit(1);
 }
 function htmlFiles(directory) {

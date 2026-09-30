@@ -93,7 +93,13 @@ function fixture(fetchImplementation) {
       path:'/js/bible/web.js',
       revision,
       integrity:'sha256-' + digest,
-      bytes:Buffer.byteLength(body)
+      bytes:Buffer.byteLength(body),
+      structure:{
+        bookCount:1,
+        chapterCount:1,
+        verseCount:1,
+        books:[['john', 1, 1]]
+      }
     }
   };
   const storage = new MemoryCacheStorage();
@@ -139,7 +145,8 @@ function activeMetadata(state, revision) {
     revision:revision || entry.revision,
     path:entry.path,
     integrity:entry.integrity,
-    bytes:entry.bytes
+    bytes:entry.bytes,
+    structure:entry.structure
   };
 }
 
@@ -224,11 +231,14 @@ test('verified candidate requires explicit promotion before it becomes active', 
 
   const candidates = await state.storage.open(protocolModule.cacheNames.candidates);
   expect(await candidates.match(state.protocol.candidateKey('web', state.revision))).toBeTruthy();
+  expect(await (await state.protocol.serveCandidate('web', state.revision)).text()).toBe(state.body);
+  expect(await state.protocol.serveActive('web', state.revision)).toBeNull();
 
   await expect(state.protocol.promote('web', state.revision, {
     path:'/caller-controlled.js',
     integrity:'sha256-caller-controlled',
-    bytes:1
+    bytes:1,
+    structure:{bookCount:999, chapterCount:999, verseCount:999, books:[]}
   })).resolves.toMatchObject({
     ok:true, state:'ready', previousRevision:null, cleanupWarnings:[]
   });
@@ -242,9 +252,33 @@ test('verified candidate requires explicit promotion before it becomes active', 
   expect(await candidates.match(state.protocol.candidateKey('web', state.revision))).toBeFalsy();
   const ready = await state.storage.open(protocolModule.cacheNames.ready);
   expect(await ready.match(state.protocol.readyKey('web', state.revision))).toBeTruthy();
+  expect(await (await state.protocol.serveActive('web', state.revision)).text()).toBe(state.body);
+  expect(await state.protocol.serveActive('web', 'aaaaaaaaaaaaaaaa')).toBeNull();
   const storedMetadata = await (await ready.match(state.protocol.activeKey('web'))).json();
   expect(storedMetadata).toEqual(activeMetadata(state));
-  expect(Object.keys(storedMetadata).sort()).toEqual(['bytes', 'id', 'integrity', 'path', 'revision']);
+  expect(Object.keys(storedMetadata).sort()).toEqual([
+    'bytes', 'id', 'integrity', 'path', 'revision', 'structure'
+  ]);
+});
+
+test('malformed active structure is rejected safely', async () => {
+  const state = fixture();
+  const ready = await state.storage.open(protocolModule.cacheNames.ready);
+  await ready.put(state.protocol.readyKey('web', state.revision), state.validResponse());
+  const malformed = activeMetadata(state);
+  malformed.structure = {bookCount:1, chapterCount:1, verseCount:1, books:[]};
+  await ready.put(state.protocol.activeKey('web'), new Response(JSON.stringify(malformed), {
+    status:200,
+    headers:{'content-type':'application/json'}
+  }));
+
+  await expect(state.protocol.status('web')).resolves.toEqual({
+    ok:true,
+    id:'web',
+    activeRevision:null,
+    active:null
+  });
+  await expect(state.protocol.serveActive('web', state.revision)).resolves.toBeNull();
 });
 
 test('failed replacement preserves old ready data and successful promotion removes it last', async () => {
