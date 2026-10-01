@@ -1,8 +1,8 @@
-/* GOD4.us Phase 2C offline shell and translation loader integration. */
+/* GOD4.us Phase 2D-A offline shell and translation management protocol. */
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + '33bda91-phase2c1';
+const SHELL_CACHE = CACHE_PREFIX + 'c089a89-phase2da1';
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -131,6 +131,14 @@ self.addEventListener('message', function(event){
   }
   if(data.type === 'BIBLE_TRANSLATION_STATUS'){
     handleBibleProtocolMessage(event, bibleCacheProtocol.status(data.id));
+    return;
+  }
+  if(data.type === 'BIBLE_TRANSLATION_LIST'){
+    handleBibleProtocolMessage(event, bibleCacheProtocol.list());
+    return;
+  }
+  if(data.type === 'BIBLE_TRANSLATION_REMOVE'){
+    handleBibleProtocolMessage(event, bibleCacheProtocol.remove(data.id));
   }
 });
 
