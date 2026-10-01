@@ -24,8 +24,6 @@ var BibleSpeech = (function createBibleSpeech(){
   function elements(){
     return {
       play: document.getElementById('readAloudPlay'),
-      pause: document.getElementById('readAloudPause'),
-      stop: document.getElementById('readAloudStop'),
       status: document.getElementById('readAloudStatus'),
       voice: document.getElementById('readAloudVoice'),
       speed: document.getElementById('readAloudSpeed')
@@ -129,13 +127,11 @@ var BibleSpeech = (function createBibleSpeech(){
   function updateControls(){
     var controls = elements();
     var unavailable = !supported();
-    if(controls.play) controls.play.disabled = unavailable || state === 'playing';
-    if(controls.pause){
-      controls.pause.disabled = unavailable || (state !== 'playing' && state !== 'paused');
-      controls.pause.textContent = state === 'paused' ? 'Resume' : 'Pause';
-      controls.pause.setAttribute('aria-label', state === 'paused' ? 'Resume reading aloud' : 'Pause reading aloud');
+    if(controls.play){
+      controls.play.disabled = unavailable;
+      controls.play.textContent = state === 'playing' ? 'Stop' : 'Play';
+      controls.play.setAttribute('aria-label', state === 'playing' ? 'Stop reading aloud' : 'Play reading aloud');
     }
-    if(controls.stop) controls.stop.disabled = unavailable || (state !== 'playing' && state !== 'paused');
     if(controls.status){
       controls.status.textContent = unavailable ? 'Read aloud is unavailable in this browser.' : state === 'playing' ? statusMessage || 'Reading aloud.' : state === 'paused' ? 'Reading aloud paused.' : completionMessage || 'Ready to read aloud.';
     }

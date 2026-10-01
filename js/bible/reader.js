@@ -1019,9 +1019,10 @@ function initializeReaderControls(){
     ['bookSelect', 'change', function(){ runWithBibleExperience(changeReaderBook); }],
     ['chapterSelect', 'change', function(){ runWithBibleExperience(loadPassage); }],
     ['verseSelect', 'change', function(event){ runWithBibleExperience(function(){ selectReaderVerse(event.target.value); }); }],
-    ['readAloudPlay', 'click', function(){ runWithBibleExperience(playReader); }],
-    ['readAloudPause', 'click', pauseResumeReadAloud],
-    ['readAloudStop', 'click', stopReadAloud],
+    ['readAloudPlay', 'click', function(){
+      if(typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() === 'playing') stopReadAloud();
+      else runWithBibleExperience(playReader);
+    }],
     ['readAloudVoice', 'change', function(event){ BibleSpeech.setVoice(event.target.value); }],
     ['readAloudSpeed', 'change', function(event){ BibleSpeech.setSpeed(event.target.value); }]
   ].forEach(function(binding){
@@ -1065,6 +1066,28 @@ if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener 
     onVerseComplete: completePlaybackVerse,
     onEnd: clearSpokenVerseHighlight
   });
+  var moreTrigger = document.getElementById('readerMoreTrigger');
+  var secondaryControls = document.getElementById('readerSecondaryControls');
+  if(moreTrigger && secondaryControls){
+    function closeReaderMore(){
+      secondaryControls.hidden = true;
+      moreTrigger.setAttribute('aria-expanded', 'false');
+      moreTrigger.focus();
+    }
+    moreTrigger.addEventListener('click', function(){
+      var opening = moreTrigger.getAttribute('aria-expanded') !== 'true';
+      if(!opening){ closeReaderMore(); return; }
+      secondaryControls.hidden = false;
+      moreTrigger.setAttribute('aria-expanded', 'true');
+    });
+    function closeReaderMoreOnEscape(event){
+      if(event.key !== 'Escape' || moreTrigger.getAttribute('aria-expanded') !== 'true') return;
+      event.preventDefault();
+      closeReaderMore();
+    }
+    moreTrigger.addEventListener('keydown', closeReaderMoreOnEscape);
+    secondaryControls.addEventListener('keydown', closeReaderMoreOnEscape);
+  }
 }
 if(typeof WordStudyController !== 'undefined') WordStudyController.initialize();
 if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', function(){ initializeReaderControls(); initializeVoiceCommands(); }, { once: true });

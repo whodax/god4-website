@@ -310,13 +310,14 @@ test('Read Aloud, voice commands, and same-origin Word Study work without CSP vi
   await page.goto(server.origin + '/');
   const policy = (await page.request.get(server.origin + '/')).headers()['permissions-policy'];
   expect(policy).toContain('microphone=(self)');
+  await page.locator('#readerMoreTrigger').click();
   await page.locator('#readAloudVoice').selectOption({label:'Mock Voice'});
   await page.locator('#readAloudSpeed').selectOption('1.25');
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
   await page.locator('#readerContent [data-verse-speech="2"]').click();
   expect(await page.evaluate(() => window.__spoken.length)).toBeGreaterThan(0);
-  await page.locator('#readAloudStop').click();
+  await page.locator('#readAloudPlay').click();
   await page.locator('[data-voice-command-button]').click();
   await expect(page.locator('[data-voice-command-button]')).toHaveAttribute('aria-pressed','true');
   expect(await page.evaluate(() => window.__recognitionStarted)).toBe(true);
