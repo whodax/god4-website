@@ -131,6 +131,52 @@ const BibleData = (function createBibleDataAccess(){
     return Boolean(getLibrary(translationId));
   }
 
+  function validateTranslation(translationId, trustedStructure){
+    var source = getLibrary(translationId);
+    var manifest = typeof BibleTranslationManifest === 'undefined'
+      ? null
+      : BibleTranslationManifest[translationId];
+    var structure = trustedStructure || (manifest && manifest.id === translationId
+      ? manifest.structure : null);
+    if(!source || !structure || !Array.isArray(structure.books)) return false;
+
+    var bookIds = Object.keys(source);
+    var expectedBooks = structure.books;
+    if(bookIds.length !== structure.bookCount ||
+      expectedBooks.length !== structure.bookCount) return false;
+
+    var chapterCount = 0;
+    var verseCount = 0;
+    for(var bookIndex = 0; bookIndex < expectedBooks.length; bookIndex++){
+      var expectedBook = expectedBooks[bookIndex];
+      var bookId = expectedBook[0];
+      var expectedChapters = expectedBook[1];
+      var expectedVerses = expectedBook[2];
+      var book = source[bookId];
+      if(bookIds[bookIndex] !== bookId || !book || typeof book.name !== 'string' ||
+        !book.name.trim() || book.chapters !== expectedChapters) return false;
+
+      var numberedChapters = Object.keys(book).filter(function(key){
+        return /^\d+$/.test(key);
+      });
+      if(numberedChapters.length !== expectedChapters) return false;
+
+      var bookVerseCount = 0;
+      for(var chapterNumber = 1; chapterNumber <= expectedChapters; chapterNumber++){
+        var chapter = book[chapterNumber];
+        if(!chapter || !Array.isArray(chapter.verses) ||
+          chapter.verses.some(function(verse){ return typeof verse !== 'string'; })) return false;
+        bookVerseCount += chapter.verses.length;
+      }
+      if(bookVerseCount !== expectedVerses) return false;
+      chapterCount += expectedChapters;
+      verseCount += bookVerseCount;
+    }
+
+    return chapterCount === structure.chapterCount &&
+      verseCount === structure.verseCount;
+  }
+
   function listBooks(translationId){
     var source = getLibrary(translationId);
     if(!source) return [];
@@ -199,6 +245,7 @@ const BibleData = (function createBibleDataAccess(){
   return {
     listTranslations: listTranslations,
     isTranslationLoaded: isTranslationLoaded,
+    validateTranslation: validateTranslation,
     listBooks: listBooks,
     getChapterCount: getChapterCount,
     getChapter: getChapter,

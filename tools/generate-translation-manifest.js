@@ -1,0 +1,189 @@
+const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
+const vm = require('vm');
+
+const root = path.resolve(__dirname, '..');
+const outputPath = path.join(root, 'js', 'bible', 'translation-manifest.js');
+const translations = Object.freeze([
+  {id: 'web', path: '/js/bible/web.js', variable: 'webLibrary'},
+  {id: 'asv', path: '/js/bible/asv.js', variable: 'asvLibrary'},
+  {id: 'kjv', path: '/js/bible/kjv.js', variable: 'kjvLibrary'},
+  {id: 'ylt', path: '/js/bible/ylt.js', variable: 'yltLibrary'},
+  {id: 'dby', path: '/js/bible/dby.js', variable: 'dbyLibrary'},
+  {id: 'webster', path: '/js/bible/webster.js', variable: 'websterLibrary'},
+  {id: 'rv', path: '/js/bible/rv.js', variable: 'rvLibrary'},
+  {id: 'gnv', path: '/js/bible/gnv.js', variable: 'gnvLibrary'}
+]);
+
+function approvedFile(definition){
+  const relativePath = definition.path.replace(/^\//, '');
+  const resolved = path.resolve(root, relativePath);
+  const bibleDirectory = path.join(root, 'js', 'bible') + path.sep;
+  if(!resolved.startsWith(bibleDirectory) || path.extname(resolved) !== '.js'){
+    throw new Error(`Unexpected translation mapping: ${definition.id} -> ${definition.path}`);
+  }
+  if(!fs.existsSync(resolved)){
+    throw new Error(`Missing approved translation bundle: ${definition.path}`);
+  }
+  return resolved;
+}
+
+function readLibrary(definition, source){
+  const context = vm.createContext(Object.create(null));
+  vm.runInContext(
+    source + `\n;globalThis.__god4TranslationLibrary = ${definition.variable};`,
+    context,
+    {filename: definition.path, timeout: 30000}
+  );
+  const library = context.__god4TranslationLibrary;
+  if(!library || typeof library !== 'object' || Array.isArray(library)){
+    throw new Error(`Invalid translation library: ${definition.id}`);
+  }
+  return library;
+}
+
+function structuralMetadata(definition, library){
+  const bookIds = Object.keys(library);
+  if(bookIds.length !== 66){
+    throw new Error(`${definition.id} must contain exactly 66 books; found ${bookIds.length}`);
+  }
+
+  let chapterCount = 0;
+  let verseCount = 0;
+  const books = bookIds.map((bookId) => {
+    const book = library[bookId];
+    if(!book || typeof book !== 'object' || typeof book.name !== 'string' ||
+      !book.name.trim() || !Number.isInteger(book.chapters) || book.chapters < 1){
+      throw new Error(`Invalid book metadata in ${definition.id}: ${bookId}`);
+    }
+
+    let bookVerseCount = 0;
+    for(let chapterNumber = 1; chapterNumber <= book.chapters; chapterNumber++){
+      const chapter = book[chapterNumber];
+      if(!chapter || !Array.isArray(chapter.verses) ||
+        chapter.verses.some((verse) => typeof verse !== 'string')){
+        throw new Error(`Invalid chapter data in ${definition.id}: ${bookId} ${chapterNumber}`);
+      }
+      bookVerseCount += chapter.verses.length;
+    }
+
+    chapterCount += book.chapters;
+    verseCount += bookVerseCount;
+    return [bookId, book.chapters, bookVerseCount];
+  });
+
+  return {
+    bookCount: books.length,
+    chapterCount,
+    verseCount,
+    books
+  };
+}
+
+function canonicalDeployBytes(input){
+  const bytes = Buffer.isBuffer(input) ? input : Buffer.from(input);
+  let crlfCount = 0;
+  for(let index = 0; index + 1 < bytes.length; index++){
+    if(bytes[index] === 13 && bytes[index + 1] === 10){
+      crlfCount++;
+      index++;
+    }
+  }
+  if(crlfCount === 0) return Buffer.from(bytes);
+
+  const canonical = Buffer.allocUnsafe(bytes.length - crlfCount);
+  let outputIndex = 0;
+  for(let index = 0; index < bytes.length; index++){
+    if(bytes[index] === 13 && bytes[index + 1] === 10){
+      canonical[outputIndex++] = 10;
+      index++;
+    } else {
+      canonical[outputIndex++] = bytes[index];
+    }
+  }
+  return canonical;
+}
+
+function contentMetadata(input){
+  const canonicalBytes = canonicalDeployBytes(input);
+  const digest = crypto.createHash('sha256').update(canonicalBytes).digest();
+  return {
+    canonicalBytes,
+    source: canonicalBytes.toString('utf8'),
+    revision: digest.toString('hex').slice(0, 16),
+    integrity: `sha256-${digest.toString('base64')}`,
+    byteLength: canonicalBytes.length
+  };
+}
+
+function buildManifest(){
+  const ids = translations.map((translation) => translation.id);
+  if(new Set(ids).size !== translations.length){
+    throw new Error('Duplicate translation ID in the approved mapping');
+  }
+
+  return translations.reduce((manifest, definition) => {
+    const file = approvedFile(definition);
+    const content = contentMetadata(fs.readFileSync(file));
+    const library = readLibrary(definition, content.source);
+
+    manifest[definition.id] = {
+      id: definition.id,
+      path: definition.path,
+      revision: content.revision,
+      integrity: content.integrity,
+      bytes: content.byteLength,
+      structure: structuralMetadata(definition, library)
+    };
+    return manifest;
+  }, {});
+}
+
+function renderManifest(manifest){
+  return [
+    '/* Generated by tools/generate-translation-manifest.js. Do not edit by hand. */',
+    'var BibleTranslationManifest = Object.freeze(' + JSON.stringify(manifest, null, 2) + ');',
+    ''
+  ].join('\n');
+}
+
+function expectedOutput(){
+  return renderManifest(buildManifest());
+}
+
+function validateManifest(manifest){
+  if(renderManifest(manifest) !== expectedOutput()){
+    throw new Error('Translation manifest metadata does not match canonical deploy bytes');
+  }
+  return true;
+}
+
+function checkOutput(){
+  if(!fs.existsSync(outputPath) || fs.readFileSync(outputPath, 'utf8') !== expectedOutput()){
+    throw new Error('js/bible/translation-manifest.js is stale; run npm run generate:translation-manifest');
+  }
+}
+
+if(require.main === module){
+  if(process.argv.slice(2).some((argument) => argument !== '--check')){
+    throw new Error('Only the optional --check argument is supported');
+  }
+  if(process.argv.includes('--check')){
+    checkOutput();
+  } else {
+    fs.writeFileSync(outputPath, expectedOutput(), 'utf8');
+    console.log(`Wrote ${path.relative(root, outputPath)} for ${translations.length} translations.`);
+  }
+}
+
+module.exports = {
+  translations,
+  canonicalDeployBytes,
+  contentMetadata,
+  buildManifest,
+  renderManifest,
+  expectedOutput,
+  validateManifest,
+  checkOutput
+};

@@ -8,7 +8,7 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
     ...devices['Desktop Chrome'],
   },
-  webServer: {command: 'npx.cmd http-server . -p 4173 -c-1',
+  webServer: {command: 'node tests/static-server.js',
     url: 'http://127.0.0.1:4173',
     reuseExistingServer: !process.env.CI,
   },
