@@ -1,8 +1,8 @@
-/* GOD4.us Phase 2D-A offline shell and translation management protocol. */
+/* GOD4.us Phase 2D-B offline shell and translation management UI. */
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'c089a89-phase2da1';
+const SHELL_CACHE = CACHE_PREFIX + 'c089a89-phase2db1';
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -45,6 +45,7 @@ const SHELL_ASSETS = [
   '/js/auth/supabase-provider.js',
   '/js/auth/auth.js',
   '/js/auth/account-ui.js?v=20260924-1',
+  '/js/pwa/offline-translations.js',
   '/js/pwa/register.js'
 ];
 const SHELL_KEYS = new Set(SHELL_ASSETS);

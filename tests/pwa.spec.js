@@ -80,9 +80,10 @@ test('service worker installs a versioned shell without requesting or caching tr
     }
     return {names, urls};
   });
-  expect(state.names).toEqual(['god4-shell-c089a89-phase2da1']);
+  expect(state.names).toEqual(['god4-shell-c089a89-phase2db1']);
   expect(state.urls).toContain('/offline');
   expect(state.urls).toContain('/js/app.js');
+  expect(state.urls).toContain('/js/pwa/offline-translations.js');
   expect(state.urls.some(url => translationPattern.test(url))).toBe(false);
 
   const fallback = await page.evaluate(async () => {
@@ -132,7 +133,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'
   ]);
   expect(freshList.items.every(item => item.state === 'not-retained' && item.active === null)).toBe(true);
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2da1']);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2db1']);
   await expect(workerMessage(page, {
     type:'BIBLE_TRANSLATION_REMOVE',
     id:'not-approved'
@@ -151,7 +152,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     url:'/js/bible/web.js'
   })).resolves.toMatchObject({ok:false, error:'not-approved'});
 
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2da1']);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2db1']);
   expect(await page.evaluate(() => BibleData.isTranslationLoaded('web'))).toBe(false);
 
   const candidate = await workerMessage(page, {
@@ -178,7 +179,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     return {names, candidates};
   });
   expect(candidateState.names).toEqual([
-    'god4-shell-c089a89-phase2da1',
+    'god4-shell-c089a89-phase2db1',
     'god4-bible-candidates-v1'
   ]);
   expect(candidateState.candidates).toEqual([
@@ -239,7 +240,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-c089a89-phase2da1');
+    const shell = await caches.open('god4-shell-c089a89-phase2db1');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
       .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
@@ -295,7 +296,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     id:'web'
   })).resolves.toMatchObject({activeRevision:null, active:null});
   const postRemovalState = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-c089a89-phase2da1');
+    const shell = await caches.open('god4-shell-c089a89-phase2db1');
     const ready = await caches.open('god4-bible-ready-v1');
     return {
       shellHasApp:Boolean(await shell.match('/js/app.js')),

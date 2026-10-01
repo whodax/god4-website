@@ -90,3 +90,13 @@ Phase 2D-A adds protocol and loader foundations for later user-facing management
 The shell cache is `god4-shell-c089a89-phase2da1`. A new cache name is required because the shell-cached translation loader changed. This keeps the new loader paired with the new worker protocol while the previous active worker continues serving its existing cache until the visitor explicitly activates the waiting update.
 
 Browser storage estimates and user-facing Offline Bibles controls remain deferred to Phase 2D-B.
+
+## Phase 2D-B Offline Bibles controls
+
+Phase 2D-B adds an **Offline Bibles** button to the Study Desk and an accessible native dialog for explicitly retaining, updating, and removing individual translations. Opening the dialog performs only `BIBLE_TRANSLATION_LIST`; it never downloads a translation or creates a Bible cache. Download and update actions use `BibleTranslationLoader.retain(id)`, while removal uses the worker-owned `BIBLE_TRANSLATION_REMOVE` operation.
+
+The dialog reports exact retained Bible bytes by summing validated `active.bytes` values returned by LIST. A separate `navigator.storage.estimate()` value describes approximate origin-wide browser storage when that API is available. Page code does not inspect Cache Storage. Download and update actions are disabled while offline, removal remains available, and reconnection never starts an operation automatically.
+
+The dialog uses native modal behavior, explicit focus containment, heading focus on open, trigger focus restoration, per-row busy states, and polite status announcements. An older controlling worker receives no automatic activation or reload; the dialog asks the visitor to apply the pending app update through the existing update control.
+
+The Phase 2D-B shell cache is `god4-shell-c089a89-phase2db1`. It adds `/js/pwa/offline-translations.js` and keeps the existing explicit `ACTIVATE_UPDATE` lifecycle.
