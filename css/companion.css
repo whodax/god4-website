@@ -24,7 +24,7 @@
     font-family:'Cormorant Garamond','Cormorant Garamond Fallback',serif;
     font-size:20px;font-weight:600;color:var(--gold);letter-spacing:0.5px;
   }
-  .bs-nav{display:flex;gap:4px;align-items:flex-start;}
+  .bs-nav{display:flex;flex-wrap:wrap;gap:4px;align-items:flex-start;justify-content:flex-end;}
   .compare-tab-control{display:flex;flex-direction:column;align-items:center;}
   .bs-btn{
     background:transparent;
@@ -366,6 +366,38 @@
     font-family:'Inter','Inter Fallback',sans-serif;
   }
 
+  /* Offline translation management */
+  .offline-bibles-dialog{
+    width:min(620px,calc(100vw - 32px));max-height:calc(100dvh - 32px);
+    padding:26px;border:1px solid var(--line);border-radius:3px;
+    background:var(--vellum-card);color:var(--ink);box-shadow:var(--shadow);overflow:auto;
+  }
+  .offline-bibles-dialog::backdrop{background:rgba(27,42,68,.55);}
+  .offline-bibles-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;}
+  .offline-bibles-heading h2{margin:0;font:600 28px 'Cormorant Garamond','Cormorant Garamond Fallback',serif;}
+  .offline-bibles-close{border:0;background:none;color:var(--ink-soft);font-size:24px;cursor:pointer;min-width:40px;min-height:40px;}
+  .offline-bibles-dialog > p{line-height:1.5;}
+  .offline-bibles-storage{margin:18px 0;padding:12px 14px;border:1px solid var(--line);background:var(--vellum);}
+  .offline-bibles-storage p{margin:0;color:var(--ink-soft);font:12px/1.6 'Inter','Inter Fallback',sans-serif;}
+  .offline-bibles-list{display:grid;gap:8px;}
+  .offline-bibles-row{
+    display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px 16px;
+    padding:12px 14px;border:1px solid var(--line);border-radius:2px;background:var(--vellum);
+  }
+  .offline-bibles-name{margin:0;font:600 17px/1.25 'Cormorant Garamond','Cormorant Garamond Fallback',serif;overflow-wrap:anywhere;}
+  .offline-bibles-row-status{margin:3px 0 0;color:var(--ink-soft);font:12px/1.4 'Inter','Inter Fallback',sans-serif;}
+  .offline-bibles-action{
+    min-width:92px;min-height:40px;padding:8px 12px;border:1px solid var(--ink);border-radius:2px;
+    background:transparent;color:var(--ink);cursor:pointer;font:12px 'Inter','Inter Fallback',sans-serif;
+  }
+  .offline-bibles-action:hover:not(:disabled){border-color:var(--oxblood);color:var(--oxblood);}
+  .offline-bibles-action:disabled{opacity:.55;cursor:not-allowed;}
+  .offline-bibles-row[aria-busy="true"]{border-color:var(--gold);}
+  .offline-bibles-status{min-height:24px;margin:14px 0 0;color:var(--ink-soft);font:13px/1.5 'Inter','Inter Fallback',sans-serif;}
+  .offline-bibles-close:focus-visible,.offline-bibles-action:focus-visible,#offlineBiblesTrigger:focus-visible{
+    outline:2px solid var(--gold);outline-offset:2px;
+  }
+
   @media (max-width:860px){
     .companion-section{padding:0 22px;}
     .compare-grid{grid-template-columns:1fr;}
@@ -379,4 +411,9 @@
 
   @media (max-width:620px){
     .compare-selector-row{grid-template-columns:1fr;width:min(100%,260px);}
+    .bs-header{align-items:flex-start;flex-direction:column;}
+    .bs-nav{width:100%;justify-content:flex-start;}
+    .offline-bibles-dialog{padding:20px;}
+    .offline-bibles-row{grid-template-columns:minmax(0,1fr);}
+    .offline-bibles-action{width:100%;}
   }

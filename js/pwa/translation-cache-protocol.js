@@ -72,17 +72,22 @@
     var ResponseConstructor = options.Response || Response;
     var inFlight = new Map();
 
-    function approvedEntry(translationId, revision){
+    function approvedCurrentEntry(translationId){
       if(APPROVED_IDS.indexOf(translationId) === -1) return null;
       var entry = manifest && manifest[translationId];
       if(!entry || entry.id !== translationId ||
         entry.path !== '/js/bible/' + translationId + '.js' ||
-        entry.revision !== revision || !isRevision(entry.revision) ||
+        !isRevision(entry.revision) ||
         !Number.isInteger(entry.bytes) || entry.bytes < 1 ||
         typeof entry.integrity !== 'string' ||
         !/^sha256-[A-Za-z0-9+/]+={0,2}$/.test(entry.integrity) ||
         !isTrustedStructure(entry.structure)) return null;
       return entry;
+    }
+
+    function approvedEntry(translationId, revision){
+      var entry = approvedCurrentEntry(translationId);
+      return entry && entry.revision === revision ? entry : null;
     }
 
     function cacheKey(kind, translationId, revision){
@@ -106,6 +111,21 @@
 
     function activeScriptPath(translationId, revision){
       return KEY_PREFIX + 'active-script/' + translationId + '/' + revision + '.js';
+    }
+
+    function parsePayloadKey(key, kind){
+      var url;
+      try {
+        url = new URL(typeof key === 'string' ? key : key.url, origin);
+      } catch(error){
+        return null;
+      }
+      if(url.origin !== origin || url.search || url.hash) return null;
+      var match = /^\/__god4\/bible-cache\/(candidate|ready)\/([a-z]+)\/([a-f0-9]{16})$/.exec(
+        url.pathname
+      );
+      if(!match || match[1] !== kind || APPROVED_IDS.indexOf(match[2]) === -1) return null;
+      return {kind:match[1], id:match[2], revision:match[3]};
     }
 
     async function existingCache(name){
@@ -258,6 +278,89 @@
       };
     }
 
+    async function list(){
+      var items = await Promise.all(APPROVED_IDS.map(async function(translationId){
+        var entry = approvedCurrentEntry(translationId);
+        var active = await readActive(translationId);
+        return {
+          id:translationId,
+          currentRevision:entry ? entry.revision : null,
+          currentBytes:entry ? entry.bytes : null,
+          active:active,
+          state:!active ? 'not-retained' :
+            (entry && active.revision === entry.revision ? 'current' : 'update-available')
+        };
+      }));
+      return {ok:true, items:items};
+    }
+
+    async function removeEntries(cache, kind, translationId, warning, cleanupWarnings){
+      if(!cache) return;
+      var keys;
+      try {
+        keys = await cache.keys();
+      } catch(error){
+        cleanupWarnings.push(warning);
+        return;
+      }
+      for(var index = 0; index < keys.length; index++){
+        var parsed = parsePayloadKey(keys[index], kind);
+        if(!parsed || parsed.id !== translationId) continue;
+        try {
+          if(!await cache.delete(keys[index]) && cleanupWarnings.indexOf(warning) === -1){
+            cleanupWarnings.push(warning);
+          }
+        } catch(error){
+          if(cleanupWarnings.indexOf(warning) === -1) cleanupWarnings.push(warning);
+        }
+      }
+    }
+
+    async function remove(translationId){
+      if(APPROVED_IDS.indexOf(translationId) === -1){
+        return {ok:false, id:translationId, error:'not-approved'};
+      }
+
+      var readyCache = await existingCache(READY_CACHE);
+      var candidateCache = await existingCache(CANDIDATE_CACHE);
+      if(!readyCache && !candidateCache){
+        return {
+          ok:true,
+          id:translationId,
+          state:'not-retained',
+          removedRevision:null,
+          cleanupWarnings:[]
+        };
+      }
+
+      var active = await readActive(translationId);
+      if(readyCache){
+        var pointer = await readyCache.match(activeKey(translationId));
+        if(pointer){
+          try {
+            if(!await readyCache.delete(activeKey(translationId))){
+              return {ok:false, id:translationId, error:'active-delete'};
+            }
+          } catch(error){
+            return {ok:false, id:translationId, error:'active-delete'};
+          }
+        }
+      }
+
+      var cleanupWarnings = [];
+      await removeEntries(candidateCache, 'candidate', translationId,
+        'candidate-delete', cleanupWarnings);
+      await removeEntries(readyCache, 'ready', translationId,
+        'ready-delete', cleanupWarnings);
+      return {
+        ok:true,
+        id:translationId,
+        state:'not-retained',
+        removedRevision:active ? active.revision : null,
+        cleanupWarnings:cleanupWarnings
+      };
+    }
+
     async function serveCandidate(translationId, revision){
       var entry = approvedEntry(translationId, revision);
       if(!entry) return null;
@@ -361,6 +464,8 @@
       acquire:acquire,
       promote:promote,
       status:status,
+      list:list,
+      remove:remove,
       serveCandidate:serveCandidate,
       serveActive:serveActive,
       candidateKey:candidateKey,

@@ -87,10 +87,9 @@ function fixture(fetchImplementation) {
   const body = 'const fixtureTranslation = true;\n';
   const digest = createHash('sha256').update(body).digest('base64');
   const revision = '0123456789abcdef';
-  const manifest = {
-    web: {
-      id:'web',
-      path:'/js/bible/web.js',
+  const manifest = Object.fromEntries(protocolModule.approvedIds.map(id => [id, {
+      id,
+      path:'/js/bible/' + id + '.js',
       revision,
       integrity:'sha256-' + digest,
       bytes:Buffer.byteLength(body),
@@ -100,8 +99,7 @@ function fixture(fetchImplementation) {
         verseCount:1,
         books:[['john', 1, 1]]
       }
-    }
-  };
+    }]));
   const storage = new MemoryCacheStorage();
   let fetchCount = 0;
   let currentFetch = fetchImplementation || (() => Promise.resolve(validResponse(body)));
@@ -138,8 +136,8 @@ function fixture(fetchImplementation) {
   };
 }
 
-function activeMetadata(state, revision) {
-  const entry = state.manifest.web;
+function activeMetadata(state, revision, translationId = 'web') {
+  const entry = state.manifest[translationId];
   return {
     id:entry.id,
     revision:revision || entry.revision,
@@ -150,11 +148,11 @@ function activeMetadata(state, revision) {
   };
 }
 
-async function seedActive(state, revision) {
+async function seedActive(state, revision, translationId = 'web') {
   const ready = await state.storage.open(protocolModule.cacheNames.ready);
-  await ready.put(state.protocol.readyKey('web', revision), state.validResponse());
-  await ready.put(state.protocol.activeKey('web'), new Response(JSON.stringify(
-    activeMetadata(state, revision)
+  await ready.put(state.protocol.readyKey(translationId, revision), state.validResponse());
+  await ready.put(state.protocol.activeKey(translationId), new Response(JSON.stringify(
+    activeMetadata(state, revision, translationId)
   ), {status:200, headers:{'content-type':'application/json'}}));
 }
 
@@ -279,6 +277,164 @@ test('malformed active structure is rejected safely', async () => {
     active:null
   });
   await expect(state.protocol.serveActive('web', state.revision)).resolves.toBeNull();
+});
+
+test('list reports all approved translations without creating caches or trusting caller data', async () => {
+  const state = fixture();
+
+  const result = await state.protocol.list({
+    revision:'caller-controlled',
+    path:'/caller-controlled.js',
+    bytes:1,
+    url:'https://example.com/not-used.js',
+    method:'POST',
+    headers:{authorization:'Bearer not-used'}
+  });
+
+  expect(result.ok).toBe(true);
+  expect(result.items.map(item => item.id)).toEqual(protocolModule.approvedIds);
+  expect(result.items).toEqual(protocolModule.approvedIds.map(id => ({
+    id,
+    currentRevision:state.manifest[id].revision,
+    currentBytes:state.manifest[id].bytes,
+    active:null,
+    state:'not-retained'
+  })));
+  expect(await state.storage.keys()).toEqual([]);
+  expect(state.fetchCount()).toBe(0);
+});
+
+test('list distinguishes current, update-available, malformed, and evicted active records', async () => {
+  const state = fixture();
+  const oldRevision = 'aaaaaaaaaaaaaaaa';
+  await seedActive(state, state.revision, 'web');
+  await seedActive(state, oldRevision, 'asv');
+
+  const ready = await state.storage.open(protocolModule.cacheNames.ready);
+  const malformed = activeMetadata(state, state.revision, 'kjv');
+  malformed.structure = {bookCount:1, chapterCount:1, verseCount:1, books:[]};
+  await ready.put(state.protocol.readyKey('kjv', state.revision), state.validResponse());
+  await ready.put(state.protocol.activeKey('kjv'), new Response(JSON.stringify(malformed), {
+    status:200,
+    headers:{'content-type':'application/json'}
+  }));
+  await ready.put(state.protocol.activeKey('ylt'), new Response(JSON.stringify(
+    activeMetadata(state, state.revision, 'ylt')
+  ), {status:200, headers:{'content-type':'application/json'}}));
+  await ready.put(state.protocol.readyKey('dby', state.revision), state.validResponse());
+
+  const result = await state.protocol.list();
+  expect(result.items.find(item => item.id === 'web')).toMatchObject({
+    state:'current', active:activeMetadata(state, state.revision, 'web')
+  });
+  expect(result.items.find(item => item.id === 'asv')).toMatchObject({
+    state:'update-available', active:activeMetadata(state, oldRevision, 'asv')
+  });
+  for(const id of ['kjv', 'ylt', 'dby']) {
+    expect(result.items.find(item => item.id === id)).toMatchObject({
+      state:'not-retained', active:null
+    });
+  }
+});
+
+test('remove rejects unknown IDs and a fresh no-op does not create caches', async () => {
+  const state = fixture();
+
+  await expect(state.protocol.remove('not-approved')).resolves.toEqual({
+    ok:false,
+    id:'not-approved',
+    error:'not-approved'
+  });
+  await expect(state.protocol.remove('web', {
+    revision:state.revision,
+    path:'/caller-controlled.js',
+    url:'https://example.com/not-used.js',
+    method:'POST',
+    authorization:'Bearer not-used'
+  })).resolves.toEqual({
+    ok:true,
+    id:'web',
+    state:'not-retained',
+    removedRevision:null,
+    cleanupWarnings:[]
+  });
+  expect(await state.storage.keys()).toEqual([]);
+  expect(state.fetchCount()).toBe(0);
+});
+
+test('remove commits one translation without touching another translation or the shell cache', async () => {
+  const state = fixture();
+  await seedActive(state, state.revision, 'web');
+  await seedActive(state, state.revision, 'webster');
+  const candidates = await state.storage.open(protocolModule.cacheNames.candidates);
+  await candidates.put(state.protocol.candidateKey('web', state.revision), state.validResponse());
+  await candidates.put(state.protocol.candidateKey('webster', state.revision), state.validResponse());
+  const shell = await state.storage.open('god4-shell-test');
+  await shell.put('https://example.test/js/app.js', new Response('shell'));
+
+  await expect(state.protocol.remove('web')).resolves.toEqual({
+    ok:true,
+    id:'web',
+    state:'not-retained',
+    removedRevision:state.revision,
+    cleanupWarnings:[]
+  });
+  await expect(state.protocol.status('web')).resolves.toMatchObject({activeRevision:null});
+  await expect(state.protocol.status('webster')).resolves.toMatchObject({
+    activeRevision:state.revision,
+    active:activeMetadata(state, state.revision, 'webster')
+  });
+  expect(await candidates.match(state.protocol.candidateKey('web', state.revision))).toBeFalsy();
+  expect(await candidates.match(state.protocol.candidateKey('webster', state.revision))).toBeTruthy();
+  const ready = await state.storage.open(protocolModule.cacheNames.ready);
+  expect(await ready.match(state.protocol.readyKey('web', state.revision))).toBeFalsy();
+  expect(await ready.match(state.protocol.readyKey('webster', state.revision))).toBeTruthy();
+  expect(await shell.match('https://example.test/js/app.js')).toBeTruthy();
+  expect(state.fetchCount()).toBe(0);
+});
+
+test('active-pointer deletion failure keeps the retained translation active', async () => {
+  const state = fixture();
+  await seedActive(state, state.revision);
+  state.storage.failNextDelete(protocolModule.cacheNames.ready, 'active/web');
+
+  await expect(state.protocol.remove('web')).resolves.toEqual({
+    ok:false,
+    id:'web',
+    error:'active-delete'
+  });
+  await expect(state.protocol.status('web')).resolves.toMatchObject({
+    activeRevision:state.revision,
+    active:activeMetadata(state)
+  });
+});
+
+test('post-commit removal cleanup failures leave the old payload inert', async () => {
+  for(const failure of [
+    {cache:protocolModule.cacheNames.candidates, key:'candidate/web/', warning:'candidate-delete'},
+    {cache:protocolModule.cacheNames.ready, key:'ready/web/', warning:'ready-delete'}
+  ]) {
+    const state = fixture();
+    await seedActive(state, state.revision);
+    const candidates = await state.storage.open(protocolModule.cacheNames.candidates);
+    await candidates.put(state.protocol.candidateKey('web', state.revision), state.validResponse());
+    state.storage.failNextDelete(failure.cache, failure.key);
+
+    await expect(state.protocol.remove('web')).resolves.toEqual({
+      ok:true,
+      id:'web',
+      state:'not-retained',
+      removedRevision:state.revision,
+      cleanupWarnings:[failure.warning]
+    });
+    await expect(state.protocol.status('web')).resolves.toEqual({
+      ok:true,
+      id:'web',
+      activeRevision:null,
+      active:null
+    });
+    await expect(state.protocol.serveActive('web', state.revision)).resolves.toBeNull();
+  }
 });
 
 test('failed replacement preserves old ready data and successful promotion removes it last', async () => {

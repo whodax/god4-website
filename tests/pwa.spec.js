@@ -80,9 +80,10 @@ test('service worker installs a versioned shell without requesting or caching tr
     }
     return {names, urls};
   });
-  expect(state.names).toEqual(['god4-shell-33bda91-phase2c1']);
+  expect(state.names).toEqual(['god4-shell-c089a89-phase2db1']);
   expect(state.urls).toContain('/offline');
   expect(state.urls).toContain('/js/app.js');
+  expect(state.urls).toContain('/js/pwa/offline-translations.js');
   expect(state.urls.some(url => translationPattern.test(url))).toBe(false);
 
   const fallback = await page.evaluate(async () => {
@@ -119,6 +120,25 @@ test('worker translation protocol requires approved messages, promotes explicitl
     structure:metadata.structure
   };
 
+  const freshList = await workerMessage(page, {
+    type:'BIBLE_TRANSLATION_LIST',
+    revision:'caller-controlled',
+    path:'/caller-controlled.js',
+    url:'https://example.com/not-used.js',
+    method:'POST',
+    authorization:'Bearer not-used'
+  });
+  expect(freshList.ok).toBe(true);
+  expect(freshList.items.map(item => item.id)).toEqual([
+    'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'
+  ]);
+  expect(freshList.items.every(item => item.state === 'not-retained' && item.active === null)).toBe(true);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2db1']);
+  await expect(workerMessage(page, {
+    type:'BIBLE_TRANSLATION_REMOVE',
+    id:'not-approved'
+  })).resolves.toMatchObject({ok:false, error:'not-approved'});
+
   await expect(workerMessage(page, {
     type:'BIBLE_TRANSLATION_ACQUIRE',
     id:'not-approved',
@@ -132,7 +152,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     url:'/js/bible/web.js'
   })).resolves.toMatchObject({ok:false, error:'not-approved'});
 
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-33bda91-phase2c1']);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2db1']);
   expect(await page.evaluate(() => BibleData.isTranslationLoaded('web'))).toBe(false);
 
   const candidate = await workerMessage(page, {
@@ -159,7 +179,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     return {names, candidates};
   });
   expect(candidateState.names).toEqual([
-    'god4-shell-33bda91-phase2c1',
+    'god4-shell-c089a89-phase2db1',
     'god4-bible-candidates-v1'
   ]);
   expect(candidateState.candidates).toEqual([
@@ -220,7 +240,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-33bda91-phase2c1');
+    const shell = await caches.open('god4-shell-c089a89-phase2db1');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
       .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
@@ -246,6 +266,44 @@ test('worker translation protocol requires approved messages, promotes explicitl
     activeRevision:metadata.revision,
     active:expectedActive
   });
+
+  const retainedList = await workerMessage(page, {type:'BIBLE_TRANSLATION_LIST'});
+  expect(retainedList.items.find(item => item.id === 'web')).toEqual({
+    id:'web',
+    currentRevision:metadata.revision,
+    currentBytes:metadata.bytes,
+    active:expectedActive,
+    state:'current'
+  });
+
+  await expect(workerMessage(page, {
+    type:'BIBLE_TRANSLATION_REMOVE',
+    id:'web',
+    revision:'caller-controlled',
+    path:'/caller-controlled.js',
+    url:'https://example.com/not-used.js',
+    method:'POST',
+    authorization:'Bearer not-used'
+  })).resolves.toEqual({
+    ok:true,
+    id:'web',
+    state:'not-retained',
+    removedRevision:metadata.revision,
+    cleanupWarnings:[]
+  });
+  await expect(workerMessage(page, {
+    type:'BIBLE_TRANSLATION_STATUS',
+    id:'web'
+  })).resolves.toMatchObject({activeRevision:null, active:null});
+  const postRemovalState = await page.evaluate(async () => {
+    const shell = await caches.open('god4-shell-c089a89-phase2db1');
+    const ready = await caches.open('god4-bible-ready-v1');
+    return {
+      shellHasApp:Boolean(await shell.match('/js/app.js')),
+      readyKeys:(await ready.keys()).map(request => new URL(request.url).pathname)
+    };
+  });
+  expect(postRemovalState).toEqual({shellHasApp:true, readyKeys:[]});
 });
 
 test('canonical homepage and controlled fallback remain usable offline', async ({page, context}) => {
@@ -314,6 +372,8 @@ test('updates wait for explicit visitor action and the normal status is unobtrus
   const installHandler = /addEventListener\('install',[\s\S]*?\n\}\);/.exec(source)?.[0] || '';
   expect(installHandler).not.toContain('skipWaiting');
   expect(source).toContain("data.type === 'ACTIVATE_UPDATE'");
+  expect(source).toContain("data.type === 'BIBLE_TRANSLATION_LIST'");
+  expect(source).toContain("data.type === 'BIBLE_TRANSLATION_REMOVE'");
   expect(source).toContain('serveActive(activeMatch[1], activeMatch[2])');
 
   const loaderSource = fs.readFileSync(path.join(root, 'js', 'bible', 'translation-loader.js'), 'utf8');

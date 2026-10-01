@@ -301,6 +301,168 @@ test('controlled online load validates and promotes WEB after one acquisition', 
   await expect(page.locator('script[data-bible-translation="web"]')).toHaveAttribute('integrity', metadata.integrity);
 });
 
+test('explicit retain deduplicates concurrent calls and an already-current translation', async ({page}) => {
+  const requested = watchTranslationRequests(page);
+  await installAndControl(page);
+
+  const results = await page.evaluate(() => Promise.all([
+    BibleTranslationLoader.retain('web'),
+    BibleTranslationLoader.retain('web'),
+    BibleTranslationLoader.retain('web')
+  ]));
+  expect(results).toEqual([
+    {ok:true, id:'web', state:'current'},
+    {ok:true, id:'web', state:'current'},
+    {ok:true, id:'web', state:'current'}
+  ]);
+  expect(requested.filter(path => path === '/js/bible/web.js')).toHaveLength(1);
+  await expect(page.locator('script[data-bible-translation="web"]')).toHaveCount(1);
+
+  await expect(page.evaluate(() => BibleTranslationLoader.retain('web'))).resolves.toEqual({
+    ok:true,
+    id:'web',
+    state:'current'
+  });
+  expect(requested.filter(path => path === '/js/bible/web.js')).toHaveLength(1);
+  await expect(page.locator('script[data-bible-translation="web"]')).toHaveCount(1);
+});
+
+test('explicit retain reuses an already-loaded valid current translation', async ({page}) => {
+  const requested = watchTranslationRequests(page);
+  await installAndControl(page);
+  await page.evaluate(() => {
+    const original = ServiceWorker.prototype.postMessage;
+    let failed = false;
+    ServiceWorker.prototype.postMessage = function(message, transfer){
+      if(message && message.type === 'BIBLE_TRANSLATION_PROMOTE' && !failed){
+        failed = true;
+        transfer[0].postMessage({ok:false, error:'test-promotion-failure'});
+        return;
+      }
+      return original.call(this, message, transfer);
+    };
+  });
+
+  expect(await page.evaluate(() => BibleTranslationLoader.ensure('web'))).toBe(true);
+  await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'})).resolves.toMatchObject({
+    activeRevision:null
+  });
+  await expect(page.evaluate(() => BibleTranslationLoader.retain('web'))).resolves.toEqual({
+    ok:true,
+    id:'web',
+    state:'current'
+  });
+  expect(requested.filter(path => path === '/js/bible/web.js')).toHaveLength(1);
+  await expect(page.locator('script[data-bible-translation="web"]')).toHaveCount(1);
+});
+
+test('explicit retain acquisition failure is structured and retryable', async ({page}) => {
+  await installAndControl(page);
+  await page.evaluate(() => {
+    const original = ServiceWorker.prototype.postMessage;
+    let failed = false;
+    ServiceWorker.prototype.postMessage = function(message, transfer){
+      if(message && message.type === 'BIBLE_TRANSLATION_ACQUIRE' && !failed){
+        failed = true;
+        transfer[0].postMessage({ok:false, error:'network'});
+        return;
+      }
+      return original.call(this, message, transfer);
+    };
+  });
+
+  await expect(page.evaluate(() => BibleTranslationLoader.retain('web'))).resolves.toEqual({
+    ok:false,
+    id:'web',
+    state:'not-retained',
+    error:'network'
+  });
+  await expect(page.evaluate(() => BibleTranslationLoader.retain('web'))).resolves.toEqual({
+    ok:true,
+    id:'web',
+    state:'current'
+  });
+});
+
+test('explicit retain does not promote failed structural validation', async ({page}) => {
+  await installAndControl(page);
+  await page.evaluate(() => {
+    const validate = BibleData.validateTranslation;
+    let promotions = 0;
+    const postMessage = ServiceWorker.prototype.postMessage;
+    BibleData.validateTranslation = function(){ return false; };
+    ServiceWorker.prototype.postMessage = function(message, transfer){
+      if(message && message.type === 'BIBLE_TRANSLATION_PROMOTE') promotions++;
+      return postMessage.call(this, message, transfer);
+    };
+    window.__restoreValidation = function(){
+      BibleData.validateTranslation = validate;
+      return promotions;
+    };
+  });
+
+  await expect(page.evaluate(() => BibleTranslationLoader.retain('web'))).resolves.toEqual({
+    ok:false,
+    id:'web',
+    state:'not-retained',
+    error:'validation'
+  });
+  expect(await page.evaluate(() => window.__restoreValidation())).toBe(0);
+  await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'})).resolves.toMatchObject({
+    activeRevision:null
+  });
+});
+
+test('explicit update validates current content and preserves an older active revision on promotion failure', async ({page}) => {
+  await installAndControl(page);
+  const metadata = await page.evaluate(() => BibleTranslationManifest.web);
+  const oldRevision = 'aaaaaaaaaaaaaaaa';
+  await page.evaluate(async ({metadata, oldRevision}) => {
+    const response = await fetch(metadata.path + '?god4-revision=' + metadata.revision);
+    const ready = await caches.open('god4-bible-ready-v1');
+    await ready.put('/__god4/bible-cache/ready/web/' + oldRevision, response);
+    await ready.put('/__god4/bible-cache/active/web', new Response(JSON.stringify({
+      id:metadata.id,
+      revision:oldRevision,
+      path:metadata.path,
+      integrity:metadata.integrity,
+      bytes:metadata.bytes,
+      structure:metadata.structure
+    }), {status:200, headers:{'content-type':'application/json'}}));
+    const postMessage = ServiceWorker.prototype.postMessage;
+    let failed = false;
+    ServiceWorker.prototype.postMessage = function(message, transfer){
+      if(message && message.type === 'BIBLE_TRANSLATION_PROMOTE' && !failed){
+        failed = true;
+        transfer[0].postMessage({ok:false, error:'active-write'});
+        return;
+      }
+      return postMessage.call(this, message, transfer);
+    };
+  }, {metadata, oldRevision});
+
+  await expect(page.evaluate(() => BibleTranslationLoader.retain('web'))).resolves.toEqual({
+    ok:false,
+    id:'web',
+    state:'update-available',
+    error:'active-write'
+  });
+  await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'})).resolves.toMatchObject({
+    activeRevision:oldRevision
+  });
+  await expect(page.locator('script[data-bible-translation="web"]')).toHaveCount(1);
+
+  await expect(page.evaluate(() => BibleTranslationLoader.retain('web'))).resolves.toEqual({
+    ok:true,
+    id:'web',
+    state:'current'
+  });
+  await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'})).resolves.toMatchObject({
+    activeRevision:metadata.revision
+  });
+  await expect(page.locator('script[data-bible-translation="web"]')).toHaveCount(1);
+});
+
 test('retained translations support offline Reader, Search, and Compare while missing KJV retries online', async ({page, context}) => {
   await installAndControl(page);
   expect(await page.evaluate(() => Promise.all([

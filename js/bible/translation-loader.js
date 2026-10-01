@@ -2,6 +2,8 @@
 var BibleTranslationLoader = (function createBibleTranslationLoader(){
   var requests = {};
   var retentions = {};
+  var managedRetentions = {};
+  var loadedRevisions = {};
 
   function isLoaded(translationId, trustedStructure){
     return typeof BibleData !== 'undefined' &&
@@ -37,7 +39,7 @@ var BibleTranslationLoader = (function createBibleTranslationLoader(){
     return '/__god4/bible-cache/active-script/' + entry.id + '/' + entry.revision + '.js';
   }
 
-  function loadScript(translationId, source, integrity, trustedStructure){
+  function loadScript(translationId, revision, source, integrity, trustedStructure){
     return new Promise(function(resolve){
       var script = document.createElement('script');
 
@@ -51,7 +53,9 @@ var BibleTranslationLoader = (function createBibleTranslationLoader(){
       script.async = true;
       script.setAttribute('data-bible-translation', translationId);
       script.addEventListener('load', function(){
-        finish(isLoaded(translationId, trustedStructure));
+        var loaded = isLoaded(translationId, trustedStructure);
+        if(loaded) loadedRevisions[translationId] = revision;
+        finish(loaded);
       }, {once:true});
       script.addEventListener('error', function(){ finish(false); }, {once:true});
       document.head.appendChild(script);
@@ -79,25 +83,25 @@ var BibleTranslationLoader = (function createBibleTranslationLoader(){
 
   async function loadApproved(translationId, entry){
     if(!navigator.serviceWorker || !navigator.serviceWorker.controller){
-      return loadScript(translationId, currentUrl(entry), entry.integrity);
+      return loadScript(translationId, entry.revision, currentUrl(entry), entry.integrity);
     }
 
     var status = await workerMessage('BIBLE_TRANSLATION_STATUS', translationId, entry.revision);
     if(status && status.active && status.active.revision === entry.revision){
-      return loadScript(translationId, activeUrl(status.active), status.active.integrity,
-        status.active.structure);
+      return loadScript(translationId, status.active.revision, activeUrl(status.active),
+        status.active.integrity, status.active.structure);
     }
 
     var acquired = await workerMessage('BIBLE_TRANSLATION_ACQUIRE', translationId, entry.revision);
     if(acquired && acquired.ok){
-      var loaded = await loadScript(translationId, currentUrl(entry), entry.integrity);
+      var loaded = await loadScript(translationId, entry.revision, currentUrl(entry), entry.integrity);
       if(loaded) await workerMessage('BIBLE_TRANSLATION_PROMOTE', translationId, entry.revision);
       return loaded;
     }
 
     if(status && status.active){
-      return loadScript(translationId, activeUrl(status.active), status.active.integrity,
-        status.active.structure);
+      return loadScript(translationId, status.active.revision, activeUrl(status.active),
+        status.active.integrity, status.active.structure);
     }
     return false;
   }
@@ -121,5 +125,84 @@ var BibleTranslationLoader = (function createBibleTranslationLoader(){
     return requests[translationId];
   }
 
-  return { ensure: ensure, isLoaded: isLoaded };
+  async function retainApproved(translationId, entry){
+    if(!navigator.serviceWorker || !navigator.serviceWorker.controller){
+      return {ok:false, id:translationId, state:'not-retained', error:'service-worker-unavailable'};
+    }
+
+    var status = await workerMessage('BIBLE_TRANSLATION_STATUS', translationId, entry.revision);
+    if(!status || !status.ok){
+      return {ok:false, id:translationId, state:'not-retained', error:'status-unavailable'};
+    }
+    if(status.activeRevision === entry.revision){
+      return {ok:true, id:translationId, state:'current'};
+    }
+
+    var acquired = await workerMessage('BIBLE_TRANSLATION_ACQUIRE', translationId, entry.revision);
+    if(!acquired || !acquired.ok){
+      return {
+        ok:false,
+        id:translationId,
+        state:status.active ? 'update-available' : 'not-retained',
+        error:acquired && acquired.error ? acquired.error : 'acquire-failed'
+      };
+    }
+
+    var currentLoaded = isLoaded(translationId) &&
+      (!loadedRevisions[translationId] || loadedRevisions[translationId] === entry.revision) &&
+      !(status.active && status.active.revision !== entry.revision &&
+        loadedRevisions[translationId] !== entry.revision);
+    if(!currentLoaded){
+      currentLoaded = await loadScript(translationId, entry.revision,
+        currentUrl(entry), entry.integrity);
+    }
+    if(!currentLoaded || !isLoaded(translationId)){
+      return {
+        ok:false,
+        id:translationId,
+        state:status.active ? 'update-available' : 'not-retained',
+        error:'validation'
+      };
+    }
+
+    var promoted = await workerMessage('BIBLE_TRANSLATION_PROMOTE', translationId, entry.revision);
+    if(!promoted || !promoted.ok){
+      return {
+        ok:false,
+        id:translationId,
+        state:status.active ? 'update-available' : 'not-retained',
+        error:promoted && promoted.error ? promoted.error : 'promotion-failed'
+      };
+    }
+
+    var finalStatus = await workerMessage('BIBLE_TRANSLATION_STATUS', translationId, entry.revision);
+    if(!finalStatus || finalStatus.activeRevision !== entry.revision){
+      return {ok:false, id:translationId, state:'not-retained', error:'status-unavailable'};
+    }
+    return {ok:true, id:translationId, state:'current'};
+  }
+
+  function retain(translationId){
+    var entry = approvedEntry(translationId);
+    if(!entry){
+      return Promise.resolve({
+        ok:false,
+        id:translationId,
+        state:'not-retained',
+        error:'not-approved'
+      });
+    }
+    if(managedRetentions[translationId]) return managedRetentions[translationId];
+
+    managedRetentions[translationId] = retainApproved(translationId, entry)
+      .catch(function(){
+        return {ok:false, id:translationId, state:'not-retained', error:'unexpected'};
+      }).then(function(result){
+        delete managedRetentions[translationId];
+        return result;
+      });
+    return managedRetentions[translationId];
+  }
+
+  return { ensure: ensure, retain: retain, isLoaded: isLoaded };
 }());

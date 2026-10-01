@@ -78,3 +78,25 @@ The existing page loader remains unchanged in Phase 2B. Normal translation reque
 The translation loader asks the controlling service worker for status and acquisition using only an approved translation ID and revision. A verified current candidate is executed from the approved translation URL with its manifest SRI value and is promoted only after `BibleData.validateTranslation()` succeeds. The worker can serve an active ready payload only through `/__god4/bible-cache/active-script/<id>/<revision>.js`, after matching and revalidating its worker-owned active metadata.
 
 When current acquisition is unavailable, a validated active revision is the offline fallback for Reader, Search, and Compare. Missing offline translations fail without changing visible content and can be retried after reconnection. An uncontrolled first page loads the approved current URL with SRI for immediate reading; retention begins on a later controlled load so the first visit does not download the same bundle twice. User-facing download and storage-management controls remain deferred.
+
+## Phase 2D-A translation management protocol
+
+Phase 2D-A adds protocol and loader foundations for later user-facing management without adding controls or automatic downloads.
+
+- `BIBLE_TRANSLATION_LIST` returns the eight fixed manifest translations in manifest order. Each item contains the worker-derived current revision and byte length, validated active metadata when available, and a `not-retained`, `current`, or `update-available` state. Listing never opens Bible caches or downloads a translation.
+- `BIBLE_TRANSLATION_REMOVE` accepts only an approved translation ID. Deleting its active metadata pointer is the removal commit point. Candidate and ready payloads for that exact ID are then removed through structurally parsed synthetic keys. Cleanup failures can leave inert bytes and are returned as deterministic warnings; they cannot reactivate a removed payload or affect another translation or the shell cache.
+- `BibleTranslationLoader.retain(id)` provides a deduplicated, retryable explicit-retention API. It uses the existing status, acquire, SRI execution, structural validation, and promotion sequence, returns a structured result, and leaves `ensure(id)` behavior unchanged.
+
+The shell cache is `god4-shell-c089a89-phase2da1`. A new cache name is required because the shell-cached translation loader changed. This keeps the new loader paired with the new worker protocol while the previous active worker continues serving its existing cache until the visitor explicitly activates the waiting update.
+
+Browser storage estimates and user-facing Offline Bibles controls remain deferred to Phase 2D-B.
+
+## Phase 2D-B Offline Bibles controls
+
+Phase 2D-B adds an **Offline Bibles** button to the Study Desk and an accessible native dialog for explicitly retaining, updating, and removing individual translations. Opening the dialog performs only `BIBLE_TRANSLATION_LIST`; it never downloads a translation or creates a Bible cache. Download and update actions use `BibleTranslationLoader.retain(id)`, while removal uses the worker-owned `BIBLE_TRANSLATION_REMOVE` operation.
+
+The dialog reports exact retained Bible bytes by summing validated `active.bytes` values returned by LIST. A separate `navigator.storage.estimate()` value describes approximate origin-wide browser storage when that API is available. Page code does not inspect Cache Storage. Download and update actions are disabled while offline, removal remains available, and reconnection never starts an operation automatically.
+
+The dialog uses native modal behavior, explicit focus containment, heading focus on open, trigger focus restoration, per-row busy states, and polite status announcements. An older controlling worker receives no automatic activation or reload; the dialog asks the visitor to apply the pending app update through the existing update control.
+
+The Phase 2D-B shell cache is `god4-shell-c089a89-phase2db1`. It adds `/js/pwa/offline-translations.js` and keeps the existing explicit `ACTIVATE_UPDATE` lifecycle.

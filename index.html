@@ -133,6 +133,7 @@
         </div>
         <button class="bs-btn" type="button" aria-controls="view-plan" aria-pressed="false">Plan</button>
         <button class="bs-btn" id="fullscreenBtn" type="button" aria-pressed="false">Fullscreen</button>
+        <button class="bs-btn" id="offlineBiblesTrigger" type="button" aria-haspopup="dialog" aria-controls="offlineBiblesDialog" aria-expanded="false">Offline Bibles</button>
       </div>
     </div>
     <div class="bs-main">
@@ -416,6 +417,20 @@
   <p id="accountError" class="account-error" role="alert" hidden></p>
 </dialog>
 
+<dialog id="offlineBiblesDialog" class="offline-bibles-dialog" aria-labelledby="offlineBiblesTitle" aria-describedby="offlineBiblesDescription">
+  <div class="offline-bibles-heading">
+    <h2 id="offlineBiblesTitle" tabindex="-1">Offline Bibles</h2>
+    <button id="offlineBiblesClose" class="offline-bibles-close" type="button" aria-label="Close Offline Bibles dialog">×</button>
+  </div>
+  <p id="offlineBiblesDescription">Downloaded translations remain available for reading and study without a connection.</p>
+  <div class="offline-bibles-storage" aria-label="Storage information">
+    <p id="offlineBiblesStorage">Offline Bibles: 0.0 MiB</p>
+    <p id="offlineSiteStorage">Site storage: checking…</p>
+  </div>
+  <div id="offlineBiblesList" class="offline-bibles-list" aria-label="Bible translations"></div>
+  <p id="offlineBiblesStatus" class="offline-bibles-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</dialog>
+
 <noscript><p class="noscript-message">GOD4.us requires JavaScript for the interactive reader, search, and saved verses.</p></noscript>
 <div id="pwaStatus" class="pwa-status" role="status" aria-live="polite" hidden>
   <span id="pwaStatusMessage"></span>
@@ -442,6 +457,7 @@
 <script defer src="js/auth/supabase-provider.js"></script>
 <script defer src="js/auth/auth.js"></script>
 <script defer src="js/auth/account-ui.js?v=20260924-1"></script>
+<script defer src="js/pwa/offline-translations.js"></script>
 <script defer src="js/pwa/register.js"></script>
 
 </body>
