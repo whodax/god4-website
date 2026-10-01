@@ -4,6 +4,8 @@ let currentBook = initialReaderPosition.bookId;
 let currentChapter = initialReaderPosition.chapter;
 let currentVerse = initialReaderPosition.verse || null;
 let readerSelectionPending = Boolean(currentVerse);
+let playbackResumeCursor = null;
+let playbackSequenceTranslation = null;
 let currentSpokenVerse = null;
 let spokenFollowScrollTarget = null;
 let lastSpokenVerse = null;
@@ -63,6 +65,33 @@ function getReaderPlayStartVerse(explicitVerse){
   return getLastSpokenVerseForCurrentPassage() || (Number.isInteger(currentVerse) && BibleData.getVerse(currentTranslation, currentBook, currentChapter, currentVerse) ? currentVerse : 1);
 }
 
+function validPlaybackCursor(cursor){
+  return Boolean(cursor && cursor.translationId === currentTranslation &&
+    findSpeakablePlaybackLocation(cursor, true));
+}
+
+function getSelectedPlaybackCursor(explicitVerse){
+  var verse = Number.isInteger(explicitVerse) ? explicitVerse :
+    Number.isInteger(currentVerse) ? currentVerse : 1;
+  return findSpeakablePlaybackLocation({
+    translationId:currentTranslation, bookId:currentBook, chapter:currentChapter, verse:verse
+  }, true);
+}
+
+function getPlaybackResumeCursor(){
+  return playbackResumeCursor ? Object.assign({}, playbackResumeCursor) : null;
+}
+
+function replacePlaybackResumeCursor(cursor){
+  playbackResumeCursor = cursor ? Object.assign({}, cursor) : null;
+}
+
+function stopSpeechForManualNavigation(){
+  if(typeof BibleSpeech === 'undefined') return;
+  if(BibleSpeech.getState() !== 'idle') BibleSpeech.stop();
+  BibleSpeech.setStatusMessage('Ready to read aloud.');
+}
+
 function playReader(explicitVerse, pauseAfterFirst, restartSequence){
   if(typeof BibleSpeech === 'undefined') return;
   if(BibleSpeech.getState() === 'paused' && !restartSequence){
@@ -70,9 +99,20 @@ function playReader(explicitVerse, pauseAfterFirst, restartSequence){
     return;
   }
   if(BibleSpeech.getState() === 'playing' && !restartSequence) return;
-  var startVerse = getReaderPlayStartVerse(explicitVerse);
+  var cursor = Number.isInteger(explicitVerse)
+    ? getSelectedPlaybackCursor(explicitVerse)
+    : validPlaybackCursor(playbackResumeCursor)
+      ? findSpeakablePlaybackLocation(playbackResumeCursor, true)
+      : getSelectedPlaybackCursor();
+  if(!cursor) cursor = getSelectedPlaybackCursor();
+  if(!cursor) return;
+  replacePlaybackResumeCursor(cursor);
+  playbackSequenceTranslation = cursor.translationId;
+  if(cursor.bookId !== currentBook || cursor.chapter !== currentChapter){
+    if(!renderAutomaticPlaybackChapter(cursor)) return;
+  }
   readerSelectionPending = false;
-  readCurrentChapterAloud(startVerse, pauseAfterFirst);
+  readCurrentChapterAloud(cursor.verse, pauseAfterFirst, playbackSequenceTranslation);
 }
 
 function pauseReader(){
@@ -80,13 +120,15 @@ function pauseReader(){
 }
 
 function resumeReader(){
-  if(typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() === 'paused') BibleSpeech.pauseResume();
+  if(typeof BibleSpeech === 'undefined') return;
+  if(BibleSpeech.getState() === 'paused') BibleSpeech.pauseResume();
+  else playReader();
 }
 
 function continueReader(){
   if(typeof BibleSpeech === 'undefined') return;
   if(BibleSpeech.getState() === 'paused') BibleSpeech.pauseResume();
-  else if(BibleSpeech.getState() === 'idle' && getLastSpokenVerseForCurrentPassage()) playReader();
+  else playReader();
 }
 
 function stopReader(){
@@ -229,14 +271,117 @@ function applySpokenVerseHighlight(verseNumber){
   });
 }
 
-function handleSpokenVerseStart(verseNumber){
-  rememberSpokenVerse(verseNumber);
+function handleSpokenVerseStart(verseNumber, location){
+  rememberSpokenVerse(verseNumber, location);
   followSpokenVerse();
 }
 
-function rememberSpokenVerse(verseNumber){
-  if(!Number.isInteger(verseNumber) || !BibleData.getVerse(currentTranslation, currentBook, currentChapter, verseNumber)) return;
-  lastSpokenVerse = {bookId: currentBook, chapter: currentChapter, verse: verseNumber};
+function rememberSpokenVerse(verseNumber, location, updateResumeCursor){
+  var activeLocation = location || {translationId:currentTranslation, bookId:currentBook, chapter:currentChapter, verse:verseNumber};
+  if(!Number.isInteger(verseNumber) || !isSpeakablePlaybackLocation({
+    translationId:activeLocation.translationId || currentTranslation,
+    bookId:activeLocation.bookId || currentBook,
+    chapter:activeLocation.chapter || currentChapter,
+    verse:verseNumber
+  })) return;
+  lastSpokenVerse = {bookId:activeLocation.bookId || currentBook, chapter:activeLocation.chapter || currentChapter, verse:verseNumber};
+  if(updateResumeCursor !== false && (activeLocation.translationId === currentTranslation || !activeLocation.translationId)){
+    replacePlaybackResumeCursor({
+      translationId:activeLocation.translationId || currentTranslation,
+      bookId:activeLocation.bookId || currentBook,
+      chapter:activeLocation.chapter || currentChapter,
+      verse:verseNumber
+    });
+  }
+}
+
+function isSpeakablePlaybackLocation(location){
+  if(!location || !location.translationId || !location.bookId || !Number.isInteger(location.chapter) ||
+      !Number.isInteger(location.verse) || location.chapter < 1 || location.verse < 1) return false;
+  var chapter = BibleData.getChapter(location.translationId, location.bookId, location.chapter);
+  return Boolean(chapter && typeof chapter.verses[location.verse - 1] === 'string' &&
+    chapter.verses[location.verse - 1].trim());
+}
+
+function findSpeakablePlaybackLocation(location, includeLocation){
+  if(!location || !location.translationId) return null;
+  var books = BibleData.listBooks(location.translationId);
+  var bookIndex = books.findIndex(function(book){ return book.id === location.bookId; });
+  if(bookIndex < 0) return null;
+  var firstChapter = Number.isInteger(location.chapter) && location.chapter > 0 ? location.chapter : 1;
+  var firstVerse = Number.isInteger(location.verse) && location.verse > 0 ? location.verse : 1;
+  for(var b = bookIndex; b < books.length; b++){
+    var chapterCount = BibleData.getChapterCount(location.translationId, books[b].id);
+    var chapterStart = b === bookIndex ? firstChapter : 1;
+    for(var c = chapterStart; c <= chapterCount; c++){
+      var chapter = BibleData.getChapter(location.translationId, books[b].id, c);
+      if(!chapter) continue;
+      var verseStart = b === bookIndex && c === firstChapter ? firstVerse + (includeLocation ? 0 : 1) : 1;
+      for(var v = verseStart; v <= chapter.verses.length; v++){
+        var text = chapter.verses[v - 1];
+        if(typeof text === 'string' && text.trim()){
+          return {translationId:location.translationId, bookId:books[b].id, chapter:c, verse:v};
+        }
+      }
+    }
+  }
+  return null;
+}
+
+function getNextPlaybackLocation(location){
+  if(!location || location.translationId !== playbackSequenceTranslation) return null;
+  return findSpeakablePlaybackLocation(location, false);
+}
+
+function completePlaybackVerse(location){
+  var next = getNextPlaybackLocation(location);
+  replacePlaybackResumeCursor(next);
+}
+
+function renderAutomaticPlaybackChapter(location){
+  if(!location || location.translationId !== playbackSequenceTranslation || currentTranslation !== playbackSequenceTranslation) return null;
+  var chapter = BibleData.getChapter(location.translationId, location.bookId, location.chapter);
+  if(!chapter || !chapter.verses.some(function(verse){ return typeof verse === 'string' && verse.trim(); })){
+    replacePlaybackResumeCursor(null);
+    return null;
+  }
+  var bookSelect = document.getElementById('bookSelect');
+  var chapterSelect = document.getElementById('chapterSelect');
+  if(!bookSelect || !chapterSelect || !Array.from(bookSelect.options).some(function(option){ return option.value === location.bookId; })){
+    replacePlaybackResumeCursor(null);
+    return null;
+  }
+  bookSelect.value = location.bookId;
+  currentBook = location.bookId;
+  currentChapter = location.chapter;
+  currentVerse = null;
+  readerSelectionPending = false;
+  populateChapters();
+  chapterSelect.value = String(location.chapter);
+  populateVerses();
+  renderPassage(currentBook, currentChapter, 'readerContent');
+  clearReaderVerseSelection();
+  updateReaderControls();
+  if(typeof BibleSpeech !== 'undefined') BibleSpeech.setStatusMessage('Continuing with ' + chapter.bookName + ' ' + location.chapter + '.');
+  return {chapter:chapter, translationId:location.translationId};
+}
+
+function handleRepeatedVerse(verseNumber, location){
+  rememberSpokenVerse(verseNumber, location, false);
+  followSpokenVerse();
+}
+
+function getNextPlaybackChapter(location){
+  var next = getNextPlaybackLocation(location);
+  if(!next){
+    var books = BibleData.listBooks(location.translationId);
+    var lastBook = books.length ? books[books.length - 1].id : '';
+    if(location.bookId === lastBook && location.bookId === 'revelation') return {message:'Read aloud complete.'};
+    return {message:'Read aloud stopped because the next passage is unavailable in this translation.'};
+  }
+  return renderAutomaticPlaybackChapter(next) || {
+    message:'Read aloud stopped because the next passage is unavailable in this translation.'
+  };
 }
 
 function getLastSpokenVerseForCurrentPassage(){
@@ -273,8 +418,11 @@ function populateVerses(){
 function setReaderVerse(verseNumber, shouldFocus){
   var verse = BibleData.getVerse(currentTranslation, currentBook, currentChapter, Number(verseNumber));
   if(!verse || !applyReaderVerseSelection(verse.verse, shouldFocus)) return false;
+  stopSpeechForManualNavigation();
   currentVerse = verse.verse;
   readerSelectionPending = true;
+  playbackSequenceTranslation = currentTranslation;
+  replacePlaybackResumeCursor({translationId:currentTranslation, bookId:currentBook, chapter:currentChapter, verse:currentVerse});
   saveReaderPosition();
   updateReaderControls();
   return true;
@@ -282,7 +430,10 @@ function setReaderVerse(verseNumber, shouldFocus){
 
 function selectReaderVerse(verseNumber){
   if(verseNumber === '' || verseNumber === null || verseNumber === undefined){
+    stopSpeechForManualNavigation();
     clearReaderVerseSelection();
+    playbackSequenceTranslation = currentTranslation;
+    replacePlaybackResumeCursor({translationId:currentTranslation, bookId:currentBook, chapter:currentChapter, verse:1});
     saveReaderPosition();
     updateReaderControls();
     return true;
@@ -559,6 +710,7 @@ function switchView(view, btn){
   document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
   var target = document.getElementById('view-' + view);
   if(!target || !btn) return;
+  if(view !== 'reader' && typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() !== 'idle') BibleSpeech.stop();
   if(view === 'compare'){
     if(typeof initializeCompareReference === 'function') initializeCompareReference();
     if(typeof loadCompare === 'function') loadCompare();
@@ -612,6 +764,7 @@ function populateTranslations(){
 
 async function changeTranslation(translationId){
   if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return false;
+  stopSpeechForManualNavigation();
   var previousTranslation = currentTranslation;
   var translationSelect = document.getElementById('readerTranslation');
   var requestId = ++translationChangeRequest;
@@ -692,7 +845,7 @@ function loadPassage(){
   var bookSelect = document.getElementById('bookSelect');
   var chapterSelect = document.getElementById('chapterSelect');
   if(!bookSelect || !chapterSelect || typeof BibleData === 'undefined') return;
-  if(typeof BibleSpeech !== 'undefined') BibleSpeech.stop();
+  stopSpeechForManualNavigation();
   var nextBook = bookSelect.value;
   var nextChapter = parseInt(chapterSelect.value, 10);
   if(lastSpokenVerse && (lastSpokenVerse.bookId !== nextBook || lastSpokenVerse.chapter !== nextChapter ||
@@ -701,6 +854,11 @@ function loadPassage(){
   currentBook = nextBook;
   currentChapter = nextChapter;
   if(!BibleData.getChapter(currentTranslation, currentBook, currentChapter)) return;
+  playbackSequenceTranslation = currentTranslation;
+  replacePlaybackResumeCursor({
+    translationId:currentTranslation, bookId:currentBook, chapter:currentChapter,
+    verse:Number.isInteger(currentVerse) && BibleData.getVerse(currentTranslation, currentBook, currentChapter, currentVerse) ? currentVerse : 1
+  });
   renderPassage(currentBook, currentChapter, 'readerContent');
   if(currentVerse && BibleData.getVerse(currentTranslation, currentBook, currentChapter, currentVerse)){
     applyReaderVerseSelection(currentVerse, false);
@@ -711,16 +869,25 @@ function loadPassage(){
   updateReaderControls();
 }
 
-function readCurrentChapterAloud(startVerse, pauseAfterFirst){
+function readCurrentChapterAloud(startVerse, pauseAfterFirst, translationId){
   if(typeof BibleSpeech === 'undefined') return;
-  var chapter = BibleData.getChapter(currentTranslation, currentBook, currentChapter);
-  BibleSpeech.playChapter(chapter, startVerse, pauseAfterFirst);
+  var fixedTranslation = translationId || currentTranslation;
+  var chapter = BibleData.getChapter(fixedTranslation, currentBook, currentChapter);
+  if(!chapter) return;
+  BibleSpeech.playChapter(chapter, startVerse, pauseAfterFirst, {
+    translationId:fixedTranslation,
+    continueAfterChapter:getNextPlaybackChapter
+  });
 }
 
 function readVerseAloud(verseNumber){
   if(typeof BibleSpeech === 'undefined' || typeof BibleData === 'undefined') return;
   var verse = BibleData.getVerse(currentTranslation, currentBook, currentChapter, verseNumber);
-  if(verse) BibleSpeech.playVerse(verse.text, verse.verse);
+  if(verse){
+    playbackSequenceTranslation = currentTranslation;
+    replacePlaybackResumeCursor({translationId:currentTranslation, bookId:currentBook, chapter:currentChapter, verse:verse.verse});
+    BibleSpeech.playVerse(verse.text, verse.verse, {translationId:currentTranslation, bookId:currentBook, chapter:currentChapter});
+  }
 }
 
 function pauseResumeReadAloud(){
@@ -766,13 +933,17 @@ function highlightVerse(el){
   var verseElement = el.closest('[data-verse-number]');
   var verseNumber = verseElement ? Number(verseElement.getAttribute('data-verse-number')) : NaN;
   if(!Number.isInteger(verseNumber) || verseNumber < 1) return;
+  stopSpeechForManualNavigation();
   if(el.classList.contains('highlighted')){
     currentVerse = verseNumber;
     readerSelectionPending = true;
+    replacePlaybackResumeCursor({translationId:currentTranslation, bookId:currentBook, chapter:currentChapter, verse:verseNumber});
     applyReaderVerseSelection(currentVerse, false);
   } else if(currentVerse === verseNumber){
     clearReaderVerseSelection();
+    replacePlaybackResumeCursor({translationId:currentTranslation, bookId:currentBook, chapter:currentChapter, verse:1});
   }
+  playbackSequenceTranslation = currentTranslation;
   saveReaderPosition();
   updateReaderControls();
 }
@@ -890,6 +1061,8 @@ if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener 
   BibleSpeech.setPlaybackListener({
     onVerseStart: applySpokenVerseHighlight,
     onVerseSpoken: handleSpokenVerseStart,
+    onVerseRepeat: handleRepeatedVerse,
+    onVerseComplete: completePlaybackVerse,
     onEnd: clearSpokenVerseHighlight
   });
 }
