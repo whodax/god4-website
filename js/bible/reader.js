@@ -196,9 +196,61 @@ function applyReaderVerseSelection(verseNumber, shouldFocus){
   if(shouldFocus){
     target.setAttribute('tabindex', '-1');
     target.focus({ preventScroll: true });
-    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    scrollReaderTargetIntoView(target, 'smooth');
   }
   return true;
+}
+
+function readerVisibleTop(){
+  var top = 0;
+  var siteNav = document.querySelector('nav');
+  if(siteNav && getComputedStyle(siteNav).position === 'sticky'){
+    var navRect = siteNav.getBoundingClientRect();
+    if(navRect.top <= 0 && navRect.bottom > 0) top = navRect.bottom;
+  }
+  var toolbar = document.querySelector('#view-reader.active .reader-toolbar');
+  if(toolbar && getComputedStyle(toolbar).position === 'sticky'){
+    var stickyTop = parseFloat(getComputedStyle(toolbar).top);
+    if(Number.isFinite(stickyTop)) top = Math.max(top, stickyTop + toolbar.getBoundingClientRect().height);
+  }
+  return top;
+}
+
+function scrollReaderTargetIntoView(target, behavior){
+  var top = readerVisibleTop();
+  var bottom = window.innerHeight;
+  var rect = target.getBoundingClientRect();
+  var margin = 16;
+  if(rect.top >= top + margin && rect.bottom <= bottom - margin) return;
+  var usableHeight = bottom - top;
+  if(usableHeight <= 0) return;
+  var offset = rect.height > usableHeight - 2 * margin
+    ? rect.top - (top + margin)
+    : (rect.top + rect.bottom) / 2 - (top + bottom) / 2;
+  window.scrollBy({top:offset, behavior:behavior});
+}
+
+function initializeReaderStickyOffsets(){
+  var view = document.getElementById('view-reader');
+  var siteNav = document.querySelector('nav');
+  var toolbar = view && view.querySelector('.reader-toolbar');
+  if(!view || !siteNav || !toolbar) return;
+  var sheet = Array.from(document.styleSheets).find(function(candidate){
+    return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);
+  });
+  if(!sheet) return;
+  var ruleIndex = sheet.insertRule('#view-reader { --reader-nav-bottom:105px; --reader-toolbar-height:53px; }', sheet.cssRules.length);
+  var style = sheet.cssRules[ruleIndex].style;
+  function update(){
+    style.setProperty('--reader-nav-bottom', siteNav.getBoundingClientRect().bottom + 'px');
+    style.setProperty('--reader-toolbar-height', toolbar.getBoundingClientRect().height + 'px');
+  }
+  update();
+  if(typeof ResizeObserver !== 'undefined'){
+    var observer = new ResizeObserver(update);
+    observer.observe(siteNav);
+    observer.observe(toolbar);
+  }
 }
 
 function cancelSpokenFollow(){
@@ -232,17 +284,7 @@ function followSpokenVerse(){
     top = containerRect.top;
     bottom = containerRect.bottom;
   } else {
-    var siteNav = document.querySelector('nav');
-    if(siteNav && getComputedStyle(siteNav).position === 'sticky'){
-      var navRect = siteNav.getBoundingClientRect();
-      if(navRect.top <= 0 && navRect.bottom > 0) top = navRect.bottom;
-    }
-    var verseNavigation = document.getElementById('readerVerseNavigation');
-    if(verseNavigation && getComputedStyle(verseNavigation).position === 'sticky'){
-      var controlsRect = verseNavigation.getBoundingClientRect();
-      var stickyTop = parseFloat(getComputedStyle(verseNavigation).top);
-      if(Number.isFinite(stickyTop)) top = Math.max(top, stickyTop + controlsRect.height);
-    }
+    top = readerVisibleTop();
   }
 
   var usableHeight = bottom - top;
@@ -952,7 +994,7 @@ function toggleFullscreen(){
   var overlay = document.getElementById('fsOverlay');
   var fullscreenButton = document.getElementById('fullscreenBtn');
   var verseNavigation = document.getElementById('readerVerseNavigation');
-  var readerContent = document.getElementById('readerContent');
+  var secondaryControls = document.getElementById('readerSecondaryControls');
   var fullscreenContent = document.getElementById('fsContent');
   if(!overlay) return;
   cancelSpokenFollow();
@@ -965,7 +1007,7 @@ function toggleFullscreen(){
     var closeButton = overlay.querySelector('.fs-close');
     if(closeButton) closeButton.focus();
   } else {
-    if(verseNavigation && readerContent && readerContent.parentNode) readerContent.parentNode.insertBefore(verseNavigation, readerContent);
+    if(verseNavigation && secondaryControls) secondaryControls.insertBefore(verseNavigation, secondaryControls.querySelector('.reader-audio-controls'));
     if(fullscreenButton) fullscreenButton.focus();
   }
 }
@@ -1006,6 +1048,7 @@ function runWithBibleExperience(action){
   });
 }
 function initializeReaderControls(){
+  initializeReaderStickyOffsets();
   document.querySelectorAll('.bs-btn[aria-controls^="view-"]').forEach(function(button){
     button.addEventListener('click', function(){
       var view = button.getAttribute('aria-controls').slice(5);

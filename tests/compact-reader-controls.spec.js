@@ -37,6 +37,9 @@ test('More opens secondary controls and closes them with the trigger', async ({ 
   await more.click();
   await expect(more).toHaveAttribute('aria-expanded', 'true');
   await expect(page.locator('#verseSelect')).toBeVisible();
+  await expect(page.locator('#readerVerseNavigation [data-reader-action="previous-verse"]')).toBeVisible();
+  await expect(page.locator('#readerVerseNavigation [data-reader-action="next-verse"]')).toBeVisible();
+  await expect(page.locator('#readerVerseNavigation')).toHaveCSS('position', 'static');
   await expect(page.locator('[data-voice-command-button]')).toBeVisible();
   await expect(page.locator('#readAloudVoice')).toBeVisible();
   await expect(page.locator('#readAloudSpeed')).toBeVisible();
@@ -81,7 +84,7 @@ test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mob
       return { toolbarHeight:toolbar.height, firstVerseOffset:verse.top - view.top, overflow, positions };
     });
     expect(geometry.overflow, `${width}px Reader overflow`).toEqual([]);
-    expect(geometry.toolbarHeight).toBeLessThanOrEqual(width === 1440 ? 64 : 100);
+    expect(geometry.toolbarHeight).toBeLessThanOrEqual(width === 1440 ? 64 : 110);
     if(width === 1440) expect(new Set(geometry.positions).size).toBe(1);
     else {
       expect(geometry.positions[0]).toBe(geometry.positions[1]);
@@ -91,6 +94,77 @@ test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mob
     }
     expect(geometry.firstVerseOffset).toBeLessThan(width === 320 ? 500 : width === 480 ? 450 : 500);
   }
+});
+
+test('the same Reader toolbar sticks below the measured site navigation at three widths', async ({ page }) => {
+  for(const width of [1440, 480, 320]){
+    await page.setViewportSize({width, height:900});
+    await page.evaluate(() => { window.scrollTo(0, 0); window.__readerToolbar = document.querySelector('.reader-toolbar'); });
+    const originalHeight = await page.locator('.reader-toolbar').evaluate(element => element.getBoundingClientRect().height);
+    await page.locator('#readerContent [data-verse-number="20"]').scrollIntoViewIfNeeded();
+    const geometry = await page.evaluate(() => {
+      const nav = document.querySelector('nav').getBoundingClientRect();
+      const toolbar = document.querySelector('.reader-toolbar');
+      const bounds = toolbar.getBoundingClientRect();
+      const verse = document.querySelector('#readerContent [data-verse-number="20"]').getBoundingClientRect();
+      return {
+        sameNode:toolbar === window.__readerToolbar,
+        toolbarCount:document.querySelectorAll('.reader-toolbar').length,
+        position:getComputedStyle(toolbar).position,
+        navBottom:nav.bottom,
+        toolbarTop:bounds.top,
+        toolbarBottom:bounds.bottom,
+        toolbarHeight:bounds.height,
+        verseTop:verse.top,
+        overflow:[...document.querySelectorAll('#view-reader *')].some(element => {
+          const rect = element.getBoundingClientRect();
+          return rect.right > innerWidth + 1 || rect.left < -1;
+        })
+      };
+    });
+    expect(geometry.sameNode).toBe(true);
+    expect(geometry.toolbarCount).toBe(1);
+    expect(geometry.position).toBe('sticky');
+    expect(geometry.toolbarTop).toBeGreaterThanOrEqual(geometry.navBottom - 1);
+    expect(geometry.toolbarTop).toBeLessThanOrEqual(geometry.navBottom + 1);
+    expect(geometry.toolbarHeight).toBeCloseTo(originalHeight, 0);
+    expect(geometry.verseTop).toBeGreaterThan(geometry.toolbarBottom);
+    expect(geometry.overflow).toBe(false);
+  }
+});
+
+test('More and focused verse and Word Study targets remain clear of the sticky toolbar', async ({ page }) => {
+  await page.locator('#readerContent [data-verse-number="20"]').scrollIntoViewIfNeeded();
+  const more = page.locator('#readerMoreTrigger');
+  await more.focus();
+  await expect(more).toBeFocused();
+  await more.click();
+  await page.locator('#verseSelect').selectOption('20');
+  await expect.poll(() => page.evaluate(() => {
+    const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
+    const verse = document.querySelector('#readerContent [data-verse-number="20"]').getBoundingClientRect();
+    return verse.top > toolbar.bottom + 8;
+  })).toBe(true);
+  await page.locator('#readerContent [data-word-study-term]').first().click();
+  await expect(page.locator('#wordStudyHeading')).toBeFocused();
+  await expect.poll(() => page.evaluate(() => {
+    const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
+    const heading = document.getElementById('wordStudyHeading').getBoundingClientRect();
+    return heading.top > toolbar.bottom + 8;
+  })).toBe(true);
+});
+
+test('Compare and Plan hide the Reader toolbar and returning restores sticky behavior', async ({ page }) => {
+  await page.locator('#readerContent [data-verse-number="20"]').scrollIntoViewIfNeeded();
+  const toolbar = page.locator('.reader-toolbar');
+  await page.getByRole('button', {name:'Compare', exact:true}).click();
+  await expect(toolbar).toBeHidden();
+  await page.getByRole('button', {name:'Plan', exact:true}).click();
+  await expect(toolbar).toBeHidden();
+  await page.getByRole('button', {name:'Reader', exact:true}).click();
+  await page.locator('#readerContent [data-verse-number="20"]').scrollIntoViewIfNeeded();
+  await expect(toolbar).toBeVisible();
+  expect(await toolbar.evaluate(element => getComputedStyle(element).position)).toBe('sticky');
 });
 
 test('one playback button changes from Play to Stop and back', async ({ page }) => {

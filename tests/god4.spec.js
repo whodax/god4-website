@@ -3213,28 +3213,23 @@ test('invalid Reader selected verse preserves its valid book and chapter', async
   });
 });
 
-test('Reader verse navigation uses one sticky row above the passage and remains separate from chapter controls', async ({ page }) => {
+test('Reader verse navigation stays under More without a competing sticky row', async ({ page }) => {
   const row = page.locator('#readerVerseNavigation');
   const chapterControls = page.locator('.reader-controls-top');
 
   await expect(row).toHaveCount(1);
+  await expect(row).toBeHidden();
   await expect(row).toHaveAttribute('aria-label', 'Verse navigation');
   await expect(row.locator('[data-reader-action="previous-verse"]')).toHaveCount(1);
   await expect(row.locator('[data-reader-action="next-verse"]')).toHaveCount(1);
   await expect(chapterControls.locator('[data-reader-action="previous-verse"], [data-reader-action="next-verse"]')).toHaveCount(0);
   await expect(chapterControls.locator('[data-reader-action="previous"], [data-reader-action="next"]')).toHaveCount(2);
-  expect(await row.evaluate((element) => ({
-    position: getComputedStyle(element).position,
-    top: getComputedStyle(element).top,
-    nextSibling: element.nextElementSibling && element.nextElementSibling.id
-  }))).toEqual({ position: 'sticky', top: '112px', nextSibling: 'readerContent' });
-
-  await page.locator('#readerContent [data-verse-number="20"]').scrollIntoViewIfNeeded();
-  const positions = await page.evaluate(() => ({
-    navigationTop: document.getElementById('readerVerseNavigation').getBoundingClientRect().top,
-    siteHeaderBottom: document.querySelector('nav').getBoundingClientRect().bottom
-  }));
-  expect(positions.navigationTop).toBeGreaterThanOrEqual(positions.siteHeaderBottom - 1);
+  await openReaderMore(page);
+  await expect(row).toBeVisible();
+  expect(await row.evaluate(element => ({
+    position:getComputedStyle(element).position,
+    parent:element.parentElement.id
+  }))).toEqual({position:'static', parent:'readerSecondaryControls'});
 });
 
 test('fullscreen Reader reuses the same verse-navigation row and keeps it usable', async ({ page }) => {
@@ -3256,13 +3251,14 @@ test('fullscreen Reader reuses the same verse-navigation row and keeps it usable
   await expect(page.locator('#fsContent [data-verse-number="1"]')).toHaveClass(/verse-focused/);
 
   await page.getByRole('button', { name: 'Exit Fullscreen' }).click();
-  await expect(row).toBeVisible();
-  expect(await row.evaluate((element) => element.nextElementSibling && element.nextElementSibling.id)).toBe('readerContent');
+  await expect(row).toBeHidden();
+  expect(await row.evaluate(element => element.parentElement.id)).toBe('readerSecondaryControls');
 });
 test('Reader verse navigation starts at verse 1 and keeps keyboard focus on Next Verse', async ({ page }) => {
   const previousVerse = page.locator('[data-reader-action="previous-verse"]');
   const nextVerse = page.locator('[data-reader-action="next-verse"]');
 
+  await openReaderMore(page);
   await expect(previousVerse).toHaveAccessibleName('Previous Verse');
   await expect(nextVerse).toHaveAccessibleName('Next Verse');
   await expect(previousVerse).toBeDisabled();
@@ -4110,6 +4106,11 @@ test('continuous read-aloud crosses a chapter boundary without changing saved Re
   expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
     await page.evaluate(() => BibleData.getVerse('web', 'john', 2, 1).text)
   );
+  await expect.poll(() => page.evaluate(() => {
+    const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
+    const verse = document.querySelector('#readerContent [data-verse-number="1"]').getBoundingClientRect();
+    return verse.top > toolbar.bottom + 8;
+  })).toBe(true);
   expect(await page.evaluate(() => getPlaybackResumeCursor())).toEqual({translationId:'web', bookId:'john', chapter:2, verse:1});
   expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).toBe(savedPosition);
 });
@@ -4551,22 +4552,30 @@ test('spoken follow scrolls an offscreen verse below sticky controls without cha
   await installSpokenFollowMocks(page);
   await openReaderMore(page);
   await page.locator('#verseSelect').selectOption('20');
-  await page.evaluate(() => { window.scrollTo(0, 0); window.__followScrolls.length = 0; });
+  await page.evaluate(async () => {
+    window.scrollTo({top:0, behavior:'instant'});
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    window.__followScrolls.length = 0;
+  });
   await page.evaluate(() => playReader());
   expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'smooth'}]);
   await expect.poll(() => page.evaluate(() => {
     const verse = document.querySelector('#readerContent [data-verse-number="20"]');
-    const row = document.getElementById('readerVerseNavigation');
+    const row = document.querySelector('.reader-toolbar');
     const rect = verse.getBoundingClientRect();
     return rect.top > row.getBoundingClientRect().bottom + 12 && rect.bottom < innerHeight - 12;
   })).toBe(true);
   expect(await page.evaluate(() => document.activeElement === document.querySelector('#readerContent [data-verse-number="20"]'))).toBe(true);
-  await page.evaluate(() => { window.scrollTo(0, 0); window.__speech.utterances[0].onend(); });
+  await page.evaluate(async () => {
+    window.scrollTo({top:0, behavior:'instant'});
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    window.__speech.utterances[0].onend();
+  });
   expect(await page.evaluate(() => window.__followScrolls.length)).toBe(2);
   await expect.poll(() => page.evaluate(() => {
     const verse = document.querySelector('#readerContent [data-verse-number="21"]');
     const rect = verse.getBoundingClientRect();
-    return rect.top > document.getElementById('readerVerseNavigation').getBoundingClientRect().bottom + 12 && rect.bottom < innerHeight - 12;
+    return rect.top > document.querySelector('.reader-toolbar').getBoundingClientRect().bottom + 12 && rect.bottom < innerHeight - 12;
   })).toBe(true);
   await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-focused/);
   await expect(page.locator('#readerContent [data-verse-number="21"]')).toHaveClass(/verse-spoken/);
@@ -4676,7 +4685,7 @@ test('spoken follow places the start of an unusually tall verse below sticky con
   expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'auto'}]);
   await expect.poll(() => page.evaluate(() => {
     const verse = document.querySelector('#readerContent [data-verse-number="30"]');
-    const controls = document.getElementById('readerVerseNavigation');
+    const controls = document.querySelector('.reader-toolbar');
     const gap = verse.getBoundingClientRect().top - controls.getBoundingClientRect().bottom;
     return gap >= 12 && gap <= 80;
   })).toBe(true);
