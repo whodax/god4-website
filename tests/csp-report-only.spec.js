@@ -152,8 +152,8 @@ test('main application flows stay functional without CSP violations', async ({pa
   await page.locator('[data-plan-day="1"]').click();
   await expect(page.locator('#planFill')).toHaveClass(/plan-progress-days-1/);
   await page.getByRole('button', {name:'Reader', exact:true}).click();
-  await page.getByRole('button', {name:'Fullscreen'}).click();
-  await expect(page.locator('#fsOverlay')).toHaveClass(/active/);
+  await page.getByRole('button', {name:'Enter Fullscreen'}).click();
+  await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
   await page.getByRole('button', {name:'Exit Fullscreen'}).click();
   await page.locator('#accountTrigger').click();
   await expect(page.locator('#accountDialog')).toBeVisible();

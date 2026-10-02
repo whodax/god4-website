@@ -1064,7 +1064,7 @@ test('Reader chapter and book navigation clear stale spoken highlights', async (
   await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
 });
 
-test('fullscreen Reader mirrors spoken-verse progression without moving focus', async ({ page }) => {
+test('fullscreen Reader shares spoken-verse progression without moving focus', async ({ page }) => {
   await page.addInitScript(() => {
     window.__speech = { utterances: [] };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', {
@@ -1084,17 +1084,17 @@ test('fullscreen Reader mirrors spoken-verse progression without moving focus', 
 
   const exit = page.getByRole('button', { name: 'Exit Fullscreen' });
   await expect(exit).toBeFocused();
-  await expect(page.locator('#fsContent .verse-spoken')).toHaveCount(1);
-  await expect(page.locator('#fsContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
 
   await page.evaluate(() => window.__speech.utterances[0].onend());
-  await expect(page.locator('#fsContent .verse-spoken')).toHaveCount(1);
-  await expect(page.locator('#fsContent [data-verse-number="1"]')).not.toHaveClass(/verse-spoken/);
-  await expect(page.locator('#fsContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).not.toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-spoken/);
   await expect(exit).toBeFocused();
 
   await page.evaluate(() => BibleSpeech.stop());
-  await expect(page.locator('#fsContent .verse-spoken')).toHaveCount(0);
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
 });
 test('reader read-aloud controls are disabled when Web Speech API is unavailable', async ({ page }) => {
   await page.addInitScript(() => {
@@ -1236,10 +1236,10 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
   await verseNumber.click();
   await expect(verseNumber).toHaveClass(/highlighted/);
 
-  await page.getByRole('button', { name: 'Fullscreen' }).click();
-  await expect(page.locator('#fsOverlay')).toHaveClass(/active/);
+  await page.getByRole('button', { name: 'Enter Fullscreen' }).click();
+  await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
   await page.getByRole('button', { name: 'Exit Fullscreen' }).click();
-  await expect(page.locator('#fsOverlay')).not.toHaveClass(/active/);
+  await expect(page.locator('#view-reader')).not.toHaveClass(/reader-fullscreen/);
 
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#view-compare')).toHaveClass(/active/);
@@ -1276,12 +1276,12 @@ test('saved-verses drawer and fullscreen Reader keep keyboard focus and close wi
 
   const fullscreen = page.locator('#fullscreenBtn');
   await fullscreen.click();
-  const overlay = page.locator('#fsOverlay');
-  const exit = overlay.getByRole('button', { name: 'Exit Fullscreen' });
-  await expect(overlay).toHaveAttribute('aria-hidden', 'false');
+  const shell = page.locator('#view-reader');
+  const exit = shell.getByRole('button', { name: 'Exit Fullscreen' });
+  await expect(shell).toHaveAttribute('aria-modal', 'true');
   await expect(exit).toBeFocused();
   await exit.press('Escape');
-  await expect(overlay).toHaveAttribute('aria-hidden', 'true');
+  await expect(shell).not.toHaveAttribute('aria-modal', 'true');
   await expect(fullscreen).toBeFocused();
 });
 
@@ -1435,8 +1435,9 @@ test('Study Desk panes use document scrolling instead of inner vertical scrollba
   expect(compareFlow.cardOverflows.every((overflow) => !/auto|scroll/.test(overflow))).toBeTruthy();
   expect(compareFlow.pageHeight).toBeGreaterThanOrEqual(readerHeight.pageHeight);
 
-  await page.getByRole('button', { name: 'Fullscreen' }).click();
-  await expect(page.locator('#fsOverlay')).toHaveClass(/active/);
+  await page.getByRole('button', { name: 'Reader', exact: true }).click();
+  await page.getByRole('button', { name: 'Enter Fullscreen' }).click();
+  await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
 });
 
 test('Compare edition count sits compactly beneath the Compare tab', async ({ page }) => {
@@ -3232,26 +3233,27 @@ test('Reader verse navigation stays under More without a competing sticky row', 
   }))).toEqual({position:'static', parent:'readerSecondaryControls'});
 });
 
-test('fullscreen Reader reuses the same verse-navigation row and keeps it usable', async ({ page }) => {
+test('fullscreen Reader keeps the same verse-navigation row inside More', async ({ page }) => {
   const row = page.locator('#readerVerseNavigation');
   await page.locator('#fullscreenBtn').click();
 
-  await expect(page.locator('#fsOverlay')).toHaveAttribute('aria-hidden', 'false');
+  await expect(page.locator('#view-reader')).toHaveAttribute('aria-modal', 'true');
   await expect(row).toHaveCount(1);
+  await page.locator('#readerMoreTrigger').click();
   await expect(row).toBeVisible();
   await expect(row.locator('[data-reader-action="next-verse"]')).toBeEnabled();
   expect(await row.evaluate((element) => ({
     parent: element.parentElement && element.parentElement.id,
     position: getComputedStyle(element).position,
     nextSibling: element.nextElementSibling && element.nextElementSibling.id
-  }))).toEqual({ parent: 'fsOverlay', position: 'relative', nextSibling: 'fsContent' });
+  }))).toEqual({ parent: 'readerSecondaryControls', position: 'static', nextSibling: '' });
 
   await row.locator('[data-reader-action="next-verse"]').click();
   await expect(page.locator('#verseSelect')).toHaveValue('1');
-  await expect(page.locator('#fsContent [data-verse-number="1"]')).toHaveClass(/verse-focused/);
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-focused/);
 
   await page.getByRole('button', { name: 'Exit Fullscreen' }).click();
-  await expect(row).toBeHidden();
+  await expect(row).toBeVisible();
   expect(await row.evaluate(element => element.parentElement.id)).toBe('readerSecondaryControls');
 });
 test('Reader verse navigation starts at verse 1 and keeps keyboard focus on Next Verse', async ({ page }) => {
@@ -4528,7 +4530,7 @@ async function installSpokenFollowMocks(page, deferStart = false) {
     };
     const elementScrollBy = Element.prototype.scrollBy;
     Element.prototype.scrollBy = function(options) {
-      if (this.id === 'fsContent') window.__followScrolls.push({target: 'fsContent', behavior: options.behavior});
+      if (this.id === 'view-reader') window.__followScrolls.push({target: 'view-reader', behavior: options.behavior});
       return elementScrollBy.call(this, options);
     };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', {
@@ -4625,28 +4627,28 @@ test('spoken follow waits through Pause and Repeat and does not scroll on Stop',
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
 });
 
-test('fullscreen spoken follow scrolls only its visible passage and keeps keyboard focus', async ({ page }) => {
+test('fullscreen spoken follow scrolls the shared Reader shell and keeps keyboard focus', async ({ page }) => {
   await installSpokenFollowMocks(page);
   await page.locator('#fullscreenBtn').click();
   const exit = page.getByRole('button', {name:'Exit Fullscreen'});
   await expect(exit).toBeFocused();
   const windowPosition = await page.evaluate(() => window.scrollY);
   await page.evaluate(() => {
-    document.getElementById('fsContent').scrollTop = 0;
+    document.getElementById('view-reader').scrollTop = 0;
     window.__followScrolls.length = 0;
     readCurrentChapterAloud(30);
   });
-  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'fsContent', behavior:'smooth'}]);
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'view-reader', behavior:'smooth'}]);
   await expect.poll(() => page.evaluate(() => {
-    const content = document.getElementById('fsContent');
-    const verse = content.querySelector('[data-verse-number="30"]');
-    const bounds = content.getBoundingClientRect();
+    const content = document.getElementById('view-reader');
+    const verse = document.querySelector('#readerContent [data-verse-number="30"]');
+    const bounds = document.querySelector('.reader-toolbar').getBoundingClientRect();
     const rect = verse.getBoundingClientRect();
-    return content.scrollTop > 0 && rect.top > bounds.top + 12 && rect.bottom < bounds.bottom - 12;
+    return content.scrollTop > 0 && rect.top > bounds.bottom + 12 && rect.bottom < innerHeight - 12;
   })).toBe(true);
   expect(await page.evaluate(() => window.scrollY)).toBe(windowPosition);
   await expect(exit).toBeFocused();
-  await expect(page.locator('#fsContent [data-verse-number="30"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent [data-verse-number="30"]')).toHaveClass(/verse-spoken/);
 });
 
 test('spoken follow uses immediate scrolling when reduced motion is preferred', async ({ page }) => {

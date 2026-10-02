@@ -127,7 +127,8 @@ test('dialog lists fresh translations without downloading and provides modal key
   await expect(trigger).toHaveAttribute('aria-haspopup', 'dialog');
   await expect(trigger).toHaveAttribute('aria-controls', 'offlineBiblesDialog');
   await expect(trigger).toHaveAttribute('aria-expanded', 'false');
-  await expect(trigger.locator('xpath=preceding-sibling::*[1]')).toHaveAttribute('id', 'fullscreenBtn');
+  await expect(trigger.locator('xpath=parent::*')).toHaveClass(/bs-nav/);
+  await expect(page.locator('#view-reader .reader-toolbar > #fullscreenBtn')).toHaveCount(1);
 
   await openDialog(page);
   await expect(trigger).toHaveAttribute('aria-expanded', 'true');

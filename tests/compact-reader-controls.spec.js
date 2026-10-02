@@ -18,11 +18,12 @@ test('Reader starts with one compact primary toolbar and a closed More disclosur
   await expect(reader.getByRole('button', { name:/^Pause|^Resume|^Stop reading aloud/ })).toHaveCount(0);
   await expect(reader.locator('#readerMoreTrigger')).toHaveAttribute('aria-expanded', 'false');
   await expect(reader.locator('#readerSecondaryControls')).toBeHidden();
-  await expect(page.locator('#fullscreenBtn + #offlineBiblesTrigger')).toHaveCount(1);
+  await expect(reader.locator('.reader-toolbar > #fullscreenBtn')).toHaveCount(1);
+  await expect(page.locator('.bs-nav > #offlineBiblesTrigger')).toHaveCount(1);
   expect(await reader.locator('.reader-toolbar').evaluate(toolbar =>
     [...toolbar.children].filter(element => element.matches('select, button, .reader-controls-top'))
       .map(element => element.id || 'chapter-group')
-  )).toEqual(['bookSelect', 'chapter-group', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger']);
+  )).toEqual(['bookSelect', 'chapter-group', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']);
   for(const id of ['bookSelect', 'chapterSelect', 'readerTranslation']){
     await expect(reader.locator(`#${id}`)).toHaveCount(1);
   }
@@ -46,6 +47,34 @@ test('More opens secondary controls and closes them with the trigger', async ({ 
   await more.click();
   await expect(more).toHaveAttribute('aria-expanded', 'false');
   await expect(page.locator('#readerSecondaryControls')).toBeHidden();
+});
+
+test('More remains immediately usable after deep Reader scrolling at three widths', async ({ page }) => {
+  for(const width of [1440, 480, 320]){
+    await page.setViewportSize({width, height:700});
+    await page.locator('#readerContent [data-verse-number="45"]').scrollIntoViewIfNeeded();
+    const before = await page.evaluate(() => window.scrollY);
+    await page.locator('#readerMoreTrigger').click();
+    const geometry = await page.evaluate(() => {
+      const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
+      const panel = document.getElementById('readerSecondaryControls').getBoundingClientRect();
+      const primaryBottom = Math.max(...['bookSelect', 'chapterSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
+        .map(id => document.getElementById(id).getBoundingClientRect().bottom));
+      return {toolbarTop:toolbar.top, toolbarBottom:toolbar.bottom, panelTop:panel.top, panelBottom:panel.bottom,
+        primaryBottom, navBottom:document.querySelector('nav').getBoundingClientRect().bottom,
+        overflow:[...document.querySelectorAll('#readerSecondaryControls *')].some(element => {
+          const rect = element.getBoundingClientRect();
+          return rect.left < -1 || rect.right > innerWidth + 1;
+        })};
+    });
+    expect(geometry.toolbarTop).toBeGreaterThanOrEqual(geometry.navBottom - 1);
+    expect(geometry.panelTop).toBeGreaterThanOrEqual(geometry.primaryBottom - 1);
+    expect(geometry.panelBottom).toBeLessThanOrEqual(Math.min(geometry.toolbarBottom + 1, 700));
+    expect(geometry.overflow).toBe(false);
+    await page.locator('#readAloudSpeed').selectOption('1.25');
+    await page.locator('#readerMoreTrigger').click();
+    expect(Math.abs(await page.evaluate(() => window.scrollY) - before)).toBeLessThan(100);
+  }
 });
 
 test('Escape closes More from its trigger and keeps focus there', async ({ page }) => {
@@ -74,7 +103,7 @@ test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mob
     const geometry = await page.evaluate(() => {
       const view = document.getElementById('view-reader').getBoundingClientRect();
       const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
-      const positions = ['#bookSelect', '.reader-controls-top', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger']
+      const positions = ['#bookSelect', '.reader-controls-top', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
         .map(selector => Math.round(document.querySelector(selector).getBoundingClientRect().top));
       const verse = document.querySelector('#readerContent .reader-verse').getBoundingClientRect();
       const overflow = [...document.querySelectorAll('#view-reader *')].filter(element => {
@@ -90,6 +119,7 @@ test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mob
       expect(geometry.positions[0]).toBe(geometry.positions[1]);
       expect(geometry.positions[2]).toBe(geometry.positions[3]);
       expect(geometry.positions[3]).toBe(geometry.positions[4]);
+      expect(geometry.positions[4]).toBe(geometry.positions[5]);
       expect(geometry.positions[2]).toBeGreaterThan(geometry.positions[0]);
     }
     expect(geometry.firstVerseOffset).toBeLessThan(width === 320 ? 500 : width === 480 ? 450 : 500);

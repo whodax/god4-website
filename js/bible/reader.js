@@ -179,7 +179,7 @@ function clearReaderVerseSelection(){
   readerSelectionPending = false;
   var select = document.getElementById('verseSelect');
   if(select) select.value = '';
-  document.querySelectorAll('#readerContent [data-verse-number], #fsContent [data-verse-number]').forEach(function(element){
+  document.querySelectorAll('#readerContent [data-verse-number]').forEach(function(element){
     element.classList.remove('verse-focused');
   });
 }
@@ -188,7 +188,7 @@ function applyReaderVerseSelection(verseNumber, shouldFocus){
   var verse = Number(verseNumber);
   var target = document.querySelector('#readerContent [data-verse-number="' + verse + '"]');
   if(!target) return false;
-  document.querySelectorAll('#readerContent [data-verse-number], #fsContent [data-verse-number]').forEach(function(element){
+  document.querySelectorAll('#readerContent [data-verse-number]').forEach(function(element){
     element.classList.toggle('verse-focused', Number(element.getAttribute('data-verse-number')) === verse);
   });
   var select = document.getElementById('verseSelect');
@@ -202,6 +202,11 @@ function applyReaderVerseSelection(verseNumber, shouldFocus){
 }
 
 function readerVisibleTop(){
+  var view = document.getElementById('view-reader');
+  if(view && view.classList.contains('reader-fullscreen')){
+    var fullscreenToolbar = view.querySelector('.reader-toolbar');
+    return fullscreenToolbar ? fullscreenToolbar.getBoundingClientRect().bottom : 0;
+  }
   var top = 0;
   var siteNav = document.querySelector('nav');
   if(siteNav && getComputedStyle(siteNav).position === 'sticky'){
@@ -227,7 +232,9 @@ function scrollReaderTargetIntoView(target, behavior){
   var offset = rect.height > usableHeight - 2 * margin
     ? rect.top - (top + margin)
     : (rect.top + rect.bottom) / 2 - (top + bottom) / 2;
-  window.scrollBy({top:offset, behavior:behavior});
+  var view = document.getElementById('view-reader');
+  if(view && view.classList.contains('reader-fullscreen')) view.scrollBy({top:offset, behavior:behavior});
+  else window.scrollBy({top:offset, behavior:behavior});
 }
 
 function initializeReaderStickyOffsets(){
@@ -255,7 +262,7 @@ function initializeReaderStickyOffsets(){
 
 function cancelSpokenFollow(){
   if(!spokenFollowScrollTarget) return;
-  var target = spokenFollowScrollTarget === 'fullscreen' ? document.getElementById('fsContent') : window;
+  var target = spokenFollowScrollTarget === 'fullscreen' ? document.getElementById('view-reader') : window;
   spokenFollowScrollTarget = null;
   if(!target) return;
   var top = target === window ? window.scrollY : target.scrollTop;
@@ -265,24 +272,22 @@ function cancelSpokenFollow(){
 function clearSpokenVerseHighlight(){
   cancelSpokenFollow();
   currentSpokenVerse = null;
-  document.querySelectorAll('#readerContent .verse-spoken, #fsContent .verse-spoken').forEach(function(element){
+  document.querySelectorAll('#readerContent .verse-spoken').forEach(function(element){
     element.classList.remove('verse-spoken');
   });
 }
 
 function followSpokenVerse(){
-  var overlay = document.getElementById('fsOverlay');
-  var fullscreen = overlay && overlay.classList.contains('active');
-  var container = document.getElementById(fullscreen ? 'fsContent' : 'readerContent');
+  var shell = document.getElementById('view-reader');
+  var fullscreen = shell && shell.classList.contains('reader-fullscreen');
+  var container = document.getElementById('readerContent');
   var activeVerse = container && container.querySelector('.verse-spoken');
   if(!activeVerse || !activeVerse.getClientRects().length) return;
 
   var top = 0;
   var bottom = window.innerHeight;
   if(fullscreen){
-    var containerRect = container.getBoundingClientRect();
-    top = containerRect.top;
-    bottom = containerRect.bottom;
+    top = readerVisibleTop();
   } else {
     top = readerVisibleTop();
   }
@@ -299,7 +304,7 @@ function followSpokenVerse(){
   var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var options = {top:offset, behavior:reducedMotion ? 'auto' : 'smooth'};
   spokenFollowScrollTarget = fullscreen ? 'fullscreen' : 'window';
-  if(fullscreen) container.scrollBy(options);
+  if(fullscreen) shell.scrollBy(options);
   else window.scrollBy(options);
 }
 
@@ -308,7 +313,7 @@ function applySpokenVerseHighlight(verseNumber){
   clearSpokenVerseHighlight();
   if(!Number.isInteger(verse) || verse < 1) return;
   currentSpokenVerse = verse;
-  document.querySelectorAll('#readerContent [data-verse-number="' + verse + '"], #fsContent [data-verse-number="' + verse + '"]').forEach(function(element){
+  document.querySelectorAll('#readerContent [data-verse-number="' + verse + '"]').forEach(function(element){
     element.classList.add('verse-spoken');
   });
 }
@@ -401,7 +406,7 @@ function renderAutomaticPlaybackChapter(location){
   populateChapters();
   chapterSelect.value = String(location.chapter);
   populateVerses();
-  renderPassage(currentBook, currentChapter, 'readerContent');
+  renderPassage(currentBook, currentChapter);
   clearReaderVerseSelection();
   updateReaderControls();
   if(typeof BibleSpeech !== 'undefined') BibleSpeech.setStatusMessage('Continuing with ' + chapter.bookName + ' ' + location.chapter + '.');
@@ -864,7 +869,7 @@ function changeReaderBook(){
   loadPassage();
 }
 
-function renderPassage(bookKey, chapterNum, containerId){
+function renderPassage(bookKey, chapterNum){
   var data = BibleData.getChapter(currentTranslation, bookKey, chapterNum);
   if(!data) return;
   var bookName = escapeHtml(data.bookName);
@@ -874,12 +879,8 @@ function renderPassage(bookKey, chapterNum, containerId){
   for(var i = 0; i < data.verses.length; i++){
     html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + ' <button type="button" class="verse-speak" data-verse-speech="' + escapeHtml(i+1) + '" aria-label="Read verse ' + escapeHtml(i+1) + ' aloud">Read aloud</button></span> ';
   }
-  var container = document.getElementById(containerId);
-  var fsTitle = document.getElementById('fsTitle');
-  var fsContent = document.getElementById('fsContent');
+  var container = document.getElementById('readerContent');
   if(container) container.innerHTML = html;
-  if(fsTitle) fsTitle.textContent = bookName + ' ' + chapterNum;
-  if(fsContent) fsContent.innerHTML = html;
   populateVerses();
 }
 
@@ -901,7 +902,7 @@ function loadPassage(){
     translationId:currentTranslation, bookId:currentBook, chapter:currentChapter,
     verse:Number.isInteger(currentVerse) && BibleData.getVerse(currentTranslation, currentBook, currentChapter, currentVerse) ? currentVerse : 1
   });
-  renderPassage(currentBook, currentChapter, 'readerContent');
+  renderPassage(currentBook, currentChapter);
   if(currentVerse && BibleData.getVerse(currentTranslation, currentBook, currentChapter, currentVerse)){
     applyReaderVerseSelection(currentVerse, false);
   } else {
@@ -990,48 +991,86 @@ function highlightVerse(el){
   updateReaderControls();
 }
 
+var fullscreenBackgroundState = [];
+var fullscreenReturnFocus = null;
+
+function setFullscreenBackground(shell, active){
+  if(!active){
+    fullscreenBackgroundState.forEach(function(item){
+      item.element.inert = item.inert;
+      if(item.ariaHidden === null) item.element.removeAttribute('aria-hidden');
+      else item.element.setAttribute('aria-hidden', item.ariaHidden);
+    });
+    fullscreenBackgroundState = [];
+    return;
+  }
+  for(var current = shell; current && current !== document.body; current = current.parentElement){
+    Array.from(current.parentElement.children).forEach(function(sibling){
+      if(sibling === current) return;
+      fullscreenBackgroundState.push({element:sibling, inert:sibling.inert, ariaHidden:sibling.getAttribute('aria-hidden')});
+      sibling.inert = true;
+      sibling.setAttribute('aria-hidden', 'true');
+    });
+  }
+}
+
 function toggleFullscreen(){
-  var overlay = document.getElementById('fsOverlay');
-  var fullscreenButton = document.getElementById('fullscreenBtn');
-  var verseNavigation = document.getElementById('readerVerseNavigation');
-  var secondaryControls = document.getElementById('readerSecondaryControls');
-  var fullscreenContent = document.getElementById('fsContent');
-  if(!overlay) return;
+  var shell = document.getElementById('view-reader');
+  var button = document.getElementById('fullscreenBtn');
+  if(!shell || !button) return;
   cancelSpokenFollow();
-  overlay.classList.toggle('active');
-  var isActive = overlay.classList.contains('active');
-  overlay.setAttribute('aria-hidden', isActive ? 'false' : 'true');
-  if(fullscreenButton) fullscreenButton.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-  if(isActive){
-    if(verseNavigation && fullscreenContent) overlay.insertBefore(verseNavigation, fullscreenContent);
-    var closeButton = overlay.querySelector('.fs-close');
-    if(closeButton) closeButton.focus();
+  var entering = !shell.classList.contains('reader-fullscreen');
+  if(entering){
+    fullscreenReturnFocus = document.activeElement;
+    shell.classList.add('reader-fullscreen');
+    shell.setAttribute('role', 'dialog');
+    shell.setAttribute('aria-modal', 'true');
+    shell.setAttribute('aria-label', 'Fullscreen Reader');
+    setFullscreenBackground(shell, true);
   } else {
-    if(verseNavigation && secondaryControls) secondaryControls.insertBefore(verseNavigation, secondaryControls.querySelector('.reader-audio-controls'));
-    if(fullscreenButton) fullscreenButton.focus();
+    shell.classList.remove('reader-fullscreen');
+    shell.removeAttribute('role');
+    shell.removeAttribute('aria-modal');
+    shell.removeAttribute('aria-label');
+    setFullscreenBackground(shell, false);
+  }
+  button.setAttribute('aria-pressed', entering ? 'true' : 'false');
+  button.setAttribute('aria-label', entering ? 'Exit Fullscreen' : 'Enter Fullscreen');
+  button.textContent = entering ? 'Exit Fullscreen' : 'Fullscreen';
+  if(entering) button.focus();
+  else {
+    (fullscreenReturnFocus && fullscreenReturnFocus.isConnected ? fullscreenReturnFocus : button).focus();
+    fullscreenReturnFocus = null;
   }
 }
 
 document.addEventListener('keydown', function(event){
-  var overlay = document.getElementById('fsOverlay');
-  if(!overlay || !overlay.classList.contains('active')) return;
+  var shell = document.getElementById('view-reader');
+  if(!shell || !shell.classList.contains('reader-fullscreen')) return;
   if(event.key === 'Escape'){
+    var more = document.getElementById('readerMoreTrigger');
+    if(more && more.getAttribute('aria-expanded') === 'true'){
+      event.preventDefault();
+      event.stopPropagation();
+      closeReaderMore();
+      return;
+    }
+    var wordStudy = document.getElementById('wordStudyPanel');
+    if(wordStudy && !wordStudy.hidden && wordStudy.contains(document.activeElement)) return;
     event.preventDefault();
     toggleFullscreen();
   } else if(event.key === 'Tab'){
-    var focusable = Array.from(overlay.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+    var focusable = Array.from(shell.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'))
+      .filter(function(element){ return element.getClientRects().length && !element.closest('[inert]'); });
     if(!focusable.length) return;
     var first = focusable[0];
     var last = focusable[focusable.length - 1];
-    if(event.shiftKey && document.activeElement === first){
+    if(!shell.contains(document.activeElement) || (event.shiftKey && document.activeElement === first) || (!event.shiftKey && document.activeElement === last)){
       event.preventDefault();
-      last.focus();
-    } else if(!event.shiftKey && document.activeElement === last){
-      event.preventDefault();
-      first.focus();
+      (event.shiftKey ? last : first).focus();
     }
   }
-});
+}, true);
 
 function runWithBibleExperience(action){
   if(typeof bibleExperienceReady !== 'undefined' && bibleExperienceReady){
@@ -1072,8 +1111,6 @@ function initializeReaderControls(){
     var element = document.getElementById(binding[0]);
     if(element) element.addEventListener(binding[1], binding[2]);
   });
-  var fullscreenClose = document.querySelector('.fs-close');
-  if(fullscreenClose) fullscreenClose.addEventListener('click', toggleFullscreen);
   document.querySelectorAll('[data-reader-action]').forEach(function(button){
     var action = button.getAttribute('data-reader-action');
     var handlers = {
@@ -1087,7 +1124,7 @@ function initializeReaderControls(){
   document.querySelectorAll('[data-voice-command-button]').forEach(function(button){
     button.addEventListener('click', function(){ runWithBibleExperience(toggleVoiceCommands); });
   });
-  ['readerContent', 'fsContent'].forEach(function(id){
+  ['readerContent'].forEach(function(id){
     var container = document.getElementById(id);
     if(!container) return;
     container.addEventListener('click', function(event){
@@ -1101,6 +1138,15 @@ function initializeReaderControls(){
     });
   });
 }
+function closeReaderMore(){
+  var moreTrigger = document.getElementById('readerMoreTrigger');
+  var secondaryControls = document.getElementById('readerSecondaryControls');
+  if(!moreTrigger || !secondaryControls) return;
+  secondaryControls.hidden = true;
+  moreTrigger.setAttribute('aria-expanded', 'false');
+  moreTrigger.focus();
+}
+
 if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener === 'function'){
   BibleSpeech.setPlaybackListener({
     onVerseStart: applySpokenVerseHighlight,
@@ -1112,11 +1158,6 @@ if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener 
   var moreTrigger = document.getElementById('readerMoreTrigger');
   var secondaryControls = document.getElementById('readerSecondaryControls');
   if(moreTrigger && secondaryControls){
-    function closeReaderMore(){
-      secondaryControls.hidden = true;
-      moreTrigger.setAttribute('aria-expanded', 'false');
-      moreTrigger.focus();
-    }
     moreTrigger.addEventListener('click', function(){
       var opening = moreTrigger.getAttribute('aria-expanded') !== 'true';
       if(!opening){ closeReaderMore(); return; }

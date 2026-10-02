@@ -132,7 +132,6 @@
           </div>
         </div>
         <button class="bs-btn" type="button" aria-controls="view-plan" aria-pressed="false">Plan</button>
-        <button class="bs-btn" id="fullscreenBtn" type="button" aria-pressed="false">Fullscreen</button>
         <button class="bs-btn" id="offlineBiblesTrigger" type="button" aria-haspopup="dialog" aria-controls="offlineBiblesDialog" aria-expanded="false">Offline Bibles</button>
       </div>
     </div>
@@ -161,6 +160,7 @@
           <select id="readerTranslation"></select>
           <button id="readAloudPlay" type="button" aria-label="Play reading aloud">Play</button>
           <button id="readerMoreTrigger" type="button" aria-controls="readerSecondaryControls" aria-expanded="false">More</button>
+          <button id="fullscreenBtn" type="button" aria-pressed="false" aria-label="Enter Fullscreen">Fullscreen</button>
           <div id="readerSecondaryControls" class="reader-secondary-controls" hidden>
             <label class="sr-only" for="verseSelect">Verse</label>
             <select id="verseSelect">
@@ -256,14 +256,6 @@
         </div>
         <div class="plan-days" id="planDays"></div>
       </div>
-    </div>
-    <!-- FULLSCREEN OVERLAY -->
-    <div class="fs-overlay" id="fsOverlay" role="dialog" aria-modal="true" aria-labelledby="fsTitle" aria-hidden="true">
-      <div class="fs-header">
-        <h2 id="fsTitle">John 1</h2>
-        <button class="fs-close" type="button">Exit Fullscreen</button>
-      </div>
-      <div class="fs-content" id="fsContent"></div>
     </div>
   </div>
 </section>
