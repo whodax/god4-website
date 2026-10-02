@@ -34,7 +34,15 @@ var BibleSpeech = (function createBibleSpeech(){
     return UserData.speechSpeed.load();
   }
 
-  function readVoicePreference(){ return UserData.speechVoice.load(); }
+  function readVoicePreference(){
+    var saved = UserData.speechVoice.load();
+    // Older profiles and device names now map to the two supported choices.
+    // In particular, the former Male 2 selection must never reopen its silent voice.
+    var preference = saved === 'female' || /^(?:adult-female|child-female)$/i.test(saved) ||
+      /\b(?:Zira|Samantha)\b|Google UK English Female/i.test(saved) ? 'female' : 'male';
+    if(saved !== preference) UserData.speechVoice.save(preference);
+    return preference;
+  }
 
   function voices(){
     if(!supported() || typeof window.speechSynthesis.getVoices !== 'function') return [];
@@ -77,6 +85,7 @@ var BibleSpeech = (function createBibleSpeech(){
     var groups = new Map();
     sortedEnglishVoices().forEach(function(voice){
       if(/^(?:Automatic|Adult Male|Adult Female|Child Male|Child Female)$/i.test(voice.name)) return;
+      if(/Google UK English Male/i.test(voice.name)) return;
       // These aliases were heard as the same base voice on the target phone.
       // A matching voiceURI also collapses aliases on other devices.
       var group = knownVoiceGroup(voice.name) ||
@@ -84,9 +93,9 @@ var BibleSpeech = (function createBibleSpeech(){
       var current = groups.get(group);
       if(!current || (!isCanonicalVoice(current, group) && isCanonicalVoice(voice, group))) groups.set(group, voice);
     });
-    var ordered = ['david', 'uk-male', 'zira'].filter(function(group){ return groups.has(group); })
+    var ordered = ['david', 'zira', 'uk-male'].filter(function(group){ return groups.has(group); })
       .map(function(group){ return groups.get(group); });
-    groups.forEach(function(voice, group){ if(['david', 'uk-male', 'zira'].indexOf(group) < 0) ordered.push(voice); });
+    groups.forEach(function(voice, group){ if(['david', 'zira', 'uk-male'].indexOf(group) < 0) ordered.push(voice); });
     var usedNames = new Set();
     var usedUris = new Set();
     return ordered.filter(function(voice){
@@ -97,40 +106,26 @@ var BibleSpeech = (function createBibleSpeech(){
     });
   }
 
-  function voiceLabel(voice){
-    if(/\bDavid\b/i.test(voice.name)) return 'Male 1 — David';
-    if(/Google UK English Male/i.test(voice.name)) return 'Male 2 — Google UK English Male';
-    if(/\bZira\b/i.test(voice.name)) return 'Female — Zira';
-    return voice.name;
-  }
-
-  function resolvePreference(available){
-    if(!available.length) return null;
-    var exact = available.find(function(voice){ return voice.name === voicePreference; });
-    if(exact) return exact;
-    var savedGroup = knownVoiceGroup(voicePreference);
-    if(savedGroup){
-      var grouped = available.find(function(voice){ return knownVoiceGroup(voice.name) === savedGroup; });
-      if(grouped) return grouped;
+  function voiceChoices(){
+    var available = distinctVoices();
+    if(!available.length) return [];
+    var david = available.find(function(voice){ return /\bDavid\b/i.test(voice.name); });
+    var zira = available.find(function(voice){ return /\bZira\b/i.test(voice.name); });
+    var male = david || available.find(function(voice){ return voice !== zira; }) || available[0];
+    var female = zira || available.find(function(voice){ return voice !== male; }) || available[0];
+    if(male === female){
+      var onlyLabel = zira ? 'female' : david ? 'male' : voicePreference;
+      return [{value:onlyLabel, voice:male}];
     }
-    var preferredGroup = {
-      'auto':'david', 'adult-male':'david', 'child-male':'uk-male',
-      'adult-female':'zira', 'child-female':'zira'
-    }[voicePreference];
-    if(preferredGroup){
-      var preferred = available.find(function(voice){ return knownVoiceGroup(voice.name) === preferredGroup; });
-      if(preferred) return preferred;
-      if(voicePreference === 'child-male' || /female$/.test(voicePreference)) return available[1] || available[0];
-    }
-    return available[0];
+    return [{value:'male', voice:male}, {value:'female', voice:female}];
   }
 
   function populateVoiceSelector(){
     var select = elements().voice;
     if(!select) return;
-    var available = distinctVoices();
+    var choices = voiceChoices();
     select.textContent = '';
-    if(!available.length){
+    if(!choices.length){
       var placeholder = document.createElement('option');
       placeholder.value = '';
       placeholder.textContent = voices().length ? 'No English voices available' : 'Loading voices…';
@@ -138,23 +133,20 @@ var BibleSpeech = (function createBibleSpeech(){
       select.disabled = true;
       return;
     }
-    var selected = resolvePreference(available);
-    if(selected && voicePreference !== selected.name){
-      voicePreference = selected.name;
-      UserData.speechVoice.save(voicePreference);
-    }
-    available.forEach(function(voice){
+    choices.forEach(function(choice){
       var option = document.createElement('option');
-      option.value = voice.name;
-      option.textContent = voiceLabel(voice);
+      option.value = choice.value;
+      option.textContent = choice.value === 'male' ? 'Male' : 'Female';
       select.appendChild(option);
     });
-    select.value = selected.name;
+    select.value = choices.some(function(choice){ return choice.value === voicePreference; }) ? voicePreference : choices[0].value;
     select.disabled = false;
   }
 
   function selectedVoice(){
-    return distinctVoices().find(function(voice){ return voice.name === voicePreference; }) || null;
+    var choices = voiceChoices();
+    var choice = choices.find(function(item){ return item.value === voicePreference; }) || choices[0];
+    return choice ? choice.voice : null;
   }
 
   function getResolvedVoiceInfo(){
@@ -463,7 +455,7 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function setVoice(name){
-    if(!distinctVoices().some(function(voice){ return voice.name === name; })) return;
+    if(!voiceChoices().some(function(choice){ return choice.value === name; })) return;
     voicePreference = name;
     UserData.speechVoice.save(voicePreference);
     populateVoiceSelector();

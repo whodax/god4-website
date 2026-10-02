@@ -9,8 +9,9 @@ const phoneVoices = [
   {name:'Google UK English Male', lang:'en-GB', localService:false, voiceURI:'google-uk-male'}
 ];
 
-async function installSpeech(page, initialVoices){
-  await page.addInitScript(voices => {
+async function installSpeech(page, initialVoices, savedVoice){
+  await page.addInitScript(({voices, saved}) => {
+    if(saved !== undefined) localStorage.setItem('god4.speech.voice', saved);
     window.__speech = {voices, utterances:[], listeners:[], cancels:0};
     window.SpeechSynthesisUtterance = function(text){ this.text = text; };
     Object.defineProperty(window, 'speechSynthesis', {configurable:true, value:{
@@ -20,7 +21,7 @@ async function installSpeech(page, initialVoices){
       cancel(){ window.__speech.cancels++; }, pause(){}, resume(){}
     }});
     window.addEventListener('DOMContentLoaded', () => initializeBibleExperience());
-  }, initialVoices);
+  }, {voices:initialVoices, saved:savedVoice});
   await page.goto('/');
 }
 
@@ -34,41 +35,56 @@ async function chooseVoice(page, value){
 async function latestUtterance(page){
   return page.evaluate(() => {
     const utterance = window.__speech.utterances.at(-1);
-    return {voice:utterance.voice && utterance.voice.name || null, pitch:utterance.pitch, rate:utterance.rate};
+    return {voice:utterance.voice?.name || null, pitch:utterance.pitch, rate:utterance.rate};
   });
 }
 
-test('the phone inventory shows only David, Google UK Male, and Zira as concrete choices', async ({page}) => {
+test('phone inventory exposes only Male and Female and uses exact David and Zira objects', async ({page}) => {
   await installSpeech(page, phoneVoices);
-  const options = page.locator('#readAloudVoice option');
-  await expect(options).toHaveText(['Male 1 — David', 'Male 2 — Google UK English Male', 'Female — Zira']);
-  await expect(page.locator('#readAloudVoice optgroup')).toHaveCount(0);
-  await expect(page.locator('#readAloudVoice')).toHaveValue('David English U.S.');
-  for(const name of ['David English U.S.', 'Google UK English Male', 'Zira English U.S.']){
-    await chooseVoice(page, name);
-    await page.locator('#readAloudSpeed').selectOption('1.5');
-    await page.locator('#readAloudPlay').click();
-    expect(await latestUtterance(page)).toEqual({voice:name, pitch:1, rate:1.5});
-    await page.locator('#readAloudPlay').click();
-  }
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
+  await expect(page.locator('#readAloudVoice')).toHaveValue('male');
+  await page.locator('#readAloudPlay').click();
+  expect(await latestUtterance(page)).toEqual({voice:'David English U.S.', pitch:1, rate:1});
+  expect(await page.evaluate(() => window.__speech.utterances[0].voice === window.__speech.voices[4])).toBe(true);
+  await page.locator('#readAloudPlay').click();
+  await chooseVoice(page, 'female');
+  await page.locator('#readAloudSpeed').selectOption('1.5');
+  await page.locator('#readAloudPlay').click();
+  expect(await latestUtterance(page)).toEqual({voice:'Zira English U.S.', pitch:1, rate:1.5});
+  expect(await page.evaluate(() => window.__speech.utterances.at(-1).voice === window.__speech.voices[3])).toBe(true);
 });
 
-test('changing concrete voice affects the next verse without restarting the current one', async ({page}) => {
+for(const [first, second] of [['male','female'], ['female','male']]){
+  test(`${first} to ${second} changes concrete voice after Stop and Play`, async ({page}) => {
+    await installSpeech(page, phoneVoices);
+    await chooseVoice(page, first);
+    await page.locator('#readAloudPlay').click();
+    await page.locator('#readAloudPlay').click();
+    await chooseVoice(page, second);
+    await page.locator('#readAloudPlay').click();
+    expect(await page.evaluate(() => ({
+      different:window.__speech.utterances[0].voice !== window.__speech.utterances[1].voice,
+      stored:localStorage.getItem('god4.speech.voice')
+    }))).toEqual({different:true, stored:second});
+  });
+}
+
+test('changing during a spoken verse affects the next utterance', async ({page}) => {
   await installSpeech(page, phoneVoices);
   await page.locator('#readAloudPlay').click();
-  expect(await latestUtterance(page)).toMatchObject({voice:'David English U.S.', pitch:1});
-  await chooseVoice(page, 'Google UK English Male');
+  await chooseVoice(page, 'female');
   expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(1);
-  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
-  expect(await latestUtterance(page)).toMatchObject({voice:'Google UK English Male', pitch:1});
-  await chooseVoice(page, 'Zira English U.S.');
-  await page.evaluate(() => window.__speech.utterances.at(-1).onend());
-  expect(await latestUtterance(page)).toMatchObject({voice:'Zira English U.S.', pitch:1});
+  await page.evaluate(() => window.__speech.utterances[0].onend());
+  expect(await page.evaluate(() => ({
+    first:window.__speech.utterances[0].voice.name,
+    next:window.__speech.utterances[1].voice.name,
+    stored:localStorage.getItem('god4.speech.voice')
+  }))).toEqual({first:'David English U.S.', next:'Zira English U.S.', stored:'female'});
 });
 
-test('selected concrete voice persists through Stop, chapter continuation, Repeat, fullscreen, verse speech, and reload', async ({page}) => {
+test('Female persists through Stop, next chapter, Repeat, fullscreen, verse speech, and reload', async ({page}) => {
   await installSpeech(page, phoneVoices);
-  await chooseVoice(page, 'Zira English U.S.');
+  await chooseVoice(page, 'female');
   const lastVerse = await page.evaluate(() => BibleData.getChapter('web', 'john', 1).verses.length);
   await page.locator('#verseSelect').selectOption(String(lastVerse));
   await page.locator('#readAloudPlay').click();
@@ -84,72 +100,65 @@ test('selected concrete voice persists through Stop, chapter continuation, Repea
   expect(await latestUtterance(page)).toMatchObject({voice:'Zira English U.S.', pitch:1});
   await page.locator('#fullscreenBtn').click();
   await page.reload();
-  await expect(page.locator('#readAloudVoice')).toHaveValue('Zira English U.S.');
+  await expect(page.locator('#readAloudVoice')).toHaveValue('female');
   await page.locator('#readAloudPlay').click();
   await expect.poll(() => page.evaluate(() => window.__speech.utterances.length)).toBe(1);
   expect(await latestUtterance(page)).toMatchObject({voice:'Zira English U.S.', pitch:1});
 });
 
-test('delayed voiceschanged retains a saved concrete voice and does not duplicate options', async ({page}) => {
-  await installSpeech(page, []);
-  await page.evaluate(() => localStorage.setItem('god4.speech.voice', 'Zira English U.S.'));
-  await page.reload();
-  await page.setViewportSize({width:320, height:700});
+test('delayed voiceschanged retains Female selection without duplicate choices', async ({page}) => {
+  await installSpeech(page, [], 'female');
   await expect(page.locator('#readAloudVoice')).toBeDisabled();
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Loading voices…']);
-  expect(await page.evaluate(() => window.__speech.listeners.length)).toBe(1);
   await page.evaluate(voices => {
     window.__speech.voices = voices;
     window.__speech.listeners[0]();
     window.__speech.listeners[0]();
   }, phoneVoices);
-  await expect(page.locator('#readAloudVoice')).toHaveValue('Zira English U.S.');
-  await expect(page.locator('#readAloudVoice option')).toHaveCount(3);
-  const overflow = await page.evaluate(() => [...document.querySelectorAll('#view-reader *')].some(element => {
-    const bounds = element.getBoundingClientRect();
-    return bounds.left < -1 || bounds.right > innerWidth + 1;
-  }));
-  expect(overflow).toBe(false);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
+  await expect(page.locator('#readAloudVoice')).toHaveValue('female');
   await page.locator('#readAloudPlay').click();
   expect(await latestUtterance(page)).toMatchObject({voice:'Zira English U.S.', pitch:1});
 });
 
-test('one or two English voices produce only one or two concrete choices', async ({page}) => {
-  const generic = [
+test('unavailable preferred voices use distinct deterministic English fallbacks', async ({page}) => {
+  await installSpeech(page, [
     {name:'Neutral B', lang:'en-US', localService:true, voiceURI:'b'},
     {name:'Neutral A', lang:'en-US', localService:true, voiceURI:'a'}
-  ];
-  await installSpeech(page, generic);
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Neutral A', 'Neutral B']);
-  await chooseVoice(page, 'Neutral B');
-  await page.evaluate(() => { window.__speech.voices.reverse(); window.__speech.listeners[0](); });
-  await expect(page.locator('#readAloudVoice')).toHaveValue('Neutral B');
-  await page.evaluate(() => { window.__speech.voices = [window.__speech.voices[0]]; window.__speech.listeners[0](); });
-  await expect(page.locator('#readAloudVoice option')).toHaveCount(1);
+  ]);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
   await page.locator('#readAloudPlay').click();
-  expect(await latestUtterance(page)).toMatchObject({voice:'Neutral A', pitch:1});
+  expect(await latestUtterance(page)).toMatchObject({voice:'Neutral A'});
   await page.locator('#readAloudPlay').click();
-  await page.evaluate(() => { window.__speech.voices = [{name:'French', lang:'fr-FR'}]; window.__speech.listeners[0](); });
-  await expect(page.locator('#readAloudVoice')).toBeDisabled();
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['No English voices available']);
+  await chooseVoice(page, 'female');
+  await page.locator('#readAloudPlay').click();
+  expect(await latestUtterance(page)).toMatchObject({voice:'Neutral B'});
 });
 
-test('shared voiceURI suppresses another alias while a genuinely separate voice remains', async ({page}) => {
+test('one English voice stays playable with one visible choice', async ({page}) => {
+  await installSpeech(page, [{name:'Neutral A', lang:'en-US', localService:true, voiceURI:'a'}]);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male']);
+  await page.locator('#readAloudPlay').click();
+  expect(await latestUtterance(page)).toMatchObject({voice:'Neutral A', pitch:1});
+});
+
+test('duplicate voiceURI aliases never create duplicate visible choices', async ({page}) => {
   await installSpeech(page, [
     {name:'Neutral A', lang:'en-US', localService:true, voiceURI:'shared'},
     {name:'Neutral Alias', lang:'en-US', localService:true, voiceURI:'shared'},
     {name:'Neutral B', lang:'en-US', localService:true, voiceURI:'separate'}
   ]);
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Neutral A', 'Neutral B']);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
 });
 
-test('old profile and duplicate device preferences migrate to concrete available voices', async ({page}) => {
+test('old profiles and concrete names migrate safely, including silent Male 2', async ({page}) => {
   await installSpeech(page, phoneVoices);
   const migrations = [
-    ['auto', 'David English U.S.'], ['adult-male', 'David English U.S.'],
-    ['child-male', 'Google UK English Male'], ['adult-female', 'Zira English U.S.'],
-    ['child-female', 'Zira English U.S.'], ['Mark English U.S.', 'Google UK English Male'],
-    ['Google UK English Female', 'Zira English U.S.']
+    ['auto','male'], ['adult-male','male'], ['child-male','male'],
+    ['adult-female','female'], ['child-female','female'],
+    ['David English U.S.','male'], ['Male 1 — David','male'],
+    ['Zira English U.S.','female'], ['Female — Zira','female'],
+    ['Google UK English Male','male'], ['Male 2 — Google UK English Male','male'],
+    ['Mark English U.S.','male'], ['Google UK English Female','female']
   ];
   for(const [oldValue, expected] of migrations){
     await page.evaluate(value => localStorage.setItem('god4.speech.voice', value), oldValue);

@@ -1110,7 +1110,7 @@ test('reader read-aloud controls are disabled when Web Speech API is unavailable
 test('verse read-aloud shares chapter speech and applies persisted speed and voice', async ({ page }) => {
   await page.addInitScript(() => {
     window.__speech = { spoken: [], cancels: 0, voices: [
-      { name: 'Samantha', lang: 'en-US', localService: true },
+      { name: 'Microsoft Zira', lang: 'en-US', localService: true },
       { name: 'Daniel', lang: 'en-GB', localService: true },
       { name: 'Extra One', lang: 'en-US', localService: true },
       { name: 'Extra Two', lang: 'en-US', localService: true },
@@ -1140,10 +1140,10 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
 
   await expect(page.locator('#readAloudSpeed option')).toHaveText(['50%', '75%', '100%', '125%', '150%', '175%', '200%', '225%', '250%']);
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1');
-  await expect(page.locator('#readAloudVoice option')).toHaveCount(7);
+  await expect(page.locator('#readAloudVoice option')).toHaveCount(2);
   await page.evaluate(() => {
     window.__speech.voices = [
-      { name: 'Samantha', lang: 'en-US', localService: true },
+      { name: 'Microsoft Zira', lang: 'en-US', localService: true },
       { name: 'Daniel', lang: 'en-GB', localService: true },
       { name: 'Refreshed Voice', lang: 'en-US', localService: true },
       { name: 'Extra One', lang: 'en-US', localService: true },
@@ -1153,19 +1153,16 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
     ];
     window.speechSynthesis.voiceChangedHandler();
   });
-  await expect(page.locator('#readAloudVoice option')).toHaveCount(7);
-  expect(await page.locator('#readAloudVoice option').allTextContents()).toEqual(expect.arrayContaining([
-    'Samantha', 'Daniel', 'Refreshed Voice', 'Extra One', 'Extra Two', 'Extra Three', 'Extra Four'
-  ]));
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
   await openReaderMore(page);
-  await page.locator('#readAloudVoice').selectOption('Samantha');
+  await page.locator('#readAloudVoice').selectOption('female');
   await openReaderMore(page);
   await page.locator('#readAloudSpeed').selectOption('1.5');
   await page.locator('#readAloudPlay').click();
   expect(await page.evaluate(() => ({ text: window.__speech.spoken[0].text, rate: window.__speech.spoken[0].rate, voice: window.__speech.spoken[0].voice.name }))).toEqual({
     text: 'In the beginning was the Word, and the Word was with God, and the Word was God.',
     rate: 1.5,
-    voice: 'Samantha'
+    voice: 'Microsoft Zira'
   });
 
   const cancelsBeforeVerse = await page.evaluate(() => window.__speech.cancels);
@@ -1184,7 +1181,7 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
     utterance: expect.objectContaining({ text: expectedWebVerse }),
     cancels: cancelsBeforeVerse + 1,
     storedSpeed: '1.5',
-    storedVoice: 'Samantha'
+    storedVoice: 'female'
   });
   expect(await page.evaluate(() => window.__speech.spoken[1].text)).not.toContain('Read aloud');
   await page.locator('#readAloudPlay').click();
@@ -2045,12 +2042,12 @@ test('speech voice labels identify concrete David and Zira while retaining exact
   });
   await page.goto('/');
   expect(await page.locator('#readAloudVoice option').allTextContents()).toEqual([
-    'Male 1 — David', 'Microsoft Mark', 'Female — Zira'
+    'Male', 'Female'
   ]);
   await openReaderMore(page);
-  await page.locator('#readAloudVoice').selectOption('Microsoft Mark');
+  await page.locator('#readAloudVoice').selectOption('female');
   await page.locator('#readAloudPlay').click();
-  expect(await page.evaluate(() => window.__speech.spoken[0].voice.name)).toBe('Microsoft Mark');
+  expect(await page.evaluate(() => window.__speech.spoken[0].voice.name)).toBe('Microsoft Zira');
 });
 
 test('spoken book commands navigate deterministically and only play when requested', async ({ page }) => {
@@ -3095,16 +3092,16 @@ test('User data storage preserves all six legacy keys and serialized formats acr
   await expect(page.locator('#heroFav')).toHaveAttribute('aria-pressed', 'true');
   await expect(page.locator('#readerTranslation')).toHaveValue('asv');
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1.5');
-  await expect(page.locator('#readAloudVoice')).toHaveValue('Samantha');
+  await expect(page.locator('#readAloudVoice')).toHaveValue('female');
   await page.getByRole('button', {name: 'Plan', exact: true}).click();
   await expect(page.locator('#planDone')).toHaveText('2 of 30 days');
-  expect(await page.evaluate(keys => Object.fromEntries(keys.map(key => [key, localStorage.getItem(key)])), Object.keys(legacy))).toEqual(legacy);
+  expect(await page.evaluate(keys => Object.fromEntries(keys.map(key => [key, localStorage.getItem(key)])), Object.keys(legacy))).toEqual({...legacy, 'god4.speech.voice':'female'});
   await page.getByRole('button', {name: 'Reader', exact: true}).click();
   await openReaderMore(page);
   await page.locator('#readAloudSpeed').selectOption('2');
   await page.reload();
   await expect(page.locator('#readAloudSpeed')).toHaveValue('2');
-  await expect(page.locator('#readAloudVoice')).toHaveValue('Samantha');
+  await expect(page.locator('#readAloudVoice')).toHaveValue('female');
 });
 
 test('User data storage validates malformed domains and keeps failed writes and removals in memory', async ({ page }) => {

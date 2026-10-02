@@ -312,7 +312,7 @@ test('Read Aloud, voice commands, and same-origin Word Study work without CSP vi
   const policy = (await page.request.get(server.origin + '/')).headers()['permissions-policy'];
   expect(policy).toContain('microphone=(self)');
   await page.locator('#readerMoreTrigger').click();
-  await page.locator('#readAloudVoice').selectOption({label:'Mock Voice'});
+  await page.locator('#readAloudVoice').selectOption('male');
   await page.locator('#readAloudSpeed').selectOption('1.25');
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
