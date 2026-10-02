@@ -1140,7 +1140,7 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
 
   await expect(page.locator('#readAloudSpeed option')).toHaveText(['50%', '75%', '100%', '125%', '150%', '175%', '200%', '225%', '250%']);
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1');
-  await expect(page.locator('#readAloudVoice option')).toHaveCount(11);
+  await expect(page.locator('#readAloudVoice option')).toHaveCount(7);
   await page.evaluate(() => {
     window.__speech.voices = [
       { name: 'Samantha', lang: 'en-US', localService: true },
@@ -1153,7 +1153,10 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
     ];
     window.speechSynthesis.voiceChangedHandler();
   });
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Automatic', 'Adult Male', 'Adult Female', 'Child Male', 'Child Female', 'Samantha', 'Daniel', 'Refreshed Voice', 'Extra One', 'Extra Two', 'Extra Three']);
+  await expect(page.locator('#readAloudVoice option')).toHaveCount(7);
+  expect(await page.locator('#readAloudVoice option').allTextContents()).toEqual(expect.arrayContaining([
+    'Samantha', 'Daniel', 'Refreshed Voice', 'Extra One', 'Extra Two', 'Extra Three', 'Extra Four'
+  ]));
   await openReaderMore(page);
   await page.locator('#readAloudVoice').selectOption('Samantha');
   await openReaderMore(page);
@@ -2025,7 +2028,7 @@ test('denied microphone permission does not auto-start or enter a restart loop',
   await page.waitForTimeout(350);
   expect(await page.evaluate(() => window.__recognition.starts)).toBe(1);
 });
-test('speech voice labels shorten Microsoft display names but retain full voice objects', async ({ page }) => {
+test('speech voice labels identify concrete David and Zira while retaining exact voice objects', async ({ page }) => {
   await page.addInitScript(() => {
     window.__speech = { spoken: [] };
     const availableVoices = [
@@ -2041,9 +2044,11 @@ test('speech voice labels shorten Microsoft display names but retain full voice 
     } });
   });
   await page.goto('/');
-  expect(await page.locator('#readAloudVoice option').allTextContents()).toEqual(expect.arrayContaining(['Automatic', 'Mark', 'Zira', 'David']));
+  expect(await page.locator('#readAloudVoice option').allTextContents()).toEqual([
+    'Male 1 — David', 'Microsoft Mark', 'Female — Zira'
+  ]);
   await openReaderMore(page);
-  await page.locator('#readAloudVoice').selectOption({ label: 'Mark' });
+  await page.locator('#readAloudVoice').selectOption('Microsoft Mark');
   await page.locator('#readAloudPlay').click();
   expect(await page.evaluate(() => window.__speech.spoken[0].voice.name)).toBe('Microsoft Mark');
 });
@@ -3097,11 +3102,9 @@ test('User data storage preserves all six legacy keys and serialized formats acr
   await page.getByRole('button', {name: 'Reader', exact: true}).click();
   await openReaderMore(page);
   await page.locator('#readAloudSpeed').selectOption('2');
-  await openReaderMore(page);
-  await page.locator('#readAloudVoice').selectOption('auto');
   await page.reload();
   await expect(page.locator('#readAloudSpeed')).toHaveValue('2');
-  await expect(page.locator('#readAloudVoice')).toHaveValue('auto');
+  await expect(page.locator('#readAloudVoice')).toHaveValue('Samantha');
 });
 
 test('User data storage validates malformed domains and keeps failed writes and removals in memory', async ({ page }) => {

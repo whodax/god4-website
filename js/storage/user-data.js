@@ -78,7 +78,7 @@ var UserData = (function(storage){
       load: function(){ return speed(storage.read(keys.speed)); },
       save: function(value){ return storage.write(keys.speed, String(speed(value))); }
     },
-    // Stable voice profiles and legacy device voice names share this preference.
+    // A concrete device voice name; BibleSpeech migrates older profile values.
     speechVoice: {
       load: function(){ return voice(storage.read(keys.voice)); },
       save: function(value){ return storage.write(keys.voice, voice(value)); }
