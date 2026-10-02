@@ -127,7 +127,8 @@ test('dialog lists fresh translations without downloading and provides modal key
   await expect(trigger).toHaveAttribute('aria-haspopup', 'dialog');
   await expect(trigger).toHaveAttribute('aria-controls', 'offlineBiblesDialog');
   await expect(trigger).toHaveAttribute('aria-expanded', 'false');
-  await expect(trigger.locator('xpath=preceding-sibling::*[1]')).toHaveAttribute('id', 'fullscreenBtn');
+  await expect(trigger.locator('xpath=parent::*')).toHaveClass(/bs-nav/);
+  await expect(page.locator('#view-reader .reader-toolbar > #fullscreenBtn')).toHaveCount(1);
 
   await openDialog(page);
   await expect(trigger).toHaveAttribute('aria-expanded', 'true');
@@ -139,7 +140,7 @@ test('dialog lists fresh translations without downloading and provides modal key
   await expect(page.locator('#offlineBiblesStorage')).toHaveText('Offline Bibles: 0.0 MiB');
   expect(requested).toEqual([]);
   expect(await page.evaluate(() => window.__managementMessages)).toEqual(['BIBLE_TRANSLATION_LIST']);
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2db1']);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-compact-reader-6']);
 
   await page.keyboard.press('Shift+Tab');
   await expect(page.getByRole('button', {name:'Download Geneva Bible 1599 for offline reading'})).toBeFocused();

@@ -132,16 +132,13 @@
           </div>
         </div>
         <button class="bs-btn" type="button" aria-controls="view-plan" aria-pressed="false">Plan</button>
-        <button class="bs-btn" id="fullscreenBtn" type="button" aria-pressed="false">Fullscreen</button>
         <button class="bs-btn" id="offlineBiblesTrigger" type="button" aria-haspopup="dialog" aria-controls="offlineBiblesDialog" aria-expanded="false">Offline Bibles</button>
       </div>
     </div>
     <div class="bs-main">
       <!-- READER -->
       <div class="bs-view active" id="view-reader">
-        <div class="selector-row">
-          <label class="sr-only" for="readerTranslation">Bible translation</label>
-          <select id="readerTranslation"></select>
+        <div class="reader-toolbar" role="group" aria-label="Reader controls">
           <label class="sr-only" for="bookSelect">Bible book</label>
           <select id="bookSelect">
             <option value="john">John</option>
@@ -151,44 +148,52 @@
             <option value="matthew">Matthew</option>
             <option value="philippians">Philippians</option>
           </select>
-          <label class="sr-only" for="chapterSelect">Chapter</label>
-          <select id="chapterSelect">
-            <option>1</option><option>2</option><option>3</option>
-          </select>
+          <div class="reader-controls reader-controls-top" data-reader-controls role="group" aria-label="Chapter navigation">
+            <button type="button" data-reader-action="previous" aria-label="Previous chapter">&#8249;</button>
+            <label class="sr-only" for="chapterSelect">Chapter</label>
+            <select id="chapterSelect">
+              <option>1</option><option>2</option><option>3</option>
+            </select>
+            <button type="button" data-reader-action="next" aria-label="Next chapter">&#8250;</button>
+          </div>
           <label class="sr-only" for="verseSelect">Verse</label>
           <select id="verseSelect">
             <option value="">Verse</option>
           </select>
-        </div>
-        <div class="reader-controls reader-controls-top" data-reader-controls>
-          <button type="button" data-reader-action="previous" aria-label="Previous chapter">← Previous</button>
-          <button type="button" data-reader-action="next" aria-label="Next chapter">Next →</button>
-        </div>
-        <div class="voice-status" id="voiceStatusTop" role="status" aria-live="polite">Ready for a voice command.</div>
-        <div class="reader-audio-controls" role="group" aria-label="Read chapter aloud">
-          <button id="readAloudPlay" type="button">Play</button>
-          <button id="readAloudPause" type="button">Pause</button>
-          <button id="readAloudStop" type="button">Stop</button>
-          <button type="button" data-voice-command-button aria-pressed="false" title="Start voice commands">Voice Commands</button>
-          <div class="reader-speech-preferences">
-            <label for="readAloudVoice">Voice:</label>
-            <select id="readAloudVoice">
-              <option value="">Automatic</option>
-            </select>
-            <label for="readAloudSpeed">Speed:</label>
-            <select id="readAloudSpeed">
-              <option value="0.5">50%</option>
-              <option value="0.75">75%</option>
-              <option value="1" selected>100%</option>
-              <option value="1.25">125%</option>
-              <option value="1.5">150%</option>
-              <option value="1.75">175%</option>
-              <option value="2">200%</option>
-              <option value="2.25">225%</option>
-              <option value="2.5">250%</option>
-            </select>
+          <label class="sr-only" for="readerTranslation">Bible translation</label>
+          <select id="readerTranslation"></select>
+          <button id="readAloudPlay" type="button" aria-label="Play reading aloud">Play</button>
+          <button id="readerMoreTrigger" type="button" aria-controls="readerSecondaryControls" aria-expanded="false">More</button>
+          <button id="fullscreenBtn" type="button" aria-pressed="false" aria-label="Enter Fullscreen">Fullscreen</button>
+          <div id="readerSecondaryControls" class="reader-secondary-controls" hidden>
+            <div class="reader-controls reader-verse-navigation" id="readerVerseNavigation" role="group" aria-label="Verse navigation">
+              <button type="button" data-reader-action="previous-verse" aria-label="Previous Verse">&#8592; Previous Verse</button>
+              <button type="button" data-reader-action="next-verse" aria-label="Next Verse">Next Verse &#8594;</button>
+            </div>
+            <div class="reader-audio-controls" role="group" aria-label="Voice controls">
+              <button type="button" data-voice-command-button aria-pressed="false" title="Start voice commands">Voice Commands</button>
+              <div class="reader-speech-preferences">
+                <label for="readAloudVoice">Voice:</label>
+                <select id="readAloudVoice">
+                  <option value="" disabled selected>Loading voices…</option>
+                </select>
+                <label for="readAloudSpeed">Speed:</label>
+                <select id="readAloudSpeed">
+                  <option value="0.5">50%</option>
+                  <option value="0.75">75%</option>
+                  <option value="1" selected>100%</option>
+                  <option value="1.25">125%</option>
+                  <option value="1.5">150%</option>
+                  <option value="1.75">175%</option>
+                  <option value="2">200%</option>
+                  <option value="2.25">225%</option>
+                  <option value="2.5">250%</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="voice-status" id="voiceStatusTop" role="status" aria-live="polite">Ready for a voice command.</div>
         <div id="readAloudStatus" class="reader-audio-status" role="status" aria-live="polite"></div>
         <section id="wordStudyPanel" class="word-study-panel" aria-labelledby="wordStudyHeading" hidden>
           <div class="word-study-header">
@@ -212,10 +217,6 @@
           </section>
           <div id="wordStudyStatus" class="sr-only" role="status" aria-live="polite"></div>
         </section>
-        <div class="reader-controls reader-verse-navigation" id="readerVerseNavigation" role="group" aria-label="Verse navigation">
-          <button type="button" data-reader-action="previous-verse" aria-label="Previous Verse">← Previous Verse</button>
-          <button type="button" data-reader-action="next-verse" aria-label="Next Verse">Next Verse →</button>
-        </div>
         <div class="reader-passage" id="readerContent"></div>
       </div>
       <!-- COMPARE -->
@@ -255,14 +256,6 @@
         </div>
         <div class="plan-days" id="planDays"></div>
       </div>
-    </div>
-    <!-- FULLSCREEN OVERLAY -->
-    <div class="fs-overlay" id="fsOverlay" role="dialog" aria-modal="true" aria-labelledby="fsTitle" aria-hidden="true">
-      <div class="fs-header">
-        <h2 id="fsTitle">John 1</h2>
-        <button class="fs-close" type="button">Exit Fullscreen</button>
-      </div>
-      <div class="fs-content" id="fsContent"></div>
     </div>
   </div>
 </section>

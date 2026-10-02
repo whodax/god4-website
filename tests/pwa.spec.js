@@ -5,6 +5,7 @@ const translationManifestGenerator = require('../tools/generate-translation-mani
 
 const root = path.resolve(__dirname, '..');
 const translationPattern = /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/;
+const shellCacheName = 'god4-shell-compact-reader-6';
 
 async function installAndControl(page) {
   await page.goto('/');
@@ -80,7 +81,7 @@ test('service worker installs a versioned shell without requesting or caching tr
     }
     return {names, urls};
   });
-  expect(state.names).toEqual(['god4-shell-c089a89-phase2db1']);
+  expect(state.names).toEqual([shellCacheName]);
   expect(state.urls).toContain('/offline');
   expect(state.urls).toContain('/js/app.js');
   expect(state.urls).toContain('/js/pwa/offline-translations.js');
@@ -97,6 +98,45 @@ test('service worker installs a versioned shell without requesting or caching tr
   });
   expect(fallback).toMatchObject({ok: true, redirected: false, pathname: '/offline'});
   expect(fallback.body).toContain('You are offline');
+});
+
+test('new Reader shell replaces the prior shell while retaining an Offline Bible', async ({page}) => {
+  const canonicalWeb = translationManifestGenerator.canonicalDeployBytes(
+    fs.readFileSync(path.join(root, 'js', 'bible', 'web.js'))
+  );
+  await page.context().route('**/js/bible/web.js?god4-revision=*', route => route.fulfill({
+    status:200, contentType:'application/javascript', body:canonicalWeb
+  }));
+  await installAndControl(page);
+  const revision = await page.evaluate(() => BibleTranslationManifest.web.revision);
+  await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_ACQUIRE', id:'web', revision}))
+    .resolves.toMatchObject({ok:true, state:'candidate'});
+  await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_PROMOTE', id:'web', revision}))
+    .resolves.toMatchObject({ok:true, state:'ready'});
+
+  await page.evaluate(async () => {
+    const oldShell = await caches.open('god4-shell-c089a89-phase2db1');
+    await oldShell.put('/', new Response('prior shell'));
+    const registration = await navigator.serviceWorker.getRegistration();
+    await registration.unregister();
+  });
+  await page.reload({waitUntil:'domcontentloaded'});
+  await page.evaluate(() => navigator.serviceWorker.ready.then(() => true));
+  if(!await page.evaluate(() => Boolean(navigator.serviceWorker.controller))){
+    await page.reload({waitUntil:'domcontentloaded'});
+  }
+  await expect.poll(() => page.evaluate(() => caches.keys())).toEqual([
+    shellCacheName, 'god4-bible-candidates-v1', 'god4-bible-ready-v1'
+  ]);
+  const cachedShell = await page.evaluate(async () => {
+    const shell = await caches.open('god4-shell-compact-reader-6');
+    const css = await (await shell.match('/css/components.css')).text();
+    const html = await (await shell.match('/')).text();
+    return {searchReflow:css.includes('min-width:0'), sharedFullscreen:html.includes('id="fullscreenBtn"')};
+  });
+  expect(cachedShell).toEqual({searchReflow:true, sharedFullscreen:true});
+  await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'}))
+    .resolves.toMatchObject({ok:true, activeRevision:revision});
 });
 
 
@@ -133,7 +173,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'
   ]);
   expect(freshList.items.every(item => item.state === 'not-retained' && item.active === null)).toBe(true);
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2db1']);
+  expect(await page.evaluate(() => caches.keys())).toEqual([shellCacheName]);
   await expect(workerMessage(page, {
     type:'BIBLE_TRANSLATION_REMOVE',
     id:'not-approved'
@@ -152,7 +192,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     url:'/js/bible/web.js'
   })).resolves.toMatchObject({ok:false, error:'not-approved'});
 
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-c089a89-phase2db1']);
+  expect(await page.evaluate(() => caches.keys())).toEqual([shellCacheName]);
   expect(await page.evaluate(() => BibleData.isTranslationLoaded('web'))).toBe(false);
 
   const candidate = await workerMessage(page, {
@@ -179,7 +219,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     return {names, candidates};
   });
   expect(candidateState.names).toEqual([
-    'god4-shell-c089a89-phase2db1',
+    shellCacheName,
     'god4-bible-candidates-v1'
   ]);
   expect(candidateState.candidates).toEqual([
@@ -240,7 +280,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-c089a89-phase2db1');
+    const shell = await caches.open('god4-shell-compact-reader-6');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
       .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
@@ -296,7 +336,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     id:'web'
   })).resolves.toMatchObject({activeRevision:null, active:null});
   const postRemovalState = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-c089a89-phase2db1');
+    const shell = await caches.open('god4-shell-compact-reader-6');
     const ready = await caches.open('god4-bible-ready-v1');
     return {
       shellHasApp:Boolean(await shell.match('/js/app.js')),

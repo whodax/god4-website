@@ -140,6 +140,7 @@ test('main application flows stay functional without CSP violations', async ({pa
   await expect(page.locator('#trayList .saved-verse-row')).toHaveCount(1);
   await page.locator('#closeTray').click();
   await page.locator('#chapterSelect').selectOption('2');
+  await page.locator('#readerMoreTrigger').click();
   await page.locator('[data-reader-action="next-verse"]').click();
   await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-focused/);
   await page.locator('#readerContent [data-word-study-term]').first().click();
@@ -151,8 +152,8 @@ test('main application flows stay functional without CSP violations', async ({pa
   await page.locator('[data-plan-day="1"]').click();
   await expect(page.locator('#planFill')).toHaveClass(/plan-progress-days-1/);
   await page.getByRole('button', {name:'Reader', exact:true}).click();
-  await page.getByRole('button', {name:'Fullscreen'}).click();
-  await expect(page.locator('#fsOverlay')).toHaveClass(/active/);
+  await page.getByRole('button', {name:'Enter Fullscreen'}).click();
+  await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
   await page.getByRole('button', {name:'Exit Fullscreen'}).click();
   await page.locator('#accountTrigger').click();
   await expect(page.locator('#accountDialog')).toBeVisible();
@@ -310,13 +311,14 @@ test('Read Aloud, voice commands, and same-origin Word Study work without CSP vi
   await page.goto(server.origin + '/');
   const policy = (await page.request.get(server.origin + '/')).headers()['permissions-policy'];
   expect(policy).toContain('microphone=(self)');
-  await page.locator('#readAloudVoice').selectOption({label:'Mock Voice'});
+  await page.locator('#readerMoreTrigger').click();
+  await page.locator('#readAloudVoice').selectOption('male');
   await page.locator('#readAloudSpeed').selectOption('1.25');
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
   await page.locator('#readerContent [data-verse-speech="2"]').click();
   expect(await page.evaluate(() => window.__spoken.length)).toBeGreaterThan(0);
-  await page.locator('#readAloudStop').click();
+  await page.locator('#readAloudPlay').click();
   await page.locator('[data-voice-command-button]').click();
   await expect(page.locator('[data-voice-command-button]')).toHaveAttribute('aria-pressed','true');
   expect(await page.evaluate(() => window.__recognitionStarted)).toBe(true);
