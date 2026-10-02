@@ -10,8 +10,8 @@ var BibleSpeech = (function createBibleSpeech(){
   ];
   // Voice metadata has no dependable age or gender. These small name hints only
   // choose a likely base voice; pitch supplies the profile's audible character.
-  var MALE_VOICE_HINT = /\b(?:mark|david|daniel|alex|fred|george|james|tom|arthur|oliver)\b/i;
-  var FEMALE_VOICE_HINT = /\b(?:samantha|karen|victoria|zira|hazel|susan|ava|allison|moira|fiona)\b/i;
+  var MALE_VOICE_HINT = /\b(?:male|aaron|alex|arthur|daniel|david|fred|george|guy|james|mark|oliver|ryan|tom)\b/i;
+  var FEMALE_VOICE_HINT = /\b(?:female|allison|aria|ava|fiona|hazel|jenny|karen|moira|samantha|susan|tessa|victoria|zira)\b/i;
   var state = 'idle';
   var verses = [];
   var verseIndex = 0;
@@ -106,22 +106,73 @@ var BibleSpeech = (function createBibleSpeech(){
     return String(name || '').replace(/^Microsoft\s+/i, '').trim();
   }
 
-  function selectedVoice(){
-    if(voicePreference === 'auto') return null;
-    var profile = VOICE_PROFILES.find(function(item){ return item.value === voicePreference; });
-    if(!profile) return voices().find(function(voice){ return voice.name === voicePreference; }) || null;
-    var hint = /-female$/.test(profile.value) ? FEMALE_VOICE_HINT : MALE_VOICE_HINT;
+  function compareVoiceText(left, right){
+    var first = String(left || '').toLowerCase();
+    var second = String(right || '').toLowerCase();
+    return first < second ? -1 : first > second ? 1 : 0;
+  }
+
+  function sortedEnglishVoices(){
     var english = voices().filter(function(voice){ return /^en(?:-|_|$)/i.test(voice.lang); });
     english.sort(function(left, right){
-      var hintDifference = Number(hint.test(right.name)) - Number(hint.test(left.name));
-      if(hintDifference) return hintDifference;
       var localDifference = Number(Boolean(right.localService)) - Number(Boolean(left.localService));
       if(localDifference) return localDifference;
       var localeDifference = Number(/^en[-_]US$/i.test(right.lang)) - Number(/^en[-_]US$/i.test(left.lang));
       if(localeDifference) return localeDifference;
-      return String(left.name).localeCompare(String(right.name));
+      return compareVoiceText(left.name, right.name) || compareVoiceText(left.lang, right.lang);
     });
-    return english[0] || null;
+    return english.filter(function(voice, index){
+      return english.findIndex(function(candidate){ return candidate.name === voice.name; }) === index;
+    });
+  }
+
+  function profileBaseVoices(){
+    var english = sortedEnglishVoices();
+    var maleHints = english.filter(function(voice){ return MALE_VOICE_HINT.test(voice.name); });
+    var femaleHints = english.filter(function(voice){ return FEMALE_VOICE_HINT.test(voice.name); });
+    var femaleFirst = femaleHints[0];
+    // Reserve a hinted voice for each adult family. Generic inventories use
+    // separate sorted candidates, regardless of the order from getVoices().
+    var adultMale = maleHints[0] || english.find(function(voice){
+      return !femaleFirst || voice.name !== femaleFirst.name;
+    }) || english[0] || null;
+    var adultFemale = femaleHints.find(function(voice){
+      return !adultMale || voice.name !== adultMale.name;
+    }) || english.find(function(voice){
+      return !adultMale || voice.name !== adultMale.name;
+    }) || english[0] || null;
+    function unused(voice){
+      return (!adultMale || voice.name !== adultMale.name) &&
+        (!adultFemale || voice.name !== adultFemale.name);
+    }
+    var childMale = maleHints.find(unused) || maleHints[0] || english.find(unused) || adultMale;
+    var childFemale = femaleHints.find(function(voice){
+      return unused(voice) && (!childMale || voice.name !== childMale.name);
+    }) || femaleHints[0] || english.find(function(voice){
+      return unused(voice) && (!childMale || voice.name !== childMale.name);
+    }) || adultFemale;
+    return {
+      'adult-male':adultMale, 'adult-female':adultFemale,
+      'child-male':childMale, 'child-female':childFemale
+    };
+  }
+
+  function selectedVoice(){
+    if(voicePreference === 'auto') return null;
+    var profile = VOICE_PROFILES.find(function(item){ return item.value === voicePreference; });
+    if(!profile) return voices().find(function(voice){ return voice.name === voicePreference; }) || null;
+    return profileBaseVoices()[profile.value];
+  }
+
+  function getResolvedVoiceInfo(){
+    var profile = VOICE_PROFILES.find(function(item){ return item.value === voicePreference; });
+    var voice = selectedVoice();
+    return {
+      preference:voicePreference,
+      voiceName:voice ? voice.name : null,
+      lang:voice ? voice.lang : null,
+      pitch:profile ? profile.pitch : 1
+    };
   }
 
   function configureUtterance(utterance){
@@ -482,6 +533,7 @@ var BibleSpeech = (function createBibleSpeech(){
     setStatusMessage: setStatusMessage,
     getSpeed: function(){ return speed; },
     getVoice: function(){ return selectedVoice(); },
+    getResolvedVoiceInfo: getResolvedVoiceInfo,
     getSpeedOptions: function(){ return SPEEDS.slice(); },
     refreshVoices: populateVoiceSelector,
     updateControls: updateControls,
