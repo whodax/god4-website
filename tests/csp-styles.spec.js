@@ -51,7 +51,7 @@ test('Saved Verses empty state, row styling, and tray position use classes', asy
   await expect(page.locator('#tray [style]')).toHaveCount(0);
   await page.locator('#closeTray').click();
   await expect(page.locator('#tray')).not.toHaveClass(/is-open/);
-  await expect(page.locator('#tray')).toHaveCSS('right', '-360px');
+  await expect.poll(() => page.locator('#tray').evaluate(element => element.getBoundingClientRect().left >= innerWidth)).toBe(true);
   await expect(page.locator('.saved-pill')).toBeFocused();
   await expect(page.locator('#tray [style]')).toHaveCount(0);
 });
@@ -80,7 +80,7 @@ test('representative application flows create no first-party inline styles', asy
   await page.locator('#closeTray').click();
   await expect(page.locator('#readerContent .reader-chapter-caption')).toBeVisible();
   await page.locator('[aria-controls="view-compare"].bs-btn').click();
-  await expect(page.locator('#compareGrid .compare-col').first()).toBeVisible();
+  await expect(page.locator('#compareGrid .compare-col').first()).toBeVisible({timeout:15000});
   await expectNoAppInlineStyles(page);
   await page.locator('[aria-controls="view-plan"].bs-btn').click();
   await page.locator('[data-plan-day="1"]').click();

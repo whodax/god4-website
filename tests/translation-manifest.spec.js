@@ -43,6 +43,15 @@ test('LF and CRLF source representations produce identical canonical metadata', 
   });
 });
 
+test('generated manifest validation accepts LF and CRLF without accepting changed content', () => {
+  const expected = generator.expectedOutput();
+  const crlf = expected.replace(/\n/g, '\r\n');
+  expect(generator.normalizeManifestLineEndings(expected)).toBe(expected);
+  expect(generator.normalizeManifestLineEndings(crlf)).toBe(expected);
+  expect(generator.normalizeManifestLineEndings(crlf.replace('BibleTranslationManifest', 'ChangedManifest'))).not.toBe(expected);
+  expect(() => generator.checkOutput()).not.toThrow();
+});
+
 test('generated manifest matches canonical content for all approved translations', () => {
   const manifest = generatedManifest();
   expect(Object.keys(manifest)).toEqual(generator.translations.map(translation => translation.id));

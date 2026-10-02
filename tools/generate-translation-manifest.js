@@ -159,8 +159,12 @@ function validateManifest(manifest){
   return true;
 }
 
+function normalizeManifestLineEndings(source){
+  return source.replace(/\r\n/g, '\n');
+}
+
 function checkOutput(){
-  if(!fs.existsSync(outputPath) || fs.readFileSync(outputPath, 'utf8') !== expectedOutput()){
+  if(!fs.existsSync(outputPath) || normalizeManifestLineEndings(fs.readFileSync(outputPath, 'utf8')) !== expectedOutput()){
     throw new Error('js/bible/translation-manifest.js is stale; run npm run generate:translation-manifest');
   }
 }
@@ -185,5 +189,6 @@ module.exports = {
   renderManifest,
   expectedOutput,
   validateManifest,
+  normalizeManifestLineEndings,
   checkOutput
 };

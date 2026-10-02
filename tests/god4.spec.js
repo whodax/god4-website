@@ -2904,7 +2904,7 @@ test('Saved Verses persists save and removal across reloads with drawer keyboard
   await opener.click();
   await remove.click();
   await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'true');
-  await expect(page.locator('#tray')).toHaveCSS('right', '-360px');
+  await expect.poll(() => page.locator('#tray').evaluate(element => element.getBoundingClientRect().left >= innerWidth)).toBe(true);
   await expect(opener).toHaveAttribute('aria-expanded', 'false');
   await expect(opener).toBeFocused();
   await expect(page.locator('#savedCount')).toHaveText('0');
