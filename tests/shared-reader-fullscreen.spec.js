@@ -25,7 +25,7 @@ test('fullscreen keeps the exact toolbar and passage nodes with unique Reader co
   await expect(button).toHaveAccessibleName('Exit Fullscreen');
   await expect(button).toHaveAttribute('aria-pressed', 'true');
   expect(await page.evaluate(() => {
-    const ids = ['bookSelect', 'chapterSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn', 'readerContent'];
+    const ids = ['bookSelect', 'chapterSelect', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn', 'readerContent'];
     return {
       same: window.__readerNodes.toolbar === document.querySelector('.reader-toolbar') &&
         window.__readerNodes.passage === document.getElementById('readerContent') &&
@@ -33,7 +33,7 @@ test('fullscreen keeps the exact toolbar and passage nodes with unique Reader co
       counts: ids.map(id => document.querySelectorAll(`#${id}`).length),
       oldPassage: document.querySelectorAll('#fsOverlay, #fsContent').length
     };
-  })).toEqual({same:true, counts:Array(7).fill(1), oldPassage:0});
+  })).toEqual({same:true, counts:Array(8).fill(1), oldPassage:0});
   await button.click();
   await expect(shell).not.toHaveClass(/reader-fullscreen/);
   await expect(button).toHaveAccessibleName('Enter Fullscreen');
@@ -48,12 +48,13 @@ test('fullscreen keeps navigation, translation, More, and verse controls in one 
   await expect(page.locator('#readerContent h2')).toHaveText('Psalms 2');
   await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
   const more = page.locator('#readerMoreTrigger');
+  await expect(more).toHaveAttribute('aria-expanded', 'false');
+  await page.locator('#verseSelect').selectOption('2');
+  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-focused/);
   await more.click();
   await expect(page.locator('#readerSecondaryControls')).toBeVisible();
   await expect(page.locator('[data-voice-command-button]')).toBeVisible();
   await page.locator('#readAloudSpeed').selectOption('1.25');
-  await page.locator('#verseSelect').selectOption('2');
-  await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-focused/);
   await page.locator('[data-reader-action="next-verse"]').click();
   await expect(page.locator('#verseSelect')).toHaveValue('3');
   await more.click();
@@ -137,7 +138,7 @@ test('fullscreen toolbar stays on the single scroll surface at desktop, 480px, a
       const toolbar = shell.querySelector('.reader-toolbar');
       const a = shell.getBoundingClientRect();
       const b = toolbar.getBoundingClientRect();
-      const primaryRows = ['#bookSelect', '.reader-controls-top', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
+      const primaryRows = ['#bookSelect', '.reader-controls-top', '#verseSelect', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
         .map(selector => Math.round(document.querySelector(selector).getBoundingClientRect().top));
       return {
         shellScroll:shell.scrollTop,
@@ -181,7 +182,7 @@ test('More remains directly below the fullscreen toolbar after deep shell scroll
       const shell = document.getElementById('view-reader');
       const toolbar = shell.querySelector('.reader-toolbar').getBoundingClientRect();
       const panel = document.getElementById('readerSecondaryControls').getBoundingClientRect();
-      const primaryBottom = Math.max(...['bookSelect', 'chapterSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
+      const primaryBottom = Math.max(...['bookSelect', 'chapterSelect', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
         .map(id => document.getElementById(id).getBoundingClientRect().bottom));
       return {toolbarTop:toolbar.top, toolbarBottom:toolbar.bottom, panelTop:panel.top, panelBottom:panel.bottom,
         primaryBottom, shellTop:shell.getBoundingClientRect().top,
