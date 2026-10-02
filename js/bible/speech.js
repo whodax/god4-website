@@ -1,6 +1,17 @@
 /* ===== SCRIPTURE READ ALOUD ===== */
 var BibleSpeech = (function createBibleSpeech(){
   var SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5];
+  var VOICE_PROFILES = [
+    {value:'auto', label:'Automatic', pitch:1},
+    {value:'adult-male', label:'Adult Male', pitch:0.95},
+    {value:'adult-female', label:'Adult Female', pitch:1.05},
+    {value:'child-male', label:'Child Male', pitch:1.23},
+    {value:'child-female', label:'Child Female', pitch:1.3}
+  ];
+  // Voice metadata has no dependable age or gender. These small name hints only
+  // choose a likely base voice; pitch supplies the profile's audible character.
+  var MALE_VOICE_HINT = /\b(?:mark|david|daniel|alex|fred|george|james|tom|arthur|oliver)\b/i;
+  var FEMALE_VOICE_HINT = /\b(?:samantha|karen|victoria|zira|hazel|susan|ava|allison|moira|fiona)\b/i;
   var state = 'idle';
   var verses = [];
   var verseIndex = 0;
@@ -14,7 +25,7 @@ var BibleSpeech = (function createBibleSpeech(){
   var completionMessage = '';
   var statusMessage = '';
   var speed = readSpeedPreference();
-  var voiceName = readVoicePreference();
+  var voicePreference = readVoicePreference();
   var playbackListener = null;
 
   function supported(){
@@ -35,7 +46,7 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function readVoicePreference(){
-    return UserData.speechVoice.load();
+    return UserData.speechVoice.load() || 'auto';
   }
 
   function voices(){
@@ -48,17 +59,14 @@ var BibleSpeech = (function createBibleSpeech(){
     var local = english.filter(function(voice){ return voice.localService; });
     var available = local.concat(english.filter(function(voice){ return !voice.localService; }));
     var selected = [];
-    var genderPatterns = [
-      /female|woman|girl|samantha|karen|victoria|zira|hazel|susan|ava|allison|moira|fiona/i,
-      /male|man|boy|daniel|david|alex|fred|george|james|tom|arthur|oliver/i
-    ];
+    var genderPatterns = [FEMALE_VOICE_HINT, MALE_VOICE_HINT];
     genderPatterns.forEach(function(pattern){
       available.filter(function(voice){ return pattern.test(voice.name); }).slice(0, 3).forEach(function(voice){
-        if(selected.indexOf(voice) < 0) selected.push(voice);
+        if(!selected.some(function(item){ return item.name === voice.name; })) selected.push(voice);
       });
     });
     available.forEach(function(voice){
-      if(selected.length < 6 && selected.indexOf(voice) < 0) selected.push(voice);
+      if(selected.length < 6 && !selected.some(function(item){ return item.name === voice.name; })) selected.push(voice);
     });
     return selected.slice(0, 6);
   }
@@ -67,14 +75,31 @@ var BibleSpeech = (function createBibleSpeech(){
     var select = elements().voice;
     if(!select) return;
     var available = curatedVoices();
-    select.innerHTML = '<option value="">Automatic</option>';
+    select.textContent = '';
+    VOICE_PROFILES.forEach(function(profile){
+      var option = document.createElement('option');
+      option.value = profile.value;
+      option.textContent = profile.label;
+      select.appendChild(option);
+    });
+    var deviceGroup = document.createElement('optgroup');
+    deviceGroup.label = 'Device voices';
     available.forEach(function(voice){
       var option = document.createElement('option');
       option.value = voice.name;
       option.textContent = formatVoiceDisplayName(voice.name);
-      select.appendChild(option);
+      deviceGroup.appendChild(option);
     });
-    select.value = available.some(function(voice){ return voice.name === voiceName; }) ? voiceName : '';
+    if(!VOICE_PROFILES.some(function(profile){ return profile.value === voicePreference; }) &&
+      !available.some(function(voice){ return voice.name === voicePreference; })){
+      var savedVoice = voices().find(function(voice){ return voice.name === voicePreference; });
+      var savedOption = document.createElement('option');
+      savedOption.value = voicePreference;
+      savedOption.textContent = formatVoiceDisplayName(voicePreference) + (savedVoice ? '' : ' (unavailable)');
+      deviceGroup.appendChild(savedOption);
+    }
+    if(deviceGroup.children.length) select.appendChild(deviceGroup);
+    select.value = voicePreference;
   }
 
   function formatVoiceDisplayName(name){
@@ -82,11 +107,27 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function selectedVoice(){
-    return voices().find(function(voice){ return voice.name === voiceName; }) || null;
+    if(voicePreference === 'auto') return null;
+    var profile = VOICE_PROFILES.find(function(item){ return item.value === voicePreference; });
+    if(!profile) return voices().find(function(voice){ return voice.name === voicePreference; }) || null;
+    var hint = /-female$/.test(profile.value) ? FEMALE_VOICE_HINT : MALE_VOICE_HINT;
+    var english = voices().filter(function(voice){ return /^en(?:-|_|$)/i.test(voice.lang); });
+    english.sort(function(left, right){
+      var hintDifference = Number(hint.test(right.name)) - Number(hint.test(left.name));
+      if(hintDifference) return hintDifference;
+      var localDifference = Number(Boolean(right.localService)) - Number(Boolean(left.localService));
+      if(localDifference) return localDifference;
+      var localeDifference = Number(/^en[-_]US$/i.test(right.lang)) - Number(/^en[-_]US$/i.test(left.lang));
+      if(localeDifference) return localeDifference;
+      return String(left.name).localeCompare(String(right.name));
+    });
+    return english[0] || null;
   }
 
   function configureUtterance(utterance){
     utterance.rate = speed;
+    var profile = VOICE_PROFILES.find(function(item){ return item.value === voicePreference; });
+    utterance.pitch = profile ? profile.pitch : 1;
     var voice = selectedVoice();
     if(voice) utterance.voice = voice;
     return utterance;
@@ -380,10 +421,11 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function setVoice(name){
-    var available = curatedVoices();
-    if(name && !available.some(function(voice){ return voice.name === name; })) return;
-    voiceName = name || '';
-    UserData.speechVoice.save(voiceName);
+    var next = name || 'auto';
+    if(!VOICE_PROFILES.some(function(profile){ return profile.value === next; }) &&
+      !curatedVoices().some(function(voice){ return voice.name === next; }) && next !== voicePreference) return;
+    voicePreference = next;
+    UserData.speechVoice.save(voicePreference);
     populateVoiceSelector();
   }
 
