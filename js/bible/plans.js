@@ -51,6 +51,7 @@ function refreshPlanReadingSessionTranslation(){
 
 function returnToPlanFromSession(announceCompletion){
   if(!activePlanReadingSession) return false;
+  var journeyWasComplete=journeyCycleIsComplete();
   clearPlanReadingSession();
   if(typeof BibleSpeech!=='undefined' && BibleSpeech.getState()!=='idle') BibleSpeech.stop();
   var reader=document.getElementById('view-reader');
@@ -58,7 +59,8 @@ function returnToPlanFromSession(announceCompletion){
   var planButton=document.querySelector('.bs-btn[aria-controls="view-plan"]');
   if(planButton) switchView('plan',planButton);
   var status=document.getElementById('journeyStatus');
-  if(status) status.textContent=announceCompletion ? 'Daily reading complete. Returning to Plan.' : '';
+  if(status) status.textContent=journeyWasComplete ? 'New Testament Journey complete. Part 1 is ready to begin again.' :
+    (announceCompletion ? 'Daily reading complete. Returning to Plan.' : '');
   var heading=document.getElementById('planHeading');
   if(heading) heading.focus();
   return true;
@@ -86,6 +88,25 @@ function journeyStreak(today){
     streak++;
   }
   return streak;
+}
+
+function journeyCycleIsComplete(){
+  return journeyState.plans.every(function(days,index){ return days.length===ReadingJourneyPlans[index].days.length; });
+}
+
+function rolloverJourneyIfComplete(){
+  if(!journeyCycleIsComplete()) return false;
+  journeyState.plans=ReadingJourneyPlans.map(function(){ return []; });
+  UserData.journey.save(journeyState);
+  return true;
+}
+
+function prepareJourneyPlanView(){
+  if(!rolloverJourneyIfComplete()) return false;
+  renderPlan();
+  var status=document.getElementById('journeyStatus');
+  if(status) status.textContent='New Testament Journey complete. Part 1 is ready to begin again.';
+  return true;
 }
 
 function renderPlan(){
@@ -141,7 +162,7 @@ function openJourneyDay(dayNumber){
     updatePlanSessionControl();
     updateReaderControls();
     completeJourneyDay(planIndex,dayNumber,localCalendarDate(new Date()));
-    renderPlan();
+    if(!journeyCycleIsComplete()) renderPlan();
     return true;
   });
 }
@@ -156,7 +177,12 @@ function initializePlanControls(){
   var backButton=document.getElementById('readerBackToPlan');
   if(backButton) backButton.addEventListener('click',function(){ returnToPlanFromSession(false); });
   updatePlanSessionControl();
+  var rolledOver=rolloverJourneyIfComplete();
   renderPlan();
+  if(rolledOver){
+    var status=document.getElementById('journeyStatus');
+    if(status) status.textContent='New Testament Journey complete. Part 1 is ready to begin again.';
+  }
 }
 
 if(document.readyState==='loading') window.addEventListener('DOMContentLoaded',initializePlanControls,{once:true});

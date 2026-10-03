@@ -769,6 +769,7 @@ function switchView(view, btn){
   var target = document.getElementById('view-' + view);
   if(!target || !btn) return;
   if(view!=='reader' && typeof clearPlanReadingSession==='function') clearPlanReadingSession();
+  if(view==='plan' && typeof prepareJourneyPlanView==='function') prepareJourneyPlanView();
   if(view !== 'reader' && typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() !== 'idle') BibleSpeech.stop();
   if(view === 'compare'){
     if(typeof initializeCompareReference === 'function') initializeCompareReference();
