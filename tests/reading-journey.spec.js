@@ -21,6 +21,24 @@ test.beforeEach(async ({page}) => {
   await page.getByRole('button',{name:'Plan',exact:true}).click();
 });
 
+async function seedJourney149Days(page){
+  await page.evaluate(()=>{
+    journeyState.plans=[
+      Array.from({length:30},(_,index)=>index+1),Array.from({length:30},(_,index)=>index+1),
+      Array.from({length:30},(_,index)=>index+1),Array.from({length:30},(_,index)=>index+1),
+      Array.from({length:29},(_,index)=>index+1)
+    ];
+    journeyState.completedDates=Array.from({length:75},(_,index)=>{
+      var day=new Date('2026-01-10T12:00:00');
+      day.setDate(day.getDate()-(74-index));
+      return localCalendarDate(day);
+    });
+    UserData.journey.save(journeyState);
+    journeyState=UserData.journey.load();
+    renderPlan();
+  });
+}
+
 test('a navigation failure leaves the day incomplete',async ({page})=>{
   await page.evaluate(()=>{ window.navigateReaderToPassage=()=>Promise.resolve(false); });
   await page.locator('#planDays [data-plan-day="1"]').click();
@@ -77,9 +95,66 @@ test('journey progress stays accessible and fits a narrow mobile viewport',async
   await page.setViewportSize({width:320,height:720});
   const firstDay=page.locator('#planDays [data-plan-day="1"]');
   await firstDay.focus();
+  await page.keyboard.press('Tab');
+  const secondDay=page.locator('#planDays [data-plan-day="2"]');
+  await expect(secondDay).toBeFocused();
+  await expect(secondDay).toHaveCSS('outline-style','solid');
+  await page.keyboard.press('Shift+Tab');
+  await expect(firstDay).toBeFocused();
   await page.keyboard.press('Enter');
   await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
+});
+
+test('native Plan buttons activate once with Enter and reopen without changing progress or streak',async ({page})=>{
+  const dayOne=page.locator('#planDays [data-plan-day="1"]');
+  await dayOne.focus();
+  await expect(dayOne).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
+  await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('1-day streak');
+  expect(await page.evaluate(()=>UserData.journey.load().completedDates)).toEqual(['2026-01-10']);
+  await page.getByRole('button',{name:'Plan',exact:true}).click();
+  const completedDay=page.locator('#planDays [data-plan-day="1"]');
+  await completedDay.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
+  await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('1-day streak');
+  expect(await page.evaluate(()=>UserData.journey.load().completedDates)).toEqual(['2026-01-10']);
+});
+
+test('Space uses native Plan button activation and mouse click remains supported',async ({page})=>{
+  const dayTwo=page.locator('#planDays [data-plan-day="2"]');
+  await dayTwo.focus();
+  await page.keyboard.press('Space');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 3');
+  await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
+  await page.getByRole('button',{name:'Plan',exact:true}).click();
+  await page.locator('#planDays [data-plan-day="3"]').click();
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 5');
+  await expect(page.locator('#journeyTotal')).toHaveText('2 of 150 days completed');
+});
+
+test('return focus selects the next unfinished native day and Enter and Space activate it once',async ({page})=>{
+  await page.locator('#planDays [data-plan-day="1"]').click();
+  await page.locator('#readerBackToPlan').click();
+  const dayTwo=page.locator('#planDays [data-plan-day="2"]');
+  await expect(dayTwo).toBeFocused();
+  await expect(page.locator('#planHeading')).not.toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 3');
+  await expect(page.locator('#journeyTotal')).toHaveText('2 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('1-day streak');
+  await page.getByRole('button',{name:'Plan',exact:true}).click();
+  const dayThree=page.locator('#planDays [data-plan-day="3"]');
+  await expect(dayThree).toBeFocused();
+  await page.keyboard.press('Space');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 5');
+  await expect(page.locator('#journeyTotal')).toHaveText('3 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('1-day streak');
+  expect(await page.evaluate(()=>UserData.journey.load().completedDates)).toEqual(['2026-01-10']);
 });
 
 test('Back to Plan is hidden in ordinary Reader and returns focus after a plan reading',async ({page})=>{
@@ -94,9 +169,10 @@ test('Back to Plan is hidden in ordinary Reader and returns focus after a plan r
   await expect(back).toBeFocused();
   await page.keyboard.press('Enter');
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
-  await expect(page.locator('#planHeading')).toBeFocused();
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
   await expect(back).toBeHidden();
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
 });
 
@@ -110,7 +186,7 @@ test('Back to Plan uses one control in fullscreen and returns to the same Plan v
   await back.click();
   await expect(page.locator('#view-reader')).not.toHaveClass(/reader-fullscreen/);
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
-  await expect(page.locator('#planHeading')).toBeFocused();
+  await expect(page.locator('#planDays [data-plan-day="2"]')).toBeFocused();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(1280);
 });
 
@@ -159,10 +235,15 @@ test('manual advancement stays within the assigned chapters and exits only beyon
   expect(await page.evaluate(()=>activePlanReadingSession.day)).toBe(5);
   await page.locator('[data-reader-action="next"]').first().click();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
   await expect(page.locator('#readerContent h2')).toHaveText('Matthew 10');
   await expect(page.locator('#journeyStatus')).toHaveText('Daily reading complete. Returning to Plan.');
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
   await expect(page.locator('#journeyStreak')).toHaveText('1-day streak');
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
+  await page.goForward();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
 });
 
@@ -175,6 +256,7 @@ test('manual navigation outside the assigned chapter cancels auto-return and scr
   await expect(page.locator('#readerContent h2')).toHaveText('Matthew 11');
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
   await expect(page.locator('#readerBackToPlan')).toBeHidden();
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
   await page.getByRole('button',{name:'Compare',exact:true}).click();
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
@@ -211,6 +293,7 @@ test('continuous Read Aloud stops at the assigned final verse and returns once',
   });
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
   await expect(page.locator('#journeyStatus')).toHaveText('Daily reading complete. Returning to Plan.');
+  await expect(page.locator('#journeyStatus')).not.toContainText('Congratulations!');
   expect(await page.evaluate(()=>window.__planSpeech.utterances.every(item=>item.book==='matthew'&&[9,10].includes(item.chapter)))).toBe(true);
   expect(await page.evaluate(()=>window.__planSpeech.utterances.at(-1).utterance.text)).toBe(await page.evaluate(()=>BibleData.getVerse('web','matthew',10,42).text));
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
@@ -257,8 +340,168 @@ test('Next Chapter completes a final Bible-boundary Plan lesson without disablin
   await expect(next).toBeEnabled();
   await next.click();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
-  await expect(page.locator('#planTitle')).toHaveText('Journey complete');
-  await expect(page.locator('#journeyTotal')).toHaveText('150 of 150 days completed');
+  await expect(page.locator('#planTitle')).toHaveText('Part 1 of 5');
+  await expect(page.locator('#journeyTotal')).toHaveText('0 of 150 days completed');
+});
+
+test('browser Back returns from a Plan session, preserves completion, and does not duplicate it',async ({page})=>{
+  const originalUrl=page.url();
+  await page.locator('#planDays [data-plan-day="1"]').click();
+  const sessionId=await page.evaluate(()=>history.state && history.state.god4PlanReaderSession);
+  expect(sessionId).toBeTruthy();
+  expect(await page.evaluate(()=>activePlanReadingSession.day)).toBe(1);
+  await page.goBack();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  await expect(page.locator('#planDays [data-plan-day="2"]')).toBeFocused();
+  expect(page.url()).toBe(originalUrl);
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('1-day streak');
+  expect(await page.evaluate(()=>UserData.journey.load().completedDates)).toEqual(['2026-01-10']);
+  await page.goForward();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
+});
+
+test('a second Plan day gets one fresh history entry and ordinary Reader adds none',async ({page})=>{
+  await page.locator('#planDays [data-plan-day="1"]').click();
+  const firstId=await page.evaluate(()=>history.state.god4PlanReaderSession);
+  await page.goBack();
+  await page.locator('#planDays [data-plan-day="2"]').click();
+  const secondId=await page.evaluate(()=>history.state.god4PlanReaderSession);
+  expect(secondId).toBeTruthy();
+  expect(secondId).not.toBe(firstId);
+  await page.locator('#readerBackToPlan').click();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
+  await page.getByRole('button',{name:'Reader',exact:true}).click();
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
+});
+
+test('149 completed days remain in Part 5 until the final day is completed',async ({page})=>{
+  await seedJourney149Days(page);
+  await expect(page.locator('#planTitle')).toHaveText('Part 5 of 5');
+  await expect(page.locator('#planDone')).toHaveText('29 of 30 days completed');
+  await expect(page.locator('#journeyTotal')).toHaveText('149 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('75-day streak');
+  expect(await page.evaluate(()=>journeyCycleIsComplete())).toBe(false);
+});
+
+test('browser Back before completing Part 5 Day 30 leaves no rollover or stale session',async ({page})=>{
+  await seedJourney149Days(page);
+  const datesBefore=await page.evaluate(()=>UserData.journey.load().completedDates.slice());
+  await page.locator('#planDays [data-plan-day="30"]').click();
+  await expect(page.locator('#readerContent h2')).toHaveText('Revelation 22');
+  expect(await page.evaluate(()=>activePlanReadingSession.completionPending)).toBe(true);
+  await expect(page.locator('#journeyTotal')).toHaveText('149 of 150 days completed');
+  await page.goBack();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  await expect(page.locator('#planTitle')).toHaveText('Part 5 of 5');
+  await expect(page.locator('#planDays [data-plan-day="30"]')).toBeFocused();
+  await expect(page.locator('#planDone')).toHaveText('29 of 30 days completed');
+  await expect(page.locator('#journeyTotal')).toHaveText('149 of 150 days completed');
+  await expect(page.locator('#journeyStatus')).toBeEmpty();
+  await expect(page.locator('#journeyStreak')).toHaveText('75-day streak');
+  expect(await page.evaluate(()=>UserData.journey.load().completedDates)).toEqual(datesBefore);
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  await page.goForward();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
+});
+
+test('final manual Next Chapter rolls over once while preserving the 75-day streak',async ({page})=>{
+  await seedJourney149Days(page);
+  await page.locator('#planDays [data-plan-day="30"]').click();
+  await expect(page.locator('#readerContent h2')).toHaveText('Revelation 22');
+  await expect(page.locator('#journeyTotal')).toHaveText('149 of 150 days completed');
+  expect(await page.evaluate(()=>activePlanReadingSession)).toMatchObject({planPart:5,day:30});
+  await page.locator('[data-reader-action="next"]').first().click();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  await expect(page.locator('#journeyStatus')).toHaveText('Congratulations! You completed the entire New Testament Journey. You’ve gone far beyond a casual reading of Scripture—but there is always more to learn. Let’s do that again.');
+  await expect(page.locator('#journeyStatus')).toBeVisible();
+  await expect(page.locator('#journeyStatus')).toHaveAttribute('aria-atomic','true');
+  await expect(page.locator('#journeyStatus')).toHaveCount(1);
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
+  for(const width of [320,375,480]){
+    await page.setViewportSize({width,height:720});
+    await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+  }
+  await expect(page.locator('#planTitle')).toHaveText('Part 1 of 5');
+  await expect(page.locator('#planDone')).toHaveText('0 of 30 days completed');
+  await expect(page.locator('#journeyTotal')).toHaveText('0 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('75-day streak');
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toHaveAttribute('aria-pressed','false');
+  const rolledState=await page.evaluate(()=>UserData.journey.load());
+  expect(rolledState.plans).toEqual([[],[],[],[],[]]);
+  expect(rolledState.completedDates).toHaveLength(75);
+  expect(rolledState.completedDates.at(-1)).toBe('2026-01-10');
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
+  expect(await page.evaluate(()=>returnToPlanFromSession(true))).toBe(false);
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
+  await page.goForward();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  await expect(page.locator('#journeyStatus')).toHaveText('Congratulations! You completed the entire New Testament Journey. You’ve gone far beyond a casual reading of Scripture—but there is always more to learn. Let’s do that again.');
+  await page.goBack();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  await page.reload();
+  await page.getByRole('button',{name:'Plan',exact:true}).click();
+  await expect(page.locator('#planTitle')).toHaveText('Part 1 of 5');
+  await expect(page.locator('#journeyTotal')).toHaveText('0 of 150 days completed');
+  await expect(page.locator('#journeyStatus')).toBeEmpty();
+});
+
+test('Day 1 is available after rollover and opens Matthew 1',async ({page})=>{
+  await page.evaluate(()=>{
+    journeyState.plans=ReadingJourneyPlans.map(plan=>plan.days.map((_,index)=>index+1));
+    journeyState.completedDates=['2026-01-10'];
+    UserData.journey.save(journeyState);
+    journeyState=UserData.journey.load();
+    renderPlan();
+  });
+  await page.getByRole('button',{name:'Plan',exact:true}).click();
+  await expect(page.locator('#planTitle')).toHaveText('Part 1 of 5');
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toHaveAttribute('aria-pressed','false');
+  await page.locator('#planDays [data-plan-day="1"]').click();
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
+});
+
+test('Read Aloud returns from Revelation 22 and rolls over the completed journey',async ({page})=>{
+  await page.addInitScript(()=>{
+    window.__journeySpeech=[];
+    Object.defineProperty(window,'SpeechSynthesisUtterance',{configurable:true,value:function(text){this.text=text;}});
+    Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{
+      speak(utterance){window.__journeySpeech.push(utterance);},pause(){},resume(){},cancel(){},getVoices(){return []}
+    }});
+  });
+  await page.evaluate(()=>sessionStorage.removeItem('journey-test-initialized'));
+  await page.reload();
+  await page.getByRole('button',{name:'Plan',exact:true}).click();
+  await seedJourney149Days(page);
+  await page.locator('#planDays [data-plan-day="30"]').click();
+  await page.locator('#readAloudPlay').click();
+  await page.evaluate(()=>{
+    var index=0,guard=0;
+    while(BibleSpeech.getState()==='playing' && guard++<100){
+      var utterance=window.__journeySpeech[index++];
+      if(!utterance) break;
+      utterance.onend();
+    }
+  });
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
+  await expect(page.locator('#journeyStatus')).toHaveText('Congratulations! You completed the entire New Testament Journey. You’ve gone far beyond a casual reading of Scripture—but there is always more to learn. Let’s do that again.');
+  await expect(page.locator('#planTitle')).toHaveText('Part 1 of 5');
+  await expect(page.locator('#journeyTotal')).toHaveText('0 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('75-day streak');
+  expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
+  expect(await page.evaluate(()=>window.__journeySpeech.every(utterance=>utterance.text))).toBe(true);
 });
 
 test('legacy completed days migrate to Plan 1 without streak history',async ({page})=>{
@@ -285,11 +528,16 @@ test('finishing a plan advances through all five parts to completion',async ({pa
     },planIndex);
     await page.getByRole('button',{name:'Plan',exact:true}).click();
     await page.locator('#planDays [data-plan-day="30"]').click();
-    if(planIndex<4) await expect(page.locator('#planTitle')).toContainText('Part '+(planIndex+2)+' of 5');
+    if(planIndex<4){
+      await expect(page.locator('#planTitle')).toContainText('Part '+(planIndex+2)+' of 5');
+      await page.getByRole('button',{name:'Plan',exact:true}).click();
+      await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
+    }
     else {
-      await expect(page.locator('#planTitle')).toHaveText('Journey complete');
-      await expect(page.locator('#journeyTotal')).toHaveText('150 of 150 days completed');
-      await expect(page.locator('#planDays')).toContainText('You completed the full New Testament reading journey.');
+      await expect(page.locator('#readerContent h2')).toHaveText('Revelation 22');
+      await page.locator('[data-reader-action="next"]').first().click();
+      await expect(page.locator('#planTitle')).toHaveText('Part 1 of 5');
+      await expect(page.locator('#journeyTotal')).toHaveText('0 of 150 days completed');
     }
   }
 });
