@@ -765,9 +765,13 @@ function renderStudyWordTokens(text){
 }
 
 function switchView(view, btn){
-  document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
   var target = document.getElementById('view-' + view);
   if(!target || !btn) return;
+  if(view==='plan' && typeof activePlanReadingSession!=='undefined' && activePlanReadingSession){
+    returnToPlanFromSession(false);
+    return;
+  }
+  document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
   if(view!=='reader' && typeof clearPlanReadingSession==='function') clearPlanReadingSession();
   if(view==='plan' && typeof prepareJourneyPlanView==='function') prepareJourneyPlanView();
   if(view !== 'reader' && typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() !== 'idle') BibleSpeech.stop();

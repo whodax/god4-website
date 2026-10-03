@@ -293,6 +293,8 @@
   .plan-stats span{max-width:100%;}
   .plan-stats span:not(:last-child)::after{content:' ·';padding-left:9px;color:var(--line);}
   .plan-stats:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  .plan-status:empty{display:none;}
+  .plan-status:not(:empty){max-width:42em;margin:12px auto 0;color:var(--ink-soft);font:13px/1.6 'Inter','Inter Fallback',sans-serif;text-align:center;}
   .plan-days{
     display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;
     width:100%;max-width:520px;margin:0 auto;
@@ -306,6 +308,7 @@
     background:var(--vellum);position:relative;
   }
   .plan-day:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--gold);}
+  .plan-day:focus-visible{outline:2px solid var(--gold);outline-offset:2px;z-index:1;}
   .plan-day.past{background:#e0d8c4;border-color:#c8c0ac;}
   .plan-day.today{background:var(--ink);color:var(--vellum-card);border-color:var(--ink);}
   .plan-day.today .day-num{color:var(--vellum-card);}

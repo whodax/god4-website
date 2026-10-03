@@ -2,6 +2,56 @@ var journeyState = UserData.journey.load();
 var activePlanReadingSession = null;
 var planSpeechReturnPending = false;
 var planNavigationRequest = 0;
+var planHistorySessionId = null;
+var planHistorySequence = 0;
+var pendingPlanReturnAnnouncement = null;
+var planHistoryListenerInstalled = false;
+var planHistoryStateKey = 'god4PlanReaderSession';
+
+function currentHistoryState(){
+  return history.state && typeof history.state==='object' ? Object.assign({},history.state) : {};
+}
+
+function pushPlanReaderHistory(){
+  var id='plan-'+Date.now()+'-'+(++planHistorySequence), state=currentHistoryState();
+  state[planHistoryStateKey]=id;
+  try{
+    history.pushState(state,'',location.href);
+    planHistorySessionId=id;
+    return true;
+  }catch(error){
+    planHistorySessionId=null;
+    return false;
+  }
+}
+
+function removePlanReaderHistoryMarker(){
+  if(!planHistorySessionId) return;
+  var state=currentHistoryState();
+  if(state[planHistoryStateKey]===planHistorySessionId){
+    delete state[planHistoryStateKey];
+    history.replaceState(Object.keys(state).length ? state : null,'',location.href);
+  }
+  planHistorySessionId=null;
+}
+
+function clearOrphanedPlanReaderHistoryMarker(){
+  var state=currentHistoryState();
+  if(!state[planHistoryStateKey]) return;
+  delete state[planHistoryStateKey];
+  history.replaceState(Object.keys(state).length ? state : null,'',location.href);
+}
+
+function handlePlanReaderPopState(event){
+  if(activePlanReadingSession && planHistorySessionId){
+    planHistorySessionId=null;
+    var announce=pendingPlanReturnAnnouncement===true;
+    pendingPlanReturnAnnouncement=null;
+    returnToPlanFromSession(announce,true);
+    return;
+  }
+  if(event.state && event.state[planHistoryStateKey]) clearOrphanedPlanReaderHistoryMarker();
+}
 
 function planSessionContainsChapter(bookId,chapter){
   return Boolean(activePlanReadingSession && activePlanReadingSession.readings.some(function(reading){
@@ -16,6 +66,7 @@ function updatePlanSessionControl(){
 }
 
 function clearPlanReadingSession(){
+  removePlanReaderHistoryMarker();
   activePlanReadingSession=null;
   planSpeechReturnPending=false;
   planNavigationRequest++;
@@ -49,8 +100,16 @@ function refreshPlanReadingSessionTranslation(){
   },0) : 0;
 }
 
-function returnToPlanFromSession(announceCompletion){
+function returnToPlanFromSession(announceCompletion,fromPopState){
   if(!activePlanReadingSession) return false;
+  if(!fromPopState && planHistorySessionId && history.state && history.state[planHistoryStateKey]===planHistorySessionId){
+    pendingPlanReturnAnnouncement=Boolean(announceCompletion);
+    history.back();
+    return true;
+  }
+  if(activePlanReadingSession.completionPending && announceCompletion){
+    completeJourneyDay(activePlanReadingSession.planPart-1,activePlanReadingSession.day,localCalendarDate(new Date()));
+  }
   var journeyWasComplete=journeyCycleIsComplete();
   clearPlanReadingSession();
   if(typeof BibleSpeech!=='undefined' && BibleSpeech.getState()!=='idle') BibleSpeech.stop();
@@ -59,8 +118,11 @@ function returnToPlanFromSession(announceCompletion){
   var planButton=document.querySelector('.bs-btn[aria-controls="view-plan"]');
   if(planButton) switchView('plan',planButton);
   var status=document.getElementById('journeyStatus');
-  if(status) status.textContent=journeyWasComplete ? 'New Testament Journey complete. Part 1 is ready to begin again.' :
-    (announceCompletion ? 'Daily reading complete. Returning to Plan.' : '');
+  if(status){
+    var message=journeyWasComplete ? isNewTestamentJourneyCongratulations() :
+      (announceCompletion ? 'Daily reading complete. Returning to Plan.' : '');
+    if(status.textContent!==message) status.textContent=message;
+  }
   var heading=document.getElementById('planHeading');
   if(heading) heading.focus();
   return true;
@@ -105,8 +167,12 @@ function prepareJourneyPlanView(){
   if(!rolloverJourneyIfComplete()) return false;
   renderPlan();
   var status=document.getElementById('journeyStatus');
-  if(status) status.textContent='New Testament Journey complete. Part 1 is ready to begin again.';
+  if(status) status.textContent=isNewTestamentJourneyCongratulations();
   return true;
+}
+
+function isNewTestamentJourneyCongratulations(){
+  return 'Congratulations! You completed the entire New Testament Journey. You’ve gone far beyond a casual reading of Scripture—but there is always more to learn. Let’s do that again.';
 }
 
 function renderPlan(){
@@ -159,9 +225,12 @@ function openJourneyDay(dayNumber){
   return navigateReaderToPassage(passage.bookId,passage.chapter,1).then(function(navigated){
     if(!navigated || requestId!==planNavigationRequest) return false;
     activePlanReadingSession=buildPlanReadingSession(planIndex,dayNumber,day);
+    activePlanReadingSession.completionPending=planIndex===ReadingJourneyPlans.length-1 &&
+      dayNumber===ReadingJourneyPlans[planIndex].days.length;
+    pushPlanReaderHistory();
     updatePlanSessionControl();
     updateReaderControls();
-    completeJourneyDay(planIndex,dayNumber,localCalendarDate(new Date()));
+    if(!activePlanReadingSession.completionPending) completeJourneyDay(planIndex,dayNumber,localCalendarDate(new Date()));
     if(!journeyCycleIsComplete()) renderPlan();
     return true;
   });
@@ -176,12 +245,17 @@ function initializePlanControls(){
   });
   var backButton=document.getElementById('readerBackToPlan');
   if(backButton) backButton.addEventListener('click',function(){ returnToPlanFromSession(false); });
+  if(!planHistoryListenerInstalled){
+    window.addEventListener('popstate',handlePlanReaderPopState);
+    planHistoryListenerInstalled=true;
+  }
+  clearOrphanedPlanReaderHistoryMarker();
   updatePlanSessionControl();
   var rolledOver=rolloverJourneyIfComplete();
   renderPlan();
   if(rolledOver){
     var status=document.getElementById('journeyStatus');
-    if(status) status.textContent='New Testament Journey complete. Part 1 is ready to begin again.';
+    if(status) status.textContent=isNewTestamentJourneyCongratulations();
   }
 }
 
