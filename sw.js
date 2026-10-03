@@ -2,7 +2,7 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-6';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-8';
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -38,6 +38,7 @@ const SHELL_ASSETS = [
   '/js/word-study/controller.js',
   '/js/bible/reader.js',
   '/js/bible/compare.js',
+  '/js/bible/reading-journey.js',
   '/js/bible/plans.js',
   '/js/app.js',
   '/js/auth/config.js',

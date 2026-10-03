@@ -22,6 +22,7 @@ test.beforeEach(async ({ page }) => {
     localStorage.removeItem('god4.translation');
     localStorage.removeItem('god4.compare');
     localStorage.removeItem('god4.plan.completedDays');
+    localStorage.removeItem('god4.plan.journey.v1');
     localStorage.removeItem('god4.savedVerses');
     localStorage.removeItem('god4.reader.position');
     sessionStorage.setItem(key, 'true');
@@ -181,9 +182,8 @@ test('CSP-ready controls retain keyboard search and delegated plan actions', asy
   await expect(firstDay).toHaveAttribute('aria-pressed', 'false');
   await firstDay.click();
   await expect(firstDay).toHaveAttribute('aria-pressed', 'true');
-  await firstDay.click();
-  await expect(firstDay).toHaveAttribute('aria-pressed', 'false');
-  await expect(page.locator('#planDone')).toHaveText('0 of 30 days');
+  await expect(page.locator('#view-reader')).toHaveClass(/active/);
+  await expect(page.locator('#planDone')).toHaveText('1 of 30 days completed');
 });
 test('Search the Word searches complete BibleData and opens references', async ({ page }) => {
   await page.goto('/');
@@ -2847,34 +2847,34 @@ test('unified Reader audio controls fit the narrow viewport without horizontal o
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(600);
 });
 
-test('Reading Plan starts empty and saves completion and undo across reloads', async ({ page }) => {
+test('Reading Plan navigates to readings and preserves completion across reloads', async ({ page }) => {
   await page.getByRole('button', { name: 'Plan', exact: true }).click();
-  const firstDay = page.getByRole('button', { name: 'Day 1: Matthew 1-2', exact: true });
-  await expect(page.locator('#planDone')).toHaveText('0 of 30 days');
+  const firstDay = page.locator('#planDays [data-plan-day="1"]');
+  await expect(firstDay).toHaveAttribute('aria-label', 'Part 1 of 5, day 1: Matthew 1-2');
+  await expect(page.locator('#planDone')).toHaveText('0 of 30 days completed');
   await expect(page.locator('#planPct')).toHaveText('0%');
   await expect(page.locator('#planDays [aria-pressed="true"]')).toHaveCount(0);
   await expect(firstDay).toHaveClass(/today/);
   await firstDay.click();
-  await expect(page.locator('#planDone')).toHaveText('1 of 30 days');
+  await expect(page.locator('#planDone')).toHaveText('1 of 30 days completed');
   await expect(page.locator('#planPct')).toHaveText('3%');
-  await expect(firstDay).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#view-reader')).toHaveClass(/active/);
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
+  await expect(page.locator('#readerContent [data-verse-number="1"]')).toBeFocused();
+  await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
   await page.reload();
   await page.getByRole('button', { name: 'Plan', exact: true }).click();
-  await expect(firstDay).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('#planDone')).toHaveText('1 of 30 days');
-  await firstDay.click();
-  await page.reload();
-  await page.getByRole('button', { name: 'Plan', exact: true }).click();
-  await expect(page.locator('#planDone')).toHaveText('0 of 30 days');
-  await expect(firstDay).toHaveAttribute('aria-pressed', 'false');
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#planDone')).toHaveText('1 of 30 days completed');
 });
 
 for (const savedProgress of ['broken-json', '{}', '[1,1,31,"2",null]']) {
   test(`Reading Plan safely handles saved progress ${savedProgress}`, async ({ page }) => {
     await page.evaluate((value) => localStorage.setItem('god4.plan.completedDays', value), savedProgress);
+    await page.evaluate(() => localStorage.removeItem('god4.plan.journey.v1'));
     await page.reload();
     await page.getByRole('button', { name: 'Plan', exact: true }).click();
-    await expect(page.locator('#planDone')).toHaveText(savedProgress.startsWith('[') ? '1 of 30 days' : '0 of 30 days');
+    await expect(page.locator('#planDone')).toHaveText(savedProgress.startsWith('[') ? '1 of 30 days completed' : '0 of 30 days completed');
     await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
   });
 }
@@ -3056,14 +3056,14 @@ for (const failure of ['getter', 'methods', 'quota', 'null']) {
     await expect(page.locator('.saved-pill')).toBeFocused();
     await expect(page.locator('#savedCount')).toHaveText('0');
     await page.getByRole('button', { name: 'Plan', exact: true }).click();
-    await page.getByRole('button', { name: 'Day 1: Matthew 1-2', exact: true }).click();
-    await expect(page.locator('#planDone')).toHaveText('1 of 30 days');
+    await page.locator('#planDays [data-plan-day="1"]').click();
+    await expect(page.locator('#planDone')).toHaveText('1 of 30 days completed');
     await page.getByRole('button', { name: 'Compare', exact: true }).click();
     await expect(page.locator('#view-compare')).toHaveClass(/active/);
     const values = await page.evaluate(() => {
       UserData.speechSpeed.save(1.5);
       UserData.speechVoice.save('Device voice');
-      return [UserData.translation.load(), UserData.plan.load(), UserData.savedVerses.load(), UserData.speechSpeed.load(), UserData.speechVoice.load()];
+      return [UserData.translation.load(), UserData.journey.load().plans[0], UserData.savedVerses.load(), UserData.speechSpeed.load(), UserData.speechVoice.load()];
     });
     expect(values).toEqual(['asv', [1], [], 1.5, 'Device voice']);
     expect(errors).toEqual([]);
@@ -3080,6 +3080,7 @@ test('User data storage preserves all six legacy keys and serialized formats acr
     'god4.speech.voice': 'Samantha'
   };
   await page.evaluate(values => Object.entries(values).forEach(([key, value]) => localStorage.setItem(key, value)), legacy);
+  await page.evaluate(() => localStorage.removeItem('god4.plan.journey.v1'));
   await page.addInitScript(() => {
     Object.defineProperty(window, 'speechSynthesis', { value: {
       getVoices: () => [{name: 'Samantha', lang: 'en-US', localService: true}],
@@ -3094,7 +3095,7 @@ test('User data storage preserves all six legacy keys and serialized formats acr
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1.5');
   await expect(page.locator('#readAloudVoice')).toHaveValue('female');
   await page.getByRole('button', {name: 'Plan', exact: true}).click();
-  await expect(page.locator('#planDone')).toHaveText('2 of 30 days');
+  await expect(page.locator('#planDone')).toHaveText('2 of 30 days completed');
   expect(await page.evaluate(keys => Object.fromEntries(keys.map(key => [key, localStorage.getItem(key)])), Object.keys(legacy))).toEqual({...legacy, 'god4.speech.voice':'female'});
   await page.getByRole('button', {name: 'Reader', exact: true}).click();
   await openReaderMore(page);

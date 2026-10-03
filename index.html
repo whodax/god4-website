@@ -218,6 +218,7 @@
           <div id="wordStudyStatus" class="sr-only" role="status" aria-live="polite"></div>
         </section>
         <div class="reader-passage" id="readerContent"></div>
+        <button id="readerBackToPlan" class="reader-back-to-plan" type="button" aria-label="Return to the reading plan" hidden>Back to Plan</button>
       </div>
       <!-- COMPARE -->
       <div class="bs-view" id="view-compare">
@@ -247,12 +248,19 @@
       <!-- PLAN -->
       <div class="bs-view" id="view-plan">
         <div class="plan-header">
-          <h2>30-Day New Testament Journey</h2>
-          <p>Read the story of Jesus and the early church in one month</p>
+          <h2 id="planHeading" tabindex="-1">New Testament Reading Journey</h2>
+          <p>Read the New Testament in five guided 30-day parts</p>
         </div>
         <div class="plan-progress">
-          <div class="plan-progress-bar"><div class="plan-progress-fill plan-progress-days-0" id="planFill"></div></div>
-          <div class="plan-progress-label"><span id="planDone">0 of 30 days</span><span id="planPct">0%</span></div>
+          <div class="plan-progress-bar" role="progressbar" aria-label="Current plan progress" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0"><div class="plan-progress-fill plan-progress-days-0" id="planFill"></div></div>
+          <div id="planStats" class="plan-stats" role="group" aria-label="New Testament journey progress">
+            <span id="planDone">0 of 30 days completed</span>
+            <span id="planPct">0%</span>
+            <span id="planTitle">Part 1 of 5</span>
+            <span id="journeyTotal">0 of 150 days completed</span>
+            <span id="journeyStreak">0-day streak</span>
+          </div>
+          <p id="journeyStatus" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
         </div>
         <div class="plan-days" id="planDays"></div>
       </div>
@@ -443,6 +451,7 @@
 <script defer src="js/word-study/controller.js"></script>
 <script defer src="js/bible/reader.js"></script>
 <script defer src="js/bible/compare.js"></script>
+<script defer src="js/bible/reading-journey.js"></script>
 <script defer src="js/bible/plans.js"></script>
 <script defer src="js/app.js"></script>
 <script defer src="js/auth/config.js"></script>

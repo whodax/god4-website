@@ -1,73 +1,163 @@
-const plan = [
-  {d:1, ref:'Matthew 1-2', done:false},
-  {d:2, ref:'Matthew 3-4', done:false},
-  {d:3, ref:'Matthew 5-6', done:false},
-  {d:4, ref:'Matthew 7-8', done:false},
-  {d:5, ref:'Matthew 9-10', done:false},
-  {d:6, ref:'Matthew 11-12', done:false},
-  {d:7, ref:'Matthew 13-14', done:false},
-  {d:8, ref:'Matthew 15-16', done:false},
-  {d:9, ref:'Matthew 17-18', done:false},
-  {d:10, ref:'Matthew 19-20', done:false},
-  {d:11, ref:'Matthew 21-22', done:false},
-  {d:12, ref:'Matthew 23-24', done:false},
-  {d:13, ref:'Matthew 25-26', done:false},
-  {d:14, ref:'Matthew 27-28', done:false},
-  {d:15, ref:'Mark 1-2', done:false},
-  {d:16, ref:'Mark 3-4', done:false},
-  {d:17, ref:'Mark 5-6', done:false},
-  {d:18, ref:'Mark 7-8', done:false},
-  {d:19, ref:'Mark 9-10', done:false},
-  {d:20, ref:'Mark 11-12', done:false},
-  {d:21, ref:'Mark 13-14', done:false},
-  {d:22, ref:'Mark 15-16', done:false},
-  {d:23, ref:'Luke 1-2', done:false},
-  {d:24, ref:'Luke 3-4', done:false},
-  {d:25, ref:'Luke 5-6', done:false},
-  {d:26, ref:'Luke 7-8', done:false},
-  {d:27, ref:'Luke 9-10', done:false},
-  {d:28, ref:'Luke 11-12', done:false},
-  {d:29, ref:'Luke 13-14', done:false},
-  {d:30, ref:'Luke 15-16', done:false}
-];
-var completedDays = UserData.plan.load();
-plan.forEach(function(day){ day.done = completedDays.includes(day.d); });
+var journeyState = UserData.journey.load();
+var activePlanReadingSession = null;
+var planSpeechReturnPending = false;
+var planNavigationRequest = 0;
+
+function planSessionContainsChapter(bookId,chapter){
+  return Boolean(activePlanReadingSession && activePlanReadingSession.readings.some(function(reading){
+    return reading.bookId===bookId && chapter>=reading.startChapter && chapter<=reading.endChapter;
+  }));
+}
+
+function updatePlanSessionControl(){
+  var button=document.getElementById('readerBackToPlan'), reader=document.getElementById('view-reader');
+  if(button) button.hidden=!(activePlanReadingSession && reader && reader.classList.contains('active'));
+  if(reader) reader.classList.toggle('has-plan-session',Boolean(activePlanReadingSession));
+}
+
+function clearPlanReadingSession(){
+  activePlanReadingSession=null;
+  planSpeechReturnPending=false;
+  planNavigationRequest++;
+  updatePlanSessionControl();
+  if(typeof updateReaderControls==='function') updateReaderControls();
+}
+
+function buildPlanReadingSession(planIndex,dayNumber,day){
+  var readings=[];
+  day.chapters.forEach(function(chapter){
+    var previous=readings[readings.length-1];
+    if(previous && previous.bookId===chapter.bookId && previous.endChapter+1===chapter.chapter) previous.endChapter=chapter.chapter;
+    else readings.push({bookId:chapter.bookId,startChapter:chapter.chapter,endChapter:chapter.chapter});
+  });
+  var start=day.chapters[0], end=day.chapters[day.chapters.length-1];
+  var finalChapter=BibleData.getChapter(currentTranslation,end.bookId,end.chapter);
+  var endVerse=finalChapter ? finalChapter.verses.reduce(function(last,verse,index){ return typeof verse==='string' && verse.trim() ? index+1 : last; },0) : 0;
+  return {
+    planPart:planIndex+1,day:dayNumber,readings:readings,
+    start:{bookId:start.bookId,chapter:start.chapter,verse:1},
+    end:{bookId:end.bookId,chapter:end.chapter,verse:endVerse},translationId:currentTranslation
+  };
+}
+
+function refreshPlanReadingSessionTranslation(){
+  if(!activePlanReadingSession) return;
+  activePlanReadingSession.translationId=currentTranslation;
+  var chapter=BibleData.getChapter(currentTranslation,activePlanReadingSession.end.bookId,activePlanReadingSession.end.chapter);
+  activePlanReadingSession.end.verse=chapter ? chapter.verses.reduce(function(last,verse,index){
+    return typeof verse==='string' && verse.trim() ? index+1 : last;
+  },0) : 0;
+}
+
+function returnToPlanFromSession(announceCompletion){
+  if(!activePlanReadingSession) return false;
+  clearPlanReadingSession();
+  if(typeof BibleSpeech!=='undefined' && BibleSpeech.getState()!=='idle') BibleSpeech.stop();
+  var reader=document.getElementById('view-reader');
+  if(reader && reader.classList.contains('reader-fullscreen')) toggleFullscreen();
+  var planButton=document.querySelector('.bs-btn[aria-controls="view-plan"]');
+  if(planButton) switchView('plan',planButton);
+  var status=document.getElementById('journeyStatus');
+  if(status) status.textContent=announceCompletion ? 'Daily reading complete. Returning to Plan.' : '';
+  var heading=document.getElementById('planHeading');
+  if(heading) heading.focus();
+  return true;
+}
+
+function currentJourneyPlanIndex(){
+  return ReadingJourneyPlans.findIndex(function(plan,index){ return journeyState.plans[index].length < plan.days.length; });
+}
+
+function localCalendarDate(date){
+  var year=date.getFullYear(), month=String(date.getMonth()+1).padStart(2,'0'), day=String(date.getDate()).padStart(2,'0');
+  return year+'-'+month+'-'+day;
+}
+
+function journeyStreak(today){
+  var dates=journeyState.completedDates.slice().sort().reverse();
+  if(!dates.length) return 0;
+  var todayDate=new Date(today+'T00:00:00'), latest=new Date(dates[0]+'T00:00:00');
+  var distance=Math.round((todayDate-latest)/86400000);
+  if(distance > 1 || distance < 0) return 0;
+  var streak=1;
+  for(var i=1;i<dates.length;i++){
+    var prior=new Date(dates[i]+'T00:00:00'), newer=new Date(dates[i-1]+'T00:00:00');
+    if(Math.round((newer-prior)/86400000) !== 1) break;
+    streak++;
+  }
+  return streak;
+}
 
 function renderPlan(){
-  var nextDay = plan.find(function(day){ return !day.done; });
-  var container = document.getElementById('planDays');
-  var doneCount = 0;
-  container.innerHTML = plan.map(function(day){
-    if(day.done) doneCount++;
-    var cls = day.done ? 'past completed' : (day === nextDay ? 'today' : 'future');
-    return '<button type="button" class="plan-day ' + cls + '" aria-label="Day ' + day.d + ': ' + day.ref + '" aria-pressed="' + (day.done ? 'true' : 'false') + '" data-plan-day="' + day.d + '">' +
-      '<div class="day-num">' + day.d + '</div>' +
-      '<div class="day-ref">' + day.ref + '</div>' +
-      '</button>';
-  }).join('');
-  var pct = Math.round((doneCount / plan.length) * 100);
-  document.getElementById('planFill').className = 'plan-progress-fill plan-progress-days-' + doneCount;
-  document.getElementById('planDone').textContent = doneCount + ' of ' + plan.length + ' days';
-  document.getElementById('planPct').textContent = pct + '%';
-}
-
-function toggleDay(d){
-  var day = plan.find(function(x){ return x.d === d; });
-  if(day){
-    day.done = !day.done;
-    UserData.plan.save(plan.filter(function(item){ return item.done; }).map(function(item){ return item.d; }));
-    renderPlan();
-  }
-}
-
-function initializePlanControls(){
-  var container = document.getElementById('planDays');
+  var container=document.getElementById('planDays');
   if(!container) return;
-  container.addEventListener('click', function(event){
-    var button = event.target.closest('[data-plan-day]');
-    if(button && container.contains(button)) toggleDay(Number(button.getAttribute('data-plan-day')));
+  var index=currentJourneyPlanIndex(), completedTotal=journeyState.plans.reduce(function(total,days){ return total+days.length; },0);
+  var plan=index < 0 ? null : ReadingJourneyPlans[index];
+  var completed=plan ? journeyState.plans[index] : [];
+  var nextDayNumber=plan ? plan.days.findIndex(function(_,dayIndex){ return completed.indexOf(dayIndex+1)===-1; })+1 : 0;
+  container.innerHTML=plan ? plan.days.map(function(day,dayIndex){
+    var dayNumber=dayIndex+1, done=completed.indexOf(dayNumber)!==-1;
+    var nextDay=dayNumber===nextDayNumber;
+    var cls=done ? 'past completed' : (nextDay ? 'today' : 'future');
+    return '<button type="button" class="plan-day '+cls+'" aria-label="'+plan.title+', day '+dayNumber+': '+day.reference+'" aria-pressed="'+(done?'true':'false')+'" data-plan-day="'+dayNumber+'">'+
+      '<div class="day-num">'+dayNumber+'</div><div class="day-ref">'+day.reference+'</div></button>';
+  }).join('') : '<p class="plan-complete-message">You completed the full New Testament reading journey.</p>';
+  var count=completed.length, pct=plan ? Math.round(count/plan.days.length*100) : 100;
+  document.getElementById('planTitle').textContent=plan ? plan.title : 'Journey complete';
+  document.getElementById('planDone').textContent=count+' of 30 days completed';
+  document.getElementById('planPct').textContent=pct+'%';
+  document.getElementById('planFill').className='plan-progress-fill plan-progress-days-'+count;
+  document.querySelector('.plan-progress-bar').setAttribute('aria-valuenow',String(count));
+  document.getElementById('journeyTotal').textContent=completedTotal+' of 150 days completed';
+  document.getElementById('journeyStreak').textContent=journeyStreak(localCalendarDate(new Date()))+'-day streak';
+}
+
+function completeJourneyDay(planIndex,dayNumber,date){
+  var completed=journeyState.plans[planIndex];
+  if(completed.indexOf(dayNumber)!==-1) return false;
+  completed.push(dayNumber);
+  completed.sort(function(a,b){ return a-b; });
+  if(journeyState.completedDates.indexOf(date)===-1){
+    journeyState.completedDates.push(date);
+    journeyState.completedDates.sort();
+  }
+  UserData.journey.save(journeyState);
+  return true;
+}
+
+function openJourneyDay(dayNumber){
+  var planIndex=currentJourneyPlanIndex();
+  if(planIndex<0) return Promise.resolve(false);
+  var day=ReadingJourneyPlans[planIndex].days[dayNumber-1];
+  if(!day) return Promise.resolve(false);
+  clearPlanReadingSession();
+  var requestId=++planNavigationRequest;
+  var status=document.getElementById('journeyStatus');
+  if(status) status.textContent='';
+  var passage=day.chapters[0];
+  return navigateReaderToPassage(passage.bookId,passage.chapter,1).then(function(navigated){
+    if(!navigated || requestId!==planNavigationRequest) return false;
+    activePlanReadingSession=buildPlanReadingSession(planIndex,dayNumber,day);
+    updatePlanSessionControl();
+    updateReaderControls();
+    completeJourneyDay(planIndex,dayNumber,localCalendarDate(new Date()));
+    renderPlan();
+    return true;
   });
 }
 
-if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializePlanControls, { once: true });
+function initializePlanControls(){
+  var container=document.getElementById('planDays');
+  if(!container) return;
+  container.addEventListener('click',function(event){
+    var button=event.target.closest('[data-plan-day]');
+    if(button && container.contains(button)) openJourneyDay(Number(button.getAttribute('data-plan-day')));
+  });
+  var backButton=document.getElementById('readerBackToPlan');
+  if(backButton) backButton.addEventListener('click',function(){ returnToPlanFromSession(false); });
+  updatePlanSessionControl();
+  renderPlan();
+}
+
+if(document.readyState==='loading') window.addEventListener('DOMContentLoaded',initializePlanControls,{once:true});
 else initializePlanControls();

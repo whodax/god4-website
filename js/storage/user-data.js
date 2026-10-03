@@ -4,7 +4,7 @@ var UserData = (function(storage){
     saved: 'god4.savedVerses', plan: 'god4.plan.completedDays',
     translation: 'god4.translation', compare: 'god4.compare',
     speed: 'god4.speech.speed', voice: 'god4.speech.voice',
-    readerPosition: 'god4.reader.position'
+    readerPosition: 'god4.reader.position', journey: 'god4.plan.journey.v1'
   };
   var speeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5];
   function readJSON(key){
@@ -27,6 +27,17 @@ var UserData = (function(storage){
     return Array.from(new Set(entries.filter(function(day){
       return Number.isInteger(day) && day >= 1 && day <= 30;
     })));
+  }
+  function journey(value){
+    if(!value || typeof value !== 'object' || value.version !== 1) return null;
+    var plans = Array.isArray(value.plans) ? value.plans.slice(0, 5).map(completedDays) : [];
+    while(plans.length < 5) plans.push([]);
+    var dates = Array.isArray(value.completedDates) ? Array.from(new Set(value.completedDates.filter(function(date){
+      if(typeof date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return false;
+      var parsed=new Date(date+'T00:00:00');
+      return !isNaN(parsed.getTime()) && [parsed.getFullYear(),String(parsed.getMonth()+1).padStart(2,'0'),String(parsed.getDate()).padStart(2,'0')].join('-')===date;
+    }))).sort() : [];
+    return {version: 1, plans: plans, completedDates: dates};
   }
   function translation(value){
     return typeof value === 'string' && value && value !== 'demo-local' ? value : 'web';
@@ -65,6 +76,17 @@ var UserData = (function(storage){
     plan: {
       load: function(){ return completedDays(readJSON(keys.plan)); },
       save: function(value){ return storage.write(keys.plan, JSON.stringify(completedDays(value))); }
+    },
+    journey: {
+      load: function(){
+        var raw=readJSON(keys.journey), stored = journey(raw);
+        if(stored) return stored;
+        var legacy = completedDays(readJSON(keys.plan));
+        var migrated = {version: 1, plans: [legacy, [], [], [], []], completedDates: []};
+        if(raw === null) storage.write(keys.journey, JSON.stringify(migrated));
+        return migrated;
+      },
+      save: function(value){ var safe = journey(value); return safe ? storage.write(keys.journey, JSON.stringify(safe)) : false; }
     },
     translation: {
       load: function(){ return translation(storage.read(keys.translation)); },
