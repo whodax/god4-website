@@ -1,4 +1,68 @@
 var journeyState = UserData.journey.load();
+var activePlanReadingSession = null;
+var planSpeechReturnPending = false;
+var planNavigationRequest = 0;
+
+function planSessionContainsChapter(bookId,chapter){
+  return Boolean(activePlanReadingSession && activePlanReadingSession.readings.some(function(reading){
+    return reading.bookId===bookId && chapter>=reading.startChapter && chapter<=reading.endChapter;
+  }));
+}
+
+function updatePlanSessionControl(){
+  var button=document.getElementById('readerBackToPlan'), reader=document.getElementById('view-reader');
+  if(button) button.hidden=!(activePlanReadingSession && reader && reader.classList.contains('active'));
+  if(reader) reader.classList.toggle('has-plan-session',Boolean(activePlanReadingSession));
+}
+
+function clearPlanReadingSession(){
+  activePlanReadingSession=null;
+  planSpeechReturnPending=false;
+  planNavigationRequest++;
+  updatePlanSessionControl();
+  if(typeof updateReaderControls==='function') updateReaderControls();
+}
+
+function buildPlanReadingSession(planIndex,dayNumber,day){
+  var readings=[];
+  day.chapters.forEach(function(chapter){
+    var previous=readings[readings.length-1];
+    if(previous && previous.bookId===chapter.bookId && previous.endChapter+1===chapter.chapter) previous.endChapter=chapter.chapter;
+    else readings.push({bookId:chapter.bookId,startChapter:chapter.chapter,endChapter:chapter.chapter});
+  });
+  var start=day.chapters[0], end=day.chapters[day.chapters.length-1];
+  var finalChapter=BibleData.getChapter(currentTranslation,end.bookId,end.chapter);
+  var endVerse=finalChapter ? finalChapter.verses.reduce(function(last,verse,index){ return typeof verse==='string' && verse.trim() ? index+1 : last; },0) : 0;
+  return {
+    planPart:planIndex+1,day:dayNumber,readings:readings,
+    start:{bookId:start.bookId,chapter:start.chapter,verse:1},
+    end:{bookId:end.bookId,chapter:end.chapter,verse:endVerse},translationId:currentTranslation
+  };
+}
+
+function refreshPlanReadingSessionTranslation(){
+  if(!activePlanReadingSession) return;
+  activePlanReadingSession.translationId=currentTranslation;
+  var chapter=BibleData.getChapter(currentTranslation,activePlanReadingSession.end.bookId,activePlanReadingSession.end.chapter);
+  activePlanReadingSession.end.verse=chapter ? chapter.verses.reduce(function(last,verse,index){
+    return typeof verse==='string' && verse.trim() ? index+1 : last;
+  },0) : 0;
+}
+
+function returnToPlanFromSession(announceCompletion){
+  if(!activePlanReadingSession) return false;
+  clearPlanReadingSession();
+  if(typeof BibleSpeech!=='undefined' && BibleSpeech.getState()!=='idle') BibleSpeech.stop();
+  var reader=document.getElementById('view-reader');
+  if(reader && reader.classList.contains('reader-fullscreen')) toggleFullscreen();
+  var planButton=document.querySelector('.bs-btn[aria-controls="view-plan"]');
+  if(planButton) switchView('plan',planButton);
+  var status=document.getElementById('journeyStatus');
+  if(status) status.textContent=announceCompletion ? 'Daily reading complete. Returning to Plan.' : '';
+  var heading=document.getElementById('planHeading');
+  if(heading) heading.focus();
+  return true;
+}
 
 function currentJourneyPlanIndex(){
   return ReadingJourneyPlans.findIndex(function(plan,index){ return journeyState.plans[index].length < plan.days.length; });
@@ -45,8 +109,7 @@ function renderPlan(){
   document.getElementById('planFill').className='plan-progress-fill plan-progress-days-'+count;
   document.querySelector('.plan-progress-bar').setAttribute('aria-valuenow',String(count));
   document.getElementById('journeyTotal').textContent=completedTotal+' of 150 days completed';
-  document.getElementById('journeyStreak').textContent=journeyStreak(localCalendarDate(new Date()))+' day streak';
-  document.getElementById('journeyStatus').textContent=plan ? plan.title+', part '+(index+1)+' of 5' : 'New Testament journey complete';
+  document.getElementById('journeyStreak').textContent=journeyStreak(localCalendarDate(new Date()))+'-day streak';
 }
 
 function completeJourneyDay(planIndex,dayNumber,date){
@@ -67,9 +130,16 @@ function openJourneyDay(dayNumber){
   if(planIndex<0) return Promise.resolve(false);
   var day=ReadingJourneyPlans[planIndex].days[dayNumber-1];
   if(!day) return Promise.resolve(false);
+  clearPlanReadingSession();
+  var requestId=++planNavigationRequest;
+  var status=document.getElementById('journeyStatus');
+  if(status) status.textContent='';
   var passage=day.chapters[0];
   return navigateReaderToPassage(passage.bookId,passage.chapter,1).then(function(navigated){
-    if(!navigated) return false;
+    if(!navigated || requestId!==planNavigationRequest) return false;
+    activePlanReadingSession=buildPlanReadingSession(planIndex,dayNumber,day);
+    updatePlanSessionControl();
+    updateReaderControls();
     completeJourneyDay(planIndex,dayNumber,localCalendarDate(new Date()));
     renderPlan();
     return true;
@@ -83,6 +153,9 @@ function initializePlanControls(){
     var button=event.target.closest('[data-plan-day]');
     if(button && container.contains(button)) openJourneyDay(Number(button.getAttribute('data-plan-day')));
   });
+  var backButton=document.getElementById('readerBackToPlan');
+  if(backButton) backButton.addEventListener('click',function(){ returnToPlanFromSession(false); });
+  updatePlanSessionControl();
   renderPlan();
 }
 

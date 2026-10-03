@@ -218,6 +218,7 @@
           <div id="wordStudyStatus" class="sr-only" role="status" aria-live="polite"></div>
         </section>
         <div class="reader-passage" id="readerContent"></div>
+        <button id="readerBackToPlan" class="reader-back-to-plan" type="button" aria-label="Return to the reading plan" hidden>Back to Plan</button>
       </div>
       <!-- COMPARE -->
       <div class="bs-view" id="view-compare">
@@ -247,15 +248,19 @@
       <!-- PLAN -->
       <div class="bs-view" id="view-plan">
         <div class="plan-header">
-          <h2>New Testament Reading Journey</h2>
+          <h2 id="planHeading" tabindex="-1">New Testament Reading Journey</h2>
           <p>Read the New Testament in five guided 30-day parts</p>
         </div>
         <div class="plan-progress">
           <div class="plan-progress-bar" role="progressbar" aria-label="Current plan progress" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0"><div class="plan-progress-fill plan-progress-days-0" id="planFill"></div></div>
-          <div class="plan-progress-label"><span id="planDone">0 of 30 days completed</span><span id="planPct">0%</span></div>
-          <p id="planTitle" aria-live="polite">Part 1 of 5</p>
-          <p id="journeyStatus" class="sr-only" role="status" aria-live="polite"></p>
-          <p class="plan-progress-label"><span id="journeyTotal">0 of 150 days completed</span><span id="journeyStreak">0 day streak</span></p>
+          <div id="planStats" class="plan-stats" role="group" aria-label="New Testament journey progress">
+            <span id="planDone">0 of 30 days completed</span>
+            <span id="planPct">0%</span>
+            <span id="planTitle">Part 1 of 5</span>
+            <span id="journeyTotal">0 of 150 days completed</span>
+            <span id="journeyStreak">0-day streak</span>
+          </div>
+          <p id="journeyStatus" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
         </div>
         <div class="plan-days" id="planDays"></div>
       </div>
