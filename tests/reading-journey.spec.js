@@ -137,6 +137,26 @@ test('Space uses native Plan button activation and mouse click remains supported
   await expect(page.locator('#journeyTotal')).toHaveText('2 of 150 days completed');
 });
 
+test('return focus selects the next unfinished native day and Enter and Space activate it once',async ({page})=>{
+  await page.locator('#planDays [data-plan-day="1"]').click();
+  await page.locator('#readerBackToPlan').click();
+  const dayTwo=page.locator('#planDays [data-plan-day="2"]');
+  await expect(dayTwo).toBeFocused();
+  await expect(page.locator('#planHeading')).not.toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 3');
+  await expect(page.locator('#journeyTotal')).toHaveText('2 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('1-day streak');
+  await page.getByRole('button',{name:'Plan',exact:true}).click();
+  const dayThree=page.locator('#planDays [data-plan-day="3"]');
+  await expect(dayThree).toBeFocused();
+  await page.keyboard.press('Space');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 5');
+  await expect(page.locator('#journeyTotal')).toHaveText('3 of 150 days completed');
+  await expect(page.locator('#journeyStreak')).toHaveText('1-day streak');
+  expect(await page.evaluate(()=>UserData.journey.load().completedDates)).toEqual(['2026-01-10']);
+});
+
 test('Back to Plan is hidden in ordinary Reader and returns focus after a plan reading',async ({page})=>{
   await page.getByRole('button',{name:'Reader',exact:true}).click();
   await expect(page.locator('#readerBackToPlan')).toBeHidden();
@@ -149,7 +169,7 @@ test('Back to Plan is hidden in ordinary Reader and returns focus after a plan r
   await expect(back).toBeFocused();
   await page.keyboard.press('Enter');
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
-  await expect(page.locator('#planHeading')).toBeFocused();
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
   await expect(back).toBeHidden();
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
   expect(await page.evaluate(()=>history.state && history.state.god4PlanReaderSession)).toBeFalsy();
@@ -166,7 +186,7 @@ test('Back to Plan uses one control in fullscreen and returns to the same Plan v
   await back.click();
   await expect(page.locator('#view-reader')).not.toHaveClass(/reader-fullscreen/);
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
-  await expect(page.locator('#planHeading')).toBeFocused();
+  await expect(page.locator('#planDays [data-plan-day="2"]')).toBeFocused();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(1280);
 });
 
@@ -215,6 +235,7 @@ test('manual advancement stays within the assigned chapters and exits only beyon
   expect(await page.evaluate(()=>activePlanReadingSession.day)).toBe(5);
   await page.locator('[data-reader-action="next"]').first().click();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
   await expect(page.locator('#readerContent h2')).toHaveText('Matthew 10');
   await expect(page.locator('#journeyStatus')).toHaveText('Daily reading complete. Returning to Plan.');
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
@@ -331,7 +352,7 @@ test('browser Back returns from a Plan session, preserves completion, and does n
   expect(await page.evaluate(()=>activePlanReadingSession.day)).toBe(1);
   await page.goBack();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
-  await expect(page.locator('#planHeading')).toBeFocused();
+  await expect(page.locator('#planDays [data-plan-day="2"]')).toBeFocused();
   expect(page.url()).toBe(originalUrl);
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
@@ -378,6 +399,7 @@ test('browser Back before completing Part 5 Day 30 leaves no rollover or stale s
   await page.goBack();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
   await expect(page.locator('#planTitle')).toHaveText('Part 5 of 5');
+  await expect(page.locator('#planDays [data-plan-day="30"]')).toBeFocused();
   await expect(page.locator('#planDone')).toHaveText('29 of 30 days completed');
   await expect(page.locator('#journeyTotal')).toHaveText('149 of 150 days completed');
   await expect(page.locator('#journeyStatus')).toBeEmpty();
@@ -402,6 +424,7 @@ test('final manual Next Chapter rolls over once while preserving the 75-day stre
   await expect(page.locator('#journeyStatus')).toBeVisible();
   await expect(page.locator('#journeyStatus')).toHaveAttribute('aria-atomic','true');
   await expect(page.locator('#journeyStatus')).toHaveCount(1);
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
   for(const width of [320,375,480]){
     await page.setViewportSize({width,height:720});
     await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
@@ -471,6 +494,7 @@ test('Read Aloud returns from Revelation 22 and rolls over the completed journey
     }
   });
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
+  await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
   await expect(page.locator('#journeyStatus')).toHaveText('Congratulations! You completed the entire New Testament Journey. You’ve gone far beyond a casual reading of Scripture—but there is always more to learn. Let’s do that again.');
   await expect(page.locator('#planTitle')).toHaveText('Part 1 of 5');
   await expect(page.locator('#journeyTotal')).toHaveText('0 of 150 days completed');
@@ -504,7 +528,11 @@ test('finishing a plan advances through all five parts to completion',async ({pa
     },planIndex);
     await page.getByRole('button',{name:'Plan',exact:true}).click();
     await page.locator('#planDays [data-plan-day="30"]').click();
-    if(planIndex<4) await expect(page.locator('#planTitle')).toContainText('Part '+(planIndex+2)+' of 5');
+    if(planIndex<4){
+      await expect(page.locator('#planTitle')).toContainText('Part '+(planIndex+2)+' of 5');
+      await page.getByRole('button',{name:'Plan',exact:true}).click();
+      await expect(page.locator('#planDays [data-plan-day="1"]')).toBeFocused();
+    }
     else {
       await expect(page.locator('#readerContent h2')).toHaveText('Revelation 22');
       await page.locator('[data-reader-action="next"]').first().click();

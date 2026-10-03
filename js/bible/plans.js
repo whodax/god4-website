@@ -117,15 +117,31 @@ function returnToPlanFromSession(announceCompletion,fromPopState){
   if(reader && reader.classList.contains('reader-fullscreen')) toggleFullscreen();
   var planButton=document.querySelector('.bs-btn[aria-controls="view-plan"]');
   if(planButton) switchView('plan',planButton);
+  // Rebuild the Plan before choosing a focus target so completion, part changes,
+  // and rollover are reflected by the buttons that receive focus.
+  renderPlan();
   var status=document.getElementById('journeyStatus');
   if(status){
     var message=journeyWasComplete ? isNewTestamentJourneyCongratulations() :
       (announceCompletion ? 'Daily reading complete. Returning to Plan.' : '');
     if(status.textContent!==message) status.textContent=message;
   }
-  var heading=document.getElementById('planHeading');
-  if(heading) heading.focus();
+  focusNextJourneyDay();
   return true;
+}
+
+function focusNextJourneyDay(){
+  var planIndex=currentJourneyPlanIndex();
+  var plan=planIndex<0 ? null : ReadingJourneyPlans[planIndex];
+  var completed=plan ? journeyState.plans[planIndex] : [];
+  var dayIndex=plan ? plan.days.findIndex(function(_,index){ return completed.indexOf(index+1)===-1; }) : -1;
+  var dayButton=dayIndex<0 ? null : document.querySelector('#planDays [data-plan-day="'+(dayIndex+1)+'"]');
+  if(dayButton){ dayButton.focus(); return true; }
+  var heading=document.getElementById('planHeading');
+  if(heading){ heading.focus(); return true; }
+  var planContainer=document.getElementById('view-plan');
+  if(planContainer){ planContainer.focus(); return true; }
+  return false;
 }
 
 function currentJourneyPlanIndex(){
