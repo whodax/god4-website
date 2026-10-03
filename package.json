@@ -5,6 +5,7 @@
   "scripts": {
     "test": "npm run test:validate && npm run test:e2e",
     "test:e2e": "playwright test",
+    "test:journey-coverage": "node tests/reading-journey-coverage.test.js",
     "generate:translation-manifest": "node tools/generate-translation-manifest.js",
     "test:validate": "node tests/validate-assets.js",
     "import:kjv": "node tools/import-kjv.js",

@@ -1074,17 +1074,43 @@ document.addEventListener('keydown', function(event){
 
 function runWithBibleExperience(action){
   if(typeof bibleExperienceReady !== 'undefined' && bibleExperienceReady){
-    action();
-    return Promise.resolve(true);
+    try { return Promise.resolve(action() !== false); }
+    catch(error){ return Promise.resolve(false); }
   }
   var ready = typeof initializeBibleExperience === 'function'
     ? initializeBibleExperience()
     : Promise.resolve(true);
   return ready.then(function(loaded){
     if(!loaded) return false;
-    action();
-    return true;
+    return action() !== false;
   });
+}
+
+function navigateReaderToPassage(bookId, chapter, verse){
+  var requestedVerse = Number.isInteger(verse) && verse > 0 ? verse : 1;
+  if(typeof BibleData === 'undefined' || !BibleData.getChapter(currentTranslation, bookId, chapter) ||
+    !BibleData.getVerse(currentTranslation, bookId, chapter, requestedVerse)) return Promise.resolve(false);
+  return runWithBibleExperience(function(){
+    var readerButton = document.querySelector('.bs-btn[aria-controls="view-reader"]');
+    if(!readerButton) return false;
+    if(!document.getElementById('view-reader').classList.contains('active')) switchView('reader', readerButton);
+    var bookSelect = document.getElementById('bookSelect');
+    var chapterSelect = document.getElementById('chapterSelect');
+    if(!bookSelect || !chapterSelect || !Array.from(bookSelect.options).some(function(option){ return option.value === bookId; })) return false;
+    currentBook = bookId;
+    currentChapter = chapter;
+    currentVerse = requestedVerse;
+    readerSelectionPending = true;
+    bookSelect.value = bookId;
+    populateChapters();
+    chapterSelect.value = String(chapter);
+    loadPassage();
+    var target = document.querySelector('#readerContent [data-verse-number="' + requestedVerse + '"]');
+    if(!target || target.getAttribute('data-book-id') !== bookId || Number(target.getAttribute('data-chapter')) !== chapter) return false;
+    if(!applyReaderVerseSelection(requestedVerse, true)) return false;
+    saveReaderPosition();
+    return true;
+  }).catch(function(){ return false; });
 }
 function initializeReaderControls(){
   initializeReaderStickyOffsets();
