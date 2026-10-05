@@ -106,8 +106,6 @@
   .reader-audio-status{flex-basis:100%;text-align:center;color:var(--ink-soft);font:italic 13px 'EB Garamond','EB Garamond Fallback',serif;}
   .reader-speech-preferences{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;max-width:100%;color:var(--ink-soft);font:11px 'Inter','Inter Fallback',sans-serif;letter-spacing:.04em;}
   .reader-speech-preferences select{background:var(--vellum);border:1px solid var(--line);border-radius:2px;color:var(--ink-soft);font:11px 'Inter','Inter Fallback',sans-serif;padding:7px 22px 7px 7px;}
-  .verse-speak{background:none;border:0;color:var(--ink-soft);font:10px 'Inter','Inter Fallback',sans-serif;padding:0 3px;cursor:pointer;}
-  .verse-speak:hover{color:var(--gold);}
   .word-study-token{cursor:pointer;border-radius:2px;}
   .word-study-token:hover{color:var(--gold);background:rgba(184,134,43,0.1);}
   .word-study-token:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}

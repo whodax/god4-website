@@ -70,7 +70,7 @@ test('fullscreen traps focus, restores background attributes, and gives More fir
   await expect(header).toHaveAttribute('inert', '');
   await expect(header).toHaveAttribute('aria-hidden', 'true');
   const first = page.locator('#bookSelect');
-  const last = page.locator('#readerContent .verse-speak').last();
+  const last = page.locator('#readerContent').getByRole('button').last();
   await first.focus();
   await first.press('Shift+Tab');
   await expect(last).toBeFocused();

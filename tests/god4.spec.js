@@ -1023,7 +1023,7 @@ test('single-verse Read Aloud combines spoken and selected states and clears on 
   await page.locator('#verseSelect').selectOption('2');
   const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
 
-  await page.locator('#readerContent [data-verse-speech="2"]').click();
+  await page.evaluate(() => readVerseAloud(2));
   const verse = page.locator('#readerContent [data-verse-number="2"]');
   await expect(verse).toHaveClass(/verse-focused/);
   await expect(verse).toHaveClass(/verse-spoken/);
@@ -1170,8 +1170,8 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
   await expect(verse).toHaveAttribute('data-translation-id', 'web');
   await expect(verse).toHaveAttribute('data-verse-text', expectedWebVerse);
   await expect(verse).toContainText(expectedWebVerse);
-  const verseSpeech = verse.locator('[data-verse-speech="2"]');
-  await verseSpeech.click();
+  await expect(verse.locator('[data-verse-speech]')).toHaveCount(0);
+  await page.evaluate(() => readVerseAloud(2));
   expect(await page.evaluate(() => ({
     utterance: window.__speech.spoken[1],
     cancels: window.__speech.cancels,
@@ -1191,7 +1191,7 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
   expect(await page.evaluate(() => window.__speech.spoken[2].rate)).toBe(0.5);
   await openReaderMore(page);
   await page.locator('#readAloudSpeed').selectOption('2.5');
-  await page.locator('#readerContent [data-verse-speech="1"]').click();
+  await page.evaluate(() => readVerseAloud(1));
   expect(await page.evaluate(() => window.__speech.spoken[3].rate)).toBe(2.5);
 });
 

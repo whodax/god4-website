@@ -96,7 +96,10 @@ test('Female persists through Stop, next chapter, Repeat, fullscreen, verse spee
   expect(await page.evaluate(() => BibleSpeech.repeatVerse(1))).toBe(true);
   expect(await latestUtterance(page)).toMatchObject({voice:'Zira English U.S.', pitch:1});
   await page.locator('#fullscreenBtn').click();
-  await page.locator('#readerContent [data-verse-speech="2"]').click();
+  await page.locator('#readAloudPlay').click();
+  await page.locator('#readAloudPlay').click();
+  expect(await latestUtterance(page)).toMatchObject({voice:'Zira English U.S.', pitch:1});
+  await page.evaluate(() => readVerseAloud(2));
   expect(await latestUtterance(page)).toMatchObject({voice:'Zira English U.S.', pitch:1});
   await page.locator('#fullscreenBtn').click();
   await page.reload();
