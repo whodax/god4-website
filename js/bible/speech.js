@@ -150,7 +150,8 @@ var BibleSpeech = (function createBibleSpeech(){
   function getResolvedVoiceInfo(){
     function info(profile){
       var voice = voiceInventory.get(resolvedVoiceKeys[profile]);
-      return voice ? {name:voice.name, voiceURI:voice.voiceURI || '', lang:voice.lang} : null;
+      return voice ? {name:voice.name, voiceURI:voice.voiceURI || '', lang:voice.lang,
+        localService:Boolean(voice.localService), default:Boolean(voice.default)} : null;
     }
     var voice = selectedVoice();
     return {
@@ -166,12 +167,46 @@ var BibleSpeech = (function createBibleSpeech(){
     };
   }
 
-  function configureUtterance(utterance){
+  function configureUtterance(utterance, profile){
     utterance.rate = speed;
     utterance.pitch = 1;
-    var voice = selectedVoice();
+    var voice = profile ? voiceInventory.get(resolvedVoiceKeys[profile]) : selectedVoice();
     if(voice) utterance.voice = voice;
     return utterance;
+  }
+
+  function voiceDebugEnabled(){
+    return new URLSearchParams(window.location.search).get('voice-debug') === '1';
+  }
+
+  function notifyVoiceDebug(){
+    if(voiceDebugEnabled()) document.dispatchEvent(new Event('bible-speech-debug-update'));
+  }
+
+  function getVoiceDiagnostics(){
+    var inventory = [];
+    var error = '';
+    try { inventory = voices(); }
+    catch(failure){ error = String(failure.message || failure); }
+    return {
+      supported:supported(),
+      inventory:inventory.map(function(voice, index){
+        return {index:index, name:voice.name, voiceURI:voice.voiceURI || '', lang:voice.lang,
+          localService:Boolean(voice.localService), default:Boolean(voice.default)};
+      }),
+      englishVoiceCount:inventory.filter(function(voice){ return /^en(?:-|_|$)/i.test(voice.lang); }).length,
+      resolved:getResolvedVoiceInfo(),
+      error:error
+    };
+  }
+
+  function testVoiceProfile(profile){
+    // Diagnostics must not interrupt playing/paused Reader or Journey speech.
+    if(!voiceDebugEnabled() || !supported() || state !== 'idle' ||
+        (profile !== 'male' && profile !== 'female')) return false;
+    window.speechSynthesis.speak(configureUtterance(new window.SpeechSynthesisUtterance(
+      profile === 'male' ? 'This is the male voice.' : 'This is the female voice.'), profile));
+    return true;
   }
 
   function setPlaybackListener(listener){
@@ -219,6 +254,7 @@ var BibleSpeech = (function createBibleSpeech(){
     }
     if(controls.speed) controls.speed.value = String(speed);
     if(controls.voice) controls.voice.disabled = unavailable;
+    notifyVoiceDebug();
   }
 
   function finish(activeSession, message){
@@ -466,6 +502,7 @@ var BibleSpeech = (function createBibleSpeech(){
     voicePreference = name;
     UserData.speechVoice.save(voicePreference);
     populateVoiceSelector();
+    notifyVoiceDebug();
   }
 
   function pauseResume(){
@@ -521,6 +558,8 @@ var BibleSpeech = (function createBibleSpeech(){
     getSpeed: function(){ return speed; },
     getVoice: function(){ return selectedVoice(); },
     getResolvedVoiceInfo: getResolvedVoiceInfo,
+    getVoiceDiagnostics: getVoiceDiagnostics,
+    testVoiceProfile: testVoiceProfile,
     getSpeedOptions: function(){ return SPEEDS.slice(); },
     refreshVoices: refreshVoices,
     updateControls: updateControls,
