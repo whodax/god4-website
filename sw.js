@@ -2,7 +2,7 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-12';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-13';
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -31,6 +31,7 @@ const SHELL_ASSETS = [
   '/js/storage/local-provider.js',
   '/js/storage/user-data.js',
   '/js/bible/speech.js',
+  '/js/bible/cloud-tts.js',
   '/js/word-study/provider.js',
   '/js/word-study/original-language-provider.js',
   '/js/word-study/local-provider.js',
@@ -149,6 +150,8 @@ self.addEventListener('fetch', function(event){
   if(request.method !== 'GET') return;
 
   var url = new URL(request.url);
+  // Cloud speech always reaches the Function, including navigations/invalid GETs.
+  if(url.origin === self.location.origin && url.pathname === '/api/tts') return;
   if(isPrivateOrCloudflareRequest(request, url)) return;
   if(url.origin === self.location.origin){
     var activeMatch = /^\/__god4\/bible-cache\/active-script\/([a-z]+)\/([a-f0-9]{16})\.js$/.exec(url.pathname);

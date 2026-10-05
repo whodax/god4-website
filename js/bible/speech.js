@@ -17,8 +17,42 @@ var BibleSpeech = (function createBibleSpeech(){
   var voicePreference = readVoicePreference();
   var playbackListener = null;
 
-  function supported(){
+  function localSupported(){
     return typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined' && typeof window.SpeechSynthesisUtterance !== 'undefined';
+  }
+  function cloudSupported(){
+    return typeof BibleCloudTTS !== 'undefined' && BibleCloudTTS.available();
+  }
+  function supported(){ return localSupported() || cloudSupported(); }
+  function cancelSpeech(){
+    if(cloudSupported()) BibleCloudTTS.cancel();
+    if(localSupported()) window.speechSynthesis.cancel();
+  }
+  function pauseSpeech(){
+    if(cloudSupported()) BibleCloudTTS.pause();
+    if(localSupported()) window.speechSynthesis.pause();
+  }
+  function resumeSpeech(){
+    if(cloudSupported()) BibleCloudTTS.resume();
+    if(localSupported()) window.speechSynthesis.resume();
+  }
+  function prepareCloudSpeech(){ if(cloudSupported()) BibleCloudTTS.prepare(); }
+  function createUtterance(text){
+    return cloudSupported() ? {text:text} : configureUtterance(new window.SpeechSynthesisUtterance(text));
+  }
+  function speakUtterance(utterance){
+    function speakLocal(){
+      if(!localSupported()){ utterance.onerror(); return; }
+      var local = cloudSupported() ? configureUtterance(new window.SpeechSynthesisUtterance(utterance.text)) : utterance;
+      local.onstart = utterance.onstart;
+      local.onend = utterance.onend;
+      local.onerror = utterance.onerror;
+      window.speechSynthesis.speak(local);
+    }
+    if(cloudSupported() && BibleCloudTTS.speak(utterance.text, voicePreference, speed, {
+      onstart:utterance.onstart, onend:utterance.onend, onfallback:speakLocal
+    })) return;
+    speakLocal();
   }
 
   function elements(){
@@ -45,7 +79,7 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function voices(){
-    if(!supported() || typeof window.speechSynthesis.getVoices !== 'function') return [];
+    if(!localSupported() || typeof window.speechSynthesis.getVoices !== 'function') return [];
     return window.speechSynthesis.getVoices();
   }
 
@@ -124,6 +158,8 @@ var BibleSpeech = (function createBibleSpeech(){
     var select = elements().voice;
     if(!select) return;
     var choices = voiceChoices();
+    // Cloud profiles do not depend on the device's local voice inventory.
+    if(cloudSupported()) choices = [{value:'male'}, {value:'female'}];
     select.textContent = '';
     if(!choices.length){
       var placeholder = document.createElement('option');
@@ -211,7 +247,7 @@ var BibleSpeech = (function createBibleSpeech(){
       controls.status.textContent = unavailable ? 'Read aloud is unavailable in this browser.' : state === 'playing' ? statusMessage || 'Reading aloud.' : state === 'paused' ? 'Reading aloud paused.' : completionMessage || 'Ready to read aloud.';
     }
     if(controls.speed) controls.speed.value = String(speed);
-    if(controls.voice) controls.voice.disabled = unavailable || !distinctVoices().length;
+    if(controls.voice) controls.voice.disabled = unavailable || (!cloudSupported() && !distinctVoices().length);
   }
 
   function finish(activeSession, message){
@@ -260,7 +296,7 @@ var BibleSpeech = (function createBibleSpeech(){
       chapter:activeVerse.chapter || null,
       verse:activeVerse.verseNumber
     };
-    var utterance = configureUtterance(new window.SpeechSynthesisUtterance(activeVerse.text));
+    var utterance = createUtterance(activeVerse.text);
     var ended = false;
     utterance.onstart = function(){
       if(activeSession !== session || ended) return;
@@ -277,7 +313,7 @@ var BibleSpeech = (function createBibleSpeech(){
         pauseAfterCurrent = false;
         state = 'paused';
         pendingNext = true;
-        window.speechSynthesis.pause();
+        pauseSpeech();
         updateControls();
         return;
       }
@@ -297,7 +333,7 @@ var BibleSpeech = (function createBibleSpeech(){
       finish(activeSession);
     };
     notifyVerseStart(activeVerse.verseNumber, location);
-    window.speechSynthesis.speak(utterance);
+    speakUtterance(utterance);
   }
   function setChapter(chapter, translationId){
     verses = chapter.verses.map(function(verse, index){
@@ -317,8 +353,9 @@ var BibleSpeech = (function createBibleSpeech(){
     }
     var wasPaused = state === 'paused';
     session++;
-    window.speechSynthesis.cancel();
-    if(wasPaused) window.speechSynthesis.resume();
+    cancelSpeech();
+    if(wasPaused) resumeSpeech();
+    prepareCloudSpeech();
     setChapter(chapter, options && options.translationId);
     var startIndex = verses.findIndex(function(verse){ return verse.verseNumber >= startVerse; });
     verseIndex = startIndex < 0 ? verses.length : startIndex;
@@ -342,8 +379,9 @@ var BibleSpeech = (function createBibleSpeech(){
     }
     var wasPaused = state === 'paused';
     session++;
-    window.speechSynthesis.cancel();
-    if(wasPaused) window.speechSynthesis.resume();
+    cancelSpeech();
+    if(wasPaused) resumeSpeech();
+    prepareCloudSpeech();
     verses = [{
       text:String(text).trim(),
       verseNumber:Number.isInteger(Number(verseNumber)) && Number(verseNumber) > 0 ? Number(verseNumber) : null,
@@ -367,7 +405,7 @@ var BibleSpeech = (function createBibleSpeech(){
   function speakRepeat(activeSession, detour){
     if(activeSession !== session || repeatState !== detour) return;
     var activeVerse = verses[detour.repeatVerseIndex];
-    var utterance = configureUtterance(new window.SpeechSynthesisUtterance(activeVerse.text));
+    var utterance = createUtterance(activeVerse.text);
     var ended = false;
     currentVerseIndex = detour.repeatVerseIndex;
     utterance.onstart = function(){
@@ -388,7 +426,7 @@ var BibleSpeech = (function createBibleSpeech(){
       if(detour.wasPausedBeforeRepeat || state === 'paused'){
         state = 'paused';
         pendingNext = true;
-        window.speechSynthesis.pause();
+        pauseSpeech();
         updateControls();
       } else if(verseIndex >= verses.length){
         continueAtChapterBoundary(activeSession, activeVerse);
@@ -405,7 +443,7 @@ var BibleSpeech = (function createBibleSpeech(){
       translationId:activeVerse.translationId || null, bookId:activeVerse.bookId || null,
       chapter:activeVerse.chapter || null, verse:activeVerse.verseNumber
     });
-    window.speechSynthesis.speak(utterance);
+    speakUtterance(utterance);
   }
   function repeatVerse(verseNumber){
     if(!supported() || !sequenceIsChapter || state === 'idle') return false;
@@ -418,8 +456,9 @@ var BibleSpeech = (function createBibleSpeech(){
         ? verseIndex
         : Math.max(verseIndex, currentVerseIndex + 1);
     session++;
-    window.speechSynthesis.cancel();
-    if(wasPaused) window.speechSynthesis.resume();
+    cancelSpeech();
+    if(wasPaused) resumeSpeech();
+    prepareCloudSpeech();
     var detour = {
       repeatVerseIndex: repeatIndex,
       continuationVerseIndex: continuationVerseIndex,
@@ -455,7 +494,7 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function setVoice(name){
-    if(!voiceChoices().some(function(choice){ return choice.value === name; })) return;
+    if(cloudSupported() ? name !== 'male' && name !== 'female' : !voiceChoices().some(function(choice){ return choice.value === name; })) return;
     voicePreference = name;
     UserData.speechVoice.save(voicePreference);
     populateVoiceSelector();
@@ -465,12 +504,12 @@ var BibleSpeech = (function createBibleSpeech(){
     if(!supported()) return;
     if(state === 'playing'){
       state = 'paused';
-      window.speechSynthesis.pause();
+      pauseSpeech();
     } else if(state === 'paused'){
       state = 'playing';
       if(repeatState) repeatState.wasPausedBeforeRepeat = false;
       pauseAfterCurrent = false;
-      window.speechSynthesis.resume();
+      resumeSpeech();
       if(pendingNext){
         pendingNext = false;
         speakNext(session);
@@ -481,7 +520,7 @@ var BibleSpeech = (function createBibleSpeech(){
 
   function stop(){
     session++;
-    if(supported()) window.speechSynthesis.cancel();
+    cancelSpeech();
     state = 'idle';
     verses = [];
     verseIndex = 0;
