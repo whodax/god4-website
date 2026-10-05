@@ -49,113 +49,120 @@ var BibleSpeech = (function createBibleSpeech(){
     return window.speechSynthesis.getVoices();
   }
 
+  // Profiles are semantic UI choices, independent of the current device inventory.
+  var voiceInventory = new Map();
+  var resolvedVoiceKeys = {male:null, female:null};
+
+  function voiceKey(voice){
+    return JSON.stringify([voice.voiceURI || '', voice.name || '', voice.lang || '']);
+  }
+
+  function isUSEnglish(voice){
+    return /^en[-_]US$/i.test(voice.lang);
+  }
+
   function compareVoiceText(left, right){
-    var first = String(left || '').toLowerCase();
-    var second = String(right || '').toLowerCase();
-    return first < second ? -1 : first > second ? 1 : 0;
+    var first = String(left || '');
+    var second = String(right || '');
+    var foldedFirst = first.toLowerCase();
+    var foldedSecond = second.toLowerCase();
+    return foldedFirst < foldedSecond ? -1 : foldedFirst > foldedSecond ? 1 :
+      first < second ? -1 : first > second ? 1 : 0;
   }
 
-  function sortedEnglishVoices(){
-    var english = voices().filter(function(voice){ return /^en(?:-|_|$)/i.test(voice.lang); });
-    english.sort(function(left, right){
-      var localDifference = Number(Boolean(right.localService)) - Number(Boolean(left.localService));
-      if(localDifference) return localDifference;
-      var localeDifference = Number(/^en[-_]US$/i.test(right.lang)) - Number(/^en[-_]US$/i.test(left.lang));
-      if(localeDifference) return localeDifference;
-      return compareVoiceText(left.name, right.name) || compareVoiceText(left.lang, right.lang);
-    });
-    return english;
+  function compareVoices(left, right){
+    return Number(isUSEnglish(right)) - Number(isUSEnglish(left)) ||
+      Number(Boolean(right.localService)) - Number(Boolean(left.localService)) ||
+      compareVoiceText(left.name, right.name) || compareVoiceText(left.lang, right.lang) ||
+      compareVoiceText(left.voiceURI, right.voiceURI);
   }
 
-  function knownVoiceGroup(name){
-    if(/\bDavid\b/i.test(name)) return 'david';
-    if(/\bZira\b|Google UK English Female/i.test(name)) return 'zira';
-    if(/Google UK English Male|\bMark\b|Google U\.?S\.? English/i.test(name)) return 'uk-male';
-    return null;
-  }
-
-  function isCanonicalVoice(voice, group){
-    if(group === 'david') return /\bDavid\b/i.test(voice.name);
-    if(group === 'uk-male') return /Google UK English Male/i.test(voice.name);
-    if(group === 'zira') return /\bZira\b/i.test(voice.name);
-    return false;
-  }
-
-  function distinctVoices(){
-    var groups = new Map();
-    sortedEnglishVoices().forEach(function(voice){
-      if(/^(?:Automatic|Adult Male|Adult Female|Child Male|Child Female)$/i.test(voice.name)) return;
-      if(/Google UK English Male/i.test(voice.name)) return;
-      // These aliases were heard as the same base voice on the target phone.
-      // A matching voiceURI also collapses aliases on other devices.
-      var group = knownVoiceGroup(voice.name) ||
-        (voice.voiceURI ? 'uri:' + voice.voiceURI : 'name:' + voice.name.toLowerCase());
-      var current = groups.get(group);
-      if(!current || (!isCanonicalVoice(current, group) && isCanonicalVoice(voice, group))) groups.set(group, voice);
-    });
-    var ordered = ['david', 'zira', 'uk-male'].filter(function(group){ return groups.has(group); })
-      .map(function(group){ return groups.get(group); });
-    groups.forEach(function(voice, group){ if(['david', 'zira', 'uk-male'].indexOf(group) < 0) ordered.push(voice); });
-    var usedNames = new Set();
-    var usedUris = new Set();
-    return ordered.filter(function(voice){
-      if(usedNames.has(voice.name) || (voice.voiceURI && usedUris.has(voice.voiceURI))) return false;
-      usedNames.add(voice.name);
-      if(voice.voiceURI) usedUris.add(voice.voiceURI);
-      return true;
-    });
-  }
-
-  function voiceChoices(){
-    var available = distinctVoices();
-    if(!available.length) return [];
-    var david = available.find(function(voice){ return /\bDavid\b/i.test(voice.name); });
-    var zira = available.find(function(voice){ return /\bZira\b/i.test(voice.name); });
-    var male = david || available.find(function(voice){ return voice !== zira; }) || available[0];
-    var female = zira || available.find(function(voice){ return voice !== male; }) || available[0];
-    if(male === female){
-      var onlyLabel = zira ? 'female' : david ? 'male' : voicePreference;
-      return [{value:onlyLabel, voice:male}];
+  function profileRank(voice, profile){
+    var name = voice.name || '';
+    var us = isUSEnglish(voice);
+    // The API has no gender field: recognize established names, then use English fallbacks.
+    if(profile === 'male'){
+      if(us && /\bDavid\b/i.test(name)) return 0;
+      var knownMale = /\b(?:David|Mark|Alex|Daniel|Oliver|Thomas|James|Fred|Aaron|Rishi|Gordon|Arthur)\b/i.test(name) ||
+        /(?:^|[^a-z])male(?:[^a-z]|$)/i.test(name);
+      if(us && knownMale) return 1;
+      if(knownMale) return 2;
+      return us ? 3 : 4;
     }
-    return [{value:'male', voice:male}, {value:'female', voice:female}];
+    if(us && /\bZira\b/i.test(name)) return 0;
+    if(/\bSamantha\b/i.test(name)) return 1;
+    var femaleMarker = /(?:^|[^a-z])female(?:[^a-z]|$)/i.test(name);
+    if(/\b(?:Karen|Moira|Tessa|Fiona|Victoria|Veena|Nicky)\b/i.test(name) ||
+        femaleMarker && /Google|Apple|Android|^en[-_]/i.test(name)) return 2;
+    if(us && (/\b(?:Zira|Susan|Allison|Ava|Salli|Joanna|Jenny|Aria|Michelle)\b/i.test(name) || femaleMarker)) return 3;
+    return us ? 4 : 5;
+  }
+
+  function resolveVoiceProfiles(){
+    var available = voices().filter(function(voice){ return /^en(?:-|_|$)/i.test(voice.lang); });
+    available.sort(compareVoices);
+    voiceInventory = new Map();
+    available.forEach(function(voice){
+      var key = voiceKey(voice);
+      if(!voiceInventory.has(key)) voiceInventory.set(key, voice);
+    });
+    available = Array.from(voiceInventory.values());
+    function preferred(profile, excluded){
+      return available.filter(function(voice){ return voiceKey(voice) !== excluded; })
+        .sort(function(left, right){ return profileRank(left, profile) - profileRank(right, profile) || compareVoices(left, right); })[0] || null;
+    }
+    var male = preferred('male');
+    var female = preferred('female');
+    if(male && female && voiceKey(male) === voiceKey(female) && available.length > 1){
+      // Keep a recognized Female (e.g. Samantha) when Male only found a generic fallback.
+      if(profileRank(female, 'female') < profileRank(male, 'male')) male = preferred('male', voiceKey(female));
+      else female = preferred('female', voiceKey(male));
+    }
+    resolvedVoiceKeys = {male:male ? voiceKey(male) : null, female:female ? voiceKey(female) : null};
   }
 
   function populateVoiceSelector(){
     var select = elements().voice;
     if(!select) return;
-    var choices = voiceChoices();
     select.textContent = '';
-    if(!choices.length){
-      var placeholder = document.createElement('option');
-      placeholder.value = '';
-      placeholder.textContent = voices().length ? 'No English voices available' : 'Loading voices…';
-      select.appendChild(placeholder);
-      select.disabled = true;
-      return;
-    }
-    choices.forEach(function(choice){
+    ['male', 'female'].forEach(function(profile){
       var option = document.createElement('option');
-      option.value = choice.value;
-      option.textContent = choice.value === 'male' ? 'Male' : 'Female';
+      option.value = profile;
+      option.textContent = profile === 'male' ? 'Male' : 'Female';
       select.appendChild(option);
     });
-    select.value = choices.some(function(choice){ return choice.value === voicePreference; }) ? voicePreference : choices[0].value;
-    select.disabled = false;
+    select.value = voicePreference;
+    select.disabled = !supported();
+  }
+
+  function refreshVoices(){
+    // Only refresh at initialization/voiceschanged, never between individual verses.
+    // Updating future bindings does not cancel or mutate an utterance already speaking.
+    resolveVoiceProfiles();
+    populateVoiceSelector();
+    updateControls();
   }
 
   function selectedVoice(){
-    var choices = voiceChoices();
-    var choice = choices.find(function(item){ return item.value === voicePreference; }) || choices[0];
-    return choice ? choice.voice : null;
+    return voiceInventory.get(resolvedVoiceKeys[voicePreference]) || null;
   }
 
   function getResolvedVoiceInfo(){
+    function info(profile){
+      var voice = voiceInventory.get(resolvedVoiceKeys[profile]);
+      return voice ? {name:voice.name, voiceURI:voice.voiceURI || '', lang:voice.lang} : null;
+    }
     var voice = selectedVoice();
     return {
       preference:voicePreference,
       voiceName:voice ? voice.name : null,
+      voiceURI:voice ? voice.voiceURI || '' : null,
       lang:voice ? voice.lang : null,
-      pitch:1
+      pitch:1,
+      male:info('male'),
+      female:info('female'),
+      sharedFallback:Boolean(resolvedVoiceKeys.male && resolvedVoiceKeys.male === resolvedVoiceKeys.female),
+      englishVoiceCount:voiceInventory.size
     };
   }
 
@@ -211,7 +218,7 @@ var BibleSpeech = (function createBibleSpeech(){
       controls.status.textContent = unavailable ? 'Read aloud is unavailable in this browser.' : state === 'playing' ? statusMessage || 'Reading aloud.' : state === 'paused' ? 'Reading aloud paused.' : completionMessage || 'Ready to read aloud.';
     }
     if(controls.speed) controls.speed.value = String(speed);
-    if(controls.voice) controls.voice.disabled = unavailable || !distinctVoices().length;
+    if(controls.voice) controls.voice.disabled = unavailable;
   }
 
   function finish(activeSession, message){
@@ -455,7 +462,7 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function setVoice(name){
-    if(!voiceChoices().some(function(choice){ return choice.value === name; })) return;
+    if(name !== 'male' && name !== 'female') return;
     voicePreference = name;
     UserData.speechVoice.save(voicePreference);
     populateVoiceSelector();
@@ -497,10 +504,9 @@ var BibleSpeech = (function createBibleSpeech(){
     notifyPlaybackEnd();
   }
   if(typeof window !== 'undefined' && window.speechSynthesis && typeof window.speechSynthesis.addEventListener === 'function'){
-    window.speechSynthesis.addEventListener('voiceschanged', populateVoiceSelector);
+    window.speechSynthesis.addEventListener('voiceschanged', refreshVoices);
   }
-  updateControls();
-  populateVoiceSelector();
+  refreshVoices();
   return {
     playChapter: playChapter,
     playVerse: playVerse,
@@ -516,7 +522,7 @@ var BibleSpeech = (function createBibleSpeech(){
     getVoice: function(){ return selectedVoice(); },
     getResolvedVoiceInfo: getResolvedVoiceInfo,
     getSpeedOptions: function(){ return SPEEDS.slice(); },
-    refreshVoices: populateVoiceSelector,
+    refreshVoices: refreshVoices,
     updateControls: updateControls,
     getState: function(){ return state; }
   };
