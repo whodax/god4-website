@@ -79,6 +79,26 @@ export function createTtsHandler(runtime = {}){
 
   return async function handle(context){
     const {request, env} = context;
+    if(request.method === 'GET' && new URL(request.url).searchParams.get('config-debug') === '1'){
+      const bindings = env || {};
+      const present = value => value !== undefined && value !== null;
+      let account = null;
+      let jsonValid = false;
+      try{
+        account = JSON.parse(bindings.GOOGLE_TTS_SERVICE_ACCOUNT);
+        jsonValid = true;
+      }catch(failure){ /* Report only a boolean; never return parsing errors or input. */ }
+      return Response.json({
+        cloudTtsEnabledPresent:present(bindings.CLOUD_TTS_ENABLED),
+        cloudTtsEnabledExact:bindings.CLOUD_TTS_ENABLED === '1',
+        serviceAccountPresent:present(bindings.GOOGLE_TTS_SERVICE_ACCOUNT),
+        serviceAccountJsonValid:jsonValid,
+        serviceAccountTypeValid:Boolean(account && account.type === 'service_account'),
+        clientEmailPresent:Boolean(account && account.client_email),
+        privateKeyPresent:Boolean(account && account.private_key),
+        projectIdPresent:Boolean(account && account.project_id)
+      }, {headers:{'Cache-Control':'no-store', 'X-Content-Type-Options':'nosniff'}});
+    }
     if(request.method !== 'POST') return error(405, 'Use POST.', {Allow:'POST'});
     const origin = new URL(request.url).origin;
     const suppliedOrigin = request.headers.get('Origin');

@@ -47,7 +47,7 @@ function harness(options = {}){
   }});
   async function run(body = {text:'In the beginning.', voice:'male', rate:1}, overrides = {}){
     const env = overrides.env || {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(account)};
-    const request = new Request('https://god4.test/api/tts', {method:overrides.method || 'POST',
+    const request = new Request('https://god4.test/api/tts' + (overrides.query || ''), {method:overrides.method || 'POST',
       headers:{'Content-Type':'application/json', Origin:'https://god4.test', ...overrides.headers},
       ...(overrides.method === 'GET' || overrides.method === 'HEAD' ? {} : {body:overrides.raw ?? JSON.stringify(body)})});
     const response = await handler({request, env, waitUntil:promise => tasks.push(promise)});
@@ -56,6 +56,76 @@ function harness(options = {}){
   }
   return {run, calls, stored, advance:ms => {clock += ms;}};
 }
+
+const absentConfig = {
+  cloudTtsEnabledPresent:false, cloudTtsEnabledExact:false,
+  serviceAccountPresent:false, serviceAccountJsonValid:false, serviceAccountTypeValid:false,
+  clientEmailPresent:false, privateKeyPresent:false, projectIdPresent:false
+};
+for(const [label, env, expected] of [
+  ['both bindings absent', {}, absentConfig],
+  ['enabled binding has wrong value', {CLOUD_TTS_ENABLED:'wrong-value-sentinel'},
+    {...absentConfig, cloudTtsEnabledPresent:true}],
+  ['enabled binding is empty', {CLOUD_TTS_ENABLED:''}, {...absentConfig, cloudTtsEnabledPresent:true}],
+  ['malformed service-account JSON', {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:'malformed-secret-sentinel'},
+    {...absentConfig, cloudTtsEnabledPresent:true, cloudTtsEnabledExact:true, serviceAccountPresent:true}],
+  ['valid JSON with wrong type', {GOOGLE_TTS_SERVICE_ACCOUNT:'{"type":"wrong-type"}'},
+    {...absentConfig, serviceAccountPresent:true, serviceAccountJsonValid:true}],
+  ['valid null JSON', {GOOGLE_TTS_SERVICE_ACCOUNT:'null'},
+    {...absentConfig, serviceAccountPresent:true, serviceAccountJsonValid:true}],
+  ['missing private key', {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify({
+    type:'service_account', client_email:'email-sentinel', project_id:'project-sentinel'
+  })}, {cloudTtsEnabledPresent:true, cloudTtsEnabledExact:true, serviceAccountPresent:true,
+    serviceAccountJsonValid:true, serviceAccountTypeValid:true, clientEmailPresent:true, privateKeyPresent:false, projectIdPresent:true}],
+  ['valid service-account JSON', {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify({
+    type:'service_account', client_email:'email-sentinel', private_key:'key-sentinel', project_id:'project-sentinel'
+  })}, {cloudTtsEnabledPresent:true, cloudTtsEnabledExact:true, serviceAccountPresent:true,
+    serviceAccountJsonValid:true, serviceAccountTypeValid:true, clientEmailPresent:true, privateKeyPresent:true, projectIdPresent:true}]
+]){
+  test(`config diagnostic reports only booleans for ${label}`, async () => {
+    const h = harness();
+    const response = await h.run(undefined, {method:'GET', query:'?config-debug=1', env});
+    expect(response.status).toBe(200);
+    expect(response.headers.get('Cache-Control')).toBe('no-store');
+    expect(response.headers.get('X-Content-Type-Options')).toBe('nosniff');
+    expect(response.headers.get('Content-Type')).toContain('application/json');
+    expect(await response.json()).toEqual(expected);
+    expect(h.calls).toHaveLength(0);
+    expect(h.stored.size).toBe(0);
+  });
+}
+
+test('config diagnostic cannot serialize any credential contents or identifying metadata', async () => {
+  const h = harness();
+  const response = await h.run(undefined, {method:'GET', query:'?config-debug=1', env:{
+    CLOUD_TTS_ENABLED:'enabled-sentinel-not-one', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(account)
+  }});
+  const raw = await response.text();
+  const data = JSON.parse(raw);
+  expect(Object.keys(data).sort()).toEqual(Object.keys(absentConfig).sort());
+  expect(Object.values(data).every(value => typeof value === 'boolean')).toBe(true);
+  for(const value of ['enabled-sentinel-not-one', account.client_email, account.project_id, account.private_key,
+    'BEGIN PRIVATE KEY', 'client_email', 'private_key', 'project_id', 'mock-short-lived-token']){
+    expect(raw.includes(value)).toBe(false);
+  }
+  expect(h.calls).toHaveLength(0);
+});
+
+test('only exact GET diagnostic query is enabled; POST with that query still synthesizes', async () => {
+  const h = harness();
+  for(const query of ['', '?config-debug=0', '?config-debug=true', '?other=1']){
+    const response = await h.run(undefined, {method:'GET', query});
+    expect(response.status).toBe(405);
+    expect(response.headers.get('Allow')).toBe('POST');
+    expect(await response.json()).toEqual({error:'Use POST.'});
+  }
+  expect((await h.run(undefined, {method:'HEAD', query:'?config-debug=1'})).status).toBe(405);
+  expect(h.calls).toHaveLength(0);
+  const response = await h.run(undefined, {query:'?config-debug=1'});
+  expect(response.status).toBe(200);
+  expect(response.headers.get('Content-Type')).toBe('audio/mpeg');
+  expect(h.calls).toHaveLength(2);
+});
 
 for(const [voice, mapped] of [['male', 'en-US-Neural2-D'], ['female', 'en-US-Neural2-F']]){
   test(`${voice} maps exclusively to ${mapped} with signed OAuth and decoded audio bytes`, async () => {
