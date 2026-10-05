@@ -316,7 +316,7 @@ test('Read Aloud, voice commands, and same-origin Word Study work without CSP vi
   await page.locator('#readAloudSpeed').selectOption('1.25');
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
-  await page.locator('#readerContent [data-verse-speech="2"]').click();
+  await page.evaluate(() => readVerseAloud(2));
   expect(await page.evaluate(() => window.__spoken.length)).toBeGreaterThan(0);
   await page.locator('#readAloudPlay').click();
   await page.locator('[data-voice-command-button]').click();

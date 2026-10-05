@@ -154,24 +154,24 @@ test('Reader semantics remain unique and status regions stay available', async (
   await expect(page.locator('#readerContent')).toHaveCount(1);
 });
 
-test('focused per-verse controls stay clear of sticky toolbars in normal and fullscreen Reader', async ({page}) => {
+test('focused verse numbers stay clear of sticky toolbars in normal and fullscreen Reader', async ({page}) => {
   await openReader(page);
-  const speak = page.locator('#readerContent [data-verse-number="45"] .verse-speak');
+  const number = page.locator('#readerContent [data-verse-number="45"] .vnum');
   await page.evaluate(() => window.scrollTo(0, 0));
-  await speak.focus();
-  await expect(speak).toBeFocused();
+  await number.focus();
+  await expect(number).toBeFocused();
   expect(await page.evaluate(() => {
     const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
-    const target = document.querySelector('#readerContent [data-verse-number="45"] .verse-speak').getBoundingClientRect();
+    const target = document.querySelector('#readerContent [data-verse-number="45"] .vnum').getBoundingClientRect();
     return target.top > toolbar.bottom && target.bottom < innerHeight;
   })).toBe(true);
   await page.locator('#fullscreenBtn').click();
   await page.locator('#view-reader').evaluate(shell => { shell.scrollTop = 0; });
-  await speak.focus();
-  await expect(speak).toBeFocused();
+  await number.focus();
+  await expect(number).toBeFocused();
   expect(await page.evaluate(() => {
     const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
-    const target = document.querySelector('#readerContent [data-verse-number="45"] .verse-speak').getBoundingClientRect();
+    const target = document.querySelector('#readerContent [data-verse-number="45"] .vnum').getBoundingClientRect();
     return target.top > toolbar.bottom && target.bottom < innerHeight;
   })).toBe(true);
 });

@@ -895,7 +895,7 @@ function renderPassage(bookKey, chapterNum){
   if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
   html += '<div class="reader-chapter-caption">' + escapeHtml(data.title) + '</div>';
   for(var i = 0; i < data.verses.length; i++){
-    html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + ' <button type="button" class="verse-speak" data-verse-speech="' + escapeHtml(i+1) + '" aria-label="Read verse ' + escapeHtml(i+1) + ' aloud">Read aloud</button></span> ';
+    html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + '</span> ';
   }
   var container = document.getElementById('readerContent');
   if(container) container.innerHTML = html;
@@ -1184,8 +1184,6 @@ function initializeReaderControls(){
         highlightVerse(highlight);
         return;
       }
-      var speak = event.target.closest('.verse-speak');
-      if(speak && container.contains(speak)) readVerseAloud(Number(speak.getAttribute('data-verse-speech')));
     });
   });
 }
