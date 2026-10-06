@@ -59,7 +59,13 @@ export function createTtsHandler(runtime = {}){
       const response = await requestFetch(url, {...options, redirect:'error', signal:controller.signal});
       if(!response.ok) throw new ProviderFailure(stage, response.status);
       // Keep the timeout through body consumption, not just response headers.
-      return {data:await response.json(), status:response.status};
+      let data;
+      try{ data = await response.json(); }
+      catch(failure){
+        if(stage === 'oauth' && failure instanceof SyntaxError) throw new ProviderFailure('oauth-response', response.status);
+        throw failure;
+      }
+      return {data, status:response.status};
     }finally{ clearTimeout(timer); }
   }
   async function accessToken(account, secret){
@@ -71,16 +77,25 @@ export function createTtsHandler(runtime = {}){
       iss:account.client_email, scope:'https://www.googleapis.com/auth/cloud-platform',
       aud:TOKEN_URL, iat:issued, exp:issued + 3600
     })));
-    const pem = account.private_key.replace(/-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|\s/g, '');
-    const bytes = Uint8Array.from(atob(pem), character => character.charCodeAt(0));
-    const key = await webCrypto.subtle.importKey('pkcs8', bytes,
-      {name:'RSASSA-PKCS1-v1_5', hash:'SHA-256'}, false, ['sign']);
-    const signature = await webCrypto.subtle.sign('RSASSA-PKCS1-v1_5', key, encoder.encode(header + '.' + claims));
+    let bytes;
+    try{
+      const pem = account.private_key.replace(/-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|\s/g, '');
+      bytes = Uint8Array.from(atob(pem), character => character.charCodeAt(0));
+    }catch(failure){ throw new ProviderFailure('private-key-decode', null); }
+    let key;
+    try{
+      key = await webCrypto.subtle.importKey('pkcs8', bytes,
+        {name:'RSASSA-PKCS1-v1_5', hash:'SHA-256'}, false, ['sign']);
+    }catch(failure){ throw new ProviderFailure('private-key-import', null); }
+    const signingInput = encoder.encode(header + '.' + claims);
+    let signature;
+    try{ signature = await webCrypto.subtle.sign('RSASSA-PKCS1-v1_5', key, signingInput); }
+    catch(failure){ throw new ProviderFailure('jwt-sign', null); }
     const assertion = header + '.' + claims + '.' + base64url(new Uint8Array(signature));
-    const {data:token} = await timedFetch(TOKEN_URL, {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    const {data:token, status:oauthStatus} = await timedFetch(TOKEN_URL, {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
       body:new URLSearchParams({grant_type:'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion}).toString()}, 'oauth');
-    if(typeof token.access_token !== 'string' || !token.access_token ||
-        !Number.isFinite(token.expires_in) || token.expires_in < 120) throw new Error('Invalid token');
+    if(!token || typeof token.access_token !== 'string' || !token.access_token ||
+        !Number.isFinite(token.expires_in) || token.expires_in < 120) throw new ProviderFailure('oauth-response', oauthStatus);
     tokenState = {secret, value:token.access_token, expires:now() + (Math.min(token.expires_in, 3600) - 60) * 1000};
     return token.access_token;
   }
@@ -143,9 +158,12 @@ export function createTtsHandler(runtime = {}){
     }catch(failure){ return error(503, 'Cloud speech is unavailable.'); }
 
     try{
-      const digest = await webCrypto.subtle.digest('SHA-256', encoder.encode(JSON.stringify([
+      const digestInput = encoder.encode(JSON.stringify([
         CONFIG_VERSION, account.project_id, body.text, body.voice, VOICES[body.voice], body.rate
-      ])));
+      ]));
+      let digest;
+      try{ digest = await webCrypto.subtle.digest('SHA-256', digestInput); }
+      catch(failure){ throw new ProviderFailure('digest', null); }
       const hash = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
       const cacheKey = new Request(origin + '/__god4/tts/' + hash, {method:'GET'});
       let cache;

@@ -17,7 +17,11 @@ test.beforeAll(async () => {
 function harness(options = {}){
   const calls = [], tasks = [], stored = new Map();
   let clock = 1800000000000;
-  const handler = createTtsHandler({crypto:webcrypto, now:() => clock, caches:{open:async () => {
+  const crypto = {subtle:Object.fromEntries(['digest', 'importKey', 'sign'].map(method => [method, (...args) => {
+    if(options.cryptoFailure === method) return Promise.reject(new Error('sensitive-crypto-exception-sentinel'));
+    return webcrypto.subtle[method](...args);
+  }]))};
+  const handler = createTtsHandler({crypto, now:() => clock, caches:{open:async () => {
     if(options.cacheFailure) throw new Error('No cache');
     return {match:async key => stored.get(key.url)?.clone(), put:async (key, response) => {
       if(options.putFailure) throw new Error('Cache full');
@@ -37,6 +41,8 @@ function harness(options = {}){
       expect(claims).toMatchObject({iss:account.client_email, aud:url, scope:'https://www.googleapis.com/auth/cloud-platform'});
       expect(claims.exp - claims.iat).toBe(3600);
       expect(verify('sha256', Buffer.from(jwt[0] + '.' + jwt[1]), publicKey, Buffer.from(jwt[2], 'base64url'))).toBe(true);
+      if(options.tokenInvalidJson) return new Response('{invalid-json-secret-sentinel', {status:200});
+      if(Object.prototype.hasOwnProperty.call(options, 'tokenResponse')) return Response.json(options.tokenResponse);
       return options.authFailure ? Response.json({error:'sensitive provider failure'}, {status:options.authStatus || 401}) :
         Response.json({access_token:'mock-short-lived-token', expires_in:3600});
     }
@@ -47,7 +53,8 @@ function harness(options = {}){
       Response.json(options.missingAudio ? {} : {audioContent:options.badAudio ? '!!!' : Buffer.from('mock MP3 bytes').toString('base64')});
   }});
   async function run(body = {text:'In the beginning.', voice:'male', rate:1}, overrides = {}){
-    const env = overrides.env || {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(account)};
+    const env = overrides.env || {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(
+      options.badPem ? {...account, private_key:'-----BEGIN PRIVATE KEY-----\n!!!\n-----END PRIVATE KEY-----'} : account)};
     const request = new Request('https://god4.test/api/tts' + (overrides.query || ''), {method:overrides.method || 'POST',
       headers:{'Content-Type':'application/json', Origin:'https://god4.test', ...overrides.headers},
       ...(overrides.method === 'GET' || overrides.method === 'HEAD' ? {} : {body:overrides.raw ?? JSON.stringify(body)})});
@@ -65,8 +72,19 @@ const absentConfig = {
 };
 
 for(const [label, options, expected] of [
+  ['digest failure', {cryptoFailure:'digest'}, {stage:'digest', status:null}],
+  ['malformed PEM/base64', {badPem:true}, {stage:'private-key-decode', status:null}],
+  ['importKey failure', {cryptoFailure:'importKey'}, {stage:'private-key-import', status:null}],
+  ['sign failure', {cryptoFailure:'sign'}, {stage:'jwt-sign', status:null}],
   ['OAuth 400', {authFailure:true, authStatus:400}, {stage:'oauth', status:400}],
   ['OAuth 401', {authFailure:true, authStatus:401}, {stage:'oauth', status:401}],
+  ['OAuth missing token fields', {tokenResponse:{}}, {stage:'oauth-response', status:200}],
+  ['OAuth null JSON', {tokenResponse:null}, {stage:'oauth-response', status:200}],
+  ['OAuth empty token', {tokenResponse:{access_token:'', expires_in:3600}}, {stage:'oauth-response', status:200}],
+  ['OAuth invalid token type', {tokenResponse:{access_token:123, expires_in:3600}}, {stage:'oauth-response', status:200}],
+  ['OAuth invalid expiry shape', {tokenResponse:{access_token:'mock-short-lived-token', expires_in:'3600'}}, {stage:'oauth-response', status:200}],
+  ['OAuth insufficient expiry', {tokenResponse:{access_token:'mock-short-lived-token', expires_in:60}}, {stage:'oauth-response', status:200}],
+  ['OAuth malformed JSON', {tokenInvalidJson:true}, {stage:'oauth-response', status:200}],
   ['synthesis 400', {providerFailure:true, providerStatus:400}, {stage:'synthesis', status:400}],
   ['synthesis 403', {providerFailure:true, providerStatus:403}, {stage:'synthesis', status:403}],
   ['missing audioContent', {missingAudio:true}, {stage:'audio-decode', status:200}],
@@ -82,6 +100,7 @@ for(const [label, options, expected] of [
     const raw = await response.text();
     expect(JSON.parse(raw)).toEqual(expected);
     for(const value of ['sensitive provider failure', 'private Google details', 'sensitive-exception-sentinel',
+      'sensitive-crypto-exception-sentinel', 'invalid-json-secret-sentinel', 'BEGIN PRIVATE KEY',
       'mock-short-lived-token', account.client_email, account.project_id, account.private_key, 'assertion', 'access_token']){
       expect(raw.includes(value)).toBe(false);
     }
