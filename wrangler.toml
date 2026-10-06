@@ -7,4 +7,4 @@ compatibility_date = "2026-07-22"
 CLOUD_TTS_ENABLED = "1"
 
 [env.production.vars]
-CLOUD_TTS_ENABLED = "1"
+CLOUD_TTS_ENABLED = "0"
