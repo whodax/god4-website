@@ -50,7 +50,7 @@ var BibleCloudTTS = (function createCloudSpeech(){
       try{
         var response = await fetch('/api/tts', {method:'POST', credentials:'same-origin', cache:'no-store',
           headers:{'Content-Type':'application/json'}, body:JSON.stringify({text:text, voice:voice, rate:rate}), signal:attempt.controller.signal});
-        if(!response.ok || !/^audio\/mpeg(?:;|$)/i.test(response.headers.get('Content-Type') || '')) throw new Error('Cloud audio unavailable');
+        if(response.status !== 200 || !/^audio\/mpeg(?:;|$)/i.test(response.headers.get('Content-Type') || '')) throw new Error('Cloud audio unavailable');
         var bytes = await response.arrayBuffer();
         if(!bytes.byteLength) throw new Error('Empty audio');
         var buffer = await context.decodeAudioData(bytes);

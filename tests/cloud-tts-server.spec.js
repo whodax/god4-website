@@ -3,6 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const {generateKeyPairSync, verify, webcrypto} = require('crypto');
 const source = fs.readFileSync(path.join(__dirname, '../functions/api/tts.js'), 'utf8');
+// Synthetic MPEG-1 Layer III frames; no external audio, credentials or provider quota.
+const mp3 = Buffer.alloc(417 * 2);
+for(const offset of [0, 417]) mp3.set([0xff, 0xfb, 0x90, 0xc4], offset);
 let createTtsHandler;
 let account;
 let publicKey;
@@ -55,9 +58,11 @@ function harness(options = {}){
     return clock;
   }, caches:{open:async () => {
     if(options.cacheFailure) throw new Error('No cache');
-    return {match:async key => stored.get(key.url)?.clone(), put:async (key, response) => {
-      if(options.putFailure) throw new Error('Cache full');
+    return {match:async key => stored.get(key.url)?.clone(), put:(key, response) => {
+      if(options.putFailure) return Promise.reject(new Error('Cache full'));
+      if(options.syncPutFailure) throw new Error('Cache setup failed');
       stored.set(key.url, response.clone());
+      return Promise.resolve();
     }};
   }}, fetch:async (url, request) => {
     calls.push({url, request});
@@ -87,7 +92,7 @@ function harness(options = {}){
     expect(request.headers.Authorization).toBe('Bearer mock-short-lived-token');
     expect(request.headers['x-goog-user-project']).toBe('mock-project');
     return options.providerFailure ? Response.json({error:'private Google details'}, {status:options.providerStatus || 503}) :
-      Response.json(options.missingAudio ? {} : {audioContent:options.badAudio ? '!!!' : Buffer.from('mock MP3 bytes').toString('base64')});
+      Response.json(options.malformedSynthesis ? null : options.missingAudio ? {} : {audioContent:options.badAudio ? '!!!' : (options.audioBytes || mp3).toString('base64')});
   }};
   const injectedFetch = handlerRuntime.fetch;
   if(options.globalFetch) delete handlerRuntime.fetch;
@@ -95,8 +100,10 @@ function harness(options = {}){
   async function run(body = {text:'In the beginning.', voice:'male', rate:1}, overrides = {}){
     const env = overrides.env || {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(
       options.badPem ? {...account, private_key:'-----BEGIN PRIVATE KEY-----\n!!!\n-----END PRIVATE KEY-----'} : account)};
+    const headers = new Headers({'Content-Type':'application/json', Origin:'https://god4.test', ...overrides.headers});
+    if(overrides.noOrigin) headers.delete('Origin');
     const request = new Request('https://god4.test/api/tts' + (overrides.query || ''), {method:overrides.method || 'POST',
-      headers:{'Content-Type':'application/json', Origin:'https://god4.test', ...overrides.headers},
+      headers,
       ...(overrides.method === 'GET' || overrides.method === 'HEAD' ? {} : {body:overrides.raw ?? JSON.stringify(body)})});
     const response = await handler({request, env, waitUntil:promise => tasks.push(promise)});
     await Promise.all(tasks);
@@ -128,7 +135,7 @@ test('production fetch is not read at initialization and is resolved directly fo
     }});
     const response = await h.run();
     expect(response.status).toBe(200);
-    expect(await response.text()).toBe('mock MP3 bytes');
+    expect(Buffer.from(await response.arrayBuffer()).equals(mp3)).toBe(true);
     expect(oauthCalls).toBe(1);
     expect(synthesisCalls).toBe(1);
     expect(h.calls).toHaveLength(2);
@@ -147,13 +154,13 @@ test('injected fetch remains independent of the production global fetch', async 
 
 for(const stage of ['oauth', 'synthesis']){
   for(const status of [301, 302, 303, 307, 308]){
-    test(`${stage} ${status} is not followed and exposes only its safe diagnostic`, async () => {
+    test(`${stage} ${status} is not followed and exposes only the generic error`, async () => {
       const h = harness({redirectStage:stage, redirectStatus:status});
-      const response = await h.run(undefined, {query:'?provider-debug=1'});
+      const response = await h.run(undefined, {});
       expect(response.status).toBe(502);
       expect(response.headers.get('Cache-Control')).toBe('no-store');
       expect(response.headers.has('Location')).toBe(false);
-      expect(await response.json()).toEqual({stage, status});
+      expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
       expect(h.calls).toHaveLength(stage === 'oauth' ? 1 : 2);
       expect(h.calls.every(call => call.request.redirect === 'manual')).toBe(true);
       expect(h.calls.some(call => call.url.includes('redirect-target.test'))).toBe(false);
@@ -166,152 +173,68 @@ for(const stage of ['oauth', 'synthesis']){
   }
 }
 
-const absentConfig = {
-  cloudTtsEnabledPresent:false, cloudTtsEnabledExact:false,
-  serviceAccountPresent:false, serviceAccountJsonValid:false, serviceAccountTypeValid:false,
-  clientEmailPresent:false, privateKeyPresent:false, projectIdPresent:false
-};
-
-for(const [label, options, expected] of [
-  ['OAuth fetch rejection', {fetchFailure:'oauth'}, {stage:'oauth-fetch', status:null}],
-  ['synthesis fetch rejection', {fetchFailure:'synthesis'}, {stage:'synthesis-fetch', status:null}],
-  ['OAuth AbortController failure', {controllerFailure:1}, {stage:'timer', status:null}],
-  ['synthesis AbortController failure', {controllerFailure:2}, {stage:'timer', status:null}],
-  ['OAuth timer setup failure', {timerFailure:1}, {stage:'timer', status:null}],
-  ['synthesis timer setup failure', {timerFailure:2}, {stage:'timer', status:null}],
-  ['cache Request construction failure', {requestFailure:true}, {stage:'request-build', status:null}],
-  ['OAuth form construction failure', {formFailure:true}, {stage:'request-build', status:null}],
-  ['fetch rejection with failed cleanup', {fetchFailure:'oauth', cleanupFailure:true}, {stage:'oauth-fetch', status:null}],
-  ['OAuth HTTP failure with failed cleanup', {authFailure:true, authStatus:401, cleanupFailure:true}, {stage:'oauth', status:401}],
-  ['digest failure', {cryptoFailure:'digest'}, {stage:'digest', status:null}],
-  ['malformed PEM/base64', {badPem:true}, {stage:'private-key-decode', status:null}],
-  ['importKey failure', {cryptoFailure:'importKey'}, {stage:'private-key-import', status:null}],
-  ['sign failure', {cryptoFailure:'sign'}, {stage:'jwt-sign', status:null}],
-  ['OAuth 400', {authFailure:true, authStatus:400}, {stage:'oauth', status:400}],
-  ['OAuth 401', {authFailure:true, authStatus:401}, {stage:'oauth', status:401}],
-  ['OAuth missing token fields', {tokenResponse:{}}, {stage:'oauth-response', status:200}],
-  ['OAuth null JSON', {tokenResponse:null}, {stage:'oauth-response', status:200}],
-  ['OAuth empty token', {tokenResponse:{access_token:'', expires_in:3600}}, {stage:'oauth-response', status:200}],
-  ['OAuth invalid token type', {tokenResponse:{access_token:123, expires_in:3600}}, {stage:'oauth-response', status:200}],
-  ['OAuth invalid expiry shape', {tokenResponse:{access_token:'mock-short-lived-token', expires_in:'3600'}}, {stage:'oauth-response', status:200}],
-  ['OAuth insufficient expiry', {tokenResponse:{access_token:'mock-short-lived-token', expires_in:60}}, {stage:'oauth-response', status:200}],
-  ['OAuth malformed JSON', {tokenInvalidJson:true}, {stage:'oauth-response', status:200}],
-  ['synthesis 400', {providerFailure:true, providerStatus:400}, {stage:'synthesis', status:400}],
-  ['synthesis 403', {providerFailure:true, providerStatus:403}, {stage:'synthesis', status:403}],
-  ['missing audioContent', {missingAudio:true}, {stage:'audio-decode', status:200}],
-  ['malformed audioContent', {badAudio:true}, {stage:'audio-decode', status:200}],
-  ['unknown exception', {unknownFailure:true}, {stage:'unknown', status:null}]
+for(const [label, options] of [
+  ['OAuth fetch rejection', {fetchFailure:'oauth'}],
+  ['synthesis fetch rejection', {fetchFailure:'synthesis'}],
+  ['OAuth AbortController failure', {controllerFailure:1}],
+  ['synthesis AbortController failure', {controllerFailure:2}],
+  ['OAuth timer setup failure', {timerFailure:1}],
+  ['synthesis timer setup failure', {timerFailure:2}],
+  ['cache Request construction failure', {requestFailure:true}],
+  ['OAuth form construction failure', {formFailure:true}],
+  ['fetch rejection with failed cleanup', {fetchFailure:'oauth', cleanupFailure:true}],
+  ['OAuth HTTP failure with failed cleanup', {authFailure:true, authStatus:401, cleanupFailure:true}],
+  ['digest failure', {cryptoFailure:'digest'}],
+  ['malformed PEM/base64', {badPem:true}],
+  ['importKey failure', {cryptoFailure:'importKey'}],
+  ['sign failure', {cryptoFailure:'sign'}],
+  ['OAuth 400', {authFailure:true, authStatus:400}],
+  ['OAuth 401', {authFailure:true, authStatus:401}],
+  ['OAuth missing token fields', {tokenResponse:{}}],
+  ['OAuth null JSON', {tokenResponse:null}],
+  ['OAuth empty token', {tokenResponse:{access_token:'', expires_in:3600}}],
+  ['OAuth invalid token type', {tokenResponse:{access_token:123, expires_in:3600}}],
+  ['OAuth invalid expiry shape', {tokenResponse:{access_token:'mock-short-lived-token', expires_in:'3600'}}],
+  ['OAuth insufficient expiry', {tokenResponse:{access_token:'mock-short-lived-token', expires_in:60}}],
+  ['OAuth malformed JSON', {tokenInvalidJson:true}],
+  ['synthesis 400', {providerFailure:true, providerStatus:400}],
+  ['synthesis 403', {providerFailure:true, providerStatus:403}],
+  ['missing audioContent', {missingAudio:true}],
+  ['malformed audioContent', {badAudio:true}],
+  ['unknown exception', {unknownFailure:true}]
 ]){
-  test(`provider diagnostic reports only safe stage/status for ${label}`, async () => {
+  test(`provider/runtime failure is generic and uncached: ${label}`, async () => {
     const h = harness(options);
-    const response = await h.run(undefined, {query:'?provider-debug=1'});
+    const response = await h.run();
     expect(response.status).toBe(502);
     expect(response.headers.get('Cache-Control')).toBe('no-store');
     expect(response.headers.get('X-Content-Type-Options')).toBe('nosniff');
-    const raw = await response.text();
-    expect(JSON.parse(raw)).toEqual(expected);
-    for(const value of ['sensitive provider failure', 'private Google details', 'sensitive-exception-sentinel',
-      'sensitive-crypto-exception-sentinel', 'sensitive-runtime-exception-sentinel', 'invalid-json-secret-sentinel', 'BEGIN PRIVATE KEY',
-      'mock-short-lived-token', account.client_email, account.project_id, account.private_key, 'assertion', 'access_token']){
-      expect(raw.includes(value)).toBe(false);
-    }
-    expect(h.stored.size).toBe(0);
-  });
-  test(`normal POST retains generic 502 for ${label}`, async () => {
-    const response = await harness(options).run();
-    expect(response.status).toBe(502);
     expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
+    expect(h.stored.size).toBe(0);
   });
 }
 
-test('timer cleanup failure cannot turn successful synthesis into a diagnostic error', async () => {
-  const response = await harness({cleanupFailure:true}).run(undefined, {query:'?provider-debug=1'});
+test('timer cleanup failure does not break successful synthesis', async () => {
+  const response = await harness({cleanupFailure:true}).run();
   expect(response.status).toBe(200);
-  expect(response.headers.get('Content-Type')).toBe('audio/mpeg');
-  expect(await response.text()).toBe('mock MP3 bytes');
+  expect(Buffer.from(await response.arrayBuffer()).equals(mp3)).toBe(true);
 });
 
-test('provider diagnostic requires the exact flag and keeps successful TTS and GET config behavior', async () => {
-  for(const query of ['?provider-debug=0', '?provider-debug=true']){
-    const response = await harness({authFailure:true}).run(undefined, {query});
-    expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
-  }
-  const h = harness();
-  const response = await h.run(undefined, {query:'?provider-debug=1'});
-  expect(response.status).toBe(200);
-  expect(response.headers.get('Content-Type')).toBe('audio/mpeg');
-  expect(await response.text()).toBe('mock MP3 bytes');
-  expect(h.calls).toHaveLength(2);
-  const config = await h.run(undefined, {method:'GET', query:'?config-debug=1&provider-debug=1', env:{}});
-  expect(await config.json()).toEqual(absentConfig);
-  const get = await h.run(undefined, {method:'GET', query:'?provider-debug=1'});
-  expect(get.status).toBe(405);
-  expect(await get.json()).toEqual({error:'Use POST.'});
-  expect(h.calls).toHaveLength(2);
-});
-for(const [label, env, expected] of [
-  ['both bindings absent', {}, absentConfig],
-  ['enabled binding has wrong value', {CLOUD_TTS_ENABLED:'wrong-value-sentinel'},
-    {...absentConfig, cloudTtsEnabledPresent:true}],
-  ['enabled binding is empty', {CLOUD_TTS_ENABLED:''}, {...absentConfig, cloudTtsEnabledPresent:true}],
-  ['malformed service-account JSON', {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:'malformed-secret-sentinel'},
-    {...absentConfig, cloudTtsEnabledPresent:true, cloudTtsEnabledExact:true, serviceAccountPresent:true}],
-  ['valid JSON with wrong type', {GOOGLE_TTS_SERVICE_ACCOUNT:'{"type":"wrong-type"}'},
-    {...absentConfig, serviceAccountPresent:true, serviceAccountJsonValid:true}],
-  ['valid null JSON', {GOOGLE_TTS_SERVICE_ACCOUNT:'null'},
-    {...absentConfig, serviceAccountPresent:true, serviceAccountJsonValid:true}],
-  ['missing private key', {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify({
-    type:'service_account', client_email:'email-sentinel', project_id:'project-sentinel'
-  })}, {cloudTtsEnabledPresent:true, cloudTtsEnabledExact:true, serviceAccountPresent:true,
-    serviceAccountJsonValid:true, serviceAccountTypeValid:true, clientEmailPresent:true, privateKeyPresent:false, projectIdPresent:true}],
-  ['valid service-account JSON', {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify({
-    type:'service_account', client_email:'email-sentinel', private_key:'key-sentinel', project_id:'project-sentinel'
-  })}, {cloudTtsEnabledPresent:true, cloudTtsEnabledExact:true, serviceAccountPresent:true,
-    serviceAccountJsonValid:true, serviceAccountTypeValid:true, clientEmailPresent:true, privateKeyPresent:true, projectIdPresent:true}]
-]){
-  test(`config diagnostic reports only booleans for ${label}`, async () => {
-    const h = harness();
-    const response = await h.run(undefined, {method:'GET', query:'?config-debug=1', env});
-    expect(response.status).toBe(200);
-    expect(response.headers.get('Cache-Control')).toBe('no-store');
-    expect(response.headers.get('X-Content-Type-Options')).toBe('nosniff');
-    expect(response.headers.get('Content-Type')).toContain('application/json');
-    expect(await response.json()).toEqual(expected);
+for(const query of ['?config-debug=1', '?provider-debug=1', '?config-debug=1&provider-debug=1']){
+  test(`removed debug query has no privileged behavior: ${query}`, async () => {
+    const h = harness({authFailure:true});
+    const get = await h.run(undefined, {method:'GET', query});
+    expect(get.status).toBe(405);
+    expect(await get.json()).toEqual({error:'Use POST.'});
     expect(h.calls).toHaveLength(0);
-    expect(h.stored.size).toBe(0);
+    const post = await h.run(undefined, {query});
+    expect(post.status).toBe(502);
+    expect(await post.json()).toEqual({error:'Cloud speech is unavailable.'});
   });
 }
 
-test('config diagnostic cannot serialize any credential contents or identifying metadata', async () => {
-  const h = harness();
-  const response = await h.run(undefined, {method:'GET', query:'?config-debug=1', env:{
-    CLOUD_TTS_ENABLED:'enabled-sentinel-not-one', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(account)
-  }});
-  const raw = await response.text();
-  const data = JSON.parse(raw);
-  expect(Object.keys(data).sort()).toEqual(Object.keys(absentConfig).sort());
-  expect(Object.values(data).every(value => typeof value === 'boolean')).toBe(true);
-  for(const value of ['enabled-sentinel-not-one', account.client_email, account.project_id, account.private_key,
-    'BEGIN PRIVATE KEY', 'client_email', 'private_key', 'project_id', 'mock-short-lived-token']){
-    expect(raw.includes(value)).toBe(false);
-  }
-  expect(h.calls).toHaveLength(0);
-});
-
-test('only exact GET diagnostic query is enabled; POST with that query still synthesizes', async () => {
-  const h = harness();
-  for(const query of ['', '?config-debug=0', '?config-debug=true', '?other=1']){
-    const response = await h.run(undefined, {method:'GET', query});
-    expect(response.status).toBe(405);
-    expect(response.headers.get('Allow')).toBe('POST');
-    expect(await response.json()).toEqual({error:'Use POST.'});
-  }
-  expect((await h.run(undefined, {method:'HEAD', query:'?config-debug=1'})).status).toBe(405);
-  expect(h.calls).toHaveLength(0);
-  const response = await h.run(undefined, {query:'?config-debug=1'});
-  expect(response.status).toBe(200);
-  expect(response.headers.get('Content-Type')).toBe('audio/mpeg');
-  expect(h.calls).toHaveLength(2);
+test('production source has no dormant diagnostic branches or logging', () => {
+  expect(/config-debug|provider-debug|ProviderFailure|console\./.test(source)).toBe(false);
 });
 
 for(const [voice, mapped] of [['male', 'en-US-Neural2-D'], ['female', 'en-US-Neural2-F']]){
@@ -321,7 +244,7 @@ for(const [voice, mapped] of [['male', 'en-US-Neural2-D'], ['female', 'en-US-Neu
     expect(response.status).toBe(200);
     expect(response.headers.get('Content-Type')).toBe('audio/mpeg');
     expect(response.headers.get('Cache-Control')).toBe('no-store');
-    expect(await response.text()).toBe('mock MP3 bytes');
+    expect(Buffer.from(await response.arrayBuffer()).equals(mp3)).toBe(true);
     expect(JSON.parse(h.calls[1].request.body)).toEqual({input:{text:'<speak>Literal plain text</speak>'},
       voice:{languageCode:'en-US', name:mapped}, audioConfig:{audioEncoding:'MP3', speakingRate:1.25, pitch:0}});
     expect([...h.stored.values()][0].headers.get('Cache-Control')).toBe('public, max-age=86400, immutable');
@@ -339,6 +262,95 @@ test('identical requests hit the edge cache; text, profile and speed never colli
   h.advance(3600000);
   await h.run({text:'After token expiration.', voice:'male', rate:1});
   expect(h.calls.filter(call => call.url.includes('oauth2'))).toHaveLength(2);
+  for(const key of h.stored.keys()){
+    expect(new URL(key).pathname).toMatch(/^\/__god4\/tts\/[a-f0-9]{64}$/);
+    expect(['In the beginning.', 'Different text.', account.private_key, account.client_email, account.project_id]
+      .some(value => key.includes(value))).toBe(false);
+  }
+});
+
+test('invalid cached audio is a miss and is replaced by valid synthesis', async () => {
+  const h = harness();
+  await h.run();
+  const key = [...h.stored.keys()][0];
+  h.stored.set(key, new Response('invalid audio', {headers:{'Content-Type':'audio/mpeg'}}));
+  const response = await h.run();
+  expect(response.status).toBe(200);
+  expect(Buffer.from(await response.arrayBuffer()).equals(mp3)).toBe(true);
+  expect(h.calls).toHaveLength(3);
+  expect(Buffer.from(await h.stored.get(key).clone().arrayBuffer()).equals(mp3)).toBe(true);
+});
+
+for(const [label, bytes] of [
+  ['empty audio', Buffer.alloc(0)], ['non-MP3 audio', Buffer.from('not audio')],
+  ['truncated MP3', mp3.subarray(0, 100)], ['truncated final frame', mp3.subarray(0, 500)],
+  ['ID3 without frames', Buffer.from([73,68,51,4,0,0,0,0,0,0])]
+]){
+  test(`${label} returns generic 502, is never cached and remains retryable`, async () => {
+    const options = {audioBytes:bytes};
+    const h = harness(options);
+    const failed = await h.run();
+    expect(failed.status).toBe(502);
+    expect(await failed.json()).toEqual({error:'Cloud speech is unavailable.'});
+    expect(h.stored.size).toBe(0);
+    options.audioBytes = mp3;
+    expect((await h.run()).status).toBe(200);
+    expect(h.stored.size).toBe(1);
+  });
+}
+
+test('MP3 frames with bounded ID3 metadata are accepted', async () => {
+  const tagged = Buffer.concat([Buffer.from([73,68,51,4,0,0,0,0,0,0]), mp3]);
+  expect((await harness({audioBytes:tagged}).run()).status).toBe(200);
+});
+
+test('24kHz MPEG-2 Layer III frames and trailing ID3v1 metadata are accepted', async () => {
+  const mpeg2 = Buffer.alloc(192 * 77);
+  for(let offset = 0; offset < mpeg2.length; offset += 192) mpeg2.set([0xff, 0xf3, 0x84, 0xc4], offset);
+  const tag = Buffer.alloc(128); tag.write('TAG');
+  expect((await harness({audioBytes:Buffer.concat([mpeg2, tag])}).run()).status).toBe(200);
+});
+
+test('service-account material is not present in Wrangler or tracked secret files', () => {
+  const {execFileSync} = require('child_process');
+  const root = path.join(__dirname, '..');
+  expect(execFileSync('git', ['ls-files', '--', '.env*', '.dev.vars*'], {cwd:root, encoding:'utf8'}).trim()).toBe('');
+  const config = fs.readFileSync(path.join(root, 'wrangler.toml'), 'utf8');
+  expect(/^\s*GOOGLE_TTS_SERVICE_ACCOUNT\s*=/m.test(config)).toBe(false);
+  expect(config.includes('BEGIN PRIVATE KEY')).toBe(false);
+});
+
+test('malformed synthesis JSON is generic, uncached and retryable', async () => {
+  const options = {malformedSynthesis:true};
+  const h = harness(options);
+  expect((await h.run()).status).toBe(502);
+  expect(h.stored.size).toBe(0);
+  options.malformedSynthesis = false;
+  expect((await h.run()).status).toBe(200);
+});
+
+test('exact browser Origin is required and Sec-Fetch-Site permits only same-origin', async () => {
+  const h = harness();
+  for(const overrides of [{noOrigin:true}, {headers:{Origin:''}}, {headers:{Origin:'null'}},
+    {headers:{Origin:'https://god4.test/'}}, {headers:{Origin:'http://god4.test'}},
+    ...['cross-site', 'same-site', 'none', ''].map(site => ({headers:{'Sec-Fetch-Site':site}}))]){
+    const response = await h.run(undefined, overrides);
+    expect(response.status).toBe(403);
+    expect(response.headers.has('Access-Control-Allow-Origin')).toBe(false);
+  }
+  expect(h.calls).toHaveLength(0);
+  expect((await h.run(undefined, {headers:{'Sec-Fetch-Site':'same-origin'}})).status).toBe(200);
+  expect((await h.run()).status).toBe(200);
+});
+
+test('public failures never return credential material or provider metadata', async () => {
+  for(const options of [{authFailure:true}, {providerFailure:true}, {cryptoFailure:'sign'}, {badAudio:true}, {unknownFailure:true}]){
+    const response = await harness(options).run();
+    expect(response.status).toBe(502);
+    expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
+    expect(response.headers.has('Location')).toBe(false);
+    expect(response.headers.get('Cache-Control')).toBe('no-store');
+  }
 });
 
 for(const [label, body, status] of [
@@ -402,7 +414,7 @@ for(const failure of ['authFailure', 'providerFailure', 'badAudio', 'timeout']){
     expect(h.stored.size).toBe(0);
   });
 }
-for(const failure of ['cacheFailure', 'putFailure']){
+for(const failure of ['cacheFailure', 'putFailure', 'syncPutFailure']){
   test(`${failure} does not break synthesis`, async () => {
     expect((await harness({[failure]:true}).run()).status).toBe(200);
   });

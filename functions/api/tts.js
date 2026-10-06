@@ -8,14 +8,6 @@ const MAX_TEXT_BYTES = 4000;
 const MAX_BODY_BYTES = 32768;
 const CONFIG_VERSION = 'neural2-v1-mp3-pitch0-1';
 
-class ProviderFailure extends Error {
-  constructor(stage, status){
-    super('Provider unavailable');
-    this.stage = stage;
-    this.status = status;
-  }
-}
-
 function error(status, message, headers = {}){
   return Response.json({error:message}, {status, headers:{
     'Cache-Control':'no-store', 'X-Content-Type-Options':'nosniff', ...headers
@@ -23,6 +15,32 @@ function error(status, message, headers = {}){
 }
 function base64url(bytes){
   return btoa(String.fromCharCode(...bytes)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+// Validate bounded Layer III framing before caching. Browser decoding remains the final audio check.
+function validMp3(audio){
+  let offset = 0, frames = 0;
+  if(audio.length >= 10 && audio[0] === 73 && audio[1] === 68 && audio[2] === 51){
+    if(audio.slice(6, 10).some(byte => byte & 128)) return false;
+    const tagSize = (audio[6] << 21) | (audio[7] << 14) | (audio[8] << 7) | audio[9];
+    offset = 10 + tagSize + (audio[3] === 4 && (audio[5] & 16) ? 10 : 0);
+  }
+  while(offset < audio.length){
+    // Optional ID3v1 metadata after the final audio frame.
+    if(frames && audio.length - offset === 128 && audio[offset] === 84 && audio[offset + 1] === 65 && audio[offset + 2] === 71) return true;
+    if(offset + 4 > audio.length || audio[offset] !== 255 || (audio[offset + 1] & 224) !== 224) return false;
+    const version = (audio[offset + 1] >> 3) & 3;
+    const layer = (audio[offset + 1] >> 1) & 3;
+    const bitrateIndex = audio[offset + 2] >> 4;
+    const sampleIndex = (audio[offset + 2] >> 2) & 3;
+    if(version === 1 || layer !== 1 || bitrateIndex === 0 || bitrateIndex === 15 || sampleIndex === 3) return false;
+    const bitrates = version === 3 ? [0,32,40,48,56,64,80,96,112,128,160,192,224,256,320] : [0,8,16,24,32,40,48,56,64,80,96,112,128,144,160];
+    const sampleRate = [44100,48000,32000][sampleIndex] / (version === 3 ? 1 : version === 2 ? 2 : 4);
+    const frameSize = Math.floor((version === 3 ? 144 : 72) * bitrates[bitrateIndex] * 1000 / sampleRate) + ((audio[offset + 2] >> 1) & 1);
+    if(offset + frameSize > audio.length) return false;
+    offset += frameSize;
+    frames++;
+  }
+  return frames > 0;
 }
 async function readBody(request){
   const reader = request.body && request.body.getReader();
@@ -59,31 +77,25 @@ export function createTtsHandler(runtime = {}){
 
   function buildRequest(build){
     try{ return build(); }
-    catch(failure){ throw new ProviderFailure('request-build', null); }
+    catch(failure){ throw new Error('Cloud speech is unavailable.'); }
   }
-  async function timedFetch(url, options, stage){
+  async function timedFetch(url, options){
     let controller;
     let timer;
     try{
       controller = new Controller();
       timer = scheduleTimer(() => controller.abort(), 8000);
-    }catch(failure){ throw new ProviderFailure('timer', null); }
+    }catch(failure){ throw new Error('Cloud speech is unavailable.'); }
     try{
       const fetchOptions = buildRequest(() => ({...options, redirect:'manual', signal:controller.signal}));
       let response;
       try{ response = await (requestFetch ? requestFetch(url, fetchOptions) : globalThis.fetch(url, fetchOptions)); }
-      catch(failure){ throw new ProviderFailure(stage === 'oauth' ? 'oauth-fetch' : 'synthesis-fetch', null); }
-      if(!response.ok) throw new ProviderFailure(stage, response.status);
+      catch(failure){ throw new Error('Cloud speech is unavailable.'); }
+      if(!response.ok) throw new Error('Cloud speech is unavailable.');
       // Keep the timeout through body consumption, not just response headers.
-      let data;
-      try{ data = await response.json(); }
-      catch(failure){
-        if(stage === 'oauth' && failure instanceof SyntaxError) throw new ProviderFailure('oauth-response', response.status);
-        throw failure;
-      }
-      return {data, status:response.status};
+      return await response.json();
     }finally{
-      // Cleanup must never replace a provider result or the original failure stage.
+      // Cleanup must never replace a provider result or the original failure.
       try{ cancelTimer(timer); }catch(failure){}
     }
   }
@@ -102,55 +114,35 @@ export function createTtsHandler(runtime = {}){
     try{
       const pem = account.private_key.replace(/-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|\s/g, '');
       bytes = Uint8Array.from(atob(pem), character => character.charCodeAt(0));
-    }catch(failure){ throw new ProviderFailure('private-key-decode', null); }
+    }catch(failure){ throw new Error('Cloud speech is unavailable.'); }
     let key;
     try{
       key = await webCrypto.subtle.importKey('pkcs8', bytes,
         {name:'RSASSA-PKCS1-v1_5', hash:'SHA-256'}, false, ['sign']);
-    }catch(failure){ throw new ProviderFailure('private-key-import', null); }
+    }catch(failure){ throw new Error('Cloud speech is unavailable.'); }
     const signingInput = buildRequest(() => encoder.encode(header + '.' + claims));
     let signature;
     try{ signature = await webCrypto.subtle.sign('RSASSA-PKCS1-v1_5', key, signingInput); }
-    catch(failure){ throw new ProviderFailure('jwt-sign', null); }
+    catch(failure){ throw new Error('Cloud speech is unavailable.'); }
     const oauthOptions = buildRequest(() => {
       const assertion = header + '.' + claims + '.' + base64url(new Uint8Array(signature));
       return {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
         body:new FormParams({grant_type:'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion}).toString()};
     });
-    const {data:token, status:oauthStatus} = await timedFetch(TOKEN_URL, oauthOptions, 'oauth');
+    const token = await timedFetch(TOKEN_URL, oauthOptions);
     if(!token || typeof token.access_token !== 'string' || !token.access_token ||
-        !Number.isFinite(token.expires_in) || token.expires_in < 120) throw new ProviderFailure('oauth-response', oauthStatus);
+        !Number.isFinite(token.expires_in) || token.expires_in < 120) throw new Error('Cloud speech is unavailable.');
     tokenState = {secret, value:token.access_token, expires:now() + (Math.min(token.expires_in, 3600) - 60) * 1000};
     return token.access_token;
   }
 
   return async function handle(context){
     const {request, env} = context;
-    if(request.method === 'GET' && new URL(request.url).searchParams.get('config-debug') === '1'){
-      const bindings = env || {};
-      const present = value => value !== undefined && value !== null;
-      let account = null;
-      let jsonValid = false;
-      try{
-        account = JSON.parse(bindings.GOOGLE_TTS_SERVICE_ACCOUNT);
-        jsonValid = true;
-      }catch(failure){ /* Report only a boolean; never return parsing errors or input. */ }
-      return Response.json({
-        cloudTtsEnabledPresent:present(bindings.CLOUD_TTS_ENABLED),
-        cloudTtsEnabledExact:bindings.CLOUD_TTS_ENABLED === '1',
-        serviceAccountPresent:present(bindings.GOOGLE_TTS_SERVICE_ACCOUNT),
-        serviceAccountJsonValid:jsonValid,
-        serviceAccountTypeValid:Boolean(account && account.type === 'service_account'),
-        clientEmailPresent:Boolean(account && account.client_email),
-        privateKeyPresent:Boolean(account && account.private_key),
-        projectIdPresent:Boolean(account && account.project_id)
-      }, {headers:{'Cache-Control':'no-store', 'X-Content-Type-Options':'nosniff'}});
-    }
     if(request.method !== 'POST') return error(405, 'Use POST.', {Allow:'POST'});
     const origin = new URL(request.url).origin;
     const suppliedOrigin = request.headers.get('Origin');
     const site = request.headers.get('Sec-Fetch-Site');
-    if((suppliedOrigin && suppliedOrigin !== origin) || (site && site !== 'same-origin' && site !== 'none')){
+    if(suppliedOrigin !== origin || (site !== null && site !== 'same-origin')){
       return error(403, 'Same-origin requests only.');
     }
     if(!/^application\/json(?:\s*;|$)/i.test(request.headers.get('Content-Type') || '')){
@@ -176,7 +168,7 @@ export function createTtsHandler(runtime = {}){
     let account;
     try{
       account = JSON.parse(env.GOOGLE_TTS_SERVICE_ACCOUNT);
-      if(account.type !== 'service_account' || !account.client_email || !account.private_key || !account.project_id){
+      if(!account || account.type !== 'service_account' || ['client_email', 'private_key', 'project_id'].some(field => typeof account[field] !== 'string' || !account[field].trim())){
         throw new Error('Invalid account');
       }
     }catch(failure){ return error(503, 'Cloud speech is unavailable.'); }
@@ -187,7 +179,7 @@ export function createTtsHandler(runtime = {}){
       ]));
       let digest;
       try{ digest = await webCrypto.subtle.digest('SHA-256', digestInput); }
-      catch(failure){ throw new ProviderFailure('digest', null); }
+      catch(failure){ throw new Error('Cloud speech is unavailable.'); }
       const hash = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
       const cacheKey = buildRequest(() => new CacheRequest(origin + '/__god4/tts/' + hash, {method:'GET'}));
       let cache;
@@ -195,39 +187,40 @@ export function createTtsHandler(runtime = {}){
       try{ cache = cacheStorage && await cacheStorage.open('god4-neural2-tts-v1'); cached = cache && await cache.match(cacheKey); }
       catch(failure){ /* Edge cache is optional; never make speech depend on it. */ }
       if(cached){
-        const response = new Response(cached.body, cached);
-        response.headers.set('Cache-Control', 'no-store');
-        return response;
+        try{
+          const audio = new Uint8Array(await cached.arrayBuffer());
+          if(cached.status === 200 && cached.headers.get('Content-Type') === 'audio/mpeg' && validMp3(audio)){
+            const response = new Response(audio, cached);
+            response.headers.set('Cache-Control', 'no-store');
+            return response;
+          }
+        }catch(failure){ /* Invalid/unreadable cached audio is a miss and can be replaced. */ }
       }
       const token = await accessToken(account, env.GOOGLE_TTS_SERVICE_ACCOUNT);
       const synthesisOptions = buildRequest(() => ({method:'POST', headers:{
         Authorization:'Bearer ' + token, 'Content-Type':'application/json', 'x-goog-user-project':account.project_id
       }, body:JSON.stringify({input:{text:body.text}, voice:{languageCode:'en-US', name:VOICES[body.voice]},
         audioConfig:{audioEncoding:'MP3', speakingRate:body.rate, pitch:0}})}));
-      const {data:result, status:providerStatus} = await timedFetch(SYNTHESIS_URL, synthesisOptions, 'synthesis');
+      const result = await timedFetch(SYNTHESIS_URL, synthesisOptions);
       if(!result || typeof result.audioContent !== 'string' || !result.audioContent || result.audioContent.length > 8000000){
-        throw new ProviderFailure('audio-decode', providerStatus);
+        throw new Error('Cloud speech is unavailable.');
       }
       let decoded;
       try{ decoded = atob(result.audioContent); }
-      catch(failure){ throw new ProviderFailure('audio-decode', providerStatus); }
+      catch(failure){ throw new Error('Cloud speech is unavailable.'); }
       const audio = Uint8Array.from(decoded, character => character.charCodeAt(0));
+      if(!validMp3(audio)) throw new Error('Cloud speech is unavailable.');
       const response = new Response(audio, {headers:{
         'Content-Type':'audio/mpeg', 'Cache-Control':'no-store', 'X-Content-Type-Options':'nosniff'
       }});
       if(cache){
         const stored = response.clone();
         stored.headers.set('Cache-Control', 'public, max-age=86400, immutable');
-        context.waitUntil(cache.put(cacheKey, stored).catch(() => {}));
+        try{ context.waitUntil(cache.put(cacheKey, stored).catch(() => {})); }
+        catch(failure){ /* A cache-write setup failure must not break successful speech. */ }
       }
       return response;
     }catch(failure){
-      if(new URL(request.url).searchParams.get('provider-debug') === '1'){
-        return Response.json({
-          stage:failure instanceof ProviderFailure ? failure.stage : 'unknown',
-          status:failure instanceof ProviderFailure ? failure.status : null
-        }, {status:502, headers:{'Cache-Control':'no-store', 'X-Content-Type-Options':'nosniff'}});
-      }
       return error(502, 'Cloud speech is unavailable.');
     }
   };

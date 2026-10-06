@@ -109,6 +109,7 @@ test('cloud Female and speed changes apply to the next verse without canceling t
 for(const [label, options, status, mime] of [
   ['HTTP/provider failure', {}, 502, 'application/json'],
   ['unavailable endpoint', {}, 404, 'text/html'],
+  ['non-200 success status', {}, 201, 'audio/mpeg'],
   ['unsupported provider rate', {}, 422, 'application/json'],
   ['incorrect MIME', {}, 200, 'text/html'],
   ['decode failure', {decodeFailure:true}, 200, 'audio/mpeg'],

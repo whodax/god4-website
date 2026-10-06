@@ -1,8 +1,12 @@
-# Google Neural2 Reader proof of concept
+# Google Neural2 Reader — production review, opt-in
 
 This branch starts from production `cbcfa10`. Cloud speech is opt-in at
 `https://<host>/?cloud-tts=1`; ordinary URLs retain the production speech path and
 controls. No new UI, accounts, dependencies, or per-verse buttons are introduced.
+
+Architecture: **Reader → same-origin POST `/api/tts` → Google Cloud Text-to-Speech
+→ MP3 → Reader Web Audio playback**. Browser SpeechSynthesis remains the local
+fallback. Cloud speech is not the default and final production approval is pending.
 
 ## Administrator setup
 
@@ -27,8 +31,8 @@ controls. No new UI, accounts, dependencies, or per-verse buttons are introduced
    | `GOOGLE_TTS_SERVICE_ACCOUNT` | Encrypted secret | Complete service-account JSON, including `client_email`, `private_key`, `project_id`, and `type` |
    | `CLOUD_TTS_ENABLED` | Variable (or encrypted secret) | Exactly `1` enables the endpoint; omitted/any other value disables it |
 
-   Enable Preview first. Leave Production disabled until physical-device testing
-   is satisfactory. Redeploy the appropriate environment after changing runtime
+   Keep Preview enabled for testing. Recommend disabling Production until final
+   production approval (see configuration review below). Redeploy after changing runtime
    bindings. Deploy through Pages Git integration or Wrangler with Functions
    support; a static-only server/dashboard direct upload cannot run this Function.
    No Node compatibility flag, Google SDK, R2, or other storage binding is needed.
@@ -42,6 +46,30 @@ JWT with Web Crypto, exchange it at the fixed Google OAuth token endpoint, and
 use the short-lived access token for the fixed v1 synthesis endpoint. The token
 is reused only in the server isolate, refreshed before expiry, and invalidated
 when credentials change. Neither token nor JWT is returned to the browser.
+Production resolves `globalThis.fetch` at each subrequest execution; tests inject
+their own fetch. Outbound OAuth/synthesis requests use `redirect: "manual"` and an
+eight-second AbortController deadline through response body consumption. Provider
+redirects are rejected and never followed with assertions or bearer credentials.
+All provider/runtime/crypto/decode failures return only HTTP 502 with
+`{"error":"Cloud speech is unavailable."}` and `Cache-Control: no-store`.
+Temporary configuration and provider diagnostic endpoints have been removed;
+query parameters cannot reveal configuration, stages, provider statuses or errors.
+
+## Configuration review before merge
+
+The downloaded `wrangler.toml` currently sets `CLOUD_TTS_ENABLED="1"` for both
+Preview and Production. This hardening commit deliberately leaves those values
+unchanged. Recommendation: keep Preview at `1`, obtain explicit approval to set
+Production to `0` before merge, and enable it only with final production approval.
+The browser query flag is an opt-in playback feature, not an endpoint cost guard.
+An enabled production endpoint still accepts direct clients that forge Origin.
+
+Keep `pages_build_output_dir = ""` as downloaded for this root-level static site;
+there is no new build/output directory and no concrete reason to alter the working
+Pages configuration. This review does not independently validate a new deployment.
+When a Wrangler file is used, its environment configuration is the source of truth;
+changing a dashboard value alone may not override the next deployment. The
+service-account JSON must stay in the encrypted Pages secret, never in this file.
 
 ## Playback and manual test
 
@@ -69,7 +97,7 @@ including `media-src 'none'`, stays intact. Background audio behavior and autopl
 restrictions vary by physical browser and need manual testing.
 
 Cloud speech never gates Scripture initialization. Offline state, network errors,
-HTTP/provider errors, a 12-second fetch/decode/start deadline, unsupported audio,
+any non-200 cloud response, HTTP/provider errors, a 12-second fetch/decode/start deadline, unsupported audio,
 or rejected playback fall back to browser SpeechSynthesis for the same verse.
 If the browser has no local speech API either, playback ends safely while Reader
 remains functional. Paused playback stays paused through fallback. Google v1
@@ -91,21 +119,38 @@ Google project. Male/Female and speed outputs cannot collide. Cache failures do
 not block synthesis. Cache availability/hits vary by Cloudflare environment and
 data center; preview caches may be unavailable. This is not durable storage or a
 guarantee of one billable synthesis per unique verse. Browser responses use
-`Cache-Control: no-store`, and provider errors are never cached.
+`Cache-Control: no-store`, and provider errors are never cached. Cache keys expose
+no plaintext verse or service-account credentials. Decoded audio must contain
+complete MPEG Layer III frames (with supported ID3 metadata) before it is cached;
+empty, non-MP3 and truncated output is rejected. Cached audio receives the same
+structural check, so invalid older entries become misses and can be replaced.
+This check is not a full audio decoder; browser decoding remains the final guard.
+
+In plain English: a cache hit avoids another Google synthesis request. The first
+uncached combination invokes Google. Changing text, Male/Female voice, speed or
+TTS configuration creates a different entry. Eviction, expiry, another data center
+or an unavailable cache can cause the same combination to be synthesized again.
+Failed requests are not cached and remain retryable.
 
 Requests accept POST JSON only, at most 32 KiB of JSON and 4,000 UTF-8 bytes of
 nonblank text. Only `text`, `voice`, and discrete Reader `rate` values are accepted;
 Google receives plain text, fixed English Neural2 voices and MP3 configuration.
-Cross-origin browser requests are rejected, no CORS access is granted, and no
+POST requires a nonmissing Origin that exactly equals the endpoint's origin. If
+`Sec-Fetch-Site` is present it must equal `same-origin`; `none`, `same-site` and
+`cross-site` are rejected. Standard Reader fetch supplies these browser headers.
+Direct tools without Origin now receive 403. Cross-origin requests are rejected,
+no wildcard CORS access is granted, and no
 arbitrary URL/SSML/language/provider parameters are accepted. These controls are
-not authentication or a global rate limiter: direct clients can still call an
-enabled public endpoint. Use low Google quotas and, if required for a wider test,
+not authentication or a complete anti-abuse/rate-limiting solution: non-browser
+clients can forge Origin/Sec-Fetch-Site and call an enabled endpoint. Origin checks
+reduce casual cross-site browser abuse but do not cap cost. Use low Google quotas
+and budget alerts and, if required for a wider test,
 an administrator-configured Cloudflare rule on `/api/tts`. No unbounded in-memory
 IP limiter or new account/billing feature is part of this POC.
 
 The service worker bypasses `/api/tts`; audio is never precached or put in GOD4
-browser shell/translation caches. The shell is bumped exactly once from
-`compact-reader-12` to `compact-reader-13`. Retained Offline Bibles and the update
+browser shell/translation caches. This hardening bumps the shell exactly once from
+`compact-reader-13` to `compact-reader-14`. Retained Offline Bibles and the update
 notification lifecycle are unchanged. Offline reading uses local speech.
 
 To disable without deleting code: remove `cloud-tts=1` for an individual browser;
@@ -115,8 +160,11 @@ service-account key after the POC. Reader continues with browser speech fallback
 
 Automated tests mock Google and `/api/tts`, generate ephemeral test signing keys,
 and use mock audio plus a generated PCM clip for native Web Audio/CSP validation.
-They spend no Google quota. Real Neural2 sound quality and Pages deployment
-authentication require the administrator's configured physical-device test.
+They spend no Google quota. The owner verified successful preview MP3 responses
+and natural Male/Female voices before hardening. Retest this hardened commit on a
+preview with actual Google MP3 output and exact browser Origin, then exercise
+Stop, Pause/Resume/Repeat, fullscreen, Journey boundaries, translation changes,
+Word Study and offline fallback on physical phones/tablets before production approval.
 
 References: [Google service-account OAuth](https://developers.google.com/identity/protocols/oauth2/service-account),
 [synthesis REST API](https://docs.cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize),
