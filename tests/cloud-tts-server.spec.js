@@ -21,7 +21,39 @@ function harness(options = {}){
     if(options.cryptoFailure === method) return Promise.reject(new Error('sensitive-crypto-exception-sentinel'));
     return webcrypto.subtle[method](...args);
   }]))};
-  const handler = createTtsHandler({crypto, now:() => clock, caches:{open:async () => {
+  let controllers = 0, timers = 0;
+  const runtime = {
+    AbortController:class extends AbortController {
+      constructor(){
+        if(++controllers === options.controllerFailure) throw new Error('sensitive-runtime-exception-sentinel');
+        super();
+      }
+    },
+    setTimeout(callback, delay){
+      if(++timers === options.timerFailure) throw new Error('sensitive-runtime-exception-sentinel');
+      return setTimeout(callback, delay);
+    },
+    clearTimeout(timer){
+      clearTimeout(timer);
+      if(options.cleanupFailure) throw new Error('sensitive-runtime-exception-sentinel');
+    },
+    Request:class extends Request {
+      constructor(...args){
+        if(options.requestFailure) throw new Error('sensitive-runtime-exception-sentinel');
+        super(...args);
+      }
+    },
+    URLSearchParams:class extends URLSearchParams {
+      constructor(...args){
+        if(options.formFailure) throw new Error('sensitive-runtime-exception-sentinel');
+        super(...args);
+      }
+    }
+  };
+  const handler = createTtsHandler({...runtime, crypto, now:() => {
+    if(options.unknownFailure) throw new Error('sensitive-exception-sentinel');
+    return clock;
+  }, caches:{open:async () => {
     if(options.cacheFailure) throw new Error('No cache');
     return {match:async key => stored.get(key.url)?.clone(), put:async (key, response) => {
       if(options.putFailure) throw new Error('Cache full');
@@ -30,7 +62,8 @@ function harness(options = {}){
   }}, fetch:async (url, request) => {
     calls.push({url, request});
     expect(request.redirect).toBe('error');
-    if(options.unknownFailure) throw new Error('sensitive-exception-sentinel');
+    const fetchStage = url === 'https://oauth2.googleapis.com/token' ? 'oauth' : 'synthesis';
+    if(options.fetchFailure === fetchStage) throw new Error('sensitive-runtime-exception-sentinel');
     if(options.timeout) return new Promise((resolve, reject) => request.signal.addEventListener('abort', () => reject(new Error('Timed out'))));
     if(url === 'https://oauth2.googleapis.com/token'){
       const form = new URLSearchParams(request.body);
@@ -72,6 +105,16 @@ const absentConfig = {
 };
 
 for(const [label, options, expected] of [
+  ['OAuth fetch rejection', {fetchFailure:'oauth'}, {stage:'oauth-fetch', status:null}],
+  ['synthesis fetch rejection', {fetchFailure:'synthesis'}, {stage:'synthesis-fetch', status:null}],
+  ['OAuth AbortController failure', {controllerFailure:1}, {stage:'timer', status:null}],
+  ['synthesis AbortController failure', {controllerFailure:2}, {stage:'timer', status:null}],
+  ['OAuth timer setup failure', {timerFailure:1}, {stage:'timer', status:null}],
+  ['synthesis timer setup failure', {timerFailure:2}, {stage:'timer', status:null}],
+  ['cache Request construction failure', {requestFailure:true}, {stage:'request-build', status:null}],
+  ['OAuth form construction failure', {formFailure:true}, {stage:'request-build', status:null}],
+  ['fetch rejection with failed cleanup', {fetchFailure:'oauth', cleanupFailure:true}, {stage:'oauth-fetch', status:null}],
+  ['OAuth HTTP failure with failed cleanup', {authFailure:true, authStatus:401, cleanupFailure:true}, {stage:'oauth', status:401}],
   ['digest failure', {cryptoFailure:'digest'}, {stage:'digest', status:null}],
   ['malformed PEM/base64', {badPem:true}, {stage:'private-key-decode', status:null}],
   ['importKey failure', {cryptoFailure:'importKey'}, {stage:'private-key-import', status:null}],
@@ -100,7 +143,7 @@ for(const [label, options, expected] of [
     const raw = await response.text();
     expect(JSON.parse(raw)).toEqual(expected);
     for(const value of ['sensitive provider failure', 'private Google details', 'sensitive-exception-sentinel',
-      'sensitive-crypto-exception-sentinel', 'invalid-json-secret-sentinel', 'BEGIN PRIVATE KEY',
+      'sensitive-crypto-exception-sentinel', 'sensitive-runtime-exception-sentinel', 'invalid-json-secret-sentinel', 'BEGIN PRIVATE KEY',
       'mock-short-lived-token', account.client_email, account.project_id, account.private_key, 'assertion', 'access_token']){
       expect(raw.includes(value)).toBe(false);
     }
@@ -112,6 +155,13 @@ for(const [label, options, expected] of [
     expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
   });
 }
+
+test('timer cleanup failure cannot turn successful synthesis into a diagnostic error', async () => {
+  const response = await harness({cleanupFailure:true}).run(undefined, {query:'?provider-debug=1'});
+  expect(response.status).toBe(200);
+  expect(response.headers.get('Content-Type')).toBe('audio/mpeg');
+  expect(await response.text()).toBe('mock MP3 bytes');
+});
 
 test('provider diagnostic requires the exact flag and keeps successful TTS and GET config behavior', async () => {
   for(const query of ['?provider-debug=0', '?provider-debug=true']){

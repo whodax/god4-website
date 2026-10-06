@@ -50,13 +50,29 @@ export function createTtsHandler(runtime = {}){
   const webCrypto = runtime.crypto || globalThis.crypto;
   const cacheStorage = runtime.caches || globalThis.caches;
   const now = runtime.now || Date.now;
+  const Controller = runtime.AbortController || globalThis.AbortController;
+  const CacheRequest = runtime.Request || globalThis.Request;
+  const FormParams = runtime.URLSearchParams || globalThis.URLSearchParams;
+  const scheduleTimer = runtime.setTimeout || ((callback, delay) => setTimeout(callback, delay));
+  const cancelTimer = runtime.clearTimeout || (timer => clearTimeout(timer));
   let tokenState = null;
 
+  function buildRequest(build){
+    try{ return build(); }
+    catch(failure){ throw new ProviderFailure('request-build', null); }
+  }
   async function timedFetch(url, options, stage){
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 8000);
+    let controller;
+    let timer;
     try{
-      const response = await requestFetch(url, {...options, redirect:'error', signal:controller.signal});
+      controller = new Controller();
+      timer = scheduleTimer(() => controller.abort(), 8000);
+    }catch(failure){ throw new ProviderFailure('timer', null); }
+    try{
+      const fetchOptions = buildRequest(() => ({...options, redirect:'error', signal:controller.signal}));
+      let response;
+      try{ response = await requestFetch(url, fetchOptions); }
+      catch(failure){ throw new ProviderFailure(stage === 'oauth' ? 'oauth-fetch' : 'synthesis-fetch', null); }
       if(!response.ok) throw new ProviderFailure(stage, response.status);
       // Keep the timeout through body consumption, not just response headers.
       let data;
@@ -66,17 +82,22 @@ export function createTtsHandler(runtime = {}){
         throw failure;
       }
       return {data, status:response.status};
-    }finally{ clearTimeout(timer); }
+    }finally{
+      // Cleanup must never replace a provider result or the original failure stage.
+      try{ cancelTimer(timer); }catch(failure){}
+    }
   }
   async function accessToken(account, secret){
     if(tokenState && tokenState.secret === secret && tokenState.expires > now()) return tokenState.value;
     // Only completed token data is reused. In-flight I/O belongs to its request.
     const issued = Math.floor(now() / 1000);
-    const header = base64url(encoder.encode(JSON.stringify({alg:'RS256', typ:'JWT'})));
-    const claims = base64url(encoder.encode(JSON.stringify({
-      iss:account.client_email, scope:'https://www.googleapis.com/auth/cloud-platform',
-      aud:TOKEN_URL, iat:issued, exp:issued + 3600
-    })));
+    const {header, claims} = buildRequest(() => ({
+      header:base64url(encoder.encode(JSON.stringify({alg:'RS256', typ:'JWT'}))),
+      claims:base64url(encoder.encode(JSON.stringify({
+        iss:account.client_email, scope:'https://www.googleapis.com/auth/cloud-platform',
+        aud:TOKEN_URL, iat:issued, exp:issued + 3600
+      })))
+    }));
     let bytes;
     try{
       const pem = account.private_key.replace(/-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|\s/g, '');
@@ -87,13 +108,16 @@ export function createTtsHandler(runtime = {}){
       key = await webCrypto.subtle.importKey('pkcs8', bytes,
         {name:'RSASSA-PKCS1-v1_5', hash:'SHA-256'}, false, ['sign']);
     }catch(failure){ throw new ProviderFailure('private-key-import', null); }
-    const signingInput = encoder.encode(header + '.' + claims);
+    const signingInput = buildRequest(() => encoder.encode(header + '.' + claims));
     let signature;
     try{ signature = await webCrypto.subtle.sign('RSASSA-PKCS1-v1_5', key, signingInput); }
     catch(failure){ throw new ProviderFailure('jwt-sign', null); }
-    const assertion = header + '.' + claims + '.' + base64url(new Uint8Array(signature));
-    const {data:token, status:oauthStatus} = await timedFetch(TOKEN_URL, {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
-      body:new URLSearchParams({grant_type:'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion}).toString()}, 'oauth');
+    const oauthOptions = buildRequest(() => {
+      const assertion = header + '.' + claims + '.' + base64url(new Uint8Array(signature));
+      return {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body:new FormParams({grant_type:'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion}).toString()};
+    });
+    const {data:token, status:oauthStatus} = await timedFetch(TOKEN_URL, oauthOptions, 'oauth');
     if(!token || typeof token.access_token !== 'string' || !token.access_token ||
         !Number.isFinite(token.expires_in) || token.expires_in < 120) throw new ProviderFailure('oauth-response', oauthStatus);
     tokenState = {secret, value:token.access_token, expires:now() + (Math.min(token.expires_in, 3600) - 60) * 1000};
@@ -165,7 +189,7 @@ export function createTtsHandler(runtime = {}){
       try{ digest = await webCrypto.subtle.digest('SHA-256', digestInput); }
       catch(failure){ throw new ProviderFailure('digest', null); }
       const hash = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
-      const cacheKey = new Request(origin + '/__god4/tts/' + hash, {method:'GET'});
+      const cacheKey = buildRequest(() => new CacheRequest(origin + '/__god4/tts/' + hash, {method:'GET'}));
       let cache;
       let cached;
       try{ cache = cacheStorage && await cacheStorage.open('god4-neural2-tts-v1'); cached = cache && await cache.match(cacheKey); }
@@ -176,10 +200,11 @@ export function createTtsHandler(runtime = {}){
         return response;
       }
       const token = await accessToken(account, env.GOOGLE_TTS_SERVICE_ACCOUNT);
-      const {data:result, status:providerStatus} = await timedFetch(SYNTHESIS_URL, {method:'POST', headers:{
+      const synthesisOptions = buildRequest(() => ({method:'POST', headers:{
         Authorization:'Bearer ' + token, 'Content-Type':'application/json', 'x-goog-user-project':account.project_id
       }, body:JSON.stringify({input:{text:body.text}, voice:{languageCode:'en-US', name:VOICES[body.voice]},
-        audioConfig:{audioEncoding:'MP3', speakingRate:body.rate, pitch:0}})}, 'synthesis');
+        audioConfig:{audioEncoding:'MP3', speakingRate:body.rate, pitch:0}})}));
+      const {data:result, status:providerStatus} = await timedFetch(SYNTHESIS_URL, synthesisOptions, 'synthesis');
       if(!result || typeof result.audioContent !== 'string' || !result.audioContent || result.audioContent.length > 8000000){
         throw new ProviderFailure('audio-decode', providerStatus);
       }
