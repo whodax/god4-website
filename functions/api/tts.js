@@ -8,6 +8,14 @@ const MAX_TEXT_BYTES = 4000;
 const MAX_BODY_BYTES = 32768;
 const CONFIG_VERSION = 'neural2-v1-mp3-pitch0-1';
 
+class ProviderFailure extends Error {
+  constructor(stage, status){
+    super('Provider unavailable');
+    this.stage = stage;
+    this.status = status;
+  }
+}
+
 function error(status, message, headers = {}){
   return Response.json({error:message}, {status, headers:{
     'Cache-Control':'no-store', 'X-Content-Type-Options':'nosniff', ...headers
@@ -44,14 +52,14 @@ export function createTtsHandler(runtime = {}){
   const now = runtime.now || Date.now;
   let tokenState = null;
 
-  async function timedFetch(url, options){
+  async function timedFetch(url, options, stage){
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 8000);
     try{
       const response = await requestFetch(url, {...options, redirect:'error', signal:controller.signal});
-      if(!response.ok) throw new Error('Provider unavailable');
+      if(!response.ok) throw new ProviderFailure(stage, response.status);
       // Keep the timeout through body consumption, not just response headers.
-      return await response.json();
+      return {data:await response.json(), status:response.status};
     }finally{ clearTimeout(timer); }
   }
   async function accessToken(account, secret){
@@ -69,8 +77,8 @@ export function createTtsHandler(runtime = {}){
       {name:'RSASSA-PKCS1-v1_5', hash:'SHA-256'}, false, ['sign']);
     const signature = await webCrypto.subtle.sign('RSASSA-PKCS1-v1_5', key, encoder.encode(header + '.' + claims));
     const assertion = header + '.' + claims + '.' + base64url(new Uint8Array(signature));
-    const token = await timedFetch(TOKEN_URL, {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
-      body:new URLSearchParams({grant_type:'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion}).toString()});
+    const {data:token} = await timedFetch(TOKEN_URL, {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
+      body:new URLSearchParams({grant_type:'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion}).toString()}, 'oauth');
     if(typeof token.access_token !== 'string' || !token.access_token ||
         !Number.isFinite(token.expires_in) || token.expires_in < 120) throw new Error('Invalid token');
     tokenState = {secret, value:token.access_token, expires:now() + (Math.min(token.expires_in, 3600) - 60) * 1000};
@@ -150,14 +158,17 @@ export function createTtsHandler(runtime = {}){
         return response;
       }
       const token = await accessToken(account, env.GOOGLE_TTS_SERVICE_ACCOUNT);
-      const result = await timedFetch(SYNTHESIS_URL, {method:'POST', headers:{
+      const {data:result, status:providerStatus} = await timedFetch(SYNTHESIS_URL, {method:'POST', headers:{
         Authorization:'Bearer ' + token, 'Content-Type':'application/json', 'x-goog-user-project':account.project_id
       }, body:JSON.stringify({input:{text:body.text}, voice:{languageCode:'en-US', name:VOICES[body.voice]},
-        audioConfig:{audioEncoding:'MP3', speakingRate:body.rate, pitch:0}})});
-      if(typeof result.audioContent !== 'string' || !result.audioContent || result.audioContent.length > 8000000){
-        throw new Error('Invalid audio');
+        audioConfig:{audioEncoding:'MP3', speakingRate:body.rate, pitch:0}})}, 'synthesis');
+      if(!result || typeof result.audioContent !== 'string' || !result.audioContent || result.audioContent.length > 8000000){
+        throw new ProviderFailure('audio-decode', providerStatus);
       }
-      const audio = Uint8Array.from(atob(result.audioContent), character => character.charCodeAt(0));
+      let decoded;
+      try{ decoded = atob(result.audioContent); }
+      catch(failure){ throw new ProviderFailure('audio-decode', providerStatus); }
+      const audio = Uint8Array.from(decoded, character => character.charCodeAt(0));
       const response = new Response(audio, {headers:{
         'Content-Type':'audio/mpeg', 'Cache-Control':'no-store', 'X-Content-Type-Options':'nosniff'
       }});
@@ -167,7 +178,15 @@ export function createTtsHandler(runtime = {}){
         context.waitUntil(cache.put(cacheKey, stored).catch(() => {}));
       }
       return response;
-    }catch(failure){ return error(502, 'Cloud speech is unavailable.'); }
+    }catch(failure){
+      if(new URL(request.url).searchParams.get('provider-debug') === '1'){
+        return Response.json({
+          stage:failure instanceof ProviderFailure ? failure.stage : 'unknown',
+          status:failure instanceof ProviderFailure ? failure.status : null
+        }, {status:502, headers:{'Cache-Control':'no-store', 'X-Content-Type-Options':'nosniff'}});
+      }
+      return error(502, 'Cloud speech is unavailable.');
+    }
   };
 }
 

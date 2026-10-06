@@ -26,6 +26,7 @@ function harness(options = {}){
   }}, fetch:async (url, request) => {
     calls.push({url, request});
     expect(request.redirect).toBe('error');
+    if(options.unknownFailure) throw new Error('sensitive-exception-sentinel');
     if(options.timeout) return new Promise((resolve, reject) => request.signal.addEventListener('abort', () => reject(new Error('Timed out'))));
     if(url === 'https://oauth2.googleapis.com/token'){
       const form = new URLSearchParams(request.body);
@@ -36,14 +37,14 @@ function harness(options = {}){
       expect(claims).toMatchObject({iss:account.client_email, aud:url, scope:'https://www.googleapis.com/auth/cloud-platform'});
       expect(claims.exp - claims.iat).toBe(3600);
       expect(verify('sha256', Buffer.from(jwt[0] + '.' + jwt[1]), publicKey, Buffer.from(jwt[2], 'base64url'))).toBe(true);
-      return options.authFailure ? Response.json({error:'sensitive provider failure'}, {status:401}) :
+      return options.authFailure ? Response.json({error:'sensitive provider failure'}, {status:options.authStatus || 401}) :
         Response.json({access_token:'mock-short-lived-token', expires_in:3600});
     }
     expect(url).toBe('https://texttospeech.googleapis.com/v1/text:synthesize');
     expect(request.headers.Authorization).toBe('Bearer mock-short-lived-token');
     expect(request.headers['x-goog-user-project']).toBe('mock-project');
-    return options.providerFailure ? Response.json({error:'private Google details'}, {status:503}) :
-      Response.json({audioContent:options.badAudio ? '!!!' : Buffer.from('mock MP3 bytes').toString('base64')});
+    return options.providerFailure ? Response.json({error:'private Google details'}, {status:options.providerStatus || 503}) :
+      Response.json(options.missingAudio ? {} : {audioContent:options.badAudio ? '!!!' : Buffer.from('mock MP3 bytes').toString('base64')});
   }});
   async function run(body = {text:'In the beginning.', voice:'male', rate:1}, overrides = {}){
     const env = overrides.env || {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(account)};
@@ -62,6 +63,55 @@ const absentConfig = {
   serviceAccountPresent:false, serviceAccountJsonValid:false, serviceAccountTypeValid:false,
   clientEmailPresent:false, privateKeyPresent:false, projectIdPresent:false
 };
+
+for(const [label, options, expected] of [
+  ['OAuth 400', {authFailure:true, authStatus:400}, {stage:'oauth', status:400}],
+  ['OAuth 401', {authFailure:true, authStatus:401}, {stage:'oauth', status:401}],
+  ['synthesis 400', {providerFailure:true, providerStatus:400}, {stage:'synthesis', status:400}],
+  ['synthesis 403', {providerFailure:true, providerStatus:403}, {stage:'synthesis', status:403}],
+  ['missing audioContent', {missingAudio:true}, {stage:'audio-decode', status:200}],
+  ['malformed audioContent', {badAudio:true}, {stage:'audio-decode', status:200}],
+  ['unknown exception', {unknownFailure:true}, {stage:'unknown', status:null}]
+]){
+  test(`provider diagnostic reports only safe stage/status for ${label}`, async () => {
+    const h = harness(options);
+    const response = await h.run(undefined, {query:'?provider-debug=1'});
+    expect(response.status).toBe(502);
+    expect(response.headers.get('Cache-Control')).toBe('no-store');
+    expect(response.headers.get('X-Content-Type-Options')).toBe('nosniff');
+    const raw = await response.text();
+    expect(JSON.parse(raw)).toEqual(expected);
+    for(const value of ['sensitive provider failure', 'private Google details', 'sensitive-exception-sentinel',
+      'mock-short-lived-token', account.client_email, account.project_id, account.private_key, 'assertion', 'access_token']){
+      expect(raw.includes(value)).toBe(false);
+    }
+    expect(h.stored.size).toBe(0);
+  });
+  test(`normal POST retains generic 502 for ${label}`, async () => {
+    const response = await harness(options).run();
+    expect(response.status).toBe(502);
+    expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
+  });
+}
+
+test('provider diagnostic requires the exact flag and keeps successful TTS and GET config behavior', async () => {
+  for(const query of ['?provider-debug=0', '?provider-debug=true']){
+    const response = await harness({authFailure:true}).run(undefined, {query});
+    expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
+  }
+  const h = harness();
+  const response = await h.run(undefined, {query:'?provider-debug=1'});
+  expect(response.status).toBe(200);
+  expect(response.headers.get('Content-Type')).toBe('audio/mpeg');
+  expect(await response.text()).toBe('mock MP3 bytes');
+  expect(h.calls).toHaveLength(2);
+  const config = await h.run(undefined, {method:'GET', query:'?config-debug=1&provider-debug=1', env:{}});
+  expect(await config.json()).toEqual(absentConfig);
+  const get = await h.run(undefined, {method:'GET', query:'?provider-debug=1'});
+  expect(get.status).toBe(405);
+  expect(await get.json()).toEqual({error:'Use POST.'});
+  expect(h.calls).toHaveLength(2);
+});
 for(const [label, env, expected] of [
   ['both bindings absent', {}, absentConfig],
   ['enabled binding has wrong value', {CLOUD_TTS_ENABLED:'wrong-value-sentinel'},
