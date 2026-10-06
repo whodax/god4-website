@@ -50,7 +50,7 @@ function harness(options = {}){
       }
     }
   };
-  const handler = createTtsHandler({...runtime, crypto, now:() => {
+  const handlerRuntime = {...runtime, crypto, now:() => {
     if(options.unknownFailure) throw new Error('sensitive-exception-sentinel');
     return clock;
   }, caches:{open:async () => {
@@ -61,7 +61,11 @@ function harness(options = {}){
     }};
   }}, fetch:async (url, request) => {
     calls.push({url, request});
-    expect(request.redirect).toBe('error');
+    expect(request.redirect).toBe('manual');
+    const redirectStage = url === 'https://oauth2.googleapis.com/token' ? 'oauth' : 'synthesis';
+    if(options.redirectStage === redirectStage) return new Response('private-redirect-body-sentinel', {
+      status:options.redirectStatus, headers:{Location:'https://redirect-target.test/private-location-sentinel'}
+    });
     const fetchStage = url === 'https://oauth2.googleapis.com/token' ? 'oauth' : 'synthesis';
     if(options.fetchFailure === fetchStage) throw new Error('sensitive-runtime-exception-sentinel');
     if(options.timeout) return new Promise((resolve, reject) => request.signal.addEventListener('abort', () => reject(new Error('Timed out'))));
@@ -84,7 +88,10 @@ function harness(options = {}){
     expect(request.headers['x-goog-user-project']).toBe('mock-project');
     return options.providerFailure ? Response.json({error:'private Google details'}, {status:options.providerStatus || 503}) :
       Response.json(options.missingAudio ? {} : {audioContent:options.badAudio ? '!!!' : Buffer.from('mock MP3 bytes').toString('base64')});
-  }});
+  }};
+  const injectedFetch = handlerRuntime.fetch;
+  if(options.globalFetch) delete handlerRuntime.fetch;
+  const handler = createTtsHandler(handlerRuntime);
   async function run(body = {text:'In the beginning.', voice:'male', rate:1}, overrides = {}){
     const env = overrides.env || {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(
       options.badPem ? {...account, private_key:'-----BEGIN PRIVATE KEY-----\n!!!\n-----END PRIVATE KEY-----'} : account)};
@@ -95,7 +102,68 @@ function harness(options = {}){
     await Promise.all(tasks);
     return response;
   }
-  return {run, calls, stored, advance:ms => {clock += ms;}};
+  return {run, calls, stored, fetch:injectedFetch, advance:ms => {clock += ms;}};
+}
+
+test('production fetch is not read at initialization and is resolved directly for each subrequest', async () => {
+  const original = Object.getOwnPropertyDescriptor(globalThis, 'fetch');
+  let initializationReads = 0;
+  try{
+    Object.defineProperty(globalThis, 'fetch', {configurable:true, get(){
+      initializationReads++;
+      return () => { throw new Error('stale-fetch-sentinel'); };
+    }});
+    const h = harness({globalFetch:true});
+    expect(initializationReads).toBe(0);
+    let oauthCalls = 0, synthesisCalls = 0;
+    Object.defineProperty(globalThis, 'fetch', {configurable:true, writable:true, value:function(...args){
+      expect(this === globalThis).toBe(true);
+      oauthCalls++;
+      globalThis.fetch = function(...nextArgs){
+        expect(this === globalThis).toBe(true);
+        synthesisCalls++;
+        return h.fetch(...nextArgs);
+      };
+      return h.fetch(...args);
+    }});
+    const response = await h.run();
+    expect(response.status).toBe(200);
+    expect(await response.text()).toBe('mock MP3 bytes');
+    expect(oauthCalls).toBe(1);
+    expect(synthesisCalls).toBe(1);
+    expect(h.calls).toHaveLength(2);
+  }finally{ Object.defineProperty(globalThis, 'fetch', original); }
+});
+
+test('injected fetch remains independent of the production global fetch', async () => {
+  const original = globalThis.fetch;
+  try{
+    const h = harness();
+    globalThis.fetch = () => { throw new Error('global-fetch-must-not-run-sentinel'); };
+    expect((await h.run()).status).toBe(200);
+    expect(h.calls).toHaveLength(2);
+  }finally{ globalThis.fetch = original; }
+});
+
+for(const stage of ['oauth', 'synthesis']){
+  for(const status of [301, 302, 303, 307, 308]){
+    test(`${stage} ${status} is not followed and exposes only its safe diagnostic`, async () => {
+      const h = harness({redirectStage:stage, redirectStatus:status});
+      const response = await h.run(undefined, {query:'?provider-debug=1'});
+      expect(response.status).toBe(502);
+      expect(response.headers.get('Cache-Control')).toBe('no-store');
+      expect(response.headers.has('Location')).toBe(false);
+      expect(await response.json()).toEqual({stage, status});
+      expect(h.calls).toHaveLength(stage === 'oauth' ? 1 : 2);
+      expect(h.calls.every(call => call.request.redirect === 'manual')).toBe(true);
+      expect(h.calls.some(call => call.url.includes('redirect-target.test'))).toBe(false);
+      expect(h.stored.size).toBe(0);
+      const generic = await harness({redirectStage:stage, redirectStatus:status}).run();
+      expect(generic.status).toBe(502);
+      expect(await generic.json()).toEqual({error:'Cloud speech is unavailable.'});
+      expect(generic.headers.has('Location')).toBe(false);
+    });
+  }
 }
 
 const absentConfig = {

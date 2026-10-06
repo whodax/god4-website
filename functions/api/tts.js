@@ -46,7 +46,7 @@ async function readBody(request){
 
 // Dependency injection lets automated tests use real JWT crypto with mocked Google/Cache APIs.
 export function createTtsHandler(runtime = {}){
-  const requestFetch = runtime.fetch || globalThis.fetch;
+  const requestFetch = runtime.fetch;
   const webCrypto = runtime.crypto || globalThis.crypto;
   const cacheStorage = runtime.caches || globalThis.caches;
   const now = runtime.now || Date.now;
@@ -69,9 +69,9 @@ export function createTtsHandler(runtime = {}){
       timer = scheduleTimer(() => controller.abort(), 8000);
     }catch(failure){ throw new ProviderFailure('timer', null); }
     try{
-      const fetchOptions = buildRequest(() => ({...options, redirect:'error', signal:controller.signal}));
+      const fetchOptions = buildRequest(() => ({...options, redirect:'manual', signal:controller.signal}));
       let response;
-      try{ response = await requestFetch(url, fetchOptions); }
+      try{ response = await (requestFetch ? requestFetch(url, fetchOptions) : globalThis.fetch(url, fetchOptions)); }
       catch(failure){ throw new ProviderFailure(stage === 'oauth' ? 'oauth-fetch' : 'synthesis-fetch', null); }
       if(!response.ok) throw new ProviderFailure(stage, response.status);
       // Keep the timeout through body consumption, not just response headers.
