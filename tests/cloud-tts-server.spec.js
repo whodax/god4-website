@@ -247,13 +247,18 @@ for(const [voice, mapped] of [['male', 'en-US-Neural2-D'], ['female', 'en-US-Neu
     expect(Buffer.from(await response.arrayBuffer()).equals(mp3)).toBe(true);
     expect(JSON.parse(h.calls[1].request.body)).toEqual({input:{text:'<speak>Literal plain text</speak>'},
       voice:{languageCode:'en-US', name:mapped}, audioConfig:{audioEncoding:'MP3', speakingRate:1.25, pitch:0}});
-    expect([...h.stored.values()][0].headers.get('Cache-Control')).toBe('public, max-age=86400, immutable');
+    expect([...h.stored.values()][0].headers.get('Cache-Control')).toBe('public, max-age=2592000, immutable');
   });
 }
 
 test('identical requests hit the edge cache; text, profile and speed never collide', async () => {
   const h = harness();
-  await h.run(); await h.run();
+  await h.run();
+  const originalKey = [...h.stored.keys()][0];
+  const hit = await h.run();
+  expect(hit.status).toBe(200);
+  expect(hit.headers.get('Cache-Control')).toBe('no-store');
+  expect([...h.stored.keys()]).toEqual([originalKey]);
   expect(h.calls).toHaveLength(2);
   for(const body of [{text:'Different text.', voice:'male', rate:1},
     {text:'In the beginning.', voice:'female', rate:1}, {text:'In the beginning.', voice:'male', rate:1.5}]) await h.run(body);
@@ -374,6 +379,7 @@ for(const [label, body, status] of [
     const h = harness();
     expect((await h.run(body)).status).toBe(status);
     expect(h.calls).toHaveLength(0);
+    expect(h.stored.size).toBe(0);
   });
 }
 

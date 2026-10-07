@@ -215,7 +215,7 @@ export function createTtsHandler(runtime = {}){
       }});
       if(cache){
         const stored = response.clone();
-        stored.headers.set('Cache-Control', 'public, max-age=86400, immutable');
+        stored.headers.set('Cache-Control', 'public, max-age=2592000, immutable');
         try{ context.waitUntil(cache.put(cacheKey, stored).catch(() => {})); }
         catch(failure){ /* A cache-write setup failure must not break successful speech. */ }
       }
