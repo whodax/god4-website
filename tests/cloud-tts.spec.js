@@ -111,6 +111,7 @@ for(const [label, options, status, mime] of [
   ['unavailable endpoint', {}, 404, 'text/html'],
   ['non-200 success status', {}, 201, 'audio/mpeg'],
   ['unsupported provider rate', {}, 422, 'application/json'],
+  ['synthesis rate limit', {}, 429, 'application/json'],
   ['incorrect MIME', {}, 200, 'text/html'],
   ['decode failure', {decodeFailure:true}, 200, 'audio/mpeg'],
   ['autoplay denied', {blocked:true}, 200, 'audio/mpeg'],

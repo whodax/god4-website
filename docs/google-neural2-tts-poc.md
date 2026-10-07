@@ -35,7 +35,8 @@ fallback. Cloud speech is not the default and final production approval is pendi
    production approval (see rollout prerequisites below). Redeploy after changing runtime
    bindings. Deploy through Pages Git integration or Wrangler with Functions
    support; a static-only server/dashboard direct upload cannot run this Function.
-   No Node compatibility flag, Google SDK, R2, or other storage binding is needed.
+   No Node compatibility flag, Google SDK or R2 binding is needed. The separate
+   private limiter Worker must be deployed before Pages can use its Service Binding.
 5. Check Pages build output includes `functions/api/tts.js`, `_routes.json`, and
    the static site. Only `/api/tts` invokes the Function. `_headers` remains
    unchanged. Static-only local preview returns 404 for the endpoint and exercises
@@ -154,61 +155,128 @@ arbitrary URL/SSML/language/provider parameters are accepted. These controls are
 not authentication or a complete anti-abuse/rate-limiting solution: non-browser
 clients can forge Origin/Sec-Fetch-Site and call an enabled endpoint. Origin checks
 reduce casual cross-site browser abuse but do not cap cost. Use low Google quotas
-and budget alerts and, if required for a wider test,
-an administrator-configured Cloudflare rule on `/api/tts`. No unbounded in-memory
-IP limiter or new account/billing feature is part of this POC.
+and budget alerts alongside the private synthesis limiter below. No unbounded
+in-memory IP limiter or new account/billing feature is introduced.
 
-## Proposed production rate-limit rule
+## Private Worker synthesis rate limiting
 
-Design only: no Cloudflare rule is created or modified by this change. Immediately
-before production activation, create this zone-level rule for GOD4.us:
+Architecture: **Pages Function → `TTS_RATE_LIMITER` Service Binding →
+`god4-tts-rate-limit` Worker → `TTS_RATE_LIMIT` Workers Rate Limiting API**.
+Pages Functions do not directly support this rate-limit binding; `[[ratelimits]]`
+is configured only in `workers/tts-rate-limit/wrangler.toml`.
 
-| Setting | Exact value |
+The existing WAF **Leaked credential check** rule remains untouched. Its occupied
+Free-plan slot is not reused, no second WAF rule is created, and no Pro upgrade
+is required. This implementation replaces the previously planned WAF rule.
+
+| Setting | Value |
 | --- | --- |
-| Rule name | GOD4 TTS API rate limit |
-| Match | URI Path equals `/api/tts` |
-| Expression | `(http.request.uri.path eq "/api/tts")` |
-| Counting characteristic | IP address (`ip.src`) |
-| Threshold | 20 requests per 10 seconds per IP |
-| Action | Block (`block`) |
-| Mitigation duration | 10 seconds (`mitigation_timeout: 10`) |
+| Worker | `god4-tts-rate-limit` |
+| Pages service binding | `TTS_RATE_LIMITER` |
+| Worker rate-limit binding | `TTS_RATE_LIMIT` |
+| Namespace ID | `"74001"` (non-secret positive integer string) |
+| Limit / period | 20 calls per 10 seconds per key |
+| Key | Cloudflare `CF-Connecting-IP` from the incoming Pages request |
+| Internal request | POST `/check`, JSON containing only `{key: clientIp}` |
+| Allowed / denied | 204 / 429, always `Cache-Control: no-store` |
 
-Cloudflare's current Free-plan documentation supports Path expressions, IP
-counting, a 10-second counting period and a 10-second mitigation period. Ten seconds
-is the documented shortest Free-plan block duration; confirm the selectable value
-in the dashboard at setup time. Free provides one rule, so confirm that slot is
-available. This path-only rule counts all matching methods and queries, including
-requests served from the Function's internal audio cache. It does not require body
-inspection, custom headers, identity, CAPTCHA, Turnstile, KV, Durable Objects or paid
-third-party infrastructure. In API configuration, characteristics are
-`["cf.colo.id", "ip.src"]`; data center ID is mandatory and implicitly included in
-the dashboard, and is not part of the match expression. Use `period: 10` and
-`requests_per_period: 20`; no custom counting expression or cache exclusion.
+Namespace `74001` is reserved here and unused elsewhere in this repository.
+Before deployment, confirm no other Worker in the Cloudflare account uses it:
+namespace uniqueness is account-wide and reusing an ID shares counters.
 
-Reader requests are sequential, so ordinary verse progression should remain well
-below this initial burst threshold. Twenty requests allows reasonable voice/speed
-interaction while making high-rate scripted abuse harder. Validate it with real
-usage before changing the threshold. Users sharing a public IP/NAT share the
-allowance. Counters are local to each data center rather than globally shared;
-enforcement can lag by a few seconds and excess requests can reach the endpoint.
-Distributed clients can still generate substantial traffic. This is not a hard
-billing ceiling, and budget alerts also do not stop spending.
+Pages validates method, exact Origin, Sec-Fetch-Site and request body, then checks
+backend enablement and service-account shape before deriving the existing hashed
+cache key. A validated MP3 cache hit returns `no-store` without limiter invocation
+or Google calls. Invalid cached MP3 is a miss. Only when synthesis is required
+is a token consumed, before OAuth or Google TTS. Retries after provider failure
+consume tokens again. Cache-write failure does not change the permission check.
+The 30-day cache, key version and MP3 validation remain unchanged.
 
-Confirm the rule applies to the production custom-domain endpoint before enabling
-cloud speech. A zone rule must not be assumed to protect the separate `pages.dev`
-hostnames; verify alternate-host exposure during rollout. Preview remains enabled
-for controlled testing and is not evidence of production rule enforcement.
+The Pages Function uses only its edge-provided `CF-Connecting-IP`, never a custom
+IP header or X-Forwarded-For. The IP is passed in the service request body rather
+than inferred from a Worker subrequest header. No verse text, voice, OAuth token,
+Google service-account field or cache key is sent to the limiter. Trust assumes
+traffic reaches Pages through Cloudflare; verify trusted-IP behavior on real
+preview/custom-domain/alternate-host requests, including any upstream Workers or
+IP-header transformation settings, before activation.
 
-Sources (reviewed October 7, 2026):
-[Free-plan capabilities and enforcement delay](https://developers.cloudflare.com/waf/rate-limiting-rules/),
-[rule parameters](https://developers.cloudflare.com/waf/rate-limiting-rules/parameters/),
-[per-data-center counters](https://developers.cloudflare.com/waf/rate-limiting-rules/request-rate/),
-[Cache API locality](https://developers.cloudflare.com/workers/runtime-apis/cache/).
+Missing/invalid edge IP, absent service binding, binding errors and unexpected
+Worker responses fail closed with generic HTTP 503 before Google is called. There
+is no global shared fallback key. An existing valid cache hit can still be served
+without IP or a functioning limiter because no synthesis occurs. A denial returns
+HTTP 429 with `{"error":"Cloud speech is temporarily unavailable."}`, `no-store`
+and `Retry-After: 10`. That header is a retry hint, not a guaranteed fixed blocking
+duration. The Worker returns generic 400 for malformed internal requests and
+503 for internal limiter failures; no IP, namespace, counter or exception appears
+in responses or application logs. The existing browser non-200 fallback handles
+429 and 503 through SpeechSynthesis without client code changes.
+
+The Worker has `workers_dev = false`, `preview_urls = false` and no routes/custom
+domains. The internal hostname is a service-binding URL, not a public DNS API.
+No Google credentials, synthesis, audio cache, external service or library lives
+in this Worker. Do not add a public route. A Service Binding is a private internal
+invocation rather than an Internet fetch.
+
+Both explicit Pages environment service bindings target the same Worker. Preview
+remains `CLOUD_TTS_ENABLED="1"`; Production remains `"0"`. When production is later
+enabled, preview and production visitors with the same IP at the same location
+share the allowance. Keep preview testing controlled. Disabled production rejects
+before limiter evaluation. Fail-closed favors cost protection over cloud uptime;
+local browser speech remains available if cloud limiting or Free quota fails.
+
+Twenty sequential synthesis attempts per ten seconds leaves room for normal verse
+progression and interaction. IP/NAT/mobile networks can represent multiple users.
+The Workers limiter is permissive, eventually consistent and local to the Worker
+location; it is not globally synchronized or an accounting system. Distributed
+clients can still cause substantial synthesis. This reduces Google cost exposure
+but is not a hard billing ceiling. Google quotas and budget alerts remain necessary;
+budget alerts do not stop spending.
+
+Pages Function and Worker activity uses Workers Free resources and shares the
+account's request allowance; monitor requests and CPU before activation. Do not
+assume a separate unlimited allowance for this private Worker. Service Bindings
+avoid a public network round trip; Cloudflare's current pricing describes no extra
+request fee on Workers Standard, with CPU aggregated across both services. That
+paid-plan statement is not a guarantee of unlimited Free usage. No upgrade or
+billing-setting change is performed here.
+
+### Deployment sequence (manual; nothing deployed by this task)
+
+1. Confirm namespace `74001` is account-wide unused and review the private Worker
+   config. Keep the existing WAF rule and Google encrypted secret unchanged.
+2. With explicit deployment approval, run from the repository root:
+   `npx.cmd --no-install wrangler deploy --config workers/tts-rate-limit/wrangler.toml`.
+   Confirm `workers.dev` and version preview URLs remain disabled and no public
+   routes/custom domains exist. Do not deploy Pages before its target Worker exists.
+3. Publish the reviewed branch for a Pages preview through the existing Git
+   integration when authorized. The checked-in `[env.preview]` service configuration
+   binds `TTS_RATE_LIMITER` to that Worker; redeploy is required to apply bindings.
+4. Verify actual preview binding/IP behavior, allowed synthesis, cache-hit bypass,
+   429 fallback, missing-binding failure behavior, and physical Reader smoke tests.
+   Local mocks/dry-run do not verify remote counters or account bindings.
+5. After review/merge, deploy Pages with the production service binding and
+   `CLOUD_TTS_ENABLED="0"`. Deploying the limiter does not enable production TTS.
+6. Complete the production prerequisites below before separate activation.
+
+For local integration, run the Worker with
+`npx.cmd --no-install wrangler dev --config workers/tts-rate-limit/wrangler.toml`
+and Pages in another terminal with
+`npx.cmd --no-install wrangler pages dev . --service TTS_RATE_LIMITER=god4-tts-rate-limit`.
+A local test needs an explicit simulated CF-Connecting-IP; production never supplies
+a substitute for a missing edge header. Real enforcement must be verified remotely.
+
+Sources reviewed October 7, 2026:
+[Workers Rate Limiting API](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/),
+[Pages Service Bindings](https://developers.cloudflare.com/pages/functions/bindings/#service-bindings),
+[Pages Wrangler configuration](https://developers.cloudflare.com/pages/functions/wrangler-configuration/#service-bindings),
+[Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/#service-bindings),
+[Pages usage](https://developers.cloudflare.com/pages/functions/pricing/).
 
 ## Production rollout prerequisites and emergency response
 
-1. Merge the 30-day cache change after review.
-2. Create and verify the proposed Cloudflare rate-limit rule and its endpoint coverage.
+1. Keep the merged 30-day cache and review/merge this private limiter integration.
+2. Deploy the private Worker, apply Pages Service Bindings, and verify limiter
+   enforcement and endpoint/IP coverage; leave the existing WAF rule untouched.
 3. Configure Google Cloud budget alerts.
 4. With separate explicit approval, change Production `CLOUD_TTS_ENABLED` from
    `"0"` to `"1"` in `wrangler.toml` and deploy. Preview stays `"1"`.

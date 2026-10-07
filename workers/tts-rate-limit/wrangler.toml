@@ -1,0 +1,14 @@
+name = "god4-tts-rate-limit"
+main = "worker.js"
+compatibility_date = "2026-10-07"
+workers_dev = false
+preview_urls = false
+
+# Reserved for Neural2 synthesis; unused elsewhere in this repository.
+[[ratelimits]]
+name = "TTS_RATE_LIMIT"
+namespace_id = "74001"
+
+[ratelimits.simple]
+limit = 20
+period = 10
