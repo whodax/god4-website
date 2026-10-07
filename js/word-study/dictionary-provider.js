@@ -141,6 +141,11 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
       return unavailable(context, 'malformed');
     }
 
+    var selection = typeof WordStudySenseSelector === 'undefined' ? {
+      selectedIndex:0, confidence:0, reasons:['selector-unavailable'], ambiguous:definitions.length > 1
+    } : WordStudySenseSelector.select(definitions, Object.assign({}, context, {matchedHeadword:entry.word}));
+    var selectedDefinition = definitions[selection.selectedIndex];
+
     var relatedWords = Array.isArray(entry.relatedWords)
       ? entry.relatedWords
           .filter(function(word){
@@ -152,9 +157,10 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
     return {
       status: 'available',
       word: context.displayWord,
-      definition: definitions[0].text,
-      partOfSpeech: definitions[0].partOfSpeech,
+      definition: selectedDefinition.text,
+      partOfSpeech: selectedDefinition.partOfSpeech,
       definitions: definitions,
+      senseSelection: selection,
       relatedWords: relatedWords,
       source: 'Webster’s Unabridged Dictionary and Moby Thesaurus II'
     };
