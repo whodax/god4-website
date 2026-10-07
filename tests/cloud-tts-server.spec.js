@@ -18,7 +18,12 @@ test.beforeAll(async () => {
 });
 
 function harness(options = {}){
-  const calls = [], tasks = [], stored = new Map();
+  const calls = [], tasks = [], stored = new Map(), limiterCalls = [];
+  const limiter = {async fetch(url, request){
+    limiterCalls.push({url, request, googleCalls:calls.length});
+    if(options.limiterThrows) throw new Error('private limiter details');
+    return new Response(null, {status:options.limiterStatus || 204});
+  }};
   let clock = 1800000000000;
   const crypto = {subtle:Object.fromEntries(['digest', 'importKey', 'sign'].map(method => [method, (...args) => {
     if(options.cryptoFailure === method) return Promise.reject(new Error('sensitive-crypto-exception-sentinel'));
@@ -100,8 +105,11 @@ function harness(options = {}){
   async function run(body = {text:'In the beginning.', voice:'male', rate:1}, overrides = {}){
     const env = overrides.env || {CLOUD_TTS_ENABLED:'1', GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(
       options.badPem ? {...account, private_key:'-----BEGIN PRIVATE KEY-----\n!!!\n-----END PRIVATE KEY-----'} : account)};
-    const headers = new Headers({'Content-Type':'application/json', Origin:'https://god4.test', ...overrides.headers});
+    if(!options.missingLimiter) env.TTS_RATE_LIMITER = limiter;
+    const headers = new Headers({'Content-Type':'application/json', Origin:'https://god4.test',
+      'CF-Connecting-IP':'192.0.2.1', ...overrides.headers});
     if(overrides.noOrigin) headers.delete('Origin');
+    if(overrides.noIp) headers.delete('CF-Connecting-IP');
     const request = new Request('https://god4.test/api/tts' + (overrides.query || ''), {method:overrides.method || 'POST',
       headers,
       ...(overrides.method === 'GET' || overrides.method === 'HEAD' ? {} : {body:overrides.raw ?? JSON.stringify(body)})});
@@ -109,7 +117,7 @@ function harness(options = {}){
     await Promise.all(tasks);
     return response;
   }
-  return {run, calls, stored, fetch:injectedFetch, advance:ms => {clock += ms;}};
+  return {run, calls, stored, limiterCalls, fetch:injectedFetch, advance:ms => {clock += ms;}};
 }
 
 test('production fetch is not read at initialization and is resolved directly for each subrequest', async () => {
@@ -260,6 +268,7 @@ test('identical requests hit the edge cache; text, profile and speed never colli
   expect(hit.headers.get('Cache-Control')).toBe('no-store');
   expect([...h.stored.keys()]).toEqual([originalKey]);
   expect(h.calls).toHaveLength(2);
+  expect(h.limiterCalls).toHaveLength(1);
   for(const body of [{text:'Different text.', voice:'male', rate:1},
     {text:'In the beginning.', voice:'female', rate:1}, {text:'In the beginning.', voice:'male', rate:1.5}]) await h.run(body);
   expect(h.stored.size).toBe(4);
@@ -344,6 +353,7 @@ test('exact browser Origin is required and Sec-Fetch-Site permits only same-orig
     expect(response.headers.has('Access-Control-Allow-Origin')).toBe(false);
   }
   expect(h.calls).toHaveLength(0);
+  expect(h.limiterCalls).toHaveLength(0);
   expect((await h.run(undefined, {headers:{'Sec-Fetch-Site':'same-origin'}})).status).toBe(200);
   expect((await h.run()).status).toBe(200);
 });
@@ -380,6 +390,7 @@ for(const [label, body, status] of [
     expect((await h.run(body)).status).toBe(status);
     expect(h.calls).toHaveLength(0);
     expect(h.stored.size).toBe(0);
+    expect(h.limiterCalls).toHaveLength(0);
   });
 }
 
@@ -425,3 +436,103 @@ for(const failure of ['cacheFailure', 'putFailure', 'syncPutFailure']){
     expect((await harness({[failure]:true}).run()).status).toBe(200);
   });
 }
+
+test('uncached synthesis invokes the private limiter exactly once before any Google request', async () => {
+  const h = harness();
+  expect((await h.run()).status).toBe(200);
+  expect(h.limiterCalls).toHaveLength(1);
+  const call = h.limiterCalls[0];
+  expect(call.googleCalls).toBe(0);
+  expect(call.url).toBe('https://tts-rate-limit.internal/check');
+  expect(call.request).toEqual({method:'POST', headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({key:'192.0.2.1'}), redirect:'manual'});
+  expect(h.calls).toHaveLength(2);
+});
+
+test('denied synthesis is generic 429, retryable and never contacts Google or caches audio', async () => {
+  const h = harness({limiterStatus:429});
+  for(let attempt = 0; attempt < 2; attempt++){
+    const response = await h.run();
+    expect(response.status).toBe(429);
+    expect(response.headers.get('Content-Type')).toContain('application/json');
+    expect(response.headers.get('Cache-Control')).toBe('no-store');
+    expect(response.headers.get('Retry-After')).toBe('10');
+    expect(await response.json()).toEqual({error:'Cloud speech is temporarily unavailable.'});
+  }
+  expect(h.limiterCalls).toHaveLength(2);
+  expect(h.calls).toHaveLength(0);
+  expect(h.stored.size).toBe(0);
+});
+
+for(const [label, options] of [
+  ['missing service binding', {missingLimiter:true}], ['binding exception', {limiterThrows:true}],
+  ['internal failure', {limiterStatus:503}], ['unexpected success', {limiterStatus:200}],
+  ['redirect', {limiterStatus:302}]
+]){
+  test(`limiter ${label} fails closed with generic 503 before Google`, async () => {
+    const h = harness(options);
+    const response = await h.run();
+    expect(response.status).toBe(503);
+    expect(response.headers.get('Cache-Control')).toBe('no-store');
+    expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
+    expect(h.calls).toHaveLength(0);
+    expect(h.stored.size).toBe(0);
+  });
+}
+
+test('missing trusted edge IP fails closed and custom/forwarded headers cannot substitute', async () => {
+  const h = harness();
+  for(const overrides of [{noIp:true}, {noIp:true, headers:{'X-Client-IP':'192.0.2.3',
+    'X-Forwarded-For':'192.0.2.4'}}, {headers:{'CF-Connecting-IP':''}},
+    {headers:{'CF-Connecting-IP':'not-an-ip'}}]){
+    const response = await h.run(undefined, overrides);
+    expect(response.status).toBe(503);
+    expect(await response.json()).toEqual({error:'Cloud speech is unavailable.'});
+  }
+  expect(h.limiterCalls).toHaveLength(0);
+  expect(h.calls).toHaveLength(0);
+});
+
+test('edge-derived IPs are distinct keys and no verse, token or credential is sent to the limiter', async () => {
+  const h = harness({limiterStatus:429});
+  for(const ip of ['192.0.2.1','192.0.2.2','2001:db8::1']){
+    await h.run(undefined, {headers:{'CF-Connecting-IP':ip, 'X-Client-IP':'203.0.113.1'}});
+  }
+  expect(h.limiterCalls.map(call => JSON.parse(call.request.body))).toEqual([
+    {key:'192.0.2.1'}, {key:'192.0.2.2'}, {key:'2001:db8::1'}
+  ]);
+});
+
+test('validated cache hit bypasses the limiter even without IP; invalid cached MP3 must obtain permission', async () => {
+  const h = harness();
+  await h.run();
+  const hit = await h.run(undefined, {noIp:true});
+  expect(hit.status).toBe(200);
+  expect(hit.headers.get('Cache-Control')).toBe('no-store');
+  expect(h.limiterCalls).toHaveLength(1);
+  expect(h.calls).toHaveLength(2);
+  h.stored.set([...h.stored.keys()][0], new Response('invalid audio', {headers:{'Content-Type':'audio/mpeg'}}));
+  const response = await h.run(undefined, {noIp:true});
+  expect(response.status).toBe(503);
+  expect(h.limiterCalls).toHaveLength(1);
+  expect(h.calls).toHaveLength(2);
+});
+
+test('malformed JSON and disabled backend return before limiter evaluation', async () => {
+  const h = harness();
+  expect((await h.run(undefined, {raw:'{broken'})).status).toBe(400);
+  expect((await h.run(undefined, {env:{CLOUD_TTS_ENABLED:'0',
+    GOOGLE_TTS_SERVICE_ACCOUNT:JSON.stringify(account)}})).status).toBe(503);
+  expect(h.limiterCalls).toHaveLength(0);
+  expect(h.calls).toHaveLength(0);
+});
+
+test('Pages configuration preserves preview/production flags and binds only the private Worker', () => {
+  const config = fs.readFileSync(path.join(__dirname, '../wrangler.toml'), 'utf8').replace(/\r\n/g, '\n');
+  expect(config).toMatch(/\[env.preview.vars\]\s+CLOUD_TTS_ENABLED = "1"/);
+  expect(config).toMatch(/\[env.production.vars\]\s+CLOUD_TTS_ENABLED = "0"/);
+  for(const name of ['preview','production']){
+    expect(config).toContain(`[[env.${name}.services]]\nbinding = "TTS_RATE_LIMITER"\nservice = "god4-tts-rate-limit"`);
+  }
+  expect(config).not.toContain('[[ratelimits]]');
+});

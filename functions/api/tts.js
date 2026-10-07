@@ -196,6 +196,22 @@ export function createTtsHandler(runtime = {}){
           }
         }catch(failure){ /* Invalid/unreadable cached audio is a miss and can be replaced. */ }
       }
+      // Only uncached synthesis consumes a token. Never substitute a shared/global IP key.
+      const clientIp = request.headers.get('CF-Connecting-IP');
+      if(!clientIp || clientIp.length > 45 || !/^[0-9a-f:.]+$/i.test(clientIp) || !/[.:]/.test(clientIp)){
+        return error(503, 'Cloud speech is unavailable.');
+      }
+      let limitResponse;
+      try{
+        limitResponse = await env.TTS_RATE_LIMITER.fetch('https://tts-rate-limit.internal/check', {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({key:clientIp}), redirect:'manual'
+        });
+      }catch(failure){ return error(503, 'Cloud speech is unavailable.'); }
+      if(limitResponse.status === 429){
+        return error(429, 'Cloud speech is temporarily unavailable.', {'Retry-After':'10'});
+      }
+      if(limitResponse.status !== 204) return error(503, 'Cloud speech is unavailable.');
       const token = await accessToken(account, env.GOOGLE_TTS_SERVICE_ACCOUNT);
       const synthesisOptions = buildRequest(() => ({method:'POST', headers:{
         Authorization:'Bearer ' + token, 'Content-Type':'application/json', 'x-goog-user-project':account.project_id
