@@ -1,6 +1,6 @@
 # Google Neural2 Reader — production review, opt-in
 
-This branch starts from production `cbcfa10`. Cloud speech is opt-in at
+The controlled-rollout work starts from merged PR #73 on `main`. Cloud speech is opt-in at
 `https://<host>/?cloud-tts=1`; ordinary URLs retain the production speech path and
 controls. No new UI, accounts, dependencies, or per-verse buttons are introduced.
 
@@ -31,8 +31,8 @@ fallback. Cloud speech is not the default and final production approval is pendi
    | `GOOGLE_TTS_SERVICE_ACCOUNT` | Encrypted secret | Complete service-account JSON, including `client_email`, `private_key`, `project_id`, and `type` |
    | `CLOUD_TTS_ENABLED` | Variable (or encrypted secret) | Exactly `1` enables the endpoint; omitted/any other value disables it |
 
-   Keep Preview enabled for testing. Recommend disabling Production until final
-   production approval (see configuration review below). Redeploy after changing runtime
+   Keep Preview enabled for testing and Production disabled until explicit
+   production approval (see rollout prerequisites below). Redeploy after changing runtime
    bindings. Deploy through Pages Git integration or Wrangler with Functions
    support; a static-only server/dashboard direct upload cannot run this Function.
    No Node compatibility flag, Google SDK, R2, or other storage binding is needed.
@@ -55,12 +55,11 @@ All provider/runtime/crypto/decode failures return only HTTP 502 with
 Temporary configuration and provider diagnostic endpoints have been removed;
 query parameters cannot reveal configuration, stages, provider statuses or errors.
 
-## Configuration review before merge
+## Configuration safety
 
-The downloaded `wrangler.toml` currently sets `CLOUD_TTS_ENABLED="1"` for both
-Preview and Production. This hardening commit deliberately leaves those values
-unchanged. Recommendation: keep Preview at `1`, obtain explicit approval to set
-Production to `0` before merge, and enable it only with final production approval.
+`wrangler.toml` sets Preview `CLOUD_TTS_ENABLED="1"` and Production
+`CLOUD_TTS_ENABLED="0"`. This cost-control change preserves both values.
+Production activation requires a separate explicit approval and configuration change.
 The browser query flag is an opt-in playback feature, not an endpoint cost guard.
 An enabled production endpoint still accepts direct clients that forge Origin.
 
@@ -113,11 +112,13 @@ chapter prefetch; verse-by-verse network latency may introduce audible gaps.
 ## Caching, limits, and disabling
 
 The server's named Cache API cache `god4-neural2-tts-v1` stores successful audio
-for up to 24 hours with immutable cache headers. SHA-256 keys include exact text,
+for up to 30 days (2,592,000 seconds). Only the internal cached copy has
+`Cache-Control: public, max-age=2592000, immutable`. SHA-256 keys include exact text,
 semantic profile, mapped Google voice, rate, API/audio configuration version and
 Google project. Male/Female and speed outputs cannot collide. Cache failures do
-not block synthesis. Cache availability/hits vary by Cloudflare environment and
-data center; preview caches may be unavailable. This is not durable storage or a
+not block synthesis. Cache API entries are local to the servicing data center
+and do not automatically replicate globally; preview caches may be unavailable.
+This cache does not globally deduplicate Google synthesis. It is not durable storage or a
 guarantee of one billable synthesis per unique verse. Browser responses use
 `Cache-Control: no-store`, and provider errors are never cached. Cache keys expose
 no plaintext verse or service-account credentials. Decoded audio must contain
@@ -126,11 +127,20 @@ empty, non-MP3 and truncated output is rejected. Cached audio receives the same
 structural check, so invalid older entries become misses and can be replaced.
 This check is not a full audio decoder; browser decoding remains the final guard.
 
-In plain English: a cache hit avoids another Google synthesis request. The first
+In plain English: a local edge cache hit avoids another Google synthesis request. The first
 uncached combination invokes Google. Changing text, Male/Female voice, speed or
 TTS configuration creates a different entry. Eviction, expiry, another data center
 or an unavailable cache can cause the same combination to be synthesized again.
 Failed requests are not cached and remain retryable.
+
+The cache name and configuration version stay unchanged: retention does not change
+the audio format, voice mapping, synthesis configuration, or key inputs. Existing
+24-hour entries can be reused until their original expiry; subsequent successful
+cache writes use 30 days. A future audio/configuration change must version its key
+inputs to invalidate old output. Longer retention improves reuse and may reduce
+cost, but eviction can occur before expiry and no savings or retention are guaranteed.
+4xx/5xx, malformed provider output, invalid MP3, disabled-backend and local-fallback
+responses are never stored as generated audio. Disabled checks precede cache reads.
 
 Requests accept POST JSON only, at most 32 KiB of JSON and 4,000 UTF-8 bytes of
 nonblank text. Only `text`, `voice`, and discrete Reader `rate` values are accepted;
@@ -147,6 +157,68 @@ reduce casual cross-site browser abuse but do not cap cost. Use low Google quota
 and budget alerts and, if required for a wider test,
 an administrator-configured Cloudflare rule on `/api/tts`. No unbounded in-memory
 IP limiter or new account/billing feature is part of this POC.
+
+## Proposed production rate-limit rule
+
+Design only: no Cloudflare rule is created or modified by this change. Immediately
+before production activation, create this zone-level rule for GOD4.us:
+
+| Setting | Exact value |
+| --- | --- |
+| Rule name | GOD4 TTS API rate limit |
+| Match | URI Path equals `/api/tts` |
+| Expression | `(http.request.uri.path eq "/api/tts")` |
+| Counting characteristic | IP address (`ip.src`) |
+| Threshold | 20 requests per 10 seconds per IP |
+| Action | Block (`block`) |
+| Mitigation duration | 10 seconds (`mitigation_timeout: 10`) |
+
+Cloudflare's current Free-plan documentation supports Path expressions, IP
+counting, a 10-second counting period and a 10-second mitigation period. Ten seconds
+is the documented shortest Free-plan block duration; confirm the selectable value
+in the dashboard at setup time. Free provides one rule, so confirm that slot is
+available. This path-only rule counts all matching methods and queries, including
+requests served from the Function's internal audio cache. It does not require body
+inspection, custom headers, identity, CAPTCHA, Turnstile, KV, Durable Objects or paid
+third-party infrastructure. In API configuration, characteristics are
+`["cf.colo.id", "ip.src"]`; data center ID is mandatory and implicitly included in
+the dashboard, and is not part of the match expression. Use `period: 10` and
+`requests_per_period: 20`; no custom counting expression or cache exclusion.
+
+Reader requests are sequential, so ordinary verse progression should remain well
+below this initial burst threshold. Twenty requests allows reasonable voice/speed
+interaction while making high-rate scripted abuse harder. Validate it with real
+usage before changing the threshold. Users sharing a public IP/NAT share the
+allowance. Counters are local to each data center rather than globally shared;
+enforcement can lag by a few seconds and excess requests can reach the endpoint.
+Distributed clients can still generate substantial traffic. This is not a hard
+billing ceiling, and budget alerts also do not stop spending.
+
+Confirm the rule applies to the production custom-domain endpoint before enabling
+cloud speech. A zone rule must not be assumed to protect the separate `pages.dev`
+hostnames; verify alternate-host exposure during rollout. Preview remains enabled
+for controlled testing and is not evidence of production rule enforcement.
+
+Sources (reviewed October 7, 2026):
+[Free-plan capabilities and enforcement delay](https://developers.cloudflare.com/waf/rate-limiting-rules/),
+[rule parameters](https://developers.cloudflare.com/waf/rate-limiting-rules/parameters/),
+[per-data-center counters](https://developers.cloudflare.com/waf/rate-limiting-rules/request-rate/),
+[Cache API locality](https://developers.cloudflare.com/workers/runtime-apis/cache/).
+
+## Production rollout prerequisites and emergency response
+
+1. Merge the 30-day cache change after review.
+2. Create and verify the proposed Cloudflare rate-limit rule and its endpoint coverage.
+3. Configure Google Cloud budget alerts.
+4. With separate explicit approval, change Production `CLOUD_TTS_ENABLED` from
+   `"0"` to `"1"` in `wrangler.toml` and deploy. Preview stays `"1"`.
+5. Keep Neural2 opt-in through `?cloud-tts=1` for the initial live rollout.
+6. Smoke-test production voices, continuous reading, Stop, fallback and rate limiting.
+7. Observe Google usage and costs before considering default enablement.
+
+For an emergency rollback, set Production `CLOUD_TTS_ENABLED` back to `"0"` and
+redeploy. This disables cloud synthesis and cached cloud audio; browser
+SpeechSynthesis continues functioning. No production activation occurs in this task.
 
 The service worker bypasses `/api/tts`; audio is never precached or put in GOD4
 browser shell/translation caches. This hardening bumps the shell exactly once from
