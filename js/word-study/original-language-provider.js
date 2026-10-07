@@ -116,7 +116,7 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
 
   function fixtureLookup(context){
     var term = typeof WordStudyProvider !== 'undefined' ? WordStudyProvider.normalizeLookupTerm(context.lookupTerm) : String(context.lookupTerm || '').toLowerCase();
-    var entry = fixtureEntries[term];
+    var entry = Object.prototype.hasOwnProperty.call(fixtureEntries, term) ? fixtureEntries[term] : null;
     return entry ? {
       status: 'available',
       word: context.displayWord,
