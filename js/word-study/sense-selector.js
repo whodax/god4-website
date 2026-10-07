@@ -18,7 +18,10 @@ var WordStudySenseSelector = (function createWordStudySenseSelector(){
   function coreText(text){
     // Score the opening definition, not accumulated quotations/compound examples.
     var unquoted = text.replace(/"[^"]*"|\u201c[^\u201d]*\u201d/g, ' ');
-    var sentence = unquoted.match(/^.*?(?:[.!?](?=\s+[A-Z])|$)/);
+    // Webster's explicitly introduced examples are not definition evidence.
+    // Keep ordinary uses of "as" within the definition; only trim marked clauses.
+    var meaning = unquoted.split(/[;:]\s*(?:as\b|e\.g\.|for example\b)/i)[0];
+    var sentence = meaning.match(/^.*?(?:[.!?](?=\s+[A-Z])|$)/);
     return (sentence ? sentence[0] : unquoted).slice(0, 420);
   }
   function select(definitions, context){
@@ -47,7 +50,8 @@ var WordStudySenseSelector = (function createWordStudySenseSelector(){
       var artifact = !/[A-Za-z]/.test(text) || /^(?:pl\.|sing\.|n\.|v\.(?:\s*[it]\.)?|a\.|adv\.)\s*$/i.test(text.trim());
       if(artifact){ score -= 6; reasons.push('definition-artifact:-6'); }
       if(/^\s*[,;:)\]]/.test(text)){ score -= 3; reasons.push('continuation-fragment:-3'); }
-      if(/\[\s*(?:obs\.?|archaic)\s*\]|\bobs\.|\b(?:obsolete|archaic)\b/i.test(text)){
+      var obsolete = /\[\s*(?:obs\.?|archaic)\s*\]|\bobs\.|\b(?:obsolete|archaic)\b/i.test(text);
+      if(obsolete){
         score -= 1.5; reasons.push('obsolete-label:-1.5');
       }
       var compound = text.length > 1000 && /--|\([A-Za-z]+\.\)/.test(text);
@@ -60,25 +64,43 @@ var WordStudySenseSelector = (function createWordStudySenseSelector(){
       var overlapScore = Math.min(2, overlap) * 1.25;
       if(overlapScore){ score += overlapScore; evidence += overlapScore; reasons.push('context-overlap:+' + overlapScore); }
       // Only explicit human-role language in the opening definition supports this relation.
-      if(namedRole && /\b(?:person|individual|someone|ruler|sovereign|monarch|prince|officer|leader|owner|teacher|captain|messenger|inhabitant)\b/i.test(core) &&
-          (!definition.partOfSpeech || definition.partOfSpeech === 'noun')){
+      var roleEvidence = namedRole && /\b(?:person|individual|someone|ruler|sovereign|monarch|prince|officer|leader|owner|teacher|captain|messenger|inhabitant)\b/i.test(core) &&
+        (!definition.partOfSpeech || definition.partOfSpeech === 'noun');
+      if(roleEvidence){
         score += 3; evidence += 3; reasons.push('named-role-context:+3');
       }
-      if(capitalized && definition && definition.partOfSpeech === 'noun' && /\b[A-Z][a-z]+\s+[A-Z][a-z]+\b/.test(core)){
+      var titleEvidence = capitalized && definition && definition.partOfSpeech === 'noun' && /\b[A-Z][a-z]+\s+[A-Z][a-z]+\b/.test(core);
+      if(titleEvidence){
         score += 0.25; evidence += 0.25; reasons.push('capitalization:+0.25');
       }
-      return {index:index, score:score, evidence:evidence, reasons:reasons, artifact:artifact, compound:compound};
+      var pos = definition && definition.partOfSpeech;
+      var meaningfulPos = /^(?:noun|verb|adjective|adverb|pronoun|preposition|conjunction|interjection)$/.test(pos) ? pos : '';
+      return {index:index, score:score, evidence:evidence, reasons:reasons, artifact:artifact, compound:compound,
+        obsolete:obsolete, roleEvidence:roleEvidence, titleEvidence:!!titleEvidence, pos:meaningfulPos};
     }).sort(function(left, right){ return right.score - left.score || left.index - right.index; });
     var top = ranked[0];
     var margin = ranked.length > 1 ? top.score - ranked[1].score : Infinity;
     var original = ranked.find(function(candidate){ return candidate.index === 0; });
+    // Shared words can describe an unrelated sense. Require an existing,
+    // independent signal before they may displace the original candidate.
+    var corroborated = top.roleEvidence || top.titleEvidence || original.artifact ||
+      (original.obsolete && top.evidence > 0);
+    // Do not infer English grammar. Only an explicit role construction or a
+    // capitalized noun title replacing an obsolete sense supports a POS change.
+    var posChange = original.pos && top.pos && original.pos !== top.pos;
+    var posSupported = !posChange || original.artifact || top.roleEvidence ||
+      (original.obsolete && top.titleEvidence);
+    var promotionSupported = top.index === 0 || (corroborated && posSupported);
     var clear = margin >= minimumMargin && !top.artifact && !top.compound &&
-      (top.evidence >= minimumEvidence || original.artifact || ranked.length === 1);
+      (top.evidence >= minimumEvidence || original.artifact || ranked.length === 1) && promotionSupported;
     var selected = clear ? top : original;
     // A grammar marker is not a usable definition; choose the earliest best substantive candidate.
     if(original.artifact && !top.artifact) selected = top;
     var ambiguous = !clear;
     var reasons = selected.reasons.slice();
+    if(top.index !== 0 && !corroborated) reasons.push('promotion-without-corroboration');
+    if(top.index !== 0 && !posSupported) reasons.push('unsupported-part-of-speech-change');
+    if(selected.index !== 0 && corroborated) reasons.push('promotion-corroborated');
     if(ambiguous){ reasons.push('insufficient-margin-or-evidence', 'ambiguity-exposed'); }
     if(selected.index === 0) reasons.push('original-order-preserved');
     return {selectedIndex:selected.index, confidence:ambiguous ? 0 : Math.min(1, margin / 3),
