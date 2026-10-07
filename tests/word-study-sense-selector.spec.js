@@ -64,8 +64,8 @@ for(const [word, shard, book, chapter, index, ambiguous] of [
   });
 }
 
-test('Word Study same spelling changes sense with local context and supports blank POS', () => {
-  const definitions = [{text:'A building where money and coins are stored.',partOfSpeech:''},
+test('Word Study corroborated same spelling ranking supports blank POS', () => {
+  const definitions = [{text:'A building where money and coins are stored. [Obs.]',partOfSpeech:''},
     {text:'A strip of soil bordering flowing water.',partOfSpeech:''}];
   expect(pure(definitions,{lookupTerm:'bank',displayWord:'bank',verseText:'The bank received money and coins.'}).selectedIndex).toBe(0);
   const other = pure(definitions,{lookupTerm:'bank',displayWord:'bank',verseText:'The bank borders flowing water.'});
@@ -104,12 +104,91 @@ test('Word Study capitalization alone cannot confidently promote a sense', () =>
 
 test('Word Study quotations and long compound blobs cannot dominate overlap', () => {
   const verseText = 'The tool worked soil beside flowing water.';
-  const result = pure([{text:'A decorative object. "' + verseText.repeat(40) + '"',partOfSpeech:'noun'},
+  const result = pure([{text:'A decorative object. [Obs.] "' + verseText.repeat(40) + '"',partOfSpeech:'noun'},
     {text:'A device for working soil.',partOfSpeech:'noun'}],{lookupTerm:'tool',displayWord:'tool',verseText});
   expect(result).toMatchObject({selectedIndex:1,ambiguous:false});
   const blob = 'A brief remark. -- ' + verseText.repeat(50);
   expect(pure([{text:'A spoken expression.',partOfSpeech:'noun'},{text:blob,partOfSpeech:'noun'}],
     {lookupTerm:'tool',displayWord:'tool',verseText})).toMatchObject({selectedIndex:0,ambiguous:true});
+});
+
+for(const [translation, file, variable, word, shard, book, chapter, verse] of [
+  ['WEB','web.js','webLibrary','delight','del','isaiah',11,3],
+  ['ASV','asv.js','asvLibrary','delight','del','isaiah',11,3],
+  ['KJV','kjv.js','kjvLibrary','mortify','mo','romans',8,13]
+]){
+  test(`Word Study blocks unsupported real ${translation} ${word} promotion`, async () => {
+    const library = loadBibleLibrary(file, variable);
+    const context = {translationId:translation.toLowerCase(), bookId:book, chapter, verse,
+      displayWord:word, lookupTerm:word, verseText:library[book][chapter].verses[verse - 1]};
+    const candidates = entry(word, shard).definitions;
+    const before = JSON.stringify(candidates);
+    const selected = pure(candidates, context);
+    expect(selected).toMatchObject({selectedIndex:0,ambiguous:true,confidence:0});
+    if(word === 'mortify') expect(selected.reasons).toContain('promotion-without-corroboration');
+    const current = runtime(), previous = runtime(false);
+    const result = await current.realm.WordStudyProvider.lookup(context);
+    const original = await previous.realm.WordStudyProvider.lookup(context);
+    expect(result.definition).toBe(candidates[0].text);
+    expect(result.senseSelection).toEqual(selected);
+    expect(result.definitions).toEqual(original.definitions);
+    expect(result.relatedWords).toEqual(original.relatedWords);
+    expect(result.partOfSpeech).toBe(candidates[0].partOfSpeech);
+    expect(JSON.stringify(candidates)).toBe(before);
+  });
+}
+
+test('Word Study overlap alone cannot promote with matching or absent POS', () => {
+  for(const partOfSpeech of ['noun','']){
+    const result = pure([{text:'A decorative container.',partOfSpeech},
+      {text:'A strip of soil beside flowing water.',partOfSpeech}],
+      {lookupTerm:'bank',displayWord:'bank',verseText:'The bank borders soil and flowing water.'});
+    expect(result).toMatchObject({selectedIndex:0,ambiguous:true,confidence:0});
+    expect(result.reasons).toContain('promotion-without-corroboration');
+  }
+});
+
+test('Word Study obsolete corroboration cannot authorize an unsupported POS change', () => {
+  const result = pure([{text:'A decorative container. [Obs.]',partOfSpeech:'noun'},
+    {text:'To carry cargo across flowing water.',partOfSpeech:'verb'}],
+    {lookupTerm:'carrier',displayWord:'carrier',verseText:'The carrier brought cargo across flowing water.'});
+  expect(result).toMatchObject({selectedIndex:0,ambiguous:true,confidence:0});
+  expect(result.reasons).toContain('unsupported-part-of-speech-change');
+});
+
+test('Word Study title capitalization cannot displace a meaningful nonobsolete POS', () => {
+  const result = pure([{text:'To observe.',partOfSpeech:'verb'},
+    {text:'The North Star visible in the night sky.',partOfSpeech:'noun'}],
+    {lookupTerm:'object',displayWord:'Object',verseText:'I saw Object in the night sky.'});
+  expect(result).toMatchObject({selectedIndex:0,ambiguous:true,confidence:0});
+  expect(result.reasons).toContain('unsupported-part-of-speech-change');
+});
+
+test('Word Study marked unquoted examples cannot supply overlap despite obsolete corroboration', () => {
+  for(const marker of ['; as,', '; as', ': for example', '; e.g.']){
+    const result = pure([{text:'A container. [Obs.]',partOfSpeech:'noun'},
+      {text:'A pleasant object' + marker + ' the eye sees flowing water and soil.',partOfSpeech:'noun'}],
+      {lookupTerm:'thing',displayWord:'thing',verseText:'The thing borders flowing water and soil.'});
+    expect(result).toMatchObject({selectedIndex:0,ambiguous:true,confidence:0});
+  }
+});
+
+test('Word Study retains as within substantive definition meaning', () => {
+  const result = pure([{text:'An old container. [Obs.]',partOfSpeech:'noun'},
+    {text:'A position as officer responsible for ships and harbor water.',partOfSpeech:'noun'}],
+    {lookupTerm:'warden',displayWord:'warden',verseText:'Marcus warden of Harbor guarded ships near water.'});
+  expect(result).toMatchObject({selectedIndex:1,ambiguous:false});
+  expect(result.reasons).toContain('named-role-context:+3');
+  expect(result.reasons).toContain('promotion-corroborated');
+});
+
+test('Word Study same-POS obsolete ranking requires positive evidence', () => {
+  const definitions = [{text:'A dry grain vessel. [Obs.]',partOfSpeech:'noun'},
+    {text:'A strip of soil beside flowing water.',partOfSpeech:'noun'}];
+  expect(pure(definitions,{lookupTerm:'bank',verseText:'The bank borders soil and flowing water.'}))
+    .toMatchObject({selectedIndex:1,ambiguous:false});
+  expect(pure(definitions,{lookupTerm:'bank',verseText:'The bank was nearby.'}))
+    .toMatchObject({selectedIndex:0,ambiguous:true,confidence:0});
 });
 
 test('Word Study ties and near ties preserve the original index with deterministic ambiguity', () => {
