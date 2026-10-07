@@ -2454,11 +2454,15 @@ test('Word Study original-language provider returns chapter-two verse tokens in 
 test('Word Study renders authoritative Hebrew tokens at verse level', async ({ page }) => {
   await page.evaluate(() => handleVoiceCommand('open Genesis 1'));
   await expect(page.locator('#readerContent')).toContainText('Genesis 1');
+  const shardResponse = page.waitForResponse(response => new URL(response.url()).pathname === '/data/word-study/original-language/genesis/1.json');
   await page.getByRole('button', { name: /Study word/ }).first().click();
+  const response = await shardResponse;
+  expect(response.ok()).toBe(true);
+  const data = await response.json();
   const section = page.locator('#wordStudyOriginalLanguage');
   await expect(section).toBeVisible();
   const tokens = section.locator('.word-study-original-token');
-  const expected = await page.evaluate(() => fetch('data/word-study/original-language/genesis/1.json').then(response => response.json()).then(data => data.records.filter(record => record.verse === 1).sort((left, right) => left.tokenIndex - right.tokenIndex).map(record => record.surface)));
+  const expected = data.records.filter(record => record.verse === 1).sort((left, right) => left.tokenIndex - right.tokenIndex).map(record => record.surface);
   await expect(tokens).toHaveText(expected);
   await expect(section.locator('#wordStudyOriginalTokens')).toHaveAttribute('dir', 'rtl');
   await expect(tokens.first()).toHaveAttribute('lang', 'he');
@@ -3341,6 +3345,7 @@ test('Reader verse navigation persists its destination across reload', async ({ 
 
 test('Reader verse navigation respects the active translation verse count', async ({ page }) => {
   await page.locator('#readerTranslation').selectOption('asv');
+  await ensureTranslation(page, 'asv');
   await page.locator('#bookSelect').selectOption('psalms');
   await page.locator('#chapterSelect').selectOption('3');
 
@@ -3353,6 +3358,7 @@ test('Reader verse navigation respects the active translation verse count', asyn
   await expect(page.locator('[data-reader-action="next-verse"]')).toBeDisabled();
 
   await page.locator('#readerTranslation').selectOption('web');
+  await ensureTranslation(page, 'web');
   await expect(page.locator('#bookSelect')).toHaveValue('psalms');
   await expect(page.locator('#chapterSelect')).toHaveValue('3');
   await expect(page.locator('#verseSelect')).toHaveValue('8');

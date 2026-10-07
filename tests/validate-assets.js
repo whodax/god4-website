@@ -99,7 +99,7 @@ for (const file of javascript) {
   }
 }
 
-for (const relativePath of ['sw.js', 'js/pwa/translation-cache-protocol.js']) {
+for (const relativePath of ['sw.js', 'js/pwa/translation-cache-protocol.js', 'functions/api/tts.js']) {
   try {
     cp.execFileSync(process.execPath, ['--check', path.join(root, relativePath)], { stdio: 'pipe' });
   } catch (error) {
