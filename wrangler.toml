@@ -11,7 +11,7 @@ binding = "TTS_RATE_LIMITER"
 service = "god4-tts-rate-limit"
 
 [env.production.vars]
-CLOUD_TTS_ENABLED = "0"
+CLOUD_TTS_ENABLED = "1"
 
 [[env.production.services]]
 binding = "TTS_RATE_LIMITER"

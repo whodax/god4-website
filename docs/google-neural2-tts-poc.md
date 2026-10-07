@@ -1,4 +1,4 @@
-# Google Neural2 Reader — production review, opt-in
+# Google Neural2 Reader — production opt-in
 
 The controlled-rollout work starts from merged PR #73 on `main`. Cloud speech is opt-in at
 `https://<host>/?cloud-tts=1`; ordinary URLs retain the production speech path and
@@ -6,7 +6,9 @@ controls. No new UI, accounts, dependencies, or per-verse buttons are introduced
 
 Architecture: **Reader → same-origin POST `/api/tts` → Google Cloud Text-to-Speech
 → MP3 → Reader Web Audio playback**. Browser SpeechSynthesis remains the local
-fallback. Cloud speech is not the default and final production approval is pending.
+fallback and the default for ordinary visitors. This branch enables the production
+backend in configuration for the approved opt-in rollout; deployment is still required.
+Only Reader URLs with `?cloud-tts=1` select Neural2. This task does not deploy anything.
 
 ## Administrator setup
 
@@ -31,8 +33,8 @@ fallback. Cloud speech is not the default and final production approval is pendi
    | `GOOGLE_TTS_SERVICE_ACCOUNT` | Encrypted secret | Complete service-account JSON, including `client_email`, `private_key`, `project_id`, and `type` |
    | `CLOUD_TTS_ENABLED` | Variable (or encrypted secret) | Exactly `1` enables the endpoint; omitted/any other value disables it |
 
-   Keep Preview enabled for testing and Production disabled until explicit
-   production approval (see rollout prerequisites below). Redeploy after changing runtime
+   Preview and Production are enabled in the checked-in configuration for the
+   approved opt-in rollout (see deployment steps below). Redeploy after changing runtime
    bindings. Deploy through Pages Git integration or Wrangler with Functions
    support; a static-only server/dashboard direct upload cannot run this Function.
    No Node compatibility flag, Google SDK or R2 binding is needed. The separate
@@ -58,9 +60,17 @@ query parameters cannot reveal configuration, stages, provider statuses or error
 
 ## Configuration safety
 
-`wrangler.toml` sets Preview `CLOUD_TTS_ENABLED="1"` and Production
-`CLOUD_TTS_ENABLED="0"`. This cost-control change preserves both values.
-Production activation requires a separate explicit approval and configuration change.
+`wrangler.toml` sets both Preview and Production `CLOUD_TTS_ENABLED="1"`.
+The production backend becomes enabled when this configuration is deployed.
+`https://god4.us/` retains browser SpeechSynthesis;
+`https://god4.us/?cloud-tts=1` opts into Neural2 with browser fallback.
+This change does not make Neural2 the default or independently verify a live deployment.
+The 30-day validated-MP3 cache and deployed private Worker limiter remain active
+controls; their implementation and configuration are unchanged.
+
+The owner confirms Google Cloud budget **GOD4 Neural2 TTS** is configured at
+**$20/month**, with alerts at **$5, $10 and $20**. Budget alerts do not cap spending,
+and no Google billing settings or secrets are modified here.
 The browser query flag is an opt-in playback feature, not an endpoint cost guard.
 An enabled production endpoint still accepts direct clients that forge Origin.
 
@@ -217,11 +227,12 @@ No Google credentials, synthesis, audio cache, external service or library lives
 in this Worker. Do not add a public route. A Service Binding is a private internal
 invocation rather than an Internet fetch.
 
-Both explicit Pages environment service bindings target the same Worker. Preview
-remains `CLOUD_TTS_ENABLED="1"`; Production remains `"0"`. When production is later
-enabled, preview and production visitors with the same IP at the same location
-share the allowance. Keep preview testing controlled. Disabled production rejects
-before limiter evaluation. Fail-closed favors cost protection over cloud uptime;
+Both explicit Pages environment service bindings target the same deployed Worker.
+Preview and Production are configured with `CLOUD_TTS_ENABLED="1"`. After this
+production configuration is deployed, preview and production visitors with the
+same IP at the same location share the allowance. Keep preview testing controlled.
+Setting production back to `"0"` rejects before cache reads or limiter evaluation.
+Fail-closed favors cost protection over cloud uptime;
 local browser speech remains available if cloud limiting or Free quota fails.
 
 Twenty sequential synthesis attempts per ten seconds leaves room for normal verse
@@ -242,21 +253,25 @@ billing-setting change is performed here.
 
 ### Deployment sequence (manual; nothing deployed by this task)
 
-1. Confirm namespace `74001` is account-wide unused and review the private Worker
-   config. Keep the existing WAF rule and Google encrypted secret unchanged.
-2. With explicit deployment approval, run from the repository root:
-   `npx.cmd --no-install wrangler deploy --config workers/tts-rate-limit/wrangler.toml`.
-   Confirm `workers.dev` and version preview URLs remain disabled and no public
-   routes/custom domains exist. Do not deploy Pages before its target Worker exists.
-3. Publish the reviewed branch for a Pages preview through the existing Git
-   integration when authorized. The checked-in `[env.preview]` service configuration
-   binds `TTS_RATE_LIMITER` to that Worker; redeploy is required to apply bindings.
-4. Verify actual preview binding/IP behavior, allowed synthesis, cache-hit bypass,
-   429 fallback, missing-binding failure behavior, and physical Reader smoke tests.
-   Local mocks/dry-run do not verify remote counters or account bindings.
-5. After review/merge, deploy Pages with the production service binding and
-   `CLOUD_TTS_ENABLED="0"`. Deploying the limiter does not enable production TTS.
-6. Complete the production prerequisites below before separate activation.
+The 30-day cache and private limiter are merged. The owner reports the existing
+`god4-tts-rate-limit` Worker is deployed and live preview allowed synthesis,
+returned 429 with `Retry-After: 10` under burst load, and continued Reader playback
+through automatic browser fallback. Do not redeploy the Worker or change its
+namespace, rate, WAF rule, service binding or Google credentials for this rollout.
+
+1. Review this configuration-only production opt-in change and its targeted tests.
+2. When separately authorized, publish the branch and open a PR into `main`.
+   Verify the Pages preview retains `CLOUD_TTS_ENABLED="1"` and its service binding.
+3. After review and authorized merge, let the existing Pages Git integration deploy
+   `main`. Confirm the production deployment uses `CLOUD_TTS_ENABLED="1"`, the
+   existing `TTS_RATE_LIMITER` binding and encrypted Google secret. No secret values
+   need to be inspected or printed.
+4. Smoke-test normal `https://god4.us/` for browser speech and
+   `https://god4.us/?cloud-tts=1` for Male/Female Neural2, continuous reading, Stop,
+   fallback, and rates 2.25/2.5. Verify production trusted-IP/binding behavior and
+   cache/rate-limit safeguards. Local tests do not replace live production validation.
+5. Observe Google usage, budget alerts and Workers Free usage while keeping cloud
+   speech opt-in. Default enablement would require a separate decision/change.
 
 For local integration, run the Worker with
 `npx.cmd --no-install wrangler dev --config workers/tts-rate-limit/wrangler.toml`
@@ -272,21 +287,20 @@ Sources reviewed October 7, 2026:
 [Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/#service-bindings),
 [Pages usage](https://developers.cloudflare.com/pages/functions/pricing/).
 
-## Production rollout prerequisites and emergency response
+## Production rollout status and emergency response
 
-1. Keep the merged 30-day cache and review/merge this private limiter integration.
-2. Deploy the private Worker, apply Pages Service Bindings, and verify limiter
-   enforcement and endpoint/IP coverage; leave the existing WAF rule untouched.
-3. Configure Google Cloud budget alerts.
-4. With separate explicit approval, change Production `CLOUD_TTS_ENABLED` from
-   `"0"` to `"1"` in `wrangler.toml` and deploy. Preview stays `"1"`.
-5. Keep Neural2 opt-in through `?cloud-tts=1` for the initial live rollout.
-6. Smoke-test production voices, continuous reading, Stop, fallback and rate limiting.
-7. Observe Google usage and costs before considering default enablement.
+- The 30-day cache and private limiter integration are merged; the limiter is
+  deployed and preview enforcement/fallback was validated by the owner.
+- Google Cloud budget alerts are configured as recorded above.
+- Production opt-in activation is explicitly approved for this configuration
+  change. Checked-in production enablement is `"1"`; nothing is deployed by this task.
+- Normal visitors remain on browser SpeechSynthesis; Neural2 requires `?cloud-tts=1`.
+- Production deployment, smoke testing and usage observation remain outstanding.
 
-For an emergency rollback, set Production `CLOUD_TTS_ENABLED` back to `"0"` and
-redeploy. This disables cloud synthesis and cached cloud audio; browser
-SpeechSynthesis continues functioning. No production activation occurs in this task.
+Emergency kill switch: set Production `CLOUD_TTS_ENABLED` back to `"0"` in
+`wrangler.toml` and redeploy Pages. This disables cloud synthesis and cached cloud
+MP3 responses; browser SpeechSynthesis remains available. Leave Preview at `"1"`
+unless explicitly deciding to disable preview testing too.
 
 The service worker bypasses `/api/tts`; audio is never precached or put in GOD4
 browser shell/translation caches. This hardening bumps the shell exactly once from

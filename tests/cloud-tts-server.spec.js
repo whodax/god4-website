@@ -1,6 +1,7 @@
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
+const vm = require('node:vm');
 const {generateKeyPairSync, verify, webcrypto} = require('crypto');
 const source = fs.readFileSync(path.join(__dirname, '../functions/api/tts.js'), 'utf8');
 // Synthetic MPEG-1 Layer III frames; no external audio, credentials or provider quota.
@@ -527,12 +528,20 @@ test('malformed JSON and disabled backend return before limiter evaluation', asy
   expect(h.calls).toHaveLength(0);
 });
 
-test('Pages configuration preserves preview/production flags and binds only the private Worker', () => {
+test('Pages enables both environments while the cloud client still requires explicit opt-in', () => {
   const config = fs.readFileSync(path.join(__dirname, '../wrangler.toml'), 'utf8').replace(/\r\n/g, '\n');
   expect(config).toMatch(/\[env.preview.vars\]\s+CLOUD_TTS_ENABLED = "1"/);
-  expect(config).toMatch(/\[env.production.vars\]\s+CLOUD_TTS_ENABLED = "0"/);
+  expect(config).toMatch(/\[env.production.vars\]\s+CLOUD_TTS_ENABLED = "1"/);
   for(const name of ['preview','production']){
     expect(config).toContain(`[[env.${name}.services]]\nbinding = "TTS_RATE_LIMITER"\nservice = "god4-tts-rate-limit"`);
   }
   expect(config).not.toContain('[[ratelimits]]');
+  const clientSource = fs.readFileSync(path.join(__dirname, '../js/bible/cloud-tts.js'), 'utf8');
+  for(const [search, enabled] of [['',false], ['?cloud-tts=0',false], ['?cloud-tts=true',false], ['?cloud-tts=1',true]]){
+    const context = vm.createContext({URLSearchParams, window:{
+      location:{search}, AudioContext(){}, fetch(){}, AbortController
+    }});
+    vm.runInContext(clientSource, context);
+    expect(context.BibleCloudTTS.available()).toBe(enabled);
+  }
 });
