@@ -68,6 +68,16 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
     return context && typeof context.bookId === 'string' && Number.isInteger(context.chapter) && context.chapter > 0 && Number.isInteger(context.verse) && context.verse > 0;
   }
 
+  function resolveOriginalLanguageReference(context){
+    var reference = { bookId: context.bookId, chapter: context.chapter, verse: context.verse };
+    // WEB keeps this doxology at 14:24–26; the reviewed Greek shards use KJV coordinates.
+    if(context.translationId === 'web' && typeof context.bookId === 'string' && context.bookId.toLowerCase() === 'romans' && context.chapter === 14 && Number.isInteger(context.verse) && context.verse >= 24 && context.verse <= 26){
+      reference.chapter = 16;
+      reference.verse = context.verse + 1;
+    }
+    return reference;
+  }
+
   function isStaticRecord(record){
     var optionalText = function(value){ return value === null || typeof value === 'string'; };
     return record && typeof record === 'object' && (record.strongsNumber === null || typeof record.strongsNumber === 'string') && typeof record.status === 'string' && typeof record.language === 'string' && optionalText(record.lemma) && optionalText(record.transliteration) && optionalText(record.pronunciation) && optionalText(record.partOfSpeech) && optionalText(record.definition) && typeof record.morphology === 'string' && typeof record.source === 'string' && typeof record.bookId === 'string' && Number.isInteger(record.chapter) && Number.isInteger(record.verse) && Number.isInteger(record.tokenIndex) && typeof record.surface === 'string';
@@ -91,10 +101,11 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
   }
 
   function staticLookup(context){
-    return loadStaticShard(context).then(function(records){
+    var reference = resolveOriginalLanguageReference(context);
+    return loadStaticShard(reference).then(function(records){
       if(!records) return null;
       return records.find(function(record){
-        return record.bookId === context.bookId.toLowerCase() && record.chapter === context.chapter && record.verse === context.verse && record.tokenIndex === context.tokenIndex;
+        return record.bookId === reference.bookId.toLowerCase() && record.chapter === reference.chapter && record.verse === reference.verse && record.tokenIndex === context.tokenIndex;
       }) || null;
     });
   }
@@ -103,12 +114,13 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
     if(!context || typeof context.bookId !== 'string' || !Number.isInteger(context.chapter) || context.chapter < 1 || !Number.isInteger(context.verse) || context.verse < 1){
       return Promise.resolve({ status: 'unavailable', records: [] });
     }
-    return loadStaticShard(context).then(function(records){
+    var reference = resolveOriginalLanguageReference(context);
+    return loadStaticShard(reference).then(function(records){
       if(!records) return { status: 'unavailable', records: [] };
       return {
         status: 'available',
         records: records.filter(function(record){
-          return record.bookId === context.bookId.toLowerCase() && record.chapter === context.chapter && record.verse === context.verse;
+          return record.bookId === reference.bookId.toLowerCase() && record.chapter === reference.chapter && record.verse === reference.verse;
         }).sort(function(left, right){ return left.tokenIndex - right.tokenIndex; })
       };
     });
@@ -146,5 +158,5 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
     });
   }
 
-  return { lookup: lookup, lookupVerse: lookupVerse };
+  return { lookup: lookup, lookupVerse: lookupVerse, resolveOriginalLanguageReference: resolveOriginalLanguageReference };
 }());
