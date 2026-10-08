@@ -122,7 +122,23 @@ function parseOshb(text, hebrewLexicon, config, chapters) {
   return records;
 }
 
-function parseByzantine(text, greekLexicon, config, chapters) {
+function parseByzantineTokens(text){
+  // One nonnumeric surface followed by one or more complete analysis pairs.
+  // Match the entire running text; detached numbers/tags must never become words.
+  const pattern = /([^\s{}\d,]+)\s+(\d{1,5})\s+\{([A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*)\}((?:\s+\d{1,5}\s+\{[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*\})*)/g;
+  const matches = [...text.matchAll(pattern)];
+  if(text.replace(pattern,'').trim()) throw new TypeError('Malformed Byzantine verse tokens');
+  for(let i=1;i<matches.length;i++) if(matches[i].index === matches[i-1].index + matches[i-1][0].length) throw new TypeError('Missing Byzantine token separator');
+  return matches.map(match => {
+    const primary = {strongsNumber:'G'+Number(match[2]),morphology:match[3]};
+    const analyses = [primary,...[...match[4].matchAll(/(\d{1,5})\s+\{([A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*)\}/g)].map(a => ({strongsNumber:'G'+Number(a[1]),morphology:a[2]}))];
+    const keys = analyses.map(a => a.strongsNumber+':'+a.morphology);
+    if(new Set(keys).size !== keys.length) throw new TypeError('Duplicate Byzantine analysis');
+    return {surface:match[1],analyses};
+  });
+}
+
+function parseByzantine(text, greekLexicon, config, chapters, diagnostics) {
   const records = [];
   const chapterSelection = selectedChapters(chapters);
   text.split(/\r?\n/).forEach((line) => {
@@ -130,12 +146,16 @@ function parseByzantine(text, greekLexicon, config, chapters) {
     const chapter = Number(match && match[1]);
     if(match && config.sourceVerseCounts) mapReference(config, chapter, Number(match[2]));
     if (!match || !chapterSelection.has(chapter)) return;
-    const tokens = [...match[3].matchAll(/([^\s]+)\s+(\d+)\s+\{([^}]+)\}/g)];
-    if(config.sourceVerseCounts && match[3].replace(/([^\s]+)\s+(\d+)\s+\{([^}]+)\}/g, '').trim()) throw new TypeError('Malformed Byzantine verse tokens');
+    const tokens = parseByzantineTokens(match[3]);
     tokens.forEach((token, tokenIndex) => {
-      const strongsNumber = `G${Number(token[2])}`;
+      if(token.analyses.length > 1){
+        if(config.alternateAnalysisPolicy !== 'first-source-analysis' || !diagnostics) throw new TypeError('Alternate analyses require explicit policy and detailed diagnostics');
+        for(const analysis of token.analyses) if(!greekLexicon.has(analysis.strongsNumber)) throw new TypeError('Missing alternate-analysis lexical join');
+        diagnostics.alternateAnalyses.push({sourceBookId:config.sourceBookId,chapter,verse:Number(match[2]),tokenIndex,surface:token.surface,primary:token.analyses[0],alternates:token.analyses.slice(1)});
+      }
+      const strongsNumber = token.analyses[0].strongsNumber;
       const lexical = greekLexicon.get(strongsNumber) || {};
-      records.push({ status: 'authoritative', strongsNumber, language: 'greek', lemma: lexical.lemma || null, transliteration: lexical.transliteration || null, pronunciation: null, partOfSpeech: null, definition: lexical.definition || null, morphology: token[3], source: config.source.attribution, bookId: config.bookId, chapter, verse: Number(match[2]), tokenIndex, surface: token[1] });
+      records.push({ status: 'authoritative', strongsNumber, language: 'greek', lemma: lexical.lemma || null, transliteration: lexical.transliteration || null, pronunciation: null, partOfSpeech: null, definition: lexical.definition || null, morphology: token.analyses[0].morphology, source: config.source.attribution, bookId: config.bookId, chapter, verse: Number(match[2]), tokenIndex, surface: token.surface });
     });
   });
   return records;
@@ -147,7 +167,13 @@ function parseOshbGenesis(text, lexicon, chapters = [1]){
   return parseOshb(text, lexicon, {bookId:'genesis', sourceBookId:'Gen', source:SOURCES.oshb}, chapters);
 }
 function parseByzantineJohn(text, lexicon, chapters = [1]){
-  return parseByzantine(text, lexicon, {bookId:'john', sourceBookId:'John', source:SOURCES.byzantine}, chapters);
+  const diagnostics = {serializationPolicy:'first-source-analysis',alternateAnalyses:[]};
+  const records = parseByzantine(text, lexicon, {bookId:'john', sourceBookId:'John', source:SOURCES.byzantine,alternateAnalysisPolicy:'first-source-analysis'}, chapters, diagnostics);
+  if(diagnostics.alternateAnalyses.length){
+    Object.defineProperty(records,'importDiagnostics',{value:diagnostics});
+    process.emitWarning('Historical Greek extraction has alternate analyses; review records.importDiagnostics. Use detailed APIs for configured generation.');
+  }
+  return records;
 }
 
 function mapSourceRecords(records, config, options = {}){
@@ -180,17 +206,31 @@ function mapSourceRecords(records, config, options = {}){
   return normalized.sort((a, b) => a.chapter - b.chapter || a.verse - b.verse || a.tokenIndex - b.tokenIndex);
 }
 
-function parseConfiguredSource(text, lexicon, config, options = {}){
+function parseConfiguredSourceDetailed(text, lexicon, config, options = {}){
   validateBookConfig(config);
   const chapters = options.chapters == null ? Array.from({length:config.chapterCount}, (_, i) => i + 1) : options.chapters;
   const parser = config.parserStrategy === 'oshb' ? parseOshb : parseByzantine;
-  return mapSourceRecords(parser(text, lexicon, config, chapters), config, {chapters});
+  const diagnostics = {serializationPolicy:config.alternateAnalysisPolicy || null,alternateAnalyses:[]};
+  const records = mapSourceRecords(parser(text, lexicon, config, chapters, diagnostics), config, {chapters});
+  return {records,diagnostics};
+}
+
+function parseConfiguredSource(text, lexicon, config, options = {}){
+  const result = parseConfiguredSourceDetailed(text,lexicon,config,options);
+  if(result.diagnostics.alternateAnalyses.length) throw new TypeError('Use detailed import API to retain alternate-analysis diagnostics');
+  return result.records;
+}
+
+function generateConfiguredSourceDetailed(text, lexicalText, config, options = {}){
+  validateBookConfig(config);
+  const lexicon = config.lexicalJoinStrategy === 'strongs-hebrew-dat' ? parseStrongDat(lexicalText, 'hebrew') : parseStrongGreekXml(lexicalText);
+  return parseConfiguredSourceDetailed(text, lexicon, config, options);
 }
 
 function generateConfiguredSource(text, lexicalText, config, options = {}){
-  validateBookConfig(config);
-  const lexicon = config.lexicalJoinStrategy === 'strongs-hebrew-dat' ? parseStrongDat(lexicalText, 'hebrew') : parseStrongGreekXml(lexicalText);
-  return parseConfiguredSource(text, lexicon, config, options);
+  const result = generateConfiguredSourceDetailed(text,lexicalText,config,options);
+  if(result.diagnostics.alternateAnalyses.length) throw new TypeError('Use detailed import API to retain alternate-analysis diagnostics');
+  return result.records;
 }
 
 function importAuthoritativeSources(genesisFile, johnFile, hebrewFile, greekFile, outputDirectory, options = {}) {
@@ -277,7 +317,8 @@ if (require.main === module) {
     }
     if(!configFile || !flags['--source'] || !flags['--lexicon'] || (!flags.dryRun && !flags['--output'])) throw new TypeError('Configured import requires --source, --lexicon and --output or --dry-run');
     const config = JSON.parse(fs.readFileSync(configFile, 'utf8'));
-    const records = generateConfiguredSource(fs.readFileSync(flags['--source'], 'utf8'), fs.readFileSync(flags['--lexicon'], 'utf8'), config, {chapters:flags['--chapters']});
+    const {records,diagnostics} = generateConfiguredSourceDetailed(fs.readFileSync(flags['--source'], 'utf8'), fs.readFileSync(flags['--lexicon'], 'utf8'), config, {chapters:flags['--chapters']});
+    if(diagnostics.alternateAnalyses.length) console.log('Import diagnostics: '+JSON.stringify(diagnostics));
     if(!flags.dryRun) writeStaticData(records, path.resolve(flags['--output']));
     console.log((flags.dryRun ? 'Validated dry-run: ' : 'Imported: ') + records.length + ' original-language records.');
   }else if (sourceFile === '--authoritative') {
@@ -306,4 +347,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { SCHEMA_FIELDS, normalizeRecord, normalizeRecords, writeStaticData, importOriginalLanguage, parseStrongDat, parseStrongGreekXml, parseOshbGenesis, parseByzantineJohn, importAuthoritativeSources, selectedChapters, mapSourceRecords, parseConfiguredSource, generateConfiguredSource };
+module.exports = { SCHEMA_FIELDS, normalizeRecord, normalizeRecords, writeStaticData, importOriginalLanguage, parseStrongDat, parseStrongGreekXml, parseOshbGenesis, parseByzantineJohn, importAuthoritativeSources, selectedChapters, mapSourceRecords, parseConfiguredSource, generateConfiguredSource, parseByzantineTokens, parseConfiguredSourceDetailed, generateConfiguredSourceDetailed };

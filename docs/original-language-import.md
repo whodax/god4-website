@@ -94,6 +94,8 @@ the repository Reader bounds. This does not establish English-to-Greek alignment
 `parseConfiguredSource(text, lexiconMap, config, options)` returns validated,
 Reader-coordinate records. `generateConfiguredSource(text, lexicalText, config,
 options)` additionally parses the configured lexical format. Neither writes files.
+Alternate-bearing Greek input must use the detailed APIs to retain diagnostics;
+see [Romans source compatibility](romans-source-compatibility.md).
 `mapSourceRecords(records, config, options)` validates/maps source-coordinate
 records without requiring unavailable upstream inputs.
 
@@ -147,6 +149,8 @@ For Romans: a locally supplied single-book Robinson-Pierpont CSV, compatible Gre
 Strong's XML, verified source/license/revision information, checked source verse
 counts, and a reviewed reference map. Draft config uses
 `createBookConfig('romans', 'byzantine', 'Rom')`; no Romans data is shipped.
+The reviewed `romansBookConfig()` profile and dry-run-only compatibility validation
+are documented in [Romans source compatibility](romans-source-compatibility.md).
 
 Run unit checks with `node --test tests/original-language-importer.unit.js`.
 Use the focused Word Study and PWA/offline tests for runtime metadata delivery.

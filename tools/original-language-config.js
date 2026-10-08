@@ -74,6 +74,7 @@ function validateBookConfig(config){
   if(config.testament !== testament || typeof config.sourceBookId !== 'string' || !/^[A-Za-z0-9-]+$/.test(config.sourceBookId)) throw new TypeError('Invalid testament/source book identifier');
   const profile = Object.values(SOURCES).find(s => s.parserStrategy === config.parserStrategy);
   if(!profile || ['language','sourceFormat','lexicalJoinStrategy','morphologyFormat'].some(k => config[k] !== profile[k])) throw new TypeError('Unsupported parser/language/lexical/morphology combination');
+  if(config.alternateAnalysisPolicy !== undefined && (config.parserStrategy !== 'byzantine' || config.alternateAnalysisPolicy !== 'first-source-analysis')) throw new TypeError('Unsupported alternate-analysis policy');
   const source = config.source;
   if(!source || ['dataset','license','upstreamIdentifier','verification','attribution'].some(k => typeof source[k] !== 'string' || !source[k].trim()) ||
       !(source.revision === null || typeof source.revision === 'string') ||
@@ -128,4 +129,37 @@ function existingBookConfig(bookId){
   return validateBookConfig(config);
 }
 
-module.exports = {SOURCES, readerBook, createBookConfig, validateBookConfig, mapReference, existingBookConfig};
+function romansBookConfig(){
+  const config = createBookConfig('romans','byzantine','ROM');
+  config.sourceVerseCounts = [32,29,31,25,21,23,25,39,33,21,36,21,14,26,33,24];
+  config.alternateAnalysisPolicy = 'first-source-analysis';
+  config.referenceMapping = {
+    strategy:'identity-with-exceptions', verified:true,
+    evidence:'Pinned ROM.csv and 06_ROM.BP5 doxology at 14:24–26 matches repository KJV 16:25–27; see docs/romans-source-compatibility.md',
+    ranges:[{sourceChapter:14,sourceStart:24,sourceEnd:26,readerChapter:16,readerStart:25}]
+  };
+  // Artifact-specific metadata: do not change the historical John attribution.
+  config.source = Object.assign({},config.source,{
+    dataset:'Robinson-Pierpont Byzantine Textform / RP2018',
+    license:'public domain / Unlicense',
+    upstreamIdentifier:'https://github.com/byztxt/byzantine-majority-text',
+    revision:'27a45ff1b7be6c17ccbfeac414f3f55732ae8e28',
+    version:'v3.3.2', date:'2024-12-31', verification:'verified selected local artifacts',
+    artifact:'csv-unicode/strongs/with-parsing/ROM.csv',
+    primaryArtifact:'source/Strongs/06_ROM.BP5',
+    credits:['Maurice A. Robinson','Pierpont','byztxt maintainers'],
+    lexicalSource:{
+      dataset:"Strong's Greek dictionary XML; Ulrik Petersen edition",
+      upstreamIdentifier:'https://github.com/openscriptures/strongs',
+      artifact:'greek/StrongsGreekDictionaryXML_1.4/strongsgreek.xml',
+      license:'public domain', copyingNotice:'Public Domain -- Copy Freely',
+      version:'1.4',date:'2007-09-14',revision:'0acd2f251c2d35ff8db2dece4e0593979d3ac223',
+      verification:'verified selected XML prologue and release notes',
+      credits:['James Strong (1890)','Michael Grier','Ulrik Petersen','Open Scriptures']
+    },
+    attribution:"Robinson-Pierpont Byzantine Textform RP2018, byztxt v3.3.2 (27a45ff1b7be6c17ccbfeac414f3f55732ae8e28), public domain / Unlicense; Strong's Greek Dictionary (1890), Ulrik Petersen XML 1.4 (2007-09-14), Open Scriptures snapshot 0acd2f251c2d35ff8db2dece4e0593979d3ac223, public domain"
+  });
+  return validateBookConfig(config);
+}
+
+module.exports = {SOURCES, readerBook, createBookConfig, validateBookConfig, mapReference, existingBookConfig, romansBookConfig};
