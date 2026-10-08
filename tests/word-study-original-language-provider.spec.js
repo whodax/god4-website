@@ -2,6 +2,7 @@ const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
 const vm = require('node:vm');
+const root = path.resolve(__dirname, '..');
 
 function isolatedProvider(){
   const networkCalls = [];
@@ -68,4 +69,30 @@ test('Word Study original-language ignores inherited fixture-shaped entries rath
   expect(await realm.WordStudyProvider.lookupOriginalLanguage({lookupTerm:'notaword', displayWord:'notaword'}))
     .toEqual(unavailable('notaword'));
   expect(networkCalls).toEqual([]);
+});
+
+test('Word Study Aramaic token metadata uses RTL and arc without changing styling', async ({page}) => {
+  const file = path.join(root, 'data/word-study/original-language/genesis/31.json');
+  const records = JSON.parse(fs.readFileSync(file, 'utf8')).records
+    .filter(record => record.morphology[0] === 'A').map(record => ({...record, language:'aramaic'}));
+  expect(records).toHaveLength(2);
+  await page.route('**/data/word-study/original-language/genesis/31.json', route => route.fulfill({
+    contentType:'application/json', body:JSON.stringify({records})
+  }));
+  await page.goto('/');
+  await page.evaluate(async () => {
+    await BibleTranslationLoader.ensure('kjv');
+    currentTranslation='kjv'; currentBook='genesis'; currentChapter=31;
+    renderPassage('genesis',31);
+  });
+  await page.locator('#readerContent [data-verse-number="47"] [data-word-study-term]').first().click();
+  const section = page.locator('#wordStudyOriginalLanguage');
+  await expect(section).toBeVisible();
+  await expect(page.locator('#wordStudyOriginalTokens')).toHaveAttribute('dir','rtl');
+  const tokens = section.locator('.word-study-original-token');
+  await expect(tokens).toHaveCount(2);
+  await expect(tokens.first()).toHaveAttribute('lang','arc');
+  await expect(tokens.first()).toHaveAttribute('aria-label',/Aramaic/);
+  await tokens.first().click();
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('Aramaic');
 });

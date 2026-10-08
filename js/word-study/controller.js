@@ -49,7 +49,7 @@ var WordStudyController = (function createWordStudyController(){
   }
 
   function displayLanguage(language){
-    return language === 'hebrew' ? 'Hebrew' : language === 'greek' ? 'Greek' : language;
+    return language === 'hebrew' ? 'Hebrew' : language === 'aramaic' ? 'Aramaic' : language === 'greek' ? 'Greek' : language;
   }
 
   function showOriginalDetails(record, selectedButton){
@@ -85,7 +85,7 @@ var WordStudyController = (function createWordStudyController(){
     clearOriginalLanguage();
     if(!view.original || !result || result.status !== 'available' || !Array.isArray(result.records) || !result.records.length) return;
     view.original.hidden = false;
-    view.originalTokens.setAttribute('dir', result.records.some(function(record){ return record.language === 'hebrew'; }) ? 'rtl' : 'ltr');
+    view.originalTokens.setAttribute('dir', result.records.some(function(record){ return record.language === 'hebrew' || record.language === 'aramaic'; }) ? 'rtl' : 'ltr');
     result.records.forEach(function(record){
       var button = document.createElement('button');
       button.type = 'button';
@@ -94,7 +94,7 @@ var WordStudyController = (function createWordStudyController(){
       button.setAttribute('aria-label', 'Original-language token ' + record.surface + ', ' + displayLanguage(record.language) + ', token ' + (record.tokenIndex + 1));
       button.setAttribute('aria-pressed', 'false');
       button.setAttribute('data-original-language-token-index', String(record.tokenIndex));
-      button.setAttribute('lang', record.language === 'hebrew' ? 'he' : 'grc');
+      button.setAttribute('lang', record.language === 'hebrew' ? 'he' : record.language === 'aramaic' ? 'arc' : 'grc');
       button.__originalLanguageRecord = record;
       view.originalTokens.appendChild(button);
     });
