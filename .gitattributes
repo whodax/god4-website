@@ -1,0 +1,2 @@
+# Preserve the reviewed Romans shard bytes across checkouts on every platform.
+data/word-study/original-language/romans/*.json -text
