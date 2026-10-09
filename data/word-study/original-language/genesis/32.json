@@ -2,210 +2,6 @@
   "records": [
     {
       "status": "authoritative",
-      "strongsNumber": "H7925",
-      "language": "hebrew",
-      "lemma": "c/7925",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "7925 shakam shaw-kam' a primitive root; properly, to incline (the shoulder to a burden); but used only as denominative from 7926; literally, to load up (on the back of man or beast), i.e. to start early in the morning:--(arise, be up, get (oneself) up, rise up) early (betimes), morning. see HEBREW for 07926",
-      "morphology": "HC/Vhw3ms",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 0,
-      "surface": "וַ/יַּשְׁכֵּ֨ם"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H3837",
-      "language": "hebrew",
-      "lemma": "3837 a",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "3837 Laban law-bawn' the same as 3836; Laban, a Mesopotamian; also a place in the Desert:--Laban. see HEBREW for 03836",
-      "morphology": "HNp",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 1,
-      "surface": "לָבָ֜ן"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H1242",
-      "language": "hebrew",
-      "lemma": "b/1242",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "1242 boqer bo'-ker from 1239; properly, dawn (as the break of day); generally, morning:--(+) day, early, morning, morrow. see HEBREW for 01239",
-      "morphology": "HRd/Ncmsa",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 2,
-      "surface": "בַּ/בֹּ֗קֶר"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H5401",
-      "language": "hebrew",
-      "lemma": "c/5401 a",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "5401 nashaq naw-shak' a primitive root (identical with 5400, through the idea of fastening up; compare 2388, 2836); to kiss, literally or figuratively (touch); also (as a mode of attachment), to equip with weapons:--armed (men), rule, kiss, that touched. see HEBREW for 05400 see HEBREW for 02388 see HEBREW for 02836",
-      "morphology": "HC/Vpw3ms",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 3,
-      "surface": "וַ/יְנַשֵּׁ֧ק"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H1121",
-      "language": "hebrew",
-      "lemma": "l/1121 a",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "1121 ben bane from 1129; a son (as a builder of the family name), in the widest sense (of literal and figurative relationship, including grandson, subject, nation, quality or condition, etc., (like 1, 251, etc.)):--+ afflicted, age, (Ahoh-) (Ammon-) (Hachmon-) (Lev-)ite, (anoint-)ed one, appointed to, (+) arrow, (Assyr-) (Babylon-) (Egypt-) (Grec-)ian, one born, bough, branch, breed, + (young) bullock, + (young) calf, X came up in, child, colt, X common, X corn, daughter, X of first, + firstborn, foal, + very fruitful, + postage, X in, + kid, + lamb, (+) man, meet, + mighty, + nephew, old, (+) people, + rebel, + robber, X servant born, X soldier, son, + spark, + steward, + stranger, X surely, them of, + tumultuous one, + valiant(-est), whelp, worthy, young (one), youth. see HEBREW for 01129 see HEBREW for 01 see HEBREW for 0251",
-      "morphology": "HR/Ncmpc/Sp3ms",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 4,
-      "surface": "לְ/בָנָ֛י/ו"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H1323",
-      "language": "hebrew",
-      "lemma": "c/l/1323",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "1323 bath bath from 1129 (as feminine of 1121); a daughter (used in the same wide sense as other terms of relationship, literally and figuratively):--apple (of the eye), branch, company, daughter, X first, X old, + owl, town, village. see HEBREW for 01129 see HEBREW for 01121",
-      "morphology": "HC/R/Ncfpc/Sp3ms",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 5,
-      "surface": "וְ/לִ/בְנוֹתָ֖י/ו"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H1288",
-      "language": "hebrew",
-      "lemma": "c/1288",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "1288 barak baw-rak' a primitive root; to kneel; by implication to bless God (as an act of adoration), and (vice-versa) man (as a benefit); also (by euphemism) to curse (God or the king, as treason):--X abundantly, X altogether, X at all, blaspheme, bless, congratulate, curse, X greatly, X indeed, kneel (down), praise, salute, X still, thank.",
-      "morphology": "HC/Vpw3ms",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 6,
-      "surface": "וַ/יְבָ֣רֶךְ"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H853",
-      "language": "hebrew",
-      "lemma": "853",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "853 'eth ayth apparent contracted from 226 in the demonstrative sense of entity; properly, self (but generally used to point out more definitely the object of a verb or preposition, even or namely):--(as such unrepresented in English). see HEBREW for 0226",
-      "morphology": "HTo/Sp3mp",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 7,
-      "surface": "אֶתְ/הֶ֑ם"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H3212",
-      "language": "hebrew",
-      "lemma": "c/3212",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "3212 yalak yaw-lak' a primitive root (compare 1980); to walk (literally or figuratively); causatively, to carry (in various senses):--X again, away, bear, bring, carry (away), come (away), depart, flow, + follow(-ing), get (away, hence, him), (cause to, made) go (away, -ing, -ne, one's way, out), grow, lead (forth), let down, march, prosper, + pursue, cause to run, spread, take away ((-journey)), vanish, (cause to) walk(-ing), wax, X be weak. see HEBREW for 01980",
-      "morphology": "HC/Vqw3ms",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 8,
-      "surface": "וַ/יֵּ֛לֶךְ"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H7725",
-      "language": "hebrew",
-      "lemma": "c/7725",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "7725 shuwb shoob a primitive root; to turn back (hence, away) transitively or intransitively, literally or figuratively (not necessarily with the idea of return to the starting point); generally to retreat; often adverbial, again:--((break, build, circumcise, dig, do anything, do evil, feed, lay down, lie down, lodge, make, rejoice, send, take, weep)) X again, (cause to) answer (+ again), X in any case (wise), X at all, averse, bring (again, back, home again), call (to mind), carry again (back), cease, X certainly, come again (back), X consider, + continually, convert, deliver (again), + deny, draw back, fetch home again, X fro, get (oneself) (back) again, X give (again), go again (back, home), (go) out, hinder, let, (see) more, X needs, be past, X pay, pervert, pull in again, put (again, up again), recall, recompense, recover, refresh, relieve, render (again), requite, rescue, restore, retrieve, (cause to, make to) return, reverse, reward, + say nay, send back, set again, slide back, still, X surely, take back (off), (cause to, make to) turn (again, self again, away, back, back again, backward, from, off), withdraw.",
-      "morphology": "HC/Vqw3ms",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 9,
-      "surface": "וַ/יָּ֥שָׁב"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H3837",
-      "language": "hebrew",
-      "lemma": "3837 a",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "3837 Laban law-bawn' the same as 3836; Laban, a Mesopotamian; also a place in the Desert:--Laban. see HEBREW for 03836",
-      "morphology": "HNp",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 10,
-      "surface": "לָבָ֖ן"
-    },
-    {
-      "status": "authoritative",
-      "strongsNumber": "H4725",
-      "language": "hebrew",
-      "lemma": "l/4725",
-      "transliteration": null,
-      "pronunciation": null,
-      "partOfSpeech": null,
-      "definition": "4725 maqowm maw-kome' or maqom {maw-kome'}; also (feminine) mqowmah {mek-o-mah'}; or mqomah {mek-o-mah'}; from 6965; properly, a standing, i.e. a spot; but used widely of a locality (general or specific); also (figuratively) of a condition (of body or mind):--country, X home, X open, place, room, space, X whither(-soever). see HEBREW for 06965",
-      "morphology": "HR/Ncmsc/Sp3ms",
-      "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
-      "bookId": "genesis",
-      "chapter": 32,
-      "verse": 1,
-      "tokenIndex": 11,
-      "surface": "לִ/מְקֹמֽ/וֹ"
-    },
-    {
-      "status": "authoritative",
       "strongsNumber": "H3290",
       "language": "hebrew",
       "lemma": "c/3290",
@@ -217,7 +13,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 2,
+      "verse": 1,
       "tokenIndex": 0,
       "surface": "וְ/יַעֲקֹ֖ב"
     },
@@ -234,7 +30,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 2,
+      "verse": 1,
       "tokenIndex": 1,
       "surface": "הָלַ֣ךְ"
     },
@@ -251,7 +47,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 2,
+      "verse": 1,
       "tokenIndex": 2,
       "surface": "לְ/דַרְכּ֑/וֹ"
     },
@@ -268,7 +64,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 2,
+      "verse": 1,
       "tokenIndex": 3,
       "surface": "וַ/יִּפְגְּעוּ"
     },
@@ -285,7 +81,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 2,
+      "verse": 1,
       "tokenIndex": 4,
       "surface": "ב֖/וֹ"
     },
@@ -302,7 +98,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 2,
+      "verse": 1,
       "tokenIndex": 5,
       "surface": "מַלְאֲכֵ֥י"
     },
@@ -319,7 +115,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 2,
+      "verse": 1,
       "tokenIndex": 6,
       "surface": "אֱלֹהִֽים"
     },
@@ -336,7 +132,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 0,
       "surface": "וַ/יֹּ֤אמֶר"
     },
@@ -353,7 +149,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 1,
       "surface": "יַעֲקֹב֙"
     },
@@ -370,7 +166,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 2,
       "surface": "כַּ/אֲשֶׁ֣ר"
     },
@@ -387,7 +183,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 3,
       "surface": "רָאָ֔/ם"
     },
@@ -404,7 +200,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 4,
       "surface": "מַחֲנֵ֥ה"
     },
@@ -421,7 +217,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 5,
       "surface": "אֱלֹהִ֖ים"
     },
@@ -438,7 +234,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 6,
       "surface": "זֶ֑ה"
     },
@@ -455,7 +251,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 7,
       "surface": "וַ/יִּקְרָ֛א"
     },
@@ -472,7 +268,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 8,
       "surface": "שֵֽׁם"
     },
@@ -489,7 +285,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 9,
       "surface": "הַ/מָּק֥וֹם"
     },
@@ -506,7 +302,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 10,
       "surface": "הַ/ה֖וּא"
     },
@@ -523,7 +319,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 3,
+      "verse": 2,
       "tokenIndex": 11,
       "surface": "מַֽחֲנָֽיִם"
     },
@@ -540,7 +336,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 0,
       "surface": "וַ/יִּשְׁלַ֨ח"
     },
@@ -557,7 +353,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 1,
       "surface": "יַעֲקֹ֤ב"
     },
@@ -574,7 +370,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 2,
       "surface": "מַלְאָכִים֙"
     },
@@ -591,7 +387,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 3,
       "surface": "לְ/פָנָ֔י/ו"
     },
@@ -608,7 +404,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 4,
       "surface": "אֶל"
     },
@@ -625,7 +421,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 5,
       "surface": "עֵשָׂ֖ו"
     },
@@ -642,7 +438,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 6,
       "surface": "אָחִ֑י/ו"
     },
@@ -659,7 +455,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 7,
       "surface": "אַ֥רְצָ/ה"
     },
@@ -676,7 +472,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 8,
       "surface": "שֵׂעִ֖יר"
     },
@@ -693,7 +489,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 9,
       "surface": "שְׂדֵ֥ה"
     },
@@ -710,7 +506,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 4,
+      "verse": 3,
       "tokenIndex": 10,
       "surface": "אֱדֽוֹם"
     },
@@ -727,7 +523,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 0,
       "surface": "וַ/יְצַ֤ו"
     },
@@ -744,7 +540,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 1,
       "surface": "אֹתָ/ם֙"
     },
@@ -761,7 +557,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 2,
       "surface": "לֵ/אמֹ֔ר"
     },
@@ -778,7 +574,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 3,
       "surface": "כֹּ֣ה"
     },
@@ -795,7 +591,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 4,
       "surface": "תֹאמְר֔וּ/ן"
     },
@@ -812,7 +608,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 5,
       "surface": "לַֽ/אדֹנִ֖/י"
     },
@@ -829,7 +625,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 6,
       "surface": "לְ/עֵשָׂ֑ו"
     },
@@ -846,7 +642,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 7,
       "surface": "כֹּ֤ה"
     },
@@ -863,7 +659,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 8,
       "surface": "אָמַר֙"
     },
@@ -880,7 +676,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 9,
       "surface": "עַבְדְּ/ךָ֣"
     },
@@ -897,7 +693,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 10,
       "surface": "יַעֲקֹ֔ב"
     },
@@ -914,7 +710,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 11,
       "surface": "עִם"
     },
@@ -931,7 +727,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 12,
       "surface": "לָבָ֣ן"
     },
@@ -948,7 +744,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 13,
       "surface": "גַּ֔רְתִּי"
     },
@@ -965,7 +761,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 14,
       "surface": "וָ/אֵחַ֖ר"
     },
@@ -982,7 +778,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 15,
       "surface": "עַד"
     },
@@ -999,7 +795,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 5,
+      "verse": 4,
       "tokenIndex": 16,
       "surface": "עָֽתָּה"
     },
@@ -1016,7 +812,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 0,
       "surface": "וַֽ/יְהִי"
     },
@@ -1033,7 +829,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 1,
       "surface": "לִ/י֙"
     },
@@ -1050,7 +846,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 2,
       "surface": "שׁ֣וֹר"
     },
@@ -1067,7 +863,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 3,
       "surface": "וַ/חֲמ֔וֹר"
     },
@@ -1084,7 +880,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 4,
       "surface": "צֹ֖אן"
     },
@@ -1101,7 +897,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 5,
       "surface": "וְ/עֶ֣בֶד"
     },
@@ -1118,7 +914,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 6,
       "surface": "וְ/שִׁפְחָ֑ה"
     },
@@ -1135,7 +931,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 7,
       "surface": "וָֽ/אֶשְׁלְחָ/ה֙"
     },
@@ -1152,7 +948,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 8,
       "surface": "לְ/הַגִּ֣יד"
     },
@@ -1169,7 +965,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 9,
       "surface": "לַֽ/אדֹנִ֔/י"
     },
@@ -1186,7 +982,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 10,
       "surface": "לִ/מְצֹא"
     },
@@ -1203,7 +999,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 11,
       "surface": "חֵ֖ן"
     },
@@ -1220,7 +1016,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 6,
+      "verse": 5,
       "tokenIndex": 12,
       "surface": "בְּ/עֵינֶֽי/ךָ"
     },
@@ -1237,7 +1033,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 0,
       "surface": "וַ/יָּשֻׁ֨בוּ֙"
     },
@@ -1254,7 +1050,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 1,
       "surface": "הַ/מַּלְאָכִ֔ים"
     },
@@ -1271,7 +1067,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 2,
       "surface": "אֶֽל"
     },
@@ -1288,7 +1084,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 3,
       "surface": "יַעֲקֹ֖ב"
     },
@@ -1305,7 +1101,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 4,
       "surface": "לֵ/אמֹ֑ר"
     },
@@ -1322,7 +1118,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 5,
       "surface": "בָּ֤אנוּ"
     },
@@ -1339,7 +1135,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 6,
       "surface": "אֶל"
     },
@@ -1356,7 +1152,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 7,
       "surface": "אָחִ֨י/ךָ֙"
     },
@@ -1373,7 +1169,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 8,
       "surface": "אֶל"
     },
@@ -1390,7 +1186,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 9,
       "surface": "עֵשָׂ֔ו"
     },
@@ -1407,7 +1203,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 10,
       "surface": "וְ/גַם֙"
     },
@@ -1424,7 +1220,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 11,
       "surface": "הֹלֵ֣ךְ"
     },
@@ -1441,7 +1237,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 12,
       "surface": "לִ/קְרָֽאתְ/ךָ֔"
     },
@@ -1458,7 +1254,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 13,
       "surface": "וְ/אַרְבַּע"
     },
@@ -1475,7 +1271,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 14,
       "surface": "מֵא֥וֹת"
     },
@@ -1492,7 +1288,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 15,
       "surface": "אִ֖ישׁ"
     },
@@ -1509,7 +1305,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 7,
+      "verse": 6,
       "tokenIndex": 16,
       "surface": "עִמּֽ/וֹ"
     },
@@ -1526,7 +1322,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 0,
       "surface": "וַ/יִּירָ֧א"
     },
@@ -1543,7 +1339,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 1,
       "surface": "יַעֲקֹ֛ב"
     },
@@ -1560,7 +1356,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 2,
       "surface": "מְאֹ֖ד"
     },
@@ -1577,7 +1373,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 3,
       "surface": "וַ/יֵּ֣צֶר"
     },
@@ -1594,7 +1390,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 4,
       "surface": "ל֑/וֹ"
     },
@@ -1611,7 +1407,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 5,
       "surface": "וַ/יַּ֜חַץ"
     },
@@ -1628,7 +1424,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 6,
       "surface": "אֶת"
     },
@@ -1645,7 +1441,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 7,
       "surface": "הָ/עָ֣ם"
     },
@@ -1662,7 +1458,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 8,
       "surface": "אֲשֶׁר"
     },
@@ -1679,7 +1475,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 9,
       "surface": "אִתּ֗/וֹ"
     },
@@ -1696,7 +1492,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 10,
       "surface": "וְ/אֶת"
     },
@@ -1713,7 +1509,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 11,
       "surface": "הַ/צֹּ֧אן"
     },
@@ -1730,7 +1526,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 12,
       "surface": "וְ/אֶת"
     },
@@ -1747,7 +1543,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 13,
       "surface": "הַ/בָּקָ֛ר"
     },
@@ -1764,7 +1560,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 14,
       "surface": "וְ/הַ/גְּמַלִּ֖ים"
     },
@@ -1781,7 +1577,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 15,
       "surface": "לִ/שְׁנֵ֥י"
     },
@@ -1798,7 +1594,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 8,
+      "verse": 7,
       "tokenIndex": 16,
       "surface": "מַחֲנֽוֹת"
     },
@@ -1815,7 +1611,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 0,
       "surface": "וַ/יֹּ֕אמֶר"
     },
@@ -1832,7 +1628,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 1,
       "surface": "אִם"
     },
@@ -1849,7 +1645,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 2,
       "surface": "יָב֥וֹא"
     },
@@ -1866,7 +1662,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 3,
       "surface": "עֵשָׂ֛ו"
     },
@@ -1883,7 +1679,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 4,
       "surface": "אֶל"
     },
@@ -1900,7 +1696,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 5,
       "surface": "הַ/מַּחֲנֶ֥ה"
     },
@@ -1917,7 +1713,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 6,
       "surface": "הָ/אַחַ֖ת"
     },
@@ -1934,7 +1730,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 7,
       "surface": "וְ/הִכָּ֑/הוּ"
     },
@@ -1951,7 +1747,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 8,
       "surface": "וְ/הָיָ֛ה"
     },
@@ -1968,7 +1764,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 9,
       "surface": "הַ/מַּחֲנֶ֥ה"
     },
@@ -1985,7 +1781,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 10,
       "surface": "הַ/נִּשְׁאָ֖ר"
     },
@@ -2002,7 +1798,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 9,
+      "verse": 8,
       "tokenIndex": 11,
       "surface": "לִ/פְלֵיטָֽה"
     },
@@ -2019,7 +1815,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 0,
       "surface": "וַ/יֹּאמֶר֮"
     },
@@ -2036,7 +1832,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 1,
       "surface": "יַעֲקֹב֒"
     },
@@ -2053,7 +1849,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 2,
       "surface": "אֱלֹהֵי֙"
     },
@@ -2070,7 +1866,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 3,
       "surface": "אָבִ֣/י"
     },
@@ -2087,7 +1883,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 4,
       "surface": "אַבְרָהָ֔ם"
     },
@@ -2104,7 +1900,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 5,
       "surface": "וֵ/אלֹהֵ֖י"
     },
@@ -2121,7 +1917,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 6,
       "surface": "אָבִ֣/י"
     },
@@ -2138,7 +1934,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 7,
       "surface": "יִצְחָ֑ק"
     },
@@ -2155,7 +1951,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 8,
       "surface": "יְהוָ֞ה"
     },
@@ -2172,7 +1968,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 9,
       "surface": "הָ/אֹמֵ֣ר"
     },
@@ -2189,7 +1985,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 10,
       "surface": "אֵלַ֗/י"
     },
@@ -2206,7 +2002,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 11,
       "surface": "שׁ֧וּב"
     },
@@ -2223,7 +2019,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 12,
       "surface": "לְ/אַרְצְ/ךָ֛"
     },
@@ -2240,7 +2036,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 13,
       "surface": "וּ/לְ/מוֹלַדְתְּ/ךָ֖"
     },
@@ -2257,7 +2053,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 14,
       "surface": "וְ/אֵיטִ֥יבָה"
     },
@@ -2274,7 +2070,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 10,
+      "verse": 9,
       "tokenIndex": 15,
       "surface": "עִמָּֽ/ךְ"
     },
@@ -2291,7 +2087,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 0,
       "surface": "קָטֹ֜נְתִּי"
     },
@@ -2308,7 +2104,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 1,
       "surface": "מִ/כֹּ֤ל"
     },
@@ -2325,7 +2121,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 2,
       "surface": "הַ/חֲסָדִים֙"
     },
@@ -2342,7 +2138,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 3,
       "surface": "וּ/מִ/כָּל"
     },
@@ -2359,7 +2155,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 4,
       "surface": "הָ֣/אֱמֶ֔ת"
     },
@@ -2376,7 +2172,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 5,
       "surface": "אֲשֶׁ֥ר"
     },
@@ -2393,7 +2189,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 6,
       "surface": "עָשִׂ֖יתָ"
     },
@@ -2410,7 +2206,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 7,
       "surface": "אֶת"
     },
@@ -2427,7 +2223,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 8,
       "surface": "עַבְדֶּ֑/ךָ"
     },
@@ -2444,7 +2240,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 9,
       "surface": "כִּ֣י"
     },
@@ -2461,7 +2257,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 10,
       "surface": "בְ/מַקְלִ֗/י"
     },
@@ -2478,7 +2274,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 11,
       "surface": "עָבַ֨רְתִּי֙"
     },
@@ -2495,7 +2291,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 12,
       "surface": "אֶת"
     },
@@ -2512,7 +2308,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 13,
       "surface": "הַ/יַּרְדֵּ֣ן"
     },
@@ -2529,7 +2325,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 14,
       "surface": "הַ/זֶּ֔ה"
     },
@@ -2546,7 +2342,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 15,
       "surface": "וְ/עַתָּ֥ה"
     },
@@ -2563,7 +2359,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 16,
       "surface": "הָיִ֖יתִי"
     },
@@ -2580,7 +2376,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 17,
       "surface": "לִ/שְׁנֵ֥י"
     },
@@ -2597,7 +2393,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 11,
+      "verse": 10,
       "tokenIndex": 18,
       "surface": "מַחֲנֽוֹת"
     },
@@ -2614,7 +2410,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 0,
       "surface": "הַצִּילֵ֥/נִי"
     },
@@ -2631,7 +2427,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 1,
       "surface": "נָ֛א"
     },
@@ -2648,7 +2444,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 2,
       "surface": "מִ/יַּ֥ד"
     },
@@ -2665,7 +2461,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 3,
       "surface": "אָחִ֖/י"
     },
@@ -2682,7 +2478,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 4,
       "surface": "מִ/יַּ֣ד"
     },
@@ -2699,7 +2495,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 5,
       "surface": "עֵשָׂ֑ו"
     },
@@ -2716,7 +2512,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 6,
       "surface": "כִּֽי"
     },
@@ -2733,7 +2529,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 7,
       "surface": "יָרֵ֤א"
     },
@@ -2750,7 +2546,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 8,
       "surface": "אָנֹכִי֙"
     },
@@ -2767,7 +2563,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 9,
       "surface": "אֹת֔/וֹ"
     },
@@ -2784,7 +2580,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 10,
       "surface": "פֶּן"
     },
@@ -2801,7 +2597,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 11,
       "surface": "יָב֣וֹא"
     },
@@ -2818,7 +2614,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 12,
       "surface": "וְ/הִכַּ֔/נִי"
     },
@@ -2835,7 +2631,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 13,
       "surface": "אֵ֖ם"
     },
@@ -2852,7 +2648,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 14,
       "surface": "עַל"
     },
@@ -2869,7 +2665,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 12,
+      "verse": 11,
       "tokenIndex": 15,
       "surface": "בָּנִֽים"
     },
@@ -2886,7 +2682,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 0,
       "surface": "וְ/אַתָּ֣ה"
     },
@@ -2903,7 +2699,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 1,
       "surface": "אָמַ֔רְתָּ"
     },
@@ -2920,7 +2716,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 2,
       "surface": "הֵיטֵ֥ב"
     },
@@ -2937,7 +2733,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 3,
       "surface": "אֵיטִ֖יב"
     },
@@ -2954,7 +2750,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 4,
       "surface": "עִמָּ֑/ךְ"
     },
@@ -2971,7 +2767,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 5,
       "surface": "וְ/שַׂמְתִּ֤י"
     },
@@ -2988,7 +2784,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 6,
       "surface": "אֶֽת"
     },
@@ -3005,7 +2801,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 7,
       "surface": "זַרְעֲ/ךָ֙"
     },
@@ -3022,7 +2818,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 8,
       "surface": "כְּ/ח֣וֹל"
     },
@@ -3039,7 +2835,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 9,
       "surface": "הַ/יָּ֔ם"
     },
@@ -3056,7 +2852,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 10,
       "surface": "אֲשֶׁ֥ר"
     },
@@ -3073,7 +2869,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 11,
       "surface": "לֹא"
     },
@@ -3090,7 +2886,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 12,
       "surface": "יִסָּפֵ֖ר"
     },
@@ -3107,7 +2903,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 13,
+      "verse": 12,
       "tokenIndex": 13,
       "surface": "מֵ/רֹֽב"
     },
@@ -3124,7 +2920,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 0,
       "surface": "וַ/יָּ֥לֶן"
     },
@@ -3141,7 +2937,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 1,
       "surface": "שָׁ֖ם"
     },
@@ -3158,7 +2954,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 2,
       "surface": "בַּ/לַּ֣יְלָה"
     },
@@ -3175,7 +2971,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 3,
       "surface": "הַ/ה֑וּא"
     },
@@ -3192,7 +2988,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 4,
       "surface": "וַ/יִּקַּ֞ח"
     },
@@ -3209,7 +3005,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 5,
       "surface": "מִן"
     },
@@ -3226,7 +3022,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 6,
       "surface": "הַ/בָּ֧א"
     },
@@ -3243,7 +3039,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 7,
       "surface": "בְ/יָד֛/וֹ"
     },
@@ -3260,7 +3056,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 8,
       "surface": "מִנְחָ֖ה"
     },
@@ -3277,7 +3073,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 9,
       "surface": "לְ/עֵשָׂ֥ו"
     },
@@ -3294,7 +3090,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 14,
+      "verse": 13,
       "tokenIndex": 10,
       "surface": "אָחִֽי/ו"
     },
@@ -3311,7 +3107,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 15,
+      "verse": 14,
       "tokenIndex": 0,
       "surface": "עִזִּ֣ים"
     },
@@ -3328,7 +3124,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 15,
+      "verse": 14,
       "tokenIndex": 1,
       "surface": "מָאתַ֔יִם"
     },
@@ -3345,7 +3141,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 15,
+      "verse": 14,
       "tokenIndex": 2,
       "surface": "וּ/תְיָשִׁ֖ים"
     },
@@ -3362,7 +3158,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 15,
+      "verse": 14,
       "tokenIndex": 3,
       "surface": "עֶשְׂרִ֑ים"
     },
@@ -3379,7 +3175,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 15,
+      "verse": 14,
       "tokenIndex": 4,
       "surface": "רְחֵלִ֥ים"
     },
@@ -3396,7 +3192,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 15,
+      "verse": 14,
       "tokenIndex": 5,
       "surface": "מָאתַ֖יִם"
     },
@@ -3413,7 +3209,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 15,
+      "verse": 14,
       "tokenIndex": 6,
       "surface": "וְ/אֵילִ֥ים"
     },
@@ -3430,7 +3226,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 15,
+      "verse": 14,
       "tokenIndex": 7,
       "surface": "עֶשְׂרִֽים"
     },
@@ -3447,7 +3243,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 0,
       "surface": "גְּמַלִּ֧ים"
     },
@@ -3464,7 +3260,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 1,
       "surface": "מֵינִיק֛וֹת"
     },
@@ -3481,7 +3277,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 2,
       "surface": "וּ/בְנֵי/הֶ֖ם"
     },
@@ -3498,7 +3294,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 3,
       "surface": "שְׁלֹשִׁ֑ים"
     },
@@ -3515,7 +3311,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 4,
       "surface": "פָּר֤וֹת"
     },
@@ -3532,7 +3328,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 5,
       "surface": "אַרְבָּעִים֙"
     },
@@ -3549,7 +3345,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 6,
       "surface": "וּ/פָרִ֣ים"
     },
@@ -3566,7 +3362,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 7,
       "surface": "עֲשָׂרָ֔ה"
     },
@@ -3583,7 +3379,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 8,
       "surface": "אֲתֹנֹ֣ת"
     },
@@ -3600,7 +3396,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 9,
       "surface": "עֶשְׂרִ֔ים"
     },
@@ -3617,7 +3413,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 10,
       "surface": "וַ/עְיָרִ֖ם"
     },
@@ -3634,7 +3430,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 16,
+      "verse": 15,
       "tokenIndex": 11,
       "surface": "עֲשָׂרָֽה"
     },
@@ -3651,7 +3447,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 0,
       "surface": "וַ/יִּתֵּן֙"
     },
@@ -3668,7 +3464,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 1,
       "surface": "בְּ/יַד"
     },
@@ -3685,7 +3481,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 2,
       "surface": "עֲבָדָ֔י/ו"
     },
@@ -3702,7 +3498,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 3,
       "surface": "עֵ֥דֶר"
     },
@@ -3719,7 +3515,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 4,
       "surface": "עֵ֖דֶר"
     },
@@ -3736,7 +3532,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 5,
       "surface": "לְ/בַדּ֑/וֹ"
     },
@@ -3753,7 +3549,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 6,
       "surface": "וַ֤/יֹּאמֶר"
     },
@@ -3770,7 +3566,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 7,
       "surface": "אֶל"
     },
@@ -3787,7 +3583,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 8,
       "surface": "עֲבָדָי/ו֙"
     },
@@ -3804,7 +3600,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 9,
       "surface": "עִבְר֣וּ"
     },
@@ -3821,7 +3617,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 10,
       "surface": "לְ/פָנַ֔/י"
     },
@@ -3838,7 +3634,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 11,
       "surface": "וְ/רֶ֣וַח"
     },
@@ -3855,7 +3651,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 12,
       "surface": "תָּשִׂ֔ימוּ"
     },
@@ -3872,7 +3668,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 13,
       "surface": "בֵּ֥ין"
     },
@@ -3889,7 +3685,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 14,
       "surface": "עֵ֖דֶר"
     },
@@ -3906,7 +3702,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 15,
       "surface": "וּ/בֵ֥ין"
     },
@@ -3923,7 +3719,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 17,
+      "verse": 16,
       "tokenIndex": 16,
       "surface": "עֵֽדֶר"
     },
@@ -3940,7 +3736,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 0,
       "surface": "וַ/יְצַ֥ו"
     },
@@ -3957,7 +3753,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 1,
       "surface": "אֶת"
     },
@@ -3974,7 +3770,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 2,
       "surface": "הָ/רִאשׁ֖וֹן"
     },
@@ -3991,7 +3787,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 3,
       "surface": "לֵ/אמֹ֑ר"
     },
@@ -4008,7 +3804,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 4,
       "surface": "כִּ֣י"
     },
@@ -4025,7 +3821,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 5,
       "surface": "יִֽפְגָּשְׁ/ךָ֞"
     },
@@ -4042,7 +3838,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 6,
       "surface": "עֵשָׂ֣ו"
     },
@@ -4059,7 +3855,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 7,
       "surface": "אָחִ֗/י"
     },
@@ -4076,7 +3872,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 8,
       "surface": "וִ/שְׁאֵֽלְ/ךָ֙"
     },
@@ -4093,7 +3889,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 9,
       "surface": "לֵ/אמֹ֔ר"
     },
@@ -4110,7 +3906,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 10,
       "surface": "לְ/מִי"
     },
@@ -4127,7 +3923,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 11,
       "surface": "אַ֨תָּה֙"
     },
@@ -4144,7 +3940,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 12,
       "surface": "וְ/אָ֣נָה"
     },
@@ -4161,7 +3957,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 13,
       "surface": "תֵלֵ֔ךְ"
     },
@@ -4178,7 +3974,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 14,
       "surface": "וּ/לְ/מִ֖י"
     },
@@ -4195,7 +3991,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 15,
       "surface": "אֵ֥לֶּה"
     },
@@ -4212,7 +4008,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 18,
+      "verse": 17,
       "tokenIndex": 16,
       "surface": "לְ/פָנֶֽי/ךָ"
     },
@@ -4229,7 +4025,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 0,
       "surface": "וְ/אָֽמַרְתָּ֙"
     },
@@ -4246,7 +4042,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 1,
       "surface": "לְ/עַבְדְּ/ךָ֣"
     },
@@ -4263,7 +4059,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 2,
       "surface": "לְ/יַעֲקֹ֔ב"
     },
@@ -4280,7 +4076,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 3,
       "surface": "מִנְחָ֥ה"
     },
@@ -4297,7 +4093,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 4,
       "surface": "הִוא֙"
     },
@@ -4314,7 +4110,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 5,
       "surface": "שְׁלוּחָ֔ה"
     },
@@ -4331,7 +4127,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 6,
       "surface": "לַֽ/אדֹנִ֖/י"
     },
@@ -4348,7 +4144,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 7,
       "surface": "לְ/עֵשָׂ֑ו"
     },
@@ -4365,7 +4161,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 8,
       "surface": "וְ/הִנֵּ֥ה"
     },
@@ -4382,7 +4178,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 9,
       "surface": "גַם"
     },
@@ -4399,7 +4195,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 10,
       "surface": "ה֖וּא"
     },
@@ -4416,7 +4212,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 19,
+      "verse": 18,
       "tokenIndex": 11,
       "surface": "אַחֲרֵֽי/נוּ"
     },
@@ -4433,7 +4229,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 0,
       "surface": "וַ/יְצַ֞ו"
     },
@@ -4450,7 +4246,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 1,
       "surface": "גַּ֣ם"
     },
@@ -4467,7 +4263,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 2,
       "surface": "אֶת"
     },
@@ -4484,7 +4280,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 3,
       "surface": "הַ/שֵּׁנִ֗י"
     },
@@ -4501,7 +4297,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 4,
       "surface": "גַּ֚ם"
     },
@@ -4518,7 +4314,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 5,
       "surface": "אֶת"
     },
@@ -4535,7 +4331,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 6,
       "surface": "הַ/שְּׁלִישִׁ֔י"
     },
@@ -4552,7 +4348,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 7,
       "surface": "גַּ֚ם"
     },
@@ -4569,7 +4365,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 8,
       "surface": "אֶת"
     },
@@ -4586,7 +4382,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 9,
       "surface": "כָּל"
     },
@@ -4603,7 +4399,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 10,
       "surface": "הַ/הֹ֣לְכִ֔ים"
     },
@@ -4620,7 +4416,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 11,
       "surface": "אַחֲרֵ֥י"
     },
@@ -4637,7 +4433,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 12,
       "surface": "הָ/עֲדָרִ֖ים"
     },
@@ -4654,7 +4450,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 13,
       "surface": "לֵ/אמֹ֑ר"
     },
@@ -4671,7 +4467,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 14,
       "surface": "כַּ/דָּבָ֤ר"
     },
@@ -4688,7 +4484,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 15,
       "surface": "הַ/זֶּה֙"
     },
@@ -4705,7 +4501,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 16,
       "surface": "תְּדַבְּר֣וּ/ן"
     },
@@ -4722,7 +4518,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 17,
       "surface": "אֶל"
     },
@@ -4739,7 +4535,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 18,
       "surface": "עֵשָׂ֔ו"
     },
@@ -4756,7 +4552,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 19,
       "surface": "בְּ/מֹצַאֲ/כֶ֖ם"
     },
@@ -4773,7 +4569,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 20,
+      "verse": 19,
       "tokenIndex": 20,
       "surface": "אֹתֽ/וֹ"
     },
@@ -4790,7 +4586,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 0,
       "surface": "וַ/אֲמַרְתֶּ֕ם"
     },
@@ -4807,7 +4603,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 1,
       "surface": "גַּ֗ם"
     },
@@ -4824,7 +4620,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 2,
       "surface": "הִנֵּ֛ה"
     },
@@ -4841,7 +4637,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 3,
       "surface": "עַבְדְּ/ךָ֥"
     },
@@ -4858,7 +4654,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 4,
       "surface": "יַעֲקֹ֖ב"
     },
@@ -4875,7 +4671,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 5,
       "surface": "אַחֲרֵ֑י/נוּ"
     },
@@ -4892,7 +4688,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 6,
       "surface": "כִּֽי"
     },
@@ -4909,7 +4705,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 7,
       "surface": "אָמַ֞ר"
     },
@@ -4926,7 +4722,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 8,
       "surface": "אֲכַפְּרָ֣ה"
     },
@@ -4943,7 +4739,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 9,
       "surface": "פָנָ֗י/ו"
     },
@@ -4960,7 +4756,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 10,
       "surface": "בַּ/מִּנְחָה֙"
     },
@@ -4977,7 +4773,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 11,
       "surface": "הַ/הֹלֶ֣כֶת"
     },
@@ -4994,7 +4790,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 12,
       "surface": "לְ/פָנָ֔/י"
     },
@@ -5011,7 +4807,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 13,
       "surface": "וְ/אַחֲרֵי"
     },
@@ -5028,7 +4824,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 14,
       "surface": "כֵן֙"
     },
@@ -5045,7 +4841,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 15,
       "surface": "אֶרְאֶ֣ה"
     },
@@ -5062,7 +4858,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 16,
       "surface": "פָנָ֔י/ו"
     },
@@ -5079,7 +4875,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 17,
       "surface": "אוּלַ֖י"
     },
@@ -5096,7 +4892,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 18,
       "surface": "יִשָּׂ֥א"
     },
@@ -5113,7 +4909,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 21,
+      "verse": 20,
       "tokenIndex": 19,
       "surface": "פָנָֽ/י"
     },
@@ -5130,7 +4926,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 0,
       "surface": "וַ/תַּעֲבֹ֥ר"
     },
@@ -5147,7 +4943,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 1,
       "surface": "הַ/מִּנְחָ֖ה"
     },
@@ -5164,7 +4960,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 2,
       "surface": "עַל"
     },
@@ -5181,7 +4977,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 3,
       "surface": "פָּנָ֑י/ו"
     },
@@ -5198,7 +4994,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 4,
       "surface": "וְ/ה֛וּא"
     },
@@ -5215,7 +5011,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 5,
       "surface": "לָ֥ן"
     },
@@ -5232,7 +5028,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 6,
       "surface": "בַּ/לַּֽיְלָה"
     },
@@ -5249,7 +5045,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 7,
       "surface": "הַ/ה֖וּא"
     },
@@ -5266,7 +5062,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 22,
+      "verse": 21,
       "tokenIndex": 8,
       "surface": "בַּֽ/מַּחֲנֶֽה"
     },
@@ -5283,7 +5079,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 0,
       "surface": "וַ/יָּ֣קָם"
     },
@@ -5300,7 +5096,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 1,
       "surface": "בַּ/לַּ֣יְלָה"
     },
@@ -5317,7 +5113,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 2,
       "surface": "ה֗וּא"
     },
@@ -5334,7 +5130,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 3,
       "surface": "וַ/יִּקַּ֞ח"
     },
@@ -5351,7 +5147,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 4,
       "surface": "אֶת"
     },
@@ -5368,7 +5164,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 5,
       "surface": "שְׁתֵּ֤י"
     },
@@ -5385,7 +5181,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 6,
       "surface": "נָשָׁי/ו֙"
     },
@@ -5402,7 +5198,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 7,
       "surface": "וְ/אֶת"
     },
@@ -5419,7 +5215,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 8,
       "surface": "שְׁתֵּ֣י"
     },
@@ -5436,7 +5232,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 9,
       "surface": "שִׁפְחֹתָ֔י/ו"
     },
@@ -5453,7 +5249,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 10,
       "surface": "וְ/אֶת"
     },
@@ -5470,7 +5266,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 11,
       "surface": "אַחַ֥ד"
     },
@@ -5487,7 +5283,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 12,
       "surface": "עָשָׂ֖ר"
     },
@@ -5504,7 +5300,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 13,
       "surface": "יְלָדָ֑י/ו"
     },
@@ -5521,7 +5317,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 14,
       "surface": "וַֽ/יַּעֲבֹ֔ר"
     },
@@ -5538,7 +5334,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 15,
       "surface": "אֵ֖ת"
     },
@@ -5555,7 +5351,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 16,
       "surface": "מַעֲבַ֥ר"
     },
@@ -5572,7 +5368,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 23,
+      "verse": 22,
       "tokenIndex": 17,
       "surface": "יַבֹּֽק"
     },
@@ -5589,7 +5385,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 24,
+      "verse": 23,
       "tokenIndex": 0,
       "surface": "וַ/יִּקָּחֵ֔/ם"
     },
@@ -5606,7 +5402,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 24,
+      "verse": 23,
       "tokenIndex": 1,
       "surface": "וַ/יַּֽעֲבִרֵ֖/ם"
     },
@@ -5623,7 +5419,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 24,
+      "verse": 23,
       "tokenIndex": 2,
       "surface": "אֶת"
     },
@@ -5640,7 +5436,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 24,
+      "verse": 23,
       "tokenIndex": 3,
       "surface": "הַ/נָּ֑חַל"
     },
@@ -5657,7 +5453,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 24,
+      "verse": 23,
       "tokenIndex": 4,
       "surface": "וַֽ/יַּעֲבֵ֖ר"
     },
@@ -5674,7 +5470,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 24,
+      "verse": 23,
       "tokenIndex": 5,
       "surface": "אֶת"
     },
@@ -5691,7 +5487,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 24,
+      "verse": 23,
       "tokenIndex": 6,
       "surface": "אֲשֶׁר"
     },
@@ -5708,7 +5504,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 24,
+      "verse": 23,
       "tokenIndex": 7,
       "surface": "ל/וֹ"
     },
@@ -5725,7 +5521,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 0,
       "surface": "וַ/יִּוָּתֵ֥ר"
     },
@@ -5742,7 +5538,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 1,
       "surface": "יַעֲקֹ֖ב"
     },
@@ -5759,7 +5555,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 2,
       "surface": "לְ/בַדּ֑/וֹ"
     },
@@ -5776,7 +5572,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 3,
       "surface": "וַ/יֵּאָבֵ֥ק"
     },
@@ -5793,7 +5589,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 4,
       "surface": "אִישׁ֙"
     },
@@ -5810,7 +5606,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 5,
       "surface": "עִמּ֔/וֹ"
     },
@@ -5827,7 +5623,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 6,
       "surface": "עַ֖ד"
     },
@@ -5844,7 +5640,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 7,
       "surface": "עֲל֥וֹת"
     },
@@ -5861,7 +5657,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 25,
+      "verse": 24,
       "tokenIndex": 8,
       "surface": "הַ/שָּֽׁחַר"
     },
@@ -5878,7 +5674,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 0,
       "surface": "וַ/יַּ֗רְא"
     },
@@ -5895,7 +5691,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 1,
       "surface": "כִּ֣י"
     },
@@ -5912,7 +5708,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 2,
       "surface": "לֹ֤א"
     },
@@ -5929,7 +5725,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 3,
       "surface": "יָכֹל֙"
     },
@@ -5946,7 +5742,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 4,
       "surface": "ל֔/וֹ"
     },
@@ -5963,7 +5759,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 5,
       "surface": "וַ/יִּגַּ֖ע"
     },
@@ -5980,7 +5776,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 6,
       "surface": "בְּ/כַף"
     },
@@ -5997,7 +5793,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 7,
       "surface": "יְרֵכ֑/וֹ"
     },
@@ -6014,7 +5810,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 8,
       "surface": "וַ/תֵּ֨קַע֙"
     },
@@ -6031,7 +5827,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 9,
       "surface": "כַּף"
     },
@@ -6048,7 +5844,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 10,
       "surface": "יֶ֣רֶךְ"
     },
@@ -6065,7 +5861,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 11,
       "surface": "יַעֲקֹ֔ב"
     },
@@ -6082,7 +5878,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 12,
       "surface": "בְּ/הֵֽאָבְק֖/וֹ"
     },
@@ -6099,7 +5895,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 26,
+      "verse": 25,
       "tokenIndex": 13,
       "surface": "עִמּֽ/וֹ"
     },
@@ -6116,7 +5912,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 0,
       "surface": "וַ/יֹּ֣אמֶר"
     },
@@ -6133,7 +5929,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 1,
       "surface": "שַׁלְּחֵ֔/נִי"
     },
@@ -6150,7 +5946,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 2,
       "surface": "כִּ֥י"
     },
@@ -6167,7 +5963,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 3,
       "surface": "עָלָ֖ה"
     },
@@ -6184,7 +5980,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 4,
       "surface": "הַ/שָּׁ֑חַר"
     },
@@ -6201,7 +5997,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 5,
       "surface": "וַ/יֹּ֨אמֶר֙"
     },
@@ -6218,7 +6014,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 6,
       "surface": "לֹ֣א"
     },
@@ -6235,7 +6031,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 7,
       "surface": "אֲשַֽׁלֵּחֲ/ךָ֔"
     },
@@ -6252,7 +6048,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 8,
       "surface": "כִּ֖י"
     },
@@ -6269,7 +6065,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 9,
       "surface": "אִם"
     },
@@ -6286,7 +6082,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 27,
+      "verse": 26,
       "tokenIndex": 10,
       "surface": "בֵּרַכְתָּֽ/נִי"
     },
@@ -6303,7 +6099,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 28,
+      "verse": 27,
       "tokenIndex": 0,
       "surface": "וַ/יֹּ֥אמֶר"
     },
@@ -6320,7 +6116,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 28,
+      "verse": 27,
       "tokenIndex": 1,
       "surface": "אֵלָ֖י/ו"
     },
@@ -6337,7 +6133,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 28,
+      "verse": 27,
       "tokenIndex": 2,
       "surface": "מַה"
     },
@@ -6354,7 +6150,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 28,
+      "verse": 27,
       "tokenIndex": 3,
       "surface": "שְּׁמֶ֑/ךָ"
     },
@@ -6371,7 +6167,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 28,
+      "verse": 27,
       "tokenIndex": 4,
       "surface": "וַ/יֹּ֖אמֶר"
     },
@@ -6388,7 +6184,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 28,
+      "verse": 27,
       "tokenIndex": 5,
       "surface": "יַעֲקֹֽב"
     },
@@ -6405,7 +6201,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 0,
       "surface": "וַ/יֹּ֗אמֶר"
     },
@@ -6422,7 +6218,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 1,
       "surface": "לֹ֤א"
     },
@@ -6439,7 +6235,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 2,
       "surface": "יַעֲקֹב֙"
     },
@@ -6456,7 +6252,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 3,
       "surface": "יֵאָמֵ֥ר"
     },
@@ -6473,7 +6269,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 4,
       "surface": "עוֹד֙"
     },
@@ -6490,7 +6286,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 5,
       "surface": "שִׁמְ/ךָ֔"
     },
@@ -6507,7 +6303,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 6,
       "surface": "כִּ֖י"
     },
@@ -6524,7 +6320,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 7,
       "surface": "אִם"
     },
@@ -6541,7 +6337,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 8,
       "surface": "יִשְׂרָאֵ֑ל"
     },
@@ -6558,7 +6354,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 9,
       "surface": "כִּֽי"
     },
@@ -6575,7 +6371,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 10,
       "surface": "שָׂרִ֧יתָ"
     },
@@ -6592,7 +6388,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 11,
       "surface": "עִם"
     },
@@ -6609,7 +6405,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 12,
       "surface": "אֱלֹהִ֛ים"
     },
@@ -6626,7 +6422,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 13,
       "surface": "וְ/עִם"
     },
@@ -6643,7 +6439,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 14,
       "surface": "אֲנָשִׁ֖ים"
     },
@@ -6660,7 +6456,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 29,
+      "verse": 28,
       "tokenIndex": 15,
       "surface": "וַ/תּוּכָֽל"
     },
@@ -6677,7 +6473,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 0,
       "surface": "וַ/יִּשְׁאַ֣ל"
     },
@@ -6694,7 +6490,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 1,
       "surface": "יַעֲקֹ֗ב"
     },
@@ -6711,7 +6507,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 2,
       "surface": "וַ/יֹּ֨אמֶר֙"
     },
@@ -6728,7 +6524,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 3,
       "surface": "הַגִּֽידָ/ה"
     },
@@ -6745,7 +6541,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 4,
       "surface": "נָּ֣א"
     },
@@ -6762,7 +6558,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 5,
       "surface": "שְׁמֶ֔/ךָ"
     },
@@ -6779,7 +6575,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 6,
       "surface": "וַ/יֹּ֕אמֶר"
     },
@@ -6796,7 +6592,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 7,
       "surface": "לָ֥/מָּה"
     },
@@ -6813,7 +6609,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 8,
       "surface": "זֶּ֖ה"
     },
@@ -6830,7 +6626,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 9,
       "surface": "תִּשְׁאַ֣ל"
     },
@@ -6847,7 +6643,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 10,
       "surface": "לִ/שְׁמִ֑/י"
     },
@@ -6864,7 +6660,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 11,
       "surface": "וַ/יְבָ֥רֶךְ"
     },
@@ -6881,7 +6677,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 12,
       "surface": "אֹת֖/וֹ"
     },
@@ -6898,7 +6694,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 30,
+      "verse": 29,
       "tokenIndex": 13,
       "surface": "שָֽׁם"
     },
@@ -6915,7 +6711,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 0,
       "surface": "וַ/יִּקְרָ֧א"
     },
@@ -6932,7 +6728,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 1,
       "surface": "יַעֲקֹ֛ב"
     },
@@ -6949,7 +6745,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 2,
       "surface": "שֵׁ֥ם"
     },
@@ -6966,7 +6762,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 3,
       "surface": "הַ/מָּק֖וֹם"
     },
@@ -6983,7 +6779,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 4,
       "surface": "פְּנִיאֵ֑ל"
     },
@@ -7000,7 +6796,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 5,
       "surface": "כִּֽי"
     },
@@ -7017,7 +6813,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 6,
       "surface": "רָאִ֤יתִי"
     },
@@ -7034,7 +6830,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 7,
       "surface": "אֱלֹהִים֙"
     },
@@ -7051,7 +6847,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 8,
       "surface": "פָּנִ֣ים"
     },
@@ -7068,7 +6864,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 9,
       "surface": "אֶל"
     },
@@ -7085,7 +6881,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 10,
       "surface": "פָּנִ֔ים"
     },
@@ -7102,7 +6898,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 11,
       "surface": "וַ/תִּנָּצֵ֖ל"
     },
@@ -7119,7 +6915,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 31,
+      "verse": 30,
       "tokenIndex": 12,
       "surface": "נַפְשִֽׁ/י"
     },
@@ -7136,7 +6932,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 0,
       "surface": "וַ/יִּֽזְרַֽח"
     },
@@ -7153,7 +6949,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 1,
       "surface": "ל֣/וֹ"
     },
@@ -7170,7 +6966,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 2,
       "surface": "הַ/שֶּׁ֔מֶשׁ"
     },
@@ -7187,7 +6983,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 3,
       "surface": "כַּ/אֲשֶׁ֥ר"
     },
@@ -7204,7 +7000,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 4,
       "surface": "עָבַ֖ר"
     },
@@ -7221,7 +7017,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 5,
       "surface": "אֶת"
     },
@@ -7238,7 +7034,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 6,
       "surface": "פְּנוּאֵ֑ל"
     },
@@ -7255,7 +7051,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 7,
       "surface": "וְ/ה֥וּא"
     },
@@ -7272,7 +7068,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 8,
       "surface": "צֹלֵ֖עַ"
     },
@@ -7289,7 +7085,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 9,
       "surface": "עַל"
     },
@@ -7306,7 +7102,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 32,
+      "verse": 31,
       "tokenIndex": 10,
       "surface": "יְרֵכֽ/וֹ"
     },
@@ -7323,7 +7119,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 0,
       "surface": "עַל"
     },
@@ -7340,7 +7136,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 1,
       "surface": "כֵּ֡ן"
     },
@@ -7357,7 +7153,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 2,
       "surface": "לֹֽא"
     },
@@ -7374,7 +7170,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 3,
       "surface": "יֹאכְל֨וּ"
     },
@@ -7391,7 +7187,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 4,
       "surface": "בְנֵֽי"
     },
@@ -7408,7 +7204,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 5,
       "surface": "יִשְׂרָאֵ֜ל"
     },
@@ -7425,7 +7221,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 6,
       "surface": "אֶת"
     },
@@ -7442,7 +7238,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 7,
       "surface": "גִּ֣יד"
     },
@@ -7459,7 +7255,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 8,
       "surface": "הַ/נָּשֶׁ֗ה"
     },
@@ -7476,7 +7272,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 9,
       "surface": "אֲשֶׁר֙"
     },
@@ -7493,7 +7289,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 10,
       "surface": "עַל"
     },
@@ -7510,7 +7306,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 11,
       "surface": "כַּ֣ף"
     },
@@ -7527,7 +7323,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 12,
       "surface": "הַ/יָּרֵ֔ךְ"
     },
@@ -7544,7 +7340,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 13,
       "surface": "עַ֖ד"
     },
@@ -7561,7 +7357,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 14,
       "surface": "הַ/יּ֣וֹם"
     },
@@ -7578,7 +7374,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 15,
       "surface": "הַ/זֶּ֑ה"
     },
@@ -7595,7 +7391,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 16,
       "surface": "כִּ֤י"
     },
@@ -7612,7 +7408,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 17,
       "surface": "נָגַע֙"
     },
@@ -7629,7 +7425,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 18,
       "surface": "בְּ/כַף"
     },
@@ -7646,7 +7442,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 19,
       "surface": "יֶ֣רֶךְ"
     },
@@ -7663,7 +7459,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 20,
       "surface": "יַעֲקֹ֔ב"
     },
@@ -7680,7 +7476,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 21,
       "surface": "בְּ/גִ֖יד"
     },
@@ -7697,7 +7493,7 @@
       "source": "Open Scriptures Hebrew Bible (OSHB) CC BY 4.0; Westminster Leningrad Codex public domain; Strong's 1890 dictionary public domain; corrected edition by Weston Ruter MIT License",
       "bookId": "genesis",
       "chapter": 32,
-      "verse": 33,
+      "verse": 32,
       "tokenIndex": 22,
       "surface": "הַ/נָּשֶֽׁה"
     }

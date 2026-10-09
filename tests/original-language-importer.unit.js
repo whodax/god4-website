@@ -14,6 +14,11 @@ function records(book){
   return fs.readdirSync(dir).sort((a,b) => parseInt(a) - parseInt(b)).flatMap(file => JSON.parse(fs.readFileSync(path.join(dir,file))).records);
 }
 const genesis = records('genesis'), john = records('john');
+const boundary = require('../tools/repair-genesis-references').readSource();
+// Parser replay must use retained source coordinates, not repaired Reader shards.
+const sourceGenesis = genesis.filter(r=>![31,32].includes(r.chapter))
+  .concat(boundary.records.filter(r=>[31,32].includes(r.chapter)))
+  .sort((a,b)=>a.chapter-b.chapter||a.verse-b.verse||a.tokenIndex-b.tokenIndex);
 const genConfig = configs.existingBookConfig('genesis'), johnConfig = configs.existingBookConfig('john');
 const clone = value => JSON.parse(JSON.stringify(value));
 const sample = clone(genesis[0]);
@@ -73,10 +78,10 @@ test('Genesis 31/32 mapping is a declared exception including both endpoints', (
   for(let v=2;v<=33;v++) assert.deepEqual(configs.mapReference(genConfig,32,v),{bookId:'genesis',chapter:32,verse:v-1});
   assert.throws(() => configs.mapReference(genConfig,31,55), /Unmapped/);
   assert.throws(() => configs.mapReference(genConfig,32,34), /Unmapped/);
-  assert.match(genesis.find(r=>r.chapter===32&&r.verse===1&&r.tokenIndex===1).definition,/Laban/);
+  assert.match(sourceGenesis.find(r=>r.chapter===32&&r.verse===1&&r.tokenIndex===1).definition,/Laban/);
   assert.match(configs.readerBook('genesis')[31].verses[54],/Laban/);
   assert.match(configs.readerBook('genesis')[32].verses[31],/sinew/);
-  assert.ok(genesis.some(r=>r.chapter===32&&r.verse===33&&/sinew/i.test(r.definition||'')));
+  assert.ok(sourceGenesis.some(r=>r.chapter===32&&r.verse===33&&/sinew/i.test(r.definition||'')));
 });
 
 test('explicit mappings reject any omitted source verse', () => {
@@ -112,7 +117,7 @@ test('contiguous indexes are validated without changing input token order', () =
 });
 
 test('partial mapped chapters cannot overwrite complete Reader shards', () => {
-  const source = genesis.filter(r=>r.chapter===32);
+  const source = sourceGenesis.filter(r=>r.chapter===32);
   const rs = importer.mapSourceRecords(source,genConfig,{chapters:[32]});
   assert.throws(()=>importer.writeStaticData(rs,'unused'),/Incomplete Reader chapter output/);
   assert.throws(()=>importer.selectedChapters('1,invalid'),/Invalid chapter selection/);
@@ -128,7 +133,7 @@ test('language metadata supports Hebrew Aramaic and Greek without changing the s
   assert.equal(importer.normalizeRecord(john[0]).language,'greek');
   assert.throws(()=>importer.normalizeRecord({...sample,language:'greek'}),/language mismatch/);
   assert.throws(()=>importer.normalizeRecord({...sample,language:'other'}),/unsupported language/);
-  const mapped=importer.mapSourceRecords(genesis,genConfig);
+  const mapped=importer.mapSourceRecords(sourceGenesis,genConfig);
   assert.equal(mapped.filter(r=>r.language==='aramaic').length,2);
   assert.equal(mapped.filter(r=>r.language==='aramaic').every(r=>r.morphology[0]==='A'),true);
   assert.deepEqual(Object.keys(mapped[0]),importer.SCHEMA_FIELDS);
@@ -139,12 +144,13 @@ test('configuration validates parser strategies and explicit provenance gaps', (
   for(const change of [c=>{c.source.license='';},c=>{delete c.source.revision;},c=>{c.source.lexicalSource=null;},c=>{c.morphologyFormat='invented';},c=>{c.testament='NT';},c=>{c.readerBookId='john';},c=>{c.sourceBookId='';}]){const c=clone(genConfig);change(c);assert.throws(()=>configs.validateBookConfig(c));}
 });
 
-test('legacy Genesis extraction reproduces every deployed record in memory', () => {
-  const {text,lexicon}=sourceInput(genesis,'Gen');
-  assert.deepEqual(importer.normalizeRecords(importer.parseOshbGenesis(text,lexicon,genConfig.sourceVerseCounts.map((_,i)=>i+1))),genesis);
+test('legacy Genesis extraction reproduces retained source records and generic mapping remains distinct from coordinate-only production', () => {
+  const {text,lexicon}=sourceInput(sourceGenesis,'Gen');
+  assert.deepEqual(importer.normalizeRecords(importer.parseOshbGenesis(text,lexicon,genConfig.sourceVerseCounts.map((_,i)=>i+1))),sourceGenesis);
   const generated=importer.parseConfiguredSource(text,lexicon,genConfig);
-  const expected=genesis.map(r=>({...r,chapter:r.chapter===32&&r.verse===1?31:r.chapter,verse:r.chapter===32?(r.verse===1?55:r.verse-1):r.verse,language:r.morphology[0]==='A'?'aramaic':r.language}));
+  const expected=sourceGenesis.map(r=>({...r,chapter:r.chapter===32&&r.verse===1?31:r.chapter,verse:r.chapter===32?(r.verse===1?55:r.verse-1):r.verse,language:r.morphology[0]==='A'?'aramaic':r.language}));
   assert.deepEqual(generated,expected);
+  assert.deepEqual(generated,genesis.map(r=>({...r,language:r.morphology[0]==='A'?'aramaic':r.language})));
   assert.equal(new Set(generated.map(r=>r.chapter+':'+r.verse)).size,1533);
 });
 

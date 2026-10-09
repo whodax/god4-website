@@ -61,9 +61,11 @@ expected verses and duplicate or noncontiguous token indexes before writing.
 
 ### Genesis source boundary evidence
 
-The existing deployed records preserve OSHB source coordinates. Compare:
+The historical deployed records at baseline
+`c0362476989ba2aef240a2ef36656fb9dbf729c9` preserved OSHB source coordinates.
+Their retained boundary fixture provides this evidence:
 
-| Existing source records | Repository KJV Reader | Evidence |
+| Historical source records | Repository KJV Reader | Evidence |
 | --- | --- | --- |
 | `genesis/32.json`, 32:1 | 31:55 | Laban rises, kisses/blesses his family, and returns home |
 | `genesis/32.json`, 32:2 | 32:1 | Jacob travels and angels of God meet him |
@@ -88,6 +90,149 @@ Source 32:33 therefore targets Reader 32:32; it must never be deployed as Reader
 these inspected source/Reader editions and is not automatically reused for every
 Hebrew dataset. John remains identity-mapped: all 879 source verse locations match
 the repository Reader bounds. This does not establish English-to-Greek alignment.
+
+### Coordinate-only Genesis production repair
+
+`tools/repair-genesis-references.js` applies the existing `mapReference()` logic
+to retained source records and writes only production Genesis chapters 31 and
+32. It deliberately does not use generic configured regeneration, which would
+also change two Genesis 31:47 language labels. Those `ANp` tokens, `יְגַ֖ר` and
+`שָׂהֲדוּתָ֑א`, retain their existing `hebrew` labels in this repair. Correcting
+their Aramaic metadata is a separate task.
+
+Every token field, including language, attribution, book ID, surface, lemma,
+Strong's number, definition, morphology and token index, remains identical;
+only mapped `chapter` and `verse` change. No upstream text is invented or fetched.
+
+| Production result | Before | After |
+| --- | ---: | ---: |
+| Chapter 31 records | 768 | 780 |
+| Chapter 32 records | 453 | 441 |
+| Total Genesis records | 20,629 | 20,629 |
+| Canonical chapter 31 verse range | 1–54 | 1–55 |
+| Chapter 32 stored verse range | 1–33 | 1–32 |
+
+Exactly 453 tokens move coordinates: 12 move from source 32:1 into Reader
+31:55; the other 441 remain in chapter 32 with their verse decremented by one.
+All 50 canonical Genesis chapters cover all 1,533 Reader verses, with contiguous
+unique token indexes. Chapter 33:1 is an unchanged 21-token boundary guard.
+Only two production shards change. The tool compares all 48 unaffected files
+before/after as raw bytes and checks their retained baseline hashes. It preserves
+the two written files' existing line-ending style and never rewrites other files.
+
+The retained fixture is
+`tests/fixtures/original-language/genesis-source-boundary.json.gz`. Its 1,242
+records include complete source chapters 31 (768 tokens) and 32 (453 tokens),
+plus source 33:1 (21 tokens). It was extracted from the historical Git blobs
+at the baseline above, before any repaired production output was generated.
+It also retains canonical LF hashes for all 50 historical Genesis shards.
+
+- Uncompressed JSON SHA-256:
+  `f44725fef72896ba87aa2f02ae261bc9cb19dbe47736cca2926924d7226a89f4`.
+- Compressed fixture SHA-256:
+  `5ce2db4366f6e19a1d262a2a72dd2c1306df941396000d82e3405016ef54fe06`.
+- Compression: Node `zlib.gzipSync`, level 9; retained file size 154,531 bytes.
+
+The fixture proves reproducibility, boundary mapping and field preservation
+against reviewed retained historical OSHB token evidence. It is not an
+independently verified upstream XML/DAT snapshot or a new license/revision
+review. Existing source attribution and unknown upstream revisions are preserved.
+Parser replay tests use this source-coordinate fixture rather than attempting
+to reconstruct source coordinates from newly repaired production shards.
+
+To re-extract the fixture, use the following Node process from the repository
+root. Its only output is the fixture, and its inputs are baseline Git blobs:
+
+```js
+const fs = require('node:fs'), cp = require('node:child_process');
+const zlib = require('node:zlib'), crypto = require('node:crypto');
+const commit = 'c0362476989ba2aef240a2ef36656fb9dbf729c9';
+const directory = 'data/word-study/original-language/genesis';
+const blob = ch => cp.execFileSync('git', ['show', `${commit}:${directory}/${ch}.json`],
+  {encoding:'utf8', maxBuffer:16000000});
+const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
+const records = [31,32,33].flatMap(ch => JSON.parse(blob(ch)).records
+  .filter(r => ch !== 33 || r.verse === 1));
+const payload = {
+  version:1,
+  origin:{repository:'whodax/god4-website', commit,
+    artifacts:[31,32,33].map(ch => `${directory}/${ch}.json`),
+    extraction:'Complete source-coordinate chapters 31 and 32, plus source 33:1, from baseline Git blobs; no newly repaired output used.',
+    verification:'Retained historical OSHB token evidence, not independently pinned upstream XML/DAT.'},
+  baselineCanonicalHashes:Object.fromEntries(Array.from({length:50}, (_,i) =>
+    [`${i+1}.json`, sha(blob(i+1).replace(/\r\n/g,'\n'))])),
+  records
+};
+const bytes = Buffer.from(JSON.stringify(payload,null,2)+'\n');
+if(sha(bytes) !== 'f44725fef72896ba87aa2f02ae261bc9cb19dbe47736cca2926924d7226a89f4')
+  throw new Error('Unexpected extracted source bytes');
+fs.writeFileSync('tests/fixtures/original-language/genesis-source-boundary.json.gz',
+  zlib.gzipSync(bytes,{level:9}));
+```
+
+Retained compressed bytes are pinned as well; verify the compressed hash after
+re-extraction, since compression-library versions can encode equivalent JSON
+differently. Ordinary repair uses the already retained fixture without network
+access or upstream inputs:
+
+```text
+node tools/repair-genesis-references.js --dry-run
+node tools/repair-genesis-references.js
+node tools/repair-genesis-references.js --check
+node --test tests/genesis-original-language-data.unit.js tests/original-language-importer.unit.js
+node node_modules/@playwright/test/cli.js test tests/genesis-original-language.spec.js --workers=1
+```
+
+The tool rejects unexpected fixture hashes/boundaries, malformed fields,
+noncontiguous or duplicate token indexes, mapping collisions, missing canonical
+coordinates, Reader 32:33, unexpected field mutations and unexpected production
+input. A repeated repair accepts already-corrected input without writing files.
+
+Genesis JSON is lazily fetched and is neither shell-cached nor runtime-cached
+by the service worker. Shell cache stays **21**; translation manifest and all
+Scripture bundles remain unchanged. Normal online HTTP revalidation obtains
+corrected shards after publication; reload clears the provider's in-memory
+chapter promise cache. Hosted Cloudflare acceptance remains required after a
+separately authorized push, including the five reviewed Genesis boundary cases
+and John, Romans, WEB Psalms, Reader empty-placeholder and Isaiah regressions.
+
+Local validation on October 9, 2026:
+
+- Combined Genesis, importer, Reader-helper, Psalms, Romans data and reference
+  mapping unit tests: **262 passed, 0 failed, 0 skipped**. An initial run had
+  261 passes and one stale Reader-task preservation assertion; that assertion
+  now checks the historical Reader repair commit rather than prohibiting later
+  Genesis-only data work. The new Genesis tests check current preservation.
+- Browser/provider/regression run: **63 passed, 4 failed** out of 67 cases.
+  All **9 new Genesis browser cases passed on the first attempt**, with no
+  page or console errors. The failures were existing Word Study focus-return
+  checks at KJV Romans 16:25, Romans 1:1, Romans 16:27, and John 1:1.
+- Isolated rerun of those four checks: **3 passed, 1 flaky, 0 failed**.
+  Romans 16:27 required one retry; the other three passed on the first isolated
+  attempt. These are rerun successes, not clean original-run passes.
+- John Greek, Romans 8:28 single `παντα` / `G3956` / `A-APN`, WEB Romans
+  14:24–26 mapping, Reader empty-placeholder behavior, WEB Psalms 23/150,
+  provider tests and hidden Isaiah 11:3 behavior all have successful results.
+- Asset validation: **39 references, 26 referenced JavaScript files, 3 icons**,
+  PWA worker and generated metadata for eight translations passed.
+- Explicit syntax checks passed for all five added/modified JavaScript files;
+  repair `--check`, manifest validation and `git diff --check` passed.
+- Re-extraction from baseline Git blobs reproduced both pinned hashes and the
+  compressed fixture bytes exactly in memory.
+
+Exact changed-file inventory:
+
+- `data/word-study/original-language/genesis/31.json`
+- `data/word-study/original-language/genesis/32.json`
+- `tools/repair-genesis-references.js`
+- `tests/fixtures/original-language/genesis-source-boundary.json.gz`
+- `tests/genesis-original-language-data.unit.js`
+- `tests/genesis-original-language.spec.js`
+- `tests/original-language-importer.unit.js`
+- `tests/reader-empty-verse.unit.js` (historical preservation assertion only)
+- `docs/original-language-import.md`
+
+These local results do not satisfy pending Cloudflare preview acceptance.
 
 ## Pure generation and local CLI
 
@@ -131,10 +276,12 @@ Greek remains Greek; Greek morphology beginning with `A` means an adjective and
 is not interpreted as Aramaic. The controller uses `he`, `arc`, or `grc` and RTL
 for Hebrew/Aramaic. Provider selection/loading and visible styling are unchanged.
 
-No deployed data was regenerated in this phase. Tests reconstruct local parser
-inputs from all 20,629 Genesis and 15,892 John records in memory. Historical Genesis
-extraction must reproduce every original field; generic Genesis output may differ
-only in the documented boundary coordinates and two language labels. Generic John
+The original generic-import phase did not regenerate deployed data. The later
+coordinate-only repair above intentionally excludes its language-label changes.
+Tests reconstruct local parser inputs from retained source-coordinate Genesis
+records and all 15,892 John records in memory. Historical Genesis extraction must
+reproduce every original field; generic Genesis output may differ only in the
+documented boundary coordinates and two language labels. Generic John
 must reproduce all records and all 21 serialized chapter files (normalizing only
 checkout line endings). No other difference is accepted.
 
