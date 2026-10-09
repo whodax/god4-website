@@ -133,6 +133,8 @@ for(const [name,viewport] of [['desktop',{width:1280,height:900}],['mobile',{wid
       await expect(page.locator('#readerContent [data-verse-number="67"]')).not.toBeFocused();
       await page.evaluate(()=>{
         switchView('compare',document.querySelector('[aria-controls="view-compare"]'));
+        // Compare may keep its sticky navigation visible after document-height clamping.
+        window.applicationScrolls=0;
         scrollReaderStartIntoView();
         document.querySelector('#readerContent h2').remove();scrollReaderStartIntoView();
       });

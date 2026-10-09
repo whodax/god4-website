@@ -53,22 +53,22 @@ for(const [name,viewport] of [['mobile',{width:390,height:844}],['desktop',{widt
         console.log(JSON.stringify({viewport:name,book,before,hidden,after,calls:await page.evaluate(()=>traceCalls)}));
         expect(Math.abs(after.y-before.y)).toBeLessThanOrEqual(3);
         expect(Math.abs(after.top-before.top)).toBeLessThanOrEqual(3);
-        expect(after.heading).toBeLessThan(0);
+        expect(after.heading).toBeLessThan(await page.evaluate(()=>readerVisibleTop()));
         expect(await page.evaluate(()=>traceCalls)).toEqual({load:0,start:0,verse:0});
       });
     }
 
-    test('unchanged selected verse does not override the reading location or gain focus',async({page})=>{
+    test('unchanged selected verse is authoritative without gaining focus',async({page})=>{
       await readAt(page,67);
-      const before=await location(page,45);
       await interactWithTab(page,'compare',name==='mobile');
       await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
       await interactWithTab(page,'reader',name==='mobile');
-      const after=await location(page,45);
-      expect(Math.abs(after.y-before.y)).toBeLessThanOrEqual(3);
-      expect(Math.abs(after.top-before.top)).toBeLessThanOrEqual(3);
       await expect(page.locator('#verseSelect')).toHaveValue('67');
-      await expect(page.locator('#readerContent [data-verse-number="67"]')).not.toBeFocused();
+      const target=page.locator('#readerContent [data-verse-number="67"]');
+      await expect(target).not.toBeFocused();
+      const bounds=await target.evaluate(el=>({top:el.getBoundingClientRect().top,bottom:el.getBoundingClientRect().bottom,boundary:readerVisibleTop(),height:innerHeight}));
+      expect(bounds.top).toBeGreaterThanOrEqual(bounds.boundary);
+      expect(bounds.bottom).toBeLessThanOrEqual(bounds.height);
     });
 
     test('keyboard tab return restores reading position while preserving tab focus',async({page})=>{

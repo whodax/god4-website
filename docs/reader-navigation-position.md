@@ -18,7 +18,8 @@ verse positioning. Chapter scrolling is immediate; explicit smooth scrolling is
 immediate when reduced motion is requested.
 
 Startup rendering does not request positioning. Returning to an unchanged Reader
-tab restores its reading location without chapter/verse targeting or a focus change.
+tab positions its selected verse when present, or restores its reading anchor when
+there is no selection. An unchanged reference does not cause a new focus announcement.
 Native browser scroll restoration remains `auto`
 and ordinary navigation creates no history entries. Plan references still supply
 an explicit verse and retain the existing Plan history/session behavior.
@@ -44,11 +45,12 @@ below the measured sticky controls, plus its translation/book/chapter/selected
 verse and scroll surface. Passive scroll observations record reading locations;
 scrolling into the tab-navigation region does not overwrite the last reading
 location. Leaving Reader also captures its position when necessary. Once Reader
-is visible again, an unchanged reference restores that anchor immediately and
-keeps tab focus. A changed hidden reference uses chapter-start or explicit-verse
+is visible again, an unchanged reference keeps tab focus and gives its selected
+verse priority; otherwise it restores the anchor immediately.
+A changed hidden reference uses chapter-start or explicit-verse
 positioning instead. Internal passage navigation skips bookmark restoration
 because it owns the final target. No bookmark is persisted, no timers are added,
-and neither native history nor the tab layout changes. Shell cache remains 22
+and native history remains unchanged. Shell cache remains 22
 for this continuation on the unpublished branch.
 
 `reader-tab-position.spec.js` exercises actual taps at 390×844 and desktop clicks
@@ -62,6 +64,44 @@ all 91 combined browser regressions passed, followed by 18/18 final focused chec
 `git diff --check` passed. Actual-phone acceptance on an updated hosted preview
 remains required after an authorized push.
 
+The second phone acceptance test showed that manually scrolling back up to static
+tabs could still replace the ordinary reading anchor. On mobile at up to 620 CSS
+pixels, the existing `.bs-nav` row is now sticky within `#bibleApp`. Its generic
+`.bs-header` wrapper uses `display:contents`, so only the row stays pinned and the
+Study Desk title scrolls away. Desktop header layout, labels, controls, fonts and
+colors remain unchanged. The row retains the existing background/border and uses
+safe-area-aware horizontal padding and the existing gold keyboard-focus outline.
+
+The existing CSSOM/ResizeObserver measurements now live on `#bibleApp` and include
+`--reader-tabs-height`. The stack is site navigation, tabs, then Reader toolbar;
+chapter/verse/Word Study positioning includes their measured heights. Fullscreen
+continues to use only its own toolbar. If short Compare/Plan content clamps the
+viewport beyond the sticky row's container, activation keeps that row visible.
+No floating or duplicate navigation, timers or history entries are added.
+
+The selected verse is authoritative even after the user manually scrolls up to
+the heading before switching views. Unchanged selections are scrolled into view
+without refocusing; explicit new hidden references retain normal verse focus.
+No-selection returns continue to use the saved verse/offset anchor.
+`reader-mobile-sticky-tabs.spec.js` uses raw touchscreen coordinates checked with
+`elementFromPoint`, so offscreen controls cannot be made reachable by Playwright's
+automatic scrolling. It covers Genesis 24:45, Psalms 23:6, John 1:30, ordinary
+reading, manual scroll-back fallback, keyboard focus, 320px zoom-equivalent reflow,
+and fullscreen. Existing hidden-reference and six-passage navigation suites remain
+active. Cache stays 22: a new immutable preview URL has its own origin and shell
+cache; reusing an existing preview/alias origin requires ensuring its cached shell
+is refreshed during hosted acceptance.
+
+Sticky-tab continuation validation: final focused checks passed 43/43 (seven
+raw-touch/sticky checks, 18 navigation checks and 18 tab-return checks). The broad
+run passed 118/121; its three old assertions were corrected for practical 320px
+reflow, intentional Compare-navigation visibility scrolling, and heading geometry
+relative to the enlarged sticky stack, then passed in the final focused run.
+The remaining 79 broad checks passed, including desktop layout, keyboard/reflow,
+fullscreen, Plan/history, CSP and PWA/offline. Units passed 263/263. Asset validation,
+JavaScript syntax, browser CSS parsing/computed-style checks and
+`git diff --check` passed; no standalone CSS linter is installed.
+
 `reader-navigation-scroll.spec.js` checks desktop/mobile geometry for six passages
 from three starting offsets, controls, voice, cold/warm and pending translations,
 explicit verses, Search from Reader/Compare, normal/reduced motion, stale study
@@ -74,9 +114,12 @@ Changed files:
 - `js/bible/reader.js`
 - `js/app.js`
 - `js/word-study/controller.js`
+- `css/companion.css`
 - `sw.js`
 - `tests/reader-navigation-scroll.spec.js`
 - `tests/reader-tab-position.spec.js`
+- `tests/reader-mobile-sticky-tabs.spec.js`
+- `tests/compact-reader-controls.spec.js`
 - `tests/god4.spec.js`
 - `tests/reader-empty-verse.spec.js`
 - `tests/romans-original-language.spec.js`

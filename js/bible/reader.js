@@ -230,6 +230,11 @@ function readerVisibleTop(){
     var navRect = siteNav.getBoundingClientRect();
     if(navRect.top <= 0 && navRect.bottom > 0) top = navRect.bottom;
   }
+  var tabs = document.querySelector('#bibleApp .bs-nav');
+  if(tabs && getComputedStyle(tabs).position === 'sticky'){
+    var tabsTop = parseFloat(getComputedStyle(tabs).top);
+    if(Number.isFinite(tabsTop)) top = Math.max(top, tabsTop + tabs.getBoundingClientRect().height);
+  }
   var toolbar = document.querySelector('#view-reader.active .reader-toolbar');
   if(toolbar && getComputedStyle(toolbar).position === 'sticky'){
     var stickyTop = parseFloat(getComputedStyle(toolbar).top);
@@ -271,15 +276,17 @@ function initializeReaderStickyOffsets(){
   var view = document.getElementById('view-reader');
   var siteNav = document.querySelector('nav');
   var toolbar = view && view.querySelector('.reader-toolbar');
+  var tabs = document.querySelector('#bibleApp .bs-nav');
   if(!view || !siteNav || !toolbar) return;
   var sheet = Array.from(document.styleSheets).find(function(candidate){
     return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);
   });
   if(!sheet) return;
-  var ruleIndex = sheet.insertRule('#view-reader { --reader-nav-bottom:105px; --reader-toolbar-height:53px; }', sheet.cssRules.length);
+  var ruleIndex = sheet.insertRule('#bibleApp { --reader-nav-bottom:105px; --reader-tabs-height:0px; --reader-toolbar-height:53px; }', sheet.cssRules.length);
   var style = sheet.cssRules[ruleIndex].style;
   function update(){
     style.setProperty('--reader-nav-bottom', siteNav.getBoundingClientRect().bottom + 'px');
+    style.setProperty('--reader-tabs-height', (tabs && getComputedStyle(tabs).position === 'sticky' ? tabs.getBoundingClientRect().height : 0) + 'px');
     style.setProperty('--reader-toolbar-height', toolbar.getBoundingClientRect().height + 'px');
   }
   update();
@@ -287,6 +294,7 @@ function initializeReaderStickyOffsets(){
     var observer = new ResizeObserver(update);
     observer.observe(siteNav);
     observer.observe(toolbar);
+    if(tabs) observer.observe(tabs);
   }
 }
 
@@ -807,9 +815,9 @@ function rememberReaderTabPosition(leaving){
   if(!reader || !reader.classList.contains('active')) return;
   var reference = readerTabReference();
   var fullscreen = reader.classList.contains('reader-fullscreen');
-  var tabs = document.querySelector('.bs-header');
+  var tabs = document.querySelector('#bibleApp .bs-nav');
   // Moving up to the non-sticky tabs is navigation, not a new reading location.
-  if(!fullscreen && tabs && tabs.getBoundingClientRect().bottom > readerVisibleTop()){
+  if(!fullscreen && tabs && getComputedStyle(tabs).position !== 'sticky' && tabs.getBoundingClientRect().bottom > readerVisibleTop()){
     if(!leaving || (readerTabPosition && readerTabPosition.reference === reference)) return;
   }
   var top = readerVisibleTop();
@@ -834,6 +842,12 @@ function restoreReaderTabPosition(){
     if(currentVerse) applyReaderVerseSelection(currentVerse, true);
     else scrollReaderStartIntoView();
     rememberReaderTabPosition(true);
+    return;
+  }
+  // An explicit selection is authoritative even if the user went back up to the tabs.
+  // An unchanged selection needs positioning, not a new focus announcement.
+  if(currentVerse){
+    scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="' + currentVerse + '"]'), 'instant');
     return;
   }
   var fullscreen = reader.classList.contains('reader-fullscreen');
@@ -870,6 +884,17 @@ function switchView(view, btn, positionOnReturn){
   btn.classList.add('active');
   btn.setAttribute('aria-pressed', 'true');
   if(view === 'reader' && !readerWasActive && positionOnReturn !== false) restoreReaderTabPosition();
+  if(view !== 'reader'){
+    var tabs = document.querySelector('#bibleApp .bs-nav');
+    if(tabs && getComputedStyle(tabs).position === 'sticky'){
+      var tabsTop = parseFloat(getComputedStyle(tabs).top);
+      var tabsRect = tabs.getBoundingClientRect();
+      // A short loading view can clamp the document past the sticky row's container.
+      if(Number.isFinite(tabsTop) && (tabsRect.top < tabsTop - 1 || tabsRect.bottom > window.innerHeight)){
+        window.scrollBy({top:tabsRect.top - tabsTop, behavior:'instant'});
+      }
+    }
+  }
 }
 
 function populateBooks(){
