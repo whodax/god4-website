@@ -1,0 +1,3579 @@
+{
+  "commit": "be2c768f35c4951f9ca9f6ddd3bedeab2cf4f784",
+  "archiveUrl": "https://ebible.org/Scriptures/engwebp_html.zip",
+  "archiveSha256": "a4c0685a929969a4bea1191d90a08fe62c17651c34639a4f57d4a2fd0bd9d9ca",
+  "sourceJsonSha256": "55cacfcd2cdc763e57774c7a1332ec1ec40db1e0c57cd7789cf1cd57e044c6a9",
+  "nonPsalmsHashes": {
+    "genesis": "2738ba4e8b3f51b2414389ea132908275300d7145564c86b67e9093a42557d88",
+    "exodus": "aa21aecb994a2033f871675c38cc4188cea425a4cb0fb35b001996419b2e4b4c",
+    "leviticus": "53e020c3c0c686a2c4603f5384bf3f4faf105e6506d703b20902aa1f4f1ebc9d",
+    "numbers": "8451c68a7db66fe3f8c39ad34a564bf2c16f9b5f4924b01bbd5437dc6077963c",
+    "deuteronomy": "b0eaf6f504660bd970ccbd2a204859f6b71bc74fdc48ecbc2f71f86977bc1360",
+    "joshua": "5245da16bfcd29fdb6539e4254de8f0e318f701ae64dd304c95d3a27e8144758",
+    "judges": "c5a1cc682487d4dff08687723e0112a1abfd3390bae1ed7c305cb2da68d1deac",
+    "ruth": "97e8ae479abcab1a8fbc4a973172b705d121d7b1562f357e8c902869a5af5970",
+    "1-samuel": "b754f41de706a7115cabd90a1bbedd3de28f0cfa06668fb592af56f92591223e",
+    "2-samuel": "89f61eab6f5ab1da363dc12eea33ff39ded60667db2c1e78f5e072e26db94780",
+    "1-kings": "a7c8fd6be639cfea4e8c87433707cafc3dc74c5385dfa3da560e13c1996600a6",
+    "2-kings": "5accb66e9d9f06894bc627abc6941fcbfc38953203dd14bff4bd0d0c73434204",
+    "1-chronicles": "91c6af8a0ed51694630022325f16bc1dc2e930afca15e33054ed9b615b0b9ace",
+    "2-chronicles": "33de11cca828e7cba7a3127730b3fcd514803774e440f15810b1c920c11574d4",
+    "ezra": "24b4213ed8bafcdd63fe84b8f88582f4577b837fa1f3a2b59cc2f9dea9b89a6a",
+    "nehemiah": "fa571e8ebc64ba4ee3e91d0efed168a6be8b6bc804299092715d0480badded85",
+    "esther": "df5ecb4c4848f54ac6fb0f6b4db500d5e7a4c7120e7f63279c8fe793e2c46477",
+    "job": "ee2b7116ee19051fb123338ba5c69da7158cd48ccd80b429b6471858d6eebdae",
+    "proverbs": "e1d04057121f8214ce9c273f36ad4d59d9f1d201574e2f2402a1da9054fc0fdc",
+    "ecclesiastes": "02ba6e81db5bc94f03472319e2058d671d107772d29f291362ba82a3b3fe4335",
+    "song-of-solomon": "5ab2d9ba2d9a5b78284d614ce8e9aca97a43fdbc8b8daa79a14e0a259751c28e",
+    "isaiah": "acbeea9abea43108ebddf18cf5b48e913ce2bd1514e599aeb0990383e39688c0",
+    "jeremiah": "ca8c201ebd00781ec63926efac5c75b3f29d935377ff099ec41b716c0e1d3388",
+    "lamentations": "cbe62f00ab07ca5fdc00a684f2684b3bd1135f35e804c738d55b128627ad8c51",
+    "ezekiel": "6d731498ea540a4eca7a3ef5f76eca06aa04cdf7aa7c3abaedb734c09cf3b37d",
+    "daniel": "2d1c03ffef922a422ad1fa490d5e8d1adb9b2fcd6d745cba382b86a88552ae6d",
+    "hosea": "232f8712167cebc866a0b7ae675e27b570a103c9a3bb45400ad12f0613d71d65",
+    "joel": "fa467302426ccc847484a53cd7a6c50e5764e1049eb5f3e0318fa458aa97e5f2",
+    "amos": "1f481a736100287aa2c39fdedc87ac21a961febb77c4bf4ecf9ff56b22f9e675",
+    "obadiah": "95e89b4cfe728f6679112db8d125212211ed15469eb479f14e8fcfa3df267b30",
+    "jonah": "9e4f02450d1d555a68349f172bcf408b31196e93cd4f1b05a65a1c7a877f53b2",
+    "micah": "df7c9578bf46c010d6aaa310fb8cb92ad74061c1d5b0a700f02b12cbbef04f39",
+    "nahum": "f9d30ec746dbd948a83e6d7ab1eaf11b83d35fdd9edc94fb60c19bd5c1d4387a",
+    "habakkuk": "a593d35f9a12065f4971ac1c1981e92c639fa24a382ef5a87fe3be9519ce7984",
+    "zephaniah": "1daaca00463c9a607d0294e73906bf3b3197c3618fa030064886b4fb5620e819",
+    "haggai": "2afd216a2f99ab971128ec7c01c3a9469586b6a0bf5d73401564c56298508280",
+    "zechariah": "fd7018b6bc032eac5b5a4252a98616197c25c2861d92993665570cf38caab6d3",
+    "malachi": "591f869e1c2208f1c9e0bf962f51be436aaab9b4d60789d92c4e55b0f79eb2dc",
+    "matthew": "a86258cb0f53cd973b7aad644d7ae850835f9481425667372f44f996e0fa525c",
+    "mark": "3e664e8ecc6b2a3a5a21801d64dbacc72fd59a398ea16a159befa1585144baaf",
+    "luke": "7a579840bbde7f7aaf90231eb8f8a5e28b508392f8f6e1dd5651f3b26be5f526",
+    "john": "1d84b7357f325229bed2ca04a907c179ca5e0d6362307ba55c51c012f8c9967a",
+    "acts": "a9a5770b7725ae0cb4898e8f987adf370a3a82151c8e5c31a73d9aba8c73ed70",
+    "romans": "d5364b16ac82471b6f41328c4304bc4dbde33c4ba70cce9ccdf1526978ec8750",
+    "1-corinthians": "eb6a6edc04321b0f49bf77532414f3ac1aa76361641ee51b729d7d6947c3308f",
+    "2-corinthians": "2806c7e59ccdc5c91b232f26d5a65f77d2ba48dc84d9870bb104ae3caacadb7d",
+    "galatians": "23dfd7ba681e965b2a0c1ace9248e2c457f4048430d9ce06e2e8f2b1a99a9f1c",
+    "ephesians": "3e8402f1d1fdd2e70b0004d3f00de3a7de341c82bc87114277573aa45e0b6c7d",
+    "philippians": "bbf0e88f0c333d976b6f6ae236cd6de4009578f8f7b47dba4bcb2392b26ddc7d",
+    "colossians": "e1404701f2b7810d47e5b1896f79cb98304958231f5ea7f32d15eb2c9a725610",
+    "1-thessalonians": "23a9111e253baa238f53041eb29fc9642e3fa310966bc8cb1c2aff937e9a90b2",
+    "2-thessalonians": "c0644b67991535f9deb75a7aef03bf2fe73555b0e237a107bffbfae27a898959",
+    "1-timothy": "e8bf67dfa481c078e937c85340aab6c225e5abc8a440d1873b8db4f3d6622fb8",
+    "2-timothy": "936332d55c580439f165726061eff08d8f07c218e5663a843264376e35525657",
+    "titus": "63f3dd8e568b4afa52563754231b6f561417193cbf324db8f4481e4830a015af",
+    "philemon": "f8943306e3e4d104207fcba53e38e3eb0c132e0eec59ffc42ac8a8012faab3e9",
+    "hebrews": "cb86895984197984f1e9fbc52970a33e9f15d665f92878e6761fbf647592c187",
+    "james": "bc36b1ee030849f359906f0bebbd7dac8aed6b1d9ce3bbac78c8bdb17714e408",
+    "1-peter": "afe6eb5eb79144994da73fe146e8e8e48cd0a5a494c45274808d42f0174d0457",
+    "2-peter": "f1505252d77bd7ae5f6305eedc8a3501ebdba1a5d74bb61aa48b5ff4ddfe950b",
+    "1-john": "db9873ceb9a4cb0eaec5779a7b8a81187c25e201ba06fb1955e4eff895f39e55",
+    "2-john": "b39768964b954285632e3686463d8979821646cc38e32adb6ad3eb335537cd66",
+    "3-john": "a1e7e7d707beb2f04c7c0d67d94c1293687e0b694d53958605453f2814762eb0",
+    "jude": "dad738fd7be7100be862c3e015d6bb08fc2a31eb10acb4590451a5d9cb5f812a",
+    "revelation": "19bc2f2bf246ba9a68ab2ac7bbe3b9490c6efebb838d9ddfc0c009835d71c424"
+  },
+  "manifest": {
+    "web": {
+      "id": "web",
+      "path": "/js/bible/web.js",
+      "revision": "e05fd1ce8dd85087",
+      "integrity": "sha256-4F/Rzo3YUIfkD4k+z7m1qZyxnr3Gp1/uKByyn3a13MU=",
+      "bytes": 4194375,
+      "structure": {
+        "bookCount": 66,
+        "chapterCount": 1190,
+        "verseCount": 31103,
+        "books": [
+          [
+            "genesis",
+            50,
+            1533
+          ],
+          [
+            "exodus",
+            40,
+            1213
+          ],
+          [
+            "leviticus",
+            27,
+            859
+          ],
+          [
+            "numbers",
+            36,
+            1288
+          ],
+          [
+            "deuteronomy",
+            34,
+            959
+          ],
+          [
+            "joshua",
+            24,
+            658
+          ],
+          [
+            "judges",
+            21,
+            618
+          ],
+          [
+            "ruth",
+            4,
+            85
+          ],
+          [
+            "1-samuel",
+            31,
+            810
+          ],
+          [
+            "2-samuel",
+            24,
+            695
+          ],
+          [
+            "1-kings",
+            22,
+            816
+          ],
+          [
+            "2-kings",
+            25,
+            719
+          ],
+          [
+            "1-chronicles",
+            29,
+            942
+          ],
+          [
+            "2-chronicles",
+            36,
+            822
+          ],
+          [
+            "ezra",
+            10,
+            280
+          ],
+          [
+            "nehemiah",
+            13,
+            406
+          ],
+          [
+            "esther",
+            10,
+            167
+          ],
+          [
+            "job",
+            42,
+            1070
+          ],
+          [
+            "psalms",
+            151,
+            2461
+          ],
+          [
+            "proverbs",
+            31,
+            915
+          ],
+          [
+            "ecclesiastes",
+            12,
+            222
+          ],
+          [
+            "song-of-solomon",
+            8,
+            117
+          ],
+          [
+            "isaiah",
+            66,
+            1292
+          ],
+          [
+            "jeremiah",
+            52,
+            1364
+          ],
+          [
+            "lamentations",
+            5,
+            154
+          ],
+          [
+            "ezekiel",
+            48,
+            1273
+          ],
+          [
+            "daniel",
+            12,
+            357
+          ],
+          [
+            "hosea",
+            14,
+            197
+          ],
+          [
+            "joel",
+            3,
+            73
+          ],
+          [
+            "amos",
+            9,
+            146
+          ],
+          [
+            "obadiah",
+            1,
+            21
+          ],
+          [
+            "jonah",
+            4,
+            48
+          ],
+          [
+            "micah",
+            7,
+            105
+          ],
+          [
+            "nahum",
+            3,
+            47
+          ],
+          [
+            "habakkuk",
+            3,
+            56
+          ],
+          [
+            "zephaniah",
+            3,
+            53
+          ],
+          [
+            "haggai",
+            2,
+            38
+          ],
+          [
+            "zechariah",
+            14,
+            211
+          ],
+          [
+            "malachi",
+            4,
+            55
+          ],
+          [
+            "matthew",
+            28,
+            1071
+          ],
+          [
+            "mark",
+            16,
+            678
+          ],
+          [
+            "luke",
+            24,
+            1151
+          ],
+          [
+            "john",
+            21,
+            879
+          ],
+          [
+            "acts",
+            28,
+            1007
+          ],
+          [
+            "romans",
+            16,
+            434
+          ],
+          [
+            "1-corinthians",
+            16,
+            437
+          ],
+          [
+            "2-corinthians",
+            13,
+            257
+          ],
+          [
+            "galatians",
+            6,
+            149
+          ],
+          [
+            "ephesians",
+            6,
+            155
+          ],
+          [
+            "philippians",
+            4,
+            104
+          ],
+          [
+            "colossians",
+            4,
+            95
+          ],
+          [
+            "1-thessalonians",
+            5,
+            89
+          ],
+          [
+            "2-thessalonians",
+            3,
+            47
+          ],
+          [
+            "1-timothy",
+            6,
+            113
+          ],
+          [
+            "2-timothy",
+            4,
+            83
+          ],
+          [
+            "titus",
+            3,
+            46
+          ],
+          [
+            "philemon",
+            1,
+            25
+          ],
+          [
+            "hebrews",
+            13,
+            303
+          ],
+          [
+            "james",
+            5,
+            108
+          ],
+          [
+            "1-peter",
+            5,
+            105
+          ],
+          [
+            "2-peter",
+            3,
+            61
+          ],
+          [
+            "1-john",
+            5,
+            105
+          ],
+          [
+            "2-john",
+            1,
+            13
+          ],
+          [
+            "3-john",
+            1,
+            14
+          ],
+          [
+            "jude",
+            1,
+            25
+          ],
+          [
+            "revelation",
+            22,
+            404
+          ]
+        ]
+      }
+    },
+    "asv": {
+      "id": "asv",
+      "path": "/js/bible/asv.js",
+      "revision": "f4bf443b27d3036b",
+      "integrity": "sha256-9L9EOyfTA2v2Kg3l0XXS1LlWsiUKe65oPi/ztyKzz5U=",
+      "bytes": 4250321,
+      "structure": {
+        "bookCount": 66,
+        "chapterCount": 1189,
+        "verseCount": 31102,
+        "books": [
+          [
+            "genesis",
+            50,
+            1533
+          ],
+          [
+            "exodus",
+            40,
+            1213
+          ],
+          [
+            "leviticus",
+            27,
+            859
+          ],
+          [
+            "numbers",
+            36,
+            1288
+          ],
+          [
+            "deuteronomy",
+            34,
+            959
+          ],
+          [
+            "joshua",
+            24,
+            658
+          ],
+          [
+            "judges",
+            21,
+            618
+          ],
+          [
+            "ruth",
+            4,
+            85
+          ],
+          [
+            "1-samuel",
+            31,
+            810
+          ],
+          [
+            "2-samuel",
+            24,
+            695
+          ],
+          [
+            "1-kings",
+            22,
+            816
+          ],
+          [
+            "2-kings",
+            25,
+            719
+          ],
+          [
+            "1-chronicles",
+            29,
+            942
+          ],
+          [
+            "2-chronicles",
+            36,
+            822
+          ],
+          [
+            "ezra",
+            10,
+            280
+          ],
+          [
+            "nehemiah",
+            13,
+            406
+          ],
+          [
+            "esther",
+            10,
+            167
+          ],
+          [
+            "job",
+            42,
+            1070
+          ],
+          [
+            "psalms",
+            150,
+            2461
+          ],
+          [
+            "proverbs",
+            31,
+            915
+          ],
+          [
+            "ecclesiastes",
+            12,
+            222
+          ],
+          [
+            "song-of-solomon",
+            8,
+            117
+          ],
+          [
+            "isaiah",
+            66,
+            1292
+          ],
+          [
+            "jeremiah",
+            52,
+            1364
+          ],
+          [
+            "lamentations",
+            5,
+            154
+          ],
+          [
+            "ezekiel",
+            48,
+            1273
+          ],
+          [
+            "daniel",
+            12,
+            357
+          ],
+          [
+            "hosea",
+            14,
+            197
+          ],
+          [
+            "joel",
+            3,
+            73
+          ],
+          [
+            "amos",
+            9,
+            146
+          ],
+          [
+            "obadiah",
+            1,
+            21
+          ],
+          [
+            "jonah",
+            4,
+            48
+          ],
+          [
+            "micah",
+            7,
+            105
+          ],
+          [
+            "nahum",
+            3,
+            47
+          ],
+          [
+            "habakkuk",
+            3,
+            56
+          ],
+          [
+            "zephaniah",
+            3,
+            53
+          ],
+          [
+            "haggai",
+            2,
+            38
+          ],
+          [
+            "zechariah",
+            14,
+            211
+          ],
+          [
+            "malachi",
+            4,
+            55
+          ],
+          [
+            "matthew",
+            28,
+            1071
+          ],
+          [
+            "mark",
+            16,
+            678
+          ],
+          [
+            "luke",
+            24,
+            1151
+          ],
+          [
+            "john",
+            21,
+            879
+          ],
+          [
+            "acts",
+            28,
+            1007
+          ],
+          [
+            "romans",
+            16,
+            433
+          ],
+          [
+            "1-corinthians",
+            16,
+            437
+          ],
+          [
+            "2-corinthians",
+            13,
+            257
+          ],
+          [
+            "galatians",
+            6,
+            149
+          ],
+          [
+            "ephesians",
+            6,
+            155
+          ],
+          [
+            "philippians",
+            4,
+            104
+          ],
+          [
+            "colossians",
+            4,
+            95
+          ],
+          [
+            "1-thessalonians",
+            5,
+            89
+          ],
+          [
+            "2-thessalonians",
+            3,
+            47
+          ],
+          [
+            "1-timothy",
+            6,
+            113
+          ],
+          [
+            "2-timothy",
+            4,
+            83
+          ],
+          [
+            "titus",
+            3,
+            46
+          ],
+          [
+            "philemon",
+            1,
+            25
+          ],
+          [
+            "hebrews",
+            13,
+            303
+          ],
+          [
+            "james",
+            5,
+            108
+          ],
+          [
+            "1-peter",
+            5,
+            105
+          ],
+          [
+            "2-peter",
+            3,
+            61
+          ],
+          [
+            "1-john",
+            5,
+            105
+          ],
+          [
+            "2-john",
+            1,
+            13
+          ],
+          [
+            "3-john",
+            1,
+            14
+          ],
+          [
+            "jude",
+            1,
+            25
+          ],
+          [
+            "revelation",
+            22,
+            404
+          ]
+        ]
+      }
+    },
+    "kjv": {
+      "id": "kjv",
+      "path": "/js/bible/kjv.js",
+      "revision": "f4fdc3e83d5359b2",
+      "integrity": "sha256-9P3D6D1TWbIFOctVricRfKFiqguK44LMKtVW081hD3o=",
+      "bytes": 4290297,
+      "structure": {
+        "bookCount": 66,
+        "chapterCount": 1189,
+        "verseCount": 31102,
+        "books": [
+          [
+            "genesis",
+            50,
+            1533
+          ],
+          [
+            "exodus",
+            40,
+            1213
+          ],
+          [
+            "leviticus",
+            27,
+            859
+          ],
+          [
+            "numbers",
+            36,
+            1288
+          ],
+          [
+            "deuteronomy",
+            34,
+            959
+          ],
+          [
+            "joshua",
+            24,
+            658
+          ],
+          [
+            "judges",
+            21,
+            618
+          ],
+          [
+            "ruth",
+            4,
+            85
+          ],
+          [
+            "1-samuel",
+            31,
+            810
+          ],
+          [
+            "2-samuel",
+            24,
+            695
+          ],
+          [
+            "1-kings",
+            22,
+            816
+          ],
+          [
+            "2-kings",
+            25,
+            719
+          ],
+          [
+            "1-chronicles",
+            29,
+            942
+          ],
+          [
+            "2-chronicles",
+            36,
+            822
+          ],
+          [
+            "ezra",
+            10,
+            280
+          ],
+          [
+            "nehemiah",
+            13,
+            406
+          ],
+          [
+            "esther",
+            10,
+            167
+          ],
+          [
+            "job",
+            42,
+            1070
+          ],
+          [
+            "psalms",
+            150,
+            2461
+          ],
+          [
+            "proverbs",
+            31,
+            915
+          ],
+          [
+            "ecclesiastes",
+            12,
+            222
+          ],
+          [
+            "song-of-solomon",
+            8,
+            117
+          ],
+          [
+            "isaiah",
+            66,
+            1292
+          ],
+          [
+            "jeremiah",
+            52,
+            1364
+          ],
+          [
+            "lamentations",
+            5,
+            154
+          ],
+          [
+            "ezekiel",
+            48,
+            1273
+          ],
+          [
+            "daniel",
+            12,
+            357
+          ],
+          [
+            "hosea",
+            14,
+            197
+          ],
+          [
+            "joel",
+            3,
+            73
+          ],
+          [
+            "amos",
+            9,
+            146
+          ],
+          [
+            "obadiah",
+            1,
+            21
+          ],
+          [
+            "jonah",
+            4,
+            48
+          ],
+          [
+            "micah",
+            7,
+            105
+          ],
+          [
+            "nahum",
+            3,
+            47
+          ],
+          [
+            "habakkuk",
+            3,
+            56
+          ],
+          [
+            "zephaniah",
+            3,
+            53
+          ],
+          [
+            "haggai",
+            2,
+            38
+          ],
+          [
+            "zechariah",
+            14,
+            211
+          ],
+          [
+            "malachi",
+            4,
+            55
+          ],
+          [
+            "matthew",
+            28,
+            1071
+          ],
+          [
+            "mark",
+            16,
+            678
+          ],
+          [
+            "luke",
+            24,
+            1151
+          ],
+          [
+            "john",
+            21,
+            879
+          ],
+          [
+            "acts",
+            28,
+            1007
+          ],
+          [
+            "romans",
+            16,
+            433
+          ],
+          [
+            "1-corinthians",
+            16,
+            437
+          ],
+          [
+            "2-corinthians",
+            13,
+            257
+          ],
+          [
+            "galatians",
+            6,
+            149
+          ],
+          [
+            "ephesians",
+            6,
+            155
+          ],
+          [
+            "philippians",
+            4,
+            104
+          ],
+          [
+            "colossians",
+            4,
+            95
+          ],
+          [
+            "1-thessalonians",
+            5,
+            89
+          ],
+          [
+            "2-thessalonians",
+            3,
+            47
+          ],
+          [
+            "1-timothy",
+            6,
+            113
+          ],
+          [
+            "2-timothy",
+            4,
+            83
+          ],
+          [
+            "titus",
+            3,
+            46
+          ],
+          [
+            "philemon",
+            1,
+            25
+          ],
+          [
+            "hebrews",
+            13,
+            303
+          ],
+          [
+            "james",
+            5,
+            108
+          ],
+          [
+            "1-peter",
+            5,
+            105
+          ],
+          [
+            "2-peter",
+            3,
+            61
+          ],
+          [
+            "1-john",
+            5,
+            105
+          ],
+          [
+            "2-john",
+            1,
+            13
+          ],
+          [
+            "3-john",
+            1,
+            14
+          ],
+          [
+            "jude",
+            1,
+            25
+          ],
+          [
+            "revelation",
+            22,
+            404
+          ]
+        ]
+      }
+    },
+    "ylt": {
+      "id": "ylt",
+      "path": "/js/bible/ylt.js",
+      "revision": "2aa3883086135ded",
+      "integrity": "sha256-KqOIMIYTXe1jBZlZHXCLCvp4FY6ajjlsFOqhcRwfe1A=",
+      "bytes": 4273416,
+      "structure": {
+        "bookCount": 66,
+        "chapterCount": 1189,
+        "verseCount": 31102,
+        "books": [
+          [
+            "genesis",
+            50,
+            1533
+          ],
+          [
+            "exodus",
+            40,
+            1213
+          ],
+          [
+            "leviticus",
+            27,
+            859
+          ],
+          [
+            "numbers",
+            36,
+            1288
+          ],
+          [
+            "deuteronomy",
+            34,
+            959
+          ],
+          [
+            "joshua",
+            24,
+            658
+          ],
+          [
+            "judges",
+            21,
+            618
+          ],
+          [
+            "ruth",
+            4,
+            85
+          ],
+          [
+            "1-samuel",
+            31,
+            810
+          ],
+          [
+            "2-samuel",
+            24,
+            695
+          ],
+          [
+            "1-kings",
+            22,
+            816
+          ],
+          [
+            "2-kings",
+            25,
+            719
+          ],
+          [
+            "1-chronicles",
+            29,
+            942
+          ],
+          [
+            "2-chronicles",
+            36,
+            822
+          ],
+          [
+            "ezra",
+            10,
+            280
+          ],
+          [
+            "nehemiah",
+            13,
+            406
+          ],
+          [
+            "esther",
+            10,
+            167
+          ],
+          [
+            "job",
+            42,
+            1070
+          ],
+          [
+            "psalms",
+            150,
+            2461
+          ],
+          [
+            "proverbs",
+            31,
+            915
+          ],
+          [
+            "ecclesiastes",
+            12,
+            222
+          ],
+          [
+            "song-of-solomon",
+            8,
+            117
+          ],
+          [
+            "isaiah",
+            66,
+            1292
+          ],
+          [
+            "jeremiah",
+            52,
+            1364
+          ],
+          [
+            "lamentations",
+            5,
+            154
+          ],
+          [
+            "ezekiel",
+            48,
+            1273
+          ],
+          [
+            "daniel",
+            12,
+            357
+          ],
+          [
+            "hosea",
+            14,
+            197
+          ],
+          [
+            "joel",
+            3,
+            73
+          ],
+          [
+            "amos",
+            9,
+            146
+          ],
+          [
+            "obadiah",
+            1,
+            21
+          ],
+          [
+            "jonah",
+            4,
+            48
+          ],
+          [
+            "micah",
+            7,
+            105
+          ],
+          [
+            "nahum",
+            3,
+            47
+          ],
+          [
+            "habakkuk",
+            3,
+            56
+          ],
+          [
+            "zephaniah",
+            3,
+            53
+          ],
+          [
+            "haggai",
+            2,
+            38
+          ],
+          [
+            "zechariah",
+            14,
+            211
+          ],
+          [
+            "malachi",
+            4,
+            55
+          ],
+          [
+            "matthew",
+            28,
+            1071
+          ],
+          [
+            "mark",
+            16,
+            678
+          ],
+          [
+            "luke",
+            24,
+            1151
+          ],
+          [
+            "john",
+            21,
+            879
+          ],
+          [
+            "acts",
+            28,
+            1007
+          ],
+          [
+            "romans",
+            16,
+            433
+          ],
+          [
+            "1-corinthians",
+            16,
+            437
+          ],
+          [
+            "2-corinthians",
+            13,
+            257
+          ],
+          [
+            "galatians",
+            6,
+            149
+          ],
+          [
+            "ephesians",
+            6,
+            155
+          ],
+          [
+            "philippians",
+            4,
+            104
+          ],
+          [
+            "colossians",
+            4,
+            95
+          ],
+          [
+            "1-thessalonians",
+            5,
+            89
+          ],
+          [
+            "2-thessalonians",
+            3,
+            47
+          ],
+          [
+            "1-timothy",
+            6,
+            113
+          ],
+          [
+            "2-timothy",
+            4,
+            83
+          ],
+          [
+            "titus",
+            3,
+            46
+          ],
+          [
+            "philemon",
+            1,
+            25
+          ],
+          [
+            "hebrews",
+            13,
+            303
+          ],
+          [
+            "james",
+            5,
+            108
+          ],
+          [
+            "1-peter",
+            5,
+            105
+          ],
+          [
+            "2-peter",
+            3,
+            61
+          ],
+          [
+            "1-john",
+            5,
+            105
+          ],
+          [
+            "2-john",
+            1,
+            13
+          ],
+          [
+            "3-john",
+            1,
+            14
+          ],
+          [
+            "jude",
+            1,
+            25
+          ],
+          [
+            "revelation",
+            22,
+            404
+          ]
+        ]
+      }
+    },
+    "dby": {
+      "id": "dby",
+      "path": "/js/bible/dby.js",
+      "revision": "9efe87660dfbc5ab",
+      "integrity": "sha256-nv6HZg37xauRgOlPACvxD2+RYMjS0m37BakSr6PGDO4=",
+      "bytes": 4202902,
+      "structure": {
+        "bookCount": 66,
+        "chapterCount": 1189,
+        "verseCount": 31102,
+        "books": [
+          [
+            "genesis",
+            50,
+            1533
+          ],
+          [
+            "exodus",
+            40,
+            1213
+          ],
+          [
+            "leviticus",
+            27,
+            859
+          ],
+          [
+            "numbers",
+            36,
+            1288
+          ],
+          [
+            "deuteronomy",
+            34,
+            959
+          ],
+          [
+            "joshua",
+            24,
+            658
+          ],
+          [
+            "judges",
+            21,
+            618
+          ],
+          [
+            "ruth",
+            4,
+            85
+          ],
+          [
+            "1-samuel",
+            31,
+            810
+          ],
+          [
+            "2-samuel",
+            24,
+            695
+          ],
+          [
+            "1-kings",
+            22,
+            816
+          ],
+          [
+            "2-kings",
+            25,
+            719
+          ],
+          [
+            "1-chronicles",
+            29,
+            942
+          ],
+          [
+            "2-chronicles",
+            36,
+            822
+          ],
+          [
+            "ezra",
+            10,
+            280
+          ],
+          [
+            "nehemiah",
+            13,
+            406
+          ],
+          [
+            "esther",
+            10,
+            167
+          ],
+          [
+            "job",
+            42,
+            1070
+          ],
+          [
+            "psalms",
+            150,
+            2461
+          ],
+          [
+            "proverbs",
+            31,
+            915
+          ],
+          [
+            "ecclesiastes",
+            12,
+            222
+          ],
+          [
+            "song-of-solomon",
+            8,
+            117
+          ],
+          [
+            "isaiah",
+            66,
+            1292
+          ],
+          [
+            "jeremiah",
+            52,
+            1364
+          ],
+          [
+            "lamentations",
+            5,
+            154
+          ],
+          [
+            "ezekiel",
+            48,
+            1273
+          ],
+          [
+            "daniel",
+            12,
+            357
+          ],
+          [
+            "hosea",
+            14,
+            197
+          ],
+          [
+            "joel",
+            3,
+            73
+          ],
+          [
+            "amos",
+            9,
+            146
+          ],
+          [
+            "obadiah",
+            1,
+            21
+          ],
+          [
+            "jonah",
+            4,
+            48
+          ],
+          [
+            "micah",
+            7,
+            105
+          ],
+          [
+            "nahum",
+            3,
+            47
+          ],
+          [
+            "habakkuk",
+            3,
+            56
+          ],
+          [
+            "zephaniah",
+            3,
+            53
+          ],
+          [
+            "haggai",
+            2,
+            38
+          ],
+          [
+            "zechariah",
+            14,
+            211
+          ],
+          [
+            "malachi",
+            4,
+            55
+          ],
+          [
+            "matthew",
+            28,
+            1071
+          ],
+          [
+            "mark",
+            16,
+            678
+          ],
+          [
+            "luke",
+            24,
+            1151
+          ],
+          [
+            "john",
+            21,
+            879
+          ],
+          [
+            "acts",
+            28,
+            1007
+          ],
+          [
+            "romans",
+            16,
+            433
+          ],
+          [
+            "1-corinthians",
+            16,
+            437
+          ],
+          [
+            "2-corinthians",
+            13,
+            257
+          ],
+          [
+            "galatians",
+            6,
+            149
+          ],
+          [
+            "ephesians",
+            6,
+            155
+          ],
+          [
+            "philippians",
+            4,
+            104
+          ],
+          [
+            "colossians",
+            4,
+            95
+          ],
+          [
+            "1-thessalonians",
+            5,
+            89
+          ],
+          [
+            "2-thessalonians",
+            3,
+            47
+          ],
+          [
+            "1-timothy",
+            6,
+            113
+          ],
+          [
+            "2-timothy",
+            4,
+            83
+          ],
+          [
+            "titus",
+            3,
+            46
+          ],
+          [
+            "philemon",
+            1,
+            25
+          ],
+          [
+            "hebrews",
+            13,
+            303
+          ],
+          [
+            "james",
+            5,
+            108
+          ],
+          [
+            "1-peter",
+            5,
+            105
+          ],
+          [
+            "2-peter",
+            3,
+            61
+          ],
+          [
+            "1-john",
+            5,
+            105
+          ],
+          [
+            "2-john",
+            1,
+            13
+          ],
+          [
+            "3-john",
+            1,
+            14
+          ],
+          [
+            "jude",
+            1,
+            25
+          ],
+          [
+            "revelation",
+            22,
+            404
+          ]
+        ]
+      }
+    },
+    "webster": {
+      "id": "webster",
+      "path": "/js/bible/webster.js",
+      "revision": "26d4fcf0d80c4dcd",
+      "integrity": "sha256-JtT88NgMTc2sTLBL04A4r/hOENdi4T2okjiGLnD9VXY=",
+      "bytes": 4256746,
+      "structure": {
+        "bookCount": 66,
+        "chapterCount": 1189,
+        "verseCount": 31102,
+        "books": [
+          [
+            "genesis",
+            50,
+            1533
+          ],
+          [
+            "exodus",
+            40,
+            1213
+          ],
+          [
+            "leviticus",
+            27,
+            859
+          ],
+          [
+            "numbers",
+            36,
+            1288
+          ],
+          [
+            "deuteronomy",
+            34,
+            959
+          ],
+          [
+            "joshua",
+            24,
+            658
+          ],
+          [
+            "judges",
+            21,
+            618
+          ],
+          [
+            "ruth",
+            4,
+            85
+          ],
+          [
+            "1-samuel",
+            31,
+            810
+          ],
+          [
+            "2-samuel",
+            24,
+            695
+          ],
+          [
+            "1-kings",
+            22,
+            816
+          ],
+          [
+            "2-kings",
+            25,
+            719
+          ],
+          [
+            "1-chronicles",
+            29,
+            942
+          ],
+          [
+            "2-chronicles",
+            36,
+            822
+          ],
+          [
+            "ezra",
+            10,
+            280
+          ],
+          [
+            "nehemiah",
+            13,
+            406
+          ],
+          [
+            "esther",
+            10,
+            167
+          ],
+          [
+            "job",
+            42,
+            1070
+          ],
+          [
+            "psalms",
+            150,
+            2461
+          ],
+          [
+            "proverbs",
+            31,
+            915
+          ],
+          [
+            "ecclesiastes",
+            12,
+            222
+          ],
+          [
+            "song-of-solomon",
+            8,
+            117
+          ],
+          [
+            "isaiah",
+            66,
+            1292
+          ],
+          [
+            "jeremiah",
+            52,
+            1364
+          ],
+          [
+            "lamentations",
+            5,
+            154
+          ],
+          [
+            "ezekiel",
+            48,
+            1273
+          ],
+          [
+            "daniel",
+            12,
+            357
+          ],
+          [
+            "hosea",
+            14,
+            197
+          ],
+          [
+            "joel",
+            3,
+            73
+          ],
+          [
+            "amos",
+            9,
+            146
+          ],
+          [
+            "obadiah",
+            1,
+            21
+          ],
+          [
+            "jonah",
+            4,
+            48
+          ],
+          [
+            "micah",
+            7,
+            105
+          ],
+          [
+            "nahum",
+            3,
+            47
+          ],
+          [
+            "habakkuk",
+            3,
+            56
+          ],
+          [
+            "zephaniah",
+            3,
+            53
+          ],
+          [
+            "haggai",
+            2,
+            38
+          ],
+          [
+            "zechariah",
+            14,
+            211
+          ],
+          [
+            "malachi",
+            4,
+            55
+          ],
+          [
+            "matthew",
+            28,
+            1071
+          ],
+          [
+            "mark",
+            16,
+            678
+          ],
+          [
+            "luke",
+            24,
+            1151
+          ],
+          [
+            "john",
+            21,
+            879
+          ],
+          [
+            "acts",
+            28,
+            1007
+          ],
+          [
+            "romans",
+            16,
+            433
+          ],
+          [
+            "1-corinthians",
+            16,
+            437
+          ],
+          [
+            "2-corinthians",
+            13,
+            257
+          ],
+          [
+            "galatians",
+            6,
+            149
+          ],
+          [
+            "ephesians",
+            6,
+            155
+          ],
+          [
+            "philippians",
+            4,
+            104
+          ],
+          [
+            "colossians",
+            4,
+            95
+          ],
+          [
+            "1-thessalonians",
+            5,
+            89
+          ],
+          [
+            "2-thessalonians",
+            3,
+            47
+          ],
+          [
+            "1-timothy",
+            6,
+            113
+          ],
+          [
+            "2-timothy",
+            4,
+            83
+          ],
+          [
+            "titus",
+            3,
+            46
+          ],
+          [
+            "philemon",
+            1,
+            25
+          ],
+          [
+            "hebrews",
+            13,
+            303
+          ],
+          [
+            "james",
+            5,
+            108
+          ],
+          [
+            "1-peter",
+            5,
+            105
+          ],
+          [
+            "2-peter",
+            3,
+            61
+          ],
+          [
+            "1-john",
+            5,
+            105
+          ],
+          [
+            "2-john",
+            1,
+            13
+          ],
+          [
+            "3-john",
+            1,
+            14
+          ],
+          [
+            "jude",
+            1,
+            25
+          ],
+          [
+            "revelation",
+            22,
+            404
+          ]
+        ]
+      }
+    },
+    "rv": {
+      "id": "rv",
+      "path": "/js/bible/rv.js",
+      "revision": "255b201b594ada78",
+      "integrity": "sha256-JVsgG1lK2ngYzLR3YYh++G3HU152ase0FhW0ECZ7C+E=",
+      "bytes": 4249155,
+      "structure": {
+        "bookCount": 66,
+        "chapterCount": 1189,
+        "verseCount": 31102,
+        "books": [
+          [
+            "genesis",
+            50,
+            1533
+          ],
+          [
+            "exodus",
+            40,
+            1213
+          ],
+          [
+            "leviticus",
+            27,
+            859
+          ],
+          [
+            "numbers",
+            36,
+            1288
+          ],
+          [
+            "deuteronomy",
+            34,
+            959
+          ],
+          [
+            "joshua",
+            24,
+            658
+          ],
+          [
+            "judges",
+            21,
+            618
+          ],
+          [
+            "ruth",
+            4,
+            85
+          ],
+          [
+            "1-samuel",
+            31,
+            810
+          ],
+          [
+            "2-samuel",
+            24,
+            695
+          ],
+          [
+            "1-kings",
+            22,
+            816
+          ],
+          [
+            "2-kings",
+            25,
+            719
+          ],
+          [
+            "1-chronicles",
+            29,
+            942
+          ],
+          [
+            "2-chronicles",
+            36,
+            822
+          ],
+          [
+            "ezra",
+            10,
+            280
+          ],
+          [
+            "nehemiah",
+            13,
+            406
+          ],
+          [
+            "esther",
+            10,
+            167
+          ],
+          [
+            "job",
+            42,
+            1070
+          ],
+          [
+            "psalms",
+            150,
+            2461
+          ],
+          [
+            "proverbs",
+            31,
+            915
+          ],
+          [
+            "ecclesiastes",
+            12,
+            222
+          ],
+          [
+            "song-of-solomon",
+            8,
+            117
+          ],
+          [
+            "isaiah",
+            66,
+            1292
+          ],
+          [
+            "jeremiah",
+            52,
+            1364
+          ],
+          [
+            "lamentations",
+            5,
+            154
+          ],
+          [
+            "ezekiel",
+            48,
+            1273
+          ],
+          [
+            "daniel",
+            12,
+            357
+          ],
+          [
+            "hosea",
+            14,
+            197
+          ],
+          [
+            "joel",
+            3,
+            73
+          ],
+          [
+            "amos",
+            9,
+            146
+          ],
+          [
+            "obadiah",
+            1,
+            21
+          ],
+          [
+            "jonah",
+            4,
+            48
+          ],
+          [
+            "micah",
+            7,
+            105
+          ],
+          [
+            "nahum",
+            3,
+            47
+          ],
+          [
+            "habakkuk",
+            3,
+            56
+          ],
+          [
+            "zephaniah",
+            3,
+            53
+          ],
+          [
+            "haggai",
+            2,
+            38
+          ],
+          [
+            "zechariah",
+            14,
+            211
+          ],
+          [
+            "malachi",
+            4,
+            55
+          ],
+          [
+            "matthew",
+            28,
+            1071
+          ],
+          [
+            "mark",
+            16,
+            678
+          ],
+          [
+            "luke",
+            24,
+            1151
+          ],
+          [
+            "john",
+            21,
+            879
+          ],
+          [
+            "acts",
+            28,
+            1007
+          ],
+          [
+            "romans",
+            16,
+            433
+          ],
+          [
+            "1-corinthians",
+            16,
+            437
+          ],
+          [
+            "2-corinthians",
+            13,
+            257
+          ],
+          [
+            "galatians",
+            6,
+            149
+          ],
+          [
+            "ephesians",
+            6,
+            155
+          ],
+          [
+            "philippians",
+            4,
+            104
+          ],
+          [
+            "colossians",
+            4,
+            95
+          ],
+          [
+            "1-thessalonians",
+            5,
+            89
+          ],
+          [
+            "2-thessalonians",
+            3,
+            47
+          ],
+          [
+            "1-timothy",
+            6,
+            113
+          ],
+          [
+            "2-timothy",
+            4,
+            83
+          ],
+          [
+            "titus",
+            3,
+            46
+          ],
+          [
+            "philemon",
+            1,
+            25
+          ],
+          [
+            "hebrews",
+            13,
+            303
+          ],
+          [
+            "james",
+            5,
+            108
+          ],
+          [
+            "1-peter",
+            5,
+            105
+          ],
+          [
+            "2-peter",
+            3,
+            61
+          ],
+          [
+            "1-john",
+            5,
+            105
+          ],
+          [
+            "2-john",
+            1,
+            13
+          ],
+          [
+            "3-john",
+            1,
+            14
+          ],
+          [
+            "jude",
+            1,
+            25
+          ],
+          [
+            "revelation",
+            22,
+            404
+          ]
+        ]
+      }
+    },
+    "gnv": {
+      "id": "gnv",
+      "path": "/js/bible/gnv.js",
+      "revision": "cf91934c9057cc6c",
+      "integrity": "sha256-z5GTTJBXzGw/Hlr5e5DW6Vy62YKpiLhCBry6mbl5OPM=",
+      "bytes": 4284759,
+      "structure": {
+        "bookCount": 66,
+        "chapterCount": 1189,
+        "verseCount": 31090,
+        "books": [
+          [
+            "genesis",
+            50,
+            1533
+          ],
+          [
+            "exodus",
+            40,
+            1213
+          ],
+          [
+            "leviticus",
+            27,
+            859
+          ],
+          [
+            "numbers",
+            36,
+            1288
+          ],
+          [
+            "deuteronomy",
+            34,
+            959
+          ],
+          [
+            "joshua",
+            24,
+            658
+          ],
+          [
+            "judges",
+            21,
+            618
+          ],
+          [
+            "ruth",
+            4,
+            85
+          ],
+          [
+            "1-samuel",
+            31,
+            811
+          ],
+          [
+            "2-samuel",
+            24,
+            694
+          ],
+          [
+            "1-kings",
+            22,
+            816
+          ],
+          [
+            "2-kings",
+            25,
+            719
+          ],
+          [
+            "1-chronicles",
+            29,
+            942
+          ],
+          [
+            "2-chronicles",
+            36,
+            822
+          ],
+          [
+            "ezra",
+            10,
+            280
+          ],
+          [
+            "nehemiah",
+            13,
+            406
+          ],
+          [
+            "esther",
+            10,
+            166
+          ],
+          [
+            "job",
+            42,
+            1069
+          ],
+          [
+            "psalms",
+            150,
+            2459
+          ],
+          [
+            "proverbs",
+            31,
+            914
+          ],
+          [
+            "ecclesiastes",
+            12,
+            222
+          ],
+          [
+            "song-of-solomon",
+            8,
+            116
+          ],
+          [
+            "isaiah",
+            66,
+            1291
+          ],
+          [
+            "jeremiah",
+            52,
+            1363
+          ],
+          [
+            "lamentations",
+            5,
+            154
+          ],
+          [
+            "ezekiel",
+            48,
+            1273
+          ],
+          [
+            "daniel",
+            12,
+            357
+          ],
+          [
+            "hosea",
+            14,
+            197
+          ],
+          [
+            "joel",
+            3,
+            73
+          ],
+          [
+            "amos",
+            9,
+            146
+          ],
+          [
+            "obadiah",
+            1,
+            21
+          ],
+          [
+            "jonah",
+            4,
+            48
+          ],
+          [
+            "micah",
+            7,
+            105
+          ],
+          [
+            "nahum",
+            3,
+            47
+          ],
+          [
+            "habakkuk",
+            3,
+            56
+          ],
+          [
+            "zephaniah",
+            3,
+            53
+          ],
+          [
+            "haggai",
+            2,
+            38
+          ],
+          [
+            "zechariah",
+            14,
+            211
+          ],
+          [
+            "malachi",
+            4,
+            55
+          ],
+          [
+            "matthew",
+            28,
+            1071
+          ],
+          [
+            "mark",
+            16,
+            678
+          ],
+          [
+            "luke",
+            24,
+            1150
+          ],
+          [
+            "john",
+            21,
+            879
+          ],
+          [
+            "acts",
+            28,
+            1007
+          ],
+          [
+            "romans",
+            16,
+            432
+          ],
+          [
+            "1-corinthians",
+            16,
+            437
+          ],
+          [
+            "2-corinthians",
+            13,
+            256
+          ],
+          [
+            "galatians",
+            6,
+            148
+          ],
+          [
+            "ephesians",
+            6,
+            155
+          ],
+          [
+            "philippians",
+            4,
+            104
+          ],
+          [
+            "colossians",
+            4,
+            95
+          ],
+          [
+            "1-thessalonians",
+            5,
+            89
+          ],
+          [
+            "2-thessalonians",
+            3,
+            47
+          ],
+          [
+            "1-timothy",
+            6,
+            113
+          ],
+          [
+            "2-timothy",
+            4,
+            83
+          ],
+          [
+            "titus",
+            3,
+            46
+          ],
+          [
+            "philemon",
+            1,
+            25
+          ],
+          [
+            "hebrews",
+            13,
+            303
+          ],
+          [
+            "james",
+            5,
+            108
+          ],
+          [
+            "1-peter",
+            5,
+            105
+          ],
+          [
+            "2-peter",
+            3,
+            61
+          ],
+          [
+            "1-john",
+            5,
+            105
+          ],
+          [
+            "2-john",
+            1,
+            12
+          ],
+          [
+            "3-john",
+            1,
+            14
+          ],
+          [
+            "jude",
+            1,
+            25
+          ],
+          [
+            "revelation",
+            22,
+            405
+          ]
+        ]
+      }
+    }
+  },
+  "psalms": [
+    {
+      "chapter": 1,
+      "verseCount": 6,
+      "finalVerse": "For the LORD knows the way of the righteous,"
+    },
+    {
+      "chapter": 2,
+      "verseCount": 12,
+      "finalVerse": "Give sincere homage to the Son, lest he be angry, and you perish on the way,"
+    },
+    {
+      "chapter": 3,
+      "verseCount": 8,
+      "finalVerse": "Salvation belongs to the LORD."
+    },
+    {
+      "chapter": 4,
+      "verseCount": 8,
+      "finalVerse": "In peace I will both lay myself down and sleep,"
+    },
+    {
+      "chapter": 5,
+      "verseCount": 12,
+      "finalVerse": "For you will bless the righteous."
+    },
+    {
+      "chapter": 6,
+      "verseCount": 10,
+      "finalVerse": "May all my enemies be ashamed and dismayed."
+    },
+    {
+      "chapter": 7,
+      "verseCount": 17,
+      "finalVerse": "I will give thanks to the LORD according to his righteousness,"
+    },
+    {
+      "chapter": 8,
+      "verseCount": 9,
+      "finalVerse": "LORD, our Lord,"
+    },
+    {
+      "chapter": 9,
+      "verseCount": 20,
+      "finalVerse": "Put them in fear, LORD."
+    },
+    {
+      "chapter": 10,
+      "verseCount": 18,
+      "finalVerse": "to judge the fatherless and the oppressed,"
+    },
+    {
+      "chapter": 11,
+      "verseCount": 7,
+      "finalVerse": "For the LORD is righteous."
+    },
+    {
+      "chapter": 12,
+      "verseCount": 8,
+      "finalVerse": "The wicked walk on every side,"
+    },
+    {
+      "chapter": 13,
+      "verseCount": 6,
+      "finalVerse": "I will sing to the LORD,"
+    },
+    {
+      "chapter": 14,
+      "verseCount": 7,
+      "finalVerse": "Oh that the salvation of Israel would come out of Zion!"
+    },
+    {
+      "chapter": 15,
+      "verseCount": 5,
+      "finalVerse": "he who doesn’t lend out his money for usury,"
+    },
+    {
+      "chapter": 16,
+      "verseCount": 11,
+      "finalVerse": "You will show me the path of life."
+    },
+    {
+      "chapter": 17,
+      "verseCount": 15,
+      "finalVerse": "As for me, I shall see your face in righteousness."
+    },
+    {
+      "chapter": 18,
+      "verseCount": 50,
+      "finalVerse": "He gives great deliverance to his king,"
+    },
+    {
+      "chapter": 19,
+      "verseCount": 14,
+      "finalVerse": "Let the words of my mouth and the meditation of my heart"
+    },
+    {
+      "chapter": 20,
+      "verseCount": 9,
+      "finalVerse": "Save, LORD!"
+    },
+    {
+      "chapter": 21,
+      "verseCount": 13,
+      "finalVerse": "Be exalted, LORD, in your strength,"
+    },
+    {
+      "chapter": 22,
+      "verseCount": 31,
+      "finalVerse": "They shall come and shall declare his righteousness to a people that shall be born,"
+    },
+    {
+      "chapter": 23,
+      "verseCount": 6,
+      "finalVerse": "Surely goodness and loving kindness shall follow me all the days of my life,"
+    },
+    {
+      "chapter": 24,
+      "verseCount": 10,
+      "finalVerse": "Who is this King of glory?"
+    },
+    {
+      "chapter": 25,
+      "verseCount": 22,
+      "finalVerse": "God, redeem Israel"
+    },
+    {
+      "chapter": 26,
+      "verseCount": 12,
+      "finalVerse": "My foot stands in an even place."
+    },
+    {
+      "chapter": 27,
+      "verseCount": 14,
+      "finalVerse": "Wait for the LORD."
+    },
+    {
+      "chapter": 28,
+      "verseCount": 9,
+      "finalVerse": "Save your people,"
+    },
+    {
+      "chapter": 29,
+      "verseCount": 11,
+      "finalVerse": "The LORD will give strength to his people."
+    },
+    {
+      "chapter": 30,
+      "verseCount": 12,
+      "finalVerse": "to the end that my heart may sing praise to you, and not be silent."
+    },
+    {
+      "chapter": 31,
+      "verseCount": 24,
+      "finalVerse": "Be strong, and let your heart take courage,"
+    },
+    {
+      "chapter": 32,
+      "verseCount": 11,
+      "finalVerse": "Be glad in the LORD, and rejoice, you righteous!"
+    },
+    {
+      "chapter": 33,
+      "verseCount": 22,
+      "finalVerse": "Let your loving kindness be on us, LORD,"
+    },
+    {
+      "chapter": 34,
+      "verseCount": 22,
+      "finalVerse": "The LORD redeems the soul of his servants."
+    },
+    {
+      "chapter": 35,
+      "verseCount": 28,
+      "finalVerse": "My tongue shall talk about your righteousness and about your praise all day long."
+    },
+    {
+      "chapter": 36,
+      "verseCount": 12,
+      "finalVerse": "There the workers of iniquity are fallen."
+    },
+    {
+      "chapter": 37,
+      "verseCount": 40,
+      "finalVerse": "The LORD helps them and rescues them."
+    },
+    {
+      "chapter": 38,
+      "verseCount": 22,
+      "finalVerse": "Hurry to help me,"
+    },
+    {
+      "chapter": 39,
+      "verseCount": 13,
+      "finalVerse": "Oh spare me, that I may recover strength,"
+    },
+    {
+      "chapter": 40,
+      "verseCount": 17,
+      "finalVerse": "But I am poor and needy."
+    },
+    {
+      "chapter": 41,
+      "verseCount": 13,
+      "finalVerse": "Blessed be the LORD, the God of Israel,"
+    },
+    {
+      "chapter": 42,
+      "verseCount": 11,
+      "finalVerse": "Why are you in despair, my soul?"
+    },
+    {
+      "chapter": 43,
+      "verseCount": 5,
+      "finalVerse": "Why are you in despair, my soul?"
+    },
+    {
+      "chapter": 44,
+      "verseCount": 26,
+      "finalVerse": "Rise up to help us."
+    },
+    {
+      "chapter": 45,
+      "verseCount": 17,
+      "finalVerse": "I will make your name to be remembered in all generations."
+    },
+    {
+      "chapter": 46,
+      "verseCount": 11,
+      "finalVerse": "The LORD of Armies is with us."
+    },
+    {
+      "chapter": 47,
+      "verseCount": 9,
+      "finalVerse": "The princes of the peoples are gathered together,"
+    },
+    {
+      "chapter": 48,
+      "verseCount": 14,
+      "finalVerse": "For this God is our God forever and ever."
+    },
+    {
+      "chapter": 49,
+      "verseCount": 20,
+      "finalVerse": "A man who has riches without understanding,"
+    },
+    {
+      "chapter": 50,
+      "verseCount": 23,
+      "finalVerse": "Whoever offers the sacrifice of thanksgiving glorifies me,"
+    },
+    {
+      "chapter": 51,
+      "verseCount": 19,
+      "finalVerse": "Then you will delight in the sacrifices of righteousness,"
+    },
+    {
+      "chapter": 52,
+      "verseCount": 9,
+      "finalVerse": "I will give you thanks forever, because you have done it."
+    },
+    {
+      "chapter": 53,
+      "verseCount": 6,
+      "finalVerse": "Oh that the salvation of Israel would come out of Zion!"
+    },
+    {
+      "chapter": 54,
+      "verseCount": 7,
+      "finalVerse": "For he has delivered me out of all trouble."
+    },
+    {
+      "chapter": 55,
+      "verseCount": 23,
+      "finalVerse": "But you, God, will bring them down into the pit of destruction."
+    },
+    {
+      "chapter": 56,
+      "verseCount": 13,
+      "finalVerse": "For you have delivered my soul from death,"
+    },
+    {
+      "chapter": 57,
+      "verseCount": 11,
+      "finalVerse": "Be exalted, God, above the heavens."
+    },
+    {
+      "chapter": 58,
+      "verseCount": 11,
+      "finalVerse": "so that men shall say, “Most certainly there is a reward for the righteous."
+    },
+    {
+      "chapter": 59,
+      "verseCount": 17,
+      "finalVerse": "To you, my strength, I will sing praises."
+    },
+    {
+      "chapter": 60,
+      "verseCount": 12,
+      "finalVerse": "Through God we will do valiantly,"
+    },
+    {
+      "chapter": 61,
+      "verseCount": 8,
+      "finalVerse": "So I will sing praise to your name forever,"
+    },
+    {
+      "chapter": 62,
+      "verseCount": 12,
+      "finalVerse": "Also to you, Lord, belongs loving kindness,"
+    },
+    {
+      "chapter": 63,
+      "verseCount": 11,
+      "finalVerse": "But the king shall rejoice in God."
+    },
+    {
+      "chapter": 64,
+      "verseCount": 10,
+      "finalVerse": "The righteous shall be glad in the LORD,"
+    },
+    {
+      "chapter": 65,
+      "verseCount": 13,
+      "finalVerse": "The pastures are covered with flocks."
+    },
+    {
+      "chapter": 66,
+      "verseCount": 20,
+      "finalVerse": "Blessed be God, who has not turned away my prayer,"
+    },
+    {
+      "chapter": 67,
+      "verseCount": 7,
+      "finalVerse": "God will bless us."
+    },
+    {
+      "chapter": 68,
+      "verseCount": 35,
+      "finalVerse": "You are awesome, God, in your sanctuaries."
+    },
+    {
+      "chapter": 69,
+      "verseCount": 36,
+      "finalVerse": "The children also of his servants shall inherit it."
+    },
+    {
+      "chapter": 70,
+      "verseCount": 5,
+      "finalVerse": "But I am poor and needy."
+    },
+    {
+      "chapter": 71,
+      "verseCount": 24,
+      "finalVerse": "My tongue will also talk about your righteousness all day long,"
+    },
+    {
+      "chapter": 72,
+      "verseCount": 20,
+      "finalVerse": "This ends the prayers by David, the son of Jesse."
+    },
+    {
+      "chapter": 73,
+      "verseCount": 28,
+      "finalVerse": "But it is good for me to come close to God."
+    },
+    {
+      "chapter": 74,
+      "verseCount": 23,
+      "finalVerse": "Don’t forget the voice of your adversaries."
+    },
+    {
+      "chapter": 75,
+      "verseCount": 10,
+      "finalVerse": "I will cut off all the horns of the wicked,"
+    },
+    {
+      "chapter": 76,
+      "verseCount": 12,
+      "finalVerse": "He will cut off the spirit of princes."
+    },
+    {
+      "chapter": 77,
+      "verseCount": 20,
+      "finalVerse": "You led your people like a flock,"
+    },
+    {
+      "chapter": 78,
+      "verseCount": 72,
+      "finalVerse": "So he was their shepherd according to the integrity of his heart,"
+    },
+    {
+      "chapter": 79,
+      "verseCount": 13,
+      "finalVerse": "So we, your people and sheep of your pasture,"
+    },
+    {
+      "chapter": 80,
+      "verseCount": 19,
+      "finalVerse": "Turn us again, LORD God of Armies."
+    },
+    {
+      "chapter": 81,
+      "verseCount": 16,
+      "finalVerse": "But he would have also fed them with the finest of the wheat."
+    },
+    {
+      "chapter": 82,
+      "verseCount": 8,
+      "finalVerse": "Arise, God, judge the earth,"
+    },
+    {
+      "chapter": 83,
+      "verseCount": 18,
+      "finalVerse": "that they may know that you alone, whose name is the LORD,"
+    },
+    {
+      "chapter": 84,
+      "verseCount": 12,
+      "finalVerse": "LORD of Armies,"
+    },
+    {
+      "chapter": 85,
+      "verseCount": 13,
+      "finalVerse": "Righteousness goes before him,"
+    },
+    {
+      "chapter": 86,
+      "verseCount": 17,
+      "finalVerse": "Show me a sign of your goodness,"
+    },
+    {
+      "chapter": 87,
+      "verseCount": 7,
+      "finalVerse": "Those who sing as well as those who dance say,"
+    },
+    {
+      "chapter": 88,
+      "verseCount": 18,
+      "finalVerse": "You have put lover and friend far from me,"
+    },
+    {
+      "chapter": 89,
+      "verseCount": 52,
+      "finalVerse": "Blessed be the LORD forever more."
+    },
+    {
+      "chapter": 90,
+      "verseCount": 17,
+      "finalVerse": "Let the favor of the Lord our God be on us."
+    },
+    {
+      "chapter": 91,
+      "verseCount": 16,
+      "finalVerse": "I will satisfy him with long life,"
+    },
+    {
+      "chapter": 92,
+      "verseCount": 15,
+      "finalVerse": "to show that the LORD is upright."
+    },
+    {
+      "chapter": 93,
+      "verseCount": 5,
+      "finalVerse": "Your statutes stand firm."
+    },
+    {
+      "chapter": 94,
+      "verseCount": 23,
+      "finalVerse": "He has brought on them their own iniquity,"
+    },
+    {
+      "chapter": 95,
+      "verseCount": 11,
+      "finalVerse": "Therefore I swore in my wrath,"
+    },
+    {
+      "chapter": 96,
+      "verseCount": 13,
+      "finalVerse": "before the LORD; for he comes,"
+    },
+    {
+      "chapter": 97,
+      "verseCount": 12,
+      "finalVerse": "Be glad in the LORD, you righteous people!"
+    },
+    {
+      "chapter": 98,
+      "verseCount": 9,
+      "finalVerse": "Let them sing before the LORD,"
+    },
+    {
+      "chapter": 99,
+      "verseCount": 9,
+      "finalVerse": "Exalt the LORD, our God."
+    },
+    {
+      "chapter": 100,
+      "verseCount": 5,
+      "finalVerse": "For the LORD is good."
+    },
+    {
+      "chapter": 101,
+      "verseCount": 8,
+      "finalVerse": "Morning by morning, I will destroy all the wicked of the land,"
+    },
+    {
+      "chapter": 102,
+      "verseCount": 28,
+      "finalVerse": "The children of your servants will continue."
+    },
+    {
+      "chapter": 103,
+      "verseCount": 22,
+      "finalVerse": "Praise the LORD, all you works of his,"
+    },
+    {
+      "chapter": 104,
+      "verseCount": 35,
+      "finalVerse": "Let sinners be consumed out of the earth."
+    },
+    {
+      "chapter": 105,
+      "verseCount": 45,
+      "finalVerse": "that they might keep his statutes,"
+    },
+    {
+      "chapter": 106,
+      "verseCount": 48,
+      "finalVerse": "Blessed be the LORD, the God of Israel,"
+    },
+    {
+      "chapter": 107,
+      "verseCount": 43,
+      "finalVerse": "Whoever is wise will pay attention to these things."
+    },
+    {
+      "chapter": 108,
+      "verseCount": 13,
+      "finalVerse": "Through God, we will do valiantly,"
+    },
+    {
+      "chapter": 109,
+      "verseCount": 31,
+      "finalVerse": "For he will stand at the right hand of the needy,"
+    },
+    {
+      "chapter": 110,
+      "verseCount": 7,
+      "finalVerse": "He will drink of the brook on the way;"
+    },
+    {
+      "chapter": 111,
+      "verseCount": 10,
+      "finalVerse": "The fear of the LORD is the beginning of wisdom."
+    },
+    {
+      "chapter": 112,
+      "verseCount": 10,
+      "finalVerse": "The wicked will see it, and be grieved."
+    },
+    {
+      "chapter": 113,
+      "verseCount": 9,
+      "finalVerse": "He settles the barren woman in her home"
+    },
+    {
+      "chapter": 114,
+      "verseCount": 8,
+      "finalVerse": "who turned the rock into a pool of water,"
+    },
+    {
+      "chapter": 115,
+      "verseCount": 18,
+      "finalVerse": "but we will bless the LORD,"
+    },
+    {
+      "chapter": 116,
+      "verseCount": 19,
+      "finalVerse": "in the courts of the LORD’s house,"
+    },
+    {
+      "chapter": 117,
+      "verseCount": 2,
+      "finalVerse": "For his loving kindness is great toward us."
+    },
+    {
+      "chapter": 118,
+      "verseCount": 29,
+      "finalVerse": "Oh give thanks to the LORD, for he is good,"
+    },
+    {
+      "chapter": 119,
+      "verseCount": 176,
+      "finalVerse": "I have gone astray like a lost sheep."
+    },
+    {
+      "chapter": 120,
+      "verseCount": 7,
+      "finalVerse": "I am for peace,"
+    },
+    {
+      "chapter": 121,
+      "verseCount": 8,
+      "finalVerse": "The LORD will keep your going out and your coming in,"
+    },
+    {
+      "chapter": 122,
+      "verseCount": 9,
+      "finalVerse": "For the sake of the house of the LORD our God,"
+    },
+    {
+      "chapter": 123,
+      "verseCount": 4,
+      "finalVerse": "Our soul is exceedingly filled with the scoffing of those who are at ease,"
+    },
+    {
+      "chapter": 124,
+      "verseCount": 8,
+      "finalVerse": "Our help is in the LORD’s name,"
+    },
+    {
+      "chapter": 125,
+      "verseCount": 5,
+      "finalVerse": "But as for those who turn away to their crooked ways,"
+    },
+    {
+      "chapter": 126,
+      "verseCount": 6,
+      "finalVerse": "He who goes out weeping, carrying seed for sowing,"
+    },
+    {
+      "chapter": 127,
+      "verseCount": 5,
+      "finalVerse": "Happy is the man who has his quiver full of them."
+    },
+    {
+      "chapter": 128,
+      "verseCount": 6,
+      "finalVerse": "Yes, may you see your children’s children."
+    },
+    {
+      "chapter": 129,
+      "verseCount": 8,
+      "finalVerse": "Neither do those who go by say,"
+    },
+    {
+      "chapter": 130,
+      "verseCount": 8,
+      "finalVerse": "He will redeem Israel from all their sins."
+    },
+    {
+      "chapter": 131,
+      "verseCount": 3,
+      "finalVerse": "Israel, hope in the LORD,"
+    },
+    {
+      "chapter": 132,
+      "verseCount": 18,
+      "finalVerse": "I will clothe his enemies with shame,"
+    },
+    {
+      "chapter": 133,
+      "verseCount": 3,
+      "finalVerse": "like the dew of Hermon,"
+    },
+    {
+      "chapter": 134,
+      "verseCount": 3,
+      "finalVerse": "May the LORD bless you from Zion,"
+    },
+    {
+      "chapter": 135,
+      "verseCount": 21,
+      "finalVerse": "Blessed be the LORD from Zion,"
+    },
+    {
+      "chapter": 136,
+      "verseCount": 26,
+      "finalVerse": "Oh give thanks to the God of heaven,"
+    },
+    {
+      "chapter": 137,
+      "verseCount": 9,
+      "finalVerse": "Happy shall he be,"
+    },
+    {
+      "chapter": 138,
+      "verseCount": 8,
+      "finalVerse": "The LORD will fulfill that which concerns me."
+    },
+    {
+      "chapter": 139,
+      "verseCount": 24,
+      "finalVerse": "See if there is any wicked way in me,"
+    },
+    {
+      "chapter": 140,
+      "verseCount": 13,
+      "finalVerse": "Surely the righteous will give thanks to your name."
+    },
+    {
+      "chapter": 141,
+      "verseCount": 10,
+      "finalVerse": "Let the wicked fall together into their own nets"
+    },
+    {
+      "chapter": 142,
+      "verseCount": 7,
+      "finalVerse": "Bring my soul out of prison,"
+    },
+    {
+      "chapter": 143,
+      "verseCount": 12,
+      "finalVerse": "In your loving kindness, cut off my enemies,"
+    },
+    {
+      "chapter": 144,
+      "verseCount": 15,
+      "finalVerse": "Happy are the people who are in such a situation."
+    },
+    {
+      "chapter": 145,
+      "verseCount": 21,
+      "finalVerse": "My mouth will speak the praise of the LORD."
+    },
+    {
+      "chapter": 146,
+      "verseCount": 10,
+      "finalVerse": "The LORD will reign forever;"
+    },
+    {
+      "chapter": 147,
+      "verseCount": 20,
+      "finalVerse": "He has not done this for just any nation."
+    },
+    {
+      "chapter": 148,
+      "verseCount": 14,
+      "finalVerse": "He has lifted up the horn of his people,"
+    },
+    {
+      "chapter": 149,
+      "verseCount": 9,
+      "finalVerse": "to execute on them the written judgment."
+    },
+    {
+      "chapter": 150,
+      "verseCount": 6,
+      "finalVerse": "Let everything that has breath praise the LORD!"
+    }
+  ]
+}

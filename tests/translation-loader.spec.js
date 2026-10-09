@@ -96,7 +96,7 @@ test('generated metadata validates a loaded translation deterministically', asyn
   expect(metadata.web.revision).toMatch(/^[a-f0-9]{16}$/);
   expect(metadata.web.integrity).toMatch(/^sha256-[A-Za-z0-9+/]+={0,2}$/);
   expect(metadata.web.bytes).toBeGreaterThan(4_000_000);
-  expect(metadata.web.structure).toMatchObject({bookCount: 66, chapterCount: 1190});
+  expect(metadata.web.structure).toMatchObject({bookCount: 66, chapterCount: 1189});
   expect(metadata.unloaded).toBe(false);
   expect(metadata.unknown).toBe(false);
   expect(metadata.demo).toBe(false);
@@ -531,7 +531,7 @@ test('promotion failure does not break online reading and retention retries with
 
   expect(await page.evaluate(() => BibleTranslationLoader.ensure('web'))).toBe(true);
   await expect.poll(() => workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'})).toMatchObject({
-    activeRevision:'e05fd1ce8dd85087'
+    activeRevision:'a32647ad749afd31'
   });
   await expect(page.locator('script[data-bible-translation="web"]')).toHaveCount(1);
 });
@@ -569,6 +569,6 @@ test('active last-known-good WEB loads when current revision acquisition fails',
     return BibleData.validateTranslation('web', status.active.structure);
   })).toBe(true);
   await expect(page.locator('script[data-bible-translation="web"]')).toHaveAttribute(
-    'src', /\/__god4\/bible-cache\/active-script\/web\/e05fd1ce8dd85087\.js$/
+    'src', /\/__god4\/bible-cache\/active-script\/web\/a32647ad749afd31\.js$/
   );
 });

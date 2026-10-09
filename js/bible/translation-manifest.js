@@ -3,12 +3,12 @@ var BibleTranslationManifest = Object.freeze({
   "web": {
     "id": "web",
     "path": "/js/bible/web.js",
-    "revision": "e05fd1ce8dd85087",
-    "integrity": "sha256-4F/Rzo3YUIfkD4k+z7m1qZyxnr3Gp1/uKByyn3a13MU=",
-    "bytes": 4194375,
+    "revision": "a32647ad749afd31",
+    "integrity": "sha256-oyZHrXSa/THENI7W4iz6DLDwykjuFwYd93IVUXQ70gs=",
+    "bytes": 4202540,
     "structure": {
       "bookCount": 66,
-      "chapterCount": 1190,
+      "chapterCount": 1189,
       "verseCount": 31103,
       "books": [
         [
@@ -103,7 +103,7 @@ var BibleTranslationManifest = Object.freeze({
         ],
         [
           "psalms",
-          151,
+          150,
           2461
         ],
         [
