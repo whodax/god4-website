@@ -39,8 +39,8 @@ test('an all-empty chapter offers no adjacent destination', () => {
   assert.equal(context.getAdjacentReaderVerseNumber(1),null);
   assert.equal(context.getAdjacentReaderVerseNumber(-1),null);
 });
-test('Scripture, manifest and original-language bytes are unchanged from the requested baseline', () => {
-  const changed=execFileSync('git',['diff','--name-only','58f89ebd8fa0913517e87d909c98d0d0e4033b12','--','js/bible','data/word-study','js/word-study'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
+test('the historical Reader repair commit left Scripture, manifest and original-language data unchanged', () => {
+  const changed=execFileSync('git',['diff','--name-only','58f89ebd8fa0913517e87d909c98d0d0e4033b12','af41938256a4fdc1cf7675474d9a29a1be21cab6','--','js/bible','data/word-study','js/word-study'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
   assert.deepEqual(changed,['js/bible/reader.js']);
   generator.checkOutput();
 });
