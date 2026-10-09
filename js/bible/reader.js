@@ -11,6 +11,7 @@ let spokenFollowScrollTarget = null;
 let lastSpokenVerse = null;
 let currentTranslation = UserData.translation.load();
 let translationChangeRequest = 0;
+let readerTabPosition = null;
 let voiceRecognition = null;
 let voiceCommandsListening = false;
 let voiceRecognitionActive = false;
@@ -797,13 +798,64 @@ function renderStudyWordTokens(text){
   }).join('');
 }
 
-function switchView(view, btn){
+function readerTabReference(){
+  return JSON.stringify([currentTranslation, currentBook, currentChapter, currentVerse]);
+}
+
+function rememberReaderTabPosition(leaving){
+  var reader = document.getElementById('view-reader');
+  if(!reader || !reader.classList.contains('active')) return;
+  var reference = readerTabReference();
+  var fullscreen = reader.classList.contains('reader-fullscreen');
+  var tabs = document.querySelector('.bs-header');
+  // Moving up to the non-sticky tabs is navigation, not a new reading location.
+  if(!fullscreen && tabs && tabs.getBoundingClientRect().bottom > readerVisibleTop()){
+    if(!leaving || (readerTabPosition && readerTabPosition.reference === reference)) return;
+  }
+  var top = readerVisibleTop();
+  var verses = Array.from(document.querySelectorAll('#readerContent [data-verse-number]'));
+  var anchor = verses.find(function(verse){
+    var rect = verse.getBoundingClientRect();
+    return rect.bottom > top + 16 && rect.top < window.innerHeight;
+  });
+  if(!anchor && !leaving) return;
+  readerTabPosition = {
+    reference:reference, fullscreen:fullscreen,
+    top:fullscreen ? reader.scrollTop : window.scrollY,
+    verse:anchor ? anchor.getAttribute('data-verse-number') : null,
+    offset:anchor ? anchor.getBoundingClientRect().top - top : null
+  };
+}
+
+function restoreReaderTabPosition(){
+  if(!readerTabPosition) return;
+  var reader = document.getElementById('view-reader');
+  if(readerTabPosition.reference !== readerTabReference()){
+    if(currentVerse) applyReaderVerseSelection(currentVerse, true);
+    else scrollReaderStartIntoView();
+    rememberReaderTabPosition(true);
+    return;
+  }
+  var fullscreen = reader.classList.contains('reader-fullscreen');
+  if(fullscreen !== readerTabPosition.fullscreen) return;
+  var surface = fullscreen ? reader : window;
+  var anchor = readerTabPosition.verse && document.querySelector('#readerContent [data-verse-number="' + readerTabPosition.verse + '"]');
+  if(anchor){
+    var offset = anchor.getBoundingClientRect().top - readerVisibleTop() - readerTabPosition.offset;
+    if(Math.abs(offset) >= 1) surface.scrollBy({top:offset, behavior:'instant'});
+  } else surface.scrollTo({top:readerTabPosition.top, behavior:'instant'});
+}
+
+function switchView(view, btn, positionOnReturn){
   var target = document.getElementById('view-' + view);
   if(!target || !btn) return;
   if(view==='plan' && typeof activePlanReadingSession!=='undefined' && activePlanReadingSession){
     returnToPlanFromSession(false);
     return;
   }
+  var readerView = document.getElementById('view-reader');
+  var readerWasActive = Boolean(readerView && readerView.classList.contains('active'));
+  if(readerWasActive && view !== 'reader') rememberReaderTabPosition(true);
   document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
   if(view!=='reader' && typeof clearPlanReadingSession==='function') clearPlanReadingSession();
   if(view==='plan' && typeof prepareJourneyPlanView==='function') prepareJourneyPlanView();
@@ -817,6 +869,7 @@ function switchView(view, btn){
   document.querySelectorAll('.bs-btn[aria-pressed]').forEach(function(b){ b.setAttribute('aria-pressed', 'false'); });
   btn.classList.add('active');
   btn.setAttribute('aria-pressed', 'true');
+  if(view === 'reader' && !readerWasActive && positionOnReturn !== false) restoreReaderTabPosition();
 }
 
 function populateBooks(){
@@ -1150,7 +1203,7 @@ function navigateReaderToPassage(bookId, chapter, verse){
   return runWithBibleExperience(function(){
     var readerButton = document.querySelector('.bs-btn[aria-controls="view-reader"]');
     if(!readerButton) return false;
-    if(!document.getElementById('view-reader').classList.contains('active')) switchView('reader', readerButton);
+    if(!document.getElementById('view-reader').classList.contains('active')) switchView('reader', readerButton, false);
     var bookSelect = document.getElementById('bookSelect');
     var chapterSelect = document.getElementById('chapterSelect');
     if(!bookSelect || !chapterSelect || !Array.from(bookSelect.options).some(function(option){ return option.value === bookId; })) return false;
@@ -1172,6 +1225,9 @@ function navigateReaderToPassage(bookId, chapter, verse){
 }
 function initializeReaderControls(){
   initializeReaderStickyOffsets();
+  window.addEventListener('scroll', function(){ rememberReaderTabPosition(false); }, {passive:true});
+  var readerView = document.getElementById('view-reader');
+  if(readerView) readerView.addEventListener('scroll', function(){ rememberReaderTabPosition(false); }, {passive:true});
   document.querySelectorAll('.bs-btn[aria-controls^="view-"]').forEach(function(button){
     button.addEventListener('click', function(){
       var view = button.getAttribute('aria-controls').slice(5);

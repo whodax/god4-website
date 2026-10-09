@@ -18,7 +18,8 @@ verse positioning. Chapter scrolling is immediate; explicit smooth scrolling is
 immediate when reduced motion is requested.
 
 Startup rendering does not request positioning. Returning to an unchanged Reader
-tab does not request positioning. Native browser scroll restoration remains `auto`
+tab restores its reading location without chapter/verse targeting or a focus change.
+Native browser scroll restoration remains `auto`
 and ordinary navigation creates no history entries. Plan references still supply
 an explicit verse and retain the existing Plan history/session behavior.
 
@@ -32,6 +33,34 @@ Search delegates to `navigateReaderToPassage`, which activates Reader and resolv
 chapter-only or explicit-verse positioning. Search issues no later Companion
 scroll. Omitting the verse now means chapter-only navigation; Plan supplies verse
 1 explicitly.
+
+Real mobile taps and desktop clicks exposed a gap in the original tab test:
+bringing the non-sticky tab buttons into view loses the passage viewport before
+the click handler runs. Hiding Reader can also clamp the document scroll offset.
+The original same-turn programmatic switching test bypassed these transitions.
+
+A transient Reader bookmark now records the first visible verse and its offset
+below the measured sticky controls, plus its translation/book/chapter/selected
+verse and scroll surface. Passive scroll observations record reading locations;
+scrolling into the tab-navigation region does not overwrite the last reading
+location. Leaving Reader also captures its position when necessary. Once Reader
+is visible again, an unchanged reference restores that anchor immediately and
+keeps tab focus. A changed hidden reference uses chapter-start or explicit-verse
+positioning instead. Internal passage navigation skips bookmark restoration
+because it owns the final target. No bookmark is persisted, no timers are added,
+and neither native history nor the tab layout changes. Shell cache remains 22
+for this continuation on the unpublished branch.
+
+`reader-tab-position.spec.js` exercises actual taps at 390×844 and desktop clicks
+for Genesis 24:45, Psalms 23:4 and John 1:30 with three-pixel geometry tolerance.
+It separately checks unchanged selected verses, keyboard focus, hidden book/
+chapter/translation changes and explicit hidden verse selection.
+Before the correction, all three real-tap mobile cases and all three desktop-click
+cases failed; mobile Genesis 24:45 returned from scrollY 6061 to 1054. Afterward,
+all 91 combined browser regressions passed, followed by 18/18 final focused checks
+(nine per viewport). All 263 sequential unit checks, asset/syntax validation and
+`git diff --check` passed. Actual-phone acceptance on an updated hosted preview
+remains required after an authorized push.
 
 `reader-navigation-scroll.spec.js` checks desktop/mobile geometry for six passages
 from three starting offsets, controls, voice, cold/warm and pending translations,
@@ -47,6 +76,7 @@ Changed files:
 - `js/word-study/controller.js`
 - `sw.js`
 - `tests/reader-navigation-scroll.spec.js`
+- `tests/reader-tab-position.spec.js`
 - `tests/god4.spec.js`
 - `tests/reader-empty-verse.spec.js`
 - `tests/romans-original-language.spec.js`
