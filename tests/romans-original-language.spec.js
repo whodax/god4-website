@@ -50,17 +50,16 @@ for(const [translation, chapter, verse, canonicalChapter, canonicalVerse, count]
   });
 }
 
-test('Word Study WEB mapping leaves the empty Romans 16:25 marker and verse inventory unchanged', async ({page}) => {
+test('Word Study WEB mapping preserves source coordinates while Reader omits empty Romans 16:25', async ({page}) => {
   await page.goto('/');
   await page.evaluate(async () => {
     await BibleTranslationLoader.ensure('web');
     currentTranslation='web'; currentBook='romans'; currentChapter=16; renderPassage('romans',16);
   });
   const empty = page.locator('#readerContent [data-verse-number="25"]');
-  await expect(empty).toHaveAttribute('data-verse-text', '');
-  await expect(empty.locator('.vnum')).toHaveText('25');
+  await expect(empty).toHaveCount(0);
   await expect(empty.locator('[data-word-study-term]')).toHaveCount(0);
-  await expect(page.locator('#verseSelect option[value="25"]')).toHaveCount(1);
+  await expect(page.locator('#verseSelect option[value="25"]')).toHaveCount(0);
   for(const verse of [26,27]){
     await expect(page.locator(`#readerContent [data-verse-number="${verse}"]`)).toHaveCount(0);
     await expect(page.locator(`#verseSelect option[value="${verse}"]`)).toHaveCount(0);
