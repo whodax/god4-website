@@ -61,9 +61,9 @@ test('generated manifest matches canonical content for all approved translations
 
 test('WEB metadata matches the committed and deployed LF representation', () => {
   expect(generatedManifest().web).toMatchObject({
-    revision:'e05fd1ce8dd85087',
-    integrity:'sha256-4F/Rzo3YUIfkD4k+z7m1qZyxnr3Gp1/uKByyn3a13MU=',
-    bytes:4194375
+    revision:'a32647ad749afd31',
+    integrity:'sha256-oyZHrXSa/THENI7W4iz6DLDwykjuFwYd93IVUXQ70gs=',
+    bytes:4202540
   });
 });
 
