@@ -140,12 +140,20 @@ var WordStudyController = (function createWordStudyController(){
     }
   }
 
+  function invalidate(){
+    requestId++;
+    activatingWord = null;
+    var panel = elements().panel;
+    if(panel) panel.hidden = true;
+    clearOriginalLanguage();
+  }
+
   function close(){
     var panel = elements().panel;
     if(!panel || panel.hidden) return;
-    requestId++;
-    panel.hidden = true;
-    if(activatingWord && document.contains(activatingWord)) activatingWord.focus();
+    var word = activatingWord;
+    invalidate();
+    if(word && document.contains(word)) word.focus();
   }
 
   function initialize(){
@@ -182,5 +190,5 @@ var WordStudyController = (function createWordStudyController(){
     });
   }
 
-  return { initialize: initialize, close: close };
+  return { initialize: initialize, close: close, invalidate: invalidate };
 }());

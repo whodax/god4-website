@@ -128,16 +128,18 @@ test('all-empty chapter keeps heading but creates no buttons, word targets or de
   for(const button of await page.locator('[data-reader-action="next-verse"], [data-reader-action="previous-verse"]').all()) await expect(button).toBeDisabled();
 });
 
-test('retained WEB renders without empty placeholders using cached Reader 21 offline',async ({page,context}) => {
+test('retained WEB renders without empty placeholders using cached Reader 22 offline',async ({page,context}) => {
   await open(page,'web');
   await page.evaluate(() => navigator.serviceWorker.ready.then(() => true));
   if(!await page.evaluate(() => Boolean(navigator.serviceWorker.controller))) await page.reload();
+  await page.evaluate(() => initializeBibleExperience());
   expect(await page.evaluate(() => BibleTranslationLoader.retain('web'))).toMatchObject({ok:true,state:'current'});
   const reader=await page.evaluate(async () => {
-    const shell=await caches.open('god4-shell-compact-reader-21');
+    const shell=await caches.open('god4-shell-compact-reader-22');
     return (await shell.match('/js/bible/reader.js')).text();
   });
   expect(reader).toContain('function isRenderableVerseText(text)');
+  expect(reader).toContain('function scrollReaderStartIntoView()');
   await context.setOffline(true); await page.reload();
   await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent h2')).toHaveText('Romans 16');
@@ -145,4 +147,8 @@ test('retained WEB renders without empty placeholders using cached Reader 21 off
   await expect(page.locator('#readerContent [data-verse-number="25"]')).toHaveCount(0);
   await expect(page.locator('#verseSelect option[value="25"]')).toHaveCount(0);
   expect(await page.evaluate(() => BibleData.getVerse('web','romans',16,25).text)).toBe('');
+  expect(await page.evaluate(() => navigateReaderToPassage('psalms',23))).toBe(true);
+  const geometry=await page.evaluate(() => ({top:document.querySelector('#readerContent h2').getBoundingClientRect().top,
+    boundary:readerVisibleTop()+16}));
+  expect(Math.abs(geometry.top-geometry.boundary)).toBeLessThan(2);
 });

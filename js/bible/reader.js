@@ -238,6 +238,8 @@ function readerVisibleTop(){
 }
 
 function scrollReaderTargetIntoView(target, behavior){
+  if(!target || !target.getClientRects().length) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) behavior = 'instant';
   var top = readerVisibleTop();
   var bottom = window.innerHeight;
   var rect = target.getBoundingClientRect();
@@ -251,6 +253,17 @@ function scrollReaderTargetIntoView(target, behavior){
   var view = document.getElementById('view-reader');
   if(view && view.classList.contains('reader-fullscreen')) view.scrollBy({top:offset, behavior:behavior});
   else window.scrollBy({top:offset, behavior:behavior});
+}
+
+function scrollReaderStartIntoView(){
+  var view = document.getElementById('view-reader');
+  var start = document.querySelector('#readerContent h2');
+  if(!view || !view.classList.contains('active') || !start || !start.getClientRects().length) return;
+  // Geometry reads after render/state updates flush layout without a delayed callback.
+  var offset = start.getBoundingClientRect().top - (readerVisibleTop() + 16);
+  if(Math.abs(offset) < 1) return;
+  var surface = view.classList.contains('reader-fullscreen') ? view : window;
+  surface.scrollBy({top:offset, behavior:'instant'});
 }
 
 function initializeReaderStickyOffsets(){
@@ -532,7 +545,7 @@ function navigateToSpokenBook(bookText, chapterNumber, verseNumber){
   populateChapters();
   chapterSelect.value = String(chapter);
   currentVerse = null;
-  loadPassage();
+  loadPassage(verseNumber === undefined);
   if(verseNumber !== undefined && !selectReaderVerse(verseNumber)) return false;
   return true;
 }
@@ -876,7 +889,7 @@ async function changeTranslation(translationId){
   }
   populateChapters();
   populateVerses();
-  loadPassage();
+  loadPassage(true);
   if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
   if(typeof syncCompareFromReader === 'function') syncCompareFromReader();
   return true;
@@ -904,7 +917,7 @@ function changeReaderBook(){
   if(!bookSelect) return;
   currentVerse = null;
   populateChapters();
-  loadPassage();
+  loadPassage(true);
 }
 
 function renderPassage(bookKey, chapterNum){
@@ -919,12 +932,14 @@ function renderPassage(bookKey, chapterNum){
     html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + '</span> ';
   }
   var container = document.getElementById('readerContent');
+  if(typeof WordStudyController !== 'undefined') WordStudyController.invalidate();
   if(container) container.innerHTML = html;
   populateVerses();
   if(Number.isInteger(currentVerse) && !isRenderableVerseText(data.verses[currentVerse - 1])) clearReaderVerseSelection();
 }
 
-function loadPassage(){
+function loadPassage(positionAfterRender){
+  // Manual navigation opts in; startup/reload rendering leaves native restoration alone.
   var bookSelect = document.getElementById('bookSelect');
   var chapterSelect = document.getElementById('chapterSelect');
   if(!bookSelect || !chapterSelect || typeof BibleData === 'undefined') return;
@@ -948,6 +963,10 @@ function loadPassage(){
   if(!currentVerse || !applyReaderVerseSelection(currentVerse, false)) clearReaderVerseSelection();
   saveReaderPosition();
   updateReaderControls();
+  if(positionAfterRender === true){
+    if(currentVerse) scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="' + currentVerse + '"]'), 'instant');
+    else scrollReaderStartIntoView();
+  }
 }
 
 function readCurrentChapterAloud(startVerse, pauseAfterFirst, translationId){
@@ -981,10 +1000,9 @@ function stopReadAloud(){
 
 function prevChapter(){
   if(currentChapter > 1){
-    currentChapter--;
-    document.getElementById('chapterSelect').value = currentChapter;
-    populateVerses();
-    loadPassage();
+    document.getElementById('chapterSelect').value = currentChapter - 1;
+    currentVerse = null;
+    loadPassage(true);
   }
 }
 function nextChapter(){
@@ -994,10 +1012,9 @@ function nextChapter(){
     return;
   }
   if(currentChapter < BibleData.getChapterCount(currentTranslation, currentBook)){
-    currentChapter++;
-    document.getElementById('chapterSelect').value = currentChapter;
-    populateVerses();
-    loadPassage();
+    document.getElementById('chapterSelect').value = currentChapter + 1;
+    currentVerse = null;
+    loadPassage(true);
   }
 }
 
@@ -1127,9 +1144,9 @@ function runWithBibleExperience(action){
 }
 
 function navigateReaderToPassage(bookId, chapter, verse){
-  var requestedVerse = Number.isInteger(verse) && verse > 0 ? verse : 1;
+  var requestedVerse = Number.isInteger(verse) && verse > 0 ? verse : null;
   if(typeof BibleData === 'undefined' || !BibleData.getChapter(currentTranslation, bookId, chapter) ||
-    !BibleData.getVerse(currentTranslation, bookId, chapter, requestedVerse)) return Promise.resolve(false);
+    (requestedVerse !== null && !BibleData.getVerse(currentTranslation, bookId, chapter, requestedVerse))) return Promise.resolve(false);
   return runWithBibleExperience(function(){
     var readerButton = document.querySelector('.bs-btn[aria-controls="view-reader"]');
     if(!readerButton) return false;
@@ -1144,7 +1161,8 @@ function navigateReaderToPassage(bookId, chapter, verse){
     bookSelect.value = bookId;
     populateChapters();
     chapterSelect.value = String(chapter);
-    loadPassage();
+    loadPassage(requestedVerse === null);
+    if(requestedVerse === null) return true;
     var target = document.querySelector('#readerContent [data-verse-number="' + requestedVerse + '"]');
     if(!target || target.getAttribute('data-book-id') !== bookId || Number(target.getAttribute('data-chapter')) !== chapter) return false;
     if(!applyReaderVerseSelection(requestedVerse, true)) return false;
@@ -1165,7 +1183,7 @@ function initializeReaderControls(){
     ['fullscreenBtn', 'click', function(){ runWithBibleExperience(toggleFullscreen); }],
     ['readerTranslation', 'change', function(event){ changeTranslation(event.target.value); }],
     ['bookSelect', 'change', function(){ runWithBibleExperience(changeReaderBook); }],
-    ['chapterSelect', 'change', function(){ runWithBibleExperience(loadPassage); }],
+    ['chapterSelect', 'change', function(){ runWithBibleExperience(function(){ loadPassage(true); }); }],
     ['verseSelect', 'change', function(event){ runWithBibleExperience(function(){ selectReaderVerse(event.target.value); }); }],
     ['readAloudPlay', 'click', function(){
       if(typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() === 'playing') stopReadAloud();

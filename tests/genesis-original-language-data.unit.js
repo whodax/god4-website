@@ -71,7 +71,8 @@ test('all 48 unaffected shard hashes match baseline and Git contains only the tw
     assert.equal(repair.sha256(repair.canonical(bytes)),source.baselineCanonicalHashes[file],file);count++;
   }
   assert.equal(count,48);
-  const changed=execFileSync('git',['diff','--name-only',source.origin.commit,'--','data/word-study/original-language','js/bible','js/word-study','sw.js'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
+  // Preserve the repair's historical scope independently of later authorized runtime changes.
+  const changed=execFileSync('git',['diff','--name-only',source.origin.commit,'f457778cf432270e54146d5daca950ab49c80e66','--','data/word-study/original-language','js/bible','js/word-study','sw.js'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
   assert.deepEqual(changed,['data/word-study/original-language/genesis/31.json','data/word-study/original-language/genesis/32.json']);
 });
 test('generation is deterministic; repeated repair writes no files or bytes',()=>{
