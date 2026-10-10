@@ -887,7 +887,7 @@ function switchView(view, btn, positionOnReturn){
   if(view !== 'reader' && typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() !== 'idle') BibleSpeech.stop();
   if(view === 'compare'){
     if(typeof initializeCompareReference === 'function') initializeCompareReference();
-    if(typeof loadCompare === 'function') loadCompare();
+    if(typeof loadCompare === 'function') loadCompare(true);
   }
   target.classList.add('active');
   document.querySelectorAll('.bs-btn').forEach(function(b){ b.classList.remove('active'); });
@@ -896,6 +896,7 @@ function switchView(view, btn, positionOnReturn){
   btn.setAttribute('aria-pressed', 'true');
   // The active view changes the stack's trailing reserve; apply it before positioning.
   if(refreshReaderStickyOffsets) refreshReaderStickyOffsets();
+  if(view === 'compare' && typeof scrollCompareStartIntoView === 'function') scrollCompareStartIntoView();
   if(view === 'reader' && !readerWasActive && positionOnReturn !== false) restoreReaderTabPosition();
   if(view !== 'reader'){
     var tabs = document.querySelector('#bibleApp .bs-nav');

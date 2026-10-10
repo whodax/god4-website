@@ -133,6 +133,47 @@ validation passed 105/105 browser checks and 263/263 units, plus asset/syntax an
 `git diff --check`. Another actual-phone acceptance run on a fresh updated preview
 is required after an authorized push.
 
+Compare clearance correction: `#view-compare` contains the reference summary,
+three reference controls, then `#compareGrid` with two to four translation columns.
+Its controls and column headers are static. Unlike the Reader toolbar, they add
+no height to the sticky stack. The Reader containment reserve correctly becomes
+zero while Compare is active. The remaining defect was missing content positioning:
+the previous activation only ensured that the tabs were reachable. Document-height
+clamping and retained column content could leave the summary or verses behind them.
+
+Pre-fix stack: 131px site navigation + 115px tabs = 246px. Cold summary tops were
+125.56px at 390px and 125.94px at 320px; the controls were also above the stack.
+Warm-entry measurements (pixels, first column):
+
+| Width | Reference | Summary top | Header top | Verse top | Verse height obscured |
+|---|---|---:|---:|---:|---:|
+|390|Genesis 24:45|-441.44|-311.05|-261.05|140|
+|390|Psalms 23:6|-104.44|25.95|75.95|112|
+|390|John 1:30|-301.44|-171.05|-121.05|84|
+|320|Genesis 24:45|-609.06|-478.67|-428.67|224|
+|320|Psalms 23:6|-221.06|-90.67|-40.67|168|
+|320|John 1:30|-385.06|-254.67|-204.67|140|
+
+Mobile Compare targets now use a CSS scroll margin composed of the existing
+measured site/tab variables plus the existing 16px navigation margin. Entry aligns
+the summary below that stack immediately and after the matching asynchronous
+column render. The render epoch and active-view guard prevent obsolete or hidden
+results from scrolling Reader. Only activation opts into final render positioning;
+ordinary Compare edits retain their existing behavior. No focus changes, timers,
+new sticky headers, independent offsets or Reader restoration changes are added.
+Desktop entry is a no-op for this helper. Native header/verse scrolling and control
+focus use the same mobile margin. Mobile columns remain stacked without horizontal
+overflow; desktop edition layout stays unchanged. Cache remains 22.
+
+After correction, the summary is about 262px, first column header 392px and verse
+442px on both widths, all below the 246px stack. `compare-sticky-overlap.spec.js`
+checks cold/warm entries, all three references, Reader returns, whole chapters,
+native scrolling, two/three/four columns, keyboard focus, reflow, desktop and a
+delayed render after Reader return. Validation passed 118/118 combined browser
+checks, 31/31 existing Compare regressions and 263/263 units, plus asset/syntax and
+`git diff --check`. The corrected mobile layout was visually inspected. Another
+actual-phone acceptance run on a fresh updated preview remains required.
+
 `reader-navigation-scroll.spec.js` checks desktop/mobile geometry for six passages
 from three starting offsets, controls, voice, cold/warm and pending translations,
 explicit verses, Search from Reader/Compare, normal/reduced motion, stale study
@@ -143,6 +184,7 @@ regressions cover retained behavior. The shell cache changes once from 21 to 22.
 Changed files:
 
 - `js/bible/reader.js`
+- `js/bible/compare.js`
 - `js/app.js`
 - `js/word-study/controller.js`
 - `css/companion.css`
@@ -151,6 +193,7 @@ Changed files:
 - `tests/reader-tab-position.spec.js`
 - `tests/reader-mobile-sticky-tabs.spec.js`
 - `tests/reader-sticky-overlap.spec.js`
+- `tests/compare-sticky-overlap.spec.js`
 - `tests/compact-reader-controls.spec.js`
 - `tests/god4.spec.js`
 - `tests/reader-empty-verse.spec.js`

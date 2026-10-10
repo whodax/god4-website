@@ -292,7 +292,20 @@ function renderCompareColumn(translationId, index){
   return content + '</div></div>';
 }
 
-async function loadCompare(){
+function scrollCompareStartIntoView(){
+  var view = document.getElementById('view-compare');
+  var tabs = document.querySelector('#bibleApp .bs-nav');
+  var start = document.getElementById('compareSummary');
+  if(!view || !view.classList.contains('active') || !tabs ||
+    getComputedStyle(tabs).position !== 'sticky' || !start) return;
+  // CSS resolves the same measured site/tab variables used by the Reader stack.
+  var top = parseFloat(getComputedStyle(start).scrollMarginTop);
+  if(!Number.isFinite(top)) return;
+  var offset = start.getBoundingClientRect().top - top;
+  if(Math.abs(offset) >= 1) window.scrollBy({top:offset, behavior:'instant'});
+}
+
+async function loadCompare(positionAfterRender){
   var grid = document.getElementById('compareGrid');
   if(!grid) return;
   ensureCompareSelections();
@@ -326,6 +339,7 @@ async function loadCompare(){
       loadCompare();
     });
   });
+  if(positionAfterRender === true) scrollCompareStartIntoView();
 }
 
 function updateCompareEditionControl(){

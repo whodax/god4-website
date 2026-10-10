@@ -455,6 +455,10 @@
   }
 
   @media (max-width:620px){
+    #view-compare .compare-summary,#view-compare .compare-col-header,
+    #view-compare .compare-text p,#view-compare select,#view-compare button{
+      scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 16px);
+    }
     #view-reader{padding:16px 12px;}
     .reader-toolbar{
       grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto 56px;
