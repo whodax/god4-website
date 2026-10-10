@@ -2,6 +2,7 @@ const {test, expect} = require('@playwright/test');
 
 test('auth foundation starts unavailable without config while guest features initialize', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent [data-verse-number]')).not.toHaveCount(0);
   await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
@@ -14,6 +15,7 @@ test('auth foundation starts unavailable without config while guest features ini
 
 test('auth foundation restores guest or a safe signed-in identity and notifies subscribers', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const result = await page.evaluate(async () => {
     const states = [];
     const guest = createGod4Auth({initialize: async () => null, subscribe: () => () => {}});
@@ -44,6 +46,7 @@ test('auth foundation provider failure leaves Reader and local features usable',
     body: 'var God4AuthConfig={enabled:true,supabaseUrl:"https://example.supabase.co",publishableKey:"test-public",allowedHosts:["127.0.0.1"],allowedOrigins:["http://127.0.0.1:4173"],callbackPath:"/auth/callback/"};'
   }));
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await expect.poll(() => page.evaluate(() => God4Auth.getState().status)).toBe('unavailable');
   await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent [data-verse-number]')).not.toHaveCount(0);
@@ -60,6 +63,7 @@ test('auth foundation provider failure leaves Reader and local features usable',
 
 test('auth foundation uses one provider subscription and handles sign-in and sign-out events', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const result = await page.evaluate(async () => {
     let callback;
     let subscriptions = 0;
@@ -84,6 +88,7 @@ test('auth foundation uses one provider subscription and handles sign-in and sig
 
 test('auth foundation ignores stale restoration and sign-in after sign-out', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const result = await page.evaluate(async () => {
     let callback;
     let finishRestore;
@@ -106,6 +111,7 @@ test('auth foundation ignores stale restoration and sign-in after sign-out', asy
 
 test('provider sign-out supersedes pending sign-in and immediate-session signup', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const states = await page.evaluate(async () => {
     const snapshots = [];
     for(const action of ['signIn', 'signUp']){
@@ -132,6 +138,7 @@ test('provider sign-out supersedes pending sign-in and immediate-session signup'
 });
 test('auth foundation keeps a newer event subscription when restoration fails', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const result = await page.evaluate(async () => {
     let callback;
     let unsubscribeCount = 0;
@@ -150,6 +157,7 @@ test('auth foundation keeps a newer event subscription when restoration fails', 
 
 test('auth foundation failed sign-in during restoration returns to guest state', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const state = await page.evaluate(async () => {
     let finishRestore;
     const auth = createGod4Auth({
@@ -168,6 +176,7 @@ test('auth foundation failed sign-in during restoration returns to guest state',
 });
 test('auth foundation delegates actions without touching existing user data', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const result = await page.evaluate(async () => {
     const keys = ['god4.savedVerses', 'god4.plan.completedDays', 'god4.translation',
       'god4.compare', 'god4.reader.position', 'god4.speech.speed', 'god4.speech.voice'];
@@ -198,6 +207,7 @@ test('auth foundation delegates actions without touching existing user data', as
 
 test('auth foundation Supabase adapter maps events and returns no tokens', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const result = await page.evaluate(async () => {
     let callback;
     const events = [];
@@ -242,6 +252,7 @@ test('auth foundation Supabase adapter maps events and returns no tokens', async
 
 test('auth actions before explicit initialization cannot be overwritten by late restoration', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const result = await page.evaluate(async () => {
     let resolveSignInRestore;
     let resolveSignOutRestore;
@@ -274,6 +285,7 @@ test('auth actions before explicit initialization cannot be overwritten by late 
 
 test('auth boundary returns controlled errors without provider details', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const result = await page.evaluate(async () => {
     const raw = new Error('private provider response with token');
     raw.access_token = 'hidden';

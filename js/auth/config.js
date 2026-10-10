@@ -2,6 +2,7 @@
 var God4AuthConfig = (function(){
   var production = Object.freeze({
     enabled: true,
+    authStorageKey: 'sb-apkiqgxmfqohznxpqfcx-auth-token',
     supabaseUrl: 'https://apkiqgxmfqohznxpqfcx.supabase.co',
     publishableKey: 'sb_publishable_semQOcN32nqeu-Y1jjFObg_N7lEOMvL',
     allowedHosts: ['god4.us'],
@@ -10,6 +11,7 @@ var God4AuthConfig = (function(){
   });
   var staging = Object.freeze({
     enabled: true,
+    authStorageKey: 'sb-ikzvyuvrvxemliirlfmn-auth-token',
     supabaseUrl: 'https://ikzvyuvrvxemliirlfmn.supabase.co',
     publishableKey: 'sb_publishable_sfb2p-E6DmnOvyBsC_cRHA_d9JPeC8Y',
     allowedHosts: ['feature-optional-user-accoun.god4-us.pages.dev'],

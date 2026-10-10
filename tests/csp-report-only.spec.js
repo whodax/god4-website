@@ -251,6 +251,7 @@ for(const [label, site, api] of [
     const consoleViolations = await captureViolations(page);
     const apiPaths = await mockApprovedAuth(page, site, api);
     await page.goto(site + '/');
+    await page.evaluate(() => God4AuthLoader.ensure());
     await expect.poll(() => page.evaluate(() => God4Auth.getState().status)).toBe('guest');
     expect(await page.evaluate(() => window.__authOrigin)).toBe(api);
     await page.evaluate(async () => {

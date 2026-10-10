@@ -25,7 +25,8 @@ var SupabaseAuthProvider = (function(){
     var client = suppliedClient;
     if(!client){
       if(!window.supabase || typeof window.supabase.createClient !== 'function') return null;
-      try { client = window.supabase.createClient(config.supabaseUrl, config.publishableKey); }
+      try { client = window.supabase.createClient(config.supabaseUrl, config.publishableKey,
+        {auth:{storageKey:config.authStorageKey}}); }
       catch(error){ return null; }
     }
     if(!client || !client.auth) return null;

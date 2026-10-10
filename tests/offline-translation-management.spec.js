@@ -140,7 +140,7 @@ test('dialog lists fresh translations without downloading and provides modal key
   await expect(page.locator('#offlineBiblesStorage')).toHaveText('Offline Bibles: 0.0 MiB');
   expect(requested).toEqual([]);
   expect(await page.evaluate(() => window.__managementMessages)).toEqual(['BIBLE_TRANSLATION_LIST']);
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-compact-reader-23']);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-compact-reader-24']);
 
   await page.keyboard.press('Shift+Tab');
   await expect(page.getByRole('button', {name:'Download Geneva Bible 1599 for offline reading'})).toBeFocused();

@@ -128,14 +128,14 @@ test('all-empty chapter keeps heading but creates no buttons, word targets or de
   for(const button of await page.locator('[data-reader-action="next-verse"], [data-reader-action="previous-verse"]').all()) await expect(button).toBeDisabled();
 });
 
-test('retained WEB renders without empty placeholders using cached Reader 23 offline',async ({page,context}) => {
+test('retained WEB renders without empty placeholders using cached Reader 24 offline',async ({page,context}) => {
   await open(page,'web');
   await page.evaluate(() => navigator.serviceWorker.ready.then(() => true));
   if(!await page.evaluate(() => Boolean(navigator.serviceWorker.controller))) await page.reload();
   await page.evaluate(() => initializeBibleExperience());
   expect(await page.evaluate(() => BibleTranslationLoader.retain('web'))).toMatchObject({ok:true,state:'current'});
   const reader=await page.evaluate(async () => {
-    const shell=await caches.open('god4-shell-compact-reader-23');
+    const shell=await caches.open('god4-shell-compact-reader-24');
     return (await shell.match('/js/bible/reader.js')).text();
   });
   expect(reader).toContain('function isRenderableVerseText(text)');
