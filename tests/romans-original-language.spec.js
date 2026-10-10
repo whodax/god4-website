@@ -5,6 +5,8 @@ const path = require('node:path');
 async function openWord(page, book, chapter, verse, term, translation = 'kjv'){
   await page.goto('/');
   await page.evaluate(async ({book, chapter, translation}) => {
+    // Finish lazy startup before opening study; startup also replaces the passage DOM.
+    await initializeBibleExperience();
     await BibleTranslationLoader.ensure(translation);
     currentTranslation = translation; currentBook = book; currentChapter = chapter;
     renderPassage(book, chapter);

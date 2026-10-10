@@ -11,6 +11,8 @@ let spokenFollowScrollTarget = null;
 let lastSpokenVerse = null;
 let currentTranslation = UserData.translation.load();
 let translationChangeRequest = 0;
+let readerTabPosition = null;
+let refreshReaderStickyOffsets = null;
 let voiceRecognition = null;
 let voiceCommandsListening = false;
 let voiceRecognitionActive = false;
@@ -229,6 +231,11 @@ function readerVisibleTop(){
     var navRect = siteNav.getBoundingClientRect();
     if(navRect.top <= 0 && navRect.bottom > 0) top = navRect.bottom;
   }
+  var tabs = document.querySelector('#bibleApp .bs-nav');
+  if(tabs && getComputedStyle(tabs).position === 'sticky'){
+    var tabsTop = parseFloat(getComputedStyle(tabs).top);
+    if(Number.isFinite(tabsTop)) top = Math.max(top, tabsTop + tabs.getBoundingClientRect().height);
+  }
   var toolbar = document.querySelector('#view-reader.active .reader-toolbar');
   if(toolbar && getComputedStyle(toolbar).position === 'sticky'){
     var stickyTop = parseFloat(getComputedStyle(toolbar).top);
@@ -238,6 +245,8 @@ function readerVisibleTop(){
 }
 
 function scrollReaderTargetIntoView(target, behavior){
+  if(!target || !target.getClientRects().length) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) behavior = 'instant';
   var top = readerVisibleTop();
   var bottom = window.innerHeight;
   var rect = target.getBoundingClientRect();
@@ -253,26 +262,50 @@ function scrollReaderTargetIntoView(target, behavior){
   else window.scrollBy({top:offset, behavior:behavior});
 }
 
+function scrollReaderStartIntoView(){
+  var view = document.getElementById('view-reader');
+  var start = document.querySelector('#readerContent h2');
+  if(!view || !view.classList.contains('active') || !start || !start.getClientRects().length) return;
+  // Geometry reads after render/state updates flush layout without a delayed callback.
+  var offset = start.getBoundingClientRect().top - (readerVisibleTop() + 16);
+  if(Math.abs(offset) < 1) return;
+  var surface = view.classList.contains('reader-fullscreen') ? view : window;
+  surface.scrollBy({top:offset, behavior:'instant'});
+}
+
 function initializeReaderStickyOffsets(){
   var view = document.getElementById('view-reader');
   var siteNav = document.querySelector('nav');
   var toolbar = view && view.querySelector('.reader-toolbar');
+  var tabs = document.querySelector('#bibleApp .bs-nav');
   if(!view || !siteNav || !toolbar) return;
   var sheet = Array.from(document.styleSheets).find(function(candidate){
     return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);
   });
   if(!sheet) return;
-  var ruleIndex = sheet.insertRule('#view-reader { --reader-nav-bottom:105px; --reader-toolbar-height:53px; }', sheet.cssRules.length);
+  var ruleIndex = sheet.insertRule('#bibleApp { --reader-nav-bottom:105px; --reader-tabs-height:0px; --reader-toolbar-height:53px; --reader-stack-tail:0px; }', sheet.cssRules.length);
   var style = sheet.cssRules[ruleIndex].style;
   function update(){
     style.setProperty('--reader-nav-bottom', siteNav.getBoundingClientRect().bottom + 'px');
-    style.setProperty('--reader-toolbar-height', toolbar.getBoundingClientRect().height + 'px');
+    var stickyTabs = tabs && getComputedStyle(tabs).position === 'sticky';
+    var toolbarHeight = toolbar.getBoundingClientRect().height;
+    style.setProperty('--reader-tabs-height', (stickyTabs ? tabs.getBoundingClientRect().height : 0) + 'px');
+    style.setProperty('--reader-toolbar-height', toolbarHeight + 'px');
+    var tail = 0;
+    if(stickyTabs && view.classList.contains('active') && !view.classList.contains('reader-fullscreen')){
+      // Match the toolbar's bottom containment inset so both sticky rows leave together.
+      tail = toolbarHeight + (parseFloat(getComputedStyle(toolbar).marginBottom) || 0) +
+        (parseFloat(getComputedStyle(view).paddingBottom) || 0);
+    }
+    style.setProperty('--reader-stack-tail', tail + 'px');
   }
+  refreshReaderStickyOffsets = update;
   update();
   if(typeof ResizeObserver !== 'undefined'){
     var observer = new ResizeObserver(update);
     observer.observe(siteNav);
     observer.observe(toolbar);
+    if(tabs) observer.observe(tabs);
   }
 }
 
@@ -532,7 +565,7 @@ function navigateToSpokenBook(bookText, chapterNumber, verseNumber){
   populateChapters();
   chapterSelect.value = String(chapter);
   currentVerse = null;
-  loadPassage();
+  loadPassage(verseNumber === undefined);
   if(verseNumber !== undefined && !selectReaderVerse(verseNumber)) return false;
   return true;
 }
@@ -784,26 +817,98 @@ function renderStudyWordTokens(text){
   }).join('');
 }
 
-function switchView(view, btn){
+function readerTabReference(){
+  return JSON.stringify([currentTranslation, currentBook, currentChapter, currentVerse]);
+}
+
+function rememberReaderTabPosition(leaving){
+  var reader = document.getElementById('view-reader');
+  if(!reader || !reader.classList.contains('active')) return;
+  var reference = readerTabReference();
+  var fullscreen = reader.classList.contains('reader-fullscreen');
+  var tabs = document.querySelector('#bibleApp .bs-nav');
+  // Moving up to the non-sticky tabs is navigation, not a new reading location.
+  if(!fullscreen && tabs && getComputedStyle(tabs).position !== 'sticky' && tabs.getBoundingClientRect().bottom > readerVisibleTop()){
+    if(!leaving || (readerTabPosition && readerTabPosition.reference === reference)) return;
+  }
+  var top = readerVisibleTop();
+  var verses = Array.from(document.querySelectorAll('#readerContent [data-verse-number]'));
+  var anchor = verses.find(function(verse){
+    var rect = verse.getBoundingClientRect();
+    return rect.bottom > top + 16 && rect.top < window.innerHeight;
+  });
+  if(!anchor && !leaving) return;
+  readerTabPosition = {
+    reference:reference, fullscreen:fullscreen,
+    top:fullscreen ? reader.scrollTop : window.scrollY,
+    verse:anchor ? anchor.getAttribute('data-verse-number') : null,
+    offset:anchor ? anchor.getBoundingClientRect().top - top : null
+  };
+}
+
+function restoreReaderTabPosition(){
+  if(!readerTabPosition) return;
+  var reader = document.getElementById('view-reader');
+  if(readerTabPosition.reference !== readerTabReference()){
+    if(currentVerse) applyReaderVerseSelection(currentVerse, true);
+    else scrollReaderStartIntoView();
+    rememberReaderTabPosition(true);
+    return;
+  }
+  // An explicit selection is authoritative even if the user went back up to the tabs.
+  // An unchanged selection needs positioning, not a new focus announcement.
+  if(currentVerse){
+    scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="' + currentVerse + '"]'), 'instant');
+    return;
+  }
+  var fullscreen = reader.classList.contains('reader-fullscreen');
+  if(fullscreen !== readerTabPosition.fullscreen) return;
+  var surface = fullscreen ? reader : window;
+  var anchor = readerTabPosition.verse && document.querySelector('#readerContent [data-verse-number="' + readerTabPosition.verse + '"]');
+  if(anchor){
+    var offset = anchor.getBoundingClientRect().top - readerVisibleTop() - readerTabPosition.offset;
+    if(Math.abs(offset) >= 1) surface.scrollBy({top:offset, behavior:'instant'});
+  } else surface.scrollTo({top:readerTabPosition.top, behavior:'instant'});
+}
+
+function switchView(view, btn, positionOnReturn){
   var target = document.getElementById('view-' + view);
   if(!target || !btn) return;
   if(view==='plan' && typeof activePlanReadingSession!=='undefined' && activePlanReadingSession){
     returnToPlanFromSession(false);
     return;
   }
+  var readerView = document.getElementById('view-reader');
+  var readerWasActive = Boolean(readerView && readerView.classList.contains('active'));
+  if(readerWasActive && view !== 'reader') rememberReaderTabPosition(true);
   document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
   if(view!=='reader' && typeof clearPlanReadingSession==='function') clearPlanReadingSession();
   if(view==='plan' && typeof prepareJourneyPlanView==='function') prepareJourneyPlanView();
   if(view !== 'reader' && typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() !== 'idle') BibleSpeech.stop();
   if(view === 'compare'){
     if(typeof initializeCompareReference === 'function') initializeCompareReference();
-    if(typeof loadCompare === 'function') loadCompare();
+    if(typeof loadCompare === 'function') loadCompare(true);
   }
   target.classList.add('active');
   document.querySelectorAll('.bs-btn').forEach(function(b){ b.classList.remove('active'); });
   document.querySelectorAll('.bs-btn[aria-pressed]').forEach(function(b){ b.setAttribute('aria-pressed', 'false'); });
   btn.classList.add('active');
   btn.setAttribute('aria-pressed', 'true');
+  // The active view changes the stack's trailing reserve; apply it before positioning.
+  if(refreshReaderStickyOffsets) refreshReaderStickyOffsets();
+  if(view === 'compare' && typeof scrollCompareStartIntoView === 'function') scrollCompareStartIntoView();
+  if(view === 'reader' && !readerWasActive && positionOnReturn !== false) restoreReaderTabPosition();
+  if(view !== 'reader'){
+    var tabs = document.querySelector('#bibleApp .bs-nav');
+    if(tabs && getComputedStyle(tabs).position === 'sticky'){
+      var tabsTop = parseFloat(getComputedStyle(tabs).top);
+      var tabsRect = tabs.getBoundingClientRect();
+      // A short loading view can clamp the document past the sticky row's container.
+      if(Number.isFinite(tabsTop) && (tabsRect.top < tabsTop - 1 || tabsRect.bottom > window.innerHeight)){
+        window.scrollBy({top:tabsRect.top - tabsTop, behavior:'instant'});
+      }
+    }
+  }
 }
 
 function populateBooks(){
@@ -876,7 +981,7 @@ async function changeTranslation(translationId){
   }
   populateChapters();
   populateVerses();
-  loadPassage();
+  loadPassage(true);
   if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
   if(typeof syncCompareFromReader === 'function') syncCompareFromReader();
   return true;
@@ -904,7 +1009,7 @@ function changeReaderBook(){
   if(!bookSelect) return;
   currentVerse = null;
   populateChapters();
-  loadPassage();
+  loadPassage(true);
 }
 
 function renderPassage(bookKey, chapterNum){
@@ -919,12 +1024,14 @@ function renderPassage(bookKey, chapterNum){
     html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + '</span> ';
   }
   var container = document.getElementById('readerContent');
+  if(typeof WordStudyController !== 'undefined') WordStudyController.invalidate();
   if(container) container.innerHTML = html;
   populateVerses();
   if(Number.isInteger(currentVerse) && !isRenderableVerseText(data.verses[currentVerse - 1])) clearReaderVerseSelection();
 }
 
-function loadPassage(){
+function loadPassage(positionAfterRender){
+  // Manual navigation opts in; startup/reload rendering leaves native restoration alone.
   var bookSelect = document.getElementById('bookSelect');
   var chapterSelect = document.getElementById('chapterSelect');
   if(!bookSelect || !chapterSelect || typeof BibleData === 'undefined') return;
@@ -948,6 +1055,10 @@ function loadPassage(){
   if(!currentVerse || !applyReaderVerseSelection(currentVerse, false)) clearReaderVerseSelection();
   saveReaderPosition();
   updateReaderControls();
+  if(positionAfterRender === true){
+    if(currentVerse) scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="' + currentVerse + '"]'), 'instant');
+    else scrollReaderStartIntoView();
+  }
 }
 
 function readCurrentChapterAloud(startVerse, pauseAfterFirst, translationId){
@@ -981,10 +1092,9 @@ function stopReadAloud(){
 
 function prevChapter(){
   if(currentChapter > 1){
-    currentChapter--;
-    document.getElementById('chapterSelect').value = currentChapter;
-    populateVerses();
-    loadPassage();
+    document.getElementById('chapterSelect').value = currentChapter - 1;
+    currentVerse = null;
+    loadPassage(true);
   }
 }
 function nextChapter(){
@@ -994,10 +1104,9 @@ function nextChapter(){
     return;
   }
   if(currentChapter < BibleData.getChapterCount(currentTranslation, currentBook)){
-    currentChapter++;
-    document.getElementById('chapterSelect').value = currentChapter;
-    populateVerses();
-    loadPassage();
+    document.getElementById('chapterSelect').value = currentChapter + 1;
+    currentVerse = null;
+    loadPassage(true);
   }
 }
 
@@ -1127,13 +1236,13 @@ function runWithBibleExperience(action){
 }
 
 function navigateReaderToPassage(bookId, chapter, verse){
-  var requestedVerse = Number.isInteger(verse) && verse > 0 ? verse : 1;
+  var requestedVerse = Number.isInteger(verse) && verse > 0 ? verse : null;
   if(typeof BibleData === 'undefined' || !BibleData.getChapter(currentTranslation, bookId, chapter) ||
-    !BibleData.getVerse(currentTranslation, bookId, chapter, requestedVerse)) return Promise.resolve(false);
+    (requestedVerse !== null && !BibleData.getVerse(currentTranslation, bookId, chapter, requestedVerse))) return Promise.resolve(false);
   return runWithBibleExperience(function(){
     var readerButton = document.querySelector('.bs-btn[aria-controls="view-reader"]');
     if(!readerButton) return false;
-    if(!document.getElementById('view-reader').classList.contains('active')) switchView('reader', readerButton);
+    if(!document.getElementById('view-reader').classList.contains('active')) switchView('reader', readerButton, false);
     var bookSelect = document.getElementById('bookSelect');
     var chapterSelect = document.getElementById('chapterSelect');
     if(!bookSelect || !chapterSelect || !Array.from(bookSelect.options).some(function(option){ return option.value === bookId; })) return false;
@@ -1144,7 +1253,8 @@ function navigateReaderToPassage(bookId, chapter, verse){
     bookSelect.value = bookId;
     populateChapters();
     chapterSelect.value = String(chapter);
-    loadPassage();
+    loadPassage(requestedVerse === null);
+    if(requestedVerse === null) return true;
     var target = document.querySelector('#readerContent [data-verse-number="' + requestedVerse + '"]');
     if(!target || target.getAttribute('data-book-id') !== bookId || Number(target.getAttribute('data-chapter')) !== chapter) return false;
     if(!applyReaderVerseSelection(requestedVerse, true)) return false;
@@ -1154,6 +1264,9 @@ function navigateReaderToPassage(bookId, chapter, verse){
 }
 function initializeReaderControls(){
   initializeReaderStickyOffsets();
+  window.addEventListener('scroll', function(){ rememberReaderTabPosition(false); }, {passive:true});
+  var readerView = document.getElementById('view-reader');
+  if(readerView) readerView.addEventListener('scroll', function(){ rememberReaderTabPosition(false); }, {passive:true});
   document.querySelectorAll('.bs-btn[aria-controls^="view-"]').forEach(function(button){
     button.addEventListener('click', function(){
       var view = button.getAttribute('aria-controls').slice(5);
@@ -1165,7 +1278,7 @@ function initializeReaderControls(){
     ['fullscreenBtn', 'click', function(){ runWithBibleExperience(toggleFullscreen); }],
     ['readerTranslation', 'change', function(event){ changeTranslation(event.target.value); }],
     ['bookSelect', 'change', function(){ runWithBibleExperience(changeReaderBook); }],
-    ['chapterSelect', 'change', function(){ runWithBibleExperience(loadPassage); }],
+    ['chapterSelect', 'change', function(){ runWithBibleExperience(function(){ loadPassage(true); }); }],
     ['verseSelect', 'change', function(event){ runWithBibleExperience(function(){ selectReaderVerse(event.target.value); }); }],
     ['readAloudPlay', 'click', function(){
       if(typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() === 'playing') stopReadAloud();

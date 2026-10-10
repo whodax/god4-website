@@ -213,12 +213,11 @@ function parseSearchReference(query, translationId){
 async function navigateSearchResult(result){
   if(!result) return;
   var book = BibleData.listBooks(result.translationId || currentTranslation).find(function(item){ return item.id === result.bookId; });
-  if(!book || typeof navigateToSpokenBook !== 'function') return;
+  if(!book || typeof navigateReaderToPassage !== 'function') return;
   if(result.translationId && result.translationId !== currentTranslation && typeof changeTranslation === 'function'){
     if(!await changeTranslation(result.translationId)) return;
   }
-  navigateToSpokenBook(book.name, result.chapter, result.isChapter ? undefined : result.verse);
-  document.getElementById('companion').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  return navigateReaderToPassage(book.id, result.chapter, result.isChapter ? undefined : result.verse);
 }
 
 function createSearchResultCard(result, index){

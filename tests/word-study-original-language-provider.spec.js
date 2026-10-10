@@ -81,6 +81,7 @@ test('Word Study Aramaic token metadata uses RTL and arc without changing stylin
   }));
   await page.goto('/');
   await page.evaluate(async () => {
+    await initializeBibleExperience();
     await BibleTranslationLoader.ensure('kjv');
     currentTranslation='kjv'; currentBook='genesis'; currentChapter=31;
     renderPassage('genesis',31);

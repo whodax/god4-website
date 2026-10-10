@@ -150,6 +150,7 @@ test('the same Reader toolbar sticks below the measured site navigation at three
         toolbarCount:document.querySelectorAll('.reader-toolbar').length,
         position:getComputedStyle(toolbar).position,
         navBottom:nav.bottom,
+        stackBottom:nav.bottom + parseFloat(getComputedStyle(document.getElementById('bibleApp')).getPropertyValue('--reader-tabs-height')),
         toolbarTop:bounds.top,
         toolbarBottom:bounds.bottom,
         toolbarHeight:bounds.height,
@@ -163,8 +164,8 @@ test('the same Reader toolbar sticks below the measured site navigation at three
     expect(geometry.sameNode).toBe(true);
     expect(geometry.toolbarCount).toBe(1);
     expect(geometry.position).toBe('sticky');
-    expect(geometry.toolbarTop).toBeGreaterThanOrEqual(geometry.navBottom - 1);
-    expect(geometry.toolbarTop).toBeLessThanOrEqual(geometry.navBottom + 1);
+    expect(geometry.toolbarTop).toBeGreaterThanOrEqual(geometry.stackBottom - 1);
+    expect(geometry.toolbarTop).toBeLessThanOrEqual(geometry.stackBottom + 1);
     expect(geometry.toolbarHeight).toBeCloseTo(originalHeight, 0);
     expect(geometry.verseTop).toBeGreaterThan(geometry.toolbarBottom);
     expect(geometry.overflow).toBe(false);

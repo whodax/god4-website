@@ -5,7 +5,7 @@ const translationManifestGenerator = require('../tools/generate-translation-mani
 
 const root = path.resolve(__dirname, '..');
 const translationPattern = /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/;
-const shellCacheName = 'god4-shell-compact-reader-21';
+const shellCacheName = 'god4-shell-compact-reader-22';
 
 async function installAndControl(page) {
   await page.goto('/');
@@ -117,7 +117,7 @@ test('new Reader shell replaces the prior shell while retaining an Offline Bible
     .resolves.toMatchObject({ok:true, state:'ready'});
 
   await page.evaluate(async () => {
-    const oldShell = await caches.open('god4-shell-compact-reader-20');
+    const oldShell = await caches.open('god4-shell-compact-reader-21');
     await oldShell.put('/', new Response('prior shell'));
     const registration = await navigator.serviceWorker.getRegistration();
     await registration.unregister();
@@ -131,15 +131,19 @@ test('new Reader shell replaces the prior shell while retaining an Offline Bible
     shellCacheName, 'god4-bible-candidates-v1', 'god4-bible-ready-v1'
   ]);
   const cachedShell = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-21');
+    const shell = await caches.open('god4-shell-compact-reader-22');
     const css = await (await shell.match('/css/components.css')).text();
     const html = await (await shell.match('/')).text();
     const reader = await (await shell.match('/js/bible/reader.js')).text();
+    const study = await (await shell.match('/js/word-study/controller.js')).text();
     return {searchReflow:css.includes('min-width:0'), sharedFullscreen:html.includes('id="fullscreenBtn"'),
       senseSelector:Boolean(await shell.match('/js/word-study/sense-selector.js')),
-      emptyVerseHandling:reader.includes('function isRenderableVerseText(text)')};
+      emptyVerseHandling:reader.includes('function isRenderableVerseText(text)'),
+      navigationPosition:reader.includes('function scrollReaderStartIntoView()'),
+      studyInvalidation:study.includes('function invalidate()')};
   });
-  expect(cachedShell).toEqual({searchReflow:true, sharedFullscreen:true, senseSelector:true, emptyVerseHandling:true});
+  expect(cachedShell).toEqual({searchReflow:true, sharedFullscreen:true, senseSelector:true, emptyVerseHandling:true,
+    navigationPosition:true, studyInvalidation:true});
   expect(await page.evaluate(() => OriginalLanguageWordStudyProvider.resolveOriginalLanguageReference({
     translationId:'web', bookId:'romans', chapter:14, verse:24
   }))).toEqual({bookId:'romans', chapter:16, verse:25});
@@ -291,7 +295,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-21');
+    const shell = await caches.open('god4-shell-compact-reader-22');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
       .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
@@ -347,7 +351,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     id:'web'
   })).resolves.toMatchObject({activeRevision:null, active:null});
   const postRemovalState = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-21');
+    const shell = await caches.open('god4-shell-compact-reader-22');
     const ready = await caches.open('god4-bible-ready-v1');
     return {
       shellHasApp:Boolean(await shell.match('/js/app.js')),
