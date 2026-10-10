@@ -278,6 +278,7 @@ function initializeReaderStickyOffsets(){
   var siteNav = document.querySelector('nav');
   var toolbar = view && view.querySelector('.reader-toolbar');
   var tabs = document.querySelector('#bibleApp .bs-nav');
+  var studyHeader = view && view.querySelector('.word-study-header');
   if(!view || !siteNav || !toolbar) return;
   var sheet = Array.from(document.styleSheets).find(function(candidate){
     return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);
@@ -291,6 +292,9 @@ function initializeReaderStickyOffsets(){
     var toolbarHeight = toolbar.getBoundingClientRect().height;
     style.setProperty('--reader-tabs-height', (stickyTabs ? tabs.getBoundingClientRect().height : 0) + 'px');
     style.setProperty('--reader-toolbar-height', toolbarHeight + 'px');
+    style.setProperty('--word-study-header-height', (studyHeader ? studyHeader.getBoundingClientRect().height : 0) + 'px');
+    // Fullscreen sticky insets include the scroll container's existing padding.
+    style.setProperty('--reader-scroll-padding', getComputedStyle(view).paddingTop);
     var tail = 0;
     if(stickyTabs && view.classList.contains('active') && !view.classList.contains('reader-fullscreen')){
       // Match the toolbar's bottom containment inset so both sticky rows leave together.
@@ -306,6 +310,7 @@ function initializeReaderStickyOffsets(){
     observer.observe(siteNav);
     observer.observe(toolbar);
     if(tabs) observer.observe(tabs);
+    if(studyHeader) observer.observe(studyHeader);
   }
 }
 

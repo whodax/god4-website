@@ -235,6 +235,7 @@ for(const [displayWord, chapter, expectedStart] of [['king',14,'A chief ruler; a
     const errors=[]; page.on('pageerror', error => errors.push(error.message));
     await page.goto('/');
     await page.evaluate(async chapter => {
+      await initializeBibleExperience();
       await BibleTranslationLoader.ensure('web');
       currentTranslation='web'; currentBook='genesis'; currentChapter=chapter;
       renderPassage('genesis', chapter);
