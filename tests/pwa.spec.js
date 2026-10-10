@@ -5,7 +5,7 @@ const translationManifestGenerator = require('../tools/generate-translation-mani
 
 const root = path.resolve(__dirname, '..');
 const translationPattern = /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/;
-const shellCacheName = 'god4-shell-compact-reader-24';
+const shellCacheName = 'god4-shell-compact-reader-25';
 
 async function installAndControl(page) {
   await page.goto('/');
@@ -87,6 +87,7 @@ test('service worker installs a versioned shell without requesting or caching tr
   expect(state.urls).toContain('/js/bible/cloud-tts.js');
   expect(state.urls.some(url => url.startsWith('/api/tts') || url.startsWith('/__god4/tts/'))).toBe(false);
   expect(state.urls).toContain('/js/pwa/offline-translations.js');
+  expect(state.urls).not.toContain('/js/vendor/supabase-js-2.117.0.min.js');
   expect(state.urls.some(url => translationPattern.test(url))).toBe(false);
 
   const fallback = await page.evaluate(async () => {
@@ -117,7 +118,7 @@ test('new Reader shell replaces the prior shell while retaining an Offline Bible
     .resolves.toMatchObject({ok:true, state:'ready'});
 
   await page.evaluate(async () => {
-    const oldShell = await caches.open('god4-shell-compact-reader-23');
+    const oldShell = await caches.open('god4-shell-compact-reader-24');
     await oldShell.put('/', new Response('prior shell'));
     const registration = await navigator.serviceWorker.getRegistration();
     await registration.unregister();
@@ -131,7 +132,7 @@ test('new Reader shell replaces the prior shell while retaining an Offline Bible
     shellCacheName, 'god4-bible-candidates-v1', 'god4-bible-ready-v1'
   ]);
   const cachedShell = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-24');
+    const shell = await caches.open('god4-shell-compact-reader-25');
     const css = await (await shell.match('/css/components.css')).text();
     const html = await (await shell.match('/')).text();
     const reader = await (await shell.match('/js/bible/reader.js')).text();
@@ -295,7 +296,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-24');
+    const shell = await caches.open('god4-shell-compact-reader-25');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
       .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
@@ -351,7 +352,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     id:'web'
   })).resolves.toMatchObject({activeRevision:null, active:null});
   const postRemovalState = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-24');
+    const shell = await caches.open('god4-shell-compact-reader-25');
     const ready = await caches.open('god4-bible-ready-v1');
     return {
       shellHasApp:Boolean(await shell.match('/js/app.js')),

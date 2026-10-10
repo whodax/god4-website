@@ -2,7 +2,14 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-24';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-25';
+const PREVIOUS_SHELL_CACHE = CACHE_PREFIX + 'compact-reader-24';
+const VENDOR_PATH = '/js/vendor/supabase-js-2.117.0.min.js';
+const VENDOR_CACHE_PREFIX = 'god4-auth-vendor-';
+const VENDOR_CACHE = VENDOR_CACHE_PREFIX + 'supabase-js-2.117.0';
+// Pinned file digest, normalized for Git/Windows CRLF differences only.
+const VENDOR_SHA256 = 'ab5167c585f548f70be748c659554008db55053fd9de4f9c9b01e6f38642cf80';
+var vendorRequest = null;
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -45,7 +52,6 @@ const SHELL_ASSETS = [
   '/js/app.js',
   '/js/auth/config.js',
   '/js/auth/loader.js',
-  '/js/vendor/supabase-js-2.117.0.min.js',
   '/js/auth/supabase-provider.js',
   '/js/auth/auth.js',
   '/js/auth/account-ui.js?v=20260924-1',
@@ -80,8 +86,86 @@ function isPrivateOrCloudflareRequest(request, url){
 }
 
 async function cacheFirst(request){
-  var cached = await caches.match(request);
+  var cached = await (await caches.open(SHELL_CACHE)).match(request);
   return cached || fetch(request);
+}
+
+async function validVendor(response){
+  if(!response || response.status !== 200 || response.redirected) return false;
+  var mime = (response.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
+  if(mime !== 'application/javascript' && mime !== 'text/javascript') return false;
+  if(response.url){
+    var url = new URL(response.url);
+    if(url.origin !== self.location.origin || url.pathname !== VENDOR_PATH || url.search) return false;
+  }
+  try {
+    var body = await response.clone().arrayBuffer();
+    if(body.byteLength < 200000) return false;
+    var normalized = new TextDecoder('utf-8', {fatal:true}).decode(body).replace(/\r\n/g, '\n');
+    var digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(normalized));
+    var hex = Array.from(new Uint8Array(digest), function(byte){ return byte.toString(16).padStart(2, '0'); }).join('');
+    return hex === VENDOR_SHA256;
+  } catch(error){ return false; }
+}
+
+async function cachedVendor(){
+  var names = await caches.keys();
+  if(names.indexOf(VENDOR_CACHE) >= 0){
+    var cache = await caches.open(VENDOR_CACHE);
+    var response = await cache.match(VENDOR_PATH);
+    if(await validVendor(response)) return response;
+    if(response) await cache.delete(VENDOR_PATH);
+  }
+  return null;
+}
+
+async function previousVendor(){
+  if((await caches.keys()).indexOf(PREVIOUS_SHELL_CACHE) < 0) return null;
+  var response = await (await caches.open(PREVIOUS_SHELL_CACHE)).match(VENDOR_PATH);
+  return await validVendor(response) ? response : null;
+}
+
+async function storeVendor(response){
+  await (await caches.open(VENDOR_CACHE)).put(VENDOR_PATH, response.clone());
+}
+
+async function vendorResponse(request){
+  if(!vendorRequest){
+    vendorRequest = (async function(){
+      try {
+        var cached = await cachedVendor();
+        if(cached) return cached;
+      } catch(error){ /* Cache failures must not prevent online Account use. */ }
+      try {
+        var previous = await previousVendor();
+        if(previous){
+          try {
+            await storeVendor(previous);
+            await caches.delete(PREVIOUS_SHELL_CACHE);
+          } catch(error){ /* Keep the old copy for offline use and a later promotion retry. */ }
+          return previous;
+        }
+      } catch(error){ /* Network remains available if migration cannot be inspected. */ }
+      var response = await fetch(request);
+      if(await validVendor(response)){
+        try { await storeVendor(response); } catch(error){ /* A successful response remains usable without persistence. */ }
+      }
+      return response;
+    })().finally(function(){ vendorRequest = null; });
+  }
+  return (await vendorRequest).clone();
+}
+
+async function migrateVendor(){
+  try {
+    if(await cachedVendor()) return true;
+    var previous = await previousVendor();
+    if(previous) await storeVendor(previous);
+    return true;
+  } catch(error){
+    // Activate normally, but retain cache 24 until its vendor can be promoted.
+    return false;
+  }
 }
 
 async function navigationResponse(request, cacheHome){
@@ -89,10 +173,10 @@ async function navigationResponse(request, cacheHome){
     return await fetch(request);
   } catch(error){
     if(cacheHome){
-      var home = await caches.match(HOME_URL);
+      var home = await (await caches.open(SHELL_CACHE)).match(HOME_URL);
       if(home) return home;
     }
-    return caches.match(OFFLINE_URL);
+    return (await caches.open(SHELL_CACHE)).match(OFFLINE_URL);
   }
 }
 
@@ -113,11 +197,17 @@ self.addEventListener('install', function(event){
 });
 
 self.addEventListener('activate', function(event){
-  event.waitUntil(caches.keys().then(function(keys){
-    return Promise.all(keys.filter(function(key){
-      return key.startsWith(CACHE_PREFIX) && key !== SHELL_CACHE;
-    }).map(function(key){ return caches.delete(key); }));
-  }));
+  event.waitUntil((async function(){
+    var migrated = await migrateVendor();
+    try {
+      var keys = await caches.keys();
+      await Promise.all(keys.filter(function(key){
+        if(key.startsWith(VENDOR_CACHE_PREFIX)) return key !== VENDOR_CACHE;
+        return key.startsWith(CACHE_PREFIX) && key !== SHELL_CACHE &&
+          (key !== PREVIOUS_SHELL_CACHE || migrated);
+      }).map(function(key){ return caches.delete(key).catch(function(){ return false; }); }));
+    } catch(error){ /* Cleanup failures do not block activation or current-shell reads. */ }
+  })());
 });
 
 self.addEventListener('message', function(event){
@@ -155,6 +245,10 @@ self.addEventListener('fetch', function(event){
   // Cloud speech always reaches the Function, including navigations/invalid GETs.
   if(url.origin === self.location.origin && url.pathname === '/api/tts') return;
   if(isPrivateOrCloudflareRequest(request, url)) return;
+  if(url.origin === self.location.origin && url.pathname === VENDOR_PATH && !url.search){
+    event.respondWith(vendorResponse(request));
+    return;
+  }
   if(url.origin === self.location.origin){
     var activeMatch = /^\/__god4\/bible-cache\/active-script\/([a-z]+)\/([a-f0-9]{16})\.js$/.exec(url.pathname);
     if(activeMatch && !url.search){
