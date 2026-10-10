@@ -479,10 +479,13 @@
     .bs-nav{
       width:100%;box-sizing:border-box;justify-content:flex-start;
       position:sticky;top:var(--reader-nav-bottom,105px);z-index:30;
+      margin-bottom:var(--reader-stack-tail,0px);
       padding:12px max(24px,env(safe-area-inset-right)) 14px max(24px,env(safe-area-inset-left));
       background:var(--vellum);border-bottom:1px solid var(--line);
     }
     .bs-nav .bs-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+    /* Reserve the toolbar's trailing space in the sticky constraint without adding layout space. */
+    .bs-main{margin-top:calc(-1 * var(--reader-stack-tail,0px));}
     .offline-bibles-dialog{padding:20px;}
     .offline-bibles-row{grid-template-columns:minmax(0,1fr);}
     .offline-bibles-action{width:100%;}

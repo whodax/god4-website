@@ -12,6 +12,7 @@ let lastSpokenVerse = null;
 let currentTranslation = UserData.translation.load();
 let translationChangeRequest = 0;
 let readerTabPosition = null;
+let refreshReaderStickyOffsets = null;
 let voiceRecognition = null;
 let voiceCommandsListening = false;
 let voiceRecognitionActive = false;
@@ -282,13 +283,23 @@ function initializeReaderStickyOffsets(){
     return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);
   });
   if(!sheet) return;
-  var ruleIndex = sheet.insertRule('#bibleApp { --reader-nav-bottom:105px; --reader-tabs-height:0px; --reader-toolbar-height:53px; }', sheet.cssRules.length);
+  var ruleIndex = sheet.insertRule('#bibleApp { --reader-nav-bottom:105px; --reader-tabs-height:0px; --reader-toolbar-height:53px; --reader-stack-tail:0px; }', sheet.cssRules.length);
   var style = sheet.cssRules[ruleIndex].style;
   function update(){
     style.setProperty('--reader-nav-bottom', siteNav.getBoundingClientRect().bottom + 'px');
-    style.setProperty('--reader-tabs-height', (tabs && getComputedStyle(tabs).position === 'sticky' ? tabs.getBoundingClientRect().height : 0) + 'px');
-    style.setProperty('--reader-toolbar-height', toolbar.getBoundingClientRect().height + 'px');
+    var stickyTabs = tabs && getComputedStyle(tabs).position === 'sticky';
+    var toolbarHeight = toolbar.getBoundingClientRect().height;
+    style.setProperty('--reader-tabs-height', (stickyTabs ? tabs.getBoundingClientRect().height : 0) + 'px');
+    style.setProperty('--reader-toolbar-height', toolbarHeight + 'px');
+    var tail = 0;
+    if(stickyTabs && view.classList.contains('active') && !view.classList.contains('reader-fullscreen')){
+      // Match the toolbar's bottom containment inset so both sticky rows leave together.
+      tail = toolbarHeight + (parseFloat(getComputedStyle(toolbar).marginBottom) || 0) +
+        (parseFloat(getComputedStyle(view).paddingBottom) || 0);
+    }
+    style.setProperty('--reader-stack-tail', tail + 'px');
   }
+  refreshReaderStickyOffsets = update;
   update();
   if(typeof ResizeObserver !== 'undefined'){
     var observer = new ResizeObserver(update);
@@ -883,6 +894,8 @@ function switchView(view, btn, positionOnReturn){
   document.querySelectorAll('.bs-btn[aria-pressed]').forEach(function(b){ b.setAttribute('aria-pressed', 'false'); });
   btn.classList.add('active');
   btn.setAttribute('aria-pressed', 'true');
+  // The active view changes the stack's trailing reserve; apply it before positioning.
+  if(refreshReaderStickyOffsets) refreshReaderStickyOffsets();
   if(view === 'reader' && !readerWasActive && positionOnReturn !== false) restoreReaderTabPosition();
   if(view !== 'reader'){
     var tabs = document.querySelector('#bibleApp .bs-nav');

@@ -102,6 +102,37 @@ fullscreen, Plan/history, CSP and PWA/offline. Units passed 263/263. Asset valid
 JavaScript syntax, browser CSS parsing/computed-style checks and
 `git diff --check` passed; no standalone CSS linter is installed.
 
+Mobile sticky-overlap correction: the tabs were bounded by `#bibleApp`, but the
+toolbar was bounded by the padded Reader view. At the chapter's end, the toolbar
+started sliding upward before the tabs, producing about 95px of overlap. Normal
+selected-verse/tab-return offsets already included every sticky row and did not
+need to change.
+
+At both 390×844 and 320×844, the measured normal stack was 131px site navigation,
+115px tabs and 103px toolbar, totaling 349px with zero inter-row gap. Each box's
+1px bottom border is included. Tab padding is 12px/14px vertically; toolbar padding
+is 4px/4px. The measured toolbar bottom margin is 6px and Reader bottom padding is
+16px. Safe-area horizontal insets contributed no additional space in this emulation.
+
+The mobile tabs now reserve `--reader-stack-tail` in their sticky margin box:
+toolbar height + toolbar bottom margin + Reader bottom padding (125px here).
+An equal negative `.bs-main` margin cancels that reserve in normal layout, leaving
+document spacing unchanged. This coordinates the two end constraints so the rows
+leave the Study Desk together instead of overlapping. The reserve is zero on
+desktop, hidden Reader and fullscreen. Existing CSSOM/ResizeObserver measurements
+provide the value, refreshed synchronously on view changes before the existing
+positioning/restoration runs. No selected-verse, bookmark, focus or history contract
+changes, new scroll surface or hard-coded offset is introduced; cache remains 22.
+
+`reader-sticky-overlap.spec.js` checks actual rectangles independently of
+`readerVisibleTop`, before/after tab return and during ordinary/end-of-chapter
+scrolling. It verifies all three selected references at both widths, chapter-start
+clearance and unchanged desktop CSS. At the end constraint the tab bottom now
+matches the toolbar top; the prior six failing end-boundary cases pass. Final
+validation passed 105/105 browser checks and 263/263 units, plus asset/syntax and
+`git diff --check`. Another actual-phone acceptance run on a fresh updated preview
+is required after an authorized push.
+
 `reader-navigation-scroll.spec.js` checks desktop/mobile geometry for six passages
 from three starting offsets, controls, voice, cold/warm and pending translations,
 explicit verses, Search from Reader/Compare, normal/reduced motion, stale study
@@ -119,6 +150,7 @@ Changed files:
 - `tests/reader-navigation-scroll.spec.js`
 - `tests/reader-tab-position.spec.js`
 - `tests/reader-mobile-sticky-tabs.spec.js`
+- `tests/reader-sticky-overlap.spec.js`
 - `tests/compact-reader-controls.spec.js`
 - `tests/god4.spec.js`
 - `tests/reader-empty-verse.spec.js`
