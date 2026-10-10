@@ -136,6 +136,10 @@ test('language metadata supports Hebrew Aramaic and Greek without changing the s
   const mapped=importer.mapSourceRecords(sourceGenesis,genConfig);
   assert.equal(mapped.filter(r=>r.language==='aramaic').length,2);
   assert.equal(mapped.filter(r=>r.language==='aramaic').every(r=>r.morphology[0]==='A'),true);
+  assert.ok(mapped.filter(r=>r.morphology[0]==='H').every(r=>r.language==='hebrew'));
+  const greek=importer.mapSourceRecords(john,johnConfig).filter(r=>r.morphology.startsWith('A'));
+  assert.ok(greek.length>0);
+  assert.ok(greek.every(r=>r.language==='greek' && r.strongsNumber.startsWith('G')));
   assert.deepEqual(Object.keys(mapped[0]),importer.SCHEMA_FIELDS);
 });
 
@@ -144,13 +148,13 @@ test('configuration validates parser strategies and explicit provenance gaps', (
   for(const change of [c=>{c.source.license='';},c=>{delete c.source.revision;},c=>{c.source.lexicalSource=null;},c=>{c.morphologyFormat='invented';},c=>{c.testament='NT';},c=>{c.readerBookId='john';},c=>{c.sourceBookId='';}]){const c=clone(genConfig);change(c);assert.throws(()=>configs.validateBookConfig(c));}
 });
 
-test('legacy Genesis extraction reproduces retained source records and generic mapping remains distinct from coordinate-only production', () => {
+test('legacy Genesis extraction preserves evidence and generic mapping reproduces corrected production', () => {
   const {text,lexicon}=sourceInput(sourceGenesis,'Gen');
   assert.deepEqual(importer.normalizeRecords(importer.parseOshbGenesis(text,lexicon,genConfig.sourceVerseCounts.map((_,i)=>i+1))),sourceGenesis);
   const generated=importer.parseConfiguredSource(text,lexicon,genConfig);
   const expected=sourceGenesis.map(r=>({...r,chapter:r.chapter===32&&r.verse===1?31:r.chapter,verse:r.chapter===32?(r.verse===1?55:r.verse-1):r.verse,language:r.morphology[0]==='A'?'aramaic':r.language}));
   assert.deepEqual(generated,expected);
-  assert.deepEqual(generated,genesis.map(r=>({...r,language:r.morphology[0]==='A'?'aramaic':r.language})));
+  assert.deepEqual(generated,genesis);
   assert.equal(new Set(generated.map(r=>r.chapter+':'+r.verse)).size,1533);
 });
 

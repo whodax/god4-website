@@ -71,14 +71,12 @@ test('Word Study original-language ignores inherited fixture-shaped entries rath
   expect(networkCalls).toEqual([]);
 });
 
-test('Word Study Aramaic token metadata uses RTL and arc without changing styling', async ({page}) => {
+for(const width of [390,1280])test(`Word Study real Genesis Aramaic metadata uses RTL and arc at ${width}px`, async ({page}) => {
   const file = path.join(root, 'data/word-study/original-language/genesis/31.json');
   const records = JSON.parse(fs.readFileSync(file, 'utf8')).records
-    .filter(record => record.morphology[0] === 'A').map(record => ({...record, language:'aramaic'}));
+    .filter(record => record.morphology[0] === 'A');
   expect(records).toHaveLength(2);
-  await page.route('**/data/word-study/original-language/genesis/31.json', route => route.fulfill({
-    contentType:'application/json', body:JSON.stringify({records})
-  }));
+  await page.setViewportSize({width,height:900});
   await page.goto('/');
   await page.evaluate(async () => {
     await initializeBibleExperience();
@@ -91,9 +89,17 @@ test('Word Study Aramaic token metadata uses RTL and arc without changing stylin
   await expect(section).toBeVisible();
   await expect(page.locator('#wordStudyOriginalTokens')).toHaveAttribute('dir','rtl');
   const tokens = section.locator('.word-study-original-token');
-  await expect(tokens).toHaveCount(2);
-  await expect(tokens.first()).toHaveAttribute('lang','arc');
-  await expect(tokens.first()).toHaveAttribute('aria-label',/Aramaic/);
-  await tokens.first().click();
-  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('Aramaic');
+  await expect(tokens).toHaveCount(9);
+  for(const record of records){
+    const token=tokens.filter({hasText:record.surface});
+    await expect(token).toHaveAttribute('lang','arc');
+    await expect(token).toHaveAttribute('aria-label',`Original-language token ${record.surface}, Aramaic, token ${record.tokenIndex+1}`);
+    expect(await token.evaluate(e=>e.__originalLanguageRecord)).toEqual(record);
+    await token.click();
+    const details=await page.locator('#wordStudyOriginalDetails').evaluate(e=>Object.fromEntries([...e.querySelectorAll('dt')].map(dt=>[dt.textContent,dt.nextElementSibling.textContent])));
+    expect(details).toMatchObject({'Language':'Aramaic',"Strong's number":'H3026','Morphology':'ANp','Lexical definition':record.definition,'Lemma':record.lemma});
+  }
+  await expect(tokens.first()).toHaveAttribute('lang','he');
+  await expect(tokens.first()).toHaveAttribute('aria-label',/Hebrew/);
+  await expect(page.locator('#wordStudyReference')).toHaveText('Genesis 31:47');
 });

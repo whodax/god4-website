@@ -52,12 +52,15 @@ function validateOutput(records, source){
   const byLocation = new Map(records.map(r => [r.chapter+':'+r.verse+':'+r.tokenIndex,r]));
   let moved = 0, transferred = 0, decremented = 0;
   const bookConfig = config.existingBookConfig('genesis');
+  const classified = importer.mapSourceRecords(source,bookConfig,{chapters:[31,32]});
+  const languages = new Map(classified.map(r => [r.chapter+':'+r.verse+':'+r.tokenIndex,r.language]));
   for(const before of source.filter(r => r.chapter === 31 || r.chapter === 32)){
     const target = config.mapReference(bookConfig,before.chapter,before.verse);
     const after = byLocation.get(target.chapter+':'+target.verse+':'+before.tokenIndex);
     check(Boolean(after), 'Missing mapped token');
-    // Include bookId and all 12 other non-coordinate fields in the comparison.
-    assert.deepEqual(after, {...before,chapter:target.chapter,verse:target.verse}, 'Unexpected token-field mutation');
+    // Only configured source language classification may differ beyond coordinates.
+    const language = languages.get(target.chapter+':'+target.verse+':'+before.tokenIndex);
+    assert.deepEqual(after, {...before,...target,language}, 'Unexpected token-field mutation');
     if(before.chapter !== after.chapter || before.verse !== after.verse) moved++;
     if(before.chapter === 32 && after.chapter === 31) transferred++;
     if(before.chapter === 32 && after.chapter === 32 && after.verse === before.verse-1) decremented++;
@@ -74,11 +77,8 @@ function validateOutput(records, source){
 function generate(fixture = readSource()){
   validateSource(fixture);
   const bookConfig = config.existingBookConfig('genesis');
-  const records = fixture.records.filter(r => r.chapter !== 33).map(before => {
-    const target = config.mapReference(bookConfig,before.chapter,before.verse);
-    // Deliberately avoid generic regeneration's language/provenance rewriting.
-    return {...before,chapter:target.chapter,verse:target.verse};
-  }).sort(order);
+  // The frozen fixture retains source coordinates and legacy language labels.
+  const records = importer.mapSourceRecords(fixture.records,bookConfig,{chapters:[31,32]});
   validateOutput(records,fixture.records);
   return records;
 }
@@ -96,8 +96,9 @@ function inspect(){
   assert.deepEqual(shards.get('33.json').filter(r => r.verse === 1),fixture.records.filter(r => r.chapter === 33), '33:1 guard changed');
   const current = [...shards.get('31.json'),...shards.get('32.json')];
   const baseline = fixture.records.filter(r => r.chapter !== 33);
+  const coordinateOnly = baseline.map(r => ({...r,...config.mapReference(config.existingBookConfig('genesis'),r.chapter,r.verse)})).sort(order);
   const corrected = JSON.stringify(current) === JSON.stringify(expected);
-  check(corrected || JSON.stringify(current) === JSON.stringify(baseline), 'Current boundary must be exactly baseline or corrected; refusing unexpected input');
+  check(corrected || JSON.stringify(current) === JSON.stringify(baseline) || JSON.stringify(current) === JSON.stringify(coordinateOnly), 'Current boundary must be baseline, coordinate-only, or corrected; refusing unexpected input');
   const canonicalRecords = all.filter(r => r.chapter !== 31 && r.chapter !== 32).concat(expected).sort(order);
   importer.normalizeRecords(canonicalRecords);
   const reader = config.readerBook('genesis');
@@ -107,30 +108,35 @@ function inspect(){
   }
   return {fixture,expected,buffers,corrected};
 }
-function repair(){
-  const state = inspect();
-  if(state.corrected) return {changedFiles:[],moved:453};
-  for(const ch of [31,32]){
+function pendingShards(state){
+  if(state.corrected) return [];
+  return [31,32].map(ch => {
     const file = ch+'.json', before = state.buffers.get(file).toString();
     const output = JSON.stringify({records:state.expected.filter(r => r.chapter === ch)},null,2)+'\n';
-    fs.writeFileSync(path.join(directory,file),before.includes('\r\n')?output.replace(/\n/g,'\r\n'):output,'utf8');
-  }
+    const bytes = Buffer.from(before.includes('\r\n')?output.replace(/\n/g,'\r\n'):output,'utf8');
+    return {file,bytes};
+  }).filter(({file,bytes}) => !bytes.equals(state.buffers.get(file)));
+}
+function repair(){
+  const state = inspect(), updates = pendingShards(state);
+  if(state.corrected) return {changedFiles:[],moved:453};
+  for(const {file,bytes} of updates) fs.writeFileSync(path.join(directory,file),bytes);
   const after = inspect();
   check(after.corrected,'Repair verification failed');
-  for(const [file,bytes] of state.buffers) if(!['31.json','32.json'].includes(file)){
+  for(const [file,bytes] of state.buffers) if(!updates.some(update => update.file === file)){
     check(bytes.equals(fs.readFileSync(path.join(directory,file))),`Unaffected shard bytes changed: ${file}`);
   }
-  return {changedFiles:['31.json','32.json'],moved:453};
+  return {changedFiles:updates.map(update => update.file),moved:453};
 }
 if(require.main === module){
   const args = process.argv.slice(2);
   check(args.length <= 1 && args.every(a => ['--check','--dry-run'].includes(a)), 'Only --check or --dry-run is supported');
   if(args[0] === '--check'){
-    check(inspect().corrected,'Genesis boundary still uses source coordinates');
+    check(inspect().corrected,'Genesis coordinates or language metadata still need correction');
     console.log('Genesis validated: 50 shards, 20,629 tokens, full canonical coverage; 48 unaffected hashes preserved.');
   } else if(args[0] === '--dry-run'){
     const state = inspect();
-    console.log(JSON.stringify({moved:453,chapter31:780,chapter32:441,filesToChange:state.corrected?[]:['31.json','32.json']}));
+    console.log(JSON.stringify({moved:453,chapter31:780,chapter32:441,filesToChange:pendingShards(state).map(update => update.file)}));
   } else console.log(JSON.stringify(repair()));
 }
 module.exports = {fixturePath,SOURCE_SHA256,FIXTURE_SHA256,sha256,canonical,readSource,validateSource,validateOutput,generate,inspect,repair};
