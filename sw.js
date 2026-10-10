@@ -2,7 +2,7 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-23';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-24';
 const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
@@ -44,6 +44,7 @@ const SHELL_ASSETS = [
   '/js/bible/plans.js',
   '/js/app.js',
   '/js/auth/config.js',
+  '/js/auth/loader.js',
   '/js/vendor/supabase-js-2.117.0.min.js',
   '/js/auth/supabase-provider.js',
   '/js/auth/auth.js',

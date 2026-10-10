@@ -23,6 +23,7 @@ God4Auth = createGod4Auth({
 test('guest Account dialog traps focus, switches forms, closes on Escape, and restores focus', async ({page}) => {
   await useFakeAuth(page);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await expect.poll(() => page.evaluate(() => God4Auth.getState().status)).toBe('guest');
   const trigger = page.getByRole('button', {name: 'Account', exact: true});
   await expect(trigger).toBeVisible();
@@ -51,6 +52,7 @@ test('Sign In success updates account identity without a page reload', async ({p
     return {id: 'user-1', email};
   }`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountSignInEmail').fill('reader@example.test');
   await page.locator('#accountSignInPassword').fill('secret');
@@ -67,6 +69,7 @@ test('Sign In validates email and hides raw provider failures', async ({page}) =
     throw Object.assign(new Error('raw provider token secret'), {access_token: 'hidden'});
   }`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountSignInEmail').fill('bad-email');
   await page.locator('#accountSignInPassword').fill('secret');
@@ -90,6 +93,7 @@ test('Create Account with an immediate session becomes signed in', async ({page}
     return {user: {id: 'user-2', email}, signedIn: true, needsConfirmation: false};
   }`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountShowSignUp').click();
   await page.locator('#accountSignUpEmail').fill('new@example.test');
@@ -103,6 +107,7 @@ test('Create Account with an immediate session becomes signed in', async ({page}
 test('Create Account without a session shows confirmation instead of signed-in status', async ({page}) => {
   await useFakeAuth(page, `signUp: async () => ({user: {id: 'unconfirmed'}, signedIn: false, needsConfirmation: true})`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountShowSignUp').click();
   await page.locator('#accountSignUpEmail').fill('new@example.test');
@@ -118,6 +123,7 @@ test('Sign Out returns to guest without clearing local GOD4.us data', async ({pa
   await useFakeAuth(page, `initialize: async () => ({id: 'user-3', email: 'reader@example.test'}),
     signOut: async () => { window.accountFake.calls.push('signOut'); }`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#accountTrigger')).toContainText('reader@example.test');
   await page.locator('#heroFav').click();
@@ -139,6 +145,7 @@ test('Sign Out returns to guest without clearing local GOD4.us data', async ({pa
 
 test('disabled auth reports unavailable while Reader and Saved Verses remain usable', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await expect(page.locator('#accountUnavailable')).toContainText('Accounts are unavailable');
   await page.keyboard.press('Escape');
@@ -154,6 +161,7 @@ test('pending Sign In disables duplicate submission', async ({page}) => {
     return new Promise(resolve => { window.accountFake.finishSignIn = resolve; });
   }`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountSignInEmail').fill('reader@example.test');
   await page.locator('#accountSignInPassword').fill('secret');
@@ -169,6 +177,7 @@ test('Account control and dialog fit a narrow viewport', async ({page}) => {
   await page.setViewportSize({width: 375, height: 700});
   await useFakeAuth(page);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   const trigger = page.locator('#accountTrigger');
   const saved = page.locator('.saved-pill');
   await expect(trigger).toBeVisible();
@@ -192,6 +201,7 @@ test('Account control and dialog fit a narrow viewport', async ({page}) => {
 test('Forgot Password opens a labeled email form and returns to Sign In with focus', async ({page}) => {
   await useFakeAuth(page);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountShowReset').click();
   await expect(page.getByRole('dialog', {name: 'Reset Password'})).toBeVisible();
@@ -208,6 +218,7 @@ test('reset request sends one generic response and preserves local data', async 
     window.accountFake.calls.push(['reset', email]);
   }`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.evaluate(() => localStorage.setItem('god4.savedVerses', '[{"ref":"John 3:16","text":"Saved"}]'));
   await page.locator('#accountTrigger').click();
   await page.locator('#accountShowReset').click();
@@ -229,6 +240,7 @@ test('reset request failure is controlled and retry succeeds', async ({page}) =>
     if(window.accountFake.calls.length === 1) throw new Error('raw provider token secret');
   }`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountShowReset').click();
   await page.locator('#accountResetEmail').fill('reader@example.test');
@@ -247,6 +259,7 @@ test('pending reset request prevents duplicate submissions and ignores a late cl
     return new Promise(resolve => { window.accountFake.finishReset = resolve; });
   }`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountShowReset').click();
   await page.locator('#accountResetEmail').fill('reader@example.test');
@@ -264,6 +277,7 @@ test('pending reset request prevents duplicate submissions and ignores a late cl
 test('Sign In Show password preserves the value, works after validation errors, and supports Space', async ({page}) => {
   await useFakeAuth(page);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   const password = page.locator('#accountSignInPassword');
   const toggle = page.getByRole('checkbox', {name: 'Show password'});
@@ -287,6 +301,7 @@ test('Sign In Show password preserves the value, works after validation errors, 
 test('Create Account Show password resets on form switches and dialog reopen', async ({page}) => {
   await useFakeAuth(page);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountShowSignUp').click();
   const password = page.locator('#accountSignUpPassword');
@@ -315,6 +330,7 @@ test('Create Account Show password resets on form switches and dialog reopen', a
 test('Show password remains available during pending Sign In', async ({page}) => {
   await useFakeAuth(page, `signIn: () => new Promise(resolve => { window.accountFake.finishSignIn = resolve; })`);
   await page.goto('/');
+  await page.evaluate(() => God4AuthLoader.ensure());
   await page.locator('#accountTrigger').click();
   await page.locator('#accountSignInEmail').fill('reader@example.test');
   await page.locator('#accountSignInPassword').fill('pending-value');

@@ -22,8 +22,8 @@ const staging = 'https://feature-optional-user-accoun.god4-us.pages.dev';
 
 function enabledAt(origin, expectedProject){
   const calls = [];
-  const context = loadAt(origin, {createClient(url, key){
-    calls.push({url, publishable: key.startsWith('sb_publishable_')});
+  const context = loadAt(origin, {createClient(url, key, options){
+    calls.push({url, publishable: key.startsWith('sb_publishable_'), storageKey:options.auth.storageKey});
     return {auth: {}};
   }});
   const config = context.God4AuthConfig;
@@ -32,7 +32,7 @@ function enabledAt(origin, expectedProject){
   expect(Array.from(config.allowedOrigins)).toEqual([origin]);
   expect(config.callbackPath).toBe('/auth/callback/');
   expect(context.SupabaseAuthProvider.create(config)).not.toBeNull();
-  expect(calls).toEqual([{url: expectedProject, publishable: true}]);
+  expect(calls).toEqual([{url: expectedProject, publishable: true,storageKey:'sb-'+new URL(expectedProject).hostname.split('.')[0]+'-auth-token'}]);
   expect(context.God4AuthUrls.callbackUrl(config)).toBe(origin + '/auth/callback/');
   expect(context.God4AuthUrls.returnUrl(config)).toBe(origin + '/');
   return config;
@@ -75,8 +75,11 @@ test('approved origins remain unavailable without the browser runtime', () => {
   }
 });
 
-test('both pages load the same pinned browser client before the adapter', () => {
-  for(const file of ['index.html', 'auth/callback/index.html']){
+test('callback keeps eager order and homepage delegates the pinned client to the loader', () => {
+  const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
+  expect(home).toContain('js/auth/loader.js');
+  expect(home).not.toMatch(/src="js\/(?:vendor\/supabase|auth\/(?:auth|supabase-provider)\.js)/);
+  for(const file of ['auth/callback/index.html']){
     const html = fs.readFileSync(path.join(root, file), 'utf8');
     const config = html.indexOf('js/auth/config.js');
     const bundle = html.indexOf('js/vendor/supabase-js-2.117.0.min.js');
@@ -91,6 +94,7 @@ test('both pages load the same pinned browser client before the adapter', () => 
 
 test('local guest Reader works with the real browser bundle and auth leaves site keys alone', async ({page}) => {
   await page.goto('/');
+  await page.evaluate(()=>God4AuthLoader.ensure());
   await page.evaluate(() => initializeBibleExperience());
   await expect(page.locator('#readerContent [data-verse-number]')).not.toHaveCount(0);
   await expect(page.locator('#planDays .plan-day')).toHaveCount(30);

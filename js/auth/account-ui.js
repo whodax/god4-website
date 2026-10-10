@@ -3,7 +3,8 @@
   function initializeAccountUI(){
     var trigger = document.getElementById('accountTrigger');
     var dialog = document.getElementById('accountDialog');
-    if(!trigger || !dialog || typeof God4Auth === 'undefined') return;
+    if(!trigger || !dialog || trigger.getAttribute('data-account-bound') === 'true') return;
+    trigger.setAttribute('data-account-bound','true');
 
     var closeButton = document.getElementById('accountClose');
     var title = document.getElementById('accountTitle');
@@ -23,7 +24,8 @@
     var mode = 'sign-in';
     var busy = false;
     var resetRequestVersion = 0;
-    var state = God4Auth.getState();
+    var state = {status:'restoring',user:null,recovery:false};
+    var authService = null;
     function passwordVisibility(form, toggleId){
       var toggle = document.getElementById(toggleId);
       var fields = Array.from(form.querySelectorAll('input[type="password"]'));
@@ -113,6 +115,7 @@
       trigger.setAttribute('aria-expanded', 'true');
       render();
       focusPanel();
+      God4AuthLoader.ensure().catch(function(){ /* Loader subscription renders the unavailable panel. */ });
     }
 
     function closeDialog(){
@@ -276,9 +279,16 @@
       }
     });
 
-    God4Auth.subscribe(function(nextState){
-      state = nextState;
-      render();
+    God4AuthLoader.subscribe(function(readiness){
+      setBusy(readiness.status === 'loading');
+      if(readiness.status === 'ready'){
+        if(authService) return;
+        authService = readiness.auth;
+        authService.subscribe(function(nextState){ state = nextState; render(); });
+      } else if(!authService){
+        state = {status:readiness.status === 'error' ? 'unavailable' : 'restoring',user:null,recovery:false};
+        render();
+      }
     });
   }
 
