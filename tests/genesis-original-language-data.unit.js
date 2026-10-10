@@ -52,17 +52,38 @@ test('Reader 32:33 is absent and existing mapping covers both endpoints exactly'
   assert.deepEqual(config.mapReference(cfg,32,1),{bookId:'genesis',chapter:31,verse:55});
   for(let v=2;v<=33;v++)assert.deepEqual(config.mapReference(cfg,32,v),{bookId:'genesis',chapter:32,verse:v-1});
 });
-test('exactly 453 coordinate moves preserve every other field, including bookId',()=>{
+test('453 coordinate moves preserve metadata except source-classified language',()=>{
   assert.deepEqual(boundaryRows,expected);
   assert.deepEqual(repair.validateOutput(boundaryRows,source.records),{moved:453,transferred:12,decremented:441});
   const before=source.records.filter(r=>r.chapter!==33);
-  for(let i=0;i<before.length;i++)for(const key of importer.SCHEMA_FIELDS.filter(k=>!['chapter','verse'].includes(k)))assert.equal(boundaryRows[i][key],before[i][key],key);
-  assert.deepEqual(production.filter(r=>r.chapter===31&&r.verse<=54),source.records.filter(r=>r.chapter===31));
+  for(let i=0;i<before.length;i++)for(const key of importer.SCHEMA_FIELDS.filter(k=>!['chapter','verse','language'].includes(k)))assert.equal(boundaryRows[i][key],before[i][key],key);
+  assert.deepEqual(boundaryRows,importer.mapSourceRecords(source.records,config.existingBookConfig('genesis'),{chapters:[31,32]}));
 });
-test('31:47 Aramaic morphology tokens deliberately retain deployed Hebrew labels',()=>{
+test('31:47 derives Aramaic from morphology while preserving historical evidence',()=>{
   const labels=production.filter(r=>r.chapter===31&&r.verse===47&&r.morphology.startsWith('A'));
-  assert.deepEqual(labels.map(r=>[r.surface,r.language]),[['יְגַ֖ר','hebrew'],['שָׂהֲדוּתָ֑א','hebrew']]);
-  assert.deepEqual(labels,source.records.filter(r=>r.chapter===31&&r.verse===47&&r.morphology.startsWith('A')));
+  assert.deepEqual(labels.map(r=>[r.surface,r.language,r.tokenIndex,r.strongsNumber,r.morphology]),[['יְגַ֖ר','aramaic',3,'H3026','ANp'],['שָׂהֲדוּתָ֑א','aramaic',4,'H3026','ANp']]);
+  const historical=source.records.filter(r=>r.chapter===31&&r.verse===47&&r.morphology.startsWith('A'));
+  assert.ok(historical.every(r=>r.language==='hebrew'));
+  assert.deepEqual(labels,historical.map(r=>({...r,language:'aramaic'})));
+  assert.equal(production.filter(r=>r.language==='aramaic').length,2);
+  assert.ok(production.filter(r=>r.morphology.startsWith('H')).every(r=>r.language==='hebrew'));
+});
+
+test('baseline data diff is exactly two language fields and preserves all other shard bytes',()=>{
+  const baselineCommit='b6c662f91cd5b11451ab2fde00df817fab9eb976', differences=[];
+  for(const file of files){
+    const baselineBytes=execFileSync('git',['show',baselineCommit+':data/word-study/original-language/genesis/'+file],{maxBuffer:16000000});
+    const currentBytes=fs.readFileSync(path.join(directory,file));
+    if(file!=='31.json') assert.equal(repair.canonical(currentBytes),repair.canonical(baselineBytes),file);
+    const before=JSON.parse(baselineBytes).records,after=JSON.parse(currentBytes).records;
+    assert.equal(after.length,before.length,file);
+    for(let i=0;i<before.length;i++){
+      assert.deepEqual(Object.keys(after[i]),Object.keys(before[i]));
+      for(const field of importer.SCHEMA_FIELDS)if(after[i][field]!==before[i][field]) differences.push({file,chapter:after[i].chapter,verse:after[i].verse,tokenIndex:after[i].tokenIndex,field,before:before[i][field],after:after[i][field]});
+    }
+  }
+  assert.deepEqual(differences,[3,4].map(tokenIndex=>({file:'31.json',chapter:31,verse:47,tokenIndex,field:'language',before:'hebrew',after:'aramaic'})));
+  console.log('Genesis production semantic differences: '+JSON.stringify(differences));
 });
 test('all 48 unaffected shard hashes match baseline and Git contains only the two shard changes',()=>{
   let count=0;

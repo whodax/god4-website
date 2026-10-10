@@ -303,3 +303,41 @@ Run unit checks with `node --test tests/original-language-importer.unit.js`.
 Use the focused Word Study and PWA/offline tests for runtime metadata delivery.
 Offline shard persistence, normalized lemmas, broader text-edition differences,
 and authoritative English-word alignment remain separate work.
+
+### Genesis 31:47 Aramaic metadata correction
+
+Genesis 31:47 contains two Aramaic tokens, `יְגַ֖ר` and `שָׂהֲדוּתָ֑א`, at
+zero-based token indexes 3 and 4. Both retain Strong's H3026 and OSHB morphology
+`ANp`; its initial `A` identifies Aramaic. The historical source-coordinate fixture
+retains the legacy extraction's Hebrew labels and its original compressed and
+uncompressed hashes. It is immutable evidence, not regenerated output.
+
+`repair-genesis-references.js` now runs the existing configured OSHB mapper on
+that retained source-coordinate evidence. This applies the verified 31/32
+reference map once and derives language from morphology. It accepts the prior
+coordinate-only state for migration, validates every remaining metadata field,
+and writes only shards whose bytes actually change. Already repaired Reader
+coordinates are never treated as source input.
+
+Relative to main `b6c662f91cd5b11451ab2fde00df817fab9eb976`, the deployed correction
+changes exactly two `language` fields from `hebrew` to `aramaic`, both in
+`data/word-study/original-language/genesis/31.json`. Chapter 32 and all other shards
+are unchanged. Genesis retains 20,629 tokens, 1,533 verse coordinates, the earlier
+453 coordinate moves, ordering/indexes, surfaces, lemmas, definitions, and Strong's
+values. A full baseline comparison test reports every semantic difference.
+
+Unmocked Word Study coverage checks the real shard at mobile and desktop widths:
+Aramaic labels and accessible names, `lang="arc"`, unchanged RTL, H3026, ANp, and
+lexical definitions. Generic classification tests retain Hebrew and ensure Greek
+adjective morphology beginning with `A` is still Greek. No runtime JS changes are
+needed.
+
+Shell cache stays **23**. These JSON shards are fetched independently rather than
+shell-cached; existing open tabs may need a reload because the original-language
+provider memoizes loaded chapter data for the page session.
+
+Validation passed: 264 unit tests (including WEB Psalms source checks), 40
+Genesis/Romans/provider runtime checks, and 22 existing Word Study checks including
+John Greek data. The explicit baseline verifier reports only the two authorized
+language differences. Repeated regeneration is a no-op; fixture hashes, chapter
+32, asset validation, JavaScript syntax, and `git diff --check` remain clean.
