@@ -295,6 +295,8 @@ test('Read Aloud, voice commands, and same-origin Word Study work without CSP vi
   await page.addInitScript(() => {
     window.__spoken = [];
     window.SpeechSynthesisUtterance = function(text){this.text = text;};
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', {configurable:true, value:{
       speaking:false, paused:false,
       speak(utterance){this.speaking=true;window.__spoken.push(utterance);},
@@ -316,7 +318,7 @@ test('Read Aloud, voice commands, and same-origin Word Study work without CSP vi
   await page.locator('#readAloudVoice').selectOption('male');
   await page.locator('#readAloudSpeed').selectOption('1.25');
   await page.locator('#readAloudPlay').click();
-  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+  await expect(page.locator('#readAloudStatus')).toHaveText('Natural Male unavailable. Using a device voice; gender unverified.');
   await page.evaluate(() => readVerseAloud(2));
   expect(await page.evaluate(() => window.__spoken.length)).toBeGreaterThan(0);
   await page.locator('#readAloudPlay').click();

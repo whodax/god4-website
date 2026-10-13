@@ -22,7 +22,7 @@ async function installSpeech(page, initialVoices, savedVoice){
     }});
     window.addEventListener('DOMContentLoaded', () => initializeBibleExperience());
   }, {voices:initialVoices, saved:savedVoice});
-  await page.goto('/');
+  await page.goto('/?cloud-tts=0');
 }
 
 async function chooseVoice(page, value){
@@ -41,7 +41,7 @@ async function latestUtterance(page){
 
 test('phone inventory exposes only Male and Female and uses exact David and Zira objects', async ({page}) => {
   await installSpeech(page, phoneVoices);
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Natural Male', 'Natural Female']);
   await expect(page.locator('#readAloudVoice')).toHaveValue('male');
   await page.locator('#readAloudPlay').click();
   expect(await latestUtterance(page)).toEqual({voice:'David English U.S.', pitch:1, rate:1});
@@ -111,35 +111,35 @@ test('Female persists through Stop, next chapter, Repeat, fullscreen, verse spee
 
 test('delayed voiceschanged retains Female selection without duplicate choices', async ({page}) => {
   await installSpeech(page, [], 'female');
-  await expect(page.locator('#readAloudVoice')).toBeDisabled();
+  await expect(page.locator('#readAloudVoice')).toHaveValue('female');
   await page.evaluate(voices => {
     window.__speech.voices = voices;
     window.__speech.listeners[0]();
     window.__speech.listeners[0]();
   }, phoneVoices);
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Natural Male', 'Natural Female']);
   await expect(page.locator('#readAloudVoice')).toHaveValue('female');
   await page.locator('#readAloudPlay').click();
   expect(await latestUtterance(page)).toMatchObject({voice:'Zira English U.S.', pitch:1});
 });
 
-test('unavailable preferred voices use distinct deterministic English fallbacks', async ({page}) => {
+test('unavailable preferred voices use an honest deterministic generic English fallback', async ({page}) => {
   await installSpeech(page, [
     {name:'Neutral B', lang:'en-US', localService:true, voiceURI:'b'},
     {name:'Neutral A', lang:'en-US', localService:true, voiceURI:'a'}
   ]);
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Natural Male', 'Natural Female']);
   await page.locator('#readAloudPlay').click();
   expect(await latestUtterance(page)).toMatchObject({voice:'Neutral A'});
   await page.locator('#readAloudPlay').click();
   await chooseVoice(page, 'female');
   await page.locator('#readAloudPlay').click();
-  expect(await latestUtterance(page)).toMatchObject({voice:'Neutral B'});
+  expect(await latestUtterance(page)).toMatchObject({voice:'Neutral A'});
 });
 
-test('one English voice stays playable with one visible choice', async ({page}) => {
+test('one English voice stays playable while retaining both product choices', async ({page}) => {
   await installSpeech(page, [{name:'Neutral A', lang:'en-US', localService:true, voiceURI:'a'}]);
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male']);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Natural Male', 'Natural Female']);
   await page.locator('#readAloudPlay').click();
   expect(await latestUtterance(page)).toMatchObject({voice:'Neutral A', pitch:1});
 });
@@ -150,7 +150,7 @@ test('duplicate voiceURI aliases never create duplicate visible choices', async 
     {name:'Neutral Alias', lang:'en-US', localService:true, voiceURI:'shared'},
     {name:'Neutral B', lang:'en-US', localService:true, voiceURI:'separate'}
   ]);
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Natural Male', 'Natural Female']);
 });
 
 test('old profiles and concrete names migrate safely, including silent Male 2', async ({page}) => {
@@ -169,4 +169,14 @@ test('old profiles and concrete names migrate safely, including silent Male 2', 
     await expect(page.locator('#readAloudVoice')).toHaveValue(expected);
     expect(await page.evaluate(() => localStorage.getItem('god4.speech.voice'))).toBe(expected);
   }
+});
+
+
+test('missing preferred gender never selects a known opposite voice or changes preference',async({page})=>{
+  await installSpeech(page,[{name:'Microsoft David',lang:'en-US',voiceURI:'david',localService:true}],'female');await expect(page.locator('#readAloudVoice')).toHaveValue('female');await page.locator('#readAloudPlay').click();
+  expect(await page.evaluate(()=>__speech.utterances.length)).toBe(0);await expect(page.locator('#readAloudStatus')).toHaveText('Playback unavailable.');expect(await page.evaluate(()=>localStorage.getItem('god4.speech.voice'))).toBe('female');expect(await page.evaluate(()=>BibleSpeech.getResolvedVoiceInfo().result)).toBe('failed');
+});
+
+test('generic native fallback identifies unverified gender while retaining Natural Female',async({page})=>{
+  await installSpeech(page,[{name:'Neutral A',lang:'en-US',voiceURI:'a',localService:true}],'female');await page.locator('#readAloudPlay').click();await expect(page.locator('#readAloudStatus')).toContainText('gender unverified');await expect(page.locator('#readAloudVoice')).toHaveValue('female');expect(await page.evaluate(()=>BibleSpeech.getResolvedVoiceInfo())).toMatchObject({preference:'female',provider:'native',genderVerified:false});
 });

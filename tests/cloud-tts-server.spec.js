@@ -528,7 +528,7 @@ test('malformed JSON and disabled backend return before limiter evaluation', asy
   expect(h.calls).toHaveLength(0);
 });
 
-test('Pages enables both environments while the cloud client still requires explicit opt-in', () => {
+test('Pages enables premium profiles normally and retains native diagnostics', () => {
   const config = fs.readFileSync(path.join(__dirname, '../wrangler.toml'), 'utf8').replace(/\r\n/g, '\n');
   expect(config).toMatch(/\[env.preview.vars\]\s+CLOUD_TTS_ENABLED = "1"/);
   expect(config).toMatch(/\[env.production.vars\]\s+CLOUD_TTS_ENABLED = "1"/);
@@ -537,7 +537,7 @@ test('Pages enables both environments while the cloud client still requires expl
   }
   expect(config).not.toContain('[[ratelimits]]');
   const clientSource = fs.readFileSync(path.join(__dirname, '../js/bible/cloud-tts.js'), 'utf8');
-  for(const [search, enabled] of [['',false], ['?cloud-tts=0',false], ['?cloud-tts=true',false], ['?cloud-tts=1',true]]){
+  for(const [search, enabled] of [['',true], ['?cloud-tts=0',false], ['?cloud-tts=true',true], ['?cloud-tts=1',true]]){
     const context = vm.createContext({URLSearchParams, window:{
       location:{search}, AudioContext(){}, fetch(){}, AbortController
     }});

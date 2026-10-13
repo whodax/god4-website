@@ -1,14 +1,16 @@
-/* Opt-in, one-verse cloud transport. Web Audio keeps the existing strict CSP intact. */
+/* Premium, one-verse cloud transport. Web Audio keeps the existing strict CSP intact. */
 var BibleCloudTTS = (function createCloudSpeech(){
-  var enabled = new URLSearchParams(window.location.search).get('cloud-tts') === '1';
+  var enabled = new URLSearchParams(window.location.search).get('cloud-tts') !== '0';
   var AudioContextClass = window.AudioContext || window.webkitAudioContext;
   var context = null;
   var active = null;
   var generation = 0;
+  var audioOperation = 0;
 
   function available(){ return enabled && Boolean(AudioContextClass && window.fetch && window.AbortController); }
   function cancel(){
     generation++;
+    audioOperation++;
     var previous = active;
     active = null;
     if(!previous) return;
@@ -27,11 +29,12 @@ var BibleCloudTTS = (function createCloudSpeech(){
     callback();
   }
   function prepare(){
+    var operation = ++audioOperation;
     if(!available()) return;
     try{
       if(!context) context = new AudioContextClass();
       // Invoke resume within the Play gesture, before the asynchronous network request.
-      context.resume().catch(function(){ if(active) fallback(active); });
+      context.resume().catch(function(){ if(operation === audioOperation && active) fallback(active); });
     }catch(failure){ context = null; }
   }
   function started(attempt){
@@ -80,17 +83,19 @@ var BibleCloudTTS = (function createCloudSpeech(){
     return true;
   }
   function pause(){
+    var operation = ++audioOperation;
     if(active) active.paused = true;
-    if(context) context.suspend().catch(function(){ if(active) fallback(active); });
+    if(context) context.suspend().catch(function(){ if(operation === audioOperation && active) fallback(active); });
   }
   function resume(){
+    var operation = ++audioOperation;
     if(active) active.paused = false;
     if(active && active.sourceStarted && !active.started){
       var attempt = active;
       attempt.timer = setTimeout(function(){ fallback(attempt); }, 12000);
     }
-    if(context) context.resume().then(function(){ if(active) started(active); })
-      .catch(function(){ if(active) fallback(active); });
+    if(context) context.resume().then(function(){ if(operation === audioOperation && active) started(active); })
+      .catch(function(){ if(operation === audioOperation && active) fallback(active); });
   }
   return {available:available, prepare:prepare, speak:speak, pause:pause, resume:resume, cancel:cancel};
 }());

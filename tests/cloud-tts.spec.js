@@ -66,7 +66,7 @@ async function more(page){
   if(await page.locator('#readerMoreTrigger').getAttribute('aria-expanded') === 'false') await page.locator('#readerMoreTrigger').click();
 }
 
-for(const query of ['', '?cloud-tts=0', '?cloud-tts=true']){
+for(const query of ['?cloud-tts=0']){
   test(`normal speech is unchanged at ${query || 'normal URL'}`, async ({page}) => {
     await install(page); const requests = await mockEndpoint(page);
     await open(page, query);
@@ -125,7 +125,7 @@ for(const [label, options, status, mime] of [
     expect(await page.evaluate(() => ({voice:window.__audio.local[0].voice.name, rate:window.__audio.local[0].rate})))
       .toEqual({voice:'Microsoft Zira', rate:1});
     await page.evaluate(() => window.__audio.local[0].onend());
-    expect(await page.evaluate(() => BibleSpeech.getState())).toBe('playing');
+    await expect.poll(() => page.evaluate(() => BibleSpeech.getState())).toBe('playing');
     await page.locator('#readAloudPlay').click();
   });
 }
@@ -191,7 +191,7 @@ test('pause while waiting for audio defers spoken callbacks until resume', async
   expect(await page.evaluate(() => window.__audio.contexts[0].state)).toBe('suspended');
   expect(await page.evaluate(() => BibleSpeech.getState())).toBe('paused');
   await page.locator('#readAloudPlay').click();
-  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+  await expect(page.locator('#readAloudStatus')).toHaveText(/Playing Natural|Using .*device voice/);
   expect(await page.evaluate(() => window.__audio.contexts[0].state)).toBe('running');
 });
 
@@ -217,7 +217,8 @@ for(const rate of ['2.25', '2.5']){
     await page.locator('#readAloudSpeed').selectOption(rate);
     await page.locator('#readAloudPlay').click();
     await expect.poll(() => page.evaluate(() => window.__audio.local.length)).toBe(1);
-    expect(requests[0].rate).toBe(Number(rate));
+    expect(requests).toEqual([]);
+    await expect(page.locator('#readAloudStatus')).toContainText('unavailable at this speed');
     expect(await page.evaluate(() => window.__audio.local[0].rate)).toBe(Number(rate));
     expect(await page.locator('#readAloudSpeed').inputValue()).toBe(rate);
   });
@@ -233,7 +234,7 @@ test('cloud failure without local speech ends safely while Scripture remains usa
 
 test('cloud works without a local voice inventory or SpeechSynthesis', async ({page}) => {
   await install(page, {noLocal:true}); const requests = await mockEndpoint(page); await open(page); await more(page);
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Natural Male', 'Natural Female']);
   await page.locator('#readAloudVoice').selectOption('female');
   await page.locator('#readAloudPlay').click(); await countSources(page, 1);
   expect(requests[0].voice).toBe('female');
@@ -342,3 +343,69 @@ test('controlled PWA cloud POST bypasses the shell and never stores audio in bro
     return urls.some(url => url.startsWith('/api/tts') || url.startsWith('/__god4/tts/'));
   })).toBe(false);
 });
+
+
+test('premium profiles are eager product choices and ordinary URLs synthesize only after Play',async({page})=>{
+  await install(page);const requests=await mockEndpoint(page);await open(page,'');
+  expect(requests).toEqual([]);await expect(page.locator('#readAloudVoice option')).toHaveText(['Natural Male','Natural Female']);
+  const profiles=await page.evaluate(()=>BibleSpeech.getVoiceProfiles());expect(profiles.map(p=>[p.id,p.providerVoiceId])).toEqual([['male','en-US-Neural2-D'],['female','en-US-Neural2-F']]);
+  await more(page);await page.locator('#readAloudVoice').selectOption('female');await page.locator('#readAloudPlay').press('Enter');await countSources(page,1);
+  expect(requests[0].voice).toBe('female');await expect(page.locator('#readAloudStatus')).toHaveText('Playing Natural Female.');
+  expect(await page.evaluate(()=>BibleSpeech.getResolvedVoiceInfo())).toMatchObject({preference:'female',profileId:'female',provider:'cloud',voiceName:'en-US-Neural2-F',fallbackReason:null});
+  await expect(page.locator('#readAloudPlay')).toBeFocused();await page.locator('#readAloudPlay').press(' ');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+});
+
+test('pending profile change applies next and fallback keeps the original request profile',async({page})=>{
+  await install(page);let release;const barrier=new Promise(r=>release=r),requests=[];
+  await page.route('**/api/tts',async r=>{requests.push(r.request().postDataJSON());if(requests.length===1){await barrier;await r.fulfill({status:503,contentType:'application/json',body:'{}'})}else await r.fulfill({contentType:'audio/mpeg',body:'bytes'})});
+  await open(page);await more(page);await page.locator('#readAloudPlay').click();await expect.poll(()=>requests.length).toBe(1);
+  await expect(page.locator('#readAloudStatus')).toHaveText('Preparing Natural Male…');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('preparing');
+  await page.locator('#readAloudVoice').selectOption('female');release();await expect.poll(()=>page.evaluate(()=>__audio.local.length)).toBe(1);
+  expect(await page.evaluate(()=>BibleSpeech.getResolvedVoiceInfo())).toMatchObject({preference:'female',profileId:'male',provider:'native',voiceName:'Microsoft David'});
+  await page.evaluate(()=>__audio.local[0].onend());await countSources(page,1);expect(requests[1].voice).toBe('female');await expect(page.locator('#readAloudStatus')).toHaveText('Playing Natural Female.');
+});
+
+for(const operation of ['prepare','suspend'])test('obsolete '+operation+' rejection cannot cancel newer cloud playback',async({page})=>{
+  await install(page);let release;const barrier=new Promise(r=>release=r);await page.route('**/api/tts',async r=>{await barrier;await r.fulfill({contentType:'audio/mpeg',body:'bytes'}).catch(()=>{})});await open(page);
+  await page.evaluate(operation=>{BibleCloudTTS.prepare();const c=__audio.contexts[0];const method=operation==='prepare'?'resume':'suspend',original=c[method].bind(c);c[method]=()=>new Promise((_,reject)=>window.rejectOldAudio=reject);if(operation==='prepare')BibleCloudTTS.prepare();else BibleCloudTTS.pause();c[method]=original;},operation);
+  await page.locator('#readAloudPlay').click();await expect(page.locator('#readAloudStatus')).toHaveText('Preparing Natural Male…');
+  await page.evaluate(async()=>{rejectOldAudio(new Error('old operation'));await Promise.resolve();await Promise.resolve()});
+  expect(await page.evaluate(()=>__audio.local.length)).toBe(0);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('preparing');release();await countSources(page,1);
+});
+
+test('Stop during decode prevents sources, highlights and late focus changes',async({page})=>{
+  await install(page);await mockEndpoint(page);await open(page);await page.evaluate(()=>{BibleCloudTTS.prepare();__audio.contexts[0].decodeAudioData=()=>new Promise(resolve=>window.releaseDecode=()=>resolve({duration:1}))});
+  await page.locator('#readAloudPlay').click();await expect.poll(()=>page.evaluate(()=>typeof releaseDecode)).toBe('function');await page.locator('#readAloudPlay').click();await page.locator('#searchInput').focus();
+  await page.evaluate(async()=>{releaseDecode();await Promise.resolve();await Promise.resolve()});expect(await page.evaluate(()=>__audio.sources.length)).toBe(0);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');await expect(page.locator('#searchInput')).toBeFocused();await expect(page.locator('#readAloudStatus')).toContainText('Stopped.');
+});
+
+for(const action of ['Stop','Compare','translation'])test(action+' cancels cloud preparation without stale playback',async({page})=>{
+  await install(page);let release;const barrier=new Promise(r=>release=r);await page.route('**/api/tts',async r=>{await barrier;await r.fulfill({contentType:'audio/mpeg',body:'bytes'}).catch(()=>{})});await open(page);await page.locator('#readAloudPlay').click();await expect(page.locator('#readAloudStatus')).toHaveText('Preparing Natural Male…');
+  if(action==='Stop')await page.locator('#readAloudPlay').press('Enter');else if(action==='Compare')await page.getByRole('button',{name:'Compare',exact:true}).click();else await page.evaluate(()=>changeTranslation('asv'));
+  release();await page.evaluate(async()=>{await new Promise(r=>setTimeout(r,80))});expect(await page.evaluate(()=>__audio.sources.length)).toBe(0);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+});
+
+for(const plan of [false,true])test('earlier Repeat during final verse preserves '+(plan?'Plan boundary':'next chapter'),async({page})=>{
+  await install(page);const requests=await mockEndpoint(page);await open(page);await page.locator('#verseSelect').selectOption('51');
+  if(plan)await page.evaluate(()=>{activePlanReadingSession={planPart:1,day:1,readings:[{bookId:'john',startChapter:1,endChapter:1}],start:{bookId:'john',chapter:1,verse:1},end:{bookId:'john',chapter:1,verse:51}}});
+  await page.locator('#readAloudPlay').click();await countSources(page,1);await page.evaluate(()=>BibleSpeech.repeatVerse(1));await countSources(page,2);await end(page);
+  if(plan){await expect(page.locator('#view-plan')).toHaveClass(/active/);expect(requests).toHaveLength(2);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle')}
+  else{await countSources(page,3);await expect(page.locator('#readerContent h2')).toHaveText('John 2');expect(requests[2].text).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',2,1).text))}
+});
+
+test('explicit Play authorizes audio before delayed Bible readiness, and Stop cancels replay',async({page})=>{
+  await install(page);const requests=await mockEndpoint(page);let release;const barrier=new Promise(r=>release=r);await page.route('**/js/bible/web.js?*',async r=>{await barrier;await r.continue()});
+  await page.goto('/',{waitUntil:'domcontentloaded'});await page.locator('#readAloudPlay').press('Enter');expect(await page.evaluate(()=>__audio.contexts.length)).toBe(1);await expect(page.locator('#readAloudStatus')).toHaveText('Preparing Natural Male…');await page.locator('#readAloudPlay').press('Enter');release();await page.evaluate(()=>initializeBibleExperience());expect(requests).toEqual([]);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+});
+
+test('first Play survives delayed Bible readiness without a second gesture',async({page})=>{
+  await install(page);const requests=await mockEndpoint(page);let release;const barrier=new Promise(r=>release=r);await page.route('**/js/bible/web.js?*',async r=>{await barrier;await r.continue()});
+  await page.goto('/',{waitUntil:'domcontentloaded'});await page.locator('#readAloudPlay').click();expect(await page.evaluate(()=>__audio.contexts.length)).toBe(1);release();await countSources(page,1);expect(requests).toHaveLength(1);
+});
+
+test('consecutive cloud verses do not repeat provider announcements',async({page})=>{
+  await install(page);await mockEndpoint(page);await open(page);await page.locator('#readAloudPlay').click();await countSources(page,1);
+  await page.evaluate(()=>{window.statusChanges=[];new MutationObserver(()=>statusChanges.push(document.getElementById('readAloudStatus').textContent)).observe(document.getElementById('readAloudStatus'),{childList:true})});await end(page);await countSources(page,2);expect(await page.evaluate(()=>statusChanges)).toEqual([]);
+});
+
+for(const rate of ['0.5','1','2'])test('premium provider supports rate '+rate,async({page})=>{await install(page);const requests=await mockEndpoint(page);await open(page);await more(page);await page.locator('#readAloudSpeed').selectOption(rate);await page.locator('#readAloudPlay').click();await countSources(page,1);expect(requests[0].rate).toBe(Number(rate));expect(await page.evaluate(()=>BibleSpeech.getResolvedVoiceInfo().provider)).toBe('cloud')});
