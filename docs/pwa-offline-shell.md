@@ -100,3 +100,24 @@ The dialog reports exact retained Bible bytes by summing validated `active.bytes
 The dialog uses native modal behavior, explicit focus containment, heading focus on open, trigger focus restoration, per-row busy states, and polite status announcements. An older controlling worker receives no automatic activation or reload; the dialog asks the visitor to apply the pending app update through the existing update control.
 
 The Phase 2D-B shell cache is `god4-shell-c089a89-phase2db1`. It adds `/js/pwa/offline-translations.js` and keeps the existing explicit `ACTIVATE_UPDATE` lifecycle.
+
+## Word Study runtime loading: shell 25 → 26
+
+Shell 26 keeps all six `/js/word-study/` runtime files and adds
+`/js/word-study/loader.js`. Homepage references now load only the loader; first
+Reader word activation loads the six classic scripts in their existing order.
+Installation still downloads and caches them. Document startup deferral must not
+be described as eliminating Word Study shell-installation requests.
+
+The shell has 41 assets / 452,280 Windows checkout bytes. Translation cache names,
+translation acquisition, Supabase vendor runtime-cache/migration rules, callback
+exclusions and waiting-worker acceptance remain unchanged. Shell 25 is cleaned
+through the normal old-shell path after activation; existing shell-24 vendor
+migration and failure retention still apply.
+
+After online installation and worker control, a first-ever offline Word Study
+activation can load its complete JavaScript runtime from the shell and render
+local fallback notes. Dictionary and original-language JSON is neither precached
+nor runtime-cached by this change. Warm in-page lookup data remains memoized;
+offline reload does not guarantee dictionary or original-language data. Loader
+failure/retry and Close/Escape/focus restoration use the existing accessible panel.

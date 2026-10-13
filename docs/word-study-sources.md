@@ -90,3 +90,95 @@ translations; unquoted examples inside an opening sentence can still add noise.
 Sparse context and missing English/original-language alignment remain limitations.
 Future work should evaluate false positives and restore corpus sense boundaries
 with provenance before broadening these signals. No corpus regeneration occurs here.
+
+## Interaction-loaded runtime (shell 26)
+
+The six classic Word Study scripts previously loaded from the homepage before
+DOMContentLoaded. The homepage now loads only the small same-origin
+`js/word-study/loader.js`; Reader, Search, Compare, Plans and Saved Verses work
+without any Word Study runtime globals. Focus alone does not start readiness.
+Click, touch-generated click, Enter or Space on a Reader word starts one shared
+readiness promise. The exact dependency order is provider, original-language
+provider, local provider, sense selector, dictionary provider, then controller.
+Each script must expose its required methods before the next is requested.
+
+The loader owns delegated Reader activation and the existing Close/Escape
+controls. The controller initializes its original-token handler once and exposes
+`openFromWord(word, context, isCurrent)` for explicit replay without synthetic
+clicks. English and verse-level original-language lookups still start in parallel;
+there is no new Original Language tab or delayed activation requirement.
+Provider code, ranking, inflections, fallback definitions and JSON are unchanged.
+
+The loader captures a frozen verse/word context plus an activation generation.
+Only the latest still-connected, context-matching word can replay. Rerender,
+chapter navigation, translation intent and dismissal invalidate pending work.
+Leaving Reader cancels pending runtime activation; already-loaded panel content
+retains its existing Reader-return lifecycle. Invalidations also reach a loaded
+controller, whose request IDs and current-context guard reject stale callbacks.
+
+Runtime loading and failure use the existing panel, definition and polite status
+DOM. Close and Escape remain available before the controller exists and restore
+focus only to a connected activating word. Readiness cannot reopen a dismissed
+panel. A small additional controller guard prevents result updates from moving
+focus back from Search or another control outside the panel. Sticky Close, panel
+markup, CSS, typography and colors are unchanged.
+
+Failed scripts or missing globals reject readiness and remove the failed script.
+A later word activation retries while reusing validated dependencies. This does
+not change failed-JSON promise memoization: reconnecting may still require a
+reload before a previously failed shard can be requested again.
+
+Reader tokenization uses the loader's eager normalization helper, which is
+verified against the unchanged standalone provider for punctuation, Unicode,
+apostrophes and all ASCII characters. After readiness the provider shares that
+same function, so page tokenization and lookup use one canonical implementation.
+Programmatic provider callers explicitly await `WordStudyLoader.ensure()`.
+
+All six runtimes remain in SHELL_ASSETS, with the loader added, and the shell
+version changes once from 25 to 26. This optimizes document startup and execution,
+not shell installation traffic. On a controlled offline reload, first word
+activation loads the runtime from shell cache even if Word Study was never used.
+Dictionary/original-language JSON remains outside Cache Storage. Successful data
+can be reused from in-memory shard promises in the same page; an offline reload
+can lose it and fall back to local notes. There is no new durable JSON caching.
+
+Loading uses fixed same-origin external classic-script URLs and the current
+`script-src 'self'` policy. No inline script, eval, module conversion, new origin
+or _headers change is required.
+
+### Measurements
+
+The Windows checkout's eager application references drop from 24 to 19 and
+299,528 to 268,431 JavaScript bytes (31,097 bytes, 10.38%). The loader is 7,498
+bytes. Gross deferred baseline runtime is 38,607 checkout / 37,633 LF bytes;
+subtracting the loader gives 31,109 checkout bytes before the 12-byte net Reader
+integration increase. LF-normalized eager JavaScript totals 260,788 bytes after
+the change, versus 290,914 before. These count application scripts, excluding
+Cloudflare-injected analytics and service-worker precache requests.
+
+A local uncompressed HTTP measurement serving baseline and current files with
+the same LF normalization recorded 298,114 → 266,488 transfer bytes and
+290,914 → 260,788 decoded JavaScript bytes, with service workers blocked.
+That is 31,626 transfer / 30,126 decoded bytes in this measured context.
+In the focused and full runs, first-use readiness measured 15.6–26.7 ms from
+the installed shell and 15.9–18.1 ms from the local network. These are desktop
+local observations, not mobile/CDN latency predictions.
+
+The shell remains complete and grows from 40 / 446,323 checkout bytes to
+41 / 452,280 bytes. New production compressed transfer, Lighthouse and real-device
+results require a hosted preview; no score improvement is claimed. The focused
+loader tests print measured local uncompressed before/after transfer/decoded
+totals and first-use readiness latency for both a shell hit and local network.
+
+`tests/word-study-loader.spec.js` covers initial independence, exact loading
+order, normalization parity, click/touch/keyboard, deduplication, every script's
+failure and missing-global retry, partial reuse, latest activation, cancellation,
+focus, parallel lookups, English/Hebrew/Aramaic/Greek, sticky Close and cold/warm
+offline behavior. Existing provider-level browser tests explicitly await optional
+runtime readiness rather than assuming startup globals.
+
+An already-controlling older worker can continue serving older cached runtime
+files until its waiting update is accepted. The new loader validates the explicit
+controller API and fails accessibly rather than replaying against an incompatible
+controller. Hosted acceptance must include update acceptance/reload, as well as
+fresh-context, real-device and cold/warm offline checks before release.

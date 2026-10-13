@@ -43,6 +43,7 @@ test('Genesis 32 has no Reader or original-language coordinate 33',async({page})
   await expect(page.locator('#verseSelect option[value="33"]')).toHaveCount(0);
   await expect(page.locator('#readerContent [data-verse-number="33"]')).toHaveCount(0);
   expect(await page.evaluate(()=>navigateReaderToPassage('genesis',32,33))).toBe(false);
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const result=await page.evaluate(()=>OriginalLanguageWordStudyProvider.lookupVerse({translationId:'kjv',bookId:'genesis',chapter:32,verse:33}));
   expect(result.records).toEqual([]);
   await expect(page.locator('#readerContent h2')).toHaveText('Genesis 32');

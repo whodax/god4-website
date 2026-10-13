@@ -11,7 +11,7 @@ const vendorBytes = fs.readFileSync(require.resolve('../js/vendor/supabase-js-2.
 const origin = 'http://127.0.0.1:4173';
 const vendorPath = '/js/vendor/supabase-js-2.117.0.min.js';
 const vendorCache = 'god4-auth-vendor-supabase-js-2.117.0';
-const shell = 'god4-shell-compact-reader-25';
+const shell = 'god4-shell-compact-reader-26';
 const previousShell = 'god4-shell-compact-reader-24';
 
 function copy(response) {
@@ -85,16 +85,17 @@ function worker() {
   };
 }
 
-test('cache 25 installs exactly the original shell minus the vendor, even when vendor is unreachable', async () => {
+test('cache 26 preserves the vendor exclusion and precaches the small Word Study loader', async () => {
   const h = worker();
   const baseline = execFileSync('git', ['show', 'aa082bca88e8e7a1e155041a567f40414069bd8e:sw.js'], {encoding:'utf8'});
   const oldAssets = vm.runInNewContext(baseline.match(/const SHELL_ASSETS = (\[[\s\S]*?\]);/)[1], {HOME_URL:'/', OFFLINE_URL:'/offline'});
-  expect([...h.assets]).toEqual([...oldAssets].filter(path => path !== vendorPath));
-  expect(h.assets).toHaveLength(40);
+  const expected=[...oldAssets].filter(path=>path!==vendorPath);expected.splice(expected.indexOf('/js/word-study/provider.js'),0,'/js/word-study/loader.js');
+  expect([...h.assets]).toEqual(expected);
+  expect(h.assets).toHaveLength(41);
   h.state.networkFailure = true;
   await h.event('install');
   await h.event('activate');
-  expect(h.requests).toHaveLength(40);
+  expect(h.requests).toHaveLength(41);
   expect(h.requests).not.toContain(origin + vendorPath);
   expect([...h.storage.keys()]).toEqual([shell]);
 });
@@ -238,7 +239,7 @@ async function vendorPresent(page) {
 async function enableFixture(page) {
   await page.evaluate(async () => {
     const config = `var God4AuthConfig={enabled:true,authStorageKey:'sb-runtime-cache-test',supabaseUrl:'https://example.supabase.co',publishableKey:'test-public',allowedHosts:['127.0.0.1'],allowedOrigins:['http://127.0.0.1:4173'],callbackPath:'/auth/callback/'};`;
-    await (await caches.open('god4-shell-compact-reader-25')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
+    await (await caches.open('god4-shell-compact-reader-26')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
   });
   await page.reload();
 }
@@ -284,7 +285,7 @@ test('returning-session hint warms the vendor cache and an unexpired SDK fixture
   await install(page);
   await page.evaluate(async () => {
     const config = `var God4AuthConfig={enabled:true,authStorageKey:'sb-runtime-cache-test',supabaseUrl:'https://example.supabase.co',publishableKey:'test-public',allowedHosts:['127.0.0.1'],allowedOrigins:['http://127.0.0.1:4173'],callbackPath:'/auth/callback/'};`;
-    await (await caches.open('god4-shell-compact-reader-25')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
+    await (await caches.open('god4-shell-compact-reader-26')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
     localStorage.setItem('sb-runtime-cache-test', 'null');
   });
   await page.addInitScript(() => {
@@ -383,7 +384,7 @@ test('real cache-24 worker waits for acceptance; cache 25 migrates vendor and bo
   }
 });
 
-test('measured shell installs drop one vendor request and exactly its repository bytes', async ({browser}) => {
+test('measured cache-24/current installs retain vendor byte savings less the Word Study loader', async ({browser}) => {
   const fixture = await updateServer(), measurements = [];
   try {
     for(const current of [false, true]) {
@@ -399,9 +400,10 @@ test('measured shell installs drop one vendor request and exactly its repository
       await context.close();
     }
     console.log('Local uncompressed worker installation measurements:', JSON.stringify(measurements));
-    expect(measurements.map(m => [m.assets, m.fetches])).toEqual([[41, 41], [40, 40]]);
-    // Checkout line endings vary by platform; the removed file is the only byte difference.
-    expect(measurements[0].repositoryBytes - measurements[1].repositoryBytes).toBe(vendorBytes.length);
-    expect(measurements[0].decoded - measurements[1].decoded).toBe(vendorBytes.length);
+    expect(measurements.map(m => [m.assets, m.fetches])).toEqual([[41, 41], [41, 41]]);
+    // Both fixtures use current HTML/files; membership differs by vendor versus loader.
+    const loaderBytes=fs.statSync(path.join(__dirname,'..','js/word-study/loader.js')).size;
+    expect(measurements[0].repositoryBytes - measurements[1].repositoryBytes).toBe(vendorBytes.length-loaderBytes);
+    expect(measurements[0].decoded - measurements[1].decoded).toBe(vendorBytes.length-loaderBytes);
   } finally { await new Promise(resolve => fixture.server.close(resolve)); }
 });

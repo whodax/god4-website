@@ -29,6 +29,7 @@ async function scrollPanel(page, mode){
   },mode);
 }
 async function openResult(page, state){
+  await page.evaluate(()=>WordStudyLoader.ensure());
   await page.evaluate(state=>{
     if(state==='english') OriginalLanguageWordStudyProvider.lookupVerse=()=>Promise.resolve({status:'unavailable'});
     if(state==='loading') WordStudyProvider.lookup=()=>new Promise(resolve=>{window.finishStudy=resolve;});
