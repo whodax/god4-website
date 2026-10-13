@@ -94,9 +94,13 @@ test('cached auth stays unexecuted until Account activation and loads offline',a
   await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));
   if(!await page.evaluate(()=>Boolean(navigator.serviceWorker.controller)))await page.reload();
   await expect.poll(()=>page.evaluate(()=>Boolean(navigator.serviceWorker.controller))).toBe(true);
-  const cached=await page.evaluate(async()=>{const cache=await caches.open('god4-shell-compact-reader-24');return(await cache.keys()).map(r=>new URL(r.url).pathname)});
-  for(const asset of [...deps,'/js/auth/config.js','/js/auth/loader.js','/js/auth/account-ui.js'])expect(cached).toContain(asset);
-  expect(await page.evaluate(()=>typeof God4Auth)).toBe('undefined');await context.setOffline(true);
+  const cached=await page.evaluate(async()=>{const cache=await caches.open('god4-shell-compact-reader-25');return(await cache.keys()).map(r=>new URL(r.url).pathname)});
+  for(const asset of [...deps.slice(1),'/js/auth/config.js','/js/auth/loader.js','/js/auth/account-ui.js'])expect(cached).toContain(asset);
+  expect(cached).not.toContain(deps[0]);
+  expect(await page.evaluate(()=>typeof God4Auth)).toBe('undefined');
+  await page.evaluate(()=>God4AuthLoader.ensure());
+  await expect.poll(()=>page.evaluate(async()=>Boolean(await (await caches.open('god4-auth-vendor-supabase-js-2.117.0')).match('/js/vendor/supabase-js-2.117.0.min.js')))).toBe(true);
+  await context.setOffline(true);await page.reload();
   await page.locator('#accountTrigger').click();await page.evaluate(()=>God4AuthLoader.ensure());
   expect(await page.evaluate(()=>[typeof supabase.createClient,typeof SupabaseAuthProvider.create,typeof God4Auth.initialize])).toEqual(['function','function','function']);
   await expect(page.locator('#accountUnavailable')).toBeVisible(); // Local origin remains unapproved, as before.

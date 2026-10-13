@@ -44,17 +44,62 @@ auth actions while keeping Close and Escape available. Completion does not open
 a dismissed dialog or move focus away from another page control. Enter, Space,
 modal semantics, focus return and existing styling remain intact.
 
-Shell cache changes once, 23 → 24. All auth assets remain precached, including
-the new loader. Cached scripts are not executed merely because they are cached;
-Account activation can load them offline after installation. Local/unapproved
-origins continue to report accounts unavailable. Offline does not guarantee a
-successful server-dependent sign-in. Callback offline fallback is unchanged.
+The initial lazy-auth change used shell cache 24 with all auth assets precached.
+The vendor-only follow-up changes the shell once, 24 → 25, and removes only
+`/js/vendor/supabase-js-2.117.0.min.js` from precache. Config, loader, Account UI,
+provider, auth service, Account CSS, Bible and Word Study runtimes remain in the
+shell. The loader, auth behavior and callback eager flow are unchanged.
+
+## Vendor runtime cache and upgrade
+
+The exact same-origin GET path, without a query string or Authorization header,
+uses `god4-auth-vendor-supabase-js-2.117.0`. A valid cached copy is served first;
+otherwise the worker fetches, validates and stores a clone. Concurrent fetches
+share one worker request. Validation requires status 200, JavaScript MIME, no
+redirect, the expected response origin/path, at least 200,000 body bytes and
+the pinned SHA-256 digest after CRLF normalization. The worker neither parses
+nor executes JavaScript. Changing the SDK requires updating path, cache name
+and digest together.
+
+Activation copies a valid vendor from shell cache 24 before normal old-shell
+cleanup, without fetching the network. Invalid copies are not promoted. If
+inspection or promotion fails, activation continues and retains cache 24 for
+a later vendor request to retry promotion. That request can serve the valid old
+copy even if persistence still fails. Shell and offline-page reads explicitly
+use cache 25 so a retained migration source cannot supply older application code.
+Successful later promotion removes the retained source. Cleanup preserves the
+current vendor cache, removes older `god4-auth-vendor-*` versions and preserves
+translation/unrelated caches. Storage cleanup failure is best effort.
+
+Existing waiting-worker behavior remains: the visitor accepts Update, then the
+accepting tab reloads. No `clients.claim()` or automatic `skipWaiting()` was added.
+The fixed vendor version is compatible with both old and new auth loaders.
+
+## Offline Account contract
+
+A new cache-25 installation that never used Account or a session hint has no
+vendor copy. Offline Account opens its accessible loading/unavailable state;
+Close, Escape, focus return and reconnect retry remain available. This is an
+intentional reduction in cold-offline Account availability.
+
+On a worker-controlled page, online Account activation or returning-session
+restoration warms the vendor cache. Later offline Account activation loads the
+vendor there and provider/auth from the shell. An unexpired SDK-cached identity
+may render; this is not proof of current server authorization. The initial page
+before worker control does not populate this runtime cache; a controlled reload
+is needed. Browser eviction or failed writes can also remove offline availability.
+Local/unapproved origins still report accounts unavailable. Credential sign-in,
+signup, confirmation, refresh and server revocation require network. Callback
+offline fallback and private API exclusions are unchanged.
 
 `_headers` is unchanged. Dynamic scripts are external, classic, same-origin
 scripts permitted by the existing CSP. No inline script, eval, module conversion,
 new cross-origin dependency, or Supabase project change was introduced.
 
 ## Measurements
+
+The following homepage numbers describe the original lazy-auth change. The
+vendor-only follow-up leaves homepage references and execution unchanged.
 
 Repository sizes include checkout line endings:
 
@@ -99,7 +144,32 @@ Existing auth, Account, callback, CSP, security, Reader, Search, Compare, plans,
 Saved Verses and PWA suites remain regression coverage. Use a hosted preview
 for final real-session, deployed-header and real-device acceptance before release.
 
-Validation on this branch covered all 770 Playwright cases. The broad run passed
+## Vendor-only shell measurement and tests
+
+On the Windows checkout, shell installation drops from 41 assets / 664,503 bytes
+to 40 assets / 446,323 bytes: 218,180 bytes (32.83%). A local uncompressed HTTP
+measurement reported 676,803 → 458,323 Resource Timing transfer bytes and
+664,503 → 446,323 encoded/decoded body bytes for the shell fetches. These exclude
+worker bootstrap/import requests and are not deployed compression measurements.
+The prior production audit measured 55,861 encoded / 56,161 transfer bytes for
+the vendor in that specific browser/cache context. No Lighthouse gain is claimed.
+
+`tests/auth-vendor-cache.spec.js` covers exact shell membership, install failure
+isolation, first-use/concurrent caching, cold failure/retry, response validation,
+cache-24 migration without network, failed promotion/inspection, source retention,
+obsolete-cache cleanup, private request exclusions, real worker cold/warm offline
+Account, returning-session warming, synthetic SDK identity, one client/listener,
+actual waiting/update acceptance with two tabs and install byte/request counts.
+
+Vendor-only validation passed all 38 focused cases. The full regression run
+covered 808 cases: 805 passed, with one renderer crash, one translation-startup
+timeout and one aborted voice-profile reload. All 24 cases in the three affected
+suites passed on a fresh rerun without changing code or expectations. These
+non-reproducing full-run failures are recorded rather than hidden by retries.
+Asset/syntax validation, 260-chapter journey coverage, scope and diff checks
+passed. No hosted deployment or live credential-auth acceptance was performed.
+
+Original lazy-auth validation covered all 770 Playwright cases. The broad run passed
 769; its new byte-measurement assertion needed a correction for Git versus
 checkout line endings. The final loader rerun passed all 20 cases. An initial
 focus test also needed to make Search visible before focusing its input. These
@@ -107,7 +177,7 @@ were corrected test assumptions, not flaky retries. Separate journey coverage
 verified 260 contiguous chapters. Asset, syntax, inline-script and diff checks
 passed.
 
-## Changed files
+## Files in the original lazy-auth change
 
 - `index.html`
 - `js/auth/loader.js`
@@ -120,6 +190,16 @@ passed.
 - `tests/auth.spec.js`
 - `tests/account.spec.js`
 - `tests/csp-report-only.spec.js`
+- `tests/pwa.spec.js`
+- `tests/offline-translation-management.spec.js`
+- `tests/reader-empty-verse.spec.js`
+- `docs/auth-lazy-loading.md`
+
+## Files in the vendor-only follow-up
+
+- `sw.js`
+- `tests/auth-vendor-cache.spec.js`
+- `tests/auth-loader.spec.js`
 - `tests/pwa.spec.js`
 - `tests/offline-translation-management.spec.js`
 - `tests/reader-empty-verse.spec.js`
