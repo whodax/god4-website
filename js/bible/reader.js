@@ -893,10 +893,7 @@ function switchView(view, btn, positionOnReturn){
   if(view!=='reader' && typeof clearPlanReadingSession==='function') clearPlanReadingSession();
   if(view==='plan' && typeof prepareJourneyPlanView==='function') prepareJourneyPlanView();
   if(view !== 'reader' && typeof BibleSpeech !== 'undefined' && BibleSpeech.getState() !== 'idle') BibleSpeech.stop();
-  if(view === 'compare'){
-    if(typeof initializeCompareReference === 'function') initializeCompareReference();
-    if(typeof loadCompare === 'function') loadCompare(true);
-  }
+
   target.classList.add('active');
   document.querySelectorAll('.bs-btn').forEach(function(b){ b.classList.remove('active'); });
   document.querySelectorAll('.bs-btn[aria-pressed]').forEach(function(b){ b.setAttribute('aria-pressed', 'false'); });
@@ -904,7 +901,10 @@ function switchView(view, btn, positionOnReturn){
   btn.setAttribute('aria-pressed', 'true');
   // The active view changes the stack's trailing reserve; apply it before positioning.
   if(refreshReaderStickyOffsets) refreshReaderStickyOffsets();
-  if(view === 'compare' && typeof scrollCompareStartIntoView === 'function') scrollCompareStartIntoView();
+  if(typeof CompareLoader !== 'undefined'){
+    if(view === 'compare') CompareLoader.activate();
+    else CompareLoader.leave();
+  }
   if(view === 'reader' && !readerWasActive && positionOnReturn !== false) restoreReaderTabPosition();
   if(view !== 'reader'){
     var tabs = document.querySelector('#bibleApp .bs-nav');
@@ -959,7 +959,15 @@ function populateTranslations(){
   }
 }
 
-async function changeTranslation(translationId){
+var readerTranslationTask = null;
+function changeTranslation(translationId){
+  var task = applyReaderTranslation(translationId);
+  readerTranslationTask = task;
+  function finished(){ if(readerTranslationTask === task) readerTranslationTask = null; }
+  task.then(finished,finished);
+  return task;
+}
+async function applyReaderTranslation(translationId){
   if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return false;
   stopSpeechForManualNavigation();
   if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();

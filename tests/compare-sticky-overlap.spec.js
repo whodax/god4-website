@@ -71,6 +71,7 @@ for(const width of [390,320])test.describe(`${width}px Compare clearance`,()=>{
   test('late Compare render cannot scroll the returned Reader',async({page})=>{
     await page.evaluate(async()=>{
       await navigateReaderToPassage('genesis',24,45);
+      await CompareLoader.ensure();
       const ensure=BibleTranslationLoader.ensure.bind(BibleTranslationLoader);
       window.releaseCompare=[];
       BibleTranslationLoader.ensure=id=>new Promise(resolve=>releaseCompare.push(()=>ensure(id).then(resolve)));

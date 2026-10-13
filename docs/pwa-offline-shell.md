@@ -121,3 +121,7 @@ local fallback notes. Dictionary and original-language JSON is neither precached
 nor runtime-cached by this change. Warm in-page lookup data remains memoized;
 offline reload does not guarantee dictionary or original-language data. Loader
 failure/retry and Close/Escape/focus restoration use the existing accessible panel.
+
+## Compare runtime loading: shell 26 -> 27
+
+Shell 27 adds /js/bible/compare-loader.js and retains /js/bible/compare.js, bringing the precache to 42 assets. The document executes only the loader until Compare-tab or edition-count activation. Installation still downloads both files; this is startup execution deferral, not shell-installation savings. Translation/auth cache names and protocols stay unchanged. Cold offline runtime loading, warm use, and reload use the existing retained-translation contract. See [Compare runtime loading](compare-lazy-loading.md) for readiness, APIs, cancellation and measurements.
