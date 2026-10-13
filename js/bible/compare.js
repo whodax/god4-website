@@ -1,6 +1,9 @@
+/* Lazy classic-script Compare runtime. */
+var CompareRuntime = (function(){
 const compareState = { count: 2, selections: ['', '', '', ''], persisted: false };
 const compareReference = { bookId: '', chapter: 1, verse: null };
 let compareLoadRequest = 0;
+let compareInitialized = false;
 
 function loadCompareState(){
   var stored = UserData.compare.load();
@@ -13,9 +16,9 @@ function saveCompareState(){
   UserData.compare.save(compareState);
 }
 
-function syncCompareDefaultTranslation(){
+function syncCompareDefaultTranslation(allowActive){
   var compareView = document.getElementById('view-compare');
-  if(compareState.persisted || (compareView && compareView.classList.contains('active'))) return;
+  if(compareState.persisted || (!allowActive && compareView && compareView.classList.contains('active'))) return;
   var translations = getCompareTranslations();
   if(!translations.some(function(translation){ return translation.id === currentTranslation; })) return;
   compareState.selections[0] = currentTranslation;
@@ -350,13 +353,13 @@ function updateCompareEditionControl(){
   });
 }
 
-function setCompareEditionCount(count){
+function setCompareEditionCount(count,deferRender){
   if([2, 3, 4].indexOf(count) === -1 || count > getCompareTranslations().length) return;
   compareState.count = count;
   compareState.persisted = true;
   ensureCompareSelections();
   saveCompareState();
-  loadCompare();
+  if(!deferRender) loadCompare();
 }
 
 function updateCompareReferenceFromControls(changedId){
@@ -376,6 +379,8 @@ function updateCompareReferenceFromControls(changedId){
 }
 
 function initializeCompare(){
+  if(compareInitialized) return;
+  compareInitialized = true;
   loadCompareState();
   initializeCompareReference();
   ensureCompareSelections();
@@ -392,14 +397,23 @@ function initializeCompare(){
     var button = document.getElementById(binding[0]);
     if(button) button.addEventListener('click', function(){ binding[2](binding[1]); });
   });
-  document.querySelectorAll('[data-compare-count]').forEach(function(button){
-    button.addEventListener('click', function(){ setCompareEditionCount(Number(button.getAttribute('data-compare-count'))); });
-  });
   ['bookSelect', 'chapterSelect', 'verseSelect'].forEach(function(id){
     var element = document.getElementById(id);
     if(element) element.addEventListener('change', syncCompareFromReader);
   });
 }
 
-if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeCompare, { once: true });
-else initializeCompare();
+function activateCompare(count,position,handoff){
+  if(handoff){
+    syncCompareDefaultTranslation(true);
+    initializeCompareReference();
+  }
+  if(count !== null) setCompareEditionCount(count,true);
+  return loadCompare(position);
+}
+// Keep the existing global helper APIs after readiness; state belongs to this runtime.
+Object.assign(window,{loadCompareState,saveCompareState,syncCompareDefaultTranslation,getCompareTranslations,getCompareBooks,getCompareChapter,getCompareChapterCount,getReaderCompareReference,getCompareReference,getReferenceBookName,getReferenceLabel,setCompareReference,populateCompareBooks,populateCompareChapters,populateCompareVerses,syncCompareControls,initializeCompareReference,syncCompareFromReader,ensureCompareSelections,getCompareVerses,updateCompareSummary,getCompareChapterReference,getAdjacentCompareChapter,getAdjacentCompareVerse,updateCompareNavigation,navigateCompareReference,navigateCompareChapter,navigateCompareVerse,renderCompareColumn,scrollCompareStartIntoView,loadCompare,updateCompareEditionControl,setCompareEditionCount,updateCompareReferenceFromControls,initializeCompare});
+return {version:1,initialize:initializeCompare,activate:activateCompare,load:loadCompare,
+  syncDefault:syncCompareDefaultTranslation,syncReader:syncCompareFromReader,
+  initializeReference:initializeCompareReference,scrollStart:scrollCompareStartIntoView};
+})();
