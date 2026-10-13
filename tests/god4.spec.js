@@ -2348,6 +2348,7 @@ test('Word Study opens from a Reader word with exact local verse context and res
 });
 
 test('Word Study original-language provider exposes fixture lookups without changing dictionary lookup', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const result = await page.evaluate(async () => {
     const context = (word) => ({ lookupTerm: word, displayWord: word });
     const beginning = await OriginalLanguageWordStudyProvider.lookup(context('beginning'));
@@ -2385,6 +2386,7 @@ test('Word Study original-language importer normalizes Unicode records and rejec
 });
 
 test('Word Study original-language provider loads static records by Scripture location', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const result = await page.evaluate(async () => ({
     hebrew: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'genesis', chapter: 1, verse: 1, tokenIndex: 0, displayWord: 'beginning', lookupTerm: 'beginning' }),
     greek: await OriginalLanguageWordStudyProvider.lookup({ bookId: 'john', chapter: 1, verse: 1, tokenIndex: 0, displayWord: 'word', lookupTerm: 'word' }),
@@ -2406,6 +2408,7 @@ test('Word Study original-language provider loads static records by Scripture lo
 });
 
 test('Word Study original-language coverage includes full Genesis and John ranges with unsupported chapters unavailable', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const result = await page.evaluate(async () => ({
     genesis1: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 1, verse: 1, lookupTerm: 'ignored' }),
     genesis2: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 2, verse: 1, lookupTerm: 'ignored' }),
@@ -2439,6 +2442,7 @@ test('Word Study authoritative parsers preserve tiny OSHB and Unicode Greek extr
 });
 
 test('Word Study original-language provider returns chapter-two verse tokens in tokenIndex order', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const result = await page.evaluate(async () => ({
     genesis: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'genesis', chapter: 2, verse: 1, lookupTerm: 'ignored' }),
     john: await OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 2, verse: 1, lookupTerm: 'ignored' }),
@@ -2506,6 +2510,7 @@ test('Word Study keeps English content when original-language data is unsupporte
 });
 
 test('Word Study verse lookup ignores English lookup terms', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const result = await page.evaluate(async () => OriginalLanguageWordStudyProvider.lookupVerse({ bookId: 'john', chapter: 1, verse: 1, lookupTerm: 'not-the-token' }));
   expect(result.status).toBe('available');
   expect(result.records.length).toBeGreaterThan(1);
@@ -2601,6 +2606,7 @@ test('Word Study loads static Webster and Moby shard data once per shard', async
 });
 
 test('Word Study resolves Windows-reserved shards with a safe deterministic name', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const entries = { context: { word: 'context', definitions: [{ text: 'the circumstances that form the setting', partOfSpeech: 'noun' }], relatedWords: [] } };
   await page.route('**/data/word-study/**', async (route) => {
     const shard = new URL(route.request().url()).pathname.split('/').pop().replace('.json', '');
@@ -2610,6 +2616,7 @@ test('Word Study resolves Windows-reserved shards with a safe deterministic name
     return route.fulfill({ status: 404 });
   });
   await page.goto('/');
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const result = await page.evaluate(async () => {
     const context = (word) => ({ lookupTerm: word, displayWord: word });
     const names = DictionaryWordStudyProvider.getShardNames('context');
@@ -2620,6 +2627,7 @@ test('Word Study resolves Windows-reserved shards with a safe deterministic name
   expect(result.value.status).toBe('available');
 });
 test('Word Study dictionary provider resolves conservative English inflections after exact lookup', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const entry = (word) => ({
     word,
     definitions: [{
@@ -2676,6 +2684,7 @@ test('Word Study dictionary provider resolves conservative English inflections a
   });
 
   await page.goto('/');
+  await page.evaluate(()=>WordStudyLoader.ensure());
 
   const result = await page.evaluate(async () => {
     const context = (word) => ({
@@ -2731,6 +2740,7 @@ test('Word Study dictionary provider resolves conservative English inflections a
   expect(result.candidates.running).toContain('run');
 });
 test('Word Study dictionary provider resolves adaptive shards and caches concurrent requests', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const requests = {};
   const entry = (word) => ({ version: 'v1', entries: { [word]: { word, definitions: [{ text: `${word} definition`, partOfSpeech: 'noun' }], relatedWords: [] } } });
   await page.route('**/data/word-study/**', async (route) => {
@@ -2745,6 +2755,7 @@ test('Word Study dictionary provider resolves adaptive shards and caches concurr
     return route.fulfill({ status: 404 });
   });
   await page.goto('/');
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const result = await page.evaluate(async () => {
     const context = (word) => ({ lookupTerm: word, displayWord: word });
     const beginning = await DictionaryWordStudyProvider.lookup(context('beginning'));
@@ -2797,7 +2808,9 @@ test('Word Study supports keyboard activation, unavailable words, Escape close, 
 });
 
 test('Word Study moves focus into every result state and restores it after Escape', async ({ page }) => {
+  await page.evaluate(()=>WordStudyLoader.ensure());
   await page.goto('/');
+  await page.evaluate(()=>WordStudyLoader.ensure());
   const panel = page.locator('#wordStudyPanel');
   const heading = page.locator('#wordStudyHeading');
   const close = page.locator('#wordStudyClose');

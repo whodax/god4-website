@@ -162,6 +162,7 @@ for(const [name,viewport] of [['desktop',{width:1280,height:900}],['mobile',{wid
     });
 
     test('delayed English and original-language callbacks cannot mutate or focus obsolete study',async({page})=>{
+      await page.evaluate(()=>WordStudyLoader.ensure());
       await page.evaluate(()=>{
         window.realLookup=WordStudyProvider.lookup;
         window.realOriginal=OriginalLanguageWordStudyProvider.lookupVerse;

@@ -36,7 +36,7 @@ var WordStudyController = (function createWordStudyController(){
     view.source.textContent = state === 'available' ? 'Public Domain Word Study' : '';
     view.status.textContent = state === 'loading' ? 'Looking up ' + context.displayWord + '.' : 'Studying ' + context.displayWord + ', ' + context.bookName + ' ' + context.chapter + ':' + context.verse + '.';
     var heading = document.getElementById('wordStudyHeading');
-    if(heading) heading.focus();
+    if(heading && (document.activeElement === activatingWord || view.panel.contains(document.activeElement))) heading.focus();
   }
 
   function clearOriginalLanguage(){
@@ -100,42 +100,26 @@ var WordStudyController = (function createWordStudyController(){
     });
   }
 
-  function contextFromWord(word){
-    var verse = word.closest('.reader-verse');
-    if(!verse) return null;
-    return {
-      translationId: verse.getAttribute('data-translation-id'),
-      bookId: verse.getAttribute('data-book-id'),
-      bookName: verse.getAttribute('data-book-name'),
-      chapter: Number(verse.getAttribute('data-chapter')),
-      verse: Number(verse.getAttribute('data-verse-number')),
-      verseText: verse.getAttribute('data-verse-text'),
-      displayWord: word.getAttribute('data-word-study-display'),
-      lookupTerm: word.getAttribute('data-word-study-term')
-    };
-  }
-
-  function openFromWord(word){
-    var context = contextFromWord(word);
-    if(!context) return;
+  function openFromWord(word, context, isCurrent){
+    if(!word || !word.isConnected || !context || (isCurrent && !isCurrent())) return;
     activatingWord = word;
     var activeRequest = ++requestId;
     clearOriginalLanguage();
     setPanelState('loading', context, {});
     WordStudyProvider.lookup(context).then(function(result){
-      if(activeRequest !== requestId) return;
+      if(activeRequest !== requestId || !word.isConnected || (isCurrent && !isCurrent())) return;
       setPanelState(result.status, context, result);
     }).catch(function(){
-      if(activeRequest !== requestId) return;
+      if(activeRequest !== requestId || !word.isConnected || (isCurrent && !isCurrent())) return;
       setPanelState('unavailable', context, { message: 'Definition not available yet.' });
     });
     // English Reader words are not assumed to align one-to-one with original-language tokens.
     // This section remains verse-level until an authoritative alignment source exists.
     if(typeof OriginalLanguageWordStudyProvider !== 'undefined' && typeof OriginalLanguageWordStudyProvider.lookupVerse === 'function'){
       OriginalLanguageWordStudyProvider.lookupVerse(context).then(function(result){
-        if(activeRequest === requestId) renderOriginalLanguage(result);
+        if(activeRequest === requestId && word.isConnected && (!isCurrent || isCurrent())) renderOriginalLanguage(result);
       }).catch(function(){
-        if(activeRequest === requestId) clearOriginalLanguage();
+        if(activeRequest === requestId && word.isConnected && (!isCurrent || isCurrent())) clearOriginalLanguage();
       });
     }
   }
@@ -159,36 +143,12 @@ var WordStudyController = (function createWordStudyController(){
   function initialize(){
     if(initialized) return;
     initialized = true;
-    var reader = document.getElementById('readerContent');
-    var panel = document.getElementById('wordStudyPanel');
-    var closeButton = document.getElementById('wordStudyClose');
-    if(reader){
-      reader.addEventListener('click', function(event){
-        var word = event.target.closest('[data-word-study-term]');
-        if(word && reader.contains(word)) openFromWord(word);
-      });
-      reader.addEventListener('keydown', function(event){
-        var word = event.target.closest('[data-word-study-term]');
-        if(!word || !reader.contains(word)) return;
-        if(event.key === 'Enter' || event.key === ' '){
-          event.preventDefault();
-          openFromWord(word);
-        }
-      });
-    }
-    if(closeButton) closeButton.addEventListener('click', close);
     var originalTokens = document.getElementById('wordStudyOriginalTokens');
     if(originalTokens) originalTokens.addEventListener('click', function(event){
       var button = event.target.closest('[data-original-language-token-index]');
       if(button && originalTokens.contains(button)) showOriginalDetails(button.__originalLanguageRecord, button);
     });
-    if(panel) panel.addEventListener('keydown', function(event){
-      if(event.key === 'Escape'){
-        event.preventDefault();
-        close();
-      }
-    });
   }
 
-  return { initialize: initialize, close: close, invalidate: invalidate };
+  return { initialize: initialize, openFromWord: openFromWord, close: close, invalidate: invalidate };
 }());

@@ -817,7 +817,7 @@ function escapeHtml(value){
 function renderStudyWordTokens(text){
   return String(text).split(/([A-Za-z0-9]+(?:['\u2019-][A-Za-z0-9]+)*)/g).map(function(token){
     if(!/^[A-Za-z0-9]/.test(token)) return escapeHtml(token);
-    var lookupTerm = typeof WordStudyProvider === 'undefined' ? token.toLowerCase() : WordStudyProvider.normalizeLookupTerm(token);
+    var lookupTerm = WordStudyLoader.normalizeLookupTerm(token);
     return '<span class="word-study-token" role="button" tabindex="0" aria-label="Study word ' + escapeHtml(token) + '" data-word-study-display="' + escapeHtml(token) + '" data-word-study-term="' + escapeHtml(lookupTerm) + '">' + escapeHtml(token) + '</span>';
   }).join('');
 }
@@ -885,7 +885,10 @@ function switchView(view, btn, positionOnReturn){
   }
   var readerView = document.getElementById('view-reader');
   var readerWasActive = Boolean(readerView && readerView.classList.contains('active'));
-  if(readerWasActive && view !== 'reader') rememberReaderTabPosition(true);
+  if(readerWasActive && view !== 'reader'){
+    rememberReaderTabPosition(true);
+    if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate(true);
+  }
   document.querySelectorAll('.bs-view').forEach(function(v){ v.classList.remove('active'); });
   if(view!=='reader' && typeof clearPlanReadingSession==='function') clearPlanReadingSession();
   if(view==='plan' && typeof prepareJourneyPlanView==='function') prepareJourneyPlanView();
@@ -959,6 +962,7 @@ function populateTranslations(){
 async function changeTranslation(translationId){
   if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return false;
   stopSpeechForManualNavigation();
+  if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();
   var previousTranslation = currentTranslation;
   var translationSelect = document.getElementById('readerTranslation');
   var requestId = ++translationChangeRequest;
@@ -1029,7 +1033,7 @@ function renderPassage(bookKey, chapterNum){
     html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + '</span> ';
   }
   var container = document.getElementById('readerContent');
-  if(typeof WordStudyController !== 'undefined') WordStudyController.invalidate();
+  if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();
   if(container) container.innerHTML = html;
   populateVerses();
   if(Number.isInteger(currentVerse) && !isRenderableVerseText(data.verses[currentVerse - 1])) clearReaderVerseSelection();
@@ -1361,6 +1365,5 @@ if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener 
     secondaryControls.addEventListener('keydown', closeReaderMoreOnEscape);
   }
 }
-if(typeof WordStudyController !== 'undefined') WordStudyController.initialize();
 if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', function(){ initializeReaderControls(); initializeVoiceCommands(); }, { once: true });
 else { initializeReaderControls(); initializeVoiceCommands(); }
