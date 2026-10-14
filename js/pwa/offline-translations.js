@@ -1,26 +1,12 @@
 /* Accessible controls for explicitly managed offline Bible translations. */
-(function initializeOfflineTranslations(){
+var OfflineBiblesRuntime = (function(){
   'use strict';
+  if(window.OfflineBiblesRuntime) return window.OfflineBiblesRuntime;
 
   var translationIds = ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'];
   var allowedStates = ['not-retained', 'current', 'update-available'];
-  var trigger = document.getElementById('offlineBiblesTrigger');
-  var dialog = document.getElementById('offlineBiblesDialog');
-  var title = document.getElementById('offlineBiblesTitle');
-  var closeButton = document.getElementById('offlineBiblesClose');
-  var list = document.getElementById('offlineBiblesList');
-  var bibleStorage = document.getElementById('offlineBiblesStorage');
-  var siteStorage = document.getElementById('offlineSiteStorage');
-  var status = document.getElementById('offlineBiblesStatus');
-  if(!trigger || !dialog || !title || !closeButton || !list || !bibleStorage ||
-    !siteStorage || !status || typeof BibleData === 'undefined' ||
-    typeof BibleTranslationLoader === 'undefined') return;
-
-  var translations = BibleData.listTranslations().filter(function(translation){
-    return translationIds.indexOf(translation.id) !== -1;
-  }).sort(function(first, second){
-    return translationIds.indexOf(first.id) - translationIds.indexOf(second.id);
-  });
+  var trigger, dialog, title, closeButton, list, bibleStorage, siteStorage, status;
+  var translations, initialized = false, dialogGeneration = 0;
   var items = null;
   var busy = {};
   var unsupported = false;
@@ -123,6 +109,10 @@
   }
 
   function render(){
+    var focusedRow = list.contains(document.activeElement) &&
+      document.activeElement.closest('[data-translation-id]');
+    var focusedId = focusedRow && focusedRow.getAttribute('data-translation-id');
+    var replacement = null;
     list.textContent = '';
     translations.forEach(function(translation){
       var item = rowState(translation.id);
@@ -144,6 +134,7 @@
       text.appendChild(rowStatus);
       action.className = 'offline-bibles-action';
       action.type = 'button';
+      if(translation.id === focusedId) replacement = action;
       action.textContent = details.label;
       action.disabled = Boolean(operation || details.disabled);
       action.setAttribute('aria-label', details.accessible || (details.label + ' ' + translation.name));
@@ -152,12 +143,16 @@
       row.appendChild(action);
       list.appendChild(row);
     });
+    if(focusedId && dialog.open){
+      (replacement && !replacement.disabled ? replacement : closeButton).focus({preventScroll:true});
+    }
   }
 
   async function refreshList(){
     var version = ++refreshVersion;
+    var session = dialogGeneration;
     var response = await workerMessage('BIBLE_TRANSLATION_LIST');
-    if(version !== refreshVersion) return false;
+    if(version !== refreshVersion || session !== dialogGeneration || !dialog.open) return false;
     var nextItems = validList(response);
     if(!nextItems){
       items = null;
@@ -173,6 +168,9 @@
     updateBibleStorage();
     render();
     updateSiteStorage(version);
+    if(status.textContent === 'Checking offline Bible availability.'){
+      announce(navigator.onLine ? '' : 'You are offline. Downloads and updates require a connection.');
+    }
     return true;
   }
 
@@ -207,6 +205,7 @@
       return;
     }
 
+    var session = dialogGeneration;
     busy[translationId] = removing ? 'Removing' :
       (item.state === 'update-available' ? 'Updating' : 'Downloading');
     render();
@@ -214,7 +213,9 @@
       await workerMessage('BIBLE_TRANSLATION_REMOVE', translationId) :
       await BibleTranslationLoader.retain(translationId);
     delete busy[translationId];
-    await refreshList();
+    if(!dialog.open) return;
+    var refreshed = await refreshList();
+    if(!refreshed || session !== dialogGeneration || !dialog.open) return;
     if(result && result.ok){
       if(removing){
         announce(translation.name + ' was removed from offline storage. ' +
@@ -233,57 +234,62 @@
   }
 
   function openDialog(){
-    if(dialog.open) return;
+    dialogGeneration++;
     items = null;
     unsupported = false;
     announce('Checking offline Bible availability.');
     render();
-    dialog.showModal();
-    trigger.setAttribute('aria-expanded', 'true');
-    title.focus();
-    refreshList().then(function(){
-      if(dialog.open && !navigator.onLine){
-        announce('You are offline. Downloads and updates require a connection.');
-      } else if(dialog.open && !unsupported) {
-        announce('');
+    refreshList();
+  }
+
+  function initialize(){
+    if(initialized) return true;
+    trigger = document.getElementById('offlineBiblesTrigger');
+    dialog = document.getElementById('offlineBiblesDialog');
+    title = document.getElementById('offlineBiblesTitle');
+    closeButton = document.getElementById('offlineBiblesClose');
+    list = document.getElementById('offlineBiblesList');
+    bibleStorage = document.getElementById('offlineBiblesStorage');
+    siteStorage = document.getElementById('offlineSiteStorage');
+    status = document.getElementById('offlineBiblesStatus');
+    if(!trigger || !dialog || !title || !closeButton || !list || !bibleStorage ||
+      !siteStorage || !status || typeof BibleData === 'undefined' ||
+      typeof BibleTranslationLoader === 'undefined') return false;
+
+    translations = BibleData.listTranslations().filter(function(translation){
+      return translationIds.indexOf(translation.id) !== -1;
+    }).sort(function(first, second){
+      return translationIds.indexOf(first.id) - translationIds.indexOf(second.id);
+    });
+    dialog.addEventListener('close', function(){
+      if(dialog.open) return;
+      dialogGeneration++;
+      refreshVersion++;
+    });
+    dialog.addEventListener('keydown', function(event){
+      if(event.key !== 'Tab') return;
+      var controls = focusableControls();
+      if(!controls.length) return;
+      var first = controls[0];
+      var last = controls[controls.length - 1];
+      if(event.shiftKey && (document.activeElement === first || !controls.includes(document.activeElement))){
+        event.preventDefault();
+        last.focus();
+      } else if(!event.shiftKey && (document.activeElement === last || !controls.includes(document.activeElement))){
+        event.preventDefault();
+        first.focus();
       }
     });
+    window.addEventListener('offline', function(){
+      render();
+      if(dialog.open) announce('You are offline. Downloads and updates require a connection.');
+    });
+    window.addEventListener('online', function(){
+      render();
+      if(dialog.open) announce('Connection restored. Downloads and updates are available.');
+    });
+    initialized = true;
+    return true;
   }
-
-  function closeDialog(){
-    if(dialog.open) dialog.close();
-  }
-
-  trigger.addEventListener('click', openDialog);
-  closeButton.addEventListener('click', closeDialog);
-  dialog.addEventListener('close', function(){
-    trigger.setAttribute('aria-expanded', 'false');
-    trigger.focus();
-  });
-  dialog.addEventListener('cancel', function(event){
-    event.preventDefault();
-    closeDialog();
-  });
-  dialog.addEventListener('keydown', function(event){
-    if(event.key !== 'Tab') return;
-    var controls = focusableControls();
-    if(!controls.length) return;
-    var first = controls[0];
-    var last = controls[controls.length - 1];
-    if(event.shiftKey && (document.activeElement === first || !controls.includes(document.activeElement))){
-      event.preventDefault();
-      last.focus();
-    } else if(!event.shiftKey && (document.activeElement === last || !controls.includes(document.activeElement))){
-      event.preventDefault();
-      first.focus();
-    }
-  });
-  window.addEventListener('offline', function(){
-    render();
-    if(dialog.open) announce('You are offline. Downloads and updates require a connection.');
-  });
-  window.addEventListener('online', function(){
-    render();
-    if(dialog.open) announce('Connection restored. Downloads and updates are available.');
-  });
+  return {version:1, initialize:initialize, openFromTrigger:openDialog};
 }());
