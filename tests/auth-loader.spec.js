@@ -94,7 +94,7 @@ test('cached auth stays unexecuted until Account activation and loads offline',a
   await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));
   if(!await page.evaluate(()=>Boolean(navigator.serviceWorker.controller)))await page.reload();
   await expect.poll(()=>page.evaluate(()=>Boolean(navigator.serviceWorker.controller))).toBe(true);
-  const cached=await page.evaluate(async()=>{const cache=await caches.open('god4-shell-compact-reader-29');return(await cache.keys()).map(r=>new URL(r.url).pathname)});
+  const cached=await page.evaluate(async()=>{const cache=await caches.open('god4-shell-compact-reader-30');return(await cache.keys()).map(r=>new URL(r.url).pathname)});
   for(const asset of [...deps.slice(1),'/js/auth/config.js','/js/auth/loader.js','/js/auth/account-ui.js'])expect(cached).toContain(asset);
   expect(cached).not.toContain(deps[0]);
   expect(await page.evaluate(()=>typeof God4Auth)).toBe('undefined');

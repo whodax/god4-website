@@ -534,7 +534,6 @@ async function initializeApp(){
     requestAnimationFrame(function(){ pulseBrandMark(); });
   }
   if(typeof populateTranslations === 'function') populateTranslations();
-  if(typeof renderPlan === 'function') renderPlan();
   initializeBibleExperienceTriggers();
   renderLeaf();
 }

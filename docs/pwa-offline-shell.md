@@ -233,3 +233,42 @@ manifest, PWA, compact Reader, reflow, CSP, auth, Compare, Word Study, and empty
 verse suites pass after shell membership/byte-accounting expectations are
 updated. No translation-loader, protocol, PWA registration, Speech, Compare,
 Word Study, styles, or _headers production logic changed.
+
+## Plans readiness and startup cleanup: shell 29 -> 30
+
+Plans and Reading Journey remain eager and shell-precached. Plans initialization
+owns the single startup render, including progress rollover and orphaned history
+marker cleanup; app initialization no longer renders the hidden day grid again.
+
+Day activation captures its plan, day, translation and passage endpoints before
+awaiting the existing Bible readiness promise. A newer day, view departure,
+translation request, browser history action or manual Reader action invalidates
+pending navigation. Only a current, available reading creates a session and
+completes an ordinary day after successful navigation. The final Journey day
+keeps its existing completion boundary. Preparing and failure feedback use the
+existing polite/atomic Journey status; canceled work never moves focus or writes
+progress. Activating a day again retries a failed Bible acquisition.
+
+First Plan use offline still requires an installed shell and retained Scripture.
+Missing Scripture produces an accessible failure without navigation, session or
+completion. Translation cache names/protocols, the auth-vendor cache, Speech,
+Compare, Word Study and Offline Bibles loading remain unchanged. Shell 30 waits
+for explicit visitor update acceptance and reload, preserving retained Bibles
+and vendor assets. No lazy runtime split, layout change or network-byte saving
+is introduced by this milestone.
+
+### Shell-30 follow-up: keep Plan keyboard focus visible
+
+The same unreleased shell-30 milestone corrects vertical focus clipping when
+preparation/failure feedback adds height above the day grid and after return
+focus. A guarded animation-frame check keeps the existing focused control and
+its outline inside the viewport below the existing sticky headers, using only
+the minimum necessary instant vertical scroll. Fully visible controls do not
+scroll. Existing focus/hover outline transitions are checked again when settled;
+canceled/superseded requests, translation changes, changed focus and
+inactive Plan views invalidate queued checks. Native focus targets, progress,
+history and Speech are unchanged. Shell remains compact-reader-30.
+
+The offline status banner can intercept pointer clicks on Back to Plan. Hosted
+acceptance reproduced this on parent main; native keyboard return works. This
+pre-existing banner/layout issue is outside the focus-visibility correction.

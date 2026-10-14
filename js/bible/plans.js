@@ -2,6 +2,7 @@ var journeyState = UserData.journey.load();
 var activePlanReadingSession = null;
 var planSpeechReturnPending = false;
 var planNavigationRequest = 0;
+var pendingPlanNavigation = null;
 var planHistorySessionId = null;
 var planHistorySequence = 0;
 var pendingPlanReturnAnnouncement = null;
@@ -43,6 +44,7 @@ function clearOrphanedPlanReaderHistoryMarker(){
 }
 
 function handlePlanReaderPopState(event){
+  invalidatePendingPlanNavigation();
   if(activePlanReadingSession && planHistorySessionId){
     planHistorySessionId=null;
     var announce=pendingPlanReturnAnnouncement===true;
@@ -65,7 +67,16 @@ function updatePlanSessionControl(){
   if(reader) reader.classList.toggle('has-plan-session',Boolean(activePlanReadingSession));
 }
 
+function invalidatePendingPlanNavigation(){
+  if(!pendingPlanNavigation) return;
+  pendingPlanNavigation=null;
+  planNavigationRequest++;
+  var status=document.getElementById('journeyStatus');
+  if(status && status.textContent==='Preparing reading…') status.textContent='';
+}
+
 function clearPlanReadingSession(){
+  invalidatePendingPlanNavigation();
   removePlanReaderHistoryMarker();
   activePlanReadingSession=null;
   planSpeechReturnPending=false;
@@ -130,17 +141,45 @@ function returnToPlanFromSession(announceCompletion,fromPopState){
   return true;
 }
 
+function ensurePlanFocusVisible(target,requestId){
+  var translationRequest=translationChangeRequest;
+  function schedule(){
+    requestAnimationFrame(function(){
+      if(requestId!==planNavigationRequest || translationRequest!==translationChangeRequest ||
+        document.activeElement!==target || !target || !target.isConnected) return;
+      var view=document.getElementById('view-plan');
+      if(!view || !view.classList.contains('active') || !view.contains(target)) return;
+      // Read after the status/focus layout change; retain the native focus target
+      // and move only vertically by the amount needed to include its outline.
+      var rect=target.getBoundingClientRect(), style=getComputedStyle(target);
+      var outline=style.outlineStyle==='none' ? 0 :
+        Math.max(0,(parseFloat(style.outlineWidth)||0)+(parseFloat(style.outlineOffset)||0));
+      var top=readerVisibleTop()+outline, bottom=window.innerHeight-outline;
+      var offset=rect.top<top ? Math.floor(rect.top-top) :
+        rect.bottom>bottom ? Math.ceil(rect.bottom-bottom) : 0;
+      if(offset) window.scrollBy({top:offset,left:0,behavior:'instant'});
+    });
+  }
+  schedule();
+  // The existing focus/hover outline can still be transitioning on the first
+  // frame. Recheck its settled extent with the same stale-intent guards.
+  var animations=target && typeof target.getAnimations==='function' ? target.getAnimations() : [];
+  if(animations.length) Promise.all(animations.map(function(animation){
+    return animation.finished.catch(function(){});
+  })).then(schedule);
+}
+
 function focusNextJourneyDay(){
   var planIndex=currentJourneyPlanIndex();
   var plan=planIndex<0 ? null : ReadingJourneyPlans[planIndex];
   var completed=plan ? journeyState.plans[planIndex] : [];
   var dayIndex=plan ? plan.days.findIndex(function(_,index){ return completed.indexOf(index+1)===-1; }) : -1;
   var dayButton=dayIndex<0 ? null : document.querySelector('#planDays [data-plan-day="'+(dayIndex+1)+'"]');
-  if(dayButton){ dayButton.focus(); return true; }
+  if(dayButton){ dayButton.focus(); ensurePlanFocusVisible(dayButton,planNavigationRequest); return true; }
   var heading=document.getElementById('planHeading');
-  if(heading){ heading.focus(); return true; }
+  if(heading){ heading.focus(); ensurePlanFocusVisible(heading,planNavigationRequest); return true; }
   var planContainer=document.getElementById('view-plan');
-  if(planContainer){ planContainer.focus(); return true; }
+  if(planContainer){ planContainer.focus(); ensurePlanFocusVisible(planContainer,planNavigationRequest); return true; }
   return false;
 }
 
@@ -234,21 +273,61 @@ function openJourneyDay(dayNumber){
   var day=ReadingJourneyPlans[planIndex].days[dayNumber-1];
   if(!day) return Promise.resolve(false);
   clearPlanReadingSession();
-  var requestId=++planNavigationRequest;
+  var intent={
+    requestId:++planNavigationRequest,planIndex:planIndex,dayNumber:dayNumber,day:day,
+    translationId:currentTranslation,translationRequest:translationChangeRequest,
+    start:day.chapters[0],end:day.chapters[day.chapters.length-1]
+  };
+  pendingPlanNavigation=intent;
   var status=document.getElementById('journeyStatus');
-  if(status) status.textContent='';
-  var passage=day.chapters[0];
-  return navigateReaderToPassage(passage.bookId,passage.chapter,1).then(function(navigated){
-    if(!navigated || requestId!==planNavigationRequest) return false;
-    activePlanReadingSession=buildPlanReadingSession(planIndex,dayNumber,day);
-    activePlanReadingSession.completionPending=planIndex===ReadingJourneyPlans.length-1 &&
-      dayNumber===ReadingJourneyPlans[planIndex].days.length;
-    pushPlanReaderHistory();
-    updatePlanSessionControl();
-    updateReaderControls();
-    if(!activePlanReadingSession.completionPending) completeJourneyDay(planIndex,dayNumber,localCalendarDate(new Date()));
-    if(!journeyCycleIsComplete()) renderPlan();
-    return true;
+  if(status) status.textContent=bibleExperienceReady ? '' : 'Preparing reading…';
+  ensurePlanFocusVisible(document.activeElement,intent.requestId);
+  function current(){
+    return intent.requestId===planNavigationRequest && intent.translationId===currentTranslation &&
+      intent.translationRequest===translationChangeRequest && currentJourneyPlanIndex()===intent.planIndex &&
+      ReadingJourneyPlans[intent.planIndex].days[intent.dayNumber-1]===intent.day;
+  }
+  function failed(){
+    if(intent.requestId===planNavigationRequest && status){
+      status.textContent='Reading unavailable. Please try again when this Bible is available.';
+      ensurePlanFocusVisible(document.activeElement,intent.requestId);
+    }
+    return false;
+  }
+  // Readiness owns translation acquisition. Do not validate an unloaded passage or
+  // let a canceled day navigate when a shared Bible request eventually resolves.
+  return Promise.resolve().then(function(){
+    return initializeBibleExperience();
+  }).then(function(loaded){
+    if(!current()){
+      if(pendingPlanNavigation===intent) return failed();
+      return false;
+    }
+    if(!loaded) return failed();
+    var session=buildPlanReadingSession(intent.planIndex,intent.dayNumber,intent.day);
+    if(!session.end.verse || !intent.day.chapters.every(function(passage){
+      return Boolean(BibleData.getChapter(intent.translationId,passage.bookId,passage.chapter));
+    })) return failed();
+    // The ready Reader handoff is synchronous up to its Promise result. Release
+    // pending ownership so its own view switch/manual render is not cancellation.
+    pendingPlanNavigation=null;
+    if(status) status.textContent='';
+    return navigateReaderToPassage(intent.start.bookId,intent.start.chapter,1).then(function(navigated){
+      if(!current()) return false;
+      if(!navigated) return failed();
+      activePlanReadingSession=session;
+      activePlanReadingSession.completionPending=intent.planIndex===ReadingJourneyPlans.length-1 &&
+        intent.dayNumber===ReadingJourneyPlans[intent.planIndex].days.length;
+      pushPlanReaderHistory();
+      updatePlanSessionControl();
+      updateReaderControls();
+      if(!activePlanReadingSession.completionPending) completeJourneyDay(intent.planIndex,intent.dayNumber,localCalendarDate(new Date()));
+      if(!journeyCycleIsComplete()) renderPlan();
+      return true;
+    });
+  }).catch(function(){ return failed(); }).then(function(navigated){
+    if(pendingPlanNavigation===intent) pendingPlanNavigation=null;
+    return navigated;
   });
 }
 
@@ -258,6 +337,10 @@ function initializePlanControls(){
   container.addEventListener('click',function(event){
     var button=event.target.closest('[data-plan-day]');
     if(button && container.contains(button)) openJourneyDay(Number(button.getAttribute('data-plan-day')));
+  });
+  container.addEventListener('focusin',function(event){
+    var button=event.target.closest('[data-plan-day]');
+    if(button && container.contains(button)) ensurePlanFocusVisible(button,planNavigationRequest);
   });
   var backButton=document.getElementById('readerBackToPlan');
   if(backButton) backButton.addEventListener('click',function(){ returnToPlanFromSession(false); });
