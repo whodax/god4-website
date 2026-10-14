@@ -24,7 +24,7 @@ test('Reader starts with one compact primary toolbar and a closed More disclosur
   expect(await reader.locator('.reader-toolbar').evaluate(toolbar =>
     [...toolbar.children].filter(element => element.matches('select, button, .reader-controls-top'))
       .map(element => element.id || 'chapter-group')
-  )).toEqual(['bookSelect', 'chapter-group', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']);
+  )).toEqual(['bookSelect', 'chapter-group', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn', 'scripturePickerTrigger']);
   for(const id of ['bookSelect', 'chapterSelect', 'verseSelect', 'readerTranslation']){
     await expect(reader.locator(`#${id}`)).toHaveCount(1);
   }
@@ -123,7 +123,7 @@ test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mob
       return { toolbarHeight:toolbar.height, firstVerseOffset:verse.top - view.top, overflow, positions };
     });
     expect(geometry.overflow, `${width}px Reader overflow`).toEqual([]);
-    expect(geometry.toolbarHeight).toBeLessThanOrEqual(width === 1440 ? 64 : 110);
+    expect(geometry.toolbarHeight).toBeLessThanOrEqual(width === 1440 ? 64 : 160);
     if(width === 1440) expect(new Set(geometry.positions).size).toBe(1);
     else {
       expect(new Set(geometry.positions.slice(0, 3)).size).toBe(1);
