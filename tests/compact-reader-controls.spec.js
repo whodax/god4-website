@@ -209,6 +209,8 @@ test('Compare and Plan hide the Reader toolbar and returning restores sticky beh
 test('one playback button changes from Play to Stop and back', async ({ page }) => {
   await page.addInitScript(() => {
     window.SpeechSynthesisUtterance = function(text){ this.text = text; };
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable:true, value:{
       speak(){}, cancel(){}, pause(){}, resume(){}, getVoices(){ return []; }
     }});
@@ -232,6 +234,8 @@ test('voice-paused playback shows Play and resumes the same session', async ({ p
   await page.addInitScript(() => {
     window.__speechCalls = { speak:0, resume:0 };
     window.SpeechSynthesisUtterance = function(text){ this.text = text; };
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable:true, value:{
       speak(){ window.__speechCalls.speak++; }, cancel(){}, pause(){},
       resume(){ window.__speechCalls.resume++; }, getVoices(){ return []; }

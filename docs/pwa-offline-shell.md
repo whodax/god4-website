@@ -125,3 +125,7 @@ failure/retry and Close/Escape/focus restoration use the existing accessible pan
 ## Compare runtime loading: shell 26 -> 27
 
 Shell 27 adds /js/bible/compare-loader.js and retains /js/bible/compare.js, bringing the precache to 42 assets. The document executes only the loader until Compare-tab or edition-count activation. Installation still downloads both files; this is startup execution deferral, not shell-installation savings. Translation/auth cache names and protocols stay unchanged. Cold offline runtime loading, warm use, and reload use the existing retained-translation contract. See [Compare runtime loading](compare-lazy-loading.md) for readiness, APIs, cancellation and measurements.
+
+## Premium voice profiles: shell 27 → 28
+
+The eager Speech/cloud and Reader integration change requires one shell bump to compact-reader-28. Both runtimes remain precached; translation caches and the Supabase vendor cache stay unchanged. Accept the waiting update and reload for coherent new controls/runtime. Generated speech audio is not retained in browser shell caches.

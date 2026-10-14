@@ -266,9 +266,11 @@ test('manual navigation outside the assigned chapter cancels auto-return and scr
 test('continuous Read Aloud stops at the assigned final verse and returns once',async ({page})=>{
   await page.addInitScript(()=>{
     window.__planSpeech={utterances:[]};
+    Object.defineProperty(window,'AudioContext',{configurable:true,value:undefined});
+    Object.defineProperty(window,'webkitAudioContext',{configurable:true,value:undefined});
     Object.defineProperty(window,'SpeechSynthesisUtterance',{configurable:true,value:function(text){this.text=text;}});
     Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{
-      speak(utterance){window.__planSpeech.utterances.push({book:currentBook,chapter:currentChapter,utterance});},
+      speak(utterance){window.__planSpeech.utterances.push({book:currentBook,chapter:currentChapter,utterance});if(utterance.onstart)utterance.onstart();},
       pause(){},resume(){},cancel(){},getVoices(){return []}
     }});
   });
@@ -304,9 +306,11 @@ test('continuous Read Aloud stops at the assigned final verse and returns once',
 test('ordinary Reader read-aloud continues beyond a chapter when no Plan session is active',async ({page})=>{
   await page.addInitScript(()=>{
     window.__ordinarySpeech=[];
+    Object.defineProperty(window,'AudioContext',{configurable:true,value:undefined});
+    Object.defineProperty(window,'webkitAudioContext',{configurable:true,value:undefined});
     Object.defineProperty(window,'SpeechSynthesisUtterance',{configurable:true,value:function(text){this.text=text;}});
     Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{
-      speak(utterance){window.__ordinarySpeech.push(utterance);},pause(){},resume(){},cancel(){},getVoices(){return []}
+      speak(utterance){window.__ordinarySpeech.push(utterance);if(utterance.onstart)utterance.onstart();},pause(){},resume(){},cancel(){},getVoices(){return []}
     }});
   });
   await page.reload();
@@ -315,7 +319,7 @@ test('ordinary Reader read-aloud continues beyond a chapter when no Plan session
   await page.locator('#chapterSelect').selectOption('9');
   await page.locator('#readAloudPlay').click();
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
-  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+  await expect(page.locator('#readAloudStatus')).toHaveText(/Using .*device voice/);
   await page.evaluate(()=>{
     var index=0;
     while(currentChapter===9 && index<200) window.__ordinarySpeech[index++].onend();
@@ -474,9 +478,11 @@ test('Day 1 is available after rollover and opens Matthew 1',async ({page})=>{
 test('Read Aloud returns from Revelation 22 and rolls over the completed journey',async ({page})=>{
   await page.addInitScript(()=>{
     window.__journeySpeech=[];
+    Object.defineProperty(window,'AudioContext',{configurable:true,value:undefined});
+    Object.defineProperty(window,'webkitAudioContext',{configurable:true,value:undefined});
     Object.defineProperty(window,'SpeechSynthesisUtterance',{configurable:true,value:function(text){this.text=text;}});
     Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{
-      speak(utterance){window.__journeySpeech.push(utterance);},pause(){},resume(){},cancel(){},getVoices(){return []}
+      speak(utterance){window.__journeySpeech.push(utterance);if(utterance.onstart)utterance.onstart();},pause(){},resume(){},cancel(){},getVoices(){return []}
     }});
   });
   await page.evaluate(()=>sessionStorage.removeItem('journey-test-initialized'));

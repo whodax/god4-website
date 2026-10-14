@@ -927,20 +927,22 @@ test('reader read-aloud controls speak only chapter verses and manage playback',
         window.__speech.cancels++;
       }
     };
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
   });
   await page.goto('/');
   await page.locator('#readerTranslation').selectOption('web');
 
   await page.locator('#readAloudPlay').click();
-  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+  await expect(page.locator('#readAloudStatus')).toHaveText(/Using .*device voice/);
   expect(await page.evaluate(() => window.__speech.spoken[0])).toBe('In the beginning was the Word, and the Word was with God, and the Word was God.');
   expect(await page.evaluate(() => window.__speech.spoken[0])).not.toContain('John 1');
 
   await page.evaluate(() => pauseResumeReadAloud());
   await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
   await page.locator('#readAloudPlay').click();
-  await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+  await expect(page.locator('#readAloudStatus')).toHaveText(/Using .*device voice/);
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudStatus')).toHaveText('Stopped. Press Play to continue reading.');
 
@@ -958,6 +960,8 @@ test('Read Aloud highlights each spoken verse without changing the selected vers
       configurable: true,
       value: function(text) { this.text = text; }
     });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.utterances.push(utterance); },
       pause() { window.__speech.pauses++; },
@@ -1011,6 +1015,8 @@ test('single-verse Read Aloud combines spoken and selected states and clears on 
       configurable: true,
       value: function(text) { this.text = text; }
     });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.utterances.push(utterance); },
       pause() {},
@@ -1042,6 +1048,8 @@ test('Reader chapter and book navigation clear stale spoken highlights', async (
       configurable: true,
       value: function(text) { this.text = text; }
     });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.utterances.push(utterance); },
       pause() {},
@@ -1071,6 +1079,8 @@ test('fullscreen Reader shares spoken-verse progression without moving focus', a
       configurable: true,
       value: function(text) { this.text = text; }
     });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.utterances.push(utterance); },
       pause() {},
@@ -1098,6 +1108,8 @@ test('fullscreen Reader shares spoken-verse progression without moving focus', a
 });
 test('reader read-aloud controls are disabled when Web Speech API is unavailable', async ({ page }) => {
   await page.addInitScript(() => {
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: undefined });
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: undefined });
   });
@@ -1130,6 +1142,8 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
       resume() {},
       cancel() { window.__speech.cancels++; }
     };
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
   });
   await page.goto('/');
@@ -1153,7 +1167,7 @@ test('verse read-aloud shares chapter speech and applies persisted speed and voi
     ];
     window.speechSynthesis.voiceChangedHandler();
   });
-  await expect(page.locator('#readAloudVoice option')).toHaveText(['Male', 'Female']);
+  await expect(page.locator('#readAloudVoice option')).toHaveText(['Natural Male', 'Natural Female']);
   await openReaderMore(page);
   await page.locator('#readAloudVoice').selectOption('female');
   await openReaderMore(page);
@@ -1207,6 +1221,8 @@ test('voice commands use the shared BibleSpeech engine', async ({ page }) => {
       resume() { window.__speech.resumes++; },
       cancel() { window.__speech.cancels++; }
     };
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
   });
   await page.goto('/');
@@ -1823,6 +1839,8 @@ test('Voice Commands stays available independently from Read Aloud when recognit
     window.__speech = { spoken: [] };
     const utterance = function(text) { this.text = text; };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: utterance });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(value) { window.__speech.spoken.push(value.text); },
       cancel() {},
@@ -2025,7 +2043,7 @@ test('denied microphone permission does not auto-start or enter a restart loop',
   await page.waitForTimeout(350);
   expect(await page.evaluate(() => window.__recognition.starts)).toBe(1);
 });
-test('speech voice labels identify concrete David and Zira while retaining exact voice objects', async ({ page }) => {
+test('product voice labels retain exact David and Zira fallback objects', async ({ page }) => {
   await page.addInitScript(() => {
     window.__speech = { spoken: [] };
     const availableVoices = [
@@ -2034,6 +2052,8 @@ test('speech voice labels identify concrete David and Zira while retaining exact
       { name: 'Microsoft David', lang: 'en-US', localService: true }
     ];
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       getVoices() { return availableVoices; },
       speak(utterance) { window.__speech.spoken.push(utterance); },
@@ -2042,7 +2062,7 @@ test('speech voice labels identify concrete David and Zira while retaining exact
   });
   await page.goto('/');
   expect(await page.locator('#readAloudVoice option').allTextContents()).toEqual([
-    'Male', 'Female'
+    'Natural Male', 'Natural Female'
   ]);
   await openReaderMore(page);
   await page.locator('#readAloudVoice').selectOption('female');
@@ -2054,6 +2074,8 @@ test('spoken book commands navigate deterministically and only play when request
   await page.addInitScript(() => {
     window.__speech = { spoken: [] };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.spoken.push(utterance.text); },
       cancel() {}, pause() {}, resume() {}
@@ -2088,6 +2110,8 @@ test('natural chapter and verse references navigate and focus data-backed verses
   await page.addInitScript(() => {
     window.__speech = { spoken: [] };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.spoken.push(utterance.text); },
       cancel() {}, pause() {}, resume() {}
@@ -2125,6 +2149,8 @@ test('natural chapter words work for navigation and Read commands', async ({ pag
   await page.addInitScript(() => {
     window.__speech = { spoken: [] };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.spoken.push(utterance.text); },
       cancel() {}, pause() {}, resume() {}
@@ -2167,6 +2193,8 @@ test('ordinal Bible book names normalize to numbered metadata books', async ({ p
   await page.addInitScript(() => {
     window.__speech = { spoken: [] };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.spoken.push(utterance.text); },
       cancel() {}, pause() {}, resume() {}
@@ -2260,6 +2288,8 @@ test('recognized navigation commands execute Reader actions through the recognit
     FakeRecognition.prototype.stop = function() {};
     Object.defineProperty(window, 'SpeechRecognition', { configurable: true, value: FakeRecognition });
     Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: function(text) { this.text = text; } });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) { window.__speech.spoken.push(utterance.text); },
       cancel() {}, pause() {}, resume() {}
@@ -3099,6 +3129,8 @@ test('User data storage preserves all six legacy keys and serialized formats acr
   await page.evaluate(values => Object.entries(values).forEach(([key, value]) => localStorage.setItem(key, value)), legacy);
   await page.evaluate(() => localStorage.removeItem('god4.plan.journey.v1'));
   await page.addInitScript(() => {
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { value: {
       getVoices: () => [{name: 'Samantha', lang: 'en-US', localService: true}],
       addEventListener() {}, cancel() {}, speak() {}, pause() {}, resume() {}
@@ -3727,6 +3759,8 @@ async function installVoicePlaybackMocks(page) {
       configurable: true,
       value: function(text) { this.text = text; }
     });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
       speak(utterance) {
         window.__speech.utterances.push(utterance);
@@ -3772,7 +3806,7 @@ test('voice Resume and Continue map to Play while Pause remains a compatibility 
     await recognizePlaybackCommand(page, 'pause');
     await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud paused.');
     await recognizePlaybackCommand(page, alias);
-    await expect(page.locator('#readAloudStatus')).toHaveText('Reading aloud.');
+    await expect(page.locator('#readAloudStatus')).toHaveText(/Using .*device voice/);
     await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-spoken/);
     expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(1);
   }
@@ -4557,6 +4591,8 @@ async function installSpokenFollowMocks(page, deferStart = false) {
       configurable: true,
       value: function(text) { this.text = text; }
     });
+    Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
+    Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', {configurable: true, value: {
       speak(utterance) {
         window.__speech.utterances.push(utterance);

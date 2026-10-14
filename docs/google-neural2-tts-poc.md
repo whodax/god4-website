@@ -1,4 +1,6 @@
-# Google Neural2 Reader — production opt-in
+# Google Neural2 Reader — original opt-in rollout
+
+> Superseded for current premium client behavior by [Premium voice profiles](premium-voice-profiles.md). The server/security/cache documentation below records the earlier opt-in rollout; ordinary URLs now use premium profiles, with cloud-tts=0 retained for device diagnostics.
 
 The controlled-rollout work starts from merged PR #73 on `main`. Cloud speech is opt-in at
 `https://<host>/?cloud-tts=1`; ordinary URLs retain the production speech path and
