@@ -129,3 +129,107 @@ Shell 27 adds /js/bible/compare-loader.js and retains /js/bible/compare.js, brin
 ## Premium voice profiles: shell 27 → 28
 
 The eager Speech/cloud and Reader integration change requires one shell bump to compact-reader-28. Both runtimes remain precached; translation caches and the Supabase vendor cache stay unchanged. Accept the waiting update and reload for coherent new controls/runtime. Generated speech audio is not retained in browser shell caches.
+
+## Offline Bibles runtime loading: shell 28 -> 29
+
+Shell 29 replaces the document's eager offline-translations.js reference with
+offline-translations-loader.js. Both classic scripts remain in the 43-asset
+shell precache. Installation still downloads the runtime even if the visitor
+never opens Offline Bibles; this change defers document startup work, not shell
+installation bytes. Translation and auth-vendor cache names, worker protocol,
+timeouts, validation/promotion behavior, and explicit waiting-update acceptance
+are unchanged. Accept the waiting update and reload for a coherent shell.
+
+Only activation of the Study Desk Offline Bibles button loads the runtime.
+Native click, Enter, Space, and programmatic click share one handler. Hover,
+focus, Reader visibility, translation selection, connectivity, and PWA status
+do not load it. The facade opens the existing modal immediately, focuses its
+heading, and provides a polite loading status with aria-busy. Native modal
+containment and Close/Escape work before readiness; the existing explicit Tab
+loop becomes available with the runtime. No markup, CSS, or CSP redesign is
+required.
+
+OfflineBiblesLoader.ensure() shares one retryable promise. It inserts a
+same-origin external classic script, validates OfflineBiblesRuntime.version
+and its initialize()/openFromTrigger() methods, and initializes once.
+initialize() returns true on readiness and remains idempotent. The facade owns
+modal opening, dismissal, expanded/busy state, and trigger-focus restoration;
+openFromTrigger() populates an already-open dialog without reopening or focusing
+it. Catalog/action helpers remain private. Failed scripts are removed and
+readiness resets. Closing and reactivating retries; a valid loaded API survives
+a temporary initialization failure. No worker-message bridge is needed.
+
+An activation generation prevents dismissed or superseded readiness from
+reopening the dialog or moving focus. A separate dialog generation and LIST
+refresh version prevent stale responses and old action announcements from
+overwriting a newer session. Download/removal operations continue after close;
+completion clears busy state and can refresh a currently open catalog without
+announcing an older session's outcome. A successful current LIST also settles
+an outstanding checking status, including when action refresh supersedes the
+opening request. Catalog rebuild preserves the focused translation action when
+enabled, otherwise focuses the stable Close button with preventScroll. Hidden
+catalog refresh never redirects focus.
+
+Lazy connectivity handlers read current navigator.onLine and do not replay
+historical events. Retained-state inspection still uses LIST; it does not
+download translations. Older/unsupported worker LIST responses retain the
+existing app-update message without automatic worker activation or reload.
+BibleData.listTranslations(), BibleTranslationLoader.isLoaded(), ensure(), and
+retain() keep their synchronous/promise/result contracts.
+
+Cold offline contract: after successful installation, a user who has never
+opened Offline Bibles online can reload offline and activate it for the first
+time. The facade and runtime load from the shell, and LIST inspects retained
+state without a runtime network dependency. Retained reading and removal
+semantics remain unchanged; installation alone still does not retain a Bible.
+
+### Local measurements and validation
+
+Measured against main 40934bbbf181e44addf6283cbb02933b740fefb8 using Chromium
+151.0.7922.34. Decode measurements normalize CRLF to the deployed LF
+representation; cold transfer measurements use identical local gzip settings.
+These local compressed sizes are not claimed as deployed Cloudflare sizes.
+
+| Item | Checkout bytes | LF decoded bytes | Gzip body bytes | Cold transfer bytes |
+| --- | ---: | ---: | ---: | ---: |
+| Previous eager UI | 11,652 | 11,363 | 3,142 | 3,442 |
+| Current lazy runtime | 12,363 | 12,068 | 3,352 | 3,652 |
+| Eager facade | 3,081 | 3,008 | 982 | 1,282 |
+
+Eager external application script count stays 19: the facade replaces one
+reference. Net eager JavaScript reduction is 8355 decoded bytes
+and 2160 matched cold-transfer bytes. The HTML reference grows by seven bytes.
+The facade exceeds the audit's 1-2 KiB planning range; report its actual size.
+Total installed shell bytes grow because both scripts remain precached and the
+runtime includes the focused accessibility/race fixes.
+
+Twenty-load median top-level evaluation was 0.0420 ms before and
+0.0265 ms for the facade after. This tiny CPU delta is timing noise
+scale; the meaningful measured benefit is fewer eager bytes.
+
+Five-sample first activation medians (milliseconds from click):
+
+| Runtime source | Runtime ready | Catalog settled |
+| --- | ---: | ---: |
+| Local network | 11.5 | 11.9 |
+| HTTP cache | 4.3 | 4.5 |
+| Service-worker cache, offline | 13.5 | 22.7 |
+
+These include immediate modal layout/focus and runtime initialization. The
+uncontrolled network/HTTP-cache fixture settles into the existing unsupported
+worker state; the offline worker fixture performs real LIST inspection. Local
+desktop timings do not predict WAN or mobile performance. The prior production
+baseline was 3,518 transfer bytes; new deployed transfer size requires preview
+verification.
+
+Focused validation covers eager request exclusion, all activation modes,
+shared readiness/idempotent initialization, invalid API/network failures,
+partial initialization retry, Close/Escape before readiness, rapid activation,
+current connectivity, stale LIST/action overlap, duplicate/busy actions,
+focus preservation, enforcing unchanged CSP, narrow reflow, first-ever offline
+activation, and real waiting-worker 28->29 acceptance with retained Bible and
+vendor cache preservation. Existing management, translation loader/protocol,
+manifest, PWA, compact Reader, reflow, CSP, auth, Compare, Word Study, and empty
+verse suites pass after shell membership/byte-accounting expectations are
+updated. No translation-loader, protocol, PWA registration, Speech, Compare,
+Word Study, styles, or _headers production logic changed.

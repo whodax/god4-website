@@ -5,7 +5,7 @@ const translationManifestGenerator = require('../tools/generate-translation-mani
 
 const root = path.resolve(__dirname, '..');
 const translationPattern = /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/;
-const shellCacheName = 'god4-shell-compact-reader-28';
+const shellCacheName = 'god4-shell-compact-reader-29';
 
 async function installAndControl(page) {
   await page.goto('/');
@@ -86,6 +86,7 @@ test('service worker installs a versioned shell without requesting or caching tr
   expect(state.urls).toContain('/js/app.js');
   expect(state.urls).toContain('/js/bible/cloud-tts.js');
   expect(state.urls.some(url => url.startsWith('/api/tts') || url.startsWith('/__god4/tts/'))).toBe(false);
+  expect(state.urls).toContain('/js/pwa/offline-translations-loader.js');
   expect(state.urls).toContain('/js/pwa/offline-translations.js');
   expect(state.urls).not.toContain('/js/vendor/supabase-js-2.117.0.min.js');
   expect(state.urls.some(url => translationPattern.test(url))).toBe(false);
@@ -118,7 +119,7 @@ test('new Reader shell replaces the prior shell while retaining an Offline Bible
     .resolves.toMatchObject({ok:true, state:'ready'});
 
   await page.evaluate(async () => {
-    const oldShell = await caches.open('god4-shell-compact-reader-27');
+    const oldShell = await caches.open('god4-shell-compact-reader-28');
     await oldShell.put('/', new Response('prior shell'));
     const registration = await navigator.serviceWorker.getRegistration();
     await registration.unregister();
@@ -132,7 +133,7 @@ test('new Reader shell replaces the prior shell while retaining an Offline Bible
     shellCacheName, 'god4-bible-candidates-v1', 'god4-bible-ready-v1'
   ]);
   const cachedShell = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-28');
+    const shell = await caches.open('god4-shell-compact-reader-29');
     const css = await (await shell.match('/css/components.css')).text();
     const html = await (await shell.match('/')).text();
     const reader = await (await shell.match('/js/bible/reader.js')).text();
@@ -297,7 +298,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-28');
+    const shell = await caches.open('god4-shell-compact-reader-29');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
       .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
@@ -353,7 +354,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     id:'web'
   })).resolves.toMatchObject({activeRevision:null, active:null});
   const postRemovalState = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-28');
+    const shell = await caches.open('god4-shell-compact-reader-29');
     const ready = await caches.open('god4-bible-ready-v1');
     return {
       shellHasApp:Boolean(await shell.match('/js/app.js')),
@@ -440,4 +441,86 @@ test('updates wait for explicit visitor action and the normal status is unobtrus
   await page.goto('/');
   await expect(page.locator('#pwaStatus')).toBeHidden();
   await expect(page.locator('#pwaUpdateButton')).toBeHidden();
+});
+
+test('first-ever Offline Bibles activation works offline after shell installation without online activation', async ({page, context}) => {
+  await page.addInitScript(() => {
+    window.IntersectionObserver = class { observe() {} unobserve() {} disconnect() {} };
+  });
+  await installAndControl(page);
+  expect(await page.evaluate(() => typeof OfflineBiblesRuntime)).toBe('undefined');
+  expect(await page.locator('.offline-bibles-row').count()).toBe(0);
+  const assets = await page.evaluate(async () => {
+    const cache = await caches.open('god4-shell-compact-reader-29');
+    return Promise.all(['/js/pwa/offline-translations-loader.js', '/js/pwa/offline-translations.js'].map(async key => Boolean(await cache.match(key))));
+  });
+  expect(assets).toEqual([true, true]);
+  await context.setOffline(true);
+  await page.reload({waitUntil:'domcontentloaded'});
+  expect(await page.evaluate(() => typeof OfflineBiblesRuntime)).toBe('undefined');
+  await page.evaluate(() => document.getElementById('offlineBiblesTrigger').click());
+  await expect(page.locator('.offline-bibles-row-status')).toHaveText(Array(8).fill('Not downloaded'));
+  await expect(page.locator('#offlineBiblesTitle')).toBeFocused();
+  const resource = await page.evaluate(() => {
+    const entry = performance.getEntriesByType('resource').find(value => value.name.endsWith('/js/pwa/offline-translations.js'));
+    return {workerStart:entry.workerStart, transfer:entry.transferSize};
+  });
+  expect(resource.workerStart).toBeGreaterThan(0);
+  expect(resource.transfer).toBe(0);
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#offlineBiblesTrigger')).toBeFocused();
+});
+
+test('active Offline Bibles waits for explicit shell 28 to 29 acceptance and preserves Bible/vendor caches', async ({page}) => {
+  test.setTimeout(60000);
+  const http = require('http');
+  let version = 28;
+  const types = {'.html':'text/html', '.js':'application/javascript', '.css':'text/css', '.json':'application/json', '.webmanifest':'application/manifest+json', '.png':'image/png'};
+  const server = http.createServer((request, response) => {
+    const pathname = new URL(request.url, 'http://localhost').pathname;
+    const relative = pathname === '/' ? '/index.html' : pathname === '/offline' ? '/offline.html' : pathname;
+    const file = path.resolve(root, '.' + relative);
+    if(!file.startsWith(root + path.sep)){ response.writeHead(403).end(); return; }
+    try {
+      let body = fs.readFileSync(file);
+      if(pathname === '/sw.js') body = Buffer.from(body.toString().replace('compact-reader-29', 'compact-reader-' + version));
+      if(translationPattern.test(pathname)) body = translationManifestGenerator.canonicalDeployBytes(body);
+      response.writeHead(200, {'content-type':types[path.extname(file)] || 'application/octet-stream', 'cache-control':'no-store'});
+      response.end(body);
+    } catch(error){ response.writeHead(404).end(); }
+  });
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  const origin = 'http://127.0.0.1:' + server.address().port;
+  try {
+    await page.addInitScript(() => {
+      window.IntersectionObserver = class { observe() {} unobserve() {} disconnect() {} };
+    });
+    await page.goto(origin);
+    await page.evaluate(() => navigator.serviceWorker.ready.then(() => true));
+    await page.reload({waitUntil:'domcontentloaded'});
+    expect(await page.evaluate(() => BibleTranslationLoader.retain('web'))).toMatchObject({ok:true});
+    await page.evaluate(() => fetch('/js/vendor/supabase-js-2.117.0.min.js').then(response => response.arrayBuffer()));
+    await expect.poll(() => page.evaluate(() => caches.keys())).toContain('god4-auth-vendor-supabase-js-2.117.0');
+    await page.evaluate(() => document.getElementById('offlineBiblesTrigger').click());
+    await expect(page.locator('[data-translation-id="web"] .offline-bibles-action')).toHaveText('Remove');
+    version = 29;
+    await page.evaluate(async () => { const registration = await navigator.serviceWorker.getRegistration(); await registration.update(); });
+    await expect(page.locator('#pwaStatusMessage')).toHaveText('A GOD4.us update is ready.');
+    await expect(page.locator('#offlineBiblesDialog')).toBeVisible();
+    expect(await page.evaluate(() => caches.keys())).toContain('god4-shell-compact-reader-28');
+    await page.keyboard.press('Escape');
+    await Promise.all([page.waitForEvent('load'), page.locator('#pwaUpdateButton').click()]);
+    await expect.poll(() => page.evaluate(() => caches.keys())).not.toContain('god4-shell-compact-reader-28');
+    const keys = await page.evaluate(() => caches.keys());
+    expect(keys).toContain('god4-shell-compact-reader-29');
+    expect(keys).toContain('god4-bible-ready-v1');
+    expect(keys).toContain('god4-auth-vendor-supabase-js-2.117.0');
+    await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'})).resolves.toMatchObject({ok:true, active:{id:'web'}});
+    expect(await page.evaluate(() => typeof OfflineBiblesRuntime)).toBe('undefined');
+    await page.evaluate(() => document.getElementById('offlineBiblesTrigger').click());
+    await expect(page.locator('[data-translation-id="web"] .offline-bibles-action')).toHaveText('Remove');
+  } finally {
+    await page.goto('about:blank');
+    await new Promise(resolve => server.close(resolve));
+  }
 });
