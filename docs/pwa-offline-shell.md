@@ -256,3 +256,19 @@ Compare, Word Study and Offline Bibles loading remain unchanged. Shell 30 waits
 for explicit visitor update acceptance and reload, preserving retained Bibles
 and vendor assets. No lazy runtime split, layout change or network-byte saving
 is introduced by this milestone.
+
+### Shell-30 follow-up: keep Plan keyboard focus visible
+
+The same unreleased shell-30 milestone corrects vertical focus clipping when
+preparation/failure feedback adds height above the day grid and after return
+focus. A guarded animation-frame check keeps the existing focused control and
+its outline inside the viewport below the existing sticky headers, using only
+the minimum necessary instant vertical scroll. Fully visible controls do not
+scroll. Existing focus/hover outline transitions are checked again when settled;
+canceled/superseded requests, translation changes, changed focus and
+inactive Plan views invalidate queued checks. Native focus targets, progress,
+history and Speech are unchanged. Shell remains compact-reader-30.
+
+The offline status banner can intercept pointer clicks on Back to Plan. Hosted
+acceptance reproduced this on parent main; native keyboard return works. This
+pre-existing banner/layout issue is outside the focus-visibility correction.

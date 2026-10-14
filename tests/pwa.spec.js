@@ -1,3 +1,4 @@
+const {expectPlanFocusVisible}=require('./plan-focus-helpers');
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
@@ -569,4 +570,32 @@ test('missing preferred offline translation does not complete a Plan day using f
   await expect(page.locator('#journeyStatus')).toContainText('Reading unavailable');
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
   expect(await page.evaluate(()=>UserData.journey.load().plans[0])).toEqual([]);
+});
+
+for(const width of [390,320])for(const retained of [true,false])test('offline Plan '+(retained?'cold return':'failure')+' keeps full focus visible at '+width+'x720',async({page,context})=>{
+  await page.setViewportSize({width,height:720});
+  await page.addInitScript(()=>{window.IntersectionObserver=class {observe(){} unobserve(){} disconnect(){}};});
+  await installAndControl(page);
+  if(retained) expect(await page.evaluate(()=>BibleTranslationLoader.retain('web'))).toMatchObject({ok:true});
+  await context.setOffline(true);
+  await page.reload({waitUntil:'domcontentloaded'});
+  await page.evaluate(()=>document.fonts.ready);
+  await page.getByRole('button',{name:'Plan',exact:true}).press('Enter');
+  await page.keyboard.press('Tab');
+  await expect(page.locator('#offlineBiblesTrigger')).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expectPlanFocusVisible(page,page.locator('[data-plan-day="1"]'));
+  await page.keyboard.press(width===390?'Enter':'Space');
+  if(retained){
+    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
+    // The pre-existing offline banner pointer interception is outside this patch.
+    await page.locator('#readerBackToPlan').press('Enter');
+    await expectPlanFocusVisible(page,page.locator('[data-plan-day="2"]'));
+    expect(await page.evaluate(()=>journeyState.plans[0])).toEqual([1]);
+  }else{
+    await expect(page.locator('#journeyStatus')).toContainText('Reading unavailable');
+    await expectPlanFocusVisible(page,page.locator('[data-plan-day="1"]'));
+    expect(await page.evaluate(()=>journeyState.plans[0])).toEqual([]);
+    expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
+  }
 });

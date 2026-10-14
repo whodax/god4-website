@@ -1,3 +1,4 @@
+const {expectPlanFocusVisible}=require('./plan-focus-helpers');
 const {test,expect}=require('@playwright/test');
 
 test.use({serviceWorkers:'block'});
@@ -236,16 +237,20 @@ for(const [width,key] of [[390,'Enter'],[320,'Space']])test('cold keyboard activ
   try{
     await plans(page);
     const day=page.locator('[data-plan-day="1"]');
-    await day.focus();await page.keyboard.press(key);
+    await page.keyboard.press('Tab');
+    await expect(page.locator('#offlineBiblesTrigger')).toBeFocused();
+    await page.keyboard.press('Tab');
+    await expectPlanFocusVisible(page,day);
+    await page.keyboard.press(key);
     await expect(page.locator('#journeyStatus')).toHaveText('Preparing reading…');
-    await expect(day).toBeFocused();
+    await expectPlanFocusVisible(page,day);
     await expect(page.locator('#journeyStatus')).toHaveAttribute('aria-live','polite');
     await expect(page.locator('#journeyStatus')).toHaveAttribute('aria-atomic','true');
     expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
     gate.release();
     await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
-    await page.locator('#readerBackToPlan').click();
-    await expect(page.locator('[data-plan-day="2"]')).toBeFocused();
+    await page.locator('#readerBackToPlan').press('Enter');
+    await expectPlanFocusVisible(page,page.locator('[data-plan-day="2"]'));
     await expect(page.locator('[data-plan-day="1"]')).toHaveAttribute('aria-pressed','true');
     await expect(page.locator('.plan-progress-bar')).toHaveAttribute('aria-valuenow','1');
     expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
