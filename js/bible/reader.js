@@ -883,6 +883,7 @@ function restoreReaderTabPosition(){
 function switchView(view, btn, positionOnReturn){
   var target = document.getElementById('view-' + view);
   if(!target || !btn) return;
+  if(view!=='plan' && typeof invalidatePendingPlanNavigation==='function') invalidatePendingPlanNavigation();
   if(view==='plan' && typeof activePlanReadingSession!=='undefined' && activePlanReadingSession){
     returnToPlanFromSession(false);
     return;
@@ -973,6 +974,7 @@ function changeTranslation(translationId){
 }
 async function applyReaderTranslation(translationId){
   if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return false;
+  if(typeof invalidatePendingPlanNavigation==='function') invalidatePendingPlanNavigation();
   stopSpeechForManualNavigation();
   if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();
   var previousTranslation = currentTranslation;
@@ -1052,6 +1054,7 @@ function renderPassage(bookKey, chapterNum){
 }
 
 function loadPassage(positionAfterRender){
+  if(positionAfterRender && typeof invalidatePendingPlanNavigation==='function') invalidatePendingPlanNavigation();
   // Manual navigation opts in; startup/reload rendering leaves native restoration alone.
   var bookSelect = document.getElementById('bookSelect');
   var chapterSelect = document.getElementById('chapterSelect');
@@ -1245,6 +1248,7 @@ document.addEventListener('keydown', function(event){
 }, true);
 
 function runWithBibleExperience(action){
+  if(typeof invalidatePendingPlanNavigation==='function') invalidatePendingPlanNavigation();
   if(typeof bibleExperienceReady !== 'undefined' && bibleExperienceReady){
     try { return Promise.resolve(action() !== false); }
     catch(error){ return Promise.resolve(false); }
@@ -1259,6 +1263,7 @@ function runWithBibleExperience(action){
 }
 
 function navigateReaderToPassage(bookId, chapter, verse){
+  if(typeof invalidatePendingPlanNavigation==='function') invalidatePendingPlanNavigation();
   var requestedVerse = Number.isInteger(verse) && verse > 0 ? verse : null;
   if(typeof BibleData === 'undefined' || !BibleData.getChapter(currentTranslation, bookId, chapter) ||
     (requestedVerse !== null && !BibleData.getVerse(currentTranslation, bookId, chapter, requestedVerse))) return Promise.resolve(false);
