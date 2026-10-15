@@ -332,16 +332,14 @@
     letter-spacing:0.02em;max-width:100%;overflow-wrap:anywhere;
   }
   .reader-back-to-plan{
-    position:fixed;right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));
-    z-index:40;min-height:40px;padding:8px 12px;border:1px solid var(--line);border-radius:2px;
+    display:block;width:fit-content;max-width:100%;margin:0 auto 22px;
+    min-height:40px;padding:8px 12px;border:1px solid var(--line);border-radius:2px;
     background:var(--vellum-card);color:var(--ink);box-shadow:var(--shadow);
     font:12px 'Inter','Inter Fallback',sans-serif;cursor:pointer;
   }
   .reader-back-to-plan:hover{border-color:var(--oxblood);color:var(--oxblood);}
   .reader-back-to-plan:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
   .reader-back-to-plan[hidden]{display:none;}
-  #view-reader.has-plan-session .reader-passage{padding-bottom:76px;}
-  #view-reader.reader-fullscreen.has-plan-session .reader-passage{padding-bottom:76px;}
 
   /* Selector */
   .selector-row{

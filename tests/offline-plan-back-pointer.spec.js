@@ -2,7 +2,7 @@ const {test, expect} = require('@playwright/test');
 
 test.use({hasTouch:true});
 
-async function openOfflinePlan(page, context, width){
+async function openOfflinePlan(page, context, width, offline=true){
   await page.setViewportSize({width,height:720});
   await page.addInitScript(()=>{window.IntersectionObserver=class {observe(){} unobserve(){} disconnect(){}};});
   await page.goto('/');
@@ -11,11 +11,11 @@ async function openOfflinePlan(page, context, width){
   expect(await page.evaluate(()=>BibleTranslationLoader.retain('web'))).toMatchObject({ok:true});
   await page.reload({waitUntil:'domcontentloaded'});
   await page.evaluate(()=>document.fonts.ready);
-  await context.setOffline(true);
+  if(offline) await context.setOffline(true);
   await page.getByRole('button',{name:'Plan',exact:true}).click();
   expect(await page.evaluate(()=>openJourneyDay(1))).toBe(true);
   await expect(page.locator('#readerBackToPlan')).toBeVisible();
-  await expect(page.locator('#pwaStatus')).toBeVisible();
+  if(offline) await expect(page.locator('#pwaStatus')).toBeVisible();
 }
 
 async function returnGeometry(page){
@@ -31,10 +31,20 @@ async function returnGeometry(page){
   });
 }
 
-for(const width of [390,320])for(const fullscreen of [false,true])for(const activation of ['mouse','touch']){
-  test('offline Plan return '+activation+' at '+width+(fullscreen?' fullscreen':' normal'),async({page,context})=>{
-    await openOfflinePlan(page,context,width);
+for(const width of [1280,390,320])for(const offline of [false,true])for(const fullscreen of [false,true])for(const activation of ['mouse','touch']){
+  test((offline?'offline':'online')+' Plan return '+activation+' at '+width+(fullscreen?' fullscreen':' normal'),async({page,context})=>{
+    await openOfflinePlan(page,context,width,offline);
     if(fullscreen) await page.locator('#fullscreenBtn').click();
+    const back=page.locator('#readerBackToPlan');
+    await expect(page.locator('#readerContent > .subtitle + #readerBackToPlan')).toBeVisible();
+    await expect(page.locator('#readerBackToPlan + .reader-chapter-caption')).toBeVisible();
+    await expect(back).toHaveCount(1);
+    const placement=await back.evaluate(element=>{
+      const b=element.getBoundingClientRect(), source=element.previousElementSibling.getBoundingClientRect();
+      return {position:getComputedStyle(element).position,belowSource:b.top>=source.bottom,
+        inViewport:b.top>=readerVisibleTop()&&b.bottom<=innerHeight};
+    });
+    expect(placement).toEqual({position:'static',belowSource:true,inViewport:true});
     const geometry=await returnGeometry(page);
     // Raw input reproduces actual hit testing, without keyboard or DOM click workarounds.
     const x=geometry.button.x+geometry.button.width/2, y=geometry.button.y+geometry.button.height/2;
@@ -42,16 +52,15 @@ for(const width of [390,320])for(const fullscreen of [false,true])for(const acti
     await expect(page.locator('#view-plan')).toHaveClass(/active/);
     expect(geometry.hit).toBe('readerBackToPlan');
     expect(geometry.overlap).toBe(false);
-    expect(geometry.button.top-geometry.status.bottom).toBeGreaterThanOrEqual(12);
     expect(geometry.status.top).toBeGreaterThanOrEqual(0);
     expect(geometry.overflow).toBe(false);
     await expect(page.locator('[data-plan-day="2"]')).toBeFocused();
     expect(await page.evaluate(()=>journeyState.plans[0])).toEqual([1]);
     await expect(page.locator('#view-reader')).not.toHaveClass(/reader-fullscreen/);
-    await expect(page.locator('#pwaStatus')).toBeVisible();
+    if(offline) await expect(page.locator('#pwaStatus')).toBeVisible();
     expect(await page.locator('#pwaStatus').evaluate(element=>getComputedStyle(element).bottom)).toBe('18px');
     await expect(page.locator('#pwaStatus')).toHaveAttribute('role','status');
-    await expect(page.locator('#pwaStatusMessage')).toContainText('You are offline');
+    if(offline) await expect(page.locator('#pwaStatusMessage')).toContainText('You are offline');
   });
 }
 
@@ -111,3 +120,26 @@ for(const width of [390,320]){
     expect(await page.locator('#pwaStatus').evaluate(element=>getComputedStyle(element).bottom)).toBe('18px');
   });
 }
+
+for(const width of [1280,390,320])test('ordinary Reader has no Plan return control at '+width,async({page,context})=>{
+  await openOfflinePlan(page,context,width,false);
+  await page.locator('#readerBackToPlan').click();
+  await page.getByRole('button',{name:'Reader',exact:true}).click();
+  await expect(page.locator('#readerBackToPlan')).toBeHidden();
+});
+
+test('passage and translation updates preserve the same return button and its focus',async({page,context})=>{
+  await openOfflinePlan(page,context,390,false);
+  await page.locator('#readerBackToPlan').focus();
+  await page.evaluate(()=>{
+    window.__returnButton=document.getElementById('readerBackToPlan');
+    renderPassage(currentBook,currentChapter);
+  });
+  await expect(page.locator('#readerBackToPlan')).toBeFocused();
+  await page.locator('[data-reader-action="next"]').first().click();
+  await page.locator('#readerTranslation').selectOption('asv');
+  await expect(page.locator('#readerContent > .subtitle + #readerBackToPlan')).toBeVisible();
+  expect(await page.evaluate(()=>document.getElementById('readerBackToPlan')===window.__returnButton)).toBe(true);
+  await page.locator('#readerBackToPlan').click();
+  await expect(page.locator('#view-plan')).toHaveClass(/active/);
+});

@@ -120,11 +120,12 @@ test('translation switch clears KJV selected 24 when ASV 24 has no text',async (
   await expect(page.locator('#verseSelect')).toHaveValue('');
   await expect(page.locator('#readerContent [data-verse-number="25"]')).toHaveCount(1);
 });
-test('all-empty chapter keeps heading but creates no buttons, word targets or destinations',async ({page}) => {
+test('all-empty chapter keeps heading but creates no verse buttons, word targets or destinations',async ({page}) => {
   await open(page,'web');
   await page.evaluate(() => {webLibrary.romans[16].verses=['',' \t']; renderPassage('romans',16); updateReaderControls();});
   await expect(page.locator('#readerContent h2')).toHaveText('Romans 16');
-  await expect(page.locator('#readerContent .reader-verse, #readerContent button, #readerContent [data-word-study-term]')).toHaveCount(0);
+  await expect(page.locator('#readerContent .reader-verse, #readerContent button:not(#readerBackToPlan), #readerContent [data-word-study-term]')).toHaveCount(0);
+  await expect(page.locator('#readerBackToPlan')).toBeHidden();
   await expect(page.locator('#verseSelect option')).toHaveCount(1);
   for(const button of await page.locator('[data-reader-action="next-verse"], [data-reader-action="previous-verse"]').all()) await expect(button).toBeDisabled();
 });
@@ -136,7 +137,7 @@ test('retained WEB renders without empty placeholders using cached Reader 26 off
   await page.evaluate(() => initializeBibleExperience());
   expect(await page.evaluate(() => BibleTranslationLoader.retain('web'))).toMatchObject({ok:true,state:'current'});
   const reader=await page.evaluate(async () => {
-    const shell=await caches.open('god4-shell-compact-reader-35');
+    const shell=await caches.open('god4-shell-compact-reader-36');
     return (await shell.match('/js/bible/reader.js')).text();
   });
   expect(reader).toContain('function isRenderableVerseText(text)');

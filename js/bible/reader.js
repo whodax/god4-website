@@ -1091,7 +1091,16 @@ function renderPassage(bookKey, chapterNum){
   }
   var container = document.getElementById('readerContent');
   if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();
-  if(container) container.innerHTML = html;
+  if(container){
+    // Reuse the native control so passage updates retain its listener and focus.
+    var backToPlan = document.getElementById('readerBackToPlan');
+    var restorePlanFocus = backToPlan && document.activeElement === backToPlan;
+    container.innerHTML = html;
+    if(backToPlan){
+      (container.querySelector('.subtitle') || container.querySelector('h2')).insertAdjacentElement('afterend', backToPlan);
+      if(restorePlanFocus) backToPlan.focus({preventScroll:true});
+    }
+  }
   populateVerses();
   if(Number.isInteger(currentVerse) && !isRenderableVerseText(data.verses[currentVerse - 1])) clearReaderVerseSelection();
   updateReaderReferenceDisplay();

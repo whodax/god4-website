@@ -321,6 +321,8 @@ function openJourneyDay(dayNumber){
       pushPlanReaderHistory();
       updatePlanSessionControl();
       updateReaderControls();
+      // Show the passage heading and in-flow return action together on Plan entry.
+      scrollReaderStartIntoView();
       if(!activePlanReadingSession.completionPending) completeJourneyDay(intent.planIndex,intent.dayNumber,localCalendarDate(new Date()));
       if(!journeyCycleIsComplete()) renderPlan();
       return true;

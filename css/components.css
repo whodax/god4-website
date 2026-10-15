@@ -114,11 +114,6 @@
     border-radius:10px;background:var(--vellum-card);box-shadow:var(--shadow);
     color:var(--ink);font:13px/1.45 'Inter','Inter Fallback',sans-serif;
   }
-  /* Keep the notice above the 40px Plan return control, with a 12px gap.
-     Match its safe-area inset in both normal and fullscreen Reader. */
-  body:has(.reader-back-to-plan:not([hidden])) .pwa-status{
-    bottom:calc(max(14px,env(safe-area-inset-bottom)) + 40px + 12px);
-  }
   .pwa-status[hidden]{display:none;}
   .pwa-status button{
     flex:none;border:1px solid var(--gold);border-radius:999px;background:transparent;color:var(--ink);
