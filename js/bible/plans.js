@@ -65,6 +65,11 @@ function updatePlanSessionControl(){
   var button=document.getElementById('readerBackToPlan'), reader=document.getElementById('view-reader');
   if(button) button.hidden=!(activePlanReadingSession && reader && reader.classList.contains('active'));
   if(reader) reader.classList.toggle('has-plan-session',Boolean(activePlanReadingSession));
+  var returnRow=button && button.closest('.reader-plan-return');
+  if(returnRow){
+    returnRow.hidden=button.hidden;
+    if(typeof refreshReaderStickyOffsets==='function') refreshReaderStickyOffsets();
+  }
 }
 
 function invalidatePendingPlanNavigation(){

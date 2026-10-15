@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
 
-test.use({hasTouch:true});
+test.use({hasTouch:true,reducedMotion:'reduce'});
 
 async function openOfflinePlan(page, context, width, offline=true){
   await page.setViewportSize({width,height:720});
@@ -36,15 +36,45 @@ for(const width of [1280,390,320])for(const offline of [false,true])for(const fu
     await openOfflinePlan(page,context,width,offline);
     if(fullscreen) await page.locator('#fullscreenBtn').click();
     const back=page.locator('#readerBackToPlan');
-    await expect(page.locator('#readerContent > .subtitle + #readerBackToPlan')).toBeVisible();
-    await expect(page.locator('#readerBackToPlan + .reader-chapter-caption')).toBeVisible();
+    await expect(page.locator('#readerContent > .subtitle + .reader-plan-return > #readerBackToPlan')).toBeVisible();
+    await expect(page.locator('.reader-plan-return + .reader-chapter-caption')).toBeVisible();
     await expect(back).toHaveCount(1);
     const placement=await back.evaluate(element=>{
-      const b=element.getBoundingClientRect(), source=element.previousElementSibling.getBoundingClientRect();
+      const b=element.getBoundingClientRect(), source=element.parentElement.previousElementSibling.getBoundingClientRect();
       return {position:getComputedStyle(element).position,belowSource:b.top>=source.bottom,
-        inViewport:b.top>=readerVisibleTop()&&b.bottom<=innerHeight};
+        inViewport:b.top>=readerVisibleTop()-readerPlanReturnHeight()&&b.bottom<=innerHeight};
     });
     expect(placement).toEqual({position:'static',belowSource:true,inViewport:true});
+    const initial=await back.boundingBox();
+    const initialScroll=await page.evaluate(()=>{
+      const shell=document.getElementById('view-reader');
+      return shell.classList.contains('reader-fullscreen')?shell.scrollTop:window.scrollY;
+    });
+    async function scrollAndCheck(){
+      await page.evaluate(()=>{
+        const shell=document.getElementById('view-reader'), passage=document.getElementById('readerContent');
+        const surface=shell.classList.contains('reader-fullscreen')?shell:window;
+        surface.scrollBy({top:passage.getBoundingClientRect().height*.6,behavior:'instant'});
+      });
+      await expect.poll(()=>back.evaluate(element=>{
+        const b=element.getBoundingClientRect(), row=element.parentElement.getBoundingClientRect();
+        const toolbar=document.querySelector('.reader-toolbar').getBoundingClientRect();
+        return row.top>=toolbar.bottom-1 && row.top<=toolbar.bottom+1 && b.bottom<=innerHeight &&
+          document.elementFromPoint(b.x+b.width/2,b.y+b.height/2)===element;
+      })).toBe(true);
+      await expect(page.locator('.reader-plan-return')).toHaveCSS('position','sticky');
+      await expect(back).toHaveCount(1);
+    }
+    await scrollAndCheck();
+    await page.evaluate(top=>{
+      const shell=document.getElementById('view-reader');
+      (shell.classList.contains('reader-fullscreen')?shell:window).scrollTo({top,behavior:'instant'});
+    },initialScroll);
+    await expect.poll(async()=>Math.abs((await back.boundingBox()).y-initial.y)).toBeLessThan(1);
+    await scrollAndCheck();
+    // Followed verses must be placed beneath the entire sticky stack.
+    await page.evaluate(()=>scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="20"]'),'instant'));
+    expect(await page.locator('#readerContent [data-verse-number="20"]').evaluate(element=>element.getBoundingClientRect().top>=readerVisibleTop())).toBe(true);
     const geometry=await returnGeometry(page);
     // Raw input reproduces actual hit testing, without keyboard or DOM click workarounds.
     const x=geometry.button.x+geometry.button.width/2, y=geometry.button.y+geometry.button.height/2;
@@ -126,6 +156,8 @@ for(const width of [1280,390,320])test('ordinary Reader has no Plan return contr
   await page.locator('#readerBackToPlan').click();
   await page.getByRole('button',{name:'Reader',exact:true}).click();
   await expect(page.locator('#readerBackToPlan')).toBeHidden();
+  await expect(page.locator('.reader-plan-return')).toBeHidden();
+  expect(await page.locator('.reader-plan-return').evaluate(element=>element.getBoundingClientRect().height)).toBe(0);
 });
 
 test('passage and translation updates preserve the same return button and its focus',async({page,context})=>{
@@ -138,7 +170,7 @@ test('passage and translation updates preserve the same return button and its fo
   await expect(page.locator('#readerBackToPlan')).toBeFocused();
   await page.locator('[data-reader-action="next"]').first().click();
   await page.locator('#readerTranslation').selectOption('asv');
-  await expect(page.locator('#readerContent > .subtitle + #readerBackToPlan')).toBeVisible();
+  await expect(page.locator('#readerContent > .subtitle + .reader-plan-return > #readerBackToPlan')).toBeVisible();
   expect(await page.evaluate(()=>document.getElementById('readerBackToPlan')===window.__returnButton)).toBe(true);
   await page.locator('#readerBackToPlan').click();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
