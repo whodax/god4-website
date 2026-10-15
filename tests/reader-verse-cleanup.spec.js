@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 
 async function openReader(page){
@@ -9,7 +10,7 @@ async function openReader(page){
 test('verses retain their numbers and Scripture tokens without speech controls or trailing artifacts', async ({page}) => {
   await openReader(page);
   for(const chapter of ['1', '2']){
-    await page.locator('#chapterSelect').selectOption(chapter);
+    await selectReaderOption(page.locator('#chapterSelect'),chapter);
     const verses = page.locator('#readerContent .reader-verse');
     await expect(page.locator('#readerContent .verse-speak, #readerContent [data-verse-speech]')).toHaveCount(0);
     await expect(page.locator('#readerContent').getByRole('button', {name:/read.*verse.*aloud/i})).toHaveCount(0);

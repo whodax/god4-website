@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
@@ -242,13 +243,13 @@ test('cloud works without a local voice inventory or SpeechSynthesis', async ({p
 
 test('chapter and book continuation share Reader navigation and manual navigation cancels old audio', async ({page}) => {
   await install(page); const requests = await mockEndpoint(page); await open(page); await more(page);
-  await page.locator('#bookSelect').selectOption('matthew'); await page.locator('#chapterSelect').selectOption('28');
-  await page.locator('#verseSelect').selectOption('20');
+  await selectReaderOption(page.locator('#bookSelect'),'matthew'); await selectReaderOption(page.locator('#chapterSelect'),'28');
+  await selectReaderOption(page.locator('#verseSelect'),'20');
   await page.locator('#readAloudPlay').click(); await countSources(page, 1);
   await end(page); await countSources(page, 2);
   await expect(page.locator('#readerContent h2')).toHaveText('Mark 1');
   expect(requests[1].text).toBe(await page.evaluate(() => BibleData.getVerse('web', 'mark', 1, 1).text));
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   expect(await page.evaluate(() => window.__audio.sources[1].stopped)).toBe(true);
   expect(await page.evaluate(() => BibleSpeech.getState())).toBe('idle');
 });
@@ -257,12 +258,12 @@ test('cloud Journey crosses the assigned chapters and stops at the exact daily b
   await install(page); const requests = await mockEndpoint(page); await open(page);
   await page.getByRole('button', {name:'Plan', exact:true}).click();
   await page.locator('#planDays [data-plan-day="5"]').click(); await more(page);
-  await page.locator('#verseSelect').selectOption('38');
+  await selectReaderOption(page.locator('#verseSelect'),'38');
   await page.locator('#readAloudPlay').click(); await countSources(page, 1);
   await end(page); await countSources(page, 2);
   await expect(page.locator('#readerContent h2')).toHaveText('Matthew 10');
   await page.locator('#readAloudPlay').click();
-  await page.locator('#verseSelect').selectOption('42');
+  await selectReaderOption(page.locator('#verseSelect'),'42');
   await page.locator('#readAloudPlay').click(); await countSources(page, 3);
   expect(requests[2].text).toBe(await page.evaluate(() => BibleData.getVerse('web', 'matthew', 10, 42).text));
   await end(page);
@@ -277,13 +278,13 @@ for(const width of [320, 375, 480]){
     await page.setViewportSize({width, height:800}); await install(page); await mockEndpoint(page); await open(page);
     for(const fullscreen of [false, true]){
       if(fullscreen) await page.locator('#fullscreenBtn').click();
-      const before = await page.locator('#readerContent').innerText();
+      const before = await page.locator('#readerContent .reader-verse').allTextContents();
       const play = page.locator('#readAloudPlay'); await play.focus(); await play.press('Enter');
       await countSources(page, fullscreen ? 2 : 1);
       await expect(play).toBeFocused();
       await expect(page.locator('#readerContent .verse-speak, #readerContent [data-verse-speech]')).toHaveCount(0);
       expect(await page.locator('#readerContent').ariaSnapshot()).not.toMatch(/read.*verse.*aloud/i);
-      expect(await page.locator('#readerContent').innerText()).toBe(before);
+      expect(await page.locator('#readerContent .reader-verse').allTextContents()).toEqual(before);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await play.press('Enter');
       const token = page.locator('#readerContent [data-word-study-term]').first(); await token.focus(); await token.press('Enter');
@@ -386,7 +387,7 @@ for(const action of ['Stop','Compare','translation'])test(action+' cancels cloud
 });
 
 for(const plan of [false,true])test('earlier Repeat during final verse preserves '+(plan?'Plan boundary':'next chapter'),async({page})=>{
-  await install(page);const requests=await mockEndpoint(page);await open(page);await page.locator('#verseSelect').selectOption('51');
+  await install(page);const requests=await mockEndpoint(page);await open(page);await selectReaderOption(page.locator('#verseSelect'),'51');
   if(plan)await page.evaluate(()=>{activePlanReadingSession={planPart:1,day:1,readings:[{bookId:'john',startChapter:1,endChapter:1}],start:{bookId:'john',chapter:1,verse:1},end:{bookId:'john',chapter:1,verse:51}}});
   await page.locator('#readAloudPlay').click();await countSources(page,1);await page.evaluate(()=>BibleSpeech.repeatVerse(1));await countSources(page,2);await end(page);
   if(plan){await expect(page.locator('#view-plan')).toHaveClass(/active/);expect(requests).toHaveLength(2);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle')}

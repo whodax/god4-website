@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const { test, expect } = require('@playwright/test');
 
 async function openReader(page){
@@ -42,16 +43,15 @@ test('fullscreen keeps the exact toolbar and passage nodes with unique Reader co
 test('fullscreen keeps navigation, translation, More, and verse controls in one shell', async ({ page }) => {
   await openReader(page);
   await page.locator('#fullscreenBtn').click();
-  await page.locator('#bookSelect').selectOption('psalms');
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#bookSelect'),'psalms');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await page.locator('#readerTranslation').selectOption('web');
   await expect(page.locator('#readerContent h2')).toHaveText('Psalms 2');
   await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
   const more = page.locator('#readerMoreTrigger');
-  await expect(more).toHaveAttribute('aria-expanded', 'false');
-  await page.locator('#verseSelect').selectOption('2');
+  await expect(more).toHaveAttribute('aria-expanded', 'true');
+  await selectReaderOption(page.locator('#verseSelect'),'2');
   await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-focused/);
-  await more.click();
   await expect(page.locator('#readerSecondaryControls')).toBeVisible();
   await expect(page.locator('[data-voice-command-button]')).toBeVisible();
   await page.locator('#readAloudSpeed').selectOption('1.25');
@@ -69,7 +69,7 @@ test('fullscreen traps focus, restores background attributes, and gives More fir
   await expect(button).toBeFocused();
   await expect(header).toHaveAttribute('inert', '');
   await expect(header).toHaveAttribute('aria-hidden', 'true');
-  const first = page.locator('#bookSelect');
+  const first = page.locator('#scripturePickerTrigger');
   const last = page.locator('#readerContent').getByRole('button').last();
   await first.focus();
   await first.press('Shift+Tab');
@@ -138,7 +138,7 @@ test('fullscreen toolbar stays on the single scroll surface at desktop, 480px, a
       const toolbar = shell.querySelector('.reader-toolbar');
       const a = shell.getBoundingClientRect();
       const b = toolbar.getBoundingClientRect();
-      const primaryRows = ['#bookSelect', '.reader-controls-top', '#verseSelect', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
+      const primaryRows = ['#scripturePickerTrigger', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
         .map(selector => Math.round(document.querySelector(selector).getBoundingClientRect().top));
       return {
         shellScroll:shell.scrollTop,
@@ -182,7 +182,7 @@ test('More remains directly below the fullscreen toolbar after deep shell scroll
       const shell = document.getElementById('view-reader');
       const toolbar = shell.querySelector('.reader-toolbar').getBoundingClientRect();
       const panel = document.getElementById('readerSecondaryControls').getBoundingClientRect();
-      const primaryBottom = Math.max(...['bookSelect', 'chapterSelect', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
+      const primaryBottom = Math.max(...['scripturePickerTrigger', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
         .map(id => document.getElementById(id).getBoundingClientRect().bottom));
       return {toolbarTop:toolbar.top, toolbarBottom:toolbar.bottom, panelTop:panel.top, panelBottom:panel.bottom,
         primaryBottom, shellTop:shell.getBoundingClientRect().top,
@@ -230,7 +230,7 @@ test('fullscreen Play and Stop share the resume cursor across a chapter boundary
   });
   await openReader(page);
   await page.locator('#readerMoreTrigger').click();
-  await page.locator('#verseSelect').selectOption('51');
+  await selectReaderOption(page.locator('#verseSelect'),'51');
   await page.locator('#readerMoreTrigger').click();
   await page.locator('#readAloudPlay').click();
   await page.locator('#fullscreenBtn').click();

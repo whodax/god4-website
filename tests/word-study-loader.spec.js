@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
@@ -128,7 +129,7 @@ for(let stage=0;stage<dependencies.length;stage++)for(const failure of ['network
 for(const action of ['chapter','translation','rerender','detached','context changed','Close','Escape','Compare'])test(`${action} during readiness cancels replay`,async({page})=>{
   const release=await gate(page);await open(page);await word(page).click();
   await expect(page.locator('#wordStudyStatus')).toHaveText(/Loading Word Study/);
-  if(action==='chapter')await page.locator('#chapterSelect').selectOption('2');
+  if(action==='chapter')await selectReaderOption(page.locator('#chapterSelect'),'2');
   if(action==='translation')await page.locator('#readerTranslation').selectOption('asv');
   if(action==='rerender')await page.evaluate(()=>renderPassage(currentBook,currentChapter));
   if(action==='detached')await word(page).evaluate(e=>e.remove());
@@ -192,7 +193,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-    const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-32')).keys()).map(r=>new URL(r.url).pathname));
+    const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-34')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');

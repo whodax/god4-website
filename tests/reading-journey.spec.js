@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({page}) => {
@@ -252,7 +253,7 @@ test('manual navigation outside the assigned chapter cancels auto-return and scr
   await page.evaluate(()=>document.getElementById('view-reader').scrollTo(0,document.getElementById('view-reader').scrollHeight));
   await page.waitForTimeout(50);
   expect(await page.evaluate(()=>activePlanReadingSession.day)).toBe(5);
-  await page.locator('#chapterSelect').selectOption('11');
+  await selectReaderOption(page.locator('#chapterSelect'),'11');
   await expect(page.locator('#readerContent h2')).toHaveText('Matthew 11');
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
   await expect(page.locator('#readerBackToPlan')).toBeHidden();
@@ -315,8 +316,8 @@ test('ordinary Reader read-aloud continues beyond a chapter when no Plan session
   });
   await page.reload();
   await page.getByRole('button',{name:'Reader',exact:true}).click();
-  await page.locator('#bookSelect').selectOption('matthew');
-  await page.locator('#chapterSelect').selectOption('9');
+  await selectReaderOption(page.locator('#bookSelect'),'matthew');
+  await selectReaderOption(page.locator('#chapterSelect'),'9');
   await page.locator('#readAloudPlay').click();
   expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
   await expect(page.locator('#readAloudStatus')).toHaveText(/Using .*device voice/);

@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 
 const phoneVoices = [
@@ -86,7 +87,7 @@ test('Female persists through Stop, next chapter, Repeat, fullscreen, verse spee
   await installSpeech(page, phoneVoices);
   await chooseVoice(page, 'female');
   const lastVerse = await page.evaluate(() => BibleData.getChapter('web', 'john', 1).verses.length);
-  await page.locator('#verseSelect').selectOption(String(lastVerse));
+  await selectReaderOption(page.locator('#verseSelect'),String(lastVerse));
   await page.locator('#readAloudPlay').click();
   await page.locator('#readAloudPlay').click();
   await page.locator('#readAloudPlay').click();
