@@ -6,7 +6,7 @@ const translationManifestGenerator = require('../tools/generate-translation-mani
 
 const root = path.resolve(__dirname, '..');
 const translationPattern = /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/;
-const shellCacheName = 'god4-shell-compact-reader-34';
+const shellCacheName = 'god4-shell-compact-reader-37';
 
 async function installAndControl(page) {
   await page.goto('/');
@@ -134,7 +134,7 @@ test('new Reader shell replaces the prior shell while retaining an Offline Bible
     shellCacheName, 'god4-bible-candidates-v1', 'god4-bible-ready-v1'
   ]);
   const cachedShell = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-34');
+    const shell = await caches.open('god4-shell-compact-reader-37');
     const css = await (await shell.match('/css/components.css')).text();
     const html = await (await shell.match('/')).text();
     const reader = await (await shell.match('/js/bible/reader.js')).text();
@@ -299,7 +299,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-34');
+    const shell = await caches.open('god4-shell-compact-reader-37');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
       .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
@@ -355,7 +355,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     id:'web'
   })).resolves.toMatchObject({activeRevision:null, active:null});
   const postRemovalState = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-34');
+    const shell = await caches.open('god4-shell-compact-reader-37');
     const ready = await caches.open('god4-bible-ready-v1');
     return {
       shellHasApp:Boolean(await shell.match('/js/app.js')),
@@ -452,7 +452,7 @@ test('first-ever Offline Bibles activation works offline after shell installatio
   expect(await page.evaluate(() => typeof OfflineBiblesRuntime)).toBe('undefined');
   expect(await page.locator('.offline-bibles-row').count()).toBe(0);
   const assets = await page.evaluate(async () => {
-    const cache = await caches.open('god4-shell-compact-reader-34');
+    const cache = await caches.open('god4-shell-compact-reader-37');
     return Promise.all(['/js/pwa/offline-translations-loader.js', '/js/pwa/offline-translations.js'].map(async key => Boolean(await cache.match(key))));
   });
   expect(assets).toEqual([true, true]);
@@ -472,11 +472,11 @@ test('first-ever Offline Bibles activation works offline after shell installatio
   await expect(page.locator('#offlineBiblesTrigger')).toBeFocused();
 });
 
-test('active Offline Bibles waits for explicit shell 33 to 34 acceptance and preserves Bible/vendor caches', async ({page}) => {
+test('active Offline Bibles waits for explicit shell 36 to 37 acceptance and preserves Bible/vendor caches', async ({page}) => {
   test.setTimeout(60000);
   const http = require('http');
-  let version = 33;
-  const priorShellSource = require('child_process').execFileSync('git', ['show', 'b05cf07:sw.js'], {encoding:'utf8'});
+  let version = 36;
+  const priorShellSource = require('child_process').execFileSync('git', ['show', '9860c15:sw.js'], {encoding:'utf8'});
   const types = {'.html':'text/html', '.js':'application/javascript', '.css':'text/css', '.json':'application/json', '.webmanifest':'application/manifest+json', '.png':'image/png'};
   const server = http.createServer((request, response) => {
     const pathname = new URL(request.url, 'http://localhost').pathname;
@@ -485,7 +485,7 @@ test('active Offline Bibles waits for explicit shell 33 to 34 acceptance and pre
     if(!file.startsWith(root + path.sep)){ response.writeHead(403).end(); return; }
     try {
       let body = fs.readFileSync(file);
-      if(pathname === '/sw.js') body = Buffer.from(version === 33 ? priorShellSource : body);
+      if(pathname === '/sw.js') body = Buffer.from(version === 36 ? priorShellSource : body);
       if(translationPattern.test(pathname)) body = translationManifestGenerator.canonicalDeployBytes(body);
       response.writeHead(200, {'content-type':types[path.extname(file)] || 'application/octet-stream', 'cache-control':'no-store'});
       response.end(body);
@@ -505,18 +505,27 @@ test('active Offline Bibles waits for explicit shell 33 to 34 acceptance and pre
     await expect.poll(() => page.evaluate(() => caches.keys())).toContain('god4-auth-vendor-supabase-js-2.117.0');
     await page.evaluate(() => document.getElementById('offlineBiblesTrigger').click());
     await expect(page.locator('[data-translation-id="web"] .offline-bibles-action')).toHaveText('Remove');
-    version = 34;
+    version = 37;
     await page.evaluate(async () => { const registration = await navigator.serviceWorker.getRegistration(); await registration.update(); });
     await expect(page.locator('#pwaStatusMessage')).toHaveText('A GOD4.us update is ready.');
     await expect(page.locator('#offlineBiblesDialog')).toBeVisible();
-    expect(await page.evaluate(() => caches.keys())).toContain('god4-shell-compact-reader-33');
-    expect(await page.evaluate(async () => (await (await caches.open('god4-shell-compact-reader-33')).keys()).map(request => new URL(request.url).pathname))).toContain('/js/bible/scripture-picker.js');
+    expect(await page.evaluate(() => caches.keys())).toContain('god4-shell-compact-reader-36');
+    expect(await page.evaluate(async () => (await (await caches.open('god4-shell-compact-reader-36')).keys()).map(request => new URL(request.url).pathname))).toContain('/js/bible/scripture-picker.js');
     await page.keyboard.press('Escape');
+    // The actionable update notice must also coexist with the Plan return control.
+    await page.setViewportSize({width:320,height:720});
+    await page.getByRole('button',{name:'Plan',exact:true}).click();
+    expect(await page.evaluate(()=>openJourneyDay(1))).toBe(true);
+    await page.evaluate(()=>scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="20"]'),'instant'));
+    await expect(page.locator('#readerBackToPlan')).toBeInViewport();
+    await page.locator('#readerBackToPlan').click();
+    await expect(page.locator('#view-plan')).toHaveClass(/active/);
+    await expect(page.locator('#pwaUpdateButton')).toBeVisible();
     await Promise.all([page.waitForEvent('load'), page.locator('#pwaUpdateButton').click()]);
-    await expect.poll(() => page.evaluate(() => caches.keys())).not.toContain('god4-shell-compact-reader-33');
+    await expect.poll(() => page.evaluate(() => caches.keys())).not.toContain('god4-shell-compact-reader-36');
     const keys = await page.evaluate(() => caches.keys());
-    expect(keys).toContain('god4-shell-compact-reader-34');
-    expect(await page.evaluate(async () => (await (await caches.open('god4-shell-compact-reader-34')).keys()).map(request => new URL(request.url).pathname))).toContain('/js/bible/scripture-picker.js');
+    expect(keys).toContain('god4-shell-compact-reader-37');
+    expect(await page.evaluate(async () => (await (await caches.open('god4-shell-compact-reader-37')).keys()).map(request => new URL(request.url).pathname))).toContain('/js/bible/scripture-picker.js');
     expect(keys).toContain('god4-bible-ready-v1');
     expect(keys).toContain('god4-auth-vendor-supabase-js-2.117.0');
     await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'})).resolves.toMatchObject({ok:true, active:{id:'web'}});
@@ -546,9 +555,7 @@ for(const retained of [false,true])test('first offline Plan day '+(retained?'use
     await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
     expect(await page.evaluate(()=>activePlanReadingSession)).toMatchObject({day:1,translationId:'web'});
     expect(await page.evaluate(()=>UserData.journey.load().plans[0])).toEqual([1]);
-    // The existing offline banner overlaps the fixed return control; native keyboard
-    // activation verifies offline return without changing the unrelated banner layout.
-    await page.locator('#readerBackToPlan').press('Enter');
+    await page.locator('#readerBackToPlan').click();
     await expect(page.locator('[data-plan-day="2"]')).toBeFocused();
   }else{
     await expect(page.locator('#view-plan')).toHaveClass(/active/);
@@ -591,8 +598,7 @@ for(const width of [390,320])for(const retained of [true,false])test('offline Pl
   await page.keyboard.press(width===390?'Enter':'Space');
   if(retained){
     await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
-    // The pre-existing offline banner pointer interception is outside this patch.
-    await page.locator('#readerBackToPlan').press('Enter');
+    await page.locator('#readerBackToPlan').press(width===390?'Enter':'Space');
     await expectPlanFocusVisible(page,page.locator('[data-plan-day="2"]'));
     expect(await page.evaluate(()=>journeyState.plans[0])).toEqual([1]);
   }else{

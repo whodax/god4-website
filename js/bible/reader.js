@@ -255,11 +255,16 @@ function applyReaderVerseSelection(verseNumber, shouldFocus){
   return true;
 }
 
+function readerPlanReturnHeight(){
+  var row = document.querySelector('#view-reader.active .reader-plan-return:not([hidden])');
+  return row ? row.getBoundingClientRect().height : 0;
+}
+
 function readerVisibleTop(){
   var view = document.getElementById('view-reader');
   if(view && view.classList.contains('reader-fullscreen')){
     var fullscreenToolbar = view.querySelector('.reader-toolbar');
-    return fullscreenToolbar ? fullscreenToolbar.getBoundingClientRect().bottom : 0;
+    return (fullscreenToolbar ? fullscreenToolbar.getBoundingClientRect().bottom : 0) + readerPlanReturnHeight();
   }
   var top = 0;
   var siteNav = document.querySelector('nav');
@@ -277,7 +282,7 @@ function readerVisibleTop(){
     var stickyTop = parseFloat(getComputedStyle(toolbar).top);
     if(Number.isFinite(stickyTop)) top = Math.max(top, stickyTop + toolbar.getBoundingClientRect().height);
   }
-  return top;
+  return top + readerPlanReturnHeight();
 }
 
 function scrollReaderTargetIntoView(target, behavior){
@@ -303,7 +308,7 @@ function scrollReaderStartIntoView(){
   var start = document.querySelector('#readerContent h2');
   if(!view || !view.classList.contains('active') || !start || !start.getClientRects().length) return;
   // Geometry reads after render/state updates flush layout without a delayed callback.
-  var offset = start.getBoundingClientRect().top - (readerVisibleTop() + 16);
+  var offset = start.getBoundingClientRect().top - (readerVisibleTop() - readerPlanReturnHeight() + 16);
   if(Math.abs(offset) < 1) return;
   var surface = view.classList.contains('reader-fullscreen') ? view : window;
   surface.scrollBy({top:offset, behavior:'instant'});
@@ -328,6 +333,7 @@ function initializeReaderStickyOffsets(){
     var toolbarHeight = toolbar.getBoundingClientRect().height;
     style.setProperty('--reader-tabs-height', (stickyTabs ? tabs.getBoundingClientRect().height : 0) + 'px');
     style.setProperty('--reader-toolbar-height', toolbarHeight + 'px');
+    style.setProperty('--reader-plan-return-height', readerPlanReturnHeight() + 'px');
     style.setProperty('--word-study-header-height', (studyHeader ? studyHeader.getBoundingClientRect().height : 0) + 'px');
     // Fullscreen sticky insets include the scroll container's existing padding.
     style.setProperty('--reader-scroll-padding', getComputedStyle(view).paddingTop);
@@ -1084,6 +1090,7 @@ function renderPassage(bookKey, chapterNum){
   var bookName = escapeHtml(data.bookName);
   var html = '<h2 data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '">' + bookName + ' ' + escapeHtml(chapterNum) + '</h2>';
   if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
+  html += '<div class="reader-plan-return" hidden></div>';
   html += '<div class="reader-chapter-caption">' + escapeHtml(data.title) + '</div>';
   for(var i = 0; i < data.verses.length; i++){
     if(!isRenderableVerseText(data.verses[i])) continue;
@@ -1091,7 +1098,18 @@ function renderPassage(bookKey, chapterNum){
   }
   var container = document.getElementById('readerContent');
   if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();
-  if(container) container.innerHTML = html;
+  if(container){
+    // Reuse the native control so passage updates retain its listener and focus.
+    var backToPlan = document.getElementById('readerBackToPlan');
+    var restorePlanFocus = backToPlan && document.activeElement === backToPlan;
+    container.innerHTML = html;
+    if(backToPlan){
+      var returnRow = container.querySelector('.reader-plan-return');
+      returnRow.appendChild(backToPlan);
+      returnRow.hidden = backToPlan.hidden;
+      if(restorePlanFocus) backToPlan.focus({preventScroll:true});
+    }
+  }
   populateVerses();
   if(Number.isInteger(currentVerse) && !isRenderableVerseText(data.verses[currentVerse - 1])) clearReaderVerseSelection();
   updateReaderReferenceDisplay();
