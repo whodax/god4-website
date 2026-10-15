@@ -5,7 +5,7 @@ async function install(page,options={}){
     Object.defineProperty(window,'SpeechSynthesisUtterance',{configurable:true,value:function(text){this.text=text;}});
     Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{
       getVoices(){return [{name:'Microsoft David',lang:'en-US',localService:true},{name:'Microsoft Zira',lang:'en-US',localService:true}];},addEventListener(){},
-      speak(u){window.__highlight.utterances.push(u);if(!options.deferStart)u.onstart?.();},pause(){},resume(){},cancel(){}
+      speak(u){u.active=true;window.__highlight.utterances.push(u);if(!options.deferStart)u.onstart?.();},pause(){},resume(){},cancel(){window.__highlight.utterances.forEach(u=>{u.canceled=true;u.active=false;});}
     }});
     class Context{
       constructor(){this.state='running';this.destination={};}
@@ -124,4 +124,82 @@ test('Plan final verse clears speech state and returns to Plan without stale cal
   await page.evaluate(()=>navigateReaderToPassage('john',3,36));await page.locator('#readAloudPlay').click();await active(page,36);
   await advance(page);await expect(page.locator('#view-plan')).toHaveClass(/active/);await active(page,null);
   await page.evaluate(()=>window.__highlight.utterances[0].onstart());await active(page,null);
+});
+
+for(const cloud of [false,true])for(const direction of ['next','previous'])for(const single of [false,true]){
+  test(`${direction} verse replaces active ${cloud?'cloud':'native'} speech and preserves ${single?'single-verse':'chapter'} mode`,async({page})=>{
+    await install(page,{cloud});
+    await page.evaluate(async()=>{await changeTranslation('kjv');BibleSpeech.setVoice('female');BibleSpeech.setSpeed(1.25);});
+    if(single)await page.evaluate(()=>readVerseAloud(16));else await page.locator('#readAloudPlay').click();
+    await active(page,16);
+    await page.evaluate(cloud=>{
+      window.__obsoleteEnd=cloud?window.__highlight.sources.at(-1).onended:window.__highlight.utterances.at(-1).onend;
+      window.__obsoleteStart=cloud?null:window.__highlight.utterances.at(-1).onstart;
+      window.__obsoleteError=cloud?null:window.__highlight.utterances.at(-1).onerror;
+    },cloud);
+    await page.locator('#readerMoreTrigger').click();
+    const control=page.locator(`[data-reader-action="${direction}-verse"]`),target=direction==='next'?17:15;
+    await control.click();await active(page,target);
+    await expect(control).toBeFocused();
+    await expect(page.locator('#verseSelect')).toHaveValue(String(target));
+    expect(await page.evaluate(()=>({voice:BibleSpeech.getVoiceProfiles().find(p=>p.id===BibleSpeech.getResolvedVoiceInfo().preference).id,speed:BibleSpeech.getSpeed(),translation:currentTranslation,chapter:BibleSpeech.getPlaybackSnapshot().isChapter}))).toEqual({voice:'female',speed:1.25,translation:'kjv',chapter:!single});
+    await page.evaluate(()=>{window.__obsoleteStart?.();window.__obsoleteEnd?.();window.__obsoleteError?.();});
+    await active(page,target);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
+    if(cloud)expect(await page.evaluate(()=>window.__highlight.sources[0].stopped)).toBe(true);
+    await advance(page,cloud);
+    if(single){await active(page,null);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');}
+    else await active(page,target+1);
+  });
+}
+for(const state of ['idle','paused'])for(const direction of ['next','previous']){
+  test(`${direction} verse while ${state} does not start playback`,async({page})=>{
+    await install(page);
+    if(state==='paused'){await page.locator('#readAloudPlay').click();await active(page,16);await page.evaluate(()=>pauseReader());}
+    const before=await page.evaluate(()=>window.__highlight.utterances.length);
+    await page.locator('#readerMoreTrigger').click();await page.locator(`[data-reader-action="${direction}-verse"]`).click();
+    await expect(page.locator('#verseSelect')).toHaveValue(direction==='next'?'17':'15');
+    await active(page,null);expect(await page.evaluate(()=>window.__highlight.utterances.length)).toBe(before);
+    expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+  });
+}
+test('verse navigation follows the playing cursor after progression instead of the old selection',async({page})=>{
+  await install(page);await page.locator('#readAloudPlay').click();await active(page,16);
+  await advance(page);await advance(page);await active(page,18);
+  await expect(page.locator('#verseSelect')).toHaveValue('16');
+  await page.locator('#readerMoreTrigger').click();await page.locator('[data-reader-action="next-verse"]').click();await active(page,19);
+  await page.locator('[data-reader-action="previous-verse"]').click();await active(page,18);
+});
+test('rapid native previous/next replaces each session without overlapping speech or stale highlights',async({page})=>{
+  await install(page);await page.locator('#readAloudPlay').click();await active(page,16);
+  await page.evaluate(()=>{nextReaderVerse();nextReaderVerse();previousReaderVerse();nextReaderVerse();});await active(page,18);
+  expect(await page.evaluate(()=>window.__highlight.utterances.filter(u=>u.active).length)).toBe(1);
+  await page.evaluate(()=>window.__highlight.utterances.slice(0,-1).forEach(u=>{u.onstart();u.onend();u.onerror();}));
+  await active(page,18);expect(await page.evaluate(()=>window.__highlight.utterances.length)).toBe(5);
+});
+test('rapid navigation during cloud decode permits only the final replacement to play',async({page})=>{
+  await install(page,{cloud:true,deferDecode:true});await page.locator('#readAloudPlay').click();
+  await expect.poll(()=>page.evaluate(()=>window.__highlight.decodes.length)).toBe(1);
+  await page.evaluate(()=>{nextReaderVerse();});await expect.poll(()=>page.evaluate(()=>window.__highlight.decodes.length)).toBe(2);
+  await page.evaluate(()=>{nextReaderVerse();});await expect.poll(()=>page.evaluate(()=>window.__highlight.decodes.length)).toBe(3);
+  await page.evaluate(()=>{previousReaderVerse();});await expect.poll(()=>page.evaluate(()=>window.__highlight.decodes.length)).toBe(4);
+  await page.evaluate(()=>window.__highlight.decodes[3]());await active(page,17);
+  await page.evaluate(async()=>{window.__highlight.decodes.slice(0,3).forEach(release=>release());await Promise.resolve();});
+  await active(page,17);expect(await page.evaluate(()=>window.__highlight.sources.filter(s=>s.started&&!s.stopped).length)).toBe(1);
+});
+test('active verse navigation skips empty coordinates and respects chapter edges',async({page})=>{
+  await install(page);await page.evaluate(()=>{webLibrary.john[3].verses[16]='';});
+  await page.locator('#readAloudPlay').click();await active(page,16);
+  await page.evaluate(()=>nextReaderVerse());await active(page,18);
+  await page.evaluate(()=>previousReaderVerse());await active(page,16);
+  await page.evaluate(()=>{stopReader();clearReaderVerseSelection();playReader(1);});await active(page,1);
+  await page.locator('#readerMoreTrigger').click();await expect(page.locator('[data-reader-action="previous-verse"]')).toBeDisabled();
+  const before=await page.evaluate(()=>window.__highlight.utterances.length);
+  await page.evaluate(()=>previousReaderVerse());await active(page,1);expect(await page.evaluate(()=>window.__highlight.utterances.length)).toBe(before);
+});
+test('offline fullscreen verse replacement preserves local playback and Reader focus',async({page,context})=>{
+  await install(page);await context.setOffline(true);await page.locator('#fullscreenBtn').click();
+  await page.locator('#readAloudPlay').click();await active(page,16);
+  await page.locator('#readerMoreTrigger').click();await page.locator('[data-reader-action="next-verse"]').click();await active(page,17);
+  await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
+  await expect(page.locator('[data-reader-action="next-verse"]')).toBeFocused();
 });
