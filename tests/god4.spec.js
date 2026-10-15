@@ -2906,7 +2906,7 @@ test('Reading Plan navigates to readings and preserves completion across reloads
   await expect(page.locator('#planDone')).toHaveText('1 of 30 days completed');
   await expect(page.locator('#planPct')).toHaveText('3%');
   await expect(page.locator('#view-reader')).toHaveClass(/active/);
-  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1:1');
   await expect(page.locator('#readerContent [data-verse-number="1"]')).toBeFocused();
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
   await page.reload();

@@ -57,7 +57,23 @@ function setVoiceStatus(message){
   document.querySelectorAll('.voice-status').forEach(function(status){ status.textContent = message; });
 }
 
+function updateReaderReferenceDisplay(){
+  var passage = document.getElementById('readerContent');
+  var heading = passage && passage.querySelector('h2');
+  if(!heading) return;
+  var book = heading.getAttribute('data-book-id');
+  var chapter = Number(heading.getAttribute('data-chapter'));
+  var spoken = passage.querySelector('.verse-spoken');
+  var verse = spoken ? Number(spoken.getAttribute('data-verse-number')) : currentVerse;
+  var selected = Number.isInteger(verse) && passage.querySelector('[data-verse-number="' + verse + '"]');
+  var reference = heading.getAttribute('data-book-name') + ' ' + chapter;
+  if(book === currentBook && chapter === currentChapter && selected) reference += ':' + verse;
+  // Reuse the visible heading; playback never changes saved selection or focus.
+  if(heading.textContent !== reference) heading.textContent = reference;
+}
+
 function updateReaderControls(){
+  updateReaderReferenceDisplay();
   var chapterCount = typeof BibleData === 'undefined' ? 0 : BibleData.getChapterCount(currentTranslation, currentBook);
   document.querySelectorAll('[data-reader-action="previous"]').forEach(function(button){
     button.disabled = currentChapter <= 1;
@@ -1059,7 +1075,7 @@ function renderPassage(bookKey, chapterNum){
   var data = BibleData.getChapter(currentTranslation, bookKey, chapterNum);
   if(!data) return;
   var bookName = escapeHtml(data.bookName);
-  var html = '<h2>' + bookName + ' ' + escapeHtml(chapterNum) + '</h2>';
+  var html = '<h2 data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '">' + bookName + ' ' + escapeHtml(chapterNum) + '</h2>';
   if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
   html += '<div class="reader-chapter-caption">' + escapeHtml(data.title) + '</div>';
   for(var i = 0; i < data.verses.length; i++){
@@ -1071,6 +1087,7 @@ function renderPassage(bookKey, chapterNum){
   if(container) container.innerHTML = html;
   populateVerses();
   if(Number.isInteger(currentVerse) && !isRenderableVerseText(data.verses[currentVerse - 1])) clearReaderVerseSelection();
+  updateReaderReferenceDisplay();
 }
 
 function loadPassage(positionAfterRender){

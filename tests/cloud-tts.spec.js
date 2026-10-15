@@ -246,7 +246,7 @@ test('chapter and book continuation share Reader navigation and manual navigatio
   await page.locator('#verseSelect').selectOption('20');
   await page.locator('#readAloudPlay').click(); await countSources(page, 1);
   await end(page); await countSources(page, 2);
-  await expect(page.locator('#readerContent h2')).toHaveText('Mark 1');
+  await expect(page.locator('#readerContent h2')).toHaveText('Mark 1:1');
   expect(requests[1].text).toBe(await page.evaluate(() => BibleData.getVerse('web', 'mark', 1, 1).text));
   await page.locator('#chapterSelect').selectOption('2');
   expect(await page.evaluate(() => window.__audio.sources[1].stopped)).toBe(true);
@@ -260,7 +260,7 @@ test('cloud Journey crosses the assigned chapters and stops at the exact daily b
   await page.locator('#verseSelect').selectOption('38');
   await page.locator('#readAloudPlay').click(); await countSources(page, 1);
   await end(page); await countSources(page, 2);
-  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 10');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 10:1');
   await page.locator('#readAloudPlay').click();
   await page.locator('#verseSelect').selectOption('42');
   await page.locator('#readAloudPlay').click(); await countSources(page, 3);
@@ -277,13 +277,13 @@ for(const width of [320, 375, 480]){
     await page.setViewportSize({width, height:800}); await install(page); await mockEndpoint(page); await open(page);
     for(const fullscreen of [false, true]){
       if(fullscreen) await page.locator('#fullscreenBtn').click();
-      const before = await page.locator('#readerContent').innerText();
+      const before = await page.locator('#readerContent .reader-verse').allTextContents();
       const play = page.locator('#readAloudPlay'); await play.focus(); await play.press('Enter');
       await countSources(page, fullscreen ? 2 : 1);
       await expect(play).toBeFocused();
       await expect(page.locator('#readerContent .verse-speak, #readerContent [data-verse-speech]')).toHaveCount(0);
       expect(await page.locator('#readerContent').ariaSnapshot()).not.toMatch(/read.*verse.*aloud/i);
-      expect(await page.locator('#readerContent').innerText()).toBe(before);
+      expect(await page.locator('#readerContent .reader-verse').allTextContents()).toEqual(before);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await play.press('Enter');
       const token = page.locator('#readerContent [data-word-study-term]').first(); await token.focus(); await token.press('Enter');
@@ -390,7 +390,7 @@ for(const plan of [false,true])test('earlier Repeat during final verse preserves
   if(plan)await page.evaluate(()=>{activePlanReadingSession={planPart:1,day:1,readings:[{bookId:'john',startChapter:1,endChapter:1}],start:{bookId:'john',chapter:1,verse:1},end:{bookId:'john',chapter:1,verse:51}}});
   await page.locator('#readAloudPlay').click();await countSources(page,1);await page.evaluate(()=>BibleSpeech.repeatVerse(1));await countSources(page,2);await end(page);
   if(plan){await expect(page.locator('#view-plan')).toHaveClass(/active/);expect(requests).toHaveLength(2);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle')}
-  else{await countSources(page,3);await expect(page.locator('#readerContent h2')).toHaveText('John 2');expect(requests[2].text).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',2,1).text))}
+  else{await countSources(page,3);await expect(page.locator('#readerContent h2')).toHaveText('John 2:1');expect(requests[2].text).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',2,1).text))}
 });
 
 test('explicit Play authorizes audio before delayed Bible readiness, and Stop cancels replay',async({page})=>{

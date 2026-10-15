@@ -23,7 +23,7 @@ test('current book, searchable books, canonical chapter and verse grids, direct 
   await expect(page.locator('[data-picker-action="verse"]')).toHaveCount(12);
   await page.locator('[data-picker-action="verse"][data-value="5"]').click();
   await expect(page.locator('#scripturePicker')).not.toBeVisible();
-  await expect(page.locator('#readerContent h2')).toHaveText('Isaiah 53');
+  await expect(page.locator('#readerContent h2')).toHaveText('Isaiah 53:5');
   await expect(page.locator('#readerContent [data-verse-number="5"]')).toBeFocused();
   await expect(page.locator('#readerTranslation')).toHaveValue('web');
   expect(await page.evaluate(()=>getReaderPosition())).toEqual({bookId:'isaiah',chapter:53,verse:5});
@@ -192,6 +192,6 @@ test('shell-installed picker and retained Scripture work on offline reload',asyn
   await page.locator('#scripturePickerTrigger').click();
   await expect(page.locator('#scripturePicker')).toHaveAttribute('data-step','books');
   await choose(page,'isaiah',53);await page.locator('[data-picker-action="verse"][data-value="5"]').click();
-  await expect(page.locator('#readerContent h2')).toHaveText('Isaiah 53');
+  await expect(page.locator('#readerContent h2')).toHaveText('Isaiah 53:5');
   await expect(page.locator('#readerContent [data-verse-number="5"]')).toBeFocused();
 });

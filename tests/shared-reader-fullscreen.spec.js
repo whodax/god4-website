@@ -238,7 +238,7 @@ test('fullscreen Play and Stop share the resume cursor across a chapter boundary
   const passage = await page.locator('#readerContent').elementHandle();
   await page.evaluate(() => window.__utterances[0].onend());
   await expect(page.locator('#chapterSelect')).toHaveValue('2');
-  await expect(page.locator('#readerContent h2')).toHaveText('John 2');
+  await expect(page.locator('#readerContent h2')).toHaveText('John 2:1');
   expect(await page.locator('#readerContent').evaluate((element, original) => element === original, passage)).toBe(true);
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readAloudPlay')).toHaveText('Play');
