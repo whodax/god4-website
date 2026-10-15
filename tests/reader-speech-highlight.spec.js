@@ -115,7 +115,7 @@ test('Repeat preserves paused boundary cursor and one primary highlight',async({
 test('automatic chapter continuation clears old selected state and follows first verse',async({page})=>{
   await install(page);await page.evaluate(()=>navigateReaderToPassage('john',3,36));
   await page.locator('#readAloudPlay').click();await active(page,36);
-  await advance(page);await expect(page.locator('#readerContent h2')).toHaveText('John 4:1');await active(page,1);
+  await advance(page);await expect(page.locator('#readerContent h2')).toHaveText('John 4');await active(page,1);
 });
 test('Plan final verse clears speech state and returns to Plan without stale callbacks',async({page})=>{
   await install(page);await page.evaluate(()=>{

@@ -1,7 +1,7 @@
 /* Quick navigation uses the same translation libraries and Reader path as Search. */
 const ScripturePicker = (function(){
   var dialog, booksArea, detailArea, search, heading, back, status;
-  var generation = 0, translation, book, chapter, step = 'books', returnFocus = true;
+  var generation = 0, translation, book, chapter, step = 'books', returnFocus = true, browsing = false;
   function button(label, action, value, selected){
     var node = document.createElement('button');
     node.type = 'button';
@@ -30,21 +30,22 @@ const ScripturePicker = (function(){
     dialog.className = 'scripture-picker';
     dialog.setAttribute('aria-labelledby', 'scripturePickerTitle');
     dialog.innerHTML = '<div class="picker-header"><h2 id="scripturePickerTitle">Choose Scripture</h2><button type="button" data-picker-action="close" aria-label="Close Scripture picker">Close</button></div>' +
-      '<p class="picker-status" role="status"></p><div class="picker-layout"><section class="picker-books" aria-label="Books"><label for="pickerBookSearch">Find a book</label><input id="pickerBookSearch" type="search" autocomplete="off"><div class="picker-book-list"></div></section>' +
+      '<p class="picker-status" role="status"></p><div class="picker-layout"><section class="picker-books" aria-labelledby="pickerBooksTitle"><h3 id="pickerBooksTitle">Books</h3><label for="pickerBookSearch">Find a book</label><input id="pickerBookSearch" type="search" autocomplete="off"><div class="picker-book-list"></div></section>' +
       '<section class="picker-detail" aria-labelledby="pickerDetailTitle"><button type="button" data-picker-action="back">Back to books</button><h3 id="pickerDetailTitle" tabindex="-1"></h3><div class="picker-options"></div></section></div>';
     document.getElementById('view-reader').appendChild(dialog);
     booksArea = dialog.querySelector('.picker-book-list');
     detailArea = dialog.querySelector('.picker-options');
     search = dialog.querySelector('input');
-    heading = dialog.querySelector('h3');
+    heading = dialog.querySelector('#pickerDetailTitle');
     back = dialog.querySelector('[data-picker-action="back"]');
     status = dialog.querySelector('.picker-status');
     dialog.addEventListener('cancel', function(){ generation++; });
     dialog.addEventListener('close', function(){
       generation++;
+      document.getElementById('scripturePickerTrigger').setAttribute('aria-expanded', 'false');
       if(returnFocus) document.getElementById('scripturePickerTrigger').focus({preventScroll:true});
     });
-    search.addEventListener('input', renderBooks);
+    search.addEventListener('input', function(){ browsing = true; renderBooks(); });
     dialog.addEventListener('keydown', function(event){
       if(event.key !== 'Tab') return;
       var controls = Array.from(dialog.querySelectorAll('button:not([disabled]), input:not([disabled])')).filter(function(node){ return node.getClientRects().length; });
@@ -60,16 +61,19 @@ const ScripturePicker = (function(){
       var action = target.dataset.pickerAction;
       if(action === 'close'){ invalidate(true); return; }
       if(action === 'back'){
+        browsing = true;
         step = step === 'verses' ? 'chapters' : 'books';
         renderDetail();
         if(step === 'books') focusBook();
         else focusDetail();
       } else if(action === 'book'){
+        browsing = true;
         book = target.dataset.value;
         chapter = book === currentBook ? currentChapter : 1;
         step = 'chapters';
         renderBooks(); renderDetail(); focusDetail();
       } else if(action === 'chapter'){
+        browsing = true;
         chapter = Number(target.dataset.value);
         step = 'verses'; renderDetail(); focusDetail();
       } else if(action === 'verse' || action === 'whole'){
@@ -112,24 +116,46 @@ const ScripturePicker = (function(){
     var selectedBook = BibleData.listBooks(translation).find(function(item){ return item.id === book; });
     if(!selectedBook) return;
     heading.textContent = selectedBook.name + (step === 'verses' ? ' ' + chapter + ' — Verses' : ' — Chapters');
+    back.hidden = step === 'books';
+    back.dataset.level = step;
     back.textContent = step === 'verses' ? 'Back to chapters' : 'Back to books';
     if(step !== 'verses'){
       for(var number = 1; number <= BibleData.getChapterCount(translation, book); number++){
-        detailArea.appendChild(button(String(number), 'chapter', number, book === currentBook && number === currentChapter));
+        detailArea.appendChild(button(String(number), 'chapter', number, number === chapter));
       }
     } else {
       var data = BibleData.getChapter(translation, book, chapter);
       if(!data){ status.textContent = 'Scripture is unavailable.'; return; }
-      var whole = button('Whole chapter', 'whole');
+      var whole = button('Whole chapter', 'whole', undefined, book === currentBook && chapter === currentChapter && getReaderDisplayedVerse() === null);
       whole.className = 'picker-whole';
       detailArea.appendChild(whole);
       data.verses.forEach(function(text, index){
         // Match Reader's treatment of empty coordinates without renumbering.
         if(!isRenderableVerseText(text)) return;
         detailArea.appendChild(button(String(index + 1), 'verse', index + 1,
-          book === currentBook && chapter === currentChapter && index + 1 === currentVerse));
+          book === currentBook && chapter === currentChapter && index + 1 === getReaderDisplayedVerse()));
       });
     }
+  }
+  function sync(){
+    if(!dialog || !dialog.open || dialog.dataset.step === 'loading' || translation !== currentTranslation) return;
+    if(!browsing && (book !== currentBook || chapter !== currentChapter)){
+      book = currentBook; chapter = currentChapter;
+      booksArea.querySelectorAll('[data-picker-action="book"]').forEach(function(node){ node.setAttribute('aria-current', node.dataset.value === book ? 'true' : 'false'); });
+      var active = document.activeElement;
+      var action = active && active.dataset.pickerAction, value = active && active.dataset.value;
+      var detailFocused = detailArea.contains(active);
+      renderDetail();
+      if(detailFocused){
+        var replacement = Array.from(detailArea.querySelectorAll('button')).find(function(node){ return node.dataset.pickerAction === action && node.dataset.value === value; });
+        (replacement || heading).focus({preventScroll:true});
+      }
+    }
+    var verse = getReaderDisplayedVerse();
+    detailArea.querySelectorAll('[data-picker-action="verse"], [data-picker-action="whole"]').forEach(function(node){
+      var selected = book === currentBook && chapter === currentChapter && (node.dataset.pickerAction === 'whole' ? verse === null : Number(node.dataset.value) === verse);
+      node.setAttribute('aria-current', selected ? 'true' : 'false');
+    });
   }
   async function open(){
     if(!dialog) create();
@@ -138,6 +164,7 @@ const ScripturePicker = (function(){
     dialog.dataset.step = 'loading';
     status.textContent = 'Preparing Scripture…';
     dialog.showModal();
+    document.getElementById('scripturePickerTrigger').setAttribute('aria-expanded', 'true');
     var request = ++generation;
     var translationRequest = translationChangeRequest;
     translation = currentTranslation;
@@ -150,13 +177,15 @@ const ScripturePicker = (function(){
       if(!loaded){ status.textContent = 'Scripture is unavailable. Retain this translation in Offline Bibles or reconnect and try again.'; return; }
       if(!await initializeBibleExperience()) { status.textContent = 'Scripture is unavailable.'; return; }
       if(!isCurrent(request, translationRequest, requestedTranslation)) return;
-      book = currentBook; chapter = currentChapter; step = 'books'; search.value = '';
+      book = currentBook; chapter = currentChapter; step = 'books'; browsing = false; search.value = '';
       status.textContent = '';
       renderBooks(); renderDetail(); focusBook();
+      var selectedNumber = detailArea.querySelector('[aria-current="true"]');
+      if(selectedNumber && selectedNumber.getClientRects().length) selectedNumber.scrollIntoView({block:'nearest', inline:'nearest'});
     } catch(error){
       if(request === generation) status.textContent = 'Scripture is unavailable. Close and try again.';
     }
   }
   document.getElementById('scripturePickerTrigger').addEventListener('click', open);
-  return {invalidate:invalidate};
+  return {invalidate:invalidate, sync:sync};
 }());

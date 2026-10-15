@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const { test, expect } = require('@playwright/test');
 const fs = require('fs');
 const os = require('os');
@@ -481,7 +482,7 @@ test('ASV is complete and available through BibleData', async ({ page }) => {
 test('Reader switches between WEB and ASV and persists ASV', async ({ page }) => {
   await page.goto('/');
   await page.locator('#readerTranslation').selectOption('asv');
-  await page.locator('#bookSelect').selectOption('genesis');
+  await selectReaderOption(page.locator('#bookSelect'),'genesis');
   await expect(page.locator('#readerTranslation')).toHaveValue('asv');
   await expect(page.locator('#readerContent')).toContainText('Genesis 1');
   await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
@@ -494,10 +495,10 @@ test('Reader switches between WEB and ASV and persists ASV', async ({ page }) =>
 test('Compare renders WEB and ASV for the same current reference and excludes DEMO', async ({ page }) => {
   await page.goto('/');
   await page.locator('#readerTranslation').selectOption('web');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3:16');
   await expect(page.locator('#compareGrid [data-compare-side="left"]')).toHaveValue('web');
@@ -536,10 +537,10 @@ test('KJV is complete and preserves the imported source wording', async ({ page 
 test('Compare independently selects WEB, ASV, and KJV without exposing DEMO', async ({ page }) => {
   await page.goto('/');
   await page.locator('#readerTranslation').selectOption('web');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
 
   const left = page.locator('#compareGrid [data-compare-side="left"]');
@@ -576,10 +577,10 @@ test('YLT is complete and Compare keeps all real translations independent', asyn
   expect(result.john316).toBe('for God did so love the world, that His Son — the only begotten — He gave, that every one who is believing in him may not perish, but may have life age-during.');
 
   await page.locator('#readerTranslation').selectOption('web');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
   const left = page.locator('#compareGrid [data-compare-side="left"]');
   const right = page.locator('#compareGrid [data-compare-side="right"]');
@@ -617,10 +618,10 @@ test('DBY is complete and independently available in Reader and Compare', async 
   await expect(page.locator('#readerTranslation')).toHaveValue('dby');
   await page.reload();
   await expect(page.locator('#readerTranslation')).toHaveValue('dby');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
   const left = page.locator('#compareGrid [data-compare-side="left"]');
   const right = page.locator('#compareGrid [data-compare-side="right"]');
@@ -654,15 +655,15 @@ test('WBS is complete and independently available in Reader and Compare', async 
   expect(result.johnOne.verses.length).toBeGreaterThan(0);
   expect(result.johnThree.verses.length).toBeGreaterThan(0);
   await page.locator('#readerTranslation').selectOption('webster');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('1');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'1');
   await expect(page.locator('#readerTranslation')).toHaveValue('webster');
   await page.reload();
   await expect(page.locator('#readerTranslation')).toHaveValue('webster');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
   const left = page.locator('#compareGrid [data-compare-side="left"]');
   const right = page.locator('#compareGrid [data-compare-side="right"]');
@@ -698,8 +699,8 @@ test('RV is complete and independently available in Reader and Compare', async (
   await page.reload();
   await expect(page.locator('#readerTranslation')).toHaveValue('rv');
   await expect(page.locator('#readerContent [data-translation-id="rv"]')).not.toHaveCount(0);
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await expect(page.locator('#readerContent [data-translation-id="rv"][data-book-id="john"][data-chapter="3"]')).not.toHaveCount(0);
   await expect(page.locator('#verseSelect')).toHaveValue('');
   await page.getByRole('button', { name: 'Compare' }).click();
@@ -752,10 +753,10 @@ test('GNV preserves historical spelling and works independently in Reader and Co
   await expect(page.locator('#readerTranslation')).toHaveValue('gnv');
   await page.reload();
   await expect(page.locator('#readerTranslation')).toHaveValue('gnv');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
   const left = page.locator('#compareGrid [data-compare-side="left"]');
   const right = page.locator('#compareGrid [data-compare-side="right"]');
@@ -869,8 +870,8 @@ test('WEB data is complete, attributed, searchable, and selectable', async ({ pa
 
 test('Compare opens from the live Reader reference with and without a selected verse', async ({ page }) => {
   await page.goto('/');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('1');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'1');
   await expect(page.locator('#verseSelect')).toHaveValue('');
 
   await page.getByRole('button', { name: 'Compare' }).click();
@@ -879,19 +880,19 @@ test('Compare opens from the live Reader reference with and without a selected v
   await expect(page.locator('#compareGrid .compare-col').first()).not.toContainText('For God so loved the world');
 
   await page.getByRole('button', { name: 'Reader' }).click();
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3:16');
 });
 
 test('Compare follows a selected verse in another Reader book', async ({ page }) => {
   await page.goto('/');
-  await page.locator('#bookSelect').selectOption('colossians');
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#bookSelect'),'colossians');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('1');
+  await selectReaderOption(page.locator('#verseSelect'),'1');
   await page.getByRole('button', { name: 'Compare' }).click();
 
   await expect(page.locator('#compareSummary')).toHaveText('Comparing Colossians 2:1');
@@ -948,7 +949,7 @@ test('reader read-aloud controls speak only chapter verses and manage playback',
 
   await page.locator('#readAloudPlay').click();
   const cancelsBeforeNavigation = await page.evaluate(() => window.__speech.cancels);
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   expect(await page.evaluate(() => window.__speech.cancels)).toBeGreaterThan(cancelsBeforeNavigation);
   await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
 });
@@ -970,10 +971,10 @@ test('Read Aloud highlights each spoken verse without changing the selected vers
     } });
   });
   await page.goto('/');
-  await page.locator('#bookSelect').selectOption('exodus');
-  await page.locator('#chapterSelect').selectOption('5');
+  await selectReaderOption(page.locator('#bookSelect'),'exodus');
+  await selectReaderOption(page.locator('#chapterSelect'),'5');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
 
   const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
   await page.locator('#readAloudPlay').click();
@@ -1026,7 +1027,7 @@ test('single-verse Read Aloud combines spoken and selected states and clears on 
   });
   await page.goto('/');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('2');
+  await selectReaderOption(page.locator('#verseSelect'),'2');
   const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
 
   await page.evaluate(() => readVerseAloud(2));
@@ -1061,13 +1062,13 @@ test('Reader chapter and book navigation clear stale spoken highlights', async (
 
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
   await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
 
   await page.locator('#readAloudPlay').click();
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(1);
-  await page.locator('#bookSelect').selectOption('genesis');
+  await selectReaderOption(page.locator('#bookSelect'),'genesis');
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
   await expect(page.locator('#readAloudStatus')).toHaveText('Ready to read aloud.');
 });
@@ -1239,9 +1240,9 @@ test('reader controls, highlighting, fullscreen, compare, and plan views work', 
   const reader = page.locator('#view-reader');
   await expect(reader).toHaveClass(/active/);
 
-  await page.locator('#bookSelect').selectOption('psalms');
+  await selectReaderOption(page.locator('#bookSelect'),'psalms');
   await expect(page.locator('#readerContent')).toContainText('Psalms 1');
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await expect(page.locator('#readerContent')).toContainText('Psalms 2');
   await page.locator('.reader-controls-top [data-reader-action="next"]').click();
   await expect(page.locator('#readerContent')).toContainText('Psalms 3');
@@ -1304,10 +1305,10 @@ test('saved-verses drawer and fullscreen Reader keep keyboard focus and close wi
 test('Compare follows the Reader current passage and translation choices from BibleData', async ({ page }) => {
   await page.goto('/');
   await page.locator('#readerTranslation').selectOption('web');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
 
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#view-compare')).toHaveClass(/active/);
@@ -1328,7 +1329,7 @@ test('Compare follows the Reader current passage and translation choices from Bi
   await expect(page.locator('#compareGrid [data-compare-side="right"]')).toHaveValue(rightBefore);
 
   await page.getByRole('button', { name: 'Reader' }).click();
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#compareSummary')).toContainText('Comparing John 2');
   await expect(page.locator('#compareGrid .compare-col').first()).not.toContainText('Passage unavailable in this translation.');
@@ -1431,8 +1432,8 @@ test('Study Desk panes use document scrolling instead of inner vertical scrollba
   expect(readerFlow.activePanePosition).toBe('relative');
 
   const before = await page.evaluate(() => document.documentElement.scrollHeight);
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('1');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'1');
   const readerHeight = await page.evaluate(() => ({ pageHeight: document.documentElement.scrollHeight, passageHeight: document.getElementById('readerContent').scrollHeight }));
   expect(readerHeight.passageHeight).toBeGreaterThan(0);
   expect(readerHeight.pageHeight).toBeGreaterThanOrEqual(before);
@@ -1478,10 +1479,10 @@ test('Compare edition count sits compactly beneath the Compare tab', async ({ pa
 
 test('Compare navigation advances verses and preserves both translations', async ({ page }) => {
   await page.goto('/');
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('1');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'1');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('1');
+  await selectReaderOption(page.locator('#verseSelect'),'1');
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#compareSummary')).toHaveText('Comparing John 1:1');
   const left = page.locator('#compareGrid [data-compare-side="left"]');
@@ -1583,10 +1584,10 @@ test('Compare edition count and translation slots persist with the shared refere
   await page.goto('/');
   await page.evaluate(() => localStorage.removeItem('god4.compare'));
   await page.reload();
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
   await page.locator('.compare-edition-control [data-compare-count="3"]').click();
   await page.locator('#compareGrid [data-compare-index="2"]').selectOption('kjv');
@@ -1598,10 +1599,10 @@ test('Compare edition count and translation slots persist with the shared refere
   await expect(page.locator('#compareGrid .compare-col')).toHaveCount(3);
   await expect(page.locator('#compareGrid [data-compare-index="2"]')).toHaveValue('kjv');
   await page.getByRole('button', { name: 'Reader' }).click();
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.getByRole('button', { name: 'Compare' }).click();
   await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3:16');
   await page.locator('#compareChapterNext').click();
@@ -1773,7 +1774,7 @@ test('blocked microphone access is reported without breaking the Reader', async 
   await page.locator('.reader-audio-controls [data-voice-command-button]').click();
   await page.evaluate(() => window.eval("voiceRecognition.onerror({ error: 'not-allowed' })"));
   await expect(page.locator('#voiceStatusTop')).toHaveText('Microphone access is blocked. Allow microphone access in your browser to use Voice Commands.');
-  await page.locator('#bookSelect').selectOption('psalms');
+  await selectReaderOption(page.locator('#bookSelect'),'psalms');
   await expect(page.locator('#readerContent')).toContainText('Psalms 1');
 });
 
@@ -1873,10 +1874,10 @@ test('Voice Commands gives verse intents precedence over chapter aliases', async
   await page.evaluate(() => handleVoiceCommand('previous chapter'));
   await expect(page.locator('#chapterSelect')).toHaveValue('1');
 
-  await page.locator('#bookSelect').selectOption('exodus');
-  await page.locator('#chapterSelect').selectOption('5');
+  await selectReaderOption(page.locator('#bookSelect'),'exodus');
+  await selectReaderOption(page.locator('#chapterSelect'),'5');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
 
   await page.evaluate(() => handleVoiceCommand('next verse'));
   await expect(page.locator('#chapterSelect')).toHaveValue('5');
@@ -1904,7 +1905,7 @@ test('Voice Commands respects first and final verse boundaries without crossing 
   const verse = page.locator('#verseSelect');
 
   await openReaderMore(page);
-  await verse.selectOption('');
+  await selectReaderOption(verse,'');
   await page.evaluate(() => handleVoiceCommand('next verse'));
   await expect(verse).toHaveValue('1');
   await expect(chapter).toHaveValue('1');
@@ -1916,7 +1917,7 @@ test('Voice Commands respects first and final verse boundaries without crossing 
   const finalVerse = await page.evaluate(() =>
     BibleData.getChapter(currentTranslation, currentBook, currentChapter).verses.length
   );
-  await verse.selectOption(String(finalVerse));
+  await selectReaderOption(verse,String(finalVerse));
   await page.evaluate(() => handleVoiceCommand('next verse'));
   await expect(verse).toHaveValue(String(finalVerse));
   await expect(chapter).toHaveValue('1');
@@ -2241,8 +2242,8 @@ test('ordinal Bible book names normalize to numbered metadata books', async ({ p
 test('manual verse selector updates with the chapter and focuses the selected verse', async ({ page }) => {
   await page.goto('/');
   await page.locator('#readerTranslation').selectOption('web');
-  await page.locator('#bookSelect').selectOption('genesis');
-  await page.locator('#chapterSelect').selectOption('1');
+  await selectReaderOption(page.locator('#bookSelect'),'genesis');
+  await selectReaderOption(page.locator('#chapterSelect'),'1');
 
   const chapterOneVerseOptionCount = await page.evaluate(() =>
     BibleData.getChapter('web', 'genesis', 1).verses.length + 1
@@ -2250,10 +2251,10 @@ test('manual verse selector updates with the chapter and focuses the selected ve
   await expect(page.locator('#verseSelect option')).toHaveCount(chapterOneVerseOptionCount);
 
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('2');
+  await selectReaderOption(page.locator('#verseSelect'),'2');
   await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-focused/);
 
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await expect(page.locator('#verseSelect')).toHaveValue('');
 
   const chapterTwoVerseOptionCount = await page.evaluate(() =>
@@ -2830,7 +2831,7 @@ test('Word Study supports keyboard activation, unavailable words, Escape close, 
   await unknownWord.press(' ');
   await expect(page.locator('#wordStudyDefinition')).toHaveText('Definition not available yet.');
   await page.locator('#wordStudyClose').click();
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await expect(page.locator('#readerContent')).toContainText('John 2');
   await page.locator('#readerTranslation').selectOption('web');
   await expect(page.locator('#readerTranslation')).toHaveValue('web');
@@ -2906,7 +2907,7 @@ test('Reading Plan navigates to readings and preserves completion across reloads
   await expect(page.locator('#planDone')).toHaveText('1 of 30 days completed');
   await expect(page.locator('#planPct')).toHaveText('3%');
   await expect(page.locator('#view-reader')).toHaveClass(/active/);
-  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1:1');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
   await expect(page.locator('#readerContent [data-verse-number="1"]')).toBeFocused();
   await expect(page.locator('#journeyTotal')).toHaveText('1 of 150 days completed');
   await page.reload();
@@ -3189,8 +3190,8 @@ test('User data storage validates malformed domains and keeps failed writes and 
 test('Reader restores a different book and chapter with the persisted translation', async ({ page }) => {
   await page.locator('#readerTranslation').selectOption('asv');
   await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
-  await page.locator('#bookSelect').selectOption('genesis');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'genesis');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await expect(page.locator('#readerContent [data-translation-id="asv"][data-book-id="genesis"][data-chapter="3"]')).not.toHaveCount(0);
   expect(await page.evaluate(() => ({
     translation: localStorage.getItem('god4.translation'),
@@ -3204,10 +3205,10 @@ test('Reader restores a different book and chapter with the persisted translatio
 });
 
 test('Reader selected verse persists across reload without restoring keyboard focus', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
     bookId: 'john', chapter: 3, verse: 16
   });
@@ -3331,10 +3332,10 @@ test('Reader verse navigation starts at verse 1 and keeps keyboard focus on Next
 });
 
 test('Reader verse navigation moves from verse 4 to adjacent verses without changing chapter', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('exodus');
-  await page.locator('#chapterSelect').selectOption('5');
+  await selectReaderOption(page.locator('#bookSelect'),'exodus');
+  await selectReaderOption(page.locator('#chapterSelect'),'5');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
 
   await page.locator('[data-reader-action="next-verse"]').click();
   await expect(page.locator('#bookSelect')).toHaveValue('exodus');
@@ -3343,7 +3344,7 @@ test('Reader verse navigation moves from verse 4 to adjacent verses without chan
   await expect(page.locator('#readerContent [data-verse-number="5"]')).toHaveClass(/verse-focused/);
 
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
   await page.locator('[data-reader-action="previous-verse"]').click();
   await expect(page.locator('#bookSelect')).toHaveValue('exodus');
   await expect(page.locator('#chapterSelect')).toHaveValue('5');
@@ -3356,24 +3357,24 @@ test('Reader verse navigation disables at the first and final verse', async ({ p
   const nextVerse = page.locator('[data-reader-action="next-verse"]');
 
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('1');
+  await selectReaderOption(page.locator('#verseSelect'),'1');
   await expect(previousVerse).toBeDisabled();
 
   const finalVerse = await page.evaluate(() =>
     BibleData.getChapter(currentTranslation, currentBook, currentChapter).verses.length
   );
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption(String(finalVerse));
+  await selectReaderOption(page.locator('#verseSelect'),String(finalVerse));
   await expect(nextVerse).toBeDisabled();
   await expect(page.locator('#chapterSelect')).toHaveValue('1');
   await expect(page.locator('#verseSelect')).toHaveValue(String(finalVerse));
 });
 
 test('Reader verse navigation persists its destination across reload', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('exodus');
-  await page.locator('#chapterSelect').selectOption('5');
+  await selectReaderOption(page.locator('#bookSelect'),'exodus');
+  await selectReaderOption(page.locator('#chapterSelect'),'5');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
   await page.locator('[data-reader-action="next-verse"]').click();
 
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
@@ -3391,15 +3392,15 @@ test('Reader verse navigation persists its destination across reload', async ({ 
 test('Reader verse navigation respects the active translation verse count', async ({ page }) => {
   await page.locator('#readerTranslation').selectOption('asv');
   await ensureTranslation(page, 'asv');
-  await page.locator('#bookSelect').selectOption('romans');
-  await page.locator('#chapterSelect').selectOption('14');
+  await selectReaderOption(page.locator('#bookSelect'),'romans');
+  await selectReaderOption(page.locator('#chapterSelect'),'14');
 
   const asvFinalVerse = await page.evaluate(() =>
     BibleData.getChapter('asv', 'romans', 14).verses.length
   );
   expect(asvFinalVerse).toBe(23);
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption(String(asvFinalVerse));
+  await selectReaderOption(page.locator('#verseSelect'),String(asvFinalVerse));
   await expect(page.locator('[data-reader-action="next-verse"]')).toBeDisabled();
 
   await page.locator('#readerTranslation').selectOption('web');
@@ -3415,10 +3416,10 @@ test('Reader verse navigation respects the active translation verse count', asyn
 });
 
 test('Reader verse navigation leaves chapter controls as chapter navigation without carry-forward', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('exodus');
-  await page.locator('#chapterSelect').selectOption('5');
+  await selectReaderOption(page.locator('#bookSelect'),'exodus');
+  await selectReaderOption(page.locator('#chapterSelect'),'5');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
 
   await page.locator('[data-reader-action="next"]').click();
   await expect(page.locator('#chapterSelect')).toHaveValue('6');
@@ -3430,10 +3431,10 @@ test('Reader verse navigation leaves chapter controls as chapter navigation with
 });
 
 test('Reader selected verse still clears for manual chapter selection', async ({ page }) => {
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('3');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#verseSelect'),'3');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
 
   await expect(page.locator('#verseSelect')).toHaveValue('');
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({
@@ -3442,10 +3443,10 @@ test('Reader selected verse still clears for manual chapter selection', async ({
 });
 
 test('Reader selected verse clears through Next chapter and reload', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('exodus');
-  await page.locator('#chapterSelect').selectOption('5');
+  await selectReaderOption(page.locator('#bookSelect'),'exodus');
+  await selectReaderOption(page.locator('#chapterSelect'),'5');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
   await page.locator('[data-reader-action="next"]').first().click();
 
   await expect(page.locator('#chapterSelect')).toHaveValue('6');
@@ -3463,10 +3464,10 @@ test('Reader selected verse clears through Next chapter and reload', async ({ pa
 });
 
 test('Reader selected verse clears through Previous chapter and reload', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('exodus');
-  await page.locator('#chapterSelect').selectOption('6');
+  await selectReaderOption(page.locator('#bookSelect'),'exodus');
+  await selectReaderOption(page.locator('#chapterSelect'),'6');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
   await page.locator('[data-reader-action="previous"]').first().click();
 
   await expect(page.locator('#chapterSelect')).toHaveValue('5');
@@ -3484,10 +3485,10 @@ test('Reader selected verse clears through Previous chapter and reload', async (
 });
 
 test('Reader selected verse clears when the Next chapter lacks that verse', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('1');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'1');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('30');
+  await selectReaderOption(page.locator('#verseSelect'),'30');
   await page.locator('[data-reader-action="next"]').first().click();
 
   await expect(page.locator('#chapterSelect')).toHaveValue('2');
@@ -3503,7 +3504,7 @@ test('Reader selected verse clears when the Next chapter lacks that verse', asyn
 });
 
 test('Reader Previous and Next chapter navigation does not create a selected verse', async ({ page }) => {
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await expect(page.locator('#verseSelect')).toHaveValue('');
 
   await page.locator('[data-reader-action="next"]').first().click();
@@ -3523,7 +3524,7 @@ test('Reader Previous and Next chapter navigation does not create a selected ver
 
 test('Reader selected verse still clears for chapter-only Search navigation', async ({ page }) => {
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
   await page.locator('#searchInput').fill('Genesis 2');
   await page.getByRole('button', { name: 'Search', exact: true }).click();
   await page.locator('#results .result-card').first().click();
@@ -3537,10 +3538,10 @@ test('Reader selected verse still clears for chapter-only Search navigation', as
 });
 
 test('Reader selected verse clears when a different book is opened', async ({ page }) => {
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('3');
-  await page.locator('#bookSelect').selectOption('genesis');
+  await selectReaderOption(page.locator('#verseSelect'),'3');
+  await selectReaderOption(page.locator('#bookSelect'),'genesis');
 
   await expect(page.locator('#bookSelect')).toHaveValue('genesis');
   await expect(page.locator('#chapterSelect')).toHaveValue('2');
@@ -3572,7 +3573,7 @@ test('Reader selected verse follows existing voice reference navigation and clea
 });
 
 test('Reader persists manual chapter selection across reload', async ({ page }) => {
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await expect(page.locator('#readerContent')).toContainText('John 3');
   await page.reload();
   await expect(page.locator('#bookSelect')).toHaveValue('john');
@@ -3581,12 +3582,13 @@ test('Reader persists manual chapter selection across reload', async ({ page }) 
 });
 
 test('Reader persists Previous and Next chapter navigation across reloads', async ({ page }) => {
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await page.locator('[data-reader-action="previous"]').first().click();
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId: 'john', chapter: 1});
   await page.reload();
   await expect(page.locator('#chapterSelect')).toHaveValue('1');
   await page.locator('[data-reader-action="next"]').first().click();
+  await expect(page.locator('#readerReferenceText')).toHaveText('John 2');
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId: 'john', chapter: 2});
   await page.reload();
   await expect(page.locator('#chapterSelect')).toHaveValue('2');
@@ -3612,10 +3614,10 @@ test('Reader selected verse persists when a specific Search result opens it', as
 });
 
 test('Reader selected verse remains selected when translation changes and the verse is valid', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('john');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#bookSelect'),'john');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('16');
+  await selectReaderOption(page.locator('#verseSelect'),'16');
   await page.locator('#readerTranslation').selectOption('asv');
   await expect(page.locator('#readerContent [data-translation-id="asv"]')).not.toHaveCount(0);
   await expect(page.locator('#bookSelect')).toHaveValue('john');
@@ -3634,10 +3636,10 @@ test('Reader selected verse remains selected when translation changes and the ve
 });
 
 test('Reader selected verse clears across translation changes when only the verse is invalid', async ({ page }) => {
-  await page.locator('#bookSelect').selectOption('romans');
-  await page.locator('#chapterSelect').selectOption('14');
+  await selectReaderOption(page.locator('#bookSelect'),'romans');
+  await selectReaderOption(page.locator('#chapterSelect'),'14');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('26');
+  await selectReaderOption(page.locator('#verseSelect'),'26');
   await page.locator('#readerTranslation').selectOption('asv');
 
   await expect(page.locator('#readerTranslation')).toHaveValue('asv');
@@ -3706,10 +3708,10 @@ test('Reader position storage remains usable in memory when localStorage is glob
   await expect(page.locator('#bookSelect')).toHaveValue('john');
   await expect(page.locator('#chapterSelect')).toHaveValue('1');
   await expect(page.locator('#readerContent')).toContainText('John 1');
-  await page.locator('#bookSelect').selectOption('genesis');
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#bookSelect'),'genesis');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('3');
+  await selectReaderOption(page.locator('#verseSelect'),'3');
   await expect(page.locator('#readerContent')).toContainText('Genesis 2');
   await expect(page.locator('#readerContent [data-verse-number="3"]')).toHaveClass(/verse-focused/);
   expect(await page.evaluate(() => UserData.readerPosition.load())).toEqual({bookId: 'genesis', chapter: 2, verse: 3});
@@ -3845,7 +3847,7 @@ test('repeat aliases replay the last spoken verse and continue sequentially', as
   await recognizePlaybackCommand(page, 'repeat');
   expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(0);
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('4');
+  await selectReaderOption(page.locator('#verseSelect'),'4');
   await recognizePlaybackCommand(page, 'play');
   const storedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
   await page.evaluate(() => window.__speech.utterances[0].onend());
@@ -3871,7 +3873,7 @@ test('repeat aliases replay the last spoken verse and continue sequentially', as
   }
   expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).toBe(storedPosition);
 
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   const countBeforeStaleRepeat = await page.evaluate(() => window.__speech.utterances.length);
   await recognizePlaybackCommand(page, 'repeat');
   expect(await page.evaluate(() => window.__speech.utterances.length)).toBe(countBeforeStaleRepeat);
@@ -3911,10 +3913,10 @@ test('repeat keeps a valid verse through translation and drops one missing from 
     await page.evaluate(() => BibleData.getVerse('asv', 'john', 1, 2).text)
   );
 
-  await page.locator('#bookSelect').selectOption('psalms');
+  await selectReaderOption(page.locator('#bookSelect'),'psalms');
   await page.locator('#readerTranslation').selectOption('web');
   await expect.poll(() => page.evaluate(() => currentTranslation)).toBe('web');
-  await page.locator('#chapterSelect').selectOption('3');
+  await selectReaderOption(page.locator('#chapterSelect'),'3');
   await page.evaluate(() => readVerseAloud(12));
   const count = await page.evaluate(() => window.__speech.utterances.length);
   await page.locator('#readerTranslation').selectOption('asv');
@@ -3996,7 +3998,7 @@ test('stopped Play and Continue restart at the last spoken verse, including the 
     await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 8).text)
   );
   await recognizePlaybackCommand(page, 'stop');
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await page.locator('#readAloudPlay').click();
   expect(await page.evaluate(() => window.__speech.utterances.at(-1).text)).toBe(
     await page.evaluate(() => BibleData.getVerse('web', 'john', 2, 1).text)
@@ -4072,7 +4074,7 @@ test('Repeat at a chapter boundary rejoins the next chapter once', async ({ page
   await installVoicePlaybackMocks(page);
   const finalVerse = await page.evaluate(() => BibleData.getChapter('web', 'john', 1).verses.length);
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption(String(finalVerse));
+  await selectReaderOption(page.locator('#verseSelect'),String(finalVerse));
   await page.locator('#readAloudPlay').click();
   await page.evaluate(() => BibleSpeech.pauseResume());
   const cursorBeforeRepeat = await page.evaluate(() => getPlaybackResumeCursor());
@@ -4133,7 +4135,7 @@ test('empty trailing verses advance to the next speakable chapter without replay
     };
   }, finalVerse);
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption(String(finalVerse - 1));
+  await selectReaderOption(page.locator('#verseSelect'),String(finalVerse - 1));
   await page.locator('#readAloudPlay').click();
   await page.evaluate(() => window.__speech.utterances[0].onend());
   await expect(page.locator('#chapterSelect')).toHaveValue('2');
@@ -4148,7 +4150,7 @@ test('continuous read-aloud crosses a chapter boundary without changing saved Re
   await installVoicePlaybackMocks(page);
   await page.locator('#readerTranslation').selectOption('web');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption(String(await page.evaluate(() => BibleData.getChapter('web', 'john', 1).verses.length)));
+  await selectReaderOption(page.locator('#verseSelect'),String(await page.evaluate(() => BibleData.getChapter('web', 'john', 1).verses.length)));
   const savedPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
   await page.locator('#readAloudPlay').click();
   const finalJohnOneVerse = await page.evaluate(() => BibleData.getChapter('web', 'john', 1).verses.length);
@@ -4173,10 +4175,10 @@ test('continuous read-aloud crosses a chapter boundary without changing saved Re
 
 test('continuous read-aloud follows BibleData book order across a book boundary', async ({ page }) => {
   await installVoicePlaybackMocks(page);
-  await page.locator('#bookSelect').selectOption('3-john');
+  await selectReaderOption(page.locator('#bookSelect'),'3-john');
   const finalVerse = await page.evaluate(() => BibleData.getChapter('web', '3-john', 1).verses.length);
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption(String(finalVerse));
+  await selectReaderOption(page.locator('#verseSelect'),String(finalVerse));
   await page.locator('#readAloudPlay').click();
   await page.evaluate(() => window.__speech.utterances[0].onend());
 
@@ -4193,11 +4195,11 @@ test('continuous read-aloud follows BibleData book order across a book boundary'
 
 test('Revelation 22 final verse completes continuous playback without wrapping', async ({ page }) => {
   await installVoicePlaybackMocks(page);
-  await page.locator('#bookSelect').selectOption('revelation');
+  await selectReaderOption(page.locator('#bookSelect'),'revelation');
   const finalVerse = await page.evaluate(() => BibleData.getChapter('web', 'revelation', 22).verses.length);
-  await page.locator('#chapterSelect').selectOption('22');
+  await selectReaderOption(page.locator('#chapterSelect'),'22');
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption(String(finalVerse));
+  await selectReaderOption(page.locator('#verseSelect'),String(finalVerse));
   await page.locator('#readAloudPlay').click();
   const spokenCount = await page.evaluate(() => window.__speech.utterances.length);
   await page.evaluate(() => window.__speech.utterances.at(-1).onend());
@@ -4215,11 +4217,11 @@ test('manual Reader navigation replaces resume cursor and Reader position remain
   const initialPosition = await page.evaluate(() => localStorage.getItem('god4.reader.position'));
   await page.locator('#readAloudPlay').click();
   await page.locator('#readAloudPlay').click();
-  await page.locator('#chapterSelect').selectOption('2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   expect(await page.evaluate(() => getPlaybackResumeCursor())).toEqual({translationId:'web', bookId:'john', chapter:2, verse:1});
   expect(await page.evaluate(() => localStorage.getItem('god4.reader.position'))).not.toBe(initialPosition);
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('3');
+  await selectReaderOption(page.locator('#verseSelect'),'3');
   expect(await page.evaluate(() => getPlaybackResumeCursor())).toEqual({translationId:'web', bookId:'john', chapter:2, verse:3});
 });
 
@@ -4300,7 +4302,7 @@ test('Repeat while paused replays the verse, then waits for Resume at the next v
 
 test('repeating a single final verse rejoins continuous playback into the next book', async ({ page }) => {
   await installVoicePlaybackMocks(page);
-  await page.locator('#bookSelect').selectOption('3-john');
+  await selectReaderOption(page.locator('#bookSelect'),'3-john');
   const finalVerse = await page.evaluate(() => BibleData.getChapter('web', '3-john', 1).verses.length);
   await page.evaluate((number) => readVerseAloud(number), finalVerse);
   const count = await page.evaluate(() => window.__speech.utterances.length);
@@ -4340,7 +4342,7 @@ test('combined spoken reference and Play starts a sequence at its selected verse
 test('visible Play begins at a manually selected verse and leaves selection unchanged as speech advances', async ({ page }) => {
   await installVoicePlaybackMocks(page);
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('20');
+  await selectReaderOption(page.locator('#verseSelect'),'20');
   await page.locator('#readAloudPlay').click();
   expect(await page.evaluate(() => window.__speech.utterances[0].text)).toBe(
     await page.evaluate(() => BibleData.getVerse('web', 'john', 1, 20).text)
@@ -4609,7 +4611,7 @@ async function installSpokenFollowMocks(page, deferStart = false) {
 test('spoken follow scrolls an offscreen verse below sticky controls without changing selection or focus', async ({ page }) => {
   await installSpokenFollowMocks(page);
   await openReaderMore(page);
-  await page.locator('#verseSelect').selectOption('20');
+  await selectReaderOption(page.locator('#verseSelect'),'20');
   await page.evaluate(async () => {
     window.scrollTo({top:0, behavior:'instant'});
     await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));

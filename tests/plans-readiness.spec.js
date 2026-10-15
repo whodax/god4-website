@@ -68,7 +68,7 @@ test('cold native day activation awaits real Bible acquisition and creates the c
     await untouched(page);
     expect(await page.evaluate(()=>({day:pendingPlanNavigation.dayNumber,translation:pendingPlanNavigation.translationId,start:pendingPlanNavigation.start.chapter,end:pendingPlanNavigation.end.chapter}))).toEqual({day:1,translation:'web',start:1,end:2});
     gate.release();
-    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1:1');
+    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
     expect(await page.evaluate(()=>activePlanReadingSession)).toMatchObject({planPart:1,day:1,translationId:'web',start:{bookId:'matthew',chapter:1,verse:1},end:{bookId:'matthew',chapter:2,verse:23},completionPending:false});
     expect(await page.evaluate(()=>UserData.journey.load().plans[0])).toEqual([1]);
     await page.locator('#readerBackToPlan').click();
@@ -89,7 +89,7 @@ test('failed readiness announces failure without progress or session and the sam
   await page.unroute('**/js/bible/web.js?*',fail);
   await openDay(page,1);
   expect(await page.evaluate(()=>planResult)).toBe(true);
-  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1:1');
+  await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
   expect(await page.evaluate(()=>UserData.journey.load().plans[0])).toEqual([1]);
 });
 
@@ -112,7 +112,7 @@ test('latest day wins one shared delayed acquisition without completing the supe
     await untouched(page);
     gate.release();
     expect(await page.evaluate(async()=>[await firstDay,await secondDay])).toEqual([false,true]);
-    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 3:1');
+    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 3');
     expect(await page.evaluate(()=>activePlanReadingSession.day)).toBe(2);
     expect(await page.evaluate(()=>UserData.journey.load().plans[0])).toEqual([2]);
   }finally{gate.release();}
@@ -166,7 +166,7 @@ test('superseding manual Reader action wins without completing the pending Plan 
     gate.release();
     expect(await page.evaluate(()=>planResult)).toBe(false);
     expect(await page.evaluate(()=>readerResult)).toBe(true);
-    await expect(page.locator('#readerContent h2')).toHaveText('John 2:1');
+    await expect(page.locator('#readerContent h2')).toHaveText('John 2');
     await untouched(page);
   }finally{gate.release();}
 });
@@ -248,7 +248,7 @@ for(const [width,key] of [[390,'Enter'],[320,'Space']])test('cold keyboard activ
     await expect(page.locator('#journeyStatus')).toHaveAttribute('aria-atomic','true');
     expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
     gate.release();
-    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1:1');
+    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
     await page.locator('#readerBackToPlan').press('Enter');
     await expectPlanFocusVisible(page,page.locator('[data-plan-day="2"]'));
     await expect(page.locator('[data-plan-day="1"]')).toHaveAttribute('aria-pressed','true');

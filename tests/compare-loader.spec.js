@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 const fs=require('fs'),path=require('path'),{execFileSync}=require('child_process');
 const root=path.resolve(__dirname,'..');
@@ -68,10 +69,10 @@ test('synchronous command returns and async load contract survive readiness',asy
 for(const failure of ['network','missing global','invalid API'])test(failure+' reports accessible failure and retries',async({page})=>{
  let fail=true,requests=0;await page.route('**/js/bible/compare.js',r=>{requests++;if(!fail)return r.continue();if(failure==='network')return r.abort();return r.fulfill({contentType:'application/javascript',body:failure==='invalid API'?'window.CompareRuntime={version:1,initialize(){}}':'/* absent runtime */'})});
  await open(page);await tab(page).click();await expect(page.locator('#compareSummary')).toHaveText(/could not be loaded.*try again/);await expect(page.locator('#compareRuntimeStatus')).toHaveAttribute('aria-live','polite');await expect(page.locator('#view-compare')).toHaveAttribute('aria-busy','false');
- await reader(page).click();await page.locator('#chapterSelect').selectOption('2');await expect(page.locator('#readerContent h2')).toHaveText('John 2');fail=false;await tab(page).click();await rendered(page);await expect(page.locator('#compareSummary')).toHaveText('Comparing John 2');expect(requests).toBe(2);expect(await page.evaluate(()=>compareAudit.init)).toBe(1);
+ await reader(page).click();await selectReaderOption(page.locator('#chapterSelect'),'2');await expect(page.locator('#readerContent h2')).toHaveText('John 2');fail=false;await tab(page).click();await rendered(page);await expect(page.locator('#compareSummary')).toHaveText('Comparing John 2');expect(requests).toBe(2);expect(await page.evaluate(()=>compareAudit.init)).toBe(1);
 });
 for(const repeat of [false,true])test('delayed Compare Reader'+(repeat?' Compare':'')+' uses only current intent',async({page})=>{
- const release=await gate(page);await open(page);await tab(page).click();await reader(page).click();await page.locator('#chapterSelect').selectOption('2');if(repeat)await tab(page).click();
+ const release=await gate(page);await open(page);await tab(page).click();await reader(page).click();await selectReaderOption(page.locator('#chapterSelect'),'2');if(repeat)await tab(page).click();
  const before=await page.evaluate(()=>({y:scrollY,active:document.activeElement.id}));release();await page.evaluate(()=>CompareLoader.ensure());
  if(repeat){await rendered(page);await expect(page.locator('#compareSummary')).toHaveText('Comparing John 2')}else{
   expect(await page.evaluate(()=>compareAudit.activations)).toBe(0);await expect(page.locator('#view-reader')).toHaveClass(/active/);expect(await page.evaluate(()=>({y:scrollY,active:document.activeElement.id}))).toEqual(before);
@@ -111,7 +112,7 @@ test.describe('installed offline Compare',()=>{
  test.use({serviceWorkers:'allow'});
  async function install(p){await p.goto('/');await p.evaluate(async()=>{const r=await navigator.serviceWorker.ready,w=r.active;if(w.state!=='activated')await new Promise(resolve=>w.addEventListener('statechange',()=>{if(w.state==='activated')resolve()}))});await p.reload();await p.evaluate(()=>initializeBibleExperience());}
  test('unused runtime first activates offline; retained WEB and unavailable ASV remain distinct',async({page,context})=>{
-  await install(page);expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined');const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-33')).keys()).map(r=>new URL(r.url).pathname));expect(assets).toHaveLength(44);expect(assets).toContain('/js/bible/compare-loader.js');expect(assets).toContain('/js/bible/compare.js');
+  await install(page);expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined');const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-34')).keys()).map(r=>new URL(r.url).pathname));expect(assets).toHaveLength(44);expect(assets).toContain('/js/bible/compare-loader.js');expect(assets).toContain('/js/bible/compare.js');
   const responses=[];page.on('response',r=>{if(r.url().endsWith('/bible/compare.js'))responses.push(r.fromServiceWorker())});await context.setOffline(true);await tab(page).click();await rendered(page);expect(responses).toEqual([true]);await expect(page.locator('.compare-col').first().locator('.vnum')).toHaveCount(51);await expect(page.locator('.compare-col').nth(1)).toContainText('Passage unavailable in this translation.');
  });
  test('warm Compare and offline reload preserve retained translations and lazy runtime',async({page,context})=>{

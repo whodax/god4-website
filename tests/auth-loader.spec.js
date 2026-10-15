@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 const fs=require('fs'),path=require('path');
 const root=path.resolve(__dirname,'..');
@@ -18,7 +19,7 @@ test('anonymous startup leaves the full auth stack absent and Bible/local featur
   await page.route('**/js/vendor/supabase-js-2.117.0.min.js',route=>route.abort());await open(page);
   expect(await page.evaluate(()=>typeof God4Auth)).toBe('undefined');
   await page.evaluate(async()=>{await initializeBibleExperience();await navigateReaderToPassage('john',1);});
-  await page.locator('#chapterSelect').selectOption('2');await expect(page.locator('#readerContent h2')).toHaveText('John 2');
+  await selectReaderOption(page.locator('#chapterSelect'),'2');await expect(page.locator('#readerContent h2')).toHaveText('John 2');
   await page.locator('#searchInput').fill('Genesis 24:45');await page.getByRole('button',{name:'Search',exact:true}).click();await page.locator('#results .result-card').first().click();
   await expect(page.locator('#verseSelect')).toHaveValue('45');
   await page.locator('[aria-controls="view-compare"]').click();await expect(page.locator('.compare-col')).toHaveCount(2);
@@ -94,7 +95,7 @@ test('cached auth stays unexecuted until Account activation and loads offline',a
   await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));
   if(!await page.evaluate(()=>Boolean(navigator.serviceWorker.controller)))await page.reload();
   await expect.poll(()=>page.evaluate(()=>Boolean(navigator.serviceWorker.controller))).toBe(true);
-  const cached=await page.evaluate(async()=>{const cache=await caches.open('god4-shell-compact-reader-33');return(await cache.keys()).map(r=>new URL(r.url).pathname)});
+  const cached=await page.evaluate(async()=>{const cache=await caches.open('god4-shell-compact-reader-34');return(await cache.keys()).map(r=>new URL(r.url).pathname)});
   for(const asset of [...deps.slice(1),'/js/auth/config.js','/js/auth/loader.js','/js/auth/account-ui.js'])expect(cached).toContain(asset);
   expect(cached).not.toContain(deps[0]);
   expect(await page.evaluate(()=>typeof God4Auth)).toBe('undefined');

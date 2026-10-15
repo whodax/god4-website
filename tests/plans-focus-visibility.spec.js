@@ -63,7 +63,7 @@ for(const [width,key] of [[390,'Enter'],[320,'Space']]){
       expect(await page.evaluate(()=>journeyState.plans[0])).toEqual([]);
       expect(await page.evaluate(()=>activePlanReadingSession)).toBeNull();
       release();
-      await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1:1');
+      await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
       await page.locator('#readerBackToPlan').press('Enter');
       const returned=await expectPlanFocusVisible(page,page.locator('[data-plan-day="2"]'));
       console.log('PLAN_RECTANGLES',JSON.stringify({width,before,preparing,pending,returned}));
@@ -93,7 +93,7 @@ for(const [width,key] of [[390,'Enter'],[320,'Space']]){
     await page.setViewportSize({width,height:720});
     await planKeyboard(page);
     await page.keyboard.press(key);
-    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1:1');
+    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
     await page.locator('#fullscreenBtn').press('Enter');
     await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
     await page.locator('#readerBackToPlan').press('Enter');
@@ -182,7 +182,7 @@ test('only the superseding focused day can apply a queued correction',async({pag
     await expectPlanFocusVisible(page,page.locator('[data-plan-day="2"]'));
     expect(await page.evaluate(()=>pendingPlanNavigation.dayNumber)).toBe(2);
     release();
-    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 3:1');
+    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 3');
     expect(await page.evaluate(()=>journeyState.plans[0])).toEqual([2]);
   }finally{release();}
 });
@@ -197,7 +197,7 @@ test('successful Reader handoff rejects any deferred Plan scroll',async({page})=
     await page.keyboard.press('Enter');
     await expect(page.locator('#journeyStatus')).toHaveText('Preparing reading…');
     release();
-    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1:1');
+    await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
     await page.evaluate(()=>flushPlanFrames());
     expect(await page.evaluate(()=>planScrolls)).toEqual([]);
     await expect(page.locator('#readerContent [data-verse-number="1"]')).toBeFocused();

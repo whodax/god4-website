@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 
 async function openReader(page){
@@ -68,7 +69,7 @@ test('Reader toolbar and More reflow from desktop through 320px', async ({page})
     await page.locator('#readerContent [data-verse-number="45"]').scrollIntoViewIfNeeded();
     const geometry = await page.evaluate(() => {
       const toolbar = document.querySelector('.reader-toolbar');
-      const controls = ['bookSelect', 'chapterSelect', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
+      const controls = ['scripturePickerTrigger', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
         .map(id => document.getElementById(id).getBoundingClientRect());
       return {rows:new Set(controls.map(rect => Math.round(rect.top))).size,
         overflow:controls.some(rect => rect.left < 0 || rect.right > innerWidth),
@@ -121,9 +122,10 @@ test('200 percent equivalent reflow keeps Reader, Word Study, Search, Saved, and
 
 test('Reader primary controls follow native keyboard order and hidden More controls stay out of Tab order', async ({page}) => {
   await openReader(page);
-  await page.locator('#chapterSelect').selectOption('2');
-  const order = ['bookSelect', 'previous', 'chapterSelect', 'next', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn', 'scripturePickerTrigger'];
-  await page.locator('#bookSelect').focus();
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
+  await page.locator('#readerMoreTrigger').click();
+  const order = ['previous', 'scripturePickerTrigger', 'next', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn'];
+  await page.locator('[data-reader-action="previous"]').focus();
   for(let index = 0; index < order.length; index++){
     const actual = await page.evaluate(() => document.activeElement.id || document.activeElement.getAttribute('data-reader-action'));
     expect(actual).toBe(order[index]);
@@ -133,8 +135,6 @@ test('Reader primary controls follow native keyboard order and hidden More contr
   await page.locator('#readerMoreTrigger').click();
   await page.locator('#readerMoreTrigger').press('Tab');
   await expect(page.locator('#fullscreenBtn')).toBeFocused();
-  await page.keyboard.press('Tab');
-  await expect(page.locator('#scripturePickerTrigger')).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(page.locator('#readerVerseNavigation [data-reader-action="next-verse"]')).toBeFocused();
   await page.keyboard.press('Escape');

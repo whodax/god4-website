@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
@@ -139,8 +140,7 @@ test('main application flows stay functional without CSP violations', async ({pa
   await page.locator('.saved-pill').click();
   await expect(page.locator('#trayList .saved-verse-row')).toHaveCount(1);
   await page.locator('#closeTray').click();
-  await page.locator('#chapterSelect').selectOption('2');
-  await page.locator('#readerMoreTrigger').click();
+  await selectReaderOption(page.locator('#chapterSelect'),'2');
   await page.locator('[data-reader-action="next-verse"]').click();
   await expect(page.locator('#readerContent [data-verse-number="1"]')).toHaveClass(/verse-focused/);
   await page.locator('#readerContent [data-word-study-term]').first().click();

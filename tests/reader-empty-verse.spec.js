@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test,expect} = require('@playwright/test');
 const fs = require('node:fs');
 const vm = require('node:vm');
@@ -34,7 +35,7 @@ for(const id of ['web','asv','rv','kjv','ylt','dby','webster','gnv']) test(`${id
     await expect(page.locator(`#verseSelect option[value="${number}"]`)).toHaveCount(renderable?1:0);
     if(renderable){
       await expect(marker).toHaveAttribute('data-verse-text',text);
-      await page.locator('#verseSelect').selectOption(String(number));
+      await selectReaderOption(page.locator('#verseSelect'),String(number));
       await expect(marker).toHaveClass(/verse-focused/);
       await expect(marker).toBeFocused();
     } else {
@@ -47,7 +48,7 @@ for(const id of ['web','asv','rv','kjv','ylt','dby','webster','gnv']) test(`${id
 
 for(const action of ['setReaderVerse','selectReaderVerse','navigateReaderToPassage']) test(`${action} rejects WEB empty 16:25 and clears selection without redirecting`,async ({page}) => {
   await open(page,'web');
-  await page.locator('#verseSelect').selectOption('24');
+  await selectReaderOption(page.locator('#verseSelect'),'24');
   const result=await page.evaluate(async action => {
     const ok=action==='navigateReaderToPassage'?await navigateReaderToPassage('romans',16,25):window[action](25);
     return {ok,book:currentBook,chapter:currentChapter,verse:currentVerse,pending:readerSelectionPending,saved:UserData.readerPosition.load(),cursor:getPlaybackResumeCursor()};
@@ -60,7 +61,7 @@ for(const action of ['setReaderVerse','selectReaderVerse','navigateReaderToPassa
 });
 
 test('stale selector request for an empty coordinate clears the selection',async ({page}) => {
-  await open(page,'web'); await page.locator('#verseSelect').selectOption('24');
+  await open(page,'web'); await selectReaderOption(page.locator('#verseSelect'),'24');
   await page.evaluate(() => {
     const select=document.getElementById('verseSelect');
     select.add(new Option('25','25')); select.value='25'; select.dispatchEvent(new Event('change',{bubbles:true}));
@@ -88,14 +89,14 @@ test('restored WEB Romans 16:25 state keeps the chapter and clears the saved ver
 });
 
 for(const id of ['asv','rv']) test(`${id} previous/next traverses 23 ↔ 25 without offering empty 24`,async ({page}) => {
-  await open(page,id); await page.locator('#verseSelect').selectOption('23');
+  await open(page,id); await selectReaderOption(page.locator('#verseSelect'),'23');
   await page.evaluate(() => nextReaderVerse());
   await expect(page.locator('#verseSelect')).toHaveValue('25');
   await page.evaluate(() => previousReaderVerse());
   await expect(page.locator('#verseSelect')).toHaveValue('23');
 });
 test('WEB last readable verse 24 disables next and leaves the chapter unchanged',async ({page}) => {
-  await open(page,'web'); await page.locator('#verseSelect').selectOption('24');
+  await open(page,'web'); await selectReaderOption(page.locator('#verseSelect'),'24');
   for(const button of await page.locator('[data-reader-action="next-verse"]').all()) await expect(button).toBeDisabled();
   await page.evaluate(() => nextReaderVerse());
   expect(await page.evaluate(() => ({chapter:currentChapter,verse:currentVerse}))).toEqual({chapter:16,verse:24});
@@ -109,11 +110,11 @@ test('synthetic whitespace slots disappear while surrounding text and later coor
   });
   expect(await page.locator('#readerContent .reader-verse').evaluateAll(elements => elements.map(e => [e.dataset.verseNumber,e.dataset.verseText]))).toEqual([['1','  First verse.  '],['5','Last verse.']]);
   expect(await page.locator('#verseSelect option').evaluateAll(options => options.map(o => o.value))).toEqual(['','1','5']);
-  await page.locator('#verseSelect').selectOption('1'); await page.evaluate(() => nextReaderVerse());
+  await selectReaderOption(page.locator('#verseSelect'),'1'); await page.evaluate(() => nextReaderVerse());
   await expect(page.locator('#verseSelect')).toHaveValue('5');
 });
 test('translation switch clears KJV selected 24 when ASV 24 has no text',async ({page}) => {
-  await open(page,'kjv'); await page.locator('#verseSelect').selectOption('24');
+  await open(page,'kjv'); await selectReaderOption(page.locator('#verseSelect'),'24');
   await page.evaluate(() => changeTranslation('asv'));
   expect(await page.evaluate(() => currentVerse)).toBe(null);
   await expect(page.locator('#verseSelect')).toHaveValue('');
@@ -135,7 +136,7 @@ test('retained WEB renders without empty placeholders using cached Reader 26 off
   await page.evaluate(() => initializeBibleExperience());
   expect(await page.evaluate(() => BibleTranslationLoader.retain('web'))).toMatchObject({ok:true,state:'current'});
   const reader=await page.evaluate(async () => {
-    const shell=await caches.open('god4-shell-compact-reader-33');
+    const shell=await caches.open('god4-shell-compact-reader-34');
     return (await shell.match('/js/bible/reader.js')).text();
   });
   expect(reader).toContain('function isRenderableVerseText(text)');

@@ -57,19 +57,26 @@ function setVoiceStatus(message){
   document.querySelectorAll('.voice-status').forEach(function(status){ status.textContent = message; });
 }
 
+function getReaderDisplayedVerse(){
+  var spoken = document.querySelector('#readerContent .verse-spoken');
+  var verse = spoken ? Number(spoken.getAttribute('data-verse-number')) : currentVerse;
+  return Number.isInteger(verse) && document.querySelector('#readerContent [data-verse-number="' + verse + '"]') ? verse : null;
+}
+
 function updateReaderReferenceDisplay(){
   var passage = document.getElementById('readerContent');
   var heading = passage && passage.querySelector('h2');
   if(!heading) return;
   var book = heading.getAttribute('data-book-id');
   var chapter = Number(heading.getAttribute('data-chapter'));
-  var spoken = passage.querySelector('.verse-spoken');
-  var verse = spoken ? Number(spoken.getAttribute('data-verse-number')) : currentVerse;
-  var selected = Number.isInteger(verse) && passage.querySelector('[data-verse-number="' + verse + '"]');
+  var verse = getReaderDisplayedVerse();
   var reference = heading.getAttribute('data-book-name') + ' ' + chapter;
-  if(book === currentBook && chapter === currentChapter && selected) reference += ':' + verse;
-  // Reuse the visible heading; playback never changes saved selection or focus.
-  if(heading.textContent !== reference) heading.textContent = reference;
+  if(book === currentBook && chapter === currentChapter && verse !== null) reference += ':' + verse;
+  var label = document.getElementById('readerReferenceText');
+  var launcher = document.getElementById('scripturePickerTrigger');
+  if(label && label.textContent !== reference) label.textContent = reference;
+  if(launcher) launcher.setAttribute('aria-label', 'Choose Scripture, ' + reference);
+  if(typeof ScripturePicker !== 'undefined') ScripturePicker.sync();
 }
 
 function updateReaderControls(){

@@ -1,3 +1,4 @@
+const {selectReaderOption}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 
 async function startGeometry(page){
@@ -60,11 +61,12 @@ for(const [name,viewport] of [['desktop',{width:1280,height:900}],['mobile',{wid
         await expectStart(page);
         await expect(page.locator(`[data-reader-action="${action}"]`)).toBeFocused();
       }
+      await page.locator('#readerMoreTrigger').click();
       await page.locator('#bookSelect').focus();
-      await page.locator('#bookSelect').selectOption('psalms');
+      await selectReaderOption(page.locator('#bookSelect'),'psalms');
       await expectStart(page); await expect(page.locator('#bookSelect')).toBeFocused();
       await page.locator('#chapterSelect').focus();
-      await page.locator('#chapterSelect').selectOption('23');
+      await selectReaderOption(page.locator('#chapterSelect'),'23');
       await expectStart(page); await expect(page.locator('#chapterSelect')).toBeFocused();
       await page.evaluate(()=>handleVoiceCommand('Open Romans 8'));
       await expectStart(page);
