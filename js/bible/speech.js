@@ -517,6 +517,7 @@ var BibleSpeech = (function createBibleSpeech(){
     var nextIndex = repeatState ? repeatState.continuationVerseIndex : pendingNext ? verseIndex : verseIndex + 1;
     return {
       status: state,
+      isChapter: sequenceIsChapter,
       currentVerse: currentVerseIndex >= 0 && verses[currentVerseIndex] ? verses[currentVerseIndex].verseNumber : null,
       nextVerse: state !== 'idle' && verses[nextIndex] ? verses[nextIndex].verseNumber : null,
       repeatActive: Boolean(repeatState),

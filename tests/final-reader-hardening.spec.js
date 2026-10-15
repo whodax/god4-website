@@ -122,7 +122,7 @@ test('200 percent equivalent reflow keeps Reader, Word Study, Search, Saved, and
 test('Reader primary controls follow native keyboard order and hidden More controls stay out of Tab order', async ({page}) => {
   await openReader(page);
   await page.locator('#chapterSelect').selectOption('2');
-  const order = ['bookSelect', 'previous', 'chapterSelect', 'next', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn'];
+  const order = ['bookSelect', 'previous', 'chapterSelect', 'next', 'verseSelect', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn', 'scripturePickerTrigger'];
   await page.locator('#bookSelect').focus();
   for(let index = 0; index < order.length; index++){
     const actual = await page.evaluate(() => document.activeElement.id || document.activeElement.getAttribute('data-reader-action'));
@@ -133,6 +133,8 @@ test('Reader primary controls follow native keyboard order and hidden More contr
   await page.locator('#readerMoreTrigger').click();
   await page.locator('#readerMoreTrigger').press('Tab');
   await expect(page.locator('#fullscreenBtn')).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expect(page.locator('#scripturePickerTrigger')).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(page.locator('#readerVerseNavigation [data-reader-action="next-verse"]')).toBeFocused();
   await page.keyboard.press('Escape');

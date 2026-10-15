@@ -963,7 +963,7 @@ test('Read Aloud highlights each spoken verse without changing the selected vers
     Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
-      speak(utterance) { window.__speech.utterances.push(utterance); },
+      speak(utterance) { window.__speech.utterances.push(utterance); utterance.onstart?.(); },
       pause() { window.__speech.pauses++; },
       resume() { window.__speech.resumes++; },
       cancel() { window.__speech.cancels++; }
@@ -1018,7 +1018,7 @@ test('single-verse Read Aloud combines spoken and selected states and clears on 
     Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
-      speak(utterance) { window.__speech.utterances.push(utterance); },
+      speak(utterance) { window.__speech.utterances.push(utterance); utterance.onstart?.(); },
       pause() {},
       resume() {},
       cancel() {}
@@ -1051,7 +1051,7 @@ test('Reader chapter and book navigation clear stale spoken highlights', async (
     Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
-      speak(utterance) { window.__speech.utterances.push(utterance); },
+      speak(utterance) { window.__speech.utterances.push(utterance); utterance.onstart?.(); },
       pause() {},
       resume() {},
       cancel() { window.__speech.cancels++; }
@@ -1082,7 +1082,7 @@ test('fullscreen Reader shares spoken-verse progression without moving focus', a
     Object.defineProperty(window, 'AudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'webkitAudioContext', {configurable:true,value:undefined});
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
-      speak(utterance) { window.__speech.utterances.push(utterance); },
+      speak(utterance) { window.__speech.utterances.push(utterance); utterance.onstart?.(); },
       pause() {},
       resume() {},
       cancel() {}
@@ -4724,9 +4724,10 @@ test('spoken follow waits for the utterance to actually start', async ({ page })
     window.scrollTo(0, 0);
     readCurrentChapterAloud(30);
   });
-  await expect(page.locator('#readerContent [data-verse-number="30"]')).toHaveClass(/verse-spoken/);
+  await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
   expect(await page.evaluate(() => window.__followScrolls)).toEqual([]);
   await page.evaluate(() => window.__speech.utterances[0].onstart());
+  await expect(page.locator('#readerContent [data-verse-number="30"]')).toHaveClass(/verse-spoken/);
   expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'smooth'}]);
 });
 
