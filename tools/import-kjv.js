@@ -4,21 +4,7 @@ const path = require('path');
 const sourceFile = path.resolve(process.argv[2] || 'vendor/kjv/eng-kjv_vpl.txt');
 const outputFile = path.resolve(__dirname, '..', 'js', 'bible', 'kjv.js');
 
-const books = [
-  ['GEN', 'genesis', 'Genesis'], ['EXO', 'exodus', 'Exodus'], ['LEV', 'leviticus', 'Leviticus'], ['NUM', 'numbers', 'Numbers'], ['DEU', 'deuteronomy', 'Deuteronomy'],
-  ['JOS', 'joshua', 'Joshua'], ['JDG', 'judges', 'Judges'], ['RUT', 'ruth', 'Ruth'], ['1SA', '1-samuel', '1 Samuel'], ['2SA', '2-samuel', '2 Samuel'],
-  ['1KI', '1-kings', '1 Kings'], ['2KI', '2-kings', '2 Kings'], ['1CH', '1-chronicles', '1 Chronicles'], ['2CH', '2-chronicles', '2 Chronicles'], ['EZR', 'ezra', 'Ezra'],
-  ['NEH', 'nehemiah', 'Nehemiah'], ['EST', 'esther', 'Esther'], ['JOB', 'job', 'Job'], ['PSA', 'psalms', 'Psalms'], ['PRO', 'proverbs', 'Proverbs'],
-  ['ECC', 'ecclesiastes', 'Ecclesiastes'], ['SOL', 'song-of-solomon', 'Song of Solomon'], ['ISA', 'isaiah', 'Isaiah'], ['JER', 'jeremiah', 'Jeremiah'], ['LAM', 'lamentations', 'Lamentations'],
-  ['EZE', 'ezekiel', 'Ezekiel'], ['DAN', 'daniel', 'Daniel'], ['HOS', 'hosea', 'Hosea'], ['JOE', 'joel', 'Joel'], ['AMO', 'amos', 'Amos'], ['OBA', 'obadiah', 'Obadiah'],
-  ['JON', 'jonah', 'Jonah'], ['MIC', 'micah', 'Micah'], ['NAH', 'nahum', 'Nahum'], ['HAB', 'habakkuk', 'Habakkuk'], ['ZEP', 'zephaniah', 'Zephaniah'], ['HAG', 'haggai', 'Haggai'],
-  ['ZEC', 'zechariah', 'Zechariah'], ['MAL', 'malachi', 'Malachi'], ['MAT', 'matthew', 'Matthew'], ['MAR', 'mark', 'Mark'], ['LUK', 'luke', 'Luke'], ['JOH', 'john', 'John'],
-  ['ACT', 'acts', 'Acts'], ['ROM', 'romans', 'Romans'], ['1CO', '1-corinthians', '1 Corinthians'], ['2CO', '2-corinthians', '2 Corinthians'], ['GAL', 'galatians', 'Galatians'],
-  ['EPH', 'ephesians', 'Ephesians'], ['PHI', 'philippians', 'Philippians'], ['COL', 'colossians', 'Colossians'], ['1TH', '1-thessalonians', '1 Thessalonians'], ['2TH', '2-thessalonians', '2 Thessalonians'],
-  ['1TI', '1-timothy', '1 Timothy'], ['2TI', '2-timothy', '2 Timothy'], ['TIT', 'titus', 'Titus'], ['PHM', 'philemon', 'Philemon'], ['HEB', 'hebrews', 'Hebrews'],
-  ['JAM', 'james', 'James'], ['1PE', '1-peter', '1 Peter'], ['2PE', '2-peter', '2 Peter'], ['1JO', '1-john', '1 John'], ['2JO', '2-john', '2 John'], ['3JO', '3-john', '3 John'],
-  ['JUD', 'jude', 'Jude'], ['REV', 'revelation', 'Revelation']
-];
+const books = require('../js/bible/canon.js').sourceBooks('web','vpl');
 
 if(!fs.existsSync(sourceFile)) throw new Error(`KJV VPL source file not found: ${sourceFile}`);
 const source = fs.readFileSync(sourceFile, 'utf8').replace(/^\uFEFF/, '');

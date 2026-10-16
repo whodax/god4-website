@@ -78,7 +78,7 @@ test('ordinary homepage load requests no Bible translation and non-Bible content
   await expect(page.locator('#verseRef')).toHaveText('John 3:16');
   await page.locator('.saved-pill').click();
   await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'false');
-  expect(await page.evaluate(() => ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'].filter(id => BibleTranslationLoader.isLoaded(id)))).toEqual([]);
+  expect(await page.evaluate(() => ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra'].filter(id => BibleTranslationLoader.isLoaded(id)))).toEqual([]);
 });
 
 test('generated metadata validates a loaded translation deterministically', async ({page}) => {
@@ -91,7 +91,7 @@ test('generated metadata validates a loaded translation deterministically', asyn
     unknown: BibleData.validateTranslation('not-allowlisted'),
     demo: BibleData.validateTranslation('demo-local')
   }));
-  expect(metadata.ids).toEqual(['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv']);
+  expect(metadata.ids).toEqual(['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra']);
   expect(metadata.web.path).toBe('/js/bible/web.js');
   expect(metadata.web.revision).toMatch(/^[a-f0-9]{16}$/);
   expect(metadata.web.integrity).toMatch(/^sha256-[A-Za-z0-9+/]+={0,2}$/);

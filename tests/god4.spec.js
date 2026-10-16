@@ -372,7 +372,7 @@ test('Custom Search translation dropdown visibly selects and refreshes DBY', asy
   expect(menuGeometry.menuRect.bottom).toBeGreaterThan(menuGeometry.searchBoxBottom);
   await expect(menu.locator('[data-translation-id="dby"]')).toBeVisible();
   await expect(menu.locator('[data-translation-id="dby"]')).toBeEnabled();
-  await expect(menu.locator('[role="option"]')).toHaveCount(8);
+  await expect(menu.locator('[role="option"]')).toHaveCount(9);
   await expect(menu.locator('[data-translation-id="demo-local"]')).toHaveCount(0);
   await search.fill('fear');
   await page.getByRole('button', { name: 'Search', exact: true }).click();
@@ -410,10 +410,10 @@ test('Custom Search translation dropdown supports keyboard focus, navigation, se
   await option('web').press('ArrowDown');
   await expect(option('asv')).toBeFocused();
   await option('asv').press('End');
+  await expect(option('dra')).toBeFocused();
+  await option('dra').press('ArrowUp');
   await expect(option('gnv')).toBeFocused();
-  await option('gnv').press('ArrowUp');
-  await expect(option('rv')).toBeFocused();
-  await option('rv').press('Home');
+  await option('gnv').press('Home');
   await expect(option('web')).toBeFocused();
   await option('web').press('Escape');
   await expect(menu).toBeHidden();
@@ -450,7 +450,7 @@ test('Bible data interface exposes the current local dataset', async ({ page }) 
     chapterCount: BibleData.getChapterCount('demo-local', 'john'),
     verse: BibleData.getVerse('demo-local', 'john', 1, 1).text
   }))).toEqual({
-    translations: ['demo-local', 'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'],
+    translations: ['demo-local', 'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra'],
     books: ['john', 'psalms', 'romans', 'genesis', 'matthew', 'philippians'],
     chapterCount: 3,
     verse: 'In the beginning was the Word, and the Word was with God, and the Word was God.'
@@ -835,7 +835,7 @@ for (const storedTranslation of ['missing-translation', 'demo-local']) {
 
 test('Reader offers real translations while retaining demo fixtures', async ({ page }) => {
   const ids = await page.locator('#readerTranslation option').evaluateAll((options) => options.map((option) => option.value));
-  expect(ids).toEqual(['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv']);
+  expect(ids).toEqual(['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra']);
   expect(await page.evaluate(() => BibleData.getVerse('demo-local', 'john', 1, 1).text)).toBeTruthy();
 });
 
@@ -3297,7 +3297,7 @@ test('fullscreen Reader keeps the same verse-navigation row inside More', async 
     parent: element.parentElement && element.parentElement.id,
     position: getComputedStyle(element).position,
     nextSibling: element.nextElementSibling && element.nextElementSibling.id
-  }))).toEqual({ parent: 'readerSecondaryControls', position: 'static', nextSibling: '' });
+  }))).toEqual({ parent: 'readerSecondaryControls', position: 'static', nextSibling: 'readerSaveVerse' });
 
   await row.locator('[data-reader-action="next-verse"]').click();
   await expect(page.locator('#verseSelect')).toHaveValue('1');

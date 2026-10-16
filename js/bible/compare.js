@@ -4,6 +4,7 @@ const compareState = { count: 2, selections: ['', '', '', ''], persisted: false 
 const compareReference = { bookId: '', chapter: 1, verse: null };
 let compareLoadRequest = 0;
 let compareInitialized = false;
+let compareReferenceTranslation = currentTranslation;
 
 function loadCompareState(){
   var stored = UserData.compare.load();
@@ -44,6 +45,10 @@ function getCompareBooks(){
       if(!books.some(function(existing){ return existing.id === book.id; })) books.push(book);
     });
   });
+  if(books.some(function(book){ return BibleCanon.book(book.id) && BibleCanon.book(book.id).canons.length===1; })){
+    var order=BibleCanon.order('dra');
+    books.sort(function(a,b){return order.indexOf(a.id)-order.indexOf(b.id);});
+  }
   return books;
 }
 
@@ -86,10 +91,14 @@ function setCompareReference(reference){
   var books = getCompareBooks();
   var book = books.find(function(item){ return item.id === reference.bookId; }) || books[0];
   if(!book) return;
+  if(!BibleData.getChapterCount(compareReferenceTranslation,book.id)){
+    var owner=getCompareTranslations().find(function(t){return BibleData.getChapterCount(t.id,book.id)>0;});
+    if(owner) compareReferenceTranslation=owner.id;
+  }
   var chapterCount = getCompareChapterCount(book.id);
   var chapter = Number(reference.chapter);
   if(!Number.isInteger(chapter) || chapter < 1 || chapter > chapterCount) chapter = 1;
-  var chapterData = getCompareChapter(currentTranslation, book.id, chapter);
+  var chapterData = getCompareChapter(compareReferenceTranslation, book.id, chapter);
   var verse = reference.verse;
   if(verse !== null){
     if(!Number.isInteger(verse) || !chapterData) verse = null;
@@ -149,6 +158,7 @@ function syncCompareControls(){
 }
 
 function initializeCompareReference(){
+  compareReferenceTranslation=currentTranslation;
   setCompareReference(getReaderCompareReference());
   syncCompareControls();
 }
@@ -178,7 +188,7 @@ function getCompareVerses(translationId){
   if(typeof BibleData === 'undefined') return null;
   var reference = getCompareReference();
   var chapter = BibleData.getChapter(translationId, reference.bookId, reference.chapter);
-  if(!chapter) return null;
+  if(!chapter || !BibleCanon.comparable(compareReferenceTranslation,translationId,reference.bookId)) return null;
   if(reference.verse){
     var verse = BibleData.getVerse(translationId, reference.bookId, reference.chapter, reference.verse);
     return verse ? [{ number: verse.verse, text: verse.text }] : null;
@@ -286,7 +296,9 @@ function renderCompareColumn(translationId, index){
   });
   content += '</select></div><div class="compare-text">';
   if(!verses){
-    content += '<p class="compare-unavailable">Passage unavailable in this translation.</p>';
+    var present=BibleData.getChapter(translationId,compareReference.bookId,compareReference.chapter);
+    var numbering=present && !BibleCanon.comparable(compareReferenceTranslation,translationId,compareReference.bookId);
+    content += '<p class="compare-unavailable" role="status">'+(numbering ? 'Numbering differs between these editions. An equivalent passage has not been established.' : translationId==='dra' || compareReferenceTranslation==='dra' ? 'Not available in this translation.' : 'Passage unavailable in this translation.')+'</p>';
   } else {
     verses.forEach(function(verse){
       content += '<p><span class="vnum">' + escapeHtml(verse.number) + '</span>' + escapeHtml(verse.text) + '</p>';

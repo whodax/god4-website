@@ -2,7 +2,7 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-37';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-38';
 const PREVIOUS_SHELL_CACHE = CACHE_PREFIX + 'compact-reader-24';
 const VENDOR_PATH = '/js/vendor/supabase-js-2.117.0.min.js';
 const VENDOR_CACHE_PREFIX = 'god4-auth-vendor-';
@@ -14,7 +14,7 @@ const HOME_URL = '/';
 const OFFLINE_URL = '/offline';
 const TRANSLATION_PATHS = new Set([
   '/js/bible/web.js', '/js/bible/asv.js', '/js/bible/kjv.js', '/js/bible/ylt.js',
-  '/js/bible/dby.js', '/js/bible/webster.js', '/js/bible/rv.js', '/js/bible/gnv.js'
+  '/js/bible/dby.js', '/js/bible/webster.js', '/js/bible/rv.js', '/js/bible/gnv.js', '/js/bible/dra.js'
 ]);
 const SHELL_ASSETS = [
   HOME_URL,
@@ -33,6 +33,7 @@ const SHELL_ASSETS = [
   '/css/account.css?v=20260924-1',
   '/js/bible/library.js',
   '/js/bible/translation-manifest.js',
+  '/js/bible/canon.js',
   '/js/bible/data.js',
   '/js/bible/translation-loader.js',
   '/js/storage/local-provider.js',

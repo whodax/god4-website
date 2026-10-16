@@ -3,7 +3,7 @@ var OfflineBiblesRuntime = (function(){
   'use strict';
   if(window.OfflineBiblesRuntime) return window.OfflineBiblesRuntime;
 
-  var translationIds = ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'];
+  var translationIds = ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra'];
   var allowedStates = ['not-retained', 'current', 'update-available'];
   var trigger, dialog, title, closeButton, list, bibleStorage, siteStorage, status;
   var translations, initialized = false, dialogGeneration = 0;

@@ -1,0 +1,26 @@
+{
+  "editionId": "engDRA",
+  "translationId": "dra",
+  "editionName": "Douay-Rheims American Edition of 1899",
+  "copyrightStatus": "Public Domain",
+  "sourceUrl": "https://ebible.org/Scriptures/engDRA_usfm.zip",
+  "rightsUrl": "https://ebible.org/engDRA/copyright.htm",
+  "sourceFilesDate": "2022-11-03",
+  "retrievedDate": "2026-10-15",
+  "importTool": "tools/import-dra.js",
+  "archiveSha256": "5cde28923f69015ac56c081e8732d9c8bc30ba5be843d70a7c1cab5677ebaa93",
+  "sourceChecksums": "data/dra-source-checksums.json",
+  "normalization": [
+    "Remove USFM presentation and word-attribute markup",
+    "Collapse whitespace between text fragments",
+    "Preserve Scripture wording, punctuation and chapter/verse coordinates",
+    "Use application display names and configured Catholic book order"
+  ],
+  "structure": {
+    "books": 73,
+    "oldTestamentBooks": 46,
+    "newTestamentBooks": 27,
+    "chapters": 1334,
+    "verses": 35811
+  }
+}

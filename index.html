@@ -154,6 +154,7 @@
               <button type="button" data-reader-action="previous-verse" aria-label="Previous Verse">&#8592; Previous Verse</button>
               <button type="button" data-reader-action="next-verse" aria-label="Next Verse">Next Verse &#8594;</button>
             </div>
+            <button id="readerSaveVerse" type="button" disabled>Save verse</button>
             <div class="reader-detailed-navigation" role="group" aria-label="Detailed Scripture navigation">
           <label class="sr-only" for="bookSelect">Bible book</label>
           <select id="bookSelect">
@@ -199,6 +200,7 @@
           </div>
         </div>
         <div class="voice-status" id="voiceStatusTop" role="status" aria-live="polite">Ready for a voice command.</div>
+        <p id="readerTranslationStatus" class="reader-audio-status" role="status" aria-live="polite"></p>
         <div id="readAloudStatus" class="reader-audio-status" role="status" aria-live="polite"></div>
         <section id="wordStudyPanel" class="word-study-panel" aria-labelledby="wordStudyHeading" hidden>
           <div class="word-study-header">
@@ -444,6 +446,7 @@
 </div>
 <script defer src="js/bible/library.js"></script>
 <script defer src="js/bible/translation-manifest.js"></script>
+<script defer src="js/bible/canon.js"></script>
 <script defer src="js/bible/data.js"></script>
 <script defer src="js/bible/translation-loader.js"></script>
 <script defer src="js/storage/local-provider.js"></script>

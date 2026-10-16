@@ -2,6 +2,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const canon = require('../js/bible/canon.js');
 
 const root = path.resolve(__dirname, '..');
 const outputPath = path.join(root, 'js', 'bible', 'translation-manifest.js');
@@ -13,7 +14,8 @@ const translations = Object.freeze([
   {id: 'dby', path: '/js/bible/dby.js', variable: 'dbyLibrary'},
   {id: 'webster', path: '/js/bible/webster.js', variable: 'websterLibrary'},
   {id: 'rv', path: '/js/bible/rv.js', variable: 'rvLibrary'},
-  {id: 'gnv', path: '/js/bible/gnv.js', variable: 'gnvLibrary'}
+  {id: 'gnv', path: '/js/bible/gnv.js', variable: 'gnvLibrary'},
+  {id: 'dra', path: '/js/bible/dra.js', variable: 'draLibrary'}
 ]);
 
 function approvedFile(definition){
@@ -45,8 +47,9 @@ function readLibrary(definition, source){
 
 function structuralMetadata(definition, library){
   const bookIds = Object.keys(library);
-  if(bookIds.length !== 66){
-    throw new Error(`${definition.id} must contain exactly 66 books; found ${bookIds.length}`);
+  const expected=canon.order(definition.id);
+  if(JSON.stringify(bookIds)!==JSON.stringify(expected)){
+    throw new Error(`${definition.id} book membership/order does not match configured canon`);
   }
 
   let chapterCount = 0;

@@ -150,7 +150,7 @@ if (!translationProtocolSource.includes("'god4-bible-candidates-v1'") ||
   process.exit(1);
 }
 const shellList = /const SHELL_ASSETS = \[([\s\S]*?)\n\];/.exec(workerSource);
-if (!shellList || /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js/.test(shellList[1])) {
+if (!shellList || /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv|dra)\.js/.test(shellList[1])) {
   console.error('Service worker shell cache must not contain Bible translation bundles');
   process.exit(1);
 }

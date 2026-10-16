@@ -68,7 +68,7 @@ test('manifest is generated correctly, WEB changes as expected and all other met
   assert.notEqual(manifest.web.integrity, repair.baseline.manifest.web.integrity);
   assert.equal(manifest.web.structure.chapterCount, repair.baseline.manifest.web.structure.chapterCount - 1);
   assert.equal(manifest.web.structure.verseCount, repair.baseline.manifest.web.structure.verseCount);
-  for(const id of Object.keys(manifest).filter(id => id !== 'web')) assert.deepEqual(manifest[id], repair.baseline.manifest[id]);
+  for(const id of Object.keys(repair.baseline.manifest).filter(id => id !== 'web')) assert.deepEqual(manifest[id], repair.baseline.manifest[id]);
 });
 test('BibleData accepts corrected WEB and returns correct Psalm identities, verse slots and boundaries', () => {
   const context = vm.createContext({});

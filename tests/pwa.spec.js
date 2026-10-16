@@ -5,8 +5,8 @@ const path = require('path');
 const translationManifestGenerator = require('../tools/generate-translation-manifest.js');
 
 const root = path.resolve(__dirname, '..');
-const translationPattern = /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/;
-const shellCacheName = 'god4-shell-compact-reader-37';
+const translationPattern = /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv|dra)\.js$/;
+const shellCacheName = 'god4-shell-compact-reader-38';
 
 async function installAndControl(page) {
   await page.goto('/');
@@ -134,7 +134,7 @@ test('new Reader shell replaces the prior shell while retaining an Offline Bible
     shellCacheName, 'god4-bible-candidates-v1', 'god4-bible-ready-v1'
   ]);
   const cachedShell = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-37');
+    const shell = await caches.open('god4-shell-compact-reader-38');
     const css = await (await shell.match('/css/components.css')).text();
     const html = await (await shell.match('/')).text();
     const reader = await (await shell.match('/js/bible/reader.js')).text();
@@ -189,7 +189,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
   });
   expect(freshList.ok).toBe(true);
   expect(freshList.items.map(item => item.id)).toEqual([
-    'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'
+    'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra'
   ]);
   expect(freshList.items.every(item => item.state === 'not-retained' && item.active === null)).toBe(true);
   expect(await page.evaluate(() => caches.keys())).toEqual([shellCacheName]);
@@ -299,10 +299,10 @@ test('worker translation protocol requires approved messages, promotes explicitl
   expect(storedActive).toEqual(expectedActive);
 
   const shellTranslationEntries = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-37');
+    const shell = await caches.open('god4-shell-compact-reader-38');
     return (await shell.keys())
       .map(request => new URL(request.url).pathname)
-      .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(pathname));
+      .filter(pathname => /\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv|dra)\.js$/.test(pathname));
   });
   expect(shellTranslationEntries).toEqual([]);
 
@@ -355,7 +355,7 @@ test('worker translation protocol requires approved messages, promotes explicitl
     id:'web'
   })).resolves.toMatchObject({activeRevision:null, active:null});
   const postRemovalState = await page.evaluate(async () => {
-    const shell = await caches.open('god4-shell-compact-reader-37');
+    const shell = await caches.open('god4-shell-compact-reader-38');
     const ready = await caches.open('god4-bible-ready-v1');
     return {
       shellHasApp:Boolean(await shell.match('/js/app.js')),
@@ -452,7 +452,7 @@ test('first-ever Offline Bibles activation works offline after shell installatio
   expect(await page.evaluate(() => typeof OfflineBiblesRuntime)).toBe('undefined');
   expect(await page.locator('.offline-bibles-row').count()).toBe(0);
   const assets = await page.evaluate(async () => {
-    const cache = await caches.open('god4-shell-compact-reader-37');
+    const cache = await caches.open('god4-shell-compact-reader-38');
     return Promise.all(['/js/pwa/offline-translations-loader.js', '/js/pwa/offline-translations.js'].map(async key => Boolean(await cache.match(key))));
   });
   expect(assets).toEqual([true, true]);
@@ -460,7 +460,7 @@ test('first-ever Offline Bibles activation works offline after shell installatio
   await page.reload({waitUntil:'domcontentloaded'});
   expect(await page.evaluate(() => typeof OfflineBiblesRuntime)).toBe('undefined');
   await page.evaluate(() => document.getElementById('offlineBiblesTrigger').click());
-  await expect(page.locator('.offline-bibles-row-status')).toHaveText(Array(8).fill('Not downloaded'));
+  await expect(page.locator('.offline-bibles-row-status')).toHaveText(Array(9).fill('Not downloaded'));
   await expect(page.locator('#offlineBiblesTitle')).toBeFocused();
   const resource = await page.evaluate(() => {
     const entry = performance.getEntriesByType('resource').find(value => value.name.endsWith('/js/pwa/offline-translations.js'));
@@ -472,11 +472,11 @@ test('first-ever Offline Bibles activation works offline after shell installatio
   await expect(page.locator('#offlineBiblesTrigger')).toBeFocused();
 });
 
-test('active Offline Bibles waits for explicit shell 36 to 37 acceptance and preserves Bible/vendor caches', async ({page}) => {
+test('active Offline Bibles waits for explicit shell 37 to 38 acceptance and preserves Bible/vendor caches', async ({page}) => {
   test.setTimeout(60000);
   const http = require('http');
-  let version = 36;
-  const priorShellSource = require('child_process').execFileSync('git', ['show', '9860c15:sw.js'], {encoding:'utf8'});
+  let version = 37;
+  const priorShellSource = require('child_process').execFileSync('git', ['show', '27952a4be229a7f324e75a5e985093774e6df2d3:sw.js'], {encoding:'utf8'});
   const types = {'.html':'text/html', '.js':'application/javascript', '.css':'text/css', '.json':'application/json', '.webmanifest':'application/manifest+json', '.png':'image/png'};
   const server = http.createServer((request, response) => {
     const pathname = new URL(request.url, 'http://localhost').pathname;
@@ -485,7 +485,7 @@ test('active Offline Bibles waits for explicit shell 36 to 37 acceptance and pre
     if(!file.startsWith(root + path.sep)){ response.writeHead(403).end(); return; }
     try {
       let body = fs.readFileSync(file);
-      if(pathname === '/sw.js') body = Buffer.from(version === 36 ? priorShellSource : body);
+      if(pathname === '/sw.js') body = Buffer.from(version === 37 ? priorShellSource : body);
       if(translationPattern.test(pathname)) body = translationManifestGenerator.canonicalDeployBytes(body);
       response.writeHead(200, {'content-type':types[path.extname(file)] || 'application/octet-stream', 'cache-control':'no-store'});
       response.end(body);
@@ -505,12 +505,12 @@ test('active Offline Bibles waits for explicit shell 36 to 37 acceptance and pre
     await expect.poll(() => page.evaluate(() => caches.keys())).toContain('god4-auth-vendor-supabase-js-2.117.0');
     await page.evaluate(() => document.getElementById('offlineBiblesTrigger').click());
     await expect(page.locator('[data-translation-id="web"] .offline-bibles-action')).toHaveText('Remove');
-    version = 37;
+    version = 38;
     await page.evaluate(async () => { const registration = await navigator.serviceWorker.getRegistration(); await registration.update(); });
     await expect(page.locator('#pwaStatusMessage')).toHaveText('A GOD4.us update is ready.');
     await expect(page.locator('#offlineBiblesDialog')).toBeVisible();
-    expect(await page.evaluate(() => caches.keys())).toContain('god4-shell-compact-reader-36');
-    expect(await page.evaluate(async () => (await (await caches.open('god4-shell-compact-reader-36')).keys()).map(request => new URL(request.url).pathname))).toContain('/js/bible/scripture-picker.js');
+    expect(await page.evaluate(() => caches.keys())).toContain('god4-shell-compact-reader-37');
+    expect(await page.evaluate(async () => (await (await caches.open('god4-shell-compact-reader-37')).keys()).map(request => new URL(request.url).pathname))).toContain('/js/bible/scripture-picker.js');
     await page.keyboard.press('Escape');
     // The actionable update notice must also coexist with the Plan return control.
     await page.setViewportSize({width:320,height:720});
@@ -522,10 +522,10 @@ test('active Offline Bibles waits for explicit shell 36 to 37 acceptance and pre
     await expect(page.locator('#view-plan')).toHaveClass(/active/);
     await expect(page.locator('#pwaUpdateButton')).toBeVisible();
     await Promise.all([page.waitForEvent('load'), page.locator('#pwaUpdateButton').click()]);
-    await expect.poll(() => page.evaluate(() => caches.keys())).not.toContain('god4-shell-compact-reader-36');
+    await expect.poll(() => page.evaluate(() => caches.keys())).not.toContain('god4-shell-compact-reader-37');
     const keys = await page.evaluate(() => caches.keys());
-    expect(keys).toContain('god4-shell-compact-reader-37');
-    expect(await page.evaluate(async () => (await (await caches.open('god4-shell-compact-reader-37')).keys()).map(request => new URL(request.url).pathname))).toContain('/js/bible/scripture-picker.js');
+    expect(keys).toContain('god4-shell-compact-reader-38');
+    expect(await page.evaluate(async () => (await (await caches.open('god4-shell-compact-reader-38')).keys()).map(request => new URL(request.url).pathname))).toContain('/js/bible/scripture-picker.js');
     expect(keys).toContain('god4-bible-ready-v1');
     expect(keys).toContain('god4-auth-vendor-supabase-js-2.117.0');
     await expect(workerMessage(page, {type:'BIBLE_TRANSLATION_STATUS', id:'web'})).resolves.toMatchObject({ok:true, active:{id:'web'}});

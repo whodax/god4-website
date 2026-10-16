@@ -104,7 +104,7 @@ const ScripturePicker = (function(){
   function renderBooks(){
     booksArea.replaceChildren();
     BibleData.listBooks(translation).filter(function(item){
-      return item.name.toLowerCase().includes(search.value.trim().toLowerCase());
+      return BibleCanon.matches(item.id,item.name,search.value,true);
     }).forEach(function(item){
       booksArea.appendChild(button(item.name, 'book', item.id, item.id === book));
     });
