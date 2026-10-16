@@ -203,3 +203,37 @@ test('offline fullscreen verse replacement preserves local playback and Reader f
   await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
   await expect(page.locator('[data-reader-action="next-verse"]')).toBeFocused();
 });
+
+for(const [translationId,bookId,chapter] of [['dra','daniel',13],['dra','daniel',14],['web','john',1]])for(const cloud of [false,true]){
+  test(`sequential ${cloud?'cloud':'native'} ${translationId} ${bookId} ${chapter} never flashes the selected first verse`,async({page})=>{
+    await install(page,{cloud,deferStart:!cloud,deferDecode:cloud});
+    await page.evaluate(async({translationId,bookId,chapter})=>{
+      await changeTranslation(translationId);
+      await navigateReaderToPassage(bookId,chapter,1);
+      window.__originalReaderVerse=document.querySelector('#readerContent [data-verse-number="1"]');
+    },{translationId,bookId,chapter});
+    await page.locator('#readAloudPlay').click();
+    for(let verse=1;verse<=4;verse++){
+      if(cloud){
+        await expect.poll(()=>page.evaluate(()=>window.__highlight.decodes.length)).toBe(verse);
+        await page.evaluate(index=>window.__highlight.decodes[index](),verse-1);
+      }else await page.evaluate(()=>window.__highlight.utterances.at(-1).onstart());
+      await active(page,verse);
+      expect(await page.evaluate(()=>currentSpokenVerse)).toBe(verse);
+      await advance(page,cloud);
+      if(cloud)await expect.poll(()=>page.evaluate(()=>window.__highlight.decodes.length)).toBe(verse+1);
+      await page.evaluate(()=>new Promise(requestAnimationFrame));
+      const between=await page.evaluate(()=>({
+        spoken:currentSpokenVerse,last:lastSpokenVerse,resume:getPlaybackResumeCursor(),
+        selected:currentVerse,
+        owns:document.getElementById('readerContent').classList.contains('speech-owns-highlight'),
+        firstBackground:getComputedStyle(window.__originalReaderVerse).backgroundColor,
+        sameChapter:window.__originalReaderVerse===document.querySelector('#readerContent [data-verse-number="1"]')
+      }));
+      expect(between).toEqual({spoken:null,last:{bookId,chapter,verse},resume:{translationId,bookId,chapter,verse:verse+1},selected:1,owns:true,firstBackground:'rgba(0, 0, 0, 0)',sameChapter:true});
+      await active(page,null);
+    }
+    await page.evaluate(()=>stopReader());await active(page,null);
+    expect(await page.locator('#readerContent [data-verse-number="1"]').evaluate(e=>getComputedStyle(e).backgroundColor)).toBe('rgb(255, 243, 205)');
+  });
+}

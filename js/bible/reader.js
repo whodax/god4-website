@@ -367,11 +367,11 @@ function cancelSpokenFollow(){
   target.scrollTo({top:top, behavior:'instant'});
 }
 
-function clearSpokenVerseHighlight(){
+function clearSpokenVerseHighlight(keepSpeechOwnership){
   cancelSpokenFollow();
   currentSpokenVerse = null;
   var passage = document.getElementById('readerContent');
-  if(passage) passage.classList.remove('speech-owns-highlight');
+  if(passage) passage.classList.toggle('speech-owns-highlight', keepSpeechOwnership === true);
   document.querySelectorAll('#readerContent .verse-spoken').forEach(function(element){
     element.classList.remove('verse-spoken');
   });
@@ -1469,8 +1469,9 @@ function closeReaderMore(){
 
 if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener === 'function'){
   BibleSpeech.setPlaybackListener({
-    // Preparation clears the previous verse; only actual playback claims the next.
-    onVerseStart: clearSpokenVerseHighlight,
+    // Preparation clears the previous verse without exposing the selected verse.
+    // Only actual playback claims the next; Stop/end restores selection highlighting.
+    onVerseStart: function(){ clearSpokenVerseHighlight(true); },
     onVerseSpoken: handleSpokenVerseStart,
     onVerseRepeat: handleRepeatedVerse,
     onVerseComplete: completePlaybackVerse,
