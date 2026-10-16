@@ -85,3 +85,46 @@ test('startup does not request DRA; retain/offline Reader/remove use existing pr
  await context.setOffline(false);await page.evaluate(()=>changeTranslation('web'));await page.evaluate(()=>document.getElementById('offlineBiblesTrigger').click());await action.click();await expect(action).toHaveText('Download');
  await page.keyboard.press('Escape');await context.setOffline(true);await page.reload();expect(await page.evaluate(()=>BibleTranslationLoader.ensure('dra'))).toBe(false);
 });
+
+test.describe('Compare Catholic reference regressions',()=>{
+ test.use({serviceWorkers:'block'});
+for(const [book,lastChapter] of [['esther',16],['daniel',14]])test(`Compare refreshes ${book} controls after delayed DRA loading`,async({page})=>{
+ await page.goto('/');await page.evaluate(()=>initializeBibleExperience());
+ await page.evaluate(book=>navigateReaderToPassage(book,1),book);
+ await page.getByRole('button',{name:'Compare',exact:true}).click();
+ await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+ expect(await page.evaluate(()=>BibleData.isTranslationLoaded('dra'))).toBe(false);
+ await expect(page.locator('#compareBook option[value="tobit"]')).toHaveCount(0);
+ await expect(page.locator(`#compareChapter option[value="${lastChapter}"]`)).toHaveCount(0);
+ let release;const pending=new Promise(resolve=>release=resolve);
+ await page.route('**/js/bible/dra.js?*',async route=>{await pending;await route.continue();});
+ const requested=page.waitForRequest(request=>new URL(request.url()).pathname==='/js/bible/dra.js');
+ await page.locator('[data-compare-index="1"]').selectOption('dra');await requested;
+ await expect(page.locator('#compareBook option[value="tobit"]')).toHaveCount(0);
+ release();
+ await expect(page.locator('#compareBook option[value="tobit"]')).toHaveCount(1);
+ await expect(page.locator(`#compareChapter option[value="${lastChapter}"]`)).toHaveCount(1);
+ await expect(page.locator('#compareBook')).toHaveValue(book);
+ await expect(page.locator('#compareChapter')).toHaveValue('1');
+ await expect(page.locator('#view-compare')).toHaveClass(/active/);
+ await page.locator('#compareBook').selectOption('tobit');
+ await expect(page.locator('.compare-col').nth(1).locator('.vnum')).toHaveCount(25);
+});
+
+for(const [book,chapter] of [['esther',11],['esther',12],['esther',13],['esther',14],['esther',15],['esther',16],['daniel',13],['daniel',14]])test(`Compare assigns DRA ownership to ${book} ${chapter} from WEB`,async({page})=>{
+ await page.goto('/');await page.evaluate(()=>initializeBibleExperience());
+ await page.evaluate(()=>BibleTranslationLoader.ensure('dra'));
+ await page.getByRole('button',{name:'Compare',exact:true}).click();
+ await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+ await page.locator('[data-compare-index="1"]').selectOption('dra');
+ await page.locator('#compareBook').selectOption(book);
+ await page.locator('#compareChapter').selectOption(String(chapter));
+ const dra=page.locator('.compare-col').nth(1),web=page.locator('.compare-col').first();
+ const expected=await page.evaluate(([book,chapter])=>BibleData.getChapter('dra',book,chapter).verses,[book,chapter]);
+ await expect(dra.locator('.vnum')).toHaveCount(expected.length);
+ await expect(dra.locator('.compare-text p').first()).toContainText(expected[0]);
+ await expect(web).toContainText('Not available in this translation.');
+ expect(await page.evaluate(()=>getCompareReference())).toEqual({bookId:book,chapter,verse:null});
+ await expect(page.locator('#readerTranslation')).toHaveValue('web');
+});
+});

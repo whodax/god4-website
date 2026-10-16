@@ -91,13 +91,13 @@ function setCompareReference(reference){
   var books = getCompareBooks();
   var book = books.find(function(item){ return item.id === reference.bookId; }) || books[0];
   if(!book) return;
-  if(!BibleData.getChapterCount(compareReferenceTranslation,book.id)){
-    var owner=getCompareTranslations().find(function(t){return BibleData.getChapterCount(t.id,book.id)>0;});
-    if(owner) compareReferenceTranslation=owner.id;
-  }
   var chapterCount = getCompareChapterCount(book.id);
   var chapter = Number(reference.chapter);
   if(!Number.isInteger(chapter) || chapter < 1 || chapter > chapterCount) chapter = 1;
+  if(!BibleData.getChapter(compareReferenceTranslation,book.id,chapter)){
+    var owner=getCompareTranslations().find(function(t){return BibleData.getChapter(t.id,book.id,chapter);});
+    if(owner) compareReferenceTranslation=owner.id;
+  }
   var chapterData = getCompareChapter(compareReferenceTranslation, book.id, chapter);
   var verse = reference.verse;
   if(verse !== null){
@@ -333,6 +333,7 @@ async function loadCompare(positionAfterRender){
   }));
   if(requestId !== compareLoadRequest) return;
   if(!compareReference.bookId) initializeCompareReference();
+  else syncCompareControls();
   updateCompareSummary();
   updateCompareNavigation();
   var columns = [];
