@@ -19,6 +19,7 @@ const types = {
 };
 
 async function startCspServer() {
+  const sockets = new Set();
   const server = http.createServer((request, response) => {
     let pathname;
     try { pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname); }
@@ -38,18 +39,33 @@ async function startCspServer() {
         'Permissions-Policy': 'camera=(), geolocation=(), payment=(), usb=(), microphone=(self)'
       });
       if(translationPaths.has(pathname)) response.end(generator.canonicalDeployBytes(fs.readFileSync(file)));
-      else fs.createReadStream(file).pipe(response);
+      else {
+        const stream = fs.createReadStream(file);
+        response.once('close', () => stream.destroy());
+        stream.once('error', error => response.destroy(error));
+        stream.pipe(response);
+      }
     } catch {
       response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }).end('Not found');
     }
+  });
+  server.on('connection', socket => {
+    sockets.add(socket);
+    socket.once('close', () => sockets.delete(socket));
   });
   await new Promise((resolve, reject) => {
     server.once('error', reject);
     server.listen(0, '127.0.0.1', resolve);
   });
+  let closing;
   return {
     origin: `http://127.0.0.1:${server.address().port}`,
-    close: () => new Promise((resolve, reject) => server.close(error => error ? reject(error) : resolve()))
+    close: () => closing || (closing = new Promise((resolve, reject) => {
+      // Stop accepting first, then release every test-owned transport, including
+      // browser preconnections which have not sent an HTTP request yet.
+      server.close(error => error ? reject(error) : resolve());
+      for (const socket of sockets) socket.destroy();
+    }))
   };
 }
 

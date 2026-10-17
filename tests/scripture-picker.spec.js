@@ -160,9 +160,12 @@ test('opening during a pending translation cannot leave a stale loading dialog',
   await expect(page.locator('#scripturePicker')).not.toBeVisible();
   await expect(page.locator('#scripturePickerTrigger')).toBeFocused();
 });
-test('picker activation and direct navigation remain clean under enforcing CSP',async({page})=>{
+test('picker activation and direct navigation remain clean under enforcing CSP',async({browser})=>{
   const server=await startCspServer();
+  let context;
   try{
+    context=await browser.newContext();
+    const page=await context.newPage();
     await page.addInitScript(()=>{
       window.__pickerViolations=[];
       document.addEventListener('securitypolicyviolation',e=>window.__pickerViolations.push(e.effectiveDirective));
@@ -173,7 +176,10 @@ test('picker activation and direct navigation remain clean under enforcing CSP',
     await choose(page,'isaiah',53);await page.locator('[data-picker-action="verse"][data-value="5"]').click();
     await expect(page.locator('#readerContent [data-verse-number="5"]')).toBeFocused();
     expect(await page.evaluate(()=>window.__pickerViolations)).toEqual([]);
-  }finally{await page.goto('about:blank');await server.close();}
+  }finally{
+    try{await context?.close();}
+    finally{await server.close();}
+  }
 });
 test('shell-installed picker and retained Scripture work on offline reload',async({page,context})=>{
   await page.goto('/');await page.evaluate(()=>initializeBibleExperience());

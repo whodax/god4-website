@@ -17,6 +17,9 @@ async function tapVisibleTab(page,name){
   // Raw touch coordinates cannot auto-scroll an offscreen control into view.
   await page.touchscreen.tap(point.x,point.y);
   await expect(page.locator(`#view-${name}`)).toHaveClass(/active/);
+  // Compare's active class (and aria-busy=false) precedes translation rendering
+  // and its final scroll. Do not sample the return tab until that work finishes.
+  if(name==='compare') await page.evaluate(()=>window.__compareTabActivation);
   await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});
 }
 
@@ -26,6 +29,13 @@ test.describe('mobile sticky Study Desk navigation',()=>{
     page.errors=[];page.on('pageerror',error=>page.errors.push(error.message));
     await page.emulateMedia({reducedMotion:'reduce'});
     await page.goto('/');await page.evaluate(async()=>{await initializeBibleExperience();await changeTranslation('web');await document.fonts.ready;});
+    await page.evaluate(()=>{
+      const activate=CompareLoader.activate;
+      CompareLoader.activate=function(...args){
+        window.__compareTabActivation=activate.apply(this,args);
+        return window.__compareTabActivation;
+      };
+    });
   });
   test.afterEach(async({page})=>expect(page.errors).toEqual([]));
   for(const [book,chapter,verse] of [['genesis',24,45],['psalms',23,6],['john',1,30]]){
@@ -59,6 +69,32 @@ test.describe('mobile sticky Study Desk navigation',()=>{
     await page.evaluate(async()=>{await navigateReaderToPassage('genesis',24,45);window.scrollTo({top:document.querySelector('#bibleApp').offsetTop-150,behavior:'instant'});});
     await tapVisibleTab(page,'compare');await tapVisibleTab(page,'reader');
     await visibleVerse(page,45);await expect(page.locator('#verseSelect')).toHaveValue('45');
+  });
+  test('raw-touch return waits for delayed Compare data and final positioning',async({page})=>{
+    await page.evaluate(async()=>{
+      await navigateReaderToPassage('genesis',24,45);
+      window.scrollTo({top:document.querySelector('#bibleApp').offsetTop-150,behavior:'instant'});
+      const ensure=BibleTranslationLoader.ensure;
+      BibleTranslationLoader.ensure=id=>id==='asv'?new Promise(resolve=>{
+        window.__releaseCompareData=()=>resolve(ensure(id));
+      }):ensure(id);
+    });
+    let completed=false;
+    const activation=tapVisibleTab(page,'compare').then(()=>{completed=true;});
+    try{
+      await expect.poll(()=>page.evaluate(()=>typeof window.__releaseCompareData)).toBe('function');
+      await expect(page.locator('#view-compare')).toHaveClass(/active/);
+      await expect(page.locator('#view-compare')).toHaveAttribute('aria-busy','false');
+      await expect(page.locator('#compareGrid .compare-col')).toHaveCount(0);
+      expect(completed).toBe(false);
+    }finally{
+      await page.evaluate(()=>window.__releaseCompareData?.());
+      await activation;
+    }
+    await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
+    await tapVisibleTab(page,'reader');
+    await visibleVerse(page,45);
+    await expect(page.locator('#verseSelect')).toHaveValue('45');
   });
   test('Plan stays reachable from a long Reader and returns to its selected verse',async({page})=>{
     await page.evaluate(()=>navigateReaderToPassage('genesis',24,45));
