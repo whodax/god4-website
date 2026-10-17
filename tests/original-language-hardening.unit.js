@@ -158,7 +158,7 @@ test('nested apparatus, self-closing notes and comment words cannot leak into th
 
 test('unresolved license verification cannot become publication eligible by changing its label or enabled flag',()=>{
   for(const modify of [c=>c.publication.enabled=true,c=>{c.publication.enabled=true;c.source.lexicalSource.license='MIT';},c=>{c.publication.enabled=true;c.source.lexicalSource.verification='verified';},c=>{c.publication.enabled=true;c.source.lexicalSource.licenseVerification.status='verified';}]){
-    const config=c.isaiahBookConfig();modify(config);assert.throws(()=>c.validateBookConfig(config),/verified license evidence/);
+    const config=c.isaiahBookConfig();config.source.lexicalSource.license='unresolved historical test';config.source.lexicalSource.licenseVerification.status='unresolved';modify(config);assert.throws(()=>c.validateBookConfig(config),/verified license evidence/);
   }
   assert.throws(()=>c.assertPublicationEligible(c.isaiahBookConfig()),/disabled/);
 });

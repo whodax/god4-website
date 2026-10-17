@@ -175,6 +175,51 @@ test('configured lexical join strategies preserve existing Hebrew and Greek sour
   assert.deepEqual(g.get('G1722'),{definition:'in',lemma:'ἐν',transliteration:'en'});
 });
 
+function xmlSubsetFixture(){
+  const config = configs.createBookConfig('obadiah','oshb','Obad');
+  config.lexicalJoinStrategy = 'strongs-hebrew-xml-subset';
+  config.source.lexicalJoinStrategy = config.lexicalJoinStrategy;
+  config.source.lexicalSource = clone(configs.isaiahBookConfig().source.lexicalSource);
+  config.referenceMapping = {strategy:'identity',verified:true,evidence:'Synthetic lexical strategy fixture'};
+  const text = Array.from({length:21},(_,i)=>`<verse osisID="Obad.1.${i+1}"><w lemma="${i===0?'b/1':'2'}" morph="${i===1?'ANp':'HNcmsa'}">א</w>${i===0?'<w lemma="m/l" morph="HPp">ל</w>':''}</verse>`).join('');
+  const lexicon = new Map([1,2].map(n=>['H'+n,{strongsNumber:'H'+n,lemma:'headword'+n,transliteration:'xlit'+n,pronunciation:'pron'+n,definition:'definition'+n}]));
+  return {config,text,lexicon};
+}
+test('XML subset is generic, fills only approved fields and preserves contextual OSHB evidence',()=>{
+  const {config,text,lexicon}=xmlSubsetFixture();
+  lexicon.set(null,{lemma:'PROHIBITED',definition:'PROHIBITED'});
+  const {records,diagnostics}=importer.parseConfiguredSourceDetailed(text,lexicon,config);
+  assert.equal(records.length,22);
+  assert.deepEqual(Object.keys(records[0]),importer.SCHEMA_FIELDS);
+  assert.equal(records[0].lemma,'headword1');assert.equal(records[0].transliteration,'xlit1');
+  assert.equal(records[0].pronunciation,'pron1');assert.equal(records[0].definition,'definition1');
+  assert.equal(records[0].partOfSpeech,null);assert.equal(records[0].morphology,'HNcmsa');
+  assert.equal(records[1].lemma,'m/l');
+  for(const field of ['strongsNumber','transliteration','pronunciation','definition']) assert.equal(records[1][field],null);
+  assert.equal(records[2].language,'aramaic');
+  assert.deepEqual(diagnostics.sourceLemmas[0],{chapter:1,verse:1,tokenIndex:0,lemma:'b/1'});
+  assert.deepEqual(diagnostics.sourceLemmas[1],{chapter:1,verse:1,tokenIndex:1,lemma:'m/l'});
+});
+test('XML strategy rejects missing, mismatched and mixed lexical entries without DAT fallbacks',()=>{
+  for(const field of ['strongsNumber','lemma','transliteration','pronunciation','definition']){
+    const {config,text,lexicon}=xmlSubsetFixture();delete lexicon.get('H1')[field];
+    assert.throws(()=>importer.parseConfiguredSourceDetailed(text,lexicon,config),new RegExp('missing selected field '+field));
+  }
+  for(const alter of [m=>m.delete('H1'),m=>m.set('H1','DAT-like string'),m=>m.get('H1').strongsNumber='H2',m=>m.get('H1').gloss='PROHIBITED']){
+    const {config,text,lexicon}=xmlSubsetFixture();alter(lexicon);
+    assert.throws(()=>importer.parseConfiguredSourceDetailed(text,lexicon,config),/lexical join|selected field|Unreviewed XML/);
+  }
+});
+test('XML strategy requires exact field-level evidence and rejects DAT or changed source bytes',()=>{
+  for(const alter of [c=>delete c.source.lexicalSource.fieldProvenance,c=>c.source.lexicalSource.fieldProvenance.status='pending',c=>c.source.lexicalSource.fieldProvenance.fields.definition='list/item',c=>c.source.lexicalSource.artifact='hebrew/strongshebrew.dat']){
+    const {config}=xmlSubsetFixture();alter(config);assert.throws(()=>configs.validateBookConfig(config),/field-level provenance/);
+  }
+  const {config,text}=xmlSubsetFixture();
+  assert.throws(()=>importer.generateConfiguredSourceDetailed(text,'\\00001\\DAT fallback$$T',config),/XML lexical input SHA-256/);
+  const greek=clone(johnConfig);greek.lexicalJoinStrategy='strongs-hebrew-xml-subset';
+  assert.throws(()=>configs.validateBookConfig(greek),/combination/);
+});
+
 test('legacy JSON import refuses authoritative writes without source configuration', () => {
   assert.throws(()=>importer.importOriginalLanguage([sample],'unused'),/configured source import/);
 });

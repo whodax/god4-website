@@ -1,8 +1,12 @@
 # Isaiah importer hardening and dry validation
 
 **No production Isaiah shards are generated or published by this work.** The
-reviewed coordinate mapping is verified for the pinned source; publication remains
-disabled because the supplied corrected Hebrew DAT license is unresolved.
+reviewed coordinate mapping and apparatus policy are unchanged. Isaiah now
+explicitly selects the reviewed five-field `StrongHebrewG.xml` lexical strategy;
+publication remains disabled pending a separate publication-candidate milestone.
+See the [field-level evidence and adapter review](hebrew-xml-lexical-provenance.md).
+The corrected DAT remains license-unresolved and is used only in explicit
+historical comparison/replay, never as an automatic Isaiah fallback.
 No UI, runtime provider/controller, Reader behavior, CSP, dependencies or trust
 settings change. Genesis, John and Romans production bytes remain unchanged.
 
@@ -57,31 +61,26 @@ with Weston Ruter copyright. This is conflicting evidence, not proof that the
 selected corrected DAT is MIT, dual licensed, or public domain in its entirety.
 No label is normalized to select the most permissive reading.
 
-`isaiahBookConfig().source.lexicalSource.licenseVerification.status` is
-`unresolved`; `publication.enabled` is false. Both configuration eligibility
-checks and every authoritative importer writer reject attempts to enable/write
-without verified artifact-specific license evidence. Renaming its license to
-"MIT" alone cannot unblock it. The dry validator does not offer an output option.
+### Reviewed XML lexical source
 
-### Other locally available Hebrew lexical artifacts
+`isaiahBookConfig().lexicalJoinStrategy` is `strongs-hebrew-xml-subset`.
+`source.lexicalSource` pins revision `0acd2f251c2d35ff8db2dece4e0593979d3ac223`,
+artifact `hebrew/StrongHebrewG.xml` and exact local SHA-256 shown above. Its
+field-level provenance and component license verification are `verified`, with
+explicit XML/XSLT evidence and attribution to Strong (1894), David Instone-Brewer
+and David Troidl. This is a five-field decision, not a whole-XML PD claim.
 
-| Candidate | Contract suitability and source evidence | Decision |
-| --- | --- | --- |
-| `StrongHebrewG.xml` | Has `H` identifiers, lemma, transliteration, pronunciation, and explanatory/translation notes that could populate the current fields. Its Strong work header says public domain and credits David Troidl and David Instone-Brewer. The same header declares a copyrighted TWOT work and associates `gloss` metadata with it; entries also contain numbered lists and Greek cross-references. | A promising separately scoped source candidate, but the whole file cannot be assumed public domain. Field-level provenance review and a reviewed XML adapter would be required. Not selected or parsed into production definitions. |
-| `strongs-hebrew-dictionary.js` | Provides `H` keys, lemma, `xlit`, `pron`, `strongs_def` and `kjv_def`; its header says "Copyright 2010, Open Scriptures. CC-BY-SA. Derived from XML." It does not identify a CC-BY-SA version in that header. | Can structurally fit the record contract, but notice/version/attribution review and a dedicated data adapter would be needed. Not substituted for the configured DAT. |
-| `strongs-dictionary.xhtml` | Contains Hebrew glosses and definitions, but its header explicitly states GPL 3.0. | Not evidence resolving the contradictory DAT notice, and not a clearer drop-in input for the existing DAT parser. |
+The independent [field-level audit](hebrew-xml-lexical-provenance.md) documents all
+accepted and excluded fields, retained build/history/notice evidence, XML schema
+counts, fingerprints and adversarial boundary checks. The compiled Hebrew JS
+remains unused (its CC-BY-SA header does not identify a version). The DAT's GPL /
+MIT-style conflict is not resolved or inherited by the separately reviewed XML
+subset.
 
-No alternative is automatically selected, and no new lexical parser strategy is
-introduced. Authoritative clarification for the exact corrected DAT, or a
-separately reviewed local lexical source/adapter, remains necessary before a
-future publication decision.
-
-Read-only structural checks found 8,674 entries in each XML/JavaScript candidate.
-All 2,443 distinct numeric Strong's IDs used by Isaiah exist in each, with
-populated lemma and explanation/definition fields. The JavaScript data object was
-read with `JSON.parse`, not executed. These checks show that the existing record
-contract could accommodate a reviewed adapter; they do not clear publication
-rights or authorize copying mixed-provenance fields into production.
+`publication.enabled` remains false. Configuration and authoritative writer gates
+still prevent writes with that configuration. The dry validator reads only OSHB
+and the explicitly configured XML, verifies exact hashes, and provides no output
+directory option. Missing/malformed/unpinned XML is an error, not a DAT fallback.
 
 ## Complete reference review
 
@@ -153,6 +152,7 @@ not chapter files. `publicationEligible` remains false.
 | Excluded variant notes / words | 53 / 56 |
 | Numeric Strong's join failures | 0 |
 | Source words without a numeric Strong's ID | 310 |
+| Distinct numeric Strong's IDs / missing selected lexical fields | 2,443 / 0 |
 | Missing Reader targets / colliding Reader destinations | 0 / 0 |
 | Isaiah 11:3 tokens | 11 |
 | Isaiah 53 verses / tokens | 12 / 166 |
@@ -160,16 +160,36 @@ not chapter files. `publicationEligible` remains false.
 
 The 310 null numeric IDs are source grammatical lemmas (`b`, `l`, `m/l`, `c/b`,
 `m`, `c/l`), not failed joins. Neither Strong's IDs nor definitions are invented
-for those words. Every numeric source identifier joins the selected DAT. Every
-record retains populated surface, source lemma and morphology and the existing
-15-field schema. Deterministic dry validation produces identical records and
+for those words. Every numeric source identifier joins the selected XML subset, with zero missing
+selected lexical fields. For these 16,622 tokens, `lemma` is the lexical headword,
+and transliteration, pronunciation and explanation definition come only from the
+approved selectors. Original OSHB lemma annotations remain in source-coordinate
+`diagnostics.sourceLemmas`; the 310 grammatical words retain those lemmas and
+null lexical fields. Surface, morphology and the 15-field schema are unchanged. Deterministic dry validation produces identical records and
 diagnostics while all existing shard hashes remain unchanged; Isaiah's production
 directory remains absent.
+
+### Exact lexical comparison with the historical DAT audit
+
+`node tools/compare-isaiah-lexical-sources.js [local-source-root]` is a separate,
+read-only historical comparison, requiring all three pinned files. It never
+selects DAT in the normal Isaiah validator. The committed
+[deterministic comparison report](isaiah-lexical-comparison.json) covers every
+used numeric ID with occurrences and both definition hashes/UTF-8 byte lengths;
+it does not republish license-unresolved DAT prose.
+
+All 2,443 used definitions differ, affecting 16,622 tokens. The DAT parser retains
+whole flattened entry bodies; the XML strategy takes only Strong explanation
+text. Headword/transliteration/pronunciation each change for those same 16,622
+tokens, and source attribution changes for all 16,932 records. All other fields
+are identical: 169,320 values. Mapping diagnostics, contextual language,
+apparatus counts and token ordering remain equal. Repeated comparison generation
+reproduces the report bytes exactly. Publication is disabled for both configs.
 
 Core unit command:
 
 ```text
-node --test tests/original-language-importer.unit.js tests/original-language-hardening.unit.js tests/isaiah-original-language-validation.unit.js tests/genesis-original-language-data.unit.js tests/romans-original-language-data.unit.js tests/romans-source-compatibility.unit.js tests/word-study-reference-mapping.unit.js
+node --test tests/original-language-importer.unit.js tests/original-language-hardening.unit.js tests/isaiah-original-language-validation.unit.js tests/genesis-original-language-data.unit.js tests/romans-original-language-data.unit.js tests/romans-source-compatibility.unit.js tests/word-study-reference-mapping.unit.js tests/strong-hebrew-xml-lexicon.unit.js
 ```
 
 Local-source tests explicitly skip if their inputs are absent, rather than claim
@@ -178,7 +198,7 @@ reviewed local run. The complete Playwright suite is not required for this tooli
 change; focused original-language, Word Study provider/controller, PWA/offline and
 asset checks cover the unchanged runtime.
 
-Final local validation:
+Historical f1f3371 validation (before XML integration):
 
 - Combined importer, split/policy/gate, Isaiah source, Genesis data, John replay,
   Romans data/source and reference-mapping units: **120 passed, 0 failed, 0 skipped**.
@@ -190,3 +210,14 @@ Final local validation:
   service worker and metadata for **9 translations** passed.
 - No production/runtime/data files changed. Full Playwright regression was omitted
   under this milestone's tooling-only validation rule. No Isaiah files were written.
+
+### Reviewed XML integration validation, 2026-10-17
+
+The subsequent XML integration passed **140 unit tests**, **235 focused browser /
+PWA/offline tests**, and **22 Word Study acceptance tests** including John Greek
+coverage. Every final suite had zero failures and zero skips; browser commands
+used one worker and retries disabled. Asset validation and explicit syntax checks
+for all nine changed/added tool/test JavaScript files passed. The complete
+comparison report regenerates exactly. All 87 existing production shards remain
+unchanged, and Isaiah publication is still disabled. See the
+[integration audit and exact file manifest](hebrew-xml-lexical-provenance.md).

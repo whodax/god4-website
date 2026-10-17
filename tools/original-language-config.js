@@ -1,6 +1,7 @@
 'use strict';
 
 const {loadBibleLibrary} = require('./audit-word-study-coverage');
+const {FIELDS,REVISION,ARTIFACT} = require('./strong-hebrew-xml-lexicon');
 let readerLibrary;
 function readerBook(bookId){
   if(!readerLibrary) readerLibrary = loadBibleLibrary('kjv.js', 'kjvLibrary');
@@ -105,7 +106,15 @@ function validateBookConfig(config){
   const ids = Object.keys(readerLibrary), testament = ids.indexOf(config.bookId) < ids.indexOf('matthew') ? 'OT' : 'NT';
   if(config.testament !== testament || typeof config.sourceBookId !== 'string' || !/^[A-Za-z0-9-]+$/.test(config.sourceBookId)) throw new TypeError('Invalid testament/source book identifier');
   const profile = Object.values(SOURCES).find(s => s.parserStrategy === config.parserStrategy);
-  if(!profile || ['language','sourceFormat','lexicalJoinStrategy','morphologyFormat'].some(k => config[k] !== profile[k])) throw new TypeError('Unsupported parser/language/lexical/morphology combination');
+  if(!profile || ['language','sourceFormat','morphologyFormat'].some(k => config[k] !== profile[k]) ||
+      !(config.lexicalJoinStrategy === profile.lexicalJoinStrategy || config.parserStrategy === 'oshb' && config.lexicalJoinStrategy === 'strongs-hebrew-xml-subset')) throw new TypeError('Unsupported parser/language/lexical/morphology combination');
+  if(config.lexicalJoinStrategy === 'strongs-hebrew-xml-subset'){
+    const lexical = config.source?.lexicalSource, proof = lexical?.fieldProvenance;
+    if(lexical?.revision !== REVISION || lexical.artifact !== ARTIFACT || proof?.status !== 'verified' ||
+        typeof proof.evidence !== 'string' || !proof.evidence.trim() ||
+        !proof.fields || Object.keys(proof.fields).length !== Object.keys(FIELDS).length ||
+        Object.entries(FIELDS).some(([field,node]) => proof.fields[field] !== node)) throw new TypeError('XML lexical strategy requires reviewed field-level provenance');
+  }
   if(config.alternateAnalysisPolicy !== undefined && (config.parserStrategy !== 'byzantine' || config.alternateAnalysisPolicy !== 'first-source-analysis')) throw new TypeError('Unsupported alternate-analysis policy');
   if(config.oshbWordPolicy !== undefined && (config.parserStrategy !== 'oshb' || config.oshbWordPolicy !== 'main-text-only')) throw new TypeError('Unsupported authoritative OSHB word policy');
   if(config.publication !== undefined && (!config.publication || typeof config.publication.enabled !== 'boolean')) throw new TypeError('Invalid publication policy');
@@ -217,6 +226,7 @@ function romansBookConfig(){
 
 function isaiahBookConfig(){
   const config = createBookConfig('isaiah','oshb','Isa');
+  config.lexicalJoinStrategy = 'strongs-hebrew-xml-subset';
   config.oshbWordPolicy = 'main-text-only';
   config.sourceVerseCounts[7] = 23;
   config.sourceVerseCounts[8] = 20;
@@ -236,16 +246,18 @@ function isaiahBookConfig(){
     verification:'verified selected local artifact and notices',
     licenseVerification:{status:'verified',evidence:'Pinned README.md, LICENSE.md and Isa.xml header identify OSHB CC BY 4.0; original attribution retained.'},
     lexicalSource:{
-      dataset:"Strong's Hebrew DAT corrected edition",upstreamIdentifier:'https://github.com/openscriptures/strongs',
-      revision:'0acd2f251c2d35ff8db2dece4e0593979d3ac223',artifact:'hebrew/strongshebrew.dat',
-      sha256:'eb6190cf487eae8bfa073900333d331f8ffbe1973a0fa9420cf94030c21cc865',
-      license:'unresolved: GPL 3.0 statement with MIT-style grant',verification:'license unresolved',
-      licenseVerification:{status:'unresolved',evidence:'DAT prologue lines 74–99 conflicts internally; build.pl and XHTML state GPL 3.0. See Isaiah validation document.'}
+      dataset:"Strong's Hebrew OSIS dictionary, reviewed five-field subset",upstreamIdentifier:'https://github.com/openscriptures/strongs',
+      revision:REVISION,artifact:ARTIFACT,
+      sha256:'f5a0258d39e9ae37edab27feba5301ff7db540a424e28a41a7af57b8ba5058f2',
+      license:'public domain (Strong component; five-field subset only)',verification:'verified retained component notices and transformation history',
+      fieldProvenance:{status:'verified',fields:{...FIELDS},evidence:'StrongHebrewG.xml Strong work header lines 26–38 and workPrefix lines 58–60; StrongJson.xslt lines 31–40 and 57–65; full pinned XML structural audit. See docs/hebrew-xml-lexical-provenance.md.'},
+      licenseVerification:{status:'verified',evidence:'Pinned XML declares Strong component public domain, credits James Strong (1894), David Instone-Brewer and David Troidl; retained XSLT identifies the five selected Strong fields. TWOT glosses, lists and all other notes are excluded. Not a whole-file license claim. See docs/hebrew-xml-lexical-provenance.md.'}
     },
     textSource:{...config.source.textSource,revision:'3d15126fb1ef74867fc1434be1942e837932691f',artifact:'wlc/Isa.xml',
       sha256:'ce039243b56e4de55b85a635f17343fe9cac7176123fbde5f72af623f9c8f0a5',verification:'verified local WLC header',
       licenseVerification:{status:'verified',evidence:'Pinned OSHB README, LICENSE and WLC work header state public domain.'}},
-    attribution:"Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb (CC BY 4.0), revision 3d15126fb1ef74867fc1434be1942e837932691f; Westminster Leningrad Codex public domain; Strong's 1890 dictionary and Michael Grier e-text public domain; corrected Hebrew DAT, Open Scriptures revision 0acd2f251c2d35ff8db2dece4e0593979d3ac223: corrected-edition license unresolved; dry validation only"
+    lexicalJoinStrategy:config.lexicalJoinStrategy,
+    attribution:"Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb (CC BY 4.0), revision 3d15126fb1ef74867fc1434be1942e837932691f; Westminster Leningrad Codex public domain; James Strong, A Concise Dictionary of the Words in the Hebrew Bible, Hunt & Eaton, 1894; electronic editing by David Instone-Brewer and David Troidl; Strong work declared public domain in Open Scriptures StrongHebrewG.xml, selected ID/headword/transliteration/pronunciation/explanation fields only, revision 0acd2f251c2d35ff8db2dece4e0593979d3ac223; TWOT and other lexical fields excluded"
   };
   return validateBookConfig(config);
 }

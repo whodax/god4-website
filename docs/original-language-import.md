@@ -358,14 +358,20 @@ checkout line endings). No other difference is accepted.
 
 ## Pilot inputs still needed
 
-For Isaiah: a locally supplied OSHB Isaiah input, compatible Hebrew lexical DAT,
-verified source/license/revision information, checked source verse counts, and a
-reviewed source-to-canonical-Reader reference map. Structural draft config can be
-created with `createBookConfig('isaiah', 'oshb', 'Isa')`; no Isaiah data is shipped.
-The reviewed `isaiahBookConfig()` and read-only validator now implement its
-coordinate/token split and apparatus policy; publication remains disabled because
-the supplied corrected Hebrew DAT license is unresolved. See the
-[Isaiah dry-validation report](isaiah-original-language-validation.md).
+For Isaiah: the reviewed `isaiahBookConfig()` explicitly selects the locally
+supplied OSHB Isaiah input and `strongs-hebrew-xml-subset`, a dedicated five-field
+adapter for the pinned `hebrew/StrongHebrewG.xml`. It supplies Strong ID, lexical
+headword, transliteration, pronunciation and explanation definition; it excludes
+TWOT glosses, unassigned lists and other notes. Source OSHB lemma annotations are
+retained in diagnostics; morphology, surface and classification are unchanged.
+Field-level license/provenance evidence and exact fingerprints are recorded in
+configuration. No DAT fallback is allowed; historical DAT parsing remains
+available for Genesis/replay and an explicit comparison audit. The reviewed
+coordinate/token split and apparatus policy are unchanged. Publication remains
+disabled pending a separate publication-candidate milestone. See the
+[Isaiah dry-validation report](isaiah-original-language-validation.md) and
+[field-level lexical audit](hebrew-xml-lexical-provenance.md). No Isaiah production
+data is shipped.
 
 For Romans: a locally supplied single-book Robinson-Pierpont CSV, compatible Greek
 Strong's XML, verified source/license/revision information, checked source verse

@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('node:crypto');
+const {parsePinnedLexicon,FIELDS} = require('./strong-hebrew-xml-lexicon');
 const {SOURCES, readerBook, validateBookConfig, mapReference, sourceTargets, assertPublicationEligible, existingBookConfig} = require('./original-language-config');
 const XML_ENTITIES = { amp: '&', apos: "'", gt: '>', lt: '<', quot: '"' };
 
@@ -150,8 +151,17 @@ function parseOshb(text, hebrewLexicon, config, chapters, diagnostics) {
     words.forEach((word, tokenIndex) => {
       const attributes = word.attributes;
       const strongsNumber = strongsId('hebrew', attributes.lemma);
-      const lexical = hebrewLexicon.get(strongsNumber);
-      records.push({ status: 'authoritative', strongsNumber, language: 'hebrew', lemma: attributes.lemma, transliteration: null, pronunciation: null, partOfSpeech: null, definition: lexical || null, morphology: attributes.morph, source: config.source.attribution, bookId: config.bookId, chapter, verse: Number(verseMatch[3]), tokenIndex, surface: word.surface });
+      const xmlSubset = config.lexicalJoinStrategy === 'strongs-hebrew-xml-subset';
+      const lexical = xmlSubset && !strongsNumber ? undefined : hebrewLexicon.get(strongsNumber);
+      if(xmlSubset && strongsNumber){
+        if(!lexical) throw new TypeError('Missing XML lexical join: '+strongsNumber);
+        for(const field of Object.keys(FIELDS)) if(typeof lexical[field] !== 'string' || !lexical[field].trim()) throw new TypeError('Lexical '+strongsNumber+': missing selected field '+field);
+        if(lexical.strongsNumber !== strongsNumber || Object.keys(lexical).some(field => !Object.hasOwn(FIELDS,field))) throw new TypeError('Unreviewed XML lexical fields');
+      }
+      if(xmlSubset && diagnostics) diagnostics.sourceLemmas.push({chapter,verse:Number(verseMatch[3]),tokenIndex,lemma:attributes.lemma});
+      records.push({ status: 'authoritative', strongsNumber, language: 'hebrew', lemma: xmlSubset && lexical ? lexical.lemma : attributes.lemma,
+        transliteration: xmlSubset && lexical ? lexical.transliteration : null, pronunciation: xmlSubset && lexical ? lexical.pronunciation : null,
+        partOfSpeech: null, definition: xmlSubset ? lexical?.definition || null : lexical || null, morphology: attributes.morph, source: config.source.attribution, bookId: config.bookId, chapter, verse: Number(verseMatch[3]), tokenIndex, surface: word.surface });
     });
   }
   return records;
@@ -254,6 +264,7 @@ function parseConfiguredSourceDetailed(text, lexicon, config, options = {}){
   const diagnostics = {serializationPolicy:config.alternateAnalysisPolicy || null,alternateAnalyses:[],
     oshbWordPolicy:config.parserStrategy === 'oshb' ? 'main-text-only' : null,
     excludedVariantNotes:0,excludedVariantWords:0,excludedApparatus:[]};
+  if(config.lexicalJoinStrategy === 'strongs-hebrew-xml-subset') diagnostics.sourceLemmas = [];
   const sourceRecords = parser(text, lexicon, config, chapters, diagnostics);
   const records = mapSourceRecords(sourceRecords, config, {chapters});
   diagnostics.mapping = {sourceVerses:new Set(sourceRecords.map(r=>r.chapter+':'+r.verse)).size,sourceTokens:sourceRecords.length,
@@ -275,7 +286,15 @@ function generateConfiguredSourceDetailed(text, lexicalText, config, options = {
       if(crypto.createHash('sha256').update(bytes,'utf8').digest('hex') !== component.sha256) throw new TypeError('Publication input SHA-256 mismatch');
     }
   }
-  const lexicon = config.lexicalJoinStrategy === 'strongs-hebrew-dat' ? parseStrongDat(lexicalText, 'hebrew') : parseStrongGreekXml(lexicalText);
+  let lexicon;
+  switch(config.lexicalJoinStrategy){
+    case 'strongs-hebrew-dat': lexicon = parseStrongDat(lexicalText,'hebrew'); break;
+    case 'strongs-greek-xml': lexicon = parseStrongGreekXml(lexicalText); break;
+    case 'strongs-hebrew-xml-subset':
+      if(crypto.createHash('sha256').update(lexicalText).digest('hex') !== config.source.lexicalSource.sha256) throw new TypeError('XML lexical input SHA-256 mismatch');
+      lexicon = parsePinnedLexicon(lexicalText).entries; break;
+    default: throw new TypeError('Unsupported lexical strategy');
+  }
   return parseConfiguredSourceDetailed(text, lexicon, config, options);
 }
 
