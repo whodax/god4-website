@@ -2,7 +2,7 @@ const {test,expect}=require('@playwright/test');
 async function open(page){await page.goto('/');await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>Boolean(navigator.serviceWorker.controller)))await page.reload();await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>changeTranslation('dra'));}
 async function passage(page,book,chapter=1,verse){await page.evaluate(([b,c,v])=>navigateReaderToPassage(b,c,v),[book,chapter,verse]);}
 test('DRA registry, exact configured order and unchanged Protestant inventory',async({page})=>{
- await open(page);await expect(page.locator('#readerTranslation option[value="dra"]')).toHaveText(/DRA.*Douay-Rheims 1899/);
+ await open(page);await expect(page.locator('#readerTranslation option[value="dra"]')).toHaveText(/DRA.*Douay-Rheims — Catholic/);
  const result=await page.evaluate(()=>({dra:BibleData.listBooks('dra').map(b=>b.id),expected:BibleCanon.order('dra'),web:BibleData.listBooks('web').map(b=>b.id),pro:BibleCanon.order('web')}));
  expect(result.dra).toEqual(result.expected);expect(result.dra).toHaveLength(73);expect(result.web).toEqual(result.pro);expect(result.web).toHaveLength(66);
 });
@@ -28,9 +28,9 @@ test('cross-canon switching announces safe fallback and numbering reset',async({
 });
 for(const [book,c,v] of [['tobit',1,1],['esther',16,24],['daniel',3,90],['daniel',13,65],['psalms',23,1]])test(`Compare handles canon/numbering for ${book} ${c}:${v}`,async({page})=>{
  await open(page);await passage(page,book,c,v);await page.evaluate(async()=>{await CompareLoader.activate();setCompareEditionCount(2,true);await loadCompare();});
- await expect(page.locator('#compareGrid')).toContainText('DRA - Douay-Rheims 1899');
+ await expect(page.locator('#compareGrid')).toContainText('DRA - Douay-Rheims — Catholic');
  const web=page.locator('.compare-col').filter({has:page.locator('select option[value="web"]:checked')});
- await expect(web).toContainText(book==='tobit'||(book==='esther'&&c>10)||(book==='daniel'&&c>12)?'Not available in this translation':'Numbering differs');
+ await expect(web).toContainText(book==='tobit'||(book==='esther'&&c>10)||(book==='daniel'&&(c>12||c===3&&v===90))?'This passage is part of the Catholic canon':'Numbering differs');
  expect(await page.evaluate(()=>getCompareReference())).toEqual({bookId:book,chapter:c,verse:v});
 });
 for(const [query,id,c,v] of [['Tobias 1:1','tobit',1,1],['Ecclesiasticus 1:1','sirach',1,1],['Wisdom of Solomon 1:1','wisdom',1,1],['Esther 16:24','esther',16,24],['Daniel 3:90','daniel',3,90]])test('Search reference alias '+query,async({page})=>{
@@ -123,7 +123,7 @@ for(const [book,chapter] of [['esther',11],['esther',12],['esther',13],['esther'
  const expected=await page.evaluate(([book,chapter])=>BibleData.getChapter('dra',book,chapter).verses,[book,chapter]);
  await expect(dra.locator('.vnum')).toHaveCount(expected.length);
  await expect(dra.locator('.compare-text p').first()).toContainText(expected[0]);
- await expect(web).toContainText('Not available in this translation.');
+ await expect(web).toContainText('This passage is part of the Catholic canon and is not available in this translation.');
  expect(await page.evaluate(()=>getCompareReference())).toEqual({bookId:book,chapter,verse:null});
  await expect(page.locator('#readerTranslation')).toHaveValue('web');
 });

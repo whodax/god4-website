@@ -129,7 +129,7 @@ var OfflineBiblesRuntime = (function(){
       name.className = 'offline-bibles-name';
       name.textContent = translation.name;
       rowStatus.className = 'offline-bibles-row-status';
-      rowStatus.textContent = operation ? operation + '.' : details.status;
+      rowStatus.textContent = (operation ? operation + '.' : details.status) + (translation.description ? ' ' + translation.description : '');
       text.appendChild(name);
       text.appendChild(rowStatus);
       action.className = 'offline-bibles-action';

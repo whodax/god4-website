@@ -100,7 +100,8 @@ const BibleData = (function createBibleDataAccess(){
     offlineAllowed: true,
     provider: 'gnv-library'
   }, {
-    id:'dra', name:'Douay-Rheims 1899', abbreviation:'DRA', language:'English',
+    id:'dra', name:'Douay-Rheims — Catholic', abbreviation:'DRA', language:'English',
+    description:'73-book Catholic canon • Includes the Deuterocanonical books and Catholic additions to Esther and Daniel.',
     source:'eBible.org — https://ebible.org/engDRA/', copyrightStatus:'Public domain',
     attribution:'Douay-Rheims American Edition of 1899, eBible.org',
     licensingNotes:'Public Domain engDRA USFM; Latin Vulgate numbering. See docs/complete-catholic-bible.md.',

@@ -245,3 +245,71 @@ test('fullscreen Play and Stop share the resume cursor across a chapter boundary
   expect(await page.evaluate(() => getPlaybackResumeCursor())).toMatchObject({bookId:'john', chapter:2, verse:1});
   await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
 });
+
+for(const width of [1280,1440,390,320])for(const selected of [null,45,20]){
+  test(`fullscreen preserves the visible anchor at ${width}px with selection ${selected}`,async({page})=>{
+    await page.setViewportSize({width,height:900});
+    await page.emulateMedia({reducedMotion:'reduce'});
+    await openReader(page);
+    await page.evaluate(async selected=>{
+      await initializeBibleExperience();await changeTranslation('web');await document.fonts.ready;
+      await navigateReaderToPassage('genesis',24,selected);
+      const verse=document.querySelector('#readerContent [data-verse-number="45"]');
+      window.scrollBy({top:verse.getBoundingClientRect().top-readerVisibleTop(),behavior:'instant'});
+    },selected);
+    const anchor=page.locator('#readerContent [data-verse-number="45"]');
+    const offset=()=>anchor.evaluate(el=>el.getBoundingClientRect().top-readerVisibleTop());
+    const visibleAnchor=()=>page.locator('#readerContent [data-verse-number]').evaluateAll(verses=>{
+      const top=readerVisibleTop(),verse=verses.find(el=>el.getBoundingClientRect().bottom>top+16);
+      return {verse:verse.dataset.verseNumber,offset:Math.max(16,verse.getBoundingClientRect().top-top)};
+    });
+    const assertAnchor=async saved=>{
+      const position=await page.locator(`#readerContent [data-verse-number="${saved.verse}"]`).evaluate(el=>el.getBoundingClientRect().top-readerVisibleTop());
+      expect(Math.abs(position-saved.offset)).toBeLessThan(2);
+    };
+    const before=await offset(),saved=await visibleAnchor();
+    expect(Math.abs(before)).toBeLessThan(1);
+    expect(await page.evaluate(()=>scrollY)).toBeGreaterThan(1000);
+    const button=page.locator('#fullscreenBtn');
+    await button.click();
+    await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
+    await expect(button).toBeFocused();
+    await assertAnchor(saved);
+    await expect(anchor).toBeInViewport();
+    await expect(page.locator('#verseSelect')).toHaveValue(selected===null?'':String(selected));
+    // Reading can continue inside fullscreen; exiting must preserve the new anchor.
+    await page.evaluate(()=>{
+      const verse=document.querySelector('#readerContent [data-verse-number="50"]');
+      document.getElementById('view-reader').scrollBy({top:verse.getBoundingClientRect().top-readerVisibleTop(),behavior:'instant'});
+    });
+    const fullscreenAnchor=await visibleAnchor();
+    await page.keyboard.press('Escape');
+    await expect(page.locator('#view-reader')).not.toHaveClass(/reader-fullscreen/);
+    await expect(button).toBeFocused();
+    await assertAnchor(fullscreenAnchor);
+    const exitOffset=await page.locator('#readerContent [data-verse-number="50"]').evaluate(el=>el.getBoundingClientRect().top-readerVisibleTop());
+    expect(exitOffset).toBeGreaterThanOrEqual(15);expect(exitOffset).toBeLessThan(300);
+    await expect(page.locator('#verseSelect')).toHaveValue(selected===null?'':String(selected));
+  });
+}
+
+test('fullscreen transfers the reading anchor without changing active narration',async({page})=>{
+  await page.addInitScript(()=>{
+    window.__spoken=[];window.__cancels=0;
+    window.SpeechSynthesisUtterance=function(text){this.text=text;};
+    Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{
+      speak(u){window.__spoken.push(u);u.onstart?.();},cancel(){window.__cancels++;},pause(){},resume(){},getVoices(){return [];}
+    }});
+  });
+  await page.emulateMedia({reducedMotion:'reduce'});await openReader(page);
+  await page.evaluate(async()=>{await initializeBibleExperience();await navigateReaderToPassage('genesis',24,45);});
+  await page.locator('#readAloudPlay').click();
+  await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number','45');
+  const state=()=>page.evaluate(()=>({selected:currentVerse,spoken:currentSpokenVerse,last:lastSpokenVerse,cursor:getPlaybackResumeCursor(),utterances:__spoken.length,cancels:__cancels}));
+  const before=await state();
+  await page.locator('#fullscreenBtn').click();expect(await state()).toEqual(before);
+  await page.keyboard.press('Escape');expect(await state()).toEqual(before);
+  await expect(page.locator('#readAloudPlay')).toHaveText('Stop');
+  await page.evaluate(()=>window.__spoken.at(-1).onend());
+  await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number','46');
+});

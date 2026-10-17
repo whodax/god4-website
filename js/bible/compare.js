@@ -116,7 +116,7 @@ function populateCompareBooks(){
   getCompareBooks().forEach(function(book){
     var option = document.createElement('option');
     option.value = book.id;
-    option.textContent = book.name;
+    option.textContent = BibleCanon.bookLabel(book.id, book.name);
     select.appendChild(option);
   });
   select.value = compareReference.bookId;
@@ -298,7 +298,8 @@ function renderCompareColumn(translationId, index){
   if(!verses){
     var present=BibleData.getChapter(translationId,compareReference.bookId,compareReference.chapter);
     var numbering=present && !BibleCanon.comparable(compareReferenceTranslation,translationId,compareReference.bookId);
-    content += '<p class="compare-unavailable" role="status">'+(numbering ? 'Numbering differs between these editions. An equivalent passage has not been established.' : translationId==='dra' || compareReferenceTranslation==='dra' ? 'Not available in this translation.' : 'Passage unavailable in this translation.')+'</p>';
+    var catholicUnavailable = BibleCanon.canon(compareReferenceTranslation) === 'catholic' && BibleCanon.catholicOnly(compareReference.bookId,compareReference.chapter,compareReference.verse) && BibleCanon.canon(translationId) !== 'catholic';
+    content += '<p class="compare-unavailable" role="status">'+(catholicUnavailable ? BibleCanon.catholicUnavailableMessage : numbering ? 'Numbering differs between these editions. An equivalent passage has not been established.' : translationId==='dra' || compareReferenceTranslation==='dra' ? 'Not available in this translation.' : 'Passage unavailable in this translation.')+'</p>';
   } else {
     verses.forEach(function(verse){
       content += '<p><span class="vnum">' + escapeHtml(verse.number) + '</span>' + escapeHtml(verse.text) + '</p>';
@@ -309,10 +310,9 @@ function renderCompareColumn(translationId, index){
 
 function scrollCompareStartIntoView(){
   var view = document.getElementById('view-compare');
-  var tabs = document.querySelector('#bibleApp .bs-nav');
+  var tabs = readerStickyNavigation();
   var start = document.getElementById('compareSummary');
-  if(!view || !view.classList.contains('active') || !tabs ||
-    getComputedStyle(tabs).position !== 'sticky' || !start) return;
+  if(!view || !view.classList.contains('active') || !tabs || !start) return;
   // CSS resolves the same measured site/tab variables used by the Reader stack.
   var top = parseFloat(getComputedStyle(start).scrollMarginTop);
   if(!Number.isFinite(top)) return;
