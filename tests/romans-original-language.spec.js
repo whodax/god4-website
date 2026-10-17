@@ -101,7 +101,7 @@ for(const [chapter, verse, term] of [[1,1,'servant'], [8,13,'Spirit'], [8,28,'kn
   });
 }
 
-for(const [book, chapter, verse, language] of [['genesis',1,1,'he'], ['john',1,1,'grc'], ['isaiah',11,3,null]]){
+for(const [book, chapter, verse, language] of [['genesis',1,1,'he'], ['john',1,1,'grc'], ['isaiah',11,3,'he']]){
   test(`Word Study Romans publication preserves ${book} ${chapter}:${verse} coverage`, async ({page}) => {
     const word = await openWord(page, book, chapter, verse);
     const result = await page.evaluate(({book, chapter, verse}) => OriginalLanguageWordStudyProvider.lookupVerse({bookId:book, chapter, verse}), {book, chapter, verse});

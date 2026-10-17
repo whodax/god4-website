@@ -34,8 +34,9 @@ test('retained XML blocks match the selected source without Unicode normalizatio
 
 test('full pinned Isaiah dry validation is deterministic, complete and read-only',{skip},()=>{
   const before=existingBytes(),production=path.join(root,'data/word-study/original-language/isaiah');
+  const isaiahBefore=Object.fromEntries(fs.readdirSync(production).map(f=>[f,sha(fs.readFileSync(path.join(production,f)))]));
   assert.equal(Object.keys(before).length,87);
-  assert.equal(fs.existsSync(production),false);
+  assert.equal(Object.keys(isaiahBefore).length,66);
   const result=validateLocalIsaiah(sourceRoot);
   assert.deepEqual(validateLocalIsaiah(sourceRoot),result);
   assert.deepEqual(result.summary,{
@@ -48,8 +49,8 @@ test('full pinned Isaiah dry validation is deterministic, complete and read-only
   });
   assert.equal(result.diagnostics.excludedApparatus.reduce((n,v)=>n+v.words.length,0),56);
   assert.deepEqual(existingBytes(),before);
-  assert.equal(fs.existsSync(production),false);
-  const changed=execFileSync('git',['diff','--name-only','db5d46a5d39b54b20d11c5ee501420bcf59b6376','--','data/word-study/original-language'],{cwd:root,encoding:'utf8'});
+  assert.deepEqual(Object.fromEntries(fs.readdirSync(production).map(f=>[f,sha(fs.readFileSync(path.join(production,f)))])),isaiahBefore);
+  const changed=execFileSync('git',['diff','--name-only','db5d46a5d39b54b20d11c5ee501420bcf59b6376','--',...['genesis','john','romans'].map(b=>'data/word-study/original-language/'+b)],{cwd:root,encoding:'utf8'});
   assert.equal(changed,'');
 });
 
@@ -86,7 +87,7 @@ test('changed source/lexical bytes fail closed before parsing',{skip},()=>{
   assert.throws(()=>validateIsaiahText(text,lexical+' '),/XML SHA-256/);
 });
 
-test('reviewed XML provenance is explicit and all Isaiah writes remain blocked',{skip},()=>{
+test('reviewed XML provenance is explicit and the dry configuration still blocks writes',{skip},()=>{
   const config=isaiahBookConfig();
   assert.equal(config.lexicalJoinStrategy,'strongs-hebrew-xml-subset');
   assert.equal(config.source.lexicalSource.fieldProvenance.status,'verified');
@@ -133,12 +134,11 @@ test('complete lexical comparison report reproduces exact bytes and exposes ever
   assert.deepEqual(existingBytes(),before);
 });
 
-test('publication-disabled Isaiah stays unavailable to the unchanged runtime provider',async()=>{
+test('missing Isaiah chapter responses remain unavailable to the unchanged runtime provider',async()=>{
   const vm=require('node:vm'),urls=[];
   const realm=vm.createContext({fetch:async url=>{urls.push(url);return {ok:false};}});
   vm.runInContext(fs.readFileSync(path.join(root,'js/word-study/original-language-provider.js'),'utf8'),realm);
   const result=await realm.OriginalLanguageWordStudyProvider.lookupVerse({bookId:'isaiah',chapter:11,verse:3});
   assert.equal(result.status,'unavailable');
   assert.deepEqual(urls,['data/word-study/original-language/isaiah/11.json']);
-  assert.equal(fs.existsSync(path.join(root,urls[0])),false);
 });

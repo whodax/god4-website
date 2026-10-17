@@ -265,5 +265,6 @@ test('provider still performs lazy per-chapter lookup on unchanged deployed reco
     assert.equal(JSON.stringify(actual.records),JSON.stringify(expected));
     const calls=fetched.length;await realm.OriginalLanguageWordStudyProvider.lookupVerse(context);assert.equal(fetched.length,calls);
   }
-  assert.equal((await realm.OriginalLanguageWordStudyProvider.lookupVerse({bookId:'isaiah',chapter:11,verse:3})).status,'unavailable');
+  const isaiah=await realm.OriginalLanguageWordStudyProvider.lookupVerse({bookId:'isaiah',chapter:11,verse:3});
+  assert.equal(isaiah.status,'available');assert.equal(isaiah.records.length,11);
 });

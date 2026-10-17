@@ -367,11 +367,12 @@ retained in diagnostics; morphology, surface and classification are unchanged.
 Field-level license/provenance evidence and exact fingerprints are recorded in
 configuration. No DAT fallback is allowed; historical DAT parsing remains
 available for Genesis/replay and an explicit comparison audit. The reviewed
-coordinate/token split and apparatus policy are unchanged. Publication remains
-disabled pending a separate publication-candidate milestone. See the
+coordinate/token split and apparatus policy are unchanged. The complete Isaiah publication candidate now ships 66 lazy chapter shards; the
+explicit publication workflow retains the disabled read-only config and enables
+the existing writer only after fresh staging verification. See the
 [Isaiah dry-validation report](isaiah-original-language-validation.md) and
-[field-level lexical audit](hebrew-xml-lexical-provenance.md). No Isaiah production
-data is shipped.
+[field-level lexical audit](hebrew-xml-lexical-provenance.md), plus the
+[publication manifest and reproduction guide](isaiah-original-language-publication.md).
 
 For Romans: a locally supplied single-book Robinson-Pierpont CSV, compatible Greek
 Strong's XML, verified source/license/revision information, checked source verse
