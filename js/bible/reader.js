@@ -908,7 +908,7 @@ function rememberReaderTabPosition(leaving){
   };
 }
 
-function restoreReaderTabPosition(){
+function restoreReaderTabPosition(preserveAnchor){
   if(!readerTabPosition) return;
   var reader = document.getElementById('view-reader');
   if(readerTabPosition.reference !== readerTabReference()){
@@ -917,20 +917,19 @@ function restoreReaderTabPosition(){
     rememberReaderTabPosition(true);
     return;
   }
-  // An explicit selection is authoritative even if the user went back up to the tabs.
-  // An unchanged selection needs positioning, not a new focus announcement.
-  if(currentVerse){
+  // Tab returns honor selection; fullscreen transitions preserve the visible anchor.
+  if(currentVerse && !preserveAnchor){
     scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="' + currentVerse + '"]'), 'instant');
     return;
   }
   var fullscreen = reader.classList.contains('reader-fullscreen');
-  if(fullscreen !== readerTabPosition.fullscreen) return;
+  if(!preserveAnchor && fullscreen !== readerTabPosition.fullscreen) return;
   var surface = fullscreen ? reader : window;
   var anchor = readerTabPosition.verse && document.querySelector('#readerContent [data-verse-number="' + readerTabPosition.verse + '"]');
   if(anchor){
-    var offset = anchor.getBoundingClientRect().top - readerVisibleTop() - readerTabPosition.offset;
+    var offset = anchor.getBoundingClientRect().top - readerVisibleTop() - (preserveAnchor ? Math.max(16, readerTabPosition.offset) : readerTabPosition.offset);
     if(Math.abs(offset) >= 1) surface.scrollBy({top:offset, behavior:'instant'});
-  } else surface.scrollTo({top:readerTabPosition.top, behavior:'instant'});
+  } else if(!preserveAnchor) surface.scrollTo({top:readerTabPosition.top, behavior:'instant'});
 }
 
 function switchView(view, btn, positionOnReturn){
@@ -1294,6 +1293,7 @@ function toggleFullscreen(){
   var button = document.getElementById('fullscreenBtn');
   if(!shell || !button) return;
   cancelSpokenFollow();
+  rememberReaderTabPosition(true);
   var entering = !shell.classList.contains('reader-fullscreen');
   if(entering){
     fullscreenReturnFocus = document.activeElement;
@@ -1313,9 +1313,10 @@ function toggleFullscreen(){
   button.setAttribute('aria-label', entering ? 'Exit Fullscreen' : 'Enter Fullscreen');
   button.textContent = entering ? 'Exit Fullscreen' : 'Fullscreen';
   if(refreshReaderStickyOffsets) refreshReaderStickyOffsets();
-  if(entering) button.focus();
+  restoreReaderTabPosition(true);
+  if(entering) button.focus({preventScroll:true});
   else {
-    (fullscreenReturnFocus && fullscreenReturnFocus.isConnected ? fullscreenReturnFocus : button).focus();
+    (fullscreenReturnFocus && fullscreenReturnFocus.isConnected ? fullscreenReturnFocus : button).focus({preventScroll:true});
     fullscreenReturnFocus = null;
   }
 }
