@@ -131,7 +131,7 @@ function populateSearchTranslations(){
   translations.forEach(function(translation){
     var option = document.createElement('option');
     option.value = translation.id;
-    option.textContent = translation.abbreviation;
+    option.textContent = BibleCanon.canon(translation.id) === 'catholic' ? translation.abbreviation + ' — ' + translation.name : translation.abbreviation;
     select.appendChild(option);
   });
   searchTranslationId = translations.some(function(translation){ return translation.id === currentTranslation; }) ? currentTranslation : translations[0].id;
@@ -145,7 +145,7 @@ function populateSearchTranslations(){
       option.setAttribute('role', 'option');
       option.setAttribute('data-translation-id', translation.id);
       option.setAttribute('aria-selected', translation.id === searchTranslationId ? 'true' : 'false');
-      option.textContent = translation.abbreviation;
+      option.textContent = BibleCanon.canon(translation.id) === 'catholic' ? translation.abbreviation + ' — ' + translation.name : translation.abbreviation;
       option.addEventListener('click', function(){
         selectSearchTranslationOption(option);
       });

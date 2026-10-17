@@ -116,7 +116,7 @@ function populateCompareBooks(){
   getCompareBooks().forEach(function(book){
     var option = document.createElement('option');
     option.value = book.id;
-    option.textContent = book.name;
+    option.textContent = BibleCanon.bookLabel(book.id, book.name);
     select.appendChild(option);
   });
   select.value = compareReference.bookId;
@@ -298,7 +298,9 @@ function renderCompareColumn(translationId, index){
   if(!verses){
     var present=BibleData.getChapter(translationId,compareReference.bookId,compareReference.chapter);
     var numbering=present && !BibleCanon.comparable(compareReferenceTranslation,translationId,compareReference.bookId);
-    content += '<p class="compare-unavailable" role="status">'+(numbering ? 'Numbering differs between these editions. An equivalent passage has not been established.' : translationId==='dra' || compareReferenceTranslation==='dra' ? 'Not available in this translation.' : 'Passage unavailable in this translation.')+'</p>';
+    var missing = !present || compareReference.verse && !BibleData.getVerse(translationId,compareReference.bookId,compareReference.chapter,compareReference.verse);
+    var catholicUnavailable = BibleCanon.canon(compareReferenceTranslation) === 'catholic' && BibleCanon.catholicOnly(compareReference.bookId,compareReference.chapter,compareReference.verse) && missing;
+    content += '<p class="compare-unavailable" role="status">'+(catholicUnavailable ? BibleCanon.catholicUnavailableMessage : numbering ? 'Numbering differs between these editions. An equivalent passage has not been established.' : translationId==='dra' || compareReferenceTranslation==='dra' ? 'Not available in this translation.' : 'Passage unavailable in this translation.')+'</p>';
   } else {
     verses.forEach(function(verse){
       content += '<p><span class="vnum">' + escapeHtml(verse.number) + '</span>' + escapeHtml(verse.text) + '</p>';

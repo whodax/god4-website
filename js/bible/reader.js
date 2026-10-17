@@ -985,7 +985,7 @@ function populateBooks(){
   books.forEach(function(book){
     var option = document.createElement('option');
     option.value = book.id;
-    option.textContent = book.name;
+    option.textContent = BibleCanon.bookLabel(book.id, book.name);
     bookSelect.appendChild(option);
   });
   if(!books.some(function(book){ return book.id === currentBook; })){
@@ -1033,6 +1033,7 @@ async function applyReaderTranslation(translationId){
   if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();
   var previousTranslation = currentTranslation;
   var previousBook = currentBook;
+  var previousChapter = currentChapter, previousVerse = currentVerse;
   var previousBookName=(BibleData.listBooks(previousTranslation).find(function(b){return b.id===previousBook;}) || {}).name || previousBook;
   var translationSelect = document.getElementById('readerTranslation');
   var requestId = ++translationChangeRequest;
@@ -1065,7 +1066,9 @@ async function applyReaderTranslation(translationId){
   populateVerses();
   loadPassage(true);
   var status=document.getElementById('readerTranslationStatus');
-  if(status) status.textContent=missingBook ? previousBookName+' is not available in this translation. Opened '+(BibleData.getChapter(currentTranslation,currentBook,currentChapter) || {}).bookName+' '+currentChapter+'.' : differentNumbering ? 'This edition uses a different numbering tradition. Opened chapter 1; no equivalent passage was inferred.' : '';
+  var catholicUnavailable = BibleCanon.canon(previousTranslation) === 'catholic' && BibleCanon.catholicOnly(previousBook, previousChapter, previousVerse) &&
+    !BibleData.getVerse(currentTranslation, previousBook, previousChapter, previousVerse || 1);
+  if(status) status.textContent=(catholicUnavailable ? BibleCanon.catholicUnavailableMessage + ' ' : '') + (missingBook ? previousBookName+' is not available in this translation. Opened '+(BibleData.getChapter(currentTranslation,currentBook,currentChapter) || {}).bookName+' '+currentChapter+'.' : differentNumbering ? 'This edition uses a different numbering tradition. Opened chapter 1; no equivalent passage was inferred.' : '');
   if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
   if(typeof syncCompareFromReader === 'function') syncCompareFromReader();
   return true;
@@ -1103,7 +1106,8 @@ function renderPassage(bookKey, chapterNum){
   var html = '<h2 data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '">' + bookName + ' ' + escapeHtml(chapterNum) + '</h2>';
   if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
   html += '<div class="reader-plan-return" hidden></div>';
-  html += '<div class="reader-chapter-caption">' + escapeHtml(data.title) + '</div>';
+  var canonLabel = BibleCanon.passageLabel(currentTranslation, bookKey, chapterNum);
+  html += '<div class="reader-chapter-caption">' + escapeHtml(data.title) + (canonLabel ? ' — ' + escapeHtml(canonLabel) : '') + '</div>';
   for(var i = 0; i < data.verses.length; i++){
     if(!isRenderableVerseText(data.verses[i])) continue;
     html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + '</span> ';

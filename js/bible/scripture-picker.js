@@ -106,7 +106,7 @@ const ScripturePicker = (function(){
     BibleData.listBooks(translation).filter(function(item){
       return BibleCanon.matches(item.id,item.name,search.value,true);
     }).forEach(function(item){
-      booksArea.appendChild(button(item.name, 'book', item.id, item.id === book));
+      booksArea.appendChild(button(BibleCanon.bookLabel(item.id, item.name), 'book', item.id, item.id === book));
     });
     if(!booksArea.children.length) booksArea.textContent = 'No matching books.';
   }
@@ -116,12 +116,19 @@ const ScripturePicker = (function(){
     var selectedBook = BibleData.listBooks(translation).find(function(item){ return item.id === book; });
     if(!selectedBook) return;
     heading.textContent = selectedBook.name + (step === 'verses' ? ' ' + chapter + ' — Verses' : ' — Chapters');
+    var canonLabel = BibleCanon.passageLabel(translation, book, chapter);
+    if(step === 'verses' && canonLabel) heading.textContent += ' — ' + canonLabel;
     back.hidden = step === 'books';
     back.dataset.level = step;
     back.textContent = step === 'verses' ? 'Back to chapters' : 'Back to books';
     if(step !== 'verses'){
       for(var number = 1; number <= BibleData.getChapterCount(translation, book); number++){
-        detailArea.appendChild(button(String(number), 'chapter', number, number === chapter));
+        var chapterButton = button(String(number), 'chapter', number, number === chapter);
+        var chapterLabel = BibleCanon.passageLabel(translation, book, number);
+        if(chapterLabel && !BibleCanon.isDeuterocanonical(book)){
+          chapterButton.setAttribute('aria-label', 'Chapter ' + number + ' — ' + chapterLabel);
+        }
+        detailArea.appendChild(chapterButton);
       }
     } else {
       var data = BibleData.getChapter(translation, book, chapter);
@@ -178,7 +185,7 @@ const ScripturePicker = (function(){
       if(!await initializeBibleExperience()) { status.textContent = 'Scripture is unavailable.'; return; }
       if(!isCurrent(request, translationRequest, requestedTranslation)) return;
       book = currentBook; chapter = currentChapter; step = 'books'; browsing = false; search.value = '';
-      status.textContent = '';
+      status.textContent = BibleData.listTranslations().find(function(item){ return item.id === translation; }).description || '';
       renderBooks(); renderDetail(); focusBook();
       var selectedNumber = detailArea.querySelector('[aria-current="true"]');
       if(selectedNumber && selectedNumber.getClientRects().length) selectedNumber.scrollIntoView({block:'nearest', inline:'nearest'});
