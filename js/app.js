@@ -55,11 +55,13 @@ function nextVerse(){
 
 function isSaved(ref){ return saved.some(function(s){ return s.ref === ref; }); }
 
-function toggleFav(ref, text, btnEl){
+function toggleFav(ref, text, btnEl, location){
   if(isSaved(ref)){
     saved = saved.filter(function(s){ return s.ref !== ref; });
   } else {
-    saved.push({ref:ref, text:text});
+    var entry={ref:ref,text:text};
+    if(location) entry.location=location;
+    saved.push(entry);
   }
   savedVersesStorage.save(saved);
   var savedCount = document.getElementById('savedCount');
@@ -202,9 +204,12 @@ function parseSearchReference(query, translationId){
   var books = BibleData.listBooks(translationId).sort(function(first, second){ return second.name.length - first.name.length; });
   for(var index = 0; index < books.length; index++){
     var book = books[index];
-    var match = new RegExp('^' + book.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s+(?:chapter\\s+)?(\\d+)(?:(?:\\s*:\\s*|\\s+verse\\s+|\\s+)(\\d+))?$', 'i').exec(cleaned);
+    var names = BibleCanon.names(book.id,book.name);
+    for(var nameIndex=0;nameIndex<names.length;nameIndex++){
+    var match = new RegExp('^' + names[nameIndex].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s+(?:chapter\\s+)?(\\d+)(?:(?:\\s*:\\s*|\\s+verse\\s+|\\s+)(\\d+))?$', 'i').exec(cleaned);
     if(match){
       return { bookId: book.id, bookName: book.name, chapter: Number(match[1]), verse: match[2] ? Number(match[2]) : null };
+    }
     }
   }
   return null;
@@ -314,6 +319,25 @@ async function doSearch(){
   renderSearchResults();
 }
 
+function saveReaderVerse(){
+  var number=getReaderDisplayedVerse();
+  var verse=BibleData.getVerse(currentTranslation,currentBook,currentChapter,number);
+  var chapter=BibleData.getChapter(currentTranslation,currentBook,currentChapter);
+  if(!verse || !verse.text.trim()) return;
+  var translation=BibleData.listTranslations().find(function(t){return t.id===currentTranslation;});
+  var ref=chapter.bookName+' '+currentChapter+':'+number+' ('+translation.abbreviation+')';
+  toggleFav(ref,verse.text,null,{translationId:currentTranslation,bookId:currentBook,chapter:currentChapter,verse:number});
+  document.getElementById('readerTranslationStatus').textContent=isSaved(ref)?ref+' saved.':ref+' removed from Saved.';
+}
+async function openSavedVerse(entry){
+  if(!entry.location) return false;
+  var location=entry.location;
+  if(!await BibleTranslationLoader.ensure(location.translationId)) return false;
+  var verse=BibleData.getVerse(location.translationId,location.bookId,location.chapter,location.verse);
+  if(!verse || !verse.text.trim()) return false;
+  if(trayOpen) toggleTray();
+  return navigateSearchResult(location);
+}
 function renderTray(){
   var list = document.getElementById('trayList');
   var empty = document.getElementById('trayEmpty');
@@ -342,7 +366,16 @@ function renderTray(){
         document.getElementById('closeTray').focus();
       }
     });
-    details.append(reference, remove);
+    details.appendChild(reference);
+    if(v.location){
+      var open=document.createElement('button'); open.type='button'; open.className='saved-verse-remove'; open.textContent='Open';
+      open.addEventListener('click',async function(){
+        var opened=await openSavedVerse(v);
+        if(opened===false){ open.textContent='Unavailable';open.setAttribute('aria-label','Saved passage unavailable. Try again when online.'); }
+      });
+      details.appendChild(open);
+    }
+    details.appendChild(remove);
     row.append(content, details);
     list.appendChild(row);
   });
@@ -458,6 +491,8 @@ async function initializeApp(){
   if(closeTrayButton) closeTrayButton.addEventListener('click', toggleTray);
   var refreshVerseButton = document.querySelector('.refresh-btn');
   if(refreshVerseButton) refreshVerseButton.addEventListener('click', nextVerse);
+  var saveReaderButton=document.getElementById('readerSaveVerse');
+  if(saveReaderButton) saveReaderButton.addEventListener('click',saveReaderVerse);
   var heroFavButton = document.getElementById('heroFav');
   if(heroFavButton) heroFavButton.addEventListener('click', toggleFavFromHero);
   var searchButton = document.querySelector('.search-box > button:not(#searchClear)');

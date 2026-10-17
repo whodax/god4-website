@@ -20,7 +20,16 @@ var UserData = (function(storage){
         typeof entry.text !== 'string' || !entry.text.trim() || seen.has(entry.ref)) return false;
       seen.add(entry.ref);
       return true;
-    }).map(function(entry){ return {ref: entry.ref, text: entry.text}; });
+    }).map(function(entry){
+      var result={ref:entry.ref,text:entry.text};
+      var location=entry.location;
+      if(location && typeof location.translationId==='string' && /^[a-z0-9-]+$/.test(location.translationId) &&
+        typeof location.bookId==='string' && /^[a-z0-9-]+$/.test(location.bookId) && Number.isInteger(location.chapter) && location.chapter>0 &&
+        Number.isInteger(location.verse) && location.verse>0){
+        result.location={translationId:location.translationId,bookId:location.bookId,chapter:location.chapter,verse:location.verse};
+      }
+      return result;
+    });
   }
   function completedDays(entries){
     if(!Array.isArray(entries)) return [];

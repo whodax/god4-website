@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
-const ids = ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'];
+const ids = ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra'];
 const names = [
   'World English Bible Protestant Edition',
   'American Standard Version (1901)',
@@ -12,7 +12,8 @@ const names = [
   'Darby Translation',
   'Webster Bible (1833)',
   'Revised Version (1895)',
-  'Geneva Bible 1599'
+  'Geneva Bible 1599',
+  'Douay-Rheims 1899'
 ];
 
 async function installAndControl(page) {
@@ -44,7 +45,7 @@ async function openDialog(page) {
   // Reader's visibility-based translation loading and is unrelated to this UI.
   await page.evaluate(() => document.getElementById('offlineBiblesTrigger').click());
   await expect(page.locator('#offlineBiblesDialog')).toBeVisible();
-  await expect(page.locator('#offlineBiblesList .offline-bibles-row')).toHaveCount(8);
+  await expect(page.locator('#offlineBiblesList .offline-bibles-row')).toHaveCount(9);
   await expect(page.locator('#offlineBiblesList .offline-bibles-row-status').first()).not.toHaveText('Checking availability');
 }
 
@@ -110,7 +111,7 @@ test('dialog lists fresh translations without downloading and provides modal key
   });
   const requested = [];
   page.on('request', request => {
-    if(/\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv)\.js$/.test(new URL(request.url()).pathname)) {
+    if(/\/js\/bible\/(?:web|asv|kjv|ylt|dby|webster|rv|gnv|dra)\.js$/.test(new URL(request.url()).pathname)) {
       requested.push(request.url());
     }
   });
@@ -134,16 +135,16 @@ test('dialog lists fresh translations without downloading and provides modal key
   await expect(trigger).toHaveAttribute('aria-expanded', 'true');
   await expect(page.locator('#offlineBiblesTitle')).toBeFocused();
   await expect(page.locator('.offline-bibles-name')).toHaveText(names);
-  await expect(page.locator('.offline-bibles-row-status')).toHaveText(Array(8).fill('Not downloaded'));
-  await expect(page.locator('.offline-bibles-action')).toHaveText(Array(8).fill('Download'));
+  await expect(page.locator('.offline-bibles-row-status')).toHaveText(Array(names.length).fill('Not downloaded'));
+  await expect(page.locator('.offline-bibles-action')).toHaveText(Array(names.length).fill('Download'));
   await expect(page.getByRole('button', {name:'Download American Standard Version (1901) for offline reading'})).toBeVisible();
   await expect(page.locator('#offlineBiblesStorage')).toHaveText('Offline Bibles: 0.0 MiB');
   expect(requested).toEqual([]);
   expect(await page.evaluate(() => window.__managementMessages)).toEqual(['BIBLE_TRANSLATION_LIST']);
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-compact-reader-37']);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-compact-reader-38']);
 
   await page.keyboard.press('Shift+Tab');
-  await expect(page.getByRole('button', {name:'Download Geneva Bible 1599 for offline reading'})).toBeFocused();
+  await expect(page.getByRole('button', {name:'Download Douay-Rheims 1899 for offline reading'})).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(page.locator('#offlineBiblesClose')).toBeFocused();
   await page.keyboard.press('Escape');

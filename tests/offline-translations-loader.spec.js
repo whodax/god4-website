@@ -49,7 +49,7 @@ async function mockWorker(page, states = {}) {
 }
 async function activate(page) {
   await page.evaluate(() => document.getElementById('offlineBiblesTrigger').click());
-  await expect(page.locator('.offline-bibles-row')).toHaveCount(8);
+  await expect(page.locator('.offline-bibles-row')).toHaveCount(9);
   await expect(page.locator('.offline-bibles-row-status').first()).not.toHaveText('Checking availability');
 }
 async function dismiss(page, escape = false) {
@@ -97,7 +97,7 @@ for(const input of ['click', 'Enter', 'Space', 'programmatic']){
     await expect(page.locator('#offlineBiblesDialog')).toHaveAttribute('aria-busy', 'true');
     await expect(page.locator('#offlineBiblesStatus')).toHaveText('Loading offline Bible controls.');
     load.release();
-    await expect(page.locator('.offline-bibles-row')).toHaveCount(8);
+    await expect(page.locator('.offline-bibles-row')).toHaveCount(9);
     await expect(page.locator('.offline-bibles-action').first()).toBeEnabled();
     await expect(page.locator('#offlineBiblesDialog')).toHaveAttribute('aria-busy', 'false');
     await expect(page.locator('#offlineBiblesTitle')).toBeFocused();
@@ -218,7 +218,7 @@ test('initialization uses current connectivity and retained state without replay
   });
   load.release();
   await expect(page.locator('[data-translation-id="web"] .offline-bibles-action')).toBeEnabled();
-  await expect(page.locator('.offline-bibles-action:disabled')).toHaveCount(7);
+  await expect(page.locator('.offline-bibles-action:disabled')).toHaveCount(8);
   await expect(page.locator('#offlineBiblesStatus')).toContainText('require a connection');
   expect(await page.evaluate(() => __lists.length)).toBe(1);
   expect(await page.evaluate(() => __removes)).toBe(0);
@@ -323,7 +323,7 @@ test('same-origin classic activation works under unchanged enforcing CSP at 320p
     await expect(page.locator('#offlineBiblesDialog')).toHaveAttribute('aria-labelledby', 'offlineBiblesTitle');
     await expect(page.locator('#offlineBiblesStatus')).toHaveAttribute('aria-atomic', 'true');
     await page.keyboard.press('Shift+Tab');
-    await expect(page.locator('[data-translation-id="gnv"] .offline-bibles-action')).toBeFocused();
+    await expect(page.locator('[data-translation-id="dra"] .offline-bibles-action')).toBeFocused();
     await page.keyboard.press('Tab');
     await expect(page.locator('#offlineBiblesClose')).toBeFocused();
     await dismiss(page, true);

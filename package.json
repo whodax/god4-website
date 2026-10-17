@@ -13,7 +13,8 @@
     "import:dby": "node tools/import-dby.js",
     "import:webster": "node tools/import-webster.js",
     "import:rv": "node tools/import-rv.js",
-    "import:gnv": "node tools/import-gnv.js"
+    "import:gnv": "node tools/import-gnv.js",
+    "import:dra": "node tools/import-dra.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",

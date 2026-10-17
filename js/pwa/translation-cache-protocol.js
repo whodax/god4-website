@@ -7,7 +7,7 @@
   'use strict';
 
   var APPROVED_IDS = Object.freeze([
-    'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv'
+    'web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra'
   ]);
   var CANDIDATE_CACHE = 'god4-bible-candidates-v1';
   var READY_CACHE = 'god4-bible-ready-v1';

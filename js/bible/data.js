@@ -99,6 +99,12 @@ const BibleData = (function createBibleDataAccess(){
     licensingNotes: 'eBible.org identifies this digital copy as public domain and freely available worldwide. Source archive: enggnv_usfm.zip. GOD4.us preserves the original historical spelling.',
     offlineAllowed: true,
     provider: 'gnv-library'
+  }, {
+    id:'dra', name:'Douay-Rheims 1899', abbreviation:'DRA', language:'English',
+    source:'eBible.org — https://ebible.org/engDRA/', copyrightStatus:'Public domain',
+    attribution:'Douay-Rheims American Edition of 1899, eBible.org',
+    licensingNotes:'Public Domain engDRA USFM; Latin Vulgate numbering. See docs/complete-catholic-bible.md.',
+    offlineAllowed:true, provider:'dra-library'
   }];
 
   function getTranslation(translationId){
@@ -120,6 +126,7 @@ const BibleData = (function createBibleDataAccess(){
     if(translation.provider === 'rv-library' && typeof rvLibrary !== 'undefined') return rvLibrary;
     if(translation.provider === 'gnv-library' && typeof gnvLibrary !== 'undefined') return gnvLibrary;
     if(translation.provider === 'gnv-library' && typeof gnvLibrary !== 'undefined') return gnvLibrary;
+    if(translation.provider === 'dra-library' && typeof draLibrary !== 'undefined') return draLibrary;
     return null;
   }
 
