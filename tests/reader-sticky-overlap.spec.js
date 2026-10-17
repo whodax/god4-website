@@ -47,10 +47,48 @@ for(const width of [390,320])test.describe(`${width}px sticky overlap`,()=>{
     await expect(page.locator('#verseSelect')).toHaveValue('');
   });
 });
-test('desktop retains static tabs and zero mobile containment reserve',async({page})=>{
-  await page.setViewportSize({width:1280,height:900});await page.goto('/');
-  await page.evaluate(async()=>{await initializeBibleExperience();await navigateReaderToPassage('john',1,30);});
-  await expect(page.locator('.bs-nav')).toHaveCSS('position','static');
-  expect(await page.locator('#bibleApp').evaluate(el=>getComputedStyle(el).getPropertyValue('--reader-stack-tail'))).toBe('0px');
-  await expect(page.locator('.bs-main')).toHaveCSS('margin-top','0px');
+for(const width of [1024,1280,1440])test(`desktop ${width}px keeps the existing toolbar and Compare reachable`,async({page})=>{
+  await page.setViewportSize({width,height:900});
+  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('/');
+  await page.evaluate(async()=>{await initializeBibleExperience();await changeTranslation('web');await document.fonts.ready;await navigateReaderToPassage('genesis',24,45);});
+  const toolbar=page.locator('.reader-toolbar'),header=page.locator('.bs-header');
+  const compare=page.locator('[aria-controls="view-compare"]');
+  const verse=page.locator('#readerContent [data-verse-number="45"]');
+  const assertStack=async()=>{
+    const measured=await stack(page),h=await header.boundingBox();
+    expect(h.y).toBeCloseTo(measured.site.bottom,0);
+    expect(measured.toolbar.top).toBeCloseTo(h.y+h.height,0);
+    expect(measured.toolbar.bottom).toBeLessThan(900);
+    expect(parseFloat(measured.tail)).toBeGreaterThan(0);
+    await expect(compare).toBeInViewport();
+    expect((await verse.boundingBox()).y).toBeGreaterThanOrEqual(measured.toolbar.bottom);
+  };
+  expect(await page.evaluate(()=>scrollY)).toBeGreaterThan(1000);
+  await assertStack();
+  // Raw pointer clicks cannot silently scroll an offscreen control into view.
+  const clickVisible=async locator=>{const r=await locator.boundingBox();expect(r.y).toBeGreaterThanOrEqual(0);expect(r.y+r.height).toBeLessThan(900);await page.mouse.click(r.x+r.width/2,r.y+r.height/2);};
+  const before=await page.evaluate(()=>scrollY);
+  await clickVisible(page.locator('#readerMoreTrigger'));
+  await expect(page.locator('#readerSecondaryControls')).toBeVisible();
+  // Expanding the in-flow toolbar may adjust scroll anchoring, but never returns to the top.
+  expect(await page.evaluate(()=>scrollY)).toBeGreaterThanOrEqual(before);
+  await assertStack();
+  await clickVisible(compare);
+  await expect(page.locator('#view-compare')).toHaveClass(/active/);
+  await expect(page.locator('.compare-text p')).toHaveCount(2);
+  await expect(page.locator('#compareSummary')).toBeVisible();
+  const summary=await page.locator('#compareSummary').boundingBox(),h=await header.boundingBox();
+  expect(summary.y).toBeGreaterThanOrEqual(h.y+h.height);
+  await clickVisible(page.locator('[aria-controls="view-reader"]'));
+  await expect(toolbar).toBeVisible();await assertStack();
+  await clickVisible(page.locator('#readerMoreTrigger'));
+  await clickVisible(page.locator('#fullscreenBtn'));
+  await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
+  expect((await toolbar.boundingBox()).y).toBeLessThan(30);
+  await page.keyboard.press('Escape');await assertStack();
+  // At the container end, both sticky rows leave together without overlapping.
+  await page.evaluate(()=>window.scrollBy({top:document.getElementById('view-reader').getBoundingClientRect().bottom-document.querySelector('.bs-header').getBoundingClientRect().bottom-30,behavior:'instant'}));
+  await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});
+  const end=await stack(page),endHeader=await header.boundingBox();
+  expect(end.toolbar.top).toBeGreaterThanOrEqual(endHeader.y+endHeader.height-1);
 });

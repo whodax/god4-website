@@ -19,6 +19,8 @@
     justify-content:space-between;
     gap:12px;
     flex-shrink:0;
+    position:sticky;top:var(--reader-nav-bottom,105px);z-index:30;
+    margin-bottom:var(--reader-stack-tail,0px);
   }
   .bs-title{
     font-family:'Cormorant Garamond','Cormorant Garamond Fallback',serif;
@@ -39,7 +41,8 @@
   .bs-btn.active{
     background:var(--ink);color:var(--vellum-card);
   }
-  .bs-main{position:relative;}
+  /* Match the toolbar containment inset without adding layout space. */
+  .bs-main{position:relative;margin-top:calc(-1 * var(--reader-stack-tail,0px));}
   .bs-view{
     position:relative;
     padding:28px 32px;
@@ -511,11 +514,12 @@
     #view-reader.reader-fullscreen .reader-passage{font-size:18px;}
   }
 
+  #view-compare .compare-summary,#view-compare .compare-col-header,
+  #view-compare .compare-text p,#view-compare select,#view-compare button{
+    scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 16px);
+  }
+
   @media (max-width:620px){
-    #view-compare .compare-summary,#view-compare .compare-col-header,
-    #view-compare .compare-text p,#view-compare select,#view-compare button{
-      scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 16px);
-    }
     #view-reader{padding:16px 12px;}
     .reader-toolbar{
       grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto 56px;
@@ -536,7 +540,7 @@
     .reader-toolbar > button{padding:7px 8px;}
     .compare-selector-row{grid-template-columns:1fr;width:min(100%,260px);}
     /* The title scrolls away; only the original navigation row joins the sticky stack. */
-    .bs-header{display:contents;}
+    .bs-header{display:contents;position:static;margin-bottom:0;}
     .bs-title{padding:14px 24px 0;background:var(--vellum);}
     .bs-nav{
       width:100%;box-sizing:border-box;justify-content:flex-start;
@@ -546,8 +550,6 @@
       background:var(--vellum);border-bottom:1px solid var(--line);
     }
     .bs-nav .bs-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
-    /* Reserve the toolbar's trailing space in the sticky constraint without adding layout space. */
-    .bs-main{margin-top:calc(-1 * var(--reader-stack-tail,0px));}
     .offline-bibles-dialog{padding:20px;}
     .offline-bibles-row{grid-template-columns:minmax(0,1fr);}
     .offline-bibles-action{width:100%;}

@@ -262,6 +262,12 @@ function readerPlanReturnHeight(){
   return row ? row.getBoundingClientRect().height : 0;
 }
 
+function readerStickyNavigation(){
+  return Array.from(document.querySelectorAll('#bibleApp .bs-header, #bibleApp .bs-nav')).find(function(el){
+    return getComputedStyle(el).position === 'sticky';
+  });
+}
+
 function readerVisibleTop(){
   var view = document.getElementById('view-reader');
   if(view && view.classList.contains('reader-fullscreen')){
@@ -274,8 +280,8 @@ function readerVisibleTop(){
     var navRect = siteNav.getBoundingClientRect();
     if(navRect.top <= 0 && navRect.bottom > 0) top = navRect.bottom;
   }
-  var tabs = document.querySelector('#bibleApp .bs-nav');
-  if(tabs && getComputedStyle(tabs).position === 'sticky'){
+  var tabs = readerStickyNavigation();
+  if(tabs){
     var tabsTop = parseFloat(getComputedStyle(tabs).top);
     if(Number.isFinite(tabsTop)) top = Math.max(top, tabsTop + tabs.getBoundingClientRect().height);
   }
@@ -320,7 +326,6 @@ function initializeReaderStickyOffsets(){
   var view = document.getElementById('view-reader');
   var siteNav = document.querySelector('nav');
   var toolbar = view && view.querySelector('.reader-toolbar');
-  var tabs = document.querySelector('#bibleApp .bs-nav');
   var studyHeader = view && view.querySelector('.word-study-header');
   if(!view || !siteNav || !toolbar) return;
   var sheet = Array.from(document.styleSheets).find(function(candidate){
@@ -331,9 +336,9 @@ function initializeReaderStickyOffsets(){
   var style = sheet.cssRules[ruleIndex].style;
   function update(){
     style.setProperty('--reader-nav-bottom', siteNav.getBoundingClientRect().bottom + 'px');
-    var stickyTabs = tabs && getComputedStyle(tabs).position === 'sticky';
+    var stickyTabs = readerStickyNavigation();
     var toolbarHeight = toolbar.getBoundingClientRect().height;
-    style.setProperty('--reader-tabs-height', (stickyTabs ? tabs.getBoundingClientRect().height : 0) + 'px');
+    style.setProperty('--reader-tabs-height', (stickyTabs ? stickyTabs.getBoundingClientRect().height : 0) + 'px');
     style.setProperty('--reader-toolbar-height', toolbarHeight + 'px');
     style.setProperty('--reader-plan-return-height', readerPlanReturnHeight() + 'px');
     style.setProperty('--word-study-header-height', (studyHeader ? studyHeader.getBoundingClientRect().height : 0) + 'px');
@@ -353,7 +358,7 @@ function initializeReaderStickyOffsets(){
     var observer = new ResizeObserver(update);
     observer.observe(siteNav);
     observer.observe(toolbar);
-    if(tabs) observer.observe(tabs);
+    document.querySelectorAll('#bibleApp .bs-header, #bibleApp .bs-nav').forEach(function(el){ observer.observe(el); });
     if(studyHeader) observer.observe(studyHeader);
   }
 }
@@ -888,11 +893,6 @@ function rememberReaderTabPosition(leaving){
   if(!reader || !reader.classList.contains('active')) return;
   var reference = readerTabReference();
   var fullscreen = reader.classList.contains('reader-fullscreen');
-  var tabs = document.querySelector('#bibleApp .bs-nav');
-  // Moving up to the non-sticky tabs is navigation, not a new reading location.
-  if(!fullscreen && tabs && getComputedStyle(tabs).position !== 'sticky' && tabs.getBoundingClientRect().bottom > readerVisibleTop()){
-    if(!leaving || (readerTabPosition && readerTabPosition.reference === reference)) return;
-  }
   var top = readerVisibleTop();
   var verses = Array.from(document.querySelectorAll('#readerContent [data-verse-number]'));
   var anchor = verses.find(function(verse){
@@ -965,8 +965,8 @@ function switchView(view, btn, positionOnReturn){
   }
   if(view === 'reader' && !readerWasActive && positionOnReturn !== false) restoreReaderTabPosition();
   if(view !== 'reader'){
-    var tabs = document.querySelector('#bibleApp .bs-nav');
-    if(tabs && getComputedStyle(tabs).position === 'sticky'){
+    var tabs = readerStickyNavigation();
+    if(tabs){
       var tabsTop = parseFloat(getComputedStyle(tabs).top);
       var tabsRect = tabs.getBoundingClientRect();
       // A short loading view can clamp the document past the sticky row's container.
@@ -1312,6 +1312,7 @@ function toggleFullscreen(){
   button.setAttribute('aria-pressed', entering ? 'true' : 'false');
   button.setAttribute('aria-label', entering ? 'Exit Fullscreen' : 'Enter Fullscreen');
   button.textContent = entering ? 'Exit Fullscreen' : 'Fullscreen';
+  if(refreshReaderStickyOffsets) refreshReaderStickyOffsets();
   if(entering) button.focus();
   else {
     (fullscreenReturnFocus && fullscreenReturnFocus.isConnected ? fullscreenReturnFocus : button).focus();

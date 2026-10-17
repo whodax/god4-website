@@ -85,16 +85,17 @@ for(const width of [390,320])test.describe(`${width}px Compare clearance`,()=>{
     await expect(page.locator('#verseSelect')).toHaveValue('45');
   });
 });
-test('desktop Compare entry adds no application scroll or sticky columns',async({page})=>{
+test('desktop Compare entry clears the sticky Study Desk header without sticky columns',async({page})=>{
   await page.setViewportSize({width:1280,height:900});await page.goto('/');
   await page.evaluate(async()=>{
     await initializeBibleExperience();await navigateReaderToPassage('john',1,30);
-    window.compareEntryScrolls=0;const original=window.scrollBy.bind(window);
-    window.scrollBy=options=>{compareEntryScrolls++;original(options);};
     switchView('compare',document.querySelector('[aria-controls="view-compare"]'));
   });
   await expect(page.locator('.compare-col')).toHaveCount(2);
-  expect(await page.evaluate(()=>compareEntryScrolls)).toBe(0);
+  const header=await page.locator('.bs-header').boundingBox();
+  const summary=await page.locator('#compareSummary').boundingBox();
+  expect(summary.y).toBeGreaterThanOrEqual(header.y+header.height-1);
+  await expect(page.locator('.bs-header')).toHaveCSS('position','sticky');
   await expect(page.locator('.bs-nav')).toHaveCSS('position','static');
   await expect(page.locator('.compare-col-header').first()).toHaveCSS('position','static');
 });
