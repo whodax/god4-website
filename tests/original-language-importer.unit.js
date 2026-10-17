@@ -179,7 +179,7 @@ test('legacy JSON import refuses authoritative writes without source configurati
   assert.throws(()=>importer.importOriginalLanguage([sample],'unused'),/configured source import/);
 });
 
-test('configured CLI dry-runs and writes reviewed complete chapters with local lexical inputs', () => {
+test('configured CLI dry-runs but blocks writes with historical unverified licenses', () => {
   const temporary = fs.mkdtempSync(path.join(os.tmpdir(),'god4-configured-import-'));
   try{
     for(const config of [genConfig,johnConfig]){
@@ -193,10 +193,8 @@ test('configured CLI dry-runs and writes reviewed complete chapters with local l
       const dry=spawnSync(process.execPath,[...args,'--dry-run'],{cwd:root,encoding:'utf8'});
       assert.equal(dry.status,0,dry.stderr);assert.match(dry.stdout,/Validated dry-run/);assert.equal(fs.existsSync(out),false);
       const write=spawnSync(process.execPath,[...args,'--output',out],{cwd:root,encoding:'utf8'});
-      assert.equal(write.status,0,write.stderr);
-      const generated=JSON.parse(fs.readFileSync(path.join(out,config.bookId,'1.json'))).records;
-      assert.equal(generated.length,count);assert.equal(generated[0].definition,hebrew?'beginning':'in');
-      assert.equal(generated[0].transliteration,hebrew?null:'en');
+      assert.notEqual(write.status,0);assert.match(write.stderr,/Publication is disabled/);
+      assert.equal(fs.existsSync(out),false);
     }
   }finally{
     const resolved=path.resolve(temporary), allowed=path.resolve(os.tmpdir())+path.sep;
