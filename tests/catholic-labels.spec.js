@@ -46,7 +46,7 @@ for(const [book,chapter,label] of [['esther',16,'Catholic addition'],['daniel',1
   await page.keyboard.press('Escape');await expect(page.locator('#scripturePickerTrigger')).toBeFocused();
 });
 
-for(const [book,chapter,verse] of [['tobit',1,1],['esther',10,4],['esther',16,24],['daniel',13,65],['daniel',14,42],['daniel',3,90]])test(`unavailable ${book} ${chapter}:${verse} preserves Reader fallback and Compare gating`,async({page})=>{
+for(const [book,chapter,verse] of [['tobit',1,1],['esther',10,4],['esther',11,1],['esther',12,1],['esther',13,1],['esther',14,1],['esther',15,1],['esther',16,24],['daniel',13,65],['daniel',14,42],['daniel',3,90]])test(`unavailable ${book} ${chapter}:${verse} preserves Reader fallback and Compare gating`,async({page})=>{
   await open(page);await passage(page,book,chapter,verse);
   await page.getByRole('button',{name:'Compare',exact:true}).click();
   await expect(page.locator('.compare-col').nth(1)).toContainText(unavailable);
@@ -83,4 +83,55 @@ for(const width of [320,390])test(`Catholic picker labels retain keyboard focus 
   await page.locator('#searchTranslationToggle').click();
   await expect(page.locator('#searchTranslationMenu [data-translation-id="dra"]')).toHaveAccessibleName('DRA — Douay-Rheims — Catholic');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+
+for(let verse=24;verse<=30;verse++){
+  test(`Catholic-only Daniel 3:${verse} Reader -> WEB ignores coincident target coordinates`,async({page})=>{
+    await open(page);await passage(page,'daniel',3,verse);
+    expect(await page.evaluate(v=>BibleCanon.catholicOnly('daniel',3,v),verse)).toBe(true);
+    expect(await page.evaluate(v=>BibleData.getVerse('web','daniel',3,v),verse)).not.toBeNull();
+    await page.evaluate(()=>changeTranslation('web'));
+    await expect(page.locator('#readerTranslationStatus')).toContainText(unavailable);
+    await expect(page.locator('#readerTranslationStatus')).toContainText('no equivalent passage was inferred');
+    expect(await page.evaluate(()=>getReaderPosition())).toEqual({bookId:'daniel',chapter:1});
+    await expect(page.locator('#verseSelect')).toHaveValue('');
+  });
+  test(`Catholic-only Daniel 3:${verse} Compare -> WEB ignores coincident target coordinates`,async({page})=>{
+    await open(page);await passage(page,'daniel',3,verse);
+    expect(await page.evaluate(v=>BibleData.getVerse('web','daniel',3,v),verse)).not.toBeNull();
+    await page.getByRole('button',{name:'Compare',exact:true}).click();
+    await expect(page.locator('.compare-col').nth(1).getByRole('status')).toHaveText(unavailable);
+    await expect(page.locator('.compare-col').first().locator('.vnum')).toHaveText(String(verse));
+    await expect(page.locator('.compare-col').first().locator('.compare-unavailable')).toHaveCount(0);
+    expect(await page.evaluate(()=>getCompareReference())).toEqual({bookId:'daniel',chapter:3,verse});
+  });
+}
+
+for(const verse of [23,91])test(`ordinary DRA Daniel 3:${verse} retains its numbering warning`,async({page})=>{
+  await open(page);await passage(page,'daniel',3,verse);
+  expect(await page.evaluate(v=>BibleCanon.catholicOnly('daniel',3,v),verse)).toBe(false);
+  await page.getByRole('button',{name:'Compare',exact:true}).click();
+  await expect(page.locator('.compare-col').nth(1)).toContainText('Numbering differs');
+  await expect(page.locator('.compare-col').nth(1)).not.toContainText(unavailable);
+  await page.getByRole('button',{name:'Reader',exact:true}).click();
+  await page.evaluate(()=>changeTranslation('web'));
+  await expect(page.locator('#readerTranslationStatus')).toContainText('different numbering tradition');
+  await expect(page.locator('#readerTranslationStatus')).not.toContainText(unavailable);
+});
+
+test('Protestant Daniel coordinates remain available in Reader and Compare',async({page})=>{
+  await open(page,'web');await passage(page,'daniel',3,24);
+  await page.getByRole('button',{name:'Compare',exact:true}).click();
+  await expect(page.locator('.compare-col .compare-unavailable')).toHaveCount(0);
+  await expect(page.locator('.compare-col .vnum')).toHaveText(['24','24']);
+  await page.getByRole('button',{name:'Reader',exact:true}).click();
+  await page.evaluate(()=>changeTranslation('kjv'));
+  await expect(page.locator('#readerTranslationStatus')).toBeEmpty();
+  expect(await page.evaluate(()=>getReaderPosition())).toEqual({bookId:'daniel',chapter:3,verse:24});
+});
+
+test('same-edition DRA selection never reports its own addition as unavailable',async({page})=>{
+  await open(page);await passage(page,'daniel',3,24);await page.evaluate(()=>changeTranslation('dra'));
+  await expect(page.locator('#readerTranslationStatus')).toBeEmpty();
+  expect(await page.evaluate(()=>getReaderPosition())).toEqual({bookId:'daniel',chapter:3,verse:24});
 });

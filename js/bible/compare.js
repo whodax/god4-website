@@ -298,8 +298,7 @@ function renderCompareColumn(translationId, index){
   if(!verses){
     var present=BibleData.getChapter(translationId,compareReference.bookId,compareReference.chapter);
     var numbering=present && !BibleCanon.comparable(compareReferenceTranslation,translationId,compareReference.bookId);
-    var missing = !present || compareReference.verse && !BibleData.getVerse(translationId,compareReference.bookId,compareReference.chapter,compareReference.verse);
-    var catholicUnavailable = BibleCanon.canon(compareReferenceTranslation) === 'catholic' && BibleCanon.catholicOnly(compareReference.bookId,compareReference.chapter,compareReference.verse) && missing;
+    var catholicUnavailable = BibleCanon.canon(compareReferenceTranslation) === 'catholic' && BibleCanon.catholicOnly(compareReference.bookId,compareReference.chapter,compareReference.verse) && BibleCanon.canon(translationId) !== 'catholic';
     content += '<p class="compare-unavailable" role="status">'+(catholicUnavailable ? BibleCanon.catholicUnavailableMessage : numbering ? 'Numbering differs between these editions. An equivalent passage has not been established.' : translationId==='dra' || compareReferenceTranslation==='dra' ? 'Not available in this translation.' : 'Passage unavailable in this translation.')+'</p>';
   } else {
     verses.forEach(function(verse){

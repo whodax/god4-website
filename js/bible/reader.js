@@ -1067,7 +1067,7 @@ async function applyReaderTranslation(translationId){
   loadPassage(true);
   var status=document.getElementById('readerTranslationStatus');
   var catholicUnavailable = BibleCanon.canon(previousTranslation) === 'catholic' && BibleCanon.catholicOnly(previousBook, previousChapter, previousVerse) &&
-    !BibleData.getVerse(currentTranslation, previousBook, previousChapter, previousVerse || 1);
+    BibleCanon.canon(currentTranslation) !== 'catholic';
   if(status) status.textContent=(catholicUnavailable ? BibleCanon.catholicUnavailableMessage + ' ' : '') + (missingBook ? previousBookName+' is not available in this translation. Opened '+(BibleData.getChapter(currentTranslation,currentBook,currentChapter) || {}).bookName+' '+currentChapter+'.' : differentNumbering ? 'This edition uses a different numbering tradition. Opened chapter 1; no equivalent passage was inferred.' : '');
   if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
   if(typeof syncCompareFromReader === 'function') syncCompareFromReader();
