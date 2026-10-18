@@ -7,6 +7,29 @@ flow below it. The whole context stops pinning when it would leave less than 140
 for content. Short viewports therefore scroll normally instead of hiding controls.
 The existing page or fullscreen Reader remains the sole scrolling surface.
 
+The compact layout keeps the original fonts and colors, with a 16px Scripture
+excerpt and 18px Hebrew/Greek chips. The secondary labels are not reduced below
+11px. Panel padding is 14px by 16px, and the duplicate separator and 27px gap
+between context and chips are replaced by 4px clearance. Wrapped rows use a 4px
+gap and a 1.5 line-height to leave room for vowel points and accents. Chips have
+32px minimum dimensions for fine pointers and 44px minimum dimensions for touch;
+these are minimums, not fixed heights. Definitions and wrapped words remain free
+to grow on the normal scroll surface. Tab focus, not only word activation, checks
+the complete sticky stack and viewport edges and makes only necessary clearance
+adjustments. Delayed definitions do not initiate scrolling. Shell cache 41 carries
+these CSS/controller updates; Bible data and manifests are unchanged.
+On very short or zoomed viewports the Close header also stops pinning when it
+would leave less than one complete word target plus clearance. It remains in the
+panel's normal flow; Escape still closes and restores the activating word. Only
+actual sticky boxes count as viewport obstructions, not an unpinned context.
+Compact-layout tests cover 320px, 390px and desktop/fullscreen layouts, as well as
+200%-zoom-equivalent reflow at 2x device scale with half-size CSS viewports. This
+models text size, pixel scale and available layout space; it does not operate a
+browser's native zoom menu. Tests check full focused-button hit areas, keyboard
+clearance, text contrast, large targets, text-spacing overrides, long words and
+delayed long definitions. They are targeted accessibility checks, not a complete
+WCAG conformance audit of the site.
+
 ## Available data
 
 The 60,663 retained Genesis, Isaiah, John and Romans token records contain 15
@@ -71,5 +94,5 @@ navigation settled. Geometry and scroll-offset assertions retain exact bounds;
 there are no rounding tolerances or time-based settling sleeps in these checks.
 
 No Bible text, original-language shards, manifests, numbering or source provenance
-is regenerated or modified. The shell cache advances to `compact-reader-40` to
+is regenerated or modified. The shell cache advances to `compact-reader-41` to
 include the lazily loaded alignment module for offline use.

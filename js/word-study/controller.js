@@ -141,6 +141,11 @@ var WordStudyController = (function createWordStudyController(){
     view.originalDetails.hidden = false;
     highlightAlignment({tokenIndex:record.tokenIndex});
     view.originalTokens.querySelectorAll('button').forEach(function(button){ button.setAttribute('aria-pressed', button === selectedButton ? 'true' : 'false'); });
+    keepStudyFocusVisible(selectedButton);
+  }
+
+  function keepStudyFocusVisible(selectedButton){
+    var view = elements();
     var reader = document.getElementById('view-reader');
     var surface = reader.classList.contains('reader-fullscreen') ? reader : window;
     var revision = requestId;
@@ -151,14 +156,18 @@ var WordStudyController = (function createWordStudyController(){
       requestAnimationFrame(function(){
         if(revision !== requestId || view.panel.hidden || !selectedButton.isConnected ||
           document.activeElement !== selectedButton) return;
-        var token = selectedButton.getBoundingClientRect();
-        if(token.bottom <= readerVisibleTop() || token.top >= window.innerHeight) return;
         if(typeof refreshReaderStickyOffsets === 'function') refreshReaderStickyOffsets();
         updateVerseInset();
-        var context = document.getElementById('wordStudyContext').getBoundingClientRect();
-        var header = document.querySelector('.word-study-header').getBoundingClientRect();
-        var clearance = selectedButton.getBoundingClientRect().top - Math.max(context.bottom, header.bottom, readerVisibleTop()) - 12;
-        if(clearance < -1) surface.scrollBy({top:clearance,behavior:'instant'});
+        var token = selectedButton.getBoundingClientRect();
+        var context = document.getElementById('wordStudyContext');
+        var header = document.querySelector('.word-study-header');
+        var closing = selectedButton === view.close;
+        var clearanceInset = closing ? 5 : 8;
+        var top = Math.max(!closing && getComputedStyle(context).position === 'sticky' ? context.getBoundingClientRect().bottom : 0,
+          !closing && getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().bottom : 0, readerVisibleTop()) + clearanceInset;
+        var bottom = window.innerHeight - clearanceInset;
+        var clearance = token.top < top ? token.top - top : token.bottom > bottom ? token.bottom - bottom : 0;
+        if(clearance) surface.scrollBy({top:clearance,behavior:'instant'});
       });
     });
   }
@@ -274,8 +283,13 @@ var WordStudyController = (function createWordStudyController(){
       updateVerseInset = function(){
         var height = context.getBoundingClientRect().height;
         var header = document.querySelector('.word-study-header').getBoundingClientRect().height;
-        var pinned = header + height + 140 < window.innerHeight - readerVisibleTop();
-        document.getElementById('wordStudyPanel').classList.toggle('word-study-context-unpinned', !pinned);
+        var available = window.innerHeight - readerVisibleTop();
+        var targetHeight = window.matchMedia('(any-pointer:coarse)').matches ? 44 : 32;
+        var headerUnpinned = header + targetHeight + 16 > available;
+        var panel = document.getElementById('wordStudyPanel');
+        panel.classList.toggle('word-study-header-unpinned', headerUnpinned);
+        var pinned = !headerUnpinned && header + height + 140 < available;
+        panel.classList.toggle('word-study-context-unpinned', !pinned);
         inset.setProperty('--word-study-context-height', (pinned ? height : 0) + 'px');
       };
       updateVerseInset();
@@ -295,6 +309,12 @@ var WordStudyController = (function createWordStudyController(){
     verse.addEventListener('click', selectEnglish);
     verse.addEventListener('keydown', selectEnglish);
     var originalTokens = document.getElementById('wordStudyOriginalTokens');
+    if(originalTokens) originalTokens.addEventListener('focusin', function(event){
+      var button = event.target.closest('[data-original-language-token-index]');
+      if(button && originalTokens.contains(button)) keepStudyFocusVisible(button);
+    });
+    var closeButton = elements().close;
+    if(closeButton) closeButton.addEventListener('focus', function(){ keepStudyFocusVisible(closeButton); });
     if(originalTokens) originalTokens.addEventListener('click', function(event){
       var button = event.target.closest('[data-original-language-token-index]');
       if(button && originalTokens.contains(button)) showOriginalDetails(button.__originalLanguageRecord, button);
