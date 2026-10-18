@@ -210,11 +210,16 @@
             </div>
             <button id="wordStudyClose" type="button" aria-label="Close Word Study">Close</button>
           </div>
-          <p id="wordStudyReference" class="word-study-reference"></p>
-          <p id="wordStudyVerse" class="word-study-verse"></p>
-          <section id="wordStudyOriginalLanguage" class="word-study-original" aria-labelledby="wordStudyOriginalHeading" hidden>
+          <div id="wordStudyContext" class="word-study-context">
+            <p id="wordStudyReference" class="word-study-reference"></p>
+            <p id="wordStudyVerse" class="word-study-verse"></p>
+            <div id="wordStudyOriginalIntro" hidden>
             <h4 id="wordStudyOriginalHeading">Original Language</h4>
             <p class="word-study-original-note">Original-language words in this verse</p>
+            </div>
+            <p id="wordStudyAlignmentStatus" class="word-study-original-note" role="status"></p>
+          </div>
+          <section id="wordStudyOriginalLanguage" class="word-study-original" aria-labelledby="wordStudyOriginalHeading" hidden>
             <div id="wordStudyOriginalTokens" class="word-study-original-tokens"></div>
             <dl id="wordStudyOriginalDetails" class="word-study-original-details" hidden></dl>
           </section>
