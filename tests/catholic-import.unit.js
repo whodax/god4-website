@@ -38,7 +38,7 @@ test('all source checksums and generated bundle integrity are recorded',()=>{
  const hashes=require('../data/dra-source-checksums.json');assert.equal(Object.keys(hashes).length,73);
  for(const value of Object.values(hashes))assert.match(value,/^[a-f0-9]{64}$/);
  const entry=generator.buildManifest().dra;
- assert.equal(entry.integrity,'sha256-'+crypto.createHash('sha256').update(Buffer.from(bundle)).digest('base64'));
+ assert.equal(entry.integrity,'sha256-'+crypto.createHash('sha256').update(generator.canonicalDeployBytes(bundle)).digest('base64'));
  assert.equal(entry.structure.bookCount,73);
  generator.checkOutput();
 });

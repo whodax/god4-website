@@ -114,6 +114,7 @@
   .word-study-token:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
   .word-study-panel{
     max-width:700px;margin:0 auto 24px;padding:18px 20px;
+    overflow-anchor:none;
     background:var(--vellum);border:1px solid var(--line);border-left:3px solid var(--gold);
   }
   .word-study-header{
@@ -122,6 +123,8 @@
     top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px));
     z-index:10;background:var(--vellum);padding:6px 0;
   }
+  /* Dynamic definitions must not move either reading surface underneath focus. */
+  #view-reader.reader-fullscreen:has(#wordStudyPanel:not([hidden])){overflow-anchor:none;}
   .word-study-header > div{min-width:0;overflow-wrap:anywhere;}
   .word-study-label,.word-study-reference,.word-study-source{font:11px 'Inter','Inter Fallback',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);}
   .word-study-header h3{font:600 24px 'Cormorant Garamond','Cormorant Garamond Fallback',serif;color:var(--oxblood);margin:2px 0 0;}
@@ -131,6 +134,11 @@
   .word-study-part-of-speech{font:italic 14px 'EB Garamond','EB Garamond Fallback',serif;margin:6px 0;color:var(--ink-soft);}
   .word-study-related{font:italic 15px/1.4 'EB Garamond','EB Garamond Fallback',serif;margin:8px 0;color:var(--ink-soft);}
   .word-study-verse{border-top:1px solid var(--line);margin:12px 0 8px;padding-top:10px;font:italic 15px/1.5 'EB Garamond','EB Garamond Fallback',serif;color:var(--ink-soft);}
+  /* Keep the existing verse excerpt beside its study on the same scroll surface. */
+  .word-study-panel:has(.word-study-original:not([hidden])) .word-study-verse{
+    position:sticky;z-index:9;background:var(--vellum);
+    top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px) + var(--word-study-header-height,0px) + 8px);
+  }
   .word-study-source{margin:0;}
   .word-study-original{border-top:1px solid var(--line);margin-top:14px;padding-top:12px;}
   .word-study-original h4{margin:0;color:var(--oxblood);font:600 17px 'Cormorant Garamond','Cormorant Garamond Fallback',serif;}
@@ -140,7 +148,7 @@
   .word-study-original-token:hover,.word-study-original-token[aria-pressed="true"]{border-color:var(--gold);}
   .word-study-original-token:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
   #wordStudyPanel .word-study-original-token,#wordStudyPanel .word-study-original-details{
-    scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px) + var(--word-study-header-height,0px) + 16px);
+    scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px) + var(--word-study-header-height,0px) + var(--word-study-verse-height,0px) + 24px);
   }
   .word-study-original-details{border-top:1px solid var(--line);display:grid;grid-template-columns:max-content 1fr;gap:3px 10px;margin:10px 0 0;padding-top:9px;}
   .word-study-original-details dt{color:var(--ink-soft);font:11px 'Inter','Inter Fallback',sans-serif;letter-spacing:.04em;text-transform:uppercase;}
@@ -462,9 +470,12 @@
   #view-reader.reader-fullscreen .reader-toolbar{top:0;}
   #view-reader.reader-fullscreen .reader-plan-return{top:var(--reader-toolbar-height,53px);}
   #view-reader.reader-fullscreen .word-study-header{top:var(--reader-toolbar-height,53px);}
+  #view-reader.reader-fullscreen .word-study-panel:has(.word-study-original:not([hidden])) .word-study-verse{
+    top:calc(var(--reader-toolbar-height,53px) + var(--word-study-header-height,0px) + 8px);
+  }
   #view-reader.reader-fullscreen .word-study-original-token,
   #view-reader.reader-fullscreen .word-study-original-details{
-    scroll-margin-top:calc(var(--reader-scroll-padding,0px) + var(--reader-toolbar-height,53px) + var(--word-study-header-height,0px) + 16px);
+    scroll-margin-top:calc(var(--reader-scroll-padding,0px) + var(--reader-toolbar-height,53px) + var(--word-study-header-height,0px) + var(--word-study-verse-height,0px) + 24px);
   }
   #view-reader.reader-fullscreen .reader-passage{max-width:800px;font-size:22px;line-height:2;}
   #view-reader.reader-fullscreen .reader-verse,#view-reader.reader-fullscreen #wordStudyPanel,

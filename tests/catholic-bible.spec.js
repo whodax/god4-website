@@ -70,8 +70,8 @@ for(const [book,c,v] of [['tobit',1,1],['wisdom',1,1],['sirach',1,1],['1-maccabe
  await page.evaluate(()=>window.__spoken.at(-1).onend());await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number',String(v+1));
  await page.evaluate(()=>stopReader());await expect(page.locator('.verse-spoken')).toHaveCount(0);
 });
-test('DRA original-language alignment is explicitly unavailable',async({page})=>{
- await open(page);await page.evaluate(()=>WordStudyLoader.ensure());expect(await page.evaluate(()=>OriginalLanguageWordStudyProvider.lookupVerse({translationId:'dra',bookId:'genesis',chapter:1,verse:1}))).toEqual({status:'unavailable',records:[]});
+test('Catholic-only original-language data stays explicitly unavailable',async({page})=>{
+ await open(page);await page.evaluate(()=>WordStudyLoader.ensure());expect(await page.evaluate(()=>OriginalLanguageWordStudyProvider.lookupVerse({translationId:'dra',bookId:'tobit',chapter:1,verse:1}))).toEqual({status:'unavailable',records:[]});
 });
 test('startup does not request DRA; retain/offline Reader/remove use existing protocol',async({page,context})=>{
  await page.addInitScript(()=>{window.IntersectionObserver=class{observe(){}disconnect(){}};});
