@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb (CC BY 4.0); WLC text public domain.
+Exact verse blocks retained from wlc/Isa.xml, revision 3d15126fb1ef74867fc1434be1942e837932691f, SHA-256 ce039243b56e4de55b85a635f17343fe9cac7176123fbde5f72af623f9c8f0a5. Wrapper only added for unit fixtures; no text normalization. -->
+<osis>
+<verse osisID="Isa.3.15">
+          <w type="x-ketiv" lemma="m/l" morph="HR/R/Sp2mp" id="231pD">מ/ל/כם</w><note type="variant"><catchWord>מ/ל/כם</catchWord><rdg type="x-qere"><w lemma="4100" morph="HTi" id="23UCh">מַה</w><seg type="x-maqqef">־</seg><w lemma="l" n="1.1.0" morph="HR/Sp2mp" id="23jZZ">לָּ/כֶם֙</w></rdg></note>
+          <note n="a">Adaptations to a Qere which L and BHS, by their design, do not indicate. </note>
+          <w lemma="1792" morph="HVpi2mp" id="237a3">תְּדַכְּא֣וּ</w>
+          <w lemma="5971 a" n="1.1" morph="HNcmsc/Sp1cs" id="23k23">עַמִּ֔/י</w>
+          <w lemma="c/6440" morph="HC/Ncbpc" id="23nxs">וּ/פְנֵ֥י</w>
+          <w lemma="6041" n="1.0" morph="HAampa" id="23Rs7">עֲנִיִּ֖ים</w>
+          <w lemma="2912" n="1" morph="HVqi2mp" id="23x1q">תִּטְחָ֑נוּ</w>
+          <w lemma="5002" morph="HNcmsc" id="23ozK">נְאֻם</w><seg type="x-maqqef">־</seg><w lemma="136" morph="HNcmpc/Sp1cs" id="236Tj">אֲדֹנָ֥/י</w>
+          <w lemma="3069" n="0.0" morph="HNp" id="23Wp4">יְהוִ֖ה</w>
+          <w lemma="6635 b" n="0" morph="HNcbpa" id="23ayu">צְבָאֽוֹת</w><seg type="x-sof-pasuq">׃</seg>
+          <seg type="x-samekh">ס</seg>
+        </verse>
+<verse osisID="Isa.8.23">
+          <note>KJV:Isa.9.1</note>
+          <w lemma="3588 a" morph="HC" id="23Q8d">כִּ֣י</w>
+          <w lemma="3808" morph="HTn" id="23vNa">לֹ֣א</w>
+          <w lemma="4155" n="1.2.0" morph="HNcmsa" id="233VZ">מוּעָף֮</w>
+          <w lemma="l/834 a" morph="HR/Tr" id="23WTF">לַ/אֲשֶׁ֣ר</w>
+          <w lemma="4164" morph="HNcmsa" id="23Cbt">מוּצָ֣ק</w>
+          <w lemma="l" n="1.2" morph="HR/Sp3fs" id="23cnB">לָ/הּ֒</w>
+          <w lemma="k/6256" morph="HRd/Ncbsa" id="23dS2">כָּ/עֵ֣ת</w>
+          <w lemma="d/7223" n="1.1.1" morph="HTd/Aomsa" id="23ckH">הָ/רִאשׁ֗וֹן</w>
+          <w lemma="7043" n="1.1.0.0" morph="HVhp3ms" id="23rGf">הֵקַ֞ל</w>
+          <w lemma="776" morph="HNcbsc/Sd" id="23NLP">אַ֤רְצָ/ה</w>
+          <w lemma="2074" n="1.1.0" morph="HNp" id="23aVA">זְבֻלוּן֙</w>
+          <w lemma="c/776" morph="HC/Ncbsc/Sd" id="23FZ7">וְ/אַ֣רְצָ/ה</w>
+          <w lemma="5321" n="1.1" morph="HNp" id="23ML5">נַפְתָּלִ֔י</w>
+          <w lemma="c/d/314" n="1.0" morph="HC/Td/Aamsa" id="23vua">וְ/הָ/אַחֲר֖וֹן</w>
+          <w lemma="3513" n="1" morph="HVhp3ms" id="23v3n">הִכְבִּ֑יד</w>
+          <w lemma="1870" morph="HNcbsc" id="23zNk">דֶּ֤רֶךְ</w>
+          <w lemma="d/3220" n="0.1.0" morph="HTd/Ncmsa" id="23W9D">הַ/יָּם֙</w>
+          <w lemma="5676" morph="HNcmsc" id="23yYE">עֵ֣בֶר</w>
+          <w lemma="d/3383" n="0.1" morph="HTd/Np" id="23Aok">הַ/יַּרְדֵּ֔ן</w>
+          <w lemma="1551" n="0.0" morph="HNp" id="23uxn">גְּלִ֖יל</w>
+          <w lemma="d/1471 a" n="0" morph="HTd/Ncmpa" id="237cw">הַ/גּוֹיִֽם</w><seg type="x-sof-pasuq">׃</seg>
+        </verse>
+<verse osisID="Isa.9.1">
+          <note>KJV:Isa.9.2</note>
+          <w lemma="d/5971 a" n="1.1.0" morph="HTd/Ncmsa" id="23JhN">הָ/עָם֙</w>
+          <w lemma="d/1980" morph="HTd/Vqrmpa" id="232Xh">הַ/הֹלְכִ֣ים</w>
+          <w lemma="b/2822" n="1.1" morph="HRd/Ncmsa" id="23oMP">בַּ/חֹ֔שֶׁךְ</w>
+          <w lemma="7200" n="1.0" morph="HVqp3cp" id="23fMQ">רָא֖וּ</w>
+          <w lemma="216" morph="HNcbsa" id="23ngx">א֣וֹר</w>
+          <w lemma="1419 a" n="1" morph="HAamsa" id="239eB">גָּד֑וֹל</w>
+          <w lemma="3427" n="0.1.0" morph="HVqrmpc" id="23cbT">יֹשְׁבֵי֙</w>
+          <w lemma="b/776" morph="HR/Ncbsc" id="23u2m">בְּ/אֶ֣רֶץ</w>
+          <w lemma="6757" n="0.1" morph="HNcmsa" id="23mwg">צַלְמָ֔וֶת</w>
+          <w lemma="216" n="0.0" morph="HNcbsa" id="23YcV">א֖וֹר</w>
+          <w lemma="5050" morph="HVqp3ms" id="23Yny">נָגַ֥הּ</w>
+          <w lemma="5921 a" n="0" morph="HR/Sp3mp" id="23orY">עֲלֵי/הֶֽם</w><seg type="x-sof-pasuq">׃</seg>
+        </verse>
+<verse osisID="Isa.11.3">
+          <w lemma="c/7306" n="1.0" morph="HC/Vhc/Sp3ms" id="23eb2">וַ/הֲרִיח֖/וֹ</w>
+          <w lemma="b/3374" morph="HR/Ncfsc" id="23c6H">בְּ/יִרְאַ֣ת</w>
+          <w lemma="3068" n="1" morph="HNp" id="23aZW">יְהוָ֑ה</w>
+          <w lemma="c/3808" morph="HC/Tn" id="235aX">וְ/לֹֽא</w><seg type="x-maqqef">־</seg><w lemma="l/4758" morph="HR/Ncmsc" id="23U87">לְ/מַרְאֵ֤ה</w>
+          <w lemma="5869 a" n="0.1.0" morph="HNcbdc/Sp3ms" id="23NqP">עֵינָי/ו֙</w>
+          <w lemma="8199" n="0.1" morph="HVqi3ms" id="23mnj">יִשְׁפּ֔וֹט</w>
+          <w lemma="c/3808" morph="HC/Tn" id="233KS">וְ/לֹֽא</w><seg type="x-maqqef">־</seg><w lemma="l/4926" morph="HR/Ncmsc" id="23MZD">לְ/מִשְׁמַ֥ע</w>
+          <w lemma="241" n="0.0" morph="HNcfdc/Sp3ms" id="238qW">אָזְנָ֖י/ו</w>
+          <w lemma="3198" n="0" morph="HVhi3ms" id="23FvR">יוֹכִֽיחַ</w><seg type="x-sof-pasuq">׃</seg>
+        </verse>
+<verse osisID="Isa.53.1">
+          <w lemma="4310" morph="HTi" id="23FGy">מִ֥י</w>
+          <w lemma="539" n="1.0" morph="HVhp3ms" id="23nAJ">הֶאֱמִ֖ין</w>
+          <w lemma="l/8052" n="1" morph="HR/Ncfsc/Sp1cp" id="23uD2">לִ/שְׁמֻעָתֵ֑/נוּ</w>
+          <w lemma="c/2220" morph="HC/Ncbsc" id="23Mza">וּ/זְר֥וֹעַ</w>
+          <w lemma="3068" n="0.0" morph="HNp" id="23Nnd">יְהוָ֖ה</w>
+          <w lemma="5921 a" morph="HR" id="23fC6">עַל</w><seg type="x-maqqef">־</seg><w lemma="4310" morph="HTi" id="23Cxm">מִ֥י</w>
+          <w lemma="1540" n="0" morph="HVNp3fs" id="23F22">נִגְלָֽתָה</w><seg type="x-sof-pasuq">׃</seg>
+        </verse>
+<verse osisID="Isa.63.19">
+          <w lemma="1961" n="1.1.1" morph="HVqp1cp" id="23sA9">הָיִ֗ינוּ</w>
+          <w lemma="m/5769" n="1.1.0" morph="HR/Ncmsa" id="235Zr">מֵֽ/עוֹלָם֙</w>
+          <w lemma="3808" morph="HTn" id="23G7d">לֹֽא</w><seg type="x-maqqef">־</seg><w lemma="4910" morph="HVqp2ms" id="23LHt">מָשַׁ֣לְתָּ</w>
+          <w lemma="b" n="1.1" morph="HR/Sp3mp" id="236tD">בָּ֔/ם</w>
+          <w lemma="3808" morph="HTn" id="23BiB">לֹֽא</w><seg type="x-maqqef">־</seg><w lemma="7121" morph="HVNp3ms" id="23DWx">נִקְרָ֥א</w>
+          <w lemma="8034" n="1.0" morph="HNcmsc/Sp2ms" id="23wSi">שִׁמְ/ךָ֖</w>
+          <w lemma="5921 a" n="1" morph="HR/Sp3mp" id="23DD9">עֲלֵי/הֶ֑ם</w>
+          <note>KJV:Isa.64.1</note>
+          <w lemma="3863" morph="HC" id="23sJ1">לוּא</w><seg type="x-maqqef">־</seg><w lemma="7167" morph="HVqp2ms" id="238rd">קָרַ֤עְתָּ</w>
+          <w lemma="8064" n="0.1.0" morph="HNcmpa" id="23FsK">שָׁמַ֨יִם֙</w>
+          <w lemma="3381" n="0.1" morph="HVqp2ms" id="23LR8">יָרַ֔דְתָּ</w>
+          <w lemma="m/6440" n="0.0" morph="HR/Ncbpc/Sp2ms" id="23FbJ">מִ/פָּנֶ֖י/ךָ</w>
+          <w lemma="2022" morph="HNcmpa" id="23edm">הָרִ֥ים</w>
+          <w lemma="2151 a" n="0" morph="HVNp3cp" id="23EFj">נָזֹֽלּוּ</w><seg type="x-sof-pasuq">׃</seg>
+        </verse>
+<verse osisID="Isa.64.1">
+          <note>KJV:Isa.64.2</note>
+          <w lemma="k/6919" morph="HR/Vqc" id="23Svv">כִּ/קְדֹ֧חַ</w>
+          <w lemma="784" morph="HNcbsa" id="23h5k">אֵ֣שׁ</w>
+          <w lemma="2003" n="1.1.1" morph="HNcmpa" id="23bP2">הֲמָסִ֗ים</w>
+          <w lemma="4325" n="1.1.0" morph="HNcmpa" id="23Jzq">מַ֚יִם</w>
+          <w lemma="1158" morph="HVqi3fs" id="23fho">תִּבְעֶה</w><seg type="x-maqqef">־</seg><w lemma="784" n="1.1" morph="HNcbsa" id="23kct">אֵ֔שׁ</w>
+          <w lemma="l/3045" morph="HR/Vhc" id="23MVN">לְ/הוֹדִ֥יעַ</w>
+          <w lemma="8034" n="1.0" morph="HNcmsc/Sp2ms" id="23tsS">שִׁמְ/ךָ֖</w>
+          <w lemma="l/6862 c" n="1" morph="HR/Ncmpc/Sp2ms" id="23XQS">לְ/צָרֶ֑י/ךָ</w>
+          <w lemma="m/6440" n="0.0" morph="HR/Ncbpc/Sp2ms" id="23HC6">מִ/פָּנֶ֖י/ךָ</w>
+          <w lemma="1471 a" morph="HNcmpa" id="23ssL">גּוֹיִ֥ם</w>
+          <w lemma="7264" n="0" morph="HVqi3mp" id="23gg2">יִרְגָּֽזוּ</w><seg type="x-sof-pasuq">׃</seg>
+        </verse>
+</osis>

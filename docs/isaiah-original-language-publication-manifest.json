@@ -1,0 +1,646 @@
+{
+  "formatVersion": 1,
+  "bookId": "isaiah",
+  "lexicalStrategy": "strongs-hebrew-xml-subset",
+  "source": {
+    "repository": "https://github.com/openscriptures/morphhb",
+    "revision": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "artifact": "wlc/Isa.xml",
+    "sha256": "ce039243b56e4de55b85a635f17343fe9cac7176123fbde5f72af623f9c8f0a5",
+    "license": "CC BY 4.0"
+  },
+  "lexicalSource": {
+    "dataset": "Strong's Hebrew OSIS dictionary, reviewed five-field subset",
+    "upstreamIdentifier": "https://github.com/openscriptures/strongs",
+    "revision": "0acd2f251c2d35ff8db2dece4e0593979d3ac223",
+    "artifact": "hebrew/StrongHebrewG.xml",
+    "sha256": "f5a0258d39e9ae37edab27feba5301ff7db540a424e28a41a7af57b8ba5058f2",
+    "license": "public domain (Strong component; five-field subset only)",
+    "verification": "verified retained component notices and transformation history",
+    "fieldProvenance": {
+      "status": "verified",
+      "fields": {
+        "strongsNumber": "w/@ID",
+        "lemma": "w/@lemma",
+        "transliteration": "w/@xlit",
+        "pronunciation": "w/@POS",
+        "definition": "note[@type='explanation']/text() and plain hi/text()"
+      },
+      "evidence": "StrongHebrewG.xml Strong work header lines 26–38 and workPrefix lines 58–60; StrongJson.xslt lines 31–40 and 57–65; full pinned XML structural audit. See docs/hebrew-xml-lexical-provenance.md."
+    },
+    "licenseVerification": {
+      "status": "verified",
+      "evidence": "Pinned XML declares Strong component public domain, credits James Strong (1894), David Instone-Brewer and David Troidl; retained XSLT identifies the five selected Strong fields. TWOT glosses, lists and all other notes are excluded. Not a whole-file license claim. See docs/hebrew-xml-lexical-provenance.md."
+    }
+  },
+  "attribution": "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb (CC BY 4.0), revision 3d15126fb1ef74867fc1434be1942e837932691f; Westminster Leningrad Codex public domain; James Strong, A Concise Dictionary of the Words in the Hebrew Bible, Hunt & Eaton, 1894; electronic editing by David Instone-Brewer and David Troidl; Strong work declared public domain in Open Scriptures StrongHebrewG.xml, selected ID/headword/transliteration/pronunciation/explanation fields only, revision 0acd2f251c2d35ff8db2dece4e0593979d3ac223; TWOT and other lexical fields excluded",
+  "recordFields": [
+    "status",
+    "strongsNumber",
+    "language",
+    "lemma",
+    "transliteration",
+    "pronunciation",
+    "partOfSpeech",
+    "definition",
+    "morphology",
+    "source",
+    "bookId",
+    "chapter",
+    "verse",
+    "tokenIndex",
+    "surface"
+  ],
+  "referenceMapping": {
+    "strategy": "identity-with-exceptions",
+    "verified": true,
+    "evidence": "Pinned OSHB Isa.xml: all 1291 source coordinates and 33 inline KJV notes reviewed against all 1292 repository KJV verses. 63:19 has KJV:Isa.64.1 immediately before word 23sJ1, source token 9. See docs/isaiah-original-language-validation.md.",
+    "overrides": {
+      "8:23": {
+        "chapter": 9,
+        "verse": 1
+      }
+    },
+    "ranges": [
+      {
+        "sourceChapter": 9,
+        "sourceStart": 1,
+        "sourceEnd": 20,
+        "readerChapter": 9,
+        "readerStart": 2
+      },
+      {
+        "sourceChapter": 64,
+        "sourceStart": 1,
+        "sourceEnd": 11,
+        "readerChapter": 64,
+        "readerStart": 2
+      }
+    ],
+    "tokenSplits": {
+      "63:19": {
+        "tokenCount": 16,
+        "segments": [
+          {
+            "start": 0,
+            "end": 8,
+            "chapter": 63,
+            "verse": 19
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "chapter": 64,
+            "verse": 1
+          }
+        ]
+      }
+    }
+  },
+  "apparatusPolicy": "OSHB main text only; exclude note/rdg apparatus before token indexing",
+  "totals": {
+    "chapters": 66,
+    "readerVerses": 1292,
+    "tokens": 16932,
+    "bytes": 18894839,
+    "hebrew": 16932,
+    "aramaic": 0,
+    "excludedApparatusBlocks": 53,
+    "excludedAlternateWords": 56,
+    "numericStrongsJoinFailures": 0,
+    "wordsWithoutNumericStrongs": 310,
+    "missingSelectedLexicalFields": 0,
+    "missingReaderTargets": 0,
+    "collidingReaderTargets": 0
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "file": "isaiah/1.json",
+      "byteSize": 401097,
+      "sha256": "3cb073b0ef7a718aed84e429f27e4bd4c91aa9fefbf652f504425ea1ff2264f2",
+      "recordCount": 360,
+      "verseCount": 31
+    },
+    {
+      "chapter": 2,
+      "file": "isaiah/2.json",
+      "byteSize": 282829,
+      "sha256": "7dfda968d3b358c6bb968b8cbca7ea65163a106c6822753f9cc1a82738f66757",
+      "recordCount": 253,
+      "verseCount": 22
+    },
+    {
+      "chapter": 3,
+      "file": "isaiah/3.json",
+      "byteSize": 276978,
+      "sha256": "7c4612444a3e65b749b2eee9a5b5710ca6cbb54395103c273c3f126ac674fb6c",
+      "recordCount": 249,
+      "verseCount": 26
+    },
+    {
+      "chapter": 4,
+      "file": "isaiah/4.json",
+      "byteSize": 99551,
+      "sha256": "59266aa3ee4a826c8a2a00cc8682c702735a65a9b650de59ca46e01512c41422",
+      "recordCount": 89,
+      "verseCount": 6
+    },
+    {
+      "chapter": 5,
+      "file": "isaiah/5.json",
+      "byteSize": 427567,
+      "sha256": "55b9b8ce0c0476f6ce1034feb3213a0591ca435c1dea7ce95683db2d2f55f590",
+      "recordCount": 384,
+      "verseCount": 30
+    },
+    {
+      "chapter": 6,
+      "file": "isaiah/6.json",
+      "byteSize": 208887,
+      "sha256": "1c0017445ae87923b645a889cf0f20bcd809c4bb7e0dd9bb28ef450011ab92f4",
+      "recordCount": 188,
+      "verseCount": 13
+    },
+    {
+      "chapter": 7,
+      "file": "isaiah/7.json",
+      "byteSize": 385088,
+      "sha256": "caf9afeea90f12dc878aa17636003ab5937ef36a188709a6380ddf9164d0c305",
+      "recordCount": 345,
+      "verseCount": 25
+    },
+    {
+      "chapter": 8,
+      "file": "isaiah/8.json",
+      "byteSize": 309164,
+      "sha256": "092b15b950616cd2276b5c6df51e523fb1b7ceb120e15b9ca90fcfad5041223d",
+      "recordCount": 278,
+      "verseCount": 22
+    },
+    {
+      "chapter": 9,
+      "file": "isaiah/9.json",
+      "byteSize": 322231,
+      "sha256": "3755af764db702cb8b62def0161e6a99dbc8a82f6e306f9fc11bcb0e8ceff1eb",
+      "recordCount": 288,
+      "verseCount": 21
+    },
+    {
+      "chapter": 10,
+      "file": "isaiah/10.json",
+      "byteSize": 453735,
+      "sha256": "9155e53dcced95743b11330a134a6c3bf7bb776d9462ab052d6b920a8deef032",
+      "recordCount": 406,
+      "verseCount": 34
+    },
+    {
+      "chapter": 11,
+      "file": "isaiah/11.json",
+      "byteSize": 246661,
+      "sha256": "82e45a213f2a6d8c6e199521948b6029cf155cff955abacd88306ab23745b4dc",
+      "recordCount": 219,
+      "verseCount": 16
+    },
+    {
+      "chapter": 12,
+      "file": "isaiah/12.json",
+      "byteSize": 69870,
+      "sha256": "36c448bfda3db38fb6ef020d5d8c4413c051c0083821130ede4141d4f2b6f0d3",
+      "recordCount": 62,
+      "verseCount": 6
+    },
+    {
+      "chapter": 13,
+      "file": "isaiah/13.json",
+      "byteSize": 281873,
+      "sha256": "5efa5511467d7b2eb677ab984d567ebbe463c7447854b039460896fd8a5438ae",
+      "recordCount": 253,
+      "verseCount": 22
+    },
+    {
+      "chapter": 14,
+      "file": "isaiah/14.json",
+      "byteSize": 418415,
+      "sha256": "4d64267527e01622e6176780c843ee6be9334e8164f33d2c98267bea962a65bb",
+      "recordCount": 376,
+      "verseCount": 32
+    },
+    {
+      "chapter": 15,
+      "file": "isaiah/15.json",
+      "byteSize": 138605,
+      "sha256": "2bbd13f89fbef99e2b3fd07b11e3c640e35b09f667156f067d5ceac33836908d",
+      "recordCount": 125,
+      "verseCount": 9
+    },
+    {
+      "chapter": 16,
+      "file": "isaiah/16.json",
+      "byteSize": 213360,
+      "sha256": "26412faaf12d811a67eca9d00985ebce1ede69f6d6c5a5fec1b44cb5d96d9fdb",
+      "recordCount": 192,
+      "verseCount": 14
+    },
+    {
+      "chapter": 17,
+      "file": "isaiah/17.json",
+      "byteSize": 199639,
+      "sha256": "ddde0ca0b48979d40ff35970e6f6f7bc4db6b1532c91f865b650be0fa8bc0c53",
+      "recordCount": 179,
+      "verseCount": 14
+    },
+    {
+      "chapter": 18,
+      "file": "isaiah/18.json",
+      "byteSize": 137919,
+      "sha256": "5ada841bb2a5b140bb341071259290eeaaad5acd1d10a0f0ddaddd1b6f3c3217",
+      "recordCount": 124,
+      "verseCount": 7
+    },
+    {
+      "chapter": 19,
+      "file": "isaiah/19.json",
+      "byteSize": 365725,
+      "sha256": "472919162cf20eeeaa72f2c43b165bcaf4ceb798a6dcb7298f77057f928fff1d",
+      "recordCount": 327,
+      "verseCount": 25
+    },
+    {
+      "chapter": 20,
+      "file": "isaiah/20.json",
+      "byteSize": 106754,
+      "sha256": "9505905b1dd1f94f0ffdec25350b3aaca5d2c6028a4e4be1efe8351ec3c243d8",
+      "recordCount": 96,
+      "verseCount": 6
+    },
+    {
+      "chapter": 21,
+      "file": "isaiah/21.json",
+      "byteSize": 226182,
+      "sha256": "dfb6def84f8f7c4dcab71a8d7d9fb51ec011f5b7cd673816bb3d3930835496f9",
+      "recordCount": 202,
+      "verseCount": 17
+    },
+    {
+      "chapter": 22,
+      "file": "isaiah/22.json",
+      "byteSize": 342398,
+      "sha256": "02f8e4136be022d25ed61484eb930a2f694730710eda78c80094f2002c001a52",
+      "recordCount": 308,
+      "verseCount": 25
+    },
+    {
+      "chapter": 23,
+      "file": "isaiah/23.json",
+      "byteSize": 242514,
+      "sha256": "b7c4cf8ac23af8d1b761951a455b1ded184393d54e7e1137d895948c7cc87217",
+      "recordCount": 217,
+      "verseCount": 18
+    },
+    {
+      "chapter": 24,
+      "file": "isaiah/24.json",
+      "byteSize": 284312,
+      "sha256": "a233baed4814fa3c5c903f6dfec4e262878be4c2db66e776e77af0db166ff52a",
+      "recordCount": 256,
+      "verseCount": 23
+    },
+    {
+      "chapter": 25,
+      "file": "isaiah/25.json",
+      "byteSize": 178976,
+      "sha256": "987c26cf62a2a26eb7c6e9124b62437058570b5940378c028bf6bac6f1e4a00b",
+      "recordCount": 161,
+      "verseCount": 12
+    },
+    {
+      "chapter": 26,
+      "file": "isaiah/26.json",
+      "byteSize": 260611,
+      "sha256": "0fc31b414d628df8639ce994781bcd65b8cfe70aa9c21d3571fee2c2b2cb0dc5",
+      "recordCount": 233,
+      "verseCount": 21
+    },
+    {
+      "chapter": 27,
+      "file": "isaiah/27.json",
+      "byteSize": 194390,
+      "sha256": "ccbda97e2f778b2bc29d89959fa173d3f12a99415d21d46c444dd4af7a1169fd",
+      "recordCount": 174,
+      "verseCount": 13
+    },
+    {
+      "chapter": 28,
+      "file": "isaiah/28.json",
+      "byteSize": 424353,
+      "sha256": "6fa8e950e306317b0d18bb1c0c570874d3e6719653ac7b3c0913097678d8ce8c",
+      "recordCount": 380,
+      "verseCount": 29
+    },
+    {
+      "chapter": 29,
+      "file": "isaiah/29.json",
+      "byteSize": 364255,
+      "sha256": "d109690dcb2c1fe0d7ae6c529bb651ca0da2fe9cc479450a317eb3e8bbeb3c4e",
+      "recordCount": 326,
+      "verseCount": 24
+    },
+    {
+      "chapter": 30,
+      "file": "isaiah/30.json",
+      "byteSize": 547290,
+      "sha256": "5720144640d0d135807eec7de075651dcdc762fb9852bf53ff745cdf84767db2",
+      "recordCount": 492,
+      "verseCount": 33
+    },
+    {
+      "chapter": 31,
+      "file": "isaiah/31.json",
+      "byteSize": 174304,
+      "sha256": "ec6a8fad9fd445bc7485440ab0e987367a00e8551541ae521a19da89197b6efa",
+      "recordCount": 156,
+      "verseCount": 9
+    },
+    {
+      "chapter": 32,
+      "file": "isaiah/32.json",
+      "byteSize": 227328,
+      "sha256": "9cb5695e9c34d51bc952fc4f535faff6f229ba78550e1c5bbeca319b4c97808a",
+      "recordCount": 203,
+      "verseCount": 20
+    },
+    {
+      "chapter": 33,
+      "file": "isaiah/33.json",
+      "byteSize": 305302,
+      "sha256": "fc9262aa29a5a105b89ee097c58fd3c6d709a8035ee85165104ebc395e20af3c",
+      "recordCount": 275,
+      "verseCount": 24
+    },
+    {
+      "chapter": 34,
+      "file": "isaiah/34.json",
+      "byteSize": 246976,
+      "sha256": "ccfa24871be54f0144486ec2307db4790ca78185d7d1aeba0f46204572364ee9",
+      "recordCount": 220,
+      "verseCount": 17
+    },
+    {
+      "chapter": 35,
+      "file": "isaiah/35.json",
+      "byteSize": 140096,
+      "sha256": "f7e9ef9a263493fc6bf6ecf8252226ecb78b7cba969e738fe7680c668318bcd6",
+      "recordCount": 126,
+      "verseCount": 10
+    },
+    {
+      "chapter": 36,
+      "file": "isaiah/36.json",
+      "byteSize": 426658,
+      "sha256": "36b0b443798e37bfdf4719db545bce0bfc53b08c091f382f973ca35314692286",
+      "recordCount": 385,
+      "verseCount": 22
+    },
+    {
+      "chapter": 37,
+      "file": "isaiah/37.json",
+      "byteSize": 631341,
+      "sha256": "a9e9446a02483707b97516825fc77c01234e5d0314123cfb22c7e083faf13ede",
+      "recordCount": 566,
+      "verseCount": 38
+    },
+    {
+      "chapter": 38,
+      "file": "isaiah/38.json",
+      "byteSize": 315258,
+      "sha256": "39c517eb3881495c3d57829afcba6f00cd92b6118ebafb421b00a9f9d41591fb",
+      "recordCount": 281,
+      "verseCount": 22
+    },
+    {
+      "chapter": 39,
+      "file": "isaiah/39.json",
+      "byteSize": 163429,
+      "sha256": "ce436838df1d22cae9cb4c150ffc703b753530938e9ced9684e3baee854b8241",
+      "recordCount": 146,
+      "verseCount": 8
+    },
+    {
+      "chapter": 40,
+      "file": "isaiah/40.json",
+      "byteSize": 399512,
+      "sha256": "07535a8d4356928d16dc331f555811e608d7bfb9a8d03cce9167e02eeac17d13",
+      "recordCount": 357,
+      "verseCount": 31
+    },
+    {
+      "chapter": 41,
+      "file": "isaiah/41.json",
+      "byteSize": 392152,
+      "sha256": "6a5a3ab42f8752a34c9827b343879db9cf085e63d20c45b06e24f1093884c8a4",
+      "recordCount": 351,
+      "verseCount": 29
+    },
+    {
+      "chapter": 42,
+      "file": "isaiah/42.json",
+      "byteSize": 321443,
+      "sha256": "cb5d3a9dba7ec527b10eb61c76c6fc21e5b134459c405671918128d686e2f845",
+      "recordCount": 288,
+      "verseCount": 25
+    },
+    {
+      "chapter": 43,
+      "file": "isaiah/43.json",
+      "byteSize": 349424,
+      "sha256": "f3a81f6a6c90051779863024073e4db54265a249f9bb3482709f355f17c66ff7",
+      "recordCount": 314,
+      "verseCount": 28
+    },
+    {
+      "chapter": 44,
+      "file": "isaiah/44.json",
+      "byteSize": 430974,
+      "sha256": "3f4a880d67e268b29e3ab599b7bf8f1a205176177187133f64fd4b3364cc24a3",
+      "recordCount": 390,
+      "verseCount": 28
+    },
+    {
+      "chapter": 45,
+      "file": "isaiah/45.json",
+      "byteSize": 401831,
+      "sha256": "c1676418afccae45e8d69dfd80e28ce5d6c94d6ee09837652379447a20aaa6fb",
+      "recordCount": 360,
+      "verseCount": 25
+    },
+    {
+      "chapter": 46,
+      "file": "isaiah/46.json",
+      "byteSize": 167459,
+      "sha256": "9600d479121d33bc3d10541dd2822781dcee8c3b89d1e7916ab3443769750ed5",
+      "recordCount": 150,
+      "verseCount": 13
+    },
+    {
+      "chapter": 47,
+      "file": "isaiah/47.json",
+      "byteSize": 237142,
+      "sha256": "58650c9dbe25216e8d73eba9dbfaa289f592c84cea4b290fcd2fc0d3cf174fa6",
+      "recordCount": 213,
+      "verseCount": 15
+    },
+    {
+      "chapter": 48,
+      "file": "isaiah/48.json",
+      "byteSize": 295695,
+      "sha256": "fc4f4e4a3a5e40d2a3237a80acfeeb6a0f2fffdb4d9c2219ef8db4b777927666",
+      "recordCount": 265,
+      "verseCount": 22
+    },
+    {
+      "chapter": 49,
+      "file": "isaiah/49.json",
+      "byteSize": 404456,
+      "sha256": "f772c3073769a4e6d2462016db70d3fbce5ccd73c5567b18f2d508894450ab56",
+      "recordCount": 363,
+      "verseCount": 26
+    },
+    {
+      "chapter": 50,
+      "file": "isaiah/50.json",
+      "byteSize": 194426,
+      "sha256": "9c0baf7b1c98aa4f5097a9e05a06d3646cdc73d84de19ea4373ae52922dd2d79",
+      "recordCount": 176,
+      "verseCount": 11
+    },
+    {
+      "chapter": 51,
+      "file": "isaiah/51.json",
+      "byteSize": 374622,
+      "sha256": "8362e334fd1a2ce498c0c193e6ad4b9adc7d7adf7684478d65753b3e5d82099b",
+      "recordCount": 334,
+      "verseCount": 23
+    },
+    {
+      "chapter": 52,
+      "file": "isaiah/52.json",
+      "byteSize": 226981,
+      "sha256": "e89325a07095af02773cb474a26fe0873588602d1cbfc0ab2b24581fce296b14",
+      "recordCount": 202,
+      "verseCount": 15
+    },
+    {
+      "chapter": 53,
+      "file": "isaiah/53.json",
+      "byteSize": 186918,
+      "sha256": "3575d3b82b1712a0bef9578b1d0e23c35af62eb7198c76b624693ef3a43563a8",
+      "recordCount": 166,
+      "verseCount": 12
+    },
+    {
+      "chapter": 54,
+      "file": "isaiah/54.json",
+      "byteSize": 247621,
+      "sha256": "27972d352f656fc3eb747f1474ce0bf73ff215606d9367bb128bec123f548834",
+      "recordCount": 221,
+      "verseCount": 17
+    },
+    {
+      "chapter": 55,
+      "file": "isaiah/55.json",
+      "byteSize": 207858,
+      "sha256": "07072873fc8064d124a51b91f164f292a513b468587c71fd59ad06a75bd8300f",
+      "recordCount": 185,
+      "verseCount": 13
+    },
+    {
+      "chapter": 56,
+      "file": "isaiah/56.json",
+      "byteSize": 199670,
+      "sha256": "e9826e48017147c6b89ccbe196b68e649c31730ba92b92f802aa690d6660bbd6",
+      "recordCount": 179,
+      "verseCount": 12
+    },
+    {
+      "chapter": 57,
+      "file": "isaiah/57.json",
+      "byteSize": 291403,
+      "sha256": "6252d0897216f051446943661ec9c9db51f9a8b8e47424db901aba799e1996b9",
+      "recordCount": 260,
+      "verseCount": 21
+    },
+    {
+      "chapter": 58,
+      "file": "isaiah/58.json",
+      "byteSize": 248662,
+      "sha256": "93337ef2bd59428f5042d334fb24be0dd91936e5044e5797172b86a65fcc5495",
+      "recordCount": 222,
+      "verseCount": 14
+    },
+    {
+      "chapter": 59,
+      "file": "isaiah/59.json",
+      "byteSize": 319440,
+      "sha256": "cc43d303639fbdb8a2081f6cc6b28ba9bbb0a6c89b9415f5375aa622038d258c",
+      "recordCount": 284,
+      "verseCount": 21
+    },
+    {
+      "chapter": 60,
+      "file": "isaiah/60.json",
+      "byteSize": 329106,
+      "sha256": "705ae025e5bb9ad7156d4e28deebd0daf93023a10fba0ebf633b933d462dfc2b",
+      "recordCount": 295,
+      "verseCount": 22
+    },
+    {
+      "chapter": 61,
+      "file": "isaiah/61.json",
+      "byteSize": 184832,
+      "sha256": "1519e07e394b7c5da1044e987632db8c5bbdb682dde3f7a97d4fe5bd1d6baae6",
+      "recordCount": 165,
+      "verseCount": 11
+    },
+    {
+      "chapter": 62,
+      "file": "isaiah/62.json",
+      "byteSize": 197551,
+      "sha256": "a5dffb7269e1056619a45b689810a964c1c46836a5b0dbe04220ba15f7e78925",
+      "recordCount": 178,
+      "verseCount": 12
+    },
+    {
+      "chapter": 63,
+      "file": "isaiah/63.json",
+      "byteSize": 261400,
+      "sha256": "83ba0cc91f64cdfbda83f0701552acd53a3559b2bbe010c596c41cd33f6f986f",
+      "recordCount": 232,
+      "verseCount": 19
+    },
+    {
+      "chapter": 64,
+      "file": "isaiah/64.json",
+      "byteSize": 151325,
+      "sha256": "9c90f05ba48ee98fa4dad6643b0d6d82eb2d792e5e374cee6da227198a844e92",
+      "recordCount": 135,
+      "verseCount": 12
+    },
+    {
+      "chapter": 65,
+      "file": "isaiah/65.json",
+      "byteSize": 401766,
+      "sha256": "75686ca1298a598b6935963af6b28aa5606b21c593e772c4db2fd238a38833f5",
+      "recordCount": 361,
+      "verseCount": 25
+    },
+    {
+      "chapter": 66,
+      "file": "isaiah/66.json",
+      "byteSize": 429249,
+      "sha256": "b4f870648269d9f9e64fb1e4a4b4cd4412956720a07b916c4168be1372d7c83f",
+      "recordCount": 386,
+      "verseCount": 24
+    }
+  ]
+}

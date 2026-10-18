@@ -2,7 +2,9 @@
 
 const fs = require('fs');
 const path = require('path');
-const {SOURCES, readerBook, validateBookConfig, mapReference, existingBookConfig} = require('./original-language-config');
+const crypto = require('node:crypto');
+const {parsePinnedLexicon,FIELDS} = require('./strong-hebrew-xml-lexicon');
+const {SOURCES, readerBook, validateBookConfig, mapReference, sourceTargets, assertPublicationEligible, existingBookConfig} = require('./original-language-config');
 const XML_ENTITIES = { amp: '&', apos: "'", gt: '>', lt: '<', quot: '"' };
 
 const SCHEMA_FIELDS = [
@@ -99,7 +101,42 @@ function selectedChapters(value, defaultChapters = [1]) {
   return new Set(chapters);
 }
 
-function parseOshb(text, hebrewLexicon, config, chapters) {
+function oshbWords(text){
+  return [...text.matchAll(/<w\s+([^>]+)>([\s\S]*?)<\/w>/g)].map(word => {
+    const attributes = Object.fromEntries([...word[1].matchAll(/([\w:-]+)="([^"]*)"/g)].map(item => [item[1],decodeXml(item[2])]));
+    return {attributes,surface:decodeXml(word[2])};
+  });
+}
+
+function runningOshbText(text, diagnostics, reference){
+  // The supported OSHB format has inline note/rdg apparatus. Scan its nesting
+  // before extracting words; a non-greedy note regex could leak nested readings.
+  text = text.replace(/<!--[\s\S]*?-->/g,'');
+  const stack = [], chunks = [];
+  let cursor = 0, start = 0;
+  for(const match of text.matchAll(/<[^>]*>/g)){
+    const tag = match[0].match(/^<\s*(\/?)\s*(note|app|rdg)\b/i);
+    if(!tag) continue;
+    const name = tag[2].toLowerCase(), closing = Boolean(tag[1]), selfClosing = /\/\s*>$/.test(match[0]);
+    if(!closing){
+      if(!stack.length){start=match.index;chunks.push(text.slice(cursor,start));}
+      if(!selfClosing) stack.push(name);
+    }else if(stack.pop() !== name) throw new TypeError('Malformed OSHB apparatus nesting');
+    if(!stack.length){
+      cursor = match.index + match[0].length;
+      const xml = text.slice(start,cursor), words = oshbWords(xml);
+      if(words.length){
+        diagnostics.excludedVariantNotes++;
+        diagnostics.excludedVariantWords += words.length;
+        diagnostics.excludedApparatus.push({...reference,kind:name,xml,words:words.map(w => ({id:w.attributes.id || null,surface:w.surface,lemma:w.attributes.lemma || null,morphology:w.attributes.morph || null}))});
+      }
+    }
+  }
+  if(stack.length) throw new TypeError('Unclosed OSHB apparatus');
+  return chunks.join('') + text.slice(cursor);
+}
+
+function parseOshb(text, hebrewLexicon, config, chapters, diagnostics) {
   const records = [];
   const chapterSelection = selectedChapters(chapters);
   const versePattern = /<verse\s+osisID="([A-Za-z0-9-]+)\.(\d+)\.(\d+)"[^>]*>([\s\S]*?)<\/verse>/g;
@@ -107,16 +144,24 @@ function parseOshb(text, hebrewLexicon, config, chapters) {
   while ((verseMatch = versePattern.exec(text))) {
     if(verseMatch[1] !== config.sourceBookId) continue;
     const chapter = Number(verseMatch[2]);
-    if(config.sourceVerseCounts) mapReference(config, chapter, Number(verseMatch[3]));
+    if(config.sourceVerseCounts) sourceTargets(config, chapter, Number(verseMatch[3]));
     if (!chapterSelection.has(chapter)) continue;
-    const words = [...verseMatch[4].matchAll(/<w\s+([^>]+)>([\s\S]*?)<\/w>/g)];
+    const body = diagnostics ? runningOshbText(verseMatch[4],diagnostics,{sourceBookId:config.sourceBookId,chapter,verse:Number(verseMatch[3])}) : verseMatch[4];
+    const words = oshbWords(body);
     words.forEach((word, tokenIndex) => {
-      const attributes = Object.fromEntries([...word[1].matchAll(/([\w:-]+)="([^"]*)"/g)].map((item) => [item[1], decodeXml(item[2])]));
-      const lemmaMatch = word[1].match(/(?:^|\s)lemma="([^"]+)"/);
-      if (lemmaMatch) attributes.lemma = decodeXml(lemmaMatch[1]);
+      const attributes = word.attributes;
       const strongsNumber = strongsId('hebrew', attributes.lemma);
-      const lexical = hebrewLexicon.get(strongsNumber);
-      records.push({ status: 'authoritative', strongsNumber, language: 'hebrew', lemma: attributes.lemma, transliteration: null, pronunciation: null, partOfSpeech: null, definition: lexical || null, morphology: attributes.morph, source: config.source.attribution, bookId: config.bookId, chapter, verse: Number(verseMatch[3]), tokenIndex, surface: decodeXml(word[2]) });
+      const xmlSubset = config.lexicalJoinStrategy === 'strongs-hebrew-xml-subset';
+      const lexical = xmlSubset && !strongsNumber ? undefined : hebrewLexicon.get(strongsNumber);
+      if(xmlSubset && strongsNumber){
+        if(!lexical) throw new TypeError('Missing XML lexical join: '+strongsNumber);
+        for(const field of Object.keys(FIELDS)) if(typeof lexical[field] !== 'string' || !lexical[field].trim()) throw new TypeError('Lexical '+strongsNumber+': missing selected field '+field);
+        if(lexical.strongsNumber !== strongsNumber || Object.keys(lexical).some(field => !Object.hasOwn(FIELDS,field))) throw new TypeError('Unreviewed XML lexical fields');
+      }
+      if(xmlSubset && diagnostics) diagnostics.sourceLemmas.push({chapter,verse:Number(verseMatch[3]),tokenIndex,lemma:attributes.lemma});
+      records.push({ status: 'authoritative', strongsNumber, language: 'hebrew', lemma: xmlSubset && lexical ? lexical.lemma : attributes.lemma,
+        transliteration: xmlSubset && lexical ? lexical.transliteration : null, pronunciation: xmlSubset && lexical ? lexical.pronunciation : null,
+        partOfSpeech: null, definition: xmlSubset ? lexical?.definition || null : lexical || null, morphology: attributes.morph, source: config.source.attribution, bookId: config.bookId, chapter, verse: Number(verseMatch[3]), tokenIndex, surface: word.surface });
     });
   }
   return records;
@@ -185,20 +230,26 @@ function mapSourceRecords(records, config, options = {}){
   records = normalizeRecords(records);
   for(const r of records){
     if(r.bookId !== config.bookId) throw new TypeError('Source record book mismatch');
-    mapReference(config, r.chapter, r.verse);
+    mapReference(config, r.chapter, r.verse, r.tokenIndex);
+  }
+  for(const [key,split] of Object.entries(config.referenceMapping.tokenSplits || {})){
+    const [chapter,verse] = key.split(':').map(Number);
+    if(chapters.has(chapter) && records.filter(r => r.chapter === chapter && r.verse === verse).length !== split.tokenCount) throw new TypeError('Split source token count mismatch: ' + key);
   }
   for(const ch of chapters) for(let verse = 1; verse <= config.sourceVerseCounts[ch - 1]; verse++){
-    const r = mapReference(config, ch, verse); expected.add(r.chapter + ':' + r.verse);
+    for(const r of sourceTargets(config,ch,verse)) expected.add(r.chapter + ':' + r.verse);
   }
   const mapped = records.filter(r => chapters.has(r.chapter)).map(r => {
     if(r.bookId !== config.bookId || r.status !== 'authoritative') throw new TypeError('Source record book/status mismatch');
-    const target = mapReference(config, r.chapter, r.verse);
+    const target = mapReference(config, r.chapter, r.verse, r.tokenIndex);
+    const split = config.referenceMapping.tokenSplits?.[r.chapter + ':' + r.verse];
+    const segment = split?.segments.find(s => r.tokenIndex >= s.start && r.tokenIndex <= s.end);
     let language = config.language;
     if(config.parserStrategy === 'oshb'){
       if(typeof r.morphology !== 'string' || !/^[HA]/.test(r.morphology)) throw new TypeError('Invalid OSHB morphology language');
       language = r.morphology[0] === 'A' ? 'aramaic' : 'hebrew';
     }else if(r.language !== 'greek') throw new TypeError('Greek source record language mismatch');
-    return Object.assign({}, r, target, {language, source:config.source.attribution});
+    return Object.assign({}, r, target, {tokenIndex:segment ? r.tokenIndex - segment.start : r.tokenIndex,language, source:config.source.attribution});
   });
   const normalized = normalizeRecords(mapped), present = new Set(normalized.map(r => r.chapter + ':' + r.verse));
   const missing = [...expected].filter(key => !present.has(key));
@@ -210,26 +261,46 @@ function parseConfiguredSourceDetailed(text, lexicon, config, options = {}){
   validateBookConfig(config);
   const chapters = options.chapters == null ? Array.from({length:config.chapterCount}, (_, i) => i + 1) : options.chapters;
   const parser = config.parserStrategy === 'oshb' ? parseOshb : parseByzantine;
-  const diagnostics = {serializationPolicy:config.alternateAnalysisPolicy || null,alternateAnalyses:[]};
-  const records = mapSourceRecords(parser(text, lexicon, config, chapters, diagnostics), config, {chapters});
+  const diagnostics = {serializationPolicy:config.alternateAnalysisPolicy || null,alternateAnalyses:[],
+    oshbWordPolicy:config.parserStrategy === 'oshb' ? 'main-text-only' : null,
+    excludedVariantNotes:0,excludedVariantWords:0,excludedApparatus:[]};
+  if(config.lexicalJoinStrategy === 'strongs-hebrew-xml-subset') diagnostics.sourceLemmas = [];
+  const sourceRecords = parser(text, lexicon, config, chapters, diagnostics);
+  const records = mapSourceRecords(sourceRecords, config, {chapters});
+  diagnostics.mapping = {sourceVerses:new Set(sourceRecords.map(r=>r.chapter+':'+r.verse)).size,sourceTokens:sourceRecords.length,
+    readerVerses:new Set(records.map(r=>r.chapter+':'+r.verse)).size,
+    splitSourceVerses:Object.keys(config.referenceMapping.tokenSplits || {}).filter(key => selectedChapters(chapters).has(Number(key.split(':')[0])))};
   return {records,diagnostics};
 }
 
 function parseConfiguredSource(text, lexicon, config, options = {}){
   const result = parseConfiguredSourceDetailed(text,lexicon,config,options);
-  if(result.diagnostics.alternateAnalyses.length) throw new TypeError('Use detailed import API to retain alternate-analysis diagnostics');
+  if(result.diagnostics.alternateAnalyses.length || result.diagnostics.excludedVariantWords) throw new TypeError('Use detailed import API to retain alternate/apparatus diagnostics');
   return result.records;
 }
 
 function generateConfiguredSourceDetailed(text, lexicalText, config, options = {}){
   validateBookConfig(config);
-  const lexicon = config.lexicalJoinStrategy === 'strongs-hebrew-dat' ? parseStrongDat(lexicalText, 'hebrew') : parseStrongGreekXml(lexicalText);
+  if(config.publication?.enabled){
+    for(const [bytes,component] of [[text,config.source],[lexicalText,config.source.lexicalSource]]){
+      if(crypto.createHash('sha256').update(bytes,'utf8').digest('hex') !== component.sha256) throw new TypeError('Publication input SHA-256 mismatch');
+    }
+  }
+  let lexicon;
+  switch(config.lexicalJoinStrategy){
+    case 'strongs-hebrew-dat': lexicon = parseStrongDat(lexicalText,'hebrew'); break;
+    case 'strongs-greek-xml': lexicon = parseStrongGreekXml(lexicalText); break;
+    case 'strongs-hebrew-xml-subset':
+      if(crypto.createHash('sha256').update(lexicalText).digest('hex') !== config.source.lexicalSource.sha256) throw new TypeError('XML lexical input SHA-256 mismatch');
+      lexicon = parsePinnedLexicon(lexicalText).entries; break;
+    default: throw new TypeError('Unsupported lexical strategy');
+  }
   return parseConfiguredSourceDetailed(text, lexicon, config, options);
 }
 
 function generateConfiguredSource(text, lexicalText, config, options = {}){
   const result = generateConfiguredSourceDetailed(text,lexicalText,config,options);
-  if(result.diagnostics.alternateAnalyses.length) throw new TypeError('Use detailed import API to retain alternate-analysis diagnostics');
+  if(result.diagnostics.alternateAnalyses.length || result.diagnostics.excludedVariantWords) throw new TypeError('Use detailed import API to retain alternate/apparatus diagnostics');
   return result.records;
 }
 
@@ -238,7 +309,7 @@ function importAuthoritativeSources(genesisFile, johnFile, hebrewFile, greekFile
   const greekLexicon = parseStrongGreekXml(fs.readFileSync(greekFile, 'utf8'));
   const records = parseConfiguredSource(fs.readFileSync(genesisFile, 'utf8'), hebrewLexicon, existingBookConfig('genesis'), {chapters:options.genesisChapters || [1]}).concat(parseConfiguredSource(fs.readFileSync(johnFile, 'utf8'), greekLexicon, existingBookConfig('john'), {chapters:options.johnChapters || [1]}));
   if(options.dryRun) return {records, shards:[]};
-  return writeStaticData(records, outputDirectory);
+  return writeStaticData(records, outputDirectory, [existingBookConfig('genesis'),existingBookConfig('john')]);
 }
 
 function normalizeRecords(sourceRecords) {
@@ -267,7 +338,7 @@ function shardName(record) {
   return path.join(record.bookId, `${record.chapter}.json`);
 }
 
-function writeStaticData(records, outputDirectory) {
+function writeStaticData(records, outputDirectory, configurations = []) {
   records = normalizeRecords(records);
   const shards = new Map();
   records.forEach((record) => {
@@ -286,6 +357,15 @@ function writeStaticData(records, outputDirectory) {
       const missing = verses.map((_, i) => i + 1).filter(v => !present.has(v));
       if(missing.length) throw new TypeError('Incomplete Reader chapter output: ' + first.bookId + ' ' + first.chapter + ':' + missing.join(','));
     }
+  }
+  // Every authoritative write path, including this low-level writer, is gated.
+  // Fixture writes and read-only parse/map validation remain available.
+  for(const bookId of new Set(records.filter(r => r.status === 'authoritative').map(r => r.bookId))){
+    const config = configurations.find(c => c.bookId === bookId);
+    if(!config) throw new TypeError('Authoritative writes require publication-eligible source configuration');
+    validateBookConfig(config);
+    assertPublicationEligible(config);
+    if(records.some(r => r.bookId === bookId && r.source !== config.source.attribution)) throw new TypeError('Publication source attribution mismatch');
   }
   shards.forEach((shardRecords, name) => {
     const file = path.join(outputDirectory, name);
@@ -317,9 +397,10 @@ if (require.main === module) {
     }
     if(!configFile || !flags['--source'] || !flags['--lexicon'] || (!flags.dryRun && !flags['--output'])) throw new TypeError('Configured import requires --source, --lexicon and --output or --dry-run');
     const config = JSON.parse(fs.readFileSync(configFile, 'utf8'));
+    if(!flags.dryRun){validateBookConfig(config);assertPublicationEligible(config);}
     const {records,diagnostics} = generateConfiguredSourceDetailed(fs.readFileSync(flags['--source'], 'utf8'), fs.readFileSync(flags['--lexicon'], 'utf8'), config, {chapters:flags['--chapters']});
-    if(diagnostics.alternateAnalyses.length) console.log('Import diagnostics: '+JSON.stringify(diagnostics));
-    if(!flags.dryRun) writeStaticData(records, path.resolve(flags['--output']));
+    if(diagnostics.alternateAnalyses.length || diagnostics.excludedVariantWords || diagnostics.mapping.splitSourceVerses.length) console.log('Import diagnostics: '+JSON.stringify(diagnostics));
+    if(!flags.dryRun) writeStaticData(records, path.resolve(flags['--output']), [config]);
     console.log((flags.dryRun ? 'Validated dry-run: ' : 'Imported: ') + records.length + ' original-language records.');
   }else if (sourceFile === '--authoritative') {
     const authoritativeArguments = process.argv.slice(3);

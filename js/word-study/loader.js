@@ -78,7 +78,10 @@ var WordStudyLoader = (function(){
     var message = failed ? 'Word Study could not be loaded. Activate a word to try again.' : 'Loading Word Study for ' + item.context.displayWord + '.';
     document.getElementById('wordStudyDefinition').textContent = message;
     document.getElementById('wordStudyStatus').textContent = message;
-    if(!failed) document.getElementById('wordStudyHeading').focus();
+    if(!failed){
+      panel.scrollIntoView({block:'start',behavior:'instant'});
+      document.getElementById('wordStudyHeading').focus({preventScroll:true});
+    }
   }
   function activate(word){
     var context = contextFromWord(word);

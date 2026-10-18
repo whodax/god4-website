@@ -15,7 +15,8 @@ alignment or a textual-edition equivalence.
 Each book configuration contains `bookId`, `readerBookId`, `sourceBookId`,
 `testament`, `chapterCount`, `language`, `sourceFormat`, `parserStrategy`,
 `lexicalJoinStrategy`, `morphologyFormat`, `sourceVerseCounts`, `source`, and
-`referenceMapping`. Source verse counts must be checked against the actual input.
+`referenceMapping`. New configurations also default to `publication.enabled:false`.
+Source verse counts must be checked against the actual input.
 
 Supported strategies are OSHB OSIS verse/word XML with a Hebrew Strong's DAT join,
 and single-book Robinson-Pierpont chapter/verse CSV with a Greek Strong's XML
@@ -34,12 +35,14 @@ record attribution:
 | Westminster Leningrad Codex | public domain |
 | Robinson-Pierpont Byzantine Majority Text | public domain |
 | Strong's 1890 dictionaries | public domain |
-| Weston Ruter corrected edition | MIT |
+| Weston Ruter corrected edition (historical attribution, unverified) | MIT |
 
-No pinned source revision, original source download, license text, or complete
-attribution requirements were found in the repository. Revisions are `null` and
-verification is `unknown/unverified`; these labels are not an independent license
-review. Obtain and retain verified notices/revisions before future publication.
+Historical Genesis/John source profiles retain `null` revisions and
+`unknown/unverified` verification. These labels are not an independent license
+review. The inspected Hebrew DAT contradicts its historical MIT attribution;
+see [Isaiah dry validation](isaiah-original-language-validation.md). Artifact-specific
+Romans and Isaiah evidence does not retroactively verify those historical profiles.
+Obtain and retain verified notices/revisions before future publication.
 Metadata lives in tooling configuration; existing per-record attribution remains
 unchanged. No extra provenance fields are added to the deployed contract.
 
@@ -51,13 +54,80 @@ starts with proposed identity coordinates and `verified:false`. Its structural
 validation can pass, but generation refuses it until reference evidence is
 reviewed and recorded. Do not turn this flag on merely to bypass validation.
 
-Mappings are one source verse to one Reader verse. Exceptions are declared as
+Whole-verse mappings are one source verse to one Reader verse. Exceptions are declared as
 `overrides` keyed by canonical `chapter:verse`, or inclusive `ranges` with
 `sourceChapter`, `sourceStart`, `sourceEnd`, `readerChapter`, and `readerStart`.
 The explicit strategy has no identity fallback. Identity cannot contain ignored
 exceptions. Overlaps, collisions, out-of-bounds locations, and missing Reader
 mapping targets fail configuration validation. Generation also rejects missing
 expected verses and duplicate or noncontiguous token indexes before writing.
+
+For a reviewed verse boundary inside one source verse, `tokenSplits` maps a
+canonical source key to `{tokenCount, segments}`. Each segment has inclusive,
+zero-based `start` and `end` source token indexes plus Reader `chapter` and `verse`.
+Segments must be supplied in source order, start at zero, meet without gaps or
+overlap, and end at `tokenCount - 1`. At least two nonempty segments are required.
+An explicit strategy can use splits; an identity strategy cannot contain them.
+No split may overlap a whole-verse override/range. Each Reader verse must have
+one exclusive source owner: combining multiple source verses or segments into
+the same Reader verse is deliberately unsupported and rejected as a collision.
+
+Configuration validation checks every source target, unique Reader ownership,
+and complete canonical coverage. Parse/map validation also checks the **actual**
+split source token count and all contiguous source indexes before mapping. Missing,
+extra, duplicate, or invalid source indexes cannot be hidden by reindexing.
+Only split tokens receive `tokenIndex = sourceTokenIndex - segment.start`.
+All other token fields, existing whole-verse indexes, and source order remain intact.
+`mapReference(config, chapter, verse, tokenIndex)` requires an index for a split;
+`sourceTargets(config, chapter, verse)` returns its reviewed Reader destinations.
+
+The Isaiah split is declarative, not a parser-specific book conditional:
+
+```json
+{"tokenSplits":{"63:19":{"tokenCount":16,"segments":[
+  {"start":0,"end":8,"chapter":63,"verse":19},
+  {"start":9,"end":15,"chapter":64,"verse":1}
+]}}}
+```
+
+## Authoritative OSHB apparatus policy and publication guard
+
+Configured OSHB parsing defaults to `main-text-only`; this is the only accepted
+authoritative `oshbWordPolicy`. Words inside `note`, `app`, or `rdg` apparatus are
+excluded before running-token indexes are assigned. A nesting-aware tag scan
+rejects malformed/unclosed apparatus and excludes comment words. Main-text
+ketiv words stay in source order; note-contained qere words are diagnostics,
+not additional running-text tokens. No Unicode normalization is performed.
+
+Use the detailed APIs when apparatus is present. Diagnostics retain
+`excludedVariantNotes` (word-bearing outer apparatus blocks),
+`excludedVariantWords`, and `excludedApparatus`: source book/chapter/verse,
+apparatus kind, retained XML, and excluded word ID/surface/lemma/morphology.
+Nested apparatus is counted once at its outer boundary, without duplicate words.
+Record-only APIs reject rather than discard nonempty alternate/apparatus diagnostics.
+The legacy `parseOshbGenesis` extraction helper deliberately retains historical
+note-inclusive replay behavior. It is not an authoritative publication path.
+Configured Genesis receives the same main-text policy as every other OSHB book;
+existing deployed Genesis records are not regenerated or changed.
+
+Mapping verification and publication eligibility are separate. In-memory detailed
+parse/map validation may use a reviewed mapping with unresolved lexical licensing.
+Every authoritative `writeStaticData(records, directory, configurations)` call
+requires a matching, publication-enabled configuration for each book before any
+directory/file write. Fixture-only writes remain available. The configured CLI
+and historical authoritative command also pass through this guard. Existing
+historical configurations now cannot write newly imported authoritative shards
+until artifact-specific provenance has been reviewed.
+
+For every source component (text/annotations, lexical source, and OSHB WLC text),
+eligibility requires a nonempty license, revision, artifact path, SHA-256, and
+`licenseVerification:{status:'verified', evidence:'reviewed evidence location'}`.
+Unresolved/unknown labels or license verification cannot pass by merely setting
+`publication.enabled:true` or changing a license label. Enabled configured
+generation checks source and lexical input bytes against their declared hashes.
+Writer validation also enforces complete Reader chapters and source attribution.
+No publication flag, provenance field, or diagnostic is added to the 15-field
+deployed record contract.
 
 ### Genesis source boundary evidence
 
@@ -265,7 +335,8 @@ and language labels for compatibility. They are not a deployment validation path
 The existing `--authoritative` two-book command now uses configured generation,
 including reference/coverage validation, and supports `--dry-run`. The plain JSON
 import path accepts fixture records only; authoritative records require source
-configuration. Low-level writers expect callers to have validated their records.
+configuration. Low-level authoritative writes now additionally require the
+publication-eligible configurations described above.
 
 ## Language and compatibility
 
@@ -287,10 +358,21 @@ checkout line endings). No other difference is accepted.
 
 ## Pilot inputs still needed
 
-For Isaiah: a locally supplied OSHB Isaiah input, compatible Hebrew lexical DAT,
-verified source/license/revision information, checked source verse counts, and a
-reviewed source-to-canonical-Reader reference map. Structural draft config can be
-created with `createBookConfig('isaiah', 'oshb', 'Isa')`; no Isaiah data is shipped.
+For Isaiah: the reviewed `isaiahBookConfig()` explicitly selects the locally
+supplied OSHB Isaiah input and `strongs-hebrew-xml-subset`, a dedicated five-field
+adapter for the pinned `hebrew/StrongHebrewG.xml`. It supplies Strong ID, lexical
+headword, transliteration, pronunciation and explanation definition; it excludes
+TWOT glosses, unassigned lists and other notes. Source OSHB lemma annotations are
+retained in diagnostics; morphology, surface and classification are unchanged.
+Field-level license/provenance evidence and exact fingerprints are recorded in
+configuration. No DAT fallback is allowed; historical DAT parsing remains
+available for Genesis/replay and an explicit comparison audit. The reviewed
+coordinate/token split and apparatus policy are unchanged. The complete Isaiah publication candidate now ships 66 lazy chapter shards; the
+explicit publication workflow retains the disabled read-only config and enables
+the existing writer only after fresh staging verification. See the
+[Isaiah dry-validation report](isaiah-original-language-validation.md) and
+[field-level lexical audit](hebrew-xml-lexical-provenance.md), plus the
+[publication manifest and reproduction guide](isaiah-original-language-publication.md).
 
 For Romans: a locally supplied single-book Robinson-Pierpont CSV, compatible Greek
 Strong's XML, verified source/license/revision information, checked source verse

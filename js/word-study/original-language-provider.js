@@ -100,8 +100,17 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
     return staticShardRequests[url];
   }
 
+  // DRA uses canonical IDs too. Keep unreviewed books and differing-numbered
+  // chapters unavailable rather than guessing a cross-tradition verse mapping.
+  function hasSupportedReference(context){
+    if(context.translationId !== 'dra') return true;
+    var excluded = {genesis:[49,50], isaiah:[45,46], john:[6], romans:[]};
+    var bookId = String(context.bookId || '').toLowerCase();
+    return Object.prototype.hasOwnProperty.call(excluded, bookId) && excluded[bookId].indexOf(context.chapter) === -1;
+  }
+
   function staticLookup(context){
-    if(context.translationId==='dra') return Promise.resolve(null);
+    if(!hasSupportedReference(context)) return Promise.resolve(null);
     var reference = resolveOriginalLanguageReference(context);
     return loadStaticShard(reference).then(function(records){
       if(!records) return null;
@@ -112,7 +121,7 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
   }
 
   function lookupVerse(context){
-    if(context && context.translationId==='dra') return Promise.resolve({status:'unavailable',records:[]});
+    if(context && !hasSupportedReference(context)) return Promise.resolve({status:'unavailable',records:[]});
     if(!context || typeof context.bookId !== 'string' || !Number.isInteger(context.chapter) || context.chapter < 1 || !Number.isInteger(context.verse) || context.verse < 1){
       return Promise.resolve({ status: 'unavailable', records: [] });
     }

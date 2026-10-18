@@ -68,3 +68,46 @@ test('mapped and identity references share the canonical chapter request cache',
   await api.lookupVerse({translationId:'kjv', bookId:'romans', chapter:16, verse:25});
   assert.deepEqual(requests, ['data/word-study/original-language/romans/16.json']);
 });
+
+for(const translationId of ['dra','web','kjv']){
+  for(const [bookId,chapter,verse,language] of [['isaiah',1,1,'hebrew'],['isaiah',53,5,'hebrew'],['john',1,1,'greek']]){
+    test(translationId+' canonical original-language '+bookId+' '+chapter+':'+verse, async()=>{
+      const {api,requests}=provider();
+      const context={translationId,bookId,chapter,verse,bookName:'Isaias',verseText:'Different displayed translation text',lookupTerm:'different'};
+      const url='data/word-study/original-language/'+bookId+'/'+chapter+'.json';
+      const expected=JSON.parse(fs.readFileSync(path.join(root,url))).records.filter(r=>r.verse===verse);
+      const actual=await api.lookupVerse(context);
+      assert.equal(actual.status,'available');assert.ok(expected.length>0);
+      assert.deepEqual(plain(actual.records),expected);
+      assert.ok(actual.records.every(r=>r.language===language));
+      assert.deepEqual(plain(await api.lookup({...context,tokenIndex:0,displayWord:'Translation word'})),{word:'Translation word',...expected[0]});
+      assert.deepEqual(requests,[url]);
+    });
+  }
+}
+for(const [bookId,chapter,verse] of [['tobit',1,1],['judith',1,1],['sirach',1,1],['esther',10,4],['daniel',3,24],['daniel',13,1],['genesis',49,1],['genesis',50,1],['isaiah',45,1],['isaiah',46,1],['john',6,1]]){
+  test('DRA unavailable without reviewed source coordinates '+bookId+' '+chapter+':'+verse,async()=>{
+    const {api,requests}=provider();const context={translationId:'dra',bookId,chapter,verse,tokenIndex:0};
+    assert.deepEqual(plain(await api.lookupVerse(context)),{status:'unavailable',records:[]});
+    assert.equal((await api.lookup(context)).status,'unavailable');assert.deepEqual(requests,[]);
+  });
+}
+
+test('local DRA chapter-bound differences stay excluded from original-language lookup',async()=>{
+  const realm=vm.createContext({});
+  for(const id of ['dra','kjv'])vm.runInContext(fs.readFileSync(path.join(root,'js/bible/'+id+'.js'),'utf8'),realm);
+  const dra=vm.runInContext('draLibrary',realm),kjv=vm.runInContext('kjvLibrary',realm);
+  const differences=[];
+  const {api,requests}=provider();
+  for(const bookId of ['genesis','isaiah','john','romans']){
+    assert.equal(dra[bookId].chapters,kjv[bookId].chapters);
+    for(let chapter=1;chapter<=kjv[bookId].chapters;chapter++){
+      const d=dra[bookId][chapter].verses.length,k=kjv[bookId][chapter].verses.length;
+      if(d===k)continue;
+      differences.push([bookId,chapter,d,k]);
+      assert.deepEqual(plain(await api.lookupVerse({translationId:'dra',bookId,chapter,verse:1})),{status:'unavailable',records:[]});
+    }
+  }
+  assert.deepEqual(differences,[['genesis',49,32,33],['genesis',50,25,26],['isaiah',45,26,25],['isaiah',46,12,13],['john',6,72,71]]);
+  assert.deepEqual(requests,[]);
+});
