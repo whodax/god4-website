@@ -139,7 +139,7 @@ test('fullscreen toolbar stays on the single scroll surface at desktop, 480px, a
       const a = shell.getBoundingClientRect();
       const b = toolbar.getBoundingClientRect();
       const primaryRows = ['#scripturePickerTrigger', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
-        .map(selector => Math.round(document.querySelector(selector).getBoundingClientRect().top));
+        .map(selector => Math.round(document.querySelector(selector === '#readerTranslation' && document.querySelector(selector).hidden ? '#readerTranslationTrigger' : selector).getBoundingClientRect().top));
       return {
         shellScroll:shell.scrollTop,
         toolbarTop:b.top,

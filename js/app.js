@@ -453,6 +453,7 @@ function initializeBibleExperience(){
     if(typeof loadPassage === 'function') loadPassage();
     if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
     bibleExperienceReady = true;
+    ReaderTranslationLoader.prepare();
     return true;
   }).catch(function(){
     bibleExperienceRequest = null;

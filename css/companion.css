@@ -390,6 +390,33 @@
     padding:7px 8px;background:var(--vellum);color:var(--ink);cursor:pointer;
   }
   .reader-toolbar > select{width:100%;}
+  .reader-translation-picker{
+    box-sizing:border-box;width:min(440px,calc(100vw - 24px));
+    max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);padding:12px;
+    border:1px solid var(--line);border-radius:2px;
+    background:var(--vellum-card);color:var(--ink);box-shadow:var(--shadow);
+  }
+  .reader-translation-picker[open]{display:flex;flex-direction:column;gap:8px;}
+  .reader-translation-picker::backdrop{background:var(--line);}
+  .reader-translation-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-shrink:0;}
+  .reader-translation-heading h2{margin:0;font:600 24px 'Cormorant Garamond','Cormorant Garamond Fallback',serif;}
+  .reader-translation-picker button{
+    box-sizing:border-box;min-width:44px;min-height:44px;padding:8px;
+    background:var(--vellum);color:var(--ink);border:1px solid var(--line);border-radius:2px;
+    font:13px/1.4 'Inter','Inter Fallback',sans-serif;cursor:pointer;-webkit-tap-highlight-color:transparent;
+  }
+  .reader-translation-picker [role="status"]{margin:0;font:13px/1.4 'Inter','Inter Fallback',sans-serif;}
+  .reader-translation-picker [role="status"]:empty{display:none;}
+  .reader-translation-options{display:grid;gap:4px;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px;}
+  .reader-translation-options button{display:flex;gap:8px;align-items:center;text-align:left;overflow-wrap:anywhere;}
+  .reader-translation-options [aria-pressed="true"]{background:var(--highlight);border-color:var(--gold);font-weight:600;}
+  .reader-translation-check{flex:0 0 1em;visibility:hidden;}
+  .reader-translation-options [aria-pressed="true"] .reader-translation-check{visibility:visible;}
+  .reader-translation-picker button:focus-visible,
+  #readerTranslationTrigger:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  @media (hover:hover){.reader-translation-picker button:not([aria-pressed="true"]):hover{background:var(--vellum-card);border-color:var(--gold);}}
+  .reader-translation-picker button:enabled:active,
+  .reader-translation-picker button:enabled[data-pressed="true"]{background:var(--vellum);border-color:var(--ink);}
   .reader-reference-navigation #scripturePickerTrigger{text-align:left;font:600 14px Inter,'Inter Fallback',sans-serif;padding:7px 8px;overflow-wrap:anywhere;}
   .reader-detailed-navigation{display:grid;grid-template-columns:minmax(110px,1fr) minmax(136px,1fr) minmax(60px,.5fr);gap:8px;width:100%;}
   .reader-detailed-navigation > select{width:100%;}
@@ -548,6 +575,7 @@
     }
     #view-reader.reader-fullscreen .reader-secondary-controls{max-height:calc(100dvh - 124px);}
     .reader-toolbar > #readerTranslation{grid-column:1;grid-row:2;}
+    .reader-toolbar > #readerTranslationTrigger{grid-column:1;grid-row:2;min-width:0;padding:7px 8px;font-size:13px;color:var(--ink);}
     .reader-toolbar > #readAloudPlay{grid-column:2;grid-row:2;}
     .reader-toolbar > #readerMoreTrigger{grid-column:3;grid-row:2;}
     .reader-toolbar > #fullscreenBtn{grid-column:4;grid-row:2;min-width:44px;font-size:0;}

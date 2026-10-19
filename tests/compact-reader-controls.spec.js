@@ -24,7 +24,7 @@ test('Reader starts with one compact primary toolbar and a closed More disclosur
   await expect(reader.locator('.reader-toolbar > #fullscreenBtn')).toHaveCount(1);
   await expect(page.locator('.bs-nav > #offlineBiblesTrigger')).toHaveCount(1);
   expect(await reader.locator('.reader-toolbar').evaluate(toolbar =>
-    [...toolbar.children].filter(element => element.matches('select, button, .reader-controls-top'))
+    [...toolbar.children].filter(element => !element.hidden && element.matches('select, button, .reader-controls-top'))
       .map(element => element.id || 'chapter-group')
   )).toEqual(['readerReferenceNavigation', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']);
   for(const id of ['bookSelect', 'chapterSelect', 'verseSelect', 'readerTranslation']){
@@ -119,7 +119,7 @@ test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mob
       const view = document.getElementById('view-reader').getBoundingClientRect();
       const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
       const positions = ['#scripturePickerTrigger', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
-        .map(selector => Math.round(document.querySelector(selector).getBoundingClientRect().top));
+        .map(selector => Math.round(document.querySelector(selector === '#readerTranslation' && document.querySelector(selector).hidden ? '#readerTranslationTrigger' : selector).getBoundingClientRect().top));
       const verse = document.querySelector('#readerContent .reader-verse').getBoundingClientRect();
       const overflow = [...document.querySelectorAll('#view-reader *')].filter(element => {
         const bounds = element.getBoundingClientRect();

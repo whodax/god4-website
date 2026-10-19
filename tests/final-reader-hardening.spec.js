@@ -70,7 +70,7 @@ test('Reader toolbar and More reflow from desktop through 320px', async ({page})
     const geometry = await page.evaluate(() => {
       const toolbar = document.querySelector('.reader-toolbar');
       const controls = ['scripturePickerTrigger', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
-        .map(id => document.getElementById(id).getBoundingClientRect());
+        .map(id => document.getElementById(id === 'readerTranslation' && document.getElementById(id).hidden ? 'readerTranslationTrigger' : id).getBoundingClientRect());
       return {rows:new Set(controls.map(rect => Math.round(rect.top))).size,
         overflow:controls.some(rect => rect.left < 0 || rect.right > innerWidth),
         toolbarHeight:toolbar.getBoundingClientRect().height};
