@@ -125,6 +125,7 @@
     z-index:10;background:var(--vellum);padding:6px 0 2px;
   }
   /* Dynamic definitions must not move either reading surface underneath focus. */
+  html:has(#wordStudyPanel:not([hidden])),
   #view-reader.reader-fullscreen:has(#wordStudyPanel:not([hidden])){overflow-anchor:none;}
   .word-study-header > div{min-width:0;overflow-wrap:anywhere;}
   .word-study-label,.word-study-reference,.word-study-source{font:11px 'Inter','Inter Fallback',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);}
@@ -137,11 +138,9 @@
   .word-study-part-of-speech:empty,.word-study-related:empty,.word-study-source:empty{display:none;}
   .word-study-verse{border-top:1px solid var(--line);margin:6px 0;padding-top:6px;font:italic 16px/1.5 'EB Garamond','EB Garamond Fallback',serif;color:var(--ink-soft);}
   .word-study-context{
-    position:sticky;z-index:9;background:var(--vellum);
-    top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px) + var(--word-study-header-height,0px));
+    position:static;background:var(--vellum);
     padding-bottom:4px;min-width:0;
   }
-  .word-study-context-unpinned .word-study-context{position:static;}
   .word-study-header-unpinned{--word-study-header-height:0px;}
   .word-study-header-unpinned .word-study-header{position:static;}
   .word-study-context .word-study-verse{position:static;}
