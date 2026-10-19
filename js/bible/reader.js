@@ -974,6 +974,11 @@ function switchView(view, btn, positionOnReturn){
       }
     }
   }
+  if(view === 'plan'){
+    var heading = document.getElementById('planHeading');
+    var offset = heading ? heading.getBoundingClientRect().top - readerVisibleTop() : 0;
+    if(offset) window.scrollBy({top:Math.floor(offset), behavior:'instant'});
+  }
 }
 
 function populateBooks(){
