@@ -1,5 +1,5 @@
 const {test,expect}=require('@playwright/test');
-test.use({reducedMotion:'reduce'});
+test.use({contextOptions:{reducedMotion:'reduce'}});
 
 test.afterEach(async({page},info)=>{
   if(info.status!==info.expectedStatus){
@@ -37,6 +37,7 @@ for(const [mode,width,fullscreen] of [['desktop',1280,false],['fullscreen deskto
       await word.press('Enter');
       await expect(page.locator('#wordStudyHeading')).toBeFocused();
       await expect(page.locator('#wordStudyVerse')).toHaveText(expected);
+      await expect(page.locator('html')).toHaveCSS('overflow-anchor','none');
       const tokens=page.locator('#wordStudyOriginalTokens button');
       await expect(tokens.first()).toHaveAttribute('lang',lang);
       await expect.poll(()=>page.evaluate(()=>{
@@ -44,7 +45,6 @@ for(const [mode,width,fullscreen] of [['desktop',1280,false],['fullscreen deskto
         const first=document.querySelector('#wordStudyOriginalTokens button').getBoundingClientRect();
         return verse.top>=readerVisibleTop() && verse.bottom<=first.top && first.bottom<=innerHeight;
       })).toBe(true);
-      // An actual study interaction must keep the verse on screen as tokens scroll.
       await tokens.last().evaluate(e=>e.scrollIntoView({block:'start',behavior:'instant'}));
       await tokens.last().press('Enter');
       await expect(page.locator('#wordStudyOriginalDetails')).toBeVisible();
@@ -52,8 +52,10 @@ for(const [mode,width,fullscreen] of [['desktop',1280,false],['fullscreen deskto
       await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});
       await expect.poll(async()=>{
         const g=await position(page);
-        return g.verse.top>=Math.max(g.header,g.top)-1 && g.verse.bottom<=g.token.top && g.token.bottom<=g.height;
+        return g.verse.bottom<=g.token.top && g.token.top>=Math.max(g.header,g.top)+4 && g.token.bottom<=g.height;
       }).toBe(true);
+      await expect(page.locator('#wordStudyPanel #wordStudyContext #wordStudyVerse')).toHaveText(expected);
+      await expect(page.locator('#wordStudyContext')).toHaveCSS('position','static');
       const before=await position(page);
       expect(before.width).toBeLessThanOrEqual(width);
       await page.evaluate(()=>finishContextDefinition({status:'available',definition:'A long English definition. '.repeat(160)}));
@@ -66,6 +68,7 @@ for(const [mode,width,fullscreen] of [['desktop',1280,false],['fullscreen deskto
       await page.screenshot({path:testInfo.outputPath('verse-and-study.png')});
       await page.keyboard.press('Escape');
       await expect(page.locator('#wordStudyPanel')).toBeHidden();await expect(word).toBeFocused();
+      await expect(page.locator('html')).toHaveCSS('overflow-anchor','auto');
     });
   }
 }

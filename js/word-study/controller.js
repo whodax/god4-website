@@ -281,16 +281,13 @@ var WordStudyController = (function createWordStudyController(){
     if(verse && sheet && typeof ResizeObserver !== 'undefined'){
       var inset = sheet.cssRules[sheet.insertRule('#wordStudyPanel {}', sheet.cssRules.length)].style;
       updateVerseInset = function(){
-        var height = context.getBoundingClientRect().height;
         var header = document.querySelector('.word-study-header').getBoundingClientRect().height;
         var available = window.innerHeight - readerVisibleTop();
         var targetHeight = window.matchMedia('(any-pointer:coarse)').matches ? 44 : 32;
         var headerUnpinned = header + targetHeight + 16 > available;
         var panel = document.getElementById('wordStudyPanel');
         panel.classList.toggle('word-study-header-unpinned', headerUnpinned);
-        var pinned = !headerUnpinned && header + height + 140 < available;
-        panel.classList.toggle('word-study-context-unpinned', !pinned);
-        inset.setProperty('--word-study-context-height', (pinned ? height : 0) + 'px');
+        inset.setProperty('--word-study-context-height', '0px');
       };
       updateVerseInset();
       var observer = new ResizeObserver(updateVerseInset);
