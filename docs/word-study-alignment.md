@@ -3,8 +3,8 @@
 The selected English verse stays in the same Word Study panel. Its reference,
 Original Language heading and alignment status share one measured context block.
 The Close header remains above that block; original tokens and lexical definitions
-flow below it. The context always stays in normal flow, so it scrolls with the
-word rows rather than covering unfocused words. The excerpt remains in the same
+flow below it. Both header and context stay in normal flow, so they scroll with
+the word rows rather than covering unfocused words. The excerpt remains in the same
 panel but is not guaranteed to stay onscreen while later rows are studied.
 The existing page or fullscreen Reader remains the sole scrolling surface.
 
@@ -17,12 +17,13 @@ gap and a 1.5 line-height to leave room for vowel points and accents. Chips have
 these are minimums, not fixed heights. Definitions and wrapped words remain free
 to grow on the normal scroll surface. Tab focus, not only word activation, checks
 the complete sticky stack and viewport edges and makes only necessary clearance
-adjustments. Delayed definitions do not initiate scrolling. Shell cache 42 carries
+adjustments. Delayed definitions do not initiate scrolling. Shell cache 43 carries
 these CSS/controller updates; Bible data and manifests are unchanged.
-On very short or zoomed viewports the Close header also stops pinning when it
-would leave less than one complete word target plus clearance. It remains in the
-panel's normal flow; Escape still closes and restores the activating word. Only
-actual sticky boxes count as viewport obstructions, not an unpinned context.
+The Close control is not pinned over content. Pointer users can scroll back to
+its original position; keyboard focus reveals it below the Reader chrome, with
+its full focus ring visible. Escape still closes and restores the activating word.
+Only the existing Reader/site chrome reserves sticky clearance; Word Study
+header/context inset variables are zero, without extra spacing or nested scrolling.
 Compact-layout tests cover 320px, 390px and desktop/fullscreen layouts, as well as
 200%-zoom-equivalent reflow at 2x device scale with half-size CSS viewports. This
 models text size, pixel scale and available layout space; it does not operate a
@@ -95,5 +96,5 @@ navigation settled. Geometry and scroll-offset assertions retain exact bounds;
 there are no rounding tolerances or time-based settling sleeps in these checks.
 
 No Bible text, original-language shards, manifests, numbering or source provenance
-is regenerated or modified. The shell cache advances to `compact-reader-42` to
+is regenerated or modified. The shell cache advances to `compact-reader-43` to
 refresh the layout/controller while retaining the alignment module for offline use.
