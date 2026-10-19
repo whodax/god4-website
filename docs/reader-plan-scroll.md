@@ -48,7 +48,7 @@ late Compare completion are covered in `tests/plan-tab-scroll.spec.js`. All 12
 focused checks passed; the six pre-fix failures are intentional reproduction
 evidence, not failures suppressed by relaxed assertions.
 
-## Final validation
+## Initial Reader/Plan validation
 
 Each Playwright file ran separately and sequentially with one worker and zero
 retries. Final complete runs passed without failures, skips or flakes:
@@ -83,8 +83,8 @@ passed. The focused screenshots were also inspected at 320px.
 
 ## Release scope
 
-Only Reader navigation logic, its focused regression file, the existing offline
-Plan-return test and this document are changed. The older test selected the now
+The initial Reader/Plan change covered navigation logic, its focused regression
+file, the existing offline Plan-return test and this document. The older test selected the now
 hidden native translation control at mobile width; it now uses the existing
 mobile picker. Its ASV placement assertion follows the heading directly because
 ASV has no optional subtitle. The return-button identity and visibility checks
@@ -92,24 +92,74 @@ remain, with an additional assertion that the caption element follows the row
 (ASV's caption is empty, so structural presence rather than visible dimensions is
 appropriate). No production translation or rendering change was needed.
 
-Fonts, colors, CSS, Bible data, manifests and service worker are unchanged.
-The worker still uses cache 44. Before releasing this separate fix to installed
-users, include an approved shell-cache update so cache-first Reader assets refresh;
-this branch does not silently advance the separately approved cache version.
+Fonts, colors, CSS, Bible data and manifests are unchanged. The initial review
+commit kept cache 44; the approved P1 follow-up advances only the shell cache name
+to 45 and updates its test consumers. The exact 47-asset list, Bible-cache protocol,
+vendor migration, saved data, registration and activation implementation remain
+unchanged. No cache-busting query parameters or forced activation are introduced.
 
-The smallest proposed production update is a shell-cache version bump from 44 to
-45, retaining the exact 47-asset list. Reader JS is already precached and served
-cache-first, so changing that file without changing worker bytes does not reliably
-refresh an installed user's copy. Preserve installation via the existing complete
-shell precache, waiting-worker notification and explicit visitor acceptance before
-activation/reload. Existing shell cleanup can retire cache 44 after activation;
-Bible translation caches, vendor migration, saved data and registration behavior
-must stay unchanged. No cache-busting query parameters or forced activation are
-needed.
+## Approved installed-user delivery: cache 44 to 45
 
-Before production approval, update the focused cache-version expectations and add
-an installed 44-to-45 upgrade case using the actual old Reader asset: verify old
-bytes remain before acceptance, new Reader bytes arrive after acceptance, offline
-reload works, retained WEB/DRA and saved data survive, another tab remains safe,
-and a failed installation leaves cache 44 usable until a successful retry. This
-is a release proposal only; `sw.js` remains unchanged at version 44 in this PR.
+Reader JS is already precached and served cache-first. Changing Reader bytes alone
+does not refresh an installed cache-44 client. The cache-name change alters worker
+bytes and causes the existing installation flow to acquire the complete shell in
+cache 45. The old worker continues serving cache 44 while the new worker waits.
+Only visitor acceptance activates the waiting update and reloads the accepting
+tab. Existing activation cleanup then retires superseded shell caches without
+clearing retained Bible data or saved verses.
+
+`tests/mobile-translation-upgrade.spec.js` retains 43-to-current coverage and adds
+44-to-45 coverage using the actual deployed cache-44 worker and Reader from main
+commit `301b36f3b2bed4fdac5eadf5bde231a42b0c454b`. The Git object must be available
+to the test fixture. Desktop 1280px and mobile 320px/390px checks verify:
+
+- Exact old Reader/CSS/app response hashes remain before acceptance, including
+  after an online reload while the new worker is waiting.
+- The cache-44 Reader reproduces the hidden Plan heading; after acceptance the
+  new Reader's exact response hash matches the reviewed source and Plan is visible.
+- The 47 cache URLs, including existing query strings, are unchanged.
+- Retained WEB/DRA revisions, saved verses, selected translation and vendor cache
+  survive. The new Reader and Plan correction work after an offline reload, and
+  both translations remain selectable using the appropriate desktop/mobile UI.
+- Another tab is not automatically reloaded and safely receives new assets after
+  activation and normal reload.
+- A failed Reader installation leaves cache 44 active and usable offline. Retrying
+  successfully offers the normal accepted update without data loss.
+
+Strict worker-source guards allow only the cache-name change relative to cache
+44. Source-only equivalence checks normalize Git/Windows LF/CRLF differences;
+installed/new HTTP-response hash checks still compare exact bytes. The initial
+expanded fixture exposed that line-ending distinction and a desktop test using
+the mobile control; both fixture assumptions were corrected without production
+behavior changes. Deployment and merging still require approval.
+
+## Cache-45 follow-up validation
+
+Final runs used separate sequential Playwright invocations, one worker and zero
+retries. No final failures, skips or flakes remained:
+
+| File | Passed |
+| --- | ---: |
+| mobile-translation-upgrade.spec.js | 9 |
+| word-study-loader.spec.js | 43 |
+| plan-tab-scroll.spec.js | 12 |
+| pwa.spec.js | 17 |
+| auth-loader.spec.js | 20 |
+| auth-vendor-cache.spec.js | 38 |
+| compare-loader.spec.js | 32 |
+| offline-translation-management.spec.js | 12 |
+| reader-empty-verse.spec.js | 20 |
+| mobile-translation-picker.spec.js | 32 |
+| plans-readiness.spec.js | 18 |
+| plans-focus-visibility.spec.js | 18 |
+| offline-plan-back-pointer.spec.js | 36 |
+| reading-journey.spec.js | 26 |
+| shared-reader-fullscreen.spec.js | 22 |
+| Total | 355 |
+
+The original eager-JavaScript assertion remains unchanged: 290,529 decoded
+LF-normalized bytes against 290,914 historical bytes, leaving 385 bytes of
+headroom with 21 eager scripts. Asset validation, syntax checks for all 12
+changed/new PR JavaScript files, all 66 Isaiah hashes/byte counts and unchanged
+manifest/shards, exact 47-asset membership, and git diff --check passed. The
+production worker differs from cache 44 only in the shell cache version.
