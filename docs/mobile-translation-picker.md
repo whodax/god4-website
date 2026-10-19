@@ -1,5 +1,11 @@
 # Mobile Bible translation picker
 
+Release follow-up: the Reader/Plan fix advances the current shell to cache 45,
+retaining all 47 assets and the existing explicit update-acceptance behavior.
+The original picker implementation and validation below describe its cache-44
+release. Current 43/44-to-45 upgrade coverage and installed-user Reader delivery
+are documented in `reader-plan-scroll.md`.
+
 The Reader's traditional native select remains the source of translation options
 and the desktop control. Its closed face uses the site's cream/ink theme, but the
 opened Android picker and option interaction states are browser/OS UI. Scoped

@@ -169,8 +169,11 @@ test('passage and translation updates preserve the same return button and its fo
   });
   await expect(page.locator('#readerBackToPlan')).toBeFocused();
   await page.locator('[data-reader-action="next"]').first().click();
-  await page.locator('#readerTranslation').selectOption('asv');
-  await expect(page.locator('#readerContent > .subtitle + .reader-plan-return > #readerBackToPlan')).toBeVisible();
+  await page.locator('#readerTranslationTrigger').click();
+  await page.locator('#readerTranslationPicker [data-translation="asv"]').click();
+  await expect(page.locator('#readerTranslation')).toHaveValue('asv');
+  await expect(page.locator('#readerContent > h2 + .reader-plan-return > #readerBackToPlan')).toBeVisible();
+  await expect(page.locator('#readerContent > h2 + .reader-plan-return + .reader-chapter-caption')).toHaveCount(1);
   expect(await page.evaluate(()=>document.getElementById('readerBackToPlan')===window.__returnButton)).toBe(true);
   await page.locator('#readerBackToPlan').click();
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
