@@ -1014,63 +1014,28 @@ function populateTranslations(){
     translationSelect.selectedIndex = selectedIndex;
     UserData.translation.save(currentTranslation);
   }
+  ReaderTranslationLoader.sync();
 }
 
 var readerTranslationTask = null;
 function changeTranslation(translationId){
-  var task = applyReaderTranslation(translationId);
-  readerTranslationTask = task;
-  function finished(){ if(readerTranslationTask === task) readerTranslationTask = null; }
-  task.then(finished,finished);
-  return task;
-}
-async function applyReaderTranslation(translationId){
   if(typeof ScripturePicker !== 'undefined') ScripturePicker.invalidate();
-  if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return false;
+  if(typeof BibleData === 'undefined' || !BibleData.listTranslations().some(function(translation){ return translation.id === translationId; })) return Promise.resolve(false);
   if(typeof invalidatePendingPlanNavigation==='function') invalidatePendingPlanNavigation();
   stopSpeechForManualNavigation();
   if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();
-  var previousTranslation = currentTranslation;
-  var previousBook = currentBook;
-  var previousChapter = currentChapter, previousVerse = currentVerse;
-  var previousBookName=(BibleData.listBooks(previousTranslation).find(function(b){return b.id===previousBook;}) || {}).name || previousBook;
-  var translationSelect = document.getElementById('readerTranslation');
-  var requestId = ++translationChangeRequest;
-  var loaded = typeof BibleTranslationLoader !== 'undefined'
-    ? await BibleTranslationLoader.ensure(translationId)
-    : BibleData.isTranslationLoaded(translationId);
-  if(requestId !== translationChangeRequest) return false;
-  if(!loaded){
-    if(translationSelect) translationSelect.value = previousTranslation;
+  var task = ReaderTranslationLoader.ensure().then(function(){ return applyReaderTranslation(translationId); },function(){
+    document.getElementById('readerTranslation').value = currentTranslation;
+    document.getElementById('readerTranslationStatus').textContent = 'Translation controls unavailable. Please try again.';
     return false;
+  });
+  readerTranslationTask = task;
+  function finished(){
+    if(readerTranslationTask === task) readerTranslationTask = null;
+    ReaderTranslationLoader.sync();
   }
-  var bookSelect = document.getElementById('bookSelect');
-  if(bookSelect && bookSelect.value) currentBook = bookSelect.value;
-  currentTranslation = translationId;
-  UserData.translation.save(currentTranslation);
-  if(typeof refreshPlanReadingSessionTranslation==='function') refreshPlanReadingSessionTranslation();
-  if(translationSelect) translationSelect.value = currentTranslation;
-  var missingBook=!BibleData.getChapterCount(currentTranslation,previousBook);
-  var differentNumbering=!BibleCanon.comparable(previousTranslation,currentTranslation,previousBook);
-  if(differentNumbering){ currentChapter=1; currentVerse=null; }
-  populateBooks();
-  if(!bookSelect || !BibleData.getChapterCount(currentTranslation, currentBook)){
-    currentBook = BibleData.listBooks(currentTranslation)[0].id;
-    currentVerse = null;
-    bookSelect.value = currentBook;
-  } else {
-    bookSelect.value = currentBook;
-  }
-  populateChapters();
-  populateVerses();
-  loadPassage(true);
-  var status=document.getElementById('readerTranslationStatus');
-  var catholicUnavailable = BibleCanon.canon(previousTranslation) === 'catholic' && BibleCanon.catholicOnly(previousBook, previousChapter, previousVerse) &&
-    BibleCanon.canon(currentTranslation) !== 'catholic';
-  if(status) status.textContent=(catholicUnavailable ? BibleCanon.catholicUnavailableMessage + ' ' : '') + (missingBook ? previousBookName+' is not available in this translation. Opened '+(BibleData.getChapter(currentTranslation,currentBook,currentChapter) || {}).bookName+' '+currentChapter+'.' : differentNumbering ? 'This edition uses a different numbering tradition. Opened chapter 1; no equivalent passage was inferred.' : '');
-  if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
-  if(typeof syncCompareFromReader === 'function') syncCompareFromReader();
-  return true;
+  task.then(finished,finished);
+  return task;
 }
 
 function populateChapters(){
@@ -1326,6 +1291,7 @@ document.addEventListener('keydown', function(event){
   if(!shell || !shell.classList.contains('reader-fullscreen')) return;
   var picker = document.getElementById('scripturePicker');
   if(picker && picker.open) return;
+  if(ReaderTranslationLoader.isOpen()) return;
   if(event.key === 'Escape'){
     var more = document.getElementById('readerMoreTrigger');
     if(more && more.getAttribute('aria-expanded') === 'true'){
@@ -1508,5 +1474,41 @@ if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener 
     secondaryControls.addEventListener('keydown', closeReaderMoreOnEscape);
   }
 }
-if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', function(){ initializeReaderControls(); initializeVoiceCommands(); }, { once: true });
-else { initializeReaderControls(); initializeVoiceCommands(); }
+var ReaderTranslationLoader = (function(){
+  var request;
+  function ensure(){
+    if(!request) request = new Promise(function(resolve,reject){
+      var script = document.createElement('script');
+      var timeout = setTimeout(fail,10000);
+      function fail(){
+        clearTimeout(timeout);
+        script.onload = script.onerror = null;
+        script.remove();
+        request = null;
+        reject(new Error('Translation controls unavailable'));
+      }
+      script.src = '/js/bible/translation-picker.js';
+      script.onload = function(){
+        try {
+          if(typeof applyReaderTranslation !== 'function') throw new Error('Missing translation runtime');
+          ReaderTranslationPicker.initialize();
+          clearTimeout(timeout);
+          resolve();
+        } catch(error){ fail(); }
+      };
+      script.onerror = fail;
+      document.head.appendChild(script);
+    });
+    return request;
+  }
+  function sync(){ if(window.ReaderTranslationPicker) ReaderTranslationPicker.sync(); }
+  function isOpen(){ return !!window.ReaderTranslationPicker && ReaderTranslationPicker.isOpen(); }
+  function prepare(){
+    if(bibleExperienceReady && typeof HTMLDialogElement !== 'undefined' && HTMLDialogElement.prototype.showModal &&
+      matchMedia('(max-width:620px)').matches) ensure().catch(function(){});
+  }
+  function initialize(){ matchMedia('(max-width:620px)').addEventListener('change',prepare); }
+  return {ensure:ensure,sync:sync,isOpen:isOpen,prepare:prepare,initialize:initialize};
+})();
+if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', function(){ initializeReaderControls(); initializeVoiceCommands(); ReaderTranslationLoader.initialize(); }, { once: true });
+else { initializeReaderControls(); initializeVoiceCommands(); ReaderTranslationLoader.initialize(); }
