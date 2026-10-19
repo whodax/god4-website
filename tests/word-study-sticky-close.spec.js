@@ -13,7 +13,7 @@ async function geometry(page){
       stack:Math.max(...layers.map(r=>r.bottom)),hit:!!hit && close.contains(hit),panelScroll:panel.scrollTop,
       overflow:getComputedStyle(panel).overflowY,docWidth:document.documentElement.scrollWidth,
       background:getComputedStyle(header).backgroundColor,surface:getComputedStyle(panel).backgroundColor,
-      z:getComputedStyle(header).zIndex,toolbarZ:getComputedStyle(reader.querySelector('.reader-toolbar')).zIndex,
+      headerPosition:getComputedStyle(header).position,
       active:document.activeElement.id,y:scrollY,readerScroll:reader.scrollTop};
   });
 }
@@ -46,9 +46,9 @@ async function openResult(page, state){
   return word;
 }
 
-for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false],['reflow',320,false],['fullscreen desktop',1280,true],['fullscreen mobile',390,true]]){
+for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false],['reflow',320,false],['fullscreen desktop',1280,true],['fullscreen mobile',390,true],['fullscreen reflow',320,true]]){
   test.describe(name,()=>{
-    test.use({viewport:{width,height:width===1280?900:844},hasTouch:width!==1280,reducedMotion:'reduce'});
+    test.use({viewport:{width,height:width===1280?900:844},hasTouch:width!==1280,contextOptions:{reducedMotion:'reduce'}});
     test.beforeEach(async({page})=>{
       page.errors=[];page.on('pageerror',e=>page.errors.push(e.message));
       await page.goto('/');
@@ -65,14 +65,14 @@ for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false
         const before=await geometry(page);
         await scrollPanel(page,'within');
         const g=await geometry(page);
-        expect(g.header.top).toBeGreaterThanOrEqual(g.stack-1);
-        expect(g.header.top).toBeLessThanOrEqual(g.stack+1);
-        expect(g.close.bottom).toBeLessThan(width===1280?900:844);
-        expect(g.hit).toBe(true);expect(g.close.height).toBeGreaterThanOrEqual(44);expect(g.close.width).toBeGreaterThanOrEqual(44);
+        expect(g.headerPosition).toBe('static');
+        const travel=fullscreen?g.readerScroll-before.readerScroll:g.y-before.y;
+        expect(g.header.top-before.header.top).toBe(-travel);
+        expect(g.close.height).toBeGreaterThanOrEqual(44);expect(g.close.width).toBeGreaterThanOrEqual(44);
         expect(g.header.bottom).toBeLessThan(g.panel.bottom);
         expect(g.panelScroll).toBe(0);expect(g.overflow).toBe('visible');
         expect(g.docWidth).toBeLessThanOrEqual(width);expect(g.background).toBe(g.surface);
-        expect(+g.z).toBeLessThan(+g.toolbarZ);expect(g.active).toBe(before.active);
+        expect(g.active).toBe(before.active);
         if(fullscreen){expect(g.y).toBe(before.y);expect(g.readerScroll).toBeGreaterThan(before.readerScroll);}
         else expect(g.y).toBeGreaterThan(before.y);
         const close=page.getByRole('button',{name:'Close Word Study',exact:true});
@@ -80,8 +80,13 @@ for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false
         await page.keyboard.press('Tab');await expect(close).toBeFocused();
         expect(await close.evaluate(e=>e.matches(':focus-visible'))).toBe(true);
         await expect(close).toHaveCSS('outline-style','solid');
+        await expect.poll(async()=>{
+          const focused=await geometry(page);
+          const extent=await close.evaluate(element=>{const style=getComputedStyle(element);return parseFloat(style.outlineWidth)+parseFloat(style.outlineOffset);});
+          return focused.hit&&focused.close.top-extent>=focused.stack&&focused.close.bottom+extent<=(width===1280?900:844);
+        }).toBe(true);
         const focused=await geometry(page);
-        expect(focused.close.top-5).toBeGreaterThan(focused.stack);
+        console.log('Close focus geometry',JSON.stringify({name,state,...focused}));
         expect(focused.heading.right).toBeLessThan(focused.close.left);
         if(state==='long') expect(await page.locator('#wordStudyDefinition').textContent()).toHaveLength(1425);
         if(state==='long') await page.screenshot({path:testInfo.outputPath('word-study.png')});
@@ -90,14 +95,37 @@ for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false
         if(fullscreen) await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
       });
     }
-    test('long result honors content clearance and stops at the panel bottom',async({page})=>{
+    test('pointer scroll-back and reverse keyboard navigation preserve Close access',async({page})=>{
+      const word=await openResult(page,'long');
+      await page.evaluate(async()=>{await document.fonts.ready;await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});
+      await scrollPanel(page,'start');await scrollPanel(page,'within');await scrollPanel(page,'start');
+      const returned=await geometry(page);
+      expect(returned.hit).toBe(true);
+      expect(returned.close.top).toBeGreaterThanOrEqual(returned.stack+4);
+      expect(returned.close.bottom).toBeLessThanOrEqual(width===1280?900:844);
+      const close=page.getByRole('button',{name:'Close Word Study',exact:true});
+      if(width===1280)await close.click();else await close.tap();
+      await expect(page.locator('#wordStudyPanel')).toBeHidden();await expect(word).toBeFocused();
+      await word.click();
+      const first=page.locator('#wordStudyOriginalTokens button').first();await expect(first).toBeVisible();
+      await first.focus();await page.keyboard.press('Shift+Tab');await expect(close).toBeFocused();
+      await expect.poll(async()=>{
+        const focused=await geometry(page);
+        const extent=await close.evaluate(element=>{const style=getComputedStyle(element);return parseFloat(style.outlineWidth)+parseFloat(style.outlineOffset);});
+        return focused.hit&&focused.close.top-extent>=focused.stack&&focused.close.bottom+extent<=(width===1280?900:844);
+      }).toBe(true);
+      await page.keyboard.press('Enter');
+      await expect(page.locator('#wordStudyPanel')).toBeHidden();await expect(word).toBeFocused();
+      if(fullscreen)await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
+    });
+    test('long result honors Reader clearance and scrolls beyond the panel boundary',async({page})=>{
       await openResult(page,'long');
       await scrollPanel(page,'within');
       const token=page.locator('.word-study-original-token').last();
       await token.evaluate(e=>e.scrollIntoView({block:'start',behavior:'instant'}));
       const g=await geometry(page);
       const tokenTop=await token.evaluate(e=>e.getBoundingClientRect().top);
-      expect(tokenTop).toBeGreaterThanOrEqual(g.header.bottom+3);
+      expect(tokenTop).toBeGreaterThanOrEqual(g.stack+4);
       await scrollPanel(page,'boundary');
       const boundary=await geometry(page);
       expect(boundary.header.top).toBeLessThan(boundary.stack);

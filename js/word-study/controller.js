@@ -9,7 +9,6 @@ var WordStudyController = (function createWordStudyController(){
   var alignmentApi = fallbackAlignmentApi;
   var activeContext = null;
   var activeAlignment = {status:'unavailable', groups:[]};
-  var updateVerseInset = function(){};
 
   function elements(){
     return {
@@ -84,7 +83,6 @@ var WordStudyController = (function createWordStudyController(){
     document.getElementById('wordStudyAlignmentStatus').textContent = groups.length ?
       'Verified phrase alignment: ' + activeAlignment.source.title + '.' :
       'Exact word alignment is unavailable for this selection. Original-language entries, when available, describe the whole verse.';
-    updateVerseInset();
   }
 
   function renderEnglishVerse(){
@@ -149,7 +147,6 @@ var WordStudyController = (function createWordStudyController(){
     var reader = document.getElementById('view-reader');
     var surface = reader.classList.contains('reader-fullscreen') ? reader : window;
     var revision = requestId;
-    updateVerseInset();
     // Greek/Hebrew fonts can rewrap the token rows after their initial layout.
     var fontsReady = document.fonts ? document.fonts.ready : Promise.resolve();
     fontsReady.then(function(){
@@ -157,17 +154,13 @@ var WordStudyController = (function createWordStudyController(){
         if(revision !== requestId || view.panel.hidden || !selectedButton.isConnected ||
           document.activeElement !== selectedButton) return;
         if(typeof refreshReaderStickyOffsets === 'function') refreshReaderStickyOffsets();
-        updateVerseInset();
         var token = selectedButton.getBoundingClientRect();
-        var context = document.getElementById('wordStudyContext');
-        var header = document.querySelector('.word-study-header');
         var closing = selectedButton === view.close;
         var clearanceInset = closing ? 5 : 8;
-        var top = Math.max(!closing && getComputedStyle(context).position === 'sticky' ? context.getBoundingClientRect().bottom : 0,
-          !closing && getComputedStyle(header).position === 'sticky' ? header.getBoundingClientRect().bottom : 0, readerVisibleTop()) + clearanceInset;
+        var top = readerVisibleTop() + clearanceInset;
         var bottom = window.innerHeight - clearanceInset;
         var clearance = token.top < top ? token.top - top : token.bottom > bottom ? token.bottom - bottom : 0;
-        if(clearance) surface.scrollBy({top:clearance,behavior:'instant'});
+        if(clearance) surface.scrollBy({top:clearance<0?Math.floor(clearance):Math.ceil(clearance),behavior:'instant'});
       });
     });
   }
@@ -178,7 +171,6 @@ var WordStudyController = (function createWordStudyController(){
     if(!view.original || !result || result.status !== 'available' || !Array.isArray(result.records) || !result.records.length) return;
     view.original.hidden = false;
     document.getElementById('wordStudyOriginalIntro').hidden = false;
-    updateVerseInset();
     view.originalTokens.setAttribute('dir', result.records.some(function(record){ return record.language === 'hebrew' || record.language === 'aramaic'; }) ? 'rtl' : 'ltr');
     result.records.forEach(function(record){
       var button = document.createElement('button');
@@ -274,28 +266,6 @@ var WordStudyController = (function createWordStudyController(){
     if(initialized) return;
     initialized = true;
     var verse = document.getElementById('wordStudyVerse');
-    var context = document.getElementById('wordStudyContext');
-    var sheet = Array.from(document.styleSheets).find(function(candidate){
-      return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);
-    });
-    if(verse && sheet && typeof ResizeObserver !== 'undefined'){
-      var inset = sheet.cssRules[sheet.insertRule('#wordStudyPanel {}', sheet.cssRules.length)].style;
-      updateVerseInset = function(){
-        var header = document.querySelector('.word-study-header').getBoundingClientRect().height;
-        var available = window.innerHeight - readerVisibleTop();
-        var targetHeight = window.matchMedia('(any-pointer:coarse)').matches ? 44 : 32;
-        var headerUnpinned = header + targetHeight + 16 > available;
-        var panel = document.getElementById('wordStudyPanel');
-        panel.classList.toggle('word-study-header-unpinned', headerUnpinned);
-        inset.setProperty('--word-study-context-height', '0px');
-      };
-      updateVerseInset();
-      var observer = new ResizeObserver(updateVerseInset);
-      observer.observe(context);
-      observer.observe(document.querySelector('.word-study-header'));
-      window.addEventListener('resize', updateVerseInset);
-      if(document.fonts) document.fonts.ready.then(updateVerseInset);
-    }
     function selectEnglish(event){
       var selected = event.target.closest('[data-english-start][role="button"]');
       if(!selected || !verse.contains(selected)) return;

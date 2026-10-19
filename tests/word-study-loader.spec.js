@@ -179,11 +179,17 @@ for(const [book,chapter,verse,language,count] of [['genesis',1,1,'he',7],['genes
   await tokens.first().press('Enter');await expect(page.locator('#wordStudyOriginalDetails')).toBeVisible();
   await expect(page.locator('#wordStudyOriginalTokens')).toHaveAttribute('dir',language==='grc'?'ltr':'rtl');
 });
-for(const width of [390,1280])test(`runtime-loading panel retains sticky Close and focus at ${width}px`,async({page})=>{
+for(const width of [390,1280,320])test(`runtime-loading panel retains reachable Close and focus at ${width}px`,async({page})=>{
   await page.setViewportSize({width,height:844});const release=await gate(page);await open(page);await word(page).press('Enter');
   await expect(page.getByRole('button',{name:'Close Word Study'})).toBeVisible();
-  expect(await page.locator('.word-study-header').evaluate(e=>getComputedStyle(e).position)).toBe('sticky');
+  expect(await page.locator('.word-study-header').evaluate(e=>getComputedStyle(e).position)).toBe('static');
   await page.locator('#wordStudyHeading').press('Tab');await expect(page.locator('#wordStudyClose')).toBeFocused();
+  expect(await page.locator('#wordStudyClose').evaluate(element=>{
+    const bounds=element.getBoundingClientRect(),style=getComputedStyle(element);
+    const extent=parseFloat(style.outlineWidth)+parseFloat(style.outlineOffset);
+    return bounds.top-extent>=readerVisibleTop()&&bounds.bottom+extent<=innerHeight&&
+      element.contains(document.elementFromPoint(bounds.left+bounds.width/2,bounds.top+bounds.height/2));
+  })).toBe(true);
   await page.keyboard.press('Escape');await expect(word(page)).toBeFocused();release();await page.evaluate(()=>WordStudyLoader.ensure());
   await expect(page.locator('#wordStudyPanel')).toBeHidden();
 });
@@ -193,7 +199,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-    const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-42')).keys()).map(r=>new URL(r.url).pathname));
+    const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-43')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');expect(assets).toContain('/js/word-study/alignment.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');
@@ -205,11 +211,16 @@ test.describe('installed offline runtime',()=>{
     await installed(page);await word(page).click();await result(page);await expect(page.locator('#wordStudyOriginalTokens button')).toHaveCount(17);
     await page.keyboard.press('Escape');await context.setOffline(true);await word(page).click();await result(page);await expect(page.locator('#wordStudyOriginalTokens button')).toHaveCount(17);
     const offlineContext=await page.locator('#wordStudyOriginalTokens button').first().evaluate(button=>{
-      button.scrollIntoView({block:'center',behavior:'instant'});
       const context=document.getElementById('wordStudyContext');
-      return {position:getComputedStyle(context).position,gap:button.getBoundingClientRect().top-context.getBoundingClientRect().bottom};
+      const header=document.querySelector('.word-study-header'),reader=document.getElementById('view-reader');
+      const bounds=button.getBoundingClientRect();
+      (reader.classList.contains('reader-fullscreen')?reader:window).scrollBy({top:bounds.top-(readerVisibleTop()+(header.getBoundingClientRect().height-bounds.height)/2),behavior:'instant'});
+      const measured=button.getBoundingClientRect();
+      return {position:getComputedStyle(context).position,headerPosition:getComputedStyle(header).position,
+        gap:measured.top-context.getBoundingClientRect().bottom,
+        hit:button.contains(document.elementFromPoint(measured.left+measured.width/2,measured.top+measured.height/2))};
     });
-    expect(offlineContext).toEqual({position:'static',gap:4});
+    expect(offlineContext).toEqual({position:'static',headerPosition:'static',gap:4,hit:true});
     await page.reload();await page.evaluate(()=>initializeBibleExperience());expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await word(page).click();await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
   });
