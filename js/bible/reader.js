@@ -876,12 +876,13 @@ function escapeHtml(value){
   });
 }
 
-function renderStudyWordTokens(text){
-  return String(text).split(/([A-Za-z0-9]+(?:['\u2019-][A-Za-z0-9]+)*)/g).map(function(token){
+function renderStudyWordTokens(text, translationId){
+  var html = String(text).split(/([A-Za-z0-9]+(?:['\u2019-][A-Za-z0-9]+)*)/g).map(function(token){
     if(!/^[A-Za-z0-9]/.test(token)) return escapeHtml(token);
     var lookupTerm = WordStudyLoader.normalizeLookupTerm(token);
     return '<span class="word-study-token" role="button" tabindex="0" aria-label="Study word ' + escapeHtml(token) + '" data-word-study-display="' + escapeHtml(token) + '" data-word-study-term="' + escapeHtml(lookupTerm) + '">' + escapeHtml(token) + '</span>';
   }).join('');
+  return translationId === 'kjv' ? html.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g, '<i>$1</i>') : html;
 }
 
 function readerTabReference(){
@@ -1077,9 +1078,10 @@ function renderPassage(bookKey, chapterNum){
   html += '<div class="reader-plan-return" hidden></div>';
   var canonLabel = BibleCanon.passageLabel(currentTranslation, bookKey, chapterNum);
   html += '<div class="reader-chapter-caption">' + escapeHtml(data.title) + (canonLabel ? ' — ' + escapeHtml(canonLabel) : '') + '</div>';
+  if(currentTranslation === 'kjv') html += '<p class="sr-only">KJV italics: supplied words, not emphasis.</p>';
   for(var i = 0; i < data.verses.length; i++){
     if(!isRenderableVerseText(data.verses[i])) continue;
-    html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i]) + '</span> ';
+    html += '<span class="reader-verse" data-translation-id="' + escapeHtml(currentTranslation) + '" data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '" data-verse-number="' + escapeHtml(i+1) + '" data-verse-text="' + escapeHtml(data.verses[i]) + '"><button type="button" class="vnum" aria-label="Highlight verse ' + escapeHtml(i+1) + '">' + escapeHtml(i+1) + '</button>' + renderStudyWordTokens(data.verses[i], currentTranslation) + '</span> ';
   }
   var container = document.getElementById('readerContent');
   if(typeof WordStudyLoader !== 'undefined') WordStudyLoader.invalidate();
