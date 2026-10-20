@@ -199,7 +199,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-    const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-47')).keys()).map(r=>new URL(r.url).pathname));
+    const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-48')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');expect(assets).toContain('/js/word-study/alignment.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');
@@ -244,5 +244,5 @@ test('page script bytes and first-use network readiness are measured against mai
   }
   console.log('Word Study baseline/current LF local uncompressed page scripts:',JSON.stringify(measurements));
   // The Catholic Bible architecture adds one eager shared canon metadata script (js/bible/canon.js).
-  expect(measurements.map(m=>m.count)).toEqual([24,21]);expect(measurements[1].decoded).toBeLessThan(measurements[0].decoded);
+  expect(measurements.map(m=>m.count)).toEqual([24,22]);expect(measurements[1].decoded).toBeLessThan(measurements[0].decoded);
 });
