@@ -137,7 +137,7 @@ test('retained WEB renders without empty placeholders using cached Reader 26 off
   await page.evaluate(() => initializeBibleExperience());
   expect(await page.evaluate(() => BibleTranslationLoader.retain('web'))).toMatchObject({ok:true,state:'current'});
   const reader=await page.evaluate(async () => {
-    const shell=await caches.open('god4-shell-compact-reader-45');
+    const shell=await caches.open('god4-shell-compact-reader-46');
     return (await shell.match('/js/bible/reader.js')).text();
   });
   expect(reader).toContain('function isRenderableVerseText(text)');

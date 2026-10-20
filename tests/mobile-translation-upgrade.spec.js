@@ -9,11 +9,12 @@ const generator=require('../tools/generate-translation-manifest');
 const root=path.resolve(__dirname,'..');
 for(const previous of [
   {version:43,commit:'a051890a7d04aac53b937e62d909e284b0101f4d',assets:46},
-  {version:44,commit:'301b36f3b2bed4fdac5eadf5bde231a42b0c454b',assets:47}
+  {version:44,commit:'301b36f3b2bed4fdac5eadf5bde231a42b0c454b',assets:47},
+  {version:45,commit:'51d2e4185fdc8f6294cb68ce65b88f0357be750e',assets:47}
 ])test.describe(`installed cache ${previous.version}`,()=>{
 const baseline=previous.commit;
-const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-45';
-const assetPaths=['/css/companion.css','/js/bible/reader.js','/js/app.js'];
+const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-46';
+const assetPaths=['/css/companion.css','/js/bible/reader.js','/js/app.js','/js/bible/speech.js'];
 const runtimePath='/js/bible/translation-picker.js';
 const prior=Object.fromEntries(['/sw.js',...assetPaths].map(url=>[url,execFileSync('git',['show',baseline+':'+url.slice(1)],{cwd:root})]));
 const current=Object.fromEntries(assetPaths.map(url=>[url,fs.readFileSync(path.join(root,url.slice(1)))]));
@@ -25,15 +26,15 @@ const saved=[{ref:'John 1:1',text:'Installed-user saved verse',location:{transla
 
 test.use({viewport:{width:320,height:844},hasTouch:true,serviceWorkers:'allow'});
 
-test('shell 45 preserves activation, Bible caches and the exact required assets',()=>{
+test('shell 46 preserves activation, Bible caches and the exact required assets',()=>{
   const worker=fs.readFileSync(path.join(root,'sw.js'),'utf8');
-  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-45'","'compact-reader-"+previous.version+"'");
+  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-46'","'compact-reader-"+previous.version+"'");
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(newHashes['/js/bible/reader.js']).not.toBe(oldHashes['/js/bible/reader.js']);
   expect(current['/js/bible/reader.js'].toString('utf8').replace(/\r\n/g,'\n')).not.toBe(prior['/js/bible/reader.js'].toString('utf8').replace(/\r\n/g,'\n'));
-  for(const asset of ['/css/companion.css','/js/app.js']){
-    expect(current[asset].toString('utf8').replace(/\r\n/g,'\n')===prior[asset].toString('utf8').replace(/\r\n/g,'\n')).toBe(previous.version===44);
+  for(const asset of ['/css/companion.css','/js/app.js','/js/bible/speech.js']){
+    expect(current[asset].toString('utf8').replace(/\r\n/g,'\n')===prior[asset].toString('utf8').replace(/\r\n/g,'\n')).toBe(asset!=='/js/bible/speech.js'&&previous.version>=44);
   }
 });
 
@@ -45,7 +46,7 @@ async function fixture(){
     const relative=pathname==='/'?'/index.html':pathname==='/offline'?'/offline.html':pathname;
     const file=path.resolve(root,'.'+relative);
     if(!file.startsWith(root+path.sep)){response.writeHead(403).end();return;}
-    if(state.version===45&&pathname===state.failAsset){response.writeHead(503).end('Install failure fixture');return;}
+    if(state.version===46&&pathname===state.failAsset){response.writeHead(503).end('Install failure fixture');return;}
     try{
       let body=state.version===previous.version&&prior[pathname]?prior[pathname]:fs.readFileSync(file);
       if(/^\/js\/bible\/(web|asv|kjv|ylt|dby|webster|rv|gnv|dra)\.js$/.test(pathname))body=generator.canonicalDeployBytes(body);
@@ -74,6 +75,13 @@ async function hashes(page,cacheName=null,urls=assetPaths){
 }
 async function installOld(page,origin){
   await page.addInitScript(()=>{window.IntersectionObserver=class{observe(){}unobserve(){}disconnect(){}};});
+  if(previous.version===45)await page.addInitScript(()=>{
+    window.__upgradeSpeech=[];
+    Object.defineProperty(window,'AudioContext',{configurable:true,value:undefined});
+    Object.defineProperty(window,'webkitAudioContext',{configurable:true,value:undefined});
+    Object.defineProperty(window,'SpeechSynthesisUtterance',{configurable:true,value:function(text){this.text=text;}});
+    Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{getVoices(){return [{name:'Microsoft David',lang:'en-US',localService:true}];},addEventListener(){},cancel(){},pause(){},resume(){},speak(utterance){window.__upgradeSpeech.push(utterance.text);utterance.onstart?.();}}});
+  });
   await page.goto(origin);
   await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));
   await page.reload();
@@ -87,6 +95,7 @@ async function installOld(page,origin){
     const vendor=await fetch('/js/vendor/supabase-js-2.117.0.min.js');
     if(!vendor.ok)throw new Error('Vendor fixture unavailable');
   },saved);
+  if(previous.version===45)expect(await page.evaluate(async()=> (await BibleTranslationLoader.retain('kjv')).ok)).toBe(true);
   await expect(page.locator('#readerTranslation')).toHaveValue('dra');
   await expectOldPicker(page);
   expect(await hashes(page)).toEqual(oldHashes);
@@ -95,7 +104,7 @@ async function installOld(page,origin){
   return keys;
 }
 async function expectOldPicker(page){
-  if(previous.version===44)await expectCurrentPicker(page);
+  if(previous.version>=44)await expectCurrentPicker(page);
   else await expect(page.locator('#readerTranslationTrigger')).toHaveCount(0);
 }
 async function expectCurrentPicker(page){
@@ -139,10 +148,10 @@ async function acceptUpdate(page){
   await expect.poll(()=>page.evaluate(()=>caches.keys())).not.toContain(oldCache);
 }
 async function retainedState(page){
-  return page.evaluate(async()=>{
+  return page.evaluate(async version=>{
     const registration=await navigator.serviceWorker.ready;
     const retained={};
-    for(const id of ['web','dra']){
+    for(const id of version===45?['web','dra','kjv']:['web','dra']){
       retained[id]=await new Promise(resolve=>{
         const channel=new MessageChannel();
         channel.port1.onmessage=event=>resolve(event.data.activeRevision);
@@ -150,10 +159,25 @@ async function retainedState(page){
       });
     }
     return {retained,saved:UserData.savedVerses.load(),translation:UserData.translation.load()};
-  });
+  },previous.version);
 }
 
-for(const width of previous.version===44?[1280,320,390]:[320,390])test(`installed shell ${previous.version} waits for acceptance and preserves offline data across tabs at ${width}px`,async({page,context})=>{
+async function kjvSpeech(page,updated){
+  await page.evaluate(async()=>{
+    if(!await BibleTranslationLoader.ensure('kjv'))throw new Error('Retained KJV unavailable');
+    await navigateSearchResult({translationId:'kjv',bookId:'genesis',chapter:1,verse:2});
+    const chapter=BibleData.getChapter('kjv','genesis',1);
+    BibleSpeech.playVerse(chapter.verses[1],2,{translationId:'kjv',bookId:'genesis',chapter:1});
+  });
+  const verse=page.locator('#readerContent [data-verse-number="2"]');
+  await expect(verse.locator('i')).toHaveCount(updated?1:0);
+  const raw=await verse.getAttribute('data-verse-text');
+  expect(raw).toContain('[was]');
+  expect(await page.evaluate(()=>window.__upgradeSpeech.at(-1))).toBe(updated?raw.replace('[was]','was'):raw);
+  await page.evaluate(async()=>{stopReader();await changeTranslation('dra');await navigateReaderToPassage('john',1,1);});
+}
+
+for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed shell ${previous.version} waits for acceptance and preserves offline data across tabs at ${width}px`,async({page,context})=>{
   test.setTimeout(60000);
   await page.setViewportSize({width,height:844});
   const server=await fixture(),errors=[];
@@ -162,6 +186,7 @@ for(const width of previous.version===44?[1280,320,390]:[320,390])test(`installe
     const keys=await installOld(page,server.origin),before=await retainedState(page);
     expect(before.saved).toEqual(saved);
     expect(Object.values(before.retained).every(Boolean)).toBe(true);
+    if(previous.version===45)await kjvSpeech(page,false);
     if(previous.version===44){
       const oldPosition=await planPosition(page);
       expect(oldPosition.headingTop).toBeLessThan(oldPosition.top);
@@ -169,7 +194,7 @@ for(const width of previous.version===44?[1280,320,390]:[320,390])test(`installe
     const second=await context.newPage();
     second.on('pageerror',error=>errors.push(error.message));
     await second.goto(server.origin);await second.evaluate(()=>{window.upgradeTabMarker='old tab';return initializeBibleExperience();});
-    server.state.version=45;
+    server.state.version=46;
     await requestUpdate(page);
     await expect(page.locator('#pwaUpdateButton')).toBeVisible();
     expect(await page.evaluate(async()=>{
@@ -190,8 +215,9 @@ for(const width of previous.version===44?[1280,320,390]:[320,390])test(`installe
       expect(newPosition.headingTop).toBeGreaterThanOrEqual(newPosition.top);
       expect(newPosition.headingBottom).toBeLessThanOrEqual(newPosition.height);
       expect(newPosition.dayBottom).toBeLessThanOrEqual(newPosition.height);
-      console.log('Installed 44-to-45 Reader/Plan geometry:',JSON.stringify({width,newPosition}));
+      console.log('Installed 44-to-46 Reader/Plan geometry:',JSON.stringify({width,newPosition}));
     }
+    if(previous.version===45)await kjvSpeech(page,true);
     for(const asset of assetPaths.concat(runtimePath))expect(responses.some(response=>response.path===asset&&response.worker)).toBe(true);
     expect(await retainedState(page)).toEqual(before);
     const upgradedKeys=await page.evaluate(async name=>(await(await caches.open(name)).keys()).map(request=>new URL(request.url).pathname+new URL(request.url).search).sort(),newCache);
@@ -207,6 +233,7 @@ for(const width of previous.version===44?[1280,320,390]:[320,390])test(`installe
     await page.reload();await page.evaluate(()=>initializeBibleExperience());
     expect(await hashes(page)).toEqual(newHashes);
     expect(await retainedState(page)).toEqual(before);
+    if(previous.version===45)await kjvSpeech(page,true);
     if(previous.version===44){
       const offlinePosition=await planPosition(page);
       expect(offlinePosition.headingTop).toBeGreaterThanOrEqual(offlinePosition.top);
@@ -227,13 +254,13 @@ for(const width of previous.version===44?[1280,320,390]:[320,390])test(`installe
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`failed shell-45 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
+test(`failed shell-46 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   try{
     await installOld(page,server.origin);
     const before=await retainedState(page);
-    server.state.version=45;server.state.failAsset=previous.version===44?'/js/bible/reader.js':'/css/companion.css';
+    server.state.version=46;server.state.failAsset=previous.version===45?'/js/bible/speech.js':previous.version===44?'/js/bible/reader.js':'/css/companion.css';
     await requestUpdate(page);
     await expect.poll(()=>page.evaluate(()=>window.lastInstallState)).toBe('redundant');
     expect(await page.evaluate(async()=>!!(await navigator.serviceWorker.getRegistration()).waiting)).toBe(false);
@@ -245,9 +272,11 @@ test(`failed shell-45 installation leaves installed shell ${previous.version} us
     await expectOldPicker(page);
     expect(await hashes(page)).toEqual(oldHashes);
     expect(await retainedState(page)).toEqual(before);
+    if(previous.version===45)await kjvSpeech(page,false);
     await context.setOffline(false);server.state.failAsset=null;
     await requestUpdate(page);
     await acceptUpdate(page);
+    if(previous.version===45)await kjvSpeech(page,true);
     expect(await retainedState(page)).toEqual(before);
   }finally{await context.setOffline(false);await server.stop(context);}
 });

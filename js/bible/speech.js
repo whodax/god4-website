@@ -46,7 +46,8 @@ var BibleSpeech = (function createBibleSpeech(){
     if(localSupported()) window.speechSynthesis.resume();
   }
   function prepareCloudSpeech(){ if(cloudSupported()) BibleCloudTTS.prepare(); }
-  function createUtterance(text){
+  function createUtterance(verse){
+    var text = verse.translationId === 'kjv' ? verse.text.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g, '$1') : verse.text;
     var utterance = cloudSupported() ? {text:text} : new window.SpeechSynthesisUtterance(text);
     utterance.profileId = voicePreference;
     utterance.playbackRate = speed;
@@ -330,7 +331,7 @@ var BibleSpeech = (function createBibleSpeech(){
       chapter:activeVerse.chapter || null,
       verse:activeVerse.verseNumber
     };
-    var utterance = createUtterance(activeVerse.text);
+    var utterance = createUtterance(activeVerse);
     var ended = false;
     utterance.onstart = function(){
       if(activeSession !== session || ended) return;
@@ -444,7 +445,7 @@ var BibleSpeech = (function createBibleSpeech(){
   function speakRepeat(activeSession, detour){
     if(activeSession !== session || repeatState !== detour) return;
     var activeVerse = verses[detour.repeatVerseIndex];
-    var utterance = createUtterance(activeVerse.text);
+    var utterance = createUtterance(activeVerse);
     var ended = false;
     currentVerseIndex = detour.repeatVerseIndex;
     utterance.onstart = function(){
