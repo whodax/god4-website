@@ -108,6 +108,7 @@ for(const paused of [false,true])for(const fullscreen of [false,true])test(`spok
   await page.evaluate(()=>window.__optionsSpeech.at(-1).onend());
   if(paused)await page.evaluate(()=>BibleSpeech.pauseResume());
   await expect(page.locator('#readerContent .verse-spoken')).toHaveAttribute('data-verse-number','3');
+  if(!paused){await expect(page.getByRole('button',{name:'Show Reader controls',exact:true})).toBeVisible();await page.getByRole('button',{name:'Show Reader controls',exact:true}).click();}
   await page.locator('#readerSaveVerse').click();
   await expect(page.locator('#readerSaveStatus')).toHaveText('Genesis 1:3 (KJV) saved.');
   expect(await page.evaluate(()=>UserData.savedVerses.load()[0])).toMatchObject({text:'And God said, Let there be light: and there was light.',location:{translationId:'kjv',bookId:'genesis',chapter:1,verse:3}});

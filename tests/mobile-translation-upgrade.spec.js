@@ -201,6 +201,17 @@ async function readerOptions(page,updated){
     await page.locator('#closeTray').click();
     await expect(save).toHaveAttribute('aria-pressed','false');
     await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (DRA) removed from Saved.');
+    if(mobile){
+      await page.locator('#readerContent').dispatchEvent('wheel',{deltaY:96});
+      await page.evaluate(()=>scrollBy({top:96,behavior:'instant'}));
+      const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});await expect(recovery).toBeVisible();
+      const before=await page.evaluate(()=>({scroll:scrollY,content:document.getElementById('readerContent').getBoundingClientRect().top}));
+      await recovery.tap();
+      await expect(page.locator('.reader-toolbar')).toHaveCSS('visibility','visible');
+      await expect(page.locator('#readAloudPlay')).toBeFocused();
+      expect(await page.evaluate(()=>({scroll:scrollY,content:document.getElementById('readerContent').getBoundingClientRect().top}))).toEqual(before);
+      await expect(page.locator('#readerMoreTrigger')).toHaveText('Hide Options');
+    }
   }else expect(await page.evaluate(()=>typeof ReaderOptions)).toBe('undefined');
   await page.locator('#readerMoreTrigger').press('Escape');
   await expect(page.locator('#readerSecondaryControls')).toBeHidden();

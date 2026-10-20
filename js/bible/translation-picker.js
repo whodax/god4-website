@@ -227,6 +227,7 @@ var ReaderOptions = window.ReaderOptions || (function(){
     if(dialog && dialog.open) choices.querySelectorAll('[data-option-value]').forEach(function(option){
       option.setAttribute('aria-pressed',String(option.dataset.optionValue===activeSelect.value));
     });
+    ReaderReadingControls.sync();
   }
   function clearPressed(){
     if(pressed) pressed.removeAttribute('data-pressed');
@@ -375,7 +376,141 @@ var ReaderOptions = window.ReaderOptions || (function(){
     });
     saved=savedVersesStorage.load();document.getElementById('savedCount').textContent=saved.length;
     renderTray();
+    ReaderReadingControls.initialize();
     sync();
   }
   return {initialize:initialize,sync:sync,save:save};
+})();
+
+var ReaderReadingControls = window.ReaderReadingControls || (function(){
+  var initialized=false, view, toolbar, recovery, media, sheetStyle, frame=0;
+  var concealed=false, keyboard=false, interacting=false, assistive=false, revealed=false, readingGesture=false;
+  var previousState='idle', context='', lastY=0, distance=0, direction=0, intent=0;
+  var priorInert=false, priorAria=null, playbackSeen=false;
+  function surface(){return view.classList.contains('reader-fullscreen') ? view : window;}
+  function position(){return surface()===window ? window.scrollY : view.scrollTop;}
+  function speechState(){return typeof BibleSpeech==='undefined' ? 'idle' : BibleSpeech.getState();}
+  function scope(){
+    var bounds=view.getBoundingClientRect();
+    return media.matches && view.classList.contains('active') && bounds.bottom>0 && bounds.top<innerHeight ? surface()===window ? 'page' : 'fullscreen' : 'off';
+  }
+  function guarded(){
+    var focused=document.activeElement, selection=window.getSelection();
+    return interacting || assistive || toolbar.contains(focused) && (keyboard || !readingGesture && (focused.matches(':focus-visible') || focused.id!=='readAloudPlay')) ||
+      document.querySelector('dialog[open],#tray.is-open') || selection && !selection.isCollapsed;
+  }
+  function recoveryHeight(){
+    if(sheetStyle && !recovery.hidden) sheetStyle.setProperty('--reader-recovery-height',recovery.getBoundingClientRect().height+'px');
+  }
+  function focusControls(){
+    var play=document.getElementById('readAloudPlay');
+    (play.disabled || typeof BibleSpeech==='undefined' ? document.getElementById('readerMoreTrigger') : play).focus({preventScroll:true});
+  }
+  function conceal(value){
+    if(concealed===value) return;
+    concealed=value;
+    if(value){
+      priorInert=toolbar.inert;priorAria=toolbar.getAttribute('aria-hidden');
+      recovery.hidden=false;recovery.setAttribute('aria-expanded','false');recoveryHeight();
+      if(toolbar.contains(document.activeElement)) recovery.focus({preventScroll:true});
+      toolbar.inert=true;toolbar.setAttribute('aria-hidden','true');
+      view.classList.add('reader-controls-hidden');
+    }else{
+      view.classList.remove('reader-controls-hidden');toolbar.inert=priorInert;
+      if(priorAria===null) toolbar.removeAttribute('aria-hidden');else toolbar.setAttribute('aria-hidden',priorAria);
+      if(document.activeElement===recovery) focusControls();
+      recovery.hidden=true;recovery.setAttribute('aria-expanded','true');
+    }
+  }
+  function sync(){
+    if(!initialized) return;
+    var nextContext=scope(), state=speechState();
+    if(nextContext!==context){
+      context=nextContext;intent=0;distance=0;direction=0;lastY=position();revealed=false;conceal(false);
+    }
+    if(state==='idle' || state==='paused'){
+      if(previousState!==state || state==='idle' && playbackSeen){revealed=false;conceal(false);}
+    }
+    playbackSeen=state!=='idle';
+    previousState=state;
+    if(context==='off'){conceal(false);return;}
+    if(guarded()){
+      if(document.querySelector('dialog[open],#tray.is-open') || toolbar.contains(document.activeElement)) conceal(false);
+      return;
+    }
+    if(state==='playing' && !revealed) conceal(true);
+    recoveryHeight();
+  }
+  function queue(){
+    if(!initialized) return;
+    if(speechState()!=='idle') playbackSeen=true;
+    if(frame) return;
+    frame=requestAnimationFrame(function(){frame=0;sync();});
+  }
+  function restore(){revealed=true;conceal(false);focusControls();}
+  function gesture(event){
+    if(!event.target.closest('#readerContent') || event.ctrlKey || event.touches && event.touches.length>1) return;
+    intent=performance.now();readingGesture=true;
+  }
+  function scrolled(event){
+    if(event.target!==document && event.target!==view) return;
+    queue();
+    var next=position(), delta=next-lastY;lastY=next;
+    if(scope()==='off' || !intent || performance.now()-intent>1500 || !delta) return;
+    var nextDirection=Math.sign(delta);
+    distance=nextDirection===direction ? distance+Math.abs(delta) : Math.abs(delta);direction=nextDirection;
+    if(distance<48 || guarded()) return;
+    if(delta>0){revealed=false;conceal(true);}
+    else if(speechState()!=='playing'){revealed=true;conceal(false);}
+    distance=0;
+  }
+  function initialize(){
+    if(initialized || !('inert' in HTMLElement.prototype)) return;
+    initialized=true;view=document.getElementById('view-reader');toolbar=view.querySelector('.reader-toolbar');
+    media=matchMedia('(max-width:620px) and (pointer:coarse)');toolbar.id=toolbar.id || 'readerControlStack';
+    recovery=document.createElement('button');recovery.type='button';recovery.className='reader-show-controls';
+    recovery.textContent='Show Controls';recovery.setAttribute('aria-label','Show Reader controls');
+    recovery.setAttribute('aria-controls',toolbar.id);recovery.setAttribute('aria-expanded','true');recovery.hidden=true;
+    view.prepend(recovery);recovery.addEventListener('click',restore);
+    var tap=null;
+    recovery.addEventListener('touchstart',function(event){
+      var touch=event.touches[0];tap=event.touches.length===1 ? {id:touch.identifier,x:touch.clientX,y:touch.clientY} : null;
+    },{passive:true});
+    recovery.addEventListener('touchmove',function(event){
+      var touch=event.touches[0];
+      if(!tap || event.touches.length!==1 || touch.identifier!==tap.id || Math.hypot(touch.clientX-tap.x,touch.clientY-tap.y)>10) tap=null;
+    },{passive:true});
+    recovery.addEventListener('touchcancel',function(){tap=null;},{passive:true});
+    recovery.addEventListener('touchend',function(event){
+      var touch=event.changedTouches[0];
+      if(tap && touch && touch.identifier===tap.id && Math.hypot(touch.clientX-tap.x,touch.clientY-tap.y)<=10){event.preventDefault();restore();}
+      tap=null;
+    },{passive:false});
+    var sheet=Array.from(document.styleSheets).find(function(candidate){return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);});
+    if(sheet) sheetStyle=sheet.cssRules[sheet.insertRule('#view-reader { --reader-recovery-height:44px; }',sheet.cssRules.length)].style;
+    if(typeof ResizeObserver!=='undefined') new ResizeObserver(recoveryHeight).observe(recovery);
+    media.addEventListener('change',queue);
+    document.addEventListener('pointerdown',function(event){
+      keyboard=false;assistive=false;readingGesture=false;interacting=toolbar.contains(event.target);intent=0;distance=0;lastY=position();
+    },true);
+    ['pointerup','pointercancel'].forEach(function(type){document.addEventListener(type,function(){interacting=false;queue();},true);});
+    window.addEventListener('keydown',function(event){
+      keyboard=true;intent=0;readingGesture=false;
+      if(concealed && event.key==='Escape' && (document.activeElement===recovery || document.activeElement===document.body)){
+        event.preventDefault();event.stopPropagation();restore();
+      }
+    },true);
+    document.addEventListener('click',function(event){if(toolbar.contains(event.target) && event.detail===0){assistive=true;queue();}},true);
+    document.addEventListener('focusin',function(){if(!toolbar.contains(document.activeElement)) assistive=false;queue();});
+    document.addEventListener('selectionchange',queue);
+    view.addEventListener('touchmove',gesture,{passive:true});view.addEventListener('wheel',gesture,{passive:true});
+    document.addEventListener('scroll',scrolled,{passive:true,capture:true});
+    document.addEventListener('scrollend',function(){intent=0;distance=0;},{passive:true,capture:true});
+    var observer=new MutationObserver(queue);
+    observer.observe(view,{attributes:true,attributeFilter:['class']});
+    observer.observe(document.body,{subtree:true,attributes:true,attributeFilter:['open']});
+    observer.observe(document.getElementById('tray'),{attributes:true,attributeFilter:['class']});
+    sync();
+  }
+  return {initialize:initialize,sync:queue};
 })();

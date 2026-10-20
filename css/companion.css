@@ -383,6 +383,7 @@
     align-items:center;gap:8px;max-width:850px;margin:0 auto 10px;
     padding:4px 0;border-bottom:1px solid var(--line);background:var(--vellum-card);
   }
+  .reader-show-controls{display:none;}
   .reader-toolbar select,.reader-secondary-controls select{
     min-width:0;max-width:100%;box-sizing:border-box;height:44px;
     font:13px 'Inter','Inter Fallback',sans-serif;
@@ -593,6 +594,17 @@
 
   @media (max-width:620px){
     #view-reader{padding:16px 12px;}
+    #view-reader .reader-toolbar{transition:opacity .12s ease,visibility 0s;}
+    #view-reader.reader-controls-hidden{--reader-toolbar-height:calc(var(--reader-recovery-height,44px) + 4px);}
+    #view-reader.reader-controls-hidden .reader-toolbar{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .12s ease,visibility 0s .12s;}
+    .reader-show-controls:not([hidden]){
+      display:block;position:fixed;top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 4px);right:max(12px,env(safe-area-inset-right));z-index:21;
+      box-sizing:border-box;min-width:44px;min-height:44px;max-width:calc(100vw - 24px);padding:6px 12px;
+      border:1px solid var(--gold);border-radius:2px;background:var(--vellum);color:var(--ink);
+      font:13px/1.4 'Inter','Inter Fallback',sans-serif;overflow-wrap:anywhere;cursor:pointer;
+    }
+    #view-reader.reader-fullscreen .reader-show-controls{top:4px;}
+    .reader-show-controls:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
     .reader-toolbar{
       grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(64px,1fr) 56px;
       gap:6px;margin-bottom:6px;
@@ -628,3 +640,4 @@
     .offline-bibles-row{grid-template-columns:minmax(0,1fr);}
     .offline-bibles-action{width:100%;}
   }
+  @media(prefers-reduced-motion:reduce){#view-reader .reader-toolbar,#view-reader.reader-controls-hidden .reader-toolbar{transition:none;}}

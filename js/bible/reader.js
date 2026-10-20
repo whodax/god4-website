@@ -269,9 +269,9 @@ function readerStickyNavigation(){
 
 function readerVisibleTop(){
   var view = document.getElementById('view-reader');
+  var toolbar = view && view.classList.contains('active') && view.querySelector('.reader-show-controls:not([hidden]),.reader-toolbar:not([inert])');
   if(view && view.classList.contains('reader-fullscreen')){
-    var fullscreenToolbar = view.querySelector('.reader-toolbar');
-    return (fullscreenToolbar ? fullscreenToolbar.getBoundingClientRect().bottom : 0) + readerPlanReturnHeight();
+    return (toolbar ? toolbar.getBoundingClientRect().bottom : 0) + readerPlanReturnHeight();
   }
   var top = 0;
   var siteNav = document.querySelector('nav');
@@ -284,8 +284,7 @@ function readerVisibleTop(){
     var tabsTop = parseFloat(getComputedStyle(tabs).top);
     if(Number.isFinite(tabsTop)) top = Math.max(top, tabsTop + tabs.getBoundingClientRect().height);
   }
-  var toolbar = document.querySelector('#view-reader.active .reader-toolbar');
-  if(toolbar && getComputedStyle(toolbar).position === 'sticky'){
+  if(toolbar && /sticky|fixed/.test(getComputedStyle(toolbar).position)){
     var stickyTop = parseFloat(getComputedStyle(toolbar).top);
     if(Number.isFinite(stickyTop)) top = Math.max(top, stickyTop + toolbar.getBoundingClientRect().height);
   }

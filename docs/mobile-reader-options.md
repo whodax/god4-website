@@ -277,3 +277,126 @@ announcements and navigation, real system text scaling, and long momentum flings
 These are not represented as physically tested by Chromium emulation. The new
 hash-specific Cloudflare preview is for this acceptance review only; production
 merge and deployment still require approval.
+
+## PR #109: distraction-free mobile reading
+
+Starting from approved `fc317ad`, the four-row Options grid, saved-state behavior
+and all selection controls remain unchanged. Automatic hiding applies only to
+the mobile layout (at most 620px) with a coarse primary pointer. Desktop,
+including narrow fine-pointer windows, keeps the previous behavior. Browsers
+without native `inert` keep their normal visible controls rather than exposing
+invisible focusable buttons.
+
+### Visibility and position contract
+
+The primary Reader toolbar and its expanded Options panel fade together using
+opacity/visibility for 120ms. Reduced-motion users get an immediate change.
+Nothing is removed from normal flow, resized, or scrolled by the hide/show
+operation. The existing measured sticky-stack containment reserve is retained.
+Consequently the exact visible Scripture position, selection, Options state and
+scroll offsets are unchanged. Near the beginning of a chapter, the toolbar's
+original flow space can remain above the first verse until natural scrolling
+moves it offscreen; collapsing that space would violate the no-jump contract.
+
+A small native **Show Controls** button remains at least 44px tall. It uses the
+existing vellum, ink and gold tokens and a 2px ink focus outline. Its 4px top
+clearance protects the outline plus its 2px offset from the viewport/navigation
+edge. `readerVisibleTop()` now selects the actual visible toolbar or recovery
+button, while the hidden state overrides only descendant scrolling/sticky
+insets. The original layout-height measurements do not change. Recovery height
+is measured for enlarged text using the existing stylesheet/CSSOM pattern, not
+inline styles or a fixed-height content crop.
+
+Site navigation, Reader tabs, Saved and reading-plan return navigation are not
+hidden. Existing fullscreen background isolation remains in effect; Show
+Controls restores the fullscreen exit button along with all Reader features.
+
+### Interaction policy
+
+- A downward Scripture gesture must accumulate 48px before hiding, avoiding
+  tap/scroll jitter. A deliberate upward gesture can restore controls outside
+  active playback. Wheel/touch intent is restricted to Scripture, expires after
+  1.5 seconds, and is cleared on scroll end or a new pointer/keyboard action.
+  Programmatic navigation, Options scrolling, dialog scrolling and zoom gestures
+  do not masquerade as reading gestures.
+- Preparing alone does not hide controls. Actual playing can hide them; paused,
+  stopped and completed playback restore them. Native/cloud speech, repeats and
+  fallback use the same existing `BibleSpeech` state hook. Updates are coalesced
+  into one animation frame, reading current state rather than replaying stale
+  callbacks. Playback activity is remembered so even preparation stopped within
+  one frame restores a previously scroll-hidden toolbar.
+- Pointer interactions, keyboard focus in controls, assistive-style activation,
+  selection dialogs and noncollapsed text selection prevent automatic hiding.
+  Text selection is not cleared or repositioned. Touch-starting Play can hand
+  focus to recovery; keyboard-starting Play keeps its focused control available.
+  Explicitly restored controls stay visible through subsequent utterances until a new
+  deliberate downward reading gesture or playback-state change.
+- The concealed toolbar is both `inert` and `aria-hidden`; its original values
+  are restored. Show Controls has `aria-controls` and `aria-expanded`, and
+  restores focus without scrolling to Play/Stop, or Options if speech is
+  unavailable. Escape from the recovery control restores the toolbar before
+  the existing Options/fullscreen Escape hierarchy proceeds.
+- A real Chromium touch drag reproduced a suppressed synthetic click on the
+  recovery button after a fling. Only this native button has a confirmed-tap
+  touch-end fallback. It cancels the duplicate compatibility click for taps
+  within 10px, not for drags, cancellations or multitouch. No Scripture gesture
+  is cancelled; wheel and Scripture touch listeners remain passive.
+
+The implementation stays in the already-cached, lazy
+`js/bible/translation-picker.js` runtime. Initialization, observers and listeners
+are page-lifetime singletons. A frame guard bounds updates; observers watch
+only relevant view/dialog/tray attributes, not every verse highlight change.
+No extra script, eager dependency or shell asset is added. Required Word Study,
+Bible loading and optional-runtime failure handling remain independent.
+
+Shell cache remains **47**, with all **47 existing assets**, Bible caches and
+user-accepted activation unchanged. Upgrade fixtures additionally exercise
+mobile hide/recover and exact position preservation after acceptance, offline
+reload and failed-install retry with retained WEB/DRA data.
+
+Eager script bytes improve **290,879 → 290,870**, leaving **44 bytes** below the
+unchanged **290,914-byte** bound. The only eager edit consolidates the two
+toolbar queries inside `readerVisibleTop()` to account for the visible recovery
+control without adding an eager module. No Bible data, manifests, KJV speech,
+italics, design tokens, CSP or Scripture Discovery code changes are made.
+
+Physical Android/TalkBack and iOS/VoiceOver acceptance remains outstanding,
+including actual system text enlargement, provider audio and momentum handling.
+Chromium touch emulation, native touch-event dispatch and deterministic TTS
+mocks are automated evidence, not a claim of physical-device acceptance.
+
+### Validation of distraction-free controls
+
+**433 unique targeted checks passed**, sequentially with one browser worker,
+zero retries, and no unrestricted full suite:
+
+| Suite | Passed |
+| --- | ---: |
+| Distraction-free controls, touch, geometry, focus, state transitions | 42 |
+| Approved four-row layout / Reader Options | 16 / 27 |
+| Compact controls / fullscreen / translation picker | 12 / 22 / 32 |
+| Voice profiles / Reader tab positioning | 12 / 18 |
+| Installed-user upgrades / PWA / offline management | 19 / 17 / 12 |
+| Word Study and unchanged eager performance budget | 43 |
+| Native Reader speech / cloud TTS | 45 / 44 |
+| KJV browser / Catholic Bible | 13 / 50 |
+| KJV corpus unit checks / all 66 Isaiah chapter hashes | 8 / 1 |
+
+At 320/360/390/430px in both normal and fullscreen Reader, all eight measured
+hide/show cases had **0px additional Scripture movement**. Toolbar flow heights
+were unchanged, including expanded Options. Five additional geometry stress
+repeats also passed. Asset validation, modified JavaScript syntax, and
+`git diff --check` passed. Cache remains 47 with 47 assets.
+
+An installed-user regression exposed a real fade/focus race: a just-restored
+toolbar could retain hidden visibility briefly, making immediate focus/Escape
+fail. Visibility is now restored synchronously; only hiding delays visibility
+until the opacity fade completes. A rapid-recovery/Escape regression protects
+this behavior without sleeps or relaxed assertions.
+
+One earlier Word Study run encountered an existing five-second Compare
+cold-load timeout. No assertion or timeout was changed: the unchanged test
+passed twice in isolation, then the entire 43-test file passed. Low available
+Windows memory was observed nearby, but its causal role is not established.
+The complete failed log is retained in ignored local test results; this is
+reported as an observed transient timeout, not a zero-flake session.
