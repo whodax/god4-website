@@ -283,6 +283,7 @@ var BibleSpeech = (function createBibleSpeech(){
     }
     if(controls.speed) controls.speed.value = String(speed);
     if(controls.voice) controls.voice.disabled = unavailable;
+    if(window.ReaderOptions) ReaderOptions.sync();
   }
 
   function finish(activeSession, message){

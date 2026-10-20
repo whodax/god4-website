@@ -80,8 +80,7 @@ function updateReaderReferenceDisplay(){
 }
 
 function updateReaderControls(){
-  var saveButton=document.getElementById('readerSaveVerse');
-  if(saveButton) saveButton.disabled=!getReaderDisplayedVerse();
+  if(window.ReaderOptions) ReaderOptions.sync();
   updateReaderReferenceDisplay();
   var chapterCount = typeof BibleData === 'undefined' ? 0 : BibleData.getChapterCount(currentTranslation, currentBook);
   document.querySelectorAll('[data-reader-action="previous"]').forEach(function(button){
@@ -1438,12 +1437,20 @@ function initializeReaderControls(){
   });
 }
 function closeReaderMore(){
+  setReaderOptionsOpen(false);
+}
+function readerOptionsError(){
+  document.getElementById('readerSaveStatus').textContent='Native controls remain available. Reopen Options to retry saving.';
+}
+function setReaderOptionsOpen(open){
   var moreTrigger = document.getElementById('readerMoreTrigger');
   var secondaryControls = document.getElementById('readerSecondaryControls');
   if(!moreTrigger || !secondaryControls) return;
-  secondaryControls.hidden = true;
-  moreTrigger.setAttribute('aria-expanded', 'false');
-  moreTrigger.focus();
+  secondaryControls.hidden = !open;
+  moreTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  moreTrigger.textContent = open ? 'Hide Options' : 'Options';
+  if(open) ReaderTranslationLoader.ensure().catch(readerOptionsError);
+  else moreTrigger.focus({preventScroll:true});
 }
 
 if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener === 'function'){
@@ -1467,10 +1474,7 @@ if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener 
   var secondaryControls = document.getElementById('readerSecondaryControls');
   if(moreTrigger && secondaryControls){
     moreTrigger.addEventListener('click', function(){
-      var opening = moreTrigger.getAttribute('aria-expanded') !== 'true';
-      if(!opening){ closeReaderMore(); return; }
-      secondaryControls.hidden = false;
-      moreTrigger.setAttribute('aria-expanded', 'true');
+      setReaderOptionsOpen(moreTrigger.getAttribute('aria-expanded') !== 'true');
     });
     function closeReaderMoreOnEscape(event){
       if(event.key !== 'Escape' || moreTrigger.getAttribute('aria-expanded') !== 'true') return;
@@ -1499,6 +1503,7 @@ var ReaderTranslationLoader = (function(){
         try {
           if(typeof applyReaderTranslation !== 'function') throw new Error('Missing translation runtime');
           ReaderTranslationPicker.initialize();
+          ReaderOptions.initialize();
           clearTimeout(timeout);
           resolve();
         } catch(error){ fail(); }

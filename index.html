@@ -147,14 +147,15 @@
           <label class="sr-only" for="readerTranslation">Bible translation</label>
           <select id="readerTranslation"></select>
           <button id="readAloudPlay" type="button" aria-label="Play reading aloud">Play</button>
-          <button id="readerMoreTrigger" type="button" aria-controls="readerSecondaryControls" aria-expanded="false">More</button>
+          <button id="readerMoreTrigger" type="button" aria-controls="readerSecondaryControls" aria-expanded="false">Options</button>
           <button id="fullscreenBtn" type="button" aria-pressed="false" aria-label="Enter Fullscreen">Fullscreen</button>
           <div id="readerSecondaryControls" class="reader-secondary-controls" hidden>
             <div class="reader-controls reader-verse-navigation" id="readerVerseNavigation" role="group" aria-label="Verse navigation">
               <button type="button" data-reader-action="previous-verse" aria-label="Previous Verse">&#8592; Previous Verse</button>
               <button type="button" data-reader-action="next-verse" aria-label="Next Verse">Next Verse &#8594;</button>
             </div>
-            <button id="readerSaveVerse" type="button" disabled>Save verse</button>
+            <button id="readerSaveVerse" type="button" aria-pressed="false">Choose verse to save</button>
+            <p id="readerSaveStatus" class="reader-option-status" role="status" aria-live="polite" aria-atomic="true"></p>
             <div class="reader-detailed-navigation" role="group" aria-label="Detailed Scripture navigation">
           <label class="sr-only" for="bookSelect">Bible book</label>
           <select id="bookSelect">
