@@ -451,8 +451,7 @@
   .reader-option-trigger:focus-visible,#readerSaveVerse:focus-visible,
   #readerSecondaryControls select:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
   #readerSaveVerse[aria-pressed="true"]{background:var(--highlight);border-color:var(--gold);}
-  .reader-option-status{flex-basis:100%;margin:0;font:13px/1.4 'Inter','Inter Fallback',sans-serif;color:var(--ink);overflow-wrap:anywhere;}
-  .reader-option-status:empty{display:none;}
+  .reader-speech-field{display:flex;align-items:center;gap:6px;min-width:0;}
   @media(hover:hover){.reader-option-trigger:hover,#readerSaveVerse:hover{border-color:var(--gold);}}
   .reader-option-trigger:active,#readerSaveVerse:active{border-color:var(--ink);}
   .reader-secondary-controls{
@@ -501,9 +500,21 @@
   .scripture-picker[data-step="loading"] .picker-layout{display:none;}
   @media(max-width:620px){
     .reader-toolbar > #readerReferenceNavigation{grid-row:1;grid-column:1 / -1;}
-    .reader-detailed-navigation{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
-    .reader-detailed-navigation > #bookSelect{grid-column:1 / -1;}
-    .reader-detailed-navigation > [data-reader-select="bookSelect"]{grid-column:1 / -1;}
+    .reader-secondary-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:6px;}
+    .reader-secondary-controls .reader-verse-navigation{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-column:1 / -1;grid-row:1;gap:6px;width:100%;}
+    .reader-detailed-navigation{grid-template-columns:repeat(3,minmax(0,1fr));grid-column:1 / -1;grid-row:2;gap:6px;align-items:stretch;}
+    .reader-detailed-navigation > #bookSelect,.reader-detailed-navigation > [data-reader-select="bookSelect"]{grid-column:1;grid-row:1;}
+    .reader-detailed-chapter{grid-column:2;grid-row:1;min-width:0;display:grid;}
+    .reader-detailed-navigation > #verseSelect,.reader-detailed-navigation > [data-reader-select="verseSelect"]{grid-column:3;grid-row:1;}
+    #readerSaveVerse{grid-column:1;grid-row:3;}
+    .reader-secondary-controls .reader-audio-controls{display:contents;}
+    #readerSecondaryControls [data-voice-command-button]{grid-column:2;grid-row:3;}
+    #readerSecondaryControls .reader-speech-preferences{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-column:1 / -1;grid-row:4;gap:6px;align-items:stretch;}
+    .reader-speech-field{flex-direction:column;align-items:stretch;gap:2px;}
+    .reader-speech-field select,.reader-speech-field .reader-option-trigger{flex:1;}
+    #readerSecondaryControls select,#readerSecondaryControls .reader-option-trigger{width:100%;min-width:0;}
+    #readerSecondaryControls button{min-height:44px;padding:7px 6px;font-size:13px;line-height:1.4;overflow-wrap:anywhere;}
+    #readerSecondaryControls select{height:auto;min-height:44px;}
     #readerSecondaryControls select{color-scheme:light;}
     .picker-detail > button[data-level="chapters"]{display:inline-block;}
     .picker-options{grid-template-columns:repeat(auto-fill,minmax(44px,1fr));max-height:56dvh;}

@@ -184,7 +184,7 @@ async function readerOptions(page,updated){
     await page.evaluate(()=>ReaderTranslationLoader.ensure());
     await expect(page.locator('#readerMoreTrigger')).toHaveText('Hide Options');
     const mobile=await page.evaluate(()=>matchMedia('(max-width:620px)').matches);
-    for(const id of ['bookSelect','chapterSelect','verseSelect','readAloudSpeed']){
+    for(const id of ['bookSelect','chapterSelect','verseSelect','readAloudVoice','readAloudSpeed']){
       if(mobile)await expect(page.locator(`[data-reader-select="${id}"]`)).toBeVisible();
       else await expect(page.locator('#'+id)).toBeVisible();
     }
@@ -193,7 +193,13 @@ async function readerOptions(page,updated){
     await save.click();await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (DRA) saved.');
     await expect(save).toHaveAttribute('aria-pressed','true');
     expect(await page.evaluate(()=>UserData.savedVerses.load().at(-1).location)).toEqual({translationId:'dra',bookId:'john',chapter:1,verse:2});
-    await save.click();await expect(save).toHaveAttribute('aria-pressed','false');
+    await expect(save).toHaveText('Saved ✓');await expect(save).toHaveAttribute('aria-disabled','true');
+    await save.press('Enter');
+    expect(await page.evaluate(()=>UserData.savedVerses.load().filter(entry=>entry.location?.verse===2))).toHaveLength(1);
+    await page.locator('.saved-pill').click();
+    await page.locator('#tray .saved-verse-row').filter({hasText:'John 1:2 (DRA)'}).locator('.saved-verse-remove').filter({hasText:'Remove'}).click();
+    await page.locator('#closeTray').click();
+    await expect(save).toHaveAttribute('aria-pressed','false');
     await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (DRA) removed from Saved.');
   }else expect(await page.evaluate(()=>typeof ReaderOptions)).toBe('undefined');
   await page.locator('#readerMoreTrigger').press('Escape');

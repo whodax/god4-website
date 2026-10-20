@@ -24,7 +24,7 @@ async function open(page,{width=390,colorScheme='light',speech=false,blockedStor
 const trigger=(page,id)=>page.locator(`[data-reader-select="${id}"]`);
 const option=(page,value)=>page.locator(`#readerOptionsPicker [data-option-value="${value}"]`);
 
-for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const fullscreen of [false,true])test(`${width}px ${colorScheme} fullscreen=${fullscreen}: all four selectors use readable themed dialogs`,async({page},testInfo)=>{
+for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const fullscreen of [false,true])test(`${width}px ${colorScheme} fullscreen=${fullscreen}: all five selectors use readable themed dialogs`,async({page},testInfo)=>{
   await open(page,{width,colorScheme});
   if(fullscreen)await page.locator('#fullscreenBtn').click();
   const primary=await page.evaluate(()=>['readerTranslationTrigger','readAloudPlay','readerMoreTrigger','fullscreenBtn'].map(id=>{
@@ -32,7 +32,7 @@ for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const
     return {left:bounds.left,right:bounds.right,client:element.clientWidth,scroll:element.scrollWidth};
   }));
   primary.forEach((bounds,index)=>{expect(bounds.scroll).toBeLessThanOrEqual(bounds.client+1);if(index)expect(bounds.left).toBeGreaterThanOrEqual(primary[index-1].right);});
-  for(const [id,value,name] of [['bookSelect','genesis','Book'],['chapterSelect','2','Chapter'],['verseSelect','3','Verse'],['readAloudSpeed','1.25','Speed']]){
+  for(const [id,value,name] of [['bookSelect','genesis','Book'],['chapterSelect','2','Chapter'],['verseSelect','3','Verse'],['readAloudVoice','female','Voice'],['readAloudSpeed','1.25','Speed']]){
     await expect(page.locator('#'+id)).toBeHidden();
     const button=trigger(page,id);await expect(button).toBeVisible();
     expect(await button.evaluate(element=>getComputedStyle(element).backgroundColor)).toBe('rgb(237, 227, 200)');
@@ -48,6 +48,7 @@ for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const
     await expect(page.locator('#'+id)).toHaveValue(value);
   }
   expect(await page.evaluate(()=>BibleSpeech.getSpeed())).toBe(1.25);
+  expect(await page.evaluate(()=>UserData.speechVoice.load())).toBe('female');
   await trigger(page,'bookSelect').click();
   await page.keyboard.press('End');
   await expect(option(page,'revelation')).toBeFocused();
@@ -65,7 +66,7 @@ for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const
   await expect(page.locator('#readerMoreTrigger')).toBeFocused();
 });
 
-for(const width of [320,390,1280])test(`${width}px: Save offers explicit verse selection, confirms, toggles, persists and tracks drawer removal`,async({page})=>{
+for(const width of [320,360,390,430,1280])test(`${width}px: Save offers explicit selection, confirms once, persists and tracks drawer removal`,async({page})=>{
   await open(page,{width});
   const save=page.locator('#readerSaveVerse');
   await expect(save).toBeEnabled();await expect(save).toHaveText('Choose verse to save');
@@ -77,17 +78,24 @@ for(const width of [320,390,1280])test(`${width}px: Save offers explicit verse s
   await expect(save).toHaveAttribute('aria-pressed','false');
   await save.press('Enter');
   await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (WEB) saved.');
-  await expect(save).toHaveText('Remove saved verse');await expect(save).toHaveAttribute('aria-pressed','true');
+  await expect(save).toHaveText('Saved ✓');await expect(save).toHaveAttribute('aria-pressed','true');
+  await expect(save).toHaveAttribute('aria-disabled','true');await expect(save).toBeFocused();
+  await expect(save).toHaveAccessibleName('John 1:2 (WEB) saved. Manage saved verses in Saved.');
+  await save.press('Enter');await save.press('Space');
   await expect(page.locator('#savedCount')).toHaveText('1');
   expect(await page.evaluate(()=>UserData.savedVerses.load()[0])).toMatchObject({location:{translationId:'web',bookId:'john',chapter:1,verse:2}});
   await page.reload();await page.evaluate(()=>initializeBibleExperience());await page.locator('#readerMoreTrigger').click();await page.evaluate(()=>ReaderTranslationLoader.ensure());
   await expect(save).toHaveAttribute('aria-pressed','true');
-  await save.click();await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (WEB) removed from Saved.');
-  await expect(page.locator('#savedCount')).toHaveText('0');await expect(save).toHaveAttribute('aria-pressed','false');
-  await save.click();await page.locator('.saved-pill').click();
+  await expect(save).toHaveText('Saved ✓');
+  await selectReaderOption(page.locator('#verseSelect'),'3');
+  await expect(save).toHaveText('Save verse');await expect(save).toHaveAttribute('aria-disabled','false');
+  await selectReaderOption(page.locator('#verseSelect'),'2');await expect(save).toHaveText('Saved ✓');
+  await page.locator('.saved-pill').click();
   await page.locator('.saved-verse-remove').filter({hasText:'Remove'}).click();
   await expect(save).toHaveAttribute('aria-pressed','false');await expect(page.locator('#savedCount')).toHaveText('0');
-  await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (WEB) removed from Saved.');
+  expect(await page.evaluate(()=>UserData.savedVerses.load())).toEqual([]);
+  await expect(save).toHaveText('Save verse');await expect(save).toHaveAttribute('aria-disabled','false');
+  await expect(page.locator('#readerSaveStatus')).toHaveClass(/sr-only/);
   await expect(page.locator('#readerSaveStatus')).toHaveAttribute('role','status');
   await expect(page.locator('#readerSaveStatus')).toHaveAttribute('aria-live','polite');
 });
@@ -119,7 +127,7 @@ test('storage failure retains the existing session fallback but never claims dur
 
 test('desktop retains native controls and mobile keyboard focus is visible and trapped without saving on focus',async({page})=>{
   await open(page,{width:1280});
-  for(const id of ['bookSelect','chapterSelect','verseSelect','readAloudSpeed']){await expect(page.locator('#'+id)).toBeVisible();await expect(trigger(page,id)).toBeHidden();}
+  for(const id of ['bookSelect','chapterSelect','verseSelect','readAloudVoice','readAloudSpeed']){await expect(page.locator('#'+id)).toBeVisible();await expect(trigger(page,id)).toBeHidden();}
   await page.setViewportSize({width:320,height:844});
   await trigger(page,'verseSelect').focus();await page.keyboard.press('Enter');
   await page.keyboard.press('Home');await expect(option(page,'')).toBeFocused();
@@ -188,7 +196,7 @@ test('delayed readiness saves the click-time verse once without overriding newer
   }finally{release();}
 });
 
-test('stale passage choices cannot navigate a changed Reader and live speed changes preserve focus',async({page})=>{
+test('stale passage choices cannot navigate a changed Reader while global voice and speed choices remain valid',async({page})=>{
   await open(page);await trigger(page,'verseSelect').click();
   await page.evaluate(()=>navigateReaderToPassage('john',2));
   await option(page,'51').click();
@@ -200,6 +208,12 @@ test('stale passage choices cannot navigate a changed Reader and live speed chan
   await expect(option(page,'2')).toHaveAttribute('aria-pressed','true');
   await expect(option(page,'1.5')).toBeFocused();
   await page.keyboard.press('Escape');await expect(trigger(page,'readAloudSpeed')).toContainText('200%');
+  await trigger(page,'readAloudVoice').click();
+  await page.evaluate(()=>navigateReaderToPassage('john',3));
+  await option(page,'female').click();
+  expect(await page.evaluate(()=>UserData.speechVoice.load())).toBe('female');
+  await expect(trigger(page,'readAloudVoice')).toBeFocused();
+  await expect(page.locator('#readerContent h2')).toHaveText('John 3');
 });
 
 test('external-tab saved changes synchronize the button, count and drawer',async({page,context})=>{
@@ -217,8 +231,11 @@ test('verified saved locations remain recognized when a legacy display reference
   await open(page);await selectReaderOption(page.locator('#verseSelect'),'2');
   await page.evaluate(()=>toggleFav('John 1:2',BibleData.getVerse('web','john',1,2).text,null,{translationId:'web',bookId:'john',chapter:1,verse:2}));
   await expect(page.locator('#readerSaveVerse')).toHaveAttribute('aria-pressed','true');
-  await expect(page.locator('#readerSaveVerse')).toHaveAccessibleName('Remove John 1:2 (WEB) from Saved');
-  await page.locator('#readerSaveVerse').click();
+  await expect(page.locator('#readerSaveVerse')).toHaveAccessibleName('John 1:2 (WEB) saved. Manage saved verses in Saved.');
+  await page.locator('#readerSaveVerse').press('Enter');
+  expect(await page.evaluate(()=>UserData.savedVerses.load())).toHaveLength(1);
+  await page.locator('.saved-pill').click();await page.locator('.saved-verse-remove').filter({hasText:'Remove'}).click();
+  await expect(page.locator('#readerSaveVerse')).toHaveText('Save verse');
   expect(await page.evaluate(()=>UserData.savedVerses.load())).toEqual([]);
 });
 

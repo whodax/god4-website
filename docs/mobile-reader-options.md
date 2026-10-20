@@ -37,11 +37,11 @@ write was durable.
 
 ## Implementation and trade-offs
 
-- Keep native Book/Chapter/Verse/Speed selects as the source of truth. On mobile
-  only, four button proxies open one accessible native `<dialog>` using the
+- Keep native Book/Chapter/Verse/Voice/Speed selects as the source of truth. On mobile
+  only, five button proxies open one accessible native `<dialog>` using the
   existing translation/Scripture picker colors, borders, fonts and scrolling
   patterns. A choice dispatches the existing select's change event; navigation,
-  verse numbering and speed behavior are not reimplemented.
+  verse numbering, voice preference and speed behavior are not reimplemented.
 - Desktop retains its native selects. Native controls remain available while
   the optional runtime loads, after network failure, or without dialog support.
   Mobile native fallback uses a scoped light color scheme; exact native popup
@@ -90,9 +90,11 @@ without replacing a native control that is already focused.
 With no selection the enabled button says "Choose verse to save" and opens
 numbered choices. After selection, feedback tells the visitor to activate Save
 verse. A real save immediately confirms the named reference in
-`#readerSaveStatus`, inside Options, with `role="status"`, polite live output
-and atomic announcements. The button shows Save/Remove, a reference-specific
-accessible name and its pressed state. Stored entries with an identical verified
+the screen-reader-only `#readerSaveStatus`, with `role="status"`, polite live output
+and atomic announcements. The button shows **Saved ✓**, a reference-specific
+accessible name, pressed state and `aria-disabled="true"`. It stays focusable;
+repeated pointer or keyboard activation cannot remove the verse. Removal remains
+in the top Saved drawer. Stored entries with an identical verified
 location remain recognized even if their older display reference differs.
 
 The existing `toggleFav` still synchronizes the count, drawer, card and storage.
@@ -101,7 +103,7 @@ fallback. Failure explicitly says the change is "for this visit only" rather
 than claiming persistence. Drawer removals and external-tab storage changes
 refresh the button and confirmation. Repeated identical Save activations queued
 behind one runtime load are deduplicated within that completion turn; subsequent
-intentional activations retain the existing remove toggle. State synchronization
+activations of an already-saved verse are idempotent. State synchronization
 does not unnecessarily replace unchanged button text during speech updates.
 
 The disclosure is now Options / Hide Options / Options. One shared state setter
@@ -144,7 +146,7 @@ Chromium emulation and deterministic speech mocks do not establish actual
 Android OS popup appearance or audible voice prosody. No merge or production
 deployment is authorized by this review branch.
 
-## Final automated results
+## Initial PR automated results
 
 | Separate targeted suite | Passed |
 | --- | ---: |
@@ -177,3 +179,101 @@ translation-style locators were scoped, not weakened.
 Final memory snapshot: 1.00 GiB available physical RAM, 31.60 GiB commit limit,
 4.67 GiB available commit headroom. The tests completed without an out-of-memory
 failure; this is a point-in-time sample, not a peak-use claim.
+
+## PR #109: compact mobile Options follow-up
+
+The expanded panel previously used a wrapping flex layout. Its verse-navigation
+group could itself wrap into two rows, Book occupied a whole additional row,
+audio controls wrapped independently, and save feedback reserved a full row.
+At 320px with a 740px viewport the panel occupied **384px**, with some navigation
+and Voice Commands targets only **35px** tall.
+
+At widths up to 620px, a scoped responsive grid now has exactly four rows:
+
+1. Previous Verse | Next Verse
+2. Book | Chapter | Verse
+3. Save Verse | Voice Commands
+4. Voice | Speed
+
+Nested groups retain their names and existing DOM/listeners. The audio wrapper
+uses `display:contents` only on mobile; its named group remains exposed in the
+Chromium accessibility checks. Voice and Speed have small structural field
+wrappers; desktop keeps its native controls and existing flex layout. Every
+mobile action is at least 44px tall. Labels keep the existing 13px Inter styling
+and wrap rather than truncating. Voice reuses the existing optional mobile
+selection dialog so enlarged voice names are not clipped by a narrow native
+select. Desktop and failed-runtime fallback remain native. The whole-chapter
+Verse launcher uses the short visible value "None" with the full accessible name
+"Verse: Whole chapter (no selected verse)".
+
+Reader Save is now save-only, not a second removal control. **Saved ✓** remains
+focusable with `aria-pressed="true"` and `aria-disabled="true"`, allowing focus
+to remain in place after saving. Its accessible name explains that management
+is in Saved. Activation is guarded in the runtime, including queued requests;
+already-saved verses cannot be toggled off here. Removing from the top Saved
+drawer or another tab restores the Save state. The polite, atomic status region
+is screen-reader-only and consumes no grid row. No-selection guidance and
+session-only storage-failure warnings remain available through that region.
+
+Tests retain strict geometry and pointer-hit checks at 320/360/390/430px, normal
+and fullscreen. They exercise all five Reader selection dialogs, touch taps,
+keyboard focus return, saving, persistence, top-drawer removal and zero scroll
+offset change when opening and closing Options after deep reading. Font
+enlargement is simulated with **20px control text** and **16px field labels**;
+it is not a claim of physical Android font-scaling or TalkBack acceptance.
+Larger text can increase the four rows' natural height; existing bounded Options
+scrolling keeps every control reachable without shrinking text or hiding it.
+
+Shell cache stays **47**, with the same **47 assets**. The existing installed
+43/44/45/46 → 47 fixtures continue checking accepted activation, exact refreshed
+runtime/CSS bytes, retained WEB/DRA data, offline reload and failed-install retry.
+For acceptance of this unmerged revision, use its new hash-specific preview URL:
+an older preview origin already running cache 47 is not a production upgrade
+fixture. Production users still upgrade from the preceding release cache.
+
+No eager JavaScript file changes in this follow-up: the measured total remains
+**290,879 LF-canonical bytes**, with the historical **290,914-byte** assertion
+unchanged. No Bible data, manifests, CSP, design tokens, KJV speech/italics or
+Scripture Discovery code changes are included.
+
+### Follow-up validation results
+
+| Viewport width | Normal Options height | Fullscreen Options height |
+| --- | ---: | ---: |
+| 320px | 227.50px | 202.38px |
+| 360px | 210.75px | 194px |
+| 390px | 194px | 194px |
+| 430px | 194px | 194px |
+
+These are the initial, unselected Options states at a 740px viewport height.
+The 320px normal panel is **156.5px / 40.8% shorter** than the reproduced 384px
+baseline. Every case has four aligned rows, no horizontal or button-text overflow,
+and hit-testable Scripture lines below the panel. Enlarged-text checks additionally
+use the long book name **Song of Solomon**, wait for actual computed 20px control
+fonts rather than sleeping, and hit-test every control after scrolling it into view.
+
+| Separate targeted suite | Passed |
+| --- | ---: |
+| Four-row layout, enlarged text, touch and scroll stability | 16 |
+| Reader Options, saving, persistence, accessibility and native fallback | 27 |
+| Compact controls / fullscreen / existing translation picker | 12 / 22 / 32 |
+| Voice profiles / Reader speech / cloud speech | 12 / 45 / 44 |
+| KJV browser / Catholic Bible / Word Study loader and unchanged budget | 13 / 50 / 43 |
+| Installed cache 43/44/45/46 → 47 / PWA / offline translation management | 19 / 17 / 12 |
+| KJV unit/corpus tests / all 66 Isaiah hashes | 8 / 1 |
+| **Total unique checks** | **373** |
+
+Final focused validation has **zero remaining failures, skips or retries**, with
+one browser worker. Asset integrity, JavaScript syntax and `git diff --check`
+pass. A development double-save test caught duplicate announcement ordering;
+deduplication now runs before the already-saved guard, preserving the original
+single confirmation. Former Reader-removal expectations now assert the requested
+save-only contract and real top-drawer removal, including after offline upgrades.
+An incomplete speech-suite filename initially selected no tests; the actual
+`reader-speech-highlight.spec.js` suite subsequently passed all 45 checks.
+
+Remaining device acceptance: physical Android light/dark rendering, TalkBack
+announcements and navigation, real system text scaling, and long momentum flings.
+These are not represented as physically tested by Chromium emulation. The new
+hash-specific Cloudflare preview is for this acceptance review only; production
+merge and deployment still require approval.

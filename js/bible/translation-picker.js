@@ -183,7 +183,7 @@ var ReaderOptions = window.ReaderOptions || (function(){
   var initialized=false, media, feedback, dialog, choices, heading, activeSelect, returnTarget, pressed, passage, confirmed;
   var saveBatch=new Set();
   var controls=[];
-  var labels={bookSelect:'Book',chapterSelect:'Chapter',verseSelect:'Verse',readAloudSpeed:'Speed'};
+  var labels={bookSelect:'Book',chapterSelect:'Chapter',verseSelect:'Verse',readAloudVoice:'Voice',readAloudSpeed:'Speed'};
   function describe(location){
     if(!location || !location.verse) return null;
     var verse=BibleData.getVerse(location.translationId,location.bookId,location.chapter,location.verse);
@@ -206,10 +206,11 @@ var ReaderOptions = window.ReaderOptions || (function(){
     var entry=current(), button=document.getElementById('readerSaveVerse');
     var stored=entry && isSaved(entry.savedRef || entry.ref);
     button.disabled=false;
-    var text=entry ? stored ? 'Remove saved verse' : 'Save verse' : 'Choose verse to save';
+    var text=entry ? stored ? 'Saved ✓' : 'Save verse' : 'Choose verse to save';
     if(button.textContent!==text) button.textContent=text;
     button.setAttribute('aria-pressed',stored?'true':'false');
-    button.setAttribute('aria-label',entry ? stored ? 'Remove '+entry.ref+' from Saved' : 'Save '+entry.ref : 'Choose a verse to save');
+    button.setAttribute('aria-disabled',stored?'true':'false');
+    button.setAttribute('aria-label',entry ? stored ? entry.ref+' saved. Manage saved verses in Saved.' : 'Save '+entry.ref : 'Choose a verse to save');
     if(!entry){
       button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-controls','readerOptionsPicker');
     } else {
@@ -217,8 +218,10 @@ var ReaderOptions = window.ReaderOptions || (function(){
     }
     controls.forEach(function(control){
       var option=control.select.options[control.select.selectedIndex];
-      var label=labels[control.select.id]+': '+(option && option.value ? option.textContent : 'Choose verse');
+      var emptyVerse=control.select.id==='verseSelect' && !(option && option.value);
+      var label=labels[control.select.id]+': '+(emptyVerse ? 'None' : option ? option.textContent : 'Unavailable');
       if(control.button.textContent!==label) control.button.textContent=label;
+      control.button.setAttribute('aria-label',emptyVerse ? 'Verse: Whole chapter (no selected verse)' : label);
       control.button.disabled=control.select.disabled || !control.select.options.length;
     });
     if(dialog && dialog.open) choices.querySelectorAll('[data-option-value]').forEach(function(option){
@@ -277,7 +280,7 @@ var ReaderOptions = window.ReaderOptions || (function(){
       if(!option || option.disabled) return;
       var select=activeSelect, changed=select.value!==option.dataset.optionValue;
       var valid=Array.from(select.options).some(function(item){return item.value===option.dataset.optionValue && !item.disabled;});
-      if(!valid || select.id!=='readAloudSpeed' && passage!==JSON.stringify([currentTranslation,currentBook,currentChapter,translationChangeRequest])){
+      if(!valid || !/^readAloud(Voice|Speed)$/.test(select.id) && passage!==JSON.stringify([currentTranslation,currentBook,currentChapter,translationChangeRequest])){
         close();feedback.textContent='The Reader changed. Reopen this control to choose from the current passage.';return;
       }
       var choosingForSave=returnTarget===document.getElementById('readerSaveVerse');
@@ -337,6 +340,7 @@ var ReaderOptions = window.ReaderOptions || (function(){
       pick(document.getElementById('verseSelect'),document.getElementById('readerSaveVerse'),true);return;
     }
     if(saveBatch.has(entry.ref)) return;
+    if(isSaved(entry.savedRef || entry.ref)){sync();feedback.textContent=entry.ref+' is already saved. Manage saved verses in Saved.';return;}
     saveBatch.add(entry.ref);Promise.resolve().then(function(){saveBatch.clear();});
     confirmed=null;
     var persisted=toggleFav(entry.savedRef || entry.ref,entry.text,null,entry.location);
