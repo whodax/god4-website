@@ -1,5 +1,7 @@
 # Light and blue Dark Mode
 
+Picker correction follow-up: see [Themed Scripture selection](themed-scripture-pickers.md) for compact dialog sizing, Compare and Reader popup coverage, and current validation. The earlier theme-only validation below describes commit c1eaa41.
+
 ## Dependency and isolation
 
 This feature starts from PR #109 head

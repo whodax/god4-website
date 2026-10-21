@@ -131,7 +131,7 @@ test('KJV search and Compare retain canonical bracketed text and exact verse coo
   await expect(page.locator('#readerContent .verse-focused')).toHaveAttribute('data-verse-number','2');
   await page.getByRole('button',{name:'Compare',exact:true}).click();
   await expect(page.locator('#compareSummary')).toHaveText('Comparing Genesis 1:2');
-  await page.locator('#compareGrid [data-compare-side="left"]').selectOption('kjv');
+  await require('./reader-navigation-test-helper').selectCompareOption(page.locator('#compareGrid [data-compare-side="left"]'),'kjv');
   await expect(page.locator('#compareGrid .compare-col').first()).toContainText(canonical);
   expect(await page.evaluate(()=>BibleData.getVerse('kjv','genesis',1,2).text)).toBe(canonical);
 });

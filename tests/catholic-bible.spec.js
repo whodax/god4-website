@@ -1,4 +1,5 @@
 const {test,expect}=require('@playwright/test');
+const {selectCompareOption}=require('./reader-navigation-test-helper');
 async function open(page){await page.goto('/');await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>Boolean(navigator.serviceWorker.controller)))await page.reload();await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>changeTranslation('dra'));}
 async function passage(page,book,chapter=1,verse){await page.evaluate(([b,c,v])=>navigateReaderToPassage(b,c,v),[book,chapter,verse]);}
 test('DRA registry, exact configured order and unchanged Protestant inventory',async({page})=>{
@@ -99,7 +100,7 @@ for(const [book,lastChapter] of [['esther',16],['daniel',14]])test(`Compare refr
  let release;const pending=new Promise(resolve=>release=resolve);
  await page.route('**/js/bible/dra.js?*',async route=>{await pending;await route.continue();});
  const requested=page.waitForRequest(request=>new URL(request.url()).pathname==='/js/bible/dra.js');
- await page.locator('[data-compare-index="1"]').selectOption('dra');await requested;
+ await selectCompareOption(page.locator('[data-compare-index="1"]'),'dra');await requested;
  await expect(page.locator('#compareBook option[value="tobit"]')).toHaveCount(0);
  release();
  await expect(page.locator('#compareBook option[value="tobit"]')).toHaveCount(1);
@@ -107,7 +108,7 @@ for(const [book,lastChapter] of [['esther',16],['daniel',14]])test(`Compare refr
  await expect(page.locator('#compareBook')).toHaveValue(book);
  await expect(page.locator('#compareChapter')).toHaveValue('1');
  await expect(page.locator('#view-compare')).toHaveClass(/active/);
- await page.locator('#compareBook').selectOption('tobit');
+ await selectCompareOption(page.locator('#compareBook'),'tobit');
  await expect(page.locator('.compare-col').nth(1).locator('.vnum')).toHaveCount(25);
 });
 
@@ -116,9 +117,9 @@ for(const [book,chapter] of [['esther',11],['esther',12],['esther',13],['esther'
  await page.evaluate(()=>BibleTranslationLoader.ensure('dra'));
  await page.getByRole('button',{name:'Compare',exact:true}).click();
  await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
- await page.locator('[data-compare-index="1"]').selectOption('dra');
- await page.locator('#compareBook').selectOption(book);
- await page.locator('#compareChapter').selectOption(String(chapter));
+ await selectCompareOption(page.locator('[data-compare-index="1"]'),'dra');
+ await selectCompareOption(page.locator('#compareBook'),book);
+ await selectCompareOption(page.locator('#compareChapter'),String(chapter));
  const dra=page.locator('.compare-col').nth(1),web=page.locator('.compare-col').first();
  const expected=await page.evaluate(([book,chapter])=>BibleData.getChapter('dra',book,chapter).verses,[book,chapter]);
  await expect(dra.locator('.vnum')).toHaveCount(expected.length);

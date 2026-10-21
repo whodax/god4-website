@@ -1367,159 +1367,174 @@ function navigateReaderToPassage(bookId, chapter, verse){
   }).catch(function(){ return false; });
 }
 function initializeReaderControls(){
-  initializeReaderStickyOffsets();
-  window.addEventListener('scroll', function(){ rememberReaderTabPosition(false); }, {passive:true});
-  var readerView = document.getElementById('view-reader');
-  if(readerView) readerView.addEventListener('scroll', function(){ rememberReaderTabPosition(false); }, {passive:true});
-  document.querySelectorAll('.bs-btn[aria-controls^="view-"]').forEach(function(button){
-    button.addEventListener('click', function(){
-      var view = button.getAttribute('aria-controls').slice(5);
-      if(view === 'reader') runWithBibleExperience(function(){ switchView(view, button); });
-      else switchView(view, button);
-    });
-  });
-  [
-    ['fullscreenBtn', 'click', function(){ runWithBibleExperience(toggleFullscreen); }],
-    ['readerTranslation', 'change', function(event){ changeTranslation(event.target.value); }],
-    ['bookSelect', 'change', function(){ runWithBibleExperience(changeReaderBook); }],
-    ['chapterSelect', 'change', function(){ runWithBibleExperience(function(){ loadPassage(true); }); }],
-    ['verseSelect', 'change', function(event){ runWithBibleExperience(function(){ selectReaderVerse(event.target.value); }); }],
-    ['readAloudPlay', 'click', function(){
-      if(typeof BibleSpeech === 'undefined') return;
-      if(readerPlaybackPending || BibleSpeech.getState() === 'playing' || BibleSpeech.getState() === 'preparing'){ stopReadAloud(); return; }
-      // Audio authorization must happen in this gesture, before Bible acquisition.
-      BibleSpeech.prepare();
-      if(typeof bibleExperienceReady !== 'undefined' && bibleExperienceReady){ playReader(); return; }
-      var intent = ++readerPlaybackIntent;
-      readerPlaybackPending = true;
-      BibleSpeech.beginPreparation();
-      runWithBibleExperience(function(){
-        if(intent !== readerPlaybackIntent) return false;
-        // Clear Speech's empty preparation state before establishing a real sequence.
-        BibleSpeech.stop();
-        playReader(undefined,false,true);
-        readerPlaybackPending = false;
-      }).then(function(loaded){
-        if(intent !== readerPlaybackIntent) return;
-        if(!loaded){ readerPlaybackPending = false; BibleSpeech.failPreparation(); }
-      });
-    }],
-    ['readAloudVoice', 'change', function(event){ BibleSpeech.setVoice(event.target.value); }],
-    ['readAloudSpeed', 'change', function(event){ BibleSpeech.setSpeed(event.target.value); }]
-  ].forEach(function(binding){
-    var element = document.getElementById(binding[0]);
-    if(element) element.addEventListener(binding[1], binding[2]);
-  });
-  document.querySelectorAll('[data-reader-action]').forEach(function(button){
-    var action = button.getAttribute('data-reader-action');
-    var handlers = {
-      previous: prevChapter,
-      next: nextChapter,
-      'previous-verse': previousReaderVerse,
-      'next-verse': nextReaderVerse
-    };
-    if(handlers[action]) button.addEventListener('click', function(){ runWithBibleExperience(handlers[action]); });
-  });
-  document.querySelectorAll('[data-voice-command-button]').forEach(function(button){
-    button.addEventListener('click', function(){ if(typeof BibleSpeech !== 'undefined') BibleSpeech.prepare(); runWithBibleExperience(toggleVoiceCommands); });
-  });
-  ['readerContent'].forEach(function(id){
-    var container = document.getElementById(id);
-    if(!container) return;
-    container.addEventListener('click', function(event){
-      var highlight = event.target.closest('.vnum');
-      if(highlight && container.contains(highlight)){
-        highlightVerse(highlight);
-        return;
-      }
-    });
-  });
+initializeReaderStickyOffsets();
+window.addEventListener('scroll', function(){ rememberReaderTabPosition(false); }, {passive:true});
+var readerView = document.getElementById('view-reader');
+if(readerView) readerView.addEventListener('scroll', function(){ rememberReaderTabPosition(false); }, {passive:true});
+document.querySelectorAll('.bs-btn[aria-controls^="view-"]').forEach(function(button){
+button.addEventListener('click', function(){
+var view = button.getAttribute('aria-controls').slice(5);
+if(view === 'reader') runWithBibleExperience(function(){ switchView(view, button); });
+else switchView(view, button);
+});
+});
+[
+['fullscreenBtn', 'click', function(){ runWithBibleExperience(toggleFullscreen); }],
+['readerTranslation', 'change', function(event){ changeTranslation(event.target.value); }],
+['bookSelect', 'change', function(){ runWithBibleExperience(changeReaderBook); }],
+['chapterSelect', 'change', function(){ runWithBibleExperience(function(){ loadPassage(true); }); }],
+['verseSelect', 'change', function(event){ runWithBibleExperience(function(){ selectReaderVerse(event.target.value); }); }],
+['readAloudPlay', 'click', function(){
+if(typeof BibleSpeech === 'undefined') return;
+if(readerPlaybackPending || BibleSpeech.getState() === 'playing' || BibleSpeech.getState() === 'preparing'){ stopReadAloud(); return; }
+// Audio authorization must happen in this gesture, before Bible acquisition.
+BibleSpeech.prepare();
+if(typeof bibleExperienceReady !== 'undefined' && bibleExperienceReady){ playReader(); return; }
+var intent = ++readerPlaybackIntent;
+readerPlaybackPending = true;
+BibleSpeech.beginPreparation();
+runWithBibleExperience(function(){
+if(intent !== readerPlaybackIntent) return false;
+// Clear Speech's empty preparation state before establishing a real sequence.
+BibleSpeech.stop();
+playReader(undefined,false,true);
+readerPlaybackPending = false;
+}).then(function(loaded){
+if(intent !== readerPlaybackIntent) return;
+if(!loaded){ readerPlaybackPending = false; BibleSpeech.failPreparation(); }
+});
+}],
+['readAloudVoice', 'change', function(event){ BibleSpeech.setVoice(event.target.value); }],
+['readAloudSpeed', 'change', function(event){ BibleSpeech.setSpeed(event.target.value); }]
+].forEach(function(binding){
+var element = document.getElementById(binding[0]);
+if(element) element.addEventListener(binding[1], binding[2]);
+});
+document.querySelectorAll('[data-reader-action]').forEach(function(button){
+var action = button.getAttribute('data-reader-action');
+var handlers = {
+previous: prevChapter,
+next: nextChapter,
+'previous-verse': previousReaderVerse,
+'next-verse': nextReaderVerse
+};
+if(handlers[action]) button.addEventListener('click', function(){ runWithBibleExperience(handlers[action]); });
+});
+document.querySelectorAll('[data-voice-command-button]').forEach(function(button){
+button.addEventListener('click', function(){ if(typeof BibleSpeech !== 'undefined') BibleSpeech.prepare(); runWithBibleExperience(toggleVoiceCommands); });
+});
+['readerContent'].forEach(function(id){
+var container = document.getElementById(id);
+if(!container) return;
+container.addEventListener('click', function(event){
+var highlight = event.target.closest('.vnum');
+if(highlight && container.contains(highlight)){
+highlightVerse(highlight);
+return;
+}
+});
+});
 }
 function closeReaderMore(){
-  setReaderOptionsOpen(false);
+setReaderOptionsOpen(false);
 }
 function readerOptionsError(){
-  document.getElementById('readerSaveStatus').textContent='Native controls remain available. Reopen Options to retry saving.';
+document.getElementById('readerSaveStatus').textContent='Native controls remain available. Reopen Options to retry saving.';
 }
 function setReaderOptionsOpen(open){
-  var moreTrigger = document.getElementById('readerMoreTrigger');
-  var secondaryControls = document.getElementById('readerSecondaryControls');
-  if(!moreTrigger || !secondaryControls) return;
-  secondaryControls.hidden = !open;
-  moreTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
-  moreTrigger.textContent = open ? 'Hide Options' : 'Options';
-  if(open) ReaderTranslationLoader.ensure().catch(readerOptionsError);
-  else moreTrigger.focus({preventScroll:true});
+var moreTrigger = document.getElementById('readerMoreTrigger');
+var secondaryControls = document.getElementById('readerSecondaryControls');
+if(!moreTrigger || !secondaryControls) return;
+secondaryControls.hidden = !open;
+moreTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+moreTrigger.textContent = open ? 'Hide Options' : 'Options';
+if(open) ReaderTranslationLoader.ensure().catch(readerOptionsError);
+else moreTrigger.focus({preventScroll:true});
 }
 
 if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener === 'function'){
-  BibleSpeech.setPlaybackListener({
-    // Preparation clears the previous verse without exposing the selected verse.
-    // Only actual playback claims the next; Stop/end restores selection highlighting.
-    onVerseStart: function(){ clearSpokenVerseHighlight(true); },
-    onVerseSpoken: handleSpokenVerseStart,
-    onVerseRepeat: handleRepeatedVerse,
-    onVerseComplete: completePlaybackVerse,
-    onEnd: function(){
-      clearSpokenVerseHighlight();
-      updateReaderControls();
-      if(typeof planSpeechReturnPending!=='undefined' && planSpeechReturnPending){
-        planSpeechReturnPending=false;
-        returnToPlanFromSession(true);
-      }
-    }
-  });
-  var moreTrigger = document.getElementById('readerMoreTrigger');
-  var secondaryControls = document.getElementById('readerSecondaryControls');
-  if(moreTrigger && secondaryControls){
-    moreTrigger.addEventListener('click', function(){
-      setReaderOptionsOpen(moreTrigger.getAttribute('aria-expanded') !== 'true');
-    });
-    function closeReaderMoreOnEscape(event){
-      if(event.key !== 'Escape' || moreTrigger.getAttribute('aria-expanded') !== 'true') return;
-      event.preventDefault();
-      closeReaderMore();
-    }
-    moreTrigger.addEventListener('keydown', closeReaderMoreOnEscape);
-    secondaryControls.addEventListener('keydown', closeReaderMoreOnEscape);
-  }
+BibleSpeech.setPlaybackListener({
+// Preparation clears the previous verse without exposing the selected verse.
+// Only actual playback claims the next; Stop/end restores selection highlighting.
+onVerseStart: function(){ clearSpokenVerseHighlight(true); },
+onVerseSpoken: handleSpokenVerseStart,
+onVerseRepeat: handleRepeatedVerse,
+onVerseComplete: completePlaybackVerse,
+onEnd: function(){
+clearSpokenVerseHighlight();
+updateReaderControls();
+if(typeof planSpeechReturnPending!=='undefined' && planSpeechReturnPending){
+planSpeechReturnPending=false;
+returnToPlanFromSession(true);
+}
+}
+});
+var moreTrigger = document.getElementById('readerMoreTrigger');
+var secondaryControls = document.getElementById('readerSecondaryControls');
+if(moreTrigger && secondaryControls){
+moreTrigger.addEventListener('click', function(){
+setReaderOptionsOpen(moreTrigger.getAttribute('aria-expanded') !== 'true');
+});
+function closeReaderMoreOnEscape(event){
+if(event.key !== 'Escape' || moreTrigger.getAttribute('aria-expanded') !== 'true') return;
+event.preventDefault();
+closeReaderMore();
+}
+moreTrigger.addEventListener('keydown', closeReaderMoreOnEscape);
+secondaryControls.addEventListener('keydown', closeReaderMoreOnEscape);
+}
 }
 var ReaderTranslationLoader = (function(){
-  var request;
-  function ensure(){
-    if(!request) request = new Promise(function(resolve,reject){
-      var script = document.createElement('script');
-      var timeout = setTimeout(fail,10000);
-      function fail(){
-        clearTimeout(timeout);
-        script.onload = script.onerror = null;
-        script.remove();
-        request = null;
-        reject(new Error('Translation controls unavailable'));
-      }
-      script.src = '/js/bible/translation-picker.js';
-      script.onload = function(){
-        try {
-          if(typeof applyReaderTranslation !== 'function') throw new Error('Missing translation runtime');
-          ReaderTranslationPicker.initialize();
-          ReaderOptions.initialize();
-          clearTimeout(timeout);
-          resolve();
-        } catch(error){ fail(); }
-      };
-      script.onerror = fail;
-      document.head.appendChild(script);
-    });
-    return request;
-  }
-  function sync(){ if(window.ReaderTranslationPicker) ReaderTranslationPicker.sync(); }
-  function isOpen(){ return !!window.ReaderTranslationPicker && ReaderTranslationPicker.isOpen(); }
-  function prepare(){
-    if(bibleExperienceReady && typeof HTMLDialogElement !== 'undefined' && HTMLDialogElement.prototype.showModal &&
-      matchMedia('(max-width:620px)').matches) ensure().catch(function(){});
-  }
-  function initialize(){ matchMedia('(max-width:620px)').addEventListener('change',prepare); }
-  return {ensure:ensure,sync:sync,isOpen:isOpen,prepare:prepare,initialize:initialize};
+var request;
+function ensure(){
+if(!request) request = new Promise(function(resolve,reject){
+var script = document.createElement('script');
+var timeout = setTimeout(fail,10000);
+function fail(){
+clearTimeout(timeout);
+script.onload = script.onerror = null;
+script.remove();
+request = null;
+reject(new Error('Translation controls unavailable'));
+}
+script.src = '/js/bible/translation-picker.js';
+script.onload = function(){
+try {
+if(typeof applyReaderTranslation !== 'function') throw new Error('Missing translation runtime');
+ReaderTranslationPicker.initialize();
+ReaderOptions.initialize();
+clearTimeout(timeout);
+resolve();
+} catch(error){ fail(); }
+};
+script.onerror = fail;
+document.head.appendChild(script);
+});
+return request;
+}
+function sync(){ if(window.ReaderTranslationPicker) ReaderTranslationPicker.sync(); }
+function isOpen(){ return !!window.ReaderTranslationPicker && ReaderTranslationPicker.isOpen(); }
+function prepare(){
+if(bibleExperienceReady && typeof HTMLDialogElement !== 'undefined' && HTMLDialogElement.prototype.showModal &&
+matchMedia('(max-width:620px)').matches) ensure().catch(function(){});
+}
+function initialize(){
+matchMedia('(max-width:620px)').addEventListener('change',prepare);
+document.querySelectorAll('#view-reader select').forEach(function(select){
+function open(event){
+if(event.type==='keydown' && !['Enter',' ','ArrowDown','ArrowUp','Home','End','F4'].includes(event.key)) return;
+if(typeof HTMLDialogElement==='undefined' || !HTMLDialogElement.prototype.showModal) return;
+if(select.dataset.nativeFallback) return;
+event.preventDefault();
+ensure().then(function(){if(document.activeElement===select) ThemedSelectPicker.open(select);}).catch(function(){select.dataset.nativeFallback='true';select.focus();});
+}
+function activate(event){select.focus({preventScroll:true});open(event);}
+select.addEventListener('pointerdown',activate);
+select.addEventListener('keydown',open);
+select.addEventListener('click',activate);
+});
+}
+return {ensure:ensure,sync:sync,isOpen:isOpen,prepare:prepare,initialize:initialize};
 })();
 if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', function(){ initializeReaderControls(); initializeVoiceCommands(); ReaderTranslationLoader.initialize(); }, { once: true });
 else { initializeReaderControls(); initializeVoiceCommands(); ReaderTranslationLoader.initialize(); }

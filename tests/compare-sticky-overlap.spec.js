@@ -63,7 +63,7 @@ for(const width of [390,320])test.describe(`${width}px Compare clearance`,()=>{
       await header.evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
       expect((await header.boundingBox()).y).toBeGreaterThanOrEqual((await geometry(page)).bottom-1);
       await expect(header).toHaveCSS('position','static');
-      const select=header.locator('select');await select.focus();await expect(select).toBeFocused();
+      const select=header.locator('.themed-select-trigger');await expect(select).toBeVisible();await select.focus();await expect(select).toBeFocused();
       expect((await select.boundingBox()).y).toBeGreaterThanOrEqual((await geometry(page)).bottom-1);
       expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth && document.getElementById('compareGrid').scrollWidth<=document.getElementById('compareGrid').clientWidth)).toBe(true);
     }

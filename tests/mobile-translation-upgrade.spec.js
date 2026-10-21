@@ -17,9 +17,9 @@ for(const previous of [
 const baseline=previous.commit;
 const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-48';
 const runtimePath='/js/bible/translation-picker.js';
-const assetPaths=['/css/companion.css','/js/bible/reader.js','/js/app.js','/js/bible/speech.js',...(previous.version>=44?[runtimePath]:[])];
+const assetPaths=['/css/companion.css','/js/bible/reader.js','/js/bible/scripture-picker.js','/js/bible/compare.js','/js/app.js','/js/bible/speech.js',...(previous.version>=44?[runtimePath]:[])];
 const themePaths=['/css/theme.css','/js/theme.js'];
-const oldHome=previous.version===47?execFileSync('git',['show',baseline+':index.html'],{cwd:root}):null;
+const oldHome=previous.version>=46?execFileSync('git',['show',baseline+':index.html'],{cwd:root}):null;
 const prior=Object.fromEntries(['/sw.js',...assetPaths].map(url=>[url,execFileSync('git',['show',baseline+':'+url.slice(1)],{cwd:root})]));
 const current=Object.fromEntries(assetPaths.map(url=>[url,fs.readFileSync(path.join(root,url.slice(1)))]));
 const digest=body=>crypto.createHash('sha256').update(body).digest('hex');
@@ -38,7 +38,8 @@ test('shell 48 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   if(previous.version===47){
-    for(const asset of ['/css/companion.css','/js/bible/reader.js','/js/bible/speech.js',runtimePath])expect(current[asset].toString('utf8').replace(/\r\n/g,'\n')).toBe(prior[asset].toString('utf8').replace(/\r\n/g,'\n'));
+    expect(current['/js/bible/speech.js'].toString('utf8').replace(/\r\n/g,'\n')).toBe(prior['/js/bible/speech.js'].toString('utf8').replace(/\r\n/g,'\n'));
+    for(const asset of ['/css/companion.css','/js/bible/reader.js',runtimePath])expect(current[asset].toString('utf8').replace(/\r\n/g,'\n')).not.toBe(prior[asset].toString('utf8').replace(/\r\n/g,'\n'));
     const app=prior['/js/app.js'].toString('utf8').replace(/\r\n/g,'\n'),boundary=app.indexOf('function renderLeaf(){');
     expect(current['/js/app.js'].toString('utf8').replace(/\r\n/g,'\n')).toBe(app.slice(0,boundary)+app.slice(boundary).replace(/^ +/gm,''));
     return;
@@ -311,6 +312,16 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
       await expect(page.locator('#readerTranslation')).toHaveValue(id);
       await expect.poll(()=>page.evaluate(()=>currentTranslation)).toBe(id);
       await expect(page.locator('#readerContent h2')).toHaveText('John 1');
+    }
+    if(previous.version===47){
+      await page.getByRole('button',{name:'Compare',exact:true}).click();
+      const trigger=page.locator('[data-themed-select="compareChapter"]');
+      await expect(trigger).toBeVisible();await trigger.click();
+      await expect(page.locator('#themedSelectPicker')).toBeVisible();
+      await page.locator('#themedSelectPicker [data-option-value="3"]').click();
+      await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3');
+      await expect(trigger).toHaveText('Chapter 3');
+      await page.getByRole('button',{name:'Reader',exact:true}).click();
     }
     expect(errors).toEqual([]);
   }finally{await context.setOffline(false);await server.stop(context);}
