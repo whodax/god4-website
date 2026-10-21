@@ -14,4 +14,12 @@ async function selectReaderOption(locator,value,options){
   }
   return locator.selectOption(value,options);
 }
-module.exports={selectReaderOption};
+async function selectCompareOption(locator,value){
+  const {expect}=require('@playwright/test');
+  const page=locator.page();
+  const key=await locator.evaluate(node=>node.id || 'compare-edition-'+node.dataset.compareIndex);
+  const trigger=page.locator(`[data-themed-select="${key}"]`);
+  await expect(trigger).toBeVisible();await trigger.click();
+  await page.locator(`#themedSelectPicker [data-option-value="${value}"]`).click();
+}
+module.exports={selectReaderOption,selectCompareOption};

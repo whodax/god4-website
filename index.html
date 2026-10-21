@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script src="/js/theme.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GOD4.US — Scripture kept open</title>
 <meta name="description" content="GOD4.us is a digital sanctuary for reading, searching, and saving sacred Scripture.">
@@ -27,6 +28,7 @@
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/companion.css">
 <link rel="stylesheet" href="css/account.css?v=20260924-1">
+<link rel="stylesheet" href="/css/theme.css">
 </head>
 <body>
 
@@ -53,6 +55,10 @@
     <a href="#companion">Study</a>
   </div>
   <div class="header-actions">
+    <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch to Dark Mode" aria-pressed="false">
+      <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
+      <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+    </button>
     <button class="saved-pill" type="button" aria-controls="tray" aria-expanded="false">♡ <span id="savedCount">0</span> Saved</button>
     <button id="accountTrigger" class="account-trigger" type="button" aria-haspopup="dialog" aria-controls="accountDialog" aria-expanded="false">Account</button>
   </div>

@@ -25,6 +25,21 @@ async function active(page,verse){
   if(verse)await expect(page.locator('#readerContent .verse-spoken')).toHaveAttribute('data-verse-number',String(verse));
 }
 async function advance(page,cloud=false){await page.evaluate(cloud=>cloud?window.__highlight.sources.at(-1).end():window.__highlight.utterances.at(-1).onend(),cloud);}
+
+for(const cloud of [false,true])test(`chapter-only navigation plays from verse 1 without selecting a verse, cloud=${cloud}`,async({page})=>{
+  await install(page,{cloud});await page.evaluate(()=>navigateReaderToPassage('john',1));
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  await expect(page.locator('#readerReferenceText')).toHaveText('John 1');
+  await page.locator('#readAloudPlay').click();await active(page,1);
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  await advance(page,cloud);await active(page,2);
+  await page.evaluate(()=>pauseReader());await active(page,2);
+  await page.evaluate(()=>resumeReader());await active(page,2);
+  await page.evaluate(()=>stopReader());await active(page,null);
+  await expect(page.locator('#verseSelect')).toHaveValue('');
+  await expect(page.locator('#readerReferenceText')).toHaveText('John 1');
+  await expect(page.locator('#readerContent .verse-focused')).toHaveCount(0);
+});
 test('actual native start owns highlight; progression suppresses selection, pause/resume retains, Stop restores',async({page})=>{
   await install(page,{deferStart:true});await page.locator('#readAloudPlay').click();await active(page,null);
   await page.evaluate(()=>window.__highlight.utterances[0].onstart());await active(page,16);

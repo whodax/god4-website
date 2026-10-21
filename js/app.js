@@ -28,547 +28,547 @@ let searchTranslationId = '';
 let searchTranslationRequest = 0;
 
 function renderLeaf(){
-  const v = verses[idx];
-  const dropcap = document.getElementById('dropcap');
-  const verseText = document.getElementById('verseText');
-  const verseRef = document.getElementById('verseRef');
-  const heroFav = document.getElementById('heroFav');
-  if(!v || !dropcap || !verseText || !verseRef || !heroFav) return;
-  const first = v.text.charAt(0);
-  dropcap.textContent = first;
-  verseText.textContent = v.text.slice(1);
-  verseRef.textContent = v.ref;
-  heroFav.classList.toggle('active', isSaved(v.ref));
-  heroFav.textContent = isSaved(v.ref) ? '♥' : '♡';
-  heroFav.setAttribute('aria-pressed', isSaved(v.ref) ? 'true' : 'false');
+const v = verses[idx];
+const dropcap = document.getElementById('dropcap');
+const verseText = document.getElementById('verseText');
+const verseRef = document.getElementById('verseRef');
+const heroFav = document.getElementById('heroFav');
+if(!v || !dropcap || !verseText || !verseRef || !heroFav) return;
+const first = v.text.charAt(0);
+dropcap.textContent = first;
+verseText.textContent = v.text.slice(1);
+verseRef.textContent = v.ref;
+heroFav.classList.toggle('active', isSaved(v.ref));
+heroFav.textContent = isSaved(v.ref) ? '♥' : '♡';
+heroFav.setAttribute('aria-pressed', isSaved(v.ref) ? 'true' : 'false');
 }
 
 function nextVerse(){
-  const card = document.getElementById('leafCard');
-  card.classList.add('is-fading');
-  setTimeout(function(){
-    idx = (idx+1) % verses.length;
-    renderLeaf();
-    card.classList.remove('is-fading');
-  }, 200);
+const card = document.getElementById('leafCard');
+card.classList.add('is-fading');
+setTimeout(function(){
+idx = (idx+1) % verses.length;
+renderLeaf();
+card.classList.remove('is-fading');
+}, 200);
 }
 
 function isSaved(ref){ return saved.some(function(s){ return s.ref === ref; }); }
 
 function toggleFav(ref, text, btnEl, location){
-  if(isSaved(ref)){
-    saved = saved.filter(function(s){ return s.ref !== ref; });
-  } else {
-    var entry={ref:ref,text:text};
-    if(location) entry.location=location;
-    saved.push(entry);
-  }
-  var persisted = savedVersesStorage.save(saved);
-  var savedCount = document.getElementById('savedCount');
-  if(savedCount) savedCount.textContent = saved.length;
-  renderTray();
-  renderLeaf();
-  if(btnEl){
-    btnEl.classList.toggle('active', isSaved(ref));
-    btnEl.textContent = isSaved(ref) ? '♥' : '♡';
-    btnEl.setAttribute('aria-pressed', isSaved(ref) ? 'true' : 'false');
-  }
-  return persisted;
+if(isSaved(ref)){
+saved = saved.filter(function(s){ return s.ref !== ref; });
+} else {
+var entry={ref:ref,text:text};
+if(location) entry.location=location;
+saved.push(entry);
+}
+var persisted = savedVersesStorage.save(saved);
+var savedCount = document.getElementById('savedCount');
+if(savedCount) savedCount.textContent = saved.length;
+renderTray();
+renderLeaf();
+if(btnEl){
+btnEl.classList.toggle('active', isSaved(ref));
+btnEl.textContent = isSaved(ref) ? '♥' : '♡';
+btnEl.setAttribute('aria-pressed', isSaved(ref) ? 'true' : 'false');
+}
+return persisted;
 }
 
 function toggleFavFromHero(){
-  var v = verses[idx];
-  toggleFav(v.ref, v.text, document.getElementById('heroFav'));
+var v = verses[idx];
+toggleFav(v.ref, v.text, document.getElementById('heroFav'));
 }
 
 function getSearchTranslations(){
-  var translations = typeof BibleData === 'undefined' ? [] : BibleData.listTranslations().filter(function(translation){
-    return translation.provider !== 'demo-library';
-  });
-  return translations;
+var translations = typeof BibleData === 'undefined' ? [] : BibleData.listTranslations().filter(function(translation){
+return translation.provider !== 'demo-library';
+});
+return translations;
 }
 
 function updateSearchTranslationSelection(translationId){
-  var translations = getSearchTranslations();
-  var translation = translations.find(function(item){ return item.id === translationId; });
-  if(!translation) return;
-  searchTranslationId = translationId;
-  var select = document.getElementById('searchTranslation');
-  var label = document.getElementById('searchTranslationLabel');
-  var toggle = document.getElementById('searchTranslationToggle');
-  var menu = document.getElementById('searchTranslationMenu');
-  if(select) select.value = translationId;
-  if(label) label.textContent = translation.abbreviation;
-  if(toggle) toggle.innerHTML = escapeHtml(translation.abbreviation) + ' <span aria-hidden="true">▼</span>';
-  if(menu) menu.querySelectorAll('[data-translation-id]').forEach(function(option){
-    option.setAttribute('aria-selected', option.getAttribute('data-translation-id') === translationId ? 'true' : 'false');
-  });
+var translations = getSearchTranslations();
+var translation = translations.find(function(item){ return item.id === translationId; });
+if(!translation) return;
+searchTranslationId = translationId;
+var select = document.getElementById('searchTranslation');
+var label = document.getElementById('searchTranslationLabel');
+var toggle = document.getElementById('searchTranslationToggle');
+var menu = document.getElementById('searchTranslationMenu');
+if(select) select.value = translationId;
+if(label) label.textContent = translation.abbreviation;
+if(toggle) toggle.innerHTML = escapeHtml(translation.abbreviation) + ' <span aria-hidden="true">▼</span>';
+if(menu) menu.querySelectorAll('[data-translation-id]').forEach(function(option){
+option.setAttribute('aria-selected', option.getAttribute('data-translation-id') === translationId ? 'true' : 'false');
+});
 }
 
 async function changeSearchTranslation(translationId){
-  var previousTranslation = searchTranslationId;
-  var requestId = ++searchTranslationRequest;
-  var loaded = typeof BibleTranslationLoader !== 'undefined'
-    ? await BibleTranslationLoader.ensure(translationId)
-    : BibleData.isTranslationLoaded(translationId);
-  if(requestId !== searchTranslationRequest) return false;
-  if(!loaded){
-    updateSearchTranslationSelection(previousTranslation);
-    return false;
-  }
-  updateSearchTranslationSelection(translationId);
-  var searchInput = document.getElementById('searchInput');
-  if(searchInput && searchInput.value.trim()) await doSearch();
-  return true;
+var previousTranslation = searchTranslationId;
+var requestId = ++searchTranslationRequest;
+var loaded = typeof BibleTranslationLoader !== 'undefined'
+? await BibleTranslationLoader.ensure(translationId)
+: BibleData.isTranslationLoaded(translationId);
+if(requestId !== searchTranslationRequest) return false;
+if(!loaded){
+updateSearchTranslationSelection(previousTranslation);
+return false;
+}
+updateSearchTranslationSelection(translationId);
+var searchInput = document.getElementById('searchInput');
+if(searchInput && searchInput.value.trim()) await doSearch();
+return true;
 }
 
 function populateSearchTranslations(){
-  var select = document.getElementById('searchTranslation');
-  var toggle = document.getElementById('searchTranslationToggle');
-  var menu = document.getElementById('searchTranslationMenu');
-  var translations = getSearchTranslations();
-  if(!select || !translations.length) return;
-  select.innerHTML = '';
-  translations.forEach(function(translation){
-    var option = document.createElement('option');
-    option.value = translation.id;
-    option.textContent = BibleCanon.canon(translation.id) === 'catholic' ? translation.abbreviation + ' — ' + translation.name : translation.abbreviation;
-    select.appendChild(option);
-  });
-  searchTranslationId = translations.some(function(translation){ return translation.id === currentTranslation; }) ? currentTranslation : translations[0].id;
-  if(menu){
-    if(toggle) toggle.setAttribute('aria-controls', menu.id);
-    menu.innerHTML = '';
-    translations.forEach(function(translation){
-      var option = document.createElement('button');
-      option.type = 'button';
-      option.className = 'search-translation-option';
-      option.setAttribute('role', 'option');
-      option.setAttribute('data-translation-id', translation.id);
-      option.setAttribute('aria-selected', translation.id === searchTranslationId ? 'true' : 'false');
-      option.textContent = BibleCanon.canon(translation.id) === 'catholic' ? translation.abbreviation + ' — ' + translation.name : translation.abbreviation;
-      option.addEventListener('click', function(){
-        selectSearchTranslationOption(option);
-      });
-      menu.appendChild(option);
-    });
-  }
-  updateSearchTranslationSelection(searchTranslationId);
+var select = document.getElementById('searchTranslation');
+var toggle = document.getElementById('searchTranslationToggle');
+var menu = document.getElementById('searchTranslationMenu');
+var translations = getSearchTranslations();
+if(!select || !translations.length) return;
+select.innerHTML = '';
+translations.forEach(function(translation){
+var option = document.createElement('option');
+option.value = translation.id;
+option.textContent = BibleCanon.canon(translation.id) === 'catholic' ? translation.abbreviation + ' — ' + translation.name : translation.abbreviation;
+select.appendChild(option);
+});
+searchTranslationId = translations.some(function(translation){ return translation.id === currentTranslation; }) ? currentTranslation : translations[0].id;
+if(menu){
+if(toggle) toggle.setAttribute('aria-controls', menu.id);
+menu.innerHTML = '';
+translations.forEach(function(translation){
+var option = document.createElement('button');
+option.type = 'button';
+option.className = 'search-translation-option';
+option.setAttribute('role', 'option');
+option.setAttribute('data-translation-id', translation.id);
+option.setAttribute('aria-selected', translation.id === searchTranslationId ? 'true' : 'false');
+option.textContent = BibleCanon.canon(translation.id) === 'catholic' ? translation.abbreviation + ' — ' + translation.name : translation.abbreviation;
+option.addEventListener('click', function(){
+selectSearchTranslationOption(option);
+});
+menu.appendChild(option);
+});
+}
+updateSearchTranslationSelection(searchTranslationId);
 }
 
 function getSearchTranslationOptions(){
-  var menu = document.getElementById('searchTranslationMenu');
-  return menu ? Array.from(menu.querySelectorAll('[role="option"]')) : [];
+var menu = document.getElementById('searchTranslationMenu');
+return menu ? Array.from(menu.querySelectorAll('[role="option"]')) : [];
 }
 
 function closeSearchTranslationMenu(restoreFocus){
-  var menu = document.getElementById('searchTranslationMenu');
-  var toggle = document.getElementById('searchTranslationToggle');
-  if(menu) menu.hidden = true;
-  if(toggle) toggle.setAttribute('aria-expanded', 'false');
-  if(restoreFocus && toggle) toggle.focus();
+var menu = document.getElementById('searchTranslationMenu');
+var toggle = document.getElementById('searchTranslationToggle');
+if(menu) menu.hidden = true;
+if(toggle) toggle.setAttribute('aria-expanded', 'false');
+if(restoreFocus && toggle) toggle.focus();
 }
 
 function selectSearchTranslationOption(option){
-  var select = document.getElementById('searchTranslation');
-  if(!option || !select) return;
-  select.value = option.getAttribute('data-translation-id');
-  select.dispatchEvent(new Event('change', { bubbles: true }));
-  closeSearchTranslationMenu(true);
+var select = document.getElementById('searchTranslation');
+if(!option || !select) return;
+select.value = option.getAttribute('data-translation-id');
+select.dispatchEvent(new Event('change', { bubbles: true }));
+closeSearchTranslationMenu(true);
 }
 
 function toggleSearchTranslationMenu(){
-  var menu = document.getElementById('searchTranslationMenu');
-  var toggle = document.getElementById('searchTranslationToggle');
-  if(!menu || !toggle) return;
-  if(!menu.hidden){
-    closeSearchTranslationMenu(false);
-    return;
-  }
-  menu.hidden = false;
-  toggle.setAttribute('aria-expanded', 'true');
-  var selectedId = document.getElementById('searchTranslation').value;
-  var selectedOption = getSearchTranslationOptions().find(function(option){ return option.getAttribute('data-translation-id') === selectedId; });
-  (selectedOption || getSearchTranslationOptions()[0]).focus();
+var menu = document.getElementById('searchTranslationMenu');
+var toggle = document.getElementById('searchTranslationToggle');
+if(!menu || !toggle) return;
+if(!menu.hidden){
+closeSearchTranslationMenu(false);
+return;
+}
+menu.hidden = false;
+toggle.setAttribute('aria-expanded', 'true');
+var selectedId = document.getElementById('searchTranslation').value;
+var selectedOption = getSearchTranslationOptions().find(function(option){ return option.getAttribute('data-translation-id') === selectedId; });
+(selectedOption || getSearchTranslationOptions()[0]).focus();
 }
 
 function getSearchTranslation(){
-  var translations = getSearchTranslations();
-  if(!translations.length) return null;
-  var selected = document.getElementById('searchTranslation');
-  searchTranslationId = selected && translations.some(function(translation){ return translation.id === selected.value; }) ? selected.value : searchTranslationId;
-  return translations.find(function(translation){ return translation.id === searchTranslationId; }) || translations.find(function(translation){ return translation.id === currentTranslation; }) || translations[0];
+var translations = getSearchTranslations();
+if(!translations.length) return null;
+var selected = document.getElementById('searchTranslation');
+searchTranslationId = selected && translations.some(function(translation){ return translation.id === selected.value; }) ? selected.value : searchTranslationId;
+return translations.find(function(translation){ return translation.id === searchTranslationId; }) || translations.find(function(translation){ return translation.id === currentTranslation; }) || translations[0];
 }
 
 function parseSearchReference(query, translationId){
-  var cleaned = String(query || '').trim().replace(/[()]/g, '').replace(/[?!.]+$/g, '').replace(/^\s*(?:show me|what does|tell me about|open|go to)\s+/i, '').replace(/\s+(?:say|please)$/i, '').trim();
-  var books = BibleData.listBooks(translationId).sort(function(first, second){ return second.name.length - first.name.length; });
-  for(var index = 0; index < books.length; index++){
-    var book = books[index];
-    var names = BibleCanon.names(book.id,book.name);
-    for(var nameIndex=0;nameIndex<names.length;nameIndex++){
-    var match = new RegExp('^' + names[nameIndex].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s+(?:chapter\\s+)?(\\d+)(?:(?:\\s*:\\s*|\\s+verse\\s+|\\s+)(\\d+))?$', 'i').exec(cleaned);
-    if(match){
-      return { bookId: book.id, bookName: book.name, chapter: Number(match[1]), verse: match[2] ? Number(match[2]) : null };
-    }
-    }
-  }
-  return null;
+var cleaned = String(query || '').trim().replace(/[()]/g, '').replace(/[?!.]+$/g, '').replace(/^\s*(?:show me|what does|tell me about|open|go to)\s+/i, '').replace(/\s+(?:say|please)$/i, '').trim();
+var books = BibleData.listBooks(translationId).sort(function(first, second){ return second.name.length - first.name.length; });
+for(var index = 0; index < books.length; index++){
+var book = books[index];
+var names = BibleCanon.names(book.id,book.name);
+for(var nameIndex=0;nameIndex<names.length;nameIndex++){
+var match = new RegExp('^' + names[nameIndex].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s+(?:chapter\\s+)?(\\d+)(?:(?:\\s*:\\s*|\\s+verse\\s+|\\s+)(\\d+))?$', 'i').exec(cleaned);
+if(match){
+return { bookId: book.id, bookName: book.name, chapter: Number(match[1]), verse: match[2] ? Number(match[2]) : null };
+}
+}
+}
+return null;
 }
 
 async function navigateSearchResult(result){
-  if(!result) return;
-  var book = BibleData.listBooks(result.translationId || currentTranslation).find(function(item){ return item.id === result.bookId; });
-  if(!book || typeof navigateReaderToPassage !== 'function') return;
-  if(result.translationId && result.translationId !== currentTranslation && typeof changeTranslation === 'function'){
-    if(!await changeTranslation(result.translationId)) return;
-  }
-  return navigateReaderToPassage(book.id, result.chapter, result.isChapter ? undefined : result.verse);
+if(!result) return;
+var book = BibleData.listBooks(result.translationId || currentTranslation).find(function(item){ return item.id === result.bookId; });
+if(!book || typeof navigateReaderToPassage !== 'function') return;
+if(result.translationId && result.translationId !== currentTranslation && typeof changeTranslation === 'function'){
+if(!await changeTranslation(result.translationId)) return;
+}
+return navigateReaderToPassage(book.id, result.chapter, result.isChapter ? undefined : result.verse);
 }
 
 function createSearchResultCard(result, index){
-  var card = document.createElement('button');
-  card.type = 'button';
-  card.className = 'result-card result-card-button search-delay-' + Math.min(index, 9);
-  var reference = result.isChapter ? result.bookName + ' ' + result.chapter : result.bookName + ' ' + result.chapter + ':' + result.verse;
-  card.innerHTML = '<span><span class="txt">&quot;' + escapeHtml(result.text) + '&quot;</span><span class="ref">' + escapeHtml(reference) + ' <small>' + escapeHtml(result.translationAbbreviation || '') + '</small></span></span><span class="result-open">Open</span>';
-  card.addEventListener('click', function(){ navigateSearchResult(result); });
-  return card;
+var card = document.createElement('button');
+card.type = 'button';
+card.className = 'result-card result-card-button search-delay-' + Math.min(index, 9);
+var reference = result.isChapter ? result.bookName + ' ' + result.chapter : result.bookName + ' ' + result.chapter + ':' + result.verse;
+card.innerHTML = '<span><span class="txt">&quot;' + escapeHtml(result.text) + '&quot;</span><span class="ref">' + escapeHtml(reference) + ' <small>' + escapeHtml(result.translationAbbreviation || '') + '</small></span></span><span class="result-open">Open</span>';
+card.addEventListener('click', function(){ navigateSearchResult(result); });
+return card;
 }
 
 function renderSearchResults(){
-  var box = document.getElementById('results');
-  if(!box) return;
-  box.innerHTML = '';
-  var visibleMatches = searchMatches.slice(0, searchVisibleCount);
-  visibleMatches.forEach(function(match, index){ box.appendChild(createSearchResultCard(match, index)); });
-  if(searchMatches.length){
-    var status = document.createElement('div');
-    status.className = 'search-status';
-    status.textContent = 'Showing ' + visibleMatches.length + ' of ' + searchMatches.length + ' matches';
-    box.appendChild(status);
-  }
-  if(searchVisibleCount < searchMatches.length){
-    var more = document.createElement('button');
-    more.type = 'button';
-    more.className = 'search-more';
-    more.textContent = 'Show more';
-    more.addEventListener('click', function(){
-      searchVisibleCount = Math.min(searchVisibleCount + SEARCH_BATCH_SIZE, searchMatches.length);
-      renderSearchResults();
-    });
-    box.appendChild(more);
-  }
+var box = document.getElementById('results');
+if(!box) return;
+box.innerHTML = '';
+var visibleMatches = searchMatches.slice(0, searchVisibleCount);
+visibleMatches.forEach(function(match, index){ box.appendChild(createSearchResultCard(match, index)); });
+if(searchMatches.length){
+var status = document.createElement('div');
+status.className = 'search-status';
+status.textContent = 'Showing ' + visibleMatches.length + ' of ' + searchMatches.length + ' matches';
+box.appendChild(status);
+}
+if(searchVisibleCount < searchMatches.length){
+var more = document.createElement('button');
+more.type = 'button';
+more.className = 'search-more';
+more.textContent = 'Show more';
+more.addEventListener('click', function(){
+searchVisibleCount = Math.min(searchVisibleCount + SEARCH_BATCH_SIZE, searchMatches.length);
+renderSearchResults();
+});
+box.appendChild(more);
+}
 }
 
 function clearSearch(){
-  var input = document.getElementById('searchInput');
-  var box = document.getElementById('results');
-  if(input) input.value = '';
-  searchMatches = [];
-  searchVisibleCount = 0;
-  searchStatus = '';
-  if(box) box.innerHTML = '';
+var input = document.getElementById('searchInput');
+var box = document.getElementById('results');
+if(input) input.value = '';
+searchMatches = [];
+searchVisibleCount = 0;
+searchStatus = '';
+if(box) box.innerHTML = '';
 }
 
 async function doSearch(){
-  var query = document.getElementById('searchInput').value.trim();
-  var box = document.getElementById('results');
-  if(!query){ clearSearch(); return; }
-  searchMatches = [];
-  searchVisibleCount = 0;
-  searchStatus = '';
-  box.innerHTML = '';
-  var translation = getSearchTranslation();
-  if(!translation){
-    box.innerHTML = '<div class="no-results">Search is unavailable because no complete translation is loaded.</div>';
-    return;
-  }
-  var loaded = typeof BibleTranslationLoader !== 'undefined'
-    ? await BibleTranslationLoader.ensure(translation.id)
-    : BibleData.isTranslationLoaded(translation.id);
-  if(!loaded){
-    box.innerHTML = '<div class="no-results">Search is unavailable because this translation could not be loaded.</div>';
-    return;
-  }
-  var reference = parseSearchReference(query, translation.id);
-  var matches = [];
-  if(reference){
-    var chapter = BibleData.getChapter(translation.id, reference.bookId, reference.chapter);
-    if(chapter && reference.verse === null){
-      matches = chapter.verses.map(function(text, index){ return { translationId: translation.id, translationAbbreviation: translation.abbreviation, bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: index + 1, isChapter: index === 0, text: text }; });
-    } else if(chapter && BibleData.getVerse(translation.id, reference.bookId, reference.chapter, reference.verse)){
-      var verse = BibleData.getVerse(translation.id, reference.bookId, reference.chapter, reference.verse);
-      matches = [{ translationId: translation.id, translationAbbreviation: translation.abbreviation, bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: reference.verse, text: verse.text }];
-    }
-  } else {
-    var keyword = query.replace(/^(?:show me|what does|tell me about)\s+/i, '').replace(/\s+(?:say|please)$/i, '').trim();
-    matches = BibleData.search(translation.id, keyword).sort(function(first, second){
-      var exactPattern = new RegExp('(^|[^a-z])' + keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z]|$)', 'i');
-      return Number(exactPattern.test(second.text)) - Number(exactPattern.test(first.text));
-    }).map(function(match){
-      match.translationAbbreviation = translation.abbreviation;
-      return match;
-    });
-  }
-  if(!matches.length){
-    box.innerHTML = '<div class="no-results">No verses matched in ' + escapeHtml(translation.abbreviation) + '.</div>';
-    return;
-  }
-  searchMatches = matches;
-  searchVisibleCount = Math.min(SEARCH_BATCH_SIZE, searchMatches.length);
-  renderSearchResults();
+var query = document.getElementById('searchInput').value.trim();
+var box = document.getElementById('results');
+if(!query){ clearSearch(); return; }
+searchMatches = [];
+searchVisibleCount = 0;
+searchStatus = '';
+box.innerHTML = '';
+var translation = getSearchTranslation();
+if(!translation){
+box.innerHTML = '<div class="no-results">Search is unavailable because no complete translation is loaded.</div>';
+return;
+}
+var loaded = typeof BibleTranslationLoader !== 'undefined'
+? await BibleTranslationLoader.ensure(translation.id)
+: BibleData.isTranslationLoaded(translation.id);
+if(!loaded){
+box.innerHTML = '<div class="no-results">Search is unavailable because this translation could not be loaded.</div>';
+return;
+}
+var reference = parseSearchReference(query, translation.id);
+var matches = [];
+if(reference){
+var chapter = BibleData.getChapter(translation.id, reference.bookId, reference.chapter);
+if(chapter && reference.verse === null){
+matches = chapter.verses.map(function(text, index){ return { translationId: translation.id, translationAbbreviation: translation.abbreviation, bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: index + 1, isChapter: index === 0, text: text }; });
+} else if(chapter && BibleData.getVerse(translation.id, reference.bookId, reference.chapter, reference.verse)){
+var verse = BibleData.getVerse(translation.id, reference.bookId, reference.chapter, reference.verse);
+matches = [{ translationId: translation.id, translationAbbreviation: translation.abbreviation, bookId: reference.bookId, bookName: chapter.bookName, chapter: reference.chapter, verse: reference.verse, text: verse.text }];
+}
+} else {
+var keyword = query.replace(/^(?:show me|what does|tell me about)\s+/i, '').replace(/\s+(?:say|please)$/i, '').trim();
+matches = BibleData.search(translation.id, keyword).sort(function(first, second){
+var exactPattern = new RegExp('(^|[^a-z])' + keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z]|$)', 'i');
+return Number(exactPattern.test(second.text)) - Number(exactPattern.test(first.text));
+}).map(function(match){
+match.translationAbbreviation = translation.abbreviation;
+return match;
+});
+}
+if(!matches.length){
+box.innerHTML = '<div class="no-results">No verses matched in ' + escapeHtml(translation.abbreviation) + '.</div>';
+return;
+}
+searchMatches = matches;
+searchVisibleCount = Math.min(SEARCH_BATCH_SIZE, searchMatches.length);
+renderSearchResults();
 }
 
 function saveReaderVerse(){
-  var snapshot=[currentTranslation,currentBook,currentChapter,getReaderDisplayedVerse(),document.activeElement];
-  document.getElementById('readerSaveStatus').textContent='Preparing save…';
-  return ReaderTranslationLoader.ensure().then(function(){ReaderOptions.save(snapshot);}).catch(readerOptionsError);
+var snapshot=[currentTranslation,currentBook,currentChapter,getReaderDisplayedVerse(),document.activeElement];
+document.getElementById('readerSaveStatus').textContent='Preparing save…';
+return ReaderTranslationLoader.ensure().then(function(){ReaderOptions.save(snapshot);}).catch(readerOptionsError);
 }
 async function openSavedVerse(entry){
-  if(!entry.location) return false;
-  var location=entry.location;
-  if(!await BibleTranslationLoader.ensure(location.translationId)) return false;
-  var verse=BibleData.getVerse(location.translationId,location.bookId,location.chapter,location.verse);
-  if(!verse || !verse.text.trim()) return false;
-  if(trayOpen) toggleTray();
-  return navigateSearchResult(location);
+if(!entry.location) return false;
+var location=entry.location;
+if(!await BibleTranslationLoader.ensure(location.translationId)) return false;
+var verse=BibleData.getVerse(location.translationId,location.bookId,location.chapter,location.verse);
+if(!verse || !verse.text.trim()) return false;
+if(trayOpen) toggleTray();
+return navigateSearchResult(location);
 }
 function renderTray(){
-  if(window.ReaderOptions) ReaderOptions.sync();
-  var list = document.getElementById('trayList');
-  var empty = document.getElementById('trayEmpty');
-  list.innerHTML = '';
-  empty.hidden = saved.length > 0;
-  saved.forEach(function(v){
-    var row = document.createElement('div');
-    row.className = 'saved-verse-row';
-    var content = document.createElement('div');
-    content.className = 'saved-verse-text';
-    content.textContent = '"' + v.text + '"';
-    var details = document.createElement('div');
-    details.className = 'saved-verse-details';
-    var reference = document.createElement('span');
-    reference.className = 'saved-verse-reference';
-    reference.textContent = v.ref;
-    var remove = document.createElement('button');
-    remove.type = 'button';
-    remove.className = 'saved-verse-remove';
-    remove.textContent = 'Remove';
-    remove.addEventListener('click', function(){
-      toggleFav(v.ref);
-      if(!saved.length && trayOpen){
-        toggleTray();
-      } else {
-        document.getElementById('closeTray').focus();
-      }
-    });
-    details.appendChild(reference);
-    if(v.location){
-      var open=document.createElement('button'); open.type='button'; open.className='saved-verse-remove'; open.textContent='Open';
-      open.addEventListener('click',async function(){
-        var opened=await openSavedVerse(v);
-        if(opened===false){ open.textContent='Unavailable';open.setAttribute('aria-label','Saved passage unavailable. Try again when online.'); }
-      });
-      details.appendChild(open);
-    }
-    details.appendChild(remove);
-    row.append(content, details);
-    list.appendChild(row);
-  });
+if(window.ReaderOptions) ReaderOptions.sync();
+var list = document.getElementById('trayList');
+var empty = document.getElementById('trayEmpty');
+list.innerHTML = '';
+empty.hidden = saved.length > 0;
+saved.forEach(function(v){
+var row = document.createElement('div');
+row.className = 'saved-verse-row';
+var content = document.createElement('div');
+content.className = 'saved-verse-text';
+content.textContent = '"' + v.text + '"';
+var details = document.createElement('div');
+details.className = 'saved-verse-details';
+var reference = document.createElement('span');
+reference.className = 'saved-verse-reference';
+reference.textContent = v.ref;
+var remove = document.createElement('button');
+remove.type = 'button';
+remove.className = 'saved-verse-remove';
+remove.textContent = 'Remove';
+remove.addEventListener('click', function(){
+toggleFav(v.ref);
+if(!saved.length && trayOpen){
+toggleTray();
+} else {
+document.getElementById('closeTray').focus();
+}
+});
+details.appendChild(reference);
+if(v.location){
+var open=document.createElement('button'); open.type='button'; open.className='saved-verse-remove'; open.textContent='Open';
+open.addEventListener('click',async function(){
+var opened=await openSavedVerse(v);
+if(opened===false){ open.textContent='Unavailable';open.setAttribute('aria-label','Saved passage unavailable. Try again when online.'); }
+});
+details.appendChild(open);
+}
+details.appendChild(remove);
+row.append(content, details);
+list.appendChild(row);
+});
 }
 
 var trayOpen = false;
 function trapDialogFocus(event, dialog){
-  var focusable = Array.from(dialog.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
-  if(!focusable.length) return;
-  var first = focusable[0];
-  var last = focusable[focusable.length - 1];
-  if(event.shiftKey && document.activeElement === first){
-    event.preventDefault();
-    last.focus();
-  } else if(!event.shiftKey && document.activeElement === last){
-    event.preventDefault();
-    first.focus();
-  }
+var focusable = Array.from(dialog.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+if(!focusable.length) return;
+var first = focusable[0];
+var last = focusable[focusable.length - 1];
+if(event.shiftKey && document.activeElement === first){
+event.preventDefault();
+last.focus();
+} else if(!event.shiftKey && document.activeElement === last){
+event.preventDefault();
+first.focus();
+}
 }
 
 function toggleTray(){
-  trayOpen = !trayOpen;
-  var tray = document.getElementById('tray');
-  var savedPill = document.querySelector('.saved-pill');
-  if(!tray) return;
-  tray.classList.toggle('is-open', trayOpen);
-  tray.setAttribute('aria-hidden', trayOpen ? 'false' : 'true');
-  if(savedPill) savedPill.setAttribute('aria-expanded', trayOpen ? 'true' : 'false');
-  if(trayOpen){
-    var closeButton = document.getElementById('closeTray');
-    if(closeButton) closeButton.focus();
-  } else if(savedPill){
-    savedPill.focus();
-  }
+trayOpen = !trayOpen;
+var tray = document.getElementById('tray');
+var savedPill = document.querySelector('.saved-pill');
+if(!tray) return;
+tray.classList.toggle('is-open', trayOpen);
+tray.setAttribute('aria-hidden', trayOpen ? 'false' : 'true');
+if(savedPill) savedPill.setAttribute('aria-expanded', trayOpen ? 'true' : 'false');
+if(trayOpen){
+var closeButton = document.getElementById('closeTray');
+if(closeButton) closeButton.focus();
+} else if(savedPill){
+savedPill.focus();
+}
 }
 
 function initializeGoogleFonts(){
-  var fontLink = document.getElementById('googleFontsStylesheet');
-  if(!fontLink || fontLink.media === 'all') return;
-  var activateFonts = function(){ fontLink.media = 'all'; };
-  // A cached stylesheet can finish before this deferred script runs.
-  if(fontLink.sheet){
-    activateFonts();
-    return;
-  }
-  fontLink.addEventListener('load', activateFonts, { once: true });
+var fontLink = document.getElementById('googleFontsStylesheet');
+if(!fontLink || fontLink.media === 'all') return;
+var activateFonts = function(){ fontLink.media = 'all'; };
+// A cached stylesheet can finish before this deferred script runs.
+if(fontLink.sheet){
+activateFonts();
+return;
+}
+fontLink.addEventListener('load', activateFonts, { once: true });
 }
 var bibleExperienceReady = false;
 var bibleExperienceRequest = null;
 
 function initializeBibleExperience(){
-  if(bibleExperienceReady) return Promise.resolve(true);
-  if(bibleExperienceRequest) return bibleExperienceRequest;
+if(bibleExperienceReady) return Promise.resolve(true);
+if(bibleExperienceRequest) return bibleExperienceRequest;
 
-  bibleExperienceRequest = Promise.resolve().then(async function(){
-    var loaded = typeof BibleTranslationLoader !== 'undefined'
-      ? await BibleTranslationLoader.ensure(currentTranslation)
-      : BibleData.isTranslationLoaded(currentTranslation);
-    if(!loaded && currentTranslation !== 'web'){
-      currentTranslation = 'web';
-      UserData.translation.save(currentTranslation);
-      var readerTranslation = document.getElementById('readerTranslation');
-      if(readerTranslation) readerTranslation.value = currentTranslation;
-      updateSearchTranslationSelection(currentTranslation);
-      loaded = typeof BibleTranslationLoader !== 'undefined'
-        ? await BibleTranslationLoader.ensure(currentTranslation)
-        : BibleData.isTranslationLoaded(currentTranslation);
-    }
-    if(!loaded){
-      bibleExperienceRequest = null;
-      return false;
-    }
-    if(typeof populateBooks === 'function') populateBooks();
-    if(typeof populateChapters === 'function') populateChapters();
-    if(typeof loadPassage === 'function') loadPassage();
-    if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
-    bibleExperienceReady = true;
-    ReaderTranslationLoader.prepare();
-    return true;
-  }).catch(function(){
-    bibleExperienceRequest = null;
-    return false;
-  });
-  return bibleExperienceRequest;
+bibleExperienceRequest = Promise.resolve().then(async function(){
+var loaded = typeof BibleTranslationLoader !== 'undefined'
+? await BibleTranslationLoader.ensure(currentTranslation)
+: BibleData.isTranslationLoaded(currentTranslation);
+if(!loaded && currentTranslation !== 'web'){
+currentTranslation = 'web';
+UserData.translation.save(currentTranslation);
+var readerTranslation = document.getElementById('readerTranslation');
+if(readerTranslation) readerTranslation.value = currentTranslation;
+updateSearchTranslationSelection(currentTranslation);
+loaded = typeof BibleTranslationLoader !== 'undefined'
+? await BibleTranslationLoader.ensure(currentTranslation)
+: BibleData.isTranslationLoaded(currentTranslation);
+}
+if(!loaded){
+bibleExperienceRequest = null;
+return false;
+}
+if(typeof populateBooks === 'function') populateBooks();
+if(typeof populateChapters === 'function') populateChapters();
+if(typeof loadPassage === 'function') loadPassage();
+if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
+bibleExperienceReady = true;
+ReaderTranslationLoader.prepare();
+return true;
+}).catch(function(){
+bibleExperienceRequest = null;
+return false;
+});
+return bibleExperienceRequest;
 }
 
 function initializeBibleExperienceTriggers(){
-  document.querySelectorAll('a[href="#companion"]').forEach(function(link){
-    link.addEventListener('click', initializeBibleExperience);
-  });
-  var companion = document.getElementById('companion');
-  if(!companion || typeof IntersectionObserver === 'undefined') return;
-  var observer = new IntersectionObserver(function(entries){
-    if(!entries.some(function(entry){ return entry.isIntersecting; })) return;
-    initializeBibleExperience().then(function(loaded){
-      if(loaded) observer.disconnect();
-    });
-  }, { threshold: 0.01 });
-  observer.observe(companion);
+document.querySelectorAll('a[href="#companion"]').forEach(function(link){
+link.addEventListener('click', initializeBibleExperience);
+});
+var companion = document.getElementById('companion');
+if(!companion || typeof IntersectionObserver === 'undefined') return;
+var observer = new IntersectionObserver(function(entries){
+if(!entries.some(function(entry){ return entry.isIntersecting; })) return;
+initializeBibleExperience().then(function(loaded){
+if(loaded) observer.disconnect();
+});
+}, { threshold: 0.01 });
+observer.observe(companion);
 }
 /* ===== INIT ===== */
 var appInitialized = false;
 async function initializeApp(){
-  if(appInitialized) return;
-  appInitialized = true;
-  saved = savedVersesStorage.load();
-  var savedCount = document.getElementById('savedCount');
-  if(savedCount) savedCount.textContent = saved.length;
-  renderTray();
-  var searchInput = document.getElementById('searchInput');
-  var savedPill = document.querySelector('.saved-pill');
-  if(savedPill) savedPill.addEventListener('click', toggleTray);
-  var closeTrayButton = document.getElementById('closeTray');
-  if(closeTrayButton) closeTrayButton.addEventListener('click', toggleTray);
-  var refreshVerseButton = document.querySelector('.refresh-btn');
-  if(refreshVerseButton) refreshVerseButton.addEventListener('click', nextVerse);
-  var saveReaderButton=document.getElementById('readerSaveVerse');
-  if(saveReaderButton) saveReaderButton.addEventListener('click',saveReaderVerse);
-  var heroFavButton = document.getElementById('heroFav');
-  if(heroFavButton) heroFavButton.addEventListener('click', toggleFavFromHero);
-  var searchButton = document.querySelector('.search-box > button:not(#searchClear)');
-  if(searchButton) searchButton.addEventListener('click', doSearch);
-  var searchClearButton = document.getElementById('searchClear');
-  if(searchClearButton) searchClearButton.addEventListener('click', clearSearch);
-  if(searchInput) searchInput.addEventListener('keydown', function(event){
-    if(event.key === 'Enter') doSearch();
-    if(event.key === 'Escape') clearSearch();
-  });
-  if(searchInput) searchInput.addEventListener('input', function(){
-    if(!searchInput.value.trim()) clearSearch();
-  });
-  populateSearchTranslations();
-  var searchTranslation = document.getElementById('searchTranslation');
-  if(searchTranslation) searchTranslation.addEventListener('change', function(){
-    changeSearchTranslation(searchTranslation.value);
-  });
-  var searchTranslationToggle = document.getElementById('searchTranslationToggle');
-  if(searchTranslationToggle){
-    searchTranslationToggle.addEventListener('click', toggleSearchTranslationMenu);
-    searchTranslationToggle.addEventListener('keydown', function(event){
-      if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); toggleSearchTranslationMenu(); }
-      if(event.key === 'Escape') closeSearchTranslationMenu(true);
-    });
-  }
-  var searchTranslationMenu = document.getElementById('searchTranslationMenu');
-  if(searchTranslationMenu) searchTranslationMenu.addEventListener('keydown', function(event){
-    var option = event.target.closest('[role="option"]');
-    if(!option || !searchTranslationMenu.contains(option)) return;
-    var options = getSearchTranslationOptions();
-    var index = options.indexOf(option);
-    if(event.key === 'ArrowDown'){
-      event.preventDefault();
-      options[Math.min(index + 1, options.length - 1)].focus();
-    } else if(event.key === 'ArrowUp'){
-      event.preventDefault();
-      options[Math.max(index - 1, 0)].focus();
-    } else if(event.key === 'Home'){
-      event.preventDefault();
-      options[0].focus();
-    } else if(event.key === 'End'){
-      event.preventDefault();
-      options[options.length - 1].focus();
-    } else if(event.key === 'Enter' || event.key === ' '){
-      event.preventDefault();
-      selectSearchTranslationOption(option);
-    } else if(event.key === 'Escape'){
-      event.preventDefault();
-      closeSearchTranslationMenu(true);
-    }
-  });
-  document.addEventListener('click', function(event){
-    if(!event.target.closest('.search-translation-control')) closeSearchTranslationMenu();
-  });
-  document.addEventListener('keydown', function(event){
-    if(!trayOpen) return;
-    var tray = document.getElementById('tray');
-    if(event.key === 'Escape'){
-      event.preventDefault();
-      toggleTray();
-    } else if(event.key === 'Tab' && tray){
-      trapDialogFocus(event, tray);
-    }
-  });
-  var brandMark = document.getElementById('brandMark');
-  if(brandMark){
-    var pulseBrandMark = function(){
-      brandMark.classList.remove('brand-mark--pulse');
-      void brandMark.offsetWidth;
-      brandMark.classList.add('brand-mark--pulse');
-    };
-    brandMark.addEventListener('click', pulseBrandMark);
-    requestAnimationFrame(function(){ pulseBrandMark(); });
-  }
-  if(typeof populateTranslations === 'function') populateTranslations();
-  initializeBibleExperienceTriggers();
-  renderLeaf();
+if(appInitialized) return;
+appInitialized = true;
+saved = savedVersesStorage.load();
+var savedCount = document.getElementById('savedCount');
+if(savedCount) savedCount.textContent = saved.length;
+renderTray();
+var searchInput = document.getElementById('searchInput');
+var savedPill = document.querySelector('.saved-pill');
+if(savedPill) savedPill.addEventListener('click', toggleTray);
+var closeTrayButton = document.getElementById('closeTray');
+if(closeTrayButton) closeTrayButton.addEventListener('click', toggleTray);
+var refreshVerseButton = document.querySelector('.refresh-btn');
+if(refreshVerseButton) refreshVerseButton.addEventListener('click', nextVerse);
+var saveReaderButton=document.getElementById('readerSaveVerse');
+if(saveReaderButton) saveReaderButton.addEventListener('click',saveReaderVerse);
+var heroFavButton = document.getElementById('heroFav');
+if(heroFavButton) heroFavButton.addEventListener('click', toggleFavFromHero);
+var searchButton = document.querySelector('.search-box > button:not(#searchClear)');
+if(searchButton) searchButton.addEventListener('click', doSearch);
+var searchClearButton = document.getElementById('searchClear');
+if(searchClearButton) searchClearButton.addEventListener('click', clearSearch);
+if(searchInput) searchInput.addEventListener('keydown', function(event){
+if(event.key === 'Enter') doSearch();
+if(event.key === 'Escape') clearSearch();
+});
+if(searchInput) searchInput.addEventListener('input', function(){
+if(!searchInput.value.trim()) clearSearch();
+});
+populateSearchTranslations();
+var searchTranslation = document.getElementById('searchTranslation');
+if(searchTranslation) searchTranslation.addEventListener('change', function(){
+changeSearchTranslation(searchTranslation.value);
+});
+var searchTranslationToggle = document.getElementById('searchTranslationToggle');
+if(searchTranslationToggle){
+searchTranslationToggle.addEventListener('click', toggleSearchTranslationMenu);
+searchTranslationToggle.addEventListener('keydown', function(event){
+if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); toggleSearchTranslationMenu(); }
+if(event.key === 'Escape') closeSearchTranslationMenu(true);
+});
+}
+var searchTranslationMenu = document.getElementById('searchTranslationMenu');
+if(searchTranslationMenu) searchTranslationMenu.addEventListener('keydown', function(event){
+var option = event.target.closest('[role="option"]');
+if(!option || !searchTranslationMenu.contains(option)) return;
+var options = getSearchTranslationOptions();
+var index = options.indexOf(option);
+if(event.key === 'ArrowDown'){
+event.preventDefault();
+options[Math.min(index + 1, options.length - 1)].focus();
+} else if(event.key === 'ArrowUp'){
+event.preventDefault();
+options[Math.max(index - 1, 0)].focus();
+} else if(event.key === 'Home'){
+event.preventDefault();
+options[0].focus();
+} else if(event.key === 'End'){
+event.preventDefault();
+options[options.length - 1].focus();
+} else if(event.key === 'Enter' || event.key === ' '){
+event.preventDefault();
+selectSearchTranslationOption(option);
+} else if(event.key === 'Escape'){
+event.preventDefault();
+closeSearchTranslationMenu(true);
+}
+});
+document.addEventListener('click', function(event){
+if(!event.target.closest('.search-translation-control')) closeSearchTranslationMenu();
+});
+document.addEventListener('keydown', function(event){
+if(!trayOpen) return;
+var tray = document.getElementById('tray');
+if(event.key === 'Escape'){
+event.preventDefault();
+toggleTray();
+} else if(event.key === 'Tab' && tray){
+trapDialogFocus(event, tray);
+}
+});
+var brandMark = document.getElementById('brandMark');
+if(brandMark){
+var pulseBrandMark = function(){
+brandMark.classList.remove('brand-mark--pulse');
+void brandMark.offsetWidth;
+brandMark.classList.add('brand-mark--pulse');
+};
+brandMark.addEventListener('click', pulseBrandMark);
+requestAnimationFrame(function(){ pulseBrandMark(); });
+}
+if(typeof populateTranslations === 'function') populateTranslations();
+initializeBibleExperienceTriggers();
+renderLeaf();
 }
 
 initializeGoogleFonts();

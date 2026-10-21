@@ -2,7 +2,7 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-47';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-48';
 const PREVIOUS_SHELL_CACHE = CACHE_PREFIX + 'compact-reader-24';
 const VENDOR_PATH = '/js/vendor/supabase-js-2.117.0.min.js';
 const VENDOR_CACHE_PREFIX = 'god4-auth-vendor-';
@@ -31,6 +31,8 @@ const SHELL_ASSETS = [
   '/css/components.css',
   '/css/companion.css',
   '/css/account.css?v=20260924-1',
+  '/css/theme.css',
+  '/js/theme.js',
   '/js/bible/library.js',
   '/js/bible/translation-manifest.js',
   '/js/bible/canon.js',

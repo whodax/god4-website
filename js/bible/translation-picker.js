@@ -179,6 +179,134 @@ var ReaderTranslationPicker = window.ReaderTranslationPicker || (function(){
   return {initialize:initialize, sync:sync, isOpen:function(){ return !!document.querySelector('#view-reader .reader-translation-picker[open]'); }};
 })();
 
+var ThemedSelectPicker = window.ThemedSelectPicker || (function(){
+  var dialog, choices, search, title, active, origin, snapshot, pressed;
+  var bindings = new WeakMap();
+  var waitingForBlur = new WeakSet();
+  function clearPressed(){
+    if(pressed) pressed.removeAttribute('data-pressed');
+    pressed = null;
+  }
+  function close(){
+    clearPressed();
+    if(dialog && dialog.open) dialog.close();
+    if(origin){
+      origin.setAttribute('aria-expanded','false');
+      var target = origin;
+      if(!target.isConnected && active && active.dataset.compareIndex !== undefined){
+        target = document.querySelector('[data-themed-select="compare-edition-'+active.dataset.compareIndex+'"]');
+      }
+      if(target && target.isConnected && target.getClientRects().length) target.focus({preventScroll:true});
+    }
+  }
+  function signature(select){
+    var context = select.closest('#view-compare') ? ['compareBook','compareChapter','compareVerse'].map(function(id){return document.getElementById(id).value;}) : /^readAloud/.test(select.id) ? [] : [currentTranslation,currentBook,currentChapter,translationChangeRequest];
+    return JSON.stringify([context,select.value,select.disabled,Array.from(select.options).map(function(option){return [option.value,option.textContent,option.disabled];})]);
+  }
+  function render(){
+    choices.replaceChildren();
+    Array.from(active.options).filter(function(option){return !(active.id==='verseSelect' && !option.value) && option.textContent.toLocaleLowerCase().includes(search.value.toLocaleLowerCase());}).forEach(function(option){
+      var button = document.createElement('button');
+      button.type = 'button'; button.textContent = option.textContent;
+      button.dataset.optionValue = option.value; button.disabled = option.disabled;
+      button.setAttribute('aria-pressed',String(option.value === active.value));
+      if(!option.value && dialog.dataset.numeric === 'true') button.className = 'picker-whole';
+      choices.appendChild(button);
+    });
+    dialog.querySelector('[role="status"]').textContent = choices.children.length ? '' : 'No matching choices.';
+  }
+  function create(){
+    dialog = document.createElement('dialog');
+    dialog.id = 'themedSelectPicker';
+    dialog.className = 'reader-translation-picker themed-select-picker';
+    dialog.setAttribute('aria-labelledby','themedSelectTitle');
+    dialog.innerHTML = '<div class="reader-translation-heading"><h2 id="themedSelectTitle"></h2><button type="button" aria-label="Close selection picker">Close</button></div><label for="themedSelectSearch">Find a choice</label><input id="themedSelectSearch" class="picker-search" type="search" autocomplete="off"><p role="status" aria-live="polite"></p><div class="reader-translation-options picker-options" role="group"></div>';
+    title = dialog.querySelector('h2'); choices = dialog.querySelector('[role="group"]'); search = dialog.querySelector('input');
+    dialog.querySelector('button').addEventListener('click',close);
+    dialog.addEventListener('cancel',function(event){event.preventDefault();close();});
+    search.addEventListener('input',render);
+    dialog.addEventListener('keydown',function(event){
+      event.stopPropagation();
+      var buttons = Array.from(choices.querySelectorAll('button:not([disabled])'));
+      var index = buttons.indexOf(document.activeElement), next;
+      if(index >= 0){
+        if(event.key === 'ArrowDown' || event.key === 'ArrowRight') next = (index+1)%buttons.length;
+        if(event.key === 'ArrowUp' || event.key === 'ArrowLeft') next = (index+buttons.length-1)%buttons.length;
+        if(event.key === 'Home') next = 0;
+        if(event.key === 'End') next = buttons.length-1;
+      }
+      if(next !== undefined){event.preventDefault();buttons[next].focus();buttons[next].scrollIntoView({block:'nearest'});}
+      if(event.key === 'Tab'){
+        var controls = Array.from(dialog.querySelectorAll('button:not([disabled]),input:not([hidden])'));
+        var first = controls[0], last = controls[controls.length-1];
+        if(event.shiftKey && document.activeElement === first || !event.shiftKey && document.activeElement === last){event.preventDefault();(event.shiftKey ? last : first).focus();}
+      }
+    });
+    choices.addEventListener('pointerdown',function(event){clearPressed();pressed = event.target.closest('button');if(pressed) pressed.dataset.pressed = 'true';});
+    dialog.addEventListener('pointerup',clearPressed,true);
+    dialog.addEventListener('pointercancel',clearPressed,true);
+    choices.addEventListener('scroll',clearPressed);
+    choices.addEventListener('click',function(event){
+      var button = event.target.closest('[data-option-value]');
+      if(!button || button.disabled) return;
+      if(!active.isConnected || signature(active) !== snapshot){close();return;}
+      var select = active, changed = select.value !== button.dataset.optionValue;
+      close(); select.value = button.dataset.optionValue;
+      if(changed) select.dispatchEvent(new Event('change',{bubbles:true}));
+      sync(select);
+    });
+  }
+  function sync(select){
+    var binding = bindings.get(select);
+    if(!binding) return;
+    var option = select.options[select.selectedIndex];
+    binding.textContent = option ? option.textContent : 'Unavailable';
+    binding.disabled = select.disabled || !select.options.length;
+    binding.setAttribute('aria-label',label(select)+': '+binding.textContent);
+  }
+  function label(select){
+    var labels = {compareBook:'Book',compareChapter:'Chapter',compareVerse:'Verse',readerTranslation:'Bible translation',bookSelect:'Book',chapterSelect:'Chapter',verseSelect:'Verse',readAloudVoice:'Voice',readAloudSpeed:'Speed'};
+    return labels[select.id] || select.getAttribute('aria-label') || 'Choose';
+  }
+  function open(select){
+    if(select.disabled || !select.options.length || document.querySelector('dialog[open]')) return;
+    if(!dialog) create();
+    active = select; origin = bindings.get(select) || select; snapshot = signature(select);
+    var numeric = /^(compareChapter|compareVerse|chapterSelect|verseSelect)$/.test(select.id);
+    dialog.dataset.numeric = String(numeric);
+    title.textContent = label(select); search.value = '';
+    search.hidden = numeric; dialog.querySelector('label').hidden = numeric;
+    choices.setAttribute('aria-label',label(select)+' choices');
+    var parent = select.closest('#view-reader') || document.body;
+    if(dialog.parentElement !== parent) parent.appendChild(dialog);
+    render(); dialog.showModal(); origin.setAttribute('aria-expanded','true');
+    origin.setAttribute('aria-haspopup','dialog');origin.setAttribute('aria-controls','themedSelectPicker');
+    var selected = choices.querySelector('[aria-pressed="true"]:not([disabled])') || choices.querySelector('button:not([disabled])');
+    if(selected){selected.focus({preventScroll:true});selected.scrollIntoView({block:'nearest'});}
+  }
+  function bind(select){
+    if(!select || typeof HTMLDialogElement === 'undefined' || !HTMLDialogElement.prototype.showModal) return;
+    if(bindings.has(select)){sync(select);return;}
+    if(document.activeElement === select){
+      if(!waitingForBlur.has(select)){
+        waitingForBlur.add(select);
+        select.addEventListener('blur',function(){waitingForBlur.delete(select);bind(select);},{once:true});
+      }
+      return;
+    }
+    var trigger = document.createElement('button');
+    trigger.type = 'button'; trigger.className = 'themed-select-trigger';
+    trigger.dataset.themedSelect = select.id || 'compare-edition-'+select.dataset.compareIndex;
+    trigger.setAttribute('aria-haspopup','dialog'); trigger.setAttribute('aria-controls','themedSelectPicker');trigger.setAttribute('aria-expanded','false');
+    select.after(trigger); select.hidden = true;
+    bindings.set(select,trigger);
+    trigger.addEventListener('click',function(){open(select);});
+    sync(select);
+  }
+  document.addEventListener('change',function(event){if(bindings.has(event.target)) sync(event.target);});
+  return {bind:bind,open:open,sync:sync};
+})();
+
 var ReaderOptions = window.ReaderOptions || (function(){
   var initialized=false, media, feedback, dialog, choices, heading, activeSelect, returnTarget, pressed, passage, confirmed;
   var saveBatch=new Set();
@@ -219,9 +347,9 @@ var ReaderOptions = window.ReaderOptions || (function(){
     controls.forEach(function(control){
       var option=control.select.options[control.select.selectedIndex];
       var emptyVerse=control.select.id==='verseSelect' && !(option && option.value);
-      var label=labels[control.select.id]+': '+(emptyVerse ? 'None' : option ? option.textContent : 'Unavailable');
+      var label=emptyVerse ? 'Verse' : labels[control.select.id]+': '+(option ? option.textContent : 'Unavailable');
       if(control.button.textContent!==label) control.button.textContent=label;
-      control.button.setAttribute('aria-label',emptyVerse ? 'Verse: Whole chapter (no selected verse)' : label);
+      control.button.setAttribute('aria-label',emptyVerse ? 'Verse, no verse selected' : label);
       control.button.disabled=control.select.disabled || !control.select.options.length;
     });
     if(dialog && dialog.open) choices.querySelectorAll('[data-option-value]').forEach(function(option){
@@ -303,11 +431,12 @@ var ReaderOptions = window.ReaderOptions || (function(){
     if(!dialog) createDialog();
     if(dialog.open) return;
     activeSelect=select;returnTarget=target;
+    dialog.dataset.numeric=String(/^(chapterSelect|verseSelect)$/.test(select.id));
     passage=JSON.stringify([currentTranslation,currentBook,currentChapter,translationChangeRequest]);
     heading.textContent=numberedOnly?'Choose a verse to save':labels[select.id];choices.setAttribute('aria-label',labels[select.id]+' choices');
     choices.replaceChildren();
     Array.from(select.options).forEach(function(option){
-      if(numberedOnly && !option.value) return;
+      if(select.id==='verseSelect' && !option.value) return;
       var button=document.createElement('button');
       button.type='button';button.dataset.optionValue=option.value;button.disabled=option.disabled;
       var check=document.createElement('span');check.className='reader-translation-check';

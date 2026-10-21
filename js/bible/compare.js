@@ -338,6 +338,8 @@ async function loadCompare(positionAfterRender){
   updateCompareNavigation();
   var columns = [];
   for(var index = 0; index < compareState.count; index++) columns.push(renderCompareColumn(compareState.selections[index], index));
+  var focused = document.activeElement;
+  var focusKey = focused && focused.dataset.themedSelect;
   grid.innerHTML = columns.join('');
   grid.classList.remove('compare-grid--3', 'compare-grid--4');
   if(compareState.count > 2) grid.classList.add('compare-grid--' + compareState.count);
@@ -355,6 +357,15 @@ async function loadCompare(positionAfterRender){
       loadCompare();
     });
   });
+  function enhance(){
+    document.querySelectorAll('#view-compare select').forEach(ThemedSelectPicker.bind);
+    if(focusKey && !focused.isConnected && document.activeElement === document.body){
+      var replacement = document.querySelector('[data-themed-select="'+focusKey+'"]');
+      if(replacement) replacement.focus({preventScroll:true});
+    }
+  }
+  if(window.ThemedSelectPicker) enhance();
+  else ReaderTranslationLoader.ensure().then(enhance).catch(function(){});
   if(positionAfterRender === true) scrollCompareStartIntoView();
 }
 

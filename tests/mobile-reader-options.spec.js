@@ -42,7 +42,11 @@ for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const
     const dialog=page.getByRole('dialog',{name,exact:true});await expect(dialog).toBeVisible();
     await expect(dialog).toHaveCSS('background-color','rgb(247, 241, 222)');
     await expect(dialog).toHaveCSS('color','rgb(27, 42, 68)');
-    await expect(dialog.locator('[aria-pressed="true"]')).toBeFocused();
+    if(id==='verseSelect' && await page.locator('#verseSelect').inputValue()===''){
+      await expect(dialog.locator('[aria-pressed="true"]')).toHaveCount(0);
+      await expect(option(page,'1')).toBeFocused();
+      await expect(page.locator('#verseSelect')).toHaveValue('');
+    } else await expect(dialog.locator('[aria-pressed="true"]')).toBeFocused();
     await option(page,value).scrollIntoViewIfNeeded();await option(page,value).click();
     await expect(dialog).not.toBeVisible();await expect(button).toBeFocused();
     await expect(page.locator('#'+id)).toHaveValue(value);
@@ -131,8 +135,10 @@ test('desktop retains native controls and mobile keyboard focus is visible and t
   for(const id of ['bookSelect','chapterSelect','verseSelect','readAloudVoice','readAloudSpeed']){await expect(page.locator('#'+id)).toBeVisible();await expect(trigger(page,id)).toBeHidden();}
   await page.setViewportSize({width:320,height:844});
   await trigger(page,'verseSelect').focus();await page.keyboard.press('Enter');
-  await page.keyboard.press('Home');await expect(option(page,'')).toBeFocused();
-  await page.keyboard.press('ArrowDown');await expect(option(page,'1')).toBeFocused();
+  await page.keyboard.press('Home');await expect(option(page,'1')).toBeFocused();
+  await expect(option(page,'')).toHaveCount(0);
+  await page.keyboard.press('ArrowDown');await expect(option(page,'2')).toBeFocused();
+  await page.keyboard.press('ArrowUp');await expect(option(page,'1')).toBeFocused();
   await expect(option(page,'1')).toHaveCSS('outline-color','rgb(27, 42, 68)');
   await expect(option(page,'1')).toHaveCSS('outline-width','2px');
   await page.keyboard.press('End');await page.keyboard.press('Tab');

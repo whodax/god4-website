@@ -1,4 +1,4 @@
-const {selectReaderOption}=require('./reader-navigation-test-helper');
+const {selectReaderOption,selectCompareOption}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 const fs=require('fs'),path=require('path'),{execFileSync}=require('child_process');
 const root=path.resolve(__dirname,'..');
@@ -93,15 +93,15 @@ test('late data render remains hidden with no Reader scrolling or focus loss',as
  await page.evaluate(()=>releaseData.forEach(fn=>fn()));await rendered(page);await expect(page.locator('#view-reader')).toHaveClass(/active/);await expect(page.locator('#searchInput')).toBeFocused();expect(await page.evaluate(()=>scrollY)).toBe(before);
 });
 test('edition changes preserve independently navigated Compare reference and translation slots',async({page})=>{
- await open(page);await tab(page).click();await rendered(page);await page.locator('#compareChapter').selectOption('3');await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3');await count(page,3).click();await rendered(page,3);await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3');
- await page.locator('[data-compare-index="2"]').selectOption('kjv');await count(page,4).click();await rendered(page,4);await expect(page.locator('[data-compare-index="2"]')).toHaveValue('kjv');expect(new Set(await page.locator('[data-compare-index]').evaluateAll(a=>a.map(e=>e.value))).size).toBe(4);
+ await open(page);await tab(page).click();await rendered(page);await selectCompareOption(page.locator('#compareChapter'),'3');await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3');await count(page,3).click();await rendered(page,3);await expect(page.locator('#compareSummary')).toHaveText('Comparing John 3');
+ await selectCompareOption(page.locator('[data-compare-index="2"]'),'kjv');await count(page,4).click();await rendered(page,4);await expect(page.locator('[data-compare-index="2"]')).toHaveValue('kjv');expect(new Set(await page.locator('[data-compare-index]').evaluateAll(a=>a.map(e=>e.value))).size).toBe(4);
  await page.reload();await tab(page).click();await rendered(page,4);await expect(page.locator('[data-compare-index="2"]')).toHaveValue('kjv');
 });
 test('missing selected translation shows existing unavailable passage and retries',async({page})=>{
  let fail=true;await page.route('**/js/bible/asv.js?*',r=>fail?r.abort():r.continue());await open(page);await tab(page).click();await rendered(page);await expect(page.locator('.compare-col').nth(1)).toContainText('Passage unavailable in this translation.');fail=false;await tab(page).click();await expect(page.locator('.compare-col').nth(1).locator('.vnum')).toHaveCount(51);
 });
 for(const width of [320,390])test('mobile stacking and keyboard header clearance '+width,async({page})=>{
- await page.setViewportSize({width,height:844});await open(page);await page.evaluate(()=>navigateReaderToPassage('john',1,30));await tab(page).press('Enter');await rendered(page);const select=page.locator('[data-compare-index="1"]');await select.focus();await select.evaluate(e=>e.scrollIntoView({block:'start',behavior:'instant'}));await expect(select).toBeFocused();
+ await page.setViewportSize({width,height:844});await open(page);await page.evaluate(()=>navigateReaderToPassage('john',1,30));await tab(page).press('Enter');await rendered(page);const select=page.locator('[data-themed-select="compare-edition-1"]');await expect(select).toBeVisible();await select.focus();await select.evaluate(e=>e.scrollIntoView({block:'start',behavior:'instant'}));await expect(select).toBeFocused();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect((await select.boundingBox()).y).toBeGreaterThanOrEqual(await page.evaluate(()=>document.querySelector('.bs-nav').getBoundingClientRect().bottom)-1);
 });
 test('external classic runtime obeys enforcing CSP and leaves headers unchanged',async({page})=>{
@@ -112,7 +112,7 @@ test.describe('installed offline Compare',()=>{
  test.use({serviceWorkers:'allow'});
  async function install(p){await p.goto('/');await p.evaluate(async()=>{const r=await navigator.serviceWorker.ready,w=r.active;if(w.state!=='activated')await new Promise(resolve=>w.addEventListener('statechange',()=>{if(w.state==='activated')resolve()}))});await p.reload();await p.evaluate(()=>initializeBibleExperience());}
  test('unused runtime first activates offline; retained WEB and unavailable ASV remain distinct',async({page,context})=>{
-  await install(page);expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined');const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-47')).keys()).map(r=>new URL(r.url).pathname));expect(assets).toHaveLength(47);expect(assets).toContain('/js/bible/translation-picker.js');expect(assets).toContain('/js/word-study/alignment.js');expect(assets).toContain('/js/bible/compare-loader.js');expect(assets).toContain('/js/bible/compare.js');
+  await install(page);expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined');const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-48')).keys()).map(r=>new URL(r.url).pathname));expect(assets).toHaveLength(49);expect(assets).toContain('/js/bible/translation-picker.js');expect(assets).toContain('/js/word-study/alignment.js');expect(assets).toContain('/js/bible/compare-loader.js');expect(assets).toContain('/js/bible/compare.js');
   const responses=[];page.on('response',r=>{if(r.url().endsWith('/bible/compare.js'))responses.push(r.fromServiceWorker())});await context.setOffline(true);await tab(page).click();await rendered(page);expect(responses).toEqual([true]);await expect(page.locator('.compare-col').first().locator('.vnum')).toHaveCount(51);await expect(page.locator('.compare-col').nth(1)).toContainText('Passage unavailable in this translation.');
  });
  test('warm Compare and offline reload preserve retained translations and lazy runtime',async({page,context})=>{

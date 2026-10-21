@@ -483,8 +483,9 @@
   .scripture-picker::backdrop{background:var(--line);}
   .picker-header{display:flex;align-items:center;justify-content:space-between;gap:12px;}
   .picker-header h2{margin:0;font-size:24px;}
-  .picker-layout{display:grid;grid-template-columns:minmax(190px,1fr) minmax(0,2fr);gap:20px;}
+  .picker-layout{display:grid;grid-template-columns:minmax(190px,1fr) minmax(0,2fr);gap:20px;align-items:start;}
   .picker-books,.picker-detail{min-width:0;}
+  .picker-books{align-self:stretch;display:flex;flex-direction:column;}
   .picker-books h3,.picker-detail h3{margin:8px 0 12px;}
   .picker-detail > button[data-level="chapters"]{display:none;}
   .scripture-picker button,.scripture-picker input{box-sizing:border-box;min-height:44px;min-width:44px;padding:8px;border:1px solid var(--line);border-radius:2px;background:var(--vellum);color:var(--ink);font:13px 'Inter','Inter Fallback',sans-serif;}
@@ -492,12 +493,24 @@
   .scripture-picker :focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
   .scripture-picker [aria-current="true"]{background:var(--highlight);border-color:var(--gold);font-weight:700;text-decoration:underline;}
   .picker-books input{width:100%;margin:8px 0;}
-  .picker-book-list{display:grid;gap:6px;max-height:52dvh;overflow:auto;padding:4px;}
+  .picker-book-list{display:grid;gap:6px;max-height:52dvh;min-height:44px;flex:1;contain:size;overflow:auto;padding:4px;overscroll-behavior:contain;}
   .picker-book-list button{text-align:left;overflow-wrap:anywhere;}
-  .picker-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:8px;padding:4px;max-height:58dvh;overflow-y:auto;}
+  .picker-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:8px;padding:4px;max-height:58dvh;overflow-y:auto;align-content:start;overscroll-behavior:contain;}
   .picker-options button{min-height:52px;font-size:14px;}
   .picker-whole{grid-column:1 / -1;}
   .picker-status:empty{display:none;}
+  .themed-select-trigger{box-sizing:border-box;min-width:0;max-width:100%;min-height:44px;padding:8px;border:1px solid var(--line);border-radius:2px;background:var(--vellum-card);color:var(--ink);font:13px/1.4 'Inter','Inter Fallback',sans-serif;text-align:left;overflow-wrap:anywhere;cursor:pointer;}
+  .themed-select-trigger:focus-visible,.scripture-picker :focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  .compare-col-header > .themed-select-trigger{width:100%;}
+  .themed-select-picker .picker-search{box-sizing:border-box;width:100%;min-height:44px;padding:8px;border:1px solid var(--line);background:var(--vellum);color:var(--ink);font:inherit;}
+  .themed-select-picker .picker-search[hidden]{display:none;}
+  .themed-select-picker .picker-options{flex:0 1 auto;min-height:0;max-height:none;}
+  .themed-select-picker .picker-options button{justify-content:center;text-align:center;}
+  .themed-select-picker:not([data-numeric="true"]) .picker-options{grid-template-columns:minmax(0,1fr);}
+  .themed-select-picker:not([data-numeric="true"]) .picker-options button{justify-content:flex-start;text-align:left;}
+  .reader-options-picker[data-numeric="true"] .reader-translation-options{grid-template-columns:repeat(auto-fill,minmax(44px,1fr));align-content:start;}
+  .reader-options-picker[data-numeric="true"] .reader-translation-options button{justify-content:center;}
+  .reader-options-picker[data-numeric="true"] .reader-translation-options .reader-translation-check{display:none;}
   .scripture-picker[data-step="loading"] .picker-layout{display:none;}
   @media(max-width:620px){
     .reader-toolbar > #readerReferenceNavigation{grid-row:1;grid-column:1 / -1;}
@@ -524,7 +537,7 @@
     .picker-layout{display:block;}
     .scripture-picker[data-step="books"] .picker-detail{display:none;}
     .scripture-picker[data-step="chapters"] .picker-books,.scripture-picker[data-step="verses"] .picker-books{display:none;}
-    .picker-book-list{max-height:60dvh;}
+    .picker-book-list{max-height:60dvh;contain:none;flex:none;}
   }
 
   /* The Reader itself is the single fullscreen scroll surface. */
