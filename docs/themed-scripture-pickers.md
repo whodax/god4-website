@@ -4,6 +4,16 @@ This stays on `codex/feature-dark-mode` in the isolated Dark Mode worktree. PR #
 
 ## Findings and correction
 
+### Android Whole Chapter row correction
+
+Reader Options omitted the shared `picker-whole` class on its empty Verse option. Its numeric grid consequently gave the label a single narrow cell; at 320px its right edge was 201.61px short of the grid edge. The lazy Reader Options renderer now assigns that existing class only to the Whole Chapter Verse option. The existing `grid-column:1 / -1` rule supplies the entire first row without changing CSS, theme tokens, numbered targets or the four-row Options layout. Compare and Choose Scripture already assign this class and require no production changes.
+
+`whole-chapter-picker.spec.js` checks actual content-edge alignment, a single text line, 44px targets, numbered rows below Whole Chapter, selection/highlighting, Escape/focus return, scrolling and guided Save exclusion at 320/360/390/430px in explicit Light and Blue Dark themes (with opposite OS schemes). Reader is exercised normally and fullscreen, and Compare/Choose Scripture are checked in the same matrix. Reader row widths are 248/288/318/358px respectively, all 44px high. Physical Android/TalkBack acceptance remains required; Chromium touch emulation does not certify native assistive technology.
+
+This is a correction within the unmerged cache-48 release candidate: no service-worker source, precache list, Bible data or manifests change. Use a fresh hash-specific preview origin for acceptance rather than an older cached branch-alias installation.
+
+Focused correction validation: **163 browser checks passed** (new Whole Chapter matrix 8, Reader Options 27, four-row layout 16, themed pickers 26, Compare 32, installed upgrades 24, PWA 17, offline management 12, eager budget 1), sequentially with one worker and zero retries. Four read-only Isaiah/protected-shard checks also pass, including all 66 Isaiah hashes. Eager scripts remain 290,587 canonical-LF bytes against the unchanged 290,914-byte historical baseline. Assets, JavaScript syntax and whitespace checks pass. The pre-fix geometry regression failed as expected; no post-fix failures occurred.
+
 The desktop Scripture grid stretched its detail section to the Books column's intrinsic height. The long Books list therefore dictated dialog height even for Obadiah. This was not missing Scripture. Columns now align independently; Books uses size containment, a one-target minimum and an independent viewport-limited scrollbar. Chapters/verses determine their natural content height up to their existing scrolling limit. Mobile retains Books → Chapters → Verses and Back navigation. No book-specific heights or hidden choices are used.
 
 Compare's reference and dynamic edition selectors used native popups. Those surfaces are browser/OS owned; `color-scheme` alone cannot guarantee website colors. Existing selects remain the value/change-handler source of truth and native failure fallback. On successful optional runtime loading, themed buttons open one shared modal with searchable names, numbered chapter/verse grids, Whole chapter, selected-state buttons and visible focus. Choices come directly from existing options, without remapping Catholic numbering or changing unavailable-passage rules.

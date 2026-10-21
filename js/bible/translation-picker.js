@@ -439,6 +439,7 @@ var ReaderOptions = window.ReaderOptions || (function(){
       if(numberedOnly && !option.value) return;
       var button=document.createElement('button');
       button.type='button';button.dataset.optionValue=option.value;button.disabled=option.disabled;
+      if(!option.value && select.id==='verseSelect') button.className='picker-whole';
       var check=document.createElement('span');check.className='reader-translation-check';
       check.setAttribute('aria-hidden','true');check.textContent='✓';
       button.append(check,document.createTextNode(option.value ? option.textContent : 'Whole chapter (no selected verse)'));
