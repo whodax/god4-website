@@ -34,6 +34,8 @@ Named native modal dialogs contain actual buttons with pressed selection states,
 
 The historical eager byte budget is unchanged. Leading indentation is removed only from the already-edited Scripture picker and Reader controls/loader tail to fund activation/keyboard wiring. Beyond explicit new handlers these hunks are whitespace-only: no executable tokens, data or features are removed. The shared modal stays lazy.
 
+The live preview enforces the existing CSP. The enlarged-text test therefore inserts its unchanged 200%/20px test rules through the existing same-origin stylesheet's CSSOM, rather than injecting an inline style tag. The first live run correctly rejected that inline test setup (19 cases passed before the harness failure); the corrected reflow check passed against the enforcing live policy with unchanged geometry assertions. No CSP bypass or application styling change was introduced.
+
 ## Offline release strategy
 
 Shell **48**, its **49** exact assets and worker code remain unchanged. Cache 48 is the existing unmerged PR #110 candidate, not a released generation; only already-precached asset bodies change. Do not reuse generation 48 for a post-release update. Production/PR #109 users upgrade from 43–47 to final 48 through the existing accepted-update prompt. Tests compare delivered CSS, Reader, Scripture-picker, Compare and lazy-picker hashes against current source, with offline reload, retained WEB/DRA, saved data, previous-shell cleanup and failed-install retry. No activation policy, Bible cache or visitor data changes.

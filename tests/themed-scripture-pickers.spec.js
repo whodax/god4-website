@@ -119,7 +119,10 @@ test('desktop Reader native-looking controls use themed dialogs without changing
 test('fullscreen mobile, enlarged text and current Reader picker choices remain reachable',async({page})=>{
   await ready(page,320,'dark');await page.locator('#fullscreenBtn').click();await page.locator('#readerMoreTrigger').click();
   await page.evaluate(()=>ReaderTranslationLoader.ensure());
-  await page.addStyleTag({content:'html{font-size:200%}button,input{font-size:20px!important}'});
+  await page.evaluate(()=>{
+    const sheet=Array.from(document.styleSheets).find(item=>item.href && new URL(item.href).pathname==='/css/companion.css');
+    for(const rule of ['html{font-size:200%}','button,input{font-size:20px!important}'])sheet.insertRule(rule,sheet.cssRules.length);
+  });
   await page.locator('[data-reader-select="chapterSelect"]').click();
   await expect(page.locator('#readerOptionsPicker')).toBeVisible();
   await page.locator('#readerOptionsPicker [data-option-value="21"]').click();
