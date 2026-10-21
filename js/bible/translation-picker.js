@@ -205,7 +205,7 @@ var ThemedSelectPicker = window.ThemedSelectPicker || (function(){
   }
   function render(){
     choices.replaceChildren();
-    Array.from(active.options).filter(function(option){return option.textContent.toLocaleLowerCase().includes(search.value.toLocaleLowerCase());}).forEach(function(option){
+    Array.from(active.options).filter(function(option){return !(active.id==='verseSelect' && !option.value) && option.textContent.toLocaleLowerCase().includes(search.value.toLocaleLowerCase());}).forEach(function(option){
       var button = document.createElement('button');
       button.type = 'button'; button.textContent = option.textContent;
       button.dataset.optionValue = option.value; button.disabled = option.disabled;
@@ -347,9 +347,9 @@ var ReaderOptions = window.ReaderOptions || (function(){
     controls.forEach(function(control){
       var option=control.select.options[control.select.selectedIndex];
       var emptyVerse=control.select.id==='verseSelect' && !(option && option.value);
-      var label=labels[control.select.id]+': '+(emptyVerse ? 'None' : option ? option.textContent : 'Unavailable');
+      var label=emptyVerse ? 'Verse' : labels[control.select.id]+': '+(option ? option.textContent : 'Unavailable');
       if(control.button.textContent!==label) control.button.textContent=label;
-      control.button.setAttribute('aria-label',emptyVerse ? 'Verse: Whole chapter (no selected verse)' : label);
+      control.button.setAttribute('aria-label',emptyVerse ? 'Verse, no verse selected' : label);
       control.button.disabled=control.select.disabled || !control.select.options.length;
     });
     if(dialog && dialog.open) choices.querySelectorAll('[data-option-value]').forEach(function(option){
@@ -436,10 +436,9 @@ var ReaderOptions = window.ReaderOptions || (function(){
     heading.textContent=numberedOnly?'Choose a verse to save':labels[select.id];choices.setAttribute('aria-label',labels[select.id]+' choices');
     choices.replaceChildren();
     Array.from(select.options).forEach(function(option){
-      if(numberedOnly && !option.value) return;
+      if(select.id==='verseSelect' && !option.value) return;
       var button=document.createElement('button');
       button.type='button';button.dataset.optionValue=option.value;button.disabled=option.disabled;
-      if(!option.value && select.id==='verseSelect') button.className='picker-whole';
       var check=document.createElement('span');check.className='reader-translation-check';
       check.setAttribute('aria-hidden','true');check.textContent='✓';
       button.append(check,document.createTextNode(option.value ? option.textContent : 'Whole chapter (no selected verse)'));

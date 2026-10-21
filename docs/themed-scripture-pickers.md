@@ -4,7 +4,21 @@ This stays on `codex/feature-dark-mode` in the isolated Dark Mode worktree. PR #
 
 ## Findings and correction
 
-### Android Whole Chapter row correction
+### Reader Verse simplification — current behavior
+
+Reader Options and the desktop Reader themed Verse dialog now expose only valid numbered verse choices, starting at 1. The backing select retains its empty `Verse` option and the existing null selection state for startup, whole-chapter navigation and playback. Opening the custom dialog focuses the first valid number without selecting it. The mobile trigger displays `Verse` with the accessible name `Verse, no verse selected`; selected verses retain their numbered label. Native failure fallback keeps its neutral placeholder and all numbered choices.
+
+The filtering is scoped to `verseSelect` in the existing lazy runtime; Compare and main Choose Scripture retain their working full-width Whole Chapter choices. No Reader navigation, speech, four-row layout, hide/show logic, CSS, Bible data, manifests or service worker is changed. Cache 48 and its 49 assets remain the unmerged release candidate; use the new hash-specific preview for acceptance.
+
+The previous Reader Whole Chapter test is replaced, not deleted: the matrix now covers 320/360/390/430px and desktop, explicit Light/Blue Dark and normal/fullscreen; 1 → 21 → 1 selection, reference/highlight/focus, no-selection opening, chapter/book resets, chapter-start geometry, dialog scroll/Escape and scroll stability. Compare/Choose Scripture retain actual full-grid geometry and Whole Chapter selection assertions. Guided Save remains numbered-only, never saves on selection alone, and requires explicit Save. Additional failed-runtime cases cover mobile/desktop in both themes; native/cloud chapter playback explicitly checks that starting at verse 1 does not select it. Saved persistence/removal and existing speech/Reader/offline behavior are covered by related suites.
+
+The legacy voice-boundary regression now enters whole-chapter mode through main Choose Scripture rather than invoking the removed Reader choice. The mobile Home-key regression now expects verse 1, verifies the empty choice is absent, and retains arrow-key, visible-focus, End, Tab, Escape and no-save assertions. No performance or integrity assertion is relaxed. Physical Android/TalkBack/VoiceOver and momentum behavior remain manual acceptance items.
+
+Validation for this simplification: **377 browser checks passed**, sequentially with one worker and zero retries: numbered-only/fallback matrix 14; legacy voice boundary 1; native/cloud speech 47; Reader Options 27; four-row Options 16; themed pickers 26; Reader references 14; fullscreen 22; KJV browser 13; Catholic labels 39; mobile controls 42; empty-source coordinates 20; installed upgrades 24; PWA 17; offline management 12; Word Study loader/performance 43. **38 Node checks passed** (Catholic 26, KJV 8, read-only Isaiah/protected-shard checks 4), with no skips. All 66 Isaiah hashes, asset integrity, modified JavaScript syntax and `git diff --check` pass. Eager JavaScript remains **290,587 bytes** against the unchanged **290,914-byte** baseline.
+
+Two development test failures are retained in ignored logs: the new matrix initially read a CSS-hidden, aria-hidden checkmark via `textContent` rather than visible `innerText`; an existing Options test assumed every picker opened with a pressed choice. The latter now explicitly requires no pressed choice and first-number focus when Verse is unset. Their final complete suites pass; no production failure or automatic retry remains. Memory guards did not trigger.
+
+### Android Whole Chapter row correction — historical, superseded for Reader only
 
 Reader Options omitted the shared `picker-whole` class on its empty Verse option. Its numeric grid consequently gave the label a single narrow cell; at 320px its right edge was 201.61px short of the grid edge. The lazy Reader Options renderer now assigns that existing class only to the Whole Chapter Verse option. The existing `grid-column:1 / -1` rule supplies the entire first row without changing CSS, theme tokens, numbered targets or the four-row Options layout. Compare and Choose Scripture already assign this class and require no production changes.
 

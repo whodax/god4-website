@@ -1905,7 +1905,11 @@ test('Voice Commands respects first and final verse boundaries without crossing 
   const verse = page.locator('#verseSelect');
 
   await openReaderMore(page);
-  await selectReaderOption(verse,'');
+  await page.locator('#scripturePickerTrigger').click();
+  await page.locator('#scripturePicker [data-picker-action="book"][data-value="john"]').click();
+  await page.locator('#scripturePicker [data-picker-action="chapter"][data-value="1"]').click();
+  await page.locator('#scripturePicker .picker-whole').click();
+  await expect(verse).toHaveValue('');
   await page.evaluate(() => handleVoiceCommand('next verse'));
   await expect(verse).toHaveValue('1');
   await expect(chapter).toHaveValue('1');
