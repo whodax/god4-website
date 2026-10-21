@@ -31,6 +31,37 @@ async function geometry(dialog){
       content:last.bottom-first.top,small:buttons.some(button=>{const box=button.getBoundingClientRect();return box.width<44||box.height<44;})};
   });
 }
+// Short desktop chapter grids must leave multiple Books rows visible and scrollable.
+for(const width of [768,1280])for(const theme of ['light','dark'])
+test(`${width}px ${theme}: desktop Scripture Books list keeps multiple scrollable rows`,async({page})=>{
+  await ready(page,width,theme);
+  await page.locator('#scripturePickerTrigger').click();
+  const dialog=page.locator('#scripturePicker'),list=dialog.locator('.picker-book-list');
+  await expect(list.locator('[data-picker-action="book"]')).toHaveCount(66);
+  await list.evaluate(node=>{node.scrollTop=0;});
+  const measured=await list.evaluate(node=>{
+    const rect=node.getBoundingClientRect(),buttons=Array.from(node.querySelectorAll('button'));
+    return {height:rect.height,scrollHeight:node.scrollHeight,
+      visible:buttons.filter(button=>{const r=button.getBoundingClientRect();return r.top>=rect.top&&r.bottom<=rect.bottom;}).length};
+  });
+  expect(measured.height).toBeGreaterThanOrEqual(160);
+  expect(measured.scrollHeight).toBeGreaterThan(measured.height);
+  expect(measured.visible).toBeGreaterThanOrEqual(3);
+  await list.locator('[data-picker-action="book"][data-value="malachi"]').scrollIntoViewIfNeeded();
+  expect(await list.evaluate(node=>node.scrollTop)).toBeGreaterThan(0);
+  await dialog.locator('#pickerBookSearch').fill('Zechariah');
+  await expect(list.locator('[data-picker-action="book"]')).toHaveCount(1);
+  const rowHeight=await list.locator('button').first().evaluate(node=>node.getBoundingClientRect().height);
+  expect(rowHeight).toBeGreaterThanOrEqual(44);
+  expect(rowHeight).toBeLessThanOrEqual(56);
+  await list.locator('[data-picker-action="book"][data-value="zechariah"]').click();
+  await expect(dialog.locator('.picker-detail h3')).toHaveText('Zechariah — Chapters');
+  await expect(dialog.locator('[data-picker-action="chapter"]')).toHaveCount(14);
+  expect(await dialog.evaluate(node=>node.getBoundingClientRect().height)).toBeLessThan(420);
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#scripturePickerTrigger')).toBeFocused();
+});
+
 for(const width of [320,360,390,430,768,1280])for(const theme of ['light','dark'])test(`${width}px ${theme}: compact Scripture choices, long lists, themes and focus`,async({page},info)=>{
   await ready(page,width,theme);await page.locator('#scripturePickerTrigger').click();
   const dialog=page.locator('#scripturePicker');

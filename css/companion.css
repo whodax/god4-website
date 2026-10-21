@@ -495,6 +495,10 @@
   .picker-books input{width:100%;margin:8px 0;}
   .picker-book-list{display:grid;gap:6px;max-height:52dvh;min-height:44px;flex:1;contain:size;overflow:auto;padding:4px;overscroll-behavior:contain;}
   .picker-book-list button{text-align:left;overflow-wrap:anywhere;}
+  @media(min-width:621px){
+    /* Keep several book rows visible beside compact chapter grids. */
+    .picker-book-list{min-height:min(176px,35dvh);align-content:start;}
+  }
   .picker-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:8px;padding:4px;max-height:58dvh;overflow-y:auto;align-content:start;overscroll-behavior:contain;}
   .picker-options button{min-height:52px;font-size:14px;}
   .picker-whole{grid-column:1 / -1;}
