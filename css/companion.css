@@ -498,6 +498,10 @@
   @media(min-width:621px){
     /* Keep several book rows visible beside compact chapter grids. */
     .picker-book-list{min-height:min(176px,35dvh);align-content:start;}
+    /* Short chapter grids need only two Books rows; long books retain the taller list. */
+    .scripture-picker[data-step="chapters"]:has(.picker-options > button:last-child:nth-child(-n+4)) .picker-book-list{
+      min-height:min(132px,28dvh);
+    }
   }
   .picker-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:8px;padding:4px;max-height:58dvh;overflow-y:auto;align-content:start;overscroll-behavior:contain;}
   .picker-options button{min-height:52px;font-size:14px;}
