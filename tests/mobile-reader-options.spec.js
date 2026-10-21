@@ -38,8 +38,9 @@ for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const
     expect(await button.evaluate(element=>getComputedStyle(element).backgroundColor)).toBe('rgb(237, 227, 200)');
     expect(await button.evaluate(element=>getComputedStyle(element).color)).toBe('rgb(27, 42, 68)');
     expect((await button.boundingBox()).height).toBeGreaterThanOrEqual(44);
-    await button.click();
-    const dialog=page.getByRole('dialog',{name,exact:true});await expect(dialog).toBeVisible();
+    const dialog=page.getByRole('dialog',{name,exact:true});
+    if(!await dialog.isVisible()) await button.click();
+    await expect(dialog).toBeVisible();
     await expect(dialog).toHaveCSS('background-color','rgb(247, 241, 222)');
     await expect(dialog).toHaveCSS('color','rgb(27, 42, 68)');
     if(id==='verseSelect' && await page.locator('#verseSelect').inputValue()===''){
@@ -48,8 +49,15 @@ for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const
       await expect(page.locator('#verseSelect')).toHaveValue('');
     } else await expect(dialog.locator('[aria-pressed="true"]')).toBeFocused();
     await option(page,value).scrollIntoViewIfNeeded();await option(page,value).click();
-    await expect(dialog).not.toBeVisible();await expect(button).toBeFocused();
     await expect(page.locator('#'+id)).toHaveValue(value);
+    const next=id==='bookSelect'?'Chapter':id==='chapterSelect'?'Verse':null;
+    if(next){
+      await expect(page.getByRole('dialog',{name:next,exact:true})).toBeVisible();
+      await expect(page.locator('#readerOptionsPicker [data-option-value]')).not.toHaveCount(0);
+    } else {
+      await expect(dialog).not.toBeVisible();
+      await expect(button).toBeFocused();
+    }
   }
   expect(await page.evaluate(()=>BibleSpeech.getSpeed())).toBe(1.25);
   expect(await page.evaluate(()=>UserData.speechVoice.load())).toBe('female');

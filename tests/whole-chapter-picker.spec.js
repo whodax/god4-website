@@ -34,6 +34,13 @@ async function chooseReader(page,id,value){
   const {dialog}=await readerDialog(page,id);
   await dialog.locator(`[data-option-value="${value}"]`).click();
   await expect(page.locator('#'+id)).toHaveValue(value);
+  // This test exercises independent choices; close the newly cascaded picker.
+  const next=id==='bookSelect'?'Chapter':id==='chapterSelect'?'Verse':null;
+  if(next){
+    await expect(dialog).toHaveAccessibleName(next);
+    await page.keyboard.press('Escape');
+    await expect(dialog).not.toBeVisible();
+  }
 }
 async function chapterOnly(page){
   await expect(page.locator('#verseSelect')).toHaveValue('');

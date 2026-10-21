@@ -42,6 +42,24 @@ async function applyReaderTranslation(translationId){
   return true;
 }
 
+// Advance only after an explicit Reader choice; never cascade from background
+// synchronization, translation changes, Search, Compare, or Save verse.
+function advanceReaderNavigationChoice(select, selectedValue, openNext){
+  var nextId = select.id === 'bookSelect' ? 'chapterSelect' : select.id === 'chapterSelect' ? 'verseSelect' : null;
+  if(!nextId) return;
+  var previousFocus = document.activeElement;
+  var translation = currentTranslation;
+  requestAnimationFrame(function(){
+    var reader = document.getElementById('view-reader');
+    var options = document.getElementById('readerSecondaryControls');
+    if(document.activeElement !== previousFocus || currentTranslation !== translation || select.value !== selectedValue ||
+       !reader || !reader.classList.contains('active') || !options || options.hidden || document.querySelector('dialog[open]')) return;
+    if(select.id === 'bookSelect' && currentBook !== selectedValue) return;
+    if(select.id === 'chapterSelect' && (currentChapter !== Number(selectedValue) || currentBook !== document.getElementById('bookSelect').value)) return;
+    var next = document.getElementById(nextId);
+    if(next && !next.disabled && next.options.length) openNext(next);
+  });
+}
 
 var ReaderTranslationPicker = window.ReaderTranslationPicker || (function(){
   var select, trigger, dialog, options, status, media, pressedButton, revision = 0, busy = false;
@@ -254,6 +272,7 @@ var ThemedSelectPicker = window.ThemedSelectPicker || (function(){
       close(); select.value = button.dataset.optionValue;
       if(changed) select.dispatchEvent(new Event('change',{bubbles:true}));
       sync(select);
+      advanceReaderNavigationChoice(select, select.value, open);
     });
   }
   function sync(select){
@@ -421,6 +440,11 @@ var ReaderOptions = window.ReaderOptions || (function(){
       if(choosingForSave){
         var entry=current();
         feedback.textContent=entry ? 'Selected '+entry.ref+'. Activate Save verse to save it.' : 'Choose a numbered verse to save.';
+      } else {
+        advanceReaderNavigationChoice(select, select.value, function(next){
+          var control=controls.find(function(item){return item.select===next;});
+          if(control && !control.button.hidden) pick(next,control.button);
+        });
       }
     });
   }

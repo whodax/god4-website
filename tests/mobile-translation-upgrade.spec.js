@@ -39,7 +39,7 @@ test('shell 49 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   if(previous.version===48){
-    for(const asset of assetPaths)expect(newHashes[asset]===oldHashes[asset]).toBe(asset!=='/css/companion.css');
+    for(const asset of assetPaths)expect(newHashes[asset]===oldHashes[asset]).toBe(!['/css/companion.css',runtimePath].includes(asset));
     return;
   }
   if(previous.version===47){
