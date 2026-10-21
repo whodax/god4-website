@@ -151,7 +151,7 @@ test.describe('mobile loading and interaction',()=>{
     await expect(page.locator(`${dialogSelector} [role="status"]`)).toHaveText('Loading translation…');
     await page.keyboard.press('Escape');
     await openPicker(page);
-    await expect(page.locator('.reader-translation-options')).not.toHaveAttribute('aria-busy','true');
+    await expect(page.locator(`${dialogSelector} .reader-translation-options`)).not.toHaveAttribute('aria-busy','true');
     await page.keyboard.press('Escape');
     await page.locator('#readAloudPlay').focus();
     await page.evaluate(()=>finishTranslation());
@@ -209,7 +209,7 @@ test.describe('mobile loading and interaction',()=>{
   });
   test('cancelled touch dragging scrolls the list without selecting or leaving a pressed highlight',async({page})=>{
     await page.setViewportSize({width:320,height:480});await openReader(page);await openPicker(page);
-    const list=page.locator('.reader-translation-options'),rect=await list.boundingBox();
+    const list=page.locator(`${dialogSelector} .reader-translation-options`),rect=await list.boundingBox();
     const client=await page.context().newCDPSession(page);
     const x=rect.x+rect.width/2,y=rect.y+rect.height-24;
     await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});

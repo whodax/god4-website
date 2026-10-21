@@ -54,7 +54,7 @@ test('fullscreen keeps navigation, translation, More, and verse controls in one 
   await expect(page.locator('#readerContent [data-verse-number="2"]')).toHaveClass(/verse-focused/);
   await expect(page.locator('#readerSecondaryControls')).toBeVisible();
   await expect(page.locator('[data-voice-command-button]')).toBeVisible();
-  await page.locator('#readAloudSpeed').selectOption('1.25');
+  await selectReaderOption(page.locator('#readAloudSpeed'),'1.25');
   await page.locator('[data-reader-action="next-verse"]').click();
   await expect(page.locator('#verseSelect')).toHaveValue('3');
   await more.click();
@@ -195,7 +195,7 @@ test('More remains directly below the fullscreen toolbar after deep shell scroll
     expect(geometry.panelTop).toBeGreaterThanOrEqual(geometry.primaryBottom - 1);
     expect(geometry.panelBottom).toBeLessThanOrEqual(Math.min(geometry.toolbarBottom + 1, 700));
     expect(geometry.overflow).toBe(false);
-    await page.locator('#readAloudSpeed').selectOption('1.25');
+    await selectReaderOption(page.locator('#readAloudSpeed'),'1.25');
     const previousVerse = Number(await page.locator('#verseSelect').inputValue());
     await page.locator('#readerVerseNavigation [data-reader-action="next-verse"]').click();
     await expect(page.locator('#verseSelect')).toHaveValue(String(previousVerse + 1));

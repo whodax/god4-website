@@ -10,12 +10,13 @@ const root=path.resolve(__dirname,'..');
 for(const previous of [
   {version:43,commit:'a051890a7d04aac53b937e62d909e284b0101f4d',assets:46},
   {version:44,commit:'301b36f3b2bed4fdac5eadf5bde231a42b0c454b',assets:47},
-  {version:45,commit:'51d2e4185fdc8f6294cb68ce65b88f0357be750e',assets:47}
+  {version:45,commit:'51d2e4185fdc8f6294cb68ce65b88f0357be750e',assets:47},
+  {version:46,commit:'cc5246704b366fe881b3d7393723810d22db308a',assets:47}
 ])test.describe(`installed cache ${previous.version}`,()=>{
 const baseline=previous.commit;
-const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-46';
-const assetPaths=['/css/companion.css','/js/bible/reader.js','/js/app.js','/js/bible/speech.js'];
+const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-47';
 const runtimePath='/js/bible/translation-picker.js';
+const assetPaths=['/css/companion.css','/js/bible/reader.js','/js/app.js','/js/bible/speech.js',...(previous.version>=44?[runtimePath]:[])];
 const prior=Object.fromEntries(['/sw.js',...assetPaths].map(url=>[url,execFileSync('git',['show',baseline+':'+url.slice(1)],{cwd:root})]));
 const current=Object.fromEntries(assetPaths.map(url=>[url,fs.readFileSync(path.join(root,url.slice(1)))]));
 const digest=body=>crypto.createHash('sha256').update(body).digest('hex');
@@ -26,15 +27,15 @@ const saved=[{ref:'John 1:1',text:'Installed-user saved verse',location:{transla
 
 test.use({viewport:{width:320,height:844},hasTouch:true,serviceWorkers:'allow'});
 
-test('shell 46 preserves activation, Bible caches and the exact required assets',()=>{
+test('shell 47 preserves activation, Bible caches and the exact required assets',()=>{
   const worker=fs.readFileSync(path.join(root,'sw.js'),'utf8');
-  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-46'","'compact-reader-"+previous.version+"'");
+  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-47'","'compact-reader-"+previous.version+"'");
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(newHashes['/js/bible/reader.js']).not.toBe(oldHashes['/js/bible/reader.js']);
   expect(current['/js/bible/reader.js'].toString('utf8').replace(/\r\n/g,'\n')).not.toBe(prior['/js/bible/reader.js'].toString('utf8').replace(/\r\n/g,'\n'));
   for(const asset of ['/css/companion.css','/js/app.js','/js/bible/speech.js']){
-    expect(current[asset].toString('utf8').replace(/\r\n/g,'\n')===prior[asset].toString('utf8').replace(/\r\n/g,'\n')).toBe(asset!=='/js/bible/speech.js'&&previous.version>=44);
+    expect(current[asset].toString('utf8').replace(/\r\n/g,'\n')).not.toBe(prior[asset].toString('utf8').replace(/\r\n/g,'\n'));
   }
 });
 
@@ -46,7 +47,7 @@ async function fixture(){
     const relative=pathname==='/'?'/index.html':pathname==='/offline'?'/offline.html':pathname;
     const file=path.resolve(root,'.'+relative);
     if(!file.startsWith(root+path.sep)){response.writeHead(403).end();return;}
-    if(state.version===46&&pathname===state.failAsset){response.writeHead(503).end('Install failure fixture');return;}
+    if(state.version===47&&pathname===state.failAsset){response.writeHead(503).end('Install failure fixture');return;}
     try{
       let body=state.version===previous.version&&prior[pathname]?prior[pathname]:fs.readFileSync(file);
       if(/^\/js\/bible\/(web|asv|kjv|ylt|dby|webster|rv|gnv|dra)\.js$/.test(pathname))body=generator.canonicalDeployBytes(body);
@@ -177,6 +178,46 @@ async function kjvSpeech(page,updated){
   await page.evaluate(async()=>{stopReader();await changeTranslation('dra');await navigateReaderToPassage('john',1,1);});
 }
 
+async function readerOptions(page,updated){
+  await page.locator('#readerMoreTrigger').click();
+  if(updated){
+    await page.evaluate(()=>ReaderTranslationLoader.ensure());
+    await expect(page.locator('#readerMoreTrigger')).toHaveText('Hide Options');
+    const mobile=await page.evaluate(()=>matchMedia('(max-width:620px)').matches);
+    for(const id of ['bookSelect','chapterSelect','verseSelect','readAloudVoice','readAloudSpeed']){
+      if(mobile)await expect(page.locator(`[data-reader-select="${id}"]`)).toBeVisible();
+      else await expect(page.locator('#'+id)).toBeVisible();
+    }
+    await page.evaluate(()=>selectReaderVerse(2));
+    const save=page.locator('#readerSaveVerse');
+    await save.click();await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (DRA) saved.');
+    await expect(save).toHaveAttribute('aria-pressed','true');
+    expect(await page.evaluate(()=>UserData.savedVerses.load().at(-1).location)).toEqual({translationId:'dra',bookId:'john',chapter:1,verse:2});
+    await expect(save).toHaveText('Saved ✓');await expect(save).toHaveAttribute('aria-disabled','true');
+    await save.press('Enter');
+    expect(await page.evaluate(()=>UserData.savedVerses.load().filter(entry=>entry.location?.verse===2))).toHaveLength(1);
+    await page.locator('.saved-pill').click();
+    await page.locator('#tray .saved-verse-row').filter({hasText:'John 1:2 (DRA)'}).locator('.saved-verse-remove').filter({hasText:'Remove'}).click();
+    await page.locator('#closeTray').click();
+    await expect(save).toHaveAttribute('aria-pressed','false');
+    await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (DRA) removed from Saved.');
+    if(mobile){
+      await page.locator('#readerContent').dispatchEvent('wheel',{deltaY:96});
+      await page.evaluate(()=>scrollBy({top:96,behavior:'instant'}));
+      const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});await expect(recovery).toBeVisible();
+      const before=await page.evaluate(()=>({scroll:scrollY,content:document.getElementById('readerContent').getBoundingClientRect().top}));
+      await recovery.tap();
+      await expect(page.locator('.reader-toolbar')).toHaveCSS('visibility','visible');
+      await expect(page.locator('#readAloudPlay')).toBeFocused();
+      expect(await page.evaluate(()=>({scroll:scrollY,content:document.getElementById('readerContent').getBoundingClientRect().top}))).toEqual(before);
+      await expect(page.locator('#readerMoreTrigger')).toHaveText('Hide Options');
+    }
+  }else expect(await page.evaluate(()=>typeof ReaderOptions)).toBe('undefined');
+  await page.locator('#readerMoreTrigger').press('Escape');
+  await expect(page.locator('#readerSecondaryControls')).toBeHidden();
+  if(updated)await expect(page.locator('#readerMoreTrigger')).toHaveText('Options');
+}
+
 for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed shell ${previous.version} waits for acceptance and preserves offline data across tabs at ${width}px`,async({page,context})=>{
   test.setTimeout(60000);
   await page.setViewportSize({width,height:844});
@@ -186,6 +227,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
     const keys=await installOld(page,server.origin),before=await retainedState(page);
     expect(before.saved).toEqual(saved);
     expect(Object.values(before.retained).every(Boolean)).toBe(true);
+    if(previous.version===46)await readerOptions(page,false);
     if(previous.version===45)await kjvSpeech(page,false);
     if(previous.version===44){
       const oldPosition=await planPosition(page);
@@ -194,7 +236,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
     const second=await context.newPage();
     second.on('pageerror',error=>errors.push(error.message));
     await second.goto(server.origin);await second.evaluate(()=>{window.upgradeTabMarker='old tab';return initializeBibleExperience();});
-    server.state.version=46;
+    server.state.version=47;
     await requestUpdate(page);
     await expect(page.locator('#pwaUpdateButton')).toBeVisible();
     expect(await page.evaluate(async()=>{
@@ -215,9 +257,10 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
       expect(newPosition.headingTop).toBeGreaterThanOrEqual(newPosition.top);
       expect(newPosition.headingBottom).toBeLessThanOrEqual(newPosition.height);
       expect(newPosition.dayBottom).toBeLessThanOrEqual(newPosition.height);
-      console.log('Installed 44-to-46 Reader/Plan geometry:',JSON.stringify({width,newPosition}));
+      console.log('Installed 44-to-47 Reader/Plan geometry:',JSON.stringify({width,newPosition}));
     }
     if(previous.version===45)await kjvSpeech(page,true);
+    if(previous.version===46)await readerOptions(page,true);
     for(const asset of assetPaths.concat(runtimePath))expect(responses.some(response=>response.path===asset&&response.worker)).toBe(true);
     expect(await retainedState(page)).toEqual(before);
     const upgradedKeys=await page.evaluate(async name=>(await(await caches.open(name)).keys()).map(request=>new URL(request.url).pathname+new URL(request.url).search).sort(),newCache);
@@ -234,6 +277,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
     expect(await hashes(page)).toEqual(newHashes);
     expect(await retainedState(page)).toEqual(before);
     if(previous.version===45)await kjvSpeech(page,true);
+    if(previous.version===46)await readerOptions(page,true);
     if(previous.version===44){
       const offlinePosition=await planPosition(page);
       expect(offlinePosition.headingTop).toBeGreaterThanOrEqual(offlinePosition.top);
@@ -254,13 +298,13 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`failed shell-46 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
+test(`failed shell-47 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   try{
     await installOld(page,server.origin);
     const before=await retainedState(page);
-    server.state.version=46;server.state.failAsset=previous.version===45?'/js/bible/speech.js':previous.version===44?'/js/bible/reader.js':'/css/companion.css';
+    server.state.version=47;server.state.failAsset=previous.version===46?runtimePath:previous.version===45?'/js/bible/speech.js':previous.version===44?'/js/bible/reader.js':'/css/companion.css';
     await requestUpdate(page);
     await expect.poll(()=>page.evaluate(()=>window.lastInstallState)).toBe('redundant');
     expect(await page.evaluate(async()=>!!(await navigator.serviceWorker.getRegistration()).waiting)).toBe(false);
@@ -276,6 +320,7 @@ test(`failed shell-46 installation leaves installed shell ${previous.version} us
     await context.setOffline(false);server.state.failAsset=null;
     await requestUpdate(page);
     await acceptUpdate(page);
+    if(previous.version===46)await readerOptions(page,true);
     if(previous.version===45)await kjvSpeech(page,true);
     expect(await retainedState(page)).toEqual(before);
   }finally{await context.setOffline(false);await server.stop(context);}

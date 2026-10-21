@@ -63,7 +63,7 @@ function toggleFav(ref, text, btnEl, location){
     if(location) entry.location=location;
     saved.push(entry);
   }
-  savedVersesStorage.save(saved);
+  var persisted = savedVersesStorage.save(saved);
   var savedCount = document.getElementById('savedCount');
   if(savedCount) savedCount.textContent = saved.length;
   renderTray();
@@ -73,6 +73,7 @@ function toggleFav(ref, text, btnEl, location){
     btnEl.textContent = isSaved(ref) ? '♥' : '♡';
     btnEl.setAttribute('aria-pressed', isSaved(ref) ? 'true' : 'false');
   }
+  return persisted;
 }
 
 function toggleFavFromHero(){
@@ -320,14 +321,9 @@ async function doSearch(){
 }
 
 function saveReaderVerse(){
-  var number=getReaderDisplayedVerse();
-  var verse=BibleData.getVerse(currentTranslation,currentBook,currentChapter,number);
-  var chapter=BibleData.getChapter(currentTranslation,currentBook,currentChapter);
-  if(!verse || !verse.text.trim()) return;
-  var translation=BibleData.listTranslations().find(function(t){return t.id===currentTranslation;});
-  var ref=chapter.bookName+' '+currentChapter+':'+number+' ('+translation.abbreviation+')';
-  toggleFav(ref,verse.text,null,{translationId:currentTranslation,bookId:currentBook,chapter:currentChapter,verse:number});
-  document.getElementById('readerTranslationStatus').textContent=isSaved(ref)?ref+' saved.':ref+' removed from Saved.';
+  var snapshot=[currentTranslation,currentBook,currentChapter,getReaderDisplayedVerse(),document.activeElement];
+  document.getElementById('readerSaveStatus').textContent='Preparing save…';
+  return ReaderTranslationLoader.ensure().then(function(){ReaderOptions.save(snapshot);}).catch(readerOptionsError);
 }
 async function openSavedVerse(entry){
   if(!entry.location) return false;
@@ -339,6 +335,7 @@ async function openSavedVerse(entry){
   return navigateSearchResult(location);
 }
 function renderTray(){
+  if(window.ReaderOptions) ReaderOptions.sync();
   var list = document.getElementById('trayList');
   var empty = document.getElementById('trayEmpty');
   list.innerHTML = '';

@@ -86,7 +86,7 @@ test('More remains immediately usable after deep Reader scrolling at three width
     expect(geometry.panelTop).toBeGreaterThanOrEqual(geometry.primaryBottom - 1);
     expect(geometry.panelBottom).toBeLessThanOrEqual(Math.min(geometry.toolbarBottom + 1, 700));
     expect(geometry.overflow).toBe(false);
-    await page.locator('#readAloudSpeed').selectOption('1.25');
+    await selectReaderOption(page.locator('#readAloudSpeed'),'1.25');
     await page.locator('#readerMoreTrigger').click();
     expect(Math.abs(await page.evaluate(() => window.scrollY) - before)).toBeLessThan(100);
   }
@@ -128,6 +128,7 @@ test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mob
       return { toolbarHeight:toolbar.height, firstVerseOffset:verse.top - view.top, overflow, positions };
     });
     expect(geometry.overflow, `${width}px Reader overflow`).toEqual([]);
+    console.log('Reader toolbar row geometry:',JSON.stringify({width,...geometry}));
     expect(geometry.toolbarHeight).toBeLessThanOrEqual(width === 1440 ? 64 : 110);
     if(width === 1440) expect(new Set(geometry.positions).size).toBe(1);
     else {

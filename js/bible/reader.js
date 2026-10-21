@@ -80,8 +80,7 @@ function updateReaderReferenceDisplay(){
 }
 
 function updateReaderControls(){
-  var saveButton=document.getElementById('readerSaveVerse');
-  if(saveButton) saveButton.disabled=!getReaderDisplayedVerse();
+  if(window.ReaderOptions) ReaderOptions.sync();
   updateReaderReferenceDisplay();
   var chapterCount = typeof BibleData === 'undefined' ? 0 : BibleData.getChapterCount(currentTranslation, currentBook);
   document.querySelectorAll('[data-reader-action="previous"]').forEach(function(button){
@@ -270,9 +269,9 @@ function readerStickyNavigation(){
 
 function readerVisibleTop(){
   var view = document.getElementById('view-reader');
+  var toolbar = view && view.classList.contains('active') && view.querySelector('.reader-show-controls:not([hidden]),.reader-toolbar:not([inert])');
   if(view && view.classList.contains('reader-fullscreen')){
-    var fullscreenToolbar = view.querySelector('.reader-toolbar');
-    return (fullscreenToolbar ? fullscreenToolbar.getBoundingClientRect().bottom : 0) + readerPlanReturnHeight();
+    return (toolbar ? toolbar.getBoundingClientRect().bottom : 0) + readerPlanReturnHeight();
   }
   var top = 0;
   var siteNav = document.querySelector('nav');
@@ -285,8 +284,7 @@ function readerVisibleTop(){
     var tabsTop = parseFloat(getComputedStyle(tabs).top);
     if(Number.isFinite(tabsTop)) top = Math.max(top, tabsTop + tabs.getBoundingClientRect().height);
   }
-  var toolbar = document.querySelector('#view-reader.active .reader-toolbar');
-  if(toolbar && getComputedStyle(toolbar).position === 'sticky'){
+  if(toolbar && /sticky|fixed/.test(getComputedStyle(toolbar).position)){
     var stickyTop = parseFloat(getComputedStyle(toolbar).top);
     if(Number.isFinite(stickyTop)) top = Math.max(top, stickyTop + toolbar.getBoundingClientRect().height);
   }
@@ -1438,12 +1436,20 @@ function initializeReaderControls(){
   });
 }
 function closeReaderMore(){
+  setReaderOptionsOpen(false);
+}
+function readerOptionsError(){
+  document.getElementById('readerSaveStatus').textContent='Native controls remain available. Reopen Options to retry saving.';
+}
+function setReaderOptionsOpen(open){
   var moreTrigger = document.getElementById('readerMoreTrigger');
   var secondaryControls = document.getElementById('readerSecondaryControls');
   if(!moreTrigger || !secondaryControls) return;
-  secondaryControls.hidden = true;
-  moreTrigger.setAttribute('aria-expanded', 'false');
-  moreTrigger.focus();
+  secondaryControls.hidden = !open;
+  moreTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  moreTrigger.textContent = open ? 'Hide Options' : 'Options';
+  if(open) ReaderTranslationLoader.ensure().catch(readerOptionsError);
+  else moreTrigger.focus({preventScroll:true});
 }
 
 if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener === 'function'){
@@ -1467,10 +1473,7 @@ if(typeof BibleSpeech !== 'undefined' && typeof BibleSpeech.setPlaybackListener 
   var secondaryControls = document.getElementById('readerSecondaryControls');
   if(moreTrigger && secondaryControls){
     moreTrigger.addEventListener('click', function(){
-      var opening = moreTrigger.getAttribute('aria-expanded') !== 'true';
-      if(!opening){ closeReaderMore(); return; }
-      secondaryControls.hidden = false;
-      moreTrigger.setAttribute('aria-expanded', 'true');
+      setReaderOptionsOpen(moreTrigger.getAttribute('aria-expanded') !== 'true');
     });
     function closeReaderMoreOnEscape(event){
       if(event.key !== 'Escape' || moreTrigger.getAttribute('aria-expanded') !== 'true') return;
@@ -1499,6 +1502,7 @@ var ReaderTranslationLoader = (function(){
         try {
           if(typeof applyReaderTranslation !== 'function') throw new Error('Missing translation runtime');
           ReaderTranslationPicker.initialize();
+          ReaderOptions.initialize();
           clearTimeout(timeout);
           resolve();
         } catch(error){ fail(); }
