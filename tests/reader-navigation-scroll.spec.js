@@ -64,10 +64,12 @@ for(const [name,viewport] of [['desktop',{width:1280,height:900}],['mobile',{wid
       await page.locator('#readerMoreTrigger').click();
       await page.locator('#bookSelect').focus();
       await selectReaderOption(page.locator('#bookSelect'),'psalms');
-      await expectStart(page); await expect(page.locator('#bookSelect')).toBeFocused();
+      await expectStart(page);
+      await expect(page.locator(name==='mobile'?'[data-reader-select="chapterSelect"]':'#bookSelect')).toBeFocused();
       await page.locator('#chapterSelect').focus();
       await selectReaderOption(page.locator('#chapterSelect'),'23');
-      await expectStart(page); await expect(page.locator('#chapterSelect')).toBeFocused();
+      await expectStart(page);
+      await expect(page.locator(name==='mobile'?'[data-reader-select="verseSelect"]':'#chapterSelect')).toBeFocused();
       await page.evaluate(()=>handleVoiceCommand('Open Romans 8'));
       await expectStart(page);
       await page.evaluate(()=>handleVoiceCommand('Romans 8:28'));

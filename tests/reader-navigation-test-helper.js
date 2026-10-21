@@ -10,6 +10,11 @@ async function selectReaderOption(locator,value,options){
   if(await replacement.isVisible()){
     await replacement.click();
     await page.locator(`#readerOptionsPicker [data-option-value="${value}"]`).click();
+    const next=id==='bookSelect'?'Chapter':id==='chapterSelect'?'Verse':null;
+    if(next){
+      await page.getByRole('dialog',{name:next,exact:true}).waitFor({state:'visible'});
+      await page.keyboard.press('Escape');
+    }
     return locator.evaluate(element=>Array.from(element.selectedOptions).map(option=>option.value));
   }
   return locator.selectOption(value,options);
