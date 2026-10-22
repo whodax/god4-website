@@ -82,10 +82,22 @@ test(`${width}px ${theme}: short chapter grids compact the dialog and preserve i
     const compact=await measure();
     expect(compact.booksHeight).toBeGreaterThanOrEqual(130);
     expect(compact.booksHeight).toBeLessThan(160);
-    expect(compact.visible).toBeGreaterThanOrEqual(2);
+    // Selecting a distant book can leave only one fully visible row at the
+    // current scroll offset. Assert the compact list can show multiple rows
+    // at its start and that the far end remains independently reachable.
+    expect(compact.visible).toBeGreaterThanOrEqual(1);
     expect(compact.booksScroll).toBeGreaterThan(compact.booksHeight);
     expect(compact.overflow).toBe(false);
     expect(compact.height).toBeLessThan(420);
+    await list.evaluate(node=>{node.scrollTop=0;});
+    expect((await measure()).visible).toBeGreaterThanOrEqual(2);
+    const lastBook=list.locator('[data-picker-action="book"][data-value="revelation"]');
+    await lastBook.scrollIntoViewIfNeeded();
+    await expect(lastBook).toBeInViewport();
+    expect(await list.evaluate(node=>node.scrollTop)).toBeGreaterThan(0);
+    await expect(dialog.locator('.picker-detail h3')).toHaveText(
+      book==='obadiah'?'Obadiah — Chapters':'Malachi — Chapters'
+    );
   }
   const short=await measure();
   await list.locator('[data-picker-action="book"][data-value="zechariah"]').click();
