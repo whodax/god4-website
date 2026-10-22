@@ -123,7 +123,11 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
   await page.setViewportSize({width,height:844});
   await page.addInitScript(theme=>localStorage.setItem('god4.theme',theme),theme);
   await page.route('**/js/bible/translation-picker.js',route=>route.abort());
-  await page.goto('/');await page.evaluate(()=>initializeBibleExperience());await page.locator('#readerMoreTrigger').click();
+  await page.goto('/');await page.evaluate(()=>initializeBibleExperience());
+  // Match the stable-font precondition used by the primary Reader geometry tests.
+  // A late font swap can reflow the sticky toolbar after the scroll is measured.
+  await page.evaluate(()=>document.fonts.ready);
+  await page.locator('#readerMoreTrigger').click();
   await expect(page.locator('#readerSaveStatus')).toContainText('Native controls');
   const verse=page.locator('#verseSelect');await expect(verse).toBeVisible();await expect(verse).toHaveValue('');
   await expect(verse.locator('option[value=""]')).toHaveText('Verse');
@@ -132,5 +136,22 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
     await expect(page.locator('#readerContent .verse-focused')).toHaveAttribute('data-verse-number',value);
   }
   await page.locator('#chapterSelect').selectOption('2');await page.locator('#chapterSelect').selectOption('1');
-  await chapterOnly(page);
+  try {
+    await chapterOnly(page);
+  } catch(error){
+    // Diagnostic evidence only: retain the original <2px assertion and rethrow.
+    const snapshot=await page.evaluate(()=>{
+      const heading=document.querySelector('#readerContent h2');
+      const toolbar=document.querySelector('#view-reader .reader-toolbar');
+      const tabs=document.querySelector('#bibleApp .bs-nav');
+      const nav=document.querySelector('nav');
+      const box=node=>node?{top:node.getBoundingClientRect().top,bottom:node.getBoundingClientRect().bottom,height:node.getBoundingClientRect().height}:null;
+      return {heading:box(heading),boundary:readerVisibleTop()+16,scrollY,
+        fonts:document.fonts.status,fontLinkMedia:document.getElementById('googleFontsStylesheet')?.media,
+        nav:box(nav),tabs:box(tabs),toolbar:box(toolbar),
+        visibleTop:readerVisibleTop(),readerPlanReturnHeight:readerPlanReturnHeight()};
+    });
+    console.log('NATIVE_FALLBACK_CHAPTER_SCROLL',JSON.stringify(snapshot));
+    throw error;
+  }
 });
