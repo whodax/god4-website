@@ -95,6 +95,48 @@ passage-navigation animation as though Word Study had jumped or overlapped after
 navigation settled. Geometry and scroll-offset assertions retain exact bounds;
 there are no rounding tolerances or time-based settling sleeps in these checks.
 
+## KJV source offsets and supplied-word typography
+
+KJV keeps imported bracket markers in canonical verse text while the Reader renders
+confirmed supplied wording in italics. Offset extraction walks the existing DOM,
+reintroducing bracket positions around KJV italic elements only for source-coordinate
+verification. The reconstructed text must exactly equal `data-verse-text`; every
+word's source slice must also equal its displayed token. Modified wording or missing
+italic markers fail closed and clear stale offsets. WEB/DRA text remains exact and
+unchanged. Ordinary parentheses and nested literal brackets are not stripped.
+
+These offsets identify English occurrences, not Hebrew/Greek equivalence. The
+production alignment catalog remains empty; provenance, exact verse text and token
+identity checks still gate any verified mapping. Tests use explicitly synthetic
+mapping fixtures only, never inferred definitions or approximate wording.
+
+The KJV correction is stacked on test-only PR #113 so its diff contains the actual
+application fix separately. Shell cache 50 delivers the changed precached alignment
+runtime after explicit update acceptance. The same 49 assets, translation/vendor
+caches, Saved data and activation lifecycle are preserved. Upgrade tests include
+production shell 49, exact alignment asset bytes, offline reload and retry when the
+alignment asset prevents installation. No eager script changes or budget increases
+are required. Physical device/screen-reader acceptance remains separate from
+Chromium regression coverage.
+
+Post-release remediation validation: all eight original KJV failures reproduce
+before this correction and pass afterwards. The full alignment suite passes 41
+cases; installed-user upgrade coverage passes 34. The 23 alignment unit checks,
+eight KJV corpus checks and four read-only Isaiah/protected-shard checks pass.
+Eager JavaScript remains 290,587 bytes against the unchanged 290,914-byte baseline.
+
+Full Playwright inventory coverage (1,617 cases, one worker, zero retries) completed
+in resource-bounded batches: 1,616 passed and one additional native-fallback scroll
+case failed. All 25 originally reported failures pass. The remaining 320px Dark
+fallback case also failed once in ten unchanged diagnostic repetitions; it is not
+silently counted as passing and its geometry tolerance is not relaxed. The KJV
+alignment module and service worker are not exercised by that fallback case.
+Its scroll/readiness cause remains unresolved and is a release-review blocker.
+The initial monolithic run was safely interrupted at 501MiB available RAM after
+50 passes; all registered identities were subsequently checked exactly once in
+the completed batch inventory, without skips or automatic retries.
+
 No Bible text, original-language shards, manifests, numbering or source provenance
-is regenerated or modified. The shell cache advances to `compact-reader-43` to
-refresh the layout/controller while retaining the alignment module for offline use.
+is regenerated or modified. The original layout/controller release used
+`compact-reader-43`; the KJV source-offset correction uses `compact-reader-50`
+as described above, retaining the alignment module for offline use.
