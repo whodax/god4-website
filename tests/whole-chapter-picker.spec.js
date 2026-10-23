@@ -135,7 +135,39 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
     await verse.selectOption(value);await expect(page.locator('#readerReferenceText')).toHaveText('John 1:'+value);
     await expect(page.locator('#readerContent .verse-focused')).toHaveAttribute('data-verse-number',value);
   }
-  await page.locator('#chapterSelect').selectOption('2');await page.locator('#chapterSelect').selectOption('1');
+  // Trace only this native-fallback chapter jump. Do not alter the Reader's
+  // scroll function, test timeout, navigation sequence, or 2px assertion.
+  await page.evaluate(()=>{
+    const trace=[];
+    const snapshot=()=>{
+      const heading=document.querySelector('#readerContent h2');
+      const toolbar=document.querySelector('#view-reader .reader-toolbar');
+      const tabs=document.querySelector('#bibleApp .bs-nav');
+      const bounds=node=>node?{top:node.getBoundingClientRect().top,bottom:node.getBoundingClientRect().bottom,height:node.getBoundingClientRect().height}:null;
+      const viewportScroll=document.scrollingElement || document.documentElement;
+      return {heading:bounds(heading),toolbar:bounds(toolbar),tabs:bounds(tabs),
+        scrollY,maxScroll:viewportScroll.scrollHeight-viewportScroll.clientHeight,
+        visibleTop:readerVisibleTop(),boundary:readerVisibleTop()+16,
+        activeElement:document.activeElement?.id || document.activeElement?.tagName,
+        cssScrollBehavior:getComputedStyle(document.documentElement).scrollBehavior,
+        cssOverflowAnchor:getComputedStyle(document.documentElement).overflowAnchor};
+    };
+    window.__nativeFallbackScrollTrace=trace;
+    const scrollChapterStart=window.scrollReaderStartIntoView;
+    window.scrollReaderStartIntoView=function(){
+      trace.push({phase:'before-reader-scroll',state:snapshot()});
+      const result=scrollChapterStart.apply(this,arguments);
+      trace.push({phase:'after-reader-scroll',state:snapshot()});
+      requestAnimationFrame(()=>trace.push({phase:'next-animation-frame',state:snapshot()}));
+      return result;
+    };
+  });
+  await page.locator('#chapterSelect').selectOption('2');
+  await page.evaluate(()=>__nativeFallbackScrollTrace.push({phase:'after-chapter-2',state:{
+    scrollY,headingTop:document.querySelector('#readerContent h2').getBoundingClientRect().top,
+    boundary:readerVisibleTop()+16
+  }}));
+  await page.locator('#chapterSelect').selectOption('1');
   try {
     await chapterOnly(page);
   } catch(error){
@@ -151,7 +183,8 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
         nav:box(nav),tabs:box(tabs),toolbar:box(toolbar),
         visibleTop:readerVisibleTop(),readerPlanReturnHeight:readerPlanReturnHeight()};
     });
-    console.log('NATIVE_FALLBACK_CHAPTER_SCROLL',JSON.stringify(snapshot));
+    console.log('NATIVE_FALLBACK_CHAPTER_SCROLL',JSON.stringify({...snapshot,
+      trace:await page.evaluate(()=>window.__nativeFallbackScrollTrace || [])}));
     throw error;
   }
 });
