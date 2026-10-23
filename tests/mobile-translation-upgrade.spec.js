@@ -39,7 +39,14 @@ test('shell 49 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   if(previous.version===48){
-    for(const asset of assetPaths)expect(newHashes[asset]===oldHashes[asset]).toBe(!['/css/companion.css',runtimePath].includes(asset));
+    // Compare source content across Windows CRLF checkouts and Git LF blobs.
+    // Keep the raw-byte hashes above unchanged: integration tests still verify
+    // the exact assets served by the worker and retained across PWA upgrades.
+    const normalizedSource=bytes=>bytes.toString('utf8').replace(/\r\n/g,'\n');
+    for(const asset of assetPaths){
+      const same=normalizedSource(current[asset])===normalizedSource(prior[asset]);
+      expect(same,asset+' should '+(['/css/companion.css',runtimePath].includes(asset)?'change':'remain unchanged')+' from shell 48').toBe(!['/css/companion.css',runtimePath].includes(asset));
+    }
     return;
   }
   if(previous.version===47){
