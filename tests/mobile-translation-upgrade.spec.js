@@ -41,7 +41,7 @@ test('shell 50 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   if(previous.version>=48){
-    const changed=previous.version===49?[alignmentPath]:['/css/companion.css',runtimePath,alignmentPath];
+    const changed=previous.version===49?[alignmentPath,'/js/bible/reader.js']:['/css/companion.css',runtimePath,alignmentPath,'/js/bible/reader.js'];
     // Compare source content across Windows CRLF checkouts and Git LF blobs.
     // Keep the raw-byte hashes above unchanged: integration tests still verify
     // the exact assets served by the worker and retained across PWA upgrades.

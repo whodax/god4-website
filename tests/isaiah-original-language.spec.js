@@ -26,6 +26,7 @@ for(const [chapter,verse] of [[1,1],[6,1],[7,14],[9,6],[11,3],[40,31],[53,5],[63
     await expect(tokens.first()).toHaveAttribute('lang','he');
     expect(shards).toEqual([`/data/word-study/original-language/isaiah/${chapter}.json`]);
     const actual=await tokens.evaluateAll(elements=>elements.map(e=>e.__originalLanguageRecord));expect(actual).toEqual(rows);
+    await expect(page.locator('#wordStudyPanel')).toHaveAttribute('data-word-study-state',/^(available|unavailable)$/);
     const english=await page.locator('#wordStudyDefinition').textContent(),index=rows.findIndex(r=>r.strongsNumber);
     await tokens.nth(index).press('Enter');
     for(const key of ['strongsNumber','lemma','transliteration','pronunciation','morphology','definition'])await expect(page.locator('#wordStudyOriginalDetails')).toContainText(rows[index][key]);

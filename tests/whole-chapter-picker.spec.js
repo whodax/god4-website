@@ -135,50 +135,7 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
     await verse.selectOption(value);await expect(page.locator('#readerReferenceText')).toHaveText('John 1:'+value);
     await expect(page.locator('#readerContent .verse-focused')).toHaveAttribute('data-verse-number',value);
   }
-  // Capture the scroll request without reading layout before the Reader's
-  // own positioning code; early geometry reads can mask a layout race.
-  await page.evaluate(()=>{
-    const trace=[];
-    window.__nativeFallbackScrollTrace=trace;
-    // Only record call identity; measuring geometry here can mask the race.
-    const positionChapterStart=window.scrollReaderStartIntoView;
-    window.scrollReaderStartIntoView=function(){
-      trace.push({phase:'start-position-called',chapter:document.getElementById('chapterSelect').value,at:performance.now()});
-      const result=positionChapterStart.apply(this,arguments);
-      trace.push({phase:'start-position-returned',chapter:document.getElementById('chapterSelect').value,at:performance.now()});
-      return result;
-    };
-    const scrollBy=window.scrollBy;
-    window.scrollBy=function(options){
-      if(options && typeof options==='object')
-        trace.push({phase:'scroll-request',top:options.top,behavior:options.behavior,at:performance.now()});
-      return scrollBy.apply(this,arguments);
-    };
-    window.addEventListener('scroll',function(){
-      trace.push({phase:'scroll-event',y:scrollY,at:performance.now()});
-    },{passive:true});
-  });
   await page.locator('#chapterSelect').selectOption('2');
-  await page.evaluate(()=>__nativeFallbackScrollTrace.push({phase:'chapter-2-selected',at:performance.now()}));
   await page.locator('#chapterSelect').selectOption('1');
-  await page.evaluate(()=>__nativeFallbackScrollTrace.push({phase:'chapter-1-selected',at:performance.now()}));
-  try {
-    await chapterOnly(page);
-  } catch(error){
-    // Diagnostic evidence only: retain the original <2px assertion and rethrow.
-    const snapshot=await page.evaluate(()=>{
-      const heading=document.querySelector('#readerContent h2');
-      const toolbar=document.querySelector('#view-reader .reader-toolbar');
-      const tabs=document.querySelector('#bibleApp .bs-nav');
-      const nav=document.querySelector('nav');
-      const box=node=>node?{top:node.getBoundingClientRect().top,bottom:node.getBoundingClientRect().bottom,height:node.getBoundingClientRect().height}:null;
-      return {heading:box(heading),boundary:readerVisibleTop()+16,scrollY,
-        fonts:document.fonts.status,fontLinkMedia:document.getElementById('googleFontsStylesheet')?.media,
-        nav:box(nav),tabs:box(tabs),toolbar:box(toolbar),
-        visibleTop:readerVisibleTop(),readerPlanReturnHeight:readerPlanReturnHeight()};
-    });
-    console.log('NATIVE_FALLBACK_CHAPTER_SCROLL',JSON.stringify({...snapshot,
-      trace:await page.evaluate(()=>window.__nativeFallbackScrollTrace || [])}));
-    throw error;
-  }
+  await chapterOnly(page);
 });
