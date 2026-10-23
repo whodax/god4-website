@@ -48,16 +48,28 @@
     if(!number) return [];
     var words = Array.from(verse.querySelectorAll('[data-word-study-term]'));
     words.forEach(function(word){ word.removeAttribute('data-word-study-start'); word.removeAttribute('data-word-study-end'); });
-    var range = document.createRange();
-    range.setStartAfter(number);
-    range.setEnd(verse, verse.childNodes.length);
-    if(range.toString() !== verse.getAttribute('data-verse-text')) return [];
+    var source = '', offsets = new Map(), wordSet = new Set(words);
+    var kjv = verse.getAttribute('data-translation-id') === 'kjv';
+    function read(node){
+      var supplied = kjv && node.nodeType === 1 && node.tagName === 'I';
+      if(supplied) source += '[';
+      var start = source.length;
+      if(node.nodeType === 3) source += node.nodeValue;
+      else Array.from(node.childNodes).forEach(read);
+      if(wordSet.has(node)) offsets.set(node, {start:start, end:source.length});
+      if(supplied) source += ']';
+    }
+    var children = Array.from(verse.childNodes), first = children.indexOf(number);
+    if(first < 0) return [];
+    children.slice(first + 1).forEach(read);
+    if(source !== verse.getAttribute('data-verse-text') || words.some(function(word){
+      var span = offsets.get(word);
+      return !span || source.slice(span.start, span.end) !== word.textContent;
+    })) return [];
     return words.map(function(word){
-      var prefix = range.cloneRange();
-      prefix.setEndBefore(word);
-      var start = prefix.toString().length;
-      word.setAttribute('data-word-study-start', String(start));
-      word.setAttribute('data-word-study-end', String(start + word.textContent.length));
+      var span = offsets.get(word);
+      word.setAttribute('data-word-study-start', String(span.start));
+      word.setAttribute('data-word-study-end', String(span.end));
       return word;
     });
   }

@@ -81,6 +81,47 @@ for(const [translationId,bookId,chapter,verse] of [['kjv','isaiah',53,5],['web',
   });
 }
 
+for(const [bookId,chapter,verse] of [['isaiah',53,5],['genesis',1,2],['genesis',35,18],['1-john',2,23],['genesis',14,8]]){
+  test(`KJV canonical offsets preserve supplied wording and punctuation in ${bookId} ${chapter}:${verse}`,async({page})=>{
+    await open(page,'kjv',bookId,chapter,verse);
+    const row=page.locator(`#readerContent [data-verse-number="${verse}"]`);
+    const source=await row.getAttribute('data-verse-text');
+    const offsets=await row.evaluate(node=>{
+      const text=node.getAttribute('data-verse-text'),words=WordStudyAlignment.wordSpans(node);
+      return {count:words.length,invalid:words.filter(word=>text.slice(Number(word.dataset.wordStudyStart),Number(word.dataset.wordStudyEnd))!==word.textContent).length,
+        ordered:words.every((word,index)=>!index || Number(word.dataset.wordStudyStart)>=Number(words[index-1].dataset.wordStudyEnd))};
+    });
+    expect(offsets.count).toBe(await row.locator('[data-word-study-term]').count());
+    expect(offsets.count).toBeGreaterThan(0);expect(offsets.invalid).toBe(0);expect(offsets.ordered).toBe(true);
+    expect(await page.evaluate(({bookId,chapter,verse})=>BibleData.getVerse('kjv',bookId,chapter,verse).text,{bookId,chapter,verse})).toBe(source);
+    const words=row.locator('[data-word-study-term]'),supplied=row.locator('i [data-word-study-term]');
+    for(const word of [words.first(),...(await supplied.count()?[supplied.first()]:[]),words.last()]){
+      const text=await word.textContent();await word.press('Enter');
+      await expect(page.locator('#wordStudyVerse [data-selected="true"]')).toHaveText(text);
+      await expect(page.locator('#wordStudyVerse')).toHaveText(source);
+      await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+      await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(0);
+      await page.keyboard.press('Escape');await expect(word).toBeFocused();
+    }
+  });
+}
+
+for(const drift of ['word','italic marker'])test(`KJV ${drift} drift rejects canonical offsets and verified fixtures`,async({page})=>{
+  const word=await open(page,'kjv','isaiah',53,5,true);
+  await word.press('Enter');await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(2);
+  await page.keyboard.press('Escape');
+  await page.locator('#readerContent [data-verse-number="5"]').evaluate((node,drift)=>{
+    const italic=node.querySelector('i');
+    if(drift==='word')italic.querySelector('[data-word-study-term]').textContent='Altered';
+    else italic.replaceWith(...italic.childNodes);
+  },drift);
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(0);
+  await expect(page.locator('#readerContent [data-word-study-start]')).toHaveCount(0);
+  await expect(page.locator('#wordStudyVerse [data-selected="true"]')).toHaveCount(0);
+});
+
 test('lexical definitions never create inferred alignment',async({page})=>{
   const word=await open(page,'web','john',1,1);
   await page.evaluate(()=>{WordStudyProvider.lookup=()=>Promise.resolve({status:'available',definition:'λογος means word',relatedWords:['word']});});
