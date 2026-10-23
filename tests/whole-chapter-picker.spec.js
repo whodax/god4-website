@@ -140,6 +140,14 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
   await page.evaluate(()=>{
     const trace=[];
     window.__nativeFallbackScrollTrace=trace;
+    // Only record call identity; measuring geometry here can mask the race.
+    const positionChapterStart=window.scrollReaderStartIntoView;
+    window.scrollReaderStartIntoView=function(){
+      trace.push({phase:'start-position-called',chapter:document.getElementById('chapterSelect').value,at:performance.now()});
+      const result=positionChapterStart.apply(this,arguments);
+      trace.push({phase:'start-position-returned',chapter:document.getElementById('chapterSelect').value,at:performance.now()});
+      return result;
+    };
     const scrollBy=window.scrollBy;
     window.scrollBy=function(options){
       if(options && typeof options==='object')
@@ -153,6 +161,7 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
   await page.locator('#chapterSelect').selectOption('2');
   await page.evaluate(()=>__nativeFallbackScrollTrace.push({phase:'chapter-2-selected',at:performance.now()}));
   await page.locator('#chapterSelect').selectOption('1');
+  await page.evaluate(()=>__nativeFallbackScrollTrace.push({phase:'chapter-1-selected',at:performance.now()}));
   try {
     await chapterOnly(page);
   } catch(error){
