@@ -90,7 +90,14 @@ test('200 percent equivalent reflow keeps Reader, Word Study, Search, Saved, and
   await page.setViewportSize({width:320, height:800});
   await openReader(page);
   await page.locator('#readerMoreTrigger').click();
-  await expect(page.locator('#readAloudSpeed')).toBeVisible();
+  const speed=page.locator('[data-reader-select="readAloudSpeed"]');
+  await expect(speed).toBeVisible();
+  await expect(speed).toHaveAccessibleName(/^Speed: /);
+  await speed.press('Enter');
+  await expect(page.getByRole('dialog',{name:'Speed',exact:true})).toBeVisible();
+  await page.keyboard.press('End');await page.keyboard.press('Enter');
+  await expect(page.locator('#readAloudSpeed')).toHaveValue('2.5');
+  await expect(speed).toBeFocused();
   await page.locator('#readerMoreTrigger').click();
   await page.locator('#readerContent [data-word-study-term]').first().click();
   await expect(page.locator('#wordStudyHeading')).toBeFocused();

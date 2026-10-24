@@ -34,6 +34,13 @@ async function chooseReader(page,id,value){
   const {dialog}=await readerDialog(page,id);
   await dialog.locator(`[data-option-value="${value}"]`).click();
   await expect(page.locator('#'+id)).toHaveValue(value);
+  // This test exercises independent choices; close the newly cascaded picker.
+  const next=id==='bookSelect'?'Chapter':id==='chapterSelect'?'Verse':null;
+  if(next){
+    await expect(dialog).toHaveAccessibleName(next);
+    await page.keyboard.press('Escape');
+    await expect(dialog).not.toBeVisible();
+  }
 }
 async function chapterOnly(page){
   await expect(page.locator('#verseSelect')).toHaveValue('');
@@ -116,7 +123,11 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
   await page.setViewportSize({width,height:844});
   await page.addInitScript(theme=>localStorage.setItem('god4.theme',theme),theme);
   await page.route('**/js/bible/translation-picker.js',route=>route.abort());
-  await page.goto('/');await page.evaluate(()=>initializeBibleExperience());await page.locator('#readerMoreTrigger').click();
+  await page.goto('/');await page.evaluate(()=>initializeBibleExperience());
+  // Match the stable-font precondition used by the primary Reader geometry tests.
+  // A late font swap can reflow the sticky toolbar after the scroll is measured.
+  await page.evaluate(()=>document.fonts.ready);
+  await page.locator('#readerMoreTrigger').click();
   await expect(page.locator('#readerSaveStatus')).toContainText('Native controls');
   const verse=page.locator('#verseSelect');await expect(verse).toBeVisible();await expect(verse).toHaveValue('');
   await expect(verse.locator('option[value=""]')).toHaveText('Verse');
@@ -124,6 +135,7 @@ for(const width of [320,1280])for(const theme of ['light','dark'])test(`${width}
     await verse.selectOption(value);await expect(page.locator('#readerReferenceText')).toHaveText('John 1:'+value);
     await expect(page.locator('#readerContent .verse-focused')).toHaveAttribute('data-verse-number',value);
   }
-  await page.locator('#chapterSelect').selectOption('2');await page.locator('#chapterSelect').selectOption('1');
+  await page.locator('#chapterSelect').selectOption('2');
+  await page.locator('#chapterSelect').selectOption('1');
   await chapterOnly(page);
 });

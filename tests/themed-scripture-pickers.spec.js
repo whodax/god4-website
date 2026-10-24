@@ -31,6 +31,88 @@ async function geometry(dialog){
       content:last.bottom-first.top,small:buttons.some(button=>{const box=button.getBoundingClientRect();return box.width<44||box.height<44;})};
   });
 }
+// Short desktop chapter grids must leave multiple Books rows visible and scrollable.
+for(const width of [768,1280])for(const theme of ['light','dark'])
+test(`${width}px ${theme}: desktop Scripture Books list keeps multiple scrollable rows`,async({page})=>{
+  await ready(page,width,theme);
+  await page.locator('#scripturePickerTrigger').click();
+  const dialog=page.locator('#scripturePicker'),list=dialog.locator('.picker-book-list');
+  await expect(list.locator('[data-picker-action="book"]')).toHaveCount(66);
+  await list.evaluate(node=>{node.scrollTop=0;});
+  const measured=await list.evaluate(node=>{
+    const rect=node.getBoundingClientRect(),buttons=Array.from(node.querySelectorAll('button'));
+    return {height:rect.height,scrollHeight:node.scrollHeight,
+      visible:buttons.filter(button=>{const r=button.getBoundingClientRect();return r.top>=rect.top&&r.bottom<=rect.bottom;}).length};
+  });
+  expect(measured.height).toBeGreaterThanOrEqual(160);
+  expect(measured.scrollHeight).toBeGreaterThan(measured.height);
+  expect(measured.visible).toBeGreaterThanOrEqual(3);
+  await list.locator('[data-picker-action="book"][data-value="malachi"]').scrollIntoViewIfNeeded();
+  expect(await list.evaluate(node=>node.scrollTop)).toBeGreaterThan(0);
+  await dialog.locator('#pickerBookSearch').fill('Zechariah');
+  await expect(list.locator('[data-picker-action="book"]')).toHaveCount(1);
+  const rowHeight=await list.locator('button').first().evaluate(node=>node.getBoundingClientRect().height);
+  expect(rowHeight).toBeGreaterThanOrEqual(44);
+  expect(rowHeight).toBeLessThanOrEqual(56);
+  await list.locator('[data-picker-action="book"][data-value="zechariah"]').click();
+  await expect(dialog.locator('.picker-detail h3')).toHaveText('Zechariah — Chapters');
+  await expect(dialog.locator('[data-picker-action="chapter"]')).toHaveCount(14);
+  expect(await dialog.evaluate(node=>node.getBoundingClientRect().height)).toBeLessThan(420);
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#scripturePickerTrigger')).toBeFocused();
+});
+
+// Obadiah/Malachi need less vertical space without collapsing or hiding the book list.
+for(const width of [768,1280])for(const theme of ['light','dark'])
+test(`${width}px ${theme}: short chapter grids compact the dialog and preserve independent Books scrolling`,async({page})=>{
+  await ready(page,width,theme);
+  await page.locator('#scripturePickerTrigger').click();
+  const dialog=page.locator('#scripturePicker'),list=dialog.locator('.picker-book-list');
+  const measure=()=>dialog.evaluate(node=>{
+    const books=node.querySelector('.picker-book-list'),rect=books.getBoundingClientRect();
+    return {height:node.getBoundingClientRect().height,booksHeight:rect.height,booksScroll:books.scrollHeight,
+      visible: [...books.querySelectorAll('button')].filter(button=>{
+        const item=button.getBoundingClientRect();return item.top>=rect.top&&item.bottom<=rect.bottom;
+      }).length,overflow:node.scrollWidth>node.clientWidth};
+  });
+
+  for(const [book,count] of [['obadiah',1],['malachi',4]]){
+    await list.locator(`[data-picker-action="book"][data-value="${book}"]`).click();
+    await expect(dialog.locator('[data-picker-action="chapter"]')).toHaveCount(count);
+    const compact=await measure();
+    expect(compact.booksHeight).toBeGreaterThanOrEqual(130);
+    expect(compact.booksHeight).toBeLessThan(160);
+    // Selecting a distant book can leave only one fully visible row at the
+    // current scroll offset. Assert the compact list can show multiple rows
+    // at its start and that the far end remains independently reachable.
+    expect(compact.visible).toBeGreaterThanOrEqual(1);
+    expect(compact.booksScroll).toBeGreaterThan(compact.booksHeight);
+    expect(compact.overflow).toBe(false);
+    expect(compact.height).toBeLessThan(420);
+    await list.evaluate(node=>{node.scrollTop=0;});
+    expect((await measure()).visible).toBeGreaterThanOrEqual(2);
+    const lastBook=list.locator('[data-picker-action="book"][data-value="revelation"]');
+    await lastBook.scrollIntoViewIfNeeded();
+    await expect(lastBook).toBeInViewport();
+    expect(await list.evaluate(node=>node.scrollTop)).toBeGreaterThan(0);
+    await expect(dialog.locator('.picker-detail h3')).toHaveText(
+      book==='obadiah'?'Obadiah — Chapters':'Malachi — Chapters'
+    );
+  }
+  const short=await measure();
+  await list.locator('[data-picker-action="book"][data-value="zechariah"]').click();
+  await expect(dialog.locator('[data-picker-action="chapter"]')).toHaveCount(14);
+  const standard=await measure();
+  expect(standard.booksHeight).toBeGreaterThanOrEqual(175);
+  expect(standard.height).toBeGreaterThanOrEqual(short.height+25);
+  await list.locator('[data-picker-action="book"][data-value="psalms"]').click();
+  await expect(dialog.locator('[data-picker-action="chapter"]')).toHaveCount(150);
+  await dialog.locator('[data-picker-action="chapter"][data-value="119"]').scrollIntoViewIfNeeded();
+  await expect(dialog.locator('[data-picker-action="chapter"][data-value="119"]')).toBeInViewport();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#scripturePickerTrigger')).toBeFocused();
+});
+
 for(const width of [320,360,390,430,768,1280])for(const theme of ['light','dark'])test(`${width}px ${theme}: compact Scripture choices, long lists, themes and focus`,async({page},info)=>{
   await ready(page,width,theme);await page.locator('#scripturePickerTrigger').click();
   const dialog=page.locator('#scripturePicker');

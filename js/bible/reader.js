@@ -313,11 +313,15 @@ function scrollReaderStartIntoView(){
   var view = document.getElementById('view-reader');
   var start = document.querySelector('#readerContent h2');
   if(!view || !view.classList.contains('active') || !start || !start.getClientRects().length) return;
-  // Geometry reads after render/state updates flush layout without a delayed callback.
-  var offset = start.getBoundingClientRect().top - (readerVisibleTop() - readerPlanReturnHeight() + 16);
-  if(Math.abs(offset) < 1) return;
   var surface = view.classList.contains('reader-fullscreen') ? view : window;
-  surface.scrollBy({top:offset, behavior:'instant'});
+  function position(){
+    if(!start.isConnected || !view.classList.contains('active') || currentVerse ||
+      surface !== (view.classList.contains('reader-fullscreen') ? view : window)) return;
+    var offset = start.getBoundingClientRect().top - (readerVisibleTop() - readerPlanReturnHeight() + 16);
+    surface.scrollBy({top:offset, behavior:'instant'});
+  }
+  position();
+  requestAnimationFrame(position);
 }
 
 function initializeReaderStickyOffsets(){
@@ -1364,6 +1368,10 @@ function navigateReaderToPassage(bookId, chapter, verse){
     if(!applyReaderVerseSelection(requestedVerse, true)) return false;
     saveReaderPosition();
     return true;
+  }).then(function(loaded){
+    return loaded && requestedVerse === null
+      ? new Promise(requestAnimationFrame).then(function(){ return true; })
+      : loaded;
   }).catch(function(){ return false; });
 }
 function initializeReaderControls(){
