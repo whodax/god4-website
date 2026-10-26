@@ -27,12 +27,12 @@ const option=(page,value)=>page.locator(`#readerOptionsPicker [data-option-value
 for(const width of [320,390])for(const colorScheme of ['light','dark'])for(const fullscreen of [false,true])test(`${width}px ${colorScheme} fullscreen=${fullscreen}: all five selectors use readable themed dialogs`,async({page},testInfo)=>{
   await open(page,{width,colorScheme});
   if(fullscreen)await page.locator('#fullscreenBtn').click();
-  const primary=await page.evaluate(()=>['readerTranslationTrigger','readAloudPlay','readerMoreTrigger','fullscreenBtn'].map(id=>{
-    const element=document.getElementById(id),bounds=element.getBoundingClientRect();
+  const primary=await page.evaluate(()=>['#readerTranslationTrigger','[data-reader-action="previous-verse"]','#readAloudPlay','[data-reader-action="next-verse"]','[data-reader-select="readAloudVoice"]','[data-reader-select="readAloudSpeed"]'].map(selector=>{
+    const element=document.querySelector(selector),bounds=element.getBoundingClientRect();
     return {left:bounds.left,right:bounds.right,client:element.clientWidth,scroll:element.scrollWidth};
   }));
   primary.forEach((bounds,index)=>{expect(bounds.scroll).toBeLessThanOrEqual(bounds.client+1);if(index)expect(bounds.left).toBeGreaterThanOrEqual(primary[index-1].right);});
-  for(const [id,value,name] of [['bookSelect','genesis','Book'],['chapterSelect','2','Chapter'],['verseSelect','3','Verse'],['readAloudVoice','female','Voice'],['readAloudSpeed','1.25','Speed']]){
+  for(const [id,value,name] of [['bookSelect','genesis','Book'],['chapterSelect','2','Chapter'],['verseSelect','3','Verse'],['readAloudVoice','female','Select Reading Voice'],['readAloudSpeed','1.25','Speed']]){
     await expect(page.locator('#'+id)).toBeHidden();
     const button=trigger(page,id);await expect(button).toBeVisible();
     expect(await button.evaluate(element=>getComputedStyle(element).backgroundColor)).toBe('rgb(237, 227, 200)');

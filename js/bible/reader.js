@@ -314,14 +314,23 @@ function scrollReaderStartIntoView(){
   var start = document.querySelector('#readerContent h2');
   if(!view || !view.classList.contains('active') || !start || !start.getClientRects().length) return;
   var surface = view.classList.contains('reader-fullscreen') ? view : window;
+  var positionedScroll = null;
   function position(){
     if(!start.isConnected || !view.classList.contains('active') || currentVerse ||
       surface !== (view.classList.contains('reader-fullscreen') ? view : window)) return;
+    if(positionedScroll!==null && view.querySelector('.reader-compact-mobile') &&
+      (surface===window ? window.scrollY : surface.scrollTop)!==positionedScroll) return;
     var offset = start.getBoundingClientRect().top - (readerVisibleTop() - readerPlanReturnHeight() + 16);
     surface.scrollBy({top:offset, behavior:'instant'});
+    positionedScroll=surface===window ? window.scrollY : surface.scrollTop;
   }
   position();
-  requestAnimationFrame(position);
+  requestAnimationFrame(function(){
+    position();
+    // Compact navigation can settle after the sticky stack's ResizeObserver.
+    // Reuse position's passage/selection/surface guards for the following frame.
+    if(view.querySelector('.reader-compact-mobile')) requestAnimationFrame(position);
+  });
 }
 
 function initializeReaderStickyOffsets(){
@@ -922,6 +931,11 @@ function restoreReaderTabPosition(preserveAnchor){
   }
   // Tab returns honor selection; fullscreen transitions preserve the visible anchor.
   if(currentVerse && !preserveAnchor){
+    // Switching away can clamp the document. Restore the compact Reader's saved
+    // offset before deciding whether its selected verse needs further movement.
+    if(reader.querySelector('.reader-compact-mobile') && reader.classList.contains('reader-fullscreen')===readerTabPosition.fullscreen){
+      (readerTabPosition.fullscreen ? reader : window).scrollTo({top:readerTabPosition.top,behavior:'instant'});
+    }
     scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="' + currentVerse + '"]'), 'instant');
     return;
   }

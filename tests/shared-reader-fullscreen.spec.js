@@ -1,4 +1,4 @@
-const {selectReaderOption}=require('./reader-navigation-test-helper');
+const {selectReaderOption,toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const { test, expect } = require('@playwright/test');
 
 async function openReader(page){
@@ -42,7 +42,7 @@ test('fullscreen keeps the exact toolbar and passage nodes with unique Reader co
 
 test('fullscreen keeps navigation, translation, More, and verse controls in one shell', async ({ page }) => {
   await openReader(page);
-  await page.locator('#fullscreenBtn').click();
+  await toggleReaderFullscreen(page);
   await selectReaderOption(page.locator('#bookSelect'),'psalms');
   await selectReaderOption(page.locator('#chapterSelect'),'2');
   await page.locator('#readerTranslation').selectOption('web');
@@ -98,10 +98,10 @@ test('fullscreen restores each background sibling’s prior accessibility state'
     compare.inert = true;
     compare.setAttribute('aria-hidden', 'false');
   });
-  await page.locator('#fullscreenBtn').click();
+  await toggleReaderFullscreen(page);
   await expect(page.locator('.bs-header')).toHaveAttribute('aria-hidden', 'true');
   await expect(page.locator('#view-compare')).toHaveAttribute('aria-hidden', 'true');
-  await page.locator('#fullscreenBtn').click();
+  await toggleReaderFullscreen(page);
   expect(await page.evaluate(() => ({
     headerAria:document.querySelector('.bs-header').getAttribute('aria-hidden'),
     headerInert:document.querySelector('.bs-header').inert,
@@ -112,7 +112,7 @@ test('fullscreen restores each background sibling’s prior accessibility state'
 
 test('Word Study handles Escape inside fullscreen before the shell exits', async ({ page }) => {
   await openReader(page);
-  await page.locator('#fullscreenBtn').click();
+  await toggleReaderFullscreen(page);
   await page.locator('#readerContent [data-word-study-term]').first().click();
   await expect(page.locator('#wordStudyHeading')).toBeFocused();
   expect(await page.evaluate(() => {
@@ -131,14 +131,16 @@ test('fullscreen toolbar stays on the single scroll surface at desktop, 480px, a
   await openReader(page);
   for(const width of [1440, 480, 320]){
     await page.setViewportSize({width, height:700});
-    await page.locator('#fullscreenBtn').click();
+    await toggleReaderFullscreen(page);
     await page.locator('#view-reader').evaluate(shell => { shell.scrollTop = shell.scrollHeight; });
     const geometry = await page.evaluate(() => {
       const shell = document.getElementById('view-reader');
       const toolbar = shell.querySelector('.reader-toolbar');
       const a = shell.getBoundingClientRect();
       const b = toolbar.getBoundingClientRect();
-      const primaryRows = ['#scripturePickerTrigger', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
+      const primaryRows = (toolbar.classList.contains('reader-compact-mobile')
+        ? ['.reader-compact-tabs button','#scripturePickerTrigger','#readerTranslationTrigger','#readAloudPlay','#readerMoreTrigger']
+        : ['#scripturePickerTrigger', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn'])
         .map(selector => Math.round(document.querySelector(selector === '#readerTranslation' && document.querySelector(selector).hidden ? '#readerTranslationTrigger' : selector).getBoundingClientRect().top));
       return {
         shellScroll:shell.scrollTop,
@@ -157,7 +159,7 @@ test('fullscreen toolbar stays on the single scroll surface at desktop, 480px, a
     expect(geometry.toolbarTop).toBeGreaterThanOrEqual(geometry.shellTop - 1);
     expect(geometry.toolbarTop).toBeLessThanOrEqual(geometry.shellTop + (width === 1440 ? 21 : 13));
     expect(geometry.shellRight).toBe(width);
-    expect(geometry.rows).toBe(width === 1440 ? 1 : 2);
+    expect(geometry.rows).toBe(width === 1440 ? 1 : 3);
     expect(geometry.overflow).toBe(false);
     await page.locator('#readerMoreTrigger').click();
     expect(await page.evaluate(() => [...document.querySelectorAll('#readerSecondaryControls *')].every(element => {
@@ -165,7 +167,7 @@ test('fullscreen toolbar stays on the single scroll surface at desktop, 480px, a
       return rect.left >= -1 && rect.right <= innerWidth + 1;
     }))).toBe(true);
     await page.locator('#readerMoreTrigger').click();
-    await page.locator('#fullscreenBtn').click();
+    await toggleReaderFullscreen(page);
   }
 });
 
@@ -173,7 +175,7 @@ test('More remains directly below the fullscreen toolbar after deep shell scroll
   await openReader(page);
   for(const width of [1440, 480, 320]){
     await page.setViewportSize({width, height:700});
-    await page.locator('#fullscreenBtn').click();
+    await toggleReaderFullscreen(page);
     await page.locator('#view-reader').evaluate(shell => { shell.scrollTop = shell.scrollHeight; });
     const beforeOpen = await page.locator('#view-reader').evaluate(shell => shell.scrollTop);
     await page.locator('#readerMoreTrigger').click();
@@ -182,7 +184,7 @@ test('More remains directly below the fullscreen toolbar after deep shell scroll
       const shell = document.getElementById('view-reader');
       const toolbar = shell.querySelector('.reader-toolbar').getBoundingClientRect();
       const panel = document.getElementById('readerSecondaryControls').getBoundingClientRect();
-      const primaryBottom = Math.max(...['scripturePickerTrigger', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
+      const primaryBottom = Math.max(...['scripturePickerTrigger', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger']
         .map(id => document.getElementById(id).getBoundingClientRect().bottom));
       return {toolbarTop:toolbar.top, toolbarBottom:toolbar.bottom, panelTop:panel.top, panelBottom:panel.bottom,
         primaryBottom, shellTop:shell.getBoundingClientRect().top,
@@ -197,23 +199,24 @@ test('More remains directly below the fullscreen toolbar after deep shell scroll
     expect(geometry.overflow).toBe(false);
     await selectReaderOption(page.locator('#readAloudSpeed'),'1.25');
     const previousVerse = Number(await page.locator('#verseSelect').inputValue());
-    await page.locator('#readerVerseNavigation [data-reader-action="next-verse"]').click();
+    await page.locator('[data-reader-action="next-verse"]').click();
     await expect(page.locator('#verseSelect')).toHaveValue(String(previousVerse + 1));
     await page.locator('#readerMoreTrigger').click();
     await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
-    await page.locator('#fullscreenBtn').click();
+    await toggleReaderFullscreen(page);
   }
 });
 
-test('mobile Fullscreen icon changes visually with the same control and accessible name', async ({ page }) => {
+test('mobile Options Fullscreen changes its label with the same control and accessible name', async ({ page }) => {
   await openReader(page);
   await page.setViewportSize({width:320, height:700});
   const button = page.locator('#fullscreenBtn');
-  const inactiveIcon = await button.evaluate(element => getComputedStyle(element, '::after').content);
+  await page.evaluate(()=>ReaderTranslationLoader.ensure());
+  await page.locator('#readerMoreTrigger').click();
+  const inactiveText = await button.textContent();
   await expect(button).toHaveAccessibleName('Enter Fullscreen');
   await button.click();
-  const activeIcon = await button.evaluate(element => getComputedStyle(element, '::after').content);
-  expect(activeIcon).not.toBe(inactiveIcon);
+  expect(await button.textContent()).not.toBe(inactiveText);
   await expect(button).toHaveAccessibleName('Exit Fullscreen');
   await button.click();
   await expect(button).toHaveAccessibleName('Enter Fullscreen');
@@ -233,7 +236,7 @@ test('fullscreen Play and Stop share the resume cursor across a chapter boundary
   await selectReaderOption(page.locator('#verseSelect'),'51');
   await page.locator('#readerMoreTrigger').click();
   await page.locator('#readAloudPlay').click();
-  await page.locator('#fullscreenBtn').click();
+  await toggleReaderFullscreen(page);
   await expect(page.locator('#readAloudPlay')).toHaveText('Stop');
   const passage = await page.locator('#readerContent').elementHandle();
   await page.evaluate(() => window.__utterances[0].onend());
@@ -251,6 +254,8 @@ for(const width of [1280,1440,390,320])for(const selected of [null,45,20]){
     await page.setViewportSize({width,height:900});
     await page.emulateMedia({reducedMotion:'reduce'});
     await openReader(page);
+    await page.evaluate(()=>ReaderTranslationLoader.ensure());
+    if(width<620) await page.locator('#readerMoreTrigger').click();
     await page.evaluate(async selected=>{
       await initializeBibleExperience();await changeTranslation('web');await document.fonts.ready;
       await navigateReaderToPassage('genesis',24,selected);
@@ -275,6 +280,7 @@ for(const width of [1280,1440,390,320])for(const selected of [null,45,20]){
     await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
     await expect(button).toBeFocused();
     await assertAnchor(saved);
+    if(width<620) await page.locator('#readerMoreTrigger').press('Escape');
     await expect(anchor).toBeInViewport();
     await expect(page.locator('#verseSelect')).toHaveValue(selected===null?'':String(selected));
     // Reading can continue inside fullscreen; exiting must preserve the new anchor.
@@ -285,7 +291,7 @@ for(const width of [1280,1440,390,320])for(const selected of [null,45,20]){
     const fullscreenAnchor=await visibleAnchor();
     await page.keyboard.press('Escape');
     await expect(page.locator('#view-reader')).not.toHaveClass(/reader-fullscreen/);
-    await expect(button).toBeFocused();
+    await expect(width<620?page.locator('#readerMoreTrigger'):button).toBeFocused();
     await assertAnchor(fullscreenAnchor);
     const exitOffset=await page.locator('#readerContent [data-verse-number="50"]').evaluate(el=>el.getBoundingClientRect().top-readerVisibleTop());
     expect(exitOffset).toBeGreaterThanOrEqual(15);expect(exitOffset).toBeLessThan(300);
@@ -307,7 +313,7 @@ test('fullscreen transfers the reading anchor without changing active narration'
   await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number','45');
   const state=()=>page.evaluate(()=>({selected:currentVerse,spoken:currentSpokenVerse,last:lastSpokenVerse,cursor:getPlaybackResumeCursor(),utterances:__spoken.length,cancels:__cancels}));
   const before=await state();
-  await page.locator('#fullscreenBtn').click();expect(await state()).toEqual(before);
+  await toggleReaderFullscreen(page);expect(await state()).toEqual(before);
   await page.keyboard.press('Escape');expect(await state()).toEqual(before);
   await expect(page.locator('#readAloudPlay')).toHaveText('Stop');
   await page.evaluate(()=>window.__spoken.at(-1).onend());

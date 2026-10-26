@@ -1,4 +1,4 @@
-const {selectReaderOption}=require('./reader-navigation-test-helper');
+const {selectReaderOption,toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
@@ -277,7 +277,7 @@ for(const width of [320, 375, 480]){
   test(`cloud fullscreen, Scripture, Word Study and keyboard controls fit ${width}px`, async ({page}) => {
     await page.setViewportSize({width, height:800}); await install(page); await mockEndpoint(page); await open(page);
     for(const fullscreen of [false, true]){
-      if(fullscreen) await page.locator('#fullscreenBtn').click();
+      if(fullscreen) await toggleReaderFullscreen(page);
       const before = await page.locator('#readerContent .reader-verse').allTextContents();
       const play = page.locator('#readAloudPlay'); await play.focus(); await play.press('Enter');
       await countSources(page, fullscreen ? 2 : 1);
@@ -287,6 +287,11 @@ for(const width of [320, 375, 480]){
       expect(await page.locator('#readerContent .reader-verse').allTextContents()).toEqual(before);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await play.press('Enter');
+      expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');
+      await page.locator('#readerMoreTrigger').click();
+      await page.locator('.reader-compact-stop').click();
+      expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+      await page.locator('#readerMoreTrigger').click();
       const token = page.locator('#readerContent [data-word-study-term]').first(); await token.focus(); await token.press('Enter');
       await expect(page.locator('#wordStudyPanel')).toBeVisible(); await page.keyboard.press('Escape');
       await expect(token).toBeFocused();

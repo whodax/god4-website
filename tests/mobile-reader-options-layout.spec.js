@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 
 test.use({hasTouch:true});
@@ -8,7 +9,7 @@ async function open(page,width,fullscreen){
   await page.goto('/');await page.evaluate(()=>initializeBibleExperience());
   await page.evaluate(()=>document.fonts.ready);
   await page.evaluate(()=>document.getElementById('view-reader').scrollIntoView({block:'start',behavior:'instant'}));
-  if(fullscreen)await page.locator('#fullscreenBtn').tap();
+  if(fullscreen)await toggleReaderFullscreen(page);
   await page.locator('#readerMoreTrigger').tap();await page.evaluate(()=>ReaderTranslationLoader.ensure());
   await page.evaluate(()=>document.fonts.ready);
 }
@@ -16,10 +17,9 @@ async function open(page,width,fullscreen){
 async function geometry(page){
   return page.evaluate(()=>{
     const selectors=[
-      ['[data-reader-action="previous-verse"]','[data-reader-action="next-verse"]'],
       ['[data-reader-select="bookSelect"]','[data-reader-select="chapterSelect"]','[data-reader-select="verseSelect"]'],
       ['#readerSaveVerse','[data-voice-command-button]'],
-      ['[data-reader-select="readAloudVoice"]','[data-reader-select="readAloudSpeed"]']
+      ['#fullscreenBtn','.reader-compact-stop']
     ];
     const rect=element=>{
       const bounds=element.getBoundingClientRect();
@@ -45,7 +45,7 @@ function assertRows(measurement,width){
 }
 
 for(const width of [320,360,390,430])for(const fullscreen of [false,true]){
-  test(`${width}px fullscreen=${fullscreen}: exactly four compact rows leave Scripture visible`,async({page},testInfo)=>{
+  test(`${width}px fullscreen=${fullscreen}: compact Options retain detailed navigation, saving and fullscreen leave Scripture visible`,async({page},testInfo)=>{
     await open(page,width,fullscreen);
     const measured=await geometry(page);console.log(JSON.stringify({width,fullscreen,...measured}));
     await page.screenshot({path:testInfo.outputPath('expanded-options.png')});
@@ -73,12 +73,12 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true]){
     await page.locator('#readerMoreTrigger').tap();
     await expect(page.locator('#readerMoreTrigger')).toHaveText('Options');
     await expect(page.locator('#readerMoreTrigger')).toBeFocused();
-    if(fullscreen)await page.locator('#fullscreenBtn').tap();
+    if(fullscreen)await toggleReaderFullscreen(page);
     await page.locator('.saved-pill').tap();
     await page.locator('.saved-verse-remove').filter({hasText:'Remove'}).tap();
     await expect(page.locator('#savedCount')).toHaveText('0');
     expect(await page.evaluate(()=>UserData.savedVerses.load())).toEqual([]);
-    if(fullscreen)await page.locator('#fullscreenBtn').tap();
+    if(fullscreen)await toggleReaderFullscreen(page);
     await page.locator('#readerMoreTrigger').tap();
     await expect(page.locator('#readerSaveVerse')).toHaveText('Save verse');
     await expect(page.locator('#readerSaveVerse')).toHaveAttribute('aria-pressed','false');
@@ -101,7 +101,7 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true]){
     await expect.poll(()=>page.locator('#readerSecondaryControls button,#readerSecondaryControls select').evaluateAll(controls=>controls.filter(control=>control.getClientRects().length).every(control=>getComputedStyle(control).fontSize==='20px'))).toBe(true);
     const enlarged=await geometry(page);console.log(JSON.stringify({width,fullscreen,enlarged}));assertRows(enlarged,width);
     for(const selector of ['[data-reader-select="bookSelect"]','[data-reader-select="chapterSelect"]','[data-reader-select="verseSelect"]','#readerSaveVerse','[data-voice-command-button]','[data-reader-select="readAloudVoice"]','[data-reader-select="readAloudSpeed"]']){
-      const element=page.locator('#readerSecondaryControls '+selector);await element.scrollIntoViewIfNeeded();
+      const element=page.locator('#view-reader '+selector);await element.scrollIntoViewIfNeeded();
       expect(await element.evaluate(control=>{const bounds=control.getBoundingClientRect();return control.contains(document.elementFromPoint(bounds.left+bounds.width/2,bounds.top+bounds.height/2));})).toBe(true);
     }
     await page.locator('[data-reader-select="bookSelect"]').tap();

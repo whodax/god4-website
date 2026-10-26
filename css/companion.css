@@ -662,3 +662,63 @@
     .offline-bibles-action{width:100%;}
   }
   @media(prefers-reduced-motion:reduce){#view-reader .reader-toolbar,#view-reader.reader-controls-hidden .reader-toolbar{transition:none;}}
+
+  /* Mobile-only composition of the original Reader controls. Desktop DOM and
+     native controls are restored by ReaderCompactControls at the breakpoint. */
+  .reader-compact-tabs[hidden],.reader-compact-playback[hidden],.reader-compact-stop[hidden]{display:none;}
+  @media(max-width:620px){
+    .companion-section:has(.reader-compact-layout){padding-inline:8px;}
+    .reader-compact-layout #view-reader{padding-inline:8px;}
+    .reader-compact-layout .bs-nav{display:grid;grid-template-columns:repeat(4,minmax(44px,1fr));gap:2px;padding:4px 8px;}
+    .reader-compact-layout .bs-nav .bs-btn{min-width:44px;min-height:44px;width:100%;padding:4px 2px;letter-spacing:0;}
+    .reader-compact-layout:has(#view-reader.active) .compare-edition-control{display:none;}
+    .reader-compact-layout #offlineBiblesTrigger{font-size:0;}
+    .reader-compact-layout #offlineBiblesTrigger::after{content:'Offline';font-size:12px;}
+    .reader-toolbar.reader-compact-mobile{grid-template-columns:repeat(6,minmax(44px,1fr));gap:4px 2px;}
+    .reader-compact-tabs{display:none;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;grid-column:1 / -1;grid-row:1;}
+    #view-reader.reader-fullscreen .reader-compact-tabs{display:grid;}
+    .reader-compact-tabs button{min-height:44px;min-width:44px;padding:4px 2px;border:1px solid var(--line);border-radius:2px;background:var(--vellum);color:var(--ink);font:12px 'Inter','Inter Fallback',sans-serif;}
+    .reader-compact-tabs [aria-pressed="true"]{background:var(--ink);color:var(--vellum-card);}
+    :root[data-theme="dark"] .reader-compact-tabs [aria-pressed="true"]{background:var(--theme-surface);color:var(--ink);}
+    .reader-compact-layout #view-reader:not(.reader-fullscreen) .reader-show-controls{top:var(--reader-recovery-top,calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 4px));}
+    .reader-toolbar.reader-compact-mobile > #readerReferenceNavigation{grid-column:1 / 6;grid-row:1;grid-template-columns:44px minmax(0,1fr) 44px;gap:2px;}
+    .reader-toolbar.reader-compact-mobile > #readerMoreTrigger{grid-column:6;grid-row:1;font-size:0;padding:4px;}
+    .reader-compact-mobile #readerMoreTrigger::after{content:'\2699\FE0E';font-size:22px;}
+    .reader-compact-mobile #readerMoreTrigger[aria-expanded="true"]{background:var(--highlight);border-color:var(--gold);}
+    .reader-compact-playback{display:grid;grid-template-columns:repeat(6,minmax(44px,1fr));gap:2px;grid-column:1 / -1;grid-row:2;}
+    .reader-compact-playback > button,.reader-compact-playback select,.reader-compact-playback .reader-option-trigger{box-sizing:border-box;min-width:44px;width:100%;min-height:44px;padding:4px 2px;border:1px solid var(--line);border-radius:2px;background:var(--vellum);color:var(--ink);font:12px 'Inter','Inter Fallback',sans-serif;}
+    .reader-compact-playback > #readerTranslation,.reader-compact-playback > #readerTranslationTrigger{grid-column:1;grid-row:1;}
+    .reader-compact-playback > [data-reader-action="previous-verse"]{grid-column:2;grid-row:1;font-size:0;}
+    .reader-compact-playback > [data-reader-action="previous-verse"]::after{content:'\2190';font-size:22px;}
+    .reader-compact-playback > #readAloudPlay{grid-column:3;grid-row:1;font-size:0;}
+    .reader-compact-playback > #readAloudPlay::after{content:'\25B6';font-size:20px;}
+    .reader-compact-playback > #readAloudPlay[data-playback-state="playing"]::after{content:'\23F8';}
+    .reader-compact-playback > #readAloudPlay[data-playback-state="preparing"]::after{content:'\25A0';}
+    .reader-compact-playback > [data-reader-action="next-verse"]{grid-column:4;grid-row:1;font-size:0;}
+    .reader-compact-playback > [data-reader-action="next-verse"]::after{content:'\2192';font-size:22px;}
+    .reader-compact-playback .reader-speech-field{display:block;min-width:0;grid-row:1;}
+    .reader-compact-playback .reader-speech-field:has(#readAloudVoice){grid-column:5;}
+    .reader-compact-playback .reader-speech-field:has(#readAloudSpeed){grid-column:6;}
+    .reader-compact-playback .reader-speech-field label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+    .reader-compact-playback [data-reader-select="readAloudVoice"],.reader-compact-playback [data-reader-select="readAloudSpeed"]{font-size:0;}
+    .reader-compact-playback [data-reader-select="readAloudVoice"]::after{content:'\266B';font-size:22px;}
+    .reader-compact-playback [data-reader-select="readAloudSpeed"]::after{content:'\23F1\FE0E';font-size:22px;}
+    .reader-compact-mobile > .reader-secondary-controls{grid-row:3;grid-column:1 / -1;max-height:calc(100dvh - var(--reader-nav-bottom,105px) - 160px);}
+    #view-reader.reader-fullscreen .reader-compact-mobile > #readerReferenceNavigation,#view-reader.reader-fullscreen .reader-compact-mobile > #readerMoreTrigger{grid-row:2;}
+    #view-reader.reader-fullscreen .reader-compact-playback{grid-row:3;}
+    #view-reader.reader-fullscreen .reader-compact-mobile > .reader-secondary-controls{grid-row:4;}
+    #view-reader.reader-fullscreen .reader-compact-mobile > .reader-secondary-controls{max-height:calc(100dvh - 160px);}
+    .reader-compact-mobile #readerVerseNavigation,.reader-compact-mobile .reader-speech-preferences{display:none;}
+    .reader-compact-mobile .reader-detailed-navigation{grid-row:1;}
+    .reader-compact-mobile #readerSaveVerse{grid-row:2;}
+    .reader-compact-mobile #readerSecondaryControls [data-voice-command-button]{grid-row:2;}
+    .reader-compact-mobile #fullscreenBtn{grid-row:3;grid-column:1;}
+    .reader-compact-mobile .reader-compact-stop{grid-row:3;grid-column:2;}
+    .reader-compact-mobile #fullscreenBtn,.reader-compact-mobile .reader-compact-stop{
+      box-sizing:border-box;min-height:44px;min-width:44px;padding:7px 6px;
+      background:var(--vellum);color:var(--ink);border:1px solid var(--line);border-radius:2px;
+      font:13px/1.4 'Inter','Inter Fallback',sans-serif;cursor:pointer;
+    }
+    .reader-compact-mobile button:focus-visible,.reader-compact-mobile select:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+    .reader-compact-mobile button:disabled{opacity:.5;cursor:not-allowed;}
+  }
