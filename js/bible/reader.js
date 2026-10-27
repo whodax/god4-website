@@ -26,6 +26,11 @@ let voiceHandledResults = new Set();
 let voiceRestartAttempts = 0;
 let voicePermissionChecked = false;
 let voiceCommandsInteracted = false;
+let voiceReleaseAction = null;
+let voiceReleaseTimer = null;
+let voiceTurnWasPlaying = false;
+let voiceTurnError = '';
+let voiceReleaseFailed = false;
 
 function getReaderControls(){
   return document.querySelectorAll('[data-reader-controls]');
@@ -102,9 +107,12 @@ function updateReaderControls(){
 }
 
 function setVoiceButtonState(isListening){
+  var closing = isAndroidVoiceCommands() && voiceCommandsStopping && voiceRecognitionActive;
   document.querySelectorAll('[data-voice-command-button]').forEach(function(button){
-    button.setAttribute('aria-pressed', isListening ? 'true' : 'false');
-    button.title = isListening ? 'Stop listening for voice commands' : 'Start voice commands';
+    button.setAttribute('aria-pressed', isListening || closing ? 'true' : 'false');
+    button.setAttribute('aria-busy', closing ? 'true' : 'false');
+    button.title = closing ? 'Closing microphone; tap to cancel the pending command' : isListening ? 'Stop listening for voice commands' : 'Start voice commands';
+    if(isAndroidVoiceCommands()) button.setAttribute('aria-label',closing ? 'Voice Commands, closing microphone; tap to cancel pending playback' : isListening ? 'Voice Commands, listening; tap to stop' : 'Voice Commands, pause reading to speak a command');
   });
 }
 
@@ -141,6 +149,7 @@ function replacePlaybackResumeCursor(cursor){
 }
 
 function stopSpeechForManualNavigation(preserveChapter){
+  cancelReaderVoicePlayback();
   readerPlaybackIntent++;
   readerPlaybackPending = false;
   clearSpokenVerseHighlight();
@@ -698,8 +707,12 @@ function handleSpokenReferenceCommand(command){
   return true;
 }
 
+function normalizeVoiceCommand(transcript){
+  return String(transcript || '').toLowerCase().trim().replace(/[.!?]+$/, '').trim().replace(/\s+/g, ' ');
+}
+
 function handleVoiceCommand(transcript){
-  var command = transcript.toLowerCase().trim().replace(/[.!?]+$/, '');
+  var command = normalizeVoiceCommand(transcript);
   setVoiceStatus('Command recognized: ' + transcript);
   if(/^(repeat|repeat verse|repeat last verse)$/.test(command)) repeatLastSpokenVerse();
   else if(/^play( the passage)?$/.test(command)) playReader();
@@ -733,23 +746,89 @@ function finishVoiceCommands(showReadyStatus){
 }
 
 function isInterimPlaybackCommand(transcript){
-  var command = String(transcript || '').toLowerCase().trim().replace(/[.!?]+$/, '').replace(/\s+/g, ' ');
+  var command = normalizeVoiceCommand(transcript);
   return /^(pause|stop|play|resume|continue|repeat|repeat verse|repeat last verse)$/.test(command);
+}
+
+function isAndroidVoiceCommands(){
+  return /Android/i.test(window.navigator && window.navigator.userAgent || '');
+}
+
+function cancelReaderVoicePlayback(){
+  voiceReleaseAction = null;
+  voiceTurnWasPlaying = false;
+}
+
+// Android capture and narration take explicit turns. Only onend confirms release;
+// neither a timeout nor a per-verse callback may reopen capture or start audio.
+function releaseReaderMicrophone(action){
+  if(voiceCommandsStopping && voiceReleaseFailed){
+    cancelReaderVoicePlayback();
+    setVoiceStatus(voiceTurnError);
+    return;
+  }
+  voiceReleaseAction = action;
+  voiceCommandsListening = false;
+  if(!voiceRecognitionActive) return;
+  if(voiceCommandsStopping) return;
+  voiceReleaseFailed = false;
+  voiceCommandsStopping = true;
+  clearVoiceCommandTimers();
+  setVoiceButtonState(false);
+  setVoiceStatus('Closing microphone before continuing.');
+  voiceReleaseTimer = setTimeout(function(){
+    voiceReleaseTimer = null;
+    voiceReleaseFailed = true;
+    cancelReaderVoicePlayback();
+    voiceTurnError = 'Microphone has not closed. Tap Voice Commands to stop it, then try Play again.';
+    setVoiceStatus(voiceTurnError);
+  },5000);
+  try {
+    if(typeof voiceRecognition.abort === 'function') voiceRecognition.abort();
+    else voiceRecognition.stop();
+  } catch(error){
+    cancelReaderVoicePlayback();
+    voiceReleaseFailed = true;
+    voiceTurnError = 'Microphone could not close. Stop Voice Commands before trying Play again.';
+    setVoiceStatus(voiceTurnError);
+  }
+}
+
+function deferReaderSpeechUntilMicrophoneReleased(action){
+  if(!isAndroidVoiceCommands() || !voiceRecognitionActive) return false;
+  releaseReaderMicrophone(action);
+  return true;
+}
+
+function completeAndroidVoiceTurn(recognition){
+  if(voiceRecognition !== recognition) return;
+  clearTimeout(voiceReleaseTimer);
+  voiceReleaseTimer = null;
+  var action = voiceReleaseAction;
+  var releaseFailed = voiceReleaseFailed;
+  voiceReleaseFailed = false;
+  cancelReaderVoicePlayback();
+  voiceRecognition = null;
+  finishVoiceCommands(false);
+  if(action){setVoiceStatus('Microphone off.');action();}
+  else setVoiceStatus(releaseFailed ? 'Microphone is now off. Pending command canceled; tap Play to continue.' : voiceTurnError || 'Microphone off. Tap Voice Commands for another command or Play to read.');
 }
 
 function createVoiceRecognition(){
   var Recognition = getVoiceRecognition();
   if(!Recognition || voiceRecognition) return voiceRecognition;
-  voiceRecognition = new Recognition();
-  voiceRecognition.continuous = true;
-  voiceRecognition.interimResults = true;
+  var recognition = voiceRecognition = new Recognition();
+  voiceRecognition.continuous = !isAndroidVoiceCommands();
+  voiceRecognition.interimResults = !isAndroidVoiceCommands();
   voiceRecognition.lang = 'en-US';
   voiceRecognition.onstart = function(){
+    if(isAndroidVoiceCommands() && (voiceRecognition !== recognition || !voiceCommandsListening || voiceCommandsStopping)) return;
     voiceRecognitionActive = true;
     voiceRestartAttempts = 0;
     if(voiceCommandsListening) setVoiceStatus('Listening for a command...');
   };
   voiceRecognition.onresult = function(event){
+    if(isAndroidVoiceCommands() && voiceRecognition !== recognition) return;
     if(!voiceCommandsListening || !voiceRecognitionActive || !event.results) return;
     var resultIndex = Number.isInteger(event.resultIndex) ? event.resultIndex : 0;
     for(var index = resultIndex; index < event.results.length; index++){
@@ -757,6 +836,16 @@ function createVoiceRecognition(){
       if(voiceHandledResults.has(index)) continue;
       if(!result || !result[0] || !result[0].transcript) continue;
       var interim = result.isFinal === false;
+      if(isAndroidVoiceCommands()){
+        if(result.isFinal !== true || !normalizeVoiceCommand(result[0].transcript)) continue;
+        var transcript = result[0].transcript;
+        var resume = voiceTurnWasPlaying && !/^(pause|stop)$/.test(normalizeVoiceCommand(transcript));
+        releaseReaderMicrophone(function(){
+          if(resume && typeof BibleSpeech !== 'undefined' && BibleSpeech.getState()==='paused') resumeReader();
+          handleVoiceCommand(transcript);
+        });
+        return;
+      }
       if(interim && !isInterimPlaybackCommand(result[0].transcript)) continue;
       voiceResultHandled = true;
       voiceHandledResults.add(index);
@@ -764,8 +853,16 @@ function createVoiceRecognition(){
     }
   };
   voiceRecognition.onerror = function(event){
+    if(isAndroidVoiceCommands() && voiceRecognition !== recognition) return;
     var intentionalStop = voiceCommandsStopping || !voiceCommandsListening;
     if(intentionalStop && event.error === 'aborted') return;
+    if(isAndroidVoiceCommands()){
+      cancelReaderVoicePlayback();
+      releaseReaderMicrophone(null);
+      voiceTurnError = getVoiceRecognitionErrorMessage(event.error)+(typeof BibleSpeech !== 'undefined' && BibleSpeech.getState()==='paused' ? ' Reading is paused; tap Play to continue.' : ' Tap Voice Commands to try again.');
+      setVoiceStatus(voiceTurnError);
+      return;
+    }
     if(event.error === 'no-speech'){
       voiceResultHandled=false;
       setVoiceStatus('No speech detected. Activate Voice Commands to listen again.');
@@ -778,6 +875,10 @@ function createVoiceRecognition(){
     finishVoiceCommands(false);
   };
   voiceRecognition.onend = function(){
+    if(isAndroidVoiceCommands()){
+      completeAndroidVoiceTurn(recognition);
+      return;
+    }
     if(!voiceRecognitionActive && !voiceCommandsStopping) return;
     voiceRecognitionActive = false;
     var handledResult = voiceResultHandled;
@@ -809,13 +910,14 @@ function startVoiceRecognition(){
     recognition.start();
   } catch(error){
     voiceRecognitionActive = false;
-    if(error && error.name === 'InvalidStateError' && voiceRestartAttempts < 3){
+    if(!isAndroidVoiceCommands() && error && error.name === 'InvalidStateError' && voiceRestartAttempts < 3){
       voiceRestartAttempts++;
       scheduleVoiceRecognitionRestart(100);
       return;
     }
     setVoiceStatus('Voice command error: ' + (error && error.message ? error.message : 'Unable to start recognition.'));
     finishVoiceCommands(false);
+    if(isAndroidVoiceCommands()) voiceRecognition = null;
   }
 }
 
@@ -832,6 +934,13 @@ function enableVoiceCommands(){
     setVoiceStatus('Voice commands are not supported in this browser. Read Aloud is still available.');
     return;
   }
+  if(isAndroidVoiceCommands()){
+    if(voiceRecognitionActive) return;
+    voiceTurnError = '';
+    voiceTurnWasPlaying = typeof BibleSpeech !== 'undefined' && ['playing','preparing'].includes(BibleSpeech.getState());
+    if(readerPlaybackPending) stopReadAloud();
+    else if(voiceTurnWasPlaying) BibleSpeech.pauseForVoiceCommand();
+  }
   clearVoiceCommandTimers();
   voiceRecognitionBlocked = false;
   voiceCommandsStopping = false;
@@ -841,6 +950,13 @@ function enableVoiceCommands(){
 }
 
 function disableVoiceCommands(){
+  if(isAndroidVoiceCommands()){
+    cancelReaderVoicePlayback();
+    if(voiceCommandsStopping){
+      try { if(voiceRecognition && voiceRecognition.abort) voiceRecognition.abort(); } catch(error) { /* onend still owns release. */ }
+    } else releaseReaderMicrophone(null);
+    return;
+  }
   clearVoiceCommandTimers();
   voiceCommandsListening = false;
   voiceCommandsStopping = true;
@@ -856,11 +972,12 @@ function disableVoiceCommands(){
 
 function toggleVoiceCommands(){
   voiceCommandsInteracted = true;
-  if(voiceCommandsListening) disableVoiceCommands();
+  if(voiceCommandsListening || isAndroidVoiceCommands() && voiceRecognitionActive) disableVoiceCommands();
   else enableVoiceCommands();
 }
 
 function initializeVoiceCommands(){
+  if(isAndroidVoiceCommands()) setVoiceButtonState(voiceCommandsListening);
   if(voicePermissionChecked) return;
   voicePermissionChecked = true;
   if(!getVoiceRecognition() || !navigator.permissions || typeof navigator.permissions.query !== 'function') return;
@@ -872,7 +989,7 @@ function initializeVoiceCommands(){
   }
   Promise.resolve(permissionRequest).then(function(permission){
     if(!permission) return;
-    if(permission.state === 'granted' && !voiceCommandsInteracted) enableVoiceCommands();
+    if(permission.state === 'granted' && !voiceCommandsInteracted && !isAndroidVoiceCommands()) enableVoiceCommands();
     else if(permission.state === 'denied'){
       voiceRecognitionBlocked = true;
       setVoiceStatus(getVoiceRecognitionErrorMessage('not-allowed'));
@@ -1454,7 +1571,17 @@ next: nextChapter,
 if(handlers[action]) button.addEventListener('click', function(){ runWithBibleExperience(handlers[action]); });
 });
 document.querySelectorAll('[data-voice-command-button]').forEach(function(button){
-button.addEventListener('click', function(){ if(typeof BibleSpeech !== 'undefined') BibleSpeech.prepare(); runWithBibleExperience(toggleVoiceCommands); });
+button.addEventListener('click', function(){
+if(typeof BibleSpeech !== 'undefined'){
+  if(!isAndroidVoiceCommands()) BibleSpeech.prepare();
+  else if(!voiceRecognitionActive && BibleSpeech.getState()==='idle'){
+    // Unlock cloud audio in the intentional gesture, then suspend it before capture.
+    BibleSpeech.prepare();
+    if(typeof BibleCloudTTS !== 'undefined') BibleCloudTTS.pause();
+  }
+}
+runWithBibleExperience(toggleVoiceCommands);
+});
 });
 ['readerContent'].forEach(function(id){
 var container = document.getElementById(id);

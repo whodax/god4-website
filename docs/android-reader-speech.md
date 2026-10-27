@@ -1,5 +1,150 @@
 # Android Reader speech follow-up
 
+## Current Android isolation correction
+
+Starting point: `f8810af547e38c21b92f6693edf06e3a6ff5021a`, branch
+`feature/mobile-reader-compact-controls`. The owner approved explicit Android
+command turns after physical testing found release-blocking narration interference.
+
+The supplied `da07ac6d` preview's Reader, speech, cloud-TTS and service-worker
+sources matched this baseline after LF canonicalization. The issue was not a
+different server-deployed implementation; the owner's installed device cache was
+not inspected. No preview or production files were changed.
+
+### Findings reproduced before the production-code changes
+
+All four initial regression cases failed, across native and cloud providers:
+
+- Recognition remained active when narration started. A final transcript of
+  `John chapter one` entered the reference-navigation route, which cancels speech.
+  Interim `pause` and final `stop` could also control the Reader's own narration.
+- Every handled final result, including unrecognized narration, made `onend`
+  eligible to restart recognition. The reproduced trace shows a new microphone
+  start while narration is playing. Continuous mode does not guarantee that a
+  platform service stays connected.
+- The microphone button unconditionally prepared/resumed the cloud audio context
+  on both enabling and stopping Voice Commands, competing with capture transitions.
+- The command routes were present; there was no Play-only command table. The
+  overlapping capture, premature interim dispatch and restart paths could prevent
+  reliable subsequent commands. Actual ASR accuracy and the precise Android
+  driver callback behind each physical interruption still require device tracing.
+
+This proves an application feedback/cancellation path, not the identity of a
+speaker in a physical microphone recording. Web Speech results do not identify
+whether a transcript came from the visitor or the loudspeaker. The correction
+therefore separates capture from narration instead of guessing which words are
+echoes or changing Scripture text.
+
+### Approved Android interaction
+
+Tap Voice Commands in Options (using Show Controls first if hidden). Reading
+pauses before capture starts. Speak one command. Only a final transcript is
+accepted; capture is aborted (or stopped if abort is unavailable), and the command
+executes only after that recognizer's `onend`. Tap Voice Commands again to issue
+another command, including Pause or Stop during reading. Desktop listening keeps
+its existing behavior.
+
+Android does not auto-start capture merely because microphone permission was
+previously granted, or restart it after silence, a result, an error, a verse,
+chapter, or speech completion. Each intentional turn has its own recognizer;
+callbacks from an older one cannot control a newer turn. The original command
+routes and aliases are retained. Pause and Stop leave the expected paused/stopped
+state. Other commands preserve the prior reading intent before applying their
+existing navigation/playback behavior.
+
+All shared speech entry points, including manual Play, resume, repeat and direct
+verse playback, wait for microphone release on Android. Stop and navigation
+cancel superseded pending playback. A five-second watchdog cancels a pending
+action if release never arrives; it never assumes the microphone is released or
+starts audio on a timer. Late release cannot execute that canceled action.
+Repeated Play after a failed release is also rejected until release is confirmed,
+so a later callback cannot revive a new, unbounded pending action. Button
+pressed/busy state and polite status messages distinguish listening, closing,
+off, errors and recovery. The microphone gesture unlocks idle cloud audio and
+suspends it before capture; stopping capture no longer resumes audio implicitly.
+
+Android native synthesis may treat `pause()` as cancellation. The command-turn
+pause therefore retains the current complete verse, cancels the native transport
+with stale-callback guards, and replays that verse on resume without repeating
+the chapter introduction. This may repeat words from an intentionally interrupted
+verse, but does not skip any. Cloud audio resumes its existing paused source.
+A cloud failure during capture cannot start native fallback until capture ends.
+Book/Chapter introductions, no added verse numbers, stable Play state, KJV supplied
+words and all translations remain unchanged.
+
+### Scope and remaining acceptance
+
+Only `js/bible/reader.js`, `js/bible/speech.js`, this document and the new
+`tests/reader-voice-command-isolation.spec.js` change. No CSS, markup, design tokens,
+Bible data, manifests, service worker, CSP or cloud settings change. Shell 52 and
+its 49 asset paths remain unchanged. Installed-user delivery still needs a release
+cache update before production approval.
+
+Physical Android acceptance remains required for microphone permission prompts,
+native/cloud audio, recognition accuracy, TalkBack, native verse restart behavior,
+and audio-focus release. The browser/OS may play tones for an intentional capture
+start/end. No application-generated tone was found or added; these tests cannot
+prove that platform tones can be disabled. The existing preview remains the old
+baseline until a future authorized push.
+
+References: [recognition abort](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/abort),
+[continuous results](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/continuous),
+[Android native pause compatibility](https://github.com/mdn/browser-compat-data/blob/main/api/SpeechSynthesis.json),
+[Android audio focus](https://developer.android.com/media/optimize/audio-focus).
+
+### Current validation
+
+Final runs reconcile to **411 unique passing Playwright identities**, zero
+remaining failures/skips and zero automatic retries. All browser tests ran
+sequentially with one worker. Initial baseline reproduction: **4 failures out of
+4**, preserved in the ignored `android-isolation-before.log`; these became passing
+regressions after the correction. No existing test expectations were changed.
+
+| Coverage | Unique passes |
+| --- | ---: |
+| Android command turns, all commands/aliases individually, echo and release/error races | 82 |
+| Existing native/cloud/fallback, KJV, voice-profile, highlight and chapter playback suites | 148 |
+| Existing desktop speech/recognition/Repeat/spoken-follow cases | 66 |
+| Compact layout, Options/recovery and fullscreen | 85 |
+| Offline Bible management and PWA | 29 |
+| Unchanged startup budget and Word Study readiness | 1 |
+| **Total** | **411** |
+
+The ignored `playwright-report/android-voice-isolation-summary.json` records each
+identity and the final logs, without double-counting focused reruns. Android
+tests use an explicit Android Chrome user agent and controlled recognition/audio
+providers; the prior touch-only fixtures retain their desktop browser identity.
+The new suite checks normal/fullscreen echo rejection, stable Play mutations,
+paused/resumed native verse retention, cloud request reuse, idle capture, final
+versus interim/malformed results, errors, delayed end, timeout/repeated Play,
+superseded navigation, fallback, 320/390px fullscreen offline access and keyboard
+recovery. Existing layout tests cover 320/360/390/430px and Light/Blue Dark.
+
+Asset validation passes (36 references, 22 startup syntax checks, three manifest
+icons, all nine translation metadata entries). All three changed/new JavaScript
+files pass explicit syntax checks. All 66 Isaiah SHA-256 hashes and byte counts,
+the unchanged worker/49 assets, data/manifest/CSP checks and `git diff --check`
+pass. No Scripture data was regenerated.
+
+Startup remains **22 scripts, 270,515 decoded/canonical LF bytes**: 7,510 more than
+the f8810af baseline, with **20,399 bytes** below the unchanged 290,914-byte limit.
+Word Study network readiness measured **17.6ms** in the final run, a single
+measurement rather than a comparative latency claim.
+
+Sampled available physical memory stayed around 3.2-3.8GiB, with 19.2-19.8GiB
+commit headroom. No browser crash or memory-related interruption occurred.
+
+Recommendation: ready for code review and a future authorized preview update;
+**not approved for production until physical Android/TalkBack acceptance**. The
+application feedback paths are reproduced and covered, but desktop event mocks
+cannot establish the device's actual transcripts or suppress OS-controlled tones.
+
+## Historical f8810af checkpoint
+
+The remaining sections record the earlier implementation and its historical
+validation. Its continuous-listening description is superseded on Android by the
+explicit command turns above; desktop retains that behavior.
+
 Baseline: `3cdef581` on `feature/mobile-reader-compact-controls`.
 
 ## Playback and chapter introductions
