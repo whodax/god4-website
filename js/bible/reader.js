@@ -1216,10 +1216,12 @@ function renderPassage(bookKey, chapterNum){
   if(!data) return;
   var bookName = escapeHtml(data.bookName);
   var html = '<h2 data-book-id="' + escapeHtml(bookKey) + '" data-book-name="' + bookName + '" data-chapter="' + escapeHtml(chapterNum) + '">' + bookName + ' ' + escapeHtml(chapterNum) + '</h2>';
-  if(data.subtitle) html += '<div class="subtitle">' + escapeHtml(data.subtitle) + '</div>';
+  var webSubtitle = currentTranslation === 'web' && data.subtitle === 'World English Bible Protestant Edition';
+  if(data.subtitle) html += '<div class="subtitle' + (webSubtitle ? ' reader-web-edition-label' : '') + '">' + escapeHtml(data.subtitle) + '</div>';
   html += '<div class="reader-plan-return" hidden></div>';
   var canonLabel = BibleCanon.passageLabel(currentTranslation, bookKey, chapterNum);
-  html += '<div class="reader-chapter-caption">' + escapeHtml(data.title) + (canonLabel ? ' — ' + escapeHtml(canonLabel) : '') + '</div>';
+  var webCaption = currentTranslation === 'web' && data.title === 'World English Bible' && !canonLabel;
+  html += '<div class="reader-chapter-caption' + (webCaption ? ' reader-web-edition-label' : '') + '">' + escapeHtml(data.title) + (canonLabel ? ' — ' + escapeHtml(canonLabel) : '') + '</div>';
   if(currentTranslation === 'kjv') html += '<p class="sr-only">KJV italics: supplied words, not emphasis.</p>';
   for(var i = 0; i < data.verses.length; i++){
     if(!isRenderableVerseText(data.verses[i])) continue;

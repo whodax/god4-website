@@ -615,6 +615,8 @@
   }
 
   @media (max-width:620px){
+    /* Retain WEB edition text for assistive technology without reserving reading space. */
+    #readerContent > .reader-web-edition-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
     #view-reader{padding:16px 12px;}
     #view-reader .reader-toolbar{transition:opacity .12s ease,visibility 0s;}
     #view-reader.reader-controls-hidden{--reader-toolbar-height:calc(var(--reader-recovery-height,44px) + 4px);}
