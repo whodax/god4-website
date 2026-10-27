@@ -440,9 +440,10 @@ var BibleSpeech = (function createBibleSpeech(){
     statusMessage = '';
     announcementKey = '';
     lastResult = null;
-    state = verses.length ? 'preparing' : 'idle';
+    state = verses.length ? options && options.startPaused ? 'paused' : 'preparing' : 'idle';
     updateControls();
-    if(verses.length) speakNext(session);
+    if(verses.length && state==='paused'){pendingNext=true;pauseSpeech();}
+    else if(verses.length) speakNext(session);
     else notifyPlaybackEnd();
   }
   function playVerse(text, verseNumber, location){

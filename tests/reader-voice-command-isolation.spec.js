@@ -50,10 +50,10 @@ const commands=[
   ['pause','paused','john',2,5],['stop','idle','john',2,5],
   ...['repeat','repeat verse','repeat last verse'].map(command=>[command,'playing','john',2,5]),
   ['next verse','playing','john',2,6],['previous verse','playing','john',2,4],['back verse','playing','john',2,4],
-  ...['next chapter','next','go to next chapter'].map(command=>[command,'idle','john',3,null]),
-  ...['previous chapter','previous','back','go to previous chapter'].map(command=>[command,'idle','john',1,null]),
-  ['John chapter two','idle','john',2,null],['open Genesis 1','idle','genesis',1,null],
-  ['go to Isaiah chapter sixty four verse one','idle','isaiah',64,1],
+  ...['next chapter','next','go to next chapter'].map(command=>[command,'playing','john',3,null]),
+  ...['previous chapter','previous','back','go to previous chapter'].map(command=>[command,'playing','john',1,null]),
+  ['John chapter two','playing','john',2,null],['open Genesis 1','playing','genesis',1,null],
+  ['go to Isaiah chapter sixty four verse one','playing','isaiah',64,1],
   ['read John 1 verse 20','playing','john',1,20],['John 1 verse 20 play','playing','john',1,20],
   ['first John two verse twenty three read','playing','1-john',2,23],
   ['  Pause .  ','paused','john',2,5]
@@ -69,8 +69,8 @@ for(const provider of ['native','cloud'])for(const [spoken,state,book,chapter,ve
     await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe(state);
     await expect(page.locator('#bookSelect')).toHaveValue(book);await expect(page.locator('#chapterSelect')).toHaveValue(String(chapter));
     if(state==='playing'){
-      await expect.poll(()=>page.evaluate(()=>getPlaybackResumeCursor().verse)).toBe(verse);
-      const expected=await page.evaluate(({book,chapter,verse})=>BibleData.getVerse('web',book,chapter,verse).text,{book,chapter,verse});
+      await expect.poll(()=>page.evaluate(()=>getPlaybackResumeCursor().verse)).toBe(verse===null?1:verse);
+      const expected=await page.evaluate(({book,chapter,verse})=>BibleData.getVerse('web',book,chapter,verse===null?1:verse).text,{book,chapter,verse});
       const existingCloud=provider==='cloud' && ['play','play the passage','read','read the passage','resume','continue'].includes(spoken);
       const intro=book==='john' && chapter===2 && !existingCloud?'':await page.evaluate(({book,chapter})=>BibleData.getChapter('web',book,chapter).bookName+' chapter '+chapter+'. ',{book,chapter});
       await expect.poll(()=>text(page,provider)).toBe(intro+expected);

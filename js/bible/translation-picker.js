@@ -1,4 +1,4 @@
-async function applyReaderTranslation(translationId){
+async function applyReaderTranslation(translationId, options){
   var previousTranslation = currentTranslation;
   var previousBook = currentBook;
   var previousChapter = currentChapter, previousVerse = currentVerse;
@@ -9,6 +9,7 @@ async function applyReaderTranslation(translationId){
     ? await BibleTranslationLoader.ensure(translationId)
     : BibleData.isTranslationLoaded(translationId);
   if(requestId !== translationChangeRequest) return false;
+  if(options && (!options.isCurrent() || !loaded || !validSpokenPassage(translationId,options.target) || !document.getElementById('bookSelect') || !document.getElementById('chapterSelect'))) return false;
   if(!loaded){
     if(translationSelect) translationSelect.value = previousTranslation;
     return false;
@@ -19,6 +20,16 @@ async function applyReaderTranslation(translationId){
   UserData.translation.save(currentTranslation);
   if(typeof refreshPlanReadingSessionTranslation==='function') refreshPlanReadingSessionTranslation();
   if(translationSelect) translationSelect.value = currentTranslation;
+  if(options){
+    document.getElementById('readerTranslationStatus').textContent='';
+    populateBooks();
+    var target=options.target;
+    var selected=navigateToSpokenBook(target.bookId,target.chapter,target.verse);
+    options.committedIntent=readerPlaybackIntent;
+    if(typeof syncCompareDefaultTranslation === 'function') syncCompareDefaultTranslation();
+    if(typeof syncCompareFromReader === 'function') syncCompareFromReader();
+    return selected;
+  }
   var missingBook=!BibleData.getChapterCount(currentTranslation,previousBook);
   var differentNumbering=!BibleCanon.comparable(previousTranslation,currentTranslation,previousBook);
   if(differentNumbering){ currentChapter=1; currentVerse=null; }
