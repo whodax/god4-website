@@ -45,7 +45,7 @@ for(const provider of ['native','cloud','fallback'])test(`${provider}: chapter, 
   const errors=[];page.on('pageerror',error=>errors.push(error.message));
   await install(page,provider);
   await page.locator('#readAloudPlay').click();
-  await expect.poll(()=>text(page,provider)).toBe(expected);
+  await expect.poll(()=>text(page,provider)).toBe('Genesis chapter 1. '+expected);
   await expect(page.locator('#readerContent .verse-spoken')).toHaveAttribute('data-verse-number','2');
   const raw=await page.locator('#readerContent [data-verse-number="2"]').getAttribute('data-verse-text');
   expect(raw).toContain('[was]');
@@ -61,7 +61,7 @@ for(const provider of ['native','cloud','fallback'])test(`${provider}: chapter, 
   await page.evaluate(()=>stopReader());
   await navigate(page,'genesis',1,4);
   await page.evaluate(()=>BibleSpeech.playVerse(BibleData.getChapter('kjv','genesis',1).verses[3],4,{translationId:'kjv',bookId:'genesis',chapter:1}));
-  await expect.poll(()=>text(page,provider)).toBe('And God saw the light, that it was good: and God divided the light from the darkness.');
+  await expect.poll(()=>text(page,provider)).toBe('Genesis chapter 1. And God saw the light, that it was good: and God divided the light from the darkness.');
   await navigate(page,'genesis',2,1);
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
   expect(errors).toEqual([]);
@@ -69,7 +69,7 @@ for(const provider of ['native','cloud','fallback'])test(`${provider}: chapter, 
 
 for(const width of [1280,320,390])for(const fullscreen of [false,true])test(`${width}px fullscreen=${fullscreen}: supplied words remain readable, keyboard-operable and canonical`,async({page})=>{
   await page.setViewportSize({width,height:844});await install(page);
-  if(fullscreen)await page.locator('#fullscreenBtn').click();
+  if(fullscreen)await require('./reader-navigation-test-helper').toggleReaderFullscreen(page);
   const verse=page.locator('#readerContent [data-verse-number="2"]'),word=verse.locator('i .word-study-token');
   await expect(word).toHaveText('was');await expect(word).toHaveAccessibleName('Study word was');
   const styles=await word.evaluate(element=>({font:getComputedStyle(element).fontFamily,size:getComputedStyle(element).fontSize,style:getComputedStyle(element).fontStyle,color:getComputedStyle(element).color}));
@@ -86,7 +86,13 @@ for(const width of [1280,320,390])for(const fullscreen of [false,true])test(`${w
   expect(await word.evaluate(element=>{const bounds=element.getBoundingClientRect();return element.contains(document.elementFromPoint(bounds.left+bounds.width/2,bounds.top+bounds.height/2));})).toBe(true);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   expect(await verse.getAttribute('data-verse-text')).toContain('[was]');
-  if(fullscreen){await page.keyboard.press('Escape');await expect(page.locator('#fullscreenBtn')).toBeFocused();}
+  if(fullscreen){
+    await page.keyboard.press('Escape');
+    await expect(page.locator('#view-reader')).not.toHaveClass(/reader-fullscreen/);
+    const returnedFocus=page.locator(width<620?'#readerMoreTrigger':'#fullscreenBtn');
+    await expect(returnedFocus).toBeVisible();
+    await expect(returnedFocus).toBeFocused();
+  }
 });
 
 test('parenthetical asides, literal nested brackets, saved text and reference coordinates stay intact',async({page})=>{
@@ -105,7 +111,7 @@ test('parenthetical asides, literal nested brackets, saved text and reference co
   const supplied=page.locator('#readerContent [data-verse-number="23"] i');
   await expect(supplied).toHaveText('[but] he that acknowledgeth the Son hath the Father also');
   await page.locator('#readAloudPlay').click();
-  await expect.poll(()=>text(page,'native')).toBe('Whosoever denieth the Son, the same hath not the Father: [but] he that acknowledgeth the Son hath the Father also.');
+  await expect.poll(()=>text(page,'native')).toBe('1 John chapter 2. Whosoever denieth the Son, the same hath not the Father: [but] he that acknowledgeth the Son hath the Father also.');
 });
 
 for(const id of ['web','dra'])test(`${id}: canonical Reader rendering and speech remain unchanged`,async({page})=>{
@@ -115,7 +121,7 @@ for(const id of ['web','dra'])test(`${id}: canonical Reader rendering and speech
   const canonical=await verse.getAttribute('data-verse-text');
   expect(await verse.evaluate(element=>{const copy=element.cloneNode(true);copy.querySelector('.vnum').remove();return copy.textContent;})).toBe(canonical);
   await page.locator('#readAloudPlay').click();
-  await expect.poll(()=>text(page,'native')).toBe(canonical);
+  await expect.poll(()=>text(page,'native')).toBe('Genesis chapter 1. '+canonical);
 });
 
 test('KJV search and Compare retain canonical bracketed text and exact verse coordinates',async({page})=>{

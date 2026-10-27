@@ -10,7 +10,7 @@ At widths up to 620px, the Reader has three rows:
 
 Options independently expands detailed Book/Chapter/Verse navigation, Save Verse,
 Voice Commands, Fullscreen and Stop reading aloud. The microphone continues to
-mean Voice Commands; the musical-note icon opens Select Reading Voice.
+mean Voice Commands; the selected male/female person icon opens Select Reading Voice.
 Speed opens the existing speed picker. Accessible names expose the current voice
 and speed, and Options retains its expanded state and Escape/focus restoration.
 

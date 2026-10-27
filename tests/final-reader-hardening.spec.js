@@ -1,4 +1,4 @@
-const {selectReaderOption}=require('./reader-navigation-test-helper');
+const {selectReaderOption,toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 
 async function openReader(page){
@@ -64,18 +64,22 @@ test('Search and a populated Saved Verses tray remain usable at 320px', async ({
 
 test('Reader toolbar and More reflow from desktop through 320px', async ({page}) => {
   await openReader(page);
+  await page.evaluate(()=>ReaderTranslationLoader.ensure());
   for(const width of [1440, 1024, 768, 480, 375, 320]){
     await page.setViewportSize({width, height:800});
+    await expect(page.locator('.reader-toolbar')).toHaveClass(width>620?/^(?!.*reader-compact-mobile).*$/ : /reader-compact-mobile/);
     await page.locator('#readerContent [data-verse-number="45"]').scrollIntoViewIfNeeded();
     const geometry = await page.evaluate(() => {
       const toolbar = document.querySelector('.reader-toolbar');
-      const controls = ['scripturePickerTrigger', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
-        .map(id => document.getElementById(id === 'readerTranslation' && document.getElementById(id).hidden ? 'readerTranslationTrigger' : id).getBoundingClientRect());
+      const controls = [...toolbar.querySelectorAll('button,select'),...(innerWidth<=620?document.querySelectorAll('.bs-nav .bs-btn'):[])]
+        .filter(element=>element.getClientRects().length).map(element=>element.getBoundingClientRect());
       return {rows:new Set(controls.map(rect => Math.round(rect.top))).size,
+        count:controls.length,
         overflow:controls.some(rect => rect.left < 0 || rect.right > innerWidth),
         toolbarHeight:toolbar.getBoundingClientRect().height};
     });
-    expect(geometry.rows).toBe(width > 620 ? 1 : 2);
+    expect(geometry.rows).toBe(width > 620 ? 1 : 3);
+    expect(geometry.count).toBe(width > 620 ? 7 : 14);
     expect(geometry.overflow).toBe(false);
     await page.locator('#readerMoreTrigger').click();
     expect(await page.evaluate(() => {
@@ -96,14 +100,14 @@ test('200 percent equivalent reflow keeps Reader, Word Study, Search, Saved, and
   await speed.press('Enter');
   await expect(page.getByRole('dialog',{name:'Speed',exact:true})).toBeVisible();
   await page.keyboard.press('End');await page.keyboard.press('Enter');
-  await expect(page.locator('#readAloudSpeed')).toHaveValue('2.5');
+  await expect(page.locator('#readAloudSpeed')).toHaveValue('2');
   await expect(speed).toBeFocused();
   await page.locator('#readerMoreTrigger').click();
   await page.locator('#readerContent [data-word-study-term]').first().click();
   await expect(page.locator('#wordStudyHeading')).toBeFocused();
   await expect(page.locator('#wordStudyPanel')).toBeVisible();
   await page.locator('#wordStudyHeading').press('Escape');
-  await page.locator('#fullscreenBtn').click();
+  await toggleReaderFullscreen(page);
   await page.locator('#readerMoreTrigger').click();
   expect(await page.evaluate(() => {
     const panel = document.getElementById('readerSecondaryControls').getBoundingClientRect();
@@ -111,7 +115,7 @@ test('200 percent equivalent reflow keeps Reader, Word Study, Search, Saved, and
     return panel.right <= innerWidth && panel.bottom < innerHeight && innerHeight - toolbar.bottom > 250;
   })).toBe(true);
   await page.locator('#readerMoreTrigger').click();
-  await page.locator('#fullscreenBtn').click();
+  await toggleReaderFullscreen(page);
   await page.locator('#offlineBiblesTrigger').click();
   await expect(page.locator('#offlineBiblesDialog')).toBeVisible();
   expect(await page.locator('#offlineBiblesDialog').evaluate(element => {

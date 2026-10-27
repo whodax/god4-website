@@ -367,8 +367,15 @@ var ReaderOptions = window.ReaderOptions || (function(){
       var option=control.select.options[control.select.selectedIndex];
       var emptyVerse=control.select.id==='verseSelect' && !(option && option.value);
       var label=emptyVerse ? 'Verse' : labels[control.select.id]+': '+(option ? option.textContent : 'Unavailable');
-      if(control.button.textContent!==label) control.button.textContent=label;
-      control.button.setAttribute('aria-label',emptyVerse ? 'Verse, no verse selected' : label);
+      if(control.select.id==='readAloudVoice'){
+        var female=control.select.value==='female', voice=female?'Female':'Male';
+        if(control.button.dataset.readingVoice!==control.select.value){
+          control.button.dataset.readingVoice=control.select.value;
+          control.button.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="'+(female?'M9 11h6l4 9h-6v3h-2v-3H5z':'M8 11h8v11h-3v-6h-2v6H8z')+'"/></svg>';
+        }
+        label='Select reading voice, '+voice;
+      } else if(control.button.textContent!==label) control.button.textContent=label;
+      if(control.button.getAttribute('aria-label')!==(emptyVerse ? 'Verse, no verse selected' : label)) control.button.setAttribute('aria-label',emptyVerse ? 'Verse, no verse selected' : label);
       control.button.disabled=control.select.disabled || !control.select.options.length;
     });
     if(dialog && dialog.open) choices.querySelectorAll('[data-option-value]').forEach(function(option){
@@ -545,8 +552,9 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     if(!initialized || !media.matches) return;
     var state=typeof BibleSpeech==='undefined' ? 'idle' : BibleSpeech.getState();
     var play=document.getElementById('readAloudPlay');
-    play.setAttribute('aria-label',state==='playing' ? 'Pause reading aloud' : state==='paused' ? 'Resume reading aloud' : state==='preparing' ? 'Stop reading aloud' : 'Play reading aloud');
-    play.dataset.playbackState=state;
+    var label=state==='playing' ? 'Pause reading aloud' : state==='paused' ? 'Resume reading aloud' : state==='preparing' ? 'Stop reading aloud' : 'Play reading aloud';
+    if(play.getAttribute('aria-label')!==label) play.setAttribute('aria-label',label);
+    if(play.dataset.playbackState!==state) play.dataset.playbackState=state;
     stop.disabled=state==='idle';
   }
   function initialize(){
@@ -632,6 +640,7 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
       });
       toolbar.classList.toggle('reader-compact-mobile',media.matches);
       document.getElementById('bibleApp').classList.toggle('reader-compact-layout',media.matches);
+      ['voiceStatusTop','readAloudStatus'].forEach(function(id){document.getElementById(id).classList.toggle('sr-only',media.matches);});
       row.hidden=!media.matches;
       navigation.hidden=!media.matches;stop.hidden=!media.matches;
       describeOptions();

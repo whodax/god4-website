@@ -22,8 +22,10 @@ let voiceCommandsStopping = false;
 let voiceRecognitionBlocked = false;
 let voiceRestartTimer = null;
 let voiceResultHandled = false;
+let voiceHandledResults = new Set();
 let voiceRestartAttempts = 0;
 let voicePermissionChecked = false;
+let voiceCommandsInteracted = false;
 
 function getReaderControls(){
   return document.querySelectorAll('[data-reader-controls]');
@@ -54,7 +56,7 @@ function getAdjacentReaderVerseNumber(direction){
 }
 
 function setVoiceStatus(message){
-  document.querySelectorAll('.voice-status').forEach(function(status){ status.textContent = message; });
+  document.querySelectorAll('.voice-status').forEach(function(status){ if(status.textContent!==message) status.textContent = message; });
 }
 
 function getReaderDisplayedVerse(){
@@ -138,13 +140,13 @@ function replacePlaybackResumeCursor(cursor){
   playbackResumeCursor = cursor ? Object.assign({}, cursor) : null;
 }
 
-function stopSpeechForManualNavigation(){
+function stopSpeechForManualNavigation(preserveChapter){
   readerPlaybackIntent++;
   readerPlaybackPending = false;
   clearSpokenVerseHighlight();
   if(typeof BibleSpeech === 'undefined') return;
-  if(BibleSpeech.getState() !== 'idle') BibleSpeech.stop();
-  BibleSpeech.setStatusMessage('Ready to read aloud.');
+  if(BibleSpeech.getState() !== 'idle') BibleSpeech.stop(preserveChapter===true);
+  BibleSpeech.setStatusMessage('');
 }
 
 function playReader(explicitVerse, pauseAfterFirst, restartSequence){
@@ -596,7 +598,7 @@ function populateVerses(){
   });
 }
 
-function setReaderVerse(verseNumber, shouldFocus){
+function setReaderVerse(verseNumber, shouldFocus, preserveChapter){
   var verse = BibleData.getVerse(currentTranslation, currentBook, currentChapter, Number(verseNumber));
   if(verse && !isRenderableVerseText(verse.text)){
     // An existing but empty source coordinate is not a reading destination.
@@ -604,7 +606,7 @@ function setReaderVerse(verseNumber, shouldFocus){
     return false;
   }
   if(!verse || !applyReaderVerseSelection(verse.verse, shouldFocus)) return false;
-  stopSpeechForManualNavigation();
+  stopSpeechForManualNavigation(preserveChapter);
   currentVerse = verse.verse;
   readerSelectionPending = true;
   playbackSequenceTranslation = currentTranslation;
@@ -727,7 +729,7 @@ function finishVoiceCommands(showReadyStatus){
   voiceRecognitionActive = false;
   voiceCommandsStopping = false;
   setVoiceButtonState(false);
-  if(showReadyStatus) setVoiceStatus('Ready for a voice command.');
+  if(showReadyStatus) setVoiceStatus('Voice Commands stopped.');
 }
 
 function isInterimPlaybackCommand(transcript){
@@ -739,7 +741,7 @@ function createVoiceRecognition(){
   var Recognition = getVoiceRecognition();
   if(!Recognition || voiceRecognition) return voiceRecognition;
   voiceRecognition = new Recognition();
-  voiceRecognition.continuous = false;
+  voiceRecognition.continuous = true;
   voiceRecognition.interimResults = true;
   voiceRecognition.lang = 'en-US';
   voiceRecognition.onstart = function(){
@@ -748,26 +750,26 @@ function createVoiceRecognition(){
     if(voiceCommandsListening) setVoiceStatus('Listening for a command...');
   };
   voiceRecognition.onresult = function(event){
-    if(!voiceCommandsListening || !voiceRecognitionActive || voiceResultHandled || !event.results) return;
+    if(!voiceCommandsListening || !voiceRecognitionActive || !event.results) return;
     var resultIndex = Number.isInteger(event.resultIndex) ? event.resultIndex : 0;
     for(var index = resultIndex; index < event.results.length; index++){
       var result = event.results[index];
+      if(voiceHandledResults.has(index)) continue;
       if(!result || !result[0] || !result[0].transcript) continue;
       var interim = result.isFinal === false;
       if(interim && !isInterimPlaybackCommand(result[0].transcript)) continue;
       voiceResultHandled = true;
+      voiceHandledResults.add(index);
       handleVoiceCommand(result[0].transcript);
-      if(interim && typeof voiceRecognition.stop === 'function'){
-        try { voiceRecognition.stop(); } catch(error) { /* Recognition may already be ending. */ }
-      }
-      return;
     }
   };
   voiceRecognition.onerror = function(event){
     var intentionalStop = voiceCommandsStopping || !voiceCommandsListening;
-    if((intentionalStop || voiceResultHandled) && event.error === 'aborted') return;
+    if(intentionalStop && event.error === 'aborted') return;
     if(event.error === 'no-speech'){
-      setVoiceStatus(getVoiceRecognitionErrorMessage(event.error));
+      voiceResultHandled=false;
+      setVoiceStatus('No speech detected. Activate Voice Commands to listen again.');
+      finishVoiceCommands(false);
       return;
     }
     voiceRecognitionActive = false;
@@ -784,7 +786,12 @@ function createVoiceRecognition(){
       voiceCommandsStopping = false;
       return;
     }
-    scheduleVoiceRecognitionRestart(handledResult ? 0 : 250);
+    // Some services end after a command despite continuous=true. Never restart an empty capture.
+    if(handledResult) scheduleVoiceRecognitionRestart(0);
+    else {
+      finishVoiceCommands(false);
+      setVoiceStatus('Voice Commands ended. Activate Voice Commands to listen again.');
+    }
   };
   return voiceRecognition;
 }
@@ -798,6 +805,7 @@ function startVoiceRecognition(){
   setVoiceStatus('Listening for a command...');
   try {
     voiceResultHandled = false;
+    voiceHandledResults.clear();
     recognition.start();
   } catch(error){
     voiceRecognitionActive = false;
@@ -837,7 +845,7 @@ function disableVoiceCommands(){
   voiceCommandsListening = false;
   voiceCommandsStopping = true;
   setVoiceButtonState(false);
-  setVoiceStatus('Ready for a voice command.');
+  setVoiceStatus('Voice Commands stopped.');
   if(voiceRecognitionActive && voiceRecognition && typeof voiceRecognition.stop === 'function'){
     voiceRecognition.stop();
   } else {
@@ -847,6 +855,7 @@ function disableVoiceCommands(){
 }
 
 function toggleVoiceCommands(){
+  voiceCommandsInteracted = true;
   if(voiceCommandsListening) disableVoiceCommands();
   else enableVoiceCommands();
 }
@@ -863,13 +872,13 @@ function initializeVoiceCommands(){
   }
   Promise.resolve(permissionRequest).then(function(permission){
     if(!permission) return;
-    if(permission.state === 'granted') enableVoiceCommands();
+    if(permission.state === 'granted' && !voiceCommandsInteracted) enableVoiceCommands();
     else if(permission.state === 'denied'){
       voiceRecognitionBlocked = true;
       setVoiceStatus(getVoiceRecognitionErrorMessage('not-allowed'));
     }
     permission.onchange = function(){
-      if(permission.state === 'granted' && !voiceCommandsListening) enableVoiceCommands();
+      if(permission.state === 'granted' && voiceCommandsListening) startVoiceRecognition();
       else if(permission.state === 'denied' && voiceCommandsListening){
         voiceRecognitionBlocked = true;
         disableVoiceCommands();
@@ -1218,7 +1227,7 @@ function nextChapter(){
 function navigateAdjacentReaderVerse(direction){
   var playback = getActiveReaderPlaybackSnapshot();
   var verse = getAdjacentReaderVerseNumber(direction);
-  if(verse === null || !setReaderVerse(verse, false) || !playback) return;
+  if(verse === null || !setReaderVerse(verse, false, Boolean(playback)) || !playback) return;
   // Selection cancels the old session before its replacement starts. Speech's
   // session/attempt guards reject late start, end, error and cloud callbacks.
   if(playback.isChapter) playReader(verse, false, true);
@@ -1304,7 +1313,9 @@ function toggleFullscreen(){
   restoreReaderTabPosition(true);
   if(entering) button.focus({preventScroll:true});
   else {
-    (fullscreenReturnFocus && fullscreenReturnFocus.isConnected ? fullscreenReturnFocus : button).focus({preventScroll:true});
+    var returnFocus=fullscreenReturnFocus && fullscreenReturnFocus.isConnected ? fullscreenReturnFocus : button;
+    if(!returnFocus.getClientRects().length) returnFocus=document.getElementById('readerMoreTrigger');
+    returnFocus.focus({preventScroll:true});
     fullscreenReturnFocus = null;
   }
 }

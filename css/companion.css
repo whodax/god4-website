@@ -467,6 +467,7 @@
   }
   #view-reader .voice-status{margin-top:4px;min-height:0;}
   #view-reader .reader-audio-status{margin:4px 0 8px;}
+  #readAloudStatus:empty,#voiceStatusTop:empty{margin:0;min-height:0;}
   #view-reader .reader-verse,#wordStudyPanel,#wordStudyHeading,.word-study-token{
     scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px) + var(--reader-plan-return-height,0px) + 16px);
   }
@@ -701,7 +702,7 @@
     .reader-compact-playback .reader-speech-field:has(#readAloudSpeed){grid-column:6;}
     .reader-compact-playback .reader-speech-field label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
     .reader-compact-playback [data-reader-select="readAloudVoice"],.reader-compact-playback [data-reader-select="readAloudSpeed"]{font-size:0;}
-    .reader-compact-playback [data-reader-select="readAloudVoice"]::after{content:'\266B';font-size:22px;}
+    .reader-compact-playback [data-reader-select="readAloudVoice"] svg{display:block;width:24px;height:24px;margin:auto;}
     .reader-compact-playback [data-reader-select="readAloudSpeed"]::after{content:'\23F1\FE0E';font-size:22px;}
     .reader-compact-mobile > .reader-secondary-controls{grid-row:3;grid-column:1 / -1;max-height:calc(100dvh - var(--reader-nav-bottom,105px) - 160px);}
     #view-reader.reader-fullscreen .reader-compact-mobile > #readerReferenceNavigation,#view-reader.reader-fullscreen .reader-compact-mobile > #readerMoreTrigger{grid-row:2;}
