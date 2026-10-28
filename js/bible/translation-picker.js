@@ -569,7 +569,8 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     stop.disabled=state==='idle';
   }
   function initialize(){
-    if(initialized || typeof HTMLDialogElement==='undefined' || !HTMLDialogElement.prototype.showModal) return;
+    // A still-open shell-52 document retains its own layout until normal reload.
+    if(initialized || !document.getElementById('readerVoiceCommands') || typeof HTMLDialogElement==='undefined' || !HTMLDialogElement.prototype.showModal) return;
     var active=document.activeElement;
     if(active && active.tagName==='SELECT' && active.closest('#view-reader .reader-toolbar')){
       if(!waitingForBlur.has(active)){
