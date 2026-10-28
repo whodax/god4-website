@@ -683,32 +683,61 @@ function parseSpokenReferenceNumber(value){
 
 // Curated aliases use the existing nine-translation registry; no fuzzy matching.
 var spokenTranslationAliases={
-  web:['world english bible','world english bible protestant edition','webp'],
-  asv:['american standard version','american standard bible'],
-  kjv:['king james version','king james bible','authorized version'],
-  ylt:['youngs literal translation','young literal translation'],
-  dby:['darby','darby translation','darby bible'],
-  webster:['webster','webster bible','websters bible','noah webster bible'],
-  rv:['revised version','english revised version'],
-  gnv:['geneva bible','geneva bible 1599','geneva version'],
-  dra:['douay rheims','douay rheims bible','douay rheims catholic','douay rheims american edition']
+  web:['webp','double u e b','double you e b','double you ee bee'],
+  asv:['a ess vee'],
+  kjv:['authorized','authorized king james version','king james authorized version','kay jay vee'],
+  ylt:['young','young literal','young s literal','why el tee'],
+  dby:['darbys','j n darby','john nelson darby','dee bee why'],
+  webster:['websters','noah webster','double u b s','double you bee ess'],
+  rv:['english revised','are vee'],
+  gnv:['geneva 1599','gee en vee'],
+  dra:['catholic','douay catholic','douay rheims american edition','dra catholic','d r a catholic','douay reims','douay reims catholic','douai rheims','douai rheims catholic','dewey rheims','dewey rheims catholic','dewey reams','dewey reams catholic','do way rheims','do way rheims catholic','dee are ay']
 };
 function normalizeSpokenNavigation(value){
-  return normalizeVoiceCommand(value).replace(/[’']/g,'').replace(/[(),.]/g,' ').replace(/([a-z])-([a-z])/g,'$1 $2').replace(/\s+/g,' ').trim();
+  return normalizeVoiceCommand(value).normalize('NFKC').toLowerCase().replace(/[’‘ʼ'`´]/g,'')
+    .replace(/[-\u2010-\u2015\u2212]+/g,function(mark,index,text){
+      return /\d\s*$/.test(text.slice(0,index)) && /^\s*\d/.test(text.slice(index+mark.length)) ? '-' : ' ';
+    }).replace(/:(?!\s*\d)/g,' ').replace(/[^\p{L}\p{N}:-]+/gu,' ').trim();
+}
+function getSpokenTranslationAliases(){
+  var aliases=[],seen=new Set();
+  BibleData.listTranslations().filter(function(t){return !!spokenTranslationAliases[t.id];}).forEach(function(t){
+    var title=normalizeSpokenNavigation(t.name),plain=title.replace(/\s+\d{4}$/,''),words=plain.split(' ');
+    var bases=[title,plain,plain.replace(/\s+(?:bible|version|translation|edition)$/,''),words[0],words.slice(0,2).join(' '),t.abbreviation,t.id,t.abbreviation.split('').join(' ')].concat(spokenTranslationAliases[t.id]);
+    bases=bases.concat(bases.map(function(base){return normalizeSpokenNavigation(base).replace(/\s+(?:bible|version|translation|edition)$/,'');}));
+    bases.forEach(function(base){
+      base=normalizeSpokenNavigation(base);
+      ['', ' bible',' version',' translation',' edition'].forEach(function(suffix){
+        var name=base+suffix,key=t.id+':'+name;
+        if(base && !seen.has(key)){seen.add(key);aliases.push({id:t.id,name:name});}
+      });
+    });
+  });
+  return aliases;
+}
+function matchSpokenTranslation(text){
+  var matches=getSpokenTranslationAliases().filter(function(a){return text===a.name || text.indexOf(a.name+' ')===0 || text.indexOf(a.name+':')===0;});
+  if(!matches.length) return null;
+  var length=Math.max.apply(null,matches.map(function(a){return a.name.length;}));
+  matches=matches.filter(function(a){return a.name.length===length;});
+  var ids=Array.from(new Set(matches.map(function(a){return a.id;})));
+  // A longer explicit title disambiguates shared short names. Never let catalog
+  // aliases reinterpret a Scripture book or a reserved playback command.
+  var reserved=/^(?:play|read|pause|resume|continue|stop|repeat|next|previous|back|chapter|verse)$/;
+  var book=reserved.test(matches[0].name) || BibleCanon.books.some(function(b){return BibleCanon.names(b.id,b.name).some(function(n){return normalizeSpokenNavigation(n)===matches[0].name;});});
+  if(ids.length!==1 || book) return {error:'Ambiguous translation name. Say its full title or abbreviation.'};
+  return matches[0];
 }
 function parseSpokenNavigation(command){
   var text=normalizeSpokenNavigation(command), original=text;
   var play=/^(play|read)\s+/.test(text) || /\s+(play|read)$/.test(text);
-  text=text.replace(/^(?:play|read|open|go to)\s+/,'');
-  var switchAction=/^(?:switch(?: translation)? to|change(?: translation)? to|select|use)\s+/.test(text);
-  text=text.replace(/^(?:switch(?: translation)? to|change(?: translation)? to|select|use)\s+/,'');
-  var aliases=[];
-  BibleData.listTranslations().filter(function(t){return !!spokenTranslationAliases[t.id];}).forEach(function(t){
-    [t.name,t.abbreviation,t.id,t.abbreviation.split('').join(' ')].concat(spokenTranslationAliases[t.id]).forEach(function(name){aliases.push({id:t.id,name:normalizeSpokenNavigation(name)});});
-  });
-  aliases.sort(function(a,b){return b.name.length-a.name.length;});
-  var translation=aliases.find(function(a){return text===a.name || text.indexOf(a.name+' ')===0;});
-  if(translation) text=text.slice(translation.name.length).trim().replace(/^(?:and|then)\s+/,'');
+  text=text.replace(/^(?:play|read|open|go to)\s+/,'').replace(/^the\s+/,'');
+  var switchAction=/^(?:switch(?: (?:bible|version|translation))? to|change(?: (?:bible|version|translation))? to|select|use)\s+/.test(text);
+  text=text.replace(/^(?:switch(?: (?:bible|version|translation))? to|change(?: (?:bible|version|translation))? to|select|use)\s+/,'').replace(/^the\s+/,'');
+  var translation=matchSpokenTranslation(text);
+  if(translation && translation.error) return translation;
+  if(translation) text=text.slice(translation.name.length).trim().replace(/^:\s*/,'').replace(/^(?:and|then)\s+/,'');
+  else if(/^(?:english|standard|protestant|bible|version|translation|edition)(?: (?:bible|version|translation|edition))*$/.test(text)) return {error:'Ambiguous translation name. Say its full title or abbreviation.'};
   else if(switchAction) return {error:'Translation not available. Choose one of the nine translations.'};
   play=play || /^(play|read)\s+/.test(text);
   text=text.replace(/^(?:play|read|open|go to)\s+/,'').replace(/\s+(?:play|read)$/,'').trim();

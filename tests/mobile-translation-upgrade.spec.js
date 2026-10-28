@@ -8,7 +8,7 @@ const {execFileSync}=require('node:child_process');
 const generator=require('../tools/generate-translation-manifest');
 
 const root=path.resolve(__dirname,'..');
-const releaseCommit='253885e96e0b5edf13fec3ecd2185aec6c1bc28f';
+const releaseCommit='66bf2c3b29375462adfc9dd125490055a65cc0d4';
 const production52='ca0d623f87d9f85a9cb4c515acbb5ea69796ff15';
 const normalizeSource=body=>body.toString('utf8').replace(/\r\n/g,'\n');
 const fileFor=url=>url==='/'?'index.html':url==='/offline'?'offline.html':new URL(url,'http://localhost').pathname.slice(1);
@@ -63,16 +63,25 @@ test('shell 53 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(49);
-  // Pin all release bytes to the physically accepted Reader commit. This is
-  // independent of the versioned worker and keeps historical fixtures genuine.
+  // Pin the approved shell-53 release plus the reviewed alias-parser checksum.
+  // Unit/Android tests check its behavior; these assertions protect exact source
+  // scope and cache-delivery bytes. Historical fixtures remain Git blobs.
   for(const asset of requiredAssets){
     const approved=execFileSync('git',['show',releaseCommit+':'+fileFor(asset)],{cwd:root});
     const body=fs.readFileSync(path.join(root,fileFor(asset)));
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
-      let expected=normalizeSource(approved);
-      if(asset===runtimePath)expected=expected.replace("    if(initialized || typeof HTMLDialogElement", "    // A still-open shell-52 document retains its own layout until normal reload.\n    if(initialized || !document.getElementById('readerVoiceCommands') || typeof HTMLDialogElement");
-      expect(normalizeSource(body),asset).toBe(expected);
+      let expected=normalizeSource(approved),actual=normalizeSource(body);
+      if(asset==='/js/bible/reader.js'){
+        const outsideAliases=(source,updated=false)=>{
+          const start=source.indexOf('var spokenTranslationAliases='),end=source.indexOf('  var contextual=',start);
+          expect(start).toBeGreaterThan(0);expect(end).toBeGreaterThan(start);
+          if(updated)expect(digest(Buffer.from(source.slice(start,end)))).toBe('a138e110c432ffe8fbfad061471a8980f8465eed9c4891c0b2f63319cb1cb5f2');
+          return source.slice(0,start)+'/* translation alias parser */\n'+source.slice(end);
+        };
+        expected=outsideAliases(expected);actual=outsideAliases(actual,true);
+      }
+      expect(actual,asset).toBe(expected);
     }
   }
   for(const asset of ['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
@@ -270,7 +279,7 @@ async function compactVoiceNavigation(page,before){
     expect(await mic.evaluate(e=>e.getBoundingClientRect().width)).toBeGreaterThanOrEqual(44);
   }else if(await more.getAttribute('aria-expanded')==='false')await more.click();
   await expect(page.locator('[data-voice-command-button]')).toHaveCount(1);
-  for(const [command,id,book,verse] of [['WEB John 1:16','web','john',16],['DRA Tobias 1:1','dra','tobit',1]]){
+  for(const [command,id,book,verse] of [['WEB John 1:16','web','john',16],['Douay - Rheims Catholic Bible, Tobias 1:1','dra','tobit',1]]){
     const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});if(await recovery.isVisible())await recovery.click();
     await mic.click();await expect(mic).toHaveAttribute('aria-pressed','true');await expect(mic).toHaveAccessibleName(/listening/);
     await page.evaluate(command=>__upgradeRecognition.at(-1).emit(command),command);await page.evaluate(()=>voiceNavigationTask);

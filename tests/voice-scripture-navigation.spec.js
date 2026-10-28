@@ -118,3 +118,63 @@ test('a new Android command turn cancels a delayed destination before any new tr
   expect(await position(page)).toEqual(before);expect(await page.evaluate(()=>__voiceNav.native.length)).toBe(0);
   await page.evaluate(()=>__voiceNav.recognizers.at(-1).emit('John 3:16'));expect(await position(page)).toMatchObject({id:'web',book:'john',chapter:3,verse:16});
 });
+
+const shortTranslations=[
+  ['web','World','World English'],['asv','American','American Standard'],['kjv','King','King James'],
+  ['ylt','Youngs','Youngs Literal'],['dby','Darby','Darby Translation'],['webster','Webster','Webster Bible'],
+  ['rv','Revised','Revised Version'],['gnv','Geneva','Geneva Bible'],['dra','Douay','Douay Rheims']
+];
+for(const [id,first,two] of shortTranslations)test(`${id}: short catalog names and natural Bible/Version/Translation commands use the existing selector`,async({page})=>{
+  await open(page);await page.evaluate(()=>navigateReaderToPassage('john',1,2));
+  for(const transcript of [first,two,'Switch to '+first+' Bible','Change to '+two+' Version','Use '+two+' Translation']){
+    await command(page,transcript);expect(await position(page)).toMatchObject({id,book:'john',chapter:1,verse:2,stored:id});
+    await expect(page.locator('#readerTranslation')).toHaveValue(id);
+  }
+});
+
+test('Catholic spoken names, punctuation and deterministic Android transcript variants accept one final command',async({page})=>{
+  await open(page);
+  for(const transcript of ['DRA','Douay','Douay Rheims','Douay-Rheims','Douay Rheims Catholic','Douay Rheims Bible','Douay Rheims Catholic Bible','Catholic','Catholic Bible','Switch to Catholic Bible','Douay - Rheims Catholic','Douay–Rheims Catholic','DOUAY—RHEIMS CATHOLIC!','Douay‑Rheims Catholic','Douay/Reims Catholic','Dewey Reams Catholic','ＤＲＡ']){
+    await command(page,transcript+', Tobit chapter 1 verse 2');expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
+    expect(await page.evaluate(()=>__voiceNav.recognizers.filter(r=>r.active).length)).toBe(0);
+  }
+});
+
+test('ambiguous short catalog name is announced without changing passage; a longer title disambiguates',async({page})=>{
+  await open(page);await page.evaluate(()=>{const list=BibleData.listTranslations;BibleData.listTranslations=()=>list().map(t=>t.id==='rv'?{...t,name:'World Revised Version'}:t).reverse();});
+  const before=await position(page);await command(page,'Switch to World Bible');expect(await position(page)).toEqual(before);
+  await expect(page.locator('#voiceStatusTop')).toHaveText('Ambiguous translation name. Say its full title or abbreviation.');
+  await expect(page.locator('#voiceStatusTop')).toHaveAttribute('aria-live','polite');
+  await command(page,'World Revised, John 1:2');expect(await position(page)).toMatchObject({id:'rv',book:'john',chapter:1,verse:2});
+});
+
+test('generic, lookalike and unsupported translation titles never silently change the Bible',async({page})=>{
+  await open(page);await page.evaluate(()=>navigateReaderToPassage('john',1,2));const before=await position(page);
+  for(const transcript of ['Switch to English Bible','Bible','Switch to Catholicism','Switch to Worldly','Revised Standard Version','Catholic and WEB','Switch to NIV']){
+    await command(page,transcript);expect(await position(page)).toEqual(before);await expect(page.locator('#voiceStatusTop')).toHaveText(/Ambiguous|not available|not found/);
+  }
+});
+
+for(const cloud of [false,true])test(`${cloud?'cloud':'native'}: Read Geneva and Catholic short-name navigation preserve narration and microphone isolation`,async({page})=>{
+  await open(page,cloud);await command(page,'Read Geneva');
+  await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
+  await command(page,'Douay Rheims Catholic Bible, Tobit chapter 1 verse 2');
+  await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
+  const spoken=await page.evaluate(cloud=>cloud?__voiceNav.requests.map(r=>r.text):__voiceNav.native.map(u=>u.text),cloud);
+  expect(spoken).toHaveLength(2);
+  const passage=await page.evaluate(()=>BibleData.getVerse('dra','tobit',1,2).text);
+  expect(spoken[1]).toContain(passage);expect(spoken[1]).toMatch(/chapter 1\./);expect(spoken[1]).not.toMatch(/verse 2/i);
+  await command(page,'pause');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');
+  await command(page,'resume');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
+  await command(page,'stop');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+});
+
+test('new natural aliases work offline with retained Catholic and Protestant downloads and Saved Verses',async({page,context})=>{
+  await open(page);await page.evaluate(async()=>{
+    await BibleTranslationLoader.ensure('dra');await BibleTranslationLoader.ensure('asv');
+    toggleFav('John 1:1',BibleData.getVerse('web','john',1,1).text,null,{translationId:'web',bookId:'john',chapter:1,verse:1});
+  });
+  const saved=(await position(page)).saved;await context.setOffline(true);
+  await command(page,'Catholic Bible, Tobit chapter 1 verse 2');expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2,saved});
+  await command(page,'Change to American Standard, John 1:16');expect(await position(page)).toMatchObject({id:'asv',book:'john',chapter:1,verse:16,saved});
+});
