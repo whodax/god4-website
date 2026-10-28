@@ -41,9 +41,9 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true])for(co
     const geometry=await page.evaluate(fullscreen=>{
       const rect=e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height,right:r.right};};
       const toolbar=document.querySelector('.reader-toolbar');
-      return {rows:[Array.from(document.querySelectorAll(fullscreen?'.reader-compact-tabs button':'.bs-nav .bs-btn')),Array.from(document.querySelectorAll('#readerReferenceNavigation button')).concat(document.getElementById('readerMoreTrigger')),Array.from(toolbar.querySelectorAll('.reader-compact-playback button')).filter(e=>!e.hidden)].map(row=>row.map(rect)),overflow:document.documentElement.scrollWidth>innerWidth};
+      return {rows:[Array.from(document.querySelectorAll(fullscreen?'.reader-compact-tabs button':'.bs-nav .bs-btn')),Array.from(document.querySelectorAll('#readerReferenceNavigation button')).concat(document.getElementById('readerMoreTrigger'),document.getElementById('readerVoiceCommands')),Array.from(toolbar.querySelectorAll('.reader-compact-playback button')).filter(e=>!e.hidden)].map(row=>row.map(rect)),overflow:document.documentElement.scrollWidth>innerWidth};
     },fullscreen);
-    expect(geometry.overflow).toBe(false);expect(geometry.rows.map(r=>r.length)).toEqual([4,4,6]);
+    expect(geometry.overflow).toBe(false);expect(geometry.rows.map(r=>r.length)).toEqual([4,5,6]);
     for(const row of geometry.rows){
       expect(Math.max(...row.map(r=>r.y))-Math.min(...row.map(r=>r.y))).toBeLessThanOrEqual(1);
       for(const r of row){expect(r.width).toBeGreaterThanOrEqual(44);expect(r.height).toBeGreaterThanOrEqual(44);expect(r.x).toBeGreaterThanOrEqual(0);expect(r.right).toBeLessThanOrEqual(width);}
@@ -59,7 +59,8 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true])for(co
     const before=await snapshot(page);
     await page.locator('#readerMoreTrigger').tap();const expanded=await snapshot(page);
     expect(Math.abs(expanded.verse-before.verse)).toBeLessThanOrEqual(1);
-    await expect(page.locator('#readerSecondaryControls [data-voice-command-button]')).toBeVisible();
+    await expect(page.locator('.reader-toolbar > #readerVoiceCommands')).toBeVisible();
+    await expect(page.locator('[data-voice-command-button]')).toHaveCount(1);
     await expect(page.locator('#readerSecondaryControls #readerSaveVerse')).toBeVisible();
     await expect(page.locator('#readerSecondaryControls #fullscreenBtn')).toBeVisible();
     const palette=await page.locator('#readerSaveVerse').evaluate(e=>({background:getComputedStyle(e).backgroundColor,color:getComputedStyle(e).color}));

@@ -5,11 +5,11 @@ Branch: `feature/mobile-reader-compact-controls`, based on `ca0d623`.
 At widths up to 620px, the Reader has three rows:
 
 1. Reader, Compare, Plan, Offline (the existing Study Desk navigation).
-2. Previous Chapter, Scripture picker/reference, Next Chapter, Options.
+2. Previous Chapter, Scripture picker/reference, Next Chapter, Options, Voice Commands.
 3. Translation, Previous Verse, Play/Pause, Next Verse, Reading Voice, Speed.
 
 Options independently expands detailed Book/Chapter/Verse navigation, Save Verse,
-Voice Commands, Fullscreen and Stop reading aloud. The microphone continues to
+Fullscreen and Stop reading aloud. The microphone beside Options continues to
 mean Voice Commands; the selected male/female person icon opens Select Reading Voice.
 Speed opens the existing speed picker. Accessible names expose the current voice
 and speed, and Options retains its expanded state and Escape/focus restoration.
@@ -143,3 +143,15 @@ under `playwright-report/compact-reader-screenshots/` for local inspection.
 - `tests/reader-navigation-test-helper.js`
 - `tests/reader-speech-highlight.spec.js`
 - `tests/shared-reader-fullscreen.spec.js`
+
+## Dedicated mobile microphone follow-up
+
+The existing Voice Commands button moves immediately after Options in the mobile DOM and visual row; it is not cloned. If a focused microphone moves into collapsed desktop Options during resizing, focus returns to Options without scrolling. Its original click handler, Android one-final-command microphone release, spoken translation/reference navigation and shared pressed/busy state are unchanged. Desktop restores that same button to its original Voice controls position inside Options. The SVG is decorative; the existing button text, status labels and announcements provide its name/state. Listening uses a filled microphone, highlight surface and inset ink border without changing dimensions.
+
+The chapter row reserves 44px each for Options and microphone and gives the reference group the remaining width. Its previous/next chapter buttons remain 44px, the reference text remains 14px and wraps naturally. Reference padding/line height allow two ordinary lines within a 44px target. Enlarged text can grow naturally rather than being clipped. The six-control playback grid is unchanged; there is no additional toolbar row. Options and scroll-to-hide/Show Controls remain independent.
+
+If the optional compact runtime is unavailable, the original Voice Commands button remains in Options with the existing native fallback. There is only one microphone implementation, DOM node and click listener through repeated breakpoint changes. No speech code, Bible data, manifests, service-worker cache or asset list is changed. Installed-user delivery remains subject to the normal approved shell-cache release process. Physical Android recognition, TalkBack and browser-controlled microphone tones still require device acceptance.
+
+Follow-up validation: **241 unique Playwright tests passed**, zero final failures/skips and zero automatic retries, sequentially with one worker. Android speech/isolation/spoken navigation: 156; compact/microphone/fullscreen/offline/PWA: 84; startup measurement: 1. The 12 microphone regressions include all four widths, Light/Blue Dark, normal/fullscreen, keyboard focus, repeated breakpoint restoration, delayed microphone release, 200% reference text and offline recovery. At all four widths the ordinary chapter row remains 44px high, Options and microphone are 44px wide with a 2px gap, and no horizontal overflow occurs. Activating listening causes 0px Scripture displacement; existing Options/hide/recovery anchor assertions pass. Initial new-fixture failures measured an offscreen Reader before Playwright scrolled to reach it and left the intentional delayed-release mock enabled; fixture setup was corrected without loosening geometry or release assertions.
+
+Startup remains **22 scripts / 279,241 decoded LF bytes**, unchanged from `0ed8772`, with 11,673 bytes below the unchanged 290,914-byte limit. Word Study network readiness measured 21ms in this run (not a latency benchmark). Asset validation, explicit changed/new JavaScript syntax checks, 66 Isaiah hashes/byte counts and `git diff --check` pass. No browser crashes or memory interruptions occurred. Six files change: this document, the stylesheet, Reader HTML, the lazy picker/compact runtime, the existing compact-layout test and the new microphone regression. Final identities/logs are retained in ignored `playwright-report/mobile-reader-microphone-summary.json`.

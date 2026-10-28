@@ -666,6 +666,7 @@
   }
   @media(prefers-reduced-motion:reduce){#view-reader .reader-toolbar,#view-reader.reader-controls-hidden .reader-toolbar{transition:none;}}
 
+  #readerVoiceCommands svg{display:none;}
   /* Mobile-only composition of the original Reader controls. Desktop DOM and
      native controls are restored by ReaderCompactControls at the breakpoint. */
   .reader-compact-tabs[hidden],.reader-compact-playback[hidden],.reader-compact-stop[hidden]{display:none;}
@@ -677,15 +678,20 @@
     .reader-compact-layout:has(#view-reader.active) .compare-edition-control{display:none;}
     .reader-compact-layout #offlineBiblesTrigger{font-size:0;}
     .reader-compact-layout #offlineBiblesTrigger::after{content:'Offline';font-size:12px;}
-    .reader-toolbar.reader-compact-mobile{grid-template-columns:repeat(6,minmax(44px,1fr));gap:4px 2px;}
+    .reader-toolbar.reader-compact-mobile{grid-template-columns:minmax(0,1fr) 44px 44px;gap:4px 2px;}
     .reader-compact-tabs{display:none;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;grid-column:1 / -1;grid-row:1;}
     #view-reader.reader-fullscreen .reader-compact-tabs{display:grid;}
     .reader-compact-tabs button{min-height:44px;min-width:44px;padding:4px 2px;border:1px solid var(--line);border-radius:2px;background:var(--vellum);color:var(--ink);font:12px 'Inter','Inter Fallback',sans-serif;}
     .reader-compact-tabs [aria-pressed="true"]{background:var(--ink);color:var(--vellum-card);}
     :root[data-theme="dark"] .reader-compact-tabs [aria-pressed="true"]{background:var(--theme-surface);color:var(--ink);}
     .reader-compact-layout #view-reader:not(.reader-fullscreen) .reader-show-controls{top:var(--reader-recovery-top,calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 4px));}
-    .reader-toolbar.reader-compact-mobile > #readerReferenceNavigation{grid-column:1 / 6;grid-row:1;grid-template-columns:44px minmax(0,1fr) 44px;gap:2px;}
-    .reader-toolbar.reader-compact-mobile > #readerMoreTrigger{grid-column:6;grid-row:1;font-size:0;padding:4px;}
+    .reader-toolbar.reader-compact-mobile > #readerReferenceNavigation{grid-column:1;grid-row:1;grid-template-columns:44px minmax(0,1fr) 44px;gap:2px;}
+    .reader-toolbar.reader-compact-mobile > #readerMoreTrigger{grid-column:2;grid-row:1;font-size:0;padding:4px;}
+    .reader-compact-mobile #readerReferenceNavigation #scripturePickerTrigger{padding:4px 8px;line-height:1.2;}
+    .reader-toolbar.reader-compact-mobile > #readerVoiceCommands{grid-column:3;grid-row:1;min-width:44px;padding:4px;font-size:0;color:var(--ink);}
+    .reader-compact-mobile #readerVoiceCommands svg{display:block;width:24px;height:24px;margin:auto;}
+    .reader-compact-mobile #readerVoiceCommands[aria-pressed="true"]{background:var(--highlight);border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);}
+    .reader-compact-mobile #readerVoiceCommands[aria-pressed="true"] svg{fill:currentColor;}
     .reader-compact-mobile #readerMoreTrigger::after{content:'\2699\FE0E';font-size:22px;}
     .reader-compact-mobile #readerMoreTrigger[aria-expanded="true"]{background:var(--highlight);border-color:var(--gold);}
     .reader-compact-playback{display:grid;grid-template-columns:repeat(6,minmax(44px,1fr));gap:2px;grid-column:1 / -1;grid-row:2;}
@@ -707,7 +713,7 @@
     .reader-compact-playback [data-reader-select="readAloudVoice"] svg{display:block;width:24px;height:24px;margin:auto;}
     .reader-compact-playback [data-reader-select="readAloudSpeed"]::after{content:'\23F1\FE0E';font-size:22px;}
     .reader-compact-mobile > .reader-secondary-controls{grid-row:3;grid-column:1 / -1;max-height:calc(100dvh - var(--reader-nav-bottom,105px) - 160px);}
-    #view-reader.reader-fullscreen .reader-compact-mobile > #readerReferenceNavigation,#view-reader.reader-fullscreen .reader-compact-mobile > #readerMoreTrigger{grid-row:2;}
+    #view-reader.reader-fullscreen .reader-compact-mobile > #readerReferenceNavigation,#view-reader.reader-fullscreen .reader-compact-mobile > #readerMoreTrigger,#view-reader.reader-fullscreen .reader-compact-mobile > #readerVoiceCommands{grid-row:2;}
     #view-reader.reader-fullscreen .reader-compact-playback{grid-row:3;}
     #view-reader.reader-fullscreen .reader-compact-mobile > .reader-secondary-controls{grid-row:4;}
     #view-reader.reader-fullscreen .reader-compact-mobile > .reader-secondary-controls{max-height:calc(100dvh - 160px);}

@@ -617,9 +617,9 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     var row=document.createElement('div');
     row.className='reader-compact-playback';row.setAttribute('role','group');row.setAttribute('aria-label','Reading controls');
     toolbar.insertBefore(row,panel);
-    function move(element,parent){
+    function move(element,parent,after){
       var anchor=document.createComment('Reader desktop position');
-      element.before(anchor);moves.push({element:element,anchor:anchor,parent:parent});
+      element.before(anchor);moves.push({element:element,anchor:anchor,parent:parent,after:after});
     }
     move(document.getElementById('readerTranslation'),row);
     var translation=document.getElementById('readerTranslationTrigger');
@@ -630,6 +630,7 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     ['readAloudVoice','readAloudSpeed'].forEach(function(id){
       move(document.getElementById(id).closest('.reader-speech-field'),row);
     });
+    move(document.getElementById('readerVoiceCommands'),toolbar,more);
     move(document.getElementById('fullscreenBtn'),panel);
     stop=document.createElement('button');stop.type='button';stop.className='reader-compact-stop';stop.textContent='Stop reading aloud';
     stop.addEventListener('click',function(){stopReader();});panel.appendChild(stop);
@@ -646,7 +647,7 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
       var native=focus && focus.tagName==='SELECT' && toolbar.contains(focus);
       if(native) focus.setAttribute('data-reader-reparenting','');
       moves.forEach(function(item){
-        if(media.matches) item.parent.appendChild(item.element);
+        if(media.matches){if(item.after) item.after.after(item.element);else item.parent.appendChild(item.element);}
         else item.anchor.after(item.element);
       });
       toolbar.classList.toggle('reader-compact-mobile',media.matches);
@@ -658,6 +659,7 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
       if(!media.matches && typeof BibleSpeech!=='undefined') BibleSpeech.updateControls();
       sync();
       if(focus && focus.getClientRects().length && document.activeElement!==focus) focus.focus({preventScroll:true});
+      else if(focus && focus.id==='readerVoiceCommands' && !media.matches && panel.hidden) more.focus({preventScroll:true});
       if(native) focus.removeAttribute('data-reader-reparenting');
       if(typeof refreshReaderStickyOffsets==='function' && refreshReaderStickyOffsets) refreshReaderStickyOffsets();
     }
