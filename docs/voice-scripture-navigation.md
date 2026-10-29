@@ -112,3 +112,36 @@ An initial new test incorrectly used a helper that waited for microphone release
 Default startup remains 22 scripts, now 282,410 canonical LF decoded bytes versus 281,594 at `9b54d3f` (+816). The unchanged 290,914-byte limit leaves 8,504 bytes. The diagnostic display itself stays in the existing optional module. Word Study first-use network readiness measured 20ms, not a latency benchmark. Asset validation passed for 36 references, 22 startup syntax checks, three icons and all nine translation metadata entries; explicit syntax checks passed for all five changed JavaScript files. All 66 Isaiah SHA-256 values/byte counts are unchanged. The entire translation-alias/normalization/validated-navigation block is byte-identical to the baseline after LF normalization. The service worker is unchanged: shell 53 and the same 49 precache assets.
 
 The seven changed files contain only diagnostic hooks/UI/styles, privacy-preserving acknowledgment, focused tests, reviewed runtime source fingerprints and this document. No Bible data, manifest, CSP or service-worker changes are included. Available physical RAM samples fell to 364MiB, while sampled commit headroom remained above 14.4GiB. No unrelated applications were terminated. Formatting validation passed. Automated readiness is for an opt-in diagnostic preview only; the Android production release blocker remains unresolved until the actual phone transcript and outcome are reviewed.
+
+
+## Verified Android transcript correction
+
+The owner subsequently supplied actual final transcripts from physical Android testing: “do a rings,” “do a Reigns,” and “do we Reems” had no translation match; “Dewey reams” selected DRA. This resolves the earlier uncertainty about the phone's output. Android returned spellings absent from the exact alias catalog; punctuation was not the established cause. A pre-change unit run reproduced all three misses and the successful Dewey control (25 passed, three failed among 28 cases).
+
+Only three full phrases are added to the existing DRA alias table: `do a rings`, `do a reigns`, and `do we reems`. Existing normalization handles their case and punctuation. Existing command prefixes and Bible/Version/Translation suffixes continue to apply. Each phrase also supports an explicit target, for example “do a Reigns, Tobit chapter 1 verse 2.” DRA, Catholic, Catholic Bible, Douay-Rheims and Dewey reams remain intact. No standalone `do`, `we`, `rings`, `reigns` or `reems` alias is added, and no unobserved word recombinations are inferred. Whole-token boundaries, longest exact alias matching, catalog ambiguity rejection and edition-specific reference validation are unchanged.
+
+The complete reported transcript is still passed through the same Android one-command turn, microphone release, existing translation loader and Reader navigation. The correction changes no speech provider or lifecycle code. The optional `/#voice-debug` display and its clear/expiry/privacy behavior are preserved byte-for-byte for final physical confirmation. Unsupported alternatives remain diagnostic-only and never automatically select a Bible.
+
+Regression coverage injects each owner-reported final transcript through the actual recognition callback, starts from WEB before each DRA selection, and verifies both ordinary selection and DRA Tobit navigation with diagnostics enabled and disabled. It also covers capitalization, natural command/suffix forms, ordinary-word collisions, unsupported recombinations, a deliberate catalog ambiguity, Saved Verses/offline Bibles and native/cloud playback. The post-upgrade check now uses the observed “do a Reigns” transcript, preserving exact cached-byte and source-checksum assertions. The historical fixtures, shell-53 worker and all 49 asset paths are unchanged.
+
+Physical Android confirmation of the updated build remains the release acceptance step. No preview push, merge or production deployment is authorized by this local implementation task.
+
+
+### Verified-transcript correction validation
+
+298 unique final test identities passed: 268 Playwright and 30 Node parser units. Browser groups ran sequentially with one worker and zero automatic retries; final runs have no failures, skips or browser crashes.
+
+| Focused group | Passed |
+| --- | ---: |
+| Translation/navigation and diagnostics, including 13 new real-transcript regressions | 94 |
+| Android speech and command-turn isolation | 114 |
+| PWA and offline Bible management | 29 |
+| Historical asset contracts (43–52) plus Shell 52-to-53 upgrade/activation/recovery | 19 |
+| Desktop voice/status and startup performance | 12 |
+| Parser units, including four observed transcripts and collision/ambiguity guards | 30 |
+
+The initial pre-fix unit run reproducing the three missing aliases is retained separately. A new browser fixture initially expected “Tobias 1”; the existing canonical heading is “Tobit 1.” Only that new fixture's exact heading/introduction expectation was corrected; application data and display behavior were preserved. The 13-case focused pass is superseded by the final 94-case run and is not counted twice. `playwright-report/dra-observed-summary.json` records all final browser identities.
+
+Startup remains 22 scripts, now 282,451 canonical LF decoded bytes versus 282,410 at `99bdcde`: exactly 41 added bytes. The unchanged historical 290,914-byte limit leaves 8,463 bytes. Word Study first-use network readiness measured 19.4ms, not a latency benchmark. Asset validation passed (36 references, 22 startup syntax checks, three icons and all nine translation metadata entries). Explicit syntax checks passed for all four changed JavaScript files. All 66 Isaiah hashes/byte counts and shell-53 source/49 asset paths are unchanged. A source comparison verifies that the complete Reader differs only by the three literal aliases; the diagnostic runtime and CSS are identical to `99bdcde`.
+
+The five-file scope is the Reader alias table, parser/browser regressions, reviewed Reader cache checksum and post-update transcript fixture, and this documentation. There are no CSS, markup, Bible data, manifest, service-worker, CSP, microphone lifecycle or speech-provider changes. Formatting validation passed. Memory was monitored between groups; sampled available physical RAM remained at least 769MiB and sampled commit headroom above 11.7GiB. No unrelated applications were terminated. Final physical Android acceptance of the updated build remains pending; no push, merge or deployment was performed.

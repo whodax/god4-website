@@ -72,7 +72,7 @@ test('shell 53 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const diagnosticSources={"/js/bible/reader.js":"6bd970176245a029b88a5877c1867728bba371d7859bb51ce12e91ae39448de2","/js/bible/translation-picker.js":"ebf94e61ced889aed90d641f36e2ee3074f220f632459b9639e67d2fc863301d","/css/companion.css":"2e852bd3865622bc2c014c5f68059ed2b7d072152d8414f8da918371fd2f8400"};
+      const diagnosticSources={"/js/bible/reader.js":"261f7d0f0192d765242a37ac8a8a3b69831be5f90e850d0197d156caad221aa6","/js/bible/translation-picker.js":"ebf94e61ced889aed90d641f36e2ee3074f220f632459b9639e67d2fc863301d","/css/companion.css":"2e852bd3865622bc2c014c5f68059ed2b7d072152d8414f8da918371fd2f8400"};
       if(diagnosticSources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(diagnosticSources[asset]);
       else expect(actual,asset).toBe(expected);
     }
@@ -272,7 +272,7 @@ async function compactVoiceNavigation(page,before){
     expect(await mic.evaluate(e=>e.getBoundingClientRect().width)).toBeGreaterThanOrEqual(44);
   }else if(await more.getAttribute('aria-expanded')==='false')await more.click();
   await expect(page.locator('[data-voice-command-button]')).toHaveCount(1);
-  for(const [command,id,book,verse] of [['WEB John 1:16','web','john',16],['Douay - Rheims Catholic Bible, Tobias 1:1','dra','tobit',1]]){
+  for(const [command,id,book,verse] of [['WEB John 1:16','web','john',16],['do a Reigns, Tobias 1:1','dra','tobit',1]]){
     const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});if(await recovery.isVisible())await recovery.click();
     await mic.click();await expect(mic).toHaveAttribute('aria-pressed','true');await expect(mic).toHaveAccessibleName(/listening/);
     await page.evaluate(command=>__upgradeRecognition.at(-1).emit(command),command);await page.evaluate(()=>voiceNavigationTask);

@@ -697,7 +697,7 @@ var spokenTranslationAliases={
   webster:['websters','noah webster','double u b s','double you bee ess'],
   rv:['english revised','are vee'],
   gnv:['geneva 1599','gee en vee'],
-  dra:['catholic','douay catholic','douay rheims american edition','dra catholic','d r a catholic','douay reims','douay reims catholic','douai rheims','douai rheims catholic','dewey rheims','dewey rheims catholic','dewey reams','dewey reams catholic','do way rheims','do way rheims catholic','dee are ay']
+  dra:['catholic','douay catholic','douay rheims american edition','dra catholic','d r a catholic','douay reims','douay reims catholic','douai rheims','douai rheims catholic','dewey rheims','dewey rheims catholic','dewey reams','dewey reams catholic','do way rheims','do way rheims catholic','do a rings','do a reigns','do we reems','dee are ay']
 };
 function normalizeSpokenNavigation(value){
   return normalizeVoiceCommand(value).normalize('NFKC').toLowerCase().replace(/[’‘ʼ'`´]/g,'')
