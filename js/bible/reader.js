@@ -62,13 +62,7 @@ function getAdjacentReaderVerseNumber(direction){
   return null;
 }
 
-// Optional local tracing must never become a prerequisite for Voice Commands.
-function traceReaderVoice(event,value,extra){
-  if(window.ReaderVoiceDiagnostics) try { ReaderVoiceDiagnostics[event](value,extra); } catch(error) { /* Diagnostics cannot interrupt a command. */ }
-}
-
 function setVoiceStatus(message){
-  traceReaderVoice('status',message);
   document.querySelectorAll('.voice-status').forEach(function(status){ if(status.textContent!==message) status.textContent = message; });
 }
 
@@ -697,7 +691,7 @@ var spokenTranslationAliases={
   webster:['websters','noah webster','double u b s','double you bee ess'],
   rv:['english revised','are vee'],
   gnv:['geneva 1599','gee en vee'],
-  dra:['catholic','douay catholic','douay rheims american edition','dra catholic','d r a catholic','douay reims','douay reims catholic','douai rheims','douai rheims catholic','dewey rheims','dewey rheims catholic','dewey reams','dewey reams catholic','do way rheims','do way rheims catholic','do a rings','do a reigns','do we reems','douay rames','dewey rames','do way reams','do we reams','do a reams','do a rains','dewey reigns','dewey rains','do away reams','do away reigns','do we rains','do we rings','dee are ay']
+  dra:['catholic','dra','d r a','douay','douay rheims','douay rheims catholic','douay rheims american edition']
 };
 function normalizeSpokenNavigation(value){
   return normalizeVoiceCommand(value).normalize('NFKC').toLowerCase().replace(/[’‘ʼ'`´]/g,'')
@@ -841,7 +835,6 @@ function handleVoiceCommand(transcript, resumeAfterTurn){
   var resumeReading=resumeAfterTurn===true || !!getActiveReaderPlaybackSnapshot();
   setVoiceStatus('Command recognized.');
   var simple=/^(?:repeat(?: verse| last verse)?|play(?: the passage)?|read(?: the passage)?|pause|resume|continue|stop|next verse|previous verse|back verse|next chapter|next|go to next chapter|previous chapter|previous|back|go to previous chapter)$/.test(command);
-  traceReaderVoice('dispatch',transcript,simple);
   if(!simple && handleSpokenReferenceCommand(command,resumeReading,requestId)) return;
   if(/^(?:next chapter|next|go to next chapter|previous chapter|previous|back|go to previous chapter)$/.test(command)){
     var before=currentBook+':'+currentChapter;
@@ -961,7 +954,6 @@ function createVoiceRecognition(){
   voiceRecognition.continuous = !isAndroidVoiceCommands();
   voiceRecognition.interimResults = !isAndroidVoiceCommands();
   voiceRecognition.lang = 'en-US';
-  traceReaderVoice('start',voiceRecognition);
   voiceRecognition.onstart = function(){
     if(isAndroidVoiceCommands() && (voiceRecognition !== recognition || !voiceCommandsListening || voiceCommandsStopping)) return;
     voiceRecognitionActive = true;
@@ -979,7 +971,6 @@ function createVoiceRecognition(){
       var interim = result.isFinal === false;
       if(isAndroidVoiceCommands()){
         if(result.isFinal !== true || !normalizeVoiceCommand(result[0].transcript)) continue;
-        traceReaderVoice('final',result);
         var transcript = result[0].transcript;
         var resume = voiceTurnWasPlaying && !/^(pause|stop)$/.test(normalizeVoiceCommand(transcript));
         releaseReaderMicrophone(function(){
@@ -988,7 +979,6 @@ function createVoiceRecognition(){
         return;
       }
       if(interim && !isInterimPlaybackCommand(result[0].transcript)) continue;
-      if(result.isFinal === true) traceReaderVoice('final',result);
       voiceResultHandled = true;
       voiceHandledResults.add(index);
       handleVoiceCommand(result[0].transcript);
@@ -1851,4 +1841,3 @@ if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded'
 else { initializeReaderControls(); initializeVoiceCommands(); ReaderTranslationLoader.initialize(); }
 
 // Fragment opt-in is local to this document and never sent with HTTP requests.
-if(location.hash==='#voice-debug') ReaderTranslationLoader.ensure().catch(function(){setVoiceStatus('Local voice diagnostics unavailable. Voice Commands still works.');});

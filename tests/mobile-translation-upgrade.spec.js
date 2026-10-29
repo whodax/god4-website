@@ -63,7 +63,7 @@ test('shell 53 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(49);
-  // Pin the approved shell-53 release plus the reviewed local-diagnostic sources.
+  // Pin the approved shell-53 release plus the reviewed Catholic display and diagnostic-removal sources.
   // Every changed asset has an exact canonical source checksum; delivery tests
   // also verify raw cached bytes. Historical fixtures remain Git blobs.
   for(const asset of requiredAssets){
@@ -72,8 +72,8 @@ test('shell 53 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const diagnosticSources={"/js/bible/reader.js":"f7008174ed9677c33e489ba3fb18e0ad49ace5dd00662c34c234e1e8c0578472","/js/bible/translation-picker.js":"ebf94e61ced889aed90d641f36e2ee3074f220f632459b9639e67d2fc863301d","/css/companion.css":"2e852bd3865622bc2c014c5f68059ed2b7d072152d8414f8da918371fd2f8400"};
-      if(diagnosticSources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(diagnosticSources[asset]);
+      const catholicSources={"/js/bible/reader.js":"d3844610d875b3bc0f290e9cc4bfffc12cb2db1893001c0e47256a982d920442","/js/bible/translation-picker.js":"3c03747a837fdb425bd0966d3e951e157be62b74a75e34eab25869b50e3fd3f7","/css/companion.css":"c18fa96525fc5c18eb4f45d2d5fd9be60ec2884a06800626dea5932692525d8c","/js/bible/data.js":"fdbce04ad316ceb3ba8cac39f014ec02f1323b6cb95bafa647befb1f34b970b7","/js/app.js":"8ec12e7e4406859b0ca397e80a87e55aae44ff8b8dc44df96b5bb1972e9a46d1"};
+      if(catholicSources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(catholicSources[asset]);
       else expect(actual,asset).toBe(expected);
     }
   }
@@ -272,7 +272,7 @@ async function compactVoiceNavigation(page,before){
     expect(await mic.evaluate(e=>e.getBoundingClientRect().width)).toBeGreaterThanOrEqual(44);
   }else if(await more.getAttribute('aria-expanded')==='false')await more.click();
   await expect(page.locator('[data-voice-command-button]')).toHaveCount(1);
-  for(const [command,id,book,verse] of [['WEB John 1:16','web','john',16],['do a Reigns, Tobias 1:1','dra','tobit',1]]){
+  for(const [command,id,book,verse] of [['WEB John 1:16','web','john',16],['CTH, Tobias 1:1','dra','tobit',1]]){
     const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});if(await recovery.isVisible())await recovery.click();
     await mic.click();await expect(mic).toHaveAttribute('aria-pressed','true');await expect(mic).toHaveAccessibleName(/listening/);
     await page.evaluate(command=>__upgradeRecognition.at(-1).emit(command),command);await page.evaluate(()=>voiceNavigationTask);
@@ -312,17 +312,17 @@ async function readerOptions(page,updated){
     }
     await page.evaluate(()=>selectReaderVerse(2));
     const save=page.locator('#readerSaveVerse');
-    await save.click();await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (DRA) saved.');
+    await save.click();await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (CTH) saved.');
     await expect(save).toHaveAttribute('aria-pressed','true');
     expect(await page.evaluate(()=>UserData.savedVerses.load().at(-1).location)).toEqual({translationId:'dra',bookId:'john',chapter:1,verse:2});
     await expect(save).toHaveText('Saved ✓');await expect(save).toHaveAttribute('aria-disabled','true');
     await save.press('Enter');
     expect(await page.evaluate(()=>UserData.savedVerses.load().filter(entry=>entry.location?.verse===2))).toHaveLength(1);
     await page.locator('.saved-pill').click();
-    await page.locator('#tray .saved-verse-row').filter({hasText:'John 1:2 (DRA)'}).locator('.saved-verse-remove').filter({hasText:'Remove'}).click();
+    await page.locator('#tray .saved-verse-row').filter({hasText:'John 1:2 (CTH)'}).locator('.saved-verse-remove').filter({hasText:'Remove'}).click();
     await page.locator('#closeTray').click();
     await expect(save).toHaveAttribute('aria-pressed','false');
-    await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (DRA) removed from Saved.');
+    await expect(page.locator('#readerSaveStatus')).toHaveText('John 1:2 (CTH) removed from Saved.');
     if(mobile){
       await page.locator('#readerContent').dispatchEvent('wheel',{deltaY:96});
       await page.evaluate(()=>scrollBy({top:96,behavior:'instant'}));

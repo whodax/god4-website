@@ -63,7 +63,7 @@ test('all nine editions remain available; DRA Catholic labels and chapter distin
       await expect(page.locator('#readerContent .reader-chapter-caption')).toHaveCSS('position','static');
     }
   }
-  await expect(page.locator('#readerTranslationTrigger')).toHaveAccessibleName('Bible translation: DRA — Douay-Rheims — Catholic');
+  await expect(page.locator('#readerTranslationTrigger')).toHaveAccessibleName('Bible translation: CTH — Catholic Bible (Douay-Rheims)');
   await page.evaluate(()=>navigateReaderToPassage('daniel',13,1));
   await expect(page.locator('#readerContent h2')).toHaveText('Daniel 13');await expect(page.locator('#readerContent .reader-chapter-caption')).toBeVisible();
   await page.locator('#readerTranslationTrigger').click();await page.locator('#readerTranslationPicker [data-translation="web"]').click();

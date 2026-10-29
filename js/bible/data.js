@@ -100,7 +100,7 @@ const BibleData = (function createBibleDataAccess(){
     offlineAllowed: true,
     provider: 'gnv-library'
   }, {
-    id:'dra', name:'Douay-Rheims — Catholic', abbreviation:'DRA', language:'English',
+    id:'dra', name:'Catholic Bible (Douay-Rheims)', abbreviation:'CTH', language:'English',
     description:'73-book Catholic canon • Includes the Deuterocanonical books and Catholic additions to Esther and Daniel.',
     source:'eBible.org — https://ebible.org/engDRA/', copyrightStatus:'Public domain',
     attribution:'Douay-Rheims American Edition of 1899, eBible.org',

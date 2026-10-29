@@ -1,5 +1,9 @@
 # Complete Catholic Bible
 
+Current display contract: **CTH — Catholic Bible (Douay-Rheims)**. The internal ID
+remains `dra`; historical DRA references below identify the same source edition.
+See [Catholic simplification](catholic-bible-simplification.md).
+
 Branch: `feature/complete-catholic-bible`. Baseline: `27952a4be229a7f324e75a5e985093774e6df2d3`.
 Changes are uncommitted and unpushed.
 

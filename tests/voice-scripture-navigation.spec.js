@@ -1,6 +1,6 @@
 const {test,expect}=require('@playwright/test');
 test.use({hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'});
-async function open(page,cloud=false,diagnostic=false){
+async function open(page,cloud=false){
   await page.setViewportSize({width:390,height:844});await page.emulateMedia({reducedMotion:'reduce'});
   await page.addInitScript(cloud=>{
     window.IntersectionObserver=class{observe(){}unobserve(){}disconnect(){}};
@@ -16,7 +16,7 @@ async function open(page,cloud=false,diagnostic=false){
   },cloud);
   await page.route('**/api/tts',async route=>{await page.evaluate(b=>__voiceNav.requests.push(b),route.request().postDataJSON());await route.fulfill({status:200,contentType:'audio/mpeg',body:'controlled audio'});});
   page.errors=[];page.on('pageerror',e=>page.errors.push(e.message));
-  await page.goto(diagnostic?'/#voice-debug':'/');await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>ReaderTranslationLoader.ensure());
+  await page.goto('/');await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>ReaderTranslationLoader.ensure());
 }
 async function command(page,text,wait=true,alternatives=[]){
   await page.evaluate(()=>new Promise(requestAnimationFrame));const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});if(await recovery.isVisible())await recovery.click();
@@ -28,7 +28,7 @@ async function command(page,text,wait=true,alternatives=[]){
 async function position(page){return page.evaluate(()=>({id:currentTranslation,book:currentBook,chapter:currentChapter,verse:currentVerse,stored:localStorage.getItem('god4.translation'),saved:JSON.stringify(UserData.savedVerses.load())}));}
 test.afterEach(async({page})=>{expect(page.errors||[]).toEqual([]);expect(await page.evaluate(()=>__voiceNav.overlaps)).toEqual([]);});
 
-const translations=[['web','World English Bible','W E B'],['asv','American Standard Version','A S V'],['kjv','King James Version','K J V'],['ylt','Young’s Literal Translation','Y L T'],['dby','Darby Translation','D B Y'],['webster','Webster Bible','W B S'],['rv','Revised Version','R V'],['gnv','Geneva Bible','G N V'],['dra','Douay-Rheims — Catholic','D R A']];
+const translations=[['web','World English Bible','W E B'],['asv','American Standard Version','A S V'],['kjv','King James Version','K J V'],['ylt','Young’s Literal Translation','Y L T'],['dby','Darby Translation','D B Y'],['webster','Webster Bible','W B S'],['rv','Revised Version','R V'],['gnv','Geneva Bible','G N V'],['dra','Catholic Bible (Douay-Rheims)','C T H']];
 for(const [id,name,letters] of translations)test(`${id}: full name, spoken abbreviation, compound reference and persistence`,async({page})=>{
   await open(page);await command(page,name);await expect(page.locator('#readerTranslation')).toHaveValue(id);
   await command(page,`Switch to ${letters}, Matthew chapter one verse two`);
@@ -134,7 +134,7 @@ for(const [id,first,two] of shortTranslations)test(`${id}: short catalog names a
 
 test('Catholic spoken names, punctuation and deterministic Android transcript variants accept one final command',async({page})=>{
   await open(page);
-  for(const transcript of ['DRA','Douay','Douay Rheims','Douay-Rheims','Douay Rheims Catholic','Douay Rheims Bible','Douay Rheims Catholic Bible','Catholic','Catholic Bible','Switch to Catholic Bible','Douay - Rheims Catholic','Douay–Rheims Catholic','DOUAY—RHEIMS CATHOLIC!','Douay‑Rheims Catholic','Douay/Reims Catholic','Dewey Reams Catholic','ＤＲＡ']){
+  for(const transcript of ['DRA','Douay','Douay Rheims','Douay-Rheims','Douay Rheims Catholic','Douay Rheims Bible','Douay Rheims Catholic Bible','Catholic','Catholic Bible','Switch to Catholic Bible','Douay - Rheims Catholic','Douay–Rheims Catholic','DOUAY—RHEIMS CATHOLIC!','Douay‑Rheims Catholic','ＤＲＡ']){
     await command(page,transcript+', Tobit chapter 1 verse 2');expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
     expect(await page.evaluate(()=>__voiceNav.recognizers.filter(r=>r.active).length)).toBe(0);
   }
@@ -180,190 +180,25 @@ test('new natural aliases work offline with retained Catholic and Protestant dow
 });
 
 
-const debugField=(page,name)=>page.locator('[data-voice-debug="'+name+'"]');
 
-test('diagnostics: default-off emits no transcript to page, console, network or storage',async({page})=>{
-  const requests=[],consoleText=[];page.on('request',r=>requests.push(r.url()+' '+(r.postData()||'')));page.on('console',m=>consoleText.push(m.text()));
-  await open(page);await expect(page.locator('#readerVoiceDebug')).toHaveCount(0);
-  const storage=()=>page.evaluate(()=>JSON.stringify({local:{...localStorage},session:{...sessionStorage}}));const before=await storage();
-  const raw='private transcript sentinel 482729';await command(page,raw);
-  await expect(page.locator('body')).not.toContainText(raw);expect(await storage()).toBe(before);
-  expect(requests.join(' ')).not.toContain(raw);expect(consoleText.join(' ')).not.toContain(raw);
-  expect(await page.evaluate(()=>__voiceNav.recognizers.at(-1).maxAlternatives)).toBe(1);
-});
-
-for(const [raw,id] of [['Douay Rheims','dra'],['Douay Rheims Catholic','dra'],['Douay-Rheims Bible','dra'],['Catholic Bible','dra'],['Catholic','dra'],['DRA','dra'],['American Standard','asv'],['Geneva Bible','gnv']])test('diagnostics: physical report literal transcript '+raw+' reaches handler and switches from WEB',async({page})=>{
-  await open(page,false,true);await page.evaluate(()=>navigateReaderToPassage('john',1,2));
-  await expect(page.locator('#readerVoiceDebug')).toContainText('voice-trace-1');await command(page,raw);
-  expect(await position(page)).toMatchObject({id,book:'john',chapter:1,verse:2,stored:id});
-  await expect(debugField(page,'raw')).toHaveText(JSON.stringify(raw));
-  await expect(debugField(page,'normalized')).toHaveText(JSON.stringify(await page.evaluate(t=>normalizeSpokenNavigation(t),raw)));
-  await expect(debugField(page,'decision')).toContainText('Exact final reached handler.');
-  await expect(debugField(page,'decision')).toContainText('"translationId":"'+id+'"');
-  await expect(debugField(page,'outcome')).toContainText('Selected: '+id+' / john 1:2');
-  expect(await page.evaluate(()=>__voiceNav.recognizers.at(-1).maxAlternatives)).toBe(3);
-});
-
-for(const raw of ['Douay Rheims','Douay Rheims Catholic','Douay-Rheims Bible'])test('diagnostics: literal compound '+raw+' validates and selects Catholic Tobit',async({page})=>{
-  await open(page,false,true);await command(page,raw+', Tobit chapter 1 verse 2');
-  expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
-  await expect(debugField(page,'raw')).toHaveText(JSON.stringify(raw+', Tobit chapter 1 verse 2'));
-  await expect(debugField(page,'decision')).toContainText('"bookId":"tobit"');
-});
-
-test('diagnostics: unsupported synthetic transcript is displayed exactly; supported alternatives never silently select DRA',async({page})=>{
-  await open(page,false,true);const before=await position(page);
-  // Hypothesis fixture, NOT a claimed physical Android transcript.
-  const raw='  Dooay Rames, Catholic!  ';await command(page,raw,true,['Douay Rheims Catholic','DRA','Catholic Bible']);
-  expect(await position(page)).toEqual(before);await expect(debugField(page,'raw')).toHaveText(JSON.stringify(raw));
-  await expect(debugField(page,'normalized')).toHaveText('"dooay rames catholic"');
-  await expect(debugField(page,'alternatives')).toHaveText('1: '+JSON.stringify(raw)+'\n2: "Douay Rheims Catholic"\n3: "DRA"');
-  await expect(debugField(page,'decision')).toContainText('No translation/reference match.');
-  await expect(debugField(page,'outcome')).toContainText('Command not recognized.');
-});
-
-test('diagnostics: accepted final, microphone release, dispatch and selection are separate observable stages',async({page})=>{
-  await open(page,false,true);await page.evaluate(()=>__voiceNav.autoEnd=false);
-  await page.locator('[data-voice-command-button]').tap();await page.evaluate(()=>__voiceNav.recognizers.at(-1).emit('Douay Rheims Catholic'));
-  await expect(page.locator('[data-voice-command-button]')).toHaveAttribute('aria-busy','true');
-  await expect(debugField(page,'raw')).toHaveText('"Douay Rheims Catholic"');
-  await expect(debugField(page,'decision')).toHaveText('—');
-  await expect(debugField(page,'outcome')).toContainText('Closing microphone');
-  expect((await position(page)).id).toBe('web');
-  await page.evaluate(()=>__voiceNav.recognizers.at(-1).end());await page.evaluate(()=>voiceNavigationTask);
-  await expect(debugField(page,'decision')).toContainText('Exact final reached handler.');expect((await position(page)).id).toBe('dra');
-});
-
-test('diagnostics: exact punctuation is inert text and is never sent or persisted',async({page})=>{
-  const requests=[],consoleText=[];page.on('request',r=>requests.push(r.url()+' '+(r.postData()||'')));page.on('console',m=>consoleText.push(m.text()));
-  await open(page,false,true);const before=await page.evaluate(()=>JSON.stringify({local:{...localStorage},session:{...sessionStorage}}));
-  const raw='<img src=x onerror="window.voiceDiagnosticInjected=true"> Dooay—Rames?';await command(page,raw);
-  await expect(debugField(page,'raw')).toHaveText(JSON.stringify(raw));expect(await page.evaluate(()=>window.voiceDiagnosticInjected)).toBeUndefined();
-  await expect(page.locator('#readerVoiceDebug img')).toHaveCount(0);expect(await page.evaluate(()=>JSON.stringify({local:{...localStorage},session:{...sessionStorage}}))).toBe(before);
-  expect(requests.join(' ')).not.toContain(raw);expect(consoleText.join(' ')).not.toContain(raw);
-  expect(page.url()).not.toContain(encodeURIComponent(raw));
-});
-
-test('diagnostics: expiry, next command, visibility, pagehide and reload clear transient text',async({page})=>{
-  await open(page,false,true);await command(page,'Dooay Rames');
-  await page.locator('[data-voice-command-button]').tap();await expect(debugField(page,'raw')).toHaveText('—');
-  await page.evaluate(()=>__voiceNav.recognizers.at(-1).emit('Dooay Rames'));await page.evaluate(()=>voiceNavigationTask);
-  await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,value:true});document.dispatchEvent(new Event('visibilitychange'));delete document.hidden;});
-  await expect(debugField(page,'raw')).toHaveText('—');
-  await command(page,'Dooay Rames');await page.evaluate(()=>dispatchEvent(new PageTransitionEvent('pagehide')));await expect(debugField(page,'raw')).toHaveText('—');
-  await page.clock.install();await page.evaluate(()=>{toggleVoiceCommands();__voiceNav.recognizers.at(-1).emit('Dooay Rames');});
-  await expect(debugField(page,'raw')).toHaveText('"Dooay Rames"');await page.clock.fastForward(60001);
-  for(const field of ['raw','alternatives','normalized','decision','outcome'])await expect(debugField(page,field)).toHaveText('—');
-  await page.reload();await page.evaluate(()=>initializeBibleExperience());await expect(page.locator('#readerVoiceDebug')).toBeVisible();await expect(debugField(page,'raw')).toHaveText('—');
-});
-
-for(const [width,dark] of [[320,false],[360,true],[390,false],[430,true]])test(`diagnostics: ${width}px dark=${dark} wraps long text and clear/disable support keyboard focus`,async({page})=>{
-  await open(page,false,true);await page.setViewportSize({width,height:844});if(dark)await page.evaluate(()=>document.querySelector('[data-theme-toggle]').click());await expect(page.locator('html')).toHaveAttribute('data-theme',dark?'dark':'light');
-  await command(page,'Dooay '+'.'.repeat(500)+' Rames');
-  await expect(page.getByRole('region',{name:'Local Voice Commands diagnostics'})).toBeVisible();
-  expect(await page.locator('#readerVoiceDebug').evaluate(e=>e.scrollWidth<=e.clientWidth && document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-  const clear=page.getByRole('button',{name:'Clear diagnostic text',exact:true});expect(await clear.evaluate(e=>e.getBoundingClientRect().height)).toBeGreaterThanOrEqual(44);
-  await clear.focus();await page.keyboard.press('Enter');await expect(debugField(page,'raw')).toHaveText('—');await expect(clear).toBeFocused();
-  const close=page.getByRole('button',{name:'Disable diagnostics',exact:true});await close.focus();await page.keyboard.press('Enter');
-  await expect(page.locator('#readerVoiceDebug')).toHaveCount(0);await expect(page.locator('[data-voice-command-button]')).toBeFocused();expect(new URL(page.url()).hash).toBe('');
-  await command(page,'Dooay Rames');expect(await page.evaluate(()=>__voiceNav.recognizers.at(-1).maxAlternatives)).toBe(1);await expect(page.locator('body')).not.toContainText('Dooay Rames');
-});
-
-for(const cloud of [false,true])test(`diagnostics: ${cloud?'cloud':'native'} compound narration still waits for release and preserves playing state`,async({page})=>{
-  await open(page,cloud,true);await page.evaluate(()=>playReader());
-  await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
-  await command(page,'Douay Rheims Catholic, Tobit chapter 1 verse 2');
-  await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
-  await expect(debugField(page,'decision')).toContainText('"translationId":"dra"');await expect(debugField(page,'outcome')).toContainText('Selected: dra / tobit 1:2');
-  const old=await page.evaluate(()=>__voiceNav.recognizers.length);await command(page,'pause');
-  await page.evaluate(()=>__voiceNav.recognizers.at(-2).emit('stop'));expect(await page.evaluate(()=>__voiceNav.recognizers.length)).toBe(old+1);
-  await expect(debugField(page,'raw')).toHaveText('"pause"');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');
-});
-
-
-test('diagnostics: a broken optional trace hook cannot interrupt normal microphone, selection or narration',async({page})=>{
-  await open(page);await page.evaluate(()=>{window.ReaderVoiceDiagnostics={start(){throw Error('controlled diagnostic failure');},final(){throw Error('controlled diagnostic failure');},dispatch(){throw Error('controlled diagnostic failure');},status(){throw Error('controlled diagnostic failure');}};});
-  await command(page,'Douay Rheims Catholic, Tobit chapter 1 verse 2');expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
-  await command(page,'play');await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');await command(page,'stop');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
-});
-
-
-test('diagnostics: delayed final/release callbacks cannot repopulate cleared or hidden transcript fields',async({page})=>{
-  await open(page,false,true);await page.evaluate(()=>__voiceNav.autoEnd=false);
-  await page.locator('[data-voice-command-button]').tap();await page.evaluate(()=>__voiceNav.recognizers.at(-1).emit('Dooay Rames'));
-  await expect(debugField(page,'raw')).toHaveText('"Dooay Rames"');
-  await page.getByRole('button',{name:'Clear diagnostic text',exact:true}).click();
-  await page.evaluate(()=>__voiceNav.recognizers.at(-1).end());
-  for(const field of ['raw','alternatives','normalized','decision','outcome'])await expect(debugField(page,field)).toHaveText('—');
-  await page.locator('[data-voice-command-button]').tap();
-  await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,value:true});document.dispatchEvent(new Event('visibilitychange'));__voiceNav.recognizers.at(-1).emit('Dooay Rames hidden');__voiceNav.recognizers.at(-1).end();delete document.hidden;});
-  for(const field of ['raw','alternatives','normalized','decision','outcome'])await expect(debugField(page,field)).toHaveText('—');
-  await page.evaluate(()=>__voiceNav.autoEnd=true);await command(page,'Catholic Bible, John 1:2');await expect(debugField(page,'raw')).toHaveText('"Catholic Bible, John 1:2"');expect((await position(page)).id).toBe('dra');
-});
-
-// These final transcripts were supplied by the owner after physical Android testing.
-const observedDraTranscripts=['Douay Rheims','Douay Reims','Douay Rames','Dewey Rheims','Dewey Reams','Dewey Rames','Do Way Rheims','Do Way Reams','Do We Reems','Do We Reams','Do A Rings','Do A Reigns','Do A Reams','Do A Rains','Dewey Reigns','Dewey Rains','Do Away Reams','Do Away Reigns','Do We Rains','Do We Rings'];
-for(const diagnostic of [false,true])for(const raw of observedDraTranscripts)test(`observed Android DRA: ${raw}, diagnostics=${diagnostic}, selection and Catholic compound navigation`,async({page})=>{
-  await open(page,false,diagnostic);
-  for(const spoken of [raw,'Switch to '+raw+' Bible','Change to '+raw+' Catholic','Read '+raw+' Catholic Bible',raw+' Version',raw+' Translation']){
-    await command(page,'WEB John 1:2');await command(page,spoken);
-    expect(await position(page)).toMatchObject({id:'dra',book:'john',chapter:1,verse:2,stored:'dra'});
-    if(diagnostic){await expect(debugField(page,'raw')).toHaveText(JSON.stringify(spoken));await expect(debugField(page,'decision')).toContainText('"translationId":"dra"');}
-    await command(page,'WEB John 1:2');await command(page,spoken+', Tobit chapter 1 verse 2');
+for(const alias of ['Catholic','Catholic Bible','CTH','C T H','DRA','D R A','Catholic Bible (Douay-Rheims)'])test('Catholic simplification: '+alias+' selects internal dra, displays CTH and navigates Tobit',async({page})=>{
+  await open(page);
+  for(const prefix of ['', 'Switch to ', 'Change to ', 'Read ']){
+    await command(page,'WEB John 1:2');await command(page,prefix+alias+', Tobit chapter 1 verse 2');
     expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2,stored:'dra'});
-    await expect(page.locator('#readerContent .verse-focused')).toHaveAttribute('data-verse-number','2');
-    await expect(page.locator('#readerContent h2')).toHaveText('Tobit 1');
+    await expect(page.locator('#voiceStatusTop')).toContainText('CTH selected.');
+    await expect(page.locator('#readerTranslation option:checked')).toHaveText('CTH — Catholic Bible (Douay-Rheims)');
   }
 });
-
-test('observed Android DRA: common words, incomplete phrases and speculative recombinations never select a translation',async({page})=>{
-  await open(page);await page.evaluate(()=>navigateReaderToPassage('john',1,2));const before=await position(page);
-  for(const raw of ['do','we','rings','reigns','reems','do a','do we','a rings','rings Bible','reigns Catholic','Switch to rings','do a ringside','do a ring','do a reems','do we reigns','do away rings','dewey rings','douay reams','do a rings around the table','do we read John 1:1']){
-    await command(page,raw);expect(await position(page)).toEqual(before);await expect(page.locator('#voiceStatusTop')).toHaveText(/not recognized|not available|not found/);
+test('removed diagnostics and phonetic aliases never dispatch an alternative or guess',async({page})=>{
+  await open(page);await page.goto('/#voice-debug');await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>ReaderTranslationLoader.ensure());
+  await expect(page.locator('#readerVoiceDebug')).toHaveCount(0);expect(await page.evaluate(()=>typeof ReaderVoiceDiagnostics)).toBe('undefined');
+  const before=await position(page);
+  for(const raw of ['Dewey Reams Catholic','Do A Rings','Do We Reams Catholic Bible','Switch to Do Away Reigns','Douay Rames','Catholicism']){
+    await command(page,raw,true,['CTH, Tobit 1:2']);expect(await position(page)).toEqual(before);
+    expect(await page.evaluate(()=>__voiceNav.recognizers.at(-1).maxAlternatives)).toBe(1);
+    await expect(page.locator('body')).not.toContainText(raw);
   }
-});
-
-test('observed Android DRA: an equally specific catalog alias stays ambiguous and explicit DRA disambiguates',async({page})=>{
-  await open(page,false,true);await page.evaluate(()=>{const list=BibleData.listTranslations;BibleData.listTranslations=()=>list().map(t=>t.id==='asv'?{...t,name:'Do A Rings Version'}:t).reverse();});
-  const before=await position(page);await command(page,'do a rings');expect(await position(page)).toEqual(before);
-  await expect(page.locator('#voiceStatusTop')).toHaveText('Ambiguous translation name. Say its full title or abbreviation.');
-  await expect(debugField(page,'decision')).toContainText('Ambiguous translation name.');
-  await command(page,'DRA, Tobit chapter 1 verse 2');expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
-});
-
-test('observed Android DRA: warm offline Bible navigation and Saved Verses survive all twenty requested transcripts',async({page,context})=>{
-  await open(page,false,true);await page.evaluate(async()=>{await BibleTranslationLoader.ensure('dra');toggleFav('John 1:1',BibleData.getVerse('web','john',1,1).text,null,{translationId:'web',bookId:'john',chapter:1,verse:1});});
-  const saved=(await position(page)).saved;await context.setOffline(true);
-  for(const raw of observedDraTranscripts){
-    await command(page,'WEB John 1:2');await command(page,raw+', Tobit chapter 1 verse 2');
-    expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2,saved});await expect(debugField(page,'raw')).toHaveText(JSON.stringify(raw+', Tobit chapter 1 verse 2'));
-  }
-});
-
-for(const cloud of [false,true])test(`observed Android DRA: ${cloud?'cloud':'native'} aliases preserve playback intent, chapter introductions and microphone turns`,async({page})=>{
-  await open(page,cloud,true);await page.evaluate(()=>playReader());await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
-  await command(page,'do a Reigns, Tobit chapter 1 verse 2');await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
-  expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
-  const first=await page.evaluate(cloud=>cloud?__voiceNav.requests.at(-1).text:__voiceNav.native.at(-1).text,cloud);
-  expect(first).toBe('Tobit chapter 1. '+await page.evaluate(()=>BibleData.getVerse('dra','tobit',1,2).text));
-  await command(page,'do we Reems, Tobit chapter 1 verse 3');await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
-  expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:3});
-  const second=await page.evaluate(cloud=>cloud?__voiceNav.requests.at(-1).text:__voiceNav.native.at(-1).text,cloud);
-  expect(second).toBe(await page.evaluate(()=>BibleData.getVerse('dra','tobit',1,3).text));
-  expect(await page.evaluate(()=>__voiceNav.recognizers.length)).toBe(2);await command(page,'stop');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
-});
-
-
-test('recognition alternatives cannot override a conflicting primary command or resolve primary ambiguity',async({page})=>{
-  await open(page,false,true);
-  await command(page,'WEB John 1:2',true,['Dewey Rames Catholic, Tobit 1:2']);
-  expect(await position(page)).toMatchObject({id:'web',book:'john',chapter:1,verse:2});
-  await command(page,'Bible',true,['Do Away Reams Catholic, Tobit 1:2']);
-  expect(await position(page)).toMatchObject({id:'web',book:'john',chapter:1,verse:2});
-  await expect(page.locator('#voiceStatusTop')).toContainText('Ambiguous');
-  await command(page,'Read Do We Rings Catholic, Tobit 1:2',true,['WEB John 3:16']);
-  expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
-  await command(page,'stop',true,['Read Dewey Reams Catholic, Tobit 1:3']);
-  expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
-  expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
+  await command(page,'WEB John 1:2',true,['CTH Tobit 1:2']);expect(await position(page)).toMatchObject({id:'web',book:'john',chapter:1,verse:2});
+  await command(page,'Bible',true,['CTH Tobit 1:2']);expect(await position(page)).toMatchObject({id:'web',book:'john',chapter:1,verse:2});
 });

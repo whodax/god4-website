@@ -8,20 +8,20 @@ async function passage(page,book,chapter=1,verse){await page.evaluate(([b,c,v])=
 
 test('DRA display name and description identify the canon without changing edition attribution',async({page})=>{
   await open(page);
-  await expect(page.locator('#readerTranslation option[value="dra"]')).toHaveText('DRA — Douay-Rheims — Catholic');
+  await expect(page.locator('#readerTranslation option[value="dra"]')).toHaveText('CTH — Catholic Bible (Douay-Rheims)');
   const metadata=await page.evaluate(()=>BibleData.listTranslations().find(t=>t.id==='dra'));
   expect(metadata.attribution).toContain('1899');
   await page.locator('#scripturePickerTrigger').click();
   await expect(page.locator('.picker-status')).toHaveText(metadata.description);
   await page.keyboard.press('Escape');
   await page.getByRole('button',{name:'Compare',exact:true}).click();
-  await expect(page.locator('.compare-col').first().locator('option[value="dra"]')).toHaveText('DRA - Douay-Rheims — Catholic');
+  await expect(page.locator('.compare-col').first().locator('option[value="dra"]')).toHaveText('CTH - Catholic Bible (Douay-Rheims)');
   await page.locator('#offlineBiblesTrigger').click();
-  await expect(page.locator('[data-translation-id="dra"] .offline-bibles-name')).toHaveText('Douay-Rheims — Catholic');
+  await expect(page.locator('[data-translation-id="dra"] .offline-bibles-name')).toHaveText('Catholic Bible (Douay-Rheims)');
   await expect(page.locator('[data-translation-id="dra"] .offline-bibles-row-status')).toContainText(metadata.description);
   await page.keyboard.press('Escape');
   await page.locator('#searchTranslationToggle').click();
-  await expect(page.locator('#searchTranslationMenu [data-translation-id="dra"]')).toHaveAccessibleName('DRA — Douay-Rheims — Catholic');
+  await expect(page.locator('#searchTranslationMenu [data-translation-id="dra"]')).toHaveAccessibleName('CTH — Catholic Bible (Douay-Rheims)');
 });
 
 test('all seven Deuterocanonical choices have visible accessible labels and common books do not',async({page})=>{
@@ -81,7 +81,7 @@ for(const width of [320,390])test(`Catholic picker labels retain keyboard focus 
   await page.locator('[data-picker-action="verse"][data-value="38"]').press('Enter');
   await expect(page.locator('#readerContent [data-verse-number="38"]')).toBeFocused();
   await page.locator('#searchTranslationToggle').click();
-  await expect(page.locator('#searchTranslationMenu [data-translation-id="dra"]')).toHaveAccessibleName('DRA — Douay-Rheims — Catholic');
+  await expect(page.locator('#searchTranslationMenu [data-translation-id="dra"]')).toHaveAccessibleName('CTH — Catholic Bible (Douay-Rheims)');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
@@ -134,4 +134,31 @@ test('same-edition DRA selection never reports its own addition as unavailable',
   await open(page);await passage(page,'daniel',3,24);await page.evaluate(()=>changeTranslation('dra'));
   await expect(page.locator('#readerTranslationStatus')).toBeEmpty();
   expect(await page.evaluate(()=>getReaderPosition())).toEqual({bookId:'daniel',chapter:3,verse:24});
+});
+
+for(const located of [false,true])test('legacy DRA saved reference displays CTH without storage migration, located='+located,async({page})=>{
+  const entry={ref:'Tobit 1:1 (DRA)',text:'Existing Catholic saved verse'};
+  if(located)entry.location={translationId:'dra',bookId:'tobit',chapter:1,verse:1};
+  await page.addInitScript(entry=>{localStorage.setItem('god4.savedVerses',JSON.stringify([entry]));localStorage.setItem('god4.translation','dra');},entry);
+  await open(page);const original=await page.evaluate(()=>localStorage.getItem('god4.savedVerses'));
+  await page.locator('.saved-pill').click();await expect(page.locator('.saved-verse-reference')).toHaveText('Tobit 1:1 (CTH)');
+  expect(await page.evaluate(()=>localStorage.getItem('god4.savedVerses'))).toBe(original);
+  expect(await page.evaluate(()=>localStorage.getItem('god4.translation'))).toBe('dra');
+  if(located){
+    await page.locator('#trayList').getByRole('button',{name:'Open',exact:true}).click();
+    await expect(page.locator('#readerTranslation')).toHaveValue('dra');await expect(page.locator('#scripturePickerTrigger')).toContainText('Tobit 1:1');
+    expect(await page.evaluate(()=>localStorage.getItem('god4.savedVerses'))).toBe(original);
+    await page.evaluate(()=>ReaderTranslationLoader.ensure());await page.locator('#readerMoreTrigger').click();
+    await expect(page.locator('#readerSaveVerse')).toHaveAttribute('aria-pressed','true');
+    await page.locator('.saved-pill').click();
+  }
+  await page.locator('#trayList').getByRole('button',{name:'Remove',exact:true}).click();
+  expect(await page.evaluate(()=>UserData.savedVerses.load())).toEqual([]);
+});
+test('CTH Search results retain internal dra navigation',async({page})=>{
+  await open(page);await page.evaluate(()=>{updateSearchTranslationSelection('dra');document.getElementById('searchInput').value='Tobias 1:1';});
+  await page.evaluate(()=>doSearch());await expect(page.locator('#searchTranslationToggle')).toContainText('CTH');
+  await expect(page.locator('#results')).toContainText('CTH');
+  await page.locator('.result-card').click();expect(await page.evaluate(()=>currentTranslation)).toBe('dra');
+  expect(await page.evaluate(()=>getReaderPosition())).toEqual({bookId:'tobit',chapter:1,verse:1});
 });

@@ -76,12 +76,12 @@ for(const width of [320,390])for(const fullscreen of [false,true])for(const colo
       await selected.evaluate(element=>element.scrollIntoView({block:'nearest'}));
       await expect(selected).toHaveCSS('background-color','rgb(255, 243, 205)');
       await expect(dialog).toHaveCSS('background-color','rgb(247, 241, 222)');
-      await expect(buttons.last()).toHaveAccessibleName('DRA — Douay-Rheims — Catholic');
+      await expect(buttons.last()).toHaveAccessibleName('CTH — Catholic Bible (Douay-Rheims)');
       await page.screenshot({path:info.outputPath('translation-picker.png')});
       await buttons.last().tap();
       await expect(dialog).not.toBeVisible();
       await expect(page.locator('#readerTranslation')).toHaveValue('dra');
-      await expect(page.locator('#readerTranslationTrigger')).toHaveAccessibleName('Bible translation: DRA — Douay-Rheims — Catholic');
+      await expect(page.locator('#readerTranslationTrigger')).toHaveAccessibleName('Bible translation: CTH — Catholic Bible (Douay-Rheims)');
       await expect(page.locator('#readerTranslationTrigger')).toBeFocused();
       if(fullscreen)await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
       await page.reload();await page.evaluate(()=>initializeBibleExperience());
