@@ -2312,7 +2312,7 @@ test('recognized navigation commands execute Reader actions through the recognit
   const voiceButton = page.locator('.reader-audio-controls [data-voice-command-button]');
   await openReaderMore(page);
   await voiceButton.click();
-  const recognize = async (transcript) => {
+  const recognize = async (transcript, completedReference) => {
     const starts = await page.evaluate(() => window.__voiceStarts);
     const recognizedStatus = await page.evaluate((value) => {
       window.fakeRecognition.onresult({
@@ -2323,7 +2323,9 @@ test('recognized navigation commands execute Reader actions through the recognit
       window.fakeRecognition.onend();
       return status;
     }, transcript);
-    expect(recognizedStatus).toBe('Command recognized: ' + transcript);
+    // Navigation may already have completed; assert its exact destination status.
+    expect(recognizedStatus).toBe(completedReference ? 'WEB selected. ' + completedReference + '.' : 'Command recognized.');
+    expect(recognizedStatus).not.toContain(transcript);
     await expect.poll(() => page.evaluate(() => window.__voiceStarts)).toBe(starts + 1);
   };
 
@@ -2336,7 +2338,7 @@ test('recognized navigation commands execute Reader actions through the recognit
   await expect(page.locator('#readerContent')).toContainText('John 1');
 
   await page.locator('#readerTranslation').selectOption('web');
-  await recognize('read John 3');
+  await recognize('read John 3', 'John 3');
   await expect(page.locator('#bookSelect')).toHaveValue('john');
   await expect(page.locator('#chapterSelect')).toHaveValue('3');
   await expect(page.locator('#readerContent')).toContainText('John 3');
@@ -2344,7 +2346,7 @@ test('recognized navigation commands execute Reader actions through the recognit
 
   await page.locator('#readAloudPlay').click();
   const speechCountBeforeOpen = await page.evaluate(() => window.__speech.spoken.length);
-  await recognize('open Genesis 1');
+  await recognize('open Genesis 1', 'Genesis 1');
   await expect(page.locator('#bookSelect')).toHaveValue('genesis');
   await expect(page.locator('#chapterSelect')).toHaveValue('1');
   await expect(page.locator('#readerContent')).toContainText('Genesis 1');

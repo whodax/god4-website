@@ -731,3 +731,15 @@
     .reader-compact-mobile button:focus-visible,.reader-compact-mobile select:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
     .reader-compact-mobile button:disabled{opacity:.5;cursor:not-allowed;}
   }
+
+/* Temporary, fragment-enabled diagnostics; absent from ordinary Reader layout. */
+#readerVoiceDebug{
+  margin:12px auto;padding:12px;max-width:700px;box-sizing:border-box;
+  background:var(--vellum);color:var(--ink);border:1px solid var(--line);
+  font:14px/1.5 'Inter','Inter Fallback',sans-serif;
+}
+#readerVoiceDebug h3{font:inherit;font-weight:600;}
+#readerVoiceDebug dt{font-weight:600;margin-top:8px;}
+#readerVoiceDebug dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;}
+#readerVoiceDebug button{min-width:44px;min-height:44px;margin:4px;padding:8px;background:var(--vellum);color:var(--ink);border:1px solid var(--line);font:inherit;}
+#readerVoiceDebug button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}

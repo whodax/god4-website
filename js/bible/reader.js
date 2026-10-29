@@ -62,7 +62,13 @@ function getAdjacentReaderVerseNumber(direction){
   return null;
 }
 
+// Optional local tracing must never become a prerequisite for Voice Commands.
+function traceReaderVoice(event,value,extra){
+  if(window.ReaderVoiceDiagnostics) try { ReaderVoiceDiagnostics[event](value,extra); } catch(error) { /* Diagnostics cannot interrupt a command. */ }
+}
+
 function setVoiceStatus(message){
+  traceReaderVoice('status',message);
   document.querySelectorAll('.voice-status').forEach(function(status){ if(status.textContent!==message) status.textContent = message; });
 }
 
@@ -830,8 +836,9 @@ function handleVoiceCommand(transcript, resumeAfterTurn){
   var command = normalizeVoiceCommand(transcript);
   var requestId=++voiceNavigationRequest;
   var resumeReading=resumeAfterTurn===true || !!getActiveReaderPlaybackSnapshot();
-  setVoiceStatus('Command recognized: ' + transcript);
+  setVoiceStatus('Command recognized.');
   var simple=/^(?:repeat(?: verse| last verse)?|play(?: the passage)?|read(?: the passage)?|pause|resume|continue|stop|next verse|previous verse|back verse|next chapter|next|go to next chapter|previous chapter|previous|back|go to previous chapter)$/.test(command);
+  traceReaderVoice('dispatch',transcript,simple);
   if(!simple && handleSpokenReferenceCommand(command,resumeReading,requestId)) return;
   if(/^(?:next chapter|next|go to next chapter|previous chapter|previous|back|go to previous chapter)$/.test(command)){
     var before=currentBook+':'+currentChapter;
@@ -856,7 +863,7 @@ function handleVoiceCommand(transcript, resumeAfterTurn){
   else if(command === 'stop') stopReader();
   else if(command === 'next verse') nextReaderVerse();
   else if(/^(previous verse|back verse)$/.test(command)) previousReaderVerse();
-  else setVoiceStatus('Unrecognized command: ' + transcript);
+  else setVoiceStatus('Command not recognized. Say a translation name, Scripture reference, Play, Pause or Stop.');
 }
 
 function clearVoiceCommandTimers(){
@@ -951,6 +958,7 @@ function createVoiceRecognition(){
   voiceRecognition.continuous = !isAndroidVoiceCommands();
   voiceRecognition.interimResults = !isAndroidVoiceCommands();
   voiceRecognition.lang = 'en-US';
+  traceReaderVoice('start',voiceRecognition);
   voiceRecognition.onstart = function(){
     if(isAndroidVoiceCommands() && (voiceRecognition !== recognition || !voiceCommandsListening || voiceCommandsStopping)) return;
     voiceRecognitionActive = true;
@@ -968,6 +976,7 @@ function createVoiceRecognition(){
       var interim = result.isFinal === false;
       if(isAndroidVoiceCommands()){
         if(result.isFinal !== true || !normalizeVoiceCommand(result[0].transcript)) continue;
+        traceReaderVoice('final',result);
         var transcript = result[0].transcript;
         var resume = voiceTurnWasPlaying && !/^(pause|stop)$/.test(normalizeVoiceCommand(transcript));
         releaseReaderMicrophone(function(){
@@ -976,6 +985,7 @@ function createVoiceRecognition(){
         return;
       }
       if(interim && !isInterimPlaybackCommand(result[0].transcript)) continue;
+      if(result.isFinal === true) traceReaderVoice('final',result);
       voiceResultHandled = true;
       voiceHandledResults.add(index);
       handleVoiceCommand(result[0].transcript);
@@ -1836,3 +1846,6 @@ return {ensure:ensure,sync:sync,isOpen:isOpen,prepare:prepare,initialize:initial
 })();
 if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', function(){ initializeReaderControls(); initializeVoiceCommands(); ReaderTranslationLoader.initialize(); }, { once: true });
 else { initializeReaderControls(); initializeVoiceCommands(); ReaderTranslationLoader.initialize(); }
+
+// Fragment opt-in is local to this document and never sent with HTTP requests.
+if(location.hash==='#voice-debug') ReaderTranslationLoader.ensure().catch(function(){setVoiceStatus('Local voice diagnostics unavailable. Voice Commands still works.');});

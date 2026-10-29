@@ -807,3 +807,62 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
   }
   return {initialize:initialize,sync:queue};
 })();
+
+// Temporary local diagnostics: fragment opt-in, one final result, no persistence.
+var ReaderVoiceDiagnostics=(function(){
+  var panel,fields={},expiry,enabled=false,tracing=false,captured=false;
+  function clear(){
+    clearTimeout(expiry);expiry=null;tracing=false;captured=false;
+    Object.keys(fields).forEach(function(key){fields[key].textContent='—';});
+  }
+  function hidden(){if(document.hidden) clear();}
+  function status(message){
+    if(!enabled || !tracing || document.hidden) return;
+    fields.outcome.textContent=message+'\nSelected: '+currentTranslation+' / '+currentBook+' '+currentChapter+(currentVerse===null?'':':'+currentVerse);
+  }
+  function initialize(){
+    if(enabled || location.hash!=='#voice-debug') return;
+    var view=document.getElementById('view-reader');if(!view) return;
+    enabled=true;panel=document.createElement('section');panel.id='readerVoiceDebug';
+    panel.setAttribute('aria-labelledby','readerVoiceDebugHeading');
+    var heading=document.createElement('h3');heading.id='readerVoiceDebugHeading';heading.textContent='Local Voice Commands diagnostics';panel.appendChild(heading);
+    var note=document.createElement('p');note.textContent='Diagnostic build voice-trace-1 (base 9b54d3f). Text stays on this page only and clears after 60 seconds, on the next command, or when this page is hidden. Speech recognition still uses your browser’s normal service.';panel.appendChild(note);
+    var list=document.createElement('dl');
+    [['raw','Exact final transcript (JSON escaped)'],['alternatives','Alternatives returned by the browser'],['normalized','Normalized transcript'],['decision','Command classification / parser decision'],['outcome','Handler status / selected passage']].forEach(function(row){
+      var label=document.createElement('dt');label.textContent=row[1];var value=document.createElement('dd');value.dataset.voiceDebug=row[0];fields[row[0]]=value;list.append(label,value);
+    });panel.appendChild(list);
+    var clearButton=document.createElement('button');clearButton.type='button';clearButton.textContent='Clear diagnostic text';clearButton.addEventListener('click',clear);
+    var close=document.createElement('button');close.type='button';close.textContent='Disable diagnostics';
+    close.addEventListener('click',function(){
+      clear();enabled=false;panel.remove();panel=null;fields={};
+      document.removeEventListener('visibilitychange',hidden);window.removeEventListener('pagehide',clear);
+      if(location.hash==='#voice-debug') history.replaceState(history.state,'',location.pathname+location.search);
+      var mic=document.querySelector('[data-voice-command-button]');if(mic) mic.focus({preventScroll:true});
+    });panel.append(clearButton,close);
+    view.insertBefore(panel,document.getElementById('readerContent'));
+    document.addEventListener('visibilitychange',hidden);window.addEventListener('pagehide',clear);
+    clear();tracing=true;status('Ready. Tap Voice Commands and say one command.');
+  }
+  function start(recognition){
+    if(!enabled) return;
+    clear();tracing=true;status('Reader bridge voice-trace-1 reached. Waiting for a final result.');
+    try { recognition.maxAlternatives=3; } catch(error) { /* Optional diagnostic hint, never required for listening. */ }
+  }
+  function final(result){
+    if(!enabled || document.hidden) return;
+    clear();tracing=true;captured=true;fields.raw.textContent=JSON.stringify(result[0].transcript);
+    var alternatives=[];for(var i=0;i<Math.min(result.length,3);i++) alternatives.push((i+1)+': '+JSON.stringify(result[i].transcript));
+    fields.alternatives.textContent=alternatives.join('\n');
+    fields.normalized.textContent=JSON.stringify(normalizeSpokenNavigation(result[0].transcript));
+    status('Accepted final result. Waiting for microphone release before dispatch.');
+    expiry=setTimeout(clear,60000);
+  }
+  function dispatch(transcript,simple){
+    if(!enabled || !captured || document.hidden) return;
+    var plan=simple?null:parseSpokenNavigation(transcript);
+    fields.decision.textContent=(fields.raw.textContent===JSON.stringify(transcript)?'Exact final reached handler. ':'Handler called without a captured final. ')+(simple?'Playback command.':!plan?'No translation/reference match.':plan.error||JSON.stringify(plan));
+    status('Command handler reached.');
+  }
+  return {initialize:initialize,start:start,final:final,dispatch:dispatch,status:status};
+})();
+ReaderVoiceDiagnostics.initialize();

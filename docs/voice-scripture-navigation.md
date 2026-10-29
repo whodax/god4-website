@@ -62,3 +62,53 @@ No service-worker source, cache version or asset path changes are needed for thi
 The startup measurement is 22 scripts / 281,594 canonical LF decoded bytes, compared with 279,241 at `66bf2c3` (+2,353). The unchanged historical limit is 290,914 bytes, leaving 9,320. Word Study first-use network readiness measured 17.5ms; this is not a latency benchmark. Asset validation passed for 36 references, 22 startup syntax checks, three icons and all nine translation metadata entries. Explicit syntax checks passed for the four changed/new JavaScript files. All 66 Isaiah SHA-256 values and byte counts, shell-53 source and 49 asset paths remain unchanged. Formatting validation passed.
 
 The five-file scope is Reader alias parsing, its unit/browser regressions, the exact upgrade-source expectation and this document. No CSS, markup, Bible data, manifest, speech lifecycle, service worker or CSP changes are included. Available physical RAM samples fell to 337MiB during browser validation; sampled commit headroom remained above 15.7GiB. No unrelated processes were terminated. Physical Android transcript accuracy and TalkBack acceptance remain outstanding. Local output logs and `playwright-report/voice-translation-aliases-summary.json` retain the final test identities and measurements.
+
+
+## Temporary physical-Android transcript investigation (voice-trace-1)
+
+Physical testing of preview `0ec2f703` reports “Douay Rheims,” “Douay Rheims Catholic,” and “Douay-Rheims Bible” failing while Catholic/DRA and other short names work. The preview's fetched Reader source matches `9b54d3f` exactly after line-ending normalization. All reported literal phrases parse to their intended editions. No exact phone transcript has been supplied; the physical root cause is therefore unconfirmed. Do not infer that the phrase spoken is the text returned by Android.
+
+The callback currently accepts the first nonempty final result in an Android command turn, reads `result[0].transcript`, releases recognition, then passes that unchanged string to the command handler on `onend`. Command normalization and exact catalog matching follow. Alternative results never select a translation. Existing Catholic/Protestant Old Testament numbering safeguards and passage validation still apply. For example, a translation-only command while viewing a Protestant Old Testament passage may correctly require an explicit reference; use WEB John 1:2 as the neutral diagnostic starting point.
+
+The requested example hypotheses are distinguishable without adding aliases: Dewey Rheims, Do way Rheims and Douay Reims are already supported; Dooay Rheims and Douay Rames are not. These are code-level probes, not verified physical transcripts. The alias catalog is deliberately unchanged pending evidence. In particular, no broad phonetic/fuzzy matching or automatic choice of a lower recognition alternative has been introduced.
+
+### Opt in and collect one result
+
+After the diagnostic build is approved for preview, open its **new hash-specific preview URL** with `/#voice-debug` appended. The old `0ec2f703` preview does not contain this panel. Wait for “Local Voice Commands diagnostics” and the `voice-trace-1` build tag. The URL fragment is not sent in HTTP requests. Do not clear installed Bible data or Saved Verses to troubleshoot a missing panel.
+
+1. Start at WEB John 1:2, open Voice Commands and say “Douay Rheims.”
+2. Read the exact final transcript, including JSON-escaped punctuation/whitespace, normalized text, parser decision and selected passage. Capture only this nonpersonal test command before the automatic 60-second clear.
+3. Repeat with “Douay Rheims Catholic,” “Douay-Rheims Bible,” and the known-working “Catholic Bible”/“DRA” controls. Use a separate microphone turn for each.
+4. Check “Douay Rheims Catholic, Tobit chapter 1 verse 2.” A supported transcript should select DRA Tobit 1:2; an unsupported transcript must not guess.
+5. Report the exact displayed text and parser/selection outcome voluntarily. Nothing is automatically uploaded. The microphone-release stage remains visible if dispatch has not occurred.
+
+A panel without a captured final points to callback/release stages rather than an alias correction. A captured final that differs from the spoken name identifies a recognition output needing review. A matching translation plan followed by an unavailable/numbering message identifies selection validation rather than recognition. If the panel/build tag is absent, the executing page is not the diagnostic build; using a fresh hash-specific preview avoids confusing an installed older shell with the new code.
+
+### Privacy, safety and scope
+
+Diagnostics is disabled by default and runs in the existing optional picker module, not a new startup script or asset. It requests up to three alternatives only while opted in; Android may return fewer. Only the accepted final is displayed, not interim speech or audio recordings. Diagnostic text stays in transient page DOM, never console, URL, analytics, storage or network logging. The browser's normal speech-recognition service may itself process audio remotely; this feature does not change or claim to localize that service.
+
+Text is cleared after 60 seconds, at the next command turn, when the page is hidden, on pagehide, by Clear, or by Disable. Late callbacks cannot restore cleared/hidden transcript fields. There is no transcript history, transcript array or storage-backed opt-in. Disable removes the fragment and returns focus to the existing microphone. Ordinary command status messages are now generic instead of echoing raw transcripts. Failures in the optional trace hooks cannot interrupt command execution. The display is explicitly diagnostic and may occupy reading space while enabled; ordinary/mobile/fullscreen layouts are unchanged when disabled.
+
+No aliases, Bible data, manifests, speech provider protocols, microphone turn boundaries, shell version or cache paths change. Shell 53 retains its 49 assets; exact reviewed source checksums and actual cache-byte assertions cover the three intentionally changed runtime assets. The existing desktop status assertion now checks the generic acknowledgment or exact completed destination as appropriate, while retaining every navigation and speech check. Its original transient-acknowledgment assumption also fails with the original `9b54d3f` Reader and test: a completed “read John 3” reports “WEB selected. John 3.” Physical acceptance remains blocked until an actual Android transcript and outcome are captured and reviewed. No preview push or production deployment is part of this local diagnostic preparation without approval.
+
+
+### Diagnostic-build validation
+
+390 unique final identities passed: 366 Playwright tests and 24 parser unit tests. Browser groups ran sequentially with one worker and zero automatic retries. There are no remaining automated failures, skips or browser crashes in this focused inventory.
+
+| Group | Passed |
+| --- | ---: |
+| Existing navigation (57) plus local diagnostic/privacy/pipeline regressions (24) | 81 |
+| Android speech (32) and command isolation (82) | 114 |
+| Compact controls, mobile microphone and shared fullscreen | 46 |
+| Three-row mobile layout, offline Bible management and PWA | 50 |
+| Historical shell 43–52 upgrades to shell 53 | 63 |
+| Desktop voice/status contracts (11) and startup performance (1) | 12 |
+| Parser units (all generated aliases and catalog book aliases) | 24 |
+
+An initial new test incorrectly used a helper that waited for microphone release while its fixture intentionally held release open; it now asserts the accurate closing/busy state before delivering `onend`. The separate legacy acknowledgment failure was reproduced with the original committed Reader and original test before updating its exact completed-reference expectation. Both investigations and superseded runs remain in ignored local logs; they are not double-counted as final passes. `playwright-report/voice-debug-summary.json` records all 366 final browser identities.
+
+Default startup remains 22 scripts, now 282,410 canonical LF decoded bytes versus 281,594 at `9b54d3f` (+816). The unchanged 290,914-byte limit leaves 8,504 bytes. The diagnostic display itself stays in the existing optional module. Word Study first-use network readiness measured 20ms, not a latency benchmark. Asset validation passed for 36 references, 22 startup syntax checks, three icons and all nine translation metadata entries; explicit syntax checks passed for all five changed JavaScript files. All 66 Isaiah SHA-256 values/byte counts are unchanged. The entire translation-alias/normalization/validated-navigation block is byte-identical to the baseline after LF normalization. The service worker is unchanged: shell 53 and the same 49 precache assets.
+
+The seven changed files contain only diagnostic hooks/UI/styles, privacy-preserving acknowledgment, focused tests, reviewed runtime source fingerprints and this document. No Bible data, manifest, CSP or service-worker changes are included. Available physical RAM samples fell to 364MiB, while sampled commit headroom remained above 14.4GiB. No unrelated applications were terminated. Formatting validation passed. Automated readiness is for an opt-in diagnostic preview only; the Android production release blocker remains unresolved until the actual phone transcript and outcome are reviewed.

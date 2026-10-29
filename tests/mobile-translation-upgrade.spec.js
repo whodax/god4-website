@@ -8,7 +8,7 @@ const {execFileSync}=require('node:child_process');
 const generator=require('../tools/generate-translation-manifest');
 
 const root=path.resolve(__dirname,'..');
-const releaseCommit='66bf2c3b29375462adfc9dd125490055a65cc0d4';
+const releaseCommit='9b54d3ffa0ccc77aadd5e2cb0b2c944fe8b3f33e';
 const production52='ca0d623f87d9f85a9cb4c515acbb5ea69796ff15';
 const normalizeSource=body=>body.toString('utf8').replace(/\r\n/g,'\n');
 const fileFor=url=>url==='/'?'index.html':url==='/offline'?'offline.html':new URL(url,'http://localhost').pathname.slice(1);
@@ -63,25 +63,18 @@ test('shell 53 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(49);
-  // Pin the approved shell-53 release plus the reviewed alias-parser checksum.
-  // Unit/Android tests check its behavior; these assertions protect exact source
-  // scope and cache-delivery bytes. Historical fixtures remain Git blobs.
+  // Pin the approved shell-53 release plus the reviewed local-diagnostic sources.
+  // Every changed asset has an exact canonical source checksum; delivery tests
+  // also verify raw cached bytes. Historical fixtures remain Git blobs.
   for(const asset of requiredAssets){
     const approved=execFileSync('git',['show',releaseCommit+':'+fileFor(asset)],{cwd:root});
     const body=fs.readFileSync(path.join(root,fileFor(asset)));
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      if(asset==='/js/bible/reader.js'){
-        const outsideAliases=(source,updated=false)=>{
-          const start=source.indexOf('var spokenTranslationAliases='),end=source.indexOf('  var contextual=',start);
-          expect(start).toBeGreaterThan(0);expect(end).toBeGreaterThan(start);
-          if(updated)expect(digest(Buffer.from(source.slice(start,end)))).toBe('a138e110c432ffe8fbfad061471a8980f8465eed9c4891c0b2f63319cb1cb5f2');
-          return source.slice(0,start)+'/* translation alias parser */\n'+source.slice(end);
-        };
-        expected=outsideAliases(expected);actual=outsideAliases(actual,true);
-      }
-      expect(actual,asset).toBe(expected);
+      const diagnosticSources={"/js/bible/reader.js":"6bd970176245a029b88a5877c1867728bba371d7859bb51ce12e91ae39448de2","/js/bible/translation-picker.js":"ebf94e61ced889aed90d641f36e2ee3074f220f632459b9639e67d2fc863301d","/css/companion.css":"2e852bd3865622bc2c014c5f68059ed2b7d072152d8414f8da918371fd2f8400"};
+      if(diagnosticSources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(diagnosticSources[asset]);
+      else expect(actual,asset).toBe(expected);
     }
   }
   for(const asset of ['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
