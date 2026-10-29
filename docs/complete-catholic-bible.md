@@ -103,7 +103,9 @@ No `SUS`, `BEL` or `S3Y` book is synthesized. Baruch 6:1–72 contains the Lette
 
 DRA uses Vulgate Psalm numbering. Identical numeric references in another tradition
 must not be treated as equivalent. This milestone supplies no conversion table.
-Conservatively, **all mixed DRA/Protestant Old Testament comparisons are gated**;
+Conservatively, mixed DRA/Protestant Old Testament comparisons are gated, except
+for the explicitly reviewed Compare-only [Ruth 2:2 equivalence](ruth-compare-compatibility.md)
+between internal dra and YLT/GNV;
 the other column explains that equivalence has not been established. Same-edition
 and existing Protestant comparisons retain their behavior; common NT comparison
 uses the existing coordinate-based behavior and is not an asserted scholarly mapping.

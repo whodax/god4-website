@@ -184,14 +184,25 @@ function ensureCompareSelections(){
   saveCompareState();
 }
 
+// Reviewed identity equivalence: Ruth 2:2 only, dra <-> ylt/gnv.
+// Source text and verse boundaries are documented in docs/ruth-compare-compatibility.md.
+// Keep the book-level canon policy unchanged for every other Compare coordinate.
+function canComparePassage(translationId){
+  var reference=getCompareReference(), from=compareReferenceTranslation;
+  return BibleCanon.comparable(from,translationId,reference.bookId) ||
+    reference.bookId==='ruth' && reference.chapter===2 && reference.verse===2 &&
+    (from==='dra' && ['ylt','gnv'].includes(translationId) ||
+     translationId==='dra' && ['ylt','gnv'].includes(from));
+}
+
 function getCompareVerses(translationId){
   if(typeof BibleData === 'undefined') return null;
   var reference = getCompareReference();
   var chapter = BibleData.getChapter(translationId, reference.bookId, reference.chapter);
-  if(!chapter || !BibleCanon.comparable(compareReferenceTranslation,translationId,reference.bookId)) return null;
+  if(!chapter || !canComparePassage(translationId)) return null;
   if(reference.verse){
     var verse = BibleData.getVerse(translationId, reference.bookId, reference.chapter, reference.verse);
-    return verse ? [{ number: verse.verse, text: verse.text }] : null;
+    return verse && typeof verse.text==='string' && verse.text.trim() ? [{ number: verse.verse, text: verse.text }] : null;
   }
   return chapter.verses.map(function(text, index){ return { number: index + 1, text: text }; });
 }
@@ -297,7 +308,7 @@ function renderCompareColumn(translationId, index){
   content += '</select></div><div class="compare-text">';
   if(!verses){
     var present=BibleData.getChapter(translationId,compareReference.bookId,compareReference.chapter);
-    var numbering=present && !BibleCanon.comparable(compareReferenceTranslation,translationId,compareReference.bookId);
+    var numbering=present && !canComparePassage(translationId);
     var catholicUnavailable = BibleCanon.canon(compareReferenceTranslation) === 'catholic' && BibleCanon.catholicOnly(compareReference.bookId,compareReference.chapter,compareReference.verse) && BibleCanon.canon(translationId) !== 'catholic';
     content += '<p class="compare-unavailable" role="status">'+(catholicUnavailable ? BibleCanon.catholicUnavailableMessage : numbering ? 'Numbering differs between these editions. An equivalent passage has not been established.' : translationId==='dra' || compareReferenceTranslation==='dra' ? 'Not available in this translation.' : 'Passage unavailable in this translation.')+'</p>';
   } else {

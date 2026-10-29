@@ -63,7 +63,7 @@ test('shell 53 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(49);
-  // Pin the approved shell-53 release plus the reviewed Catholic display and diagnostic-removal sources.
+  // Pin the approved shell-53 release plus the reviewed Catholic display, diagnostic-removal and Compare sources.
   // Every changed asset has an exact canonical source checksum; delivery tests
   // also verify raw cached bytes. Historical fixtures remain Git blobs.
   for(const asset of requiredAssets){
@@ -72,7 +72,7 @@ test('shell 53 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const catholicSources={"/js/bible/reader.js":"d3844610d875b3bc0f290e9cc4bfffc12cb2db1893001c0e47256a982d920442","/js/bible/translation-picker.js":"3c03747a837fdb425bd0966d3e951e157be62b74a75e34eab25869b50e3fd3f7","/css/companion.css":"c18fa96525fc5c18eb4f45d2d5fd9be60ec2884a06800626dea5932692525d8c","/js/bible/data.js":"fdbce04ad316ceb3ba8cac39f014ec02f1323b6cb95bafa647befb1f34b970b7","/js/app.js":"8ec12e7e4406859b0ca397e80a87e55aae44ff8b8dc44df96b5bb1972e9a46d1"};
+      const catholicSources={"/js/bible/reader.js":"d3844610d875b3bc0f290e9cc4bfffc12cb2db1893001c0e47256a982d920442","/js/bible/translation-picker.js":"3c03747a837fdb425bd0966d3e951e157be62b74a75e34eab25869b50e3fd3f7","/css/companion.css":"c18fa96525fc5c18eb4f45d2d5fd9be60ec2884a06800626dea5932692525d8c","/js/bible/data.js":"fdbce04ad316ceb3ba8cac39f014ec02f1323b6cb95bafa647befb1f34b970b7","/js/app.js":"8ec12e7e4406859b0ca397e80a87e55aae44ff8b8dc44df96b5bb1972e9a46d1","/js/bible/compare.js":"b09a4259934091fa1d528ca735ec56e452f694b40a11890441dbbdfe95fbe084"};
       if(catholicSources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(catholicSources[asset]);
       else expect(actual,asset).toBe(expected);
     }
