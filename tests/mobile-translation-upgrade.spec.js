@@ -72,7 +72,7 @@ test('shell 53 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const diagnosticSources={"/js/bible/reader.js":"261f7d0f0192d765242a37ac8a8a3b69831be5f90e850d0197d156caad221aa6","/js/bible/translation-picker.js":"ebf94e61ced889aed90d641f36e2ee3074f220f632459b9639e67d2fc863301d","/css/companion.css":"2e852bd3865622bc2c014c5f68059ed2b7d072152d8414f8da918371fd2f8400"};
+      const diagnosticSources={"/js/bible/reader.js":"f7008174ed9677c33e489ba3fb18e0ad49ace5dd00662c34c234e1e8c0578472","/js/bible/translation-picker.js":"ebf94e61ced889aed90d641f36e2ee3074f220f632459b9639e67d2fc863301d","/css/companion.css":"2e852bd3865622bc2c014c5f68059ed2b7d072152d8414f8da918371fd2f8400"};
       if(diagnosticSources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(diagnosticSources[asset]);
       else expect(actual,asset).toBe(expected);
     }

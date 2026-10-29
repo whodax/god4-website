@@ -145,3 +145,80 @@ The initial pre-fix unit run reproducing the three missing aliases is retained s
 Startup remains 22 scripts, now 282,451 canonical LF decoded bytes versus 282,410 at `99bdcde`: exactly 41 added bytes. The unchanged historical 290,914-byte limit leaves 8,463 bytes. Word Study first-use network readiness measured 19.4ms, not a latency benchmark. Asset validation passed (36 references, 22 startup syntax checks, three icons and all nine translation metadata entries). Explicit syntax checks passed for all four changed JavaScript files. All 66 Isaiah hashes/byte counts and shell-53 source/49 asset paths are unchanged. A source comparison verifies that the complete Reader differs only by the three literal aliases; the diagnostic runtime and CSS are identical to `99bdcde`.
 
 The five-file scope is the Reader alias table, parser/browser regressions, reviewed Reader cache checksum and post-update transcript fixture, and this documentation. There are no CSS, markup, Bible data, manifest, service-worker, CSP, microphone lifecycle or speech-provider changes. Formatting validation passed. Memory was monitored between groups; sampled available physical RAM remained at least 769MiB and sampled commit headroom above 11.7GiB. No unrelated applications were terminated. Final physical Android acceptance of the updated build remains pending; no push, merge or deployment was performed.
+
+
+## Expanded Douay-Rheims Android transcription aliases
+
+Based on the owner's follow-up list, all twenty exact phrases now select DRA:
+Douay Rheims; Douay Reims; Douay Rames; Dewey Rheims; Dewey Reams; Dewey Rames;
+Do Way Rheims; Do Way Reams; Do We Reems; Do We Reams; Do A Rings; Do A Reigns;
+Do A Reams; Do A Rains; Dewey Reigns; Dewey Rains; Do Away Reams; Do Away Reigns;
+Do We Rains; Do We Rings.
+
+The existing deterministic normalizer and complete-phrase parser handle case,
+Unicode punctuation, apostrophes, hyphens and spacing. Each phrase supports Bible,
+Catholic, Catholic Bible, Version and Translation suffixes, with Switch to,
+Change to and Read prefixes and explicit Scripture references such as
+“Dewey Reams Catholic, Tobit chapter 1 verse 2.” Existing aliases remain.
+Catholic qualifiers are generated only for DRA catalog entries. No fuzzy matching,
+common-word aliases, recognition-alternative fallback or parser precedence changes
+were introduced. Browser alternatives remain diagnostic-only and cannot override
+any primary command, including ambiguous primary speech.
+
+The unit matrix independently specifies all twenty names, six suffix forms,
+four prefix forms and six normalization forms, checking both edition selection
+and Catholic compound navigation (5,760 parser invocations). Browser fixtures
+exercise each name and suffix through the recognition callback, from WEB, with
+and without diagnostics; offline/Saved Verses, negative collisions, catalog
+ambiguity, conflicting alternatives and native/cloud microphone isolation remain
+covered. Physical Android/TalkBack acceptance still requires device verification;
+these browser tests simulate speech recognition rather than acoustic recognition.
+
+Only the Reader alias list and Catholic suffix generation change at runtime.
+The shell upgrade test pins the resulting Reader SHA-256 while retaining every
+other approved source hash and cached-byte assertion. Shell 53, its 49 precache
+paths, all nine translations and canon data, compact controls, optional diagnostics
+and speech-turn handling remain unchanged.
+
+Performance: 22 startup scripts, 282,861 canonical LF bytes versus 282,451 at
+9430b3f (+410). The unchanged 290,914-byte historical budget leaves 8,053 bytes.
+
+
+The existing Catholic mobile fullscreen fixture clicked a control now inside the
+closed More menu at 390px and 320px, producing two initial timeout failures.
+The fixture now opens More before Fullscreen and closes it afterward, retaining
+all fullscreen, keyboard focus and reflow assertions. Runtime compact layout
+code remains unchanged. Explicit verification after this fixture correction uses
+one worker and zero automatic retries.
+
+
+Final validation (all browser runs: one worker, zero automatic retries):
+
+| Coverage | Distinct passing cases |
+| --- | ---: |
+| Voice navigation, diagnostics and all twenty aliases | 127 |
+| Android native/cloud/fallback speech | 32 |
+| Android command-turn isolation | 82 |
+| Catholic canon, navigation, search, Compare, narration and layout | 50 |
+| Compact Reader layout and controls | 21 |
+| Historical Shell 43–52 upgrades, source hashes, cache bytes and recovery | 63 |
+| Historical startup budget / first-use readiness | 1 |
+| Node alias matrix, Catholic labels and Isaiah integrity | 66 |
+
+The voice batch passed 241/241. The initial wider batch recorded 121 passes,
+two stale mobile fixture timeouts and two missing historical fixture failures
+(Shells 43 and 47), leaving nine dependent cases unrun. Both exact historical
+commits were fetched without changing any fixtures. After correcting only the
+Catholic fixture interaction, the explicit 15-case verification run passed:
+three Catholic layout cases, five Shell 43 cases, six Shell 47 cases and the
+startup measurement. This yields 376 distinct passing browser cases; the desktop
+Catholic layout case was verified twice and is counted once. No failures remain
+unresolved and no automatic retries were used.
+
+The measured historical baseline is 24 scripts / 290,914 decoded LF bytes;
+current is 22 scripts / 282,861. First-use Word Study network readiness measured
+21.1ms locally; this is not a latency benchmark. Asset validation passed for
+36 references, 22 startup syntax checks, three icons and nine translations.
+Explicit changed-file syntax checks and git diff whitespace validation passed.
+No push, merge or deployment was performed. Physical Android/TalkBack acceptance
+remains pending using the retained #voice-debug mode.

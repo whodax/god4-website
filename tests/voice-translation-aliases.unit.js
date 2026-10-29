@@ -72,10 +72,12 @@ test('numeric ranges and invalid references are never normalized into a differen
   assert.equal(parse('Catholic Bible, John one sixteen').choices.filter(c=>c.verse===16)[0].chapter,1);
 });
 
-for(const raw of ['do a rings','do a Reigns','do we Reems','Dewey reams'])test('physical Android transcript: '+raw,()=>{
+for(const raw of ['Douay Rheims','Douay Reims','Douay Rames','Dewey Rheims','Dewey Reams','Dewey Rames','Do Way Rheims','Do Way Reams','Do We Reems','Do We Reams','Do A Rings','Do A Reigns','Do A Reams','Do A Rains','Dewey Reigns','Dewey Rains','Do Away Reams','Do Away Reigns','Do We Rains','Do We Rings'])test('physical Android transcript: '+raw,()=>{
   const {parse}=parser();
-  for(const text of [raw,raw.toUpperCase(),raw.toLowerCase(),'Switch to '+raw,raw+' Bible']){
+  for(const prefix of ['', 'Switch to ', 'Change to ', 'Read '])for(const suffix of ['', ' Bible', ' Catholic', ' Catholic Bible', ' Version', ' Translation'])for(const name of [raw,raw.toUpperCase(),raw.toLowerCase(),raw.replaceAll(' ','—'),raw.replaceAll(' ','\u00a0'),raw.replaceAll('e',"e’")]){
+    const text=prefix+name+suffix;
     const p=parse(text);assert.equal(p?.error,undefined,text);assert.equal(p?.translationId,'dra',text);
+    assert.equal(p.play,prefix==='Read ',text);
     const n=parse(text+', Tobit chapter 1 verse 2');assert.equal(n.error,undefined,text);assert.equal(n.translationId,'dra',text);
     assert.deepEqual(JSON.parse(JSON.stringify(n.choices)),[{bookId:'tobit',chapter:1,verse:2}]);
   }
@@ -83,10 +85,22 @@ for(const raw of ['do a rings','do a Reigns','do we Reems','Dewey reams'])test('
 
 test('observed DRA phrases require whole tokens and never reduce to common words or speculative recombinations',()=>{
   const {parse}=parser();
-  for(const raw of ['do','we','rings','reigns','reems','do a','do we','a rings','rings Bible','reigns Catholic','Switch to rings','do a ringside','do a ring','do a reems','do we reigns','do we reams','do a rings around the table','do we read John 1:1','Play','Pause','Stop'])assert.ok(!parse(raw)?.translationId,raw);
+  for(const raw of ['do','we','rings','reigns','reems','do a','do we','a rings','rings Bible','reigns Catholic','Switch to rings','do a ringside','do a ring','do a reems','do we reigns','do away rings','dewey rings','douay reams','do a rings around the table','do we read John 1:1','Play','Pause','Stop'])assert.ok(!parse(raw)?.translationId,raw);
 });
 test('observed DRA aliases retain exact catalog ambiguity rejection and explicit DRA disambiguation',()=>{
   const {c,parse}=parser();vm.runInContext("var list=BibleData.listTranslations;BibleData.listTranslations=()=>list().map(t=>t.id==='asv'?Object.assign({},t,{name:'Do A Rings Version'}):t).reverse();",c);
   for(const raw of ['do a rings','DO A RINGS BIBLE','Switch to do a rings, Tobit 1:2'])assert.match(parse(raw).error,/Ambiguous/,raw);
   assert.equal(parse('DRA, Tobit 1:2').translationId,'dra');
+});
+
+
+test('new DRA phrases reject catalog collisions and unrelated sentence tails',()=>{
+  const variants=['Douay Rames','Dewey Rames','Do Way Reams','Do We Reams','Do A Reams','Do A Rains','Dewey Reigns','Dewey Rains','Do Away Reams','Do Away Reigns','Do We Rains','Do We Rings'];
+  for(const raw of variants){
+    const {c,parse}=parser();
+    for(const tail of [' around the table',' Catholic and WEB',' Catholic Bible shopping','ish'])assert.ok(!parse(raw+tail)?.translationId,raw+tail);
+    vm.runInContext("var list=BibleData.listTranslations;BibleData.listTranslations=()=>list().map(t=>t.id==='asv'?Object.assign({},t,{name:"+JSON.stringify(raw+' Version')+"}):t);",c);
+    for(const suffix of ['', ' Bible', ' Version'])assert.match(parse('Switch to '+raw+suffix).error,/Ambiguous/,raw+suffix);
+    assert.equal(parse('DRA, Tobit 1:2').translationId,'dra');
+  }
 });

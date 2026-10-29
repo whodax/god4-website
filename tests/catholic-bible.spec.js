@@ -53,7 +53,11 @@ test('Saved Catholic verse survives reload and intentionally loads its own editi
  expect(await page.evaluate(()=>UserData.savedVerses.load()[0].text)).toBe(saved[0].text);
 });
 for(const width of [1280,390,320])test(`Catholic picker keyboard, fullscreen and reflow ${width}`,async({page})=>{
- await page.setViewportSize({width,height:800});await open(page);await page.locator('#fullscreenBtn').click();await page.locator('#scripturePickerTrigger').click();
+ await page.setViewportSize({width,height:800});await open(page);
+ if(!await page.locator('#fullscreenBtn').isVisible())await page.locator('#readerMoreTrigger').click();
+ await page.locator('#fullscreenBtn').click();
+ if(await page.locator('#readerMoreTrigger').getAttribute('aria-expanded')==='true')await page.locator('#readerMoreTrigger').click();
+ await page.locator('#scripturePickerTrigger').click();
  await page.locator('#pickerBookSearch').fill('Ecclesiasticus');await expect(page.locator('.picker-book-list button')).toHaveCount(1);
  await page.locator('.picker-book-list button').press('Enter');await page.locator('[data-picker-action="chapter"][data-value="51"]').press('Space');await page.locator('[data-picker-action="verse"][data-value="38"]').press('Enter');
  await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);await expect(page.locator('#readerContent [data-verse-number="38"]')).toBeFocused();

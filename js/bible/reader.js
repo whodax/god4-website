@@ -697,7 +697,7 @@ var spokenTranslationAliases={
   webster:['websters','noah webster','double u b s','double you bee ess'],
   rv:['english revised','are vee'],
   gnv:['geneva 1599','gee en vee'],
-  dra:['catholic','douay catholic','douay rheims american edition','dra catholic','d r a catholic','douay reims','douay reims catholic','douai rheims','douai rheims catholic','dewey rheims','dewey rheims catholic','dewey reams','dewey reams catholic','do way rheims','do way rheims catholic','do a rings','do a reigns','do we reems','dee are ay']
+  dra:['catholic','douay catholic','douay rheims american edition','dra catholic','d r a catholic','douay reims','douay reims catholic','douai rheims','douai rheims catholic','dewey rheims','dewey rheims catholic','dewey reams','dewey reams catholic','do way rheims','do way rheims catholic','do a rings','do a reigns','do we reems','douay rames','dewey rames','do way reams','do we reams','do a reams','do a rains','dewey reigns','dewey rains','do away reams','do away reigns','do we rains','do we rings','dee are ay']
 };
 function normalizeSpokenNavigation(value){
   return normalizeVoiceCommand(value).normalize('NFKC').toLowerCase().replace(/[’‘ʼ'`´]/g,'')
@@ -713,7 +713,10 @@ function getSpokenTranslationAliases(){
     bases=bases.concat(bases.map(function(base){return normalizeSpokenNavigation(base).replace(/\s+(?:bible|version|translation|edition)$/,'');}));
     bases.forEach(function(base){
       base=normalizeSpokenNavigation(base);
-      ['', ' bible',' version',' translation',' edition'].forEach(function(suffix){
+      var suffixes=['', ' bible',' version',' translation',' edition'];
+      // Catholic qualifiers apply only to complete DRA names, never single sound-alike tokens.
+      if(t.id==='dra' && !/\bcatholic\b/.test(base)) suffixes=suffixes.concat([' catholic',' catholic bible']);
+      suffixes.forEach(function(suffix){
         var name=base+suffix,key=t.id+':'+name;
         if(base && !seen.has(key)){seen.add(key);aliases.push({id:t.id,name:name});}
       });

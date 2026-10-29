@@ -302,10 +302,10 @@ test('diagnostics: delayed final/release callbacks cannot repopulate cleared or 
 });
 
 // These final transcripts were supplied by the owner after physical Android testing.
-const observedDraTranscripts=['do a rings','do a Reigns','do we Reems','Dewey reams'];
+const observedDraTranscripts=['Douay Rheims','Douay Reims','Douay Rames','Dewey Rheims','Dewey Reams','Dewey Rames','Do Way Rheims','Do Way Reams','Do We Reems','Do We Reams','Do A Rings','Do A Reigns','Do A Reams','Do A Rains','Dewey Reigns','Dewey Rains','Do Away Reams','Do Away Reigns','Do We Rains','Do We Rings'];
 for(const diagnostic of [false,true])for(const raw of observedDraTranscripts)test(`observed Android DRA: ${raw}, diagnostics=${diagnostic}, selection and Catholic compound navigation`,async({page})=>{
   await open(page,false,diagnostic);
-  for(const spoken of [raw,raw.toUpperCase(),'Switch to '+raw+' Bible']){
+  for(const spoken of [raw,'Switch to '+raw+' Bible','Change to '+raw+' Catholic','Read '+raw+' Catholic Bible',raw+' Version',raw+' Translation']){
     await command(page,'WEB John 1:2');await command(page,spoken);
     expect(await position(page)).toMatchObject({id:'dra',book:'john',chapter:1,verse:2,stored:'dra'});
     if(diagnostic){await expect(debugField(page,'raw')).toHaveText(JSON.stringify(spoken));await expect(debugField(page,'decision')).toContainText('"translationId":"dra"');}
@@ -318,7 +318,7 @@ for(const diagnostic of [false,true])for(const raw of observedDraTranscripts)tes
 
 test('observed Android DRA: common words, incomplete phrases and speculative recombinations never select a translation',async({page})=>{
   await open(page);await page.evaluate(()=>navigateReaderToPassage('john',1,2));const before=await position(page);
-  for(const raw of ['do','we','rings','reigns','reems','do a','do we','a rings','rings Bible','reigns Catholic','Switch to rings','do a ringside','do a ring','do a reems','do we reigns','do we reams','do a rings around the table','do we read John 1:1']){
+  for(const raw of ['do','we','rings','reigns','reems','do a','do we','a rings','rings Bible','reigns Catholic','Switch to rings','do a ringside','do a ring','do a reems','do we reigns','do away rings','dewey rings','douay reams','do a rings around the table','do we read John 1:1']){
     await command(page,raw);expect(await position(page)).toEqual(before);await expect(page.locator('#voiceStatusTop')).toHaveText(/not recognized|not available|not found/);
   }
 });
@@ -331,7 +331,7 @@ test('observed Android DRA: an equally specific catalog alias stays ambiguous an
   await command(page,'DRA, Tobit chapter 1 verse 2');expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
 });
 
-test('observed Android DRA: warm offline Bible navigation and Saved Verses survive all four owner-reported transcripts',async({page,context})=>{
+test('observed Android DRA: warm offline Bible navigation and Saved Verses survive all twenty requested transcripts',async({page,context})=>{
   await open(page,false,true);await page.evaluate(async()=>{await BibleTranslationLoader.ensure('dra');toggleFav('John 1:1',BibleData.getVerse('web','john',1,1).text,null,{translationId:'web',bookId:'john',chapter:1,verse:1});});
   const saved=(await position(page)).saved;await context.setOffline(true);
   for(const raw of observedDraTranscripts){
@@ -351,4 +351,19 @@ for(const cloud of [false,true])test(`observed Android DRA: ${cloud?'cloud':'nat
   const second=await page.evaluate(cloud=>cloud?__voiceNav.requests.at(-1).text:__voiceNav.native.at(-1).text,cloud);
   expect(second).toBe(await page.evaluate(()=>BibleData.getVerse('dra','tobit',1,3).text));
   expect(await page.evaluate(()=>__voiceNav.recognizers.length)).toBe(2);await command(page,'stop');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+});
+
+
+test('recognition alternatives cannot override a conflicting primary command or resolve primary ambiguity',async({page})=>{
+  await open(page,false,true);
+  await command(page,'WEB John 1:2',true,['Dewey Rames Catholic, Tobit 1:2']);
+  expect(await position(page)).toMatchObject({id:'web',book:'john',chapter:1,verse:2});
+  await command(page,'Bible',true,['Do Away Reams Catholic, Tobit 1:2']);
+  expect(await position(page)).toMatchObject({id:'web',book:'john',chapter:1,verse:2});
+  await expect(page.locator('#voiceStatusTop')).toContainText('Ambiguous');
+  await command(page,'Read Do We Rings Catholic, Tobit 1:2',true,['WEB John 3:16']);
+  expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
+  await command(page,'stop',true,['Read Dewey Reams Catholic, Tobit 1:3']);
+  expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+  expect(await position(page)).toMatchObject({id:'dra',book:'tobit',chapter:1,verse:2});
 });
