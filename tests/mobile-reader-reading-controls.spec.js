@@ -24,7 +24,7 @@ async function open(page,{width=390,fullscreen=false,cloud=false,fallback=false,
   await page.goto('/');await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>ReaderTranslationLoader.ensure());
   await page.evaluate(()=>document.fonts.ready);
   await page.evaluate(()=>document.getElementById('view-reader').scrollIntoView({block:'start',behavior:'instant'}));
-  if(fullscreen)await page.locator('#fullscreenBtn').tap();
+  if(fullscreen){await page.locator('#readerMoreTrigger').tap();await page.locator('#fullscreenBtn').tap();await page.locator('#readerMoreTrigger').tap();}
   await page.locator('#readerMoreTrigger').tap();
   await page.locator('#readerContent [data-verse-number="12"]').scrollIntoViewIfNeeded();
 }
@@ -40,6 +40,7 @@ async function hidden(page){
   await expect(page.locator('.reader-toolbar')).toHaveAttribute('inert','');
   await expect(page.locator('.reader-toolbar')).toHaveAttribute('aria-hidden','true');
   await expect(page.locator('.reader-toolbar')).toHaveCSS('visibility','hidden');
+  await expect.poll(()=>recovery(page).evaluate(button=>{const r=button.getBoundingClientRect();return button.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));})).toBe(true);
   await expect(page.getByRole('button',{name:'Hide Options',exact:true})).toHaveCount(0);
 }
 async function visible(page){
@@ -48,12 +49,14 @@ async function visible(page){
   await expect(recovery(page)).toBeHidden();
 }
 async function readingTouch(page){
-  const bounds=await page.locator('#view-reader').boundingBox();
-  await page.touchscreen.tap(bounds.x+bounds.width-3,824);
+  // Model a background touch without Chromium retargeting it to a nearby word.
+  await page.evaluate(()=>document.activeElement.blur());
+  await page.locator('#readerContent').dispatchEvent('pointerdown',{pointerType:'touch',isPrimary:true});
+  await page.locator('#readerContent').dispatchEvent('pointerup',{pointerType:'touch',isPrimary:true});
 }
 
 for(const width of [320,360,390,430])for(const fullscreen of [false,true]){
-  test(`${width}px fullscreen=${fullscreen}: hide and recover all four Options rows without moving Scripture`,async({page},testInfo)=>{
+  test(`${width}px fullscreen=${fullscreen}: hide and recover Options independently without moving Scripture`,async({page},testInfo)=>{
     await open(page,{width,fullscreen});
     const before=await snapshot(page);await scroll(page,96);await hidden(page);
     const after=await snapshot(page);expect(after.verse-before.verse).toBe(-96);expect(after.height).toBe(before.height);
@@ -88,7 +91,7 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true]){
     await readingTouch(page);
     await page.evaluate(()=>resumeReader());await hidden(page);
     await page.evaluate(()=>repeatLastSpokenVerse());await hidden(page);
-    await recovery(page).tap();await page.locator('#readAloudPlay').tap();await visible(page);
+    await recovery(page).tap();await page.locator('.reader-compact-stop').tap();await visible(page);
     expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
     await readingTouch(page);
     await page.evaluate(()=>readVerseAloud(12));await hidden(page);
@@ -154,7 +157,7 @@ test('touching Options or a picker during keyboard-started playback keeps contro
   await page.locator('#readerMoreTrigger').tap();await visible(page);
   await page.locator('#readerMoreTrigger').tap();await visible(page);
   await page.locator('[data-reader-select="readAloudVoice"]').tap();
-  await expect(page.getByRole('dialog',{name:'Voice',exact:true})).toBeVisible();await visible(page);
+  await expect(page.getByRole('dialog',{name:'Select Reading Voice',exact:true})).toBeVisible();await visible(page);
   await page.getByRole('button',{name:'Close Reader selection'}).tap();await visible(page);
   await expect(page.locator('[data-reader-select="readAloudVoice"]')).toBeFocused();
   await scroll(page,96);await hidden(page);

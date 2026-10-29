@@ -350,7 +350,8 @@ var details = document.createElement('div');
 details.className = 'saved-verse-details';
 var reference = document.createElement('span');
 reference.className = 'saved-verse-reference';
-reference.textContent = v.ref;
+// Keep legacy saved references as storage identities; relabel only their display.
+reference.textContent = (!v.location || v.location.translationId==='dra') ? v.ref.replace(/\(DRA\)$/i,'(CTH)') : v.ref;
 var remove = document.createElement('button');
 remove.type = 'button';
 remove.className = 'saved-verse-remove';

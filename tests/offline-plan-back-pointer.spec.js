@@ -1,4 +1,5 @@
 const {test, expect} = require('@playwright/test');
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 
 test.use({hasTouch:true,reducedMotion:'reduce'});
 
@@ -15,6 +16,15 @@ async function openOfflinePlan(page, context, width, offline=true){
   await page.getByRole('button',{name:'Plan',exact:true}).click();
   expect(await page.evaluate(()=>openJourneyDay(1))).toBe(true);
   await expect(page.locator('#readerBackToPlan')).toBeVisible();
+  // Journey activation starts lazy controls, fonts and compact-control CSS
+  // transitions. Measure the baseline only after that initial layout settles.
+  await page.evaluate(async()=>{
+    await ReaderTranslationLoader.ensure();await document.fonts.ready;
+    await new Promise(requestAnimationFrame);
+    await Promise.all(document.querySelector('.reader-toolbar').getAnimations({subtree:true})
+      .map(animation=>animation.finished.catch(()=>{})));
+    await new Promise(requestAnimationFrame);
+  });
   if(offline) await expect(page.locator('#pwaStatus')).toBeVisible();
 }
 
@@ -34,7 +44,12 @@ async function returnGeometry(page){
 for(const width of [1280,390,320])for(const offline of [false,true])for(const fullscreen of [false,true])for(const activation of ['mouse','touch']){
   test((offline?'offline':'online')+' Plan return '+activation+' at '+width+(fullscreen?' fullscreen':' normal'),async({page,context})=>{
     await openOfflinePlan(page,context,width,offline);
-    if(fullscreen) await page.locator('#fullscreenBtn').click();
+    if(fullscreen){
+      await toggleReaderFullscreen(page);
+      await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
+      await expect(page.locator('#fullscreenBtn')).toHaveAttribute('aria-pressed','true');
+      await expect(page.locator('#readerMoreTrigger')).toHaveAttribute('aria-expanded','false');
+    }
     const back=page.locator('#readerBackToPlan');
     await expect(page.locator('#readerContent > .subtitle + .reader-plan-return > #readerBackToPlan')).toBeVisible();
     await expect(page.locator('.reader-plan-return + .reader-chapter-caption')).toBeVisible();
@@ -158,6 +173,38 @@ for(const width of [1280,390,320])test('ordinary Reader has no Plan return contr
   await expect(page.locator('#readerBackToPlan')).toBeHidden();
   await expect(page.locator('.reader-plan-return')).toBeHidden();
   expect(await page.locator('.reader-plan-return').evaluate(element=>element.getBoundingClientRect().height)).toBe(0);
+});
+
+for(const width of [390,320])test('offline Fullscreen Options retain keyboard and accessible state at '+width,async({page,context})=>{
+  await openOfflinePlan(page,context,width);
+  const options=page.locator('#readerMoreTrigger'),panel=page.locator('#readerSecondaryControls');
+  const fullscreen=page.locator('#fullscreenBtn'),reader=page.locator('#view-reader');
+  await expect(options).toHaveAccessibleName('Show Options');
+  await expect(options).toHaveAttribute('aria-controls','readerSecondaryControls');
+  await expect(options).toHaveAttribute('aria-expanded','false');
+  await expect(fullscreen).toBeHidden();
+  await options.focus();await options.press('Enter');
+  await expect(panel).toBeVisible();await expect(fullscreen).toBeVisible();
+  await expect(options).toHaveAttribute('aria-expanded','true');
+  await expect(options).toHaveAccessibleName('Hide Options');
+  await expect(fullscreen).toHaveAccessibleName('Enter Fullscreen');
+  await expect(fullscreen).toHaveAttribute('aria-pressed','false');
+  await fullscreen.focus();await fullscreen.press('Enter');
+  await expect(reader).toHaveClass(/reader-fullscreen/);
+  await expect(reader).toHaveAttribute('aria-modal','true');
+  await expect(fullscreen).toHaveAccessibleName('Exit Fullscreen');
+  await expect(fullscreen).toHaveAttribute('aria-pressed','true');
+  await expect(fullscreen).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(panel).toBeHidden();await expect(options).toBeFocused();
+  await expect(options).toHaveAttribute('aria-expanded','false');
+  await expect(options).toHaveAccessibleName('Show Options');
+  await expect(reader).toHaveClass(/reader-fullscreen/);
+  await options.press('Enter');await fullscreen.focus();await fullscreen.press('Enter');
+  await expect(reader).not.toHaveClass(/reader-fullscreen/);
+  await expect(fullscreen).toHaveAccessibleName('Enter Fullscreen');
+  await expect(fullscreen).toHaveAttribute('aria-pressed','false');
+  await expect(fullscreen).toBeFocused();
 });
 
 test('passage and translation updates preserve the same return button and its focus',async({page,context})=>{

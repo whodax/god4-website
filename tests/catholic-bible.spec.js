@@ -3,7 +3,7 @@ const {selectCompareOption}=require('./reader-navigation-test-helper');
 async function open(page){await page.goto('/');await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>Boolean(navigator.serviceWorker.controller)))await page.reload();await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>changeTranslation('dra'));}
 async function passage(page,book,chapter=1,verse){await page.evaluate(([b,c,v])=>navigateReaderToPassage(b,c,v),[book,chapter,verse]);}
 test('DRA registry, exact configured order and unchanged Protestant inventory',async({page})=>{
- await open(page);await expect(page.locator('#readerTranslation option[value="dra"]')).toHaveText(/DRA.*Douay-Rheims — Catholic/);
+ await open(page);await expect(page.locator('#readerTranslation option[value="dra"]')).toHaveText('CTH — Catholic Bible (Douay-Rheims)');
  const result=await page.evaluate(()=>({dra:BibleData.listBooks('dra').map(b=>b.id),expected:BibleCanon.order('dra'),web:BibleData.listBooks('web').map(b=>b.id),pro:BibleCanon.order('web')}));
  expect(result.dra).toEqual(result.expected);expect(result.dra).toHaveLength(73);expect(result.web).toEqual(result.pro);expect(result.web).toHaveLength(66);
 });
@@ -29,7 +29,7 @@ test('cross-canon switching announces safe fallback and numbering reset',async({
 });
 for(const [book,c,v] of [['tobit',1,1],['esther',16,24],['daniel',3,90],['daniel',13,65],['psalms',23,1]])test(`Compare handles canon/numbering for ${book} ${c}:${v}`,async({page})=>{
  await open(page);await passage(page,book,c,v);await page.evaluate(async()=>{await CompareLoader.activate();setCompareEditionCount(2,true);await loadCompare();});
- await expect(page.locator('#compareGrid')).toContainText('DRA - Douay-Rheims — Catholic');
+ await expect(page.locator('#compareGrid')).toContainText('CTH - Catholic Bible (Douay-Rheims)');
  const web=page.locator('.compare-col').filter({has:page.locator('select option[value="web"]:checked')});
  await expect(web).toContainText(book==='tobit'||(book==='esther'&&c>10)||(book==='daniel'&&(c>12||c===3&&v===90))?'This passage is part of the Catholic canon':'Numbering differs');
  expect(await page.evaluate(()=>getCompareReference())).toEqual({bookId:book,chapter:c,verse:v});
@@ -46,14 +46,18 @@ test('keyword search covers Deuterocanonical and addition text',async({page})=>{
 });
 test('Saved Catholic verse survives reload and intentionally loads its own edition',async({page})=>{
  await open(page);await passage(page,'tobit',1,1);await page.evaluate(()=>saveReaderVerse());
- const saved=await page.evaluate(()=>UserData.savedVerses.load());expect(saved[0].location).toEqual({translationId:'dra',bookId:'tobit',chapter:1,verse:1});expect(saved[0].ref).toBe('Tobit 1:1 (DRA)');
+ const saved=await page.evaluate(()=>UserData.savedVerses.load());expect(saved[0].location).toEqual({translationId:'dra',bookId:'tobit',chapter:1,verse:1});expect(saved[0].ref).toBe('Tobit 1:1 (CTH)');
  await page.evaluate(()=>changeTranslation('web'));await page.reload();await page.evaluate(()=>initializeBibleExperience());
  await page.locator('.saved-pill').click();await page.locator('#trayList').getByRole('button',{name:'Open',exact:true}).click();
  await expect(page.locator('#readerTranslation')).toHaveValue('dra');await expect(page.locator('#scripturePickerTrigger')).toContainText('Tobit 1:1');
  expect(await page.evaluate(()=>UserData.savedVerses.load()[0].text)).toBe(saved[0].text);
 });
 for(const width of [1280,390,320])test(`Catholic picker keyboard, fullscreen and reflow ${width}`,async({page})=>{
- await page.setViewportSize({width,height:800});await open(page);await page.locator('#fullscreenBtn').click();await page.locator('#scripturePickerTrigger').click();
+ await page.setViewportSize({width,height:800});await open(page);
+ if(!await page.locator('#fullscreenBtn').isVisible())await page.locator('#readerMoreTrigger').click();
+ await page.locator('#fullscreenBtn').click();
+ if(await page.locator('#readerMoreTrigger').getAttribute('aria-expanded')==='true')await page.locator('#readerMoreTrigger').click();
+ await page.locator('#scripturePickerTrigger').click();
  await page.locator('#pickerBookSearch').fill('Ecclesiasticus');await expect(page.locator('.picker-book-list button')).toHaveCount(1);
  await page.locator('.picker-book-list button').press('Enter');await page.locator('[data-picker-action="chapter"][data-value="51"]').press('Space');await page.locator('[data-picker-action="verse"][data-value="38"]').press('Enter');
  await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);await expect(page.locator('#readerContent [data-verse-number="38"]')).toBeFocused();

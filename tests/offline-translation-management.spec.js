@@ -13,7 +13,7 @@ const names = [
   'Webster Bible (1833)',
   'Revised Version (1895)',
   'Geneva Bible 1599',
-  'Douay-Rheims — Catholic'
+  'Catholic Bible (Douay-Rheims)'
 ];
 
 async function installAndControl(page) {
@@ -135,16 +135,16 @@ test('dialog lists fresh translations without downloading and provides modal key
   await expect(trigger).toHaveAttribute('aria-expanded', 'true');
   await expect(page.locator('#offlineBiblesTitle')).toBeFocused();
   await expect(page.locator('.offline-bibles-name')).toHaveText(names);
-  await expect(page.locator('.offline-bibles-row-status')).toHaveText(names.map(name=>'Not downloaded'+(name==='Douay-Rheims — Catholic'?' 73-book Catholic canon • Includes the Deuterocanonical books and Catholic additions to Esther and Daniel.':'')));
+  await expect(page.locator('.offline-bibles-row-status')).toHaveText(names.map(name=>'Not downloaded'+(name==='Catholic Bible (Douay-Rheims)'?' 73-book Catholic canon • Includes the Deuterocanonical books and Catholic additions to Esther and Daniel.':'')));
   await expect(page.locator('.offline-bibles-action')).toHaveText(Array(names.length).fill('Download'));
   await expect(page.getByRole('button', {name:'Download American Standard Version (1901) for offline reading'})).toBeVisible();
   await expect(page.locator('#offlineBiblesStorage')).toHaveText('Offline Bibles: 0.0 MiB');
   expect(requested).toEqual([]);
   expect(await page.evaluate(() => window.__managementMessages)).toEqual(['BIBLE_TRANSLATION_LIST']);
-  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-compact-reader-52']);
+  expect(await page.evaluate(() => caches.keys())).toEqual(['god4-shell-compact-reader-53']);
 
   await page.keyboard.press('Shift+Tab');
-  await expect(page.getByRole('button', {name:'Download Douay-Rheims — Catholic for offline reading'})).toBeFocused();
+  await expect(page.getByRole('button', {name:'Download Catholic Bible (Douay-Rheims) for offline reading'})).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(page.locator('#offlineBiblesClose')).toBeFocused();
   await page.keyboard.press('Escape');

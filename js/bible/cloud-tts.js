@@ -44,6 +44,7 @@ var BibleCloudTTS = (function createCloudSpeech(){
     attempt.callbacks.onstart();
   }
   function speak(text, voice, rate, callbacks){
+    if(!Number.isFinite(rate) || rate<0.5 || rate>2) return false;
     if(!available() || navigator.onLine === false || !context) return false;
     cancel();
     var attempt = {id:generation, controller:new AbortController(), source:null, callbacks:callbacks, paused:false, started:false};

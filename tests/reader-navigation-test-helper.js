@@ -35,4 +35,17 @@ async function selectCompareOption(locator,value){
   const replacement=page.locator(`[data-themed-select="${key}"]`);
   await expect(replacement).toBeFocused();
 }
-module.exports={selectReaderOption,selectCompareOption};
+async function toggleReaderFullscreen(page){
+  const {expect}=require('@playwright/test');
+  await page.evaluate(()=>ReaderTranslationLoader.ensure().catch(()=>{}));
+  await expect.poll(()=>page.evaluate(()=>{
+    if(!window.ReaderCompactControls || typeof HTMLDialogElement==='undefined' || !HTMLDialogElement.prototype.showModal) return true;
+    return document.querySelector('.reader-toolbar').classList.contains('reader-compact-mobile')===matchMedia('(max-width:620px)').matches;
+  })).toBe(true);
+  const more=page.locator('#readerMoreTrigger');
+  const closed=await more.getAttribute('aria-expanded')==='false';
+  if(!await page.locator('#fullscreenBtn').isVisible())await more.click();
+  await page.locator('#fullscreenBtn').click();
+  if(closed && await more.getAttribute('aria-expanded')==='true')await more.click();
+}
+module.exports={selectReaderOption,selectCompareOption,toggleReaderFullscreen};

@@ -1,6 +1,6 @@
 /* ===== SCRIPTURE READ ALOUD ===== */
 var BibleSpeech = (function createBibleSpeech(){
-  var SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5];
+  var SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
   var state = 'idle';
   var PROFILES = Object.freeze({
     male:Object.freeze({id:'male', displayName:'Natural Male', gender:'male', locale:'en-US', provider:'google-neural2', providerVoiceId:'en-US-Neural2-D', fallbackGender:'male', defaultRate:1}),
@@ -11,6 +11,9 @@ var BibleSpeech = (function createBibleSpeech(){
   var utteranceStarted = false;
   var playbackAttempt = 0;
   var announcementKey = '';
+  // Session state survives per-verse preparation; chapter context is claimed only on actual start.
+  var spokenChapterKey = '', sessionStarted = false, preserveChapterOnce = false;
+  var commandNativeReplay = false;
   var verses = [];
   var verseIndex = 0;
   var pendingNext = false;
@@ -45,10 +48,22 @@ var BibleSpeech = (function createBibleSpeech(){
     if(cloudSupported()) BibleCloudTTS.resume();
     if(localSupported()) window.speechSynthesis.resume();
   }
-  function prepareCloudSpeech(){ if(cloudSupported()) BibleCloudTTS.prepare(); }
+  function deferForMicrophone(action){
+    return typeof deferReaderSpeechUntilMicrophoneReleased === 'function' && deferReaderSpeechUntilMicrophoneReleased(action);
+  }
+  function prepareCloudSpeech(){
+    if(deferForMicrophone(prepareCloudSpeech)) return;
+    if(cloudSupported()) BibleCloudTTS.prepare();
+  }
   function createUtterance(verse){
     var text = verse.translationId === 'kjv' ? verse.text.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g, '$1') : verse.text;
     var utterance = cloudSupported() ? {text:text} : new window.SpeechSynthesisUtterance(text);
+    var chapter = typeof BibleData!=='undefined' && verse.bookId && verse.chapter
+      ? BibleData.getChapter(verse.translationId,verse.bookId,verse.chapter) : null;
+    utterance.chapterKey = chapter ? JSON.stringify([verse.translationId,verse.bookId,verse.chapter]) : '';
+    if(chapter && utterance.chapterKey!==spokenChapterKey){
+      utterance.text=chapter.bookName+' chapter '+verse.chapter+'. '+text;
+    }
     utterance.profileId = voicePreference;
     utterance.playbackRate = speed;
     return utterance;
@@ -58,13 +73,15 @@ var BibleSpeech = (function createBibleSpeech(){
     var profile = PROFILES[utterance.profileId], rate = utterance.playbackRate;
     var onstart = utterance.onstart;
     utteranceStarted = false;
-    if(state !== 'paused') state = 'preparing';
+    if(state !== 'paused' && !sessionStarted) state = 'preparing';
     if(!announcementKey || actualPlayback && actualPlayback.profileId !== profile.id) statusMessage = 'Preparing ' + profile.displayName + '…';
     updateControls();
     function current(){ return activeSession === session && attempt === playbackAttempt; }
     function started(){
       if(!current()) return;
       utteranceStarted = true;
+      sessionStarted = true;
+      if(utterance.chapterKey) spokenChapterKey=utterance.chapterKey;
       if(state !== 'paused') state = 'playing';
       var key = profile.id + ':' + actualPlayback.provider + ':' + (actualPlayback.fallbackReason || '');
       if(key !== announcementKey){
@@ -83,6 +100,12 @@ var BibleSpeech = (function createBibleSpeech(){
       if(!localSupported() || !voice && voices().length){ actualPlayback = {profileId:profile.id,provider:null,voiceName:null,genderVerified:false,fallbackReason:'native-unavailable'}; utterance.onerror(); return; }
       actualPlayback = {profileId:profile.id, provider:'native', voiceName:voice ? voice.name : null,
         locale:voice ? voice.lang : 'en', genderVerified:voice ? nativeGender(voice) === profile.gender : false, fallbackReason:reason};
+      if(state === 'paused' && typeof isAndroidVoiceCommands === 'function' && isAndroidVoiceCommands()){
+        // A cloud failure during an Android command turn must not start native audio.
+        session++;
+        commandNativeReplay = true;
+        return;
+      }
       var local = configureUtterance(new window.SpeechSynthesisUtterance(utterance.text),profile.id,rate);
       local.onstart = started;
       local.onend = utterance.onend;
@@ -217,6 +240,7 @@ var BibleSpeech = (function createBibleSpeech(){
     });
     select.value = voicePreference;
     select.disabled = !supported();
+    if(window.ReaderOptions) ReaderOptions.sync();
   }
   function getVoiceProfiles(){
     return ['male','female'].map(function(id){ return Object.assign({},PROFILES[id],{
@@ -274,11 +298,14 @@ var BibleSpeech = (function createBibleSpeech(){
     var active = state === 'playing' || state === 'preparing';
     if(controls.play){
       controls.play.disabled = unavailable;
-      controls.play.textContent = active ? 'Stop' : 'Play';
-      controls.play.setAttribute('aria-label', active ? 'Stop reading aloud' : 'Play reading aloud');
+      var text=active ? 'Stop' : 'Play';
+      var compact=controls.play.closest('.reader-compact-mobile');
+      var label=compact && state==='playing' ? 'Pause reading aloud' : compact && state==='paused' ? 'Resume reading aloud' : active ? 'Stop reading aloud' : 'Play reading aloud';
+      if(controls.play.textContent!==text) controls.play.textContent=text;
+      if(controls.play.getAttribute('aria-label')!==label) controls.play.setAttribute('aria-label',label);
     }
     if(controls.status){
-      var message = unavailable ? 'Read aloud is unavailable in this browser.' : active ? statusMessage || 'Preparing ' + PROFILES[voicePreference].displayName + '…' : state === 'paused' ? 'Reading aloud paused.' : completionMessage || 'Ready to read aloud.';
+      var message = unavailable ? 'Read aloud is unavailable in this browser.' : active ? statusMessage || 'Preparing ' + PROFILES[voicePreference].displayName + '…' : state === 'paused' ? 'Reading aloud paused.' : completionMessage;
       if(controls.status.textContent !== message) controls.status.textContent = message;
     }
     if(controls.speed) controls.speed.value = String(speed);
@@ -289,6 +316,8 @@ var BibleSpeech = (function createBibleSpeech(){
   function finish(activeSession, message){
     if(activeSession !== session) return;
     state = 'idle';
+    commandNativeReplay = false;
+    spokenChapterKey='';sessionStarted=false;preserveChapterOnce=false;
     verses = [];
     verseIndex = 0;
     pendingNext = false;
@@ -384,11 +413,16 @@ var BibleSpeech = (function createBibleSpeech(){
     currentVerseIndex = -1;
   }
   function playChapter(chapter, startVerse, pauseAfterFirst, options){
+    if(deferForMicrophone(function(){playChapter(chapter,startVerse,pauseAfterFirst,options);})) return;
     if(!supported() || !chapter || !Array.isArray(chapter.verses)){
       updateControls();
       return;
     }
     var wasPaused = state === 'paused';
+    commandNativeReplay = false;
+    if(state==='idle' && !preserveChapterOnce) spokenChapterKey='';
+    preserveChapterOnce=false;
+    sessionStarted=false;
     session++;
     cancelSpeech();
     if(wasPaused) resumeSpeech();
@@ -406,17 +440,23 @@ var BibleSpeech = (function createBibleSpeech(){
     statusMessage = '';
     announcementKey = '';
     lastResult = null;
-    state = verses.length ? 'playing' : 'idle';
+    state = verses.length ? options && options.startPaused ? 'paused' : 'preparing' : 'idle';
     updateControls();
-    if(verses.length) speakNext(session);
+    if(verses.length && state==='paused'){pendingNext=true;pauseSpeech();}
+    else if(verses.length) speakNext(session);
     else notifyPlaybackEnd();
   }
   function playVerse(text, verseNumber, location){
+    if(deferForMicrophone(function(){playVerse(text,verseNumber,location);})) return;
     if(!supported() || !String(text || '').trim()){
       updateControls();
       return;
     }
     var wasPaused = state === 'paused';
+    commandNativeReplay = false;
+    if(state==='idle' && !preserveChapterOnce) spokenChapterKey='';
+    preserveChapterOnce=false;
+    sessionStarted=false;
     session++;
     cancelSpeech();
     if(wasPaused) resumeSpeech();
@@ -439,7 +479,7 @@ var BibleSpeech = (function createBibleSpeech(){
     statusMessage = '';
     announcementKey = '';
     lastResult = null;
-    state = 'playing';
+    state = 'preparing';
     updateControls();
     speakNext(session);
   }
@@ -489,9 +529,11 @@ var BibleSpeech = (function createBibleSpeech(){
     speakUtterance(utterance);
   }
   function repeatVerse(verseNumber){
+    if(deferForMicrophone(function(){repeatVerse(verseNumber);})) return true;
     if(!supported() || !sequenceIsChapter || state === 'idle') return false;
     var repeatIndex = verses.findIndex(function(verse){ return verse.verseNumber === verseNumber; });
     if(repeatIndex < 0) return false;
+    commandNativeReplay = false;
     var wasPaused = state === 'paused' || Boolean(repeatState && repeatState.wasPausedBeforeRepeat);
     var continuationVerseIndex = repeatState
       ? repeatState.continuationVerseIndex
@@ -530,7 +572,8 @@ var BibleSpeech = (function createBibleSpeech(){
     };
   }
   function setSpeed(value){
-    var nextSpeed = Number(value);
+    if(!Number.isFinite(Number(value))) return;
+    var nextSpeed = Math.min(2,Number(value));
     if(SPEEDS.indexOf(nextSpeed) < 0) return;
     speed = nextSpeed;
     UserData.speechSpeed.save(speed);
@@ -544,17 +587,36 @@ var BibleSpeech = (function createBibleSpeech(){
     populateVoiceSelector();
   }
 
+  function pauseForVoiceCommand(){
+    if(state !== 'playing' && state !== 'preparing') return;
+    if(actualPlayback && actualPlayback.provider === 'native' && currentVerseIndex >= 0){
+      // Android native pause can cancel the utterance. Retain its complete verse
+      // and chapter context, invalidate late callbacks, and replay only on resume.
+      session++;
+      state = 'paused';
+      commandNativeReplay = true;
+      utteranceStarted = false;
+      cancelSpeech();
+      updateControls();
+    } else pauseResume();
+  }
+
   function pauseResume(){
     if(!supported()) return;
     if(state === 'playing' || state === 'preparing'){
       state = 'paused';
       pauseSpeech();
     } else if(state === 'paused'){
-      state = utteranceStarted || pendingNext ? 'playing' : 'preparing';
+      if(deferForMicrophone(pauseResume)) return;
+      state = sessionStarted || utteranceStarted || pendingNext ? 'playing' : 'preparing';
       if(repeatState) repeatState.wasPausedBeforeRepeat = false;
       pauseAfterCurrent = false;
       resumeSpeech();
-      if(pendingNext){
+      if(commandNativeReplay){
+        commandNativeReplay = false;
+        if(repeatState) speakRepeat(session,repeatState);
+        else {verseIndex=currentVerseIndex; speakNext(session);}
+      } else if(pendingNext){
         pendingNext = false;
         speakNext(session);
       }
@@ -563,19 +625,27 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function beginPreparation(){
+    commandNativeReplay = false;
     session++;
     cancelSpeech();
     state = 'preparing';
+    spokenChapterKey='';sessionStarted=false;preserveChapterOnce=false;
     actualPlayback = null;
     lastResult = null;
     statusMessage = 'Preparing ' + PROFILES[voicePreference].displayName + '…';
     updateControls();
   }
   function failPreparation(){ lastResult = 'failed'; finish(session,'Playback unavailable.'); }
-  function stop(){
+  function stop(preserveChapter){
+    if(typeof cancelReaderVoicePlayback === 'function') cancelReaderVoicePlayback();
+    commandNativeReplay = false;
     session++;
     cancelSpeech();
     state = 'idle';
+    // Active Previous/Next replaces the transport without repeating the same chapter introduction.
+    preserveChapterOnce=preserveChapter===true;
+    if(!preserveChapterOnce) spokenChapterKey='';
+    sessionStarted=false;
     verses = [];
     verseIndex = 0;
     pendingNext = false;
@@ -604,6 +674,7 @@ var BibleSpeech = (function createBibleSpeech(){
     repeatVerse: repeatVerse,
     getPlaybackSnapshot: getPlaybackSnapshot,
     pauseResume: pauseResume,
+    pauseForVoiceCommand: pauseForVoiceCommand,
     stop: stop,
     setSpeed: setSpeed,
     setVoice: setVoice,

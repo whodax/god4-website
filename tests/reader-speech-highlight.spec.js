@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 async function install(page,options={}){
   await page.addInitScript(options=>{
@@ -58,7 +59,7 @@ test('actual native start owns highlight; progression suppresses selection, paus
 for(const width of [390,320])for(const fullscreen of [false,true]){
   test(`one voice-following highlight without overflow or focus stealing at ${width}px, fullscreen=${fullscreen}`,async({page})=>{
     await page.setViewportSize({width,height:800});await install(page);
-    if(fullscreen)await page.locator('#fullscreenBtn').click();
+    if(fullscreen)await toggleReaderFullscreen(page);
     await page.locator('#readAloudPlay').click();await active(page,16);
     await page.locator('#readerMoreTrigger').focus();await advance(page);await active(page,17);
     await expect(page.locator('#readerMoreTrigger')).toBeFocused();
@@ -212,7 +213,7 @@ test('active verse navigation skips empty coordinates and respects chapter edges
   await page.evaluate(()=>previousReaderVerse());await active(page,1);expect(await page.evaluate(()=>window.__highlight.utterances.length)).toBe(before);
 });
 test('offline fullscreen verse replacement preserves local playback and Reader focus',async({page,context})=>{
-  await install(page);await context.setOffline(true);await page.locator('#fullscreenBtn').click();
+  await install(page);await context.setOffline(true);await toggleReaderFullscreen(page);
   await page.locator('#readAloudPlay').click();await active(page,16);
   await page.locator('#readerMoreTrigger').click();await page.locator('[data-reader-action="next-verse"]').click();await active(page,17);
   await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);

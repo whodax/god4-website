@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 const fs=require('node:fs');
 const path=require('node:path');
@@ -55,7 +56,7 @@ for(const width of [320,390])for(const fullscreen of [false,true])for(const colo
     test('all translations scroll, remain touch targets and retain accessible selected state',async({page},info)=>{
       const errors=[];page.on('pageerror',error=>errors.push(error.message));
       await openReader(page);
-      if(fullscreen)await page.locator('#fullscreenBtn').click();
+      if(fullscreen)await toggleReaderFullscreen(page);
       await openPicker(page);
       const dialog=page.locator(dialogSelector),buttons=dialog.locator('[data-translation]');
       await expect(dialog).toHaveAccessibleName('Bible translation');
@@ -75,12 +76,12 @@ for(const width of [320,390])for(const fullscreen of [false,true])for(const colo
       await selected.evaluate(element=>element.scrollIntoView({block:'nearest'}));
       await expect(selected).toHaveCSS('background-color','rgb(255, 243, 205)');
       await expect(dialog).toHaveCSS('background-color','rgb(247, 241, 222)');
-      await expect(buttons.last()).toHaveAccessibleName('DRA — Douay-Rheims — Catholic');
+      await expect(buttons.last()).toHaveAccessibleName('CTH — Catholic Bible (Douay-Rheims)');
       await page.screenshot({path:info.outputPath('translation-picker.png')});
       await buttons.last().tap();
       await expect(dialog).not.toBeVisible();
       await expect(page.locator('#readerTranslation')).toHaveValue('dra');
-      await expect(page.locator('#readerTranslationTrigger')).toHaveAccessibleName('Bible translation: DRA — Douay-Rheims — Catholic');
+      await expect(page.locator('#readerTranslationTrigger')).toHaveAccessibleName('Bible translation: CTH — Catholic Bible (Douay-Rheims)');
       await expect(page.locator('#readerTranslationTrigger')).toBeFocused();
       if(fullscreen)await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
       await page.reload();await page.evaluate(()=>initializeBibleExperience());
@@ -93,7 +94,7 @@ for(const width of [320,390])for(const fullscreen of [false,true])for(const colo
     });
     test('keyboard navigation separates focus from selection and traps focus without leaving fullscreen',async({page})=>{
       await openReader(page);
-      if(fullscreen)await page.locator('#fullscreenBtn').click();
+      if(fullscreen)await toggleReaderFullscreen(page);
       await page.locator('#readerTranslationTrigger').press('Enter');
       const dialog=page.locator(dialogSelector),first=dialog.locator('[data-translation="web"]'),last=dialog.locator('[data-translation="dra"]');
       await expect(first).toBeFocused();
@@ -387,7 +388,7 @@ test.describe('translation runtime demand loading',()=>{
   });
   test('a repeated or late runtime evaluation preserves the existing picker and fullscreen Escape behavior',async({page})=>{
     await page.setViewportSize({width:320,height:844});await openReader(page);
-    await page.locator('#fullscreenBtn').click();await openPicker(page);
+    await toggleReaderFullscreen(page);await openPicker(page);
     expect(await page.evaluate(async()=>{
       const identity=ReaderTranslationPicker;
       await new Promise((resolve,reject)=>{

@@ -6,7 +6,7 @@ var UserData = (function(storage){
     speed: 'god4.speech.speed', voice: 'god4.speech.voice',
     readerPosition: 'god4.reader.position', journey: 'god4.plan.journey.v1'
   };
-  var speeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5];
+  var speeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
   function readJSON(key){
     try { return JSON.parse(storage.read(key)); }
     catch(error){ return null; }
@@ -64,6 +64,7 @@ var UserData = (function(storage){
   }
   function speed(value){
     var number = Number(value);
+    if(Number.isFinite(number) && number>2) return 2;
     return speeds.indexOf(number) >= 0 ? number : 1;
   }
   function voice(value){ return typeof value === 'string' ? value : ''; }
@@ -106,7 +107,11 @@ var UserData = (function(storage){
       save: function(value){ return storage.write(keys.compare, JSON.stringify(compare(value))); }
     },
     speechSpeed: {
-      load: function(){ return speed(storage.read(keys.speed)); },
+      load: function(){
+        var value=storage.read(keys.speed), result=speed(value);
+        if(Number.isFinite(Number(value)) && Number(value)>2) storage.write(keys.speed,String(result));
+        return result;
+      },
       save: function(value){ return storage.write(keys.speed, String(speed(value))); }
     },
     // Male or Female preference; BibleSpeech migrates older profile and device values.

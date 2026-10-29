@@ -74,7 +74,9 @@ test('More remains immediately usable after deep Reader scrolling at three width
       const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
       const panel = document.getElementById('readerSecondaryControls').getBoundingClientRect();
       const primaryBottom = Math.max(...['scripturePickerTrigger', 'readerTranslation', 'readAloudPlay', 'readerMoreTrigger', 'fullscreenBtn']
-        .map(id => document.getElementById(id).getBoundingClientRect().bottom));
+        .map(id => document.getElementById(id))
+        .filter(element=>element.getClientRects().length && !element.closest('#readerSecondaryControls'))
+        .map(element=>element.getBoundingClientRect().bottom));
       return {toolbarTop:toolbar.top, toolbarBottom:toolbar.bottom, panelTop:panel.top, panelBottom:panel.bottom,
         primaryBottom, navBottom:document.querySelector('nav').getBoundingClientRect().bottom,
         overflow:[...document.querySelectorAll('#readerSecondaryControls *')].some(element => {
@@ -114,11 +116,14 @@ test('Escape closes More from inside its panel and returns focus', async ({ page
 test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mobile', async ({ page }) => {
   for(const width of [1440, 480, 320]){
     await page.setViewportSize({ width, height:900 });
+    await page.evaluate(()=>ReaderTranslationLoader.ensure());
     await page.locator('#readerContent .reader-verse').first().waitFor();
     const geometry = await page.evaluate(() => {
       const view = document.getElementById('view-reader').getBoundingClientRect();
       const toolbar = document.querySelector('.reader-toolbar').getBoundingClientRect();
-      const positions = ['#scripturePickerTrigger', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn']
+      const positions = (document.querySelector('.reader-compact-mobile')
+        ? ['#scripturePickerTrigger','#readerTranslationTrigger','[data-reader-action="previous-verse"]','#readAloudPlay','[data-reader-action="next-verse"]','[data-reader-select="readAloudVoice"]','[data-reader-select="readAloudSpeed"]']
+        : ['#scripturePickerTrigger', '#readerTranslation', '#readAloudPlay', '#readerMoreTrigger', '#fullscreenBtn'])
         .map(selector => Math.round(document.querySelector(selector === '#readerTranslation' && document.querySelector(selector).hidden ? '#readerTranslationTrigger' : selector).getBoundingClientRect().top));
       const verse = document.querySelector('#readerContent .reader-verse').getBoundingClientRect();
       const overflow = [...document.querySelectorAll('#view-reader *')].filter(element => {
@@ -143,6 +148,7 @@ test('Reader toolbar fits 1440, 480, and 320 pixels with Scripture higher on mob
 test('the same Reader toolbar sticks below the measured site navigation at three widths', async ({ page }) => {
   for(const width of [1440, 480, 320]){
     await page.setViewportSize({width, height:900});
+    await page.evaluate(()=>ReaderTranslationLoader.ensure());
     await page.evaluate(() => { window.scrollTo(0, 0); window.__readerToolbar = document.querySelector('.reader-toolbar'); });
     const originalHeight = await page.locator('.reader-toolbar').evaluate(element => element.getBoundingClientRect().height);
     await page.locator('#readerContent [data-verse-number="20"]').scrollIntoViewIfNeeded();

@@ -117,8 +117,23 @@ for(const [name,viewport] of [['desktop',{width:1280,height:900}],['mobile',{wid
       await expect(page.locator('#readerContent h2')).toHaveText('Psalms 23');
       await expectStart(page);
       await page.emulateMedia({reducedMotion:'no-preference'});
+      // Being visible is not the end of a smooth scroll (also true on ca0d623).
+      // Ignore any previous navigation's scrollend until this target is visible.
+      await page.evaluate(()=>{
+        window.searchScrollComplete=new Promise(resolve=>{
+          function complete(){
+            const target=document.querySelector('#readerContent [data-verse-number="67"]');
+            if(!target || document.activeElement!==target) return;
+            const bounds=target.getBoundingClientRect();
+            if(bounds.top<readerVisibleTop() || bounds.bottom>innerHeight) return;
+            window.removeEventListener('scrollend',complete);resolve();
+          }
+          window.addEventListener('scrollend',complete);
+        });
+      });
       await page.evaluate(()=>navigateSearchResult({translationId:'web',bookId:'genesis',chapter:24,verse:67}));
       await expectVerse(page,67);
+      await page.evaluate(()=>searchScrollComplete);
       const position=await page.evaluate(()=>scrollY);
       await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});
       expect(await page.evaluate(()=>scrollY)).toBe(position);

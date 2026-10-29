@@ -1,4 +1,4 @@
-const {selectReaderOption}=require('./reader-navigation-test-helper');
+const {selectReaderOption,toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
@@ -81,7 +81,7 @@ for(const query of ['?cloud-tts=0']){
 test('cloud mode requests one exact verse and preserves continuous callbacks, highlighting and accessible Stop', async ({page}) => {
   await install(page); const requests = await mockEndpoint(page); await open(page);
   await page.locator('#readAloudPlay').click(); await countSources(page, 1);
-  expect(requests[0]).toEqual({text:await page.evaluate(() => BibleData.getVerse(currentTranslation, currentBook, currentChapter, 1).text), voice:'male', rate:1});
+  expect(requests[0]).toEqual({text:await page.evaluate(() => BibleData.getChapter(currentTranslation,currentBook,currentChapter).bookName+' chapter '+currentChapter+'. '+BibleData.getVerse(currentTranslation, currentBook, currentChapter, 1).text), voice:'male', rate:1});
   await expect(page.locator('#readAloudPlay')).toHaveAttribute('aria-label', 'Stop reading aloud');
   await expect(page.locator('#readerContent .reader-verse').first()).toHaveClass(/spoken/);
   expect(await page.evaluate(() => window.__audio.local.length)).toBe(0);
@@ -213,15 +213,15 @@ test('fallback during pause keeps the sequence paused until a voice Resume comma
 });
 
 for(const rate of ['2.25', '2.5']){
-  test(`Reader ${rate} remains available through local fallback with its exact speed`, async ({page}) => {
-    await install(page); const requests = await mockEndpoint(page, 422, 'application/json'); await open(page); await more(page);
-    await page.locator('#readAloudSpeed').selectOption(rate);
+  test(`Reader legacy ${rate} is capped at 200% without unnecessary local fallback`, async ({page}) => {
+    await install(page); const requests = await mockEndpoint(page); await open(page); await more(page);
+    await page.evaluate(rate=>BibleSpeech.setSpeed(Number(rate)),rate);
+    await expect(page.locator('#readAloudSpeed option[value="'+rate+'"]')).toHaveCount(0);
     await page.locator('#readAloudPlay').click();
-    await expect.poll(() => page.evaluate(() => window.__audio.local.length)).toBe(1);
-    expect(requests).toEqual([]);
-    await expect(page.locator('#readAloudStatus')).toContainText('unavailable at this speed');
-    expect(await page.evaluate(() => window.__audio.local[0].rate)).toBe(Number(rate));
-    expect(await page.locator('#readAloudSpeed').inputValue()).toBe(rate);
+    await countSources(page,1);
+    expect(requests[0].rate).toBe(2);
+    expect(await page.evaluate(() => window.__audio.local.length)).toBe(0);
+    expect(await page.locator('#readAloudSpeed').inputValue()).toBe('2');
   });
 }
 
@@ -248,7 +248,7 @@ test('chapter and book continuation share Reader navigation and manual navigatio
   await page.locator('#readAloudPlay').click(); await countSources(page, 1);
   await end(page); await countSources(page, 2);
   await expect(page.locator('#readerContent h2')).toHaveText('Mark 1');
-  expect(requests[1].text).toBe(await page.evaluate(() => BibleData.getVerse('web', 'mark', 1, 1).text));
+  expect(requests[1].text).toBe('Mark chapter 1. '+await page.evaluate(() => BibleData.getVerse('web', 'mark', 1, 1).text));
   await selectReaderOption(page.locator('#chapterSelect'),'2');
   expect(await page.evaluate(() => window.__audio.sources[1].stopped)).toBe(true);
   expect(await page.evaluate(() => BibleSpeech.getState())).toBe('idle');
@@ -265,7 +265,7 @@ test('cloud Journey crosses the assigned chapters and stops at the exact daily b
   await page.locator('#readAloudPlay').click();
   await selectReaderOption(page.locator('#verseSelect'),'42');
   await page.locator('#readAloudPlay').click(); await countSources(page, 3);
-  expect(requests[2].text).toBe(await page.evaluate(() => BibleData.getVerse('web', 'matthew', 10, 42).text));
+  expect(requests[2].text).toBe('Matthew chapter 10. '+await page.evaluate(() => BibleData.getVerse('web', 'matthew', 10, 42).text));
   await end(page);
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
   await expect(page.locator('#journeyStatus')).toHaveText('Daily reading complete. Returning to Plan.');
@@ -277,7 +277,7 @@ for(const width of [320, 375, 480]){
   test(`cloud fullscreen, Scripture, Word Study and keyboard controls fit ${width}px`, async ({page}) => {
     await page.setViewportSize({width, height:800}); await install(page); await mockEndpoint(page); await open(page);
     for(const fullscreen of [false, true]){
-      if(fullscreen) await page.locator('#fullscreenBtn').click();
+      if(fullscreen) await toggleReaderFullscreen(page);
       const before = await page.locator('#readerContent .reader-verse').allTextContents();
       const play = page.locator('#readAloudPlay'); await play.focus(); await play.press('Enter');
       await countSources(page, fullscreen ? 2 : 1);
@@ -287,6 +287,11 @@ for(const width of [320, 375, 480]){
       expect(await page.locator('#readerContent .reader-verse').allTextContents()).toEqual(before);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await play.press('Enter');
+      expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');
+      await page.locator('#readerMoreTrigger').click();
+      await page.locator('.reader-compact-stop').click();
+      expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+      await page.locator('#readerMoreTrigger').click();
       const token = page.locator('#readerContent [data-word-study-term]').first(); await token.focus(); await token.press('Enter');
       await expect(page.locator('#wordStudyPanel')).toBeVisible(); await page.keyboard.press('Escape');
       await expect(token).toBeFocused();
@@ -391,7 +396,7 @@ for(const plan of [false,true])test('earlier Repeat during final verse preserves
   if(plan)await page.evaluate(()=>{activePlanReadingSession={planPart:1,day:1,readings:[{bookId:'john',startChapter:1,endChapter:1}],start:{bookId:'john',chapter:1,verse:1},end:{bookId:'john',chapter:1,verse:51}}});
   await page.locator('#readAloudPlay').click();await countSources(page,1);await page.evaluate(()=>BibleSpeech.repeatVerse(1));await countSources(page,2);await end(page);
   if(plan){await expect(page.locator('#view-plan')).toHaveClass(/active/);expect(requests).toHaveLength(2);expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle')}
-  else{await countSources(page,3);await expect(page.locator('#readerContent h2')).toHaveText('John 2');expect(requests[2].text).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',2,1).text))}
+  else{await countSources(page,3);await expect(page.locator('#readerContent h2')).toHaveText('John 2');expect(requests[2].text).toBe('John chapter 2. '+await page.evaluate(()=>BibleData.getVerse('web','john',2,1).text))}
 });
 
 test('explicit Play authorizes audio before delayed Bible readiness, and Stop cancels replay',async({page})=>{
