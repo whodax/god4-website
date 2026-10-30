@@ -150,7 +150,7 @@ test('real footer destinations and explicit unavailable labels replace navigatio
 });
 
 test('touch dismissal and backdrop scrolling preserve the Reader position and Plan progress',async({page})=>{
-  await open(page);await page.evaluate(()=>initializeBibleExperience());
+  await open(page);await page.evaluate(async()=>{await initializeBibleExperience();await ReaderTranslationLoader.ensure();});
   await page.evaluate(()=>{UserData.journey.save({version:1,plans:[[1,2],[],[],[],[]],completedDates:[]});document.getElementById('readerContent').scrollIntoView({block:'start',behavior:'instant'});});
   await page.evaluate(async()=>{await document.fonts.ready;await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});
   const progress=await page.evaluate(()=>UserData.journey.load()),y=await page.evaluate(()=>scrollY);

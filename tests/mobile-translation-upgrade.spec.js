@@ -72,7 +72,7 @@ test('shell 54 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const shell54Sources={"/":"be1e57f86be9480769d9ed25e5796a49971118fc1ae04351dc07516b05dabfd7","/css/components.css":"f76adf8da678a6cdf5322a77c110eb1cf7d774daae6270443170c4ec5485054d","/js/app.js":"8687a4524932066ea0a1dd212767767b343b861fda17b761cb391bb7d7b197d1"};
+      const shell54Sources={"/":"54de54cad9ed108d156ef8f5e720bc9196aaf47352c7331730d664f70b8f5bc5","/css/components.css":"4ab51c382df95e94ed1133855d7e0142aebedb160f64d832f316ada20305c16e","/js/app.js":"4d91c894c440ab330ab0c870bf6f223c383147791b94a653be6cea3a0cf9cfb3"};
       if(shell54Sources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(shell54Sources[asset]);
       else expect(actual,asset).toBe(expected);
     }

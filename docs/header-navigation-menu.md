@@ -48,7 +48,8 @@ HTML remains usable with new JavaScript because absence of the new markup
 leaves its original links untouched. No forced activation or extra runtime is
 used to bypass the installed user's update choice.
 
-The link and Menu occupy the existing brand row. The grouped dialog overlays
+The link and Menu share one slot: the desktop brand row or the mobile second
+row. The grouped dialog overlays
 Scripture without reflow, uses existing cream/navy/gold and Blue Dark tokens,
 and scrolls within the viewport. Menu controls have 44 by 44 CSS pixel minimum
 targets. Tab wrapping reveals the focused control; Escape, Close and backdrop
@@ -183,7 +184,7 @@ Tests:
 * `tests/ruth-compare-compatibility.spec.js`
 * `tests/word-study-loader.spec.js`
 
-## Centered mobile-header and voice navigation revision
+## Centered mobile-header and voice navigation revision at b33d46d
 
 At 620px and narrower, the unchanged cross/heart artwork and GOD4.us name form
 one centered first-row brand group. The second row is Theme, Saved, Account,
@@ -207,7 +208,7 @@ this document, and the related tests in `tests/header-navigation-menu.spec.js`,
 `tests/mobile-translation-upgrade.spec.js`, and `tests/god4.spec.js`.
 
 
-### Verification of the centered-header revision
+### Verification of the centered-header revision at b33d46d
 
 All runs used one Chromium worker and zero retries, sequentially:
 
@@ -241,3 +242,120 @@ of commit headroom. Shell 54 still has the same 49 asset paths.
 Physical Android/TalkBack and VoiceOver acceptance of this revision remains
 outstanding. This revision is committed locally only; no push or deployment
 is authorized.
+
+
+## Android destination and independent wordmark-centering correction
+
+Baseline: `b33d46d6fb94a5f6bf86fbb77aebbc584b94e77e`. The menu still
+contains exactly 16 destinations in groups of 5/3/6/2.
+
+The prior grid centered the artwork and wordmark together, leaving the text
+34px right of the viewport center. The wordmark now defines the centered grid
+item. The original 60px cross-heart button is absolutely positioned 8px to its
+left on the same line; its artwork, colors and typography are unchanged. The
+header remains 143px tall with exactly two rows. Theme, Saved, Account and Menu
+remain on the second row, in that order, with 44px minimum targets. Account,
+Menu and Browse Resources use the existing primary-button palette, including
+the existing Blue Dark surfaces and hover/focus states. Desktop brand placement
+is unchanged; the explicitly requested blue button treatment applies there too.
+
+The baseline 320px probe measured the toolbar at 422.94px below a 143px site
+header. The menu previously centered an offscreen tab only when the entire
+Reader view was offscreen. Initial Reader availability also precedes completion
+of the optional compact-control runtime, so positioning before its reparenting
+can use obsolete toolbar geometry. Reader and Word Study now await the existing
+deduplicated runtime request (with its existing bounded failure/native fallback),
+then use existing Reader handlers. For an offscreen Reader, chapter-start or
+selected-verse positioning uses the Reader's own scroll helpers. Returning to an
+already visible passage preserves its reading cursor. No passage is reloaded or
+changed. Layout-frame handoffs are guarded by the menu navigation revision so
+superseded actions cannot later steal focus or open a picker.
+
+At 320px, the corrected site navigation ends at 143px, the existing Reader tab
+row ends at 196px, and the Reader toolbar starts at 196px. The chapter heading
+starts at approximately 313.5px, 16px below the full sticky stack (297px).
+No extra preceding Companion heading or blank space is brought into view.
+
+Search previously used `innerHeight` and had no keyboard viewport listener.
+The baseline field remained at 395.94–447.94px after the visible height shrank
+to 320px. The menu now reveals Search within `visualViewport` bounds and the
+sticky site header. Focus-scoped resize/viewport-pan listeners coalesce work
+into one animation frame, scroll only when obscured, and are removed on blur.
+Targets taller than the available area align at the top instead of alternating
+between incompatible top/bottom bounds. There is no timer, smooth animation or
+persistent resize loop. Query contents
+are retained. Automated reduced-visual-viewport coverage is representative;
+actual Android IME panning and TalkBack remain device acceptance items.
+
+Word Study's old `.verse-selected` selector did not match Reader's actual
+`.verse-focused` state, so it could focus the chapter's first word instead of a
+word in the selected verse. The selector now matches existing Reader state.
+The existing visible Reader status provides a concise instruction, also attached
+as an accessible description to the focused word. That word has an explicit
+focus outline even for programmatic touch navigation. No word is automatically
+opened, and Scripture selection and original-language alignment stay unchanged.
+
+Read Aloud and Voice Commands reveal Options, wait one layout frame, then focus
+the actual Play/microphone control. They do not start audio or recognition.
+Select Reading Voice and Reading Speed open the original respective pickers.
+The physical Android focus failure was not reproduced in desktop Chromium;
+the cold-runtime and synchronous focus handoffs are now explicitly guarded and
+tested, including recovery from a concealed toolbar and failed optional loading.
+
+Shell 54, vendor cache 24, all 49 asset paths, update acceptance, Bible caches
+and local data are unchanged. Only the three exact current-shell fingerprints
+for HTML/components CSS/app JavaScript change. The Menu trigger intentionally
+does not carry `btn-primary` in HTML: old Shell 53 CSS defines that class with
+an explicit display value, which overrides the native hidden attribute and
+would expose an inert Menu before enhancement. Its blue appearance is applied
+only by the matching new stylesheet; historical fallback tests protect this.
+
+Only the existing header module's indentation was compacted to retain startup
+headroom. No other startup module or feature was deferred or removed.
+
+
+The backdrop-dismissal fixture now explicitly awaits
+`ReaderTranslationLoader.ensure()` before recording its starting cursor, in
+addition to its existing font/layout readiness. Previously it could capture an
+intermediate startup layout; one run moved by 2px. The exact equality assertion
+is preserved, and the corrected fixture passed ten consecutive repetitions
+with one worker and zero retries. No scroll assertion or performance limit was
+relaxed.
+
+
+### Final Android-header correction validation
+
+All browser batches ran sequentially, with one worker and zero retries:
+
+| Gate | Unique passes |
+| --- | ---: |
+| Header/menu and new Android destination cases | 97 |
+| Compact Reader, recovery, microphone, Reader/Plan scrolling | 105 |
+| Native/cloud Android speech | 32 |
+| Historical contracts and installed Shell 53-to-54 upgrades | 20 |
+| PWA, offline Bible management and Saved Verses | 42 |
+| Homepage/header/Reader/search smoke and browser performance | 8 |
+| **Total** | **304** |
+
+The 20 new destination cases were also run in the Reader batch; they are counted
+once above. The backdrop-dismissal case additionally passed 10/10 repetitions.
+Final gates have zero failures, skips or retries. Earlier development failures
+were investigated, including the test-startup readiness issue; no assertions were
+loosened. There were no browser crashes. Local identity/count evidence is in
+`playwright-report/header-android-summary.json`; screenshots are in
+`playwright-report/header-android-release-artifacts`.
+
+Browser performance measured **22 startup scripts, 290,517 canonical decoded
+bytes**, leaving **397 bytes** below the unchanged 290,914-byte limit. No extra
+startup script was introduced. Local Word Study first-use network readiness was
+17.4ms. The small remaining startup margin is a maintenance constraint.
+
+Asset validation, JavaScript syntax, all 66 canonical Isaiah hashes/sizes and
+`git diff --check` passed. The service worker, manifests, security policy, Bible
+and Reader/speech/storage source files remain unchanged. Recorded between-suite
+physical availability was at least 2,456MiB with at least 18.27GiB commit
+headroom; no memory guard was triggered.
+
+Physical Android keyboard/viewport, TalkBack and touch acceptance of this new
+revision remain outstanding. This is a local commit only; no push, merge or
+production deployment is authorized.
