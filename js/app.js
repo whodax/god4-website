@@ -575,3 +575,118 @@ renderLeaf();
 initializeGoogleFonts();
 if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeApp, { once: true });
 else initializeApp();
+/* Header destinations delegate to existing controls, not a second navigation system. */
+(function(){
+var groups=[
+  ['Read & Study', [['reader','Bible Reader'],['compare','Compare Translations'],['plan','Reading Plan'],['search','Search Scripture'],['study','Word Study']]],
+  ['My Bible', [['saved','Saved Verses'],['offline','Offline Bibles'],['translation','Choose Translation']]],
+  ['Preferences & Account', [['aloud','Read Aloud'],['commands','Voice Commands'],['voice','Voice & Reading Speed'],['theme','Light / Dark Theme'],['account','Account']]],
+  ['Explore', [['featured','Featured Verse'],['resources','Bible Resources']]]
+];
+var trigger,dialog,status,busy=false,revision=0;
+function byId(id){return document.getElementById(id);}
+function focus(element){if(element) element.focus({preventScroll:true});}
+function reveal(element){
+  if(!element) return;
+  var bounds=element.getBoundingClientRect();
+  var top=typeof readerVisibleTop==='function'?readerVisibleTop():document.querySelector('body>nav').getBoundingClientRect().bottom;
+  if(bounds.top<top || bounds.bottom>innerHeight) element.scrollIntoView({block:'center',behavior:'instant'});
+  focus(element);
+}
+function close(){revision++;busy=false;dialog.removeAttribute('aria-busy');if(dialog.open) dialog.close();trigger.setAttribute('aria-expanded','false');focus(trigger);}
+function open(){
+  if(trayOpen) toggleTray();
+  if(!dialog) build();
+  if(dialog.open) return;
+  revision++;status.textContent='';
+  dialog.querySelector('[data-destination="theme"]').textContent=document.documentElement.dataset.theme==='dark'?'Switch to Light Mode':'Switch to Dark Mode';
+  dialog.showModal();trigger.setAttribute('aria-expanded','true');
+  dialog.scrollTop=0;focus(byId('headerMenuClose'));
+}
+function build(){
+  dialog=document.createElement('dialog');dialog.id='headerMenu';dialog.className='header-menu';
+  dialog.setAttribute('aria-labelledby','headerMenuTitle');
+  dialog.innerHTML='<div class="header-menu-heading"><h2 id="headerMenuTitle">Menu</h2><button id="headerMenuClose" type="button" aria-label="Close navigation menu">Close</button></div><div class="header-menu-groups"></div><p id="headerMenuStatus" role="status" aria-live="polite"></p>';
+  groups.forEach(function(group,index){
+    var section=document.createElement('section'),heading=document.createElement('h3');
+    heading.id='headerMenuGroup'+index;heading.textContent=group[0];section.setAttribute('aria-labelledby',heading.id);section.append(heading);
+    group[1].forEach(function(item){var button=document.createElement('button');button.type='button';button.dataset.destination=item[0];button.textContent=item[1];section.append(button);});
+    dialog.querySelector('.header-menu-groups').append(section);
+  });
+  document.body.append(dialog);status=byId('headerMenuStatus');
+  byId('headerMenuClose').addEventListener('click',close);
+  dialog.addEventListener('cancel',function(event){event.preventDefault();close();});
+  dialog.addEventListener('keydown',function(event){
+    if(event.key!=='Tab') return;
+    var buttons=Array.from(dialog.querySelectorAll('button')),first=buttons[0],last=buttons[buttons.length-1];
+    if(event.shiftKey && document.activeElement===first || !event.shiftKey && document.activeElement===last){event.preventDefault();(event.shiftKey?last:first).focus();}
+  });
+  dialog.addEventListener('close',function(){trigger.setAttribute('aria-expanded',String(dialog.open));});
+  var backdrop=false;
+  function outside(event){var r=dialog.getBoundingClientRect();return event.clientX<r.left || event.clientX>r.right || event.clientY<r.top || event.clientY>r.bottom;}
+  document.addEventListener('wheel',function(event){if(dialog.open && outside(event)) event.preventDefault();},{passive:false,capture:true});
+  document.addEventListener('touchmove',function(event){if(dialog.open && event.touches[0] && outside(event.touches[0])) event.preventDefault();},{passive:false,capture:true});
+  dialog.addEventListener('pointerdown',function(event){backdrop=event.target===dialog && outside(event);});
+  dialog.addEventListener('click',function(event){
+    if(backdrop && event.target===dialog && outside(event)){backdrop=false;close();return;}
+    backdrop=false;
+    var button=event.target.closest('[data-destination]');
+    if(button && busy!==revision) activate(button.dataset.destination);
+  });
+}
+async function activate(action){
+  var request=revision;busy=request;dialog.setAttribute('aria-busy','true');
+  try{
+    var readerActions=['reader','compare','plan','study','translation','aloud','commands','voice'];
+    if(readerActions.includes(action) && !await initializeBibleExperience()) throw new Error('Bible unavailable');
+    if(['aloud','commands','voice'].includes(action) || action==='translation' && matchMedia('(max-width:620px)').matches){
+      try{await ReaderTranslationLoader.ensure();}catch(error){/* Existing native controls remain usable. */}
+    }
+    // Escape/Close may cancel a slow load. Never move focus or navigate afterwards.
+    if(!dialog.open || request!==revision) return;
+    close();
+    if(readerActions.includes(action)){
+      var view=action==='compare' || action==='plan'?action:'reader';
+      var tab=document.querySelector('.bs-nav [aria-controls="view-'+view+'"]');
+      if(!byId('view-'+view).classList.contains('active')){
+        if(view==='reader'){
+          switchView(view,tab,false);
+          if(readerTabPosition && readerTabPosition.reference===readerTabReference()) window.scrollTo({top:readerTabPosition.top,behavior:'instant'});
+        }else tab.click();
+      }
+      var recovery=byId('view-reader').querySelector('.reader-show-controls:not([hidden])');
+      if(view==='reader' && recovery) recovery.click();
+      if(action==='reader'){var r=byId('view-reader').getBoundingClientRect();if(r.top>=innerHeight || r.bottom<=0) tab.scrollIntoView({block:'center',behavior:'instant'});focus(tab);}
+      if(action==='compare') reveal(tab);
+      if(action==='plan') reveal(byId('planHeading'));
+      if(action==='study'){
+        var word=byId('readerContent').querySelector('.verse-selected .word-study-token,.verse-spoken .word-study-token') || byId('readerContent').querySelector('.word-study-token');
+        if(word) reveal(word);
+        else {reveal(tab);byId('readerSaveStatus').textContent='Choose a word in the current passage for Word Study.';}
+      }
+      if(action==='translation'){
+        if(matchMedia('(max-width:620px)').matches && byId('readerTranslationTrigger')){var picker=byId('readerTranslationTrigger');reveal(picker);picker.click();}
+        else reveal(byId('readerTranslation'));
+      }
+      if(['aloud','commands','voice'].includes(action)){
+        setReaderOptionsOpen(true);
+        var target=action==='aloud'?byId('readAloudPlay'):action==='commands'?byId('readerVoiceCommands'):document.querySelector('[data-reader-select="readAloudVoice"]');
+        reveal(target && target.getClientRects().length?target:byId('readAloudVoice'));
+      }
+      return;
+    }
+    if(action==='search') reveal(byId('searchInput'));
+    if(action==='saved') document.querySelector('.saved-pill').click();
+    if(action==='offline') byId('offlineBiblesTrigger').click();
+    if(action==='account') byId('accountTrigger').click();
+    if(action==='theme'){document.querySelector('[data-theme-toggle]').click();focus(trigger);}
+    if(action==='featured' || action==='resources'){
+      var section=byId(action==='featured'?'leafCard':'resources');section.setAttribute('tabindex','-1');reveal(section);
+    }
+  }catch(error){
+    if(dialog.open && request===revision) status.textContent='This feature could not load. Please try again; existing controls remain available.';
+  }finally{if(busy===request){busy=false;dialog.removeAttribute('aria-busy');}}
+}
+function initialize(){trigger=byId('headerMenuTrigger');if(trigger) trigger.addEventListener('click',open);}
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initialize,{once:true});else initialize();
+})();

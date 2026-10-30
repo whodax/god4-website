@@ -47,12 +47,7 @@
       </svg>
     </button>
     GOD4.us
-  </div>
-  <div class="navlinks">
-    <a href="#">Open Bibles</a>
-    <a href="#">Ethiopian Bible</a>
-    <a href="#verses">Sacred Verses</a>
-    <a href="#companion">Study</a>
+    <button id="headerMenuTrigger" type="button" aria-haspopup="dialog" aria-controls="headerMenu" aria-expanded="false">Menu</button>
   </div>
   <div class="header-actions">
     <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch to Dark Mode" aria-pressed="false">
@@ -322,7 +317,7 @@
   </div>
 </section>
 
-<section class="ethiopian">
+<section class="ethiopian" id="ethiopian">
   <div class="eth-inner">
     <div>
       <div class="eyebrow">One of the oldest canons</div>
@@ -334,7 +329,7 @@
         <div class="eth-stat"><b>35</b><span>New Testament</span></div>
       </div>
       <div class="eth-action">
-        <a class="btn-primary eth-cta" href="#">Open Digital Edition →</a>
+        <span class="eth-cta">Digital edition not yet available</span>
       </div>
     </div>
     <div class="eth-visual">
@@ -354,8 +349,8 @@
     </div>
     <div class="foot-col">
       <h4>Explore</h4>
-      <a href="#">Open Bibles</a>
-      <a href="#">Ethiopian Bible</a>
+      <a href="#companion">Open Bibles</a>
+      <a href="#ethiopian">Ethiopian Bible information</a>
       <a href="#verses">Sacred Verses</a>
       <a href="#companion">Study Companion</a>
     </div>
@@ -367,9 +362,9 @@
     </div>
     <div class="foot-col">
       <h4>Connect</h4>
-      <a href="#">Verse of the Day (email)</a>
-      <a href="#">RSS</a>
-      <a href="#">Contact</a>
+      <span class="nav-unavailable">Verse of the Day (email) — unavailable</span>
+      <span class="nav-unavailable">RSS — unavailable</span>
+      <span class="nav-unavailable">Contact — unavailable</span>
     </div>
   </div>
   <div class="foot-bottom">

@@ -175,3 +175,23 @@
   .saved-verse-details{display:flex;justify-content:space-between;align-items:center;margin-top:6px;}
   .saved-verse-reference{font-family:'Inter','Inter Fallback',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);}
   .saved-verse-remove{background:none;border:none;color:var(--oxblood);font-size:12px;cursor:pointer;font-family:'Inter','Inter Fallback',sans-serif;}
+/* Header navigation shares the existing theme tokens; the overlay never reflows Scripture. */
+#headerMenuTrigger,.header-menu button{min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:3px;background:var(--vellum-card);color:var(--ink);font:14px/1.4 'Inter','Inter Fallback',sans-serif;cursor:pointer;}
+#headerMenuTrigger{padding:8px 12px;margin-left:8px;letter-spacing:0;}
+#headerMenuTrigger:hover,.header-menu button:hover{border-color:var(--gold);background:var(--vellum);}
+#headerMenuTrigger:focus-visible,.header-menu button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+.header-menu{width:min(620px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:18px;border:1px solid var(--line);border-radius:3px;background:var(--vellum-card);color:var(--ink);box-shadow:var(--shadow);overflow:auto;overscroll-behavior:contain;}
+.header-menu::backdrop{background:rgba(27,42,68,.55);}
+.header-menu-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.header-menu h2{margin:0;font-size:28px;}
+.header-menu-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.header-menu h3{margin:16px 0 8px;font-size:22px;}
+.header-menu section button{display:block;width:100%;padding:10px 12px;text-align:left;margin:6px 0;overflow-wrap:anywhere;}
+.header-menu p{margin:8px 0 0;}
+.foot-col .nav-unavailable{display:block;font-size:14px;color:var(--ink-soft);margin-bottom:9px;}
+@media(max-width:620px){
+  .header-menu-groups{grid-template-columns:minmax(0,1fr);gap:0;}
+  body>nav .brand{margin-right:0;gap:6px;}
+  body>nav .header-actions{margin-left:0;}
+  body>nav .saved-pill,body>nav .account-trigger{min-height:44px;min-width:44px;}
+}

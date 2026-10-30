@@ -52,9 +52,12 @@ test('homepage and primary navigation load without browser errors', async ({ pag
 
   await page.goto('/');
   await expect(page).toHaveTitle(/GOD4\.US/);
-  await expect(page.locator('nav')).toContainText('Open Bibles');
-  await expect(page.locator('nav')).toContainText('Sacred Verses');
-  await expect(page.locator('nav')).toContainText('Study');
+  await expect(page.locator('#headerMenuTrigger')).toHaveAccessibleName('Menu');
+  await page.locator('#headerMenuTrigger').click();
+  await expect(page.locator('#headerMenu [data-destination="reader"]')).toHaveText('Bible Reader');
+  await expect(page.locator('#headerMenu [data-destination="search"]')).toHaveText('Search Scripture');
+  await expect(page.locator('#headerMenu [data-destination="study"]')).toHaveText('Word Study');
+  await page.keyboard.press('Escape');
   await expect(page.locator('#readerContent')).toContainText('John 1');
   expect([...errors, ...failedLocalRequests], [...errors, ...failedLocalRequests].join('\n')).toEqual([]);
 });
@@ -110,15 +113,15 @@ test('header brand keeps clear responsive spacing from navigation and actions', 
     await page.goto('/');
     const spacing = await page.evaluate(() => {
       const brand = document.querySelector('.brand').getBoundingClientRect();
-      const firstLink = document.querySelector('.navlinks a').getBoundingClientRect();
+      const actions = document.querySelector('.header-actions').getBoundingClientRect();
       const nav = document.querySelector('nav');
       return {
-        gap: firstLink.left - brand.right,
-        linksDisplay: getComputedStyle(document.querySelector('.navlinks')).display,
+        gap: actions.left - brand.right,
+        menuVisible: document.getElementById('headerMenuTrigger').getClientRects().length > 0,
         fits: nav.scrollWidth <= nav.clientWidth
       };
     });
-    expect(spacing.linksDisplay).toBe('flex');
+    expect(spacing.menuVisible).toBe(true);
     expect(spacing.gap).toBeGreaterThanOrEqual(24);
     expect(spacing.fits).toBe(true);
   }
@@ -130,12 +133,12 @@ test('header brand keeps clear responsive spacing from navigation and actions', 
     const brand = document.querySelector('.brand').getBoundingClientRect();
     const actions = document.querySelector('.header-actions').getBoundingClientRect();
     return {
-      linksDisplay: getComputedStyle(document.querySelector('.navlinks')).display,
+      menuVisible: document.getElementById('headerMenuTrigger').getClientRects().length > 0,
       groupsDoNotOverlap: brand.bottom <= actions.top || brand.right <= actions.left,
       fits: nav.scrollWidth <= nav.clientWidth
     };
   });
-  expect(mobile.linksDisplay).toBe('none');
+  expect(mobile.menuVisible).toBe(true);
   expect(mobile.groupsDoNotOverlap).toBe(true);
   expect(mobile.fits).toBe(true);
 });
