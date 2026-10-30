@@ -189,14 +189,23 @@
 .header-menu section button{display:block;width:100%;padding:10px 12px;text-align:left;margin:6px 0;overflow-wrap:anywhere;}
 .header-menu p{margin:8px 0 0;}
 .foot-col .nav-unavailable{display:block;font-size:14px;color:var(--ink-soft);margin-bottom:9px;}
+#headerBrandGroup{margin:0;gap:8px;}
+#headerMenuSlot{display:flex;align-items:center;}
 @media(max-width:620px){
   .header-menu-groups{grid-template-columns:minmax(0,1fr);gap:0;}
-  body>nav .brand{margin-right:0;gap:6px;}
-  body>nav .header-actions{margin-left:0;}
-  body>nav .saved-pill,body>nav .account-trigger{min-height:44px;min-width:44px;}
+  body>nav.site-header-v2{display:grid;grid-template-columns:44px minmax(0,1.3fr) minmax(0,1fr) max-content;column-gap:4px;row-gap:2px;}
+  body>nav.site-header-v2>.brand,body>nav.site-header-v2 .header-actions{display:contents;}
+  #headerBrandGroup{grid-column:1/-1;grid-row:1;justify-self:center;}
+  #headerMenuSlot{grid-column:4;grid-row:2;min-width:44px;}
+  body>nav.site-header-v2 .theme-toggle{grid-column:1;grid-row:2;}
+  body>nav.site-header-v2 .saved-pill{grid-column:2;grid-row:2;gap:3px;}
+  body>nav.site-header-v2 .account-trigger{grid-column:3;grid-row:2;}
+  body>nav.site-header-v2 .saved-pill,body>nav.site-header-v2 .account-trigger{width:100%;max-width:100%;min-width:44px;min-height:44px;padding:7px 6px;white-space:nowrap;}
+  #headerMenuTrigger{margin-left:0;}
+  #headerMenuFallback{min-width:44px;min-height:44px;margin:0;padding:8px 12px;}
 }
 
 #headerMenuFallback[hidden],#headerMenuTrigger[hidden]{display:none;}
 
 /* Last: only a complete matching stylesheet can enable the enhanced menu. */
-#headerMenuTrigger{--header-menu-ready:54;}
+#headerMenuTrigger{--header-menu-ready:header-2;}

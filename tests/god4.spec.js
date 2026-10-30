@@ -130,8 +130,8 @@ test('header brand keeps clear responsive spacing from navigation and actions', 
   await page.goto('/');
   const mobile = await page.evaluate(() => {
     const nav = document.querySelector('nav');
-    const brand = document.querySelector('.brand').getBoundingClientRect();
-    const actions = document.querySelector('.header-actions').getBoundingClientRect();
+    const brand = document.getElementById('headerBrandGroup').getBoundingClientRect();
+    const actions = document.querySelector('.header-actions .theme-toggle').getBoundingClientRect();
     return {
       menuVisible: document.getElementById('headerMenuTrigger').getClientRects().length > 0,
       groupsDoNotOverlap: brand.bottom <= actions.top || brand.right <= actions.left,

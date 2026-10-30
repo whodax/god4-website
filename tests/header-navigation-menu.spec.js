@@ -21,7 +21,7 @@ for(const width of [320,390,430,1280])for(const dark of [false,true]){
     await page.locator('#headerMenuTrigger').click();
     await expect(menu(page)).toBeVisible();
     await expect(menu(page).getByRole('heading',{level:3})).toHaveText(['Read & Study','My Bible','Preferences & Account','Explore']);
-    await expect(menu(page).locator('[data-destination]')).toHaveCount(15);
+    await expect(menu(page).locator('[data-destination]')).toHaveCount(16);
     await expect(page.locator('#headerMenuClose')).toBeFocused();
     for(const button of await menu(page).getByRole('button').all()){
       await expect(button).toHaveAccessibleName(/\S/);
@@ -87,8 +87,13 @@ for(const width of [390,1280]){
     await choose(page,'aloud');await expect(page.locator('#readAloudPlay')).toBeFocused();await expect(page.locator('#readerMoreTrigger')).toHaveAttribute('aria-expanded','true');
     await expect(page.locator('#readAloudPlay')).toHaveAccessibleName(/Play/);
     await choose(page,'commands');await expect(page.locator('#readerVoiceCommands')).toBeFocused();await expect(page.locator('#readerVoiceCommands')).toHaveAttribute('aria-pressed','false');
-    await choose(page,'voice');
-    expect(await page.evaluate(()=>['readAloudVoice'].includes(document.activeElement.id)||document.activeElement.dataset.readerSelect==='readAloudVoice')).toBe(true);
+    for(const [action,id] of [['voice','readAloudVoice'],['speed','readAloudSpeed']]){
+      const selected=await page.locator('#'+id).inputValue();await choose(page,action);
+      const picker=page.locator('dialog[open]');await expect(picker).toBeVisible();
+      await expect(picker.locator('[data-option-value][aria-pressed="true"]')).toHaveAttribute('data-option-value',selected);
+      await page.keyboard.press('Escape');
+      expect(await page.evaluate(id=>document.activeElement.id===id||document.activeElement.dataset.readerSelect===id,id)).toBe(true);
+    }
     expect(await state(page)).toEqual(before);
     await page.locator('#headerMenuTrigger').click();await expect(menu(page).locator('[data-destination="theme"]')).toHaveText('Switch to Dark Mode');await menu(page).locator('[data-destination="theme"]').click();
     await expect(page.locator('html')).toHaveAttribute('data-theme','dark');await expect(page.locator('#headerMenuTrigger')).toBeFocused();
@@ -206,7 +211,7 @@ for(const width of [320,390,430,1280])for(const dark of [false,true])for(const m
       await page.unroute('**/css/components.css');
       await page.evaluate(()=>{document.querySelector('link[href="css/components.css"]').href='/css/components.css?retry=1';});
       await expect(page.locator('#headerMenuTrigger')).toBeVisible();await expect(fallback).toBeHidden();await expect(page.locator('#headerMenuTrigger')).toBeFocused();
-      await page.locator('#headerMenuTrigger').click();await expect(menu(page).locator('[data-destination]')).toHaveCount(15);
+      await page.locator('#headerMenuTrigger').click();await expect(menu(page).locator('[data-destination]')).toHaveCount(16);
       await page.keyboard.press('Escape');await expect(page.locator('#headerMenuTrigger')).toBeFocused();
     }
   });
@@ -223,7 +228,7 @@ for(const followReference of [false,true])test(`delayed app, native reference fo
   release();await expect(page.locator('#headerMenuTrigger')).toBeVisible();
   if(!followReference)await expect(page.locator('#headerMenuTrigger')).toBeFocused();
   else await expect(page).toHaveURL(/#companion$/);
-  await page.locator('#headerMenuTrigger').click();await expect(menu(page)).toHaveCount(1);await expect(menu(page).locator('[data-destination]')).toHaveCount(15);
+  await page.locator('#headerMenuTrigger').click();await expect(menu(page)).toHaveCount(1);await expect(menu(page).locator('[data-destination]')).toHaveCount(16);
   await page.keyboard.press('Escape');await expect(page.locator('#headerMenuTrigger')).toBeFocused();
 });
 
@@ -251,7 +256,71 @@ test('unsupported modal dialogs retain the native Read link',async({page})=>{
 
 test('a truncated components stylesheet cannot advertise menu readiness',async({page})=>{
   const source=fs.readFileSync('css/components.css','utf8');
-  const prefix=source.slice(0,source.lastIndexOf('#headerMenuTrigger{--header-menu-ready:54;}'));
+  const prefix=source.slice(0,source.lastIndexOf('#headerMenuTrigger{--header-menu-ready:header-2;}'));
   await page.route('**/css/components.css',route=>route.fulfill({contentType:'text/css',body:prefix}));await open(page,320);
   await expect(page.locator('#headerMenuTrigger')).toBeHidden();await page.locator('#headerMenuFallback').click();await expect(page.locator('#readerContent h2')).toHaveText('John 1');
+});
+
+for(const width of [320,390,430])for(const dark of [false,true]){
+  test(`${width}px dark=${dark}: centered brand and exactly four controls on the second row`,async({page},info)=>{
+    await open(page,width,dark);await page.evaluate(()=>document.fonts.ready);
+    await page.locator('#headerMenuTrigger').waitFor({state:'visible'});
+    const measure=()=>page.evaluate(()=>{
+      const rect=e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom};};
+      const brand=document.getElementById('headerBrandGroup');
+      const controls=[document.querySelector('body>nav .theme-toggle'),document.querySelector('.saved-pill'),document.getElementById('accountTrigger'),document.getElementById('headerMenuTrigger')];
+      return {brand:rect(brand),nav:rect(document.querySelector('body>nav')),controls:controls.map(rect),overflow:document.documentElement.scrollWidth>innerWidth,clipped:controls.some(e=>e.scrollWidth>e.clientWidth)};
+    });
+    for(const count of ['0','999']){
+      await page.locator('#savedCount').evaluate((e,count)=>e.textContent=count,count);
+      const m=await measure();expect(Math.abs(m.brand.x+m.brand.width/2-width/2)).toBeLessThanOrEqual(.5);
+      expect(m.overflow).toBe(false);expect(m.clipped).toBe(false);
+      expect(Math.max(...m.controls.map(r=>r.y))-Math.min(...m.controls.map(r=>r.y))).toBeLessThanOrEqual(.5);
+      expect(m.brand.bottom).toBeLessThanOrEqual(m.controls[0].y);
+      for(let i=0;i<4;i++){const r=m.controls[i];expect(r.width).toBeGreaterThanOrEqual(44);expect(r.height).toBeGreaterThanOrEqual(44);expect(r.x).toBeGreaterThanOrEqual(0);expect(r.right).toBeLessThanOrEqual(width);if(i)expect(r.x).toBeGreaterThanOrEqual(m.controls[i-1].right);}
+      expect(m.nav.bottom-m.controls[0].bottom).toBeLessThanOrEqual(24);
+      console.log('Mobile header geometry:',JSON.stringify({width,dark,count,...m}));
+    }
+    await page.locator('#brandMark').focus();
+    for(const selector of ['body>nav .theme-toggle','.saved-pill','#accountTrigger','#headerMenuTrigger']){await page.keyboard.press('Tab');await expect(page.locator(selector)).toBeFocused();}
+    await page.screenshot({path:info.outputPath(`header-${width}-${dark}.png`)});
+    await page.locator('#headerMenuTrigger').click();await expect(menu(page).locator('[data-destination]')).toHaveCount(16);await page.keyboard.press('Escape');await expect(page.locator('#headerMenuTrigger')).toBeFocused();
+  });
+}
+
+for(const width of [320,390,430,1280])test(`${width}px: separate voice and speed pickers preserve selection and reuse existing settings`,async({page})=>{
+  await open(page,width);await page.evaluate(()=>initializeBibleExperience());
+  await choose(page,'voice');let picker=page.locator((width<620?'#readerOptionsPicker':'#themedSelectPicker')+'[open]');
+  await expect(picker.getByRole('heading')).toContainText(/voice/i);
+  await expect(picker.locator('[data-option-value="male"]')).toBeVisible();await expect(picker.locator('[data-option-value="female"]')).toBeVisible();
+  await picker.locator('[data-option-value="female"]').click();await expect(page.locator('#readAloudVoice')).toHaveValue('female');
+  await choose(page,'speed');picker=page.locator((width<620?'#readerOptionsPicker':'#themedSelectPicker')+'[open]');await expect(picker.getByRole('heading')).toContainText(/speed/i);
+  await picker.locator('[data-option-value="1.25"]').click();await expect(page.locator('#readAloudSpeed')).toHaveValue('1.25');await expect(page.locator('#readAloudVoice')).toHaveValue('female');
+  expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');await expect(page.locator('#readerVoiceCommands')).toHaveAttribute('aria-pressed','false');
+  await choose(page,'voice');await expect(page.locator('dialog[open] [data-option-value="female"]')).toHaveAttribute('aria-pressed','true');await page.keyboard.press('Escape');
+  await choose(page,'speed');await expect(page.locator('dialog[open] [data-option-value="1.25"]')).toHaveAttribute('aria-pressed','true');await page.keyboard.press('Escape');
+  await page.reload();await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>ReaderTranslationLoader.ensure());await expect(page.locator('#readAloudVoice')).toHaveValue('female');await expect(page.locator('#readAloudSpeed')).toHaveValue('1.25');
+});
+
+test('breakpoint changes move the same Menu control and preserve keyboard focus',async({page})=>{
+  await open(page,390);await page.locator('#headerMenuTrigger').focus();
+  for(const width of [1280,320,900,430]){
+    await page.setViewportSize({width,height:844});await expect.poll(()=>page.locator('#headerMenuSlot').evaluate(e=>e.parentElement.className)).toBe(width<=620?'header-actions':'brand');
+    await expect(page.locator('#headerMenuTrigger')).toBeFocused();await expect(page.locator('#headerMenuTrigger')).toHaveCount(1);
+  }
+});
+
+for(const width of [320,1280])test(`${width}px: previous Shell 54 preview HTML retains fallback with the revised app and CSS`,async({page})=>{
+  const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  await page.route(url=>url.pathname==='/',route=>route.fulfill({contentType:'text/html',body:execFileSync('git',['show','7d0384e:index.html'])}));
+  await open(page,width);await expect(page.locator('#headerMenuTrigger')).toBeHidden();
+  await page.locator('#headerMenuFallback').click();await expect(page.locator('#readerContent h2')).toHaveText('John 1');expect(errors).toEqual([]);
+});
+
+for(const width of [320,1280])test(`${width}px: cached previous Shell 54 app and CSS cannot expose unsupported new menu actions`,async({page})=>{
+  for(const [url,file,type] of [['**/js/app.js','js/app.js','application/javascript'],['**/css/components.css','css/components.css','text/css']]){
+    await page.route(url,route=>route.fulfill({contentType:type,body:execFileSync('git',['show','7d0384e:'+file])}));
+  }
+  await open(page,width);await expect(page.locator('#headerMenuTrigger')).toBeHidden();
+  await expect(page.locator('#headerMenu')).toHaveCount(0);await page.locator('#headerMenuFallback').click();await expect(page.locator('#readerContent h2')).toHaveText('John 1');
 });

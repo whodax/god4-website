@@ -4,21 +4,21 @@ Branch: `feature/header-navigation-menu`.
 Header implementation baseline: `0011bfe0e5d066601848390f53c8a6b8731595a0`.
 Installed production Shell 53 fixture: `5e98b32eddfeaeac6f90beb3a247044b2d610127`.
 
-## Exactly 15 approved destinations
+## Exactly 16 approved destinations
 
-The owner clarified that there are **15**, not 16, destinations. Close is a
-navigation-panel control, not a feature. Bible Resources is already included.
-No feature is added or duplicated to inflate this count.
+The mobile-header revision explicitly splits the previous combined voice/speed
+entry into two real destinations. The menu now contains **16** features. Close
+is not counted; Bible Resources remains a single real destination.
 
 * **Read & Study (5):** Bible Reader, Compare Translations, Reading Plan,
   Search Scripture, Word Study.
 * **My Bible (3):** Saved Verses, Offline Bibles, Choose Translation.
-* **Preferences & Account (5):** Read Aloud, Voice Commands,
-  Voice & Reading Speed, Light / Dark Theme, Account.
+* **Preferences & Account (6):** Read Aloud, Voice Commands,
+  Select Reading Voice, Reading Speed, Light / Dark Theme, Account.
 * **Explore (2):** Featured Verse, Bible Resources.
 
 The reusable, declarative configuration now lives in the inert
-`#headerMenuTemplate` in `index.html`: grouped sections, labels and stable
+`#headerMenuTemplateV2` in `index.html`: grouped sections, labels and stable
 `data-destination` action keys. The app clones it once, on first open, and
 delegates clicks to existing feature handlers. This removes unnecessary startup
 JavaScript for constructing static markup. No new asset or eager script is added.
@@ -62,8 +62,11 @@ Reader/Compare/Plan reuse their existing view handlers and loaders. Reader menu
 returns reuse its saved scroll cursor. Search preserves its input. Word Study
 focuses a studyable word in the current selected/spoken verse or passage; it
 never changes Scripture, opens an unrelated dictionary or infers alignments.
-Audio destinations reveal/focus existing controls without starting speech or
-listening. Voice/speed settings stay unchanged. Options and automatic
+Read Aloud reveals Options and focuses Play without starting narration. Voice
+Commands reveals/focuses the existing microphone without starting recognition.
+Select Reading Voice and Reading Speed reveal Options and click the existing
+mobile/custom or desktop selector to open its existing picker. Choices and
+current selections are preserved until the user chooses a different value. Options and automatic
 scroll-to-hide/Show Controls remain independent.
 
 Saved, Offline, Account and theme actions use their existing handlers. Translation
@@ -118,7 +121,7 @@ announcements on actual devices. Automated semantic/focus tests are not a claim
 of physical-device acceptance. This milestone is local only: no push, merge or
 production deployment is authorized.
 
-## Final local verification
+## Shell 54 milestone verification at 7d0384e
 
 | Focused batch | Unique passing identities |
 | --- | ---: |
@@ -179,3 +182,62 @@ Tests:
 * `tests/reader-empty-verse.spec.js`
 * `tests/ruth-compare-compatibility.spec.js`
 * `tests/word-study-loader.spec.js`
+
+## Centered mobile-header and voice navigation revision
+
+At 620px and narrower, the unchanged cross/heart artwork and GOD4.us name form
+one centered first-row brand group. The second row is Theme, Saved, Account,
+Menu, in that order. A four-column grid keeps all controls at least 44 by 44px
+with no third row at 320/390/430px, in Light and Blue Dark Mode. Existing fonts,
+colors, rounded pill styling and desktop placement are preserved. The same Menu
+node moves between its desktop brand position and the mobile action group so
+keyboard order follows the visible order; focus is retained across breakpoints.
+
+The CSS layout is scoped to the new header markup. The UI compatibility marker
+is `header-2`, paired with the versioned `headerMenuTemplateV2` identifier,
+independent of the unchanged Shell 54 version. Old preview code cannot enhance
+a template containing an unsupported new action. A mixed old app or
+stylesheet retains the real Read fallback; old production and previous Shell 54
+preview HTML remain usable without errors. The current unmerged release keeps
+all 49 precache paths and user-controlled activation. Only exact reviewed
+HTML/CSS/app fingerprints in the current Shell 54 contract are refreshed.
+
+The source changes are limited to `index.html`, `css/components.css`, `js/app.js`,
+this document, and the related tests in `tests/header-navigation-menu.spec.js`,
+`tests/mobile-translation-upgrade.spec.js`, and `tests/god4.spec.js`.
+
+
+### Verification of the centered-header revision
+
+All runs used one Chromium worker and zero retries, sequentially:
+
+| Batch | Unique passed tests |
+| --- | ---: |
+| Header layout, menu, direct voice/speed pickers and mixed-version fallback | 77 |
+| Historical source contracts and installed Shell 53 upgrade cases | 20 |
+| Compact Reader, reading controls, microphone and Reader/Plan scrolling | 105 |
+| PWA, offline management, account, Saved Verses and Android speech | 90 |
+| Homepage/header smoke and startup performance | 8 |
+| **Total** | **300** |
+
+Final runs had no failures, skips, retries or browser crashes. Results and test
+identities are recorded locally in `playwright-report/header-row-summary.json`.
+Asset validation, JavaScript syntax, all 66 Isaiah chapter hashes and
+`git diff --check` passed. Bible data, manifests, service worker, speech and
+Reader source are unchanged.
+
+At 320/390/430px in both themes, the brand group measures 160 by 60px and is
+centered exactly on the viewport midpoint. All four second-row controls are
+44px high with at least 44px width. The header measures 143px high, including
+its existing surrounding spacing; there is no third row or horizontal overflow,
+including with a three-digit Saved count. Desktop placement is preserved.
+
+Startup remains 22 scripts, totaling **289,704 canonical LF decoded bytes**,
+with **1,210 bytes** below the unchanged 290,914-byte limit. Measured local
+Word Study first-use network readiness was 16.3ms. Available physical RAM was
+at least 1,414MiB in the recorded between-suite samples, with more than 17GiB
+of commit headroom. Shell 54 still has the same 49 asset paths.
+
+Physical Android/TalkBack and VoiceOver acceptance of this revision remains
+outstanding. This revision is committed locally only; no push or deployment
+is authorized.

@@ -598,7 +598,7 @@ function open(){
   dialog.scrollTop=0;focus(byId('headerMenuClose'));
 }
 function build(){
-  document.body.append(byId('headerMenuTemplate').content.cloneNode(true));
+  document.body.append(byId('headerMenuTemplateV2').content.cloneNode(true));
   dialog=byId('headerMenu');status=byId('headerMenuStatus');
   byId('headerMenuClose').addEventListener('click',close);
   dialog.addEventListener('cancel',function(event){event.preventDefault();close();});
@@ -623,9 +623,9 @@ function build(){
 async function activate(action){
   var request=revision;busy=request;dialog.setAttribute('aria-busy','true');
   try{
-    var readerActions=['reader','compare','plan','study','translation','aloud','commands','voice'];
+    var readerActions=['reader','compare','plan','study','translation','aloud','commands','voice','speed'];
     if(readerActions.includes(action) && !await initializeBibleExperience()) throw new Error('Bible unavailable');
-    if(['aloud','commands','voice'].includes(action) || action==='translation' && matchMedia('(max-width:620px)').matches){
+    if(['aloud','commands','voice','speed'].includes(action) || action==='translation' && matchMedia('(max-width:620px)').matches){
       try{await ReaderTranslationLoader.ensure();}catch(error){/* Existing native controls remain usable. */}
     }
     // Escape/Close may cancel a slow load. Never move focus or navigate afterwards.
@@ -654,10 +654,13 @@ async function activate(action){
         if(matchMedia('(max-width:620px)').matches && byId('readerTranslationTrigger')){var picker=byId('readerTranslationTrigger');reveal(picker);picker.click();}
         else reveal(byId('readerTranslation'));
       }
-      if(['aloud','commands','voice'].includes(action)){
+      if(['aloud','commands','voice','speed'].includes(action)){
         setReaderOptionsOpen(true);
-        var target=action==='aloud'?byId('readAloudPlay'):action==='commands'?byId('readerVoiceCommands'):document.querySelector('[data-reader-select="readAloudVoice"]');
-        reveal(target && target.getClientRects().length?target:byId('readAloudVoice'));
+        var id=action==='speed'?'readAloudSpeed':'readAloudVoice';
+        var target=action==='aloud'?byId('readAloudPlay'):action==='commands'?byId('readerVoiceCommands'):document.querySelector('[data-reader-select="'+id+'"]');
+        if(!target || !target.getClientRects().length) target=byId(id);
+        reveal(target);
+        if(action==='voice' || action==='speed') target.click();
       }
       return;
     }
@@ -675,7 +678,15 @@ async function activate(action){
 }
 function initialize(){
   trigger=byId('headerMenuTrigger');
-  if(initialized || !trigger || !byId('headerMenuFallback') || !byId('headerMenuTemplate') || typeof HTMLDialogElement==='undefined' || !HTMLDialogElement.prototype.showModal || getComputedStyle(trigger).getPropertyValue('--header-menu-ready').trim()!=='54') return;
+  if(initialized || !trigger || !byId('headerMenuFallback') || !byId('headerMenuTemplateV2') || !byId('headerMenuSlot') || typeof HTMLDialogElement==='undefined' || !HTMLDialogElement.prototype.showModal || getComputedStyle(trigger).getPropertyValue('--header-menu-ready').trim()!=='header-2') return;
+  var media=matchMedia('(max-width:620px)');
+  function arrange(){
+    var slot=byId('headerMenuSlot'),target=document.querySelector(media.matches?'.header-actions':'body>nav>.brand');
+    if(slot.parentElement===target) return;
+    var active=slot.contains(document.activeElement)?document.activeElement:null;
+    target.append(slot);focus(active);
+  }
+  media.addEventListener('change',arrange);arrange();
   trigger.addEventListener('click',open);initialized=true;
   var fallback=byId('headerMenuFallback'),focused=document.activeElement===fallback;
   fallback.hidden=true;trigger.hidden=false;if(focused) focus(trigger);

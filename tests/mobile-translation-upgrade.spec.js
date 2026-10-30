@@ -72,7 +72,7 @@ test('shell 54 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const shell54Sources={"/":"ca599336ba2038a1756f2370542ba8719ae26bce3cc51e82b8ad71e9b4cb9986","/css/components.css":"c09f8b6238f0329199f6db3581b5cc64cb51511898535544140d01e53640c60e","/js/app.js":"76ccd4ea488afbeff9d1d3cc92bcdc73c009eb6a6b6737cd8a4ba9482832e59a"};
+      const shell54Sources={"/":"be1e57f86be9480769d9ed25e5796a49971118fc1ae04351dc07516b05dabfd7","/css/components.css":"f76adf8da678a6cdf5322a77c110eb1cf7d774daae6270443170c4ec5485054d","/js/app.js":"8687a4524932066ea0a1dd212767767b343b861fda17b761cb391bb7d7b197d1"};
       if(shell54Sources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(shell54Sources[asset]);
       else expect(actual,asset).toBe(expected);
     }
@@ -391,7 +391,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
     if(previous.version===53){
       await expect(page.locator('#headerMenuFallback')).toBeHidden();
       await page.locator('#headerMenuTrigger').click();
-      await expect(page.locator('#headerMenu [data-destination]')).toHaveCount(15);
+      await expect(page.locator('#headerMenu [data-destination]')).toHaveCount(16);
       await page.locator('#headerMenu [data-destination="resources"]').click();
       await expect(page.locator('#resources')).toBeFocused();
     }
@@ -426,7 +426,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
     expect(await hashes(page)).toEqual(newHashes);
     if(previous.version===53){
       await page.locator('#headerMenuTrigger').click();
-      await expect(page.locator('#headerMenu [data-destination]')).toHaveCount(15);
+      await expect(page.locator('#headerMenu [data-destination]')).toHaveCount(16);
       await page.keyboard.press('Escape');
     }
     if(previous.version>=51)await expectCompactManifest(page);

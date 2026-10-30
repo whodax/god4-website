@@ -32,8 +32,9 @@
 </head>
 <body>
 
-<nav aria-label="Main navigation">
+<nav class="site-header-v2" aria-label="Main navigation">
   <div class="brand">
+    <span id="headerBrandGroup" class="brand">
     <button class="brand-mark" id="brandMark" type="button" aria-label="Activate cross heart">
       <svg viewBox="0 0 72 72" fill="none" aria-hidden="true">
         <path class="brand-cross" d="M36 5v62M13 25h46"/>
@@ -47,8 +48,11 @@
       </svg>
     </button>
     GOD4.us
+    </span>
+    <span id="headerMenuSlot">
     <a id="headerMenuFallback" class="btn-secondary" href="#companion" aria-label="Open Bible Reader">Read</a>
     <button id="headerMenuTrigger" type="button" aria-haspopup="dialog" aria-controls="headerMenu" aria-expanded="false" hidden>Menu</button>
+    </span>
   </div>
   <div class="header-actions">
     <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch to Dark Mode" aria-pressed="false">
@@ -449,7 +453,7 @@
   <p id="offlineBiblesStatus" class="offline-bibles-status" role="status" aria-live="polite" aria-atomic="true"></p>
 </dialog>
 
-<template id="headerMenuTemplate">
+<template id="headerMenuTemplateV2">
   <dialog id="headerMenu" class="header-menu" aria-labelledby="headerMenuTitle">
     <div class="header-menu-heading"><h2 id="headerMenuTitle">Menu</h2><button id="headerMenuClose" type="button" aria-label="Close navigation menu">Close</button></div>
     <div class="header-menu-groups">
@@ -471,7 +475,8 @@
         <h3 id="headerMenuGroup2">Preferences &amp; Account</h3>
         <button type="button" data-destination="aloud">Read Aloud</button>
         <button type="button" data-destination="commands">Voice Commands</button>
-        <button type="button" data-destination="voice">Voice &amp; Reading Speed</button>
+        <button type="button" data-destination="voice">Select Reading Voice</button>
+        <button type="button" data-destination="speed">Reading Speed</button>
         <button type="button" data-destination="theme">Light / Dark Theme</button>
         <button type="button" data-destination="account">Account</button>
       </section>
