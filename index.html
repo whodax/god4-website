@@ -47,7 +47,8 @@
       </svg>
     </button>
     GOD4.us
-    <button id="headerMenuTrigger" type="button" aria-haspopup="dialog" aria-controls="headerMenu" aria-expanded="false">Menu</button>
+    <a id="headerMenuFallback" class="btn-secondary" href="#companion" aria-label="Open Bible Reader">Read</a>
+    <button id="headerMenuTrigger" type="button" aria-haspopup="dialog" aria-controls="headerMenu" aria-expanded="false" hidden>Menu</button>
   </div>
   <div class="header-actions">
     <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch to Dark Mode" aria-pressed="false">
@@ -447,6 +448,42 @@
   <div id="offlineBiblesList" class="offline-bibles-list" aria-label="Bible translations"></div>
   <p id="offlineBiblesStatus" class="offline-bibles-status" role="status" aria-live="polite" aria-atomic="true"></p>
 </dialog>
+
+<template id="headerMenuTemplate">
+  <dialog id="headerMenu" class="header-menu" aria-labelledby="headerMenuTitle">
+    <div class="header-menu-heading"><h2 id="headerMenuTitle">Menu</h2><button id="headerMenuClose" type="button" aria-label="Close navigation menu">Close</button></div>
+    <div class="header-menu-groups">
+      <section aria-labelledby="headerMenuGroup0">
+        <h3 id="headerMenuGroup0">Read &amp; Study</h3>
+        <button type="button" data-destination="reader">Bible Reader</button>
+        <button type="button" data-destination="compare">Compare Translations</button>
+        <button type="button" data-destination="plan">Reading Plan</button>
+        <button type="button" data-destination="search">Search Scripture</button>
+        <button type="button" data-destination="study">Word Study</button>
+      </section>
+      <section aria-labelledby="headerMenuGroup1">
+        <h3 id="headerMenuGroup1">My Bible</h3>
+        <button type="button" data-destination="saved">Saved Verses</button>
+        <button type="button" data-destination="offline">Offline Bibles</button>
+        <button type="button" data-destination="translation">Choose Translation</button>
+      </section>
+      <section aria-labelledby="headerMenuGroup2">
+        <h3 id="headerMenuGroup2">Preferences &amp; Account</h3>
+        <button type="button" data-destination="aloud">Read Aloud</button>
+        <button type="button" data-destination="commands">Voice Commands</button>
+        <button type="button" data-destination="voice">Voice &amp; Reading Speed</button>
+        <button type="button" data-destination="theme">Light / Dark Theme</button>
+        <button type="button" data-destination="account">Account</button>
+      </section>
+      <section aria-labelledby="headerMenuGroup3">
+        <h3 id="headerMenuGroup3">Explore</h3>
+        <button type="button" data-destination="featured">Featured Verse</button>
+        <button type="button" data-destination="resources">Bible Resources</button>
+      </section>
+    </div>
+    <p id="headerMenuStatus" role="status" aria-live="polite"></p>
+  </dialog>
+</template>
 
 <noscript><p class="noscript-message">GOD4.us requires JavaScript for the interactive reader, search, and saved verses.</p></noscript>
 <div id="pwaStatus" class="pwa-status" role="status" aria-live="polite" hidden>

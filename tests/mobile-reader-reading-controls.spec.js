@@ -32,6 +32,8 @@ async function snapshot(page){
   return page.evaluate(()=>({page:scrollY,reader:document.getElementById('view-reader').scrollTop,verse:document.querySelector('#readerContent [data-verse-number="12"]').getBoundingClientRect().top,height:document.querySelector('.reader-toolbar').getBoundingClientRect().height}));
 }
 async function scroll(page,delta){
+  // Finish prior Options/anchor scroll work before issuing an independent gesture.
+  await page.evaluate(()=>new Promise(requestAnimationFrame));
   await page.locator('#readerContent').dispatchEvent('wheel',{deltaY:delta});
   await page.evaluate(delta=>{const view=document.getElementById('view-reader');(view.classList.contains('reader-fullscreen')?view:window).scrollBy({top:delta,behavior:'instant'});},delta);
 }

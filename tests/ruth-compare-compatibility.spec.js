@@ -78,7 +78,7 @@ for(const mobile of [false,true])test.describe(mobile?'Android-sized':'desktop',
     await exact(page);
   });
 
-  test('retained Bibles and Shell 53 relaunch render the approved verse offline',async({page,context})=>{
+  test('retained Bibles and Shell 54 relaunch render the approved verse offline',async({page,context})=>{
     await reader(page);
     await page.evaluate(()=>navigator.serviceWorker.ready);
     if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();
@@ -89,7 +89,7 @@ for(const mobile of [false,true])test.describe(mobile?'Android-sized':'desktop',
     try{
       await page.reload();await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>ReaderTranslationLoader.ensure());
       await compare(page);await exact(page);
-      expect(await page.evaluate(()=>caches.keys())).toContain('god4-shell-compact-reader-53');
+      expect(await page.evaluate(()=>caches.keys())).toContain('god4-shell-compact-reader-54');
       expect(await page.evaluate(()=>currentTranslation)).toBe('dra');
     }finally{await context.setOffline(false);}
   });

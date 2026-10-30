@@ -1,5 +1,6 @@
 const {test,expect}=require('@playwright/test');
 const fs=require('fs');
+const {execFileSync}=require('child_process');
 test.use({serviceWorkers:'block',hasTouch:true});
 const menu=page=>page.locator('#headerMenu');
 async function open(page,width=390,dark=false){
@@ -168,7 +169,7 @@ for(const width of [390,1280])test(`${width}px: native translation remains acces
 
 test.describe('cached menu',()=>{
   test.use({serviceWorkers:'allow'});
-  test('fresh shell-53 installation serves menu and retained Bible/Saved state offline',async({page,context})=>{
+  test('fresh shell-54 installation serves menu and retained Bible/Saved state offline',async({page,context})=>{
     await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));
     await page.reload();await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);
     await page.evaluate(()=>initializeBibleExperience());await page.locator('#heroFav').click();
@@ -177,14 +178,80 @@ test.describe('cached menu',()=>{
     await choose(page,'reader');await expect(page.locator('#readerContent')).toContainText('John 1');
     await choose(page,'saved');await expect(page.locator('#tray')).toHaveAttribute('aria-hidden','false');await expect(page.locator('#savedCount')).toHaveText('1');
     expect(await state(page)).toEqual(before);
-    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-53')).keys())].length)).toBe(49);
+    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-54')).keys())].length)).toBe(49);
   });
 });
 
-test('implementation leaves shell 53, assets and strict startup budget intact',async()=>{
-  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-53'");
+test('implementation preserves shell 54, assets and strict startup budget intact',async()=>{
+  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-54'");
   expect((sw.split('const SHELL_ASSETS = [')[1].split('];')[0].match(/(?:HOME_URL|OFFLINE_URL|'[^']+')/g)||[]).length).toBe(49);
   const scripts=[...fs.readFileSync('index.html','utf8').matchAll(/<script[^>]+src="([^"]+)/g)].map(m=>m[1].split('?')[0].replace(/^\//,''));
   const bytes=scripts.reduce((n,file)=>n+Buffer.byteLength(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n')),0);
   console.log('Header menu startup scripts/bytes:',scripts.length,bytes);expect(scripts).toHaveLength(22);expect(bytes).toBeLessThanOrEqual(290914);
+});
+
+for(const width of [320,390,430,1280])for(const dark of [false,true])for(const mix of ['old app','old CSS','old app and CSS']){
+  test(`${width}px dark=${dark}: ${mix} leaves functional native Read navigation`,async({page})=>{
+    if(mix.includes('app'))await page.route('**/js/app.js',route=>route.fulfill({contentType:'application/javascript',body:execFileSync('git',['show','5e98b32:js/app.js'])}));
+    if(mix.includes('CSS'))await page.route('**/css/components.css',route=>route.fulfill({contentType:'text/css',body:execFileSync('git',['show','5e98b32:css/components.css'])}));
+    await open(page,width,dark);
+    await expect(page.locator('#headerMenuTrigger')).toBeHidden();
+    const fallback=page.getByRole('link',{name:'Open Bible Reader',exact:true});await expect(fallback).toBeVisible();
+    const rect=await fallback.boundingBox();expect(rect.width).toBeGreaterThanOrEqual(44);expect(rect.height).toBeGreaterThanOrEqual(44);
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    await page.locator('#heroFav').click();await fallback.click();await expect(page.locator('#readerContent h2')).toHaveText('John 1');
+    await expect(page.locator('#savedCount')).toHaveText('1');await expect(page.locator('#headerMenu')).toHaveCount(0);
+    if(mix==='old CSS'){
+      await fallback.focus();
+      await page.unroute('**/css/components.css');
+      await page.evaluate(()=>{document.querySelector('link[href="css/components.css"]').href='/css/components.css?retry=1';});
+      await expect(page.locator('#headerMenuTrigger')).toBeVisible();await expect(fallback).toBeHidden();await expect(page.locator('#headerMenuTrigger')).toBeFocused();
+      await page.locator('#headerMenuTrigger').click();await expect(menu(page).locator('[data-destination]')).toHaveCount(15);
+      await page.keyboard.press('Escape');await expect(page.locator('#headerMenuTrigger')).toBeFocused();
+    }
+  });
+}
+
+for(const followReference of [false,true])test(`delayed app, native reference followed=${followReference}: usable fallback and one enhanced menu`,async({page})=>{
+  let release;const pending=new Promise(resolve=>release=resolve);
+  await page.route('**/js/app.js',async route=>{await pending;await route.continue();});
+  await page.addInitScript(()=>{window.IntersectionObserver=class{observe(){}disconnect(){}};});
+  await page.setViewportSize({width:320,height:844});await page.goto('/',{waitUntil:'commit'});
+  await expect(page.locator('#headerMenuTrigger')).toBeHidden();
+  if(followReference){await page.locator('#headerMenuFallback').click();await expect(page).toHaveURL(/#companion$/);}
+  else await page.locator('#headerMenuFallback').focus();
+  release();await expect(page.locator('#headerMenuTrigger')).toBeVisible();
+  if(!followReference)await expect(page.locator('#headerMenuTrigger')).toBeFocused();
+  else await expect(page).toHaveURL(/#companion$/);
+  await page.locator('#headerMenuTrigger').click();await expect(menu(page)).toHaveCount(1);await expect(menu(page).locator('[data-destination]')).toHaveCount(15);
+  await page.keyboard.press('Escape');await expect(page.locator('#headerMenuTrigger')).toBeFocused();
+});
+
+test('failed CSS retains Read navigation and a delayed successful stylesheet retry enables the menu',async({page})=>{
+  await page.route('**/css/components.css',route=>route.abort());await open(page);
+  await expect(page.locator('#headerMenuTrigger')).toBeHidden();await page.locator('#headerMenuFallback').click();await expect(page.locator('#readerContent h2')).toHaveText('John 1');
+  await page.unroute('**/css/components.css');let release;const pending=new Promise(resolve=>release=resolve);
+  await page.route('**/css/components.css?retry=1',async route=>{await pending;await route.continue();});
+  await page.evaluate(()=>{document.querySelector('link[href="css/components.css"]').href='/css/components.css?retry=1';});
+  await expect(page.locator('#headerMenuTrigger')).toBeHidden();await expect(page.locator('#headerMenuFallback')).toBeVisible();release();
+  await expect(page.locator('#headerMenuTrigger')).toBeVisible();await page.locator('#headerMenuTrigger').click();await expect(menu(page)).toBeVisible();
+});
+
+for(const width of [320,1280])test(`${width}px: production-53 HTML remains usable with new application code`,async({page})=>{
+  const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  await page.route(url=>url.pathname==='/',route=>route.fulfill({contentType:'text/html',body:execFileSync('git',['show','5e98b32:index.html'])}));
+  await open(page,width);await expect(page.locator('#headerMenuTrigger')).toHaveCount(0);
+  await page.locator('.foot-col a[href="#companion"]').click();await expect(page.locator('#readerContent h2')).toHaveText('John 1');expect(errors).toEqual([]);
+});
+
+test('unsupported modal dialogs retain the native Read link',async({page})=>{
+  await page.addInitScript(()=>{HTMLDialogElement.prototype.showModal=undefined;});await open(page);
+  await expect(page.locator('#headerMenuTrigger')).toBeHidden();await page.locator('#headerMenuFallback').click();await expect(page.locator('#readerContent h2')).toHaveText('John 1');
+});
+
+test('a truncated components stylesheet cannot advertise menu readiness',async({page})=>{
+  const source=fs.readFileSync('css/components.css','utf8');
+  const prefix=source.slice(0,source.lastIndexOf('#headerMenuTrigger{--header-menu-ready:54;}'));
+  await page.route('**/css/components.css',route=>route.fulfill({contentType:'text/css',body:prefix}));await open(page,320);
+  await expect(page.locator('#headerMenuTrigger')).toBeHidden();await page.locator('#headerMenuFallback').click();await expect(page.locator('#readerContent h2')).toHaveText('John 1');
 });

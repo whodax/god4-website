@@ -195,3 +195,8 @@
   body>nav .header-actions{margin-left:0;}
   body>nav .saved-pill,body>nav .account-trigger{min-height:44px;min-width:44px;}
 }
+
+#headerMenuFallback[hidden],#headerMenuTrigger[hidden]{display:none;}
+
+/* Last: only a complete matching stylesheet can enable the enhanced menu. */
+#headerMenuTrigger{--header-menu-ready:54;}

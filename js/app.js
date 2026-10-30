@@ -577,13 +577,7 @@ if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded'
 else initializeApp();
 /* Header destinations delegate to existing controls, not a second navigation system. */
 (function(){
-var groups=[
-  ['Read & Study', [['reader','Bible Reader'],['compare','Compare Translations'],['plan','Reading Plan'],['search','Search Scripture'],['study','Word Study']]],
-  ['My Bible', [['saved','Saved Verses'],['offline','Offline Bibles'],['translation','Choose Translation']]],
-  ['Preferences & Account', [['aloud','Read Aloud'],['commands','Voice Commands'],['voice','Voice & Reading Speed'],['theme','Light / Dark Theme'],['account','Account']]],
-  ['Explore', [['featured','Featured Verse'],['resources','Bible Resources']]]
-];
-var trigger,dialog,status,busy=false,revision=0;
+var trigger,dialog,status,busy=false,revision=0,initialized=false;
 function byId(id){return document.getElementById(id);}
 function focus(element){if(element) element.focus({preventScroll:true});}
 function reveal(element){
@@ -604,16 +598,8 @@ function open(){
   dialog.scrollTop=0;focus(byId('headerMenuClose'));
 }
 function build(){
-  dialog=document.createElement('dialog');dialog.id='headerMenu';dialog.className='header-menu';
-  dialog.setAttribute('aria-labelledby','headerMenuTitle');
-  dialog.innerHTML='<div class="header-menu-heading"><h2 id="headerMenuTitle">Menu</h2><button id="headerMenuClose" type="button" aria-label="Close navigation menu">Close</button></div><div class="header-menu-groups"></div><p id="headerMenuStatus" role="status" aria-live="polite"></p>';
-  groups.forEach(function(group,index){
-    var section=document.createElement('section'),heading=document.createElement('h3');
-    heading.id='headerMenuGroup'+index;heading.textContent=group[0];section.setAttribute('aria-labelledby',heading.id);section.append(heading);
-    group[1].forEach(function(item){var button=document.createElement('button');button.type='button';button.dataset.destination=item[0];button.textContent=item[1];section.append(button);});
-    dialog.querySelector('.header-menu-groups').append(section);
-  });
-  document.body.append(dialog);status=byId('headerMenuStatus');
+  document.body.append(byId('headerMenuTemplate').content.cloneNode(true));
+  dialog=byId('headerMenu');status=byId('headerMenuStatus');
   byId('headerMenuClose').addEventListener('click',close);
   dialog.addEventListener('cancel',function(event){event.preventDefault();close();});
   dialog.addEventListener('keydown',function(event){
@@ -687,6 +673,14 @@ async function activate(action){
     if(dialog.open && request===revision) status.textContent='This feature could not load. Please try again; existing controls remain available.';
   }finally{if(busy===request){busy=false;dialog.removeAttribute('aria-busy');}}
 }
-function initialize(){trigger=byId('headerMenuTrigger');if(trigger) trigger.addEventListener('click',open);}
+function initialize(){
+  trigger=byId('headerMenuTrigger');
+  if(initialized || !trigger || !byId('headerMenuFallback') || !byId('headerMenuTemplate') || typeof HTMLDialogElement==='undefined' || !HTMLDialogElement.prototype.showModal || getComputedStyle(trigger).getPropertyValue('--header-menu-ready').trim()!=='54') return;
+  trigger.addEventListener('click',open);initialized=true;
+  var fallback=byId('headerMenuFallback'),focused=document.activeElement===fallback;
+  fallback.hidden=true;trigger.hidden=false;if(focused) focus(trigger);
+}
+var sheet=document.querySelector('link[href="css/components.css"]');
+if(sheet) sheet.addEventListener('load',initialize);
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initialize,{once:true});else initialize();
 })();
