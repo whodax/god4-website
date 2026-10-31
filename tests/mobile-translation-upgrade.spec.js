@@ -64,7 +64,7 @@ test('shell 54 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(49);
-  // Pin the reviewed header implementation; permit only the three exact
+  // Pin the reviewed header implementation; permit only the five exact
   // compatibility sources below. Historical fixtures remain original Git blobs.
   for(const asset of requiredAssets){
     const approved=execFileSync('git',['show',releaseCommit+':'+fileFor(asset)],{cwd:root});
@@ -72,15 +72,15 @@ test('shell 54 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const shell54Sources={"/":"54de54cad9ed108d156ef8f5e720bc9196aaf47352c7331730d664f70b8f5bc5","/css/components.css":"4ab51c382df95e94ed1133855d7e0142aebedb160f64d832f316ada20305c16e","/js/app.js":"4d91c894c440ab330ab0c870bf6f223c383147791b94a653be6cea3a0cf9cfb3"};
+      const shell54Sources={"/":"54de54cad9ed108d156ef8f5e720bc9196aaf47352c7331730d664f70b8f5bc5","/css/components.css":"2a7310cf015d930e600321987b6a9119a6e12ac0e5874d12d3db6c998da4e294","/js/app.js":"4f369f7a4e77a943a604be05ae85dfceee9d1a3b27886ace5883fff47a544aef","/css/companion.css":"7ba88029a1310be48ad9ebbbdc0526f5f6d7697dadb4bebe41afc7f8a5a99ae0","/js/bible/translation-picker.js":"9b279bb393c129815a3692a43b2e677eb3bbc5017a58ab67737bd47e52585a7f"};
       if(shell54Sources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(shell54Sources[asset]);
       else expect(actual,asset).toBe(expected);
     }
   }
-  for(const asset of previous.version===53?['/','/css/components.css','/js/app.js']:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
+  for(const asset of previous.version===53?['/','/css/components.css','/js/app.js','/css/companion.css',runtimePath]:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
     expect(normalizeSource(current[asset]),asset+' must deliver the accepted release').not.toBe(normalizeSource(prior[asset]));
   }
-  if(previous.version===53) for(const asset of requiredAssets.filter(url=>!['/','/css/components.css','/js/app.js'].includes(url))){
+  if(previous.version===53) for(const asset of requiredAssets.filter(url=>!['/','/css/components.css','/js/app.js','/css/companion.css',runtimePath].includes(url))){
     expect(normalizeSource(fs.readFileSync(path.join(root,fileFor(asset)))),asset+' stays unchanged from production 53').toBe(normalizeSource(prior[new URL(asset,'http://localhost').pathname]));
   }
   expect(normalizeSource(current[manifestPath])===normalizeSource(prior[manifestPath])).toBe(previous.version>=52);

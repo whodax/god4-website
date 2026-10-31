@@ -721,8 +721,8 @@
     .reader-compact-mobile .reader-detailed-navigation{grid-row:1;}
     .reader-compact-mobile #readerSaveVerse{grid-row:2;}
     .reader-compact-mobile #readerSecondaryControls [data-voice-command-button]{grid-row:2;}
-    .reader-compact-mobile #fullscreenBtn{grid-row:3;grid-column:1;}
-    .reader-compact-mobile .reader-compact-stop{grid-row:3;grid-column:2;}
+    .reader-compact-mobile #fullscreenBtn{grid-row:2;grid-column:2;}
+    .reader-compact-mobile .reader-compact-stop{grid-row:3;grid-column:1 / -1;}
     .reader-compact-mobile #fullscreenBtn,.reader-compact-mobile .reader-compact-stop{
       box-sizing:border-box;min-height:44px;min-width:44px;padding:7px 6px;
       background:var(--vellum);color:var(--ink);border:1px solid var(--line);border-radius:2px;

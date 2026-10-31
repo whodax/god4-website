@@ -582,6 +582,7 @@ function byId(id){return document.getElementById(id);}
 function focus(element){if(element) element.focus({preventScroll:true});}
 function reveal(element){
 if(!element) return;
+if(element.closest('.reader-toolbar') && window.ReaderReadingControls && ReaderReadingControls.reveal && ReaderReadingControls.reveal(element)!==false) return;
 var r=element.getBoundingClientRect(),v=window.visualViewport;
 var top=Math.max(v?v.offsetTop:0,document.querySelector('body>nav').getBoundingClientRect().bottom),bottom=v?v.offsetTop+v.height:innerHeight;
 if(element.closest('#readerContent')) top=Math.max(top,readerVisibleTop());
@@ -589,7 +590,6 @@ var delta=r.height>bottom-top-16 || r.top<top+8?r.top-top-8:r.bottom>bottom-8?r.
 if(delta){var view=byId('view-reader');(view && view.classList.contains('reader-fullscreen') && view.contains(element)?view:window).scrollBy({top:delta,behavior:'instant'});}
 focus(element);
 }
-function frame(){return new Promise(requestAnimationFrame);}
 function search(){
 var input=byId('searchInput'),v=window.visualViewport,pending=0;
 function adjust(){cancelAnimationFrame(pending);pending=requestAnimationFrame(function(){if(document.activeElement===input) reveal(input);});}
@@ -598,7 +598,7 @@ if(!v) return;
 v.addEventListener('resize',adjust);v.addEventListener('scroll',adjust);
 input.addEventListener('blur',function(){cancelAnimationFrame(pending);v.removeEventListener('resize',adjust);v.removeEventListener('scroll',adjust);},{once:true});
 }
-function close(){revision++;busy=false;dialog.removeAttribute('aria-busy');if(dialog.open) dialog.close();trigger.setAttribute('aria-expanded','false');focus(trigger);}
+function close(restore){revision++;busy=false;dialog.removeAttribute('aria-busy');if(dialog.open) dialog.close();trigger.setAttribute('aria-expanded','false');if(restore!==false) focus(trigger);}
 function open(){
 if(trayOpen) toggleTray();
 if(!dialog) build();
@@ -641,7 +641,9 @@ try{await ReaderTranslationLoader.ensure();}catch(error){/* Existing native cont
 }
 // Escape/Close may cancel a slow load. Never move focus or navigate afterwards.
 if(!dialog.open || request!==revision) return;
-close();
+var closed=new Promise(function(resolve){dialog.addEventListener('close',resolve,{once:true});});
+close(false);await closed;
+if(request+1!==revision || dialog.open) return;
 if(readerActions.includes(action)){
 var view=action==='compare' || action==='plan'?action:'reader';
 var tab=document.querySelector('.bs-nav [aria-controls="view-'+view+'"]');
@@ -651,10 +653,8 @@ switchView(view,tab,false);
 if(readerTabPosition && readerTabPosition.reference===readerTabReference()) window.scrollTo({top:readerTabPosition.top,behavior:'instant'});
 }else tab.click();
 }
-var recovery=byId('view-reader').querySelector('.reader-show-controls:not([hidden])');
-if(view==='reader' && recovery) recovery.click();
+if(view==='reader' && window.ReaderReadingControls && ReaderReadingControls.reveal) ReaderReadingControls.reveal();
 if(action==='reader'){
-await frame();if(revision!==request+1) return;
 var r=byId('view-reader').getBoundingClientRect(),nav=document.querySelector('body>nav').getBoundingClientRect();
 if(r.top>=nav.bottom || r.bottom<=nav.bottom){
 if(currentVerse) scrollReaderTargetIntoView(byId('readerContent').querySelector('.verse-focused'),'instant');
@@ -675,11 +675,10 @@ if(matchMedia('(max-width:620px)').matches && byId('readerTranslationTrigger')){
 else reveal(byId('readerTranslation'));
 }
 if(['aloud','commands','voice','speed'].includes(action)){
-setReaderOptionsOpen(true);
-await frame();if(revision!==request+1 || document.querySelector('dialog[open]')) return;
 var id=action==='speed'?'readAloudSpeed':'readAloudVoice';
 var target=action==='aloud'?byId('readAloudPlay'):action==='commands'?byId('readerVoiceCommands'):document.querySelector('[data-reader-select="'+id+'"]');
-if(!target || !target.getClientRects().length) target=byId(id);
+if(!target || ['voice','speed'].includes(action) && !target.getClientRects().length) target=byId(id);
+if(byId('readerSecondaryControls').contains(target)) setReaderOptionsOpen(true);
 reveal(target);
 if(action==='voice' || action==='speed') target.click();
 }

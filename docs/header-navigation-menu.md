@@ -63,8 +63,10 @@ Reader/Compare/Plan reuse their existing view handlers and loaders. Reader menu
 returns reuse its saved scroll cursor. Search preserves its input. Word Study
 focuses a studyable word in the current selected/spoken verse or passage; it
 never changes Scripture, opens an unrelated dictionary or infers alignments.
-Read Aloud reveals Options and focuses Play without starting narration. Voice
-Commands reveals/focuses the existing microphone without starting recognition.
+Read Aloud focuses Play without starting narration. Voice Commands focuses the
+existing microphone without starting recognition. Options expands only when
+the requested control is actually inside it; mobile toolbar controls preserve
+its current expanded/collapsed state.
 Select Reading Voice and Reading Speed reveal Options and click the existing
 mobile/custom or desktop selector to open its existing picker. Choices and
 current selections are preserved until the user chooses a different value. Options and automatic
@@ -244,7 +246,7 @@ outstanding. This revision is committed locally only; no push or deployment
 is authorized.
 
 
-## Android destination and independent wordmark-centering correction
+## Android destination and independent wordmark-centering correction at a276763
 
 Baseline: `b33d46d6fb94a5f6bf86fbb77aebbc584b94e77e`. The menu still
 contains exactly 16 destinations in groups of 5/3/6/2.
@@ -359,3 +361,168 @@ headroom; no memory guard was triggered.
 Physical Android keyboard/viewport, TalkBack and touch acceptance of this new
 revision remain outstanding. This is a local commit only; no push, merge or
 production deployment is authorized.
+
+
+## Destination visibility ownership and Reader Options correction
+
+Baseline: `a276763848b75e7d7f4eba961a1b96bd2cf6519e`.
+
+### Reproduced failure and complete handoff
+
+The first touch-driven idle probes finished with the requested DOM control
+focused, although the controls could sit near the viewport bottom. These did
+not reproduce a literal Options-focused DOM state. The investigation does not
+attribute the owner's report to TalkBack.
+
+Both active-narration probes failed after native dialog close, animations and
+queued layout completed. They ended with `headerMenuTrigger` focused, the
+Reader toolbar inert/hidden, Options expanded, and narration still playing.
+Opening the modal temporarily exposed the toolbar through the visibility
+controller's modal guard. Closing it removed that guard without recording an
+intentional control-reveal request. Playback could conceal the toolbar again;
+`getClientRects()` still returned rectangles for its visibility-hidden children,
+so the menu's subsequent focus call could not focus an inert descendant.
+The previous tests largely covered idle playback and intermediate focus calls.
+
+The corrected sequence is:
+
+1. Resolve the existing Bible and optional control loaders, preserving their
+   request deduplication and existing failure/native fallback.
+2. Close the menu and await its actual native `close` event. Cancellation and
+   reopening invalidate the old request; no arbitrary timer or extra focus
+   retry is used. Manual Escape/Close/backdrop still return focus to Menu.
+3. Activate Reader through existing navigation, without changing its passage.
+4. Tell `ReaderReadingControls.reveal()` to restore visibility and clear stale
+   reading-gesture intent. This is an explicit request owned by the existing
+   visibility controller, rather than a synthetic click on Show Controls.
+5. Resolve the actual target. Expand Options only if the target is a descendant
+   of Options. Mobile Play, microphone, voice and speed are already outside it.
+   Desktop/native microphone or settings inside Options still reveal it.
+6. The same controller positions an offscreen target through existing Reader
+   chapter/verse scroll helpers, focuses it, and records the current scope and
+   scroll cursor. Active/preparing narration keeps intentional access until a
+   new reading gesture; idle navigation does not suppress a subsequent playback
+   auto-hide. Manual Show Controls recovery preserves its existing behavior.
+
+The two original active-narration reproductions then finished with Play or the
+microphone focused, the toolbar visible/non-inert, Options collapsed, and
+narration still playing. Focus alone neither invokes synthesis nor recognition.
+No observer continuously refocuses controls. Options state remains independent
+of scrolling/recovery and is retained if already expanded.
+
+### Necessary Stop function and mobile layout
+
+The Stop button is **not redundant**. The compact primary button intercepts
+playing/paused clicks to Pause/Resume and stops propagation before the core
+Stop handler. It can Stop during preparation, but that is not a replacement
+for Stop during normal playback. Removing the separate mobile Stop would remove
+a necessary touch/keyboard Stop action. It is therefore retained, with its
+existing handler and accessible name. Desktop playback controls are unchanged.
+
+Mobile Options now places Save Verse and Fullscreen side by side on row 2,
+under detailed Book/Chapter/Verse navigation. The necessary Stop spans row 3.
+All buttons retain a 44px minimum target. The older Options-layout test expected
+the microphone inside Options; it now checks the actual Save/Fullscreen/Stop
+rows while microphone coverage retains the single existing toolbar control.
+Saved and Account labels are centered in both axes without changing their
+handlers, palette, wordmark, artwork or the two-row header.
+
+### Regression and release scope
+
+`tests/header-menu-focus-lifecycle.spec.js` contains 36 final-state cases for
+320/390/430px, both themes, idle/playing/paused speech, expanded/collapsed
+Options, fullscreen recovery, necessary Stop, delayed cancelled loading and
+rapid repeated touch navigation. It awaits actual menu close, resource readiness,
+Reader animation completion and queued layout, then checks final focus,
+non-inert visibility, viewport bounds and pointer hit targets. Temporary
+focus-call/stack instrumentation is absent from the committed test and app.
+
+The existing header tests now assert that focusing controls outside Options does
+not expand it. The real focus, state preservation and picker assertions remain.
+Current-shell fingerprints allow exactly the five reviewed HTML/CSS/app/control
+runtime assets. Every other precached asset remains protected, historical source
+fixtures are unchanged, and Shell 54 still retains 49 paths and explicit update
+acceptance. No Bible data, manifests, speech code or security policy changes.
+
+
+Responsive reparenting was a second concrete focus owner. Its old microphone
+fallback explicitly focused `readerMoreTrigger` when the focused microphone
+moved into collapsed desktop Options. Returning to mobile could also reset the
+active-playback reveal state and conceal Play. Both layout-transition cases
+failed before correction and passed afterwards. The reparenting handler now
+reveals Options when needed for the focused microphone, preserves that actual
+control, and hands Play/microphone visibility back to the same controller.
+This is a correction at the layout owner, not a delayed corrective focus call.
+
+Cloud-specific lifecycle cases cover both playing and preparing states; provider
+start after the menu handoff must not hide the target or restart narration.
+Native/cloud playback and Android one-command isolation remain unchanged.
+
+
+The legacy microphone breakpoint test explicitly required the former Options
+focus fallback. Its contract now requires the actual microphone to remain
+visible/focused with Options revealed, followed by manual closing returning
+focus to Options. The original single-node identity, listener/capture count,
+permission-release, keyboard and command behavior checks are retained.
+
+
+The Options layout fixture also now waits for compact-control initialization
+before positioning and uses `scrollReaderStartIntoView()` with a strict 2px
+readiness assertion. Its previous raw `scrollIntoView()` could run before
+reparenting and leave the panel at the viewport bottom. Scripture visibility,
+point-hit tests, clipping, panel-height and scroll-preservation assertions are
+unchanged; the fixture now enters the same usable Reader geometry as navigation.
+
+
+Reparenting preservation is scoped to the explicit menu-requested control, not
+to every focused Play button. That ownership expires on real pointer, keyboard
+or reading gestures. A valid pre-existing regression caught an initial overly
+broad implementation that suppressed normal playback auto-hide after resize;
+the production state handling was corrected and that assertion was left intact.
+New cases also check ownership expiry after menu navigation, ordinary Play and
+new reading gestures. Manual Stop, new playback auto-hide and Show Controls
+therefore retain their independent behavior.
+
+
+### Final visibility-ownership validation
+
+All gates used one browser worker, zero retries and sequential test processes:
+
+| Gate | Unique passed |
+| --- | ---: |
+| Existing header/menu and mixed-version compatibility | 77 |
+| Final lifecycle, cloud, responsive ownership and compact Reader | 57 |
+| Options geometry, Save/Fullscreen/Stop and enlarged text | 16 |
+| Independent recovery and microphone behavior | 54 |
+| Android destinations, Reader/Plan navigation and scrolling | 50 |
+| Native/cloud Android speech and continuous chapter playback | 32 |
+| Homepage/header/Reader/search smoke and performance | 8 |
+| Historical contracts and installed Shell 53-to-54 upgrades | 20 |
+| PWA, offline Bibles, Saved Verses and Account | 58 |
+| **Total** | **372** |
+
+Final selected identities have no failures, skips or retries. Identity evidence
+is in `playwright-report/header-focus-final-summary.json`. The four failure
+reproductions (active narration and responsive handoff) are fixed. The initial
+application auto-hide regression was corrected without weakening its existing
+test. Intentional contract/fixture changes are explained above.
+
+One earlier runner ended without a Playwright failure report after 22 completed
+tests. Its log was preserved; no leftover test processes or confirmed browser
+crash report were found. The paused case passed in isolation with a trace, and
+all test identities completed in the final gates. No interrupted test was
+counted as passed. Validation also paused before a browser launch at 910MiB
+physical availability and resumed after memory recovered. Recorded final-gate
+physical availability was at least 1,264MiB and commit headroom at least
+16.70GiB. No unrelated application was terminated.
+
+Performance: **22 scripts, 290,741 canonical decoded startup bytes**, **173 bytes
+below the unchanged 290,914-byte budget**. Word Study first-use network readiness
+was 17.5ms locally. This margin remains narrow. No eager dependency was added;
+the ownership implementation uses the existing optional control runtime.
+
+Asset validation, JavaScript syntax, all 66 canonical Isaiah hashes/sizes and
+`git diff --check` pass. Shell 54, 49 paths, vendor cache 24, explicit update
+acceptance, downloaded Bibles, manifests, CSP and core Reader/speech/storage
+sources are preserved. Physical Android acceptance of this revision is still
+required. Changes are committed locally only; no push, merge or deployment.

@@ -84,7 +84,7 @@ for(const width of [390,1280]){
     if(width<620){await expect(page.locator('#readerTranslationPicker')).toBeVisible();await expect(page.locator('#readerTranslationPicker [data-translation]')).toHaveCount(9);await page.keyboard.press('Escape');}
     else await expect(page.locator('#readerTranslation')).toBeFocused();
     const before=await state(page);
-    await choose(page,'aloud');await expect(page.locator('#readAloudPlay')).toBeFocused();await expect(page.locator('#readerMoreTrigger')).toHaveAttribute('aria-expanded','true');
+    await choose(page,'aloud');await expect(page.locator('#readAloudPlay')).toBeFocused();await expect(page.locator('#readerMoreTrigger')).toHaveAttribute('aria-expanded','false');
     await expect(page.locator('#readAloudPlay')).toHaveAccessibleName(/Play/);
     await choose(page,'commands');await expect(page.locator('#readerVoiceCommands')).toBeFocused();await expect(page.locator('#readerVoiceCommands')).toHaveAttribute('aria-pressed','false');
     for(const [action,id] of [['voice','readAloudVoice'],['speed','readAloudSpeed']]){

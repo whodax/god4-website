@@ -195,6 +195,7 @@
 .foot-col .nav-unavailable{display:block;font-size:14px;color:var(--ink-soft);margin-bottom:9px;}
 #headerBrandGroup{margin:0;gap:8px;}
 #headerMenuSlot{display:flex;align-items:center;}
+.site-header-v2 :is(.saved-pill,.account-trigger){display:flex;align-items:center;justify-content:center;text-align:center;}
 #readerContent .word-study-token[aria-description]:focus{outline:2px solid var(--ink);outline-offset:2px;}
 @media(max-width:620px){
   .header-menu-groups{grid-template-columns:minmax(0,1fr);gap:0;}
