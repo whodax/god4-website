@@ -666,6 +666,8 @@
   }
   @media(prefers-reduced-motion:reduce){#view-reader .reader-toolbar,#view-reader.reader-controls-hidden .reader-toolbar{transition:none;}}
 
+  /* Touch menu destinations need a ring even without :focus-visible. */
+  #readAloudPlay:focus,#readerVoiceCommands:focus{outline:2px solid var(--ink);outline-offset:2px;}
   #readerVoiceCommands svg{display:none;}
   /* Mobile-only composition of the original Reader controls. Desktop DOM and
      native controls are restored by ReaderCompactControls at the breakpoint. */

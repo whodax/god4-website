@@ -72,7 +72,7 @@ test('shell 54 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const shell54Sources={"/":"54de54cad9ed108d156ef8f5e720bc9196aaf47352c7331730d664f70b8f5bc5","/css/components.css":"2a7310cf015d930e600321987b6a9119a6e12ac0e5874d12d3db6c998da4e294","/js/app.js":"4f369f7a4e77a943a604be05ae85dfceee9d1a3b27886ace5883fff47a544aef","/css/companion.css":"7ba88029a1310be48ad9ebbbdc0526f5f6d7697dadb4bebe41afc7f8a5a99ae0","/js/bible/translation-picker.js":"9b279bb393c129815a3692a43b2e677eb3bbc5017a58ab67737bd47e52585a7f"};
+      const shell54Sources={"/":"54de54cad9ed108d156ef8f5e720bc9196aaf47352c7331730d664f70b8f5bc5","/css/components.css":"2a7310cf015d930e600321987b6a9119a6e12ac0e5874d12d3db6c998da4e294","/js/app.js":"4f369f7a4e77a943a604be05ae85dfceee9d1a3b27886ace5883fff47a544aef","/css/companion.css":"9069d3fba456e4b89c1c03cd1d3bf7fceab2ae549e39634053283849f3631b58","/js/bible/translation-picker.js":"9b279bb393c129815a3692a43b2e677eb3bbc5017a58ab67737bd47e52585a7f"};
       if(shell54Sources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(shell54Sources[asset]);
       else expect(actual,asset).toBe(expected);
     }

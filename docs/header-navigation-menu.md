@@ -526,3 +526,82 @@ Asset validation, JavaScript syntax, all 66 canonical Isaiah hashes/sizes and
 acceptance, downloaded Bibles, manifests, CSP and core Reader/speech/storage
 sources are preserved. Physical Android acceptance of this revision is still
 required. Changes are committed locally only; no push, merge or deployment.
+
+
+### Android touch focus indication
+
+Physical acceptance of `d31b4f5` reported no visible Play/microphone highlight
+with TalkBack off. Touch-emulated Chromium reproduced both cases: after the
+native menu close event, Reader navigation and layout stabilization, the real
+button was `document.activeElement`, but its computed outline style was `none`.
+The existing ring depended on `:focus-visible`; touch-initiated programmatic
+focus does not necessarily match that pseudo-class. This is a styling gap,
+not evidence of a new focus handoff failure or a TalkBack issue.
+
+The only production change is a scoped `:focus` rule for `#readAloudPlay` and
+`#readerVoiceCommands`, using the existing theme-aware `--ink` token, 2px outline
+and 2px offset. It remains visible after responsive reparenting, clears on blur,
+and does not change layout, playback, microphone state or accessible names.
+No new class, timer, listener, focus call or startup JavaScript is required.
+
+The lifecycle regression now requires actual final DOM focus, a visible solid
+outline and at least 3:1 contrast against both button and toolbar backgrounds.
+It covers touch navigation, delayed loading, repeated selection, native/cloud
+speech, fullscreen and responsive reparenting. Dedicated Light/Blue Dark cases
+verify that the ring is visible even while `:focus-visible` is false, clears
+after another control receives focus, and preserves manual menu dismissal's
+return focus. Screenshots and computed-style JSON are local test artifacts.
+
+The Shell 54 source-contract test updates only the exact companion CSS hash
+for this reviewed change; historical fixtures, all other pinned hashes,
+49 precache paths, vendor cache 24 and explicit update acceptance are unchanged.
+No service-worker, HTML, production JavaScript, Bible data, manifests, speech,
+security policy or desktop layout changes are included.
+
+
+An existing geometry regression remains separately reproducible at
+`tests/header-android-destinations.spec.js:30`: 430px Blue Dark Reader entry can
+finish 2.015625px from the expected chapter-heading position, outside the
+unchanged strict `< 2px` assertion. The initial 97-case menu/Android batch had
+96 passes and this one failure. Ten explicit repetitions with current CSS gave
+9 passes/1 failure; the same scenario with the approved `d31b4f5` companion CSS
+also gave 9 passes/1 identical failure. This occurs before either audio control
+receives focus. No navigation source or geometry assertion is changed in this
+styling correction. Logs and the baseline-only fixture are local ignored
+artifacts; the baseline comparison does not modify tracked files. This known
+pre-existing intermittent failure must not be reported as a clean release gate.
+
+
+Final focused validation (sequential, one worker, zero automatic retries):
+
+| Gate | Passed | Failed |
+| --- | ---: | ---: |
+| Focus lifecycle, visible indicator, contrast, responsive handoff and blur | 38 | 0 |
+| Existing header menu and mixed-version compatibility | 77 | 0 |
+| Existing Android destinations | 19 | 1 |
+| Reader Options, microphone, recovery and native/cloud speech | 102 | 0 |
+| Historical source contracts and installed Shell 53 upgrades | 20 | 0 |
+| PWA/offline | 17 | 0 |
+| Startup performance | 1 | 0 |
+| **Unique selected identities** | **274** | **1** |
+
+There are no skips or automatic retries. Explicit diagnostic repetitions of the
+pre-existing geometry failure are reported separately above; repeated passing
+focus checks are not counted twice. The two expected pre-fix missing-outline
+failures establish the regression before the CSS correction. Structured final
+identity evidence is in `playwright-report/header-touch/final-summary.json`.
+
+Measured focus contrast against button/toolbar backgrounds is 11.24:1/12.72:1
+in Light Mode and 13.06:1/10.60:1 in Blue Dark Mode. Both dedicated touch cases
+have `focusVisible: false` while retaining a visible solid 2px outline.
+Startup remains 22 scripts and 290,741 canonical decoded bytes, 173 bytes below
+the unchanged 290,914-byte budget. Word Study first-use readiness was 22.5ms.
+Assets, syntax, all 66 Isaiah hashes/sizes and `git diff --check` pass.
+Available physical memory at browser gate starts remained at least 6,336MiB,
+with at least 23.06GiB commit headroom; no browser crashes occurred.
+
+The focused styling correction is ready for physical Android retesting. Overall
+release validation is not fully green because of the independently reproduced
+chapter-heading geometry failure. No assertion was loosened and no unrelated
+navigation change was made. This revision is committed locally only; no push,
+merge or deployment is authorized by this task.

@@ -28,8 +28,19 @@ async function settled(page){
 async function finalTarget(page,id){
  await expect(page.locator('#headerMenu')).not.toBeVisible();await expect(page.locator('#'+id)).toBeFocused();await expect(page.locator('.reader-toolbar')).not.toHaveAttribute('inert','');
  await expect(page.locator('.reader-toolbar')).toHaveCSS('visibility','visible');
+ // Touch-initiated programmatic focus need not match :focus-visible.
+ const ring=await page.locator('#'+id).evaluate(e=>{
+  const s=getComputedStyle(e),toolbar=getComputedStyle(e.closest('.reader-toolbar'));
+  const rgb=c=>c.match(/[\d.]+/g).slice(0,3).map(Number);
+  const luminance=c=>rgb(c).map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;}).reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);
+  const contrast=c=>{const a=luminance(s.outlineColor),b=luminance(c);return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);};
+  return {style:s.outlineStyle,width:parseFloat(s.outlineWidth),offset:parseFloat(s.outlineOffset),color:s.outlineColor,ink:s.getPropertyValue('--ink').trim(),focusVisible:e.matches(':focus-visible'),againstButton:contrast(s.backgroundColor),againstToolbar:contrast(toolbar.backgroundColor)};
+ });
+ expect(ring, 'Actual focus must be visibly indicated after touch navigation').toMatchObject({style:'solid',width:2,offset:2});
+ expect(ring.againstButton).toBeGreaterThanOrEqual(3);expect(ring.againstToolbar).toBeGreaterThanOrEqual(3);
+
  const g=await page.locator('#'+id).evaluate(e=>{const r=e.getBoundingClientRect(),v=visualViewport,view=document.getElementById('view-reader'),full=view.classList.contains('reader-fullscreen');const top=full?view.getBoundingClientRect().top:document.querySelector('body>nav').getBoundingClientRect().bottom;return {top:r.top,bottom:r.bottom,boundary:Math.max(top,v.offsetTop),visibleBottom:v.offsetTop+v.height,hit:e.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)),focused:document.activeElement.id,last:__focusEvents.at(-1)};});
- expect(g.top).toBeGreaterThanOrEqual(g.boundary);expect(g.bottom).toBeLessThanOrEqual(g.visibleBottom);expect(g.hit).toBe(true);expect(g.focused).toBe(id);expect(g.last).toBe(id);expect(page.errors).toEqual([]);
+ expect(g.top).toBeGreaterThanOrEqual(g.boundary);expect(g.bottom).toBeLessThanOrEqual(g.visibleBottom);expect(g.hit).toBe(true);expect(g.focused).toBe(id);expect(g.last).toBe(id);expect(page.errors).toEqual([]);return ring;
 }
 for(const width of [320,390,430])for(const dark of [false,true])for(const state of ['idle','playing','paused'])test(`${width}px dark=${dark} ${state}: final menu targets survive dismissal, layout and auto-hide`,async({page})=>{
  await open(page,width,dark);await ready(page);await page.evaluate(()=>navigateReaderToPassage('john',1,16));
@@ -99,4 +110,21 @@ for(const mode of ['new playback','reading gesture'])test(`menu ownership expire
  await expect(page.getByRole('button',{name:'Show Reader controls',exact:true})).toBeVisible();await expect(page.locator('.reader-toolbar')).toHaveAttribute('inert','');
  await page.setViewportSize({width:1280,height:844});await expect(page.locator('.reader-toolbar')).toHaveCSS('visibility','visible');await page.setViewportSize({width:390,height:844});await expect(page.getByRole('button',{name:'Show Reader controls',exact:true})).toBeVisible();
  expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('playing');expect(await page.evaluate(()=>__recognitionStarts)).toBe(0);
+});
+
+for(const dark of [false,true])test(`touch focus indicator clears on blur and preserves return focus dark=${dark}`,async({page})=>{
+ await open(page,320,dark);await ready(page);
+ for(const action of ['aloud','commands']){
+  const id=action==='aloud'?'readAloudPlay':'readerVoiceCommands';
+  await choose(page,action);await settled(page);const ring=await finalTarget(page,id);
+  expect(ring.focusVisible).toBe(false);
+  await test.info().attach(action+'-touch-focus',{body:JSON.stringify(ring,null,2),contentType:'application/json'});
+  await page.screenshot({path:test.info().outputPath(action+'-focused.png')});
+  await page.locator('#readerMoreTrigger').tap();await expect(page.locator('#readerMoreTrigger')).toBeFocused();
+  await expect(page.locator('#'+id)).not.toBeFocused();await expect(page.locator('#'+id)).toHaveCSS('outline-style','none');
+  await page.locator('#headerMenuTrigger').tap();await page.keyboard.press('Escape');await expect(page.locator('#headerMenuTrigger')).toBeFocused();
+  await expect(page.locator('#'+id)).toHaveCSS('outline-style','none');
+  if(await page.locator('#readerMoreTrigger').getAttribute('aria-expanded')==='true')await page.locator('#readerMoreTrigger').tap();
+ }
+ expect(await page.evaluate(()=>__speechCalls.length)).toBe(0);expect(await page.evaluate(()=>__recognitionStarts)).toBe(0);
 });
