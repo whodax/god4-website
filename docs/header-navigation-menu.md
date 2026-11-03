@@ -605,3 +605,93 @@ release validation is not fully green because of the independently reproduced
 chapter-heading geometry failure. No assertion was loosened and no unrelated
 navigation change was made. This revision is committed locally only; no push,
 merge or deployment is authorized by this task.
+
+
+### Chapter-heading positioning correction (uncommitted review)
+
+The intermittent 430px Blue Dark failure documented above is caused by layout
+animation during lazy compact-control initialization. `.bs-btn` inherits
+`transition: all .2s`; adding the compact layout therefore animates button
+padding, letter spacing and the Offline button's font size. The sticky Study
+Desk row briefly measures 55px before settling at 53px. These intermediate
+sizes are incidental; the established final typography, colors and dimensions
+are unchanged by the correction.
+
+Passing/failing snapshots had identical loaded fonts, 844px visual viewport,
+final sticky heights and chapter document top (1554.015625px). Final document
+scroll was 1239, 1240 or 1241px, yielding chapter errors of 2.015625, 1.015625 or
+0.015625px. This is not a missing heading, keyboard viewport change, focus
+restoration problem or persistent text reflow difference.
+
+A local-only call trace captured all three positioning calls actually running;
+the scroll guard did not cancel them. The first position used a 299px sticky
+boundary and scrolled to 1241px. In the failing run the final animation frame
+saw the chapter move upward as navigation shrank, but still used the preceding
+299px derived sticky boundary. It applied a -1.984375px correction and scrolled
+back to 1239px. ResizeObserver then published the settled 297px boundary, leaving
+the heading at 315.015625px instead of 313px. A passing run corrected at a
+different point in the animation and left a smaller error. Adding more frames
+or changing the assertion would only disguise the unsafe layout animation.
+
+The production correction is one mobile-only `transition-property` override on
+`.reader-compact-layout .bs-nav .bs-btn`, restricted to background/color/border
+color/box-shadow. The existing duration and paint feedback remain. Responsive
+font/spacing/padding changes now settle immediately, so chapter positioning and
+the sticky offsets share stable geometry. No scroll algorithm, cancellation
+guard, timer, event handler or startup JavaScript changes are needed. Desktop
+styles are unchanged. The `fa46452` Play/microphone focus rule remains intact.
+
+The original strict assertion in `tests/header-android-destinations.spec.js`
+is unchanged. A new `tests/header-reader-position.spec.js` checks cold entry at
+320/390/430/1280px in both themes, actual running navigation animations, strict
+chapter alignment, dimensions and scroll stability after animations/observer
+frames settle. Responsive cases navigate from Featured Verse before re-entering
+Reader. An initial new-fixture attempt used Resources, which can leave the end
+of Reader visible on desktop; preserving that reading position is intentional
+and should not be tested as unconditional chapter rewind. Only that new
+fixture was corrected; no existing assertion or production behavior was altered.
+
+The new cold-entry case, served the exact pre-fix companion CSS locally, fails
+with the original 2.015625px error. Diagnostic response instrumentation is kept
+only in ignored local artifacts and is absent from final regression tests.
+The Shell 54 source contract updates only the exact reviewed CSS hash. All
+historical fixtures and assertions, 49 asset paths, vendor cache 24, explicit
+update acceptance, Bible caches, manifests and security policy are preserved.
+
+
+Final validation for this uncommitted correction used sequential test processes,
+one browser worker and zero automatic retries:
+
+| Gate | Passed | Failed |
+| --- | ---: | ---: |
+| Header/menu, Android destinations, touch focus and new geometry regression | 145 | 0 |
+| Reader navigation, Options, microphone, auto-hide/fullscreen and speech | 120 | 0 |
+| Historical source contracts and installed Shell 53-to-54 upgrades | 20 | 0 |
+| PWA/offline | 17 | 0 |
+| Startup performance | 1 | 0 |
+| **Unique final regression cases** | **303** | **0** |
+
+There are no final skips, flaky results or retries. In addition, the original
+unmodified 430px Blue Dark scenario passed 50/50 repetitions and all six mobile
+width/theme combinations passed 60/60 repetitions (ten each). These 110 stress
+executions are reported separately rather than counted as new test identities.
+The final 430px heading top was 313.015625px in every one of its 50 repetitions,
+against a 313px target: 0.015625px error instead of the reproduced 2.015625px.
+The 320px and 390px cold-entry errors were -0.484375px and +0.140625px.
+The original `< 2px` assertion is unchanged. Initial diagnostic failures and the
+new-fixture correction are explained above; no interrupted test is counted.
+
+Structured identities, geometry and counts are recorded locally in
+`playwright-report/header-position/final-summary.json`; raw diagnostic and final
+logs are preserved. Production JavaScript remains unchanged: 22 startup scripts,
+290,741 canonical decoded bytes and 173 bytes below the strict 290,914-byte
+limit. Word Study first-use readiness measured 18.2ms. Asset validation, syntax,
+all 66 Isaiah hashes/byte sizes, protected-file comparisons and `git diff --check`
+pass. Gate-start memory remained at least 5,299MiB available physical RAM and
+21.34GiB available commit headroom, with no browser crashes or memory stops.
+
+No code is staged or committed. HEAD remains `fa46452` and its approved touch
+focus correction is preserved. A new hash-specific Cloudflare preview is
+pending the requested review-before-commit stage; no push or deployment was
+performed. Physical Android acceptance of a future corrected preview remains
+necessary before release approval.

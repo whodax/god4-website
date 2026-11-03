@@ -676,7 +676,8 @@
     .companion-section:has(.reader-compact-layout){padding-inline:8px;}
     .reader-compact-layout #view-reader{padding-inline:8px;}
     .reader-compact-layout .bs-nav{display:grid;grid-template-columns:repeat(4,minmax(44px,1fr));gap:2px;padding:4px 8px;}
-    .reader-compact-layout .bs-nav .bs-btn{min-width:44px;min-height:44px;width:100%;padding:4px 2px;letter-spacing:0;}
+    /* Responsive geometry must settle before chapter positioning; animate paint only. */
+    .reader-compact-layout .bs-nav .bs-btn{min-width:44px;min-height:44px;width:100%;padding:4px 2px;letter-spacing:0;transition-property:background-color,color,border-color,box-shadow;}
     .reader-compact-layout:has(#view-reader.active) .compare-edition-control{display:none;}
     .reader-compact-layout #offlineBiblesTrigger{font-size:0;}
     .reader-compact-layout #offlineBiblesTrigger::after{content:'Offline';font-size:12px;}
