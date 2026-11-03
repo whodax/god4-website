@@ -45,7 +45,7 @@ for(const provider of ['native','cloud','fallback'])test(`${provider}: chapter, 
   const errors=[];page.on('pageerror',error=>errors.push(error.message));
   await install(page,provider);
   await page.locator('#readAloudPlay').click();
-  await expect.poll(()=>text(page,provider)).toBe('Genesis chapter 1. '+expected);
+  await expect.poll(()=>text(page,provider)).toBe('Genesis chapter 1 verse 2. '+expected);
   await expect(page.locator('#readerContent .verse-spoken')).toHaveAttribute('data-verse-number','2');
   const raw=await page.locator('#readerContent [data-verse-number="2"]').getAttribute('data-verse-text');
   expect(raw).toContain('[was]');
@@ -61,7 +61,7 @@ for(const provider of ['native','cloud','fallback'])test(`${provider}: chapter, 
   await page.evaluate(()=>stopReader());
   await navigate(page,'genesis',1,4);
   await page.evaluate(()=>BibleSpeech.playVerse(BibleData.getChapter('kjv','genesis',1).verses[3],4,{translationId:'kjv',bookId:'genesis',chapter:1}));
-  await expect.poll(()=>text(page,provider)).toBe('Genesis chapter 1. And God saw the light, that it was good: and God divided the light from the darkness.');
+  await expect.poll(()=>text(page,provider)).toBe('Genesis chapter 1 verse 4. And God saw the light, that it was good: and God divided the light from the darkness.');
   await navigate(page,'genesis',2,1);
   await expect(page.locator('#readerContent .verse-spoken')).toHaveCount(0);
   expect(errors).toEqual([]);
@@ -111,7 +111,7 @@ test('parenthetical asides, literal nested brackets, saved text and reference co
   const supplied=page.locator('#readerContent [data-verse-number="23"] i');
   await expect(supplied).toHaveText('[but] he that acknowledgeth the Son hath the Father also');
   await page.locator('#readAloudPlay').click();
-  await expect.poll(()=>text(page,'native')).toBe('1 John chapter 2. Whosoever denieth the Son, the same hath not the Father: [but] he that acknowledgeth the Son hath the Father also.');
+  await expect.poll(()=>text(page,'native')).toBe('1 John chapter 2 verse 23. Whosoever denieth the Son, the same hath not the Father: [but] he that acknowledgeth the Son hath the Father also.');
 });
 
 for(const id of ['web','dra'])test(`${id}: canonical Reader rendering and speech remain unchanged`,async({page})=>{
@@ -121,7 +121,7 @@ for(const id of ['web','dra'])test(`${id}: canonical Reader rendering and speech
   const canonical=await verse.getAttribute('data-verse-text');
   expect(await verse.evaluate(element=>{const copy=element.cloneNode(true);copy.querySelector('.vnum').remove();return copy.textContent;})).toBe(canonical);
   await page.locator('#readAloudPlay').click();
-  await expect.poll(()=>text(page,'native')).toBe('Genesis chapter 1. '+canonical);
+  await expect.poll(()=>text(page,'native')).toBe('Genesis chapter 1 verse 2. '+canonical);
 });
 
 test('KJV search and Compare retain canonical bracketed text and exact verse coordinates',async({page})=>{
