@@ -8,7 +8,7 @@ async function geometry(page){
   });
 }
 async function tapTab(page,name){
-  const r=await page.locator(`[aria-controls="view-${name}"]`).boundingBox();
+  const r=await page.locator(`[aria-controls="view-${name}"]:visible`).boundingBox();
   await page.touchscreen.tap(r.x+r.width/2,r.y+r.height/2);
   await expect(page.locator(`#view-${name}`)).toHaveClass(/active/);
 }

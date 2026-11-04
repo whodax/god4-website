@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 const {execFileSync}=require('node:child_process');
 test.use({serviceWorkers:'block',hasTouch:true});
@@ -199,7 +200,7 @@ test('desktop Reader native-looking controls use themed dialogs without changing
   await expect(page.locator('#readerContent h2')).toHaveText('John 21');
 });
 test('fullscreen mobile, enlarged text and current Reader picker choices remain reachable',async({page})=>{
-  await ready(page,320,'dark');await page.locator('#fullscreenBtn').click();await page.locator('#readerMoreTrigger').click();
+  await ready(page,320,'dark');await toggleReaderFullscreen(page);await page.locator('#readerMoreTrigger').click();
   await page.evaluate(()=>ReaderTranslationLoader.ensure());
   await page.evaluate(()=>{
     const sheet=Array.from(document.styleSheets).find(item=>item.href && new URL(item.href).pathname==='/css/companion.css');

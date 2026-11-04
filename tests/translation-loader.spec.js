@@ -107,13 +107,16 @@ test('generated metadata validates a loaded translation deterministically', asyn
   expect(await page.evaluate(() => BibleData.validateTranslation('web'))).toBe(false);
 });
 
-test('entering Reader loads WEB once and renders the default passage', async ({page}) => {
+for(const fallback of [false,true]) test('entering Reader loads WEB once via '+(fallback?'fallback link':'Menu'), async ({page}) => {
+  if(fallback)await page.addInitScript(()=>{HTMLDialogElement.prototype.showModal=undefined;});
   const requested = watchTranslationRequests(page);
   await page.goto('/');
 
+  const entry=fallback?page.getByRole('link',{name:'Open Bible Reader',exact:true}):page.getByRole('button',{name:'Bible Reader',exact:true});
+  if(!fallback)await page.getByRole('button',{name:'Menu',exact:true}).click();
   await Promise.all([
     page.waitForResponse(response => translationPath(response.url()) === '/js/bible/web.js' && response.ok()),
-    page.locator('nav a[href="#companion"]').click()
+    entry.click()
   ]);
 
   await expect(page.locator('#readerTranslation')).toHaveValue('web');

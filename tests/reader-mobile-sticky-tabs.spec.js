@@ -5,7 +5,7 @@ async function visibleVerse(page,verse){
   await expect.poll(()=>target.evaluate(el=>{const r=el.getBoundingClientRect();return r.top>=readerVisibleTop()&&r.bottom<=innerHeight;})).toBe(true);
 }
 async function tapVisibleTab(page,name){
-  const point=await page.locator(`[aria-controls="view-${name}"]`).evaluate(button=>{
+  const point=await page.locator(`[aria-controls="view-${name}"]:visible`).evaluate(button=>{
     const rect=button.getBoundingClientRect();
     const x=(rect.left+rect.right)/2,y=(rect.top+rect.bottom)/2;
     return {x,y,top:rect.top,bottom:rect.bottom,navBottom:document.querySelector('nav').getBoundingClientRect().bottom,
@@ -118,16 +118,16 @@ test.describe('mobile sticky Study Desk navigation',()=>{
       expect(geometry.toolbarBottom).toBeLessThan(geometry.height-120);
     }
     await page.setViewportSize({width:390,height:844});
-    const compare=page.locator('[aria-controls="view-compare"]');
+    const compare=page.locator('[aria-controls="view-compare"]:visible');
     await compare.focus();await expect(compare).toBeFocused();
     await expect(compare).toHaveCSS('outline-style','solid');await compare.press('Enter');
     await expect(compare).toHaveAttribute('aria-pressed','true');
-    const reader=page.locator('[aria-controls="view-reader"]');
+    const reader=page.locator('[aria-controls="view-reader"]:visible');
     await reader.focus();await reader.press('Enter');await expect(reader).toBeFocused();
     await visibleVerse(page,45);
     await page.evaluate(()=>toggleFullscreen());
     expect(await page.evaluate(()=>readerVisibleTop())).toBe(await page.locator('.reader-toolbar').evaluate(el=>el.getBoundingClientRect().bottom));
     await page.evaluate(()=>toggleFullscreen());
-    for(const name of ['reader','compare','plan']) await expect(page.locator(`[aria-controls="view-${name}"]`)).toHaveCount(1);
+    for(const name of ['reader','compare','plan']) await expect(page.locator(`[aria-controls="view-${name}"]:visible`)).toHaveCount(1);
   });
 });

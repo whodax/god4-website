@@ -79,7 +79,7 @@ test('Reader toolbar and More reflow from desktop through 320px', async ({page})
         toolbarHeight:toolbar.getBoundingClientRect().height};
     });
     expect(geometry.rows).toBe(width > 620 ? 1 : 3);
-    expect(geometry.count).toBe(width > 620 ? 7 : 14);
+    expect(geometry.count).toBe(width > 620 ? 7 : 15);
     expect(geometry.overflow).toBe(false);
     await page.locator('#readerMoreTrigger').click();
     expect(await page.evaluate(() => {

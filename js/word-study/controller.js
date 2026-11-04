@@ -145,14 +145,18 @@ var WordStudyController = (function createWordStudyController(){
   function keepStudyFocusVisible(selectedButton){
     var view = elements();
     var reader = document.getElementById('view-reader');
-    var surface = reader.classList.contains('reader-fullscreen') ? reader : window;
+    var fullscreen = reader.classList.contains('reader-fullscreen');
+    var surface = fullscreen ? reader : window;
+    var position = function(){return fullscreen ? reader.scrollTop : window.scrollY;};
+    var start = position();
     var revision = requestId;
     // Greek/Hebrew fonts can rewrap the token rows after their initial layout.
     var fontsReady = document.fonts ? document.fonts.ready : Promise.resolve();
     fontsReady.then(function(){
       requestAnimationFrame(function(){
         if(revision !== requestId || view.panel.hidden || !selectedButton.isConnected ||
-          document.activeElement !== selectedButton) return;
+          document.activeElement !== selectedButton || !reader.classList.contains('active') ||
+          reader.classList.contains('reader-fullscreen') !== fullscreen || position() !== start) return;
         if(typeof refreshReaderStickyOffsets === 'function') refreshReaderStickyOffsets();
         var token = selectedButton.getBoundingClientRect();
         var closing = selectedButton === view.close;

@@ -37,7 +37,7 @@ const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shel
 const runtimePath='/js/bible/translation-picker.js';
 const alignmentPath='/js/word-study/alignment.js';
 const manifestPath='/js/bible/translation-manifest.js';
-const assetPaths=['/',manifestPath,'/js/bible/cloud-tts.js','/js/storage/user-data.js','/css/components.css','/css/companion.css','/js/bible/reader.js','/js/bible/scripture-picker.js','/js/bible/compare.js','/js/app.js','/js/bible/speech.js',...(previous.version>=44?[runtimePath]:[]),...(previous.version>=48?[alignmentPath]:[])];
+const assetPaths=['/',manifestPath,'/js/bible/cloud-tts.js','/js/storage/user-data.js','/css/components.css','/css/companion.css','/js/bible/reader.js','/js/bible/scripture-picker.js','/js/bible/compare.js','/js/word-study/controller.js','/js/app.js','/js/bible/speech.js',...(previous.version>=44?[runtimePath]:[]),...(previous.version>=48?[alignmentPath]:[])];
 const themePaths=['/css/theme.css','/js/theme.js'];
 const digest=body=>crypto.createHash('sha256').update(body).digest('hex');
 let prior,current,oldHashes,newHashes,themeHashes,runtimeHashes;
@@ -64,7 +64,7 @@ test('shell 54 preserves activation, Bible caches and the exact required assets'
   if(previous.version===43)normalized=normalized.replace("  '/js/bible/translation-picker.js',\n",'');
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(49);
-  // Pin the reviewed header implementation; permit only the six exact
+  // Pin the reviewed header implementation; permit only the exact
   // compatibility sources below. Historical fixtures remain original Git blobs.
   for(const asset of requiredAssets){
     const approved=execFileSync('git',['show',releaseCommit+':'+fileFor(asset)],{cwd:root});
@@ -72,15 +72,15 @@ test('shell 54 preserves activation, Bible caches and the exact required assets'
     if(/\.(?:png|woff2)$/.test(fileFor(asset)))expect(digest(body),asset).toBe(digest(approved));
     else {
       let expected=normalizeSource(approved),actual=normalizeSource(body);
-      const shell54Sources={"/js/bible/speech.js":"964cfb4cb6478e1fe580047d518086cbe112596d928dd70deae322be46986451","/":"54de54cad9ed108d156ef8f5e720bc9196aaf47352c7331730d664f70b8f5bc5","/css/components.css":"2a7310cf015d930e600321987b6a9119a6e12ac0e5874d12d3db6c998da4e294","/js/app.js":"4f369f7a4e77a943a604be05ae85dfceee9d1a3b27886ace5883fff47a544aef","/css/companion.css":"aa5e860a7201c3dfa8bfa78fb64b4b70c656e34afc47214d912a0a281267c8af","/js/bible/translation-picker.js":"9b279bb393c129815a3692a43b2e677eb3bbc5017a58ab67737bd47e52585a7f"};
+      const shell54Sources={"/js/bible/compare.js":"0a033e83a519f4ad152812ace6afabc3005c21ca8c98951f9125d6b258dae3d9","/js/word-study/controller.js":"e45d56a90d52367b16d7bc691a7728a9c418c3f784f7666f9f2ef490d7b58e75","/js/bible/speech.js":"964cfb4cb6478e1fe580047d518086cbe112596d928dd70deae322be46986451","/":"54de54cad9ed108d156ef8f5e720bc9196aaf47352c7331730d664f70b8f5bc5","/css/components.css":"2a7310cf015d930e600321987b6a9119a6e12ac0e5874d12d3db6c998da4e294","/js/app.js":"4f369f7a4e77a943a604be05ae85dfceee9d1a3b27886ace5883fff47a544aef","/css/companion.css":"ddec3be000521fa6d2bd938167629960c1c62f92b98032269b00589b7e39175f","/js/bible/reader.js":"d8b2717d31cac5b1a77858c9ad4fa89d82af29a4ae9368764481f9fa6f6d4ee8","/js/bible/translation-picker.js":"9b279bb393c129815a3692a43b2e677eb3bbc5017a58ab67737bd47e52585a7f"};
       if(shell54Sources[asset]) expect(digest(Buffer.from(actual)),asset).toBe(shell54Sources[asset]);
       else expect(actual,asset).toBe(expected);
     }
   }
-  for(const asset of previous.version===53?['/','/css/components.css','/js/app.js','/css/companion.css',runtimePath,'/js/bible/speech.js']:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
+  for(const asset of previous.version===53?['/','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js','/js/word-study/controller.js']:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
     expect(normalizeSource(current[asset]),asset+' must deliver the accepted release').not.toBe(normalizeSource(prior[asset]));
   }
-  if(previous.version===53) for(const asset of requiredAssets.filter(url=>!['/','/css/components.css','/js/app.js','/css/companion.css',runtimePath,'/js/bible/speech.js'].includes(url))){
+  if(previous.version===53) for(const asset of requiredAssets.filter(url=>!['/','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js','/js/word-study/controller.js'].includes(url))){
     expect(normalizeSource(fs.readFileSync(path.join(root,fileFor(asset)))),asset+' stays unchanged from production 53').toBe(normalizeSource(prior[new URL(asset,'http://localhost').pathname]));
   }
   expect(normalizeSource(current[manifestPath])===normalizeSource(prior[manifestPath])).toBe(previous.version>=52);

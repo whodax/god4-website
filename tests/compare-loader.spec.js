@@ -120,3 +120,50 @@ test.describe('installed offline Compare',()=>{
   await page.reload();await page.evaluate(()=>initializeBibleExperience());expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined');await tab(page).click();await rendered(page);await expect(page.locator('.compare-col').nth(1).locator('.vnum')).toHaveCount(51);
  });
 });
+
+for(const renderFirst of [true,false])test(`Compare retains the second choice when the pending first column renders ${renderFirst?'before':'after'} selection`,async({page})=>{
+  await page.route('**/js/bible/kjv.js*',async route=>{
+    started();
+    await gate;
+    await route.continue();
+  });
+  let release,started;
+  const gate=new Promise(resolve=>{release=resolve;});
+  const requested=new Promise(resolve=>{started=resolve;});
+  try{
+    await page.goto('/');
+    await page.evaluate(async()=>{
+      await initializeBibleExperience();
+      await ReaderTranslationLoader.ensure();
+      await navigateReaderToPassage('john',3,16);
+    });
+    await page.getByRole('button',{name:'Compare',exact:true}).click();
+    const left=page.locator('[data-themed-select="compare-edition-0"]');
+    const right=page.locator('[data-themed-select="compare-edition-1"]');
+    const dialog=page.locator('#themedSelectPicker');
+    const rightSelect=page.locator('#compareGrid [data-compare-side="right"]');
+    await expect(rightSelect).toHaveValue('asv');
+    const oldText=await page.locator('#compareGrid .compare-text').first().elementHandle();
+    await left.click();
+    await dialog.locator('[data-option-value="kjv"]').click();
+    await requested;
+    await right.click();
+    const web=dialog.locator('[data-option-value="web"]');
+    await expect(web).toBeVisible();
+    if(renderFirst){
+      release();
+      await page.waitForFunction(node=>!node.isConnected,oldText);
+    }
+    await web.press('Enter');
+    await expect(dialog).toBeHidden();
+    await expect(right).toBeFocused();
+    release();
+    await page.waitForFunction(node=>!node.isConnected,oldText);
+    await expect(rightSelect).toHaveValue('web');
+    await expect.poll(()=>page.evaluate(()=>UserData.compare.load().selections.slice(0,2))).toEqual(['kjv','web']);
+    const text=await page.evaluate(()=>BibleData.getVerse('kjv','john',3,16)?.text);
+    expect(text).toBeTruthy();
+    await expect(page.locator('#compareGrid .compare-text').first()).toContainText(text);
+    await expect(rightSelect).toHaveValue('web');
+  }finally{release();}
+});

@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 
 test.use({contextOptions:{reducedMotion:'reduce'},serviceWorkers:'block'});
@@ -39,7 +40,7 @@ for(const width of [1280,390,320])for(const fullscreen of [false,true]){
           await initializeBibleExperience();await changeTranslation(context.translationId);
           await navigateReaderToPassage(context.bookId,context.chapter,1);await WordStudyLoader.ensure();await document.fonts.ready;
         },{translationId,bookId,chapter});
-        if(fullscreen)await page.locator('#fullscreenBtn').click();
+        if(fullscreen)await toggleReaderFullscreen(page);
         const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term]').first();
         const excerpt=await word.evaluate(element=>element.closest('.reader-verse').getAttribute('data-verse-text'));
         await word.press('Enter');

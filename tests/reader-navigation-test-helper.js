@@ -35,7 +35,7 @@ async function selectCompareOption(locator,value){
   const replacement=page.locator(`[data-themed-select="${key}"]`);
   await expect(replacement).toBeFocused();
 }
-async function toggleReaderFullscreen(page){
+async function toggleReaderFullscreen(page,activate=button=>button.click()){
   const {expect}=require('@playwright/test');
   await page.evaluate(()=>ReaderTranslationLoader.ensure().catch(()=>{}));
   await expect.poll(()=>page.evaluate(()=>{
@@ -44,8 +44,8 @@ async function toggleReaderFullscreen(page){
   })).toBe(true);
   const more=page.locator('#readerMoreTrigger');
   const closed=await more.getAttribute('aria-expanded')==='false';
-  if(!await page.locator('#fullscreenBtn').isVisible())await more.click();
-  await page.locator('#fullscreenBtn').click();
-  if(closed && await more.getAttribute('aria-expanded')==='true')await more.click();
+  if(!await page.locator('#fullscreenBtn').isVisible())await activate(more);
+  await activate(page.locator('#fullscreenBtn'));
+  if(closed && await more.getAttribute('aria-expanded')==='true')await activate(more);
 }
 module.exports={selectReaderOption,selectCompareOption,toggleReaderFullscreen};

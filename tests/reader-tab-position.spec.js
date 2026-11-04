@@ -9,7 +9,7 @@ async function location(page,verse){
     height:document.documentElement.scrollHeight,focus:document.activeElement.id}),verse);
 }
 async function interactWithTab(page,name,mobile){
-  const button=page.locator(`[aria-controls="view-${name}"]`);
+  const button=page.locator(`[aria-controls="view-${name}"]:visible`);
   if(mobile) await button.tap(); else await button.click();
   await frames(page);
 }
@@ -74,9 +74,9 @@ for(const [name,viewport] of [['mobile',{width:390,height:844}],['desktop',{widt
     test('keyboard tab return restores reading position while preserving tab focus',async({page})=>{
       await readAt(page);
       const before=await location(page,45);
-      const compare=page.locator('[aria-controls="view-compare"]');
+      const compare=page.locator('[aria-controls="view-compare"]:visible');
       await compare.focus();await compare.press('Enter');await frames(page);
-      const reader=page.locator('[aria-controls="view-reader"]');
+      const reader=page.locator('[aria-controls="view-reader"]:visible');
       await reader.focus();await reader.press('Enter');await frames(page);
       const after=await location(page,45);
       expect(Math.abs(after.y-before.y)).toBeLessThanOrEqual(3);

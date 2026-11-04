@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 const reference=page=>page.locator('#readerReferenceText');
 async function open(page,{width=1280,speech=false}={}){
@@ -102,7 +103,7 @@ test('translation, Search targeting and session reload restore the launcher and 
   await picker(page);await book(page,'john');await chapter(page,3);await expect(page.locator('[data-picker-action="verse"][aria-current="true"]')).toHaveText('16');
 });
 for(const width of [390,320])for(const fullscreen of [false,true])test(`stepped picker at ${width}px, fullscreen=${fullscreen}, fits and returns focus`,async({page})=>{
-  await open(page,{width});if(fullscreen)await page.locator('#fullscreenBtn').click();await picker(page);
+  await open(page,{width});if(fullscreen)await toggleReaderFullscreen(page);await picker(page);
   await expect(page.locator('.picker-detail')).toBeHidden();await page.locator('#pickerBookSearch').fill('psalms');await book(page,'psalms');
   await expect(page.locator('.picker-books')).toBeHidden();await chapter(page,119);
   await expect(page.locator('[data-picker-action="verse"]')).toHaveCount(176);
