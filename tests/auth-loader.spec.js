@@ -95,7 +95,7 @@ test('cached auth stays unexecuted until Account activation and loads offline',a
   await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));
   if(!await page.evaluate(()=>Boolean(navigator.serviceWorker.controller)))await page.reload();
   await expect.poll(()=>page.evaluate(()=>Boolean(navigator.serviceWorker.controller))).toBe(true);
-  const cached=await page.evaluate(async()=>{const cache=await caches.open('god4-shell-compact-reader-53');return(await cache.keys()).map(r=>new URL(r.url).pathname)});
+  const cached=await page.evaluate(async()=>{const cache=await caches.open('god4-shell-compact-reader-54');return(await cache.keys()).map(r=>new URL(r.url).pathname)});
   for(const asset of [...deps.slice(1),'/js/auth/config.js','/js/auth/loader.js','/js/auth/account-ui.js'])expect(cached).toContain(asset);
   expect(cached).not.toContain(deps[0]);
   expect(await page.evaluate(()=>typeof God4Auth)).toBe('undefined');
@@ -118,16 +118,15 @@ test('returning identity causes no additional layout shift relative to eager bas
     },key);
     if(eager){await page.route('http://127.0.0.1:4173/',r=>r.fulfill({contentType:'text/html',body:baseline('index.html')}));await page.route('**/js/auth/account-ui.js*',r=>r.fulfill({contentType:'text/javascript',body:baseline('js/auth/account-ui.js')}));}
     await page.goto('http://127.0.0.1:4173/');await expect.poll(()=>page.evaluate(()=>typeof finishRestore)).toBe('function');
-    await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(600);
+    await page.evaluate(()=>document.fonts.ready);
     const start=await page.evaluate(()=>performance.now());const before=await page.locator('#accountTrigger').boundingBox();
-    await page.evaluate(()=>finishRestore());await expect(page.locator('#accountTrigger')).toHaveText('reader@example.test');await page.waitForTimeout(150);
+    await page.evaluate(()=>finishRestore());await expect(page.locator('#accountTrigger')).toHaveText('reader@example.test');await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
     const after=await page.locator('#accountTrigger').boundingBox();const cls=await page.evaluate(start=>shifts.filter(e=>e.time>=start&&!e.recent).reduce((sum,e)=>sum+e.value,0),start);
     measurements.push({eager,before,after,cls});await context.close();
   }
   console.log('Account restoration layout measurements:',JSON.stringify(measurements));
   expect(measurements[1].cls).toBeLessThanOrEqual(measurements[0].cls+0.0001);
-  expect(measurements[1].before.width).toBeCloseTo(measurements[0].before.width,1);
-  expect(measurements[1].after.width).toBeCloseTo(measurements[0].after.width,1);
+  expect(measurements[1].after).toEqual(measurements[1].before);
 });
 
 test('anonymous critical-path script bytes are measured separately from worker precache',async({browser})=>{

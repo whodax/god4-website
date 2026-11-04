@@ -349,31 +349,35 @@ async function loadCompare(positionAfterRender){
   updateCompareNavigation();
   var columns = [];
   for(var index = 0; index < compareState.count; index++) columns.push(renderCompareColumn(compareState.selections[index], index));
-  var focused = document.activeElement;
-  var focusKey = focused && focused.dataset.themedSelect;
-  grid.innerHTML = columns.join('');
+  var template = document.createElement('template');
+  template.innerHTML = columns.join('');
+  // Keep open pickers and focused controls attached while verse text refreshes.
+  Array.from(template.content.children).forEach(function(column,index){
+    var existing = grid.children[index];
+    var select = column.querySelector('select');
+    if(existing){
+      existing.querySelector('select').value = select.value;
+      existing.querySelector('.compare-text').replaceWith(column.querySelector('.compare-text'));
+    } else {
+      grid.appendChild(column);
+      select.addEventListener('change', function(){
+        var otherIndex = compareState.selections.indexOf(select.value);
+        if(otherIndex !== -1 && otherIndex !== index){
+          compareState.selections[otherIndex] = compareState.selections[index];
+        }
+        compareState.selections[index] = select.value;
+        compareState.persisted = true;
+        saveCompareState();
+        loadCompare();
+      });
+    }
+  });
+  while(grid.children.length > columns.length) grid.lastElementChild.remove();
   grid.classList.remove('compare-grid--3', 'compare-grid--4');
   if(compareState.count > 2) grid.classList.add('compare-grid--' + compareState.count);
   updateCompareEditionControl();
-  grid.querySelectorAll('[data-compare-index]').forEach(function(select){
-    select.addEventListener('change', function(){
-      var index = Number(select.getAttribute('data-compare-index'));
-      var otherIndex = compareState.selections.indexOf(select.value);
-      if(otherIndex !== -1 && otherIndex !== index){
-        compareState.selections[otherIndex] = compareState.selections[index];
-      }
-      compareState.selections[index] = select.value;
-      compareState.persisted = true;
-      saveCompareState();
-      loadCompare();
-    });
-  });
   function enhance(){
     document.querySelectorAll('#view-compare select').forEach(ThemedSelectPicker.bind);
-    if(focusKey && !focused.isConnected && document.activeElement === document.body){
-      var replacement = document.querySelector('[data-themed-select="'+focusKey+'"]');
-      if(replacement) replacement.focus({preventScroll:true});
-    }
   }
   if(window.ThemedSelectPicker) enhance();
   else ReaderTranslationLoader.ensure().then(enhance).catch(function(){});

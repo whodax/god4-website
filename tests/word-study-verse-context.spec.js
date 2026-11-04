@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 test.use({contextOptions:{reducedMotion:'reduce'}});
 
@@ -31,7 +32,7 @@ for(const [mode,width,fullscreen] of [['desktop',1280,false],['fullscreen deskto
         await navigateReaderToPassage(book,chapter,verse);await WordStudyLoader.ensure();await document.fonts.ready;
         WordStudyProvider.lookup=()=>new Promise(resolve=>window.finishContextDefinition=resolve);
       },{book,chapter,verse});
-      if(fullscreen) await page.locator('#fullscreenBtn').click();
+      if(fullscreen) await toggleReaderFullscreen(page);
       const word=page.locator(`#readerContent [data-verse-number="${verse}"] [data-word-study-term]`).first();
       const expected=await word.evaluate(e=>e.closest('.reader-verse').getAttribute('data-verse-text'));
       await word.press('Enter');

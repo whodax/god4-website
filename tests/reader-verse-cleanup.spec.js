@@ -1,4 +1,4 @@
-const {selectReaderOption}=require('./reader-navigation-test-helper');
+const {toggleReaderFullscreen,selectReaderOption}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 
 async function openReader(page){
@@ -53,7 +53,7 @@ for(const width of [320, 375, 480]){
     await page.setViewportSize({width, height:800});
     await openReader(page);
     for(const fullscreen of [false, true]){
-      if(fullscreen) await page.locator('#fullscreenBtn').click();
+      if(fullscreen) await toggleReaderFullscreen(page);
       await page.locator('#readerContent .reader-verse').last().scrollIntoViewIfNeeded();
       expect(await page.evaluate(() => {
         const shell = document.getElementById('view-reader');

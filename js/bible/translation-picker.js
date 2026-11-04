@@ -659,8 +659,9 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
       describeOptions();
       if(!media.matches && typeof BibleSpeech!=='undefined') BibleSpeech.updateControls();
       sync();
+      if(focus && focus.id==='readerVoiceCommands' && !media.matches && panel.hidden) setReaderOptionsOpen(true);
       if(focus && focus.getClientRects().length && document.activeElement!==focus) focus.focus({preventScroll:true});
-      else if(focus && focus.id==='readerVoiceCommands' && !media.matches && panel.hidden) more.focus({preventScroll:true});
+      if(focus && ['readAloudPlay','readerVoiceCommands'].includes(focus.id) && window.ReaderReadingControls && ReaderReadingControls.reveal) ReaderReadingControls.reveal(focus,true);
       if(native) focus.removeAttribute('data-reader-reparenting');
       if(typeof refreshReaderStickyOffsets==='function' && refreshReaderStickyOffsets) refreshReaderStickyOffsets();
     }
@@ -672,7 +673,7 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
 var ReaderReadingControls = window.ReaderReadingControls || (function(){
   var initialized=false, view, toolbar, recovery, media, sheetStyle, frame=0;
   var concealed=false, keyboard=false, interacting=false, assistive=false, revealed=false, readingGesture=false;
-  var previousState='idle', context='', lastY=0, distance=0, direction=0, intent=0;
+  var previousState='idle', context='', lastY=0, distance=0, direction=0, intent=0, requestedControl=null;
   var priorInert=false, priorAria=null, playbackSeen=false;
   function surface(){return view.classList.contains('reader-fullscreen') ? view : window;}
   function position(){return surface()===window ? window.scrollY : view.scrollTop;}
@@ -740,10 +741,30 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
     if(frame) return;
     frame=requestAnimationFrame(function(){frame=0;sync();});
   }
-  function restore(){revealed=true;conceal(false);focusControls();}
+  // An explicit destination owns visibility; opening a modal alone does not.
+  // Clear the old reading gesture so its pending scroll cannot conceal the target.
+  function reveal(target,reparent){
+    if(!initialized || reparent && requestedControl!==target) return false;
+    requestedControl=target || null;
+    var state=speechState();
+    intent=0;distance=0;readingGesture=false;revealed=state==='playing' || state==='preparing';conceal(false);
+    if(target){
+      if(typeof refreshReaderStickyOffsets==='function' && refreshReaderStickyOffsets) refreshReaderStickyOffsets();
+      var r=target.getBoundingClientRect(),v=window.visualViewport;
+      var top=view.classList.contains('reader-fullscreen') ? view.getBoundingClientRect().top : document.querySelector('body>nav').getBoundingClientRect().bottom;
+      var bottom=v ? v.offsetTop+v.height : innerHeight;
+      if(r.top<top || r.bottom>bottom-8){
+        if(currentVerse) scrollReaderTargetIntoView(view.querySelector('.verse-focused'),'instant');
+        else scrollReaderStartIntoView();
+      }
+      target.focus({preventScroll:true});
+    }
+    context=scope();lastY=position();
+  }
+  function restore(){reveal();revealed=true;focusControls();}
   function gesture(event){
     if(!event.target.closest('#readerContent') || event.ctrlKey || event.touches && event.touches.length>1) return;
-    intent=performance.now();readingGesture=true;
+    requestedControl=null;intent=performance.now();readingGesture=true;
   }
   function scrolled(event){
     if(event.target!==document && event.target!==view) return;
@@ -784,11 +805,11 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
     if(typeof ResizeObserver!=='undefined') new ResizeObserver(recoveryHeight).observe(recovery);
     media.addEventListener('change',queue);
     document.addEventListener('pointerdown',function(event){
-      keyboard=false;assistive=false;readingGesture=false;interacting=toolbar.contains(event.target);intent=0;distance=0;lastY=position();
+      requestedControl=null;keyboard=false;assistive=false;readingGesture=false;interacting=toolbar.contains(event.target);intent=0;distance=0;lastY=position();
     },true);
     ['pointerup','pointercancel'].forEach(function(type){document.addEventListener(type,function(){interacting=false;queue();},true);});
     window.addEventListener('keydown',function(event){
-      keyboard=true;intent=0;readingGesture=false;
+      requestedControl=null;keyboard=true;intent=0;readingGesture=false;
       if(concealed && event.key==='Escape' && (document.activeElement===recovery || document.activeElement===document.body)){
         event.preventDefault();event.stopPropagation();restore();
       }
@@ -805,5 +826,5 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
     observer.observe(document.getElementById('tray'),{attributes:true,attributeFilter:['class']});
     sync();
   }
-  return {initialize:initialize,sync:queue};
+  return {initialize:initialize,sync:queue,reveal:reveal};
 })();

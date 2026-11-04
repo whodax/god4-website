@@ -81,7 +81,7 @@ for(const query of ['?cloud-tts=0']){
 test('cloud mode requests one exact verse and preserves continuous callbacks, highlighting and accessible Stop', async ({page}) => {
   await install(page); const requests = await mockEndpoint(page); await open(page);
   await page.locator('#readAloudPlay').click(); await countSources(page, 1);
-  expect(requests[0]).toEqual({text:await page.evaluate(() => BibleData.getChapter(currentTranslation,currentBook,currentChapter).bookName+' chapter '+currentChapter+'. '+BibleData.getVerse(currentTranslation, currentBook, currentChapter, 1).text), voice:'male', rate:1});
+  expect(requests[0]).toEqual({text:await page.evaluate(() => BibleData.getChapter(currentTranslation,currentBook,currentChapter).bookName+' chapter '+currentChapter+' verse 1. '+BibleData.getVerse(currentTranslation, currentBook, currentChapter, 1).text), voice:'male', rate:1});
   await expect(page.locator('#readAloudPlay')).toHaveAttribute('aria-label', 'Stop reading aloud');
   await expect(page.locator('#readerContent .reader-verse').first()).toHaveClass(/spoken/);
   expect(await page.evaluate(() => window.__audio.local.length)).toBe(0);
@@ -265,7 +265,7 @@ test('cloud Journey crosses the assigned chapters and stops at the exact daily b
   await page.locator('#readAloudPlay').click();
   await selectReaderOption(page.locator('#verseSelect'),'42');
   await page.locator('#readAloudPlay').click(); await countSources(page, 3);
-  expect(requests[2].text).toBe('Matthew chapter 10. '+await page.evaluate(() => BibleData.getVerse('web', 'matthew', 10, 42).text));
+  expect(requests[2].text).toBe('Matthew chapter 10 verse 42. '+await page.evaluate(() => BibleData.getVerse('web', 'matthew', 10, 42).text));
   await end(page);
   await expect(page.locator('#view-plan')).toHaveClass(/active/);
   await expect(page.locator('#journeyStatus')).toHaveText('Daily reading complete. Returning to Plan.');

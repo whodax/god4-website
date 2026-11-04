@@ -175,3 +175,44 @@
   .saved-verse-details{display:flex;justify-content:space-between;align-items:center;margin-top:6px;}
   .saved-verse-reference{font-family:'Inter','Inter Fallback',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);}
   .saved-verse-remove{background:none;border:none;color:var(--oxblood);font-size:12px;cursor:pointer;font-family:'Inter','Inter Fallback',sans-serif;}
+/* Header navigation shares the existing theme tokens; the overlay never reflows Scripture. */
+.header-menu button{min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:3px;background:var(--vellum-card);color:var(--ink);font:14px/1.4 'Inter','Inter Fallback',sans-serif;cursor:pointer;}
+#headerMenuTrigger{padding:8px 12px;margin-left:8px;letter-spacing:.05em;border:1px solid transparent;cursor:pointer;}
+#headerMenuTrigger,.site-header-v2 .btn-primary{min-width:44px;min-height:44px;border-radius:20px;border-color:transparent;background:var(--ink);color:var(--vellum-card);font:12px/1.4 'Inter','Inter Fallback',sans-serif;}
+#headerMenuTrigger:hover,.site-header-v2 .btn-primary:hover{background:var(--oxblood);color:var(--vellum-card);border-color:transparent;}
+[data-theme="dark"] #headerMenuTrigger,[data-theme="dark"] .site-header-v2 .btn-primary{background:var(--theme-surface);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line);}
+[data-theme="dark"] #headerMenuTrigger:hover,[data-theme="dark"] .site-header-v2 .btn-primary:hover{background:var(--highlight);color:var(--ink);}
+.header-menu button:hover{border-color:var(--gold);background:var(--vellum);}
+#headerMenuTrigger:focus-visible,.header-menu button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+.header-menu{width:min(620px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:18px;border:1px solid var(--line);border-radius:3px;background:var(--vellum-card);color:var(--ink);box-shadow:var(--shadow);overflow:auto;overscroll-behavior:contain;}
+.header-menu::backdrop{background:rgba(27,42,68,.55);}
+.header-menu-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.header-menu h2{margin:0;font-size:28px;}
+.header-menu-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.header-menu h3{margin:16px 0 8px;font-size:22px;}
+.header-menu section button{display:block;width:100%;padding:10px 12px;text-align:left;margin:6px 0;overflow-wrap:anywhere;}
+.header-menu p{margin:8px 0 0;}
+.foot-col .nav-unavailable{display:block;font-size:14px;color:var(--ink-soft);margin-bottom:9px;}
+#headerBrandGroup{margin:0;gap:8px;}
+#headerMenuSlot{display:flex;align-items:center;}
+.site-header-v2 :is(.saved-pill,.account-trigger){display:flex;align-items:center;justify-content:center;text-align:center;}
+#readerContent .word-study-token[aria-description]:focus{outline:2px solid var(--ink);outline-offset:2px;}
+@media(max-width:620px){
+  .header-menu-groups{grid-template-columns:minmax(0,1fr);gap:0;}
+  body>nav.site-header-v2{display:grid;grid-template-columns:44px minmax(0,1.3fr) minmax(0,1fr) max-content;column-gap:4px;row-gap:2px;}
+  body>nav.site-header-v2>.brand,body>nav.site-header-v2 .header-actions{display:contents;}
+  #headerBrandGroup{grid-column:1/-1;grid-row:1;justify-self:center;position:relative;min-height:60px;}
+  #headerBrandGroup .brand-mark{position:absolute;right:calc(100% + 8px);top:0;}
+  #headerMenuSlot{grid-column:4;grid-row:2;min-width:44px;}
+  body>nav.site-header-v2 .theme-toggle{grid-column:1;grid-row:2;}
+  body>nav.site-header-v2 .saved-pill{grid-column:2;grid-row:2;gap:3px;}
+  body>nav.site-header-v2 .account-trigger{grid-column:3;grid-row:2;}
+  body>nav.site-header-v2 .saved-pill,body>nav.site-header-v2 .account-trigger{width:100%;max-width:100%;min-width:44px;min-height:44px;padding:7px 6px;white-space:nowrap;}
+  #headerMenuTrigger{margin-left:0;}
+  #headerMenuFallback{min-width:44px;min-height:44px;margin:0;padding:8px 12px;}
+}
+
+#headerMenuFallback[hidden],#headerMenuTrigger[hidden]{display:none;}
+
+/* Last: only a complete matching stylesheet can enable the enhanced menu. */
+#headerMenuTrigger{--header-menu-ready:header-2;}

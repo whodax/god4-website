@@ -72,7 +72,8 @@ for(const provider of ['native','cloud'])for(const [spoken,state,book,chapter,ve
       await expect.poll(()=>page.evaluate(()=>getPlaybackResumeCursor().verse)).toBe(verse===null?1:verse);
       const expected=await page.evaluate(({book,chapter,verse})=>BibleData.getVerse('web',book,chapter,verse===null?1:verse).text,{book,chapter,verse});
       const existingCloud=provider==='cloud' && ['play','play the passage','read','read the passage','resume','continue'].includes(spoken);
-      const intro=book==='john' && chapter===2 && !existingCloud?'':await page.evaluate(({book,chapter})=>BibleData.getChapter('web',book,chapter).bookName+' chapter '+chapter+'. ',{book,chapter});
+      const resuming=['play','play the passage','read','read the passage','resume','continue'].includes(spoken);
+      const intro=(resuming && !existingCloud) || spoken.startsWith('repeat')?'':await page.evaluate(({book,chapter,verse})=>BibleData.getChapter('web',book,chapter).bookName+' chapter '+chapter+' verse '+(verse===null?1:verse)+'. ',{book,chapter,verse});
       await expect.poll(()=>text(page,provider)).toBe(intro+expected);
       if(existingCloud)expect(await page.evaluate(()=>__isolation.requests.length)).toBe(1);
     } else if(state==='idle')await expect(page.locator('#verseSelect')).toHaveValue(verse===null?'':String(verse));
@@ -159,14 +160,14 @@ test('release edge: a cloud failure during capture cannot start native fallback 
   await expect.poll(()=>page.evaluate(()=>BibleSpeech.getResolvedVoiceInfo().provider)).toBe('native');
   expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');expect(await page.evaluate(()=>__isolation.native.length)).toBe(0);
   await page.evaluate(()=>__isolation.captures[0].emit('resume'));await count(page,'native',1);
-  expect(await text(page,'native')).toBe('John chapter 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,1).text));
+  expect(await text(page,'native')).toBe('John chapter 1 verse 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,1).text));
   expect(await page.evaluate(()=>__isolation.overlaps)).toEqual([]);
 });
 
 for(const provider of ['native','cloud'])test(`${provider} release edge: superseded verse requests and navigation cannot execute stale audio`,async({page})=>{
   await open(page,provider);await mic(page);
   await page.evaluate(()=>{__isolation.autoEnd=false;readVerseAloud(1);readVerseAloud(2);__isolation.captures[0].finish();});await count(page,provider,1);
-  expect(await text(page,provider)).toBe('John chapter 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,2).text));
+  expect(await text(page,provider)).toBe('John chapter 1 verse 2. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,2).text));
   await expect(page.locator('#voiceStatusTop')).toHaveText('Microphone off.');
   await mic(page);await page.evaluate(()=>__isolation.captures[1].emit('play'));
   await page.evaluate(async()=>{await navigateReaderToPassage('john',3,null);__isolation.captures[1].finish();});
@@ -219,7 +220,7 @@ test.afterEach(async({page},info)=>{
 for(const provider of ['native','cloud']){
   for(const fullscreen of [false,true])test(`${provider} fullscreen=${fullscreen}: Voice Commands Play releases capture before chapter introduction and echo cannot cancel three complete verses`,async({page})=>{
     await open(page,provider,fullscreen);await mic(page);await page.evaluate(()=>__isolation.captures.at(-1).emit('play'));await count(page,provider,1);
-    expect(await text(page,provider)).toBe('John chapter 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,1).text));
+    expect(await text(page,provider)).toBe('John chapter 1 verse 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,1).text));
     await page.evaluate(()=>{__isolation.playChanges=[];new MutationObserver(records=>__isolation.playChanges.push(...records.map(r=>r.attributeName||'text'))).observe(document.getElementById('readAloudPlay'),{childList:true,attributes:true,attributeFilter:['aria-label','data-playback-state']});});
     await page.evaluate(()=>{const r=__isolation.captures[0];r.emit('John chapter one');r.emit('pause',false);r.emit('stop');});
     expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('playing');

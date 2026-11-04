@@ -17,7 +17,7 @@ for(const width of [390,320])test.describe(`${width}px sticky overlap`,()=>{
       await page.evaluate(({book,chapter,verse})=>navigateReaderToPassage(book,chapter,verse),{book,chapter,verse});
       for(const phase of ['selected','returned','ordinary-scroll','reader-end']){
         if(phase==='returned'){
-          await page.locator('[aria-controls="view-compare"]').tap();await page.locator('[aria-controls="view-reader"]').tap();
+          await page.locator('[aria-controls="view-compare"]:visible').tap();await page.locator('[aria-controls="view-reader"]:visible').tap();
         }
         if(phase==='ordinary-scroll') await page.evaluate(()=>window.scrollBy({top:90,behavior:'instant'}));
         if(phase==='reader-end') await page.evaluate(()=>window.scrollBy({top:document.getElementById('view-reader').getBoundingClientRect().bottom-document.querySelector('.bs-nav').getBoundingClientRect().bottom-30,behavior:'instant'}));
@@ -52,7 +52,7 @@ for(const width of [1024,1280,1440])test(`desktop ${width}px keeps the existing 
   await page.emulateMedia({reducedMotion:'reduce'});await page.goto('/');
   await page.evaluate(async()=>{await initializeBibleExperience();await changeTranslation('web');await document.fonts.ready;await navigateReaderToPassage('genesis',24,45);});
   const toolbar=page.locator('.reader-toolbar'),header=page.locator('.bs-header');
-  const compare=page.locator('[aria-controls="view-compare"]');
+  const compare=page.locator('[aria-controls="view-compare"]:visible');
   const verse=page.locator('#readerContent [data-verse-number="45"]');
   const assertStack=async()=>{
     const measured=await stack(page),h=await header.boundingBox();
@@ -79,7 +79,7 @@ for(const width of [1024,1280,1440])test(`desktop ${width}px keeps the existing 
   await expect(page.locator('#compareSummary')).toBeVisible();
   const summary=await page.locator('#compareSummary').boundingBox(),h=await header.boundingBox();
   expect(summary.y).toBeGreaterThanOrEqual(h.y+h.height);
-  await clickVisible(page.locator('[aria-controls="view-reader"]'));
+  await clickVisible(page.locator('[aria-controls="view-reader"]:visible'));
   await expect(toolbar).toBeVisible();await assertStack();
   await clickVisible(page.locator('#readerMoreTrigger'));
   await clickVisible(page.locator('#fullscreenBtn'));

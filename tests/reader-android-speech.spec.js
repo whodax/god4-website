@@ -56,7 +56,7 @@ for(const provider of ['native','cloud','fallback'])for(const fullscreen of [fal
     await mic(page);
     await page.locator('#readAloudPlay').focus();await page.keyboard.press('Enter');await count(page,provider,1);
     await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Pause reading aloud');
-    expect(await text(page,provider)).toBe('John chapter 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,1).text));
+    expect(await text(page,provider)).toBe('John chapter 1 verse 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,1).text));
     await page.evaluate(()=>{
       __android.changes=[];__android.play=document.getElementById('readAloudPlay');
       new MutationObserver(records=>__android.changes.push(...records.map(r=>r.attributeName||'text'))).observe(__android.play,{childList:true,attributes:true,attributeFilter:['aria-label','data-playback-state']});
@@ -80,10 +80,10 @@ for(const provider of ['native','cloud','fallback'])for(const fullscreen of [fal
     await page.locator('.reader-compact-stop').click();expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
     await page.locator('[data-voice-command-button]').click();expect(await page.evaluate(()=>__android.stops)).toBe(1);
   });
-  test(`${provider} fullscreen=${fullscreen}: chapter-only announcements survive pause, seek, repeat and chapter progression`,async({page})=>{
+  test(`${provider} fullscreen=${fullscreen}: destination announcements distinguish pause, explicit seek, repeat and automatic chapter progression`,async({page})=>{
     await open(page,{provider,fullscreen});await page.evaluate(()=>navigateReaderToPassage('john',1,51));
     await page.locator('#readAloudPlay').focus();await page.keyboard.press('Enter');await count(page,provider,1);
-    expect(await text(page,provider)).toBe('John chapter 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,51).text));
+    expect(await text(page,provider)).toBe('John chapter 1 verse 51. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,51).text));
     await end(page,provider);await count(page,provider,2);
     expect(await text(page,provider)).toBe('John chapter 2. '+await page.evaluate(()=>BibleData.getVerse('web','john',2,1).text));
     await page.evaluate(()=>{pauseReader();resumeReader();});
@@ -91,13 +91,13 @@ for(const provider of ['native','cloud','fallback'])for(const fullscreen of [fal
     await end(page,provider);await count(page,provider,3);
     expect(await text(page,provider)).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',2,2).text));
     await page.evaluate(()=>nextReaderVerse());await count(page,provider,4);
-    expect(await text(page,provider)).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',2,3).text));
+    expect(await text(page,provider)).toBe('John chapter 2 verse 3. '+await page.evaluate(()=>BibleData.getVerse('web','john',2,3).text));
     await page.evaluate(()=>previousReaderVerse());await count(page,provider,5);
-    expect(await text(page,provider)).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',2,2).text));
+    expect(await text(page,provider)).toBe('John chapter 2 verse 2. '+await page.evaluate(()=>BibleData.getVerse('web','john',2,2).text));
     await page.evaluate(()=>repeatLastSpokenVerse());await count(page,provider,6);
     expect(await text(page,provider)).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',2,2).text));
     await page.evaluate(async()=>{stopReader();await changeTranslation('dra');playReader();});await count(page,provider,7);
-    const expected=await page.evaluate(()=>{const c=BibleData.getChapter('dra',currentBook,currentChapter);return c.bookName+' chapter '+currentChapter+'. '+c.verses[getPlaybackResumeCursor().verse-1];});
+    const expected=await page.evaluate(()=>{const c=BibleData.getChapter('dra',currentBook,currentChapter);return c.bookName+' chapter '+currentChapter+' verse '+getPlaybackResumeCursor().verse+'. '+c.verses[getPlaybackResumeCursor().verse-1];});
     expect(await text(page,provider)).toBe(expected);
   });
 }
@@ -158,7 +158,7 @@ test('silence during continuous playback does not stop Reader audio or restart r
 test('all nine translations announce verified chapter metadata and preserve canonical text',async({page})=>{
   await open(page);
   for(const id of ['web','asv','kjv','ylt','dby','webster','rv','gnv','dra']){
-    const expected=await page.evaluate(async id=>{stopReader();await changeTranslation(id);await navigateReaderToPassage('john',1,1);const v=BibleData.getVerse(id,'john',1,1).text;readVerseAloud(1);return {spoken:BibleData.getChapter(id,'john',1).bookName+' chapter 1. '+(id==='kjv'?v.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g,'$1'):v),canonical:v};},id);
+    const expected=await page.evaluate(async id=>{stopReader();await changeTranslation(id);await navigateReaderToPassage('john',1,1);const v=BibleData.getVerse(id,'john',1,1).text;readVerseAloud(1);return {spoken:BibleData.getChapter(id,'john',1).bookName+' chapter 1 verse 1. '+(id==='kjv'?v.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g,'$1'):v),canonical:v};},id);
     expect(await text(page,'native')).toBe(expected.spoken);
     expect(await page.evaluate(id=>BibleData.getVerse(id,'john',1,1).text,id)).toBe(expected.canonical);
   }
@@ -203,7 +203,7 @@ for(const provider of ['native','cloud'])test(`${provider}: all 51 John 1 verses
   const verses=await page.evaluate(()=>BibleData.getChapter('web','john',1).verses);
   expect(verses).toHaveLength(51);
   for(let i=0;i<verses.length;i++){
-    expect(await text(page,provider)).toBe((i===0?'John chapter 1. ':'')+verses[i]);
+    expect(await text(page,provider)).toBe((i===0?'John chapter 1 verse 1. ':'')+verses[i]);
     await end(page,provider);await count(page,provider,i+2);
   }
   expect(await text(page,provider)).toBe('John chapter 2. '+await page.evaluate(()=>BibleData.getVerse('web','john',2,1).text));

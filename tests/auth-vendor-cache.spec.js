@@ -11,7 +11,7 @@ const vendorBytes = fs.readFileSync(require.resolve('../js/vendor/supabase-js-2.
 const origin = 'http://127.0.0.1:4173';
 const vendorPath = '/js/vendor/supabase-js-2.117.0.min.js';
 const vendorCache = 'god4-auth-vendor-supabase-js-2.117.0';
-const shell = 'god4-shell-compact-reader-53';
+const shell = 'god4-shell-compact-reader-54';
 const previousShell = 'god4-shell-compact-reader-24';
 
 function copy(response) {
@@ -244,7 +244,7 @@ async function vendorPresent(page) {
 async function enableFixture(page) {
   await page.evaluate(async () => {
     const config = `var God4AuthConfig={enabled:true,authStorageKey:'sb-runtime-cache-test',supabaseUrl:'https://example.supabase.co',publishableKey:'test-public',allowedHosts:['127.0.0.1'],allowedOrigins:['http://127.0.0.1:4173'],callbackPath:'/auth/callback/'};`;
-    await (await caches.open('god4-shell-compact-reader-53')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
+    await (await caches.open('god4-shell-compact-reader-54')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
   });
   await page.reload();
 }
@@ -290,7 +290,7 @@ test('returning-session hint warms the vendor cache and an unexpired SDK fixture
   await install(page);
   await page.evaluate(async () => {
     const config = `var God4AuthConfig={enabled:true,authStorageKey:'sb-runtime-cache-test',supabaseUrl:'https://example.supabase.co',publishableKey:'test-public',allowedHosts:['127.0.0.1'],allowedOrigins:['http://127.0.0.1:4173'],callbackPath:'/auth/callback/'};`;
-      await (await caches.open('god4-shell-compact-reader-53')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
+      await (await caches.open('god4-shell-compact-reader-54')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
     localStorage.setItem('sb-runtime-cache-test', 'null');
   });
   await page.addInitScript(() => {

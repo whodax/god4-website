@@ -6,9 +6,8 @@ test.use({hasTouch:true});
 async function open(page,width,fullscreen){
   await page.setViewportSize({width,height:740});
   await page.addInitScript(()=>{window.IntersectionObserver=class{observe(){}unobserve(){}disconnect(){}};});
-  await page.goto('/');await page.evaluate(()=>initializeBibleExperience());
-  await page.evaluate(()=>document.fonts.ready);
-  await page.evaluate(()=>document.getElementById('view-reader').scrollIntoView({block:'start',behavior:'instant'}));
+  await page.goto('/');await page.evaluate(async()=>{await initializeBibleExperience();await ReaderTranslationLoader.ensure();await document.fonts.ready;scrollReaderStartIntoView();});
+  await expect.poll(()=>page.evaluate(()=>Math.abs(document.querySelector('#readerContent h2').getBoundingClientRect().top-readerVisibleTop()-16))).toBeLessThan(2);
   if(fullscreen)await toggleReaderFullscreen(page);
   await page.locator('#readerMoreTrigger').tap();await page.evaluate(()=>ReaderTranslationLoader.ensure());
   await page.evaluate(()=>document.fonts.ready);
@@ -18,8 +17,8 @@ async function geometry(page){
   return page.evaluate(()=>{
     const selectors=[
       ['[data-reader-select="bookSelect"]','[data-reader-select="chapterSelect"]','[data-reader-select="verseSelect"]'],
-      ['#readerSaveVerse','[data-voice-command-button]'],
-      ['#fullscreenBtn','.reader-compact-stop']
+      ['#readerSaveVerse','#fullscreenBtn'],
+      ['.reader-compact-stop']
     ];
     const rect=element=>{
       const bounds=element.getBoundingClientRect();
@@ -57,7 +56,9 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true]){
       if(bounds.top<bottom || bounds.bottom>innerHeight || !bounds.width)return false;
       return content.contains(document.elementFromPoint(bounds.left+bounds.width/2,bounds.top+bounds.height/2));
     })),measured.panel.bottom)).toBe(true);
-    await expect(page.getByRole('group',{name:'Voice controls',exact:true})).toHaveCount(1);
+    await expect(page.getByRole('group',{name:'Reading controls',exact:true})).toHaveCount(1);
+    await expect(page.locator('.reader-toolbar > #readerVoiceCommands')).toBeVisible();
+    await expect(page.locator('[data-voice-command-button]')).toHaveCount(1);
     for(const row of ['bookSelect','chapterSelect','verseSelect','readAloudVoice','readAloudSpeed']){
       const launcher=page.locator(`[data-reader-select="${row}"]`);
       await launcher.tap();await expect(page.locator('#readerOptionsPicker')).toBeVisible();

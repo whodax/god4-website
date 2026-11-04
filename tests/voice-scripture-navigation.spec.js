@@ -62,21 +62,21 @@ test('Catholic aliases and explicit cross-canon targets work without inferring n
   await command(page,'DRA Daniel 13:65');expect(await position(page)).toMatchObject({id:'dra',book:'daniel',chapter:13,verse:65});
 });
 
-for(const cloud of [false,true])test(`${cloud?'cloud':'native'}: compound navigation resumes at the new passage, same-chapter verse commands do not repeat chapter introductions`,async({page})=>{
+for(const cloud of [false,true])test(`${cloud?'cloud':'native'}: compound navigation resumes at the new passage, same-chapter verse commands identify their destination`,async({page})=>{
   await open(page,cloud);await page.evaluate(async()=>{await navigateReaderToPassage('john',2,5);playReader();});
   await expect.poll(()=>page.evaluate(cloud=>cloud?__voiceNav.sources.length:__voiceNav.native.length,cloud)).toBe(1);
   await command(page,'King James Version, Romans chapter eight verse twenty eight');
   await expect.poll(()=>page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
   const spoken=await page.evaluate(cloud=>cloud?__voiceNav.requests.map(r=>r.text):__voiceNav.native.map(u=>u.text),cloud);
-  expect(spoken).toHaveLength(2);expect(spoken[1]).toBe('Romans chapter 8. '+await page.evaluate(()=>BibleData.getVerse('kjv','romans',8,28).text.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g,'$1')));
+  expect(spoken).toHaveLength(2);expect(spoken[1]).toBe('Romans chapter 8 verse 28. '+await page.evaluate(()=>BibleData.getVerse('kjv','romans',8,28).text.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g,'$1')));
   await command(page,'Verse 30');const last=await page.evaluate(cloud=>cloud?__voiceNav.requests.at(-1).text:__voiceNav.native.at(-1).text,cloud);
-  expect(last).toBe(await page.evaluate(()=>BibleData.getVerse('kjv','romans',8,30).text.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g,'$1')));
+  expect(last).toBe('Romans chapter 8 verse 30. '+await page.evaluate(()=>BibleData.getVerse('kjv','romans',8,30).text.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g,'$1')));
 });
 
 test('paused navigation prepares the destination without audio and Resume starts only that passage',async({page})=>{
   await open(page);await page.evaluate(()=>playReader());await expect.poll(()=>page.evaluate(()=>__voiceNav.native.length)).toBe(1);
   await command(page,'pause');await command(page,'ASV Romans 8:28');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');expect(await page.evaluate(()=>__voiceNav.native.length)).toBe(1);
-  await command(page,'resume');await expect.poll(()=>page.evaluate(()=>__voiceNav.native.length)).toBe(2);expect(await page.evaluate(()=>__voiceNav.native[1].text)).toBe('Romans chapter 8. '+await page.evaluate(()=>BibleData.getVerse('asv','romans',8,28).text));
+  await command(page,'resume');await expect.poll(()=>page.evaluate(()=>__voiceNav.native.length)).toBe(2);expect(await page.evaluate(()=>__voiceNav.native[1].text)).toBe('Romans chapter 8 verse 28. '+await page.evaluate(()=>BibleData.getVerse('asv','romans',8,28).text));
 });
 
 test('unavailable and empty verses never select an edition or skip to a different coordinate',async({page})=>{
@@ -163,7 +163,7 @@ for(const cloud of [false,true])test(`${cloud?'cloud':'native'}: Read Geneva and
   const spoken=await page.evaluate(cloud=>cloud?__voiceNav.requests.map(r=>r.text):__voiceNav.native.map(u=>u.text),cloud);
   expect(spoken).toHaveLength(2);
   const passage=await page.evaluate(()=>BibleData.getVerse('dra','tobit',1,2).text);
-  expect(spoken[1]).toContain(passage);expect(spoken[1]).toMatch(/chapter 1\./);expect(spoken[1]).not.toMatch(/verse 2/i);
+  expect(spoken[1]).toBe(await page.evaluate(()=>BibleData.getChapter('dra','tobit',1).bookName)+' chapter 1 verse 2. '+passage);
   await command(page,'pause');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');
   await command(page,'resume');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
   await command(page,'stop');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');

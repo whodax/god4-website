@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 
 test.use({contextOptions:{reducedMotion:'reduce'},serviceWorkers:'block'});
@@ -29,7 +30,7 @@ async function open(page,passage,fullscreen,deferred=false){
     if(context.deferred)WordStudyProvider.lookup=()=>new Promise(resolve=>{window.finishCompactDefinition=resolve;});
   },{translationId,bookId,chapter,verse,deferred});
   await page.waitForFunction(()=>Boolean(window.WordStudyAlignment));
-  if(fullscreen)await page.locator('#fullscreenBtn').click();
+  if(fullscreen)await toggleReaderFullscreen(page);
   const word=page.locator(`#readerContent [data-verse-number="${verse}"] [data-word-study-term]`).first();
   const excerpt=await word.evaluate(element=>element.closest('.reader-verse').getAttribute('data-verse-text'));
   await word.press('Enter');

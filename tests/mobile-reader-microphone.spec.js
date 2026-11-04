@@ -44,7 +44,7 @@ test('keyboard focus, microphone release, cancellation and breakpoint restoratio
   await expect(mic(page)).toHaveAttribute('aria-busy','true');expect(await page.evaluate(()=>__mic.audio.length)).toBe(0);await page.evaluate(()=>__mic.captures[0].end());await expect.poll(()=>page.evaluate(()=>__mic.audio.length)).toBe(1);
   await page.evaluate(()=>{__mic.autoEnd=true;stopReader();});
   for(let i=0;i<3;i++){
-    await mic(page).focus();await page.setViewportSize({width:1440,height:900});await expect(page.locator('#readerMoreTrigger')).toBeFocused();await expect(page.locator('#readerSecondaryControls #readerVoiceCommands')).toHaveCount(1);await page.locator('#readerMoreTrigger').click();await expect(mic(page)).toBeVisible();await expect(mic(page).locator('svg')).toBeHidden();await page.locator('#readerMoreTrigger').click();
+    await mic(page).focus();await page.setViewportSize({width:1440,height:900});await expect(mic(page)).toBeFocused();await expect(page.locator('#readerMoreTrigger')).toHaveAttribute('aria-expanded','true');await expect(page.locator('#readerSecondaryControls #readerVoiceCommands')).toHaveCount(1);await expect(mic(page)).toBeVisible();await expect(mic(page).locator('svg')).toBeHidden();await page.locator('#readerMoreTrigger').click();await expect(page.locator('#readerMoreTrigger')).toBeFocused();await expect(page.locator('#readerMoreTrigger')).toHaveAttribute('aria-expanded','false');
     await page.setViewportSize({width:390,height:844});await expect(page.locator('.reader-toolbar > #readerVoiceCommands')).toBeVisible();await say(page,'stop');
   }
   expect(await page.evaluate(()=>document.getElementById('readerVoiceCommands')===__originalMic)).toBe(true);expect(await page.evaluate(()=>__mic.captures.length)).toBe(4);

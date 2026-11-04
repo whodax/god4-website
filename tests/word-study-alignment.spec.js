@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 test.use({contextOptions:{reducedMotion:'reduce'},serviceWorkers:'block'});
 
@@ -28,7 +29,7 @@ for(const [translationId,bookId,chapter,verse] of [['kjv','isaiah',53,5],['web',
     test(`${translationId} ${mode}: unavailable alignment preserves words without overlapping context`,async({page},info)=>{
       await page.setViewportSize({width,height});
       const word=await open(page,translationId,bookId,chapter,verse);
-      if(fullscreen)await page.locator('#fullscreenBtn').click();
+      if(fullscreen)await toggleReaderFullscreen(page);
       await word.press('Enter');
       await expect(page.locator('#wordStudyOriginalLanguage')).toBeVisible();
       await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');

@@ -575,3 +575,143 @@ renderLeaf();
 initializeGoogleFonts();
 if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeApp, { once: true });
 else initializeApp();
+/* Header destinations delegate to existing controls, not a second navigation system. */
+(function(){
+var trigger,dialog,status,busy=false,revision=0,initialized=false;
+function byId(id){return document.getElementById(id);}
+function focus(element){if(element) element.focus({preventScroll:true});}
+function reveal(element){
+if(!element) return;
+if(element.closest('.reader-toolbar') && window.ReaderReadingControls && ReaderReadingControls.reveal && ReaderReadingControls.reveal(element)!==false) return;
+var r=element.getBoundingClientRect(),v=window.visualViewport;
+var top=Math.max(v?v.offsetTop:0,document.querySelector('body>nav').getBoundingClientRect().bottom),bottom=v?v.offsetTop+v.height:innerHeight;
+if(element.closest('#readerContent')) top=Math.max(top,readerVisibleTop());
+var delta=r.height>bottom-top-16 || r.top<top+8?r.top-top-8:r.bottom>bottom-8?r.bottom-bottom+8:0;
+if(delta){var view=byId('view-reader');(view && view.classList.contains('reader-fullscreen') && view.contains(element)?view:window).scrollBy({top:delta,behavior:'instant'});}
+focus(element);
+}
+function search(){
+var input=byId('searchInput'),v=window.visualViewport,pending=0;
+function adjust(){cancelAnimationFrame(pending);pending=requestAnimationFrame(function(){if(document.activeElement===input) reveal(input);});}
+reveal(input);
+if(!v) return;
+v.addEventListener('resize',adjust);v.addEventListener('scroll',adjust);
+input.addEventListener('blur',function(){cancelAnimationFrame(pending);v.removeEventListener('resize',adjust);v.removeEventListener('scroll',adjust);},{once:true});
+}
+function close(restore){revision++;busy=false;dialog.removeAttribute('aria-busy');if(dialog.open) dialog.close();trigger.setAttribute('aria-expanded','false');if(restore!==false) focus(trigger);}
+function open(){
+if(trayOpen) toggleTray();
+if(!dialog) build();
+if(dialog.open) return;
+revision++;status.textContent='';
+dialog.querySelector('[data-destination="theme"]').textContent=document.documentElement.dataset.theme==='dark'?'Switch to Light Mode':'Switch to Dark Mode';
+dialog.showModal();trigger.setAttribute('aria-expanded','true');
+dialog.scrollTop=0;focus(byId('headerMenuClose'));
+}
+function build(){
+document.body.append(byId('headerMenuTemplateV2').content.cloneNode(true));
+dialog=byId('headerMenu');status=byId('headerMenuStatus');
+byId('headerMenuClose').addEventListener('click',close);
+dialog.addEventListener('cancel',function(event){event.preventDefault();close();});
+dialog.addEventListener('keydown',function(event){
+if(event.key!=='Tab') return;
+var buttons=Array.from(dialog.querySelectorAll('button')),first=buttons[0],last=buttons[buttons.length-1];
+if(event.shiftKey && document.activeElement===first || !event.shiftKey && document.activeElement===last){event.preventDefault();(event.shiftKey?last:first).focus();}
+});
+dialog.addEventListener('close',function(){trigger.setAttribute('aria-expanded',String(dialog.open));});
+var backdrop=false;
+function outside(event){var r=dialog.getBoundingClientRect();return event.clientX<r.left || event.clientX>r.right || event.clientY<r.top || event.clientY>r.bottom;}
+document.addEventListener('wheel',function(event){if(dialog.open && outside(event)) event.preventDefault();},{passive:false,capture:true});
+document.addEventListener('touchmove',function(event){if(dialog.open && event.touches[0] && outside(event.touches[0])) event.preventDefault();},{passive:false,capture:true});
+dialog.addEventListener('pointerdown',function(event){backdrop=event.target===dialog && outside(event);});
+dialog.addEventListener('click',function(event){
+if(backdrop && event.target===dialog && outside(event)){backdrop=false;close();return;}
+backdrop=false;
+var button=event.target.closest('[data-destination]');
+if(button && busy!==revision) activate(button.dataset.destination);
+});
+}
+async function activate(action){
+var request=revision;busy=request;dialog.setAttribute('aria-busy','true');
+try{
+var readerActions=['reader','compare','plan','study','translation','aloud','commands','voice','speed'];
+if(readerActions.includes(action) && !await initializeBibleExperience()) throw new Error('Bible unavailable');
+if(['reader','study','aloud','commands','voice','speed'].includes(action) || action==='translation' && matchMedia('(max-width:620px)').matches){
+try{await ReaderTranslationLoader.ensure();}catch(error){/* Existing native controls remain usable. */}
+}
+// Escape/Close may cancel a slow load. Never move focus or navigate afterwards.
+if(!dialog.open || request!==revision) return;
+var closed=new Promise(function(resolve){dialog.addEventListener('close',resolve,{once:true});});
+close(false);await closed;
+if(request+1!==revision || dialog.open) return;
+if(readerActions.includes(action)){
+var view=action==='compare' || action==='plan'?action:'reader';
+var tab=document.querySelector('.bs-nav [aria-controls="view-'+view+'"]');
+if(!byId('view-'+view).classList.contains('active')){
+if(view==='reader'){
+switchView(view,tab,false);
+if(readerTabPosition && readerTabPosition.reference===readerTabReference()) window.scrollTo({top:readerTabPosition.top,behavior:'instant'});
+}else tab.click();
+}
+if(view==='reader' && window.ReaderReadingControls && ReaderReadingControls.reveal) ReaderReadingControls.reveal();
+if(action==='reader'){
+var r=byId('view-reader').getBoundingClientRect(),nav=document.querySelector('body>nav').getBoundingClientRect();
+if(r.top>=nav.bottom || r.bottom<=nav.bottom){
+if(currentVerse) scrollReaderTargetIntoView(byId('readerContent').querySelector('.verse-focused'),'instant');
+else scrollReaderStartIntoView();
+}
+focus(tab);
+}
+if(action==='compare') reveal(tab);
+if(action==='plan') reveal(byId('planHeading'));
+if(action==='study'){
+var word=byId('readerContent').querySelector('.verse-focused .word-study-token,.verse-spoken .word-study-token') || byId('readerContent').querySelector('.word-study-token');
+var hint='Select a word in the current verse, then activate it for Word Study.';
+byId('readerTranslationStatus').textContent=hint;
+if(word){word.setAttribute('aria-description',hint);reveal(word);}else reveal(byId('scripturePickerTrigger'));
+}
+if(action==='translation'){
+if(matchMedia('(max-width:620px)').matches && byId('readerTranslationTrigger')){var picker=byId('readerTranslationTrigger');reveal(picker);picker.click();}
+else reveal(byId('readerTranslation'));
+}
+if(['aloud','commands','voice','speed'].includes(action)){
+var id=action==='speed'?'readAloudSpeed':'readAloudVoice';
+var target=action==='aloud'?byId('readAloudPlay'):action==='commands'?byId('readerVoiceCommands'):document.querySelector('[data-reader-select="'+id+'"]');
+if(!target || ['voice','speed'].includes(action) && !target.getClientRects().length) target=byId(id);
+if(byId('readerSecondaryControls').contains(target)) setReaderOptionsOpen(true);
+reveal(target);
+if(action==='voice' || action==='speed') target.click();
+}
+return;
+}
+if(action==='search') search();
+if(action==='saved') document.querySelector('.saved-pill').click();
+if(action==='offline') byId('offlineBiblesTrigger').click();
+if(action==='account') byId('accountTrigger').click();
+if(action==='theme'){document.querySelector('[data-theme-toggle]').click();focus(trigger);}
+if(action==='featured' || action==='resources'){
+var section=byId(action==='featured'?'leafCard':'resources');section.setAttribute('tabindex','-1');reveal(section);
+}
+}catch(error){
+if(dialog.open && request===revision) status.textContent='This feature could not load. Please try again; existing controls remain available.';
+}finally{if(busy===request){busy=false;dialog.removeAttribute('aria-busy');}}
+}
+function initialize(){
+trigger=byId('headerMenuTrigger');
+if(initialized || !trigger || !byId('headerMenuFallback') || !byId('headerMenuTemplateV2') || !byId('headerMenuSlot') || typeof HTMLDialogElement==='undefined' || !HTMLDialogElement.prototype.showModal || getComputedStyle(trigger).getPropertyValue('--header-menu-ready').trim()!=='header-2') return;
+var media=matchMedia('(max-width:620px)');
+function arrange(){
+var slot=byId('headerMenuSlot'),target=document.querySelector(media.matches?'.header-actions':'body>nav>.brand');
+if(slot.parentElement===target) return;
+var active=slot.contains(document.activeElement)?document.activeElement:null;
+target.append(slot);focus(active);
+}
+media.addEventListener('change',arrange);arrange();
+trigger.addEventListener('click',open);initialized=true;
+var fallback=byId('headerMenuFallback'),focused=document.activeElement===fallback;
+fallback.hidden=true;trigger.hidden=false;if(focused) focus(trigger);
+}
+var sheet=document.querySelector('link[href="css/components.css"]');
+if(sheet) sheet.addEventListener('load',initialize);
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initialize,{once:true});else initialize();
+})();

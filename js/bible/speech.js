@@ -61,8 +61,8 @@ var BibleSpeech = (function createBibleSpeech(){
     var chapter = typeof BibleData!=='undefined' && verse.bookId && verse.chapter
       ? BibleData.getChapter(verse.translationId,verse.bookId,verse.chapter) : null;
     utterance.chapterKey = chapter ? JSON.stringify([verse.translationId,verse.bookId,verse.chapter]) : '';
-    if(chapter && utterance.chapterKey!==spokenChapterKey){
-      utterance.text=chapter.bookName+' chapter '+verse.chapter+'. '+text;
+    if(chapter && (!sessionStarted || utterance.chapterKey!==spokenChapterKey)){
+      utterance.text=chapter.bookName+' chapter '+verse.chapter+(!sessionStarted && verse.verseNumber?' verse '+verse.verseNumber:'')+'. '+text;
     }
     utterance.profileId = voicePreference;
     utterance.playbackRate = speed;
@@ -642,7 +642,7 @@ var BibleSpeech = (function createBibleSpeech(){
     session++;
     cancelSpeech();
     state = 'idle';
-    // Active Previous/Next replaces the transport without repeating the same chapter introduction.
+    // Transport replacement retains context; a new sequence still identifies its destination.
     preserveChapterOnce=preserveChapter===true;
     if(!preserveChapterOnce) spokenChapterKey='';
     sessionStarted=false;

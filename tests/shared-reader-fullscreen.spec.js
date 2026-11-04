@@ -319,3 +319,75 @@ test('fullscreen transfers the reading anchor without changing active narration'
   await page.evaluate(()=>window.__spoken.at(-1).onend());
   await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number','46');
 });
+
+async function fullscreenAnchorFixture(page,width,dark){
+  await page.setViewportSize({width,height:900});
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await openReader(page);
+  await page.evaluate(async()=>{
+    await initializeBibleExperience();
+    await ReaderTranslationLoader.ensure();
+    await document.fonts.ready;
+    document.getElementById('view-reader').scrollIntoView({block:'start',behavior:'instant'});
+  });
+  if(dark) await page.locator('[data-theme-toggle]').click();
+  await toggleReaderFullscreen(page);
+  await page.locator('#readerContent [data-verse-number="12"]').scrollIntoViewIfNeeded();
+}
+
+async function fullscreenReadingPosition(page){
+  return page.locator('#view-reader').evaluate(reader=>({
+    scroll:reader.scrollTop,
+    verse:reader.querySelector('#readerContent [data-verse-number="12"]').getBoundingClientRect().top
+  }));
+}
+
+for(const width of [320,390,430,1280,1440])for(const dark of [false,true]){
+  test(`${width}px ${dark?'Blue Dark':'Light'}: unchanged passage reuses the fullscreen anchor after a theme switch`,async({page})=>{
+    await fullscreenAnchorFixture(page,width,dark);
+    const before=await fullscreenReadingPosition(page);
+    expect(before.scroll).toBeGreaterThan(0);
+    await toggleReaderFullscreen(page);
+    await page.locator('[data-theme-toggle]').click();
+    await expect(page.locator('html')).toHaveAttribute('data-theme',dark?'light':'dark');
+    await toggleReaderFullscreen(page);
+    await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
+    expect(await fullscreenReadingPosition(page)).toEqual(before);
+  });
+}
+
+for(const change of ['scroll','navigate','select']){
+  test(`normal Reader ${change} invalidates the saved fullscreen anchor`,async({page})=>{
+    await fullscreenAnchorFixture(page,390,false);
+    const before=await fullscreenReadingPosition(page);
+    expect(before.scroll).toBeGreaterThan(0);
+    await toggleReaderFullscreen(page);
+    const normalY=await page.evaluate(()=>scrollY);
+    await page.evaluate(async ({change,normalY})=>{
+      if(change==='scroll'){
+        const scrolled=new Promise(resolve=>window.addEventListener('scroll',resolve,{once:true}));
+        window.scrollBy({top:500,behavior:'instant'});
+        await scrolled;
+      } else if(change==='navigate'){
+        await navigateReaderToPassage('john',2);
+        await navigateReaderToPassage('john',1);
+      } else if(change==='select'){
+        await navigateReaderToPassage('john',1,40);
+      }
+      window.scrollTo({top:normalY,behavior:'instant'});
+    },{change,normalY});
+    expect(await page.evaluate(()=>scrollY)).toBe(normalY);
+    await page.locator('#readerMoreTrigger').click();
+    const anchor=await page.locator('#readerContent [data-verse-number]').evaluateAll(verses=>{
+      const top=readerVisibleTop();
+      const verse=verses.find(el=>el.getBoundingClientRect().bottom>top+16 && el.getBoundingClientRect().top<innerHeight);
+      return {verse:verse.dataset.verseNumber,offset:Math.max(16,verse.getBoundingClientRect().top-top)};
+    });
+    await page.locator('#fullscreenBtn').click();
+    const actual=await page.locator(`#readerContent [data-verse-number="${anchor.verse}"]`)
+      .evaluate(el=>el.getBoundingClientRect().top-readerVisibleTop());
+    expect(Math.abs(actual-anchor.offset)).toBeLessThan(2);
+    expect(await fullscreenReadingPosition(page)).not.toEqual(before);
+    if(change==='select')await expect(page.locator('#readerContent [data-verse-number="40"]')).toHaveClass(/verse-focused/);
+  });
+}

@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test,expect}=require('@playwright/test');
 const {expectPlanFocusVisible}=require('./plan-focus-helpers');
 
@@ -94,7 +95,7 @@ for(const [width,key] of [[390,'Enter'],[320,'Space']]){
     await planKeyboard(page);
     await page.keyboard.press(key);
     await expect(page.locator('#readerContent h2')).toHaveText('Matthew 1');
-    await page.locator('#fullscreenBtn').press('Enter');
+    await toggleReaderFullscreen(page,button=>button.press('Enter'));
     await expect(page.locator('#view-reader')).toHaveClass(/reader-fullscreen/);
     await page.locator('#readerBackToPlan').press('Enter');
     await expect(page.locator('#view-reader')).not.toHaveClass(/reader-fullscreen/);

@@ -1,3 +1,4 @@
+const {toggleReaderFullscreen}=require('./reader-navigation-test-helper');
 const {test, expect} = require('@playwright/test');
 
 async function geometry(page){
@@ -53,7 +54,7 @@ for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false
       page.errors=[];page.on('pageerror',e=>page.errors.push(e.message));
       await page.goto('/');
       await page.evaluate(async()=>{await initializeBibleExperience();await changeTranslation('web');await navigateReaderToPassage('john',1);await document.fonts.ready;});
-      if(fullscreen) await page.locator('#fullscreenBtn').click();
+      if(fullscreen) await toggleReaderFullscreen(page);
     });
     test.afterEach(async({page})=>expect(page.errors).toEqual([]));
     for(const state of ['english','original','long','loading','unavailable','error']){
@@ -145,3 +146,36 @@ for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false
     });
   });
 }
+
+test('late Word Study fonts cannot scroll back after the reader passes the panel',async({page})=>{
+  await page.setViewportSize({width:320,height:844});
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.goto('/');
+  await page.evaluate(async()=>{
+    await initializeBibleExperience();
+    await changeTranslation('web');
+    await navigateReaderToPassage('john',1);
+    await document.fonts.ready;
+    await WordStudyLoader.ensure();
+  });
+  await page.locator('[data-word-study-term="upon"]').first().click();
+  const token=page.locator('.word-study-original-token').first();
+  await expect(token).toBeVisible();
+  await page.evaluate(()=>{
+    const gate=new Promise(resolve=>{window.releaseStudyFonts=resolve;});
+    Object.defineProperty(document.fonts,'ready',{configurable:true,get:()=>gate});
+  });
+  await token.click();
+  await expect(token).toBeFocused();
+  await scrollPanel(page,'beyond');
+  const before=await geometry(page);
+  expect(before.panel.bottom).toBeLessThan(before.stack);
+  await page.evaluate(async()=>{
+    releaseStudyFonts();
+    await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+  });
+  const after=await geometry(page);
+  expect(after.y).toBe(before.y);
+  expect(after.panel.bottom).toBeLessThan(after.stack);
+  await expect(token).toBeFocused();
+});
