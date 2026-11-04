@@ -74,7 +74,7 @@ test('ordinary homepage load requests no Bible translation and non-Bible content
   await page.waitForLoadState('networkidle');
 
   expect(requested).toEqual([]);
-  await expect(page.getByRole('heading', {name:/Scripture, kept open/i})).toBeVisible();
+  await expect(page.getByRole('heading', {name:/GOD SPOKE ALL THESE WORDS/i})).toBeVisible();
   await expect(page.locator('#verseRef')).toHaveText('John 3:16');
   await page.locator('.saved-pill').click();
   await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'false');
