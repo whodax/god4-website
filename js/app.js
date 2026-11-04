@@ -1,4 +1,3 @@
-/* ===== GENERAL GOD4.US APPLICATION ===== */
 const verses = [
   {ref:"John 3:16", text:"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."},
   {ref:"Psalm 23:1-2", text:"The Lord is my shepherd; I shall not want. He maketh me to lie down in green pastures."},
@@ -14,7 +13,6 @@ const verses = [
 
 let idx = 0;
 let saved = [];
-// Provider boundary: Saved Verses UI only calls load/save, not browser storage.
 const savedVersesStorage = {
   key: 'god4.savedVerses',
   load: function(){ return UserData.savedVerses.load(); },
@@ -414,7 +412,7 @@ function initializeGoogleFonts(){
 var fontLink = document.getElementById('googleFontsStylesheet');
 if(!fontLink || fontLink.media === 'all') return;
 var activateFonts = function(){ fontLink.media = 'all'; };
-// A cached stylesheet can finish before this deferred script runs.
+// Cached styles may already be ready.
 if(fontLink.sheet){
 activateFonts();
 return;
@@ -474,7 +472,6 @@ if(loaded) observer.disconnect();
 }, { threshold: 0.01 });
 observer.observe(companion);
 }
-/* ===== INIT ===== */
 var appInitialized = false;
 async function initializeApp(){
 if(appInitialized) return;
@@ -570,12 +567,17 @@ requestAnimationFrame(function(){ pulseBrandMark(); });
 if(typeof populateTranslations === 'function') populateTranslations();
 initializeBibleExperienceTriggers();
 renderLeaf();
+const panel=document.getElementById('commandments');
+if(panel){
+panel.lastElementChild.hidden=false;
+for(const type of ['click','scroll','input'])panel.addEventListener(type,event=>import('./home-commandments.js').then(module=>module.update(panel,event)).catch(()=>{}),true);
+}
 }
 
 initializeGoogleFonts();
 if(document.readyState === 'loading') window.addEventListener('DOMContentLoaded', initializeApp, { once: true });
 else initializeApp();
-/* Header destinations delegate to existing controls, not a second navigation system. */
+/* Header destinations use existing controls. */
 (function(){
 var trigger,dialog,status,busy=false,revision=0,initialized=false;
 function byId(id){return document.getElementById(id);}
@@ -639,7 +641,7 @@ if(readerActions.includes(action) && !await initializeBibleExperience()) throw n
 if(['reader','study','aloud','commands','voice','speed'].includes(action) || action==='translation' && matchMedia('(max-width:620px)').matches){
 try{await ReaderTranslationLoader.ensure();}catch(error){/* Existing native controls remain usable. */}
 }
-// Escape/Close may cancel a slow load. Never move focus or navigate afterwards.
+// Cancel stale menu navigation.
 if(!dialog.open || request!==revision) return;
 var closed=new Promise(function(resolve){dialog.addEventListener('close',resolve,{once:true});});
 close(false);await closed;

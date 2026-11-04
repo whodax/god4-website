@@ -11,7 +11,7 @@ const vendorBytes = fs.readFileSync(require.resolve('../js/vendor/supabase-js-2.
 const origin = 'http://127.0.0.1:4173';
 const vendorPath = '/js/vendor/supabase-js-2.117.0.min.js';
 const vendorCache = 'god4-auth-vendor-supabase-js-2.117.0';
-const shell = 'god4-shell-compact-reader-54';
+const shell = 'god4-shell-compact-reader-55';
 const previousShell = 'god4-shell-compact-reader-24';
 
 function copy(response) {
@@ -95,12 +95,13 @@ test('current shell preserves vendor exclusion and precaches activation loaders'
   expected.splice(expected.indexOf('/js/word-study/controller.js')+1,0,'/js/word-study/alignment.js');
   expected.splice(expected.indexOf('/js/bible/reader.js')+1,0,'/js/bible/translation-picker.js');
   expected.splice(expected.indexOf('/js/bible/library.js'),0,'/css/theme.css','/js/theme.js');
+  expected.splice(expected.indexOf('/js/app.js')+1,0,'/js/home-commandments.js');
   expect([...h.assets]).toEqual(expected);
-  expect(h.assets).toHaveLength(49);
+  expect(h.assets).toHaveLength(50);
   h.state.networkFailure = true;
   await h.event('install');
   await h.event('activate');
-  expect(h.requests).toHaveLength(49);
+  expect(h.requests).toHaveLength(50);
   expect(h.requests).not.toContain(origin + vendorPath);
   expect([...h.storage.keys()]).toEqual([shell]);
 });
@@ -244,7 +245,7 @@ async function vendorPresent(page) {
 async function enableFixture(page) {
   await page.evaluate(async () => {
     const config = `var God4AuthConfig={enabled:true,authStorageKey:'sb-runtime-cache-test',supabaseUrl:'https://example.supabase.co',publishableKey:'test-public',allowedHosts:['127.0.0.1'],allowedOrigins:['http://127.0.0.1:4173'],callbackPath:'/auth/callback/'};`;
-    await (await caches.open('god4-shell-compact-reader-54')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
+    await (await caches.open('god4-shell-compact-reader-55')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
   });
   await page.reload();
 }
@@ -290,7 +291,7 @@ test('returning-session hint warms the vendor cache and an unexpired SDK fixture
   await install(page);
   await page.evaluate(async () => {
     const config = `var God4AuthConfig={enabled:true,authStorageKey:'sb-runtime-cache-test',supabaseUrl:'https://example.supabase.co',publishableKey:'test-public',allowedHosts:['127.0.0.1'],allowedOrigins:['http://127.0.0.1:4173'],callbackPath:'/auth/callback/'};`;
-      await (await caches.open('god4-shell-compact-reader-54')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
+      await (await caches.open('god4-shell-compact-reader-55')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
     localStorage.setItem('sb-runtime-cache-test', 'null');
   });
   await page.addInitScript(() => {
@@ -405,11 +406,12 @@ test('measured cache-24/current installs retain vendor byte savings less the Wor
       await context.close();
     }
     console.log('Local uncompressed worker installation measurements:', JSON.stringify(measurements));
-    expect(measurements.map(m => [m.assets, m.fetches])).toEqual([[41, 41], [49, 49]]);
-    // Both fixtures use current HTML/files; current membership adds the loaders, Scripture picker, canon and theme assets while excluding the vendor.
+    expect(measurements.map(m => [m.assets, m.fetches])).toEqual([[41, 41], [50, 50]]);
+    // Both fixtures use current files and differ only in precache membership.
     const loaderBytes=fs.statSync(path.join(__dirname,'..','js/word-study/loader.js')).size + fs.statSync(path.join(__dirname,'..','js/bible/compare-loader.js')).size + fs.statSync(path.join(__dirname,'..','js/pwa/offline-translations-loader.js')).size + fs.statSync(path.join(__dirname,'..','js/bible/scripture-picker.js')).size + fs.statSync(path.join(__dirname,'..','js/bible/canon.js')).size + fs.statSync(path.join(__dirname,'..','js/word-study/alignment.js')).size + fs.statSync(path.join(__dirname,'..','js/bible/translation-picker.js')).size;
     const themeBytes=fs.statSync(path.join(__dirname,'..','js/theme.js')).size+fs.statSync(path.join(__dirname,'..','css/theme.css')).size;
-    expect(measurements[0].repositoryBytes - measurements[1].repositoryBytes).toBe(vendorBytes.length-loaderBytes-themeBytes);
-    expect(measurements[0].decoded - measurements[1].decoded).toBe(vendorBytes.length-loaderBytes-themeBytes);
+    const homepageBytes=fs.statSync(path.join(__dirname,'..','js/home-commandments.js')).size;
+    expect(measurements[0].repositoryBytes - measurements[1].repositoryBytes).toBe(vendorBytes.length-loaderBytes-themeBytes-homepageBytes);
+    expect(measurements[0].decoded - measurements[1].decoded).toBe(vendorBytes.length-loaderBytes-themeBytes-homepageBytes);
   } finally { await new Promise(resolve => fixture.server.close(resolve)); }
 });

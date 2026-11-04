@@ -17,8 +17,8 @@ for(const width of [320,390,430])for(const dark of [false,true]){
   expect(Math.abs(m.word.x+m.word.width/2-width/2)).toBeLessThanOrEqual(.5);expect(Math.abs(m.word.y+m.word.height/2-m.mark.y-m.mark.height/2)).toBeLessThanOrEqual(1);
   expect(m.mark.right).toBeLessThan(m.word.x);expect(m.word.x-m.mark.right).toBe(8);expect(m.mark.width).toBe(60);expect(m.mark.height).toBe(60);expect(m.mark.x).toBeGreaterThanOrEqual(0);
   expect(m.overflow).toBe(false);for(let i=0;i<4;i++){const b=m.buttons[i];expect(b.height).toBeGreaterThanOrEqual(44);expect(b.width).toBeGreaterThanOrEqual(44);expect(b.y).toBe(m.buttons[0].y);expect(b.y).toBeGreaterThan(m.mark.bottom);if(i)expect(b.x).toBeGreaterThanOrEqual(m.buttons[i-1].right);}
-  for(const selector of ['#accountTrigger','#headerMenuTrigger','.hero-ctas a[href="#resources"]']){
-   const colors=await page.locator(selector).evaluate(e=>{const c=getComputedStyle(e),b=getComputedStyle(document.querySelector('.hero-ctas .btn-primary'));return {background:c.backgroundColor,color:c.color,referenceBackground:b.backgroundColor,referenceColor:b.color,border:c.borderColor,referenceBorder:b.borderColor,shadow:c.boxShadow,referenceShadow:b.boxShadow};});
+  for(const selector of ['#accountTrigger','#headerMenuTrigger']){
+   const colors=await page.locator(selector).evaluate(e=>{const c=getComputedStyle(e),b=getComputedStyle(document.querySelector('#accountTrigger'));return {background:c.backgroundColor,color:c.color,referenceBackground:b.backgroundColor,referenceColor:b.color,border:c.borderColor,referenceBorder:b.borderColor,shadow:c.boxShadow,referenceShadow:b.boxShadow};});
    expect(colors.background).toBe(colors.referenceBackground);expect(colors.color).toBe(colors.referenceColor);expect(colors.border).toBe(colors.referenceBorder);expect(colors.shadow).toBe(colors.referenceShadow);
   }
   await page.screenshot({path:test.info().outputPath(`header-${width}-${dark}.png`)});expect(page.errors).toEqual([]);

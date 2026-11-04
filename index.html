@@ -65,16 +65,33 @@
 </nav>
 
 <main>
-<section class="hero">
-  <div>
-    <div class="eyebrow">A Digital Sanctuary</div>
-    <h1>Scripture, kept <em>open</em>,<br>kept forever.</h1>
-    <p class="lede">Read, search, and save sacred texts — freely accessible, eternally preserved, no account required.</p>
-    <div class="hero-ctas">
-      <a class="btn-primary" href="#verses">Begin Reading →</a>
-      <a class="btn-primary" href="#resources">Browse Resources</a>
+<section class="hero" aria-labelledby="homeHeading">
+  <h1 id="homeHeading"><span>GOD</span> SPOKE ALL THESE WORDS</h1>
+  <section id="commandments" aria-labelledby="commandmentsTitle">
+    <h2 id="commandmentsTitle">Exodus 20:2–17 (WEB)</h2>
+    <div class="commandment-content">
+    <div id="commandmentScroll" role="region" aria-label="Scroll through the ten commandments" tabindex="0">
+      <ol>
+        <li><p>“I am the LORD your God, who brought you out of the land of Egypt, out of the house of bondage. “You shall have no other gods before me.</p></li>
+        <li><p>“You shall not make for yourselves an idol, nor any image of anything that is in the heavens above, or that is on the earth beneath, or that is in the water under the earth:</p></li>
+        <li><p>“You shall not misuse the name of the LORD your God, for the LORD will not hold him guiltless who misuses his name.</p></li>
+        <li><p>“Remember the Sabbath day, to keep it holy. You shall labor six days, and do all your work,</p></li>
+        <li><p>“Honor your father and your mother, that your days may be long in the land which the LORD your God gives you.</p></li>
+        <li><p>“You shall not murder.</p></li>
+        <li><p>“You shall not commit adultery.</p></li>
+        <li><p>“You shall not steal.</p></li>
+        <li><p>“You shall not give false testimony against your neighbor.</p></li>
+        <li><p>“You shall not covet your neighbor’s house. You shall not covet your neighbor’s wife, nor his male servant, nor his female servant, nor his ox, nor his donkey, nor anything that is your neighbor’s.”</p></li>
+      </ol>
     </div>
-  </div>
+    <input type="range" class="commandment-scrollbar" min="1" max="10" value="1" aria-label="Scroll commandments" aria-valuetext="1 of 10" aria-controls="commandmentScroll">
+    </div>
+    <div class="commandment-controls" hidden>
+      <button type="button" data-step="-1" aria-label="Previous commandment" aria-controls="commandmentScroll" aria-disabled="true">↑</button>
+      <output aria-live="polite" aria-atomic="true">1 of 10</output>
+      <button type="button" data-step="1" aria-label="Next commandment" aria-controls="commandmentScroll" aria-disabled="false">↓</button>
+    </div>
+  </section>
 
   <div class="leaf-wrap">
     <div class="leaf" id="leafCard">
