@@ -88,9 +88,11 @@ test('Another Verse still follows the Scripture panel and advances the existing 
   await expect(page.locator('#commandments + .leaf-wrap #leafCard')).toBeVisible();
   await expect(page.getByRole('link',{name:/Begin Reading|Browse Resources/i})).toHaveCount(0);
   const ref=page.locator('#verseRef');
-  await expect(ref).toHaveText('John 3:16');
+  await ref.scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>localStorage.getItem('god4.discovery.openingTopic'));
+  const opening=await ref.textContent();
   await page.getByRole('button',{name:/Another verse/i}).click();
-  await expect(ref).toHaveText('Psalm 23:1-2');
+  await expect(ref).not.toHaveText(opening);
 });
 
 test('touch scrolling and enlarged text stay inside the panel in Dark Mode',async({page})=>{

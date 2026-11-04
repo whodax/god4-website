@@ -183,13 +183,13 @@ test.describe('cached menu',()=>{
     await choose(page,'reader');await expect(page.locator('#readerContent')).toContainText('John 1');
     await choose(page,'saved');await expect(page.locator('#tray')).toHaveAttribute('aria-hidden','false');await expect(page.locator('#savedCount')).toHaveText('1');
     expect(await state(page)).toEqual(before);
-    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-55')).keys())].length)).toBe(50);
+    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-56')).keys())].length)).toBe(52);
   });
 });
 
-test('implementation preserves shell 55, assets and strict startup budget intact',async()=>{
-  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-55'");
-  expect((sw.split('const SHELL_ASSETS = [')[1].split('];')[0].match(/(?:HOME_URL|OFFLINE_URL|'[^']+')/g)||[]).length).toBe(50);
+test('implementation preserves shell 56, assets and strict startup budget intact',async()=>{
+  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-56'");
+  expect((sw.split('const SHELL_ASSETS = [')[1].split('];')[0].match(/(?:HOME_URL|OFFLINE_URL|'[^']+')/g)||[]).length).toBe(52);
   const scripts=[...fs.readFileSync('index.html','utf8').matchAll(/<script[^>]+src="([^"]+)/g)].map(m=>m[1].split('?')[0].replace(/^\//,''));
   const bytes=scripts.reduce((n,file)=>n+Buffer.byteLength(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n')),0);
   console.log('Header menu startup scripts/bytes:',scripts.length,bytes);expect(scripts).toHaveLength(22);expect(bytes).toBeLessThanOrEqual(290914);

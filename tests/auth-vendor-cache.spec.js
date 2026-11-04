@@ -11,7 +11,7 @@ const vendorBytes = fs.readFileSync(require.resolve('../js/vendor/supabase-js-2.
 const origin = 'http://127.0.0.1:4173';
 const vendorPath = '/js/vendor/supabase-js-2.117.0.min.js';
 const vendorCache = 'god4-auth-vendor-supabase-js-2.117.0';
-const shell = 'god4-shell-compact-reader-55';
+const shell = 'god4-shell-compact-reader-56';
 const previousShell = 'god4-shell-compact-reader-24';
 
 function copy(response) {
@@ -95,13 +95,13 @@ test('current shell preserves vendor exclusion and precaches activation loaders'
   expected.splice(expected.indexOf('/js/word-study/controller.js')+1,0,'/js/word-study/alignment.js');
   expected.splice(expected.indexOf('/js/bible/reader.js')+1,0,'/js/bible/translation-picker.js');
   expected.splice(expected.indexOf('/js/bible/library.js'),0,'/css/theme.css','/js/theme.js');
-  expected.splice(expected.indexOf('/js/app.js')+1,0,'/js/home-commandments.js');
+  expected.splice(expected.indexOf('/js/app.js')+1,0,'/js/home-commandments.js','/js/home-discovery.js','/js/home-discovery-catalog.json');
   expect([...h.assets]).toEqual(expected);
-  expect(h.assets).toHaveLength(50);
+  expect(h.assets).toHaveLength(52);
   h.state.networkFailure = true;
   await h.event('install');
   await h.event('activate');
-  expect(h.requests).toHaveLength(50);
+  expect(h.requests).toHaveLength(52);
   expect(h.requests).not.toContain(origin + vendorPath);
   expect([...h.storage.keys()]).toEqual([shell]);
 });
@@ -245,7 +245,7 @@ async function vendorPresent(page) {
 async function enableFixture(page) {
   await page.evaluate(async () => {
     const config = `var God4AuthConfig={enabled:true,authStorageKey:'sb-runtime-cache-test',supabaseUrl:'https://example.supabase.co',publishableKey:'test-public',allowedHosts:['127.0.0.1'],allowedOrigins:['http://127.0.0.1:4173'],callbackPath:'/auth/callback/'};`;
-    await (await caches.open('god4-shell-compact-reader-55')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
+    await (await caches.open('god4-shell-compact-reader-56')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
   });
   await page.reload();
 }
@@ -291,7 +291,7 @@ test('returning-session hint warms the vendor cache and an unexpired SDK fixture
   await install(page);
   await page.evaluate(async () => {
     const config = `var God4AuthConfig={enabled:true,authStorageKey:'sb-runtime-cache-test',supabaseUrl:'https://example.supabase.co',publishableKey:'test-public',allowedHosts:['127.0.0.1'],allowedOrigins:['http://127.0.0.1:4173'],callbackPath:'/auth/callback/'};`;
-      await (await caches.open('god4-shell-compact-reader-55')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
+      await (await caches.open('god4-shell-compact-reader-56')).put('/js/auth/config.js', new Response(config, {headers:{'content-type':'application/javascript'}}));
     localStorage.setItem('sb-runtime-cache-test', 'null');
   });
   await page.addInitScript(() => {

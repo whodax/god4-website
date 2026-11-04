@@ -56,7 +56,10 @@ test('anonymous page eagerly loads only the loader; Reader/Search/Compare/Plans/
   await expect(page.locator('#results .result-card')).toHaveCount(1);
   await page.getByRole('button',{name:'Compare',exact:true}).click();await expect(page.locator('#compareGrid .compare-col')).toHaveCount(2);
   await page.getByRole('button',{name:'Plan',exact:true}).click();await expect(page.locator('#planDays .plan-day')).toHaveCount(30);
-  await page.locator('#heroFav').click();await page.locator('.saved-pill').click();await expect(page.locator('#trayList')).toContainText('John 3:16');
+  await page.locator('#leafCard').scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>localStorage.getItem('god4.discovery.openingTopic'));
+  const savedRef=await page.locator('#verseRef').textContent();
+  await page.locator('#heroFav').click();await page.locator('.saved-pill').click();await expect(page.locator('#trayList')).toContainText(savedRef);
   expect(requests.filter(p=>dependencies.includes(p))).toEqual([]);
 });
 test('focus alone does not request runtime',async({page})=>{
@@ -199,7 +202,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-55')).keys()).map(r=>new URL(r.url).pathname));
+  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-56')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');expect(assets).toContain('/js/word-study/alignment.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');
@@ -234,9 +237,11 @@ test('page script bytes and first-use network readiness are measured against mai
   const measurements=[];
   for(const current of [false,true]){
     const server=http.createServer((req,res)=>{const url=new URL(req.url,'http://localhost'),file=url.pathname==='/'?'index.html':url.pathname.slice(1);if(file.includes('..'))return res.writeHead(400).end();try{let body=current?fs.readFileSync(path.join(root,file)):execFileSync('git',['show',baseline+':'+file],{cwd:root,stdio:['ignore','pipe','ignore']});if(file.endsWith('.js')||file.endsWith('.html'))body=Buffer.from(body.toString().replace(/\r\n/g,'\n'));res.writeHead(200,{'content-type':file.endsWith('.js')?'application/javascript':file.endsWith('.html')?'text/html':file.endsWith('.css')?'text/css':'application/octet-stream','cache-control':'no-store'}).end(body);}catch{res.writeHead(404).end();}});
-    await new Promise(r=>server.listen(0,'127.0.0.1',r));const context=await browser.newContext({serviceWorkers:'block'}),page=await context.newPage();
+    await new Promise(r=>server.listen(0,'127.0.0.1',r));const context=await browser.newContext({serviceWorkers:'block',viewport:{width:390,height:300}}),page=await context.newPage();
     try{
       await page.goto('http://127.0.0.1:'+server.address().port);
+      // Keep the discovery card outside its preload margin for this startup-only measurement.
+      if(current)expect(await page.locator('#leafCard').evaluate(card=>card.getBoundingClientRect().top-innerHeight)).toBeGreaterThan(200);
       const scripts=await page.evaluate(()=>performance.getEntriesByType('resource').filter(e=>e.initiatorType==='script').map(e=>({url:e.name,transfer:e.transferSize,decoded:e.decodedBodySize})));
       measurements.push({current,count:scripts.length,transfer:scripts.reduce((n,x)=>n+x.transfer,0),decoded:scripts.reduce((n,x)=>n+x.decoded,0)});
       if(current){expect(scripts.filter(s=>dependencies.includes(new URL(s.url).pathname))).toEqual([]);const timing=await page.evaluate(async()=>{const start=performance.now();await WordStudyLoader.ensure();return performance.now()-start;});console.log('Word Study network readiness ms:',timing);}
@@ -244,5 +249,5 @@ test('page script bytes and first-use network readiness are measured against mai
   }
   console.log('Word Study baseline/current LF local uncompressed page scripts:',JSON.stringify(measurements));
   // The Catholic Bible architecture adds one eager shared canon metadata script (js/bible/canon.js).
-  expect(measurements.map(m=>m.count)).toEqual([24,22]);expect(measurements[1].decoded).toBeLessThan(measurements[0].decoded);
+  expect(measurements.map(m=>m.count)).toEqual([24,22]);expect(measurements[1].decoded).toBeLessThan(measurements[0].decoded);expect(measurements[1].decoded).toBeLessThanOrEqual(290914);
 });

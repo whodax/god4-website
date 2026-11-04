@@ -75,7 +75,12 @@ test('ordinary homepage load requests no Bible translation and non-Bible content
 
   expect(requested).toEqual([]);
   await expect(page.getByRole('heading', {name:/GOD SPOKE ALL THESE WORDS/i})).toBeVisible();
-  await expect(page.locator('#verseRef')).toHaveText('John 3:16');
+  const featured = await page.locator('#leafCard').evaluate(card => ({
+    reference:card.querySelector('#verseRef').textContent,
+    text:card.querySelector('#dropcap').textContent+card.querySelector('#verseText').textContent
+  }));
+  const topics = require('../js/home-discovery-catalog.json').topics;
+  expect(topics.flatMap(topic=>topic.passages).find(p=>p.reference===featured.reference)?.text).toBe(featured.text);
   await page.locator('.saved-pill').click();
   await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'false');
   expect(await page.evaluate(() => ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra'].filter(id => BibleTranslationLoader.isLoaded(id)))).toEqual([]);

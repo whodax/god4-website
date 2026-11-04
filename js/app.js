@@ -1,17 +1,3 @@
-const verses = [
-  {ref:"John 3:16", text:"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."},
-  {ref:"Psalm 23:1-2", text:"The Lord is my shepherd; I shall not want. He maketh me to lie down in green pastures."},
-  {ref:"Proverbs 3:5", text:"Trust in the Lord with all thine heart; and lean not unto thine own understanding."},
-  {ref:"Philippians 4:13", text:"I can do all things through Christ which strengtheneth me."},
-  {ref:"Genesis 1:1", text:"In the beginning God created the heaven and the earth."},
-  {ref:"Hebrews 11:1", text:"Now faith is the substance of things hoped for, the evidence of things not seen."},
-  {ref:"Psalm 46:10", text:"Be still, and know that I am God."},
-  {ref:"Romans 8:28", text:"And we know that all things work together for good to them that love God, to them that are the called according to his purpose."},
-  {ref:"Isaiah 41:10", text:"Fear thou not; for I am with thee: be not dismayed; for I am thy God."},
-  {ref:"Joshua 1:9", text:"Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the Lord thy God is with thee whithersoever thou goest."},
-];
-
-let idx = 0;
 let saved = [];
 const savedVersesStorage = {
   key: 'god4.savedVerses',
@@ -26,29 +12,46 @@ let searchTranslationId = '';
 let searchTranslationRequest = 0;
 
 function renderLeaf(){
-const v = verses[idx];
-const dropcap = document.getElementById('dropcap');
-const verseText = document.getElementById('verseText');
-const verseRef = document.getElementById('verseRef');
-const heroFav = document.getElementById('heroFav');
-if(!v || !dropcap || !verseText || !verseRef || !heroFav) return;
-const first = v.text.charAt(0);
-dropcap.textContent = first;
-verseText.textContent = v.text.slice(1);
-verseRef.textContent = v.ref;
-heroFav.classList.toggle('active', isSaved(v.ref));
-heroFav.textContent = isSaved(v.ref) ? '♥' : '♡';
-heroFav.setAttribute('aria-pressed', isSaved(v.ref) ? 'true' : 'false');
+const ref = document.getElementById('verseRef').textContent;
+const button = document.getElementById('heroFav');
+const active = isSaved(ref);
+button.classList.toggle('active', active);
+button.textContent = active ? '♥' : '♡';
+button.setAttribute('aria-pressed', String(active));
 }
 
-function nextVerse(){
+function initializeDiscovery(){
 const card = document.getElementById('leafCard');
-card.classList.add('is-fading');
-setTimeout(function(){
-idx = (idx+1) % verses.length;
+const button = card.querySelector('.refresh-btn');
+const reference = document.getElementById('verseRef');
+const status = document.getElementById('discoveryStatus');
+let pending;
+function load(){
+return pending ||= import('/js/home-discovery.js').then(module => module.open(card, (passage, announce) => {
+document.getElementById('dropcap').textContent = passage.text[0];
+document.getElementById('verseText').textContent = passage.text.slice(1);
+reference.textContent = passage.reference;
 renderLeaf();
-card.classList.remove('is-fading');
-}, 200);
+if(announce) status.textContent = passage.reference + ' (WEB)';
+})).catch(error => {
+pending = null;
+throw error;
+});
+}
+button.addEventListener('click', () => load().then(next => next()).catch(() => {
+status.textContent = 'Scripture discovery could not load. Try Another verse again.';
+}));
+if(typeof IntersectionObserver === 'undefined'){
+load().catch(() => {});
+return;
+}
+const observer = new IntersectionObserver(entries => {
+if(entries.some(entry => entry.isIntersecting)){
+observer.disconnect();
+load().catch(() => {});
+}
+}, {rootMargin:'200px'});
+observer.observe(card);
 }
 
 function isSaved(ref){ return saved.some(function(s){ return s.ref === ref; }); }
@@ -75,8 +78,9 @@ return persisted;
 }
 
 function toggleFavFromHero(){
-var v = verses[idx];
-toggleFav(v.ref, v.text, document.getElementById('heroFav'));
+const ref = document.getElementById('verseRef').textContent;
+const text = document.getElementById('dropcap').textContent + document.getElementById('verseText').textContent;
+toggleFav(ref, text, document.getElementById('heroFav'));
 }
 
 function getSearchTranslations(){
@@ -485,8 +489,7 @@ var savedPill = document.querySelector('.saved-pill');
 if(savedPill) savedPill.addEventListener('click', toggleTray);
 var closeTrayButton = document.getElementById('closeTray');
 if(closeTrayButton) closeTrayButton.addEventListener('click', toggleTray);
-var refreshVerseButton = document.querySelector('.refresh-btn');
-if(refreshVerseButton) refreshVerseButton.addEventListener('click', nextVerse);
+initializeDiscovery();
 var saveReaderButton=document.getElementById('readerSaveVerse');
 if(saveReaderButton) saveReaderButton.addEventListener('click',saveReaderVerse);
 var heroFavButton = document.getElementById('heroFav');
