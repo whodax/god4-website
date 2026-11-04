@@ -69,11 +69,7 @@
   <h1 id="homeHeading"><span>GOD</span> SPOKE ALL THESE WORDS</h1>
   <section id="commandments" aria-labelledby="commandmentsTitle">
     <h2 id="commandmentsTitle">Exodus 20:2–17 (WEB)</h2>
-    <div class="commandment-controls" hidden>
-      <button type="button" data-step="-1" aria-label="Previous commandment" aria-controls="commandmentScroll" aria-disabled="true">←</button>
-      <output aria-live="polite" aria-atomic="true">1 of 10</output>
-      <button type="button" data-step="1" aria-label="Next commandment" aria-controls="commandmentScroll" aria-disabled="false">→</button>
-    </div>
+    <div class="commandment-content">
     <div id="commandmentScroll" role="region" aria-label="Scroll through the ten commandments" tabindex="0">
       <ol>
         <li><p>“I am the LORD your God, who brought you out of the land of Egypt, out of the house of bondage. “You shall have no other gods before me.</p></li>
@@ -87,6 +83,13 @@
         <li><p>“You shall not give false testimony against your neighbor.</p></li>
         <li><p>“You shall not covet your neighbor’s house. You shall not covet your neighbor’s wife, nor his male servant, nor his female servant, nor his ox, nor his donkey, nor anything that is your neighbor’s.”</p></li>
       </ol>
+    </div>
+    <input type="range" class="commandment-scrollbar" min="1" max="10" value="1" aria-label="Scroll commandments" aria-valuetext="1 of 10" aria-controls="commandmentScroll">
+    </div>
+    <div class="commandment-controls" hidden>
+      <button type="button" data-step="-1" aria-label="Previous commandment" aria-controls="commandmentScroll" aria-disabled="true">↑</button>
+      <output aria-live="polite" aria-atomic="true">1 of 10</output>
+      <button type="button" data-step="1" aria-label="Next commandment" aria-controls="commandmentScroll" aria-disabled="false">↓</button>
     </div>
   </section>
 

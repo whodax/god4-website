@@ -569,8 +569,8 @@ initializeBibleExperienceTriggers();
 renderLeaf();
 const panel=document.getElementById('commandments');
 if(panel){
-panel.firstElementChild.nextElementSibling.hidden=false;
-for(const type of ['click','scroll'])panel.addEventListener(type,event=>import('./home-commandments.js').then(module=>module.update(panel,event.target)).catch(()=>{}),true);
+panel.lastElementChild.hidden=false;
+for(const type of ['click','scroll','input'])panel.addEventListener(type,event=>import('./home-commandments.js').then(module=>module.update(panel,event)).catch(()=>{}),true);
 }
 }
 

@@ -67,7 +67,7 @@ test('shell 55 preserves activation, Bible caches and the exact required assets'
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(50);
   // Pin only the changed and added assets against the production Shell 54 baseline.
-  const homepageAssets={"/":"bb5c980aded125b0ae6dbf5794cbee0490bbfec0719da2aaee01d8005dd2a4e5","/css/layout.css":"0dfedf80ea124560130c4bbf216237abed70da31102c3afaaf8ec5231fef99fe","/js/app.js":"f72a0e6ca112dd7260d1e532218f5bb4cd50e5995105b0df636e1698022d884b","/js/home-commandments.js":"edcdda4247f706f33942486b17f28982f77c32ad2d3bb90c3ce6a779106ce0b8"};
+  const homepageAssets={"/":"4fbdc1c0ef304fa50dad52b62542db19738e7541b69f2915c5c074762baca31c","/css/layout.css":"66979582eeb2c599e81a19356603982994fbb44483dea8ce14edc590a39fade5","/js/app.js":"f1f4035a743d60fcebd93693372854cc74ef1c235c0e3ab5fd85ed65b21e09df","/js/home-commandments.js":"1e389624a305ee3fec1dbb97dc52dccce758117501bd8723b8f9a23dd8f385ad"};
   for(const asset of requiredAssets){
     const body=fs.readFileSync(path.join(root,fileFor(asset)));
     if(homepageAssets[asset])expect(digest(Buffer.from(normalizeSource(body))),asset).toBe(homepageAssets[asset]);

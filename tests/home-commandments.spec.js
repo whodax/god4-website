@@ -5,7 +5,7 @@ const verses=vm.runInNewContext(fs.readFileSync('js/bible/web.js','utf8')+'\nweb
 const groups=[[2,3],[4],[7],[8,9],[12],[13],[14],[15],[16],[17]];
 test.use({serviceWorkers:'block'});
 
-for(const width of [320,390,1280])test(`${width}px: all ten WEB passages and accessible arrow navigation`,async({page})=>{
+for(const width of [320,390,430,1280])test(`${width}px: all ten WEB passages and accessible arrow navigation`,async({page})=>{
   await page.setViewportSize({width,height:780});
   const requests=[];
   page.on('request',request=>requests.push(new URL(request.url()).pathname));
@@ -17,6 +17,18 @@ for(const width of [320,390,1280])test(`${width}px: all ten WEB passages and acc
   const position=panel.getByRole('status');
   const previous=panel.getByRole('button',{name:'Previous commandment'});
   const next=panel.getByRole('button',{name:'Next commandment'});
+  const scrollbar=panel.getByRole('slider',{name:'Scroll commandments'});
+  await expect(scrollbar).toBeVisible();
+  const [refRect,contentRect,barRect,previousRect,positionRect,nextRect]=await Promise.all(
+    [panel.getByRole('heading'),region,scrollbar,previous,position,next].map(item=>item.boundingBox())
+  );
+  expect(refRect.y+refRect.height).toBeLessThanOrEqual(contentRect.y);
+  expect(contentRect.x+contentRect.width).toBeLessThan(barRect.x);
+  expect(contentRect.y+contentRect.height).toBeLessThan(previousRect.y);
+  expect(previousRect.x+previousRect.width).toBeLessThan(positionRect.x);
+  expect(positionRect.x+positionRect.width).toBeLessThan(nextRect.x);
+  await expect(previous).toHaveText('↑');
+  await expect(next).toHaveText('↓');
   await expect(items).toHaveCount(10);
   await expect(position).toHaveText('1 of 10');
   await expect(previous).toBeDisabled();
@@ -24,6 +36,7 @@ for(const width of [320,390,1280])test(`${width}px: all ten WEB passages and acc
   for(let i=0;i<groups.length;i++){
     await expect(items.nth(i)).toHaveText(groups[i].map(verse=>verses[verse-1]).join(' '));
     await expect(position).toHaveText(`${i+1} of 10`);
+    await expect(scrollbar).toHaveAttribute('aria-valuetext',`${i+1} of 10`);
     await expect.poll(()=>items.nth(i).evaluate(el=>Math.abs(el.offsetTop-el.closest('#commandmentScroll').scrollTop))).toBeLessThanOrEqual(1);
     if(i<9)await next.press('Enter');
   }
@@ -56,6 +69,17 @@ test('native scrolling updates the position without moving focus or the document
   await region.evaluate(el=>el.scrollTo(0,el.querySelectorAll('li')[3].offsetTop));
   await expect(page.locator('#commandments output')).toHaveText('4 of 10');
   await region.press('Tab');
+  const bar=page.getByRole('slider',{name:'Scroll commandments'});
+  await expect(bar).toBeFocused();
+  await bar.press('End');
+  await expect(page.locator('#commandments output')).toHaveText('10 of 10');
+  await bar.press('Home');
+  await expect(page.locator('#commandments output')).toHaveText('1 of 10');
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('button',{name:'Previous commandment'})).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('button',{name:'Next commandment'})).toBeFocused();
+  await page.keyboard.press('Tab');
   await expect(page.getByRole('button',{name:/Another verse/i})).toBeFocused();
 });
 
@@ -102,4 +126,25 @@ test('touch scrolling and enlarged text stay inside the panel in Dark Mode',asyn
   });
   await expect(page.locator('#commandments output')).toHaveText('2 of 10');
   await expect.poll(()=>second.evaluate(el=>el.getBoundingClientRect().bottom-el.closest('#commandmentScroll').getBoundingClientRect().bottom)).toBeLessThanOrEqual(1);
+});
+
+for(const width of [320,390,430])test.describe('Android-style '+width+'px',()=>{
+  test.use({viewport:{width,height:780},isMobile:true,hasTouch:true,
+    userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 Chrome/130.0.0.0 Mobile Safari/537.36'});
+  test('persistent scrollbar responds to touch and stays in sync',async({page})=>{
+    await page.goto('/');
+    const bar=page.getByRole('slider',{name:'Scroll commandments'});
+    const output=page.locator('#commandments output');
+    await expect(bar).toHaveCSS('writing-mode','vertical-lr');
+    const bounds=await bar.boundingBox();
+    expect(bounds.height).toBeGreaterThan(bounds.width);
+    const before=await page.evaluate(()=>scrollY);
+    await page.touchscreen.tap(bounds.x+bounds.width/2,bounds.y+bounds.height-2);
+    await expect(output).toHaveText('10 of 10');
+    await expect(bar).toHaveAttribute('aria-valuetext','10 of 10');
+    await page.getByRole('button',{name:'Previous commandment'}).tap();
+    await expect(output).toHaveText('9 of 10');
+    await expect(bar).toHaveValue('9');
+    expect(await page.evaluate(()=>scrollY)).toBe(before);
+  });
 });

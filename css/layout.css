@@ -47,10 +47,24 @@
   .hero h1 span{display:block;font-size:clamp(66px,12vw,108px);}
   #commandments{background:var(--vellum-card);border:1px solid var(--line);box-shadow:var(--shadow);padding:12px 16px;}
   #commandments h2{font-size:20px;text-align:center;margin:0 0 4px;}
-  .commandment-controls:not([hidden]){display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:4px;}
+  .commandment-controls:not([hidden]){display:flex;justify-content:center;align-items:center;gap:12px;margin-top:8px;}
   .commandment-controls button{min-width:44px;min-height:44px;background:var(--vellum);color:var(--ink);border:1px solid var(--line);border-radius:2px;cursor:pointer;}
   .commandment-controls button[aria-disabled="true"]{color:var(--ink-soft);cursor:default;}
   .commandment-controls output{font:13px 'Inter','Inter Fallback',sans-serif;min-width:5em;text-align:center;}
+  .commandment-content{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;}
+  .commandment-scrollbar{display:none;}
+  #commandments:has(.commandment-controls:not([hidden])) .commandment-scrollbar{
+    display:block;writing-mode:vertical-lr;direction:ltr;align-self:stretch;
+    width:24px;height:100%;margin:0;appearance:none;touch-action:none;
+    background:linear-gradient(var(--ink-soft),var(--ink-soft)) center / 6px 100% no-repeat;
+  }
+  .commandment-scrollbar::-webkit-slider-thumb{
+    appearance:none;width:16px;height:24px;border-radius:8px;background:var(--ink);
+  }
+  .commandment-scrollbar::-moz-range-thumb{
+    width:16px;height:24px;border:0;border-radius:8px;background:var(--ink);
+  }
+  #commandments:has(.commandment-controls:not([hidden])) #commandmentScroll{scrollbar-width:none;}
   #commandmentScroll{
     position:relative;height:clamp(8rem,23vh,11rem);overflow-y:scroll;
     overscroll-behavior-y:contain;scroll-snap-type:y mandatory;
@@ -59,7 +73,7 @@
   #commandmentScroll::-webkit-scrollbar{width:12px;}
   #commandmentScroll::-webkit-scrollbar-track{background:var(--vellum);}
   #commandmentScroll::-webkit-scrollbar-thumb{background:var(--ink-soft);border-radius:6px;}
-  #commandmentScroll:focus-visible,.commandment-controls button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  #commandmentScroll:focus-visible,.commandment-scrollbar:focus-visible,.commandment-controls button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
   #commandmentScroll ol{height:100%;margin:0;padding:0 1.5em 0 2em;}
   #commandmentScroll li{min-height:100%;scroll-snap-align:start;padding:.5em 0;overflow-wrap:anywhere;}
   #commandmentScroll p{margin:0;}
