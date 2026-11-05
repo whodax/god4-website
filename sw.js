@@ -2,7 +2,7 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-57';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-57-pause-diagnostic-1';
 const PREVIOUS_SHELL_CACHE = CACHE_PREFIX + 'compact-reader-24';
 const VENDOR_PATH = '/js/vendor/supabase-js-2.117.0.min.js';
 const VENDOR_CACHE_PREFIX = 'god4-auth-vendor-';
@@ -40,6 +40,7 @@ const SHELL_ASSETS = [
   '/js/bible/translation-loader.js',
   '/js/storage/local-provider.js',
   '/js/storage/user-data.js',
+  '/js/narration-diagnostic.js',
   '/js/bible/speech.js',
   '/js/bible/cloud-tts.js',
   '/js/word-study/loader.js',
@@ -224,6 +225,10 @@ self.addEventListener('activate', function(event){
 
 self.addEventListener('message', function(event){
   var data = event.data || {};
+  if(data.type === 'NARRATION_DIAGNOSTIC_SHELL' && event.ports[0]){
+    event.ports[0].postMessage(SHELL_CACHE);
+    return;
+  }
   if(data.type === 'ACTIVATE_UPDATE'){
     self.skipWaiting();
     return;

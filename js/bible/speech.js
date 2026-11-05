@@ -29,6 +29,11 @@ var BibleSpeech = (function createBibleSpeech(){
   var speed = readSpeedPreference();
   var voicePreference = readVoicePreference();
   var playbackListener = null;
+  function diagnostic(event, details){
+    window.narrationDiagnostic?.(event, {state, session, playbackAttempt, currentVerseIndex,
+      pendingNext, wordOffset, preference:voicePreference, provider:actualPlayback?.provider, ...details});
+  }
+  diagnostic('speech-loaded', {version:'shell57-pause-diag-1', candidate:'5c461d7c0239199e5e5e3519783a3a635afb7ba4'});
 
   function localSupported(){
     return typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined' && typeof window.SpeechSynthesisUtterance !== 'undefined';
@@ -95,6 +100,7 @@ var BibleSpeech = (function createBibleSpeech(){
     updateControls();
     function current(){ return activeSession === session && attempt === playbackAttempt; }
     function started(){
+      diagnostic('speech-start-callback',{accepted:current(),attempt,activeSession});
       if(!current()) return;
       utteranceStarted = true;
       sessionStarted = true;
@@ -110,6 +116,7 @@ var BibleSpeech = (function createBibleSpeech(){
       if(navigator.onLine === false) reason = 'offline';
       var voice = selectedVoice(profile.id);
       var verified = voice && nativeGender(voice) === profile.gender;
+      diagnostic('native-choice',{reason,voice:voice?.voiceURI,lang:voice?.lang,verified:Boolean(verified)});
       var guidance = reason === 'offline' && !verified ?
         ' No verified offline ' + profile.gender + ' voice. On Android, open Settings > Accessibility > Text-to-speech output > Install voice data. Install English voice data and preview and select a matching voice if available.' : '';
       if(!localSupported() || !voice && voices().length){
@@ -139,11 +146,16 @@ var BibleSpeech = (function createBibleSpeech(){
           wordOffset = Math.max(wordOffset, utterance.offset + index - utterance.prefixLength);
         }
       };
-      local.onend = function(){ if(current()) utterance.onend(); };
+      local.onend = function(){
+        diagnostic('speech-end-callback',{accepted:current(),attempt,activeSession});
+        if(current()) utterance.onend();
+      };
       local.onerror = function(event){
+        diagnostic('speech-error-callback',{accepted:current(),attempt,activeSession,error:event?.error});
         if(!current()) return;
         if(state === 'paused' && /^(interrupted|canceled)$/.test(event?.error) && canReplayAndroidPause()){
           retainInterruptedNative();
+          diagnostic('recovery-interruption',{attempt,activeSession,error:event?.error});
           return;
         }
         utterance.onerror(guidance ? 'Playback unavailable.' + guidance : undefined);
@@ -595,6 +607,7 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function pauseResume(){
+    diagnostic('pause-resume-enter');
     if(!supported()) return;
     if(state === 'playing' || state === 'preparing'){
       state = 'paused';
@@ -605,12 +618,14 @@ var BibleSpeech = (function createBibleSpeech(){
       if(!commandNativeReplay && actualPlayback?.provider === 'native' &&
           synth?.speaking === false && synth.pending === false && canReplayAndroidPause()){
         retainInterruptedNative();
+        diagnostic('recovery-empty-queue');
       }
       state = sessionStarted || utteranceStarted || pendingNext ? 'playing' : 'preparing';
       if(repeatState) repeatState.wasPausedBeforeRepeat = false;
       pauseAfterCurrent = false;
       resumeSpeech();
       if(commandNativeReplay){
+        diagnostic('recovery-requeue',{reason:commandNativeReplay});
         if(commandNativeReplay === 'interrupted') resumeOffset = wordOffset;
         commandNativeReplay = false;
         if(repeatState) speakRepeat(session,repeatState);
@@ -621,6 +636,7 @@ var BibleSpeech = (function createBibleSpeech(){
       }
     }
     updateControls();
+    diagnostic('pause-resume-return');
   }
 
   function beginPreparation(){

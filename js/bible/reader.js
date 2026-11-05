@@ -161,7 +161,9 @@ function stopSpeechForManualNavigation(preserveChapter){
   BibleSpeech.setStatusMessage('');
 }
 
+window.narrationDiagnostic?.('reader-loaded',{version:'shell57-pause-diag-1'});
 function playReader(explicitVerse, pauseAfterFirst, restartSequence){
+  window.narrationDiagnostic?.('reader-play-enter',{state:window.BibleSpeech?.getState(),readerPlaybackPending,explicitVerse,restartSequence,cursor:getPlaybackResumeCursor()});
   if(typeof BibleSpeech === 'undefined') return;
   if(BibleSpeech.getState() === 'paused' && !restartSequence){
     BibleSpeech.pauseResume();
@@ -832,6 +834,7 @@ function normalizeVoiceCommand(transcript){
 
 function handleVoiceCommand(transcript, resumeAfterTurn){
   var command = normalizeVoiceCommand(transcript);
+  if(/^play( the passage)?$/.test(command)) window.narrationDiagnostic?.('microphone-play-command',{state:window.BibleSpeech?.getState(),cursor:getPlaybackResumeCursor()});
   var requestId=++voiceNavigationRequest;
   var resumeReading=resumeAfterTurn===true || !!getActiveReaderPlaybackSnapshot();
   setVoiceStatus('Command recognized.');
@@ -930,11 +933,13 @@ function releaseReaderMicrophone(action){
 
 function deferReaderSpeechUntilMicrophoneReleased(action){
   if(!isAndroidVoiceCommands() || !voiceRecognitionActive) return false;
+  window.narrationDiagnostic?.('microphone-gate',{active:voiceRecognitionActive,stopping:voiceCommandsStopping,failed:voiceReleaseFailed});
   releaseReaderMicrophone(action);
   return true;
 }
 
 function completeAndroidVoiceTurn(recognition){
+  window.narrationDiagnostic?.('microphone-ended',{current:voiceRecognition === recognition,failed:voiceReleaseFailed});
   if(voiceRecognition !== recognition) return;
   clearTimeout(voiceReleaseTimer);
   voiceReleaseTimer = null;
@@ -1446,9 +1451,11 @@ function pauseResumeReadAloud(){
 }
 
 function stopReadAloud(){
+  window.narrationDiagnostic?.('reader-stop-handler',{cursor:getPlaybackResumeCursor(),state:window.BibleSpeech?.getState()});
   readerPlaybackIntent++;
   readerPlaybackPending = false;
   if(typeof BibleSpeech !== 'undefined') BibleSpeech.stop(false,true);
+  window.narrationDiagnostic?.('reader-stop-return',{cursor:getPlaybackResumeCursor(),state:window.BibleSpeech?.getState(),readerPlaybackPending});
 }
 
 function adjacentCatholicBook(direction){
@@ -1686,6 +1693,7 @@ else switchView(view, button);
 ['chapterSelect', 'change', function(){ runWithBibleExperience(function(){ loadPassage(true); }); }],
 ['verseSelect', 'change', function(event){ runWithBibleExperience(function(){ selectReaderVerse(event.target.value); }); }],
 ['readAloudPlay', 'click', function(){
+window.narrationDiagnostic?.('reader-play-handler',{state:window.BibleSpeech?.getState(),readerPlaybackPending,ready:typeof bibleExperienceReady!=='undefined'&&bibleExperienceReady});
 if(typeof BibleSpeech === 'undefined') return;
 if(readerPlaybackPending || BibleSpeech.getState() === 'playing' || BibleSpeech.getState() === 'preparing'){ stopReadAloud(); return; }
 // Audio authorization must happen in this gesture, before Bible acquisition.

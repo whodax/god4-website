@@ -634,11 +634,15 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     move(document.getElementById('readerVoiceCommands'),toolbar,more);
     move(document.getElementById('fullscreenBtn'),panel);
     stop=document.createElement('button');stop.type='button';stop.className='reader-compact-stop';stop.textContent='Stop reading aloud';
-    stop.addEventListener('click',function(){stopReader();});panel.appendChild(stop);
+    stop.addEventListener('click',function(event){
+      window.narrationDiagnostic?.('compact-stop-button',{trusted:event.isTrusted,state:window.BibleSpeech?.getState()});
+      stopReader();
+    });panel.appendChild(stop);
     document.getElementById('readAloudPlay').addEventListener('click',function(event){
       if(!media.matches || typeof BibleSpeech==='undefined') return;
       var state=BibleSpeech.getState();
       if(state==='playing' || state==='paused'){
+        window.narrationDiagnostic?.('compact-main-action',{action:state==='paused'?'resume':'pause',state});
         event.preventDefault();event.stopImmediatePropagation();pauseResumeReadAloud();sync();
       }
     },true);
