@@ -196,15 +196,35 @@ test('offline and account callback restore preference',async({page})=>{
 });
 
 test('cross-tab switching leaves open modal, focus, selection, saved data and plan data intact',async({page,context})=>{
-  await page.setViewportSize({width:390,height:900});await page.goto('/');await reader(page);
+  const openingKey='god4.discovery.openingTopic';
+  const topicIds=require('../js/home-discovery-catalog.json').topics.map(topic=>topic.id);
+  const readOpening=tab=>tab.evaluate(key=>localStorage.getItem(key),openingKey);
+  await page.setViewportSize({width:390,height:900});await page.goto('/');
+  await page.locator('#leafCard').scrollIntoViewIfNeeded();
+  await expect.poll(()=>readOpening(page)).toBeTruthy();
+  const firstOpening=await readOpening(page);
+  expect(topicIds).toContain(firstOpening);
+  await reader(page);
   await page.evaluate(()=>navigateReaderToPassage('john',1,2));await page.locator('#readerMoreTrigger').tap();await page.locator('#readerSaveVerse').tap();
   await page.evaluate(()=>{UserData.plan.save([1,2]);UserData.journey.save({version:1,plans:[[1,2],[],[],[],[]],completedDates:[]});localStorage.setItem('theme-account-state-fixture','preserved');});
   await page.locator('[data-reader-select="bookSelect"]').tap();
-  const before=await page.evaluate(()=>({focus:document.activeElement.textContent,selection:currentVerse,storage:Object.fromEntries(Object.entries(localStorage)),open:document.getElementById('readerOptionsPicker').open}));
-  const second=await context.newPage();await second.goto('/');await dark(second);
+  const snapshot=()=>page.evaluate(key=>({
+    focus:document.activeElement.textContent,
+    selection:currentVerse,
+    storage:Object.fromEntries(Object.entries(localStorage).filter(([name])=>name!==key&&name!=='god4.theme')),
+    open:document.getElementById('readerOptionsPicker').open
+  }),openingKey);
+  const before=await snapshot();
+  const second=await context.newPage();
+  await second.goto('/');
+  await second.locator('#leafCard').scrollIntoViewIfNeeded();
+  await expect.poll(()=>readOpening(second)).not.toBe(firstOpening);
+  const secondOpening=await readOpening(second);
+  expect(topicIds).toContain(secondOpening);
+  await dark(second);
   await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
-  const after=await page.evaluate(()=>({focus:document.activeElement.textContent,selection:currentVerse,storage:Object.fromEntries(Object.entries(localStorage).filter(([key])=>key!=='god4.theme')),open:document.getElementById('readerOptionsPicker').open}));
-  expect(after).toEqual(before);await page.bringToFront();await page.keyboard.press('Escape');await expect(page.locator('[data-reader-select="bookSelect"]')).toBeFocused();
+  expect(await readOpening(page)).toBe(secondOpening);
+  expect(await snapshot()).toEqual(before);await page.bringToFront();await page.keyboard.press('Escape');await expect(page.locator('[data-reader-select="bookSelect"]')).toBeFocused();
   await page.reload();await reader(page);expect(await page.evaluate(()=>UserData.savedVerses.load().length)).toBe(1);expect(await page.evaluate(()=>UserData.journey.load().plans[0])).toEqual([1,2]);await second.close();
 });
 

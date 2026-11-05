@@ -3170,7 +3170,13 @@ test('User data storage preserves all six legacy keys and serialized formats acr
   });
   await page.reload();
   await expect(page.locator('#savedCount')).toHaveText('1');
-  await expect(page.locator('#heroFav')).toHaveAttribute('aria-pressed', 'true');
+  await page.locator('.saved-pill').click();
+  const savedEntry=page.locator('#trayList .saved-verse-row');
+  await expect(savedEntry).toHaveCount(1);
+  await expect(savedEntry.locator('.saved-verse-reference')).toHaveText('John 3:16');
+  await expect(savedEntry.locator('.saved-verse-text')).toHaveText('"Legacy saved text"');
+  await page.locator('#closeTray').click();
+  await expect(page.locator('#tray')).toHaveAttribute('aria-hidden','true');
   await expect(page.locator('#readerTranslation')).toHaveValue('asv');
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1.5');
   await expect(page.locator('#readAloudVoice')).toHaveValue('female');

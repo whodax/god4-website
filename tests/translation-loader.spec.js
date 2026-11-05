@@ -67,6 +67,15 @@ test.afterEach(async ({page}) => {
   expect(await page.evaluate(() => window.__cspViolations || [])).toEqual([]);
 });
 
+async function expectFeaturedWebPassage(page){
+  const featured = await page.locator('#leafCard').evaluate(card => ({
+    reference:card.querySelector('#verseRef').textContent,
+    text:card.querySelector('#dropcap').textContent+card.querySelector('#verseText').textContent
+  }));
+  const topics = require('../js/home-discovery-catalog.json').topics;
+  expect(topics.flatMap(topic=>topic.passages).find(p=>p.reference===featured.reference)?.text).toBe(featured.text);
+}
+
 test('ordinary homepage load requests no Bible translation and non-Bible content remains usable', async ({page}) => {
   const requested = watchTranslationRequests(page);
 
@@ -75,12 +84,7 @@ test('ordinary homepage load requests no Bible translation and non-Bible content
 
   expect(requested).toEqual([]);
   await expect(page.getByRole('heading', {name:/GOD SPOKE ALL THESE WORDS/i})).toBeVisible();
-  const featured = await page.locator('#leafCard').evaluate(card => ({
-    reference:card.querySelector('#verseRef').textContent,
-    text:card.querySelector('#dropcap').textContent+card.querySelector('#verseText').textContent
-  }));
-  const topics = require('../js/home-discovery-catalog.json').topics;
-  expect(topics.flatMap(topic=>topic.passages).find(p=>p.reference===featured.reference)?.text).toBe(featured.text);
+  await expectFeaturedWebPassage(page);
   await page.locator('.saved-pill').click();
   await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'false');
   expect(await page.evaluate(() => ['web', 'asv', 'kjv', 'ylt', 'dby', 'webster', 'rv', 'gnv', 'dra'].filter(id => BibleTranslationLoader.isLoaded(id)))).toEqual([]);
@@ -233,7 +237,8 @@ test('failed WEB load leaves the homepage usable and can retry successfully', as
   expect(await page.evaluate(() => initializeBibleExperience())).toBe(false);
   await expect(page.locator('#readerContent')).toBeEmpty();
   await expect(page.locator('script[data-bible-translation="web"]')).toHaveCount(0);
-  await expect(page.locator('#verseRef')).toHaveText('John 3:16');
+  await expect.poll(()=>page.evaluate(()=>localStorage.getItem('god4.discovery.openingTopic'))).toBeTruthy();
+  await expectFeaturedWebPassage(page);
   await page.locator('.saved-pill').click();
   await expect(page.locator('#tray')).toHaveAttribute('aria-hidden', 'false');
   expect(requests).toBe(1);

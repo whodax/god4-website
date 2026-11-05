@@ -406,12 +406,15 @@ test('measured cache-24/current installs retain vendor byte savings less the Wor
       await context.close();
     }
     console.log('Local uncompressed worker installation measurements:', JSON.stringify(measurements));
-    expect(measurements.map(m => [m.assets, m.fetches])).toEqual([[41, 41], [50, 50]]);
+    expect(measurements.map(m => [m.assets, m.fetches])).toEqual([[41, 41], [52, 52]]);
     // Both fixtures use current files and differ only in precache membership.
     const loaderBytes=fs.statSync(path.join(__dirname,'..','js/word-study/loader.js')).size + fs.statSync(path.join(__dirname,'..','js/bible/compare-loader.js')).size + fs.statSync(path.join(__dirname,'..','js/pwa/offline-translations-loader.js')).size + fs.statSync(path.join(__dirname,'..','js/bible/scripture-picker.js')).size + fs.statSync(path.join(__dirname,'..','js/bible/canon.js')).size + fs.statSync(path.join(__dirname,'..','js/word-study/alignment.js')).size + fs.statSync(path.join(__dirname,'..','js/bible/translation-picker.js')).size;
     const themeBytes=fs.statSync(path.join(__dirname,'..','js/theme.js')).size+fs.statSync(path.join(__dirname,'..','css/theme.css')).size;
     const homepageBytes=fs.statSync(path.join(__dirname,'..','js/home-commandments.js')).size;
-    expect(measurements[0].repositoryBytes - measurements[1].repositoryBytes).toBe(vendorBytes.length-loaderBytes-themeBytes-homepageBytes);
-    expect(measurements[0].decoded - measurements[1].decoded).toBe(vendorBytes.length-loaderBytes-themeBytes-homepageBytes);
+    const discoveryBytes=['js/home-discovery.js','js/home-discovery-catalog.json']
+      .reduce((sum, asset)=>sum+fs.statSync(path.join(__dirname,'..',asset)).size,0);
+    const expectedSavings=vendorBytes.length-loaderBytes-themeBytes-homepageBytes-discoveryBytes;
+    expect(measurements[0].repositoryBytes - measurements[1].repositoryBytes).toBe(expectedSavings);
+    expect(measurements[0].decoded - measurements[1].decoded).toBe(expectedSavings);
   } finally { await new Promise(resolve => fixture.server.close(resolve)); }
 });
