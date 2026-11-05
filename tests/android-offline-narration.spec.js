@@ -172,3 +172,42 @@ test('the compact Reader Stop and Play controls resume from a native boundary',a
   await page.locator('#readAloudPlay').press('Enter');
   expect(await state(page)).toMatchObject({count:2,text:'beginning was the Word, and the Word was with God, and the Word was God.'});
 });
+
+test.describe('Android main Pause and Play',()=>{
+  test.use({viewport:{width:390,height:844},hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130.0.0.0 Mobile Safari/537.36'});
+  for(const outcome of ['empty queue','interrupted event','retained queue'])test(outcome,async({page})=>{
+    await open(page);
+    await page.evaluate(()=>ReaderTranslationLoader.ensure());
+    const button=page.locator('#readAloudPlay');
+    await button.press('Enter');
+    await page.evaluate(outcome=>{
+      const synth=window.speechSynthesis;
+      const first=__speech.spoken[0];
+      first.onstart();
+      first.onboundary({name:'word',charIndex:first.text.indexOf('beginning')});
+      Object.assign(synth,{speaking:true,pending:false,paused:false});
+      synth.pause=()=>{
+        __speech.pauses++;
+        if(outcome!=='retained queue')synth.speaking=false;
+        if(outcome==='interrupted event')first.onerror({error:'interrupted'});
+      };
+    },outcome);
+    const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});
+    if(await recovery.isVisible())await recovery.tap();
+    await button.press('Enter');
+    expect(await state(page)).toMatchObject({playing:'paused',count:1});
+    await button.press('Enter');
+    if(outcome==='retained queue'){
+      expect(await state(page)).toMatchObject({playing:'playing',count:1});
+      expect(await page.evaluate(()=>__speech.resumes)).toBe(1);
+      return;
+    }
+    await page.evaluate(()=>{
+      __speech.spoken[0].onend();
+      __speech.spoken[0].onerror({error:'interrupted'});
+      __speech.spoken[1]?.onstart();
+    });
+    expect(await state(page)).toMatchObject({playing:'playing',count:2,cursor:{chapter:1,verse:1},text:'beginning was the Word, and the Word was with God, and the Word was God.'});
+    await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number','1');
+  });
+});

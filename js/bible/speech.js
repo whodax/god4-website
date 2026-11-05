@@ -75,6 +75,16 @@ var BibleSpeech = (function createBibleSpeech(){
     utterance.playbackRate = speed;
     return utterance;
   }
+  function canReplayAndroidPause(){
+    return !pendingNext && currentVerseIndex >= 0 &&
+      typeof isAndroidVoiceCommands === 'function' && isAndroidVoiceCommands();
+  }
+  function retainInterruptedNative(){
+    session++;
+    commandNativeReplay = 'interrupted';
+    utteranceStarted = false;
+  }
+
   function speakUtterance(utterance){
     var attempt = ++playbackAttempt, activeSession = session;
     var profile = PROFILES[utterance.profileId], rate = utterance.playbackRate;
@@ -130,7 +140,14 @@ var BibleSpeech = (function createBibleSpeech(){
         }
       };
       local.onend = function(){ if(current()) utterance.onend(); };
-      local.onerror = function(){ if(current()) utterance.onerror(guidance ? 'Playback unavailable.' + guidance : undefined); };
+      local.onerror = function(event){
+        if(!current()) return;
+        if(state === 'paused' && /^(interrupted|canceled)$/.test(event?.error) && canReplayAndroidPause()){
+          retainInterruptedNative();
+          return;
+        }
+        utterance.onerror(guidance ? 'Playback unavailable.' + guidance : undefined);
+      };
       announcementKey = profile.id;
       statusMessage = profile.displayName + ' unavailable' + (reason === 'rate' ? ' at this speed' : '') + '. Using ' +
         (verified ? 'a same-gender device voice.' : 'a device voice; gender unverified.') + guidance;
@@ -584,11 +601,17 @@ var BibleSpeech = (function createBibleSpeech(){
       pauseSpeech();
     } else if(state === 'paused'){
       if(deferForMicrophone(pauseResume)) return;
+      var synth = window.speechSynthesis;
+      if(!commandNativeReplay && actualPlayback?.provider === 'native' &&
+          synth?.speaking === false && synth.pending === false && canReplayAndroidPause()){
+        retainInterruptedNative();
+      }
       state = sessionStarted || utteranceStarted || pendingNext ? 'playing' : 'preparing';
       if(repeatState) repeatState.wasPausedBeforeRepeat = false;
       pauseAfterCurrent = false;
       resumeSpeech();
       if(commandNativeReplay){
+        if(commandNativeReplay === 'interrupted') resumeOffset = wordOffset;
         commandNativeReplay = false;
         if(repeatState) speakRepeat(session,repeatState);
         else {verseIndex=currentVerseIndex; speakNext(session);}
