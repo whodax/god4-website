@@ -9,7 +9,7 @@ var BibleSpeech = (function createBibleSpeech(){
   var actualPlayback = null;
   var lastResult = null;
   var utteranceStarted = false;
-  var playbackAttempt = 0, resumeWatch;
+  var playbackAttempt = 0;
   var announcementKey = '';
   // Chapter context is claimed on actual start.
   var spokenChapterKey = '', sessionStarted = false, preserveChapterOnce = false;
@@ -38,12 +38,10 @@ var BibleSpeech = (function createBibleSpeech(){
   }
   function supported(){ return localSupported() || cloudSupported(); }
   function cancelSpeech(){
-    clearTimeout(resumeWatch);
     if(cloudSupported()) BibleCloudTTS.cancel();
     if(localSupported()) window.speechSynthesis.cancel();
   }
   function pauseSpeech(){
-    clearTimeout(resumeWatch);
     if(cloudSupported()) BibleCloudTTS.pause();
     if(localSupported()) window.speechSynthesis.pause();
   }
@@ -98,7 +96,6 @@ var BibleSpeech = (function createBibleSpeech(){
     function current(){ return activeSession === session && attempt === playbackAttempt; }
     function started(){
       if(!current()) return;
-      clearTimeout(resumeWatch);
       utteranceStarted = true;
       sessionStarted = true;
       if(utterance.chapterKey) spokenChapterKey=utterance.chapterKey;
@@ -133,12 +130,10 @@ var BibleSpeech = (function createBibleSpeech(){
       if(voice) local.voice = voice;
       else local.lang = 'en';
       local.onstart = started;
-      local.onresume = function(){ if(current()) clearTimeout(resumeWatch); };
       local.onboundary = function(event){
         var index = event.charIndex;
         if(current() && /^(word|sentence)$/.test(event.name) && Number.isInteger(index) &&
             index >= 0 && index < utterance.text.length){
-          clearTimeout(resumeWatch);
           if(index < utterance.prefixLength) return;
           // Snap an imprecise boundary back to a word start.
           while(index > utterance.prefixLength && /\S/.test(utterance.text[index - 1])) index--;
@@ -147,12 +142,10 @@ var BibleSpeech = (function createBibleSpeech(){
       };
       local.onend = function(){
         if(!current()) return;
-        clearTimeout(resumeWatch);
         utterance.onend();
       };
       local.onerror = function(event){
         if(!current()) return;
-        clearTimeout(resumeWatch);
         if(state === 'paused' && /^(interrupted|canceled)$/.test(event?.error) && canReplayAndroidPause()){
           retainInterruptedNative();
           return;
@@ -596,17 +589,6 @@ var BibleSpeech = (function createBibleSpeech(){
     else {verseIndex=currentVerseIndex; speakNext(session);}
   }
 
-  function watchNativeResume(){
-    var attempt = playbackAttempt, activeSession = session;
-    // A speaking flag can survive a silent resume. Give the engine time to report progress.
-    resumeWatch = setTimeout(function(){
-      if(activeSession !== session || attempt !== playbackAttempt || state !== 'playing') return;
-      retainInterruptedNative();
-      cancelSpeech();
-      replayNative();
-    },3000);
-  }
-
   function pauseResume(){
     if(!supported()) return;
     if(state === 'playing' || state === 'preparing'){
@@ -617,7 +599,11 @@ var BibleSpeech = (function createBibleSpeech(){
       var synth = window.speechSynthesis;
       if(!commandNativeReplay && actualPlayback?.provider === 'native' && canReplayAndroidPause()){
         if(synth?.speaking === false && synth.pending === false) retainInterruptedNative();
-        else if(navigator.onLine === false && utteranceStarted && synth?.speaking && synth.paused === false) watchNativeResume();
+        else if(navigator.onLine === false && utteranceStarted && synth?.speaking === true && synth.paused === false){
+          // A retained Android utterance can stay silent on resume. Replace it in this gesture.
+          retainInterruptedNative();
+          cancelSpeech();
+        }
       }
       state = sessionStarted || utteranceStarted || pendingNext ? 'playing' : 'preparing';
       if(repeatState) repeatState.wasPausedBeforeRepeat = false;

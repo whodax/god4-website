@@ -175,21 +175,29 @@ test('the compact Reader Stop and Play controls resume from a native boundary',a
 
 test.describe('Android main Pause and Play',()=>{
   test.use({viewport:{width:390,height:844},hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130.0.0.0 Mobile Safari/537.36'});
-  for(const outcome of ['empty queue','interrupted event','confirmed pause','resume event','word progress','completion','silent retained queue','paused again','stopped during probe'])test(outcome,async({page})=>{
+
+  async function exposeControls(page){
+    const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});
+    if(await recovery.isVisible())await recovery.tap();
+  }
+
+  for(const outcome of ['empty queue','interrupted event','confirmed pause','online retained queue','completed while paused','silent retained queue'])test(outcome,async({page})=>{
     await open(page);
     await page.evaluate(()=>ReaderTranslationLoader.ensure());
-    await page.clock.install();
     const button=page.locator('#readAloudPlay');
     await button.press('Enter');
     await page.evaluate(outcome=>{
       const synth=window.speechSynthesis;
       const first=__speech.spoken[0];
-      __speech.cancels=0;
-      const cancel=synth.cancel;
-      synth.cancel=()=>{__speech.cancels++;cancel();};
+      const {cancel,speak,resume}=synth;
+      __speech.actions=[];
+      synth.cancel=()=>{__speech.actions.push('cancel');cancel();};
+      synth.speak=utterance=>{__speech.actions.push('speak');speak(utterance);};
+      synth.resume=()=>{__speech.actions.push('resume');resume();};
       first.onstart();
       first.onboundary({name:'word',charIndex:first.text.indexOf('beginning')});
       Object.assign(synth,{speaking:true,pending:false,paused:false});
+      if(outcome==='online retained queue')__online=true;
       synth.pause=()=>{
         __speech.pauses++;
         if(outcome==='empty queue'||outcome==='interrupted event')synth.speaking=false;
@@ -197,36 +205,55 @@ test.describe('Android main Pause and Play',()=>{
         if(outcome==='interrupted event')first.onerror({error:'interrupted'});
       };
     },outcome);
-    const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});
-    if(await recovery.isVisible())await recovery.tap();
+    await exposeControls(page);
     await button.press('Enter');
     expect(await state(page)).toMatchObject({playing:'paused',count:1});
-    await button.press('Enter');
-    if(outcome==='paused again')await button.press('Enter');
-    if(outcome==='stopped during probe')await stop(page);
-    await page.evaluate(outcome=>{
-      const first=__speech.spoken[0];
-      if(outcome==='resume event')first.onresume();
-      if(outcome==='word progress')first.onboundary({name:'word',charIndex:first.text.indexOf('Word')});
-      if(outcome==='completion')first.onend();
-    },outcome);
-    await page.clock.fastForward(3100);
-    if(['confirmed pause','resume event','word progress','completion','paused again','stopped during probe'].includes(outcome)){
-      expect(await state(page)).toMatchObject({
-        playing:outcome==='paused again'?'paused':outcome==='stopped during probe'?'idle':'playing',
-        count:outcome==='completion'?2:1
-      });
-      expect(await page.evaluate(()=>({resumes:__speech.resumes,cancels:__speech.cancels})))
-        .toEqual({resumes:1,cancels:outcome==='stopped during probe'?1:0});
+    if(outcome==='completed while paused')await page.evaluate(()=>__speech.spoken[0].onend());
+    const immediate=await button.evaluate(element=>{
+      element.click();
+      return __speech.actions.slice();
+    });
+    if(outcome==='confirmed pause'||outcome==='online retained queue'){
+      expect(immediate).toEqual(['resume']);
+      expect(await state(page)).toMatchObject({playing:'playing',count:1});
       return;
     }
-    expect(await page.evaluate(()=>__speech.cancels)).toBe(outcome==='silent retained queue'?1:0);
+    if(outcome==='completed while paused'){
+      expect(immediate).toEqual(['resume','speak']);
+      expect(await state(page)).toMatchObject({count:2,cursor:{chapter:1,verse:2}});
+      return;
+    }
+
+    expect(immediate).toEqual(outcome==='silent retained queue'?['cancel','resume','speak']:['resume','speak']);
     await page.evaluate(()=>{
       __speech.spoken[0].onend();
       __speech.spoken[0].onerror({error:'interrupted'});
-      __speech.spoken[1]?.onstart();
+      __speech.spoken[1].onstart();
     });
-    expect(await state(page)).toMatchObject({playing:'playing',count:2,cursor:{chapter:1,verse:1},text:'beginning was the Word, and the Word was with God, and the Word was God.'});
+    const verseSuffix='beginning was the Word, and the Word was with God, and the Word was God.';
+    expect(await state(page)).toMatchObject({playing:'playing',count:2,cursor:{chapter:1,verse:1},text:verseSuffix});
     await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number','1');
+
+    if(outcome!=='silent retained queue')return;
+    await exposeControls(page);
+    await button.press('Enter');
+    const repeated=await button.evaluate(element=>{
+      element.click();
+      return __speech.actions.slice();
+    });
+    expect(repeated).toEqual(['cancel','resume','speak','cancel','resume','speak']);
+    await page.evaluate(()=>{
+      __speech.spoken[1].onend();
+      __speech.spoken[2].onstart();
+    });
+    expect(await state(page)).toMatchObject({count:3,cursor:{verse:1},text:verseSuffix});
+    for(const [direction,verse] of [['next',2],['previous',1]]){
+      await exposeControls(page);
+      const count=(await state(page)).count;
+      await page.locator('[data-reader-action="'+direction+'-verse"]').press('Enter');
+      await page.evaluate(()=>__speech.spoken.at(-1).onstart());
+      expect(await state(page)).toMatchObject({count:count+1,cursor:{verse}});
+      await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number',String(verse));
+    }
   });
 });
