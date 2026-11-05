@@ -736,3 +736,7 @@
     .reader-compact-mobile button:focus-visible,.reader-compact-mobile select:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
     .reader-compact-mobile button:disabled{opacity:.5;cursor:not-allowed;}
   }
+
+.narration-diagnostic-trigger{position:fixed;inset:50% 8px auto auto;z-index:1000;}
+.narration-diagnostic-dialog{width:min(92vw,650px);}
+.narration-diagnostic-dialog textarea{display:block;width:100%;height:45vh;}

@@ -29,6 +29,10 @@ var BibleSpeech = (function createBibleSpeech(){
   var speed = readSpeedPreference();
   var voicePreference = readVoicePreference();
   var playbackListener = null;
+  function diagnostic(event, details){
+    window.narrationDiagnostic?.(event, {state, session, playbackAttempt, stopped, verseIndex, currentVerseIndex, pendingNext, wordOffset, preference:voicePreference, ...details});
+  }
+  diagnostic('speech-loaded', {version:'shell57-diag-1'});
 
   function localSupported(){
     return typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined' && typeof window.SpeechSynthesisUtterance !== 'undefined';
@@ -78,6 +82,7 @@ var BibleSpeech = (function createBibleSpeech(){
   function speakUtterance(utterance){
     var attempt = ++playbackAttempt, activeSession = session;
     var profile = PROFILES[utterance.profileId], rate = utterance.playbackRate;
+    diagnostic('utterance-prepared',{online:navigator.onLine,prefix:utterance.prefixLength,offset:utterance.offset,length:utterance.text.length});
     var onstart = utterance.onstart;
     utteranceStarted = false;
     if(state !== 'paused' && !sessionStarted) state = 'preparing';
@@ -85,6 +90,7 @@ var BibleSpeech = (function createBibleSpeech(){
     updateControls();
     function current(){ return activeSession === session && attempt === playbackAttempt; }
     function started(){
+      diagnostic('speech-start-callback',{accepted:current(),attempt,activeSession,route:actualPlayback?.provider});
       if(!current()) return;
       utteranceStarted = true;
       sessionStarted = true;
@@ -100,6 +106,7 @@ var BibleSpeech = (function createBibleSpeech(){
       if(navigator.onLine === false) reason = 'offline';
       var voice = selectedVoice(profile.id);
       var verified = voice && nativeGender(voice) === profile.gender;
+      diagnostic('native-choice',{reason,voice:voice?.voiceURI,lang:voice?.lang,verified:Boolean(verified)});
       var guidance = reason === 'offline' && !verified ?
         ' No verified offline ' + profile.gender + ' voice. On Android, open Settings > Accessibility > Text-to-speech output > Install voice data. Install English voice data and preview and select a matching voice if available.' : '';
       if(!localSupported() || !voice && voices().length){
@@ -129,8 +136,8 @@ var BibleSpeech = (function createBibleSpeech(){
           wordOffset = Math.max(wordOffset, utterance.offset + index - utterance.prefixLength);
         }
       };
-      local.onend = function(){ if(current()) utterance.onend(); };
-      local.onerror = function(){ if(current()) utterance.onerror(guidance ? 'Playback unavailable.' + guidance : undefined); };
+      local.onend = function(){ diagnostic('speech-end-callback',{accepted:current(),attempt,activeSession}); if(current()) utterance.onend(); };
+      local.onerror = function(event){ diagnostic('speech-error-callback',{accepted:current(),attempt,activeSession,error:event?.error}); if(current()) utterance.onerror(guidance ? 'Playback unavailable.' + guidance : undefined); };
       announcementKey = profile.id;
       statusMessage = profile.displayName + ' unavailable' + (reason === 'rate' ? ' at this speed' : '') + '. Using ' +
         (verified ? 'a same-gender device voice.' : 'a device voice; gender unverified.') + guidance;
@@ -140,8 +147,9 @@ var BibleSpeech = (function createBibleSpeech(){
     if(cloudSupported() && navigator.onLine !== false && rate <= 2){
       actualPlayback = {profileId:profile.id, provider:'cloud', voiceName:profile.providerVoiceId,
         locale:profile.locale, genderVerified:true, fallbackReason:null};
+      diagnostic('cloud-request',{attempt,activeSession});
       if(BibleCloudTTS.speak(utterance.text, profile.id, rate, {
-        onstart:started, onend:utterance.onend, onfallback:function(){ speakLocal('cloud-unavailable'); }
+        onstart:started, onend:function(){diagnostic('cloud-end',{accepted:current(),attempt,activeSession});utterance.onend();}, onfallback:function(){ diagnostic('cloud-fallback',{accepted:current(),attempt,activeSession}); speakLocal('cloud-unavailable'); }
       })) return;
     }
     speakLocal(navigator.onLine === false ? 'offline' : rate > 2 ? 'rate' : 'cloud-unavailable');
@@ -335,6 +343,7 @@ var BibleSpeech = (function createBibleSpeech(){
       chapter:activeVerse.chapter || null,
       verse:activeVerse.verseNumber
     };
+    diagnostic('sequence-verse',{translation:activeVerse.translationId,book:activeVerse.bookId,chapter:activeVerse.chapter,verse:activeVerse.verseNumber});
     var utterance = createUtterance(activeVerse);
     var ended = false;
     utterance.onstart = function(){
@@ -614,8 +623,9 @@ var BibleSpeech = (function createBibleSpeech(){
   }
   function failPreparation(){ lastResult = 'failed'; finish(session,'Playback unavailable.'); }
   function resumeStopped(){
+    diagnostic('resume-stopped-enter');
     if(!stopped) return false;
-    if(deferForMicrophone(resumeStopped)) return true;
+    if(deferForMicrophone(resumeStopped)){diagnostic('resume-stopped-microphone-deferred');return true;}
     if(localSupported() && window.speechSynthesis.paused) window.speechSynthesis.resume();
     stopped = false;
     state = 'preparing';
@@ -627,6 +637,7 @@ var BibleSpeech = (function createBibleSpeech(){
     return true;
   }
   function stop(preserveChapter, keepPosition){
+    diagnostic('speech-stop-enter',{keepPosition});
     if(typeof cancelReaderVoicePlayback === 'function') cancelReaderVoicePlayback();
     if(keepPosition && state === 'idle') return;
     stopped = Boolean(keepPosition && verses.length);
@@ -648,6 +659,7 @@ var BibleSpeech = (function createBibleSpeech(){
       currentVerseIndex = -1;
       continueAfterChapter = null;
     }
+    diagnostic('speech-stop-checkpoint');
     completionMessage = 'Stopped. Press Play to continue reading.';
     statusMessage = '';
     updateControls();
