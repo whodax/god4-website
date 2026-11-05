@@ -173,7 +173,7 @@ test('the compact Reader Stop and Play controls resume from a native boundary',a
   expect(await state(page)).toMatchObject({count:2,text:'beginning was the Word, and the Word was with God, and the Word was God.'});
 });
 
-test.describe('Android main Pause and Play',()=>{
+test.describe('Android spoken Pause and Play',()=>{
   test.use({viewport:{width:390,height:844},hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130.0.0.0 Mobile Safari/537.36'});
 
   async function exposeControls(page){
@@ -205,12 +205,11 @@ test.describe('Android main Pause and Play',()=>{
         if(outcome==='interrupted event')first.onerror({error:'interrupted'});
       };
     },outcome);
-    await exposeControls(page);
-    await button.press('Enter');
+    await page.evaluate(()=>handleVoiceCommand('Pause'));
     expect(await state(page)).toMatchObject({playing:'paused',count:1});
     if(outcome==='completed while paused')await page.evaluate(()=>__speech.spoken[0].onend());
-    const immediate=await button.evaluate(element=>{
-      element.click();
+    const immediate=await page.evaluate(()=>{
+      handleVoiceCommand('Play');
       return __speech.actions.slice();
     });
     if(outcome==='confirmed pause'||outcome==='online retained queue'){
@@ -235,10 +234,9 @@ test.describe('Android main Pause and Play',()=>{
     await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number','1');
 
     if(outcome!=='silent retained queue')return;
-    await exposeControls(page);
-    await button.press('Enter');
-    const repeated=await button.evaluate(element=>{
-      element.click();
+    await page.evaluate(()=>handleVoiceCommand('Pause'));
+    const repeated=await page.evaluate(()=>{
+      handleVoiceCommand('Play');
       return __speech.actions.slice();
     });
     expect(repeated).toEqual(['cancel','resume','speak','cancel','resume','speak']);
@@ -255,5 +253,49 @@ test.describe('Android main Pause and Play',()=>{
       expect(await state(page)).toMatchObject({count:count+1,cursor:{verse}});
       await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number',String(verse));
     }
+  });
+});
+
+test.describe('Android main Play and Stop',()=>{
+  test.use({viewport:{width:390,height:844},hasTouch:true,userAgent:'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130.0.0.0 Mobile Safari/537.36'});
+  for(const boundary of [true,false])test('same control cancels and immediately resumes '+(boundary?'from a word boundary':'from the unfinished verse start'),async({page})=>{
+    await open(page);
+    await page.evaluate(()=>ReaderTranslationLoader.ensure());
+    const button=page.locator('#readAloudPlay');
+    await button.press('Enter');
+    const checkpoint=await page.evaluate(boundary=>{
+      const first=__speech.spoken[0];
+      first.onstart();
+      const text=BibleData.getVerse('web','john',1,1).text;
+      if(boundary)first.onboundary({name:'word',charIndex:first.text.indexOf('beginning')});
+      Object.assign(speechSynthesis,{speaking:true,pending:false,paused:false});
+      return boundary?text.slice(text.indexOf('beginning')):text;
+    },boundary);
+    await expect(button).toHaveAccessibleName('Stop reading aloud');
+    await expect(button).toHaveAttribute('title','Stop reading aloud');
+    expect(await button.evaluate(el=>getComputedStyle(el,'::after').content)).toContain('■');
+    await expect(button).toBeFocused();
+    await button.press('Enter');
+    expect(await state(page)).toMatchObject({playing:'idle',count:1,cursor:{translationId:'web',bookId:'john',chapter:1,verse:1}});
+    await expect(button).toHaveAccessibleName('Play reading aloud');
+    await expect(button).toHaveAttribute('title','Play reading aloud');
+    expect(await button.evaluate(el=>getComputedStyle(el,'::after').content)).toContain('▶');
+    await expect(button).toBeFocused();
+    const calls=await button.evaluate(el=>{
+      const counts=[];
+      for(let i=0;i<3;i++){
+        el.click();
+        counts.push(__speech.spoken.length);
+      }
+      for(const old of __speech.spoken.slice(0,-1)){
+        old.onend();
+        old.onerror({error:'interrupted'});
+      }
+      __speech.spoken.at(-1).onstart();
+      return {counts,pauses:__speech.pauses};
+    });
+    expect(calls).toEqual({counts:[2,2,3],pauses:0});
+    expect(await state(page)).toMatchObject({playing:'playing',count:3,text:checkpoint,cursor:{chapter:1,verse:1}});
+    await expect(page.locator('.verse-spoken')).toHaveAttribute('data-verse-number','1');
   });
 });

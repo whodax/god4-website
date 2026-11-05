@@ -563,8 +563,6 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     if(!initialized || !media.matches) return;
     var state=typeof BibleSpeech==='undefined' ? 'idle' : BibleSpeech.getState();
     var play=document.getElementById('readAloudPlay');
-    var label=state==='playing' ? 'Pause reading aloud' : state==='paused' ? 'Resume reading aloud' : state==='preparing' ? 'Stop reading aloud' : 'Play reading aloud';
-    if(play.getAttribute('aria-label')!==label) play.setAttribute('aria-label',label);
     if(play.dataset.playbackState!==state) play.dataset.playbackState=state;
     stop.disabled=state==='idle';
   }
@@ -635,13 +633,6 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     move(document.getElementById('fullscreenBtn'),panel);
     stop=document.createElement('button');stop.type='button';stop.className='reader-compact-stop';stop.textContent='Stop reading aloud';
     stop.addEventListener('click',function(){stopReader();});panel.appendChild(stop);
-    document.getElementById('readAloudPlay').addEventListener('click',function(event){
-      if(!media.matches || typeof BibleSpeech==='undefined') return;
-      var state=BibleSpeech.getState();
-      if(state==='playing' || state==='paused'){
-        event.preventDefault();event.stopImmediatePropagation();pauseResumeReadAloud();sync();
-      }
-    },true);
     function adapt(){
       // A focused element is retained during reparenting without scrolling it.
       var focus=document.activeElement;

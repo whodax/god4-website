@@ -706,7 +706,7 @@
     .reader-compact-playback > [data-reader-action="previous-verse"]::after{content:'\2190';font-size:22px;}
     .reader-compact-playback > #readAloudPlay{grid-column:3;grid-row:1;font-size:0;}
     .reader-compact-playback > #readAloudPlay::after{content:'\25B6';font-size:20px;}
-    .reader-compact-playback > #readAloudPlay[data-playback-state="playing"]::after{content:'\23F8';}
+    .reader-compact-playback > #readAloudPlay[data-playback-state="playing"]::after,
     .reader-compact-playback > #readAloudPlay[data-playback-state="preparing"]::after{content:'\25A0';}
     .reader-compact-playback > [data-reader-action="next-verse"]{grid-column:4;grid-row:1;font-size:0;}
     .reader-compact-playback > [data-reader-action="next-verse"]::after{content:'\2192';font-size:22px;}

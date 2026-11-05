@@ -55,7 +55,7 @@ for(const provider of ['native','cloud','fallback'])for(const fullscreen of [fal
     }
     await mic(page);
     await page.locator('#readAloudPlay').focus();await page.keyboard.press('Enter');await count(page,provider,1);
-    await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Pause reading aloud');
+    await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Stop reading aloud');
     expect(await text(page,provider)).toBe('John chapter 1 verse 1. '+await page.evaluate(()=>BibleData.getVerse('web','john',1,1).text));
     await page.evaluate(()=>{
       __android.changes=[];__android.play=document.getElementById('readAloudPlay');
@@ -72,10 +72,12 @@ for(const provider of ['native','cloud','fallback'])for(const fullscreen of [fal
     await count(page,provider,2);
     expect(await text(page,provider)).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',1,2).text));
     expect(await page.evaluate(()=>__android.changes)).toEqual([]);
-    await page.keyboard.press('Enter');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');
-    await page.keyboard.press('Enter');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
+    await page.keyboard.press('Enter');expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+    await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Play reading aloud');
     await page.evaluate(()=>{__android.autoStart=true;__android.holdDecode=false;});
-    await end(page,provider);await count(page,provider,3);
+    await page.keyboard.press('Enter');await count(page,provider,3);
+    expect(await text(page,provider)).toBe(await page.evaluate(()=>BibleData.getVerse('web','john',1,2).text));
+    await end(page,provider);await count(page,provider,4);
     expect(await page.evaluate(()=>({starts:__android.starts,stops:__android.stops,tones:__android.oscillators}))).toEqual({starts:1,stops:0,tones:0});
     await page.locator('.reader-compact-stop').click();expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
     await page.locator('[data-voice-command-button]').click();expect(await page.evaluate(()=>__android.stops)).toBe(1);

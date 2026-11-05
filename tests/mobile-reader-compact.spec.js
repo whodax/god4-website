@@ -84,15 +84,15 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true])for(co
   });
 }
 
-test('mobile playback pauses, resumes and stops; verse/chapter navigation and DRA remain intact',async({page})=>{
+test('mobile Play stops and restarts playback; verse/chapter navigation and DRA remain intact',async({page})=>{
   await open(page,390);
   await page.locator('[data-reader-action="next-verse"]').tap();await expect(page.locator('#readerReferenceText')).toHaveText('John 1:1');
   await page.locator('[data-reader-action="next-verse"]').tap();await expect(page.locator('#readerReferenceText')).toHaveText('John 1:2');
   await page.locator('[data-reader-action="previous-verse"]').tap();await expect(page.locator('#readerReferenceText')).toHaveText('John 1:1');
   await page.locator('#readAloudPlay').focus();await page.keyboard.press('Enter');
-  await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Pause reading aloud');
-  await page.keyboard.press('Enter');await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Resume reading aloud');
-  await page.keyboard.press('Enter');await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Pause reading aloud');
+  await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Stop reading aloud');
+  await page.keyboard.press('Enter');await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Play reading aloud');
+  await page.keyboard.press('Enter');await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Stop reading aloud');
   await page.locator('#readerMoreTrigger').tap();await page.locator('.reader-compact-stop').tap();
   expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
   await page.locator('#readerMoreTrigger').tap();await page.locator('#readerTranslationTrigger').tap();

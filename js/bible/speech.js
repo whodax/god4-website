@@ -291,8 +291,8 @@ var BibleSpeech = (function createBibleSpeech(){
     if(controls.play){
       controls.play.disabled = unavailable;
       var text=active ? 'Stop' : 'Play';
-      var compact=controls.play.closest('.reader-compact-mobile');
-      var label=compact && state==='playing' ? 'Pause reading aloud' : compact && state==='paused' ? 'Resume reading aloud' : active ? 'Stop reading aloud' : 'Play reading aloud';
+      var label=text+' reading aloud';
+      if(controls.play.title!==label) controls.play.title=label;
       if(controls.play.textContent!==text) controls.play.textContent=text;
       if(controls.play.getAttribute('aria-label')!==label) controls.play.setAttribute('aria-label',label);
     }
