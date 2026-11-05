@@ -9,7 +9,7 @@ const generator=require('../tools/generate-translation-manifest');
 
 const root=path.resolve(__dirname,'..');
 const production56='8b7c2b3f8c22b0952c41c00ac57ee4de697ea555';
-const narrationPins={"/js/bible/speech.js":"6b721970892177023f7ec47af75146a1c28eca31cc8bc065ec50153c1885718c","/js/bible/reader.js":"148f81724f67c37e1ef894b2e60d485fe73fbee6bc489d32f28eb785d96e1264","/css/companion.css":"79e4e7c617bc72b7df600eec8aa26b9f31622f46f9941a1502a2181d8a80e926","/js/bible/translation-picker.js":"0ba0fdd9345ee6214d4de69a19c6a35cc5ecf7a2bdc1ec96eb797b1884167b49"};
+const narrationPins={"/js/bible/speech.js":"6b721970892177023f7ec47af75146a1c28eca31cc8bc065ec50153c1885718c","/js/bible/reader.js":"9208083097e0c33a1dbb80831c27c6edce4bb0be25f5e8513047ea2f7d691f78","/css/companion.css":"cc614a5ca9e10a7111ae5d1c6cd34fb9448c2bedf62c697ec02333f5f4bdea33","/js/bible/translation-picker.js":"e537986ff7e41fb62b0eb533150b05af4eb0e683bf50f3ae983fe64b57b2260a"};
 const production55='90a13c28afc64526bf27b6c2bb7021dd516d6493';
 const discoveryAssets=["/js/home-discovery.js","/js/home-discovery-catalog.json"];
 const discoveryPins={"/":"0a064ced401bbd3883488c597837623f153a8e488a10685c8d7947dcecd70418","/js/app.js":"11e5509f9692e7a1ee6b84f59d1e34af5459e46e5a285d2df5d3c7ee536c5af2","/js/home-discovery.js":"7aa2461ad08814e231883a732eccb2907f6517b9c4db488131093169d419a0c2","/js/home-discovery-catalog.json":"5bb67690dbf8e1ff44af50617d0d9f30ae30aa5e78f95bdd024952c632b4555a"};

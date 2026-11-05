@@ -285,7 +285,7 @@ function readerStickyNavigation(){
 
 function readerVisibleTop(){
   var view = document.getElementById('view-reader');
-  var toolbar = view && view.classList.contains('active') && view.querySelector('.reader-show-controls:not([hidden]),.reader-toolbar:not([inert])');
+  var toolbar = view && view.classList.contains('active') && view.querySelector('.reader-recovery:not([hidden]),.reader-toolbar:not([inert])');
   if(view && view.classList.contains('reader-fullscreen')){
     return (toolbar ? toolbar.getBoundingClientRect().bottom : 0) + readerPlanReturnHeight();
   }
