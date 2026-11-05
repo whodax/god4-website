@@ -36,7 +36,10 @@ test('eager entry preserves Reader, Search, Plans, Saved and Word Study without 
  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');await page.keyboard.press('Escape');
  await page.locator('#searchInput').fill('John 3:16');await page.getByRole('button',{name:'Search',exact:true}).click();await expect(page.locator('#results .result-card')).toHaveCount(1);
  await page.getByRole('button',{name:'Plan',exact:true}).click();await expect(page.locator('#planDays button')).toHaveCount(30);
- await page.locator('#heroFav').click();await page.locator('.saved-pill').click();await expect(page.locator('#trayList')).toContainText('John 3:16');
+ await page.locator('#leafCard').scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>localStorage.getItem('god4.discovery.openingTopic'));
+  const savedRef=await page.locator('#verseRef').textContent();
+  await page.locator('#heroFav').click();await page.locator('.saved-pill').click();await expect(page.locator('#trayList')).toContainText(savedRef);
  expect(scripts).not.toContain('/js/bible/compare.js');expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined');
 });
 test('focus alone does not load Compare',async({page})=>{await open(page);await tab(page).focus();await count(page,3).focus();expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined')});
@@ -112,7 +115,7 @@ test.describe('installed offline Compare',()=>{
  test.use({serviceWorkers:'allow'});
  async function install(p){await p.goto('/');await p.evaluate(async()=>{const r=await navigator.serviceWorker.ready,w=r.active;if(w.state!=='activated')await new Promise(resolve=>w.addEventListener('statechange',()=>{if(w.state==='activated')resolve()}))});await p.reload();await p.evaluate(()=>initializeBibleExperience());}
  test('unused runtime first activates offline; retained WEB and unavailable ASV remain distinct',async({page,context})=>{
-  await install(page);expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined');const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-55')).keys()).map(r=>new URL(r.url).pathname));expect(assets).toHaveLength(50);expect(assets).toContain('/js/bible/translation-picker.js');expect(assets).toContain('/js/word-study/alignment.js');expect(assets).toContain('/js/bible/compare-loader.js');expect(assets).toContain('/js/bible/compare.js');
+  await install(page);expect(await page.evaluate(()=>typeof CompareRuntime)).toBe('undefined');const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-56')).keys()).map(r=>new URL(r.url).pathname));expect(assets).toHaveLength(52);expect(assets).toContain('/js/bible/translation-picker.js');expect(assets).toContain('/js/word-study/alignment.js');expect(assets).toContain('/js/bible/compare-loader.js');expect(assets).toContain('/js/bible/compare.js');
   const responses=[];page.on('response',r=>{if(r.url().endsWith('/bible/compare.js'))responses.push(r.fromServiceWorker())});await context.setOffline(true);await tab(page).click();await rendered(page);expect(responses).toEqual([true]);await expect(page.locator('.compare-col').first().locator('.vnum')).toHaveCount(51);await expect(page.locator('.compare-col').nth(1)).toContainText('Passage unavailable in this translation.');
  });
  test('warm Compare and offline reload preserve retained translations and lazy runtime',async({page,context})=>{

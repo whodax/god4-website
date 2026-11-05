@@ -146,13 +146,16 @@ test('header brand keeps clear responsive spacing from navigation and actions', 
 test('hero verse can be saved, unsaved, and shown in the saved-verses tray', async ({ page }) => {
   await page.goto('/');
   const saveButton = page.locator('#heroFav');
+  await saveButton.scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>localStorage.getItem('god4.discovery.openingTopic'));
+  const ref=await page.locator('#verseRef').textContent();
   await saveButton.click();
   await expect(page.locator('#savedCount')).toHaveText('1');
   await expect(saveButton).toHaveText('♥');
 
   await page.locator('.saved-pill').click();
   await expect(page.locator('#tray')).toHaveCSS('right', '0px');
-  await expect(page.locator('#trayList')).toContainText('John 3:16');
+  await expect(page.locator('#trayList')).toContainText(ref);
 
   await page.locator('#closeTray').click();
   await saveButton.click();
@@ -162,6 +165,8 @@ test('hero verse can be saved, unsaved, and shown in the saved-verses tray', asy
 test('verse rotation and Scripture search work', async ({ page }) => {
   await page.goto('/');
   const reference = page.locator('#verseRef');
+  await reference.scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>localStorage.getItem('god4.discovery.openingTopic'));
   const initial = await reference.textContent();
   await page.getByRole('button', { name: 'Another verse' }).click();
   await expect(reference).not.toHaveText(initial);
@@ -2951,14 +2956,18 @@ for (const savedProgress of ['broken-json', '{}', '[1,1,31,"2",null]']) {
 
 test('Saved Verses persists save and removal across reloads with drawer keyboard access', async ({ page }) => {
   const hero = page.locator('#heroFav');
+  await hero.scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>localStorage.getItem('god4.discovery.openingTopic'));
   const ref = await page.locator('#verseRef').textContent();
   await hero.click();
   await expect(hero).toHaveClass(/active/);
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.savedVerses')).length)).toBe(1);
   await page.reload();
   await expect(page.locator('#savedCount')).toHaveText('1');
-  await expect(hero).toHaveAttribute('aria-pressed', 'true');
-  await expect(hero).toHaveClass(/active/);
+  await hero.scrollIntoViewIfNeeded();
+  await expect(page.locator('#verseRef')).not.toHaveText(ref);
+  await expect(hero).toHaveAttribute('aria-pressed', 'false');
+  await expect(hero).not.toHaveClass(/active/);
   const opener = page.locator('.saved-pill');
   const close = page.locator('#closeTray');
   await opener.click();
@@ -3161,7 +3170,13 @@ test('User data storage preserves all six legacy keys and serialized formats acr
   });
   await page.reload();
   await expect(page.locator('#savedCount')).toHaveText('1');
-  await expect(page.locator('#heroFav')).toHaveAttribute('aria-pressed', 'true');
+  await page.locator('.saved-pill').click();
+  const savedEntry=page.locator('#trayList .saved-verse-row');
+  await expect(savedEntry).toHaveCount(1);
+  await expect(savedEntry.locator('.saved-verse-reference')).toHaveText('John 3:16');
+  await expect(savedEntry.locator('.saved-verse-text')).toHaveText('"Legacy saved text"');
+  await page.locator('#closeTray').click();
+  await expect(page.locator('#tray')).toHaveAttribute('aria-hidden','true');
   await expect(page.locator('#readerTranslation')).toHaveValue('asv');
   await expect(page.locator('#readAloudSpeed')).toHaveValue('1.5');
   await expect(page.locator('#readAloudVoice')).toHaveValue('female');
