@@ -1,7 +1,7 @@
 (function(){
   if(new URLSearchParams(location.search).get('narration-debug') !== '1') return;
   const entries = [];
-  const version = 'shell57-diag-1';
+  const version = 'shell57-diag-2';
   let nextUtterance = 0;
   const synth = window.speechSynthesis;
   const voiceInfo = voice => voice && ({
@@ -9,7 +9,7 @@
   });
   const queue = () => synth && ({speaking:synth.speaking, pending:synth.pending, paused:synth.paused});
   function record(event, data){
-    entries.push({ms:Math.round(performance.now()),event,data});
+    entries.push({ms:Math.round(performance.now()),event,data,nativeQueue:queue()});
     if(entries.length > 250) entries.shift();
   }
   window.narrationDiagnostic = record;
@@ -76,7 +76,7 @@
     const target = event.target.closest('#readAloudPlay,.reader-compact-stop');
     if(!target) return;
     const control = target.id ? 'play' : 'stop';
-    record('tap',{control,trusted:event.isTrusted,online:navigator.onLine,state:window.BibleSpeech?.getState(),queue:queue()});
+    record('tap',{control,label:target.getAttribute('aria-label') || 'Stop reading aloud',trusted:event.isTrusted,online:navigator.onLine,state:window.BibleSpeech?.getState()});
     queueMicrotask(()=>record('tap-after-dispatch',{control,prevented:event.defaultPrevented,state:window.BibleSpeech?.getState(),queue:queue()}));
   },true);
   document.addEventListener('change',event=>{
@@ -126,7 +126,9 @@
   close.type = 'button';
   close.textContent = 'Close';
   close.addEventListener('click',()=>dialog.close());
-  dialog.append(note,output,refresh,copy,close,copyStatus);
+  const steps = document.createElement('p');
+  steps.textContent = 'To test Stop, open Reader Options and tap Stop reading aloud. The main control pauses while playing. After Stop, tap Play reading aloud.';
+  dialog.append(note,steps,output,refresh,copy,close,copyStatus);
   button.addEventListener('click',()=>{show();dialog.showModal();});
   document.body.append(button,dialog);
 }());

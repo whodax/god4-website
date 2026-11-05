@@ -6,6 +6,8 @@ test('diagnostics stay disabled without opt-in',async({page})=>{
   expect(await page.evaluate(()=>typeof window.narrationDiagnostic)).toBe('undefined');
 });
 
+test.use({viewport:{width:390,height:844},hasTouch:true});
+
 test('offline opt-in records the active shell, Stop and Play, and rejects a stale callback',async({page,context})=>{
   await page.addInitScript(()=>{
     window.utterances=[];
@@ -14,6 +16,8 @@ test('offline opt-in records the active shell, Stop and Play, and rejects a stal
     synth.getVoices=()=>[{name:'Test Male',voiceURI:'test-male',lang:'en-US',localService:true}];
     synth.speak=utterance=>utterances.push(utterance);
     synth.cancel=()=>{};
+    synth.pause=()=>{};
+    synth.paused=false;
     Object.defineProperty(window,'speechSynthesis',{value:synth});
     window.SpeechSynthesisUtterance=class extends EventTarget{constructor(text){super();this.text=text;}};
     window.addEventListener('DOMContentLoaded',()=>initializeBibleExperience());
@@ -36,8 +40,14 @@ test('offline opt-in records the active shell, Stop and Play, and rejects a stal
     first.dispatchEvent(Object.assign(new Event('boundary'),boundary));
     first.onboundary(boundary);
   });
+  await page.evaluate(()=>ReaderTranslationLoader.ensure());
   await play.press('Enter');
-  await play.press('Enter');
+  const recovery=page.getByRole('button',{name:'Show Reader controls',exact:true});
+  if(await recovery.isVisible())await recovery.tap();
+  const options=page.locator('#readerMoreTrigger');
+  if(await options.getAttribute('aria-expanded')==='false')await options.tap();
+  await page.locator('.reader-compact-stop').tap();
+  await play.tap();
   await page.evaluate(()=>{
     utterances[0].onerror({error:'interrupted'});
     utterances[1].dispatchEvent(new Event('start'));
@@ -49,11 +59,16 @@ test('offline opt-in records the active shell, Stop and Play, and rejects a stal
   await expect(page.getByText('Diagnostic report copied.')).toBeVisible();
   const entries=(await page.getByRole('textbox',{name:'Narration diagnostic log'}).inputValue()).split('\n').map(JSON.parse);
   expect(entries).toEqual(expect.arrayContaining([
-    expect.objectContaining({event:'active-shell',data:'god4-shell-compact-reader-57-diagnostic'}),
-    expect.objectContaining({event:'speech-loaded',data:expect.objectContaining({version:'shell57-diag-1'})}),
+    expect.objectContaining({event:'active-shell',data:'god4-shell-compact-reader-57-diagnostic-2'}),
+    expect.objectContaining({event:'speech-loaded',data:expect.objectContaining({version:'shell57-diag-2'})}),
     expect.objectContaining({event:'native-choice',data:expect.objectContaining({voice:'test-male',reason:'offline'})}),
     expect.objectContaining({event:'speech-stop-checkpoint',data:expect.objectContaining({stopped:true,wordOffset:7})}),
     expect.objectContaining({event:'native-boundary'}),
+    expect.objectContaining({event:'compact-main-action',data:{action:'pause',state:'playing'}}),
+    expect.objectContaining({event:'pause-resume-return',data:expect.objectContaining({state:'paused'}),nativeQueue:expect.objectContaining({paused:false})}),
+    expect.objectContaining({event:'compact-stop-button',data:{trusted:true,state:'paused'}}),
+    expect.objectContaining({event:'reader-stop-return',data:expect.objectContaining({state:'idle',readerPlaybackPending:false})}),
+    expect.objectContaining({event:'tap',data:expect.objectContaining({control:'play',trusted:true,state:'idle'})}),
     expect.objectContaining({event:'microphone-play-command',data:expect.objectContaining({state:'idle'})}),
     expect.objectContaining({event:'speech-error-callback',data:expect.objectContaining({accepted:false})}),
     expect.objectContaining({event:'native-start',data:expect.objectContaining({id:2})})

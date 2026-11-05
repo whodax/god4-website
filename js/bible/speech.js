@@ -32,7 +32,7 @@ var BibleSpeech = (function createBibleSpeech(){
   function diagnostic(event, details){
     window.narrationDiagnostic?.(event, {state, session, playbackAttempt, stopped, verseIndex, currentVerseIndex, pendingNext, wordOffset, preference:voicePreference, ...details});
   }
-  diagnostic('speech-loaded', {version:'shell57-diag-1'});
+  diagnostic('speech-loaded', {version:'shell57-diag-2'});
 
   function localSupported(){
     return typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined' && typeof window.SpeechSynthesisUtterance !== 'undefined';
@@ -587,6 +587,7 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function pauseResume(){
+    diagnostic('pause-resume-enter');
     if(!supported()) return;
     if(state === 'playing' || state === 'preparing'){
       state = 'paused';
@@ -607,6 +608,7 @@ var BibleSpeech = (function createBibleSpeech(){
       }
     }
     updateControls();
+    diagnostic('pause-resume-return');
   }
 
   function beginPreparation(){

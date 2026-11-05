@@ -161,7 +161,7 @@ function stopSpeechForManualNavigation(preserveChapter){
   BibleSpeech.setStatusMessage('');
 }
 
-window.narrationDiagnostic?.('reader-loaded',{version:'shell57-diag-1'});
+window.narrationDiagnostic?.('reader-loaded',{version:'shell57-diag-2'});
 function playReader(explicitVerse, pauseAfterFirst, restartSequence){
   window.narrationDiagnostic?.('reader-play-enter',{state:window.BibleSpeech?.getState(),readerPlaybackPending,explicitVerse,restartSequence,cursor:getPlaybackResumeCursor()});
   if(typeof BibleSpeech === 'undefined') return;
@@ -1455,6 +1455,7 @@ function stopReadAloud(){
   readerPlaybackIntent++;
   readerPlaybackPending = false;
   if(typeof BibleSpeech !== 'undefined') BibleSpeech.stop(false,true);
+  window.narrationDiagnostic?.('reader-stop-return',{cursor:getPlaybackResumeCursor(),state:window.BibleSpeech?.getState(),readerPlaybackPending});
 }
 
 function adjacentCatholicBook(direction){
