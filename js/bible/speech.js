@@ -14,6 +14,7 @@ var BibleSpeech = (function createBibleSpeech(){
   // Session state survives per-verse preparation; chapter context is claimed only on actual start.
   var spokenChapterKey = '', sessionStarted = false, preserveChapterOnce = false;
   var commandNativeReplay = false;
+  var stopped = false, wordOffset = 0, resumeOffset = 0;
   var verses = [];
   var verseIndex = 0;
   var pendingNext = false;
@@ -57,6 +58,10 @@ var BibleSpeech = (function createBibleSpeech(){
   }
   function createUtterance(verse){
     var text = verse.translationId === 'kjv' ? verse.text.replace(/\[((?:\[[^[\]]*\]|[^[\]])+)\]/g, '$1') : verse.text;
+    var offset = resumeOffset;
+    resumeOffset = 0;
+    wordOffset = offset;
+    text = text.slice(offset);
     var utterance = cloudSupported() ? {text:text} : new window.SpeechSynthesisUtterance(text);
     var chapter = typeof BibleData!=='undefined' && verse.bookId && verse.chapter
       ? BibleData.getChapter(verse.translationId,verse.bookId,verse.chapter) : null;
@@ -64,6 +69,8 @@ var BibleSpeech = (function createBibleSpeech(){
     if(chapter && (!sessionStarted || utterance.chapterKey!==spokenChapterKey)){
       utterance.text=chapter.bookName+' chapter '+verse.chapter+(!sessionStarted && verse.verseNumber?' verse '+verse.verseNumber:'')+'. '+text;
     }
+    utterance.prefixLength = utterance.text.length - text.length;
+    utterance.offset = offset;
     utterance.profileId = voicePreference;
     utterance.playbackRate = speed;
     return utterance;
@@ -83,41 +90,51 @@ var BibleSpeech = (function createBibleSpeech(){
       sessionStarted = true;
       if(utterance.chapterKey) spokenChapterKey=utterance.chapterKey;
       if(state !== 'paused') state = 'playing';
-      var key = profile.id + ':' + actualPlayback.provider + ':' + (actualPlayback.fallbackReason || '');
-      if(key !== announcementKey){
-        announcementKey = key;
-        statusMessage = actualPlayback.provider === 'cloud' ? 'Playing ' + profile.displayName + '.' :
-          profile.displayName + ' unavailable' + (actualPlayback.fallbackReason === 'rate' ? ' at this speed' : '') + '. Using ' +
-          (actualPlayback.genderVerified ? 'a same-gender device voice.' : 'a device voice; gender unverified.');
-      }
+      announcementKey = profile.id;
+      if(actualPlayback.provider === 'cloud') statusMessage = 'Playing ' + profile.displayName + '.';
       updateControls();
       onstart();
     }
     function speakLocal(reason){
       if(!current()) return;
+      if(navigator.onLine === false) reason = 'offline';
       var voice = selectedVoice(profile.id);
-      // An empty inventory can still have a device default. Never knowingly choose the opposite gender.
-      if(!localSupported() || !voice && voices().length){ actualPlayback = {profileId:profile.id,provider:null,voiceName:null,genderVerified:false,fallbackReason:'native-unavailable'}; utterance.onerror(); return; }
+      var verified = voice && nativeGender(voice) === profile.gender;
+      var guidance = reason === 'offline' && !verified ?
+        ' No verified offline ' + profile.gender + ' voice. On Android, open Settings > Accessibility > Text-to-speech output > Install voice data. Install English voice data and preview and select a matching voice if available.' : '';
+      if(!localSupported() || !voice && voices().length){
+        actualPlayback = {profileId:profile.id,provider:null,voiceName:null,genderVerified:false,fallbackReason:'native-unavailable'};
+        utterance.onerror('Playback unavailable.' + guidance);
+        return;
+      }
       actualPlayback = {profileId:profile.id, provider:'native', voiceName:voice ? voice.name : null,
-        locale:voice ? voice.lang : 'en', genderVerified:voice ? nativeGender(voice) === profile.gender : false, fallbackReason:reason};
+        locale:voice ? voice.lang : 'en', genderVerified:Boolean(verified), fallbackReason:reason};
       if(state === 'paused' && typeof isAndroidVoiceCommands === 'function' && isAndroidVoiceCommands()){
-        // A cloud failure during an Android command turn must not start native audio.
         session++;
         commandNativeReplay = true;
         return;
       }
-      var local = configureUtterance(new window.SpeechSynthesisUtterance(utterance.text),profile.id,rate);
+      var local = new window.SpeechSynthesisUtterance(utterance.text);
+      local.rate = rate;
+      local.pitch = 1;
+      if(voice) local.voice = voice;
+      else local.lang = 'en';
       local.onstart = started;
-      local.onend = utterance.onend;
-      local.onerror = utterance.onerror;
-      // Surface fallback even when the native engine never starts, including while paused.
-      var fallbackKey = profile.id + ':native:' + reason;
-      if(fallbackKey !== announcementKey){
-        announcementKey = fallbackKey;
-        statusMessage = profile.displayName + ' unavailable' + (reason === 'rate' ? ' at this speed' : '') + '. Using ' +
-          (actualPlayback.genderVerified ? 'a same-gender device voice.' : 'a device voice; gender unverified.');
-        updateControls();
-      }
+      local.onboundary = function(event){
+        var index = event.charIndex;
+        if(current() && /^(word|sentence)$/.test(event.name) && Number.isInteger(index) &&
+            index >= utterance.prefixLength && index < utterance.text.length){
+          // Engines can report a position inside or immediately after a word.
+          while(index > utterance.prefixLength && /\S/.test(utterance.text[index - 1])) index--;
+          wordOffset = Math.max(wordOffset, utterance.offset + index - utterance.prefixLength);
+        }
+      };
+      local.onend = function(){ if(current()) utterance.onend(); };
+      local.onerror = function(){ if(current()) utterance.onerror(guidance ? 'Playback unavailable.' + guidance : undefined); };
+      announcementKey = profile.id;
+      statusMessage = profile.displayName + ' unavailable' + (reason === 'rate' ? ' at this speed' : '') + '. Using ' +
+        (verified ? 'a same-gender device voice.' : 'a device voice; gender unverified.') + guidance;
+      updateControls();
       window.speechSynthesis.speak(local);
     }
     if(cloudSupported() && navigator.onLine !== false && rate <= 2){
@@ -176,45 +193,6 @@ var BibleSpeech = (function createBibleSpeech(){
     return english;
   }
 
-  function knownVoiceGroup(name){
-    if(/\bDavid\b/i.test(name)) return 'david';
-    if(/\bZira\b|Google UK English Female/i.test(name)) return 'zira';
-    if(/Google UK English Male|\bMark\b|Google U\.?S\.? English/i.test(name)) return 'uk-male';
-    return null;
-  }
-
-  function isCanonicalVoice(voice, group){
-    if(group === 'david') return /\bDavid\b/i.test(voice.name);
-    if(group === 'uk-male') return /Google UK English Male/i.test(voice.name);
-    if(group === 'zira') return /\bZira\b/i.test(voice.name);
-    return false;
-  }
-
-  function distinctVoices(){
-    var groups = new Map();
-    sortedEnglishVoices().forEach(function(voice){
-      if(/^(?:Automatic|Adult Male|Adult Female|Child Male|Child Female)$/i.test(voice.name)) return;
-      if(/Google UK English Male/i.test(voice.name)) return;
-      // These aliases were heard as the same base voice on the target phone.
-      // A matching voiceURI also collapses aliases on other devices.
-      var group = knownVoiceGroup(voice.name) ||
-        (voice.voiceURI ? 'uri:' + voice.voiceURI : 'name:' + voice.name.toLowerCase());
-      var current = groups.get(group);
-      if(!current || (!isCanonicalVoice(current, group) && isCanonicalVoice(voice, group))) groups.set(group, voice);
-    });
-    var ordered = ['david', 'zira', 'uk-male'].filter(function(group){ return groups.has(group); })
-      .map(function(group){ return groups.get(group); });
-    groups.forEach(function(voice, group){ if(['david', 'zira', 'uk-male'].indexOf(group) < 0) ordered.push(voice); });
-    var usedNames = new Set();
-    var usedUris = new Set();
-    return ordered.filter(function(voice){
-      if(usedNames.has(voice.name) || (voice.voiceURI && usedUris.has(voice.voiceURI))) return false;
-      usedNames.add(voice.name);
-      if(voice.voiceURI) usedUris.add(voice.voiceURI);
-      return true;
-    });
-  }
-
   function nativeGender(voice){
     var name = voice.name;
     if(/\b(?:Zira|Samantha)\b|\bFemale\b/i.test(name)) return 'female';
@@ -223,7 +201,9 @@ var BibleSpeech = (function createBibleSpeech(){
   }
   function selectedVoice(profileId){
     var gender = profileId || voicePreference;
-    var available = distinctVoices().filter(function(voice){ return navigator.onLine !== false || voice.localService; });
+    var available = sortedEnglishVoices().filter(function(voice){
+      return (navigator.onLine !== false || voice.localService) && !/Google UK English Male|^(?:Automatic|Adult Male|Adult Female|Child Male|Child Female)$/i.test(voice.name);
+    });
     return available.find(function(voice){ return voice.localService && nativeGender(voice) === gender; }) ||
       available.find(function(voice){ return nativeGender(voice) === gender; }) ||
       available.find(function(voice){ return nativeGender(voice) === null; }) || null;
@@ -252,14 +232,6 @@ var BibleSpeech = (function createBibleSpeech(){
     return Object.assign({preference:voicePreference, voiceName:voice ? voice.name : null,
       lang:voice ? voice.lang : null, pitch:1, result:lastResult},actualPlayback || {},{preference:voicePreference});
   }
-  function configureUtterance(utterance,profileId,rate){
-    utterance.rate = rate === undefined ? speed : rate;
-    utterance.pitch = 1;
-    var voice = selectedVoice(profileId);
-    if(voice) utterance.voice = voice;
-    return utterance;
-  }
-
   function setPlaybackListener(listener){
     playbackListener = listener && typeof listener === 'object' ? listener : null;
   }
@@ -306,6 +278,7 @@ var BibleSpeech = (function createBibleSpeech(){
     }
     if(controls.status){
       var message = unavailable ? 'Read aloud is unavailable in this browser.' : active ? statusMessage || 'Preparing ' + PROFILES[voicePreference].displayName + '…' : state === 'paused' ? 'Reading aloud paused.' : completionMessage;
+      controls.status.toggleAttribute('data-offline-voice', message.includes('Install voice data'));
       if(controls.status.textContent !== message) controls.status.textContent = message;
     }
     if(controls.speed) controls.speed.value = String(speed);
@@ -316,6 +289,7 @@ var BibleSpeech = (function createBibleSpeech(){
   function finish(activeSession, message){
     if(activeSession !== session) return;
     state = 'idle';
+    stopped = false;
     commandNativeReplay = false;
     spokenChapterKey='';sessionStarted=false;preserveChapterOnce=false;
     verses = [];
@@ -392,11 +366,11 @@ var BibleSpeech = (function createBibleSpeech(){
       }
       speakNext(activeSession);
     };
-    utterance.onerror = function(){
+    utterance.onerror = function(message){
       if(activeSession !== session || ended) return;
       ended = true;
       lastResult = 'failed';
-      finish(activeSession, 'Playback unavailable.');
+      finish(activeSession, message || 'Playback unavailable.');
     };
     notifyVerseStart(activeVerse.verseNumber, location);
     speakUtterance(utterance);
@@ -419,6 +393,7 @@ var BibleSpeech = (function createBibleSpeech(){
       return;
     }
     var wasPaused = state === 'paused';
+    stopped = false;
     commandNativeReplay = false;
     if(state==='idle' && !preserveChapterOnce) spokenChapterKey='';
     preserveChapterOnce=false;
@@ -453,6 +428,7 @@ var BibleSpeech = (function createBibleSpeech(){
       return;
     }
     var wasPaused = state === 'paused';
+    stopped = false;
     commandNativeReplay = false;
     if(state==='idle' && !preserveChapterOnce) spokenChapterKey='';
     preserveChapterOnce=false;
@@ -516,11 +492,11 @@ var BibleSpeech = (function createBibleSpeech(){
         speakNext(activeSession);
       }
     };
-    utterance.onerror = function(){
+    utterance.onerror = function(message){
       if(activeSession !== session || repeatState !== detour || ended) return;
       ended = true;
       lastResult = 'failed';
-      finish(activeSession, 'Playback unavailable.');
+      finish(activeSession, message || 'Playback unavailable.');
     };
     notifyVerseStart(activeVerse.verseNumber, {
       translationId:activeVerse.translationId || null, bookId:activeVerse.bookId || null,
@@ -625,6 +601,7 @@ var BibleSpeech = (function createBibleSpeech(){
   }
 
   function beginPreparation(){
+    stopped = false;
     commandNativeReplay = false;
     session++;
     cancelSpeech();
@@ -636,24 +613,41 @@ var BibleSpeech = (function createBibleSpeech(){
     updateControls();
   }
   function failPreparation(){ lastResult = 'failed'; finish(session,'Playback unavailable.'); }
-  function stop(preserveChapter){
+  function resumeStopped(){
+    if(!stopped) return false;
+    if(deferForMicrophone(resumeStopped)) return true;
+    if(localSupported() && window.speechSynthesis.paused) window.speechSynthesis.resume();
+    stopped = false;
+    state = 'preparing';
+    prepareCloudSpeech();
+    resumeOffset = pendingNext ? 0 : wordOffset;
+    pendingNext = false;
+    if(repeatState) speakRepeat(session, repeatState);
+    else speakNext(session);
+    return true;
+  }
+  function stop(preserveChapter, keepPosition){
     if(typeof cancelReaderVoicePlayback === 'function') cancelReaderVoicePlayback();
+    if(keepPosition && state === 'idle') return;
+    stopped = Boolean(keepPosition && verses.length);
     commandNativeReplay = false;
     session++;
     cancelSpeech();
     state = 'idle';
-    // Transport replacement retains context; a new sequence still identifies its destination.
-    preserveChapterOnce=preserveChapter===true;
-    if(!preserveChapterOnce) spokenChapterKey='';
-    sessionStarted=false;
-    verses = [];
-    verseIndex = 0;
-    pendingNext = false;
-    pauseAfterCurrent = false;
-    sequenceIsChapter = false;
-    repeatState = null;
-    currentVerseIndex = -1;
-    continueAfterChapter = null;
+    if(!stopped){
+      // Transport replacement retains context; a new sequence still identifies its destination.
+      preserveChapterOnce=preserveChapter===true;
+      if(!preserveChapterOnce) spokenChapterKey='';
+      sessionStarted=false;
+      verses = [];
+      verseIndex = 0;
+      pendingNext = false;
+      pauseAfterCurrent = false;
+      sequenceIsChapter = false;
+      repeatState = null;
+      currentVerseIndex = -1;
+      continueAfterChapter = null;
+    }
     completionMessage = 'Stopped. Press Play to continue reading.';
     statusMessage = '';
     updateControls();
@@ -676,6 +670,8 @@ var BibleSpeech = (function createBibleSpeech(){
     pauseResume: pauseResume,
     pauseForVoiceCommand: pauseForVoiceCommand,
     stop: stop,
+    resumeStopped: resumeStopped,
+    discardStopped: function(){ stopped = false; },
     setSpeed: setSpeed,
     setVoice: setVoice,
     setPlaybackListener: setPlaybackListener,

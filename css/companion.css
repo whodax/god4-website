@@ -467,6 +467,7 @@
   }
   #view-reader .voice-status{margin-top:4px;min-height:0;}
   #view-reader .reader-audio-status{margin:4px 0 8px;}
+  #readAloudStatus[data-offline-voice]{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;margin:4px 0 8px;}
   #readAloudStatus:empty,#voiceStatusTop:empty{margin:0;min-height:0;}
   #view-reader .reader-verse,#wordStudyPanel,#wordStudyHeading,.word-study-token{
     scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px) + var(--reader-plan-return-height,0px) + 16px);
