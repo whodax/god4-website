@@ -9,7 +9,7 @@ const generator=require('../tools/generate-translation-manifest');
 
 const root=path.resolve(__dirname,'..');
 const production56='8b7c2b3f8c22b0952c41c00ac57ee4de697ea555';
-const narrationPins={"/js/bible/speech.js":"60e0d6bf2e774357d0e5c1e706fa4c44bdf085dcf2991bd6aff2e546c0d59686","/js/bible/reader.js":"148f81724f67c37e1ef894b2e60d485fe73fbee6bc489d32f28eb785d96e1264","/css/companion.css":"c8edb28b56c7537cc5da75abfb2866f30d7e05e9682e9efa51c3f5e43a99b353"};
+const narrationPins={"/js/bible/speech.js":"a0dea537c4511a117751685fb5167defd717bfc9af3a3a82bf14e5cf5f74a3c9","/js/bible/reader.js":"148f81724f67c37e1ef894b2e60d485fe73fbee6bc489d32f28eb785d96e1264","/css/companion.css":"c8edb28b56c7537cc5da75abfb2866f30d7e05e9682e9efa51c3f5e43a99b353"};
 const production55='90a13c28afc64526bf27b6c2bb7021dd516d6493';
 const discoveryAssets=["/js/home-discovery.js","/js/home-discovery-catalog.json"];
 const discoveryPins={"/":"0a064ced401bbd3883488c597837623f153a8e488a10685c8d7947dcecd70418","/js/app.js":"11e5509f9692e7a1ee6b84f59d1e34af5459e46e5a285d2df5d3c7ee536c5af2","/js/home-discovery.js":"7aa2461ad08814e231883a732eccb2907f6517b9c4db488131093169d419a0c2","/js/home-discovery-catalog.json":"5bb67690dbf8e1ff44af50617d0d9f30ae30aa5e78f95bdd024952c632b4555a"};
