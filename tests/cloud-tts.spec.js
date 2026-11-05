@@ -287,11 +287,9 @@ for(const width of [320, 375, 480]){
       expect(await page.locator('#readerContent .reader-verse').allTextContents()).toEqual(before);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await play.press('Enter');
-      expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');
-      await page.locator('#readerMoreTrigger').click();
-      await page.locator('.reader-compact-stop').click();
       expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
-      await page.locator('#readerMoreTrigger').click();
+      expect(await page.evaluate(()=>window.__audio.sources.at(-1).stopped)).toBe(true);
+      await expect(play).toHaveAccessibleName('Play reading aloud');
       const token = page.locator('#readerContent [data-word-study-term]').first(); await token.focus(); await token.press('Enter');
       await expect(page.locator('#wordStudyPanel')).toBeVisible(); await page.keyboard.press('Escape');
       await expect(token).toBeFocused();

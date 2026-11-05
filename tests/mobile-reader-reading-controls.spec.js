@@ -2,6 +2,7 @@ const {test,expect}=require('@playwright/test');
 
 test.use({hasTouch:true});
 const recovery=page=>page.getByRole('button',{name:'Show Reader controls',exact:true});
+const floating=page=>page.locator('.reader-floating-play');
 async function open(page,{width=390,fullscreen=false,cloud=false,fallback=false,deferred=false}={}){
   await page.setViewportSize({width,height:844});await page.emulateMedia({reducedMotion:'reduce'});
   await page.addInitScript(({cloud,deferred})=>{
@@ -49,6 +50,7 @@ async function visible(page){
   await expect(page.locator('.reader-toolbar')).not.toHaveAttribute('inert','');
   await expect(page.locator('.reader-toolbar')).toHaveCSS('visibility','visible');
   await expect(recovery(page)).toBeHidden();
+  await expect(floating(page)).toBeHidden();
 }
 async function readingTouch(page){
   // Model a background touch without Chromium retargeting it to a nearby word.
@@ -62,7 +64,12 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true]){
     await open(page,{width,fullscreen});
     const before=await snapshot(page);await scroll(page,96);await hidden(page);
     const after=await snapshot(page);expect(after.verse-before.verse).toBe(-96);expect(after.height).toBe(before.height);
-    expect(await page.evaluate(()=>readerVisibleTop())).toBeCloseTo((await recovery(page).boundingBox()).y+(await recovery(page).boundingBox()).height,1);
+    const playBounds=await floating(page).boundingBox(), showBounds=await recovery(page).boundingBox();
+    expect(playBounds.y).toBeCloseTo(showBounds.y+showBounds.height+4,1);
+    expect(playBounds.x+playBounds.width).toBeCloseTo(showBounds.x+showBounds.width,1);
+    expect(playBounds.width).toBeGreaterThanOrEqual(44);
+    expect(playBounds.height).toBeGreaterThanOrEqual(44);
+    expect(await page.evaluate(()=>readerVisibleTop())).toBeCloseTo(playBounds.y+playBounds.height,1);
     expect((await recovery(page).boundingBox()).height).toBeGreaterThanOrEqual(44);
     expect((await recovery(page).boundingBox()).y).toBeGreaterThanOrEqual(4);
     await page.screenshot({path:testInfo.outputPath('controls-hidden.png')});
@@ -86,7 +93,7 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true]){
     expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('playing');
     await scroll(page,-96);await hidden(page);
     const before=await snapshot(page);await recovery(page).tap();await visible(page);expect(await snapshot(page)).toEqual(before);
-    await expect(page.getByRole('button',{name:'Stop reading aloud',exact:true})).toBeVisible();
+    await expect(page.locator('#readAloudPlay')).toHaveAccessibleName('Stop reading aloud');
     await page.evaluate(()=>BibleSpeech.updateControls());await visible(page);
     await page.evaluate(()=>pauseReader());await visible(page);
     expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('paused');
@@ -172,7 +179,9 @@ for(const width of [320,360,390,430])for(const fullscreen of [false,true])test(`
   await expect(page.locator('.reader-toolbar')).toHaveCSS('transition-duration','0s');
   const button=recovery(page),bounds=await button.boundingBox();expect(bounds.height).toBeGreaterThanOrEqual(44);
   expect(await button.evaluate(element=>element.scrollWidth<=element.clientWidth)).toBe(true);
-  await expect.poll(()=>page.evaluate(()=>readerVisibleTop())).toBeCloseTo(bounds.y+bounds.height,1);
+  const playBounds=await floating(page).boundingBox();
+  expect(playBounds.y).toBeCloseTo(bounds.y+bounds.height+4,1);
+  await expect.poll(()=>page.evaluate(()=>readerVisibleTop())).toBeCloseTo(playBounds.y+playBounds.height,1);
   const before=await snapshot(page);await button.tap();await visible(page);expect(await snapshot(page)).toEqual(before);
 });
 
@@ -277,6 +286,7 @@ test('recovery focuses Options if Read Aloud is unavailable',async({page})=>{
   });
   await expect(page.locator('#readAloudPlay')).toBeDisabled();
   await scroll(page,96);await hidden(page);const before=await snapshot(page);
+  await expect(floating(page)).toBeDisabled();
   await recovery(page).tap();await visible(page);await expect(page.locator('#readerMoreTrigger')).toBeFocused();
   expect(await snapshot(page)).toEqual(before);
 });
@@ -309,4 +319,31 @@ test('rapid recovery during a normal fade restores focus before the next Escape'
   await page.locator('#readerMoreTrigger').press('Escape');
   await expect(page.locator('#readerSecondaryControls')).toBeHidden();
   await expect(page.locator('#readerMoreTrigger')).toHaveText('Options');
+});
+
+for(const fullscreen of [false,true])test('floating Play and Stop synchronize during hidden playback, fullscreen='+fullscreen,async({page})=>{
+  await open(page,{width:390,fullscreen});
+  const play=floating(page), main=page.locator('#readAloudPlay');
+  await scroll(page,96);await hidden(page);
+  await expect(play).toHaveAccessibleName('Play reading aloud');
+  await expect(play).toHaveAttribute('title','Play reading aloud');
+  await expect(play).toHaveText('▶');
+  await recovery(page).focus();
+  await page.keyboard.press('Tab');
+  await expect(play).toBeFocused();
+  await expect(play).toHaveCSS('outline-style','solid');
+  // An accessibility action dispatches a click without a pointer.
+  await play.dispatchEvent('click',{detail:0});
+  await hidden(page);
+  await expect(play).toHaveAccessibleName('Stop reading aloud');
+  await expect(play).toHaveAttribute('title','Stop reading aloud');
+  await expect(play).toHaveText('■');
+  await expect(main).toHaveAttribute('aria-label','Stop reading aloud');
+  expect(await page.evaluate(()=>__reading.utterances.length)).toBe(1);
+  await play.tap();
+  await visible(page);
+  await expect(main).toBeFocused();
+  await expect(main).toHaveAccessibleName('Play reading aloud');
+  expect(await page.evaluate(()=>BibleSpeech.getState())).toBe('idle');
+  expect(await page.evaluate(()=>__reading.utterances.length)).toBe(1);
 });

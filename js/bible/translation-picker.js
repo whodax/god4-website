@@ -563,8 +563,6 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     if(!initialized || !media.matches) return;
     var state=typeof BibleSpeech==='undefined' ? 'idle' : BibleSpeech.getState();
     var play=document.getElementById('readAloudPlay');
-    var label=state==='playing' ? 'Pause reading aloud' : state==='paused' ? 'Resume reading aloud' : state==='preparing' ? 'Stop reading aloud' : 'Play reading aloud';
-    if(play.getAttribute('aria-label')!==label) play.setAttribute('aria-label',label);
     if(play.dataset.playbackState!==state) play.dataset.playbackState=state;
     stop.disabled=state==='idle';
   }
@@ -635,13 +633,6 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
     move(document.getElementById('fullscreenBtn'),panel);
     stop=document.createElement('button');stop.type='button';stop.className='reader-compact-stop';stop.textContent='Stop reading aloud';
     stop.addEventListener('click',function(){stopReader();});panel.appendChild(stop);
-    document.getElementById('readAloudPlay').addEventListener('click',function(event){
-      if(!media.matches || typeof BibleSpeech==='undefined') return;
-      var state=BibleSpeech.getState();
-      if(state==='playing' || state==='paused'){
-        event.preventDefault();event.stopImmediatePropagation();pauseResumeReadAloud();sync();
-      }
-    },true);
     function adapt(){
       // A focused element is retained during reparenting without scrolling it.
       var focus=document.activeElement;
@@ -671,7 +662,7 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
 })();
 
 var ReaderReadingControls = window.ReaderReadingControls || (function(){
-  var initialized=false, view, toolbar, recovery, media, sheetStyle, frame=0;
+  var initialized=false, view, toolbar, recovery, recoveryStack, floatingPlay, media, sheetStyle, frame=0;
   var concealed=false, keyboard=false, interacting=false, assistive=false, revealed=false, readingGesture=false;
   var previousState='idle', context='', lastY=0, distance=0, direction=0, intent=0, requestedControl=null;
   var priorInert=false, priorAria=null, playbackSeen=false;
@@ -688,12 +679,21 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
       document.querySelector('dialog[open],#tray.is-open') || selection && !selection.isCollapsed;
   }
   function recoveryHeight(){
-    if(!sheetStyle || recovery.hidden) return;
-    sheetStyle.setProperty('--reader-recovery-height',recovery.getBoundingClientRect().height+'px');
+    if(!sheetStyle || recoveryStack.hidden) return;
+    sheetStyle.setProperty('--reader-recovery-height',recoveryStack.getBoundingClientRect().height+'px');
     if(toolbar.classList.contains('reader-compact-mobile') && !view.classList.contains('reader-fullscreen')){
       var tabs=readerStickyNavigation(), nav=document.querySelector('nav');
       var bottom=Math.max(nav ? nav.getBoundingClientRect().bottom : 0,tabs ? tabs.getBoundingClientRect().bottom : 0);
       sheetStyle.setProperty('--reader-recovery-top',(bottom+4)+'px');
+    }
+  }
+  function syncFloatingPlay(){
+    var play=document.getElementById('readAloudPlay');
+    var label=play.getAttribute('aria-label'), icon=play.textContent==='Stop' ? '■' : '▶';
+    floatingPlay.disabled=play.disabled || typeof BibleSpeech==='undefined';
+    if(floatingPlay.textContent!==icon) floatingPlay.textContent=icon;
+    if(floatingPlay.title!==label){
+      floatingPlay.title=label;floatingPlay.setAttribute('aria-label',label);
     }
   }
   function focusControls(){
@@ -705,19 +705,20 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
     concealed=value;
     if(value){
       priorInert=toolbar.inert;priorAria=toolbar.getAttribute('aria-hidden');
-      recovery.hidden=false;recovery.setAttribute('aria-expanded','false');recoveryHeight();
+      syncFloatingPlay();recoveryStack.hidden=false;recovery.setAttribute('aria-expanded','false');recoveryHeight();
       if(toolbar.contains(document.activeElement)) recovery.focus({preventScroll:true});
       toolbar.inert=true;toolbar.setAttribute('aria-hidden','true');
       view.classList.add('reader-controls-hidden');
     }else{
       view.classList.remove('reader-controls-hidden');toolbar.inert=priorInert;
       if(priorAria===null) toolbar.removeAttribute('aria-hidden');else toolbar.setAttribute('aria-hidden',priorAria);
-      if(document.activeElement===recovery) focusControls();
-      recovery.hidden=true;recovery.setAttribute('aria-expanded','true');
+      if(recoveryStack.contains(document.activeElement)) focusControls();
+      recoveryStack.hidden=true;recovery.setAttribute('aria-expanded','true');
     }
   }
   function sync(){
     if(!initialized) return;
+    syncFloatingPlay();
     var nextContext=scope(), state=speechState();
     if(nextContext!==context){
       context=nextContext;intent=0;distance=0;direction=0;lastY=position();revealed=false;conceal(false);
@@ -784,8 +785,12 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
     media=matchMedia('(max-width:620px) and (pointer:coarse)');toolbar.id=toolbar.id || 'readerControlStack';
     recovery=document.createElement('button');recovery.type='button';recovery.className='reader-show-controls';
     recovery.textContent='Show Controls';recovery.setAttribute('aria-label','Show Reader controls');
-    recovery.setAttribute('aria-controls',toolbar.id);recovery.setAttribute('aria-expanded','true');recovery.hidden=true;
-    view.prepend(recovery);recovery.addEventListener('click',restore);
+    recovery.setAttribute('aria-controls',toolbar.id);recovery.setAttribute('aria-expanded','true');
+    recoveryStack=document.createElement('div');recoveryStack.className='reader-recovery';recoveryStack.hidden=true;
+    floatingPlay=document.createElement('button');floatingPlay.type='button';floatingPlay.className='reader-floating-play';
+    floatingPlay.addEventListener('click',function(){document.getElementById('readAloudPlay').click();});
+    recoveryStack.append(recovery,floatingPlay);
+    view.prepend(recoveryStack);recovery.addEventListener('click',restore);
     var tap=null;
     recovery.addEventListener('touchstart',function(event){
       var touch=event.touches[0];tap=event.touches.length===1 ? {id:touch.identifier,x:touch.clientX,y:touch.clientY} : null;
@@ -802,7 +807,7 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
     },{passive:false});
     var sheet=Array.from(document.styleSheets).find(function(candidate){return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);});
     if(sheet) sheetStyle=sheet.cssRules[sheet.insertRule('#view-reader { --reader-recovery-height:44px; }',sheet.cssRules.length)].style;
-    if(typeof ResizeObserver!=='undefined') new ResizeObserver(recoveryHeight).observe(recovery);
+    if(typeof ResizeObserver!=='undefined') new ResizeObserver(recoveryHeight).observe(recoveryStack);
     media.addEventListener('change',queue);
     document.addEventListener('pointerdown',function(event){
       requestedControl=null;keyboard=false;assistive=false;readingGesture=false;interacting=toolbar.contains(event.target);intent=0;distance=0;lastY=position();
@@ -810,7 +815,7 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
     ['pointerup','pointercancel'].forEach(function(type){document.addEventListener(type,function(){interacting=false;queue();},true);});
     window.addEventListener('keydown',function(event){
       requestedControl=null;keyboard=true;intent=0;readingGesture=false;
-      if(concealed && event.key==='Escape' && (document.activeElement===recovery || document.activeElement===document.body)){
+      if(concealed && event.key==='Escape' && (recoveryStack.contains(document.activeElement) || document.activeElement===document.body)){
         event.preventDefault();event.stopPropagation();restore();
       }
     },true);

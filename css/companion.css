@@ -383,7 +383,7 @@
     align-items:center;gap:8px;max-width:850px;margin:0 auto 10px;
     padding:4px 0;border-bottom:1px solid var(--line);background:var(--vellum-card);
   }
-  .reader-show-controls{display:none;}
+  .reader-recovery,.reader-show-controls{display:none;}
   .reader-toolbar select,.reader-secondary-controls select{
     min-width:0;max-width:100%;box-sizing:border-box;height:44px;
     font:13px 'Inter','Inter Fallback',sans-serif;
@@ -467,6 +467,7 @@
   }
   #view-reader .voice-status{margin-top:4px;min-height:0;}
   #view-reader .reader-audio-status{margin:4px 0 8px;}
+  #readAloudStatus[data-offline-voice]{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;margin:4px 0 8px;}
   #readAloudStatus:empty,#voiceStatusTop:empty{margin:0;min-height:0;}
   #view-reader .reader-verse,#wordStudyPanel,#wordStudyHeading,.word-study-token{
     scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px) + var(--reader-plan-return-height,0px) + 16px);
@@ -621,14 +622,19 @@
     #view-reader .reader-toolbar{transition:opacity .12s ease,visibility 0s;}
     #view-reader.reader-controls-hidden{--reader-toolbar-height:calc(var(--reader-recovery-height,44px) + 4px);}
     #view-reader.reader-controls-hidden .reader-toolbar{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .12s ease,visibility 0s .12s;}
-    .reader-show-controls:not([hidden]){
-      display:block;position:fixed;top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 4px);right:max(12px,env(safe-area-inset-right));z-index:21;
+    .reader-recovery:not([hidden]){
+      display:grid;justify-items:end;gap:4px;position:fixed;top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 4px);right:max(12px,env(safe-area-inset-right));z-index:21;
+      pointer-events:none;
+    }
+    .reader-recovery button{
+      display:block;pointer-events:auto;
       box-sizing:border-box;min-width:44px;min-height:44px;max-width:calc(100vw - 24px);padding:6px 12px;
       border:1px solid var(--gold);border-radius:2px;background:var(--vellum);color:var(--ink);
       font:13px/1.4 'Inter','Inter Fallback',sans-serif;overflow-wrap:anywhere;cursor:pointer;
     }
-    #view-reader.reader-fullscreen .reader-show-controls{top:4px;}
-    .reader-show-controls:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+    #view-reader.reader-fullscreen .reader-recovery{top:4px;}
+    .reader-recovery .reader-floating-play{font-size:20px;padding:0;}
+    .reader-recovery button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
     .reader-toolbar{
       grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(64px,1fr) 56px;
       gap:6px;margin-bottom:6px;
@@ -688,7 +694,7 @@
     .reader-compact-mobile button{overflow-wrap:anywhere;}
     .reader-compact-tabs [aria-pressed="true"]{background:var(--ink);color:var(--vellum-card);}
     :root[data-theme="dark"] .reader-compact-tabs [aria-pressed="true"]{background:var(--theme-surface);color:var(--ink);}
-    .reader-compact-layout #view-reader:not(.reader-fullscreen) .reader-show-controls{top:var(--reader-recovery-top,calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 4px));}
+    .reader-compact-layout #view-reader:not(.reader-fullscreen) .reader-recovery{top:var(--reader-recovery-top,calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + 4px));}
     .reader-toolbar.reader-compact-mobile > #readerReferenceNavigation{grid-column:1;grid-row:1;grid-template-columns:44px minmax(0,1fr) 44px;gap:2px;}
     .reader-toolbar.reader-compact-mobile > #readerMoreTrigger{grid-column:2;grid-row:1;font-size:0;padding:4px;}
     .reader-compact-mobile #readerReferenceNavigation #scripturePickerTrigger{padding:4px 8px;line-height:1.2;transition-property:background-color,color,border-color,box-shadow;}
@@ -705,7 +711,7 @@
     .reader-compact-playback > [data-reader-action="previous-verse"]::after{content:'\2190';font-size:22px;}
     .reader-compact-playback > #readAloudPlay{grid-column:3;grid-row:1;font-size:0;}
     .reader-compact-playback > #readAloudPlay::after{content:'\25B6';font-size:20px;}
-    .reader-compact-playback > #readAloudPlay[data-playback-state="playing"]::after{content:'\23F8';}
+    .reader-compact-playback > #readAloudPlay[data-playback-state="playing"]::after,
     .reader-compact-playback > #readAloudPlay[data-playback-state="preparing"]::after{content:'\25A0';}
     .reader-compact-playback > [data-reader-action="next-verse"]{grid-column:4;grid-row:1;font-size:0;}
     .reader-compact-playback > [data-reader-action="next-verse"]::after{content:'\2192';font-size:22px;}
