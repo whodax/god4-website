@@ -409,6 +409,7 @@
   .reader-translation-picker [role="status"]{margin:0;font:13px/1.4 'Inter','Inter Fallback',sans-serif;}
   .reader-translation-picker [role="status"]:empty{display:none;}
   .reader-translation-options{display:grid;gap:4px;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px;}
+  #readerTranslationPicker .reader-translation-options{grid-auto-rows:max-content;scroll-padding-block:4px;}
   .reader-translation-options button{display:flex;gap:8px;align-items:center;text-align:left;overflow-wrap:anywhere;}
   .reader-translation-options [aria-pressed="true"]{background:var(--highlight);border-color:var(--gold);font-weight:600;}
   .reader-translation-check{flex:0 0 1em;visibility:hidden;}

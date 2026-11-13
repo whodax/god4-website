@@ -165,7 +165,11 @@ var ReaderTranslationPicker = window.ReaderTranslationPicker || (function(){
         if(event.key === 'Home') next = 0;
         if(event.key === 'End') next = buttons.length - 1;
       }
-      if(next !== undefined){ event.preventDefault(); buttons[next].focus(); }
+      if(next !== undefined){
+        event.preventDefault();
+        buttons[next].focus({preventScroll:true});
+        buttons[next].scrollIntoView({block:'nearest',inline:'nearest'});
+      }
       if(event.key === 'Tab'){
         var first = dialog.querySelector('.reader-translation-heading button'), last = options.lastElementChild;
         if(event.shiftKey && document.activeElement === first){ event.preventDefault(); last.focus(); }
