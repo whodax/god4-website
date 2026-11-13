@@ -29,6 +29,7 @@ export function createDiscovery(topics, random = Math.random, storage = () => lo
 
   return {
     opening,
+    get topicTitle() { return topic.title; },
     next() {
       return ++position < sequence.length ? sequence[position] : begin(topic.id);
     }
@@ -43,13 +44,13 @@ export async function open(card, render) {
   let queued = 0;
 
   function showNext() {
-    render(discovery.next(), true);
+    render(discovery.next(), true, discovery.topicTitle);
     card.classList.remove('is-fading');
     // Continue an input burst without fading the card out again.
     if (--queued) setTimeout(showNext, 200);
   }
 
-  render(discovery.opening, false);
+  render(discovery.opening, false, discovery.topicTitle);
   return function advance() {
     if (++queued !== 1) return;
     card.classList.add('is-fading');

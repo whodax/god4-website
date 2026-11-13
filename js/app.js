@@ -24,15 +24,17 @@ function initializeDiscovery(){
 const card = document.getElementById('leafCard');
 const button = card.querySelector('.refresh-btn');
 const reference = document.getElementById('verseRef');
+const topic = document.getElementById('discoveryTopic');
 const status = document.getElementById('discoveryStatus');
 let pending;
 function load(){
-return pending ||= import('/js/home-discovery.js').then(module => module.open(card, (passage, announce) => {
+return pending ||= import('/js/home-discovery.js').then(module => module.open(card, (passage, announce, topicTitle) => {
+if(topic){topic.hidden = !topicTitle;if(topicTitle) topic.textContent = topicTitle;}
 document.getElementById('dropcap').textContent = passage.text[0];
 document.getElementById('verseText').textContent = passage.text.slice(1);
 reference.textContent = passage.reference;
 renderLeaf();
-if(announce) status.textContent = passage.reference + ' (WEB)';
+if(announce) status.textContent = (topicTitle ? topicTitle + ': ' : '') + passage.reference + ' (WEB)';
 })).catch(error => {
 pending = null;
 throw error;
