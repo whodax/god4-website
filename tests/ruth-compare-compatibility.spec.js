@@ -89,7 +89,7 @@ for(const mobile of [false,true])test.describe(mobile?'Android-sized':'desktop',
     try{
       await page.reload();await page.evaluate(()=>initializeBibleExperience());await page.evaluate(()=>ReaderTranslationLoader.ensure());
       await compare(page);await exact(page);
-      expect(await page.evaluate(()=>caches.keys())).toContain('god4-shell-compact-reader-58');
+      expect(await page.evaluate(()=>caches.keys())).toContain('god4-shell-compact-reader-59');
       expect(await page.evaluate(()=>currentTranslation)).toBe('dra');
     }finally{await context.setOffline(false);}
   });

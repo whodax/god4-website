@@ -92,10 +92,13 @@ test('viewport loading is lazy and reload excludes the prior opening topic', asy
   await card(page).scrollIntoViewIfNeeded();
   await expect.poll(()=>page.evaluate(k=>localStorage.getItem(k),key)).toBe('love');
   await expect(ref(page)).toHaveText('John 3:16');
+  await expect(page.locator('#discoveryTopic')).toHaveText('Love');
+  await expect(page.locator('#discoveryTopic')).toBeVisible();
   await page.reload();
   await card(page).scrollIntoViewIfNeeded();
   await expect.poll(()=>page.evaluate(k=>localStorage.getItem(k),key)).toBe('faith');
   await expect(ref(page)).toHaveText('Hebrews 11:1');
+  await expect(page.locator('#discoveryTopic')).toHaveText('Faith');
   expect(requested.filter(url=>url===catalogPath)).toHaveLength(2);
 });
 
@@ -105,10 +108,10 @@ for(const storage of ['blocked','{invalid'])test('first interaction works with '
   await next(page).press('Enter');
   await expect(ref(page)).toHaveText('Romans 5:8');
   await expect(next(page)).toBeFocused();
-  await expect(status(page)).toHaveText('Romans 5:8 (WEB)');
+  await expect(status(page)).toHaveText('Love: Romans 5:8 (WEB)');
   await expect(status(page)).toHaveAttribute('role','status');
   await next(page).press('Space');
-  await expect(status(page)).toHaveText('1 John 4:9\u201310 (WEB)');
+  await expect(status(page)).toHaveText('Love: 1 John 4:9\u201310 (WEB)');
   await expect(next(page)).toBeFocused();
 });
 
@@ -129,10 +132,11 @@ test('deferred catalog and rapid clicks keep reference, text and saved state tog
   });
   await expect.poll(()=>count).toBe(1);
   release();
-  await expect(status(page)).toHaveText('Hebrews 11:1 (WEB)');
+  await expect(status(page)).toHaveText('Faith: Hebrews 11:1 (WEB)');
   expect(await page.evaluate(()=>discoveryAnnouncements)).toEqual([
-    'Romans 5:8 (WEB)','1 John 4:9\u201310 (WEB)','Hebrews 11:1 (WEB)'
+    'Love: Romans 5:8 (WEB)','Love: 1 John 4:9\u201310 (WEB)','Faith: Hebrews 11:1 (WEB)'
   ]);
+  await expect(page.locator('#discoveryTopic')).toHaveText('Faith');
   await expect(save).toHaveAttribute('aria-pressed','false');
   await save.click();
   const passages=[catalog.topics[0].passages[0],catalog.topics[1].passages[0]];
@@ -151,7 +155,7 @@ test('failed catalog request leaves WEB fallback usable and the next click retri
   await expect(status(page)).toContainText('Try Another verse again');
   expect(await text(page)).toBe(catalog.topics[0].passages[0].text);
   await next(page).press('Enter');
-  await expect(status(page)).toHaveText('Romans 5:8 (WEB)');
+  await expect(status(page)).toHaveText('Love: Romans 5:8 (WEB)');
 });
 
 for(const width of [320,390,430])test('all nine long passages fit at '+width+'px',async({page})=>{
@@ -171,6 +175,7 @@ for(const width of [320,390,430])test('all nine long passages fit at '+width+'px
     await page.goto('/?long='+index+'#'+index);
     await card(page).scrollIntoViewIfNeeded();
     await expect(ref(page)).toHaveText(passage.reference);
+    await expect(page.locator('#discoveryTopic')).toHaveText(catalog.topics.find(t=>t.passages.includes(passage)).title);
     expect(await text(page)).toBe(passage.text);
     expect(await card(page).evaluate(node=>{
       const box=node.getBoundingClientRect(), text=node.querySelector('#verseText');
@@ -191,7 +196,7 @@ test('Reader translation changes leave the discovery card WEB-only',async({page}
   });
   expect(await page.evaluate(()=>currentTranslation)).toBe('dra');
   await next(page).press('Enter');
-  await expect(status(page)).toHaveText('Romans 5:8 (WEB)');
+  await expect(status(page)).toHaveText('Love: Romans 5:8 (WEB)');
   expect(await text(page)).toBe(catalog.topics[0].passages[1].text);
 });
 
@@ -203,7 +208,7 @@ test('first-use transfer stays separate from eager scripts and the full WEB bund
   expect(requested).not.toContain(modulePath);
   expect(requested).not.toContain(catalogPath);
   await next(page).press('Enter');
-  await expect(status(page)).toHaveText('Romans 5:8 (WEB)');
+  await expect(status(page)).toHaveText('Love: Romans 5:8 (WEB)');
   expect(requested.filter(p=>p===catalogPath||p===modulePath)).toEqual([modulePath,catalogPath]);
   expect(requested).not.toContain('/js/bible/web.js');
   const sizes=await page.evaluate(paths=>paths.map(path=>{
@@ -225,8 +230,8 @@ test.describe('installed offline',()=>{
     await context.setOffline(true);
     await page.reload();
     await next(page).press('Enter');
-    await expect(status(page)).toHaveText('Romans 5:8 (WEB)');
+    await expect(status(page)).toHaveText('Love: Romans 5:8 (WEB)');
     expect(await text(page)).toBe(catalog.topics[0].passages[1].text);
-    expect(await page.evaluate(()=>caches.keys())).toEqual(['god4-shell-compact-reader-58']);
+    expect(await page.evaluate(()=>caches.keys())).toEqual(['god4-shell-compact-reader-59']);
   });
 });

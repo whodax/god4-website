@@ -25,6 +25,11 @@
     transition:opacity .5s ease;
   }
   .leaf.is-fading{opacity:0;}
+  .verse-topic:not([hidden]){
+    display:block;margin-bottom:16px;overflow-wrap:anywhere;
+    font-family:'Inter','Inter Fallback',sans-serif;font-size:12px;line-height:1.5;
+    letter-spacing:0.05em;color:var(--ink-soft);
+  }
   .leaf::before, .leaf::after{
     content:"";position:absolute;width:26px;height:26px;
     border-top:2px solid var(--gold);border-left:2px solid var(--gold);
