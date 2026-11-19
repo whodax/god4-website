@@ -5,11 +5,11 @@ This phase reorganizes the educational information from the long homepage sectio
 - `/ethiopian-bible.html`: historical canon, distinctive books, source editions, limitations and church-order writings.
 - `/books-of-enoch.html`: 1 Enoch's major divisions and historical introductions to 2 and 3 Enoch.
 
-The homepage `#ethiopian` section is intentionally short and links to both pages. Both pages reuse existing GOD4.us variables, fonts and dark-theme handling, with narrowly scoped `css/ethiopian-guide.css`. The Bible Reader, existing nine translations, manifest, and service worker are untouched.
+The homepage `#ethiopian` section is intentionally short and links to both pages. Both pages reuse existing GOD4.us variables, fonts and dark-theme handling, with narrowly scoped `css/ethiopian-guide.css`. Shell 60 refreshes the cached homepage for existing installations. The guides are available online and use the standard offline page when opened without a connection. The Bible Reader, existing nine translations, and manifest are untouched.
 
 ## Checks
 
-Run `node tests/ethiopian-education.test.js` for static markup checks. Before merge, inspect both pages and their return navigation in Cloudflare Pages, keyboard tab order, theme persistence, 320/390/430px layout, TalkBack semantics, browser console and full regression suite.
+Run `node tests/ethiopian-education.test.js` for static markup checks. Before merge, inspect both pages and their return navigation in Cloudflare Pages, keyboard tab order, theme persistence, 320/390/430px layout, TalkBack semantics, browser console and full regression suite. Verify that upgrading from Shell 59 refreshes the offline homepage and preserves downloaded translations, settings, and reading progress.
 
 ## Scope and provenance
 
