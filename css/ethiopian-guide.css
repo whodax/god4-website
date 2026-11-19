@@ -1,0 +1,25 @@
+/* GOD4.us Ethiopian education pages: existing palette and typography. */
+.eth-page{max-width:860px;margin:0 auto;padding:32px 24px 80px;}
+.eth-page-header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 24px;border-bottom:1px solid var(--line);}
+.eth-page-brand{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',serif;font-size:27px;font-weight:600;text-decoration:none;}
+.eth-page-links{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.eth-page-links a,.eth-toc a,.eth-next a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:4px;}
+.eth-page-links a{font-family:'Inter','Inter Fallback',sans-serif;font-size:14px;}
+.eth-page h1{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',serif;font-size:clamp(2.5rem,6vw,4rem);font-weight:600;line-height:1.1;margin:28px 0 14px;}
+.eth-page h2{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',serif;font-size:clamp(1.65rem,4vw,2.3rem);font-weight:600;line-height:1.2;margin:36px 0 12px;}
+.eth-page h3{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',serif;font-size:1.5rem;margin:28px 0 10px;}
+.eth-page p,.eth-page li{font-size:1.15rem;line-height:1.65;overflow-wrap:break-word;}
+.eth-page p{margin:0 0 16px;}
+.eth-page :is(ol,ul){padding-left:1.5rem;margin:0 0 22px;}
+.eth-page li+li{margin-top:8px;}
+.eth-kicker{font-family:'Inter','Inter Fallback',sans-serif;color:var(--ink-soft);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;}
+.eth-lead{font-size:1.3rem!important;max-width:65ch;}
+.eth-toc{background:var(--vellum-card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;margin:28px 0;}
+.eth-toc h2{font-size:1.4rem;margin:0 0 10px;}
+.eth-toc ul{margin:0;}
+.eth-topic{border-top:1px solid var(--line);padding-top:4px;margin-top:28px;scroll-margin-top:18px;}
+.eth-next{border-top:1px solid var(--line);padding-top:24px;margin-top:36px;}
+.eth-notice{border-left:3px solid var(--gold);padding:12px 16px;background:var(--vellum-card);}
+.eth-page-footer{max-width:860px;margin:0 auto;padding:28px 24px 50px;border-top:1px solid var(--line);color:var(--ink-soft);}
+.eth-page a:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
+@media(max-width:480px){.eth-page{padding:22px 20px 64px;}.eth-page-header{padding:16px 20px;}.eth-page-links{gap:12px;}}
