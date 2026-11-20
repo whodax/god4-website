@@ -12,8 +12,11 @@ const css = read('css/ethiopian-guide.css');
 assert.match(home, /id="ethiopian"/);
 for (const page of [home, guide, enoch]) {
   assert.match(page, /href="\/guides\/ethiopian-bible\.html"/);
+}
+for (const page of [home, enoch]) {
   assert.doesNotMatch(page, /href="\/ethiopian-bible(?:\.html)?"/);
 }
+assert.match(guide, /href="https:\/\/god4\.us\/ethiopian-bible\.html">Open the earlier Digital Ethiopian Bible edition<\/a>/);
 assert.match(guide, /rel="canonical" href="https:\/\/god4\.us\/guides\/ethiopian-bible"/);
 assert.match(home, /href="\/books-of-enoch\.html"/);
 assert.doesNotMatch(home.match(/<section class="ethiopian"[\s\S]*?<\/section>/)?.[0] || '', /<h3>/);
@@ -28,9 +31,14 @@ for (const page of [guide, enoch]) {
 }
 assert.match(guide, /4 Baruch is excluded/);
 assert.match(guide, /Ethiopic Didascalia/);
-assert.match(enoch, /id="enoch-1"/);
-assert.match(enoch, /id="enoch-2"/);
-assert.match(enoch, /id="enoch-3"/);
+for (const [id, url, label] of [
+  ['enoch-1', 'https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)', 'Read 1 Enoch on Wikisource'],
+  ['enoch-2', 'https://scriptura.si/works/enoch-2-morfill-1896/', 'Read 2 Enoch on Scriptura'],
+  ['enoch-3', 'https://archive.org/details/3enochorhebrewbo00unse', 'Open the 3 Enoch scan at the Internet Archive'],
+]) {
+  const section = enoch.match(new RegExp('<section[^>]*id="' + id + '"[\\s\\S]*?</section>'))?.[0];
+  assert.ok(section?.includes('<a href="' + url + '">' + label + '</a>'), id + ' links to its own reading source');
+}
 assert.match(enoch, /Book of the Watchers/);
 assert.match(css, /focus-visible/);
 assert.match(home, /id="view-reader"/);
