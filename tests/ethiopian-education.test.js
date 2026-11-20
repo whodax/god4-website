@@ -6,11 +6,15 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const read = (name) => fs.readFileSync(path.join(root, name), 'utf8');
 const home = read('index.html');
-const guide = read('ethiopian-bible.html');
+const guide = read('guides/ethiopian-bible.html');
 const enoch = read('books-of-enoch.html');
 const css = read('css/ethiopian-guide.css');
 assert.match(home, /id="ethiopian"/);
-assert.match(home, /href="\/ethiopian-bible\.html"/);
+for (const page of [home, guide, enoch]) {
+  assert.match(page, /href="\/guides\/ethiopian-bible\.html"/);
+  assert.doesNotMatch(page, /href="\/ethiopian-bible(?:\.html)?"/);
+}
+assert.match(guide, /rel="canonical" href="https:\/\/god4\.us\/guides\/ethiopian-bible"/);
 assert.match(home, /href="\/books-of-enoch\.html"/);
 assert.doesNotMatch(home.match(/<section class="ethiopian"[\s\S]*?<\/section>/)?.[0] || '', /<h3>/);
 for (const page of [guide, enoch]) {

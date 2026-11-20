@@ -145,7 +145,7 @@ test('real footer destinations and explicit unavailable labels replace navigatio
   await open(page);await expect(page.locator('a[href="#"]')).toHaveCount(0);
   await expect(page.getByRole('link',{name:'Open Bibles',exact:true})).toHaveAttribute('href','#companion');
   await expect(page.getByRole('link',{name:'Ethiopian Bible information'})).toHaveAttribute('href','#ethiopian');
-  await expect(page.getByRole('link',{name:'Explore the Ethiopian Bible guide'})).toHaveAttribute('href','/ethiopian-bible.html');
+  await expect(page.getByRole('link',{name:'Explore the Ethiopian Bible guide'})).toHaveAttribute('href','/guides/ethiopian-bible.html');
   await expect(page.getByRole('link',{name:'Discover the Books of Enoch'})).toHaveAttribute('href','/books-of-enoch.html');
   await expect(page.locator('.eth-cta')).toHaveText('Educational guides only — additional Scripture texts are not yet available in the Reader.');
   await expect(page.locator('.foot-col .nav-unavailable')).toHaveCount(3);
@@ -185,12 +185,12 @@ test.describe('cached menu',()=>{
     await choose(page,'reader');await expect(page.locator('#readerContent')).toContainText('John 1');
     await choose(page,'saved');await expect(page.locator('#tray')).toHaveAttribute('aria-hidden','false');await expect(page.locator('#savedCount')).toHaveText('1');
     expect(await state(page)).toEqual(before);
-    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-60')).keys())].length)).toBe(52);
+    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-61')).keys())].length)).toBe(52);
   });
 });
 
-test('Shell 60 preserves the shell asset count and startup budget',async()=>{
-  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-60'");
+test('Shell 61 preserves the shell asset count and startup budget',async()=>{
+  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-61'");
   expect((sw.split('const SHELL_ASSETS = [')[1].split('];')[0].match(/(?:HOME_URL|OFFLINE_URL|'[^']+')/g)||[]).length).toBe(52);
   const scripts=[...fs.readFileSync('index.html','utf8').matchAll(/<script[^>]+src="([^"]+)/g)].map(m=>m[1].split('?')[0].replace(/^\//,''));
   const bytes=scripts.reduce((n,file)=>n+Buffer.byteLength(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n')),0);
