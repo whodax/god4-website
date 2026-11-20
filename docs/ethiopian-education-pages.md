@@ -9,7 +9,9 @@ The homepage `#ethiopian` section is intentionally short and links to both pages
 
 ## Reading links
 
-The Ethiopian Bible guide points to the earlier Digital Ethiopian Bible edition at `/ethiopian-bible.html`. The Books of Enoch guide links to the [Charles 1917 edition of 1 Enoch](https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)), the [Morfill 1896 edition of 2 Enoch](https://scriptura.si/works/enoch-2-morfill-1896/), and the [Internet Archive scan of Odeberg’s 1928 edition of 3 Enoch](https://archive.org/details/3enochorhebrewbo00unse). These are destinations outside the GOD4.us Reader and its nine translation selections.
+The Ethiopian Bible guide links directly to the [existing Ethiopian Bible flipbook](https://online.fliphtml5.com/ekjsx/blhe/), the Bible Society of Ethiopia’s [Ge’ez New Testament at Matthew 1](https://www.bible.com/bible/3177/MAT.1.%E1%88%90%E1%8A%AA%E1%8C%8D), and [Jubilees chapter 1 in R. H. Charles’s translation](https://ccel.org/ccel/c/charles/otpseudepig/files/jubilee/1.htm).
+
+The Books of Enoch guide opens chapter 1 of [1 Enoch in the Charles edition](https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)/Chapter_01), [2 Enoch in the Morfill edition](https://scriptura.si/works/enoch-2-morfill-1896/2/), and [3 Enoch in the Odeberg translation transcribed by Margins](https://margins.bible/3-enoch/chapter-1/). All reading links open outside the GOD4.us Reader.
 
 ## Checks
 
