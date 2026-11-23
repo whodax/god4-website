@@ -43,6 +43,11 @@
   margin: .35em 0;
 }
 .eth-reading-passage {
+  max-height: clamp(15rem, 60dvh, 42rem);
+  overflow-y: scroll;
+  overflow-anchor: none;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable;
   padding: clamp(.85rem, 4vw, 1.5rem);
   background: var(--vellum-card);
   border: 1px solid var(--line);

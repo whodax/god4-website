@@ -4625,7 +4625,7 @@ async function installSpokenFollowMocks(page, deferStart = false) {
     };
     const elementScrollBy = Element.prototype.scrollBy;
     Element.prototype.scrollBy = function(options) {
-      if (this.id === 'view-reader') window.__followScrolls.push({target: 'view-reader', behavior: options.behavior});
+      if (this.id === 'view-reader' || this.id === 'readerContent') window.__followScrolls.push({target: this.id, behavior: options.behavior});
       return elementScrollBy.call(this, options);
     };
     Object.defineProperty(window, 'SpeechSynthesisUtterance', {
@@ -4650,35 +4650,35 @@ async function installSpokenFollowMocks(page, deferStart = false) {
 test('spoken follow scrolls an offscreen verse below sticky controls without changing selection or focus', async ({ page }) => {
   await installSpokenFollowMocks(page);
   await openReaderMore(page);
-  await selectReaderOption(page.locator('#verseSelect'),'20');
+  await selectReaderOption(page.locator('#verseSelect'),'40');
   await page.evaluate(async () => {
-    window.scrollTo({top:0, behavior:'instant'});
+    document.getElementById('readerContent').scrollTop = 0;
     await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
     window.__followScrolls.length = 0;
   });
   await page.evaluate(() => playReader());
-  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'smooth'}]);
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'readerContent', behavior:'smooth'}]);
   await expect.poll(() => page.evaluate(() => {
-    const verse = document.querySelector('#readerContent [data-verse-number="20"]');
+    const verse = document.querySelector('#readerContent [data-verse-number="40"]');
     const row = document.querySelector('.reader-toolbar');
     const rect = verse.getBoundingClientRect();
     return rect.top > row.getBoundingClientRect().bottom + 12 && rect.bottom < innerHeight - 12;
   })).toBe(true);
-  expect(await page.evaluate(() => document.activeElement === document.querySelector('#readerContent [data-verse-number="20"]'))).toBe(true);
+  expect(await page.evaluate(() => document.activeElement === document.querySelector('#readerContent [data-verse-number="40"]'))).toBe(true);
   await page.evaluate(async () => {
-    window.scrollTo({top:0, behavior:'instant'});
+    document.getElementById('readerContent').scrollTop = 0;
     await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
     window.__speech.utterances[0].onend();
   });
   expect(await page.evaluate(() => window.__followScrolls.length)).toBe(2);
   await expect.poll(() => page.evaluate(() => {
-    const verse = document.querySelector('#readerContent [data-verse-number="21"]');
+    const verse = document.querySelector('#readerContent [data-verse-number="41"]');
     const rect = verse.getBoundingClientRect();
     return rect.top > document.querySelector('.reader-toolbar').getBoundingClientRect().bottom + 12 && rect.bottom < innerHeight - 12;
   })).toBe(true);
-  await expect(page.locator('#readerContent [data-verse-number="20"]')).toHaveClass(/verse-focused/);
-  await expect(page.locator('#readerContent [data-verse-number="21"]')).toHaveClass(/verse-spoken/);
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId:'john', chapter:1, verse:20});
+  await expect(page.locator('#readerContent [data-verse-number="40"]')).toHaveClass(/verse-focused/);
+  await expect(page.locator('#readerContent [data-verse-number="41"]')).toHaveClass(/verse-spoken/);
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('god4.reader.position')))).toEqual({bookId:'john', chapter:1, verse:40});
 });
 
 test('spoken follow leaves a comfortably visible verse and the user scroll position alone', async ({ page }) => {
@@ -4752,7 +4752,9 @@ test('spoken follow uses immediate scrolling when reduced motion is preferred', 
   await page.emulateMedia({reducedMotion:'reduce'});
   await installSpokenFollowMocks(page);
   await page.evaluate(() => { window.scrollTo(0, 0); readCurrentChapterAloud(30); });
-  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'auto'}]);
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([
+    {target:'window', behavior:'instant'}, {target:'readerContent', behavior:'instant'},
+  ]);
   await expect.poll(() => page.evaluate(() => {
     const rect = document.querySelector('#readerContent [data-verse-number="30"]').getBoundingClientRect();
     return rect.top > 0 && rect.bottom < innerHeight;
@@ -4769,7 +4771,9 @@ test('spoken follow waits for the utterance to actually start', async ({ page })
   expect(await page.evaluate(() => window.__followScrolls)).toEqual([]);
   await page.evaluate(() => window.__speech.utterances[0].onstart());
   await expect(page.locator('#readerContent [data-verse-number="30"]')).toHaveClass(/verse-spoken/);
-  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'smooth'}]);
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([
+    {target:'window', behavior:'instant'}, {target:'readerContent', behavior:'smooth'},
+  ]);
 });
 
 test('spoken follow places the start of an unusually tall verse below sticky controls', async ({ page }) => {
@@ -4782,11 +4786,13 @@ test('spoken follow places the start of an unusually tall verse below sticky con
     window.scrollTo(0, 0);
     readCurrentChapterAloud(30);
   });
-  expect(await page.evaluate(() => window.__followScrolls)).toEqual([{target:'window', behavior:'auto'}]);
+  expect(await page.evaluate(() => window.__followScrolls)).toEqual([
+    {target:'window', behavior:'instant'}, {target:'readerContent', behavior:'instant'},
+  ]);
   await expect.poll(() => page.evaluate(() => {
     const verse = document.querySelector('#readerContent [data-verse-number="30"]');
-    const controls = document.querySelector('.reader-toolbar');
-    const gap = verse.getBoundingClientRect().top - controls.getBoundingClientRect().bottom;
+    const pane = document.getElementById('readerContent');
+    const gap = verse.getBoundingClientRect().top - pane.getBoundingClientRect().top;
     return gap >= 12 && gap <= 80;
   })).toBe(true);
 });

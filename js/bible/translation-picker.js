@@ -666,12 +666,12 @@ var ReaderCompactControls = window.ReaderCompactControls || (function(){
 })();
 
 var ReaderReadingControls = window.ReaderReadingControls || (function(){
-  var initialized=false, view, toolbar, recovery, recoveryStack, floatingPlay, media, sheetStyle, frame=0;
+  var initialized=false, view, pane, toolbar, recovery, recoveryStack, floatingPlay, media, sheetStyle, frame=0;
   var concealed=false, keyboard=false, interacting=false, assistive=false, revealed=false, readingGesture=false;
   var previousState='idle', context='', lastY=0, distance=0, direction=0, intent=0, requestedControl=null;
   var priorInert=false, priorAria=null, playbackSeen=false;
   function surface(){return view.classList.contains('reader-fullscreen') ? view : window;}
-  function position(){return surface()===window ? window.scrollY : view.scrollTop;}
+  function position(){return (surface()===window ? pane : view).scrollTop;}
   function speechState(){return typeof BibleSpeech==='undefined' ? 'idle' : BibleSpeech.getState();}
   function scope(){
     var bounds=view.getBoundingClientRect();
@@ -772,7 +772,7 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
     requestedControl=null;intent=performance.now();readingGesture=true;
   }
   function scrolled(event){
-    if(event.target!==document && event.target!==view) return;
+    if(event.target!==document && event.target!==view && event.target!==pane) return;
     queue();
     var next=position(), delta=next-lastY;lastY=next;
     if(scope()==='off' || !intent || performance.now()-intent>1500 || !delta) return;
@@ -785,7 +785,7 @@ var ReaderReadingControls = window.ReaderReadingControls || (function(){
   }
   function initialize(){
     if(initialized || !('inert' in HTMLElement.prototype)) return;
-    initialized=true;view=document.getElementById('view-reader');toolbar=view.querySelector('.reader-toolbar');
+    initialized=true;view=document.getElementById('view-reader');pane=document.getElementById('readerContent');toolbar=view.querySelector('.reader-toolbar');
     media=matchMedia('(max-width:620px) and (pointer:coarse)');toolbar.id=toolbar.id || 'readerControlStack';
     recovery=document.createElement('button');recovery.type='button';recovery.className='reader-show-controls';
     recovery.textContent='Show Controls';recovery.setAttribute('aria-label','Show Reader controls');

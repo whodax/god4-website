@@ -17,13 +17,8 @@ for (const page of [home, guide, enoch]) {
 for (const page of [home, enoch]) {
   assert.doesNotMatch(page, /href="\/ethiopian-bible(?:\.html)?"/);
 }
-for (const [url, label] of [
-  ['https://online.fliphtml5.com/ekjsx/blhe/', 'Open the Ethiopian Bible flipbook on FlipHTML5'],
-  ['https://www.bible.com/bible/3177/MAT.1.%E1%88%90%E1%8A%AA%E1%8C%8D', 'Read the Ge’ez New Testament from Matthew 1'],
-  ['https://ccel.org/ccel/c/charles/otpseudepig/files/jubilee/1.htm', 'Read Jubilees from chapter 1'],
-]) {
-  assert.ok(guide.includes('<a href="' + url + '">' + label + '</a>'), label + ' links directly to the text');
-}
+assert.doesNotMatch(guide, /href="https:\/\/(?:online\.fliphtml5\.com|www\.bible\.com|ccel\.org)\//);
+assert.match(guide, /<strong>Jubilees:<\/strong> A retelling of events in Genesis and early Exodus/);
 assert.match(guide, /rel="canonical" href="https:\/\/god4\.us\/guides\/ethiopian-bible"/);
 assert.match(home, /href="\/books-of-enoch\.html"/);
 assert.doesNotMatch(home.match(/<section class="ethiopian"[\s\S]*?<\/section>/)?.[0] || '', /<h3>/);

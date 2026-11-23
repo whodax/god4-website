@@ -47,6 +47,7 @@
     }
     passage.replaceChildren(content);
     heading.parentElement.hidden = false;
+    heading.parentElement.scrollTo({ top: 0, behavior: 'instant' });
     play.disabled = !speech || !spokenLines.length;
     status.textContent = speech ? '' : 'Read Aloud is unavailable in this browser.';
   }
@@ -90,6 +91,12 @@
         return;
       }
       const line = new SpeechSynthesisUtterance(spokenLines[index]);
+      const pane = heading.parentElement;
+      const lineRect = passage.children[index].getBoundingClientRect();
+      const bounds = pane.getBoundingClientRect();
+      if (lineRect.bottom > bounds.bottom || lineRect.top < bounds.top) {
+        pane.scrollTop += lineRect.top - bounds.top - 16;
+      }
       line.voice = voice;
       line.lang = voice.lang;
       line.onend = () => setTimeout(() => speakLine(index + 1), 0);

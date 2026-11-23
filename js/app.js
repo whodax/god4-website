@@ -590,9 +590,9 @@ function focus(element){if(element) element.focus({preventScroll:true});}
 function reveal(element){
 if(!element) return;
 if(element.closest('.reader-toolbar') && window.ReaderReadingControls && ReaderReadingControls.reveal && ReaderReadingControls.reveal(element)!==false) return;
+if(element.closest('#readerContent')){scrollReaderTargetIntoView(element,'instant');focus(element);return;}
 var r=element.getBoundingClientRect(),v=window.visualViewport;
 var top=Math.max(v?v.offsetTop:0,document.querySelector('body>nav').getBoundingClientRect().bottom),bottom=v?v.offsetTop+v.height:innerHeight;
-if(element.closest('#readerContent')) top=Math.max(top,readerVisibleTop());
 var delta=r.height>bottom-top-16 || r.top<top+8?r.top-top-8:r.bottom>bottom-8?r.bottom-bottom+8:0;
 if(delta){var view=byId('view-reader');(view && view.classList.contains('reader-fullscreen') && view.contains(element)?view:window).scrollBy({top:delta,behavior:'instant'});}
 focus(element);

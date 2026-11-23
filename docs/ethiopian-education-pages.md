@@ -5,15 +5,15 @@ This phase reorganizes the educational information from the long homepage sectio
 - `/guides/ethiopian-bible.html`: historical canon, distinctive books, source editions, limitations and church-order writings.
 - `/books-of-enoch.html`: 1 Enoch's major divisions and historical introductions to 2 and 3 Enoch.
 
-The homepage `#ethiopian` section is intentionally short and links to both pages. Both pages reuse existing GOD4.us variables, fonts and dark-theme handling, with narrowly scoped `css/ethiopian-guide.css`. The educational guide lives under `/guides/`, outside the legacy Cloudflare Worker route `/ethiopian-bible*`. Shell 61 refreshes the cached homepage with the new link. The guides are available online and use the standard offline page when opened without a connection. The Bible Reader, existing nine translations, and manifest are untouched.
+The homepage `#ethiopian` section links to both pages. Both pages reuse existing GOD4.us variables, fonts and dark-theme handling, with narrowly scoped `css/ethiopian-guide.css`. The educational guide lives under `/guides/`, outside the legacy Cloudflare Worker route `/ethiopian-bible*`. The guides are available online and use the standard offline page when opened without a connection. Shell 62 delivers the independently scrollable Study Desk passage to installed users. Fullscreen uses its existing scroll surface.
 
 ## Reading links
-
-The Ethiopian Bible guide links directly to the [existing Ethiopian Bible flipbook](https://online.fliphtml5.com/ekjsx/blhe/), the Bible Society of Ethiopia’s [Ge’ez New Testament at Matthew 1](https://www.bible.com/bible/3177/MAT.1.%E1%88%90%E1%8A%AA%E1%8C%8D), and [Jubilees chapter 1 in R. H. Charles’s translation](https://ccel.org/ccel/c/charles/otpseudepig/files/jubilee/1.htm).
 
 The Books of Enoch guide opens chapter 1 of [1 Enoch in the Charles edition](https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)/Chapter_01), [2 Enoch in the Morfill edition](https://scriptura.si/works/enoch-2-morfill-1896/2/), and [3 Enoch in the Odeberg translation transcribed by Margins](https://margins.bible/3-enoch/chapter-1/). All reading links open outside the GOD4.us Reader.
 
 Both guides link to `/guides/ethiopian-readings.html`. The Enoch guide links directly to the chosen book. The standalone page loads a catalog and one book at a time, with Read Aloud using an installed English voice. Its offline ZIP includes a self-contained HTML reader, the source notes, the original 84-entry dataset, and the two Enoch companion readings. Open the HTML file from the extracted ZIP for offline reading.
+
+The standalone web and offline readers use a keyboard-focusable reading pane that scrolls independently of their book and chapter controls.
 
 ## Checks
 
