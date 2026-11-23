@@ -1,0 +1,70 @@
+.eth-reading-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: .75rem;
+}
+.eth-reading-controls > div {
+  display: grid;
+  gap: .25rem;
+  min-width: 0;
+  max-width: 100%;
+}
+.eth-reading-controls :is(label, select, button) {
+  font: 500 .9rem/1.3 Inter, Arial, sans-serif;
+}
+.eth-reading-controls :is(select, button) {
+  min-height: 44px;
+  max-width: 100%;
+  padding-inline: .7rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--vellum-card);
+}
+.eth-reading-controls select {
+  width: min(100%, 19rem);
+  border-color: var(--gold);
+}
+.eth-reading-controls button:disabled {
+  opacity: .65;
+}
+.eth-reading-controls #eth-play {
+  background: var(--theme-surface, var(--ink));
+  color: var(--vellum-card);
+  border-radius: 2rem;
+  padding-inline: 1rem;
+}
+[data-theme="dark"] .eth-reading-controls #eth-play {
+  color: var(--ink);
+}
+#eth-reading-status {
+  min-height: 1.65em;
+  margin: .35em 0;
+}
+.eth-reading-passage {
+  padding: clamp(.85rem, 4vw, 1.5rem);
+  background: var(--vellum-card);
+  border: 1px solid var(--line);
+  border-block-start: 3px solid var(--gold);
+}
+.eth-reading-passage h2 {
+  margin-top: 0;
+}
+.eth-reading-passage p {
+  margin: .5em 0;
+  overflow-wrap: anywhere;
+}
+.eth-reading-passage sup {
+  color: var(--ink-soft);
+  margin-inline-end: .4em;
+}
+.eth-reading-sources {
+  border-top: 1px solid var(--line);
+  padding-top: .75rem;
+  margin-top: 2rem;
+}
+.eth-reading-sources summary {
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
