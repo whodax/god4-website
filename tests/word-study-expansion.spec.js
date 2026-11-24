@@ -33,6 +33,9 @@ for(const [book, chapter, verse, lang, strongs] of passages){
     await page.setViewportSize({width:390, height:844});
     const {word, tokens} = await study(page, 'web', book, chapter, verse);
     await expect(tokens.first()).toHaveAttribute('lang', lang);
+    await expect(page.locator('#wordStudyOriginalTokens')).toHaveAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
+    await expect(page.locator('#wordStudyOriginalIntro .word-study-original-note')).toHaveText(lang === 'he' ?
+      'Original-language words in this verse. Read from right to left.' : 'Original-language words in this verse');
     const index = await tokens.evaluateAll((buttons, number) =>
       buttons.findIndex(button => button.__originalLanguageRecord.strongsNumber === number), strongs);
     expect(index).toBeGreaterThanOrEqual(0);

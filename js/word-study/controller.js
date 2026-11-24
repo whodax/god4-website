@@ -174,8 +174,12 @@ var WordStudyController = (function createWordStudyController(){
     clearOriginalLanguage();
     if(!view.original || !result || result.status !== 'available' || !Array.isArray(result.records) || !result.records.length) return;
     view.original.hidden = false;
-    document.getElementById('wordStudyOriginalIntro').hidden = false;
-    view.originalTokens.setAttribute('dir', result.records.some(function(record){ return record.language === 'hebrew' || record.language === 'aramaic'; }) ? 'rtl' : 'ltr');
+    var rightToLeft = result.records.some(function(record){ return record.language === 'hebrew' || record.language === 'aramaic'; });
+    var intro = document.getElementById('wordStudyOriginalIntro');
+    intro.querySelector('.word-study-original-note').textContent = rightToLeft ?
+      'Original-language words in this verse. Read from right to left.' : 'Original-language words in this verse';
+    intro.hidden = false;
+    view.originalTokens.setAttribute('dir', rightToLeft ? 'rtl' : 'ltr');
     result.records.forEach(function(record){
       var button = document.createElement('button');
       button.type = 'button';
