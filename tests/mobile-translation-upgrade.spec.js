@@ -60,8 +60,9 @@ const baseline=previous.commit;
 const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-'+currentVersion;
 const runtimePath='/js/bible/translation-picker.js';
 const alignmentPath='/js/word-study/alignment.js';
+const lexiconProviderPath='/js/word-study/original-language-provider.js';
 const manifestPath='/js/bible/translation-manifest.js';
-const assetPaths=['/','/css/layout.css',manifestPath,'/js/bible/cloud-tts.js','/js/storage/user-data.js','/css/components.css','/css/companion.css','/js/bible/reader.js','/js/bible/scripture-picker.js','/js/bible/compare.js','/js/word-study/controller.js','/js/app.js','/js/bible/speech.js',...(previous.version>=44?[runtimePath]:[]),...(previous.version>=48?[alignmentPath]:[])];
+const assetPaths=['/','/css/layout.css',manifestPath,'/js/bible/cloud-tts.js','/js/storage/user-data.js','/css/components.css','/css/companion.css','/js/bible/reader.js','/js/bible/scripture-picker.js','/js/bible/compare.js','/js/word-study/controller.js',lexiconProviderPath,'/js/app.js','/js/bible/speech.js',...(previous.version>=44?[runtimePath]:[]),...(previous.version>=48?[alignmentPath]:[])];
 const themePaths=['/css/theme.css','/js/theme.js'];
 const digest=body=>crypto.createHash('sha256').update(body).digest('hex');
 let prior,current,oldHashes,newHashes,themeHashes,runtimeHashes;
@@ -98,6 +99,7 @@ test('shell 65 preserves activation, Bible caches and the exact required assets'
   const homepageAssets={"/":"4fbdc1c0ef304fa50dad52b62542db19738e7541b69f2915c5c074762baca31c","/css/layout.css":"3580a30382bd0a452edaeea54fb1c33fb0309e24648deb025274c87442103fae","/js/app.js":"f1f4035a743d60fcebd93693372854cc74ef1c235c0e3ab5fd85ed65b21e09df","/js/home-commandments.js":"1e389624a305ee3fec1dbb97dc52dccce758117501bd8723b8f9a23dd8f385ad"};
   const wordStudyPins={
     [alignmentPath]:'131f16878193597bc2d1e6085f8de9cb28a05b5f50bab82d1378db66b9b38d80',
+    [lexiconProviderPath]:'75aa4be63d8c64f2f4970ce77030b51242e5bc615b27aef9ec9bb91b05757f3c',
     '/js/word-study/controller.js':'f44ac0b0ed6bd02e1023a2526668648dc287092c47dc9ddb9e9d246e9fbec166'
   };
   for(const asset of requiredAssets){
@@ -114,7 +116,7 @@ test('shell 65 preserves activation, Bible caches and the exact required assets'
   for(const asset of previous.version===64?Object.keys(wordStudyPins):previous.version===63?['/css/layout.css']:previous.version>=59?['/']:previous.version===58?['/','/css/components.css','/js/app.js']:previous.version===56?Object.keys(narrationPins):previous.version===55?['/','/js/app.js']:previous.version===54?['/','/css/layout.css','/js/app.js']:previous.version===53?['/','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js','/js/word-study/controller.js']:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
     expect(normalizeSource(current[asset]),asset+' must deliver the accepted release').not.toBe(normalizeSource(prior[asset]));
   }
-  if(previous.version===53) for(const asset of requiredAssets.filter(url=>![...discoveryAssets,alignmentPath,'/','/css/layout.css','/js/home-commandments.js','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js','/js/word-study/controller.js'].includes(url))){
+  if(previous.version===53) for(const asset of requiredAssets.filter(url=>![...discoveryAssets,...Object.keys(wordStudyPins),'/','/css/layout.css','/js/home-commandments.js','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js'].includes(url))){
     expect(normalizeSource(fs.readFileSync(path.join(root,fileFor(asset)))),asset+' stays unchanged from production 53').toBe(normalizeSource(prior[new URL(asset,'http://localhost').pathname]));
   }
   expect(normalizeSource(current[manifestPath])===normalizeSource(prior[manifestPath])).toBe(previous.version>=52);
@@ -432,7 +434,8 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
     if(previous.version===53){
       await expect(page.locator('#headerMenuFallback')).toBeHidden();
       await page.locator('#headerMenuTrigger').click();
-      await expect(page.locator('#headerMenu [data-destination]')).toHaveCount(16);
+      await expect(page.locator('#headerMenu [data-destination]')).toHaveCount(17);
+      await expect(page.locator('#headerMenu [data-destination="ethiopian"]')).toBeVisible();
       await page.locator('#headerMenu [data-destination="resources"]').click();
       await expect(page.locator('#resources')).toBeFocused();
     }
@@ -467,7 +470,8 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
     expect(await hashes(page)).toEqual(newHashes);
     if(previous.version===53){
       await page.locator('#headerMenuTrigger').click();
-      await expect(page.locator('#headerMenu [data-destination]')).toHaveCount(16);
+      await expect(page.locator('#headerMenu [data-destination]')).toHaveCount(17);
+      await expect(page.locator('#headerMenu [data-destination="ethiopian"]')).toBeVisible();
       await page.keyboard.press('Escape');
     }
     if(previous.version===55 || previous.version>=58){

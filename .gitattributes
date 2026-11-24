@@ -2,3 +2,11 @@
 data/word-study/original-language/romans/*.json -text
 # Preserve the deterministic Isaiah publication manifest checksums on Windows.
 data/word-study/original-language/isaiah/*.json -text
+# Preserve the seven-book review manifest's checksums on Windows.
+data/word-study/original-language/exodus/*.json -text
+data/word-study/original-language/leviticus/*.json -text
+data/word-study/original-language/numbers/*.json -text
+data/word-study/original-language/deuteronomy/*.json -text
+data/word-study/original-language/matthew/*.json -text
+data/word-study/original-language/mark/*.json -text
+data/word-study/original-language/luke/*.json -text

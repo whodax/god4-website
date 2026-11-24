@@ -1,0 +1,422 @@
+{
+  "exodus": {
+    "chapters": 40,
+    "sourceVerses": 1213,
+    "sourceTokens": 16713,
+    "readerVerses": 1213,
+    "splitSourceVerses": [],
+    "excludedApparatusWords": 13,
+    "alternateAnalyses": [],
+    "sha256": {
+      "1.json": "c17019f3f8590b292741f214e2e2ac5bbf9636502b10a99e8c2268694c70d66a",
+      "10.json": "584ca88284c77ea131dbec46d11c13b7ac82d56b622ac81e28612721b92e6975",
+      "11.json": "6ff09540e2e6a70ac800b6190fbf3f52036b12ace706f1fcbbbdf505364ba38f",
+      "12.json": "4c9f2b1b99137efcf3fda40af1096405fa8cc3fc02b562065dab6bebe0f2a2a8",
+      "13.json": "bc9c0eb193afc10399ab0e2825205410bb5efb627dd8601b09fc5d97358498b2",
+      "14.json": "1679021662027265a4285ee4cea0bdb45eff2df857f165c31d0e9b591b7e4411",
+      "15.json": "66147eb5bdb2a731983855452ab6d6674b6c84b185bd0a63fe49cfb2c93aa77e",
+      "16.json": "47596e78dd644e01d021459caf80d8704e02f9be8a631b1644270dbf9a54e591",
+      "17.json": "aec2c2e3de00ef9919ce25491c7e42674951a300a71412fd900d5b4b5e8cec9e",
+      "18.json": "269ea234d550e1cc6760de8155e03c29852178d0bb73c58a151eba7d1987335c",
+      "19.json": "cb22838d805895a3e397341439032381286141321e4f71837f532ea894ec92ec",
+      "2.json": "6356762ce3127c897cd0b2e1a008ac22e9960eb04916877786ba3ac5baf28a44",
+      "20.json": "14f2374a3b274687d32dc75abad3d2f57c8f156d1baaa98e0bb661ac165b8da5",
+      "21.json": "09bb6ded554b983ad0e8f9eaa77899485046139e27b16d9b5a27607e1625e71d",
+      "22.json": "de0fa2b74bdd933454a2183588636149b425786d943afa88d7028974314ac7f4",
+      "23.json": "1824a07aa3b3e9984c2b861446ce3d20402d5c9556e4fdf639f6c609869d1260",
+      "24.json": "24b401ff6ac180844a8a8ca42bfc647fe1805f176d9b3dbdda15d54b984d86f3",
+      "25.json": "0fe75bcf5bd26f01f5320b978234fbeeb3ba31c1334db62db36161fa1ed9ca91",
+      "26.json": "d4a14f43910d28dc0908b9c3bc7ff1ad6b3161886278700bcf1c1d4f08fb9bdf",
+      "27.json": "5603cadec4dbab7c60b8bd807f21b13d30534240c2ff707a36c12f1c1407d583",
+      "28.json": "1b2265850a8adf532eb3bd543d9cb111e1bbe84d6ce105a083475173add41f44",
+      "29.json": "377b13d2ccb533569543f62e173146f78235734dcb26d0178c38eade960e24ef",
+      "3.json": "375ee915d55ff75ac21a7e08f399baf17b7f90dbcfb868d42f44140a132cb25f",
+      "30.json": "9878f3b30cbb33037776f9ee27d5432e00ba17ef7f4416c31322b5dd72c2cd53",
+      "31.json": "713af896882fcc54794975afa6c019daf1726425eb9e652ab4ee39684456f099",
+      "32.json": "a03da7ded67c5dcb50a16ca3afeee746cc1661ed342f4fe673ff4f677f8da030",
+      "33.json": "6b10e2637be79f8fcfd65946d16f601f60e98cc70f2c5a5fd7a49a6d5291298f",
+      "34.json": "c8661967fc1ba06dfeb589e8c508389c68799f66ec22f49b9e2394005532a94b",
+      "35.json": "cc0634480894df8301930d0da3019098e4168596d4529221dd1e7b780fb87e10",
+      "36.json": "c9a67cf338eb7defcc5ca6bfe8ec091da640e0ad81e80d72b418e57c0bcec721",
+      "37.json": "97af3acf03028626c48d76ad12e796c782639cdc920ee192493a6c2c9202430e",
+      "38.json": "47d684ac84006f9bbde95e0d1f61fa8b0ed5c33dbc12482f3e4308fb6b99dae2",
+      "39.json": "bbfb769bedb120e533e8aa45aa2f8dd778c4dde2bf20f42372d9dfef93eac485",
+      "4.json": "42ebe3d9bc3e4b2f2cfcf545fa07a9609a5a84983c89a09b8888eb644edbed28",
+      "40.json": "6ed279efee985ce6c929850357e8e4c342d83bc29aa4b84784b1ce70672d807b",
+      "5.json": "4be79eefa8cc88c26cd7a0ce6450a07077d92ea49c968142bb7972d73208d7f0",
+      "6.json": "d93712249d456fe4022638b310b6c8d1d1fa86583302d71a9181b7cc6671d34b",
+      "7.json": "5a6790fd12da398d778ac5d843f592b3edc312987aec12eaf525801ab8c18de3",
+      "8.json": "b173912196251146f9f85da68082ca9b9f04e16c81e5f2726fac3ee6172ff722",
+      "9.json": "2d967ec49f51091450f5880495d13bddf399503a52c6b985f37f914a5a8f8e94"
+    }
+  },
+  "leviticus": {
+    "chapters": 27,
+    "sourceVerses": 859,
+    "sourceTokens": 11950,
+    "readerVerses": 859,
+    "splitSourceVerses": [],
+    "excludedApparatusWords": 5,
+    "alternateAnalyses": [],
+    "sha256": {
+      "1.json": "9841a6f39a8d06156f58673019d52b51f855c7280027aacde449ce4d7304abce",
+      "10.json": "72ad76082560c67a319a02389563b4a97c65cc2996f87e311725e36a8a6163d5",
+      "11.json": "b55058266fb114e4b5d2e26006763ea00fe27709f87815bebd1b09205ca6ddf9",
+      "12.json": "76b17e947bd591e22ebd81cdd36dc53e0fc9dbe44d1115625ca28faaf530f77b",
+      "13.json": "0e4e1cf5a92403b9ba016a6c8c8c625bba59e82293be66462704e30b2cd67b7e",
+      "14.json": "175e668d9ded350c616ae311b724b9828619918644540b5d2f577ccae46cf514",
+      "15.json": "4df7c10c4742173191096f480c114422601de45baf67b2beb149baff78e4cecd",
+      "16.json": "3f4ae364f4246af01de3177c3285b801007f13777aec498c94e145ec8f781544",
+      "17.json": "539ed7861e5475ca2b9f30a18455e67c8e129db3b931f49e437a77971f98d955",
+      "18.json": "0b503242c796ede28e4f07d66a38190447b398cd1554b8a9e64ff79e398c487f",
+      "19.json": "766610c78097418b278fd999e03a04b67f3983c80b9d6634e7bf59b6a848bc4b",
+      "2.json": "5d0834a752ab97b01a70fbab75b97faf019e02881fcc078400086c1a6a95c22d",
+      "20.json": "d3b1da74c414eca302cae1f91a9996af0872efafe5786bba0b0e6bd6ee6f8242",
+      "21.json": "51c931c169a6a89f2c5dfd3d2bb8df26d57197cf4f15023ee922f7511ea75d09",
+      "22.json": "af466bf0bf11fc0786f6b9c1d4e4c9110b10973f62cec36870c9ea0380980ab3",
+      "23.json": "7732fb53aa6341afa31dac9780afc73b77d749a8280627a0185fae8096e7d706",
+      "24.json": "e17b45bf9c7f3c003d283061604424727cc81aa95fc0f8d2976c2a6db8281f53",
+      "25.json": "111dc05d5dd2df1258d894ed46631f0c6f68e497b6cbcd2aa1b166d5f63086c5",
+      "26.json": "efed9d15f60b66389db77978bcc4b0a0be3e45875483bcea73298dfca05ec3ae",
+      "27.json": "65885cfa7476e3fe02469043945c22f0c0b808af4aed27015c1dfe369d30ceca",
+      "3.json": "a6a2e835ba703c99aa0f1589647939efa93fef44d8d31030010dbc74a228587b",
+      "4.json": "f6b8e8fe9b47e46dd00dd4305b81b5c8a8db4afa53c0b2af49d99995c1e4e105",
+      "5.json": "712239392d2fc356cbdd24ec444a681967a1c111814725dbe4cf5bd7d724d6f5",
+      "6.json": "73615020addda8a58f4942ace181a87af58f26f37be3664d8b5a56154b35ee43",
+      "7.json": "e05762e6f9676307c63e8ebd37d60cd98652188fa7f230cf4ec01c6560422eca",
+      "8.json": "e4fd3221cf7a39dba95dd8cf08714cbfba5e61031abf6129e382ba9812a0d5a3",
+      "9.json": "713a4e5d865d015dab2cd08da802378120df00ee4a9ec6ce253b42e60b965d02"
+    }
+  },
+  "numbers": {
+    "chapters": 36,
+    "sourceVerses": 1289,
+    "sourceTokens": 16413,
+    "readerVerses": 1288,
+    "splitSourceVerses": [],
+    "excludedApparatusWords": 9,
+    "alternateAnalyses": [],
+    "sha256": {
+      "1.json": "69bb98d6a013fc794a6ce1a748db6997aa78cc634d76495b53c9ece8ad55a50a",
+      "10.json": "e05293df4c5979e05229d9c513bee907c5686fa797ee76caf9e34df1c2b5393e",
+      "11.json": "56dc183361bb444c35d8e5fd1692063310b829b9fafb75009d7f4c08683d268e",
+      "12.json": "bcf81500a4c1f39b75100565399cca3a33d13fa39964a28f51508f1981d6925d",
+      "13.json": "7cfa6d149bff1781aeef5b1e2d956815a9efd832cd81d0c71ca613340d8d3ab4",
+      "14.json": "39207a4d6cb0eab8cb187e730b26283978cd73cd2f6ccd886cb80d7ef8d14bf5",
+      "15.json": "09051804e8dd423097d1de9004be6543effae7e10662049b50911331a3725220",
+      "16.json": "01def871648a6baa9ff67695bdd404545b1e277ad5e4838b92b21d382ae2e537",
+      "17.json": "e883f129a5279ff65eb43e6be35414746c427d7cdcd26cb551ef951dfaa0a465",
+      "18.json": "564b8dc23f471f962b690896ed26ac20b27f1115d7e6f875a7dce40115b431c2",
+      "19.json": "03ad9c214d1295988bc8343ad1c96663ef2043de2621d5975cd4eb640c87e2ae",
+      "2.json": "08e16e8c1fbaf27529831aecb6ea0bbaeb0e6773c2b31436d8efca02a3bc5a4b",
+      "20.json": "899af1910c2b89b3d33ca712dc768aca2fbc6e2a64878948d2eaa0caca6adcc6",
+      "21.json": "462db6cbf7aff2531705e04bd91976db4758f9a20ac1f501c86ea53f985a5d2c",
+      "22.json": "df7cd948a9ec25e6c2149c2b0b24a3a158af71853547514ff15970b43731c8dc",
+      "23.json": "a1150a2d06b8484345e4d1b0efc5cf81239f1d1d1a4ce0220c6d4df92bd63027",
+      "24.json": "df379bfab3aebafab3f5eb85fd861893ce3c9734ebce9e64b9a7d5b4bd43f84f",
+      "25.json": "cf3eef0acf2df89bc083f8e5bf545e74a2e58815dba5cd19e16e1c0a731273dc",
+      "26.json": "cb9088fe10d46294340674100999f667f7dcd9f8fad19841441ec2298c61da5c",
+      "27.json": "dd6d965abe31937f484a6d76e3d08522b9fdc83eb58a414a163a39d24582148d",
+      "28.json": "d7a412f0819afd61cb6f7ce1c89eb23509add88695a2e0911c027171154337d0",
+      "29.json": "c13e1ba9f144fd2edc59882a95b70499faa11279c1af69cccd8be737cb337b9d",
+      "3.json": "f1ecd15112d901b36450adcd765a82963288356aa4c581c007c8170027397c22",
+      "30.json": "1aad3811f94aa4e594897790172b922f3acbbca6aa49da8135c8f688ae4add4e",
+      "31.json": "9b4c5197eef7d677b0dbd3d14a335f42e75227b2669d4b6019eb93facc3b2a0d",
+      "32.json": "6a92ede2c6578d1fa749a80c0a689fc6474daa5ea20d1ce269a0e98770c6a3cc",
+      "33.json": "8549a4f18c9a1af2d5489be388b5d6404cf80d20ab12545cad7860fec3da17ea",
+      "34.json": "158570bbb7224edfca5ee3b95b7a77d99471e32b299355c08708725a85298af6",
+      "35.json": "b441528c8dc7d814807d400e47aedd7f2b292a02203a1d76623da52284c22440",
+      "36.json": "ba5e4ae233d55fb48982db4d85bc9b24008d37c27ab507660d9564695b8832bc",
+      "4.json": "4eb6e0a4989db690320a8cf3f0d45a12bb79b02d9b8aea0cf2e4883907a73ea7",
+      "5.json": "887c50087dadd1c590ab7ed057ea80a605dedec7af48e0279f328e3ded2ea624",
+      "6.json": "f49b1a9beba19c49decbdff1f85dd43a46360bf0baebf339c764c16b0976892a",
+      "7.json": "b5ad8f011a47cb23e88fa221c169da0145cab347b1039be6db98ef0bdc5c6325",
+      "8.json": "39c03cd30de50132a208ef89b4d27817161385d1dab5917af032cea37d4c909f",
+      "9.json": "40469d8239fff13f3bb6781c56a7e46667a4d49caf55fab90045375a3d4854fc"
+    }
+  },
+  "deuteronomy": {
+    "chapters": 34,
+    "sourceVerses": 959,
+    "sourceTokens": 14294,
+    "readerVerses": 959,
+    "splitSourceVerses": [],
+    "excludedApparatusWords": 26,
+    "alternateAnalyses": [],
+    "sha256": {
+      "1.json": "437bf63514e1de72d09ddaae091079f28342885838f0949a9bb594c06485a882",
+      "10.json": "9a939073e88065d9f148c3f86d8cfdc9b1d7fa98f6b2546395c8040f5b3dbb02",
+      "11.json": "b2bd630e68b8640092cc9082b6586c8f40c0590114849e03b3a03db542194a6c",
+      "12.json": "eb451195d6f60dd3a0ddc77ed0945cfd210165ee79ba6c26220bbd17ad445eba",
+      "13.json": "a1e0bbd3115d627bca7cf15aa1fd7cedc58bdb66a9ad10996276831c1fbe1851",
+      "14.json": "912dd5f12b4420bbec63cf0601270e89819ecc33ad6d7103ac8f2850ab30cb31",
+      "15.json": "b2b86daff0e307201112b02a0b397fcaf92ea6a8ac6ba0b1a1e10eaf4ab0b63e",
+      "16.json": "488557e6fbe6d5f9dee4b24ac084e7ce7532b8f540c7dde19250fe2121ac91c9",
+      "17.json": "3052eba7d7d135f41635b00f150b19c3abeb33762e6d79279cbcff912a539d48",
+      "18.json": "c0f08873fe083cc59da070eb11b3b4e729d355582575f83aac12a4c42cea79e7",
+      "19.json": "5163dc7f60fbb8c53eef9e4f4cdab16b89c1848469cb3c85a26b608eb721fbf2",
+      "2.json": "791ffea61d90bd75c8901bab0279d3adabc13fbf272f893e07d52b4f33d7daeb",
+      "20.json": "75e25d97facd5a6df6e4b1952673dab65d539ad3ef96b74e7ce93d4fdf77fa7e",
+      "21.json": "9ce0025827d0d471a063addcf3825ec499a1e4316c405dbf4ab36794d1ac8d31",
+      "22.json": "a02b32dbd0ba7b3a31d07aea3215fa8c2b36df8f6a32061539e5614135f42c25",
+      "23.json": "061d49c45ff337b374a24fc9b664d1e84ab3c3cd1abc64d2329cdfb2cb7f3b8a",
+      "24.json": "46c053a64c00a25c327cd3f0cc94ec2d3b6af86068160a285ec2f69e44ea8d00",
+      "25.json": "4bf1f6daa68f6928219599de2bc9273b7d992fd2b9f1c08c8b5c52c481a70d97",
+      "26.json": "bb59a9c2740b1fc280cc6d968b6f5be43e4d6c5798c6f32f8bb1b3974030085a",
+      "27.json": "d63aafe933a51e16e3f804a5db4a06dc3b14dc9bb468c6813143dcdc0161ca04",
+      "28.json": "6c276f4092b583493c9602a292cb5433c9d56875852840b461d8bc76bcee939f",
+      "29.json": "078c4226209a51e02a10c934ce4edb5694dd28a458a939027daea14387fb23b9",
+      "3.json": "ef1a9bd5ed6738302d0cc96fd3a2913a7de3b75543345ce2a10a1a7d19028b97",
+      "30.json": "bdde9beb9248ddef55ea691be988c09f0012d883b9e5185c686bbab6833e9af9",
+      "31.json": "cfedfab4b15bd39d5411d5f73f856ea63fdcbddd3d4b3406495ae4fed6e90c2e",
+      "32.json": "488de0f7086cfcb0a33e93fc4728bdcd95fea31a9bba9aa5908c981cd64464cc",
+      "33.json": "f25b7455694054d2b8869bd582c93396e20f9c17f84a745d2c2b8b99518daf58",
+      "34.json": "b41b891c682cbc53ee35ecc6524db6cd2b4ce0706afc426ad08b3a65a2f9d8d4",
+      "4.json": "bd33ac4feef839b2b5e463f8c856fac97d505f99e6b03d6ed466dfece1b63629",
+      "5.json": "61b0ffbffd839e215bd5ae5f0d4733bc41126030d93d78e1202a04a3bcb509a5",
+      "6.json": "8c5429baf8bd82fa0b198fe91ecca430417bdee0519c1286b89b7e78089517db",
+      "7.json": "80f5b22a2017ef89b637dd2d118206379f759abe0e8233f0d1219bdafde40756",
+      "8.json": "f24b916c7b7ce70845be9780a9b52f26a97641cfe376d850859fdba626399186",
+      "9.json": "7f372f0bc9e90a0cb9bd66450b59ddecff70e93609c2a28c7414ff169df336e9"
+    }
+  },
+  "matthew": {
+    "chapters": 28,
+    "sourceVerses": 1071,
+    "sourceTokens": 18742,
+    "readerVerses": 1071,
+    "splitSourceVerses": [],
+    "excludedApparatusWords": 0,
+    "alternateAnalyses": [
+      {
+        "sourceBookId": "MAT",
+        "chapter": 4,
+        "verse": 15,
+        "tokenIndex": 0,
+        "surface": "γη",
+        "primary": {
+          "strongsNumber": "G1093",
+          "morphology": "N-NSF"
+        },
+        "alternates": [
+          {
+            "strongsNumber": "G1093",
+            "morphology": "N-VSF"
+          }
+        ]
+      },
+      {
+        "sourceBookId": "MAT",
+        "chapter": 4,
+        "verse": 15,
+        "tokenIndex": 3,
+        "surface": "γη",
+        "primary": {
+          "strongsNumber": "G1093",
+          "morphology": "N-NSF"
+        },
+        "alternates": [
+          {
+            "strongsNumber": "G1093",
+            "morphology": "N-VSF"
+          }
+        ]
+      },
+      {
+        "sourceBookId": "MAT",
+        "chapter": 4,
+        "verse": 15,
+        "tokenIndex": 10,
+        "surface": "γαλιλαια",
+        "primary": {
+          "strongsNumber": "G1056",
+          "morphology": "N-NSF"
+        },
+        "alternates": [
+          {
+            "strongsNumber": "G1056",
+            "morphology": "N-VSF"
+          }
+        ]
+      },
+      {
+        "sourceBookId": "MAT",
+        "chapter": 26,
+        "verse": 45,
+        "tokenIndex": 9,
+        "surface": "καθευδετε",
+        "primary": {
+          "strongsNumber": "G2518",
+          "morphology": "V-PAI-2P"
+        },
+        "alternates": [
+          {
+            "strongsNumber": "G2518",
+            "morphology": "V-PAM-2P"
+          }
+        ]
+      },
+      {
+        "sourceBookId": "MAT",
+        "chapter": 26,
+        "verse": 45,
+        "tokenIndex": 13,
+        "surface": "αναπαυεσθε",
+        "primary": {
+          "strongsNumber": "G373",
+          "morphology": "V-PMI-2P"
+        },
+        "alternates": [
+          {
+            "strongsNumber": "G373",
+            "morphology": "V-PMM-2P"
+          }
+        ]
+      },
+      {
+        "sourceBookId": "MAT",
+        "chapter": 27,
+        "verse": 9,
+        "tokenIndex": 10,
+        "surface": "ελαβον",
+        "primary": {
+          "strongsNumber": "G2983",
+          "morphology": "V-2AAI-3P"
+        },
+        "alternates": [
+          {
+            "strongsNumber": "G2983",
+            "morphology": "V-2AAI-1S"
+          }
+        ]
+      }
+    ],
+    "sha256": {
+      "1.json": "eafb267ea5016664c664ba8bcddccaa20acdf1dc92f8398ed385fb9124b36847",
+      "10.json": "6cef6b59f5dee6e5b066942624d53586efc4f4f30acc7943a227056bc5d8ff12",
+      "11.json": "27c4a52493487a46a6fcf58c75fa4da8efa5704ebc47edc9ba5f3e54855a64c0",
+      "12.json": "84f81300abeb0c6ea4391ad8841b30cf52cfe244bda7d4e7a93ab1f05bdaed93",
+      "13.json": "dfdbdff6912bc87f327e97332eee8a14a4c89691c86b5f2b807c45cc5e00e704",
+      "14.json": "ad5a5f5aa657fb7e4935e6e18e8f0438d96e2a40c5db32a9d033cc94421ba43f",
+      "15.json": "bec0d29d10d1abef479427182a1dd668ab609d635f34bef73bfb78b3d12e4d02",
+      "16.json": "572251dfd7ca8636f199210138d3b5a6f0200acfa3a537729177dec8ac4dc7a7",
+      "17.json": "f26e6ab8cc3affc8860900ee999c2c34e121f28be8ec6b1f42be8c8ded1afdc0",
+      "18.json": "440ddbd1672da0561a02d38ddadfd12faaf1577275f46f0c76b0cccfab248cc9",
+      "19.json": "dbe681b56260f0a2fdf9c1968d1d77a15c182389fa9b9e2ec7a87848dc4bd5fc",
+      "2.json": "435e82f0efa30b94ad99d14b426695692fab932066c3364b5cdc78b80293db7e",
+      "20.json": "079745a1e60b817b38d6e1af79569c5bec98e8caf734a5d89730e4639da870cd",
+      "21.json": "a0c67ba8a46e5edce684691e8505cb359af0242bea15a8ba2c5bd36349dde0c7",
+      "22.json": "08ccda32f38adab8a89e8f0ebf33b5bce2d7503cb8b1153d294c8df5bfe3a6a5",
+      "23.json": "a532a262ebc6a53d5edf1d9e9c5e76856fd22b559b34d213f34484fdd0ac3849",
+      "24.json": "8824c425fdccf1471975f704134ede4d8718c37231f583279cc53a2b359ec00e",
+      "25.json": "132ad52ed2ff745f0563b7f066782d2832b98a0f5bdcc4bdd762f567d5c88180",
+      "26.json": "d3da2478800d25436dcb309186415202c0f9eb4dff769fae564838b560fa63ac",
+      "27.json": "968dc1b9fc1e9101a7be51b0a95237628b5ff12c2051ba34793b874bc849c293",
+      "28.json": "8a9cacf5faaf725b3e707b0284147c71ba39e88e08c8df4a84854cdd0a7b0c1f",
+      "3.json": "7f0e9aa3a8ed12f065e5acbe2413c51bbfc83437a1c35c5e59291162f61fd455",
+      "4.json": "7d2052e5ff862760fba2c2e4c8f12d7e54e16f48ff4b7bb511fcaa6b96913c8f",
+      "5.json": "b44dda11c2ebad434ae859f171693cd3fd1535e2ba975a03037cae707429d39c",
+      "6.json": "152349fc653f85249a78e1c346e69190c88505661e4ee1e74f50078391a1706f",
+      "7.json": "8d2093716e92d2d2058f66665ffb555cc7630572cf276f90aa6e765a6db9a9c8",
+      "8.json": "3a81a75110df9a79dac9085e928d408dd7fdf527f670d884ef348b7f0ee397eb",
+      "9.json": "4ebb75f9c29ebadd3cdf1b0a45b20e3d3a6fac7037b0390667a886cd1852109c"
+    }
+  },
+  "mark": {
+    "chapters": 16,
+    "sourceVerses": 678,
+    "sourceTokens": 11618,
+    "readerVerses": 678,
+    "splitSourceVerses": [],
+    "excludedApparatusWords": 0,
+    "alternateAnalyses": [
+      {
+        "sourceBookId": "MAR",
+        "chapter": 14,
+        "verse": 41,
+        "tokenIndex": 7,
+        "surface": "καθευδετε",
+        "primary": {
+          "strongsNumber": "G2518",
+          "morphology": "V-PAI-2P"
+        },
+        "alternates": [
+          {
+            "strongsNumber": "G2518",
+            "morphology": "V-PAM-2P"
+          }
+        ]
+      },
+      {
+        "sourceBookId": "MAR",
+        "chapter": 14,
+        "verse": 41,
+        "tokenIndex": 10,
+        "surface": "αναπαυεσθε",
+        "primary": {
+          "strongsNumber": "G373",
+          "morphology": "V-PMI-2P"
+        },
+        "alternates": [
+          {
+            "strongsNumber": "G373",
+            "morphology": "V-PMM-2P"
+          }
+        ]
+      }
+    ],
+    "sha256": {
+      "1.json": "947255c3b23e3309775c45eae67deffd21692ebb96a81606b02a646f79754657",
+      "10.json": "d1d13ee08e19234263835222c7b40dd6227b8cfb57fdd5a4b330a307464b6adc",
+      "11.json": "e706501a8aa99ec8cc86a45b8d83e8222977e7e3ee7d54a4236ef664c6bbac87",
+      "12.json": "db1fe86c7f9e5608edd6d9aa69f49c8022dc1c82e7c708104579cdb4dca16c6b",
+      "13.json": "1053e9708f5b700f91c4b4fd7937988f8176ffca8c8072ff7b4b193184040d30",
+      "14.json": "58640d6c94d42e9a574754b8784a038f003aa5c3a28d4dea59d7b31cdd246e50",
+      "15.json": "63647f59e9a4cd703a424beefaf7e1340272d45c10bff03d29c388ad97a841f1",
+      "16.json": "a53926d4c845db0687962044ef82d86fe969bb0c5369523770269f8441b1ada9",
+      "2.json": "e8b9df1a722a74e5cb7506c69d5f14081d52b7b3a0509340b4f5afdaeccd55c1",
+      "3.json": "046378ad6ac612ed8a97590d9f485d73e432198976d1d10cda7c1accb0f12a30",
+      "4.json": "327bbc3c98309122bcaa93cf8c3425d6af2818cd4b12401f50dad533f7494610",
+      "5.json": "80d693cff30c52c1363da23abdf95035466438baecdbe36b2cf004c9c6004b91",
+      "6.json": "88dfea402c5e2ef51116c92ed7755adb5607b6b81e15b3ea3191274510641466",
+      "7.json": "d552a0f6b3ecca3c0fb9b9b24c1f03e9978169c3b44f42c54b336fec76fbf8a3",
+      "8.json": "de9316ed2c1725eeca2782c221643b0169b77e1499dac46e42f402994f79a0e4",
+      "9.json": "0c4bb3d63310777f5ce8988bb8e6f9621ac37598bb339d749fcff6dd25593ee1"
+    }
+  },
+  "luke": {
+    "chapters": 24,
+    "sourceVerses": 1150,
+    "sourceTokens": 19878,
+    "readerVerses": 1150,
+    "splitSourceVerses": [],
+    "excludedApparatusWords": 0,
+    "alternateAnalyses": [],
+    "sha256": {
+      "1.json": "47c4d5faba05a15801042af54c36c0f8654d0b17e84be77d6c4c1c2fdcfc4d17",
+      "10.json": "73ca508d7989eca4d508e6f3a16d40b8aaaa43892f48a134c1b267a1e38eee9a",
+      "11.json": "4b72e86d92d02a3a96f9800717787c7a77db9bf2c1eb67edc0fdac8cd8d8fbb8",
+      "12.json": "c5696e89d3e984c7ba8af7d89210c2eb7e61fbeb845618d72978eb9e4d2737bb",
+      "13.json": "c48a990a6e2dd9cdb480c0d90995d22112ddf709467a04f1764eee3fa3ec5ae5",
+      "14.json": "7c708bcffb7dad0d995b8c95cb89a6715bf62e204124affd49be6e3712a06c52",
+      "15.json": "795f55f512dfa13f0c1b0473dbaf0847805420b0e51ba981d46938e1cde38ab1",
+      "16.json": "dcda0125e19934c61fb813d8fffb49ea619508ba2ef00380de3faac193945988",
+      "17.json": "61ae2cf1f834a4693b4d1d00ebd84596a49a2bef450fd59ac4c921b1f300aa23",
+      "18.json": "ed3dc34aaaf3225b67b91b173c9130eec99671473699c8647d903f8c12bc51ba",
+      "19.json": "eea50b2259025dbafbd9f703bc3f88a7a4d90b82ed92b25a22860564a4307441",
+      "2.json": "f9d9379588e0734cd9ef49ff1277aa84fdbb516d97fb7f34575fd180fc63a072",
+      "20.json": "a6d3eb1c61a660f29b594b23ebfaaecbc49ef5023591c3ae8ce378039f0ab6a2",
+      "21.json": "4c4d38aaab1f426e8c80bd3bea3dade171af7b051739cc00032d3c9afbbc2cbf",
+      "22.json": "f861bbb75447d3ef2dc9e62bd80937055a452ad0d812f1fb43e8276d73af76bf",
+      "23.json": "3608e7c11a0a41bf0efffef7bba84c8e2284d6ed84215b1af29632109cfd9b46",
+      "24.json": "06466b263108a01e4f3b991f0faa859bd3a73693ff8832a3ed3e9f813a803eb3",
+      "3.json": "f525611f778fad7a5021499681e6e8ad42c54a88d08ff23a5afc5e7541f021ed",
+      "4.json": "7400db037199fd5c505c8badc6907cf34ec070cd8a473572f96fd88e410ece5d",
+      "5.json": "4c49ade64a03d153783e41b5fe327f08fce289c6abe82653c5103ca4faacdde0",
+      "6.json": "2413409ce7acaf3f5cf1fe6e04479476bdcf58bfc7ef5c94312fd24d18dd803e",
+      "7.json": "d35705c4c69e8b628e638457b75478b8bca6e95362301dc522367d14290d8a04",
+      "8.json": "e09a5408cb3691e3a86f7e51dff9d16533ee5a5f34a0c851f2ca0ed666fe310b",
+      "9.json": "9c0f0fbf1689b9774c49c05ed47aca1588acef063207454133d7c4da5c9544b9"
+    }
+  }
+}

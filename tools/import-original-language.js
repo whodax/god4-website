@@ -86,7 +86,8 @@ function parseStrongGreekXml(text) {
     const body = match[2];
     const definitions = [...body.matchAll(/<strongs_def[^>]*>([\s\S]*?)<\/strongs_def>/g)];
     const fallbackDefinitions = [...body.matchAll(/<kjv_def[^>]*>([\s\S]*?)<\/kjv_def>/g)];
-    const definition = (definitions.length ? definitions : fallbackDefinitions).map((item) => decodeXml(item[1].replace(/<[^>]+>/g, ' '))).join(' ').replace(/\s+/g, ' ').trim();
+    const definitionText = matches => matches.map(item => decodeXml(item[1].replace(/<[^>]+>/g, ' '))).join(' ').replace(/\s+/g, ' ').trim();
+    const definition = definitionText(definitions) || definitionText(fallbackDefinitions);
     const greek = body.match(/<greek\s+[^>]*unicode="([^"]+)"[^>]*translit="([^"]*)"/);
     entries.set(`G${Number(match[1])}`, { definition: definition || null, lemma: greek ? decodeXml(greek[1]) : null, transliteration: greek ? decodeXml(greek[2]) : null });
   }
@@ -236,8 +237,30 @@ function mapSourceRecords(records, config, options = {}){
     const [chapter,verse] = key.split(':').map(Number);
     if(chapters.has(chapter) && records.filter(r => r.chapter === chapter && r.verse === verse).length !== split.tokenCount) throw new TypeError('Split source token count mismatch: ' + key);
   }
+  const omitted = config.referenceMapping.omittedReaderVerses || {};
+  const counts = new Map();
+  for(const record of records){
+    const key = record.chapter + ':' + record.verse;
+    if(Object.hasOwn(omitted, key)) throw new TypeError('Source contains a declared omission: ' + key);
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  const mergeOffsets = new Map();
+  for(const sources of Object.values(config.referenceMapping.mergedTargets || {})){
+    if(!sources.some(key => chapters.has(Number(key.split(':')[0])))) continue;
+    let offset = 0;
+    for(const key of sources){
+      if(!chapters.has(Number(key.split(':')[0])) || !counts.has(key)){
+        throw new TypeError('Incomplete merged source verses: ' + sources.join(', '));
+      }
+      mergeOffsets.set(key, offset);
+      offset += counts.get(key);
+    }
+  }
   for(const ch of chapters) for(let verse = 1; verse <= config.sourceVerseCounts[ch - 1]; verse++){
-    for(const r of sourceTargets(config,ch,verse)) expected.add(r.chapter + ':' + r.verse);
+    for(const r of sourceTargets(config,ch,verse)){
+      const key = r.chapter + ':' + r.verse;
+      if(!Object.hasOwn(omitted, key)) expected.add(key);
+    }
   }
   const mapped = records.filter(r => chapters.has(r.chapter)).map(r => {
     if(r.bookId !== config.bookId || r.status !== 'authoritative') throw new TypeError('Source record book/status mismatch');
@@ -249,7 +272,8 @@ function mapSourceRecords(records, config, options = {}){
       if(typeof r.morphology !== 'string' || !/^[HA]/.test(r.morphology)) throw new TypeError('Invalid OSHB morphology language');
       language = r.morphology[0] === 'A' ? 'aramaic' : 'hebrew';
     }else if(r.language !== 'greek') throw new TypeError('Greek source record language mismatch');
-    return Object.assign({}, r, target, {tokenIndex:segment ? r.tokenIndex - segment.start : r.tokenIndex,language, source:config.source.attribution});
+    const offset = segment ? -segment.start : mergeOffsets.get(r.chapter + ':' + r.verse) || 0;
+    return Object.assign({}, r, target, {tokenIndex:r.tokenIndex + offset,language, source:config.source.attribution});
   });
   const normalized = normalizeRecords(mapped), present = new Set(normalized.map(r => r.chapter + ':' + r.verse));
   const missing = [...expected].filter(key => !present.has(key));
@@ -354,7 +378,10 @@ function writeStaticData(records, outputDirectory, configurations = []) {
       const first = shardRecords[0], book = readerBook(first.bookId), verses = book[first.chapter]?.verses;
       const present = new Set(shardRecords.map(r => r.verse));
       if(!verses || [...present].some(v => v > verses.length)) throw new TypeError('Invalid Reader chapter output');
-      const missing = verses.map((_, i) => i + 1).filter(v => !present.has(v));
+      const config = configurations.find(c => c.bookId === first.bookId);
+      const omitted = config?.referenceMapping?.omittedReaderVerses || {};
+      if([...present].some(v => Object.hasOwn(omitted, first.chapter + ':' + v))) throw new TypeError('Unexpected output for a declared omission');
+      const missing = verses.map((_, i) => i + 1).filter(v => !present.has(v) && !Object.hasOwn(omitted, first.chapter + ':' + v));
       if(missing.length) throw new TypeError('Incomplete Reader chapter output: ' + first.bookId + ' ' + first.chapter + ':' + missing.join(','));
     }
   }

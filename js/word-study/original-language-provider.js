@@ -2,6 +2,30 @@
 var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStudyProvider(){
   var staticDataBasePath = 'data/word-study/original-language/';
   var staticShardRequests = {};
+  // Reader verses whose boundaries don't match an individual source verse.
+  var unavailableVerses = {
+    dra: {
+      exodus:['38:25','38:26','38:27','39:17','39:18','39:19','39:26','39:27','39:33','39:34','39:37','39:38','39:39','39:40','40:13'],
+      leviticus:['15:19','15:20','26:45'],
+      numbers:['11:34','15:11','15:12','15:13','15:14','15:15','15:17','15:18','20:28','20:29','27:3','27:7','27:8'],
+      matthew:['17:14'], mark:['4:40']
+    },
+    gnv: {luke:['15:31']}
+  };
+  // Each row contains Reader chapter, first and last verse, then the
+  // corresponding canonical chapter and first verse.
+  var alternateReferences = {
+    web: {matthew:[[23,13,13,23,14],[23,14,14,23,13]]},
+    dra: {
+      exodus:[[39,20,25,39,22],[39,28,32,39,29],[39,35,36,39,36],[40,14,36,40,16]],
+      leviticus:[[15,21,23,15,20]],
+      numbers:[[13,1,1,12,16],[13,2,34,13,1],[15,16,16,15,17],[20,30,30,20,29],
+        [27,4,6,27,5],[30,1,1,29,40],[30,2,17,30,1]],
+      matthew:[[5,4,4,5,5],[5,5,5,5,4],[17,15,26,17,16]],
+      mark:[[8,39,39,9,1],[9,1,49,9,2]]
+    },
+    gnv: {numbers:[[13,1,1,12,16],[13,2,34,13,1],[30,1,1,29,40],[30,2,17,30,1]]}
+  };
   var fixtureEntries = {
     beginning: {
       strongsNumber: 'DEMO-H0001',
@@ -70,6 +94,13 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
 
   function resolveOriginalLanguageReference(context){
     var reference = { bookId: context.bookId, chapter: context.chapter, verse: context.verse };
+    var bookId = String(context.bookId || '').toLowerCase();
+    var ranges = alternateReferences[context.translationId]?.[bookId] || [];
+    var range = ranges.find(function(item){ return context.chapter === item[0] && context.verse >= item[1] && context.verse <= item[2]; });
+    if(range){
+      reference.chapter = range[3];
+      reference.verse = range[4] + context.verse - range[1];
+    }
     // WEB keeps this doxology at 14:24–26; the reviewed Greek shards use KJV coordinates.
     if(context.translationId === 'web' && typeof context.bookId === 'string' && context.bookId.toLowerCase() === 'romans' && context.chapter === 14 && Number.isInteger(context.verse) && context.verse >= 24 && context.verse <= 26){
       reference.chapter = 16;
@@ -103,9 +134,12 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
   // DRA uses canonical IDs too. Keep unreviewed books and differing-numbered
   // chapters unavailable rather than guessing a cross-tradition verse mapping.
   function hasSupportedReference(context){
-    if(context.translationId !== 'dra') return true;
-    var excluded = {genesis:[49,50], isaiah:[45,46], john:[6], romans:[]};
     var bookId = String(context.bookId || '').toLowerCase();
+    var exceptions = unavailableVerses[context.translationId]?.[bookId] || [];
+    if(exceptions.includes(context.chapter + ':' + context.verse)) return false;
+    if(context.translationId !== 'dra') return true;
+    var excluded = {genesis:[49,50], isaiah:[45,46], john:[6], romans:[],
+      exodus:[], leviticus:[], numbers:[], deuteronomy:[], matthew:[], mark:[], luke:[]};
     return Object.prototype.hasOwnProperty.call(excluded, bookId) && excluded[bookId].indexOf(context.chapter) === -1;
   }
 
@@ -128,12 +162,10 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
     var reference = resolveOriginalLanguageReference(context);
     return loadStaticShard(reference).then(function(records){
       if(!records) return { status: 'unavailable', records: [] };
-      return {
-        status: 'available',
-        records: records.filter(function(record){
-          return record.bookId === reference.bookId.toLowerCase() && record.chapter === reference.chapter && record.verse === reference.verse;
-        }).sort(function(left, right){ return left.tokenIndex - right.tokenIndex; })
-      };
+      var verseRecords = records.filter(function(record){
+        return record.bookId === reference.bookId.toLowerCase() && record.chapter === reference.chapter && record.verse === reference.verse;
+      }).sort(function(left, right){ return left.tokenIndex - right.tokenIndex; });
+      return { status: verseRecords.length ? 'available' : 'unavailable', records: verseRecords };
     });
   }
 
