@@ -161,6 +161,31 @@ test('a cold Word Study selection uses alignment that arrives before the Hebrew 
   await expect(god).toHaveAttribute('data-aligned','true');
 });
 
+test('WEB Exodus 10 identifies LORD as the divine name and aligns it in verse 1',async({page})=>{
+  await open(page,'web','exodus',10,2);
+  const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="lord"]');
+  const hebrew=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="1"]');
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyReference')).toHaveText('Exodus 10:1');
+  await expect(page.locator('#wordStudyDefinition')).toContainText('YHWH (Yahweh), the personal name of God');
+  await expect(page.locator('#wordStudyRelated')).toBeEmpty();
+  await expect(hebrew).toHaveAttribute('data-aligned','true');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(1);
+  await hebrew.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H3068');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('LORD');
+});
+
+for(const [book,chapter,verse,title] of [['genesis',18,12,'lord'],['john',20,28,'Lord']]){
+  test('WEB '+book+' '+chapter+':'+verse+' explains '+title+' as a title',async({page})=>{
+    await open(page,'web',book,chapter,verse);
+    const word=page.locator('#readerContent [data-verse-number="'+verse+'"] [data-word-study-term="lord"]');
+    await expect(word).toHaveText(title);
+    await word.press('Enter');
+    await expect(page.locator('#wordStudyDefinition')).toContainText('A title expressing authority or respect');
+  });
+}
+
 test('WEB Exodus 10 identifies Moses as a person and aligns his name in verse 1',async({page})=>{
   await open(page,'web','exodus',10,2);
   const moses=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="moses"]');

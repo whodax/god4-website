@@ -381,6 +381,22 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
     return lookupShard(0);
   }
 
+  function scriptureDefinition(term, context){
+    if(!context.bookId || !Number.isInteger(context.chapter) || !Number.isInteger(context.verse)) return null;
+    var headword = term.replace(/'s$/, '');
+    if(headword === 'moses' && /^Moses(?:['’]s?)?$/.test(context.displayWord)){
+      return {partOfSpeech:'proper noun', definition:'The man God called to lead the Israelites out of Egypt.', source:'Exodus 3:7–10'};
+    }
+    if(headword === 'lord'){
+      var book = typeof BibleCanon === 'undefined' ? null : BibleCanon.book(context.bookId);
+      if(book && book.testament === 'old' && /^LORD(?:['’][sS])?$/.test(context.displayWord)){
+        return {partOfSpeech:'proper noun', definition:'In the Old Testament, LORD in all capitals usually represents YHWH (Yahweh), the personal name of God.', source:'Scripture usage'};
+      }
+      return {partOfSpeech:'noun', definition:'A title expressing authority or respect, used for God, Jesus, or a human ruler or master.', source:'Scripture usage'};
+    }
+    return null;
+  }
+
   function lookup(context){
     var term = normalizeDictionaryTerm(context.lookupTerm);
 
@@ -388,21 +404,14 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
       return Promise.resolve(unavailable(context, 'not-found'));
     }
 
-    // The biblical proper name and the historical dictionary word share a key.
-    if(context.bookId && Number.isInteger(context.chapter) && Number.isInteger(context.verse) &&
-      (term === 'moses' || term === "moses's") && /^Moses(?:['’]s?)?$/.test(context.displayWord)){
-      return Promise.resolve({
-        status: 'available',
-        word: context.displayWord,
-        definition: 'The man God called to lead the Israelites out of Egypt.',
-        partOfSpeech: 'proper noun',
-        relatedWords: [],
-        source: 'Exodus 3:7–10'
-      });
+    // Scripture usage takes precedence for reviewed names and titles.
+    var scripture = scriptureDefinition(term, context);
+    if(scripture){
+      return Promise.resolve(Object.assign({status:'available', word:context.displayWord, relatedWords:[]}, scripture));
     }
 
     /*
-     * Exact Webster entries always win.
+     * Exact Webster entries take precedence over inflection fallbacks.
      */
     return lookupExact(term, context).then(function(exactResult){
       if(exactResult && exactResult.status === 'available'){

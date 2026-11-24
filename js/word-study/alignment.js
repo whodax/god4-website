@@ -109,7 +109,10 @@
       revision:'Interlinear consulted 2026-11-24',
       reviewedBy:'Codex, checked against the GOD4.us WEB verse and Exodus token shard'
     },
-    groups:[{english:[{start:17, end:22}], original:[3]}]
+    groups:[
+      {english:[{start:4, end:8}], original:[1]},
+      {english:[{start:17, end:22}], original:[3]}
+    ]
   }];
   return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookup:createProvider(reviewedCatalog).lookup};
 }));
