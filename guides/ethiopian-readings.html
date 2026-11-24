@@ -56,6 +56,16 @@
     </div>
   </div>
   <dialog id="eth-fullscreen" aria-label="Fullscreen Ethiopian Reader"></dialog>
+  <dialog id="eth-picker" aria-labelledby="eth-picker-title">
+    <div class="eth-picker-header">
+      <h2 id="eth-picker-title"></h2>
+      <button type="button" id="eth-picker-close">Close</button>
+    </div>
+    <label for="eth-picker-search" hidden>Find a book</label>
+    <input type="search" id="eth-picker-search" autocomplete="off" hidden>
+    <p id="eth-picker-empty" role="status" hidden>No matching books.</p>
+    <div id="eth-picker-options" role="group"></div>
+  </dialog>
   <details class="eth-reading-sources">
     <summary>Source editions and online Meqabyan readings</summary>
     <p>The collection combines historical English translations. The download includes edition notes. The 2 Enoch text is from <cite>The Forgotten Books of Eden</cite> (1926) and 3 Enoch is Hugo Odeberg’s translation (1928).</p>

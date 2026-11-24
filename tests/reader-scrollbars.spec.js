@@ -40,7 +40,8 @@ for (const width of [320, 1280]) {
     await page.keyboard.press('PageDown');
     await expect.poll(() => pane.evaluate(element => element.scrollTop)).toBeGreaterThan(0);
     expect(await page.evaluate(() => window.scrollY)).toBe(before);
-    await page.getByLabel('Chapter').selectOption('118');
+    await page.getByRole('button', { name: 'Chapter: 119', exact: true }).click();
+    await page.getByRole('dialog', { name: 'Choose chapter' }).getByRole('button', { name: '118', exact: true }).click();
     const next = page.getByRole('region', { name: 'Psalms 118' });
     await expect(next).toBeVisible();
     expect(await next.evaluate(element => element.scrollTop)).toBe(0);

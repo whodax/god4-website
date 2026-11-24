@@ -21,6 +21,91 @@
   let useCloud = false;
   let spoken;
   let lines = [];
+  const picker = byId('picker');
+  const pickerOptions = byId('picker-options');
+  const pickerSearch = byId('picker-search');
+  const pickerTitle = byId('picker-title');
+  const pickerEmpty = byId('picker-empty');
+  const pickerButtons = new Map();
+  let activePicker;
+
+  function syncPickers() {
+    for (const [select, button] of pickerButtons) {
+      const label = select.labels[0].textContent;
+      const selected = select.selectedOptions[0]?.textContent;
+      button.disabled = select.disabled || !selected;
+      button.textContent = selected || '—';
+      button.setAttribute('aria-label', label + (selected ? ': ' + selected : ''));
+    }
+  }
+
+  function renderPickerOptions() {
+    const search = pickerSearch.value.trim().toLocaleLowerCase();
+    pickerOptions.replaceChildren();
+    for (const option of activePicker.options) {
+      if (!option.textContent.toLocaleLowerCase().includes(search)) continue;
+      const choice = document.createElement('button');
+      choice.type = 'button';
+      choice.textContent = option.textContent;
+      choice.setAttribute('aria-pressed', String(option.selected));
+      choice.addEventListener('click', () => {
+        const select = activePicker;
+        picker.close();
+        if (!select.contains(option) || select.disabled || option.selected) return;
+        select.value = option.value;
+        select.dispatchEvent(new Event('change', { bubbles: true }));
+      });
+      pickerOptions.append(choice);
+    }
+    pickerEmpty.hidden = pickerOptions.childElementCount > 0;
+  }
+
+  function initializePickers() {
+    if (typeof picker.showModal !== 'function') return;
+    for (const select of [book, chapter, verse]) {
+      const label = select.labels[0].textContent;
+      const trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'eth-picker-trigger';
+      trigger.setAttribute('aria-haspopup', 'dialog');
+      trigger.setAttribute('aria-controls', picker.id);
+      trigger.setAttribute('aria-expanded', 'false');
+      trigger.addEventListener('click', () => {
+        activePicker = select;
+        pickerTitle.textContent = 'Choose ' + label.toLowerCase();
+        pickerOptions.setAttribute('aria-label', label + ' choices');
+        picker.dataset.numeric = String(select !== book);
+        pickerSearch.hidden = pickerSearch.labels[0].hidden = select !== book;
+        pickerSearch.value = '';
+        renderPickerOptions();
+        picker.showModal();
+        trigger.setAttribute('aria-expanded', 'true');
+        pickerOptions.querySelector('[aria-pressed="true"]')?.focus();
+      });
+      select.after(trigger);
+      select.hidden = true;
+      pickerButtons.set(select, trigger);
+    }
+    pickerSearch.addEventListener('input', renderPickerOptions);
+    byId('picker-close').addEventListener('click', () => picker.close());
+    picker.addEventListener('close', () => {
+      const trigger = pickerButtons.get(activePicker);
+      trigger.setAttribute('aria-expanded', 'false');
+      trigger.focus({ preventScroll: true });
+    });
+    pickerOptions.addEventListener('keydown', event => {
+      const choices = Array.from(pickerOptions.children);
+      const i = choices.indexOf(event.target);
+      const offsets = { ArrowLeft: -1, ArrowUp: -1, ArrowRight: 1, ArrowDown: 1 };
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? choices.length - 1 :
+        (i + (offsets[event.key] || 0) + choices.length) % choices.length;
+      if (i >= 0 && (next !== i || event.key in offsets)) {
+        event.preventDefault();
+        choices[next].focus();
+      }
+    });
+    syncPickers();
+  }
 
   async function loadJson(file) {
     if (data) return file === 'books' ? Object.entries(data).map(([id, entry]) => ({ id, name: entry.name })) : data[file];
@@ -88,6 +173,8 @@
       verse.selectedIndex = index;
       scrollToVerse(index);
     }
+    if (picker.open && activePicker === verse) picker.close();
+    syncPickers();
     updatePlay();
   }
 
@@ -98,6 +185,7 @@
     chapter.replaceChildren();
     verse.replaceChildren();
     pane.hidden = true;
+    syncPickers();
     updatePlay();
     status.textContent = 'Loading reading text.';
     try {
@@ -160,6 +248,7 @@
       spoken = passage.children[index];
       spoken.setAttribute('aria-current', 'true');
       verse.selectedIndex = index;
+      syncPickers();
       scrollToVerse(index);
     };
     const onend = () => setTimeout(() => speakLine(attempt, index + 1), 0);
@@ -247,6 +336,7 @@
   verse.addEventListener('change', () => {
     stopReading();
     scrollToVerse(verse.selectedIndex);
+    syncPickers();
     status.textContent = '';
   });
   play.addEventListener('click', () => {
@@ -259,6 +349,7 @@
   });
   window.addEventListener('pagehide', stopReading);
 
+  initializePickers();
   status.textContent = 'Loading the book list.';
   loadJson('books').then((catalog) => {
     const params = new URLSearchParams(location.search);

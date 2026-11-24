@@ -26,6 +26,66 @@
   width: min(100%, 19rem);
   border-color: var(--gold);
 }
+.eth-reading-controls .eth-picker-trigger,
+#eth-picker :is(button, input) {
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--vellum-card);
+  color: var(--ink);
+  font: 13px/1.4 'Inter', 'Inter Fallback', sans-serif;
+}
+.eth-reading-controls .eth-picker-trigger {
+  width: 100%;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+#eth-picker {
+  box-sizing: border-box;
+  width: min(620px, calc(100% - 24px));
+  max-height: calc(100dvh - 24px);
+  padding: clamp(12px, 4vw, 20px);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--vellum-card);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+#eth-picker::backdrop { background: var(--line); }
+.eth-picker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.eth-picker-header h2 { margin: 0; }
+#eth-picker-search { width: 100%; margin: 4px 0 8px; }
+#eth-picker-options {
+  display: grid;
+  gap: 8px;
+  max-height: 56dvh;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 4px;
+}
+#eth-picker[data-numeric="true"] #eth-picker-options {
+  grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+}
+#eth-picker-options button:only-child { justify-self: stretch; }
+#eth-picker:not([data-numeric="true"]) #eth-picker-options button { text-align: left; }
+#eth-picker :is(button, input):focus-visible,
+.eth-reading-controls .eth-picker-trigger:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+#eth-picker-options button[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--highlight);
+  font-weight: 600;
+}
 .eth-reading-controls button:disabled {
   opacity: .65;
 }

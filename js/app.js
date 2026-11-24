@@ -696,8 +696,9 @@ if(action==='saved') document.querySelector('.saved-pill').click();
 if(action==='offline') byId('offlineBiblesTrigger').click();
 if(action==='account') byId('accountTrigger').click();
 if(action==='theme'){document.querySelector('[data-theme-toggle]').click();focus(trigger);}
-if(['featured','ethiopian','resources'].includes(action)){
-var section=byId(action==='featured'?'leafCard':action);section.setAttribute('tabindex','-1');reveal(section);
+if(action==='ethiopian') location.assign('/guides/ethiopian-bible.html');
+if(action==='featured' || action==='resources'){
+var section=byId(action==='featured'?'leafCard':'resources');section.setAttribute('tabindex','-1');reveal(section);
 }
 }catch(error){
 if(dialog.open && request===revision) status.textContent='This feature could not load. Please try again; existing controls remain available.';
