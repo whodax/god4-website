@@ -8,6 +8,7 @@
 <title>Ethiopian Readings — GOD4.us</title>
 <link rel="canonical" href="https://god4.us/guides/ethiopian-readings">
 <script src="/js/theme.js"></script>
+<script src="/js/bible/cloud-tts.js" defer></script>
 <script src="/js/ethiopian-readings.js" defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=EB+Garamond:wght@400;500&family=Inter:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/variables.css">
@@ -21,6 +22,7 @@
 <header class="eth-page-header">
   <a class="eth-page-brand" href="/">GOD4.us</a>
   <nav class="eth-page-links" aria-label="Ethiopian collection">
+    <a href="/">Home</a>
     <a href="/guides/ethiopian-bible.html">Ethiopian Bible guide</a>
     <a href="/books-of-enoch.html">Books of Enoch guide</a>
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to Dark Mode" aria-pressed="false"><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11-11L19 5M5 19l1.5-1.5m11 0L19 19"/></svg></button>
@@ -31,17 +33,29 @@
   <p class="eth-lead">An English collection of historical translations, including 1 Enoch and Jubilees, with 2 and 3 Enoch as companion readings.</p>
   <p><a href="/downloads/god4-ethiopian-readings.zip" download>Download for offline reading (3.8 MB ZIP)</a></p>
   <noscript><p>Enable JavaScript to read here, or use the download.</p></noscript>
-  <div class="eth-reading-controls">
-    <div><label for="eth-book">Book</label><select id="eth-book" disabled></select></div>
-    <div><label for="eth-chapter">Chapter</label><select id="eth-chapter" disabled></select></div>
-    <button type="button" id="eth-play" disabled>Read Aloud</button>
-    <button type="button" id="eth-stop" disabled>Stop</button>
+  <div id="eth-reader-mount">
+    <div id="eth-reader">
+      <div class="eth-reading-controls">
+        <div><label for="eth-book">Book</label><select id="eth-book" disabled></select></div>
+        <div><label for="eth-chapter">Chapter</label><select id="eth-chapter" disabled></select></div>
+        <div><label for="eth-verse">Verse</label><select id="eth-verse" disabled></select></div>
+        <div><label for="eth-voice">Voice</label><select id="eth-voice"><option value="male">Natural Male</option><option value="female">Natural Female</option></select></div>
+        <div><label for="eth-speed">Speed</label><select id="eth-speed"><option value="0.5">50%</option><option value="0.75">75%</option><option value="1" selected>100%</option><option value="1.25">125%</option><option value="1.5">150%</option><option value="1.75">175%</option><option value="2">200%</option></select></div>
+        <button type="button" id="eth-play" aria-label="Play Read Aloud" disabled>Play</button>
+        <button type="button" id="eth-fullscreen-toggle" aria-pressed="false">Fullscreen</button>
+      </div>
+      <p id="eth-reading-status" role="status"></p>
+      <section class="eth-reading-passage" aria-labelledby="eth-heading" tabindex="0" hidden>
+        <h2 id="eth-heading"></h2>
+        <div id="eth-passage"></div>
+      </section>
+      <nav class="eth-reading-footer" aria-label="Reading navigation">
+        <button type="button" id="eth-top">Top</button>
+        <a href="/">Home</a>
+      </nav>
+    </div>
   </div>
-  <p id="eth-reading-status" role="status"></p>
-  <section class="eth-reading-passage" aria-labelledby="eth-heading" tabindex="0" hidden>
-    <h2 id="eth-heading"></h2>
-    <div id="eth-passage"></div>
-  </section>
+  <dialog id="eth-fullscreen" aria-label="Fullscreen Ethiopian Reader"></dialog>
   <details class="eth-reading-sources">
     <summary>Source editions and online Meqabyan readings</summary>
     <p>The collection combines historical English translations. The download includes edition notes. The 2 Enoch text is from <cite>The Forgotten Books of Eden</cite> (1926) and 3 Enoch is Hugo Odeberg’s translation (1928).</p>
