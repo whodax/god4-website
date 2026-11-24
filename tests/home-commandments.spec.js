@@ -5,7 +5,7 @@ const verses=vm.runInNewContext(fs.readFileSync('js/bible/web.js','utf8')+'\nweb
 const groups=[[2,3],[4],[7],[8,9],[12],[13],[14],[15],[16],[17]];
 test.use({serviceWorkers:'block'});
 
-for(const width of [320,390,430,1280])test(`${width}px: all ten WEB passages and accessible arrow navigation`,async({page})=>{
+for(const width of [320,390,430,1280,1600])test(`${width}px: all ten WEB passages and accessible arrow navigation`,async({page})=>{
   await page.setViewportSize({width,height:780});
   const requests=[];
   page.on('request',request=>requests.push(new URL(request.url()).pathname));
@@ -19,6 +19,14 @@ for(const width of [320,390,430,1280])test(`${width}px: all ten WEB passages and
   const next=panel.getByRole('button',{name:'Next commandment'});
   const scrollbar=panel.getByRole('slider',{name:'Scroll commandments'});
   await expect(scrollbar).toBeVisible();
+  const [panelRect, verseRect] = await Promise.all([panel.boundingBox(), page.locator('#leafCard').boundingBox()]);
+  if(width >= 1024){
+    expect(panelRect.x + panelRect.width).toBeLessThan(verseRect.x);
+    expect(panelRect.y).toBeCloseTo(verseRect.y, 0);
+    expect(panelRect.height).toBeCloseTo(verseRect.height, 0);
+  } else {
+    expect(verseRect.y).toBeGreaterThan(panelRect.y + panelRect.height);
+  }
   const [refRect,contentRect,barRect,previousRect,positionRect,nextRect]=await Promise.all(
     [panel.getByRole('heading'),region,scrollbar,previous,position,next].map(item=>item.boundingBox())
   );

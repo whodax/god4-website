@@ -77,6 +77,16 @@
   #commandmentScroll ol{height:100%;margin:0;padding:0 1.5em 0 2em;}
   #commandmentScroll li{min-height:100%;scroll-snap-align:start;padding:.5em 0;overflow-wrap:anywhere;}
   #commandmentScroll p{margin:0;}
+  @media (min-width:1024px){
+    .hero{
+      width:min(calc(100% - 72px),1360px);max-width:none;padding-inline:0;
+      grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px;
+    }
+    .hero h1{grid-column:1 / -1;}
+    #commandments{display:flex;flex-direction:column;}
+    .commandment-controls:not([hidden]){margin-top:auto;padding-top:8px;}
+    .hero .leaf{height:100%;}
+  }
   .divider{
     max-width:1180px;margin:10px auto;padding:0 48px;
     display:flex;align-items:center;gap:16px;color:var(--gold);
