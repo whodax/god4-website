@@ -8,6 +8,7 @@ const read = (name) => fs.readFileSync(path.join(root, name), 'utf8');
 const home = read('index.html');
 const guide = read('guides/ethiopian-bible.html');
 const enoch = read('books-of-enoch.html');
+const readings = read('guides/ethiopian-readings.html');
 const css = read('css/ethiopian-guide.css');
 assert.match(home, /id="ethiopian"/);
 for (const page of [home, guide, enoch]) {
@@ -16,13 +17,8 @@ for (const page of [home, guide, enoch]) {
 for (const page of [home, enoch]) {
   assert.doesNotMatch(page, /href="\/ethiopian-bible(?:\.html)?"/);
 }
-for (const [url, label] of [
-  ['https://online.fliphtml5.com/ekjsx/blhe/', 'Open the Ethiopian Bible flipbook on FlipHTML5'],
-  ['https://www.bible.com/bible/3177/MAT.1.%E1%88%90%E1%8A%AA%E1%8C%8D', 'Read the Ge’ez New Testament from Matthew 1'],
-  ['https://ccel.org/ccel/c/charles/otpseudepig/files/jubilee/1.htm', 'Read Jubilees from chapter 1'],
-]) {
-  assert.ok(guide.includes('<a href="' + url + '">' + label + '</a>'), label + ' links directly to the text');
-}
+assert.doesNotMatch(guide, /href="https:\/\/(?:online\.fliphtml5\.com|www\.bible\.com|ccel\.org)\//);
+assert.match(guide, /<strong>Jubilees:<\/strong> A retelling of events in Genesis and early Exodus/);
 assert.match(guide, /rel="canonical" href="https:\/\/god4\.us\/guides\/ethiopian-bible"/);
 assert.match(home, /href="\/books-of-enoch\.html"/);
 assert.doesNotMatch(home.match(/<section class="ethiopian"[\s\S]*?<\/section>/)?.[0] || '', /<h3>/);
@@ -37,6 +33,18 @@ for (const page of [guide, enoch]) {
 }
 assert.match(guide, /4 Baruch is excluded/);
 assert.match(guide, /Ethiopic Didascalia/);
+assert.match(guide, /href="\/guides\/ethiopian-readings\.html"/);
+assert.match(readings, /href="\/downloads\/god4-ethiopian-readings\.zip" download/);
+assert.match(readings, /src="\/js\/ethiopian-readings\.js" defer/);
+const catalog = JSON.parse(read('data/ethiopian-readings/books.json'));
+assert.equal(catalog.length, 86);
+assert.equal(new Set(catalog.map(({ id }) => id)).size, 86);
+const totalSections = catalog.reduce((total, { id, name }) => {
+  const book = JSON.parse(read('data/ethiopian-readings/' + id + '.json'));
+  assert.equal(book.name, name);
+  return total + book.sections.length;
+}, 0);
+assert.equal(totalSections, 1916);
 for (const [id, url, label] of [
   ['enoch-1', 'https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)/Chapter_01', 'Read 1 Enoch, chapter 1 on Wikisource'],
   ['enoch-2', 'https://scriptura.si/works/enoch-2-morfill-1896/2/', 'Read 2 Enoch, chapter 1 on Scriptura'],
@@ -44,6 +52,8 @@ for (const [id, url, label] of [
 ]) {
   const section = enoch.match(new RegExp('<section[^>]*id="' + id + '"[\\s\\S]*?</section>'))?.[0];
   assert.ok(section?.includes('<a href="' + url + '">' + label + '</a>'), id + ' links to its own reading source');
+  const collectionId = id === 'enoch-1' ? 'enoch' : id;
+  assert.ok(section.includes('href="/guides/ethiopian-readings.html?book=' + collectionId + '"'));
 }
 assert.match(enoch, /Book of the Watchers/);
 assert.match(css, /focus-visible/);

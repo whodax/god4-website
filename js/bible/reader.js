@@ -307,22 +307,34 @@ function readerVisibleTop(){
   return top + readerPlanReturnHeight();
 }
 
-function scrollReaderTargetIntoView(target, behavior){
+function scrollReaderTargetIntoView(target, behavior, follow){
   if(!target || !target.getClientRects().length) return;
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) behavior = 'instant';
+  var view = document.getElementById('view-reader');
+  var pane = document.getElementById('readerContent');
+  var fullscreen = view.classList.contains('reader-fullscreen');
+  var surface = fullscreen ? view : pane.contains(target) ? pane : window;
   var top = readerVisibleTop();
   var bottom = window.innerHeight;
+  if(surface === pane){
+    var bounds = pane.getBoundingClientRect();
+    if(bounds.top >= bottom-48 || bounds.bottom <= top+32){
+      window.scrollBy({top:bounds.top-top,behavior:'instant'});
+      bounds = pane.getBoundingClientRect();
+    }
+    top = Math.max(top,bounds.top+readerPlanReturnHeight());
+    bottom = Math.min(bottom,bounds.bottom);
+  }
   var rect = target.getBoundingClientRect();
-  var margin = 16;
+  var margin = follow ? Math.min(48, Math.max(16, (bottom-top)*.08)) : 16;
   if(rect.top >= top + margin && rect.bottom <= bottom - margin) return;
   var usableHeight = bottom - top;
   if(usableHeight <= 0) return;
   var offset = rect.height > usableHeight - 2 * margin
     ? rect.top - (top + margin)
     : (rect.top + rect.bottom) / 2 - (top + bottom) / 2;
-  var view = document.getElementById('view-reader');
-  if(view && view.classList.contains('reader-fullscreen')) view.scrollBy({top:offset, behavior:behavior});
-  else window.scrollBy({top:offset, behavior:behavior});
+  if(follow) spokenFollowScrollTarget = surface;
+  surface.scrollBy({top:offset, behavior:behavior});
 }
 
 function scrollReaderStartIntoView(){
@@ -330,6 +342,7 @@ function scrollReaderStartIntoView(){
   var start = document.querySelector('#readerContent h2');
   if(!view || !view.classList.contains('active') || !start || !start.getClientRects().length) return;
   var surface = view.classList.contains('reader-fullscreen') ? view : window;
+  if(surface===window) start.parentElement.scrollTop=0;
   var positionedScroll = null;
   function position(){
     if(!start.isConnected || !view.classList.contains('active') || currentVerse ||
@@ -391,7 +404,7 @@ function initializeReaderStickyOffsets(){
 
 function cancelSpokenFollow(){
   if(!spokenFollowScrollTarget) return;
-  var target = spokenFollowScrollTarget === 'fullscreen' ? document.getElementById('view-reader') : window;
+  var target = spokenFollowScrollTarget;
   spokenFollowScrollTarget = null;
   if(!target) return;
   var top = target === window ? window.scrollY : target.scrollTop;
@@ -409,34 +422,7 @@ function clearSpokenVerseHighlight(keepSpeechOwnership){
 }
 
 function followSpokenVerse(){
-  var shell = document.getElementById('view-reader');
-  var fullscreen = shell && shell.classList.contains('reader-fullscreen');
-  var container = document.getElementById('readerContent');
-  var activeVerse = container && container.querySelector('.verse-spoken');
-  if(!activeVerse || !activeVerse.getClientRects().length) return;
-
-  var top = 0;
-  var bottom = window.innerHeight;
-  if(fullscreen){
-    top = readerVisibleTop();
-  } else {
-    top = readerVisibleTop();
-  }
-
-  var usableHeight = bottom - top;
-  if(usableHeight <= 0) return;
-  var margin = Math.min(48, Math.max(16, usableHeight * 0.08));
-  var verseRect = activeVerse.getBoundingClientRect();
-  if(verseRect.top >= top + margin && verseRect.bottom <= bottom - margin) return;
-
-  var offset = verseRect.height > usableHeight - 2 * margin
-    ? verseRect.top - (top + margin)
-    : (verseRect.top + verseRect.bottom) / 2 - (top + bottom) / 2;
-  var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var options = {top:offset, behavior:reducedMotion ? 'auto' : 'smooth'};
-  spokenFollowScrollTarget = fullscreen ? 'fullscreen' : 'window';
-  if(fullscreen) shell.scrollBy(options);
-  else window.scrollBy(options);
+  scrollReaderTargetIntoView(document.querySelector('#readerContent .verse-spoken'),'smooth',true);
 }
 
 function applySpokenVerseHighlight(verseNumber, location){
@@ -1165,16 +1151,19 @@ function rememberReaderTabPosition(leaving){
   if(!reader || !reader.classList.contains('active')) return;
   var reference = readerTabReference();
   var fullscreen = reader.classList.contains('reader-fullscreen');
-  var top = readerVisibleTop();
+  var pane = document.getElementById('readerContent');
+  var bounds = pane.getBoundingClientRect();
+  var top = fullscreen ? readerVisibleTop() : Math.max(readerVisibleTop(),bounds.top+readerPlanReturnHeight());
+  var bottom = fullscreen ? innerHeight : Math.min(innerHeight,bounds.bottom);
   var verses = Array.from(document.querySelectorAll('#readerContent [data-verse-number]'));
   var anchor = verses.find(function(verse){
     var rect = verse.getBoundingClientRect();
-    return rect.bottom > top + 16 && rect.top < window.innerHeight;
+    return rect.bottom > top + 16 && rect.top < bottom;
   });
   if(!anchor && !leaving) return;
   readerTabPosition = {
     reference:reference, fullscreen:fullscreen,
-    top:fullscreen ? reader.scrollTop : window.scrollY,
+    top:fullscreen ? reader.scrollTop : window.scrollY, paneTop:pane.scrollTop,
     verse:anchor ? anchor.getAttribute('data-verse-number') : null,
     offset:anchor ? anchor.getBoundingClientRect().top - top : null
   };
@@ -1183,6 +1172,7 @@ function rememberReaderTabPosition(leaving){
 function restoreReaderTabPosition(preserveAnchor, exact){
   if(!readerTabPosition) return;
   var reader = document.getElementById('view-reader');
+  var pane = document.getElementById('readerContent');
   if(readerTabPosition.reference !== readerTabReference()){
     if(currentVerse) applyReaderVerseSelection(currentVerse, true);
     else scrollReaderStartIntoView();
@@ -1194,18 +1184,21 @@ function restoreReaderTabPosition(preserveAnchor, exact){
     // Restore the offset before following the selection.
     if(reader.querySelector('.reader-compact-mobile') && reader.classList.contains('reader-fullscreen')===readerTabPosition.fullscreen){
       (readerTabPosition.fullscreen ? reader : window).scrollTo({top:readerTabPosition.top,behavior:'instant'});
+      if(!readerTabPosition.fullscreen) pane.scrollTop=readerTabPosition.paneTop;
     }
     scrollReaderTargetIntoView(document.querySelector('#readerContent [data-verse-number="' + currentVerse + '"]'), 'instant');
     return;
   }
   var fullscreen = reader.classList.contains('reader-fullscreen');
   if(!preserveAnchor && fullscreen !== readerTabPosition.fullscreen) return;
-  var surface = fullscreen ? reader : window;
+  var surface = fullscreen ? reader : pane;
+  if(!fullscreen && !readerTabPosition.fullscreen) window.scrollTo({top:readerTabPosition.top,behavior:'instant'});
   var anchor = readerTabPosition.verse && document.querySelector('#readerContent [data-verse-number="' + readerTabPosition.verse + '"]');
   if(anchor){
-    var offset = anchor.getBoundingClientRect().top - readerVisibleTop() - (preserveAnchor && !exact ? Math.max(16, readerTabPosition.offset) : readerTabPosition.offset);
+    var top = fullscreen ? readerVisibleTop() : Math.max(readerVisibleTop(),pane.getBoundingClientRect().top+readerPlanReturnHeight());
+    var offset = anchor.getBoundingClientRect().top - top - (preserveAnchor && !exact ? Math.max(16, readerTabPosition.offset) : readerTabPosition.offset);
     if(Math.abs(offset) >= 1) surface.scrollBy({top:offset, behavior:'instant'});
-  } else if(!preserveAnchor || exact) surface.scrollTo({top:readerTabPosition.top, behavior:'instant'});
+  } else if(!preserveAnchor || exact) surface.scrollTo({top:fullscreen ? readerTabPosition.top : readerTabPosition.paneTop, behavior:'instant'});
 }
 
 function switchView(view, btn, positionOnReturn){
@@ -1373,6 +1366,7 @@ function renderPassage(bookKey, chapterNum){
     var backToPlan = document.getElementById('readerBackToPlan');
     var restorePlanFocus = backToPlan && document.activeElement === backToPlan;
     container.innerHTML = html;
+    container.scrollTop=0;
     if(backToPlan){
       var returnRow = container.querySelector('.reader-plan-return');
       returnRow.appendChild(backToPlan);
@@ -1552,8 +1546,9 @@ function toggleFullscreen(){
   rememberReaderTabPosition(true);
   var entering = !shell.classList.contains('reader-fullscreen');
   var saved = fullscreenResume;
+  var pane = document.getElementById('readerContent');
   var exact = entering && saved && saved.y === scrollY && saved.width === innerWidth &&
-    saved.height === innerHeight && saved.anchor.reference === readerTabPosition.reference;
+    saved.height === innerHeight && saved.paneTop === pane.scrollTop && saved.anchor.reference === readerTabPosition.reference;
   fullscreenResume = null;
   if(entering){
     fullscreenReturnFocus = document.activeElement;
@@ -1575,7 +1570,7 @@ function toggleFullscreen(){
   if(refreshReaderStickyOffsets) refreshReaderStickyOffsets();
   if(exact) readerTabPosition = saved.anchor;
   restoreReaderTabPosition(true, exact);
-  if(!entering) fullscreenResume = {anchor:readerTabPosition,y:scrollY,width:innerWidth,height:innerHeight};
+  if(!entering) fullscreenResume = {anchor:readerTabPosition,y:scrollY,width:innerWidth,height:innerHeight,paneTop:pane.scrollTop};
   if(entering) button.focus({preventScroll:true});
   else {
     var returnFocus=fullscreenReturnFocus && fullscreenReturnFocus.isConnected ? fullscreenReturnFocus : button;

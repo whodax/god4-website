@@ -57,6 +57,15 @@
     line-height:1.85;font-size:18px;
     font-family:'EB Garamond','EB Garamond Fallback',serif;
   }
+  #view-reader:not(.reader-fullscreen) .reader-passage{
+    max-height:clamp(15rem,60dvh,42rem);overflow-y:scroll;overscroll-behavior-y:contain;
+    scrollbar-gutter:stable;padding-inline:8px;
+  }
+  #view-reader:not(.reader-fullscreen) .reader-passage .reader-plan-return{top:0;}
+  #view-reader:not(.reader-fullscreen) .reader-passage .reader-verse{
+    scroll-margin-top:calc(var(--reader-plan-return-height,0px) + 16px);
+  }
+  .reader-passage:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
   .reader-passage h2{
     font-family:'Cormorant Garamond','Cormorant Garamond Fallback',serif;
     font-size:26px;color:var(--gold);
