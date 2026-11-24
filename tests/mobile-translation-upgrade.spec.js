@@ -15,7 +15,8 @@ const production59='be5c59b04700182f5c636007e45e2137445619aa';
 const production60='93bc6884e2c6143520cde52555c38738708a91e0';
 const shell60HomepagePin='f065b0cb9384677859acc32548fc80f4818e4c13c9a3ccde978c773bd80d4aba';
 const production61='f693f0997a110dcd6554764eb94b9b76086b3bdb';
-const currentVersion=62;
+const production62='e27b928fd56249a54c08ca1484ed2dfde9d7b1ef';
+const currentVersion=63;
 const production55='90a13c28afc64526bf27b6c2bb7021dd516d6493';
 const discoveryAssets=["/js/home-discovery.js","/js/home-discovery-catalog.json"];
 const discoveryPins={"/":"0dbb79fc2df882e469eb86e752cf7953e85078aa60e615362603597b5596fd15","/js/app.js":"498e0a2f3ce4b5c735d4ba3ea43bfb6a70709181849c7627067c339d4b31eab2","/js/home-discovery.js":"d123dff0bc63e160beb2f512dcb05341931abb0241233eebd77d864cb460eee3","/js/home-discovery-catalog.json":"5bb67690dbf8e1ff44af50617d0d9f30ae30aa5e78f95bdd024952c632b4555a","/css/components.css":"401ba5d477482de2fd3647da880bd9a266fc3f7dc4d134f93f9eae95e3ccca95"};
@@ -48,7 +49,8 @@ for(const previous of [
   {version:58,commit:'fbc93cb582864b4827e9c5800eb06ce3e5d1c069',assets:52},
   {version:59,commit:production59,assets:52},
   {version:60,commit:production60,assets:52},
-  {version:61,commit:production61,assets:52}
+  {version:61,commit:production61,assets:52},
+  {version:62,commit:production62,assets:52}
 ])test.describe(`installed cache ${previous.version}`,()=>{
 const baseline=previous.commit;
 const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-'+currentVersion;
@@ -75,9 +77,9 @@ const saved=[{ref:'John 1:1',text:'Installed-user saved verse',location:{transla
 test.use({viewport:{width:320,height:844},hasTouch:true,serviceWorkers:'allow'});
 if(previous.version>=52)test.use({userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'});
 
-test('shell 62 preserves activation, Bible caches and the exact required assets',()=>{
+test('shell 63 preserves activation, Bible caches and the exact required assets',()=>{
   const worker=fs.readFileSync(path.join(root,'sw.js'),'utf8');
-  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-62'","'compact-reader-"+previous.version+"'");
+  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-63'","'compact-reader-"+previous.version+"'");
   if(previous.version<56)for(const asset of discoveryAssets)normalized=normalized.replace("  '"+asset+"',\n",'');
   if(previous.version<55)normalized=normalized.replace("  '/js/home-commandments.js',\n",'');
   if(previous.version<48)normalized=normalized.replace("  '/css/theme.css',\n",'').replace("  '/js/theme.js',\n",'');
@@ -85,9 +87,9 @@ test('shell 62 preserves activation, Bible caches and the exact required assets'
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(52);
   if(previous.version>=59){
-    expect(digest(Buffer.from(normalizeSource(prior['/'])))).toBe(previous.version===61?'0c7b055a36695e6d0ed35907953805fe08a41698caf99055014797161818ce4d':previous.version===60?shell60HomepagePin:discoveryPins['/']);
+    expect(digest(Buffer.from(normalizeSource(prior['/'])))).toBe(previous.version===62?'1ae164e488bf338ec053fbe5ba68739d73a84cacaefa9eaacc0fef27571ef513':previous.version===61?'0c7b055a36695e6d0ed35907953805fe08a41698caf99055014797161818ce4d':previous.version===60?shell60HomepagePin:discoveryPins['/']);
   }
-  const scrollbarPins={"/js/app.js":"b9545fa8c7951214c7e044a8948b8a452e5a9b6ed485ba42d4ef8544e2b1043c","/js/bible/reader.js":"24c39f8519381f20d4306caeca2510af739a0bfeb6e368e2bd4799d0b01049e1","/js/bible/translation-picker.js":"e7b10c7dade2c728d87c05c24b78b7360783b85bc62591d117bd675940a69f9a","/css/companion.css":"e1a898e7b50992871185c18351833b361fed8ba50af1f9d049b953f737ddfe52","/":"1ae164e488bf338ec053fbe5ba68739d73a84cacaefa9eaacc0fef27571ef513"};
+  const scrollbarPins={"/js/app.js":"764688812f36e40830cdb94e183e11dc71935ea4538c25274f9848dd4b8ded61","/js/bible/reader.js":"24c39f8519381f20d4306caeca2510af739a0bfeb6e368e2bd4799d0b01049e1","/js/bible/translation-picker.js":"e7b10c7dade2c728d87c05c24b78b7360783b85bc62591d117bd675940a69f9a","/css/companion.css":"e1a898e7b50992871185c18351833b361fed8ba50af1f9d049b953f737ddfe52","/":"a3c12993dd0d0279848f14d4fc804a33acd34089d8c2c0566bb6516728f31dd8"};
   // Pin only the changed and added assets against the production Shell 54 baseline.
   const homepageAssets={"/":"4fbdc1c0ef304fa50dad52b62542db19738e7541b69f2915c5c074762baca31c","/css/layout.css":"66979582eeb2c599e81a19356603982994fbb44483dea8ce14edc590a39fade5","/js/app.js":"f1f4035a743d60fcebd93693372854cc74ef1c235c0e3ab5fd85ed65b21e09df","/js/home-commandments.js":"1e389624a305ee3fec1dbb97dc52dccce758117501bd8723b8f9a23dd8f385ad"};
   for(const asset of requiredAssets){
@@ -522,7 +524,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`failed shell-62 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
+test(`failed shell-63 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   try{
@@ -562,7 +564,7 @@ test(`failed shell-62 installation leaves installed shell ${previous.version} us
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`interrupted shell-62 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
+test(`interrupted shell-63 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
   test.setTimeout(60000);const server=await fixture();
   try{
     await installOld(page,server.origin);const before=await retainedState(page),requests=server.state.bibleRequests.slice();

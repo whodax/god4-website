@@ -15,6 +15,10 @@ Both guides link to `/guides/ethiopian-readings.html`. The Enoch guide links dir
 
 The standalone web and offline readers use a keyboard-focusable reading pane that scrolls independently of their book and chapter controls.
 
+The homepage places the Ethiopian Bible section between Study Desk and Bible Resources. The main menu opens the Ethiopian Bible guide directly. Shell 63 refreshes the installed homepage and menu.
+
+In the web reader, choose a book, chapter, and verse or paragraph. Play follows the highlighted line through chapters and books until Stop or the end of the collection. Read Aloud uses the existing Natural Male and Natural Female cloud voices when available or a compatible device voice. Speed ranges from 50% to 200%.
+
 ## Checks
 
 Run `node tests/ethiopian-education.test.js` for static markup checks. Before merge, inspect both pages and their return navigation in Cloudflare Pages, keyboard tab order, theme persistence, 320/390/430px layout, TalkBack semantics, browser console and full regression suite. Verify that upgrading from Shell 60 refreshes the offline homepage and preserves downloaded translations, settings, and reading progress.

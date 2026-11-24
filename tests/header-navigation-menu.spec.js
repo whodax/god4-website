@@ -21,7 +21,7 @@ for(const width of [320,390,430,1280])for(const dark of [false,true]){
     await page.locator('#headerMenuTrigger').click();
     await expect(menu(page)).toBeVisible();
     await expect(menu(page).getByRole('heading',{level:3})).toHaveText(['Read & Study','My Bible','Preferences & Account','Explore']);
-    await expect(menu(page).locator('[data-destination]')).toHaveCount(16);
+    await expect(menu(page).locator('[data-destination]')).toHaveCount(17);
     await expect(page.locator('#headerMenuClose')).toBeFocused();
     for(const button of await menu(page).getByRole('button').all()){
       await expect(button).toHaveAccessibleName(/\S/);
@@ -185,12 +185,12 @@ test.describe('cached menu',()=>{
     await choose(page,'reader');await expect(page.locator('#readerContent')).toContainText('John 1');
     await choose(page,'saved');await expect(page.locator('#tray')).toHaveAttribute('aria-hidden','false');await expect(page.locator('#savedCount')).toHaveText('1');
     expect(await state(page)).toEqual(before);
-    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-62')).keys())].length)).toBe(52);
+    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-63')).keys())].length)).toBe(52);
   });
 });
 
-test('Shell 62 preserves the shell asset count and startup budget',async()=>{
-  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-62'");
+test('Shell 63 preserves the shell asset count and startup budget',async()=>{
+  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-63'");
   expect((sw.split('const SHELL_ASSETS = [')[1].split('];')[0].match(/(?:HOME_URL|OFFLINE_URL|'[^']+')/g)||[]).length).toBe(52);
   const scripts=[...fs.readFileSync('index.html','utf8').matchAll(/<script[^>]+src="([^"]+)/g)].map(m=>m[1].split('?')[0].replace(/^\//,''));
   const bytes=scripts.reduce((n,file)=>n+Buffer.byteLength(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n')),0);

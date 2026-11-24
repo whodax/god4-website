@@ -696,6 +696,7 @@ if(action==='saved') document.querySelector('.saved-pill').click();
 if(action==='offline') byId('offlineBiblesTrigger').click();
 if(action==='account') byId('accountTrigger').click();
 if(action==='theme'){document.querySelector('[data-theme-toggle]').click();focus(trigger);}
+if(action==='ethiopian') location.assign('/guides/ethiopian-bible.html');
 if(action==='featured' || action==='resources'){
 var section=byId(action==='featured'?'leafCard':'resources');section.setAttribute('tabindex','-1');reveal(section);
 }

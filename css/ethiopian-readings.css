@@ -10,10 +10,10 @@
   min-width: 0;
   max-width: 100%;
 }
-.eth-reading-controls :is(label, select, button) {
+:is(.eth-reading-controls, .eth-reading-footer) :is(label, select, button, a) {
   font: 500 .9rem/1.3 Inter, Arial, sans-serif;
 }
-.eth-reading-controls :is(select, button) {
+:is(.eth-reading-controls, .eth-reading-footer) :is(select, button, a) {
   min-height: 44px;
   max-width: 100%;
   padding-inline: .7rem;
@@ -25,6 +25,66 @@
 .eth-reading-controls select {
   width: min(100%, 19rem);
   border-color: var(--gold);
+}
+.eth-reading-controls .eth-picker-trigger,
+#eth-picker :is(button, input) {
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--vellum-card);
+  color: var(--ink);
+  font: 13px/1.4 'Inter', 'Inter Fallback', sans-serif;
+}
+.eth-reading-controls .eth-picker-trigger {
+  width: 100%;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+#eth-picker {
+  box-sizing: border-box;
+  width: min(620px, calc(100% - 24px));
+  max-height: calc(100dvh - 24px);
+  padding: clamp(12px, 4vw, 20px);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--vellum-card);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+#eth-picker::backdrop { background: var(--line); }
+.eth-picker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.eth-picker-header h2 { margin: 0; }
+#eth-picker-search { width: 100%; margin: 4px 0 8px; }
+#eth-picker-options {
+  display: grid;
+  gap: 8px;
+  max-height: 56dvh;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 4px;
+}
+#eth-picker[data-numeric="true"] #eth-picker-options {
+  grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+}
+#eth-picker-options button:only-child { justify-self: stretch; }
+#eth-picker:not([data-numeric="true"]) #eth-picker-options button { text-align: left; }
+#eth-picker :is(button, input):focus-visible,
+.eth-reading-controls .eth-picker-trigger:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+#eth-picker-options button[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--highlight);
+  font-weight: 600;
 }
 .eth-reading-controls button:disabled {
   opacity: .65;
@@ -72,4 +132,48 @@
 .eth-reading-sources summary {
   cursor: pointer;
   margin-bottom: .5rem;
+}
+
+.eth-reading-passage [aria-current="true"] {
+  background: var(--highlight);
+  box-shadow: inset 3px 0 var(--gold);
+}
+.eth-reading-footer {
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  gap: .5rem;
+  padding: .55rem 0 0;
+  background: none;
+}
+.eth-reading-footer a {
+  display: inline-grid;
+  place-items: center;
+}
+#eth-fullscreen {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: clamp(.75rem, 3vw, 2rem);
+  border: 0;
+  background: var(--vellum);
+  color: var(--ink);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+#eth-fullscreen[open] #eth-reader {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 20rem;
+  max-width: 54rem;
+  margin: auto;
+}
+#eth-fullscreen .eth-reading-passage {
+  flex: 1;
+  min-height: 6rem;
+  max-height: none;
 }
