@@ -123,6 +123,44 @@ for(const drift of ['word','italic marker'])test(`KJV ${drift} drift rejects can
   await expect(page.locator('#wordStudyVerse [data-selected="true"]')).toHaveCount(0);
 });
 
+test('WEB Genesis 1:1 aligns God with the published Hebrew token in both directions',async({page})=>{
+  await open(page,'web','genesis',1,1);
+  const verse=page.locator('#readerContent [data-verse-number="1"]');
+  const god=verse.locator('[data-word-study-term="god"]');
+  const hebrew=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="2"]');
+  const status=page.locator('#wordStudyAlignmentStatus');
+
+  await god.press('Enter');
+  await expect(status).toContainText('Verified phrase alignment');
+  await expect(hebrew).toHaveText('אֱלֹהִ֑ים');
+  await expect(hebrew).toHaveAttribute('data-aligned','true');
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(1);
+  await expect(verse.locator('[data-aligned="true"]')).toHaveText('God');
+
+  await verse.locator('[data-word-study-term="created"]').press('Enter');
+  await expect(status).toContainText('Exact word alignment is unavailable');
+  await expect(verse.locator('[data-aligned="true"]')).toHaveCount(0);
+  await hebrew.press('Enter');
+  await expect(verse.locator('[data-aligned="true"]')).toHaveText('God');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('God');
+  await expect(hebrew).toBeFocused();
+});
+
+test('a cold Word Study selection uses alignment that arrives before the Hebrew tokens',async({page})=>{
+  let alignmentRequest, hebrewRequest;
+  await page.route('**/js/word-study/alignment.js',route=>{alignmentRequest=route;});
+  await page.route('**/data/word-study/original-language/genesis/1.json',route=>{hebrewRequest=route;});
+  await open(page,'web','genesis',1,1,false,false);
+  const god=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="god"]');
+  await god.press('Enter');
+  await expect.poll(()=>Boolean(alignmentRequest && hebrewRequest)).toBe(true);
+  await alignmentRequest.continue();
+  await page.waitForFunction(()=>Boolean(window.WordStudyAlignment));
+  await hebrewRequest.continue();
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Verified phrase alignment');
+  await expect(god).toHaveAttribute('data-aligned','true');
+});
+
 test('lexical definitions never create inferred alignment',async({page})=>{
   const word=await open(page,'web','john',1,1);
   await page.evaluate(()=>{WordStudyProvider.lookup=()=>Promise.resolve({status:'available',definition:'λογος means word',relatedWords:['word']});});

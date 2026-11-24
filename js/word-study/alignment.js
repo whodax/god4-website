@@ -73,6 +73,23 @@
       return word;
     });
   }
-  var reviewedCatalog = [];
+  var reviewedCatalog = [{
+    status:'verified',
+    translationId:'web',
+    bookId:'genesis',
+    chapter:1,
+    verse:1,
+    englishText:'In the beginning, God created the heavens and the earth.',
+    originalTokens:['בְּ/רֵאשִׁ֖ית', 'בָּרָ֣א', 'אֱלֹהִ֑ים', 'אֵ֥ת', 'הַ/שָּׁמַ֖יִם', 'וְ/אֵ֥ת', 'הָ/אָֽרֶץ'].map(function(surface, tokenIndex){
+      return {bookId:'genesis', chapter:1, verse:1, tokenIndex:tokenIndex, surface:surface};
+    }),
+    source:{
+      title:'Genesis 1:1 Hebrew interlinear',
+      reference:'https://biblehub.com/interlinear/genesis/1-1.htm',
+      revision:'Interlinear consulted 2026-11-24',
+      reviewedBy:'Codex, checked against the GOD4.us WEB verse and Genesis token shard'
+    },
+    groups:[{english:[{start:18, end:21}], original:[2]}]
+  }];
   return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookup:createProvider(reviewedCatalog).lookup};
 }));

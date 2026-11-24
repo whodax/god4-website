@@ -189,15 +189,22 @@ var WordStudyController = (function createWordStudyController(){
       button.__originalLanguageRecord = record;
       view.originalTokens.appendChild(button);
     });
+    // A cold open can load alignment while the verse's Hebrew or Greek data is in flight.
+    // Use it for the first rendering of these tokens, without revisiting a rendered panel.
+    if(alignmentApi !== readyAlignmentApi) activeContext = contextWithAlignment(activatingWord, activeContext);
     activeAlignment = activeContext.alignmentTextVerified ? alignmentApi.lookup(activeContext, result.records) : {status:'unavailable',groups:[]};
     renderEnglishVerse();
   }
 
-  function openFromWord(word, context, isCurrent){
-    if(!word || !word.isConnected || !context || (isCurrent && !isCurrent())) return;
+  function contextWithAlignment(word, context){
     alignmentApi = readyAlignmentApi;
     var englishWords = alignmentApi.wordSpans(word.closest('.reader-verse'));
-    context = Object.assign({}, context, {alignmentTextVerified:englishWords.includes(word), englishStart:Number(word.getAttribute('data-word-study-start')), englishEnd:Number(word.getAttribute('data-word-study-end'))});
+    return Object.assign({}, context, {alignmentTextVerified:englishWords.includes(word), englishStart:Number(word.getAttribute('data-word-study-start')), englishEnd:Number(word.getAttribute('data-word-study-end'))});
+  }
+
+  function openFromWord(word, context, isCurrent){
+    if(!word || !word.isConnected || !context || (isCurrent && !isCurrent())) return;
+    context = contextWithAlignment(word, context);
     activatingWord = word;
     activeContext = context;
     activeAlignment = {status:'unavailable', groups:[]};
