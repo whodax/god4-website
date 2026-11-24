@@ -90,6 +90,26 @@
       reviewedBy:'Codex, checked against the GOD4.us WEB verse and Genesis token shard'
     },
     groups:[{english:[{start:18, end:21}], original:[2]}]
+  },{
+    status:'verified',
+    translationId:'web',
+    bookId:'exodus',
+    chapter:10,
+    verse:1,
+    englishText:'The LORD said to Moses, “Go in to Pharaoh, for I have hardened his heart and the heart of his servants, that I may show these my signs among them;',
+    originalTokens:[
+      'וַ/יֹּ֤אמֶר', 'יְהוָה֙', 'אֶל', 'מֹשֶׁ֔ה', 'בֹּ֖א', 'אֶל', 'פַּרְעֹ֑ה', 'כִּֽי', 'אֲנִ֞י', 'הִכְבַּ֤דְתִּי',
+      'אֶת', 'לִבּ/וֹ֙', 'וְ/אֶת', 'לֵ֣ב', 'עֲבָדָ֔י/ו', 'לְמַ֗עַן', 'שִׁתִ֛/י', 'אֹתֹתַ֥/י', 'אֵ֖לֶּה', 'בְּ/קִרְבּֽ/וֹ'
+    ].map(function(surface, tokenIndex){
+      return {bookId:'exodus', chapter:10, verse:1, tokenIndex:tokenIndex, surface:surface};
+    }),
+    source:{
+      title:'Exodus 10:1 Hebrew interlinear',
+      reference:'https://biblehub.com/interlinear/exodus/10-1.htm',
+      revision:'Interlinear consulted 2026-11-24',
+      reviewedBy:'Codex, checked against the GOD4.us WEB verse and Exodus token shard'
+    },
+    groups:[{english:[{start:17, end:22}], original:[3]}]
   }];
   return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookup:createProvider(reviewedCatalog).lookup};
 }));

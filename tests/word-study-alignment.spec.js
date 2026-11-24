@@ -161,6 +161,34 @@ test('a cold Word Study selection uses alignment that arrives before the Hebrew 
   await expect(god).toHaveAttribute('data-aligned','true');
 });
 
+test('WEB Exodus 10 identifies Moses as a person and aligns his name in verse 1',async({page})=>{
+  await open(page,'web','exodus',10,2);
+  const moses=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="moses"]');
+  const tokens=page.locator('#wordStudyOriginalTokens button');
+  const hebrew=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="3"]');
+  await moses.press('Enter');
+  await expect(page.locator('#wordStudyReference')).toHaveText('Exodus 10:1');
+  await expect(page.locator('#wordStudyPartOfSpeech')).toHaveText('proper noun');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The man God called to lead the Israelites out of Egypt.');
+  await expect(page.locator('#wordStudyRelated')).toBeEmpty();
+  await expect(moses).toHaveAttribute('data-aligned','true');
+  await expect(hebrew).toHaveAttribute('data-aligned','true');
+  await hebrew.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H4872');
+  await tokens.nth(16).press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H7896');
+  await expect(moses).toHaveAttribute('data-aligned','false');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The man God called to lead the Israelites out of Egypt.');
+});
+
+test('KJV Moses receives the biblical name definition without an exact alignment',async({page})=>{
+  await open(page,'kjv','exodus',3,4);
+  const moses=page.locator('#readerContent [data-verse-number="4"] [data-word-study-term="moses"]').first();
+  await moses.press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The man God called to lead the Israelites out of Egypt.');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+});
+
 test('lexical definitions never create inferred alignment',async({page})=>{
   const word=await open(page,'web','john',1,1);
   await page.evaluate(()=>{WordStudyProvider.lookup=()=>Promise.resolve({status:'available',definition:'λογος means word',relatedWords:['word']});});

@@ -37,9 +37,11 @@ WCAG conformance audit of the site.
 The 60,663 retained Genesis, Isaiah, John and Romans token records contain 15
 lexical/reference fields. None supplies translation-specific English word spans.
 Strong's numbers/definitions and verse-number compatibility do not establish word
-alignment. The reviewed catalog covers **God** (אֱלֹהִים, H430) in WEB Genesis
-1:1. Review checked the exact WEB verse and published Genesis token identities
-against the [Genesis 1:1 Hebrew interlinear](https://biblehub.com/interlinear/genesis/1-1.htm).
+alignment. The reviewed catalog covers **God** (אֱלֹהִים, H430) in WEB Genesis 1:1
+and **Moses** (מֹשֶׁה, H4872) in WEB Exodus 10:1. Review checked the exact WEB
+verses and published token identities against the interlinear for
+[Genesis 1:1](https://biblehub.com/interlinear/genesis/1-1.htm) and
+[Exodus 10:1](https://biblehub.com/interlinear/exodus/10-1.htm).
 For unmapped selections, the panel still offers the original-language tokens
 and lexical definitions and reports that exact word alignment is unavailable.
 If the optional alignment module cannot load, English dictionary and verse-level

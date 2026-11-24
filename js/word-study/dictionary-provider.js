@@ -388,6 +388,19 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
       return Promise.resolve(unavailable(context, 'not-found'));
     }
 
+    // The biblical proper name and the historical dictionary word share a key.
+    if(context.bookId && Number.isInteger(context.chapter) && Number.isInteger(context.verse) &&
+      (term === 'moses' || term === "moses's") && /^Moses(?:['’]s?)?$/.test(context.displayWord)){
+      return Promise.resolve({
+        status: 'available',
+        word: context.displayWord,
+        definition: 'The man God called to lead the Israelites out of Egypt.',
+        partOfSpeech: 'proper noun',
+        relatedWords: [],
+        source: 'Exodus 3:7–10'
+      });
+    }
+
     /*
      * Exact Webster entries always win.
      */
