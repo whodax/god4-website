@@ -10,6 +10,7 @@ var WordStudyController = (function createWordStudyController(){
   var activeContext = null;
   var activeAlignment = {status:'unavailable', groups:[]};
   var floatingClose;
+  var floatingClosePosition;
 
   function updateFloatingClose(){
     if(!floatingClose) return;
@@ -19,8 +20,16 @@ var WordStudyController = (function createWordStudyController(){
       return;
     }
     var bounds = view.close.getBoundingClientRect();
+    var top = readerVisibleTop();
     floatingClose.hidden = document.activeElement !== floatingClose &&
-      bounds.top >= readerVisibleTop() && bounds.bottom <= window.innerHeight;
+      bounds.top >= top && bounds.bottom <= window.innerHeight;
+    if(!floatingClose.hidden && floatingClosePosition){
+      var right = document.documentElement.clientWidth - view.panel.getBoundingClientRect().right;
+      var width = floatingClose.offsetWidth;
+      floatingClosePosition.setProperty('top', Math.max(8, Math.min(top + 8, window.innerHeight - floatingClose.offsetHeight - 8)) + 'px');
+      floatingClosePosition.setProperty('right', Math.max(12, right >= width + 24 ? right - width - 12 :
+        document.documentElement.clientWidth - bounds.right) + 'px');
+    }
   }
 
   function elements(){
@@ -195,9 +204,9 @@ var WordStudyController = (function createWordStudyController(){
         var clearanceInset = closing ? 5 : 8;
         var top = readerVisibleTop() + clearanceInset;
         var bottom = window.innerHeight - clearanceInset;
-        if(floatingClose && !floatingClose.hidden){
+        if(!closing && floatingClose && !floatingClose.hidden){
           var floating = floatingClose.getBoundingClientRect();
-          if(token.left < floating.right && token.right > floating.left) bottom = Math.min(bottom, floating.top - clearanceInset);
+          if(token.left < floating.right && token.right > floating.left) top = Math.max(top, floating.bottom + clearanceInset);
         }
         var clearance = token.top < top ? token.top - top : token.bottom > bottom ? token.bottom - bottom : 0;
         if(clearance) surface.scrollBy({top:clearance<0?Math.floor(clearance):Math.ceil(clearance),behavior:'instant'});
@@ -342,9 +351,16 @@ var WordStudyController = (function createWordStudyController(){
       floatingClose = document.createElement('button');
       floatingClose.type = 'button';
       floatingClose.className = 'word-study-floating-close';
-      floatingClose.textContent = 'Close Word Study';
+      floatingClose.textContent = 'Close';
       floatingClose.setAttribute('aria-label', 'Close Word Study panel');
       floatingClose.hidden = true;
+      var sheet = Array.from(document.styleSheets).find(function(candidate){
+        return candidate.href && /\/css\/companion\.css(?:\?|$)/.test(candidate.href);
+      });
+      if(sheet){
+        var ruleIndex = sheet.insertRule('.word-study-floating-close {}', sheet.cssRules.length);
+        floatingClosePosition = sheet.cssRules[ruleIndex].style;
+      }
       floatingClose.addEventListener('click', function(){ closeButton.click(); });
       elements().panel.appendChild(floatingClose);
       window.addEventListener('scroll', updateFloatingClose, {capture:true, passive:true});

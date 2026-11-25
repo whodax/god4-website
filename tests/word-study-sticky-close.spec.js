@@ -10,7 +10,7 @@ async function geometry(page){
     const toolbar=rect(reader.querySelector('.reader-toolbar'));
     const layers=fullscreen?[toolbar]:[toolbar,...['nav','#bibleApp .bs-nav'].map(s=>document.querySelector(s)).filter(e=>getComputedStyle(e).position==='sticky').map(rect)];
     const c=rect(close),hit=document.elementFromPoint((c.left+c.right)/2,(c.top+c.bottom)/2);
-    return {panel:rect(panel),header:rect(header),heading:rect(document.getElementById('wordStudyHeading')),close:c,
+    return {panel:rect(panel),header:rect(header),verse:rect(document.getElementById('wordStudyVerse')),close:c,
       stack:Math.max(...layers.map(r=>r.bottom)),hit:!!hit && close.contains(hit),panelScroll:panel.scrollTop,
       overflow:getComputedStyle(panel).overflowY,docWidth:document.documentElement.scrollWidth,
       background:getComputedStyle(header).backgroundColor,surface:getComputedStyle(panel).backgroundColor,
@@ -60,9 +60,14 @@ for(const [width, fullscreen] of [[1280,false],[390,false],[390,true]]){
     const word=page.locator('#readerContent [data-word-study-term="beginning"]').first();
     await word.press('Enter');
     await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
+    const inline=await geometry(page);
+    expect(inline.verse.right).toBeLessThan(inline.close.left);
+    expect(inline.verse.top).toBeCloseTo(inline.close.top,0);
     await scrollPanel(page,'within');
     const close=page.getByRole('button',{name:'Close Word Study panel',exact:true});
     await expect(close).toBeInViewport();
+    const position=await close.evaluate(button=>({top:button.getBoundingClientRect().top,readerTop:readerVisibleTop()}));
+    expect(position.top).toBeCloseTo(position.readerTop+8,0);
     await close.click();
     await expect(page.locator('#wordStudyPanel')).toBeHidden();
     await expect(word).toBeFocused();
@@ -110,7 +115,7 @@ for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false
         }).toBe(true);
         const focused=await geometry(page);
         console.log('Close focus geometry',JSON.stringify({name,state,...focused}));
-        expect(focused.heading.right).toBeLessThan(focused.close.left);
+        expect(focused.verse.right).toBeLessThan(focused.close.left);
         if(state==='long') expect(await page.locator('#wordStudyDefinition').textContent()).toHaveLength(1425);
         if(state==='long') await page.screenshot({path:testInfo.outputPath('word-study.png')});
         if(width===1280) await close.click();else await close.tap();
