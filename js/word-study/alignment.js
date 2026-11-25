@@ -199,6 +199,41 @@
       reviewedBy:'Codex, checked against the GOD4.us WEB verse and the Byzantine Mark token shard'
     },
     groups:[{english:[{start:73, end:76}], original:[13]}]
+  },{
+    status:'verified',
+    translationId:'kjv',
+    bookId:'acts',
+    chapter:8,
+    verse:37,
+    englishText:'And Philip said, If thou believest with all thine heart, thou mayest. And he answered and said, I believe that Jesus Christ is the Son of God.',
+    originalTokens:['ειπεν','δε','ο','φιλιππος','ει','πιστευεις','εξ','ολης','της','καρδιας','εξεστιν','αποκριθεις','δε','ειπεν','πιστευω','τον','υιον','του','θεου','ειναι','τον','ιησουν','χριστον'].map(function(surface, tokenIndex){
+      return {bookId:'acts', chapter:8, verse:37, tokenIndex:tokenIndex, surface:surface};
+    }),
+    source:{
+      title:'Acts 8:37 Textus Receptus interlinear',
+      reference:'https://www.textusreceptusbibles.com/Strongs/44008037/G3588',
+      revision:'Interlinear consulted 2026-11-25',
+      reviewedBy:'Codex, checked against the GOD4.us KJV verse and the Robinson Textus Receptus token shard'
+    },
+    groups:[
+      {english:[{start:0, end:3}], original:[1]},
+      {english:[{start:4, end:10}], original:[3]},
+      {english:[{start:11, end:15}], original:[0]},
+      {english:[{start:17, end:19}], original:[4]},
+      {english:[{start:20, end:34}], original:[5]},
+      {english:[{start:35, end:55}], original:[6,7,8,9]},
+      {english:[{start:57, end:68}], original:[10]},
+      {english:[{start:70, end:73}], original:[12]},
+      {english:[{start:74, end:85}], original:[11]},
+      {english:[{start:90, end:94}], original:[13]},
+      {english:[{start:96, end:105}], original:[14]},
+      {english:[{start:111, end:116}], original:[21]},
+      {english:[{start:117, end:123}], original:[22]},
+      {english:[{start:124, end:126}], original:[19]},
+      {english:[{start:127, end:130}], original:[15]},
+      {english:[{start:131, end:134}], original:[16]},
+      {english:[{start:135, end:141}], original:[17,18]}
+    ]
   }];
   return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookup:createProvider(reviewedCatalog).lookup};
 }));

@@ -277,6 +277,26 @@ test('WEB John 1:3 highlights both Greek words for nothing in either direction',
   await expect(matched).toHaveText(['ουδε','εν']);
 });
 
+test('KJV Acts 8:37 visibly highlights Christ and each word of a Greek phrase',async({page})=>{
+  await open(page,'kjv','acts',8,37);
+  const verse=page.locator('#readerContent [data-verse-number="37"]');
+  const christ=verse.locator('[data-word-study-term="christ"]');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await christ.press('Enter');
+  await expect(matched).toHaveText('χριστον');
+  await expect(matched).toHaveCSS('color','rgb(23, 36, 58)');
+  await expect(matched).toHaveCSS('outline-style','solid');
+  expect(await matched.evaluate(element=>getComputedStyle(element).backgroundColor))
+    .not.toBe(await page.locator('#wordStudyOriginalTokens button').first().evaluate(element=>getComputedStyle(element).backgroundColor));
+  await matched.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G5547');
+  await page.getByRole('button',{name:'Identify aligned phrase with all thine heart'}).press('Enter');
+  await expect(matched).toHaveText(['εξ','ολης','της','καρδιας']);
+  await matched.last().press('Enter');
+  await expect(matched).toHaveCount(4);
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('with all thine heart');
+});
+
 test('WEB Genesis 1:1 highlights the Hebrew for heavens',async({page})=>{
   await open(page,'web','genesis',1,1);
   await page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="heavens"]').press('Enter');

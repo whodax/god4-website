@@ -169,6 +169,7 @@
   .word-study-original-token{box-sizing:border-box;background:var(--vellum-card);border:1px solid var(--line);border-radius:2px;color:var(--ink);cursor:pointer;font:18px/1.5 'EB Garamond','EB Garamond Fallback',serif;padding:2px 6px;min-width:32px;min-height:32px;max-width:100%;white-space:normal;word-break:normal;overflow-wrap:anywhere;}
   @media (any-pointer:coarse){.word-study-original-token{min-width:44px;min-height:44px;}}
   .word-study-original-token:hover,.word-study-original-token[aria-pressed="true"]{border-color:var(--gold);}
+  .word-study-panel .word-study-original-token[data-aligned="true"]{background:var(--gold);color:#17243a;outline-color:var(--gold);}
   .word-study-original-token:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
   #wordStudyPanel .word-study-original-token,#wordStudyPanel .word-study-original-details{
     scroll-margin-top:calc(var(--reader-nav-bottom,105px) + var(--reader-tabs-height,0px) + var(--reader-toolbar-height,53px) + var(--word-study-header-height,0px) + var(--word-study-context-height,0px) + 16px);
