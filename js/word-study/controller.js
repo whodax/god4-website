@@ -38,8 +38,10 @@ var WordStudyController = (function createWordStudyController(){
     view.partOfSpeech.textContent = state === 'available' && result.partOfSpeech ? result.partOfSpeech : '';
     if(view.verse.textContent !== context.verseText) view.verse.textContent = context.verseText;
     view.definition.textContent = state === 'loading' ? 'Looking up this word...' : state === 'available' ? result.definition : result.message;
-    view.related.textContent = state === 'available' && Array.isArray(result.relatedWords) && result.relatedWords.length ? 'Related words: ' + result.relatedWords.join(', ') : '';
-    view.source.textContent = state === 'available' ? 'Public Domain Word Study' : '';
+    var webster = state === 'available' && typeof result.source === 'string' && result.source.startsWith('Webster');
+    view.related.textContent = state === 'available' && Array.isArray(result.relatedWords) && result.relatedWords.length ?
+      (webster ? 'Thesaurus suggestions: ' : 'Related words: ') + result.relatedWords.join(', ') : '';
+    view.source.textContent = state === 'available' ? (webster ? 'English dictionary · Webster’s Unabridged' : result.source || '') : '';
     view.status.textContent = state === 'loading' ? 'Looking up ' + context.displayWord + '.' : 'Studying ' + context.displayWord + ', ' + context.bookName + ' ' + context.chapter + ':' + context.verse + '.';
     var heading = document.getElementById('wordStudyHeading');
     if(heading && document.activeElement === activatingWord) heading.focus();
@@ -114,7 +116,17 @@ var WordStudyController = (function createWordStudyController(){
 
   function showOriginalDetails(record, selectedButton){
     var view = elements();
+    var groups = alignmentApi.matchingGroups(activeAlignment, {tokenIndex:record.tokenIndex});
+    var phrases = groups.flatMap(function(group){
+      return group.english.map(function(span){ return activeContext.verseText.slice(span.start, span.end).trim(); });
+    });
+    var details = Object.assign({}, record, {inThisVerse:[...new Set(phrases)].join(' … '), language:displayLanguage(record.language)});
+    // The main G2316 sense appears in the XML derivation field and was dropped by the import.
+    if(details.language === 'Greek' && details.strongsNumber === 'G2316' && details.definition === 'figuratively, a magistrate; by Hebraism, very'){
+      details.definition = 'A deity, especially the supreme Divinity when used with the definite article. Figuratively, a magistrate; by Hebraism, very.';
+    }
     var fields = [
+      ['inThisVerse', 'In this verse'],
       ['surface', 'Surface'],
       ['language', 'Language'],
       ['lemma', 'Lemma'],
@@ -127,7 +139,7 @@ var WordStudyController = (function createWordStudyController(){
     ];
     view.originalDetails.textContent = '';
     fields.forEach(function(field){
-      var value = field[0] === 'language' ? displayLanguage(record[field[0]]) : record[field[0]];
+      var value = details[field[0]];
       if(value === null || value === undefined || value === '') return;
       var label = document.createElement('dt');
       var detail = document.createElement('dd');

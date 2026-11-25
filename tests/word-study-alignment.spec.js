@@ -161,6 +161,23 @@ test('a cold Word Study selection uses alignment that arrives before the Hebrew 
   await expect(god).toHaveAttribute('data-aligned','true');
 });
 
+test('WEB Mark 2:7 shows God’s verified Greek match and biblical sense',async({page})=>{
+  await open(page,'web','mark',2,7);
+  const word=page.locator('#readerContent [data-verse-number="7"] [data-word-study-term="god"]');
+  const greek=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="13"]');
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toContainText('The Supreme Being');
+  await expect(page.locator('#wordStudySource')).toHaveText('Bible usage · Matched to this verse');
+  await expect(page.locator('#wordStudyRelated')).toBeEmpty();
+  await expect(greek).toHaveAttribute('data-aligned','true');
+  await greek.press('Enter');
+  const details=page.locator('#wordStudyOriginalDetails');
+  await expect(details.locator('dt').first()).toHaveText('In this verse');
+  await expect(details.locator('dd').first()).toHaveText('God');
+  await expect(details).toContainText('G2316');
+  await expect(details).toContainText('A deity, especially the supreme Divinity');
+});
+
 test('WEB Exodus 10 identifies LORD as the divine name and aligns it in verse 1',async({page})=>{
   await open(page,'web','exodus',10,2);
   const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="lord"]');

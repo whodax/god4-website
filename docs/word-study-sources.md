@@ -17,7 +17,33 @@ The Word Study importer accepts locally supplied source files and never download
 
 Public-domain status may differ outside the United States. Raw Gutenberg source files are not deployed and should not be committed unless their retention and distribution requirements are reviewed.
 
+## Common words in the WEB Reader
+
+`data/word-study/web-common-words.json` contains original short definitions and
+context rules for the 500 most frequent normalized word forms in the site's
+WEB Protestant Bible. Frequency includes repeated words and common grammar
+words. Ties use alphabetical order. The test recounts the Bible with the Reader
+tokenizer and verifies that all 500 entries can be served. The forms cover
+611,729 occurrences in the source text. The catalog loads on demand, and the
+ordinary dictionary remains available for other terms and translations.
+
+When a rule matches one meaning, the panel shows it with a context label.
+A word with competing meanings and insufficient evidence shows those meanings
+with a context-uncertain label. A plain definition uses the common-usage label.
+The rules use nearby words and checked offsets where available. They do not
+claim to establish a meaning for every occurrence or align every English token
+with Hebrew, Aramaic, or Greek.
+
 ## Conservative contextual sense selection
+
+The Word Study panel identifies Webster as an English dictionary and labels
+Moby suggestions as thesaurus suggestions. For the capitalized biblical name
+**God**, Word Study selects Webster's “The Supreme Being” noun sense and hides
+the general thesaurus suggestions. The Mark 2:7 alignment identifies **God**
+as the rendering of Greek **θεός** (G2316) in the WEB verse. Original-language
+details show “In this verse” where a verified alignment exists. For the
+legacy G2316 fragment, the panel restores the main deity sense from the pinned
+Strong Greek XML entry's derivation field. This leaves the source shards intact.
 
 `js/word-study/sense-selector.js` selects only among the existing Webster
 definitions for the exact/stemmed headword already resolved by the dictionary

@@ -113,6 +113,23 @@
       {english:[{start:4, end:8}], original:[1]},
       {english:[{start:17, end:22}], original:[3]}
     ]
+  },{
+    status:'verified',
+    translationId:'web',
+    bookId:'mark',
+    chapter:2,
+    verse:7,
+    englishText:'“Why does this man speak blasphemies like that? Who can forgive sins but God alone?”',
+    originalTokens:['τι','ουτος','ουτως','λαλει','βλασφημιας','τις','δυναται','αφιεναι','αμαρτιας','ει','μη','εις','ο','θεος'].map(function(surface, tokenIndex){
+      return {bookId:'mark', chapter:2, verse:7, tokenIndex:tokenIndex, surface:surface};
+    }),
+    source:{
+      title:'Mark 2:7 Greek interlinear',
+      reference:'https://www.blueletterbible.org/tools/interlinear/tr/mar/2/7/',
+      revision:'Interlinear consulted 2026-11-24',
+      reviewedBy:'Codex, checked against the GOD4.us WEB verse and the Byzantine Mark token shard'
+    },
+    groups:[{english:[{start:73, end:76}], original:[13]}]
   }];
   return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookup:createProvider(reviewedCatalog).lookup};
 }));

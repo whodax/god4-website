@@ -141,12 +141,19 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
       return unavailable(context, 'malformed');
     }
 
-    var selection = typeof WordStudySenseSelector === 'undefined' ? {
+    // Prefer the reviewed Webster sense for the capitalized biblical name.
+    var godSense = normalizeDictionaryTerm(entry.word) === 'god' && context.bookId && Number.isInteger(context.chapter) &&
+      Number.isInteger(context.verse) && /^God(?:['’]s)?$/.test(context.displayWord) ?
+      definitions.findIndex(function(definition){
+        return definition.partOfSpeech === 'noun' && definition.text.startsWith('The Supreme Being;');
+      }) : -1;
+    var selection = godSense >= 0 ? {selectedIndex:godSense, confidence:1, reasons:['reviewed-scripture-sense'], ambiguous:false} :
+      typeof WordStudySenseSelector === 'undefined' ? {
       selectedIndex:0, confidence:0, reasons:['selector-unavailable'], ambiguous:definitions.length > 1
     } : WordStudySenseSelector.select(definitions, Object.assign({}, context, {matchedHeadword:entry.word}));
     var selectedDefinition = definitions[selection.selectedIndex];
 
-    var relatedWords = Array.isArray(entry.relatedWords)
+    var relatedWords = godSense < 0 && Array.isArray(entry.relatedWords)
       ? entry.relatedWords
           .filter(function(word){
             return typeof word === 'string' && word.trim();
@@ -397,19 +404,50 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
     return null;
   }
 
-  function lookup(context){
-    var term = normalizeDictionaryTerm(context.lookupTerm);
-
-    if(!term){
-      return Promise.resolve(unavailable(context, 'not-found'));
+  function verseRuleMatches(rules, term, context){
+    var selected = [];
+    var text = context.verseText;
+    var hasOffset = Number.isInteger(context.englishStart) && context.englishStart >= 0;
+    for(var token of text.matchAll(/[A-Za-z0-9]+(?:['’\-][A-Za-z0-9]+)*/g)){
+      if(normalizeDictionaryTerm(token[0]) !== term ||
+        (hasOffset ? token.index !== context.englishStart : token[0] !== context.displayWord)) continue;
+      var marked = (text.slice(0, token.index) + 'xqzstudytoken' + text.slice(token.index + token[0].length))
+        .toLowerCase().replace(/’/g, "'").replace(/\s+/g, ' ');
+      var matches = new Set(rules.filter(function(rule){
+        return new RegExp(rule[1].replace(/@/g, 'xqzstudytoken')).test(marked);
+      }).map(function(rule){ return rule[0]; }));
+      selected.push(matches.size === 1 ? matches.values().next().value : -1);
     }
+    return selected.length && selected.every(function(index){ return index === selected[0]; }) ? selected[0] : -1;
+  }
 
-    // Scripture usage takes precedence for reviewed names and titles.
-    var scripture = scriptureDefinition(term, context);
-    if(scripture){
-      return Promise.resolve(Object.assign({status:'available', word:context.displayWord, relatedWords:[]}, scripture));
+  function commonDefinition(catalog, term, context){
+    var entry = catalog && Object.hasOwn(catalog.entries, term) && catalog.entries[term];
+    if(!entry || !Array.isArray(entry.meanings) || !entry.meanings.length) return null;
+    var meanings = entry.meanings;
+    var choice = meanings.length === 1 ? 0 : -1;
+    var matchedContext = false;
+    if(term === 'god' || term === "god's"){
+      choice = /^(?:God|GOD)(?:['’][sS])?$/.test(context.displayWord) ? 0 : 1;
+      matchedContext = true;
+    }else if(term === "lord's"){
+      var book = typeof BibleCanon === 'undefined' ? null : BibleCanon.book(context.bookId);
+      choice = book && book.testament === 'old' && /^LORD['’][sS]$/.test(context.displayWord) ? 1 : 0;
+      matchedContext = true;
+    }else if(entry.rules){
+      choice = verseRuleMatches(entry.rules, term, context);
+      matchedContext = choice >= 0;
     }
+    var meaning = choice >= 0 ? meanings[choice] : meanings.join(' ');
+    return {
+      definition:meaning,
+      partOfSpeech:term === 'god' || term === 'king' ? 'noun' : term === 'moses' ? 'proper noun' : '',
+      source:choice < 0 ? 'Common Bible meanings · Context uncertain' :
+        matchedContext ? 'Bible usage · Matched to this verse' : 'Common Bible usage'
+    };
+  }
 
+  function lookupDictionary(term, context){
     /*
      * Exact Webster entries take precedence over inflection fallbacks.
      */
@@ -441,6 +479,20 @@ var DictionaryWordStudyProvider = (function createDictionaryWordStudyProvider(){
       }
 
       return lookupCandidate(0);
+    });
+  }
+
+  function lookup(context){
+    var term = normalizeDictionaryTerm(context.lookupTerm);
+    if(!term) return Promise.resolve(unavailable(context, 'not-found'));
+    var scripture = scriptureDefinition(term, context);
+    var result = {status:'available', word:context.displayWord, relatedWords:[]};
+    if(context.translationId !== 'web' || !context.bookId || typeof context.verseText !== 'string' || term === 'lord'){
+      return scripture ? Promise.resolve(Object.assign(result, scripture)) : lookupDictionary(term, context);
+    }
+    return loadShard('web-common-words').then(function(catalog){
+      var usage = commonDefinition(catalog, term, context) || scripture;
+      return usage ? Object.assign(result, usage) : lookupDictionary(term, context);
     });
   }
 

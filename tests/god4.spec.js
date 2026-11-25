@@ -2832,6 +2832,7 @@ test('Word Study dictionary provider resolves adaptive shards and caches concurr
 });
 
 test('Word Study falls back safely when a static shard is missing or malformed', async ({ page }) => {
+  await page.route('**/data/word-study/web-common-words.json', route => route.fulfill({status:404}));
   await page.route('**/data/word-study/li.json', (route) => route.fulfill({ status: 404 }));
   await page.route('**/data/word-study/be.json', (route) => route.fulfill({ contentType: 'application/json', body: '{bad json' }));
   await page.goto('/');
