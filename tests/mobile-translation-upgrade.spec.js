@@ -24,7 +24,7 @@ const preview67='36a83c644db7a510f634d692866968a431837a78';
 const preview68='7014c91849364dae244b89b44dd0a515fa1c98d1';
 const preview69='885831216ca3e85bf5426ec5940e1a9105a3afd4';
 const preview70='558845a0d9f12a61d8911b4db47cb363a4ad281e';
-const currentVersion=71;
+const currentVersion=72;
 const production55='90a13c28afc64526bf27b6c2bb7021dd516d6493';
 const discoveryAssets=["/js/home-discovery.js","/js/home-discovery-catalog.json"];
 const discoveryPins={"/":"0dbb79fc2df882e469eb86e752cf7953e85078aa60e615362603597b5596fd15","/js/app.js":"498e0a2f3ce4b5c735d4ba3ea43bfb6a70709181849c7627067c339d4b31eab2","/js/home-discovery.js":"d123dff0bc63e160beb2f512dcb05341931abb0241233eebd77d864cb460eee3","/js/home-discovery-catalog.json":"5bb67690dbf8e1ff44af50617d0d9f30ae30aa5e78f95bdd024952c632b4555a","/css/components.css":"401ba5d477482de2fd3647da880bd9a266fc3f7dc4d134f93f9eae95e3ccca95"};
@@ -66,7 +66,8 @@ for(const previous of [
   {version:67,commit:preview67,assets:52},
   {version:68,commit:preview68,assets:52},
   {version:69,commit:preview69,assets:52},
-  {version:70,commit:preview70,assets:52}
+  {version:70,commit:preview70,assets:52},
+  {version:71,commit:'33768054b1e7069c21b3d61d4490953ae49045d3',assets:52}
 ])test.describe(`installed cache ${previous.version}`,()=>{
 const baseline=previous.commit;
 const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-'+currentVersion;
@@ -95,9 +96,9 @@ const saved=[{ref:'John 1:1',text:'Installed-user saved verse',location:{transla
 test.use({viewport:{width:320,height:844},hasTouch:true,serviceWorkers:'allow'});
 if(previous.version>=52)test.use({userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'});
 
-test('shell 71 preserves activation, Bible caches and the exact required assets',()=>{
+test('shell 72 preserves activation, Bible caches and the exact required assets',()=>{
   const worker=fs.readFileSync(path.join(root,'sw.js'),'utf8');
-  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-71'","'compact-reader-"+previous.version+"'");
+  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-72'","'compact-reader-"+previous.version+"'");
   if(previous.version<56)for(const asset of discoveryAssets)normalized=normalized.replace("  '"+asset+"',\n",'');
   if(previous.version<55)normalized=normalized.replace("  '/js/home-commandments.js',\n",'');
   if(previous.version<48)normalized=normalized.replace("  '/css/theme.css',\n",'').replace("  '/js/theme.js',\n",'');
@@ -105,7 +106,7 @@ test('shell 71 preserves activation, Bible caches and the exact required assets'
   expect(normalized).toBe(prior['/sw.js'].toString('utf8').replace(/\r\n/g,'\n'));
   expect(requiredAssets).toHaveLength(52);
   if(previous.version>=59){
-    expect(digest(Buffer.from(normalizeSource(prior['/'])))).toBe(previous.version>=63?'a3c12993dd0d0279848f14d4fc804a33acd34089d8c2c0566bb6516728f31dd8':previous.version===62?'1ae164e488bf338ec053fbe5ba68739d73a84cacaefa9eaacc0fef27571ef513':previous.version===61?'0c7b055a36695e6d0ed35907953805fe08a41698caf99055014797161818ce4d':previous.version===60?shell60HomepagePin:discoveryPins['/']);
+    expect(digest(Buffer.from(normalizeSource(prior['/'])))).toBe(previous.version>=71?'2b4f020a910a66406fa04cdfd3d8abe6200068b599107d3e33de7d0d61e396e6':previous.version>=63?'a3c12993dd0d0279848f14d4fc804a33acd34089d8c2c0566bb6516728f31dd8':previous.version===62?'1ae164e488bf338ec053fbe5ba68739d73a84cacaefa9eaacc0fef27571ef513':previous.version===61?'0c7b055a36695e6d0ed35907953805fe08a41698caf99055014797161818ce4d':previous.version===60?shell60HomepagePin:discoveryPins['/']);
   }
   const scrollbarPins={"/js/app.js":"764688812f36e40830cdb94e183e11dc71935ea4538c25274f9848dd4b8ded61","/js/bible/reader.js":"24c39f8519381f20d4306caeca2510af739a0bfeb6e368e2bd4799d0b01049e1","/js/bible/translation-picker.js":"e7b10c7dade2c728d87c05c24b78b7360783b85bc62591d117bd675940a69f9a","/css/companion.css":"e1a898e7b50992871185c18351833b361fed8ba50af1f9d049b953f737ddfe52","/":"a3c12993dd0d0279848f14d4fc804a33acd34089d8c2c0566bb6516728f31dd8"};
   // Pin only the changed and added assets against the production Shell 54 baseline.
@@ -113,7 +114,7 @@ test('shell 71 preserves activation, Bible caches and the exact required assets'
   const wordStudyPins={
     '/':'2b4f020a910a66406fa04cdfd3d8abe6200068b599107d3e33de7d0d61e396e6',
     '/css/companion.css':'97ff48324e8f127c6938f790a8528b2d1a22907f0f511a4810a22a5a94fb7bcd',
-    [alignmentPath]:'3b55373d8bd3389083c0b9668344decedb93a874e4c25679b465ab5b7b995782',
+    [alignmentPath]:'88910af2434c523778c00845e03d624de798c4a77d79f5f63cbdfc5a321149ec',
     [dictionaryPath]:'d2370962a5c5d5f8785fc0d9d4c9f717a639b5a4aa4646204ecc66f0470995ef',
     [lexiconProviderPath]:'75aa4be63d8c64f2f4970ce77030b51242e5bc615b27aef9ec9bb91b05757f3c',
     '/js/word-study/controller.js':'868bc1be64f8c10d3ee547b8c0d166b58f5d303e496aa67fabb1b0d1b9eb2470'
@@ -129,7 +130,7 @@ test('shell 71 preserves activation, Bible caches and the exact required assets'
       .toBe(digest(/\.(?:png|woff2)$/.test(fileFor(asset))?prior54(asset):Buffer.from(normalizeSource(prior54(asset)))));
   }
   function prior54(asset){return execFileSync('git',['show',production54+':'+fileFor(asset)],{cwd:root});}
-  for(const asset of previous.version===70?['/','/js/word-study/controller.js','/css/companion.css']:previous.version===69?[alignmentPath,dictionaryPath,'/js/word-study/controller.js','/css/companion.css']:previous.version===68?[alignmentPath,dictionaryPath,'/js/word-study/controller.js']:previous.version===67?['/js/word-study/controller.js']:previous.version>=65?[alignmentPath,dictionaryPath]:previous.version===64?Object.keys(wordStudyPins):previous.version===63?['/css/layout.css']:previous.version>=59?['/']:previous.version===58?['/','/css/components.css','/js/app.js']:previous.version===56?Object.keys(narrationPins):previous.version===55?['/','/js/app.js']:previous.version===54?['/','/css/layout.css','/js/app.js']:previous.version===53?['/','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js','/js/word-study/controller.js']:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
+  for(const asset of previous.version===71?[alignmentPath]:previous.version===70?['/','/js/word-study/controller.js','/css/companion.css']:previous.version===69?[alignmentPath,dictionaryPath,'/js/word-study/controller.js','/css/companion.css']:previous.version===68?[alignmentPath,dictionaryPath,'/js/word-study/controller.js']:previous.version===67?['/js/word-study/controller.js']:previous.version>=65?[alignmentPath,dictionaryPath]:previous.version===64?Object.keys(wordStudyPins):previous.version===63?['/css/layout.css']:previous.version>=59?['/']:previous.version===58?['/','/css/components.css','/js/app.js']:previous.version===56?Object.keys(narrationPins):previous.version===55?['/','/js/app.js']:previous.version===54?['/','/css/layout.css','/js/app.js']:previous.version===53?['/','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js','/js/word-study/controller.js']:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
     expect(normalizeSource(current[asset]),asset+' must deliver the accepted release').not.toBe(normalizeSource(prior[asset]));
   }
   if(previous.version===53) for(const asset of requiredAssets.filter(url=>![...discoveryAssets,...Object.keys(wordStudyPins),'/','/css/layout.css','/js/home-commandments.js','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js'].includes(url))){
@@ -553,7 +554,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`failed shell-71 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
+test(`failed shell-72 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   try{
@@ -593,7 +594,7 @@ test(`failed shell-71 installation leaves installed shell ${previous.version} us
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`interrupted shell-71 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
+test(`interrupted shell-72 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
   test.setTimeout(60000);const server=await fixture();
   try{
     await installOld(page,server.origin);const before=await retainedState(page),requests=server.state.bibleRequests.slice();

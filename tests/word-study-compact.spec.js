@@ -30,6 +30,8 @@ async function open(page,passage,fullscreen,deferred=false){
     if(context.deferred)WordStudyProvider.lookup=()=>new Promise(resolve=>{window.finishCompactDefinition=resolve;});
   },{translationId,bookId,chapter,verse,deferred});
   await page.waitForFunction(()=>Boolean(window.WordStudyAlignment));
+  // This layout fixture covers the keyboard path when no mapping is available.
+  if(bookId==='john')await page.evaluate(()=>{WordStudyAlignment.lookup=()=>({status:'unavailable',groups:[]});});
   if(fullscreen)await toggleReaderFullscreen(page);
   const word=page.locator(`#readerContent [data-verse-number="${verse}"] [data-word-study-term]`).first();
   const excerpt=await word.evaluate(element=>element.closest('.reader-verse').getAttribute('data-verse-text'));

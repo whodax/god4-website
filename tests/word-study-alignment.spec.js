@@ -28,7 +28,8 @@ for(const [translationId,bookId,chapter,verse] of [['kjv','isaiah',53,5],['web',
   for(const [mode,width,height,fullscreen] of [['desktop',1280,844,false],['mobile',390,844,false],['fullscreen',390,844,true],['narrow',320,844,false],['narrow fullscreen',320,844,true],['desktop fullscreen',1280,844,true],['short',320,480,false]]){
     test(`${translationId} ${mode}: unavailable alignment preserves words without overlapping context`,async({page},info)=>{
       await page.setViewportSize({width,height});
-      const word=await open(page,translationId,bookId,chapter,verse);
+      let word=await open(page,translationId,bookId,chapter,verse);
+      if(bookId==='john')word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="the"]').first();
       if(fullscreen)await toggleReaderFullscreen(page);
       await word.press('Enter');
       await expect(page.locator('#wordStudyOriginalLanguage')).toBeVisible();
@@ -137,9 +138,9 @@ test('WEB Genesis 1:1 aligns God with the published Hebrew token in both directi
   await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(1);
   await expect(verse.locator('[data-aligned="true"]')).toHaveText('God');
 
-  await verse.locator('[data-word-study-term="created"]').press('Enter');
-  await expect(status).toContainText('Exact word alignment is unavailable');
-  await expect(verse.locator('[data-aligned="true"]')).toHaveCount(0);
+  await page.getByRole('button',{name:'Identify aligned phrase created'}).press('Enter');
+  await expect(status).toContainText('Verified phrase alignment');
+  await expect(verse.locator('[data-aligned="true"]')).toHaveText('created');
   await hebrew.press('Enter');
   await expect(verse.locator('[data-aligned="true"]')).toHaveText('God');
   await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('God');
@@ -243,8 +244,52 @@ test('KJV Moses receives the biblical name definition without an exact alignment
   await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
 });
 
+test('WEB John 1:1 highlights beginning and each occurrence of Word and God in Greek',async({page})=>{
+  await open(page,'web','john',1,1);
+  const verse=page.locator('#readerContent [data-verse-number="1"]');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  const select=(term,index=0)=>verse.locator('[data-word-study-term="'+term+'"]').nth(index);
+  await select('beginning').press('Enter');
+  await expect(matched).toHaveAttribute('data-original-language-token-index','1');
+  await matched.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G746');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('beginning');
+  for(const [term,index,token] of [['Word',0,4],['Word',1,7],['Word',2,16],['God',0,11],['God',1,13]]){
+    await page.getByRole('button',{name:'Identify aligned phrase '+term,exact:true}).nth(index).press('Enter');
+    await expect(matched).toHaveCount(1);
+    await expect(matched).toHaveAttribute('data-original-language-token-index',String(token));
+  }
+  await page.keyboard.press('Escape');
+  await select('the').press('Enter');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+  await expect(matched).toHaveCount(0);
+});
+
+test('WEB John 1:3 highlights both Greek words for nothing in either direction',async({page})=>{
+  await open(page,'web','john',1,3);
+  const nothing=page.locator('#readerContent [data-verse-number="3"] [data-word-study-term="nothing"]');
+  await nothing.press('Enter');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await expect(matched).toHaveText(['ουδε','εν']);
+  await matched.last().press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G1520');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('nothing');
+  await expect(matched).toHaveText(['ουδε','εν']);
+});
+
+test('WEB Genesis 1:1 highlights the Hebrew for heavens',async({page})=>{
+  await open(page,'web','genesis',1,1);
+  await page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="heavens"]').press('Enter');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await expect(matched).toHaveCount(1);
+  await expect(matched).toHaveAttribute('data-original-language-token-index','4');
+  await matched.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H8064');
+});
+
 test('lexical definitions never create inferred alignment',async({page})=>{
-  const word=await open(page,'web','john',1,1);
+  await open(page,'web','john',1,1);
+  const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="the"]').first();
   await page.evaluate(()=>{WordStudyProvider.lookup=()=>Promise.resolve({status:'available',definition:'λογος means word',relatedWords:['word']});});
   await word.press('Enter');
   await expect(page.locator('#wordStudyDefinition')).toHaveText('λογος means word');

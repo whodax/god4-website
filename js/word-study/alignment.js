@@ -90,8 +90,74 @@
       reviewedBy:'Codex, checked against the GOD4.us WEB verse and Genesis token shard'
     },
     groups:[
+      {english:[{start:0, end:16}], original:[0]},
       {english:[{start:18, end:21}], original:[2]},
-      {english:[{start:22, end:29}], original:[1]}
+      {english:[{start:22, end:29}], original:[1]},
+      {english:[{start:30, end:41}], original:[4]},
+      {english:[{start:42, end:45}], original:[5]},
+      {english:[{start:46, end:55}], original:[6]}
+    ]
+  },{
+    status:'verified',
+    translationId:'web',
+    bookId:'john',
+    chapter:1,
+    verse:1,
+    englishText:'In the beginning was the Word, and the Word was with God, and the Word was God.',
+    originalTokens:['εν','αρχη','ην','ο','λογος','και','ο','λογος','ην','προς','τον','θεον','και','θεος','ην','ο','λογος'].map(function(surface, tokenIndex){
+      return {bookId:'john', chapter:1, verse:1, tokenIndex:tokenIndex, surface:surface};
+    }),
+    source:{
+      title:'John 1:1 Greek interlinear',
+      reference:'https://biblehub.com/interlinear/john/1-1.htm',
+      revision:'Interlinear consulted 2026-11-25',
+      reviewedBy:'Codex, checked against the GOD4.us WEB verse and the Byzantine John token shard'
+    },
+    groups:[
+      {english:[{start:0, end:2}], original:[0]},
+      {english:[{start:7, end:16}], original:[1]},
+      {english:[{start:17, end:20}], original:[2]},
+      {english:[{start:21, end:24}], original:[3]},
+      {english:[{start:25, end:29}], original:[4]},
+      {english:[{start:31, end:34}], original:[5]},
+      {english:[{start:35, end:38}], original:[6]},
+      {english:[{start:39, end:43}], original:[7]},
+      {english:[{start:44, end:47}], original:[8]},
+      {english:[{start:48, end:52}], original:[9]},
+      {english:[{start:53, end:56}], original:[11]},
+      {english:[{start:58, end:61}], original:[12]},
+      {english:[{start:62, end:65}], original:[15]},
+      {english:[{start:66, end:70}], original:[16]},
+      {english:[{start:71, end:74}], original:[14]},
+      {english:[{start:75, end:78}], original:[13]}
+    ]
+  },{
+    status:'verified',
+    translationId:'web',
+    bookId:'john',
+    chapter:1,
+    verse:3,
+    englishText:'All things were made through him. Without him, nothing was made that has been made.',
+    originalTokens:['παντα','δι','αυτου','εγενετο','και','χωρις','αυτου','εγενετο','ουδε','εν','ο','γεγονεν'].map(function(surface, tokenIndex){
+      return {bookId:'john', chapter:1, verse:3, tokenIndex:tokenIndex, surface:surface};
+    }),
+    source:{
+      title:'John 1:3 Greek interlinear',
+      reference:'https://biblehub.com/interlinear/john/1-3.htm',
+      revision:'Interlinear consulted 2026-11-25',
+      reviewedBy:'Codex, checked against the GOD4.us WEB verse and the Byzantine John token shard'
+    },
+    groups:[
+      {english:[{start:0, end:10}], original:[0]},
+      {english:[{start:11, end:20}], original:[3]},
+      {english:[{start:21, end:28}], original:[1]},
+      {english:[{start:29, end:32}], original:[2]},
+      {english:[{start:34, end:41}], original:[5]},
+      {english:[{start:42, end:45}], original:[6]},
+      {english:[{start:47, end:54}], original:[8,9]},
+      {english:[{start:55, end:63}], original:[7]},
+      {english:[{start:64, end:68}], original:[10]},
+      {english:[{start:69, end:82}], original:[11]}
     ]
   },{
     status:'verified',
