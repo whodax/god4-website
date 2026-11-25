@@ -52,7 +52,7 @@ test('KJV Acts 8:37 opens Greek words and identifies the Textus Receptus source'
   const {tokens} = await study(page,'kjv','acts',8,37);
   await expect(tokens).toHaveCount(23);
   await expect(tokens.first()).toHaveText('ειπεν');
-  await expect(page.locator('.word-study-original-note')).toHaveText('Greek words from the Textus Receptus.');
+  await expect(page.locator('#wordStudyOriginalIntro .word-study-original-note')).toHaveText('Greek words from the Textus Receptus.');
   await tokens.first().press('Enter');
   await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G3004');
 });
