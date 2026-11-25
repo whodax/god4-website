@@ -2,6 +2,14 @@
 var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStudyProvider(){
   var staticDataBasePath = 'data/word-study/original-language/';
   var staticShardRequests = {};
+  // Robinson–Pierpont omits these readings. Use the parsed Textus Receptus
+  // only for editions that contain the corresponding wording at the reference.
+  var variantEditions = {
+    'acts-8-37':['kjv','ylt','webster','gnv','dra'],
+    'acts-15-34':['kjv','ylt','webster','gnv'],
+    'acts-24-7':['kjv','ylt','dby','webster','gnv','dra'],
+    'luke-17-36':['kjv','ylt','dby','webster','gnv']
+  };
   // Reader verses whose boundaries don't match an individual source verse.
   var unavailableVerses = {
     dra: {
@@ -114,11 +122,14 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
     return record && typeof record === 'object' && (record.strongsNumber === null || typeof record.strongsNumber === 'string') && typeof record.status === 'string' && typeof record.language === 'string' && optionalText(record.lemma) && optionalText(record.transliteration) && optionalText(record.pronunciation) && optionalText(record.partOfSpeech) && optionalText(record.definition) && typeof record.morphology === 'string' && typeof record.source === 'string' && typeof record.bookId === 'string' && Number.isInteger(record.chapter) && Number.isInteger(record.verse) && Number.isInteger(record.tokenIndex) && typeof record.surface === 'string';
   }
 
-  function loadStaticShard(context){
+  function loadStaticShard(context, translationId){
     if(!isVerseContext(context) || typeof fetch !== 'function') return Promise.resolve(null);
     var bookId = context.bookId.toLowerCase();
     if(!/^[a-z0-9-]+$/.test(bookId)) return Promise.resolve(null);
-    var url = staticDataBasePath + encodeURIComponent(bookId) + '/' + context.chapter + '.json';
+    var variant = [bookId,context.chapter,context.verse].join('-');
+    var url = (variantEditions[variant] || []).includes(translationId) ?
+      'data/word-study/original-language-variants/'+variant+'.json' :
+      staticDataBasePath + encodeURIComponent(bookId) + '/' + context.chapter + '.json';
     if(!staticShardRequests[url]){
       staticShardRequests[url] = fetch(url).then(function(response){
         if(!response.ok) throw new Error('Static original-language shard unavailable');
@@ -180,7 +191,7 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
       return Promise.resolve({ status: 'unavailable', records: [] });
     }
     var reference = resolveOriginalLanguageReference(context);
-    return loadStaticShard(reference).then(function(shard){
+    return loadStaticShard(reference,context.translationId).then(function(shard){
       var verseRecords = readVerse(shard,reference,context.translationId);
       return { status: verseRecords.length ? 'available' : 'unavailable', records: verseRecords };
     });

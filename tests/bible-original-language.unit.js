@@ -54,7 +54,7 @@ test('the compact corpus covers its published verses with valid lexical referenc
 
 test('the live provider expands compact Hebrew, Aramaic and Greek and respects verse boundaries', async () => {
   const fetch = async url => {
-    const filename = path.join(shards,...url.split('/').slice(-2));
+    const filename = path.join(shards,'..',...url.split('/').slice(2));
     return {ok:fs.existsSync(filename),json:async () => JSON.parse(fs.readFileSync(filename,'utf8'))};
   };
   const provider = vm.runInNewContext(
@@ -74,6 +74,17 @@ test('the live provider expands compact Hebrew, Aramaic and Greek and respects v
   assert.equal(after.records.length,5);
   assert.equal(after.records[0].strongsNumber,'H7891');
   assert.equal((await lookup('psalms',23,1,'dra')).status,'unavailable');
-  assert.equal((await lookup('acts',8,37)).status,'unavailable');
+  assert.equal((await lookup('acts',8,37,'web')).status,'unavailable');
+  assert.equal((await lookup('luke',17,36,'dra')).status,'unavailable');
+  assert.equal((await lookup('nehemiah',7,68)).status,'unavailable');
+  for(const [book,chapter,verse,count] of [['acts',8,37,23],['acts',15,34,6],['acts',24,7,13],['luke',17,36,12]]){
+    const result = await lookup(book,chapter,verse);
+    assert.equal(result.status,'available');
+    assert.equal(result.records.length,count);
+    assert.ok(result.records.every(record => record.source.startsWith('Textus Receptus,') && /^\p{Script=Greek}+$/u.test(record.surface)));
+  }
+  const philip = (await lookup('acts',8,37)).records;
+  assert.equal(philip.find(record => record.strongsNumber==='G1537').surface,'εξ');
+  assert.equal(philip.at(-1).surface,'χριστον');
   assert.equal((await lookup('acts',8,38)).status,'available');
 });

@@ -48,6 +48,15 @@ const passages = [
   ['luke', 10, 34, 'grc', 'G2022']
 ];
 
+test('KJV Acts 8:37 opens Greek words and identifies the Textus Receptus source',async({page})=>{
+  const {tokens} = await study(page,'kjv','acts',8,37);
+  await expect(tokens).toHaveCount(23);
+  await expect(tokens.first()).toHaveText('ειπεν');
+  await expect(page.locator('.word-study-original-note')).toHaveText('Greek words from the Textus Receptus.');
+  await tokens.first().press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('G3004');
+});
+
 for(const [book, chapter, verse, lang, strongs] of passages){
   test(book + ' opens the verse’s original-language study', async ({page}) => {
     await page.setViewportSize({width:390, height:844});
@@ -98,7 +107,7 @@ for(const [translation, chapter, verse, strongs] of [
   });
 }
 
-for(const [translation, book, chapter, verse] of [['kjv','luke',17,36], ['dra','matthew',17,14]]){
+for(const [translation, book, chapter, verse] of [['kjv','nehemiah',7,68], ['dra','matthew',17,14]]){
   test(translation + ' keeps dictionary lookup for ' + book + ' ' + chapter + ':' + verse, async ({page}) => {
     await study(page, translation, book, chapter, verse);
     const result = await page.evaluate(context => OriginalLanguageWordStudyProvider.lookupVerse(context),

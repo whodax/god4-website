@@ -222,7 +222,9 @@ var WordStudyController = (function createWordStudyController(){
     var rightToLeft = result.records.some(function(record){ return record.language === 'hebrew' || record.language === 'aramaic'; });
     var intro = document.getElementById('wordStudyOriginalIntro');
     intro.querySelector('.word-study-original-note').textContent = rightToLeft ?
-      'Original-language words in this verse. Read from right to left.' : 'Original-language words in this verse';
+      'Original-language words in this verse. Read from right to left.' :
+      result.records[0].source?.startsWith('Textus Receptus,') ?
+        'Greek words from the Textus Receptus.' : 'Original-language words in this verse';
     intro.hidden = false;
     view.originalTokens.setAttribute('dir', rightToLeft ? 'rtl' : 'ltr');
     result.records.forEach(function(record){

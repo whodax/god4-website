@@ -25,9 +25,14 @@ remain available when the source chapter has been loaded in the current page.
 The verified English-to-original highlighting catalog continues to apply at
 the reviewed word and phrase locations.
 
-The pinned editions omit Nehemiah 7:68, Luke 17:36, and Acts 8:37, 15:34, and
-24:7 at the corresponding Reader coordinates. English lookup remains available
-in these verses. Douay-Rheims Catholic-only texts and its differently numbered
+Robinson–Pierpont omits Luke 17:36 and Acts 8:37, 15:34, and 24:7. For English
+editions containing those readings, the Reader uses the corresponding Greek
+from [Maurice A. Robinson's parsed Textus Receptus](https://github.com/byztxt/greektext-textus-receptus)
+(public domain, revision `33af6e9361f8db0afd353714d05c75f44e5555b9`). The
+four alternate verse files record their source file checksums. The panel
+identifies the alternate edition. Nehemiah 7:68 has English lookup because
+the pinned Westminster source lacks that reading at the KJV reference.
+Douay-Rheims Catholic-only texts and its differently numbered
 Psalms, Esther, and Daniel use English Word Study. New chapters with divergent
 verse counts in Douay-Rheims or Geneva use English lookup until their individual
 source references are mapped.
@@ -38,5 +43,6 @@ the compact files with the three pinned source repositories in a local folder.
 
 ```powershell
 node tools/publish-bible-original-language.js 'C:/path/to/source-repositories' 'C:/path/to/fresh-output-folder'
+node tools/publish-bible-original-language.js 'C:/path/to/source-repositories' 'C:/path/to/variant-output' --variants 'C:/path/to/greektext-textus-receptus'
 node --test tests/bible-original-language.unit.js
 ```

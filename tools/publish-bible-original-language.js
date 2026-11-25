@@ -26,6 +26,14 @@ function readBlob(root, repository, revision, artifact){
   return execFileSync('git', ['-C',path.join(root,repository),'show',revision+':'+artifact], {maxBuffer:16*1024*1024});
 }
 
+function readGreekLexicon(root, config){
+  const artifact = config.source.lexicalSource;
+  const bytes = readBlob(root,'strongs',artifact.revision,artifact.artifact);
+  // The prior Romans manifest pins working-copy line endings. This pins the Git blob.
+  if(sha256(bytes) !== 'df928f01b37632f8af9f16289ce58d10b958014cb5dbd1e1ea715a8d311a0625') throw new Error('Greek lexicon checksum mismatch');
+  return parseStrongGreekXml(bytes.toString('utf8'));
+}
+
 function readVerseMap(text){
   const mappings = new Map();
   for(const [,source,target,type] of text.matchAll(/<verse wlc="([^"]+)" kjv="([^"]+)" type="([^"]+)"\/>/g)){
@@ -87,12 +95,8 @@ function publish(root, output){
   const hebrew = isaiahBookConfig();
   const greek = romansBookConfig();
   const hebrewLexical = hebrew.source.lexicalSource;
-  const greekLexical = greek.source.lexicalSource;
   const hebrewDictionary = readBlob(root,'strongs',hebrewLexical.revision,hebrewLexical.artifact);
-  const greekDictionary = readBlob(root,'strongs',greekLexical.revision,greekLexical.artifact);
-  // The prior Romans manifest pins working-copy line endings. This pins the Git blob.
-  if(sha256(greekDictionary) !== 'df928f01b37632f8af9f16289ce58d10b958014cb5dbd1e1ea715a8d311a0625') throw new Error('Greek lexicon checksum mismatch');
-  const lexicons = [parsePinnedLexicon(hebrewDictionary).entries,parseStrongGreekXml(greekDictionary.toString('utf8'))];
+  const lexicons = [parsePinnedLexicon(hebrewDictionary).entries,readGreekLexicon(root,greek)];
   const verseMapBytes = readBlob(root,'morphhb',hebrew.source.revision,'wlc/VerseMap.xml');
   const verseMap = readVerseMap(verseMapBytes.toString('utf8'));
   const manifest = {hebrewRevision:hebrew.source.revision, greekRevision:greek.source.revision,
@@ -136,10 +140,49 @@ function publish(root, output){
   return manifest;
 }
 
-if(require.main === module){
-  const [root,output] = process.argv.slice(2);
-  if(!root || !output) throw new Error('Usage: node tools/publish-bible-original-language.js <source-repositories> <fresh-output-directory>');
-  console.log(JSON.stringify(publish(root,output),null,2));
+function publishGreekVariants(root,trRepository,output){
+  if(fs.existsSync(output)) throw new Error('Output directory must be fresh: '+output);
+  const lexicon = readGreekLexicon(root,romansBookConfig());
+  const revision = '33af6e9361f8db0afd353714d05c75f44e5555b9';
+  const source = "Textus Receptus, Maurice A. Robinson's parsed edition, public domain. https://github.com/byztxt/greektext-textus-receptus";
+  const letters = Object.fromEntries(Array.from('abgdezhqiklmncoprstufxywv',(char,index) =>
+    [char, 'αβγδεζηθικλμνχοπρστυφξψως'[index]]));
+  const files = [
+    ['acts','parsed/AC.UTR',[[8,37,23],[15,34,6],[24,7,13]]],
+    ['luke','parsed/LU.UTR',[[17,36,12]]]
+  ];
+  fs.mkdirSync(output,{recursive:true});
+  for(const [bookId,artifact,references] of files){
+    const bytes = readBlob(path.dirname(trRepository),path.basename(trRepository),revision,artifact);
+    const text = bytes.toString('utf8').replace(/\r\n/g,'\n');
+    for(const [chapter,verse,count] of references){
+      const lines = text.match(new RegExp('^'+chapter+':'+verse+' [^\\n]*(?:\\n[ \\t][^\\n]*)*','m'));
+      if(!lines) throw new Error('Missing Textus Receptus verse '+bookId+' '+chapter+':'+verse);
+      const body = lines[0].replace(/^\d+:\d+ /,'').replace(/\|/g,'');
+      const tokenPattern = /([a-z]+)\s+(\d+)(?:\s+\d+)?\s+\{([A-Z][A-Z0-9-]+)\}/g;
+      const tokens = [...body.matchAll(tokenPattern)];
+      if(tokens.length !== count || body.replace(tokenPattern,'').trim()) throw new Error('Unexpected Textus Receptus token sequence');
+      const records = tokens.map(([,word,id,morphology],tokenIndex) => {
+        const strongsNumber = 'G'+Number(id);
+        const {lemma,transliteration,definition} = lexicon.get(strongsNumber);
+        const surface = Array.from(word,char=>letters[char]).join('');
+        if(surface.length !== word.length) throw new Error('Unsupported transliteration character');
+        return {status:'authoritative',strongsNumber,language:'greek',lemma,transliteration,pronunciation:null,partOfSpeech:null,
+          definition,morphology,source,bookId,chapter,verse,tokenIndex,surface};
+      });
+      const data = {revision,artifact,sourceSha256:sha256(bytes),records:normalizeRecords(records)};
+      fs.writeFileSync(path.join(output,bookId+'-'+chapter+'-'+verse+'.json'),JSON.stringify(data)+'\n');
+    }
+  }
 }
 
-module.exports = {publish};
+if(require.main === module){
+  const [root,output,variants,trRepository] = process.argv.slice(2);
+  if(!root || !output || variants && (variants !== '--variants' || !trRepository)){
+    throw new Error('Usage: node tools/publish-bible-original-language.js <source-repositories> <fresh-output-directory> [--variants <Textus Receptus repository>]');
+  }
+  if(variants) publishGreekVariants(root,trRepository,output);
+  else console.log(JSON.stringify(publish(root,output),null,2));
+}
+
+module.exports = {publish,publishGreekVariants};
