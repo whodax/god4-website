@@ -8,13 +8,14 @@ const {loadBibleLibrary, tokenizeVerseText, normalizeDictionaryTerm} = require('
 const catalog = require('../data/word-study/web-common-words.json');
 const root = path.resolve(__dirname, '..');
 
-function provider(){
+function provider({modernAvailable = true} = {}){
   const requests = [];
   const realm = vm.createContext({
     fetch:async url => {
       requests.push(url);
       const file = path.join(root,url.slice(1));
-      return {ok:fs.existsSync(file),json:async () => JSON.parse(fs.readFileSync(file,'utf8'))};
+      return {ok:(modernAvailable || !url.includes('/modern/')) && fs.existsSync(file),
+        json:async () => JSON.parse(fs.readFileSync(file,'utf8'))};
     }
   });
   for(const script of ['provider','sense-selector','dictionary-provider']){
@@ -71,7 +72,7 @@ test('different occurrences of a common word use the selected sense when the wor
   assert.match(noOffset.definition,/Correct.*side opposite left/);
 });
 
-test('a genuinely ambiguous choice stays labeled and word lookup outside WEB uses the dictionary',async () => {
+test('a genuinely ambiguous choice stays labeled and word lookup outside WEB uses the modern dictionary',async () => {
   const {lookup} = provider();
   const context = {translationId:'web',bookId:'john',chapter:1,verse:10,displayWord:'world',lookupTerm:'world',
     verseText:'He was in the world, and the world was made through him, and the world didn’t recognize him.'};
@@ -79,7 +80,22 @@ test('a genuinely ambiguous choice stays labeled and word lookup outside WEB use
   assert.match(result.source,/Context uncertain/);
   assert.match(result.definition,/earth.*human society/);
   const general = await lookup({...context,translationId:'kjv'});
-  assert.match(general.source,/Webster/);
+  assert.match(general.source,/Open English Wordnet/);
+});
+
+test('created uses the creation sense in the verse and a verb entry elsewhere',async () => {
+  const {lookup} = provider();
+  const context = {translationId:'web',bookId:'genesis',chapter:1,verse:1,displayWord:'created',lookupTerm:'created',
+    verseText:'In the beginning, God created the heavens and the earth.'};
+  const creation = await lookup(context);
+  assert.match(creation.definition,/Made or brought into existence/);
+  const general = await lookup({...context,chapter:5,verse:2,verseText:'He created them male and female.'});
+  assert.match(general.source,/Open English Wordnet/);
+  assert.doesNotMatch(general.definition,/riding master/);
+  assert.match(general.definition,/bring into existence/);
+  const historical = await provider({modernAvailable:false}).lookup({...context,chapter:5,verse:2});
+  assert.equal(historical.partOfSpeech,'verb');
+  assert.doesNotMatch(historical.definition,/riding master/);
 });
 
 test('reviewed phrases distinguish uses in the published WEB verses',async () => {

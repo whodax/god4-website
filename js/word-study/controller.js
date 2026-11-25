@@ -9,6 +9,19 @@ var WordStudyController = (function createWordStudyController(){
   var alignmentApi = fallbackAlignmentApi;
   var activeContext = null;
   var activeAlignment = {status:'unavailable', groups:[]};
+  var floatingClose;
+
+  function updateFloatingClose(){
+    if(!floatingClose) return;
+    var view = elements();
+    if(view.panel.hidden || !view.panel.getClientRects().length){
+      floatingClose.hidden = true;
+      return;
+    }
+    var bounds = view.close.getBoundingClientRect();
+    floatingClose.hidden = document.activeElement !== floatingClose &&
+      bounds.top >= readerVisibleTop() && bounds.bottom <= window.innerHeight;
+  }
 
   function elements(){
     return {
@@ -41,10 +54,17 @@ var WordStudyController = (function createWordStudyController(){
     var webster = state === 'available' && typeof result.source === 'string' && result.source.startsWith('Webster');
     view.related.textContent = state === 'available' && Array.isArray(result.relatedWords) && result.relatedWords.length ?
       (webster ? 'Thesaurus suggestions: ' : 'Related words: ') + result.relatedWords.join(', ') : '';
-    view.source.textContent = state === 'available' ? (webster ? 'English dictionary · Webster’s Unabridged' : result.source || '') : '';
+    view.source.textContent = state === 'available' ? (webster ? 'Historical English dictionary · Webster’s Unabridged' : result.source || '') : '';
+    if(state === 'available' && view.source.textContent.startsWith('Open English Wordnet')){
+      var attribution = document.createElement('a');
+      attribution.href = '/data/word-study/modern/NOTICE.txt';
+      attribution.textContent = view.source.textContent;
+      view.source.replaceChildren(attribution);
+    }
     view.status.textContent = state === 'loading' ? 'Looking up ' + context.displayWord + '.' : 'Studying ' + context.displayWord + ', ' + context.bookName + ' ' + context.chapter + ':' + context.verse + '.';
     var heading = document.getElementById('wordStudyHeading');
     if(heading && document.activeElement === activatingWord) heading.focus();
+    updateFloatingClose();
   }
 
   function clearOriginalLanguage(){
@@ -175,6 +195,10 @@ var WordStudyController = (function createWordStudyController(){
         var clearanceInset = closing ? 5 : 8;
         var top = readerVisibleTop() + clearanceInset;
         var bottom = window.innerHeight - clearanceInset;
+        if(floatingClose && !floatingClose.hidden){
+          var floating = floatingClose.getBoundingClientRect();
+          if(token.left < floating.right && token.right > floating.left) bottom = Math.min(bottom, floating.top - clearanceInset);
+        }
         var clearance = token.top < top ? token.top - top : token.bottom > bottom ? token.bottom - bottom : 0;
         if(clearance) surface.scrollBy({top:clearance<0?Math.floor(clearance):Math.ceil(clearance),behavior:'instant'});
       });
@@ -215,7 +239,12 @@ var WordStudyController = (function createWordStudyController(){
   function contextWithAlignment(word, context){
     alignmentApi = readyAlignmentApi;
     var englishWords = alignmentApi.wordSpans(word.closest('.reader-verse'));
-    return Object.assign({}, context, {alignmentTextVerified:englishWords.includes(word), englishStart:Number(word.getAttribute('data-word-study-start')), englishEnd:Number(word.getAttribute('data-word-study-end'))});
+    var verified = englishWords.includes(word);
+    return Object.assign({}, context, {
+      alignmentTextVerified:verified,
+      englishStart:verified ? Number(word.getAttribute('data-word-study-start')) : null,
+      englishEnd:verified ? Number(word.getAttribute('data-word-study-end')) : null
+    });
   }
 
   function openFromWord(word, context, isCurrent){
@@ -308,7 +337,19 @@ var WordStudyController = (function createWordStudyController(){
       if(button && originalTokens.contains(button)) keepStudyFocusVisible(button);
     });
     var closeButton = elements().close;
-    if(closeButton) closeButton.addEventListener('focus', function(){ keepStudyFocusVisible(closeButton); });
+    if(closeButton){
+      closeButton.addEventListener('focus', function(){ keepStudyFocusVisible(closeButton); });
+      floatingClose = document.createElement('button');
+      floatingClose.type = 'button';
+      floatingClose.className = 'word-study-floating-close';
+      floatingClose.textContent = 'Close Word Study';
+      floatingClose.setAttribute('aria-label', 'Close Word Study panel');
+      floatingClose.hidden = true;
+      floatingClose.addEventListener('click', function(){ closeButton.click(); });
+      elements().panel.appendChild(floatingClose);
+      window.addEventListener('scroll', updateFloatingClose, {capture:true, passive:true});
+      window.addEventListener('resize', updateFloatingClose);
+    }
     if(originalTokens) originalTokens.addEventListener('click', function(event){
       var button = event.target.closest('[data-original-language-token-index]');
       if(button && originalTokens.contains(button)) showOriginalDetails(button.__originalLanguageRecord, button);

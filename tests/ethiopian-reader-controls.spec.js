@@ -82,10 +82,32 @@ test('Ethiopian Fullscreen retains the controls and the footer returns to the pa
   await dialog.getByRole('button',{name:'Top',exact:true}).click();
   await expect.poll(() => pane.evaluate(el => el.scrollTop)).toBe(0);
   await expect(dialog.getByRole('link',{name:'Home',exact:true})).toHaveAttribute('href','/');
+  await dialog.getByRole('button',{name:'Next chapter'}).click();
+  await expect(dialog.locator('#eth-heading')).toHaveText(/Psalms 120/);
+  await dialog.getByRole('button',{name:'Previous chapter'}).click();
+  await expect(dialog.locator('#eth-heading')).toHaveText(/Psalms 119/);
   await page.keyboard.press('Escape');
   await expect(dialog).not.toBeVisible();
   await expect(page.getByRole('button',{name:'Fullscreen',exact:true})).toBeFocused();
   await expect(page.getByRole('banner').getByRole('link',{name:'Home',exact:true})).toHaveAttribute('href','/');
+});
+
+test('chapter-end arrows move in both directions and stop at book boundaries', async ({page}) => {
+  await page.goto('/guides/ethiopian-readings.html?book=genesis&chapter=1');
+  const pane=page.locator('.eth-reading-passage');
+  const previous=pane.getByRole('button',{name:'Previous chapter'});
+  const next=pane.getByRole('button',{name:'Next chapter'});
+  await expect(pane.getByRole('heading',{name:/Genesis 1/})).toBeVisible();
+  await expect(previous).toBeDisabled();
+  await next.click();
+  await expect(pane.getByRole('heading',{name:/Genesis 2/})).toBeInViewport();
+  await expect(pane).toBeFocused();
+  await previous.click();
+  await expect(pane.getByRole('heading',{name:/Genesis 1/})).toBeInViewport();
+  await expect(previous).toBeDisabled();
+  await page.goto('/guides/ethiopian-readings.html?book=genesis&chapter=50');
+  await expect(pane.getByRole('heading',{name:/Genesis 50/})).toBeVisible();
+  await expect(next).toBeDisabled();
 });
 
 test('Book, Chapter and Verse pickers use the page theme and return focus', async ({page}) => {

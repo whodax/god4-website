@@ -161,6 +161,18 @@ test('a cold Word Study selection uses alignment that arrives before the Hebrew 
   await expect(god).toHaveAttribute('data-aligned','true');
 });
 
+test('WEB Genesis 1:1 explains created and links the Hebrew verb',async({page})=>{
+  await open(page,'web','genesis',1,1);
+  const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="created"]');
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('Made or brought into existence. In this verse, God made the heavens and the earth.');
+  await expect(page.locator('#wordStudyPartOfSpeech')).toHaveText('verb');
+  const hebrew=page.locator('#wordStudyOriginalTokens [data-original-language-token-index="1"]');
+  await expect(hebrew).toHaveAttribute('data-aligned','true');
+  await hebrew.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H1254');
+});
+
 test('WEB Mark 2:7 shows God’s verified Greek match and biblical sense',async({page})=>{
   await open(page,'web','mark',2,7);
   const word=page.locator('#readerContent [data-verse-number="7"] [data-word-study-term="god"]');
@@ -274,7 +286,7 @@ for(const [translationId,bookId,chapter,verse] of [['kjv','genesis',1,1],['kjv',
     await word.press('Enter');
     await expect(page.locator('#wordStudyPanel')).not.toHaveAttribute('data-word-study-state','loading');
     await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
-    if(bookId==='genesis')await expect(page.locator('#wordStudyDefinition')).toHaveText('The act of doing that which begins anything; commencement of an action, state, or space of time; entrance into being or upon a course; the first act, effort, or state of a succession of acts or states. In the beginning God created the heaven and the earth. Gen. i. 1.');
+    if(bookId==='genesis')await expect(page.locator('#wordStudyDefinition')).toHaveText('The start of something.');
     await expect(page.locator('script[src="/js/word-study/alignment.js"]')).toHaveCount(1);
     await page.waitForTimeout(3100);
     await expect(page.locator('script[src="/js/word-study/alignment.js"]')).toHaveCount(0);

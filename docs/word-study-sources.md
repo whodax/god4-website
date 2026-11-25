@@ -34,6 +34,23 @@ The rules use nearby words and checked offsets where available. They do not
 claim to establish a meaning for every occurrence or align every English token
 with Hebrew, Aramaic, or Greek.
 
+## Modern English dictionary
+
+The Reader consults [Open English Wordnet 2025](https://en-word.net/downloads)
+for selected words outside the reviewed Bible usage entries, across the nine
+English editions. Its coverage includes 15,617 distinct normalized Reader
+forms through exact matches or stemming candidates. The importer keeps the
+first gloss per sense and the original sense identifiers. The Reader labels
+uncertain choices and shows up to three possibilities. Verb inflection
+fallbacks now require a verb sense, including in the historical dictionary.
+Words missing from the modern source can still use Webster's Unabridged or
+local study notes.
+
+The release archive SHA-256 and license are recorded in the
+[Open English Wordnet notice](../data/word-study/modern/NOTICE.txt).
+Run `node tools/import-word-study-wordnet.js <extracted-json-directory> <output-directory>`
+to reproduce the alphabetical shards. Shards load on demand.
+
 ## Conservative contextual sense selection
 
 The Word Study panel identifies Webster as an English dictionary and labels

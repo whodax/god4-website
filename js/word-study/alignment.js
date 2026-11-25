@@ -89,7 +89,10 @@
       revision:'Interlinear consulted 2026-11-24',
       reviewedBy:'Codex, checked against the GOD4.us WEB verse and Genesis token shard'
     },
-    groups:[{english:[{start:18, end:21}], original:[2]}]
+    groups:[
+      {english:[{start:18, end:21}], original:[2]},
+      {english:[{start:22, end:29}], original:[1]}
+    ]
   },{
     status:'verified',
     translationId:'web',

@@ -47,6 +47,28 @@ async function openResult(page, state){
   return word;
 }
 
+for(const [width, fullscreen] of [[1280,false],[390,false],[390,true]]){
+  test('floating Word Study Close works after scrolling at '+width+' fullscreen='+fullscreen,async({page})=>{
+    await page.setViewportSize({width,height:844});
+    await page.goto('/');
+    await page.evaluate(async()=>{
+      await initializeBibleExperience();
+      await navigateReaderToPassage('john',1);
+      await WordStudyLoader.ensure();
+    });
+    if(fullscreen)await toggleReaderFullscreen(page);
+    const word=page.locator('#readerContent [data-word-study-term="beginning"]').first();
+    await word.press('Enter');
+    await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
+    await scrollPanel(page,'within');
+    const close=page.getByRole('button',{name:'Close Word Study panel',exact:true});
+    await expect(close).toBeInViewport();
+    await close.click();
+    await expect(page.locator('#wordStudyPanel')).toBeHidden();
+    await expect(word).toBeFocused();
+  });
+}
+
 for(const [name,width,fullscreen] of [['desktop',1280,false],['mobile',390,false],['reflow',320,false],['fullscreen desktop',1280,true],['fullscreen mobile',390,true],['fullscreen reflow',320,true]]){
   test.describe(name,()=>{
     test.use({viewport:{width,height:width===1280?900:844},hasTouch:width!==1280,contextOptions:{reducedMotion:'reduce'}});

@@ -2394,8 +2394,7 @@ test('Word Study opens from a Reader word with exact local verse context and res
   await expect(panel).toBeVisible();
   await expect(page.locator('#wordStudyWord')).toHaveText('beginning');
   await expect(page.locator('#wordStudyReference')).toHaveText('John 1:1');
-  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
-  await expect(page.locator('#wordStudyRelated')).toContainText('origin');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The start of something.');
   expect(await page.locator('#readerContent [data-verse-number="1"]').evaluate((verse) => Array.from(verse.childNodes).filter((node) => node.nodeType === Node.TEXT_NODE || (node.nodeType === Node.ELEMENT_NODE && node.hasAttribute('data-word-study-term'))).map((node) => node.textContent).join('').trim())).toBe(await page.evaluate(() => BibleData.getVerse('demo-local', 'john', 1, 1).text));
   await page.locator('#wordStudyClose').click();
   await expect(panel).toBeHidden();
@@ -2560,7 +2559,7 @@ test('Word Study keeps English content when original-language data is unsupporte
   await page.evaluate(() => handleVoiceCommand('open John 1'));
   await expect(page.locator('#readerContent')).toContainText('John 1');
   await page.getByRole('button', { name: 'Study word beginning' }).first().click();
-  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The start of something.');
   await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
 });
 
@@ -2644,6 +2643,7 @@ test('Word Study importer does not mistake Webster etymology prose for headwords
 });
 test('Word Study loads static Webster and Moby shard data once per shard', async ({ page }) => {
   let shardRequests = 0;
+  await page.route('**/data/word-study/modern/b.json', route => route.fulfill({status:404}));
   await page.route('**/data/word-study/be.json', async (route) => {
     shardRequests++;
     await route.fulfill({ path: path.resolve(__dirname, '..', 'data/word-study/be.json'), contentType: 'application/json' });
@@ -2833,6 +2833,7 @@ test('Word Study dictionary provider resolves adaptive shards and caches concurr
 
 test('Word Study falls back safely when a static shard is missing or malformed', async ({ page }) => {
   await page.route('**/data/word-study/web-common-words.json', route => route.fulfill({status:404}));
+  await page.route('**/data/word-study/modern/*.json', route => route.fulfill({status:404}));
   await page.route('**/data/word-study/li.json', (route) => route.fulfill({ status: 404 }));
   await page.route('**/data/word-study/be.json', (route) => route.fulfill({ contentType: 'application/json', body: '{bad json' }));
   await page.goto('/');
@@ -2848,7 +2849,7 @@ test('Word Study supports keyboard activation, unavailable words, Escape close, 
   const knownWord = page.getByRole('button', { name: 'Study word beginning' }).first();
   await knownWord.focus();
   await knownWord.press('Enter');
-  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The start of something.');
   await page.locator('#wordStudyHeading').press('Escape');
   await expect(page.locator('#wordStudyPanel')).toBeHidden();
   const unknownWord = page.getByRole('button', { name: 'Study word Nathanael' }).first();
@@ -2874,7 +2875,7 @@ test('Word Study moves focus into every result state and restores it after Escap
   const unknownWord = page.getByRole('button', { name: 'Study word Nathanael' }).first();
 
   await knownWord.click();
-  await expect(page.locator('#wordStudyDefinition')).toContainText('The act of doing that which begins anything');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The start of something.');
   await expect(heading).toBeFocused();
   await close.focus();
   await close.press('Escape');
