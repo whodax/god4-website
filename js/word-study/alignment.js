@@ -235,5 +235,48 @@
       {english:[{start:135, end:141}], original:[17,18]}
     ]
   }];
-  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookup:createProvider(reviewedCatalog).lookup};
+  var crosswireSource = {
+    title:'CrossWire KJV with Greek word tags',
+    reference:'https://gitlab.com/crosswire-bible-society/kjv',
+    revision:'d490be7e34762deb2c76cb2c1306d4808e27890d',
+    reviewedBy:'GOD4.us reproducible CrossWire alignment validation'
+  };
+  var chapterRequests = new Map();
+  function lookupChapter(context, records){
+    if(context.translationId !== 'kjv' || typeof BibleCanon === 'undefined' ||
+      BibleCanon.book(context.bookId)?.testament !== 'new' || !records.length ||
+      !Number.isInteger(context.chapter) || context.chapter < 1) return null;
+    var url = '/data/word-study/alignment/kjv/' + context.bookId + '/' + context.chapter + '.json';
+    if(!chapterRequests.has(url)){
+      var abort = new AbortController();
+      var timer = setTimeout(function(){ abort.abort(); }, 3000);
+      var request = fetch(url,{signal:abort.signal}).then(function(response){
+        if(!response.ok) throw new Error('Alignment chapter unavailable');
+        return response.json();
+      }).catch(function(){
+        chapterRequests.delete(url);
+        return null;
+      }).finally(function(){ clearTimeout(timer); });
+      chapterRequests.set(url,request);
+      if(chapterRequests.size > 16) chapterRequests.delete(chapterRequests.keys().next().value);
+    }
+    return chapterRequests.get(url).then(function(chapter){
+      var row = chapter?.[context.verse];
+      if(!Array.isArray(row) || row[0] !== context.verseText || !Array.isArray(row[1]) ||
+        row[1].length !== records.length || !Array.isArray(row[2])) return null;
+      if(!records.every(function(record,index){
+        var token = row[1][index];
+        return record.bookId === context.bookId && record.chapter === context.chapter && record.verse === context.verse &&
+          record.language === 'greek' && record.tokenIndex === index && Array.isArray(token) &&
+          record.surface === token[0] && record.strongsNumber === token[1] && record.morphology === token[2];
+      })) return null;
+      var entry = {status:'verified',source:crosswireSource,translationId:context.translationId,bookId:context.bookId,
+        chapter:context.chapter,verse:context.verse,englishText:row[0],originalTokens:records,
+        groups:row[2].map(function(group){
+          return {english:group[0].map(function(span){return {start:span[0],end:span[1]};}),original:group[1]};
+        })};
+      return valid(entry,context,records) ? {status:'available',groups:entry.groups,source:crosswireSource} : null;
+    }).catch(function(){ return null; });
+  }
+  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookup:createProvider(reviewedCatalog).lookup};
 }));

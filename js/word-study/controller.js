@@ -214,7 +214,7 @@ var WordStudyController = (function createWordStudyController(){
     });
   }
 
-  function renderOriginalLanguage(result){
+  function renderOriginalLanguage(result, verifiedAlignment){
     var view = elements();
     clearOriginalLanguage();
     if(!view.original || !result || result.status !== 'available' || !Array.isArray(result.records) || !result.records.length) return;
@@ -243,7 +243,8 @@ var WordStudyController = (function createWordStudyController(){
     // A cold open can load alignment while the verse's Hebrew or Greek data is in flight.
     // Use it for the first rendering of these tokens, without revisiting a rendered panel.
     if(alignmentApi !== readyAlignmentApi) activeContext = contextWithAlignment(activatingWord, activeContext);
-    activeAlignment = activeContext.alignmentTextVerified ? alignmentApi.lookup(activeContext, result.records) : {status:'unavailable',groups:[]};
+    activeAlignment = activeContext.alignmentTextVerified ?
+      (verifiedAlignment || alignmentApi.lookup(activeContext, result.records)) : {status:'unavailable',groups:[]};
     renderEnglishVerse();
   }
 
@@ -265,21 +266,42 @@ var WordStudyController = (function createWordStudyController(){
     activeContext = context;
     activeAlignment = {status:'unavailable', groups:[]};
     var activeRequest = ++requestId;
+    var contextualDefinition = false;
+    function current(){ return activeRequest === requestId && word.isConnected && (!isCurrent || isCurrent()); }
     clearOriginalLanguage();
     setPanelState('loading', context, {});
     renderEnglishVerse();
     WordStudyProvider.lookup(context).then(function(result){
-      if(activeRequest !== requestId || !word.isConnected || (isCurrent && !isCurrent())) return;
+      if(!current() || contextualDefinition) return;
       setPanelState(result.status, context, result);
     }).catch(function(){
-      if(activeRequest !== requestId || !word.isConnected || (isCurrent && !isCurrent())) return;
+      if(!current() || contextualDefinition) return;
       setPanelState('unavailable', context, { message: 'Definition not available yet.' });
     });
     if(typeof OriginalLanguageWordStudyProvider !== 'undefined' && typeof OriginalLanguageWordStudyProvider.lookupVerse === 'function'){
-      OriginalLanguageWordStudyProvider.lookupVerse(context).then(function(result){
-        if(activeRequest === requestId && word.isConnected && (!isCurrent || isCurrent())) renderOriginalLanguage(result);
+      OriginalLanguageWordStudyProvider.lookupVerse(context).then(async function(result){
+        if(!current()) return;
+        if(alignmentApi !== readyAlignmentApi) activeContext = contextWithAlignment(word, activeContext);
+        var study = activeContext;
+        var verified = study.alignmentTextVerified && alignmentApi.lookup(study, result.records);
+        if(study.alignmentTextVerified && verified?.status !== 'available' && alignmentApi.lookupChapter){
+          var pending = alignmentApi.lookupChapter(study, result.records);
+          if(pending) verified = await pending;
+        }
+        if(!current()) return;
+        renderOriginalLanguage(result, verified);
+        if(study.displayWord !== 'Christ' || activeAlignment.status !== 'available') return;
+        var groups = alignmentApi.matchingGroups(activeAlignment,{start:study.englishStart,end:study.englishEnd});
+        var linked = new Set(groups.flatMap(function(group){return group.original;}));
+        var christ = result.records.find(function(record){
+          return linked.has(record.tokenIndex) && record.strongsNumber === 'G5547' && /^N-/.test(record.morphology);
+        });
+        if(christ){
+          contextualDefinition = true;
+          setPanelState('available',study,{partOfSpeech:'noun',definition:'The Anointed One, the Messiah.',source:'Scripture context · Greek Christos (G5547)'});
+        }
       }).catch(function(){
-        if(activeRequest === requestId && word.isConnected && (!isCurrent || isCurrent())) clearOriginalLanguage();
+        if(current()) clearOriginalLanguage();
       });
     }
   }

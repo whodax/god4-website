@@ -185,12 +185,12 @@ test.describe('cached menu',()=>{
     await choose(page,'reader');await expect(page.locator('#readerContent')).toContainText('John 1');
     await choose(page,'saved');await expect(page.locator('#tray')).toHaveAttribute('aria-hidden','false');await expect(page.locator('#savedCount')).toHaveText('1');
     expect(await state(page)).toEqual(before);
-    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-75')).keys())].length)).toBe(52);
+    expect(await page.evaluate(async()=>[...(await(await caches.open('god4-shell-compact-reader-76')).keys())].length)).toBe(52);
   });
 });
 
 test('Shell 64 preserves the shell asset count and startup budget',async()=>{
-  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-75'");
+  const sw=fs.readFileSync('sw.js','utf8');expect(sw).toContain("'compact-reader-76'");
   expect((sw.split('const SHELL_ASSETS = [')[1].split('];')[0].match(/(?:HOME_URL|OFFLINE_URL|'[^']+')/g)||[]).length).toBe(52);
   const scripts=[...fs.readFileSync('index.html','utf8').matchAll(/<script[^>]+src="([^"]+)/g)].map(m=>m[1].split('?')[0].replace(/^\//,''));
   const bytes=scripts.reduce((n,file)=>n+Buffer.byteLength(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n')),0);

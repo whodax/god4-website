@@ -58,6 +58,28 @@ test('the WEB catalog serves all 500 most frequent normalized Reader words',asyn
   assert.deepEqual(requests,['/data/word-study/web-common-words.json']);
 });
 
+test('the Reader resolves all audited curly contractions without changing Scripture',async () => {
+  const realm = vm.createContext({window:{},document:{readyState:'loading',addEventListener(){}}});
+  vm.runInContext(fs.readFileSync(path.join(root,'js/word-study/loader.js'),'utf8'),realm);
+  const normalize = realm.WordStudyLoader.normalizeLookupTerm;
+  const affected = {"don't":1369,"didn't":863,"doesn't":326,"isn't":166};
+  const counted = Object.fromEntries(Object.keys(affected).map(term=>[term,0]));
+  const bible = loadBibleLibrary('web.js','webLibrary');
+  const {lookup} = provider();
+  for(const [bookId,book] of Object.entries(bible)) for(const [chapter,content] of Object.entries(book)){
+    if(!Array.isArray(content.verses)) continue;
+    for(const [index,verseText] of content.verses.entries()) for(const displayWord of tokenizeVerseText(verseText)){
+      const lookupTerm=normalize(displayWord);
+      if(!displayWord.includes('’') || !Object.hasOwn(affected,lookupTerm)) continue;
+      const result=await lookup({translationId:'web',bookId,chapter:Number(chapter),verse:index+1,verseText,displayWord,lookupTerm});
+      assert.equal(result.status,'available',bookId+' '+chapter+':'+(index+1));
+      assert.equal(result.word,displayWord);
+      counted[lookupTerm]++;
+    }
+  }
+  assert.deepEqual(counted,affected);
+});
+
 test('different occurrences of a common word use the selected sense when the word offset is known',async () => {
   const {lookup} = provider();
   const verseText = 'He placed his right hand on the child and did what was right.';

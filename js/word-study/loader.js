@@ -12,7 +12,7 @@ var WordStudyLoader = (function(){
   ];
   // Equivalent to the standalone provider contract; shared with it after readiness.
   function normalizeLookupTerm(value){
-    return String(value || '').toLowerCase().replace(/[^a-z0-9']/g, '').replace(/^'+|'+$/g, '');
+    return String(value || '').toLowerCase().replace(/[‘’]/g, "'").replace(/[^a-z0-9']/g, '').replace(/^'+|'+$/g, '');
   }
   function valid(dependency){
     var api = window[dependency[1]];

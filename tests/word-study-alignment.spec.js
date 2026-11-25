@@ -284,6 +284,8 @@ test('KJV Acts 8:37 visibly highlights Christ and each word of a Greek phrase',a
   const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
   await christ.press('Enter');
   await expect(matched).toHaveText('χριστον');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The Anointed One, the Messiah.');
+  await expect(page.locator('#wordStudySource')).toContainText('Scripture context');
   await expect(matched).toHaveCSS('color','rgb(23, 36, 58)');
   await expect(matched).toHaveCSS('outline-style','solid');
   expect(await matched.evaluate(element=>getComputedStyle(element).backgroundColor))
@@ -295,6 +297,54 @@ test('KJV Acts 8:37 visibly highlights Christ and each word of a Greek phrase',a
   await matched.last().press('Enter');
   await expect(matched).toHaveCount(4);
   await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText('with all thine heart');
+});
+
+for(const [book,chapter,verse,word,expected] of [
+  ['matthew',5,3,'poor',['πτωχοι']],
+  ['john',1,1,'word',['ο','λογος']],
+  ['acts',8,38,'chariot',['το','αρμα']],
+  ['romans',8,28,'together',['συνεργει']],
+  ['hebrews',11,1,'faith',['πιστις']],
+  ['revelation',22,20,'amen',['αμην']]
+]){
+  test('CrossWire chapter alignment opens '+book+' '+chapter+':'+verse,async({page})=>{
+    const path='/data/word-study/alignment/kjv/'+book+'/'+chapter+'.json';
+    const requests=[];
+    page.on('request',request=>{if(new URL(request.url()).pathname===path) requests.push(request);});
+    await open(page,'kjv',book,chapter,verse);
+    expect(requests).toHaveLength(0);
+    const selected=page.locator('#readerContent [data-verse-number="'+verse+'"] [data-word-study-term="'+word+'"]').first();
+    await selected.press('Enter');
+    await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveText(expected);
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('CrossWire KJV');
+    await page.keyboard.press('Escape');
+    await expect(selected).toBeFocused();
+    expect(requests).toHaveLength(1);
+  });
+}
+
+test('a missing CrossWire chapter keeps Word Study usable',async({page})=>{
+  await page.route('**/data/word-study/alignment/kjv/john/1.json',route=>route.abort());
+  const word=await open(page,'kjv','john',1,1);
+  await word.press('Enter');
+  await expect(page.locator('#wordStudyOriginalTokens button').first()).toBeVisible();
+  await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveCount(0);
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+  await page.keyboard.press('Escape');
+  await expect(word).toBeFocused();
+});
+
+test('a loaded CrossWire chapter can align another word after going offline',async({page,context})=>{
+  await open(page,'kjv','john',1,1);
+  const verse=page.locator('#readerContent [data-verse-number="1"]');
+  await verse.locator('[data-word-study-term="beginning"]').press('Enter');
+  await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('CrossWire KJV');
+  await page.keyboard.press('Escape');
+  await context.setOffline(true);
+  try{
+    await verse.locator('[data-word-study-term="word"]').first().press('Enter');
+    await expect(page.locator('#wordStudyOriginalTokens [data-aligned="true"]')).toHaveText(['ο','λογος']);
+  }finally{await context.setOffline(false);}
 });
 
 test('WEB Genesis 1:1 highlights the Hebrew for heavens',async({page})=>{

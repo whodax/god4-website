@@ -24,7 +24,7 @@ const preview67='36a83c644db7a510f634d692866968a431837a78';
 const preview68='7014c91849364dae244b89b44dd0a515fa1c98d1';
 const preview69='885831216ca3e85bf5426ec5940e1a9105a3afd4';
 const preview70='558845a0d9f12a61d8911b4db47cb363a4ad281e';
-const currentVersion=75;
+const currentVersion=76;
 const production55='90a13c28afc64526bf27b6c2bb7021dd516d6493';
 const discoveryAssets=["/js/home-discovery.js","/js/home-discovery-catalog.json"];
 const discoveryPins={"/":"0dbb79fc2df882e469eb86e752cf7953e85078aa60e615362603597b5596fd15","/js/app.js":"498e0a2f3ce4b5c735d4ba3ea43bfb6a70709181849c7627067c339d4b31eab2","/js/home-discovery.js":"d123dff0bc63e160beb2f512dcb05341931abb0241233eebd77d864cb460eee3","/js/home-discovery-catalog.json":"5bb67690dbf8e1ff44af50617d0d9f30ae30aa5e78f95bdd024952c632b4555a","/css/components.css":"401ba5d477482de2fd3647da880bd9a266fc3f7dc4d134f93f9eae95e3ccca95"};
@@ -70,7 +70,8 @@ for(const previous of [
   {version:71,commit:'33768054b1e7069c21b3d61d4490953ae49045d3',assets:52},
   {version:72,commit:'8260ae6eb38aefd1376213b95cd0824ac8b6589a',assets:52},
   {version:73,commit:'d660b2cb36300ff4a4c6e4e6d04f9a21c573f7e8',assets:52},
-  {version:74,commit:'2a763101b9a8405c2c27f3a760f855ac3854c438',assets:52}
+  {version:74,commit:'2a763101b9a8405c2c27f3a760f855ac3854c438',assets:52},
+  {version:75,commit:'08ae6aeded6182ca140165c8f17fd0a35d317e0b',assets:52}
 ])test.describe(`installed cache ${previous.version}`,()=>{
 const baseline=previous.commit;
 const oldCache='god4-shell-compact-reader-'+previous.version,newCache='god4-shell-compact-reader-'+currentVersion;
@@ -99,9 +100,9 @@ const saved=[{ref:'John 1:1',text:'Installed-user saved verse',location:{transla
 test.use({viewport:{width:320,height:844},hasTouch:true,serviceWorkers:'allow'});
 if(previous.version>=52)test.use({userAgent:'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'});
 
-test('shell 75 preserves activation, Bible caches and the exact required assets',()=>{
+test('shell 76 preserves activation, Bible caches and the exact required assets',()=>{
   const worker=fs.readFileSync(path.join(root,'sw.js'),'utf8');
-  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-75'","'compact-reader-"+previous.version+"'");
+  let normalized=worker.replace(/\r\n/g,'\n').replace("'compact-reader-76'","'compact-reader-"+previous.version+"'");
   if(previous.version<56)for(const asset of discoveryAssets)normalized=normalized.replace("  '"+asset+"',\n",'');
   if(previous.version<55)normalized=normalized.replace("  '/js/home-commandments.js',\n",'');
   if(previous.version<48)normalized=normalized.replace("  '/css/theme.css',\n",'').replace("  '/js/theme.js',\n",'');
@@ -115,12 +116,14 @@ test('shell 75 preserves activation, Bible caches and the exact required assets'
   // Pin only the changed and added assets against the production Shell 54 baseline.
   const homepageAssets={"/":"4fbdc1c0ef304fa50dad52b62542db19738e7541b69f2915c5c074762baca31c","/css/layout.css":"3580a30382bd0a452edaeea54fb1c33fb0309e24648deb025274c87442103fae","/js/app.js":"f1f4035a743d60fcebd93693372854cc74ef1c235c0e3ab5fd85ed65b21e09df","/js/home-commandments.js":"1e389624a305ee3fec1dbb97dc52dccce758117501bd8723b8f9a23dd8f385ad"};
   const wordStudyPins={
+    '/js/word-study/loader.js':'fd9c157bcd771c2787581302febd4e26eb1dfb00f4bed401e433094643ef362e',
+    '/js/word-study/provider.js':'4b3fdfa5fdd86ef515e5b48b72d186931841ab911beba8d61d1c98859ff7c506',
     '/':'2b4f020a910a66406fa04cdfd3d8abe6200068b599107d3e33de7d0d61e396e6',
     '/css/companion.css':'afe7794ac43078b655794831a0571918a0b96731ab3da5930c8204d9fdc4c986',
-    [alignmentPath]:'97e5ef0fe4563d3794838b72e716f0ef5d7d2f2f56c40b1e0ffc1d9002e1e1d6',
+    [alignmentPath]:'527d89963d3d44bfc35df7f4df16c20f948ca3b0f36c231b4dee5efc3067b298',
     [dictionaryPath]:'d2370962a5c5d5f8785fc0d9d4c9f717a639b5a4aa4646204ecc66f0470995ef',
     [lexiconProviderPath]:'26442c26186010cad9ea56aaecd624c09b016c9d6f41556d3e630ea4f02c150e',
-    '/js/word-study/controller.js':'c991912f9524fa7a5b92ecdb3631681d19e93ea4bb464d07ee499ba59413fbac'
+    '/js/word-study/controller.js':'30b4312b585ad6b89f33afe374682be58091db3622e956ff61653113173d10b6'
   };
   for(const asset of requiredAssets){
     const body=fs.readFileSync(path.join(root,fileFor(asset)));
@@ -133,7 +136,7 @@ test('shell 75 preserves activation, Bible caches and the exact required assets'
       .toBe(digest(/\.(?:png|woff2)$/.test(fileFor(asset))?prior54(asset):Buffer.from(normalizeSource(prior54(asset)))));
   }
   function prior54(asset){return execFileSync('git',['show',production54+':'+fileFor(asset)],{cwd:root});}
-  for(const asset of previous.version===74?[alignmentPath,'/css/companion.css']:previous.version>=72?[lexiconProviderPath,'/js/word-study/controller.js']:previous.version===71?[alignmentPath]:previous.version===70?['/','/js/word-study/controller.js','/css/companion.css']:previous.version===69?[alignmentPath,dictionaryPath,'/js/word-study/controller.js','/css/companion.css']:previous.version===68?[alignmentPath,dictionaryPath,'/js/word-study/controller.js']:previous.version===67?['/js/word-study/controller.js']:previous.version>=65?[alignmentPath,dictionaryPath]:previous.version===64?Object.keys(wordStudyPins):previous.version===63?['/css/layout.css']:previous.version>=59?['/']:previous.version===58?['/','/css/components.css','/js/app.js']:previous.version===56?Object.keys(narrationPins):previous.version===55?['/','/js/app.js']:previous.version===54?['/','/css/layout.css','/js/app.js']:previous.version===53?['/','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js','/js/word-study/controller.js']:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
+  for(const asset of previous.version===75?[alignmentPath,'/js/word-study/controller.js']:previous.version===74?[alignmentPath,'/css/companion.css']:previous.version>=72?[lexiconProviderPath,'/js/word-study/controller.js']:previous.version===71?[alignmentPath]:previous.version===70?['/','/js/word-study/controller.js','/css/companion.css']:previous.version===69?[alignmentPath,dictionaryPath,'/js/word-study/controller.js','/css/companion.css']:previous.version===68?[alignmentPath,dictionaryPath,'/js/word-study/controller.js']:previous.version===67?['/js/word-study/controller.js']:previous.version>=65?[alignmentPath,dictionaryPath]:previous.version===64?Object.keys(wordStudyPins):previous.version===63?['/css/layout.css']:previous.version>=59?['/']:previous.version===58?['/','/css/components.css','/js/app.js']:previous.version===56?Object.keys(narrationPins):previous.version===55?['/','/js/app.js']:previous.version===54?['/','/css/layout.css','/js/app.js']:previous.version===53?['/','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js','/js/word-study/controller.js']:['/','/css/companion.css','/js/bible/reader.js','/js/bible/speech.js','/js/bible/cloud-tts.js','/js/storage/user-data.js',...(previous.version>=44?[runtimePath]:[])]){
     expect(normalizeSource(current[asset]),asset+' must deliver the accepted release').not.toBe(normalizeSource(prior[asset]));
   }
   if(previous.version===53) for(const asset of requiredAssets.filter(url=>![...discoveryAssets,...Object.keys(wordStudyPins),'/','/css/layout.css','/js/home-commandments.js','/css/components.css','/js/app.js','/css/companion.css','/js/bible/reader.js',runtimePath,'/js/bible/speech.js','/js/bible/compare.js'].includes(url))){
@@ -557,7 +560,7 @@ for(const width of previous.version>=44?[1280,320,390]:[320,390])test(`installed
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`failed shell-75 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
+test(`failed shell-76 installation leaves installed shell ${previous.version} usable offline and retries without data loss`,async({page,context})=>{
   test.setTimeout(60000);
   const server=await fixture();
   try{
@@ -597,7 +600,7 @@ test(`failed shell-75 installation leaves installed shell ${previous.version} us
   }finally{await context.setOffline(false);await server.stop(context);}
 });
 
-test(`interrupted shell-75 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
+test(`interrupted shell-76 precache keeps shell ${previous.version} recoverable and retries offline safely`,async({page,context})=>{
   test.setTimeout(60000);const server=await fixture();
   try{
     await installOld(page,server.origin);const before=await retainedState(page),requests=server.state.bibleRequests.slice();
