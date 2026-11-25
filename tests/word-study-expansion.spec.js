@@ -18,6 +18,26 @@ async function study(page, translationId, bookId, chapter, verse){
   return {word, tokens:page.locator('#wordStudyOriginalTokens button')};
 }
 
+for(const [translation,book,chapter,verse,lang,strongs] of [
+  ['dra','joshua',1,1,'he','H4872'],
+  ['web','daniel',2,4,'arc','H4430'],
+  ['kjv','revelation',22,21,'grc','G5485']
+]){
+  test('Bible-wide Word Study opens '+translation+' '+book+' '+chapter+':'+verse, async ({page}) => {
+    const {word,tokens} = await study(page,translation,book,chapter,verse);
+    const match = tokens.and(page.locator('[lang="'+lang+'"]'));
+    await expect(match.first()).toBeVisible();
+    const index = await tokens.evaluateAll((buttons,number) =>
+      buttons.findIndex(button => button.__originalLanguageRecord.strongsNumber === number),strongs);
+    expect(index).toBeGreaterThanOrEqual(0);
+    await tokens.nth(index).press('Enter');
+    await expect(page.locator('#wordStudyOriginalDetails')).toContainText(strongs);
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Exact word alignment is unavailable');
+    await page.keyboard.press('Escape');
+    await expect(word).toBeFocused();
+  });
+}
+
 const passages = [
   ['exodus', 3, 14, 'he', 'H1961'],
   ['leviticus', 19, 18, 'he', 'H157'],

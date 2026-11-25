@@ -124,33 +124,53 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
         if(!response.ok) throw new Error('Static original-language shard unavailable');
         return response.json();
       }).then(function(data){
-        if(!data || !Array.isArray(data.records)) return [];
-        return data.records.filter(isStaticRecord);
+        if(!data) return null;
+        if(Array.isArray(data.records)) return data.records.filter(isStaticRecord);
+        return Array.isArray(data.verses) && Array.isArray(data.excludedEditions) &&
+          data.lexicon && typeof data.source === 'string' ? data : null;
       }).catch(function(){ return null; });
     }
     return staticShardRequests[url];
   }
 
-  // DRA uses canonical IDs too. Keep unreviewed books and differing-numbered
-  // chapters unavailable rather than guessing a cross-tradition verse mapping.
+  // The compact chapter files also record edition-specific numbering exclusions.
   function hasSupportedReference(context){
     var bookId = String(context.bookId || '').toLowerCase();
     var exceptions = unavailableVerses[context.translationId]?.[bookId] || [];
     if(exceptions.includes(context.chapter + ':' + context.verse)) return false;
     if(context.translationId !== 'dra') return true;
-    var excluded = {genesis:[49,50], isaiah:[45,46], john:[6], romans:[],
-      exodus:[], leviticus:[], numbers:[], deuteronomy:[], matthew:[], mark:[], luke:[]};
-    return Object.prototype.hasOwnProperty.call(excluded, bookId) && excluded[bookId].indexOf(context.chapter) === -1;
+    if(['tobit','judith','wisdom','sirach','baruch','1-maccabees','2-maccabees','esther','daniel','psalms'].includes(bookId)) return false;
+    var excluded = {genesis:[49,50], isaiah:[45,46], john:[6]};
+    return !(excluded[bookId] || []).includes(context.chapter);
+  }
+
+  function readVerse(shard, reference, translationId){
+    if(!shard) return [];
+    var bookId = reference.bookId.toLowerCase();
+    if(Array.isArray(shard)) return shard.filter(function(record){
+      return record.bookId === bookId && record.chapter === reference.chapter && record.verse === reference.verse;
+    }).sort(function(left, right){ return left.tokenIndex - right.tokenIndex; });
+    var tokens = shard.verses[reference.verse - 1];
+    if(shard.excludedEditions.includes(translationId) || !Array.isArray(tokens)) return [];
+    if(!tokens.every(function(token){
+      return Array.isArray(token) && typeof token[0] === 'string' && token[0] &&
+        (token[1] === null || typeof token[1] === 'string' && /^[HG]\d{1,5}$/.test(token[1])) &&
+        typeof token[2] === 'string' && token[2];
+    })) return [];
+    return tokens.map(function(token, tokenIndex){
+      var strongsNumber = token[1], morphology = token[2];
+      var lexical = shard.lexicon[strongsNumber] || [];
+      var language = strongsNumber && strongsNumber.startsWith('G') ? 'greek' : morphology.startsWith('A') ? 'aramaic' : 'hebrew';
+      return {status:'authoritative',strongsNumber:strongsNumber,language:language,lemma:lexical[0] || token[3] || null,
+        transliteration:lexical[1] || null,pronunciation:lexical[2] || null,partOfSpeech:null,definition:lexical[3] || null,
+        morphology:morphology,source:shard.source,bookId:bookId,chapter:reference.chapter,verse:reference.verse,
+        tokenIndex:tokenIndex,surface:token[0]};
+    });
   }
 
   function staticLookup(context){
-    if(!hasSupportedReference(context)) return Promise.resolve(null);
-    var reference = resolveOriginalLanguageReference(context);
-    return loadStaticShard(reference).then(function(records){
-      if(!records) return null;
-      return records.find(function(record){
-        return record.bookId === reference.bookId.toLowerCase() && record.chapter === reference.chapter && record.verse === reference.verse && record.tokenIndex === context.tokenIndex;
-      }) || null;
+    return lookupVerse(context).then(function(result){
+      return result.records.find(function(record){ return record.tokenIndex === context.tokenIndex; }) || null;
     });
   }
 
@@ -160,11 +180,8 @@ var OriginalLanguageWordStudyProvider = (function createOriginalLanguageWordStud
       return Promise.resolve({ status: 'unavailable', records: [] });
     }
     var reference = resolveOriginalLanguageReference(context);
-    return loadStaticShard(reference).then(function(records){
-      if(!records) return { status: 'unavailable', records: [] };
-      var verseRecords = records.filter(function(record){
-        return record.bookId === reference.bookId.toLowerCase() && record.chapter === reference.chapter && record.verse === reference.verse;
-      }).sort(function(left, right){ return left.tokenIndex - right.tokenIndex; });
+    return loadStaticShard(reference).then(function(shard){
+      var verseRecords = readVerse(shard,reference,context.translationId);
       return { status: verseRecords.length ? 'available' : 'unavailable', records: verseRecords };
     });
   }
