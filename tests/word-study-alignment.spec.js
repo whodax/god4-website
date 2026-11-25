@@ -357,6 +357,47 @@ test('WEB Genesis 1:1 highlights the Hebrew for heavens',async({page})=>{
   await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H8064');
 });
 
+test('WEB Hebrew chapter is lazy and still aligns a two-word phrase after going offline',async({page,context})=>{
+  const paths=[];
+  page.on('request',request=>{
+    const path=new URL(request.url()).pathname;
+    if(path.includes('/alignment/web/')) paths.push(path);
+  });
+  await open(page,'web','exodus',1,2);
+  expect(paths).toEqual([]);
+  const verse=page.locator('#readerContent [data-verse-number="2"]');
+  const judah=verse.locator('[data-word-study-term="judah"]');
+  await judah.press('Enter');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await expect(matched).toHaveAttribute('data-original-language-token-index','3');
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText(['and','Judah']);
+  await matched.press('Enter');
+  await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H3063');
+  await page.getByRole('button',{name:'Close Word Study',exact:true}).press('Enter');
+  await expect(judah).toBeFocused();
+  await context.setOffline(true);
+  try{
+    await verse.locator('[data-word-study-term="reuben"]').press('Enter');
+    await expect(matched).toHaveAttribute('data-original-language-token-index','0');
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('WEB checked against ULT');
+  }finally{await context.setOffline(false);}
+  expect(paths).toEqual(['/data/word-study/alignment/web/index.json','/data/word-study/alignment/web/exodus/1.json']);
+});
+
+test('WEB Greek highlights both original tokens and shows the verified contextual sense',async({page})=>{
+  await open(page,'web','matthew',12,8);
+  const verse=page.locator('#readerContent [data-verse-number="8"]');
+  await verse.locator('[data-word-study-term="man"]').press('Enter');
+  const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+  await expect(matched).toHaveCount(2);
+  await expect(page.locator('#wordStudyVerse [data-aligned="true"]')).toHaveText(['of','Man']);
+  await expect(matched.first()).toHaveCSS('outline-style','solid');
+  await page.keyboard.press('Escape');
+  await verse.locator('[data-word-study-term="lord"]').press('Enter');
+  await expect(page.locator('#wordStudyDefinition')).toHaveText('The one who has authority over the Sabbath.');
+  await expect(page.locator('#wordStudySource')).toContainText('Scripture context');
+});
+
 test('lexical definitions never create inferred alignment',async({page})=>{
   await open(page,'web','john',1,1);
   const word=page.locator('#readerContent [data-verse-number="1"] [data-word-study-term="the"]').first();

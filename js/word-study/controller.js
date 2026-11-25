@@ -290,15 +290,10 @@ var WordStudyController = (function createWordStudyController(){
         }
         if(!current()) return;
         renderOriginalLanguage(result, verified);
-        if(study.displayWord !== 'Christ' || activeAlignment.status !== 'available') return;
-        var groups = alignmentApi.matchingGroups(activeAlignment,{start:study.englishStart,end:study.englishEnd});
-        var linked = new Set(groups.flatMap(function(group){return group.original;}));
-        var christ = result.records.find(function(record){
-          return linked.has(record.tokenIndex) && record.strongsNumber === 'G5547' && /^N-/.test(record.morphology);
-        });
-        if(christ){
+        var definition = alignmentApi.contextualDefinition?.(study,result.records,activeAlignment);
+        if(definition){
           contextualDefinition = true;
-          setPanelState('available',study,{partOfSpeech:'noun',definition:'The Anointed One, the Messiah.',source:'Scripture context · Greek Christos (G5547)'});
+          setPanelState('available',study,definition);
         }
       }).catch(function(){
         if(current()) clearOriginalLanguage();

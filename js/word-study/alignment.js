@@ -241,42 +241,95 @@
     revision:'d490be7e34762deb2c76cb2c1306d4808e27890d',
     reviewedBy:'GOD4.us reproducible CrossWire alignment validation'
   };
+  var webSource = {
+    title:'WEB checked against ULT and the original-language witnesses',
+    reference:'/data/word-study/alignment/web/NOTICE.md',
+    revision:'ULT 91, UHB 3.0.0 and UGNT 0.34',
+    reviewedBy:'GOD4.us reproducible WEB alignment validation'
+  };
   var chapterRequests = new Map();
-  function lookupChapter(context, records){
-    if(context.translationId !== 'kjv' || typeof BibleCanon === 'undefined' ||
-      BibleCanon.book(context.bookId)?.testament !== 'new' || !records.length ||
-      !Number.isInteger(context.chapter) || context.chapter < 1) return null;
-    var url = '/data/word-study/alignment/kjv/' + context.bookId + '/' + context.chapter + '.json';
+  var webIndexRequest;
+  var webBase = '/data/word-study/alignment/web/';
+  function requestJson(url){
+    var abort = new AbortController();
+    var timer = setTimeout(function(){ abort.abort(); }, 3000);
+    return fetch(url,{signal:abort.signal}).then(function(response){
+      if(!response.ok) throw new Error('Alignment data unavailable');
+      return response.json();
+    }).finally(function(){ clearTimeout(timer); });
+  }
+  function loadChapter(url){
     if(!chapterRequests.has(url)){
-      var abort = new AbortController();
-      var timer = setTimeout(function(){ abort.abort(); }, 3000);
-      var request = fetch(url,{signal:abort.signal}).then(function(response){
-        if(!response.ok) throw new Error('Alignment chapter unavailable');
-        return response.json();
-      }).catch(function(){
-        chapterRequests.delete(url);
+      var request = requestJson(url).catch(function(){
+        if(chapterRequests.get(url) === request) chapterRequests.delete(url);
         return null;
-      }).finally(function(){ clearTimeout(timer); });
+      });
       chapterRequests.set(url,request);
       if(chapterRequests.size > 16) chapterRequests.delete(chapterRequests.keys().next().value);
     }
-    return chapterRequests.get(url).then(function(chapter){
+    return chapterRequests.get(url);
+  }
+  function lookupChapter(context, records){
+    var web = context.translationId === 'web';
+    if((!web && context.translationId !== 'kjv') || typeof BibleCanon === 'undefined' || !records.length ||
+      !Number.isInteger(context.chapter) || context.chapter < 1 || !/^[a-z0-9-]+$/.test(context.bookId)) return null;
+    var book = BibleCanon.book(context.bookId);
+    if(!book || (!web && book.testament !== 'new')) return null;
+    var location = context.bookId + '/' + context.chapter + '.json';
+    var source = web ? webSource : crosswireSource;
+    if(web && !webIndexRequest){
+      webIndexRequest = requestJson(webBase + 'index.json').catch(function(){
+        webIndexRequest = null;
+        return null;
+      });
+    }
+    var chapterData = web ? webIndexRequest.then(function(index){
+      return Array.isArray(index?.[context.bookId]) && index[context.bookId].includes(context.chapter)
+        ? loadChapter(webBase + location) : null;
+    }) : loadChapter('/data/word-study/alignment/kjv/' + location);
+    return chapterData.then(function(chapter){
       var row = chapter?.[context.verse];
       if(!Array.isArray(row) || row[0] !== context.verseText || !Array.isArray(row[1]) ||
         row[1].length !== records.length || !Array.isArray(row[2])) return null;
       if(!records.every(function(record,index){
         var token = row[1][index];
         return record.bookId === context.bookId && record.chapter === context.chapter && record.verse === context.verse &&
-          record.language === 'greek' && record.tokenIndex === index && Array.isArray(token) &&
+          record.tokenIndex === index && Array.isArray(token) &&
+          record.language === (web ? token[3] : 'greek') &&
           record.surface === token[0] && record.strongsNumber === token[1] && record.morphology === token[2];
       })) return null;
-      var entry = {status:'verified',source:crosswireSource,translationId:context.translationId,bookId:context.bookId,
+      var entry = {status:'verified',source:source,translationId:context.translationId,bookId:context.bookId,
         chapter:context.chapter,verse:context.verse,englishText:row[0],originalTokens:records,
         groups:row[2].map(function(group){
           return {english:group[0].map(function(span){return {start:span[0],end:span[1]};}),original:group[1]};
         })};
-      return valid(entry,context,records) ? {status:'available',groups:entry.groups,source:crosswireSource} : null;
+      return valid(entry,context,records) ? {status:'available',groups:entry.groups,source:source} : null;
     }).catch(function(){ return null; });
   }
-  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter, lookup:createProvider(reviewedCatalog).lookup};
+  function contextualDefinition(study, records, alignment){
+    if(alignment?.status !== 'available') return null;
+    var term = study.displayWord;
+    var text = study.verseText;
+    var sense;
+    if(term === 'Christ'){
+      sense = ['G5547','The Anointed One, the Messiah.','Greek Christos'];
+    }else if(study.translationId === 'web' && alignment.source === webSource){
+      if(term === 'Lord' && /\bSon of Man is Lord of the Sabbath\b/.test(text)){
+        sense = ['G2962','The one who has authority over the Sabbath.','Greek kyrios'];
+      }else if(term === 'light' && /\bI am the light of the world\b/.test(text)){
+        sense = ['G5457','Jesus describes himself as the one who gives people spiritual sight.','Greek phōs'];
+      }else if(term === 'love' && /\bin brotherly affection, love\b/.test(text)){
+        sense = ['G26','Care for others that goes beyond affection for those close to you.','Greek agapē'];
+      }
+    }
+    if(!sense) return null;
+    var linked = new Set(matchingGroups(alignment,{start:study.englishStart,end:study.englishEnd})
+      .flatMap(function(group){ return group.original; }));
+    if(!records.some(function(record){
+      return linked.has(record.tokenIndex) && record.strongsNumber === sense[0] && /^N-/.test(record.morphology);
+    })) return null;
+    return {partOfSpeech:'noun',definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
+  }
+  return {createProvider:createProvider, matchingGroups:matchingGroups, wordSpans:wordSpans, lookupChapter:lookupChapter,
+    contextualDefinition:contextualDefinition, lookup:createProvider(reviewedCatalog).lookup};
 }));

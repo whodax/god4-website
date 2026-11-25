@@ -2,6 +2,21 @@
 
 Shell 76 builds on the [accepted Shell 75 audit](shell-75-word-study-audit.md) at `08ae6aeded6182ca140165c8f17fd0a35d317e0b`. The report and audit script are versioned. The original audit script measures the inline catalog and can be copied into a checkout of Shell 75 to reproduce that baseline.
 
+## Physical Android and TalkBack acceptance
+
+The owner reported **8 of 8 checks passed** for Shell 76, commit `e6e3198`, on November 25, 2026.
+
+| Check | Result |
+| --- | --- |
+| KJV John 1:1 | Pass |
+| KJV John 1:3 | Pass |
+| KJV Acts 8:37 | Pass |
+| WEB curly-apostrophe contraction | Pass |
+| Close Word Study | Pass |
+| Dark theme | Pass |
+| TalkBack | Pass |
+| Offline | Pass |
+
 ## CrossWire source and validation
 
 The input is CrossWire's KJV SWORD module **3.1**, using the OSIS and configuration from Git revision `d490be7e34762deb2c76cb2c1306d4808e27890d`. The OSIS SHA-256 is `4bcbfe45722fca396adbeac9c81025bbb173cb1e30296da90864f0400cb0e3f5`. CrossWire credits the Bible Foundation, KJV2003 volunteers and Maurice Robinson. Its configuration records GPL distribution for the module, grants broad use of the tagging work, and identifies Crown rights in the base English text. The generated data is accompanied by the pinned source links, transformation recipe, source notices, and checksums. [Publisher notice](https://ftp.crosswire.org/sword/modules/ModInfo.jsp?modName=KJV) · [Pinned source](https://gitlab.com/crosswire-bible-society/kjv/-/raw/d490be7e34762deb2c76cb2c1306d4808e27890d/kjv.osis.xml) · [Pinned licensing configuration](https://gitlab.com/crosswire-bible-society/kjv/-/raw/d490be7e34762deb2c76cb2c1306d4808e27890d/kjv.conf)

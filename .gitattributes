@@ -1,3 +1,4 @@
 # Preserve the original-language publication checksums across platforms.
 data/word-study/original-language/*/*.json -text
 data/word-study/alignment/kjv/*/*.json -text
+data/word-study/alignment/web/**/*.json -text

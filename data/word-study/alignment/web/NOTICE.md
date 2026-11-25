@@ -1,0 +1,9 @@
+# WEB alignment data
+
+The original work by unfoldingWord is available from the [ULT publisher](https://www.unfoldingword.org/ult), the [Hebrew Bible publisher](https://www.unfoldingword.org/uhb), and the [Greek New Testament publisher](https://www.unfoldingword.org/ugnt). Copyright © 2022 by unfoldingWord, as stated in the pinned sources. The generated WEB alignment index and chapter JSON files are available under [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
+GOD4.us used ULT alignment milestones and the ordered UHB and UGNT witnesses to build these mappings. The importer discarded incompatible and ambiguous records, converted source positions to GOD4.us token indexes, and replaced source English offsets with exact WEB Reader character offsets. The chapter JSON files contain selected WEB verses, the app’s original-language token identities, and links between them. This data is a GOD4.us adaptation. The English Scripture is the public-domain [World English Bible Protestant Edition](https://ebible.org/engwebp/).
+
+UHB incorporates the [Open Scriptures Hebrew Bible](https://github.com/openscriptures/morphhb), available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). UGNT incorporates the Bunning Heuristic Prototype Greek New Testament from the [Center for New Testament Restoration](https://greekcntr.org/), available under CC BY-SA 4.0. The GOD4.us Greek token identities come from the public-domain Robinson–Pierpont Byzantine Majority Text.
+
+The [pinned source list](../../../../tools/web-alignment-sources.json), [importer](../../../../tools/import-web-alignment.js), and [engineering report](../../../../docs/shell-77-word-study.md) describe the source versions, checksums and reproduction procedure.
