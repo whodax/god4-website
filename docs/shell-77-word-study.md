@@ -59,4 +59,22 @@ The reproducibility run produced a byte-identical report and the same shard hash
 
 The upgrade tests include desktop and mobile viewports, another open tab during acceptance, failed or interrupted installation and retry, and a fully offline relaunch. The browser checks exercise exact Hebrew and Greek highlights, the accessible Close button and focus return, and the contextual definition for Matthew 12:8.
 
-Physical Android and TalkBack acceptance for Shell 77 is pending. Bible-wide verified alignment remains a release blocker.
+## Physical Android and TalkBack acceptance
+
+The owner reported **11 of 11 checks passed** on November 25, 2026, for preview `316c77b7`, commit `2e82e2c59bedb1398c566bdc7f62d8d6e31bd6c2`.
+
+| Check | Result |
+| --- | --- |
+| WEB Genesis 1:1, created | Pass |
+| WEB Matthew 12:8, Lord | Pass |
+| WEB John 9:5, light | Pass |
+| WEB 2 Peter 1:7, love | Pass |
+| KJV John 1:1, Word | Pass |
+| KJV Acts 8:37, Christ | Pass |
+| WEB John 7:47, aren’t | Pass |
+| Dark theme | Pass |
+| Close Word Study | Pass |
+| TalkBack | Pass |
+| Offline | Pass |
+
+Bible-wide verified alignment remains a release blocker.

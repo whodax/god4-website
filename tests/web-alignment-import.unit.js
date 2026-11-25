@@ -5,10 +5,12 @@ const {test} = require('node:test');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const {execFileSync} = require('node:child_process');
 const {createHash} = require('node:crypto');
-const {readBook,readOriginal,validateVerse,generate} = require('../tools/import-web-alignment');
+const {readBook,readOriginal,readAlignment,validateVerse,projection,projectVerse,generate} = require('../tools/import-web-alignment');
+const berean = require('../tools/word-study-berean');
 const {loadBibleLibrary,READER_TOKEN_PATTERN} = require('../tools/audit-word-study-coverage');
-const report = require('../docs/shell-77-web-alignment-report.json');
+const report = require('../docs/shell-78-web-alignment-report.json');
 const web = loadBibleLibrary('web.js','webLibrary');
 const root = path.resolve(__dirname,'../data/word-study/alignment/web');
 
@@ -84,6 +86,55 @@ test('import refuses an expanded source whose pinned contents do not match',asyn
   await assert.rejects(generate([__dirname,__dirname,__dirname],path.join(__dirname,'unused-web-test-output')),/Input checksum mismatch/);
 });
 
+test('partial projection keeps only complete groups inside one unchanged, unique sentence',()=>{
+  const body = 'He spoke. She saw '+marker(article)+marker(son)+tagged('the')+' '+tagged('son')+end+end+' near home. He left.';
+  const from = readAlignment(body);
+  const to = 'He came. She saw the son near home. He stayed.';
+  const result = projectVerse(to,body,[article,son],records,from,projection(from.english,to));
+  assert.equal(result.mode,'sentence');
+  assert.deepEqual(result.alignments[0],[[[17,20],[21,24]],[0,1]]);
+  assert.equal(projection(from.english,to+' She saw the son near home.').ambiguous,true);
+  assert.ok(projection(from.english,'He came. She saw the son, near home. He stayed.').reason);
+  assert.equal(projection('She saw the son near home','She saw the son near home.').mode,'period');
+  assert.ok(projection('She saw the son near home?','She saw the son near home.').reason);
+  const crossed = marker(article)+'He spoke. She saw '+tagged('the')+' '+marker(son)+tagged('son')+end+
+    ' near home. He '+tagged('left')+end+'.';
+  const parsed = readAlignment(crossed);
+  const crossResult = projectVerse(to,crossed,[article,son],records,parsed,projection(parsed.english,to));
+  assert.equal(crossResult.reason,'unchanged English has no complete alignment group');
+});
+
+test('Berean groups require ordered manuscript evidence, compatible morphology, and nonsupplied words',()=>{
+  const rows = [
+    {order:5,englishOrder:8,language:'greek',form:'ὁ',id:'3588',morph:'Art-NMS',words:'the',start:0,end:3},
+    {order:6,englishOrder:9,language:'greek',form:'υἱός',id:'5207',morph:'N-NMS',words:'son',start:4,end:7}
+  ];
+  const check = (data,witness=[article,son])=>berean.validate({rows:data},witness,records,(token,record)=>
+    token===article ? record.strongsNumber==='G3588' : record.strongsNumber==='G5207');
+  assert.deepEqual(check(rows).groups,[[[[0,3]],[0]],[[[4,7]],[1]]]);
+  assert.deepEqual(check([rows[0],{...rows[1],words:'[son]'}]).groups,[[[[0,3]],[0]]]);
+  assert.deepEqual(check([rows[0],{...rows[1],morph:'N-NFS'}]).groups,[[[[0,3]],[0]]]);
+  assert.ok(check([rows[0],{...rows[1],form:'ἄλλος'}]).reason);
+  assert.ok(check([rows[0],{...rows[1],order:5}]).ambiguous);
+  assert.ok(check(rows,[son,article]).reason);
+});
+
+test('Shell 77 WEB rows remain intact and the expansions add only new references',()=>{
+  const old = require('../docs/shell-77-web-alignment-report.json');
+  let count = 0;
+  for (const relative of Object.keys(old.files).filter(file=>file.includes('/'))) {
+    const source = execFileSync('git',['show','2e82e2c:data/word-study/alignment/web/'+relative],{cwd:path.resolve(__dirname,'..')});
+    const existing = JSON.parse(source);
+    const current = JSON.parse(fs.readFileSync(path.join(root,relative)));
+    for (const [verse,row] of Object.entries(existing)) {
+      assert.deepEqual(current[verse],row);
+      count++;
+    }
+  }
+  assert.equal(count,57);
+  assert.equal(report.additions.verses,251);
+});
+
 test('the production provider verifies every WEB row and fails closed on changed input',async()=>{
   const site = path.resolve(__dirname,'..');
   const requests = [];
@@ -118,7 +169,9 @@ test('the production provider verifies every WEB row and fails closed on changed
   for (const [bookId,chapter,verse,displayWord,expected] of [
     ['matthew',12,8,'Lord','The one who has authority over the Sabbath.'],
     ['john',9,5,'light','Jesus describes himself as the one who gives people spiritual sight.'],
-    ['2-peter',1,7,'love','Care for others that goes beyond affection for those close to you.']
+    ['2-peter',1,7,'love','Care for others that goes beyond affection for those close to you.'],
+    ['hosea',5,9,'Ephraim','The tribe descended from Ephraim, the name Hosea uses here for the northern kingdom of Israel.'],
+    ['1-chronicles',7,27,'Joshua','Joshua son of Nun, listed here among the descendants of Ephraim.']
   ]) {
     const verseText = web[bookId][chapter].verses[verse-1];
     const englishStart = verseText.indexOf(displayWord);

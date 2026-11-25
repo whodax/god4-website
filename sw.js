@@ -2,7 +2,7 @@
 importScripts('/js/bible/translation-manifest.js', '/js/pwa/translation-cache-protocol.js');
 
 const CACHE_PREFIX = 'god4-shell-';
-const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-77';
+const SHELL_CACHE = CACHE_PREFIX + 'compact-reader-78';
 const PREVIOUS_SHELL_CACHE = CACHE_PREFIX + 'compact-reader-24';
 const VENDOR_PATH = '/js/vendor/supabase-js-2.117.0.min.js';
 const VENDOR_CACHE_PREFIX = 'god4-auth-vendor-';
@@ -249,6 +249,34 @@ self.addEventListener('message', function(event){
   }
 });
 
+// Word Study runtime cache begins
+const WORD_STUDY_CACHE = 'god4-word-study-data-v1';
+const WORD_STUDY_LIMIT = 48;
+var wordStudyWrites = Promise.resolve();
+
+async function wordStudyData(request){
+  var response;
+  try{
+    response = await fetch(request);
+  }catch(error){
+    var cached = await (await caches.open(WORD_STUDY_CACHE)).match(request);
+    if(cached) return cached;
+    throw error;
+  }
+  if(!response.ok || !/^application\/json\b/i.test(response.headers.get('content-type') || '')) return response;
+  var copy = response.clone();
+  wordStudyWrites = wordStudyWrites.then(async function(){
+    var cache = await caches.open(WORD_STUDY_CACHE);
+    await cache.put(request,copy);
+    var keys = await cache.keys();
+    var removable = keys.filter(function(key){ return !key.url.endsWith('/alignment/web/index.json'); });
+    await Promise.all(removable.slice(0,Math.max(0,keys.length-WORD_STUDY_LIMIT)).map(function(key){ return cache.delete(key); }));
+  }).catch(function(){});
+  await wordStudyWrites;
+  return response;
+}
+// Word Study runtime cache ends
+
 self.addEventListener('fetch', function(event){
   var request = event.request;
   if(request.method !== 'GET') return;
@@ -257,6 +285,13 @@ self.addEventListener('fetch', function(event){
   // Cloud speech always reaches the Function, including navigations/invalid GETs.
   if(url.origin === self.location.origin && url.pathname === '/api/tts') return;
   if(isPrivateOrCloudflareRequest(request, url)) return;
+  // Word Study runtime route begins
+  if(url.origin === self.location.origin && !url.search &&
+    /^\/data\/word-study\/(?:alignment\/(?:web\/index|(?:web|kjv)\/[a-z0-9-]+\/[1-9]\d*)|original-language\/[a-z0-9-]+\/[1-9]\d*|original-language-variants\/[a-z0-9-]+-\d+-\d+)\.json$/.test(url.pathname)){
+    event.respondWith(wordStudyData(request));
+    return;
+  }
+  // Word Study runtime route ends
   if(url.origin === self.location.origin && url.pathname === VENDOR_PATH && !url.search){
     event.respondWith(vendorResponse(request));
     return;

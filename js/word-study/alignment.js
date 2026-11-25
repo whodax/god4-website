@@ -247,6 +247,11 @@
     revision:'ULT 91, UHB 3.0.0 and UGNT 0.34',
     reviewedBy:'GOD4.us reproducible WEB alignment validation'
   };
+  var webExpanded = Object.assign({},webSource,{revision:'ULT 92, UHB 3.0.0 and UGNT 0.34'});
+  var webBerean = Object.assign({},webSource,{
+    title:'WEB checked against the Berean translation tables and the original-language witnesses',
+    revision:'Berean Standard Bible third printing, UHB 3.0.0 and UGNT 0.34'
+  });
   var chapterRequests = new Map();
   var webIndexRequest;
   var webBase = '/data/word-study/alignment/web/';
@@ -276,7 +281,6 @@
     var book = BibleCanon.book(context.bookId);
     if(!book || (!web && book.testament !== 'new')) return null;
     var location = context.bookId + '/' + context.chapter + '.json';
-    var source = web ? webSource : crosswireSource;
     if(web && !webIndexRequest){
       webIndexRequest = requestJson(webBase + 'index.json').catch(function(){
         webIndexRequest = null;
@@ -291,6 +295,7 @@
       var row = chapter?.[context.verse];
       if(!Array.isArray(row) || row[0] !== context.verseText || !Array.isArray(row[1]) ||
         row[1].length !== records.length || !Array.isArray(row[2])) return null;
+      var source = !web ? crosswireSource : row[3]?.startsWith('berean-') ? webBerean : row[3] ? webExpanded : webSource;
       if(!records.every(function(record,index){
         var token = row[1][index];
         return record.bookId === context.bookId && record.chapter === context.chapter && record.verse === context.verse &&
@@ -311,10 +316,17 @@
     var term = study.displayWord;
     var text = study.verseText;
     var sense;
+    var noun = /^N-/;
     if(term === 'Christ'){
       sense = ['G5547','The Anointed One, the Messiah.','Greek Christos'];
-    }else if(study.translationId === 'web' && alignment.source === webSource){
-      if(term === 'Lord' && /\bSon of Man is Lord of the Sabbath\b/.test(text)){
+    }else if(study.translationId === 'web' && [webSource,webExpanded,webBerean].includes(alignment.source)){
+      if(term === 'Ephraim' && /\bEphraim will become a desolation\b/.test(text)){
+        sense = ['H669','The tribe descended from Ephraim, the name Hosea uses here for the northern kingdom of Israel.','Hebrew Ephraim'];
+        noun = /^H(?:[^/]+\/)*Np$/;
+      }else if(term === 'Joshua' && /\bNun his son, and Joshua his son\b/.test(text)){
+        sense = ['H3091','Joshua son of Nun, listed here among the descendants of Ephraim.','Hebrew Yehoshua'];
+        noun = /^H(?:[^/]+\/)*Np$/;
+      }else if(term === 'Lord' && /\bSon of Man is Lord of the Sabbath\b/.test(text)){
         sense = ['G2962','The one who has authority over the Sabbath.','Greek kyrios'];
       }else if(term === 'light' && /\bI am the light of the world\b/.test(text)){
         sense = ['G5457','Jesus describes himself as the one who gives people spiritual sight.','Greek phōs'];
@@ -326,7 +338,7 @@
     var linked = new Set(matchingGroups(alignment,{start:study.englishStart,end:study.englishEnd})
       .flatMap(function(group){ return group.original; }));
     if(!records.some(function(record){
-      return linked.has(record.tokenIndex) && record.strongsNumber === sense[0] && /^N-/.test(record.morphology);
+      return linked.has(record.tokenIndex) && record.strongsNumber === sense[0] && noun.test(record.morphology);
     })) return null;
     return {partOfSpeech:'noun',definition:sense[1],source:'Scripture context · ' + sense[2] + ' (' + sense[0] + ')'};
   }

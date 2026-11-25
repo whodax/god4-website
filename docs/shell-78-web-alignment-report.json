@@ -1,0 +1,2376 @@
+{
+  "webTextSha256": "a32647ad749afd31c4348ed6e22cfa0cb0f0ca48ee17061df7721551743bd20b",
+  "sourceBooks": 61,
+  "books": {
+    "genesis": {
+      "verses": 1533,
+      "candidates": 1533,
+      "accepted": 3,
+      "rejected": 1521,
+      "ambiguous": 9,
+      "missing": 0,
+      "words": 35806,
+      "alignedWords": 34,
+      "priorityWords": 29124,
+      "alignedPriorityWords": 31
+    },
+    "exodus": {
+      "verses": 1213,
+      "candidates": 1213,
+      "accepted": 2,
+      "rejected": 1208,
+      "ambiguous": 3,
+      "missing": 0,
+      "words": 30921,
+      "alignedWords": 9,
+      "priorityWords": 25287,
+      "alignedPriorityWords": 4
+    },
+    "leviticus": {
+      "verses": 859,
+      "candidates": 859,
+      "accepted": 0,
+      "rejected": 854,
+      "ambiguous": 5,
+      "missing": 0,
+      "words": 23484,
+      "alignedWords": 0,
+      "priorityWords": 19297,
+      "alignedPriorityWords": 0
+    },
+    "numbers": {
+      "verses": 1288,
+      "candidates": 1288,
+      "accepted": 0,
+      "rejected": 1287,
+      "ambiguous": 1,
+      "missing": 0,
+      "words": 31175,
+      "alignedWords": 0,
+      "priorityWords": 25342,
+      "alignedPriorityWords": 0
+    },
+    "deuteronomy": {
+      "verses": 959,
+      "candidates": 959,
+      "accepted": 0,
+      "rejected": 957,
+      "ambiguous": 2,
+      "missing": 0,
+      "words": 27326,
+      "alignedWords": 0,
+      "priorityWords": 23228,
+      "alignedPriorityWords": 0
+    },
+    "joshua": {
+      "verses": 658,
+      "candidates": 658,
+      "accepted": 11,
+      "rejected": 646,
+      "ambiguous": 1,
+      "missing": 0,
+      "words": 17829,
+      "alignedWords": 112,
+      "priorityWords": 14558,
+      "alignedPriorityWords": 90
+    },
+    "judges": {
+      "verses": 618,
+      "candidates": 618,
+      "accepted": 1,
+      "rejected": 614,
+      "ambiguous": 3,
+      "missing": 0,
+      "words": 17898,
+      "alignedWords": 5,
+      "priorityWords": 14641,
+      "alignedPriorityWords": 3
+    },
+    "ruth": {
+      "verses": 85,
+      "candidates": 85,
+      "accepted": 0,
+      "rejected": 85,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 2436,
+      "alignedWords": 0,
+      "priorityWords": 1992,
+      "alignedPriorityWords": 0
+    },
+    "1-samuel": {
+      "verses": 810,
+      "candidates": 810,
+      "accepted": 0,
+      "rejected": 806,
+      "ambiguous": 4,
+      "missing": 0,
+      "words": 23603,
+      "alignedWords": 0,
+      "priorityWords": 19882,
+      "alignedPriorityWords": 0
+    },
+    "2-samuel": {
+      "verses": 695,
+      "candidates": 695,
+      "accepted": 2,
+      "rejected": 690,
+      "ambiguous": 3,
+      "missing": 0,
+      "words": 19426,
+      "alignedWords": 12,
+      "priorityWords": 16072,
+      "alignedPriorityWords": 10
+    },
+    "1-kings": {
+      "verses": 816,
+      "candidates": 816,
+      "accepted": 1,
+      "rejected": 814,
+      "ambiguous": 1,
+      "missing": 0,
+      "words": 23058,
+      "alignedWords": 6,
+      "priorityWords": 19135,
+      "alignedPriorityWords": 6
+    },
+    "2-kings": {
+      "verses": 719,
+      "candidates": 719,
+      "accepted": 0,
+      "rejected": 719,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 22210,
+      "alignedWords": 0,
+      "priorityWords": 18506,
+      "alignedPriorityWords": 0
+    },
+    "1-chronicles": {
+      "verses": 942,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 942,
+      "words": 19197,
+      "alignedWords": 0,
+      "priorityWords": 14480,
+      "alignedPriorityWords": 0
+    },
+    "2-chronicles": {
+      "verses": 822,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 822,
+      "words": 24688,
+      "alignedWords": 0,
+      "priorityWords": 20521,
+      "alignedPriorityWords": 0
+    },
+    "ezra": {
+      "verses": 280,
+      "candidates": 280,
+      "accepted": 5,
+      "rejected": 275,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 7059,
+      "alignedWords": 54,
+      "priorityWords": 5662,
+      "alignedPriorityWords": 31
+    },
+    "nehemiah": {
+      "verses": 406,
+      "candidates": 406,
+      "accepted": 27,
+      "rejected": 378,
+      "ambiguous": 1,
+      "missing": 0,
+      "words": 9976,
+      "alignedWords": 106,
+      "priorityWords": 7818,
+      "alignedPriorityWords": 17
+    },
+    "esther": {
+      "verses": 167,
+      "candidates": 167,
+      "accepted": 0,
+      "rejected": 167,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 5406,
+      "alignedWords": 0,
+      "priorityWords": 4186,
+      "alignedPriorityWords": 0
+    },
+    "job": {
+      "verses": 1070,
+      "candidates": 1070,
+      "accepted": 4,
+      "rejected": 1063,
+      "ambiguous": 3,
+      "missing": 0,
+      "words": 17298,
+      "alignedWords": 40,
+      "priorityWords": 13563,
+      "alignedPriorityWords": 35
+    },
+    "psalms": {
+      "verses": 2461,
+      "candidates": 2461,
+      "accepted": 6,
+      "rejected": 2440,
+      "ambiguous": 15,
+      "missing": 0,
+      "words": 40751,
+      "alignedWords": 53,
+      "priorityWords": 32621,
+      "alignedPriorityWords": 46
+    },
+    "proverbs": {
+      "verses": 915,
+      "candidates": 915,
+      "accepted": 0,
+      "rejected": 915,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 14267,
+      "alignedWords": 0,
+      "priorityWords": 10637,
+      "alignedPriorityWords": 0
+    },
+    "ecclesiastes": {
+      "verses": 222,
+      "candidates": 222,
+      "accepted": 0,
+      "rejected": 222,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 5442,
+      "alignedWords": 0,
+      "priorityWords": 4449,
+      "alignedPriorityWords": 0
+    },
+    "song-of-solomon": {
+      "verses": 117,
+      "candidates": 117,
+      "accepted": 1,
+      "rejected": 116,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 2434,
+      "alignedWords": 5,
+      "priorityWords": 1753,
+      "alignedPriorityWords": 4
+    },
+    "isaiah": {
+      "verses": 1292,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 1292,
+      "words": 34830,
+      "alignedWords": 0,
+      "priorityWords": 27752,
+      "alignedPriorityWords": 0
+    },
+    "jeremiah": {
+      "verses": 1364,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 1364,
+      "words": 40761,
+      "alignedWords": 0,
+      "priorityWords": 34167,
+      "alignedPriorityWords": 0
+    },
+    "lamentations": {
+      "verses": 154,
+      "candidates": 154,
+      "accepted": 0,
+      "rejected": 154,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 3300,
+      "alignedWords": 0,
+      "priorityWords": 2655,
+      "alignedPriorityWords": 0
+    },
+    "ezekiel": {
+      "verses": 1273,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "ambiguous": 0,
+      "missing": 1273,
+      "words": 37560,
+      "alignedWords": 0,
+      "priorityWords": 31096,
+      "alignedPriorityWords": 0
+    },
+    "daniel": {
+      "verses": 357,
+      "candidates": 357,
+      "accepted": 3,
+      "rejected": 353,
+      "ambiguous": 1,
+      "missing": 0,
+      "words": 11283,
+      "alignedWords": 27,
+      "priorityWords": 9063,
+      "alignedPriorityWords": 21
+    },
+    "hosea": {
+      "verses": 197,
+      "candidates": 197,
+      "accepted": 2,
+      "rejected": 195,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 4826,
+      "alignedWords": 20,
+      "priorityWords": 3884,
+      "alignedPriorityWords": 17
+    },
+    "joel": {
+      "verses": 73,
+      "candidates": 73,
+      "accepted": 0,
+      "rejected": 73,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1878,
+      "alignedWords": 0,
+      "priorityWords": 1467,
+      "alignedPriorityWords": 0
+    },
+    "amos": {
+      "verses": 146,
+      "candidates": 146,
+      "accepted": 0,
+      "rejected": 146,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 3922,
+      "alignedWords": 0,
+      "priorityWords": 3169,
+      "alignedPriorityWords": 0
+    },
+    "obadiah": {
+      "verses": 21,
+      "candidates": 21,
+      "accepted": 0,
+      "rejected": 21,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 621,
+      "alignedWords": 0,
+      "priorityWords": 510,
+      "alignedPriorityWords": 0
+    },
+    "jonah": {
+      "verses": 48,
+      "candidates": 48,
+      "accepted": 0,
+      "rejected": 48,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1271,
+      "alignedWords": 0,
+      "priorityWords": 1012,
+      "alignedPriorityWords": 0
+    },
+    "micah": {
+      "verses": 105,
+      "candidates": 105,
+      "accepted": 3,
+      "rejected": 102,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 2798,
+      "alignedWords": 16,
+      "priorityWords": 2263,
+      "alignedPriorityWords": 14
+    },
+    "nahum": {
+      "verses": 47,
+      "candidates": 47,
+      "accepted": 1,
+      "rejected": 46,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1202,
+      "alignedWords": 11,
+      "priorityWords": 880,
+      "alignedPriorityWords": 9
+    },
+    "habakkuk": {
+      "verses": 56,
+      "candidates": 56,
+      "accepted": 0,
+      "rejected": 56,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1351,
+      "alignedWords": 0,
+      "priorityWords": 1030,
+      "alignedPriorityWords": 0
+    },
+    "zephaniah": {
+      "verses": 53,
+      "candidates": 53,
+      "accepted": 0,
+      "rejected": 53,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1554,
+      "alignedWords": 0,
+      "priorityWords": 1255,
+      "alignedPriorityWords": 0
+    },
+    "haggai": {
+      "verses": 38,
+      "candidates": 38,
+      "accepted": 0,
+      "rejected": 38,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1050,
+      "alignedWords": 0,
+      "priorityWords": 898,
+      "alignedPriorityWords": 0
+    },
+    "zechariah": {
+      "verses": 211,
+      "candidates": 211,
+      "accepted": 0,
+      "rejected": 210,
+      "ambiguous": 1,
+      "missing": 0,
+      "words": 5936,
+      "alignedWords": 0,
+      "priorityWords": 4979,
+      "alignedPriorityWords": 0
+    },
+    "malachi": {
+      "verses": 55,
+      "candidates": 55,
+      "accepted": 0,
+      "rejected": 55,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1711,
+      "alignedWords": 0,
+      "priorityWords": 1446,
+      "alignedPriorityWords": 0
+    },
+    "matthew": {
+      "verses": 1071,
+      "candidates": 1071,
+      "accepted": 2,
+      "rejected": 1069,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 22831,
+      "alignedWords": 27,
+      "priorityWords": 18623,
+      "alignedPriorityWords": 23
+    },
+    "mark": {
+      "verses": 678,
+      "candidates": 678,
+      "accepted": 0,
+      "rejected": 678,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 14259,
+      "alignedWords": 0,
+      "priorityWords": 11517,
+      "alignedPriorityWords": 0
+    },
+    "luke": {
+      "verses": 1150,
+      "candidates": 1150,
+      "accepted": 0,
+      "rejected": 1150,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 24395,
+      "alignedWords": 0,
+      "priorityWords": 19855,
+      "alignedPriorityWords": 0
+    },
+    "john": {
+      "verses": 879,
+      "candidates": 879,
+      "accepted": 4,
+      "rejected": 875,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 18694,
+      "alignedWords": 44,
+      "priorityWords": 16013,
+      "alignedPriorityWords": 42
+    },
+    "acts": {
+      "verses": 1004,
+      "candidates": 1004,
+      "accepted": 0,
+      "rejected": 1004,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 23141,
+      "alignedWords": 0,
+      "priorityWords": 18332,
+      "alignedPriorityWords": 0
+    },
+    "romans": {
+      "verses": 433,
+      "candidates": 430,
+      "accepted": 0,
+      "rejected": 430,
+      "ambiguous": 0,
+      "missing": 3,
+      "words": 9411,
+      "alignedWords": 0,
+      "priorityWords": 7679,
+      "alignedPriorityWords": 0
+    },
+    "1-corinthians": {
+      "verses": 437,
+      "candidates": 437,
+      "accepted": 1,
+      "rejected": 436,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 9353,
+      "alignedWords": 20,
+      "priorityWords": 7562,
+      "alignedPriorityWords": 14
+    },
+    "2-corinthians": {
+      "verses": 257,
+      "candidates": 256,
+      "accepted": 0,
+      "rejected": 256,
+      "ambiguous": 0,
+      "missing": 1,
+      "words": 6068,
+      "alignedWords": 0,
+      "priorityWords": 4772,
+      "alignedPriorityWords": 0
+    },
+    "galatians": {
+      "verses": 149,
+      "candidates": 149,
+      "accepted": 0,
+      "rejected": 149,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 3121,
+      "alignedWords": 0,
+      "priorityWords": 2580,
+      "alignedPriorityWords": 0
+    },
+    "ephesians": {
+      "verses": 155,
+      "candidates": 155,
+      "accepted": 0,
+      "rejected": 155,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 3084,
+      "alignedWords": 0,
+      "priorityWords": 2532,
+      "alignedPriorityWords": 0
+    },
+    "philippians": {
+      "verses": 104,
+      "candidates": 104,
+      "accepted": 0,
+      "rejected": 104,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 2219,
+      "alignedWords": 0,
+      "priorityWords": 1789,
+      "alignedPriorityWords": 0
+    },
+    "colossians": {
+      "verses": 95,
+      "candidates": 95,
+      "accepted": 0,
+      "rejected": 95,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1990,
+      "alignedWords": 0,
+      "priorityWords": 1582,
+      "alignedPriorityWords": 0
+    },
+    "1-thessalonians": {
+      "verses": 89,
+      "candidates": 89,
+      "accepted": 0,
+      "rejected": 89,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1836,
+      "alignedWords": 0,
+      "priorityWords": 1510,
+      "alignedPriorityWords": 0
+    },
+    "2-thessalonians": {
+      "verses": 47,
+      "candidates": 47,
+      "accepted": 0,
+      "rejected": 47,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1036,
+      "alignedWords": 0,
+      "priorityWords": 854,
+      "alignedPriorityWords": 0
+    },
+    "1-timothy": {
+      "verses": 113,
+      "candidates": 113,
+      "accepted": 1,
+      "rejected": 111,
+      "ambiguous": 1,
+      "missing": 0,
+      "words": 2237,
+      "alignedWords": 7,
+      "priorityWords": 1632,
+      "alignedPriorityWords": 4
+    },
+    "2-timothy": {
+      "verses": 83,
+      "candidates": 83,
+      "accepted": 1,
+      "rejected": 82,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1613,
+      "alignedWords": 6,
+      "priorityWords": 1215,
+      "alignedPriorityWords": 4
+    },
+    "titus": {
+      "verses": 46,
+      "candidates": 46,
+      "accepted": 0,
+      "rejected": 46,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 898,
+      "alignedWords": 0,
+      "priorityWords": 634,
+      "alignedPriorityWords": 0
+    },
+    "philemon": {
+      "verses": 25,
+      "candidates": 25,
+      "accepted": 0,
+      "rejected": 25,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 445,
+      "alignedWords": 0,
+      "priorityWords": 349,
+      "alignedPriorityWords": 0
+    },
+    "hebrews": {
+      "verses": 303,
+      "candidates": 303,
+      "accepted": 0,
+      "rejected": 302,
+      "ambiguous": 1,
+      "missing": 0,
+      "words": 6876,
+      "alignedWords": 0,
+      "priorityWords": 5471,
+      "alignedPriorityWords": 0
+    },
+    "james": {
+      "verses": 108,
+      "candidates": 108,
+      "accepted": 0,
+      "rejected": 108,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 2251,
+      "alignedWords": 0,
+      "priorityWords": 1743,
+      "alignedPriorityWords": 0
+    },
+    "1-peter": {
+      "verses": 105,
+      "candidates": 105,
+      "accepted": 0,
+      "rejected": 105,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 2394,
+      "alignedWords": 0,
+      "priorityWords": 1834,
+      "alignedPriorityWords": 0
+    },
+    "2-peter": {
+      "verses": 61,
+      "candidates": 61,
+      "accepted": 1,
+      "rejected": 60,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 1516,
+      "alignedWords": 10,
+      "priorityWords": 1153,
+      "alignedPriorityWords": 5
+    },
+    "1-john": {
+      "verses": 105,
+      "candidates": 105,
+      "accepted": 0,
+      "rejected": 105,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 2455,
+      "alignedWords": 0,
+      "priorityWords": 2150,
+      "alignedPriorityWords": 0
+    },
+    "2-john": {
+      "verses": 13,
+      "candidates": 13,
+      "accepted": 0,
+      "rejected": 13,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 296,
+      "alignedWords": 0,
+      "priorityWords": 249,
+      "alignedPriorityWords": 0
+    },
+    "3-john": {
+      "verses": 14,
+      "candidates": 14,
+      "accepted": 0,
+      "rejected": 14,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 279,
+      "alignedWords": 0,
+      "priorityWords": 225,
+      "alignedPriorityWords": 0
+    },
+    "jude": {
+      "verses": 25,
+      "candidates": 25,
+      "accepted": 0,
+      "rejected": 25,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 606,
+      "alignedWords": 0,
+      "priorityWords": 449,
+      "alignedPriorityWords": 0
+    },
+    "revelation": {
+      "verses": 404,
+      "candidates": 404,
+      "accepted": 0,
+      "rejected": 404,
+      "ambiguous": 0,
+      "missing": 0,
+      "words": 11375,
+      "alignedWords": 0,
+      "priorityWords": 9145,
+      "alignedPriorityWords": 0
+    }
+  },
+  "reasons": {
+    "no unchanged complete English sentence": 24844,
+    "ambiguous original occurrence": 53,
+    "original position, spelling, identity or morphology differs": 142,
+    "explicit milestone identity or morphology differs": 1,
+    "unbalanced alignment": 2,
+    "unsupported English markup": 229,
+    "original verse missing or token count differs": 48
+  },
+  "files": {
+    "genesis/10.json": {
+      "sha256": "856e51fd0230d0b495ef39685f52786f7f81a5f973caeba706f020a958e20b41",
+      "bytes": 700
+    },
+    "genesis/11.json": {
+      "sha256": "8946c747004b29f61fea141cec20903157e61c60b2eaa0d456f400219d734729",
+      "bytes": 876
+    },
+    "genesis/22.json": {
+      "sha256": "8fa345290065d2d088647ec78370282c79d81afb98bfa91ffb0d74c01eaf8ddb",
+      "bytes": 591
+    },
+    "genesis/23.json": {
+      "sha256": "c753644ab61a1a0428d5031a586ed651dc4df41a37602c3da0b8a0fb45f152a4",
+      "bytes": 1453
+    },
+    "genesis/25.json": {
+      "sha256": "5111d397fda73e4ef0064da7e91cb10faab670f9394ac3e042e656479f484874",
+      "bytes": 1420
+    },
+    "genesis/29.json": {
+      "sha256": "07c4df1cce03902a8b2c75cfa435176bf71addc9f018114a56831c562ab59765",
+      "bytes": 1010
+    },
+    "genesis/33.json": {
+      "sha256": "23f6baa21f37205f10703a55c9d7033456dcaa403868ab582fc5c711711d740e",
+      "bytes": 932
+    },
+    "genesis/45.json": {
+      "sha256": "0af796e3b10e5118b8e037b0c73ebb152e8410971b796089ea28488be14fec77",
+      "bytes": 1003
+    },
+    "genesis/46.json": {
+      "sha256": "17b89b0f3cf75e50aaadcc007dc66e725a124c3ec0bfb6714a0b472b6e14cb52",
+      "bytes": 6411
+    },
+    "genesis/49.json": {
+      "sha256": "0ee32e3c67c8a181ffbf4fd1e8620fbe08622a444f2199874cd7508836103ac3",
+      "bytes": 854
+    },
+    "exodus/1.json": {
+      "sha256": "004cc994e7e8fe0f12ccfa13029206982f2172053c9146ef7cec99215bdb20a9",
+      "bytes": 551
+    },
+    "exodus/15.json": {
+      "sha256": "d95c2c895c4abb91293c14b6cd6c4b8918cb91d2b2c253b590c8aa9b4e9cacbe",
+      "bytes": 566
+    },
+    "exodus/16.json": {
+      "sha256": "bd1a3227ff76ace8d44f0310994c603c1a8fceb550443328fbe028f170176865",
+      "bytes": 322
+    },
+    "exodus/21.json": {
+      "sha256": "3f0013aa0e71e620c401f1682a725f9d7f4c8f6057d6eb574b463448d9b24d04",
+      "bytes": 619
+    },
+    "leviticus/4.json": {
+      "sha256": "f4c9e15d5312eb6ae897c9eb728bb34abc8a5f64f3c1a7be624ea7f8def636c7",
+      "bytes": 970
+    },
+    "leviticus/7.json": {
+      "sha256": "5645d494d835463dcaf3df94a36d9f4837d0f9a0378070eb55c9ee4fb1bbfad6",
+      "bytes": 634
+    },
+    "leviticus/11.json": {
+      "sha256": "7863385b6e5f16de9fe848a663d346ff7861148844176f93c319bbe47f8ab02d",
+      "bytes": 1739
+    },
+    "leviticus/19.json": {
+      "sha256": "fb3249178ef3b05b47ba3e3c4aa01d04ba08a851e2a356956ee500f645c879d2",
+      "bytes": 1621
+    },
+    "leviticus/20.json": {
+      "sha256": "d9de432235fe8c083dcb0dd8e7303c820f5de58d05c2bf6974d1911b1d820871",
+      "bytes": 547
+    },
+    "numbers/32.json": {
+      "sha256": "8e4397a4b5959c3d14658e76beca84ea55f00b5da09aee95634f3d824c8487d8",
+      "bytes": 705
+    },
+    "deuteronomy/28.json": {
+      "sha256": "b7b51d8a1eadc9f28050b5da62a34006c964cfc227a9d6c8211022c957e03dc1",
+      "bytes": 717
+    },
+    "deuteronomy/32.json": {
+      "sha256": "ee560ea6441bcc5d8d1aeae5385ea280cd836a2496522a6915899dd2f2d40d19",
+      "bytes": 436
+    },
+    "joshua/12.json": {
+      "sha256": "b4e058861b6d2e60df12c86b1314b156305ebf8cb01ee4f6bf1277caaeefa63b",
+      "bytes": 5076
+    },
+    "joshua/13.json": {
+      "sha256": "04ff2c2b4dc99c9ed0f5362a8abc4edd6bcc7712b9ed5d07137172410850dc09",
+      "bytes": 245
+    },
+    "joshua/15.json": {
+      "sha256": "90e513856156b6bd395416a6ec6d899f4b9fd61dbe6dfdee9e4be5d632e9890b",
+      "bytes": 3294
+    },
+    "joshua/18.json": {
+      "sha256": "72edffefa80de86e538b29a4161a35dbedd144642ffb6e0bed58284b8e598566",
+      "bytes": 730
+    },
+    "joshua/19.json": {
+      "sha256": "49431fefd5c055579b00acc88116f9fb50fe6e598ce318239def2b674aad9e1a",
+      "bytes": 2328
+    },
+    "judges/5.json": {
+      "sha256": "009feedb0675f88dfbadde8dbbc5d108f94134a1c170d85425a0e78a66ed3642",
+      "bytes": 850
+    },
+    "judges/9.json": {
+      "sha256": "e19752674dd665612795f620954caa828ac916f496103cf962378790a8358274",
+      "bytes": 910
+    },
+    "1-samuel/10.json": {
+      "sha256": "a2f7126a5c2e1bf1b7fe5f3424e66caf996cef2a89034663c9591056889048d7",
+      "bytes": 1340
+    },
+    "1-samuel/22.json": {
+      "sha256": "fd55b6d89e6410b1b7120c9ade792890a05805bc654218f4034e320ae3bcf490",
+      "bytes": 894
+    },
+    "2-samuel/1.json": {
+      "sha256": "ab78056b06c7c385efb8fd4fcf2b88e71bcc24caac6bf0fae1e423ee2bf5db1a",
+      "bytes": 553
+    },
+    "2-samuel/2.json": {
+      "sha256": "a12745af2f7fd829cdaacdf84af5bdf491b7cb31dba2922f724eea10f0c2828f",
+      "bytes": 992
+    },
+    "2-samuel/3.json": {
+      "sha256": "173cddfae35c336e4235b08d10706495bcb6fbf9013b41eec41145a2be79921c",
+      "bytes": 646
+    },
+    "2-samuel/5.json": {
+      "sha256": "b35b5fe589dff078b652ed8b66396c37a815077c721d2e5bce99a74f674543b0",
+      "bytes": 330
+    },
+    "1-kings/15.json": {
+      "sha256": "8f6cfe953c286bfb3707ff85b585db0c4a68dddb363dd4faa3e24ec6c9b1be8e",
+      "bytes": 632
+    },
+    "2-kings/2.json": {
+      "sha256": "be53b83362b4a879b1b101c361fb22c241c371c1e9a34256763ab3bc800fa8c5",
+      "bytes": 1310
+    },
+    "2-kings/3.json": {
+      "sha256": "7866c6d9ba51bae02225ce26efc1046022b7a95f9b674199be9c448367a8f7f3",
+      "bytes": 938
+    },
+    "2-kings/4.json": {
+      "sha256": "7c30c72d0fa5baa6c35289f1020d2f11ba833c7ae3d838d3e411237790543fba",
+      "bytes": 1061
+    },
+    "2-kings/6.json": {
+      "sha256": "01c6de4e75ac8236821a0f275626c0dbd4c2cf64dca68b52e13da190d0e6a354",
+      "bytes": 1254
+    },
+    "2-kings/10.json": {
+      "sha256": "a1dcaec51f0dde00b03e9128218f1fe00252d8a41f623fedb6627e9b980a2b98",
+      "bytes": 1088
+    },
+    "2-kings/19.json": {
+      "sha256": "f6c1bb1185fb565475bb7b4a4c1d2d26da489098c01140b58a55615eff97f273",
+      "bytes": 850
+    },
+    "1-chronicles/1.json": {
+      "sha256": "def3e94adbaf3a31ad132542560fd644fb8269f5e930485138a1a44c7393b700",
+      "bytes": 2757
+    },
+    "1-chronicles/2.json": {
+      "sha256": "45f49481657ef4f86b2421563df2c03876d872ad6d7a47b3f1b5f7058f6d13f5",
+      "bytes": 2620
+    },
+    "1-chronicles/3.json": {
+      "sha256": "d86818cd1fa00a8e916ddba1ae9f79a05ad12bdc238f154cf7cab3e413403914",
+      "bytes": 2746
+    },
+    "1-chronicles/4.json": {
+      "sha256": "268afd3f6838657ed25b67bb015be3b0d1644e25a36c59435e5b83226873e7f4",
+      "bytes": 2796
+    },
+    "1-chronicles/5.json": {
+      "sha256": "433178b29c03ea251b2236f9964703d94337b5df0b813a02cf48bd49eb017d59",
+      "bytes": 400
+    },
+    "1-chronicles/6.json": {
+      "sha256": "2714c5f20792187359d0c38dbd74b637249e3893cf2100f62282e53560d90136",
+      "bytes": 8583
+    },
+    "1-chronicles/7.json": {
+      "sha256": "e4d21f7e462cd932df08e5518c30dbdefc58d52ee8fbe92735c2d1d34db1187f",
+      "bytes": 3952
+    },
+    "1-chronicles/8.json": {
+      "sha256": "bc1064d1ca9a836f943bed2674d3f76af48963b6f241865888f5b266c92e917b",
+      "bytes": 3367
+    },
+    "1-chronicles/9.json": {
+      "sha256": "45df28f4de19716ca493841de869e7f8a7eaeb2354cca6fd8d211744f01a2130",
+      "bytes": 343
+    },
+    "1-chronicles/12.json": {
+      "sha256": "05e4c693b9198a2a8b0e563b021d4398750f36d96d7a2b7b7561badda46c7944",
+      "bytes": 931
+    },
+    "1-chronicles/14.json": {
+      "sha256": "23258780e232aafca21fc80081abac60cd368e3401c9b3faa64449bfeea08915",
+      "bytes": 795
+    },
+    "1-chronicles/23.json": {
+      "sha256": "0e93dcc6d850f6eb63639cb6d3f05807d2ffc02467477cf0dc1a9d8c50aa2bf2",
+      "bytes": 984
+    },
+    "1-chronicles/24.json": {
+      "sha256": "7d817f62dba9d73494c0d9872e3be3a6bc6efb6cb2459b6033d63742af308ab9",
+      "bytes": 1919
+    },
+    "1-chronicles/26.json": {
+      "sha256": "509804ba2d78c84f117a7b99beac0cb6af601e8b0785570b4af7ce614cc23611",
+      "bytes": 2094
+    },
+    "2-chronicles/3.json": {
+      "sha256": "72483d6b35341fc5509d603eaa8d98f4cc0f5ec42a03639e8cf54268646ff3a3",
+      "bytes": 608
+    },
+    "2-chronicles/9.json": {
+      "sha256": "8c01a281f710d0348c914fee2d03a644fba8d754307d6114aeb4bd4d7875c7d5",
+      "bytes": 561
+    },
+    "2-chronicles/11.json": {
+      "sha256": "a7eb25321765875472156a41aa028ff3662824a0aa554c8fcaf080cbc411213b",
+      "bytes": 693
+    },
+    "2-chronicles/20.json": {
+      "sha256": "0f918ab7bbaaf91da3da43b276e46b36b865b222faf145eeaae6c2856c3ad61f",
+      "bytes": 1190
+    },
+    "2-chronicles/29.json": {
+      "sha256": "bff92c5aaea6bf655a566e3fdb8833b1fba62207e1523ef40ec5cb8561fa3c44",
+      "bytes": 1092
+    },
+    "ezra/2.json": {
+      "sha256": "723a66865cce3eee79f14837dfe89a68a6c1dea7ce3141586748248996a46024",
+      "bytes": 1245
+    },
+    "ezra/7.json": {
+      "sha256": "19c9efcfbcd4f68e7a82d291091cdb21dd27bc783937eac86df784772db8ce6c",
+      "bytes": 2190
+    },
+    "ezra/10.json": {
+      "sha256": "02025f7bc3b7c30411939302d8ce0568d8b657e87785af5628fb8814c88d5107",
+      "bytes": 992
+    },
+    "nehemiah/10.json": {
+      "sha256": "590cc38a8c48453605e38117a750c141adf7c6771d3c58f9dda02707937a14b7",
+      "bytes": 4282
+    },
+    "nehemiah/11.json": {
+      "sha256": "360d13c5d76d219e811f67512a54c5497725f55f7547213e3a4fc98058c58f67",
+      "bytes": 430
+    },
+    "nehemiah/12.json": {
+      "sha256": "4da620d48b8d5b1abc790610b7890c3bfcf2b896536e7f636755d5cc9c0aac16",
+      "bytes": 3965
+    },
+    "esther/9.json": {
+      "sha256": "9effe900fb869c44ad09cf2ce7bf58228e0989367d091f8a374315a7c9ad5253",
+      "bytes": 371
+    },
+    "job/5.json": {
+      "sha256": "8c39e37d0f56892c7d66de754236001d5bf25ae7aa2ed81715f9ddec82428195",
+      "bytes": 585
+    },
+    "job/9.json": {
+      "sha256": "5ab10a9359a3a0c9933165a7fe5362088eb6f982b62c83522458267ac47915c8",
+      "bytes": 849
+    },
+    "job/14.json": {
+      "sha256": "a3c6e322c031d6fbe71029df53d48db42dd959bc26e4851351d199b9998e7e74",
+      "bytes": 526
+    },
+    "job/15.json": {
+      "sha256": "3c8d01d09a7c370dd5e11ca3a3a7f15d12b042f52f680ebce1fd7f4913738f7b",
+      "bytes": 477
+    },
+    "job/33.json": {
+      "sha256": "faeff6cd12c6645737b9e5bde0a9fe320e1c3be379f1cde8848622bb53d38eb4",
+      "bytes": 499
+    },
+    "job/38.json": {
+      "sha256": "e3d8f5ef19f38cb8bd015f34c0dd952af0c1e64250c36a098985ae67364ba03c",
+      "bytes": 950
+    },
+    "psalms/2.json": {
+      "sha256": "422dcd0577c3726faf0da44623fe2a0baecf04fa6934cc0d056f5853fd9eb256",
+      "bytes": 444
+    },
+    "psalms/7.json": {
+      "sha256": "ec747a12f5fd8b303b677dafb5796d6a6d56c170622562ae10e8d38f8e3528a0",
+      "bytes": 404
+    },
+    "psalms/16.json": {
+      "sha256": "77812fc45526b23b43e65fc00c0a2f8b37101b854aebb616e0023fb0389c9050",
+      "bytes": 534
+    },
+    "psalms/24.json": {
+      "sha256": "caf86e663a59ddade7c1c080c3a3953d0294a0e332bc3a07e9315b2314e033e6",
+      "bytes": 649
+    },
+    "psalms/43.json": {
+      "sha256": "677430fbe3aa5482621e76f29976509dfb2714dabc4180761d5593cc7ea1ad60",
+      "bytes": 743
+    },
+    "psalms/87.json": {
+      "sha256": "be0ab08e93288a81ca9aeb853a4984c67ab43f057f8954ec3a1c166594084dba",
+      "bytes": 577
+    },
+    "psalms/92.json": {
+      "sha256": "33f9bc848b5ffcec222dbddcd72b7ea7c7258449b5fe2356397823e54c7d9a5b",
+      "bytes": 493
+    },
+    "psalms/94.json": {
+      "sha256": "aab730dc5a95149a830e8bcdfe216b17a6ffcc97529ed9af0cd662cf34844816",
+      "bytes": 490
+    },
+    "psalms/95.json": {
+      "sha256": "f2e54bb4ee9569306e7e8ade4f5289488e652cd51c6a8c2be2d87df3a3804f16",
+      "bytes": 557
+    },
+    "psalms/96.json": {
+      "sha256": "a66216771b27b14e6ac8eb63a191558809f706ece1c863515a9d7617f7da9d47",
+      "bytes": 645
+    },
+    "psalms/97.json": {
+      "sha256": "5a735cc0cf074baa32e48405d6e60bf65d97bfd0dda9f130829cc8fd4b1cca2c",
+      "bytes": 716
+    },
+    "psalms/103.json": {
+      "sha256": "dd87fd2bf22a351f40b41db7f311573a457664d2d736af28e3911353cc695a3d",
+      "bytes": 562
+    },
+    "psalms/108.json": {
+      "sha256": "a0c3e7cd34394db2de940bbc761f9d2a69521f511bee22912343334df1ace83e",
+      "bytes": 466
+    },
+    "psalms/115.json": {
+      "sha256": "1b7a05e82ac92aaeb6b3ef6c98bb06e76a7bf8163ff137485b119dbb3ed4ac61",
+      "bytes": 509
+    },
+    "psalms/116.json": {
+      "sha256": "aa9135404183d79ad7a61e7c676019de4fe027ecf3ee0bb2da2b6661efa90c0a",
+      "bytes": 372
+    },
+    "psalms/117.json": {
+      "sha256": "38208e2ebc465449419098a3038b20f05fbd32b945f60384aed70f96528af180",
+      "bytes": 528
+    },
+    "psalms/118.json": {
+      "sha256": "05444e992da6b283223dd05c2f919c1063e4c88b8f4fc3581b220e7a598b05a1",
+      "bytes": 491
+    },
+    "psalms/119.json": {
+      "sha256": "6c9b591d5e78b64132a39342801281eb20b09a87770538ef3b8c7653fb698f18",
+      "bytes": 913
+    },
+    "psalms/135.json": {
+      "sha256": "d685c43ce834a65dfb41251c8a8f3536f823e7d4215cb37e951b80376ef408bb",
+      "bytes": 716
+    },
+    "psalms/148.json": {
+      "sha256": "da932c0c1ddf58c716a0ebf0217f9f186da237a03dbc515c05f3a0465f2d929b",
+      "bytes": 1158
+    },
+    "psalms/150.json": {
+      "sha256": "9b68daf54451b78e3ac37602d4eeca9723835811dc29ada73772184a37346267",
+      "bytes": 450
+    },
+    "proverbs/4.json": {
+      "sha256": "834b0eebcda8427a29a64d5b73d2c9e73b0925e49e6a59576d8512f07af3bf08",
+      "bytes": 493
+    },
+    "proverbs/14.json": {
+      "sha256": "1e82a76ce7ffecd55eeafdf11c09b5c1d8242a9694b6d40be06d8693b4eb29ed",
+      "bytes": 978
+    },
+    "proverbs/15.json": {
+      "sha256": "d64546809e3049881dfa7b880341ac14ddffd473e4d8e4aa49db0173ad5fa391",
+      "bytes": 534
+    },
+    "proverbs/22.json": {
+      "sha256": "f52aefdec83f4d545b97f397d58dcd2261f6913f644e4b720dbc8a2ad56448d6",
+      "bytes": 642
+    },
+    "proverbs/26.json": {
+      "sha256": "4fa8d32994431a902fbc821de660153c4db27180f99fc346c9577adbcde3a293",
+      "bytes": 507
+    },
+    "proverbs/29.json": {
+      "sha256": "dc3877b247a4c5567d3a058584238e5808ff0bd138837e0f508e7a6a9f902d2b",
+      "bytes": 510
+    },
+    "proverbs/30.json": {
+      "sha256": "c9649b6f4b812c0da92751987bbbab120387d8330ca80be2ecad0c53393ebec6",
+      "bytes": 1358
+    },
+    "ecclesiastes/3.json": {
+      "sha256": "3c0ce85482435452a21e16184ff75538cbb6a1274d6167b00708fa1ac06425bb",
+      "bytes": 1281
+    },
+    "song-of-solomon/2.json": {
+      "sha256": "77ee25d8268cb146e866abacdf1f91c42fa98c2b594ae4af1cd3cbdc21b1a792",
+      "bytes": 664
+    },
+    "isaiah/10.json": {
+      "sha256": "48fcd5db647f92dee2d5b44218cf453ec8f5f6b131b0272ed07684658930c1c6",
+      "bytes": 912
+    },
+    "isaiah/19.json": {
+      "sha256": "c0d5e83e1a853fdf59515a6529f240aa105ecd583b12064448f369c65cb3c2d2",
+      "bytes": 977
+    },
+    "isaiah/33.json": {
+      "sha256": "0ab2782eeebc2b63c3c3d88ab7a0e1549e33e057542a6fe6e2ff174a84a0722d",
+      "bytes": 509
+    },
+    "isaiah/34.json": {
+      "sha256": "783219f63b15a1d58dbb4e0062e561e7ec16cb5f7512831b45aa4aaabfb6a801",
+      "bytes": 621
+    },
+    "isaiah/36.json": {
+      "sha256": "8c14e66e921071b8aabbef66d6bb20073faca91b717a1f7cd43f76eb86a148ff",
+      "bytes": 853
+    },
+    "isaiah/38.json": {
+      "sha256": "b5a7a1b18dae6da765b20cf099775123951f5ba87149b0d3b4b7a12c2d9e44a3",
+      "bytes": 549
+    },
+    "isaiah/54.json": {
+      "sha256": "9ca3fca9ec95234e64d714a6ac1afcd4fe0455caeaa21126f9113b75ce0bafdc",
+      "bytes": 814
+    },
+    "isaiah/64.json": {
+      "sha256": "119eb28874999a1e2a9d548f513510e882c223e1d39b6d49db0ee3c906a5b437",
+      "bytes": 608
+    },
+    "jeremiah/8.json": {
+      "sha256": "d96c0e2495ae1a40d52054880ee3f09e5c18704364c43edc1b98ac051e4d7e79",
+      "bytes": 684
+    },
+    "jeremiah/13.json": {
+      "sha256": "93e52d8d0227763febc58b8bfacc23799192f0c8d5de791978f5313871a0b69d",
+      "bytes": 742
+    },
+    "jeremiah/36.json": {
+      "sha256": "faf5190ef03688e0024ade301903bd3903e131af509e09e83836a46f69aba4d8",
+      "bytes": 647
+    },
+    "jeremiah/49.json": {
+      "sha256": "1aae6c801fde040ff3a932ad6ce2135a54bf6fe9347f95745f284998d507ca4d",
+      "bytes": 839
+    },
+    "ezekiel/6.json": {
+      "sha256": "edf36c4df5432ffe81dce27e72305a086e8a734f0a462b71d84b50566465a67e",
+      "bytes": 473
+    },
+    "ezekiel/11.json": {
+      "sha256": "bc0a342494aaab4e357d1e10f840bc4fa414aa4402d82a067b73227e937d8ba1",
+      "bytes": 699
+    },
+    "ezekiel/13.json": {
+      "sha256": "fbbe217e6daaa8f34ea4d4de12169b5f9e6de9ab8a37d1649f46efc442030310",
+      "bytes": 2262
+    },
+    "ezekiel/19.json": {
+      "sha256": "122c79b05bf0a489722227042a1af8f67d2b8bc187ca28a4db8a504bd6f05079",
+      "bytes": 423
+    },
+    "ezekiel/20.json": {
+      "sha256": "2dded2c8407f587ef69b086f78832da587033a9772bc3bf4b0dfd99800d8c815",
+      "bytes": 872
+    },
+    "ezekiel/29.json": {
+      "sha256": "74e85eadf0670954a99a9a077c0a5be9fefd5e210e9c1e0f1e6ea36222383ed9",
+      "bytes": 922
+    },
+    "ezekiel/34.json": {
+      "sha256": "de6694457281b7bb3e46a13f3aba9ea0e9a180457fd96d14c52bfea83a10643a",
+      "bytes": 1470
+    },
+    "ezekiel/35.json": {
+      "sha256": "1c0e1001991a848773fd3db2d3b3a3fe0f040e32b14b54e99259eccd27bccc5c",
+      "bytes": 642
+    },
+    "ezekiel/36.json": {
+      "sha256": "f0fa6da962743bf578587d58811e5f9630ce56cb6f337bcb791c89a4fa3ef0d7",
+      "bytes": 838
+    },
+    "ezekiel/39.json": {
+      "sha256": "8980b5dce1b7d2259bcf5098198e389b4df86f8375b687e8e56db0bafe5f21cb",
+      "bytes": 1268
+    },
+    "daniel/1.json": {
+      "sha256": "a493a1d019778c1aeaf0a45065b157313386f9d6f82c9458a61edfebf76965cc",
+      "bytes": 996
+    },
+    "daniel/2.json": {
+      "sha256": "54981f4f68108509c2166358e68f6390680fbc381b410fbd5322a47ec16fab03",
+      "bytes": 1214
+    },
+    "daniel/3.json": {
+      "sha256": "51d73c817728f29b7afab77376f75526a90b2cba3b13df7fac651dad188acd99",
+      "bytes": 709
+    },
+    "daniel/5.json": {
+      "sha256": "571cd5fd9eb3ea723a9f4b47249ed050247b7b00ac1193744033a9ae600a40dd",
+      "bytes": 1416
+    },
+    "hosea/5.json": {
+      "sha256": "7499eded6b989558cb673af868cb12373441be9e34924041d5ee33cb40c930c2",
+      "bytes": 1446
+    },
+    "hosea/9.json": {
+      "sha256": "0a29b88a9d09338efacb39a12d477add167bcdf10a734e111ba7a4b076c17219",
+      "bytes": 1305
+    },
+    "joel/3.json": {
+      "sha256": "d8075401c7be597ef95a919e83bb0f61563896499829552cdb4748d21e74208c",
+      "bytes": 678
+    },
+    "amos/5.json": {
+      "sha256": "727c2c56f2f1e3e8e21e08c12630be383801667f04642ff0ba84e85d4625a285",
+      "bytes": 550
+    },
+    "micah/4.json": {
+      "sha256": "bcd5b79555bb1d8c506d1cffd8cbe1a3783470d0ca60d6fdb9f003d03d82b393",
+      "bytes": 1370
+    },
+    "micah/7.json": {
+      "sha256": "6bac51c60c6b39fdd4109888e6f61281ef0baa0ce0c802562cc3b7af0c4e4ef0",
+      "bytes": 1096
+    },
+    "nahum/1.json": {
+      "sha256": "6d7721d8fa7819ee983a714f4e0a141206cea79e00de6063bf49fb2d614b5148",
+      "bytes": 983
+    },
+    "malachi/1.json": {
+      "sha256": "a65d80fd1b3dad6519bd377b03e36edc974f9ea1c9ca22911a0dfd46ca329601",
+      "bytes": 961
+    },
+    "malachi/3.json": {
+      "sha256": "d14d4fd411be92f5b340313dad3d86c1e7188e1d30180277530986bfc462417d",
+      "bytes": 801
+    },
+    "matthew/4.json": {
+      "sha256": "2d0c013f59690c05a9dfa1dd74555a8805dcb784ed28185d1492800e75b76f8d",
+      "bytes": 882
+    },
+    "matthew/12.json": {
+      "sha256": "8516a2a7a570ddd1f557c4e68bb7183a8797ae3e057c6682a23a606e960dd1e6",
+      "bytes": 539
+    },
+    "john/1.json": {
+      "sha256": "b5461f2bd8ab7515e3bedc374351f1c650d6e5a4f5727d7772c02b448a9db634",
+      "bytes": 1630
+    },
+    "john/9.json": {
+      "sha256": "5192e0b9a35c19929dcb10e4b1aeb986468233bd4ec21c49616fbab32946a79b",
+      "bytes": 561
+    },
+    "john/11.json": {
+      "sha256": "801345a91a38acf26e0821f2203eb4ae006103a8c8314062db45388343d43522",
+      "bytes": 180
+    },
+    "1-corinthians/15.json": {
+      "sha256": "ac59744b1cfb296afa21ed837efe0dc22810a47f94b8704ed0eca474fb2a6fd9",
+      "bytes": 854
+    },
+    "1-timothy/4.json": {
+      "sha256": "78f750331ab68fc91fed8dbf8e9bba7635e411ad53707cf1694086a09f18d708",
+      "bytes": 248
+    },
+    "1-timothy/6.json": {
+      "sha256": "75992c25f3f6a51c50fd45b62e4165ab5aba51a2617f0046b5e7acfcfda0fdcb",
+      "bytes": 489
+    },
+    "2-timothy/4.json": {
+      "sha256": "596ec9bbd42c6ee8ce3a12da2a67b719c57e48f0b5241bf673c9d944a0c93fa4",
+      "bytes": 329
+    },
+    "2-peter/1.json": {
+      "sha256": "484c6269fd585f78aa80d433e57347823fe895cfbfe464d0c7561f1523c43aed",
+      "bytes": 684
+    },
+    "index.json": {
+      "sha256": "acc13b078f3a4a8b1b5cca7f02f9bd9fd7ad390eb70facba78ebc5552ab059e2",
+      "bytes": 862
+    }
+  },
+  "priorityForms": [
+    "a",
+    "above",
+    "all",
+    "am",
+    "and",
+    "answer",
+    "are",
+    "babylon",
+    "be",
+    "become",
+    "before",
+    "benjamin",
+    "born",
+    "brought",
+    "build",
+    "but",
+    "by",
+    "call",
+    "came",
+    "children",
+    "david",
+    "day",
+    "dead",
+    "do",
+    "earth",
+    "ephraim",
+    "far",
+    "field",
+    "for",
+    "from",
+    "give",
+    "given",
+    "glory",
+    "god",
+    "gods",
+    "gold",
+    "gone",
+    "great",
+    "hand",
+    "have",
+    "he",
+    "head",
+    "hear",
+    "him",
+    "his",
+    "holy",
+    "how",
+    "i",
+    "in",
+    "into",
+    "is",
+    "israel",
+    "it",
+    "its",
+    "jerusalem",
+    "jesus",
+    "judah",
+    "king",
+    "kings",
+    "known",
+    "life",
+    "light",
+    "like",
+    "lord",
+    "love",
+    "made",
+    "man",
+    "me",
+    "men",
+    "mighty",
+    "more",
+    "moses",
+    "my",
+    "no",
+    "of",
+    "on",
+    "one",
+    "out",
+    "peoples",
+    "power",
+    "princes",
+    "reigned",
+    "sent",
+    "sheep",
+    "son",
+    "spirit",
+    "take",
+    "the",
+    "them",
+    "then",
+    "there",
+    "these",
+    "though",
+    "three",
+    "to",
+    "turn",
+    "up",
+    "very",
+    "voice",
+    "was",
+    "water",
+    "ways",
+    "we",
+    "were",
+    "which",
+    "while",
+    "who",
+    "why",
+    "wicked",
+    "wilderness",
+    "will",
+    "wisdom",
+    "with",
+    "word",
+    "world",
+    "would",
+    "wrath",
+    "years",
+    "you",
+    "your",
+    "yourself"
+  ],
+  "modes": {
+    "sentence": 25,
+    "verse": 57
+  },
+  "priorityOccurrences": {
+    "i": 10,
+    "will": 9,
+    "give": 1,
+    "the": 64,
+    "of": 61,
+    "field": 1,
+    "take": 1,
+    "it": 5,
+    "from": 2,
+    "me": 3,
+    "and": 15,
+    "my": 5,
+    "dead": 1,
+    "there": 2,
+    "then": 5,
+    "we": 1,
+    "water": 2,
+    "sheep": 1,
+    "son": 11,
+    "you": 11,
+    "have": 4,
+    "gone": 1,
+    "up": 2,
+    "judah": 1,
+    "benjamin": 1,
+    "king": 24,
+    "jerusalem": 2,
+    "one": 22,
+    "in": 15,
+    "would": 3,
+    "how": 1,
+    "mighty": 1,
+    "these": 1,
+    "were": 1,
+    "born": 1,
+    "to": 9,
+    "david": 1,
+    "he": 4,
+    "reigned": 1,
+    "three": 1,
+    "years": 1,
+    "who": 1,
+    "came": 1,
+    "with": 3,
+    "which": 1,
+    "holy": 1,
+    "turn": 1,
+    "earth": 3,
+    "is": 8,
+    "given": 1,
+    "into": 2,
+    "hand": 1,
+    "wicked": 1,
+    "its": 1,
+    "call": 1,
+    "answer": 1,
+    "do": 1,
+    "wisdom": 1,
+    "yourself": 1,
+    "why": 1,
+    "your": 2,
+    "are": 3,
+    "very": 1,
+    "be": 3,
+    "above": 2,
+    "all": 4,
+    "gods": 2,
+    "far": 1,
+    "made": 1,
+    "known": 1,
+    "his": 2,
+    "ways": 1,
+    "moses": 1,
+    "children": 1,
+    "israel": 1,
+    "kings": 1,
+    "peoples": 1,
+    "princes": 1,
+    "voice": 1,
+    "head": 1,
+    "gold": 1,
+    "babylon": 1,
+    "was": 7,
+    "brought": 1,
+    "before": 1,
+    "ephraim": 1,
+    "become": 1,
+    "a": 2,
+    "day": 2,
+    "out": 1,
+    "wrath": 1,
+    "on": 1,
+    "them": 1,
+    "like": 1,
+    "god": 3,
+    "hear": 1,
+    "build": 1,
+    "though": 1,
+    "no": 1,
+    "more": 1,
+    "jesus": 2,
+    "by": 2,
+    "spirit": 1,
+    "wilderness": 1,
+    "for": 1,
+    "man": 1,
+    "lord": 1,
+    "word": 3,
+    "him": 1,
+    "life": 2,
+    "light": 2,
+    "men": 1,
+    "while": 1,
+    "am": 2,
+    "world": 2,
+    "glory": 1,
+    "power": 1,
+    "but": 2,
+    "great": 1,
+    "sent": 1,
+    "love": 1
+  },
+  "berean": {
+    "accepted": 261,
+    "rejected": 30833,
+    "ambiguous": 0,
+    "missing": 4,
+    "missingReferences": [
+      "romans 14:24",
+      "romans 14:25",
+      "romans 14:26",
+      "2-corinthians 13:14"
+    ],
+    "reasons": {
+      "no unchanged complete English sentence": 30639,
+      "Berean witness order, identity, surface or morphology differs": 161,
+      "Berean has no nonsupplied group with supported morphology": 9,
+      "unchanged English has no complete alignment group": 12,
+      "Berean witness token count differs": 12
+    },
+    "modes": {
+      "verse": 186,
+      "sentence": 75
+    },
+    "books": {
+      "genesis": {
+        "accepted": 19,
+        "rejected": 1514,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "exodus": {
+        "accepted": 3,
+        "rejected": 1210,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "leviticus": {
+        "accepted": 9,
+        "rejected": 850,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "numbers": {
+        "accepted": 1,
+        "rejected": 1287,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "deuteronomy": {
+        "accepted": 2,
+        "rejected": 957,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "joshua": {
+        "accepted": 35,
+        "rejected": 623,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "judges": {
+        "accepted": 1,
+        "rejected": 617,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "ruth": {
+        "accepted": 0,
+        "rejected": 85,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "1-samuel": {
+        "accepted": 2,
+        "rejected": 808,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "2-samuel": {
+        "accepted": 2,
+        "rejected": 693,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "1-kings": {
+        "accepted": 0,
+        "rejected": 816,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "2-kings": {
+        "accepted": 6,
+        "rejected": 713,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "1-chronicles": {
+        "accepted": 79,
+        "rejected": 863,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "2-chronicles": {
+        "accepted": 6,
+        "rejected": 816,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "ezra": {
+        "accepted": 8,
+        "rejected": 272,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "nehemiah": {
+        "accepted": 26,
+        "rejected": 380,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "esther": {
+        "accepted": 1,
+        "rejected": 166,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "job": {
+        "accepted": 3,
+        "rejected": 1067,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "psalms": {
+        "accepted": 17,
+        "rejected": 2444,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "proverbs": {
+        "accepted": 8,
+        "rejected": 907,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "ecclesiastes": {
+        "accepted": 1,
+        "rejected": 221,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "song-of-solomon": {
+        "accepted": 0,
+        "rejected": 117,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "isaiah": {
+        "accepted": 8,
+        "rejected": 1284,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "jeremiah": {
+        "accepted": 4,
+        "rejected": 1360,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "lamentations": {
+        "accepted": 0,
+        "rejected": 154,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "ezekiel": {
+        "accepted": 11,
+        "rejected": 1262,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "daniel": {
+        "accepted": 1,
+        "rejected": 356,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "hosea": {
+        "accepted": 1,
+        "rejected": 196,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "joel": {
+        "accepted": 1,
+        "rejected": 72,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "amos": {
+        "accepted": 1,
+        "rejected": 145,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "obadiah": {
+        "accepted": 0,
+        "rejected": 21,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "jonah": {
+        "accepted": 0,
+        "rejected": 48,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "micah": {
+        "accepted": 0,
+        "rejected": 105,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "nahum": {
+        "accepted": 0,
+        "rejected": 47,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "habakkuk": {
+        "accepted": 0,
+        "rejected": 56,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "zephaniah": {
+        "accepted": 0,
+        "rejected": 53,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "haggai": {
+        "accepted": 0,
+        "rejected": 38,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "zechariah": {
+        "accepted": 0,
+        "rejected": 211,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "malachi": {
+        "accepted": 2,
+        "rejected": 53,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "matthew": {
+        "accepted": 0,
+        "rejected": 1071,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "mark": {
+        "accepted": 0,
+        "rejected": 678,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "luke": {
+        "accepted": 0,
+        "rejected": 1150,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "john": {
+        "accepted": 1,
+        "rejected": 878,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "acts": {
+        "accepted": 0,
+        "rejected": 1004,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "romans": {
+        "accepted": 0,
+        "rejected": 430,
+        "ambiguous": 0,
+        "missing": 3
+      },
+      "1-corinthians": {
+        "accepted": 1,
+        "rejected": 436,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "2-corinthians": {
+        "accepted": 0,
+        "rejected": 256,
+        "ambiguous": 0,
+        "missing": 1
+      },
+      "galatians": {
+        "accepted": 0,
+        "rejected": 149,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "ephesians": {
+        "accepted": 0,
+        "rejected": 155,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "philippians": {
+        "accepted": 0,
+        "rejected": 104,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "colossians": {
+        "accepted": 0,
+        "rejected": 95,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "1-thessalonians": {
+        "accepted": 0,
+        "rejected": 89,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "2-thessalonians": {
+        "accepted": 0,
+        "rejected": 47,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "1-timothy": {
+        "accepted": 1,
+        "rejected": 112,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "2-timothy": {
+        "accepted": 0,
+        "rejected": 83,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "titus": {
+        "accepted": 0,
+        "rejected": 46,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "philemon": {
+        "accepted": 0,
+        "rejected": 25,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "hebrews": {
+        "accepted": 0,
+        "rejected": 303,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "james": {
+        "accepted": 0,
+        "rejected": 108,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "1-peter": {
+        "accepted": 0,
+        "rejected": 105,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "2-peter": {
+        "accepted": 0,
+        "rejected": 61,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "1-john": {
+        "accepted": 0,
+        "rejected": 105,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "2-john": {
+        "accepted": 0,
+        "rejected": 13,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "3-john": {
+        "accepted": 0,
+        "rejected": 14,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "jude": {
+        "accepted": 0,
+        "rejected": 25,
+        "ambiguous": 0,
+        "missing": 0
+      },
+      "revelation": {
+        "accepted": 0,
+        "rejected": 404,
+        "ambiguous": 0,
+        "missing": 0
+      }
+    }
+  },
+  "additions": {
+    "verses": 251,
+    "words": 1381,
+    "forms": {
+      "and": 57,
+      "i": 7,
+      "will": 11,
+      "give": 1,
+      "the": 160,
+      "of": 117,
+      "field": 1,
+      "take": 1,
+      "it": 1,
+      "from": 3,
+      "me": 3,
+      "my": 5,
+      "dead": 1,
+      "there": 4,
+      "sons": 33,
+      "were": 3,
+      "then": 6,
+      "we": 1,
+      "water": 2,
+      "sheep": 1,
+      "joseph": 2,
+      "am": 11,
+      "son": 46,
+      "judah": 3,
+      "but": 3,
+      "benjamin": 1,
+      "you": 12,
+      "have": 4,
+      "gone": 1,
+      "up": 1,
+      "waters": 1,
+      "so": 4,
+      "people": 2,
+      "is": 7,
+      "a": 12,
+      "sin": 2,
+      "offering": 1,
+      "every": 1,
+      "any": 2,
+      "little": 1,
+      "great": 1,
+      "lord": 28,
+      "head": 2,
+      "cities": 2,
+      "to": 16,
+      "god": 6,
+      "israel": 8,
+      "would": 3,
+      "saul": 1,
+      "be": 3,
+      "how": 1,
+      "mighty": 1,
+      "these": 1,
+      "born": 1,
+      "david": 1,
+      "in": 12,
+      "he": 5,
+      "reigned": 1,
+      "three": 1,
+      "years": 2,
+      "jerusalem": 3,
+      "king": 7,
+      "oil": 1,
+      "when": 1,
+      "words": 1,
+      "woman": 1,
+      "put": 1,
+      "father": 2,
+      "joshua": 1,
+      "moses": 1,
+      "had": 1,
+      "gold": 2,
+      "solomon": 1,
+      "all": 11,
+      "name": 1,
+      "was": 2,
+      "daughter": 1,
+      "who": 1,
+      "came": 1,
+      "with": 4,
+      "aaron": 1,
+      "chief": 1,
+      "priest": 1,
+      "which": 1,
+      "holy": 1,
+      "turn": 1,
+      "earth": 1,
+      "given": 1,
+      "into": 1,
+      "hand": 2,
+      "wicked": 1,
+      "its": 1,
+      "call": 1,
+      "answer": 1,
+      "do": 1,
+      "wisdom": 1,
+      "yourself": 1,
+      "fear": 1,
+      "heart": 1,
+      "battle": 1,
+      "why": 1,
+      "more": 4,
+      "than": 1,
+      "jacob": 1,
+      "your": 2,
+      "are": 7,
+      "very": 1,
+      "man": 4,
+      "gods": 5,
+      "above": 2,
+      "far": 1,
+      "nations": 2,
+      "right": 1,
+      "can": 1,
+      "young": 1,
+      "righteous": 1,
+      "forever": 1,
+      "mountains": 1,
+      "fruit": 1,
+      "let": 1,
+      "that": 1,
+      "has": 3,
+      "wine": 1,
+      "knowledge": 1,
+      "righteousness": 1,
+      "nation": 1,
+      "wrath": 2,
+      "word": 1,
+      "anger": 1,
+      "should": 1,
+      "go": 1,
+      "voice": 1,
+      "for": 1,
+      "day": 3,
+      "year": 2,
+      "wall": 1,
+      "stones": 1,
+      "wilderness": 1,
+      "or": 1,
+      "kingdom": 1,
+      "one": 1,
+      "reign": 1,
+      "babylon": 1,
+      "brought": 1,
+      "before": 1,
+      "ephraim": 1,
+      "become": 1,
+      "out": 1,
+      "on": 1,
+      "them": 1,
+      "like": 2,
+      "hear": 1,
+      "build": 1,
+      "though": 1,
+      "no": 1
+    },
+    "books": {
+      "genesis": {
+        "verses": 22,
+        "words": 177
+      },
+      "exodus": {
+        "verses": 3,
+        "words": 6
+      },
+      "leviticus": {
+        "verses": 9,
+        "words": 41
+      },
+      "numbers": {
+        "verses": 1,
+        "words": 10
+      },
+      "deuteronomy": {
+        "verses": 2,
+        "words": 5
+      },
+      "joshua": {
+        "verses": 25,
+        "words": 75
+      },
+      "judges": {
+        "verses": 2,
+        "words": 12
+      },
+      "1-samuel": {
+        "verses": 2,
+        "words": 5
+      },
+      "2-samuel": {
+        "verses": 4,
+        "words": 23
+      },
+      "1-kings": {
+        "verses": 1,
+        "words": 6
+      },
+      "2-kings": {
+        "verses": 6,
+        "words": 29
+      },
+      "1-chronicles": {
+        "verses": 79,
+        "words": 490
+      },
+      "2-chronicles": {
+        "verses": 6,
+        "words": 27
+      },
+      "ezra": {
+        "verses": 5,
+        "words": 43
+      },
+      "nehemiah": {
+        "verses": 7,
+        "words": 24
+      },
+      "esther": {
+        "verses": 1,
+        "words": 3
+      },
+      "job": {
+        "verses": 7,
+        "words": 53
+      },
+      "psalms": {
+        "verses": 21,
+        "words": 115
+      },
+      "proverbs": {
+        "verses": 8,
+        "words": 40
+      },
+      "ecclesiastes": {
+        "verses": 1,
+        "words": 1
+      },
+      "song-of-solomon": {
+        "verses": 1,
+        "words": 5
+      },
+      "isaiah": {
+        "verses": 8,
+        "words": 51
+      },
+      "jeremiah": {
+        "verses": 4,
+        "words": 9
+      },
+      "ezekiel": {
+        "verses": 11,
+        "words": 37
+      },
+      "daniel": {
+        "verses": 3,
+        "words": 29
+      },
+      "hosea": {
+        "verses": 3,
+        "words": 23
+      },
+      "joel": {
+        "verses": 1,
+        "words": 5
+      },
+      "amos": {
+        "verses": 1,
+        "words": 3
+      },
+      "micah": {
+        "verses": 3,
+        "words": 16
+      },
+      "nahum": {
+        "verses": 1,
+        "words": 11
+      },
+      "malachi": {
+        "verses": 2,
+        "words": 6
+      },
+      "1-timothy": {
+        "verses": 1,
+        "words": 1
+      }
+    },
+    "modes": {
+      "berean-verse": 151,
+      "berean-sentence": 75,
+      "sentence": 25
+    }
+  }
+}

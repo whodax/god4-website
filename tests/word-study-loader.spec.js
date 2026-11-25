@@ -202,7 +202,7 @@ test.describe('installed offline runtime',()=>{
   async function installed(page){await open(page);await page.evaluate(()=>navigator.serviceWorker.ready.then(()=>true));if(!await page.evaluate(()=>!!navigator.serviceWorker.controller))await page.reload();await page.evaluate(()=>initializeBibleExperience());}
   test('cache 26 preserves six runtimes; unused runtime first activates offline with local fallback and no durable JSON',async({page,context})=>{
     await installed(page);
-  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-77')).keys()).map(r=>new URL(r.url).pathname));
+  const assets=await page.evaluate(async()=> (await(await caches.open('god4-shell-compact-reader-78')).keys()).map(r=>new URL(r.url).pathname));
     for(const dep of dependencies)expect(assets).toContain(dep);expect(assets).toContain('/js/word-study/loader.js');expect(assets).toContain('/js/word-study/alignment.js');
     expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
     await context.setOffline(true);await word(page).press('Enter');
@@ -210,7 +210,7 @@ test.describe('installed offline runtime',()=>{
     await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
     expect(await page.evaluate(async()=>{const all=[];for(const n of await caches.keys())all.push(...(await(await caches.open(n)).keys()).map(r=>r.url));return all.some(u=>u.includes('/data/word-study/'));})).toBe(false);
   });
-  test('warm data survives in-page offline use but offline reload preserves only runtime and local fallback',async({page,context})=>{
+  test('warm original-language data survives in-page use and offline reload',async({page,context})=>{
     await installed(page);await word(page).click();await result(page);await expect(page.locator('#wordStudyOriginalTokens button')).toHaveCount(17);
     await page.keyboard.press('Escape');await context.setOffline(true);await word(page).click();await result(page);await expect(page.locator('#wordStudyOriginalTokens button')).toHaveCount(17);
     const offlineContext=await page.locator('#wordStudyOriginalTokens button').first().evaluate(button=>{
@@ -225,7 +225,31 @@ test.describe('installed offline runtime',()=>{
     });
     expect(offlineContext).toEqual({position:'static',headerPosition:'static',gap:4,hit:true});
     await page.reload();await page.evaluate(()=>initializeBibleExperience());expect(await page.evaluate(()=>typeof WordStudyController)).toBe('undefined');
-    await word(page).click();await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');await expect(page.locator('#wordStudyOriginalLanguage')).toBeHidden();
+    await word(page).click();await expect(page.locator('#wordStudyDefinition')).toHaveText('The first part, point, or origin of something.');
+    await expect(page.locator('#wordStudyOriginalTokens button')).toHaveCount(17);
+  });
+  test('a previously loaded WEB alignment shard survives an installed offline reload',async({page,context})=>{
+    await installed(page);
+    const cacheName='god4-word-study-data-v1';
+    const cachePaths=()=>page.evaluate(async name=>(await(await caches.open(name)).keys()).map(r=>new URL(r.url).pathname).sort(),cacheName);
+    expect(await cachePaths()).toEqual([]);
+    await page.evaluate(()=>navigateReaderToPassage('numbers',32,3));
+    await word(page,'dibon').click();
+    await expect(page.locator('#wordStudyAlignmentStatus')).toContainText('Berean translation tables');
+    const matched=page.locator('#wordStudyOriginalTokens [data-aligned="true"]');
+    await expect(matched).toHaveCount(1);
+    expect(await cachePaths()).toEqual([
+      '/data/word-study/alignment/web/index.json',
+      '/data/word-study/alignment/web/numbers/32.json',
+      '/data/word-study/original-language/numbers/32.json'
+    ]);
+    await context.setOffline(true);
+    await page.reload();await page.evaluate(()=>initializeBibleExperience());
+    await page.evaluate(()=>navigateReaderToPassage('numbers',32,3));
+    await word(page,'dibon').click();
+    await expect(matched).toHaveCount(1);
+    await matched.press('Enter');
+    await expect(page.locator('#wordStudyOriginalDetails')).toContainText('H1769');
   });
   test('first-use shell-hit readiness latency is measured',async({page})=>{
     await installed(page);const timing=await page.evaluate(async()=>{const start=performance.now();await WordStudyLoader.ensure();return performance.now()-start;});

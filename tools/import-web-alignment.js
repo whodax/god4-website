@@ -6,9 +6,12 @@ const vm = require('node:vm');
 const {createHash} = require('node:crypto');
 const {loadBibleLibrary, READER_TOKEN_PATTERN, normalizeDictionaryTerm} = require('./audit-word-study-coverage');
 const canon = require('../js/bible/canon');
+const alignment = require('../js/word-study/alignment');
 const priority = require('../data/word-study/web-common-words.json').entries;
 const root = path.resolve(__dirname, '..');
 const sources = require('./web-alignment-sources.json');
+const newerSource = require('./web-alignment-v92-source.json');
+const berean = require('./word-study-berean');
 const books = 'GEN EXO LEV NUM DEU JOS JDG RUT 1SA 2SA 1KI 2KI 1CH 2CH EZR NEH EST JOB PSA PRO ECC SNG ISA JER LAM EZK DAN HOS JOL AMO OBA JON MIC NAM HAB ZEP HAG ZEC MAL MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB JAS 1PE 2PE 1JN 2JN 3JN JUD REV'.split(' ');
 const words = text => [...text.matchAll(READER_TOKEN_PATTERN)];
 const sha = data => createHash('sha256').update(data).digest('hex');
@@ -215,6 +218,74 @@ function validateVerse(verseText, body, original, records) {
   return {alignments:[...groups.values()], taggedWords};
 }
 
+// Only explicit sentence boundaries suffice for projecting a group in a changed verse.
+function sentences(text) {
+  const result = [];
+  let start = 0;
+  for (const match of text.matchAll(/[.!?]+["'”’)]*(?=\s|$)/g)) {
+    const end = match.index + match[0].length;
+    const sentence = text.slice(start,end);
+    start = end;
+    if (words(sentence).length >= 5) result.push({start:end-sentence.length,end,key:typography(sentence)});
+  }
+  return result;
+}
+
+function projection(source, target) {
+  if (typography(source) === typography(target)) return {mode:'verse', pairs:[[0,source.length,0,target.length]]};
+  const trimPeriod = text => typography(text).replace(/(?<=[A-Za-z])\.$/,'');
+  if (trimPeriod(source) === trimPeriod(target)) return {mode:'period', pairs:[[0,source.length,0,target.length]]};
+  const a = sentences(source);
+  const b = sentences(target);
+  const sequence = value => words(value).map(word => typography(word[0]).toLowerCase());
+  const unique = (sentence, verse) => {
+    const needle = sequence(sentence);
+    const haystack = sequence(verse);
+    return haystack.filter((term,index) => term === needle[0] && needle.every((word,offset) => haystack[index+offset] === word)).length === 1;
+  };
+  const matches = a.flatMap(left => b.filter(right => left.key === right.key).map(right => [left,right]));
+  if (!matches.length) return fail('no unchanged complete English sentence');
+  if (matches.some(([left,right],index) => !unique(left.key,source) || !unique(right.key,target) ||
+    (index > 0 && right.start <= matches[index-1][1].start))) return fail('ambiguous English sentence occurrence or order',true);
+  return {mode:'sentence',pairs:matches.map(([left,right])=>[left.start,left.end,right.start,right.end])};
+}
+
+function projectVerse(verseText, body, original, records, parsed, mapping) {
+  if (mapping.mode === 'verse') return {...validateVerse(verseText,body,original,records),mode:'verse'};
+  const verified = validateVerse(parsed.english,body,original,records);
+  if (verified.reason) return verified;
+  return projectGroups(parsed.english,verseText,verified.alignments,mapping);
+}
+
+function projectGroups(source, verseText, groups, mapping) {
+  const offsets = new Map();
+  const destinationWords = words(verseText);
+  for (const [start,end,destinationStart,destinationEnd] of mapping.pairs) {
+    const sourceWords = words(source.slice(start,end));
+    const dest = destinationWords.filter(word=>word.index>=destinationStart && word.index<destinationEnd);
+    if (sourceWords.length !== dest.length || sourceWords.some((word,index)=>typography(word[0]) !== typography(dest[index][0]))) {
+      return fail('English selectable words differ');
+    }
+    sourceWords.forEach((word,index)=>offsets.set(start+word.index,[dest[index].index,dest[index].index+dest[index][0].length]));
+  }
+  // Keep a group only when all of its English spans have evidence in one unchanged sentence.
+  const groupUnits = groups.map(([spans])=>mapping.pairs.findIndex(([start,end])=>
+    spans.every(([left,right])=>left>=start && right<=end && offsets.has(left))));
+  const originalUnits = new Map();
+  for (const [index,[,tokens]] of groups.entries()) {
+    for (const token of tokens) {
+      if (!originalUnits.has(token)) originalUnits.set(token,new Set());
+      originalUnits.get(token).add(groupUnits[index]);
+    }
+  }
+  const alignments = groups.filter(([,tokens],index)=>groupUnits[index]>=0 &&
+    tokens.every(token=>originalUnits.get(token).size===1))
+    .map(([spans,indexes])=>[spans.map(([start])=>offsets.get(start)),indexes]);
+  if (!alignments.length) return fail('unchanged English has no complete alignment group');
+  const starts = new Set(alignments.flatMap(([spans])=>spans.map(([start])=>start)));
+  return {mode:mapping.mode,alignments,taggedWords:new Set(destinationWords.flatMap((word,index)=>starts.has(word.index)?[index]:[]))};
+}
+
 function provider() {
   const context = vm.createContext({BibleCanon:canon, async fetch(url) {
     const file = path.join(root, url);
@@ -224,9 +295,10 @@ function provider() {
   return context.OriginalLanguageWordStudyProvider;
 }
 
-async function generate(inputDirectories, output) {
+async function generate(inputDirectories, output, options = {}) {
   if (fs.existsSync(output)) throw new Error('Output directory must be fresh');
-  const [english, old, modern] = inputDirectories.map((input,index) => loadSource(input,sources[index]));
+  const [english, old, modern] = inputDirectories.map((input,index) => loadSource(input,index === 0 && options.expanded ? newerSource : sources[index]));
+  const bereanBooks = options.berean ? berean.load(options.berean) : null;
   const originalProvider = provider();
   const library = loadBibleLibrary('web.js','webLibrary');
   const report = {webTextSha256:sha(fs.readFileSync(path.join(root,'js/bible/web.js'),'utf8').replace(/\r\n/g,'\n')),
@@ -234,16 +306,36 @@ async function generate(inputDirectories, output) {
   const priorityForms = new Set();
   const chapterIndex = {};
   fs.mkdirSync(output);
+  if (options.expanded) {
+    report.modes = {};
+    report.priorityOccurrences = {};
+  }
+  const baseline = options.baseline;
+  const reviewedFiles = baseline && require('../docs/shell-77-web-alignment-report.json').files;
+  if (reviewedFiles) {
+    for (const [file,pin] of Object.entries(reviewedFiles)) {
+      if (sha(fs.readFileSync(path.join(baseline,file))) !== pin.sha256) throw new Error('Shell 77 baseline checksum mismatch: '+file);
+    }
+  }
+  if (bereanBooks) {
+    report.berean = {accepted:0,rejected:0,ambiguous:0,missing:0,missingReferences:[],reasons:{},modes:{},books:{}};
+    report.additions = {verses:0,words:0,forms:{},books:{},modes:{}};
+  }
   for (const [bookIndex, bookId] of canon.order('web').entries()) {
     const code = books[bookIndex];
     const taggedBook = english.get(code);
     const witness = (bookIndex < 39 ? old : modern).get(code);
     const book = library[bookId];
+    const bereanBook = bereanBooks?.get(bookId);
+    const bereanTotals = {accepted:0,rejected:0,ambiguous:0,missing:0};
+    if (bereanBooks) report.berean.books[bookId] = bereanTotals;
     const totals = {verses:0, candidates:0, accepted:0, rejected:0, ambiguous:0, missing:0,
       words:0, alignedWords:0, priorityWords:0, alignedPriorityWords:0};
     report.books[bookId] = totals;
     for (let chapter = 1; chapter <= book.chapters; chapter++) {
       const rows = {};
+      const relative = bookId + '/' + chapter + '.json';
+      const prior = reviewedFiles?.[relative] ? JSON.parse(fs.readFileSync(path.join(baseline,relative),'utf8')) : {};
       for (const [index, verseText] of book[chapter].verses.entries()) {
         if (!verseText.trim()) continue;
         const verse = index + 1;
@@ -252,42 +344,90 @@ async function generate(inputDirectories, output) {
         totals.verses++;
         totals.words += selectedWords.length;
         totals.priorityWords += selectedWords.filter(word => Object.hasOwn(priority, normalizeDictionaryTerm(word[0]))).length;
-        if (!taggedBook?.has(reference) || !witness?.has(reference)) {
-          totals.missing++;
-          continue;
-        }
-        const tagged = taggedBook.get(reference);
-        const original = witness.get(reference);
-        totals.candidates++;
-        let result = !tagged || !original ? fail('duplicate or empty source verse', true) : readAlignment(tagged);
-        if (!result.reason && typography(result.english) !== typography(verseText)) result = fail('English wording or punctuation differs');
+        const sourcePresent = taggedBook?.has(reference) && witness?.has(reference);
+        if (sourcePresent) totals.candidates++;
+        else totals.missing++;
+        const tagged = taggedBook?.get(reference);
+        const original = witness?.get(reference);
+        const parsed = !sourcePresent ? fail('missing reference') :
+          !tagged || !original ? fail('duplicate or empty source verse', true) : readAlignment(tagged);
+        const mapping = options.expanded && !parsed.reason ? projection(parsed.english,verseText) : null;
+        let result = mapping?.reason ? mapping : parsed;
+        if (!options.expanded && !result.reason && typography(result.english) !== typography(verseText)) result = fail('English wording or punctuation differs');
         let records;
+        const bsb = bereanBook?.get(reference);
+        const bsbMapping = bsb && projection(bsb.english,verseText);
+        if (!result.reason || (bsbMapping && !bsbMapping.reason && original)) {
+          records = (await originalProvider.lookupVerse({translationId:'web',bookId,chapter,verse})).records;
+        }
+        const remapped = records?.some(record=>record.bookId!==bookId || record.chapter!==chapter || record.verse!==verse);
         if (!result.reason) {
-          const loaded = await originalProvider.lookupVerse({translationId:'web',bookId,chapter,verse});
-          records = loaded.records;
-          if (records.some(record => record.bookId !== bookId || record.chapter !== chapter || record.verse !== verse)) {
+          if (remapped) {
             result = fail('remapped original reference requires independent verification');
           } else {
-            result = validateVerse(verseText, tagged, readOriginal(original), records);
+            const tokens = readOriginal(original);
+            result = options.expanded ? projectVerse(verseText,tagged,tokens,records,parsed,mapping) : validateVerse(verseText,tagged,tokens,records);
           }
         }
-        if (result.reason) {
+        if (sourcePresent && result.reason) {
           totals[result.ambiguous ? 'ambiguous' : 'rejected']++;
           report.reasons[result.reason] = (report.reasons[result.reason] || 0) + 1;
+        }
+        if (!result.reason) {
+          totals.accepted++;
+          if (options.expanded) report.modes[result.mode] = (report.modes[result.mode] || 0) + 1;
+          for (const wordIndex of result.taggedWords) {
+            totals.alignedWords++;
+            const term = normalizeDictionaryTerm(selectedWords[wordIndex][0]);
+            if (!Object.hasOwn(priority, term)) continue;
+            totals.alignedPriorityWords++;
+            priorityForms.add(term);
+            if (options.expanded) report.priorityOccurrences[term] = (report.priorityOccurrences[term] || 0) + 1;
+          }
+        }
+        let other;
+        if (bereanBooks) {
+          if (!bsb || !original) {
+            bereanTotals.missing++;
+            report.berean.missingReferences.push(bookId+' '+reference);
+          }
+          else {
+            other = bsbMapping.reason ? bsbMapping : remapped ? fail('remapped original reference requires independent verification') :
+              berean.validate(bsb,readOriginal(original),records,manuscriptMatches);
+            if (!other.reason) other = projectGroups(bsb.english,verseText,other.groups,bsbMapping);
+            const key = other.ambiguous ? 'ambiguous' : other.reason ? 'rejected' : 'accepted';
+            bereanTotals[key]++;
+            report.berean[key]++;
+            const breakdown = other.reason ? report.berean.reasons : report.berean.modes;
+            const label = other.reason || other.mode;
+            breakdown[label] = (breakdown[label] || 0) + 1;
+          }
+        }
+        if (prior[verse]) {
+          rows[verse] = prior[verse];
           continue;
         }
-        totals.accepted++;
-        rows[verse] = [verseText, records.map(record => [record.surface,record.strongsNumber,record.morphology,record.language]), result.alignments];
-        for (const wordIndex of result.taggedWords) {
-          totals.alignedWords++;
-          const term = normalizeDictionaryTerm(selectedWords[wordIndex][0]);
-          if (!Object.hasOwn(priority, term)) continue;
-          totals.alignedPriorityWords++;
-          priorityForms.add(term);
+        // The inline production catalog takes precedence over all imported groups.
+        const inline = records?.length && alignment.lookup({translationId:'web',bookId,chapter,verse,verseText},records).status==='available';
+        const pick = result.reason ? other : result;
+        if (!pick || pick.reason || (baseline && inline)) continue;
+        rows[verse] = [verseText,records.map(record=>[record.surface,record.strongsNumber,record.morphology,record.language]),pick.alignments];
+        const mode = pick === other ? 'berean-'+pick.mode : pick.mode;
+        if (options.expanded) rows[verse].push(mode);
+        if (bereanBooks) {
+          report.additions.verses++;
+          report.additions.words += pick.taggedWords.size;
+          report.additions.modes[mode] = (report.additions.modes[mode] || 0) + 1;
+          const summary = (report.additions.books[bookId] ||= {verses:0,words:0});
+          summary.verses++;
+          summary.words += pick.taggedWords.size;
+          for (const wordIndex of pick.taggedWords) {
+            const term = normalizeDictionaryTerm(selectedWords[wordIndex][0]);
+            if (Object.hasOwn(priority,term)) report.additions.forms[term] = (report.additions.forms[term] || 0) + 1;
+          }
         }
       }
       if (!Object.keys(rows).length) continue;
-      const relative = bookId + '/' + chapter + '.json';
       fs.mkdirSync(path.join(output,bookId),{recursive:true});
       const data = JSON.stringify(rows) + '\n';
       fs.writeFileSync(path.join(output,relative),data);
@@ -296,6 +436,7 @@ async function generate(inputDirectories, output) {
     }
   }
   report.priorityForms = [...priorityForms].sort();
+  if (bereanBooks) report.berean.missing = Object.values(report.berean.books).reduce((n,b)=>n+b.missing,0);
   const index = JSON.stringify(chapterIndex) + '\n';
   fs.writeFileSync(path.join(output,'index.json'),index);
   report.files['index.json'] = {sha256:sha(index),bytes:Buffer.byteLength(index)};
@@ -304,9 +445,9 @@ async function generate(inputDirectories, output) {
 
 if (require.main === module) {
   const args = process.argv.slice(2);
-  if (args.length !== 5) throw new Error('Usage: node tools/import-web-alignment.js <ULT dir> <UHB dir> <UGNT dir> <new output dir> <report.json>');
-  generate(args.slice(0,3), args[3]).then(report => fs.writeFileSync(args[4],JSON.stringify(report,null,2) + '\n'))
+  if (!(args.length===5 || (args[5]==='--expanded' && [6,8].includes(args.length)))) throw new Error('Usage: node tools/import-web-alignment.js <ULT dir> <UHB dir> <UGNT dir> <new output dir> <report.json> [--expanded [Berean TSV baseline directory]]');
+  generate(args.slice(0,3), args[3],{expanded:args.length>=6,berean:args[6],baseline:args[7]}).then(report => fs.writeFileSync(args[4],JSON.stringify(report,null,2) + '\n'))
     .catch(error => { console.error(error); process.exitCode = 1; });
 }
 
-module.exports = {readBook, readOriginal, validateVerse, generate};
+module.exports = {readBook, readOriginal, readAlignment, validateVerse, projection, projectVerse, generate};
