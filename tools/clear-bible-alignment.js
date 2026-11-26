@@ -36,6 +36,7 @@ function groupedTsv(text,referenceFor,width) {
 function loadPackage(directory,id,pins) {
   const hebrew=id==='WLCM';
   const raw=JSON.parse(input(directory,id+'-BSB-manual.json',pins));
+  input(directory,id+'-BSB-manual.toml',pins); // Pin the source metadata even where its declarations disagree with the records.
   if (raw.documents?.[0]?.docid!==id || raw.documents?.[1]?.docid!=='BSB' || !Array.isArray(raw.records)) {
     throw new Error('Unexpected Clear.Bible alignment documents');
   }

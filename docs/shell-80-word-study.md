@@ -31,10 +31,12 @@ The 528 previously unaligned WEB verses added 723 groups across 33 books. Hebrew
 These screens count original and target position compatibility before English projection and independent agreement. The complete [WLCM](shell-80-clear-wlcm.json), [SBLGNT](shell-80-clear-sblgnt.json) and [BGNT](shell-80-clear-bgnt.json) reports include book and word-form counts, explicit rejection reasons and held-out comparisons. The disparity in available Hebrew and Greek reflects conservative comparison against the app's original-language editions, including the Byzantine Greek text. It does not measure source accuracy.
 
 - The WLCM metadata labels the scope NT and names WLC. Its manual BiblioNexus JSON declares WLCM morpheme positions and its records cover the 39 OT books. The ordered source TSV contains 469,476 morphemes with populated POS classes and empty morphology fields. The importer validates the ordered words and their explicit morpheme IDs against exact spelling, segmentation, lexical identity and POS in UHB. Full morphology comes from the ordered UHB and Reader witnesses. References bridged or remapped in the BSB target fail validation. This accounts for 1,834 of the WLCM verse rejections.
-- The independently produced SBLGNT package identifies original Greek word positions, which must match the ULT witness and Reader positions, spelling, identity and compatible morphology for the whole verse. The BGNT package's companion identifier incorrectly names SBLGNT. Its JSON and original TSV establish BGNT positions and credit the Berean team. BGNT remains a research control because it cannot independently corroborate its own publisher's tables.
+- The independently produced SBLGNT package identifies original Greek word positions, which must match the ULT witness and Reader positions, spelling, identity and compatible morphology for the whole verse. The Greek spelling comparison normalizes accents and final sigma while retaining the letter sequence and requiring matching morphology and lexical identity. The BGNT companion file lists two source licenses and incorrectly names SBLGNT as its alignment identifier. Its JSON and original TSV establish BGNT positions and credit the Berean team. BGNT remains a research control because it cannot independently corroborate its own publisher's tables.
 - The importer reconstructs exact English from the matching package's pinned BSB token TSV, including punctuation and spacing. Under the audit's reconstruction rules the package English matched the publisher table wording exactly at 7,567 of 21,176 comparable WLCM references, 744 of 7,921 SBLGNT references and 747 of 7,940 BGNT references. Differences include formatting and supplied-text conventions. The same edition label is insufficient to transfer positions.
 - The vetted Clear and ULT groups must link identical edges in the same Reader original positions and meet the Shell 79 exact local English frame, uniqueness and order checks. Incomplete morpheme or graph groups, inconsistent adjacent links, repeats, quoted boundaries, supplied words, grammatical differences, and negation or exception scope all fail closed. The importer carries exclusions across the full connected component. One known lexical identifier by itself cannot establish a position.
 - The MACULA WLC tree contains 930 chapter or ancillary lowfat XML files. Its main WLC TSV is an 84,382,719-byte Git LFS object with SHA-256 `965cb0599beed2fe31283b615bcc369178141c0e718a66d97518d94309cfc124`. The audit inspected the repository inventory and six chapter XML files. The MACULA SBLGNT TSV contains 137,741 token rows over 7,939 references in 27 books. It supplies positional morphology, syntax and English glosses. Neither inspected MACULA representation establishes explicit WEB English span positions. Both are useful as additional linguistic witnesses. [MACULA Hebrew](https://github.com/Clear-Bible/macula-hebrew) · [MACULA Greek](https://github.com/Clear-Bible/macula-greek)
+
+The [BibleAquifer alignment toolchain](https://github.com/BibleAquifer/text-align) uses the same WLCM and SBLGNT position schemes and documents both hand-curated inputs and model-refined outputs. A file labeled manual can also come from a refinement run. It offers useful crosswalk and review tooling. Its refined output is outside the independent evidence counted here because the audit found no documented independent WEB human annotation for those output rows.
 
 ## Projected coverage by method
 
@@ -49,7 +51,7 @@ Counts are verse references and matched word occurrences. New counts exclude eve
 
 Only the independent Clear + ULT result is published. The two BGNT-only new candidates and the single-source bounds stay outside runtime data. Requiring the existing publisher tables as a third witness corroborates earlier groups and adds no previously uncovered verse. Shell 79's ULT and Berean agreement added 73 verses and 135 words. These figures are from different baseline exclusions and witness pairings.
 
-The table below shows broader English wording compatibility with package BSB, counted by unique matching verse or sentence after the audit's punctuation normalization. A verse can occur in both columns. This screen runs before position or morphology checks. It cannot establish alignments for these editions.
+The table below shows broader English wording compatibility with package BSB, counted by unique matching verse or sentence after the audit's punctuation normalization. The sentence column excludes references already counted as full-verse matches. This screen runs before position or morphology checks. It cannot establish alignments for these editions.
 
 | Reader edition | WLCM exact verse / with matching sentence | SBLGNT exact verse / with matching sentence |
 | --- | ---: | ---: |
@@ -100,13 +102,38 @@ node tools/build-shell80-alignment.js <Shell79-data> <WLCM-candidate> <WLCM-repo
 
 Name the Clear inputs `shell80-<filename>` using the filenames in the SHA-256 manifest. At the pinned Clear revision the manifests and graph records are under `data/eng/alignments/BSB`, original TSVs under `data/sources`, and BSB TSVs under `data/eng/targets/BSB`. The builder checks the pinned Shell 79 byte hashes for every input shard, preserves all accepted verse rows, and composes only the dual-source WLCM and SBLGNT additions.
 
+The sampled MACULA Hebrew files are in `WLC/lowfat`. Their SHA-256 values are below.
+
+| File | SHA-256 |
+| --- | --- |
+| `01-Gen-018-lowfat.xml` | `015385bb2c0e1ed25656b458c8524ccd1df85691ab2289ac9a2ecf746b165903` |
+| `04-Num-022-lowfat.xml` | `8588fce54fe0fe3d8b3fdd1752efcbf4fe11923109b56e79cc8b78da082e99bc` |
+| `09-1Sa-014-lowfat.xml` | `a96461f1410e17cefe3a6a9207b0daafde3584efcb15aa79d4dbe87946a38400` |
+| `09-1Sa-017-lowfat.xml` | `faf3a9b5a848979702f84524d61b740a4894b3f84bd811c8f809d662145be1fd` |
+| `18-Job-019-lowfat.xml` | `fac0749ced80fd5f654048d3893ac5aff01ad28961d624b48ccf34f4d24a7b32` |
+| `20-Pro-006-lowfat.xml` | `f3f47fbc7d8d7f84426ba28d24dd71a61ef3d80f16e75e3c1aa208b74d7ec68f` |
+
 A second run produced byte-identical reports and candidate files for all three Clear packages, a byte-identical build report, and identical SHA-256 checksums across the 425 generated files.
 
 ## Performance and validation
 
 The WEB index and 424 chapter shards occupy **555,937 bytes raw** or **265,935 bytes** gzip-compressed separately. The largest chapter shard is **8,583 bytes** raw. Startup JavaScript remains **290,674 of 290,914 bytes**. The index and chapters remain lazy. The 48-entry persistent cache and 16-entry in-page limit are unchanged.
 
-All 489 unit checks passed, including the new validation and importer cases, the existing false-positive controls, and verification of the preserved Shell 79 rows. Asset validation confirmed metadata for all nine translations. Ethiopian education static checks passed. The focused browser suite is running with the existing deadlines.
+All 489 unit checks passed, including source validation, importer and false-positive fixtures, and checks for preserved Shell 79 rows. Asset validation confirmed metadata for all nine translations. Ethiopian education static checks passed.
+
+| Browser check | Result |
+| --- | --- |
+| Focused Chromium regression suite | 180 passed on one worker in 11.2 minutes |
+| Historical 320px dark-theme repetitions | 10 passed |
+| Installed Shell 79 to Shell 80 | 1280px, 320px and 390px passed in 9.4s, 9.4s and 9.5s |
+| Persistent alignment | Shell 79 cache survived upgrade and offline reload. New Clear.Bible spans and contextual definition survived reload. Cache eviction preserved the index. |
+| Ethiopian Read Aloud | Passed in 18.7s with the browser voice fixture |
+| Startup Word Study network requests | Zero before selection on the deployed 390px preview |
+| First-use readiness | 18.7ms shell hit and 21.9ms local network in the Chromium fixtures |
+
+The browser cases used the existing deadlines and no retries. No historical timeout recurred in these runs. Windows commit headroom was 12.07 GiB when sampled. That measurement does not establish the cause of the earlier timeouts. The deployed 390px smoke also verified both English spans of “my tent,” the contextual meaning of “around” in Proverbs 6:21, and full offline reload. [Smoke-tested candidate](https://7b23f3ca.god4-us.pages.dev)
+
+Shell 80 physical Android and TalkBack acceptance is pending.
 
 ## Remaining release blockers and next milestone
 
